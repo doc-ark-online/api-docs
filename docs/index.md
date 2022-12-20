@@ -686,7 +686,3 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 See also: [CoreObject.GetCustomProperty](coreobject.md) | [World.SpawnAsset](world.md) | [Player.owner](player.md) | [Game.playerJoinedEvent](game.md) | [Event.Connect](event.md)
 
 ---
-
-## Tutorials
-
-[Abilities in Core](../tutorials/ability_tutorial.md)
