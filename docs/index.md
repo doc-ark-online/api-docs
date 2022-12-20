@@ -14,7 +14,9 @@ Abilities can be activated by association with an Action Binding. Their internal
 
 Only one ability can be active at a time. By default, activating an ability will interrupt the currently active ability. The `canBePrevented` and `preventsOtherAbilities` properties can be used to customize interruption rules for competing abilities.
 
+:::tip notice
 If an ability is interrupted during the Cast phase, it will immediately reset to the Ready state. If an ability is interrupted during the Execute or Recovery phase, the ability will immediately transition to the Cooldown phase.
+:::
 
 ## Properties
 
