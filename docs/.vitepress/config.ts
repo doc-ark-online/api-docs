@@ -20,7 +20,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "翻译",
+        text: "语言",
         items: [
           { text: "中文", link: "/item-1" },
           { text: "英文", link: "/item-2" },
