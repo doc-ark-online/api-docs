@@ -8,8 +8,8 @@
 ~~表格宽度需要固定住，但是我不会~~
 | Name | Description |
 | :--- | :----------- |
-| [Base](/base.html) | Gameobject的基类 |
-| Gameobject | Gameobject的基类 |
+| Base| Gameobject的基类 |
+| [GameObject](/GameObject) | Gameobject的基类 |
 | IPlayer | 玩家的抽象类 |
 
 ## Function{#Function}
