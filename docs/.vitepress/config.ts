@@ -38,7 +38,7 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      pattern: "https://github.com/Metaworld2021/api-docs/tree/main/docs/:path",
       text: "到 github 上进行修改",
     },
     lastUpdatedText: "Updated Date",
