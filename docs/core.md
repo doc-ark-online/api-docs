@@ -1,7 +1,8 @@
 ##Class
 
-@description GameObject的基类
-@networkStatus usage:双端
+`@description` GameObject的基类
+
+`@networkStatus usage:`双端
 
 | Name | Description |
 | :---: | :-----------: |
@@ -11,8 +12,9 @@
 
 ##Function
 
-@description GameObject的基类
-@networkStatus usage:双端
+`@description GameObject`的基类
+
+`@networkStatus usage:`双端
 
 | Name | Description |
 | :---: | :-----------: |
