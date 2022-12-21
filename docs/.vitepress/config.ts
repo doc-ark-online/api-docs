@@ -29,11 +29,11 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "Guide",
+        text: "Core",link: "/core"
         items: [
-          { text: "Core", link: "/core" },
+          { text: "Base", link: "/base" },
           { text: "Game Play", link: "/game-play" },
-          { text: "Events", link: "/events" },
+          { text: "GameObject", link: "/GameObject" },
         ],
       },
     ],

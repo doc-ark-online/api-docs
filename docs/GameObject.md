@@ -3,15 +3,21 @@ Gameobject的基类
 
 `@networkStatus`双端
 
-## getBoundingBoxSize {#getBoundingBoxSize右侧标题，不知道为啥不起作用}
+## getBoundingBoxSize {#getBoundingBoxSize}
 getBoundingBoxSize(nonColliding?: boolean, includeFromChildActors?: boolean, outer?: Type.Vector): Type.Vector;
 
-`@description` 获取物体包围盒大小
+`@description` 
+获取物体包围盒大小
 
-`@effect` 调用端生效
+`@effect` 
+调用端生效
 
 :::@precautions
+
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象,建议传入 outer 来减少 new 对象
+
+这里本该是一个亮块
+
 :::
 
 `@param`
@@ -23,7 +29,7 @@ getBoundingBoxSize(nonColliding?: boolean, includeFromChildActors?: boolean, out
 
 ---
 
-## getChildrenBoxCenter {#getChildrenBoxCenter右侧标题，不知道为啥不起作用}
+## getChildrenBoxCenter {#getChildrenBoxCenter}
 getChildrenBoxCenter(outer?: Type.Vector): Type.Vector;
 
 `@description` 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])
@@ -31,7 +37,11 @@ getChildrenBoxCenter(outer?: Type.Vector): Type.Vector;
 `@effect` 调用端生效
 
 :::@precautions
+
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象,建议传入 outer 来减少 new 对象
+
+这里本该是一个亮块
+
 :::
 
 `@param`
@@ -47,5 +57,6 @@ getChildrenBoxCenter(outer?: Type.Vector): Type.Vector;
     value: T
   }
   ```
+这是代码介绍
 
 ---
