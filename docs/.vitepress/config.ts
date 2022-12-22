@@ -33,7 +33,7 @@ export default defineConfig({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: "Base", link: "/base" },
+          { text: "Base", link: "/core" },
           { text: "Game Play", link: "/game-play" },
           { text: "GameObject", link: "/GameObject" },
         ],
