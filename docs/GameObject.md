@@ -13,11 +13,8 @@ getBoundingBoxSize(nonColliding?: boolean, includeFromChildActors?: boolean, out
 调用端生效
 
 :::tip @precautions
-
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象,建议传入 outer 来减少 new 对象
-
 这里本该是一个亮块
-
 :::
 
 `@param`
