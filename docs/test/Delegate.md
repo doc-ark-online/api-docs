@@ -25,7 +25,9 @@ new Delegate(): Delegate
 
 ### bind
 
+```ts
 bind(func: T): void
+```
 
 绑定函数
 

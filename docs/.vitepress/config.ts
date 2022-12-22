@@ -29,6 +29,17 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: "Test",
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: "enums", link: "/test/enums" },
+          { text: "interface", link: "/test/interface" },
+          { text: "function", link: "/test/function" },
+          { text: "Delegate", link: "/test/Delegate" },
+        ],
+      },
+      {
         text: "Common",
         collapsible: true,
         collapsed: true,
@@ -116,5 +127,6 @@ export default defineConfig({
       prev: "Pagina prior",
       next: "Proxima pagina",
     },
+    outline: [2, 3],
   },
 });

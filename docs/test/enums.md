@@ -1,0 +1,52 @@
+# 枚举
+
+用于定义一些常见的状态或者是常用的值
+
+## BALL
+
+球相关的默认值
+
+```typescript
+enum BALL {
+  /** 篮球 */
+  basketball,
+  /** 足球 */
+  football,
+  /** 乒乓球 */
+  tableTennis,
+  /** 羽毛球 */
+  badminton,
+}
+```
+
+## Colors
+
+颜色相关的默认值
+
+```typescript
+enum Colors {
+  /** 红色 */
+  red,
+  /** 黄色 */
+  yellow,
+  /** 绿色 */
+  green,
+  /** 蓝色 */
+  blue,
+}
+```
+
+## 其他乱七八糟的
+
+```typescript
+enum BALL {
+  /** 红色 */
+  red,
+  /** 黄色 */
+  yellow,
+  /** 绿色 */
+  green,
+  /** 蓝色 */
+  blue,
+}
+```
