@@ -1,273 +1,687 @@
+# Markdown Extensions
+
+VitePress comes with built in Markdown Extensions.
+
+## Header Anchors
+
+Headers automatically get anchor links applied. Rendering of anchors can be configured using the `markdown.anchor` option.
+
+## Links
+
+Both internal and external links gets special treatments.
+
+### Internal Links
+
+Internal links are converted to router link for SPA navigation. Also, every `index.md` contained in each sub-directory will automatically be converted to `index.html`, with corresponding URL `/`.
+
+For example, given the following directory structure:
+
+```
+.
+├─ index.md
+├─ foo
+│  ├─ index.md
+│  ├─ one.md
+│  └─ two.md
+└─ bar
+   ├─ index.md
+   ├─ three.md
+   └─ four.md
+```
+
+And providing you are in `foo/one.md`:
+
+```md
+[Home](/) <!-- sends the user to the root index.md -->
+[foo](/foo/) <!-- sends the user to index.html of directory foo -->
+[foo heading](./#heading) <!-- anchors user to a heading in the foo index file -->
+[bar - three](../bar/three) <!-- you can omit extension -->
+[bar - three](../bar/three.md) <!-- you can append .md -->
+[bar - four](../bar/four.html) <!-- or you can append .html -->
+```
+
+### Page Suffix
+
+Pages and internal links get generated with the `.html` suffix by default.
+
+### External Links
+
+Outbound links automatically get `target="_blank" rel="noreferrer"`:
+
+- [vuejs.org](https://vuejs.org)
+- [VitePress on GitHub](https://github.com/vuejs/vitepress)
+
+## Frontmatter
+
+[YAML frontmatter](https://jekyllrb.com/docs/front-matter/) is supported out of the box:
+
+```yaml
 ---
-id: first_multiplayer_game
-name: My First Multiplayer Game
-title: My First Multiplayer Game
-tags:
-    - Tutorial
+title: Blogging Like a Hacker
+lang: en-US
 ---
+```
 
-# Build Your First Game In Core
+This data will be available to the rest of the page, along with all custom and theming components.
 
-<lite-youtube videoid="-rIbd612sUM" playlabel="Build Your First Game In Core"></lite-youtube>
-{: .video-container }
+For more details, see [Frontmatter](./frontmatter).
 
-## Overview
+## GitHub-Style Tables
 
-Jump in and build a game using Core's Deathmatch framework. Customize as much or as little as you want to build this multiplayer arena shooter.
+**Input**
 
-- **Completion Time:** 10 minutes.
-- **Previous Knowledge:** [Installing Core](installing_core.md).
-- **Skills you will learn:**
-    - Core Frameworks
-    - Core Content
-    - Manipulating Objects
-    - Applying Materials
-    - Collision
-    - Player Settings
-    - Game Settings
-    - Spawn Points
+```
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+```
 
-## Start a New Project
+**Output**
 
-To get started, use the **Create** menu to make a new project
+| Tables        |      Are      |   Cool |
+| ------------- | :-----------: | -----: |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      |   centered    |   \$12 |
+| zebra stripes |   are neat    |    \$1 |
 
-### Open the **NEW PROJECT** Menu
+## Emoji :tada:
 
-![Create New](../img/NewFrameworks/NewFrameworks_NewProject.png){: .center loading="lazy" }
+**Input**
 
-1. With Core open, click the **CREATE** tab in the top menu bar.
-2. Click the **NEW PROJECT** tab at the top of the **CREATE** menu.
+```
+:tada: :100:
+```
 
-### Select the **Deathmatch** Framework
+**Output**
 
-![Deathmatch](../img/NewFrameworks/NewFrameworks_Deathmatch.jpg){: .center loading="lazy" }
+:tada: :100:
 
-1. In the **GAMEPLAY FRAMEWORKS** section, select **Deathmatch**.
-2. In the right side panel, name your project. `MyFirstGame` works well, but choose any name.
-3. Click **CREATE**.
+A [list of all emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) is available.
 
-!!! note
-    The name you chose for the project at this stage does not have to match the final name of the published game.
+## Table of Contents
 
-## Explore the Project
+**Input**
 
-The Deathmatch framework gives you a complete game arena and shooter functionality out of the box.
+```
+[[toc]]
+```
 
-![Whitebox](../img/MyFirstMultiplayer/WhiteboxMapMarked.jpg){: .center loading="lazy" }
+**Output**
 
-### Test Player Movement
+[[toc]]
 
-- Press ![Play](../img/EditorManual/icons/Icon_Play.png) or ++equal++ to preview your project as a player.
-{: .image-inline-text .image-background }
-- Press ++tab++ to pause the preview.
-- Press ![Stop](../img/EditorManual/icons/Icon_Stop.png) or ++equal++ to stop the preview.
-{: .image-inline-text .image-background }
+Rendering of the TOC can be configured using the `markdown.toc` option.
 
-As in any Core game project, you already have a working character controller.
+## Custom Containers
 
-- Move the character with the ++W++, ++A++, ++S++, and ++D++ keys.
-- Jump with ++Space++.
-- Crouch with ++C++.
-- Ride a mount with ++G++.
+Custom containers can be defined by their types, titles, and contents.
 
-### Test Shooter Mechanics
+### Default Title
 
-Besides player movement, **Deathmatch** also gives each player a gun to shoot, and the ability to open and close doors.
+**Input**
 
-- Shoot the default gun with the left mouse button.
-- Open and close a door with ++F++.
+```md
+::: info
+This is an info box.
+:::
 
-![PlayMode](../img/MyFirstMultiplayer/PlayMode.jpg){: .center loading="lazy" }
+::: tip
+This is a tip.
+:::
 
-### Test Multiplayer Gameplay
+::: warning
+This is a warning.
+:::
 
-Core projects also include multiplayer networking by default. Because this is a crucial component of this game, it is important to test using **Multiplayer Preview Mode** as much as possible.
-![TwoPlayers](../img/MyFirstMultiplayer/TwoPlayers.png){: .center loading="lazy" }
+::: danger
+This is a dangerous warning.
+:::
 
-1. Click ![Multiplayer Preview Mode](../img/EditorManual/icons/Icon_MultiplayerTest.png) to switch the Preview Mode to Multiplayer.
-    {: .image-inline-text .image-background }
+::: details
+This is a details block.
+:::
+```
 
-2. Press ![Play](../img/EditorManual/icons/Icon_Play.png) to start the preview. This will open a separate game window for each player.
-    {: .image-inline-text .image-background }
+**Output**
 
-    ![MPPreview](../img/MyFirstMultiplayer/MultiplayerPreviewPlay.png){: .center loading="lazy" }
+::: info
+This is an info box.
+:::
 
-!!! tip
-     You can use ++Alt+enter++ to toggle between fullscreen and windowed mode. You can also use ++Win+Arrow++ to dock the screens side by side.
+::: tip
+This is a tip.
+:::
 
-## Customize the Arena
+::: warning
+This is a warning.
+:::
 
-### Explore Core Content
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
 
-Core gives you a massive library of 3D assets, materials, sounds, and components for making games, which can be found in the **Core Content** Window.
+### Custom Title
 
-!!! note
-    You can reopen the **Core Content** window by going to **Window** > **Core Content** in the top menu bar.
+You may set custom title by appending the text right after the "type" of the container.
+
+**Input**
 
-1. Click **Core Content**.
-2. Drop down the **3D Objects** menu to see the props and objects that can be added to the scene.
-3. Click on the **Nature** subcategory.
-4. Choose a bush and some other props to drag into the scene.
+````md
+::: danger STOP
+Danger zone, do not proceed
+:::
+
+::: details Click me to view the code
+```js
+console.log('Hello, VitePress!')
+```
+:::
+````
 
-<div class="mt-video">
-    <video autoplay loop muted playsinline poster="/img/EditorManual/Abilities/Gem.png">
-        <source src="/img/MyFirstMultiplayer/DragDropBushes.webm" type="video/webm" />
-        <source src="/img/MyFirstMultiplayer/DragDropBushes.mp4" type="video/mp4" />
-    </video>
-</div>
+**Output**
 
-### Create Hiding Places
+::: danger STOP
+Danger zone, do not proceed
+:::
 
-You can move, turn, and resize objects.
+::: details Click me to view the code
+```js
+console.log('Hello, VitePress!')
+```
+:::
+
+### `raw`
+
+This is a special container that can be used to prevent style and router conflicts with VitePress. This is especially useful when you're documenting component libraries. You might also wanna check out [whyframe](https://whyframe.dev/docs/integrations/vitepress) for better isolation.
+
+**Syntax**
+
+```md
+::: raw
+Wraps in a <div class="vp-raw">
+:::
+```
+
+`vp-raw` class can be directly used on elements too. Style isolation is currently opt-in:
+
+::: details
+
+- Install required deps with your preferred package manager:
+
+  ```sh
+  $ yarn add -D postcss postcss-prefix-selector
+  ```
+
+- Create a file named `docs/.postcssrc.cjs` and add this to it:
+
+  ```js
+  module.exports = {
+    plugins: {
+      'postcss-prefix-selector': {
+        prefix: ':not(:where(.vp-raw *))',
+        includeFiles: [/vp-doc\.css/],
+        transform(prefix, _selector) {
+          const [selector, pseudo = ''] = _selector.split(/(:\S*)$/)
+          return selector + prefix + pseudo
+        }
+      }
+    }
+  }
+  ```
+
+:::
+
+## Syntax Highlighting in Code Blocks
+
+VitePress uses [Shiki](https://shiki.matsu.io/) to highlight language syntax in Markdown code blocks, using coloured text. Shiki supports a wide variety of programming languages. All you need to do is append a valid language alias to the beginning backticks for the code block:
+
+**Input**
+
+````
+```js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+````
+
+````
+```html
+<ul>
+  <li v-for="todo in todos" :key="todo.id">
+    {{ todo.text }}
+  </li>
+</ul>
+```
+````
+
+**Output**
+
+```js
+export default {
+  name: 'MyComponent'
+  // ...
+}
+```
+
+```html
+<ul>
+  <li v-for="todo in todos" :key="todo.id">
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+A [list of valid languages](https://github.com/shikijs/shiki/blob/main/docs/languages.md) is available on Shiki's repository.
+
+You may also customize syntax highlight theme in app config. Please see [`markdown` options](../config/app-configs#markdown) for more details.
+
+## Line Highlighting in Code Blocks
+
+**Input**
+
+````
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+In addition to a single line, you can also specify multiple single lines, ranges, or both:
+
+- Line ranges: for example `{5-8}`, `{3-10}`, `{10-17}`
+- Multiple single lines: for example `{4,7,9}`
+- Line ranges and single lines: for example `{4,7-13,16,23-27,40}`
+
+**Input**
+
+````
+```js{1,4,6-8}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VitePress is awesome',
+      lorem: 'ipsum'
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js{1,4,6-8}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VitePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+
+Alternatively, it's possible to highlight directly in the line by using the `// [!code hl]` comment.
+
+**Input**
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!' // [!code  hl]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Highlighted!' // [!code hl]
+    }
+  }
+}
+```
+
+## Focus in Code Blocks
+
+Adding the `// [!code focus]` comment on a line will focus it and blur the other parts of the code.
+
+Additionally, you can define a number of lines to focus using `// [!code focus:<lines>]`.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code  focus]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Focused!' // [!code focus]
+    }
+  }
+}
+```
+
+## Colored Diffs in Code Blocks
+
+Adding the `// [!code --]` or `// [!code ++]` comments on a line will create a diff of that line, while keeping the colors of the codeblock.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code  --]
+      msg: 'Added' // [!code  ++]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code --]
+      msg: 'Added' // [!code ++]
+    }
+  }
+}
+```
+
+## Errors and Warnings in Code Blocks
+
+Adding the `// [!code warning]` or `// [!code error]` comments on a line will color it accordingly.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Error', // [!code  error]
+      msg: 'Warning' // [!code  warning]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Error', // [!code error]
+      msg: 'Warning' // [!code warning]
+    }
+  }
+}
+```
+
+## Line Numbers
+
+You can enable line numbers for each code blocks via config:
+
+```js
+export default {
+  markdown: {
+    lineNumbers: true
+  }
+}
+```
 
-- ![Transform Position](../img/EditorManual/icons/Icon_TransformPosition.png) or ++W++ activates Translation Mode.
-{: .image-inline-text .image-background }
-- ![Rotate Tool](../img/EditorManual/icons/Icon_TransformRotation.png) or ++E++ activates Rotation Mode.
-{: .image-inline-text .image-background }
-- ![Snap Position](../img/EditorManual/icons/Icon_TransformScale.png) or ++R++ activates Scale Mode.
-{: .image-inline-text .image-background }
+Please see [`markdown` options](../config/app-configs#markdown) for more details.
 
-<div class="mt-video">
-    <video autoplay loop muted playsinline poster="/img/EditorManual/Abilities/Gem.png">
-        <source src="/img/MyFirstMultiplayer/MoveBushes.webm" type="video/webm" />
-        <source src="/img/MyFirstMultiplayer/MoveBushes.mp4" type="video/mp4" />
-    </video>
-</div>
+## Import Code Snippets
 
-1. Click on the bush and press ++G++ to move it.
-2. Use the arrows to move it into a good hiding place for a player.
-3. Press ++R++ to change the size of the bush.
-4. Click and drag the white box at the center of the bush to resize it proportionately.
-5. Move, rotate, and scale the rest of the objects to enhance the scene.
+You can import code snippets from existing files via following syntax:
+
+```md
+<<< @/filepath
+```
+
+It also supports [line highlighting](#line-highlighting-in-code-blocks):
 
-### Turn Off Collision
+```md
+<<< @/filepath{highlightLines}
+```
 
-By default, Core objects have collision, so players can't just walk into bushes yet.
+**Input**
 
-1. Test this by pressing ![Play](../img/EditorManual/icons/Icon_Play.png) to preview the game.
-{: .image-inline-text .image-background }
-2. Look at your props from a player's perspective. You should be able to walk up to a bush but collide with it once you touch it.
-3. Click on the bush to select it, and open the **Properties** window.
-4. Find the **Collision** property and change it to **Force Off**.
+```md
+<<< @/snippets/snippet.js{2}
+```
 
-<div class="mt-video">
-    <video autoplay loop muted playsinline poster="/img/EditorManual/Abilities/Gem.png">
-        <source src="/img/MyFirstMultiplayer/NoCollisonBush.webm" type="video/webm" />
-        <source src="/img/MyFirstMultiplayer/NoCollisonBush.mp4" type="video/mp4" />
-    </video>
-</div>
+**Code file**
 
-You should now be able to walk into a bush. Test this in **Multiplayer Preview Mode** to see how well it works for concealment.
+<<< @/snippets/snippet.js
 
-!!! note
-    You can reopen the **Properties** window by going to **Window** > **Properties** in the top menu bar.
+**Output**
 
-## Finishing the Arena
+<<< @/snippets/snippet.js{2}
 
-### Add a Material to an Object
+::: tip
+The value of `@` corresponds to the source root. By default it's the VitePress project root, unless `srcDir` is configured.
+:::
 
-**Materials** allow you to add colors and textures to the objects in the scene, by dragging and dropping them onto objects.
+You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding) to only include the corresponding part of the code file. You can provide a custom region name after a `#` following the filepath:
 
-1. In the **Core Content** window, drop down the **Materials** menu to see the options.
-2. Pick a material, and drag it onto one of the objects in the scene.
+**Input**
 
-<div class="mt-video">
-    <video autoplay loop muted playsinline poster="/img/EditorManual/Abilities/Gem.png">
-        <source src="/img/MyFirstMultiplayer/MaterialExample.webm" type="video/webm" />
-        <source src="/img/MyFirstMultiplayer/MaterialExample.mp4" type="video/mp4" />
-    </video>
-</div>
+```md
+<<< @/snippets/snippet-with-region.js#snippet{1}
+```
 
-### Cover the Walls
+**Code file**
 
-You can apply a material to multiple objects by selecting them.
+<<< @/snippets/snippet-with-region.js
 
-- Use ++shift+left-button++ to select more objects.
-- Left click and drag to select objects in an area.
+**Output**
 
-<div class="mt-video">
-    <video autoplay loop muted playsinline poster="/img/EditorManual/Abilities/Gem.png">
-        <source src="/img/MyFirstMultiplayer/WoodWalls.webm" type="video/webm" />
-        <source src="/img/MyFirstMultiplayer/WoodWalls.mp4" type="video/mp4" />
-    </video>
-</div>
+<<< @/snippets/snippet-with-region.js#snippet{1}
 
-1. In the **Hierarchy** window, type "wall" into the search bar to show only the objects named **Whiteboard Wall 01**.
-2. Press ++enter++ to select everything from the search.
-3. Choose a material, and drag it onto one of the walls.
+You can also specify the language inside the braces (`{}`) like this:
 
-!!! note
-    You can also select the entire list by clicking the first object in the list, then holding ++shift++ and scrolling down to click the last.
+```md
+<<< @/snippets/snippet.cs{c#}
 
-### Give Everything a Material
+<!-- with line highlighting: -->
 
-You can continue using these techniques to complete the appearance of your Deathmatch arena. Try searching for each of these labels to apply materials in groups:
+<<< @/snippets/snippet.cs{1,2,4-6 c#}
+```
 
-- `stairs`
-- `window insert`
-- `floor`
+This is helpful if source language cannot be inferred from your file extension.
 
-![FinishArt](../img/MyFirstMultiplayer/FinishArt.jpg){: .center loading="lazy" }
+## Code Groups
 
-!!! info
-    You can customize materials and how they apply to objects. Learn more in the [Custom Material Tutorial](../references/materials.md).
+You can group multiple code blocks like this:
 
-## Customizing Gameplay
+**Input**
 
-In this final section, you will find different ways to change the gameplay itself.
+````md
+::: code-group
 
-### Add Double Jumping
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
 
-![PlayerSettings](../img/MyFirstMultiplayer/PlayerSettings.png){: .center loading="lazy" }
+export default config
+```
 
-1. Find **Player Settings** by searching for it in the **Hierarchy**.
-2. Open the **Properties** window to see all the settings that can be changed for each player
-3. In the **Jump** section, change **Jump Max Count** to `2`,
-4. Press ![Play](../img/EditorManual/icons/Icon_Play.png) to test out double-jumping with ++Space++.
-{: .image-inline-text .image-background }
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
 
-![DoubleJump](../img/MyFirstMultiplayer/DoubleJump.png){: .center loading="lazy" }
+const config: UserConfig = {
+  // ...
+}
 
-### Change The Round Kill Limit
+export default config
+```
 
-In the top left corner of the screen in game, you can see that you win the Deathmatch by killing 10 opponents. This can be changed in **Game Settings**.
+:::
+````
 
-![RoundKillLimit](../img/MyFirstMultiplayer/RoundKillLimit.png){: .center loading="lazy" }
+**Output**
 
-1. Search for **Round Kill Limit** in the **Hierarchy**.
-2. Open the **Properties** window.
-3. Find the **KillLimit** property and change it to `2`.
-4. Start a **Multiplayer Preview** of your game, and see if you win by shooting an opponent twice.
-{: .image-inline-text .image-background }
+::: code-group
 
-![ChangedKillLimit](../img/MyFirstMultiplayer/ChangedKillLimit.png){: .center loading="lazy" }
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
 
-### Change the UI Instructions
+export default config
+```
 
-Although the game now ends after two kills, the instructions are shown on the screen still tell players to shoot for ten.
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
 
-1. Search for **UI Text Box** under **Game Instructions** in the **Hierarchy**.
-2. Open the **Properties** window.
-3. Change the **Text** property to match your game's win condition.
+const config: UserConfig = {
+  // ...
+}
 
-![ChangedGameInstructions](../img/MyFirstMultiplayer/ChangedGameInstructions.png){: .center loading="lazy" }
+export default config
+```
 
-### Move the Player Start
+:::
 
-Let's move the "Player Start" where players spawn to be further apart. Press ++V++ to toggle gizmo visibility -- you can now see the camera, spawn points, and trigger boxes.
+## Markdown File Inclusion
 
-1. Search for **Spawn Point** in the **Hierarchy**.
-2. Move the spawn points around the map the same way you would any object.
+You can include a markdown file in another markdown file like this:
 
-![PlayerSpawn](../img/MyFirstMultiplayer/PlayerSpawn.jpg){: .center loading="lazy" }
+**Input**
 
-!!! tip
-    Press ++0++ to create a spawn point at your cursor's location. There are more [Editor Shortcuts](../references/editor_keybindings.md) that can streamline your game creation flow.
+```md
+# Docs
 
-## Publishing a Game
+## Basics
 
-You now have a complete and unique deathmatch-style game. If you are ready to test it with real human players, then [publish your game](publishing.md).
+<!--@include: ./parts/basics.md-->
+```
 
-## Next Steps
+**Part file** (`parts/basics.md`)
 
-[Publish a Game](publishing.md) | [Terrain Tutorial](../tutorials/environment_art.md) | [Basic Weapon Tutorial](../references/weapons.md) | [Abilities Tutorial](../tutorials/ability_tutorial.md)
+```md
+Some getting started stuff.
+
+### Configuration
+
+Can be created using `.foorc.json`.
+```
+
+**Equivalent code**
+
+```md
+# Docs
+
+## Basics
+
+Some getting started stuff.
+
+### Configuration
+
+Can be created using `.foorc.json`.
+```
+
+::: warning
+Note that this does not throw errors if your file is not present. Hence, when using this feature make sure that the contents are being rendered as expected.
+:::
+
+## Advanced Configuration
+
+VitePress uses [markdown-it](https://github.com/markdown-it/markdown-it) as the Markdown renderer. A lot of the extensions above are implemented via custom plugins. You can further customize the `markdown-it` instance using the `markdown` option in `.vitepress/config.js`:
+
+```js
+const anchor = require('markdown-it-anchor')
+
+module.exports = {
+  markdown: {
+    // options for markdown-it-anchor
+    // https://github.com/valeriangalliat/markdown-it-anchor#usage
+    anchor: {
+      permalink: anchor.permalink.headerLink()
+    },
+
+    // options for @mdit-vue/plugin-toc
+    // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
+    toc: { level: [1, 2] },
+
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(require('markdown-it-xxx'))
+    }
+  }
+}
+```
+
+See full list of configurable properties in [Configs: App Configs](../config/app-configs#markdown).
