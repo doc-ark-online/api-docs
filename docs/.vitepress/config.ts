@@ -29,6 +29,20 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: "Common",
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: "Delegate", link: "/common/Delegate" },
+          { text: "DelegateInterface", link: "/common/DelegateInterface" },
+          { text: "MulticastDelegate", link: "/common/MulticastDelegate" },
+          {
+            text: "MulticastDelegateInterface",
+            link: "/common/MulticastDelegateInterface",
+          },
+        ],
+      },
+      {
         text: "Core",
         collapsible: true,
         collapsed: true,
@@ -37,6 +51,60 @@ export default defineConfig({
           { text: "Game Play", link: "/game-play" },
           { text: "GameObject", link: "/GameObject" },
         ],
+      },
+      {
+        text: "DataStorage",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "Events",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "Extension",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "Gameplay",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "Global",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "GoogleAnalytics",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "KeyboardSimulation",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "MathLibrary",
+        collapsible: true,
+        collapsed: true,
+        items: [],
+      },
+      {
+        text: "MobileEditor",
+        collapsible: true,
+        collapsed: true,
+        items: [],
       },
     ],
     editLink: {
