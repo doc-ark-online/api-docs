@@ -30,6 +30,8 @@ export default defineConfig({
     sidebar: [
       {
         text: "Core",
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: "Base", link: "/base" },
           { text: "Game Play", link: "/game-play" },
