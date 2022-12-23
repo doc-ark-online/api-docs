@@ -219,7 +219,7 @@ usage:双端
 
 **`Description`**
 
-判断当前角色是否是V1版本
+判断当前角色是否是 V1 版本
 
 **`Effect`**
 
@@ -229,7 +229,7 @@ usage:双端
 
 Gameplay/index.d.ts:1278
 
-___
+---
 
 ### loadAppearanceDataAllCompletedDelegate
 
@@ -243,7 +243,7 @@ ___
 
 Gameplay/index.d.ts:752
 
-___
+---
 
 ### onMeshChanged
 
@@ -257,7 +257,7 @@ ___
 
 Gameplay/index.d.ts:740
 
-___
+---
 
 ### onTextureChanged
 
@@ -271,7 +271,7 @@ ___
 
 Gameplay/index.d.ts:744
 
-___
+---
 
 ### player
 
@@ -285,7 +285,7 @@ ___
 
 Gameplay/index.d.ts:773
 
-___
+---
 
 ### setAppearanceDataCompletedDelegate
 
@@ -293,7 +293,7 @@ ___
 
 **`Description`**
 
-设置一个角色编辑API成功后的回调
+设置一个角色编辑 API 成功后的回调
 
 #### Defined in
 
@@ -311,7 +311,7 @@ Gameplay/index.d.ts:748
 
 **`Precautions`**
 
-范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
+范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
 
 #### Returns
 
@@ -329,12 +329,12 @@ Gameplay/index.d.ts:983
 
 **`Precautions`**
 
-范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
+范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type     |
+| :------------- | :------- |
 | `InAirControl` | `number` |
 
 #### Returns
@@ -345,7 +345,7 @@ Gameplay/index.d.ts:983
 
 Gameplay/index.d.ts:988
 
-___
+---
 
 ### airControlBoostMultiplier
 
@@ -353,11 +353,11 @@ ___
 
 **`Description`**
 
-当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
+当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数
 
 **`Precautions`**
 
-范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
+范围:大于等于 0 的数字, 取 0 时, 不会对 airControl 效果加倍, 无论取值多大, airControl 最大值都被限制为 1
 
 #### Returns
 
@@ -371,16 +371,16 @@ Gameplay/index.d.ts:993
 
 **`Description`**
 
-当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
+当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数
 
 **`Precautions`**
 
-范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
+范围:大于等于 0 的数字, 取 0 时, 不会对 airControl 效果加倍, 无论取值多大, airControl 最大值都被限制为 1
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                          | Type     |
+| :---------------------------- | :------- |
 | `InAirControlBoostMultiplier` | `number` |
 
 #### Returns
@@ -391,7 +391,7 @@ Gameplay/index.d.ts:993
 
 Gameplay/index.d.ts:998
 
-___
+---
 
 ### airControlBoostVelocityThreshold
 
@@ -399,11 +399,11 @@ ___
 
 **`Description`**
 
-下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
+下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍
 
 **`Precautions`**
 
-范围: 大于等于0
+范围: 大于等于 0
 
 #### Returns
 
@@ -417,16 +417,16 @@ Gameplay/index.d.ts:1003
 
 **`Description`**
 
-下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
+下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍
 
 **`Precautions`**
 
-范围: 大于等于0
+范围: 大于等于 0
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                                 | Type     |
+| :----------------------------------- | :------- |
 | `InAirControlBoostVelocityThreshold` | `number` |
 
 #### Returns
@@ -437,7 +437,7 @@ Gameplay/index.d.ts:1003
 
 Gameplay/index.d.ts:1008
 
-___
+---
 
 ### animationMode
 
@@ -463,8 +463,8 @@ Gameplay/index.d.ts:1354
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                           |
+| :----- | :------------------------------------------------------------- |
 | `mode` | [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md) |
 
 #### Returns
@@ -475,7 +475,7 @@ Gameplay/index.d.ts:1354
 
 Gameplay/index.d.ts:1358
 
-___
+---
 
 ### animationStance
 
@@ -487,7 +487,7 @@ ___
 
 **`Precautions`**
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
 
 #### Returns
 
@@ -505,12 +505,12 @@ Gameplay/index.d.ts:1066
 
 **`Precautions`**
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| :----------- | :------- |
 | `StanceGuid` | `string` |
 
 #### Returns
@@ -521,7 +521,7 @@ Gameplay/index.d.ts:1066
 
 Gameplay/index.d.ts:1071
 
-___
+---
 
 ### appearance
 
@@ -539,7 +539,7 @@ ___
 
 Gameplay/index.d.ts:1318
 
-___
+---
 
 ### baseShadowLocationOffset
 
@@ -565,8 +565,8 @@ Gameplay/index.d.ts:1215
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                              |
+| :----------------- | :-------------------------------- |
 | `InLocationOffset` | [`Vector2`](Type.Type.Vector2.md) |
 
 #### Returns
@@ -577,7 +577,7 @@ Gameplay/index.d.ts:1215
 
 Gameplay/index.d.ts:1219
 
-___
+---
 
 ### baseShadowMaxVisibleHeight
 
@@ -603,8 +603,8 @@ Gameplay/index.d.ts:1223
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `InHeight` | `number` |
 
 #### Returns
@@ -615,7 +615,7 @@ Gameplay/index.d.ts:1223
 
 Gameplay/index.d.ts:1227
 
-___
+---
 
 ### baseShadowScale
 
@@ -641,8 +641,8 @@ Gameplay/index.d.ts:1207
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                              |
+| :-------- | :-------------------------------- |
 | `InScale` | [`Vector2`](Type.Type.Vector2.md) |
 
 #### Returns
@@ -653,7 +653,7 @@ Gameplay/index.d.ts:1207
 
 Gameplay/index.d.ts:1211
 
-___
+---
 
 ### basicStance
 
@@ -665,7 +665,7 @@ ___
 
 **`Precautions`**
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的 guid 进行基础姿态的切换
 
 #### Returns
 
@@ -683,12 +683,12 @@ Gameplay/index.d.ts:1056
 
 **`Precautions`**
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的 guid 进行基础姿态的切换
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `InBasicStance` | `string` |
 
 #### Returns
@@ -699,7 +699,7 @@ Gameplay/index.d.ts:1056
 
 Gameplay/index.d.ts:1061
 
-___
+---
 
 ### brakingDecelerationFalling
 
@@ -725,8 +725,8 @@ Gameplay/index.d.ts:1039
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                           | Type     |
+| :----------------------------- | :------- |
 | `InBrakingDecelerationFalling` | `number` |
 
 #### Returns
@@ -737,7 +737,7 @@ Gameplay/index.d.ts:1039
 
 Gameplay/index.d.ts:1043
 
-___
+---
 
 ### brakingDecelerationFlying
 
@@ -763,8 +763,8 @@ Gameplay/index.d.ts:1023
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                          | Type     |
+| :---------------------------- | :------- |
 | `InBrakingDecelerationFlying` | `number` |
 
 #### Returns
@@ -775,7 +775,7 @@ Gameplay/index.d.ts:1023
 
 Gameplay/index.d.ts:1027
 
-___
+---
 
 ### brakingDecelerationSwimming
 
@@ -801,8 +801,8 @@ Gameplay/index.d.ts:1047
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                            | Type     |
+| :------------------------------ | :------- |
 | `InBrakingDecelerationSwimming` | `number` |
 
 #### Returns
@@ -813,7 +813,7 @@ Gameplay/index.d.ts:1047
 
 Gameplay/index.d.ts:1051
 
-___
+---
 
 ### brakingDecelerationWalking
 
@@ -839,8 +839,8 @@ Gameplay/index.d.ts:1031
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                           | Type     |
+| :----------------------------- | :------- |
 | `InBrakingDecelerationWalking` | `number` |
 
 #### Returns
@@ -851,7 +851,7 @@ Gameplay/index.d.ts:1031
 
 Gameplay/index.d.ts:1035
 
-___
+---
 
 ### canSetAppearanceData
 
@@ -869,7 +869,7 @@ ___
 
 Gameplay/index.d.ts:736
 
-___
+---
 
 ### capsuleHalfHeight
 
@@ -895,8 +895,8 @@ Gameplay/index.d.ts:966
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                  | Type     |
+| :-------------------- | :------- |
 | `InCapsuleHalfHeight` | `number` |
 
 #### Returns
@@ -907,7 +907,7 @@ Gameplay/index.d.ts:966
 
 Gameplay/index.d.ts:970
 
-___
+---
 
 ### capsuleRadius
 
@@ -933,8 +933,8 @@ Gameplay/index.d.ts:974
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `InCapsuleRadius` | `number` |
 
 #### Returns
@@ -945,7 +945,7 @@ Gameplay/index.d.ts:974
 
 Gameplay/index.d.ts:978
 
-___
+---
 
 ### characterName
 
@@ -957,7 +957,7 @@ ___
 
 **`Precautions`**
 
-会显示在角色头顶UI上
+会显示在角色头顶 UI 上
 
 #### Returns
 
@@ -975,12 +975,12 @@ Gameplay/index.d.ts:778
 
 **`Precautions`**
 
-会显示在角色头顶UI上
+会显示在角色头顶 UI 上
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `inCharacterName` | `string` |
 
 #### Returns
@@ -991,7 +991,7 @@ Gameplay/index.d.ts:778
 
 Gameplay/index.d.ts:783
 
-___
+---
 
 ### crouchedHeight
 
@@ -1017,8 +1017,8 @@ Gameplay/index.d.ts:926
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type     |
+| :----------------- | :------- |
 | `InCrouchedHeight` | `number` |
 
 #### Returns
@@ -1029,7 +1029,7 @@ Gameplay/index.d.ts:926
 
 Gameplay/index.d.ts:930
 
-___
+---
 
 ### enableBasicStanceAimOffset
 
@@ -1055,8 +1055,8 @@ Gameplay/index.d.ts:1185
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                 | Type      |
+| :------------------- | :-------- |
 | `InbEnableAimOffset` | `boolean` |
 
 #### Returns
@@ -1067,7 +1067,7 @@ Gameplay/index.d.ts:1185
 
 Gameplay/index.d.ts:1189
 
-___
+---
 
 ### enableCollision
 
@@ -1093,8 +1093,8 @@ Gameplay/index.d.ts:1177
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                 | Type      |
+| :------------------- | :-------- |
 | `InbEnableCollision` | `boolean` |
 
 #### Returns
@@ -1105,7 +1105,7 @@ Gameplay/index.d.ts:1177
 
 Gameplay/index.d.ts:1181
 
-___
+---
 
 ### enableCollisionWithOtherCharacter
 
@@ -1131,8 +1131,8 @@ Gameplay/index.d.ts:1282
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
@@ -1143,7 +1143,7 @@ Gameplay/index.d.ts:1282
 
 Gameplay/index.d.ts:1286
 
-___
+---
 
 ### enableCrouch
 
@@ -1169,8 +1169,8 @@ Gameplay/index.d.ts:831
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `canCrouch` | `boolean` |
 
 #### Returns
@@ -1181,7 +1181,7 @@ Gameplay/index.d.ts:831
 
 Gameplay/index.d.ts:835
 
-___
+---
 
 ### enableJump
 
@@ -1207,8 +1207,8 @@ Gameplay/index.d.ts:799
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
@@ -1219,7 +1219,7 @@ Gameplay/index.d.ts:799
 
 Gameplay/index.d.ts:803
 
-___
+---
 
 ### enableJumpingOutOfWater
 
@@ -1245,8 +1245,8 @@ Gameplay/index.d.ts:1298
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
@@ -1257,7 +1257,7 @@ Gameplay/index.d.ts:1298
 
 Gameplay/index.d.ts:1302
 
-___
+---
 
 ### enableMove
 
@@ -1283,8 +1283,8 @@ Gameplay/index.d.ts:791
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
@@ -1295,7 +1295,7 @@ Gameplay/index.d.ts:791
 
 Gameplay/index.d.ts:795
 
-___
+---
 
 ### enableRagdoll
 
@@ -1321,8 +1321,8 @@ Gameplay/index.d.ts:1147
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `boolean` |
 
 #### Returns
@@ -1333,7 +1333,7 @@ Gameplay/index.d.ts:1147
 
 Gameplay/index.d.ts:1151
 
-___
+---
 
 ### forwardVector
 
@@ -1361,7 +1361,7 @@ Core.GameObject.forwardVector
 
 Core/index.d.ts:405
 
-___
+---
 
 ### gravityScale
 
@@ -1373,7 +1373,7 @@ ___
 
 **`Precautions`**
 
-范围0~10, 过大和过小的值都会被限制
+范围 0~10, 过大和过小的值都会被限制
 
 #### Returns
 
@@ -1391,8 +1391,8 @@ Gameplay/index.d.ts:1015
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `newGravityScale` | `number` |
 
 #### Returns
@@ -1403,7 +1403,7 @@ Gameplay/index.d.ts:1015
 
 Gameplay/index.d.ts:1019
 
-___
+---
 
 ### groundFriction
 
@@ -1429,8 +1429,8 @@ Gameplay/index.d.ts:894
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type     |
+| :----------------- | :------- |
 | `inGroundFriction` | `number` |
 
 #### Returns
@@ -1441,7 +1441,7 @@ Gameplay/index.d.ts:894
 
 Gameplay/index.d.ts:898
 
-___
+---
 
 ### guid
 
@@ -1449,7 +1449,7 @@ ___
 
 **`Description`**
 
-获取对象的guid（唯一标识一个对象的字符串）。
+获取对象的 guid（唯一标识一个对象的字符串）。
 
 **`Effect`**
 
@@ -1467,7 +1467,7 @@ Core.GameObject.guid
 
 Core/index.d.ts:38
 
-___
+---
 
 ### headUIVisibleRange
 
@@ -1475,7 +1475,7 @@ ___
 
 **`Description`**
 
-头顶UI可见距离
+头顶 UI 可见距离
 
 #### Returns
 
@@ -1489,12 +1489,12 @@ Gameplay/index.d.ts:1231
 
 **`Description`**
 
-头顶UI可见距离
+头顶 UI 可见距离
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `VisibleDistance` | `number` |
 
 #### Returns
@@ -1505,7 +1505,7 @@ Gameplay/index.d.ts:1231
 
 Gameplay/index.d.ts:1235
 
-___
+---
 
 ### isCrouching
 
@@ -1523,7 +1523,7 @@ ___
 
 Gameplay/index.d.ts:1089
 
-___
+---
 
 ### isHeadUIVisible
 
@@ -1531,7 +1531,7 @@ ___
 
 **`Description`**
 
-头顶UI是否可见
+头顶 UI 是否可见
 
 #### Returns
 
@@ -1545,12 +1545,12 @@ Gameplay/index.d.ts:1199
 
 **`Description`**
 
-头顶UI是否可见
+头顶 UI 是否可见
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `isVisible` | `boolean` |
 
 #### Returns
@@ -1561,7 +1561,7 @@ Gameplay/index.d.ts:1199
 
 Gameplay/index.d.ts:1203
 
-___
+---
 
 ### isVisible
 
@@ -1591,8 +1591,8 @@ Gameplay/index.d.ts:1097
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type      |
+| :------------ | :-------- |
 | `inIsVisible` | `boolean` |
 
 #### Returns
@@ -1607,7 +1607,7 @@ Core.GameObject.isVisible
 
 Gameplay/index.d.ts:1101
 
-___
+---
 
 ### isVisibleLocally
 
@@ -1633,8 +1633,8 @@ Gameplay/index.d.ts:1105
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type      |
+| :------------ | :-------- |
 | `inIsVisible` | `boolean` |
 
 #### Returns
@@ -1645,7 +1645,7 @@ Gameplay/index.d.ts:1105
 
 Gameplay/index.d.ts:1109
 
-___
+---
 
 ### jumpMaxCount
 
@@ -1671,8 +1671,8 @@ Gameplay/index.d.ts:918
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type     |
+| :--------------- | :------- |
 | `InJumpMaxCount` | `number` |
 
 #### Returns
@@ -1683,7 +1683,7 @@ Gameplay/index.d.ts:918
 
 Gameplay/index.d.ts:922
 
-___
+---
 
 ### lockState
 
@@ -1721,9 +1721,9 @@ Core/index.d.ts:452
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `boolean` |
+| Name | Type      |
+| :--- | :-------- |
+| `v`  | `boolean` |
 
 #### Returns
 
@@ -1737,7 +1737,7 @@ Core.GameObject.lockState
 
 Core/index.d.ts:447
 
-___
+---
 
 ### maxAcceleration
 
@@ -1763,8 +1763,8 @@ Gameplay/index.d.ts:860
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                | Type     |
+| :------------------ | :------- |
 | `InMaxAcceleration` | `number` |
 
 #### Returns
@@ -1775,7 +1775,7 @@ Gameplay/index.d.ts:860
 
 Gameplay/index.d.ts:864
 
-___
+---
 
 ### maxFallingSpeed
 
@@ -1801,8 +1801,8 @@ Gameplay/index.d.ts:839
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `speed` | `number` |
 
 #### Returns
@@ -1813,7 +1813,7 @@ Gameplay/index.d.ts:839
 
 Gameplay/index.d.ts:843
 
-___
+---
 
 ### maxFlySpeed
 
@@ -1839,8 +1839,8 @@ Gameplay/index.d.ts:815
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `InMaxFlySpeed` | `number` |
 
 #### Returns
@@ -1851,7 +1851,7 @@ Gameplay/index.d.ts:815
 
 Gameplay/index.d.ts:819
 
-___
+---
 
 ### maxJumpHeight
 
@@ -1877,8 +1877,8 @@ Gameplay/index.d.ts:910
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `InMaxJumpHeight` | `number` |
 
 #### Returns
@@ -1889,7 +1889,7 @@ Gameplay/index.d.ts:910
 
 Gameplay/index.d.ts:914
 
-___
+---
 
 ### maxStepHeight
 
@@ -1915,8 +1915,8 @@ Gameplay/index.d.ts:868
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `InMaxStepHeight` | `number` |
 
 #### Returns
@@ -1927,7 +1927,7 @@ Gameplay/index.d.ts:868
 
 Gameplay/index.d.ts:872
 
-___
+---
 
 ### maxSwimSpeed
 
@@ -1953,8 +1953,8 @@ Gameplay/index.d.ts:823
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type     |
+| :--------------- | :------- |
 | `InMaxSwimSpeed` | `number` |
 
 #### Returns
@@ -1965,7 +1965,7 @@ Gameplay/index.d.ts:823
 
 Gameplay/index.d.ts:827
 
-___
+---
 
 ### maxWalkSpeed
 
@@ -1991,8 +1991,8 @@ Gameplay/index.d.ts:807
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type     |
+| :--------------- | :------- |
 | `InMaxWalkSpeed` | `number` |
 
 #### Returns
@@ -2003,7 +2003,7 @@ Gameplay/index.d.ts:807
 
 Gameplay/index.d.ts:811
 
-___
+---
 
 ### maxWalkSpeedCrouched
 
@@ -2029,8 +2029,8 @@ Gameplay/index.d.ts:847
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `maxSpeed` | `number` |
 
 #### Returns
@@ -2041,7 +2041,7 @@ Gameplay/index.d.ts:847
 
 Gameplay/index.d.ts:851
 
-___
+---
 
 ### moveFacingDirection
 
@@ -2067,8 +2067,8 @@ Gameplay/index.d.ts:942
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                    | Type                                                                       |
+| :---------------------- | :------------------------------------------------------------------------- |
 | `InMoveFacingDirection` | [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md) |
 
 #### Returns
@@ -2079,7 +2079,7 @@ Gameplay/index.d.ts:942
 
 Gameplay/index.d.ts:946
 
-___
+---
 
 ### movementAxisDirection
 
@@ -2087,7 +2087,7 @@ ___
 
 **`Description`**
 
-运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
+运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效
 
 #### Returns
 
@@ -2101,12 +2101,12 @@ Gameplay/index.d.ts:934
 
 **`Description`**
 
-运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
+运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                      | Type                            |
+| :------------------------ | :------------------------------ |
 | `InMovementAxisDirection` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
@@ -2117,7 +2117,7 @@ Gameplay/index.d.ts:934
 
 Gameplay/index.d.ts:938
 
-___
+---
 
 ### movementDirection
 
@@ -2143,8 +2143,8 @@ Gameplay/index.d.ts:950
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                  | Type                                                                   |
+| :-------------------- | :--------------------------------------------------------------------- |
 | `InMovementDirection` | [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md) |
 
 #### Returns
@@ -2155,7 +2155,7 @@ Gameplay/index.d.ts:950
 
 Gameplay/index.d.ts:954
 
-___
+---
 
 ### movementState
 
@@ -2173,7 +2173,7 @@ ___
 
 Gameplay/index.d.ts:787
 
-___
+---
 
 ### name
 
@@ -2213,8 +2213,8 @@ Core/index.d.ts:167
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description          |
+| :----- | :------- | :------------------- |
 | `name` | `string` | usage:需要设置的名称 |
 
 #### Returns
@@ -2229,7 +2229,7 @@ Core.GameObject.name
 
 Core/index.d.ts:173
 
-___
+---
 
 ### netStatus
 
@@ -2257,7 +2257,7 @@ Core.GameObject.netStatus
 
 Core/index.d.ts:502
 
-___
+---
 
 ### outOfWaterZ
 
@@ -2265,7 +2265,7 @@ ___
 
 **`Description`**
 
-出水时Z轴方向上的速度
+出水时 Z 轴方向上的速度
 
 #### Returns
 
@@ -2279,12 +2279,12 @@ Gameplay/index.d.ts:1294
 
 **`Description`**
 
-出水时Z轴方向上的速度
+出水时 Z 轴方向上的速度
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -2295,7 +2295,7 @@ Gameplay/index.d.ts:1294
 
 Gameplay/index.d.ts:1290
 
-___
+---
 
 ### parent
 
@@ -2335,8 +2335,8 @@ Core/index.d.ts:458
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                    |
+| :---------- | :-------------------------------------- |
 | `newParent` | [`GameObject`](Core.Core.GameObject.md) |
 
 #### Returns
@@ -2351,7 +2351,7 @@ Core.GameObject.parent
 
 Core/index.d.ts:463
 
-___
+---
 
 ### relativeLocation
 
@@ -2391,9 +2391,9 @@ Core/index.d.ts:304
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置 |
+| Name       | Type                            | Description |
+| :--------- | :------------------------------ | :---------- |
+| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
 
 #### Returns
 
@@ -2407,7 +2407,7 @@ Core.GameObject.relativeLocation
 
 Core/index.d.ts:310
 
-___
+---
 
 ### relativeRotation
 
@@ -2447,9 +2447,9 @@ Core/index.d.ts:330
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转 |
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
 
 #### Returns
 
@@ -2463,7 +2463,7 @@ Core.GameObject.relativeRotation
 
 Core/index.d.ts:336
 
-___
+---
 
 ### relativeScale
 
@@ -2503,9 +2503,9 @@ Core/index.d.ts:356
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放 |
+| Name    | Type                            | Description |
+| :------ | :------------------------------ | :---------- |
+| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放  |
 
 #### Returns
 
@@ -2519,7 +2519,7 @@ Core.GameObject.relativeScale
 
 Core/index.d.ts:362
 
-___
+---
 
 ### rightVector
 
@@ -2547,7 +2547,7 @@ Core.GameObject.rightVector
 
 Core/index.d.ts:419
 
-___
+---
 
 ### rotateRate
 
@@ -2581,8 +2581,8 @@ Gameplay/index.d.ts:885
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type     |
+| :------------- | :------- |
 | `InRotateRate` | `number` |
 
 #### Returns
@@ -2593,7 +2593,7 @@ Gameplay/index.d.ts:885
 
 Gameplay/index.d.ts:890
 
-___
+---
 
 ### scale
 
@@ -2619,8 +2619,8 @@ Gameplay/index.d.ts:1169
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type                            |
+| :----------------- | :------------------------------ |
 | `InCharacterScale` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
@@ -2631,7 +2631,7 @@ Gameplay/index.d.ts:1169
 
 Gameplay/index.d.ts:1173
 
-___
+---
 
 ### staticStatus
 
@@ -2657,7 +2657,7 @@ Core.GameObject.staticStatus
 
 Core/index.d.ts:442
 
-___
+---
 
 ### tag
 
@@ -2665,7 +2665,7 @@ ___
 
 **`Description`**
 
-获取当前物体的Tag
+获取当前物体的 Tag
 
 **`Effect`**
 
@@ -2689,7 +2689,7 @@ Core/index.d.ts:185
 
 **`Description`**
 
-设置当前物体的Tag
+设置当前物体的 Tag
 
 **`Effect`**
 
@@ -2697,9 +2697,9 @@ Core/index.d.ts:185
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `tag` | `string` | usage:Tag |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `tag` | `string` | usage:Tag   |
 
 #### Returns
 
@@ -2713,7 +2713,7 @@ Core.GameObject.tag
 
 Core/index.d.ts:179
 
-___
+---
 
 ### transform
 
@@ -2721,7 +2721,7 @@ ___
 
 **`Description`**
 
-返回当前物体transform
+返回当前物体 transform
 
 **`Effect`**
 
@@ -2745,7 +2745,7 @@ Core/index.d.ts:205
 
 **`Description`**
 
-设置当前物体transform
+设置当前物体 transform
 
 **`Effect`**
 
@@ -2753,9 +2753,9 @@ Core/index.d.ts:205
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:要设置的transform |
+| Name        | Type                                  | Description              |
+| :---------- | :------------------------------------ | :----------------------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | usage:要设置的 transform |
 
 #### Returns
 
@@ -2769,7 +2769,7 @@ Core.GameObject.transform
 
 Core/index.d.ts:211
 
-___
+---
 
 ### upVector
 
@@ -2797,7 +2797,7 @@ Core.GameObject.upVector
 
 Core/index.d.ts:392
 
-___
+---
 
 ### useSeparateBrakingFriction
 
@@ -2823,8 +2823,8 @@ Gameplay/index.d.ts:902
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type      |
+| :----- | :-------- |
 | `used` | `boolean` |
 
 #### Returns
@@ -2835,7 +2835,7 @@ Gameplay/index.d.ts:902
 
 Gameplay/index.d.ts:906
 
-___
+---
 
 ### useUpdate
 
@@ -2873,9 +2873,9 @@ Core/index.d.ts:437
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `boolean` |
+| Name | Type      |
+| :--- | :-------- |
+| `v`  | `boolean` |
 
 #### Returns
 
@@ -2889,7 +2889,7 @@ Core.GameObject.useUpdate
 
 Core/index.d.ts:432
 
-___
+---
 
 ### usedCapsuleCorrection
 
@@ -2897,7 +2897,7 @@ ___
 
 **`Description`**
 
-使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 #### Returns
 
@@ -2911,12 +2911,12 @@ Gameplay/index.d.ts:958
 
 **`Description`**
 
-使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                    | Type      |
+| :---------------------- | :-------- |
 | `usedCapsuleCorrection` | `boolean` |
 
 #### Returns
@@ -2927,7 +2927,7 @@ Gameplay/index.d.ts:958
 
 Gameplay/index.d.ts:962
 
-___
+---
 
 ### velocity
 
@@ -2945,7 +2945,7 @@ ___
 
 Gameplay/index.d.ts:1093
 
-___
+---
 
 ### walkableFloorAngle
 
@@ -2971,8 +2971,8 @@ Gameplay/index.d.ts:876
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name                   | Type     |
+| :--------------------- | :------- |
 | `InWalkableFloorAngle` | `number` |
 
 #### Returns
@@ -2983,7 +2983,7 @@ Gameplay/index.d.ts:876
 
 Gameplay/index.d.ts:880
 
-___
+---
 
 ### worldLocation
 
@@ -3021,9 +3021,9 @@ Core/index.d.ts:230
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) |
+| Name | Type                            |
+| :--- | :------------------------------ |
+| `v`  | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
@@ -3037,7 +3037,7 @@ Core.GameObject.worldLocation
 
 Core/index.d.ts:235
 
-___
+---
 
 ### worldRotation
 
@@ -3075,8 +3075,8 @@ Core/index.d.ts:254
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                | Description            |
+| :--------- | :---------------------------------- | :--------------------- |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
 
 #### Returns
@@ -3091,7 +3091,7 @@ Core.GameObject.worldRotation
 
 Core/index.d.ts:260
 
-___
+---
 
 ### worldScale
 
@@ -3129,9 +3129,9 @@ Core/index.d.ts:279
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) |
+| Name | Type                            |
+| :--- | :------------------------------ |
+| `v`  | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
@@ -3153,7 +3153,7 @@ Core/index.d.ts:284
 
 **`Description`**
 
-添加物体Destroy事件回调
+添加物体 Destroy 事件回调
 
 **`Effect`**
 
@@ -3161,8 +3161,8 @@ Core/index.d.ts:284
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                              | Description    |
+| :--------- | :-------------------------------- | :------------- |
 | `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
 
 #### Returns
@@ -3177,7 +3177,7 @@ Core/index.d.ts:284
 
 Core/index.d.ts:616
 
-___
+---
 
 ### addImpulse
 
@@ -3193,10 +3193,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Vector` | [`Vector`](Type.Type.Vector.md) | usage:应用的冲量 |
-| `VelocityChange?` | `boolean` | usage:速度是否改变 default:false |
+| Name              | Type                            | Description                      |
+| :---------------- | :------------------------------ | :------------------------------- |
+| `Vector`          | [`Vector`](Type.Type.Vector.md) | usage:应用的冲量                 |
+| `VelocityChange?` | `boolean`                       | usage:速度是否改变 default:false |
 
 #### Returns
 
@@ -3206,7 +3206,7 @@ ___
 
 Gameplay/index.d.ts:1143
 
-___
+---
 
 ### addMoveInput
 
@@ -3222,8 +3222,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                            | Description      |
+| :--------- | :------------------------------ | :--------------- |
 | `Invector` | [`Vector`](Type.Type.Vector.md) | usage:输入的方向 |
 
 #### Returns
@@ -3234,7 +3234,7 @@ ___
 
 Gameplay/index.d.ts:1136
 
-___
+---
 
 ### appearanceReady
 
@@ -3258,7 +3258,7 @@ ___
 
 Gameplay/index.d.ts:758
 
-___
+---
 
 ### asyncGetScriptByName
 
@@ -3274,9 +3274,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -3292,7 +3292,7 @@ Script
 
 Core/index.d.ts:563
 
-___
+---
 
 ### attach
 
@@ -3308,10 +3308,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `gameObject` | [`GameObject`](Core.Core.GameObject.md) | usage:物体 |
-| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽类型 |
+| Name         | Type                                                 | Description    |
+| :----------- | :--------------------------------------------------- | :------------- |
+| `gameObject` | [`GameObject`](Core.Core.GameObject.md)              | usage:物体     |
+| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽类型 |
 
 #### Returns
 
@@ -3321,7 +3321,7 @@ ___
 
 Gameplay/index.d.ts:1158
 
-___
+---
 
 ### attachToGameObject
 
@@ -3337,9 +3337,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体 |
+| Name  | Type                                    | Description |
+| :---- | :-------------------------------------- | :---------- |
+| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体  |
 
 #### Returns
 
@@ -3353,7 +3353,7 @@ ___
 
 Core/index.d.ts:583
 
-___
+---
 
 ### cleanDecorations
 
@@ -3375,7 +3375,7 @@ ___
 
 Gameplay/index.d.ts:1330
 
-___
+---
 
 ### cleanOneDecoration
 
@@ -3391,9 +3391,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 实例化后的挂件对象Guid |
+| Name   | Type     | Description                    |
+| :----- | :------- | :----------------------------- |
+| `guid` | `string` | usage: 实例化后的挂件对象 Guid |
 
 #### Returns
 
@@ -3403,7 +3403,7 @@ ___
 
 Gameplay/index.d.ts:1343
 
-___
+---
 
 ### clone
 
@@ -3419,8 +3419,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type      | Description                 |
+| :-------------- | :-------- | :-------------------------- |
 | `inReplicates?` | `boolean` | usage:是否复制 default:true |
 
 #### Returns
@@ -3437,7 +3437,7 @@ ___
 
 Core/index.d.ts:543
 
-___
+---
 
 ### crouch
 
@@ -3453,8 +3453,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
 | `isCrouch` | `boolean` | usage:是否下蹲 |
 
 #### Returns
@@ -3465,7 +3465,7 @@ ___
 
 Gameplay/index.d.ts:1130
 
-___
+---
 
 ### deleteDestroyCallback
 
@@ -3473,7 +3473,7 @@ ___
 
 **`Description`**
 
-移除物体Destroy事件回调
+移除物体 Destroy 事件回调
 
 **`Effect`**
 
@@ -3481,8 +3481,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                              | Description    |
+| :--------- | :-------------------------------- | :------------- |
 | `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
 
 #### Returns
@@ -3497,7 +3497,7 @@ ___
 
 Core/index.d.ts:622
 
-___
+---
 
 ### destroy
 
@@ -3523,7 +3523,7 @@ ___
 
 Core/index.d.ts:146
 
-___
+---
 
 ### detachFromGameObject
 
@@ -3549,7 +3549,7 @@ ___
 
 Gameplay/index.d.ts:856
 
-___
+---
 
 ### getBoundingBoxSize
 
@@ -3569,11 +3569,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `nonColliding?` | `boolean` | usage:表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean` | usage:如果为 true，则递归子物体 default:false |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name                      | Type                            | Description                                        |
+| :------------------------ | :------------------------------ | :------------------------------------------------- |
+| `nonColliding?`           | `boolean`                       | usage:表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean`                       | usage:如果为 true，则递归子物体 default:false      |
+| `outer?`                  | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null      |
 
 #### Returns
 
@@ -3589,7 +3589,7 @@ Type.Vector
 
 Core/index.d.ts:598
 
-___
+---
 
 ### getBounds
 
@@ -3597,7 +3597,7 @@ ___
 
 **`Description`**
 
-获取Gameobject边界
+获取 Gameobject 边界
 
 **`Effect`**
 
@@ -3605,12 +3605,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `onlyCollidingComponents` | `boolean` | usage:是否只包含有碰撞的组件。 |
-| `OriginOuter` | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为Gameobject的中心点坐标。 |
-| `BoxExtentOuter` | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为Gameobject尺寸的一半。 |
-| `includeFromChildActors?` | `boolean` | usage:是否递归包含子物体 default:undefined |
+| Name                      | Type                            | Description                                      |
+| :------------------------ | :------------------------------ | :----------------------------------------------- |
+| `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 尺寸的一半。   |
+| `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
 
 #### Returns
 
@@ -3624,7 +3624,7 @@ ___
 
 Core/index.d.ts:194
 
-___
+---
 
 ### getChildByGuid
 
@@ -3632,7 +3632,7 @@ ___
 
 **`Description`**
 
-根据Guid查找子物体
+根据 Guid 查找子物体
 
 **`Effect`**
 
@@ -3640,9 +3640,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | usage:guid  |
 
 #### Returns
 
@@ -3658,7 +3658,7 @@ ___
 
 Core/index.d.ts:536
 
-___
+---
 
 ### getChildByName
 
@@ -3674,9 +3674,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名称 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名称  |
 
 #### Returns
 
@@ -3692,7 +3692,7 @@ ___
 
 Core/index.d.ts:529
 
-___
+---
 
 ### getChildren
 
@@ -3700,7 +3700,7 @@ ___
 
 **`Description`**
 
-获取Children 客户端不维系父子关系 推荐使用Find替代
+获取 Children 客户端不维系父子关系 推荐使用 Find 替代
 
 **`Effect`**
 
@@ -3710,7 +3710,7 @@ ___
 
 [`GameObject`](Core.Core.GameObject.md)[]
 
-Array<GameObject>
+Array\<GameObject\>
 
 #### Inherited from
 
@@ -3720,7 +3720,7 @@ Array<GameObject>
 
 Core/index.d.ts:522
 
-___
+---
 
 ### getChildrenBoxCenter
 
@@ -3740,8 +3740,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3758,7 +3758,7 @@ Type.Vector
 
 Core/index.d.ts:610
 
-___
+---
 
 ### getCollision
 
@@ -3786,7 +3786,7 @@ ___
 
 Core/index.d.ts:480
 
-___
+---
 
 ### getControlRotator
 
@@ -3802,8 +3802,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                | Description                                 |
+| :----- | :---------------------------------- | :------------------------------------------ |
 | `Out?` | [`Rotation`](Type.Type.Rotation.md) | usage:获取控制器旋转 default:出参，可选参数 |
 
 #### Returns
@@ -3816,7 +3816,7 @@ ___
 
 Gameplay/index.d.ts:1248
 
-___
+---
 
 ### getDecorations
 
@@ -3824,7 +3824,7 @@ ___
 
 **`Description`**
 
-获取当前挂件实例化对象的Guid
+获取当前挂件实例化对象的 Guid
 
 **`Effect`**
 
@@ -3834,13 +3834,13 @@ ___
 
 [`DecorationTule`](../modules/Gameplay.Gameplay.md#decorationtule)[]
 
-guid数组
+guid 数组
 
 #### Defined in
 
 Gameplay/index.d.ts:1349
 
-___
+---
 
 ### getForwardVector
 
@@ -3860,8 +3860,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3878,7 +3878,7 @@ Vector
 
 Core/index.d.ts:413
 
-___
+---
 
 ### getHeadUIWidget
 
@@ -3886,7 +3886,7 @@ ___
 
 **`Description`**
 
-获取头顶UIWidget
+获取头顶 UIWidget
 
 **`Effect`**
 
@@ -3896,13 +3896,13 @@ ___
 
 [`UIWidget`](Gameplay.Gameplay.UIWidget.md)
 
-头顶UIWidget对象
+头顶 UIWidget 对象
 
 #### Defined in
 
 Gameplay/index.d.ts:1195
 
-___
+---
 
 ### getRelativeLocation
 
@@ -3922,8 +3922,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3940,7 +3940,7 @@ ___
 
 Core/index.d.ts:318
 
-___
+---
 
 ### getRelativeRotation
 
@@ -3960,8 +3960,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                | Description                                     |
+| :------- | :---------------------------------- | :---------------------------------------------- |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -3978,7 +3978,7 @@ ___
 
 Gameplay/index.d.ts:1350
 
-___
+---
 
 ### getRelativeScale
 
@@ -3998,8 +3998,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -4016,7 +4016,7 @@ ___
 
 Core/index.d.ts:370
 
-___
+---
 
 ### getRightVector
 
@@ -4036,8 +4036,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -4054,7 +4054,7 @@ Vector
 
 Core/index.d.ts:427
 
-___
+---
 
 ### getScriptByGuid
 
@@ -4062,7 +4062,7 @@ ___
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
 
 **`Effect`**
 
@@ -4070,9 +4070,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | usage:guid  |
 
 #### Returns
 
@@ -4088,7 +4088,7 @@ Script
 
 Core/index.d.ts:570
 
-___
+---
 
 ### getScriptByName
 
@@ -4096,7 +4096,7 @@ ___
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
 
 **`Effect`**
 
@@ -4104,9 +4104,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -4122,7 +4122,7 @@ Script
 
 Core/index.d.ts:556
 
-___
+---
 
 ### getScripts
 
@@ -4130,7 +4130,7 @@ ___
 
 **`Description`**
 
-获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代
 
 **`Effect`**
 
@@ -4140,7 +4140,7 @@ ___
 
 `Script`[]
 
-Array<Script>
+Array\<Script\>
 
 #### Inherited from
 
@@ -4150,7 +4150,7 @@ Array<Script>
 
 Core/index.d.ts:549
 
-___
+---
 
 ### getSlotName
 
@@ -4166,8 +4166,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                 | Description    |
+| :----------- | :--------------------------------------------------- | :------------- |
 | `SocketType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽类型 |
 
 #### Returns
@@ -4180,7 +4180,7 @@ ___
 
 Gameplay/index.d.ts:1165
 
-___
+---
 
 ### getSourceAssetGuid
 
@@ -4188,7 +4188,7 @@ ___
 
 **`Description`**
 
-获取当前物体使用资源的GUID
+获取当前物体使用资源的 GUID
 
 **`Effect`**
 
@@ -4198,7 +4198,7 @@ ___
 
 `string`
 
-资源的GUID
+资源的 GUID
 
 #### Inherited from
 
@@ -4208,7 +4208,7 @@ ___
 
 Core/index.d.ts:628
 
-___
+---
 
 ### getTransform
 
@@ -4216,7 +4216,7 @@ ___
 
 **`Description`**
 
-返回当前物体Transform
+返回当前物体 Transform
 
 **`Effect`**
 
@@ -4228,8 +4228,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                  | Description                                      |
+| :------- | :------------------------------------ | :----------------------------------------------- |
 | `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接收转换数据的 Transform 对象 default:null |
 
 #### Returns
@@ -4246,7 +4246,7 @@ Transform
 
 Core/index.d.ts:219
 
-___
+---
 
 ### getUpVector
 
@@ -4262,8 +4262,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -4280,7 +4280,7 @@ Vector
 
 Core/index.d.ts:399
 
-___
+---
 
 ### getWorldLocation
 
@@ -4300,8 +4300,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -4318,7 +4318,7 @@ ___
 
 Core/index.d.ts:243
 
-___
+---
 
 ### getWorldRotation
 
@@ -4338,8 +4338,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                | Description                                     |
+| :------- | :---------------------------------- | :---------------------------------------------- |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -4356,7 +4356,7 @@ ___
 
 Core/index.d.ts:268
 
-___
+---
 
 ### getWorldScale
 
@@ -4376,8 +4376,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -4394,7 +4394,7 @@ ___
 
 Core/index.d.ts:292
 
-___
+---
 
 ### isPlayingAnimation
 
@@ -4418,7 +4418,7 @@ ___
 
 Gameplay/index.d.ts:1364
 
-___
+---
 
 ### isRunningClient
 
@@ -4436,7 +4436,7 @@ ___
 
 `boolean`
 
-true为客户端
+true 为客户端
 
 #### Inherited from
 
@@ -4446,7 +4446,7 @@ true为客户端
 
 Core/index.d.ts:49
 
-___
+---
 
 ### jump
 
@@ -4468,7 +4468,7 @@ ___
 
 Gameplay/index.d.ts:1124
 
-___
+---
 
 ### loadAnimation
 
@@ -4484,10 +4484,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:动画GUID |
-| `sync?` | `boolean` | usage:Animation对象是否同步 default:true |
+| Name    | Type      | Description                               |
+| :------ | :-------- | :---------------------------------------- |
+| `guid`  | `string`  | usage:动画 GUID                           |
+| `sync?` | `boolean` | usage:Animation 对象是否同步 default:true |
 
 #### Returns
 
@@ -4499,7 +4499,7 @@ Animation 对象
 
 Gameplay/index.d.ts:1394
 
-___
+---
 
 ### loadOneDecoration
 
@@ -4515,10 +4515,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `decorationString` | `string` | usage: 一个挂件数据 |
-| `callback` | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) | usage: 挂件对象的Guid |
+| Name               | Type                                                               | Description            |
+| :----------------- | :----------------------------------------------------------------- | :--------------------- |
+| `decorationString` | `string`                                                           | usage: 一个挂件数据    |
+| `callback`         | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) | usage: 挂件对象的 Guid |
 
 #### Returns
 
@@ -4528,7 +4528,7 @@ ___
 
 Gameplay/index.d.ts:1337
 
-___
+---
 
 ### loadSlotAndEditorDataByGuid
 
@@ -4536,7 +4536,7 @@ ___
 
 **`Description`**
 
-通过Guid加载插槽跟角色编辑数据
+通过 Guid 加载插槽跟角色编辑数据
 
 **`Effect`**
 
@@ -4544,8 +4544,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description     |
+| :----- | :------- | :-------------- |
 | `guid` | `string` | usage:Slot Guid |
 
 #### Returns
@@ -4556,7 +4556,7 @@ ___
 
 Gameplay/index.d.ts:1260
 
-___
+---
 
 ### loadSlotAndEditorDataByPath
 
@@ -4572,8 +4572,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type     | Description    |
+| :------------- | :------- | :------------- |
 | `relativePath` | `string` | usage:相对路径 |
 
 #### Returns
@@ -4584,7 +4584,7 @@ ___
 
 Gameplay/index.d.ts:1254
 
-___
+---
 
 ### loadSlotByGuid
 
@@ -4592,7 +4592,7 @@ ___
 
 **`Description`**
 
-通过Guid加载数据
+通过 Guid 加载数据
 
 **`Effect`**
 
@@ -4600,8 +4600,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description     |
+| :----- | :------- | :-------------- |
 | `guid` | `string` | usage:Slot Guid |
 
 #### Returns
@@ -4612,7 +4612,7 @@ ___
 
 Gameplay/index.d.ts:1272
 
-___
+---
 
 ### loadSlotByPath
 
@@ -4628,8 +4628,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type     | Description    |
+| :------------- | :------- | :------------- |
 | `relativePath` | `string` | usage:相对路径 |
 
 #### Returns
@@ -4640,7 +4640,7 @@ ___
 
 Gameplay/index.d.ts:1266
 
-___
+---
 
 ### loadStance
 
@@ -4656,10 +4656,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 预制姿态资源guid或动画资源guid |
-| `sync?` | `boolean` | usage: 是否自动同步 default:true |
+| Name    | Type      | Description                              |
+| :------ | :-------- | :--------------------------------------- |
+| `guid`  | `string`  | usage: 预制姿态资源 guid 或动画资源 guid |
+| `sync?` | `boolean` | usage: 是否自动同步 default:true         |
 
 #### Returns
 
@@ -4671,7 +4671,7 @@ ___
 
 Gameplay/index.d.ts:1079
 
-___
+---
 
 ### lookAt
 
@@ -4687,8 +4687,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                            | Description  |
+| :------------ | :------------------------------ | :----------- |
 | `TargetPoint` | [`Vector`](Type.Type.Vector.md) | usage:目标点 |
 
 #### Returns
@@ -4699,7 +4699,7 @@ ___
 
 Gameplay/index.d.ts:1241
 
-___
+---
 
 ### onDestroy
 
@@ -4725,7 +4725,7 @@ onDestroy 生命周期函数
 
 Gameplay/index.d.ts:769
 
-___
+---
 
 ### onStart
 
@@ -4751,7 +4751,7 @@ ___
 
 Core/index.d.ts:12
 
-___
+---
 
 ### onUpdate
 
@@ -4767,8 +4767,8 @@ onUpdate 生命周期函数
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description        |
+| :--- | :------- | :----------------- |
 | `dt` | `number` | usage:函数调用间隔 |
 
 #### Returns
@@ -4783,7 +4783,7 @@ onUpdate 生命周期函数
 
 Gameplay/index.d.ts:764
 
-___
+---
 
 ### playAnimation
 
@@ -4791,7 +4791,7 @@ ___
 
 **`Description`**
 
-播放动画,同时获取到动画对象,Animation对象接口是同步的
+播放动画,同时获取到动画对象,Animation 对象接口是同步的
 
 **`Effect`**
 
@@ -4799,11 +4799,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:动画GUID |
-| `loopCount?` | `number` | usage:循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
-| `rate?` | `number` | usage:播放速率，1表示正常速率 default:1 |
+| Name         | Type     | Description                                                          |
+| :----------- | :------- | :------------------------------------------------------------------- |
+| `guid`       | `string` | usage:动画 GUID                                                      |
+| `loopCount?` | `number` | usage:循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
+| `rate?`      | `number` | usage:播放速率，1 表示正常速率 default:1                             |
 
 #### Returns
 
@@ -4815,7 +4815,7 @@ Animation 对象
 
 Gameplay/index.d.ts:1373
 
-___
+---
 
 ### playAnimationLocally
 
@@ -4835,11 +4835,11 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `AnimationGuid` | `string` | usage:动画GUID |
-| `AnimationLength?` | `number` | usage:播放时长 default:0 |
-| `LoopCount?` | `number` | usage:循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
+| Name               | Type     | Description                                                          |
+| :----------------- | :------- | :------------------------------------------------------------------- |
+| `AnimationGuid`    | `string` | usage:动画 GUID                                                      |
+| `AnimationLength?` | `number` | usage:播放时长 default:0                                             |
+| `LoopCount?`       | `number` | usage:循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
 
 #### Returns
 
@@ -4849,7 +4849,7 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 Gameplay/index.d.ts:1382
 
-___
+---
 
 ### ready
 
@@ -4857,7 +4857,7 @@ ___
 
 **`Description`**
 
-GameObject准备好后返回
+GameObject 准备好后返回
 
 **`Effect`**
 
@@ -4877,7 +4877,7 @@ GameObject准备好后返回
 
 Core/index.d.ts:122
 
-___
+---
 
 ### setAppearance
 
@@ -4893,14 +4893,14 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> |
+| Name | Type                                                                  |
+| :--- | :-------------------------------------------------------------------- |
+| `T`  | extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                                               | Description              |
+| :---- | :----------------------------------------------------------------- | :----------------------- |
 | `clz` | [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\> | usage:外观修改接口类类型 |
 
 #### Returns
@@ -4913,7 +4913,7 @@ ___
 
 Gameplay/index.d.ts:1325
 
-___
+---
 
 ### setCollision
 
@@ -4933,10 +4933,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | usage: 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean` | usage: 是否传递给子节点 default: false |
+| Name                   | Type                                                                                                                   | Description                                                      |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | usage: 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean`                                                                                                              | usage: 是否传递给子节点 default: false                           |
 
 #### Returns
 
@@ -4950,7 +4950,7 @@ ___
 
 Core/index.d.ts:471
 
-___
+---
 
 ### setLocationAndRotation
 
@@ -4966,9 +4966,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:世界位置 |
+| Name       | Type                                | Description    |
+| :--------- | :---------------------------------- | :------------- |
+| `location` | [`Vector`](Type.Type.Vector.md)     | usage:世界位置 |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:世界旋转 |
 
 #### Returns
@@ -4983,7 +4983,7 @@ ___
 
 Core/index.d.ts:383
 
-___
+---
 
 ### setRelativeLocation
 
@@ -4999,9 +4999,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置 |
+| Name       | Type                            | Description |
+| :--------- | :------------------------------ | :---------- |
+| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
 
 #### Returns
 
@@ -5015,7 +5015,7 @@ ___
 
 Core/index.d.ts:324
 
-___
+---
 
 ### setRelativeRotation
 
@@ -5031,9 +5031,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转 |
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
 
 #### Returns
 
@@ -5047,7 +5047,7 @@ ___
 
 Core/index.d.ts:350
 
-___
+---
 
 ### setRelativeScale
 
@@ -5063,8 +5063,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                            | Description            |
+| :------ | :------------------------------ | :--------------------- |
 | `scale` | [`Vector`](Type.Type.Vector.md) | usage:要设置的相对缩放 |
 
 #### Returns
@@ -5079,7 +5079,7 @@ ___
 
 Core/index.d.ts:376
 
-___
+---
 
 ### setTransform
 
@@ -5087,7 +5087,7 @@ ___
 
 **`Description`**
 
-设置当前物体transform
+设置当前物体 transform
 
 **`Effect`**
 
@@ -5095,8 +5095,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                  | Description     |
+| :---------- | :------------------------------------ | :-------------- |
 | `transform` | [`Transform`](Type.Type.Transform.md) | usage:transform |
 
 #### Returns
@@ -5111,7 +5111,7 @@ ___
 
 Core/index.d.ts:225
 
-___
+---
 
 ### setVisibility
 
@@ -5119,7 +5119,7 @@ ___
 
 **`Description`**
 
-设置GameObject是否被显示
+设置 GameObject 是否被显示
 
 **`Effect`**
 
@@ -5127,10 +5127,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态 |
-| `propagateToChildren?` | `boolean` | usage: 是否设置子物体 default:false |
+| Name                   | Type                                                     | Description                         |
+| :--------------------- | :------------------------------------------------------- | :---------------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态                          |
+| `propagateToChildren?` | `boolean`                                                | usage: 是否设置子物体 default:false |
 
 #### Returns
 
@@ -5144,7 +5144,7 @@ ___
 
 Core/index.d.ts:487
 
-___
+---
 
 ### setWorldLocation
 
@@ -5160,9 +5160,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage: 要设置的世界坐标 |
+| Name | Type                            | Description             |
+| :--- | :------------------------------ | :---------------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | usage: 要设置的世界坐标 |
 
 #### Returns
 
@@ -5176,7 +5176,7 @@ ___
 
 Core/index.d.ts:249
 
-___
+---
 
 ### setWorldRotation
 
@@ -5192,8 +5192,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                | Description            |
+| :--------- | :---------------------------------- | :--------------------- |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
 
 #### Returns
@@ -5208,7 +5208,7 @@ ___
 
 Core/index.d.ts:274
 
-___
+---
 
 ### setWorldScale
 
@@ -5224,9 +5224,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage:要设置的世界缩放 |
+| Name | Type                            | Description            |
+| :--- | :------------------------------ | :--------------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | usage:要设置的世界缩放 |
 
 #### Returns
 
@@ -5240,7 +5240,7 @@ ___
 
 Core/index.d.ts:298
 
-___
+---
 
 ### stopAnimation
 
@@ -5260,9 +5260,9 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAnimationGuid` | `string` | usage:停止播放的动画的Guid |
+| Name              | Type     | Description                 |
+| :---------------- | :------- | :-------------------------- |
+| `InAnimationGuid` | `string` | usage:停止播放的动画的 Guid |
 
 #### Returns
 
@@ -5272,7 +5272,7 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 Gameplay/index.d.ts:1401
 
-___
+---
 
 ### stopStance
 
@@ -5288,8 +5288,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description                      |
+| :------ | :-------- | :------------------------------- |
 | `sync?` | `boolean` | usage: 是否自动同步 default:true |
 
 #### Returns
@@ -5300,7 +5300,7 @@ ___
 
 Gameplay/index.d.ts:1085
 
-___
+---
 
 ### swimmingDown
 
@@ -5316,9 +5316,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `speed` | `number` | usage:下潜速度不能超过MaxSwimSpeed(游泳最大速度) |
+| Name    | Type     | Description                                       |
+| :------ | :------- | :------------------------------------------------ |
+| `speed` | `number` | usage:下潜速度不能超过 MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
@@ -5328,7 +5328,7 @@ ___
 
 Gameplay/index.d.ts:1314
 
-___
+---
 
 ### swimmingUp
 
@@ -5344,9 +5344,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `speed` | `number` | usage:上浮速度不能超过MaxSwimSpeed(游泳最大速度) |
+| Name    | Type     | Description                                       |
+| :------ | :------- | :------------------------------------------------ |
+| `speed` | `number` | usage:上浮速度不能超过 MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
@@ -5356,7 +5356,7 @@ ___
 
 Gameplay/index.d.ts:1308
 
-___
+---
 
 ### switchToFlying
 
@@ -5378,7 +5378,7 @@ ___
 
 Gameplay/index.d.ts:1114
 
-___
+---
 
 ### switchToWalking
 
@@ -5400,7 +5400,7 @@ ___
 
 Gameplay/index.d.ts:1119
 
-___
+---
 
 ### asyncFind
 
@@ -5408,7 +5408,7 @@ ___
 
 **`Description`**
 
-通过guid异步查找Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过 guid 异步查找 Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -5417,15 +5417,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:物体的guid |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
+| `guid` | `string` | usage:物体的 guid |
 
 #### Returns
 
 `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
 
-Guid对应的物体
+Guid 对应的物体
 
 #### Inherited from
 
@@ -5435,7 +5435,7 @@ Guid对应的物体
 
 Core/index.d.ts:161
 
-___
+---
 
 ### asyncSpawnGameObject
 
@@ -5451,16 +5451,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | usage:资源的GUID |
+| Name            | Type      | Description                           |
+| :-------------- | :-------- | :------------------------------------ |
+| `assetId`       | `string`  | usage:资源的 GUID                     |
 | `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
 
-构造的GameObject
+构造的 GameObject
 
 #### Inherited from
 
@@ -5470,7 +5470,7 @@ ___
 
 Core/index.d.ts:138
 
-___
+---
 
 ### find
 
@@ -5478,7 +5478,7 @@ ___
 
 **`Description`**
 
-通过Guid查找Gameobject
+通过 Guid 查找 Gameobject
 
 **`Effect`**
 
@@ -5486,15 +5486,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:物体的Guid |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
+| `guid` | `string` | usage:物体的 Guid |
 
 #### Returns
 
 [`GameObject`](Core.Core.GameObject.md)
 
-Guid对应的物体
+Guid 对应的物体
 
 #### Inherited from
 
@@ -5504,7 +5504,7 @@ Guid对应的物体
 
 Core/index.d.ts:153
 
-___
+---
 
 ### findGameObjectByTag
 
@@ -5512,7 +5512,7 @@ ___
 
 **`Description`**
 
-通过自定义Tag获取GameObject
+通过自定义 Tag 获取 GameObject
 
 **`Effect`**
 
@@ -5520,15 +5520,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InTag` | `string` | usage:自定义Tag |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `InTag` | `string` | usage:自定义 Tag |
 
 #### Returns
 
 [`GameObject`](Core.Core.GameObject.md)[]
 
-Array<GameObject>
+Array\<GameObject\>
 
 #### Inherited from
 
@@ -5538,7 +5538,7 @@ Array<GameObject>
 
 Core/index.d.ts:577
 
-___
+---
 
 ### getGameObjectByName
 
@@ -5554,8 +5554,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
 | `name` | `string` | usage:物体名字 |
 
 #### Returns
@@ -5572,7 +5572,7 @@ ___
 
 Core/index.d.ts:516
 
-___
+---
 
 ### getGameObjectsByName
 
@@ -5588,8 +5588,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
 | `name` | `string` | usage:物体名字 |
 
 #### Returns
@@ -5606,7 +5606,7 @@ ___
 
 Core/index.d.ts:509
 
-___
+---
 
 ### spawnGameObject
 
@@ -5622,16 +5622,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | usage:资源的GUID |
+| Name            | Type      | Description                           |
+| :-------------- | :-------- | :------------------------------------ |
+| `assetId`       | `string`  | usage:资源的 GUID                     |
 | `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
 
 #### Returns
 
 [`GameObject`](Core.Core.GameObject.md)
 
-构造的GameObject
+构造的 GameObject
 
 #### Inherited from
 

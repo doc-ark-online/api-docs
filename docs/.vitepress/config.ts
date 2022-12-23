@@ -2,6 +2,7 @@ import { defineConfig, DefaultTheme } from "vitepress";
 import { pathToSideBar } from "../../utils";
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: "API",
   description: "Metaapp 编辑器的 Api 文档",
   themeConfig: {

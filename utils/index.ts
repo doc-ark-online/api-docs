@@ -19,10 +19,10 @@ export function pathToSideBar(paths: string[]) {
       }),
     });
   });
-  sidebar.forEach((side) => {
-    side.items.forEach((s) => {
-      console.log(s.link);
-    });
-  });
+  // sidebar.forEach((side) => {
+  //   side.items.forEach((s) => {
+  //     console.log(s.link);
+  //   });
+  // });
   return sidebar;
 }
