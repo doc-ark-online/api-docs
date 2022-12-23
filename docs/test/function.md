@@ -1,43 +1,34 @@
-# Function
+[test](../README.md) / asyncSetPlayerData
 
-实现单个功能的方法结合
+# asyncSetPlayerData
 
-## 打印函数
+function asyncSetPlayerData(player: Gameplay.Player, data: unknown): Promise<DataStorageResultCode>;
 
-```typescript
-function console(str: string);
-```
+**`Description`**
 
-### 参数
+异步设置自定义数据
 
-| 名称 | 类型   | 描述       |
-| ---- | ------ | ---------- |
-| str  | string | 打印的字符 |
+**`effect`**
 
-### 案例
+只在服务端调用生效
 
-```typescript
-console("hello world");
-```
+**`precautions`**
 
-会在控制台显示出来 hello world
+每个玩家在每一个游戏中允许最多存储16Kb的编码数据。超过此限制的任何数据都不能保证被存储。
+  
+**`param`**
 
-## 打印函数 plus 版本
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | `Gameplay.Player` | usage: 玩家对象 |
+| `data` | `unknown` | usage:要保存的数据 |
 
-```typescript
-function console(str: string);
-```
+**`returns`**
+  
+设置操作结果
 
-### 参数
-
-| 名称 | 类型   | 描述       |
-| ---- | ------ | ---------- |
-| str  | string | 打印的字符 |
-
-### 案例
-
-```typescript
-console("hello world");
-```
-
-会在控制台显示出来 hello world
+**`example`**  
+  
+```ts
+  
+```  
