@@ -32,14 +32,18 @@ export default defineConfig({
     sidebar: [
       {
         text: "Index",
-        collapsible: false,
-        collapsed: false,
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: "base", link: "/test/Base" },
           { text: "enums", link: "/test/enums" },
           { text: "interface", link: "/test/interface" },
           { text: "function", link: "/test/function" },
           { text: "delegate", link: "/test/Delegate" },
+          { text: "class", link: "/test/Class" },
+          { text: "variable", link: "/test/Variable" },
+           { text: "type", link: "/test/Type" },
+
         ],
       },
       ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
