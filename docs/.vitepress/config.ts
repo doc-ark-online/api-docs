@@ -1,4 +1,5 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, DefaultTheme } from "vitepress";
+import { pathToSideBar } from "../../utils";
 
 export default defineConfig({
   title: "Api",
@@ -40,90 +41,7 @@ export default defineConfig({
           { text: "Base", link: "/test/Base" },
         ],
       },
-      {
-        text: "自动化生成",
-        collapsible: true,
-        collapsed: true,
-        items: [{ text: "enums", link: "/auto/enums" }],
-      },
-      {
-        text: "Common",
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: "Delegate", link: "/common/Delegate" },
-          { text: "DelegateInterface", link: "/common/DelegateInterface" },
-          { text: "MulticastDelegate", link: "/common/MulticastDelegate" },
-          {
-            text: "MulticastDelegateInterface",
-            link: "/common/MulticastDelegateInterface",
-          },
-        ],
-      },
-      {
-        text: "Core",
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: "Base", link: "/core" },
-          { text: "Game Play", link: "/game-play" },
-          { text: "GameObject", link: "/GameObject" },
-        ],
-      },
-      {
-        text: "DataStorage",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "Events",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "Extension",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "Gameplay",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "Global",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "GoogleAnalytics",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "KeyboardSimulation",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "MathLibrary",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
-      {
-        text: "MobileEditor",
-        collapsible: true,
-        collapsed: true,
-        items: [],
-      },
+      ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
     ],
     editLink: {
       pattern: "https://github.com/Metaworld2021/api-docs/tree/main/docs/:path",
@@ -137,3 +55,92 @@ export default defineConfig({
     outline: [2, 3],
   },
 });
+
+function otherSidebar() {
+  return [
+    {
+      text: "自动化生成",
+      collapsible: true,
+      collapsed: true,
+      items: [{ text: "enums", link: "/auto/enums" }],
+    },
+    {
+      text: "Common",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Delegate", link: "/common/Delegate" },
+        { text: "DelegateInterface", link: "/common/DelegateInterface" },
+        { text: "MulticastDelegate", link: "/common/MulticastDelegate" },
+        {
+          text: "MulticastDelegateInterface",
+          link: "/common/MulticastDelegateInterface",
+        },
+      ],
+    },
+    {
+      text: "Core",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Base", link: "/core" },
+        { text: "Game Play", link: "/game-play" },
+        { text: "GameObject", link: "/GameObject" },
+      ],
+    },
+    {
+      text: "DataStorage",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "Events",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "Extension",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "Gameplay",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "Global",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "GoogleAnalytics",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "KeyboardSimulation",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "MathLibrary",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+    {
+      text: "MobileEditor",
+      collapsible: true,
+      collapsed: true,
+      items: [],
+    },
+  ];
+}

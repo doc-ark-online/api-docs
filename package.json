@@ -5,10 +5,13 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "tsc": "tsc ./utils/index.ts && node ./utils/index.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.17",
+    "typescript": "^4.9.4",
     "vitepress": "^1.0.0-alpha.32",
     "vue": "^3.2.45"
   }
