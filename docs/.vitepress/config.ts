@@ -2,7 +2,7 @@ import { defineConfig, DefaultTheme } from "vitepress";
 import { pathToSideBar } from "../../utils";
 
 export default defineConfig({
-  title: "Api",
+  title: "API",
   description: "Metaapp 编辑器的 Api 文档",
   themeConfig: {
     algolia: {
@@ -10,14 +10,14 @@ export default defineConfig({
       apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
       indexName: "vitepress",
     },
-    siteTitle: "Api",
+    siteTitle: "API介绍",
     nav: [
       {
-        text: "018 版本",
+        text: "020 版本",
         items: [
-          { text: "017 版本", link: "/item-1" },
-          { text: "016 版本", link: "/item-2" },
-          { text: "015 版本", link: "/item-3" },
+          { text: "021 版本", link: "/item-1" },
+          { text: "019 版本", link: "/item-2" },
+          { text: "018 版本", link: "/item-3" },
         ],
       },
       {
@@ -30,15 +30,15 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "Test",
-        collapsible: true,
-        collapsed: true,
+        text: "Index",
+        collapsible: false,
+        collapsed: false,
         items: [
+          { text: "base", link: "/test/Base" },
           { text: "enums", link: "/test/enums" },
           { text: "interface", link: "/test/interface" },
           { text: "function", link: "/test/function" },
-          { text: "Delegate", link: "/test/Delegate" },
-          { text: "Base", link: "/test/Base" },
+          { text: "delegate", link: "/test/Delegate" },
         ],
       },
       ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
