@@ -11,7 +11,7 @@ export default defineConfig({
       apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
       indexName: "vitepress",
     },
-    siteTitle: "API介绍",
+    siteTitle: "一些自带的Markdown写法",
     nav: [
       {
         text: "020 版本",
