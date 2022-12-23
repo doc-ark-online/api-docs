@@ -78,3 +78,60 @@ interface IPropertyOptions {
 // 一堆代码
 ...
 ```
+
+```typescript
+class Base {
+  /**
+   * @description 周期函数 脚本开始执行时调用
+   * @effect 调用端生效
+   */
+  protected onStart(): void;
+  /**
+   * @description 周期函数 被销毁时调用
+   * @effect 调用端生效
+   */
+  protected onDestroy(): void;
+  /**
+   * @description 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
+   * @param dt usage:与上一帧的延迟 单位:秒
+   * @effect 调用端生效
+   */
+  protected onUpdate(dt: number): void;
+  /**
+   * @description 是否使用更新
+   * @effect 调用端生效
+   */
+  set useUpdate(v: boolean);
+  /**
+   * @description 是否使用更新
+   * @effect 调用端生效
+   */
+  get useUpdate(): boolean;
+  /**
+   * @description 获取对象的guid（唯一标识一个对象的字符串）。
+   * @effect 调用端生效
+   */
+  get guid(): string;
+  /**
+   * @description 获取对象的名字。
+   * @effect 调用端生效
+   */
+  get name(): string;
+  /**
+   * @description 是否为客户端
+   * @effect 调用端生效
+   * @returns true为客户端
+   */
+  isRunningClient(): boolean;
+}
+```
+
+## onStart
+
+是否为客户端
+
+```ts
+protected onStart(): void;
+```
+
+## onDestroy

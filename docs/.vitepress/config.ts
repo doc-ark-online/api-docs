@@ -37,7 +37,14 @@ export default defineConfig({
           { text: "interface", link: "/test/interface" },
           { text: "function", link: "/test/function" },
           { text: "Delegate", link: "/test/Delegate" },
+          { text: "Base", link: "/test/Base" },
         ],
+      },
+      {
+        text: "自动化生成",
+        collapsible: true,
+        collapsed: true,
+        items: [{ text: "enums", link: "/auto/enums" }],
       },
       {
         text: "Common",
