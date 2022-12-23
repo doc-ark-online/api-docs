@@ -1,5 +1,6 @@
 {
-  "name": "api-docs",
+  "name": "api-docs-public",
+  "author": "yuechao.xu",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
