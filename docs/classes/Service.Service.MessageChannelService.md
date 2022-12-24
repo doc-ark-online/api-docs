@@ -38,11 +38,6 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 | [sendTo](Service.Service.MessageChannelService.md#sendto) | ▸ **sendTo**(`toWhom`, `message`): `void`| 发送消息给指定对象|
 | [getInstance](Service.Service.MessageChannelService.md#getinstance) | ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.Service.MessageChannelService.md) | 获取API实例进行调用 |
 
-- [registerAction](Service.Service.MessageChannelService.md#registeraction) action以及对应要调用的回调函数 ▸ **registerAction**(`action`, `caller`, `onCall`): `void` 注册需要收到消息的
-- [send](Service.Service.MessageChannelService.md#send) 发送消息到通道上 ▸ **send**(`message`): `void`
-- [sendTo](Service.Service.MessageChannelService.md#sendto) 发送消息给指定对象 ▸ **sendTo**(`toWhom`, `message`): `void`
-- [getInstance](Service.Service.MessageChannelService.md#getinstance) 获取API实例进行调用 ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.Service.MessageChannelService.md) 
-
 ## Methods
 
 ### registerAction
