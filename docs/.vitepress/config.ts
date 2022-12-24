@@ -145,21 +145,7 @@ export default defineConfig({
           { text: "UGCService", link: "/test/interface" },         
         ],        
       },
-      
-            {
-        text: "Index",
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: "Base", link: "/test/interface" },
-          { text: "Enums", link: "/test/interface" },
-          { text: "Class", link: "/test/interface" },
-          { text: "Function", link: "/test/interface" },
-          { text: "Interface", link: "/test/interface" },
-          { text: "Variable", link: "/test/interface" },
-        ],        
-      },
-      
+   
             {
         text: "Type",
         collapsible: true,
