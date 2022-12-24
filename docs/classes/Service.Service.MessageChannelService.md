@@ -1,4 +1,4 @@
-# MessageChannelService <Badge type="tip" text="^Class" />
+# MessageChannelService <Badge type="tip" text="Class" />
 
 [Service](../modules/Service.md).[Service](../modules/Service.Service.md).MessageChannelService
 
