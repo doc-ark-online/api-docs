@@ -1,479 +1,268 @@
-[test](../README.md) / HotWeaponRecoilForceComponent
 
-# HotWeaponRecoilForceComponent
 
-**`Description`**
 
-热武器 - 后坐力组件
 
-**`Network Status`**
 
-usage: 双端
+## GitHub-Style Tables
 
-## Constructors
+**Input**
 
-• **new HotWeaponRecoilForceComponent**()
+```
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+```
 
-## Properties
+**Output**
 
-### delegateStartRecoilForceOnClient
+| Tables        |      Are      |   Cool |
+| ------------- | :-----------: | -----: |
+| col 3 is      | right-aligned | \$1600 |
+| col 2 is      |   centered    |   \$12 |
+| zebra stripes |   are neat    |    \$1 |
 
-• **delegateStartRecoilForceOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+## Custom Containers
 
-**`Description`**
+Custom containers can be defined by their types, titles, and contents.
 
-客户端后坐力开始广播
+### Default Title
 
-___
+**Input**
 
-### delegateStartRecoilForceOnServer
+```md
+::: info
+This is an info box.
+:::
 
-• **delegateStartRecoilForceOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+::: tip
+This is a tip.
+:::
 
-**`Description`**
+::: warning
+This is a warning.
+:::
 
-服务器后坐力开始广播
+::: danger
+This is a dangerous warning.
+:::
 
-## Accessors
+::: details
+This is a details block.
+:::
+```
 
-### maxHorizontalJitter
+**Output**
 
-• `get` **maxHorizontalJitter**(): `number`
+::: info
+This is an info box.
+:::
 
-**`Description`**
+::: tip
+This is a tip.
+:::
 
-获取相机水平抖动最大值
+::: warning
+This is a warning.
+:::
 
-**`Effect`**
+::: danger
+This is a dangerous warning.
+:::
 
-调用端生效
+::: details
+This is a details block.
+:::
 
-#### Returns
+### Custom Title
 
-`number`
+You may set custom title by appending the text right after the "type" of the container.
 
-相机水平抖动最大值
+**Input**
 
-• `set` **maxHorizontalJitter**(`value`): `void`
+````md
+::: danger STOP
+Danger zone, do not proceed
+:::
 
-**`Description`**
+::: details Click me to view the code
+```js
+console.log('Hello, VitePress!')
+```
+:::
+````
 
-设置相机水平抖动最大值
+**Output**
 
-**`Effect`**
+::: danger STOP
+Danger zone, do not proceed
+:::
 
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 相机水平抖动最大值 |
-
-#### Returns
-
-`void`
-
-___
-
-### maxHorizontalOffset
-
-• `get` **maxHorizontalOffset**(): `number`
-
-**`Description`**
-
-获取水平偏移最大值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-水平偏移最大值
-
-• `set` **maxHorizontalOffset**(`value`): `void`
-
-**`Description`**
-
-设置水平偏移最大值
-
-**`Effect`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 水平偏移最大值 |
-
-#### Returns
-
-`void`
-___
-
-### maxVerticalJitter
-
-• `get` **maxVerticalJitter**(): `number`
-
-**`Description`**
-
-获取相机垂直抖动最大值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-相机垂直抖动最大值
-
-• `set` **maxVerticalJitter**(`value`): `void`
-
-**`Description`**
-
-设置相机垂直抖动最大值
-
-**`Effect`**
-
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 新相机垂直抖动最大值 |
-
-#### Returns
-
-`void`
-___
-
-### maxVerticalOffset
-
-• `get` **maxVerticalOffset**(): `number`
-
-**`Description`**
-
-获取垂直偏移最大值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-垂直偏移最大值
-
-• `set` **maxVerticalOffset**(`value`): `void`
-
-**`Description`**
-
-设置垂直偏移最大值
-
-**`Effect`**
-
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 垂直偏移最大值 |
-
-#### Returns
-
-`void`
-
-___
-
-### minHorizontalJitter
-
-• `get` **minHorizontalJitter**(): `number`
-
-**`Description`**
-
-获取相机水平抖动最小值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-相机水平抖动最小值
-
-• `set` **minHorizontalJitter**(`value`): `void`
-
-**`Description`**
-
-设置相机水平抖动最小值
-
-**`Effect`**
-
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 新相机水平抖动最小值 |
-
-#### Returns
-
-`void`
-
-___
-
-### minHorizontalOffset
-
-• `get` **minHorizontalOffset**(): `number`
-
-**`Description`**
-
-获取水平偏移最小值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-水平偏移最小值
-
-• `set` **minHorizontalOffset**(`value`): `void`
-
-**`Description`**
-
-设置水平偏移最小值
-
-**`Effect`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 水平偏移最小值 |
-
-#### Returns
-
-`void`
-
-___
-
-### minVerticalJitter
-
-• `get` **minVerticalJitter**(): `number`
-
-**`Description`**
-
-获取相机垂直抖动最小值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-相机垂直抖动最小值
-
-• `set` **minVerticalJitter**(`value`): `void`
-
-**`Description`**
-
-设置相机垂直抖动最小值
-
-**`Effect`**
-
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 新相机垂直抖动最小值 |
-
-#### Returns
-
-`void`
-
-___
-
-### minVerticalOffset
-
-• `get` **minVerticalOffset**(): `number`
-
-**`Description`**
-
-获取垂直偏移最小值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-垂直偏移最小值
-
-• `set` **minVerticalOffset**(`value`): `void`
-
-**`Description`**
-
-设置垂直偏移最小值
-
-**`Effect`**
-
-客户端调用自动广播
-
-**`Precautions`**
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage: 垂直偏移最小值 |
-
-#### Returns
-
-`void`
-
-## Methods
-
-### getDeepJitter
-
-▸ **getDeepJitter**(): `number`
-
-**`Description`**
-
-获取深度抖动值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-深度抖动值
-
-___
-
-### getHorizontalJitter
-
-▸ **getHorizontalJitter**(): `number`
-
-**`Description`**
-
-获取水平抖动值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-水平抖动值
-
-___
-
-### getHorizontalOffset
-
-▸ **getHorizontalOffset**(): `number`
-
-**`Description`**
-
-获取水平偏移值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-水平偏移值
-
-___
-
-### getVerticalJitter
-
-▸ **getVerticalJitter**(): `number`
-
-**`Description`**
-
-获取垂直抖动值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-垂直抖动值
-
-___
-
-### getVerticalOffset
-
-▸ **getVerticalOffset**(): `number`
-
-**`Description`**
-
-获取垂直偏移值
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-垂直偏移值
-
-
+::: details Click me to view the code
+```js
+console.log('Hello, VitePress!')
+```
+:::
+
+## Focus in Code Blocks
+
+Adding the `// [!code focus]` comment on a line will focus it and blur the other parts of the code.
+
+Additionally, you can define a number of lines to focus using `// [!code focus:<lines>]`.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code  focus]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Focused!' // [!code focus]
+    }
+  }
+}
+```
+
+## Colored Diffs in Code Blocks
+
+Adding the `// [!code --]` or `// [!code ++]` comments on a line will create a diff of that line, while keeping the colors of the codeblock.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code  --]
+      msg: 'Added' // [!code  ++]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code --]
+      msg: 'Added' // [!code ++]
+    }
+  }
+}
+```
+
+## Errors and Warnings in Code Blocks
+
+Adding the `// [!code warning]` or `// [!code error]` comments on a line will color it accordingly.
+
+**Input**
+
+Note that only one space is required after `!code`, here are two to prevent processing.
+
+````
+```js
+export default {
+  data () {
+    return {
+      msg: 'Error', // [!code  error]
+      msg: 'Warning' // [!code  warning]
+    }
+  }
+}
+```
+````
+
+**Output**
+
+```js
+export default {
+  data() {
+    return {
+      msg: 'Error', // [!code error]
+      msg: 'Warning' // [!code warning]
+    }
+  }
+}
+```
+
+## Code Groups
+
+You can group multiple code blocks like this:
+
+**Input**
+
+````md
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
+````
+
+**Output**
+
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
+```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
