@@ -23,3 +23,5 @@
 - 删除：## Constructors
 
 - 删除定义：#### Defined inService/index.d.ts:330
+
+- 删除： 无&上面的@XXX
