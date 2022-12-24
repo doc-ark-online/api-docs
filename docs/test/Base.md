@@ -125,7 +125,7 @@ stopStance(sync = true): void;
 // 通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
 this.stanceProxy = this.character.loadStance("49096", true); // [!code  focus]
 // 修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
-this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody; // [!code  focus]
+this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;
 // 播放这个姿态
 this.stanceProxy.play();
 ```
