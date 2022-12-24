@@ -4,18 +4,12 @@
 
 为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
 
-
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| [registerAction](Service.Service.MessageChannelService.md#registeraction) | ▸ **registerAction**(`action`, `caller`, `onCall`): `void` 注册需要收到消息的 | action以及对应要调用的回调函数 |
-| [send](Service.Service.MessageChannelService.md#send) | ▸ **send**(`message`): `void`| 发送消息到通道上 |
-| [sendTo](Service.Service.MessageChannelService.md#sendto) | ▸ **sendTo**(`toWhom`, `message`): `void`| 发送消息给指定对象|
-| [getInstance](Service.Service.MessageChannelService.md#getinstance) | ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.Service.MessageChannelService.md) | 获取API实例进行调用 |
-
-
-[[toc]]
-
-
+| [Character.loadStance()](Base.md#Character.loadStance()) | 假装有 | 创建一个二级姿态对象并返回, 可在任意端调用. |
+| [SubStance.blendMode](Base.md#SubStance.blendMode) |假装有| 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
+| [SubStance.play() / SubStance.stop()](Base.md#SubStance.play() / SubStance.stop()) | 假装有| 播放 / 停止这个姿态对象, 并返回执行结果.|
+| [Character.stopStance()](Base.md#Character.stopStance()) | 假装有| 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
 
 ## Methods
 
@@ -80,6 +74,7 @@ enum StanceBlendMode
 ### SubStance.play() / SubStance.stop()
 
 播放 / 停止这个姿态对象, 并返回执行结果.
+
 这个操作是否会自动**同步**多端, 取决于调用Character.**loadStance()**时传入的**sync**参数.
 返回的**执行结果**, 在**不自动同步**时多数情况下**可靠**; 在**自动同步**时完全**不可靠**, 总是会返回true, 因为无法判断其他端的执行情况
 
