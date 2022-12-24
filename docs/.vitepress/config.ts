@@ -32,8 +32,8 @@ export default defineConfig({
     sidebar: [
       {
         text: "示例",
-        collapsible: true,
-        collapsed: true,
+        collapsible: false,
+        collapsed: false,
         items: [
           { text: "给用户看的demo", link: "/test/Base" },
           { text: "可用的写法", link: "/test/Class" },
