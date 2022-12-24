@@ -1,6 +1,6 @@
 # CharacterAnimation <Badge type="tip" text="Class" />
 
-[Gameplay](../Gameplay/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CharacterAnimation
+[Gameplay](../modules/Gameplay.Gameplay.md).CharacterAnimation
 
 为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
 
@@ -8,14 +8,14 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| [Character.loadStance()](Base.md#character-loadstance) | XXX | 创建一个二级姿态对象并返回, 可在任意端调用. |
+| [Character.loadStance](Base.md#character-loadstance) | XXX | 创建一个二级姿态对象并返回, 可在任意端调用. |
 | [SubStance.blendMode](Base.md#substance-blendmode) |XXX | 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
-| [SubStance.play() / SubStance.stop()](Base.md#substance-play-substance-stop) | XXX | 播放 / 停止这个姿态对象, 并返回执行结果.|
-| [Character.stopStance()](Base.md#character-stopstance) | XXX | 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
+| [SubStance.play/SubStance.stop](Base.md#substance-play-substance-stop) | XXX | 播放 / 停止这个姿态对象, 并返回执行结果.|
+| [Character.stopStance](Base.md#character-stopstance) | XXX | 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
 
 ## Methods
 
-### Character.loadStance() 
+### Character.loadStance
 
 创建一个二级姿态对象并返回, 可在任意端调用.
 
@@ -73,7 +73,7 @@ enum StanceBlendMode
 }
 ```
 
-### SubStance.play() / SubStance.stop()
+### SubStance.play/SubStance.stop
 
 播放 / 停止这个姿态对象, 并返回执行结果.
 
@@ -97,7 +97,7 @@ public play(): boolean;
 public stop(): boolean;
 ```
 
-### Character.stopStance() 
+### Character.stopStance
 
 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态.
 **sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是true, 所以对**单端对象**操作时需要把它置为**false**.
