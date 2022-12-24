@@ -8,7 +8,7 @@
 | :------ | :------ | :------ |
 | [Character.loadStance()](Base.md#Character.loadStance()) | XXX | 创建一个二级姿态对象并返回, 可在任意端调用. |
 | [SubStance.blendMode](Base.md#SubStance.blendMode) |XXX | 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
-| [SubStance.play() / SubStance.stop()](Base.md#SubStance.play() / SubStance.stop()) | XXX | 播放 / 停止这个姿态对象, 并返回执行结果.|
+| [SubStance.play() / SubStance.stop()](Base.md#SubStance.play()/SubStance.stop()) | XXX | 播放 / 停止这个姿态对象, 并返回执行结果.|
 | [Character.stopStance()](Base.md#Character.stopStance()) | XXX | 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
 
 ## Methods
