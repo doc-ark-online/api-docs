@@ -1,34 +1,19 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / MessageChannelService
-
-# Class: MessageChannelService
+# MessageChannelService <Badge type="tip" text="^Class" />
 
 [Service](../modules/Service.md).[Service](../modules/Service.Service.md).MessageChannelService
 
-**`Author`**
-
-zifei.wu
-
-**`Instance`**
-
-**`Description`**
-
 支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
 
-**`Network Status`**
+**`Network Status`** 客户端
 
-usage: 客户端
-
-**`Precautions`**
-
-单例类，请使用getInstance获取对象。TS端想要收到某消息并执行回调函数需要提前
-             调用registerAction进行绑定。消息需要是Json格式的字符串并包含“action”字段
-             否则无法被通道转发。在PIE下无法连接到233、Web端。
-             如果游戏在后台收到消息，通道会将消息缓存并在游戏回到前台后一并发送。
+::: warning Precautions
+单例类，请使用getInstance获取对象。TS端想要收到某消息并执行回调函数需要提前调用registerAction进行绑定。消息需要是Json格式的字符串并包含“action”字段否则无法被通道转发。在PIE下无法连接到233、Web端。如果游戏在后台收到消息，通道会将消息缓存并在游戏回到前台后一并发送。
+:::
 
 **`Example`**
 
 使用示例:通道的注册、发送的使用示例
-```
+```ts
 // 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
 Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall);
 // 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
