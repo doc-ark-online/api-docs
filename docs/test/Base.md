@@ -117,7 +117,7 @@ stopStance(sync = true): void;
 
 ## Example
 
-## XXX-1
+### XXX-1
 
 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
@@ -136,7 +136,7 @@ this.stanceProxy.play();
 this.stanceProxy.stop();
 ```
 
-## XXX-2
+### XXX-2
 
 在角色初始化完成后, 可以执行下面的代码, 仅让这个客户端的角色下半身播放一个坐下的姿态
 
