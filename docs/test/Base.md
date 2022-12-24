@@ -1,35 +1,9 @@
 # CharacterAnimation <Badge type="tip" text="Class" />
 
-[Service](../Gameplay/Gameplay.md).[Service](../modules/Gameplay.Gameplay.md).CharacterAnimation
+[Gameplay](../Gameplay/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CharacterAnimation
 
-支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
+为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
 
-**`Network Status`** 客户端
-
-::: warning Precautions
-单例类，请使用getInstance获取对象。TS端想要收到某消息并执行回调函数需要提前调用registerAction进行绑定。消息需要是Json格式的字符串并包含“action”字段否则无法被通道转发。在PIE下无法连接到233、Web端。如果游戏在后台收到消息，通道会将消息缓存并在游戏回到前台后一并发送。
-:::
-
-**`Example`**
-
-使用示例:通道的注册、发送的使用示例
-```ts
-// 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
-Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall);
-// 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
-Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}");
-// 指定一个目标端toWhom发送消息message，对方无需提前注册就可以收到该消息
-Service.MessageChannelService.getInstance().sendTo(toWhom, message);
-```
-
-## Table of contents
-
-#### Constructors
-
-- **new MessageChannelService**()
-
-
-#### Methods
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
@@ -38,133 +12,148 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 | [sendTo](Service.Service.MessageChannelService.md#sendto) | ▸ **sendTo**(`toWhom`, `message`): `void`| 发送消息给指定对象|
 | [getInstance](Service.Service.MessageChannelService.md#getinstance) | ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.Service.MessageChannelService.md) | 获取API实例进行调用 |
 
+
+[[toc]]
+
+
+
 ## Methods
 
-### registerAction
+### Character.loadStance() 
 
-▸ **registerAction**(`action`, `caller`, `onCall`): `void`
+创建一个二级姿态对象并返回, 可在任意端调用.
 
-注册需要收到消息的action以及对应要调用的回调函数
-
-**`Effect`**
-
-通道会识别包含该action的消息并调用对应的回调函数
+**guid**参数传入预制姿态资源**GUID**时, 会直接创建对应姿态; 传入**动画资源GUID**时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
+**sync**参数代表对姿态对象的操作是否会同步其他端.
 
 ::: warning Precautions
-未被注册的消息不会被TS层接收，哪怕对方指定目标是TS也不会调用回调函数（未注册）注册action需要在收到消息之前，请保证注册时机足够早
+即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端.
 :::
 
-**`Example`**
-
-使用示例:通道注册action
 ```ts
-// 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
-Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall);
+/**
+ * @description 创建一个二级姿态对象
+ * @effect 调用端生效
+ * @param guid usage: 预制姿态资源guid或动画资源guid
+ * @param sync usage: 是否自动同步
+ */
+loadStance(guid: string, sync = true): Gameplay.SubStance;
 ```
 
-#### Parameters
+### SubStance.blendMode
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `action` | `string` | usage:需要被注册的action，通道收到该action的消息会调用对应回调 |
-| `caller` | `any` | usage:调用者，一般传this |
-| `onCall` | (`data`: `string`) => `void` | usage:通道收到消息后应该执行的对应的回调函数 |
+姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).
 
-#### Returns
+如果这个姿态是通过**预制姿态资源GUID**创建的, 那么它的默认值为StanceBlendMode.**None**, 它会按照资源上的blendMode参数指定混合模式; 
+如果是通过**动画资源GUID**创建的, 那么它的默认值为StanceBlendMode.**WholeBody**. 
 
-`void`
-
-___
-
-### send
-
-▸ **send**(`message`): `void`
-
-发送消息到通道上
-
-**`Effect`**
-
-将消息发送到通道，所有注册了该消息action的端才能收到该消息
 
 ::: warning Precautions
-如果通道上没有端注册了该消息的action则这条消息不会发送给任何对象如果通道上有多个端注册了该消息的action则所有注册者都能收到该消息发送消息的时机要晚于对方注册的时机消息需要是Json格式的字符串，包含"action"字段
+(临时, 预计021修改)**不应该**把**动画资源GUID**创建的姿态的混合模式置为StanceBlendMode.**None**, 因为动画资源没有blendMode参数. 虽然不会报错, 但它确实会创建出一个姿态, 而且看不到任何表现.
 :::
 
-**`Example`**
-
-使用示例:通道广播消息
 ```ts
-// 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
-Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}");
+/**
+ * @description 混合模式
+ * @precautions 无法对正常播放的姿态进行修改
+ */
+blendMode: Gameplay.StanceBlendMode;
 ```
 
-#### Parameters
+```ts
+/**
+ * @description 姿态混合模式
+ */
+enum StanceBlendMode
+{
+    /** 不指定 */
+    None,
+    /** 只混合上半身 */
+    BlendUpper,
+    /** 只混合下半身 */
+    BlendLower,
+    /** 全身混合 */
+    WholeBody
+}
+```
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `message` | `string` | usage:需要发送的消息 |
+### SubStance.play() / SubStance.stop()
 
-#### Returns
+播放 / 停止这个姿态对象, 并返回执行结果.
+这个操作是否会自动**同步**多端, 取决于调用Character.**loadStance()**时传入的**sync**参数.
+返回的**执行结果**, 在**不自动同步**时多数情况下**可靠**; 在**自动同步**时完全**不可靠**, 总是会返回true, 因为无法判断其他端的执行情况
 
-`void`
 
-___
+```ts
+/**
+ * @description 播放姿态
+ * @effect 可选同步
+ */
+public play(): boolean;
+```
 
-### sendTo
+```ts
+/**
+ * @description 停止姿态
+ * @effect 可选同步
+ */
+public stop(): boolean;
+```
 
-▸ **sendTo**(`toWhom`, `message`): `void`
+### Character.stopStance() 
 
-发送消息给指定对象
-
-**`Effect`**
-
-将消息发送给指定对象，对方无需提前注册
+停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态.
+**sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是true, 所以对**单端对象**操作时需要把它置为**false**.
 
 ::: warning Precautions
-如果通道上有多个端注册了该消息，仍只会发给指定的对象消息需要是Json格式的字符串，包含"action"字段
+虽然允许多端同步播放并在单端停止播放, 但你要自己承担出现奇怪现象的责任
 :::
 
-**`Example`**
-
-使用示例:通道私发消息
 ```ts
-// 指定一个目标端toWhom:Client发送消息message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"，对方无需提前注册就可以收到该消息
-Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceiver.Client, "{\"action\":\"ts.test.myaction\",\"data\":{}}");
+/**
+ * @description 停止正在播放的姿态
+ * @effect 可选同步
+ * @param sync usage: 是否自动同步
+ */
+stopStance(sync = true): void;
 ```
 
-#### Parameters
+## Example
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `toWhom` | [`MessageChannelReceiver`](../enums/Service.Service.MessageChannelReceiver.md) | usage:指定的对象，使用枚举值MessageChannelReceiver |
-| `message` | `string` | usage:需要发送的消息 |
+## XXX-1
 
-#### Returns
+在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
-`void`
-
-___
-
-### getInstance
-
-▸ `Static` **getInstance**(): [`MessageChannelService`](Service.Service.MessageChannelService.md)
-
-获取API实例进行调用
-
-**`Effect`**
-
-获取API实例进行调用
-
-**`Example`**
-
-使用示例:通道发送消息
 ```ts
-// 通过实例调用函数发送消息
-Service.MessageChannelService.getInstance().send(message);
+// 通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
+this.stanceProxy = this.character.loadStance("49096", true);
+// 修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
+this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;
+// 播放这个姿态
+this.stanceProxy.play();
 ```
 
-#### Returns
+当你想停止它时, 可以执行下面的代码
 
-[`MessageChannelService`](Service.Service.MessageChannelService.md)
+```ts
+this.stanceProxy.stop();
+```
 
-返回API实例用以调用相关功能函数
+## XXX-2
+
+在角色初始化完成后, 可以执行下面的代码, 仅让这个客户端的角色下半身播放一个坐下的姿态
+
+```ts
+// 通过动画GUID, 创建姿态对象(别忘了预加载资源)
+let stanceProxy = this.character.loadStance("29741", false);
+// 修改姿态的混合模式为下半身(默认是全身)
+stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
+// 播放这个姿态
+stanceProxy.play();
+```
+
+当你想停止它时, 可以执行下面的代码
+
+```ts
+this.character.stopStance(false);
+```
