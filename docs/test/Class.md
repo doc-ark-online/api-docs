@@ -1,6 +1,6 @@
 ## 基础markdown写法
 
-参考[官方教程](https://vuejs.org](https://markdown.com.cn/basic-syntax/)，VitePress会自动在右边栏，生成二级&三级标题跳转。
+参考[官方教程](https://markdown.com.cn/basic-syntax/)，VitePress会自动在右边栏，生成二级&三级标题跳转。
 
 ## 表格
 
