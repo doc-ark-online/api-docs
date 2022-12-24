@@ -4,6 +4,8 @@
 
 为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
 
+## Table of contents
+
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | [Character.loadStance()](Base.md#Character.loadStance()) | XXX | 创建一个二级姿态对象并返回, 可在任意端调用. |
