@@ -1,9 +1,8 @@
+## 基础markdown写法
 
+基础写法可参考[markdown官方教程](https://markdown.com.cn/basic-syntax/)，VitePress会自动在右边栏，生成二级&三级标题跳转。
 
-
-
-
-## GitHub-Style Tables
+## 表格
 
 **Input**
 
@@ -23,9 +22,7 @@
 | col 2 is      |   centered    |   \$12 |
 | zebra stripes |   are neat    |    \$1 |
 
-## Custom Containers
-
-Custom containers can be defined by their types, titles, and contents.
+## 容器
 
 ### Default Title
 
@@ -77,13 +74,13 @@ This is a details block.
 
 ### Custom Title
 
-You may set custom title by appending the text right after the "type" of the container.
+可以自定义容器后面的文字，如下面的warning。
 
 **Input**
 
 ````md
-::: danger STOP
-Danger zone, do not proceed
+::: warning @precautions
+这个可以用来放咱们的precautions
 :::
 
 ::: details Click me to view the code
@@ -105,15 +102,13 @@ console.log('Hello, VitePress!')
 ```
 :::
 
-## Focus in Code Blocks
+## 代码
 
-Adding the `// [!code focus]` comment on a line will focus it and blur the other parts of the code.
+### Focus in Code Blocks
 
-Additionally, you can define a number of lines to focus using `// [!code focus:<lines>]`.
+单行代码后添加 `// [!code focus]` 就会出现下面的代码模糊效果。
 
 **Input**
-
-Note that only one space is required after `!code`, here are two to prevent processing.
 
 ````
 ```js
@@ -139,13 +134,11 @@ export default {
 }
 ```
 
-## Colored Diffs in Code Blocks
+### Colored Diffs in Code Blocks 
 
-Adding the `// [!code --]` or `// [!code ++]` comments on a line will create a diff of that line, while keeping the colors of the codeblock.
+单行代码后添加 `// [!code --]` or `// [!code ++]` 会出现下方diffs的效果。
 
 **Input**
-
-Note that only one space is required after `!code`, here are two to prevent processing.
 
 ````
 ```js
@@ -173,13 +166,11 @@ export default {
 }
 ```
 
-## Errors and Warnings in Code Blocks
+### Errors and Warnings in Code Blocks
 
-Adding the `// [!code warning]` or `// [!code error]` comments on a line will color it accordingly.
+单行代码后添加 `// [!code warning]` or `// [!code error]` 代码块背景会出现以下效果。
 
 **Input**
-
-Note that only one space is required after `!code`, here are two to prevent processing.
 
 ````
 ```js
@@ -207,9 +198,9 @@ export default {
 }
 ```
 
-## Code Groups
+### Code Groups
 
-You can group multiple code blocks like this:
+可以放多个代码块形成一个组。
 
 **Input**
 
@@ -266,3 +257,21 @@ export default config
 ```
 
 :::
+
+## 徽章
+
+可以使用 `Badge` 形成下面的效果。
+
+```html
+### Title <Badge type="info" text="default" />
+### Title <Badge type="tip" text="^1.9.0" />
+### Title <Badge type="warning" text="class" />
+### Title <Badge type="danger" text="caution" />
+```
+
+### Title <Badge type="info" text="default" />
+### Title <Badge type="tip" text="^1.9.0" />
+### Title <Badge type="warning" text="class" />
+### Title <Badge type="danger" text="caution" />
+
+更多玩法参考[vitepress](https://vitepress.vuejs.org/guide/markdown#colored-diffs-in-code-blocks)，里面介绍的很详细。
