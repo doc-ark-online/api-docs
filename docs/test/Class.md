@@ -274,4 +274,4 @@ export default config
 ### Title <Badge type="warning" text="class" />
 ### Title <Badge type="danger" text="caution" />
 
-更多玩法参考[vitepress](https://vitepress.vuejs.org/guide/markdown#colored-diffs-in-code-blocks)，里面介绍的很详细。
+更多玩法参考[vitepress](https://vitepress.vuejs.org/guide/markdown)，里面介绍的很详细。
