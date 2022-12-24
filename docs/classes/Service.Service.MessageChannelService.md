@@ -24,18 +24,17 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 ## Table of contents
 
-### Constructors
+#### Constructors
 
-- [constructor](Service.Service.MessageChannelService.md#constructor)
+- [constructor](Service.Service.MessageChannelService.md#constructor) **new MessageChannelService**()
 
-### Methods
 
-- [registerAction](Service.Service.MessageChannelService.md#registeraction)
+#### Methods
+
+- [registerAction](Service.Service.MessageChannelService.md#registeraction) 注册需要收到消息的action以及对应要调用的回调函数
 - [send](Service.Service.MessageChannelService.md#send)
 - [sendTo](Service.Service.MessageChannelService.md#sendto)
 - [getInstance](Service.Service.MessageChannelService.md#getinstance)
-
-## Constructors
 
 ### constructor
 
@@ -46,8 +45,6 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 ### registerAction
 
 ▸ **registerAction**(`action`, `caller`, `onCall`): `void`
-
-**`Description`**
 
 注册需要收到消息的action以及对应要调用的回调函数
 
