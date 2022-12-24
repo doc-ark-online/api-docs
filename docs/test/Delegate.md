@@ -1,4 +1,4 @@
-- 删除：[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) /[Service](../modules/Service.Service.md) / MessageChannelService
+- 删除（也可以删除前三级）：[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) /[Service](../modules/Service.Service.md) / MessageChannelService
 
 - 一级标题自动生成badge（非高优），用来区分不同类型：<Badge type="tip" text="^Class" />
 
