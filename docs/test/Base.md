@@ -1,21 +1,47 @@
+[Root](../index.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterAnimation
+
 # CharacterAnimation <Badge type="tip" text="Class" />
 
-[Gameplay](../modules/Gameplay.Gameplay.md).CharacterAnimation
+extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 
+<pre>
 为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
+</pre>
 
 ## Table of contents
 
-| Name                                                                   | Type | Description                                                                                  |
-| :--------------------------------------------------------------------- | :--- | :------------------------------------------------------------------------------------------- |
-| [Character.loadStance](Base.md#character-loadstance)                   | XXX  | 创建一个二级姿态对象并返回, 可在任意端调用.                                                  |
-| [SubStance.blendMode](Base.md#substance-blendmode)                     | XXX  | 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).                              |
-| [SubStance.play/SubStance.stop](Base.md#substance-play-substance-stop) | XXX  | 播放 / 停止这个姿态对象, 并返回执行结果.                                                     |
-| [Character.stopStance](Base.md#character-stopstance)                   | XXX  | 停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
+| Properties                                                                                                                                                                                                                  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
+
+<!-- #### Properties  inherited from XXX（希望这里是可折叠区域）
+
+| Name | Description |
+| :------ | :------ |
+| [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
+| [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
+| [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
+| [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). | -->
+
+<!-- ### Methods
+| Name | Description |
+| :----------------- | :----------------- |
+| [loadStance](Base.md#character-loadstance)(guid: [string](https://www.runoob.com/typescript/ts-string.html), sync = true): [Gameplay](../modules/Gameplay.Gameplay.md).[SubStance](../classes/Gameplay.Gameplay.SubStance.md); | 创建一个二级姿态对象并返回, 可在任意端调用. |
+| public [play()](Base.md#substance-play-substance-stop): [boolean](https://www.runoob.com/typescript/ts-type.html); | 播放这个姿态对象, 并返回执行结果.|
+| public [stop()](Base.md#substance-play-substance-stop): boolean; | 停止这个姿态对象, 并返回执行结果.|
+| [stopStance](Base.md#character-stopstance)(sync = true): void; | 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
+ -->
+
+| Methods                                                                                                                                                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [loadStance](Base.md#character-loadstance)(guid: [string](https://www.runoob.com/typescript/ts-string.html), sync = true): [Gameplay](../modules/Gameplay.Gameplay.md).[SubStance](../classes/Gameplay.Gameplay.SubStance.md); <br> 创建一个二级姿态对象并返回, 可在任意端调用. |
+| public [play()](Base.md#substance-play-substance-stop): [boolean](https://www.runoob.com/typescript/ts-type.html); <br> 播放这个姿态对象, 并返回执行结果.                                                                                                                       |
+| public [stop()](Base.md#substance-play-substance-stop): boolean; <br> 停止这个姿态对象, 并返回执行结果.                                                                                                                                                                         |
+| [stopStance](Base.md#character-stopstance)(sync = true): void; <br> 停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态.                                                                                                                |
 
 ## Methods
 
-### Character.loadStance
+### [loadStance](Base.md#character-loadstance)(guid: [string](https://www.runoob.com/typescript/ts-string.html), sync = true): [Gameplay](../modules/Gameplay.Gameplay.md).[SubStance](../classes/Gameplay.Gameplay.SubStance.md)
 
 创建一个二级姿态对象并返回, 可在任意端调用.
 
