@@ -40,7 +40,7 @@ extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 
 ## Methods
 
-### Character.loadStance
+### [loadStance](Base.md#character-loadstance)(guid: [string](https://www.runoob.com/typescript/ts-string.html), sync = true): [Gameplay](../modules/Gameplay.Gameplay.md).[SubStance](../classes/Gameplay.Gameplay.SubStance.md)
 
 创建一个二级姿态对象并返回, 可在任意端调用.
 
