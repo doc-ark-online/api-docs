@@ -1974,7 +1974,7 @@ Core/index.d.ts:540
 
 `GameObject`[]
 
-Array<GameObject>
+Array`<GameObject>`
 
 #### Inherited from
 
@@ -2356,7 +2356,7 @@ Core/index.d.ts:567
 
 `Script`[]
 
-Array<Script>
+Array`<Script>`
 
 #### Inherited from
 
@@ -3397,7 +3397,7 @@ Core/index.d.ts:157
 
 `GameObject`[]
 
-Array<GameObject>
+Array`<GameObject>`
 
 #### Inherited from
 
