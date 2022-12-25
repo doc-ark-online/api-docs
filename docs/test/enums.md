@@ -1,10 +1,9 @@
-[test](../README.md) / AbilityStateControlType
 
-# Enumeration: AbilityStateControlType
+# AbilityStateControlType <Badge type="tip" text="Enumeration" />
 
 [Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AbilityStateControlType
 
-**`Description`**
+## 样例一
 
 技能状态控制枚举
 
@@ -40,13 +39,7 @@ ___
 默认值
 
 
-
-or
-
-
-## Enumeration Members
-
-**`Description`**
+## 样例二
 
 技能状态控制枚举
 
