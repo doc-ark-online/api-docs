@@ -16,7 +16,7 @@ huipeng.jia
 
 **`Precautions`**
 
-单例类，请使用instance获取对象
+单例类，请使用 instance 获取对象
 
 **`Network Status`**
 
@@ -49,11 +49,11 @@ usage: 客户端
 
 ### onArkBalanceUpdated
 
-• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdatedDelegate`](../modules/Service.Service.md#onarkbalanceupdateddelegate)\>
+• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\>
 
 **`Description`**
 
-获取Ark币余额更新的委托
+获取 Ark 币余额更新的委托
 
 **`Effect`**
 
@@ -61,23 +61,23 @@ usage: 客户端
 
 **`Precautions`**
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 233/Playza/口袋方舟内使用时生效
 
 #### Returns
 
-[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdatedDelegate`](../modules/Service.Service.md#onarkbalanceupdateddelegate)\>
+[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\>
 
-Ark币余额更新的委托
+Ark 币余额更新的委托
 
 #### Defined in
 
-Service/index.d.ts:419
+Service/index.d.ts:414
 
-___
+---
 
 ### onOrderDelivered
 
-• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnOrderDeliveredDelegate`](../modules/Service.Service.md#onorderdelivereddelegate)\>
+• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\>
 
 **`Description`**
 
@@ -89,18 +89,18 @@ ___
 
 **`Precautions`**
 
-1. 只在支持IAP的233/Playza/口袋方舟内使用时生效
+1. 只在支持 IAP 的 233/Playza/口袋方舟内使用时生效
 2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
 
 #### Returns
 
-[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnOrderDeliveredDelegate`](../modules/Service.Service.md#onorderdelivereddelegate)\>
+[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\>
 
 订单发货的委托
 
 #### Defined in
 
-Service/index.d.ts:441
+Service/index.d.ts:436
 
 ## Methods
 
@@ -110,7 +110,7 @@ Service/index.d.ts:441
 
 **`Description`**
 
-获取Ark币余额
+获取 Ark 币余额
 
 **`Effect`**
 
@@ -118,7 +118,7 @@ Service/index.d.ts:441
 
 **`Precautions`**
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 233/Playza/口袋方舟内使用时生效
 
 #### Returns
 
@@ -126,9 +126,9 @@ Service/index.d.ts:441
 
 #### Defined in
 
-Service/index.d.ts:412
+Service/index.d.ts:407
 
-___
+---
 
 ### placeOrder
 
@@ -144,15 +144,15 @@ ___
 
 **`Precautions`**
 
-只在支持IAP的233/Playza/口袋方舟内使用时生效
+只在支持 IAP 的 233/Playza/口袋方舟内使用时生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `commodityId` | `string` | usage: 商品Id |
-| `amount` | `number` | usage: 数量 |
-| `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` | usage: 订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
+| Name               | Type                                            | Description                                                                        |
+| :----------------- | :---------------------------------------------- | :--------------------------------------------------------------------------------- |
+| `commodityId`      | `string`                                        | usage: 商品 Id                                                                     |
+| `amount`           | `number`                                        | usage: 数量                                                                        |
+| `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` | usage: 订单状态回调，status = 200 时表示订单支付成功。msg 描述订单状态或者错误信息 |
 
 #### Returns
 
@@ -160,9 +160,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:428
+Service/index.d.ts:423
 
-___
+---
 
 ### getInstance
 
@@ -184,4 +184,4 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:406
+Service/index.d.ts:401

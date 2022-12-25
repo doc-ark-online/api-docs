@@ -20,34 +20,34 @@
 
 ### X
 
-• **X** = ``0``
+• **X** = `0`
 
-X轴
+X 轴
 
 #### Defined in
 
-Gameplay/index.d.ts:12482
+Gameplay/index.d.ts:12160
 
-___
+---
 
 ### Y
 
-• **Y** = ``1``
+• **Y** = `1`
 
-Y轴
+Y 轴
 
 #### Defined in
 
-Gameplay/index.d.ts:12484
+Gameplay/index.d.ts:12162
 
-___
+---
 
 ### Z
 
-• **Z** = ``2``
+• **Z** = `2`
 
-Z轴
+Z 轴
 
 #### Defined in
 
-Gameplay/index.d.ts:12486
+Gameplay/index.d.ts:12164

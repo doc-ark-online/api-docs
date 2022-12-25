@@ -1,4 +1,3 @@
-
 # AbilityStateControlType <Badge type="tip" text="Enumeration" />
 
 [Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AbilityStateControlType
@@ -11,33 +10,33 @@
 
 ### CanJump
 
-• **CanJump** = ``2``
+• **CanJump** = `2`
 
 可跳跃
 
-___
+---
 
 ### CanMove
 
-• **CanMove** = ``1``
+• **CanMove** = `1`
 
 可移动
 
-___
+---
 
 ### CanTurn
 
-• **CanTurn** = ``4``
+• **CanTurn** = `4`
 
 可转向
-___
+
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 默认值
-
 
 ## 样例二
 

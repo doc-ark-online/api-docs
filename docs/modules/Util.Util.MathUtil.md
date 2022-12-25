@@ -9,40 +9,40 @@
 ### Variables
 
 - [D2R](Util.Util.MathUtil.md#d2r)
-- [DBL\_DECIMAL\_DIG](Util.Util.MathUtil.md#dbl_decimal_dig)
-- [DBL\_DIG](Util.Util.MathUtil.md#dbl_dig)
-- [DBL\_EPSILON](Util.Util.MathUtil.md#dbl_epsilon)
-- [DBL\_HAS\_SUBNORM](Util.Util.MathUtil.md#dbl_has_subnorm)
-- [DBL\_MANT\_DIG](Util.Util.MathUtil.md#dbl_mant_dig)
-- [DBL\_MAX](Util.Util.MathUtil.md#dbl_max)
-- [DBL\_MAX\_10\_EXP](Util.Util.MathUtil.md#dbl_max_10_exp)
-- [DBL\_MAX\_EXP](Util.Util.MathUtil.md#dbl_max_exp)
-- [DBL\_MIN](Util.Util.MathUtil.md#dbl_min)
-- [DBL\_MIN\_10\_EXP](Util.Util.MathUtil.md#dbl_min_10_exp)
-- [DBL\_MIN\_EXP](Util.Util.MathUtil.md#dbl_min_exp)
-- [DBL\_RADIX](Util.Util.MathUtil.md#dbl_radix)
-- [DBL\_TRUE\_MIN](Util.Util.MathUtil.md#dbl_true_min)
+- [DBL_DECIMAL_DIG](Util.Util.MathUtil.md#dbl_decimal_dig)
+- [DBL_DIG](Util.Util.MathUtil.md#dbl_dig)
+- [DBL_EPSILON](Util.Util.MathUtil.md#dbl_epsilon)
+- [DBL_HAS_SUBNORM](Util.Util.MathUtil.md#dbl_has_subnorm)
+- [DBL_MANT_DIG](Util.Util.MathUtil.md#dbl_mant_dig)
+- [DBL_MAX](Util.Util.MathUtil.md#dbl_max)
+- [DBL_MAX_10_EXP](Util.Util.MathUtil.md#dbl_max_10_exp)
+- [DBL_MAX_EXP](Util.Util.MathUtil.md#dbl_max_exp)
+- [DBL_MIN](Util.Util.MathUtil.md#dbl_min)
+- [DBL_MIN_10_EXP](Util.Util.MathUtil.md#dbl_min_10_exp)
+- [DBL_MIN_EXP](Util.Util.MathUtil.md#dbl_min_exp)
+- [DBL_RADIX](Util.Util.MathUtil.md#dbl_radix)
+- [DBL_TRUE_MIN](Util.Util.MathUtil.md#dbl_true_min)
 - [EPSILON](Util.Util.MathUtil.md#epsilon)
-- [FLOAT\_NON\_FRACTIONAL](Util.Util.MathUtil.md#float_non_fractional)
-- [FLT\_DECIMAL\_DIG](Util.Util.MathUtil.md#flt_decimal_dig)
-- [FLT\_DIG](Util.Util.MathUtil.md#flt_dig)
-- [FLT\_EPSILON](Util.Util.MathUtil.md#flt_epsilon)
-- [FLT\_GUARD](Util.Util.MathUtil.md#flt_guard)
-- [FLT\_HAS\_SUBNORM](Util.Util.MathUtil.md#flt_has_subnorm)
-- [FLT\_MANT\_DIG](Util.Util.MathUtil.md#flt_mant_dig)
-- [FLT\_MAX](Util.Util.MathUtil.md#flt_max)
-- [FLT\_MAX\_10\_EXP](Util.Util.MathUtil.md#flt_max_10_exp)
-- [FLT\_MAX\_EXP](Util.Util.MathUtil.md#flt_max_exp)
-- [FLT\_MIN](Util.Util.MathUtil.md#flt_min)
-- [FLT\_MIN\_10\_EXP](Util.Util.MathUtil.md#flt_min_10_exp)
-- [FLT\_MIN\_EXP](Util.Util.MathUtil.md#flt_min_exp)
-- [FLT\_NORMALIZE](Util.Util.MathUtil.md#flt_normalize)
-- [FLT\_RADIX](Util.Util.MathUtil.md#flt_radix)
-- [FLT\_TRUE\_MIN](Util.Util.MathUtil.md#flt_true_min)
-- [HALF\_PI](Util.Util.MathUtil.md#half_pi)
-- [INV\_PI](Util.Util.MathUtil.md#inv_pi)
+- [FLOAT_NON_FRACTIONAL](Util.Util.MathUtil.md#float_non_fractional)
+- [FLT_DECIMAL_DIG](Util.Util.MathUtil.md#flt_decimal_dig)
+- [FLT_DIG](Util.Util.MathUtil.md#flt_dig)
+- [FLT_EPSILON](Util.Util.MathUtil.md#flt_epsilon)
+- [FLT_GUARD](Util.Util.MathUtil.md#flt_guard)
+- [FLT_HAS_SUBNORM](Util.Util.MathUtil.md#flt_has_subnorm)
+- [FLT_MANT_DIG](Util.Util.MathUtil.md#flt_mant_dig)
+- [FLT_MAX](Util.Util.MathUtil.md#flt_max)
+- [FLT_MAX_10_EXP](Util.Util.MathUtil.md#flt_max_10_exp)
+- [FLT_MAX_EXP](Util.Util.MathUtil.md#flt_max_exp)
+- [FLT_MIN](Util.Util.MathUtil.md#flt_min)
+- [FLT_MIN_10_EXP](Util.Util.MathUtil.md#flt_min_10_exp)
+- [FLT_MIN_EXP](Util.Util.MathUtil.md#flt_min_exp)
+- [FLT_NORMALIZE](Util.Util.MathUtil.md#flt_normalize)
+- [FLT_RADIX](Util.Util.MathUtil.md#flt_radix)
+- [FLT_TRUE_MIN](Util.Util.MathUtil.md#flt_true_min)
+- [HALF_PI](Util.Util.MathUtil.md#half_pi)
+- [INV_PI](Util.Util.MathUtil.md#inv_pi)
 - [R2D](Util.Util.MathUtil.md#r2d)
-- [SIGN\_BIT](Util.Util.MathUtil.md#sign_bit)
+- [SIGN_BIT](Util.Util.MathUtil.md#sign_bit)
 
 ### Functions
 
@@ -69,13 +69,13 @@
 
 #### Defined in
 
-Util/index.d.ts:248
+Util/index.d.ts:270
 
-___
+---
 
-### DBL\_DECIMAL\_DIG
+### DBL_DECIMAL_DIG
 
-• `Const` **DBL\_DECIMAL\_DIG**: ``17``
+• `Const` **DBL_DECIMAL_DIG**: `17`
 
 **`Description`**
 
@@ -83,13 +83,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:136
+Util/index.d.ts:158
 
-___
+---
 
-### DBL\_DIG
+### DBL_DIG
 
-• `Const` **DBL\_DIG**: ``15``
+• `Const` **DBL_DIG**: `15`
 
 **`Description`**
 
@@ -97,13 +97,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:140
+Util/index.d.ts:162
 
-___
+---
 
-### DBL\_EPSILON
+### DBL_EPSILON
 
-• `Const` **DBL\_EPSILON**: ``2.220446049250313e-16``
+• `Const` **DBL_EPSILON**: `2.220446049250313e-16`
 
 **`Description`**
 
@@ -111,13 +111,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:144
+Util/index.d.ts:166
 
-___
+---
 
-### DBL\_HAS\_SUBNORM
+### DBL_HAS_SUBNORM
 
-• `Const` **DBL\_HAS\_SUBNORM**: ``1``
+• `Const` **DBL_HAS_SUBNORM**: `1`
 
 **`Description`**
 
@@ -125,13 +125,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:148
+Util/index.d.ts:170
 
-___
+---
 
-### DBL\_MANT\_DIG
+### DBL_MANT_DIG
 
-• `Const` **DBL\_MANT\_DIG**: ``53``
+• `Const` **DBL_MANT_DIG**: `53`
 
 **`Description`**
 
@@ -139,13 +139,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:152
+Util/index.d.ts:174
 
-___
+---
 
-### DBL\_MAX
+### DBL_MAX
 
-• `Const` **DBL\_MAX**: ``1.7976931348623157e+308``
+• `Const` **DBL_MAX**: `1.7976931348623157e+308`
 
 **`Description`**
 
@@ -153,13 +153,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:156
+Util/index.d.ts:178
 
-___
+---
 
-### DBL\_MAX\_10\_EXP
+### DBL_MAX_10_EXP
 
-• `Const` **DBL\_MAX\_10\_EXP**: ``308``
+• `Const` **DBL_MAX_10_EXP**: `308`
 
 **`Description`**
 
@@ -167,13 +167,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:160
+Util/index.d.ts:182
 
-___
+---
 
-### DBL\_MAX\_EXP
+### DBL_MAX_EXP
 
-• `Const` **DBL\_MAX\_EXP**: ``1024``
+• `Const` **DBL_MAX_EXP**: `1024`
 
 **`Description`**
 
@@ -181,13 +181,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:164
+Util/index.d.ts:186
 
-___
+---
 
-### DBL\_MIN
+### DBL_MIN
 
-• `Const` **DBL\_MIN**: ``2.2250738585072014e-308``
+• `Const` **DBL_MIN**: `2.2250738585072014e-308`
 
 **`Description`**
 
@@ -195,13 +195,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:168
+Util/index.d.ts:190
 
-___
+---
 
-### DBL\_MIN\_10\_EXP
+### DBL_MIN_10_EXP
 
-• `Const` **DBL\_MIN\_10\_EXP**: ``-307``
+• `Const` **DBL_MIN_10_EXP**: `-307`
 
 **`Description`**
 
@@ -209,27 +209,27 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:172
+Util/index.d.ts:194
 
-___
+---
 
-### DBL\_MIN\_EXP
+### DBL_MIN_EXP
 
-• `Const` **DBL\_MIN\_EXP**: ``-1021``
+• `Const` **DBL_MIN_EXP**: `-1021`
 
 **`Description`**
 
-能够使FLT_RADIX 的该整数减一次幂为规格化的最小负整数 (double)
+能够使 FLT_RADIX 的该整数减一次幂为规格化的最小负整数 (double)
 
 #### Defined in
 
-Util/index.d.ts:176
+Util/index.d.ts:198
 
-___
+---
 
-### DBL\_RADIX
+### DBL_RADIX
 
-• `Const` **DBL\_RADIX**: ``2``
+• `Const` **DBL_RADIX**: `2`
 
 **`Description`**
 
@@ -237,13 +237,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:180
+Util/index.d.ts:202
 
-___
+---
 
-### DBL\_TRUE\_MIN
+### DBL_TRUE_MIN
 
-• `Const` **DBL\_TRUE\_MIN**: ``5e-324``
+• `Const` **DBL_TRUE_MIN**: `5e-324`
 
 **`Description`**
 
@@ -251,13 +251,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:184
+Util/index.d.ts:206
 
-___
+---
 
 ### EPSILON
 
-• `Const` **EPSILON**: ``1e-7``
+• `Const` **EPSILON**: `1e-7`
 
 **`Description`**
 
@@ -265,13 +265,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:272
+Util/index.d.ts:294
 
-___
+---
 
-### FLOAT\_NON\_FRACTIONAL
+### FLOAT_NON_FRACTIONAL
 
-• `Const` **FLOAT\_NON\_FRACTIONAL**: ``8388608``
+• `Const` **FLOAT_NON_FRACTIONAL**: `8388608`
 
 **`Description`**
 
@@ -279,13 +279,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:268
+Util/index.d.ts:290
 
-___
+---
 
-### FLT\_DECIMAL\_DIG
+### FLT_DECIMAL_DIG
 
-• `Const` **FLT\_DECIMAL\_DIG**: ``9``
+• `Const` **FLT_DECIMAL_DIG**: `9`
 
 **`Description`**
 
@@ -293,13 +293,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:188
+Util/index.d.ts:210
 
-___
+---
 
-### FLT\_DIG
+### FLT_DIG
 
-• `Const` **FLT\_DIG**: ``6``
+• `Const` **FLT_DIG**: `6`
 
 **`Description`**
 
@@ -307,13 +307,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:192
+Util/index.d.ts:214
 
-___
+---
 
-### FLT\_EPSILON
+### FLT_EPSILON
 
-• `Const` **FLT\_EPSILON**: ``1.192092896e-7``
+• `Const` **FLT_EPSILON**: `1.192092896e-7`
 
 **`Description`**
 
@@ -321,13 +321,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:196
+Util/index.d.ts:218
 
-___
+---
 
-### FLT\_GUARD
+### FLT_GUARD
 
-• `Const` **FLT\_GUARD**: ``0``
+• `Const` **FLT_GUARD**: `0`
 
 **`Description`**
 
@@ -335,13 +335,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:204
+Util/index.d.ts:226
 
-___
+---
 
-### FLT\_HAS\_SUBNORM
+### FLT_HAS_SUBNORM
 
-• `Const` **FLT\_HAS\_SUBNORM**: ``1``
+• `Const` **FLT_HAS_SUBNORM**: `1`
 
 **`Description`**
 
@@ -349,13 +349,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:200
+Util/index.d.ts:222
 
-___
+---
 
-### FLT\_MANT\_DIG
+### FLT_MANT_DIG
 
-• `Const` **FLT\_MANT\_DIG**: ``24``
+• `Const` **FLT_MANT_DIG**: `24`
 
 **`Description`**
 
@@ -363,13 +363,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:208
+Util/index.d.ts:230
 
-___
+---
 
-### FLT\_MAX
+### FLT_MAX
 
-• `Const` **FLT\_MAX**: ``3.402823466e+38``
+• `Const` **FLT_MAX**: `3.402823466e+38`
 
 **`Description`**
 
@@ -377,13 +377,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:212
+Util/index.d.ts:234
 
-___
+---
 
-### FLT\_MAX\_10\_EXP
+### FLT_MAX_10_EXP
 
-• `Const` **FLT\_MAX\_10\_EXP**: ``38``
+• `Const` **FLT_MAX_10_EXP**: `38`
 
 **`Description`**
 
@@ -391,13 +391,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:216
+Util/index.d.ts:238
 
-___
+---
 
-### FLT\_MAX\_EXP
+### FLT_MAX_EXP
 
-• `Const` **FLT\_MAX\_EXP**: ``128``
+• `Const` **FLT_MAX_EXP**: `128`
 
 **`Description`**
 
@@ -405,13 +405,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:220
+Util/index.d.ts:242
 
-___
+---
 
-### FLT\_MIN
+### FLT_MIN
 
-• `Const` **FLT\_MIN**: ``1.175494351e-38``
+• `Const` **FLT_MIN**: `1.175494351e-38`
 
 **`Description`**
 
@@ -419,13 +419,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:224
+Util/index.d.ts:246
 
-___
+---
 
-### FLT\_MIN\_10\_EXP
+### FLT_MIN_10_EXP
 
-• `Const` **FLT\_MIN\_10\_EXP**: ``-37``
+• `Const` **FLT_MIN_10_EXP**: `-37`
 
 **`Description`**
 
@@ -433,13 +433,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:228
+Util/index.d.ts:250
 
-___
+---
 
-### FLT\_MIN\_EXP
+### FLT_MIN_EXP
 
-• `Const` **FLT\_MIN\_EXP**: ``-125``
+• `Const` **FLT_MIN_EXP**: `-125`
 
 **`Description`**
 
@@ -447,13 +447,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:232
+Util/index.d.ts:254
 
-___
+---
 
-### FLT\_NORMALIZE
+### FLT_NORMALIZE
 
-• `Const` **FLT\_NORMALIZE**: ``0``
+• `Const` **FLT_NORMALIZE**: `0`
 
 **`Description`**
 
@@ -461,13 +461,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:236
+Util/index.d.ts:258
 
-___
+---
 
-### FLT\_RADIX
+### FLT_RADIX
 
-• `Const` **FLT\_RADIX**: ``2``
+• `Const` **FLT_RADIX**: `2`
 
 **`Description`**
 
@@ -475,13 +475,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:240
+Util/index.d.ts:262
 
-___
+---
 
-### FLT\_TRUE\_MIN
+### FLT_TRUE_MIN
 
-• `Const` **FLT\_TRUE\_MIN**: ``1.401298464e-45``
+• `Const` **FLT_TRUE_MIN**: `1.401298464e-45`
 
 **`Description`**
 
@@ -489,13 +489,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:244
+Util/index.d.ts:266
 
-___
+---
 
-### HALF\_PI
+### HALF_PI
 
-• `Const` **HALF\_PI**: ``1.57079632679``
+• `Const` **HALF_PI**: `1.57079632679`
 
 **`Description`**
 
@@ -503,13 +503,13 @@ PI/2
 
 #### Defined in
 
-Util/index.d.ts:260
+Util/index.d.ts:282
 
-___
+---
 
-### INV\_PI
+### INV_PI
 
-• `Const` **INV\_PI**: ``0.31830988618``
+• `Const` **INV_PI**: `0.31830988618`
 
 **`Description`**
 
@@ -517,9 +517,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:256
+Util/index.d.ts:278
 
-___
+---
 
 ### R2D
 
@@ -531,13 +531,13 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:252
+Util/index.d.ts:274
 
-___
+---
 
-### SIGN\_BIT
+### SIGN_BIT
 
-• `Const` **SIGN\_BIT**: `number`
+• `Const` **SIGN_BIT**: `number`
 
 **`Description`**
 
@@ -545,7 +545,7 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:264
+Util/index.d.ts:286
 
 ## Functions
 
@@ -555,7 +555,7 @@ Util/index.d.ts:264
 
 **`Description`**
 
-数值a在最小值和最大值之间，包括最小值和最大值
+数值 a 在最小值和最大值之间，包括最小值和最大值
 
 **`Effect`**
 
@@ -563,9 +563,9 @@ Util/index.d.ts:264
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:数值a |
+| Name  | Type     | Description  |
+| :---- | :------- | :----------- |
+| `a`   | `number` | usage:数值 a |
 | `min` | `number` | usage:最小值 |
 | `max` | `number` | usage:最大值 |
 
@@ -577,9 +577,9 @@ Util/index.d.ts:264
 
 #### Defined in
 
-Util/index.d.ts:326
+Util/index.d.ts:348
 
-___
+---
 
 ### cos
 
@@ -587,7 +587,7 @@ ___
 
 **`Description`**
 
-计算cos值
+计算 cos 值
 
 **`Effect`**
 
@@ -595,21 +595,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:待机算的数值a |
+| Name | Type     | Description          |
+| :--- | :------- | :------------------- |
+| `a`  | `number` | usage:待机算的数值 a |
 
 #### Returns
 
 `number`
 
-cos值
+cos 值
 
 #### Defined in
 
-Util/index.d.ts:286
+Util/index.d.ts:308
 
-___
+---
 
 ### degreesToRadians
 
@@ -625,9 +625,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:度数 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `a`  | `number` | usage:度数  |
 
 #### Returns
 
@@ -637,9 +637,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:300
+Util/index.d.ts:322
 
-___
+---
 
 ### fmod
 
@@ -647,7 +647,7 @@ ___
 
 **`Description`**
 
-返回 数值x 除以 数值y 的余数
+返回 数值 x 除以 数值 y 的余数
 
 **`Effect`**
 
@@ -655,22 +655,22 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | usage:数值x |
-| `y` | `number` | usage:数值y |
+| Name | Type     | Description  |
+| :--- | :------- | :----------- |
+| `x`  | `number` | usage:数值 x |
+| `y`  | `number` | usage:数值 y |
 
 #### Returns
 
 `number`
 
-数值x 除以 数值y 的余数
+数值 x 除以 数值 y 的余数
 
 #### Defined in
 
-Util/index.d.ts:334
+Util/index.d.ts:356
 
-___
+---
 
 ### lerp
 
@@ -678,7 +678,7 @@ ___
 
 **`Description`**
 
-基于 alpha 在 数值a 和 数值b 之间线性插值
+基于 alpha 在 数值 a 和 数值 b 之间线性插值
 
 **`Effect`**
 
@@ -686,15 +686,15 @@ ___
 
 **`Precautions`**
 
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
+alpha=0 时 数值 a 的 100% 和 alpha=1 时 数值 b 的 100%
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:数值a |
-| `b` | `number` | usage:数值b |
-| `alpha` | `number` | usage:插值 |
+| Name    | Type     | Description  |
+| :------ | :------- | :----------- |
+| `a`     | `number` | usage:数值 a |
+| `b`     | `number` | usage:数值 b |
+| `alpha` | `number` | usage:插值   |
 
 #### Returns
 
@@ -704,9 +704,9 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 #### Defined in
 
-Util/index.d.ts:317
+Util/index.d.ts:339
 
-___
+---
 
 ### radiansToDegrees
 
@@ -722,9 +722,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:弧度值 |
+| Name | Type     | Description  |
+| :--- | :------- | :----------- |
+| `a`  | `number` | usage:弧度值 |
 
 #### Returns
 
@@ -734,9 +734,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:307
+Util/index.d.ts:329
 
-___
+---
 
 ### randomFloat
 
@@ -744,7 +744,7 @@ ___
 
 **`Description`**
 
-获取随机范围内浮点数[包含min, 不包含max)
+获取随机范围内浮点数[包含 min, 不包含 max)
 
 **`Effect`**
 
@@ -752,8 +752,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description  |
+| :---- | :------- | :----------- |
 | `min` | `number` | usage:最小值 |
 | `max` | `number` | usage:最大值 |
 
@@ -765,9 +765,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:342
+Util/index.d.ts:364
 
-___
+---
 
 ### randomInt
 
@@ -775,7 +775,7 @@ ___
 
 **`Description`**
 
-获取随机范围内整数[包含min, 不包含max)
+获取随机范围内整数[包含 min, 不包含 max)
 
 **`Effect`**
 
@@ -783,8 +783,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description  |
+| :---- | :------- | :----------- |
 | `min` | `number` | usage:最小值 |
 | `max` | `number` | usage:最大值 |
 
@@ -796,9 +796,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:350
+Util/index.d.ts:372
 
-___
+---
 
 ### sin
 
@@ -806,7 +806,7 @@ ___
 
 **`Description`**
 
-计算sin值
+计算 sin 值
 
 **`Effect`**
 
@@ -814,21 +814,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:待机算的数值a |
+| Name | Type     | Description          |
+| :--- | :------- | :------------------- |
+| `a`  | `number` | usage:待机算的数值 a |
 
 #### Returns
 
 `number`
 
-sin值
+sin 值
 
 #### Defined in
 
-Util/index.d.ts:279
+Util/index.d.ts:301
 
-___
+---
 
 ### tan
 
@@ -836,7 +836,7 @@ ___
 
 **`Description`**
 
-计算tan值
+计算 tan 值
 
 **`Effect`**
 
@@ -844,16 +844,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | usage:待机算的数值a |
+| Name | Type     | Description          |
+| :--- | :------- | :------------------- |
+| `a`  | `number` | usage:待机算的数值 a |
 
 #### Returns
 
 `number`
 
-tan值
+tan 值
 
 #### Defined in
 
-Util/index.d.ts:293
+Util/index.d.ts:315

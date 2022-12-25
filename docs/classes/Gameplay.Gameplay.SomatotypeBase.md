@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -32,13 +32,13 @@ usage:双端
 
 ### Properties
 
-- [enableOutLine](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
+- [enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
 - [postProcessObj](Gameplay.Gameplay.SomatotypeBase.md#postprocessobj)
 
 ### Methods
 
 - [enablePostProcess](Gameplay.Gameplay.SomatotypeBase.md#enablepostprocess)
-- [setOutLine](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
+- [setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
 - [setOutlineAdvance](Gameplay.Gameplay.SomatotypeBase.md#setoutlineadvance)
 
 ## Constructors
@@ -53,19 +53,19 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色 |
+| Name        | Type                                                  | Description |
+| :---------- | :---------------------------------------------------- | :---------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色  |
 
 #### Defined in
 
-Gameplay/index.d.ts:2591
+Gameplay/index.d.ts:2731
 
 ## Properties
 
-### enableOutLine
+### enableOutline
 
-• `Protected` **enableOutLine**: `boolean`
+• `Protected` **enableOutline**: `boolean`
 
 **`Description`**
 
@@ -73,9 +73,9 @@ Gameplay/index.d.ts:2591
 
 #### Defined in
 
-Gameplay/index.d.ts:2586
+Gameplay/index.d.ts:2726
 
-___
+---
 
 ### postProcessObj
 
@@ -87,13 +87,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2582
+Gameplay/index.d.ts:2722
 
 ## Methods
 
 ### enablePostProcess
 
-▸ **enablePostProcess**(`usedPostProcess`, `newOutLineColor`, `newOutLineWidth`): `void`
+▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void`
 
 **`Description`**
 
@@ -105,11 +105,11 @@ Gameplay/index.d.ts:2582
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `usedPostProcess` | `boolean` | usage:是否使用后处理功能 |
-| `newOutLineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline颜色 |
-| `newOutLineWidth` | `number` | usage:Outline宽度 |
+| Name              | Type                                      | Description              |
+| :---------------- | :---------------------------------------- | :----------------------- |
+| `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
 
 #### Returns
 
@@ -117,13 +117,13 @@ Gameplay/index.d.ts:2582
 
 #### Defined in
 
-Gameplay/index.d.ts:2599
+Gameplay/index.d.ts:2739
 
-___
+---
 
-### setOutLine
+### setOutline
 
-▸ **setOutLine**(`usedOutline`): `boolean`
+▸ **setOutline**(`usedOutline`): `boolean`
 
 **`Description`**
 
@@ -135,8 +135,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type      | Description            |
+| :------------ | :-------- | :--------------------- |
 | `usedOutline` | `boolean` | usage:是否使用描边功能 |
 
 #### Returns
@@ -147,9 +147,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2610
+Gameplay/index.d.ts:2750
 
-___
+---
 
 ### setOutlineAdvance
 
@@ -165,10 +165,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newEnableOutline` | `boolean` | usage:是否开启描边功能 |
-| `newOutlineColorIndex` | `number` | usage:描边的颜色 |
+| Name                   | Type      | Description            |
+| :--------------------- | :-------- | :--------------------- |
+| `newEnableOutline`     | `boolean` | usage:是否开启描边功能 |
+| `newOutlineColorIndex` | `number`  | usage:描边的颜色       |
 
 #### Returns
 
@@ -176,4 +176,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2617
+Gameplay/index.d.ts:2757

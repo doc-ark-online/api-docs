@@ -20,34 +20,34 @@
 
 ### Box
 
-• **Box** = ``2``
+• **Box** = `2`
 
 盒体
 
 #### Defined in
 
-Gameplay/index.d.ts:9836
+Gameplay/index.d.ts:9910
 
-___
+---
 
 ### Capsule
 
-• **Capsule** = ``1``
+• **Capsule** = `1`
 
 胶囊体
 
 #### Defined in
 
-Gameplay/index.d.ts:9834
+Gameplay/index.d.ts:9908
 
-___
+---
 
 ### Sphere
 
-• **Sphere** = ``0``
+• **Sphere** = `0`
 
-球形
+球体
 
 #### Defined in
 
-Gameplay/index.d.ts:9832
+Gameplay/index.d.ts:9906

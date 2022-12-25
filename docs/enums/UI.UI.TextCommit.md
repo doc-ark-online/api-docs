@@ -21,46 +21,46 @@
 
 ### Default
 
-• **Default** = ``0``
+• **Default** = `0`
 
 默认
 
 #### Defined in
 
-UI/index.d.ts:3689
+UI/index.d.ts:3698
 
-___
+---
 
 ### OnCleared
 
-• **OnCleared** = ``3``
+• **OnCleared** = `3`
 
 清除时
 
 #### Defined in
 
-UI/index.d.ts:3695
+UI/index.d.ts:3704
 
-___
+---
 
 ### OnEnter
 
-• **OnEnter** = ``1``
+• **OnEnter** = `1`
 
 输入回车
 
 #### Defined in
 
-UI/index.d.ts:3691
+UI/index.d.ts:3700
 
-___
+---
 
 ### OnUserMovedFocus
 
-• **OnUserMovedFocus** = ``2``
+• **OnUserMovedFocus** = `2`
 
 失去焦点
 
 #### Defined in
 
-UI/index.d.ts:3693
+UI/index.d.ts:3702

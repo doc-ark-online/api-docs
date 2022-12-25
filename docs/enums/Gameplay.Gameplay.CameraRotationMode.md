@@ -20,34 +20,34 @@
 
 ### RotationControl
 
-• **RotationControl** = ``2``
+• **RotationControl** = `2`
 
 旋转由输入控制
 
 #### Defined in
 
-Gameplay/index.d.ts:1700
+Gameplay/index.d.ts:1848
 
-___
+---
 
 ### RotationFixed
 
-• **RotationFixed** = ``0``
+• **RotationFixed** = `0`
 
 旋转固定
 
 #### Defined in
 
-Gameplay/index.d.ts:1696
+Gameplay/index.d.ts:1844
 
-___
+---
 
 ### RotationFollow
 
-• **RotationFollow** = ``1``
+• **RotationFollow** = `1`
 
 旋转跟随目标
 
 #### Defined in
 
-Gameplay/index.d.ts:1698
+Gameplay/index.d.ts:1846

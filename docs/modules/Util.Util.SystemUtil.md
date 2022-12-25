@@ -44,9 +44,9 @@
 
 #### Defined in
 
-Util/index.d.ts:411
+Util/index.d.ts:623
 
-___
+---
 
 ### isPIE
 
@@ -54,7 +54,7 @@ ___
 
 **`Description`**
 
-判定当前程序的运行环境是否为PIE
+判定当前程序的运行环境是否为 PIE
 
 **`Effect`**
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:406
+Util/index.d.ts:618
 
 ## Functions
 
@@ -86,17 +86,17 @@ Util/index.d.ts:406
 
 #### Defined in
 
-Util/index.d.ts:423
+Util/index.d.ts:635
 
-___
+---
 
 ### getDefaultGraphicsCPULevel
 
-▸ **getDefaultGraphicsCPULevel**(): [`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+▸ **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 **`Description`**
 
-获取默认CPU画质等级
+获取默认 CPU 画质等级
 
 **`Effect`**
 
@@ -104,23 +104,23 @@ ___
 
 #### Returns
 
-[`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+[`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 默认画质等级
 
 #### Defined in
 
-Util/index.d.ts:453
+Util/index.d.ts:665
 
-___
+---
 
 ### getDefaultGraphicsGPULevel
 
-▸ **getDefaultGraphicsGPULevel**(): [`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+▸ **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 **`Description`**
 
-获取默认GPU画质等级
+获取默认 GPU 画质等级
 
 **`Effect`**
 
@@ -128,15 +128,15 @@ ___
 
 #### Returns
 
-[`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+[`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 默认画质等级
 
 #### Defined in
 
-Util/index.d.ts:459
+Util/index.d.ts:671
 
-___
+---
 
 ### getEditorVersion
 
@@ -158,9 +158,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:435
+Util/index.d.ts:647
 
-___
+---
 
 ### getFullEditorVersion
 
@@ -182,9 +182,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:429
+Util/index.d.ts:641
 
-___
+---
 
 ### getGameId
 
@@ -192,7 +192,7 @@ ___
 
 **`Description`**
 
-获取当前游戏GameId
+获取当前游戏 GameId
 
 **`Effect`**
 
@@ -202,21 +202,21 @@ ___
 
 `string`
 
-当前游戏GameId
+当前游戏 GameId
 
 #### Defined in
 
-Util/index.d.ts:477
+Util/index.d.ts:689
 
-___
+---
 
 ### getGraphicsCPULevel
 
-▸ **getGraphicsCPULevel**(): [`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+▸ **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 **`Description`**
 
-获取当前CPU画质等级
+获取当前 CPU 画质等级
 
 **`Effect`**
 
@@ -224,23 +224,23 @@ ___
 
 #### Returns
 
-[`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+[`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 画质等级
 
 #### Defined in
 
-Util/index.d.ts:441
+Util/index.d.ts:653
 
-___
+---
 
 ### getGraphicsGPULevel
 
-▸ **getGraphicsGPULevel**(): [`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+▸ **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 **`Description`**
 
-获取当前GPU画质等级
+获取当前 GPU 画质等级
 
 **`Effect`**
 
@@ -248,15 +248,15 @@ ___
 
 #### Returns
 
-[`GFXLevel`](../enums/Type.Type.GFXLevel.md)
+[`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 画质等级
 
 #### Defined in
 
-Util/index.d.ts:447
+Util/index.d.ts:659
 
-___
+---
 
 ### getVersion
 
@@ -278,9 +278,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:483
+Util/index.d.ts:695
 
-___
+---
 
 ### isClient
 
@@ -302,9 +302,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:395
+Util/index.d.ts:607
 
-___
+---
 
 ### isMobile
 
@@ -326,9 +326,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:417
+Util/index.d.ts:629
 
-___
+---
 
 ### isServer
 
@@ -350,9 +350,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:401
+Util/index.d.ts:613
 
-___
+---
 
 ### setGraphicsCPULevel
 
@@ -360,7 +360,7 @@ ___
 
 **`Description`**
 
-设置当前CPU画质等级
+设置当前 CPU 画质等级
 
 **`Effect`**
 
@@ -368,9 +368,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `CPULevel` | [`GFXLevel`](../enums/Type.Type.GFXLevel.md) | usage:CPU画质等级 |
+| Name       | Type                                                   | Description        |
+| :--------- | :----------------------------------------------------- | :----------------- |
+| `CPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | usage:CPU 画质等级 |
 
 #### Returns
 
@@ -378,9 +378,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:465
+Util/index.d.ts:677
 
-___
+---
 
 ### setGraphicsGPULevel
 
@@ -388,7 +388,7 @@ ___
 
 **`Description`**
 
-设置当前GPU画质等级
+设置当前 GPU 画质等级
 
 **`Effect`**
 
@@ -396,9 +396,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GPULevel` | [`GFXLevel`](../enums/Type.Type.GFXLevel.md) | usage:GPU画质等级 |
+| Name       | Type                                                   | Description        |
+| :--------- | :----------------------------------------------------- | :----------------- |
+| `GPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | usage:GPU 画质等级 |
 
 #### Returns
 
@@ -406,4 +406,4 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:471
+Util/index.d.ts:683

@@ -24,20 +24,19 @@ jun.zhang
 
 ### Properties
 
-- [delegateEndReloadOnClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#delegateendreloadonclient)
-- [delegateEndReloadOnServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#delegateendreloadonserver)
-- [delegateStartReloadOnClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#delegatestartreloadonclient)
-- [delegateStartReloadOnServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#delegatestartreloadonserver)
+- [onEndReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadclient)
+- [onEndReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadserver)
+- [onStartReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)
+- [onStartReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)
 
 ### Accessors
 
+- [animationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#animationguid)
 - [reloadDuration](Gameplay.Gameplay.HotWeaponReloadComponent.md#reloadduration)
 
 ### Methods
 
-- [getAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#getanimationguid)
 - [hadAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#hadanimationguid)
-- [setAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#setanimationguid)
 
 ## Constructors
 
@@ -47,9 +46,9 @@ jun.zhang
 
 ## Properties
 
-### delegateEndReloadOnClient
+### onEndReloadClient
 
-• **delegateEndReloadOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -57,13 +56,13 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:12207
+Gameplay/index.d.ts:11889
 
-___
+---
 
-### delegateEndReloadOnServer
+### onEndReloadServer
 
-• **delegateEndReloadOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -71,13 +70,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:12203
+Gameplay/index.d.ts:11885
 
-___
+---
 
-### delegateStartReloadOnClient
+### onStartReloadClient
 
-• **delegateStartReloadOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -85,13 +84,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:12199
+Gameplay/index.d.ts:11881
 
-___
+---
 
-### delegateStartReloadOnServer
+### onStartReloadServer
 
-• **delegateStartReloadOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -99,9 +98,57 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:12195
+Gameplay/index.d.ts:11877
 
 ## Accessors
+
+### animationGuid
+
+• `get` **animationGuid**(): `string`
+
+**`Description`**
+
+获取绑定的动画 GUID
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`string`
+
+绑定的动画 GUID
+
+#### Defined in
+
+Gameplay/index.d.ts:11901
+
+• `set` **animationGuid**(`guid`): `void`
+
+**`Description`**
+
+设置动画 GUID
+
+**`Effect`**
+
+客户端调用自动广播
+
+#### Parameters
+
+| Name   | Type     | Description                      |
+| :----- | :------- | :------------------------------- |
+| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:11895
+
+---
 
 ### reloadDuration
 
@@ -123,7 +170,7 @@ Gameplay/index.d.ts:12195
 
 #### Defined in
 
-Gameplay/index.d.ts:12238
+Gameplay/index.d.ts:11920
 
 • `set` **reloadDuration**(`time`): `void`
 
@@ -141,8 +188,8 @@ Gameplay/index.d.ts:12238
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
 | `time` | `number` | usage: 新换弹时间 |
 
 #### Returns
@@ -151,33 +198,9 @@ Gameplay/index.d.ts:12238
 
 #### Defined in
 
-Gameplay/index.d.ts:12232
+Gameplay/index.d.ts:11914
 
 ## Methods
-
-### getAnimationGuid
-
-▸ **getAnimationGuid**(): `string`
-
-**`Description`**
-
-获取绑定的动画GUID
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`string`
-
-绑定的动画GUID
-
-#### Defined in
-
-Gameplay/index.d.ts:12219
-
-___
 
 ### hadAnimationGuid
 
@@ -185,7 +208,7 @@ ___
 
 **`Description`**
 
-是否有动画GUID
+是否有动画 GUID
 
 **`Effect`**
 
@@ -195,36 +218,8 @@ ___
 
 `boolean`
 
-是否有动画GUID
+是否有动画 GUID
 
 #### Defined in
 
-Gameplay/index.d.ts:12225
-
-___
-
-### setAnimationGuid
-
-▸ **setAnimationGuid**(`guid`): `void`
-
-**`Description`**
-
-设置动画 GUID
-
-**`Effect`**
-
-客户端调用自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:12213
+Gameplay/index.d.ts:11907

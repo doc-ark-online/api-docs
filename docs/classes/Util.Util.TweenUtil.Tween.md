@@ -20,9 +20,9 @@ usage: 双端
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| Name | Type                                                                     |
+| :--- | :----------------------------------------------------------------------- |
+| `T`  | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
 
 ## Table of contents
 
@@ -74,20 +74,20 @@ usage: 双端
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| Name | Type                                                                     |
+| :--- | :----------------------------------------------------------------------- |
+| `T`  | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | `T` | usage: 要创建补间的对象类型 |
-| `group?` | ``false`` \| [`Group`](Util.Util.TweenUtil.Group.md) | usage: 要创建的补间对象的分组 default: mainGroup |
+| Name     | Type                                               | Description                                      |
+| :------- | :------------------------------------------------- | :----------------------------------------------- |
+| `obj`    | `T`                                                | usage: 要创建补间的对象类型                      |
+| `group?` | `false` \| [`Group`](Util.Util.TweenUtil.Group.md) | usage: 要创建的补间对象的分组 default: mainGroup |
 
 #### Defined in
 
-Util/index.d.ts:785
+Util/index.d.ts:1006
 
 ## Methods
 
@@ -106,6 +106,7 @@ Util/index.d.ts:785
 **`Example`**
 
 使用示例: 示例
+
 ```
 // A结束后启动B
 tweenA.chain(tweenB)
@@ -120,8 +121,8 @@ tweenA.chain(tweenB, tweenC)
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                              | Description                     |
+| :---------- | :------------------------------------------------ | :------------------------------ |
 | `...tweens` | [`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[] | usage: 要链接的补间对象（数组） |
 
 #### Returns
@@ -132,9 +133,9 @@ tweenA.chain(tweenB, tweenC)
 
 #### Defined in
 
-Util/index.d.ts:937
+Util/index.d.ts:1158
 
-___
+---
 
 ### delay
 
@@ -150,8 +151,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                            |
+| :-------- | :------- | :------------------------------------- |
 | `amount?` | `number` | usage: 延迟时间，单位：ms。 default: 0 |
 
 #### Returns
@@ -162,9 +163,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:874
+Util/index.d.ts:1095
 
-___
+---
 
 ### duration
 
@@ -180,8 +181,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                                         |
+| :--- | :------- | :-------------------------------------------------- |
 | `d?` | `number` | usage: 完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns
@@ -192,9 +193,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:818
+Util/index.d.ts:1039
 
-___
+---
 
 ### easing
 
@@ -210,8 +211,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name              | Type                                                                 | Description                                 |
+| :---------------- | :------------------------------------------------------------------- | :------------------------------------------ |
 | `easingFunction?` | [`EasingFunction`](../modules/Util.Util.TweenUtil.md#easingfunction) | usage: 缓动函数 default: Easing.Linear.None |
 
 #### Returns
@@ -222,9 +223,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:910
+Util/index.d.ts:1131
 
-___
+---
 
 ### end
 
@@ -246,9 +247,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:838
+Util/index.d.ts:1059
 
-___
+---
 
 ### getID
 
@@ -256,7 +257,7 @@ ___
 
 **`Description`**
 
-获取当前补间对象的ID
+获取当前补间对象的 ID
 
 **`Effect`**
 
@@ -266,13 +267,13 @@ ___
 
 `number`
 
-当前补间对象的ID
+当前补间对象的 ID
 
 #### Defined in
 
-Util/index.d.ts:791
+Util/index.d.ts:1012
 
-___
+---
 
 ### group
 
@@ -288,8 +289,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                    | Description                        |
+| :------- | :-------------------------------------- | :--------------------------------- |
 | `group?` | [`Group`](Util.Util.TweenUtil.Group.md) | usage: 新的分组 default: mainGroup |
 
 #### Returns
@@ -300,9 +301,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:867
+Util/index.d.ts:1088
 
-___
+---
 
 ### interpolation
 
@@ -318,8 +319,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                     | Type                                                                               | Description                                   |
+| :----------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------- |
 | `interpolationFunction?` | [`InterpolationFunction`](../modules/Util.Util.TweenUtil.md#interpolationfunction) | usage: 插值函数 default: Interpolation.Linear |
 
 #### Returns
@@ -330,9 +331,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:917
+Util/index.d.ts:1138
 
-___
+---
 
 ### isPaused
 
@@ -354,9 +355,9 @@ true-暂停；false-在补间。
 
 #### Defined in
 
-Util/index.d.ts:803
+Util/index.d.ts:1024
 
-___
+---
 
 ### isPlaying
 
@@ -364,7 +365,7 @@ ___
 
 **`Description`**
 
-获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。
+获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回 true。
 
 **`Effect`**
 
@@ -378,9 +379,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Defined in
 
-Util/index.d.ts:797
+Util/index.d.ts:1018
 
-___
+---
 
 ### onComplete
 
@@ -396,8 +397,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                      | Description                                |
+| :---------- | :------------------------ | :----------------------------------------- |
 | `callback?` | (`object`: `T`) => `void` | usage: 要绑定的回调函数 default: undefined |
 
 #### Returns
@@ -408,9 +409,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:969
+Util/index.d.ts:1190
 
-___
+---
 
 ### onRepeat
 
@@ -426,8 +427,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                      | Description                                |
+| :---------- | :------------------------ | :----------------------------------------- |
 | `callback?` | (`object`: `T`) => `void` | usage: 要绑定的回调函数 default: undefined |
 
 #### Returns
@@ -438,9 +439,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:962
+Util/index.d.ts:1183
 
-___
+---
 
 ### onStart
 
@@ -461,8 +462,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                      | Description                                |
+| :---------- | :------------------------ | :----------------------------------------- |
 | `callback?` | (`object`: `T`) => `void` | usage: 要绑定的回调函数 default: undefined |
 
 #### Returns
@@ -473,9 +474,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:947
+Util/index.d.ts:1168
 
-___
+---
 
 ### onStop
 
@@ -496,8 +497,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                      | Description                                |
+| :---------- | :------------------------ | :----------------------------------------- |
 | `callback?` | (`object`: `T`) => `void` | usage: 要绑定的回调函数 default: undefined |
 
 #### Returns
@@ -508,9 +509,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:979
+Util/index.d.ts:1200
 
-___
+---
 
 ### onUpdate
 
@@ -530,8 +531,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                           | Description                                |
+| :---------- | :--------------------------------------------- | :----------------------------------------- |
 | `callback?` | (`object`: `T`, `elapsed`: `number`) => `void` | usage: 要绑定的回调函数 default: undefined |
 
 #### Returns
@@ -542,9 +543,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:955
+Util/index.d.ts:1176
 
-___
+---
 
 ### pause
 
@@ -564,8 +565,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                           |
+| :------ | :------- | :------------------------------------ |
 | `time?` | `number` | usage: 暂停生效时间 default: 当前时间 |
 
 #### Returns
@@ -576,9 +577,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:846
+Util/index.d.ts:1067
 
-___
+---
 
 ### repeat
 
@@ -599,6 +600,7 @@ ___
 **`Example`**
 
 使用示例: 示例
+
 ```
 tween.repeat(10) // 循环10次
 tween.repeat(Infinity) // 无限循环
@@ -606,8 +608,8 @@ tween.repeat(Infinity) // 无限循环
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                |
+| :------- | :------- | :------------------------- |
 | `times?` | `number` | usage: 重复次数 default: 0 |
 
 #### Returns
@@ -618,9 +620,9 @@ tween.repeat(Infinity) // 无限循环
 
 #### Defined in
 
-Util/index.d.ts:888
+Util/index.d.ts:1109
 
-___
+---
 
 ### repeatDelay
 
@@ -636,8 +638,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description                                    |
+| :-------- | :------- | :--------------------------------------------- |
 | `amount?` | `number` | usage: 延迟时间，单位：ms。 default: undefined |
 
 #### Returns
@@ -648,9 +650,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:895
+Util/index.d.ts:1116
 
-___
+---
 
 ### resume
 
@@ -670,8 +672,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                           |
+| :------ | :------- | :------------------------------------ |
 | `time?` | `number` | usage: 恢复生效时间 default: 当前时间 |
 
 #### Returns
@@ -682,9 +684,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:854
+Util/index.d.ts:1075
 
-___
+---
 
 ### start
 
@@ -704,8 +706,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                           |
+| :------ | :------- | :------------------------------------ |
 | `time?` | `number` | usage: 启动生效时间 default: 当前时间 |
 
 #### Returns
@@ -716,9 +718,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:826
+Util/index.d.ts:1047
 
-___
+---
 
 ### stop
 
@@ -740,9 +742,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:832
+Util/index.d.ts:1053
 
-___
+---
 
 ### stopChainedTweens
 
@@ -764,9 +766,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:860
+Util/index.d.ts:1081
 
-___
+---
 
 ### to
 
@@ -782,10 +784,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `properties` | [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) | usage: 目标状态 |
-| `duration?` | `number` | usage: 完成补间需要的时间，单位：ms。 default: 1000 |
+| Name         | Type                                                             | Description                                         |
+| :----------- | :--------------------------------------------------------------- | :-------------------------------------------------- |
+| `properties` | [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) | usage: 目标状态                                     |
+| `duration?`  | `number`                                                         | usage: 完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns
 
@@ -795,9 +797,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:811
+Util/index.d.ts:1032
 
-___
+---
 
 ### update
 
@@ -813,10 +815,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `time?` | `number` | usage: 要绑定的回调函数 default: 当前时间 |
-| `autoStart?` | `boolean` | usage: 是否自动开始 default: true |
+| Name         | Type      | Description                               |
+| :----------- | :-------- | :---------------------------------------- |
+| `time?`      | `number`  | usage: 要绑定的回调函数 default: 当前时间 |
+| `autoStart?` | `boolean` | usage: 是否自动开始 default: true         |
 
 #### Returns
 
@@ -826,9 +828,9 @@ true-如果当前更新之后尚未结束, false-当前更新之后补间结束
 
 #### Defined in
 
-Util/index.d.ts:987
+Util/index.d.ts:1208
 
-___
+---
 
 ### yoyo
 
@@ -845,9 +847,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `yoyo?` | `boolean` | usage: 是否启用yoyo default: false |
+| Name    | Type      | Description                         |
+| :------ | :-------- | :---------------------------------- |
+| `yoyo?` | `boolean` | usage: 是否启用 yoyo default: false |
 
 #### Returns
 
@@ -857,4 +859,4 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:903
+Util/index.d.ts:1124

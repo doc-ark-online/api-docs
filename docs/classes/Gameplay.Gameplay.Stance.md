@@ -6,7 +6,7 @@
 
 **`Author`**
 
-任雨辰
+yuchen.ren
 
 **`Description`**
 
@@ -51,14 +51,14 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色 |
-| `sync` | `boolean` | usage:是否自动同步 |
+| Name        | Type                                                  | Description        |
+| :---------- | :---------------------------------------------------- | :----------------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色         |
+| `sync`      | `boolean`                                             | usage:是否自动同步 |
 
 #### Defined in
 
-Gameplay/index.d.ts:1465
+Gameplay/index.d.ts:1617
 
 ## Methods
 
@@ -68,11 +68,17 @@ Gameplay/index.d.ts:1465
 
 **`Description`**
 
-播放姿态
+播放这个姿态对象, 并返回执行结果
 
 **`Effect`**
 
 可选同步
+
+**`Precautions`**
+
+这个操作是否会自动同步多端, 取决于调用 Character.loadStance()时传入的 sync 参数.
+返回的执行结果, 在不自动同步时多数情况下可靠;
+在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
 #### Returns
 
@@ -82,9 +88,9 @@ Gameplay/index.d.ts:1465
 
 #### Defined in
 
-Gameplay/index.d.ts:1471
+Gameplay/index.d.ts:1626
 
-___
+---
 
 ### playInternal
 
@@ -106,9 +112,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1477
+Gameplay/index.d.ts:1632
 
-___
+---
 
 ### stop
 
@@ -116,11 +122,17 @@ ___
 
 **`Description`**
 
-停止姿态
+停止这个姿态对象, 并返回执行结果
 
 **`Effect`**
 
 可选同步
+
+**`Precautions`**
+
+这个操作是否会自动同步多端, 取决于调用 Character.loadStance()时传入的 sync 参数.
+返回的执行结果, 在不自动同步时多数情况下可靠;
+在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
 #### Returns
 
@@ -130,9 +142,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1483
+Gameplay/index.d.ts:1641
 
-___
+---
 
 ### stopInternal
 
@@ -154,4 +166,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1489
+Gameplay/index.d.ts:1647

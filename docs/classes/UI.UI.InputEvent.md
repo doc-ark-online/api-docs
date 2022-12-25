@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -34,4 +34,4 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4069
+UI/index.d.ts:4078

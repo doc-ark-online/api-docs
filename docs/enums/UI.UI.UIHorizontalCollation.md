@@ -19,22 +19,22 @@
 
 ### LeftToRight
 
-• **LeftToRight** = ``0``
+• **LeftToRight** = `0`
 
 从左到右排序
 
 #### Defined in
 
-UI/index.d.ts:3370
+UI/index.d.ts:3379
 
-___
+---
 
 ### RightToLeft
 
-• **RightToLeft** = ``1``
+• **RightToLeft** = `1`
 
 从右到左排序
 
 #### Defined in
 
-UI/index.d.ts:3372
+UI/index.d.ts:3381

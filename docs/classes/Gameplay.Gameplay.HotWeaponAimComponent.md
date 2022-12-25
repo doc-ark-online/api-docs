@@ -24,10 +24,10 @@ jun.zhang
 
 ### Properties
 
-- [delegateAimEndClient](Gameplay.Gameplay.HotWeaponAimComponent.md#delegateaimendclient)
-- [delegateAimEndServer](Gameplay.Gameplay.HotWeaponAimComponent.md#delegateaimendserver)
-- [delegateAimStartClient](Gameplay.Gameplay.HotWeaponAimComponent.md#delegateaimstartclient)
-- [delegateAimStartServer](Gameplay.Gameplay.HotWeaponAimComponent.md#delegateaimstartserver)
+- [onAimEndClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendclient)
+- [onAimEndServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendserver)
+- [onAimStartClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartclient)
+- [onAimStartServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartserver)
 
 ### Accessors
 
@@ -40,7 +40,7 @@ jun.zhang
 ### Methods
 
 - [bindOpenAimComponentDelegates](Gameplay.Gameplay.HotWeaponAimComponent.md#bindopenaimcomponentdelegates)
-- [setAiming](Gameplay.Gameplay.HotWeaponAimComponent.md#setaiming)
+- [enableAiming](Gameplay.Gameplay.HotWeaponAimComponent.md#enableaiming)
 
 ## Constructors
 
@@ -50,9 +50,9 @@ jun.zhang
 
 ## Properties
 
-### delegateAimEndClient
+### onAimEndClient
 
-• **delegateAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -60,13 +60,13 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:11720
+Gameplay/index.d.ts:11408
 
-___
+---
 
-### delegateAimEndServer
+### onAimEndServer
 
-• **delegateAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -74,13 +74,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11716
+Gameplay/index.d.ts:11404
 
-___
+---
 
-### delegateAimStartClient
+### onAimStartClient
 
-• **delegateAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -88,13 +88,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11712
+Gameplay/index.d.ts:11400
 
-___
+---
 
-### delegateAimStartServer
+### onAimStartServer
 
-• **delegateAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11708
+Gameplay/index.d.ts:11396
 
 ## Accessors
 
@@ -112,7 +112,7 @@ Gameplay/index.d.ts:11708
 
 **`Description`**
 
-Get瞄准时的第一/第三人称模式
+Get 瞄准时的第一/第三人称模式
 
 **`Effect`**
 
@@ -126,13 +126,13 @@ Get瞄准时的第一/第三人称模式
 
 #### Defined in
 
-Gameplay/index.d.ts:11747
+Gameplay/index.d.ts:11435
 
 • `set` **aimMode**(`NewAimMode`): `void`
 
 **`Description`**
 
-Set瞄准时的第一/第三人称模式
+Set 瞄准时的第一/第三人称模式
 
 **`Effect`**
 
@@ -140,8 +140,8 @@ Set瞄准时的第一/第三人称模式
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                                 | Description                      |
+| :----------- | :------------------------------------------------------------------- | :------------------------------- |
 | `NewAimMode` | [`HotWeaponAimMode`](../enums/Gameplay.Gameplay.HotWeaponAimMode.md) | usage: 新设置的瞄准模式 default: |
 
 #### Returns
@@ -150,9 +150,9 @@ Set瞄准时的第一/第三人称模式
 
 #### Defined in
 
-Gameplay/index.d.ts:11741
+Gameplay/index.d.ts:11429
 
-___
+---
 
 ### aimingZoom
 
@@ -160,11 +160,11 @@ ___
 
 **`Description`**
 
-Get第一人称瞄准时的瞄准镜放大倍数
+Get 第一人称瞄准时的瞄准镜放大倍数
 
 **`Precautions`**
 
-合法范围为[1.0 , 18.0]，对应[0° , 90°]的FOV值每增加1.0，对应FOV增加5°
+合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加 1.0，对应 FOV 增加 5°
 
 **`Effect`**
 
@@ -178,17 +178,17 @@ Get第一人称瞄准时的瞄准镜放大倍数
 
 #### Defined in
 
-Gameplay/index.d.ts:11773
+Gameplay/index.d.ts:11461
 
 • `set` **aimingZoom**(`newAimingZoom`): `void`
 
 **`Description`**
 
-Set模拟瞄准时的瞄准镜放大倍数
+Set 模拟瞄准时的瞄准镜放大倍数
 
 **`Precautions`**
 
-合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加1.0，对应FOV增加5°
+合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加 1.0，对应 FOV 增加 5°
 
 **`Effect`**
 
@@ -196,8 +196,8 @@ Set模拟瞄准时的瞄准镜放大倍数
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type     | Description                            |
+| :-------------- | :------- | :------------------------------------- |
 | `newAimingZoom` | `number` | usage: 新设置的瞄准镜放大倍数 default: |
 
 #### Returns
@@ -206,9 +206,9 @@ Set模拟瞄准时的瞄准镜放大倍数
 
 #### Defined in
 
-Gameplay/index.d.ts:11766
+Gameplay/index.d.ts:11454
 
-___
+---
 
 ### cameraOffsetDistanceInThirdPersonMode
 
@@ -216,7 +216,7 @@ ___
 
 **`Description`**
 
-Get第三人称瞄准时的连接相机弹簧组件的长度
+Get 第三人称瞄准时的连接相机弹簧组件的长度
 
 **`Effect`**
 
@@ -230,17 +230,17 @@ Get第三人称瞄准时的连接相机弹簧组件的长度
 
 #### Defined in
 
-Gameplay/index.d.ts:11786
+Gameplay/index.d.ts:11474
 
 • `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void`
 
 **`Description`**
 
-Set第三人称瞄准时的连接相机弹簧组件的长度
+Set 第三人称瞄准时的连接相机弹簧组件的长度
 
 **`Precautions`**
 
-相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离Character太近导致穿模，太远则没有必要
+相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离 Character 太近导致穿模，太远则没有必要
 
 **`Effect`**
 
@@ -248,8 +248,8 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                      | Type     | Description                                    |
+| :------------------------ | :------- | :--------------------------------------------- |
 | `NewCameraOffsetDistance` | `number` | usage: 新设置的连接相机弹簧组件的长度 default: |
 
 #### Returns
@@ -258,9 +258,9 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 
 #### Defined in
 
-Gameplay/index.d.ts:11780
+Gameplay/index.d.ts:11468
 
-___
+---
 
 ### defaultCameraSpringArmLength
 
@@ -268,7 +268,7 @@ ___
 
 **`Description`**
 
-Get第三人称常态下相机弹簧组件的默认长度
+Get 第三人称常态下相机弹簧组件的默认长度
 
 **`Effect`**
 
@@ -282,17 +282,17 @@ Get第三人称常态下相机弹簧组件的默认长度
 
 #### Defined in
 
-Gameplay/index.d.ts:11799
+Gameplay/index.d.ts:11487
 
 • `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void`
 
 **`Description`**
 
-Set第三人称常态下相机弹簧组件的默认长度
+Set 第三人称常态下相机弹簧组件的默认长度
 
 **`Precautions`**
 
-相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离Character太近导致穿模，太远则没有必要
+相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离 Character 太近导致穿模，太远则没有必要
 
 **`Effect`**
 
@@ -300,8 +300,8 @@ Set第三人称常态下相机弹簧组件的默认长度
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                 | Type     | Description                                        |
+| :------------------- | :------- | :------------------------------------------------- |
 | `NewCameraArmLength` | `number` | usage: 新设置的连接相机弹簧组件的默认长度 default: |
 
 #### Returns
@@ -310,9 +310,9 @@ Set第三人称常态下相机弹簧组件的默认长度
 
 #### Defined in
 
-Gameplay/index.d.ts:11793
+Gameplay/index.d.ts:11481
 
-___
+---
 
 ### scopeTypeIndex
 
@@ -320,7 +320,7 @@ ___
 
 **`Description`**
 
-Get模拟瞄准镜UI种类
+Get 模拟瞄准镜 UI 种类
 
 **`Effect`**
 
@@ -330,17 +330,17 @@ Get模拟瞄准镜UI种类
 
 [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md)
 
-当前瞄准镜UI种类
+当前瞄准镜 UI 种类
 
 #### Defined in
 
-Gameplay/index.d.ts:11759
+Gameplay/index.d.ts:11447
 
 • `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void`
 
 **`Description`**
 
-Set模拟瞄准镜UI种类
+Set 模拟瞄准镜 UI 种类
 
 **`Effect`**
 
@@ -348,9 +348,9 @@ Set模拟瞄准镜UI种类
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md) | usage: 新的瞄准镜UI种类 default: |
+| Name                | Type                                                                             | Description                        |
+| :------------------ | :------------------------------------------------------------------------------- | :--------------------------------- |
+| `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md) | usage: 新的瞄准镜 UI 种类 default: |
 
 #### Returns
 
@@ -358,7 +358,7 @@ Set模拟瞄准镜UI种类
 
 #### Defined in
 
-Gameplay/index.d.ts:11753
+Gameplay/index.d.ts:11441
 
 ## Methods
 
@@ -380,20 +380,21 @@ Gameplay/index.d.ts:11753
 
 #### Defined in
 
-Gameplay/index.d.ts:11725
+Gameplay/index.d.ts:11413
 
-___
+---
 
-### setAiming
+### enableAiming
 
-▸ **setAiming**(`NewAimState`): `void`
+▸ **enableAiming**(`NewAimState`): `void`
 
 **`Description`**
 
 打开/关闭瞄准
+
 - 切换持枪姿态
-- 切换相机View
-- 切换准星UI
+- 切换相机 View
+- 切换准星 UI
 - 修改子弹发射精度-上升到用户层，开发者自己在瞄准时设置默认精准度
 
 **`Effect`**
@@ -402,8 +403,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type      | Description                      |
+| :------------ | :-------- | :------------------------------- |
 | `NewAimState` | `boolean` | usage: 是否开启瞄准功能 default: |
 
 #### Returns
@@ -412,4 +413,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11735
+Gameplay/index.d.ts:11423

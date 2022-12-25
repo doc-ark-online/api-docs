@@ -19,22 +19,22 @@
 
 ### FixWidth
 
-• **FixWidth** = ``0``
+• **FixWidth** = `0`
 
 固定宽度
 
 #### Defined in
 
-UI/index.d.ts:3350
+UI/index.d.ts:3359
 
-___
+---
 
 ### HugContent
 
-• **HugContent** = ``1``
+• **HugContent** = `1`
 
 自适应宽度
 
 #### Defined in
 
-UI/index.d.ts:3352
+UI/index.d.ts:3361

@@ -22,58 +22,58 @@
 
 ### Bottom
 
-• **Bottom** = ``1``
+• **Bottom** = `1`
 
 下对齐
 
 #### Defined in
 
-UI/index.d.ts:3431
+UI/index.d.ts:3440
 
-___
+---
 
 ### Center
 
-• **Center** = ``3``
+• **Center** = `3`
 
 居中对齐
 
 #### Defined in
 
-UI/index.d.ts:3435
+UI/index.d.ts:3444
 
-___
+---
 
 ### Scale
 
-• **Scale** = ``4``
+• **Scale** = `4`
 
 距离上下边距百分比固定
 
 #### Defined in
 
-UI/index.d.ts:3437
+UI/index.d.ts:3446
 
-___
+---
 
 ### Top
 
-• **Top** = ``0``
+• **Top** = `0`
 
 上对齐
 
 #### Defined in
 
-UI/index.d.ts:3429
+UI/index.d.ts:3438
 
-___
+---
 
 ### TopBottom
 
-• **TopBottom** = ``2``
+• **TopBottom** = `2`
 
 距离上下边距固定
 
 #### Defined in
 
-UI/index.d.ts:3433
+UI/index.d.ts:3442

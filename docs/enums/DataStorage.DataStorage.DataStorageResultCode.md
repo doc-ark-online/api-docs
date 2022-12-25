@@ -16,15 +16,15 @@
 - [Failure](DataStorage.DataStorage.DataStorageResultCode.md#failure)
 - [KeyValueError](DataStorage.DataStorage.DataStorageResultCode.md#keyvalueerror)
 - [OnlyServerCall](DataStorage.DataStorage.DataStorageResultCode.md#onlyservercall)
-- [RequestInteralTooClose](DataStorage.DataStorage.DataStorageResultCode.md#requestinteraltooclose)
+- [RequestIntervalTooClose](DataStorage.DataStorage.DataStorageResultCode.md#requestintervaltooclose)
 - [RequestTooFrequent](DataStorage.DataStorage.DataStorageResultCode.md#requesttoofrequent)
-- [Sucess](DataStorage.DataStorage.DataStorageResultCode.md#sucess)
+- [Success](DataStorage.DataStorage.DataStorageResultCode.md#success)
 
 ## Enumeration Members
 
 ### ExceededSizeLimit
 
-• **ExceededSizeLimit** = ``2``
+• **ExceededSizeLimit** = `2`
 
 数据保存失败：文件大小过大
 
@@ -32,11 +32,11 @@
 
 DataStorage/index.d.ts:13
 
-___
+---
 
 ### Failure
 
-• **Failure** = ``400``
+• **Failure** = `400`
 
 未知错误失败
 
@@ -44,23 +44,23 @@ ___
 
 DataStorage/index.d.ts:11
 
-___
+---
 
 ### KeyValueError
 
-• **KeyValueError** = ``1010``
+• **KeyValueError** = `1010`
 
-key或者Value格式错误
+key 或者 Value 格式错误
 
 #### Defined in
 
 DataStorage/index.d.ts:21
 
-___
+---
 
 ### OnlyServerCall
 
-• **OnlyServerCall** = ``3``
+• **OnlyServerCall** = `3`
 
 非法调用 只可服务器端调用
 
@@ -68,11 +68,11 @@ ___
 
 DataStorage/index.d.ts:15
 
-___
+---
 
-### RequestInteralTooClose
+### RequestIntervalTooClose
 
-• **RequestInteralTooClose** = ``423``
+• **RequestIntervalTooClose** = `423`
 
 请求间隔错误
 
@@ -80,11 +80,11 @@ ___
 
 DataStorage/index.d.ts:17
 
-___
+---
 
 ### RequestTooFrequent
 
-• **RequestTooFrequent** = ``424``
+• **RequestTooFrequent** = `424`
 
 请求频率过高
 
@@ -92,11 +92,11 @@ ___
 
 DataStorage/index.d.ts:19
 
-___
+---
 
-### Sucess
+### Success
 
-• **Sucess** = ``200``
+• **Success** = `200`
 
 操作成功
 

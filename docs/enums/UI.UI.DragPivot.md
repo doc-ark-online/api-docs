@@ -27,118 +27,118 @@
 
 ### BottomCenter
 
-• **BottomCenter** = ``8``
+• **BottomCenter** = `8`
 
 中下
 
 #### Defined in
 
-UI/index.d.ts:3718
+UI/index.d.ts:3727
 
-___
+---
 
 ### BottomLeft
 
-• **BottomLeft** = ``7``
+• **BottomLeft** = `7`
 
 左下
 
 #### Defined in
 
-UI/index.d.ts:3716
+UI/index.d.ts:3725
 
-___
+---
 
 ### BottomRight
 
-• **BottomRight** = ``9``
+• **BottomRight** = `9`
 
 右下
 
 #### Defined in
 
-UI/index.d.ts:3720
+UI/index.d.ts:3729
 
-___
+---
 
 ### CenterCenter
 
-• **CenterCenter** = ``5``
+• **CenterCenter** = `5`
 
 中心点
 
 #### Defined in
 
-UI/index.d.ts:3712
+UI/index.d.ts:3721
 
-___
+---
 
 ### CenterLeft
 
-• **CenterLeft** = ``4``
+• **CenterLeft** = `4`
 
 左中
 
 #### Defined in
 
-UI/index.d.ts:3710
+UI/index.d.ts:3719
 
-___
+---
 
 ### CenterRight
 
-• **CenterRight** = ``6``
+• **CenterRight** = `6`
 
 右中
 
 #### Defined in
 
-UI/index.d.ts:3714
+UI/index.d.ts:3723
 
-___
+---
 
 ### MouseDown
 
-• **MouseDown** = ``0``
+• **MouseDown** = `0`
 
 按下点
 
 #### Defined in
 
-UI/index.d.ts:3702
+UI/index.d.ts:3711
 
-___
+---
 
 ### TopCenter
 
-• **TopCenter** = ``2``
+• **TopCenter** = `2`
 
 上中
 
 #### Defined in
 
-UI/index.d.ts:3706
+UI/index.d.ts:3715
 
-___
+---
 
 ### TopLeft
 
-• **TopLeft** = ``1``
+• **TopLeft** = `1`
 
 左上
 
 #### Defined in
 
-UI/index.d.ts:3704
+UI/index.d.ts:3713
 
-___
+---
 
 ### TopRight
 
-• **TopRight** = ``3``
+• **TopRight** = `3`
 
 右上
 
 #### Defined in
 
-UI/index.d.ts:3708
+UI/index.d.ts:3717

@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -43,7 +43,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:3906
+UI/index.d.ts:3915
 
 • **new UIConstraintAnchors**(`InConstraintHorizontal`, `InConstraintVertical`)
 
@@ -57,14 +57,14 @@ UI/index.d.ts:3906
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                     | Type                                                                 | Description        |
+| :----------------------- | :------------------------------------------------------------------- | :----------------- |
 | `InConstraintHorizontal` | [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) | usage:水平对齐规则 |
-| `InConstraintVertical` | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md) | usage:垂直对齐规则 |
+| `InConstraintVertical`   | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md)     | usage:垂直对齐规则 |
 
 #### Defined in
 
-UI/index.d.ts:3913
+UI/index.d.ts:3922
 
 ## Properties
 
@@ -78,9 +78,9 @@ UI/index.d.ts:3913
 
 #### Defined in
 
-UI/index.d.ts:3918
+UI/index.d.ts:3927
 
-___
+---
 
 ### constraintVertical
 
@@ -92,4 +92,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3920
+UI/index.d.ts:3929

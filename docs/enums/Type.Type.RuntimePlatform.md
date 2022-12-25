@@ -22,58 +22,58 @@
 
 ### Android
 
-• **Android** = ``3``
+• **Android** = `3`
 
 Mobile - Android
 
 #### Defined in
 
-Type/index.d.ts:800
+Type/index.d.ts:769
 
-___
+---
 
 ### Linux
 
-• **Linux** = ``1``
+• **Linux** = `1`
 
 PC - Linux
 
 #### Defined in
 
-Type/index.d.ts:796
+Type/index.d.ts:765
 
-___
+---
 
 ### MacOS
 
-• **MacOS** = ``2``
+• **MacOS** = `2`
 
 PC - MacOS
 
 #### Defined in
 
-Type/index.d.ts:798
+Type/index.d.ts:767
 
-___
+---
 
 ### Windows
 
-• **Windows** = ``0``
+• **Windows** = `0`
 
 PC - Windows
 
 #### Defined in
 
-Type/index.d.ts:794
+Type/index.d.ts:763
 
-___
+---
 
 ### iOS
 
-• **iOS** = ``4``
+• **iOS** = `4`
 
 Mobile - iOS
 
 #### Defined in
 
-Type/index.d.ts:802
+Type/index.d.ts:771

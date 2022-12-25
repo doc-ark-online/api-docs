@@ -20,34 +20,34 @@
 
 ### Client
 
-• **Client** = ``1``
+• **Client** = `1`
 
 客户端
 
 #### Defined in
 
-Type/index.d.ts:224
+Type/index.d.ts:249
 
-___
+---
 
 ### Server
 
-• **Server** = ``0``
+• **Server** = `0`
 
 服务端
 
 #### Defined in
 
-Type/index.d.ts:220
+Type/index.d.ts:245
 
-___
+---
 
 ### ServerAndClient
 
-• **ServerAndClient** = ``2``
+• **ServerAndClient** = `2`
 
 服务器创建，同步到客户端
 
 #### Defined in
 
-Type/index.d.ts:228
+Type/index.d.ts:253

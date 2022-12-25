@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-基础的边距，提供4个方向的数值修改
+基础的边距，提供 4 个方向的数值修改
 
 **`Network Status`**
 
@@ -45,13 +45,13 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
 | `In` | `number` | usage:初始化值 |
 
 #### Defined in
 
-UI/index.d.ts:3744
+UI/index.d.ts:3753
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
 
@@ -61,16 +61,16 @@ UI/index.d.ts:3744
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLeft` | `number` | usage:左值 |
-| `InTop` | `number` | usage:上值 |
-| `InRight` | `number` | usage:右值 |
-| `InBottom` | `number` | usage:下值 |
+| Name       | Type     | Description |
+| :--------- | :------- | :---------- |
+| `InLeft`   | `number` | usage:左值  |
+| `InTop`    | `number` | usage:上值  |
+| `InRight`  | `number` | usage:右值  |
+| `InBottom` | `number` | usage:下值  |
 
 #### Defined in
 
-UI/index.d.ts:3752
+UI/index.d.ts:3761
 
 ## Properties
 
@@ -84,9 +84,9 @@ UI/index.d.ts:3752
 
 #### Defined in
 
-UI/index.d.ts:3765
+UI/index.d.ts:3774
 
-___
+---
 
 ### left
 
@@ -98,9 +98,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3759
+UI/index.d.ts:3768
 
-___
+---
 
 ### right
 
@@ -112,9 +112,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3763
+UI/index.d.ts:3772
 
-___
+---
 
 ### top
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3761
+UI/index.d.ts:3770

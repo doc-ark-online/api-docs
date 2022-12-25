@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V2头部位接口
+人形对象 V2 头部位接口
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -33,13 +33,13 @@ usage:双端
 - [getBlushTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getblushtexture)
 - [getBrowColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getbrowcolor)
 - [getBrowTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getbrowtexture)
-- [getEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyehighlightcolor)
-- [getEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyehighlighttexture)
-- [getEyeLashColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyelashcolor)
-- [getEyeLashTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyelashtexture)
+- [getEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyehighlightcolor)
+- [getEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyehighlighttexture)
 - [getEyeShadowColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyeshadowcolor)
 - [getEyeShadowTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyeshadowtexture)
 - [getEyeTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyetexture)
+- [getEyelashColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyelashcolor)
+- [getEyelashTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#geteyelashtexture)
 - [getFacialTattooColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getfacialtattoocolor)
 - [getFacialTattooPositionX](Gameplay.Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositionx)
 - [getFacialTattooPositionY](Gameplay.Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositiony)
@@ -51,8 +51,8 @@ usage:双端
 - [getLeftEyeColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlefteyecolor)
 - [getLipstickColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlipstickcolor)
 - [getLipstickTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlipsticktexture)
-- [getLowerEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlowereyehighlightcolor)
-- [getLowerEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlowereyehighlighttexture)
+- [getLowerEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlowereyehighlightcolor)
+- [getLowerEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getlowereyehighlighttexture)
 - [getMesh](Gameplay.Gameplay.HumanoidV2HeadPart.md#getmesh)
 - [getPupilColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getpupilcolor)
 - [getPupilPositionX](Gameplay.Gameplay.HumanoidV2HeadPart.md#getpupilpositionx)
@@ -61,19 +61,19 @@ usage:双端
 - [getPupilScale](Gameplay.Gameplay.HumanoidV2HeadPart.md#getpupilscale)
 - [getPupilTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getpupiltexture)
 - [getRightEyeColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getrighteyecolor)
-- [getUpperEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getuppereyehighlightcolor)
-- [getUpperEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getuppereyehighlighttexture)
+- [getUpperEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#getuppereyehighlightcolor)
+- [getUpperEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#getuppereyehighlighttexture)
 - [setBlushColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setblushcolor)
 - [setBlushTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setblushtexture)
 - [setBrowColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setbrowcolor)
 - [setBrowTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setbrowtexture)
-- [setEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyehighlightcolor)
-- [setEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyehighlighttexture)
-- [setEyeLashColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyelashcolor)
-- [setEyeLashTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyelashtexture)
+- [setEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyehighlightcolor)
+- [setEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyehighlighttexture)
 - [setEyeShadowColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyeshadowcolor)
 - [setEyeShadowTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyeshadowtexture)
 - [setEyeTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyetexture)
+- [setEyelashColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyelashcolor)
+- [setEyelashTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#seteyelashtexture)
 - [setFacialTattooColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setfacialtattoocolor)
 - [setFacialTattooPositionX](Gameplay.Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositionx)
 - [setFacialTattooPositionY](Gameplay.Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositiony)
@@ -85,8 +85,8 @@ usage:双端
 - [setLeftEyeColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlefteyecolor)
 - [setLipstickColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlipstickcolor)
 - [setLipstickTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlipsticktexture)
-- [setLowerEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlowereyehighlightcolor)
-- [setLowerEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlowereyehighlighttexture)
+- [setLowerEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlowereyehighlightcolor)
+- [setLowerEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setlowereyehighlighttexture)
 - [setMesh](Gameplay.Gameplay.HumanoidV2HeadPart.md#setmesh)
 - [setPupilColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setpupilcolor)
 - [setPupilPositionX](Gameplay.Gameplay.HumanoidV2HeadPart.md#setpupilpositionx)
@@ -95,8 +95,8 @@ usage:双端
 - [setPupilScale](Gameplay.Gameplay.HumanoidV2HeadPart.md#setpupilscale)
 - [setPupilTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setpupiltexture)
 - [setRightEyeColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setrighteyecolor)
-- [setUpperEyeHighLightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setuppereyehighlightcolor)
-- [setUpperEyeHighLightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setuppereyehighlighttexture)
+- [setUpperEyeHighlightColor](Gameplay.Gameplay.HumanoidV2HeadPart.md#setuppereyehighlightcolor)
+- [setUpperEyeHighlightTexture](Gameplay.Gameplay.HumanoidV2HeadPart.md#setuppereyehighlighttexture)
 
 ## Constructors
 
@@ -120,10 +120,10 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `directLightRotator` | [`Rotation`](Type.Type.Rotation.md) | usage:平行光方向 |
-| `traceDistance` | `number` | usage:检测距离 default:默认检测距离 |
+| Name                 | Type                                | Description                         |
+| :------------------- | :---------------------------------- | :---------------------------------- |
+| `directLightRotator` | [`Rotation`](Type.Type.Rotation.md) | usage:平行光方向                    |
+| `traceDistance`      | `number`                            | usage:检测距离 default:默认检测距离 |
 
 #### Returns
 
@@ -135,9 +135,9 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5755
+Gameplay/index.d.ts:5888
 
-___
+---
 
 ### getBlushColor
 
@@ -163,9 +163,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6074
+Gameplay/index.d.ts:6207
 
-___
+---
 
 ### getBlushTexture
 
@@ -191,9 +191,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6059
+Gameplay/index.d.ts:6192
 
-___
+---
 
 ### getBrowColor
 
@@ -219,9 +219,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6240
+Gameplay/index.d.ts:6373
 
-___
+---
 
 ### getBrowTexture
 
@@ -247,13 +247,13 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6225
+Gameplay/index.d.ts:6358
 
-___
+---
 
-### getEyeHighLightColor
+### getEyeHighlightColor
 
-▸ **getEyeHighLightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
+▸ **getEyeHighlightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
 
 **`Description`**
 
@@ -271,17 +271,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5834
+Gameplay/index.d.ts:5967
 
-___
+---
 
-### getEyeHighLightTexture
+### getEyeHighlightTexture
 
-▸ **getEyeHighLightTexture**(): `string`
+▸ **getEyeHighlightTexture**(): `string`
 
 **`Description`**
 
@@ -300,69 +300,13 @@ guid
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5819
+Gameplay/index.d.ts:5952
 
-___
-
-### getEyeLashColor
-
-▸ **getEyeLashColor**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取睫毛颜色
-
-**`Effect`**
-
-客户端
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-颜色
-
-#### Implementation of
-
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeLashColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashcolor)
-
-#### Defined in
-
-Gameplay/index.d.ts:5864
-
-___
-
-### getEyeLashTexture
-
-▸ **getEyeLashTexture**(): `string`
-
-**`Description`**
-
-获取睫毛
-
-**`Effect`**
-
-客户端
-
-#### Returns
-
-`string`
-
-guid
-
-#### Implementation of
-
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyeLashTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashtexture)
-
-#### Defined in
-
-Gameplay/index.d.ts:5849
-
-___
+---
 
 ### getEyeShadowColor
 
@@ -388,9 +332,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6044
+Gameplay/index.d.ts:6177
 
-___
+---
 
 ### getEyeShadowTexture
 
@@ -416,9 +360,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6029
+Gameplay/index.d.ts:6162
 
-___
+---
 
 ### getEyeTexture
 
@@ -444,9 +388,65 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:5773
+Gameplay/index.d.ts:5906
 
-___
+---
+
+### getEyelashColor
+
+▸ **getEyelashColor**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取睫毛颜色
+
+**`Effect`**
+
+客户端
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+颜色
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyelashColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashcolor)
+
+#### Defined in
+
+Gameplay/index.d.ts:5997
+
+---
+
+### getEyelashTexture
+
+▸ **getEyelashTexture**(): `string`
+
+**`Description`**
+
+获取睫毛
+
+**`Effect`**
+
+客户端
+
+#### Returns
+
+`string`
+
+guid
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getEyelashTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashtexture)
+
+#### Defined in
+
+Gameplay/index.d.ts:5982
+
+---
 
 ### getFacialTattooColor
 
@@ -462,8 +462,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -478,9 +478,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6142
+Gameplay/index.d.ts:6275
 
-___
+---
 
 ### getFacialTattooPositionX
 
@@ -496,8 +496,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -512,9 +512,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6159
+Gameplay/index.d.ts:6292
 
-___
+---
 
 ### getFacialTattooPositionY
 
@@ -530,8 +530,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -546,9 +546,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6176
+Gameplay/index.d.ts:6309
 
-___
+---
 
 ### getFacialTattooRotation
 
@@ -564,8 +564,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -580,9 +580,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6193
+Gameplay/index.d.ts:6326
 
-___
+---
 
 ### getFacialTattooType
 
@@ -598,8 +598,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -614,9 +614,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6121
+Gameplay/index.d.ts:6254
 
-___
+---
 
 ### getFacialTattooZoom
 
@@ -632,8 +632,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `index` | `number` | usage:纹身索引 |
 
 #### Returns
@@ -648,9 +648,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6210
+Gameplay/index.d.ts:6343
 
-___
+---
 
 ### getHeadPatternColor
 
@@ -672,9 +672,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6255
+Gameplay/index.d.ts:6388
 
-___
+---
 
 ### getHeadPatternTexture
 
@@ -696,9 +696,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6270
+Gameplay/index.d.ts:6403
 
-___
+---
 
 ### getLeftEyeColor
 
@@ -724,9 +724,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5788
+Gameplay/index.d.ts:5921
 
-___
+---
 
 ### getLipstickColor
 
@@ -752,9 +752,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6104
+Gameplay/index.d.ts:6237
 
-___
+---
 
 ### getLipstickTexture
 
@@ -780,13 +780,13 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:6089
+Gameplay/index.d.ts:6222
 
-___
+---
 
-### getLowerEyeHighLightColor
+### getLowerEyeHighlightColor
 
-▸ **getLowerEyeHighLightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
+▸ **getLowerEyeHighlightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
 
 **`Description`**
 
@@ -804,17 +804,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getLowerEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getLowerEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5924
+Gameplay/index.d.ts:6057
 
-___
+---
 
-### getLowerEyeHighLightTexture
+### getLowerEyeHighlightTexture
 
-▸ **getLowerEyeHighLightTexture**(): `string`
+▸ **getLowerEyeHighlightTexture**(): `string`
 
 **`Description`**
 
@@ -828,17 +828,17 @@ ___
 
 `string`
 
-下高光guid
+下高光 guid
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getLowerEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getLowerEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5909
+Gameplay/index.d.ts:6042
 
-___
+---
 
 ### getMesh
 
@@ -856,7 +856,7 @@ ___
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Implementation of
 
@@ -864,9 +864,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5748
+Gameplay/index.d.ts:5881
 
-___
+---
 
 ### getPupilColor
 
@@ -892,9 +892,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5954
+Gameplay/index.d.ts:6087
 
-___
+---
 
 ### getPupilPositionX
 
@@ -920,9 +920,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5969
+Gameplay/index.d.ts:6102
 
-___
+---
 
 ### getPupilPositionY
 
@@ -948,9 +948,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5984
+Gameplay/index.d.ts:6117
 
-___
+---
 
 ### getPupilRotate
 
@@ -976,9 +976,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:6014
+Gameplay/index.d.ts:6147
 
-___
+---
 
 ### getPupilScale
 
@@ -1004,9 +1004,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5999
+Gameplay/index.d.ts:6132
 
-___
+---
 
 ### getPupilTexture
 
@@ -1032,9 +1032,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:5939
+Gameplay/index.d.ts:6072
 
-___
+---
 
 ### getRightEyeColor
 
@@ -1060,13 +1060,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5803
+Gameplay/index.d.ts:5936
 
-___
+---
 
-### getUpperEyeHighLightColor
+### getUpperEyeHighlightColor
 
-▸ **getUpperEyeHighLightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
+▸ **getUpperEyeHighlightColor**(): [`LinearColor`](Type.Type.LinearColor.md)
 
 **`Description`**
 
@@ -1084,17 +1084,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getUpperEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getUpperEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5894
+Gameplay/index.d.ts:6027
 
-___
+---
 
-### getUpperEyeHighLightTexture
+### getUpperEyeHighlightTexture
 
-▸ **getUpperEyeHighLightTexture**(): `string`
+▸ **getUpperEyeHighlightTexture**(): `string`
 
 **`Description`**
 
@@ -1112,13 +1112,13 @@ guid
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getUpperEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[getUpperEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5879
+Gameplay/index.d.ts:6012
 
-___
+---
 
 ### setBlushColor
 
@@ -1135,10 +1135,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1150,9 +1150,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6068
+Gameplay/index.d.ts:6201
 
-___
+---
 
 ### setBlushTexture
 
@@ -1169,9 +1169,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1184,9 +1184,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6053
+Gameplay/index.d.ts:6186
 
-___
+---
 
 ### setBrowColor
 
@@ -1203,10 +1203,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1218,9 +1218,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6234
+Gameplay/index.d.ts:6367
 
-___
+---
 
 ### setBrowTexture
 
@@ -1237,9 +1237,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1252,13 +1252,13 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6219
+Gameplay/index.d.ts:6352
 
-___
+---
 
-### setEyeHighLightColor
+### setEyeHighlightColor
 
-▸ **setEyeHighLightColor**(`color`, `sync`): `void`
+▸ **setEyeHighlightColor**(`color`, `sync`): `void`
 
 **`Description`**
 
@@ -1271,10 +1271,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1282,17 +1282,17 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5828
+Gameplay/index.d.ts:5961
 
-___
+---
 
-### setEyeHighLightTexture
+### setEyeHighlightTexture
 
-▸ **setEyeHighLightTexture**(`guid`, `sync`): `void`
+▸ **setEyeHighlightTexture**(`guid`, `sync`): `void`
 
 **`Description`**
 
@@ -1305,9 +1305,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1316,81 +1316,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5812
+Gameplay/index.d.ts:5945
 
-___
-
-### setEyeLashColor
-
-▸ **setEyeLashColor**(`color`, `sync`): `void`
-
-**`Description`**
-
-设置睫毛颜色
-
-**`Effect`**
-
-sync = false:客户端;
-sync = true:双端
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
-
-#### Returns
-
-`void`
-
-#### Implementation of
-
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeLashColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashcolor)
-
-#### Defined in
-
-Gameplay/index.d.ts:5858
-
-___
-
-### setEyeLashTexture
-
-▸ **setEyeLashTexture**(`guid`, `sync`): `void`
-
-**`Description`**
-
-设置睫毛
-
-**`Effect`**
-
-sync = false:客户端;
-sync = true:双端
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
-
-#### Returns
-
-`void`
-
-#### Implementation of
-
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyeLashTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashtexture)
-
-#### Defined in
-
-Gameplay/index.d.ts:5843
-
-___
+---
 
 ### setEyeShadowColor
 
@@ -1407,10 +1339,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1422,9 +1354,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6038
+Gameplay/index.d.ts:6171
 
-___
+---
 
 ### setEyeShadowTexture
 
@@ -1441,9 +1373,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1456,9 +1388,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6023
+Gameplay/index.d.ts:6156
 
-___
+---
 
 ### setEyeTexture
 
@@ -1475,9 +1407,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1490,9 +1422,77 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5767
+Gameplay/index.d.ts:5900
 
-___
+---
+
+### setEyelashColor
+
+▸ **setEyelashColor**(`color`, `sync`): `void`
+
+**`Description`**
+
+设置睫毛颜色
+
+**`Effect`**
+
+sync = false:客户端;
+sync = true:双端
+
+#### Parameters
+
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyelashColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashcolor)
+
+#### Defined in
+
+Gameplay/index.d.ts:5991
+
+---
+
+### setEyelashTexture
+
+▸ **setEyelashTexture**(`guid`, `sync`): `void`
+
+**`Description`**
+
+设置睫毛
+
+**`Effect`**
+
+sync = false:客户端;
+sync = true:双端
+
+#### Parameters
+
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
+| `sync` | `boolean` | usage:true 同步; false 不同步 |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setEyelashTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashtexture)
+
+#### Defined in
+
+Gameplay/index.d.ts:5976
+
+---
 
 ### setFacialTattooColor
 
@@ -1509,11 +1509,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `index` | `number`                                  | usage:纹身索引                |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1525,9 +1525,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6131
+Gameplay/index.d.ts:6264
 
-___
+---
 
 ### setFacialTattooPositionX
 
@@ -1544,11 +1544,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身索引                |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1560,9 +1560,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6152
+Gameplay/index.d.ts:6285
 
-___
+---
 
 ### setFacialTattooPositionY
 
@@ -1579,11 +1579,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身索引                |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1595,9 +1595,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6169
+Gameplay/index.d.ts:6302
 
-___
+---
 
 ### setFacialTattooRotation
 
@@ -1614,11 +1614,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身索引                |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1630,9 +1630,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6186
+Gameplay/index.d.ts:6319
 
-___
+---
 
 ### setFacialTattooType
 
@@ -1649,11 +1649,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `guid` | `string` | usage:贴图Guid |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身索引                |
+| `guid`  | `string`  | usage:贴图 Guid               |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1665,9 +1665,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6114
+Gameplay/index.d.ts:6247
 
-___
+---
 
 ### setFacialTattooZoom
 
@@ -1684,11 +1684,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身索引 |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身索引                |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1700,9 +1700,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6203
+Gameplay/index.d.ts:6336
 
-___
+---
 
 ### setHeadPatternColor
 
@@ -1719,10 +1719,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1730,9 +1730,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6249
+Gameplay/index.d.ts:6382
 
-___
+---
 
 ### setHeadPatternTexture
 
@@ -1749,10 +1749,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `textureGuid` | `string` | usage:贴图GUID |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name          | Type      | Description                   |
+| :------------ | :-------- | :---------------------------- |
+| `textureGuid` | `string`  | usage:贴图 GUID               |
+| `sync`        | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1760,9 +1760,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6264
+Gameplay/index.d.ts:6397
 
-___
+---
 
 ### setLeftEyeColor
 
@@ -1779,10 +1779,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1794,9 +1794,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5782
+Gameplay/index.d.ts:5915
 
-___
+---
 
 ### setLipstickColor
 
@@ -1813,10 +1813,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1828,9 +1828,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6098
+Gameplay/index.d.ts:6231
 
-___
+---
 
 ### setLipstickTexture
 
@@ -1847,9 +1847,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1862,13 +1862,13 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6083
+Gameplay/index.d.ts:6216
 
-___
+---
 
-### setLowerEyeHighLightColor
+### setLowerEyeHighlightColor
 
-▸ **setLowerEyeHighLightColor**(`color`, `sync`): `void`
+▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void`
 
 **`Description`**
 
@@ -1881,10 +1881,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:值                      |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -1892,17 +1892,17 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setLowerEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setLowerEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5918
+Gameplay/index.d.ts:6051
 
-___
+---
 
-### setLowerEyeHighLightTexture
+### setLowerEyeHighlightTexture
 
-▸ **setLowerEyeHighLightTexture**(`guid`, `sync`): `void`
+▸ **setLowerEyeHighlightTexture**(`guid`, `sync`): `void`
 
 **`Description`**
 
@@ -1915,9 +1915,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 值 |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage: 值                     |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1926,13 +1926,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setLowerEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setLowerEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5903
+Gameplay/index.d.ts:6036
 
-___
+---
 
 ### setMesh
 
@@ -1944,7 +1944,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型 Guid 没有预加载，则 v2 本地设置时异步的
 
 **`Effect`**
 
@@ -1953,9 +1953,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -1968,9 +1968,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5742
+Gameplay/index.d.ts:5875
 
-___
+---
 
 ### setPupilColor
 
@@ -1987,10 +1987,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2002,9 +2002,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5948
+Gameplay/index.d.ts:6081
 
-___
+---
 
 ### setPupilPositionX
 
@@ -2021,10 +2021,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2036,9 +2036,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5963
+Gameplay/index.d.ts:6096
 
-___
+---
 
 ### setPupilPositionY
 
@@ -2055,10 +2055,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2070,9 +2070,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5978
+Gameplay/index.d.ts:6111
 
-___
+---
 
 ### setPupilRotate
 
@@ -2089,10 +2089,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2104,9 +2104,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6008
+Gameplay/index.d.ts:6141
 
-___
+---
 
 ### setPupilScale
 
@@ -2123,10 +2123,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2138,9 +2138,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5993
+Gameplay/index.d.ts:6126
 
-___
+---
 
 ### setPupilTexture
 
@@ -2157,9 +2157,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -2172,9 +2172,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5933
+Gameplay/index.d.ts:6066
 
-___
+---
 
 ### setRightEyeColor
 
@@ -2191,10 +2191,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2206,13 +2206,13 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5797
+Gameplay/index.d.ts:5930
 
-___
+---
 
-### setUpperEyeHighLightColor
+### setUpperEyeHighlightColor
 
-▸ **setUpperEyeHighLightColor**(`color`, `sync`): `void`
+▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void`
 
 **`Description`**
 
@@ -2225,10 +2225,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:值                      |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2236,17 +2236,17 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setUpperEyeHighLightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlightcolor)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setUpperEyeHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlightcolor)
 
 #### Defined in
 
-Gameplay/index.d.ts:5888
+Gameplay/index.d.ts:6021
 
-___
+---
 
-### setUpperEyeHighLightTexture
+### setUpperEyeHighlightTexture
 
-▸ **setUpperEyeHighLightTexture**(`guid`, `sync`): `void`
+▸ **setUpperEyeHighlightTexture**(`guid`, `sync`): `void`
 
 **`Description`**
 
@@ -2259,9 +2259,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:guid值 |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:guid 值                 |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -2270,8 +2270,8 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setUpperEyeHighLightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlighttexture)
+[IHumanoidV2HeadPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md).[setUpperEyeHighlightTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlighttexture)
 
 #### Defined in
 
-Gameplay/index.d.ts:5873
+Gameplay/index.d.ts:6006

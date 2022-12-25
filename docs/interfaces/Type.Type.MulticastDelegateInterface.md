@@ -6,7 +6,7 @@
 
 **`Author`**
 
-孙向坤
+xiangkun.sun
 
 **`Description`**
 
@@ -18,9 +18,9 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type                                         |
+| :--- | :------------------------------------------- |
+| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implemented by
 
@@ -50,9 +50,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` | usage: 绑定的函数 default |
+| Name   | Type | Description               |
+| :----- | :--- | :------------------------ |
+| `func` | `T`  | usage: 绑定的函数 default |
 
 #### Returns
 
@@ -60,9 +60,9 @@
 
 #### Defined in
 
-Type/index.d.ts:65
+Type/index.d.ts:90
 
-___
+---
 
 ### broadcast
 
@@ -78,8 +78,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type               | Description |
+| :------- | :----------------- | :---------- |
 | `...arg` | `Parameters`<`T`\> | usage: 参数 |
 
 #### Returns
@@ -88,9 +88,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:77
+Type/index.d.ts:102
 
-___
+---
 
 ### remove
 
@@ -106,9 +106,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` | usage: 删除绑定的函数 default |
+| Name   | Type | Description                   |
+| :----- | :--- | :---------------------------- |
+| `func` | `T`  | usage: 删除绑定的函数 default |
 
 #### Returns
 
@@ -116,4 +116,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:71
+Type/index.d.ts:96

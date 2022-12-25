@@ -21,7 +21,7 @@
 
 ### Close
 
-• **Close** = ``1``
+• **Close** = `1`
 
 用户关闭
 
@@ -29,11 +29,11 @@
 
 Service/index.d.ts:181
 
-___
+---
 
 ### Fail
 
-• **Fail** = ``-1``
+• **Fail** = `-1`
 
 展示失败
 
@@ -41,11 +41,11 @@ ___
 
 Service/index.d.ts:177
 
-___
+---
 
 ### Reward
 
-• **Reward** = ``4``
+• **Reward** = `4`
 
 获得奖励
 
@@ -53,11 +53,11 @@ ___
 
 Service/index.d.ts:185
 
-___
+---
 
 ### Success
 
-• **Success** = ``0``
+• **Success** = `0`
 
 开始展示
 

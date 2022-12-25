@@ -93,13 +93,13 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                  | Description                 |
+| :------ | :------------------------------------ | :-------------------------- |
 | `other` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:给定的 Matrix4x4 对象 |
 
 #### Defined in
 
-Type/index.d.ts:1753
+Type/index.d.ts:1720
 
 • **new Matrix4x4**(`m00?`, `m01?`, `m02?`, `m03?`, `m10?`, `m11?`, `m12?`, `m13?`, `m20?`, `m21?`, `m22?`, `m23?`, `m30?`, `m31?`, `m32?`, `m33?`)
 
@@ -109,8 +109,8 @@ Type/index.d.ts:1753
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                          |
+| :----- | :------- | :----------------------------------- |
 | `m00?` | `number` | usage:第 0 列第 0 行的元素 default:1 |
 | `m01?` | `number` | usage:第 0 列第 1 行的元素 default:0 |
 | `m02?` | `number` | usage:第 0 列第 2 行的元素 default:0 |
@@ -130,7 +130,7 @@ Type/index.d.ts:1753
 
 #### Defined in
 
-Type/index.d.ts:1773
+Type/index.d.ts:1740
 
 ## Properties
 
@@ -144,9 +144,9 @@ Type/index.d.ts:1773
 
 #### Defined in
 
-Type/index.d.ts:1613
+Type/index.d.ts:1580
 
-___
+---
 
 ### m01
 
@@ -158,9 +158,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1617
+Type/index.d.ts:1584
 
-___
+---
 
 ### m02
 
@@ -172,9 +172,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1621
+Type/index.d.ts:1588
 
-___
+---
 
 ### m03
 
@@ -186,9 +186,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1625
+Type/index.d.ts:1592
 
-___
+---
 
 ### m10
 
@@ -200,9 +200,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1629
+Type/index.d.ts:1596
 
-___
+---
 
 ### m11
 
@@ -214,9 +214,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1633
+Type/index.d.ts:1600
 
-___
+---
 
 ### m12
 
@@ -228,9 +228,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1637
+Type/index.d.ts:1604
 
-___
+---
 
 ### m13
 
@@ -242,9 +242,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1641
+Type/index.d.ts:1608
 
-___
+---
 
 ### m20
 
@@ -256,9 +256,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1645
+Type/index.d.ts:1612
 
-___
+---
 
 ### m21
 
@@ -270,9 +270,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1649
+Type/index.d.ts:1616
 
-___
+---
 
 ### m22
 
@@ -284,9 +284,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1653
+Type/index.d.ts:1620
 
-___
+---
 
 ### m23
 
@@ -298,9 +298,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1657
+Type/index.d.ts:1624
 
-___
+---
 
 ### m30
 
@@ -312,9 +312,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1661
+Type/index.d.ts:1628
 
-___
+---
 
 ### m31
 
@@ -326,9 +326,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1665
+Type/index.d.ts:1632
 
-___
+---
 
 ### m32
 
@@ -340,9 +340,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1669
+Type/index.d.ts:1636
 
-___
+---
 
 ### m33
 
@@ -354,7 +354,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1673
+Type/index.d.ts:1640
 
 ## Accessors
 
@@ -372,7 +372,7 @@ Type/index.d.ts:1673
 
 #### Defined in
 
-Type/index.d.ts:1609
+Type/index.d.ts:1576
 
 ## Methods
 
@@ -390,8 +390,8 @@ Type/index.d.ts:1609
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                  | Description      |
+| :---- | :------------------------------------ | :--------------- |
 | `mat` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:相加的矩阵 |
 
 #### Returns
@@ -402,9 +402,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1896
+Type/index.d.ts:1863
 
-___
+---
 
 ### clone
 
@@ -426,9 +426,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1796
+Type/index.d.ts:1763
 
-___
+---
 
 ### determinant
 
@@ -450,9 +450,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1889
+Type/index.d.ts:1856
 
-___
+---
 
 ### equals
 
@@ -468,10 +468,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:比对的矩阵 |
-| `epsilon?` | `number` | usage:误差值 default:Util.MathUtil.EPSILON |
+| Name       | Type                                  | Description                                |
+| :--------- | :------------------------------------ | :----------------------------------------- |
+| `other`    | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:比对的矩阵                           |
+| `epsilon?` | `number`                              | usage:误差值 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
@@ -481,9 +481,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1850
+Type/index.d.ts:1817
 
-___
+---
 
 ### fromQuaternion
 
@@ -499,9 +499,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `q` | [`Quaternion`](Type.Type.Quaternion.md) | usage:旋转数据的四元数 |
+| Name | Type                                    | Description            |
+| :--- | :-------------------------------------- | :--------------------- |
+| `q`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:旋转数据的四元数 |
 
 #### Returns
 
@@ -511,9 +511,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1980
+Type/index.d.ts:1947
 
-___
+---
 
 ### fromRTS
 
@@ -529,11 +529,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `q` | [`Quaternion`](Type.Type.Quaternion.md) | usage:旋转数据的四元数 |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage:位移数据的向量 |
-| `s` | [`Vector`](Type.Type.Vector.md) | usage:缩放数据的向量 |
+| Name | Type                                    | Description            |
+| :--- | :-------------------------------------- | :--------------------- |
+| `q`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:旋转数据的四元数 |
+| `v`  | [`Vector`](Type.Type.Vector.md)         | usage:位移数据的向量   |
+| `s`  | [`Vector`](Type.Type.Vector.md)         | usage:缩放数据的向量   |
 
 #### Returns
 
@@ -543,9 +543,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1973
+Type/index.d.ts:1940
 
-___
+---
 
 ### getRotation
 
@@ -565,21 +565,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                    | Description                                        |
+| :------- | :-------------------------------------- | :------------------------------------------------- |
 | `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收旋转数据的 Quaternion 对象, default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
-记录旋转数据的Quaternion 对象
+记录旋转数据的 Quaternion 对象
 
 #### Defined in
 
-Type/index.d.ts:1964
+Type/index.d.ts:1931
 
-___
+---
 
 ### getScale
 
@@ -599,8 +599,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收缩放数据的 Vector 对象 default:null |
 
 #### Returns
@@ -611,9 +611,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1956
+Type/index.d.ts:1923
 
-___
+---
 
 ### getTranslation
 
@@ -633,8 +633,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                                   |
+| :------- | :------------------------------ | :-------------------------------------------- |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收位移数据的 Vector 对象 default:null |
 
 #### Returns
@@ -645,9 +645,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1948
+Type/index.d.ts:1915
 
-___
+---
 
 ### identity
 
@@ -667,9 +667,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1868
+Type/index.d.ts:1835
 
-___
+---
 
 ### invert
 
@@ -689,9 +689,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1883
+Type/index.d.ts:1850
 
-___
+---
 
 ### multiply
 
@@ -707,8 +707,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                  | Description      |
+| :---- | :------------------------------------ | :--------------- |
 | `mat` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:相乘的矩阵 |
 
 #### Returns
@@ -719,7 +719,7 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1910
+Type/index.d.ts:1877
 
 ▸ **multiply**(`scalar`): [`Matrix4x4`](Type.Type.Matrix4x4.md)
 
@@ -733,8 +733,8 @@ Type/index.d.ts:1910
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description              |
+| :------- | :------- | :----------------------- |
 | `scalar` | `number` | usage:对矩阵整体缩放的数 |
 
 #### Returns
@@ -745,9 +745,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1917
+Type/index.d.ts:1884
 
-___
+---
 
 ### rotate
 
@@ -763,11 +763,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `axis` | [`Vector`](Type.Type.Vector.md) | usage:绕的旋转轴 |
-| `rad` | `number` | usage:旋转的弧度 |
-| `epsilon?` | `number` | usage:最小误差数 default:MathDefine.EPSILON |
+| Name       | Type                            | Description                                 |
+| :--------- | :------------------------------ | :------------------------------------------ |
+| `axis`     | [`Vector`](Type.Type.Vector.md) | usage:绕的旋转轴                            |
+| `rad`      | `number`                        | usage:旋转的弧度                            |
+| `epsilon?` | `number`                        | usage:最小误差数 default:MathDefine.EPSILON |
 
 #### Returns
 
@@ -777,9 +777,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1940
+Type/index.d.ts:1907
 
-___
+---
 
 ### scale
 
@@ -795,8 +795,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                            | Description          |
+| :---- | :------------------------------ | :------------------- |
 | `vec` | [`Vector`](Type.Type.Vector.md) | usage:缩放矩阵的向量 |
 
 #### Returns
@@ -807,9 +807,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1931
+Type/index.d.ts:1898
 
-___
+---
 
 ### set
 
@@ -825,8 +825,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                  | Description    |
+| :------ | :------------------------------------ | :------------- |
 | `other` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:矩阵数据 |
 
 #### Returns
@@ -837,7 +837,7 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1803
+Type/index.d.ts:1770
 
 ▸ **set**(`m00?`, `m01?`, `m02?`, `m03?`, `m10?`, `m11?`, `m12?`, `m13?`, `m20?`, `m21?`, `m22?`, `m23?`, `m30?`, `m31?`, `m32?`, `m33?`): [`Matrix4x4`](Type.Type.Matrix4x4.md)
 
@@ -851,8 +851,8 @@ Type/index.d.ts:1803
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description                          |
+| :----- | :------- | :----------------------------------- |
 | `m00?` | `number` | usage:第 0 列第 0 行的元素 default:1 |
 | `m01?` | `number` | usage:第 0 列第 1 行的元素 default:0 |
 | `m02?` | `number` | usage:第 0 列第 2 行的元素 default:0 |
@@ -878,9 +878,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1825
+Type/index.d.ts:1792
 
-___
+---
 
 ### strictEquals
 
@@ -896,8 +896,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                  | Description      |
+| :------ | :------------------------------------ | :--------------- |
 | `other` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:比对的矩阵 |
 
 #### Returns
@@ -908,9 +908,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1857
+Type/index.d.ts:1824
 
-___
+---
 
 ### subtract
 
@@ -926,8 +926,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                                  | Description      |
+| :---- | :------------------------------------ | :--------------- |
 | `mat` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:相减的矩阵 |
 
 #### Returns
@@ -938,9 +938,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1903
+Type/index.d.ts:1870
 
-___
+---
 
 ### toString
 
@@ -962,9 +962,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1863
+Type/index.d.ts:1830
 
-___
+---
 
 ### translate
 
@@ -980,8 +980,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type                            | Description      |
+| :---- | :------------------------------ | :--------------- |
 | `vec` | [`Vector`](Type.Type.Vector.md) | usage:转换的向量 |
 
 #### Returns
@@ -992,9 +992,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:1924
+Type/index.d.ts:1891
 
-___
+---
 
 ### transpose
 
@@ -1014,9 +1014,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1878
+Type/index.d.ts:1845
 
-___
+---
 
 ### zero
 
@@ -1024,7 +1024,7 @@ ___
 
 **`Description`**
 
-将当前矩阵设为 0矩阵。
+将当前矩阵设为 0 矩阵。
 
 **`Effect`**
 
@@ -1036,9 +1036,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1873
+Type/index.d.ts:1840
 
-___
+---
 
 ### clone
 
@@ -1054,9 +1054,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被克隆的四维矩阵 |
+| Name | Type                                  | Description            |
+| :--- | :------------------------------------ | :--------------------- |
+| `a`  | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被克隆的四维矩阵 |
 
 #### Returns
 
@@ -1066,9 +1066,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1680
+Type/index.d.ts:1647
 
-___
+---
 
 ### invert
 
@@ -1088,9 +1088,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:原矩阵 |
+| Name     | Type                                  | Description                                  |
+| :------- | :------------------------------------ | :------------------------------------------- |
+| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:原矩阵                                 |
 | `outer?` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:接收结果的 Matrix4x4 对象 default:null |
 
 #### Returns
@@ -1101,9 +1101,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1748
+Type/index.d.ts:1715
 
-___
+---
 
 ### transformAffine
 
@@ -1123,11 +1123,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `m` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:四维矩阵 |
-| `a` | [`Vector`](Type.Type.Vector.md) | usage:三维向量 |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null |
+| Name     | Type                                  | Description                               |
+| :------- | :------------------------------------ | :---------------------------------------- |
+| `m`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:四维矩阵                            |
+| `a`      | [`Vector`](Type.Type.Vector.md)       | usage:三维向量                            |
+| `outer?` | [`Vector`](Type.Type.Vector.md)       | usage:接收结果的 Vector 对象 default:null |
 
 #### Returns
 
@@ -1137,9 +1137,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1710
+Type/index.d.ts:1677
 
-___
+---
 
 ### transformAffine4
 
@@ -1159,11 +1159,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `m` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:四维矩阵 |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:四维向量 |
-| `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `m`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:四维矩阵                             |
+| `a`      | [`Vector4`](Type.Type.Vector4.md)     | usage:四维向量                             |
+| `outer?` | [`Vector4`](Type.Type.Vector4.md)     | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
 
@@ -1173,9 +1173,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1730
+Type/index.d.ts:1697
 
-___
+---
 
 ### transformVector
 
@@ -1195,11 +1195,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `m` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵 |
-| `a` | [`Vector`](Type.Type.Vector.md) | usage:乘以矩阵的三维向量 |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null |
+| Name     | Type                                  | Description                               |
+| :------- | :------------------------------------ | :---------------------------------------- |
+| `m`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵                      |
+| `a`      | [`Vector`](Type.Type.Vector.md)       | usage:乘以矩阵的三维向量                  |
+| `outer?` | [`Vector`](Type.Type.Vector.md)       | usage:接收结果的 Vector 对象 default:null |
 
 #### Returns
 
@@ -1209,9 +1209,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1700
+Type/index.d.ts:1667
 
-___
+---
 
 ### transformVector2
 
@@ -1231,11 +1231,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `m` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵 |
-| `a` | [`Vector2`](Type.Type.Vector2.md) | usage:乘以矩阵的二维向量 |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `m`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵                       |
+| `a`      | [`Vector2`](Type.Type.Vector2.md)     | usage:乘以矩阵的二维向量                   |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md)     | usage:接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
@@ -1245,9 +1245,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1690
+Type/index.d.ts:1657
 
-___
+---
 
 ### transformVector4
 
@@ -1267,11 +1267,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `m` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵 |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:乘以矩阵的四维向量 |
-| `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `m`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被乘的四维矩阵                       |
+| `a`      | [`Vector4`](Type.Type.Vector4.md)     | usage:乘以矩阵的四维向量                   |
+| `outer?` | [`Vector4`](Type.Type.Vector4.md)     | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
 
@@ -1281,9 +1281,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1720
+Type/index.d.ts:1687
 
-___
+---
 
 ### transpose
 
@@ -1303,9 +1303,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被转置的原矩阵 |
+| Name     | Type                                  | Description                                  |
+| :------- | :------------------------------------ | :------------------------------------------- |
+| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:被转置的原矩阵                         |
 | `outer?` | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:接收结果的 Matrix4x4 对象 default:null |
 
 #### Returns
@@ -1316,4 +1316,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:1739
+Type/index.d.ts:1706

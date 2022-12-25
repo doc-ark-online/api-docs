@@ -24,21 +24,20 @@ jun.zhang
 
 ### Properties
 
-- [delegateEndLoadOnClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#delegateendloadonclient)
-- [delegateEndLoadOnServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#delegateendloadonserver)
-- [delegateStartLoadOnClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#delegatestartloadonclient)
-- [delegateStartLoadOnServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#delegatestartloadonserver)
+- [onEndLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadclient)
+- [onEndLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadserver)
+- [onStartLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadclient)
+- [onStartLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadserver)
 
 ### Accessors
 
-- [isEnabledLoadAfterFire](Gameplay.Gameplay.HotWeaponLoadComponent.md#isenabledloadafterfire)
+- [animationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#animationguid)
+- [loadAfterFireEnable](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadafterfireenable)
 - [loadDuration](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadduration)
 
 ### Methods
 
-- [getAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#getanimationguid)
 - [hadAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#hadanimationguid)
-- [setAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#setanimationguid)
 
 ## Constructors
 
@@ -48,9 +47,9 @@ jun.zhang
 
 ## Properties
 
-### delegateEndLoadOnClient
+### onEndLoadClient
 
-• **delegateEndLoadOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -58,13 +57,13 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:11986
+Gameplay/index.d.ts:11672
 
-___
+---
 
-### delegateEndLoadOnServer
+### onEndLoadServer
 
-• **delegateEndLoadOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -72,13 +71,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11982
+Gameplay/index.d.ts:11668
 
-___
+---
 
-### delegateStartLoadOnClient
+### onStartLoadClient
 
-• **delegateStartLoadOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -86,13 +85,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11978
+Gameplay/index.d.ts:11664
 
-___
+---
 
-### delegateStartLoadOnServer
+### onStartLoadServer
 
-• **delegateStartLoadOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -100,13 +99,61 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11974
+Gameplay/index.d.ts:11660
 
 ## Accessors
 
-### isEnabledLoadAfterFire
+### animationGuid
 
-• `get` **isEnabledLoadAfterFire**(): `boolean`
+• `get` **animationGuid**(): `string`
+
+**`Description`**
+
+获取绑定的动画 GUID
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`string`
+
+绑定的动画 GUID
+
+#### Defined in
+
+Gameplay/index.d.ts:11684
+
+• `set` **animationGuid**(`guid`): `void`
+
+**`Description`**
+
+设置动画 GUID
+
+**`Effect`**
+
+客户端调用自动广播
+
+#### Parameters
+
+| Name   | Type     | Description                      |
+| :----- | :------- | :------------------------------- |
+| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:11678
+
+---
+
+### loadAfterFireEnable
+
+• `get` **loadAfterFireEnable**(): `boolean`
 
 **`Description`**
 
@@ -124,9 +171,9 @@ Gameplay/index.d.ts:11974
 
 #### Defined in
 
-Gameplay/index.d.ts:12017
+Gameplay/index.d.ts:11703
 
-• `set` **isEnabledLoadAfterFire**(`enable`): `void`
+• `set` **loadAfterFireEnable**(`enable`): `void`
 
 **`Description`**
 
@@ -142,8 +189,8 @@ Gameplay/index.d.ts:12017
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type      | Description                         |
+| :------- | :-------- | :---------------------------------- |
 | `enable` | `boolean` | usage: 是否开启开火后自动上膛的功能 |
 
 #### Returns
@@ -152,9 +199,9 @@ Gameplay/index.d.ts:12017
 
 #### Defined in
 
-Gameplay/index.d.ts:12011
+Gameplay/index.d.ts:11697
 
-___
+---
 
 ### loadDuration
 
@@ -176,7 +223,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:12029
+Gameplay/index.d.ts:11715
 
 • `set` **loadDuration**(`time`): `void`
 
@@ -190,8 +237,8 @@ Gameplay/index.d.ts:12029
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description     |
+| :----- | :------- | :-------------- |
 | `time` | `number` | usage: 上膛时间 |
 
 #### Returns
@@ -200,33 +247,9 @@ Gameplay/index.d.ts:12029
 
 #### Defined in
 
-Gameplay/index.d.ts:12023
+Gameplay/index.d.ts:11709
 
 ## Methods
-
-### getAnimationGuid
-
-▸ **getAnimationGuid**(): `string`
-
-**`Description`**
-
-获取绑定的动画GUID
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`string`
-
-绑定的动画GUID
-
-#### Defined in
-
-Gameplay/index.d.ts:11998
-
-___
 
 ### hadAnimationGuid
 
@@ -234,7 +257,7 @@ ___
 
 **`Description`**
 
-是否有动画GUID
+是否有动画 GUID
 
 **`Effect`**
 
@@ -244,36 +267,8 @@ ___
 
 `boolean`
 
-是否有动画GUID
+是否有动画 GUID
 
 #### Defined in
 
-Gameplay/index.d.ts:12004
-
-___
-
-### setAnimationGuid
-
-▸ **setAnimationGuid**(`guid`): `void`
-
-**`Description`**
-
-设置动画 GUID
-
-**`Effect`**
-
-客户端调用自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11992
+Gameplay/index.d.ts:11690

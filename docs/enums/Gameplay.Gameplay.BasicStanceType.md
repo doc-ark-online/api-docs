@@ -19,22 +19,22 @@
 
 ### Cartoon
 
-• **Cartoon** = ``"30274"``
+• **Cartoon** = `"30274"`
 
 二次元风格
 
 #### Defined in
 
-Gameplay/index.d.ts:1684
+Gameplay/index.d.ts:1832
 
-___
+---
 
 ### SakuraSchool1
 
-• **SakuraSchool1** = ``"Default"``
+• **SakuraSchool1** = `"Default"`
 
-樱校1
+樱校 1
 
 #### Defined in
 
-Gameplay/index.d.ts:1682
+Gameplay/index.d.ts:1830

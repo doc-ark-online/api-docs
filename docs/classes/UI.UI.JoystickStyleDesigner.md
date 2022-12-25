@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -44,15 +44,15 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NormalGuid` | `string` | usage:普通资源 |
-| `TouchGuid` | `string` | usage:按压资源 |
+| Name          | Type     | Description    |
+| :------------ | :------- | :------------- |
+| `NormalGuid`  | `string` | usage:普通资源 |
+| `TouchGuid`   | `string` | usage:按压资源 |
 | `DisableGuid` | `string` | usage:禁用资源 |
 
 #### Defined in
 
-UI/index.d.ts:3989
+UI/index.d.ts:3998
 
 ## Properties
 
@@ -66,9 +66,9 @@ UI/index.d.ts:3989
 
 #### Defined in
 
-UI/index.d.ts:3995
+UI/index.d.ts:4004
 
-___
+---
 
 ### normal
 
@@ -80,9 +80,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3991
+UI/index.d.ts:4000
 
-___
+---
 
 ### touch
 
@@ -94,4 +94,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3993
+UI/index.d.ts:4002

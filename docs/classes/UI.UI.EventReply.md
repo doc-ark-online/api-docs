@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -43,13 +43,13 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4218
+UI/index.d.ts:4227
 
 • `Private` **new EventReply**()
 
 **`Description`**
 
-UE的默认值构造
+UE 的默认值构造
 
 **`Effect`**
 
@@ -57,7 +57,7 @@ UE的默认值构造
 
 #### Defined in
 
-UI/index.d.ts:4223
+UI/index.d.ts:4232
 
 ## Accessors
 
@@ -79,9 +79,9 @@ UI/index.d.ts:4223
 
 #### Defined in
 
-UI/index.d.ts:4228
+UI/index.d.ts:4237
 
-___
+---
 
 ### unHandled
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4233
+UI/index.d.ts:4242

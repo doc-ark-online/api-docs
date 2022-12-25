@@ -19,22 +19,22 @@
 
 ### BottomToTop
 
-• **BottomToTop** = ``1``
+• **BottomToTop** = `1`
 
 从下到上排序
 
 #### Defined in
 
-UI/index.d.ts:3382
+UI/index.d.ts:3391
 
-___
+---
 
 ### TopToBottom
 
-• **TopToBottom** = ``0``
+• **TopToBottom** = `0`
 
 从上到下排序
 
 #### Defined in
 
-UI/index.d.ts:3380
+UI/index.d.ts:3389

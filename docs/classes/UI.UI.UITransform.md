@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-节点Transform
+节点 Transform
 
 **`Network Status`**
 
@@ -43,16 +43,16 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | usage:位置 Position.X |
-| `y` | `number` | usage: 位置 Position.Y |
-| `w` | `number` | usage:大小 Size.W 宽 |
-| `h` | `number` | usage:大小 Size.H 高 |
+| Name | Type     | Description            |
+| :--- | :------- | :--------------------- |
+| `x`  | `number` | usage:位置 Position.X  |
+| `y`  | `number` | usage: 位置 Position.Y |
+| `w`  | `number` | usage:大小 Size.W 宽   |
+| `h`  | `number` | usage:大小 Size.H 高   |
 
 #### Defined in
 
-UI/index.d.ts:3882
+UI/index.d.ts:3891
 
 • **new UITransform**(`xy`, `wh`)
 
@@ -66,14 +66,14 @@ UI/index.d.ts:3882
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `xy` | [`Vector2`](Type.Type.Vector2.md) | usage:位置 |
-| `wh` | [`Vector2`](Type.Type.Vector2.md) | usage:大小 |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `xy` | [`Vector2`](Type.Type.Vector2.md) | usage:位置  |
+| `wh` | [`Vector2`](Type.Type.Vector2.md) | usage:大小  |
 
 #### Defined in
 
-UI/index.d.ts:3889
+UI/index.d.ts:3898
 
 ## Properties
 
@@ -87,9 +87,9 @@ UI/index.d.ts:3889
 
 #### Defined in
 
-UI/index.d.ts:3891
+UI/index.d.ts:3900
 
-___
+---
 
 ### size
 
@@ -101,4 +101,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3893
+UI/index.d.ts:3902

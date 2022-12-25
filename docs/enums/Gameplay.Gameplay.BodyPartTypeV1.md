@@ -6,7 +6,7 @@
 
 **`Description`**
 
-V1角色部位
+V1 角色部位
 
 ## Table of contents
 
@@ -20,34 +20,34 @@ V1角色部位
 
 ### Face
 
-• **Face** = ``1``
+• **Face** = `1`
 
 面部
 
 #### Defined in
 
-Gameplay/index.d.ts:1592
+Gameplay/index.d.ts:1740
 
-___
+---
 
 ### Hair
 
-• **Hair** = ``0``
+• **Hair** = `0`
 
 头发
 
 #### Defined in
 
-Gameplay/index.d.ts:1590
+Gameplay/index.d.ts:1738
 
-___
+---
 
 ### Trunk
 
-• **Trunk** = ``2``
+• **Trunk** = `2`
 
 身体
 
 #### Defined in
 
-Gameplay/index.d.ts:1594
+Gameplay/index.d.ts:1742

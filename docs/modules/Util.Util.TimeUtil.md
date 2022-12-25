@@ -37,17 +37,31 @@ huipeng.jia & xiangkun.sun
 
 ### onEnterFrame
 
-• `Const` **onEnterFrame**: [`Action1`](../classes/Type.Type.FunctionType.Action1.md)<`number`\>
+• `Const` **onEnterFrame**: [`Action1`](../classes/Type.Type.Action1.md)<`number`\>
 
 **`Description`**
 
-进入帧事件时执行绑定函数(参数deltaTime)
+进入帧事件时执行绑定函数(参数 deltaTime)
+
+**`Precautions`**
+
+每次 update 时自动执行所有绑定的函数
+
+**`Example`**
+
+使用示例:绑定函数
+
+```
+onEnterFrame.add((dt : number) =>{
+     console.log("dt:" + dt);
+});
+```
 
 #### Defined in
 
-Util/index.d.ts:517
+Util/index.d.ts:737
 
-___
+---
 
 ### traceFrameTime
 
@@ -59,7 +73,7 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:521
+Util/index.d.ts:741
 
 ## Functions
 
@@ -81,9 +95,9 @@ Util/index.d.ts:521
 
 #### Defined in
 
-Util/index.d.ts:579
+Util/index.d.ts:800
 
-___
+---
 
 ### clearDelayExecute
 
@@ -91,7 +105,7 @@ ___
 
 **`Description`**
 
-清除delayExecute
+清除 delayExecute
 
 **`Effect`**
 
@@ -99,9 +113,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` | usage: delayExecute方法返回的ID |
+| Name | Type     | Description                       |
+| :--- | :------- | :-------------------------------- |
+| `id` | `number` | usage: delayExecute 方法返回的 ID |
 
 #### Returns
 
@@ -109,9 +123,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:541
+Util/index.d.ts:762
 
-___
+---
 
 ### clearInterval
 
@@ -119,7 +133,7 @@ ___
 
 **`Description`**
 
-清除setInterval
+清除 setInterval
 
 **`Effect`**
 
@@ -127,9 +141,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` | usage: setInterval方法返回的ID |
+| Name | Type     | Description                      |
+| :--- | :------- | :------------------------------- |
+| `id` | `number` | usage: setInterval 方法返回的 ID |
 
 #### Returns
 
@@ -137,9 +151,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:560
+Util/index.d.ts:781
 
-___
+---
 
 ### delayExecute
 
@@ -155,22 +169,22 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` | usage: 执行的方法 |
-| `frameNum?` | `number` | usage: 要延迟的帧数 default: 1 |
+| Name        | Type         | Description                    |
+| :---------- | :----------- | :----------------------------- |
+| `handler`   | () => `void` | usage: 执行的方法              |
+| `frameNum?` | `number`     | usage: 要延迟的帧数 default: 1 |
 
 #### Returns
 
 `number`
 
-用于停止的ID
+用于停止的 ID
 
 #### Defined in
 
-Util/index.d.ts:535
+Util/index.d.ts:756
 
-___
+---
 
 ### delaySecond
 
@@ -186,8 +200,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description           |
+| :------- | :------- | :-------------------- |
 | `second` | `number` | usage: 时间(单位：秒) |
 
 #### Returns
@@ -198,9 +212,9 @@ Promise
 
 #### Defined in
 
-Util/index.d.ts:567
+Util/index.d.ts:788
 
-___
+---
 
 ### delayTime
 
@@ -209,6 +223,10 @@ ___
 **`Description`**
 
 每一帧经过的时间 (单位：秒)
+
+**`Precautions`**
+
+调用这个函数之前两次 Update 函数调用之间的间隔时间
 
 **`Effect`**
 
@@ -222,9 +240,9 @@ number（单位：秒）
 
 #### Defined in
 
-Util/index.d.ts:527
+Util/index.d.ts:748
 
-___
+---
 
 ### elapsedTime
 
@@ -250,9 +268,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:505
+Util/index.d.ts:717
 
-___
+---
 
 ### getExecuteTime
 
@@ -268,8 +286,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type         | Description |
+| :--- | :----------- | :---------- |
 | `fn` | () => `void` | usage: 方法 |
 
 #### Returns
@@ -280,9 +298,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:574
+Util/index.d.ts:795
 
-___
+---
 
 ### parseTime
 
@@ -298,10 +316,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeData` | `Date` | usage:标准时间, 时间戳等 |
-| `format?` | `string` | usage:日期字符造串 default:outer |
+| Name       | Type     | Description                      |
+| :--------- | :------- | :------------------------------- |
+| `timeData` | `Date`   | usage:标准时间, 时间戳等         |
+| `format?`  | `string` | usage:日期字符造串 default:outer |
 
 #### Returns
 
@@ -311,9 +329,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:513
+Util/index.d.ts:725
 
-___
+---
 
 ### setInterval
 
@@ -329,23 +347,23 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` | usage: 要执行的方法 |
-| `timeout` | `number` | usage: 间隔时间（最小时间为两帧时间差 单位：毫秒） |
-| `exitJudge?` | () => `boolean` | usage: 退出的判断方法 返回true停止 default: null |
+| Name         | Type            | Description                                        |
+| :----------- | :-------------- | :------------------------------------------------- |
+| `handler`    | () => `void`    | usage: 要执行的方法                                |
+| `timeout`    | `number`        | usage: 间隔时间（最小时间为两帧时间差 单位：秒）   |
+| `exitJudge?` | () => `boolean` | usage: 退出的判断方法 返回 true 停止 default: null |
 
 #### Returns
 
 `number`
 
-用于停止的ID
+用于停止的 ID
 
 #### Defined in
 
-Util/index.d.ts:550
+Util/index.d.ts:771
 
-___
+---
 
 ### time
 
@@ -371,4 +389,4 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 #### Defined in
 
-Util/index.d.ts:498
+Util/index.d.ts:710

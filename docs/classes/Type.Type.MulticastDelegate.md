@@ -6,7 +6,7 @@
 
 **`Author`**
 
-孙向坤
+xiangkun.sun
 
 **`Description`**
 
@@ -22,9 +22,9 @@ usage:双端
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type                                         |
+| :--- | :------------------------------------------- |
+| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implements
 
@@ -51,9 +51,9 @@ usage:双端
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type                                         |
+| :--- | :------------------------------------------- |
+| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Methods
 
@@ -71,9 +71,9 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` | usage: 绑定的函数 default |
+| Name   | Type | Description               |
+| :----- | :--- | :------------------------ |
+| `func` | `T`  | usage: 绑定的函数 default |
 
 #### Returns
 
@@ -85,9 +85,9 @@ usage:双端
 
 #### Defined in
 
-Type/index.d.ts:127
+Type/index.d.ts:152
 
-___
+---
 
 ### broadcast
 
@@ -103,8 +103,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type               | Description |
+| :------- | :----------------- | :---------- |
 | `...arg` | `Parameters`<`T`\> | usage: 参数 |
 
 #### Returns
@@ -117,9 +117,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:144
+Type/index.d.ts:169
 
-___
+---
 
 ### clear
 
@@ -139,9 +139,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:138
+Type/index.d.ts:163
 
-___
+---
 
 ### remove
 
@@ -157,9 +157,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` | usage: 删除绑定的函数 default |
+| Name   | Type | Description                   |
+| :----- | :--- | :---------------------------- |
+| `func` | `T`  | usage: 删除绑定的函数 default |
 
 #### Returns
 
@@ -171,4 +171,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:133
+Type/index.d.ts:158

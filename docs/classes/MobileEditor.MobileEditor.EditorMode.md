@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Instance`**
 
@@ -16,7 +16,7 @@ wujie
 
 **`Precautions`**
 
-单例类，请使用instance获取对象
+单例类，请使用 instance 获取对象
 
 **`Network Status`**
 
@@ -30,7 +30,7 @@ usage:客户端
 
 ### Properties
 
-- [OnMobileEditorStateChangedDelegate](MobileEditor.MobileEditor.EditorMode.md#onmobileeditorstatechangeddelegate)
+- [onMobileEditorStateChanged](MobileEditor.MobileEditor.EditorMode.md#onmobileeditorstatechanged)
 
 ### Accessors
 
@@ -55,7 +55,7 @@ usage:客户端
 - [beginMaterialsChangeMulti](MobileEditor.MobileEditor.EditorMode.md#beginmaterialschangemulti)
 - [beginMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#beginmaterialscolorchange)
 - [beginSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#beginspawnactorchange)
-- [beginUnCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#beginuncombineactorchange)
+- [beginUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#beginuncombinedactorchange)
 - [detachActorFormGizmo](MobileEditor.MobileEditor.EditorMode.md#detachactorformgizmo)
 - [enableSelectActor](MobileEditor.MobileEditor.EditorMode.md#enableselectactor)
 - [endActorTransformChange](MobileEditor.MobileEditor.EditorMode.md#endactortransformchange)
@@ -66,7 +66,7 @@ usage:客户端
 - [endMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#endmaterialscolorchange)
 - [endMultiCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#endmulticombineactorchange)
 - [endSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#endspawnactorchange)
-- [endUnCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#enduncombineactorchange)
+- [endUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#enduncombinedactorchange)
 - [focusToActors](MobileEditor.MobileEditor.EditorMode.md#focustoactors)
 - [focusToGizmo](MobileEditor.MobileEditor.EditorMode.md#focustogizmo)
 - [isRedoEmpty](MobileEditor.MobileEditor.EditorMode.md#isredoempty)
@@ -79,11 +79,13 @@ usage:客户端
 - [onGizmoVisibleChanged](MobileEditor.MobileEditor.EditorMode.md#ongizmovisiblechanged)
 - [onSelectActor](MobileEditor.MobileEditor.EditorMode.md#onselectactor)
 - [saveProject](MobileEditor.MobileEditor.EditorMode.md#saveproject)
+- [setAdsorbDistance](MobileEditor.MobileEditor.EditorMode.md#setadsorbdistance)
 - [setGizmoActorLocation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocation)
 - [setGizmoActorLocationAndRotation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocationandrotation)
 - [setGizmoAxisColor](MobileEditor.MobileEditor.EditorMode.md#setgizmoaxiscolor)
 - [setGizmoHighlightColor](MobileEditor.MobileEditor.EditorMode.md#setgizmohighlightcolor)
 - [setGizmoScaleOffset](MobileEditor.MobileEditor.EditorMode.md#setgizmoscaleoffset)
+- [setIsAdsorb](MobileEditor.MobileEditor.EditorMode.md#setisadsorb)
 - [showGizmoActor](MobileEditor.MobileEditor.EditorMode.md#showgizmoactor)
 - [switchGizmoMode](MobileEditor.MobileEditor.EditorMode.md#switchgizmomode)
 - [getInstance](MobileEditor.MobileEditor.EditorMode.md#getinstance)
@@ -96,9 +98,9 @@ usage:客户端
 
 ## Properties
 
-### OnMobileEditorStateChangedDelegate
+### onMobileEditorStateChanged
 
-• **OnMobileEditorStateChangedDelegate**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\>
+• **onMobileEditorStateChanged**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\>
 
 **`Description`**
 
@@ -116,7 +118,7 @@ MobileEditor/index.d.ts:30
 
 **`Description`**
 
-获取坐标轴Actor
+获取坐标轴 Actor
 
 **`Effect`**
 
@@ -126,13 +128,13 @@ MobileEditor/index.d.ts:30
 
 `MWMobileGizmoActor`
 
-返回gizmoActor
+返回 gizmoActor
 
 #### Defined in
 
-MobileEditor/index.d.ts:326
+MobileEditor/index.d.ts:338
 
-___
+---
 
 ### gizmoActorRotation
 
@@ -148,8 +150,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                | Description    |
+| :------------ | :---------------------------------- | :------------- |
 | `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | usage:新的旋转 |
 
 #### Returns
@@ -160,7 +162,7 @@ ___
 
 MobileEditor/index.d.ts:109
 
-___
+---
 
 ### isMobileEditor
 
@@ -182,7 +184,7 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:373
+MobileEditor/index.d.ts:385
 
 • `set` **isMobileEditor**(`bIsMobileEditor`): `void`
 
@@ -200,8 +202,8 @@ MobileEditor/index.d.ts:373
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name              | Type      | Description                                         |
+| :---------------- | :-------- | :-------------------------------------------------- |
 | `bIsMobileEditor` | `boolean` | usage: true 则进 Editor Mode , false 进入 Play Mode |
 
 #### Returns
@@ -210,9 +212,9 @@ MobileEditor/index.d.ts:373
 
 #### Defined in
 
-MobileEditor/index.d.ts:380
+MobileEditor/index.d.ts:392
 
-___
+---
 
 ### isPermanentMobileEditor
 
@@ -236,11 +238,11 @@ ___
 
 MobileEditor/index.d.ts:43
 
-___
+---
 
 ### selectedActor
 
-• `get` **selectedActor**(): [`GameObject`](Core.Core.GameObject.md)
+• `get` **selectedActor**(): `GameObject`
 
 **`Description`**
 
@@ -252,13 +254,13 @@ ___
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
-返回选中的actor
+返回选中的 actor
 
 #### Defined in
 
-MobileEditor/index.d.ts:343
+MobileEditor/index.d.ts:355
 
 ## Methods
 
@@ -268,7 +270,7 @@ MobileEditor/index.d.ts:343
 
 **`Description`**
 
-设置移动编辑器Editor Mode下人物的位置输入,仅在Editor Mode模式下生效.
+设置移动编辑器 Editor Mode 下人物的位置输入,仅在 Editor Mode 模式下生效.
 
 **`Effect`**
 
@@ -276,8 +278,8 @@ MobileEditor/index.d.ts:343
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description     |
+| :------ | :------- | :-------------- |
 | `Scale` | `number` | usage: 输入数值 |
 
 #### Returns
@@ -288,7 +290,7 @@ MobileEditor/index.d.ts:343
 
 MobileEditor/index.d.ts:68
 
-___
+---
 
 ### addEditorCharacterDeltaOffset
 
@@ -296,7 +298,7 @@ ___
 
 **`Description`**
 
-设置移动编辑器Editor Mode下人物的位置输入,仅在Editor Mode模式下生效.Play Mode 使用gamePlay提供的接口
+设置移动编辑器 Editor Mode 下人物的位置输入,仅在 Editor Mode 模式下生效.Play Mode 使用 gamePlay 提供的接口
 
 **`Effect`**
 
@@ -304,10 +306,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delta` | [`Vector`](Type.Type.Vector.md) | usage: 偏移delta |
-| `Scale` | `number` | usage: 缩放值 |
+| Name    | Type                            | Description       |
+| :------ | :------------------------------ | :---------------- |
+| `Delta` | [`Vector`](Type.Type.Vector.md) | usage: 偏移 delta |
+| `Scale` | `number`                        | usage: 缩放值     |
 
 #### Returns
 
@@ -317,7 +319,7 @@ ___
 
 MobileEditor/index.d.ts:62
 
-___
+---
 
 ### addEditorCharacterPitch
 
@@ -325,7 +327,7 @@ ___
 
 **`Description`**
 
-设置移动编辑器Editor Mode下人物的Pitch值输入,仅在Editor Mode模式下生效. Play Mode 使用gamePlay提供的接口
+设置移动编辑器 Editor Mode 下人物的 Pitch 值输入,仅在 Editor Mode 模式下生效. Play Mode 使用 gamePlay 提供的接口
 
 **`Effect`**
 
@@ -333,8 +335,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
 | `Pitch` | `number` | usage:输入数值 |
 
 #### Returns
@@ -345,7 +347,7 @@ ___
 
 MobileEditor/index.d.ts:55
 
-___
+---
 
 ### addEditorCharacterYaw
 
@@ -353,7 +355,7 @@ ___
 
 **`Description`**
 
-设置移动编辑器Editor Mode下人物的Yaw值输入,仅在Editor Mode模式下生效.Play Mode 使用gameplay提供的接口
+设置移动编辑器 Editor Mode 下人物的 Yaw 值输入,仅在 Editor Mode 模式下生效.Play Mode 使用 gameplay 提供的接口
 
 **`Effect`**
 
@@ -361,8 +363,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description     |
+| :---- | :------- | :-------------- |
 | `Yaw` | `number` | usage: 输入数值 |
 
 #### Returns
@@ -373,7 +375,7 @@ ___
 
 MobileEditor/index.d.ts:49
 
-___
+---
 
 ### attachActorToGizmo
 
@@ -389,10 +391,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage: 附加到的actor |
-| `IsRecordChange?` | `boolean` | usage: 是否支持撤销 default:false |
+| Name              | Type         | Description                       |
+| :---------------- | :----------- | :-------------------------------- |
+| `Actor`           | `GameObject` | usage: 附加到的 actor             |
+| `IsRecordChange?` | `boolean`    | usage: 是否支持撤销 default:false |
 
 #### Returns
 
@@ -402,7 +404,7 @@ ___
 
 MobileEditor/index.d.ts:81
 
-___
+---
 
 ### beginActorTransformChange
 
@@ -418,9 +420,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage: 记录的位置大小actor |
+| Name    | Type         | Description                 |
+| :------ | :----------- | :-------------------------- |
+| `Actor` | `GameObject` | usage: 记录的位置大小 actor |
 
 #### Returns
 
@@ -428,9 +430,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:144
+MobileEditor/index.d.ts:156
 
-___
+---
 
 ### beginAttachChange
 
@@ -446,10 +448,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `LastActor` | [`GameObject`](Core.Core.GameObject.md) | usage:上一个对象 |
-| `NewActor` | [`GameObject`](Core.Core.GameObject.md) | usage:新的对象 |
+| Name        | Type         | Description      |
+| :---------- | :----------- | :--------------- |
+| `LastActor` | `GameObject` | usage:上一个对象 |
+| `NewActor`  | `GameObject` | usage:新的对象   |
 
 #### Returns
 
@@ -457,9 +459,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:317
+MobileEditor/index.d.ts:329
 
-___
+---
 
 ### beginCombineActorChange
 
@@ -479,9 +481,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:188
+MobileEditor/index.d.ts:200
 
-___
+---
 
 ### beginDeleteActorChange
 
@@ -501,9 +503,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:155
+MobileEditor/index.d.ts:167
 
-___
+---
 
 ### beginMaterialsChange
 
@@ -511,7 +513,7 @@ ___
 
 **`Description`**
 
-开始记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉
+开始记录材质变换操作(仅支持记录单个 StaticMesh)，新工程更新后接口可废弃删掉
 
 **`Effect`**
 
@@ -519,9 +521,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性改变的actor |
+| Name    | Type                                            | Description                    |
+| :------ | :---------------------------------------------- | :----------------------------- |
+| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性改变的 actor |
 
 #### Returns
 
@@ -529,9 +531,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:177
+MobileEditor/index.d.ts:189
 
-___
+---
 
 ### beginMaterialsChangeMulti
 
@@ -539,7 +541,7 @@ ___
 
 **`Description`**
 
-开始记录材质变换操作（支持记录多个StaticMesh）
+开始记录材质变换操作（支持记录多个 StaticMesh）
 
 **`Effect`**
 
@@ -547,8 +549,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                              | Description     |
+| :------ | :------------------------------------------------ | :-------------- |
 | `Array` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | usage: 多个对象 |
 
 #### Returns
@@ -557,9 +559,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:183
+MobileEditor/index.d.ts:195
 
-___
+---
 
 ### beginMaterialsColorChange
 
@@ -575,10 +577,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                            | Description      |
+| :------ | :---------------------------------------------- | :--------------- |
 | `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录的对象 |
-| `Color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
+| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | usage:颜色       |
 
 #### Returns
 
@@ -586,9 +588,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:239
+MobileEditor/index.d.ts:251
 
-___
+---
 
 ### beginSpawnActorChange
 
@@ -608,13 +610,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:165
+MobileEditor/index.d.ts:177
 
-___
+---
 
-### beginUnCombineActorChange
+### beginUncombinedActorChange
 
-▸ **beginUnCombineActorChange**(): `void`
+▸ **beginUncombinedActorChange**(): `void`
 
 **`Description`**
 
@@ -630,9 +632,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:209
+MobileEditor/index.d.ts:221
 
-___
+---
 
 ### detachActorFormGizmo
 
@@ -648,9 +650,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage:移除的actor |
+| Name    | Type         | Description        |
+| :------ | :----------- | :----------------- |
+| `Actor` | `GameObject` | usage:移除的 actor |
 
 #### Returns
 
@@ -660,7 +662,7 @@ ___
 
 MobileEditor/index.d.ts:87
 
-___
+---
 
 ### enableSelectActor
 
@@ -676,8 +678,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type      | Description        |
+| :--------- | :-------- | :----------------- |
 | `IsEnable` | `boolean` | usage:是否可以选中 |
 
 #### Returns
@@ -686,9 +688,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:337
+MobileEditor/index.d.ts:349
 
-___
+---
 
 ### endActorTransformChange
 
@@ -704,9 +706,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage:记录的位置大小actor |
+| Name    | Type         | Description                |
+| :------ | :----------- | :------------------------- |
+| `Actor` | `GameObject` | usage:记录的位置大小 actor |
 
 #### Returns
 
@@ -714,9 +716,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:150
+MobileEditor/index.d.ts:162
 
-___
+---
 
 ### endCombineActorChange
 
@@ -732,9 +734,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage:打组后的锚点actor |
+| Name    | Type         | Description              |
+| :------ | :----------- | :----------------------- |
+| `Actor` | `GameObject` | usage:打组后的锚点 actor |
 
 #### Returns
 
@@ -742,9 +744,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:194
+MobileEditor/index.d.ts:206
 
-___
+---
 
 ### endDeleteActorChange
 
@@ -764,9 +766,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:160
+MobileEditor/index.d.ts:172
 
-___
+---
 
 ### endMaterialsChange
 
@@ -774,7 +776,7 @@ ___
 
 **`Description`**
 
-结束记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉
+结束记录材质变换操作(仅支持记录单个 StaticMesh)，新工程更新后接口可废弃删掉
 
 **`Effect`**
 
@@ -782,10 +784,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性的actor |
-| `MaterialID` | `string` | usage:材质ID |
+| Name         | Type                                            | Description                |
+| :----------- | :---------------------------------------------- | :------------------------- |
+| `Actor`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性的 actor |
+| `MaterialID` | `string`                                        | usage:材质 ID              |
 
 #### Returns
 
@@ -793,9 +795,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:222
+MobileEditor/index.d.ts:234
 
-___
+---
 
 ### endMaterialsChangeMulti
 
@@ -803,7 +805,7 @@ ___
 
 **`Description`**
 
-结束记录材质变换操作（支持记录多个StaticMesh）
+结束记录材质变换操作（支持记录多个 StaticMesh）
 
 **`Effect`**
 
@@ -811,10 +813,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Array` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | usage:操作的对象数组 |
-| `MaterialID` | `string` | usage:材质ID |
+| Name         | Type                                              | Description          |
+| :----------- | :------------------------------------------------ | :------------------- |
+| `Array`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | usage:操作的对象数组 |
+| `MaterialID` | `string`                                          | usage:材质 ID        |
 
 #### Returns
 
@@ -822,9 +824,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:229
+MobileEditor/index.d.ts:241
 
-___
+---
 
 ### endMaterialsColorChange
 
@@ -840,10 +842,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录的actor |
-| `Color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
+| Name    | Type                                            | Description        |
+| :------ | :---------------------------------------------- | :----------------- |
+| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录的 actor |
+| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | usage:颜色         |
 
 #### Returns
 
@@ -851,9 +853,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:249
+MobileEditor/index.d.ts:261
 
-___
+---
 
 ### endMultiCombineActorChange
 
@@ -869,10 +871,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage:合并打组后的锚点actor |
-| `Array` | [`GameObject`](Core.Core.GameObject.md)[] | usage:合并打组前所有组锚点（或者单个物体）的actor数组 |
+| Name    | Type           | Description                                             |
+| :------ | :------------- | :------------------------------------------------------ |
+| `Actor` | `GameObject`   | usage:合并打组后的锚点 actor                            |
+| `Array` | `GameObject`[] | usage:合并打组前所有组锚点（或者单个物体）的 actor 数组 |
 
 #### Returns
 
@@ -880,9 +882,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:201
+MobileEditor/index.d.ts:213
 
-___
+---
 
 ### endSpawnActorChange
 
@@ -898,9 +900,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actor` | [`GameObject`](Core.Core.GameObject.md) | usage:记录的actor |
+| Name    | Type         | Description        |
+| :------ | :----------- | :----------------- |
+| `Actor` | `GameObject` | usage:记录的 actor |
 
 #### Returns
 
@@ -908,13 +910,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:171
+MobileEditor/index.d.ts:183
 
-___
+---
 
-### endUnCombineActorChange
+### endUncombinedActorChange
 
-▸ **endUnCombineActorChange**(`Array`): `void`
+▸ **endUncombinedActorChange**(`Array`): `void`
 
 **`Description`**
 
@@ -926,9 +928,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Array` | [`GameObject`](Core.Core.GameObject.md)[] | usage:解组前所有组的锚点actor的数组 |
+| Name    | Type           | Description                           |
+| :------ | :------------- | :------------------------------------ |
+| `Array` | `GameObject`[] | usage:解组前所有组的锚点 actor 的数组 |
 
 #### Returns
 
@@ -936,9 +938,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:215
+MobileEditor/index.d.ts:227
 
-___
+---
 
 ### focusToActors
 
@@ -954,9 +956,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Actors` | [[`GameObject`](Core.Core.GameObject.md)] | usage:对象actor |
+| Name     | Type           | Description      |
+| :------- | :------------- | :--------------- |
+| `Actors` | [`GameObject`] | usage:对象 actor |
 
 #### Returns
 
@@ -964,9 +966,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:367
+MobileEditor/index.d.ts:379
 
-___
+---
 
 ### focusToGizmo
 
@@ -986,9 +988,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:331
+MobileEditor/index.d.ts:343
 
-___
+---
 
 ### isRedoEmpty
 
@@ -996,7 +998,7 @@ ___
 
 **`Description`**
 
-是否可执行Redo操作true:表示当前没有可执行的步数，无法执行重做操作
+是否可执行 Redo 操作 true:表示当前没有可执行的步数，无法执行重做操作
 
 **`Effect`**
 
@@ -1006,13 +1008,13 @@ ___
 
 `boolean`
 
-是否可执行Redo操作
+是否可执行 Redo 操作
 
 #### Defined in
 
-MobileEditor/index.d.ts:355
+MobileEditor/index.d.ts:367
 
-___
+---
 
 ### isUndoEmpty
 
@@ -1020,7 +1022,7 @@ ___
 
 **`Description`**
 
-是否可执行Undo操作 true:表示当前没有可执行的步数，无法执行撤销操作
+是否可执行 Undo 操作 true:表示当前没有可执行的步数，无法执行撤销操作
 
 **`Effect`**
 
@@ -1030,13 +1032,13 @@ ___
 
 `boolean`
 
-是否可执行Undo操作
+是否可执行 Undo 操作
 
 #### Defined in
 
-MobileEditor/index.d.ts:349
+MobileEditor/index.d.ts:361
 
-___
+---
 
 ### onAppendChange
 
@@ -1044,7 +1046,7 @@ ___
 
 **`Description`**
 
-主要用于设置撤销恢复按钮的可用性，如果有的话，可以配合IsUndoEmpty 和 IsRedoEmpty 函数来判断当前是否可以执行撤销恢复操作
+主要用于设置撤销恢复按钮的可用性，如果有的话，可以配合 IsUndoEmpty 和 IsRedoEmpty 函数来判断当前是否可以执行撤销恢复操作
 
 **`Effect`**
 
@@ -1052,8 +1054,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                                 | Description            |
+| :--------- | :------------------------------------------------------------------- | :--------------------- |
 | `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> | usage:记录撤销恢复代理 |
 
 #### Returns
@@ -1062,9 +1064,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:361
+MobileEditor/index.d.ts:373
 
-___
+---
 
 ### onAttachChanged
 
@@ -1080,9 +1082,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`GameObject`](Core.Core.GameObject.md)) => `void`\> | usage:有actor 附加到gizmo的时候触发的代理 |
+| Name       | Type                                                                                        | Description                                  |
+| :--------- | :------------------------------------------------------------------------------------------ | :------------------------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | usage:有 actor 附加到 gizmo 的时候触发的代理 |
 
 #### Returns
 
@@ -1090,9 +1092,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:308
+MobileEditor/index.d.ts:320
 
-___
+---
 
 ### onAttachRedoChanged
 
@@ -1108,9 +1110,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`GameObject`](Core.Core.GameObject.md)) => `void`\> | usage:attach 撤销的代理 |
+| Name       | Type                                                                                        | Description             |
+| :--------- | :------------------------------------------------------------------------------------------ | :---------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | usage:attach 撤销的代理 |
 
 #### Returns
 
@@ -1118,9 +1120,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:278
+MobileEditor/index.d.ts:290
 
-___
+---
 
 ### onDeleteActorRedo
 
@@ -1128,7 +1130,7 @@ ___
 
 **`Description`**
 
-Redo删除操作代理，会返回被删除的ActorID 和 资源ID
+Redo 删除操作代理，会返回被删除的 ActorID 和 资源 ID
 
 **`Effect`**
 
@@ -1136,9 +1138,9 @@ Redo删除操作代理，会返回被删除的ActorID 和 资源ID
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`AssetGUID`: `string`, `ActorGUID`: `string`) => `void`\> | usage:返回被删除的actor代理 |
+| Name       | Type                                                                                                             | Description                   |
+| :--------- | :--------------------------------------------------------------------------------------------------------------- | :---------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`AssetGUID`: `string`, `ActorGUID`: `string`) => `void`\> | usage:返回被删除的 actor 代理 |
 
 #### Returns
 
@@ -1146,9 +1148,9 @@ Redo删除操作代理，会返回被删除的ActorID 和 资源ID
 
 #### Defined in
 
-MobileEditor/index.d.ts:268
+MobileEditor/index.d.ts:280
 
-___
+---
 
 ### onDeleteActorUndo
 
@@ -1156,7 +1158,7 @@ ___
 
 **`Description`**
 
-撤销删除操作代理，会返回被删除的Actor
+撤销删除操作代理，会返回被删除的 Actor
 
 **`Effect`**
 
@@ -1164,9 +1166,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`GameObject`](Core.Core.GameObject.md), `OldGUID`: `string`, `NewString`: `string`) => `void`\> | usage:返回被删除的actor代理 |
+| Name       | Type                                                                                                                                    | Description                   |
+| :--------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `OldGUID`: `string`, `NewString`: `string`) => `void`\> | usage:返回被删除的 actor 代理 |
 
 #### Returns
 
@@ -1174,9 +1176,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:258
+MobileEditor/index.d.ts:270
 
-___
+---
 
 ### onGizmoVisibleChanged
 
@@ -1192,9 +1194,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\> | usage:gizmo actor隐藏显示的代理 |
+| Name       | Type                                                                                       | Description                      |
+| :--------- | :----------------------------------------------------------------------------------------- | :------------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\> | usage:gizmo actor 隐藏显示的代理 |
 
 #### Returns
 
@@ -1202,9 +1204,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:300
+MobileEditor/index.d.ts:312
 
-___
+---
 
 ### onSelectActor
 
@@ -1220,9 +1222,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`GameObject`](Core.Core.GameObject.md), `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\> | usage:选中actor的代理 |
+| Name       | Type                                                                                                                                         | Description             |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\> | usage:选中 actor 的代理 |
 
 #### Returns
 
@@ -1230,9 +1232,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:286
+MobileEditor/index.d.ts:298
 
-___
+---
 
 ### saveProject
 
@@ -1254,7 +1256,35 @@ ___
 
 MobileEditor/index.d.ts:37
 
-___
+---
+
+### setAdsorbDistance
+
+▸ **setAdsorbDistance**(`InDistance`): `void`
+
+**`Description`**
+
+设置吸附距离
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name         | Type     | Description     |
+| :----------- | :------- | :-------------- |
+| `InDistance` | `number` | usage: 吸附距离 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+MobileEditor/index.d.ts:150
+
+---
 
 ### setGizmoActorLocation
 
@@ -1270,10 +1300,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewLocation` | [`Vector`](Type.Type.Vector.md) | usage:坐标轴位置 |
-| `IsRecordChange?` | `boolean` | usage:是否记录本次坐标轴位置变动 default:true |
+| Name              | Type                            | Description                                   |
+| :---------------- | :------------------------------ | :-------------------------------------------- |
+| `NewLocation`     | [`Vector`](Type.Type.Vector.md) | usage:坐标轴位置                              |
+| `IsRecordChange?` | `boolean`                       | usage:是否记录本次坐标轴位置变动 default:true |
 
 #### Returns
 
@@ -1283,7 +1313,7 @@ ___
 
 MobileEditor/index.d.ts:100
 
-___
+---
 
 ### setGizmoActorLocationAndRotation
 
@@ -1299,9 +1329,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewLocation` | [`Vector`](Type.Type.Vector.md) | usage: 位置 |
+| Name          | Type                                | Description |
+| :------------ | :---------------------------------- | :---------- |
+| `NewLocation` | [`Vector`](Type.Type.Vector.md)     | usage: 位置 |
 | `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 |
 
 #### Returns
@@ -1312,7 +1342,7 @@ ___
 
 MobileEditor/index.d.ts:116
 
-___
+---
 
 ### setGizmoAxisColor
 
@@ -1328,10 +1358,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAxis` | `string` | usage: 单个坐标轴 |
-| `InAxisColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 颜色 |
+| Name          | Type                                      | Description       |
+| :------------ | :---------------------------------------- | :---------------- |
+| `InAxis`      | `string`                                  | usage: 单个坐标轴 |
+| `InAxisColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 颜色       |
 
 #### Returns
 
@@ -1341,7 +1371,7 @@ ___
 
 MobileEditor/index.d.ts:126
 
-___
+---
 
 ### setGizmoHighlightColor
 
@@ -1357,8 +1387,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name               | Type                                      | Description     |
+| :----------------- | :---------------------------------------- | :-------------- |
 | `InHighlightColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 高亮颜色 |
 
 #### Returns
@@ -1369,7 +1399,7 @@ ___
 
 MobileEditor/index.d.ts:132
 
-___
+---
 
 ### setGizmoScaleOffset
 
@@ -1385,8 +1415,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description     |
+| :--------- | :------- | :-------------- |
 | `InOffset` | `number` | usage: 缩放倍数 |
 
 #### Returns
@@ -1397,7 +1427,35 @@ ___
 
 MobileEditor/index.d.ts:138
 
-___
+---
+
+### setIsAdsorb
+
+▸ **setIsAdsorb**(`InIsAdsorb`): `void`
+
+**`Description`**
+
+设置是否吸附
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name         | Type      | Description     |
+| :----------- | :-------- | :-------------- |
+| `InIsAdsorb` | `boolean` | usage: 是否吸附 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+MobileEditor/index.d.ts:144
+
+---
 
 ### showGizmoActor
 
@@ -1413,8 +1471,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name             | Type      | Description      |
+| :--------------- | :-------- | :--------------- |
 | `showGizmoActor` | `boolean` | usage:显隐坐标轴 |
 
 #### Returns
@@ -1425,7 +1483,7 @@ ___
 
 MobileEditor/index.d.ts:74
 
-___
+---
 
 ### switchGizmoMode
 
@@ -1441,9 +1499,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GizmoMode` | [`GizmoModeType`](../enums/MobileEditor.MobileEditor.GizmoModeType.md) | usage:模式 |
+| Name        | Type                                                                   | Description |
+| :---------- | :--------------------------------------------------------------------- | :---------- |
+| `GizmoMode` | [`GizmoModeType`](../enums/MobileEditor.MobileEditor.GizmoModeType.md) | usage:模式  |
 
 #### Returns
 
@@ -1453,7 +1511,7 @@ ___
 
 MobileEditor/index.d.ts:93
 
-___
+---
 
 ### getInstance
 
@@ -1461,7 +1519,7 @@ ___
 
 **`Description`**
 
-获取editorMode的单例
+获取 editorMode 的单例
 
 **`Effect`**
 

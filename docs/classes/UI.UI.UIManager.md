@@ -6,18 +6,18 @@
 
 **`Author`**
 
-yangwei
+wei.yang
 
 **`Instance`**
 
 **`Description`**
 
-UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
-需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
+UI 管理类，可以继承此类，自带一个全局 UI 作为 UI 的总节点。
+需要在全局调用，否则会自动在第一个 UI 生成时自动生成一个默认的管理类.
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
@@ -39,7 +39,7 @@ usage:客户端
 ### Accessors
 
 - [canvas](UI.UI.UIManager.md#canvas)
-- [enableUILogInfo](UI.UI.UIManager.md#enableuiloginfo)
+- [uiLogInfoEnable](UI.UI.UIManager.md#uiloginfoenable)
 - [instance](UI.UI.UIManager.md#instance)
 
 ### Methods
@@ -71,21 +71,21 @@ usage:客户端
 
 ### allPanels
 
-• `Protected` **allPanels**: [`UIBehaviour`](UI.UI.UIBehaviour.md)[]
+• `Protected` **allPanels**: [`UIBehavior`](UI.UI.UIBehavior.md)[]
 
 **`Description`**
 
-所有创建过的Panel
+所有创建过的 Panel
 
 #### Defined in
 
-UI/index.d.ts:2941
+UI/index.d.ts:2936
 
-___
+---
 
 ### createPanelMap
 
-• `Protected` **createPanelMap**: `Map`<`string`, [`UIBehaviour`](UI.UI.UIBehaviour.md)[]\>
+• `Protected` **createPanelMap**: `Map`<`string`, [`UIBehavior`](UI.UI.UIBehavior.md)[]\>
 
 **`Description`**
 
@@ -93,9 +93,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2939
+UI/index.d.ts:2934
 
-___
+---
 
 ### logUIInfo
 
@@ -103,25 +103,25 @@ ___
 
 **`Description`**
 
-是否dump GameUI Log 信息
+是否 dump GameUI Log 信息
 
 #### Defined in
 
-UI/index.d.ts:2943
+UI/index.d.ts:2938
 
-___
+---
 
 ### uniquePanel
 
-• `Protected` **uniquePanel**: [`UIBehaviour`](UI.UI.UIBehaviour.md)
+• `Protected` **uniquePanel**: [`UIBehavior`](UI.UI.UIBehavior.md)
 
 **`Description`**
 
-独占Panel
+独占 Panel
 
 #### Defined in
 
-UI/index.d.ts:2937
+UI/index.d.ts:2932
 
 ## Accessors
 
@@ -131,7 +131,7 @@ UI/index.d.ts:2937
 
 **`Description`**
 
-全局所有UI的根canvas
+全局所有 UI 的根 canvas
 
 **`Effect`**
 
@@ -141,21 +141,21 @@ UI/index.d.ts:2937
 
 [`Canvas`](UI.UI.Canvas.md)
 
-根canvas
+根 canvas
 
 #### Defined in
 
-UI/index.d.ts:2959
+UI/index.d.ts:2954
 
-___
+---
 
-### enableUILogInfo
+### uiLogInfoEnable
 
-• `get` **enableUILogInfo**(): `boolean`
+• `get` **uiLogInfoEnable**(): `boolean`
 
 **`Description`**
 
-获取允许定时输出UIManager中管理到的UI的信息
+获取允许定时输出 UIManager 中管理到的 UI 的信息
 
 **`Effect`**
 
@@ -169,13 +169,13 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2971
+UI/index.d.ts:2966
 
-• `set` **enableUILogInfo**(`enable`): `void`
+• `set` **uiLogInfoEnable**(`enable`): `void`
 
 **`Description`**
 
-允许定时输出UIManager中管理到的UI的信息
+允许定时输出 UIManager 中管理到的 UI 的信息
 
 **`Effect`**
 
@@ -183,8 +183,8 @@ UI/index.d.ts:2971
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type      | Description    |
+| :------- | :-------- | :------------- |
 | `enable` | `boolean` | usage:运行与否 |
 
 #### Returns
@@ -193,9 +193,9 @@ UI/index.d.ts:2971
 
 #### Defined in
 
-UI/index.d.ts:2965
+UI/index.d.ts:2960
 
-___
+---
 
 ### instance
 
@@ -203,7 +203,7 @@ ___
 
 **`Description`**
 
-获取UIManager单例
+获取 UIManager 单例
 
 **`Effect`**
 
@@ -213,11 +213,11 @@ ___
 
 [`UIManager`](UI.UI.UIManager.md)
 
-返回获取UIManager单例的对象
+返回获取 UIManager 单例的对象
 
 #### Defined in
 
-UI/index.d.ts:2928
+UI/index.d.ts:2923
 
 ## Methods
 
@@ -227,7 +227,7 @@ UI/index.d.ts:2928
 
 **`Description`**
 
-添加UI的管理层
+添加 UI 的管理层
 
 **`Effect`**
 
@@ -235,10 +235,10 @@ UI/index.d.ts:2928
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `layer` | `number` | usage:layer的序列号 |
-| `startZOrder` | `number` | usage:该层开始的zOrder |
+| Name          | Type     | Description             |
+| :------------ | :------- | :---------------------- |
+| `layer`       | `number` | usage:layer 的序列号    |
+| `startZOrder` | `number` | usage:该层开始的 zOrder |
 
 #### Returns
 
@@ -246,9 +246,9 @@ UI/index.d.ts:2928
 
 #### Defined in
 
-UI/index.d.ts:2978
+UI/index.d.ts:2973
 
-___
+---
 
 ### create
 
@@ -264,27 +264,27 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type      | Description    |
+| :----------- | :-------- | :------------- |
 | `PanelClass` | () => `T` | usage:界面的类 |
 
 #### Returns
 
 `T`
 
-返回创建的UI行为脚本
+返回创建的 UI 行为脚本
 
 #### Defined in
 
-UI/index.d.ts:3026
+UI/index.d.ts:3021
 
-___
+---
 
 ### destroy
 
@@ -292,7 +292,7 @@ ___
 
 **`Description`**
 
-销毁该单列，也会销毁所有的UI,需要重新创建才能管理UI
+销毁该单列，也会销毁所有的 UI,需要重新创建才能管理 UI
 
 **`Effect`**
 
@@ -304,9 +304,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2983
+UI/index.d.ts:2978
 
-___
+---
 
 ### destroyUI
 
@@ -314,7 +314,7 @@ ___
 
 **`Description`**
 
-销毁一个界面,相当于DestroyObject
+销毁一个界面,相当于 DestroyObject
 
 **`Effect`**
 
@@ -322,14 +322,14 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type      | Description    |
+| :----------- | :-------- | :------------- |
 | `PanelClass` | () => `T` | usage:销毁界面 |
 
 #### Returns
@@ -338,9 +338,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3052
+UI/index.d.ts:3047
 
-___
+---
 
 ### dumpUIData
 
@@ -348,7 +348,7 @@ ___
 
 **`Description`**
 
-打印所有管理到的UI信息
+打印所有管理到的 UI 信息
 
 **`Effect`**
 
@@ -360,9 +360,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2953
+UI/index.d.ts:2948
 
-___
+---
 
 ### getAllUI
 
@@ -378,14 +378,14 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type      | Description    |
+| :----------- | :-------- | :------------- |
 | `PanelClass` | () => `T` | usage:界面类型 |
 
 #### Returns
@@ -396,9 +396,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3019
+UI/index.d.ts:3014
 
-___
+---
 
 ### getUI
 
@@ -414,16 +414,16 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `PanelClass` | () => `T` | usage:界面类型 |
-| `bNeedNew?` | `boolean` | usage:没有找到的有缓存的UI界面时，是否需要新建一个 default:true |
+| Name         | Type      | Description                                                       |
+| :----------- | :-------- | :---------------------------------------------------------------- |
+| `PanelClass` | () => `T` | usage:界面类型                                                    |
+| `bNeedNew?`  | `boolean` | usage:没有找到的有缓存的 UI 界面时，是否需要新建一个 default:true |
 
 #### Returns
 
@@ -433,9 +433,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3007
+UI/index.d.ts:3002
 
-___
+---
 
 ### getUILayer
 
@@ -443,7 +443,7 @@ ___
 
 **`Description`**
 
-获取一个UI的层级
+获取一个 UI 的层级
 
 **`Effect`**
 
@@ -451,21 +451,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `panel` | [`UIBehaviour`](UI.UI.UIBehaviour.md) | usage:GameUI |
+| Name    | Type                                | Description  |
+| :------ | :---------------------------------- | :----------- |
+| `panel` | [`UIBehavior`](UI.UI.UIBehavior.md) | usage:GameUI |
 
 #### Returns
 
 `number`
 
-UI的层级
+UI 的层级
 
 #### Defined in
 
-UI/index.d.ts:3072
+UI/index.d.ts:3067
 
-___
+---
 
 ### hide
 
@@ -473,7 +473,7 @@ ___
 
 **`Description`**
 
-隐藏一个界面，只是隐藏界面设置为Collapsed
+隐藏一个界面，只是隐藏界面设置为 Collapsed
 
 **`Effect`**
 
@@ -481,27 +481,27 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type      | Description    |
+| :----------- | :-------- | :------------- |
 | `PanelClass` | () => `T` | usage:界面的类 |
 
 #### Returns
 
 `T`
 
-返回隐藏的UI行为类(这个参数可以传递给界面的onHide方法)
+返回隐藏的 UI 行为类(这个参数可以传递给界面的 onHide 方法)
 
 #### Defined in
 
-UI/index.d.ts:3046
+UI/index.d.ts:3041
 
-___
+---
 
 ### hideUI
 
@@ -509,7 +509,7 @@ ___
 
 **`Description`**
 
-移除一个显示的界面,只是隐藏界面设置为Collapsed
+移除一个显示的界面,只是隐藏界面设置为 Collapsed
 
 **`Effect`**
 
@@ -517,9 +517,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `panel` | [`UIBehaviour`](UI.UI.UIBehaviour.md) | usage:界面 |
+| Name    | Type                                | Description |
+| :------ | :---------------------------------- | :---------- |
+| `panel` | [`UIBehavior`](UI.UI.UIBehavior.md) | usage:界面  |
 
 #### Returns
 
@@ -529,9 +529,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2999
+UI/index.d.ts:2994
 
-___
+---
 
 ### init
 
@@ -539,7 +539,7 @@ ___
 
 **`Description`**
 
-初始化UIManger
+初始化 UIManger
 
 **`Effect`**
 
@@ -551,9 +551,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2948
+UI/index.d.ts:2943
 
-___
+---
 
 ### isShown
 
@@ -569,9 +569,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `panel` | [`UIBehaviour`](UI.UI.UIBehaviour.md) | usage:界面 |
+| Name    | Type                                | Description |
+| :------ | :---------------------------------- | :---------- |
+| `panel` | [`UIBehavior`](UI.UI.UIBehavior.md) | usage:界面  |
 
 #### Returns
 
@@ -581,9 +581,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3059
+UI/index.d.ts:3054
 
-___
+---
 
 ### setAllMiddleAndBottomPanelVisible
 
@@ -591,7 +591,7 @@ ___
 
 **`Description`**
 
-设置Middle和Bottom层所有Panel的可见性
+设置 Middle 和 Bottom 层所有 Panel 的可见性
 
 **`Effect`**
 
@@ -599,8 +599,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description  |
+| :------ | :-------- | :----------- |
 | `value` | `boolean` | usage:显隐值 |
 
 #### Returns
@@ -609,9 +609,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3065
+UI/index.d.ts:3060
 
-___
+---
 
 ### show
 
@@ -627,16 +627,16 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `T`  | extends [`UIBehavior`](UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `PanelClass` | () => `T` | usage:界面的类如果类没有UI绑定，会创建一个默认的空UI |
-| `...params` | `any`[] | usage:显示参数(这个参数可以传递给界面的onShow方法) |
+| Name         | Type      | Description                                             |
+| :----------- | :-------- | :------------------------------------------------------ |
+| `PanelClass` | () => `T` | usage:界面的类如果类没有 UI 绑定，会创建一个默认的空 UI |
+| `...params`  | `any`[]   | usage:显示参数(这个参数可以传递给界面的 onShow 方法)    |
 
 #### Returns
 
@@ -646,13 +646,13 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3034
+UI/index.d.ts:3029
 
-___
+---
 
 ### showUI
 
-▸ **showUI**(`panel`, `layer?`, `...params`): [`UIBehaviour`](UI.UI.UIBehaviour.md)
+▸ **showUI**(`panel`, `layer?`, `...params`): [`UIBehavior`](UI.UI.UIBehavior.md)
 
 **`Description`**
 
@@ -664,23 +664,23 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `panel` | [`UIBehaviour`](UI.UI.UIBehaviour.md) | usage:界面 |
-| `layer?` | `number` | usage:图层 default:UILayer.UILayerMiddle |
-| `...params` | `any`[] | usage:显示参数(这个参数可以传递给界面的onShow方法) |
+| Name        | Type                                | Description                                          |
+| :---------- | :---------------------------------- | :--------------------------------------------------- |
+| `panel`     | [`UIBehavior`](UI.UI.UIBehavior.md) | usage:界面                                           |
+| `layer?`    | `number`                            | usage:图层 default:UILayer.UILayerMiddle             |
+| `...params` | `any`[]                             | usage:显示参数(这个参数可以传递给界面的 onShow 方法) |
 
 #### Returns
 
-[`UIBehaviour`](UI.UI.UIBehaviour.md)
+[`UIBehavior`](UI.UI.UIBehavior.md)
 
 显示的界面
 
 #### Defined in
 
-UI/index.d.ts:2992
+UI/index.d.ts:2987
 
-___
+---
 
 ### getInstance
 
@@ -688,7 +688,7 @@ ___
 
 **`Description`**
 
-获取UIManager子类ManagerClass单例，如果是第一次调用会创建一个ManagerClass的单例供全局使用
+获取 UIManager 子类 ManagerClass 单例，如果是第一次调用会创建一个 ManagerClass 的单例供全局使用
 
 **`Effect`**
 
@@ -696,22 +696,22 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIManager`](UI.UI.UIManager.md)<`T`\> |
+| Name | Type                                            |
+| :--- | :---------------------------------------------- |
+| `T`  | extends [`UIManager`](UI.UI.UIManager.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ManagerClass` | () => `T` | usage:子类 |
+| Name           | Type      | Description |
+| :------------- | :-------- | :---------- |
+| `ManagerClass` | () => `T` | usage:子类  |
 
 #### Returns
 
 `T`
 
-返回获取UIManager子类ManagerClass单例的对象
+返回获取 UIManager 子类 ManagerClass 单例的对象
 
 #### Defined in
 
-UI/index.d.ts:2935
+UI/index.d.ts:2930

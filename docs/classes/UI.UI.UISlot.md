@@ -4,13 +4,17 @@
 
 [UI](../modules/UI.md).[UI](../modules/UI.UI.md).UISlot
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-UI插槽
+UI 插槽
 
 **`Network Status`**
 
@@ -24,9 +28,8 @@ usage:客户端
 
 ### Accessors
 
+- [autoSizeEnable](UI.UI.UISlot.md#autosizeenable)
 - [constraints](UI.UI.UISlot.md#constraints)
-- [enableAutoSize](UI.UI.UISlot.md#enableautosize)
-- [isAutoSizeEnabled](UI.UI.UISlot.md#isautosizeenabled)
 - [position](UI.UI.UISlot.md#position)
 - [size](UI.UI.UISlot.md#size)
 - [transform](UI.UI.UISlot.md#transform)
@@ -44,85 +47,13 @@ usage:客户端
 
 ## Accessors
 
-### constraints
+### autoSizeEnable
 
-• `get` **constraints**(): [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)
+• `get` **autoSizeEnable**(): `boolean`
 
-**`Description`**
+**`Deprecated`**
 
-获取Slot布局(Figma布局)
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)
-
-Slot布局
-
-#### Defined in
-
-UI/index.d.ts:3259
-
-• `set` **constraints**(`inConstraints`): `void`
-
-**`Description`**
-
-设置Slot布局(figma布局)
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inConstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:Slot布局 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-UI/index.d.ts:3253
-
-___
-
-### enableAutoSize
-
-• `set` **enableAutoSize**(`autoSize`): `void`
-
-**`Description`**
-
-设置是否自动设置大小
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-UI/index.d.ts:3301
-
-___
-
-### isAutoSizeEnabled
-
-• `get` **isAutoSizeEnabled**(): `boolean`
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
 **`Description`**
 
@@ -140,13 +71,101 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3307
+UI/index.d.ts:3316
 
-___
+• `set` **autoSizeEnable**(`autoSize`): `void`
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
+**`Description`**
+
+设置是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `autoSize` | `boolean` | usage:是否自动设置大小 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+UI/index.d.ts:3309
+
+---
+
+### constraints
+
+• `get` **constraints**(): [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
+**`Description`**
+
+获取 Slot 布局(Figma 布局)
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)
+
+Slot 布局
+
+#### Defined in
+
+UI/index.d.ts:3260
+
+• `set` **constraints**(`ininconstraints`): `void`
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
+**`Description`**
+
+设置 Slot 布局(figma 布局)
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                                                  |
+| :---------------- | :---------------------------------------------------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+UI/index.d.ts:3253
+
+---
 
 ### position
 
 • `get` **position**(): [`Vector2`](Type.Type.Vector2.md)
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
 **`Description`**
 
@@ -164,13 +183,17 @@ FVector2D
 
 #### Defined in
 
-UI/index.d.ts:3271
+UI/index.d.ts:3274
 
 • `set` **position**(`inFigmaPosition`): `void`
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-设置Slot位置
+设置 Slot 位置
 
 **`Effect`**
 
@@ -178,9 +201,9 @@ UI/index.d.ts:3271
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:Slot位置 |
+| Name              | Type                              | Description     |
+| :---------------- | :-------------------------------- | :-------------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:Slot 位置 |
 
 #### Returns
 
@@ -188,13 +211,17 @@ UI/index.d.ts:3271
 
 #### Defined in
 
-UI/index.d.ts:3265
+UI/index.d.ts:3267
 
-___
+---
 
 ### size
 
 • `get` **size**(): [`Vector2`](Type.Type.Vector2.md)
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
 **`Description`**
 
@@ -212,9 +239,13 @@ FVector2D
 
 #### Defined in
 
-UI/index.d.ts:3283
+UI/index.d.ts:3288
 
 • `set` **size**(`inSize`): `void`
+
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
 **`Description`**
 
@@ -226,9 +257,9 @@ UI/index.d.ts:3283
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:size |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:size  |
 
 #### Returns
 
@@ -236,17 +267,21 @@ UI/index.d.ts:3283
 
 #### Defined in
 
-UI/index.d.ts:3277
+UI/index.d.ts:3281
 
-___
+---
 
 ### transform
 
 • `get` **transform**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取Slot大小和位置
+得到 Slot 大小和位置
 
 **`Effect`**
 
@@ -256,17 +291,21 @@ ___
 
 `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
 
-Slot大小和位置
+Slot 大小和位置
 
 #### Defined in
 
-UI/index.d.ts:3247
+UI/index.d.ts:3246
 
 • `set` **transform**(`inTransform`): `void`
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-设置Slot大小和位置
+设置 Slot 大小和位置
 
 **`Effect`**
 
@@ -274,8 +313,8 @@ UI/index.d.ts:3247
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                  | Description    |
+| :------------ | :------------------------------------ | :------------- |
 | `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
 
 #### Returns
@@ -284,17 +323,21 @@ UI/index.d.ts:3247
 
 #### Defined in
 
-UI/index.d.ts:3241
+UI/index.d.ts:3239
 
-___
+---
 
 ### zOrder
 
 • `get` **zOrder**(): `number`
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取zOrder
+获取 zOrder
 
 **`Effect`**
 
@@ -308,13 +351,17 @@ zOrder
 
 #### Defined in
 
-UI/index.d.ts:3295
+UI/index.d.ts:3302
 
 • `set` **zOrder**(`InZOrder`): `void`
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-设置zOder
+设置 zOrder
 
 **`Effect`**
 
@@ -322,8 +369,8 @@ UI/index.d.ts:3295
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description          |
+| :--------- | :------- | :------------------- |
 | `InZOrder` | `number` | usage:值越大在越上层 |
 
 #### Returns
@@ -332,7 +379,7 @@ UI/index.d.ts:3295
 
 #### Defined in
 
-UI/index.d.ts:3289
+UI/index.d.ts:3295
 
 ## Methods
 
@@ -340,9 +387,13 @@ UI/index.d.ts:3289
 
 ▸ **equal**(`that`): `boolean`
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-判断是不是同一个Slot
+判断是不是同一个 Slot
 
 **`Effect`**
 
@@ -350,9 +401,9 @@ UI/index.d.ts:3289
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `that` | [`UISlot`](UI.UI.UISlot.md) | usage:需要比较的另外一个Slot |
+| Name   | Type                        | Description                   |
+| :----- | :-------------------------- | :---------------------------- |
+| `that` | [`UISlot`](UI.UI.UISlot.md) | usage:需要比较的另外一个 Slot |
 
 #### Returns
 
@@ -362,4 +413,4 @@ UI/index.d.ts:3289
 
 #### Defined in
 
-UI/index.d.ts:3235
+UI/index.d.ts:3232

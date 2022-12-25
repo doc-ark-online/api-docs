@@ -6,7 +6,7 @@
 
 **`Author`**
 
-孙向坤
+xiangkun.sun
 
 **`Description`**
 
@@ -18,9 +18,9 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type                                         |
+| :--- | :------------------------------------------- |
+| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implemented by
 
@@ -51,9 +51,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` | usage: 绑定的函数 default: |
+| Name   | Type | Description                |
+| :----- | :--- | :------------------------- |
+| `func` | `T`  | usage: 绑定的函数 default: |
 
 #### Returns
 
@@ -61,9 +61,9 @@
 
 #### Defined in
 
-Type/index.d.ts:32
+Type/index.d.ts:57
 
-___
+---
 
 ### execute
 
@@ -79,8 +79,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type               | Description     |
+| :------- | :----------------- | :-------------- |
 | `...arg` | `Parameters`<`T`\> | usage: 执行参数 |
 
 #### Returns
@@ -91,9 +91,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:50
+Type/index.d.ts:75
 
-___
+---
 
 ### isBound
 
@@ -115,9 +115,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:43
+Type/index.d.ts:68
 
-___
+---
 
 ### unbind
 
@@ -137,4 +137,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:37
+Type/index.d.ts:62

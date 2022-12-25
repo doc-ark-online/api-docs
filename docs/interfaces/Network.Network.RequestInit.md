@@ -10,7 +10,7 @@
 
 **`Description`**
 
-HTTP请求信息的对象
+HTTP 请求信息的对象
 
 **`Network Status`**
 
@@ -32,13 +32,13 @@ usage:双端
 
 **`Description`**
 
-HTTP请求体
+HTTP 请求体
 
 #### Defined in
 
 Network/index.d.ts:17
 
-___
+---
 
 ### headers
 
@@ -46,7 +46,7 @@ ___
 
 **`Description`**
 
-HTTP请求头
+HTTP 请求头
 
 #### Index signature
 
@@ -56,15 +56,15 @@ HTTP请求头
 
 Network/index.d.ts:13
 
-___
+---
 
 ### method
 
-• `Optional` **method**: ``"POST"`` \| ``"PUT"`` \| ``"GET"``
+• `Optional` **method**: `"POST"` \| `"PUT"` \| `"GET"`
 
 **`Description`**
 
-HTTP请求类型
+HTTP 请求类型
 
 #### Defined in
 

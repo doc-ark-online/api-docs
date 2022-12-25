@@ -20,34 +20,34 @@
 
 ### CameraType
 
-• **CameraType** = ``2``
+• **CameraType** = `2`
 
-相机  控制
+相机 控制
 
 #### Defined in
 
-UI/index.d.ts:3589
+UI/index.d.ts:3598
 
-___
+---
 
 ### MoveType
 
-• **MoveType** = ``1``
+• **MoveType** = `1`
 
 移动 控制
 
 #### Defined in
 
-UI/index.d.ts:3587
+UI/index.d.ts:3596
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 无控制类型
 
 #### Defined in
 
-UI/index.d.ts:3585
+UI/index.d.ts:3594

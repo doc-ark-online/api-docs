@@ -24,17 +24,19 @@ jun.zhang
 
 ### Properties
 
-- [delegateEndContinuousFireOnServer](Gameplay.Gameplay.HotWeaponFireComponent.md#delegateendcontinuousfireonserver)
-- [delegateEndFireOnClient](Gameplay.Gameplay.HotWeaponFireComponent.md#delegateendfireonclient)
-- [delegateEndFireOnServer](Gameplay.Gameplay.HotWeaponFireComponent.md#delegateendfireonserver)
-- [delegateStartFireOnClient](Gameplay.Gameplay.HotWeaponFireComponent.md#delegatestartfireonclient)
-- [delegateStartFireOnServer](Gameplay.Gameplay.HotWeaponFireComponent.md#delegatestartfireonserver)
+- [onEndContinuousFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)
+- [onEndFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireclient)
+- [onEndFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireserver)
+- [onStartFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireclient)
+- [onStartFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireserver)
 
 ### Accessors
 
+- [animationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#animationguid)
 - [currentBulletSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentbulletsize)
 - [currentClipSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentclipsize)
 - [currentFireInterval](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfireinterval)
+- [currentFireModel](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfiremodel)
 - [currentMultipleShot](Gameplay.Gameplay.HotWeaponFireComponent.md#currentmultipleshot)
 - [isFireOnScreenCenter](Gameplay.Gameplay.HotWeaponFireComponent.md#isfireonscreencenter)
 - [isFullAutoMode](Gameplay.Gameplay.HotWeaponFireComponent.md#isfullautomode)
@@ -42,11 +44,8 @@ jun.zhang
 
 ### Methods
 
-- [getAnimationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#getanimationguid)
-- [getCurrentFireModel](Gameplay.Gameplay.HotWeaponFireComponent.md#getcurrentfiremodel)
 - [hadAnimationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#hadanimationguid)
 - [isFiring](Gameplay.Gameplay.HotWeaponFireComponent.md#isfiring)
-- [setAnimationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#setanimationguid)
 
 ## Constructors
 
@@ -56,9 +55,9 @@ jun.zhang
 
 ## Properties
 
-### delegateEndContinuousFireOnServer
+### onEndContinuousFireServer
 
-• **delegateEndContinuousFireOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -66,13 +65,13 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:11839
+Gameplay/index.d.ts:11527
 
-___
+---
 
-### delegateEndFireOnClient
+### onEndFireClient
 
-• **delegateEndFireOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -80,13 +79,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11835
+Gameplay/index.d.ts:11523
 
-___
+---
 
-### delegateEndFireOnServer
+### onEndFireServer
 
-• **delegateEndFireOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -94,13 +93,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11831
+Gameplay/index.d.ts:11519
 
-___
+---
 
-### delegateStartFireOnClient
+### onStartFireClient
 
-• **delegateStartFireOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -108,13 +107,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11827
+Gameplay/index.d.ts:11515
 
-___
+---
 
-### delegateStartFireOnServer
+### onStartFireServer
 
-• **delegateStartFireOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -122,9 +121,57 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11823
+Gameplay/index.d.ts:11511
 
 ## Accessors
+
+### animationGuid
+
+• `get` **animationGuid**(): `string`
+
+**`Description`**
+
+绑定的动画 GUID
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`string`
+
+绑定的动画 GUID
+
+#### Defined in
+
+Gameplay/index.d.ts:11539
+
+• `set` **animationGuid**(`guid`): `void`
+
+**`Description`**
+
+设置动画 GUID
+
+**`Effect`**
+
+客户端调用自动广播
+
+#### Parameters
+
+| Name   | Type     | Description                      |
+| :----- | :------- | :------------------------------- |
+| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:11533
+
+---
 
 ### currentBulletSize
 
@@ -146,7 +193,7 @@ Gameplay/index.d.ts:11823
 
 #### Defined in
 
-Gameplay/index.d.ts:11948
+Gameplay/index.d.ts:11634
 
 • `set` **currentBulletSize**(`value`): `void`
 
@@ -160,8 +207,8 @@ Gameplay/index.d.ts:11948
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description             |
+| :------ | :------- | :---------------------- |
 | `value` | `number` | usage: 新弹夹中子弹数量 |
 
 #### Returns
@@ -170,9 +217,9 @@ Gameplay/index.d.ts:11948
 
 #### Defined in
 
-Gameplay/index.d.ts:11942
+Gameplay/index.d.ts:11628
 
-___
+---
 
 ### currentClipSize
 
@@ -194,7 +241,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11929
+Gameplay/index.d.ts:11615
 
 • `set` **currentClipSize**(`value`): `void`
 
@@ -212,8 +259,8 @@ Gameplay/index.d.ts:11929
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description         |
+| :------ | :------- | :------------------ |
 | `value` | `number` | usage: 当前弹夹容量 |
 
 #### Returns
@@ -222,9 +269,9 @@ Gameplay/index.d.ts:11929
 
 #### Defined in
 
-Gameplay/index.d.ts:11936
+Gameplay/index.d.ts:11622
 
-___
+---
 
 ### currentFireInterval
 
@@ -246,7 +293,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11923
+Gameplay/index.d.ts:11609
 
 • `set` **currentFireInterval**(`interval`): `void`
 
@@ -264,8 +311,8 @@ Gameplay/index.d.ts:11923
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description     |
+| :--------- | :------- | :-------------- |
 | `interval` | `number` | usage: 开火间隙 |
 
 #### Returns
@@ -274,9 +321,33 @@ Gameplay/index.d.ts:11923
 
 #### Defined in
 
-Gameplay/index.d.ts:11917
+Gameplay/index.d.ts:11603
 
-___
+---
+
+### currentFireModel
+
+• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md)
+
+**`Description`**
+
+获取当前的开火模式
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+[`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md)
+
+当前的开火模式
+
+#### Defined in
+
+Gameplay/index.d.ts:11551
+
+---
 
 ### currentMultipleShot
 
@@ -298,7 +369,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11910
+Gameplay/index.d.ts:11596
 
 • `set` **currentMultipleShot**(`count`): `void`
 
@@ -316,8 +387,8 @@ Gameplay/index.d.ts:11910
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                   |
+| :------ | :------- | :---------------------------- |
 | `count` | `number` | usage: 一次开火发射的子弹数量 |
 
 #### Returns
@@ -326,9 +397,9 @@ Gameplay/index.d.ts:11910
 
 #### Defined in
 
-Gameplay/index.d.ts:11904
+Gameplay/index.d.ts:11590
 
-___
+---
 
 ### isFireOnScreenCenter
 
@@ -350,7 +421,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11884
+Gameplay/index.d.ts:11570
 
 • `set` **isFireOnScreenCenter**(`value`): `void`
 
@@ -368,8 +439,8 @@ Gameplay/index.d.ts:11884
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type      | Description               |
+| :------ | :-------- | :------------------------ |
 | `value` | `boolean` | usage: 是否在屏幕中心开火 |
 
 #### Returns
@@ -378,9 +449,9 @@ Gameplay/index.d.ts:11884
 
 #### Defined in
 
-Gameplay/index.d.ts:11878
+Gameplay/index.d.ts:11564
 
-___
+---
 
 ### isFullAutoMode
 
@@ -402,13 +473,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11954
+Gameplay/index.d.ts:11640
 
 • `set` **isFullAutoMode**(`isInFullAuto`): `void`
 
 **`Description`**
 
-设置当前状态下isInFullAuto的值
+设置当前状态下 isInFullAuto 的值
 
 **`Effect`**
 
@@ -420,9 +491,9 @@ Gameplay/index.d.ts:11954
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isInFullAuto` | `boolean` | usage: 当前状态下isInFullAuto的值 |
+| Name           | Type      | Description                         |
+| :------------- | :-------- | :---------------------------------- |
+| `isInFullAuto` | `boolean` | usage: 当前状态下 isInFullAuto 的值 |
 
 #### Returns
 
@@ -430,9 +501,9 @@ Gameplay/index.d.ts:11954
 
 #### Defined in
 
-Gameplay/index.d.ts:11961
+Gameplay/index.d.ts:11647
 
-___
+---
 
 ### offsetOfFireOnScreenCenter
 
@@ -454,7 +525,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11897
+Gameplay/index.d.ts:11583
 
 • `set` **offsetOfFireOnScreenCenter**(`offset`): `void`
 
@@ -472,8 +543,8 @@ Gameplay/index.d.ts:11897
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description                 |
+| :------- | :------------------------------ | :-------------------------- |
 | `offset` | [`Vector`](Type.Type.Vector.md) | usage: 屏幕中心开火时的偏移 |
 
 #### Returns
@@ -482,57 +553,9 @@ Gameplay/index.d.ts:11897
 
 #### Defined in
 
-Gameplay/index.d.ts:11891
+Gameplay/index.d.ts:11577
 
 ## Methods
-
-### getAnimationGuid
-
-▸ **getAnimationGuid**(): `string`
-
-**`Description`**
-
-绑定的动画GUID
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`string`
-
-绑定的动画 GUID
-
-#### Defined in
-
-Gameplay/index.d.ts:11853
-
-___
-
-### getCurrentFireModel
-
-▸ **getCurrentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md)
-
-**`Description`**
-
-获取当前的开火模式
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-[`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md)
-
-当前的开火模式
-
-#### Defined in
-
-Gameplay/index.d.ts:11865
-
-___
 
 ### hadAnimationGuid
 
@@ -540,7 +563,7 @@ ___
 
 **`Description`**
 
-是否有动画GUID
+是否有动画 GUID
 
 **`Effect`**
 
@@ -550,13 +573,13 @@ ___
 
 `boolean`
 
-是否有动画GUID
+是否有动画 GUID
 
 #### Defined in
 
-Gameplay/index.d.ts:11859
+Gameplay/index.d.ts:11545
 
-___
+---
 
 ### isFiring
 
@@ -564,7 +587,7 @@ ___
 
 **`Description`**
 
-获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
+获取当前状态下 bFiring 的值，一般用于处理全自动开火模式下的自动换弹
 
 **`Effect`**
 
@@ -578,32 +601,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11871
-
-___
-
-### setAnimationGuid
-
-▸ **setAnimationGuid**(`guid`): `void`
-
-**`Description`**
-
-设置动画 GUID
-
-**`Effect`**
-
-客户端调用自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11847
+Gameplay/index.d.ts:11557

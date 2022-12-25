@@ -19,22 +19,22 @@
 
 ### LocationFixed
 
-• **LocationFixed** = ``0``
+• **LocationFixed** = `0`
 
 位置固定
 
 #### Defined in
 
-Gameplay/index.d.ts:1689
+Gameplay/index.d.ts:1837
 
-___
+---
 
 ### LocationFollow
 
-• **LocationFollow** = ``1``
+• **LocationFollow** = `1`
 
 位置跟随目标
 
 #### Defined in
 
-Gameplay/index.d.ts:1691
+Gameplay/index.d.ts:1839

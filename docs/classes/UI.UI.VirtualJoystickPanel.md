@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -31,6 +31,7 @@ usage:客户端
 ### Accessors
 
 - [activeOpacity](UI.UI.VirtualJoystickPanel.md#activeopacity)
+- [autoSizeEnable](UI.UI.VirtualJoystickPanel.md#autosizeenable)
 - [backgroundDisabledImageId](UI.UI.VirtualJoystickPanel.md#backgrounddisabledimageid)
 - [backgroundImageDesigner](UI.UI.VirtualJoystickPanel.md#backgroundimagedesigner)
 - [backgroundImageId](UI.UI.VirtualJoystickPanel.md#backgroundimageid)
@@ -43,14 +44,14 @@ usage:客户端
 - [centerImageId](UI.UI.VirtualJoystickPanel.md#centerimageid)
 - [centerImageSize](UI.UI.VirtualJoystickPanel.md#centerimagesize)
 - [centerTouchImage](UI.UI.VirtualJoystickPanel.md#centertouchimage)
+- [constraints](UI.UI.VirtualJoystickPanel.md#constraints)
+- [controlByMouseEnable](UI.UI.VirtualJoystickPanel.md#controlbymouseenable)
 - [controlType](UI.UI.VirtualJoystickPanel.md#controltype)
 - [desiredSize](UI.UI.VirtualJoystickPanel.md#desiredsize)
-- [enableControlByMouse](UI.UI.VirtualJoystickPanel.md#enablecontrolbymouse)
+- [enable](UI.UI.VirtualJoystickPanel.md#enable)
 - [guid](UI.UI.VirtualJoystickPanel.md#guid)
 - [inActiveOpacity](UI.UI.VirtualJoystickPanel.md#inactiveopacity)
 - [inputScale](UI.UI.VirtualJoystickPanel.md#inputscale)
-- [isControlByMouseEnabled](UI.UI.VirtualJoystickPanel.md#iscontrolbymouseenabled)
-- [isEnabled](UI.UI.VirtualJoystickPanel.md#isenabled)
 - [isHovered](UI.UI.VirtualJoystickPanel.md#ishovered)
 - [isLocationFixed](UI.UI.VirtualJoystickPanel.md#islocationfixed)
 - [name](UI.UI.VirtualJoystickPanel.md#name)
@@ -59,6 +60,7 @@ usage:客户端
 - [onJoyStickUp](UI.UI.VirtualJoystickPanel.md#onjoystickup)
 - [paintSpaceGeometry](UI.UI.VirtualJoystickPanel.md#paintspacegeometry)
 - [parent](UI.UI.VirtualJoystickPanel.md#parent)
+- [position](UI.UI.VirtualJoystickPanel.md#position)
 - [renderOpacity](UI.UI.VirtualJoystickPanel.md#renderopacity)
 - [renderScale](UI.UI.VirtualJoystickPanel.md#renderscale)
 - [renderShear](UI.UI.VirtualJoystickPanel.md#rendershear)
@@ -69,8 +71,10 @@ usage:客户端
 - [tickSpaceGeometry](UI.UI.VirtualJoystickPanel.md#tickspacegeometry)
 - [timeUntilInactive](UI.UI.VirtualJoystickPanel.md#timeuntilinactive)
 - [timeUntilReset](UI.UI.VirtualJoystickPanel.md#timeuntilreset)
+- [transform](UI.UI.VirtualJoystickPanel.md#transform)
 - [visibility](UI.UI.VirtualJoystickPanel.md#visibility)
 - [visible](UI.UI.VirtualJoystickPanel.md#visible)
+- [zOrder](UI.UI.VirtualJoystickPanel.md#zorder)
 
 ### Methods
 
@@ -114,7 +118,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4631
+UI/index.d.ts:4640
 
 • `set` **activeOpacity**(`Value`): `void`
 
@@ -128,8 +132,8 @@ UI/index.d.ts:4631
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description  |
+| :------ | :------- | :----------- |
 | `Value` | `number` | usage:透明度 |
 
 #### Returns
@@ -138,9 +142,65 @@ UI/index.d.ts:4631
 
 #### Defined in
 
-UI/index.d.ts:4637
+UI/index.d.ts:4646
 
-___
+---
+
+### autoSizeEnable
+
+• `get` **autoSizeEnable**(): `boolean`
+
+**`Description`**
+
+获取是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否自动设置大小
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4987
+
+• `set` **autoSizeEnable**(`autoSize`): `void`
+
+**`Description`**
+
+设置是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `autoSize` | `boolean` | usage:是否自动设置大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4981
+
+---
 
 ### backgroundDisabledImageId
 
@@ -148,7 +208,7 @@ ___
 
 **`Description`**
 
-返回背景图片禁用状态图片id
+返回背景图片禁用状态图片 id
 
 **`Effect`**
 
@@ -158,17 +218,17 @@ ___
 
 `string`
 
-返回背景图片禁用状态图片id
+返回背景图片禁用状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4715
+UI/index.d.ts:4724
 
 • `set` **backgroundDisabledImageId**(`id`): `void`
 
 **`Description`**
 
-设置背景图片禁用状态图片id
+设置背景图片禁用状态图片 id
 
 **`Effect`**
 
@@ -176,9 +236,9 @@ UI/index.d.ts:4715
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -186,9 +246,9 @@ UI/index.d.ts:4715
 
 #### Defined in
 
-UI/index.d.ts:4721
+UI/index.d.ts:4730
 
-___
+---
 
 ### backgroundImageDesigner
 
@@ -196,7 +256,7 @@ ___
 
 **`Description`**
 
-返回输入的背景贴图设置，包括 普通的 点击的  不启用的
+返回输入的背景贴图设置，包括 普通的 点击的 不启用的
 
 **`Effect`**
 
@@ -206,11 +266,11 @@ ___
 
 [`JoystickStyleDesigner`](UI.UI.JoystickStyleDesigner.md)
 
-返回输入的背景贴图设置，包括 普通的 点击的  不启用的
+返回输入的背景贴图设置，包括 普通的 点击的 不启用的
 
 #### Defined in
 
-UI/index.d.ts:4517
+UI/index.d.ts:4526
 
 • `set` **backgroundImageDesigner**(`inImage`): `void`
 
@@ -224,8 +284,8 @@ UI/index.d.ts:4517
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                                      | Description        |
+| :-------- | :-------------------------------------------------------- | :----------------- |
 | `inImage` | [`JoystickStyleDesigner`](UI.UI.JoystickStyleDesigner.md) | usage:背景贴图设置 |
 
 #### Returns
@@ -234,9 +294,9 @@ UI/index.d.ts:4517
 
 #### Defined in
 
-UI/index.d.ts:4511
+UI/index.d.ts:4520
 
-___
+---
 
 ### backgroundImageId
 
@@ -244,7 +304,7 @@ ___
 
 **`Description`**
 
-返回中心图片普通状态图片id
+返回中心图片普通状态图片 id
 
 **`Effect`**
 
@@ -254,17 +314,17 @@ ___
 
 `string`
 
-返回中心图片普通状态图片id
+返回中心图片普通状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4691
+UI/index.d.ts:4700
 
 • `set` **backgroundImageId**(`id`): `void`
 
 **`Description`**
 
-设置背景图片普通状态图片id
+设置背景图片普通状态图片 id
 
 **`Effect`**
 
@@ -272,9 +332,9 @@ UI/index.d.ts:4691
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -282,9 +342,9 @@ UI/index.d.ts:4691
 
 #### Defined in
 
-UI/index.d.ts:4697
+UI/index.d.ts:4706
 
-___
+---
 
 ### backgroundImageSize
 
@@ -306,7 +366,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4571
+UI/index.d.ts:4580
 
 • `set` **backgroundImageSize**(`inSize`): `void`
 
@@ -320,8 +380,8 @@ UI/index.d.ts:4571
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                              | Description            |
+| :------- | :-------------------------------- | :--------------------- |
 | `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:摇杆背景图片大小 |
 
 #### Returns
@@ -330,9 +390,9 @@ UI/index.d.ts:4571
 
 #### Defined in
 
-UI/index.d.ts:4577
+UI/index.d.ts:4586
 
-___
+---
 
 ### backgroundTouchImageId
 
@@ -340,7 +400,7 @@ ___
 
 **`Description`**
 
-返回背景图片按压状态图片id
+返回背景图片按压状态图片 id
 
 **`Effect`**
 
@@ -350,17 +410,17 @@ ___
 
 `string`
 
-返回背景图片按压状态图片id
+返回背景图片按压状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4703
+UI/index.d.ts:4712
 
 • `set` **backgroundTouchImageId**(`id`): `void`
 
 **`Description`**
 
-设置背景图片按压状态图片id
+设置背景图片按压状态图片 id
 
 **`Effect`**
 
@@ -368,9 +428,9 @@ UI/index.d.ts:4703
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -378,9 +438,9 @@ UI/index.d.ts:4703
 
 #### Defined in
 
-UI/index.d.ts:4709
+UI/index.d.ts:4718
 
-___
+---
 
 ### cachedGeometry
 
@@ -406,9 +466,9 @@ Widget.cachedGeometry
 
 #### Defined in
 
-UI/index.d.ts:4893
+UI/index.d.ts:4897
 
-___
+---
 
 ### center
 
@@ -416,7 +476,7 @@ ___
 
 **`Description`**
 
-返回输入的是摇杆中心位置，  不符合预期会返回默认值
+返回输入的是摇杆中心位置， 不符合预期会返回默认值
 
 **`Effect`**
 
@@ -426,11 +486,11 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-回输入的是摇杆中心位置，  不符合预期会返回默认值
+回输入的是摇杆中心位置， 不符合预期会返回默认值
 
 #### Defined in
 
-UI/index.d.ts:4547
+UI/index.d.ts:4556
 
 • `set` **center**(`inValue`): `void`
 
@@ -444,8 +504,8 @@ UI/index.d.ts:4547
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                              | Description        |
+| :-------- | :-------------------------------- | :----------------- |
 | `inValue` | [`Vector2`](Type.Type.Vector2.md) | usage:新的中心位置 |
 
 #### Returns
@@ -454,9 +514,9 @@ UI/index.d.ts:4547
 
 #### Defined in
 
-UI/index.d.ts:4553
+UI/index.d.ts:4562
 
-___
+---
 
 ### centerDisableImageId
 
@@ -464,7 +524,7 @@ ___
 
 **`Description`**
 
-返回中心图片禁用状态图片id
+返回中心图片禁用状态图片 id
 
 **`Effect`**
 
@@ -474,17 +534,17 @@ ___
 
 `string`
 
-返回中心图片禁用状态图片id
+返回中心图片禁用状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4679
+UI/index.d.ts:4688
 
 • `set` **centerDisableImageId**(`id`): `void`
 
 **`Description`**
 
-设置中心图片禁用状态图片id
+设置中心图片禁用状态图片 id
 
 **`Effect`**
 
@@ -492,9 +552,9 @@ UI/index.d.ts:4679
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -502,9 +562,9 @@ UI/index.d.ts:4679
 
 #### Defined in
 
-UI/index.d.ts:4685
+UI/index.d.ts:4694
 
-___
+---
 
 ### centerImageDesigner
 
@@ -512,7 +572,7 @@ ___
 
 **`Description`**
 
-返回输入的中心贴图设置，包括 普通的 点击的  不启用的
+返回输入的中心贴图设置，包括 普通的 点击的 不启用的
 
 **`Effect`**
 
@@ -526,13 +586,13 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4499
+UI/index.d.ts:4508
 
 • `set` **centerImageDesigner**(`inImage`): `void`
 
 **`Description`**
 
-设置输入的中心贴图设置，包括 普通的 点击的  不启用的
+设置输入的中心贴图设置，包括 普通的 点击的 不启用的
 
 **`Effect`**
 
@@ -540,8 +600,8 @@ UI/index.d.ts:4499
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                                      | Description        |
+| :-------- | :-------------------------------------------------------- | :----------------- |
 | `inImage` | [`JoystickStyleDesigner`](UI.UI.JoystickStyleDesigner.md) | usage:中心贴图设置 |
 
 #### Returns
@@ -550,9 +610,9 @@ UI/index.d.ts:4499
 
 #### Defined in
 
-UI/index.d.ts:4505
+UI/index.d.ts:4514
 
-___
+---
 
 ### centerImageId
 
@@ -560,7 +620,7 @@ ___
 
 **`Description`**
 
-返回中心图片普通状态图片id
+返回中心图片普通状态图片 id
 
 **`Effect`**
 
@@ -570,17 +630,17 @@ ___
 
 `string`
 
-返回中心图片普通状态图片id
+返回中心图片普通状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4655
+UI/index.d.ts:4664
 
 • `set` **centerImageId**(`id`): `void`
 
 **`Description`**
 
-设置中心图片普通状态图片id
+设置中心图片普通状态图片 id
 
 **`Effect`**
 
@@ -588,9 +648,9 @@ UI/index.d.ts:4655
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -598,9 +658,9 @@ UI/index.d.ts:4655
 
 #### Defined in
 
-UI/index.d.ts:4661
+UI/index.d.ts:4670
 
-___
+---
 
 ### centerImageSize
 
@@ -622,7 +682,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4559
+UI/index.d.ts:4568
 
 • `set` **centerImageSize**(`inSize`): `void`
 
@@ -636,8 +696,8 @@ UI/index.d.ts:4559
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                              | Description            |
+| :------- | :-------------------------------- | :--------------------- |
 | `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:摇杆按钮图片大小 |
 
 #### Returns
@@ -646,9 +706,9 @@ UI/index.d.ts:4559
 
 #### Defined in
 
-UI/index.d.ts:4565
+UI/index.d.ts:4574
 
-___
+---
 
 ### centerTouchImage
 
@@ -656,7 +716,7 @@ ___
 
 **`Description`**
 
-返回中心图片按压状态图片id
+返回中心图片按压状态图片 id
 
 **`Effect`**
 
@@ -666,17 +726,17 @@ ___
 
 `string`
 
-返回中心图片按压状态图片id
+返回中心图片按压状态图片 id
 
 #### Defined in
 
-UI/index.d.ts:4667
+UI/index.d.ts:4676
 
 • `set` **centerTouchImage**(`id`): `void`
 
 **`Description`**
 
-置中心图片按压状态图片id
+置中心图片按压状态图片 id
 
 **`Effect`**
 
@@ -684,9 +744,9 @@ UI/index.d.ts:4667
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `string` | usage:资源id |
+| Name | Type     | Description   |
+| :--- | :------- | :------------ |
+| `id` | `string` | usage:资源 id |
 
 #### Returns
 
@@ -694,9 +754,113 @@ UI/index.d.ts:4667
 
 #### Defined in
 
-UI/index.d.ts:4673
+UI/index.d.ts:4682
 
-___
+---
+
+### constraints
+
+• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+**`Description`**
+
+获取控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+控件的布局
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4939
+
+• `set` **constraints**(`ininconstraints`): `void`
+
+**`Description`**
+
+设置控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                                                  | Description      |
+| :---------------- | :---------------------------------------------------- | :--------------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4933
+
+---
+
+### controlByMouseEnable
+
+• `get` **controlByMouseEnable**(): `boolean`
+
+**`Description`**
+
+获取是否被鼠标控制，只作用于 PC 端
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否被鼠标控制
+
+#### Defined in
+
+UI/index.d.ts:4532
+
+• `set` **controlByMouseEnable**(`controlByMouse`): `void`
+
+**`Description`**
+
+设置是否被鼠标控制，只作用于 PC 端
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name             | Type      | Description           |
+| :--------------- | :-------- | :-------------------- |
+| `controlByMouse` | `boolean` | usage: 是否被鼠标控制 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+UI/index.d.ts:4538
+
+---
 
 ### controlType
 
@@ -704,7 +868,7 @@ ___
 
 **`Description`**
 
-返回输入的是摇杆类型，  不符合预期会返回默认值
+返回输入的是摇杆类型， 不符合预期会返回默认值
 
 **`Effect`**
 
@@ -718,7 +882,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4535
+UI/index.d.ts:4544
 
 • `set` **controlType**(`NewControlType`): `void`
 
@@ -732,8 +896,8 @@ UI/index.d.ts:4535
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name             | Type                                                       | Description    |
+| :--------------- | :--------------------------------------------------------- | :------------- |
 | `NewControlType` | [`CameraControlType`](../enums/UI.UI.CameraControlType.md) | usage:摇杆类型 |
 
 #### Returns
@@ -742,9 +906,9 @@ UI/index.d.ts:4535
 
 #### Defined in
 
-UI/index.d.ts:4541
+UI/index.d.ts:4550
 
-___
+---
 
 ### desiredSize
 
@@ -770,17 +934,41 @@ Widget.desiredSize
 
 #### Defined in
 
-UI/index.d.ts:4827
+UI/index.d.ts:4831
 
-___
+---
 
-### enableControlByMouse
+### enable
 
-• `set` **enableControlByMouse**(`controlByMouse`): `void`
+• `get` **enable**(): `boolean`
 
 **`Description`**
 
-设置是否被鼠标控制，只作用于PC端
+是否可用
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+boolean
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4807
+
+• `set` **enable**(`isEnable`): `void`
+
+**`Description`**
+
+设置可用性
 
 **`Effect`**
 
@@ -788,19 +976,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `controlByMouse` | `boolean` | usage: 是否被鼠标控制 |
+| Name       | Type      | Description          |
+| :--------- | :-------- | :------------------- |
+| `isEnable` | `boolean` | usage:可用性 boolean |
 
 #### Returns
 
 `void`
 
+返回设置结果
+
+#### Inherited from
+
+Widget.enable
+
 #### Defined in
 
-UI/index.d.ts:4529
+UI/index.d.ts:4814
 
-___
+---
 
 ### guid
 
@@ -808,7 +1002,7 @@ ___
 
 **`Description`**
 
-获取控件GUID
+获取控件 GUID
 
 **`Effect`**
 
@@ -818,7 +1012,7 @@ ___
 
 `string`
 
-控件GUID
+控件 GUID
 
 #### Inherited from
 
@@ -826,9 +1020,9 @@ Widget.guid
 
 #### Defined in
 
-UI/index.d.ts:4911
+UI/index.d.ts:4915
 
-___
+---
 
 ### inActiveOpacity
 
@@ -850,7 +1044,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4643
+UI/index.d.ts:4652
 
 • `set` **inActiveOpacity**(`Value`): `void`
 
@@ -864,8 +1058,8 @@ UI/index.d.ts:4643
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description  |
+| :------ | :------- | :----------- |
 | `Value` | `number` | usage:透明度 |
 
 #### Returns
@@ -874,9 +1068,9 @@ UI/index.d.ts:4643
 
 #### Defined in
 
-UI/index.d.ts:4649
+UI/index.d.ts:4658
 
-___
+---
 
 ### inputScale
 
@@ -898,7 +1092,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4583
+UI/index.d.ts:4592
 
 • `set` **inputScale**(`inScale`): `void`
 
@@ -912,8 +1106,8 @@ UI/index.d.ts:4583
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                              | Description        |
+| :-------- | :-------------------------------- | :----------------- |
 | `inScale` | [`Vector2`](Type.Type.Vector2.md) | usage:新的输入比例 |
 
 #### Returns
@@ -922,91 +1116,9 @@ UI/index.d.ts:4583
 
 #### Defined in
 
-UI/index.d.ts:4589
+UI/index.d.ts:4598
 
-___
-
-### isControlByMouseEnabled
-
-• `get` **isControlByMouseEnabled**(): `boolean`
-
-**`Description`**
-
-获取是否被鼠标控制，只作用于PC端
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-是否被鼠标控制
-
-#### Defined in
-
-UI/index.d.ts:4523
-
-___
-
-### isEnabled
-
-• `get` **isEnabled**(): `boolean`
-
-**`Description`**
-
-是否可用
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-boolean
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4797
-
-• `set` **isEnabled**(`enable`): `void`
-
-**`Description`**
-
-设置可用性
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` | usage:可用性boolean |
-
-#### Returns
-
-`void`
-
-返回设置结果
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4804
-
-___
+---
 
 ### isHovered
 
@@ -1014,7 +1126,7 @@ ___
 
 **`Description`**
 
-是否是hovered
+是否是 hovered
 
 **`Effect`**
 
@@ -1032,9 +1144,9 @@ Widget.isHovered
 
 #### Defined in
 
-UI/index.d.ts:4816
+UI/index.d.ts:4820
 
-___
+---
 
 ### isLocationFixed
 
@@ -1056,7 +1168,7 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4595
+UI/index.d.ts:4604
 
 • `set` **isLocationFixed**(`enable`): `void`
 
@@ -1070,8 +1182,8 @@ UI/index.d.ts:4595
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type      | Description            |
+| :------- | :-------- | :--------------------- |
 | `enable` | `boolean` | usage:是否固定摇杆位置 |
 
 #### Returns
@@ -1080,9 +1192,9 @@ UI/index.d.ts:4595
 
 #### Defined in
 
-UI/index.d.ts:4601
+UI/index.d.ts:4610
 
-___
+---
 
 ### name
 
@@ -1108,7 +1220,7 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4773
+UI/index.d.ts:4783
 
 • `set` **name**(`name`): `void`
 
@@ -1122,9 +1234,9 @@ UI/index.d.ts:4773
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -1136,9 +1248,9 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4767
+UI/index.d.ts:4777
 
-___
+---
 
 ### onInputDir
 
@@ -1160,9 +1272,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4476
+UI/index.d.ts:4485
 
-___
+---
 
 ### onJoyStickDown
 
@@ -1170,7 +1282,7 @@ ___
 
 **`Description`**
 
-触发摇杆按下事件
+摇杆按下事件的代理
 
 **`Effect`**
 
@@ -1180,13 +1292,13 @@ ___
 
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
-按下摇杆事件
+按下摇杆事件的代理
 
 #### Defined in
 
-UI/index.d.ts:4487
+UI/index.d.ts:4496
 
-___
+---
 
 ### onJoyStickUp
 
@@ -1194,7 +1306,7 @@ ___
 
 **`Description`**
 
-触发摇杆抬起事件
+摇杆抬起事件的代理
 
 **`Effect`**
 
@@ -1204,13 +1316,13 @@ ___
 
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
-抬起摇杆事件
+抬起摇杆事件的代理
 
 #### Defined in
 
-UI/index.d.ts:4493
+UI/index.d.ts:4502
 
-___
+---
 
 ### paintSpaceGeometry
 
@@ -1218,7 +1330,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于渲染Widget的几何信息
+获取最后一次用于渲染 Widget 的几何信息
 
 **`Effect`**
 
@@ -1228,7 +1340,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染Widget的几何信息
+返回最后一次用于渲染 Widget 的几何信息
 
 #### Inherited from
 
@@ -1236,9 +1348,9 @@ Widget.paintSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4905
+UI/index.d.ts:4909
 
-___
+---
 
 ### parent
 
@@ -1264,9 +1376,65 @@ Widget.parent
 
 #### Defined in
 
-UI/index.d.ts:4755
+UI/index.d.ts:4764
 
-___
+---
+
+### position
+
+• `get` **position**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+**`Description`**
+
+获取控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+控件的位置
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4951
+
+• `set` **position**(`inFigmaPosition`): `void`
+
+**`Description`**
+
+设置控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                              | Description      |
+| :---------------- | :-------------------------------- | :--------------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4945
+
+---
 
 ### renderOpacity
 
@@ -1292,7 +1460,7 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4887
+UI/index.d.ts:4891
 
 • `set` **renderOpacity**(`InOpacity`): `void`
 
@@ -1306,8 +1474,8 @@ UI/index.d.ts:4887
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| :---------- | :------- | :----------- |
 | `InOpacity` | `number` | usage:透明度 |
 
 #### Returns
@@ -1320,9 +1488,9 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4881
+UI/index.d.ts:4885
 
-___
+---
 
 ### renderScale
 
@@ -1348,7 +1516,7 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4875
+UI/index.d.ts:4879
 
 • `set` **renderScale**(`scale`): `void`
 
@@ -1362,8 +1530,8 @@ UI/index.d.ts:4875
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
 
 #### Returns
@@ -1376,9 +1544,9 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4869
+UI/index.d.ts:4873
 
-___
+---
 
 ### renderShear
 
@@ -1404,7 +1572,7 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4863
+UI/index.d.ts:4867
 
 • `set` **renderShear**(`shear`): `void`
 
@@ -1418,8 +1586,8 @@ UI/index.d.ts:4863
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description        |
+| :------ | :-------------------------------- | :----------------- |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
 
 #### Returns
@@ -1432,9 +1600,9 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4857
+UI/index.d.ts:4861
 
-___
+---
 
 ### renderTransformAngle
 
@@ -1460,7 +1628,7 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4839
+UI/index.d.ts:4843
 
 • `set` **renderTransformAngle**(`o`): `void`
 
@@ -1474,9 +1642,9 @@ UI/index.d.ts:4839
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `o` | `number` | usage:渲染角度 |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
+| `o`  | `number` | usage:渲染角度 |
 
 #### Returns
 
@@ -1488,9 +1656,9 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4833
+UI/index.d.ts:4837
 
-___
+---
 
 ### renderTransformPivot
 
@@ -1516,7 +1684,7 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4851
+UI/index.d.ts:4855
 
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
@@ -1530,8 +1698,8 @@ UI/index.d.ts:4851
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
 
 #### Returns
@@ -1544,9 +1712,9 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4845
+UI/index.d.ts:4849
 
-___
+---
 
 ### size
 
@@ -1554,7 +1722,7 @@ ___
 
 **`Description`**
 
-获取控件实际大小，需要在添加后才能使用
+获取大小
 
 **`Effect`**
 
@@ -1564,7 +1732,7 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-控件大小
+FVector2D
 
 #### Inherited from
 
@@ -1572,17 +1740,49 @@ Widget.size
 
 #### Defined in
 
-UI/index.d.ts:4810
+UI/index.d.ts:4963
 
-___
+• `set` **size**(`inSize`): `void`
+
+**`Description`**
+
+设置控件的大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name     | Type                              | Description    |
+| :------- | :-------------------------------- | :------------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.size
+
+#### Defined in
+
+UI/index.d.ts:4957
+
+---
 
 ### slot
 
 • `get` **slot**(): [`UISlot`](UI.UI.UISlot.md)
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取Slot槽
+获取插槽
 
 **`Effect`**
 
@@ -1592,7 +1792,7 @@ ___
 
 [`UISlot`](UI.UI.UISlot.md)
 
-返回Slot槽
+返回插槽
 
 #### Inherited from
 
@@ -1600,9 +1800,9 @@ Widget.slot
 
 #### Defined in
 
-UI/index.d.ts:4761
+UI/index.d.ts:4771
 
-___
+---
 
 ### tickSpaceGeometry
 
@@ -1610,7 +1810,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于驱动Widget Tick的几何信息
+获取最后一次用于驱动 Widget Tick 的几何信息
 
 **`Effect`**
 
@@ -1620,7 +1820,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动Widget Tick的几何信息
+返回最后一次用于驱动 Widget Tick 的几何信息
 
 #### Inherited from
 
@@ -1628,9 +1828,9 @@ Widget.tickSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4899
+UI/index.d.ts:4903
 
-___
+---
 
 ### timeUntilInactive
 
@@ -1652,7 +1852,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4607
+UI/index.d.ts:4616
 
 • `set` **timeUntilInactive**(`Value`): `void`
 
@@ -1666,8 +1866,8 @@ UI/index.d.ts:4607
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description                            |
+| :------ | :------- | :------------------------------------- |
 | `Value` | `number` | usage:进入未激活状态的时间，以秒为单位 |
 
 #### Returns
@@ -1676,9 +1876,9 @@ UI/index.d.ts:4607
 
 #### Defined in
 
-UI/index.d.ts:4613
+UI/index.d.ts:4622
 
-___
+---
 
 ### timeUntilReset
 
@@ -1696,11 +1896,11 @@ ___
 
 `number`
 
-复位时间  以秒为单位
+复位时间 以秒为单位
 
 #### Defined in
 
-UI/index.d.ts:4619
+UI/index.d.ts:4628
 
 • `set` **timeUntilReset**(`Value`): `void`
 
@@ -1714,8 +1914,8 @@ UI/index.d.ts:4619
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description               |
+| :------ | :------- | :------------------------ |
 | `Value` | `number` | usage:复位时间 以秒为单位 |
 
 #### Returns
@@ -1724,9 +1924,65 @@ UI/index.d.ts:4619
 
 #### Defined in
 
-UI/index.d.ts:4625
+UI/index.d.ts:4634
 
-___
+---
+
+### transform
+
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+**`Description`**
+
+得到控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+控件的大小和位置
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4927
+
+• `set` **transform**(`inTransform`): `void`
+
+**`Description`**
+
+设置控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name          | Type                                  | Description    |
+| :------------ | :------------------------------------ | :------------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4921
+
+---
 
 ### visibility
 
@@ -1752,7 +2008,7 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4785
+UI/index.d.ts:4795
 
 • `set` **visibility**(`Visibility`): `void`
 
@@ -1766,8 +2022,8 @@ UI/index.d.ts:4785
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                   | Description  |
+| :----------- | :----------------------------------------------------- | :----------- |
 | `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
 
 #### Returns
@@ -1780,9 +2036,9 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4779
+UI/index.d.ts:4789
 
-___
+---
 
 ### visible
 
@@ -1808,7 +2064,63 @@ Widget.visible
 
 #### Defined in
 
-UI/index.d.ts:4791
+UI/index.d.ts:4801
+
+---
+
+### zOrder
+
+• `get` **zOrder**(): `number`
+
+**`Description`**
+
+获取 zorder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`number`
+
+zorder
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4975
+
+• `set` **zOrder**(`InZOrder`): `void`
+
+**`Description`**
+
+设置 zoder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type     | Description          |
+| :--------- | :------- | :------------------- |
+| `InZOrder` | `number` | usage:值越大在越上层 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4969
 
 ## Methods
 
@@ -1834,9 +2146,9 @@ UI/index.d.ts:4791
 
 #### Defined in
 
-UI/index.d.ts:4742
+UI/index.d.ts:4751
 
-___
+---
 
 ### equal
 
@@ -1852,8 +2164,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                        | Description                  |
+| :----- | :-------------------------- | :--------------------------- |
 | `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
 
 #### Returns
@@ -1868,9 +2180,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4749
+UI/index.d.ts:4758
 
-___
+---
 
 ### invalidateLayoutAndVolatility
 
@@ -1894,9 +2206,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4821
+UI/index.d.ts:4825
 
-___
+---
 
 ### resetJoyStick
 
@@ -1916,9 +2228,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4481
+UI/index.d.ts:4490
 
-___
+---
 
 ### setVisibility
 
@@ -1934,8 +2246,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                   | Description  |
+| :----------- | :----------------------------------------------------- | :----------- |
 | `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
 
 #### Returns
@@ -1944,9 +2256,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4470
+UI/index.d.ts:4479
 
-___
+---
 
 ### newObject
 
@@ -1962,10 +2274,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Outer?` | [`Widget`](UI.UI.Widget.md) | usage:创建控件的外Outer对象 default:null |
-| `InName?` | `string` | usage:创建控件的名称 default:null |
+| Name      | Type                        | Description                                |
+| :-------- | :-------------------------- | :----------------------------------------- |
+| `Outer?`  | [`Widget`](UI.UI.Widget.md) | usage:创建控件的外 Outer 对象 default:null |
+| `InName?` | `string`                    | usage:创建控件的名称 default:null          |
 
 #### Returns
 
@@ -1975,9 +2287,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4451
+UI/index.d.ts:4460
 
-___
+---
 
 ### newObjectAndAdd
 
@@ -1985,7 +2297,7 @@ ___
 
 **`Description`**
 
-创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
+创建 TouchPad 控件 当 Outer 和 InName 与已有的对象相同时，旧的对象会被销毁
 
 **`Effect`**
 
@@ -1993,11 +2305,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InCanvas?` | [`Canvas`](UI.UI.Canvas.md) | usage:父节点 default:null |
-| `Outer?` | [`Widget`](UI.UI.Widget.md) | usage:创建控件的外Outer对象 default:null |
-| `InName?` | `string` | usage: 创建控件的名称 default: null |
+| Name        | Type                        | Description                                |
+| :---------- | :-------------------------- | :----------------------------------------- |
+| `InCanvas?` | [`Canvas`](UI.UI.Canvas.md) | usage:父节点 default:null                  |
+| `Outer?`    | [`Widget`](UI.UI.Widget.md) | usage:创建控件的外 Outer 对象 default:null |
+| `InName?`   | `string`                    | usage: 创建控件的名称 default: null        |
 
 #### Returns
 
@@ -2007,4 +2319,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4460
+UI/index.d.ts:4469

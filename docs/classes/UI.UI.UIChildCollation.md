@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -43,14 +43,14 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `h` | [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) | usage:水平应用规则 |
-| `v` | [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md) | usage:垂直使用规则 |
+| Name | Type                                                               | Description        |
+| :--- | :----------------------------------------------------------------- | :----------------- |
+| `h`  | [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) | usage:水平应用规则 |
+| `v`  | [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md)     | usage:垂直使用规则 |
 
 #### Defined in
 
-UI/index.d.ts:3797
+UI/index.d.ts:3806
 
 ## Properties
 
@@ -64,9 +64,9 @@ UI/index.d.ts:3797
 
 #### Defined in
 
-UI/index.d.ts:3799
+UI/index.d.ts:3808
 
-___
+---
 
 ### verticalCollation
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3801
+UI/index.d.ts:3810

@@ -20,34 +20,34 @@
 
 ### FromParent
 
-• **FromParent** = ``0``
+• **FromParent** = `0`
 
 跟随父节点
 
 #### Defined in
 
-Type/index.d.ts:182
+Type/index.d.ts:207
 
-___
+---
 
 ### Off
 
-• **Off** = ``2``
+• **Off** = `2`
 
 关
 
 #### Defined in
 
-Type/index.d.ts:190
+Type/index.d.ts:215
 
-___
+---
 
 ### On
 
-• **On** = ``1``
+• **On** = `1`
 
 开
 
 #### Defined in
 
-Type/index.d.ts:186
+Type/index.d.ts:211

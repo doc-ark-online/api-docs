@@ -12,42 +12,42 @@
 
 ### Enumeration Members
 
-- [fourDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#fourdrive)
-- [frontDirve](Gameplay.Gameplay.VehicleDriveMode4W.md#frontdirve)
-- [rearDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#reardrive)
+- [FourDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#fourdrive)
+- [FrontDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#frontdrive)
+- [RearDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#reardrive)
 
 ## Enumeration Members
 
-### fourDrive
+### FourDrive
 
-• **fourDrive** = ``0``
+• **FourDrive** = `0`
 
 四驱
 
 #### Defined in
 
-Gameplay/index.d.ts:10370
+Gameplay/index.d.ts:10444
 
-___
+---
 
-### frontDirve
+### FrontDrive
 
-• **frontDirve** = ``1``
+• **FrontDrive** = `1`
 
 前驱
 
 #### Defined in
 
-Gameplay/index.d.ts:10372
+Gameplay/index.d.ts:10446
 
-___
+---
 
-### rearDrive
+### RearDrive
 
-• **rearDrive** = ``2``
+• **RearDrive** = `2`
 
 后驱
 
 #### Defined in
 
-Gameplay/index.d.ts:10374
+Gameplay/index.d.ts:10448

@@ -10,7 +10,7 @@ SuoWei
 
 **`Description`**
 
-由分量 (x,y,z,w) 组成的4D齐次向量
+由分量 (x,y,z,w) 组成的 4D 齐次向量
 
 **`Network Status`**
 
@@ -92,13 +92,13 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description                   |
+| :--- | :------- | :---------------------------- |
 | `x?` | `number` | usage:给定的 x 值 default:0.0 |
 
 #### Defined in
 
-Type/index.d.ts:4242
+Type/index.d.ts:4209
 
 • **new Vector4**(`x`, `y`, `z`, `w`)
 
@@ -108,16 +108,16 @@ Type/index.d.ts:4242
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | usage:给定的 x 值 default:0.0 |
-| `y` | `number` | usage:给定的 y 值 default:0.0 |
-| `z` | `number` | usage:给定的 z 值 default:0.0 |
-| `w` | `number` | usage:给定的 w 值 default:0.0 |
+| Name | Type     | Description                   |
+| :--- | :------- | :---------------------------- |
+| `x`  | `number` | usage:给定的 x 值 default:0.0 |
+| `y`  | `number` | usage:给定的 y 值 default:0.0 |
+| `z`  | `number` | usage:给定的 z 值 default:0.0 |
+| `w`  | `number` | usage:给定的 w 值 default:0.0 |
 
 #### Defined in
 
-Type/index.d.ts:4250
+Type/index.d.ts:4217
 
 ## Properties
 
@@ -131,9 +131,9 @@ w 分量
 
 #### Defined in
 
-Type/index.d.ts:4237
+Type/index.d.ts:4204
 
-___
+---
 
 ### x
 
@@ -145,9 +145,9 @@ x 分量
 
 #### Defined in
 
-Type/index.d.ts:4225
+Type/index.d.ts:4192
 
-___
+---
 
 ### y
 
@@ -159,9 +159,9 @@ y 分量
 
 #### Defined in
 
-Type/index.d.ts:4229
+Type/index.d.ts:4196
 
-___
+---
 
 ### z
 
@@ -173,7 +173,7 @@ z 分量
 
 #### Defined in
 
-Type/index.d.ts:4233
+Type/index.d.ts:4200
 
 ## Accessors
 
@@ -191,9 +191,9 @@ Type/index.d.ts:4233
 
 #### Defined in
 
-Type/index.d.ts:4312
+Type/index.d.ts:4279
 
-___
+---
 
 ### magnitude
 
@@ -209,9 +209,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4320
+Type/index.d.ts:4287
 
-___
+---
 
 ### negative
 
@@ -227,9 +227,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4324
+Type/index.d.ts:4291
 
-___
+---
 
 ### normalized
 
@@ -245,9 +245,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4328
+Type/index.d.ts:4295
 
-___
+---
 
 ### sqrLength
 
@@ -263,9 +263,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4308
+Type/index.d.ts:4275
 
-___
+---
 
 ### sqrMagnitude
 
@@ -281,9 +281,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4316
+Type/index.d.ts:4283
 
-___
+---
 
 ### negOne
 
@@ -299,9 +299,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3960
+Type/index.d.ts:3927
 
-___
+---
 
 ### one
 
@@ -317,9 +317,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3956
+Type/index.d.ts:3923
 
-___
+---
 
 ### zero
 
@@ -335,7 +335,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3952
+Type/index.d.ts:3919
 
 ## Methods
 
@@ -353,9 +353,9 @@ Type/index.d.ts:3952
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector4`](Type.Type.Vector4.md) | usage:相加的向量对象 |
+| Name | Type                              | Description          |
+| :--- | :-------------------------------- | :------------------- |
+| `v`  | [`Vector4`](Type.Type.Vector4.md) | usage:相加的向量对象 |
 
 #### Returns
 
@@ -365,9 +365,9 @@ Type/index.d.ts:3952
 
 #### Defined in
 
-Type/index.d.ts:4257
+Type/index.d.ts:4224
 
-___
+---
 
 ### clone
 
@@ -389,9 +389,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4349
+Type/index.d.ts:4316
 
-___
+---
 
 ### divide
 
@@ -407,9 +407,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | usage:相除的向量对象 |
+| Name | Type     | Description          |
+| :--- | :------- | :------------------- |
+| `v`  | `number` | usage:相除的向量对象 |
 
 #### Returns
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4285
+Type/index.d.ts:4252
 
 ▸ **divide**(`v`): [`Vector4`](Type.Type.Vector4.md)
 
@@ -433,9 +433,9 @@ Type/index.d.ts:4285
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector4`](Type.Type.Vector4.md) | usage:每个分量除以的参数 |
+| Name | Type                              | Description              |
+| :--- | :-------------------------------- | :----------------------- |
+| `v`  | [`Vector4`](Type.Type.Vector4.md) | usage:每个分量除以的参数 |
 
 #### Returns
 
@@ -445,9 +445,9 @@ Type/index.d.ts:4285
 
 #### Defined in
 
-Type/index.d.ts:4292
+Type/index.d.ts:4259
 
-___
+---
 
 ### equals
 
@@ -455,7 +455,7 @@ ___
 
 **`Description`**
 
-判断当前向量是否在误差范围内与向量a相等
+判断当前向量是否在误差范围内与向量 a 相等
 
 **`Effect`**
 
@@ -463,10 +463,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `epsilon?` | `number` | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name       | Type                              | Description                                    |
+| :--------- | :-------------------------------- | :--------------------------------------------- |
+| `a`        | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                                   |
+| `epsilon?` | `number`                          | usage:最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
@@ -476,9 +476,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4343
+Type/index.d.ts:4310
 
-___
+---
 
 ### fromString
 
@@ -494,8 +494,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description        |
+| :---- | :------- | :----------------- |
 | `str` | `string` | usage:读取的字符串 |
 
 #### Returns
@@ -504,9 +504,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4298
+Type/index.d.ts:4265
 
-___
+---
 
 ### multiply
 
@@ -522,9 +522,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector4`](Type.Type.Vector4.md) | usage:相乘的向量对象 |
+| Name | Type                              | Description          |
+| :--- | :-------------------------------- | :------------------- |
+| `v`  | [`Vector4`](Type.Type.Vector4.md) | usage:相乘的向量对象 |
 
 #### Returns
 
@@ -534,7 +534,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4271
+Type/index.d.ts:4238
 
 ▸ **multiply**(`v`): [`Vector4`](Type.Type.Vector4.md)
 
@@ -548,9 +548,9 @@ Type/index.d.ts:4271
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | usage:每个分量乘以的参数 |
+| Name | Type     | Description              |
+| :--- | :------- | :----------------------- |
+| `v`  | `number` | usage:每个分量乘以的参数 |
 
 #### Returns
 
@@ -560,9 +560,9 @@ Type/index.d.ts:4271
 
 #### Defined in
 
-Type/index.d.ts:4278
+Type/index.d.ts:4245
 
-___
+---
 
 ### normalize
 
@@ -584,9 +584,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4355
+Type/index.d.ts:4322
 
-___
+---
 
 ### strictEquals
 
@@ -594,7 +594,7 @@ ___
 
 **`Description`**
 
-判断当前向量是否与向量a相等
+判断当前向量是否与向量 a 相等
 
 **`Effect`**
 
@@ -602,9 +602,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
 
 #### Returns
 
@@ -614,9 +614,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4335
+Type/index.d.ts:4302
 
-___
+---
 
 ### subtract
 
@@ -632,9 +632,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector4`](Type.Type.Vector4.md) | usage:相减的向量对象 |
+| Name | Type                              | Description          |
+| :--- | :-------------------------------- | :------------------- |
+| `v`  | [`Vector4`](Type.Type.Vector4.md) | usage:相减的向量对象 |
 
 #### Returns
 
@@ -644,9 +644,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4264
+Type/index.d.ts:4231
 
-___
+---
 
 ### toString
 
@@ -668,9 +668,9 @@ Vector4 对象值的字符串
 
 #### Defined in
 
-Type/index.d.ts:4304
+Type/index.d.ts:4271
 
-___
+---
 
 ### add
 
@@ -678,7 +678,7 @@ ___
 
 **`Description`**
 
-计算ab两个向量相加
+计算 ab 两个向量相加
 
 **`Effect`**
 
@@ -690,10 +690,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -704,9 +704,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3979
+Type/index.d.ts:3946
 
-___
+---
 
 ### ceil
 
@@ -726,9 +726,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -739,9 +739,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4097
+Type/index.d.ts:4064
 
-___
+---
 
 ### clone
 
@@ -757,9 +757,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
 
 #### Returns
 
@@ -769,9 +769,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4036
+Type/index.d.ts:4003
 
-___
+---
 
 ### copy
 
@@ -779,7 +779,7 @@ ___
 
 **`Description`**
 
-将向量a的值赋给向量b
+将向量 a 的值赋给向量 b
 
 **`Effect`**
 
@@ -787,22 +787,22 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `b`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b |
 
 #### Returns
 
 [`Vector4`](Type.Type.Vector4.md)
 
-向量a
+向量 a
 
 #### Defined in
 
-Type/index.d.ts:4044
+Type/index.d.ts:4011
 
-___
+---
 
 ### distance
 
@@ -818,10 +818,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `b`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b |
 
 #### Returns
 
@@ -831,9 +831,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4143
+Type/index.d.ts:4110
 
-___
+---
 
 ### divide
 
@@ -841,7 +841,7 @@ ___
 
 **`Description`**
 
-遍历向量a的每个分量除以数字b
+遍历向量 a 的每个分量除以数字 b
 
 **`Effect`**
 
@@ -853,10 +853,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | `number` | usage:数字b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | `number`                          | usage:数字 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -867,13 +867,13 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4019
+Type/index.d.ts:3986
 
 ▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector4`](Type.Type.Vector4.md)
 
 **`Description`**
 
-计算向量a除以向量b
+计算向量 a 除以向量 b
 
 **`Effect`**
 
@@ -885,10 +885,10 @@ Type/index.d.ts:4019
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -899,9 +899,9 @@ Type/index.d.ts:4019
 
 #### Defined in
 
-Type/index.d.ts:4029
+Type/index.d.ts:3996
 
-___
+---
 
 ### dot
 
@@ -917,10 +917,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `b`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b |
 
 #### Returns
 
@@ -930,9 +930,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4210
+Type/index.d.ts:4177
 
-___
+---
 
 ### equals
 
@@ -948,11 +948,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
-| `epsilon?` | `number` | usage:最小误差数 对象 default:1.e-8 |
+| Name       | Type                              | Description                         |
+| :--------- | :-------------------------------- | :---------------------------------- |
+| `a`        | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                        |
+| `b`        | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                        |
+| `epsilon?` | `number`                          | usage:最小误差数 对象 default:1.e-8 |
 
 #### Returns
 
@@ -962,9 +962,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4053
+Type/index.d.ts:4020
 
-___
+---
 
 ### floor
 
@@ -984,9 +984,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -997,9 +997,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4106
+Type/index.d.ts:4073
 
-___
+---
 
 ### fromString
 
@@ -1019,9 +1019,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `str`    | `string`                          | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1032,9 +1032,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3969
+Type/index.d.ts:3936
 
-___
+---
 
 ### invert
 
@@ -1054,9 +1054,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1067,9 +1067,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4183
+Type/index.d.ts:4150
 
-___
+---
 
 ### invertSafe
 
@@ -1089,11 +1089,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
-| `epsilon?` | `number` | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name       | Type                              | Description                                    |
+| :--------- | :-------------------------------- | :--------------------------------------------- |
+| `a`        | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                                   |
+| `outer?`   | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null     |
+| `epsilon?` | `number`                          | usage:最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
@@ -1103,9 +1103,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4193
+Type/index.d.ts:4160
 
-___
+---
 
 ### lerp
 
@@ -1113,7 +1113,7 @@ ___
 
 **`Description`**
 
-逐元素向量线性插值： A + t * (B - A)
+逐元素向量线性插值： A + t \* (B - A)
 
 **`Effect`**
 
@@ -1125,11 +1125,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
-| `t` | `number` | usage:插值 |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
+| `t`      | `number`                          | usage:插值                                 |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1140,9 +1140,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4221
+Type/index.d.ts:4188
 
-___
+---
 
 ### magnitude
 
@@ -1158,9 +1158,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
 
 #### Returns
 
@@ -1170,9 +1170,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4158
+Type/index.d.ts:4125
 
-___
+---
 
 ### max
 
@@ -1192,10 +1192,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1206,9 +1206,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4126
+Type/index.d.ts:4093
 
-___
+---
 
 ### min
 
@@ -1228,10 +1228,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1242,9 +1242,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4116
+Type/index.d.ts:4083
 
-___
+---
 
 ### moveTowards
 
@@ -1264,12 +1264,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `current` | [`Vector4`](Type.Type.Vector4.md) | usage:当前向量 |
-| `target` | [`Vector4`](Type.Type.Vector4.md) | usage:目标向量 |
-| `maxDistanceDelta` | `number` | usage:最大平均移动距离 |
-| `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
+| Name               | Type                              | Description                                |
+| :----------------- | :-------------------------------- | :----------------------------------------- |
+| `current`          | [`Vector4`](Type.Type.Vector4.md) | usage:当前向量                             |
+| `target`           | [`Vector4`](Type.Type.Vector4.md) | usage:目标向量                             |
+| `maxDistanceDelta` | `number`                          | usage:最大平均移动距离                     |
+| `outer?`           | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
 
@@ -1279,9 +1279,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4072
+Type/index.d.ts:4039
 
-___
+---
 
 ### multiply
 
@@ -1289,7 +1289,7 @@ ___
 
 **`Description`**
 
-遍历向量a的每个分量乘以数字b
+遍历向量 a 的每个分量乘以数字 b
 
 **`Effect`**
 
@@ -1301,10 +1301,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | `number` | usage:数字b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | `number`                          | usage:数字 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1315,13 +1315,13 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3999
+Type/index.d.ts:3966
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](Type.Type.Vector4.md)
 
 **`Description`**
 
-计算向量a乘以向量b
+计算向量 a 乘以向量 b
 
 **`Effect`**
 
@@ -1333,10 +1333,10 @@ Type/index.d.ts:3999
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1347,9 +1347,9 @@ Type/index.d.ts:3999
 
 #### Defined in
 
-Type/index.d.ts:4009
+Type/index.d.ts:3976
 
-___
+---
 
 ### negate
 
@@ -1369,9 +1369,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1382,9 +1382,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4174
+Type/index.d.ts:4141
 
-___
+---
 
 ### normalize
 
@@ -1404,9 +1404,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1417,9 +1417,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4202
+Type/index.d.ts:4169
 
-___
+---
 
 ### round
 
@@ -1439,9 +1439,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1452,9 +1452,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4135
+Type/index.d.ts:4102
 
-___
+---
 
 ### set
 
@@ -1470,25 +1470,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `x` | `number` | usage:x 分量 |
-| `y` | `number` | usage:y 分量 |
-| `z` | `number` | usage:z 分量 |
-| `w` | `number` | usage:w 分量 |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `x`  | `number`                          | usage:x 分量 |
+| `y`  | `number`                          | usage:y 分量 |
+| `z`  | `number`                          | usage:z 分量 |
+| `w`  | `number`                          | usage:w 分量 |
 
 #### Returns
 
 [`Vector4`](Type.Type.Vector4.md)
 
-修改后的向量a
+修改后的向量 a
 
 #### Defined in
 
-Type/index.d.ts:4088
+Type/index.d.ts:4055
 
-___
+---
 
 ### sqrMagnitude
 
@@ -1504,9 +1504,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
 
 #### Returns
 
@@ -1516,9 +1516,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4165
+Type/index.d.ts:4132
 
-___
+---
 
 ### squaredDistance
 
@@ -1534,10 +1534,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `b`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b |
 
 #### Returns
 
@@ -1547,9 +1547,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4151
+Type/index.d.ts:4118
 
-___
+---
 
 ### strictEquals
 
@@ -1565,10 +1565,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name | Type                              | Description  |
+| :--- | :-------------------------------- | :----------- |
+| `a`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a |
+| `b`  | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b |
 
 #### Returns
 
@@ -1578,9 +1578,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:4061
+Type/index.d.ts:4028
 
-___
+---
 
 ### subtract
 
@@ -1588,7 +1588,7 @@ ___
 
 **`Description`**
 
-计算向量a减去向量b
+计算向量 a 减去向量 b
 
 **`Effect`**
 
@@ -1600,10 +1600,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector4`](Type.Type.Vector4.md) | usage:向量a |
-| `b` | [`Vector4`](Type.Type.Vector4.md) | usage:向量b |
+| Name     | Type                              | Description                                |
+| :------- | :-------------------------------- | :----------------------------------------- |
+| `a`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 a                               |
+| `b`      | [`Vector4`](Type.Type.Vector4.md) | usage:向量 b                               |
 | `outer?` | [`Vector4`](Type.Type.Vector4.md) | usage:接收结果的 Vector4 对象 default:null |
 
 #### Returns
@@ -1614,4 +1614,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:3989
+Type/index.d.ts:3956

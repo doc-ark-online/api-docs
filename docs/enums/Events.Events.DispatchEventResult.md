@@ -13,15 +13,15 @@
 ### Enumeration Members
 
 - [Failure](Events.Events.DispatchEventResult.md#failure)
+- [FailureCountLimit](Events.Events.DispatchEventResult.md#failurecountlimit)
 - [FailureRateLimit](Events.Events.DispatchEventResult.md#failureratelimit)
-- [FailureSizeLimit](Events.Events.DispatchEventResult.md#failuresizelimit)
-- [Sucess](Events.Events.DispatchEventResult.md#sucess)
+- [Success](Events.Events.DispatchEventResult.md#success)
 
 ## Enumeration Members
 
 ### Failure
 
-• **Failure** = ``1``
+• **Failure** = `1`
 
 失败
 
@@ -29,23 +29,11 @@
 
 Events/index.d.ts:11
 
-___
+---
 
-### FailureRateLimit
+### FailureCountLimit
 
-• **FailureRateLimit** = ``3``
-
-失败频率限制
-
-#### Defined in
-
-Events/index.d.ts:15
-
-___
-
-### FailureSizeLimit
-
-• **FailureSizeLimit** = ``2``
+• **FailureCountLimit** = `2`
 
 失败次数限制
 
@@ -53,11 +41,23 @@ ___
 
 Events/index.d.ts:13
 
-___
+---
 
-### Sucess
+### FailureRateLimit
 
-• **Sucess** = ``0``
+• **FailureRateLimit** = `3`
+
+失败频率限制
+
+#### Defined in
+
+Events/index.d.ts:15
+
+---
+
+### Success
+
+• **Success** = `0`
 
 成功
 

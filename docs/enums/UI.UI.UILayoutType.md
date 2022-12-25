@@ -19,22 +19,22 @@
 
 ### Horizontal
 
-• **Horizontal** = ``0``
+• **Horizontal** = `0`
 
 水平
 
 #### Defined in
 
-UI/index.d.ts:3340
+UI/index.d.ts:3349
 
-___
+---
 
 ### Vertical
 
-• **Vertical** = ``1``
+• **Vertical** = `1`
 
 垂直
 
 #### Defined in
 
-UI/index.d.ts:3342
+UI/index.d.ts:3351

@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -36,7 +36,7 @@ usage:双端
 ### Properties
 
 - [behindHair](Gameplay.Gameplay.HumanoidV2.md#behindhair)
-- [enableOutLine](Gameplay.Gameplay.HumanoidV2.md#enableoutline)
+- [enableOutline](Gameplay.Gameplay.HumanoidV2.md#enableoutline)
 - [frontHair](Gameplay.Gameplay.HumanoidV2.md#fronthair)
 - [gloves](Gameplay.Gameplay.HumanoidV2.md#gloves)
 - [head](Gameplay.Gameplay.HumanoidV2.md#head)
@@ -72,7 +72,7 @@ usage:双端
 - [setBodyTattooRotation](Gameplay.Gameplay.HumanoidV2.md#setbodytattoorotation)
 - [setBodyTattooType](Gameplay.Gameplay.HumanoidV2.md#setbodytattootype)
 - [setBodyTattooZoom](Gameplay.Gameplay.HumanoidV2.md#setbodytattoozoom)
-- [setOutLine](Gameplay.Gameplay.HumanoidV2.md#setoutline)
+- [setOutline](Gameplay.Gameplay.HumanoidV2.md#setoutline)
 - [setOutlineAdvance](Gameplay.Gameplay.HumanoidV2.md#setoutlineadvance)
 - [setSkinColor](Gameplay.Gameplay.HumanoidV2.md#setskincolor)
 - [setSkinTexture](Gameplay.Gameplay.HumanoidV2.md#setskintexture)
@@ -102,7 +102,7 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2591
+Gameplay/index.d.ts:2731
 
 ## Properties
 
@@ -116,13 +116,13 @@ Gameplay/index.d.ts:2591
 
 #### Defined in
 
-Gameplay/index.d.ts:5053
+Gameplay/index.d.ts:5190
 
 ---
 
-### enableOutLine
+### enableOutline
 
-• `Protected` **enableOutLine**: `boolean`
+• `Protected` **enableOutline**: `boolean`
 
 **`Description`**
 
@@ -130,11 +130,11 @@ Gameplay/index.d.ts:5053
 
 #### Inherited from
 
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutLine](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
+[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
 
 #### Defined in
 
-Gameplay/index.d.ts:2586
+Gameplay/index.d.ts:2726
 
 ---
 
@@ -148,7 +148,7 @@ Gameplay/index.d.ts:2586
 
 #### Defined in
 
-Gameplay/index.d.ts:5049
+Gameplay/index.d.ts:5186
 
 ---
 
@@ -162,7 +162,7 @@ Gameplay/index.d.ts:5049
 
 #### Defined in
 
-Gameplay/index.d.ts:5069
+Gameplay/index.d.ts:5206
 
 ---
 
@@ -176,7 +176,7 @@ Gameplay/index.d.ts:5069
 
 #### Defined in
 
-Gameplay/index.d.ts:5057
+Gameplay/index.d.ts:5194
 
 ---
 
@@ -190,7 +190,7 @@ Gameplay/index.d.ts:5057
 
 #### Defined in
 
-Gameplay/index.d.ts:5065
+Gameplay/index.d.ts:5202
 
 ---
 
@@ -208,7 +208,7 @@ Gameplay/index.d.ts:5065
 
 #### Defined in
 
-Gameplay/index.d.ts:2582
+Gameplay/index.d.ts:2722
 
 ---
 
@@ -222,7 +222,7 @@ Gameplay/index.d.ts:2582
 
 #### Defined in
 
-Gameplay/index.d.ts:5077
+Gameplay/index.d.ts:5214
 
 ---
 
@@ -236,7 +236,7 @@ Gameplay/index.d.ts:5077
 
 #### Defined in
 
-Gameplay/index.d.ts:5073
+Gameplay/index.d.ts:5210
 
 ---
 
@@ -250,7 +250,7 @@ Gameplay/index.d.ts:5073
 
 #### Defined in
 
-Gameplay/index.d.ts:5061
+Gameplay/index.d.ts:5198
 
 ## Methods
 
@@ -280,15 +280,13 @@ Gameplay/index.d.ts:5061
 
 #### Defined in
 
-Gameplay/index.d.ts:5295
+Gameplay/index.d.ts:5428
 
 ---
 
 ### attach
 
 ▸ **attach**(`gameObject`, `slotName`): `void`
-
-attachGameObjectToCharacterSlot
 
 **`Description`**
 
@@ -306,7 +304,7 @@ attachGameObjectToCharacterSlot
 
 | Name         | Type                                                 | Description                           |
 | :----------- | :--------------------------------------------------- | :------------------------------------ |
-| `gameObject` | [`GameObject`](Core.Core.GameObject.md)              | usage: 被附着的物体                   |
+| `gameObject` | `GameObject`                                         | usage: 被附着的物体                   |
 | `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage: 插槽名字，被附着到指定的插槽名 |
 
 #### Returns
@@ -319,7 +317,7 @@ attachGameObjectToCharacterSlot
 
 #### Defined in
 
-Gameplay/index.d.ts:5253
+Gameplay/index.d.ts:5389
 
 ---
 
@@ -353,7 +351,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5086
+Gameplay/index.d.ts:5223
 
 ---
 
@@ -379,7 +377,7 @@ Gameplay/index.d.ts:5086
 
 #### Defined in
 
-Gameplay/index.d.ts:5289
+Gameplay/index.d.ts:5422
 
 ---
 
@@ -401,9 +399,9 @@ V2 的将物体从人物身上附着的物品预览插槽中分离
 
 #### Parameters
 
-| Name         | Type                                    | Description           |
-| :----------- | :-------------------------------------- | :-------------------- |
-| `gameObject` | [`GameObject`](Core.Core.GameObject.md) | usage:物体 GameObject |
+| Name         | Type         | Description           |
+| :----------- | :----------- | :-------------------- |
+| `gameObject` | `GameObject` | usage:物体 GameObject |
 
 #### Returns
 
@@ -415,13 +413,13 @@ V2 的将物体从人物身上附着的物品预览插槽中分离
 
 #### Defined in
 
-Gameplay/index.d.ts:5260
+Gameplay/index.d.ts:5396
 
 ---
 
 ### enablePostProcess
 
-▸ **enablePostProcess**(`usedPostProcess`, `newOutLineColor`, `newOutLineWidth`): `void`
+▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void`
 
 **`Description`**
 
@@ -436,8 +434,8 @@ Gameplay/index.d.ts:5260
 | Name              | Type                                      | Description              |
 | :---------------- | :---------------------------------------- | :----------------------- |
 | `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
-| `newOutLineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
-| `newOutLineWidth` | `number`                                  | usage:Outline 宽度       |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
 
 #### Returns
 
@@ -449,7 +447,7 @@ Gameplay/index.d.ts:5260
 
 #### Defined in
 
-Gameplay/index.d.ts:2599
+Gameplay/index.d.ts:2739
 
 ---
 
@@ -483,7 +481,7 @@ Gameplay/index.d.ts:2599
 
 #### Defined in
 
-Gameplay/index.d.ts:5143
+Gameplay/index.d.ts:5280
 
 ---
 
@@ -517,7 +515,7 @@ Gameplay/index.d.ts:5143
 
 #### Defined in
 
-Gameplay/index.d.ts:5178
+Gameplay/index.d.ts:5315
 
 ---
 
@@ -551,7 +549,7 @@ Gameplay/index.d.ts:5178
 
 #### Defined in
 
-Gameplay/index.d.ts:5195
+Gameplay/index.d.ts:5332
 
 ---
 
@@ -585,7 +583,7 @@ Gameplay/index.d.ts:5195
 
 #### Defined in
 
-Gameplay/index.d.ts:5229
+Gameplay/index.d.ts:5366
 
 ---
 
@@ -620,7 +618,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5161
+Gameplay/index.d.ts:5298
 
 ---
 
@@ -654,7 +652,7 @@ Gameplay/index.d.ts:5161
 
 #### Defined in
 
-Gameplay/index.d.ts:5212
+Gameplay/index.d.ts:5349
 
 ---
 
@@ -688,7 +686,7 @@ Gameplay/index.d.ts:5212
 
 #### Defined in
 
-Gameplay/index.d.ts:5244
+Gameplay/index.d.ts:5381
 
 ---
 
@@ -716,7 +714,7 @@ Gameplay/index.d.ts:5244
 
 #### Defined in
 
-Gameplay/index.d.ts:5107
+Gameplay/index.d.ts:5244
 
 ---
 
@@ -744,7 +742,7 @@ Gameplay/index.d.ts:5107
 
 #### Defined in
 
-Gameplay/index.d.ts:5122
+Gameplay/index.d.ts:5259
 
 ---
 
@@ -778,7 +776,7 @@ Gameplay/index.d.ts:5122
 
 #### Defined in
 
-Gameplay/index.d.ts:5267
+Gameplay/index.d.ts:5403
 
 ---
 
@@ -806,7 +804,7 @@ Gameplay/index.d.ts:5267
 
 #### Defined in
 
-Gameplay/index.d.ts:5092
+Gameplay/index.d.ts:5229
 
 ---
 
@@ -828,10 +826,10 @@ Gameplay/index.d.ts:5092
 
 #### Parameters
 
-| Name        | Type                                                                     | Description                       |
-| :---------- | :----------------------------------------------------------------------- | :-------------------------------- |
-| `guidArray` | `string`[]                                                               | usage:换装数据 GuidArray          |
-| `callback?` | [`EmptyCallbackFunc`](../modules/Gameplay.Gameplay.md#emptycallbackfunc) | usage:加载完成的回调 default:null |
+| Name        | Type                                                             | Description                       |
+| :---------- | :--------------------------------------------------------------- | :-------------------------------- |
+| `guidArray` | `string`[]                                                       | usage:换装数据 GuidArray          |
+| `callback?` | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | usage:加载完成的回调 default:null |
 
 #### Returns
 
@@ -843,7 +841,7 @@ Gameplay/index.d.ts:5092
 
 #### Defined in
 
-Gameplay/index.d.ts:5281
+Gameplay/index.d.ts:5417
 
 ---
 
@@ -878,7 +876,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5132
+Gameplay/index.d.ts:5269
 
 ---
 
@@ -913,7 +911,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5171
+Gameplay/index.d.ts:5308
 
 ---
 
@@ -948,7 +946,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5188
+Gameplay/index.d.ts:5325
 
 ---
 
@@ -983,7 +981,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5222
+Gameplay/index.d.ts:5359
 
 ---
 
@@ -1018,7 +1016,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5153
+Gameplay/index.d.ts:5290
 
 ---
 
@@ -1053,13 +1051,13 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5205
+Gameplay/index.d.ts:5342
 
 ---
 
-### setOutLine
+### setOutline
 
-▸ **setOutLine**(`usedOutline`): `boolean`
+▸ **setOutline**(`usedOutline`): `boolean`
 
 **`Description`**
 
@@ -1083,11 +1081,11 @@ Gameplay/index.d.ts:5205
 
 #### Inherited from
 
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutLine](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
+[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
 
 #### Defined in
 
-Gameplay/index.d.ts:2610
+Gameplay/index.d.ts:2750
 
 ---
 
@@ -1120,7 +1118,7 @@ Gameplay/index.d.ts:2610
 
 #### Defined in
 
-Gameplay/index.d.ts:2617
+Gameplay/index.d.ts:2757
 
 ---
 
@@ -1154,7 +1152,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5101
+Gameplay/index.d.ts:5238
 
 ---
 
@@ -1188,7 +1186,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5116
+Gameplay/index.d.ts:5253
 
 ---
 
@@ -1221,7 +1219,7 @@ Gameplay/index.d.ts:5116
 
 #### Defined in
 
-Gameplay/index.d.ts:5237
+Gameplay/index.d.ts:5374
 
 ---
 
@@ -1231,7 +1229,7 @@ Gameplay/index.d.ts:5237
 
 **`Description`**
 
-设置形象(如果没有预加载对应的 GUID，则是异步的,监听 loadAppearanceDataAllCompletedDelegate 获取加载完成回调)
+设置形象(如果没有预加载对应的 GUID，则是异步的,监听 onLoadAppearanceDataAllCompleted 获取加载完成回调)
 
 **`Effect`**
 
@@ -1253,7 +1251,7 @@ Gameplay/index.d.ts:5237
 
 #### Defined in
 
-Gameplay/index.d.ts:5273
+Gameplay/index.d.ts:5409
 
 ---
 
@@ -1271,7 +1269,7 @@ Gameplay/index.d.ts:5273
 
 **`Precautions`**
 
-如果没有预加载对应的 GUID，则是异步的,监听 loadAppearanceDataAllCompletedDelegate 获取加载完成回调
+如果没有预加载对应的 GUID，则是异步的,监听 onLoadAppearanceDataAllCompleted 获取加载完成回调
 
 #### Parameters
 
@@ -1296,4 +1294,4 @@ Gameplay/index.d.ts:5273
 
 #### Defined in
 
-Gameplay/index.d.ts:5309
+Gameplay/index.d.ts:5442

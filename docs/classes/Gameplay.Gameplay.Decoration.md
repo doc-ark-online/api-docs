@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -49,13 +49,13 @@ usage:双端
 
 **`Description`**
 
-资源Id
+资源 Id
 
 #### Defined in
 
-Gameplay/index.d.ts:1422
+Gameplay/index.d.ts:1574
 
-___
+---
 
 ### relativeTransform
 
@@ -63,13 +63,13 @@ ___
 
 **`Description`**
 
-相对ue socket Transform
+相对 ue slot Transform
 
 #### Defined in
 
-Gameplay/index.d.ts:1430
+Gameplay/index.d.ts:1582
 
-___
+---
 
 ### skeletonName
 
@@ -81,9 +81,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1418
+Gameplay/index.d.ts:1570
 
-___
+---
 
 ### slotName
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1426
+Gameplay/index.d.ts:1578
 
 ## Methods
 
@@ -113,9 +113,9 @@ Gameplay/index.d.ts:1426
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `string` | usage: 挂件string数据 |
+| Name   | Type     | Description             |
+| :----- | :------- | :---------------------- |
+| `data` | `string` | usage: 挂件 string 数据 |
 
 #### Returns
 
@@ -123,9 +123,9 @@ Gameplay/index.d.ts:1426
 
 #### Defined in
 
-Gameplay/index.d.ts:1442
+Gameplay/index.d.ts:1594
 
-___
+---
 
 ### equal
 
@@ -141,8 +141,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type     | Description    |
+| :------------- | :------- | :------------- |
 | `widgetString` | `string` | usage:插槽数据 |
 
 #### Returns
@@ -153,9 +153,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:1449
+Gameplay/index.d.ts:1601
 
-___
+---
 
 ### serialize
 
@@ -163,7 +163,7 @@ ___
 
 **`Description`**
 
-获取序列化String
+获取序列化 String
 
 **`Effect`**
 
@@ -177,4 +177,4 @@ string
 
 #### Defined in
 
-Gameplay/index.d.ts:1436
+Gameplay/index.d.ts:1588

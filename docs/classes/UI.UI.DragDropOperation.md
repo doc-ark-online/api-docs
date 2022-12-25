@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -64,9 +64,9 @@ UI/index.d.ts:581
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | usage:另一个UI拖拽事件 |
+| Name    | Type                                              | Description              |
+| :------ | :------------------------------------------------ | :----------------------- |
+| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | usage:另一个 UI 拖拽事件 |
 
 #### Returns
 
@@ -78,7 +78,7 @@ boolean
 
 UI/index.d.ts:588
 
-___
+---
 
 ### getDragPivot
 
@@ -102,7 +102,7 @@ ___
 
 UI/index.d.ts:606
 
-___
+---
 
 ### getDragVisualWidget
 
@@ -110,7 +110,7 @@ ___
 
 **`Description`**
 
-获取拖拽显示的UI
+获取拖拽显示的 UI
 
 **`Effect`**
 
@@ -120,13 +120,13 @@ ___
 
 [`Widget`](UI.UI.Widget.md)
 
-拖拽显示的UI
+拖拽显示的 UI
 
 #### Defined in
 
 UI/index.d.ts:600
 
-___
+---
 
 ### getOffset
 
@@ -134,7 +134,7 @@ ___
 
 **`Description`**
 
-获取拖拽UI的百分比偏移
+获取拖拽 UI 的百分比偏移
 
 **`Effect`**
 
@@ -150,7 +150,7 @@ ___
 
 UI/index.d.ts:612
 
-___
+---
 
 ### getTag
 
@@ -158,7 +158,7 @@ ___
 
 **`Description`**
 
-获取Tag 标签
+获取 Tag 标签
 
 **`Effect`**
 
@@ -168,13 +168,13 @@ ___
 
 `string`
 
-返回tag
+返回 tag
 
 #### Defined in
 
 UI/index.d.ts:594
 
-___
+---
 
 ### tryGetDragDropPayLoad
 
@@ -198,7 +198,7 @@ ___
 
 UI/index.d.ts:618
 
-___
+---
 
 ### tryGetDragDropPayLoadAs
 
@@ -214,9 +214,9 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> |
+| Name | Type                                                        |
+| :--- | :---------------------------------------------------------- |
+| `T`  | extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> |
 
 #### Returns
 

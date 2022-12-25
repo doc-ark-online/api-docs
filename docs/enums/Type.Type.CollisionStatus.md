@@ -21,46 +21,46 @@
 
 ### FromParent
 
-• **FromParent** = ``0``
+• **FromParent** = `0`
 
 跟随父节点
 
 #### Defined in
 
-Type/index.d.ts:199
+Type/index.d.ts:224
 
-___
+---
 
 ### Off
 
-• **Off** = ``2``
+• **Off** = `2`
 
 关
 
 #### Defined in
 
-Type/index.d.ts:207
+Type/index.d.ts:232
 
-___
+---
 
 ### On
 
-• **On** = ``1``
+• **On** = `1`
 
 开
 
 #### Defined in
 
-Type/index.d.ts:203
+Type/index.d.ts:228
 
-___
+---
 
 ### QueryOnly
 
-• **QueryOnly** = ``3``
+• **QueryOnly** = `3`
 
 关
 
 #### Defined in
 
-Type/index.d.ts:211
+Type/index.d.ts:236

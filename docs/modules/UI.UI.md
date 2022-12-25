@@ -67,7 +67,7 @@
 - [TabGroup](../classes/UI.UI.TabGroup.md)
 - [TextBlock](../classes/UI.UI.TextBlock.md)
 - [TouchPad](../classes/UI.UI.TouchPad.md)
-- [UIBehaviour](../classes/UI.UI.UIBehaviour.md)
+- [UIBehavior](../classes/UI.UI.UIBehavior.md)
 - [UIChildCollation](../classes/UI.UI.UIChildCollation.md)
 - [UIConstraintAnchors](../classes/UI.UI.UIConstraintAnchors.md)
 - [UIFontInfo](../classes/UI.UI.UIFontInfo.md)
@@ -103,8 +103,8 @@
 - [createUIByPath](UI.UI.md#createuibypath)
 - [createUIOnlyClass](UI.UI.md#createuionlyclass)
 - [endDragDrop](UI.UI.md#enddragdrop)
-- [findUIBehaviour](UI.UI.md#finduibehaviour)
-- [findUIBehaviourByGuid](UI.UI.md#finduibehaviourbyguid)
+- [findUIBehavior](UI.UI.md#finduibehavior)
+- [findUIBehaviorByGuid](UI.UI.md#finduibehaviorbyguid)
 - [getAbsoluteSize](UI.UI.md#getabsolutesize)
 - [getAssetIconDataByAssetID](UI.UI.md#getasseticondatabyassetid)
 - [getCurrentMousePosition](UI.UI.md#getcurrentmouseposition)
@@ -138,113 +138,113 @@
 
 ### UILayerBottom
 
-• `Const` **UILayerBottom**: ``1``
+• `Const` **UILayerBottom**: `1`
 
 **`Description`**
 
-底层 zOrder开始于100000
+底层 zOrder 开始于 100000
 
 #### Defined in
 
-UI/index.d.ts:2899
+UI/index.d.ts:2894
 
-___
+---
 
 ### UILayerDialog
 
-• `Const` **UILayerDialog**: ``5``
+• `Const` **UILayerDialog**: `5`
 
 **`Description`**
 
-对话 zOrder开始于500000
+对话 zOrder 开始于 500000
 
 #### Defined in
 
-UI/index.d.ts:2907
+UI/index.d.ts:2902
 
-___
+---
 
 ### UILayerError
 
-• `Const` **UILayerError**: ``7``
+• `Const` **UILayerError**: `7`
 
 **`Description`**
 
-错误 这个层级不可以使用，需要增加层级可以使用addUILayerMap zOrder开始于700000
+错误 这个层级不可以使用，需要增加层级可以使用 addUILayerMap zOrder 开始于 700000
 
 #### Defined in
 
-UI/index.d.ts:2911
+UI/index.d.ts:2906
 
-___
+---
 
 ### UILayerMiddle
 
-• `Const` **UILayerMiddle**: ``2``
+• `Const` **UILayerMiddle**: `2`
 
 **`Description`**
 
-中层 zOrder开始于200000
+中层 zOrder 开始于 200000
 
 #### Defined in
 
-UI/index.d.ts:2901
+UI/index.d.ts:2896
 
-___
+---
 
 ### UILayerOwn
 
-• `Const` **UILayerOwn**: ``3``
+• `Const` **UILayerOwn**: `3`
 
 **`Description`**
 
-独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
+独享层(调用此层会自动隐藏 Bottom 和 Middle 层) zOrder 开始于 300000
 
 #### Defined in
 
-UI/index.d.ts:2903
+UI/index.d.ts:2898
 
-___
+---
 
 ### UILayerScene
 
-• `Const` **UILayerScene**: ``0``
+• `Const` **UILayerScene**: `0`
 
 **`Description`**
 
-场景 zOrder开始于0
+场景 zOrder 开始于 0
 
 #### Defined in
 
-UI/index.d.ts:2897
+UI/index.d.ts:2892
 
-___
+---
 
 ### UILayerSystem
 
-• `Const` **UILayerSystem**: ``6``
+• `Const` **UILayerSystem**: `6`
 
 **`Description`**
 
-系统 zOrder开始于600000
+系统 zOrder 开始于 600000
 
 #### Defined in
 
-UI/index.d.ts:2909
+UI/index.d.ts:2904
 
-___
+---
 
 ### UILayerTop
 
-• `Const` **UILayerTop**: ``4``
+• `Const` **UILayerTop**: `4`
 
 **`Description`**
 
-顶层 zOrder开始于400000
+顶层 zOrder 开始于 400000
 
 #### Defined in
 
-UI/index.d.ts:2905
+UI/index.d.ts:2900
 
 ## Functions
 
@@ -262,9 +262,9 @@ UI/index.d.ts:2905
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
+| Name               | Type                                         | Description    |
+| :----------------- | :------------------------------------------- | :------------- |
+| `geometry`         | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体   |
 | `absolutePosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:绝对坐标 |
 
 #### Returns
@@ -275,9 +275,9 @@ UI/index.d.ts:2905
 
 #### Defined in
 
-UI/index.d.ts:3094
+UI/index.d.ts:3089
 
-___
+---
 
 ### absoluteToViewport
 
@@ -293,11 +293,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `absoluteDesktopPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:绝对桌面坐标 |
-| `outPixelPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
-| `outViewportPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:如果你想添加另一个小部件到视口空间相同的位置 |
+| Name                      | Type                                         | Description                                                      |
+| :------------------------ | :------------------------------------------- | :--------------------------------------------------------------- |
+| `absoluteDesktopPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:绝对桌面坐标                                               |
+| `outPixelPosition`        | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
+| `outViewportPosition`     | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:如果你想添加另一个小部件到视口空间相同的位置               |
 
 #### Returns
 
@@ -305,9 +305,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3173
+UI/index.d.ts:3168
 
-___
+---
 
 ### assetIDChangeIConUrlRequest
 
@@ -315,7 +315,7 @@ ___
 
 **`Description`**
 
-异步请求资源的ICON信息
+异步请求资源的 ICON 信息
 
 **`Effect`**
 
@@ -323,9 +323,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assets` | `string`[] | usage:指定资源的id数组 |
+| Name     | Type       | Description              |
+| :------- | :--------- | :----------------------- |
+| `assets` | `string`[] | usage:指定资源的 id 数组 |
 
 #### Returns
 
@@ -335,9 +335,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2870
+UI/index.d.ts:2865
 
-___
+---
 
 ### cancelDragDrop
 
@@ -345,7 +345,7 @@ ___
 
 **`Description`**
 
-中断所有的DragDrop
+中断所有的 DragDrop
 
 **`Effect`**
 
@@ -357,9 +357,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4303
+UI/index.d.ts:4312
 
-___
+---
 
 ### createUI
 
@@ -367,7 +367,7 @@ ___
 
 **`Description`**
 
-创建UIPrefab
+创建 UIPrefab
 
 **`Effect`**
 
@@ -375,28 +375,28 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                                         |
+| :--- | :----------------------------------------------------------- |
+| `T`  | extends [`UIBehavior`](../classes/UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `UIPrefabName` | `string` | usage:指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
-| `panelClass` | () => `T` | usage:继承至UI身上脚本的派生类 |
+| Name           | Type      | Description                                                   |
+| :------------- | :-------- | :------------------------------------------------------------ |
+| `UIPrefabName` | `string`  | usage:指定 UI 自定义控件的名字,为空的话等于 createUIOnlyClass |
+| `panelClass`   | () => `T` | usage:继承至 UI 身上脚本的派生类                              |
 
 #### Returns
 
 `T`
 
-对应的UI
+对应的 UI
 
 #### Defined in
 
-UI/index.d.ts:2858
+UI/index.d.ts:2853
 
-___
+---
 
 ### createUIByName
 
@@ -404,7 +404,7 @@ ___
 
 **`Description`**
 
-创建UIPrefab
+创建 UIPrefab
 
 **`Effect`**
 
@@ -412,21 +412,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `UIPrefabName` | `string` | usage:指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+| Name           | Type     | Description                                                        |
+| :------------- | :------- | :----------------------------------------------------------------- |
+| `UIPrefabName` | `string` | usage:指定 UI 自定义控件的相对于工程的路径或则相对于 UI 目录的路径 |
 
 #### Returns
 
 [`UserWidget`](../classes/UI.UI.UserWidget.md)
 
-对应的UI
+对应的 UI
 
 #### Defined in
 
-UI/index.d.ts:2834
+UI/index.d.ts:2829
 
-___
+---
 
 ### createUIByPath
 
@@ -434,7 +434,7 @@ ___
 
 **`Description`**
 
-创建UIPrefab
+创建 UIPrefab
 
 **`Effect`**
 
@@ -442,21 +442,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `UIPath` | `string` | usage:创建UI 的完整路径 |
+| Name     | Type     | Description              |
+| :------- | :------- | :----------------------- |
+| `UIPath` | `string` | usage:创建 UI 的完整路径 |
 
 #### Returns
 
 [`UserWidget`](../classes/UI.UI.UserWidget.md)
 
-对应的UI
+对应的 UI
 
 #### Defined in
 
-UI/index.d.ts:2841
+UI/index.d.ts:2836
 
-___
+---
 
 ### createUIOnlyClass
 
@@ -464,7 +464,7 @@ ___
 
 **`Description`**
 
-创建空的UI
+创建空的 UI
 
 **`Effect`**
 
@@ -472,27 +472,27 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)<`T`\> |
+| Name | Type                                                         |
+| :--- | :----------------------------------------------------------- |
+| `T`  | extends [`UIBehavior`](../classes/UI.UI.UIBehavior.md)<`T`\> |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `panelClass` | () => `T` | usage:指定UI控件身上的行为脚本 |
+| Name         | Type      | Description                      |
+| :----------- | :-------- | :------------------------------- |
+| `panelClass` | () => `T` | usage:指定 UI 控件身上的行为脚本 |
 
 #### Returns
 
 `T`
 
-对应的UI
+对应的 UI
 
 #### Defined in
 
-UI/index.d.ts:2848
+UI/index.d.ts:2843
 
-___
+---
 
 ### endDragDrop
 
@@ -508,9 +508,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InReply` | [`EventReply`](../classes/UI.UI.EventReply.md) | usage:事件 |
+| Name      | Type                                           | Description |
+| :-------- | :--------------------------------------------- | :---------- |
+| `InReply` | [`EventReply`](../classes/UI.UI.EventReply.md) | usage:事件  |
 
 #### Returns
 
@@ -518,17 +518,17 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4298
+UI/index.d.ts:4307
 
-___
+---
 
-### findUIBehaviour
+### findUIBehavior
 
-▸ **findUIBehaviour**(`UI`): [`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)
+▸ **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UI.UIBehavior.md)
 
 **`Description`**
 
-获取UI脚本
+获取 UI 脚本
 
 **`Effect`**
 
@@ -536,25 +536,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `UI` | [`Widget`](../classes/UI.UI.Widget.md) | usage:UI控件 |
+| Name | Type                                   | Description   |
+| :--- | :------------------------------------- | :------------ |
+| `UI` | [`Widget`](../classes/UI.UI.Widget.md) | usage:UI 控件 |
 
 #### Returns
 
-[`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)
+[`UIBehavior`](../classes/UI.UI.UIBehavior.md)
 
-UI绑定的脚本
+UI 绑定的脚本
 
 #### Defined in
 
-UI/index.d.ts:2820
+UI/index.d.ts:2815
 
-___
+---
 
-### findUIBehaviourByGuid
+### findUIBehaviorByGuid
 
-▸ **findUIBehaviourByGuid**(`Guid`): [`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)
+▸ **findUIBehaviorByGuid**(`Guid`): [`UIBehavior`](../classes/UI.UI.UIBehavior.md)
 
 **`Description`**
 
@@ -566,21 +566,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Guid` | `string` | usage:GUID |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `Guid` | `string` | usage:GUID  |
 
 #### Returns
 
-[`UIBehaviour`](../classes/UI.UI.UIBehaviour.md)
+[`UIBehavior`](../classes/UI.UI.UIBehavior.md)
 
-GUID对应的脚本
+GUID 对应的脚本
 
 #### Defined in
 
-UI/index.d.ts:2827
+UI/index.d.ts:2822
 
-___
+---
 
 ### getAbsoluteSize
 
@@ -596,21 +596,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                       | Description  |
+| :--------- | :----------------------------------------- | :----------- |
 | `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
 
 #### Returns
 
 [`Vector2`](../classes/Type.Type.Vector2.md)
 
-返回Size
+返回 Size
 
 #### Defined in
 
-UI/index.d.ts:3129
+UI/index.d.ts:3124
 
-___
+---
 
 ### getAssetIconDataByAssetID
 
@@ -618,7 +618,7 @@ ___
 
 **`Description`**
 
-获取资源的ICON信息
+获取资源的 ICON 信息
 
 **`Effect`**
 
@@ -626,21 +626,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `asset` | `string` | usage:指定资源的id |
+| Name    | Type     | Description         |
+| :------ | :------- | :------------------ |
+| `asset` | `string` | usage:指定资源的 id |
 
 #### Returns
 
 [`AssetIconData`](../classes/UI.UI.AssetIconData.md)
 
-资源的ICON信息
+资源的 ICON 信息
 
 #### Defined in
 
-UI/index.d.ts:2877
+UI/index.d.ts:2872
 
-___
+---
 
 ### getCurrentMousePosition
 
@@ -662,9 +662,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3214
+UI/index.d.ts:3209
 
-___
+---
 
 ### getDragDroppingContent
 
@@ -672,7 +672,7 @@ ___
 
 **`Description`**
 
-获取当前的DragDrop事件
+获取当前的 DragDrop 事件
 
 **`Effect`**
 
@@ -682,13 +682,13 @@ ___
 
 [`DragDropOperation`](../classes/UI.UI.DragDropOperation.md)
 
-返回当前的DragDrop事件
+返回当前的 DragDrop 事件
 
 #### Defined in
 
-UI/index.d.ts:4315
+UI/index.d.ts:4324
 
-___
+---
 
 ### getLastMousePosition
 
@@ -710,9 +710,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3220
+UI/index.d.ts:3215
 
-___
+---
 
 ### getLocalSize
 
@@ -728,21 +728,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                       | Description  |
+| :--------- | :----------------------------------------- | :----------- |
 | `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
 
 #### Returns
 
 [`Vector2`](../classes/Type.Type.Vector2.md)
 
-返回Size
+返回 Size
 
 #### Defined in
 
-UI/index.d.ts:3122
+UI/index.d.ts:3117
 
-___
+---
 
 ### getLocalTopLeft
 
@@ -758,21 +758,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                       | Description  |
+| :--------- | :----------------------------------------- | :----------- |
 | `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
 
 #### Returns
 
 [`Vector2`](../classes/Type.Type.Vector2.md)
 
-返回LeftTop
+返回 LeftTop
 
 #### Defined in
 
-UI/index.d.ts:3115
+UI/index.d.ts:3110
 
-___
+---
 
 ### getMousePositionOnPlatform
 
@@ -794,9 +794,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4363
+UI/index.d.ts:4372
 
-___
+---
 
 ### getMousePositionOnViewport
 
@@ -818,9 +818,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4369
+UI/index.d.ts:4378
 
-___
+---
 
 ### getPlayerScreenWidgetGeometry
 
@@ -836,8 +836,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                               | Description                                      |
+| :------- | :------------------------------------------------- | :----------------------------------------------- |
 | `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家在游戏世界中的位置投射到屏幕上的控制器 |
 
 #### Returns
@@ -848,9 +848,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4357
+UI/index.d.ts:4366
 
-___
+---
 
 ### getResolutionChanged
 
@@ -866,8 +866,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                                                                        | Description        |
+| :--------- | :---------------------------------------------------------------------------------------------------------- | :----------------- |
 | `Delegate` | [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | usage:传入回调函数 |
 
 #### Returns
@@ -876,9 +876,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2883
+UI/index.d.ts:2878
 
-___
+---
 
 ### getViewportScale
 
@@ -886,7 +886,7 @@ ___
 
 **`Description`**
 
-获取应用于视口和所有小部件的当前DPI Scale。
+获取应用于视口和所有小部件的当前 DPI Scale。
 
 **`Effect`**
 
@@ -896,13 +896,13 @@ ___
 
 `number`
 
-返回应用于视口和所有小部件的当前DPI Scale。
+返回应用于视口和所有小部件的当前 DPI Scale。
 
 #### Defined in
 
-UI/index.d.ts:4338
+UI/index.d.ts:4347
 
-___
+---
 
 ### getViewportSize
 
@@ -924,9 +924,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4344
+UI/index.d.ts:4353
 
-___
+---
 
 ### getViewportWidgetGeometry
 
@@ -948,9 +948,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4350
+UI/index.d.ts:4359
 
-___
+---
 
 ### isDragDropping
 
@@ -958,7 +958,7 @@ ___
 
 **`Description`**
 
-判断当前是否有一个DragDrop事件
+判断当前是否有一个 DragDrop 事件
 
 **`Effect`**
 
@@ -972,9 +972,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4309
+UI/index.d.ts:4318
 
-___
+---
 
 ### isUnderLocation
 
@@ -982,7 +982,7 @@ ___
 
 **`Description`**
 
-判定给定坐标是否在geometry下
+判定给定坐标是否在 geometry 下
 
 **`Effect`**
 
@@ -990,22 +990,22 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
+| Name               | Type                                         | Description    |
+| :----------------- | :------------------------------------------- | :------------- |
+| `geometry`         | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体   |
 | `absolutePosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:绝对坐标 |
 
 #### Returns
 
 `boolean`
 
-坐标是否在geometry下
+坐标是否在 geometry 下
 
 #### Defined in
 
-UI/index.d.ts:3083
+UI/index.d.ts:3078
 
-___
+---
 
 ### localToAbsolute
 
@@ -1021,9 +1021,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
+| Name            | Type                                         | Description    |
+| :-------------- | :------------------------------------------- | :------------- |
+| `geometry`      | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体   |
 | `localPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:相对坐标 |
 
 #### Returns
@@ -1034,9 +1034,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3105
+UI/index.d.ts:3100
 
-___
+---
 
 ### localToViewport
 
@@ -1052,12 +1052,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
-| `localPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:局部坐标 |
-| `outPixelPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标。 |
-| `outViewportPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:如果你想添加另一个控件到视口空间相同的位置 |
+| Name                  | Type                                         | Description                                                        |
+| :-------------------- | :------------------------------------------- | :----------------------------------------------------------------- |
+| `geometry`            | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体                                                       |
+| `localPosition`       | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:局部坐标                                                     |
+| `outPixelPosition`    | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标。 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:如果你想添加另一个控件到视口空间相同的位置                   |
 
 #### Returns
 
@@ -1065,9 +1065,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3160
+UI/index.d.ts:3155
 
-___
+---
 
 ### projectWorldLocationToWidgetPosition
 
@@ -1083,12 +1083,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家在游戏世界中的位置投射到屏幕上的控制器 |
-| `worldLocation` | [`Vector`](../classes/Type.Type.Vector.md) | usage:要投射的世界位置 |
-| `outScreenPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:在视口的位置 |
-| `isPlayerViewportRelative` | `boolean` | usage:是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
+| Name                       | Type                                               | Description                                                                                                       |
+| :------------------------- | :------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| `player`                   | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家在游戏世界中的位置投射到屏幕上的控制器                                                                  |
+| `worldLocation`            | [`Vector`](../classes/Type.Type.Vector.md)         | usage:要投射的世界位置                                                                                            |
+| `outScreenPosition`        | [`Vector2`](../classes/Type.Type.Vector2.md)       | usage:在视口的位置                                                                                                |
+| `isPlayerViewportRelative` | `boolean`                                          | usage:是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回 true |
 
 #### Returns
 
@@ -1098,9 +1098,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4327
+UI/index.d.ts:4336
 
-___
+---
 
 ### screenToViewport
 
@@ -1116,8 +1116,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name             | Type                                         | Description    |
+| :--------------- | :------------------------------------------- | :------------- |
 | `screenPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:屏幕位置 |
 
 #### Returns
@@ -1128,9 +1128,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3208
+UI/index.d.ts:3203
 
-___
+---
 
 ### screenToWidgetAbsolute
 
@@ -1138,7 +1138,7 @@ ___
 
 **`Description`**
 
-将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+将屏幕位置(像素)转换为绝对桌面程序坐标。如果 bIncludeWindowPosition 为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
 
 **`Effect`**
 
@@ -1146,10 +1146,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `screenPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:屏幕位置 |
-| `isIncludeWindowPosition?` | `boolean` | usage:是否移除游戏窗口位置(在窗口模式下有用) default:false |
+| Name                       | Type                                         | Description                                                |
+| :------------------------- | :------------------------------------------- | :--------------------------------------------------------- |
+| `screenPosition`           | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:屏幕位置                                             |
+| `isIncludeWindowPosition?` | `boolean`                                    | usage:是否移除游戏窗口位置(在窗口模式下有用) default:false |
 
 #### Returns
 
@@ -1159,9 +1159,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3198
+UI/index.d.ts:3193
 
-___
+---
 
 ### screenToWidgetLocal
 
@@ -1169,7 +1169,7 @@ ___
 
 **`Description`**
 
-将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果 bIncludeWindowPosition 为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
 
 **`Effect`**
 
@@ -1177,11 +1177,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:集合体 |
-| `screenPosition` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:屏幕位置 |
-| `isIncludeWindowPosition?` | `boolean` | usage:是否移除游戏窗口位置(在窗口模式下有用) default: false |
+| Name                       | Type                                         | Description                                                 |
+| :------------------------- | :------------------------------------------- | :---------------------------------------------------------- |
+| `geometry`                 | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:集合体                                                |
+| `screenPosition`           | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:屏幕位置                                              |
+| `isIncludeWindowPosition?` | `boolean`                                    | usage:是否移除游戏窗口位置(在窗口模式下有用) default: false |
 
 #### Returns
 
@@ -1191,9 +1191,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3186
+UI/index.d.ts:3181
 
-___
+---
 
 ### setFocusToGameViewport
 
@@ -1213,9 +1213,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4292
+UI/index.d.ts:4301
 
-___
+---
 
 ### setInputModeGameAndUI
 
@@ -1223,7 +1223,7 @@ ___
 
 **`Description`**
 
-设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
+设置一个输入模式，只允许 UI 响应用户输入，如果 UI 不处理它，玩家输入/玩家控制器就有机会
 
 **`Effect`**
 
@@ -1231,11 +1231,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InWidgetToFocus?` | [`Widget`](../classes/UI.UI.Widget.md) | usage:响应输入模式的widget default:null |
-| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.UI.MouseLockMode.md) | usage:鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
-| `hideCursorDuringCapture?` | `boolean` | usage:是否隐藏光标 default:true |
+| Name                       | Type                                               | Description                                                     |
+| :------------------------- | :------------------------------------------------- | :-------------------------------------------------------------- |
+| `InWidgetToFocus?`         | [`Widget`](../classes/UI.UI.Widget.md)             | usage:响应输入模式的 widget default:null                        |
+| `InMouseLockMode?`         | [`MouseLockMode`](../enums/UI.UI.MouseLockMode.md) | usage:鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+| `hideCursorDuringCapture?` | `boolean`                                          | usage:是否隐藏光标 default:true                                 |
 
 #### Returns
 
@@ -1243,9 +1243,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4278
+UI/index.d.ts:4287
 
-___
+---
 
 ### setInputModeGameOnly
 
@@ -1265,9 +1265,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4287
+UI/index.d.ts:4296
 
-___
+---
 
 ### setInputModeUIOnly
 
@@ -1275,7 +1275,7 @@ ___
 
 **`Description`**
 
-设置只允许UI响应用户输入的输入模式。
+设置只允许 UI 响应用户输入的输入模式。
 
 **`Effect`**
 
@@ -1283,9 +1283,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InWidgetToFocus?` | [`Widget`](../classes/UI.UI.Widget.md) | usage:响应输入模式的widget default:null |
+| Name               | Type                                               | Description                                                     |
+| :----------------- | :------------------------------------------------- | :-------------------------------------------------------------- |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.UI.Widget.md)             | usage:响应输入模式的 widget default:null                        |
 | `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.UI.MouseLockMode.md) | usage:鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
 
 #### Returns
@@ -1294,9 +1294,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4267
+UI/index.d.ts:4276
 
-___
+---
 
 ### transformVectorAbsoluteToLocal
 
@@ -1312,9 +1312,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
+| Name             | Type                                         | Description        |
+| :--------------- | :------------------------------------------- | :----------------- |
+| `geometry`       | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体       |
 | `absoluteVector` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:绝对空间矢量 |
 
 #### Returns
@@ -1325,9 +1325,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3137
+UI/index.d.ts:3132
 
-___
+---
 
 ### transformVectorLocalToAbsolute
 
@@ -1343,9 +1343,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `geometry` | [`Geometry`](../classes/UI.UI.Geometry.md) | usage:几何体 |
+| Name          | Type                                         | Description          |
+| :------------ | :------------------------------------------- | :------------------- |
+| `geometry`    | [`Geometry`](../classes/UI.UI.Geometry.md)   | usage:几何体         |
 | `localVector` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:局部空间下矢量 |
 
 #### Returns
@@ -1356,4 +1356,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3148
+UI/index.d.ts:3143

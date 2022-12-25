@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 ## Hierarchy
 
@@ -57,7 +57,7 @@
 
 #### Defined in
 
-Gameplay/index.d.ts:2644
+Gameplay/index.d.ts:2784
 
 ---
 
@@ -91,4 +91,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2638
+Gameplay/index.d.ts:2778

@@ -20,34 +20,34 @@
 
 ### Bottom
 
-• **Bottom** = ``2``
+• **Bottom** = `2`
 
 居下对齐
 
 #### Defined in
 
-UI/index.d.ts:3486
+UI/index.d.ts:3495
 
-___
+---
 
 ### Center
 
-• **Center** = ``1``
+• **Center** = `1`
 
 居中对齐
 
 #### Defined in
 
-UI/index.d.ts:3484
+UI/index.d.ts:3493
 
-___
+---
 
 ### Top
 
-• **Top** = ``0``
+• **Top** = `0`
 
 居上对齐
 
 #### Defined in
 
-UI/index.d.ts:3482
+UI/index.d.ts:3491

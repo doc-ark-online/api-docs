@@ -1,8 +1,8 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / [FunctionType](../modules/Type.Type.FunctionType.md) / Action
+[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Action
 
 # Class: Action
 
-[Type](../modules/Type.Type.md).[FunctionType](../modules/Type.Type.FunctionType.md).Action
+[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Action
 
 **`Author`**
 
@@ -20,29 +20,29 @@ usage: 双端
 
 - **`Action`**
 
-  ↳ [`Action1`](Type.Type.FunctionType.Action1.md)
+  ↳ [`Action1`](Type.Type.Action1.md)
 
-  ↳ [`Action2`](Type.Type.FunctionType.Action2.md)
+  ↳ [`Action2`](Type.Type.Action2.md)
 
-  ↳ [`Action3`](Type.Type.FunctionType.Action3.md)
+  ↳ [`Action3`](Type.Type.Action3.md)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](Type.Type.FunctionType.Action.md#constructor)
+- [constructor](Type.Type.Action.md#constructor)
 
 ### Accessors
 
-- [count](Type.Type.FunctionType.Action.md#count)
+- [count](Type.Type.Action.md#count)
 
 ### Methods
 
-- [add](Type.Type.FunctionType.Action.md#add)
-- [call](Type.Type.FunctionType.Action.md#call)
-- [clear](Type.Type.FunctionType.Action.md#clear)
-- [includes](Type.Type.FunctionType.Action.md#includes)
-- [remove](Type.Type.FunctionType.Action.md#remove)
+- [add](Type.Type.Action.md#add)
+- [call](Type.Type.Action.md#call)
+- [clear](Type.Type.Action.md#clear)
+- [includes](Type.Type.Action.md#includes)
+- [remove](Type.Type.Action.md#remove)
 
 ## Constructors
 
@@ -70,7 +70,7 @@ usage: 双端
 
 #### Defined in
 
-Type/index.d.ts:870
+Type/index.d.ts:838
 
 ## Methods
 
@@ -88,10 +88,10 @@ Type/index.d.ts:870
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fn` | `Function` | usage: 方法 |
-| `thisArg?` | `any` | usage: 域 default: undefined |
+| Name       | Type       | Description                  |
+| :--------- | :--------- | :--------------------------- |
+| `fn`       | `Function` | usage: 方法                  |
+| `thisArg?` | `any`      | usage: 域 default: undefined |
 
 #### Returns
 
@@ -99,9 +99,9 @@ Type/index.d.ts:870
 
 #### Defined in
 
-Type/index.d.ts:839
+Type/index.d.ts:807
 
-___
+---
 
 ### call
 
@@ -117,8 +117,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type  | Description     |
+| :---------- | :---- | :-------------- |
 | `...params` | `any` | usage: 参数序列 |
 
 #### Returns
@@ -127,9 +127,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:852
+Type/index.d.ts:820
 
-___
+---
 
 ### clear
 
@@ -149,9 +149,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:865
+Type/index.d.ts:833
 
-___
+---
 
 ### includes
 
@@ -167,10 +167,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fn` | `Function` | usage: 方法 |
-| `thisArg` | `any` | usage: 域 |
+| Name      | Type       | Description |
+| :-------- | :--------- | :---------- |
+| `fn`      | `Function` | usage: 方法 |
+| `thisArg` | `any`      | usage: 域   |
 
 #### Returns
 
@@ -180,9 +180,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:860
+Type/index.d.ts:828
 
-___
+---
 
 ### remove
 
@@ -198,10 +198,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fn` | `Function` | usage: 方法 |
-| `thisArg` | `any` | usage: 域 |
+| Name      | Type       | Description |
+| :-------- | :--------- | :---------- |
+| `fn`      | `Function` | usage: 方法 |
+| `thisArg` | `any`      | usage: 域   |
 
 #### Returns
 
@@ -209,4 +209,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:846
+Type/index.d.ts:814

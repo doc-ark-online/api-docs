@@ -20,36 +20,36 @@
 
 ### ButtonPress
 
-• **ButtonPress** = ``1``
+• **ButtonPress** = `1`
 
 按下按钮后，单击将立即触发。
 
 #### Defined in
 
-UI/index.d.ts:3542
+UI/index.d.ts:3551
 
-___
+---
 
 ### ButtonRelease
 
-• **ButtonRelease** = ``2``
+• **ButtonRelease** = `2`
 
 当焦点按钮上发生按钮释放时，始终会触发单击，
 即使聚焦时没有按下按钮。
 
 #### Defined in
 
-UI/index.d.ts:3547
+UI/index.d.ts:3556
 
-___
+---
 
 ### DownAndUp
 
-• **DownAndUp** = ``0``
+• **DownAndUp** = `0`
 
 用户必须按下按钮，然后在按钮具有焦点时释放，以触发单击。
 这是最常见的按钮类型。
 
 #### Defined in
 
-UI/index.d.ts:3538
+UI/index.d.ts:3547

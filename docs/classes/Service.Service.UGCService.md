@@ -16,7 +16,7 @@ huipeng.jia
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
@@ -31,9 +31,9 @@ usage: 客户端
 ### Methods
 
 - [createNewLocalGameFromTemplate](Service.Service.UGCService.md#createnewlocalgamefromtemplate)
-- [requestLocalUgcGameList](Service.Service.UGCService.md#requestlocalugcgamelist)
-- [requestPublishedUgcGameList](Service.Service.UGCService.md#requestpublishedugcgamelist)
-- [requestUgcTemplateList](Service.Service.UGCService.md#requestugctemplatelist)
+- [requestLocalUGCGameList](Service.Service.UGCService.md#requestlocalugcgamelist)
+- [requestPublishedUGCGameList](Service.Service.UGCService.md#requestpublishedugcgamelist)
+- [requestUGCTemplateList](Service.Service.UGCService.md#requestugctemplatelist)
 - [getInstance](Service.Service.UGCService.md#getinstance)
 
 ## Constructors
@@ -58,14 +58,15 @@ usage: 客户端
 
 **`Precautions`**
 
-1. 只在233内使用时生效
-2. 与[ requestUgcTemplateList ][ requestPublishedUgcGameList ]
-[ requestLocalUgcGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
-在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+1. 只在 233 内使用时生效
+2. 与[ requestUGCTemplateList ][ requestpublishedugcgamelist ]
+   [ requestLocalUGCGameList ][ requestcreatenewlocalgamefromtemplate ]互斥。
+   在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 **`Example`**
 
 使用示例: 模板信息包含如下字段:
+
 ```
 path: "data/data/local",
 parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
@@ -73,8 +74,8 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                 | Type                           | Description                   |
+| :------------------- | :----------------------------- | :---------------------------- |
 | `targetTemplateData` | `Record`<`string`, `unknown`\> | usage: 想要创建的模板游戏信息 |
 
 #### Returns
@@ -85,17 +86,17 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 #### Defined in
 
-Service/index.d.ts:727
+Service/index.d.ts:739
 
-___
+---
 
-### requestLocalUgcGameList
+### requestLocalUGCGameList
 
-▸ **requestLocalUgcGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
+▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
 **`Description`**
 
-获取当前手机本地的UGC工程列表
+获取当前手机本地的 UGC 工程列表
 
 **`Effect`**
 
@@ -103,14 +104,15 @@ ___
 
 **`Precautions`**
 
-1. 只在233内使用时生效
-2. 与[ requestUgcTemplateList ][ requestPublishedUgcGameList ]
-[ requestLocalUgcGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
-在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
+1. 只在 233 内使用时生效
+2. 与[ requestUGCTemplateList ][ requestpublishedugcgamelist ]
+   [ requestLocalUGCGameList ][ requestcreatenewlocalgamefromtemplate ]互斥。
+   在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
 
 **`Example`**
 
 使用示例: 模板信息包含如下字段:
+
 ```
 gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // mw的游戏id
 path: "data/data/local",
@@ -121,21 +123,21 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 `Promise`<`Record`<`string`, `unknown`\>[]\>
 
-当前手机本地的UGC工程列表。只列出来发布过的游戏，未发布过的工程用不到
+当前手机本地的 UGC 工程列表。只列出来发布过的游戏，未发布过的工程用不到
 
 #### Defined in
 
-Service/index.d.ts:709
+Service/index.d.ts:721
 
-___
+---
 
-### requestPublishedUgcGameList
+### requestPublishedUGCGameList
 
-▸ **requestPublishedUgcGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
+▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
 
 **`Description`**
 
-获取当前玩家已发布的UGC游戏列表
+获取当前玩家已发布的 UGC 游戏列表
 
 **`Effect`**
 
@@ -143,14 +145,15 @@ ___
 
 **`Precautions`**
 
-1. 只在233内使用时生效
-2. 与[ requestUgcTemplateList ][ requestPublishedUgcGameList ]
-[ requestLocalUgcGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
-在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+1. 只在 233 内使用时生效
+2. 与[ requestUGCTemplateList ][ requestpublishedugcgamelist ]
+   [ requestLocalUGCGameList ][ requestcreatenewlocalgamefromtemplate ]互斥。
+   在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 **`Example`**
 
 使用示例: 模板信息包含如下字段:
+
 ```
 "end": true,
 "games": [
@@ -167,25 +170,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `lastId?` | `string` | usage: 上一页的最后一个id, 如果是第一页传null。 default: null |
+| Name      | Type     | Description                                                     |
+| :-------- | :------- | :-------------------------------------------------------------- |
+| `lastId?` | `string` | usage: 上一页的最后一个 id, 如果是第一页传 null。 default: null |
 
 #### Returns
 
 `Promise`<`Record`<`string`, `unknown`\>\>
 
-玩家已发布的UGC游戏列表，两个字段：end-表示是否最后一页；games-游戏信息数组
+玩家已发布的 UGC 游戏列表，两个字段：end-表示是否最后一页；games-游戏信息数组
 
 #### Defined in
 
-Service/index.d.ts:689
+Service/index.d.ts:701
 
-___
+---
 
-### requestUgcTemplateList
+### requestUGCTemplateList
 
-▸ **requestUgcTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
+▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
 **`Description`**
 
@@ -197,14 +200,15 @@ ___
 
 **`Precautions`**
 
-1. 只在233内使用时生效
-2. 与[ requestUgcTemplateList ][ requestPublishedUgcGameList ]
-[ requestLocalUgcGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
-在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+1. 只在 233 内使用时生效
+2. 与[ requestUGCTemplateList ][ requestpublishedugcgamelist ]
+   [ requestLocalUGCGameList ][ requestcreatenewlocalgamefromtemplate ]互斥。
+   在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 **`Example`**
 
 使用示例: 模板信息包含如下字段:
+
 ```
 {
     "id": 1001579,// 分页用的id
@@ -223,9 +227,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `lastId?` | `string` | usage: 上一页的最后一个id, 如果是第一页传null。 default: null |
+| Name      | Type     | Description                                                     |
+| :-------- | :------- | :-------------------------------------------------------------- |
+| `lastId?` | `string` | usage: 上一页的最后一个 id, 如果是第一页传 null。 default: null |
 
 #### Returns
 
@@ -235,9 +239,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:662
+Service/index.d.ts:674
 
-___
+---
 
 ### getInstance
 
@@ -259,4 +263,4 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:633
+Service/index.d.ts:645

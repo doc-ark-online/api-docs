@@ -38,14 +38,14 @@ Account Service
 
 - [BoolResponse](Service.Service.md#boolresponse)
 - [DownloadDataResponse](Service.Service.md#downloaddataresponse)
-- [GameInfoToEnterNewGame](Service.Service.md#gameinfotoenternewgame)
 - [MGSEvent](Service.Service.md#mgsevent)
 - [MGSResponse](Service.Service.md#mgsresponse)
-- [OnArkBalanceUpdatedDelegate](Service.Service.md#onarkbalanceupdateddelegate)
-- [OnOrderDeliveredDelegate](Service.Service.md#onorderdelivereddelegate)
-- [OnViewLayoutSwitchedDelegate](Service.Service.md#onviewlayoutswitcheddelegate)
-- [OnViewRefreshedDelegate](Service.Service.md#onviewrefresheddelegate)
+- [OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)
+- [OnOrderDelivered](Service.Service.md#onorderdelivered)
+- [OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)
+- [OnViewRefreshed](Service.Service.md#onviewrefreshed)
 - [StringResponse](Service.Service.md#stringresponse)
+- [TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)
 - [UploadDataResponse](Service.Service.md#uploaddataresponse)
 - [VoidResponse](Service.Service.md#voidresponse)
 - [downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)
@@ -54,21 +54,21 @@ Account Service
 
 ### BoolResponse
 
-Ƭ **BoolResponse**: (`isSuccessed`: `boolean`) => `void`
+Ƭ **BoolResponse**: (`success`: `boolean`) => `void`
 
 #### Type declaration
 
-▸ (`isSuccessed`): `void`
+▸ (`success`): `void`
 
 **`Description`**
 
-返回bool的回调
+返回 bool 的回调
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `isSuccessed` | `boolean` |
+| Name      | Type      |
+| :-------- | :-------- |
+| `success` | `boolean` |
 
 ##### Returns
 
@@ -78,7 +78,7 @@ Account Service
 
 Service/index.d.ts:24
 
-___
+---
 
 ### DownloadDataResponse
 
@@ -100,37 +100,7 @@ ___
 
 Service/index.d.ts:15
 
-___
-
-### GameInfoToEnterNewGame
-
-Ƭ **GameInfoToEnterNewGame**: `Object`
-
-**`Description`**
-
-跳转游戏时需要提供的消息格式。不同的组合会有不同的跳转方式。
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `MGSGameId?` | `string` | 目标游戏的MW侧gameId |
-| `currentGameId?` | `string` | 当前游戏的内容库Id |
-| `gameId` | `string` | 目标游戏的内容库Id |
-| `gameLocalPath?` | `string` | 目标游戏的本地路径，当通过路径打开本地游戏时使用。 |
-| `gameParams?` | `string` | 要传递给目标游戏的额外信息 |
-| `gamePkg?` | `string` | 游戏内容库包名 |
-| `gameType` | `number` | 目标游戏的类型。1=单机，2=联机 |
-| `gameVersion` | `string` | 目标游戏的版本号 |
-| `inviteOpenId?` | `string` | 邀请者的OpenId，正常跳转游戏请置空。与"roomIdFromCp"配合使用" |
-| `roomIdFromCp?` | `string` | 目标游戏的RoomId，正常跳转游戏请置空。填写该字段表示以[跟房]方式加入游戏，与"inviteOpenId"配合使用" |
-| `ugcType?` | `string` | 游戏类型，UGC还是PGC。 0=UGC编辑态，1=UGC运行态，2=UGC消费态，3=PGC |
-
-#### Defined in
-
-Service/index.d.ts:461
-
-___
+---
 
 ### MGSEvent
 
@@ -142,12 +112,12 @@ ___
 
 **`Description`**
 
-收到MGS事件调用
+收到 MGS 事件调用
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `jsonData` | `string` |
 
 ##### Returns
@@ -156,9 +126,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:872
+Service/index.d.ts:886
 
-___
+---
 
 ### MGSResponse
 
@@ -170,14 +140,14 @@ ___
 
 **`Description`**
 
-收到233回复
+收到 233 回复
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type      |
+| :---------- | :-------- |
 | `isSuccess` | `boolean` |
-| `jsonData` | `string` |
+| `jsonData`  | `string`  |
 
 ##### Returns
 
@@ -185,13 +155,13 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:868
+Service/index.d.ts:882
 
-___
+---
 
-### OnArkBalanceUpdatedDelegate
+### OnArkBalanceUpdated
 
-Ƭ **OnArkBalanceUpdatedDelegate**: (`amount`: `number`) => `void`
+Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
 
 #### Type declaration
 
@@ -203,8 +173,8 @@ ___
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description     |
+| :------- | :------- | :-------------- |
 | `amount` | `number` | usage: 新的余额 |
 
 ##### Returns
@@ -213,13 +183,13 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:392
+Service/index.d.ts:387
 
-___
+---
 
-### OnOrderDeliveredDelegate
+### OnOrderDelivered
 
-Ƭ **OnOrderDeliveredDelegate**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
+Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
 
 #### Type declaration
 
@@ -231,13 +201,13 @@ ___
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playerId` | `number` | usage: 下单的玩家playerId |
-| `orderId` | `string` | usage: 订单Id |
-| `commodityId` | `string` | usage: 商品Id |
-| `amount` | `number` | usage: 数量 |
-| `confirmOrder` | (`bReceived`: `boolean`) => `void` | usage: 是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
+| Name           | Type                               | Description                                                                                                       |
+| :------------- | :--------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| `playerId`     | `number`                           | usage: 下单的玩家 playerId                                                                                        |
+| `orderId`      | `string`                           | usage: 订单 Id                                                                                                    |
+| `commodityId`  | `string`                           | usage: 商品 Id                                                                                                    |
+| `amount`       | `number`                           | usage: 数量                                                                                                       |
+| `confirmOrder` | (`bReceived`: `boolean`) => `void` | usage: 是否收到货的回调，会发给订单服务器。如果回调 false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
 
 ##### Returns
 
@@ -245,13 +215,13 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:381
+Service/index.d.ts:376
 
-___
+---
 
-### OnViewLayoutSwitchedDelegate
+### OnViewLayoutSwitched
 
-Ƭ **OnViewLayoutSwitchedDelegate**: (`newState`: `number`) => `void`
+Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
 
 #### Type declaration
 
@@ -259,35 +229,13 @@ ___
 
 **`Description`**
 
-233中MW窗口显示模式切换的消息格式
+233 中 MW 窗口显示模式切换的消息格式
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                                                 |
+| :--------- | :------- | :---------------------------------------------------------- |
 | `newState` | `number` | usage: 新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
-
-##### Returns
-
-`void`
-
-#### Defined in
-
-Service/index.d.ts:457
-
-___
-
-### OnViewRefreshedDelegate
-
-Ƭ **OnViewRefreshedDelegate**: () => `void`
-
-#### Type declaration
-
-▸ (): `void`
-
-**`Description`**
-
-233中MW窗口刷新的消息格式
 
 ##### Returns
 
@@ -297,7 +245,29 @@ ___
 
 Service/index.d.ts:452
 
-___
+---
+
+### OnViewRefreshed
+
+Ƭ **OnViewRefreshed**: () => `void`
+
+#### Type declaration
+
+▸ (): `void`
+
+**`Description`**
+
+233 中 MW 窗口刷新的消息格式
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+Service/index.d.ts:447
+
+---
 
 ### StringResponse
 
@@ -309,12 +279,12 @@ ___
 
 **`Description`**
 
-返回string的回调
+返回 string 的回调
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| :----------- | :------- |
 | `dataString` | `string` |
 
 ##### Returns
@@ -325,15 +295,36 @@ ___
 
 Service/index.d.ts:32
 
-___
+---
 
-### UploadDataResponse
+### TeamMatchFailureInfo
 
-Ƭ **UploadDataResponse**: (`isSuccessed`: `boolean`) => `void`
+Ƭ **TeamMatchFailureInfo**: `Object`
+
+**`Description`**
+
+组队跳游戏请求失败回调
 
 #### Type declaration
 
-▸ (`isSuccessed`): `void`
+| Name           | Type       | Description              |
+| :------------- | :--------- | :----------------------- |
+| `failedReason` | `string`   | 失败原因                 |
+| `playerIds`    | `number`[] | 组队玩家的 playerId 数组 |
+
+#### Defined in
+
+Service/index.d.ts:456
+
+---
+
+### UploadDataResponse
+
+Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
+
+#### Type declaration
+
+▸ (`success`): `void`
 
 **`Description`**
 
@@ -341,9 +332,9 @@ ___
 
 ##### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isSuccessed` | `boolean` | usage: 上传是否成功 |
+| Name      | Type      | Description         |
+| :-------- | :-------- | :------------------ |
+| `success` | `boolean` | usage: 上传是否成功 |
 
 ##### Returns
 
@@ -353,7 +344,7 @@ ___
 
 Service/index.d.ts:20
 
-___
+---
 
 ### VoidResponse
 
@@ -375,7 +366,7 @@ ___
 
 Service/index.d.ts:28
 
-___
+---
 
 ### downloadCharacterDataStringCallback
 
@@ -391,8 +382,8 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| :----------- | :------- |
 | `dataString` | `string` |
 
 ##### Returns

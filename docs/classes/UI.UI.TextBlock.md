@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-UI文本
+UI 文本
 
 **`Network Status`**
 
@@ -30,27 +30,26 @@ usage:客户端
 
 ### Accessors
 
+- [autoSizeEnable](UI.UI.TextBlock.md#autosizeenable)
 - [cachedGeometry](UI.UI.TextBlock.md#cachedgeometry)
+- [constraints](UI.UI.TextBlock.md#constraints)
 - [contentColor](UI.UI.TextBlock.md#contentcolor)
 - [desiredSize](UI.UI.TextBlock.md#desiredsize)
-- [enableStrikethrough](UI.UI.TextBlock.md#enablestrikethrough)
-- [enableUnderline](UI.UI.TextBlock.md#enableunderline)
+- [enable](UI.UI.TextBlock.md#enable)
 - [fontColor](UI.UI.TextBlock.md#fontcolor)
 - [fontLetterSpace](UI.UI.TextBlock.md#fontletterspace)
 - [fontLitterSpace](UI.UI.TextBlock.md#fontlitterspace)
 - [fontSize](UI.UI.TextBlock.md#fontsize)
 - [glyph](UI.UI.TextBlock.md#glyph)
 - [guid](UI.UI.TextBlock.md#guid)
-- [isEnabled](UI.UI.TextBlock.md#isenabled)
 - [isHovered](UI.UI.TextBlock.md#ishovered)
-- [isStrikethroughEnabled](UI.UI.TextBlock.md#isstrikethroughenabled)
-- [isUnderlineEnabled](UI.UI.TextBlock.md#isunderlineenabled)
 - [lineHeightPercentage](UI.UI.TextBlock.md#lineheightpercentage)
 - [name](UI.UI.TextBlock.md#name)
 - [outlineColor](UI.UI.TextBlock.md#outlinecolor)
 - [outlineSize](UI.UI.TextBlock.md#outlinesize)
 - [paintSpaceGeometry](UI.UI.TextBlock.md#paintspacegeometry)
 - [parent](UI.UI.TextBlock.md#parent)
+- [position](UI.UI.TextBlock.md#position)
 - [renderOpacity](UI.UI.TextBlock.md#renderopacity)
 - [renderScale](UI.UI.TextBlock.md#renderscale)
 - [renderShear](UI.UI.TextBlock.md#rendershear)
@@ -60,6 +59,7 @@ usage:客户端
 - [shadowOffset](UI.UI.TextBlock.md#shadowoffset)
 - [size](UI.UI.TextBlock.md#size)
 - [slot](UI.UI.TextBlock.md#slot)
+- [strikethroughEnable](UI.UI.TextBlock.md#strikethroughenable)
 - [text](UI.UI.TextBlock.md#text)
 - [textAlign](UI.UI.TextBlock.md#textalign)
 - [textHeight](UI.UI.TextBlock.md#textheight)
@@ -69,8 +69,11 @@ usage:客户端
 - [textVerticalAlign](UI.UI.TextBlock.md#textverticalalign)
 - [textVerticalJustification](UI.UI.TextBlock.md#textverticaljustification)
 - [tickSpaceGeometry](UI.UI.TextBlock.md#tickspacegeometry)
+- [transform](UI.UI.TextBlock.md#transform)
+- [underlineEnable](UI.UI.TextBlock.md#underlineenable)
 - [visibility](UI.UI.TextBlock.md#visibility)
 - [visible](UI.UI.TextBlock.md#visible)
+- [zOrder](UI.UI.TextBlock.md#zorder)
 
 ### Methods
 
@@ -79,8 +82,8 @@ usage:客户端
 - [invalidateLayoutAndVolatility](UI.UI.TextBlock.md#invalidatelayoutandvolatility)
 - [setFontColorByHex](UI.UI.TextBlock.md#setfontcolorbyhex)
 - [setFontColorDecimal](UI.UI.TextBlock.md#setfontcolordecimal)
-- [setOutLineColorByHex](UI.UI.TextBlock.md#setoutlinecolorbyhex)
-- [setOutLineColorDecimal](UI.UI.TextBlock.md#setoutlinecolordecimal)
+- [setOutlineColorByHex](UI.UI.TextBlock.md#setoutlinecolorbyhex)
+- [setOutlineColorDecimal](UI.UI.TextBlock.md#setoutlinecolordecimal)
 - [setShadowColorByHex](UI.UI.TextBlock.md#setshadowcolorbyhex)
 - [setShadowColorDecimal](UI.UI.TextBlock.md#setshadowcolordecimal)
 - [newObject](UI.UI.TextBlock.md#newobject)
@@ -96,6 +99,62 @@ usage:客户端
 [Widget](UI.UI.Widget.md).[constructor](UI.UI.Widget.md#constructor)
 
 ## Accessors
+
+### autoSizeEnable
+
+• `get` **autoSizeEnable**(): `boolean`
+
+**`Description`**
+
+获取是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否自动设置大小
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4987
+
+• `set` **autoSizeEnable**(`autoSize`): `void`
+
+**`Description`**
+
+设置是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `autoSize` | `boolean` | usage:是否自动设置大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4981
+
+---
 
 ### cachedGeometry
 
@@ -121,9 +180,65 @@ Widget.cachedGeometry
 
 #### Defined in
 
-UI/index.d.ts:4893
+UI/index.d.ts:4897
 
-___
+---
+
+### constraints
+
+• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+**`Description`**
+
+获取控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+控件的布局
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4939
+
+• `set` **constraints**(`ininconstraints`): `void`
+
+**`Description`**
+
+设置控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                                                  | Description      |
+| :---------------- | :---------------------------------------------------- | :--------------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4933
+
+---
 
 ### contentColor
 
@@ -141,11 +256,11 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体内容颜色，Type.LinearColor类型，数据范围0~1
+字体内容颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
-UI/index.d.ts:2353
+UI/index.d.ts:2348
 
 • `set` **contentColor**(`inContentColor`): `void`
 
@@ -159,9 +274,9 @@ UI/index.d.ts:2353
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 内容颜色，Type.LinearColor类型，数据范围0~1 |
+| Name             | Type                                      | Description                                          |
+| :--------------- | :---------------------------------------- | :--------------------------------------------------- |
+| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 内容颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -169,9 +284,9 @@ UI/index.d.ts:2353
 
 #### Defined in
 
-UI/index.d.ts:2347
+UI/index.d.ts:2342
 
-___
+---
 
 ### desiredSize
 
@@ -197,17 +312,41 @@ Widget.desiredSize
 
 #### Defined in
 
-UI/index.d.ts:4827
+UI/index.d.ts:4831
 
-___
+---
 
-### enableStrikethrough
+### enable
 
-• `set` **enableStrikethrough**(`inEnableStrikethrough`): `void`
+• `get` **enable**(): `boolean`
 
 **`Description`**
 
-设置是否开启字体删除线
+是否可用
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+boolean
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4807
+
+• `set` **enable**(`isEnable`): `void`
+
+**`Description`**
+
+设置可用性
 
 **`Effect`**
 
@@ -215,47 +354,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inEnableStrikethrough` | `boolean` | usage:是否开启 |
+| Name       | Type      | Description          |
+| :--------- | :-------- | :------------------- |
+| `isEnable` | `boolean` | usage:可用性 boolean |
 
 #### Returns
 
 `void`
 
-#### Defined in
+返回设置结果
 
-UI/index.d.ts:2323
+#### Inherited from
 
-___
-
-### enableUnderline
-
-• `set` **enableUnderline**(`inEnableUnderline`): `void`
-
-**`Description`**
-
-设置是否开启字体下划线
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inEnableUnderline` | `boolean` | usage:设置是否开启下划线 |
-
-#### Returns
-
-`void`
+Widget.enable
 
 #### Defined in
 
-UI/index.d.ts:2335
+UI/index.d.ts:4814
 
-___
+---
 
 ### fontColor
 
@@ -273,11 +390,11 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体颜色，Type.LinearColor类型，数据范围0~1
+字体颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
-UI/index.d.ts:2450
+UI/index.d.ts:2445
 
 • `set` **fontColor**(`inColor`): `void`
 
@@ -291,9 +408,9 @@ UI/index.d.ts:2450
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:字体的颜色值，Type.LinearColor类型，数据范围0~1 |
+| Name      | Type                                      | Description                                             |
+| :-------- | :---------------------------------------- | :------------------------------------------------------ |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:字体的颜色值，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -301,9 +418,9 @@ UI/index.d.ts:2450
 
 #### Defined in
 
-UI/index.d.ts:2444
+UI/index.d.ts:2439
 
-___
+---
 
 ### fontLetterSpace
 
@@ -319,8 +436,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type     | Description    |
+| :-------------- | :------- | :------------- |
 | `inLetterSpace` | `number` | usage:字体间距 |
 
 #### Returns
@@ -329,9 +446,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2534
+UI/index.d.ts:2529
 
-___
+---
 
 ### fontLitterSpace
 
@@ -353,9 +470,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2540
+UI/index.d.ts:2535
 
-___
+---
 
 ### fontSize
 
@@ -377,7 +494,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2528
+UI/index.d.ts:2523
 
 • `set` **fontSize**(`InSize`): `void`
 
@@ -391,8 +508,8 @@ UI/index.d.ts:2528
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description    |
+| :------- | :------- | :------------- |
 | `InSize` | `number` | usage:字体大小 |
 
 #### Returns
@@ -401,9 +518,9 @@ UI/index.d.ts:2528
 
 #### Defined in
 
-UI/index.d.ts:2522
+UI/index.d.ts:2517
 
-___
+---
 
 ### glyph
 
@@ -425,7 +542,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2317
+UI/index.d.ts:2312
 
 • `set` **glyph**(`inGlyph`): `void`
 
@@ -439,8 +556,8 @@ UI/index.d.ts:2317
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                           | Description |
+| :-------- | :--------------------------------------------- | :---------- |
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) | usage: 字形 |
 
 #### Returns
@@ -449,9 +566,9 @@ UI/index.d.ts:2317
 
 #### Defined in
 
-UI/index.d.ts:2311
+UI/index.d.ts:2306
 
-___
+---
 
 ### guid
 
@@ -459,7 +576,7 @@ ___
 
 **`Description`**
 
-获取控件GUID
+获取控件 GUID
 
 **`Effect`**
 
@@ -469,7 +586,7 @@ ___
 
 `string`
 
-控件GUID
+控件 GUID
 
 #### Inherited from
 
@@ -477,67 +594,9 @@ Widget.guid
 
 #### Defined in
 
-UI/index.d.ts:4911
+UI/index.d.ts:4915
 
-___
-
-### isEnabled
-
-• `get` **isEnabled**(): `boolean`
-
-**`Description`**
-
-是否可用
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-boolean
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4797
-
-• `set` **isEnabled**(`enable`): `void`
-
-**`Description`**
-
-设置可用性
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` | usage:可用性boolean |
-
-#### Returns
-
-`void`
-
-返回设置结果
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4804
-
-___
+---
 
 ### isHovered
 
@@ -545,7 +604,7 @@ ___
 
 **`Description`**
 
-是否是hovered
+是否是 hovered
 
 **`Effect`**
 
@@ -563,57 +622,9 @@ Widget.isHovered
 
 #### Defined in
 
-UI/index.d.ts:4816
+UI/index.d.ts:4820
 
-___
-
-### isStrikethroughEnabled
-
-• `get` **isStrikethroughEnabled**(): `boolean`
-
-**`Description`**
-
-获取是否开启字体删除线
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-是否开启字体删除线
-
-#### Defined in
-
-UI/index.d.ts:2329
-
-___
-
-### isUnderlineEnabled
-
-• `get` **isUnderlineEnabled**(): `boolean`
-
-**`Description`**
-
-返回是否开启字体下划线
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-获取是否开启字体下划线
-
-#### Defined in
-
-UI/index.d.ts:2341
-
-___
+---
 
 ### lineHeightPercentage
 
@@ -635,7 +646,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2438
+UI/index.d.ts:2433
 
 • `set` **lineHeightPercentage**(`inValue`): `void`
 
@@ -649,9 +660,9 @@ UI/index.d.ts:2438
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inValue` | `number` | usage:系数 |
+| Name      | Type     | Description |
+| :-------- | :------- | :---------- |
+| `inValue` | `number` | usage:系数  |
 
 #### Returns
 
@@ -659,9 +670,9 @@ UI/index.d.ts:2438
 
 #### Defined in
 
-UI/index.d.ts:2432
+UI/index.d.ts:2427
 
-___
+---
 
 ### name
 
@@ -687,7 +698,7 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4773
+UI/index.d.ts:4783
 
 • `set` **name**(`name`): `void`
 
@@ -701,9 +712,9 @@ UI/index.d.ts:4773
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -715,9 +726,9 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4767
+UI/index.d.ts:4777
 
-___
+---
 
 ### outlineColor
 
@@ -735,11 +746,11 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体描边颜色，Type.LinearColor类型，数据范围0~1
+字体描边颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
-UI/index.d.ts:2414
+UI/index.d.ts:2409
 
 • `set` **outlineColor**(`inOutlineColor`): `void`
 
@@ -753,9 +764,9 @@ UI/index.d.ts:2414
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 描边颜色，Type.LinearColor类型，数据范围0~1 |
+| Name             | Type                                      | Description                                          |
+| :--------------- | :---------------------------------------- | :--------------------------------------------------- |
+| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 描边颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -765,9 +776,9 @@ UI/index.d.ts:2414
 
 #### Defined in
 
-UI/index.d.ts:2408
+UI/index.d.ts:2403
 
-___
+---
 
 ### outlineSize
 
@@ -789,7 +800,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2426
+UI/index.d.ts:2421
 
 • `set` **outlineSize**(`inOutlineSize`): `void`
 
@@ -803,8 +814,8 @@ UI/index.d.ts:2426
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type     | Description      |
+| :-------------- | :------- | :--------------- |
 | `inOutlineSize` | `number` | usage:设置的大小 |
 
 #### Returns
@@ -813,9 +824,9 @@ UI/index.d.ts:2426
 
 #### Defined in
 
-UI/index.d.ts:2420
+UI/index.d.ts:2415
 
-___
+---
 
 ### paintSpaceGeometry
 
@@ -823,7 +834,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于渲染Widget的几何信息
+获取最后一次用于渲染 Widget 的几何信息
 
 **`Effect`**
 
@@ -833,7 +844,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染Widget的几何信息
+返回最后一次用于渲染 Widget 的几何信息
 
 #### Inherited from
 
@@ -841,9 +852,9 @@ Widget.paintSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4905
+UI/index.d.ts:4909
 
-___
+---
 
 ### parent
 
@@ -869,9 +880,65 @@ Widget.parent
 
 #### Defined in
 
-UI/index.d.ts:4755
+UI/index.d.ts:4764
 
-___
+---
+
+### position
+
+• `get` **position**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+**`Description`**
+
+获取控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+控件的位置
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4951
+
+• `set` **position**(`inFigmaPosition`): `void`
+
+**`Description`**
+
+设置控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                              | Description      |
+| :---------------- | :-------------------------------- | :--------------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4945
+
+---
 
 ### renderOpacity
 
@@ -897,7 +964,7 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4887
+UI/index.d.ts:4891
 
 • `set` **renderOpacity**(`InOpacity`): `void`
 
@@ -911,8 +978,8 @@ UI/index.d.ts:4887
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| :---------- | :------- | :----------- |
 | `InOpacity` | `number` | usage:透明度 |
 
 #### Returns
@@ -925,9 +992,9 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4881
+UI/index.d.ts:4885
 
-___
+---
 
 ### renderScale
 
@@ -953,7 +1020,7 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4875
+UI/index.d.ts:4879
 
 • `set` **renderScale**(`scale`): `void`
 
@@ -967,8 +1034,8 @@ UI/index.d.ts:4875
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
 
 #### Returns
@@ -981,9 +1048,9 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4869
+UI/index.d.ts:4873
 
-___
+---
 
 ### renderShear
 
@@ -1009,7 +1076,7 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4863
+UI/index.d.ts:4867
 
 • `set` **renderShear**(`shear`): `void`
 
@@ -1023,8 +1090,8 @@ UI/index.d.ts:4863
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description        |
+| :------ | :-------------------------------- | :----------------- |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
 
 #### Returns
@@ -1037,9 +1104,9 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4857
+UI/index.d.ts:4861
 
-___
+---
 
 ### renderTransformAngle
 
@@ -1065,7 +1132,7 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4839
+UI/index.d.ts:4843
 
 • `set` **renderTransformAngle**(`o`): `void`
 
@@ -1079,9 +1146,9 @@ UI/index.d.ts:4839
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `o` | `number` | usage:渲染角度 |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
+| `o`  | `number` | usage:渲染角度 |
 
 #### Returns
 
@@ -1093,9 +1160,9 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4833
+UI/index.d.ts:4837
 
-___
+---
 
 ### renderTransformPivot
 
@@ -1121,7 +1188,7 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4851
+UI/index.d.ts:4855
 
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
@@ -1135,8 +1202,8 @@ UI/index.d.ts:4851
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
 
 #### Returns
@@ -1149,9 +1216,9 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4845
+UI/index.d.ts:4849
 
-___
+---
 
 ### shadowColor
 
@@ -1169,11 +1236,11 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-阴影颜色，Type.LinearColor类型，数据范围0~1
+阴影颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
-UI/index.d.ts:2365
+UI/index.d.ts:2360
 
 • `set` **shadowColor**(`inShadowColor`): `void`
 
@@ -1187,9 +1254,9 @@ UI/index.d.ts:2365
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:阴影颜色，Type.LinearColor类型，数据范围0~1 |
+| Name            | Type                                      | Description                                         |
+| :-------------- | :---------------------------------------- | :-------------------------------------------------- |
+| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:阴影颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -1197,9 +1264,9 @@ UI/index.d.ts:2365
 
 #### Defined in
 
-UI/index.d.ts:2359
+UI/index.d.ts:2354
 
-___
+---
 
 ### shadowOffset
 
@@ -1217,11 +1284,11 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-字体阴影颜色，Type.LinearColor类型，数据范围0~1
+字体阴影颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
-UI/index.d.ts:2377
+UI/index.d.ts:2372
 
 • `set` **shadowOffset**(`inOffset`): `void`
 
@@ -1235,8 +1302,8 @@ UI/index.d.ts:2377
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                              | Description      |
+| :--------- | :-------------------------------- | :--------------- |
 | `inOffset` | [`Vector2`](Type.Type.Vector2.md) | usage:阴影偏移量 |
 
 #### Returns
@@ -1245,9 +1312,9 @@ UI/index.d.ts:2377
 
 #### Defined in
 
-UI/index.d.ts:2371
+UI/index.d.ts:2366
 
-___
+---
 
 ### size
 
@@ -1255,7 +1322,7 @@ ___
 
 **`Description`**
 
-获取控件实际大小，需要在添加后才能使用
+获取大小
 
 **`Effect`**
 
@@ -1265,7 +1332,7 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-控件大小
+FVector2D
 
 #### Inherited from
 
@@ -1273,17 +1340,49 @@ Widget.size
 
 #### Defined in
 
-UI/index.d.ts:4810
+UI/index.d.ts:4963
 
-___
+• `set` **size**(`inSize`): `void`
+
+**`Description`**
+
+设置控件的大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name     | Type                              | Description    |
+| :------- | :-------------------------------- | :------------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.size
+
+#### Defined in
+
+UI/index.d.ts:4957
+
+---
 
 ### slot
 
 • `get` **slot**(): [`UISlot`](UI.UI.UISlot.md)
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取Slot槽
+获取插槽
 
 **`Effect`**
 
@@ -1293,7 +1392,7 @@ ___
 
 [`UISlot`](UI.UI.UISlot.md)
 
-返回Slot槽
+返回插槽
 
 #### Inherited from
 
@@ -1301,9 +1400,57 @@ Widget.slot
 
 #### Defined in
 
-UI/index.d.ts:4761
+UI/index.d.ts:4771
 
-___
+---
+
+### strikethroughEnable
+
+• `get` **strikethroughEnable**(): `boolean`
+
+**`Description`**
+
+获取是否开启字体删除线
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否开启字体删除线
+
+#### Defined in
+
+UI/index.d.ts:2324
+
+• `set` **strikethroughEnable**(`inEnableStrikethrough`): `void`
+
+**`Description`**
+
+设置是否开启字体删除线
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name                    | Type      | Description    |
+| :---------------------- | :-------- | :------------- |
+| `inEnableStrikethrough` | `boolean` | usage:是否开启 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+UI/index.d.ts:2318
+
+---
 
 ### text
 
@@ -1325,7 +1472,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2552
+UI/index.d.ts:2547
 
 • `set` **text**(`inText`): `void`
 
@@ -1339,8 +1486,8 @@ UI/index.d.ts:2552
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description    |
+| :------- | :------- | :------------- |
 | `inText` | `string` | usage:文本内容 |
 
 #### Returns
@@ -1349,9 +1496,9 @@ UI/index.d.ts:2552
 
 #### Defined in
 
-UI/index.d.ts:2546
+UI/index.d.ts:2541
 
-___
+---
 
 ### textAlign
 
@@ -1373,7 +1520,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2389
+UI/index.d.ts:2384
 
 • `set` **textAlign**(`inTextJustify`): `void`
 
@@ -1387,8 +1534,8 @@ UI/index.d.ts:2389
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type                                           | Description          |
+| :-------------- | :--------------------------------------------- | :------------------- |
 | `inTextJustify` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | usage:对齐方式的枚举 |
 
 #### Returns
@@ -1397,9 +1544,9 @@ UI/index.d.ts:2389
 
 #### Defined in
 
-UI/index.d.ts:2383
+UI/index.d.ts:2378
 
-___
+---
 
 ### textHeight
 
@@ -1421,9 +1568,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2573
+UI/index.d.ts:2568
 
-___
+---
 
 ### textHorizontalLayout
 
@@ -1445,7 +1592,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2510
+UI/index.d.ts:2505
 
 • `set` **textHorizontalLayout**(`inTextHorizontalLayout`): `void`
 
@@ -1459,8 +1606,8 @@ UI/index.d.ts:2510
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                     | Type                                                                 | Description        |
+| :----------------------- | :------------------------------------------------------------------- | :----------------- |
 | `inTextHorizontalLayout` | [`UITextHorizontalLayout`](../enums/UI.UI.UITextHorizontalLayout.md) | usage:水平显示方式 |
 
 #### Returns
@@ -1469,9 +1616,9 @@ UI/index.d.ts:2510
 
 #### Defined in
 
-UI/index.d.ts:2516
+UI/index.d.ts:2511
 
-___
+---
 
 ### textJustification
 
@@ -1493,7 +1640,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2486
+UI/index.d.ts:2481
 
 • `set` **textJustification**(`inTextJustification`): `void`
 
@@ -1507,8 +1654,8 @@ UI/index.d.ts:2486
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                  | Type                                           | Description        |
+| :-------------------- | :--------------------------------------------- | :----------------- |
 | `inTextJustification` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | usage:新的对齐方式 |
 
 #### Returns
@@ -1517,9 +1664,9 @@ UI/index.d.ts:2486
 
 #### Defined in
 
-UI/index.d.ts:2492
+UI/index.d.ts:2487
 
-___
+---
 
 ### textSingleHeight
 
@@ -1541,9 +1688,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2579
+UI/index.d.ts:2574
 
-___
+---
 
 ### textVerticalAlign
 
@@ -1565,7 +1712,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2401
+UI/index.d.ts:2396
 
 • `set` **textVerticalAlign**(`inTextVerticalJustify`): `void`
 
@@ -1579,8 +1726,8 @@ UI/index.d.ts:2401
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                    | Type                                                           | Description         |
+| :---------------------- | :------------------------------------------------------------- | :------------------ |
 | `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | usage: 垂直对齐方式 |
 
 #### Returns
@@ -1589,9 +1736,9 @@ UI/index.d.ts:2401
 
 #### Defined in
 
-UI/index.d.ts:2395
+UI/index.d.ts:2390
 
-___
+---
 
 ### textVerticalJustification
 
@@ -1613,7 +1760,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2498
+UI/index.d.ts:2493
 
 • `set` **textVerticalJustification**(`inTextJustification`): `void`
 
@@ -1627,8 +1774,8 @@ UI/index.d.ts:2498
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                  | Type                                                           | Description        |
+| :-------------------- | :------------------------------------------------------------- | :----------------- |
 | `inTextJustification` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | usage:垂直对齐方式 |
 
 #### Returns
@@ -1637,9 +1784,9 @@ UI/index.d.ts:2498
 
 #### Defined in
 
-UI/index.d.ts:2504
+UI/index.d.ts:2499
 
-___
+---
 
 ### tickSpaceGeometry
 
@@ -1647,7 +1794,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于驱动Widget Tick的几何信息
+获取最后一次用于驱动 Widget Tick 的几何信息
 
 **`Effect`**
 
@@ -1657,7 +1804,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动Widget Tick的几何信息
+返回最后一次用于驱动 Widget Tick 的几何信息
 
 #### Inherited from
 
@@ -1665,9 +1812,113 @@ Widget.tickSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4899
+UI/index.d.ts:4903
 
-___
+---
+
+### transform
+
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+**`Description`**
+
+得到控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+控件的大小和位置
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4927
+
+• `set` **transform**(`inTransform`): `void`
+
+**`Description`**
+
+设置控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name          | Type                                  | Description    |
+| :------------ | :------------------------------------ | :------------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4921
+
+---
+
+### underlineEnable
+
+• `get` **underlineEnable**(): `boolean`
+
+**`Description`**
+
+返回是否开启字体下划线
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+获取是否开启字体下划线
+
+#### Defined in
+
+UI/index.d.ts:2336
+
+• `set` **underlineEnable**(`inEnableUnderline`): `void`
+
+**`Description`**
+
+设置是否开启字体下划线
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name                | Type      | Description              |
+| :------------------ | :-------- | :----------------------- |
+| `inEnableUnderline` | `boolean` | usage:设置是否开启下划线 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+UI/index.d.ts:2330
+
+---
 
 ### visibility
 
@@ -1693,7 +1944,7 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4785
+UI/index.d.ts:4795
 
 • `set` **visibility**(`Visibility`): `void`
 
@@ -1707,8 +1958,8 @@ UI/index.d.ts:4785
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                   | Description  |
+| :----------- | :----------------------------------------------------- | :----------- |
 | `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
 
 #### Returns
@@ -1721,9 +1972,9 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4779
+UI/index.d.ts:4789
 
-___
+---
 
 ### visible
 
@@ -1749,7 +2000,63 @@ Widget.visible
 
 #### Defined in
 
-UI/index.d.ts:4791
+UI/index.d.ts:4801
+
+---
+
+### zOrder
+
+• `get` **zOrder**(): `number`
+
+**`Description`**
+
+获取 zorder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`number`
+
+zorder
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4975
+
+• `set` **zOrder**(`InZOrder`): `void`
+
+**`Description`**
+
+设置 zoder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type     | Description          |
+| :--------- | :------- | :------------------- |
+| `InZOrder` | `number` | usage:值越大在越上层 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4969
 
 ## Methods
 
@@ -1775,9 +2082,9 @@ UI/index.d.ts:4791
 
 #### Defined in
 
-UI/index.d.ts:4742
+UI/index.d.ts:4751
 
-___
+---
 
 ### equal
 
@@ -1793,8 +2100,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                        | Description                  |
+| :----- | :-------------------------- | :--------------------------- |
 | `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
 
 #### Returns
@@ -1809,9 +2116,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4749
+UI/index.d.ts:4758
 
-___
+---
 
 ### invalidateLayoutAndVolatility
 
@@ -1835,9 +2142,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4821
+UI/index.d.ts:4825
 
-___
+---
 
 ### setFontColorByHex
 
@@ -1845,7 +2152,7 @@ ___
 
 **`Description`**
 
-设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
+设置字体颜色,指定 Hex 的颜色文本设定颜色 #05050505
 
 **`Effect`**
 
@@ -1853,9 +2160,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inHexString` | `string` | usage:Hex颜色字符串 |
+| Name          | Type     | Description          |
+| :------------ | :------- | :------------------- |
+| `inHexString` | `string` | usage:Hex 颜色字符串 |
 
 #### Returns
 
@@ -1863,9 +2170,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2465
+UI/index.d.ts:2460
 
-___
+---
 
 ### setFontColorDecimal
 
@@ -1873,7 +2180,7 @@ ___
 
 **`Description`**
 
-设置字体颜色,指定R、G、B、A设置颜色 0 ~255
+设置字体颜色,指定 R、G、B、A 设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1881,12 +2188,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `R` | `number` | usage:字体R值，数据范围0~255 |
-| `G` | `number` | usage:字体G值，数据范围0~255 |
-| `B` | `number` | usage:字体B值，数据范围0~255 |
-| `A` | `number` | usage:字体透明度，数据范围0~255 |
+| Name | Type     | Description                      |
+| :--- | :------- | :------------------------------- |
+| `R`  | `number` | usage:字体 R 值，数据范围 0~255  |
+| `G`  | `number` | usage:字体 G 值，数据范围 0~255  |
+| `B`  | `number` | usage:字体 B 值，数据范围 0~255  |
+| `A`  | `number` | usage:字体透明度，数据范围 0~255 |
 
 #### Returns
 
@@ -1894,13 +2201,13 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2459
+UI/index.d.ts:2454
 
-___
+---
 
-### setOutLineColorByHex
+### setOutlineColorByHex
 
-▸ **setOutLineColorByHex**(`inHexString`): `void`
+▸ **setOutlineColorByHex**(`inHexString`): `void`
 
 **`Description`**
 
@@ -1912,8 +2219,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type     | Description            |
+| :------------ | :------- | :--------------------- |
 | `inHexString` | `string` | usage:十六进制的字符串 |
 
 #### Returns
@@ -1922,17 +2229,17 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2567
+UI/index.d.ts:2562
 
-___
+---
 
-### setOutLineColorDecimal
+### setOutlineColorDecimal
 
-▸ **setOutLineColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void`
 
 **`Description`**
 
-设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
+设置当前的描边颜色,指定 R、G、B、A 设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1940,12 +2247,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `R` | `number` | usage:颜色R通道的值，数据范围0~255 |
-| `G` | `number` | usage:颜色G通道的值，数据范围0~255 |
-| `B` | `number` | usage:颜色B通道的值，数据范围0~255 |
-| `A` | `number` | usage:透明度，数据范围0~255 |
+| Name | Type     | Description                           |
+| :--- | :------- | :------------------------------------ |
+| `R`  | `number` | usage:颜色 R 通道的值，数据范围 0~255 |
+| `G`  | `number` | usage:颜色 G 通道的值，数据范围 0~255 |
+| `B`  | `number` | usage:颜色 B 通道的值，数据范围 0~255 |
+| `A`  | `number` | usage:透明度，数据范围 0~255          |
 
 #### Returns
 
@@ -1953,9 +2260,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2561
+UI/index.d.ts:2556
 
-___
+---
 
 ### setShadowColorByHex
 
@@ -1963,7 +2270,7 @@ ___
 
 **`Description`**
 
-设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505
+设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果,指定 Hex 的颜色文本设定颜色 #05050505
 
 **`Effect`**
 
@@ -1971,9 +2278,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inHexString` | `string` | usage:颜色 |
+| Name          | Type     | Description |
+| :------------ | :------- | :---------- |
+| `inHexString` | `string` | usage:颜色  |
 
 #### Returns
 
@@ -1981,9 +2288,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2480
+UI/index.d.ts:2475
 
-___
+---
 
 ### setShadowColorDecimal
 
@@ -1991,7 +2298,7 @@ ___
 
 **`Description`**
 
-设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255
+设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果, 指定 R、G、B、A 设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1999,12 +2306,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `R` | `number` | usage:颜色R通道的值，数据范围0~255 |
-| `G` | `number` | usage:颜色G通道的值，数据范围0~255 |
-| `B` | `number` | usage:颜色B通道的值，数据范围0~255 |
-| `A` | `number` | usage:透明度，数据范围0~255 |
+| Name | Type     | Description                           |
+| :--- | :------- | :------------------------------------ |
+| `R`  | `number` | usage:颜色 R 通道的值，数据范围 0~255 |
+| `G`  | `number` | usage:颜色 G 通道的值，数据范围 0~255 |
+| `B`  | `number` | usage:颜色 B 通道的值，数据范围 0~255 |
+| `A`  | `number` | usage:透明度，数据范围 0~255          |
 
 #### Returns
 
@@ -2012,9 +2319,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2474
+UI/index.d.ts:2469
 
-___
+---
 
 ### newObject
 
@@ -2022,7 +2329,7 @@ ___
 
 **`Description`**
 
-创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 TextBlock 控件 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁
 
 **`Effect`**
 
@@ -2030,10 +2337,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外parent对象 default:null |
-| `inName?` | `string` | usage:创建控件的名称 default:null |
+| Name      | Type                        | Description                                 |
+| :-------- | :-------------------------- | :------------------------------------------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 parent 对象 default:null |
+| `inName?` | `string`                    | usage:创建控件的名称 default:null           |
 
 #### Returns
 
@@ -2043,4 +2350,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:2305
+UI/index.d.ts:2300

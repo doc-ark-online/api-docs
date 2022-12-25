@@ -19,8 +19,8 @@ usage: 双端
 ## Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 ## Table of contents
 
@@ -31,14 +31,14 @@ usage: 双端
 ### Methods
 
 - [clear](Extension.Extension.ObjPool.md#clear)
+- [despawn](Extension.Extension.ObjPool.md#despawn)
 - [spawn](Extension.Extension.ObjPool.md#spawn)
-- [unSpawn](Extension.Extension.ObjPool.md#unspawn)
 
 ## Constructors
 
 ### constructor
 
-• **new ObjPool**<`T`\>(`creatObj`, `onReset`, `onDestroy`, `initNum?`)
+• **new ObjPool**<`T`\>(`createObj`, `onReset`, `onDestroy`, `initNum?`)
 
 **`Description`**
 
@@ -51,17 +51,17 @@ usage: 双端
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `creatObj` | () => `T` | usage: 创建新对象的回调 |
-| `onReset` | (`obj`: `T`) => `void` | usage: 重置对象的回调 |
-| `onDestroy` | (`obj`: `T`) => `void` | usage: 销毁对象的回调 |
-| `initNum?` | `number` | usage: 默认缓存对象数量 default: 2 |
+| Name        | Type                   | Description                        |
+| :---------- | :--------------------- | :--------------------------------- |
+| `createObj` | () => `T`              | usage: 创建新对象的回调            |
+| `onReset`   | (`obj`: `T`) => `void` | usage: 重置对象的回调              |
+| `onDestroy` | (`obj`: `T`) => `void` | usage: 销毁对象的回调              |
+| `initNum?`  | `number`               | usage: 默认缓存对象数量 default: 2 |
 
 #### Defined in
 
@@ -89,7 +89,35 @@ Extension/index.d.ts:55
 
 Extension/index.d.ts:77
 
-___
+---
+
+### despawn
+
+▸ **despawn**(`obj`): `void`
+
+**`Description`**
+
+归还一个对象
+
+**`Effect`**
+
+调用端生效
+
+#### Parameters
+
+| Name  | Type | Description |
+| :---- | :--- | :---------- |
+| `obj` | `T`  | usage: 对象 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Extension/index.d.ts:72
+
+---
 
 ### spawn
 
@@ -112,31 +140,3 @@ ___
 #### Defined in
 
 Extension/index.d.ts:66
-
-___
-
-### unSpawn
-
-▸ **unSpawn**(`obj`): `void`
-
-**`Description`**
-
-归还一个对象
-
-**`Effect`**
-
-调用端生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | `T` | usage: 对象 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Extension/index.d.ts:72

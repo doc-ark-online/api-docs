@@ -6,7 +6,7 @@
 
 **`Author`**
 
-yangwei
+wei.yang
 
 **`Description`**
 
@@ -18,19 +18,15 @@ usage:客户端
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Object` |
+| Name | Type             |
+| :--- | :--------------- |
+| `T`  | extends `Object` |
 
 ## Table of contents
 
 ### Constructors
 
 - [constructor](UI.UI.TabGroup.md#constructor)
-
-### Properties
-
-- [refreshTabs](UI.UI.TabGroup.md#refreshtabs)
 
 ### Accessors
 
@@ -52,37 +48,19 @@ usage:客户端
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `Object` |
+| Name | Type             |
+| :--- | :--------------- |
+| `T`  | extends `Object` |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type  | Description          |
+| :------- | :---- | :------------------- |
 | `tabArr` | `T`[] | usage:标签的按钮数组 |
 
 #### Defined in
 
 UI/index.d.ts:2245
-
-## Properties
-
-### refreshTabs
-
-• `Private` **refreshTabs**: `any`
-
-**`Description`**
-
-刷新所有便签的显示样式
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Defined in
-
-UI/index.d.ts:2288
 
 ## Accessors
 
@@ -124,12 +102,12 @@ UI/index.d.ts:2283
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name             | Type                                          | Description                                |
+| :--------------- | :-------------------------------------------- | :----------------------------------------- |
 | `tabStyleHandle` | (`btn`: `T`, `isSelect`: `boolean`) => `void` | usage:设置标签的样式方法（方法参数：按钮） |
-| `selectCallBack` | (`index`: `number`) => `void` | usage:选择标签的回调方法 |
-| `thisArg` | `any` | usage:域 |
-| `defaultIndex?` | `number` | usage:默认选择的标签索引 default:0 |
+| `selectCallBack` | (`index`: `number`) => `void`                 | usage:选择标签的回调方法                   |
+| `thisArg`        | `any`                                         | usage:域                                   |
+| `defaultIndex?`  | `number`                                      | usage:默认选择的标签索引 default:0         |
 
 #### Returns
 
@@ -139,7 +117,7 @@ UI/index.d.ts:2283
 
 UI/index.d.ts:2254
 
-___
+---
 
 ### select
 
@@ -155,9 +133,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:标签索引 |
+| Name          | Type      | Description                         |
+| :------------ | :-------- | :---------------------------------- |
+| `index`       | `number`  | usage:标签索引                      |
 | `ignoreSame?` | `boolean` | usage:是否忽略相同索引 default:true |
 
 #### Returns
@@ -170,7 +148,7 @@ ___
 
 UI/index.d.ts:2277
 
-___
+---
 
 ### setSelectableChecker
 
@@ -186,10 +164,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name            | Type                             | Description    |
+| :-------------- | :------------------------------- | :------------- |
 | `selectChecker` | (`index`: `number`) => `boolean` | usage:判断方法 |
-| `thisArg` | `any` | usage:域 |
+| `thisArg`       | `any`                            | usage:域       |
 
 #### Returns
 

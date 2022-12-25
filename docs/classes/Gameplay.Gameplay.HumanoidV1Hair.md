@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V1头发接口
+人形对象 V1 头发接口
 
 **`Author`**
 
-邓广 任雨辰
+guang.deng yuchen.ren
 
 **`Network Status`**
 
@@ -55,7 +55,7 @@ usage:双端
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Implementation of
 
@@ -63,9 +63,9 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5008
+Gameplay/index.d.ts:5145
 
-___
+---
 
 ### setMesh
 
@@ -77,7 +77,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载, 则本地设置时异步的, 需要监听onMeshChanged回调
+如果模型 Guid 没有预加载, 则本地设置时异步的, 需要监听 onMeshChanged 回调
 
 **`Effect`**
 
@@ -86,9 +86,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -101,4 +101,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5002
+Gameplay/index.d.ts:5139

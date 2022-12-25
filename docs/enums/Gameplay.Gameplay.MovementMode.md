@@ -12,42 +12,42 @@
 
 ### Enumeration Members
 
-- [FLY](Gameplay.Gameplay.MovementMode.md#fly)
-- [SWIM](Gameplay.Gameplay.MovementMode.md#swim)
-- [WALK](Gameplay.Gameplay.MovementMode.md#walk)
+- [Fly](Gameplay.Gameplay.MovementMode.md#fly)
+- [Swim](Gameplay.Gameplay.MovementMode.md#swim)
+- [Walk](Gameplay.Gameplay.MovementMode.md#walk)
 
 ## Enumeration Members
 
-### FLY
+### Fly
 
-• **FLY** = ``2``
+• **Fly** = `2`
 
 飞行
 
 #### Defined in
 
-Gameplay/index.d.ts:1546
+Gameplay/index.d.ts:1694
 
-___
+---
 
-### SWIM
+### Swim
 
-• **SWIM** = ``1``
+• **Swim** = `1`
 
 游泳
 
 #### Defined in
 
-Gameplay/index.d.ts:1544
+Gameplay/index.d.ts:1692
 
-___
+---
 
-### WALK
+### Walk
 
-• **WALK** = ``0``
+• **Walk** = `0`
 
 行走
 
 #### Defined in
 
-Gameplay/index.d.ts:1542
+Gameplay/index.d.ts:1690

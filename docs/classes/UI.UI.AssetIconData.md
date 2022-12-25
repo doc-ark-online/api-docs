@@ -10,7 +10,7 @@ yw
 
 **`Description`**
 
-资源ICON信息
+资源 ICON 信息
 
 **`Network Status`**
 
@@ -42,7 +42,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4245
+UI/index.d.ts:4254
 
 ## Accessors
 
@@ -52,7 +52,7 @@ UI/index.d.ts:4245
 
 **`Description`**
 
-获取资源ID
+获取资源 ID
 
 **`Effect`**
 
@@ -62,17 +62,17 @@ UI/index.d.ts:4245
 
 `string`
 
-资源ID信息
+资源 ID 信息
 
 #### Defined in
 
-UI/index.d.ts:4251
+UI/index.d.ts:4260
 
 • `set` **assetID**(`v`): `void`
 
 **`Description`**
 
-设置资源ID
+设置资源 ID
 
 **`Effect`**
 
@@ -80,9 +80,9 @@ UI/index.d.ts:4251
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | usage:资源ID信息 |
+| Name | Type     | Description        |
+| :--- | :------- | :----------------- |
+| `v`  | `string` | usage:资源 ID 信息 |
 
 #### Returns
 
@@ -90,4 +90,4 @@ UI/index.d.ts:4251
 
 #### Defined in
 
-UI/index.d.ts:4257
+UI/index.d.ts:4266

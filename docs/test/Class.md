@@ -1,6 +1,6 @@
-## 基础markdown写法
+## 基础 markdown 写法
 
-基础写法可参考[markdown官方教程](https://markdown.com.cn/basic-syntax/)，VitePress会自动在右边栏，生成二级&三级标题跳转。
+基础写法可参考[markdown 官方教程](https://markdown.com.cn/basic-syntax/)，VitePress 会自动在右边栏，生成二级&三级标题跳转。
 
 ## 表格
 
@@ -74,19 +74,21 @@ This is a details block.
 
 ### Custom Title
 
-可以自定义容器后面的文字，如下面的warning。
+可以自定义容器后面的文字，如下面的 warning。
 
 **Input**
 
 ````md
 ::: warning @precautions
-这个可以用来放咱们的precautions
+这个可以用来放咱们的 precautions
 :::
 
 ::: details Click me to view the code
+
 ```js
-console.log('Hello, VitePress!')
+console.log("Hello, VitePress!");
 ```
+
 :::
 ````
 
@@ -97,9 +99,11 @@ Danger zone, do not proceed
 :::
 
 ::: details Click me to view the code
+
 ```js
-console.log('Hello, VitePress!')
+console.log("Hello, VitePress!");
 ```
+
 :::
 
 ## 代码
@@ -128,15 +132,15 @@ export default {
 export default {
   data() {
     return {
-      msg: 'Focused!' // [!code focus]
-    }
-  }
-}
+      msg: "Focused!", // [!code focus]
+    };
+  },
+};
 ```
 
-### Colored Diffs in Code Blocks 
+### Colored Diffs in Code Blocks
 
-单行代码后添加 `// [!code --]` or `// [!code ++]` 会出现下方diffs的效果。
+单行代码后添加 `// [!code --]` or `// [!code ++]` 会出现下方 diffs 的效果。
 
 **Input**
 
@@ -191,11 +195,11 @@ export default {
 export default {
   data() {
     return {
-      msg: 'Error', // [!code error]
-      msg: 'Warning' // [!code warning]
-    }
-  }
-}
+      msg: "Error", // [!code error]
+      msg: "Warning", // [!code warning]
+    };
+  },
+};
 ```
 
 ### Code Groups
@@ -213,19 +217,19 @@ export default {
  */
 const config = {
   // ...
-}
+};
 
-export default config
+export default config;
 ```
 
 ```ts [config.ts]
-import type { UserConfig } from 'vitepress'
+import type { UserConfig } from "vitepress";
 
 const config: UserConfig = {
   // ...
-}
+};
 
-export default config
+export default config;
 ```
 
 :::
@@ -241,19 +245,19 @@ export default config
  */
 const config = {
   // ...
-}
+};
 
-export default config
+export default config;
 ```
 
 ```ts [config.ts]
-import type { UserConfig } from 'vitepress'
+import type { UserConfig } from "vitepress";
 
 const config: UserConfig = {
   // ...
-}
+};
 
-export default config
+export default config;
 ```
 
 :::
@@ -263,15 +267,18 @@ export default config
 可以使用 `Badge` 形成下面的效果。
 
 ```html
-### Title <Badge type="info" text="default" />
-### Title <Badge type="tip" text="^1.9.0" />
-### Title <Badge type="warning" text="class" />
-### Title <Badge type="danger" text="caution" />
+### Title <Badge type="info" text="default" /> ### Title
+<Badge type="tip" text="^1.9.0" /> ### Title
+<Badge type="warning" text="class" /> ### Title
+<Badge type="danger" text="caution" />
 ```
 
 ### Title <Badge type="info" text="default" />
+
 ### Title <Badge type="tip" text="^1.9.0" />
+
 ### Title <Badge type="warning" text="class" />
+
 ### Title <Badge type="danger" text="caution" />
 
 更多玩法参考[vitepress](https://vitepress.vuejs.org/guide/markdown)，里面介绍的很详细。

@@ -16,17 +16,22 @@ huipeng.jia
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
-usage: 客户端
+usage: 双端
 
 ## Table of contents
 
 ### Constructors
 
 - [constructor](Service.Service.RouteService.md#constructor)
+
+### Properties
+
+- [onReceiveTeamData](Service.Service.RouteService.md#onreceiveteamdata)
+- [onTeamMatchFailure](Service.Service.RouteService.md#onteammatchfailure)
 
 ### Accessors
 
@@ -35,10 +40,13 @@ usage: 客户端
 
 ### Methods
 
+- [clearTeamCarryingData](Service.Service.RouteService.md#clearteamcarryingdata)
 - [enterDressUpGame](Service.Service.RouteService.md#enterdressupgame)
 - [enterLocalGame](Service.Service.RouteService.md#enterlocalgame)
 - [enterNewGame](Service.Service.RouteService.md#enternewgame)
+- [enterNewGameByTeam](Service.Service.RouteService.md#enternewgamebyteam)
 - [enterSquareGame](Service.Service.RouteService.md#entersquaregame)
+- [getTeamCarryingData](Service.Service.RouteService.md#getteamcarryingdata)
 - [isInDressUpGame](Service.Service.RouteService.md#isindressupgame)
 - [notifyCharacterLoaded](Service.Service.RouteService.md#notifycharacterloaded)
 - [notifyGameLoadingState](Service.Service.RouteService.md#notifygameloadingstate)
@@ -46,7 +54,6 @@ usage: 客户端
 - [requestMGSGameId](Service.Service.RouteService.md#requestmgsgameid)
 - [requestRefreshView](Service.Service.RouteService.md#requestrefreshview)
 - [requestSwitchViewLayout](Service.Service.RouteService.md#requestswitchviewlayout)
-- [backToLobby](Service.Service.RouteService.md#backtolobby)
 - [getGameId](Service.Service.RouteService.md#getgameid)
 - [getGameVersion](Service.Service.RouteService.md#getgameversion)
 - [getInstance](Service.Service.RouteService.md#getinstance)
@@ -58,11 +65,47 @@ usage: 客户端
 
 • **new RouteService**()
 
+## Properties
+
+### onReceiveTeamData
+
+• **onReceiveTeamData**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\>
+
+**`Description`**
+
+收到队伍数据时会触发的委托
+
+**`Network Status`**
+
+usage: 服务端
+
+#### Defined in
+
+Service/index.d.ts:481
+
+---
+
+### onTeamMatchFailure
+
+• **onTeamMatchFailure**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\>
+
+**`Description`**
+
+组队请求失败时会触发的委托
+
+**`Network Status`**
+
+usage: 服务端
+
+#### Defined in
+
+Service/index.d.ts:474
+
 ## Accessors
 
 ### onViewLayoutSwitched
 
-• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewLayoutSwitchedDelegate`](../modules/Service.Service.md#onviewlayoutswitcheddelegate)\>
+• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\>
 
 **`Description`**
 
@@ -74,27 +117,27 @@ usage: 客户端
 
 **`Precautions`**
 
-只在233内使用时生效
+只在 233 内使用时生效
 
 #### Returns
 
-[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewLayoutSwitchedDelegate`](../modules/Service.Service.md#onviewlayoutswitcheddelegate)\>
+[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\>
 
 角色展示/编辑游戏的显示模式切换的委托
 
 #### Defined in
 
-Service/index.d.ts:545
+Service/index.d.ts:562
 
-___
+---
 
 ### onViewRefreshed
 
-• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewRefreshedDelegate`](../modules/Service.Service.md#onviewrefresheddelegate)\>
+• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\>
 
 **`Description`**
 
-注册View刷新的委托
+注册 View 刷新的委托
 
 **`Effect`**
 
@@ -102,19 +145,47 @@ ___
 
 **`Precautions`**
 
-只在233内使用时生效
+只在 233 内使用时生效
 
 #### Returns
 
-[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewRefreshedDelegate`](../modules/Service.Service.md#onviewrefresheddelegate)\>
+[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\>
 
-View刷新的委托
+View 刷新的委托
 
 #### Defined in
 
-Service/index.d.ts:511
+Service/index.d.ts:528
 
 ## Methods
+
+### clearTeamCarryingData
+
+▸ **clearTeamCarryingData**(`teamId`): `void`
+
+**`Description`**
+
+删除指定 Team 在组队跳转时带入游戏的数据
+
+**`Effect`**
+
+只在服务端调用生效
+
+#### Parameters
+
+| Name     | Type     | Description        |
+| :------- | :------- | :----------------- |
+| `teamId` | `string` | usage: 目标 teamId |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Service/index.d.ts:515
+
+---
 
 ### enterDressUpGame
 
@@ -130,7 +201,7 @@ Service/index.d.ts:511
 
 **`Precautions`**
 
-只在233内使用时生效
+只在 233 内使用时生效
 
 #### Returns
 
@@ -138,9 +209,9 @@ Service/index.d.ts:511
 
 #### Defined in
 
-Service/index.d.ts:558
+Service/index.d.ts:575
 
-___
+---
 
 ### enterLocalGame
 
@@ -148,7 +219,7 @@ ___
 
 **`Description`**
 
-跳转本地游戏(可编辑的UGC工程) ，同进程跳转
+跳转本地游戏(可编辑的 UGC 工程) ，同进程跳转
 
 **`Effect`**
 
@@ -156,14 +227,14 @@ ___
 
 **`Precautions`**
 
-需要用创建本地工程时所对应模板游戏的gameId
+需要用创建本地工程时所对应模板游戏的 gameId
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `targetGameId` | `string` | usage: 目标游戏的MWGameId，一般来说，这里会是模板游戏的gameId |
-| `gamePath` | `string` | usage: 本地游戏工程的路径 |
+| Name           | Type     | Description                                                     |
+| :------------- | :------- | :-------------------------------------------------------------- |
+| `targetGameId` | `string` | usage: 目标游戏的 MWGameId，一般来说，这里会是模板游戏的 gameId |
+| `gamePath`     | `string` | usage: 本地游戏工程的路径                                       |
 
 #### Returns
 
@@ -171,9 +242,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:572
+Service/index.d.ts:589
 
-___
+---
 
 ### enterNewGame
 
@@ -189,9 +260,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `targetGameId` | `string` | usage: 要跳转的目标游戏ID，MWGameId |
+| Name           | Type     | Description                          |
+| :------------- | :------- | :----------------------------------- |
+| `targetGameId` | `string` | usage: 要跳转的目标游戏 ID，MWGameId |
 
 #### Returns
 
@@ -199,9 +270,41 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:564
+Service/index.d.ts:581
 
-___
+---
+
+### enterNewGameByTeam
+
+▸ **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\>
+
+**`Description`**
+
+组队跳游戏，可以携带数据
+
+**`Effect`**
+
+只在服务端调用生效
+
+#### Parameters
+
+| Name                | Type                             | Description                                  |
+| :------------------ | :------------------------------- | :------------------------------------------- |
+| `targetGameId`      | `string`                         | usage: 要跳转的游戏的 mwGameId               |
+| `teammatePlayerIds` | `string`[]                       | usage: 队友的 playerId 数组                  |
+| `carryingData?`     | `Record`<`string`, `unknown`\>[] | usage: 要带入新游戏的数据 default: undefined |
+
+#### Returns
+
+`Promise`<`void`\>
+
+组队跳转请求回调
+
+#### Defined in
+
+Service/index.d.ts:498
+
+---
 
 ### enterSquareGame
 
@@ -209,7 +312,7 @@ ___
 
 **`Description`**
 
-将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
+将当前 MW 进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
 
 **`Effect`**
 
@@ -217,13 +320,13 @@ ___
 
 **`Precautions`**
 
-只在233内使用时生效
+只在 233 内使用时生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `squareMGSGameId?` | `string` | usage: 新的广场游戏GameId，如果为空，则使用各环境默认的广场游戏Id default: null |
+| Name               | Type     | Description                                                                       |
+| :----------------- | :------- | :-------------------------------------------------------------------------------- |
+| `squareMGSGameId?` | `string` | usage: 新的广场游戏 GameId，如果为空，则使用各环境默认的广场游戏 Id default: null |
 
 #### Returns
 
@@ -231,9 +334,39 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:552
+Service/index.d.ts:569
 
-___
+---
+
+### getTeamCarryingData
+
+▸ **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\>
+
+**`Description`**
+
+获取指定 Team 在组队跳转时带入游戏的数据
+
+**`Effect`**
+
+只在服务端调用生效
+
+#### Parameters
+
+| Name     | Type     | Description            |
+| :------- | :------- | :--------------------- |
+| `teamId` | `string` | usage: 要查询的 teamId |
+
+#### Returns
+
+`Record`<`string`, `unknown`\>
+
+指定队伍的数据
+
+#### Defined in
+
+Service/index.d.ts:509
+
+---
 
 ### isInDressUpGame
 
@@ -249,7 +382,7 @@ ___
 
 **`Precautions`**
 
-在PIE或者服务端调用则固定返回false
+在 PIE 或者服务端调用则固定返回 false
 
 #### Returns
 
@@ -259,9 +392,9 @@ true-当前游戏是角色展示/编辑游戏，false-不是
 
 #### Defined in
 
-Service/index.d.ts:518
+Service/index.d.ts:535
 
-___
+---
 
 ### notifyCharacterLoaded
 
@@ -269,7 +402,7 @@ ___
 
 **`Description`**
 
-通知233/Playza角色形象加载完毕
+通知 233/Playza 角色形象加载完毕
 
 **`Effect`**
 
@@ -277,7 +410,7 @@ ___
 
 **`Precautions`**
 
-只在233/Playza内使用时生效
+只在 233/Playza 内使用时生效
 
 #### Returns
 
@@ -285,9 +418,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:531
+Service/index.d.ts:548
 
-___
+---
 
 ### notifyGameLoadingState
 
@@ -295,7 +428,7 @@ ___
 
 **`Description`**
 
-通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)
+通知 233/Playza 当前 TS 游戏加载状态(收到这个协议，233 停止下载，清除 Temp 文件)
 
 **`Effect`**
 
@@ -303,13 +436,13 @@ ___
 
 **`Precautions`**
 
-只在233/Playza内使用时生效
+只在 233/Playza 内使用时生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newState` | `number` | usage: 状态Id。newState = 1 : 游戏加载成功，newstate = 2 ：游戏加载失败 |
+| Name       | Type     | Description                                                              |
+| :--------- | :------- | :----------------------------------------------------------------------- |
+| `newState` | `number` | usage: 状态 Id。newState = 1 : 游戏加载成功，newState = 2 ：游戏加载失败 |
 
 #### Returns
 
@@ -317,9 +450,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:538
+Service/index.d.ts:555
 
-___
+---
 
 ### requestGameId
 
@@ -327,7 +460,7 @@ ___
 
 **`Description`**
 
-用内容库MGSGameId来换取gameId
+用内容库 MGSGameId 来换取 gameId
 
 **`Effect`**
 
@@ -335,21 +468,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `targetMGSGameId` | `string` | usage: 目标游戏的内容库MGSGameId |
+| Name              | Type     | Description                       |
+| :---------------- | :------- | :-------------------------------- |
+| `targetMGSGameId` | `string` | usage: 目标游戏的内容库 MGSGameId |
 
 #### Returns
 
 `Promise`<`string`\>
 
-对应的gameId
+对应的 gameId
 
 #### Defined in
 
-Service/index.d.ts:579
+Service/index.d.ts:596
 
-___
+---
 
 ### requestMGSGameId
 
@@ -357,7 +490,7 @@ ___
 
 **`Description`**
 
-用gameId来换取内容库MGSGameId
+用 gameId 来换取内容库 MGSGameId
 
 **`Effect`**
 
@@ -365,21 +498,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `targetGameId` | `string` | usage: 目标游戏的gameId |
+| Name           | Type     | Description              |
+| :------------- | :------- | :----------------------- |
+| `targetGameId` | `string` | usage: 目标游戏的 gameId |
 
 #### Returns
 
 `Promise`<`string`\>
 
-对应的MGSGameId
+对应的 MGSGameId
 
 #### Defined in
 
-Service/index.d.ts:586
+Service/index.d.ts:603
 
-___
+---
 
 ### requestRefreshView
 
@@ -387,7 +520,7 @@ ___
 
 **`Description`**
 
-TS请求233刷新View
+TS 请求 233 刷新 View
 
 **`Effect`**
 
@@ -395,7 +528,7 @@ TS请求233刷新View
 
 **`Precautions`**
 
-只在233内使用时生效
+只在 233 内使用时生效
 
 #### Returns
 
@@ -403,9 +536,9 @@ TS请求233刷新View
 
 #### Defined in
 
-Service/index.d.ts:504
+Service/index.d.ts:521
 
-___
+---
 
 ### requestSwitchViewLayout
 
@@ -421,13 +554,13 @@ ___
 
 **`Precautions`**
 
-只在233/Playza内使用时生效
+只在 233/Playza 内使用时生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newState` | `number` | usage: 新模式。newState = 1 为“角色展示模式”，newstate = 2 为“角色编辑模式” |
+| Name       | Type     | Description                                                                 |
+| :--------- | :------- | :-------------------------------------------------------------------------- |
+| `newState` | `number` | usage: 新模式。newState = 1 为“角色展示模式”，newState = 2 为“角色编辑模式” |
 
 #### Returns
 
@@ -435,31 +568,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:525
+Service/index.d.ts:542
 
-___
-
-### backToLobby
-
-▸ `Static` **backToLobby**(): `void`
-
-**`Description`**
-
-返回到游戏大厅
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Service/index.d.ts:591
-
-___
+---
 
 ### getGameId
 
@@ -467,7 +578,7 @@ ___
 
 **`Description`**
 
-获取游戏Id
+获取游戏 Id
 
 **`Effect`**
 
@@ -475,7 +586,7 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
@@ -485,9 +596,9 @@ GameId
 
 #### Defined in
 
-Service/index.d.ts:598
+Service/index.d.ts:610
 
-___
+---
 
 ### getGameVersion
 
@@ -503,7 +614,7 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
@@ -513,9 +624,9 @@ GameVersion
 
 #### Defined in
 
-Service/index.d.ts:605
+Service/index.d.ts:617
 
-___
+---
 
 ### getInstance
 
@@ -537,9 +648,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:498
+Service/index.d.ts:489
 
-___
+---
 
 ### getMGSGameId
 
@@ -547,7 +658,7 @@ ___
 
 **`Description`**
 
-获取短游戏ID
+获取短游戏 ID
 
 **`Effect`**
 
@@ -555,14 +666,14 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
 `string`
 
-短游戏ID
+短游戏 ID
 
 #### Defined in
 
-Service/index.d.ts:612
+Service/index.d.ts:624

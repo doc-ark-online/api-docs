@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-UI进度条
+UI 进度条
 
 **`Network Status`**
 
@@ -30,14 +30,17 @@ usage:客户端
 
 ### Accessors
 
+- [autoSizeEnable](UI.UI.ProgressBar.md#autosizeenable)
 - [backgroundImageColor](UI.UI.ProgressBar.md#backgroundimagecolor)
 - [backgroundImageDrawType](UI.UI.ProgressBar.md#backgroundimagedrawtype)
 - [backgroundImageGuid](UI.UI.ProgressBar.md#backgroundimageguid)
 - [backgroundImageMargin](UI.UI.ProgressBar.md#backgroundimagemargin)
 - [backgroundImageSize](UI.UI.ProgressBar.md#backgroundimagesize)
 - [cachedGeometry](UI.UI.ProgressBar.md#cachedgeometry)
+- [constraints](UI.UI.ProgressBar.md#constraints)
 - [currentValue](UI.UI.ProgressBar.md#currentvalue)
 - [desiredSize](UI.UI.ProgressBar.md#desiredsize)
+- [enable](UI.UI.ProgressBar.md#enable)
 - [fillImageColor](UI.UI.ProgressBar.md#fillimagecolor)
 - [fillImageDrawType](UI.UI.ProgressBar.md#fillimagedrawtype)
 - [fillImageGuid](UI.UI.ProgressBar.md#fillimageguid)
@@ -45,14 +48,14 @@ usage:客户端
 - [fillImageSize](UI.UI.ProgressBar.md#fillimagesize)
 - [fillType](UI.UI.ProgressBar.md#filltype)
 - [guid](UI.UI.ProgressBar.md#guid)
-- [isEnabled](UI.UI.ProgressBar.md#isenabled)
 - [isHovered](UI.UI.ProgressBar.md#ishovered)
 - [isRoundedToInt](UI.UI.ProgressBar.md#isroundedtoint)
 - [name](UI.UI.ProgressBar.md#name)
-- [onSliderValueChange](UI.UI.ProgressBar.md#onslidervaluechange)
+- [onSliderValueChanged](UI.UI.ProgressBar.md#onslidervaluechanged)
 - [paintSpaceGeometry](UI.UI.ProgressBar.md#paintspacegeometry)
 - [parent](UI.UI.ProgressBar.md#parent)
 - [percent](UI.UI.ProgressBar.md#percent)
+- [position](UI.UI.ProgressBar.md#position)
 - [renderOpacity](UI.UI.ProgressBar.md#renderopacity)
 - [renderScale](UI.UI.ProgressBar.md#renderscale)
 - [renderShear](UI.UI.ProgressBar.md#rendershear)
@@ -68,8 +71,10 @@ usage:客户端
 - [thumbImageMargin](UI.UI.ProgressBar.md#thumbimagemargin)
 - [thumbImageSize](UI.UI.ProgressBar.md#thumbimagesize)
 - [tickSpaceGeometry](UI.UI.ProgressBar.md#tickspacegeometry)
+- [transform](UI.UI.ProgressBar.md#transform)
 - [visibility](UI.UI.ProgressBar.md#visibility)
 - [visible](UI.UI.ProgressBar.md#visible)
+- [zOrder](UI.UI.ProgressBar.md#zorder)
 
 ### Methods
 
@@ -90,6 +95,62 @@ usage:客户端
 
 ## Accessors
 
+### autoSizeEnable
+
+• `get` **autoSizeEnable**(): `boolean`
+
+**`Description`**
+
+获取是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否自动设置大小
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4987
+
+• `set` **autoSizeEnable**(`autoSize`): `void`
+
+**`Description`**
+
+设置是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `autoSize` | `boolean` | usage:是否自动设置大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4981
+
+---
+
 ### backgroundImageColor
 
 • `get` **backgroundImageColor**(): [`LinearColor`](Type.Type.LinearColor.md)
@@ -106,7 +167,7 @@ usage:客户端
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-背景图片颜色，Type.LinearColor类型，数据范围0~1
+背景图片颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
@@ -124,9 +185,9 @@ UI/index.d.ts:1224
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:背景颜色，Type.LinearColor类型，数据范围0~1 |
+| Name      | Type                                      | Description                                         |
+| :-------- | :---------------------------------------- | :-------------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:背景颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -136,7 +197,7 @@ UI/index.d.ts:1224
 
 UI/index.d.ts:1218
 
-___
+---
 
 ### backgroundImageDrawType
 
@@ -172,9 +233,9 @@ UI/index.d.ts:1236
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:Brush类型 |
+| Name         | Type                                                         | Description      |
+| :----------- | :----------------------------------------------------------- | :--------------- |
+| `InDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:Brush 类型 |
 
 #### Returns
 
@@ -184,7 +245,7 @@ UI/index.d.ts:1236
 
 UI/index.d.ts:1230
 
-___
+---
 
 ### backgroundImageGuid
 
@@ -192,7 +253,7 @@ ___
 
 **`Description`**
 
-获取背景图片id
+获取背景图片 id
 
 **`Effect`**
 
@@ -202,7 +263,7 @@ ___
 
 `string`
 
-背景图片id
+背景图片 id
 
 #### Defined in
 
@@ -220,9 +281,9 @@ UI/index.d.ts:1188
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inGuid` | `string` | usage:图片GUID |
+| Name     | Type     | Description     |
+| :------- | :------- | :-------------- |
+| `inGuid` | `string` | usage:图片 GUID |
 
 #### Returns
 
@@ -234,7 +295,7 @@ void
 
 UI/index.d.ts:1182
 
-___
+---
 
 ### backgroundImageMargin
 
@@ -270,8 +331,8 @@ UI/index.d.ts:1194
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                        | Description              |
+| :--------- | :-------------------------- | :----------------------- |
 | `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:进度条背景图片边距 |
 
 #### Returns
@@ -282,7 +343,7 @@ UI/index.d.ts:1194
 
 UI/index.d.ts:1200
 
-___
+---
 
 ### backgroundImageSize
 
@@ -318,8 +379,8 @@ UI/index.d.ts:1212
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                              | Description    |
+| :------- | :-------------------------------- | :------------- |
 | `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:图片大小 |
 
 #### Returns
@@ -330,7 +391,7 @@ UI/index.d.ts:1212
 
 UI/index.d.ts:1206
 
-___
+---
 
 ### cachedGeometry
 
@@ -356,9 +417,65 @@ Widget.cachedGeometry
 
 #### Defined in
 
-UI/index.d.ts:4893
+UI/index.d.ts:4897
 
-___
+---
+
+### constraints
+
+• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+**`Description`**
+
+获取控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+控件的布局
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4939
+
+• `set` **constraints**(`ininconstraints`): `void`
+
+**`Description`**
+
+设置控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                                                  | Description      |
+| :---------------- | :---------------------------------------------------- | :--------------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4933
+
+---
 
 ### currentValue
 
@@ -394,8 +511,8 @@ UI/index.d.ts:1381
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description  |
+| :-------- | :------- | :----------- |
 | `inValue` | `number` | usage:当前值 |
 
 #### Returns
@@ -408,7 +525,7 @@ void
 
 UI/index.d.ts:1388
 
-___
+---
 
 ### desiredSize
 
@@ -434,9 +551,67 @@ Widget.desiredSize
 
 #### Defined in
 
-UI/index.d.ts:4827
+UI/index.d.ts:4831
 
-___
+---
+
+### enable
+
+• `get` **enable**(): `boolean`
+
+**`Description`**
+
+是否可用
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+boolean
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4807
+
+• `set` **enable**(`isEnable`): `void`
+
+**`Description`**
+
+设置可用性
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description          |
+| :--------- | :-------- | :------------------- |
+| `isEnable` | `boolean` | usage:可用性 boolean |
+
+#### Returns
+
+`void`
+
+返回设置结果
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4814
+
+---
 
 ### fillImageColor
 
@@ -454,7 +629,7 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-填充图片颜色，Type.LinearColor类型，数据范围0~1
+填充图片颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
@@ -472,9 +647,9 @@ UI/index.d.ts:1285
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor类型，数据范围0~1 |
+| Name      | Type                                      | Description                                           |
+| :-------- | :---------------------------------------- | :---------------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -484,7 +659,7 @@ UI/index.d.ts:1285
 
 UI/index.d.ts:1279
 
-___
+---
 
 ### fillImageDrawType
 
@@ -520,8 +695,8 @@ UI/index.d.ts:1297
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                         | Description    |
+| :----------- | :----------------------------------------------------------- | :------------- |
 | `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:填充类型 |
 
 #### Returns
@@ -532,7 +707,7 @@ UI/index.d.ts:1297
 
 UI/index.d.ts:1291
 
-___
+---
 
 ### fillImageGuid
 
@@ -540,7 +715,7 @@ ___
 
 **`Description`**
 
-获取填充区图片id
+获取填充区图片 id
 
 **`Effect`**
 
@@ -550,7 +725,7 @@ ___
 
 `string`
 
-填充区图片id
+填充区图片 id
 
 #### Defined in
 
@@ -568,9 +743,9 @@ UI/index.d.ts:1249
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inGuid` | `string` | usage:图片GUID |
+| Name     | Type     | Description     |
+| :------- | :------- | :-------------- |
+| `inGuid` | `string` | usage:图片 GUID |
 
 #### Returns
 
@@ -582,7 +757,7 @@ void
 
 UI/index.d.ts:1243
 
-___
+---
 
 ### fillImageMargin
 
@@ -618,8 +793,8 @@ UI/index.d.ts:1255
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                        | Description          |
+| :--------- | :-------------------------- | :------------------- |
 | `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:进度条图片边距 |
 
 #### Returns
@@ -630,7 +805,7 @@ UI/index.d.ts:1255
 
 UI/index.d.ts:1261
 
-___
+---
 
 ### fillImageSize
 
@@ -666,9 +841,9 @@ UI/index.d.ts:1273
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:大小  |
 
 #### Returns
 
@@ -678,7 +853,7 @@ UI/index.d.ts:1273
 
 UI/index.d.ts:1267
 
-___
+---
 
 ### fillType
 
@@ -714,8 +889,8 @@ UI/index.d.ts:1303
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                                           | Description                                   |
+| :------- | :------------------------------------------------------------- | :-------------------------------------------- |
 | `inType` | [`ProgressBarFillType`](../enums/UI.UI.ProgressBarFillType.md) | usage:{ 从左到右,从右到左,从上到下,从下到上 } |
 
 #### Returns
@@ -728,7 +903,7 @@ void
 
 UI/index.d.ts:1310
 
-___
+---
 
 ### guid
 
@@ -736,7 +911,7 @@ ___
 
 **`Description`**
 
-获取控件GUID
+获取控件 GUID
 
 **`Effect`**
 
@@ -746,7 +921,7 @@ ___
 
 `string`
 
-控件GUID
+控件 GUID
 
 #### Inherited from
 
@@ -754,67 +929,9 @@ Widget.guid
 
 #### Defined in
 
-UI/index.d.ts:4911
+UI/index.d.ts:4915
 
-___
-
-### isEnabled
-
-• `get` **isEnabled**(): `boolean`
-
-**`Description`**
-
-是否可用
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-boolean
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4797
-
-• `set` **isEnabled**(`enable`): `void`
-
-**`Description`**
-
-设置可用性
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` | usage:可用性boolean |
-
-#### Returns
-
-`void`
-
-返回设置结果
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4804
-
-___
+---
 
 ### isHovered
 
@@ -822,7 +939,7 @@ ___
 
 **`Description`**
 
-是否是hovered
+是否是 hovered
 
 **`Effect`**
 
@@ -840,9 +957,9 @@ Widget.isHovered
 
 #### Defined in
 
-UI/index.d.ts:4816
+UI/index.d.ts:4820
 
-___
+---
 
 ### isRoundedToInt
 
@@ -878,8 +995,8 @@ UI/index.d.ts:1433
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type      | Description    |
+| :-------- | :-------- | :------------- |
 | `inToInt` | `boolean` | usage:是否取整 |
 
 #### Returns
@@ -892,7 +1009,7 @@ void
 
 UI/index.d.ts:1440
 
-___
+---
 
 ### name
 
@@ -918,7 +1035,7 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4773
+UI/index.d.ts:4783
 
 • `set` **name**(`name`): `void`
 
@@ -932,9 +1049,9 @@ UI/index.d.ts:4773
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -946,17 +1063,17 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4767
+UI/index.d.ts:4777
 
-___
+---
 
-### onSliderValueChange
+### onSliderValueChanged
 
-• `get` **onSliderValueChange**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\>
+• `get` **onSliderValueChanged**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\>
 
 **`Description`**
 
-Slider值变化事件
+Slider 值变化事件
 
 **`Effect`**
 
@@ -972,7 +1089,7 @@ Slider值变化事件
 
 UI/index.d.ts:1446
 
-___
+---
 
 ### paintSpaceGeometry
 
@@ -980,7 +1097,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于渲染Widget的几何信息
+获取最后一次用于渲染 Widget 的几何信息
 
 **`Effect`**
 
@@ -990,7 +1107,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染Widget的几何信息
+返回最后一次用于渲染 Widget 的几何信息
 
 #### Inherited from
 
@@ -998,9 +1115,9 @@ Widget.paintSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4905
+UI/index.d.ts:4909
 
-___
+---
 
 ### parent
 
@@ -1026,9 +1143,9 @@ Widget.parent
 
 #### Defined in
 
-UI/index.d.ts:4755
+UI/index.d.ts:4764
 
-___
+---
 
 ### percent
 
@@ -1064,8 +1181,8 @@ UI/index.d.ts:1420
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| :---------- | :------- | :----------- |
 | `inPercent` | `number` | usage:百分比 |
 
 #### Returns
@@ -1078,7 +1195,63 @@ void
 
 UI/index.d.ts:1427
 
-___
+---
+
+### position
+
+• `get` **position**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+**`Description`**
+
+获取控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+控件的位置
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4951
+
+• `set` **position**(`inFigmaPosition`): `void`
+
+**`Description`**
+
+设置控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                              | Description      |
+| :---------------- | :-------------------------------- | :--------------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4945
+
+---
 
 ### renderOpacity
 
@@ -1104,7 +1277,7 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4887
+UI/index.d.ts:4891
 
 • `set` **renderOpacity**(`InOpacity`): `void`
 
@@ -1118,8 +1291,8 @@ UI/index.d.ts:4887
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| :---------- | :------- | :----------- |
 | `InOpacity` | `number` | usage:透明度 |
 
 #### Returns
@@ -1132,9 +1305,9 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4881
+UI/index.d.ts:4885
 
-___
+---
 
 ### renderScale
 
@@ -1160,7 +1333,7 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4875
+UI/index.d.ts:4879
 
 • `set` **renderScale**(`scale`): `void`
 
@@ -1174,8 +1347,8 @@ UI/index.d.ts:4875
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
 
 #### Returns
@@ -1188,9 +1361,9 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4869
+UI/index.d.ts:4873
 
-___
+---
 
 ### renderShear
 
@@ -1216,7 +1389,7 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4863
+UI/index.d.ts:4867
 
 • `set` **renderShear**(`shear`): `void`
 
@@ -1230,8 +1403,8 @@ UI/index.d.ts:4863
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description        |
+| :------ | :-------------------------------- | :----------------- |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
 
 #### Returns
@@ -1244,9 +1417,9 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4857
+UI/index.d.ts:4861
 
-___
+---
 
 ### renderTransformAngle
 
@@ -1272,7 +1445,7 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4839
+UI/index.d.ts:4843
 
 • `set` **renderTransformAngle**(`o`): `void`
 
@@ -1286,9 +1459,9 @@ UI/index.d.ts:4839
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `o` | `number` | usage:渲染角度 |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
+| `o`  | `number` | usage:渲染角度 |
 
 #### Returns
 
@@ -1300,9 +1473,9 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4833
+UI/index.d.ts:4837
 
-___
+---
 
 ### renderTransformPivot
 
@@ -1328,7 +1501,7 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4851
+UI/index.d.ts:4855
 
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
@@ -1342,8 +1515,8 @@ UI/index.d.ts:4851
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
 
 #### Returns
@@ -1356,9 +1529,9 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4845
+UI/index.d.ts:4849
 
-___
+---
 
 ### size
 
@@ -1366,7 +1539,7 @@ ___
 
 **`Description`**
 
-获取控件实际大小，需要在添加后才能使用
+获取大小
 
 **`Effect`**
 
@@ -1376,7 +1549,7 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-控件大小
+FVector2D
 
 #### Inherited from
 
@@ -1384,9 +1557,37 @@ Widget.size
 
 #### Defined in
 
-UI/index.d.ts:4810
+UI/index.d.ts:4963
 
-___
+• `set` **size**(`inSize`): `void`
+
+**`Description`**
+
+设置控件的大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name     | Type                              | Description    |
+| :------- | :-------------------------------- | :------------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.size
+
+#### Defined in
+
+UI/index.d.ts:4957
+
+---
 
 ### sliderMaxValue
 
@@ -1422,8 +1623,8 @@ UI/index.d.ts:1407
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description        |
+| :-------- | :------- | :----------------- |
 | `inValue` | `number` | usage:拖动条最大值 |
 
 #### Returns
@@ -1436,7 +1637,7 @@ void
 
 UI/index.d.ts:1414
 
-___
+---
 
 ### sliderMinValue
 
@@ -1472,8 +1673,8 @@ UI/index.d.ts:1394
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type     | Description        |
+| :-------- | :------- | :----------------- |
 | `inValue` | `number` | usage:拖动条最小值 |
 
 #### Returns
@@ -1486,15 +1687,19 @@ void
 
 UI/index.d.ts:1401
 
-___
+---
 
 ### slot
 
 • `get` **slot**(): [`UISlot`](UI.UI.UISlot.md)
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取Slot槽
+获取插槽
 
 **`Effect`**
 
@@ -1504,7 +1709,7 @@ ___
 
 [`UISlot`](UI.UI.UISlot.md)
 
-返回Slot槽
+返回插槽
 
 #### Inherited from
 
@@ -1512,9 +1717,9 @@ Widget.slot
 
 #### Defined in
 
-UI/index.d.ts:4761
+UI/index.d.ts:4771
 
-___
+---
 
 ### thumbImageColor
 
@@ -1532,7 +1737,7 @@ ___
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-滑块图片颜色，Type.LinearColor类型，数据范围0~1
+滑块图片颜色，Type.LinearColor 类型，数据范围 0~1
 
 #### Defined in
 
@@ -1550,9 +1755,9 @@ UI/index.d.ts:1359
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor类型，数据范围0~1 |
+| Name      | Type                                      | Description                                           |
+| :-------- | :---------------------------------------- | :---------------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
@@ -1562,7 +1767,7 @@ UI/index.d.ts:1359
 
 UI/index.d.ts:1353
 
-___
+---
 
 ### thumbImageDrawType
 
@@ -1598,8 +1803,8 @@ UI/index.d.ts:1375
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                         | Description    |
+| :----------- | :----------------------------------------------------------- | :------------- |
 | `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:绘制类型 |
 
 #### Returns
@@ -1610,7 +1815,7 @@ UI/index.d.ts:1375
 
 UI/index.d.ts:1365
 
-___
+---
 
 ### thumbImageGuid
 
@@ -1618,7 +1823,7 @@ ___
 
 **`Description`**
 
-获取填充区图片id
+获取填充区图片 id
 
 **`Effect`**
 
@@ -1628,7 +1833,7 @@ ___
 
 `string`
 
-填充区图片id
+填充区图片 id
 
 #### Defined in
 
@@ -1646,9 +1851,9 @@ UI/index.d.ts:1323
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InGuid` | `string` | usage:拖动条样式GUID |
+| Name     | Type     | Description           |
+| :------- | :------- | :-------------------- |
+| `InGuid` | `string` | usage:拖动条样式 GUID |
 
 #### Returns
 
@@ -1660,7 +1865,7 @@ void
 
 UI/index.d.ts:1317
 
-___
+---
 
 ### thumbImageMargin
 
@@ -1696,8 +1901,8 @@ UI/index.d.ts:1329
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                        | Description          |
+| :--------- | :-------------------------- | :------------------- |
 | `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:拖动条图片边距 |
 
 #### Returns
@@ -1708,7 +1913,7 @@ UI/index.d.ts:1329
 
 UI/index.d.ts:1335
 
-___
+---
 
 ### thumbImageSize
 
@@ -1744,8 +1949,8 @@ UI/index.d.ts:1347
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                              | Description        |
+| :------- | :-------------------------------- | :----------------- |
 | `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:滑块图片大小 |
 
 #### Returns
@@ -1756,7 +1961,7 @@ UI/index.d.ts:1347
 
 UI/index.d.ts:1341
 
-___
+---
 
 ### tickSpaceGeometry
 
@@ -1764,7 +1969,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于驱动Widget Tick的几何信息
+获取最后一次用于驱动 Widget Tick 的几何信息
 
 **`Effect`**
 
@@ -1774,7 +1979,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动Widget Tick的几何信息
+返回最后一次用于驱动 Widget Tick 的几何信息
 
 #### Inherited from
 
@@ -1782,9 +1987,65 @@ Widget.tickSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4899
+UI/index.d.ts:4903
 
-___
+---
+
+### transform
+
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+**`Description`**
+
+得到控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+控件的大小和位置
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4927
+
+• `set` **transform**(`inTransform`): `void`
+
+**`Description`**
+
+设置控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name          | Type                                  | Description    |
+| :------------ | :------------------------------------ | :------------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4921
+
+---
 
 ### visibility
 
@@ -1810,7 +2071,7 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4785
+UI/index.d.ts:4795
 
 • `set` **visibility**(`Visibility`): `void`
 
@@ -1824,8 +2085,8 @@ UI/index.d.ts:4785
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                   | Description  |
+| :----------- | :----------------------------------------------------- | :----------- |
 | `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
 
 #### Returns
@@ -1838,9 +2099,9 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4779
+UI/index.d.ts:4789
 
-___
+---
 
 ### visible
 
@@ -1866,7 +2127,63 @@ Widget.visible
 
 #### Defined in
 
-UI/index.d.ts:4791
+UI/index.d.ts:4801
+
+---
+
+### zOrder
+
+• `get` **zOrder**(): `number`
+
+**`Description`**
+
+获取 zorder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`number`
+
+zorder
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4975
+
+• `set` **zOrder**(`InZOrder`): `void`
+
+**`Description`**
+
+设置 zoder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type     | Description          |
+| :--------- | :------- | :------------------- |
+| `InZOrder` | `number` | usage:值越大在越上层 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4969
 
 ## Methods
 
@@ -1892,9 +2209,9 @@ UI/index.d.ts:4791
 
 #### Defined in
 
-UI/index.d.ts:4742
+UI/index.d.ts:4751
 
-___
+---
 
 ### equal
 
@@ -1910,8 +2227,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                        | Description                  |
+| :----- | :-------------------------- | :--------------------------- |
 | `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
 
 #### Returns
@@ -1926,9 +2243,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4749
+UI/index.d.ts:4758
 
-___
+---
 
 ### invalidateLayoutAndVolatility
 
@@ -1952,9 +2269,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4821
+UI/index.d.ts:4825
 
-___
+---
 
 ### newObject
 
@@ -1962,7 +2279,7 @@ ___
 
 **`Description`**
 
-创建 ProgressBar 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
+创建 ProgressBar 控件，当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁
 
 **`Effect`**
 
@@ -1970,10 +2287,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外parent对象 default:null |
-| `inName?` | `string` | usage:创建控件的名称 default:null |
+| Name      | Type                        | Description                                 |
+| :-------- | :-------------------------- | :------------------------------------------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 parent 对象 default:null |
+| `inName?` | `string`                    | usage:创建控件的名称 default:null           |
 
 #### Returns
 

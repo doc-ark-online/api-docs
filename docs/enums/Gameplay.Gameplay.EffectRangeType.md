@@ -12,29 +12,29 @@
 
 ### Enumeration Members
 
-- [threeD](Gameplay.Gameplay.EffectRangeType.md#threed)
-- [twoD](Gameplay.Gameplay.EffectRangeType.md#twod)
+- [ThreeD](Gameplay.Gameplay.EffectRangeType.md#threed)
+- [TwoD](Gameplay.Gameplay.EffectRangeType.md#twod)
 
 ## Enumeration Members
 
-### threeD
+### ThreeD
 
-• **threeD** = ``1``
+• **ThreeD** = `1`
 
-3D形状
-
-#### Defined in
-
-Gameplay/index.d.ts:8496
-
-___
-
-### twoD
-
-• **twoD** = ``0``
-
-2D形状
+3D 形状
 
 #### Defined in
 
-Gameplay/index.d.ts:8494
+Gameplay/index.d.ts:8649
+
+---
+
+### TwoD
+
+• **TwoD** = `0`
+
+2D 形状
+
+#### Defined in
+
+Gameplay/index.d.ts:8647

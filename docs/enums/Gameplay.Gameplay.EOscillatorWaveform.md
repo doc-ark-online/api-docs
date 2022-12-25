@@ -19,22 +19,22 @@
 
 ### PerlinNoise
 
-• **PerlinNoise** = ``1``
+• **PerlinNoise** = `1`
 
-Perlin噪声
+Perlin 噪声
 
 #### Defined in
 
-Gameplay/index.d.ts:1762
+Gameplay/index.d.ts:1946
 
-___
+---
 
 ### SineWave
 
-• **SineWave** = ``0``
+• **SineWave** = `0`
 
 正弦波
 
 #### Defined in
 
-Gameplay/index.d.ts:1760
+Gameplay/index.d.ts:1944

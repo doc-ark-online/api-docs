@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -55,9 +55,9 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:3935
+UI/index.d.ts:3944
 
-___
+---
 
 ### fontSize
 
@@ -69,9 +69,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3945
+UI/index.d.ts:3954
 
-___
+---
 
 ### glyph
 
@@ -83,9 +83,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3929
+UI/index.d.ts:3938
 
-___
+---
 
 ### letterSpacing
 
@@ -97,9 +97,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3947
+UI/index.d.ts:3956
 
-___
+---
 
 ### outLineColor
 
@@ -111,9 +111,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3951
+UI/index.d.ts:3960
 
-___
+---
 
 ### outLineSize
 
@@ -125,9 +125,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3949
+UI/index.d.ts:3958
 
-___
+---
 
 ### shadowColor
 
@@ -139,9 +139,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3937
+UI/index.d.ts:3946
 
-___
+---
 
 ### shadowOffset
 
@@ -153,9 +153,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3939
+UI/index.d.ts:3948
 
-___
+---
 
 ### strikethrough
 
@@ -167,9 +167,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3931
+UI/index.d.ts:3940
 
-___
+---
 
 ### textAlign
 
@@ -181,9 +181,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3941
+UI/index.d.ts:3950
 
-___
+---
 
 ### textVerticalAlign
 
@@ -195,9 +195,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3943
+UI/index.d.ts:3952
 
-___
+---
 
 ### underline
 
@@ -209,4 +209,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3933
+UI/index.d.ts:3942

@@ -35,12 +35,11 @@ usage:双端
 - [enable](Gameplay.Gameplay.PhysicsIntegratedMover.md#enable)
 - [forwardVector](Gameplay.Gameplay.PhysicsIntegratedMover.md#forwardvector)
 - [guid](Gameplay.Gameplay.PhysicsIntegratedMover.md#guid)
-- [isVisible](Gameplay.Gameplay.PhysicsIntegratedMover.md#isvisible)
 - [linearRepeat](Gameplay.Gameplay.PhysicsIntegratedMover.md#linearrepeat)
 - [linearRepeatDelay](Gameplay.Gameplay.PhysicsIntegratedMover.md#linearrepeatdelay)
 - [linearRepeatTime](Gameplay.Gameplay.PhysicsIntegratedMover.md#linearrepeattime)
 - [linearSpeed](Gameplay.Gameplay.PhysicsIntegratedMover.md#linearspeed)
-- [lockState](Gameplay.Gameplay.PhysicsIntegratedMover.md#lockstate)
+- [lockStatus](Gameplay.Gameplay.PhysicsIntegratedMover.md#lockstatus)
 - [name](Gameplay.Gameplay.PhysicsIntegratedMover.md#name)
 - [netStatus](Gameplay.Gameplay.PhysicsIntegratedMover.md#netstatus)
 - [parent](Gameplay.Gameplay.PhysicsIntegratedMover.md#parent)
@@ -60,6 +59,7 @@ usage:双端
 - [transform](Gameplay.Gameplay.PhysicsIntegratedMover.md#transform)
 - [upVector](Gameplay.Gameplay.PhysicsIntegratedMover.md#upvector)
 - [useUpdate](Gameplay.Gameplay.PhysicsIntegratedMover.md#useupdate)
+- [visible](Gameplay.Gameplay.PhysicsIntegratedMover.md#visible)
 - [worldLocation](Gameplay.Gameplay.PhysicsIntegratedMover.md#worldlocation)
 - [worldRotation](Gameplay.Gameplay.PhysicsIntegratedMover.md#worldrotation)
 - [worldScale](Gameplay.Gameplay.PhysicsIntegratedMover.md#worldscale)
@@ -91,6 +91,7 @@ usage:双端
 - [getSourceAssetGuid](Gameplay.Gameplay.PhysicsIntegratedMover.md#getsourceassetguid)
 - [getTransform](Gameplay.Gameplay.PhysicsIntegratedMover.md#gettransform)
 - [getUpVector](Gameplay.Gameplay.PhysicsIntegratedMover.md#getupvector)
+- [getVisibility](Gameplay.Gameplay.PhysicsIntegratedMover.md#getvisibility)
 - [getWorldLocation](Gameplay.Gameplay.PhysicsIntegratedMover.md#getworldlocation)
 - [getWorldRotation](Gameplay.Gameplay.PhysicsIntegratedMover.md#getworldrotation)
 - [getWorldScale](Gameplay.Gameplay.PhysicsIntegratedMover.md#getworldscale)
@@ -147,7 +148,7 @@ PhysicsConstraintBase.constraintTarget1
 
 #### Defined in
 
-Gameplay/index.d.ts:12498
+Gameplay/index.d.ts:12176
 
 • `set` **constraintTarget1**(`guid`): `void`
 
@@ -175,7 +176,7 @@ PhysicsConstraintBase.constraintTarget1
 
 #### Defined in
 
-Gameplay/index.d.ts:12504
+Gameplay/index.d.ts:12182
 
 ---
 
@@ -197,7 +198,7 @@ PhysicsConstraintBase.constraintTarget2
 
 #### Defined in
 
-Gameplay/index.d.ts:12508
+Gameplay/index.d.ts:12186
 
 • `set` **constraintTarget2**(`guid`): `void`
 
@@ -225,7 +226,7 @@ PhysicsConstraintBase.constraintTarget2
 
 #### Defined in
 
-Gameplay/index.d.ts:12514
+Gameplay/index.d.ts:12192
 
 ---
 
@@ -245,7 +246,7 @@ Gameplay/index.d.ts:12514
 
 #### Defined in
 
-Gameplay/index.d.ts:13044
+Gameplay/index.d.ts:12722
 
 • `set` **enable**(`newEnable`): `void`
 
@@ -265,7 +266,7 @@ Gameplay/index.d.ts:13044
 
 #### Defined in
 
-Gameplay/index.d.ts:13049
+Gameplay/index.d.ts:12727
 
 ---
 
@@ -293,7 +294,7 @@ PhysicsConstraintBase.forwardVector
 
 #### Defined in
 
-Core/index.d.ts:405
+Core/index.d.ts:409
 
 ---
 
@@ -319,35 +320,7 @@ PhysicsConstraintBase.guid
 
 #### Defined in
 
-Core/index.d.ts:38
-
----
-
-### isVisible
-
-• `get` **isVisible**(): `boolean`
-
-**`Description`**
-
-获取当前物体是否显示
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-bool
-
-#### Inherited from
-
-PhysicsConstraintBase.isVisible
-
-#### Defined in
-
-Core/index.d.ts:496
+Core/index.d.ts:39
 
 ---
 
@@ -367,7 +340,7 @@ Core/index.d.ts:496
 
 #### Defined in
 
-Gameplay/index.d.ts:13074
+Gameplay/index.d.ts:12752
 
 • `set` **linearRepeat**(`newRepeat`): `void`
 
@@ -387,7 +360,7 @@ Gameplay/index.d.ts:13074
 
 #### Defined in
 
-Gameplay/index.d.ts:13079
+Gameplay/index.d.ts:12757
 
 ---
 
@@ -407,7 +380,7 @@ Gameplay/index.d.ts:13079
 
 #### Defined in
 
-Gameplay/index.d.ts:13094
+Gameplay/index.d.ts:12772
 
 • `set` **linearRepeatDelay**(`newDelay`): `void`
 
@@ -427,7 +400,7 @@ Gameplay/index.d.ts:13094
 
 #### Defined in
 
-Gameplay/index.d.ts:13099
+Gameplay/index.d.ts:12777
 
 ---
 
@@ -447,7 +420,7 @@ Gameplay/index.d.ts:13099
 
 #### Defined in
 
-Gameplay/index.d.ts:13084
+Gameplay/index.d.ts:12762
 
 • `set` **linearRepeatTime**(`newTime`): `void`
 
@@ -467,7 +440,7 @@ Gameplay/index.d.ts:13084
 
 #### Defined in
 
-Gameplay/index.d.ts:13089
+Gameplay/index.d.ts:12767
 
 ---
 
@@ -487,7 +460,7 @@ Gameplay/index.d.ts:13089
 
 #### Defined in
 
-Gameplay/index.d.ts:13064
+Gameplay/index.d.ts:12742
 
 • `set` **linearSpeed**(`newSpeed`): `void`
 
@@ -507,17 +480,17 @@ Gameplay/index.d.ts:13064
 
 #### Defined in
 
-Gameplay/index.d.ts:13069
+Gameplay/index.d.ts:12747
 
 ---
 
-### lockState
+### lockStatus
 
-• `get` **lockState**(): `boolean`
+• `get` **lockStatus**(): `boolean`
 
 **`Description`**
 
-获取是否锁定
+获取对象是否锁定
 
 **`Effect`**
 
@@ -529,17 +502,17 @@ Gameplay/index.d.ts:13069
 
 #### Inherited from
 
-PhysicsConstraintBase.lockState
+PhysicsConstraintBase.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:452
+Core/index.d.ts:456
 
-• `set` **lockState**(`v`): `void`
+• `set` **lockStatus**(`v`): `void`
 
 **`Description`**
 
-设置是否锁定
+设置对象是否锁定
 
 **`Effect`**
 
@@ -557,11 +530,11 @@ Core/index.d.ts:452
 
 #### Inherited from
 
-PhysicsConstraintBase.lockState
+PhysicsConstraintBase.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:447
+Core/index.d.ts:451
 
 ---
 
@@ -589,7 +562,7 @@ PhysicsConstraintBase.name
 
 #### Defined in
 
-Core/index.d.ts:167
+Core/index.d.ts:171
 
 • `set` **name**(`name`): `void`
 
@@ -617,7 +590,7 @@ PhysicsConstraintBase.name
 
 #### Defined in
 
-Core/index.d.ts:173
+Core/index.d.ts:177
 
 ---
 
@@ -645,13 +618,13 @@ PhysicsConstraintBase.netStatus
 
 #### Defined in
 
-Core/index.d.ts:502
+Core/index.d.ts:513
 
 ---
 
 ### parent
 
-• `get` **parent**(): [`GameObject`](Core.Core.GameObject.md)
+• `get` **parent**(): `GameObject`
 
 **`Description`**
 
@@ -663,7 +636,7 @@ Core/index.d.ts:502
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 父物体
 
@@ -673,7 +646,7 @@ PhysicsConstraintBase.parent
 
 #### Defined in
 
-Core/index.d.ts:458
+Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -687,9 +660,9 @@ Core/index.d.ts:458
 
 #### Parameters
 
-| Name        | Type                                    |
-| :---------- | :-------------------------------------- |
-| `newParent` | [`GameObject`](Core.Core.GameObject.md) |
+| Name        | Type         |
+| :---------- | :----------- |
+| `newParent` | `GameObject` |
 
 #### Returns
 
@@ -701,7 +674,7 @@ PhysicsConstraintBase.parent
 
 #### Defined in
 
-Core/index.d.ts:463
+Core/index.d.ts:467
 
 ---
 
@@ -729,7 +702,7 @@ PhysicsConstraintBase.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:304
+Core/index.d.ts:308
 
 • `set` **relativeLocation**(`location`): `void`
 
@@ -757,7 +730,7 @@ PhysicsConstraintBase.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:310
+Core/index.d.ts:314
 
 ---
 
@@ -785,7 +758,7 @@ PhysicsConstraintBase.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:330
+Core/index.d.ts:334
 
 • `set` **relativeRotation**(`rotation`): `void`
 
@@ -813,7 +786,7 @@ PhysicsConstraintBase.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:336
+Core/index.d.ts:340
 
 ---
 
@@ -841,7 +814,7 @@ PhysicsConstraintBase.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:356
+Core/index.d.ts:360
 
 • `set` **relativeScale**(`scale`): `void`
 
@@ -869,7 +842,7 @@ PhysicsConstraintBase.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:362
+Core/index.d.ts:366
 
 ---
 
@@ -897,7 +870,7 @@ PhysicsConstraintBase.rightVector
 
 #### Defined in
 
-Core/index.d.ts:419
+Core/index.d.ts:423
 
 ---
 
@@ -917,7 +890,7 @@ Core/index.d.ts:419
 
 #### Defined in
 
-Gameplay/index.d.ts:13114
+Gameplay/index.d.ts:12792
 
 • `set` **rotationRepeat**(`newRepeat`): `void`
 
@@ -937,7 +910,7 @@ Gameplay/index.d.ts:13114
 
 #### Defined in
 
-Gameplay/index.d.ts:13119
+Gameplay/index.d.ts:12797
 
 ---
 
@@ -957,7 +930,7 @@ Gameplay/index.d.ts:13119
 
 #### Defined in
 
-Gameplay/index.d.ts:13134
+Gameplay/index.d.ts:12812
 
 • `set` **rotationRepeatDelay**(`newDelay`): `void`
 
@@ -977,7 +950,7 @@ Gameplay/index.d.ts:13134
 
 #### Defined in
 
-Gameplay/index.d.ts:13139
+Gameplay/index.d.ts:12817
 
 ---
 
@@ -997,7 +970,7 @@ Gameplay/index.d.ts:13139
 
 #### Defined in
 
-Gameplay/index.d.ts:13124
+Gameplay/index.d.ts:12802
 
 • `set` **rotationRepeatTime**(`newTime`): `void`
 
@@ -1017,7 +990,7 @@ Gameplay/index.d.ts:13124
 
 #### Defined in
 
-Gameplay/index.d.ts:13129
+Gameplay/index.d.ts:12807
 
 ---
 
@@ -1037,7 +1010,7 @@ Gameplay/index.d.ts:13129
 
 #### Defined in
 
-Gameplay/index.d.ts:13104
+Gameplay/index.d.ts:12782
 
 • `set` **rotationSpeed**(`newSpeed`): `void`
 
@@ -1057,7 +1030,7 @@ Gameplay/index.d.ts:13104
 
 #### Defined in
 
-Gameplay/index.d.ts:13109
+Gameplay/index.d.ts:12787
 
 ---
 
@@ -1077,7 +1050,7 @@ Gameplay/index.d.ts:13109
 
 #### Defined in
 
-Gameplay/index.d.ts:13054
+Gameplay/index.d.ts:12732
 
 • `set` **smooth**(`newSmooth`): `void`
 
@@ -1097,7 +1070,7 @@ Gameplay/index.d.ts:13054
 
 #### Defined in
 
-Gameplay/index.d.ts:13059
+Gameplay/index.d.ts:12737
 
 ---
 
@@ -1107,7 +1080,7 @@ Gameplay/index.d.ts:13059
 
 **`Description`**
 
-获取是否静态
+获取对象是否静态
 
 **`Effect`**
 
@@ -1123,7 +1096,7 @@ PhysicsConstraintBase.staticStatus
 
 #### Defined in
 
-Core/index.d.ts:442
+Core/index.d.ts:446
 
 ---
 
@@ -1143,7 +1116,7 @@ Core/index.d.ts:442
 
 #### Defined in
 
-Gameplay/index.d.ts:13154
+Gameplay/index.d.ts:12832
 
 • `set` **swingAngle**(`newAngle`): `void`
 
@@ -1163,7 +1136,7 @@ Gameplay/index.d.ts:13154
 
 #### Defined in
 
-Gameplay/index.d.ts:13159
+Gameplay/index.d.ts:12837
 
 ---
 
@@ -1183,7 +1156,7 @@ Gameplay/index.d.ts:13159
 
 #### Defined in
 
-Gameplay/index.d.ts:13144
+Gameplay/index.d.ts:12822
 
 • `set` **swingSpeed**(`newSpeed`): `void`
 
@@ -1203,7 +1176,7 @@ Gameplay/index.d.ts:13144
 
 #### Defined in
 
-Gameplay/index.d.ts:13149
+Gameplay/index.d.ts:12827
 
 ---
 
@@ -1231,7 +1204,7 @@ PhysicsConstraintBase.tag
 
 #### Defined in
 
-Core/index.d.ts:185
+Core/index.d.ts:189
 
 • `set` **tag**(`tag`): `void`
 
@@ -1259,7 +1232,7 @@ PhysicsConstraintBase.tag
 
 #### Defined in
 
-Core/index.d.ts:179
+Core/index.d.ts:183
 
 ---
 
@@ -1287,7 +1260,7 @@ PhysicsConstraintBase.transform
 
 #### Defined in
 
-Core/index.d.ts:205
+Core/index.d.ts:209
 
 • `set` **transform**(`transform`): `void`
 
@@ -1315,7 +1288,7 @@ PhysicsConstraintBase.transform
 
 #### Defined in
 
-Core/index.d.ts:211
+Core/index.d.ts:215
 
 ---
 
@@ -1343,7 +1316,7 @@ PhysicsConstraintBase.upVector
 
 #### Defined in
 
-Core/index.d.ts:392
+Core/index.d.ts:396
 
 ---
 
@@ -1353,7 +1326,7 @@ Core/index.d.ts:392
 
 **`Description`**
 
-是否使用更新
+获取对象是否使用更新
 
 **`Effect`**
 
@@ -1369,13 +1342,13 @@ PhysicsConstraintBase.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:437
+Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
 **`Description`**
 
-是否使用更新
+设置对象是否使用更新
 
 **`Effect`**
 
@@ -1397,7 +1370,39 @@ PhysicsConstraintBase.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:432
+Core/index.d.ts:436
+
+---
+
+### visible
+
+• `get` **visible**(): `boolean`
+
+**`Deprecated`**
+
+since:v0.20.0 reason:api 重构 replacement:getVisibility()
+
+**`Description`**
+
+获取当前物体是否显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+PhysicsConstraintBase.visible
+
+#### Defined in
+
+Core/index.d.ts:507
 
 ---
 
@@ -1423,7 +1428,7 @@ PhysicsConstraintBase.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:230
+Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -1451,7 +1456,7 @@ PhysicsConstraintBase.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:235
+Core/index.d.ts:239
 
 ---
 
@@ -1477,7 +1482,7 @@ PhysicsConstraintBase.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:254
+Core/index.d.ts:258
 
 • `set` **worldRotation**(`rotation`): `void`
 
@@ -1505,7 +1510,7 @@ PhysicsConstraintBase.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:260
+Core/index.d.ts:264
 
 ---
 
@@ -1531,7 +1536,7 @@ PhysicsConstraintBase.worldScale
 
 #### Defined in
 
-Core/index.d.ts:279
+Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -1559,7 +1564,7 @@ PhysicsConstraintBase.worldScale
 
 #### Defined in
 
-Core/index.d.ts:284
+Core/index.d.ts:288
 
 ## Methods
 
@@ -1591,7 +1596,7 @@ Core/index.d.ts:284
 
 #### Defined in
 
-Core/index.d.ts:616
+Core/index.d.ts:627
 
 ---
 
@@ -1625,7 +1630,7 @@ Script
 
 #### Defined in
 
-Core/index.d.ts:563
+Core/index.d.ts:574
 
 ---
 
@@ -1643,9 +1648,9 @@ Core/index.d.ts:563
 
 #### Parameters
 
-| Name  | Type                                    | Description |
-| :---- | :-------------------------------------- | :---------- |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体  |
+| Name  | Type         | Description |
+| :---- | :----------- | :---------- |
+| `obj` | `GameObject` | usage:物体  |
 
 #### Returns
 
@@ -1657,13 +1662,13 @@ Core/index.d.ts:563
 
 #### Defined in
 
-Core/index.d.ts:583
+Core/index.d.ts:594
 
 ---
 
 ### clone
 
-▸ **clone**(`inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ **clone**(`inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -1681,7 +1686,7 @@ Core/index.d.ts:583
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 克隆的对象
 
@@ -1691,7 +1696,7 @@ Core/index.d.ts:583
 
 #### Defined in
 
-Core/index.d.ts:543
+Core/index.d.ts:554
 
 ---
 
@@ -1723,7 +1728,7 @@ Core/index.d.ts:543
 
 #### Defined in
 
-Core/index.d.ts:622
+Core/index.d.ts:633
 
 ---
 
@@ -1749,7 +1754,7 @@ Core/index.d.ts:622
 
 #### Defined in
 
-Core/index.d.ts:146
+Core/index.d.ts:150
 
 ---
 
@@ -1775,7 +1780,7 @@ Core/index.d.ts:146
 
 #### Defined in
 
-Core/index.d.ts:588
+Core/index.d.ts:599
 
 ---
 
@@ -1815,7 +1820,7 @@ Type.Vector
 
 #### Defined in
 
-Core/index.d.ts:598
+Core/index.d.ts:609
 
 ---
 
@@ -1825,7 +1830,7 @@ Core/index.d.ts:598
 
 **`Description`**
 
-获取 Gameobject 边界
+获取 GameObject 边界
 
 **`Effect`**
 
@@ -1836,8 +1841,8 @@ Core/index.d.ts:598
 | Name                      | Type                            | Description                                      |
 | :------------------------ | :------------------------------ | :----------------------------------------------- |
 | `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 尺寸的一半。   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
 | `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
 
 #### Returns
@@ -1850,13 +1855,13 @@ Core/index.d.ts:598
 
 #### Defined in
 
-Core/index.d.ts:194
+Core/index.d.ts:198
 
 ---
 
 ### getChildByGuid
 
-▸ **getChildByGuid**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByGuid**(`guid`): `GameObject`
 
 **`Description`**
 
@@ -1874,7 +1879,7 @@ Core/index.d.ts:194
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
@@ -1884,13 +1889,13 @@ Core/index.d.ts:194
 
 #### Defined in
 
-Core/index.d.ts:536
+Core/index.d.ts:547
 
 ---
 
 ### getChildByName
 
-▸ **getChildByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -1908,7 +1913,7 @@ Core/index.d.ts:536
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
@@ -1918,17 +1923,17 @@ Core/index.d.ts:536
 
 #### Defined in
 
-Core/index.d.ts:529
+Core/index.d.ts:540
 
 ---
 
 ### getChildren
 
-▸ **getChildren**(): [`GameObject`](Core.Core.GameObject.md)[]
+▸ **getChildren**(): `GameObject`[]
 
 **`Description`**
 
-获取 Children 客户端不维系父子关系 推荐使用 Find 替代
+获取 Children，客户端不维系父子关系。推荐使用 Find 替代
 
 **`Effect`**
 
@@ -1936,9 +1941,9 @@ Core/index.d.ts:529
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
@@ -1946,7 +1951,7 @@ Array\<GameObject\>
 
 #### Defined in
 
-Core/index.d.ts:522
+Core/index.d.ts:533
 
 ---
 
@@ -1984,7 +1989,7 @@ Type.Vector
 
 #### Defined in
 
-Core/index.d.ts:610
+Core/index.d.ts:621
 
 ---
 
@@ -2012,7 +2017,7 @@ Core/index.d.ts:610
 
 #### Defined in
 
-Core/index.d.ts:480
+Core/index.d.ts:484
 
 ---
 
@@ -2050,7 +2055,7 @@ Vector
 
 #### Defined in
 
-Core/index.d.ts:413
+Core/index.d.ts:417
 
 ---
 
@@ -2088,7 +2093,7 @@ Core/index.d.ts:413
 
 #### Defined in
 
-Core/index.d.ts:318
+Core/index.d.ts:322
 
 ---
 
@@ -2126,7 +2131,7 @@ Core/index.d.ts:318
 
 #### Defined in
 
-Core/index.d.ts:344
+Core/index.d.ts:348
 
 ---
 
@@ -2164,7 +2169,7 @@ Core/index.d.ts:344
 
 #### Defined in
 
-Core/index.d.ts:370
+Core/index.d.ts:374
 
 ---
 
@@ -2202,7 +2207,7 @@ Vector
 
 #### Defined in
 
-Core/index.d.ts:427
+Core/index.d.ts:431
 
 ---
 
@@ -2236,7 +2241,7 @@ Script
 
 #### Defined in
 
-Core/index.d.ts:570
+Core/index.d.ts:581
 
 ---
 
@@ -2270,7 +2275,7 @@ Script
 
 #### Defined in
 
-Core/index.d.ts:556
+Core/index.d.ts:567
 
 ---
 
@@ -2290,7 +2295,7 @@ Core/index.d.ts:556
 
 `Script`[]
 
-Array\<Script\>
+Array<Script>
 
 #### Inherited from
 
@@ -2298,7 +2303,7 @@ Array\<Script\>
 
 #### Defined in
 
-Core/index.d.ts:549
+Core/index.d.ts:560
 
 ---
 
@@ -2326,7 +2331,7 @@ Core/index.d.ts:549
 
 #### Defined in
 
-Core/index.d.ts:628
+Core/index.d.ts:639
 
 ---
 
@@ -2364,7 +2369,7 @@ Transform
 
 #### Defined in
 
-Core/index.d.ts:219
+Core/index.d.ts:223
 
 ---
 
@@ -2398,7 +2403,35 @@ Vector
 
 #### Defined in
 
-Core/index.d.ts:399
+Core/index.d.ts:403
+
+---
+
+### getVisibility
+
+▸ **getVisibility**(): `boolean`
+
+**`Description`**
+
+获取 GameObject 是否被显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getVisibility](Gameplay.Gameplay.PhysicsConstraintBase.md#getvisibility)
+
+#### Defined in
+
+Core/index.d.ts:490
 
 ---
 
@@ -2436,7 +2469,7 @@ Core/index.d.ts:399
 
 #### Defined in
 
-Core/index.d.ts:243
+Core/index.d.ts:247
 
 ---
 
@@ -2474,7 +2507,7 @@ Core/index.d.ts:243
 
 #### Defined in
 
-Core/index.d.ts:268
+Core/index.d.ts:272
 
 ---
 
@@ -2512,7 +2545,7 @@ Core/index.d.ts:268
 
 #### Defined in
 
-Core/index.d.ts:292
+Core/index.d.ts:296
 
 ---
 
@@ -2540,7 +2573,7 @@ true 为客户端
 
 #### Defined in
 
-Core/index.d.ts:49
+Core/index.d.ts:50
 
 ---
 
@@ -2566,7 +2599,7 @@ Core/index.d.ts:49
 
 #### Defined in
 
-Core/index.d.ts:17
+Core/index.d.ts:18
 
 ---
 
@@ -2592,7 +2625,7 @@ Core/index.d.ts:17
 
 #### Defined in
 
-Core/index.d.ts:12
+Core/index.d.ts:13
 
 ---
 
@@ -2624,7 +2657,7 @@ Core/index.d.ts:12
 
 #### Defined in
 
-Core/index.d.ts:23
+Core/index.d.ts:24
 
 ---
 
@@ -2652,7 +2685,7 @@ GameObject 准备好后返回
 
 #### Defined in
 
-Core/index.d.ts:122
+Core/index.d.ts:126
 
 ---
 
@@ -2689,7 +2722,7 @@ Core/index.d.ts:122
 
 #### Defined in
 
-Core/index.d.ts:471
+Core/index.d.ts:475
 
 ---
 
@@ -2722,7 +2755,7 @@ Core/index.d.ts:471
 
 #### Defined in
 
-Core/index.d.ts:383
+Core/index.d.ts:387
 
 ---
 
@@ -2754,7 +2787,7 @@ Core/index.d.ts:383
 
 #### Defined in
 
-Core/index.d.ts:324
+Core/index.d.ts:328
 
 ---
 
@@ -2786,7 +2819,7 @@ Core/index.d.ts:324
 
 #### Defined in
 
-Core/index.d.ts:350
+Core/index.d.ts:354
 
 ---
 
@@ -2818,7 +2851,7 @@ Core/index.d.ts:350
 
 #### Defined in
 
-Core/index.d.ts:376
+Core/index.d.ts:380
 
 ---
 
@@ -2850,7 +2883,7 @@ Core/index.d.ts:376
 
 #### Defined in
 
-Core/index.d.ts:225
+Core/index.d.ts:229
 
 ---
 
@@ -2883,7 +2916,7 @@ Core/index.d.ts:225
 
 #### Defined in
 
-Core/index.d.ts:487
+Core/index.d.ts:497
 
 ---
 
@@ -2915,7 +2948,7 @@ Core/index.d.ts:487
 
 #### Defined in
 
-Core/index.d.ts:249
+Core/index.d.ts:253
 
 ---
 
@@ -2947,7 +2980,7 @@ Core/index.d.ts:249
 
 #### Defined in
 
-Core/index.d.ts:274
+Core/index.d.ts:278
 
 ---
 
@@ -2979,17 +3012,17 @@ Core/index.d.ts:274
 
 #### Defined in
 
-Core/index.d.ts:298
+Core/index.d.ts:302
 
 ---
 
 ### asyncFind
 
-▸ `Static` **asyncFind**(`guid`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncFind**(`guid`): `Promise`<`GameObject`\>
 
 **`Description`**
 
-通过 guid 异步查找 Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -3004,7 +3037,7 @@ Core/index.d.ts:298
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 Guid 对应的物体
 
@@ -3014,13 +3047,13 @@ Guid 对应的物体
 
 #### Defined in
 
-Core/index.d.ts:161
+Core/index.d.ts:165
 
 ---
 
 ### asyncSpawnGameObject
 
-▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\>
 
 **`Description`**
 
@@ -3039,7 +3072,7 @@ Core/index.d.ts:161
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 构造的 GameObject
 
@@ -3049,17 +3082,17 @@ Core/index.d.ts:161
 
 #### Defined in
 
-Core/index.d.ts:138
+Core/index.d.ts:142
 
 ---
 
 ### find
 
-▸ `Static` **find**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **find**(`guid`): `GameObject`
 
 **`Description`**
 
-通过 Guid 查找 Gameobject
+通过 Guid 查找 GameObject
 
 **`Effect`**
 
@@ -3073,7 +3106,7 @@ Core/index.d.ts:138
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 Guid 对应的物体
 
@@ -3083,13 +3116,13 @@ Guid 对应的物体
 
 #### Defined in
 
-Core/index.d.ts:153
+Core/index.d.ts:157
 
 ---
 
 ### findGameObjectByTag
 
-▸ `Static` **findGameObjectByTag**(`InTag`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[]
 
 **`Description`**
 
@@ -3107,9 +3140,9 @@ Core/index.d.ts:153
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
@@ -3117,13 +3150,13 @@ Array\<GameObject\>
 
 #### Defined in
 
-Core/index.d.ts:577
+Core/index.d.ts:588
 
 ---
 
 ### getGameObjectByName
 
-▸ `Static` **getGameObjectByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **getGameObjectByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -3141,7 +3174,7 @@ Core/index.d.ts:577
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
@@ -3151,13 +3184,13 @@ Core/index.d.ts:577
 
 #### Defined in
 
-Core/index.d.ts:516
+Core/index.d.ts:527
 
 ---
 
 ### getGameObjectsByName
 
-▸ `Static` **getGameObjectsByName**(`name`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[]
 
 **`Description`**
 
@@ -3175,7 +3208,7 @@ Core/index.d.ts:516
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
 返回所有查找到的对象
 
@@ -3185,13 +3218,13 @@ Core/index.d.ts:516
 
 #### Defined in
 
-Core/index.d.ts:509
+Core/index.d.ts:520
 
 ---
 
 ### spawnGameObject
 
-▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -3210,7 +3243,7 @@ Core/index.d.ts:509
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 构造的 GameObject
 
@@ -3220,4 +3253,4 @@ Core/index.d.ts:509
 
 #### Defined in
 
-Core/index.d.ts:130
+Core/index.d.ts:134

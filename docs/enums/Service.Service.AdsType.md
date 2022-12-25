@@ -19,7 +19,7 @@
 
 ### Interstitial
 
-• **Interstitial** = ``"interstitial"``
+• **Interstitial** = `"interstitial"`
 
 插屏
 
@@ -27,11 +27,11 @@
 
 Service/index.d.ts:170
 
-___
+---
 
 ### Reward
 
-• **Reward** = ``"reward"``
+• **Reward** = `"reward"`
 
 激励
 

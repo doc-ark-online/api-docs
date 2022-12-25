@@ -21,46 +21,46 @@
 
 ### Firing
 
-• **Firing** = ``3``
+• **Firing** = `3`
 
 射击中
 
 #### Defined in
 
-Gameplay/index.d.ts:11266
+Gameplay/index.d.ts:10988
 
-___
+---
 
 ### Idle
 
-• **Idle** = ``0``
+• **Idle** = `0`
 
 准备好，可以进行射击 非射机姿态
 
 #### Defined in
 
-Gameplay/index.d.ts:11260
+Gameplay/index.d.ts:10982
 
-___
+---
 
 ### Loading
 
-• **Loading** = ``2``
+• **Loading** = `2`
 
 上膛
 
 #### Defined in
 
-Gameplay/index.d.ts:11264
+Gameplay/index.d.ts:10986
 
-___
+---
 
 ### Reloading
 
-• **Reloading** = ``1``
+• **Reloading** = `1`
 
 换弹夹，装弹
 
 #### Defined in
 
-Gameplay/index.d.ts:11262
+Gameplay/index.d.ts:10984

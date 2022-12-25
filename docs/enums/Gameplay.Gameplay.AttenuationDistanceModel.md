@@ -21,46 +21,46 @@
 
 ### Inverse
 
-• **Inverse** = ``2``
+• **Inverse** = `2`
 
 倒数衰减
 
 #### Defined in
 
-Gameplay/index.d.ts:9847
+Gameplay/index.d.ts:9921
 
-___
+---
 
 ### Linear
 
-• **Linear** = ``0``
+• **Linear** = `0`
 
 线性衰减
 
 #### Defined in
 
-Gameplay/index.d.ts:9843
+Gameplay/index.d.ts:9917
 
-___
+---
 
 ### LogReverse
 
-• **LogReverse** = ``3``
+• **LogReverse** = `3`
 
 反指数衰减
 
 #### Defined in
 
-Gameplay/index.d.ts:9849
+Gameplay/index.d.ts:9923
 
-___
+---
 
 ### Logarithmic
 
-• **Logarithmic** = ``1``
+• **Logarithmic** = `1`
 
 指数衰减
 
 #### Defined in
 
-Gameplay/index.d.ts:9845
+Gameplay/index.d.ts:9919

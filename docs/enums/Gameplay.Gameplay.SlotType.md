@@ -7,40 +7,40 @@
 **`Description`**
 
 人形角色插槽类型
- 内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
+内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
 
 ## Table of contents
 
 ### Enumeration Members
 
 - [BackOrnamental](Gameplay.Gameplay.SlotType.md#backornamental)
-- [Buns](Gameplay.Gameplay.SlotType.md#buns)
+- [Buttocks](Gameplay.Gameplay.SlotType.md#buttocks)
 - [ChatFrame](Gameplay.Gameplay.SlotType.md#chatframe)
 - [Eyes](Gameplay.Gameplay.SlotType.md#eyes)
 - [FaceOrnamental](Gameplay.Gameplay.SlotType.md#faceornamental)
 - [Glasses](Gameplay.Gameplay.SlotType.md#glasses)
 - [Hair](Gameplay.Gameplay.SlotType.md#hair)
 - [Head](Gameplay.Gameplay.SlotType.md#head)
-- [Left\_Back](Gameplay.Gameplay.SlotType.md#left_back)
-- [Left\_Calf](Gameplay.Gameplay.SlotType.md#left_calf)
-- [Left\_Foot](Gameplay.Gameplay.SlotType.md#left_foot)
-- [Left\_Glove](Gameplay.Gameplay.SlotType.md#left_glove)
-- [Left\_Hand](Gameplay.Gameplay.SlotType.md#left_hand)
-- [Left\_Head](Gameplay.Gameplay.SlotType.md#left_head)
-- [Left\_Lowerarm](Gameplay.Gameplay.SlotType.md#left_lowerarm)
-- [Left\_Shoulder](Gameplay.Gameplay.SlotType.md#left_shoulder)
-- [Left\_Thigh](Gameplay.Gameplay.SlotType.md#left_thigh)
+- [LeftBack](Gameplay.Gameplay.SlotType.md#leftback)
+- [LeftCalf](Gameplay.Gameplay.SlotType.md#leftcalf)
+- [LeftFoot](Gameplay.Gameplay.SlotType.md#leftfoot)
+- [LeftGlove](Gameplay.Gameplay.SlotType.md#leftglove)
+- [LeftHand](Gameplay.Gameplay.SlotType.md#lefthand)
+- [LeftHead](Gameplay.Gameplay.SlotType.md#lefthead)
+- [LeftLowerArm](Gameplay.Gameplay.SlotType.md#leftlowerarm)
+- [LeftShoulder](Gameplay.Gameplay.SlotType.md#leftshoulder)
+- [LeftThigh](Gameplay.Gameplay.SlotType.md#leftthigh)
 - [Mouse](Gameplay.Gameplay.SlotType.md#mouse)
 - [Nameplate](Gameplay.Gameplay.SlotType.md#nameplate)
-- [Right\_Back](Gameplay.Gameplay.SlotType.md#right_back)
-- [Right\_Calf](Gameplay.Gameplay.SlotType.md#right_calf)
-- [Right\_Foot](Gameplay.Gameplay.SlotType.md#right_foot)
-- [Right\_Glove](Gameplay.Gameplay.SlotType.md#right_glove)
-- [Right\_Hand](Gameplay.Gameplay.SlotType.md#right_hand)
-- [Right\_Head](Gameplay.Gameplay.SlotType.md#right_head)
-- [Right\_Lowerarm](Gameplay.Gameplay.SlotType.md#right_lowerarm)
-- [Right\_Shoulder](Gameplay.Gameplay.SlotType.md#right_shoulder)
-- [Right\_Thigh](Gameplay.Gameplay.SlotType.md#right_thigh)
+- [RightBack](Gameplay.Gameplay.SlotType.md#rightback)
+- [RightCalf](Gameplay.Gameplay.SlotType.md#rightcalf)
+- [RightFoot](Gameplay.Gameplay.SlotType.md#rightfoot)
+- [RightGlove](Gameplay.Gameplay.SlotType.md#rightglove)
+- [RightHand](Gameplay.Gameplay.SlotType.md#righthand)
+- [RightHead](Gameplay.Gameplay.SlotType.md#righthead)
+- [RightLowerArm](Gameplay.Gameplay.SlotType.md#rightlowerarm)
+- [RightShoulder](Gameplay.Gameplay.SlotType.md#rightshoulder)
+- [RightThigh](Gameplay.Gameplay.SlotType.md#rightthigh)
 - [Rings](Gameplay.Gameplay.SlotType.md#rings)
 - [Root](Gameplay.Gameplay.SlotType.md#root)
 
@@ -48,358 +48,358 @@
 
 ### BackOrnamental
 
-• **BackOrnamental** = ``12``
+• **BackOrnamental** = `12`
 
 背部装饰
 
 #### Defined in
 
-Gameplay/index.d.ts:1626
+Gameplay/index.d.ts:1774
 
-___
+---
 
-### Buns
+### Buttocks
 
-• **Buns** = ``19``
+• **Buttocks** = `19`
 
 臀部
 
 #### Defined in
 
-Gameplay/index.d.ts:1640
+Gameplay/index.d.ts:1788
 
-___
+---
 
 ### ChatFrame
 
-• **ChatFrame** = ``22``
+• **ChatFrame** = `22`
 
 聊天框
 
 #### Defined in
 
-Gameplay/index.d.ts:1646
+Gameplay/index.d.ts:1794
 
-___
+---
 
 ### Eyes
 
-• **Eyes** = ``5``
+• **Eyes** = `5`
 
 眼睛
 
 #### Defined in
 
-Gameplay/index.d.ts:1612
+Gameplay/index.d.ts:1760
 
-___
+---
 
 ### FaceOrnamental
 
-• **FaceOrnamental** = ``6``
+• **FaceOrnamental** = `6`
 
 面部装饰
 
 #### Defined in
 
-Gameplay/index.d.ts:1614
+Gameplay/index.d.ts:1762
 
-___
+---
 
 ### Glasses
 
-• **Glasses** = ``4``
+• **Glasses** = `4`
 
 眼镜
 
 #### Defined in
 
-Gameplay/index.d.ts:1610
+Gameplay/index.d.ts:1758
 
-___
+---
 
 ### Hair
 
-• **Hair** = ``0``
+• **Hair** = `0`
 
 头发
 
 #### Defined in
 
-Gameplay/index.d.ts:1602
+Gameplay/index.d.ts:1750
 
-___
+---
 
 ### Head
 
-• **Head** = ``1``
+• **Head** = `1`
 
 脸部
 
 #### Defined in
 
-Gameplay/index.d.ts:1604
+Gameplay/index.d.ts:1752
 
-___
+---
 
-### Left\_Back
+### LeftBack
 
-• **Left\_Back** = ``13``
+• **LeftBack** = `13`
 
 左背
 
 #### Defined in
 
-Gameplay/index.d.ts:1628
+Gameplay/index.d.ts:1776
 
-___
+---
 
-### Left\_Calf
+### LeftCalf
 
-• **Left\_Calf** = ``28``
+• **LeftCalf** = `28`
 
 左膝盖
 
 #### Defined in
 
-Gameplay/index.d.ts:1658
+Gameplay/index.d.ts:1806
 
-___
+---
 
-### Left\_Foot
+### LeftFoot
 
-• **Left\_Foot** = ``17``
+• **LeftFoot** = `17`
 
 左脚
 
 #### Defined in
 
-Gameplay/index.d.ts:1636
+Gameplay/index.d.ts:1784
 
-___
+---
 
-### Left\_Glove
+### LeftGlove
 
-• **Left\_Glove** = ``10``
+• **LeftGlove** = `10`
 
 左手手套
 
 #### Defined in
 
-Gameplay/index.d.ts:1622
+Gameplay/index.d.ts:1770
 
-___
+---
 
-### Left\_Hand
+### LeftHand
 
-• **Left\_Hand** = ``15``
+• **LeftHand** = `15`
 
 左手
 
 #### Defined in
 
-Gameplay/index.d.ts:1632
+Gameplay/index.d.ts:1780
 
-___
+---
 
-### Left\_Head
+### LeftHead
 
-• **Left\_Head** = ``2``
+• **LeftHead** = `2`
 
 头部左侧
 
 #### Defined in
 
-Gameplay/index.d.ts:1606
+Gameplay/index.d.ts:1754
 
-___
+---
 
-### Left\_Lowerarm
+### LeftLowerArm
 
-• **Left\_Lowerarm** = ``24``
+• **LeftLowerArm** = `24`
 
 左手肘
 
 #### Defined in
 
-Gameplay/index.d.ts:1650
+Gameplay/index.d.ts:1798
 
-___
+---
 
-### Left\_Shoulder
+### LeftShoulder
 
-• **Left\_Shoulder** = ``8``
+• **LeftShoulder** = `8`
 
 左肩部
 
 #### Defined in
 
-Gameplay/index.d.ts:1618
+Gameplay/index.d.ts:1766
 
-___
+---
 
-### Left\_Thigh
+### LeftThigh
 
-• **Left\_Thigh** = ``26``
+• **LeftThigh** = `26`
 
 左大腿根
 
 #### Defined in
 
-Gameplay/index.d.ts:1654
+Gameplay/index.d.ts:1802
 
-___
+---
 
 ### Mouse
 
-• **Mouse** = ``7``
+• **Mouse** = `7`
 
 嘴部
 
 #### Defined in
 
-Gameplay/index.d.ts:1616
+Gameplay/index.d.ts:1764
 
-___
+---
 
 ### Nameplate
 
-• **Nameplate** = ``21``
+• **Nameplate** = `21`
 
 头顶标题
 
 #### Defined in
 
-Gameplay/index.d.ts:1644
+Gameplay/index.d.ts:1792
 
-___
+---
 
-### Right\_Back
+### RightBack
 
-• **Right\_Back** = ``14``
+• **RightBack** = `14`
 
 右背
 
 #### Defined in
 
-Gameplay/index.d.ts:1630
+Gameplay/index.d.ts:1778
 
-___
+---
 
-### Right\_Calf
+### RightCalf
 
-• **Right\_Calf** = ``29``
+• **RightCalf** = `29`
 
 右膝盖
 
 #### Defined in
 
-Gameplay/index.d.ts:1660
+Gameplay/index.d.ts:1808
 
-___
+---
 
-### Right\_Foot
+### RightFoot
 
-• **Right\_Foot** = ``18``
+• **RightFoot** = `18`
 
 右脚
 
 #### Defined in
 
-Gameplay/index.d.ts:1638
+Gameplay/index.d.ts:1786
 
-___
+---
 
-### Right\_Glove
+### RightGlove
 
-• **Right\_Glove** = ``11``
+• **RightGlove** = `11`
 
 右手手套
 
 #### Defined in
 
-Gameplay/index.d.ts:1624
+Gameplay/index.d.ts:1772
 
-___
+---
 
-### Right\_Hand
+### RightHand
 
-• **Right\_Hand** = ``16``
+• **RightHand** = `16`
 
 右手
 
 #### Defined in
 
-Gameplay/index.d.ts:1634
+Gameplay/index.d.ts:1782
 
-___
+---
 
-### Right\_Head
+### RightHead
 
-• **Right\_Head** = ``3``
+• **RightHead** = `3`
 
 头部右侧
 
 #### Defined in
 
-Gameplay/index.d.ts:1608
+Gameplay/index.d.ts:1756
 
-___
+---
 
-### Right\_Lowerarm
+### RightLowerArm
 
-• **Right\_Lowerarm** = ``25``
+• **RightLowerArm** = `25`
 
 右手肘
 
 #### Defined in
 
-Gameplay/index.d.ts:1652
+Gameplay/index.d.ts:1800
 
-___
+---
 
-### Right\_Shoulder
+### RightShoulder
 
-• **Right\_Shoulder** = ``9``
+• **RightShoulder** = `9`
 
 右肩部
 
 #### Defined in
 
-Gameplay/index.d.ts:1620
+Gameplay/index.d.ts:1768
 
-___
+---
 
-### Right\_Thigh
+### RightThigh
 
-• **Right\_Thigh** = ``27``
+• **RightThigh** = `27`
 
 右大腿根
 
 #### Defined in
 
-Gameplay/index.d.ts:1656
+Gameplay/index.d.ts:1804
 
-___
+---
 
 ### Rings
 
-• **Rings** = ``20``
+• **Rings** = `20`
 
 头顶光圈
 
 #### Defined in
 
-Gameplay/index.d.ts:1642
+Gameplay/index.d.ts:1790
 
-___
+---
 
 ### Root
 
-• **Root** = ``23``
+• **Root** = `23`
 
 根节点
 
 #### Defined in
 
-Gameplay/index.d.ts:1648
+Gameplay/index.d.ts:1796

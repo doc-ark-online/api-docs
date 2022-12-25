@@ -13,7 +13,6 @@
 ### Enumeration Members
 
 - [FirstPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#firstpersoncrosshair)
-- [Max](Gameplay.Gameplay.HotWeaponCrossHairType.md#max)
 - [None](Gameplay.Gameplay.HotWeaponCrossHairType.md#none)
 - [ThirdPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersoncrosshair)
 - [ThirdPersonDot](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersondot)
@@ -22,58 +21,46 @@
 
 ### FirstPersonCrossHair
 
-• **FirstPersonCrossHair** = ``3``
+• **FirstPersonCrossHair** = `3`
 
-第一人称准心
-
-#### Defined in
-
-Gameplay/index.d.ts:11695
-
-___
-
-### Max
-
-• **Max** = ``4``
-
-仅用于补位
+第一人称十字准心
 
 #### Defined in
 
-Gameplay/index.d.ts:11697
+Gameplay/index.d.ts:11385
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
-TODO
+无准星
 
 #### Defined in
 
-Gameplay/index.d.ts:11689
+Gameplay/index.d.ts:11379
 
-___
+---
 
 ### ThirdPersonCrossHair
 
-• **ThirdPersonCrossHair** = ``1``
+• **ThirdPersonCrossHair** = `1`
 
-第三人称准心
+第三人称十字准心
 
 #### Defined in
 
-Gameplay/index.d.ts:11691
+Gameplay/index.d.ts:11381
 
-___
+---
 
 ### ThirdPersonDot
 
-• **ThirdPersonDot** = ``2``
+• **ThirdPersonDot** = `2`
 
-第三人称点
+第三人称红点准心
 
 #### Defined in
 
-Gameplay/index.d.ts:11693
+Gameplay/index.d.ts:11383

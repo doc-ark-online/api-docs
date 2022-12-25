@@ -64,7 +64,7 @@ usage:双端
 
 #### Defined in
 
-Type/index.d.ts:2747
+Type/index.d.ts:2714
 
 • **new Transform**(`location`, `rotation`, `scale`)
 
@@ -74,15 +74,15 @@ Type/index.d.ts:2747
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:坐标信息 |
+| Name       | Type                                | Description    |
+| :--------- | :---------------------------------- | :------------- |
+| `location` | [`Vector`](Type.Type.Vector.md)     | usage:坐标信息 |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转信息 |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放信息 |
+| `scale`    | [`Vector`](Type.Type.Vector.md)     | usage:缩放信息 |
 
 #### Defined in
 
-Type/index.d.ts:2754
+Type/index.d.ts:2721
 
 • **new Transform**(`newTransform`)
 
@@ -92,13 +92,13 @@ Type/index.d.ts:2754
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name           | Type                                  | Description          |
+| :------------- | :------------------------------------ | :------------------- |
 | `newTransform` | [`Transform`](Type.Type.Transform.md) | usage:Transform 对象 |
 
 #### Defined in
 
-Type/index.d.ts:2759
+Type/index.d.ts:2726
 
 ## Properties
 
@@ -112,9 +112,9 @@ Type/index.d.ts:2759
 
 #### Defined in
 
-Type/index.d.ts:2734
+Type/index.d.ts:2701
 
-___
+---
 
 ### rotation
 
@@ -126,9 +126,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2738
+Type/index.d.ts:2705
 
-___
+---
 
 ### scale
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2742
+Type/index.d.ts:2709
 
 ## Accessors
 
@@ -162,7 +162,7 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 #### Defined in
 
-Type/index.d.ts:2721
+Type/index.d.ts:2688
 
 ## Methods
 
@@ -186,9 +186,9 @@ Type/index.d.ts:2721
 
 #### Defined in
 
-Type/index.d.ts:2765
+Type/index.d.ts:2732
 
-___
+---
 
 ### fromString
 
@@ -204,8 +204,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description            |
+| :---- | :------- | :--------------------- |
 | `str` | `string` | usage:读取的字符串数据 |
 
 #### Returns
@@ -214,9 +214,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2771
+Type/index.d.ts:2738
 
-___
+---
 
 ### getForwardVector
 
@@ -238,9 +238,9 @@ Transform 的向前方向向量
 
 #### Defined in
 
-Type/index.d.ts:2783
+Type/index.d.ts:2750
 
-___
+---
 
 ### getRightVector
 
@@ -262,9 +262,9 @@ Transform 的向右方向向量
 
 #### Defined in
 
-Type/index.d.ts:2789
+Type/index.d.ts:2756
 
-___
+---
 
 ### getUpVector
 
@@ -286,9 +286,9 @@ Transform 的向上方向向量
 
 #### Defined in
 
-Type/index.d.ts:2795
+Type/index.d.ts:2762
 
-___
+---
 
 ### inverseTransformDirection
 
@@ -304,8 +304,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                            | Description    |
+| :--------- | :------------------------------ | :------------- |
 | `location` | [`Vector`](Type.Type.Vector.md) | usage:世界方向 |
 
 #### Returns
@@ -316,9 +316,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2809
+Type/index.d.ts:2776
 
-___
+---
 
 ### inverseTransformLocation
 
@@ -334,8 +334,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                            | Description    |
+| :--------- | :------------------------------ | :------------- |
 | `location` | [`Vector`](Type.Type.Vector.md) | usage:世界坐标 |
 
 #### Returns
@@ -346,9 +346,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2802
+Type/index.d.ts:2769
 
-___
+---
 
 ### lookAt
 
@@ -356,7 +356,7 @@ ___
 
 **`Description`**
 
-Transform面向目标方向
+Transform 面向目标方向
 
 **`Effect`**
 
@@ -364,8 +364,8 @@ Transform面向目标方向
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description    |
+| :------- | :------------------------------ | :------------- |
 | `target` | [`Vector`](Type.Type.Vector.md) | usage:世界坐标 |
 
 #### Returns
@@ -374,9 +374,9 @@ Transform面向目标方向
 
 #### Defined in
 
-Type/index.d.ts:2829
+Type/index.d.ts:2796
 
-___
+---
 
 ### rotate
 
@@ -384,7 +384,7 @@ ___
 
 **`Description`**
 
-Transform绕指定轴旋转
+Transform 绕指定轴旋转
 
 **`Effect`**
 
@@ -392,10 +392,10 @@ Transform绕指定轴旋转
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `axis` | [`Vector`](Type.Type.Vector.md) | usage:旋转轴 |
-| `angle` | `number` | usage:旋转的角度值 |
+| Name    | Type                            | Description        |
+| :------ | :------------------------------ | :----------------- |
+| `axis`  | [`Vector`](Type.Type.Vector.md) | usage:旋转轴       |
+| `angle` | `number`                        | usage:旋转的角度值 |
 
 #### Returns
 
@@ -403,9 +403,9 @@ Transform绕指定轴旋转
 
 #### Defined in
 
-Type/index.d.ts:2836
+Type/index.d.ts:2803
 
-___
+---
 
 ### toString
 
@@ -427,9 +427,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2777
+Type/index.d.ts:2744
 
-___
+---
 
 ### transformDirection
 
@@ -445,8 +445,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                            | Description    |
+| :--------- | :------------------------------ | :------------- |
 | `location` | [`Vector`](Type.Type.Vector.md) | usage:本地方向 |
 
 #### Returns
@@ -457,9 +457,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2823
+Type/index.d.ts:2790
 
-___
+---
 
 ### transformLocation
 
@@ -475,8 +475,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                            | Description    |
+| :--------- | :------------------------------ | :------------- |
 | `location` | [`Vector`](Type.Type.Vector.md) | usage:本地坐标 |
 
 #### Returns
@@ -487,9 +487,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2816
+Type/index.d.ts:2783
 
-___
+---
 
 ### fromString
 
@@ -509,10 +509,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | usage:读取的字符串数据 |
-| `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接受结果的Transform default:null |
+| Name     | Type                                  | Description                             |
+| :------- | :------------------------------------ | :-------------------------------------- |
+| `str`    | `string`                              | usage:读取的字符串数据                  |
+| `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接受结果的 Transform default:null |
 
 #### Returns
 
@@ -522,4 +522,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2730
+Type/index.d.ts:2697

@@ -12,7 +12,7 @@ zifei.wu, huipeng.jia
 
 **`Description`**
 
-MGS以及玩家信息、数据、头像等相关API
+MGS 以及玩家信息、数据、头像等相关 API
 
 **`Network Status`**
 
@@ -35,7 +35,7 @@ usage: 客户端
 - [getRoomId](Service.Service.RoomService.md#getroomid)
 - [initAndLoginMGS](Service.Service.RoomService.md#initandloginmgs)
 - [invokeMGSConfig](Service.Service.RoomService.md#invokemgsconfig)
-- [isFriendShip](Service.Service.RoomService.md#isfriendship)
+- [isFriend](Service.Service.RoomService.md#isfriend)
 - [isSupported](Service.Service.RoomService.md#issupported)
 - [joinAudio](Service.Service.RoomService.md#joinaudio)
 - [joinRoom](Service.Service.RoomService.md#joinroom)
@@ -67,7 +67,7 @@ usage: 客户端
 
 **`Description`**
 
-向233发起addFriend并获得回调
+向 233 发起 addFriend 并获得回调
 
 **`Effect`**
 
@@ -75,14 +75,14 @@ usage: 客户端
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `friendOpenId` | `string` | usage:要加的好友Id |
+| Name           | Type                                                       | Description         |
+| :------------- | :--------------------------------------------------------- | :------------------ |
+| `resp`         | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调    |
+| `friendOpenId` | `string`                                                   | usage:要加的好友 Id |
 
 #### Returns
 
@@ -90,9 +90,9 @@ usage: 客户端
 
 #### Defined in
 
-Service/index.d.ts:966
+Service/index.d.ts:980
 
-___
+---
 
 ### createAndJoinRoom
 
@@ -100,7 +100,7 @@ ___
 
 **`Description`**
 
-游戏方创建好房间后可通过调用createAndJoinRoom进行数据同步，也可通过MGS服务端进行数据同步
+游戏方创建好房间后可通过调用 createAndJoinRoom 进行数据同步，也可通过 MGS 服务端进行数据同步
 
 **`Effect`**
 
@@ -108,16 +108,16 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `roomId` | `string` | usage:房间Id |
-| `roomName` | `string` | usage:房间名称 |
-| `roomLimit` | `number` | usage:房间的人数限制 |
+| Name        | Type                                                       | Description          |
+| :---------- | :--------------------------------------------------------- | :------------------- |
+| `resp`      | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调     |
+| `roomId`    | `string`                                                   | usage:房间 Id        |
+| `roomName`  | `string`                                                   | usage:房间名称       |
+| `roomLimit` | `number`                                                   | usage:房间的人数限制 |
 
 #### Returns
 
@@ -125,9 +125,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:937
+Service/index.d.ts:951
 
-___
+---
 
 ### destroySDK
 
@@ -135,7 +135,7 @@ ___
 
 **`Description`**
 
-SDK提供销毁方法，在游戏退出后可以销毁SDK，释放相应的内存。下次再调用其他接口需要再次进行初始化操作
+SDK 提供销毁方法，在游戏退出后可以销毁 SDK，释放相应的内存。下次再调用其他接口需要再次进行初始化操作
 
 **`Effect`**
 
@@ -143,7 +143,7 @@ SDK提供销毁方法，在游戏退出后可以销毁SDK，释放相应的内�
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Returns
 
@@ -151,9 +151,9 @@ SDK提供销毁方法，在游戏退出后可以销毁SDK，释放相应的内�
 
 #### Defined in
 
-Service/index.d.ts:1057
+Service/index.d.ts:1071
 
-___
+---
 
 ### dispatchMGSChatMessage
 
@@ -161,7 +161,7 @@ ___
 
 **`Description`**
 
-分发MGS聊天消息
+分发 MGS 聊天消息
 
 **`Effect`**
 
@@ -169,12 +169,12 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type     | Description            |
+| :------------ | :------- | :--------------------- |
 | `chatMessage` | `string` | usage:要分发的聊天消息 |
 
 #### Returns
@@ -183,9 +183,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1086
+Service/index.d.ts:1100
 
-___
+---
 
 ### getCurrentEnvironment
 
@@ -201,12 +201,12 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                                       | Description              |
+| :----- | :--------------------------------------------------------- | :----------------------- |
 | `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:获取到的当前的环境 |
 
 #### Returns
@@ -215,9 +215,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1051
+Service/index.d.ts:1065
 
-___
+---
 
 ### getMGSRoomId
 
@@ -225,7 +225,7 @@ ___
 
 **`Description`**
 
-获取MGS平台的RoomId
+获取 MGS 平台的 RoomId
 
 **`Effect`**
 
@@ -233,19 +233,19 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
 `string`
 
-MGS平台的RoomId
+MGS 平台的 RoomId
 
 #### Defined in
 
-Service/index.d.ts:912
+Service/index.d.ts:926
 
-___
+---
 
 ### getRoomId
 
@@ -253,7 +253,7 @@ ___
 
 **`Description`**
 
-获取MW的RoomMgr分配的RoomId
+获取 MW 的 RoomMgr 分配的 RoomId
 
 **`Effect`**
 
@@ -261,19 +261,19 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
 `string`
 
-MW的RoomMgr分配的RoomId
+MW 的 RoomMgr 分配的 RoomId
 
 #### Defined in
 
-Service/index.d.ts:905
+Service/index.d.ts:919
 
-___
+---
 
 ### initAndLoginMGS
 
@@ -281,7 +281,7 @@ ___
 
 **`Description`**
 
-初始化MGS
+初始化 MGS
 
 **`Effect`**
 
@@ -289,14 +289,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:回调函数 |
-| `gameID` | `string` | usage:发给MGS的gameId |
+| Name     | Type                                                       | Description              |
+| :------- | :--------------------------------------------------------- | :----------------------- |
+| `resp`   | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:回调函数           |
+| `gameID` | `string`                                                   | usage:发给 MGS 的 gameId |
 
 #### Returns
 
@@ -304,9 +304,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:920
+Service/index.d.ts:934
 
-___
+---
 
 ### invokeMGSConfig
 
@@ -314,7 +314,7 @@ ___
 
 **`Description`**
 
-用于获取MGS相关配置信息的接口。该接口需要support
+用于获取 MGS 相关配置信息的接口。该接口需要 support
 
 **`Effect`**
 
@@ -322,13 +322,13 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
+| Name   | Type                                                       | Description      |
+| :----- | :--------------------------------------------------------- | :--------------- |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调 |
 
 #### Returns
 
@@ -336,17 +336,17 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1035
+Service/index.d.ts:1049
 
-___
+---
 
-### isFriendShip
+### isFriend
 
-▸ **isFriendShip**(`resp`, `friendOpenId`): `void`
+▸ **isFriend**(`resp`, `friendOpenId`): `void`
 
 **`Description`**
 
-若需要检测玩家是否好友关系，可通过调用isFriendShip接口进行查看
+若需要检测玩家是否好友关系，可通过调用 isFriend 接口进行查看
 
 **`Effect`**
 
@@ -354,14 +354,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `friendOpenId` | `string` | usage:要确定的好友的Id |
+| Name           | Type                                                       | Description             |
+| :------------- | :--------------------------------------------------------- | :---------------------- |
+| `resp`         | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调        |
+| `friendOpenId` | `string`                                                   | usage:要确定的好友的 Id |
 
 #### Returns
 
@@ -369,9 +369,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:982
+Service/index.d.ts:996
 
-___
+---
 
 ### isSupported
 
@@ -379,7 +379,7 @@ ___
 
 **`Description`**
 
-获取当前环境是否支持MGS功能
+获取当前环境是否支持 MGS 功能
 
 **`Effect`**
 
@@ -389,13 +389,13 @@ ___
 
 `boolean`
 
-当前环境是否支持MGS功能
+当前环境是否支持 MGS 功能
 
 #### Defined in
 
-Service/index.d.ts:898
+Service/index.d.ts:912
 
-___
+---
 
 ### joinAudio
 
@@ -403,7 +403,7 @@ ___
 
 **`Description`**
 
-游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）
+游戏方可调用 joinAudio 加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）
 
 **`Effect`**
 
@@ -411,13 +411,13 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
+| Name   | Type                                                       | Description      |
+| :----- | :--------------------------------------------------------- | :--------------- |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调 |
 
 #### Returns
 
@@ -425,9 +425,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1004
+Service/index.d.ts:1018
 
-___
+---
 
 ### joinRoom
 
@@ -435,7 +435,7 @@ ___
 
 **`Description`**
 
-游戏方在玩家加入某个房间后，需要通过调用joinRoom进行数据同步
+游戏方在玩家加入某个房间后，需要通过调用 joinRoom 进行数据同步
 
 **`Effect`**
 
@@ -443,14 +443,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `roomId` | `string` | usage:要加入的房间Id |
+| Name     | Type                                                       | Description           |
+| :------- | :--------------------------------------------------------- | :-------------------- |
+| `resp`   | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调      |
+| `roomId` | `string`                                                   | usage:要加入的房间 Id |
 
 #### Returns
 
@@ -458,9 +458,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:950
+Service/index.d.ts:964
 
-___
+---
 
 ### leaveRoom
 
@@ -468,7 +468,7 @@ ___
 
 **`Description`**
 
-游戏方在玩家离开房间前，需要调用leaveRoom进行数据同步
+游戏方在玩家离开房间前，需要调用 leaveRoom 进行数据同步
 
 **`Effect`**
 
@@ -476,14 +476,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `roomId` | `string` | usage:要离开的房间的Id |
+| Name     | Type                                                       | Description             |
+| :------- | :--------------------------------------------------------- | :---------------------- |
+| `resp`   | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调        |
+| `roomId` | `string`                                                   | usage:要离开的房间的 Id |
 
 #### Returns
 
@@ -491,9 +491,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:958
+Service/index.d.ts:972
 
-___
+---
 
 ### queryPlayerAction
 
@@ -501,7 +501,7 @@ ___
 
 **`Description`**
 
-向233发起queryPlayerAction并获得回调，查询玩家进入游戏时的操作方式
+向 233 发起 queryPlayerAction 并获得回调，查询玩家进入游戏时的操作方式
 
 **`Effect`**
 
@@ -509,13 +509,13 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
+| Name   | Type                                                       | Description      |
+| :----- | :--------------------------------------------------------- | :--------------- |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调 |
 
 #### Returns
 
@@ -523,9 +523,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:927
+Service/index.d.ts:941
 
-___
+---
 
 ### registerMGSChatMessageEvent
 
@@ -541,12 +541,12 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                 | Description              |
+| :--------- | :--------------------------------------------------- | :----------------------- |
 | `callback` | [`MGSEvent`](../modules/Service.Service.md#mgsevent) | usage:有消息时的触发函数 |
 
 #### Returns
@@ -555,9 +555,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1079
+Service/index.d.ts:1093
 
-___
+---
 
 ### registerMGSEvent
 
@@ -565,7 +565,7 @@ ___
 
 **`Description`**
 
-注册MGS事件的回调
+注册 MGS 事件的回调
 
 **`Effect`**
 
@@ -573,14 +573,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventType` | `string` | usage:需要注册的事件 |
-| `callback` | [`MGSEvent`](../modules/Service.Service.md#mgsevent) | usage:需要执行的回调函数 |
+| Name        | Type                                                 | Description              |
+| :---------- | :--------------------------------------------------- | :----------------------- |
+| `eventType` | `string`                                             | usage:需要注册的事件     |
+| `callback`  | [`MGSEvent`](../modules/Service.Service.md#mgsevent) | usage:需要执行的回调函数 |
 
 #### Returns
 
@@ -588,9 +588,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1072
+Service/index.d.ts:1086
 
-___
+---
 
 ### registerMGSEventListener
 
@@ -598,7 +598,7 @@ ___
 
 **`Description`**
 
-注册MGS事件监听器
+注册 MGS 事件监听器
 
 **`Effect`**
 
@@ -606,13 +606,13 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventType` | `string` | usage:需要注册到233的事件类型 |
+| Name        | Type     | Description                     |
+| :---------- | :------- | :------------------------------ |
+| `eventType` | `string` | usage:需要注册到 233 的事件类型 |
 
 #### Returns
 
@@ -620,9 +620,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1064
+Service/index.d.ts:1078
 
-___
+---
 
 ### reportLogInfo
 
@@ -630,7 +630,7 @@ ___
 
 **`Description`**
 
-游戏方调用reportLogInfo接口上报运营所需的埋点数据
+游戏方调用 reportLogInfo 接口上报运营所需的埋点数据
 
 **`Effect`**
 
@@ -638,15 +638,15 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效，数据需要时json格式
+只在移动端由 233 拉起生效，数据需要时 json 格式
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名称 |
-| `eventDesc` | `string` | usage:事件描述 |
-| `jsonData` | `string` | usage:发送的json数据 |
+| Name        | Type     | Description            |
+| :---------- | :------- | :--------------------- |
+| `eventName` | `string` | usage:事件名称         |
+| `eventDesc` | `string` | usage:事件描述         |
+| `jsonData`  | `string` | usage:发送的 json 数据 |
 
 #### Returns
 
@@ -654,17 +654,17 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1044
+Service/index.d.ts:1058
 
-___
+---
 
 ### requestSaveImage
 
-▸ **requestSaveImage**(`resp`, `mgsdata`): `void`
+▸ **requestSaveImage**(`resp`, `mgsData`): `void`
 
 **`Description`**
 
-向233发起imageModify并获得回调
+向 233 发起 imageModify 并获得回调
 
 **`Effect`**
 
@@ -672,14 +672,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `mgsdata` | `string` | usage:要保存的图片Url地址 |
+| Name      | Type                                                       | Description                 |
+| :-------- | :--------------------------------------------------------- | :-------------------------- |
+| `resp`    | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调            |
+| `mgsData` | `string`                                                   | usage:要保存的图片 Url 地址 |
 
 #### Returns
 
@@ -687,17 +687,17 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1020
+Service/index.d.ts:1034
 
-___
+---
 
 ### requestSavePortrait
 
-▸ **requestSavePortrait**(`resp`, `mgsdata`): `void`
+▸ **requestSavePortrait**(`resp`, `mgsData`): `void`
 
 **`Description`**
 
-向233发起editProfile并获得回调
+向 233 发起 editProfile 并获得回调
 
 **`Effect`**
 
@@ -705,14 +705,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `mgsdata` | `string` | usage:要保存的mgs数据 |
+| Name      | Type                                                       | Description             |
+| :-------- | :--------------------------------------------------------- | :---------------------- |
+| `resp`    | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调        |
+| `mgsData` | `string`                                                   | usage:要保存的 mgs 数据 |
 
 #### Returns
 
@@ -720,17 +720,17 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1012
+Service/index.d.ts:1026
 
-___
+---
 
 ### requestShareScreenShot
 
-▸ **requestShareScreenShot**(`resp`, `mgsdata`): `void`
+▸ **requestShareScreenShot**(`resp`, `mgsData`): `void`
 
 **`Description`**
 
-向233发起shareScreenshot并获得回调
+向 233 发起 shareScreenshot 并获得回调
 
 **`Effect`**
 
@@ -738,14 +738,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `mgsdata` | `string` | usage:要保存的图片Url地址 |
+| Name      | Type                                                       | Description                 |
+| :-------- | :--------------------------------------------------------- | :-------------------------- |
+| `resp`    | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调            |
+| `mgsData` | `string`                                                   | usage:要保存的图片 Url 地址 |
 
 #### Returns
 
@@ -753,9 +753,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1028
+Service/index.d.ts:1042
 
-___
+---
 
 ### showExitGameDialog
 
@@ -763,7 +763,7 @@ ___
 
 **`Description`**
 
-游戏方可调用showExitGameDialog来显示退出游戏确认框
+游戏方可调用 showExitGameDialog 来显示退出游戏确认框
 
 **`Effect`**
 
@@ -771,13 +771,13 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
+| Name   | Type                                                       | Description      |
+| :----- | :--------------------------------------------------------- | :--------------- |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调 |
 
 #### Returns
 
@@ -785,9 +785,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:997
+Service/index.d.ts:1011
 
-___
+---
 
 ### showFloatingLayer
 
@@ -795,7 +795,7 @@ ___
 
 **`Description`**
 
-向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能
+向 233 发起 showFloatingLayer 来展开悬浮层的内容，可展开聊天/好友功能
 
 **`Effect`**
 
@@ -803,14 +803,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `tab` | `number` | usage:悬浮层功能位置 取值(0: 聊天 1: 好友) |
+| Name   | Type                                                       | Description                                |
+| :----- | :--------------------------------------------------------- | :----------------------------------------- |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调                           |
+| `tab`  | `number`                                                   | usage:悬浮层功能位置 取值(0: 聊天 1: 好友) |
 
 #### Returns
 
@@ -818,9 +818,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:990
+Service/index.d.ts:1004
 
-___
+---
 
 ### showUserProfile
 
@@ -828,7 +828,7 @@ ___
 
 **`Description`**
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
+若需要查看 233 玩家的资料信息,可通过调用 showUserProfile 进行查看,SDK 会弹出资料卡片弹窗
 
 **`Effect`**
 
@@ -836,14 +836,14 @@ ___
 
 **`Precautions`**
 
-只在移动端由233拉起生效
+只在移动端由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233的回调 |
-| `openId` | `string` | usage:要显示的用户的openId |
+| Name     | Type                                                       | Description                 |
+| :------- | :--------------------------------------------------------- | :-------------------------- |
+| `resp`   | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | usage:233 的回调            |
+| `openId` | `string`                                                   | usage:要显示的用户的 openId |
 
 #### Returns
 
@@ -851,9 +851,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:974
+Service/index.d.ts:988
 
-___
+---
 
 ### getInstance
 
@@ -861,21 +861,22 @@ ___
 
 **`Description`**
 
-获取API实例进行调用
+获取 API 实例进行调用
 
 **`Effect`**
 
-获取API实例进行调用
+获取 API 实例进行调用
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 **`Example`**
 
 使用示例:获取实例并调用函数
+
 ```
-通过实例调用函数获取玩家昵称
+// 通过实例调用函数获取玩家昵称
 Service.RoomService.getInstance().getNickName();
 ```
 
@@ -883,8 +884,8 @@ Service.RoomService.getInstance().getNickName();
 
 [`RoomService`](Service.Service.RoomService.md)
 
-返回API实例用以调用相关功能函数
+返回 API 实例用以调用相关功能函数
 
 #### Defined in
 
-Service/index.d.ts:892
+Service/index.d.ts:906

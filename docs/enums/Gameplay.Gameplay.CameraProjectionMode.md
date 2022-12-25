@@ -19,22 +19,22 @@
 
 ### Orthographic
 
-• **Orthographic** = ``1``
+• **Orthographic** = `1`
 
 摄像机镜头正交模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1707
+Gameplay/index.d.ts:1855
 
-___
+---
 
 ### Perspective
 
-• **Perspective** = ``0``
+• **Perspective** = `0`
 
 摄像机镜头透视模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1705
+Gameplay/index.d.ts:1853

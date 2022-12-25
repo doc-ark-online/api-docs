@@ -19,22 +19,22 @@
 
 ### Auto
 
-• **Auto** = ``0``
+• **Auto** = `0`
 
 自动，提供基础姿态
 
 #### Defined in
 
-Gameplay/index.d.ts:1746
+Gameplay/index.d.ts:1930
 
-___
+---
 
 ### Custom
 
-• **Custom** = ``1``
+• **Custom** = `1`
 
 自定义模式，不提供姿态,自己控制动画切换
 
 #### Defined in
 
-Gameplay/index.d.ts:1748
+Gameplay/index.d.ts:1932

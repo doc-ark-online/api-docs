@@ -37,8 +37,8 @@ huipeng.jia
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description              |
+| :----- | :------- | :----------------------- |
 | `text` | `string` | usage:复制到剪切板的文本 |
 
 #### Returns
@@ -47,9 +47,9 @@ huipeng.jia
 
 #### Defined in
 
-Util/index.d.ts:364
+Util/index.d.ts:570
 
-___
+---
 
 ### clipboardPaste
 
@@ -71,9 +71,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:370
+Util/index.d.ts:576
 
-___
+---
 
 ### format
 
@@ -81,18 +81,27 @@ ___
 
 **`Description`**
 
-将{i}中的内容依次替换为后续参数,i从0开始
+将{i}中的内容依次替换为后续参数。i 从 0 开始，表示第 i+2 个参数，详细请查看使用示例。
 
 **`Effect`**
 
 调用端生效
 
+**`Example`**
+
+使用示例:格式化字符串用法
+
+```
+// targetString = "hello world!";
+let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+```
+
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | usage: 要处理的字符串 |
-| `...param` | `any`[] | usage: 替换序列 |
+| Name       | Type     | Description           |
+| :--------- | :------- | :-------------------- |
+| `str`      | `string` | usage: 要处理的字符串 |
+| `...param` | `any`[]  | usage: 替换序列       |
 
 #### Returns
 
@@ -102,9 +111,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:385
+Util/index.d.ts:597
 
-___
+---
 
 ### isEmpty
 
@@ -112,7 +121,7 @@ ___
 
 **`Description`**
 
-判断字符串是否为空(null或"")
+判断字符串是否为空(null 或"")
 
 **`Effect`**
 
@@ -120,8 +129,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description           |
+| :---- | :------- | :-------------------- |
 | `str` | `string` | usage: 要判断的字符串 |
 
 #### Returns
@@ -132,4 +141,4 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:377
+Util/index.d.ts:583

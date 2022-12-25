@@ -6,7 +6,7 @@
 
 **`Description`**
 
-UI形状枚举
+UI 形状枚举
 
 ## Table of contents
 
@@ -19,22 +19,22 @@ UI形状枚举
 
 ### Cylinder
 
-• **Cylinder** = ``1``
+• **Cylinder** = `1`
 
 圆柱
 
 #### Defined in
 
-Gameplay/index.d.ts:10187
+Gameplay/index.d.ts:10261
 
-___
+---
 
 ### Plane
 
-• **Plane** = ``0``
+• **Plane** = `0`
 
 平面
 
 #### Defined in
 
-Gameplay/index.d.ts:10185
+Gameplay/index.d.ts:10259

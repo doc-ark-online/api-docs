@@ -20,8 +20,8 @@
 - [addExitListener](Events.Events.md#addexitlistener)
 - [addFocusListener](Events.Events.md#addfocuslistener)
 - [addLocalListener](Events.Events.md#addlocallistener)
-- [addOnPauseBeginListener](Events.Events.md#addonpausebeginlistener)
-- [addOnPauseEndListener](Events.Events.md#addonpauseendlistener)
+- [addOnPauseListener](Events.Events.md#addonpauselistener)
+- [addOnResumeListener](Events.Events.md#addonresumelistener)
 - [addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)
 - [addPlayerLeftListener](Events.Events.md#addplayerleftlistener)
 - [addServerListener](Events.Events.md#addserverlistener)
@@ -51,10 +51,10 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | usage:监听回调 Player 发送事件的客户端 target 事件内容 |
+| Name        | Type                                                                                               | Description                                            |
+| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------- |
+| `eventName` | `string`                                                                                           | usage:事件名                                           |
+| `listener`  | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | usage:监听回调 Player 发送事件的客户端 target 事件内容 |
 
 #### Returns
 
@@ -66,7 +66,7 @@
 
 Events/index.d.ts:63
 
-___
+---
 
 ### addExitListener
 
@@ -82,11 +82,12 @@ ___
 
 **`Precautions`**
 
-只在233悬浮球退出和PIE关闭窗口时生效。
+只在 233 悬浮球退出和 PIE 关闭窗口时生效。
 
 **`Example`**
 
 使用示例:调用方法
+
 ```
 let listener = Events.addExitListener(this.testFunction);
 public testFunction() {
@@ -97,8 +98,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type         | Description              |
+| :--------- | :----------- | :----------------------- |
 | `callback` | () => `void` | usage:需要触发的回调函数 |
 
 #### Returns
@@ -111,7 +112,7 @@ listener.disconnect();
 
 Events/index.d.ts:221
 
-___
+---
 
 ### addFocusListener
 
@@ -127,11 +128,12 @@ ___
 
 **`Precautions`**
 
-只在PIE模式下生效。
+只在 PIE 模式下生效。
 
 **`Example`**
 
 使用示例:调用方法
+
 ```
 let listener = Events.addFocusListener(this.testFunction);
 public testFunction() {
@@ -142,8 +144,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type         | Description              |
+| :--------- | :----------- | :----------------------- |
 | `callback` | () => `void` | usage:需要触发的回调函数 |
 
 #### Returns
@@ -156,7 +158,7 @@ listener.disconnect();
 
 Events/index.d.ts:151
 
-___
+---
 
 ### addLocalListener
 
@@ -172,10 +174,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
-| `listener` | (...`params`: `unknown`[]) => `void` | usage:监听回调 |
+| Name        | Type                                 | Description    |
+| :---------- | :----------------------------------- | :------------- |
+| `eventName` | `string`                             | usage:事件名   |
+| `listener`  | (...`params`: `unknown`[]) => `void` | usage:监听回调 |
 
 #### Returns
 
@@ -187,15 +189,15 @@ ___
 
 Events/index.d.ts:40
 
-___
+---
 
-### addOnPauseBeginListener
+### addOnPauseListener
 
-▸ **addOnPauseBeginListener**(`callback`): [`EventListener`](../classes/Events.Events.EventListener.md)
+▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.Events.EventListener.md)
 
 **`Description`**
 
-添加OnPause开始时执行的回调函数
+添加 OnPause 开始时执行的回调函数
 
 **`Effect`**
 
@@ -203,13 +205,14 @@ ___
 
 **`Precautions`**
 
-只在Android和IOS生效。触发时机有切入后台、息屏和播广告。
+只在 Android 和 IOS 生效。触发时机有切入后台、息屏和播广告。
 
 **`Example`**
 
 使用示例:调用方法
+
 ```
-let listener = Events.addOnPauseBeginListener(this.testFunction);
+let listener = Events.addOnPauseListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
@@ -218,8 +221,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type         | Description              |
+| :--------- | :----------- | :----------------------- |
 | `callback` | () => `void` | usage:需要触发的回调函数 |
 
 #### Returns
@@ -232,15 +235,15 @@ listener.disconnect();
 
 Events/index.d.ts:185
 
-___
+---
 
-### addOnPauseEndListener
+### addOnResumeListener
 
-▸ **addOnPauseEndListener**(`callback`): [`EventListener`](../classes/Events.Events.EventListener.md)
+▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.Events.EventListener.md)
 
 **`Description`**
 
-添加OnPause结束时执行的回调函数
+添加 OnPause 结束时执行的回调函数
 
 **`Effect`**
 
@@ -248,14 +251,15 @@ ___
 
 **`Precautions`**
 
-只在Android和IOS生效。触发时机有切入后台、息屏和播广告后回到游戏。
+只在 Android 和 IOS 生效。触发时机有切入后台、息屏和播广告后回到游戏。
 
 **`Example`**
 
 使用示例:调用方法
+
 ```
-let listener = Events.addOnPauseEndListener(this.testFunction);
-public testFunction(lastTime: number) {
+let listener = Events.addOnResumeListener(this.testFunction);
+public testFunction(leaveDuration: number) {
 }
 // 移除监听
 listener.disconnect();
@@ -263,9 +267,9 @@ listener.disconnect();
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | (`lastTime`: `any`) => `void` | usage:需要触发的回调函数，lastTime指OnPause持续时长 |
+| Name       | Type                                  | Description                                                 |
+| :--------- | :------------------------------------ | :---------------------------------------------------------- |
+| `callback` | (`leaveDuration`: `number`) => `void` | usage:需要触发的回调函数，leaveDuration 指 OnPause 持续时长 |
 
 #### Returns
 
@@ -277,7 +281,7 @@ listener.disconnect();
 
 Events/index.d.ts:202
 
-___
+---
 
 ### addPlayerJoinedListener
 
@@ -285,7 +289,7 @@ ___
 
 **`Description`**
 
-监听玩家进入room事件
+监听玩家进入 room 事件
 
 **`Effect`**
 
@@ -293,8 +297,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                                     | Description    |
+| :--------- | :----------------------------------------------------------------------- | :------------- |
 | `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | usage:监听回调 |
 
 #### Returns
@@ -307,7 +311,7 @@ ___
 
 Events/index.d.ts:123
 
-___
+---
 
 ### addPlayerLeftListener
 
@@ -315,7 +319,7 @@ ___
 
 **`Description`**
 
-监听玩家离开room事件
+监听玩家离开 room 事件
 
 **`Effect`**
 
@@ -323,8 +327,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                                                     | Description    |
+| :--------- | :----------------------------------------------------------------------- | :------------- |
 | `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | usage:监听回调 |
 
 #### Returns
@@ -337,7 +341,7 @@ ___
 
 Events/index.d.ts:132
 
-___
+---
 
 ### addServerListener
 
@@ -357,10 +361,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
-| `listener` | (...`params`: `unknown`[]) => `void` | usage:监听回调 params 事件内容 |
+| Name        | Type                                 | Description                    |
+| :---------- | :----------------------------------- | :----------------------------- |
+| `eventName` | `string`                             | usage:事件名                   |
+| `listener`  | (...`params`: `unknown`[]) => `void` | usage:监听回调 params 事件内容 |
 
 #### Returns
 
@@ -372,7 +376,7 @@ ___
 
 Events/index.d.ts:87
 
-___
+---
 
 ### addUnfocusedListener
 
@@ -388,11 +392,12 @@ ___
 
 **`Precautions`**
 
-只在PIE模式下生效。
+只在 PIE 模式下生效。
 
 **`Example`**
 
 使用示例:调用方法
+
 ```
 let listener = Events.addUnfocusedListener(this.testFunction);
 public testFunction() {
@@ -403,8 +408,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type         | Description              |
+| :--------- | :----------- | :----------------------- |
 | `callback` | () => `void` | usage:需要触发的回调函数 |
 
 #### Returns
@@ -417,7 +422,7 @@ listener.disconnect();
 
 Events/index.d.ts:168
 
-___
+---
 
 ### dispatchLocal
 
@@ -433,9 +438,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
+| Name        | Type        | Description    |
+| :---------- | :---------- | :------------- |
+| `eventName` | `string`    | usage:事件名   |
 | `...params` | `unknown`[] | usage:事件内容 |
 
 #### Returns
@@ -448,7 +453,7 @@ ___
 
 Events/index.d.ts:51
 
-___
+---
 
 ### dispatchToAllClient
 
@@ -468,9 +473,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
+| Name        | Type        | Description      |
+| :---------- | :---------- | :--------------- |
+| `eventName` | `string`    | usage:事件名     |
 | `...params` | `unknown`[] | usage:可变长参数 |
 
 #### Returns
@@ -483,7 +488,7 @@ ___
 
 Events/index.d.ts:113
 
-___
+---
 
 ### dispatchToClient
 
@@ -503,11 +508,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:客户端 |
-| `eventName` | `string` | usage:事件名 |
-| `...params` | `unknown`[] | usage:可变长参数 |
+| Name        | Type                                               | Description      |
+| :---------- | :------------------------------------------------- | :--------------- |
+| `player`    | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:客户端     |
+| `eventName` | `string`                                           | usage:事件名     |
+| `...params` | `unknown`[]                                        | usage:可变长参数 |
 
 #### Returns
 
@@ -519,7 +524,7 @@ ___
 
 Events/index.d.ts:100
 
-___
+---
 
 ### dispatchToServer
 
@@ -539,9 +544,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:事件名 |
+| Name        | Type        | Description      |
+| :---------- | :---------- | :--------------- |
+| `eventName` | `string`    | usage:事件名     |
 | `...params` | `unknown`[] | usage:可变长参数 |
 
 #### Returns

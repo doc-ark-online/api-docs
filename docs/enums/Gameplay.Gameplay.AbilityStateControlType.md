@@ -21,46 +21,46 @@
 
 ### CanJump
 
-• **CanJump** = ``2``
+• **CanJump** = `2`
 
 可跳跃
 
 #### Defined in
 
-Gameplay/index.d.ts:8144
+Gameplay/index.d.ts:8282
 
-___
+---
 
 ### CanMove
 
-• **CanMove** = ``1``
+• **CanMove** = `1`
 
 可移动
 
 #### Defined in
 
-Gameplay/index.d.ts:8142
+Gameplay/index.d.ts:8280
 
-___
+---
 
 ### CanTurn
 
-• **CanTurn** = ``4``
+• **CanTurn** = `4`
 
 可转向
 
 #### Defined in
 
-Gameplay/index.d.ts:8146
+Gameplay/index.d.ts:8284
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 默认值
 
 #### Defined in
 
-Gameplay/index.d.ts:8140
+Gameplay/index.d.ts:8278

@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-UI控件的集合,预制体UI
+UI 控件的集合,预制体 UI
 
 **`Network Status`**
 
@@ -32,15 +32,18 @@ usage:客户端
 
 ### Accessors
 
+- [autoSizeEnable](UI.UI.UserWidget.md#autosizeenable)
 - [cachedGeometry](UI.UI.UserWidget.md#cachedgeometry)
+- [constraints](UI.UI.UserWidget.md#constraints)
 - [desiredSize](UI.UI.UserWidget.md#desiredsize)
+- [enable](UI.UI.UserWidget.md#enable)
 - [focusable](UI.UI.UserWidget.md#focusable)
 - [guid](UI.UI.UserWidget.md#guid)
-- [isEnabled](UI.UI.UserWidget.md#isenabled)
 - [isHovered](UI.UI.UserWidget.md#ishovered)
 - [name](UI.UI.UserWidget.md#name)
 - [paintSpaceGeometry](UI.UI.UserWidget.md#paintspacegeometry)
 - [parent](UI.UI.UserWidget.md#parent)
+- [position](UI.UI.UserWidget.md#position)
 - [renderOpacity](UI.UI.UserWidget.md#renderopacity)
 - [renderScale](UI.UI.UserWidget.md#renderscale)
 - [renderShear](UI.UI.UserWidget.md#rendershear)
@@ -50,8 +53,10 @@ usage:客户端
 - [size](UI.UI.UserWidget.md#size)
 - [slot](UI.UI.UserWidget.md#slot)
 - [tickSpaceGeometry](UI.UI.UserWidget.md#tickspacegeometry)
+- [transform](UI.UI.UserWidget.md#transform)
 - [visibility](UI.UI.UserWidget.md#visibility)
 - [visible](UI.UI.UserWidget.md#visible)
+- [zOrder](UI.UI.UserWidget.md#zorder)
 
 ### Methods
 
@@ -74,6 +79,62 @@ usage:客户端
 [Widget](UI.UI.Widget.md).[constructor](UI.UI.Widget.md#constructor)
 
 ## Accessors
+
+### autoSizeEnable
+
+• `get` **autoSizeEnable**(): `boolean`
+
+**`Description`**
+
+获取是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+是否自动设置大小
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4987
+
+• `set` **autoSizeEnable**(`autoSize`): `void`
+
+**`Description`**
+
+设置是否自动设置大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `autoSize` | `boolean` | usage:是否自动设置大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.autoSizeEnable
+
+#### Defined in
+
+UI/index.d.ts:4981
+
+---
 
 ### cachedGeometry
 
@@ -99,9 +160,65 @@ Widget.cachedGeometry
 
 #### Defined in
 
-UI/index.d.ts:4893
+UI/index.d.ts:4897
 
-___
+---
+
+### constraints
+
+• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+**`Description`**
+
+获取控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\>
+
+控件的布局
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4939
+
+• `set` **constraints**(`ininconstraints`): `void`
+
+**`Description`**
+
+设置控件的布局
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                                                  | Description      |
+| :---------------- | :---------------------------------------------------- | :--------------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.constraints
+
+#### Defined in
+
+UI/index.d.ts:4933
+
+---
 
 ### desiredSize
 
@@ -127,9 +244,67 @@ Widget.desiredSize
 
 #### Defined in
 
-UI/index.d.ts:4827
+UI/index.d.ts:4831
 
-___
+---
+
+### enable
+
+• `get` **enable**(): `boolean`
+
+**`Description`**
+
+是否可用
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`boolean`
+
+boolean
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4807
+
+• `set` **enable**(`isEnable`): `void`
+
+**`Description`**
+
+设置可用性
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type      | Description          |
+| :--------- | :-------- | :------------------- |
+| `isEnable` | `boolean` | usage:可用性 boolean |
+
+#### Returns
+
+`void`
+
+返回设置结果
+
+#### Inherited from
+
+Widget.enable
+
+#### Defined in
+
+UI/index.d.ts:4814
+
+---
 
 ### focusable
 
@@ -151,7 +326,7 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4426
+UI/index.d.ts:4435
 
 • `set` **focusable**(`isFocus`): `void`
 
@@ -165,8 +340,8 @@ UI/index.d.ts:4426
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type      | Description    |
+| :-------- | :-------- | :------------- |
 | `isFocus` | `boolean` | usage:是否相应 |
 
 #### Returns
@@ -175,9 +350,9 @@ UI/index.d.ts:4426
 
 #### Defined in
 
-UI/index.d.ts:4420
+UI/index.d.ts:4429
 
-___
+---
 
 ### guid
 
@@ -185,7 +360,7 @@ ___
 
 **`Description`**
 
-获取控件GUID
+获取控件 GUID
 
 **`Effect`**
 
@@ -195,7 +370,7 @@ ___
 
 `string`
 
-控件GUID
+控件 GUID
 
 #### Inherited from
 
@@ -203,67 +378,9 @@ Widget.guid
 
 #### Defined in
 
-UI/index.d.ts:4911
+UI/index.d.ts:4915
 
-___
-
-### isEnabled
-
-• `get` **isEnabled**(): `boolean`
-
-**`Description`**
-
-是否可用
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`boolean`
-
-boolean
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4797
-
-• `set` **isEnabled**(`enable`): `void`
-
-**`Description`**
-
-设置可用性
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` | usage:可用性boolean |
-
-#### Returns
-
-`void`
-
-返回设置结果
-
-#### Inherited from
-
-Widget.isEnabled
-
-#### Defined in
-
-UI/index.d.ts:4804
-
-___
+---
 
 ### isHovered
 
@@ -271,7 +388,7 @@ ___
 
 **`Description`**
 
-是否是hovered
+是否是 hovered
 
 **`Effect`**
 
@@ -289,9 +406,9 @@ Widget.isHovered
 
 #### Defined in
 
-UI/index.d.ts:4816
+UI/index.d.ts:4820
 
-___
+---
 
 ### name
 
@@ -317,7 +434,7 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4773
+UI/index.d.ts:4783
 
 • `set` **name**(`name`): `void`
 
@@ -331,9 +448,9 @@ UI/index.d.ts:4773
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | usage:名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | usage:名字  |
 
 #### Returns
 
@@ -345,9 +462,9 @@ Widget.name
 
 #### Defined in
 
-UI/index.d.ts:4767
+UI/index.d.ts:4777
 
-___
+---
 
 ### paintSpaceGeometry
 
@@ -355,7 +472,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于渲染Widget的几何信息
+获取最后一次用于渲染 Widget 的几何信息
 
 **`Effect`**
 
@@ -365,7 +482,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染Widget的几何信息
+返回最后一次用于渲染 Widget 的几何信息
 
 #### Inherited from
 
@@ -373,9 +490,9 @@ Widget.paintSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4905
+UI/index.d.ts:4909
 
-___
+---
 
 ### parent
 
@@ -401,9 +518,65 @@ Widget.parent
 
 #### Defined in
 
-UI/index.d.ts:4755
+UI/index.d.ts:4764
 
-___
+---
+
+### position
+
+• `get` **position**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+**`Description`**
+
+获取控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`Vector2`](Type.Type.Vector2.md)\>
+
+控件的位置
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4951
+
+• `set` **position**(`inFigmaPosition`): `void`
+
+**`Description`**
+
+设置控件的位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name              | Type                              | Description      |
+| :---------------- | :-------------------------------- | :--------------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.position
+
+#### Defined in
+
+UI/index.d.ts:4945
+
+---
 
 ### renderOpacity
 
@@ -429,7 +602,7 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4887
+UI/index.d.ts:4891
 
 • `set` **renderOpacity**(`InOpacity`): `void`
 
@@ -443,8 +616,8 @@ UI/index.d.ts:4887
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| :---------- | :------- | :----------- |
 | `InOpacity` | `number` | usage:透明度 |
 
 #### Returns
@@ -457,9 +630,9 @@ Widget.renderOpacity
 
 #### Defined in
 
-UI/index.d.ts:4881
+UI/index.d.ts:4885
 
-___
+---
 
 ### renderScale
 
@@ -485,7 +658,7 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4875
+UI/index.d.ts:4879
 
 • `set` **renderScale**(`scale`): `void`
 
@@ -499,8 +672,8 @@ UI/index.d.ts:4875
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
 
 #### Returns
@@ -513,9 +686,9 @@ Widget.renderScale
 
 #### Defined in
 
-UI/index.d.ts:4869
+UI/index.d.ts:4873
 
-___
+---
 
 ### renderShear
 
@@ -541,7 +714,7 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4863
+UI/index.d.ts:4867
 
 • `set` **renderShear**(`shear`): `void`
 
@@ -555,8 +728,8 @@ UI/index.d.ts:4863
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description        |
+| :------ | :-------------------------------- | :----------------- |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
 
 #### Returns
@@ -569,9 +742,9 @@ Widget.renderShear
 
 #### Defined in
 
-UI/index.d.ts:4857
+UI/index.d.ts:4861
 
-___
+---
 
 ### renderTransformAngle
 
@@ -597,7 +770,7 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4839
+UI/index.d.ts:4843
 
 • `set` **renderTransformAngle**(`o`): `void`
 
@@ -611,9 +784,9 @@ UI/index.d.ts:4839
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `o` | `number` | usage:渲染角度 |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
+| `o`  | `number` | usage:渲染角度 |
 
 #### Returns
 
@@ -625,9 +798,9 @@ Widget.renderTransformAngle
 
 #### Defined in
 
-UI/index.d.ts:4833
+UI/index.d.ts:4837
 
-___
+---
 
 ### renderTransformPivot
 
@@ -653,7 +826,7 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4851
+UI/index.d.ts:4855
 
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
@@ -667,8 +840,8 @@ UI/index.d.ts:4851
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                              | Description    |
+| :------ | :-------------------------------- | :------------- |
 | `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
 
 #### Returns
@@ -681,9 +854,9 @@ Widget.renderTransformPivot
 
 #### Defined in
 
-UI/index.d.ts:4845
+UI/index.d.ts:4849
 
-___
+---
 
 ### rootContent
 
@@ -691,7 +864,7 @@ ___
 
 **`Description`**
 
-获取根Canvas
+获取根 Canvas
 
 **`Effect`**
 
@@ -701,17 +874,17 @@ ___
 
 [`Canvas`](UI.UI.Canvas.md)
 
-返回根Canvas
+返回根 Canvas
 
 #### Defined in
 
-UI/index.d.ts:4402
+UI/index.d.ts:4411
 
 • `set` **rootContent**(`content`): `void`
 
 **`Description`**
 
-设置UI的根Canvas
+设置 UI 的根 Canvas
 
 **`Effect`**
 
@@ -719,9 +892,9 @@ UI/index.d.ts:4402
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `content` | [`Canvas`](UI.UI.Canvas.md) | usage:根UI的内容 |
+| Name      | Type                        | Description        |
+| :-------- | :-------------------------- | :----------------- |
+| `content` | [`Canvas`](UI.UI.Canvas.md) | usage:根 UI 的内容 |
 
 #### Returns
 
@@ -729,9 +902,9 @@ UI/index.d.ts:4402
 
 #### Defined in
 
-UI/index.d.ts:4396
+UI/index.d.ts:4405
 
-___
+---
 
 ### size
 
@@ -739,7 +912,7 @@ ___
 
 **`Description`**
 
-获取控件实际大小，需要在添加后才能使用
+获取大小
 
 **`Effect`**
 
@@ -749,7 +922,7 @@ ___
 
 [`Vector2`](Type.Type.Vector2.md)
 
-控件大小
+FVector2D
 
 #### Inherited from
 
@@ -757,17 +930,49 @@ Widget.size
 
 #### Defined in
 
-UI/index.d.ts:4810
+UI/index.d.ts:4963
 
-___
+• `set` **size**(`inSize`): `void`
+
+**`Description`**
+
+设置控件的大小
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name     | Type                              | Description    |
+| :------- | :-------------------------------- | :------------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.size
+
+#### Defined in
+
+UI/index.d.ts:4957
+
+---
 
 ### slot
 
 • `get` **slot**(): [`UISlot`](UI.UI.UISlot.md)
 
+**`Deprecated`**
+
+since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
 **`Description`**
 
-获取Slot槽
+获取插槽
 
 **`Effect`**
 
@@ -777,7 +982,7 @@ ___
 
 [`UISlot`](UI.UI.UISlot.md)
 
-返回Slot槽
+返回插槽
 
 #### Inherited from
 
@@ -785,9 +990,9 @@ Widget.slot
 
 #### Defined in
 
-UI/index.d.ts:4761
+UI/index.d.ts:4771
 
-___
+---
 
 ### tickSpaceGeometry
 
@@ -795,7 +1000,7 @@ ___
 
 **`Description`**
 
-获取最后一次用于驱动Widget Tick的几何信息
+获取最后一次用于驱动 Widget Tick 的几何信息
 
 **`Effect`**
 
@@ -805,7 +1010,7 @@ ___
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动Widget Tick的几何信息
+返回最后一次用于驱动 Widget Tick 的几何信息
 
 #### Inherited from
 
@@ -813,9 +1018,65 @@ Widget.tickSpaceGeometry
 
 #### Defined in
 
-UI/index.d.ts:4899
+UI/index.d.ts:4903
 
-___
+---
+
+### transform
+
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+**`Description`**
+
+得到控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
+
+控件的大小和位置
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4927
+
+• `set` **transform**(`inTransform`): `void`
+
+**`Description`**
+
+设置控件的大小和位置
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name          | Type                                  | Description    |
+| :------------ | :------------------------------------ | :------------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.transform
+
+#### Defined in
+
+UI/index.d.ts:4921
+
+---
 
 ### visibility
 
@@ -841,7 +1102,7 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4785
+UI/index.d.ts:4795
 
 • `set` **visibility**(`Visibility`): `void`
 
@@ -855,8 +1116,8 @@ UI/index.d.ts:4785
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                                                   | Description  |
+| :----------- | :----------------------------------------------------- | :----------- |
 | `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
 
 #### Returns
@@ -869,9 +1130,9 @@ Widget.visibility
 
 #### Defined in
 
-UI/index.d.ts:4779
+UI/index.d.ts:4789
 
-___
+---
 
 ### visible
 
@@ -897,7 +1158,63 @@ Widget.visible
 
 #### Defined in
 
-UI/index.d.ts:4791
+UI/index.d.ts:4801
+
+---
+
+### zOrder
+
+• `get` **zOrder**(): `number`
+
+**`Description`**
+
+获取 zorder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`number`
+
+zorder
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4975
+
+• `set` **zOrder**(`InZOrder`): `void`
+
+**`Description`**
+
+设置 zoder
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name       | Type     | Description          |
+| :--------- | :------- | :------------------- |
+| `InZOrder` | `number` | usage:值越大在越上层 |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+Widget.zOrder
+
+#### Defined in
+
+UI/index.d.ts:4969
 
 ## Methods
 
@@ -915,8 +1232,8 @@ UI/index.d.ts:4791
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description                |
+| :------- | :------- | :------------------------- |
 | `zOrder` | `number` | usage:添加到屏幕的层级关系 |
 
 #### Returns
@@ -925,9 +1242,9 @@ UI/index.d.ts:4791
 
 #### Defined in
 
-UI/index.d.ts:4390
+UI/index.d.ts:4399
 
-___
+---
 
 ### destroyObject
 
@@ -951,9 +1268,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4742
+UI/index.d.ts:4751
 
-___
+---
 
 ### equal
 
@@ -969,8 +1286,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                        | Description                  |
+| :----- | :-------------------------- | :--------------------------- |
 | `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
 
 #### Returns
@@ -985,9 +1302,9 @@ boolean
 
 #### Defined in
 
-UI/index.d.ts:4749
+UI/index.d.ts:4758
 
-___
+---
 
 ### findChildByPath
 
@@ -1003,9 +1320,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inPath` | `string` | usage:路径 |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inPath` | `string` | usage:路径  |
 
 #### Returns
 
@@ -1015,9 +1332,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4414
+UI/index.d.ts:4423
 
-___
+---
 
 ### invalidateLayoutAndVolatility
 
@@ -1041,9 +1358,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4821
+UI/index.d.ts:4825
 
-___
+---
 
 ### removeRootContent
 
@@ -1051,7 +1368,7 @@ ___
 
 **`Description`**
 
-移除根Canvas
+移除根 Canvas,会销毁根 Canvas，无法再次使用
 
 **`Effect`**
 
@@ -1063,9 +1380,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4407
+UI/index.d.ts:4416
 
-___
+---
 
 ### newObject
 
@@ -1081,9 +1398,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外Outer对象 default:null |
+| Name      | Type                        | Description                                |
+| :-------- | :-------------------------- | :----------------------------------------- |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 Outer 对象 default:null |
 
 #### Returns
 
@@ -1093,4 +1410,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4384
+UI/index.d.ts:4393

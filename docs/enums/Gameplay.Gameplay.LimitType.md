@@ -20,34 +20,34 @@
 
 ### Free
 
-• **Free** = ``0``
+• **Free** = `0`
 
 自由
 
 #### Defined in
 
-Gameplay/index.d.ts:12471
+Gameplay/index.d.ts:12149
 
-___
+---
 
 ### Limited
 
-• **Limited** = ``1``
+• **Limited** = `1`
 
 限制
 
 #### Defined in
 
-Gameplay/index.d.ts:12473
+Gameplay/index.d.ts:12151
 
-___
+---
 
 ### Locked
 
-• **Locked** = ``2``
+• **Locked** = `2`
 
 锁定
 
 #### Defined in
 
-Gameplay/index.d.ts:12475
+Gameplay/index.d.ts:12153

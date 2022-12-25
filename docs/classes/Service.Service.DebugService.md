@@ -12,11 +12,11 @@ xiangkun.sun
 
 **`Description`**
 
-debug调试服务
+debug 调试服务
 
 **`Precautions`**
 
-单例类，请使用instance获取对象
+单例类，请使用 instance 获取对象
 
 **`Network Status`**
 
@@ -47,7 +47,7 @@ usage: 双端
 
 **`Description`**
 
-获取当前项目所有TS脚本内存占用
+获取当前项目所有 TS 脚本内存占用
 
 **`Effect`**
 
@@ -61,9 +61,9 @@ HeapStatistics 内存数据
 
 #### Defined in
 
-Service/index.d.ts:752
+Service/index.d.ts:764
 
-___
+---
 
 ### getInstance
 
@@ -71,7 +71,7 @@ ___
 
 **`Description`**
 
-获取debug调试服务全局实例
+获取 debug 调试服务全局实例
 
 **`Effect`**
 
@@ -81,8 +81,8 @@ ___
 
 [`DebugService`](Service.Service.DebugService.md)
 
-debug调试服务全局实例
+debug 调试服务全局实例
 
 #### Defined in
 
-Service/index.d.ts:746
+Service/index.d.ts:758

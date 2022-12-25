@@ -12,94 +12,94 @@
 
 ### Enumeration Members
 
-- [FemaleMedium](Gameplay.Gameplay.SomatotypeV2.md#femalemedium)
-- [LowpolyAdultFeMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)
+- [AnimeFemale](Gameplay.Gameplay.SomatotypeV2.md#animefemale)
+- [AnimeMale](Gameplay.Gameplay.SomatotypeV2.md#animemale)
+- [LowpolyAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)
 - [LowpolyAdultMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultmale)
-- [MaleMedium](Gameplay.Gameplay.SomatotypeV2.md#malemedium)
 - [None](Gameplay.Gameplay.SomatotypeV2.md#none)
-- [RealisticAdultFeMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)
+- [RealisticAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)
 - [RealisticAdultMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultmale)
 
 ## Enumeration Members
 
-### FemaleMedium
+### AnimeFemale
 
-• **FemaleMedium** = ``2``
+• **AnimeFemale** = `2`
 
 二次元成年女性
 
 #### Defined in
 
-Gameplay/index.d.ts:1718
+Gameplay/index.d.ts:1891
 
-___
+---
 
-### LowpolyAdultFeMale
+### AnimeMale
 
-• **LowpolyAdultFeMale** = ``4``
-
-Lowpoly成年女性
-
-#### Defined in
-
-Gameplay/index.d.ts:1722
-
-___
-
-### LowpolyAdultMale
-
-• **LowpolyAdultMale** = ``3``
-
-Lowpoly成年男性
-
-#### Defined in
-
-Gameplay/index.d.ts:1720
-
-___
-
-### MaleMedium
-
-• **MaleMedium** = ``1``
+• **AnimeMale** = `1`
 
 二次元成年男性
 
 #### Defined in
 
-Gameplay/index.d.ts:1716
+Gameplay/index.d.ts:1889
 
-___
+---
+
+### LowpolyAdultFemale
+
+• **LowpolyAdultFemale** = `4`
+
+Lowpoly 成年女性
+
+#### Defined in
+
+Gameplay/index.d.ts:1895
+
+---
+
+### LowpolyAdultMale
+
+• **LowpolyAdultMale** = `3`
+
+Lowpoly 成年男性
+
+#### Defined in
+
+Gameplay/index.d.ts:1893
+
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 空骨骼模型，默认二次元女骨架
 
 #### Defined in
 
-Gameplay/index.d.ts:1714
+Gameplay/index.d.ts:1887
 
-___
+---
 
-### RealisticAdultFeMale
+### RealisticAdultFemale
 
-• **RealisticAdultFeMale** = ``6``
+• **RealisticAdultFemale** = `6`
 
 写实成年女性
 
 #### Defined in
 
-Gameplay/index.d.ts:1726
+Gameplay/index.d.ts:1899
 
-___
+---
 
 ### RealisticAdultMale
 
-• **RealisticAdultMale** = ``5``
+• **RealisticAdultMale** = `5`
 
 写实成年男性
 
 #### Defined in
 
-Gameplay/index.d.ts:1724
+Gameplay/index.d.ts:1897

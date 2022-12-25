@@ -6,7 +6,7 @@
 
 **`Description`**
 
-UI节点显示规则
+UI 节点显示规则
 
 ## Table of contents
 
@@ -22,58 +22,58 @@ UI节点显示规则
 
 ### Collapsed
 
-• **Collapsed** = ``1``
+• **Collapsed** = `1`
 
 隐藏 并且不占用大小
 
 #### Defined in
 
-UI/index.d.ts:3557
+UI/index.d.ts:3566
 
-___
+---
 
 ### Hidden
 
-• **Hidden** = ``2``
+• **Hidden** = `2`
 
 隐藏 占用计算大小
 
 #### Defined in
 
-UI/index.d.ts:3559
+UI/index.d.ts:3568
 
-___
+---
 
 ### HitTestInvisible
 
-• **HitTestInvisible** = ``3``
+• **HitTestInvisible** = `3`
 
 可见 自身以及子节点不可响应事件
 
 #### Defined in
 
-UI/index.d.ts:3561
+UI/index.d.ts:3570
 
-___
+---
 
 ### SelfHitTestInvisible
 
-• **SelfHitTestInvisible** = ``4``
+• **SelfHitTestInvisible** = `4`
 
 可见 自身不可响应事件
 
 #### Defined in
 
-UI/index.d.ts:3563
+UI/index.d.ts:3572
 
-___
+---
 
 ### Visible
 
-• **Visible** = ``0``
+• **Visible** = `0`
 
 可见
 
 #### Defined in
 
-UI/index.d.ts:3555
+UI/index.d.ts:3564

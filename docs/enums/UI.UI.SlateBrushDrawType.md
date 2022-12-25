@@ -21,46 +21,46 @@
 
 ### Border
 
-• **Border** = ``2``
+• **Border** = `2`
 
-在边平铺且中间为空的位置绘制3x3边框
+在边平铺且中间为空的位置绘制 3x3 边框
 
 #### Defined in
 
-UI/index.d.ts:3649
+UI/index.d.ts:3658
 
-___
+---
 
 ### Box
 
-• **Box** = ``1``
+• **Box** = `1`
 
-绘制一个3x3长方体，其中边和中间根据边距拉伸
+绘制一个 3x3 长方体，其中边和中间根据边距拉伸
 
 #### Defined in
 
-UI/index.d.ts:3647
+UI/index.d.ts:3656
 
-___
+---
 
 ### Image
 
-• **Image** = ``3``
+• **Image** = `3`
 
 画一个图像
 
 #### Defined in
 
-UI/index.d.ts:3651
+UI/index.d.ts:3660
 
-___
+---
 
 ### NoDrawType
 
-• **NoDrawType** = ``0``
+• **NoDrawType** = `0`
 
 不绘制
 
 #### Defined in
 
-UI/index.d.ts:3645
+UI/index.d.ts:3654

@@ -16,7 +16,7 @@ huipeng.jia
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
@@ -34,14 +34,13 @@ usage: 双端
 
 ### Accessors
 
-- [bgmVolumeScale](Service.Service.SoundService.md#bgmvolumescale)
+- [BGMVolumeScale](Service.Service.SoundService.md#bgmvolumescale)
 - [volumeScale](Service.Service.SoundService.md#volumescale)
 
 ### Methods
 
 - [clearAll](Service.Service.SoundService.md#clearall)
 - [get3DSoundGameObject](Service.Service.SoundService.md#get3dsoundgameobject)
-- [init](Service.Service.SoundService.md#init)
 - [play3DSound](Service.Service.SoundService.md#play3dsound)
 - [playBGM](Service.Service.SoundService.md#playbgm)
 - [playSound](Service.Service.SoundService.md#playsound)
@@ -62,27 +61,27 @@ usage: 双端
 
 ### onPlaySoundComplete
 
-• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Type.FunctionType.Action1.md)<`string` \| `number`\>
+• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Type.Action1.md)<`string` \| `number`\>
 
 **`Description`**
 
-播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)
+播放声音完成的委托(2D 声音是 string 代表 resId, 3D 声音是 playId 代表播放 id)
 
 #### Defined in
 
-Service/index.d.ts:1107
+Service/index.d.ts:1121
 
 ## Accessors
 
-### bgmVolumeScale
+### BGMVolumeScale
 
-• `get` **bgmVolumeScale**(): `number`
+• `get` **BGMVolumeScale**(): `number`
 
 **`Description`**
 
-BGM音量
+BGM 音量
 
-**`Precautions`**
+**`Effect`**
 
 只在客户端调用生效
 
@@ -92,22 +91,22 @@ BGM音量
 
 #### Defined in
 
-Service/index.d.ts:1205
+Service/index.d.ts:1216
 
-• `set` **bgmVolumeScale**(`value`): `void`
+• `set` **BGMVolumeScale**(`value`): `void`
 
 **`Description`**
 
-BGM音量
+BGM 音量
 
-**`Precautions`**
+**`Effect`**
 
 只在客户端调用生效
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -116,9 +115,9 @@ BGM音量
 
 #### Defined in
 
-Service/index.d.ts:1200
+Service/index.d.ts:1211
 
-___
+---
 
 ### volumeScale
 
@@ -130,6 +129,10 @@ ___
 
 **`Precautions`**
 
+取值范围 0-1
+
+**`Effect`**
+
 只在客户端调用生效
 
 #### Returns
@@ -138,7 +141,7 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1195
+Service/index.d.ts:1206
 
 • `set` **volumeScale**(`value`): `void`
 
@@ -148,12 +151,16 @@ Service/index.d.ts:1195
 
 **`Precautions`**
 
+取值范围 0-1
+
+**`Effect`**
+
 只在客户端调用生效
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `value` | `number` |
 
 #### Returns
@@ -162,7 +169,7 @@ Service/index.d.ts:1195
 
 #### Defined in
 
-Service/index.d.ts:1190
+Service/index.d.ts:1200
 
 ## Methods
 
@@ -172,7 +179,7 @@ Service/index.d.ts:1190
 
 **`Description`**
 
-停止所有音效和BGM，并释放所有音效和BGM资源
+停止所有音效和 BGM，并释放所有音效和 BGM 资源
 
 **`Effect`**
 
@@ -184,9 +191,9 @@ Service/index.d.ts:1190
 
 #### Defined in
 
-Service/index.d.ts:1112
+Service/index.d.ts:1126
 
-___
+---
 
 ### get3DSoundGameObject
 
@@ -194,51 +201,29 @@ ___
 
 **`Description`**
 
-根据播放id获取一个Sound
+根据播放 id 获取一个 Sound
 
 **`Effect`**
 
-调用端生效
+客户端生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playId` | `number` | usage: 播放id |
+| Name     | Type     | Description    |
+| :------- | :------- | :------------- |
+| `playId` | `number` | usage: 播放 id |
 
 #### Returns
 
 `Promise`<[`Sound`](Gameplay.Gameplay.Sound.md)\>
 
-Sound对象的gameObject
+Sound 对象的 gameObject
 
 #### Defined in
 
-Service/index.d.ts:1180
+Service/index.d.ts:1189
 
-___
-
-### init
-
-▸ **init**(): `void`
-
-**`Description`**
-
-初始化
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Service/index.d.ts:1117
-
-___
+---
 
 ### play3DSound
 
@@ -246,7 +231,7 @@ ___
 
 **`Description`**
 
-在目标播放3D音效
+在目标播放 3D 音效
 
 **`Effect`**
 
@@ -254,25 +239,25 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 资源Id |
-| `target` | `string` \| [`GameObject`](Core.Core.GameObject.md) \| [`Vector`](Type.Type.Vector.md) | usage: 播放目标 (GameObject的guid \| GameObject \| 世界坐标) |
-| `loopNum?` | `number` | usage: 循环次数 default: 1 |
-| `volume?` | `number` | usage: 音量 default: 1 |
-| `playParam?` | `any` | usage: 播放参数: {radius:半径} default: {} |
+| Name         | Type                                                        | Description                                                    |
+| :----------- | :---------------------------------------------------------- | :------------------------------------------------------------- |
+| `resId`      | `string`                                                    | usage: 资源 Id                                                 |
+| `target`     | `string` \| `GameObject` \| [`Vector`](Type.Type.Vector.md) | usage: 播放目标 (GameObject 的 guid \| GameObject \| 世界坐标) |
+| `loopNum?`   | `number`                                                    | usage: 循环次数 default: 1                                     |
+| `volume?`    | `number`                                                    | usage: 音量 default: 1                                         |
+| `playParam?` | `any`                                                       | usage: 播放参数: {radius:半径} default: {}                     |
 
 #### Returns
 
 `number`
 
-播放ID，播放声音的唯一标识，可用于停止声音
+播放 ID，播放声音的唯一标识，可用于停止声音
 
 #### Defined in
 
-Service/index.d.ts:1161
+Service/index.d.ts:1170
 
-___
+---
 
 ### playBGM
 
@@ -288,9 +273,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 资源Id |
+| Name      | Type     | Description            |
+| :-------- | :------- | :--------------------- |
+| `resId`   | `string` | usage: 资源 Id         |
 | `volume?` | `number` | usage: 音量 default: 1 |
 
 #### Returns
@@ -299,9 +284,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1145
+Service/index.d.ts:1154
 
-___
+---
 
 ### playSound
 
@@ -309,7 +294,7 @@ ___
 
 **`Description`**
 
-根据资源Id播放声音
+根据资源 Id 播放声音
 
 **`Effect`**
 
@@ -321,23 +306,23 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 资源Id |
-| `loopNum?` | `number` | usage: 循环次数(0无限) default: 1 |
-| `volume?` | `number` | usage: 音量 default: 1 |
+| Name       | Type     | Description                        |
+| :--------- | :------- | :--------------------------------- |
+| `resId`    | `string` | usage: 资源 Id                     |
+| `loopNum?` | `number` | usage: 循环次数(0 无限) default: 1 |
+| `volume?`  | `number` | usage: 音量 default: 1             |
 
 #### Returns
 
 `string`
 
-资源ID
+资源 ID
 
 #### Defined in
 
-Service/index.d.ts:1127
+Service/index.d.ts:1136
 
-___
+---
 
 ### stop3DSound
 
@@ -345,7 +330,7 @@ ___
 
 **`Description`**
 
-停止3D声音
+停止 3D 声音
 
 **`Effect`**
 
@@ -353,8 +338,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description               |
+| :------- | :------- | :------------------------ |
 | `playId` | `number` | usage: 播放声音的唯一标识 |
 
 #### Returns
@@ -363,9 +348,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1173
+Service/index.d.ts:1182
 
-___
+---
 
 ### stopAll3DSound
 
@@ -373,7 +358,7 @@ ___
 
 **`Description`**
 
-停止一切3D声音
+停止一切 3D 声音
 
 **`Effect`**
 
@@ -385,9 +370,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1185
+Service/index.d.ts:1194
 
-___
+---
 
 ### stopAllSound
 
@@ -395,7 +380,7 @@ ___
 
 **`Description`**
 
-停止除BGM以外的一切2D声音
+停止除 BGM 以外的一切 2D 声音
 
 **`Effect`**
 
@@ -407,9 +392,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1138
+Service/index.d.ts:1147
 
-___
+---
 
 ### stopBGM
 
@@ -429,9 +414,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1150
+Service/index.d.ts:1159
 
-___
+---
 
 ### stopSound
 
@@ -439,7 +424,7 @@ ___
 
 **`Description`**
 
-根据资源Id停止声音
+根据资源 Id 停止声音
 
 **`Effect`**
 
@@ -447,9 +432,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 资源Id |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
+| `resId` | `string` | usage: 资源 Id |
 
 #### Returns
 
@@ -457,9 +442,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1133
+Service/index.d.ts:1142
 
-___
+---
 
 ### getInstance
 
@@ -481,4 +466,4 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:1103
+Service/index.d.ts:1117

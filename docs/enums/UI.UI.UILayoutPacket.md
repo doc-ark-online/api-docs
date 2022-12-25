@@ -26,106 +26,106 @@
 
 ### CenterBottom
 
-• **CenterBottom** = ``8``
+• **CenterBottom** = `8`
 
 中下对齐
 
 #### Defined in
 
-UI/index.d.ts:3332
+UI/index.d.ts:3341
 
-___
+---
 
 ### CenterCenter
 
-• **CenterCenter** = ``7``
+• **CenterCenter** = `7`
 
 中中对齐
 
 #### Defined in
 
-UI/index.d.ts:3330
+UI/index.d.ts:3339
 
-___
+---
 
 ### CenterTop
 
-• **CenterTop** = ``6``
+• **CenterTop** = `6`
 
 中上对齐
 
 #### Defined in
 
-UI/index.d.ts:3328
+UI/index.d.ts:3337
 
-___
+---
 
 ### LeftBottom
 
-• **LeftBottom** = ``2``
+• **LeftBottom** = `2`
 
 左下对齐
 
 #### Defined in
 
-UI/index.d.ts:3320
+UI/index.d.ts:3329
 
-___
+---
 
 ### LeftCenter
 
-• **LeftCenter** = ``1``
+• **LeftCenter** = `1`
 
 左中对齐
 
 #### Defined in
 
-UI/index.d.ts:3318
+UI/index.d.ts:3327
 
-___
+---
 
 ### LeftTop
 
-• **LeftTop** = ``0``
+• **LeftTop** = `0`
 
 左上对齐
 
 #### Defined in
 
-UI/index.d.ts:3316
+UI/index.d.ts:3325
 
-___
+---
 
 ### RightBottom
 
-• **RightBottom** = ``5``
+• **RightBottom** = `5`
 
 右下对齐
 
 #### Defined in
 
-UI/index.d.ts:3326
+UI/index.d.ts:3335
 
-___
+---
 
 ### RightCenter
 
-• **RightCenter** = ``4``
+• **RightCenter** = `4`
 
 右中对齐
 
 #### Defined in
 
-UI/index.d.ts:3324
+UI/index.d.ts:3333
 
-___
+---
 
 ### RightTop
 
-• **RightTop** = ``3``
+• **RightTop** = `3`
 
 右上对齐
 
 #### Defined in
 
-UI/index.d.ts:3322
+UI/index.d.ts:3331

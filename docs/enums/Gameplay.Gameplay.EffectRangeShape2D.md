@@ -12,42 +12,42 @@
 
 ### Enumeration Members
 
-- [circle](Gameplay.Gameplay.EffectRangeShape2D.md#circle)
-- [rectangle](Gameplay.Gameplay.EffectRangeShape2D.md#rectangle)
-- [sector](Gameplay.Gameplay.EffectRangeShape2D.md#sector)
+- [Circle](Gameplay.Gameplay.EffectRangeShape2D.md#circle)
+- [CircularSector](Gameplay.Gameplay.EffectRangeShape2D.md#circularsector)
+- [Rectangle](Gameplay.Gameplay.EffectRangeShape2D.md#rectangle)
 
 ## Enumeration Members
 
-### circle
+### Circle
 
-• **circle** = ``1``
+• **Circle** = `1`
 
 圆形
 
 #### Defined in
 
-Gameplay/index.d.ts:8505
+Gameplay/index.d.ts:8658
 
-___
+---
 
-### rectangle
+### CircularSector
 
-• **rectangle** = ``0``
-
-矩形
-
-#### Defined in
-
-Gameplay/index.d.ts:8503
-
-___
-
-### sector
-
-• **sector** = ``2``
+• **CircularSector** = `2`
 
 扇形
 
 #### Defined in
 
-Gameplay/index.d.ts:8507
+Gameplay/index.d.ts:8660
+
+---
+
+### Rectangle
+
+• **Rectangle** = `0`
+
+矩形
+
+#### Defined in
+
+Gameplay/index.d.ts:8656

@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V1部位
+人形对象 V1 部位
 
 **`Author`**
 
-邓广
+guang.deng
 
 ## Implemented by
 
@@ -41,13 +41,13 @@
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Defined in
 
-Gameplay/index.d.ts:2668
+Gameplay/index.d.ts:2808
 
-___
+---
 
 ### setWholeBody
 
@@ -59,7 +59,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型 Guid 没有预加载，则 v2 本地设置时异步的
 
 **`Effect`**
 
@@ -68,9 +68,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -79,4 +79,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2662
+Gameplay/index.d.ts:2802

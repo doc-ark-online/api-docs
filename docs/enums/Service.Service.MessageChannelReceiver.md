@@ -22,58 +22,58 @@
 
 ### Client
 
-• **Client** = ``1``
+• **Client** = `1`
 
-平台层，根据移动端平台可能是Android、PC或iOS
+平台层，根据移动端平台可能是 Android、PC 或 iOS
 
 #### Defined in
 
-Service/index.d.ts:273
+Service/index.d.ts:268
 
-___
+---
 
 ### MGS
 
-• **MGS** = ``3``
+• **MGS** = `3`
 
-预留MGS对象，暂时没有实际接入通道
+预留 MGS 对象，暂时没有实际接入通道
 
 #### Defined in
 
-Service/index.d.ts:277
+Service/index.d.ts:272
 
-___
+---
 
 ### MetaWorld
 
-• **MetaWorld** = ``0``
+• **MetaWorld** = `0`
 
-C++层，MetaWorld引擎
+C++层，MetaWorld 引擎
 
 #### Defined in
 
-Service/index.d.ts:271
+Service/index.d.ts:266
 
-___
+---
 
 ### TS
 
-• **TS** = ``2``
+• **TS** = `2`
 
-TS层，游戏项目
+TS 层，游戏项目
 
 #### Defined in
 
-Service/index.d.ts:275
+Service/index.d.ts:270
 
-___
+---
 
 ### WebSocket
 
-• **WebSocket** = ``4``
+• **WebSocket** = `4`
 
-Web层，Room manager（并非DS）
+Web 层，Room manager（并非 DS）
 
 #### Defined in
 
-Service/index.d.ts:279
+Service/index.d.ts:274

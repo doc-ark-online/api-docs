@@ -22,58 +22,58 @@
 
 ### Center
 
-• **Center** = ``3``
+• **Center** = `3`
 
 居中对齐
 
 #### Defined in
 
-UI/index.d.ts:3420
+UI/index.d.ts:3429
 
-___
+---
 
 ### Left
 
-• **Left** = ``0``
+• **Left** = `0`
 
 左对齐
 
 #### Defined in
 
-UI/index.d.ts:3414
+UI/index.d.ts:3423
 
-___
+---
 
 ### LeftRight
 
-• **LeftRight** = ``2``
+• **LeftRight** = `2`
 
 距离左右边距固定
 
 #### Defined in
 
-UI/index.d.ts:3418
+UI/index.d.ts:3427
 
-___
+---
 
 ### Right
 
-• **Right** = ``1``
+• **Right** = `1`
 
 右对齐
 
 #### Defined in
 
-UI/index.d.ts:3416
+UI/index.d.ts:3425
 
-___
+---
 
 ### Scale
 
-• **Scale** = ``4``
+• **Scale** = `4`
 
 距离左右百分比固定
 
 #### Defined in
 
-UI/index.d.ts:3422
+UI/index.d.ts:3431

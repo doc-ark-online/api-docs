@@ -6,7 +6,7 @@
 
 **`Author`**
 
-Hanbaoqiang
+baoqiang.han
 
 **`Description`**
 
@@ -18,7 +18,7 @@ usage:客户端
 
 ## Hierarchy
 
-- [`GameObject`](Core.Core.GameObject.md)
+- `GameObject`
 
   ↳ **`SkyBox`**
 
@@ -30,10 +30,21 @@ usage:客户端
 
 ### Accessors
 
+- [cloudDensity](Gameplay.Gameplay.SkyBox.md#clouddensity)
+- [cloudEnable](Gameplay.Gameplay.SkyBox.md#cloudenable)
+- [cloudEnabled](Gameplay.Gameplay.SkyBox.md#cloudenabled)
+- [cloudOpacity](Gameplay.Gameplay.SkyBox.md#cloudopacity)
+- [cloudSpeed](Gameplay.Gameplay.SkyBox.md#cloudspeed)
+- [cloudTextureAssetByID](Gameplay.Gameplay.SkyBox.md#cloudtextureassetbyid)
+- [cloudTint](Gameplay.Gameplay.SkyBox.md#cloudtint)
 - [forwardVector](Gameplay.Gameplay.SkyBox.md#forwardvector)
 - [guid](Gameplay.Gameplay.SkyBox.md#guid)
-- [isVisible](Gameplay.Gameplay.SkyBox.md#isvisible)
-- [lockState](Gameplay.Gameplay.SkyBox.md#lockstate)
+- [lockStatus](Gameplay.Gameplay.SkyBox.md#lockstatus)
+- [moonEnable](Gameplay.Gameplay.SkyBox.md#moonenable)
+- [moonIntensity](Gameplay.Gameplay.SkyBox.md#moonintensity)
+- [moonSize](Gameplay.Gameplay.SkyBox.md#moonsize)
+- [moonTextureAssetByID](Gameplay.Gameplay.SkyBox.md#moontextureassetbyid)
+- [moonTint](Gameplay.Gameplay.SkyBox.md#moontint)
 - [name](Gameplay.Gameplay.SkyBox.md#name)
 - [netStatus](Gameplay.Gameplay.SkyBox.md#netstatus)
 - [parent](Gameplay.Gameplay.SkyBox.md#parent)
@@ -41,11 +52,30 @@ usage:客户端
 - [relativeRotation](Gameplay.Gameplay.SkyBox.md#relativerotation)
 - [relativeScale](Gameplay.Gameplay.SkyBox.md#relativescale)
 - [rightVector](Gameplay.Gameplay.SkyBox.md#rightvector)
+- [skyDomeBotTint](Gameplay.Gameplay.SkyBox.md#skydomebottint)
+- [skyDomeGradientEnable](Gameplay.Gameplay.SkyBox.md#skydomegradientenable)
+- [skyDomeHorizontalFallOff](Gameplay.Gameplay.SkyBox.md#skydomehorizontalfalloff)
+- [skyDomeHorizontalTint](Gameplay.Gameplay.SkyBox.md#skydomehorizontaltint)
+- [skyDomeIntensity](Gameplay.Gameplay.SkyBox.md#skydomeintensity)
+- [skyDomeTextureAssetByID](Gameplay.Gameplay.SkyBox.md#skydometextureassetbyid)
+- [skyDomeTint](Gameplay.Gameplay.SkyBox.md#skydometint)
+- [skyDomeTopTint](Gameplay.Gameplay.SkyBox.md#skydometoptint)
+- [skyPreset](Gameplay.Gameplay.SkyBox.md#skypreset)
+- [starEnable](Gameplay.Gameplay.SkyBox.md#starenable)
+- [starIntensity](Gameplay.Gameplay.SkyBox.md#starintensity)
+- [starTextureAssetByID](Gameplay.Gameplay.SkyBox.md#startextureassetbyid)
+- [starTiling](Gameplay.Gameplay.SkyBox.md#startiling)
 - [staticStatus](Gameplay.Gameplay.SkyBox.md#staticstatus)
+- [sunEnable](Gameplay.Gameplay.SkyBox.md#sunenable)
+- [sunIntensity](Gameplay.Gameplay.SkyBox.md#sunintensity)
+- [sunSize](Gameplay.Gameplay.SkyBox.md#sunsize)
+- [sunTextureAssetByID](Gameplay.Gameplay.SkyBox.md#suntextureassetbyid)
+- [sunTint](Gameplay.Gameplay.SkyBox.md#suntint)
 - [tag](Gameplay.Gameplay.SkyBox.md#tag)
 - [transform](Gameplay.Gameplay.SkyBox.md#transform)
 - [upVector](Gameplay.Gameplay.SkyBox.md#upvector)
 - [useUpdate](Gameplay.Gameplay.SkyBox.md#useupdate)
+- [visible](Gameplay.Gameplay.SkyBox.md#visible)
 - [worldLocation](Gameplay.Gameplay.SkyBox.md#worldlocation)
 - [worldRotation](Gameplay.Gameplay.SkyBox.md#worldrotation)
 - [worldScale](Gameplay.Gameplay.SkyBox.md#worldscale)
@@ -65,22 +95,8 @@ usage:客户端
 - [getChildByName](Gameplay.Gameplay.SkyBox.md#getchildbyname)
 - [getChildren](Gameplay.Gameplay.SkyBox.md#getchildren)
 - [getChildrenBoxCenter](Gameplay.Gameplay.SkyBox.md#getchildrenboxcenter)
-- [getCloudDensity](Gameplay.Gameplay.SkyBox.md#getclouddensity)
-- [getCloudOpacity](Gameplay.Gameplay.SkyBox.md#getcloudopacity)
-- [getCloudSpeed](Gameplay.Gameplay.SkyBox.md#getcloudspeed)
-- [getCloudTextureAssetID](Gameplay.Gameplay.SkyBox.md#getcloudtextureassetid)
-- [getCloudTint](Gameplay.Gameplay.SkyBox.md#getcloudtint)
 - [getCollision](Gameplay.Gameplay.SkyBox.md#getcollision)
 - [getForwardVector](Gameplay.Gameplay.SkyBox.md#getforwardvector)
-- [getIsCloudEnabled](Gameplay.Gameplay.SkyBox.md#getiscloudenabled)
-- [getIsEnableMoon](Gameplay.Gameplay.SkyBox.md#getisenablemoon)
-- [getIsEnableSkyDomeGradient](Gameplay.Gameplay.SkyBox.md#getisenableskydomegradient)
-- [getIsEnableStar](Gameplay.Gameplay.SkyBox.md#getisenablestar)
-- [getIsEnableSun](Gameplay.Gameplay.SkyBox.md#getisenablesun)
-- [getMoonIntensity](Gameplay.Gameplay.SkyBox.md#getmoonintensity)
-- [getMoonSize](Gameplay.Gameplay.SkyBox.md#getmoonsize)
-- [getMoonTextureAssetID](Gameplay.Gameplay.SkyBox.md#getmoontextureassetid)
-- [getMoonTint](Gameplay.Gameplay.SkyBox.md#getmoontint)
 - [getRelativeLocation](Gameplay.Gameplay.SkyBox.md#getrelativelocation)
 - [getRelativeRotation](Gameplay.Gameplay.SkyBox.md#getrelativerotation)
 - [getRelativeScale](Gameplay.Gameplay.SkyBox.md#getrelativescale)
@@ -88,24 +104,10 @@ usage:客户端
 - [getScriptByGuid](Gameplay.Gameplay.SkyBox.md#getscriptbyguid)
 - [getScriptByName](Gameplay.Gameplay.SkyBox.md#getscriptbyname)
 - [getScripts](Gameplay.Gameplay.SkyBox.md#getscripts)
-- [getSkyDomeBotTint](Gameplay.Gameplay.SkyBox.md#getskydomebottint)
-- [getSkyDomeHorizontalFallOff](Gameplay.Gameplay.SkyBox.md#getskydomehorizontalfalloff)
-- [getSkyDomeHorizontalTint](Gameplay.Gameplay.SkyBox.md#getskydomehorizontaltint)
-- [getSkyDomeIntensity](Gameplay.Gameplay.SkyBox.md#getskydomeintensity)
-- [getSkyDomeTextureAssetID](Gameplay.Gameplay.SkyBox.md#getskydometextureassetid)
-- [getSkyDomeTint](Gameplay.Gameplay.SkyBox.md#getskydometint)
-- [getSkyDomeTopTint](Gameplay.Gameplay.SkyBox.md#getskydometoptint)
-- [getSkyPreset](Gameplay.Gameplay.SkyBox.md#getskypreset)
 - [getSourceAssetGuid](Gameplay.Gameplay.SkyBox.md#getsourceassetguid)
-- [getStarIntensity](Gameplay.Gameplay.SkyBox.md#getstarintensity)
-- [getStarTextureAssetID](Gameplay.Gameplay.SkyBox.md#getstartextureassetid)
-- [getStarTiling](Gameplay.Gameplay.SkyBox.md#getstartiling)
-- [getSunIntensity](Gameplay.Gameplay.SkyBox.md#getsunintensity)
-- [getSunSize](Gameplay.Gameplay.SkyBox.md#getsunsize)
-- [getSunTextureAssetID](Gameplay.Gameplay.SkyBox.md#getsuntextureassetid)
-- [getSunTint](Gameplay.Gameplay.SkyBox.md#getsuntint)
 - [getTransform](Gameplay.Gameplay.SkyBox.md#gettransform)
 - [getUpVector](Gameplay.Gameplay.SkyBox.md#getupvector)
+- [getVisibility](Gameplay.Gameplay.SkyBox.md#getvisibility)
 - [getWorldLocation](Gameplay.Gameplay.SkyBox.md#getworldlocation)
 - [getWorldRotation](Gameplay.Gameplay.SkyBox.md#getworldrotation)
 - [getWorldScale](Gameplay.Gameplay.SkyBox.md#getworldscale)
@@ -116,40 +118,11 @@ usage:客户端
 - [ready](Gameplay.Gameplay.SkyBox.md#ready)
 - [refresh](Gameplay.Gameplay.SkyBox.md#refresh)
 - [reset](Gameplay.Gameplay.SkyBox.md#reset)
-- [setCloudDensity](Gameplay.Gameplay.SkyBox.md#setclouddensity)
-- [setCloudOpacity](Gameplay.Gameplay.SkyBox.md#setcloudopacity)
-- [setCloudSpeed](Gameplay.Gameplay.SkyBox.md#setcloudspeed)
-- [setCloudTextureAssetByID](Gameplay.Gameplay.SkyBox.md#setcloudtextureassetbyid)
 - [setCollision](Gameplay.Gameplay.SkyBox.md#setcollision)
-- [setDaSetCloudTintyTime](Gameplay.Gameplay.SkyBox.md#setdasetcloudtintytime)
-- [setIsEnableCloud](Gameplay.Gameplay.SkyBox.md#setisenablecloud)
-- [setIsEnableMoon](Gameplay.Gameplay.SkyBox.md#setisenablemoon)
-- [setIsEnableSkyDomeGradient](Gameplay.Gameplay.SkyBox.md#setisenableskydomegradient)
-- [setIsEnableStar](Gameplay.Gameplay.SkyBox.md#setisenablestar)
-- [setIsEnableSun](Gameplay.Gameplay.SkyBox.md#setisenablesun)
 - [setLocationAndRotation](Gameplay.Gameplay.SkyBox.md#setlocationandrotation)
-- [setMoonIntensity](Gameplay.Gameplay.SkyBox.md#setmoonintensity)
-- [setMoonSize](Gameplay.Gameplay.SkyBox.md#setmoonsize)
-- [setMoonTextureAssetByID](Gameplay.Gameplay.SkyBox.md#setmoontextureassetbyid)
-- [setMoonTint](Gameplay.Gameplay.SkyBox.md#setmoontint)
 - [setRelativeLocation](Gameplay.Gameplay.SkyBox.md#setrelativelocation)
 - [setRelativeRotation](Gameplay.Gameplay.SkyBox.md#setrelativerotation)
 - [setRelativeScale](Gameplay.Gameplay.SkyBox.md#setrelativescale)
-- [setSkyDomeBotTint](Gameplay.Gameplay.SkyBox.md#setskydomebottint)
-- [setSkyDomeHorizontalFallOff](Gameplay.Gameplay.SkyBox.md#setskydomehorizontalfalloff)
-- [setSkyDomeHorizontalTint](Gameplay.Gameplay.SkyBox.md#setskydomehorizontaltint)
-- [setSkyDomeIntensity](Gameplay.Gameplay.SkyBox.md#setskydomeintensity)
-- [setSkyDomeTextureAssetByID](Gameplay.Gameplay.SkyBox.md#setskydometextureassetbyid)
-- [setSkyDomeTint](Gameplay.Gameplay.SkyBox.md#setskydometint)
-- [setSkyDomeTopTint](Gameplay.Gameplay.SkyBox.md#setskydometoptint)
-- [setSkyPreset](Gameplay.Gameplay.SkyBox.md#setskypreset)
-- [setStarIntensity](Gameplay.Gameplay.SkyBox.md#setstarintensity)
-- [setStarTextureAssetByID](Gameplay.Gameplay.SkyBox.md#setstartextureassetbyid)
-- [setStarTiling](Gameplay.Gameplay.SkyBox.md#setstartiling)
-- [setSunIntensity](Gameplay.Gameplay.SkyBox.md#setsunintensity)
-- [setSunSize](Gameplay.Gameplay.SkyBox.md#setsunsize)
-- [setSunTextureAssetByID](Gameplay.Gameplay.SkyBox.md#setsuntextureassetbyid)
-- [setSunTint](Gameplay.Gameplay.SkyBox.md#setsuntint)
 - [setTransform](Gameplay.Gameplay.SkyBox.md#settransform)
 - [setVisibility](Gameplay.Gameplay.SkyBox.md#setvisibility)
 - [setWorldLocation](Gameplay.Gameplay.SkyBox.md#setworldlocation)
@@ -171,9 +144,281 @@ usage:客户端
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[constructor](Core.Core.GameObject.md#constructor)
+Core.GameObject.constructor
 
 ## Accessors
+
+### cloudDensity
+
+• `get` **cloudDensity**(): `number`
+
+**`Description`**
+
+获取云密度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+云密度
+
+#### Defined in
+
+Gameplay/index.d.ts:9754
+
+• `set` **cloudDensity**(`value`): `void`
+
+**`Description`**
+
+设置云密度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description       |
+| :------ | :------- | :---------------- |
+| `value` | `number` | usage:云密度(0~1) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9760
+
+---
+
+### cloudEnable
+
+• `set` **cloudEnable**(`value`): `void`
+
+**`Description`**
+
+设置是否开启云
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type      | Description      |
+| :------ | :-------- | :--------------- |
+| `value` | `boolean` | usage:是否开启云 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9718
+
+---
+
+### cloudEnabled
+
+• `get` **cloudEnabled**(): `boolean`
+
+**`Description`**
+
+获取是否开启云
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+是否开启云
+
+#### Defined in
+
+Gameplay/index.d.ts:9712
+
+---
+
+### cloudOpacity
+
+• `get` **cloudOpacity**(): `number`
+
+**`Description`**
+
+获取云的透明度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+云的透明度
+
+#### Defined in
+
+Gameplay/index.d.ts:9730
+
+• `set` **cloudOpacity**(`value`): `void`
+
+**`Description`**
+
+设置云的透明度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `number` | usage:云的透明度(0~1) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9736
+
+---
+
+### cloudSpeed
+
+• `get` **cloudSpeed**(): `number`
+
+**`Description`**
+
+获取云速度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+云速度
+
+#### Defined in
+
+Gameplay/index.d.ts:9766
+
+• `set` **cloudSpeed**(`value`): `void`
+
+**`Description`**
+
+设置云速度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description        |
+| :------ | :------- | :----------------- |
+| `value` | `number` | usage:云速度(0~10) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9772
+
+---
+
+### cloudTextureAssetByID
+
+• `set` **cloudTextureAssetByID**(`value`): `void`
+
+**`Description`**
+
+设置云贴图资源 ID
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description         |
+| :------ | :------- | :------------------ |
+| `value` | `string` | usage:云贴图资源 ID |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9724
+
+---
+
+### cloudTint
+
+• `get` **cloudTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取云颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+云颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9742
+
+• `set` **cloudTint**(`value`): `void`
+
+**`Description`**
+
+设置云颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description  |
+| :------ | :---------------------------------------- | :----------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:云颜色 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9748
+
+---
 
 ### forwardVector
 
@@ -199,7 +444,7 @@ Core.GameObject.forwardVector
 
 #### Defined in
 
-Core/index.d.ts:405
+Core/index.d.ts:409
 
 ---
 
@@ -225,45 +470,17 @@ Core.GameObject.guid
 
 #### Defined in
 
-Core/index.d.ts:38
+Core/index.d.ts:39
 
 ---
 
-### isVisible
+### lockStatus
 
-• `get` **isVisible**(): `boolean`
-
-**`Description`**
-
-获取当前物体是否显示
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-bool
-
-#### Inherited from
-
-Core.GameObject.isVisible
-
-#### Defined in
-
-Core/index.d.ts:496
-
----
-
-### lockState
-
-• `get` **lockState**(): `boolean`
+• `get` **lockStatus**(): `boolean`
 
 **`Description`**
 
-获取是否锁定
+获取对象是否锁定
 
 **`Effect`**
 
@@ -275,17 +492,17 @@ Core/index.d.ts:496
 
 #### Inherited from
 
-Core.GameObject.lockState
+Core.GameObject.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:452
+Core/index.d.ts:456
 
-• `set` **lockState**(`v`): `void`
+• `set` **lockStatus**(`v`): `void`
 
 **`Description`**
 
-设置是否锁定
+设置对象是否锁定
 
 **`Effect`**
 
@@ -303,11 +520,231 @@ Core/index.d.ts:452
 
 #### Inherited from
 
-Core.GameObject.lockState
+Core.GameObject.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:447
+Core/index.d.ts:451
+
+---
+
+### moonEnable
+
+• `get` **moonEnable**(): `boolean`
+
+**`Description`**
+
+获取是否开启月亮
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+是否开启月亮
+
+#### Defined in
+
+Gameplay/index.d.ts:9658
+
+• `set` **moonEnable**(`value`): `void`
+
+**`Description`**
+
+设置是否开启月亮
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
+| `value` | `boolean` | usage:是否开启月亮 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9664
+
+---
+
+### moonIntensity
+
+• `get` **moonIntensity**(): `number`
+
+**`Description`**
+
+获取月亮亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+月亮亮度
+
+#### Defined in
+
+Gameplay/index.d.ts:9676
+
+• `set` **moonIntensity**(`value`): `void`
+
+**`Description`**
+
+设置月亮亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description            |
+| :------ | :------- | :--------------------- |
+| `value` | `number` | usage:月亮亮度(0~2000) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9682
+
+---
+
+### moonSize
+
+• `get` **moonSize**(): `number`
+
+**`Description`**
+
+获取月亮大小
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+月亮大小
+
+#### Defined in
+
+Gameplay/index.d.ts:9700
+
+• `set` **moonSize**(`value`): `void`
+
+**`Description`**
+
+设置月亮大小
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `number` | usage:月亮大小(0~100) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9706
+
+---
+
+### moonTextureAssetByID
+
+• `set` **moonTextureAssetByID**(`value`): `void`
+
+**`Description`**
+
+设置月亮贴图资源 ID
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `string` | usage:月亮贴图资源 ID |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9670
+
+---
+
+### moonTint
+
+• `get` **moonTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取月亮颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+月亮颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9688
+
+• `set` **moonTint**(`value`): `void`
+
+**`Description`**
+
+设置月亮颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description    |
+| :------ | :---------------------------------------- | :------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:月亮颜色 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9694
 
 ---
 
@@ -335,7 +772,7 @@ Core.GameObject.name
 
 #### Defined in
 
-Core/index.d.ts:167
+Core/index.d.ts:171
 
 • `set` **name**(`name`): `void`
 
@@ -363,7 +800,7 @@ Core.GameObject.name
 
 #### Defined in
 
-Core/index.d.ts:173
+Core/index.d.ts:177
 
 ---
 
@@ -391,13 +828,13 @@ Core.GameObject.netStatus
 
 #### Defined in
 
-Core/index.d.ts:502
+Core/index.d.ts:513
 
 ---
 
 ### parent
 
-• `get` **parent**(): [`GameObject`](Core.Core.GameObject.md)
+• `get` **parent**(): `GameObject`
 
 **`Description`**
 
@@ -409,7 +846,7 @@ Core/index.d.ts:502
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 父物体
 
@@ -419,7 +856,7 @@ Core.GameObject.parent
 
 #### Defined in
 
-Core/index.d.ts:458
+Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -433,9 +870,9 @@ Core/index.d.ts:458
 
 #### Parameters
 
-| Name        | Type                                    |
-| :---------- | :-------------------------------------- |
-| `newParent` | [`GameObject`](Core.Core.GameObject.md) |
+| Name        | Type         |
+| :---------- | :----------- |
+| `newParent` | `GameObject` |
 
 #### Returns
 
@@ -447,7 +884,7 @@ Core.GameObject.parent
 
 #### Defined in
 
-Core/index.d.ts:463
+Core/index.d.ts:467
 
 ---
 
@@ -475,7 +912,7 @@ Core.GameObject.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:304
+Core/index.d.ts:308
 
 • `set` **relativeLocation**(`location`): `void`
 
@@ -503,7 +940,7 @@ Core.GameObject.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:310
+Core/index.d.ts:314
 
 ---
 
@@ -531,7 +968,7 @@ Core.GameObject.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:330
+Core/index.d.ts:334
 
 • `set` **relativeRotation**(`rotation`): `void`
 
@@ -559,7 +996,7 @@ Core.GameObject.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:336
+Core/index.d.ts:340
 
 ---
 
@@ -587,7 +1024,7 @@ Core.GameObject.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:356
+Core/index.d.ts:360
 
 • `set` **relativeScale**(`scale`): `void`
 
@@ -615,7 +1052,7 @@ Core.GameObject.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:362
+Core/index.d.ts:366
 
 ---
 
@@ -643,7 +1080,591 @@ Core.GameObject.rightVector
 
 #### Defined in
 
-Core/index.d.ts:419
+Core/index.d.ts:423
+
+---
+
+### skyDomeBotTint
+
+• `get` **skyDomeBotTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+天空下层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+天空下层颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9538
+
+• `set` **skyDomeBotTint**(`value`): `void`
+
+**`Description`**
+
+设置天空下层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description          |
+| :------ | :---------------------------------------- | :------------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空下层颜色值 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9544
+
+---
+
+### skyDomeGradientEnable
+
+• `get` **skyDomeGradientEnable**(): `boolean`
+
+**`Description`**
+
+获取是否开启渐变效果
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+是否开启渐变效果
+
+#### Defined in
+
+Gameplay/index.d.ts:9502
+
+• `set` **skyDomeGradientEnable**(`value`): `void`
+
+**`Description`**
+
+设置是否开启渐变效果
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type      | Description            |
+| :------ | :-------- | :--------------------- |
+| `value` | `boolean` | usage:是否开启渐变效果 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9508
+
+---
+
+### skyDomeHorizontalFallOff
+
+• `get` **skyDomeHorizontalFallOff**(): `number`
+
+**`Description`**
+
+获取地平线渐出值
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+地平线渐出值
+
+#### Defined in
+
+Gameplay/index.d.ts:9550
+
+• `set` **skyDomeHorizontalFallOff**(`value`): `void`
+
+**`Description`**
+
+设置地平线渐出值
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description              |
+| :------ | :------- | :----------------------- |
+| `value` | `number` | usage:地平线渐出值(1~20) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9556
+
+---
+
+### skyDomeHorizontalTint
+
+• `get` **skyDomeHorizontalTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+天空中层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+天空中层颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9526
+
+• `set` **skyDomeHorizontalTint**(`value`): `void`
+
+**`Description`**
+
+设置天空中层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description          |
+| :------ | :---------------------------------------- | :------------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空中层颜色值 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9532
+
+---
+
+### skyDomeIntensity
+
+• `get` **skyDomeIntensity**(): `number`
+
+**`Description`**
+
+获取天空球亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+天空球亮度
+
+#### Defined in
+
+Gameplay/index.d.ts:9478
+
+• `set` **skyDomeIntensity**(`value`): `void`
+
+**`Description`**
+
+设置天空球亮度 3
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description               |
+| :------ | :------- | :------------------------ |
+| `value` | `number` | usage:天空球亮度值(0~100) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9484
+
+---
+
+### skyDomeTextureAssetByID
+
+• `set` **skyDomeTextureAssetByID**(`value`): `void`
+
+**`Description`**
+
+设置天空球贴图
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description   |
+| :------ | :------- | :------------ |
+| `value` | `string` | usage:贴图 ID |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9472
+
+---
+
+### skyDomeTint
+
+• `get` **skyDomeTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取天空球颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+天空球颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9490
+
+• `set` **skyDomeTint**(`value`): `void`
+
+**`Description`**
+
+设置天空球颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description        |
+| :------ | :---------------------------------------- | :----------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空球颜色值 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9496
+
+---
+
+### skyDomeTopTint
+
+• `get` **skyDomeTopTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取天空顶层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+天空顶层颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9514
+
+• `set` **skyDomeTopTint**(`value`): `void`
+
+**`Description`**
+
+设置天空顶层颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description          |
+| :------ | :---------------------------------------- | :------------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空顶层颜色值 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9520
+
+---
+
+### skyPreset
+
+• `get` **skyPreset**(): `number`
+
+**`Description`**
+
+获取预设
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+返回预设
+
+#### Defined in
+
+Gameplay/index.d.ts:9450
+
+• `set` **skyPreset**(`NewPreset`): `void`
+
+**`Description`**
+
+设置预设
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name        | Type                                                   | Description    |
+| :---------- | :----------------------------------------------------- | :------------- |
+| `NewPreset` | [`SkyPreset`](../enums/Gameplay.Gameplay.SkyPreset.md) | usage:预设枚举 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9456
+
+---
+
+### starEnable
+
+• `get` **starEnable**(): `boolean`
+
+**`Description`**
+
+获取是否开启星星
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+是否开启星星
+
+#### Defined in
+
+Gameplay/index.d.ts:9562
+
+• `set` **starEnable**(`value`): `void`
+
+**`Description`**
+
+设置是否开启星星
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
+| `value` | `boolean` | usage:是否开启星星 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9568
+
+---
+
+### starIntensity
+
+• `get` **starIntensity**(): `number`
+
+**`Description`**
+
+获取星星亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+星星亮度
+
+#### Defined in
+
+Gameplay/index.d.ts:9580
+
+• `set` **starIntensity**(`value`): `void`
+
+**`Description`**
+
+设置星星亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description         |
+| :------ | :------- | :------------------ |
+| `value` | `number` | usage:星星亮度(0~1) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9586
+
+---
+
+### starTextureAssetByID
+
+• `set` **starTextureAssetByID**(`value`): `void`
+
+**`Description`**
+
+设置星星贴图资源 ID
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `string` | usage:星星贴图资源 ID |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9574
+
+---
+
+### starTiling
+
+• `get` **starTiling**(): `number`
+
+**`Description`**
+
+获取星星密度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+星星密度
+
+#### Defined in
+
+Gameplay/index.d.ts:9592
+
+• `set` **starTiling**(`value`): `void`
+
+**`Description`**
+
+设置星星密度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `number` | usage:星星密度(0~100) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9598
 
 ---
 
@@ -653,7 +1674,7 @@ Core/index.d.ts:419
 
 **`Description`**
 
-获取是否静态
+获取对象是否静态
 
 **`Effect`**
 
@@ -669,7 +1690,227 @@ Core.GameObject.staticStatus
 
 #### Defined in
 
-Core/index.d.ts:442
+Core/index.d.ts:446
+
+---
+
+### sunEnable
+
+• `get` **sunEnable**(): `boolean`
+
+**`Description`**
+
+获取是否开启太阳
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+是否开启太阳
+
+#### Defined in
+
+Gameplay/index.d.ts:9604
+
+• `set` **sunEnable**(`value`): `void`
+
+**`Description`**
+
+设置是否开启太阳
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
+| `value` | `boolean` | usage:是否开启太阳 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9610
+
+---
+
+### sunIntensity
+
+• `get` **sunIntensity**(): `number`
+
+**`Description`**
+
+获取太阳光亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+太阳光亮度
+
+#### Defined in
+
+Gameplay/index.d.ts:9622
+
+• `set` **sunIntensity**(`value`): `void`
+
+**`Description`**
+
+设置太阳光亮度
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description              |
+| :------ | :------- | :----------------------- |
+| `value` | `number` | usage:太阳光亮度(0~2000) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9628
+
+---
+
+### sunSize
+
+• `get` **sunSize**(): `number`
+
+**`Description`**
+
+获取太阳大小
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+`number`
+
+太阳大小
+
+#### Defined in
+
+Gameplay/index.d.ts:9646
+
+• `set` **sunSize**(`value`): `void`
+
+**`Description`**
+
+设置太阳大小
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `number` | usage:太阳大小(0~100) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9652
+
+---
+
+### sunTextureAssetByID
+
+• `set` **sunTextureAssetByID**(`value`): `void`
+
+**`Description`**
+
+设置太阳贴图资源 ID
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type     | Description           |
+| :------ | :------- | :-------------------- |
+| `value` | `string` | usage:太阳贴图资源 ID |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9616
+
+---
+
+### sunTint
+
+• `get` **sunTint**(): [`LinearColor`](Type.Type.LinearColor.md)
+
+**`Description`**
+
+获取太阳颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.Type.LinearColor.md)
+
+太阳颜色
+
+#### Defined in
+
+Gameplay/index.d.ts:9634
+
+• `set` **sunTint**(`value`): `void`
+
+**`Description`**
+
+设置太阳颜色
+
+**`Effect`**
+
+客户端生效
+
+#### Parameters
+
+| Name    | Type                                      | Description    |
+| :------ | :---------------------------------------- | :------------- |
+| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:太阳颜色 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:9640
 
 ---
 
@@ -697,7 +1938,7 @@ Core.GameObject.tag
 
 #### Defined in
 
-Core/index.d.ts:185
+Core/index.d.ts:189
 
 • `set` **tag**(`tag`): `void`
 
@@ -725,7 +1966,7 @@ Core.GameObject.tag
 
 #### Defined in
 
-Core/index.d.ts:179
+Core/index.d.ts:183
 
 ---
 
@@ -753,7 +1994,7 @@ Core.GameObject.transform
 
 #### Defined in
 
-Core/index.d.ts:205
+Core/index.d.ts:209
 
 • `set` **transform**(`transform`): `void`
 
@@ -781,7 +2022,7 @@ Core.GameObject.transform
 
 #### Defined in
 
-Core/index.d.ts:211
+Core/index.d.ts:215
 
 ---
 
@@ -809,7 +2050,7 @@ Core.GameObject.upVector
 
 #### Defined in
 
-Core/index.d.ts:392
+Core/index.d.ts:396
 
 ---
 
@@ -819,7 +2060,7 @@ Core/index.d.ts:392
 
 **`Description`**
 
-是否使用更新
+获取对象是否使用更新
 
 **`Effect`**
 
@@ -835,13 +2076,13 @@ Core.GameObject.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:437
+Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
 **`Description`**
 
-是否使用更新
+设置对象是否使用更新
 
 **`Effect`**
 
@@ -863,7 +2104,39 @@ Core.GameObject.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:432
+Core/index.d.ts:436
+
+---
+
+### visible
+
+• `get` **visible**(): `boolean`
+
+**`Deprecated`**
+
+since:v0.20.0 reason:api 重构 replacement:getVisibility()
+
+**`Description`**
+
+获取当前物体是否显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.GameObject.visible
+
+#### Defined in
+
+Core/index.d.ts:507
 
 ---
 
@@ -889,7 +2162,7 @@ Core.GameObject.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:230
+Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -917,7 +2190,7 @@ Core.GameObject.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:235
+Core/index.d.ts:239
 
 ---
 
@@ -943,7 +2216,7 @@ Core.GameObject.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:254
+Core/index.d.ts:258
 
 • `set` **worldRotation**(`rotation`): `void`
 
@@ -971,7 +2244,7 @@ Core.GameObject.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:260
+Core/index.d.ts:264
 
 ---
 
@@ -997,7 +2270,7 @@ Core.GameObject.worldScale
 
 #### Defined in
 
-Core/index.d.ts:279
+Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -1025,7 +2298,7 @@ Core.GameObject.worldScale
 
 #### Defined in
 
-Core/index.d.ts:284
+Core/index.d.ts:288
 
 ## Methods
 
@@ -1053,11 +2326,11 @@ Core/index.d.ts:284
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[addDestroyCallback](Core.Core.GameObject.md#adddestroycallback)
+Core.GameObject.addDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:616
+Core/index.d.ts:627
 
 ---
 
@@ -1087,11 +2360,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncGetScriptByName](Core.Core.GameObject.md#asyncgetscriptbyname)
+Core.GameObject.asyncGetScriptByName
 
 #### Defined in
 
-Core/index.d.ts:563
+Core/index.d.ts:574
 
 ---
 
@@ -1109,9 +2382,9 @@ Core/index.d.ts:563
 
 #### Parameters
 
-| Name  | Type                                    | Description |
-| :---- | :-------------------------------------- | :---------- |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体  |
+| Name  | Type         | Description |
+| :---- | :----------- | :---------- |
+| `obj` | `GameObject` | usage:物体  |
 
 #### Returns
 
@@ -1119,17 +2392,17 @@ Core/index.d.ts:563
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[attachToGameObject](Core.Core.GameObject.md#attachtogameobject)
+Core.GameObject.attachToGameObject
 
 #### Defined in
 
-Core/index.d.ts:583
+Core/index.d.ts:594
 
 ---
 
 ### clone
 
-▸ **clone**(`inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ **clone**(`inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -1147,17 +2420,17 @@ Core/index.d.ts:583
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 克隆的对象
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[clone](Core.Core.GameObject.md#clone)
+Core.GameObject.clone
 
 #### Defined in
 
-Core/index.d.ts:543
+Core/index.d.ts:554
 
 ---
 
@@ -1185,11 +2458,11 @@ Core/index.d.ts:543
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[deleteDestroyCallback](Core.Core.GameObject.md#deletedestroycallback)
+Core.GameObject.deleteDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:622
+Core/index.d.ts:633
 
 ---
 
@@ -1211,11 +2484,11 @@ Core/index.d.ts:622
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[destroy](Core.Core.GameObject.md#destroy)
+Core.GameObject.destroy
 
 #### Defined in
 
-Core/index.d.ts:146
+Core/index.d.ts:150
 
 ---
 
@@ -1237,11 +2510,11 @@ Core/index.d.ts:146
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[detachFromGameObject](Core.Core.GameObject.md#detachfromgameobject)
+Core.GameObject.detachFromGameObject
 
 #### Defined in
 
-Core/index.d.ts:588
+Core/index.d.ts:599
 
 ---
 
@@ -1277,11 +2550,11 @@ Type.Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getBoundingBoxSize](Core.Core.GameObject.md#getboundingboxsize)
+Core.GameObject.getBoundingBoxSize
 
 #### Defined in
 
-Core/index.d.ts:598
+Core/index.d.ts:609
 
 ---
 
@@ -1291,7 +2564,7 @@ Core/index.d.ts:598
 
 **`Description`**
 
-获取 Gameobject 边界
+获取 GameObject 边界
 
 **`Effect`**
 
@@ -1302,8 +2575,8 @@ Core/index.d.ts:598
 | Name                      | Type                            | Description                                      |
 | :------------------------ | :------------------------------ | :----------------------------------------------- |
 | `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 尺寸的一半。   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
 | `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
 
 #### Returns
@@ -1312,17 +2585,17 @@ Core/index.d.ts:598
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getBounds](Core.Core.GameObject.md#getbounds)
+Core.GameObject.getBounds
 
 #### Defined in
 
-Core/index.d.ts:194
+Core/index.d.ts:198
 
 ---
 
 ### getChildByGuid
 
-▸ **getChildByGuid**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByGuid**(`guid`): `GameObject`
 
 **`Description`**
 
@@ -1340,23 +2613,23 @@ Core/index.d.ts:194
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildByGuid](Core.Core.GameObject.md#getchildbyguid)
+Core.GameObject.getChildByGuid
 
 #### Defined in
 
-Core/index.d.ts:536
+Core/index.d.ts:547
 
 ---
 
 ### getChildByName
 
-▸ **getChildByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -1374,27 +2647,27 @@ Core/index.d.ts:536
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildByName](Core.Core.GameObject.md#getchildbyname)
+Core.GameObject.getChildByName
 
 #### Defined in
 
-Core/index.d.ts:529
+Core/index.d.ts:540
 
 ---
 
 ### getChildren
 
-▸ **getChildren**(): [`GameObject`](Core.Core.GameObject.md)[]
+▸ **getChildren**(): `GameObject`[]
 
 **`Description`**
 
-获取 Children 客户端不维系父子关系 推荐使用 Find 替代
+获取 Children，客户端不维系父子关系。推荐使用 Find 替代
 
 **`Effect`**
 
@@ -1402,17 +2675,17 @@ Core/index.d.ts:529
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildren](Core.Core.GameObject.md#getchildren)
+Core.GameObject.getChildren
 
 #### Defined in
 
-Core/index.d.ts:522
+Core/index.d.ts:533
 
 ---
 
@@ -1446,131 +2719,11 @@ Type.Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildrenBoxCenter](Core.Core.GameObject.md#getchildrenboxcenter)
+Core.GameObject.getChildrenBoxCenter
 
 #### Defined in
 
-Core/index.d.ts:610
-
----
-
-### getCloudDensity
-
-▸ **getCloudDensity**(): `number`
-
-**`Description`**
-
-获取云密度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-云密度
-
-#### Defined in
-
-Gameplay/index.d.ts:9679
-
----
-
-### getCloudOpacity
-
-▸ **getCloudOpacity**(): `number`
-
-**`Description`**
-
-获取云的透明度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-云的透明度
-
-#### Defined in
-
-Gameplay/index.d.ts:9655
-
----
-
-### getCloudSpeed
-
-▸ **getCloudSpeed**(): `number`
-
-**`Description`**
-
-获取云速度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-云速度
-
-#### Defined in
-
-Gameplay/index.d.ts:9691
-
----
-
-### getCloudTextureAssetID
-
-▸ **getCloudTextureAssetID**(): `string`
-
-**`Description`**
-
-获取云贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`string`
-
-云贴图资源 ID
-
-#### Defined in
-
-Gameplay/index.d.ts:9643
-
----
-
-### getCloudTint
-
-▸ **getCloudTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取云颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-云颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9667
+Core/index.d.ts:621
 
 ---
 
@@ -1594,11 +2747,11 @@ Gameplay/index.d.ts:9667
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getCollision](Core.Core.GameObject.md#getcollision)
+Core.GameObject.getCollision
 
 #### Defined in
 
-Core/index.d.ts:480
+Core/index.d.ts:484
 
 ---
 
@@ -1632,227 +2785,11 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getForwardVector](Core.Core.GameObject.md#getforwardvector)
+Core.GameObject.getForwardVector
 
 #### Defined in
 
-Core/index.d.ts:413
-
----
-
-### getIsCloudEnabled
-
-▸ **getIsCloudEnabled**(): `boolean`
-
-**`Description`**
-
-获取是否开启云
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`boolean`
-
-是否开启云
-
-#### Defined in
-
-Gameplay/index.d.ts:9631
-
----
-
-### getIsEnableMoon
-
-▸ **getIsEnableMoon**(): `boolean`
-
-**`Description`**
-
-获取是否开启月亮
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`boolean`
-
-是否开启月亮
-
-#### Defined in
-
-Gameplay/index.d.ts:9571
-
----
-
-### getIsEnableSkyDomeGradient
-
-▸ **getIsEnableSkyDomeGradient**(): `boolean`
-
-**`Description`**
-
-获取是否开启渐变效果
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`boolean`
-
-是否开启渐变效果
-
-#### Defined in
-
-Gameplay/index.d.ts:9403
-
----
-
-### getIsEnableStar
-
-▸ **getIsEnableStar**(): `boolean`
-
-**`Description`**
-
-获取是否开启星星
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`boolean`
-
-是否开启星星
-
-#### Defined in
-
-Gameplay/index.d.ts:9463
-
----
-
-### getIsEnableSun
-
-▸ **getIsEnableSun**(): `boolean`
-
-**`Description`**
-
-获取是否开启太阳
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`boolean`
-
-是否开启太阳
-
-#### Defined in
-
-Gameplay/index.d.ts:9511
-
----
-
-### getMoonIntensity
-
-▸ **getMoonIntensity**(): `number`
-
-**`Description`**
-
-获取月亮亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-月亮亮度
-
-#### Defined in
-
-Gameplay/index.d.ts:9595
-
----
-
-### getMoonSize
-
-▸ **getMoonSize**(): `number`
-
-**`Description`**
-
-获取月亮大小
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-月亮大小
-
-#### Defined in
-
-Gameplay/index.d.ts:9619
-
----
-
-### getMoonTextureAssetID
-
-▸ **getMoonTextureAssetID**(): `string`
-
-**`Description`**
-
-获取月亮贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`string`
-
-月亮贴图资源 ID
-
-#### Defined in
-
-Gameplay/index.d.ts:9583
-
----
-
-### getMoonTint
-
-▸ **getMoonTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取月亮颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-月亮颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9607
+Core/index.d.ts:417
 
 ---
 
@@ -1886,11 +2823,11 @@ Gameplay/index.d.ts:9607
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeLocation](Core.Core.GameObject.md#getrelativelocation)
+Core.GameObject.getRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:318
+Core/index.d.ts:322
 
 ---
 
@@ -1924,11 +2861,11 @@ Core/index.d.ts:318
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeRotation](Core.Core.GameObject.md#getrelativerotation)
+Core.GameObject.getRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:344
+Core/index.d.ts:348
 
 ---
 
@@ -1962,11 +2899,11 @@ Core/index.d.ts:344
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeScale](Core.Core.GameObject.md#getrelativescale)
+Core.GameObject.getRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:370
+Core/index.d.ts:374
 
 ---
 
@@ -2000,11 +2937,11 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRightVector](Core.Core.GameObject.md#getrightvector)
+Core.GameObject.getRightVector
 
 #### Defined in
 
-Core/index.d.ts:427
+Core/index.d.ts:431
 
 ---
 
@@ -2034,11 +2971,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScriptByGuid](Core.Core.GameObject.md#getscriptbyguid)
+Core.GameObject.getScriptByGuid
 
 #### Defined in
 
-Core/index.d.ts:570
+Core/index.d.ts:581
 
 ---
 
@@ -2068,11 +3005,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScriptByName](Core.Core.GameObject.md#getscriptbyname)
+Core.GameObject.getScriptByName
 
 #### Defined in
 
-Core/index.d.ts:556
+Core/index.d.ts:567
 
 ---
 
@@ -2092,207 +3029,15 @@ Core/index.d.ts:556
 
 `Script`[]
 
-Array\<Script\>
+Array<Script>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScripts](Core.Core.GameObject.md#getscripts)
+Core.GameObject.getScripts
 
 #### Defined in
 
-Core/index.d.ts:549
-
----
-
-### getSkyDomeBotTint
-
-▸ **getSkyDomeBotTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-天空下层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-天空下层颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9439
-
----
-
-### getSkyDomeHorizontalFallOff
-
-▸ **getSkyDomeHorizontalFallOff**(): `number`
-
-**`Description`**
-
-获取地平线渐出值
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-地平线渐出值
-
-#### Defined in
-
-Gameplay/index.d.ts:9451
-
----
-
-### getSkyDomeHorizontalTint
-
-▸ **getSkyDomeHorizontalTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-天空中层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-天空中层颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9427
-
----
-
-### getSkyDomeIntensity
-
-▸ **getSkyDomeIntensity**(): `number`
-
-**`Description`**
-
-获取天空球亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-天空球亮度
-
-#### Defined in
-
-Gameplay/index.d.ts:9379
-
----
-
-### getSkyDomeTextureAssetID
-
-▸ **getSkyDomeTextureAssetID**(): `string`
-
-**`Description`**
-
-获取天空球贴图 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`string`
-
-天空球贴图
-
-#### Defined in
-
-Gameplay/index.d.ts:9367
-
----
-
-### getSkyDomeTint
-
-▸ **getSkyDomeTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取天空球颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-天空球颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9391
-
----
-
-### getSkyDomeTopTint
-
-▸ **getSkyDomeTopTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取天空顶层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-天空顶层颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9415
-
----
-
-### getSkyPreset
-
-▸ **getSkyPreset**(): `number`
-
-**`Description`**
-
-获取预设
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-返回预设
-
-#### Defined in
-
-Gameplay/index.d.ts:9345
+Core/index.d.ts:560
 
 ---
 
@@ -2316,179 +3061,11 @@ Gameplay/index.d.ts:9345
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getSourceAssetGuid](Core.Core.GameObject.md#getsourceassetguid)
+Core.GameObject.getSourceAssetGuid
 
 #### Defined in
 
-Core/index.d.ts:628
-
----
-
-### getStarIntensity
-
-▸ **getStarIntensity**(): `number`
-
-**`Description`**
-
-获取星星亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-星星亮度
-
-#### Defined in
-
-Gameplay/index.d.ts:9487
-
----
-
-### getStarTextureAssetID
-
-▸ **getStarTextureAssetID**(): `string`
-
-**`Description`**
-
-获取星星贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`string`
-
-星星贴图资源 ID
-
-#### Defined in
-
-Gameplay/index.d.ts:9475
-
----
-
-### getStarTiling
-
-▸ **getStarTiling**(): `number`
-
-**`Description`**
-
-获取星星密度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-星星密度
-
-#### Defined in
-
-Gameplay/index.d.ts:9499
-
----
-
-### getSunIntensity
-
-▸ **getSunIntensity**(): `number`
-
-**`Description`**
-
-获取太阳光亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-太阳光亮度
-
-#### Defined in
-
-Gameplay/index.d.ts:9535
-
----
-
-### getSunSize
-
-▸ **getSunSize**(): `number`
-
-**`Description`**
-
-获取太阳大小
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`number`
-
-太阳大小
-
-#### Defined in
-
-Gameplay/index.d.ts:9559
-
----
-
-### getSunTextureAssetID
-
-▸ **getSunTextureAssetID**(): `string`
-
-**`Description`**
-
-获取太阳贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-`string`
-
-太阳贴图资源 ID
-
-#### Defined in
-
-Gameplay/index.d.ts:9523
-
----
-
-### getSunTint
-
-▸ **getSunTint**(): [`LinearColor`](Type.Type.LinearColor.md)
-
-**`Description`**
-
-获取太阳颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Returns
-
-[`LinearColor`](Type.Type.LinearColor.md)
-
-太阳颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:9547
+Core/index.d.ts:639
 
 ---
 
@@ -2522,11 +3099,11 @@ Transform
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getTransform](Core.Core.GameObject.md#gettransform)
+Core.GameObject.getTransform
 
 #### Defined in
 
-Core/index.d.ts:219
+Core/index.d.ts:223
 
 ---
 
@@ -2556,11 +3133,39 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getUpVector](Core.Core.GameObject.md#getupvector)
+Core.GameObject.getUpVector
 
 #### Defined in
 
-Core/index.d.ts:399
+Core/index.d.ts:403
+
+---
+
+### getVisibility
+
+▸ **getVisibility**(): `boolean`
+
+**`Description`**
+
+获取 GameObject 是否被显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.GameObject.getVisibility
+
+#### Defined in
+
+Core/index.d.ts:490
 
 ---
 
@@ -2594,11 +3199,11 @@ Core/index.d.ts:399
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldLocation](Core.Core.GameObject.md#getworldlocation)
+Core.GameObject.getWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:243
+Core/index.d.ts:247
 
 ---
 
@@ -2632,11 +3237,11 @@ Core/index.d.ts:243
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldRotation](Core.Core.GameObject.md#getworldrotation)
+Core.GameObject.getWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:268
+Core/index.d.ts:272
 
 ---
 
@@ -2670,11 +3275,11 @@ Core/index.d.ts:268
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldScale](Core.Core.GameObject.md#getworldscale)
+Core.GameObject.getWorldScale
 
 #### Defined in
 
-Core/index.d.ts:292
+Core/index.d.ts:296
 
 ---
 
@@ -2698,11 +3303,11 @@ true 为客户端
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[isRunningClient](Core.Core.GameObject.md#isrunningclient)
+Core.GameObject.isRunningClient
 
 #### Defined in
 
-Core/index.d.ts:49
+Core/index.d.ts:50
 
 ---
 
@@ -2724,11 +3329,11 @@ Core/index.d.ts:49
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onDestroy](Core.Core.GameObject.md#ondestroy)
+Core.GameObject.onDestroy
 
 #### Defined in
 
-Core/index.d.ts:17
+Core/index.d.ts:18
 
 ---
 
@@ -2750,11 +3355,11 @@ Core/index.d.ts:17
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onStart](Core.Core.GameObject.md#onstart)
+Core.GameObject.onStart
 
 #### Defined in
 
-Core/index.d.ts:12
+Core/index.d.ts:13
 
 ---
 
@@ -2782,11 +3387,11 @@ Core/index.d.ts:12
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onUpdate](Core.Core.GameObject.md#onupdate)
+Core.GameObject.onUpdate
 
 #### Defined in
 
-Core/index.d.ts:23
+Core/index.d.ts:24
 
 ---
 
@@ -2810,11 +3415,11 @@ GameObject 准备好后返回
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[ready](Core.Core.GameObject.md#ready)
+Core.GameObject.ready
 
 #### Defined in
 
-Core/index.d.ts:122
+Core/index.d.ts:126
 
 ---
 
@@ -2836,7 +3441,7 @@ Core/index.d.ts:122
 
 #### Defined in
 
-Gameplay/index.d.ts:9356
+Gameplay/index.d.ts:9461
 
 ---
 
@@ -2858,119 +3463,7 @@ Gameplay/index.d.ts:9356
 
 #### Defined in
 
-Gameplay/index.d.ts:9361
-
----
-
-### setCloudDensity
-
-▸ **setCloudDensity**(`value`): `void`
-
-**`Description`**
-
-设置云密度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description       |
-| :------ | :------- | :---------------- |
-| `value` | `number` | usage:云密度(0~1) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9685
-
----
-
-### setCloudOpacity
-
-▸ **setCloudOpacity**(`value`): `void`
-
-**`Description`**
-
-设置云的透明度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage:云的透明度(0~1) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9661
-
----
-
-### setCloudSpeed
-
-▸ **setCloudSpeed**(`value`): `void`
-
-**`Description`**
-
-设置云速度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description        |
-| :------ | :------- | :----------------- |
-| `value` | `number` | usage:云速度(0~10) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9697
-
----
-
-### setCloudTextureAssetByID
-
-▸ **setCloudTextureAssetByID**(`value`): `void`
-
-**`Description`**
-
-设置云贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description         |
-| :------ | :------- | :------------------ |
-| `value` | `string` | usage:云贴图资源 ID |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9649
+Gameplay/index.d.ts:9466
 
 ---
 
@@ -3003,179 +3496,11 @@ Gameplay/index.d.ts:9649
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setCollision](Core.Core.GameObject.md#setcollision)
+Core.GameObject.setCollision
 
 #### Defined in
 
-Core/index.d.ts:471
-
----
-
-### setDaSetCloudTintyTime
-
-▸ **setDaSetCloudTintyTime**(`value`): `void`
-
-**`Description`**
-
-设置云颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description  |
-| :------ | :---------------------------------------- | :----------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:云颜色 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9673
-
----
-
-### setIsEnableCloud
-
-▸ **setIsEnableCloud**(`value`): `void`
-
-**`Description`**
-
-设置是否开启云
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type      | Description      |
-| :------ | :-------- | :--------------- |
-| `value` | `boolean` | usage:是否开启云 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9637
-
----
-
-### setIsEnableMoon
-
-▸ **setIsEnableMoon**(`value`): `void`
-
-**`Description`**
-
-设置是否开启月亮
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type      | Description        |
-| :------ | :-------- | :----------------- |
-| `value` | `boolean` | usage:是否开启月亮 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9577
-
----
-
-### setIsEnableSkyDomeGradient
-
-▸ **setIsEnableSkyDomeGradient**(`value`): `void`
-
-**`Description`**
-
-设置是否开启渐变效果
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type      | Description            |
-| :------ | :-------- | :--------------------- |
-| `value` | `boolean` | usage:是否开启渐变效果 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9409
-
----
-
-### setIsEnableStar
-
-▸ **setIsEnableStar**(`value`): `void`
-
-**`Description`**
-
-设置是否开启星星
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type      | Description        |
-| :------ | :-------- | :----------------- |
-| `value` | `boolean` | usage:是否开启星星 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9469
-
----
-
-### setIsEnableSun
-
-▸ **setIsEnableSun**(`value`): `void`
-
-**`Description`**
-
-设置是否开启太阳
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type      | Description        |
-| :------ | :-------- | :----------------- |
-| `value` | `boolean` | usage:是否开启太阳 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9517
+Core/index.d.ts:475
 
 ---
 
@@ -3204,123 +3529,11 @@ Gameplay/index.d.ts:9517
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setLocationAndRotation](Core.Core.GameObject.md#setlocationandrotation)
+Core.GameObject.setLocationAndRotation
 
 #### Defined in
 
-Core/index.d.ts:383
-
----
-
-### setMoonIntensity
-
-▸ **setMoonIntensity**(`value`): `void`
-
-**`Description`**
-
-设置月亮亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description            |
-| :------ | :------- | :--------------------- |
-| `value` | `number` | usage:月亮亮度(0~2000) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9601
-
----
-
-### setMoonSize
-
-▸ **setMoonSize**(`value`): `void`
-
-**`Description`**
-
-设置月亮大小
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage:月亮大小(0~100) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9625
-
----
-
-### setMoonTextureAssetByID
-
-▸ **setMoonTextureAssetByID**(`value`): `void`
-
-**`Description`**
-
-设置月亮贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `string` | usage:月亮贴图资源 ID |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9589
-
----
-
-### setMoonTint
-
-▸ **setMoonTint**(`value`): `void`
-
-**`Description`**
-
-设置月亮颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description    |
-| :------ | :---------------------------------------- | :------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:月亮颜色 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9613
+Core/index.d.ts:387
 
 ---
 
@@ -3348,11 +3561,11 @@ Gameplay/index.d.ts:9613
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeLocation](Core.Core.GameObject.md#setrelativelocation)
+Core.GameObject.setRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:324
+Core/index.d.ts:328
 
 ---
 
@@ -3380,11 +3593,11 @@ Core/index.d.ts:324
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeRotation](Core.Core.GameObject.md#setrelativerotation)
+Core.GameObject.setRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:350
+Core/index.d.ts:354
 
 ---
 
@@ -3412,431 +3625,11 @@ Core/index.d.ts:350
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeScale](Core.Core.GameObject.md#setrelativescale)
+Core.GameObject.setRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:376
-
----
-
-### setSkyDomeBotTint
-
-▸ **setSkyDomeBotTint**(`value`): `void`
-
-**`Description`**
-
-设置天空下层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description          |
-| :------ | :---------------------------------------- | :------------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空下层颜色值 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9445
-
----
-
-### setSkyDomeHorizontalFallOff
-
-▸ **setSkyDomeHorizontalFallOff**(`value`): `void`
-
-**`Description`**
-
-设置地平线渐出值
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description              |
-| :------ | :------- | :----------------------- |
-| `value` | `number` | usage:地平线渐出值(1~20) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9457
-
----
-
-### setSkyDomeHorizontalTint
-
-▸ **setSkyDomeHorizontalTint**(`value`): `void`
-
-**`Description`**
-
-设置天空中层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description          |
-| :------ | :---------------------------------------- | :------------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空中层颜色值 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9433
-
----
-
-### setSkyDomeIntensity
-
-▸ **setSkyDomeIntensity**(`value`): `void`
-
-**`Description`**
-
-设置天空球亮度 3
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description               |
-| :------ | :------- | :------------------------ |
-| `value` | `number` | usage:天空球亮度值(0~100) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9385
-
----
-
-### setSkyDomeTextureAssetByID
-
-▸ **setSkyDomeTextureAssetByID**(`value`): `void`
-
-**`Description`**
-
-设置天空球贴图
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description   |
-| :------ | :------- | :------------ |
-| `value` | `string` | usage:贴图 ID |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9373
-
----
-
-### setSkyDomeTint
-
-▸ **setSkyDomeTint**(`value`): `void`
-
-**`Description`**
-
-设置天空球颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description        |
-| :------ | :---------------------------------------- | :----------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空球颜色值 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9397
-
----
-
-### setSkyDomeTopTint
-
-▸ **setSkyDomeTopTint**(`value`): `void`
-
-**`Description`**
-
-设置天空顶层颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description          |
-| :------ | :---------------------------------------- | :------------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:天空顶层颜色值 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9421
-
----
-
-### setSkyPreset
-
-▸ **setSkyPreset**(`NewPreset`): `void`
-
-**`Description`**
-
-设置预设
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name        | Type                                                   | Description    |
-| :---------- | :----------------------------------------------------- | :------------- |
-| `NewPreset` | [`SkyPreset`](../enums/Gameplay.Gameplay.SkyPreset.md) | usage:预设枚举 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9351
-
----
-
-### setStarIntensity
-
-▸ **setStarIntensity**(`value`): `void`
-
-**`Description`**
-
-设置星星亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description         |
-| :------ | :------- | :------------------ |
-| `value` | `number` | usage:星星亮度(0~1) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9493
-
----
-
-### setStarTextureAssetByID
-
-▸ **setStarTextureAssetByID**(`value`): `void`
-
-**`Description`**
-
-设置星星贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `string` | usage:星星贴图资源 ID |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9481
-
----
-
-### setStarTiling
-
-▸ **setStarTiling**(`value`): `void`
-
-**`Description`**
-
-设置星星密度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage:星星密度(0~100) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9505
-
----
-
-### setSunIntensity
-
-▸ **setSunIntensity**(`value`): `void`
-
-**`Description`**
-
-设置太阳光亮度
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description              |
-| :------ | :------- | :----------------------- |
-| `value` | `number` | usage:太阳光亮度(0~2000) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9541
-
----
-
-### setSunSize
-
-▸ **setSunSize**(`value`): `void`
-
-**`Description`**
-
-设置太阳大小
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage:太阳大小(0~100) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9565
-
----
-
-### setSunTextureAssetByID
-
-▸ **setSunTextureAssetByID**(`value`): `void`
-
-**`Description`**
-
-设置太阳贴图资源 ID
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `string` | usage:太阳贴图资源 ID |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9529
-
----
-
-### setSunTint
-
-▸ **setSunTint**(`value`): `void`
-
-**`Description`**
-
-设置太阳颜色
-
-**`Effect`**
-
-客户端生效
-
-#### Parameters
-
-| Name    | Type                                      | Description    |
-| :------ | :---------------------------------------- | :------------- |
-| `value` | [`LinearColor`](Type.Type.LinearColor.md) | usage:太阳颜色 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:9553
+Core/index.d.ts:380
 
 ---
 
@@ -3864,11 +3657,11 @@ Gameplay/index.d.ts:9553
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setTransform](Core.Core.GameObject.md#settransform)
+Core.GameObject.setTransform
 
 #### Defined in
 
-Core/index.d.ts:225
+Core/index.d.ts:229
 
 ---
 
@@ -3897,11 +3690,11 @@ Core/index.d.ts:225
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setVisibility](Core.Core.GameObject.md#setvisibility)
+Core.GameObject.setVisibility
 
 #### Defined in
 
-Core/index.d.ts:487
+Core/index.d.ts:497
 
 ---
 
@@ -3929,11 +3722,11 @@ Core/index.d.ts:487
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldLocation](Core.Core.GameObject.md#setworldlocation)
+Core.GameObject.setWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:249
+Core/index.d.ts:253
 
 ---
 
@@ -3961,11 +3754,11 @@ Core/index.d.ts:249
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldRotation](Core.Core.GameObject.md#setworldrotation)
+Core.GameObject.setWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:274
+Core/index.d.ts:278
 
 ---
 
@@ -3993,21 +3786,21 @@ Core/index.d.ts:274
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldScale](Core.Core.GameObject.md#setworldscale)
+Core.GameObject.setWorldScale
 
 #### Defined in
 
-Core/index.d.ts:298
+Core/index.d.ts:302
 
 ---
 
 ### asyncFind
 
-▸ `Static` **asyncFind**(`guid`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncFind**(`guid`): `Promise`<`GameObject`\>
 
 **`Description`**
 
-通过 guid 异步查找 Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -4022,23 +3815,23 @@ Core/index.d.ts:298
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 Guid 对应的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncFind](Core.Core.GameObject.md#asyncfind)
+Core.GameObject.asyncFind
 
 #### Defined in
 
-Core/index.d.ts:161
+Core/index.d.ts:165
 
 ---
 
 ### asyncSpawnGameObject
 
-▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\>
 
 **`Description`**
 
@@ -4057,27 +3850,27 @@ Core/index.d.ts:161
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 构造的 GameObject
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncSpawnGameObject](Core.Core.GameObject.md#asyncspawngameobject)
+Core.GameObject.asyncSpawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:138
+Core/index.d.ts:142
 
 ---
 
 ### find
 
-▸ `Static` **find**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **find**(`guid`): `GameObject`
 
 **`Description`**
 
-通过 Guid 查找 Gameobject
+通过 Guid 查找 GameObject
 
 **`Effect`**
 
@@ -4091,23 +3884,23 @@ Core/index.d.ts:138
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 Guid 对应的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[find](Core.Core.GameObject.md#find)
+Core.GameObject.find
 
 #### Defined in
 
-Core/index.d.ts:153
+Core/index.d.ts:157
 
 ---
 
 ### findGameObjectByTag
 
-▸ `Static` **findGameObjectByTag**(`InTag`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[]
 
 **`Description`**
 
@@ -4125,23 +3918,23 @@ Core/index.d.ts:153
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[findGameObjectByTag](Core.Core.GameObject.md#findgameobjectbytag)
+Core.GameObject.findGameObjectByTag
 
 #### Defined in
 
-Core/index.d.ts:577
+Core/index.d.ts:588
 
 ---
 
 ### getGameObjectByName
 
-▸ `Static` **getGameObjectByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **getGameObjectByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -4159,23 +3952,23 @@ Core/index.d.ts:577
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getGameObjectByName](Core.Core.GameObject.md#getgameobjectbyname)
+Core.GameObject.getGameObjectByName
 
 #### Defined in
 
-Core/index.d.ts:516
+Core/index.d.ts:527
 
 ---
 
 ### getGameObjectsByName
 
-▸ `Static` **getGameObjectsByName**(`name`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[]
 
 **`Description`**
 
@@ -4193,23 +3986,23 @@ Core/index.d.ts:516
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
 返回所有查找到的对象
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getGameObjectsByName](Core.Core.GameObject.md#getgameobjectsbyname)
+Core.GameObject.getGameObjectsByName
 
 #### Defined in
 
-Core/index.d.ts:509
+Core/index.d.ts:520
 
 ---
 
 ### spawnGameObject
 
-▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -4228,14 +4021,14 @@ Core/index.d.ts:509
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 构造的 GameObject
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[spawnGameObject](Core.Core.GameObject.md#spawngameobject)
+Core.GameObject.spawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:130
+Core/index.d.ts:134

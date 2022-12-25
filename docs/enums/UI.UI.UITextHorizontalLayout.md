@@ -20,34 +20,34 @@
 
 ### AutoWarpText
 
-• **AutoWarpText** = ``0``
+• **AutoWarpText** = `0`
 
 自动换行
 
 #### Defined in
 
-UI/index.d.ts:3390
+UI/index.d.ts:3399
 
-___
+---
 
 ### Clipping
 
-• **Clipping** = ``1``
+• **Clipping** = `1`
 
 裁剪
 
 #### Defined in
 
-UI/index.d.ts:3392
+UI/index.d.ts:3401
 
-___
+---
 
 ### NoClipping
 
-• **NoClipping** = ``2``
+• **NoClipping** = `2`
 
 不裁剪
 
 #### Defined in
 
-UI/index.d.ts:3394
+UI/index.d.ts:3403

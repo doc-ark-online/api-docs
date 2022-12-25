@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -43,14 +43,14 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `w` | [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) | usage:水平应用规则 |
-| `h` | [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md) | usage:垂直使用规则 |
+| Name | Type                                                                     | Description        |
+| :--- | :----------------------------------------------------------------------- | :----------------- |
+| `w`  | [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) | usage:水平应用规则 |
+| `h`  | [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md)     | usage:垂直使用规则 |
 
 #### Defined in
 
-UI/index.d.ts:3779
+UI/index.d.ts:3788
 
 ## Properties
 
@@ -64,9 +64,9 @@ UI/index.d.ts:3779
 
 #### Defined in
 
-UI/index.d.ts:3783
+UI/index.d.ts:3792
 
-___
+---
 
 ### hugContentW
 
@@ -78,4 +78,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3781
+UI/index.d.ts:3790

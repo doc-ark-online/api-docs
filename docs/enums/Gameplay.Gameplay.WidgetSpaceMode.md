@@ -6,7 +6,7 @@
 
 **`Description`**
 
-UI空间位置枚举
+UI 空间位置枚举
 
 ## Table of contents
 
@@ -20,34 +20,34 @@ UI空间位置枚举
 
 ### OverheadUI
 
-• **OverheadUI** = ``2``
+• **OverheadUI** = `2`
 
-头顶UI
+头顶 UI
 
 #### Defined in
 
-Gameplay/index.d.ts:10178
+Gameplay/index.d.ts:10252
 
-___
+---
 
 ### Screen
 
-• **Screen** = ``1``
+• **Screen** = `1`
 
 屏幕空间
 
 #### Defined in
 
-Gameplay/index.d.ts:10176
+Gameplay/index.d.ts:10250
 
-___
+---
 
 ### World
 
-• **World** = ``0``
+• **World** = `0`
 
 世界空间
 
 #### Defined in
 
-Gameplay/index.d.ts:10174
+Gameplay/index.d.ts:10248

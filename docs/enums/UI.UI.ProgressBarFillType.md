@@ -22,58 +22,58 @@
 
 ### BottomToTop
 
-• **BottomToTop** = ``4``
+• **BottomToTop** = `4`
 
 从下到上
 
 #### Defined in
 
-UI/index.d.ts:3623
+UI/index.d.ts:3632
 
-___
+---
 
 ### FillFromCenter
 
-• **FillFromCenter** = ``2``
+• **FillFromCenter** = `2`
 
 从中心开始
 
 #### Defined in
 
-UI/index.d.ts:3619
+UI/index.d.ts:3628
 
-___
+---
 
 ### LeftToRight
 
-• **LeftToRight** = ``0``
+• **LeftToRight** = `0`
 
 从左到右
 
 #### Defined in
 
-UI/index.d.ts:3615
+UI/index.d.ts:3624
 
-___
+---
 
 ### RightToLeft
 
-• **RightToLeft** = ``1``
+• **RightToLeft** = `1`
 
 从右到左
 
 #### Defined in
 
-UI/index.d.ts:3617
+UI/index.d.ts:3626
 
-___
+---
 
 ### TopToBottom
 
-• **TopToBottom** = ``3``
+• **TopToBottom** = `3`
 
 从上到下
 
 #### Defined in
 
-UI/index.d.ts:3621
+UI/index.d.ts:3630

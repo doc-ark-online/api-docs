@@ -12,107 +12,107 @@
 
 ### Enumeration Members
 
-- [Dusk\_2D](Gameplay.Gameplay.SkyPreset.md#dusk_2d)
-- [Dusk\_LowPoly](Gameplay.Gameplay.SkyPreset.md#dusk_lowpoly)
-- [Morning\_2D](Gameplay.Gameplay.SkyPreset.md#morning_2d)
-- [Morning\_LowPoly](Gameplay.Gameplay.SkyPreset.md#morning_lowpoly)
-- [Night\_2D](Gameplay.Gameplay.SkyPreset.md#night_2d)
-- [Night\_LowPoly](Gameplay.Gameplay.SkyPreset.md#night_lowpoly)
-- [Noon\_2D](Gameplay.Gameplay.SkyPreset.md#noon_2d)
-- [Noon\_LowPoly](Gameplay.Gameplay.SkyPreset.md#noon_lowpoly)
+- [Dusk2D](Gameplay.Gameplay.SkyPreset.md#dusk2d)
+- [DuskLowPoly](Gameplay.Gameplay.SkyPreset.md#dusklowpoly)
+- [Morning2D](Gameplay.Gameplay.SkyPreset.md#morning2d)
+- [MorningLowPoly](Gameplay.Gameplay.SkyPreset.md#morninglowpoly)
+- [Night2D](Gameplay.Gameplay.SkyPreset.md#night2d)
+- [NightLowPoly](Gameplay.Gameplay.SkyPreset.md#nightlowpoly)
+- [Noon2D](Gameplay.Gameplay.SkyPreset.md#noon2d)
+- [NoonLowPoly](Gameplay.Gameplay.SkyPreset.md#noonlowpoly)
 
 ## Enumeration Members
 
-### Dusk\_2D
+### Dusk2D
 
-• **Dusk\_2D** = ``2``
+• **Dusk2D** = `2`
 
 黄昏（二次元）
 
 #### Defined in
 
-Gameplay/index.d.ts:9322
+Gameplay/index.d.ts:9427
 
-___
+---
 
-### Dusk\_LowPoly
+### DuskLowPoly
 
-• **Dusk\_LowPoly** = ``6``
+• **DuskLowPoly** = `6`
 
 黄昏（LowPoly）
 
 #### Defined in
 
-Gameplay/index.d.ts:9330
+Gameplay/index.d.ts:9435
 
-___
+---
 
-### Morning\_2D
+### Morning2D
 
-• **Morning\_2D** = ``0``
+• **Morning2D** = `0`
 
 清晨（二次元）
 
 #### Defined in
 
-Gameplay/index.d.ts:9318
+Gameplay/index.d.ts:9423
 
-___
+---
 
-### Morning\_LowPoly
+### MorningLowPoly
 
-• **Morning\_LowPoly** = ``4``
+• **MorningLowPoly** = `4`
 
 清晨（LowPoly）
 
 #### Defined in
 
-Gameplay/index.d.ts:9326
+Gameplay/index.d.ts:9431
 
-___
+---
 
-### Night\_2D
+### Night2D
 
-• **Night\_2D** = ``3``
+• **Night2D** = `3`
 
 夜晚（二次元）
 
 #### Defined in
 
-Gameplay/index.d.ts:9324
+Gameplay/index.d.ts:9429
 
-___
+---
 
-### Night\_LowPoly
+### NightLowPoly
 
-• **Night\_LowPoly** = ``7``
+• **NightLowPoly** = `7`
 
 夜晚（LowPoly）
 
 #### Defined in
 
-Gameplay/index.d.ts:9332
+Gameplay/index.d.ts:9437
 
-___
+---
 
-### Noon\_2D
+### Noon2D
 
-• **Noon\_2D** = ``1``
+• **Noon2D** = `1`
 
 中午（二次元）
 
 #### Defined in
 
-Gameplay/index.d.ts:9320
+Gameplay/index.d.ts:9425
 
-___
+---
 
-### Noon\_LowPoly
+### NoonLowPoly
 
-• **Noon\_LowPoly** = ``5``
+• **NoonLowPoly** = `5`
 
 中午（LowPoly）
 
 #### Defined in
 
-Gameplay/index.d.ts:9328
+Gameplay/index.d.ts:9433

@@ -523,6 +523,11 @@ preact@^10.0.0:
   resolved "https://repo.huaweicloud.com/repository/npm/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
   integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
 
+prettier@^2.8.1:
+  version "2.8.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
+  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
+
 resolve@^1.22.1:
   version "1.22.1"
   resolved "https://repo.huaweicloud.com/repository/npm/resolve/-/resolve-1.22.1.tgz#27cb2ebb53f91abb49470a928bba7558066ac177"

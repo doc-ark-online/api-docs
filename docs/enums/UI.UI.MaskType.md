@@ -20,34 +20,34 @@
 
 ### MTCircle
 
-• **MTCircle** = ``0``
+• **MTCircle** = `0`
 
 圆形
 
 #### Defined in
 
-UI/index.d.ts:3727
+UI/index.d.ts:3736
 
-___
+---
 
 ### MTFanShaped
 
-• **MTFanShaped** = ``1``
+• **MTFanShaped** = `1`
 
 扇形
 
 #### Defined in
 
-UI/index.d.ts:3729
+UI/index.d.ts:3738
 
-___
+---
 
 ### MTRoundRect
 
-• **MTRoundRect** = ``2``
+• **MTRoundRect** = `2`
 
 圆角
 
 #### Defined in
 
-UI/index.d.ts:3731
+UI/index.d.ts:3740

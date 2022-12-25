@@ -24,9 +24,7 @@ jun.zhang
 
 ### Properties
 
-- [delegateCurrentDispersionChangedOnClient](Gameplay.Gameplay.HotWeaponAccuracyOfFireComponent.md#delegatecurrentdispersionchangedonclient)
-- [resultLocalConst](Gameplay.Gameplay.HotWeaponAccuracyOfFireComponent.md#resultlocalconst)
-- [resultLocalVal](Gameplay.Gameplay.HotWeaponAccuracyOfFireComponent.md#resultlocalval)
+- [onCurrentDispersionChangedClient](Gameplay.Gameplay.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchangedclient)
 
 ### Accessors
 
@@ -52,9 +50,9 @@ jun.zhang
 
 ## Properties
 
-### delegateCurrentDispersionChangedOnClient
+### onCurrentDispersionChangedClient
 
-• **delegateCurrentDispersionChangedOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+• **onCurrentDispersionChangedClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
 
 **`Description`**
 
@@ -62,35 +60,7 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:11559
-
-___
-
-### resultLocalConst
-
-• **resultLocalConst**: [`Vector`](Type.Type.Vector.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11570
-
-___
-
-### resultLocalVal
-
-• **resultLocalVal**: [`Vector`](Type.Type.Vector.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11574
+Gameplay/index.d.ts:11257
 
 ## Accessors
 
@@ -100,7 +70,7 @@ Gameplay/index.d.ts:11574
 
 **`Description`**
 
-Get子弹随机发散范围的默认半径
+Get 子弹随机发散范围的默认半径
 
 **`Effect`**
 
@@ -114,13 +84,13 @@ Get子弹随机发散范围的默认半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11595
+Gameplay/index.d.ts:11285
 
 • `set` **defaultDispersionHalfAngle**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围的默认半径
+Set 子弹随机发散范围的默认半径
 
 **`Effect`**
 
@@ -128,8 +98,8 @@ Set子弹随机发散范围的默认半径
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                            |
+| :--------- | :------- | :------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径值 default: |
 
 #### Returns
@@ -138,9 +108,9 @@ Set子弹随机发散范围的默认半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11589
+Gameplay/index.d.ts:11279
 
-___
+---
 
 ### dispersionHalfAngleDecreaseSpeed
 
@@ -148,7 +118,7 @@ ___
 
 **`Description`**
 
-Get子弹随机发散范围半径的收缩速度
+Get 子弹随机发散范围半径的收缩速度
 
 **`Effect`**
 
@@ -162,13 +132,13 @@ Get子弹随机发散范围半径的收缩速度
 
 #### Defined in
 
-Gameplay/index.d.ts:11633
+Gameplay/index.d.ts:11323
 
 • `set` **dispersionHalfAngleDecreaseSpeed**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围半径的收缩速度
+Set 子弹随机发散范围半径的收缩速度
 
 **`Effect`**
 
@@ -180,8 +150,8 @@ Set子弹随机发散范围半径的收缩速度
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                                    |
+| :--------- | :------- | :--------------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径每秒变化量 default: |
 
 #### Returns
@@ -190,9 +160,9 @@ Set子弹随机发散范围半径的收缩速度
 
 #### Defined in
 
-Gameplay/index.d.ts:11627
+Gameplay/index.d.ts:11317
 
-___
+---
 
 ### dispersionHalfAngleIncreasePerShot
 
@@ -200,7 +170,7 @@ ___
 
 **`Description`**
 
-Get子弹随机发散范围半径在每次射击后的扩张值
+Get 子弹随机发散范围半径在每次射击后的扩张值
 
 **`Effect`**
 
@@ -214,13 +184,13 @@ Get子弹随机发散范围半径在每次射击后的扩张值
 
 #### Defined in
 
-Gameplay/index.d.ts:11659
+Gameplay/index.d.ts:11349
 
 • `set` **dispersionHalfAngleIncreasePerShot**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围半径在每次射击后的扩张值
+Set 子弹随机发散范围半径在每次射击后的扩张值
 
 **`Effect`**
 
@@ -232,8 +202,8 @@ Set子弹随机发散范围半径在每次射击后的扩张值
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                              |
+| :--------- | :------- | :--------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径增量 default: |
 
 #### Returns
@@ -242,9 +212,9 @@ Set子弹随机发散范围半径在每次射击后的扩张值
 
 #### Defined in
 
-Gameplay/index.d.ts:11653
+Gameplay/index.d.ts:11343
 
-___
+---
 
 ### dispersionHalfAngleIncreaseSpeed
 
@@ -252,7 +222,7 @@ ___
 
 **`Description`**
 
-Get子弹随机发散范围半径的扩张速度
+Get 子弹随机发散范围半径的扩张速度
 
 **`Effect`**
 
@@ -266,13 +236,13 @@ Get子弹随机发散范围半径的扩张速度
 
 #### Defined in
 
-Gameplay/index.d.ts:11646
+Gameplay/index.d.ts:11336
 
 • `set` **dispersionHalfAngleIncreaseSpeed**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围半径的扩张速度
+Set 子弹随机发散范围半径的扩张速度
 
 **`Effect`**
 
@@ -284,8 +254,8 @@ Set子弹随机发散范围半径的扩张速度
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                                    |
+| :--------- | :------- | :--------------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径每秒变化量 default: |
 
 #### Returns
@@ -294,9 +264,9 @@ Set子弹随机发散范围半径的扩张速度
 
 #### Defined in
 
-Gameplay/index.d.ts:11640
+Gameplay/index.d.ts:11330
 
-___
+---
 
 ### maxDispersionHalfAngle
 
@@ -304,7 +274,7 @@ ___
 
 **`Description`**
 
-Get子弹随机发散范围的最大半径
+Get 子弹随机发散范围的最大半径
 
 **`Effect`**
 
@@ -318,13 +288,13 @@ Get子弹随机发散范围的最大半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11607
+Gameplay/index.d.ts:11297
 
 • `set` **maxDispersionHalfAngle**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围的最大半径
+Set 子弹随机发散范围的最大半径
 
 **`Effect`**
 
@@ -332,8 +302,8 @@ Set子弹随机发散范围的最大半径
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                            |
+| :--------- | :------- | :------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径值 default: |
 
 #### Returns
@@ -342,9 +312,9 @@ Set子弹随机发散范围的最大半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11601
+Gameplay/index.d.ts:11291
 
-___
+---
 
 ### minDispersionHalfAngle
 
@@ -352,7 +322,7 @@ ___
 
 **`Description`**
 
-Get子弹随机发散范围的最小半径
+Get 子弹随机发散范围的最小半径
 
 **`Effect`**
 
@@ -366,13 +336,13 @@ Get子弹随机发散范围的最小半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11620
+Gameplay/index.d.ts:11310
 
 • `set` **minDispersionHalfAngle**(`NewValue`): `void`
 
 **`Description`**
 
-Set子弹随机发散范围的最小半径
+Set 子弹随机发散范围的最小半径
 
 **`Effect`**
 
@@ -384,8 +354,8 @@ Set子弹随机发散范围的最小半径
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type     | Description                            |
+| :--------- | :------- | :------------------------------------- |
 | `NewValue` | `number` | usage: 新设置的圆型范围半径值 default: |
 
 #### Returns
@@ -394,7 +364,7 @@ Set子弹随机发散范围的最小半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11614
+Gameplay/index.d.ts:11304
 
 ## Methods
 
@@ -416,9 +386,9 @@ Gameplay/index.d.ts:11614
 
 #### Defined in
 
-Gameplay/index.d.ts:11566
+Gameplay/index.d.ts:11264
 
-___
+---
 
 ### getCurrentDispersionHalfAngle
 
@@ -426,7 +396,7 @@ ___
 
 **`Description`**
 
-Get当前子弹随机发散范围半径实际值
+Get 当前子弹随机发散范围半径实际值
 
 **`Effect`**
 
@@ -440,9 +410,9 @@ Get当前子弹随机发散范围半径实际值
 
 #### Defined in
 
-Gameplay/index.d.ts:11665
+Gameplay/index.d.ts:11355
 
-___
+---
 
 ### getRandomShootDir
 
@@ -463,8 +433,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name                   | Type                            | Description                                  |
+| :--------------------- | :------------------------------ | :------------------------------------------- |
 | `ShootDirNoDispersion` | [`Vector`](Type.Type.Vector.md) | usage: 未发生偏移的最初子弹飞行方向 default: |
 
 #### Returns
@@ -475,9 +445,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11583
+Gameplay/index.d.ts:11273
 
-___
+---
 
 ### getTargetDispersionHalfAngle
 
@@ -485,7 +455,7 @@ ___
 
 **`Description`**
 
-Get目标子弹随机发散范围半径实际值
+Get 目标子弹随机发散范围半径实际值
 
 **`Effect`**
 
@@ -499,4 +469,4 @@ Get目标子弹随机发散范围半径实际值
 
 #### Defined in
 
-Gameplay/index.d.ts:11671
+Gameplay/index.d.ts:11361

@@ -19,22 +19,22 @@
 
 ### OrientHorizontal
 
-• **OrientHorizontal** = ``0``
+• **OrientHorizontal** = `0`
 
 水平
 
 #### Defined in
 
-UI/index.d.ts:3597
+UI/index.d.ts:3606
 
-___
+---
 
 ### OrientVertical
 
-• **OrientVertical** = ``1``
+• **OrientVertical** = `1`
 
 垂直
 
 #### Defined in
 
-UI/index.d.ts:3599
+UI/index.d.ts:3608

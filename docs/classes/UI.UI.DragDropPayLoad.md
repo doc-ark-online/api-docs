@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -54,7 +54,7 @@ guid
 
 UI/index.d.ts:540
 
-___
+---
 
 ### idStr
 
@@ -68,7 +68,7 @@ id
 
 UI/index.d.ts:548
 
-___
+---
 
 ### nameStr
 
@@ -102,7 +102,7 @@ guid
 
 UI/index.d.ts:553
 
-___
+---
 
 ### id
 
@@ -110,7 +110,7 @@ ___
 
 **`Description`**
 
-获取id
+获取 id
 
 #### Returns
 
@@ -126,12 +126,12 @@ UI/index.d.ts:571
 
 **`Description`**
 
-设置id
+设置 id
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| :----- | :------- |
 | `inId` | `number` |
 
 #### Returns
@@ -142,7 +142,7 @@ UI/index.d.ts:571
 
 UI/index.d.ts:566
 
-___
+---
 
 ### name
 
@@ -170,8 +170,8 @@ UI/index.d.ts:562
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `inName` | `string` |
 
 #### Returns

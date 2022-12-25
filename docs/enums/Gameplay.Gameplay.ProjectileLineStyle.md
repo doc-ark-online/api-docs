@@ -20,34 +20,34 @@
 
 ### Dot
 
-• **Dot** = ``0``
+• **Dot** = `0`
 
 点绘制
 
 #### Defined in
 
-Gameplay/index.d.ts:13395
+Gameplay/index.d.ts:13073
 
-___
+---
 
 ### Line
 
-• **Line** = ``1``
+• **Line** = `1`
 
 线绘制
 
 #### Defined in
 
-Gameplay/index.d.ts:13397
+Gameplay/index.d.ts:13075
 
-___
+---
 
 ### Segment
 
-• **Segment** = ``2``
+• **Segment** = `2`
 
 段绘制
 
 #### Defined in
 
-Gameplay/index.d.ts:13399
+Gameplay/index.d.ts:13077

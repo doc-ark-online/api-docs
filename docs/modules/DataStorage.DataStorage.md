@@ -37,8 +37,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description        |
+| :---- | :------- | :----------------- |
 | `key` | `string` | usage:字符串类型键 |
 
 #### Returns
@@ -51,7 +51,7 @@
 
 DataStorage/index.d.ts:75
 
-___
+---
 
 ### asyncGetPlayerData
 
@@ -67,8 +67,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                               | Description    |
+| :------- | :------------------------------------------------- | :------------- |
 | `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象 |
 
 #### Returns
@@ -81,7 +81,7 @@ ___
 
 DataStorage/index.d.ts:48
 
-___
+---
 
 ### asyncRemoveCustomData
 
@@ -97,8 +97,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description        |
+| :---- | :------- | :----------------- |
 | `key` | `string` | usage:字符串类型键 |
 
 #### Returns
@@ -111,7 +111,7 @@ ___
 
 DataStorage/index.d.ts:82
 
-___
+---
 
 ### asyncRemovePlayerData
 
@@ -127,8 +127,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                               | Description    |
+| :------- | :------------------------------------------------- | :------------- |
 | `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象 |
 
 #### Returns
@@ -141,7 +141,7 @@ ___
 
 DataStorage/index.d.ts:55
 
-___
+---
 
 ### asyncSetCustomData
 
@@ -157,10 +157,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | `string` | usage:字符串类型的键，用来唯一标识存储的数据。 |
-| `value` | `unknown` | usage:任意类型的数据 |
+| Name    | Type      | Description                                    |
+| :------ | :-------- | :--------------------------------------------- |
+| `key`   | `string`  | usage:字符串类型的键，用来唯一标识存储的数据。 |
+| `value` | `unknown` | usage:任意类型的数据                           |
 
 #### Returns
 
@@ -172,7 +172,7 @@ ___
 
 DataStorage/index.d.ts:65
 
-___
+---
 
 ### asyncSetPlayerData
 
@@ -188,14 +188,14 @@ ___
 
 **`Precautions`**
 
-每个玩家在每一个游戏中允许最多存储16Kb的编码数据。超过此限制的任何数据都不能保证被存储。
+每个玩家在每一个游戏中允许最多存储 16Kb 的编码数据。超过此限制的任何数据都不能保证被存储。
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象 |
-| `data` | `unknown` | usage:要保存的数据 |
+| Name     | Type                                               | Description        |
+| :------- | :------------------------------------------------- | :----------------- |
+| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象     |
+| `data`   | `unknown`                                          | usage:要保存的数据 |
 
 #### Returns
 
@@ -207,7 +207,7 @@ ___
 
 DataStorage/index.d.ts:38
 
-___
+---
 
 ### setTemporaryStorage
 
@@ -223,9 +223,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isTemporary` | `boolean` | usage:true代表临时存储，数据在游戏服务器进程中，游戏退出时数据被删除。false为永久存储，数据存储在专用服务器，游戏退出时数据不会被删除。 |
+| Name          | Type      | Description                                                                                                                               |
+| :------------ | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `isTemporary` | `boolean` | usage:true 代表临时存储，数据在游戏服务器进程中，游戏退出时数据被删除。false 为永久存储，数据存储在专用服务器，游戏退出时数据不会被删除。 |
 
 #### Returns
 
@@ -235,7 +235,7 @@ ___
 
 DataStorage/index.d.ts:88
 
-___
+---
 
 ### sizeOfData
 
@@ -243,7 +243,7 @@ ___
 
 **`Description`**
 
-返回data的当前大小。单位为bytes（字节）。
+返回 data 的当前大小。单位为 bytes（字节）。
 
 **`Effect`**
 
@@ -251,8 +251,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
 | `data` | `unknown` | usage: 数据键值对对象。 |
 
 #### Returns

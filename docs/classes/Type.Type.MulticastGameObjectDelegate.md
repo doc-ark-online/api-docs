@@ -50,8 +50,8 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                         | Description              |
+| :----- | :--------------------------- | :----------------------- |
 | `func` | `GameObjectDelegateFuncType` | usage: 回调函数 default: |
 
 #### Returns
@@ -60,9 +60,9 @@ usage:双端
 
 #### Defined in
 
-Type/index.d.ts:159
+Type/index.d.ts:184
 
-___
+---
 
 ### broadcast
 
@@ -78,9 +78,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage: 触发物体对象 |
+| Name  | Type         | Description         |
+| :---- | :----------- | :------------------ |
+| `obj` | `GameObject` | usage: 触发物体对象 |
 
 #### Returns
 
@@ -88,9 +88,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:171
+Type/index.d.ts:196
 
-___
+---
 
 ### remove
 
@@ -106,8 +106,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                         | Description     |
+| :----- | :--------------------------- | :-------------- |
 | `func` | `GameObjectDelegateFuncType` | usage: 回调函数 |
 
 #### Returns
@@ -116,4 +116,4 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:165
+Type/index.d.ts:190

@@ -45,13 +45,13 @@ jun.zhang
 
 **`Description`**
 
-TODO
+击中点的前向向量
 
 #### Defined in
 
-Gameplay/index.d.ts:11285
+Gameplay/index.d.ts:11007
 
-___
+---
 
 ### hitLoc
 
@@ -63,9 +63,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11277
+Gameplay/index.d.ts:10999
 
-___
+---
 
 ### radiusMax
 
@@ -73,13 +73,13 @@ ___
 
 **`Description`**
 
-TODO
+打击面的最大半径
 
 #### Defined in
 
-Gameplay/index.d.ts:11297
+Gameplay/index.d.ts:11019
 
-___
+---
 
 ### rightVecAgainstHitCircle
 
@@ -87,13 +87,13 @@ ___
 
 **`Description`**
 
-TODO
+击中点的向右向量
 
 #### Defined in
 
-Gameplay/index.d.ts:11293
+Gameplay/index.d.ts:11015
 
-___
+---
 
 ### shootDistance
 
@@ -105,9 +105,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:11281
+Gameplay/index.d.ts:11003
 
-___
+---
 
 ### upVecAgainstHitCircle
 
@@ -115,8 +115,8 @@ ___
 
 **`Description`**
 
-TODO
+击中点的向上向量
 
 #### Defined in
 
-Gameplay/index.d.ts:11289
+Gameplay/index.d.ts:11011

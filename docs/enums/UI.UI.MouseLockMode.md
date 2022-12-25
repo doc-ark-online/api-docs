@@ -21,46 +21,46 @@
 
 ### DoNotLock
 
-• **DoNotLock** = ``0``
+• **DoNotLock** = `0`
 
 不会将鼠标光标锁定到视口
 
 #### Defined in
 
-UI/index.d.ts:3571
+UI/index.d.ts:3580
 
-___
+---
 
 ### LockAlways
 
-• **LockAlways** = ``2``
+• **LockAlways** = `2`
 
 始终将鼠标光标锁定到视口
 
 #### Defined in
 
-UI/index.d.ts:3575
+UI/index.d.ts:3584
 
-___
+---
 
 ### LockInFullscreen
 
-• **LockInFullscreen** = ``3``
+• **LockInFullscreen** = `3`
 
-如果我们处于全屏状态，将锁定光标
+处于全屏状态时将锁定光标
 
 #### Defined in
 
-UI/index.d.ts:3577
+UI/index.d.ts:3586
 
-___
+---
 
 ### LockOnCapture
 
-• **LockOnCapture** = ``1``
+• **LockOnCapture** = `1`
 
 仅在捕获鼠标时将鼠标光标锁定到视口
 
 #### Defined in
 
-UI/index.d.ts:3573
+UI/index.d.ts:3582

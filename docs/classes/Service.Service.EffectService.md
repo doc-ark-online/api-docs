@@ -27,7 +27,7 @@ usage: 双端
 ### Methods
 
 - [clearAll](Service.Service.EffectService.md#clearall)
-- [init](Service.Service.EffectService.md#init)
+- [getEffectGameObject](Service.Service.EffectService.md#geteffectgameobject)
 - [playEffectAtLocation](Service.Service.EffectService.md#playeffectatlocation)
 - [playEffectOnGameObject](Service.Service.EffectService.md#playeffectongameobject)
 - [playEffectOnPlayer](Service.Service.EffectService.md#playeffectonplayer)
@@ -44,7 +44,7 @@ usage: 双端
 
 #### Defined in
 
-Service/index.d.ts:763
+Service/index.d.ts:775
 
 ## Methods
 
@@ -66,31 +66,39 @@ Service/index.d.ts:763
 
 #### Defined in
 
-Service/index.d.ts:774
+Service/index.d.ts:786
 
-___
+---
 
-### init
+### getEffectGameObject
 
-▸ **init**(): `void`
+▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Gameplay.Particle.md)\>
 
 **`Description`**
 
-初始化
+根据播放 id 获取一个特效对象
 
 **`Effect`**
 
-调用端生效
+客户端生效
+
+#### Parameters
+
+| Name     | Type     | Description    |
+| :------- | :------- | :------------- |
+| `playId` | `number` | usage: 播放 id |
 
 #### Returns
 
-`void`
+`Promise`<[`Particle`](Gameplay.Gameplay.Particle.md)\>
+
+Sound 对象的 gameObject
 
 #### Defined in
 
-Service/index.d.ts:779
+Service/index.d.ts:871
 
-___
+---
 
 ### playEffectAtLocation
 
@@ -106,13 +114,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 特效资源Id |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage: 世界坐标 |
-| `loop?` | `number` | usage: 循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
-| `rotation?` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 default: Type.Rotation.zero |
-| `scale?` | [`Vector`](Type.Type.Vector.md) | usage: 缩放 default: Type.Vector.one |
+| Name        | Type                                | Description                                                                   |
+| :---------- | :---------------------------------- | :---------------------------------------------------------------------------- |
+| `resId`     | `string`                            | usage: 特效资源 Id                                                            |
+| `location`  | [`Vector`](Type.Type.Vector.md)     | usage: 世界坐标                                                               |
+| `loop?`     | `number`                            | usage: 循环方式(0 为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
+| `rotation?` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 default: Type.Rotation.zero                                       |
+| `scale?`    | [`Vector`](Type.Type.Vector.md)     | usage: 缩放 default: Type.Vector.one                                          |
 
 #### Returns
 
@@ -122,9 +130,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:830
+Service/index.d.ts:837
 
-___
+---
 
 ### playEffectOnGameObject
 
@@ -132,7 +140,7 @@ ___
 
 **`Description`**
 
-在一个GameObject上播放特效
+在一个 GameObject 上播放特效
 
 **`Effect`**
 
@@ -140,14 +148,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 特效资源Id |
-| `target` | [`GameObject`](Core.Core.GameObject.md) | usage: 目标GameObject \| 目标GameObject的guid |
-| `loop?` | `number` | usage: 循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
-| `offset?` | [`Vector`](Type.Type.Vector.md) | usage: 坐标偏移 default: Type.Vector.zero |
-| `rotation?` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 default: Type.Rotation.zero |
-| `scale?` | [`Vector`](Type.Type.Vector.md) | usage: 缩放 default: Type.Vector.one |
+| Name        | Type                                | Description                                                                   |
+| :---------- | :---------------------------------- | :---------------------------------------------------------------------------- |
+| `resId`     | `string`                            | usage: 特效资源 Id                                                            |
+| `target`    | `GameObject`                        | usage: 目标 GameObject \| 目标 GameObject 的 guid                             |
+| `loop?`     | `number`                            | usage: 循环方式(0 为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
+| `offset?`   | [`Vector`](Type.Type.Vector.md)     | usage: 坐标偏移 default: Type.Vector.zero                                     |
+| `rotation?` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 default: Type.Rotation.zero                                       |
+| `scale?`    | [`Vector`](Type.Type.Vector.md)     | usage: 缩放 default: Type.Vector.one                                          |
 
 #### Returns
 
@@ -157,13 +165,13 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:812
+Service/index.d.ts:819
 
-___
+---
 
 ### playEffectOnPlayer
 
-▸ **playEffectOnPlayer**(`resId`, `target`, `socketType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number`
+▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number`
 
 **`Description`**
 
@@ -175,15 +183,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 特效资源Id |
-| `target` | [`Player`](Gameplay.Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) | usage: 玩家\|npc |
-| `socketType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage: 挂点类型 |
-| `loop?` | `number` | usage: 循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
-| `offset?` | [`Vector`](Type.Type.Vector.md) | usage: 坐标偏移 default: Type.Vector.zero |
-| `rotation?` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 default: Type.Rotation.zero |
-| `scale?` | [`Vector`](Type.Type.Vector.md) | usage: 缩放 default: Type.Vector.one |
+| Name        | Type                                                                                   | Description                                                                   |
+| :---------- | :------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| `resId`     | `string`                                                                               | usage: 特效资源 Id                                                            |
+| `target`    | [`Player`](Gameplay.Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) | usage: 玩家\|npc                                                              |
+| `slotType`  | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)                                   | usage: 挂点类型                                                               |
+| `loop?`     | `number`                                                                               | usage: 循环方式(0 为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
+| `offset?`   | [`Vector`](Type.Type.Vector.md)                                                        | usage: 坐标偏移 default: Type.Vector.zero                                     |
+| `rotation?` | [`Rotation`](Type.Type.Rotation.md)                                                    | usage: 旋转 default: Type.Rotation.zero                                       |
+| `scale?`    | [`Vector`](Type.Type.Vector.md)                                                        | usage: 缩放 default: Type.Vector.one                                          |
 
 #### Returns
 
@@ -193,9 +201,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:792
+Service/index.d.ts:799
 
-___
+---
 
 ### stopAllEffect
 
@@ -215,9 +223,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:857
+Service/index.d.ts:864
 
-___
+---
 
 ### stopEffect
 
@@ -233,8 +241,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description           |
+| :------- | :------- | :-------------------- |
 | `playId` | `number` | usage: 播放的唯一标识 |
 
 #### Returns
@@ -243,9 +251,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:852
+Service/index.d.ts:859
 
-___
+---
 
 ### stopEffectFromHost
 
@@ -253,7 +261,7 @@ ___
 
 **`Description`**
 
-停止目标对象上所有资源Id的特效
+停止目标对象上所有资源 Id 的特效
 
 **`Effect`**
 
@@ -261,10 +269,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resId` | `string` | usage: 特效资源Id |
-| `target?` | [`GameObject`](Core.Core.GameObject.md) \| [`Player`](Gameplay.Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) | usage: 目标对象(Player或者GameObject) default: undefined |
+| Name      | Type                                                                                                   | Description                                                |
+| :-------- | :----------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| `resId`   | `string`                                                                                               | usage: 特效资源 Id                                         |
+| `target?` | `GameObject` \| [`Player`](Gameplay.Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) | usage: 目标对象(Player 或者 GameObject) default: undefined |
 
 #### Returns
 
@@ -272,9 +280,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:843
+Service/index.d.ts:850
 
-___
+---
 
 ### getInstance
 
@@ -296,4 +304,4 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:769
+Service/index.d.ts:781

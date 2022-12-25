@@ -6,7 +6,7 @@
 
 **`Description`**
 
-UI颜色应用模式
+UI 颜色应用模式
 
 ## Table of contents
 
@@ -21,46 +21,46 @@ UI颜色应用模式
 
 ### UseColorForeground
 
-• **UseColorForeground** = ``2``
+• **UseColorForeground** = `2`
 
 使用部件的前景色。
 
 #### Defined in
 
-UI/index.d.ts:3635
+UI/index.d.ts:3644
 
-___
+---
 
 ### UseColorForegroundSubdued
 
-• **UseColorForegroundSubdued** = ``3``
+• **UseColorForegroundSubdued** = `3`
 
 使用部件的柔和颜色
 
 #### Defined in
 
-UI/index.d.ts:3637
+UI/index.d.ts:3646
 
-___
+---
 
 ### UseColorSpecified
 
-• **UseColorSpecified** = ``0``
+• **UseColorSpecified** = `0`
 
 颜色值存储在此颜色中
 
 #### Defined in
 
-UI/index.d.ts:3631
+UI/index.d.ts:3640
 
-___
+---
 
 ### UseColorSpecifiedLink
 
-• **UseColorSpecifiedLink** = ``1``
+• **UseColorSpecifiedLink** = `1`
 
 颜色值存储在链接的颜色中
 
 #### Defined in
 
-UI/index.d.ts:3633
+UI/index.d.ts:3642

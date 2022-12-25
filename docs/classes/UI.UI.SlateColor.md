@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-UI颜色管理
+UI 颜色管理
 
 **`Network Status`**
 
@@ -43,13 +43,13 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
+| Name      | Type                                      | Description |
+| :-------- | :---------------------------------------- | :---------- |
+| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色  |
 
 #### Defined in
 
-UI/index.d.ts:4008
+UI/index.d.ts:4017
 
 ## Properties
 
@@ -63,9 +63,9 @@ UI/index.d.ts:4008
 
 #### Defined in
 
-UI/index.d.ts:4012
+UI/index.d.ts:4021
 
-___
+---
 
 ### specifiedColor
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4010
+UI/index.d.ts:4019

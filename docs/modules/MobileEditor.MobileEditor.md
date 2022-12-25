@@ -29,20 +29,21 @@
 - [getEditorPawnLocation](MobileEditor.MobileEditor.md#geteditorpawnlocation)
 - [getEditorPawnRotation](MobileEditor.MobileEditor.md#geteditorpawnrotation)
 - [getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)
-- [getOnTapGesture](MobileEditor.MobileEditor.md#getontapgesture)
-- [getOneFignerMoveGesture](MobileEditor.MobileEditor.md#getonefignermovegesture)
-- [getPinchGesture](MobileEditor.MobileEditor.md#getpinchgesture)
-- [getTouchBeganGesture](MobileEditor.MobileEditor.md#gettouchbegangesture)
+- [getOneFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#getonefingermovegesturedelegate)
+- [getPinchGestureDelegate](MobileEditor.MobileEditor.md#getpinchgesturedelegate)
+- [getSavedDir](MobileEditor.MobileEditor.md#getsaveddir)
+- [getTapGestureDelegate](MobileEditor.MobileEditor.md#gettapgesturedelegate)
+- [getTouchBeganGestureDelegate](MobileEditor.MobileEditor.md#gettouchbegangesturedelegate)
 - [getTouchData](MobileEditor.MobileEditor.md#gettouchdata)
-- [getTouchEndGesture](MobileEditor.MobileEditor.md#gettouchendgesture)
-- [getTouchMoveGesture](MobileEditor.MobileEditor.md#gettouchmovegesture)
-- [getTwoFignerMoveGesture](MobileEditor.MobileEditor.md#gettwofignermovegesture)
+- [getTouchEndGestureDelegate](MobileEditor.MobileEditor.md#gettouchendgesturedelegate)
+- [getTouchMoveGestureDelegate](MobileEditor.MobileEditor.md#gettouchmovegesturedelegate)
+- [getTwoFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#gettwofingermovegesturedelegate)
 - [mobileReleaseGame](MobileEditor.MobileEditor.md#mobilereleasegame)
 - [recordingCharacterGif](MobileEditor.MobileEditor.md#recordingcharactergif)
 - [redo](MobileEditor.MobileEditor.md#redo)
 - [saveProject](MobileEditor.MobileEditor.md#saveproject)
-- [saveScreenShot](MobileEditor.MobileEditor.md#savescreenshot)
 - [screenShot](MobileEditor.MobileEditor.md#screenshot)
+- [screenShotExist](MobileEditor.MobileEditor.md#screenshotexist)
 - [sendShareId](MobileEditor.MobileEditor.md#sendshareid)
 - [setEditorCameraLocation](MobileEditor.MobileEditor.md#seteditorcameralocation)
 - [setEditorCameraRotation](MobileEditor.MobileEditor.md#seteditorcamerarotation)
@@ -56,6 +57,8 @@
 - [setSwipeTolerance](MobileEditor.MobileEditor.md#setswipetolerance)
 - [setTapTime](MobileEditor.MobileEditor.md#settaptime)
 - [undo](MobileEditor.MobileEditor.md#undo)
+- [uploadScreenShot](MobileEditor.MobileEditor.md#uploadscreenshot)
+- [uploadScreenShots](MobileEditor.MobileEditor.md#uploadscreenshots)
 
 ## Functions
 
@@ -65,7 +68,7 @@
 
 **`Description`**
 
-UGC Editor使用的装饰器,避免数据被还原
+UGC Editor 使用的装饰器,避免数据被还原
 
 **`Effect`**
 
@@ -73,8 +76,8 @@ UGC Editor使用的装饰器,避免数据被还原
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type  | Description |
+| :------- | :---- | :---------- |
 | `target` | `any` | usage: 目标 |
 
 #### Returns
@@ -85,7 +88,7 @@ UGC Editor使用的装饰器,避免数据被还原
 
 MobileEditor/index.d.ts:12
 
-___
+---
 
 ### addEditorPawnPanInputMovement
 
@@ -101,8 +104,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                         | Description  |
+| :------ | :------------------------------------------- | :----------- |
 | `input` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:输入值 |
 
 #### Returns
@@ -111,9 +114,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:389
+MobileEditor/index.d.ts:401
 
-___
+---
 
 ### asyncCaptureAvatar
 
@@ -129,15 +132,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md) | usage: 镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage: 镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage: 截图尺寸 |
-| `bShowOnly` | `boolean` | usage: true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` | usage: 视场; |
-| `fileName` | `string` | usage: 文件名 |
+| Name               | Type                                                             | Description                                                   |
+| :----------------- | :--------------------------------------------------------------- | :------------------------------------------------------------ |
+| `character`        | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取 GIF 的 Character                              |
+| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md)                       | usage: 镜头相对位置 ScreenShot()中默认为 Vector(35, 0, 50)    |
+| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md)                   | usage: 镜头相对旋转 ScreenShot()中默认为 Rotation(0, 180, 0); |
+| `resolution`       | [`Vector2`](../classes/Type.Type.Vector2.md)                     | usage: 截图尺寸                                               |
+| `bShowOnly`        | `boolean`                                                        | usage: true 时只截取角色，背景 Alpha 值置为 0                 |
+| `fov`              | `number`                                                         | usage: 视场;                                                  |
+| `fileName`         | `string`                                                         | usage: 文件名                                                 |
 
 #### Returns
 
@@ -147,9 +150,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:673
+MobileEditor/index.d.ts:685
 
-___
+---
 
 ### asyncSaveProject
 
@@ -161,11 +164,11 @@ ___
 
 **`Effect`**
 
-只在ListenServer模式下调用生效
+只在 ListenServer 模式下调用生效
 
 **`Precautions`**
 
-在PIE模式下无法调用
+在 PIE 模式下无法调用
 
 #### Returns
 
@@ -175,9 +178,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:590
+MobileEditor/index.d.ts:602
 
-___
+---
 
 ### beginActorPropertiesChange
 
@@ -185,7 +188,7 @@ ___
 
 **`Description`**
 
-开始记录撤销恢复的actor属性
+开始记录撤销恢复的 actor 属性
 
 **`Effect`**
 
@@ -193,9 +196,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Base`](../classes/Core.Core.Base.md) | usage:记录的对象 |
+| Name     | Type   | Description      |
+| :------- | :----- | :--------------- |
+| `target` | `Base` | usage:记录的对象 |
 
 #### Returns
 
@@ -203,9 +206,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:545
+MobileEditor/index.d.ts:557
 
-___
+---
 
 ### beginActorTransformChange
 
@@ -213,7 +216,7 @@ ___
 
 **`Description`**
 
-开始记录actor的transform属性
+开始记录 actor 的 transform 属性
 
 **`Effect`**
 
@@ -221,9 +224,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Base`](../classes/Core.Core.Base.md) | usage:记录的对象 |
+| Name     | Type   | Description      |
+| :------- | :----- | :--------------- |
+| `target` | `Base` | usage:记录的对象 |
 
 #### Returns
 
@@ -231,9 +234,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:567
+MobileEditor/index.d.ts:579
 
-___
+---
 
 ### captureAvatar
 
@@ -249,16 +252,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md) | usage: 镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage: 镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage: 截图尺寸 |
-| `bShowOnly` | `boolean` | usage: true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` | usage: 视场; |
-| `fileName` | `string` | usage: 文件名 |
-| `callback` | (`dataString`: `string`) => `void` | usage: 获取本地截图路径 default:null |
+| Name               | Type                                                             | Description                                                   |
+| :----------------- | :--------------------------------------------------------------- | :------------------------------------------------------------ |
+| `character`        | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取 GIF 的 Character                              |
+| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md)                       | usage: 镜头相对位置 ScreenShot()中默认为 Vector(35, 0, 50)    |
+| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md)                   | usage: 镜头相对旋转 ScreenShot()中默认为 Rotation(0, 180, 0); |
+| `resolution`       | [`Vector2`](../classes/Type.Type.Vector2.md)                     | usage: 截图尺寸                                               |
+| `bShowOnly`        | `boolean`                                                        | usage: true 时只截取角色，背景 Alpha 值置为 0                 |
+| `fov`              | `number`                                                         | usage: 视场;                                                  |
+| `fileName`         | `string`                                                         | usage: 文件名                                                 |
+| `callback`         | (`dataString`: `string`) => `void`                               | usage: 获取本地截图路径 default:null                          |
 
 #### Returns
 
@@ -266,9 +269,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:651
+MobileEditor/index.d.ts:663
 
-___
+---
 
 ### endActorPropertiesChange
 
@@ -276,7 +279,7 @@ ___
 
 **`Description`**
 
-结束记录actor属性的撤销恢复
+结束记录 actor 属性的撤销恢复
 
 **`Effect`**
 
@@ -284,9 +287,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Base`](../classes/Core.Core.Base.md) | usage:记录的对象 |
+| Name     | Type   | Description      |
+| :------- | :----- | :--------------- |
+| `target` | `Base` | usage:记录的对象 |
 
 #### Returns
 
@@ -294,9 +297,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:551
+MobileEditor/index.d.ts:563
 
-___
+---
 
 ### endActorTransformChange
 
@@ -304,7 +307,7 @@ ___
 
 **`Description`**
 
-结束记录actor的transform
+结束记录 actor 的 transform
 
 **`Effect`**
 
@@ -312,10 +315,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Base`](../classes/Core.Core.Base.md) | usage:记录的对象 |
-| `bIsGizmoActor?` | `boolean` | usage:是否是gizmo actor default:false |
+| Name             | Type      | Description                            |
+| :--------------- | :-------- | :------------------------------------- |
+| `target`         | `Base`    | usage:记录的对象                       |
+| `bIsGizmoActor?` | `boolean` | usage:是否是 gizmo actor default:false |
 
 #### Returns
 
@@ -323,9 +326,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:574
+MobileEditor/index.d.ts:586
 
-___
+---
 
 ### getEditorPawnLocation
 
@@ -347,9 +350,9 @@ Vector 返回的位置
 
 #### Defined in
 
-MobileEditor/index.d.ts:443
+MobileEditor/index.d.ts:455
 
-___
+---
 
 ### getEditorPawnRotation
 
@@ -357,7 +360,7 @@ ___
 
 **`Description`**
 
-返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
+返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应 Pitch , Yaw, Roll) - 只作用于编辑器人物
 
 **`Effect`**
 
@@ -371,9 +374,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:437
+MobileEditor/index.d.ts:449
 
-___
+---
 
 ### getHeadSculpture
 
@@ -389,16 +392,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md) | usage: 镜头相对位置 |
-| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage: 镜头相对旋转 |
-| `resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage: 截图尺寸 |
-| `bShowOnly` | `boolean` | usage: true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` | usage: 视场; |
-| `fileName` | `string` | usage: 文件名 |
-| `callback` | (`dataString`: `string`) => `void` | usage: 获取本地截图路径 default:null |
+| Name               | Type                                                             | Description                                   |
+| :----------------- | :--------------------------------------------------------------- | :-------------------------------------------- |
+| `character`        | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取 GIF 的 Character              |
+| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md)                       | usage: 镜头相对位置                           |
+| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md)                   | usage: 镜头相对旋转                           |
+| `resolution`       | [`Vector2`](../classes/Type.Type.Vector2.md)                     | usage: 截图尺寸                               |
+| `bShowOnly`        | `boolean`                                                        | usage: true 时只截取角色，背景 Alpha 值置为 0 |
+| `fov`              | `number`                                                         | usage: 视场;                                  |
+| `fileName`         | `string`                                                         | usage: 文件名                                 |
+| `callback`         | (`dataString`: `string`) => `void`                               | usage: 获取本地截图路径 default:null          |
 
 #### Returns
 
@@ -406,37 +409,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:694
+MobileEditor/index.d.ts:706
 
-___
+---
 
-### getOnTapGesture
+### getOneFingerMoveGestureDelegate
 
-▸ **getOnTapGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
-
-**`Description`**
-
-获取点击事件的代理
-
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-[`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
-
-返回的代理
-
-#### Defined in
-
-MobileEditor/index.d.ts:451
-
-___
-
-### getOneFignerMoveGesture
-
-▸ **getOneFignerMoveGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+▸ **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
 
 **`Description`**
 
@@ -454,13 +433,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:459
+MobileEditor/index.d.ts:471
 
-___
+---
 
-### getPinchGesture
+### getPinchGestureDelegate
 
-▸ **getPinchGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+▸ **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
 
 **`Description`**
 
@@ -478,13 +457,61 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:475
+MobileEditor/index.d.ts:487
 
-___
+---
 
-### getTouchBeganGesture
+### getSavedDir
 
-▸ **getTouchBeganGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+▸ **getSavedDir**(): `string`
+
+**`Description`**
+
+获取截图的保存路径
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+`string`
+
+保存路径的绝对路径
+
+#### Defined in
+
+MobileEditor/index.d.ts:756
+
+---
+
+### getTapGestureDelegate
+
+▸ **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+
+**`Description`**
+
+获取点击事件的代理
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+
+返回的代理
+
+#### Defined in
+
+MobileEditor/index.d.ts:463
+
+---
+
+### getTouchBeganGestureDelegate
+
+▸ **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
 
 **`Description`**
 
@@ -502,9 +529,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:483
+MobileEditor/index.d.ts:495
 
-___
+---
 
 ### getTouchData
 
@@ -512,7 +539,7 @@ ___
 
 **`Description`**
 
-获取touch的数组
+获取 touch 的数组
 
 **`Effect`**
 
@@ -522,17 +549,17 @@ ___
 
 [`Vector`](../classes/Type.Type.Vector.md)[]
 
-返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况
+返回一个 10 维数组 Vector, x,y 点击的位置,z 代表点击的状态 只会出现 0,1 的情况
 
 #### Defined in
 
-MobileEditor/index.d.ts:537
+MobileEditor/index.d.ts:549
 
-___
+---
 
-### getTouchEndGesture
+### getTouchEndGestureDelegate
 
-▸ **getTouchEndGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+▸ **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
 
 **`Description`**
 
@@ -550,13 +577,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:499
+MobileEditor/index.d.ts:511
 
-___
+---
 
-### getTouchMoveGesture
+### getTouchMoveGestureDelegate
 
-▸ **getTouchMoveGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+▸ **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
 
 **`Description`**
 
@@ -574,13 +601,13 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:491
+MobileEditor/index.d.ts:503
 
-___
+---
 
-### getTwoFignerMoveGesture
+### getTwoFingerMoveGestureDelegate
 
-▸ **getTwoFignerMoveGesture**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
+▸ **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Type.Vector2.md)) => `void`\>
 
 **`Description`**
 
@@ -598,9 +625,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:467
+MobileEditor/index.d.ts:479
 
-___
+---
 
 ### mobileReleaseGame
 
@@ -612,12 +639,12 @@ ___
 
 **`Effect`**
 
-只在ListenServer模式下调用生效
+只在 ListenServer 模式下调用生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type     | Description    |
+| :----------- | :------- | :------------- |
 | `InGameName` | `string` | usage:游戏名称 |
 
 #### Returns
@@ -626,9 +653,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:596
+MobileEditor/index.d.ts:608
 
-___
+---
 
 ### recordingCharacterGif
 
@@ -636,7 +663,7 @@ ___
 
 **`Description`**
 
-连续截图，生成GIF素材发送给服务器
+连续截图，生成 GIF 素材发送给服务器
 
 **`Effect`**
 
@@ -644,20 +671,20 @@ ___
 
 **`Precautions`**
 
-Playza定制接口
+Playza 定制接口
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Character` | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md) | usage: 镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage: 镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
-| `resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage: 截图尺寸 |
-| `bShowOnly` | `boolean` | usage: true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` | usage: 镜头FOV值 |
-| `picNum` | `number` | usage: 截取图像张数 |
-| `recordingTime` | `number` | usage: 截取持续时长 |
+| Name               | Type                                                             | Description                                                  |
+| :----------------- | :--------------------------------------------------------------- | :----------------------------------------------------------- |
+| `Character`        | [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md) | usage: 指定截取 GIF 的 Character                             |
+| `relativeLocation` | [`Vector`](../classes/Type.Type.Vector.md)                       | usage: 镜头相对位置 ScreenShot()中默认为 Vector(35, 0, 50)   |
+| `relativeRotation` | [`Rotation`](../classes/Type.Type.Rotation.md)                   | usage: 镜头相对旋转 ScreenShot()中默认为 Rotation(0, 180, 0) |
+| `resolution`       | [`Vector2`](../classes/Type.Type.Vector2.md)                     | usage: 截图尺寸                                              |
+| `bShowOnly`        | `boolean`                                                        | usage: true 时只截取角色，背景 Alpha 值置为 0                |
+| `fov`              | `number`                                                         | usage: 镜头 FOV 值                                           |
+| `picNum`           | `number`                                                         | usage: 截取图像张数                                          |
+| `recordingTime`    | `number`                                                         | usage: 截取持续时长                                          |
 
 #### Returns
 
@@ -665,9 +692,9 @@ Playza定制接口
 
 #### Defined in
 
-MobileEditor/index.d.ts:745
+MobileEditor/index.d.ts:783
 
-___
+---
 
 ### redo
 
@@ -687,9 +714,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:561
+MobileEditor/index.d.ts:573
 
-___
+---
 
 ### saveProject
 
@@ -701,11 +728,11 @@ ___
 
 **`Effect`**
 
-只在ListenServer模式下调用生效
+只在 ListenServer 模式下调用生效
 
 **`Precautions`**
 
-在PIE模式下无法调用
+在 PIE 模式下无法调用
 
 #### Returns
 
@@ -713,44 +740,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:583
+MobileEditor/index.d.ts:595
 
-___
-
-### saveScreenShot
-
-▸ **saveScreenShot**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void`
-
-**`Description`**
-
-保存角色头像到服务器后发送到MGS
-
-**`Effect`**
-
-只在客户端调用生效
-
-**`Precautions`**
-
-Playza定制接口
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `gender` | `number` | usage:1-男 2-女 0-未知 |
-| `portraitPath` | `string` | usage:头像照路径 |
-| `fullPicPath` | `string` | usage:全身照路径 |
-| `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | usage:获取上传后在服务器中的URL default:null |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:713
-
-___
+---
 
 ### screenShot
 
@@ -766,13 +758,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:分辨率 |
+| Name         | Type                                         | Description                                         |
+| :----------- | :------------------------------------------- | :-------------------------------------------------- |
+| `Resolution` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:分辨率                                        |
 | `StartPoint` | [`Vector2`](../classes/Type.Type.Vector2.md) | usage:截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
-| `Width` | `number` | usage:截图区域的宽度 |
-| `Height` | `number` | usage:截图区域的高度 |
-| `callback` | (`dataString`: `string`) => `void` | usage: 获取本地截图路径 default:null |
+| `Width`      | `number`                                     | usage:截图区域的宽度                                |
+| `Height`     | `number`                                     | usage:截图区域的高度                                |
+| `callback`   | (`dataString`: `string`) => `void`           | usage: 获取本地截图路径 default:null                |
 
 #### Returns
 
@@ -780,9 +772,39 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:632
+MobileEditor/index.d.ts:644
 
-___
+---
+
+### screenShotExist
+
+▸ **screenShotExist**(`absPath`): `boolean`
+
+**`Description`**
+
+验证绝对路径下截图是否存在
+
+**`Effect`**
+
+只在客户端调用生效
+
+#### Parameters
+
+| Name      | Type     | Description           |
+| :-------- | :------- | :-------------------- |
+| `absPath` | `string` | usage: 图片的绝对路径 |
+
+#### Returns
+
+`boolean`
+
+该文件是否存在
+
+#### Defined in
+
+MobileEditor/index.d.ts:750
+
+---
 
 ### sendShareId
 
@@ -790,7 +812,7 @@ ___
 
 **`Description`**
 
-将角色数据ID连同角色截图一同发给MGS
+将角色数据 ID 连同角色截图一同发给 MGS
 
 **`Effect`**
 
@@ -798,15 +820,15 @@ ___
 
 **`Precautions`**
 
-Playza定制接口
+Playza 定制接口
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `absPath` | `string` | usage: 分享截图的绝对路径 |
-| `shareId` | `string` | usage: 分享的角色数据id,可为空 |
-| `bShowUuid` | `boolean` | usage: 是否在显示账户的Uuid |
+| Name        | Type      | Description                     |
+| :---------- | :-------- | :------------------------------ |
+| `absPath`   | `string`  | usage: 分享截图的绝对路径       |
+| `shareId`   | `string`  | usage: 分享的角色数据 id,可为空 |
+| `bShowUuid` | `boolean` | usage: 是否在显示账户的 Uuid    |
 
 #### Returns
 
@@ -814,9 +836,9 @@ Playza定制接口
 
 #### Defined in
 
-MobileEditor/index.d.ts:727
+MobileEditor/index.d.ts:765
 
-___
+---
 
 ### setEditorCameraLocation
 
@@ -824,7 +846,7 @@ ___
 
 **`Description`**
 
-设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物 body
 
 **`Effect`**
 
@@ -832,8 +854,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                       | Description                      |
+| :------ | :----------------------------------------- | :------------------------------- |
 | `input` | [`Vector`](../classes/Type.Type.Vector.md) | usage:编辑器人物会被设置到的位置 |
 
 #### Returns
@@ -844,9 +866,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:424
+MobileEditor/index.d.ts:436
 
-___
+---
 
 ### setEditorCameraRotation
 
@@ -854,7 +876,7 @@ ___
 
 **`Description`**
 
-添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物 body
 
 **`Effect`**
 
@@ -862,8 +884,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                           | Description  |
+| :------ | :--------------------------------------------- | :----------- |
 | `input` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage:输入值 |
 
 #### Returns
@@ -874,9 +896,9 @@ bool 是否设置成功
 
 #### Defined in
 
-MobileEditor/index.d.ts:417
+MobileEditor/index.d.ts:429
 
-___
+---
 
 ### setEditorCameraTransform
 
@@ -884,7 +906,7 @@ ___
 
 **`Description`**
 
-设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+设置编辑器摄像机的空间信息 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物 body
 
 **`Effect`**
 
@@ -892,8 +914,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                             | Description                                |
+| :------ | :----------------------------------------------- | :----------------------------------------- |
 | `input` | [`Transform`](../classes/Type.Type.Transform.md) | usage:编辑器摄像机会被设置到的位置旋转缩放 |
 
 #### Returns
@@ -904,9 +926,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:431
+MobileEditor/index.d.ts:443
 
-___
+---
 
 ### setEditorPawnLocation
 
@@ -922,8 +944,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                       | Description                      |
+| :------ | :----------------------------------------- | :------------------------------- |
 | `input` | [`Vector`](../classes/Type.Type.Vector.md) | usage:编辑器人物会被设置到的位置 |
 
 #### Returns
@@ -934,9 +956,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:403
+MobileEditor/index.d.ts:415
 
-___
+---
 
 ### setEditorPawnRotation
 
@@ -952,8 +974,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                           | Description  |
+| :------ | :--------------------------------------------- | :----------- |
 | `input` | [`Rotation`](../classes/Type.Type.Rotation.md) | usage:输入值 |
 
 #### Returns
@@ -964,9 +986,9 @@ bool 是否设置成功
 
 #### Defined in
 
-MobileEditor/index.d.ts:396
+MobileEditor/index.d.ts:408
 
-___
+---
 
 ### setEditorPawnTransform
 
@@ -982,8 +1004,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                             | Description                              |
+| :------ | :----------------------------------------------- | :--------------------------------------- |
 | `input` | [`Transform`](../classes/Type.Type.Transform.md) | usage:编辑器人物会被设置到的位置旋转缩放 |
 
 #### Returns
@@ -994,9 +1016,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:410
+MobileEditor/index.d.ts:422
 
-___
+---
 
 ### setMultiSwipeTime
 
@@ -1012,8 +1034,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description               |
+| :----- | :------- | :------------------------ |
 | `time` | `number` | usage: 双指移动限定的时间 |
 
 #### Returns
@@ -1022,9 +1044,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:525
+MobileEditor/index.d.ts:537
 
-___
+---
 
 ### setPinchAngleTolerance
 
@@ -1040,8 +1062,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description     |
+| :----- | :------- | :-------------- |
 | `time` | `number` | usage: 偏差角度 |
 
 #### Returns
@@ -1050,9 +1072,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:519
+MobileEditor/index.d.ts:531
 
-___
+---
 
 ### setSingleSwipeTime
 
@@ -1068,8 +1090,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description               |
+| :----- | :------- | :------------------------ |
 | `time` | `number` | usage: 单指移动的限定时间 |
 
 #### Returns
@@ -1078,9 +1100,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:513
+MobileEditor/index.d.ts:525
 
-___
+---
 
 ### setSwipeTolerance
 
@@ -1096,8 +1118,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description   |
+| :----- | :------- | :------------ |
 | `time` | `number` | usage: 偏差值 |
 
 #### Returns
@@ -1106,9 +1128,9 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:531
+MobileEditor/index.d.ts:543
 
-___
+---
 
 ### setTapTime
 
@@ -1116,7 +1138,7 @@ ___
 
 **`Description`**
 
-tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
+tap 点击的时间间隔- 如果在这个时间以内算 tap，大于这个时间则是 move
 
 **`Effect`**
 
@@ -1124,9 +1146,9 @@ tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `time` | `number` | usage: tap限定的时间 |
+| Name   | Type     | Description           |
+| :----- | :------- | :-------------------- |
+| `time` | `number` | usage: tap 限定的时间 |
 
 #### Returns
 
@@ -1134,9 +1156,9 @@ tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间
 
 #### Defined in
 
-MobileEditor/index.d.ts:507
+MobileEditor/index.d.ts:519
 
-___
+---
 
 ### undo
 
@@ -1156,4 +1178,73 @@ ___
 
 #### Defined in
 
-MobileEditor/index.d.ts:556
+MobileEditor/index.d.ts:568
+
+---
+
+### uploadScreenShot
+
+▸ **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void`
+
+**`Description`**
+
+上传角色头像或全身照到服务器后发送到 MGS
+
+**`Effect`**
+
+只在客户端调用生效
+
+**`Precautions`**
+
+Playza 定制接口
+
+#### Parameters
+
+| Name           | Type                                | Description                                             |
+| :------------- | :---------------------------------- | :------------------------------------------------------ |
+| `filePath`     | `string`                            | usage:图片路径                                          |
+| `fileType`     | `number`                            | usage:图片类型 default:0-全身照,1-男性头像 2-女性头像   |
+| `callbackURL?` | (`responseURL`: `string`) => `void` | usage:获取上传后在服务器中的 URL default:null，可选参数 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+MobileEditor/index.d.ts:739
+
+---
+
+### uploadScreenShots
+
+▸ **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void`
+
+**`Description`**
+
+上传角色头像及全身照到服务器后发送到 MGS
+
+**`Effect`**
+
+只在客户端调用生效
+
+**`Precautions`**
+
+Playza 定制接口
+
+#### Parameters
+
+| Name           | Type                                                | Description                                             |
+| :------------- | :-------------------------------------------------- | :------------------------------------------------------ |
+| `gender`       | `number`                                            | usage:角色性别，1-男 2-女 0-未知                        |
+| `portraitPath` | `string`                                            | usage:头像照路径                                        |
+| `fullPicPath`  | `string`                                            | usage:全身照路径                                        |
+| `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | usage:获取上传后在服务器中的 URL default:null，可选参数 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+MobileEditor/index.d.ts:725

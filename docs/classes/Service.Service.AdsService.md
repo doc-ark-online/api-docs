@@ -4,11 +4,11 @@
 
 [Service](../modules/Service.md).[Service](../modules/Service.Service.md).AdsService
 
+**`Instance`**
+
 **`Author`**
 
 huipeng.jia & lei.zhao
-
-**`Instance`**
 
 **`Description`**
 
@@ -16,7 +16,7 @@ huipeng.jia & lei.zhao
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
@@ -57,21 +57,21 @@ usage: 客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                             | Description     |
+| :-------- | :----------------------------------------------- | :-------------- |
 | `adsType` | [`AdsType`](../enums/Service.Service.AdsType.md) | usage: 广告类型 |
 
 #### Returns
 
 `boolean`
 
-boolean
+true:该类型广告已激活，false:该类型广告未激活
 
 #### Defined in
 
 Service/index.d.ts:215
 
-___
+---
 
 ### isReady
 
@@ -87,14 +87,14 @@ ___
 
 **`Precautions`**
 
-结果不准确，可能在广告准备好的情况返回false
+结果不准确，可能在广告准备好的情况返回 false
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/Service.Service.AdsType.md) | usage: 广告类型 |
-| `callback` | (`isReady`: `boolean`) => `void` | usage: 接收广告事件的回调 |
+| Name       | Type                                             | Description               |
+| :--------- | :----------------------------------------------- | :------------------------ |
+| `adsType`  | [`AdsType`](../enums/Service.Service.AdsType.md) | usage: 广告类型           |
+| `callback` | (`isReady`: `boolean`) => `void`                 | usage: 接收广告事件的回调 |
 
 #### Returns
 
@@ -104,7 +104,7 @@ ___
 
 Service/index.d.ts:208
 
-___
+---
 
 ### show
 
@@ -120,9 +120,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/Service.Service.AdsType.md) | usage: 广告类型 |
+| Name       | Type                                                                    | Description             |
+| :--------- | :---------------------------------------------------------------------- | :---------------------- |
+| `adsType`  | [`AdsType`](../enums/Service.Service.AdsType.md)                        | usage: 广告类型         |
 | `callback` | (`state`: [`AdsState`](../enums/Service.Service.AdsState.md)) => `void` | usage: 广告播放结果回调 |
 
 #### Returns
@@ -131,9 +131,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:227
+Service/index.d.ts:222
 
-___
+---
 
 ### getInstance
 

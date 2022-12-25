@@ -6,7 +6,7 @@
 
 **`Author`**
 
-Litengxiao
+tengxiao.li
 
 **`Description`**
 
@@ -52,9 +52,9 @@ usage:客户端
 
 #### Defined in
 
-Gameplay/index.d.ts:10059
+Gameplay/index.d.ts:10133
 
-___
+---
 
 ### onTouchBegin
 
@@ -66,9 +66,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:10065
+Gameplay/index.d.ts:10139
 
-___
+---
 
 ### onTouchEnd
 
@@ -80,9 +80,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:10077
+Gameplay/index.d.ts:10151
 
-___
+---
 
 ### onTouchMove
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:10071
+Gameplay/index.d.ts:10145
 
 ## Methods
 
@@ -114,13 +114,13 @@ Gameplay/index.d.ts:10071
 
 [`Vector`](Type.Type.Vector.md)[]
 
-当前Touch数组
+当前 Touch 数组
 
 #### Defined in
 
-Gameplay/index.d.ts:10090
+Gameplay/index.d.ts:10164
 
-___
+---
 
 ### setPlayerController
 
@@ -140,4 +140,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:10084
+Gameplay/index.d.ts:10158

@@ -6,7 +6,7 @@
 
 **`Description`**
 
-gizmo类型
+gizmo 类型
 
 ## Table of contents
 
@@ -20,34 +20,34 @@ gizmo类型
 
 ### Location
 
-• **Location** = ``0``
+• **Location** = `0`
 
 位置
 
 #### Defined in
 
-MobileEditor/index.d.ts:615
+MobileEditor/index.d.ts:627
 
-___
+---
 
 ### Rotation
 
-• **Rotation** = ``1``
+• **Rotation** = `1`
 
 旋转
 
 #### Defined in
 
-MobileEditor/index.d.ts:617
+MobileEditor/index.d.ts:629
 
-___
+---
 
 ### Scale
 
-• **Scale** = ``2``
+• **Scale** = `2`
 
 大小
 
 #### Defined in
 
-MobileEditor/index.d.ts:619
+MobileEditor/index.d.ts:631

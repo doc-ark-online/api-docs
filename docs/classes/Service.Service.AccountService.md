@@ -16,7 +16,7 @@ huipeng.jia & guang.deng
 
 **`Precautions`**
 
-单例类，请使用getInstance获取对象
+单例类，请使用 getInstance 获取对象
 
 **`Network Status`**
 
@@ -58,7 +58,7 @@ usage: 客户端
 
 **`Description`**
 
-应用分享Id的角色数据
+应用分享 Id 的角色数据
 
 **`Effect`**
 
@@ -66,11 +66,11 @@ usage: 客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:分享换装数据的角色 |
-| `id` | `string` | usage:分享Id |
-| `callback` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | usage: 回调参数，true:应用成功；false:应用失败 |
+| Name        | Type                                                         | Description                                    |
+| :---------- | :----------------------------------------------------------- | :--------------------------------------------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)        | usage:分享换装数据的角色                       |
+| `id`        | `string`                                                     | usage:分享 Id                                  |
+| `callback`  | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | usage: 回调参数，true:应用成功；false:应用失败 |
 
 #### Returns
 
@@ -80,7 +80,7 @@ usage: 客户端
 
 Service/index.d.ts:135
 
-___
+---
 
 ### createSharedId
 
@@ -88,7 +88,7 @@ ___
 
 **`Description`**
 
-生成分享Id
+生成分享 Id
 
 **`Effect`**
 
@@ -96,10 +96,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:分享换装数据的角色 |
-| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage: 回调参数，返回生成的Id |
+| Name        | Type                                                             | Description                    |
+| :---------- | :--------------------------------------------------------------- | :----------------------------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)            | usage:分享换装数据的角色       |
+| `callback`  | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage: 回调参数，返回生成的 Id |
 
 #### Returns
 
@@ -109,7 +109,7 @@ ___
 
 Service/index.d.ts:124
 
-___
+---
 
 ### dataShowToOther
 
@@ -125,10 +125,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:资源位(0-5) default:0,主角资源位 |
-| `isOpen` | `boolean` | usage:是否公开 |
+| Name        | Type                                                         | Description                             |
+| :---------- | :----------------------------------------------------------- | :-------------------------------------- |
+| `index`     | `number`                                                     | usage:资源位(0-5) default:0,主角资源位  |
+| `isOpen`    | `boolean`                                                    | usage:是否公开                          |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | usage:设置是否成功的回调 default:无回调 |
 
 #### Returns
@@ -139,7 +139,7 @@ ___
 
 Service/index.d.ts:113
 
-___
+---
 
 ### downloadData
 
@@ -155,11 +155,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:要应用换装数据的角色 |
+| Name        | Type                                                                                                                         | Description                                   |
+| :---------- | :--------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)                                                                        | usage:要应用换装数据的角色                    |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | usage:设置是否成功的回调 default:默认没有回调 |
-| `index?` | `number` | usage:角色位(0-5) default:0,主角资源位 |
+| `index?`    | `number`                                                                                                                     | usage:角色位(0-5) default:0,主角资源位        |
 
 #### Returns
 
@@ -169,7 +169,7 @@ ___
 
 Service/index.d.ts:101
 
-___
+---
 
 ### downloadDefaultDataString
 
@@ -185,9 +185,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage:回调 |
+| Name       | Type                                                             | Description |
+| :--------- | :--------------------------------------------------------------- | :---------- |
+| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage:回调  |
 
 #### Returns
 
@@ -197,7 +197,7 @@ ___
 
 Service/index.d.ts:79
 
-___
+---
 
 ### fillAvatar
 
@@ -205,7 +205,7 @@ ___
 
 **`Description`**
 
-将头像赋值到Image变量上
+将头像赋值到 Image 变量上
 
 **`Effect`**
 
@@ -213,13 +213,13 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `img` | [`Image`](UI.UI.Image.md) | usage:需要赋值获得头像的Image变量 |
+| Name  | Type                      | Description                         |
+| :---- | :------------------------ | :---------------------------------- |
+| `img` | [`Image`](UI.UI.Image.md) | usage:需要赋值获得头像的 Image 变量 |
 
 #### Returns
 
@@ -229,7 +229,7 @@ ___
 
 Service/index.d.ts:73
 
-___
+---
 
 ### getNickName
 
@@ -245,7 +245,7 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
@@ -257,7 +257,7 @@ ___
 
 Service/index.d.ts:66
 
-___
+---
 
 ### getOpenId
 
@@ -265,7 +265,7 @@ ___
 
 **`Description`**
 
-获取OpenId
+获取 OpenId
 
 **`Effect`**
 
@@ -273,7 +273,7 @@ ___
 
 **`Precautions`**
 
-只在由233拉起生效
+只在由 233 拉起生效
 
 #### Returns
 
@@ -285,7 +285,7 @@ OpenId
 
 Service/index.d.ts:53
 
-___
+---
 
 ### getUserData
 
@@ -301,11 +301,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `userId` | `string` | usage:用户Id |
-| `index` | `number` | usage:资源位(0-5) |
-| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage:返回获取的数据string. |
+| Name       | Type                                                             | Description                  |
+| :--------- | :--------------------------------------------------------------- | :--------------------------- |
+| `userId`   | `string`                                                         | usage:用户 Id                |
+| `index`    | `number`                                                         | usage:资源位(0-5)            |
+| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | usage:返回获取的数据 string. |
 
 #### Returns
 
@@ -315,7 +315,7 @@ ___
 
 Service/index.d.ts:147
 
-___
+---
 
 ### getUserId
 
@@ -323,7 +323,7 @@ ___
 
 **`Description`**
 
-获取平台的用户Id,可以用于getUserData接口
+获取平台的用户 Id,可以用于 getUserData 接口
 
 **`Effect`**
 
@@ -333,13 +333,13 @@ ___
 
 `string`
 
-用户Id
+用户 Id
 
 #### Defined in
 
 Service/index.d.ts:59
 
-___
+---
 
 ### setUserData
 
@@ -355,11 +355,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage: 用于换装的角色 |
-| `dataString` | `string` | usage: 返回的数据 |
-| `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | usage:设置是否成功的回调 default:无回调 |
+| Name         | Type                                                         | Description                             |
+| :----------- | :----------------------------------------------------------- | :-------------------------------------- |
+| `character`  | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)        | usage: 用于换装的角色                   |
+| `dataString` | `string`                                                     | usage: 返回的数据                       |
+| `callback?`  | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | usage:设置是否成功的回调 default:无回调 |
 
 #### Returns
 
@@ -369,7 +369,7 @@ ___
 
 Service/index.d.ts:155
 
-___
+---
 
 ### uploadData
 
@@ -377,7 +377,7 @@ ___
 
 **`Description`**
 
-上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
+上传角色形象资源到服务器 Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
 **`Effect`**
 
@@ -385,12 +385,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:要上传换装数据的角色 |
-| `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | usage:设置是否成功的回调 default:默认没有回调 |
-| `index?` | `number` | usage:角色位(0-5) default:0,主角资源位 |
-| `openStatus?` | `number` | usage:开发状态 default:1,默认是开放状态 |
+| Name          | Type                                                                                                                         | Description                                   |
+| :------------ | :--------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
+| `character`   | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)                                                                        | usage:要上传换装数据的角色                    |
+| `callback?`   | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | usage:设置是否成功的回调 default:默认没有回调 |
+| `index?`      | `number`                                                                                                                     | usage:角色位(0-5) default:0,主角资源位        |
+| `openStatus?` | `number`                                                                                                                     | usage:开发状态 default:1,默认是开放状态       |
 
 #### Returns
 
@@ -400,7 +400,7 @@ ___
 
 Service/index.d.ts:88
 
-___
+---
 
 ### getInstance
 

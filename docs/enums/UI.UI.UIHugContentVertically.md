@@ -19,22 +19,22 @@
 
 ### FixHeight
 
-• **FixHeight** = ``0``
+• **FixHeight** = `0`
 
 固定高度
 
 #### Defined in
 
-UI/index.d.ts:3360
+UI/index.d.ts:3369
 
-___
+---
 
 ### HugContent
 
-• **HugContent** = ``1``
+• **HugContent** = `1`
 
 自适应高度
 
 #### Defined in
 
-UI/index.d.ts:3362
+UI/index.d.ts:3371

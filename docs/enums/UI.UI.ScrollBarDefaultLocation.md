@@ -20,34 +20,34 @@
 
 ### BottomOrRight
 
-• **BottomOrRight** = ``2``
+• **BottomOrRight** = `2`
 
 默认底部/右侧
 
 #### Defined in
 
-UI/index.d.ts:3608
+UI/index.d.ts:3617
 
-___
+---
 
 ### Center
 
-• **Center** = ``1``
+• **Center** = `1`
 
 默认居中
 
 #### Defined in
 
-UI/index.d.ts:3606
+UI/index.d.ts:3615
 
-___
+---
 
 ### TopOrLeft
 
-• **TopOrLeft** = ``0``
+• **TopOrLeft** = `0`
 
 默认顶部/左侧
 
 #### Defined in
 
-UI/index.d.ts:3604
+UI/index.d.ts:3613

@@ -19,22 +19,22 @@
 
 ### Random
 
-• **Random** = ``0``
+• **Random** = `0`
 
 随机值
 
 #### Defined in
 
-Gameplay/index.d.ts:1753
+Gameplay/index.d.ts:1937
 
-___
+---
 
 ### Zero
 
-• **Zero** = ``1``
+• **Zero** = `1`
 
 零
 
 #### Defined in
 
-Gameplay/index.d.ts:1755
+Gameplay/index.d.ts:1939

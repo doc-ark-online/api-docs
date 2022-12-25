@@ -10,7 +10,7 @@ huipeng.jia
 
 **`Description`**
 
-序列工具类，主要用于获取连续的ID
+序列工具类，主要用于获取连续的 ID
 
 **`Network Status`**
 
@@ -40,7 +40,7 @@ usage: 双端
 
 **`Description`**
 
-获取下一个ID
+获取下一个 ID
 
 **`Effect`**
 
@@ -50,8 +50,8 @@ usage: 双端
 
 `number`
 
-下一个ID
+下一个 ID
 
 #### Defined in
 
-Util/index.d.ts:627
+Util/index.d.ts:848

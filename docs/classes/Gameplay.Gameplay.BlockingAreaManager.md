@@ -6,7 +6,7 @@
 
 **`Author`**
 
-李腾骁
+tengxiao.li
 
 **`Description`**
 
@@ -23,8 +23,9 @@ usage:双端
 **`Example`**
 
 使用示例:单例
+
 ```
-无需主动生成
+// 无需主动生成
 ```
 
 ## Table of contents
@@ -51,7 +52,7 @@ usage:双端
 
 **`Author`**
 
-李腾骁
+tengxiao.li
 
 **`Description`**
 
@@ -64,17 +65,18 @@ usage:双端
 **`Example`**
 
 使用示例:setPlayerPassableWithAllArea
+
 ```
 setPlayerPassableForArea(player,true,player.getPlayerID())
 ```
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Target` | `MWActor` | usage:对应Actor |
+| Name      | Type      | Description        |
+| :-------- | :-------- | :----------------- |
+| `Target`  | `MWActor` | usage:对应 Actor   |
 | `CanPass` | `boolean` | usage:是否能够通过 |
-| `Guid` | `number` | usage:Guid |
+| `Guid`    | `number`  | usage:Guid         |
 
 #### Returns
 
@@ -82,4 +84,4 @@ setPlayerPassableForArea(player,true,player.getPlayerID())
 
 #### Defined in
 
-Gameplay/index.d.ts:8401
+Gameplay/index.d.ts:8541

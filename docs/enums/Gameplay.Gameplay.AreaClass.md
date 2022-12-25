@@ -15,52 +15,52 @@
 - [Default](Gameplay.Gameplay.AreaClass.md#default)
 - [LowHeight](Gameplay.Gameplay.AreaClass.md#lowheight)
 - [Null](Gameplay.Gameplay.AreaClass.md#null)
-- [ObStacle](Gameplay.Gameplay.AreaClass.md#obstacle)
+- [Obstacle](Gameplay.Gameplay.AreaClass.md#obstacle)
 
 ## Enumeration Members
 
 ### Default
 
-• **Default** = ``1``
+• **Default** = `1`
 
-默认
+默认，常规导航区域，默认应用于整个导航数据
 
 #### Defined in
 
-Gameplay/index.d.ts:12394
+Gameplay/index.d.ts:12076
 
-___
+---
 
 ### LowHeight
 
-• **LowHeight** = ``2``
+• **LowHeight** = `2`
 
-高度限定
+高度限定，在上面自由高度不足的空间中可以产生的特殊区域。任何人都不能穿越
 
 #### Defined in
 
-Gameplay/index.d.ts:12396
+Gameplay/index.d.ts:12078
 
-___
+---
 
 ### Null
 
-• **Null** = ``0``
+• **Null** = `0`
 
-无效
-
-#### Defined in
-
-Gameplay/index.d.ts:12392
-
-___
-
-### ObStacle
-
-• **ObStacle** = ``3``
-
-低优先级
+无效，通常代表一个空区域，任何人都不能穿越
 
 #### Defined in
 
-Gameplay/index.d.ts:12398
+Gameplay/index.d.ts:12074
+
+---
+
+### Obstacle
+
+• **Obstacle** = `3`
+
+低优先级，通常代表高成本区域，除非没有其他路径存在，否则任何人都不应该穿越该区域
+
+#### Defined in
+
+Gameplay/index.d.ts:12080

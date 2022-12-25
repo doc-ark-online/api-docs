@@ -20,34 +20,34 @@
 
 ### ElasticAnimation
 
-• **ElasticAnimation** = ``0``
+• **ElasticAnimation** = `0`
 
 弹性运动
 
 #### Defined in
 
-UI/index.d.ts:3402
+UI/index.d.ts:3411
 
-___
+---
 
 ### Limit
 
-• **Limit** = ``2``
+• **Limit** = `2`
 
 限制
 
 #### Defined in
 
-UI/index.d.ts:3406
+UI/index.d.ts:3415
 
-___
+---
 
 ### NoneLimit
 
-• **NoneLimit** = ``1``
+• **NoneLimit** = `1`
 
 不做限制
 
 #### Defined in
 
-UI/index.d.ts:3404
+UI/index.d.ts:3413

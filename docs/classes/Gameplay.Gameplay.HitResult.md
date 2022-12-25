@@ -6,7 +6,7 @@
 
 **`Author`**
 
-Sunxiangkun
+xiangkun.sun
 
 **`Description`**
 
@@ -54,9 +54,9 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2288
+Gameplay/index.d.ts:2433
 
-___
+---
 
 ### boneName
 
@@ -68,9 +68,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2324
+Gameplay/index.d.ts:2469
 
-___
+---
 
 ### distance
 
@@ -78,27 +78,27 @@ ___
 
 **`Description`**
 
-距离，traceStart到location的距离
+距离，traceStart 到 location 的距离
 
 #### Defined in
 
-Gameplay/index.d.ts:2296
+Gameplay/index.d.ts:2441
 
-___
+---
 
 ### gameObject
 
-• **gameObject**: [`GameObject`](Core.Core.GameObject.md)
+• **gameObject**: `GameObject`
 
 **`Description`**
 
-命中的GameObject
+命中的 GameObject
 
 #### Defined in
 
-Gameplay/index.d.ts:2328
+Gameplay/index.d.ts:2473
 
-___
+---
 
 ### impactNormal
 
@@ -110,9 +110,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2312
+Gameplay/index.d.ts:2457
 
-___
+---
 
 ### impactPoint
 
@@ -124,9 +124,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2304
+Gameplay/index.d.ts:2449
 
-___
+---
 
 ### location
 
@@ -138,9 +138,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2300
+Gameplay/index.d.ts:2445
 
-___
+---
 
 ### normal
 
@@ -152,9 +152,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2308
+Gameplay/index.d.ts:2453
 
-___
+---
 
 ### time
 
@@ -166,9 +166,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2292
+Gameplay/index.d.ts:2437
 
-___
+---
 
 ### traceEnd
 
@@ -180,9 +180,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2320
+Gameplay/index.d.ts:2465
 
-___
+---
 
 ### traceStart
 
@@ -194,4 +194,4 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2316
+Gameplay/index.d.ts:2461

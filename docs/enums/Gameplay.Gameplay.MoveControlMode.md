@@ -13,67 +13,67 @@
 ### Enumeration Members
 
 - [FaceMode](Gameplay.Gameplay.MoveControlMode.md#facemode)
-- [Fixedmode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)
+- [FixedMode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)
 - [FollowMode](Gameplay.Gameplay.MoveControlMode.md#followmode)
-- [Freedmode](Gameplay.Gameplay.MoveControlMode.md#freedmode)
+- [FreeMode](Gameplay.Gameplay.MoveControlMode.md#freemode)
 - [null](Gameplay.Gameplay.MoveControlMode.md#null)
 
 ## Enumeration Members
 
 ### FaceMode
 
-• **FaceMode** = ``2``
+• **FaceMode** = `2`
 
 面向模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1557
+Gameplay/index.d.ts:1705
 
-___
+---
 
-### Fixedmode
+### FixedMode
 
-• **Fixedmode** = ``1``
+• **FixedMode** = `1`
 
 固定模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1555
+Gameplay/index.d.ts:1703
 
-___
+---
 
 ### FollowMode
 
-• **FollowMode** = ``3``
+• **FollowMode** = `3`
 
 运动模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1559
+Gameplay/index.d.ts:1707
 
-___
+---
 
-### Freedmode
+### FreeMode
 
-• **Freedmode** = ``4``
+• **FreeMode** = `4`
 
 自由模式
 
 #### Defined in
 
-Gameplay/index.d.ts:1561
+Gameplay/index.d.ts:1709
 
-___
+---
 
 ### null
 
-• **null** = ``0``
+• **null** = `0`
 
 空
 
 #### Defined in
 
-Gameplay/index.d.ts:1553
+Gameplay/index.d.ts:1701

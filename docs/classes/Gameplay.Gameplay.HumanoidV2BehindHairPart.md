@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V2后发部位接口
+人形对象 V2 后发部位接口
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -73,9 +73,9 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5358
+Gameplay/index.d.ts:5491
 
-___
+---
 
 ### getGradientColor
 
@@ -101,9 +101,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5373
+Gameplay/index.d.ts:5506
 
-___
+---
 
 ### getGradientIntensity
 
@@ -129,9 +129,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5388
+Gameplay/index.d.ts:5521
 
-___
+---
 
 ### getHighlightColor
 
@@ -157,9 +157,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5418
+Gameplay/index.d.ts:5551
 
-___
+---
 
 ### getHighlightMask
 
@@ -185,9 +185,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:5403
+Gameplay/index.d.ts:5536
 
-___
+---
 
 ### getMesh
 
@@ -205,7 +205,7 @@ ___
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Implementation of
 
@@ -213,9 +213,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:5343
+Gameplay/index.d.ts:5476
 
-___
+---
 
 ### setColor
 
@@ -232,10 +232,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -247,9 +247,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5352
+Gameplay/index.d.ts:5485
 
-___
+---
 
 ### setGradientColor
 
@@ -266,10 +266,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -281,9 +281,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5367
+Gameplay/index.d.ts:5500
 
-___
+---
 
 ### setGradientIntensity
 
@@ -300,10 +300,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `intensity` | `number` | usage:强度 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name        | Type      | Description                   |
+| :---------- | :-------- | :---------------------------- |
+| `intensity` | `number`  | usage:强度                    |
+| `sync`      | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -315,9 +315,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5382
+Gameplay/index.d.ts:5515
 
-___
+---
 
 ### setHighlightColor
 
@@ -334,10 +334,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -349,9 +349,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5412
+Gameplay/index.d.ts:5545
 
-___
+---
 
 ### setHighlightMask
 
@@ -368,9 +368,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:贴图Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:贴图 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -383,9 +383,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5397
+Gameplay/index.d.ts:5530
 
-___
+---
 
 ### setMesh
 
@@ -397,7 +397,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型 Guid 没有预加载，则 v2 本地设置时异步的
 
 **`Effect`**
 
@@ -406,9 +406,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -421,4 +421,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:5337
+Gameplay/index.d.ts:5470

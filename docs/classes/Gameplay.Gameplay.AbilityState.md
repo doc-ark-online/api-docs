@@ -6,7 +6,7 @@
 
 **`Author`**
 
-Hanbaoqiang
+baoqiang.han
 
 **`Description`**
 
@@ -35,8 +35,8 @@ usage:双端
 
 ### Methods
 
-- [beginControllAbility](Gameplay.Gameplay.AbilityState.md#begincontrollability)
-- [cancelControllAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrollability)
+- [addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)
+- [cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)
 - [enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)
 - [enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)
 - [enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)
@@ -65,11 +65,11 @@ usage:双端
 
 `string`
 
-资源GUID
+资源 GUID
 
 #### Defined in
 
-Gameplay/index.d.ts:8190
+Gameplay/index.d.ts:8330
 
 • `set` **animation**(`AnimGuid`): `void`
 
@@ -83,9 +83,9 @@ Gameplay/index.d.ts:8190
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `AnimGuid` | `string` | usage:资源GUID |
+| Name       | Type     | Description     |
+| :--------- | :------- | :-------------- |
+| `AnimGuid` | `string` | usage:资源 GUID |
 
 #### Returns
 
@@ -93,9 +93,9 @@ Gameplay/index.d.ts:8190
 
 #### Defined in
 
-Gameplay/index.d.ts:8196
+Gameplay/index.d.ts:8336
 
-___
+---
 
 ### duration
 
@@ -117,9 +117,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:8160
+Gameplay/index.d.ts:8298
 
-___
+---
 
 ### executeTime
 
@@ -127,7 +127,11 @@ ___
 
 **`Description`**
 
-获取释放状态可执行时间
+获取释放状态可执行总时长时间
+
+**`Precautions`**
+
+状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
 
 **`Effect`**
 
@@ -137,17 +141,21 @@ ___
 
 `number`
 
-获取释放状态可执行时间
+获取释放状态可执行总时长时间
 
 #### Defined in
 
-Gameplay/index.d.ts:8166
+Gameplay/index.d.ts:8305
 
 • `set` **executeTime**(`Time`): `void`
 
 **`Description`**
 
-设置释放状态可执行时间
+设置释放状态可执行总时长时间
+
+**`Precautions`**
+
+状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
 
 **`Effect`**
 
@@ -155,9 +163,9 @@ Gameplay/index.d.ts:8166
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Time` | `number` | usage:设置释放状态可执行时间 |
+| Name   | Type     | Description                        |
+| :----- | :------- | :--------------------------------- |
+| `Time` | `number` | usage:设置释放状态可执行总时长时间 |
 
 #### Returns
 
@@ -165,9 +173,9 @@ Gameplay/index.d.ts:8166
 
 #### Defined in
 
-Gameplay/index.d.ts:8172
+Gameplay/index.d.ts:8312
 
-___
+---
 
 ### loop
 
@@ -175,7 +183,7 @@ ___
 
 **`Description`**
 
-获取释放状态是否可循环isLoop
+获取释放状态是否可循环 isLoop
 
 **`Effect`**
 
@@ -185,11 +193,11 @@ ___
 
 `boolean`
 
-true或false
+true 或 false
 
 #### Defined in
 
-Gameplay/index.d.ts:8178
+Gameplay/index.d.ts:8318
 
 • `set` **loop**(`LoopState`): `void`
 
@@ -203,9 +211,9 @@ Gameplay/index.d.ts:8178
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `LoopState` | `boolean` | usage:true或false |
+| Name        | Type      | Description         |
+| :---------- | :-------- | :------------------ |
+| `LoopState` | `boolean` | usage:true 或 false |
 
 #### Returns
 
@@ -213,13 +221,13 @@ Gameplay/index.d.ts:8178
 
 #### Defined in
 
-Gameplay/index.d.ts:8184
+Gameplay/index.d.ts:8324
 
 ## Methods
 
-### beginControllAbility
+### addControlAbility
 
-▸ **beginControllAbility**(`ControlType`): `void`
+▸ **addControlAbility**(`ControlType`): `void`
 
 **`Description`**
 
@@ -231,8 +239,8 @@ Gameplay/index.d.ts:8184
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                                                               | Description            |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------------- |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | usage:技能状态控制枚举 |
 
 #### Returns
@@ -241,13 +249,13 @@ Gameplay/index.d.ts:8184
 
 #### Defined in
 
-Gameplay/index.d.ts:8202
+Gameplay/index.d.ts:8342
 
-___
+---
 
-### cancelControllAbility
+### cancelControlAbility
 
-▸ **cancelControllAbility**(`ControlType`): `void`
+▸ **cancelControlAbility**(`ControlType`): `void`
 
 **`Description`**
 
@@ -259,8 +267,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                                                               | Description            |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------------- |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | usage:技能状态控制枚举 |
 
 #### Returns
@@ -269,9 +277,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:8208
+Gameplay/index.d.ts:8348
 
-___
+---
 
 ### enableJump
 
@@ -279,7 +287,7 @@ ___
 
 **`Description`**
 
-是否可跳跃
+获取对象是否可跳跃
 
 **`Effect`**
 
@@ -289,13 +297,13 @@ ___
 
 `boolean`
 
-true或false
+true 或 false
 
 #### Defined in
 
-Gameplay/index.d.ts:8226
+Gameplay/index.d.ts:8366
 
-___
+---
 
 ### enableMove
 
@@ -303,7 +311,7 @@ ___
 
 **`Description`**
 
-是否可移动
+获取对象是否可移动
 
 **`Effect`**
 
@@ -313,13 +321,13 @@ ___
 
 `boolean`
 
-true或false
+true 或 false
 
 #### Defined in
 
-Gameplay/index.d.ts:8214
+Gameplay/index.d.ts:8354
 
-___
+---
 
 ### enableTurn
 
@@ -327,7 +335,7 @@ ___
 
 **`Description`**
 
-是否可转向
+获取对象是否可转向
 
 **`Effect`**
 
@@ -337,8 +345,8 @@ ___
 
 [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md)
 
-true或false
+true 或 false
 
 #### Defined in
 
-Gameplay/index.d.ts:8220
+Gameplay/index.d.ts:8360

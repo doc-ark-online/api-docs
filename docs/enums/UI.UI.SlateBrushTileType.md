@@ -21,46 +21,46 @@
 
 ### Both
 
-• **Both** = ``3``
+• **Both** = `3`
 
 水平垂直平铺
 
 #### Defined in
 
-UI/index.d.ts:3665
+UI/index.d.ts:3674
 
-___
+---
 
 ### Horizontal
 
-• **Horizontal** = ``1``
+• **Horizontal** = `1`
 
 水平平铺
 
 #### Defined in
 
-UI/index.d.ts:3661
+UI/index.d.ts:3670
 
-___
+---
 
 ### NoTile
 
-• **NoTile** = ``0``
+• **NoTile** = `0`
 
 拉伸
 
 #### Defined in
 
-UI/index.d.ts:3659
+UI/index.d.ts:3668
 
-___
+---
 
 ### Vertical
 
-• **Vertical** = ``2``
+• **Vertical** = `2`
 
 垂直平铺
 
 #### Defined in
 
-UI/index.d.ts:3663
+UI/index.d.ts:3672

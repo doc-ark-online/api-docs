@@ -19,22 +19,22 @@
 
 ### Bounce
 
-• **Bounce** = ``1``
+• **Bounce** = `1`
 
 弹跳
 
 #### Defined in
 
-Gameplay/index.d.ts:13388
+Gameplay/index.d.ts:13066
 
-___
+---
 
 ### Pierce
 
-• **Pierce** = ``0``
+• **Pierce** = `0`
 
 穿透
 
 #### Defined in
 
-Gameplay/index.d.ts:13386
+Gameplay/index.d.ts:13064

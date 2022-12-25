@@ -6,26 +6,19 @@
 
 **`Description`**
 
-按键Key值
+按键 Key 值
 
 ## Table of contents
 
 ### Enumeration Members
 
 - [A](Type.Type.Keys.md#a)
-- [AAccentGrave](Type.Type.Keys.md#aaccentgrave)
 - [Add](Type.Type.Keys.md#add)
-- [Ampersand](Type.Type.Keys.md#ampersand)
 - [AnyKey](Type.Type.Keys.md#anykey)
-- [Apostrophe](Type.Type.Keys.md#apostrophe)
-- [Asterix](Type.Type.Keys.md#asterix)
 - [B](Type.Type.Keys.md#b)
-- [BackSpace](Type.Type.Keys.md#backspace)
-- [Backslash](Type.Type.Keys.md#backslash)
+- [Backspace](Type.Type.Keys.md#backspace)
 - [C](Type.Type.Keys.md#c)
-- [CCedille](Type.Type.Keys.md#ccedille)
 - [CapsLock](Type.Type.Keys.md#capslock)
-- [Caret](Type.Type.Keys.md#caret)
 - [Colon](Type.Type.Keys.md#colon)
 - [Comma](Type.Type.Keys.md#comma)
 - [D](Type.Type.Keys.md#d)
@@ -35,8 +28,6 @@
 - [Dollar](Type.Type.Keys.md#dollar)
 - [Down](Type.Type.Keys.md#down)
 - [E](Type.Type.Keys.md#e)
-- [EAccentAigu](Type.Type.Keys.md#eaccentaigu)
-- [EAccentGrave](Type.Type.Keys.md#eaccentgrave)
 - [Eight](Type.Type.Keys.md#eight)
 - [End](Type.Type.Keys.md#end)
 - [Enter](Type.Type.Keys.md#enter)
@@ -72,7 +63,6 @@
 - [LeftBracket](Type.Type.Keys.md#leftbracket)
 - [LeftCommand](Type.Type.Keys.md#leftcommand)
 - [LeftControl](Type.Type.Keys.md#leftcontrol)
-- [LeftParantheses](Type.Type.Keys.md#leftparantheses)
 - [LeftShift](Type.Type.Keys.md#leftshift)
 - [M](Type.Type.Keys.md#m)
 - [MiddleMouseButton](Type.Type.Keys.md#middlemousebutton)
@@ -104,19 +94,15 @@
 - [Pause](Type.Type.Keys.md#pause)
 - [Period](Type.Type.Keys.md#period)
 - [Q](Type.Type.Keys.md#q)
-- [Quote](Type.Type.Keys.md#quote)
 - [R](Type.Type.Keys.md#r)
 - [Right](Type.Type.Keys.md#right)
 - [RightAlt](Type.Type.Keys.md#rightalt)
-- [RightBracket](Type.Type.Keys.md#rightbracket)
 - [RightCommand](Type.Type.Keys.md#rightcommand)
 - [RightControl](Type.Type.Keys.md#rightcontrol)
 - [RightMouseButton](Type.Type.Keys.md#rightmousebutton)
-- [RightParantheses](Type.Type.Keys.md#rightparantheses)
 - [RightShift](Type.Type.Keys.md#rightshift)
 - [S](Type.Type.Keys.md#s)
 - [ScrollLock](Type.Type.Keys.md#scrolllock)
-- [Section](Type.Type.Keys.md#section)
 - [Semicolon](Type.Type.Keys.md#semicolon)
 - [Seven](Type.Type.Keys.md#seven)
 - [Six](Type.Type.Keys.md#six)
@@ -144,1495 +130,1355 @@
 
 ### A
 
-• **A** = ``"A"``
+• **A** = `"A"`
 
-A键
-
-#### Defined in
-
-Type/index.d.ts:389
-
-___
-
-### AAccentGrave
-
-• **AAccentGrave** = ``"A_AccentGrave"``
+A 键
 
 #### Defined in
 
-Type/index.d.ts:726
+Type/index.d.ts:414
 
-___
+---
 
 ### Add
 
-• **Add** = ``"Add"``
+• **Add** = `"Add"`
 
 小键盘+键位
 
 #### Defined in
 
-Type/index.d.ts:537
+Type/index.d.ts:562
 
-___
-
-### Ampersand
-
-• **Ampersand** = ``"Ampersand"``
-
-#### Defined in
-
-Type/index.d.ts:706
-
-___
+---
 
 ### AnyKey
 
-• **AnyKey** = ``"AnyKey"``
+• **AnyKey** = `"AnyKey"`
 
 任意按键
 
 #### Defined in
 
-Type/index.d.ts:237
+Type/index.d.ts:262
 
-___
-
-### Apostrophe
-
-• **Apostrophe** = ``"Apostrophe"``
-
-#### Defined in
-
-Type/index.d.ts:694
-
-___
-
-### Asterix
-
-• **Asterix** = ``"Asterix"``
-
-#### Defined in
-
-Type/index.d.ts:702
-
-___
+---
 
 ### B
 
-• **B** = ``"B"``
+• **B** = `"B"`
 
-B键
+B 键
 
 #### Defined in
 
-Type/index.d.ts:393
+Type/index.d.ts:418
 
-___
+---
 
-### BackSpace
+### Backspace
 
-• **BackSpace** = ``"BackSpace"``
+• **Backspace** = `"BackSpace"`
 
 退位键
 
 #### Defined in
 
-Type/index.d.ts:281
+Type/index.d.ts:306
 
-___
-
-### Backslash
-
-• **Backslash** = ``"Backslash"``
-
-#### Defined in
-
-Type/index.d.ts:682
-
-___
+---
 
 ### C
 
-• **C** = ``"C"``
+• **C** = `"C"`
 
-C键
-
-#### Defined in
-
-Type/index.d.ts:397
-
-___
-
-### CCedille
-
-• **CCedille** = ``"C_Cedille"``
+C 键
 
 #### Defined in
 
-Type/index.d.ts:738
+Type/index.d.ts:422
 
-___
+---
 
 ### CapsLock
 
-• **CapsLock** = ``"CapsLock"``
+• **CapsLock** = `"CapsLock"`
 
-Caps键
-
-#### Defined in
-
-Type/index.d.ts:297
-
-___
-
-### Caret
-
-• **Caret** = ``"Caret"``
+Caps 键
 
 #### Defined in
 
-Type/index.d.ts:710
+Type/index.d.ts:322
 
-___
+---
 
 ### Colon
 
-• **Colon** = ``"Colon"``
+• **Colon** = `"Colon"`
 
 :号
 
 #### Defined in
 
-Type/index.d.ts:722
+Type/index.d.ts:711
 
-___
+---
 
 ### Comma
 
-• **Comma** = ``"Comma"``
+• **Comma** = `"Comma"`
 
 ,号
 
 #### Defined in
 
-Type/index.d.ts:650
+Type/index.d.ts:675
 
-___
+---
 
 ### D
 
-• **D** = ``"D"``
+• **D** = `"D"`
 
-D键
+D 键
 
 #### Defined in
 
-Type/index.d.ts:401
+Type/index.d.ts:426
 
-___
+---
 
 ### Decimal
 
-• **Decimal** = ``"Decimal"``
+• **Decimal** = `"Decimal"`
 
-小键盘dec键位
+小键盘 dec 键位
 
 #### Defined in
 
-Type/index.d.ts:545
+Type/index.d.ts:570
 
-___
+---
 
 ### Delete
 
-• **Delete** = ``"Delete"``
+• **Delete** = `"Delete"`
 
-Del键
+Del 键
 
 #### Defined in
 
-Type/index.d.ts:345
+Type/index.d.ts:370
 
-___
+---
 
 ### Divide
 
-• **Divide** = ``"Divide"``
+• **Divide** = `"Divide"`
 
 小键盘/键位
 
 #### Defined in
 
-Type/index.d.ts:549
+Type/index.d.ts:574
 
-___
+---
 
 ### Dollar
 
-• **Dollar** = ``"Dollar"``
+• **Dollar** = `"Dollar"`
 
 $号
 
 #### Defined in
 
-Type/index.d.ts:714
+Type/index.d.ts:703
 
-___
+---
 
 ### Down
 
-• **Down** = ``"Down"``
+• **Down** = `"Down"`
 
-↓键
+↓ 键
 
 #### Defined in
 
-Type/index.d.ts:337
+Type/index.d.ts:362
 
-___
+---
 
 ### E
 
-• **E** = ``"E"``
+• **E** = `"E"`
 
-E键
-
-#### Defined in
-
-Type/index.d.ts:405
-
-___
-
-### EAccentAigu
-
-• **EAccentAigu** = ``"E_AccentAigu"``
+E 键
 
 #### Defined in
 
-Type/index.d.ts:734
+Type/index.d.ts:430
 
-___
-
-### EAccentGrave
-
-• **EAccentGrave** = ``"E_AccentGrave"``
-
-#### Defined in
-
-Type/index.d.ts:730
-
-___
+---
 
 ### Eight
 
-• **Eight** = ``"Eight"``
+• **Eight** = `"Eight"`
 
-8键
+8 键
 
 #### Defined in
 
-Type/index.d.ts:381
+Type/index.d.ts:406
 
-___
+---
 
 ### End
 
-• **End** = ``"End"``
+• **End** = `"End"`
 
-End键
+End 键
 
 #### Defined in
 
-Type/index.d.ts:317
+Type/index.d.ts:342
 
-___
+---
 
 ### Enter
 
-• **Enter** = ``"Enter"``
+• **Enter** = `"Enter"`
 
 回车键
 
 #### Defined in
 
-Type/index.d.ts:289
+Type/index.d.ts:314
 
-___
+---
 
 ### Equals
 
-• **Equals** = ``"Equals"``
+• **Equals** = `"Equals"`
 
 =号
 
 #### Defined in
 
-Type/index.d.ts:646
+Type/index.d.ts:671
 
-___
+---
 
 ### Escape
 
-• **Escape** = ``"Escape"``
+• **Escape** = `"Escape"`
 
-Esc键
+Esc 键
 
 #### Defined in
 
-Type/index.d.ts:301
+Type/index.d.ts:326
 
-___
+---
 
 ### Exclamation
 
-• **Exclamation** = ``"Exclamation"``
+• **Exclamation** = `"Exclamation"`
 
 !号
 
 #### Defined in
 
-Type/index.d.ts:718
+Type/index.d.ts:707
 
-___
+---
 
 ### F
 
-• **F** = ``"F"``
+• **F** = `"F"`
 
-F键
+F 键
 
 #### Defined in
 
-Type/index.d.ts:409
+Type/index.d.ts:434
 
-___
+---
 
 ### F1
 
-• **F1** = ``"F1"``
+• **F1** = `"F1"`
 
-F1键
+F1 键
 
 #### Defined in
 
-Type/index.d.ts:553
+Type/index.d.ts:578
 
-___
+---
 
 ### F10
 
-• **F10** = ``"F10"``
+• **F10** = `"F10"`
 
-F10键
+F10 键
 
 #### Defined in
 
-Type/index.d.ts:589
+Type/index.d.ts:614
 
-___
+---
 
 ### F11
 
-• **F11** = ``"F11"``
+• **F11** = `"F11"`
 
-F11键
+F11 键
 
 #### Defined in
 
-Type/index.d.ts:593
+Type/index.d.ts:618
 
-___
+---
 
 ### F12
 
-• **F12** = ``"F12"``
+• **F12** = `"F12"`
 
-F12键
+F12 键
 
 #### Defined in
 
-Type/index.d.ts:597
+Type/index.d.ts:622
 
-___
+---
 
 ### F2
 
-• **F2** = ``"F2"``
+• **F2** = `"F2"`
 
-F2键
+F2 键
 
 #### Defined in
 
-Type/index.d.ts:557
+Type/index.d.ts:582
 
-___
+---
 
 ### F3
 
-• **F3** = ``"F3"``
+• **F3** = `"F3"`
 
-F3键
+F3 键
 
 #### Defined in
 
-Type/index.d.ts:561
+Type/index.d.ts:586
 
-___
+---
 
 ### F4
 
-• **F4** = ``"F4"``
+• **F4** = `"F4"`
 
-F4键
+F4 键
 
 #### Defined in
 
-Type/index.d.ts:565
+Type/index.d.ts:590
 
-___
+---
 
 ### F5
 
-• **F5** = ``"F5"``
+• **F5** = `"F5"`
 
-F5键
+F5 键
 
 #### Defined in
 
-Type/index.d.ts:569
+Type/index.d.ts:594
 
-___
+---
 
 ### F6
 
-• **F6** = ``"F6"``
+• **F6** = `"F6"`
 
-F6键
+F6 键
 
 #### Defined in
 
-Type/index.d.ts:573
+Type/index.d.ts:598
 
-___
+---
 
 ### F7
 
-• **F7** = ``"F7"``
+• **F7** = `"F7"`
 
-F7键
+F7 键
 
 #### Defined in
 
-Type/index.d.ts:577
+Type/index.d.ts:602
 
-___
+---
 
 ### F8
 
-• **F8** = ``"F8"``
+• **F8** = `"F8"`
 
-F8键
+F8 键
 
 #### Defined in
 
-Type/index.d.ts:581
+Type/index.d.ts:606
 
-___
+---
 
 ### F9
 
-• **F9** = ``"F9"``
+• **F9** = `"F9"`
 
-F9键
+F9 键
 
 #### Defined in
 
-Type/index.d.ts:585
+Type/index.d.ts:610
 
-___
+---
 
 ### Five
 
-• **Five** = ``"Five"``
+• **Five** = `"Five"`
 
-5键
+5 键
 
 #### Defined in
 
-Type/index.d.ts:369
+Type/index.d.ts:394
 
-___
+---
 
 ### Four
 
-• **Four** = ``"Four"``
+• **Four** = `"Four"`
 
-4键
+4 键
 
 #### Defined in
 
-Type/index.d.ts:365
+Type/index.d.ts:390
 
-___
+---
 
 ### G
 
-• **G** = ``"G"``
+• **G** = `"G"`
 
-G键
+G 键
 
 #### Defined in
 
-Type/index.d.ts:413
+Type/index.d.ts:438
 
-___
+---
 
 ### H
 
-• **H** = ``"H"``
+• **H** = `"H"`
 
-H键
+H 键
 
 #### Defined in
 
-Type/index.d.ts:417
+Type/index.d.ts:442
 
-___
+---
 
 ### Home
 
-• **Home** = ``"Home"``
+• **Home** = `"Home"`
 
-Home键
+Home 键
 
 #### Defined in
 
-Type/index.d.ts:321
+Type/index.d.ts:346
 
-___
+---
 
 ### Hyphen
 
-• **Hyphen** = ``"Hyphen"``
+• **Hyphen** = `"Hyphen"`
 
 -号
 
 #### Defined in
 
-Type/index.d.ts:658
+Type/index.d.ts:683
 
-___
+---
 
 ### I
 
-• **I** = ``"I"``
+• **I** = `"I"`
 
-I键
+I 键
 
 #### Defined in
 
-Type/index.d.ts:421
+Type/index.d.ts:446
 
-___
+---
 
 ### Insert
 
-• **Insert** = ``"Insert"``
+• **Insert** = `"Insert"`
 
-Ins键
+Ins 键
 
 #### Defined in
 
-Type/index.d.ts:341
+Type/index.d.ts:366
 
-___
+---
 
 ### J
 
-• **J** = ``"J"``
+• **J** = `"J"`
 
-J键
+J 键
 
 #### Defined in
 
-Type/index.d.ts:425
+Type/index.d.ts:450
 
-___
+---
 
 ### K
 
-• **K** = ``"K"``
+• **K** = `"K"`
 
-K键
+K 键
 
 #### Defined in
 
-Type/index.d.ts:429
+Type/index.d.ts:454
 
-___
+---
 
 ### L
 
-• **L** = ``"L"``
+• **L** = `"L"`
 
-L键
+L 键
 
 #### Defined in
 
-Type/index.d.ts:433
+Type/index.d.ts:458
 
-___
+---
 
 ### Left
 
-• **Left** = ``"Left"``
+• **Left** = `"Left"`
 
-←键
+← 键
 
 #### Defined in
 
-Type/index.d.ts:325
+Type/index.d.ts:350
 
-___
+---
 
 ### LeftAlt
 
-• **LeftAlt** = ``"LeftAlt"``
+• **LeftAlt** = `"LeftAlt"`
 
-左Alt键
+左 Alt 键
 
 #### Defined in
 
-Type/index.d.ts:625
+Type/index.d.ts:650
 
-___
+---
 
 ### LeftBracket
 
-• **LeftBracket** = ``"LeftBracket"``
+• **LeftBracket** = `"LeftBracket"`
 
 ]号
 
 #### Defined in
 
-Type/index.d.ts:674
+Type/index.d.ts:699
 
-___
+---
 
 ### LeftCommand
 
-• **LeftCommand** = ``"LeftCommand"``
+• **LeftCommand** = `"LeftCommand"`
 
-左Command键
+左 Command 键
 
 #### Defined in
 
-Type/index.d.ts:633
+Type/index.d.ts:658
 
-___
+---
 
 ### LeftControl
 
-• **LeftControl** = ``"LeftControl"``
+• **LeftControl** = `"LeftControl"`
 
-左Control键
-
-#### Defined in
-
-Type/index.d.ts:617
-
-___
-
-### LeftParantheses
-
-• **LeftParantheses** = ``"LeftParantheses"``
+左 Control 键
 
 #### Defined in
 
-Type/index.d.ts:678
+Type/index.d.ts:642
 
-___
+---
 
 ### LeftShift
 
-• **LeftShift** = ``"LeftShift"``
+• **LeftShift** = `"LeftShift"`
 
-左Shift键
+左 Shift 键
 
 #### Defined in
 
-Type/index.d.ts:609
+Type/index.d.ts:634
 
-___
+---
 
 ### M
 
-• **M** = ``"M"``
+• **M** = `"M"`
 
-M键
+M 键
 
 #### Defined in
 
-Type/index.d.ts:437
+Type/index.d.ts:462
 
-___
+---
 
 ### MiddleMouseButton
 
-• **MiddleMouseButton** = ``"MiddleMouseButton"``
+• **MiddleMouseButton** = `"MiddleMouseButton"`
 
-鼠标右键
+鼠标中键
 
 #### Defined in
 
-Type/index.d.ts:269
+Type/index.d.ts:294
 
-___
+---
 
 ### Mouse2D
 
-• **Mouse2D** = ``"Mouse2D"``
+• **Mouse2D** = `"Mouse2D"`
 
 鼠标移动
 
 #### Defined in
 
-Type/index.d.ts:249
+Type/index.d.ts:274
 
-___
+---
 
 ### MouseScrollDown
 
-• **MouseScrollDown** = ``"MouseScrollDown"``
+• **MouseScrollDown** = `"MouseScrollDown"`
 
 鼠标滚轮向下滑
 
 #### Defined in
 
-Type/index.d.ts:257
+Type/index.d.ts:282
 
-___
+---
 
 ### MouseScrollUp
 
-• **MouseScrollUp** = ``"MouseScrollUp"``
+• **MouseScrollUp** = `"MouseScrollUp"`
 
 鼠标滚轮向上滑
 
 #### Defined in
 
-Type/index.d.ts:253
+Type/index.d.ts:278
 
-___
+---
 
 ### MouseWheelAxis
 
-• **MouseWheelAxis** = ``"MouseWheelAxis"``
+• **MouseWheelAxis** = `"MouseWheelAxis"`
 
 鼠标滚轮轴
 
 #### Defined in
 
-Type/index.d.ts:261
+Type/index.d.ts:286
 
-___
+---
 
 ### MouseX
 
-• **MouseX** = ``"MouseX"``
+• **MouseX** = `"MouseX"`
 
 鼠标水平轴移动
 
 #### Defined in
 
-Type/index.d.ts:241
+Type/index.d.ts:266
 
-___
+---
 
 ### MouseY
 
-• **MouseY** = ``"MouseY"``
+• **MouseY** = `"MouseY"`
 
 鼠标竖直轴移动
 
 #### Defined in
 
-Type/index.d.ts:245
+Type/index.d.ts:270
 
-___
+---
 
 ### Multiply
 
-• **Multiply** = ``"Multiply"``
+• **Multiply** = `"Multiply"`
 
-小键盘*键位
+小键盘\*键位
 
 #### Defined in
 
-Type/index.d.ts:533
+Type/index.d.ts:558
 
-___
+---
 
 ### N
 
-• **N** = ``"N"``
+• **N** = `"N"`
 
-N键
+N 键
 
 #### Defined in
 
-Type/index.d.ts:441
+Type/index.d.ts:466
 
-___
+---
 
 ### Nine
 
-• **Nine** = ``"Nine"``
+• **Nine** = `"Nine"`
 
-9键
+9 键
 
 #### Defined in
 
-Type/index.d.ts:385
+Type/index.d.ts:410
 
-___
+---
 
 ### NumLock
 
-• **NumLock** = ``"NumLock"``
+• **NumLock** = `"NumLock"`
 
-NumLock键
+NumLock 键
 
 #### Defined in
 
-Type/index.d.ts:601
+Type/index.d.ts:626
 
-___
+---
 
 ### NumPadEight
 
-• **NumPadEight** = ``"NumPadEight"``
+• **NumPadEight** = `"NumPadEight"`
 
-小键盘8键位
+小键盘 8 键位
 
 #### Defined in
 
-Type/index.d.ts:525
+Type/index.d.ts:550
 
-___
+---
 
 ### NumPadFive
 
-• **NumPadFive** = ``"NumPadFive"``
+• **NumPadFive** = `"NumPadFive"`
 
-小键盘5键位
+小键盘 5 键位
 
 #### Defined in
 
-Type/index.d.ts:513
+Type/index.d.ts:538
 
-___
+---
 
 ### NumPadFour
 
-• **NumPadFour** = ``"NumPadFour"``
+• **NumPadFour** = `"NumPadFour"`
 
-小键盘4键位
+小键盘 4 键位
 
 #### Defined in
 
-Type/index.d.ts:509
+Type/index.d.ts:534
 
-___
+---
 
 ### NumPadNine
 
-• **NumPadNine** = ``"NumPadNine"``
+• **NumPadNine** = `"NumPadNine"`
 
-小键盘9键位
+小键盘 9 键位
 
 #### Defined in
 
-Type/index.d.ts:529
+Type/index.d.ts:554
 
-___
+---
 
 ### NumPadOne
 
-• **NumPadOne** = ``"NumPadOne"``
+• **NumPadOne** = `"NumPadOne"`
 
-小键盘1键位
+小键盘 1 键位
 
 #### Defined in
 
-Type/index.d.ts:497
+Type/index.d.ts:522
 
-___
+---
 
 ### NumPadSeven
 
-• **NumPadSeven** = ``"NumPadSeven"``
+• **NumPadSeven** = `"NumPadSeven"`
 
-小键盘7键位
+小键盘 7 键位
 
 #### Defined in
 
-Type/index.d.ts:521
+Type/index.d.ts:546
 
-___
+---
 
 ### NumPadSix
 
-• **NumPadSix** = ``"NumPadSix"``
+• **NumPadSix** = `"NumPadSix"`
 
-小键盘6键位
+小键盘 6 键位
 
 #### Defined in
 
-Type/index.d.ts:517
+Type/index.d.ts:542
 
-___
+---
 
 ### NumPadThree
 
-• **NumPadThree** = ``"NumPadThree"``
+• **NumPadThree** = `"NumPadThree"`
 
-小键盘3键位
+小键盘 3 键位
 
 #### Defined in
 
-Type/index.d.ts:505
+Type/index.d.ts:530
 
-___
+---
 
 ### NumPadTwo
 
-• **NumPadTwo** = ``"NumPadTwo"``
+• **NumPadTwo** = `"NumPadTwo"`
 
-小键盘2键位
+小键盘 2 键位
 
 #### Defined in
 
-Type/index.d.ts:501
+Type/index.d.ts:526
 
-___
+---
 
 ### NumPadZero
 
-• **NumPadZero** = ``"NumPadZero"``
+• **NumPadZero** = `"NumPadZero"`
 
-小键盘0键位
+小键盘 0 键位
 
 #### Defined in
 
-Type/index.d.ts:493
+Type/index.d.ts:518
 
-___
+---
 
 ### O
 
-• **O** = ``"O"``
+• **O** = `"O"`
 
-O键
+O 键
 
 #### Defined in
 
-Type/index.d.ts:445
+Type/index.d.ts:470
 
-___
+---
 
 ### One
 
-• **One** = ``"One"``
+• **One** = `"One"`
 
-1键
+1 键
 
 #### Defined in
 
-Type/index.d.ts:353
+Type/index.d.ts:378
 
-___
+---
 
 ### P
 
-• **P** = ``"P"``
+• **P** = `"P"`
 
-P键
+P 键
 
 #### Defined in
 
-Type/index.d.ts:449
+Type/index.d.ts:474
 
-___
+---
 
 ### PageDown
 
-• **PageDown** = ``"PageDown"``
+• **PageDown** = `"PageDown"`
 
-PageDown键
+PageDown 键
 
 #### Defined in
 
-Type/index.d.ts:313
+Type/index.d.ts:338
 
-___
+---
 
 ### PageUp
 
-• **PageUp** = ``"PageUp"``
+• **PageUp** = `"PageUp"`
 
-PageUp键
+PageUp 键
 
 #### Defined in
 
-Type/index.d.ts:309
+Type/index.d.ts:334
 
-___
+---
 
 ### Pause
 
-• **Pause** = ``"Pause"``
+• **Pause** = `"Pause"`
 
 暂停键
 
 #### Defined in
 
-Type/index.d.ts:293
+Type/index.d.ts:318
 
-___
+---
 
 ### Period
 
-• **Period** = ``"Period"``
+• **Period** = `"Period"`
 
 .号
 
 #### Defined in
 
-Type/index.d.ts:662
+Type/index.d.ts:687
 
-___
+---
 
 ### Q
 
-• **Q** = ``"Q"``
+• **Q** = `"Q"`
 
-Q键
-
-#### Defined in
-
-Type/index.d.ts:453
-
-___
-
-### Quote
-
-• **Quote** = ``"Quote"``
+Q 键
 
 #### Defined in
 
-Type/index.d.ts:698
+Type/index.d.ts:478
 
-___
+---
 
 ### R
 
-• **R** = ``"R"``
+• **R** = `"R"`
 
-R键
+R 键
 
 #### Defined in
 
-Type/index.d.ts:457
+Type/index.d.ts:482
 
-___
+---
 
 ### Right
 
-• **Right** = ``"Right"``
+• **Right** = `"Right"`
 
-→键
+→ 键
 
 #### Defined in
 
-Type/index.d.ts:333
+Type/index.d.ts:358
 
-___
+---
 
 ### RightAlt
 
-• **RightAlt** = ``"RightAlt"``
+• **RightAlt** = `"RightAlt"`
 
-右Alt键
-
-#### Defined in
-
-Type/index.d.ts:629
-
-___
-
-### RightBracket
-
-• **RightBracket** = ``"RightBracket"``
+右 Alt 键
 
 #### Defined in
 
-Type/index.d.ts:686
+Type/index.d.ts:654
 
-___
+---
 
 ### RightCommand
 
-• **RightCommand** = ``"RightCommand"``
+• **RightCommand** = `"RightCommand"`
 
-右Command键
+右 Command 键
 
 #### Defined in
 
-Type/index.d.ts:637
+Type/index.d.ts:662
 
-___
+---
 
 ### RightControl
 
-• **RightControl** = ``"RightControl"``
+• **RightControl** = `"RightControl"`
 
-右Control键
+右 Control 键
 
 #### Defined in
 
-Type/index.d.ts:621
+Type/index.d.ts:646
 
-___
+---
 
 ### RightMouseButton
 
-• **RightMouseButton** = ``"RightMouseButton"``
+• **RightMouseButton** = `"RightMouseButton"`
 
-鼠标左键
-
-#### Defined in
-
-Type/index.d.ts:265
-
-___
-
-### RightParantheses
-
-• **RightParantheses** = ``"RightParantheses"``
+鼠标右键
 
 #### Defined in
 
-Type/index.d.ts:690
+Type/index.d.ts:290
 
-___
+---
 
 ### RightShift
 
-• **RightShift** = ``"RightShift"``
+• **RightShift** = `"RightShift"`
 
-右Shift键
+右 Shift 键
 
 #### Defined in
 
-Type/index.d.ts:613
+Type/index.d.ts:638
 
-___
+---
 
 ### S
 
-• **S** = ``"S"``
+• **S** = `"S"`
 
-S键
+S 键
 
 #### Defined in
 
-Type/index.d.ts:461
+Type/index.d.ts:486
 
-___
+---
 
 ### ScrollLock
 
-• **ScrollLock** = ``"ScrollLock"``
+• **ScrollLock** = `"ScrollLock"`
 
-ScrollLock键
-
-#### Defined in
-
-Type/index.d.ts:605
-
-___
-
-### Section
-
-• **Section** = ``"Section"``
+ScrollLock 键
 
 #### Defined in
 
-Type/index.d.ts:742
+Type/index.d.ts:630
 
-___
+---
 
 ### Semicolon
 
-• **Semicolon** = ``"Semicolon"``
+• **Semicolon** = `"Semicolon"`
 
 ;
 号
 
 #### Defined in
 
-Type/index.d.ts:642
+Type/index.d.ts:667
 
-___
+---
 
 ### Seven
 
-• **Seven** = ``"Seven"``
+• **Seven** = `"Seven"`
 
-7键
+7 键
 
 #### Defined in
 
-Type/index.d.ts:377
+Type/index.d.ts:402
 
-___
+---
 
 ### Six
 
-• **Six** = ``"Six"``
+• **Six** = `"Six"`
 
-6键
+6 键
 
 #### Defined in
 
-Type/index.d.ts:373
+Type/index.d.ts:398
 
-___
+---
 
 ### Slash
 
-• **Slash** = ``"Slash"``
+• **Slash** = `"Slash"`
 
 /号
 
 #### Defined in
 
-Type/index.d.ts:666
+Type/index.d.ts:691
 
-___
+---
 
 ### SpaceBar
 
-• **SpaceBar** = ``"SpaceBar"``
+• **SpaceBar** = `"SpaceBar"`
 
 空格键
 
 #### Defined in
 
-Type/index.d.ts:305
+Type/index.d.ts:330
 
-___
+---
 
 ### Subtract
 
-• **Subtract** = ``"Subtract"``
+• **Subtract** = `"Subtract"`
 
 小键盘-键位
 
 #### Defined in
 
-Type/index.d.ts:541
+Type/index.d.ts:566
 
-___
+---
 
 ### T
 
-• **T** = ``"T"``
+• **T** = `"T"`
 
-T键
+T 键
 
 #### Defined in
 
-Type/index.d.ts:465
+Type/index.d.ts:490
 
-___
+---
 
 ### Tab
 
-• **Tab** = ``"Tab"``
+• **Tab** = `"Tab"`
 
-Tab键
+Tab 键
 
 #### Defined in
 
-Type/index.d.ts:285
+Type/index.d.ts:310
 
-___
+---
 
 ### Three
 
-• **Three** = ``"Three"``
+• **Three** = `"Three"`
 
-3键
+3 键
 
 #### Defined in
 
-Type/index.d.ts:361
+Type/index.d.ts:386
 
-___
+---
 
 ### ThumbMouseButton
 
-• **ThumbMouseButton** = ``"ThumbMouseButton"``
+• **ThumbMouseButton** = `"ThumbMouseButton"`
 
 拇指鼠标上按键
 
 #### Defined in
 
-Type/index.d.ts:273
+Type/index.d.ts:298
 
-___
+---
 
 ### ThumbMouseButton2
 
-• **ThumbMouseButton2** = ``"ThumbMouseButton2"``
+• **ThumbMouseButton2** = `"ThumbMouseButton2"`
 
 拇指鼠标下按键
 
 #### Defined in
 
-Type/index.d.ts:277
+Type/index.d.ts:302
 
-___
+---
 
 ### Tilde
 
-• **Tilde** = ``"Tilde"``
+• **Tilde** = `"Tilde"`
 
 ~号
 
 #### Defined in
 
-Type/index.d.ts:670
+Type/index.d.ts:695
 
-___
+---
 
 ### Two
 
-• **Two** = ``"Two"``
+• **Two** = `"Two"`
 
-2键
+2 键
 
 #### Defined in
 
-Type/index.d.ts:357
+Type/index.d.ts:382
 
-___
+---
 
 ### U
 
-• **U** = ``"U"``
+• **U** = `"U"`
 
-U键
+U 键
 
 #### Defined in
 
-Type/index.d.ts:469
+Type/index.d.ts:494
 
-___
+---
 
 ### Underscore
 
-• **Underscore** = ``"Underscore"``
+• **Underscore** = `"Underscore"`
 
-_号
+\_号
 
 #### Defined in
 
-Type/index.d.ts:654
+Type/index.d.ts:679
 
-___
+---
 
 ### Up
 
-• **Up** = ``"Up"``
+• **Up** = `"Up"`
 
-↑键
+↑ 键
 
 #### Defined in
 
-Type/index.d.ts:329
+Type/index.d.ts:354
 
-___
+---
 
 ### V
 
-• **V** = ``"V"``
+• **V** = `"V"`
 
-V键
+V 键
 
 #### Defined in
 
-Type/index.d.ts:473
+Type/index.d.ts:498
 
-___
+---
 
 ### W
 
-• **W** = ``"W"``
+• **W** = `"W"`
 
-W键
+W 键
 
 #### Defined in
 
-Type/index.d.ts:477
+Type/index.d.ts:502
 
-___
+---
 
 ### X
 
-• **X** = ``"X"``
+• **X** = `"X"`
 
-X键
+X 键
 
 #### Defined in
 
-Type/index.d.ts:481
+Type/index.d.ts:506
 
-___
+---
 
 ### Y
 
-• **Y** = ``"Y"``
+• **Y** = `"Y"`
 
-Y键
+Y 键
 
 #### Defined in
 
-Type/index.d.ts:485
+Type/index.d.ts:510
 
-___
+---
 
 ### Z
 
-• **Z** = ``"Z"``
+• **Z** = `"Z"`
 
-Z键
+Z 键
 
 #### Defined in
 
-Type/index.d.ts:489
+Type/index.d.ts:514
 
-___
+---
 
 ### Zero
 
-• **Zero** = ``"Zero"``
+• **Zero** = `"Zero"`
 
-0键
+0 键
 
 #### Defined in
 
-Type/index.d.ts:349
+Type/index.d.ts:374

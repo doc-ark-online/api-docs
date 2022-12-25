@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -38,7 +38,7 @@ usage:客户端
 
 **`Description`**
 
-通过资源id构造对象
+通过资源 id 构造对象
 
 **`Effect`**
 
@@ -46,13 +46,13 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InGuid` | `string` | usage:资源id |
+| Name     | Type     | Description   |
+| :------- | :------- | :------------ |
+| `InGuid` | `string` | usage:资源 id |
 
 #### Defined in
 
-UI/index.d.ts:3964
+UI/index.d.ts:3973
 
 ## Properties
 
@@ -66,9 +66,9 @@ UI/index.d.ts:3964
 
 #### Defined in
 
-UI/index.d.ts:3972
+UI/index.d.ts:3981
 
-___
+---
 
 ### guid
 
@@ -76,13 +76,13 @@ ___
 
 **`Description`**
 
-资源ID
+资源 ID
 
 #### Defined in
 
-UI/index.d.ts:3974
+UI/index.d.ts:3983
 
-___
+---
 
 ### imageSize
 
@@ -94,9 +94,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3966
+UI/index.d.ts:3975
 
-___
+---
 
 ### marin
 
@@ -108,9 +108,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3968
+UI/index.d.ts:3977
 
-___
+---
 
 ### tintColor
 
@@ -122,4 +122,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3970
+UI/index.d.ts:3979

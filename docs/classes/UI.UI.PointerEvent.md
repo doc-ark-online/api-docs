@@ -6,11 +6,11 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
-点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类
+点击或者滑动的时候传递 mobile touch,鼠标,键盘信息的类
 
 **`Network Status`**
 
@@ -50,7 +50,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4144
+UI/index.d.ts:4153
 
 ## Accessors
 
@@ -60,7 +60,7 @@ UI/index.d.ts:4144
 
 **`Description`**
 
-获取响应的事件key
+获取响应的事件 key
 
 **`Effect`**
 
@@ -70,13 +70,13 @@ UI/index.d.ts:4144
 
 [`KeyEvent`](UI.UI.KeyEvent.md)
 
-返回响应的事件key
+返回响应的事件 key
 
 #### Defined in
 
-UI/index.d.ts:4205
+UI/index.d.ts:4214
 
-___
+---
 
 ### isTouchEvent
 
@@ -98,9 +98,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4156
+UI/index.d.ts:4165
 
-___
+---
 
 ### lastScreenSpacePosition
 
@@ -122,9 +122,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4192
+UI/index.d.ts:4201
 
-___
+---
 
 ### mouseWheelDelta
 
@@ -146,9 +146,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4162
+UI/index.d.ts:4171
 
-___
+---
 
 ### pointerIndex
 
@@ -156,7 +156,7 @@ ___
 
 **`Description`**
 
-返回该事件的唯一标识index
+返回该事件的唯一标识 index
 
 **`Effect`**
 
@@ -166,13 +166,13 @@ ___
 
 `number`
 
-返回该事件的唯一标识index
+返回该事件的唯一标识 index
 
 #### Defined in
 
-UI/index.d.ts:4186
+UI/index.d.ts:4195
 
-___
+---
 
 ### screenSpacePosition
 
@@ -194,9 +194,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4180
+UI/index.d.ts:4189
 
-___
+---
 
 ### touchPadIndex
 
@@ -204,7 +204,7 @@ ___
 
 **`Description`**
 
-获取触摸事件index
+获取触摸事件 index
 
 **`Effect`**
 
@@ -214,13 +214,13 @@ ___
 
 `number`
 
-返回触摸事件的index
+返回触摸事件的 index
 
 #### Defined in
 
-UI/index.d.ts:4174
+UI/index.d.ts:4183
 
-___
+---
 
 ### userIndex
 
@@ -228,7 +228,7 @@ ___
 
 **`Description`**
 
-获取事件触发玩家的index
+获取事件触发玩家的 index
 
 **`Effect`**
 
@@ -238,11 +238,11 @@ ___
 
 `number`
 
-返回事件触发玩家的index
+返回事件触发玩家的 index
 
 #### Defined in
 
-UI/index.d.ts:4168
+UI/index.d.ts:4177
 
 ## Methods
 
@@ -260,8 +260,8 @@ UI/index.d.ts:4168
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type                                 | Description    |
+| :------------ | :----------------------------------- | :------------- |
 | `MouseButton` | [`Keys`](../enums/Type.Type.Keys.md) | usage:按键事件 |
 
 #### Returns
@@ -272,9 +272,9 @@ UI/index.d.ts:4168
 
 #### Defined in
 
-UI/index.d.ts:4199
+UI/index.d.ts:4208
 
-___
+---
 
 ### toInputEvent
 
@@ -296,4 +296,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4150
+UI/index.d.ts:4159

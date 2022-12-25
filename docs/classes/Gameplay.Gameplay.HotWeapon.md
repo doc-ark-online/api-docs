@@ -18,7 +18,7 @@ jun.zhang
 
 ## Hierarchy
 
-- [`GameObject`](Core.Core.GameObject.md)
+- `GameObject`
 
   ↳ **`HotWeapon`**
 
@@ -32,44 +32,38 @@ jun.zhang
 
 - [accuracyOfFireComponent](Gameplay.Gameplay.HotWeapon.md#accuracyoffirecomponent)
 - [aimComponent](Gameplay.Gameplay.HotWeapon.md#aimcomponent)
-- [constVal](Gameplay.Gameplay.HotWeapon.md#constval)
-- [delegateEquipOnClient](Gameplay.Gameplay.HotWeapon.md#delegateequiponclient)
-- [delegateEquipOnServer](Gameplay.Gameplay.HotWeapon.md#delegateequiponserver)
-- [delegateUnEquipOnClient](Gameplay.Gameplay.HotWeapon.md#delegateunequiponclient)
-- [delegateUnEquipOnServer](Gameplay.Gameplay.HotWeapon.md#delegateunequiponserver)
 - [fireComponent](Gameplay.Gameplay.HotWeapon.md#firecomponent)
 - [loadComponent](Gameplay.Gameplay.HotWeapon.md#loadcomponent)
+- [onEquippedClient](Gameplay.Gameplay.HotWeapon.md#onequippedclient)
+- [onEquippedServer](Gameplay.Gameplay.HotWeapon.md#onequippedserver)
+- [onUnequippedClient](Gameplay.Gameplay.HotWeapon.md#onunequippedclient)
+- [onUnequippedServer](Gameplay.Gameplay.HotWeapon.md#onunequippedserver)
 - [recoilForceComponent](Gameplay.Gameplay.HotWeapon.md#recoilforcecomponent)
 - [reloadComponent](Gameplay.Gameplay.HotWeapon.md#reloadcomponent)
-- [setVal](Gameplay.Gameplay.HotWeapon.md#setval)
-- [tempLoc](Gameplay.Gameplay.HotWeapon.md#temploc)
-- [tempRot](Gameplay.Gameplay.HotWeapon.md#temprot)
-- [tmpTrans](Gameplay.Gameplay.HotWeapon.md#tmptrans)
-- [trans](Gameplay.Gameplay.HotWeapon.md#trans)
 
 ### Accessors
 
+- [accuracyOfFireEnable](Gameplay.Gameplay.HotWeapon.md#accuracyoffireenable)
+- [aimEnable](Gameplay.Gameplay.HotWeapon.md#aimenable)
 - [forwardVector](Gameplay.Gameplay.HotWeapon.md#forwardvector)
 - [guid](Gameplay.Gameplay.HotWeapon.md#guid)
-- [isEnabledAccuracyOfFire](Gameplay.Gameplay.HotWeapon.md#isenabledaccuracyoffire)
-- [isEnabledAim](Gameplay.Gameplay.HotWeapon.md#isenabledaim)
-- [isEnabledLoad](Gameplay.Gameplay.HotWeapon.md#isenabledload)
-- [isEnabledRecoilForce](Gameplay.Gameplay.HotWeapon.md#isenabledrecoilforce)
-- [isEnabledReload](Gameplay.Gameplay.HotWeapon.md#isenabledreload)
-- [isVisible](Gameplay.Gameplay.HotWeapon.md#isvisible)
-- [lockState](Gameplay.Gameplay.HotWeapon.md#lockstate)
+- [loadEnable](Gameplay.Gameplay.HotWeapon.md#loadenable)
+- [lockStatus](Gameplay.Gameplay.HotWeapon.md#lockstatus)
 - [name](Gameplay.Gameplay.HotWeapon.md#name)
 - [netStatus](Gameplay.Gameplay.HotWeapon.md#netstatus)
 - [parent](Gameplay.Gameplay.HotWeapon.md#parent)
+- [recoilForceEnable](Gameplay.Gameplay.HotWeapon.md#recoilforceenable)
 - [relativeLocation](Gameplay.Gameplay.HotWeapon.md#relativelocation)
 - [relativeRotation](Gameplay.Gameplay.HotWeapon.md#relativerotation)
 - [relativeScale](Gameplay.Gameplay.HotWeapon.md#relativescale)
+- [reloadEnable](Gameplay.Gameplay.HotWeapon.md#reloadenable)
 - [rightVector](Gameplay.Gameplay.HotWeapon.md#rightvector)
 - [staticStatus](Gameplay.Gameplay.HotWeapon.md#staticstatus)
 - [tag](Gameplay.Gameplay.HotWeapon.md#tag)
 - [transform](Gameplay.Gameplay.HotWeapon.md#transform)
 - [upVector](Gameplay.Gameplay.HotWeapon.md#upvector)
 - [useUpdate](Gameplay.Gameplay.HotWeapon.md#useupdate)
+- [visible](Gameplay.Gameplay.HotWeapon.md#visible)
 - [worldLocation](Gameplay.Gameplay.HotWeapon.md#worldlocation)
 - [worldRotation](Gameplay.Gameplay.HotWeapon.md#worldrotation)
 - [worldScale](Gameplay.Gameplay.HotWeapon.md#worldscale)
@@ -111,6 +105,7 @@ jun.zhang
 - [getTransform](Gameplay.Gameplay.HotWeapon.md#gettransform)
 - [getTransformForFire](Gameplay.Gameplay.HotWeapon.md#gettransformforfire)
 - [getUpVector](Gameplay.Gameplay.HotWeapon.md#getupvector)
+- [getVisibility](Gameplay.Gameplay.HotWeapon.md#getvisibility)
 - [getWorldLocation](Gameplay.Gameplay.HotWeapon.md#getworldlocation)
 - [getWorldRotation](Gameplay.Gameplay.HotWeapon.md#getworldrotation)
 - [getWorldScale](Gameplay.Gameplay.HotWeapon.md#getworldscale)
@@ -134,7 +129,7 @@ jun.zhang
 - [setWorldScale](Gameplay.Gameplay.HotWeapon.md#setworldscale)
 - [startFire](Gameplay.Gameplay.HotWeapon.md#startfire)
 - [stopFire](Gameplay.Gameplay.HotWeapon.md#stopfire)
-- [unEquipment](Gameplay.Gameplay.HotWeapon.md#unequipment)
+- [unequipHotWeapon](Gameplay.Gameplay.HotWeapon.md#unequiphotweapon)
 - [asyncFind](Gameplay.Gameplay.HotWeapon.md#asyncfind)
 - [asyncSpawnGameObject](Gameplay.Gameplay.HotWeapon.md#asyncspawngameobject)
 - [find](Gameplay.Gameplay.HotWeapon.md#find)
@@ -151,7 +146,7 @@ jun.zhang
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[constructor](Core.Core.GameObject.md#constructor)
+Core.GameObject.constructor
 
 ## Properties
 
@@ -165,7 +160,7 @@ jun.zhang
 
 #### Defined in
 
-Gameplay/index.d.ts:11328
+Gameplay/index.d.ts:11050
 
 ---
 
@@ -179,77 +174,7 @@ Gameplay/index.d.ts:11328
 
 #### Defined in
 
-Gameplay/index.d.ts:11332
-
----
-
-### constVal
-
-• **constVal**: [`Transform`](Type.Type.Transform.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11426
-
----
-
-### delegateEquipOnClient
-
-• **delegateEquipOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
-
-**`Description`**
-
-客户端装备时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11314
-
----
-
-### delegateEquipOnServer
-
-• **delegateEquipOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
-
-**`Description`**
-
-服务器装备时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11308
-
----
-
-### delegateUnEquipOnClient
-
-• **delegateUnEquipOnClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
-
-客户端卸载时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11324
-
----
-
-### delegateUnEquipOnServer
-
-• **delegateUnEquipOnServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
-
-服务器卸载时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11320
+Gameplay/index.d.ts:11054
 
 ---
 
@@ -263,7 +188,7 @@ Gameplay/index.d.ts:11320
 
 #### Defined in
 
-Gameplay/index.d.ts:11336
+Gameplay/index.d.ts:11058
 
 ---
 
@@ -277,7 +202,63 @@ Gameplay/index.d.ts:11336
 
 #### Defined in
 
-Gameplay/index.d.ts:11340
+Gameplay/index.d.ts:11062
+
+---
+
+### onEquippedClient
+
+• **onEquippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
+
+**`Description`**
+
+客户端装备时执行绑定函数
+
+#### Defined in
+
+Gameplay/index.d.ts:11036
+
+---
+
+### onEquippedServer
+
+• **onEquippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
+
+**`Description`**
+
+服务器装备时执行绑定函数
+
+#### Defined in
+
+Gameplay/index.d.ts:11030
+
+---
+
+### onUnequippedClient
+
+• **onUnequippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+
+**`Description`**
+
+客户端卸载时执行绑定函数
+
+#### Defined in
+
+Gameplay/index.d.ts:11046
+
+---
+
+### onUnequippedServer
+
+• **onUnequippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\>
+
+**`Description`**
+
+服务器卸载时执行绑定函数
+
+#### Defined in
+
+Gameplay/index.d.ts:11042
 
 ---
 
@@ -291,7 +272,7 @@ Gameplay/index.d.ts:11340
 
 #### Defined in
 
-Gameplay/index.d.ts:11348
+Gameplay/index.d.ts:11070
 
 ---
 
@@ -305,137 +286,13 @@ Gameplay/index.d.ts:11348
 
 #### Defined in
 
-Gameplay/index.d.ts:11344
-
----
-
-### setVal
-
-• **setVal**: [`Transform`](Type.Type.Transform.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11430
-
----
-
-### tempLoc
-
-• **tempLoc**: [`Vector`](Type.Type.Vector.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11442
-
----
-
-### tempRot
-
-• **tempRot**: [`Rotation`](Type.Type.Rotation.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11446
-
----
-
-### tmpTrans
-
-• **tmpTrans**: [`Transform`](Type.Type.Transform.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11454
-
----
-
-### trans
-
-• **trans**: [`Transform`](Type.Type.Transform.md)
-
-**`Description`**
-
-TODO
-
-#### Defined in
-
-Gameplay/index.d.ts:11450
+Gameplay/index.d.ts:11066
 
 ## Accessors
 
-### forwardVector
+### accuracyOfFireEnable
 
-• `get` **forwardVector**(): [`Vector`](Type.Type.Vector.md)
-
-**`Description`**
-
-获取当前物体的向前向量
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-[`Vector`](Type.Type.Vector.md)
-
-Vector
-
-#### Inherited from
-
-Core.GameObject.forwardVector
-
-#### Defined in
-
-Core/index.d.ts:405
-
----
-
-### guid
-
-• `get` **guid**(): `string`
-
-**`Description`**
-
-获取对象的 guid（唯一标识一个对象的字符串）。
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-Core.GameObject.guid
-
-#### Defined in
-
-Core/index.d.ts:38
-
----
-
-### isEnabledAccuracyOfFire
-
-• `get` **isEnabledAccuracyOfFire**(): `boolean`
+• `get` **accuracyOfFireEnable**(): `boolean`
 
 是否开启了射击精度组件
 
@@ -455,9 +312,9 @@ Core/index.d.ts:38
 
 #### Defined in
 
-Gameplay/index.d.ts:11402
+Gameplay/index.d.ts:11124
 
-• `set` **isEnabledAccuracyOfFire**(`isEnabled`): `void`
+• `set` **accuracyOfFireEnable**(`isEnabled`): `void`
 
 **`Description`**
 
@@ -483,13 +340,13 @@ Gameplay/index.d.ts:11402
 
 #### Defined in
 
-Gameplay/index.d.ts:11409
+Gameplay/index.d.ts:11131
 
 ---
 
-### isEnabledAim
+### aimEnable
 
-• `get` **isEnabledAim**(): `boolean`
+• `get` **aimEnable**(): `boolean`
 
 **`Description`**
 
@@ -507,9 +364,9 @@ Gameplay/index.d.ts:11409
 
 #### Defined in
 
-Gameplay/index.d.ts:11415
+Gameplay/index.d.ts:11137
 
-• `set` **isEnabledAim**(`Inval`): `void`
+• `set` **aimEnable**(`value`): `void`
 
 **`Description`**
 
@@ -527,7 +384,7 @@ Gameplay/index.d.ts:11415
 
 | Name    | Type      | Description             |
 | :------ | :-------- | :---------------------- |
-| `Inval` | `boolean` | usage: 瞄准组件启用状态 |
+| `value` | `boolean` | usage: 瞄准组件启用状态 |
 
 #### Returns
 
@@ -535,13 +392,67 @@ Gameplay/index.d.ts:11415
 
 #### Defined in
 
-Gameplay/index.d.ts:11422
+Gameplay/index.d.ts:11144
 
 ---
 
-### isEnabledLoad
+### forwardVector
 
-• `get` **isEnabledLoad**(): `boolean`
+• `get` **forwardVector**(): [`Vector`](Type.Type.Vector.md)
+
+**`Description`**
+
+获取当前物体的向前向量
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+[`Vector`](Type.Type.Vector.md)
+
+Vector
+
+#### Inherited from
+
+Core.GameObject.forwardVector
+
+#### Defined in
+
+Core/index.d.ts:409
+
+---
+
+### guid
+
+• `get` **guid**(): `string`
+
+**`Description`**
+
+获取对象的 guid（唯一标识一个对象的字符串）。
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+Core.GameObject.guid
+
+#### Defined in
+
+Core/index.d.ts:39
+
+---
+
+### loadEnable
+
+• `get` **loadEnable**(): `boolean`
 
 是否开启了上膛组件
 
@@ -561,9 +472,9 @@ Gameplay/index.d.ts:11422
 
 #### Defined in
 
-Gameplay/index.d.ts:11388
+Gameplay/index.d.ts:11110
 
-• `set` **isEnabledLoad**(`isEnabled`): `void`
+• `set` **loadEnable**(`isEnabled`): `void`
 
 **`Description`**
 
@@ -589,149 +500,17 @@ Gameplay/index.d.ts:11388
 
 #### Defined in
 
-Gameplay/index.d.ts:11395
+Gameplay/index.d.ts:11117
 
 ---
 
-### isEnabledRecoilForce
+### lockStatus
 
-• `get` **isEnabledRecoilForce**(): `boolean`
-
-**`Description`**
-
-是否开启了后坐力组件
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-是否开启了后坐力组件
-
-#### Defined in
-
-Gameplay/index.d.ts:11361
-
-• `set` **isEnabledRecoilForce**(`isEnabled`): `void`
+• `get` **lockStatus**(): `boolean`
 
 **`Description`**
 
-设置是否开启后座力组件
-
-**`Precautions`**
-
-默认开启
-
-**`Effect`**
-
-在服务器调用
-
-#### Parameters
-
-| Name        | Type      | Description               |
-| :---------- | :-------- | :------------------------ |
-| `isEnabled` | `boolean` | usage: 后座力组件启用状态 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11368
-
----
-
-### isEnabledReload
-
-• `get` **isEnabledReload**(): `boolean`
-
-**`Description`**
-
-是否开启了换弹组件
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-是否开启了换弹组件
-
-#### Defined in
-
-Gameplay/index.d.ts:11374
-
-• `set` **isEnabledReload**(`isEnabled`): `void`
-
-**`Description`**
-
-设置是否开启换弹组件
-
-**`Precautions`**
-
-默认开启
-
-**`Effect`**
-
-在服务器调用
-
-#### Parameters
-
-| Name        | Type      | Description             |
-| :---------- | :-------- | :---------------------- |
-| `isEnabled` | `boolean` | usage: 换弹组件启用状态 |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11381
-
----
-
-### isVisible
-
-• `get` **isVisible**(): `boolean`
-
-**`Description`**
-
-获取当前物体是否显示
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-bool
-
-#### Inherited from
-
-Core.GameObject.isVisible
-
-#### Defined in
-
-Core/index.d.ts:496
-
----
-
-### lockState
-
-• `get` **lockState**(): `boolean`
-
-**`Description`**
-
-获取是否锁定
+获取对象是否锁定
 
 **`Effect`**
 
@@ -743,17 +522,17 @@ Core/index.d.ts:496
 
 #### Inherited from
 
-Core.GameObject.lockState
+Core.GameObject.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:452
+Core/index.d.ts:456
 
-• `set` **lockState**(`v`): `void`
+• `set` **lockStatus**(`v`): `void`
 
 **`Description`**
 
-设置是否锁定
+设置对象是否锁定
 
 **`Effect`**
 
@@ -771,11 +550,11 @@ Core/index.d.ts:452
 
 #### Inherited from
 
-Core.GameObject.lockState
+Core.GameObject.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:447
+Core/index.d.ts:451
 
 ---
 
@@ -803,7 +582,7 @@ Core.GameObject.name
 
 #### Defined in
 
-Core/index.d.ts:167
+Core/index.d.ts:171
 
 • `set` **name**(`name`): `void`
 
@@ -831,7 +610,7 @@ Core.GameObject.name
 
 #### Defined in
 
-Core/index.d.ts:173
+Core/index.d.ts:177
 
 ---
 
@@ -859,13 +638,13 @@ Core.GameObject.netStatus
 
 #### Defined in
 
-Core/index.d.ts:502
+Core/index.d.ts:513
 
 ---
 
 ### parent
 
-• `get` **parent**(): [`GameObject`](Core.Core.GameObject.md)
+• `get` **parent**(): `GameObject`
 
 **`Description`**
 
@@ -877,7 +656,7 @@ Core/index.d.ts:502
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 父物体
 
@@ -887,7 +666,7 @@ Core.GameObject.parent
 
 #### Defined in
 
-Core/index.d.ts:458
+Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -901,9 +680,9 @@ Core/index.d.ts:458
 
 #### Parameters
 
-| Name        | Type                                    |
-| :---------- | :-------------------------------------- |
-| `newParent` | [`GameObject`](Core.Core.GameObject.md) |
+| Name        | Type         |
+| :---------- | :----------- |
+| `newParent` | `GameObject` |
 
 #### Returns
 
@@ -915,7 +694,59 @@ Core.GameObject.parent
 
 #### Defined in
 
-Core/index.d.ts:463
+Core/index.d.ts:467
+
+---
+
+### recoilForceEnable
+
+• `get` **recoilForceEnable**(): `boolean`
+
+**`Description`**
+
+是否开启了后坐力组件
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+是否开启了后坐力组件
+
+#### Defined in
+
+Gameplay/index.d.ts:11083
+
+• `set` **recoilForceEnable**(`isEnabled`): `void`
+
+**`Description`**
+
+设置是否开启后座力组件
+
+**`Precautions`**
+
+默认开启
+
+**`Effect`**
+
+在服务器调用
+
+#### Parameters
+
+| Name        | Type      | Description               |
+| :---------- | :-------- | :------------------------ |
+| `isEnabled` | `boolean` | usage: 后座力组件启用状态 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:11090
 
 ---
 
@@ -943,7 +774,7 @@ Core.GameObject.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:304
+Core/index.d.ts:308
 
 • `set` **relativeLocation**(`location`): `void`
 
@@ -971,7 +802,7 @@ Core.GameObject.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:310
+Core/index.d.ts:314
 
 ---
 
@@ -999,7 +830,7 @@ Core.GameObject.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:330
+Core/index.d.ts:334
 
 • `set` **relativeRotation**(`rotation`): `void`
 
@@ -1027,7 +858,7 @@ Core.GameObject.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:336
+Core/index.d.ts:340
 
 ---
 
@@ -1055,7 +886,7 @@ Core.GameObject.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:356
+Core/index.d.ts:360
 
 • `set` **relativeScale**(`scale`): `void`
 
@@ -1083,7 +914,59 @@ Core.GameObject.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:362
+Core/index.d.ts:366
+
+---
+
+### reloadEnable
+
+• `get` **reloadEnable**(): `boolean`
+
+**`Description`**
+
+是否开启了换弹组件
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+是否开启了换弹组件
+
+#### Defined in
+
+Gameplay/index.d.ts:11096
+
+• `set` **reloadEnable**(`isEnabled`): `void`
+
+**`Description`**
+
+设置是否开启换弹组件
+
+**`Precautions`**
+
+默认开启
+
+**`Effect`**
+
+在服务器调用
+
+#### Parameters
+
+| Name        | Type      | Description             |
+| :---------- | :-------- | :---------------------- |
+| `isEnabled` | `boolean` | usage: 换弹组件启用状态 |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+Gameplay/index.d.ts:11103
 
 ---
 
@@ -1111,7 +994,7 @@ Core.GameObject.rightVector
 
 #### Defined in
 
-Core/index.d.ts:419
+Core/index.d.ts:423
 
 ---
 
@@ -1121,7 +1004,7 @@ Core/index.d.ts:419
 
 **`Description`**
 
-获取是否静态
+获取对象是否静态
 
 **`Effect`**
 
@@ -1137,7 +1020,7 @@ Core.GameObject.staticStatus
 
 #### Defined in
 
-Core/index.d.ts:442
+Core/index.d.ts:446
 
 ---
 
@@ -1165,7 +1048,7 @@ Core.GameObject.tag
 
 #### Defined in
 
-Core/index.d.ts:185
+Core/index.d.ts:189
 
 • `set` **tag**(`tag`): `void`
 
@@ -1193,7 +1076,7 @@ Core.GameObject.tag
 
 #### Defined in
 
-Core/index.d.ts:179
+Core/index.d.ts:183
 
 ---
 
@@ -1221,7 +1104,7 @@ Core.GameObject.transform
 
 #### Defined in
 
-Core/index.d.ts:205
+Core/index.d.ts:209
 
 • `set` **transform**(`transform`): `void`
 
@@ -1249,7 +1132,7 @@ Core.GameObject.transform
 
 #### Defined in
 
-Core/index.d.ts:211
+Core/index.d.ts:215
 
 ---
 
@@ -1277,7 +1160,7 @@ Core.GameObject.upVector
 
 #### Defined in
 
-Core/index.d.ts:392
+Core/index.d.ts:396
 
 ---
 
@@ -1287,7 +1170,7 @@ Core/index.d.ts:392
 
 **`Description`**
 
-是否使用更新
+获取对象是否使用更新
 
 **`Effect`**
 
@@ -1303,13 +1186,13 @@ Core.GameObject.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:437
+Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
 **`Description`**
 
-是否使用更新
+设置对象是否使用更新
 
 **`Effect`**
 
@@ -1331,7 +1214,39 @@ Core.GameObject.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:432
+Core/index.d.ts:436
+
+---
+
+### visible
+
+• `get` **visible**(): `boolean`
+
+**`Deprecated`**
+
+since:v0.20.0 reason:api 重构 replacement:getVisibility()
+
+**`Description`**
+
+获取当前物体是否显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.GameObject.visible
+
+#### Defined in
+
+Core/index.d.ts:507
 
 ---
 
@@ -1357,7 +1272,7 @@ Core.GameObject.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:230
+Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -1385,7 +1300,7 @@ Core.GameObject.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:235
+Core/index.d.ts:239
 
 ---
 
@@ -1411,7 +1326,7 @@ Core.GameObject.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:254
+Core/index.d.ts:258
 
 • `set` **worldRotation**(`rotation`): `void`
 
@@ -1439,7 +1354,7 @@ Core.GameObject.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:260
+Core/index.d.ts:264
 
 ---
 
@@ -1465,7 +1380,7 @@ Core.GameObject.worldScale
 
 #### Defined in
 
-Core/index.d.ts:279
+Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -1493,7 +1408,7 @@ Core.GameObject.worldScale
 
 #### Defined in
 
-Core/index.d.ts:284
+Core/index.d.ts:288
 
 ## Methods
 
@@ -1521,11 +1436,11 @@ Core/index.d.ts:284
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[addDestroyCallback](Core.Core.GameObject.md#adddestroycallback)
+Core.GameObject.addDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:616
+Core/index.d.ts:627
 
 ---
 
@@ -1555,11 +1470,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncGetScriptByName](Core.Core.GameObject.md#asyncgetscriptbyname)
+Core.GameObject.asyncGetScriptByName
 
 #### Defined in
 
-Core/index.d.ts:563
+Core/index.d.ts:574
 
 ---
 
@@ -1577,9 +1492,9 @@ Core/index.d.ts:563
 
 #### Parameters
 
-| Name  | Type                                    | Description |
-| :---- | :-------------------------------------- | :---------- |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体  |
+| Name  | Type         | Description |
+| :---- | :----------- | :---------- |
+| `obj` | `GameObject` | usage:物体  |
 
 #### Returns
 
@@ -1587,11 +1502,11 @@ Core/index.d.ts:563
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[attachToGameObject](Core.Core.GameObject.md#attachtogameobject)
+Core.GameObject.attachToGameObject
 
 #### Defined in
 
-Core/index.d.ts:583
+Core/index.d.ts:594
 
 ---
 
@@ -1613,7 +1528,7 @@ Core/index.d.ts:583
 
 #### Defined in
 
-Gameplay/index.d.ts:11533
+Gameplay/index.d.ts:11231
 
 ---
 
@@ -1635,13 +1550,13 @@ Gameplay/index.d.ts:11533
 
 #### Defined in
 
-Gameplay/index.d.ts:11523
+Gameplay/index.d.ts:11221
 
 ---
 
 ### clone
 
-▸ **clone**(`inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ **clone**(`inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -1659,17 +1574,17 @@ Gameplay/index.d.ts:11523
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 克隆的对象
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[clone](Core.Core.GameObject.md#clone)
+Core.GameObject.clone
 
 #### Defined in
 
-Core/index.d.ts:543
+Core/index.d.ts:554
 
 ---
 
@@ -1701,7 +1616,7 @@ Core/index.d.ts:543
 
 #### Defined in
 
-Gameplay/index.d.ts:11546
+Gameplay/index.d.ts:11244
 
 ---
 
@@ -1729,11 +1644,11 @@ Gameplay/index.d.ts:11546
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[deleteDestroyCallback](Core.Core.GameObject.md#deletedestroycallback)
+Core.GameObject.deleteDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:622
+Core/index.d.ts:633
 
 ---
 
@@ -1755,11 +1670,11 @@ Core/index.d.ts:622
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[destroy](Core.Core.GameObject.md#destroy)
+Core.GameObject.destroy
 
 #### Defined in
 
-Core/index.d.ts:146
+Core/index.d.ts:150
 
 ---
 
@@ -1781,11 +1696,11 @@ Core/index.d.ts:146
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[detachFromGameObject](Core.Core.GameObject.md#detachfromgameobject)
+Core.GameObject.detachFromGameObject
 
 #### Defined in
 
-Core/index.d.ts:588
+Core/index.d.ts:599
 
 ---
 
@@ -1821,7 +1736,7 @@ Core/index.d.ts:588
 
 #### Defined in
 
-Gameplay/index.d.ts:11490
+Gameplay/index.d.ts:11188
 
 ---
 
@@ -1857,11 +1772,11 @@ Type.Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getBoundingBoxSize](Core.Core.GameObject.md#getboundingboxsize)
+Core.GameObject.getBoundingBoxSize
 
 #### Defined in
 
-Core/index.d.ts:598
+Core/index.d.ts:609
 
 ---
 
@@ -1871,7 +1786,7 @@ Core/index.d.ts:598
 
 **`Description`**
 
-获取 Gameobject 边界
+获取 GameObject 边界
 
 **`Effect`**
 
@@ -1882,8 +1797,8 @@ Core/index.d.ts:598
 | Name                      | Type                            | Description                                      |
 | :------------------------ | :------------------------------ | :----------------------------------------------- |
 | `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 尺寸的一半。   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
 | `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
 
 #### Returns
@@ -1892,11 +1807,11 @@ Core/index.d.ts:598
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getBounds](Core.Core.GameObject.md#getbounds)
+Core.GameObject.getBounds
 
 #### Defined in
 
-Core/index.d.ts:194
+Core/index.d.ts:198
 
 ---
 
@@ -1920,13 +1835,13 @@ Core/index.d.ts:194
 
 #### Defined in
 
-Gameplay/index.d.ts:11460
+Gameplay/index.d.ts:11158
 
 ---
 
 ### getChildByGuid
 
-▸ **getChildByGuid**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByGuid**(`guid`): `GameObject`
 
 **`Description`**
 
@@ -1944,23 +1859,23 @@ Gameplay/index.d.ts:11460
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildByGuid](Core.Core.GameObject.md#getchildbyguid)
+Core.GameObject.getChildByGuid
 
 #### Defined in
 
-Core/index.d.ts:536
+Core/index.d.ts:547
 
 ---
 
 ### getChildByName
 
-▸ **getChildByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -1978,27 +1893,27 @@ Core/index.d.ts:536
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildByName](Core.Core.GameObject.md#getchildbyname)
+Core.GameObject.getChildByName
 
 #### Defined in
 
-Core/index.d.ts:529
+Core/index.d.ts:540
 
 ---
 
 ### getChildren
 
-▸ **getChildren**(): [`GameObject`](Core.Core.GameObject.md)[]
+▸ **getChildren**(): `GameObject`[]
 
 **`Description`**
 
-获取 Children 客户端不维系父子关系 推荐使用 Find 替代
+获取 Children，客户端不维系父子关系。推荐使用 Find 替代
 
 **`Effect`**
 
@@ -2006,17 +1921,17 @@ Core/index.d.ts:529
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildren](Core.Core.GameObject.md#getchildren)
+Core.GameObject.getChildren
 
 #### Defined in
 
-Core/index.d.ts:522
+Core/index.d.ts:533
 
 ---
 
@@ -2050,11 +1965,11 @@ Type.Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getChildrenBoxCenter](Core.Core.GameObject.md#getchildrenboxcenter)
+Core.GameObject.getChildrenBoxCenter
 
 #### Defined in
 
-Core/index.d.ts:610
+Core/index.d.ts:621
 
 ---
 
@@ -2078,11 +1993,11 @@ Core/index.d.ts:610
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getCollision](Core.Core.GameObject.md#getcollision)
+Core.GameObject.getCollision
 
 #### Defined in
 
-Core/index.d.ts:480
+Core/index.d.ts:484
 
 ---
 
@@ -2106,7 +2021,7 @@ Core/index.d.ts:480
 
 #### Defined in
 
-Gameplay/index.d.ts:11478
+Gameplay/index.d.ts:11176
 
 ---
 
@@ -2130,7 +2045,7 @@ Gameplay/index.d.ts:11478
 
 #### Defined in
 
-Gameplay/index.d.ts:11539
+Gameplay/index.d.ts:11237
 
 ---
 
@@ -2160,7 +2075,7 @@ Gameplay/index.d.ts:11539
 
 #### Defined in
 
-Gameplay/index.d.ts:11355
+Gameplay/index.d.ts:11077
 
 ---
 
@@ -2194,11 +2109,11 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getForwardVector](Core.Core.GameObject.md#getforwardvector)
+Core.GameObject.getForwardVector
 
 #### Defined in
 
-Core/index.d.ts:413
+Core/index.d.ts:417
 
 ---
 
@@ -2232,11 +2147,11 @@ Core/index.d.ts:413
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeLocation](Core.Core.GameObject.md#getrelativelocation)
+Core.GameObject.getRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:318
+Core/index.d.ts:322
 
 ---
 
@@ -2270,11 +2185,11 @@ Core/index.d.ts:318
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeRotation](Core.Core.GameObject.md#getrelativerotation)
+Core.GameObject.getRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:344
+Core/index.d.ts:348
 
 ---
 
@@ -2308,11 +2223,11 @@ Core/index.d.ts:344
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRelativeScale](Core.Core.GameObject.md#getrelativescale)
+Core.GameObject.getRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:370
+Core/index.d.ts:374
 
 ---
 
@@ -2346,11 +2261,11 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getRightVector](Core.Core.GameObject.md#getrightvector)
+Core.GameObject.getRightVector
 
 #### Defined in
 
-Core/index.d.ts:427
+Core/index.d.ts:431
 
 ---
 
@@ -2380,11 +2295,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScriptByGuid](Core.Core.GameObject.md#getscriptbyguid)
+Core.GameObject.getScriptByGuid
 
 #### Defined in
 
-Core/index.d.ts:570
+Core/index.d.ts:581
 
 ---
 
@@ -2414,11 +2329,11 @@ Script
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScriptByName](Core.Core.GameObject.md#getscriptbyname)
+Core.GameObject.getScriptByName
 
 #### Defined in
 
-Core/index.d.ts:556
+Core/index.d.ts:567
 
 ---
 
@@ -2438,15 +2353,15 @@ Core/index.d.ts:556
 
 `Script`[]
 
-Array\<Script\>
+Array<Script>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getScripts](Core.Core.GameObject.md#getscripts)
+Core.GameObject.getScripts
 
 #### Defined in
 
-Core/index.d.ts:549
+Core/index.d.ts:560
 
 ---
 
@@ -2481,7 +2396,7 @@ Core/index.d.ts:549
 
 #### Defined in
 
-Gameplay/index.d.ts:11469
+Gameplay/index.d.ts:11167
 
 ---
 
@@ -2505,11 +2420,11 @@ Gameplay/index.d.ts:11469
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getSourceAssetGuid](Core.Core.GameObject.md#getsourceassetguid)
+Core.GameObject.getSourceAssetGuid
 
 #### Defined in
 
-Core/index.d.ts:628
+Core/index.d.ts:639
 
 ---
 
@@ -2543,11 +2458,11 @@ Transform
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getTransform](Core.Core.GameObject.md#gettransform)
+Core.GameObject.getTransform
 
 #### Defined in
 
-Core/index.d.ts:219
+Core/index.d.ts:223
 
 ---
 
@@ -2581,7 +2496,7 @@ todo Need Completed
 
 #### Defined in
 
-Gameplay/index.d.ts:11438
+Gameplay/index.d.ts:11152
 
 ---
 
@@ -2611,11 +2526,39 @@ Vector
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getUpVector](Core.Core.GameObject.md#getupvector)
+Core.GameObject.getUpVector
 
 #### Defined in
 
-Core/index.d.ts:399
+Core/index.d.ts:403
+
+---
+
+### getVisibility
+
+▸ **getVisibility**(): `boolean`
+
+**`Description`**
+
+获取 GameObject 是否被显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.GameObject.getVisibility
+
+#### Defined in
+
+Core/index.d.ts:490
 
 ---
 
@@ -2649,11 +2592,11 @@ Core/index.d.ts:399
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldLocation](Core.Core.GameObject.md#getworldlocation)
+Core.GameObject.getWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:243
+Core/index.d.ts:247
 
 ---
 
@@ -2687,11 +2630,11 @@ Core/index.d.ts:243
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldRotation](Core.Core.GameObject.md#getworldrotation)
+Core.GameObject.getWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:268
+Core/index.d.ts:272
 
 ---
 
@@ -2725,11 +2668,11 @@ Core/index.d.ts:268
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getWorldScale](Core.Core.GameObject.md#getworldscale)
+Core.GameObject.getWorldScale
 
 #### Defined in
 
-Core/index.d.ts:292
+Core/index.d.ts:296
 
 ---
 
@@ -2753,11 +2696,11 @@ true 为客户端
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[isRunningClient](Core.Core.GameObject.md#isrunningclient)
+Core.GameObject.isRunningClient
 
 #### Defined in
 
-Core/index.d.ts:49
+Core/index.d.ts:50
 
 ---
 
@@ -2779,7 +2722,7 @@ Core/index.d.ts:49
 
 #### Defined in
 
-Gameplay/index.d.ts:11528
+Gameplay/index.d.ts:11226
 
 ---
 
@@ -2801,11 +2744,11 @@ Gameplay/index.d.ts:11528
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onDestroy](Core.Core.GameObject.md#ondestroy)
+Core.GameObject.onDestroy
 
 #### Defined in
 
-Core/index.d.ts:17
+Core/index.d.ts:18
 
 ---
 
@@ -2827,11 +2770,11 @@ Core/index.d.ts:17
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onStart](Core.Core.GameObject.md#onstart)
+Core.GameObject.onStart
 
 #### Defined in
 
-Core/index.d.ts:12
+Core/index.d.ts:13
 
 ---
 
@@ -2859,11 +2802,11 @@ Core/index.d.ts:12
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[onUpdate](Core.Core.GameObject.md#onupdate)
+Core.GameObject.onUpdate
 
 #### Defined in
 
-Core/index.d.ts:23
+Core/index.d.ts:24
 
 ---
 
@@ -2887,11 +2830,11 @@ GameObject 准备好后返回
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[ready](Core.Core.GameObject.md#ready)
+Core.GameObject.ready
 
 #### Defined in
 
-Core/index.d.ts:122
+Core/index.d.ts:126
 
 ---
 
@@ -2919,7 +2862,7 @@ Core/index.d.ts:122
 
 #### Defined in
 
-Gameplay/index.d.ts:11518
+Gameplay/index.d.ts:11216
 
 ---
 
@@ -2952,11 +2895,11 @@ Gameplay/index.d.ts:11518
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setCollision](Core.Core.GameObject.md#setcollision)
+Core.GameObject.setCollision
 
 #### Defined in
 
-Core/index.d.ts:471
+Core/index.d.ts:475
 
 ---
 
@@ -2988,7 +2931,7 @@ Core/index.d.ts:471
 
 #### Defined in
 
-Gameplay/index.d.ts:11502
+Gameplay/index.d.ts:11200
 
 ---
 
@@ -3017,11 +2960,11 @@ Gameplay/index.d.ts:11502
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setLocationAndRotation](Core.Core.GameObject.md#setlocationandrotation)
+Core.GameObject.setLocationAndRotation
 
 #### Defined in
 
-Core/index.d.ts:383
+Core/index.d.ts:387
 
 ---
 
@@ -3049,11 +2992,11 @@ Core/index.d.ts:383
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeLocation](Core.Core.GameObject.md#setrelativelocation)
+Core.GameObject.setRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:324
+Core/index.d.ts:328
 
 ---
 
@@ -3081,11 +3024,11 @@ Core/index.d.ts:324
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeRotation](Core.Core.GameObject.md#setrelativerotation)
+Core.GameObject.setRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:350
+Core/index.d.ts:354
 
 ---
 
@@ -3113,11 +3056,11 @@ Core/index.d.ts:350
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setRelativeScale](Core.Core.GameObject.md#setrelativescale)
+Core.GameObject.setRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:376
+Core/index.d.ts:380
 
 ---
 
@@ -3145,11 +3088,11 @@ Core/index.d.ts:376
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setTransform](Core.Core.GameObject.md#settransform)
+Core.GameObject.setTransform
 
 #### Defined in
 
-Core/index.d.ts:225
+Core/index.d.ts:229
 
 ---
 
@@ -3178,11 +3121,11 @@ Core/index.d.ts:225
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setVisibility](Core.Core.GameObject.md#setvisibility)
+Core.GameObject.setVisibility
 
 #### Defined in
 
-Core/index.d.ts:487
+Core/index.d.ts:497
 
 ---
 
@@ -3210,11 +3153,11 @@ Core/index.d.ts:487
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldLocation](Core.Core.GameObject.md#setworldlocation)
+Core.GameObject.setWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:249
+Core/index.d.ts:253
 
 ---
 
@@ -3242,11 +3185,11 @@ Core/index.d.ts:249
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldRotation](Core.Core.GameObject.md#setworldrotation)
+Core.GameObject.setWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:274
+Core/index.d.ts:278
 
 ---
 
@@ -3274,11 +3217,11 @@ Core/index.d.ts:274
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[setWorldScale](Core.Core.GameObject.md#setworldscale)
+Core.GameObject.setWorldScale
 
 #### Defined in
 
-Core/index.d.ts:298
+Core/index.d.ts:302
 
 ---
 
@@ -3300,7 +3243,7 @@ Core/index.d.ts:298
 
 #### Defined in
 
-Gameplay/index.d.ts:11507
+Gameplay/index.d.ts:11205
 
 ---
 
@@ -3322,13 +3265,13 @@ Gameplay/index.d.ts:11507
 
 #### Defined in
 
-Gameplay/index.d.ts:11512
+Gameplay/index.d.ts:11210
 
 ---
 
-### unEquipment
+### unequipHotWeapon
 
-▸ **unEquipment**(): `void`
+▸ **unequipHotWeapon**(): `void`
 
 **`Description`**
 
@@ -3344,17 +3287,17 @@ Gameplay/index.d.ts:11512
 
 #### Defined in
 
-Gameplay/index.d.ts:11495
+Gameplay/index.d.ts:11193
 
 ---
 
 ### asyncFind
 
-▸ `Static` **asyncFind**(`guid`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncFind**(`guid`): `Promise`<`GameObject`\>
 
 **`Description`**
 
-通过 guid 异步查找 Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -3369,23 +3312,23 @@ Gameplay/index.d.ts:11495
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 Guid 对应的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncFind](Core.Core.GameObject.md#asyncfind)
+Core.GameObject.asyncFind
 
 #### Defined in
 
-Core/index.d.ts:161
+Core/index.d.ts:165
 
 ---
 
 ### asyncSpawnGameObject
 
-▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\>
 
 **`Description`**
 
@@ -3404,27 +3347,27 @@ Core/index.d.ts:161
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 构造的 GameObject
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[asyncSpawnGameObject](Core.Core.GameObject.md#asyncspawngameobject)
+Core.GameObject.asyncSpawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:138
+Core/index.d.ts:142
 
 ---
 
 ### find
 
-▸ `Static` **find**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **find**(`guid`): `GameObject`
 
 **`Description`**
 
-通过 Guid 查找 Gameobject
+通过 Guid 查找 GameObject
 
 **`Effect`**
 
@@ -3438,23 +3381,23 @@ Core/index.d.ts:138
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 Guid 对应的物体
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[find](Core.Core.GameObject.md#find)
+Core.GameObject.find
 
 #### Defined in
 
-Core/index.d.ts:153
+Core/index.d.ts:157
 
 ---
 
 ### findGameObjectByTag
 
-▸ `Static` **findGameObjectByTag**(`InTag`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[]
 
 **`Description`**
 
@@ -3472,23 +3415,23 @@ Core/index.d.ts:153
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[findGameObjectByTag](Core.Core.GameObject.md#findgameobjectbytag)
+Core.GameObject.findGameObjectByTag
 
 #### Defined in
 
-Core/index.d.ts:577
+Core/index.d.ts:588
 
 ---
 
 ### getGameObjectByName
 
-▸ `Static` **getGameObjectByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **getGameObjectByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -3506,23 +3449,23 @@ Core/index.d.ts:577
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getGameObjectByName](Core.Core.GameObject.md#getgameobjectbyname)
+Core.GameObject.getGameObjectByName
 
 #### Defined in
 
-Core/index.d.ts:516
+Core/index.d.ts:527
 
 ---
 
 ### getGameObjectsByName
 
-▸ `Static` **getGameObjectsByName**(`name`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[]
 
 **`Description`**
 
@@ -3540,23 +3483,23 @@ Core/index.d.ts:516
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
 返回所有查找到的对象
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[getGameObjectsByName](Core.Core.GameObject.md#getgameobjectsbyname)
+Core.GameObject.getGameObjectsByName
 
 #### Defined in
 
-Core/index.d.ts:509
+Core/index.d.ts:520
 
 ---
 
 ### spawnGameObject
 
-▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -3575,14 +3518,14 @@ Core/index.d.ts:509
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 构造的 GameObject
 
 #### Inherited from
 
-[GameObject](Core.Core.GameObject.md).[spawnGameObject](Core.Core.GameObject.md#spawngameobject)
+Core.GameObject.spawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:130
+Core/index.d.ts:134

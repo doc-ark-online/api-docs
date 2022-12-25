@@ -21,46 +21,46 @@
 
 ### BlendLower
 
-• **BlendLower** = ``2``
+• **BlendLower** = `2`
 
 只混合下半身
 
 #### Defined in
 
-Gameplay/index.d.ts:1737
+Gameplay/index.d.ts:1921
 
-___
+---
 
 ### BlendUpper
 
-• **BlendUpper** = ``1``
+• **BlendUpper** = `1`
 
 只混合上半身
 
 #### Defined in
 
-Gameplay/index.d.ts:1735
+Gameplay/index.d.ts:1919
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 不指定
 
 #### Defined in
 
-Gameplay/index.d.ts:1733
+Gameplay/index.d.ts:1917
 
-___
+---
 
 ### WholeBody
 
-• **WholeBody** = ``3``
+• **WholeBody** = `3`
 
 全身混合
 
 #### Defined in
 
-Gameplay/index.d.ts:1739
+Gameplay/index.d.ts:1923

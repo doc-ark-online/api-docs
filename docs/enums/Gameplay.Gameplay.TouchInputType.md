@@ -20,34 +20,34 @@
 
 ### TouchBegin
 
-• **TouchBegin** = ``0``
+• **TouchBegin** = `0`
 
 触摸开始
 
 #### Defined in
 
-Gameplay/index.d.ts:10044
+Gameplay/index.d.ts:10118
 
-___
+---
 
 ### TouchEnd
 
-• **TouchEnd** = ``2``
+• **TouchEnd** = `2`
 
 触摸结束
 
 #### Defined in
 
-Gameplay/index.d.ts:10048
+Gameplay/index.d.ts:10122
 
-___
+---
 
 ### TouchMove
 
-• **TouchMove** = ``1``
+• **TouchMove** = `1`
 
 触摸移动
 
 #### Defined in
 
-Gameplay/index.d.ts:10046
+Gameplay/index.d.ts:10120

@@ -12,29 +12,29 @@
 
 ### Enumeration Members
 
-- [front](Gameplay.Gameplay.VehicleWheelPosition4W.md#front)
-- [rear](Gameplay.Gameplay.VehicleWheelPosition4W.md#rear)
+- [Front](Gameplay.Gameplay.VehicleWheelPosition4W.md#front)
+- [Rear](Gameplay.Gameplay.VehicleWheelPosition4W.md#rear)
 
 ## Enumeration Members
 
-### front
+### Front
 
-• **front** = ``0``
+• **Front** = `0`
 
 前轮
 
 #### Defined in
 
-Gameplay/index.d.ts:10361
+Gameplay/index.d.ts:10435
 
-___
+---
 
-### rear
+### Rear
 
-• **rear** = ``1``
+• **Rear** = `1`
 
 后轮
 
 #### Defined in
 
-Gameplay/index.d.ts:10363
+Gameplay/index.d.ts:10437

@@ -20,20 +20,20 @@
 
 ### Center
 
-• **Center** = ``1``
+• **Center** = `1`
 
 对齐中间的文本。
 文本流动方向对该对齐模式没有影响。
 
 #### Defined in
 
-UI/index.d.ts:3469
+UI/index.d.ts:3478
 
-___
+---
 
 ### Left
 
-• **Left** = ``0``
+• **Left** = `0`
 
 从逻辑上向左对齐文本。
 当文本从左向右流动时，这将使文本在视觉上向左对齐。
@@ -41,13 +41,13 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3464
+UI/index.d.ts:3473
 
-___
+---
 
 ### Right
 
-• **Right** = ``2``
+• **Right** = `2`
 
 在逻辑上向右对齐文本。
 当文本从左向右流动时，这将使文本在视觉上向右对齐。
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3475
+UI/index.d.ts:3484

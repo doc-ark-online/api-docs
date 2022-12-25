@@ -22,58 +22,58 @@
 
 ### LimitToFloat
 
-• **LimitToFloat** = ``2``
+• **LimitToFloat** = `2`
 
 浮点数
 
 #### Defined in
 
-UI/index.d.ts:3677
+UI/index.d.ts:3686
 
-___
+---
 
 ### LimitToInt
 
-• **LimitToInt** = ``1``
+• **LimitToInt** = `1`
 
 整数
 
 #### Defined in
 
-UI/index.d.ts:3675
+UI/index.d.ts:3684
 
-___
+---
 
 ### LimitToNumberAndChar
 
-• **LimitToNumberAndChar** = ``3``
+• **LimitToNumberAndChar** = `3`
 
 数字或则字母
 
 #### Defined in
 
-UI/index.d.ts:3679
+UI/index.d.ts:3688
 
-___
+---
 
 ### LimitToPassword
 
-• **LimitToPassword** = ``4``
+• **LimitToPassword** = `4`
 
 密码
 
 #### Defined in
 
-UI/index.d.ts:3681
+UI/index.d.ts:3690
 
-___
+---
 
 ### NoLimit
 
-• **NoLimit** = ``0``
+• **NoLimit** = `0`
 
 无限制
 
 #### Defined in
 
-UI/index.d.ts:3673
+UI/index.d.ts:3682

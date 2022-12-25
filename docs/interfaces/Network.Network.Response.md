@@ -10,7 +10,7 @@
 
 **`Description`**
 
-HTTP响应信息的对象
+HTTP 响应信息的对象
 
 **`Network Status`**
 
@@ -45,7 +45,7 @@ usage:双端
 
 Network/index.d.ts:26
 
-___
+---
 
 ### ok
 
@@ -53,13 +53,13 @@ ___
 
 **`Description`**
 
-是否成功（状态码是否为200）
+是否成功（状态码是否为 200）
 
 #### Defined in
 
 Network/index.d.ts:32
 
-___
+---
 
 ### status
 
@@ -73,7 +73,7 @@ ___
 
 Network/index.d.ts:34
 
-___
+---
 
 ### type
 
@@ -87,7 +87,7 @@ ___
 
 Network/index.d.ts:28
 
-___
+---
 
 ### url
 
@@ -95,7 +95,7 @@ ___
 
 **`Description`**
 
-响应URL
+响应 URL
 
 #### Defined in
 
@@ -109,7 +109,7 @@ Network/index.d.ts:30
 
 **`Description`**
 
-数据返回json
+数据返回 json
 
 **`Effect`**
 
@@ -118,20 +118,20 @@ Network/index.d.ts:30
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Returns
 
 `Promise`<`T`\>
 
-数据返回json
+数据返回 json
 
 #### Defined in
 
 Network/index.d.ts:46
 
-___
+---
 
 ### text
 

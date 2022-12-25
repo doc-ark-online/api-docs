@@ -32,4 +32,4 @@
 
 #### Defined in
 
-Util/index.d.ts:1012
+Util/index.d.ts:1233

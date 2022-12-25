@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 ## Hierarchy
 
@@ -29,7 +29,7 @@
 
 ### Methods
 
-- [getAreaNums](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareanums)
+- [getAreaCount](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)
 - [getColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)
 - [getDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)
 - [getDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)
@@ -55,9 +55,9 @@
 
 ## Methods
 
-### getAreaNums
+### getAreaCount
 
-▸ **getAreaNums**(): `number`
+▸ **getAreaCount**(): `number`
 
 **`Description`**
 
@@ -75,7 +75,7 @@
 
 #### Defined in
 
-Gameplay/index.d.ts:2793
+Gameplay/index.d.ts:2930
 
 ---
 
@@ -105,7 +105,7 @@ Gameplay/index.d.ts:2793
 
 #### Defined in
 
-Gameplay/index.d.ts:2810
+Gameplay/index.d.ts:2947
 
 ---
 
@@ -135,7 +135,7 @@ Gameplay/index.d.ts:2810
 
 #### Defined in
 
-Gameplay/index.d.ts:2967
+Gameplay/index.d.ts:3104
 
 ---
 
@@ -165,7 +165,7 @@ Gameplay/index.d.ts:2967
 
 #### Defined in
 
-Gameplay/index.d.ts:2950
+Gameplay/index.d.ts:3087
 
 ---
 
@@ -195,7 +195,7 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:2933
+Gameplay/index.d.ts:3070
 
 ---
 
@@ -223,7 +223,7 @@ Gameplay/index.d.ts:2933
 
 #### Defined in
 
-Gameplay/index.d.ts:2644
+Gameplay/index.d.ts:2784
 
 ---
 
@@ -253,7 +253,7 @@ Gameplay/index.d.ts:2644
 
 #### Defined in
 
-Gameplay/index.d.ts:2899
+Gameplay/index.d.ts:3036
 
 ---
 
@@ -283,7 +283,7 @@ Gameplay/index.d.ts:2899
 
 #### Defined in
 
-Gameplay/index.d.ts:2848
+Gameplay/index.d.ts:2985
 
 ---
 
@@ -313,7 +313,7 @@ Gameplay/index.d.ts:2848
 
 #### Defined in
 
-Gameplay/index.d.ts:2882
+Gameplay/index.d.ts:3019
 
 ---
 
@@ -343,7 +343,7 @@ Gameplay/index.d.ts:2882
 
 #### Defined in
 
-Gameplay/index.d.ts:2916
+Gameplay/index.d.ts:3053
 
 ---
 
@@ -373,7 +373,7 @@ Gameplay/index.d.ts:2916
 
 #### Defined in
 
-Gameplay/index.d.ts:2865
+Gameplay/index.d.ts:3002
 
 ---
 
@@ -403,7 +403,7 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:2827
+Gameplay/index.d.ts:2964
 
 ---
 
@@ -434,7 +434,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2803
+Gameplay/index.d.ts:2940
 
 ---
 
@@ -465,7 +465,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2960
+Gameplay/index.d.ts:3097
 
 ---
 
@@ -496,7 +496,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2943
+Gameplay/index.d.ts:3080
 
 ---
 
@@ -527,7 +527,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2926
+Gameplay/index.d.ts:3063
 
 ---
 
@@ -565,7 +565,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2638
+Gameplay/index.d.ts:2778
 
 ---
 
@@ -596,7 +596,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2892
+Gameplay/index.d.ts:3029
 
 ---
 
@@ -627,7 +627,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2837
+Gameplay/index.d.ts:2974
 
 ---
 
@@ -658,7 +658,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2875
+Gameplay/index.d.ts:3012
 
 ---
 
@@ -689,7 +689,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2909
+Gameplay/index.d.ts:3046
 
 ---
 
@@ -720,7 +720,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2858
+Gameplay/index.d.ts:2995
 
 ---
 
@@ -751,4 +751,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2820
+Gameplay/index.d.ts:2957

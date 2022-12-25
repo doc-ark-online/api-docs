@@ -6,7 +6,7 @@
 
 **`Author`**
 
-Jiamin.Guo
+jiamin.guo
 
 **`Description`**
 
@@ -15,6 +15,21 @@ Jiamin.Guo
 **`Network Status`**
 
 usage:客户端
+
+**`Precautions`**
+
+请不要直接使用 new 创建
+
+**`Example`**
+
+使用示例:创建方式
+
+```
+Gameplay.asyncGetCurrentPlayer().then((player) => {
+  let Anim = player.character.playAnimation(animGuid);
+  Anim = player.character.loadAnimation(animGuid);
+});
+```
 
 ## Table of contents
 
@@ -51,7 +66,19 @@ usage:客户端
 
 **`Description`**
 
-从动画的开始播放动画
+是否正在播放
+
+**`Example`**
+
+判断是否该动画对象是否播放中
+
+```
+if (anim.isPlaying) {
+   do Something
+} else {
+   do something else
+}
+```
 
 #### Returns
 
@@ -59,9 +86,9 @@ usage:客户端
 
 #### Defined in
 
-Gameplay/index.d.ts:670
+Gameplay/index.d.ts:714
 
-___
+---
 
 ### length
 
@@ -71,15 +98,24 @@ ___
 
 动画长度,单位为秒,只读
 
+**`Example`**
+
+获取对象时长
+
+```
+let anim = player.character.playAnimation(animGuid);
+console.log(anim.length)
+```
+
 #### Returns
 
 `number`
 
 #### Defined in
 
-Gameplay/index.d.ts:650
+Gameplay/index.d.ts:653
 
-___
+---
 
 ### loop
 
@@ -87,7 +123,16 @@ ___
 
 **`Description`**
 
-Auto模式表示循环播放次数，Custom模式表示是否循环  非1:是，1:否
+Auto 模式表示循环播放次数，Custom 模式表示是否循环 非 1:是，1:否
+
+**`Example`**
+
+获取循环次数
+
+```
+let anim = player.character.playAnimation(animGuid);
+console.log(anim.loop)
+```
 
 #### Returns
 
@@ -95,18 +140,27 @@ Auto模式表示循环播放次数，Custom模式表示是否循环  非1:是，
 
 #### Defined in
 
-Gameplay/index.d.ts:654
+Gameplay/index.d.ts:663
 
 • `set` **loop**(`loopCount`): `void`
 
 **`Description`**
 
-循环播放次数,不同步，Custom模式支持取消循环
+循环播放次数,不同步，Custom 模式支持取消循环
+
+**`Example`**
+
+设置循环次数
+
+```
+let anim = player.character.playAnimation(animGuid);
+anim.loop = 23333;
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| :---------- | :------- |
 | `loopCount` | `number` |
 
 #### Returns
@@ -115,9 +169,9 @@ Gameplay/index.d.ts:654
 
 #### Defined in
 
-Gameplay/index.d.ts:658
+Gameplay/index.d.ts:673
 
-___
+---
 
 ### onAnimFinished
 
@@ -127,15 +181,25 @@ ___
 
 动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发)
 
+**`Example`**
+
+动画播放结束后执行逻辑
+
+```
+anim.onAnimFinished.add(()=>{
+       do something
+})
+```
+
 #### Returns
 
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
 #### Defined in
 
-Gameplay/index.d.ts:674
+Gameplay/index.d.ts:725
 
-___
+---
 
 ### rate
 
@@ -145,24 +209,52 @@ ___
 
 获取动画播放速率
 
+**`Example`**
+
+获取速率
+
+```
+let anim = player.character.playAnimation(animGuid);
+console.log(anim.rate);
+```
+
 #### Returns
 
 `number`
 
 #### Defined in
 
-Gameplay/index.d.ts:666
+Gameplay/index.d.ts:701
 
 • `set` **rate**(`animRate`): `void`
 
 **`Description`**
 
-设置动画播放速率，无范围限制，速率的符号表示播放方向，正表示正向播放，负表示逆向播放, 1表示原始速率,默认值为1
+设置播放速率(动画切换时有融合时间,动画太短，当 rate=1 时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
+负表示逆向播放, rate 为 1 表示原始速率,默认值为 1。设置该值不会改变播放的起点.
+
+**`Example`**
+
+两倍速播放
+
+```
+let anim = player.character.loadAnimation(animGuid);
+anim.rate = 2;
+anim.play();
+```
+
+动画播放加速/减慢成 n 秒
+
+```
+this.Anim = player.character.loadAnimation(this.AnimList[0]);
+this.Anim.rate = this.Anim.length/n;
+this.Anim.play();
+```
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `animRate` | `number` |
 
 #### Returns
@@ -171,7 +263,7 @@ Gameplay/index.d.ts:666
 
 #### Defined in
 
-Gameplay/index.d.ts:662
+Gameplay/index.d.ts:691
 
 ## Methods
 
@@ -181,11 +273,22 @@ Gameplay/index.d.ts:662
 
 **`Description`**
 
-暂停动画
+暂停动画,不会触发 onAnimFinished 委托
 
 **`Effect`**
 
 与角色创建方式绑定
+
+**`Example`**
+
+使用示例:暂停动画
+
+```
+let anim = player.character.loadAnimation(animGuid);
+anim.play();
+.......
+anim.pause();
+```
 
 #### Returns
 
@@ -195,9 +298,9 @@ true 成功，false 失败
 
 #### Defined in
 
-Gameplay/index.d.ts:686
+Gameplay/index.d.ts:751
 
-___
+---
 
 ### play
 
@@ -211,6 +314,15 @@ ___
 
 与角色创建方式绑定
 
+**`Example`**
+
+使用示例:播放动画
+
+```
+let anim = player.character.loadAnimation(animGuid);
+anim.play();
+```
+
 #### Returns
 
 `boolean`
@@ -219,9 +331,9 @@ true 成功，false 失败
 
 #### Defined in
 
-Gameplay/index.d.ts:680
+Gameplay/index.d.ts:737
 
-___
+---
 
 ### resume
 
@@ -235,6 +347,17 @@ ___
 
 与角色创建方式绑定
 
+**`Example`**
+
+使用示例:恢复播放
+
+```
+let anim = player.character.loadAnimation(animGuid);
+anim.play();
+...
+anim.resume();
+```
+
 #### Returns
 
 `boolean`
@@ -243,9 +366,9 @@ true 成功，false 失败
 
 #### Defined in
 
-Gameplay/index.d.ts:692
+Gameplay/index.d.ts:765
 
-___
+---
 
 ### stop
 
@@ -253,11 +376,22 @@ ___
 
 **`Description`**
 
-停止播放
+停止播放,不会触发 onAnimFinished 委托
 
 **`Effect`**
 
 与角色创建方式绑定
+
+**`Example`**
+
+使用示例:暂停播放
+
+```
+let anim = player.character.loadAnimation(animGuid);
+anim.play();
+...
+anim.stop();
+```
 
 #### Returns
 
@@ -267,4 +401,4 @@ true 成功，false 失败
 
 #### Defined in
 
-Gameplay/index.d.ts:698
+Gameplay/index.d.ts:779

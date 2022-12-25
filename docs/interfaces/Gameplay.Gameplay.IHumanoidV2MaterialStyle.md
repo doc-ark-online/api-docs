@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V2材质风格
+人形对象 V2 材质风格
 
 **`Author`**
 
-邓广
+guang.deng
 
 ## Implemented by
 
@@ -53,9 +53,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 Index |
 
 #### Returns
 
@@ -65,9 +65,9 @@
 
 #### Defined in
 
-Gameplay/index.d.ts:3609
+Gameplay/index.d.ts:3746
 
-___
+---
 
 ### getBodyTattooPositionX
 
@@ -83,9 +83,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 index |
 
 #### Returns
 
@@ -95,9 +95,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:3644
+Gameplay/index.d.ts:3781
 
-___
+---
 
 ### getBodyTattooPositionY
 
@@ -113,9 +113,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 index |
 
 #### Returns
 
@@ -125,9 +125,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:3661
+Gameplay/index.d.ts:3798
 
-___
+---
 
 ### getBodyTattooRotation
 
@@ -143,9 +143,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 index |
 
 #### Returns
 
@@ -155,9 +155,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:3695
+Gameplay/index.d.ts:3832
 
-___
+---
 
 ### getBodyTattooType
 
@@ -174,21 +174,21 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 Index |
 
 #### Returns
 
 `string`
 
-纹身贴图guid
+纹身贴图 guid
 
 #### Defined in
 
-Gameplay/index.d.ts:3627
+Gameplay/index.d.ts:3764
 
-___
+---
 
 ### getBodyTattooZoom
 
@@ -204,9 +204,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身index |
+| Name    | Type     | Description      |
+| :------ | :------- | :--------------- |
+| `index` | `number` | usage:纹身 index |
 
 #### Returns
 
@@ -216,9 +216,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:3678
+Gameplay/index.d.ts:3815
 
-___
+---
 
 ### getSkinColor
 
@@ -240,9 +240,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:3573
+Gameplay/index.d.ts:3710
 
-___
+---
 
 ### getSkinTexture
 
@@ -260,13 +260,13 @@ ___
 
 `string`
 
-皮肤贴图guid
+皮肤贴图 guid
 
 #### Defined in
 
-Gameplay/index.d.ts:3588
+Gameplay/index.d.ts:3725
 
-___
+---
 
 ### setBodyTattooColor
 
@@ -283,11 +283,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage: 纹身index |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage: 颜色值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description                   |
+| :------ | :--------------------------------------------------- | :---------------------------- |
+| `index` | `number`                                             | usage: 纹身 index             |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage: 颜色值                 |
+| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -295,9 +295,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3598
+Gameplay/index.d.ts:3735
 
-___
+---
 
 ### setBodyTattooPositionX
 
@@ -314,11 +314,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
-| `value` | `number` | usage:偏移值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身 Index              |
+| `value` | `number`  | usage:偏移值                  |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -326,9 +326,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3637
+Gameplay/index.d.ts:3774
 
-___
+---
 
 ### setBodyTattooPositionY
 
@@ -345,11 +345,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
-| `value` | `number` | usage:偏移值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身 Index              |
+| `value` | `number`  | usage:偏移值                  |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -357,9 +357,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3654
+Gameplay/index.d.ts:3791
 
-___
+---
 
 ### setBodyTattooRotation
 
@@ -376,11 +376,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
-| `value` | `number` | usage:旋转值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身 Index              |
+| `value` | `number`  | usage:旋转值                  |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -388,9 +388,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3688
+Gameplay/index.d.ts:3825
 
-___
+---
 
 ### setBodyTattooType
 
@@ -407,11 +407,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身index |
-| `guid` | `string` | usage:类型贴图guid |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身 index              |
+| `guid`  | `string`  | usage:类型贴图 guid           |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -419,9 +419,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3619
+Gameplay/index.d.ts:3756
 
-___
+---
 
 ### setBodyTattooZoom
 
@@ -438,11 +438,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:纹身Index |
-| `value` | `number` | usage: 缩放值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:纹身 Index              |
+| `value` | `number`  | usage: 缩放值                 |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -450,9 +450,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3671
+Gameplay/index.d.ts:3808
 
-___
+---
 
 ### setSkinColor
 
@@ -469,10 +469,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage: 颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description                   |
+| :------ | :--------------------------------------------------- | :---------------------------- |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage: 颜色                   |
+| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -480,9 +480,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3567
+Gameplay/index.d.ts:3704
 
-___
+---
 
 ### setSkinTexture
 
@@ -499,9 +499,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -510,4 +510,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3582
+Gameplay/index.d.ts:3719

@@ -24,82 +24,82 @@
 
 ### All
 
-• **All** = ``0``
+• **All** = `0`
 
 All
 
 #### Defined in
 
-Type/index.d.ts:809
+Type/index.d.ts:778
 
-___
+---
 
 ### Cloth
 
-• **Cloth** = ``3``
+• **Cloth** = `3`
 
 Cloth
 
 #### Defined in
 
-Type/index.d.ts:815
+Type/index.d.ts:784
 
-___
+---
 
 ### Prefab
 
-• **Prefab** = ``6``
+• **Prefab** = `6`
 
 Prefab
 
 #### Defined in
 
-Type/index.d.ts:821
+Type/index.d.ts:790
 
-___
+---
 
 ### SkeletalMesh
 
-• **SkeletalMesh** = ``2``
+• **SkeletalMesh** = `2`
 
 SkeletalMesh
 
 #### Defined in
 
-Type/index.d.ts:813
+Type/index.d.ts:782
 
-___
+---
 
 ### SoundWave
 
-• **SoundWave** = ``4``
+• **SoundWave** = `4`
 
 SoundWave
 
 #### Defined in
 
-Type/index.d.ts:817
+Type/index.d.ts:786
 
-___
+---
 
 ### StaticMesh
 
-• **StaticMesh** = ``1``
+• **StaticMesh** = `1`
 
 StaticMesh
 
 #### Defined in
 
-Type/index.d.ts:811
+Type/index.d.ts:780
 
-___
+---
 
 ### Texture
 
-• **Texture** = ``5``
+• **Texture** = `5`
 
 Texture
 
 #### Defined in
 
-Type/index.d.ts:819
+Type/index.d.ts:788

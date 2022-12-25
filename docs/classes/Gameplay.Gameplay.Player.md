@@ -6,7 +6,7 @@
 
 **`Author`**
 
-孙向坤
+xiangkun.sun
 
 **`Description`**
 
@@ -18,7 +18,7 @@ usage:双端
 
 ## Hierarchy
 
-- [`IPlayer`](Core.Core.IPlayer.md)
+- `IPlayer`
 
   ↳ **`Player`**
 
@@ -34,10 +34,10 @@ usage:双端
 
 ### Accessors
 
+- [customTimeDilation](Gameplay.Gameplay.Player.md#customtimedilation)
 - [forwardVector](Gameplay.Gameplay.Player.md#forwardvector)
 - [guid](Gameplay.Gameplay.Player.md#guid)
-- [isVisible](Gameplay.Gameplay.Player.md#isvisible)
-- [lockState](Gameplay.Gameplay.Player.md#lockstate)
+- [lockStatus](Gameplay.Gameplay.Player.md#lockstatus)
 - [name](Gameplay.Gameplay.Player.md#name)
 - [netStatus](Gameplay.Gameplay.Player.md#netstatus)
 - [parent](Gameplay.Gameplay.Player.md#parent)
@@ -50,6 +50,7 @@ usage:双端
 - [transform](Gameplay.Gameplay.Player.md#transform)
 - [upVector](Gameplay.Gameplay.Player.md#upvector)
 - [useUpdate](Gameplay.Gameplay.Player.md#useupdate)
+- [visible](Gameplay.Gameplay.Player.md#visible)
 - [worldLocation](Gameplay.Gameplay.Player.md#worldlocation)
 - [worldRotation](Gameplay.Gameplay.Player.md#worldrotation)
 - [worldScale](Gameplay.Gameplay.Player.md#worldscale)
@@ -62,7 +63,6 @@ usage:双端
 - [asyncGetScriptByName](Gameplay.Gameplay.Player.md#asyncgetscriptbyname)
 - [attachToGameObject](Gameplay.Gameplay.Player.md#attachtogameobject)
 - [clone](Gameplay.Gameplay.Player.md#clone)
-- [convertScreenLocationToWorldSpace](Gameplay.Gameplay.Player.md#convertscreenlocationtoworldspace)
 - [deleteDestroyCallback](Gameplay.Gameplay.Player.md#deletedestroycallback)
 - [destroy](Gameplay.Gameplay.Player.md#destroy)
 - [detachFromGameObject](Gameplay.Gameplay.Player.md#detachfromgameobject)
@@ -74,7 +74,6 @@ usage:双端
 - [getChildren](Gameplay.Gameplay.Player.md#getchildren)
 - [getChildrenBoxCenter](Gameplay.Gameplay.Player.md#getchildrenboxcenter)
 - [getCollision](Gameplay.Gameplay.Player.md#getcollision)
-- [getCustomTimeDilation](Gameplay.Gameplay.Player.md#getcustomtimedilation)
 - [getForwardVector](Gameplay.Gameplay.Player.md#getforwardvector)
 - [getPlayerID](Gameplay.Gameplay.Player.md#getplayerid)
 - [getRelativeLocation](Gameplay.Gameplay.Player.md#getrelativelocation)
@@ -85,9 +84,11 @@ usage:双端
 - [getScriptByName](Gameplay.Gameplay.Player.md#getscriptbyname)
 - [getScripts](Gameplay.Gameplay.Player.md#getscripts)
 - [getSourceAssetGuid](Gameplay.Gameplay.Player.md#getsourceassetguid)
+- [getTeamId](Gameplay.Gameplay.Player.md#getteamid)
 - [getTransform](Gameplay.Gameplay.Player.md#gettransform)
 - [getUpVector](Gameplay.Gameplay.Player.md#getupvector)
 - [getUserSystemId](Gameplay.Gameplay.Player.md#getusersystemid)
+- [getVisibility](Gameplay.Gameplay.Player.md#getvisibility)
 - [getWorldLocation](Gameplay.Gameplay.Player.md#getworldlocation)
 - [getWorldRotation](Gameplay.Gameplay.Player.md#getworldrotation)
 - [getWorldScale](Gameplay.Gameplay.Player.md#getworldscale)
@@ -96,7 +97,6 @@ usage:双端
 - [onStart](Gameplay.Gameplay.Player.md#onstart)
 - [onUpdate](Gameplay.Gameplay.Player.md#onupdate)
 - [ping](Gameplay.Gameplay.Player.md#ping)
-- [projectWorldLocationToWidgetPosition](Gameplay.Gameplay.Player.md#projectworldlocationtowidgetposition)
 - [ready](Gameplay.Gameplay.Player.md#ready)
 - [removeNetworkDisconnectListener](Gameplay.Gameplay.Player.md#removenetworkdisconnectlistener)
 - [removeNetworkReconnectListener](Gameplay.Gameplay.Player.md#removenetworkreconnectlistener)
@@ -127,7 +127,7 @@ usage:双端
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[constructor](Core.Core.IPlayer.md#constructor)
+Core.IPlayer.constructor
 
 ## Properties
 
@@ -141,9 +141,33 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:1850
+Gameplay/index.d.ts:2011
 
 ## Accessors
+
+### customTimeDilation
+
+• `get` **customTimeDilation**(): `number`
+
+**`Description`**
+
+获取当前角色对象膨胀时间速度
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`number`
+
+膨胀时间速度
+
+#### Defined in
+
+Gameplay/index.d.ts:2109
+
+---
 
 ### forwardVector
 
@@ -169,7 +193,7 @@ Core.IPlayer.forwardVector
 
 #### Defined in
 
-Core/index.d.ts:405
+Core/index.d.ts:409
 
 ---
 
@@ -195,45 +219,17 @@ Core.IPlayer.guid
 
 #### Defined in
 
-Core/index.d.ts:38
+Core/index.d.ts:39
 
 ---
 
-### isVisible
+### lockStatus
 
-• `get` **isVisible**(): `boolean`
-
-**`Description`**
-
-获取当前物体是否显示
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`boolean`
-
-bool
-
-#### Inherited from
-
-Core.IPlayer.isVisible
-
-#### Defined in
-
-Core/index.d.ts:496
-
----
-
-### lockState
-
-• `get` **lockState**(): `boolean`
+• `get` **lockStatus**(): `boolean`
 
 **`Description`**
 
-获取是否锁定
+获取对象是否锁定
 
 **`Effect`**
 
@@ -245,17 +241,17 @@ Core/index.d.ts:496
 
 #### Inherited from
 
-Core.IPlayer.lockState
+Core.IPlayer.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:452
+Core/index.d.ts:456
 
-• `set` **lockState**(`v`): `void`
+• `set` **lockStatus**(`v`): `void`
 
 **`Description`**
 
-设置是否锁定
+设置对象是否锁定
 
 **`Effect`**
 
@@ -273,11 +269,11 @@ Core/index.d.ts:452
 
 #### Inherited from
 
-Core.IPlayer.lockState
+Core.IPlayer.lockStatus
 
 #### Defined in
 
-Core/index.d.ts:447
+Core/index.d.ts:451
 
 ---
 
@@ -305,7 +301,7 @@ Core.IPlayer.name
 
 #### Defined in
 
-Core/index.d.ts:167
+Core/index.d.ts:171
 
 • `set` **name**(`name`): `void`
 
@@ -333,7 +329,7 @@ Core.IPlayer.name
 
 #### Defined in
 
-Core/index.d.ts:173
+Core/index.d.ts:177
 
 ---
 
@@ -361,13 +357,13 @@ Core.IPlayer.netStatus
 
 #### Defined in
 
-Core/index.d.ts:502
+Core/index.d.ts:513
 
 ---
 
 ### parent
 
-• `get` **parent**(): [`GameObject`](Core.Core.GameObject.md)
+• `get` **parent**(): `GameObject`
 
 **`Description`**
 
@@ -379,7 +375,7 @@ Core/index.d.ts:502
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 父物体
 
@@ -389,7 +385,7 @@ Core.IPlayer.parent
 
 #### Defined in
 
-Core/index.d.ts:458
+Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -403,9 +399,9 @@ Core/index.d.ts:458
 
 #### Parameters
 
-| Name        | Type                                    |
-| :---------- | :-------------------------------------- |
-| `newParent` | [`GameObject`](Core.Core.GameObject.md) |
+| Name        | Type         |
+| :---------- | :----------- |
+| `newParent` | `GameObject` |
 
 #### Returns
 
@@ -417,7 +413,7 @@ Core.IPlayer.parent
 
 #### Defined in
 
-Core/index.d.ts:463
+Core/index.d.ts:467
 
 ---
 
@@ -445,7 +441,7 @@ Core.IPlayer.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:304
+Core/index.d.ts:308
 
 • `set` **relativeLocation**(`location`): `void`
 
@@ -473,7 +469,7 @@ Core.IPlayer.relativeLocation
 
 #### Defined in
 
-Core/index.d.ts:310
+Core/index.d.ts:314
 
 ---
 
@@ -501,7 +497,7 @@ Core.IPlayer.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:330
+Core/index.d.ts:334
 
 • `set` **relativeRotation**(`rotation`): `void`
 
@@ -529,7 +525,7 @@ Core.IPlayer.relativeRotation
 
 #### Defined in
 
-Core/index.d.ts:336
+Core/index.d.ts:340
 
 ---
 
@@ -557,7 +553,7 @@ Core.IPlayer.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:356
+Core/index.d.ts:360
 
 • `set` **relativeScale**(`scale`): `void`
 
@@ -585,7 +581,7 @@ Core.IPlayer.relativeScale
 
 #### Defined in
 
-Core/index.d.ts:362
+Core/index.d.ts:366
 
 ---
 
@@ -613,7 +609,7 @@ Core.IPlayer.rightVector
 
 #### Defined in
 
-Core/index.d.ts:419
+Core/index.d.ts:423
 
 ---
 
@@ -623,7 +619,7 @@ Core/index.d.ts:419
 
 **`Description`**
 
-获取是否静态
+获取对象是否静态
 
 **`Effect`**
 
@@ -639,7 +635,7 @@ Core.IPlayer.staticStatus
 
 #### Defined in
 
-Core/index.d.ts:442
+Core/index.d.ts:446
 
 ---
 
@@ -667,7 +663,7 @@ Core.IPlayer.tag
 
 #### Defined in
 
-Core/index.d.ts:185
+Core/index.d.ts:189
 
 • `set` **tag**(`tag`): `void`
 
@@ -695,7 +691,7 @@ Core.IPlayer.tag
 
 #### Defined in
 
-Core/index.d.ts:179
+Core/index.d.ts:183
 
 ---
 
@@ -723,7 +719,7 @@ Core.IPlayer.transform
 
 #### Defined in
 
-Core/index.d.ts:205
+Core/index.d.ts:209
 
 • `set` **transform**(`transform`): `void`
 
@@ -751,7 +747,7 @@ Core.IPlayer.transform
 
 #### Defined in
 
-Core/index.d.ts:211
+Core/index.d.ts:215
 
 ---
 
@@ -779,7 +775,7 @@ Core.IPlayer.upVector
 
 #### Defined in
 
-Core/index.d.ts:392
+Core/index.d.ts:396
 
 ---
 
@@ -789,7 +785,7 @@ Core/index.d.ts:392
 
 **`Description`**
 
-是否使用更新
+获取对象是否使用更新
 
 **`Effect`**
 
@@ -805,13 +801,13 @@ Core.IPlayer.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:437
+Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
 **`Description`**
 
-是否使用更新
+设置对象是否使用更新
 
 **`Effect`**
 
@@ -833,7 +829,39 @@ Core.IPlayer.useUpdate
 
 #### Defined in
 
-Core/index.d.ts:432
+Core/index.d.ts:436
+
+---
+
+### visible
+
+• `get` **visible**(): `boolean`
+
+**`Deprecated`**
+
+since:v0.20.0 reason:api 重构 replacement:getVisibility()
+
+**`Description`**
+
+获取当前物体是否显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.IPlayer.visible
+
+#### Defined in
+
+Core/index.d.ts:507
 
 ---
 
@@ -859,7 +887,7 @@ Core.IPlayer.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:230
+Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -887,7 +915,7 @@ Core.IPlayer.worldLocation
 
 #### Defined in
 
-Core/index.d.ts:235
+Core/index.d.ts:239
 
 ---
 
@@ -913,7 +941,7 @@ Core.IPlayer.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:254
+Core/index.d.ts:258
 
 • `set` **worldRotation**(`rotation`): `void`
 
@@ -941,7 +969,7 @@ Core.IPlayer.worldRotation
 
 #### Defined in
 
-Core/index.d.ts:260
+Core/index.d.ts:264
 
 ---
 
@@ -967,7 +995,7 @@ Core.IPlayer.worldScale
 
 #### Defined in
 
-Core/index.d.ts:279
+Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -995,7 +1023,7 @@ Core.IPlayer.worldScale
 
 #### Defined in
 
-Core/index.d.ts:284
+Core/index.d.ts:288
 
 ## Methods
 
@@ -1023,11 +1051,11 @@ Core/index.d.ts:284
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[addDestroyCallback](Core.Core.IPlayer.md#adddestroycallback)
+Core.IPlayer.addDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:616
+Core/index.d.ts:627
 
 ---
 
@@ -1071,7 +1099,7 @@ public testFunction() {
 
 #### Defined in
 
-Gameplay/index.d.ts:1866
+Gameplay/index.d.ts:2027
 
 ---
 
@@ -1115,7 +1143,7 @@ public testFunction() {
 
 #### Defined in
 
-Gameplay/index.d.ts:1897
+Gameplay/index.d.ts:2058
 
 ---
 
@@ -1145,11 +1173,11 @@ Script
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[asyncGetScriptByName](Core.Core.IPlayer.md#asyncgetscriptbyname)
+Core.IPlayer.asyncGetScriptByName
 
 #### Defined in
 
-Core/index.d.ts:563
+Core/index.d.ts:574
 
 ---
 
@@ -1167,9 +1195,9 @@ Core/index.d.ts:563
 
 #### Parameters
 
-| Name  | Type                                    | Description |
-| :---- | :-------------------------------------- | :---------- |
-| `obj` | [`GameObject`](Core.Core.GameObject.md) | usage:物体  |
+| Name  | Type         | Description |
+| :---- | :----------- | :---------- |
+| `obj` | `GameObject` | usage:物体  |
 
 #### Returns
 
@@ -1177,17 +1205,17 @@ Core/index.d.ts:563
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[attachToGameObject](Core.Core.IPlayer.md#attachtogameobject)
+Core.IPlayer.attachToGameObject
 
 #### Defined in
 
-Core/index.d.ts:583
+Core/index.d.ts:594
 
 ---
 
 ### clone
 
-▸ **clone**(`inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ **clone**(`inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -1205,48 +1233,17 @@ Core/index.d.ts:583
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 克隆的对象
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[clone](Core.Core.IPlayer.md#clone)
+Core.IPlayer.clone
 
 #### Defined in
 
-Core/index.d.ts:543
-
----
-
-### convertScreenLocationToWorldSpace
-
-▸ **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](Gameplay.Gameplay.ConvertScreenResult.md)
-
-**`Description`**
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Effect`**
-
-调用端生效
-
-#### Parameters
-
-| Name      | Type     | Description                     |
-| :-------- | :------- | :------------------------------ |
-| `ScreenX` | `number` | usage: 屏幕 X 轴坐标值 default: |
-| `ScreenY` | `number` | usage: 屏幕 Y 轴坐标值          |
-
-#### Returns
-
-[`ConvertScreenResult`](Gameplay.Gameplay.ConvertScreenResult.md)
-
-屏幕坐标转换结果
-
-#### Defined in
-
-Gameplay/index.d.ts:1938
+Core/index.d.ts:554
 
 ---
 
@@ -1274,11 +1271,11 @@ Gameplay/index.d.ts:1938
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[deleteDestroyCallback](Core.Core.IPlayer.md#deletedestroycallback)
+Core.IPlayer.deleteDestroyCallback
 
 #### Defined in
 
-Core/index.d.ts:622
+Core/index.d.ts:633
 
 ---
 
@@ -1300,11 +1297,11 @@ Core/index.d.ts:622
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[destroy](Core.Core.IPlayer.md#destroy)
+Core.IPlayer.destroy
 
 #### Defined in
 
-Core/index.d.ts:146
+Core/index.d.ts:150
 
 ---
 
@@ -1326,11 +1323,11 @@ Core/index.d.ts:146
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[detachFromGameObject](Core.Core.IPlayer.md#detachfromgameobject)
+Core.IPlayer.detachFromGameObject
 
 #### Defined in
 
-Core/index.d.ts:588
+Core/index.d.ts:599
 
 ---
 
@@ -1354,7 +1351,7 @@ Core/index.d.ts:588
 
 #### Defined in
 
-Gameplay/index.d.ts:1970
+Gameplay/index.d.ts:2115
 
 ---
 
@@ -1390,11 +1387,11 @@ Type.Vector
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getBoundingBoxSize](Core.Core.IPlayer.md#getboundingboxsize)
+Core.IPlayer.getBoundingBoxSize
 
 #### Defined in
 
-Core/index.d.ts:598
+Core/index.d.ts:609
 
 ---
 
@@ -1404,7 +1401,7 @@ Core/index.d.ts:598
 
 **`Description`**
 
-获取 Gameobject 边界
+获取 GameObject 边界
 
 **`Effect`**
 
@@ -1415,8 +1412,8 @@ Core/index.d.ts:598
 | Name                      | Type                            | Description                                      |
 | :------------------------ | :------------------------------ | :----------------------------------------------- |
 | `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 Gameobject 尺寸的一半。   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
 | `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
 
 #### Returns
@@ -1425,17 +1422,17 @@ Core/index.d.ts:598
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getBounds](Core.Core.IPlayer.md#getbounds)
+Core.IPlayer.getBounds
 
 #### Defined in
 
-Core/index.d.ts:194
+Core/index.d.ts:198
 
 ---
 
 ### getChildByGuid
 
-▸ **getChildByGuid**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByGuid**(`guid`): `GameObject`
 
 **`Description`**
 
@@ -1453,23 +1450,23 @@ Core/index.d.ts:194
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getChildByGuid](Core.Core.IPlayer.md#getchildbyguid)
+Core.IPlayer.getChildByGuid
 
 #### Defined in
 
-Core/index.d.ts:536
+Core/index.d.ts:547
 
 ---
 
 ### getChildByName
 
-▸ **getChildByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ **getChildByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -1487,27 +1484,27 @@ Core/index.d.ts:536
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 查找的物体
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getChildByName](Core.Core.IPlayer.md#getchildbyname)
+Core.IPlayer.getChildByName
 
 #### Defined in
 
-Core/index.d.ts:529
+Core/index.d.ts:540
 
 ---
 
 ### getChildren
 
-▸ **getChildren**(): [`GameObject`](Core.Core.GameObject.md)[]
+▸ **getChildren**(): `GameObject`[]
 
 **`Description`**
 
-获取 Children 客户端不维系父子关系 推荐使用 Find 替代
+获取 Children，客户端不维系父子关系。推荐使用 Find 替代
 
 **`Effect`**
 
@@ -1515,17 +1512,17 @@ Core/index.d.ts:529
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getChildren](Core.Core.IPlayer.md#getchildren)
+Core.IPlayer.getChildren
 
 #### Defined in
 
-Core/index.d.ts:522
+Core/index.d.ts:533
 
 ---
 
@@ -1559,11 +1556,11 @@ Type.Vector
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getChildrenBoxCenter](Core.Core.IPlayer.md#getchildrenboxcenter)
+Core.IPlayer.getChildrenBoxCenter
 
 #### Defined in
 
-Core/index.d.ts:610
+Core/index.d.ts:621
 
 ---
 
@@ -1587,35 +1584,11 @@ Core/index.d.ts:610
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getCollision](Core.Core.IPlayer.md#getcollision)
+Core.IPlayer.getCollision
 
 #### Defined in
 
-Core/index.d.ts:480
-
----
-
-### getCustomTimeDilation
-
-▸ **getCustomTimeDilation**(): `number`
-
-**`Description`**
-
-获取对象膨胀时间速度
-
-**`Effect`**
-
-调用端生效
-
-#### Returns
-
-`number`
-
-膨胀时间速度
-
-#### Defined in
-
-Gameplay/index.d.ts:1964
+Core/index.d.ts:484
 
 ---
 
@@ -1649,11 +1622,11 @@ Vector
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getForwardVector](Core.Core.IPlayer.md#getforwardvector)
+Core.IPlayer.getForwardVector
 
 #### Defined in
 
-Core/index.d.ts:413
+Core/index.d.ts:417
 
 ---
 
@@ -1677,11 +1650,11 @@ Core/index.d.ts:413
 
 #### Overrides
 
-[IPlayer](Core.Core.IPlayer.md).[getPlayerID](Core.Core.IPlayer.md#getplayerid)
+Core.IPlayer.getPlayerID
 
 #### Defined in
 
-Gameplay/index.d.ts:1918
+Gameplay/index.d.ts:2079
 
 ---
 
@@ -1715,11 +1688,11 @@ Gameplay/index.d.ts:1918
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getRelativeLocation](Core.Core.IPlayer.md#getrelativelocation)
+Core.IPlayer.getRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:318
+Core/index.d.ts:322
 
 ---
 
@@ -1753,11 +1726,11 @@ Core/index.d.ts:318
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getRelativeRotation](Core.Core.IPlayer.md#getrelativerotation)
+Core.IPlayer.getRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:344
+Core/index.d.ts:348
 
 ---
 
@@ -1791,11 +1764,11 @@ Core/index.d.ts:344
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getRelativeScale](Core.Core.IPlayer.md#getrelativescale)
+Core.IPlayer.getRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:370
+Core/index.d.ts:374
 
 ---
 
@@ -1829,11 +1802,11 @@ Vector
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getRightVector](Core.Core.IPlayer.md#getrightvector)
+Core.IPlayer.getRightVector
 
 #### Defined in
 
-Core/index.d.ts:427
+Core/index.d.ts:431
 
 ---
 
@@ -1863,11 +1836,11 @@ Script
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getScriptByGuid](Core.Core.IPlayer.md#getscriptbyguid)
+Core.IPlayer.getScriptByGuid
 
 #### Defined in
 
-Core/index.d.ts:570
+Core/index.d.ts:581
 
 ---
 
@@ -1897,11 +1870,11 @@ Script
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getScriptByName](Core.Core.IPlayer.md#getscriptbyname)
+Core.IPlayer.getScriptByName
 
 #### Defined in
 
-Core/index.d.ts:556
+Core/index.d.ts:567
 
 ---
 
@@ -1921,15 +1894,15 @@ Core/index.d.ts:556
 
 `Script`[]
 
-Array\<Script\>
+Array<Script>
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getScripts](Core.Core.IPlayer.md#getscripts)
+Core.IPlayer.getScripts
 
 #### Defined in
 
-Core/index.d.ts:549
+Core/index.d.ts:560
 
 ---
 
@@ -1953,11 +1926,35 @@ Core/index.d.ts:549
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getSourceAssetGuid](Core.Core.IPlayer.md#getsourceassetguid)
+Core.IPlayer.getSourceAssetGuid
 
 #### Defined in
 
-Core/index.d.ts:628
+Core/index.d.ts:639
+
+---
+
+### getTeamId
+
+▸ **getTeamId**(): `string`
+
+**`Description`**
+
+获取玩家的 TeamId
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`string`
+
+玩家的 TeamId，如不在队伍中，则为空
+
+#### Defined in
+
+Gameplay/index.d.ts:2091
 
 ---
 
@@ -1991,11 +1988,11 @@ Transform
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getTransform](Core.Core.IPlayer.md#gettransform)
+Core.IPlayer.getTransform
 
 #### Defined in
 
-Core/index.d.ts:219
+Core/index.d.ts:223
 
 ---
 
@@ -2025,11 +2022,11 @@ Vector
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getUpVector](Core.Core.IPlayer.md#getupvector)
+Core.IPlayer.getUpVector
 
 #### Defined in
 
-Core/index.d.ts:399
+Core/index.d.ts:403
 
 ---
 
@@ -2053,7 +2050,35 @@ Core/index.d.ts:399
 
 #### Defined in
 
-Gameplay/index.d.ts:1924
+Gameplay/index.d.ts:2085
+
+---
+
+### getVisibility
+
+▸ **getVisibility**(): `boolean`
+
+**`Description`**
+
+获取 GameObject 是否被显示
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+bool
+
+#### Inherited from
+
+Core.IPlayer.getVisibility
+
+#### Defined in
+
+Core/index.d.ts:490
 
 ---
 
@@ -2087,11 +2112,11 @@ Gameplay/index.d.ts:1924
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getWorldLocation](Core.Core.IPlayer.md#getworldlocation)
+Core.IPlayer.getWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:243
+Core/index.d.ts:247
 
 ---
 
@@ -2125,11 +2150,11 @@ Core/index.d.ts:243
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getWorldRotation](Core.Core.IPlayer.md#getworldrotation)
+Core.IPlayer.getWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:268
+Core/index.d.ts:272
 
 ---
 
@@ -2163,11 +2188,11 @@ Core/index.d.ts:268
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getWorldScale](Core.Core.IPlayer.md#getworldscale)
+Core.IPlayer.getWorldScale
 
 #### Defined in
 
-Core/index.d.ts:292
+Core/index.d.ts:296
 
 ---
 
@@ -2191,11 +2216,11 @@ true 为客户端
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[isRunningClient](Core.Core.IPlayer.md#isrunningclient)
+Core.IPlayer.isRunningClient
 
 #### Defined in
 
-Core/index.d.ts:49
+Core/index.d.ts:50
 
 ---
 
@@ -2217,11 +2242,11 @@ Core/index.d.ts:49
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[onDestroy](Core.Core.IPlayer.md#ondestroy)
+Core.IPlayer.onDestroy
 
 #### Defined in
 
-Core/index.d.ts:17
+Core/index.d.ts:18
 
 ---
 
@@ -2243,11 +2268,11 @@ Core/index.d.ts:17
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[onStart](Core.Core.IPlayer.md#onstart)
+Core.IPlayer.onStart
 
 #### Defined in
 
-Core/index.d.ts:12
+Core/index.d.ts:13
 
 ---
 
@@ -2275,11 +2300,11 @@ Core/index.d.ts:12
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[onUpdate](Core.Core.IPlayer.md#onupdate)
+Core.IPlayer.onUpdate
 
 #### Defined in
 
-Core/index.d.ts:23
+Core/index.d.ts:24
 
 ---
 
@@ -2303,38 +2328,7 @@ Core/index.d.ts:23
 
 #### Defined in
 
-Gameplay/index.d.ts:1930
-
----
-
-### projectWorldLocationToWidgetPosition
-
-▸ **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative`): [`ConvertScreenResult`](Gameplay.Gameplay.ConvertScreenResult.md)
-
-**`Description`**
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-调用端生效
-
-#### Parameters
-
-| Name                     | Type                            | Description                                                                                     |
-| :----------------------- | :------------------------------ | :---------------------------------------------------------------------------------------------- |
-| `worldLocation`          | [`Vector`](Type.Type.Vector.md) | usage: 世界坐标                                                                                 |
-| `playerViewportRelative` | `boolean`                       | usage: 这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用） |
-
-#### Returns
-
-[`ConvertScreenResult`](Gameplay.Gameplay.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无 WorldDirection，为默认值 Type.Vector.ZERO
-
-#### Defined in
-
-Gameplay/index.d.ts:1949
+Gameplay/index.d.ts:2097
 
 ---
 
@@ -2358,11 +2352,11 @@ GameObject 准备好后返回
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[ready](Core.Core.IPlayer.md#ready)
+Core.IPlayer.ready
 
 #### Defined in
 
-Core/index.d.ts:122
+Core/index.d.ts:126
 
 ---
 
@@ -2402,7 +2396,7 @@ public testFunction() {
 
 #### Defined in
 
-Gameplay/index.d.ts:1881
+Gameplay/index.d.ts:2042
 
 ---
 
@@ -2442,7 +2436,7 @@ public testFunction() {
 
 #### Defined in
 
-Gameplay/index.d.ts:1912
+Gameplay/index.d.ts:2073
 
 ---
 
@@ -2475,11 +2469,11 @@ Gameplay/index.d.ts:1912
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setCollision](Core.Core.IPlayer.md#setcollision)
+Core.IPlayer.setCollision
 
 #### Defined in
 
-Core/index.d.ts:471
+Core/index.d.ts:475
 
 ---
 
@@ -2489,11 +2483,11 @@ Core/index.d.ts:471
 
 **`Description`**
 
-设置对象膨胀时间速度说明：对象膨胀速度默认为 1，当膨胀时间速度设置小于 1 时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值 0.1。
+设置当前角色对象膨胀时间速度说明：对象膨胀速度默认为 1，当膨胀时间速度设置小于 1 时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值 0.1。
 
 **`Effect`**
 
-调用端生效
+客户端调用自动广播
 
 #### Parameters
 
@@ -2507,7 +2501,7 @@ Core/index.d.ts:471
 
 #### Defined in
 
-Gameplay/index.d.ts:1958
+Gameplay/index.d.ts:2103
 
 ---
 
@@ -2536,11 +2530,11 @@ Gameplay/index.d.ts:1958
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setLocationAndRotation](Core.Core.IPlayer.md#setlocationandrotation)
+Core.IPlayer.setLocationAndRotation
 
 #### Defined in
 
-Core/index.d.ts:383
+Core/index.d.ts:387
 
 ---
 
@@ -2568,11 +2562,11 @@ Core/index.d.ts:383
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setRelativeLocation](Core.Core.IPlayer.md#setrelativelocation)
+Core.IPlayer.setRelativeLocation
 
 #### Defined in
 
-Core/index.d.ts:324
+Core/index.d.ts:328
 
 ---
 
@@ -2600,11 +2594,11 @@ Core/index.d.ts:324
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setRelativeRotation](Core.Core.IPlayer.md#setrelativerotation)
+Core.IPlayer.setRelativeRotation
 
 #### Defined in
 
-Core/index.d.ts:350
+Core/index.d.ts:354
 
 ---
 
@@ -2632,11 +2626,11 @@ Core/index.d.ts:350
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setRelativeScale](Core.Core.IPlayer.md#setrelativescale)
+Core.IPlayer.setRelativeScale
 
 #### Defined in
 
-Core/index.d.ts:376
+Core/index.d.ts:380
 
 ---
 
@@ -2664,11 +2658,11 @@ Core/index.d.ts:376
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setTransform](Core.Core.IPlayer.md#settransform)
+Core.IPlayer.setTransform
 
 #### Defined in
 
-Core/index.d.ts:225
+Core/index.d.ts:229
 
 ---
 
@@ -2697,11 +2691,11 @@ Core/index.d.ts:225
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setVisibility](Core.Core.IPlayer.md#setvisibility)
+Core.IPlayer.setVisibility
 
 #### Defined in
 
-Core/index.d.ts:487
+Core/index.d.ts:497
 
 ---
 
@@ -2729,11 +2723,11 @@ Core/index.d.ts:487
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setWorldLocation](Core.Core.IPlayer.md#setworldlocation)
+Core.IPlayer.setWorldLocation
 
 #### Defined in
 
-Core/index.d.ts:249
+Core/index.d.ts:253
 
 ---
 
@@ -2761,11 +2755,11 @@ Core/index.d.ts:249
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setWorldRotation](Core.Core.IPlayer.md#setworldrotation)
+Core.IPlayer.setWorldRotation
 
 #### Defined in
 
-Core/index.d.ts:274
+Core/index.d.ts:278
 
 ---
 
@@ -2793,21 +2787,21 @@ Core/index.d.ts:274
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[setWorldScale](Core.Core.IPlayer.md#setworldscale)
+Core.IPlayer.setWorldScale
 
 #### Defined in
 
-Core/index.d.ts:298
+Core/index.d.ts:302
 
 ---
 
 ### asyncFind
 
-▸ `Static` **asyncFind**(`guid`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncFind**(`guid`): `Promise`<`GameObject`\>
 
 **`Description`**
 
-通过 guid 异步查找 Gamobject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -2822,23 +2816,23 @@ Core/index.d.ts:298
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 Guid 对应的物体
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[asyncFind](Core.Core.IPlayer.md#asyncfind)
+Core.IPlayer.asyncFind
 
 #### Defined in
 
-Core/index.d.ts:161
+Core/index.d.ts:165
 
 ---
 
 ### asyncSpawnGameObject
 
-▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\>
 
 **`Description`**
 
@@ -2857,27 +2851,27 @@ Core/index.d.ts:161
 
 #### Returns
 
-`Promise`<[`GameObject`](Core.Core.GameObject.md)\>
+`Promise`<`GameObject`\>
 
 构造的 GameObject
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[asyncSpawnGameObject](Core.Core.IPlayer.md#asyncspawngameobject)
+Core.IPlayer.asyncSpawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:138
+Core/index.d.ts:142
 
 ---
 
 ### find
 
-▸ `Static` **find**(`guid`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **find**(`guid`): `GameObject`
 
 **`Description`**
 
-通过 Guid 查找 Gameobject
+通过 Guid 查找 GameObject
 
 **`Effect`**
 
@@ -2891,23 +2885,23 @@ Core/index.d.ts:138
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 Guid 对应的物体
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[find](Core.Core.IPlayer.md#find)
+Core.IPlayer.find
 
 #### Defined in
 
-Core/index.d.ts:153
+Core/index.d.ts:157
 
 ---
 
 ### findGameObjectByTag
 
-▸ `Static` **findGameObjectByTag**(`InTag`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[]
 
 **`Description`**
 
@@ -2925,23 +2919,23 @@ Core/index.d.ts:153
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
-Array\<GameObject\>
+Array<GameObject>
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[findGameObjectByTag](Core.Core.IPlayer.md#findgameobjectbytag)
+Core.IPlayer.findGameObjectByTag
 
 #### Defined in
 
-Core/index.d.ts:577
+Core/index.d.ts:588
 
 ---
 
 ### getGameObjectByName
 
-▸ `Static` **getGameObjectByName**(`name`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **getGameObjectByName**(`name`): `GameObject`
 
 **`Description`**
 
@@ -2959,23 +2953,23 @@ Core/index.d.ts:577
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getGameObjectByName](Core.Core.IPlayer.md#getgameobjectbyname)
+Core.IPlayer.getGameObjectByName
 
 #### Defined in
 
-Core/index.d.ts:516
+Core/index.d.ts:527
 
 ---
 
 ### getGameObjectsByName
 
-▸ `Static` **getGameObjectsByName**(`name`): [`GameObject`](Core.Core.GameObject.md)[]
+▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[]
 
 **`Description`**
 
@@ -2993,23 +2987,23 @@ Core/index.d.ts:516
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)[]
+`GameObject`[]
 
 返回所有查找到的对象
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[getGameObjectsByName](Core.Core.IPlayer.md#getgameobjectsbyname)
+Core.IPlayer.getGameObjectsByName
 
 #### Defined in
 
-Core/index.d.ts:509
+Core/index.d.ts:520
 
 ---
 
 ### spawnGameObject
 
-▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): [`GameObject`](Core.Core.GameObject.md)
+▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject`
 
 **`Description`**
 
@@ -3028,14 +3022,14 @@ Core/index.d.ts:509
 
 #### Returns
 
-[`GameObject`](Core.Core.GameObject.md)
+`GameObject`
 
 构造的 GameObject
 
 #### Inherited from
 
-[IPlayer](Core.Core.IPlayer.md).[spawnGameObject](Core.Core.IPlayer.md#spawngameobject)
+Core.IPlayer.spawnGameObject
 
 #### Defined in
 
-Core/index.d.ts:130
+Core/index.d.ts:134

@@ -49,382 +49,382 @@
 
 ### ObjectTypeQuery1
 
-• **ObjectTypeQuery1** = ``0``
+• **ObjectTypeQuery1** = `0`
 
-检测通道1
+检测通道 1
 
 #### Defined in
 
-Gameplay/index.d.ts:2215
+Gameplay/index.d.ts:2360
 
-___
+---
 
 ### ObjectTypeQuery10
 
-• **ObjectTypeQuery10** = ``9``
+• **ObjectTypeQuery10** = `9`
 
-检测通道10
+检测通道 10
 
 #### Defined in
 
-Gameplay/index.d.ts:2233
+Gameplay/index.d.ts:2378
 
-___
+---
 
 ### ObjectTypeQuery11
 
-• **ObjectTypeQuery11** = ``10``
+• **ObjectTypeQuery11** = `10`
 
-检测通道11
+检测通道 11
 
 #### Defined in
 
-Gameplay/index.d.ts:2235
+Gameplay/index.d.ts:2380
 
-___
+---
 
 ### ObjectTypeQuery12
 
-• **ObjectTypeQuery12** = ``11``
+• **ObjectTypeQuery12** = `11`
 
-检测通道12
+检测通道 12
 
 #### Defined in
 
-Gameplay/index.d.ts:2237
+Gameplay/index.d.ts:2382
 
-___
+---
 
 ### ObjectTypeQuery13
 
-• **ObjectTypeQuery13** = ``12``
+• **ObjectTypeQuery13** = `12`
 
-检测通道13
+检测通道 13
 
 #### Defined in
 
-Gameplay/index.d.ts:2239
+Gameplay/index.d.ts:2384
 
-___
+---
 
 ### ObjectTypeQuery14
 
-• **ObjectTypeQuery14** = ``13``
+• **ObjectTypeQuery14** = `13`
 
-检测通道14
+检测通道 14
 
 #### Defined in
 
-Gameplay/index.d.ts:2241
+Gameplay/index.d.ts:2386
 
-___
+---
 
 ### ObjectTypeQuery15
 
-• **ObjectTypeQuery15** = ``14``
+• **ObjectTypeQuery15** = `14`
 
-检测通道15
+检测通道 15
 
 #### Defined in
 
-Gameplay/index.d.ts:2243
+Gameplay/index.d.ts:2388
 
-___
+---
 
 ### ObjectTypeQuery16
 
-• **ObjectTypeQuery16** = ``15``
+• **ObjectTypeQuery16** = `15`
 
-检测通道16
+检测通道 16
 
 #### Defined in
 
-Gameplay/index.d.ts:2245
+Gameplay/index.d.ts:2390
 
-___
+---
 
 ### ObjectTypeQuery17
 
-• **ObjectTypeQuery17** = ``16``
+• **ObjectTypeQuery17** = `16`
 
-检测通道17
+检测通道 17
 
 #### Defined in
 
-Gameplay/index.d.ts:2247
+Gameplay/index.d.ts:2392
 
-___
+---
 
 ### ObjectTypeQuery18
 
-• **ObjectTypeQuery18** = ``17``
+• **ObjectTypeQuery18** = `17`
 
-检测通道18
+检测通道 18
 
 #### Defined in
 
-Gameplay/index.d.ts:2249
+Gameplay/index.d.ts:2394
 
-___
+---
 
 ### ObjectTypeQuery19
 
-• **ObjectTypeQuery19** = ``18``
+• **ObjectTypeQuery19** = `18`
 
-检测通道19
+检测通道 19
 
 #### Defined in
 
-Gameplay/index.d.ts:2251
+Gameplay/index.d.ts:2396
 
-___
+---
 
 ### ObjectTypeQuery2
 
-• **ObjectTypeQuery2** = ``1``
+• **ObjectTypeQuery2** = `1`
 
-检测通道2
+检测通道 2
 
 #### Defined in
 
-Gameplay/index.d.ts:2217
+Gameplay/index.d.ts:2362
 
-___
+---
 
 ### ObjectTypeQuery20
 
-• **ObjectTypeQuery20** = ``19``
+• **ObjectTypeQuery20** = `19`
 
-检测通道20
+检测通道 20
 
 #### Defined in
 
-Gameplay/index.d.ts:2253
+Gameplay/index.d.ts:2398
 
-___
+---
 
 ### ObjectTypeQuery21
 
-• **ObjectTypeQuery21** = ``20``
+• **ObjectTypeQuery21** = `20`
 
-检测通道21
+检测通道 21
 
 #### Defined in
 
-Gameplay/index.d.ts:2255
+Gameplay/index.d.ts:2400
 
-___
+---
 
 ### ObjectTypeQuery22
 
-• **ObjectTypeQuery22** = ``21``
+• **ObjectTypeQuery22** = `21`
 
-检测通道22
+检测通道 22
 
 #### Defined in
 
-Gameplay/index.d.ts:2257
+Gameplay/index.d.ts:2402
 
-___
+---
 
 ### ObjectTypeQuery23
 
-• **ObjectTypeQuery23** = ``22``
+• **ObjectTypeQuery23** = `22`
 
-检测通道23
+检测通道 23
 
 #### Defined in
 
-Gameplay/index.d.ts:2259
+Gameplay/index.d.ts:2404
 
-___
+---
 
 ### ObjectTypeQuery24
 
-• **ObjectTypeQuery24** = ``23``
+• **ObjectTypeQuery24** = `23`
 
-检测通道24
+检测通道 24
 
 #### Defined in
 
-Gameplay/index.d.ts:2261
+Gameplay/index.d.ts:2406
 
-___
+---
 
 ### ObjectTypeQuery25
 
-• **ObjectTypeQuery25** = ``24``
+• **ObjectTypeQuery25** = `24`
 
-检测通道25
+检测通道 25
 
 #### Defined in
 
-Gameplay/index.d.ts:2263
+Gameplay/index.d.ts:2408
 
-___
+---
 
 ### ObjectTypeQuery26
 
-• **ObjectTypeQuery26** = ``25``
+• **ObjectTypeQuery26** = `25`
 
-检测通道26
+检测通道 26
 
 #### Defined in
 
-Gameplay/index.d.ts:2265
+Gameplay/index.d.ts:2410
 
-___
+---
 
 ### ObjectTypeQuery27
 
-• **ObjectTypeQuery27** = ``26``
+• **ObjectTypeQuery27** = `26`
 
-检测通道27
+检测通道 27
 
 #### Defined in
 
-Gameplay/index.d.ts:2267
+Gameplay/index.d.ts:2412
 
-___
+---
 
 ### ObjectTypeQuery28
 
-• **ObjectTypeQuery28** = ``27``
+• **ObjectTypeQuery28** = `27`
 
-检测通道28
+检测通道 28
 
 #### Defined in
 
-Gameplay/index.d.ts:2269
+Gameplay/index.d.ts:2414
 
-___
+---
 
 ### ObjectTypeQuery29
 
-• **ObjectTypeQuery29** = ``28``
+• **ObjectTypeQuery29** = `28`
 
-检测通道29
+检测通道 29
 
 #### Defined in
 
-Gameplay/index.d.ts:2271
+Gameplay/index.d.ts:2416
 
-___
+---
 
 ### ObjectTypeQuery3
 
-• **ObjectTypeQuery3** = ``2``
+• **ObjectTypeQuery3** = `2`
 
-检测通道3
+检测通道 3
 
 #### Defined in
 
-Gameplay/index.d.ts:2219
+Gameplay/index.d.ts:2364
 
-___
+---
 
 ### ObjectTypeQuery30
 
-• **ObjectTypeQuery30** = ``29``
+• **ObjectTypeQuery30** = `29`
 
-检测通道30
+检测通道 30
 
 #### Defined in
 
-Gameplay/index.d.ts:2273
+Gameplay/index.d.ts:2418
 
-___
+---
 
 ### ObjectTypeQuery31
 
-• **ObjectTypeQuery31** = ``30``
+• **ObjectTypeQuery31** = `30`
 
-检测通道31
+检测通道 31
 
 #### Defined in
 
-Gameplay/index.d.ts:2275
+Gameplay/index.d.ts:2420
 
-___
+---
 
 ### ObjectTypeQuery32
 
-• **ObjectTypeQuery32** = ``31``
+• **ObjectTypeQuery32** = `31`
 
-检测通道32
+检测通道 32
 
 #### Defined in
 
-Gameplay/index.d.ts:2277
+Gameplay/index.d.ts:2422
 
-___
+---
 
 ### ObjectTypeQuery4
 
-• **ObjectTypeQuery4** = ``3``
+• **ObjectTypeQuery4** = `3`
 
-检测通道4
+检测通道 4
 
 #### Defined in
 
-Gameplay/index.d.ts:2221
+Gameplay/index.d.ts:2366
 
-___
+---
 
 ### ObjectTypeQuery5
 
-• **ObjectTypeQuery5** = ``4``
+• **ObjectTypeQuery5** = `4`
 
-检测通道5
+检测通道 5
 
 #### Defined in
 
-Gameplay/index.d.ts:2223
+Gameplay/index.d.ts:2368
 
-___
+---
 
 ### ObjectTypeQuery6
 
-• **ObjectTypeQuery6** = ``5``
+• **ObjectTypeQuery6** = `5`
 
-检测通道6
+检测通道 6
 
 #### Defined in
 
-Gameplay/index.d.ts:2225
+Gameplay/index.d.ts:2370
 
-___
+---
 
 ### ObjectTypeQuery7
 
-• **ObjectTypeQuery7** = ``6``
+• **ObjectTypeQuery7** = `6`
 
-检测通道7
+检测通道 7
 
 #### Defined in
 
-Gameplay/index.d.ts:2227
+Gameplay/index.d.ts:2372
 
-___
+---
 
 ### ObjectTypeQuery8
 
-• **ObjectTypeQuery8** = ``7``
+• **ObjectTypeQuery8** = `7`
 
-检测通道8
+检测通道 8
 
 #### Defined in
 
-Gameplay/index.d.ts:2229
+Gameplay/index.d.ts:2374
 
-___
+---
 
 ### ObjectTypeQuery9
 
-• **ObjectTypeQuery9** = ``8``
+• **ObjectTypeQuery9** = `8`
 
-检测通道9
+检测通道 9
 
 #### Defined in
 
-Gameplay/index.d.ts:2231
+Gameplay/index.d.ts:2376

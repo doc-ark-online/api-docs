@@ -6,13 +6,13 @@
 
 **`Description`**
 
-开发给用户用的URL枚举，需要与C++层的枚举对应
+开发给用户用的 URL 枚举，需要与 C++层的枚举对应
 
 ## Table of contents
 
 ### Enumeration Members
 
-- [Cobblestone\_Service](Network.Network.HttpRequestURL.md#cobblestone_service)
+- [CobblestoneService](Network.Network.HttpRequestURL.md#cobblestoneservice)
 - [Developers](Network.Network.HttpRequestURL.md#developers)
 - [Games](Network.Network.HttpRequestURL.md#games)
 - [Gateway](Network.Network.HttpRequestURL.md#gateway)
@@ -27,9 +27,9 @@
 
 ## Enumeration Members
 
-### Cobblestone\_Service
+### CobblestoneService
 
-• **Cobblestone\_Service** = ``0``
+• **CobblestoneService** = `0`
 
 http://test1010-api.meta-verse.co
 
@@ -37,11 +37,11 @@ http://test1010-api.meta-verse.co
 
 Network/index.d.ts:91
 
-___
+---
 
 ### Developers
 
-• **Developers** = ``3``
+• **Developers** = `3`
 
 http://test-dev-account.meta-verse.co
 
@@ -49,11 +49,11 @@ http://test-dev-account.meta-verse.co
 
 Network/index.d.ts:103
 
-___
+---
 
 ### Games
 
-• **Games** = ``5``
+• **Games** = `5`
 
 http://test-game.meta-verse.co
 
@@ -61,11 +61,11 @@ http://test-game.meta-verse.co
 
 Network/index.d.ts:111
 
-___
+---
 
 ### Gateway
 
-• **Gateway** = ``2``
+• **Gateway** = `2`
 
 http://test1010-api.meta-verse.co
 
@@ -73,11 +73,11 @@ http://test1010-api.meta-verse.co
 
 Network/index.d.ts:99
 
-___
+---
 
 ### Login
 
-• **Login** = ``8``
+• **Login** = `8`
 
 http://dev-developer-api.233leyuan.com
 
@@ -85,11 +85,11 @@ http://dev-developer-api.233leyuan.com
 
 Network/index.d.ts:123
 
-___
+---
 
 ### MGS
 
-• **MGS** = ``6``
+• **MGS** = `6`
 
 http://dev-internal-api.233lyly.com
 
@@ -97,11 +97,11 @@ http://dev-internal-api.233lyly.com
 
 Network/index.d.ts:115
 
-___
+---
 
 ### Packages
 
-• **Packages** = ``9``
+• **Packages** = `9`
 
 http://dev-api.meta-verse.co
 
@@ -109,11 +109,11 @@ http://dev-api.meta-verse.co
 
 Network/index.d.ts:127
 
-___
+---
 
 ### Pandora
 
-• **Pandora** = ``10``
+• **Pandora** = `10`
 
 https://mw-push.233bigdata.cn/cDEwMDAx/log_main
 
@@ -121,11 +121,11 @@ https://mw-push.233bigdata.cn/cDEwMDAx/log_main
 
 Network/index.d.ts:131
 
-___
+---
 
 ### Register
 
-• **Register** = ``7``
+• **Register** = `7`
 
 http://test-app-dev-admin.233nan.cn
 
@@ -133,11 +133,11 @@ http://test-app-dev-admin.233nan.cn
 
 Network/index.d.ts:119
 
-___
+---
 
 ### Resource
 
-• **Resource** = ``1``
+• **Resource** = `1`
 
 http://test-resources.meta-verse.co
 
@@ -145,11 +145,11 @@ http://test-resources.meta-verse.co
 
 Network/index.d.ts:95
 
-___
+---
 
 ### Tasks
 
-• **Tasks** = ``4``
+• **Tasks** = `4`
 
 http://test-tasks.meta-verse.co
 
@@ -157,11 +157,11 @@ http://test-tasks.meta-verse.co
 
 Network/index.d.ts:107
 
-___
+---
 
 ### Translation
 
-• **Translation** = ``11``
+• **Translation** = `11`
 
 test1010-api.meta-verse.co/internalRouter
 

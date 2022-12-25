@@ -10,7 +10,7 @@
 
 **`Author`**
 
-邓广
+guang.deng
 
 ## Hierarchy
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-Gameplay/index.d.ts:2990
+Gameplay/index.d.ts:3127
 
 ---
 
@@ -86,7 +86,7 @@ Gameplay/index.d.ts:2990
 
 #### Defined in
 
-Gameplay/index.d.ts:3005
+Gameplay/index.d.ts:3142
 
 ---
 
@@ -110,7 +110,7 @@ Gameplay/index.d.ts:3005
 
 #### Defined in
 
-Gameplay/index.d.ts:3020
+Gameplay/index.d.ts:3157
 
 ---
 
@@ -134,7 +134,7 @@ Gameplay/index.d.ts:3020
 
 #### Defined in
 
-Gameplay/index.d.ts:3050
+Gameplay/index.d.ts:3187
 
 ---
 
@@ -158,7 +158,7 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:3035
+Gameplay/index.d.ts:3172
 
 ---
 
@@ -186,7 +186,7 @@ Gameplay/index.d.ts:3035
 
 #### Defined in
 
-Gameplay/index.d.ts:2644
+Gameplay/index.d.ts:2784
 
 ---
 
@@ -216,7 +216,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2984
+Gameplay/index.d.ts:3121
 
 ---
 
@@ -246,7 +246,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2999
+Gameplay/index.d.ts:3136
 
 ---
 
@@ -276,7 +276,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3014
+Gameplay/index.d.ts:3151
 
 ---
 
@@ -306,7 +306,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3044
+Gameplay/index.d.ts:3181
 
 ---
 
@@ -336,7 +336,7 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:3029
+Gameplay/index.d.ts:3166
 
 ---
 
@@ -374,4 +374,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2638
+Gameplay/index.d.ts:2778

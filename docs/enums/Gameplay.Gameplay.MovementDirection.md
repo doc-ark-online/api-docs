@@ -20,34 +20,34 @@
 
 ### AxisDirection
 
-• **AxisDirection** = ``0``
+• **AxisDirection** = `0`
 
 给定轴方向
 
 #### Defined in
 
-Gameplay/index.d.ts:1579
+Gameplay/index.d.ts:1727
 
-___
+---
 
 ### ControllerDirection
 
-• **ControllerDirection** = ``2``
+• **ControllerDirection** = `2`
 
 控制器方向
 
 #### Defined in
 
-Gameplay/index.d.ts:1583
+Gameplay/index.d.ts:1731
 
-___
+---
 
 ### ViewDirection
 
-• **ViewDirection** = ``1``
+• **ViewDirection** = `1`
 
 视口方向
 
 #### Defined in
 
-Gameplay/index.d.ts:1581
+Gameplay/index.d.ts:1729

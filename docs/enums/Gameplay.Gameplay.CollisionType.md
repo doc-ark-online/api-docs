@@ -21,46 +21,46 @@
 
 ### NoCollision
 
-• **NoCollision** = ``0``
+• **NoCollision** = `0`
 
 无碰撞
 
 #### Defined in
 
-Gameplay/index.d.ts:10099
+Gameplay/index.d.ts:10173
 
-___
+---
 
 ### PhysicsOnly
 
-• **PhysicsOnly** = ``2``
+• **PhysicsOnly** = `2`
 
 仅物理
 
 #### Defined in
 
-Gameplay/index.d.ts:10103
+Gameplay/index.d.ts:10177
 
-___
+---
 
 ### QueryAndPhysics
 
-• **QueryAndPhysics** = ``3``
+• **QueryAndPhysics** = `3`
 
 物理和检测
 
 #### Defined in
 
-Gameplay/index.d.ts:10105
+Gameplay/index.d.ts:10179
 
-___
+---
 
 ### QueryOnly
 
-• **QueryOnly** = ``1``
+• **QueryOnly** = `1`
 
 仅检测
 
 #### Defined in
 
-Gameplay/index.d.ts:10101
+Gameplay/index.d.ts:10175

@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -38,7 +38,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4129
+UI/index.d.ts:4138
 
 ## Methods
 
@@ -58,8 +58,8 @@ UI/index.d.ts:4129
 
 [`InputEvent`](UI.UI.InputEvent.md)
 
-返回转化后inputevent
+返回转化后 inputEvent
 
 #### Defined in
 
-UI/index.d.ts:4135
+UI/index.d.ts:4144

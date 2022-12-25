@@ -20,34 +20,34 @@
 
 ### ContinuousFire
 
-• **ContinuousFire** = ``1``
+• **ContinuousFire** = `1`
 
 连发
 
 #### Defined in
 
-Gameplay/index.d.ts:11810
+Gameplay/index.d.ts:11498
 
-___
+---
 
 ### FullAutomationFire
 
-• **FullAutomationFire** = ``2``
+• **FullAutomationFire** = `2`
 
 全自动
 
 #### Defined in
 
-Gameplay/index.d.ts:11812
+Gameplay/index.d.ts:11500
 
-___
+---
 
 ### SingleFire
 
-• **SingleFire** = ``0``
+• **SingleFire** = `0`
 
 单发
 
 #### Defined in
 
-Gameplay/index.d.ts:11808
+Gameplay/index.d.ts:11496

@@ -19,22 +19,22 @@
 
 ### RadialForce
 
-• **RadialForce** = ``0``
+• **RadialForce** = `0`
 
 径向力
 
 #### Defined in
 
-Gameplay/index.d.ts:12956
+Gameplay/index.d.ts:12634
 
-___
+---
 
 ### VectorForce
 
-• **VectorForce** = ``1``
+• **VectorForce** = `1`
 
 矢量力
 
 #### Defined in
 
-Gameplay/index.d.ts:12958
+Gameplay/index.d.ts:12636

@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -40,7 +40,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4102
+UI/index.d.ts:4111
 
 ## Methods
 
@@ -64,9 +64,9 @@ UI/index.d.ts:4102
 
 #### Defined in
 
-UI/index.d.ts:4120
+UI/index.d.ts:4129
 
-___
+---
 
 ### getUserIndex
 
@@ -74,7 +74,7 @@ ___
 
 **`Description`**
 
-获取事件触发玩家index
+获取事件触发玩家 index
 
 **`Effect`**
 
@@ -84,13 +84,13 @@ ___
 
 `number`
 
-返回事件触发玩家index
+返回事件触发玩家 index
 
 #### Defined in
 
-UI/index.d.ts:4114
+UI/index.d.ts:4123
 
-___
+---
 
 ### toInputEvent
 
@@ -98,7 +98,7 @@ ___
 
 **`Description`**
 
-转化为 InputEvent*
+转化为 InputEvent\*
 
 **`Effect`**
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4108
+UI/index.d.ts:4117

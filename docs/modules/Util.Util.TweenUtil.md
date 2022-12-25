@@ -21,6 +21,7 @@ usage: 双端
 **`Example`**
 
 使用示例: 示例
+
 ```
 // 例如，position对象拥有x和y两个坐标:
 var position = {x: 100, y: 0};
@@ -83,8 +84,8 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `amount` | `number` |
 
 ##### Returns
@@ -93,9 +94,9 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 #### Defined in
 
-Util/index.d.ts:706
+Util/index.d.ts:927
 
-___
+---
 
 ### InterpolationFunction
 
@@ -111,10 +112,10 @@ ___
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number`[] |
-| `k` | `number` |
+| Name | Type       |
+| :--- | :--------- |
+| `v`  | `number`[] |
+| `k`  | `number`   |
 
 ##### Returns
 
@@ -122,9 +123,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:632
+Util/index.d.ts:853
 
-___
+---
 
 ### UnknownProps
 
@@ -136,7 +137,7 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:992
+Util/index.d.ts:1213
 
 ## Variables
 
@@ -150,7 +151,7 @@ Util/index.d.ts:992
 
 #### Defined in
 
-Util/index.d.ts:1002
+Util/index.d.ts:1223
 
 ## Functions
 
@@ -160,7 +161,7 @@ Util/index.d.ts:1002
 
 **`Description`**
 
-获取下一个ID的全局方法
+获取下一个 ID 的全局方法
 
 **`Effect`**
 
@@ -170,8 +171,8 @@ Util/index.d.ts:1002
 
 `number`
 
-下一个ID
+下一个 ID
 
 #### Defined in
 
-Util/index.d.ts:627
+Util/index.d.ts:848

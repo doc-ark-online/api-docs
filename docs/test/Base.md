@@ -6,12 +6,12 @@
 
 ## Table of contents
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| [Character.loadStance](Base.md#character-loadstance) | XXX | 创建一个二级姿态对象并返回, 可在任意端调用. |
-| [SubStance.blendMode](Base.md#substance-blendmode) |XXX | 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
-| [SubStance.play/SubStance.stop](Base.md#substance-play-substance-stop) | XXX | 播放 / 停止这个姿态对象, 并返回执行结果.|
-| [Character.stopStance](Base.md#character-stopstance) | XXX | 停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
+| Name                                                                   | Type | Description                                                                                  |
+| :--------------------------------------------------------------------- | :--- | :------------------------------------------------------------------------------------------- |
+| [Character.loadStance](Base.md#character-loadstance)                   | XXX  | 创建一个二级姿态对象并返回, 可在任意端调用.                                                  |
+| [SubStance.blendMode](Base.md#substance-blendmode)                     | XXX  | 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).                              |
+| [SubStance.play/SubStance.stop](Base.md#substance-play-substance-stop) | XXX  | 播放 / 停止这个姿态对象, 并返回执行结果.                                                     |
+| [Character.stopStance](Base.md#character-stopstance)                   | XXX  | 停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态. |
 
 ## Methods
 
@@ -19,11 +19,11 @@
 
 创建一个二级姿态对象并返回, 可在任意端调用.
 
-**guid**参数传入预制姿态资源**GUID**时, 会直接创建对应姿态; 传入**动画资源GUID**时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
+**guid**参数传入预制姿态资源**GUID**时, 会直接创建对应姿态; 传入**动画资源 GUID**时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
 **sync**参数代表对姿态对象的操作是否会同步其他端.
 
 ::: warning Precautions
-即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端.
+即使在服务器上调用 loadStance(), 如果 sync 参数置为 false, 也不会同步操作到客户端.
 :::
 
 ```ts
@@ -40,12 +40,11 @@ loadStance(guid: string, sync = true): Gameplay.SubStance;
 
 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).
 
-如果这个姿态是通过**预制姿态资源GUID**创建的, 那么它的默认值为StanceBlendMode.**None**, 它会按照资源上的blendMode参数指定混合模式; 
-如果是通过**动画资源GUID**创建的, 那么它的默认值为StanceBlendMode.**WholeBody**. 
-
+如果这个姿态是通过**预制姿态资源 GUID**创建的, 那么它的默认值为 StanceBlendMode.**None**, 它会按照资源上的 blendMode 参数指定混合模式;
+如果是通过**动画资源 GUID**创建的, 那么它的默认值为 StanceBlendMode.**WholeBody**.
 
 ::: warning Precautions
-(临时, 预计021修改)**不应该**把**动画资源GUID**创建的姿态的混合模式置为StanceBlendMode.**None**, 因为动画资源没有blendMode参数. 虽然不会报错, 但它确实会创建出一个姿态, 而且看不到任何表现.
+(临时, 预计 021 修改)**不应该**把**动画资源 GUID**创建的姿态的混合模式置为 StanceBlendMode.**None**, 因为动画资源没有 blendMode 参数. 虽然不会报错, 但它确实会创建出一个姿态, 而且看不到任何表现.
 :::
 
 ```ts
@@ -60,16 +59,15 @@ blendMode: Gameplay.StanceBlendMode;
 /**
  * @description 姿态混合模式
  */
-enum StanceBlendMode
-{
-    /** 不指定 */
-    None,
-    /** 只混合上半身 */
-    BlendUpper,
-    /** 只混合下半身 */
-    BlendLower,
-    /** 全身混合 */
-    WholeBody
+enum StanceBlendMode {
+  /** 不指定 */
+  None,
+  /** 只混合上半身 */
+  BlendUpper,
+  /** 只混合下半身 */
+  BlendLower,
+  /** 全身混合 */
+  WholeBody,
 }
 ```
 
@@ -77,9 +75,8 @@ enum StanceBlendMode
 
 播放 / 停止这个姿态对象, 并返回执行结果.
 
-这个操作是否会自动**同步**多端, 取决于调用Character.**loadStance()**时传入的**sync**参数.
-返回的**执行结果**, 在**不自动同步**时多数情况下**可靠**; 在**自动同步**时完全**不可靠**, 总是会返回true, 因为无法判断其他端的执行情况
-
+这个操作是否会自动**同步**多端, 取决于调用 Character.**loadStance()**时传入的**sync**参数.
+返回的**执行结果**, 在**不自动同步**时多数情况下**可靠**; 在**自动同步**时完全**不可靠**, 总是会返回 true, 因为无法判断其他端的执行情况
 
 ```ts
 /**
@@ -99,8 +96,8 @@ public stop(): boolean;
 
 ### Character.stopStance
 
-停止任何正在播放的姿态, 当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态.
-**sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是true, 所以对**单端对象**操作时需要把它置为**false**.
+停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态.
+**sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是 true, 所以对**单端对象**操作时需要把它置为**false**.
 
 ::: warning Precautions
 虽然允许多端同步播放并在单端停止播放, 但你要自己承担出现奇怪现象的责任

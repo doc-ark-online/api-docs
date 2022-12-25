@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V2鞋子部位接口
+人形对象 V2 鞋子部位接口
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -28,7 +28,7 @@ usage:双端
 
 ### Methods
 
-- [getAreaNums](Gameplay.Gameplay.HumanoidV2ShoePart.md#getareanums)
+- [getAreaCount](Gameplay.Gameplay.HumanoidV2ShoePart.md#getareacount)
 - [getColor](Gameplay.Gameplay.HumanoidV2ShoePart.md#getcolor)
 - [getDesignAngle](Gameplay.Gameplay.HumanoidV2ShoePart.md#getdesignangle)
 - [getDesignColor](Gameplay.Gameplay.HumanoidV2ShoePart.md#getdesigncolor)
@@ -60,9 +60,9 @@ usage:双端
 
 ## Methods
 
-### getAreaNums
+### getAreaCount
 
-▸ **getAreaNums**(): `number`
+▸ **getAreaCount**(): `number`
 
 **`Description`**
 
@@ -80,13 +80,13 @@ usage:双端
 
 #### Implementation of
 
-[IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getAreaNums](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareanums)
+[IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getAreaCount](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)
 
 #### Defined in
 
-Gameplay/index.d.ts:7733
+Gameplay/index.d.ts:7866
 
-___
+---
 
 ### getColor
 
@@ -102,9 +102,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `areaIndex` | `number` | usage:区域 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `areaIndex` | `number` | usage:区域  |
 
 #### Returns
 
@@ -118,9 +118,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7750
+Gameplay/index.d.ts:7883
 
-___
+---
 
 ### getDesignAngle
 
@@ -136,9 +136,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -152,9 +152,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7907
+Gameplay/index.d.ts:8040
 
-___
+---
 
 ### getDesignColor
 
@@ -170,9 +170,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -186,9 +186,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7890
+Gameplay/index.d.ts:8023
 
-___
+---
 
 ### getDesignTexture
 
@@ -204,9 +204,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -220,9 +220,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:7873
+Gameplay/index.d.ts:8006
 
-___
+---
 
 ### getMesh
 
@@ -240,7 +240,7 @@ ___
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Implementation of
 
@@ -248,9 +248,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7727
+Gameplay/index.d.ts:7860
 
-___
+---
 
 ### getPatternAngle
 
@@ -266,9 +266,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -282,9 +282,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7839
+Gameplay/index.d.ts:7972
 
-___
+---
 
 ### getPatternColor
 
@@ -300,9 +300,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -316,9 +316,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7788
+Gameplay/index.d.ts:7921
 
-___
+---
 
 ### getPatternHeight
 
@@ -334,9 +334,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -350,9 +350,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7822
+Gameplay/index.d.ts:7955
 
-___
+---
 
 ### getPatternIntensity
 
@@ -368,9 +368,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -384,9 +384,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7856
+Gameplay/index.d.ts:7989
 
-___
+---
 
 ### getPatternWidth
 
@@ -402,9 +402,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -418,9 +418,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7805
+Gameplay/index.d.ts:7938
 
-___
+---
 
 ### getTexture
 
@@ -436,9 +436,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | usage:区域  |
 
 #### Returns
 
@@ -452,9 +452,9 @@ guid
 
 #### Defined in
 
-Gameplay/index.d.ts:7767
+Gameplay/index.d.ts:7900
 
-___
+---
 
 ### setColor
 
@@ -471,11 +471,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `index` | `number`                                  | usage:区域                    |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -487,9 +487,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7743
+Gameplay/index.d.ts:7876
 
-___
+---
 
 ### setDesignAngle
 
@@ -506,11 +506,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `value` | `number` | usage:角度 {Min:0,Max:360} |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:区域                    |
+| `value` | `number`  | usage:角度 {Min:0,Max:360}    |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -522,9 +522,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7900
+Gameplay/index.d.ts:8033
 
-___
+---
 
 ### setDesignColor
 
@@ -541,11 +541,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `index` | `number`                                  | usage:区域                    |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -557,9 +557,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7883
+Gameplay/index.d.ts:8016
 
-___
+---
 
 ### setDesignTexture
 
@@ -576,11 +576,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `guid` | `string` | usage:贴图Guid |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:区域                    |
+| `guid`  | `string`  | usage:贴图 Guid               |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -592,9 +592,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7866
+Gameplay/index.d.ts:7999
 
-___
+---
 
 ### setMesh
 
@@ -606,7 +606,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型 Guid 没有预加载，则 v2 本地设置时异步的
 
 **`Effect`**
 
@@ -615,9 +615,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -630,9 +630,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7721
+Gameplay/index.d.ts:7854
 
-___
+---
 
 ### setPatternAngle
 
@@ -649,11 +649,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `value` | `number` | usage:角度 {Min:0,Max:360} |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:区域                    |
+| `value` | `number`  | usage:角度 {Min:0,Max:360}    |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -665,9 +665,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7832
+Gameplay/index.d.ts:7965
 
-___
+---
 
 ### setPatternColor
 
@@ -684,11 +684,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description                   |
+| :------ | :---------------------------------------- | :---------------------------- |
+| `index` | `number`                                  | usage:区域                    |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色                    |
+| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -700,9 +700,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7777
+Gameplay/index.d.ts:7910
 
-___
+---
 
 ### setPatternHeight
 
@@ -719,11 +719,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `value` | `number` | usage:拉伸比例 {Min:0.01,Max:100} |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                       |
+| :------ | :-------- | :-------------------------------- |
+| `index` | `number`  | usage:区域                        |
+| `value` | `number`  | usage:拉伸比例 {Min:0.01,Max:100} |
+| `sync`  | `boolean` | usage:true 同步; false 不同步     |
 
 #### Returns
 
@@ -735,9 +735,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7815
+Gameplay/index.d.ts:7948
 
-___
+---
 
 ### setPatternIntensity
 
@@ -754,11 +754,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `value` | `number` | usage:强度 {Min:0,Max:1} |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:区域                    |
+| `value` | `number`  | usage:强度 {Min:0,Max:1}      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -770,9 +770,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7849
+Gameplay/index.d.ts:7982
 
-___
+---
 
 ### setPatternWidth
 
@@ -789,11 +789,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `value` | `number` | usage:拉伸比例 {Min:0.01,Max:100} |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                       |
+| :------ | :-------- | :-------------------------------- |
+| `index` | `number`  | usage:区域                        |
+| `value` | `number`  | usage:拉伸比例 {Min:0.01,Max:100} |
+| `sync`  | `boolean` | usage:true 同步; false 不同步     |
 
 #### Returns
 
@@ -805,9 +805,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7798
+Gameplay/index.d.ts:7931
 
-___
+---
 
 ### setTexture
 
@@ -824,11 +824,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | usage:区域 |
-| `guid` | `string` | usage:贴图Guid |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `index` | `number`  | usage:区域                    |
+| `guid`  | `string`  | usage:贴图 Guid               |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -840,4 +840,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7760
+Gameplay/index.d.ts:7893

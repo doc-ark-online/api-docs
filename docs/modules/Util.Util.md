@@ -12,6 +12,7 @@
 - [InputUtil](Util.Util.InputUtil.md)
 - [LocaleUtil](Util.Util.LocaleUtil.md)
 - [MathUtil](Util.Util.MathUtil.md)
+- [NFTUtil](Util.Util.NFTUtil.md)
 - [StringUtil](Util.Util.StringUtil.md)
 - [SystemUtil](Util.Util.SystemUtil.md)
 - [TimeUtil](Util.Util.TimeUtil.md)

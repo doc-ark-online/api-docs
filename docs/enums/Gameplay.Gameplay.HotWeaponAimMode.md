@@ -12,29 +12,29 @@
 
 ### Enumeration Members
 
-- [First\_Person](Gameplay.Gameplay.HotWeaponAimMode.md#first_person)
-- [Third\_Person](Gameplay.Gameplay.HotWeaponAimMode.md#third_person)
+- [FirstPerson](Gameplay.Gameplay.HotWeaponAimMode.md#firstperson)
+- [ThirdPerson](Gameplay.Gameplay.HotWeaponAimMode.md#thirdperson)
 
 ## Enumeration Members
 
-### First\_Person
+### FirstPerson
 
-• **First\_Person** = ``0``
+• **FirstPerson** = `0`
 
 第一人称
 
 #### Defined in
 
-Gameplay/index.d.ts:11680
+Gameplay/index.d.ts:11370
 
-___
+---
 
-### Third\_Person
+### ThirdPerson
 
-• **Third\_Person** = ``1``
+• **ThirdPerson** = `1`
 
 第三人称
 
 #### Defined in
 
-Gameplay/index.d.ts:11682
+Gameplay/index.d.ts:11372

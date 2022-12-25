@@ -8,5 +8,5 @@
 
 ### Classes
 
-- [GoPool](../classes/Extension.Extension.GoPool.md)
+- [GameObjPool](../classes/Extension.Extension.GameObjPool.md)
 - [ObjPool](../classes/Extension.Extension.ObjPool.md)

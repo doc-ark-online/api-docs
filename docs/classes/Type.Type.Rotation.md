@@ -10,7 +10,7 @@ SuoWei
 
 **`Description`**
 
-由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
+由分量 (x,y,z) 组成的三维空间中的旋转量，对应 UE 的 Rotator。
 
 **`Network Status`**
 
@@ -74,23 +74,23 @@ usage:双端
 
 #### Defined in
 
-Type/index.d.ts:2514
+Type/index.d.ts:2481
 
 • **new Rotation**(`vector`)
 
 **`Description`**
 
-用给定的 vector 中的x, y, z值设定给 x, y, z 。
+用给定的 vector 中的 x, y, z 值设定给 x, y, z 。
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                            | Description         |
+| :------- | :------------------------------ | :------------------ |
 | `vector` | [`Vector`](Type.Type.Vector.md) | usage:给定的 vector |
 
 #### Defined in
 
-Type/index.d.ts:2519
+Type/index.d.ts:2486
 
 • **new Rotation**(`forward`, `up`)
 
@@ -104,30 +104,30 @@ Type/index.d.ts:2519
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                            | Description    |
+| :-------- | :------------------------------ | :------------- |
 | `forward` | [`Vector`](Type.Type.Vector.md) | usage:前向矢量 |
-| `up` | [`Vector`](Type.Type.Vector.md) | usage:向上矢量 |
+| `up`      | [`Vector`](Type.Type.Vector.md) | usage:向上矢量 |
 
 #### Defined in
 
-Type/index.d.ts:2526
+Type/index.d.ts:2493
 
 • **new Rotation**(`rotation`)
 
 **`Description`**
 
-复制rotation，并返回一个新的。
+复制 rotation，并返回一个新的。
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                | Description                |
+| :--------- | :---------------------------------- | :------------------------- |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:复制的 Rotation 对象 |
 
 #### Defined in
 
-Type/index.d.ts:2531
+Type/index.d.ts:2498
 
 • **new Rotation**(`v`)
 
@@ -137,13 +137,13 @@ Type/index.d.ts:2531
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 |
+| Name | Type                                    | Description  |
+| :--- | :-------------------------------------- | :----------- |
+| `v`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 |
 
 #### Defined in
 
-Type/index.d.ts:2536
+Type/index.d.ts:2503
 
 • **new Rotation**(`x`, `y`, `z`)
 
@@ -153,15 +153,15 @@ Type/index.d.ts:2536
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | usage:旋转的 x 分量 |
-| `y` | `number` | usage:旋转的 y 分量 |
-| `z` | `number` | usage:旋转的 z 分量 |
+| Name | Type     | Description         |
+| :--- | :------- | :------------------ |
+| `x`  | `number` | usage:旋转的 x 分量 |
+| `y`  | `number` | usage:旋转的 y 分量 |
+| `z`  | `number` | usage:旋转的 z 分量 |
 
 #### Defined in
 
-Type/index.d.ts:2543
+Type/index.d.ts:2510
 
 ## Properties
 
@@ -175,9 +175,9 @@ Type/index.d.ts:2543
 
 #### Defined in
 
-Type/index.d.ts:2502
+Type/index.d.ts:2469
 
-___
+---
 
 ### y
 
@@ -189,9 +189,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2506
+Type/index.d.ts:2473
 
-___
+---
 
 ### z
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2510
+Type/index.d.ts:2477
 
 ## Accessors
 
@@ -223,7 +223,7 @@ Rotation (0, 0, 0)
 
 #### Defined in
 
-Type/index.d.ts:2471
+Type/index.d.ts:2438
 
 ## Methods
 
@@ -241,9 +241,9 @@ Type/index.d.ts:2471
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
+| Name | Type                                | Description  |
+| :--- | :---------------------------------- | :----------- |
+| `a`  | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
 
 #### Returns
 
@@ -253,9 +253,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:2618
+Type/index.d.ts:2585
 
-___
+---
 
 ### clone
 
@@ -277,9 +277,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2549
+Type/index.d.ts:2516
 
-___
+---
 
 ### equals
 
@@ -295,10 +295,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Rotation`](Type.Type.Rotation.md) | usage:比对的旋转量 |
-| `epsilon?` | `number` | usage:误差值 default:1.e-7 |
+| Name       | Type                                | Description                |
+| :--------- | :---------------------------------- | :------------------------- |
+| `other`    | [`Rotation`](Type.Type.Rotation.md) | usage:比对的旋转量         |
+| `epsilon?` | `number`                            | usage:误差值 default:1.e-7 |
 
 #### Returns
 
@@ -308,9 +308,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2677
+Type/index.d.ts:2644
 
-___
+---
 
 ### fromQuaternion
 
@@ -318,7 +318,7 @@ ___
 
 **`Description`**
 
-当前Rotation读取一个四元数
+当前 Rotation 读取一个四元数
 
 **`Effect`**
 
@@ -326,9 +326,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](Type.Type.Quaternion.md) | usage:读取的四元数数据 |
+| Name | Type                                    | Description            |
+| :--- | :-------------------------------------- | :--------------------- |
+| `v`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:读取的四元数数据 |
 
 #### Returns
 
@@ -336,9 +336,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2576
+Type/index.d.ts:2543
 
-___
+---
 
 ### fromString
 
@@ -346,7 +346,7 @@ ___
 
 **`Description`**
 
-当前Rotation读取一个字符串数据
+当前 Rotation 读取一个字符串数据
 
 **`Effect`**
 
@@ -354,8 +354,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description      |
+| :---- | :------- | :--------------- |
 | `str` | `string` | usage:字符串数据 |
 
 #### Returns
@@ -364,9 +364,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2564
+Type/index.d.ts:2531
 
-___
+---
 
 ### fromVector
 
@@ -374,7 +374,7 @@ ___
 
 **`Description`**
 
-当前Rotation读取一个Vector
+当前 Rotation 读取一个 Vector
 
 **`Effect`**
 
@@ -382,9 +382,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage:读取的向量数据 |
+| Name | Type                            | Description          |
+| :--- | :------------------------------ | :------------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | usage:读取的向量数据 |
 
 #### Returns
 
@@ -392,9 +392,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2588
+Type/index.d.ts:2555
 
-___
+---
 
 ### getForce
 
@@ -414,9 +414,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:被写入数据的向量, 传入的 outer 不能为null/undefined default:null |
+| Name     | Type                            | Description                                                             |
+| :------- | :------------------------------ | :---------------------------------------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:被写入数据的向量, 传入的 outer 不能为 null/undefined default:null |
 
 #### Returns
 
@@ -426,9 +426,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2693
+Type/index.d.ts:2660
 
-___
+---
 
 ### getInverse
 
@@ -448,8 +448,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type                                | Description                           |
+| :------- | :---------------------------------- | :------------------------------------ |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:被写入数据的旋转量 default:null |
 
 #### Returns
@@ -460,9 +460,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2685
+Type/index.d.ts:2652
 
-___
+---
 
 ### multiply
 
@@ -478,9 +478,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
+| Name | Type                                | Description  |
+| :--- | :---------------------------------- | :----------- |
+| `v`  | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
 
 #### Returns
 
@@ -490,9 +490,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:2632
+Type/index.d.ts:2599
 
-___
+---
 
 ### rotateVector
 
@@ -508,9 +508,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage:被旋转的向量 |
+| Name | Type                            | Description        |
+| :--- | :------------------------------ | :----------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | usage:被旋转的向量 |
 
 #### Returns
 
@@ -520,9 +520,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2611
+Type/index.d.ts:2578
 
-___
+---
 
 ### set
 
@@ -538,9 +538,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
+| Name | Type                                | Description  |
+| :--- | :---------------------------------- | :----------- |
+| `v`  | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
 
 #### Returns
 
@@ -550,7 +550,7 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2595
+Type/index.d.ts:2562
 
 ▸ **set**(`x`, `y`, `z`): [`Rotation`](Type.Type.Rotation.md)
 
@@ -564,11 +564,11 @@ Type/index.d.ts:2595
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | usage:旋转的 x 分量 |
-| `y` | `number` | usage:旋转的 y 分量 |
-| `z` | `number` | usage:旋转的 z 分量 |
+| Name | Type     | Description         |
+| :--- | :------- | :------------------ |
+| `x`  | `number` | usage:旋转的 x 分量 |
+| `y`  | `number` | usage:旋转的 y 分量 |
+| `z`  | `number` | usage:旋转的 z 分量 |
 
 #### Returns
 
@@ -578,9 +578,9 @@ Type/index.d.ts:2595
 
 #### Defined in
 
-Type/index.d.ts:2604
+Type/index.d.ts:2571
 
-___
+---
 
 ### strictEquals
 
@@ -596,8 +596,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                | Description        |
+| :------ | :---------------------------------- | :----------------- |
 | `other` | [`Rotation`](Type.Type.Rotation.md) | usage:比对的旋转量 |
 
 #### Returns
@@ -608,9 +608,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2639
+Type/index.d.ts:2606
 
-___
+---
 
 ### subtract
 
@@ -626,9 +626,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
+| Name | Type                                | Description  |
+| :--- | :---------------------------------- | :----------- |
+| `a`  | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 |
 
 #### Returns
 
@@ -638,9 +638,9 @@ this
 
 #### Defined in
 
-Type/index.d.ts:2625
+Type/index.d.ts:2592
 
-___
+---
 
 ### toQuaternion
 
@@ -648,7 +648,7 @@ ___
 
 **`Description`**
 
-当前Rotation输出为四元数
+当前 Rotation 输出为四元数
 
 **`Effect`**
 
@@ -662,9 +662,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2582
+Type/index.d.ts:2549
 
-___
+---
 
 ### toString
 
@@ -672,7 +672,7 @@ ___
 
 **`Description`**
 
-当前Rotation输出为字符串
+当前 Rotation 输出为字符串
 
 **`Effect`**
 
@@ -686,9 +686,9 @@ ___
 
 #### Defined in
 
-Type/index.d.ts:2570
+Type/index.d.ts:2537
 
-___
+---
 
 ### add
 
@@ -708,10 +708,10 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量a |
-| `b` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量b |
+| Name    | Type                                | Description            |
+| :------ | :---------------------------------- | :--------------------- |
+| `a`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 a         |
+| `b`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 b         |
 | `outer` | [`Rotation`](Type.Type.Rotation.md) | usage:接收结果的旋转量 |
 
 #### Returns
@@ -722,9 +722,9 @@ outer 不能为 null/undefined
 
 #### Defined in
 
-Type/index.d.ts:2649
+Type/index.d.ts:2616
 
-___
+---
 
 ### copy
 
@@ -744,9 +744,9 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:目标旋转 |
+| Name    | Type                                | Description          |
+| :------ | :---------------------------------- | :------------------- |
+| `a`     | [`Rotation`](Type.Type.Rotation.md) | usage:目标旋转       |
 | `outer` | [`Rotation`](Type.Type.Rotation.md) | usage:接收结果的旋转 |
 
 #### Returns
@@ -757,9 +757,9 @@ outer 不能为 null/undefined
 
 #### Defined in
 
-Type/index.d.ts:2558
+Type/index.d.ts:2525
 
-___
+---
 
 ### fromQuaternion
 
@@ -767,7 +767,7 @@ ___
 
 **`Description`**
 
-转换Quaternion为Rotation
+转换 Quaternion 为 Rotation
 
 **`Effect`**
 
@@ -779,10 +779,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](Type.Type.Quaternion.md) | usage:Quaternion |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:传入的Rotation对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `v`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:Quaternion                        |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md)     | usage:传入的 Rotation 对象 default:null |
 
 #### Returns
 
@@ -792,9 +792,9 @@ Rotation
 
 #### Defined in
 
-Type/index.d.ts:2489
+Type/index.d.ts:2456
 
-___
+---
 
 ### fromString
 
@@ -802,7 +802,7 @@ ___
 
 **`Description`**
 
-转换字符串数据为Rotation
+转换字符串数据为 Rotation
 
 **`Effect`**
 
@@ -814,10 +814,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | usage:string |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:传入的Rotation对象 default:null |
+| Name     | Type                                | Description                             |
+| :------- | :---------------------------------- | :-------------------------------------- |
+| `v`      | `string`                            | usage:string                            |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:传入的 Rotation 对象 default:null |
 
 #### Returns
 
@@ -827,9 +827,9 @@ Rotation
 
 #### Defined in
 
-Type/index.d.ts:2498
+Type/index.d.ts:2465
 
-___
+---
 
 ### fromVector
 
@@ -837,7 +837,7 @@ ___
 
 **`Description`**
 
-转换Vector为Rotation
+转换 Vector 为 Rotation
 
 **`Effect`**
 
@@ -849,10 +849,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Type.Vector.md) | usage:MWVector |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:传入的Rotation对象 default:null |
+| Name     | Type                                | Description                             |
+| :------- | :---------------------------------- | :-------------------------------------- |
+| `v`      | [`Vector`](Type.Type.Vector.md)     | usage:MWVector                          |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:传入的 Rotation 对象 default:null |
 
 #### Returns
 
@@ -862,9 +862,9 @@ Rotation
 
 #### Defined in
 
-Type/index.d.ts:2480
+Type/index.d.ts:2447
 
-___
+---
 
 ### lerp
 
@@ -880,11 +880,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量a |
-| `b` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量b |
-| `alpha` | `number` | usage:插值 |
+| Name    | Type                                | Description    |
+| :------ | :---------------------------------- | :------------- |
+| `a`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 a |
+| `b`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 b |
+| `alpha` | `number`                            | usage:插值     |
 
 #### Returns
 
@@ -894,9 +894,9 @@ Rotation
 
 #### Defined in
 
-Type/index.d.ts:2702
+Type/index.d.ts:2669
 
-___
+---
 
 ### multiply
 
@@ -916,10 +916,10 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量a |
-| `b` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量b |
+| Name    | Type                                | Description                |
+| :------ | :---------------------------------- | :------------------------- |
+| `a`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 a             |
+| `b`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 b             |
 | `outer` | [`Rotation`](Type.Type.Rotation.md) | usage:接收结果的旋转量变量 |
 
 #### Returns
@@ -930,9 +930,9 @@ outer 不能为 null/undefined
 
 #### Defined in
 
-Type/index.d.ts:2669
+Type/index.d.ts:2636
 
-___
+---
 
 ### subtract
 
@@ -952,10 +952,10 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量a |
-| `b` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量b |
+| Name    | Type                                | Description                |
+| :------ | :---------------------------------- | :------------------------- |
+| `a`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 a             |
+| `b`     | [`Rotation`](Type.Type.Rotation.md) | usage:旋转量 b             |
 | `outer` | [`Rotation`](Type.Type.Rotation.md) | usage:接收结果的旋转量变量 |
 
 #### Returns
@@ -966,4 +966,4 @@ outer 不能为 null/undefined
 
 #### Defined in
 
-Type/index.d.ts:2659
+Type/index.d.ts:2626

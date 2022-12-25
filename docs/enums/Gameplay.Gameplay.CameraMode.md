@@ -23,70 +23,70 @@
 
 ### Default
 
-• **Default** = ``3``
+• **Default** = `3`
 
 默认
 
 #### Defined in
 
-Gameplay/index.d.ts:1671
+Gameplay/index.d.ts:1819
 
-___
+---
 
 ### FPSShootingAngle
 
-• **FPSShootingAngle** = ``5``
+• **FPSShootingAngle** = `5`
 
-FPS射击视角
+FPS 射击视角
 
 #### Defined in
 
-Gameplay/index.d.ts:1675
+Gameplay/index.d.ts:1823
 
-___
+---
 
 ### FirstPerson
 
-• **FirstPerson** = ``0``
+• **FirstPerson** = `0`
 
 第一人称
 
 #### Defined in
 
-Gameplay/index.d.ts:1665
+Gameplay/index.d.ts:1813
 
-___
+---
 
 ### TPSOverShoulderAngle
 
-• **TPSOverShoulderAngle** = ``4``
+• **TPSOverShoulderAngle** = `4`
 
-TPS过肩视角
+TPS 过肩视角
 
 #### Defined in
 
-Gameplay/index.d.ts:1673
+Gameplay/index.d.ts:1821
 
-___
+---
 
 ### ThirdPerson
 
-• **ThirdPerson** = ``1``
+• **ThirdPerson** = `1`
 
 第三人称
 
 #### Defined in
 
-Gameplay/index.d.ts:1667
+Gameplay/index.d.ts:1815
 
-___
+---
 
 ### TopDownAngle
 
-• **TopDownAngle** = ``2``
+• **TopDownAngle** = `2`
 
 俯视角
 
 #### Defined in
 
-Gameplay/index.d.ts:1669
+Gameplay/index.d.ts:1817

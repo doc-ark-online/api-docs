@@ -12,42 +12,42 @@
 
 ### Enumeration Members
 
-- [Hold](Gameplay.Gameplay.EquipmentStatus.md#hold)
-- [NotPickUp](Gameplay.Gameplay.EquipmentStatus.md#notpickup)
-- [PickUp](Gameplay.Gameplay.EquipmentStatus.md#pickup)
+- [Equipped](Gameplay.Gameplay.EquipmentStatus.md#equipped)
+- [NotPickedUp](Gameplay.Gameplay.EquipmentStatus.md#notpickedup)
+- [PickedUp](Gameplay.Gameplay.EquipmentStatus.md#pickedup)
 
 ## Enumeration Members
 
-### Hold
+### Equipped
 
-• **Hold** = ``2``
+• **Equipped** = `2`
 
 已拿出装备
 
 #### Defined in
 
-Gameplay/index.d.ts:8747
+Gameplay/index.d.ts:8852
 
-___
+---
 
-### NotPickUp
+### NotPickedUp
 
-• **NotPickUp** = ``0``
+• **NotPickedUp** = `0`
 
 未拾取装备
 
 #### Defined in
 
-Gameplay/index.d.ts:8743
+Gameplay/index.d.ts:8848
 
-___
+---
 
-### PickUp
+### PickedUp
 
-• **PickUp** = ``1``
+• **PickedUp** = `1`
 
 已拾取装备
 
 #### Defined in
 
-Gameplay/index.d.ts:8745
+Gameplay/index.d.ts:8850

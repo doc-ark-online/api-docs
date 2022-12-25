@@ -22,58 +22,58 @@
 
 ### Bold
 
-• **Bold** = ``1``
+• **Bold** = `1`
 
 粗体
 
 #### Defined in
 
-UI/index.d.ts:3446
+UI/index.d.ts:3455
 
-___
+---
 
 ### BoldItalics
 
-• **BoldItalics** = ``4``
+• **BoldItalics** = `4`
 
 粗斜体
 
 #### Defined in
 
-UI/index.d.ts:3452
+UI/index.d.ts:3461
 
-___
+---
 
 ### Italics
 
-• **Italics** = ``3``
+• **Italics** = `3`
 
 斜体
 
 #### Defined in
 
-UI/index.d.ts:3450
+UI/index.d.ts:3459
 
-___
+---
 
 ### Light
 
-• **Light** = ``2``
+• **Light** = `2`
 
 细体
 
 #### Defined in
 
-UI/index.d.ts:3448
+UI/index.d.ts:3457
 
-___
+---
 
 ### Normal
 
-• **Normal** = ``0``
+• **Normal** = `0`
 
 普通
 
 #### Defined in
 
-UI/index.d.ts:3444
+UI/index.d.ts:3453

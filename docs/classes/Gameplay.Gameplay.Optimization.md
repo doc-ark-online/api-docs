@@ -6,7 +6,7 @@
 
 **`Author`**
 
-ZhangSong
+song.zhang
 
 **`Description`**
 
@@ -48,8 +48,8 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type      | Description                  |
+| :--------- | :-------- | :--------------------------- |
 | `isEnable` | `boolean` | usage:是否开启或关闭角色优化 |
 
 #### Returns
@@ -58,4 +58,4 @@ usage:客户端
 
 #### Defined in
 
-Gameplay/index.d.ts:13678
+Gameplay/index.d.ts:13356

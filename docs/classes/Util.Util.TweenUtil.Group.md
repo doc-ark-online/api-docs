@@ -52,8 +52,8 @@ usage: 双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                                                                                       | Description             |
+| :------ | :--------------------------------------------------------------------------------------------------------- | :---------------------- |
 | `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | usage: 要添加的补间对象 |
 
 #### Returns
@@ -62,9 +62,9 @@ usage: 双端
 
 #### Defined in
 
-Util/index.d.ts:677
+Util/index.d.ts:898
 
-___
+---
 
 ### getAll
 
@@ -86,9 +86,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:665
+Util/index.d.ts:886
 
-___
+---
 
 ### remove
 
@@ -104,8 +104,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                                                                                       | Description                   |
+| :------ | :--------------------------------------------------------------------------------------------------------- | :---------------------------- |
 | `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | usage: 要移出并删除的补间对象 |
 
 #### Returns
@@ -114,9 +114,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:683
+Util/index.d.ts:904
 
-___
+---
 
 ### removeAll
 
@@ -140,9 +140,9 @@ ___
 
 #### Defined in
 
-Util/index.d.ts:671
+Util/index.d.ts:892
 
-___
+---
 
 ### update
 
@@ -159,6 +159,7 @@ ___
 **`Example`**
 
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
+
 ```
 // 更新自定义补间组
 const group = new Extension.TweenUtil.Group()
@@ -170,10 +171,10 @@ Extension.TweenUtil.TWEEN.update()
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `time?` | `number` | usage: 要为当前补间组中所有补间对象设置的时间，不是deltaTime。 default: 当前时间 |
-| `preserve?` | `boolean` | usage: 已经结束的补间对象，是否在补间组中继续保留 default: false |
+| Name        | Type      | Description                                                                       |
+| :---------- | :-------- | :-------------------------------------------------------------------------------- |
+| `time?`     | `number`  | usage: 要为当前补间组中所有补间对象设置的时间，不是 deltaTime。 default: 当前时间 |
+| `preserve?` | `boolean` | usage: 已经结束的补间对象，是否在补间组中继续保留 default: false                  |
 
 #### Returns
 
@@ -183,4 +184,4 @@ Extension.TweenUtil.TWEEN.update()
 
 #### Defined in
 
-Util/index.d.ts:701
+Util/index.d.ts:922

@@ -6,48 +6,48 @@
 
 **`Description`**
 
-3D效果范围形状
+3D 效果范围形状
 
 ## Table of contents
 
 ### Enumeration Members
 
-- [cube](Gameplay.Gameplay.EffectRangeShape3D.md#cube)
-- [segment](Gameplay.Gameplay.EffectRangeShape3D.md#segment)
-- [sphere](Gameplay.Gameplay.EffectRangeShape3D.md#sphere)
+- [Cube](Gameplay.Gameplay.EffectRangeShape3D.md#cube)
+- [CylindricalSector](Gameplay.Gameplay.EffectRangeShape3D.md#cylindricalsector)
+- [Sphere](Gameplay.Gameplay.EffectRangeShape3D.md#sphere)
 
 ## Enumeration Members
 
-### cube
+### Cube
 
-• **cube** = ``0``
+• **Cube** = `0`
 
 盒体
 
 #### Defined in
 
-Gameplay/index.d.ts:8514
+Gameplay/index.d.ts:8667
 
-___
+---
 
-### segment
+### CylindricalSector
 
-• **segment** = ``2``
+• **CylindricalSector** = `2`
 
 扇形体
 
 #### Defined in
 
-Gameplay/index.d.ts:8518
+Gameplay/index.d.ts:8671
 
-___
+---
 
-### sphere
+### Sphere
 
-• **sphere** = ``1``
+• **Sphere** = `1`
 
 球体
 
 #### Defined in
 
-Gameplay/index.d.ts:8516
+Gameplay/index.d.ts:8669

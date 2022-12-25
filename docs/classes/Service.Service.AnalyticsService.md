@@ -16,7 +16,7 @@ xiangkun.sun
 
 **`Precautions`**
 
-单例类，请使用instance获取对象
+单例类，请使用 instance 获取对象
 
 **`Network Status`**
 
@@ -31,7 +31,7 @@ usage: 双端
 ### Methods
 
 - [getInstance](Service.Service.AnalyticsService.md#getinstance)
-- [googleEvent](Service.Service.AnalyticsService.md#googleevent)
+- [googleEventTracking](Service.Service.AnalyticsService.md#googleeventtracking)
 - [googleInit](Service.Service.AnalyticsService.md#googleinit)
 
 ## Constructors
@@ -62,13 +62,13 @@ usage: 双端
 
 #### Defined in
 
-Service/index.d.ts:244
+Service/index.d.ts:239
 
-___
+---
 
-### googleEvent
+### googleEventTracking
 
-▸ `Static` **googleEvent**(`eventName`, `eventParams?`): `void`
+▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void`
 
 **`Description`**
 
@@ -80,9 +80,9 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | usage:埋点名 |
+| Name           | Type     | Description                 |
+| :------------- | :------- | :-------------------------- |
+| `eventName`    | `string` | usage:埋点名                |
 | `eventParams?` | `Object` | usage:埋点参数 default:选填 |
 
 #### Returns
@@ -91,9 +91,9 @@ ___
 
 #### Defined in
 
-Service/index.d.ts:257
+Service/index.d.ts:252
 
-___
+---
 
 ### googleInit
 
@@ -109,8 +109,8 @@ Initialize Google Analytics client
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type     | Description                           |
+| :---- | :------- | :------------------------------------ |
 | `mId` | `string` | usage:Google Analytics measurement ID |
 
 #### Returns
@@ -119,4 +119,4 @@ Initialize Google Analytics client
 
 #### Defined in
 
-Service/index.d.ts:250
+Service/index.d.ts:245

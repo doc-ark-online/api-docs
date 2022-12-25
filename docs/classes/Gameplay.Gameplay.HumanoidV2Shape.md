@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V2体型
+人形对象 V2 体型
 
 **`Author`**
 
-邓广
+guang.deng
 
 **`Network Status`**
 
@@ -56,7 +56,7 @@ usage:双端
 - [getEyesRotation](Gameplay.Gameplay.HumanoidV2Shape.md#geteyesrotation)
 - [getEyesWidth](Gameplay.Gameplay.HumanoidV2Shape.md#geteyeswidth)
 - [getFaceWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getfacewidth)
-- [getGroinThick](Gameplay.Gameplay.HumanoidV2Shape.md#getgrointhick)
+- [getGroinThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getgrointhickness)
 - [getGroinWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getgroinwidth)
 - [getHeadScale](Gameplay.Gameplay.HumanoidV2Shape.md#getheadscale)
 - [getJawLength](Gameplay.Gameplay.HumanoidV2Shape.md#getjawlength)
@@ -65,49 +65,49 @@ usage:双端
 - [getJawVertexHeight](Gameplay.Gameplay.HumanoidV2Shape.md#getjawvertexheight)
 - [getJawVertexRange](Gameplay.Gameplay.HumanoidV2Shape.md#getjawvertexrange)
 - [getJawVertexWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getjawvertexwidth)
-- [getLowerArmsStreth](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerarmsstreth)
-- [getLowerArmsThick](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerarmsthick)
+- [getLowerArmsStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerarmsstretch)
+- [getLowerArmsThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerarmsthickness)
 - [getLowerArmsWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerarmswidth)
 - [getLowerFaceRange](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerfacerange)
 - [getLowerFaceWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerfacewidth)
 - [getLowerJawRange](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerjawrange)
 - [getLowerJawWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerjawwidth)
-- [getLowerMouthThick](Gameplay.Gameplay.HumanoidV2Shape.md#getlowermouththick)
+- [getLowerMouthThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getlowermouththickness)
 - [getLowerStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getlowerstretch)
 - [getMouthHeight](Gameplay.Gameplay.HumanoidV2Shape.md#getmouthheight)
 - [getMouthRange](Gameplay.Gameplay.HumanoidV2Shape.md#getmouthrange)
 - [getMouthShape](Gameplay.Gameplay.HumanoidV2Shape.md#getmouthshape)
 - [getMouthWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getmouthwidth)
 - [getNeckStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getneckstretch)
-- [getNeckThick](Gameplay.Gameplay.HumanoidV2Shape.md#getneckthick)
+- [getNeckThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getneckthickness)
 - [getNeckWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getneckwidth)
 - [getNoseHeight](Gameplay.Gameplay.HumanoidV2Shape.md#getnoseheight)
-- [getNosePreiection](Gameplay.Gameplay.HumanoidV2Shape.md#getnosepreiection)
+- [getNoseProtrusion](Gameplay.Gameplay.HumanoidV2Shape.md#getnoseprotrusion)
 - [getNoseVerticalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#getnoseverticalposition)
 - [getPupilHeight](Gameplay.Gameplay.HumanoidV2Shape.md#getpupilheight)
 - [getPupilHorizontalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#getpupilhorizontalposition)
 - [getPupilVerticalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#getpupilverticalposition)
 - [getPupilWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getpupilwidth)
-- [getRibThick](Gameplay.Gameplay.HumanoidV2Shape.md#getribthick)
+- [getRibThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getribthickness)
 - [getRibWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getribwidth)
 - [getShankScaleX](Gameplay.Gameplay.HumanoidV2Shape.md#getshankscalex)
 - [getShankScaleZ](Gameplay.Gameplay.HumanoidV2Shape.md#getshankscalez)
-- [getShankStreth](Gameplay.Gameplay.HumanoidV2Shape.md#getshankstreth)
-- [getShoulderArmThick](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderarmthick)
+- [getShankStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getshankstretch)
+- [getShoulderArmThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderarmthickness)
 - [getShoulderArmWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderarmwidth)
-- [getShoulderThick](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderthick)
+- [getShoulderThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderthickness)
 - [getShoulderWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getshoulderwidth)
-- [getThighStreth](Gameplay.Gameplay.HumanoidV2Shape.md#getthighstreth)
+- [getThighStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getthighstretch)
 - [getThighThicknessX](Gameplay.Gameplay.HumanoidV2Shape.md#getthighthicknessx)
 - [getThighThicknessZ](Gameplay.Gameplay.HumanoidV2Shape.md#getthighthicknessz)
-- [getUpperArmsStreth](Gameplay.Gameplay.HumanoidV2Shape.md#getupperarmsstreth)
-- [getUpperArmsThick](Gameplay.Gameplay.HumanoidV2Shape.md#getupperarmsthick)
+- [getUpperArmsStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getupperarmsstretch)
+- [getUpperArmsThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getupperarmsthickness)
 - [getUpperArmsWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getupperarmswidth)
 - [getUpperFaceRange](Gameplay.Gameplay.HumanoidV2Shape.md#getupperfacerange)
-- [getUpperMouthThick](Gameplay.Gameplay.HumanoidV2Shape.md#getuppermouththick)
+- [getUpperMouthThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getuppermouththickness)
 - [getUpperStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getupperstretch)
 - [getWaistStretch](Gameplay.Gameplay.HumanoidV2Shape.md#getwaiststretch)
-- [getWaistThick](Gameplay.Gameplay.HumanoidV2Shape.md#getwaistthick)
+- [getWaistThickness](Gameplay.Gameplay.HumanoidV2Shape.md#getwaistthickness)
 - [getWaistWidth](Gameplay.Gameplay.HumanoidV2Shape.md#getwaistwidth)
 - [setBreastHorizontalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#setbreasthorizontalposition)
 - [setBreastLength](Gameplay.Gameplay.HumanoidV2Shape.md#setbreastlength)
@@ -137,7 +137,7 @@ usage:双端
 - [setEyesRotation](Gameplay.Gameplay.HumanoidV2Shape.md#seteyesrotation)
 - [setEyesWidth](Gameplay.Gameplay.HumanoidV2Shape.md#seteyeswidth)
 - [setFaceWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setfacewidth)
-- [setGroinThick](Gameplay.Gameplay.HumanoidV2Shape.md#setgrointhick)
+- [setGroinThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setgrointhickness)
 - [setGroinWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setgroinwidth)
 - [setHeadScale](Gameplay.Gameplay.HumanoidV2Shape.md#setheadscale)
 - [setJawLength](Gameplay.Gameplay.HumanoidV2Shape.md#setjawlength)
@@ -146,49 +146,49 @@ usage:双端
 - [setJawVertexHeight](Gameplay.Gameplay.HumanoidV2Shape.md#setjawvertexheight)
 - [setJawVertexRange](Gameplay.Gameplay.HumanoidV2Shape.md#setjawvertexrange)
 - [setJawVertexWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setjawvertexwidth)
-- [setLowerArmsStreth](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerarmsstreth)
-- [setLowerArmsThick](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerarmsthick)
+- [setLowerArmsStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerarmsstretch)
+- [setLowerArmsThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerarmsthickness)
 - [setLowerArmsWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerarmswidth)
 - [setLowerFaceRange](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerfacerange)
 - [setLowerFaceWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerfacewidth)
 - [setLowerJawRange](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerjawrange)
 - [setLowerJawWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerjawwidth)
-- [setLowerMouthThick](Gameplay.Gameplay.HumanoidV2Shape.md#setlowermouththick)
+- [setLowerMouthThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setlowermouththickness)
 - [setLowerStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setlowerstretch)
 - [setMouthHeight](Gameplay.Gameplay.HumanoidV2Shape.md#setmouthheight)
 - [setMouthRange](Gameplay.Gameplay.HumanoidV2Shape.md#setmouthrange)
 - [setMouthShape](Gameplay.Gameplay.HumanoidV2Shape.md#setmouthshape)
 - [setMouthWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setmouthwidth)
 - [setNeckStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setneckstretch)
-- [setNeckThick](Gameplay.Gameplay.HumanoidV2Shape.md#setneckthick)
+- [setNeckThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setneckthickness)
 - [setNeckWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setneckwidth)
 - [setNoseHeight](Gameplay.Gameplay.HumanoidV2Shape.md#setnoseheight)
-- [setNosePreiection](Gameplay.Gameplay.HumanoidV2Shape.md#setnosepreiection)
+- [setNoseProtrusion](Gameplay.Gameplay.HumanoidV2Shape.md#setnoseprotrusion)
 - [setNoseVerticalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#setnoseverticalposition)
 - [setPupilHeight](Gameplay.Gameplay.HumanoidV2Shape.md#setpupilheight)
 - [setPupilHorizontalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#setpupilhorizontalposition)
 - [setPupilVerticalPosition](Gameplay.Gameplay.HumanoidV2Shape.md#setpupilverticalposition)
 - [setPupilWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setpupilwidth)
-- [setRibThick](Gameplay.Gameplay.HumanoidV2Shape.md#setribthick)
+- [setRibThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setribthickness)
 - [setRibWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setribwidth)
 - [setShankScaleX](Gameplay.Gameplay.HumanoidV2Shape.md#setshankscalex)
 - [setShankScaleZ](Gameplay.Gameplay.HumanoidV2Shape.md#setshankscalez)
-- [setShankStreth](Gameplay.Gameplay.HumanoidV2Shape.md#setshankstreth)
-- [setShoulderArmThick](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderarmthick)
+- [setShankStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setshankstretch)
+- [setShoulderArmThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderarmthickness)
 - [setShoulderArmWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderarmwidth)
-- [setShoulderThick](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderthick)
+- [setShoulderThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderthickness)
 - [setShoulderWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setshoulderwidth)
-- [setThighStreth](Gameplay.Gameplay.HumanoidV2Shape.md#setthighstreth)
+- [setThighStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setthighstretch)
 - [setThighThicknessX](Gameplay.Gameplay.HumanoidV2Shape.md#setthighthicknessx)
 - [setThighThicknessZ](Gameplay.Gameplay.HumanoidV2Shape.md#setthighthicknessz)
-- [setUpperArmsStreth](Gameplay.Gameplay.HumanoidV2Shape.md#setupperarmsstreth)
-- [setUpperArmsThick](Gameplay.Gameplay.HumanoidV2Shape.md#setupperarmsthick)
+- [setUpperArmsStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setupperarmsstretch)
+- [setUpperArmsThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setupperarmsthickness)
 - [setUpperArmsWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setupperarmswidth)
 - [setUpperFaceRange](Gameplay.Gameplay.HumanoidV2Shape.md#setupperfacerange)
-- [setUpperMouthThick](Gameplay.Gameplay.HumanoidV2Shape.md#setuppermouththick)
+- [setUpperMouthThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setuppermouththickness)
 - [setUpperStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setupperstretch)
 - [setWaistStretch](Gameplay.Gameplay.HumanoidV2Shape.md#setwaiststretch)
-- [setWaistThick](Gameplay.Gameplay.HumanoidV2Shape.md#setwaistthick)
+- [setWaistThickness](Gameplay.Gameplay.HumanoidV2Shape.md#setwaistthickness)
 - [setWaistWidth](Gameplay.Gameplay.HumanoidV2Shape.md#setwaistwidth)
 
 ## Constructors
@@ -223,9 +223,9 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7425
+Gameplay/index.d.ts:7558
 
-___
+---
 
 ### getBreastLength
 
@@ -251,9 +251,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7431
+Gameplay/index.d.ts:7564
 
-___
+---
 
 ### getBreastScale
 
@@ -279,9 +279,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7413
+Gameplay/index.d.ts:7546
 
-___
+---
 
 ### getBreastStretch
 
@@ -307,9 +307,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7491
+Gameplay/index.d.ts:7624
 
-___
+---
 
 ### getBreastVerticalPosition
 
@@ -335,9 +335,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7419
+Gameplay/index.d.ts:7552
 
-___
+---
 
 ### getBrowGap
 
@@ -363,9 +363,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7629
+Gameplay/index.d.ts:7762
 
-___
+---
 
 ### getBrowHeight
 
@@ -391,9 +391,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7623
+Gameplay/index.d.ts:7756
 
-___
+---
 
 ### getBrowInboardShape
 
@@ -419,9 +419,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7641
+Gameplay/index.d.ts:7774
 
-___
+---
 
 ### getBrowOutsideShape
 
@@ -447,9 +447,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7647
+Gameplay/index.d.ts:7780
 
-___
+---
 
 ### getBrowRotation
 
@@ -475,9 +475,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7635
+Gameplay/index.d.ts:7768
 
-___
+---
 
 ### getCanthusHorizontalPosition
 
@@ -503,9 +503,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7696
+Gameplay/index.d.ts:7829
 
-___
+---
 
 ### getCanthusVerticalPosition
 
@@ -531,9 +531,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7702
+Gameplay/index.d.ts:7835
 
-___
+---
 
 ### getCharacterHeight
 
@@ -559,9 +559,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7221
+Gameplay/index.d.ts:7354
 
-___
+---
 
 ### getCheekBoneRange
 
@@ -587,9 +587,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7335
+Gameplay/index.d.ts:7468
 
-___
+---
 
 ### getCheekBoneWidth
 
@@ -615,9 +615,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7329
+Gameplay/index.d.ts:7462
 
-___
+---
 
 ### getCheekHeight
 
@@ -643,9 +643,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7353
+Gameplay/index.d.ts:7486
 
-___
+---
 
 ### getCheekRange
 
@@ -671,9 +671,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7347
+Gameplay/index.d.ts:7480
 
-___
+---
 
 ### getCheekWidth
 
@@ -699,9 +699,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7341
+Gameplay/index.d.ts:7474
 
-___
+---
 
 ### getEarRoll
 
@@ -727,9 +727,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7257
+Gameplay/index.d.ts:7390
 
-___
+---
 
 ### getEarScale
 
@@ -755,9 +755,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7251
+Gameplay/index.d.ts:7384
 
-___
+---
 
 ### getEarYaw
 
@@ -783,9 +783,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7263
+Gameplay/index.d.ts:7396
 
-___
+---
 
 ### getEyesGap
 
@@ -811,9 +811,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7666
+Gameplay/index.d.ts:7799
 
-___
+---
 
 ### getEyesHeight
 
@@ -839,9 +839,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7660
+Gameplay/index.d.ts:7793
 
-___
+---
 
 ### getEyesLength
 
@@ -867,9 +867,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7684
+Gameplay/index.d.ts:7817
 
-___
+---
 
 ### getEyesRange
 
@@ -895,9 +895,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7672
+Gameplay/index.d.ts:7805
 
-___
+---
 
 ### getEyesRotation
 
@@ -923,9 +923,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7678
+Gameplay/index.d.ts:7811
 
-___
+---
 
 ### getEyesWidth
 
@@ -951,9 +951,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7690
+Gameplay/index.d.ts:7823
 
-___
+---
 
 ### getFaceWidth
 
@@ -979,13 +979,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7227
+Gameplay/index.d.ts:7360
 
-___
+---
 
-### getGroinThick
+### getGroinThickness
 
-▸ **getGroinThick**(): `number`
+▸ **getGroinThickness**(): `number`
 
 **`Description`**
 
@@ -1003,13 +1003,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getGroinThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getgrointhick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getGroinThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getgrointhickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7509
+Gameplay/index.d.ts:7642
 
-___
+---
 
 ### getGroinWidth
 
@@ -1035,9 +1035,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7503
+Gameplay/index.d.ts:7636
 
-___
+---
 
 ### getHeadScale
 
@@ -1067,9 +1067,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7654
+Gameplay/index.d.ts:7787
 
-___
+---
 
 ### getJawLength
 
@@ -1095,9 +1095,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7293
+Gameplay/index.d.ts:7426
 
-___
+---
 
 ### getJawRange
 
@@ -1123,9 +1123,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7305
+Gameplay/index.d.ts:7438
 
-___
+---
 
 ### getJawSmooth
 
@@ -1151,9 +1151,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7281
+Gameplay/index.d.ts:7414
 
-___
+---
 
 ### getJawVertexHeight
 
@@ -1179,9 +1179,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7311
+Gameplay/index.d.ts:7444
 
-___
+---
 
 ### getJawVertexRange
 
@@ -1207,9 +1207,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7317
+Gameplay/index.d.ts:7450
 
-___
+---
 
 ### getJawVertexWidth
 
@@ -1235,13 +1235,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7323
+Gameplay/index.d.ts:7456
 
-___
+---
 
-### getLowerArmsStreth
+### getLowerArmsStretch
 
-▸ **getLowerArmsStreth**(): `number`
+▸ **getLowerArmsStretch**(): `number`
 
 **`Description`**
 
@@ -1259,17 +1259,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerArmsStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerArmsStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7557
+Gameplay/index.d.ts:7690
 
-___
+---
 
-### getLowerArmsThick
+### getLowerArmsThickness
 
-▸ **getLowerArmsThick**(): `number`
+▸ **getLowerArmsThickness**(): `number`
 
 **`Description`**
 
@@ -1287,13 +1287,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerArmsThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerArmsThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7545
+Gameplay/index.d.ts:7678
 
-___
+---
 
 ### getLowerArmsWidth
 
@@ -1319,9 +1319,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7539
+Gameplay/index.d.ts:7672
 
-___
+---
 
 ### getLowerFaceRange
 
@@ -1347,9 +1347,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7239
+Gameplay/index.d.ts:7372
 
-___
+---
 
 ### getLowerFaceWidth
 
@@ -1375,9 +1375,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7245
+Gameplay/index.d.ts:7378
 
-___
+---
 
 ### getLowerJawRange
 
@@ -1403,9 +1403,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7287
+Gameplay/index.d.ts:7420
 
-___
+---
 
 ### getLowerJawWidth
 
@@ -1431,13 +1431,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7299
+Gameplay/index.d.ts:7432
 
-___
+---
 
-### getLowerMouthThick
+### getLowerMouthThickness
 
-▸ **getLowerMouthThick**(): `number`
+▸ **getLowerMouthThickness**(): `number`
 
 **`Description`**
 
@@ -1455,13 +1455,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerMouthThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowermouththick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getLowerMouthThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getlowermouththickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7401
+Gameplay/index.d.ts:7534
 
-___
+---
 
 ### getLowerStretch
 
@@ -1487,9 +1487,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7275
+Gameplay/index.d.ts:7408
 
-___
+---
 
 ### getMouthHeight
 
@@ -1515,9 +1515,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7377
+Gameplay/index.d.ts:7510
 
-___
+---
 
 ### getMouthRange
 
@@ -1543,9 +1543,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7383
+Gameplay/index.d.ts:7516
 
-___
+---
 
 ### getMouthShape
 
@@ -1571,9 +1571,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7407
+Gameplay/index.d.ts:7540
 
-___
+---
 
 ### getMouthWidth
 
@@ -1599,9 +1599,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7389
+Gameplay/index.d.ts:7522
 
-___
+---
 
 ### getNeckStretch
 
@@ -1627,13 +1627,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7485
+Gameplay/index.d.ts:7618
 
-___
+---
 
-### getNeckThick
+### getNeckThickness
 
-▸ **getNeckThick**(): `number`
+▸ **getNeckThickness**(): `number`
 
 **`Description`**
 
@@ -1651,13 +1651,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getNeckThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getneckthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getNeckThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getneckthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7443
+Gameplay/index.d.ts:7576
 
-___
+---
 
 ### getNeckWidth
 
@@ -1683,9 +1683,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7437
+Gameplay/index.d.ts:7570
 
-___
+---
 
 ### getNoseHeight
 
@@ -1711,13 +1711,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7371
+Gameplay/index.d.ts:7504
 
-___
+---
 
-### getNosePreiection
+### getNoseProtrusion
 
-▸ **getNosePreiection**(): `number`
+▸ **getNoseProtrusion**(): `number`
 
 **`Description`**
 
@@ -1735,13 +1735,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getNosePreiection](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getnosepreiection)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getNoseProtrusion](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseprotrusion)
 
 #### Defined in
 
-Gameplay/index.d.ts:7359
+Gameplay/index.d.ts:7492
 
-___
+---
 
 ### getNoseVerticalPosition
 
@@ -1767,9 +1767,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7365
+Gameplay/index.d.ts:7498
 
-___
+---
 
 ### getPupilHeight
 
@@ -1795,9 +1795,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7617
+Gameplay/index.d.ts:7750
 
-___
+---
 
 ### getPupilHorizontalPosition
 
@@ -1823,9 +1823,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7599
+Gameplay/index.d.ts:7732
 
-___
+---
 
 ### getPupilVerticalPosition
 
@@ -1851,9 +1851,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7605
+Gameplay/index.d.ts:7738
 
-___
+---
 
 ### getPupilWidth
 
@@ -1879,13 +1879,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7611
+Gameplay/index.d.ts:7744
 
-___
+---
 
-### getRibThick
+### getRibThickness
 
-▸ **getRibThick**(): `number`
+▸ **getRibThickness**(): `number`
 
 **`Description`**
 
@@ -1903,13 +1903,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getRibThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getribthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getRibThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getribthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7467
+Gameplay/index.d.ts:7600
 
-___
+---
 
 ### getRibWidth
 
@@ -1935,9 +1935,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7461
+Gameplay/index.d.ts:7594
 
-___
+---
 
 ### getShankScaleX
 
@@ -1963,9 +1963,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7575
+Gameplay/index.d.ts:7708
 
-___
+---
 
 ### getShankScaleZ
 
@@ -1991,13 +1991,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7581
+Gameplay/index.d.ts:7714
 
-___
+---
 
-### getShankStreth
+### getShankStretch
 
-▸ **getShankStreth**(): `number`
+▸ **getShankStretch**(): `number`
 
 **`Description`**
 
@@ -2015,17 +2015,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShankStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshankstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShankStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshankstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7593
+Gameplay/index.d.ts:7726
 
-___
+---
 
-### getShoulderArmThick
+### getShoulderArmThickness
 
-▸ **getShoulderArmThick**(): `number`
+▸ **getShoulderArmThickness**(): `number`
 
 **`Description`**
 
@@ -2043,13 +2043,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShoulderArmThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShoulderArmThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7521
+Gameplay/index.d.ts:7654
 
-___
+---
 
 ### getShoulderArmWidth
 
@@ -2075,13 +2075,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7515
+Gameplay/index.d.ts:7648
 
-___
+---
 
-### getShoulderThick
+### getShoulderThickness
 
-▸ **getShoulderThick**(): `number`
+▸ **getShoulderThickness**(): `number`
 
 **`Description`**
 
@@ -2099,13 +2099,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShoulderThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getShoulderThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7455
+Gameplay/index.d.ts:7588
 
-___
+---
 
 ### getShoulderWidth
 
@@ -2131,13 +2131,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7449
+Gameplay/index.d.ts:7582
 
-___
+---
 
-### getThighStreth
+### getThighStretch
 
-▸ **getThighStreth**(): `number`
+▸ **getThighStretch**(): `number`
 
 **`Description`**
 
@@ -2155,13 +2155,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getThighStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getthighstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getThighStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getthighstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7587
+Gameplay/index.d.ts:7720
 
-___
+---
 
 ### getThighThicknessX
 
@@ -2187,9 +2187,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7563
+Gameplay/index.d.ts:7696
 
-___
+---
 
 ### getThighThicknessZ
 
@@ -2215,13 +2215,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7569
+Gameplay/index.d.ts:7702
 
-___
+---
 
-### getUpperArmsStreth
+### getUpperArmsStretch
 
-▸ **getUpperArmsStreth**(): `number`
+▸ **getUpperArmsStretch**(): `number`
 
 **`Description`**
 
@@ -2239,17 +2239,17 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperArmsStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperArmsStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7551
+Gameplay/index.d.ts:7684
 
-___
+---
 
-### getUpperArmsThick
+### getUpperArmsThickness
 
-▸ **getUpperArmsThick**(): `number`
+▸ **getUpperArmsThickness**(): `number`
 
 **`Description`**
 
@@ -2267,13 +2267,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperArmsThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperArmsThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7533
+Gameplay/index.d.ts:7666
 
-___
+---
 
 ### getUpperArmsWidth
 
@@ -2299,9 +2299,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7527
+Gameplay/index.d.ts:7660
 
-___
+---
 
 ### getUpperFaceRange
 
@@ -2327,13 +2327,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7233
+Gameplay/index.d.ts:7366
 
-___
+---
 
-### getUpperMouthThick
+### getUpperMouthThickness
 
-▸ **getUpperMouthThick**(): `number`
+▸ **getUpperMouthThickness**(): `number`
 
 **`Description`**
 
@@ -2351,13 +2351,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperMouthThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getuppermouththick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getUpperMouthThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getuppermouththickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7395
+Gameplay/index.d.ts:7528
 
-___
+---
 
 ### getUpperStretch
 
@@ -2383,9 +2383,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7269
+Gameplay/index.d.ts:7402
 
-___
+---
 
 ### getWaistStretch
 
@@ -2411,13 +2411,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7497
+Gameplay/index.d.ts:7630
 
-___
+---
 
-### getWaistThick
+### getWaistThickness
 
-▸ **getWaistThick**(): `number`
+▸ **getWaistThickness**(): `number`
 
 **`Description`**
 
@@ -2435,13 +2435,13 @@ ___
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getWaistThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[getWaistThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:7479
+Gameplay/index.d.ts:7612
 
-___
+---
 
 ### getWaistWidth
 
@@ -2467,9 +2467,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:7473
+Gameplay/index.d.ts:7606
 
-___
+---
 
 ### setBreastHorizontalPosition
 
@@ -2478,7 +2478,8 @@ ___
 **`Description`**
 
 调整胸部左右位置
- *
+
+-
 
 **`Effect`**
 
@@ -2487,10 +2488,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2502,9 +2503,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6799
+Gameplay/index.d.ts:6932
 
-___
+---
 
 ### setBreastLength
 
@@ -2513,7 +2514,8 @@ ___
 **`Description`**
 
 调整胸部长度
- *
+
+-
 
 **`Effect`**
 
@@ -2522,10 +2524,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2537,9 +2539,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6808
+Gameplay/index.d.ts:6941
 
-___
+---
 
 ### setBreastScale
 
@@ -2548,7 +2550,8 @@ ___
 **`Description`**
 
 调整胸部整体大小；
- *
+
+-
 
 **`Effect`**
 
@@ -2557,10 +2560,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2572,9 +2575,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6781
+Gameplay/index.d.ts:6914
 
-___
+---
 
 ### setBreastStretch
 
@@ -2583,7 +2586,8 @@ ___
 **`Description`**
 
 设置胸部拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -2592,10 +2596,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2607,9 +2611,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6898
+Gameplay/index.d.ts:7031
 
-___
+---
 
 ### setBreastVerticalPosition
 
@@ -2618,7 +2622,8 @@ ___
 **`Description`**
 
 调整胸部上下位置
- *
+
+-
 
 **`Effect`**
 
@@ -2627,10 +2632,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2642,9 +2647,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6790
+Gameplay/index.d.ts:6923
 
-___
+---
 
 ### setBrowGap
 
@@ -2653,7 +2658,8 @@ ___
 **`Description`**
 
 设置眉间距
- *
+
+-
 
 **`Effect`**
 
@@ -2662,10 +2668,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2677,9 +2683,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7105
+Gameplay/index.d.ts:7238
 
-___
+---
 
 ### setBrowHeight
 
@@ -2688,7 +2694,8 @@ ___
 **`Description`**
 
 设置眉毛上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -2697,10 +2704,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2712,9 +2719,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7096
+Gameplay/index.d.ts:7229
 
-___
+---
 
 ### setBrowInboardShape
 
@@ -2723,7 +2730,8 @@ ___
 **`Description`**
 
 设置眉毛内侧角度
- *
+
+-
 
 **`Effect`**
 
@@ -2732,10 +2740,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2747,9 +2755,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7123
+Gameplay/index.d.ts:7256
 
-___
+---
 
 ### setBrowOutsideShape
 
@@ -2758,7 +2766,8 @@ ___
 **`Description`**
 
 设置眉毛外侧形状
- *
+
+-
 
 **`Effect`**
 
@@ -2767,10 +2776,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2782,9 +2791,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7132
+Gameplay/index.d.ts:7265
 
-___
+---
 
 ### setBrowRotation
 
@@ -2793,7 +2802,8 @@ ___
 **`Description`**
 
 设置眉毛角度
- *
+
+-
 
 **`Effect`**
 
@@ -2802,10 +2812,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2817,9 +2827,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7114
+Gameplay/index.d.ts:7247
 
-___
+---
 
 ### setCanthusHorizontalPosition
 
@@ -2828,7 +2838,8 @@ ___
 **`Description`**
 
 设置眼角左右移动
- *
+
+-
 
 **`Effect`**
 
@@ -2837,10 +2848,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2852,9 +2863,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7206
+Gameplay/index.d.ts:7339
 
-___
+---
 
 ### setCanthusVerticalPosition
 
@@ -2863,7 +2874,8 @@ ___
 **`Description`**
 
 设置外眼角上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -2872,10 +2884,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2887,9 +2899,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7215
+Gameplay/index.d.ts:7348
 
-___
+---
 
 ### setCharacterHeight
 
@@ -2906,10 +2918,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2921,9 +2933,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6493
+Gameplay/index.d.ts:6626
 
-___
+---
 
 ### setCheekBoneRange
 
@@ -2932,7 +2944,8 @@ ___
 **`Description`**
 
 设置颧骨前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -2941,10 +2954,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2956,9 +2969,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6664
+Gameplay/index.d.ts:6797
 
-___
+---
 
 ### setCheekBoneWidth
 
@@ -2967,7 +2980,8 @@ ___
 **`Description`**
 
 设置颧骨横向宽度
- *
+
+-
 
 **`Effect`**
 
@@ -2976,10 +2990,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -2991,9 +3005,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6655
+Gameplay/index.d.ts:6788
 
-___
+---
 
 ### setCheekHeight
 
@@ -3002,7 +3016,8 @@ ___
 **`Description`**
 
 设置脸颊上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -3011,10 +3026,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3026,9 +3041,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6691
+Gameplay/index.d.ts:6824
 
-___
+---
 
 ### setCheekRange
 
@@ -3037,7 +3052,8 @@ ___
 **`Description`**
 
 设置脸颊前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -3046,10 +3062,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3061,9 +3077,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6682
+Gameplay/index.d.ts:6815
 
-___
+---
 
 ### setCheekWidth
 
@@ -3072,7 +3088,8 @@ ___
 **`Description`**
 
 设置脸颊宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3081,10 +3098,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3096,9 +3113,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6673
+Gameplay/index.d.ts:6806
 
-___
+---
 
 ### setEarRoll
 
@@ -3107,7 +3124,8 @@ ___
 **`Description`**
 
 调整耳朵左右旋转
- *
+
+-
 
 **`Effect`**
 
@@ -3116,10 +3134,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3131,9 +3149,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6547
+Gameplay/index.d.ts:6680
 
-___
+---
 
 ### setEarScale
 
@@ -3142,7 +3160,8 @@ ___
 **`Description`**
 
 调整耳朵大小
- *
+
+-
 
 **`Effect`**
 
@@ -3151,10 +3170,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3166,9 +3185,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6538
+Gameplay/index.d.ts:6671
 
-___
+---
 
 ### setEarYaw
 
@@ -3177,7 +3196,8 @@ ___
 **`Description`**
 
 调整耳朵前后旋转
- *
+
+-
 
 **`Effect`**
 
@@ -3186,10 +3206,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3201,9 +3221,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6556
+Gameplay/index.d.ts:6689
 
-___
+---
 
 ### setEyesGap
 
@@ -3212,7 +3232,8 @@ ___
 **`Description`**
 
 设置眼睛间距
- *
+
+-
 
 **`Effect`**
 
@@ -3221,10 +3242,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3236,9 +3257,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7161
+Gameplay/index.d.ts:7294
 
-___
+---
 
 ### setEyesHeight
 
@@ -3247,7 +3268,8 @@ ___
 **`Description`**
 
 设置眼睛上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -3256,10 +3278,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3271,9 +3293,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7152
+Gameplay/index.d.ts:7285
 
-___
+---
 
 ### setEyesLength
 
@@ -3282,7 +3304,8 @@ ___
 **`Description`**
 
 眼睛长度
- *
+
+-
 
 **`Effect`**
 
@@ -3291,10 +3314,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3306,9 +3329,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7188
+Gameplay/index.d.ts:7321
 
-___
+---
 
 ### setEyesRange
 
@@ -3317,7 +3340,8 @@ ___
 **`Description`**
 
 设置眼睛前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -3326,10 +3350,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3341,9 +3365,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7170
+Gameplay/index.d.ts:7303
 
-___
+---
 
 ### setEyesRotation
 
@@ -3352,7 +3376,8 @@ ___
 **`Description`**
 
 设置眼睛角度
- *
+
+-
 
 **`Effect`**
 
@@ -3361,10 +3386,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3376,9 +3401,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7179
+Gameplay/index.d.ts:7312
 
-___
+---
 
 ### setEyesWidth
 
@@ -3387,7 +3412,8 @@ ___
 **`Description`**
 
 设置眼睛左右宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3396,10 +3422,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3411,9 +3437,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7197
+Gameplay/index.d.ts:7330
 
-___
+---
 
 ### setFaceWidth
 
@@ -3422,7 +3448,8 @@ ___
 **`Description`**
 
 调整头部整体宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3431,10 +3458,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3446,18 +3473,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6502
+Gameplay/index.d.ts:6635
 
-___
+---
 
-### setGroinThick
+### setGroinThickness
 
-▸ **setGroinThick**(`value`, `sync`): `void`
+▸ **setGroinThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置胯宽度前后
- *
+
+-
 
 **`Effect`**
 
@@ -3466,10 +3494,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3477,13 +3505,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setGroinThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setgrointhick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setGroinThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setgrointhickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6925
+Gameplay/index.d.ts:7058
 
-___
+---
 
 ### setGroinWidth
 
@@ -3492,7 +3520,8 @@ ___
 **`Description`**
 
 设置胯宽度左右
- *
+
+-
 
 **`Effect`**
 
@@ -3501,10 +3530,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3516,9 +3545,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6916
+Gameplay/index.d.ts:7049
 
-___
+---
 
 ### setHeadScale
 
@@ -3532,7 +3561,8 @@ ___
 
 sync = false:客户端;
 sync = true:双端调用
- *
+
+-
 
 **`Effect`**
 
@@ -3541,10 +3571,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3556,9 +3586,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7143
+Gameplay/index.d.ts:7276
 
-___
+---
 
 ### setJawLength
 
@@ -3567,7 +3597,8 @@ ___
 **`Description`**
 
 调整下巴长度
- *
+
+-
 
 **`Effect`**
 
@@ -3576,10 +3607,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3591,9 +3622,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6601
+Gameplay/index.d.ts:6734
 
-___
+---
 
 ### setJawRange
 
@@ -3602,7 +3633,8 @@ ___
 **`Description`**
 
 调整下巴前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -3611,10 +3643,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3626,9 +3658,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6619
+Gameplay/index.d.ts:6752
 
-___
+---
 
 ### setJawSmooth
 
@@ -3637,7 +3669,8 @@ ___
 **`Description`**
 
 调整下巴圆度
- *
+
+-
 
 **`Effect`**
 
@@ -3646,10 +3679,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3661,9 +3694,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6583
+Gameplay/index.d.ts:6716
 
-___
+---
 
 ### setJawVertexHeight
 
@@ -3672,7 +3705,8 @@ ___
 **`Description`**
 
 调整下巴尖上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -3681,10 +3715,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3696,9 +3730,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6628
+Gameplay/index.d.ts:6761
 
-___
+---
 
 ### setJawVertexRange
 
@@ -3707,7 +3741,8 @@ ___
 **`Description`**
 
 调整下巴尖前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -3716,10 +3751,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3731,9 +3766,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6637
+Gameplay/index.d.ts:6770
 
-___
+---
 
 ### setJawVertexWidth
 
@@ -3742,7 +3777,8 @@ ___
 **`Description`**
 
 调整下巴尖宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3751,10 +3787,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3766,18 +3802,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6646
+Gameplay/index.d.ts:6779
 
-___
+---
 
-### setLowerArmsStreth
+### setLowerArmsStretch
 
-▸ **setLowerArmsStreth**(`value`, `sync`): `void`
+▸ **setLowerArmsStretch**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置小臂的拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -3786,10 +3823,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3797,22 +3834,23 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerArmsStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerArmsStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:6997
+Gameplay/index.d.ts:7130
 
-___
+---
 
-### setLowerArmsThick
+### setLowerArmsThickness
 
-▸ **setLowerArmsThick**(`value`, `sync`): `void`
+▸ **setLowerArmsThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置小臂前后方向的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3821,10 +3859,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3832,13 +3870,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerArmsThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerArmsThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6979
+Gameplay/index.d.ts:7112
 
-___
+---
 
 ### setLowerArmsWidth
 
@@ -3847,7 +3885,8 @@ ___
 **`Description`**
 
 设置小臂左右方向的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3856,10 +3895,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3871,9 +3910,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6970
+Gameplay/index.d.ts:7103
 
-___
+---
 
 ### setLowerFaceRange
 
@@ -3882,7 +3921,8 @@ ___
 **`Description`**
 
 设置下半脸前后
- *
+
+-
 
 **`Effect`**
 
@@ -3891,10 +3931,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3906,9 +3946,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6520
+Gameplay/index.d.ts:6653
 
-___
+---
 
 ### setLowerFaceWidth
 
@@ -3917,7 +3957,8 @@ ___
 **`Description`**
 
 设置下半脸的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3926,10 +3967,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3941,9 +3982,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6529
+Gameplay/index.d.ts:6662
 
-___
+---
 
 ### setLowerJawRange
 
@@ -3952,7 +3993,8 @@ ___
 **`Description`**
 
 调整下颚骨前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -3961,10 +4003,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -3976,9 +4018,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6592
+Gameplay/index.d.ts:6725
 
-___
+---
 
 ### setLowerJawWidth
 
@@ -3987,7 +4029,8 @@ ___
 **`Description`**
 
 调整下颚骨宽度
- *
+
+-
 
 **`Effect`**
 
@@ -3996,10 +4039,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4011,18 +4054,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6610
+Gameplay/index.d.ts:6743
 
-___
+---
 
-### setLowerMouthThick
+### setLowerMouthThickness
 
-▸ **setLowerMouthThick**(`value`, `sync`): `void`
+▸ **setLowerMouthThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置下嘴唇薄厚
- *
+
+-
 
 **`Effect`**
 
@@ -4031,10 +4075,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4042,13 +4086,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerMouthThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowermouththick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setLowerMouthThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setlowermouththickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6763
+Gameplay/index.d.ts:6896
 
-___
+---
 
 ### setLowerStretch
 
@@ -4057,7 +4101,8 @@ ___
 **`Description`**
 
 调整耳朵下部拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -4066,10 +4111,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4081,9 +4126,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6574
+Gameplay/index.d.ts:6707
 
-___
+---
 
 ### setMouthHeight
 
@@ -4100,10 +4145,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4115,9 +4160,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6727
+Gameplay/index.d.ts:6860
 
-___
+---
 
 ### setMouthRange
 
@@ -4126,7 +4171,8 @@ ___
 **`Description`**
 
 设置嘴巴前后移动
- *
+
+-
 
 **`Effect`**
 
@@ -4135,10 +4181,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4150,9 +4196,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6736
+Gameplay/index.d.ts:6869
 
-___
+---
 
 ### setMouthShape
 
@@ -4161,7 +4207,8 @@ ___
 **`Description`**
 
 调整嘴巴形状
- *
+
+-
 
 **`Effect`**
 
@@ -4170,10 +4217,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4185,9 +4232,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6772
+Gameplay/index.d.ts:6905
 
-___
+---
 
 ### setMouthWidth
 
@@ -4196,7 +4243,8 @@ ___
 **`Description`**
 
 设置嘴巴宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4205,10 +4253,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4220,9 +4268,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6745
+Gameplay/index.d.ts:6878
 
-___
+---
 
 ### setNeckStretch
 
@@ -4231,7 +4279,8 @@ ___
 **`Description`**
 
 设置脖子拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -4240,10 +4289,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4255,18 +4304,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6889
+Gameplay/index.d.ts:7022
 
-___
+---
 
-### setNeckThick
+### setNeckThickness
 
-▸ **setNeckThick**(`value`, `sync`): `void`
+▸ **setNeckThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置脖子前后的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4275,10 +4325,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4286,13 +4336,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setNeckThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setneckthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setNeckThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setneckthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6826
+Gameplay/index.d.ts:6959
 
-___
+---
 
 ### setNeckWidth
 
@@ -4301,7 +4351,8 @@ ___
 **`Description`**
 
 调整脖子的左右宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4310,10 +4361,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4325,9 +4376,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6817
+Gameplay/index.d.ts:6950
 
-___
+---
 
 ### setNoseHeight
 
@@ -4336,7 +4387,8 @@ ___
 **`Description`**
 
 设置鼻梁高度
- *
+
+-
 
 **`Effect`**
 
@@ -4345,10 +4397,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4360,18 +4412,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6718
+Gameplay/index.d.ts:6851
 
-___
+---
 
-### setNosePreiection
+### setNoseProtrusion
 
-▸ **setNosePreiection**(`value`, `sync`): `void`
+▸ **setNoseProtrusion**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置鼻尖长度
- *
+
+-
 
 **`Effect`**
 
@@ -4380,10 +4433,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4391,13 +4444,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setNosePreiection](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setnosepreiection)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setNoseProtrusion](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseprotrusion)
 
 #### Defined in
 
-Gameplay/index.d.ts:6700
+Gameplay/index.d.ts:6833
 
-___
+---
 
 ### setNoseVerticalPosition
 
@@ -4406,7 +4459,8 @@ ___
 **`Description`**
 
 设置鼻子上下移动
- *
+
+-
 
 **`Effect`**
 
@@ -4415,10 +4469,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4430,9 +4484,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6709
+Gameplay/index.d.ts:6842
 
-___
+---
 
 ### setPupilHeight
 
@@ -4441,7 +4495,8 @@ ___
 **`Description`**
 
 设置瞳孔高度
- *
+
+-
 
 **`Effect`**
 
@@ -4450,10 +4505,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4465,9 +4520,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7087
+Gameplay/index.d.ts:7220
 
-___
+---
 
 ### setPupilHorizontalPosition
 
@@ -4476,7 +4531,8 @@ ___
 **`Description`**
 
 设置瞳孔左右位置
- *
+
+-
 
 **`Effect`**
 
@@ -4485,10 +4541,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4500,9 +4556,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7060
+Gameplay/index.d.ts:7193
 
-___
+---
 
 ### setPupilVerticalPosition
 
@@ -4511,7 +4567,8 @@ ___
 **`Description`**
 
 设置瞳孔上下位置
- *
+
+-
 
 **`Effect`**
 
@@ -4520,10 +4577,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4535,9 +4592,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7069
+Gameplay/index.d.ts:7202
 
-___
+---
 
 ### setPupilWidth
 
@@ -4546,7 +4603,8 @@ ___
 **`Description`**
 
 设置瞳孔宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4555,10 +4613,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4570,18 +4628,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7078
+Gameplay/index.d.ts:7211
 
-___
+---
 
-### setRibThick
+### setRibThickness
 
-▸ **setRibThick**(`value`, `sync`): `void`
+▸ **setRibThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置肋骨的前后宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4590,10 +4649,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4601,13 +4660,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setRibThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setribthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setRibThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setribthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6862
+Gameplay/index.d.ts:6995
 
-___
+---
 
 ### setRibWidth
 
@@ -4616,7 +4675,8 @@ ___
 **`Description`**
 
 设置肋骨的左右宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4625,10 +4685,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4640,9 +4700,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6853
+Gameplay/index.d.ts:6986
 
-___
+---
 
 ### setShankScaleX
 
@@ -4651,7 +4711,8 @@ ___
 **`Description`**
 
 设置小腿粗细左右
- *
+
+-
 
 **`Effect`**
 
@@ -4660,10 +4721,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4675,9 +4736,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7024
+Gameplay/index.d.ts:7157
 
-___
+---
 
 ### setShankScaleZ
 
@@ -4686,7 +4747,8 @@ ___
 **`Description`**
 
 设置小腿粗细前后
- *
+
+-
 
 **`Effect`**
 
@@ -4695,10 +4757,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4710,18 +4772,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7033
+Gameplay/index.d.ts:7166
 
-___
+---
 
-### setShankStreth
+### setShankStretch
 
-▸ **setShankStreth**(`value`, `sync`): `void`
+▸ **setShankStretch**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置小腿拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -4730,10 +4793,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4741,22 +4804,23 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShankStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshankstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShankStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshankstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7051
+Gameplay/index.d.ts:7184
 
-___
+---
 
-### setShoulderArmThick
+### setShoulderArmThickness
 
-▸ **setShoulderArmThick**(`value`, `sync`): `void`
+▸ **setShoulderArmThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置肩膀的前后宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4765,10 +4829,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4776,13 +4840,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShoulderArmThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShoulderArmThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6943
+Gameplay/index.d.ts:7076
 
-___
+---
 
 ### setShoulderArmWidth
 
@@ -4791,7 +4855,8 @@ ___
 **`Description`**
 
 设置肩膀的左右宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4800,10 +4865,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4815,18 +4880,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6934
+Gameplay/index.d.ts:7067
 
-___
+---
 
-### setShoulderThick
+### setShoulderThickness
 
-▸ **setShoulderThick**(`value`, `sync`): `void`
+▸ **setShoulderThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置肩膀的前后宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4835,10 +4901,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4846,13 +4912,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShoulderThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setShoulderThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6844
+Gameplay/index.d.ts:6977
 
-___
+---
 
 ### setShoulderWidth
 
@@ -4861,7 +4927,8 @@ ___
 **`Description`**
 
 设置肩膀的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -4870,10 +4937,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4885,18 +4952,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6835
+Gameplay/index.d.ts:6968
 
-___
+---
 
-### setThighStreth
+### setThighStretch
 
-▸ **setThighStreth**(`value`, `sync`): `void`
+▸ **setThighStretch**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置大腿拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -4905,10 +4973,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4916,13 +4984,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setThighStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setthighstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setThighStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setthighstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:7042
+Gameplay/index.d.ts:7175
 
-___
+---
 
 ### setThighThicknessX
 
@@ -4931,7 +4999,8 @@ ___
 **`Description`**
 
 设置大腿粗细左右
- *
+
+-
 
 **`Effect`**
 
@@ -4940,10 +5009,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4955,9 +5024,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7006
+Gameplay/index.d.ts:7139
 
-___
+---
 
 ### setThighThicknessZ
 
@@ -4966,7 +5035,8 @@ ___
 **`Description`**
 
 设置大腿粗细前后
- *
+
+-
 
 **`Effect`**
 
@@ -4975,10 +5045,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -4990,18 +5060,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:7015
+Gameplay/index.d.ts:7148
 
-___
+---
 
-### setUpperArmsStreth
+### setUpperArmsStretch
 
-▸ **setUpperArmsStreth**(`value`, `sync`): `void`
+▸ **setUpperArmsStretch**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置大臂的拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -5010,10 +5081,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5021,22 +5092,23 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperArmsStreth](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsstreth)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperArmsStretch](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsstretch)
 
 #### Defined in
 
-Gameplay/index.d.ts:6988
+Gameplay/index.d.ts:7121
 
-___
+---
 
-### setUpperArmsThick
+### setUpperArmsThickness
 
-▸ **setUpperArmsThick**(`value`, `sync`): `void`
+▸ **setUpperArmsThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置大臂前后方向的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -5045,10 +5117,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5056,13 +5128,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperArmsThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperArmsThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6961
+Gameplay/index.d.ts:7094
 
-___
+---
 
 ### setUpperArmsWidth
 
@@ -5071,7 +5143,8 @@ ___
 **`Description`**
 
 设置大臂左右方向的宽度
- *
+
+-
 
 **`Effect`**
 
@@ -5080,10 +5153,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5095,9 +5168,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6952
+Gameplay/index.d.ts:7085
 
-___
+---
 
 ### setUpperFaceRange
 
@@ -5114,10 +5187,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5129,18 +5202,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6511
+Gameplay/index.d.ts:6644
 
-___
+---
 
-### setUpperMouthThick
+### setUpperMouthThickness
 
-▸ **setUpperMouthThick**(`value`, `sync`): `void`
+▸ **setUpperMouthThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置上嘴唇薄厚
- *
+
+-
 
 **`Effect`**
 
@@ -5149,10 +5223,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5160,13 +5234,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperMouthThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setuppermouththick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setUpperMouthThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setuppermouththickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6754
+Gameplay/index.d.ts:6887
 
-___
+---
 
 ### setUpperStretch
 
@@ -5175,7 +5249,8 @@ ___
 **`Description`**
 
 调整耳朵上部拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -5184,10 +5259,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5199,9 +5274,9 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6565
+Gameplay/index.d.ts:6698
 
-___
+---
 
 ### setWaistStretch
 
@@ -5210,7 +5285,8 @@ ___
 **`Description`**
 
 设置腰部拉伸
- *
+
+-
 
 **`Effect`**
 
@@ -5219,10 +5295,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5234,18 +5310,19 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6907
+Gameplay/index.d.ts:7040
 
-___
+---
 
-### setWaistThick
+### setWaistThickness
 
-▸ **setWaistThick**(`value`, `sync`): `void`
+▸ **setWaistThickness**(`value`, `sync`): `void`
 
 **`Description`**
 
 设置腰的前后宽度
- *
+
+-
 
 **`Effect`**
 
@@ -5254,10 +5331,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5265,13 +5342,13 @@ sync = true:双端
 
 #### Implementation of
 
-[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setWaistThick](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistthick)
+[IHumanoidV2Shape](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md).[setWaistThickness](../interfaces/Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistthickness)
 
 #### Defined in
 
-Gameplay/index.d.ts:6880
+Gameplay/index.d.ts:7013
 
-___
+---
 
 ### setWaistWidth
 
@@ -5280,7 +5357,8 @@ ___
 **`Description`**
 
 设置腰的左右宽度
- *
+
+-
 
 **`Effect`**
 
@@ -5289,10 +5367,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | usage:值 |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description                   |
+| :------ | :-------- | :---------------------------- |
+| `value` | `number`  | usage:值                      |
+| `sync`  | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
 
@@ -5304,4 +5382,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:6871
+Gameplay/index.d.ts:7004

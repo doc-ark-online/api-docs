@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -49,19 +49,19 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLayoutSpace` | `number` | usage:排列间隔 |
-| `InPadding` | [`Margin`](UI.UI.Margin.md) | usage:四边边距 |
-| `InLayout` | [`UILayoutType`](../enums/UI.UI.UILayoutType.md) | usage:自动布局规则 |
+| Name             | Type                                                 | Description                |
+| :--------------- | :--------------------------------------------------- | :------------------------- |
+| `InLayoutSpace`  | `number`                                             | usage:排列间隔             |
+| `InPadding`      | [`Margin`](UI.UI.Margin.md)                          | usage:四边边距             |
+| `InLayout`       | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | usage:自动布局规则         |
 | `InLayoutPacket` | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | usage:自动布局节点排列规则 |
-| `InHugContent` | [`UIHugContent`](UI.UI.UIHugContent.md) | usage:容器布局适应规则 |
-| `InAutoLayout` | `boolean` | usage:是否自动布局 |
-| `InAutoWrap` | `boolean` | usage:是否网格模式 |
+| `InHugContent`   | [`UIHugContent`](UI.UI.UIHugContent.md)              | usage:容器布局适应规则     |
+| `InAutoLayout`   | `boolean`                                            | usage:是否自动布局         |
+| `InAutoWrap`     | `boolean`                                            | usage:是否网格模式         |
 
 #### Defined in
 
-UI/index.d.ts:3820
+UI/index.d.ts:3829
 
 • **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
 
@@ -75,20 +75,20 @@ UI/index.d.ts:3820
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLayoutSpace` | `number` | usage:排列间隔 |
-| `InPadding` | [`Margin`](UI.UI.Margin.md) | usage:四边边距 |
-| `InLayout` | [`UILayoutType`](../enums/UI.UI.UILayoutType.md) | usage:自动布局规则 |
-| `InLayoutPacket` | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | usage:自动布局节点排列规则 |
-| `InHugContent` | [`UIHugContent`](UI.UI.UIHugContent.md) | usage:容器布局适应规则 |
-| `InAutoLayout` | `boolean` | usage:是否自动布局 |
-| `InAutoWrap` | `boolean` | usage:是否网格模式 |
-| `InChildCollation` | [`UIChildCollation`](UI.UI.UIChildCollation.md) | usage:子项排序规则 |
+| Name               | Type                                                 | Description                |
+| :----------------- | :--------------------------------------------------- | :------------------------- |
+| `InLayoutSpace`    | `number`                                             | usage:排列间隔             |
+| `InPadding`        | [`Margin`](UI.UI.Margin.md)                          | usage:四边边距             |
+| `InLayout`         | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | usage:自动布局规则         |
+| `InLayoutPacket`   | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | usage:自动布局节点排列规则 |
+| `InHugContent`     | [`UIHugContent`](UI.UI.UIHugContent.md)              | usage:容器布局适应规则     |
+| `InAutoLayout`     | `boolean`                                            | usage:是否自动布局         |
+| `InAutoWrap`       | `boolean`                                            | usage:是否网格模式         |
+| `InChildCollation` | [`UIChildCollation`](UI.UI.UIChildCollation.md)      | usage:子项排序规则         |
 
 #### Defined in
 
-UI/index.d.ts:3841
+UI/index.d.ts:3850
 
 ## Properties
 
@@ -102,9 +102,9 @@ UI/index.d.ts:3841
 
 #### Defined in
 
-UI/index.d.ts:3860
+UI/index.d.ts:3869
 
-___
+---
 
 ### autoWrap
 
@@ -116,9 +116,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3866
+UI/index.d.ts:3875
 
-___
+---
 
 ### childCollation
 
@@ -130,9 +130,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3864
+UI/index.d.ts:3873
 
-___
+---
 
 ### hugContent
 
@@ -144,9 +144,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3862
+UI/index.d.ts:3871
 
-___
+---
 
 ### layout
 
@@ -158,9 +158,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3856
+UI/index.d.ts:3865
 
-___
+---
 
 ### layoutPacket
 
@@ -172,9 +172,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3858
+UI/index.d.ts:3867
 
-___
+---
 
 ### layoutSpace
 
@@ -186,9 +186,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3852
+UI/index.d.ts:3861
 
-___
+---
 
 ### padding
 
@@ -200,4 +200,4 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:3854
+UI/index.d.ts:3863

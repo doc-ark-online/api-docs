@@ -6,7 +6,7 @@
 
 **`Author`**
 
-wujie
+jie.wu
 
 **`Description`**
 
@@ -43,7 +43,7 @@ usage:客户端
 
 #### Defined in
 
-UI/index.d.ts:4021
+UI/index.d.ts:4030
 
 ## Methods
 
@@ -67,9 +67,9 @@ UI/index.d.ts:4021
 
 #### Defined in
 
-UI/index.d.ts:4041
+UI/index.d.ts:4050
 
-___
+---
 
 ### getAbsolutePositionAtCoordinates
 
@@ -77,7 +77,7 @@ ___
 
 **`Description`**
 
-获取基于Coordinate的绝对坐标
+获取基于 Coordinate 的绝对坐标
 
 **`Effect`**
 
@@ -85,21 +85,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                              | Description      |
+| :----------- | :-------------------------------- | :--------------- |
 | `Coordinate` | [`Vector2`](Type.Type.Vector2.md) | usage:绝对基础点 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
-返回Coordinate的绝对坐标
+返回 Coordinate 的绝对坐标
 
 #### Defined in
 
-UI/index.d.ts:4035
+UI/index.d.ts:4044
 
-___
+---
 
 ### getAbsoluteSize
 
@@ -121,9 +121,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4053
+UI/index.d.ts:4062
 
-___
+---
 
 ### getLocalPositionAtCoordinates
 
@@ -131,7 +131,7 @@ ___
 
 **`Description`**
 
-获取基于Coordinate的相对坐标
+获取基于 Coordinate 的相对坐标
 
 **`Effect`**
 
@@ -139,21 +139,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name         | Type                              | Description      |
+| :----------- | :-------------------------------- | :--------------- |
 | `Coordinate` | [`Vector2`](Type.Type.Vector2.md) | usage:相对基础点 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
-返回Coordinate的相对坐标
+返回 Coordinate 的相对坐标
 
 #### Defined in
 
-UI/index.d.ts:4028
+UI/index.d.ts:4037
 
-___
+---
 
 ### getLocalSize
 
@@ -175,9 +175,9 @@ ___
 
 #### Defined in
 
-UI/index.d.ts:4047
+UI/index.d.ts:4056
 
-___
+---
 
 ### isUnderLocation
 
@@ -185,7 +185,7 @@ ___
 
 **`Description`**
 
-判断该Geometry 是否在AbsoluteCoordinate坐标下
+判断该 Geometry 是否在 AbsoluteCoordinate 坐标下
 
 **`Effect`**
 
@@ -193,16 +193,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `AbsoluteCoordinate` | [`Vector2`](Type.Type.Vector2.md) | usage:坐标 |
+| Name                 | Type                              | Description |
+| :------------------- | :-------------------------------- | :---------- |
+| `AbsoluteCoordinate` | [`Vector2`](Type.Type.Vector2.md) | usage:坐标  |
 
 #### Returns
 
 `boolean`
 
-返回是否在AbsoluteCoordinate坐标下
+返回是否在 AbsoluteCoordinate 坐标下
 
 #### Defined in
 
-UI/index.d.ts:4060
+UI/index.d.ts:4069

@@ -29,21 +29,21 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | usage:资源Guid |
+| Name        | Type     | Description     |
+| :---------- | :------- | :-------------- |
+| `InAssetId` | `string` | usage:资源 Guid |
 
 #### Returns
 
 `Promise`<`boolean`\>
 
-下载失败将返回false
+下载失败将返回 false
 
 #### Defined in
 
 Util/index.d.ts:31
 
-___
+---
 
 ### isAssetExist
 
@@ -59,21 +59,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | usage:资源Guid |
+| Name        | Type     | Description     |
+| :---------- | :------- | :-------------- |
+| `InAssetId` | `string` | usage:资源 Guid |
 
 #### Returns
 
 `boolean`
 
-不存在将返回false
+不存在将返回 false
 
 #### Defined in
 
 Util/index.d.ts:10
 
-___
+---
 
 ### isAssetLoaded
 
@@ -89,21 +89,21 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | usage:资源Guid |
+| Name        | Type     | Description     |
+| :---------- | :------- | :-------------- |
+| `InAssetId` | `string` | usage:资源 Guid |
 
 #### Returns
 
 `boolean`
 
-未加载将返回false
+未加载将返回 false
 
 #### Defined in
 
 Util/index.d.ts:17
 
-___
+---
 
 ### loadAsset
 
@@ -119,15 +119,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | usage:资源Guid |
+| Name        | Type     | Description     |
+| :---------- | :------- | :-------------- |
+| `InAssetId` | `string` | usage:资源 Guid |
 
 #### Returns
 
 `boolean`
 
-未加载成功将返回false
+未加载成功将返回 false
 
 #### Defined in
 

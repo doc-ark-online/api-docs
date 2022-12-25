@@ -6,11 +6,11 @@
 
 **`Description`**
 
-人形对象V1接口
+人形对象 V1 接口
 
 **`Author`**
 
-邓广 任雨辰
+guang.deng yuchen.ren
 
 **`Network Status`**
 
@@ -34,7 +34,7 @@ usage:双端
 
 ### Properties
 
-- [enableOutLine](Gameplay.Gameplay.HumanoidV1.md#enableoutline)
+- [enableOutline](Gameplay.Gameplay.HumanoidV1.md#enableoutline)
 - [face](Gameplay.Gameplay.HumanoidV1.md#face)
 - [hair](Gameplay.Gameplay.HumanoidV1.md#hair)
 - [postProcessObj](Gameplay.Gameplay.HumanoidV1.md#postprocessobj)
@@ -44,7 +44,7 @@ usage:双端
 
 - [enablePostProcess](Gameplay.Gameplay.HumanoidV1.md#enablepostprocess)
 - [getWholeBody](Gameplay.Gameplay.HumanoidV1.md#getwholebody)
-- [setOutLine](Gameplay.Gameplay.HumanoidV1.md#setoutline)
+- [setOutline](Gameplay.Gameplay.HumanoidV1.md#setoutline)
 - [setOutlineAdvance](Gameplay.Gameplay.HumanoidV1.md#setoutlineadvance)
 - [setWholeBody](Gameplay.Gameplay.HumanoidV1.md#setwholebody)
 
@@ -60,9 +60,9 @@ usage:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色 |
+| Name        | Type                                                  | Description |
+| :---------- | :---------------------------------------------------- | :---------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色  |
 
 #### Inherited from
 
@@ -70,13 +70,13 @@ usage:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:2591
+Gameplay/index.d.ts:2731
 
 ## Properties
 
-### enableOutLine
+### enableOutline
 
-• `Protected` **enableOutLine**: `boolean`
+• `Protected` **enableOutline**: `boolean`
 
 **`Description`**
 
@@ -84,13 +84,13 @@ Gameplay/index.d.ts:2591
 
 #### Inherited from
 
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutLine](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
+[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
 
 #### Defined in
 
-Gameplay/index.d.ts:2586
+Gameplay/index.d.ts:2726
 
-___
+---
 
 ### face
 
@@ -102,9 +102,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:4938
+Gameplay/index.d.ts:5075
 
-___
+---
 
 ### hair
 
@@ -116,9 +116,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:4934
+Gameplay/index.d.ts:5071
 
-___
+---
 
 ### postProcessObj
 
@@ -134,9 +134,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2582
+Gameplay/index.d.ts:2722
 
-___
+---
 
 ### trunk
 
@@ -148,13 +148,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:4942
+Gameplay/index.d.ts:5079
 
 ## Methods
 
 ### enablePostProcess
 
-▸ **enablePostProcess**(`usedPostProcess`, `newOutLineColor`, `newOutLineWidth`): `void`
+▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void`
 
 **`Description`**
 
@@ -166,11 +166,11 @@ Gameplay/index.d.ts:4942
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `usedPostProcess` | `boolean` | usage:是否使用后处理功能 |
-| `newOutLineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline颜色 |
-| `newOutLineWidth` | `number` | usage:Outline宽度 |
+| Name              | Type                                      | Description              |
+| :---------------- | :---------------------------------------- | :----------------------- |
+| `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
 
 #### Returns
 
@@ -182,9 +182,9 @@ Gameplay/index.d.ts:4942
 
 #### Defined in
 
-Gameplay/index.d.ts:2599
+Gameplay/index.d.ts:2739
 
-___
+---
 
 ### getWholeBody
 
@@ -202,7 +202,7 @@ ___
 
 `string`
 
-模型Guid
+模型 Guid
 
 #### Implementation of
 
@@ -210,13 +210,13 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:4958
+Gameplay/index.d.ts:5095
 
-___
+---
 
-### setOutLine
+### setOutline
 
-▸ **setOutLine**(`usedOutline`): `boolean`
+▸ **setOutline**(`usedOutline`): `boolean`
 
 **`Description`**
 
@@ -228,8 +228,8 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name          | Type      | Description            |
+| :------------ | :-------- | :--------------------- |
 | `usedOutline` | `boolean` | usage:是否使用描边功能 |
 
 #### Returns
@@ -240,13 +240,13 @@ ___
 
 #### Inherited from
 
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutLine](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
+[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
 
 #### Defined in
 
-Gameplay/index.d.ts:2610
+Gameplay/index.d.ts:2750
 
-___
+---
 
 ### setOutlineAdvance
 
@@ -262,10 +262,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newEnableOutline` | `boolean` | usage:是否开启描边功能 |
-| `newOutlineColorIndex` | `number` | usage:描边的颜色 |
+| Name                   | Type      | Description            |
+| :--------------------- | :-------- | :--------------------- |
+| `newEnableOutline`     | `boolean` | usage:是否开启描边功能 |
+| `newOutlineColorIndex` | `number`  | usage:描边的颜色       |
 
 #### Returns
 
@@ -277,9 +277,9 @@ ___
 
 #### Defined in
 
-Gameplay/index.d.ts:2617
+Gameplay/index.d.ts:2757
 
-___
+---
 
 ### setWholeBody
 
@@ -291,7 +291,7 @@ ___
 
 **`Precautions`**
 
-如果模型Guid没有预加载，则本地设置时异步的
+如果模型 Guid 没有预加载，则本地设置时异步的
 
 **`Effect`**
 
@@ -300,9 +300,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | usage:模型Guid |
+| Name   | Type      | Description                   |
+| :----- | :-------- | :---------------------------- |
+| `guid` | `string`  | usage:模型 Guid               |
 | `sync` | `boolean` | usage:true 同步; false 不同步 |
 
 #### Returns
@@ -315,4 +315,4 @@ sync = true:双端
 
 #### Defined in
 
-Gameplay/index.d.ts:4952
+Gameplay/index.d.ts:5089

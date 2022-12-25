@@ -20,34 +20,34 @@ UGC 选中的单选或者多选
 
 ### Multi
 
-• **Multi** = ``2``
+• **Multi** = `2`
 
 多选
 
 #### Defined in
 
-MobileEditor/index.d.ts:608
+MobileEditor/index.d.ts:620
 
-___
+---
 
 ### None
 
-• **None** = ``0``
+• **None** = `0`
 
 未选中
 
 #### Defined in
 
-MobileEditor/index.d.ts:604
+MobileEditor/index.d.ts:616
 
-___
+---
 
 ### Single
 
-• **Single** = ``1``
+• **Single** = `1`
 
 单选
 
 #### Defined in
 
-MobileEditor/index.d.ts:606
+MobileEditor/index.d.ts:618
