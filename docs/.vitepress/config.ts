@@ -66,7 +66,8 @@ export default defineConfig({
       // ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
     ],
     editLink: {
-      pattern: "https://github.com/Metaworld2021/api-docs/tree/main/docs/:path",
+      pattern:
+        "https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path",
       text: "到 github 上进行修改",
     },
     lastUpdatedText: "Updated Date",
