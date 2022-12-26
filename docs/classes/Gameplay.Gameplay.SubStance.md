@@ -2,13 +2,7 @@
 
 # Class: SubStance
 
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).SubStance
-
-**`Author`**
-
-yuchen.ren
-
-**`Description`**
+[Gameplay](../modules/Gameplay.Gameplay.md).SubStance
 
 二级姿态
 
@@ -18,9 +12,9 @@ usage:双端
 
 **`Example`**
 
-使用示例: 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
+在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
-```
+```ts
 this.stanceProxy = this.character.loadStance("49096", true);
 // 修改姿态的混合模式为全身
 this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;
@@ -38,9 +32,18 @@ this.stanceProxy.stop();
 
 ## Table of contents
 
-### Constructors
+### constructor
 
-- [constructor](Gameplay.Gameplay.SubStance.md#constructor)
+• **new SubStance**(`character`, `sync`)
+
+构造函数
+
+**`Parameters`**
+
+| Name        | Type                                                  | Description        |
+| :---------- | :---------------------------------------------------- | :----------------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色         |
+| `sync`      | `boolean`                                             | 是否自动同步 |
 
 ### Accessors
 
@@ -53,42 +56,15 @@ this.stanceProxy.stop();
 - [stop](Gameplay.Gameplay.SubStance.md#stop)
 - [stopInternal](Gameplay.Gameplay.SubStance.md#stopinternal)
 
-## Constructors
-
-### constructor
-
-• **new SubStance**(`character`, `sync`)
-
-**`Description`**
-
-构造函数
-
-**`Effect`**
-
-双端函数
-
-#### Parameters
-
-| Name        | Type                                                  | Description        |
-| :---------- | :---------------------------------------------------- | :----------------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色         |
-| `sync`      | `boolean`                                             | usage:是否自动同步 |
-
 #### Inherited from
 
 [Stance](Gameplay.Gameplay.Stance.md).[constructor](Gameplay.Gameplay.Stance.md#constructor)
-
-#### Defined in
-
-Gameplay/index.d.ts:1617
 
 ## Accessors
 
 ### blendMode
 
 • `get` **blendMode**(): [`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md)
-
-**`Description`**
 
 姿态的混合模式
 
@@ -101,37 +77,19 @@ Gameplay/index.d.ts:1617
 
 **`Example`**
 
-```
+```ts
 stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 ```
 
-#### Returns
-
-[`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:1677
-
 • `set` **blendMode**(`newBlendMode`): `void`
-
-**`Description`**
 
 姿态的混合模式
 
-#### Parameters
+**`Parameters`**
 
 | Name           | Type                                                               |
 | :------------- | :----------------------------------------------------------------- |
 | `newBlendMode` | [`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md) |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-Gameplay/index.d.ts:1681
 
 ## Methods
 
@@ -139,9 +97,11 @@ Gameplay/index.d.ts:1681
 
 ▸ **play**(): `boolean`
 
-**`Description`**
-
 播放这个姿态对象, 并返回执行结果
+
+**`Returns`**
+
+是否执行成功
 
 **`Effect`**
 
@@ -153,19 +113,9 @@ Gameplay/index.d.ts:1681
 返回的执行结果, 在不自动同步时多数情况下可靠;
 在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
-#### Returns
-
-`boolean`
-
-是否执行成功
-
 #### Inherited from
 
 [Stance](Gameplay.Gameplay.Stance.md).[play](Gameplay.Gameplay.Stance.md#play)
-
-#### Defined in
-
-Gameplay/index.d.ts:1626
 
 ---
 
@@ -173,27 +123,19 @@ Gameplay/index.d.ts:1626
 
 ▸ `Protected` **playInternal**(): `boolean`
 
-**`Description`**
-
 播放姿态的内部实现
+
+**`Returns`**
+
+是否执行成功
 
 **`Effect`**
 
 调用端生效
 
-#### Returns
-
-`boolean`
-
-是否执行成功
-
 #### Inherited from
 
 [Stance](Gameplay.Gameplay.Stance.md).[playInternal](Gameplay.Gameplay.Stance.md#playinternal)
-
-#### Defined in
-
-Gameplay/index.d.ts:1632
 
 ---
 
@@ -201,9 +143,11 @@ Gameplay/index.d.ts:1632
 
 ▸ **stop**(): `boolean`
 
-**`Description`**
-
 停止这个姿态对象, 并返回执行结果
+
+**`Returns`**
+
+是否执行成功
 
 **`Effect`**
 
@@ -215,19 +159,9 @@ Gameplay/index.d.ts:1632
 返回的执行结果, 在不自动同步时多数情况下可靠;
 在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
-#### Returns
-
-`boolean`
-
-是否执行成功
-
 #### Inherited from
 
 [Stance](Gameplay.Gameplay.Stance.md).[stop](Gameplay.Gameplay.Stance.md#stop)
-
-#### Defined in
-
-Gameplay/index.d.ts:1641
 
 ---
 
@@ -235,24 +169,16 @@ Gameplay/index.d.ts:1641
 
 ▸ **stopInternal**(): `boolean`
 
-**`Description`**
-
 停止姿态的内部实现
+
+**`Returns`**
+
+是否执行成功
 
 **`Effect`**
 
 调用端生效
 
-#### Returns
-
-`boolean`
-
-是否执行成功
-
 #### Inherited from
 
 [Stance](Gameplay.Gameplay.Stance.md).[stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)
-
-#### Defined in
-
-Gameplay/index.d.ts:1647

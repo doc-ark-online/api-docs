@@ -27,9 +27,9 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Table of contents
 
-### Constructors
+### constructor
 
-- [constructor](Gameplay.Gameplay.Animation.md#constructor)
+• **new Animation**()
 
 ### Accessors
 
@@ -45,10 +45,6 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 - [play](Gameplay.Gameplay.Animation.md#play)
 - [resume](Gameplay.Gameplay.Animation.md#resume)
 - [stop](Gameplay.Gameplay.Animation.md#stop)
-
-### constructor
-
-• **new Animation**()
 
 ## Accessors
 
@@ -179,13 +175,13 @@ this.Anim.play();
 
 暂停动画,不会触发 onAnimFinished 委托
 
-**`Effect`**
-
-与角色创建方式绑定
-
 **`Returns`**
 
 true 成功，false 失败
+
+**`Effect`**
+
+与角色创建方式绑定
 
 **`Example`**
 
@@ -206,13 +202,13 @@ anim.pause();
 
 从动画资源的起点播放动画
 
-**`Effect`**
-
-与角色创建方式绑定
-
 **`Returns`**
 
 true 成功，false 失败
+
+**`Effect`**
+
+与角色创建方式绑定
 
 **`Example`**
 
@@ -231,13 +227,13 @@ anim.play();
 
 从当前位置继续动画播放
 
-**`Effect`**
-
-与角色创建方式绑定
-
 **`Returns`**
 
 true 成功，false 失败
+
+**`Effect`**
+
+与角色创建方式绑定
 
 **`Example`**
 
@@ -258,13 +254,13 @@ anim.resume();
 
 停止播放,不会触发 onAnimFinished 委托
 
-**`Effect`**
-
-与角色创建方式绑定
-
 **`Returns`**
 
 true 成功，false 失败
+
+**`Effect`**
+
+与角色创建方式绑定
 
 **`Example`**
 
