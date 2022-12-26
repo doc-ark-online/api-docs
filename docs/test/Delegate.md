@@ -4,7 +4,7 @@
 
 - 删除 Author：**`Author`** zifei.wu
 
-- 删除 Instance：**`Instance`**
+- 删除 Instance：**`Instance`**，同时删除构造函数
 
 - 删除 Description：**`Description`**
 
