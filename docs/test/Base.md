@@ -1,4 +1,4 @@
-[Root](../index.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterAnimation
+[Gameplay](../modules/Gameplay.Gameplay.md) / CharacterAnimation
 
 # CharacterAnimation <Badge type="tip" text="Class" />
 
