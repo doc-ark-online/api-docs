@@ -55,9 +55,9 @@ export default defineConfig({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: "Index", link: "/test/interface" },
           { text: "Events", link: "/modules/Events.Events" },
           { text: "Extension", link: "/modules/Extension.Extension" },
+           { text: "Gameplay", link: "/Gameplay.Gameplay" },
           { text: "MobileEditor", link: "/modules/MobileEditor.MobileEditor" },
           { text: "Type", link: "/modules/Type.Type" },
           { text: "UI", link: "/modules/UI.UI" },
