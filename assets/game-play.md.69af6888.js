@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t}from"./app.f2dd5c9a.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"game-play.md"}'),r={name:"game-play.md"};function o(s,c,n,p,m,_){return t(),a("div")}const l=e(r,[["render",o]]);export{i as __pageData,l as default};

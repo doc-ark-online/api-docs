@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,b as a}from"./app.f2dd5c9a.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"test/Type.md"}'),o={name:"test/Type.md"},n=a("p",null,"准备放一个大索引，可以看到所有的类、枚举这样",-1),r=[n];function c(p,_,d,i,l,m){return s(),t("div",null,r)}const h=e(o,[["render",c]]);export{u as __pageData,h as default};
