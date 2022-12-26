@@ -21,7 +21,8 @@
     "aside",
     ".page-footer",
     ".next-and-prev-link",
-    ".table-of-contents"
+    ".table-of-contents",
+    "#defined*"
   ],
   "js_render": true
 }
