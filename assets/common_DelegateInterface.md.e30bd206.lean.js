@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.fc9c08f7.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"common/DelegateInterface.md"}'),o={name:"common/DelegateInterface.md"};function r(c,n,s,m,p,_){return a(),t("div")}const i=e(o,[["render",r]]);export{d as __pageData,i as default};
