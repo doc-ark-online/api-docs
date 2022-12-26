@@ -5,6 +5,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   title: "API",
   description: "口袋方舟 编辑器的 Api 文档",
+  base: "/api-docs/",
   themeConfig: {
     algolia: {
       appId: "8J64VVRP8K",
