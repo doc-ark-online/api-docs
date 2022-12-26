@@ -1,7 +1,7 @@
 {
   "index_name": "api-docs_prodigytech",
   "start_urls": [
-    "https://api-docs.ark.online/"
+    "https://prodigytech-doc.github.io/api-docs/"
   ],
   "rateLimit": 8,
   "maxDepth": 10,
