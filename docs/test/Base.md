@@ -11,7 +11,7 @@ extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 ## Table of contents
 
 | Properties                                                                                                                                                                                                                  |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :----- |
 | [blendMode](Base.md#substance-blendmode): [Gameplay](../modules/Gameplay.Gameplay.md).[StanceBlendMode](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身). |
 
 <!-- #### Properties  inherited from XXX（希望这里是可折叠区域）
