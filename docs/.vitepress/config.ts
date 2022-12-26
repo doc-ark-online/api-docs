@@ -8,9 +8,9 @@ export default defineConfig({
   base: "/api-docs/",
   themeConfig: {
     algolia: {
-      appId: "8J64VVRP8K",
-      apiKey: "a18e2f4cc5665f6602c5631fd868adfd",
-      indexName: "vitepress",
+      appId: "I2PHYUBLCN",
+      apiKey: "62ee775311415d26549e0e30fef5aa38",
+      indexName: "api-docs_prodigytech",
     },
     siteTitle: "API",
     nav: [
