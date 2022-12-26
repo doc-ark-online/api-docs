@@ -97,7 +97,7 @@ enum StanceBlendMode {
 }
 ```
 
-### SubStance.play/SubStance.stop
+### SubStance.play/stop
 
 播放 / 停止这个姿态对象, 并返回执行结果.
 
