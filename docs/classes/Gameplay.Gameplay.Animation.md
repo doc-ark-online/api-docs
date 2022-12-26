@@ -2,11 +2,7 @@
 
 # Class: Animation
 
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Animation
-
-**`Author`**
-
-jiamin.guo
+[Gameplay](../modules/Gameplay.Gameplay.md).Animation
 
 **`Description`**
 
@@ -14,7 +10,7 @@ jiamin.guo
 
 **`Network Status`**
 
-usage:客户端
+客户端
 
 **`Precautions`**
 
@@ -22,7 +18,7 @@ usage:客户端
 
 **`Example`**
 
-使用示例:创建方式
+创建方式
 
 ```
 Gameplay.asyncGetCurrentPlayer().then((player) => {
@@ -84,10 +80,6 @@ if (anim.isPlaying) {
 
 `boolean`
 
-#### Defined in
-
-Gameplay/index.d.ts:714
-
 ---
 
 ### length
@@ -111,10 +103,6 @@ console.log(anim.length)
 
 `number`
 
-#### Defined in
-
-Gameplay/index.d.ts:653
-
 ---
 
 ### loop
@@ -137,10 +125,6 @@ console.log(anim.loop)
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:663
 
 • `set` **loop**(`loopCount`): `void`
 
@@ -167,10 +151,6 @@ anim.loop = 23333;
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:673
-
 ---
 
 ### onAnimFinished
@@ -195,10 +175,6 @@ anim.onAnimFinished.add(()=>{
 
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
-#### Defined in
-
-Gameplay/index.d.ts:725
-
 ---
 
 ### rate
@@ -221,10 +197,6 @@ console.log(anim.rate);
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:701
 
 • `set` **rate**(`animRate`): `void`
 
@@ -261,10 +233,6 @@ this.Anim.play();
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:691
-
 ## Methods
 
 ### pause
@@ -296,10 +264,6 @@ anim.pause();
 
 true 成功，false 失败
 
-#### Defined in
-
-Gameplay/index.d.ts:751
-
 ---
 
 ### play
@@ -328,10 +292,6 @@ anim.play();
 `boolean`
 
 true 成功，false 失败
-
-#### Defined in
-
-Gameplay/index.d.ts:737
 
 ---
 
@@ -363,10 +323,6 @@ anim.resume();
 `boolean`
 
 true 成功，false 失败
-
-#### Defined in
-
-Gameplay/index.d.ts:765
 
 ---
 
