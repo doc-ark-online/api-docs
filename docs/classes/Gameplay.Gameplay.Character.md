@@ -2,25 +2,23 @@
 
 # Class: Character
 
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Character
+#### extend [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)
 
-**`Author`**
+<br>**`简介`**
+* 是人形角色的控制类
+* 角色是具有一套行为能力的模型。游戏世界中，角色分为非玩家角色和玩家角色。
+* 【玩家角色】：由玩家控制的角色，大部分的玩家角色都是游戏剧情的关键或是主角。
+* 【非玩家角色】：非玩家角色也被称为NPC，指的是在游戏中不受真人玩家控制的游戏角色。NPC一般由计算机人工智能控制，拥有一套行为模式的角色。NPC通常分为剧情NPC，战斗NPC，服务NPC以及兼具多种功能的NPC等。
 
-songcheng.hao
 
-**`Description`**
+<br>**`如何获取`**
+* Character可以通过[Player](../modules/Player.md)对象获取`player.character`
+* 不可通过new创建
 
-角色类承载与技能相关功能
 
-**`Network Status`**
-
-usage:双端
-
-## Hierarchy
-
-- [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)
-
-  ↳ **`Character`**
+<br>**`注意事项`**
+* 频繁更改location、rotation等可能会导致性能问题
+* 部分API是仅单端可调用，部分是自动同步双端，请参考具体的函数说明
 
 ## Table of contents
 
@@ -1222,28 +1220,19 @@ Gameplay/index.d.ts:1070
 ---
 
 ### characterName
-
-• `get` **characterName**(): `string`
+```
+/*
+ * @desc：   函数注释
+ * @return:  函数返回值介绍
+ */
+get characterName(): string
+```
 
 **`Description`**
 
-角色名称
+角色名称, 是从平台获取，PC端获取时为空
+会自动显示在角色头顶 UI 上
 
-**`Precautions`**
-
-会显示在角色头顶 UI 上
-
-#### Returns
-
-`string`
-
-#### Inherited from
-
-CharacterBase.characterName
-
-#### Defined in
-
-Gameplay/index.d.ts:867
 
 • `set` **characterName**(`inCharacterName`): `void`
 
