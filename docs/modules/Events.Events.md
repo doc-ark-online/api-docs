@@ -2,7 +2,7 @@
 
 # Namespace: Events
 
-[Events](Events.md).Events
+[Events](Events.md).Events, hi
 
 ## Table of contents
 
