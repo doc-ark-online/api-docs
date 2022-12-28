@@ -39,15 +39,7 @@ export default defineConfig({
           { text: "给用户看的demo", link: "/test/Base" },
           { text: "可用的写法", link: "/test/Class" },
           { text: "可自动化的点", link: "/test/Delegate" },
-          {
-            text: "自动化后的demo",
-            link: "/classes/Service.Service.MessageChannelService",
-          },
-          { text: "索引的demo", link: "/test/Type" },
-          { text: "variable的demo", link: "/test/Variable" },
-          { text: "enums的demo", link: "/test/enums" },
-          { text: "function的demo", link: "/test/function" },
-          { text: "一个空白文档", link: "/test/interface" },
+          { text: "自动化后的demo", link: "/test/interface" },
         ],
       },
       {
