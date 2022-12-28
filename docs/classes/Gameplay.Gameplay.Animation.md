@@ -23,10 +23,6 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Table of contents
 
-### constructor
-
-• **new Animation**()
-
 | Accessors                                                                                                                                                                                                                  |
 | :----- |
 | `get` **[isPlaying](Gameplay.Gameplay.Animation.md#isplaying)**(): `boolean` <br> 是否正在播放 |
@@ -44,6 +40,10 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 | **[play](Gameplay.Gameplay.Animation.md#play)**(): `boolean` <br> 从动画资源的起点播放动画 |
 | **[resume](Gameplay.Gameplay.Animation.md#resume)**(): `boolean` <br> 从当前位置继续动画播放 |
 | **[stop](Gameplay.Gameplay.Animation.md#stop)**(): `boolean` <br> 停止播放,不会触发 onAnimFinished 委托 |
+
+### constructor
+
+• **new Animation**()
 
 
 ## Accessors
