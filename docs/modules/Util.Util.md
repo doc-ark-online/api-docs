@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](Util.md) / Util
+[Util](Util.md) / Util
 
-# Namespace: Util
-
-[Util](Util.md).Util
+# Util <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
