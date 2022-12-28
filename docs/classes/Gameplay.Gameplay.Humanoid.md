@@ -2,19 +2,10 @@
 
 # Class: Humanoid
 
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Humanoid
+<br>**`简介`**
 
-**`Author`**
-
-chenghao.song,hongbing.deng
-
-**`Description`**
-
-人形对象 V2
-
-**`Network Status`**
-
-usage:双端
+* Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通常被用户自己实现AI逻辑操作
+* 可以将对应的逻辑对象拖入到场景中或调用spawnGameObject接口进行实例化
 
 ## Hierarchy
 
