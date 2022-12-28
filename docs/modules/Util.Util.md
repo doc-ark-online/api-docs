@@ -4,8 +4,6 @@
 
 ## Table of contents
 
-### Namespaces
-
 - [AssetUtil](Util.Util.AssetUtil.md)
 - [InputUtil](Util.Util.InputUtil.md)
 - [LocaleUtil](Util.Util.LocaleUtil.md)
