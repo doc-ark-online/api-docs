@@ -51,13 +51,13 @@ export default defineConfig({
         ],
       },
       {
-        text: "Namespace",
+        text: "Index",
         collapsible: true,
         collapsed: true,
         items: [
           { text: "Events", link: "/modules/Events.Events" },
           { text: "Extension", link: "/modules/Extension.Extension" },
-           { text: "Gameplay", link: "/Gameplay.Gameplay" },
+           { text: "Gameplay", link: "/modules/Gameplay.Gameplay" },
           { text: "MobileEditor", link: "/modules/MobileEditor.MobileEditor" },
           { text: "Type", link: "/modules/Type.Type" },
           { text: "UI", link: "/modules/UI.UI" },
