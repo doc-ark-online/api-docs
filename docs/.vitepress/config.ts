@@ -44,8 +44,8 @@ export default defineConfig({
       },
       {
         text: "Index",
-        collapsible: true,
-        collapsed: true,
+        collapsible: false,
+        collapsed: false,
         items: [
           { text: "Events", link: "/modules/Events.Events" },
           { text: "Extension", link: "/modules/Extension.Extension" },
