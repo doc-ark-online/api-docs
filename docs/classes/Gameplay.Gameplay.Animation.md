@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Animation
 
-# Class: Animation <Badge type="tip" text="Class" />
+# Animation <Badge type="tip" text="Class" />
 
 **`简介`**
 
