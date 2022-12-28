@@ -2,15 +2,15 @@
 
 # Animation <Badge type="tip" text="Class" />
 
-**`简介`**
+**`Description`**
 
 动画类
 
-**`注意事项`**
+**`Precautions`**
 
 请不要直接使用 new 创建
 
-**`案例`**
+**`Example`**
 
 创建方式
 
