@@ -1,16 +1,12 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / Animation
+[Gameplay](../modules/Gameplay.Gameplay.md) / Animation
 
-# Class: Animation
+# Class: Animation <Badge type="tip" text="Class" />
 
-[Gameplay](../modules/Gameplay.Gameplay.md).Animation
+**`简介`**
 
 动画类
 
-**`Network Status`**
-
-客户端
-
-**`Precautions`**
+**`注意事项`**
 
 请不要直接使用 new 创建
 
@@ -31,20 +27,25 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 • **new Animation**()
 
-### Accessors
+| Accessors                                                                                                                                                                                                                  |
+| :----- |
+| `get` **[isPlaying](Gameplay.Gameplay.Animation.md#isplaying)**(): `boolean` <br> 是否正在播放 |
+| `get` **[length](Gameplay.Gameplay.Animation.md#length)**(): `number` <br> 动画长度,单位为秒,只读 |
+| `get` **[loop](Gameplay.Gameplay.Animation.md#loop)**(): `number` <br> Auto 模式表示循环播放次数，Custom 模式表示是否循环 非 1:是，1:否 |
+| `set` **[loop](Gameplay.Gameplay.Animation.md#loop)**(`loopCount`): `void` <br> 循环播放次数,不同步，Custom 模式支持取消循环 |
+| `get` **[onAnimFinished](Gameplay.Gameplay.Animation.md#onanimfinished)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发) |
+| `get` **[rate](Gameplay.Gameplay.Animation.md#rate)**(): `number` <br> 获取动画播放速率 |
+| `set` **[rate](Gameplay.Gameplay.Animation.md#rate)**(`number`): `void` <br> 设置播放速率(动画切换时有融合时间,动画太短，当 rate=1 时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
+负表示逆向播放, rate 为 1 表示原始速率,默认值为 1。设置该值不会改变播放的起点. |
 
-- [isPlaying](Gameplay.Gameplay.Animation.md#isplaying)
-- [length](Gameplay.Gameplay.Animation.md#length)
-- [loop](Gameplay.Gameplay.Animation.md#loop)
-- [onAnimFinished](Gameplay.Gameplay.Animation.md#onanimfinished)
-- [rate](Gameplay.Gameplay.Animation.md#rate)
 
-### Methods
+| Methods                                                                                                                                                                                                                  |
+| :----- |
+| **[pause](Gameplay.Gameplay.Animation.md#pause)**(): `boolean` <br> 暂停动画,不会触发 onAnimFinished 委托 |
+| **[play](Gameplay.Gameplay.Animation.md#play)**(): `boolean` <br> 从动画资源的起点播放动画 |
+| **[resume](Gameplay.Gameplay.Animation.md#resume)**(): `boolean` <br> 从当前位置继续动画播放 |
+| **[stop](Gameplay.Gameplay.Animation.md#stop)**(): `boolean` <br> 停止播放,不会触发 onAnimFinished 委托 |
 
-- [pause](Gameplay.Gameplay.Animation.md#pause)
-- [play](Gameplay.Gameplay.Animation.md#play)
-- [resume](Gameplay.Gameplay.Animation.md#resume)
-- [stop](Gameplay.Gameplay.Animation.md#stop)
 
 ## Accessors
 
