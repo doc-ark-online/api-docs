@@ -145,7 +145,7 @@
 
 #### extend [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[addMoveInput](Gameplay.Gameplay.CharacterBase.md#addmoveinput)
 
-```
+```ts
 /**
  * @param direction usage:输入的方向
  */
