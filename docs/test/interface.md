@@ -1,61 +1,177 @@
-[test](../README.md) / IHumanoidV1Part
+[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / Character
 
-# IHumanoidV1Part
+# Class: Character
 
-**`Description`**
+#### extend [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md)
 
-人形对象 V1 部位
+<br>**`简介`**
+* 是人形角色的控制类
+* 角色是具有一套行为能力的模型。游戏世界中，角色分为非玩家角色和玩家角色。
+* 【玩家角色】：由玩家控制的角色，大部分的玩家角色都是游戏剧情的关键或是主角。
+* 【非玩家角色】：非玩家角色也被称为NPC，指的是在游戏中不受真人玩家控制的游戏角色。NPC一般由计算机人工智能控制，拥有一套行为模式的角色。NPC通常分为剧情NPC，战斗NPC，服务NPC以及兼具多种功能的NPC等。
+* Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem，是由玩家控制的角色，通常被内置的输入系统所操作
+* 你可以在场景的Player面板中修改Character的初始化配置
 
-## Implemented by
 
-- [`HumanoidV1`](../classes/Gameplay.Gameplay.HumanoidV1.md)
+<br>**`如何获取`**
+* Character可以通过[Player](../modules/Player.md)对象获取`player.character`
+* 通过getAllPlayers可以获取到
+* Character无法被用户主动实例化，根据当前Player的数量由世界自动生成，不可通过new创建
 
-## Methods
 
-### getWholeBody
+<br>**`注意事项`**
+* 频繁更改location、rotation等可能会导致性能问题
+* 部分API是仅单端可调用，部分是自动同步双端，请参考具体的函数说明
+* 从019版本开始，Character的移动逻辑会受到客户端玩家的控制，尽量不要在服务器上去设置玩家角色的位置、角度，这导致会多一次RPC的调用，并且多出一次网络帧的延迟
+* 后续版本会提供更多可选择的移动逻辑，你可以根据不同游戏的特性来选择这些
 
-▸ **getWholeBody**(): `string`
 
-**`Description`**
+## Table of contents
 
-获取全身模型
+### Constructors
 
-**`Effect`**
+- [constructor](Gameplay.Gameplay.Character.md#constructor)
 
-双端
+### Properties
 
-#### Returns
+- [player](Gameplay.Gameplay.Character.md#player)
 
-`string`
+### Accessors
 
-模型 Guid
+- [airControl](Gameplay.Gameplay.Character.md#aircontrol)
+- [animationStance](Gameplay.Gameplay.Character.md#animationstance)
+- [appearance](Gameplay.Gameplay.Character.md#appearance)
+
+### Methods
+
+- [addMoveInput](Gameplay.Gameplay.Character.md#addmoveinput)
+- [attach](Gameplay.Gameplay.Character.md#attach)
+
+## Constructors
+
+### constructor
+
+• **new Character**()
+
+#### extend [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[constructor](Gameplay.Gameplay.CharacterBase.md#constructor)
+
+## Properties
+
+### player
+
+#### extend [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[player](Gameplay.Gameplay.CharacterBase.md#player)
+
+• **player**: [`Player`](Gameplay.Gameplay.Player.md)
+
+玩家对象
+
+## Accessors
+
+### airControl
+
+• `get` **airControl**(): `number`
+
+#### extend CharacterBase.airControl
+
+角色在空中时, 控制水平方向移动的灵活度
+
+::: warning Precautions
+范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
+:::
+
+• `set` **airControl**(`InAirControl` : `number`): `void`
+
+#### extend CharacterBase.airControl
+
+角色在空中时, 控制水平方向移动的灵活度
+
+::: warning Precautions
+范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
+:::
+
+### animationStance
+
+• `get` **animationStance**(): `string`
+
+#### extend CharacterBase.animationStance
+
+动画姿态
+
+::: warning Precautions
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+:::
+
+• `set` **animationStance**(`StanceGuid` : `string`): `void`
+
+#### extend CharacterBase.animationStance
+
+动画姿态
+
+::: warning Precautions
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+:::
 
 ---
 
-### setWholeBody
+### appearance
 
-▸ **setWholeBody**(`guid`, `sync`): `void`
+• `get` **appearance**(): [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)
 
-**`Description`**
+#### extend CharacterBase.appearance
 
-设置全身模型
+当前外观修改对象
 
-**`Precautions`**
+---
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+### baseShadowLocationOffset
 
-**`Effect`**
+• `get` **baseShadowLocationOffset**(): [`Vector2`](Type.Type.Vector2.md)
 
-sync = false:客户端;
-sync = true:双端
+#### extend CharacterBase.baseShadowLocationOffset
 
-#### Parameters
+模拟阴影相对于角色脚底中心的位置偏移
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+• `set` **baseShadowLocationOffset**(`InLocationOffset` : [`Vector2`](Type.Type.Vector2.md)): `void`
 
-#### Returns
+#### extend CharacterBase.baseShadowLocationOffset
 
-`void`
+模拟阴影相对于角色脚底中心的位置偏移
+
+## Methods
+
+### addMoveInput
+
+▸ **addMoveInput**(`direction` : [`Vector`](Type.Type.Vector.md)): `void`
+
+#### extend [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[addMoveInput](Gameplay.Gameplay.CharacterBase.md#addmoveinput)
+
+```
+/**
+ * @param direction usage:输入的方向
+ */
+addMoveInput(direction: Type.Vector): void;
+```
+
+沿着给定的方向向量添加移动输入
+
+::: warning Precautions
+效果受 movementDirection 属性影响
+:::
+
+---
+
+### attach
+
+▸ **attach**(`gameObject` : `GameObject`, `slotName` : [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void`
+
+#### extend [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[attach](Gameplay.Gameplay.CharacterBase.md#attach)
+
+```ts
+/**
+ * @param gameObject usage:物体
+ * @param slotName usage:插槽类型
+ */
+attach(gameObject: Core.GameObject, slotName: SlotType): void;
+```
+
+将物体附着到人物角色的指定插槽
