@@ -48,7 +48,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
-### isPlaying
+### isPlaying <Badge type="info" text="调用端" />
 
 • `get` **isPlaying**(): `boolean`
 
@@ -115,7 +115,7 @@ anim.loop = 23333;
 
 ---
 
-### onAnimFinished
+### onAnimFinished 
 
 • `get` **onAnimFinished**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
