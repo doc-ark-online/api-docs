@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.f26a2801.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"common/MulticastDelegate.md"}'),o={name:"common/MulticastDelegate.md"};function c(s,r,n,i,l,m){return a(),t("div")}const d=e(o,[["render",c]]);export{_ as __pageData,d as default};

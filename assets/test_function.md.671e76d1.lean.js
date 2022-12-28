@@ -1,1 +1,0 @@
-import{_ as s,c as t,o as a,a as e}from"./app.77d63f8a.js";const C=JSON.parse('{"title":"asyncSetPlayerData","description":"","frontmatter":{},"headers":[],"relativePath":"test/function.md"}'),n={name:"test/function.md"},o=e("",15),l=[o];function p(c,r,d,y,i,D){return a(),t("div",null,l)}const F=s(n,[["render",p]]);export{C as __pageData,F as default};
