@@ -85,7 +85,7 @@ console.log(anim.length)
 
 ---
 
-### loop <Badge type="info" text="client" />
+### loop
 
 • `get` **loop**(): `number`
 
