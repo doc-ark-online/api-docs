@@ -48,7 +48,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
-### isPlaying <Badge type="tip" text="调用端" />
+### isPlaying <Badge type="info" text="C&S" />
 
 • `get` **isPlaying**(): `boolean`
 
