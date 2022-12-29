@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Extension](../modules/Extension.md) / [Extension](../modules/Extension.Extension.md) / ObjPool
+[Extension](../modules/Extension.Extension.md) / ObjPool
 
-# Class: ObjPool<T\>
-
-[Extension](../modules/Extension.md).[Extension](../modules/Extension.Extension.md).ObjPool
-
-**`Author`**
-
-huipeng.jia
+# ObjPool<T\> <Badge type="tip" text="Class" />
 
 **`Description`**
 
 对象池
-
-**`Network Status`**
-
-usage: 双端
 
 ## Type parameters
 
@@ -24,21 +14,11 @@ usage: 双端
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Extension.Extension.ObjPool.md#constructor)
-
-### Methods
-
-- [clear](Extension.Extension.ObjPool.md#clear)
-- [despawn](Extension.Extension.ObjPool.md#despawn)
-- [spawn](Extension.Extension.ObjPool.md#spawn)
-
-## Constructors
-
-### constructor
-
-• **new ObjPool**<`T`\>(`createObj`, `onReset`, `onDestroy`, `initNum?`)
+| Methods                                                                              |
+| :----------------------------------------------------------------------------------- |
+| **[clear](Extension.Extension.ObjPool.md#clear)**(): `void` <br> 清除池中对象        |
+| **[despawn](Extension.Extension.ObjPool.md#despawn)**(`T`): `void` <br> 归还一个对象 |
+| **[spawn](Extension.Extension.ObjPool.md#spawn)**(): `T` <br> 生成一个对象           |
 
 **`Description`**
 
@@ -56,16 +36,12 @@ usage: 双端
 
 #### Parameters
 
-| Name        | Type                   | Description                        |
-| :---------- | :--------------------- | :--------------------------------- |
-| `createObj` | () => `T`              | usage: 创建新对象的回调            |
-| `onReset`   | (`obj`: `T`) => `void` | usage: 重置对象的回调              |
-| `onDestroy` | (`obj`: `T`) => `void` | usage: 销毁对象的回调              |
-| `initNum?`  | `number`               | usage: 默认缓存对象数量 default: 2 |
-
-#### Defined in
-
-Extension/index.d.ts:55
+| Name        | Type                   | Description                 |
+| :---------- | :--------------------- | :-------------------------- |
+| `createObj` | () => `T`              | 创建新对象的回调            |
+| `onReset`   | (`obj`: `T`) => `void` | 重置对象的回调              |
+| `onDestroy` | (`obj`: `T`) => `void` | 销毁对象的回调              |
+| `initNum?`  | `number`               | 默认缓存对象数量 default: 2 |
 
 ## Methods
 
@@ -85,10 +61,6 @@ Extension/index.d.ts:55
 
 `void`
 
-#### Defined in
-
-Extension/index.d.ts:77
-
 ---
 
 ### despawn
@@ -107,15 +79,11 @@ Extension/index.d.ts:77
 
 | Name  | Type | Description |
 | :---- | :--- | :---------- |
-| `obj` | `T`  | usage: 对象 |
+| `obj` | `T`  | 对象        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Extension/index.d.ts:72
 
 ---
 
@@ -136,7 +104,3 @@ Extension/index.d.ts:72
 `T`
 
 对象
-
-#### Defined in
-
-Extension/index.d.ts:66

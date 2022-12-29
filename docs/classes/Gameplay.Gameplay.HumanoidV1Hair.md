@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Hair
+[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Hair
 
-# Class: HumanoidV1Hair
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HumanoidV1Hair
+# HumanoidV1Hair <Badge type="tip" text="Class" />
 
 **`Description`**
 
 人形对象 V1 头发接口
-
-**`Author`**
-
-guang.deng yuchen.ren
-
-**`Network Status`**
-
-usage:双端
 
 ## Implements
 
@@ -22,20 +12,10 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Gameplay.Gameplay.HumanoidV1Hair.md#constructor)
-
-### Methods
-
-- [getMesh](Gameplay.Gameplay.HumanoidV1Hair.md#getmesh)
-- [setMesh](Gameplay.Gameplay.HumanoidV1Hair.md#setmesh)
-
-## Constructors
-
-### constructor
-
-• **new HumanoidV1Hair**()
+| Methods                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------- |
+| **[getMesh](Gameplay.Gameplay.HumanoidV1Hair.md#getmesh)**(): `string` <br> 获取头发模型                  |
+| **[setMesh](Gameplay.Gameplay.HumanoidV1Hair.md#setmesh)**(`string`, `boolean`): `void` <br> 设置头发模型 |
 
 ## Methods
 
@@ -61,10 +41,6 @@ usage:双端
 
 [IPart](../interfaces/Gameplay.Gameplay.IPart.md).[getMesh](../interfaces/Gameplay.Gameplay.IPart.md#getmesh)
 
-#### Defined in
-
-Gameplay/index.d.ts:5145
-
 ---
 
 ### setMesh
@@ -86,10 +62,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -98,7 +74,3 @@ sync = true:双端
 #### Implementation of
 
 [IPart](../interfaces/Gameplay.Gameplay.IPart.md).[setMesh](../interfaces/Gameplay.Gameplay.IPart.md#setmesh)
-
-#### Defined in
-
-Gameplay/index.d.ts:5139

@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / DirectionalLight
+[Gameplay](../modules/Gameplay.Gameplay.md) / DirectionalLight
 
-# Class: DirectionalLight
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).DirectionalLight
-
-**`Author`**
-
-baoqiang.han
+# DirectionalLight <Badge type="tip" text="Class" />
 
 **`Description`**
 
 平行光
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,113 +14,95 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[baseShadowEnable](Gameplay.Gameplay.DirectionalLight.md#baseshadowenable)**(): `boolean` <br> 启用/禁用所有角色的模拟阴影                 |
+| **[castShadowsEnable](Gameplay.Gameplay.DirectionalLight.md#castshadowsenable)**(): `boolean` <br> 获取是否开启阴影                          |
+| **[forwardVector](Gameplay.Gameplay.DirectionalLight.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量      |
+| **[guid](Gameplay.Gameplay.DirectionalLight.md#guid)**(): `string` <br> 获取对象的 guid（唯一标识一个对象的字符串）。                        |
+| **[intensity](Gameplay.Gameplay.DirectionalLight.md#intensity)**(): `number` <br> 获取光照强度                                               |
+| **[lightColor](Gameplay.Gameplay.DirectionalLight.md#lightcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取光照颜色            |
+| **[lockStatus](Gameplay.Gameplay.DirectionalLight.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定                                        |
+| **[name](Gameplay.Gameplay.DirectionalLight.md#name)**(): `string` <br> 返回当前物体名称                                                     |
+| **[netStatus](Gameplay.Gameplay.DirectionalLight.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态 |
+| **[parent](Gameplay.Gameplay.DirectionalLight.md#parent)**(): `GameObject` <br> 获取当前父物体                                               |
+| **[pitchAngle](Gameplay.Gameplay.DirectionalLight.md#pitchangle)**(): `number` <br> 获取俯仰角度                                             |
+| **[relativeLocation](Gameplay.Gameplay.DirectionalLight.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置          |
+| **[relativeRotation](Gameplay.Gameplay.DirectionalLight.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转      |
+| **[relativeScale](Gameplay.Gameplay.DirectionalLight.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                |
+| **[rightVector](Gameplay.Gameplay.DirectionalLight.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量          |
+| **[staticStatus](Gameplay.Gameplay.DirectionalLight.md#staticstatus)**(): `boolean` <br> 获取对象是否静态                                    |
+| **[tag](Gameplay.Gameplay.DirectionalLight.md#tag)**(): `string` <br> 获取当前物体的 Tag                                                     |
+| **[temperature](Gameplay.Gameplay.DirectionalLight.md#temperature)**(): `number` <br> 获取色温                                               |
+| **[temperatureEnable](Gameplay.Gameplay.DirectionalLight.md#temperatureenable)**(): `boolean` <br> 获取是否开启色温                          |
+| **[transform](Gameplay.Gameplay.DirectionalLight.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 transform        |
+| **[upVector](Gameplay.Gameplay.DirectionalLight.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                |
+| **[useUpdate](Gameplay.Gameplay.DirectionalLight.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新                                      |
+| **[visible](Gameplay.Gameplay.DirectionalLight.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()     |
+| **[worldLocation](Gameplay.Gameplay.DirectionalLight.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标          |
+| **[worldRotation](Gameplay.Gameplay.DirectionalLight.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转      |
+| **[worldScale](Gameplay.Gameplay.DirectionalLight.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                |
+| **[yawAngle](Gameplay.Gameplay.DirectionalLight.md#yawangle)**(): `number` <br> 获取朝向角度                                                 |
 
-- [constructor](Gameplay.Gameplay.DirectionalLight.md#constructor)
-
-### Accessors
-
-- [baseShadowEnable](Gameplay.Gameplay.DirectionalLight.md#baseshadowenable)
-- [castShadowsEnable](Gameplay.Gameplay.DirectionalLight.md#castshadowsenable)
-- [forwardVector](Gameplay.Gameplay.DirectionalLight.md#forwardvector)
-- [guid](Gameplay.Gameplay.DirectionalLight.md#guid)
-- [intensity](Gameplay.Gameplay.DirectionalLight.md#intensity)
-- [lightColor](Gameplay.Gameplay.DirectionalLight.md#lightcolor)
-- [lockStatus](Gameplay.Gameplay.DirectionalLight.md#lockstatus)
-- [name](Gameplay.Gameplay.DirectionalLight.md#name)
-- [netStatus](Gameplay.Gameplay.DirectionalLight.md#netstatus)
-- [parent](Gameplay.Gameplay.DirectionalLight.md#parent)
-- [pitchAngle](Gameplay.Gameplay.DirectionalLight.md#pitchangle)
-- [relativeLocation](Gameplay.Gameplay.DirectionalLight.md#relativelocation)
-- [relativeRotation](Gameplay.Gameplay.DirectionalLight.md#relativerotation)
-- [relativeScale](Gameplay.Gameplay.DirectionalLight.md#relativescale)
-- [rightVector](Gameplay.Gameplay.DirectionalLight.md#rightvector)
-- [staticStatus](Gameplay.Gameplay.DirectionalLight.md#staticstatus)
-- [tag](Gameplay.Gameplay.DirectionalLight.md#tag)
-- [temperature](Gameplay.Gameplay.DirectionalLight.md#temperature)
-- [temperatureEnable](Gameplay.Gameplay.DirectionalLight.md#temperatureenable)
-- [transform](Gameplay.Gameplay.DirectionalLight.md#transform)
-- [upVector](Gameplay.Gameplay.DirectionalLight.md#upvector)
-- [useUpdate](Gameplay.Gameplay.DirectionalLight.md#useupdate)
-- [visible](Gameplay.Gameplay.DirectionalLight.md#visible)
-- [worldLocation](Gameplay.Gameplay.DirectionalLight.md#worldlocation)
-- [worldRotation](Gameplay.Gameplay.DirectionalLight.md#worldrotation)
-- [worldScale](Gameplay.Gameplay.DirectionalLight.md#worldscale)
-- [yawAngle](Gameplay.Gameplay.DirectionalLight.md#yawangle)
-
-### Methods
-
-- [addDestroyCallback](Gameplay.Gameplay.DirectionalLight.md#adddestroycallback)
-- [asyncGetScriptByName](Gameplay.Gameplay.DirectionalLight.md#asyncgetscriptbyname)
-- [attachToGameObject](Gameplay.Gameplay.DirectionalLight.md#attachtogameobject)
-- [clone](Gameplay.Gameplay.DirectionalLight.md#clone)
-- [deleteDestroyCallback](Gameplay.Gameplay.DirectionalLight.md#deletedestroycallback)
-- [destroy](Gameplay.Gameplay.DirectionalLight.md#destroy)
-- [detachFromGameObject](Gameplay.Gameplay.DirectionalLight.md#detachfromgameobject)
-- [getBoundingBoxSize](Gameplay.Gameplay.DirectionalLight.md#getboundingboxsize)
-- [getBounds](Gameplay.Gameplay.DirectionalLight.md#getbounds)
-- [getChildByGuid](Gameplay.Gameplay.DirectionalLight.md#getchildbyguid)
-- [getChildByName](Gameplay.Gameplay.DirectionalLight.md#getchildbyname)
-- [getChildren](Gameplay.Gameplay.DirectionalLight.md#getchildren)
-- [getChildrenBoxCenter](Gameplay.Gameplay.DirectionalLight.md#getchildrenboxcenter)
-- [getCollision](Gameplay.Gameplay.DirectionalLight.md#getcollision)
-- [getForwardVector](Gameplay.Gameplay.DirectionalLight.md#getforwardvector)
-- [getRelativeLocation](Gameplay.Gameplay.DirectionalLight.md#getrelativelocation)
-- [getRelativeRotation](Gameplay.Gameplay.DirectionalLight.md#getrelativerotation)
-- [getRelativeScale](Gameplay.Gameplay.DirectionalLight.md#getrelativescale)
-- [getRightVector](Gameplay.Gameplay.DirectionalLight.md#getrightvector)
-- [getScriptByGuid](Gameplay.Gameplay.DirectionalLight.md#getscriptbyguid)
-- [getScriptByName](Gameplay.Gameplay.DirectionalLight.md#getscriptbyname)
-- [getScripts](Gameplay.Gameplay.DirectionalLight.md#getscripts)
-- [getSourceAssetGuid](Gameplay.Gameplay.DirectionalLight.md#getsourceassetguid)
-- [getTransform](Gameplay.Gameplay.DirectionalLight.md#gettransform)
-- [getUpVector](Gameplay.Gameplay.DirectionalLight.md#getupvector)
-- [getVisibility](Gameplay.Gameplay.DirectionalLight.md#getvisibility)
-- [getWorldLocation](Gameplay.Gameplay.DirectionalLight.md#getworldlocation)
-- [getWorldRotation](Gameplay.Gameplay.DirectionalLight.md#getworldrotation)
-- [getWorldScale](Gameplay.Gameplay.DirectionalLight.md#getworldscale)
-- [isRunningClient](Gameplay.Gameplay.DirectionalLight.md#isrunningclient)
-- [onDestroy](Gameplay.Gameplay.DirectionalLight.md#ondestroy)
-- [onStart](Gameplay.Gameplay.DirectionalLight.md#onstart)
-- [onUpdate](Gameplay.Gameplay.DirectionalLight.md#onupdate)
-- [ready](Gameplay.Gameplay.DirectionalLight.md#ready)
-- [setCollision](Gameplay.Gameplay.DirectionalLight.md#setcollision)
-- [setLocationAndRotation](Gameplay.Gameplay.DirectionalLight.md#setlocationandrotation)
-- [setRelativeLocation](Gameplay.Gameplay.DirectionalLight.md#setrelativelocation)
-- [setRelativeRotation](Gameplay.Gameplay.DirectionalLight.md#setrelativerotation)
-- [setRelativeScale](Gameplay.Gameplay.DirectionalLight.md#setrelativescale)
-- [setTransform](Gameplay.Gameplay.DirectionalLight.md#settransform)
-- [setVisibility](Gameplay.Gameplay.DirectionalLight.md#setvisibility)
-- [setWorldLocation](Gameplay.Gameplay.DirectionalLight.md#setworldlocation)
-- [setWorldRotation](Gameplay.Gameplay.DirectionalLight.md#setworldrotation)
-- [setWorldScale](Gameplay.Gameplay.DirectionalLight.md#setworldscale)
-- [asyncFind](Gameplay.Gameplay.DirectionalLight.md#asyncfind)
-- [asyncSpawnGameObject](Gameplay.Gameplay.DirectionalLight.md#asyncspawngameobject)
-- [find](Gameplay.Gameplay.DirectionalLight.md#find)
-- [findGameObjectByTag](Gameplay.Gameplay.DirectionalLight.md#findgameobjectbytag)
-- [getGameObjectByName](Gameplay.Gameplay.DirectionalLight.md#getgameobjectbyname)
-- [getGameObjectsByName](Gameplay.Gameplay.DirectionalLight.md#getgameobjectsbyname)
-- [spawnGameObject](Gameplay.Gameplay.DirectionalLight.md#spawngameobject)
-
-## Constructors
-
-### constructor
-
-• **new DirectionalLight**()
-
-#### Inherited from
-
-Core.GameObject.constructor
+| Methods                                                                                                                                                                                                                        |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addDestroyCallback](Gameplay.Gameplay.DirectionalLight.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体 Destroy 事件回调                                                                   |
+| **[asyncGetScriptByName](Gameplay.Gameplay.DirectionalLight.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系                                                  |
+| **[attachToGameObject](Gameplay.Gameplay.DirectionalLight.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上                                                                                           |
+| **[clone](Gameplay.Gameplay.DirectionalLight.md#clone)**(`boolean`): `GameObject` <br> 复制对象                                                                                                                                |
+| **[deleteDestroyCallback](Gameplay.Gameplay.DirectionalLight.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体 Destroy 事件回调                                                             |
+| **[destroy](Gameplay.Gameplay.DirectionalLight.md#destroy)**(): `void` <br> 删除对象                                                                                                                                           |
+| **[detachFromGameObject](Gameplay.Gameplay.DirectionalLight.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离                                                                                             |
+| **[getBoundingBoxSize](Gameplay.Gameplay.DirectionalLight.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小                             |
+| **[getBounds](Gameplay.Gameplay.DirectionalLight.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取 GameObject 边界                                     |
+| **[getChildByGuid](Gameplay.Gameplay.DirectionalLight.md#getchildbyguid)**(`string`): `GameObject` <br> 根据 Guid 查找子物体                                                                                                   |
+| **[getChildByName](Gameplay.Gameplay.DirectionalLight.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体                                                                                                     |
+| **[getChildren](Gameplay.Gameplay.DirectionalLight.md#getchildren)**(): `GameObject`[] <br> 获取 Children，客户端不维系父子关系。推荐使用 Find 替代                                                                            |
+| **[getChildrenBoxCenter](Gameplay.Gameplay.DirectionalLight.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0]) |
+| **[getCollision](Gameplay.Gameplay.DirectionalLight.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态             |
+| **[getForwardVector](Gameplay.Gameplay.DirectionalLight.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                   |
+| **[getRelativeLocation](Gameplay.Gameplay.DirectionalLight.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                       |
+| **[getRelativeRotation](Gameplay.Gameplay.DirectionalLight.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                               |
+| **[getRelativeScale](Gameplay.Gameplay.DirectionalLight.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                             |
+| **[getRightVector](Gameplay.Gameplay.DirectionalLight.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                       |
+| **[getScriptByGuid](Gameplay.Gameplay.DirectionalLight.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                         |
+| **[getScriptByName](Gameplay.Gameplay.DirectionalLight.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                         |
+| **[getScripts](Gameplay.Gameplay.DirectionalLight.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                         |
+| **[getSourceAssetGuid](Gameplay.Gameplay.DirectionalLight.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的 GUID                                                                                                |
+| **[getTransform](Gameplay.Gameplay.DirectionalLight.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 Transform                                               |
+| **[getUpVector](Gameplay.Gameplay.DirectionalLight.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                             |
+| **[getVisibility](Gameplay.Gameplay.DirectionalLight.md#getvisibility)**(): `boolean` <br> 获取 GameObject 是否被显示                                                                                                          |
+| **[getWorldLocation](Gameplay.Gameplay.DirectionalLight.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                       |
+| **[getWorldRotation](Gameplay.Gameplay.DirectionalLight.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                               |
+| **[getWorldScale](Gameplay.Gameplay.DirectionalLight.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                             |
+| **[isRunningClient](Gameplay.Gameplay.DirectionalLight.md#isrunningclient)**(): `boolean` <br> 是否为客户端                                                                                                                    |
+| **[onDestroy](Gameplay.Gameplay.DirectionalLight.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用                                                                                                                          |
+| **[onStart](Gameplay.Gameplay.DirectionalLight.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用                                                                                                                        |
+| **[onUpdate](Gameplay.Gameplay.DirectionalLight.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为 false,不会执行                                                                       |
+| **[ready](Gameplay.Gameplay.DirectionalLight.md#ready)**(): `Promise`<[`DirectionalLight`](Gameplay.Gameplay.DirectionalLight.md)\> <br> GameObject 准备好后返回                                                               |
+| **[setCollision](Gameplay.Gameplay.DirectionalLight.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态                                                        |
+| **[setLocationAndRotation](Gameplay.Gameplay.DirectionalLight.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转                     |
+| **[setRelativeLocation](Gameplay.Gameplay.DirectionalLight.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置                                                                                |
+| **[setRelativeRotation](Gameplay.Gameplay.DirectionalLight.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转                                                                            |
+| **[setRelativeScale](Gameplay.Gameplay.DirectionalLight.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放                                                                                      |
+| **[setTransform](Gameplay.Gameplay.DirectionalLight.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体 transform                                                                              |
+| **[setVisibility](Gameplay.Gameplay.DirectionalLight.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置 GameObject 是否被显示                                          |
+| **[setWorldLocation](Gameplay.Gameplay.DirectionalLight.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标                                                                                |
+| **[setWorldRotation](Gameplay.Gameplay.DirectionalLight.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转                                                                            |
+| **[setWorldScale](Gameplay.Gameplay.DirectionalLight.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放                                                                                      |
+| **[asyncFind](Gameplay.Gameplay.DirectionalLight.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);                                |
+| **[asyncSpawnGameObject](Gameplay.Gameplay.DirectionalLight.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建                            |
+| **[find](Gameplay.Gameplay.DirectionalLight.md#find)**(`string`): `GameObject` <br> 通过 Guid 查找 GameObject                                                                                                                  |
+| **[findGameObjectByTag](Gameplay.Gameplay.DirectionalLight.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义 Tag 获取 GameObject                                                                             |
+| **[getGameObjectByName](Gameplay.Gameplay.DirectionalLight.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体                                                                                             |
+| **[getGameObjectsByName](Gameplay.Gameplay.DirectionalLight.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体                                                                                         |
+| **[spawnGameObject](Gameplay.Gameplay.DirectionalLight.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject                                                                                       |
 
 ## Accessors
 
 ### baseShadowEnable
 
 • `get` **baseShadowEnable**(): `boolean`
-
-**`Author`**
-
-yuchen.ren
 
 **`Description`**
 
@@ -144,15 +116,7 @@ yuchen.ren
 
 `boolean`
 
-#### Defined in
-
-Gameplay/index.d.ts:12019
-
 • `set` **baseShadowEnable**(`enable`): `void`
-
-**`Author`**
-
-yuchen.ren
 
 **`Description`**
 
@@ -167,10 +131,6 @@ yuchen.ren
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:12024
 
 ---
 
@@ -192,10 +152,6 @@ Gameplay/index.d.ts:12024
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:11989
-
 • `set` **castShadowsEnable**(`value`): `void`
 
 **`Description`**
@@ -208,17 +164,13 @@ Gameplay/index.d.ts:11989
 
 #### Parameters
 
-| Name    | Type      | Description  |
-| :------ | :-------- | :----------- |
-| `value` | `boolean` | usage:布尔值 |
+| Name    | Type      | Description |
+| :------ | :-------- | :---------- |
+| `value` | `boolean` | 布尔值      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11983
 
 ---
 
@@ -240,14 +192,6 @@ Gameplay/index.d.ts:11983
 
 Vector
 
-#### Inherited from
-
-Core.GameObject.forwardVector
-
-#### Defined in
-
-Core/index.d.ts:409
-
 ---
 
 ### guid
@@ -265,14 +209,6 @@ Core/index.d.ts:409
 #### Returns
 
 `string`
-
-#### Inherited from
-
-Core.GameObject.guid
-
-#### Defined in
-
-Core/index.d.ts:39
 
 ---
 
@@ -294,10 +230,6 @@ Core/index.d.ts:39
 
 光照强度
 
-#### Defined in
-
-Gameplay/index.d.ts:11965
-
 • `set` **intensity**(`value`): `void`
 
 **`Description`**
@@ -310,17 +242,13 @@ Gameplay/index.d.ts:11965
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `value` | `number` | usage:强度浮点值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `value` | `number` | 强度浮点值  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11959
 
 ---
 
@@ -342,10 +270,6 @@ Gameplay/index.d.ts:11959
 
 光照颜色
 
-#### Defined in
-
-Gameplay/index.d.ts:11977
-
 • `set` **lightColor**(`newLightColor`): `void`
 
 **`Description`**
@@ -358,17 +282,13 @@ Gameplay/index.d.ts:11977
 
 #### Parameters
 
-| Name            | Type                                      | Description  |
-| :-------------- | :---------------------------------------- | :----------- |
-| `newLightColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色值 |
+| Name            | Type                                      | Description |
+| :-------------- | :---------------------------------------- | :---------- |
+| `newLightColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色值      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11971
 
 ---
 
@@ -387,14 +307,6 @@ Gameplay/index.d.ts:11971
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-Core.GameObject.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:456
 
 • `set` **lockStatus**(`v`): `void`
 
@@ -416,14 +328,6 @@ Core/index.d.ts:456
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:451
-
 ---
 
 ### name
@@ -444,14 +348,6 @@ Core/index.d.ts:451
 
 名称
 
-#### Inherited from
-
-Core.GameObject.name
-
-#### Defined in
-
-Core/index.d.ts:171
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -464,21 +360,13 @@ Core/index.d.ts:171
 
 #### Parameters
 
-| Name   | Type     | Description          |
-| :----- | :------- | :------------------- |
-| `name` | `string` | usage:需要设置的名称 |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
+| `name` | `string` | 需要设置的名称 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.name
-
-#### Defined in
-
-Core/index.d.ts:177
 
 ---
 
@@ -500,14 +388,6 @@ Core/index.d.ts:177
 
 Type.NetStatus
 
-#### Inherited from
-
-Core.GameObject.netStatus
-
-#### Defined in
-
-Core/index.d.ts:513
-
 ---
 
 ### parent
@@ -527,14 +407,6 @@ Core/index.d.ts:513
 `GameObject`
 
 父物体
-
-#### Inherited from
-
-Core.GameObject.parent
-
-#### Defined in
-
-Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -556,14 +428,6 @@ Core/index.d.ts:462
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.parent
-
-#### Defined in
-
-Core/index.d.ts:467
-
 ---
 
 ### pitchAngle
@@ -584,10 +448,6 @@ Core/index.d.ts:467
 
 俯仰角度
 
-#### Defined in
-
-Gameplay/index.d.ts:11953
-
 • `set` **pitchAngle**(`value`): `void`
 
 **`Description`**
@@ -600,17 +460,13 @@ Gameplay/index.d.ts:11953
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `value` | `number` | usage:角度浮点值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `value` | `number` | 角度浮点值  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11947
 
 ---
 
@@ -632,14 +488,6 @@ Gameplay/index.d.ts:11947
 
 位置坐标
 
-#### Inherited from
-
-Core.GameObject.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:308
-
 • `set` **relativeLocation**(`location`): `void`
 
 **`Description`**
@@ -654,19 +502,11 @@ Core/index.d.ts:308
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:314
 
 ---
 
@@ -688,14 +528,6 @@ Core/index.d.ts:314
 
 旋转角度
 
-#### Inherited from
-
-Core.GameObject.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:334
-
 • `set` **relativeRotation**(`rotation`): `void`
 
 **`Description`**
@@ -710,19 +542,11 @@ Core/index.d.ts:334
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:340
 
 ---
 
@@ -744,14 +568,6 @@ Core/index.d.ts:340
 
 相对缩放
 
-#### Inherited from
-
-Core.GameObject.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:360
-
 • `set` **relativeScale**(`scale`): `void`
 
 **`Description`**
@@ -766,19 +582,11 @@ Core/index.d.ts:360
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放  |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:366
 
 ---
 
@@ -800,14 +608,6 @@ Core/index.d.ts:366
 
 Vector
 
-#### Inherited from
-
-Core.GameObject.rightVector
-
-#### Defined in
-
-Core/index.d.ts:423
-
 ---
 
 ### staticStatus
@@ -825,14 +625,6 @@ Core/index.d.ts:423
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-Core.GameObject.staticStatus
-
-#### Defined in
-
-Core/index.d.ts:446
 
 ---
 
@@ -854,14 +646,6 @@ Core/index.d.ts:446
 
 Tag
 
-#### Inherited from
-
-Core.GameObject.tag
-
-#### Defined in
-
-Core/index.d.ts:189
-
 • `set` **tag**(`tag`): `void`
 
 **`Description`**
@@ -876,19 +660,11 @@ Core/index.d.ts:189
 
 | Name  | Type     | Description |
 | :---- | :------- | :---------- |
-| `tag` | `string` | usage:Tag   |
+| `tag` | `string` | Tag         |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.tag
-
-#### Defined in
-
-Core/index.d.ts:183
 
 ---
 
@@ -910,10 +686,6 @@ Core/index.d.ts:183
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:12013
-
 • `set` **temperature**(`value`): `void`
 
 **`Description`**
@@ -926,17 +698,13 @@ Gameplay/index.d.ts:12013
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `value` | `number` | usage:色温浮点值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `value` | `number` | 色温浮点值  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:12007
 
 ---
 
@@ -958,10 +726,6 @@ Gameplay/index.d.ts:12007
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:12001
-
 • `set` **temperatureEnable**(`value`): `void`
 
 **`Description`**
@@ -974,17 +738,13 @@ Gameplay/index.d.ts:12001
 
 #### Parameters
 
-| Name    | Type      | Description  |
-| :------ | :-------- | :----------- |
-| `value` | `boolean` | usage:布尔值 |
+| Name    | Type      | Description |
+| :------ | :-------- | :---------- |
+| `value` | `boolean` | 布尔值      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11995
 
 ---
 
@@ -1006,14 +766,6 @@ Gameplay/index.d.ts:11995
 
 transform
 
-#### Inherited from
-
-Core.GameObject.transform
-
-#### Defined in
-
-Core/index.d.ts:209
-
 • `set` **transform**(`transform`): `void`
 
 **`Description`**
@@ -1026,21 +778,13 @@ Core/index.d.ts:209
 
 #### Parameters
 
-| Name        | Type                                  | Description              |
-| :---------- | :------------------------------------ | :----------------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:要设置的 transform |
+| Name        | Type                                  | Description        |
+| :---------- | :------------------------------------ | :----------------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的 transform |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.transform
-
-#### Defined in
-
-Core/index.d.ts:215
 
 ---
 
@@ -1062,14 +806,6 @@ Core/index.d.ts:215
 
 Vector
 
-#### Inherited from
-
-Core.GameObject.upVector
-
-#### Defined in
-
-Core/index.d.ts:396
-
 ---
 
 ### useUpdate
@@ -1087,14 +823,6 @@ Core/index.d.ts:396
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-Core.GameObject.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
@@ -1115,14 +843,6 @@ Core/index.d.ts:441
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:436
 
 ---
 
@@ -1148,14 +868,6 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 
 bool
 
-#### Inherited from
-
-Core.GameObject.visible
-
-#### Defined in
-
-Core/index.d.ts:507
-
 ---
 
 ### worldLocation
@@ -1173,14 +885,6 @@ Core/index.d.ts:507
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-Core.GameObject.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -1202,14 +906,6 @@ Core/index.d.ts:234
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:239
-
 ---
 
 ### worldRotation
@@ -1228,14 +924,6 @@ Core/index.d.ts:239
 
 [`Rotation`](Type.Type.Rotation.md)
 
-#### Inherited from
-
-Core.GameObject.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:258
-
 • `set` **worldRotation**(`rotation`): `void`
 
 **`Description`**
@@ -1248,21 +936,13 @@ Core/index.d.ts:258
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:264
 
 ---
 
@@ -1281,14 +961,6 @@ Core/index.d.ts:264
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-Core.GameObject.worldScale
-
-#### Defined in
-
-Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -1310,14 +982,6 @@ Core/index.d.ts:283
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.worldScale
-
-#### Defined in
-
-Core/index.d.ts:288
-
 ---
 
 ### yawAngle
@@ -1338,10 +1002,6 @@ Core/index.d.ts:288
 
 朝向角度
 
-#### Defined in
-
-Gameplay/index.d.ts:11941
-
 • `set` **yawAngle**(`value`): `void`
 
 **`Description`**
@@ -1354,17 +1014,13 @@ Gameplay/index.d.ts:11941
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `value` | `number` | usage:角度浮点值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `value` | `number` | 角度浮点值  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11935
 
 ## Methods
 
@@ -1382,21 +1038,13 @@ Gameplay/index.d.ts:11935
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.addDestroyCallback
-
-#### Defined in
-
-Core/index.d.ts:627
 
 ---
 
@@ -1416,21 +1064,13 @@ Core/index.d.ts:627
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Promise`<`Script`\>
 
 Script
-
-#### Inherited from
-
-Core.GameObject.asyncGetScriptByName
-
-#### Defined in
-
-Core/index.d.ts:574
 
 ---
 
@@ -1450,19 +1090,11 @@ Core/index.d.ts:574
 
 | Name  | Type         | Description |
 | :---- | :----------- | :---------- |
-| `obj` | `GameObject` | usage:物体  |
+| `obj` | `GameObject` | 物体        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.attachToGameObject
-
-#### Defined in
-
-Core/index.d.ts:594
 
 ---
 
@@ -1480,23 +1112,15 @@ Core/index.d.ts:594
 
 #### Parameters
 
-| Name            | Type      | Description                 |
-| :-------------- | :-------- | :-------------------------- |
-| `inReplicates?` | `boolean` | usage:是否复制 default:true |
+| Name            | Type      | Description           |
+| :-------------- | :-------- | :-------------------- |
+| `inReplicates?` | `boolean` | 是否复制 default:true |
 
 #### Returns
 
 `GameObject`
 
 克隆的对象
-
-#### Inherited from
-
-Core.GameObject.clone
-
-#### Defined in
-
-Core/index.d.ts:554
 
 ---
 
@@ -1514,21 +1138,13 @@ Core/index.d.ts:554
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.deleteDestroyCallback
-
-#### Defined in
-
-Core/index.d.ts:633
 
 ---
 
@@ -1548,14 +1164,6 @@ Core/index.d.ts:633
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.destroy
-
-#### Defined in
-
-Core/index.d.ts:150
-
 ---
 
 ### detachFromGameObject
@@ -1573,14 +1181,6 @@ Core/index.d.ts:150
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.detachFromGameObject
-
-#### Defined in
-
-Core/index.d.ts:599
 
 ---
 
@@ -1602,25 +1202,17 @@ Core/index.d.ts:599
 
 #### Parameters
 
-| Name                      | Type                            | Description                                        |
-| :------------------------ | :------------------------------ | :------------------------------------------------- |
-| `nonColliding?`           | `boolean`                       | usage:表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean`                       | usage:如果为 true，则递归子物体 default:false      |
-| `outer?`                  | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null      |
+| Name                      | Type                            | Description                                  |
+| :------------------------ | :------------------------------ | :------------------------------------------- |
+| `nonColliding?`           | `boolean`                       | 表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean`                       | 如果为 true，则递归子物体 default:false      |
+| `outer?`                  | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null      |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-Core.GameObject.getBoundingBoxSize
-
-#### Defined in
-
-Core/index.d.ts:609
 
 ---
 
@@ -1638,24 +1230,16 @@ Core/index.d.ts:609
 
 #### Parameters
 
-| Name                      | Type                            | Description                                      |
-| :------------------------ | :------------------------------ | :----------------------------------------------- |
-| `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
-| `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
+| Name                      | Type                            | Description                                |
+| :------------------------ | :------------------------------ | :----------------------------------------- |
+| `onlyCollidingComponents` | `boolean`                       | 是否只包含有碰撞的组件。                   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 尺寸的一半。   |
+| `includeFromChildActors?` | `boolean`                       | 是否递归包含子物体 default:undefined       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.getBounds
-
-#### Defined in
-
-Core/index.d.ts:198
 
 ---
 
@@ -1675,21 +1259,13 @@ Core/index.d.ts:198
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-Core.GameObject.getChildByGuid
-
-#### Defined in
-
-Core/index.d.ts:547
 
 ---
 
@@ -1709,21 +1285,13 @@ Core/index.d.ts:547
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名称  |
+| `name` | `string` | 名称        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-Core.GameObject.getChildByName
-
-#### Defined in
-
-Core/index.d.ts:540
 
 ---
 
@@ -1745,14 +1313,6 @@ Core/index.d.ts:540
 
 Array`<GameObject>`
 
-#### Inherited from
-
-Core.GameObject.getChildren
-
-#### Defined in
-
-Core/index.d.ts:533
-
 ---
 
 ### getChildrenBoxCenter
@@ -1773,23 +1333,15 @@ Core/index.d.ts:533
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-Core.GameObject.getChildrenBoxCenter
-
-#### Defined in
-
-Core/index.d.ts:621
 
 ---
 
@@ -1811,14 +1363,6 @@ Core/index.d.ts:621
 
 碰撞状态
 
-#### Inherited from
-
-Core.GameObject.getCollision
-
-#### Defined in
-
-Core/index.d.ts:484
-
 ---
 
 ### getForwardVector
@@ -1839,23 +1383,15 @@ Core/index.d.ts:484
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-Core.GameObject.getForwardVector
-
-#### Defined in
-
-Core/index.d.ts:417
 
 ---
 
@@ -1877,23 +1413,15 @@ Core/index.d.ts:417
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 位置坐标
-
-#### Inherited from
-
-Core.GameObject.getRelativeLocation
-
-#### Defined in
-
-Core/index.d.ts:322
 
 ---
 
@@ -1915,23 +1443,15 @@ Core/index.d.ts:322
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 旋转角度
-
-#### Inherited from
-
-Core.GameObject.getRelativeRotation
-
-#### Defined in
-
-Core/index.d.ts:348
 
 ---
 
@@ -1953,23 +1473,15 @@ Core/index.d.ts:348
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 相对缩放
-
-#### Inherited from
-
-Core.GameObject.getRelativeScale
-
-#### Defined in
-
-Core/index.d.ts:374
 
 ---
 
@@ -1991,23 +1503,15 @@ Core/index.d.ts:374
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-Core.GameObject.getRightVector
-
-#### Defined in
-
-Core/index.d.ts:431
 
 ---
 
@@ -2027,21 +1531,13 @@ Core/index.d.ts:431
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-Core.GameObject.getScriptByGuid
-
-#### Defined in
-
-Core/index.d.ts:581
 
 ---
 
@@ -2061,21 +1557,13 @@ Core/index.d.ts:581
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-Core.GameObject.getScriptByName
-
-#### Defined in
-
-Core/index.d.ts:567
 
 ---
 
@@ -2097,14 +1585,6 @@ Core/index.d.ts:567
 
 Array`<Script>`
 
-#### Inherited from
-
-Core.GameObject.getScripts
-
-#### Defined in
-
-Core/index.d.ts:560
-
 ---
 
 ### getSourceAssetGuid
@@ -2124,14 +1604,6 @@ Core/index.d.ts:560
 `string`
 
 资源的 GUID
-
-#### Inherited from
-
-Core.GameObject.getSourceAssetGuid
-
-#### Defined in
-
-Core/index.d.ts:639
 
 ---
 
@@ -2153,23 +1625,15 @@ Core/index.d.ts:639
 
 #### Parameters
 
-| Name     | Type                                  | Description                                      |
-| :------- | :------------------------------------ | :----------------------------------------------- |
-| `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接收转换数据的 Transform 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `outer?` | [`Transform`](Type.Type.Transform.md) | 接收转换数据的 Transform 对象 default:null |
 
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
 
 Transform
-
-#### Inherited from
-
-Core.GameObject.getTransform
-
-#### Defined in
-
-Core/index.d.ts:223
 
 ---
 
@@ -2187,23 +1651,15 @@ Core/index.d.ts:223
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-Core.GameObject.getUpVector
-
-#### Defined in
-
-Core/index.d.ts:403
 
 ---
 
@@ -2225,14 +1681,6 @@ Core/index.d.ts:403
 
 bool
 
-#### Inherited from
-
-Core.GameObject.getVisibility
-
-#### Defined in
-
-Core/index.d.ts:490
-
 ---
 
 ### getWorldLocation
@@ -2253,23 +1701,15 @@ Core/index.d.ts:490
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界位置坐标
-
-#### Inherited from
-
-Core.GameObject.getWorldLocation
-
-#### Defined in
-
-Core/index.d.ts:247
 
 ---
 
@@ -2291,23 +1731,15 @@ Core/index.d.ts:247
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 世界旋转
-
-#### Inherited from
-
-Core.GameObject.getWorldRotation
-
-#### Defined in
-
-Core/index.d.ts:272
 
 ---
 
@@ -2329,23 +1761,15 @@ Core/index.d.ts:272
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界缩放
-
-#### Inherited from
-
-Core.GameObject.getWorldScale
-
-#### Defined in
-
-Core/index.d.ts:296
 
 ---
 
@@ -2367,14 +1791,6 @@ Core/index.d.ts:296
 
 true 为客户端
 
-#### Inherited from
-
-Core.GameObject.isRunningClient
-
-#### Defined in
-
-Core/index.d.ts:50
-
 ---
 
 ### onDestroy
@@ -2392,14 +1808,6 @@ Core/index.d.ts:50
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.onDestroy
-
-#### Defined in
-
-Core/index.d.ts:18
 
 ---
 
@@ -2419,14 +1827,6 @@ Core/index.d.ts:18
 
 `void`
 
-#### Inherited from
-
-Core.GameObject.onStart
-
-#### Defined in
-
-Core/index.d.ts:13
-
 ---
 
 ### onUpdate
@@ -2443,21 +1843,13 @@ Core/index.d.ts:13
 
 #### Parameters
 
-| Name | Type     | Description                  |
-| :--- | :------- | :--------------------------- |
-| `dt` | `number` | usage:与上一帧的延迟 单位:秒 |
+| Name | Type     | Description            |
+| :--- | :------- | :--------------------- |
+| `dt` | `number` | 与上一帧的延迟 单位:秒 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.onUpdate
-
-#### Defined in
-
-Core/index.d.ts:24
 
 ---
 
@@ -2479,14 +1871,6 @@ GameObject 准备好后返回
 
 准备好的对象
 
-#### Inherited from
-
-Core.GameObject.ready
-
-#### Defined in
-
-Core/index.d.ts:126
-
 ---
 
 ### setCollision
@@ -2507,22 +1891,14 @@ Core/index.d.ts:126
 
 #### Parameters
 
-| Name                   | Type                                                                                                                   | Description                                                      |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | usage: 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean`                                                                                                              | usage: 是否传递给子节点 default: false                           |
+| Name                   | Type                                                                                                                   | Description                                               |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean`                                                                                                              | 是否传递给子节点 default: false                           |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setCollision
-
-#### Defined in
-
-Core/index.d.ts:475
 
 ---
 
@@ -2540,22 +1916,14 @@ Core/index.d.ts:475
 
 #### Parameters
 
-| Name       | Type                                | Description    |
-| :--------- | :---------------------------------- | :------------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | usage:世界位置 |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:世界旋转 |
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `location` | [`Vector`](Type.Type.Vector.md)     | 世界位置    |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setLocationAndRotation
-
-#### Defined in
-
-Core/index.d.ts:387
 
 ---
 
@@ -2575,19 +1943,11 @@ Core/index.d.ts:387
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setRelativeLocation
-
-#### Defined in
-
-Core/index.d.ts:328
 
 ---
 
@@ -2607,19 +1967,11 @@ Core/index.d.ts:328
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setRelativeRotation
-
-#### Defined in
-
-Core/index.d.ts:354
 
 ---
 
@@ -2637,21 +1989,13 @@ Core/index.d.ts:354
 
 #### Parameters
 
-| Name    | Type                            | Description            |
-| :------ | :------------------------------ | :--------------------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:要设置的相对缩放 |
+| Name    | Type                            | Description      |
+| :------ | :------------------------------ | :--------------- |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 要设置的相对缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setRelativeScale
-
-#### Defined in
-
-Core/index.d.ts:380
 
 ---
 
@@ -2669,21 +2013,13 @@ Core/index.d.ts:380
 
 #### Parameters
 
-| Name        | Type                                  | Description     |
-| :---------- | :------------------------------------ | :-------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:transform |
+| Name        | Type                                  | Description |
+| :---------- | :------------------------------------ | :---------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | transform   |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setTransform
-
-#### Defined in
-
-Core/index.d.ts:229
 
 ---
 
@@ -2701,22 +2037,14 @@ Core/index.d.ts:229
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                         |
-| :--------------------- | :------------------------------------------------------- | :---------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态                          |
-| `propagateToChildren?` | `boolean`                                                | usage: 是否设置子物体 default:false |
+| Name                   | Type                                                     | Description                  |
+| :--------------------- | :------------------------------------------------------- | :--------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                         |
+| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:false |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setVisibility
-
-#### Defined in
-
-Core/index.d.ts:497
 
 ---
 
@@ -2734,21 +2062,13 @@ Core/index.d.ts:497
 
 #### Parameters
 
-| Name | Type                            | Description             |
-| :--- | :------------------------------ | :---------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage: 要设置的世界坐标 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界坐标 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setWorldLocation
-
-#### Defined in
-
-Core/index.d.ts:253
 
 ---
 
@@ -2766,21 +2086,13 @@ Core/index.d.ts:253
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setWorldRotation
-
-#### Defined in
-
-Core/index.d.ts:278
 
 ---
 
@@ -2798,21 +2110,13 @@ Core/index.d.ts:278
 
 #### Parameters
 
-| Name | Type                            | Description            |
-| :--- | :------------------------------ | :--------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage:要设置的世界缩放 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Core.GameObject.setWorldScale
-
-#### Defined in
-
-Core/index.d.ts:302
 
 ---
 
@@ -2831,23 +2135,15 @@ Core/index.d.ts:302
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 guid |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 Guid 对应的物体
-
-#### Inherited from
-
-Core.GameObject.asyncFind
-
-#### Defined in
-
-Core/index.d.ts:165
 
 ---
 
@@ -2865,24 +2161,16 @@ Core/index.d.ts:165
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 构造的 GameObject
-
-#### Inherited from
-
-Core.GameObject.asyncSpawnGameObject
-
-#### Defined in
-
-Core/index.d.ts:142
 
 ---
 
@@ -2900,23 +2188,15 @@ Core/index.d.ts:142
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 Guid |
 
 #### Returns
 
 `GameObject`
 
 Guid 对应的物体
-
-#### Inherited from
-
-Core.GameObject.find
-
-#### Defined in
-
-Core/index.d.ts:157
 
 ---
 
@@ -2934,23 +2214,15 @@ Core/index.d.ts:157
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `InTag` | `string` | usage:自定义 Tag |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `InTag` | `string` | 自定义 Tag  |
 
 #### Returns
 
 `GameObject`[]
 
 Array`<GameObject>`
-
-#### Inherited from
-
-Core.GameObject.findGameObjectByTag
-
-#### Defined in
-
-Core/index.d.ts:588
 
 ---
 
@@ -2968,23 +2240,15 @@ Core/index.d.ts:588
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
-
-#### Inherited from
-
-Core.GameObject.getGameObjectByName
-
-#### Defined in
-
-Core/index.d.ts:527
 
 ---
 
@@ -3002,23 +2266,15 @@ Core/index.d.ts:527
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`[]
 
 返回所有查找到的对象
-
-#### Inherited from
-
-Core.GameObject.getGameObjectsByName
-
-#### Defined in
-
-Core/index.d.ts:520
 
 ---
 
@@ -3036,21 +2292,13 @@ Core/index.d.ts:520
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `GameObject`
 
 构造的 GameObject
-
-#### Inherited from
-
-Core.GameObject.spawnGameObject
-
-#### Defined in
-
-Core/index.d.ts:134

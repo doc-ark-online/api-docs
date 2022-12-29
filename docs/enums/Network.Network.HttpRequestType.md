@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Network](../modules/Network.md) / [Network](../modules/Network.Network.md) / HttpRequestType
+[Network](../modules/Network.Network.md) / HttpRequestType
 
-# Enumeration: HttpRequestType
-
-[Network](../modules/Network.md).[Network](../modules/Network.Network.md).HttpRequestType
+# HttpRequestType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Get](Network.Network.HttpRequestType.md#get)
-- [Post](Network.Network.HttpRequestType.md#post)
+| Enumeration Members                                                      |
+| :----------------------------------------------------------------------- |
+| **[Get](Network.Network.HttpRequestType.md#get)** = `0` <br> Get 请求    |
+| **[Post](Network.Network.HttpRequestType.md#post)** = `1` <br> Post 请求 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 Get 请求
 
-#### Defined in
-
-Network/index.d.ts:144
-
 ---
 
 ### Post
@@ -34,7 +28,3 @@ Network/index.d.ts:144
 • **Post** = `1`
 
 Post 请求
-
-#### Defined in
-
-Network/index.d.ts:148

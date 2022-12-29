@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CameraMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / CameraMode
 
-# Enumeration: CameraMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CameraMode
+# CameraMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,14 +8,14 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Default](Gameplay.Gameplay.CameraMode.md#default)
-- [FPSShootingAngle](Gameplay.Gameplay.CameraMode.md#fpsshootingangle)
-- [FirstPerson](Gameplay.Gameplay.CameraMode.md#firstperson)
-- [TPSOverShoulderAngle](Gameplay.Gameplay.CameraMode.md#tpsovershoulderangle)
-- [ThirdPerson](Gameplay.Gameplay.CameraMode.md#thirdperson)
-- [TopDownAngle](Gameplay.Gameplay.CameraMode.md#topdownangle)
+| Enumeration Members                                                                                      |
+| :------------------------------------------------------------------------------------------------------- |
+| **[Default](Gameplay.Gameplay.CameraMode.md#default)** = `3` <br> 默认                                   |
+| **[FPSShootingAngle](Gameplay.Gameplay.CameraMode.md#fpsshootingangle)** = `5` <br> FPS 射击视角         |
+| **[FirstPerson](Gameplay.Gameplay.CameraMode.md#firstperson)** = `0` <br> 第一人称                       |
+| **[TPSOverShoulderAngle](Gameplay.Gameplay.CameraMode.md#tpsovershoulderangle)** = `4` <br> TPS 过肩视角 |
+| **[ThirdPerson](Gameplay.Gameplay.CameraMode.md#thirdperson)** = `1` <br> 第三人称                       |
+| **[TopDownAngle](Gameplay.Gameplay.CameraMode.md#topdownangle)** = `2` <br> 俯视角                       |
 
 ## Enumeration Members
 
@@ -27,10 +25,6 @@
 
 默认
 
-#### Defined in
-
-Gameplay/index.d.ts:1819
-
 ---
 
 ### FPSShootingAngle
@@ -38,10 +32,6 @@ Gameplay/index.d.ts:1819
 • **FPSShootingAngle** = `5`
 
 FPS 射击视角
-
-#### Defined in
-
-Gameplay/index.d.ts:1823
 
 ---
 
@@ -51,10 +41,6 @@ Gameplay/index.d.ts:1823
 
 第一人称
 
-#### Defined in
-
-Gameplay/index.d.ts:1813
-
 ---
 
 ### TPSOverShoulderAngle
@@ -62,10 +48,6 @@ Gameplay/index.d.ts:1813
 • **TPSOverShoulderAngle** = `4`
 
 TPS 过肩视角
-
-#### Defined in
-
-Gameplay/index.d.ts:1821
 
 ---
 
@@ -75,10 +57,6 @@ Gameplay/index.d.ts:1821
 
 第三人称
 
-#### Defined in
-
-Gameplay/index.d.ts:1815
-
 ---
 
 ### TopDownAngle
@@ -86,7 +64,3 @@ Gameplay/index.d.ts:1815
 • **TopDownAngle** = `2`
 
 俯视角
-
-#### Defined in
-
-Gameplay/index.d.ts:1817

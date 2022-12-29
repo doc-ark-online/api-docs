@@ -1,39 +1,19 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / Margin
+[UI](../modules/UI.UI.md) / Margin
 
-# Class: Margin
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).Margin
-
-**`Author`**
-
-jie.wu
+# Margin <Badge type="tip" text="Class" />
 
 **`Description`**
 
 基础的边距，提供 4 个方向的数值修改
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.Margin.md#constructor)
-
-### Properties
-
-- [bottom](UI.UI.Margin.md#bottom)
-- [left](UI.UI.Margin.md#left)
-- [right](UI.UI.Margin.md#right)
-- [top](UI.UI.Margin.md#top)
-
-## Constructors
-
-### constructor
-
-• **new Margin**(`In`)
+| Properties                                             |
+| :----------------------------------------------------- |
+| **[bottom](UI.UI.Margin.md#bottom)**: `number` <br> 下 |
+| **[left](UI.UI.Margin.md#left)**: `number` <br> 左     |
+| **[right](UI.UI.Margin.md#right)**: `number` <br> 右   |
+| **[top](UI.UI.Margin.md#top)**: `number` <br> 上       |
 
 **`Description`**
 
@@ -45,13 +25,9 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `In` | `number` | usage:初始化值 |
-
-#### Defined in
-
-UI/index.d.ts:3753
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `In` | `number` | 初始化值    |
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
 
@@ -63,14 +39,10 @@ UI/index.d.ts:3753
 
 | Name       | Type     | Description |
 | :--------- | :------- | :---------- |
-| `InLeft`   | `number` | usage:左值  |
-| `InTop`    | `number` | usage:上值  |
-| `InRight`  | `number` | usage:右值  |
-| `InBottom` | `number` | usage:下值  |
-
-#### Defined in
-
-UI/index.d.ts:3761
+| `InLeft`   | `number` | 左值        |
+| `InTop`    | `number` | 上值        |
+| `InRight`  | `number` | 右值        |
+| `InBottom` | `number` | 下值        |
 
 ## Properties
 
@@ -82,10 +54,6 @@ UI/index.d.ts:3761
 
 下
 
-#### Defined in
-
-UI/index.d.ts:3774
-
 ---
 
 ### left
@@ -95,10 +63,6 @@ UI/index.d.ts:3774
 **`Description`**
 
 左
-
-#### Defined in
-
-UI/index.d.ts:3768
 
 ---
 
@@ -110,10 +74,6 @@ UI/index.d.ts:3768
 
 右
 
-#### Defined in
-
-UI/index.d.ts:3772
-
 ---
 
 ### top
@@ -123,7 +83,3 @@ UI/index.d.ts:3772
 **`Description`**
 
 上
-
-#### Defined in
-
-UI/index.d.ts:3770

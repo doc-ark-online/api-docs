@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV1Part
+[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV1Part
 
-# Interface: IHumanoidV1Part
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IHumanoidV1Part
+# IHumanoidV1Part <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 人形对象 V1 部位
-
-**`Author`**
-
-guang.deng
 
 ## Implemented by
 
@@ -18,10 +12,10 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [getWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#getwholebody)
-- [setWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#setwholebody)
+| Methods                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------- |
+| **[getWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#getwholebody)**(): `string` <br> 获取全身模型                  |
+| **[setWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型 |
 
 ## Methods
 
@@ -42,10 +36,6 @@ guang.deng
 `string`
 
 模型 Guid
-
-#### Defined in
-
-Gameplay/index.d.ts:2808
 
 ---
 
@@ -68,15 +58,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2802

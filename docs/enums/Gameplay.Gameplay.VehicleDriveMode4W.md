@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / VehicleDriveMode4W
+[Gameplay](../modules/Gameplay.Gameplay.md) / VehicleDriveMode4W
 
-# Enumeration: VehicleDriveMode4W
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).VehicleDriveMode4W
+# VehicleDriveMode4W <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FourDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#fourdrive)
-- [FrontDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#frontdrive)
-- [RearDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#reardrive)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[FourDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#fourdrive)** = `0` <br> 四驱   |
+| **[FrontDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#frontdrive)** = `1` <br> 前驱 |
+| **[RearDrive](Gameplay.Gameplay.VehicleDriveMode4W.md#reardrive)** = `2` <br> 后驱   |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 四驱
 
-#### Defined in
-
-Gameplay/index.d.ts:10444
-
 ---
 
 ### FrontDrive
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:10444
 
 前驱
 
-#### Defined in
-
-Gameplay/index.d.ts:10446
-
 ---
 
 ### RearDrive
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:10446
 • **RearDrive** = `2`
 
 后驱
-
-#### Defined in
-
-Gameplay/index.d.ts:10448

@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [DataStorage](../modules/DataStorage.md) / [DataStorage](../modules/DataStorage.DataStorage.md) / DataStorageResultCode
+[DataStorage](../modules/DataStorage.DataStorage.md) / DataStorageResultCode
 
-# Enumeration: DataStorageResultCode
-
-[DataStorage](../modules/DataStorage.md).[DataStorage](../modules/DataStorage.DataStorage.md).DataStorageResultCode
+# DataStorageResultCode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,15 +8,15 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [ExceededSizeLimit](DataStorage.DataStorage.DataStorageResultCode.md#exceededsizelimit)
-- [Failure](DataStorage.DataStorage.DataStorageResultCode.md#failure)
-- [KeyValueError](DataStorage.DataStorage.DataStorageResultCode.md#keyvalueerror)
-- [OnlyServerCall](DataStorage.DataStorage.DataStorageResultCode.md#onlyservercall)
-- [RequestIntervalTooClose](DataStorage.DataStorage.DataStorageResultCode.md#requestintervaltooclose)
-- [RequestTooFrequent](DataStorage.DataStorage.DataStorageResultCode.md#requesttoofrequent)
-- [Success](DataStorage.DataStorage.DataStorageResultCode.md#success)
+| Enumeration Members                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------- |
+| **[ExceededSizeLimit](DataStorage.DataStorage.DataStorageResultCode.md#exceededsizelimit)** = `2` <br> 数据保存失败：文件大小过大 |
+| **[Failure](DataStorage.DataStorage.DataStorageResultCode.md#failure)** = `400` <br> 未知错误失败                                 |
+| **[KeyValueError](DataStorage.DataStorage.DataStorageResultCode.md#keyvalueerror)** = `1010` <br> key 或者 Value 格式错误         |
+| **[OnlyServerCall](DataStorage.DataStorage.DataStorageResultCode.md#onlyservercall)** = `3` <br> 非法调用 只可服务器端调用        |
+| **[RequestIntervalTooClose](DataStorage.DataStorage.DataStorageResultCode.md#requestintervaltooclose)** = `423` <br> 请求间隔错误 |
+| **[RequestTooFrequent](DataStorage.DataStorage.DataStorageResultCode.md#requesttoofrequent)** = `424` <br> 请求频率过高           |
+| **[Success](DataStorage.DataStorage.DataStorageResultCode.md#success)** = `200` <br> 操作成功                                     |
 
 ## Enumeration Members
 
@@ -28,10 +26,6 @@
 
 数据保存失败：文件大小过大
 
-#### Defined in
-
-DataStorage/index.d.ts:13
-
 ---
 
 ### Failure
@@ -39,10 +33,6 @@ DataStorage/index.d.ts:13
 • **Failure** = `400`
 
 未知错误失败
-
-#### Defined in
-
-DataStorage/index.d.ts:11
 
 ---
 
@@ -52,10 +42,6 @@ DataStorage/index.d.ts:11
 
 key 或者 Value 格式错误
 
-#### Defined in
-
-DataStorage/index.d.ts:21
-
 ---
 
 ### OnlyServerCall
@@ -63,10 +49,6 @@ DataStorage/index.d.ts:21
 • **OnlyServerCall** = `3`
 
 非法调用 只可服务器端调用
-
-#### Defined in
-
-DataStorage/index.d.ts:15
 
 ---
 
@@ -76,10 +58,6 @@ DataStorage/index.d.ts:15
 
 请求间隔错误
 
-#### Defined in
-
-DataStorage/index.d.ts:17
-
 ---
 
 ### RequestTooFrequent
@@ -88,10 +66,6 @@ DataStorage/index.d.ts:17
 
 请求频率过高
 
-#### Defined in
-
-DataStorage/index.d.ts:19
-
 ---
 
 ### Success
@@ -99,7 +73,3 @@ DataStorage/index.d.ts:19
 • **Success** = `200`
 
 操作成功
-
-#### Defined in
-
-DataStorage/index.d.ts:9

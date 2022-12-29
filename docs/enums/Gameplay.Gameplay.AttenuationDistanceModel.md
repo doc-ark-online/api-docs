@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationDistanceModel
+[Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationDistanceModel
 
-# Enumeration: AttenuationDistanceModel
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AttenuationDistanceModel
+# AttenuationDistanceModel <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Inverse](Gameplay.Gameplay.AttenuationDistanceModel.md#inverse)
-- [Linear](Gameplay.Gameplay.AttenuationDistanceModel.md#linear)
-- [LogReverse](Gameplay.Gameplay.AttenuationDistanceModel.md#logreverse)
-- [Logarithmic](Gameplay.Gameplay.AttenuationDistanceModel.md#logarithmic)
+| Enumeration Members                                                                              |
+| :----------------------------------------------------------------------------------------------- |
+| **[Inverse](Gameplay.Gameplay.AttenuationDistanceModel.md#inverse)** = `2` <br> 倒数衰减         |
+| **[Linear](Gameplay.Gameplay.AttenuationDistanceModel.md#linear)** = `0` <br> 线性衰减           |
+| **[LogReverse](Gameplay.Gameplay.AttenuationDistanceModel.md#logreverse)** = `3` <br> 反指数衰减 |
+| **[Logarithmic](Gameplay.Gameplay.AttenuationDistanceModel.md#logarithmic)** = `1` <br> 指数衰减 |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 倒数衰减
 
-#### Defined in
-
-Gameplay/index.d.ts:9921
-
 ---
 
 ### Linear
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:9921
 • **Linear** = `0`
 
 线性衰减
-
-#### Defined in
-
-Gameplay/index.d.ts:9917
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:9917
 
 反指数衰减
 
-#### Defined in
-
-Gameplay/index.d.ts:9923
-
 ---
 
 ### Logarithmic
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:9923
 • **Logarithmic** = `1`
 
 指数衰减
-
-#### Defined in
-
-Gameplay/index.d.ts:9919

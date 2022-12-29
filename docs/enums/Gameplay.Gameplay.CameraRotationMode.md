@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CameraRotationMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / CameraRotationMode
 
-# Enumeration: CameraRotationMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CameraRotationMode
+# CameraRotationMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [RotationControl](Gameplay.Gameplay.CameraRotationMode.md#rotationcontrol)
-- [RotationFixed](Gameplay.Gameplay.CameraRotationMode.md#rotationfixed)
-- [RotationFollow](Gameplay.Gameplay.CameraRotationMode.md#rotationfollow)
+| Enumeration Members                                                                                      |
+| :------------------------------------------------------------------------------------------------------- |
+| **[RotationControl](Gameplay.Gameplay.CameraRotationMode.md#rotationcontrol)** = `2` <br> 旋转由输入控制 |
+| **[RotationFixed](Gameplay.Gameplay.CameraRotationMode.md#rotationfixed)** = `0` <br> 旋转固定           |
+| **[RotationFollow](Gameplay.Gameplay.CameraRotationMode.md#rotationfollow)** = `1` <br> 旋转跟随目标     |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 旋转由输入控制
 
-#### Defined in
-
-Gameplay/index.d.ts:1848
-
 ---
 
 ### RotationFixed
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:1848
 
 旋转固定
 
-#### Defined in
-
-Gameplay/index.d.ts:1844
-
 ---
 
 ### RotationFollow
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:1844
 • **RotationFollow** = `1`
 
 旋转跟随目标
-
-#### Defined in
-
-Gameplay/index.d.ts:1846

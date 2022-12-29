@@ -1,40 +1,20 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](../modules/Util.md) / [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Group
+[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Group
 
-# Class: Group
-
-[Util](../modules/Util.Util.md).[TweenUtil](../modules/Util.Util.TweenUtil.md).Group
-
-**`Author`**
-
-huipeng.jia
+# Group <Badge type="tip" text="Class" />
 
 **`Description`**
 
 补间组，用于同时控制多个补间对象
 
-**`Network Status`**
-
-usage: 双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Util.Util.TweenUtil.Group.md#constructor)
-
-### Methods
-
-- [add](Util.Util.TweenUtil.Group.md#add)
-- [getAll](Util.Util.TweenUtil.Group.md#getall)
-- [remove](Util.Util.TweenUtil.Group.md#remove)
-- [removeAll](Util.Util.TweenUtil.Group.md#removeall)
-- [update](Util.Util.TweenUtil.Group.md#update)
-
-## Constructors
-
-### constructor
-
-• **new Group**()
+| Methods                                                                                                                                                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[add](Util.Util.TweenUtil.Group.md#add)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象加入当前补间组             |
+| **[getAll](Util.Util.TweenUtil.Group.md#getall)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>[] <br> 获取当前补间组中所有补间对象           |
+| **[remove](Util.Util.TweenUtil.Group.md#remove)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除 |
+| **[removeAll](Util.Util.TweenUtil.Group.md#removeall)**(): `void` <br> 移除当前补间组中所有补间对象                                                                                                           |
+| **[update](Util.Util.TweenUtil.Group.md#update)**(`number`, `boolean`): `boolean` <br> 更新补间组                                                                                                             |
 
 ## Methods
 
@@ -52,17 +32,13 @@ usage: 双端
 
 #### Parameters
 
-| Name    | Type                                                                                                       | Description             |
-| :------ | :--------------------------------------------------------------------------------------------------------- | :---------------------- |
-| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | usage: 要添加的补间对象 |
+| Name    | Type                                                                                                       | Description      |
+| :------ | :--------------------------------------------------------------------------------------------------------- | :--------------- |
+| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | 要添加的补间对象 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Util/index.d.ts:898
 
 ---
 
@@ -84,10 +60,6 @@ Util/index.d.ts:898
 
 补间对象数组
 
-#### Defined in
-
-Util/index.d.ts:886
-
 ---
 
 ### remove
@@ -104,17 +76,13 @@ Util/index.d.ts:886
 
 #### Parameters
 
-| Name    | Type                                                                                                       | Description                   |
-| :------ | :--------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | usage: 要移出并删除的补间对象 |
+| Name    | Type                                                                                                       | Description            |
+| :------ | :--------------------------------------------------------------------------------------------------------- | :--------------------- |
+| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> | 要移出并删除的补间对象 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Util/index.d.ts:904
 
 ---
 
@@ -138,10 +106,6 @@ Util/index.d.ts:904
 
 `void`
 
-#### Defined in
-
-Util/index.d.ts:892
-
 ---
 
 ### update
@@ -160,28 +124,24 @@ Util/index.d.ts:892
 
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
 
-```
+```ts
 // 更新自定义补间组
-const group = new Extension.TweenUtil.Group()
-group.update()
+const group = new Extension.TweenUtil.Group();
+group.update();
 
 // 更新全局补间组
-Extension.TweenUtil.TWEEN.update()
+Extension.TweenUtil.TWEEN.update();
 ```
 
 #### Parameters
 
-| Name        | Type      | Description                                                                       |
-| :---------- | :-------- | :-------------------------------------------------------------------------------- |
-| `time?`     | `number`  | usage: 要为当前补间组中所有补间对象设置的时间，不是 deltaTime。 default: 当前时间 |
-| `preserve?` | `boolean` | usage: 已经结束的补间对象，是否在补间组中继续保留 default: false                  |
+| Name        | Type      | Description                                                                |
+| :---------- | :-------- | :------------------------------------------------------------------------- |
+| `time?`     | `number`  | 要为当前补间组中所有补间对象设置的时间，不是 deltaTime。 default: 当前时间 |
+| `preserve?` | `boolean` | 已经结束的补间对象，是否在补间组中继续保留 default: false                  |
 
 #### Returns
 
 `boolean`
 
 是否还有补间对象未结束。true-有未结束的补间对象；false-均已结束
-
-#### Defined in
-
-Util/index.d.ts:922

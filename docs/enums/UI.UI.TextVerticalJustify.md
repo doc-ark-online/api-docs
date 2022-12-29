@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / TextVerticalJustify
+[UI](../modules/UI.UI.md) / TextVerticalJustify
 
-# Enumeration: TextVerticalJustify
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).TextVerticalJustify
+# TextVerticalJustify <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Bottom](UI.UI.TextVerticalJustify.md#bottom)
-- [Center](UI.UI.TextVerticalJustify.md#center)
-- [Top](UI.UI.TextVerticalJustify.md#top)
+| Enumeration Members                                                   |
+| :-------------------------------------------------------------------- |
+| **[Bottom](UI.UI.TextVerticalJustify.md#bottom)** = `2` <br> 居下对齐 |
+| **[Center](UI.UI.TextVerticalJustify.md#center)** = `1` <br> 居中对齐 |
+| **[Top](UI.UI.TextVerticalJustify.md#top)** = `0` <br> 居上对齐       |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 居下对齐
 
-#### Defined in
-
-UI/index.d.ts:3495
-
 ---
 
 ### Center
@@ -36,10 +30,6 @@ UI/index.d.ts:3495
 
 居中对齐
 
-#### Defined in
-
-UI/index.d.ts:3493
-
 ---
 
 ### Top
@@ -47,7 +37,3 @@ UI/index.d.ts:3493
 • **Top** = `0`
 
 居上对齐
-
-#### Defined in
-
-UI/index.d.ts:3491

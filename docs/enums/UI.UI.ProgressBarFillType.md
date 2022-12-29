@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / ProgressBarFillType
+[UI](../modules/UI.UI.md) / ProgressBarFillType
 
-# Enumeration: ProgressBarFillType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).ProgressBarFillType
+# ProgressBarFillType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [BottomToTop](UI.UI.ProgressBarFillType.md#bottomtotop)
-- [FillFromCenter](UI.UI.ProgressBarFillType.md#fillfromcenter)
-- [LeftToRight](UI.UI.ProgressBarFillType.md#lefttoright)
-- [RightToLeft](UI.UI.ProgressBarFillType.md#righttoleft)
-- [TopToBottom](UI.UI.ProgressBarFillType.md#toptobottom)
+| Enumeration Members                                                                     |
+| :-------------------------------------------------------------------------------------- |
+| **[BottomToTop](UI.UI.ProgressBarFillType.md#bottomtotop)** = `4` <br> 从下到上         |
+| **[FillFromCenter](UI.UI.ProgressBarFillType.md#fillfromcenter)** = `2` <br> 从中心开始 |
+| **[LeftToRight](UI.UI.ProgressBarFillType.md#lefttoright)** = `0` <br> 从左到右         |
+| **[RightToLeft](UI.UI.ProgressBarFillType.md#righttoleft)** = `1` <br> 从右到左         |
+| **[TopToBottom](UI.UI.ProgressBarFillType.md#toptobottom)** = `3` <br> 从上到下         |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 从下到上
 
-#### Defined in
-
-UI/index.d.ts:3632
-
 ---
 
 ### FillFromCenter
@@ -37,10 +31,6 @@ UI/index.d.ts:3632
 • **FillFromCenter** = `2`
 
 从中心开始
-
-#### Defined in
-
-UI/index.d.ts:3628
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3628
 
 从左到右
 
-#### Defined in
-
-UI/index.d.ts:3624
-
 ---
 
 ### RightToLeft
@@ -62,10 +48,6 @@ UI/index.d.ts:3624
 
 从右到左
 
-#### Defined in
-
-UI/index.d.ts:3626
-
 ---
 
 ### TopToBottom
@@ -73,7 +55,3 @@ UI/index.d.ts:3626
 • **TopToBottom** = `3`
 
 从上到下
-
-#### Defined in
-
-UI/index.d.ts:3630

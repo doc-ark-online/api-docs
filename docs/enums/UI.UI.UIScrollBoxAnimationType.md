@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIScrollBoxAnimationType
+[UI](../modules/UI.UI.md) / UIScrollBoxAnimationType
 
-# Enumeration: UIScrollBoxAnimationType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIScrollBoxAnimationType
+# UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [ElasticAnimation](UI.UI.UIScrollBoxAnimationType.md#elasticanimation)
-- [Limit](UI.UI.UIScrollBoxAnimationType.md#limit)
-- [NoneLimit](UI.UI.UIScrollBoxAnimationType.md#nonelimit)
+| Enumeration Members                                                                            |
+| :--------------------------------------------------------------------------------------------- |
+| **[ElasticAnimation](UI.UI.UIScrollBoxAnimationType.md#elasticanimation)** = `0` <br> 弹性运动 |
+| **[Limit](UI.UI.UIScrollBoxAnimationType.md#limit)** = `2` <br> 限制                           |
+| **[NoneLimit](UI.UI.UIScrollBoxAnimationType.md#nonelimit)** = `1` <br> 不做限制               |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 弹性运动
 
-#### Defined in
-
-UI/index.d.ts:3411
-
 ---
 
 ### Limit
@@ -36,10 +30,6 @@ UI/index.d.ts:3411
 
 限制
 
-#### Defined in
-
-UI/index.d.ts:3415
-
 ---
 
 ### NoneLimit
@@ -47,7 +37,3 @@ UI/index.d.ts:3415
 • **NoneLimit** = `1`
 
 不做限制
-
-#### Defined in
-
-UI/index.d.ts:3413

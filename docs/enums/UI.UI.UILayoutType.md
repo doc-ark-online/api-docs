@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UILayoutType
+[UI](../modules/UI.UI.md) / UILayoutType
 
-# Enumeration: UILayoutType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UILayoutType
+# UILayoutType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Horizontal](UI.UI.UILayoutType.md#horizontal)
-- [Vertical](UI.UI.UILayoutType.md#vertical)
+| Enumeration Members                                                |
+| :----------------------------------------------------------------- |
+| **[Horizontal](UI.UI.UILayoutType.md#horizontal)** = `0` <br> 水平 |
+| **[Vertical](UI.UI.UILayoutType.md#vertical)** = `1` <br> 垂直     |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 水平
 
-#### Defined in
-
-UI/index.d.ts:3349
-
 ---
 
 ### Vertical
@@ -34,7 +28,3 @@ UI/index.d.ts:3349
 • **Vertical** = `1`
 
 垂直
-
-#### Defined in
-
-UI/index.d.ts:3351

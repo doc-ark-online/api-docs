@@ -1,46 +1,22 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / KeyEvent
+[UI](../modules/UI.UI.md) / KeyEvent
 
-# Class: KeyEvent
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).KeyEvent
-
-**`Author`**
-
-jie.wu
+# KeyEvent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 按键事件
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.KeyEvent.md#constructor)
-
-### Methods
-
-- [getKey](UI.UI.KeyEvent.md#getkey)
-- [getUserIndex](UI.UI.KeyEvent.md#getuserindex)
-- [toInputEvent](UI.UI.KeyEvent.md#toinputevent)
-
-## Constructors
-
-### constructor
-
-• `Private` **new KeyEvent**()
+| Methods                                                                                                            |
+| :----------------------------------------------------------------------------------------------------------------- |
+| **[getKey](UI.UI.KeyEvent.md#getkey)**(): [`KeyEvent`](UI.UI.KeyEvent.md) <br> 获取按下的键                        |
+| **[getUserIndex](UI.UI.KeyEvent.md#getuserindex)**(): `number` <br> 获取事件触发玩家 index                         |
+| **[toInputEvent](UI.UI.KeyEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent\* |
 
 **`Description`**
 
 默认构造
-
-#### Defined in
-
-UI/index.d.ts:4111
 
 ## Methods
 
@@ -62,10 +38,6 @@ UI/index.d.ts:4111
 
 返回按下的键
 
-#### Defined in
-
-UI/index.d.ts:4129
-
 ---
 
 ### getUserIndex
@@ -86,10 +58,6 @@ UI/index.d.ts:4129
 
 返回事件触发玩家 index
 
-#### Defined in
-
-UI/index.d.ts:4123
-
 ---
 
 ### toInputEvent
@@ -109,7 +77,3 @@ UI/index.d.ts:4123
 [`InputEvent`](UI.UI.InputEvent.md)
 
 返回转化后 InputEvent
-
-#### Defined in
-
-UI/index.d.ts:4117

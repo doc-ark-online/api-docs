@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CameraProjectionMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / CameraProjectionMode
 
-# Enumeration: CameraProjectionMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CameraProjectionMode
+# CameraProjectionMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Orthographic](Gameplay.Gameplay.CameraProjectionMode.md#orthographic)
-- [Perspective](Gameplay.Gameplay.CameraProjectionMode.md#perspective)
+| Enumeration Members                                                                                      |
+| :------------------------------------------------------------------------------------------------------- |
+| **[Orthographic](Gameplay.Gameplay.CameraProjectionMode.md#orthographic)** = `1` <br> 摄像机镜头正交模式 |
+| **[Perspective](Gameplay.Gameplay.CameraProjectionMode.md#perspective)** = `0` <br> 摄像机镜头透视模式   |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 摄像机镜头正交模式
 
-#### Defined in
-
-Gameplay/index.d.ts:1855
-
 ---
 
 ### Perspective
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:1855
 • **Perspective** = `0`
 
 摄像机镜头透视模式
-
-#### Defined in
-
-Gameplay/index.d.ts:1853

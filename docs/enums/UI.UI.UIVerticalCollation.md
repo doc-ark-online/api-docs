@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIVerticalCollation
+[UI](../modules/UI.UI.md) / UIVerticalCollation
 
-# Enumeration: UIVerticalCollation
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIVerticalCollation
+# UIVerticalCollation <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [BottomToTop](UI.UI.UIVerticalCollation.md#bottomtotop)
-- [TopToBottom](UI.UI.UIVerticalCollation.md#toptobottom)
+| Enumeration Members                                                                 |
+| :---------------------------------------------------------------------------------- |
+| **[BottomToTop](UI.UI.UIVerticalCollation.md#bottomtotop)** = `1` <br> 从下到上排序 |
+| **[TopToBottom](UI.UI.UIVerticalCollation.md#toptobottom)** = `0` <br> 从上到下排序 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 从下到上排序
 
-#### Defined in
-
-UI/index.d.ts:3391
-
 ---
 
 ### TopToBottom
@@ -34,7 +28,3 @@ UI/index.d.ts:3391
 • **TopToBottom** = `0`
 
 从上到下排序
-
-#### Defined in
-
-UI/index.d.ts:3389

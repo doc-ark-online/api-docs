@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EInitialOscillatorOffset
+[Gameplay](../modules/Gameplay.Gameplay.md) / EInitialOscillatorOffset
 
-# Enumeration: EInitialOscillatorOffset
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EInitialOscillatorOffset
+# EInitialOscillatorOffset <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Random](Gameplay.Gameplay.EInitialOscillatorOffset.md#random)
-- [Zero](Gameplay.Gameplay.EInitialOscillatorOffset.md#zero)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[Random](Gameplay.Gameplay.EInitialOscillatorOffset.md#random)** = `0` <br> 随机值 |
+| **[Zero](Gameplay.Gameplay.EInitialOscillatorOffset.md#zero)** = `1` <br> 零         |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 随机值
 
-#### Defined in
-
-Gameplay/index.d.ts:1937
-
 ---
 
 ### Zero
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:1937
 • **Zero** = `1`
 
 零
-
-#### Defined in
-
-Gameplay/index.d.ts:1939

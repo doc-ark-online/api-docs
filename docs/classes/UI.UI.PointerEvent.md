@@ -1,56 +1,32 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / PointerEvent
+[UI](../modules/UI.UI.md) / PointerEvent
 
-# Class: PointerEvent
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).PointerEvent
-
-**`Author`**
-
-jie.wu
+# PointerEvent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 点击或者滑动的时候传递 mobile touch,鼠标,键盘信息的类
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[effectingButton](UI.UI.PointerEvent.md#effectingbutton)**(): [`KeyEvent`](UI.UI.KeyEvent.md) <br> 获取响应的事件 key                           |
+| **[isTouchEvent](UI.UI.PointerEvent.md#istouchevent)**(): `boolean` <br> 判断是不是触摸事件                                                       |
+| **[lastScreenSpacePosition](UI.UI.PointerEvent.md#lastscreenspaceposition)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取该事件上一次的屏幕位置 |
+| **[mouseWheelDelta](UI.UI.PointerEvent.md#mousewheeldelta)**(): `number` <br> 获取鼠标滚轮滑动的距离                                              |
+| **[pointerIndex](UI.UI.PointerEvent.md#pointerindex)**(): `number` <br> 返回该事件的唯一标识 index                                                |
+| **[screenSpacePosition](UI.UI.PointerEvent.md#screenspaceposition)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取触发的屏幕位置                 |
+| **[touchPadIndex](UI.UI.PointerEvent.md#touchpadindex)**(): `number` <br> 获取触摸事件 index                                                      |
+| **[userIndex](UI.UI.PointerEvent.md#userindex)**(): `number` <br> 获取事件触发玩家的 index                                                        |
 
-- [constructor](UI.UI.PointerEvent.md#constructor)
-
-### Accessors
-
-- [effectingButton](UI.UI.PointerEvent.md#effectingbutton)
-- [isTouchEvent](UI.UI.PointerEvent.md#istouchevent)
-- [lastScreenSpacePosition](UI.UI.PointerEvent.md#lastscreenspaceposition)
-- [mouseWheelDelta](UI.UI.PointerEvent.md#mousewheeldelta)
-- [pointerIndex](UI.UI.PointerEvent.md#pointerindex)
-- [screenSpacePosition](UI.UI.PointerEvent.md#screenspaceposition)
-- [touchPadIndex](UI.UI.PointerEvent.md#touchpadindex)
-- [userIndex](UI.UI.PointerEvent.md#userindex)
-
-### Methods
-
-- [isMouseButtonDown](UI.UI.PointerEvent.md#ismousebuttondown)
-- [toInputEvent](UI.UI.PointerEvent.md#toinputevent)
-
-## Constructors
-
-### constructor
-
-• `Private` **new PointerEvent**()
+| Methods                                                                                                                                       |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[isMouseButtonDown](UI.UI.PointerEvent.md#ismousebuttondown)**([`Keys`](../enums/Type.Type.Keys.md)): `boolean` <br> 判断是不是鼠标按键事件 |
+| **[toInputEvent](UI.UI.PointerEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent                          |
 
 **`Description`**
 
 默认构造
-
-#### Defined in
-
-UI/index.d.ts:4153
 
 ## Accessors
 
@@ -72,10 +48,6 @@ UI/index.d.ts:4153
 
 返回响应的事件 key
 
-#### Defined in
-
-UI/index.d.ts:4214
-
 ---
 
 ### isTouchEvent
@@ -95,10 +67,6 @@ UI/index.d.ts:4214
 `boolean`
 
 返回是否是触摸事件
-
-#### Defined in
-
-UI/index.d.ts:4165
 
 ---
 
@@ -120,10 +88,6 @@ UI/index.d.ts:4165
 
 返回该事件上一次的屏幕位置
 
-#### Defined in
-
-UI/index.d.ts:4201
-
 ---
 
 ### mouseWheelDelta
@@ -143,10 +107,6 @@ UI/index.d.ts:4201
 `number`
 
 返回鼠标滚轮滑动距离
-
-#### Defined in
-
-UI/index.d.ts:4171
 
 ---
 
@@ -168,10 +128,6 @@ UI/index.d.ts:4171
 
 返回该事件的唯一标识 index
 
-#### Defined in
-
-UI/index.d.ts:4195
-
 ---
 
 ### screenSpacePosition
@@ -191,10 +147,6 @@ UI/index.d.ts:4195
 [`Vector2`](Type.Type.Vector2.md)
 
 返回触发的屏幕位置
-
-#### Defined in
-
-UI/index.d.ts:4189
 
 ---
 
@@ -216,10 +168,6 @@ UI/index.d.ts:4189
 
 返回触摸事件的 index
 
-#### Defined in
-
-UI/index.d.ts:4183
-
 ---
 
 ### userIndex
@@ -240,10 +188,6 @@ UI/index.d.ts:4183
 
 返回事件触发玩家的 index
 
-#### Defined in
-
-UI/index.d.ts:4177
-
 ## Methods
 
 ### isMouseButtonDown
@@ -260,19 +204,15 @@ UI/index.d.ts:4177
 
 #### Parameters
 
-| Name          | Type                                 | Description    |
-| :------------ | :----------------------------------- | :------------- |
-| `MouseButton` | [`Keys`](../enums/Type.Type.Keys.md) | usage:按键事件 |
+| Name          | Type                                 | Description |
+| :------------ | :----------------------------------- | :---------- |
+| `MouseButton` | [`Keys`](../enums/Type.Type.Keys.md) | 按键事件    |
 
 #### Returns
 
 `boolean`
 
 返回是不是鼠标按键事件
-
-#### Defined in
-
-UI/index.d.ts:4208
 
 ---
 
@@ -293,7 +233,3 @@ UI/index.d.ts:4208
 [`InputEvent`](UI.UI.InputEvent.md)
 
 返回转化后 InputEvent
-
-#### Defined in
-
-UI/index.d.ts:4159

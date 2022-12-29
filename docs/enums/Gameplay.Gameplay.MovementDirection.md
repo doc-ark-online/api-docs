@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / MovementDirection
+[Gameplay](../modules/Gameplay.Gameplay.md) / MovementDirection
 
-# Enumeration: MovementDirection
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).MovementDirection
+# MovementDirection <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [AxisDirection](Gameplay.Gameplay.MovementDirection.md#axisdirection)
-- [ControllerDirection](Gameplay.Gameplay.MovementDirection.md#controllerdirection)
-- [ViewDirection](Gameplay.Gameplay.MovementDirection.md#viewdirection)
+| Enumeration Members                                                                                         |
+| :---------------------------------------------------------------------------------------------------------- |
+| **[AxisDirection](Gameplay.Gameplay.MovementDirection.md#axisdirection)** = `0` <br> 给定轴方向             |
+| **[ControllerDirection](Gameplay.Gameplay.MovementDirection.md#controllerdirection)** = `2` <br> 控制器方向 |
+| **[ViewDirection](Gameplay.Gameplay.MovementDirection.md#viewdirection)** = `1` <br> 视口方向               |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 给定轴方向
 
-#### Defined in
-
-Gameplay/index.d.ts:1727
-
 ---
 
 ### ControllerDirection
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:1727
 
 控制器方向
 
-#### Defined in
-
-Gameplay/index.d.ts:1731
-
 ---
 
 ### ViewDirection
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:1731
 • **ViewDirection** = `1`
 
 视口方向
-
-#### Defined in
-
-Gameplay/index.d.ts:1729

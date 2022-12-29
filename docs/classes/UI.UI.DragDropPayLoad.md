@@ -1,44 +1,24 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / DragDropPayLoad
+[UI](../modules/UI.UI.md) / DragDropPayLoad
 
-# Class: DragDropPayLoad
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).DragDropPayLoad
-
-**`Author`**
-
-jie.wu
+# DragDropPayLoad <Badge type="tip" text="Class" />
 
 **`Description`**
 
 拖拽事件数据传递类
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                       |
+| :--------------------------------------------------------------- |
+| **[guidStr](UI.UI.DragDropPayLoad.md#guidstr)**: `any` <br> guid |
+| **[idStr](UI.UI.DragDropPayLoad.md#idstr)**: `any` <br> id       |
+| **[nameStr](UI.UI.DragDropPayLoad.md#namestr)**: `any` <br> name |
 
-- [constructor](UI.UI.DragDropPayLoad.md#constructor)
-
-### Properties
-
-- [guidStr](UI.UI.DragDropPayLoad.md#guidstr)
-- [idStr](UI.UI.DragDropPayLoad.md#idstr)
-- [nameStr](UI.UI.DragDropPayLoad.md#namestr)
-
-### Accessors
-
-- [guid](UI.UI.DragDropPayLoad.md#guid)
-- [id](UI.UI.DragDropPayLoad.md#id)
-- [name](UI.UI.DragDropPayLoad.md#name)
-
-## Constructors
-
-### constructor
-
-• **new DragDropPayLoad**()
+| Accessors                                                           |
+| :------------------------------------------------------------------ |
+| **[guid](UI.UI.DragDropPayLoad.md#guid)**(): `string` <br> guid     |
+| **[id](UI.UI.DragDropPayLoad.md#id)**(): `number` <br> 获取 id      |
+| **[name](UI.UI.DragDropPayLoad.md#name)**(): `string` <br> 获取名字 |
 
 ## Properties
 
@@ -50,10 +30,6 @@ usage:客户端
 
 guid
 
-#### Defined in
-
-UI/index.d.ts:540
-
 ---
 
 ### idStr
@@ -64,10 +40,6 @@ UI/index.d.ts:540
 
 id
 
-#### Defined in
-
-UI/index.d.ts:548
-
 ---
 
 ### nameStr
@@ -77,10 +49,6 @@ UI/index.d.ts:548
 **`Description`**
 
 name
-
-#### Defined in
-
-UI/index.d.ts:544
 
 ## Accessors
 
@@ -98,10 +66,6 @@ guid
 
 guid
 
-#### Defined in
-
-UI/index.d.ts:553
-
 ---
 
 ### id
@@ -117,10 +81,6 @@ UI/index.d.ts:553
 `number`
 
 id
-
-#### Defined in
-
-UI/index.d.ts:571
 
 • `set` **id**(`inId`): `void`
 
@@ -138,10 +98,6 @@ UI/index.d.ts:571
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:566
-
 ---
 
 ### name
@@ -158,10 +114,6 @@ UI/index.d.ts:566
 
 名字
 
-#### Defined in
-
-UI/index.d.ts:562
-
 • `set` **name**(`inName`): `void`
 
 **`Description`**
@@ -177,7 +129,3 @@ UI/index.d.ts:562
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:557

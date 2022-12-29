@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeV2
+[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeV2
 
-# Enumeration: SomatotypeV2
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).SomatotypeV2
+# SomatotypeV2 <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,15 +8,15 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [AnimeFemale](Gameplay.Gameplay.SomatotypeV2.md#animefemale)
-- [AnimeMale](Gameplay.Gameplay.SomatotypeV2.md#animemale)
-- [LowpolyAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)
-- [LowpolyAdultMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultmale)
-- [None](Gameplay.Gameplay.SomatotypeV2.md#none)
-- [RealisticAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)
-- [RealisticAdultMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultmale)
+| Enumeration Members                                                                                        |
+| :--------------------------------------------------------------------------------------------------------- |
+| **[AnimeFemale](Gameplay.Gameplay.SomatotypeV2.md#animefemale)** = `2` <br> 二次元成年女性                 |
+| **[AnimeMale](Gameplay.Gameplay.SomatotypeV2.md#animemale)** = `1` <br> 二次元成年男性                     |
+| **[LowpolyAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = `4` <br> Lowpoly 成年女性 |
+| **[LowpolyAdultMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultmale)** = `3` <br> Lowpoly 成年男性     |
+| **[None](Gameplay.Gameplay.SomatotypeV2.md#none)** = `0` <br> 空骨骼模型，默认二次元女骨架                 |
+| **[RealisticAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)** = `6` <br> 写实成年女性 |
+| **[RealisticAdultMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultmale)** = `5` <br> 写实成年男性     |
 
 ## Enumeration Members
 
@@ -28,10 +26,6 @@
 
 二次元成年女性
 
-#### Defined in
-
-Gameplay/index.d.ts:1891
-
 ---
 
 ### AnimeMale
@@ -39,10 +33,6 @@ Gameplay/index.d.ts:1891
 • **AnimeMale** = `1`
 
 二次元成年男性
-
-#### Defined in
-
-Gameplay/index.d.ts:1889
 
 ---
 
@@ -52,10 +42,6 @@ Gameplay/index.d.ts:1889
 
 Lowpoly 成年女性
 
-#### Defined in
-
-Gameplay/index.d.ts:1895
-
 ---
 
 ### LowpolyAdultMale
@@ -63,10 +49,6 @@ Gameplay/index.d.ts:1895
 • **LowpolyAdultMale** = `3`
 
 Lowpoly 成年男性
-
-#### Defined in
-
-Gameplay/index.d.ts:1893
 
 ---
 
@@ -76,10 +58,6 @@ Gameplay/index.d.ts:1893
 
 空骨骼模型，默认二次元女骨架
 
-#### Defined in
-
-Gameplay/index.d.ts:1887
-
 ---
 
 ### RealisticAdultFemale
@@ -88,10 +66,6 @@ Gameplay/index.d.ts:1887
 
 写实成年女性
 
-#### Defined in
-
-Gameplay/index.d.ts:1899
-
 ---
 
 ### RealisticAdultMale
@@ -99,7 +73,3 @@ Gameplay/index.d.ts:1899
 • **RealisticAdultMale** = `5`
 
 写实成年男性
-
-#### Defined in
-
-Gameplay/index.d.ts:1897

@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AxisType
+[Gameplay](../modules/Gameplay.Gameplay.md) / AxisType
 
-# Enumeration: AxisType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AxisType
+# AxisType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [X](Gameplay.Gameplay.AxisType.md#x)
-- [Y](Gameplay.Gameplay.AxisType.md#y)
-- [Z](Gameplay.Gameplay.AxisType.md#z)
+| Enumeration Members                                      |
+| :------------------------------------------------------- |
+| **[X](Gameplay.Gameplay.AxisType.md#x)** = `0` <br> X 轴 |
+| **[Y](Gameplay.Gameplay.AxisType.md#y)** = `1` <br> Y 轴 |
+| **[Z](Gameplay.Gameplay.AxisType.md#z)** = `2` <br> Z 轴 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 X 轴
 
-#### Defined in
-
-Gameplay/index.d.ts:12160
-
 ---
 
 ### Y
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:12160
 
 Y 轴
 
-#### Defined in
-
-Gameplay/index.d.ts:12162
-
 ---
 
 ### Z
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:12162
 • **Z** = `2`
 
 Z 轴
-
-#### Defined in
-
-Gameplay/index.d.ts:12164

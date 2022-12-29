@@ -1,46 +1,26 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HitResult
+[Gameplay](../modules/Gameplay.Gameplay.md) / HitResult
 
-# Class: HitResult
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HitResult
-
-**`Author`**
-
-xiangkun.sun
+# HitResult <Badge type="tip" text="Class" />
 
 **`Description`**
 
 命中结果
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Gameplay.Gameplay.HitResult.md#constructor)
-
-### Properties
-
-- [blockingHit](Gameplay.Gameplay.HitResult.md#blockinghit)
-- [boneName](Gameplay.Gameplay.HitResult.md#bonename)
-- [distance](Gameplay.Gameplay.HitResult.md#distance)
-- [gameObject](Gameplay.Gameplay.HitResult.md#gameobject)
-- [impactNormal](Gameplay.Gameplay.HitResult.md#impactnormal)
-- [impactPoint](Gameplay.Gameplay.HitResult.md#impactpoint)
-- [location](Gameplay.Gameplay.HitResult.md#location)
-- [normal](Gameplay.Gameplay.HitResult.md#normal)
-- [time](Gameplay.Gameplay.HitResult.md#time)
-- [traceEnd](Gameplay.Gameplay.HitResult.md#traceend)
-- [traceStart](Gameplay.Gameplay.HitResult.md#tracestart)
-
-## Constructors
-
-### constructor
-
-• **new HitResult**()
+| Properties                                                                                                                          |
+| :---------------------------------------------------------------------------------------------------------------------------------- |
+| **[blockingHit](Gameplay.Gameplay.HitResult.md#blockinghit)**: `boolean` <br> 是否击中了物体，如果发生了碰撞则为 true, 否则为 false |
+| **[boneName](Gameplay.Gameplay.HitResult.md#bonename)**: `string` <br> 碰撞的骨骼名称                                               |
+| **[distance](Gameplay.Gameplay.HitResult.md#distance)**: `number` <br> 距离，traceStart 到 location 的距离                          |
+| **[gameObject](Gameplay.Gameplay.HitResult.md#gameobject)**: `GameObject` <br> 命中的 GameObject                                    |
+| **[impactNormal](Gameplay.Gameplay.HitResult.md#impactnormal)**: [`Vector`](Type.Type.Vector.md) <br> 接触点的法线                  |
+| **[impactPoint](Gameplay.Gameplay.HitResult.md#impactpoint)**: [`Vector`](Type.Type.Vector.md) <br> 碰撞发生的接触点                |
+| **[location](Gameplay.Gameplay.HitResult.md#location)**: [`Vector`](Type.Type.Vector.md) <br> 碰撞发生的位置点                      |
+| **[normal](Gameplay.Gameplay.HitResult.md#normal)**: [`Vector`](Type.Type.Vector.md) <br> 碰撞位置法线                              |
+| **[time](Gameplay.Gameplay.HitResult.md#time)**: `number` <br> 时间                                                                 |
+| **[traceEnd](Gameplay.Gameplay.HitResult.md#traceend)**: [`Vector`](Type.Type.Vector.md) <br> 碰撞检测的终点位置                    |
+| **[traceStart](Gameplay.Gameplay.HitResult.md#tracestart)**: [`Vector`](Type.Type.Vector.md) <br> 碰撞检测的起点位置                |
 
 ## Properties
 
@@ -52,10 +32,6 @@ usage:双端
 
 是否击中了物体，如果发生了碰撞则为 true, 否则为 false
 
-#### Defined in
-
-Gameplay/index.d.ts:2433
-
 ---
 
 ### boneName
@@ -65,10 +41,6 @@ Gameplay/index.d.ts:2433
 **`Description`**
 
 碰撞的骨骼名称
-
-#### Defined in
-
-Gameplay/index.d.ts:2469
 
 ---
 
@@ -80,10 +52,6 @@ Gameplay/index.d.ts:2469
 
 距离，traceStart 到 location 的距离
 
-#### Defined in
-
-Gameplay/index.d.ts:2441
-
 ---
 
 ### gameObject
@@ -93,10 +61,6 @@ Gameplay/index.d.ts:2441
 **`Description`**
 
 命中的 GameObject
-
-#### Defined in
-
-Gameplay/index.d.ts:2473
 
 ---
 
@@ -108,10 +72,6 @@ Gameplay/index.d.ts:2473
 
 接触点的法线
 
-#### Defined in
-
-Gameplay/index.d.ts:2457
-
 ---
 
 ### impactPoint
@@ -121,10 +81,6 @@ Gameplay/index.d.ts:2457
 **`Description`**
 
 碰撞发生的接触点
-
-#### Defined in
-
-Gameplay/index.d.ts:2449
 
 ---
 
@@ -136,10 +92,6 @@ Gameplay/index.d.ts:2449
 
 碰撞发生的位置点
 
-#### Defined in
-
-Gameplay/index.d.ts:2445
-
 ---
 
 ### normal
@@ -149,10 +101,6 @@ Gameplay/index.d.ts:2445
 **`Description`**
 
 碰撞位置法线
-
-#### Defined in
-
-Gameplay/index.d.ts:2453
 
 ---
 
@@ -164,10 +112,6 @@ Gameplay/index.d.ts:2453
 
 时间
 
-#### Defined in
-
-Gameplay/index.d.ts:2437
-
 ---
 
 ### traceEnd
@@ -178,10 +122,6 @@ Gameplay/index.d.ts:2437
 
 碰撞检测的终点位置
 
-#### Defined in
-
-Gameplay/index.d.ts:2465
-
 ---
 
 ### traceStart
@@ -191,7 +131,3 @@ Gameplay/index.d.ts:2465
 **`Description`**
 
 碰撞检测的起点位置
-
-#### Defined in
-
-Gameplay/index.d.ts:2461

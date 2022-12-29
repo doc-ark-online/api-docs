@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UITextHorizontalLayout
+[UI](../modules/UI.UI.md) / UITextHorizontalLayout
 
-# Enumeration: UITextHorizontalLayout
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UITextHorizontalLayout
+# UITextHorizontalLayout <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [AutoWarpText](UI.UI.UITextHorizontalLayout.md#autowarptext)
-- [Clipping](UI.UI.UITextHorizontalLayout.md#clipping)
-- [NoClipping](UI.UI.UITextHorizontalLayout.md#noclipping)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[AutoWarpText](UI.UI.UITextHorizontalLayout.md#autowarptext)** = `0` <br> 自动换行 |
+| **[Clipping](UI.UI.UITextHorizontalLayout.md#clipping)** = `1` <br> 裁剪             |
+| **[NoClipping](UI.UI.UITextHorizontalLayout.md#noclipping)** = `2` <br> 不裁剪       |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 自动换行
 
-#### Defined in
-
-UI/index.d.ts:3399
-
 ---
 
 ### Clipping
@@ -36,10 +30,6 @@ UI/index.d.ts:3399
 
 裁剪
 
-#### Defined in
-
-UI/index.d.ts:3401
-
 ---
 
 ### NoClipping
@@ -47,7 +37,3 @@ UI/index.d.ts:3401
 • **NoClipping** = `2`
 
 不裁剪
-
-#### Defined in
-
-UI/index.d.ts:3403

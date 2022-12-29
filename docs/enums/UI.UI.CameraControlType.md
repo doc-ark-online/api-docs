@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / CameraControlType
+[UI](../modules/UI.UI.md) / CameraControlType
 
-# Enumeration: CameraControlType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).CameraControlType
+# CameraControlType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [CameraType](UI.UI.CameraControlType.md#cameratype)
-- [MoveType](UI.UI.CameraControlType.md#movetype)
-- [None](UI.UI.CameraControlType.md#none)
+| Enumeration Members                                                          |
+| :--------------------------------------------------------------------------- |
+| **[CameraType](UI.UI.CameraControlType.md#cameratype)** = `2` <br> 相机 控制 |
+| **[MoveType](UI.UI.CameraControlType.md#movetype)** = `1` <br> 移动 控制     |
+| **[None](UI.UI.CameraControlType.md#none)** = `0` <br> 无控制类型            |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 相机 控制
 
-#### Defined in
-
-UI/index.d.ts:3598
-
 ---
 
 ### MoveType
@@ -36,10 +30,6 @@ UI/index.d.ts:3598
 
 移动 控制
 
-#### Defined in
-
-UI/index.d.ts:3596
-
 ---
 
 ### None
@@ -47,7 +37,3 @@ UI/index.d.ts:3596
 • **None** = `0`
 
 无控制类型
-
-#### Defined in
-
-UI/index.d.ts:3594

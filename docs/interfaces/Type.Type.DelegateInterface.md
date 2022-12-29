@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / DelegateInterface
+[Type](../modules/Type.Type.md) / DelegateInterface
 
-# Interface: DelegateInterface<T\>
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).DelegateInterface
-
-**`Author`**
-
-xiangkun.sun
+# DelegateInterface<T\> <Badge type="tip" text="Interface" />
 
 **`Description`**
 
@@ -28,12 +22,12 @@ xiangkun.sun
 
 ## Table of contents
 
-### Methods
-
-- [bind](Type.Type.DelegateInterface.md#bind)
-- [execute](Type.Type.DelegateInterface.md#execute)
-- [isBound](Type.Type.DelegateInterface.md#isbound)
-- [unbind](Type.Type.DelegateInterface.md#unbind)
+| Methods                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------- |
+| **[bind](Type.Type.DelegateInterface.md#bind)**(`T`): `void` <br> 绑定函数                                      |
+| **[execute](Type.Type.DelegateInterface.md#execute)**(`Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数 |
+| **[isBound](Type.Type.DelegateInterface.md#isbound)**(): `boolean` <br> 是否绑定                                |
+| **[unbind](Type.Type.DelegateInterface.md#unbind)**(): `void` <br> 解绑函数                                     |
 
 ## Methods
 
@@ -51,17 +45,13 @@ xiangkun.sun
 
 #### Parameters
 
-| Name   | Type | Description                |
-| :----- | :--- | :------------------------- |
-| `func` | `T`  | usage: 绑定的函数 default: |
+| Name   | Type | Description         |
+| :----- | :--- | :------------------ |
+| `func` | `T`  | 绑定的函数 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:57
 
 ---
 
@@ -79,19 +69,15 @@ Type/index.d.ts:57
 
 #### Parameters
 
-| Name     | Type               | Description     |
-| :------- | :----------------- | :-------------- |
-| `...arg` | `Parameters`<`T`\> | usage: 执行参数 |
+| Name     | Type               | Description |
+| :------- | :----------------- | :---------- |
+| `...arg` | `Parameters`<`T`\> | 执行参数    |
 
 #### Returns
 
 `ReturnType`<`T`\>
 
 执行参数类型
-
-#### Defined in
-
-Type/index.d.ts:75
 
 ---
 
@@ -113,10 +99,6 @@ Type/index.d.ts:75
 
 是否绑定
 
-#### Defined in
-
-Type/index.d.ts:68
-
 ---
 
 ### unbind
@@ -134,7 +116,3 @@ Type/index.d.ts:68
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:62

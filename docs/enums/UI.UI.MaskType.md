@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / MaskType
+[UI](../modules/UI.UI.md) / MaskType
 
-# Enumeration: MaskType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).MaskType
+# MaskType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [MTCircle](UI.UI.MaskType.md#mtcircle)
-- [MTFanShaped](UI.UI.MaskType.md#mtfanshaped)
-- [MTRoundRect](UI.UI.MaskType.md#mtroundrect)
+| Enumeration Members                                              |
+| :--------------------------------------------------------------- |
+| **[MTCircle](UI.UI.MaskType.md#mtcircle)** = `0` <br> 圆形       |
+| **[MTFanShaped](UI.UI.MaskType.md#mtfanshaped)** = `1` <br> 扇形 |
+| **[MTRoundRect](UI.UI.MaskType.md#mtroundrect)** = `2` <br> 圆角 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 圆形
 
-#### Defined in
-
-UI/index.d.ts:3736
-
 ---
 
 ### MTFanShaped
@@ -36,10 +30,6 @@ UI/index.d.ts:3736
 
 扇形
 
-#### Defined in
-
-UI/index.d.ts:3738
-
 ---
 
 ### MTRoundRect
@@ -47,7 +37,3 @@ UI/index.d.ts:3738
 • **MTRoundRect** = `2`
 
 圆角
-
-#### Defined in
-
-UI/index.d.ts:3740

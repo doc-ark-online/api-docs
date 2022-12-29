@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [MobileEditor](../modules/MobileEditor.md) / [MobileEditor](../modules/MobileEditor.MobileEditor.md) / GizmoModeType
+[MobileEditor](../modules/MobileEditor.MobileEditor.md) / GizmoModeType
 
-# Enumeration: GizmoModeType
-
-[MobileEditor](../modules/MobileEditor.md).[MobileEditor](../modules/MobileEditor.MobileEditor.md).GizmoModeType
+# GizmoModeType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@ gizmo 类型
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Location](MobileEditor.MobileEditor.GizmoModeType.md#location)
-- [Rotation](MobileEditor.MobileEditor.GizmoModeType.md#rotation)
-- [Scale](MobileEditor.MobileEditor.GizmoModeType.md#scale)
+| Enumeration Members                                                                 |
+| :---------------------------------------------------------------------------------- |
+| **[Location](MobileEditor.MobileEditor.GizmoModeType.md#location)** = `0` <br> 位置 |
+| **[Rotation](MobileEditor.MobileEditor.GizmoModeType.md#rotation)** = `1` <br> 旋转 |
+| **[Scale](MobileEditor.MobileEditor.GizmoModeType.md#scale)** = `2` <br> 大小       |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@ gizmo 类型
 
 位置
 
-#### Defined in
-
-MobileEditor/index.d.ts:627
-
 ---
 
 ### Rotation
@@ -36,10 +30,6 @@ MobileEditor/index.d.ts:627
 
 旋转
 
-#### Defined in
-
-MobileEditor/index.d.ts:629
-
 ---
 
 ### Scale
@@ -47,7 +37,3 @@ MobileEditor/index.d.ts:629
 • **Scale** = `2`
 
 大小
-
-#### Defined in
-
-MobileEditor/index.d.ts:631

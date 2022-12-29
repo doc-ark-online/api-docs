@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / AdsState
+[Service](../modules/Service.Service.md) / AdsState
 
-# Enumeration: AdsState
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).AdsState
+# AdsState <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Close](Service.Service.AdsState.md#close)
-- [Fail](Service.Service.AdsState.md#fail)
-- [Reward](Service.Service.AdsState.md#reward)
-- [Success](Service.Service.AdsState.md#success)
+| Enumeration Members                                                    |
+| :--------------------------------------------------------------------- |
+| **[Close](Service.Service.AdsState.md#close)** = `1` <br> 用户关闭     |
+| **[Fail](Service.Service.AdsState.md#fail)** = `-1` <br> 展示失败      |
+| **[Reward](Service.Service.AdsState.md#reward)** = `4` <br> 获得奖励   |
+| **[Success](Service.Service.AdsState.md#success)** = `0` <br> 开始展示 |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 用户关闭
 
-#### Defined in
-
-Service/index.d.ts:181
-
 ---
 
 ### Fail
@@ -36,10 +30,6 @@ Service/index.d.ts:181
 • **Fail** = `-1`
 
 展示失败
-
-#### Defined in
-
-Service/index.d.ts:177
 
 ---
 
@@ -49,10 +39,6 @@ Service/index.d.ts:177
 
 获得奖励
 
-#### Defined in
-
-Service/index.d.ts:185
-
 ---
 
 ### Success
@@ -60,7 +46,3 @@ Service/index.d.ts:185
 • **Success** = `0`
 
 开始展示
-
-#### Defined in
-
-Service/index.d.ts:179

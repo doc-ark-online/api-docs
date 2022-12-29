@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / SlateVisibility
+[UI](../modules/UI.UI.md) / SlateVisibility
 
-# Enumeration: SlateVisibility
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).SlateVisibility
+# SlateVisibility <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@ UI 节点显示规则
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Collapsed](UI.UI.SlateVisibility.md#collapsed)
-- [Hidden](UI.UI.SlateVisibility.md#hidden)
-- [HitTestInvisible](UI.UI.SlateVisibility.md#hittestinvisible)
-- [SelfHitTestInvisible](UI.UI.SlateVisibility.md#selfhittestinvisible)
-- [Visible](UI.UI.SlateVisibility.md#visible)
+| Enumeration Members                                                                                          |
+| :----------------------------------------------------------------------------------------------------------- |
+| **[Collapsed](UI.UI.SlateVisibility.md#collapsed)** = `1` <br> 隐藏 并且不占用大小                           |
+| **[Hidden](UI.UI.SlateVisibility.md#hidden)** = `2` <br> 隐藏 占用计算大小                                   |
+| **[HitTestInvisible](UI.UI.SlateVisibility.md#hittestinvisible)** = `3` <br> 可见 自身以及子节点不可响应事件 |
+| **[SelfHitTestInvisible](UI.UI.SlateVisibility.md#selfhittestinvisible)** = `4` <br> 可见 自身不可响应事件   |
+| **[Visible](UI.UI.SlateVisibility.md#visible)** = `0` <br> 可见                                              |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@ UI 节点显示规则
 
 隐藏 并且不占用大小
 
-#### Defined in
-
-UI/index.d.ts:3566
-
 ---
 
 ### Hidden
@@ -37,10 +31,6 @@ UI/index.d.ts:3566
 • **Hidden** = `2`
 
 隐藏 占用计算大小
-
-#### Defined in
-
-UI/index.d.ts:3568
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3568
 
 可见 自身以及子节点不可响应事件
 
-#### Defined in
-
-UI/index.d.ts:3570
-
 ---
 
 ### SelfHitTestInvisible
@@ -62,10 +48,6 @@ UI/index.d.ts:3570
 
 可见 自身不可响应事件
 
-#### Defined in
-
-UI/index.d.ts:3572
-
 ---
 
 ### Visible
@@ -73,7 +55,3 @@ UI/index.d.ts:3572
 • **Visible** = `0`
 
 可见
-
-#### Defined in
-
-UI/index.d.ts:3564

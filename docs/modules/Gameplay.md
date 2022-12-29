@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Gameplay
 
-# Module: Gameplay
-
-## Table of contents
+# Gameplay <Badge type="tip" text="Module" />
 
 ### Namespaces
 

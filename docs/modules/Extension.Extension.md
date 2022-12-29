@@ -1,12 +1,11 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Extension](Extension.md) / Extension
+Extension
 
-# Namespace: Extension
-
-[Extension](Extension.md).Extension
+# Extension <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
-### Classes
+| Classes                                                                             |
+| :---------------------------------------------------------------------------------- |
+| [GameObjPool](../classes/Extension.Extension.GameObjPool.md) <br> GameObject 对象池 |
 
-- [GameObjPool](../classes/Extension.Extension.GameObjPool.md)
 - [ObjPool](../classes/Extension.Extension.ObjPool.md)

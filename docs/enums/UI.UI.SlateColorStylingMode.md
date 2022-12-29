@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / SlateColorStylingMode
+[UI](../modules/UI.UI.md) / SlateColorStylingMode
 
-# Enumeration: SlateColorStylingMode
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).SlateColorStylingMode
+# SlateColorStylingMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@ UI 颜色应用模式
 
 ## Table of contents
 
-### Enumeration Members
-
-- [UseColorForeground](UI.UI.SlateColorStylingMode.md#usecolorforeground)
-- [UseColorForegroundSubdued](UI.UI.SlateColorStylingMode.md#usecolorforegroundsubdued)
-- [UseColorSpecified](UI.UI.SlateColorStylingMode.md#usecolorspecified)
-- [UseColorSpecifiedLink](UI.UI.SlateColorStylingMode.md#usecolorspecifiedlink)
+| Enumeration Members                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------- |
+| **[UseColorForeground](UI.UI.SlateColorStylingMode.md#usecolorforeground)** = `2` <br> 使用部件的前景色。               |
+| **[UseColorForegroundSubdued](UI.UI.SlateColorStylingMode.md#usecolorforegroundsubdued)** = `3` <br> 使用部件的柔和颜色 |
+| **[UseColorSpecified](UI.UI.SlateColorStylingMode.md#usecolorspecified)** = `0` <br> 颜色值存储在此颜色中               |
+| **[UseColorSpecifiedLink](UI.UI.SlateColorStylingMode.md#usecolorspecifiedlink)** = `1` <br> 颜色值存储在链接的颜色中   |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@ UI 颜色应用模式
 
 使用部件的前景色。
 
-#### Defined in
-
-UI/index.d.ts:3644
-
 ---
 
 ### UseColorForegroundSubdued
@@ -36,10 +30,6 @@ UI/index.d.ts:3644
 • **UseColorForegroundSubdued** = `3`
 
 使用部件的柔和颜色
-
-#### Defined in
-
-UI/index.d.ts:3646
 
 ---
 
@@ -49,10 +39,6 @@ UI/index.d.ts:3646
 
 颜色值存储在此颜色中
 
-#### Defined in
-
-UI/index.d.ts:3640
-
 ---
 
 ### UseColorSpecifiedLink
@@ -60,7 +46,3 @@ UI/index.d.ts:3640
 • **UseColorSpecifiedLink** = `1`
 
 颜色值存储在链接的颜色中
-
-#### Defined in
-
-UI/index.d.ts:3642

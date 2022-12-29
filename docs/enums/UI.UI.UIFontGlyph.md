@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIFontGlyph
+[UI](../modules/UI.UI.md) / UIFontGlyph
 
-# Enumeration: UIFontGlyph
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIFontGlyph
+# UIFontGlyph <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Bold](UI.UI.UIFontGlyph.md#bold)
-- [BoldItalics](UI.UI.UIFontGlyph.md#bolditalics)
-- [Italics](UI.UI.UIFontGlyph.md#italics)
-- [Light](UI.UI.UIFontGlyph.md#light)
-- [Normal](UI.UI.UIFontGlyph.md#normal)
+| Enumeration Members                                                   |
+| :-------------------------------------------------------------------- |
+| **[Bold](UI.UI.UIFontGlyph.md#bold)** = `1` <br> 粗体                 |
+| **[BoldItalics](UI.UI.UIFontGlyph.md#bolditalics)** = `4` <br> 粗斜体 |
+| **[Italics](UI.UI.UIFontGlyph.md#italics)** = `3` <br> 斜体           |
+| **[Light](UI.UI.UIFontGlyph.md#light)** = `2` <br> 细体               |
+| **[Normal](UI.UI.UIFontGlyph.md#normal)** = `0` <br> 普通             |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 粗体
 
-#### Defined in
-
-UI/index.d.ts:3455
-
 ---
 
 ### BoldItalics
@@ -37,10 +31,6 @@ UI/index.d.ts:3455
 • **BoldItalics** = `4`
 
 粗斜体
-
-#### Defined in
-
-UI/index.d.ts:3461
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3461
 
 斜体
 
-#### Defined in
-
-UI/index.d.ts:3459
-
 ---
 
 ### Light
@@ -62,10 +48,6 @@ UI/index.d.ts:3459
 
 细体
 
-#### Defined in
-
-UI/index.d.ts:3457
-
 ---
 
 ### Normal
@@ -73,7 +55,3 @@ UI/index.d.ts:3457
 • **Normal** = `0`
 
 普通
-
-#### Defined in
-
-UI/index.d.ts:3453

@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
+[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
 
-# Class: PhysicsStick
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).PhysicsStick
-
-**`Author`**
-
-baoqiang.han
+# PhysicsStick <Badge type="tip" text="Class" />
 
 **`Description`**
 
 物理杆组件
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -24,97 +14,83 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------- |
+| **[constraintTarget1](Gameplay.Gameplay.PhysicsStick.md#constrainttarget1)**(): `string` <br> 获取约束对象 1                             |
+| **[constraintTarget2](Gameplay.Gameplay.PhysicsStick.md#constrainttarget2)**(): `string` <br> 获取约束对象 2                             |
+| **[forwardVector](Gameplay.Gameplay.PhysicsStick.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量      |
+| **[guid](Gameplay.Gameplay.PhysicsStick.md#guid)**(): `string` <br> 获取对象的 guid（唯一标识一个对象的字符串）。                        |
+| **[lockStatus](Gameplay.Gameplay.PhysicsStick.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定                                        |
+| **[name](Gameplay.Gameplay.PhysicsStick.md#name)**(): `string` <br> 返回当前物体名称                                                     |
+| **[netStatus](Gameplay.Gameplay.PhysicsStick.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态 |
+| **[parent](Gameplay.Gameplay.PhysicsStick.md#parent)**(): `GameObject` <br> 获取当前父物体                                               |
+| **[relativeLocation](Gameplay.Gameplay.PhysicsStick.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置          |
+| **[relativeRotation](Gameplay.Gameplay.PhysicsStick.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转      |
+| **[relativeScale](Gameplay.Gameplay.PhysicsStick.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                |
+| **[rightVector](Gameplay.Gameplay.PhysicsStick.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量          |
+| **[staticStatus](Gameplay.Gameplay.PhysicsStick.md#staticstatus)**(): `boolean` <br> 获取对象是否静态                                    |
+| **[tag](Gameplay.Gameplay.PhysicsStick.md#tag)**(): `string` <br> 获取当前物体的 Tag                                                     |
+| **[transform](Gameplay.Gameplay.PhysicsStick.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 transform        |
+| **[upVector](Gameplay.Gameplay.PhysicsStick.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                |
+| **[useUpdate](Gameplay.Gameplay.PhysicsStick.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新                                      |
+| **[visible](Gameplay.Gameplay.PhysicsStick.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()     |
+| **[worldLocation](Gameplay.Gameplay.PhysicsStick.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标          |
+| **[worldRotation](Gameplay.Gameplay.PhysicsStick.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转      |
+| **[worldScale](Gameplay.Gameplay.PhysicsStick.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                |
 
-- [constructor](Gameplay.Gameplay.PhysicsStick.md#constructor)
-
-### Accessors
-
-- [constraintTarget1](Gameplay.Gameplay.PhysicsStick.md#constrainttarget1)
-- [constraintTarget2](Gameplay.Gameplay.PhysicsStick.md#constrainttarget2)
-- [forwardVector](Gameplay.Gameplay.PhysicsStick.md#forwardvector)
-- [guid](Gameplay.Gameplay.PhysicsStick.md#guid)
-- [lockStatus](Gameplay.Gameplay.PhysicsStick.md#lockstatus)
-- [name](Gameplay.Gameplay.PhysicsStick.md#name)
-- [netStatus](Gameplay.Gameplay.PhysicsStick.md#netstatus)
-- [parent](Gameplay.Gameplay.PhysicsStick.md#parent)
-- [relativeLocation](Gameplay.Gameplay.PhysicsStick.md#relativelocation)
-- [relativeRotation](Gameplay.Gameplay.PhysicsStick.md#relativerotation)
-- [relativeScale](Gameplay.Gameplay.PhysicsStick.md#relativescale)
-- [rightVector](Gameplay.Gameplay.PhysicsStick.md#rightvector)
-- [staticStatus](Gameplay.Gameplay.PhysicsStick.md#staticstatus)
-- [tag](Gameplay.Gameplay.PhysicsStick.md#tag)
-- [transform](Gameplay.Gameplay.PhysicsStick.md#transform)
-- [upVector](Gameplay.Gameplay.PhysicsStick.md#upvector)
-- [useUpdate](Gameplay.Gameplay.PhysicsStick.md#useupdate)
-- [visible](Gameplay.Gameplay.PhysicsStick.md#visible)
-- [worldLocation](Gameplay.Gameplay.PhysicsStick.md#worldlocation)
-- [worldRotation](Gameplay.Gameplay.PhysicsStick.md#worldrotation)
-- [worldScale](Gameplay.Gameplay.PhysicsStick.md#worldscale)
-
-### Methods
-
-- [addDestroyCallback](Gameplay.Gameplay.PhysicsStick.md#adddestroycallback)
-- [asyncGetScriptByName](Gameplay.Gameplay.PhysicsStick.md#asyncgetscriptbyname)
-- [attachToGameObject](Gameplay.Gameplay.PhysicsStick.md#attachtogameobject)
-- [clone](Gameplay.Gameplay.PhysicsStick.md#clone)
-- [deleteDestroyCallback](Gameplay.Gameplay.PhysicsStick.md#deletedestroycallback)
-- [destroy](Gameplay.Gameplay.PhysicsStick.md#destroy)
-- [detachFromGameObject](Gameplay.Gameplay.PhysicsStick.md#detachfromgameobject)
-- [getBoundingBoxSize](Gameplay.Gameplay.PhysicsStick.md#getboundingboxsize)
-- [getBounds](Gameplay.Gameplay.PhysicsStick.md#getbounds)
-- [getChildByGuid](Gameplay.Gameplay.PhysicsStick.md#getchildbyguid)
-- [getChildByName](Gameplay.Gameplay.PhysicsStick.md#getchildbyname)
-- [getChildren](Gameplay.Gameplay.PhysicsStick.md#getchildren)
-- [getChildrenBoxCenter](Gameplay.Gameplay.PhysicsStick.md#getchildrenboxcenter)
-- [getCollision](Gameplay.Gameplay.PhysicsStick.md#getcollision)
-- [getForwardVector](Gameplay.Gameplay.PhysicsStick.md#getforwardvector)
-- [getRelativeLocation](Gameplay.Gameplay.PhysicsStick.md#getrelativelocation)
-- [getRelativeRotation](Gameplay.Gameplay.PhysicsStick.md#getrelativerotation)
-- [getRelativeScale](Gameplay.Gameplay.PhysicsStick.md#getrelativescale)
-- [getRightVector](Gameplay.Gameplay.PhysicsStick.md#getrightvector)
-- [getScriptByGuid](Gameplay.Gameplay.PhysicsStick.md#getscriptbyguid)
-- [getScriptByName](Gameplay.Gameplay.PhysicsStick.md#getscriptbyname)
-- [getScripts](Gameplay.Gameplay.PhysicsStick.md#getscripts)
-- [getSourceAssetGuid](Gameplay.Gameplay.PhysicsStick.md#getsourceassetguid)
-- [getTransform](Gameplay.Gameplay.PhysicsStick.md#gettransform)
-- [getUpVector](Gameplay.Gameplay.PhysicsStick.md#getupvector)
-- [getVisibility](Gameplay.Gameplay.PhysicsStick.md#getvisibility)
-- [getWorldLocation](Gameplay.Gameplay.PhysicsStick.md#getworldlocation)
-- [getWorldRotation](Gameplay.Gameplay.PhysicsStick.md#getworldrotation)
-- [getWorldScale](Gameplay.Gameplay.PhysicsStick.md#getworldscale)
-- [isRunningClient](Gameplay.Gameplay.PhysicsStick.md#isrunningclient)
-- [onDestroy](Gameplay.Gameplay.PhysicsStick.md#ondestroy)
-- [onStart](Gameplay.Gameplay.PhysicsStick.md#onstart)
-- [onUpdate](Gameplay.Gameplay.PhysicsStick.md#onupdate)
-- [ready](Gameplay.Gameplay.PhysicsStick.md#ready)
-- [setCollision](Gameplay.Gameplay.PhysicsStick.md#setcollision)
-- [setLocationAndRotation](Gameplay.Gameplay.PhysicsStick.md#setlocationandrotation)
-- [setRelativeLocation](Gameplay.Gameplay.PhysicsStick.md#setrelativelocation)
-- [setRelativeRotation](Gameplay.Gameplay.PhysicsStick.md#setrelativerotation)
-- [setRelativeScale](Gameplay.Gameplay.PhysicsStick.md#setrelativescale)
-- [setTransform](Gameplay.Gameplay.PhysicsStick.md#settransform)
-- [setVisibility](Gameplay.Gameplay.PhysicsStick.md#setvisibility)
-- [setWorldLocation](Gameplay.Gameplay.PhysicsStick.md#setworldlocation)
-- [setWorldRotation](Gameplay.Gameplay.PhysicsStick.md#setworldrotation)
-- [setWorldScale](Gameplay.Gameplay.PhysicsStick.md#setworldscale)
-- [asyncFind](Gameplay.Gameplay.PhysicsStick.md#asyncfind)
-- [asyncSpawnGameObject](Gameplay.Gameplay.PhysicsStick.md#asyncspawngameobject)
-- [find](Gameplay.Gameplay.PhysicsStick.md#find)
-- [findGameObjectByTag](Gameplay.Gameplay.PhysicsStick.md#findgameobjectbytag)
-- [getGameObjectByName](Gameplay.Gameplay.PhysicsStick.md#getgameobjectbyname)
-- [getGameObjectsByName](Gameplay.Gameplay.PhysicsStick.md#getgameobjectsbyname)
-- [spawnGameObject](Gameplay.Gameplay.PhysicsStick.md#spawngameobject)
-
-## Constructors
-
-### constructor
-
-• **new PhysicsStick**()
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[constructor](Gameplay.Gameplay.PhysicsConstraintBase.md#constructor)
+| Methods                                                                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addDestroyCallback](Gameplay.Gameplay.PhysicsStick.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体 Destroy 事件回调                                                                   |
+| **[asyncGetScriptByName](Gameplay.Gameplay.PhysicsStick.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系                                                  |
+| **[attachToGameObject](Gameplay.Gameplay.PhysicsStick.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上                                                                                           |
+| **[clone](Gameplay.Gameplay.PhysicsStick.md#clone)**(`boolean`): `GameObject` <br> 复制对象                                                                                                                                |
+| **[deleteDestroyCallback](Gameplay.Gameplay.PhysicsStick.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体 Destroy 事件回调                                                             |
+| **[destroy](Gameplay.Gameplay.PhysicsStick.md#destroy)**(): `void` <br> 删除对象                                                                                                                                           |
+| **[detachFromGameObject](Gameplay.Gameplay.PhysicsStick.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离                                                                                             |
+| **[getBoundingBoxSize](Gameplay.Gameplay.PhysicsStick.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小                             |
+| **[getBounds](Gameplay.Gameplay.PhysicsStick.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取 GameObject 边界                                     |
+| **[getChildByGuid](Gameplay.Gameplay.PhysicsStick.md#getchildbyguid)**(`string`): `GameObject` <br> 根据 Guid 查找子物体                                                                                                   |
+| **[getChildByName](Gameplay.Gameplay.PhysicsStick.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体                                                                                                     |
+| **[getChildren](Gameplay.Gameplay.PhysicsStick.md#getchildren)**(): `GameObject`[] <br> 获取 Children，客户端不维系父子关系。推荐使用 Find 替代                                                                            |
+| **[getChildrenBoxCenter](Gameplay.Gameplay.PhysicsStick.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0]) |
+| **[getCollision](Gameplay.Gameplay.PhysicsStick.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态             |
+| **[getForwardVector](Gameplay.Gameplay.PhysicsStick.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                   |
+| **[getRelativeLocation](Gameplay.Gameplay.PhysicsStick.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                       |
+| **[getRelativeRotation](Gameplay.Gameplay.PhysicsStick.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                               |
+| **[getRelativeScale](Gameplay.Gameplay.PhysicsStick.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                             |
+| **[getRightVector](Gameplay.Gameplay.PhysicsStick.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                       |
+| **[getScriptByGuid](Gameplay.Gameplay.PhysicsStick.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                         |
+| **[getScriptByName](Gameplay.Gameplay.PhysicsStick.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                         |
+| **[getScripts](Gameplay.Gameplay.PhysicsStick.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                         |
+| **[getSourceAssetGuid](Gameplay.Gameplay.PhysicsStick.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的 GUID                                                                                                |
+| **[getTransform](Gameplay.Gameplay.PhysicsStick.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 Transform                                               |
+| **[getUpVector](Gameplay.Gameplay.PhysicsStick.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                             |
+| **[getVisibility](Gameplay.Gameplay.PhysicsStick.md#getvisibility)**(): `boolean` <br> 获取 GameObject 是否被显示                                                                                                          |
+| **[getWorldLocation](Gameplay.Gameplay.PhysicsStick.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                       |
+| **[getWorldRotation](Gameplay.Gameplay.PhysicsStick.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                               |
+| **[getWorldScale](Gameplay.Gameplay.PhysicsStick.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                             |
+| **[isRunningClient](Gameplay.Gameplay.PhysicsStick.md#isrunningclient)**(): `boolean` <br> 是否为客户端                                                                                                                    |
+| **[onDestroy](Gameplay.Gameplay.PhysicsStick.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用                                                                                                                          |
+| **[onStart](Gameplay.Gameplay.PhysicsStick.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用                                                                                                                        |
+| **[onUpdate](Gameplay.Gameplay.PhysicsStick.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为 false,不会执行                                                                       |
+| **[ready](Gameplay.Gameplay.PhysicsStick.md#ready)**(): `Promise`<[`PhysicsStick`](Gameplay.Gameplay.PhysicsStick.md)\> <br> GameObject 准备好后返回                                                                       |
+| **[setCollision](Gameplay.Gameplay.PhysicsStick.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态                                                        |
+| **[setLocationAndRotation](Gameplay.Gameplay.PhysicsStick.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转                     |
+| **[setRelativeLocation](Gameplay.Gameplay.PhysicsStick.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置                                                                                |
+| **[setRelativeRotation](Gameplay.Gameplay.PhysicsStick.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转                                                                            |
+| **[setRelativeScale](Gameplay.Gameplay.PhysicsStick.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放                                                                                      |
+| **[setTransform](Gameplay.Gameplay.PhysicsStick.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体 transform                                                                              |
+| **[setVisibility](Gameplay.Gameplay.PhysicsStick.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置 GameObject 是否被显示                                          |
+| **[setWorldLocation](Gameplay.Gameplay.PhysicsStick.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标                                                                                |
+| **[setWorldRotation](Gameplay.Gameplay.PhysicsStick.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转                                                                            |
+| **[setWorldScale](Gameplay.Gameplay.PhysicsStick.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放                                                                                      |
+| **[asyncFind](Gameplay.Gameplay.PhysicsStick.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);                                |
+| **[asyncSpawnGameObject](Gameplay.Gameplay.PhysicsStick.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建                            |
+| **[find](Gameplay.Gameplay.PhysicsStick.md#find)**(`string`): `GameObject` <br> 通过 Guid 查找 GameObject                                                                                                                  |
+| **[findGameObjectByTag](Gameplay.Gameplay.PhysicsStick.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义 Tag 获取 GameObject                                                                             |
+| **[getGameObjectByName](Gameplay.Gameplay.PhysicsStick.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体                                                                                             |
+| **[getGameObjectsByName](Gameplay.Gameplay.PhysicsStick.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体                                                                                         |
+| **[spawnGameObject](Gameplay.Gameplay.PhysicsStick.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject                                                                                       |
 
 ## Accessors
 
@@ -130,14 +106,6 @@ usage:双端
 
 `string`
 
-#### Inherited from
-
-PhysicsConstraintBase.constraintTarget1
-
-#### Defined in
-
-Gameplay/index.d.ts:12176
-
 • `set` **constraintTarget1**(`guid`): `void`
 
 **`Description`**
@@ -150,21 +118,13 @@ Gameplay/index.d.ts:12176
 
 #### Parameters
 
-| Name   | Type     | Description              |
-| :----- | :------- | :----------------------- |
-| `guid` | `string` | usage:约束对象 1 的 GUID |
+| Name   | Type     | Description        |
+| :----- | :------- | :----------------- |
+| `guid` | `string` | 约束对象 1 的 GUID |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.constraintTarget1
-
-#### Defined in
-
-Gameplay/index.d.ts:12182
 
 ---
 
@@ -180,14 +140,6 @@ Gameplay/index.d.ts:12182
 
 `string`
 
-#### Inherited from
-
-PhysicsConstraintBase.constraintTarget2
-
-#### Defined in
-
-Gameplay/index.d.ts:12186
-
 • `set` **constraintTarget2**(`guid`): `void`
 
 **`Description`**
@@ -200,21 +152,13 @@ Gameplay/index.d.ts:12186
 
 #### Parameters
 
-| Name   | Type     | Description              |
-| :----- | :------- | :----------------------- |
-| `guid` | `string` | usage:约束对象 2 的 GUID |
+| Name   | Type     | Description        |
+| :----- | :------- | :----------------- |
+| `guid` | `string` | 约束对象 2 的 GUID |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.constraintTarget2
-
-#### Defined in
-
-Gameplay/index.d.ts:12192
 
 ---
 
@@ -236,14 +180,6 @@ Gameplay/index.d.ts:12192
 
 Vector
 
-#### Inherited from
-
-PhysicsConstraintBase.forwardVector
-
-#### Defined in
-
-Core/index.d.ts:409
-
 ---
 
 ### guid
@@ -262,14 +198,6 @@ Core/index.d.ts:409
 
 `string`
 
-#### Inherited from
-
-PhysicsConstraintBase.guid
-
-#### Defined in
-
-Core/index.d.ts:39
-
 ---
 
 ### lockStatus
@@ -287,14 +215,6 @@ Core/index.d.ts:39
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-PhysicsConstraintBase.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:456
 
 • `set` **lockStatus**(`v`): `void`
 
@@ -316,14 +236,6 @@ Core/index.d.ts:456
 
 `void`
 
-#### Inherited from
-
-PhysicsConstraintBase.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:451
-
 ---
 
 ### name
@@ -344,14 +256,6 @@ Core/index.d.ts:451
 
 名称
 
-#### Inherited from
-
-PhysicsConstraintBase.name
-
-#### Defined in
-
-Core/index.d.ts:171
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -364,21 +268,13 @@ Core/index.d.ts:171
 
 #### Parameters
 
-| Name   | Type     | Description          |
-| :----- | :------- | :------------------- |
-| `name` | `string` | usage:需要设置的名称 |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
+| `name` | `string` | 需要设置的名称 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.name
-
-#### Defined in
-
-Core/index.d.ts:177
 
 ---
 
@@ -400,14 +296,6 @@ Core/index.d.ts:177
 
 Type.NetStatus
 
-#### Inherited from
-
-PhysicsConstraintBase.netStatus
-
-#### Defined in
-
-Core/index.d.ts:513
-
 ---
 
 ### parent
@@ -427,14 +315,6 @@ Core/index.d.ts:513
 `GameObject`
 
 父物体
-
-#### Inherited from
-
-PhysicsConstraintBase.parent
-
-#### Defined in
-
-Core/index.d.ts:462
 
 • `set` **parent**(`newParent`): `void`
 
@@ -456,14 +336,6 @@ Core/index.d.ts:462
 
 `void`
 
-#### Inherited from
-
-PhysicsConstraintBase.parent
-
-#### Defined in
-
-Core/index.d.ts:467
-
 ---
 
 ### relativeLocation
@@ -484,14 +356,6 @@ Core/index.d.ts:467
 
 位置坐标
 
-#### Inherited from
-
-PhysicsConstraintBase.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:308
-
 • `set` **relativeLocation**(`location`): `void`
 
 **`Description`**
@@ -506,19 +370,11 @@ Core/index.d.ts:308
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:314
 
 ---
 
@@ -540,14 +396,6 @@ Core/index.d.ts:314
 
 旋转角度
 
-#### Inherited from
-
-PhysicsConstraintBase.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:334
-
 • `set` **relativeRotation**(`rotation`): `void`
 
 **`Description`**
@@ -562,19 +410,11 @@ Core/index.d.ts:334
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:340
 
 ---
 
@@ -596,14 +436,6 @@ Core/index.d.ts:340
 
 相对缩放
 
-#### Inherited from
-
-PhysicsConstraintBase.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:360
-
 • `set` **relativeScale**(`scale`): `void`
 
 **`Description`**
@@ -618,19 +450,11 @@ Core/index.d.ts:360
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放  |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:366
 
 ---
 
@@ -652,14 +476,6 @@ Core/index.d.ts:366
 
 Vector
 
-#### Inherited from
-
-PhysicsConstraintBase.rightVector
-
-#### Defined in
-
-Core/index.d.ts:423
-
 ---
 
 ### staticStatus
@@ -677,14 +493,6 @@ Core/index.d.ts:423
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-PhysicsConstraintBase.staticStatus
-
-#### Defined in
-
-Core/index.d.ts:446
 
 ---
 
@@ -706,14 +514,6 @@ Core/index.d.ts:446
 
 Tag
 
-#### Inherited from
-
-PhysicsConstraintBase.tag
-
-#### Defined in
-
-Core/index.d.ts:189
-
 • `set` **tag**(`tag`): `void`
 
 **`Description`**
@@ -728,19 +528,11 @@ Core/index.d.ts:189
 
 | Name  | Type     | Description |
 | :---- | :------- | :---------- |
-| `tag` | `string` | usage:Tag   |
+| `tag` | `string` | Tag         |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.tag
-
-#### Defined in
-
-Core/index.d.ts:183
 
 ---
 
@@ -762,14 +554,6 @@ Core/index.d.ts:183
 
 transform
 
-#### Inherited from
-
-PhysicsConstraintBase.transform
-
-#### Defined in
-
-Core/index.d.ts:209
-
 • `set` **transform**(`transform`): `void`
 
 **`Description`**
@@ -782,21 +566,13 @@ Core/index.d.ts:209
 
 #### Parameters
 
-| Name        | Type                                  | Description              |
-| :---------- | :------------------------------------ | :----------------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:要设置的 transform |
+| Name        | Type                                  | Description        |
+| :---------- | :------------------------------------ | :----------------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的 transform |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.transform
-
-#### Defined in
-
-Core/index.d.ts:215
 
 ---
 
@@ -818,14 +594,6 @@ Core/index.d.ts:215
 
 Vector
 
-#### Inherited from
-
-PhysicsConstraintBase.upVector
-
-#### Defined in
-
-Core/index.d.ts:396
-
 ---
 
 ### useUpdate
@@ -843,14 +611,6 @@ Core/index.d.ts:396
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-PhysicsConstraintBase.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
@@ -871,14 +631,6 @@ Core/index.d.ts:441
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:436
 
 ---
 
@@ -904,14 +656,6 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 
 bool
 
-#### Inherited from
-
-PhysicsConstraintBase.visible
-
-#### Defined in
-
-Core/index.d.ts:507
-
 ---
 
 ### worldLocation
@@ -929,14 +673,6 @@ Core/index.d.ts:507
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-PhysicsConstraintBase.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -958,14 +694,6 @@ Core/index.d.ts:234
 
 `void`
 
-#### Inherited from
-
-PhysicsConstraintBase.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:239
-
 ---
 
 ### worldRotation
@@ -984,14 +712,6 @@ Core/index.d.ts:239
 
 [`Rotation`](Type.Type.Rotation.md)
 
-#### Inherited from
-
-PhysicsConstraintBase.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:258
-
 • `set` **worldRotation**(`rotation`): `void`
 
 **`Description`**
@@ -1004,21 +724,13 @@ Core/index.d.ts:258
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PhysicsConstraintBase.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:264
 
 ---
 
@@ -1037,14 +749,6 @@ Core/index.d.ts:264
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-PhysicsConstraintBase.worldScale
-
-#### Defined in
-
-Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -1066,14 +770,6 @@ Core/index.d.ts:283
 
 `void`
 
-#### Inherited from
-
-PhysicsConstraintBase.worldScale
-
-#### Defined in
-
-Core/index.d.ts:288
-
 ## Methods
 
 ### addDestroyCallback
@@ -1090,21 +786,13 @@ Core/index.d.ts:288
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[addDestroyCallback](Gameplay.Gameplay.PhysicsConstraintBase.md#adddestroycallback)
-
-#### Defined in
-
-Core/index.d.ts:627
 
 ---
 
@@ -1124,21 +812,13 @@ Core/index.d.ts:627
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Promise`<`Script`\>
 
 Script
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[asyncGetScriptByName](Gameplay.Gameplay.PhysicsConstraintBase.md#asyncgetscriptbyname)
-
-#### Defined in
-
-Core/index.d.ts:574
 
 ---
 
@@ -1158,19 +838,11 @@ Core/index.d.ts:574
 
 | Name  | Type         | Description |
 | :---- | :----------- | :---------- |
-| `obj` | `GameObject` | usage:物体  |
+| `obj` | `GameObject` | 物体        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[attachToGameObject](Gameplay.Gameplay.PhysicsConstraintBase.md#attachtogameobject)
-
-#### Defined in
-
-Core/index.d.ts:594
 
 ---
 
@@ -1188,23 +860,15 @@ Core/index.d.ts:594
 
 #### Parameters
 
-| Name            | Type      | Description                 |
-| :-------------- | :-------- | :-------------------------- |
-| `inReplicates?` | `boolean` | usage:是否复制 default:true |
+| Name            | Type      | Description           |
+| :-------------- | :-------- | :-------------------- |
+| `inReplicates?` | `boolean` | 是否复制 default:true |
 
 #### Returns
 
 `GameObject`
 
 克隆的对象
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[clone](Gameplay.Gameplay.PhysicsConstraintBase.md#clone)
-
-#### Defined in
-
-Core/index.d.ts:554
 
 ---
 
@@ -1222,21 +886,13 @@ Core/index.d.ts:554
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[deleteDestroyCallback](Gameplay.Gameplay.PhysicsConstraintBase.md#deletedestroycallback)
-
-#### Defined in
-
-Core/index.d.ts:633
 
 ---
 
@@ -1256,14 +912,6 @@ Core/index.d.ts:633
 
 `void`
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[destroy](Gameplay.Gameplay.PhysicsConstraintBase.md#destroy)
-
-#### Defined in
-
-Core/index.d.ts:150
-
 ---
 
 ### detachFromGameObject
@@ -1281,14 +929,6 @@ Core/index.d.ts:150
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[detachFromGameObject](Gameplay.Gameplay.PhysicsConstraintBase.md#detachfromgameobject)
-
-#### Defined in
-
-Core/index.d.ts:599
 
 ---
 
@@ -1310,25 +950,17 @@ Core/index.d.ts:599
 
 #### Parameters
 
-| Name                      | Type                            | Description                                        |
-| :------------------------ | :------------------------------ | :------------------------------------------------- |
-| `nonColliding?`           | `boolean`                       | usage:表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean`                       | usage:如果为 true，则递归子物体 default:false      |
-| `outer?`                  | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null      |
+| Name                      | Type                            | Description                                  |
+| :------------------------ | :------------------------------ | :------------------------------------------- |
+| `nonColliding?`           | `boolean`                       | 表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean`                       | 如果为 true，则递归子物体 default:false      |
+| `outer?`                  | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null      |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getBoundingBoxSize](Gameplay.Gameplay.PhysicsConstraintBase.md#getboundingboxsize)
-
-#### Defined in
-
-Core/index.d.ts:609
 
 ---
 
@@ -1346,24 +978,16 @@ Core/index.d.ts:609
 
 #### Parameters
 
-| Name                      | Type                            | Description                                      |
-| :------------------------ | :------------------------------ | :----------------------------------------------- |
-| `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
-| `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
+| Name                      | Type                            | Description                                |
+| :------------------------ | :------------------------------ | :----------------------------------------- |
+| `onlyCollidingComponents` | `boolean`                       | 是否只包含有碰撞的组件。                   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 尺寸的一半。   |
+| `includeFromChildActors?` | `boolean`                       | 是否递归包含子物体 default:undefined       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getBounds](Gameplay.Gameplay.PhysicsConstraintBase.md#getbounds)
-
-#### Defined in
-
-Core/index.d.ts:198
 
 ---
 
@@ -1383,21 +1007,13 @@ Core/index.d.ts:198
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getChildByGuid](Gameplay.Gameplay.PhysicsConstraintBase.md#getchildbyguid)
-
-#### Defined in
-
-Core/index.d.ts:547
 
 ---
 
@@ -1417,21 +1033,13 @@ Core/index.d.ts:547
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名称  |
+| `name` | `string` | 名称        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getChildByName](Gameplay.Gameplay.PhysicsConstraintBase.md#getchildbyname)
-
-#### Defined in
-
-Core/index.d.ts:540
 
 ---
 
@@ -1453,14 +1061,6 @@ Core/index.d.ts:540
 
 Array`<GameObject>`
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getChildren](Gameplay.Gameplay.PhysicsConstraintBase.md#getchildren)
-
-#### Defined in
-
-Core/index.d.ts:533
-
 ---
 
 ### getChildrenBoxCenter
@@ -1481,23 +1081,15 @@ Core/index.d.ts:533
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getChildrenBoxCenter](Gameplay.Gameplay.PhysicsConstraintBase.md#getchildrenboxcenter)
-
-#### Defined in
-
-Core/index.d.ts:621
 
 ---
 
@@ -1519,14 +1111,6 @@ Core/index.d.ts:621
 
 碰撞状态
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getCollision](Gameplay.Gameplay.PhysicsConstraintBase.md#getcollision)
-
-#### Defined in
-
-Core/index.d.ts:484
-
 ---
 
 ### getForwardVector
@@ -1547,23 +1131,15 @@ Core/index.d.ts:484
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getForwardVector](Gameplay.Gameplay.PhysicsConstraintBase.md#getforwardvector)
-
-#### Defined in
-
-Core/index.d.ts:417
 
 ---
 
@@ -1585,23 +1161,15 @@ Core/index.d.ts:417
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 位置坐标
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getRelativeLocation](Gameplay.Gameplay.PhysicsConstraintBase.md#getrelativelocation)
-
-#### Defined in
-
-Core/index.d.ts:322
 
 ---
 
@@ -1623,23 +1191,15 @@ Core/index.d.ts:322
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 旋转角度
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getRelativeRotation](Gameplay.Gameplay.PhysicsConstraintBase.md#getrelativerotation)
-
-#### Defined in
-
-Core/index.d.ts:348
 
 ---
 
@@ -1661,23 +1221,15 @@ Core/index.d.ts:348
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 相对缩放
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getRelativeScale](Gameplay.Gameplay.PhysicsConstraintBase.md#getrelativescale)
-
-#### Defined in
-
-Core/index.d.ts:374
 
 ---
 
@@ -1699,23 +1251,15 @@ Core/index.d.ts:374
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getRightVector](Gameplay.Gameplay.PhysicsConstraintBase.md#getrightvector)
-
-#### Defined in
-
-Core/index.d.ts:431
 
 ---
 
@@ -1735,21 +1279,13 @@ Core/index.d.ts:431
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getScriptByGuid](Gameplay.Gameplay.PhysicsConstraintBase.md#getscriptbyguid)
-
-#### Defined in
-
-Core/index.d.ts:581
 
 ---
 
@@ -1769,21 +1305,13 @@ Core/index.d.ts:581
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getScriptByName](Gameplay.Gameplay.PhysicsConstraintBase.md#getscriptbyname)
-
-#### Defined in
-
-Core/index.d.ts:567
 
 ---
 
@@ -1805,14 +1333,6 @@ Core/index.d.ts:567
 
 Array`<Script>`
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getScripts](Gameplay.Gameplay.PhysicsConstraintBase.md#getscripts)
-
-#### Defined in
-
-Core/index.d.ts:560
-
 ---
 
 ### getSourceAssetGuid
@@ -1832,14 +1352,6 @@ Core/index.d.ts:560
 `string`
 
 资源的 GUID
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getSourceAssetGuid](Gameplay.Gameplay.PhysicsConstraintBase.md#getsourceassetguid)
-
-#### Defined in
-
-Core/index.d.ts:639
 
 ---
 
@@ -1861,23 +1373,15 @@ Core/index.d.ts:639
 
 #### Parameters
 
-| Name     | Type                                  | Description                                      |
-| :------- | :------------------------------------ | :----------------------------------------------- |
-| `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接收转换数据的 Transform 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `outer?` | [`Transform`](Type.Type.Transform.md) | 接收转换数据的 Transform 对象 default:null |
 
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
 
 Transform
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getTransform](Gameplay.Gameplay.PhysicsConstraintBase.md#gettransform)
-
-#### Defined in
-
-Core/index.d.ts:223
 
 ---
 
@@ -1895,23 +1399,15 @@ Core/index.d.ts:223
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getUpVector](Gameplay.Gameplay.PhysicsConstraintBase.md#getupvector)
-
-#### Defined in
-
-Core/index.d.ts:403
 
 ---
 
@@ -1933,14 +1429,6 @@ Core/index.d.ts:403
 
 bool
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getVisibility](Gameplay.Gameplay.PhysicsConstraintBase.md#getvisibility)
-
-#### Defined in
-
-Core/index.d.ts:490
-
 ---
 
 ### getWorldLocation
@@ -1961,23 +1449,15 @@ Core/index.d.ts:490
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界位置坐标
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getWorldLocation](Gameplay.Gameplay.PhysicsConstraintBase.md#getworldlocation)
-
-#### Defined in
-
-Core/index.d.ts:247
 
 ---
 
@@ -1999,23 +1479,15 @@ Core/index.d.ts:247
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 世界旋转
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getWorldRotation](Gameplay.Gameplay.PhysicsConstraintBase.md#getworldrotation)
-
-#### Defined in
-
-Core/index.d.ts:272
 
 ---
 
@@ -2037,23 +1509,15 @@ Core/index.d.ts:272
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界缩放
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getWorldScale](Gameplay.Gameplay.PhysicsConstraintBase.md#getworldscale)
-
-#### Defined in
-
-Core/index.d.ts:296
 
 ---
 
@@ -2075,14 +1539,6 @@ Core/index.d.ts:296
 
 true 为客户端
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[isRunningClient](Gameplay.Gameplay.PhysicsConstraintBase.md#isrunningclient)
-
-#### Defined in
-
-Core/index.d.ts:50
-
 ---
 
 ### onDestroy
@@ -2100,14 +1556,6 @@ Core/index.d.ts:50
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[onDestroy](Gameplay.Gameplay.PhysicsConstraintBase.md#ondestroy)
-
-#### Defined in
-
-Core/index.d.ts:18
 
 ---
 
@@ -2127,14 +1575,6 @@ Core/index.d.ts:18
 
 `void`
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[onStart](Gameplay.Gameplay.PhysicsConstraintBase.md#onstart)
-
-#### Defined in
-
-Core/index.d.ts:13
-
 ---
 
 ### onUpdate
@@ -2151,21 +1591,13 @@ Core/index.d.ts:13
 
 #### Parameters
 
-| Name | Type     | Description                  |
-| :--- | :------- | :--------------------------- |
-| `dt` | `number` | usage:与上一帧的延迟 单位:秒 |
+| Name | Type     | Description            |
+| :--- | :------- | :--------------------- |
+| `dt` | `number` | 与上一帧的延迟 单位:秒 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[onUpdate](Gameplay.Gameplay.PhysicsConstraintBase.md#onupdate)
-
-#### Defined in
-
-Core/index.d.ts:24
 
 ---
 
@@ -2187,14 +1619,6 @@ GameObject 准备好后返回
 
 准备好的对象
 
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[ready](Gameplay.Gameplay.PhysicsConstraintBase.md#ready)
-
-#### Defined in
-
-Core/index.d.ts:126
-
 ---
 
 ### setCollision
@@ -2215,22 +1639,14 @@ Core/index.d.ts:126
 
 #### Parameters
 
-| Name                   | Type                                                                                                                   | Description                                                      |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | usage: 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean`                                                                                                              | usage: 是否传递给子节点 default: false                           |
+| Name                   | Type                                                                                                                   | Description                                               |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean`                                                                                                              | 是否传递给子节点 default: false                           |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setCollision](Gameplay.Gameplay.PhysicsConstraintBase.md#setcollision)
-
-#### Defined in
-
-Core/index.d.ts:475
 
 ---
 
@@ -2248,22 +1664,14 @@ Core/index.d.ts:475
 
 #### Parameters
 
-| Name       | Type                                | Description    |
-| :--------- | :---------------------------------- | :------------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | usage:世界位置 |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:世界旋转 |
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `location` | [`Vector`](Type.Type.Vector.md)     | 世界位置    |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setLocationAndRotation](Gameplay.Gameplay.PhysicsConstraintBase.md#setlocationandrotation)
-
-#### Defined in
-
-Core/index.d.ts:387
 
 ---
 
@@ -2283,19 +1691,11 @@ Core/index.d.ts:387
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setRelativeLocation](Gameplay.Gameplay.PhysicsConstraintBase.md#setrelativelocation)
-
-#### Defined in
-
-Core/index.d.ts:328
 
 ---
 
@@ -2315,19 +1715,11 @@ Core/index.d.ts:328
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setRelativeRotation](Gameplay.Gameplay.PhysicsConstraintBase.md#setrelativerotation)
-
-#### Defined in
-
-Core/index.d.ts:354
 
 ---
 
@@ -2345,21 +1737,13 @@ Core/index.d.ts:354
 
 #### Parameters
 
-| Name    | Type                            | Description            |
-| :------ | :------------------------------ | :--------------------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:要设置的相对缩放 |
+| Name    | Type                            | Description      |
+| :------ | :------------------------------ | :--------------- |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 要设置的相对缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setRelativeScale](Gameplay.Gameplay.PhysicsConstraintBase.md#setrelativescale)
-
-#### Defined in
-
-Core/index.d.ts:380
 
 ---
 
@@ -2377,21 +1761,13 @@ Core/index.d.ts:380
 
 #### Parameters
 
-| Name        | Type                                  | Description     |
-| :---------- | :------------------------------------ | :-------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:transform |
+| Name        | Type                                  | Description |
+| :---------- | :------------------------------------ | :---------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | transform   |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setTransform](Gameplay.Gameplay.PhysicsConstraintBase.md#settransform)
-
-#### Defined in
-
-Core/index.d.ts:229
 
 ---
 
@@ -2409,22 +1785,14 @@ Core/index.d.ts:229
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                         |
-| :--------------------- | :------------------------------------------------------- | :---------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态                          |
-| `propagateToChildren?` | `boolean`                                                | usage: 是否设置子物体 default:false |
+| Name                   | Type                                                     | Description                  |
+| :--------------------- | :------------------------------------------------------- | :--------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                         |
+| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:false |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setVisibility](Gameplay.Gameplay.PhysicsConstraintBase.md#setvisibility)
-
-#### Defined in
-
-Core/index.d.ts:497
 
 ---
 
@@ -2442,21 +1810,13 @@ Core/index.d.ts:497
 
 #### Parameters
 
-| Name | Type                            | Description             |
-| :--- | :------------------------------ | :---------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage: 要设置的世界坐标 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界坐标 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setWorldLocation](Gameplay.Gameplay.PhysicsConstraintBase.md#setworldlocation)
-
-#### Defined in
-
-Core/index.d.ts:253
 
 ---
 
@@ -2474,21 +1834,13 @@ Core/index.d.ts:253
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setWorldRotation](Gameplay.Gameplay.PhysicsConstraintBase.md#setworldrotation)
-
-#### Defined in
-
-Core/index.d.ts:278
 
 ---
 
@@ -2506,21 +1858,13 @@ Core/index.d.ts:278
 
 #### Parameters
 
-| Name | Type                            | Description            |
-| :--- | :------------------------------ | :--------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage:要设置的世界缩放 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[setWorldScale](Gameplay.Gameplay.PhysicsConstraintBase.md#setworldscale)
-
-#### Defined in
-
-Core/index.d.ts:302
 
 ---
 
@@ -2539,23 +1883,15 @@ Core/index.d.ts:302
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 guid |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 Guid 对应的物体
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[asyncFind](Gameplay.Gameplay.PhysicsConstraintBase.md#asyncfind)
-
-#### Defined in
-
-Core/index.d.ts:165
 
 ---
 
@@ -2573,24 +1909,16 @@ Core/index.d.ts:165
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 构造的 GameObject
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[asyncSpawnGameObject](Gameplay.Gameplay.PhysicsConstraintBase.md#asyncspawngameobject)
-
-#### Defined in
-
-Core/index.d.ts:142
 
 ---
 
@@ -2608,23 +1936,15 @@ Core/index.d.ts:142
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 Guid |
 
 #### Returns
 
 `GameObject`
 
 Guid 对应的物体
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[find](Gameplay.Gameplay.PhysicsConstraintBase.md#find)
-
-#### Defined in
-
-Core/index.d.ts:157
 
 ---
 
@@ -2642,23 +1962,15 @@ Core/index.d.ts:157
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `InTag` | `string` | usage:自定义 Tag |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `InTag` | `string` | 自定义 Tag  |
 
 #### Returns
 
 `GameObject`[]
 
 Array`<GameObject>`
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[findGameObjectByTag](Gameplay.Gameplay.PhysicsConstraintBase.md#findgameobjectbytag)
-
-#### Defined in
-
-Core/index.d.ts:588
 
 ---
 
@@ -2676,23 +1988,15 @@ Core/index.d.ts:588
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getGameObjectByName](Gameplay.Gameplay.PhysicsConstraintBase.md#getgameobjectbyname)
-
-#### Defined in
-
-Core/index.d.ts:527
 
 ---
 
@@ -2710,23 +2014,15 @@ Core/index.d.ts:527
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`[]
 
 返回所有查找到的对象
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[getGameObjectsByName](Gameplay.Gameplay.PhysicsConstraintBase.md#getgameobjectsbyname)
-
-#### Defined in
-
-Core/index.d.ts:520
 
 ---
 
@@ -2744,21 +2040,13 @@ Core/index.d.ts:520
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `GameObject`
 
 构造的 GameObject
-
-#### Inherited from
-
-[PhysicsConstraintBase](Gameplay.Gameplay.PhysicsConstraintBase.md).[spawnGameObject](Gameplay.Gameplay.PhysicsConstraintBase.md#spawngameobject)
-
-#### Defined in
-
-Core/index.d.ts:134

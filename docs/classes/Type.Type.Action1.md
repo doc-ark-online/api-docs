@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Action1
+[Type](../modules/Type.Type.md) / Action1
 
-# Class: Action1<T\>
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Action1
-
-**`Author`**
-
-huipeng.jia
+# Action1<T\> <Badge type="tip" text="Class" />
 
 **`Description`**
 
 一个参数的代理
-
-**`Network Status`**
-
-usage: 双端
 
 ## Type parameters
 
@@ -30,37 +20,23 @@ usage: 双端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                               |
+| :---------------------------------------------------------------------- |
+| **[count](Type.Type.Action1.md#count)**(): `number` <br> 监听方法的数量 |
 
-- [constructor](Type.Type.Action1.md#constructor)
-
-### Accessors
-
-- [count](Type.Type.Action1.md#count)
-
-### Methods
-
-- [add](Type.Type.Action1.md#add)
-- [call](Type.Type.Action1.md#call)
-- [clear](Type.Type.Action1.md#clear)
-- [includes](Type.Type.Action1.md#includes)
-- [remove](Type.Type.Action1.md#remove)
-
-## Constructors
-
-### constructor
-
-• **new Action1**<`T`\>()
+| Methods                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.Action1.md#add)**((`a`: `T`) => `void`, `any`): `void` <br> 添加一个监听方法(有重复过滤) |
+| **[call](Type.Type.Action1.md#call)**(`T`): `void` <br> 执行                                               |
+| **[clear](Type.Type.Action1.md#clear)**(): `void` <br> 清除所有监听                                        |
+| **[includes](Type.Type.Action1.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法  |
+| **[remove](Type.Type.Action1.md#remove)**((`a`: `T`) => `void`, `any`): `void` <br> 移除一个监听方法       |
 
 #### Type parameters
 
 | Name |
 | :--- |
 | `T`  |
-
-#### Inherited from
-
-[Action](Type.Type.Action.md).[constructor](Type.Type.Action.md#constructor)
 
 ## Accessors
 
@@ -80,14 +56,6 @@ usage: 双端
 
 `number`
 
-#### Inherited from
-
-Action.count
-
-#### Defined in
-
-Type/index.d.ts:838
-
 ## Methods
 
 ### add
@@ -104,10 +72,10 @@ Type/index.d.ts:838
 
 #### Parameters
 
-| Name       | Type                 | Description                  |
-| :--------- | :------------------- | :--------------------------- |
-| `fn`       | (`a`: `T`) => `void` | usage: 方法                  |
-| `thisArg?` | `any`                | usage: 域 default: undefined |
+| Name       | Type                 | Description           |
+| :--------- | :------------------- | :-------------------- |
+| `fn`       | (`a`: `T`) => `void` | 方法                  |
+| `thisArg?` | `any`                | 域 default: undefined |
 
 #### Returns
 
@@ -116,10 +84,6 @@ Type/index.d.ts:838
 #### Overrides
 
 [Action](Type.Type.Action.md).[add](Type.Type.Action.md#add)
-
-#### Defined in
-
-Type/index.d.ts:852
 
 ---
 
@@ -137,9 +101,9 @@ Type/index.d.ts:852
 
 #### Parameters
 
-| Name  | Type | Description   |
-| :---- | :--- | :------------ |
-| `arg` | `T`  | usage: 参数 a |
+| Name  | Type | Description |
+| :---- | :--- | :---------- |
+| `arg` | `T`  | 参数 a      |
 
 #### Returns
 
@@ -148,10 +112,6 @@ Type/index.d.ts:852
 #### Overrides
 
 [Action](Type.Type.Action.md).[call](Type.Type.Action.md#call)
-
-#### Defined in
-
-Type/index.d.ts:865
 
 ---
 
@@ -171,14 +131,6 @@ Type/index.d.ts:865
 
 `void`
 
-#### Inherited from
-
-[Action](Type.Type.Action.md).[clear](Type.Type.Action.md#clear)
-
-#### Defined in
-
-Type/index.d.ts:833
-
 ---
 
 ### includes
@@ -197,22 +149,14 @@ Type/index.d.ts:833
 
 | Name      | Type       | Description |
 | :-------- | :--------- | :---------- |
-| `fn`      | `Function` | usage: 方法 |
-| `thisArg` | `any`      | usage: 域   |
+| `fn`      | `Function` | 方法        |
+| `thisArg` | `any`      | 域          |
 
 #### Returns
 
 `boolean`
 
 结果
-
-#### Inherited from
-
-[Action](Type.Type.Action.md).[includes](Type.Type.Action.md#includes)
-
-#### Defined in
-
-Type/index.d.ts:828
 
 ---
 
@@ -232,8 +176,8 @@ Type/index.d.ts:828
 
 | Name      | Type                 | Description |
 | :-------- | :------------------- | :---------- |
-| `fn`      | (`a`: `T`) => `void` | usage: 方法 |
-| `thisArg` | `any`                | usage: 域   |
+| `fn`      | (`a`: `T`) => `void` | 方法        |
+| `thisArg` | `any`                | 域          |
 
 #### Returns
 
@@ -242,7 +186,3 @@ Type/index.d.ts:828
 #### Overrides
 
 [Action](Type.Type.Action.md).[remove](Type.Type.Action.md#remove)
-
-#### Defined in
-
-Type/index.d.ts:859

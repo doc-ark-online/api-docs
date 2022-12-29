@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / Stance
+[Gameplay](../modules/Gameplay.Gameplay.md) / Stance
 
-# Class: Stance
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Stance
-
-**`Author`**
-
-yuchen.ren
+# Stance <Badge type="tip" text="Class" />
 
 **`Description`**
 
 姿态
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -24,22 +14,12 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Gameplay.Gameplay.Stance.md#constructor)
-
-### Methods
-
-- [play](Gameplay.Gameplay.Stance.md#play)
-- [playInternal](Gameplay.Gameplay.Stance.md#playinternal)
-- [stop](Gameplay.Gameplay.Stance.md#stop)
-- [stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)
-
-## Constructors
-
-### constructor
-
-• **new Stance**(`character`, `sync`)
+| Methods                                                                                           |
+| :------------------------------------------------------------------------------------------------ |
+| **[play](Gameplay.Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果   |
+| **[playInternal](Gameplay.Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现 |
+| **[stop](Gameplay.Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果   |
+| **[stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现 |
 
 **`Description`**
 
@@ -51,14 +31,10 @@ usage:双端
 
 #### Parameters
 
-| Name        | Type                                                  | Description        |
-| :---------- | :---------------------------------------------------- | :----------------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色         |
-| `sync`      | `boolean`                                             | usage:是否自动同步 |
-
-#### Defined in
-
-Gameplay/index.d.ts:1617
+| Name        | Type                                                  | Description  |
+| :---------- | :---------------------------------------------------- | :----------- |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色         |
+| `sync`      | `boolean`                                             | 是否自动同步 |
 
 ## Methods
 
@@ -86,10 +62,6 @@ Gameplay/index.d.ts:1617
 
 是否执行成功
 
-#### Defined in
-
-Gameplay/index.d.ts:1626
-
 ---
 
 ### playInternal
@@ -109,10 +81,6 @@ Gameplay/index.d.ts:1626
 `boolean`
 
 是否执行成功
-
-#### Defined in
-
-Gameplay/index.d.ts:1632
 
 ---
 
@@ -140,10 +108,6 @@ Gameplay/index.d.ts:1632
 
 是否执行成功
 
-#### Defined in
-
-Gameplay/index.d.ts:1641
-
 ---
 
 ### stopInternal
@@ -163,7 +127,3 @@ Gameplay/index.d.ts:1641
 `boolean`
 
 是否执行成功
-
-#### Defined in
-
-Gameplay/index.d.ts:1647

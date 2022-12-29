@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIHugContentHorizontally
+[UI](../modules/UI.UI.md) / UIHugContentHorizontally
 
-# Enumeration: UIHugContentHorizontally
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIHugContentHorizontally
+# UIHugContentHorizontally <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FixWidth](UI.UI.UIHugContentHorizontally.md#fixwidth)
-- [HugContent](UI.UI.UIHugContentHorizontally.md#hugcontent)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[FixWidth](UI.UI.UIHugContentHorizontally.md#fixwidth)** = `0` <br> 固定宽度       |
+| **[HugContent](UI.UI.UIHugContentHorizontally.md#hugcontent)** = `1` <br> 自适应宽度 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 固定宽度
 
-#### Defined in
-
-UI/index.d.ts:3359
-
 ---
 
 ### HugContent
@@ -34,7 +28,3 @@ UI/index.d.ts:3359
 • **HugContent** = `1`
 
 自适应宽度
-
-#### Defined in
-
-UI/index.d.ts:3361

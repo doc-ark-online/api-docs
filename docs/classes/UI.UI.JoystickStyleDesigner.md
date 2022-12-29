@@ -1,38 +1,18 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / JoystickStyleDesigner
+[UI](../modules/UI.UI.md) / JoystickStyleDesigner
 
-# Class: JoystickStyleDesigner
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).JoystickStyleDesigner
-
-**`Author`**
-
-jie.wu
+# JoystickStyleDesigner <Badge type="tip" text="Class" />
 
 **`Description`**
 
 摇杆信息
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.JoystickStyleDesigner.md#constructor)
-
-### Properties
-
-- [disable](UI.UI.JoystickStyleDesigner.md#disable)
-- [normal](UI.UI.JoystickStyleDesigner.md#normal)
-- [touch](UI.UI.JoystickStyleDesigner.md#touch)
-
-## Constructors
-
-### constructor
-
-• **new JoystickStyleDesigner**(`NormalGuid`, `TouchGuid`, `DisableGuid`)
+| Properties                                                                                                               |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| **[disable](UI.UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 禁用资源 |
+| **[normal](UI.UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 普通资源   |
+| **[touch](UI.UI.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 按压资源     |
 
 **`Description`**
 
@@ -44,15 +24,11 @@ usage:客户端
 
 #### Parameters
 
-| Name          | Type     | Description    |
-| :------------ | :------- | :------------- |
-| `NormalGuid`  | `string` | usage:普通资源 |
-| `TouchGuid`   | `string` | usage:按压资源 |
-| `DisableGuid` | `string` | usage:禁用资源 |
-
-#### Defined in
-
-UI/index.d.ts:3998
+| Name          | Type     | Description |
+| :------------ | :------- | :---------- |
+| `NormalGuid`  | `string` | 普通资源    |
+| `TouchGuid`   | `string` | 按压资源    |
+| `DisableGuid` | `string` | 禁用资源    |
 
 ## Properties
 
@@ -64,10 +40,6 @@ UI/index.d.ts:3998
 
 禁用资源
 
-#### Defined in
-
-UI/index.d.ts:4004
-
 ---
 
 ### normal
@@ -78,10 +50,6 @@ UI/index.d.ts:4004
 
 普通资源
 
-#### Defined in
-
-UI/index.d.ts:4000
-
 ---
 
 ### touch
@@ -91,7 +59,3 @@ UI/index.d.ts:4000
 **`Description`**
 
 按压资源
-
-#### Defined in
-
-UI/index.d.ts:4002

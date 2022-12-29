@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeType
+[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeType
 
-# Enumeration: EffectRangeType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EffectRangeType
+# EffectRangeType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [ThreeD](Gameplay.Gameplay.EffectRangeType.md#threed)
-- [TwoD](Gameplay.Gameplay.EffectRangeType.md#twod)
+| Enumeration Members                                                          |
+| :--------------------------------------------------------------------------- |
+| **[ThreeD](Gameplay.Gameplay.EffectRangeType.md#threed)** = `1` <br> 3D 形状 |
+| **[TwoD](Gameplay.Gameplay.EffectRangeType.md#twod)** = `0` <br> 2D 形状     |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 3D 形状
 
-#### Defined in
-
-Gameplay/index.d.ts:8649
-
 ---
 
 ### TwoD
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:8649
 • **TwoD** = `0`
 
 2D 形状
-
-#### Defined in
-
-Gameplay/index.d.ts:8647

@@ -1,49 +1,29 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UISlot
+[UI](../modules/UI.UI.md) / UISlot
 
-# Class: UISlot
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UISlot
+# UISlot <Badge type="tip" text="Class" />
 
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Author`**
-
-jie.wu
-
 **`Description`**
 
 UI 插槽
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                                                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoSizeEnable](UI.UI.UISlot.md#autosizeenable)**(): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                       |
+| **[constraints](UI.UI.UISlot.md#constraints)**(): [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
+| **[position](UI.UI.UISlot.md#position)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                           |
+| **[size](UI.UI.UISlot.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                   |
+| **[transform](UI.UI.UISlot.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息        |
+| **[zOrder](UI.UI.UISlot.md#zorder)**(): `number` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                                        |
 
-- [constructor](UI.UI.UISlot.md#constructor)
-
-### Accessors
-
-- [autoSizeEnable](UI.UI.UISlot.md#autosizeenable)
-- [constraints](UI.UI.UISlot.md#constraints)
-- [position](UI.UI.UISlot.md#position)
-- [size](UI.UI.UISlot.md#size)
-- [transform](UI.UI.UISlot.md#transform)
-- [zOrder](UI.UI.UISlot.md#zorder)
-
-### Methods
-
-- [equal](UI.UI.UISlot.md#equal)
-
-## Constructors
-
-### constructor
-
-• **new UISlot**()
+| Methods                                                                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[equal](UI.UI.UISlot.md#equal)**([`UISlot`](UI.UI.UISlot.md)): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
 
 ## Accessors
 
@@ -69,10 +49,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 是否自动设置大小
 
-#### Defined in
-
-UI/index.d.ts:3316
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Deprecated`**
@@ -89,17 +65,13 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3309
 
 ---
 
@@ -125,10 +97,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 Slot 布局
 
-#### Defined in
-
-UI/index.d.ts:3260
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Deprecated`**
@@ -152,10 +120,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3253
 
 ---
 
@@ -181,10 +145,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 FVector2D
 
-#### Defined in
-
-UI/index.d.ts:3274
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Deprecated`**
@@ -201,17 +161,13 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name              | Type                              | Description     |
-| :---------------- | :-------------------------------- | :-------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:Slot 位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | Slot 位置   |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3267
 
 ---
 
@@ -237,10 +193,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 FVector2D
 
-#### Defined in
-
-UI/index.d.ts:3288
-
 • `set` **size**(`inSize`): `void`
 
 **`Deprecated`**
@@ -259,15 +211,11 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 | Name     | Type                              | Description |
 | :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:size  |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | size        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3281
 
 ---
 
@@ -293,10 +241,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 Slot 大小和位置
 
-#### Defined in
-
-UI/index.d.ts:3246
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Deprecated`**
@@ -313,17 +257,13 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3239
 
 ---
 
@@ -349,10 +289,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 zOrder
 
-#### Defined in
-
-UI/index.d.ts:3302
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Deprecated`**
@@ -369,17 +305,13 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:3295
 
 ## Methods
 
@@ -401,16 +333,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name   | Type                        | Description                   |
-| :----- | :-------------------------- | :---------------------------- |
-| `that` | [`UISlot`](UI.UI.UISlot.md) | usage:需要比较的另外一个 Slot |
+| Name   | Type                        | Description             |
+| :----- | :-------------------------- | :---------------------- |
+| `that` | [`UISlot`](UI.UI.UISlot.md) | 需要比较的另外一个 Slot |
 
 #### Returns
 
 `boolean`
 
 是否相同
-
-#### Defined in
-
-UI/index.d.ts:3232

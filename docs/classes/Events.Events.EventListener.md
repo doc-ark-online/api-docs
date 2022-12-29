@@ -1,40 +1,20 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Events](../modules/Events.md) / [Events](../modules/Events.Events.md) / EventListener
+[Events](../modules/Events.Events.md) / EventListener
 
-# Class: EventListener
-
-[Events](../modules/Events.md).[Events](../modules/Events.Events.md).EventListener
-
-**`Author`**
-
-xiangkun.sun
+# EventListener <Badge type="tip" text="Class" />
 
 **`Description`**
 
 事件监听器
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                            |
+| :--------------------------------------------------------------------------------------------------- |
+| **[isConnected](Events.Events.EventListener.md#isconnected)**(): `boolean` <br> 用来判断事件是否有效 |
 
-- [constructor](Events.Events.EventListener.md#constructor)
-
-### Accessors
-
-- [isConnected](Events.Events.EventListener.md#isconnected)
-
-### Methods
-
-- [disconnect](Events.Events.EventListener.md#disconnect)
-
-## Constructors
-
-### constructor
-
-• **new EventListener**()
+| Methods                                                                             |
+| :---------------------------------------------------------------------------------- |
+| **[disconnect](Events.Events.EventListener.md#disconnect)**(): `void` <br> 卸载事件 |
 
 ## Accessors
 
@@ -49,10 +29,6 @@ usage:双端
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Events/index.d.ts:26
 
 ## Methods
 
@@ -71,7 +47,3 @@ Events/index.d.ts:26
 #### Returns
 
 `void`
-
-#### Defined in
-
-Events/index.d.ts:31

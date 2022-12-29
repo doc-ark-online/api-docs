@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / ExpressionType
+[Gameplay](../modules/Gameplay.Gameplay.md) / ExpressionType
 
-# Enumeration: ExpressionType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).ExpressionType
+# ExpressionType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,18 +8,18 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Anger](Gameplay.Gameplay.ExpressionType.md#anger)
-- [Awkward](Gameplay.Gameplay.ExpressionType.md#awkward)
-- [Cute](Gameplay.Gameplay.ExpressionType.md#cute)
-- [Default](Gameplay.Gameplay.ExpressionType.md#default)
-- [Doubt](Gameplay.Gameplay.ExpressionType.md#doubt)
-- [Happy](Gameplay.Gameplay.ExpressionType.md#happy)
-- [Laugh](Gameplay.Gameplay.ExpressionType.md#laugh)
-- [Mischievous](Gameplay.Gameplay.ExpressionType.md#mischievous)
-- [Sad](Gameplay.Gameplay.ExpressionType.md#sad)
-- [Smile](Gameplay.Gameplay.ExpressionType.md#smile)
+| Enumeration Members                                                                |
+| :--------------------------------------------------------------------------------- |
+| **[Anger](Gameplay.Gameplay.ExpressionType.md#anger)** = `4` <br> 生气             |
+| **[Awkward](Gameplay.Gameplay.ExpressionType.md#awkward)** = `5` <br> 尴尬         |
+| **[Cute](Gameplay.Gameplay.ExpressionType.md#cute)** = `8` <br> 可爱               |
+| **[Default](Gameplay.Gameplay.ExpressionType.md#default)** = `0` <br> 默认表情     |
+| **[Doubt](Gameplay.Gameplay.ExpressionType.md#doubt)** = `9` <br> 疑惑             |
+| **[Happy](Gameplay.Gameplay.ExpressionType.md#happy)** = `2` <br> 开心             |
+| **[Laugh](Gameplay.Gameplay.ExpressionType.md#laugh)** = `6` <br> 笑               |
+| **[Mischievous](Gameplay.Gameplay.ExpressionType.md#mischievous)** = `7` <br> 调皮 |
+| **[Sad](Gameplay.Gameplay.ExpressionType.md#sad)** = `3` <br> 伤心                 |
+| **[Smile](Gameplay.Gameplay.ExpressionType.md#smile)** = `1` <br> 微笑             |
 
 ## Enumeration Members
 
@@ -31,10 +29,6 @@
 
 生气
 
-#### Defined in
-
-Gameplay/index.d.ts:1870
-
 ---
 
 ### Awkward
@@ -42,10 +36,6 @@ Gameplay/index.d.ts:1870
 • **Awkward** = `5`
 
 尴尬
-
-#### Defined in
-
-Gameplay/index.d.ts:1872
 
 ---
 
@@ -55,10 +45,6 @@ Gameplay/index.d.ts:1872
 
 可爱
 
-#### Defined in
-
-Gameplay/index.d.ts:1878
-
 ---
 
 ### Default
@@ -66,10 +52,6 @@ Gameplay/index.d.ts:1878
 • **Default** = `0`
 
 默认表情
-
-#### Defined in
-
-Gameplay/index.d.ts:1862
 
 ---
 
@@ -79,10 +61,6 @@ Gameplay/index.d.ts:1862
 
 疑惑
 
-#### Defined in
-
-Gameplay/index.d.ts:1880
-
 ---
 
 ### Happy
@@ -90,10 +68,6 @@ Gameplay/index.d.ts:1880
 • **Happy** = `2`
 
 开心
-
-#### Defined in
-
-Gameplay/index.d.ts:1866
 
 ---
 
@@ -103,10 +77,6 @@ Gameplay/index.d.ts:1866
 
 笑
 
-#### Defined in
-
-Gameplay/index.d.ts:1874
-
 ---
 
 ### Mischievous
@@ -114,10 +84,6 @@ Gameplay/index.d.ts:1874
 • **Mischievous** = `7`
 
 调皮
-
-#### Defined in
-
-Gameplay/index.d.ts:1876
 
 ---
 
@@ -127,10 +93,6 @@ Gameplay/index.d.ts:1876
 
 伤心
 
-#### Defined in
-
-Gameplay/index.d.ts:1868
-
 ---
 
 ### Smile
@@ -138,7 +100,3 @@ Gameplay/index.d.ts:1868
 • **Smile** = `1`
 
 微笑
-
-#### Defined in
-
-Gameplay/index.d.ts:1864

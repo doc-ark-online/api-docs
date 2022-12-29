@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / PropertyStatus
+[Type](../modules/Type.Type.md) / PropertyStatus
 
-# Enumeration: PropertyStatus
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).PropertyStatus
+# PropertyStatus <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FromParent](Type.Type.PropertyStatus.md#fromparent)
-- [Off](Type.Type.PropertyStatus.md#off)
-- [On](Type.Type.PropertyStatus.md#on)
+| Enumeration Members                                                            |
+| :----------------------------------------------------------------------------- |
+| **[FromParent](Type.Type.PropertyStatus.md#fromparent)** = `0` <br> 跟随父节点 |
+| **[Off](Type.Type.PropertyStatus.md#off)** = `2` <br> 关                       |
+| **[On](Type.Type.PropertyStatus.md#on)** = `1` <br> 开                         |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 跟随父节点
 
-#### Defined in
-
-Type/index.d.ts:207
-
 ---
 
 ### Off
@@ -36,10 +30,6 @@ Type/index.d.ts:207
 
 关
 
-#### Defined in
-
-Type/index.d.ts:215
-
 ---
 
 ### On
@@ -47,7 +37,3 @@ Type/index.d.ts:215
 • **On** = `1`
 
 开
-
-#### Defined in
-
-Type/index.d.ts:211

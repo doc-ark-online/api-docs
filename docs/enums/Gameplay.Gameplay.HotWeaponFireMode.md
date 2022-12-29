@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireMode
 
-# Enumeration: HotWeaponFireMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponFireMode
+# HotWeaponFireMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [ContinuousFire](Gameplay.Gameplay.HotWeaponFireMode.md#continuousfire)
-- [FullAutomationFire](Gameplay.Gameplay.HotWeaponFireMode.md#fullautomationfire)
-- [SingleFire](Gameplay.Gameplay.HotWeaponFireMode.md#singlefire)
+| Enumeration Members                                                                                   |
+| :---------------------------------------------------------------------------------------------------- |
+| **[ContinuousFire](Gameplay.Gameplay.HotWeaponFireMode.md#continuousfire)** = `1` <br> 连发           |
+| **[FullAutomationFire](Gameplay.Gameplay.HotWeaponFireMode.md#fullautomationfire)** = `2` <br> 全自动 |
+| **[SingleFire](Gameplay.Gameplay.HotWeaponFireMode.md#singlefire)** = `0` <br> 单发                   |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 连发
 
-#### Defined in
-
-Gameplay/index.d.ts:11498
-
 ---
 
 ### FullAutomationFire
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:11498
 
 全自动
 
-#### Defined in
-
-Gameplay/index.d.ts:11500
-
 ---
 
 ### SingleFire
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:11500
 • **SingleFire** = `0`
 
 单发
-
-#### Defined in
-
-Gameplay/index.d.ts:11496

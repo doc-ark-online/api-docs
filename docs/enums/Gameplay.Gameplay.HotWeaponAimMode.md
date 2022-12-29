@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimMode
 
-# Enumeration: HotWeaponAimMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponAimMode
+# HotWeaponAimMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FirstPerson](Gameplay.Gameplay.HotWeaponAimMode.md#firstperson)
-- [ThirdPerson](Gameplay.Gameplay.HotWeaponAimMode.md#thirdperson)
+| Enumeration Members                                                                      |
+| :--------------------------------------------------------------------------------------- |
+| **[FirstPerson](Gameplay.Gameplay.HotWeaponAimMode.md#firstperson)** = `0` <br> 第一人称 |
+| **[ThirdPerson](Gameplay.Gameplay.HotWeaponAimMode.md#thirdperson)** = `1` <br> 第三人称 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 第一人称
 
-#### Defined in
-
-Gameplay/index.d.ts:11370
-
 ---
 
 ### ThirdPerson
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:11370
 • **ThirdPerson** = `1`
 
 第三人称
-
-#### Defined in
-
-Gameplay/index.d.ts:11372

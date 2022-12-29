@@ -1,18 +1,14 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / SubStance
+[Gameplay](../modules/Gameplay.Gameplay.md) / SubStance
 
-# Class: SubStance
+# SubStance <Badge type="tip" text="Class" />
 
-[Gameplay](../modules/Gameplay.Gameplay.md).SubStance
+**`Description`**
 
 二级姿态
 
-**`Network Status`**
-
-双端
-
 **`Example`**
 
-在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
+使用示例: 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
 ```ts
 this.stanceProxy = this.character.loadStance("49096", true);
@@ -32,39 +28,39 @@ this.stanceProxy.stop();
 
 ## Table of contents
 
-### constructor
+| Accessors                                                                                                                                           |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[blendMode](Gameplay.Gameplay.SubStance.md#blendmode)**(): [`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md) <br> 姿态的混合模式 |
 
-• **new SubStance**(`character`, `sync`)
+| Methods                                                                                              |
+| :--------------------------------------------------------------------------------------------------- |
+| **[play](Gameplay.Gameplay.SubStance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果   |
+| **[playInternal](Gameplay.Gameplay.SubStance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现 |
+| **[stop](Gameplay.Gameplay.SubStance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果   |
+| **[stopInternal](Gameplay.Gameplay.SubStance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现 |
+
+**`Description`**
 
 构造函数
 
-**`Parameters`**
+**`Effect`**
 
-| Name        | Type                                                  | Description        |
-| :---------- | :---------------------------------------------------- | :----------------- |
+双端函数
+
+#### Parameters
+
+| Name        | Type                                                  | Description  |
+| :---------- | :---------------------------------------------------- | :----------- |
 | `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色         |
 | `sync`      | `boolean`                                             | 是否自动同步 |
-
-### Accessors
-
-- [blendMode](Gameplay.Gameplay.SubStance.md#blendmode)
-
-### Methods
-
-- [play](Gameplay.Gameplay.SubStance.md#play)
-- [playInternal](Gameplay.Gameplay.SubStance.md#playinternal)
-- [stop](Gameplay.Gameplay.SubStance.md#stop)
-- [stopInternal](Gameplay.Gameplay.SubStance.md#stopinternal)
-
-#### Inherited from
-
-[Stance](Gameplay.Gameplay.Stance.md).[constructor](Gameplay.Gameplay.Stance.md#constructor)
 
 ## Accessors
 
 ### blendMode
 
 • `get` **blendMode**(): [`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md)
+
+**`Description`**
 
 姿态的混合模式
 
@@ -81,15 +77,25 @@ this.stanceProxy.stop();
 stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 ```
 
+#### Returns
+
+[`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md)
+
 • `set` **blendMode**(`newBlendMode`): `void`
+
+**`Description`**
 
 姿态的混合模式
 
-**`Parameters`**
+#### Parameters
 
 | Name           | Type                                                               |
 | :------------- | :----------------------------------------------------------------- |
 | `newBlendMode` | [`StanceBlendMode`](../enums/Gameplay.Gameplay.StanceBlendMode.md) |
+
+#### Returns
+
+`void`
 
 ## Methods
 
@@ -97,11 +103,9 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 
 ▸ **play**(): `boolean`
 
+**`Description`**
+
 播放这个姿态对象, 并返回执行结果
-
-**`Returns`**
-
-是否执行成功
 
 **`Effect`**
 
@@ -113,9 +117,11 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 返回的执行结果, 在不自动同步时多数情况下可靠;
 在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
-#### Inherited from
+#### Returns
 
-[Stance](Gameplay.Gameplay.Stance.md).[play](Gameplay.Gameplay.Stance.md#play)
+`boolean`
+
+是否执行成功
 
 ---
 
@@ -123,19 +129,19 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 
 ▸ `Protected` **playInternal**(): `boolean`
 
+**`Description`**
+
 播放姿态的内部实现
-
-**`Returns`**
-
-是否执行成功
 
 **`Effect`**
 
 调用端生效
 
-#### Inherited from
+#### Returns
 
-[Stance](Gameplay.Gameplay.Stance.md).[playInternal](Gameplay.Gameplay.Stance.md#playinternal)
+`boolean`
+
+是否执行成功
 
 ---
 
@@ -143,11 +149,9 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 
 ▸ **stop**(): `boolean`
 
+**`Description`**
+
 停止这个姿态对象, 并返回执行结果
-
-**`Returns`**
-
-是否执行成功
 
 **`Effect`**
 
@@ -159,9 +163,11 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 返回的执行结果, 在不自动同步时多数情况下可靠;
 在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
 
-#### Inherited from
+#### Returns
 
-[Stance](Gameplay.Gameplay.Stance.md).[stop](Gameplay.Gameplay.Stance.md#stop)
+`boolean`
+
+是否执行成功
 
 ---
 
@@ -169,16 +175,16 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 
 ▸ **stopInternal**(): `boolean`
 
+**`Description`**
+
 停止姿态的内部实现
-
-**`Returns`**
-
-是否执行成功
 
 **`Effect`**
 
 调用端生效
 
-#### Inherited from
+#### Returns
 
-[Stance](Gameplay.Gameplay.Stance.md).[stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)
+`boolean`
+
+是否执行成功

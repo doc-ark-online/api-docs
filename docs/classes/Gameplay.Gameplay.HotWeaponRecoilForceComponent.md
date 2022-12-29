@@ -1,56 +1,36 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
 
-# Class: HotWeaponRecoilForceComponent
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponRecoilForceComponent
+# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 热武器 - 后坐力组件
 
-**`Network Status`**
-
-usage: 双端
-
-**`Author`**
-
-jun.zhang
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                                  |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[onStartRecoilForceClient](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播 |
+| **[onStartRecoilForceServer](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播 |
 
-- [constructor](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#constructor)
+| Accessors                                                                                                                                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------- |
+| **[maxHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值 |
+| **[maxHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值     |
+| **[maxVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值     |
+| **[maxVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值         |
+| **[minHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值 |
+| **[minHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值     |
+| **[minVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值     |
+| **[minVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值         |
 
-### Properties
-
-- [onStartRecoilForceClient](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)
-- [onStartRecoilForceServer](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)
-
-### Accessors
-
-- [maxHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)
-- [maxHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)
-- [maxVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)
-- [maxVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)
-- [minHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)
-- [minHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)
-- [minVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)
-- [minVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)
-
-### Methods
-
-- [getDeepJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)
-- [getHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)
-- [getHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaloffset)
-- [getVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)
-- [getVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)
-
-## Constructors
-
-### constructor
-
-• **new HotWeaponRecoilForceComponent**()
+| Methods                                                                                                                           |
+| :-------------------------------------------------------------------------------------------------------------------------------- |
+| **[getDeepJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值             |
+| **[getHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值 |
+| **[getHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number` <br> 获取水平偏移值 |
+| **[getVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值     |
+| **[getVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值     |
 
 ## Properties
 
@@ -62,10 +42,6 @@ jun.zhang
 
 客户端后坐力开始广播
 
-#### Defined in
-
-Gameplay/index.d.ts:11732
-
 ---
 
 ### onStartRecoilForceServer
@@ -75,10 +51,6 @@ Gameplay/index.d.ts:11732
 **`Description`**
 
 服务器后坐力开始广播
-
-#### Defined in
-
-Gameplay/index.d.ts:11728
 
 ## Accessors
 
@@ -100,10 +72,6 @@ Gameplay/index.d.ts:11728
 
 相机水平抖动最大值
 
-#### Defined in
-
-Gameplay/index.d.ts:11808
-
 • `set` **maxHorizontalJitter**(`value`): `void`
 
 **`Description`**
@@ -120,17 +88,13 @@ Gameplay/index.d.ts:11808
 
 #### Parameters
 
-| Name    | Type     | Description               |
-| :------ | :------- | :------------------------ |
-| `value` | `number` | usage: 相机水平抖动最大值 |
+| Name    | Type     | Description        |
+| :------ | :------- | :----------------- |
+| `value` | `number` | 相机水平抖动最大值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11802
 
 ---
 
@@ -152,10 +116,6 @@ Gameplay/index.d.ts:11802
 
 水平偏移最大值
 
-#### Defined in
-
-Gameplay/index.d.ts:11756
-
 • `set` **maxHorizontalOffset**(`value`): `void`
 
 **`Description`**
@@ -168,17 +128,13 @@ Gameplay/index.d.ts:11756
 
 #### Parameters
 
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage: 水平偏移最大值 |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
+| `value` | `number` | 水平偏移最大值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11750
 
 ---
 
@@ -200,10 +156,6 @@ Gameplay/index.d.ts:11750
 
 相机垂直抖动最大值
 
-#### Defined in
-
-Gameplay/index.d.ts:11834
-
 • `set` **maxVerticalJitter**(`value`): `void`
 
 **`Description`**
@@ -220,17 +172,13 @@ Gameplay/index.d.ts:11834
 
 #### Parameters
 
-| Name    | Type     | Description                 |
-| :------ | :------- | :-------------------------- |
-| `value` | `number` | usage: 新相机垂直抖动最大值 |
+| Name    | Type     | Description          |
+| :------ | :------- | :------------------- |
+| `value` | `number` | 新相机垂直抖动最大值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11828
 
 ---
 
@@ -252,10 +200,6 @@ Gameplay/index.d.ts:11828
 
 垂直偏移最大值
 
-#### Defined in
-
-Gameplay/index.d.ts:11782
-
 • `set` **maxVerticalOffset**(`value`): `void`
 
 **`Description`**
@@ -272,17 +216,13 @@ Gameplay/index.d.ts:11782
 
 #### Parameters
 
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage: 垂直偏移最大值 |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
+| `value` | `number` | 垂直偏移最大值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11776
 
 ---
 
@@ -304,10 +244,6 @@ Gameplay/index.d.ts:11776
 
 相机水平抖动最小值
 
-#### Defined in
-
-Gameplay/index.d.ts:11795
-
 • `set` **minHorizontalJitter**(`value`): `void`
 
 **`Description`**
@@ -324,17 +260,13 @@ Gameplay/index.d.ts:11795
 
 #### Parameters
 
-| Name    | Type     | Description                 |
-| :------ | :------- | :-------------------------- |
-| `value` | `number` | usage: 新相机水平抖动最小值 |
+| Name    | Type     | Description          |
+| :------ | :------- | :------------------- |
+| `value` | `number` | 新相机水平抖动最小值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11789
 
 ---
 
@@ -356,10 +288,6 @@ Gameplay/index.d.ts:11789
 
 水平偏移最小值
 
-#### Defined in
-
-Gameplay/index.d.ts:11744
-
 • `set` **minHorizontalOffset**(`value`): `void`
 
 **`Description`**
@@ -372,17 +300,13 @@ Gameplay/index.d.ts:11744
 
 #### Parameters
 
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage: 水平偏移最小值 |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
+| `value` | `number` | 水平偏移最小值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11738
 
 ---
 
@@ -404,10 +328,6 @@ Gameplay/index.d.ts:11738
 
 相机垂直抖动最小值
 
-#### Defined in
-
-Gameplay/index.d.ts:11821
-
 • `set` **minVerticalJitter**(`value`): `void`
 
 **`Description`**
@@ -424,17 +344,13 @@ Gameplay/index.d.ts:11821
 
 #### Parameters
 
-| Name    | Type     | Description                 |
-| :------ | :------- | :-------------------------- |
-| `value` | `number` | usage: 新相机垂直抖动最小值 |
+| Name    | Type     | Description          |
+| :------ | :------- | :------------------- |
+| `value` | `number` | 新相机垂直抖动最小值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11815
 
 ---
 
@@ -456,10 +372,6 @@ Gameplay/index.d.ts:11815
 
 垂直偏移最小值
 
-#### Defined in
-
-Gameplay/index.d.ts:11769
-
 • `set` **minVerticalOffset**(`value`): `void`
 
 **`Description`**
@@ -476,17 +388,13 @@ Gameplay/index.d.ts:11769
 
 #### Parameters
 
-| Name    | Type     | Description           |
-| :------ | :------- | :-------------------- |
-| `value` | `number` | usage: 垂直偏移最小值 |
+| Name    | Type     | Description    |
+| :------ | :------- | :------------- |
+| `value` | `number` | 垂直偏移最小值 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11763
 
 ## Methods
 
@@ -508,10 +416,6 @@ Gameplay/index.d.ts:11763
 
 深度抖动值
 
-#### Defined in
-
-Gameplay/index.d.ts:11864
-
 ---
 
 ### getHorizontalJitter
@@ -531,10 +435,6 @@ Gameplay/index.d.ts:11864
 `number`
 
 水平抖动值
-
-#### Defined in
-
-Gameplay/index.d.ts:11852
 
 ---
 
@@ -556,10 +456,6 @@ Gameplay/index.d.ts:11852
 
 水平偏移值
 
-#### Defined in
-
-Gameplay/index.d.ts:11840
-
 ---
 
 ### getVerticalJitter
@@ -580,10 +476,6 @@ Gameplay/index.d.ts:11840
 
 垂直抖动值
 
-#### Defined in
-
-Gameplay/index.d.ts:11858
-
 ---
 
 ### getVerticalOffset
@@ -603,7 +495,3 @@ Gameplay/index.d.ts:11858
 `number`
 
 垂直偏移值
-
-#### Defined in
-
-Gameplay/index.d.ts:11846

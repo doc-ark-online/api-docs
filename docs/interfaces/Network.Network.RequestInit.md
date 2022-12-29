@@ -1,28 +1,18 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Network](../modules/Network.md) / [Network](../modules/Network.Network.md) / RequestInit
+[Network](../modules/Network.Network.md) / RequestInit
 
-# Interface: RequestInit
-
-[Network](../modules/Network.md).[Network](../modules/Network.Network.md).RequestInit
-
-**`Author`**
-
-吴思
+# RequestInit <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 HTTP 请求信息的对象
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Properties
-
-- [body](Network.Network.RequestInit.md#body)
-- [headers](Network.Network.RequestInit.md#headers)
-- [method](Network.Network.RequestInit.md#method)
+| Properties                                                                                             |
+| :----------------------------------------------------------------------------------------------------- |
+| **[body](Network.Network.RequestInit.md#body)**: `string` <br> HTTP 请求体                             |
+| **[headers](Network.Network.RequestInit.md#headers)**: `Object` <br> HTTP 请求头                       |
+| **[method](Network.Network.RequestInit.md#method)**: `"POST"` \| `"PUT"` \| `"GET"` <br> HTTP 请求类型 |
 
 ## Properties
 
@@ -33,10 +23,6 @@ usage:双端
 **`Description`**
 
 HTTP 请求体
-
-#### Defined in
-
-Network/index.d.ts:17
 
 ---
 
@@ -52,10 +38,6 @@ HTTP 请求头
 
 ▪ [key: `string`]: `string`
 
-#### Defined in
-
-Network/index.d.ts:13
-
 ---
 
 ### method
@@ -65,7 +47,3 @@ Network/index.d.ts:13
 **`Description`**
 
 HTTP 请求类型
-
-#### Defined in
-
-Network/index.d.ts:11

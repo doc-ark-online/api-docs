@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / TextCommit
+[UI](../modules/UI.UI.md) / TextCommit
 
-# Enumeration: TextCommit
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).TextCommit
+# TextCommit <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Default](UI.UI.TextCommit.md#default)
-- [OnCleared](UI.UI.TextCommit.md#oncleared)
-- [OnEnter](UI.UI.TextCommit.md#onenter)
-- [OnUserMovedFocus](UI.UI.TextCommit.md#onusermovedfocus)
+| Enumeration Members                                                              |
+| :------------------------------------------------------------------------------- |
+| **[Default](UI.UI.TextCommit.md#default)** = `0` <br> 默认                       |
+| **[OnCleared](UI.UI.TextCommit.md#oncleared)** = `3` <br> 清除时                 |
+| **[OnEnter](UI.UI.TextCommit.md#onenter)** = `1` <br> 输入回车                   |
+| **[OnUserMovedFocus](UI.UI.TextCommit.md#onusermovedfocus)** = `2` <br> 失去焦点 |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 默认
 
-#### Defined in
-
-UI/index.d.ts:3698
-
 ---
 
 ### OnCleared
@@ -36,10 +30,6 @@ UI/index.d.ts:3698
 • **OnCleared** = `3`
 
 清除时
-
-#### Defined in
-
-UI/index.d.ts:3704
 
 ---
 
@@ -49,10 +39,6 @@ UI/index.d.ts:3704
 
 输入回车
 
-#### Defined in
-
-UI/index.d.ts:3700
-
 ---
 
 ### OnUserMovedFocus
@@ -60,7 +46,3 @@ UI/index.d.ts:3700
 • **OnUserMovedFocus** = `2`
 
 失去焦点
-
-#### Defined in
-
-UI/index.d.ts:3702

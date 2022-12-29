@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2Shape
+[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2Shape
 
-# Interface: IHumanoidV2Shape
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IHumanoidV2Shape
+# IHumanoidV2Shape <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 人形对象 V2 形体修改
-
-**`Author`**
-
-guang.deng
 
 ## Implemented by
 
@@ -18,170 +12,170 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [getBreastHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreasthorizontalposition)
-- [getBreastLength](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastlength)
-- [getBreastScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastscale)
-- [getBreastStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreaststretch)
-- [getBreastVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastverticalposition)
-- [getBrowGap](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowgap)
-- [getBrowHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowheight)
-- [getBrowInboardShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowinboardshape)
-- [getBrowOutsideShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowoutsideshape)
-- [getBrowRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowrotation)
-- [getCanthusHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getcanthushorizontalposition)
-- [getCanthusVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getcanthusverticalposition)
-- [getCharacterHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getcharacterheight)
-- [getCheekBoneRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekbonerange)
-- [getCheekBoneWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekbonewidth)
-- [getCheekHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekheight)
-- [getCheekRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekrange)
-- [getCheekWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekwidth)
-- [getEarRoll](Gameplay.Gameplay.IHumanoidV2Shape.md#getearroll)
-- [getEarScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getearscale)
-- [getEarYaw](Gameplay.Gameplay.IHumanoidV2Shape.md#getearyaw)
-- [getEyesGap](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesgap)
-- [getEyesHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesheight)
-- [getEyesLength](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyeslength)
-- [getEyesRange](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesrange)
-- [getEyesRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesrotation)
-- [getEyesWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyeswidth)
-- [getFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getfacewidth)
-- [getGroinThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getgrointhickness)
-- [getGroinWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getgroinwidth)
-- [getHeadScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getheadscale)
-- [getJawLength](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawlength)
-- [getJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawrange)
-- [getJawSmooth](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawsmooth)
-- [getJawVertexHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexheight)
-- [getJawVertexRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexrange)
-- [getJawVertexWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexwidth)
-- [getLowerArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsstretch)
-- [getLowerArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsthickness)
-- [getLowerArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmswidth)
-- [getLowerFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerfacerange)
-- [getLowerFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerfacewidth)
-- [getLowerJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerjawrange)
-- [getLowerJawWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerjawwidth)
-- [getLowerMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowermouththickness)
-- [getLowerStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerstretch)
-- [getMouthHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthheight)
-- [getMouthRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthrange)
-- [getMouthShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthshape)
-- [getMouthWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthwidth)
-- [getNeckStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckstretch)
-- [getNeckThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckthickness)
-- [getNeckWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckwidth)
-- [getNoseHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseheight)
-- [getNoseProtrusion](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseprotrusion)
-- [getNoseVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseverticalposition)
-- [getPupilHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilheight)
-- [getPupilHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilhorizontalposition)
-- [getPupilVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilverticalposition)
-- [getPupilWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilwidth)
-- [getRibThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getribthickness)
-- [getRibWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getribwidth)
-- [getShankScaleX](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankscalex)
-- [getShankScaleZ](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankscalez)
-- [getShankStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankstretch)
-- [getShoulderArmThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmthickness)
-- [getShoulderArmWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmwidth)
-- [getShoulderThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderthickness)
-- [getShoulderWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderwidth)
-- [getThighStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighstretch)
-- [getThighThicknessX](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighthicknessx)
-- [getThighThicknessZ](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighthicknessz)
-- [getUpperArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsstretch)
-- [getUpperArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsthickness)
-- [getUpperArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmswidth)
-- [getUpperFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperfacerange)
-- [getUpperMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getuppermouththickness)
-- [getUpperStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperstretch)
-- [getWaistStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaiststretch)
-- [getWaistThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistthickness)
-- [getWaistWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistwidth)
-- [setBreastHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreasthorizontalposition)
-- [setBreastLength](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastlength)
-- [setBreastScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastscale)
-- [setBreastStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreaststretch)
-- [setBreastVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastverticalposition)
-- [setBrowGap](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowgap)
-- [setBrowHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowheight)
-- [setBrowInboardShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowinboardshape)
-- [setBrowOutsideShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowoutsideshape)
-- [setBrowRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowrotation)
-- [setCanthusHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setcanthushorizontalposition)
-- [setCanthusVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setcanthusverticalposition)
-- [setCharacterHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setcharacterheight)
-- [setCheekBoneRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekbonerange)
-- [setCheekBoneWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekbonewidth)
-- [setCheekHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekheight)
-- [setCheekRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekrange)
-- [setCheekWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekwidth)
-- [setEarRoll](Gameplay.Gameplay.IHumanoidV2Shape.md#setearroll)
-- [setEarScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setearscale)
-- [setEarYaw](Gameplay.Gameplay.IHumanoidV2Shape.md#setearyaw)
-- [setEyesGap](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesgap)
-- [setEyesHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesheight)
-- [setEyesLength](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyeslength)
-- [setEyesRange](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesrange)
-- [setEyesRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesrotation)
-- [setEyesWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyeswidth)
-- [setFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setfacewidth)
-- [setGroinThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setgrointhickness)
-- [setGroinWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setgroinwidth)
-- [setHeadScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setheadscale)
-- [setJawLength](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawlength)
-- [setJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawrange)
-- [setJawSmooth](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawsmooth)
-- [setJawVertexHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexheight)
-- [setJawVertexRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexrange)
-- [setJawVertexWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexwidth)
-- [setLowerArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsstretch)
-- [setLowerArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsthickness)
-- [setLowerArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmswidth)
-- [setLowerFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerfacerange)
-- [setLowerFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerfacewidth)
-- [setLowerJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerjawrange)
-- [setLowerJawWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerjawwidth)
-- [setLowerMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowermouththickness)
-- [setLowerStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerstretch)
-- [setMouthHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthheight)
-- [setMouthRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthrange)
-- [setMouthShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthshape)
-- [setMouthWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthwidth)
-- [setNeckStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckstretch)
-- [setNeckThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckthickness)
-- [setNeckWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckwidth)
-- [setNoseHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseheight)
-- [setNoseProtrusion](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseprotrusion)
-- [setNoseVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseverticalposition)
-- [setPupilHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilheight)
-- [setPupilHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilhorizontalposition)
-- [setPupilVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilverticalposition)
-- [setPupilWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilwidth)
-- [setRibThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setribthickness)
-- [setRibWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setribwidth)
-- [setShankScaleX](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankscalex)
-- [setShankScaleZ](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankscalez)
-- [setShankStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankstretch)
-- [setShoulderArmThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmthickness)
-- [setShoulderArmWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmwidth)
-- [setShoulderThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderthickness)
-- [setShoulderWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderwidth)
-- [setThighStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighstretch)
-- [setThighThicknessX](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighthicknessx)
-- [setThighThicknessZ](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighthicknessz)
-- [setUpperArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsstretch)
-- [setUpperArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsthickness)
-- [setUpperArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmswidth)
-- [setUpperFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperfacerange)
-- [setUpperMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setuppermouththickness)
-- [setUpperStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperstretch)
-- [setWaistStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaiststretch)
-- [setWaistThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistthickness)
-- [setWaistWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistwidth)
+| Methods                                                                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getBreastHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreasthorizontalposition)**(): `number` <br> 调整胸部左右位置                    |
+| **[getBreastLength](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastlength)**(): `number` <br> 调整胸部长度                                                |
+| **[getBreastScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastscale)**(): `number` <br> 调整胸部整体大小；                                            |
+| **[getBreastStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreaststretch)**(): `number` <br> 获取胸部拉伸                                              |
+| **[getBreastVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getbreastverticalposition)**(): `number` <br> 调整胸部上下位置                        |
+| **[getBrowGap](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowgap)**(): `number` <br> 获取眉间距                                                            |
+| **[getBrowHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowheight)**(): `number` <br> 获取眉毛上下移动                                                |
+| **[getBrowInboardShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowinboardshape)**(): `number` <br> 获取眉毛内侧角度                                    |
+| **[getBrowOutsideShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowoutsideshape)**(): `number` <br> 获取眉毛外侧形状                                    |
+| **[getBrowRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#getbrowrotation)**(): `number` <br> 获取眉毛角度                                                |
+| **[getCanthusHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getcanthushorizontalposition)**(): `number` <br> 获取眼角左右移动                  |
+| **[getCanthusVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getcanthusverticalposition)**(): `number` <br> 获取外眼角上下移动                    |
+| **[getCharacterHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getcharacterheight)**(): `number` <br> 获取角色身高                                          |
+| **[getCheekBoneRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekbonerange)**(): `number` <br> 获取颧骨前后移动                                        |
+| **[getCheekBoneWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekbonewidth)**(): `number` <br> 获取颧骨横向宽度                                        |
+| **[getCheekHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekheight)**(): `number` <br> 获取脸颊上下移动                                              |
+| **[getCheekRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekrange)**(): `number` <br> 获取脸颊前后移动                                                |
+| **[getCheekWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getcheekwidth)**(): `number` <br> 获取脸颊宽度                                                    |
+| **[getEarRoll](Gameplay.Gameplay.IHumanoidV2Shape.md#getearroll)**(): `number` <br> 调整耳朵左右旋转                                                      |
+| **[getEarScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getearscale)**(): `number` <br> 调整耳朵大小                                                        |
+| **[getEarYaw](Gameplay.Gameplay.IHumanoidV2Shape.md#getearyaw)**(): `number` <br> 调整耳朵前后旋转                                                        |
+| **[getEyesGap](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesgap)**(): `number` <br> 获取眼睛间距                                                          |
+| **[getEyesHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesheight)**(): `number` <br> 获取眼睛上下移动                                                |
+| **[getEyesLength](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyeslength)**(): `number` <br> 眼睛长度                                                        |
+| **[getEyesRange](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesrange)**(): `number` <br> 获取眼睛前后移动                                                  |
+| **[getEyesRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyesrotation)**(): `number` <br> 获取眼睛角度                                                |
+| **[getEyesWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#geteyeswidth)**(): `number` <br> 获取眼睛左右宽度                                                  |
+| **[getFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getfacewidth)**(): `number` <br> 调整头部整体宽度                                                  |
+| **[getGroinThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getgrointhickness)**(): `number` <br> 获取胯宽度前后                                          |
+| **[getGroinWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getgroinwidth)**(): `number` <br> 获取胯宽度左右                                                  |
+| **[getHeadScale](Gameplay.Gameplay.IHumanoidV2Shape.md#getheadscale)**(): `number` <br> 获取角色头部大小                                                  |
+| **[getJawLength](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawlength)**(): `number` <br> 调整下巴长度                                                      |
+| **[getJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawrange)**(): `number` <br> 调整下巴前后移动                                                    |
+| **[getJawSmooth](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawsmooth)**(): `number` <br> 调整下巴圆度                                                      |
+| **[getJawVertexHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexheight)**(): `number` <br> 调整下巴尖上下移动                                    |
+| **[getJawVertexRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexrange)**(): `number` <br> 调整下巴尖前后移动                                      |
+| **[getJawVertexWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getjawvertexwidth)**(): `number` <br> 调整下巴尖宽度                                          |
+| **[getLowerArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsstretch)**(): `number` <br> 获取小臂的拉伸                                      |
+| **[getLowerArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmsthickness)**(): `number` <br> 获取小臂前后方向的宽度                          |
+| **[getLowerArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerarmswidth)**(): `number` <br> 获取小臂左右方向的宽度                                  |
+| **[getLowerFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerfacerange)**(): `number` <br> 获取下半脸前后                                          |
+| **[getLowerFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerfacewidth)**(): `number` <br> 获取下半脸的宽度                                        |
+| **[getLowerJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerjawrange)**(): `number` <br> 调整下颚骨前后移动                                        |
+| **[getLowerJawWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerjawwidth)**(): `number` <br> 调整下颚骨宽度                                            |
+| **[getLowerMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowermouththickness)**(): `number` <br> 获取下嘴唇薄厚                                |
+| **[getLowerStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getlowerstretch)**(): `number` <br> 调整耳朵下部拉伸                                            |
+| **[getMouthHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthheight)**(): `number` <br> 获取嘴巴上下位置                                              |
+| **[getMouthRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthrange)**(): `number` <br> 获取嘴巴前后移动                                                |
+| **[getMouthShape](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthshape)**(): `number` <br> 调整嘴巴形状                                                    |
+| **[getMouthWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getmouthwidth)**(): `number` <br> 获取嘴巴宽度                                                    |
+| **[getNeckStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckstretch)**(): `number` <br> 获取脖子拉伸                                                  |
+| **[getNeckThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckthickness)**(): `number` <br> 获取脖子前后的宽度                                        |
+| **[getNeckWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getneckwidth)**(): `number` <br> 调整脖子的左右宽度                                                |
+| **[getNoseHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseheight)**(): `number` <br> 获取鼻梁高度                                                    |
+| **[getNoseProtrusion](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseprotrusion)**(): `number` <br> 获取鼻尖长度                                            |
+| **[getNoseVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getnoseverticalposition)**(): `number` <br> 获取鼻子上下移动                            |
+| **[getPupilHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilheight)**(): `number` <br> 获取瞳孔高度                                                  |
+| **[getPupilHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilhorizontalposition)**(): `number` <br> 获取瞳孔左右位置                      |
+| **[getPupilVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilverticalposition)**(): `number` <br> 获取瞳孔上下位置                          |
+| **[getPupilWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getpupilwidth)**(): `number` <br> 获取瞳孔宽度                                                    |
+| **[getRibThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getribthickness)**(): `number` <br> 获取肋骨的前后宽度                                          |
+| **[getRibWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getribwidth)**(): `number` <br> 获取肋骨的左右宽度                                                  |
+| **[getShankScaleX](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankscalex)**(): `number` <br> 获取小腿粗细左右                                              |
+| **[getShankScaleZ](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankscalez)**(): `number` <br> 获取小腿粗细前后                                              |
+| **[getShankStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getshankstretch)**(): `number` <br> 获取小腿拉伸                                                |
+| **[getShoulderArmThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmthickness)**(): `number` <br> 获取肩膀的前后宽度                          |
+| **[getShoulderArmWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderarmwidth)**(): `number` <br> 获取肩膀的左右宽度                                  |
+| **[getShoulderThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderthickness)**(): `number` <br> 获取肩膀的前后宽度                                |
+| **[getShoulderWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getshoulderwidth)**(): `number` <br> 获取肩膀的宽度                                            |
+| **[getThighStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighstretch)**(): `number` <br> 获取大腿拉伸                                                |
+| **[getThighThicknessX](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighthicknessx)**(): `number` <br> 获取大腿粗细左右                                      |
+| **[getThighThicknessZ](Gameplay.Gameplay.IHumanoidV2Shape.md#getthighthicknessz)**(): `number` <br> 获取大腿粗细前后                                      |
+| **[getUpperArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsstretch)**(): `number` <br> 获取大臂的拉伸                                      |
+| **[getUpperArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmsthickness)**(): `number` <br> 获取大臂前后方向的宽度                          |
+| **[getUpperArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperarmswidth)**(): `number` <br> 获取大臂左右方向的宽度                                  |
+| **[getUpperFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperfacerange)**(): `number` <br> 调整上半脸前后移动                                      |
+| **[getUpperMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getuppermouththickness)**(): `number` <br> 获取上嘴唇薄厚                                |
+| **[getUpperStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getupperstretch)**(): `number` <br> 调整耳朵上部拉伸                                            |
+| **[getWaistStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaiststretch)**(): `number` <br> 获取腰部拉伸                                                |
+| **[getWaistThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistthickness)**(): `number` <br> 获取腰的前后宽度                                        |
+| **[getWaistWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#getwaistwidth)**(): `number` <br> 获取腰的左右宽度                                                |
+| **[setBreastHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreasthorizontalposition)**(`number`, `boolean`): `void` <br> 调整胸部左右位置   |
+| **[setBreastLength](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastlength)**(`number`, `boolean`): `void` <br> 调整胸部长度                               |
+| **[setBreastScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastscale)**(`number`, `boolean`): `void` <br> 调整胸部整体大小；                           |
+| **[setBreastStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreaststretch)**(`number`, `boolean`): `void` <br> 设置胸部拉伸                             |
+| **[setBreastVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setbreastverticalposition)**(`number`, `boolean`): `void` <br> 调整胸部上下位置       |
+| **[setBrowGap](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowgap)**(`number`, `boolean`): `void` <br> 设置眉间距                                           |
+| **[setBrowHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowheight)**(`number`, `boolean`): `void` <br> 设置眉毛上下移动                               |
+| **[setBrowInboardShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowinboardshape)**(`number`, `boolean`): `void` <br> 设置眉毛内侧角度                   |
+| **[setBrowOutsideShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowoutsideshape)**(`number`, `boolean`): `void` <br> 设置眉毛外侧形状                   |
+| **[setBrowRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#setbrowrotation)**(`number`, `boolean`): `void` <br> 设置眉毛角度                               |
+| **[setCanthusHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setcanthushorizontalposition)**(`number`, `boolean`): `void` <br> 设置眼角左右移动 |
+| **[setCanthusVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setcanthusverticalposition)**(`number`, `boolean`): `void` <br> 设置外眼角上下移动   |
+| **[setCharacterHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setcharacterheight)**(`number`, `boolean`): `void` <br> 设置角色身高                         |
+| **[setCheekBoneRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekbonerange)**(`number`, `boolean`): `void` <br> 设置颧骨前后移动                       |
+| **[setCheekBoneWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekbonewidth)**(`number`, `boolean`): `void` <br> 设置颧骨横向宽度                       |
+| **[setCheekHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekheight)**(`number`, `boolean`): `void` <br> 设置脸颊上下移动                             |
+| **[setCheekRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekrange)**(`number`, `boolean`): `void` <br> 设置脸颊前后移动                               |
+| **[setCheekWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setcheekwidth)**(`number`, `boolean`): `void` <br> 设置脸颊宽度                                   |
+| **[setEarRoll](Gameplay.Gameplay.IHumanoidV2Shape.md#setearroll)**(`number`, `boolean`): `void` <br> 调整耳朵左右旋转                                     |
+| **[setEarScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setearscale)**(`number`, `boolean`): `void` <br> 调整耳朵大小                                       |
+| **[setEarYaw](Gameplay.Gameplay.IHumanoidV2Shape.md#setearyaw)**(`number`, `boolean`): `void` <br> 调整耳朵前后旋转                                       |
+| **[setEyesGap](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesgap)**(`number`, `boolean`): `void` <br> 设置眼睛间距                                         |
+| **[setEyesHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesheight)**(`number`, `boolean`): `void` <br> 设置眼睛上下移动                               |
+| **[setEyesLength](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyeslength)**(`number`, `boolean`): `void` <br> 眼睛长度                                       |
+| **[setEyesRange](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesrange)**(`number`, `boolean`): `void` <br> 设置眼睛前后移动                                 |
+| **[setEyesRotation](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyesrotation)**(`number`, `boolean`): `void` <br> 设置眼睛角度                               |
+| **[setEyesWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#seteyeswidth)**(`number`, `boolean`): `void` <br> 设置眼睛左右宽度                                 |
+| **[setFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setfacewidth)**(`number`, `boolean`): `void` <br> 调整头部整体宽度                                 |
+| **[setGroinThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setgrointhickness)**(`number`, `boolean`): `void` <br> 设置胯宽度前后                         |
+| **[setGroinWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setgroinwidth)**(`number`, `boolean`): `void` <br> 设置胯宽度左右                                 |
+| **[setHeadScale](Gameplay.Gameplay.IHumanoidV2Shape.md#setheadscale)**(`number`, `boolean`): `void` <br> 设置角色头部大小                                 |
+| **[setJawLength](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawlength)**(`number`, `boolean`): `void` <br> 调整下巴长度                                     |
+| **[setJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawrange)**(`number`, `boolean`): `void` <br> 调整下巴前后移动                                   |
+| **[setJawSmooth](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawsmooth)**(`number`, `boolean`): `void` <br> 调整下巴圆度                                     |
+| **[setJawVertexHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexheight)**(`number`, `boolean`): `void` <br> 调整下巴尖上下移动                   |
+| **[setJawVertexRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexrange)**(`number`, `boolean`): `void` <br> 调整下巴尖前后移动                     |
+| **[setJawVertexWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setjawvertexwidth)**(`number`, `boolean`): `void` <br> 调整下巴尖宽度                         |
+| **[setLowerArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsstretch)**(`number`, `boolean`): `void` <br> 设置小臂的拉伸                     |
+| **[setLowerArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmsthickness)**(`number`, `boolean`): `void` <br> 设置小臂前后方向的宽度         |
+| **[setLowerArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerarmswidth)**(`number`, `boolean`): `void` <br> 设置小臂左右方向的宽度                 |
+| **[setLowerFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerfacerange)**(`number`, `boolean`): `void` <br> 设置下半脸前后                         |
+| **[setLowerFaceWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerfacewidth)**(`number`, `boolean`): `void` <br> 设置下半脸的宽度                       |
+| **[setLowerJawRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerjawrange)**(`number`, `boolean`): `void` <br> 调整下颚骨前后移动                       |
+| **[setLowerJawWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerjawwidth)**(`number`, `boolean`): `void` <br> 调整下颚骨宽度                           |
+| **[setLowerMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowermouththickness)**(`number`, `boolean`): `void` <br> 设置下嘴唇薄厚               |
+| **[setLowerStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setlowerstretch)**(`number`, `boolean`): `void` <br> 调整耳朵下部拉伸                           |
+| **[setMouthHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthheight)**(`number`, `boolean`): `void` <br> 设置嘴巴上下位置                             |
+| **[setMouthRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthrange)**(`number`, `boolean`): `void` <br> 设置嘴巴前后移动                               |
+| **[setMouthShape](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthshape)**(`number`, `boolean`): `void` <br> 调整嘴巴形状                                   |
+| **[setMouthWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setmouthwidth)**(`number`, `boolean`): `void` <br> 设置嘴巴宽度                                   |
+| **[setNeckStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckstretch)**(`number`, `boolean`): `void` <br> 设置脖子拉伸                                 |
+| **[setNeckThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckthickness)**(`number`, `boolean`): `void` <br> 设置脖子前后的宽度                       |
+| **[setNeckWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setneckwidth)**(`number`, `boolean`): `void` <br> 调整脖子的左右宽度                               |
+| **[setNoseHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseheight)**(`number`, `boolean`): `void` <br> 设置鼻梁高度                                   |
+| **[setNoseProtrusion](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseprotrusion)**(`number`, `boolean`): `void` <br> 设置鼻尖长度                           |
+| **[setNoseVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setnoseverticalposition)**(`number`, `boolean`): `void` <br> 设置鼻子上下移动           |
+| **[setPupilHeight](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilheight)**(`number`, `boolean`): `void` <br> 设置瞳孔高度                                 |
+| **[setPupilHorizontalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilhorizontalposition)**(`number`, `boolean`): `void` <br> 设置瞳孔左右位置     |
+| **[setPupilVerticalPosition](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilverticalposition)**(`number`, `boolean`): `void` <br> 设置瞳孔上下位置         |
+| **[setPupilWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setpupilwidth)**(`number`, `boolean`): `void` <br> 设置瞳孔宽度                                   |
+| **[setRibThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setribthickness)**(`number`, `boolean`): `void` <br> 设置肋骨的前后宽度                         |
+| **[setRibWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setribwidth)**(`number`, `boolean`): `void` <br> 设置肋骨的左右宽度                                 |
+| **[setShankScaleX](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankscalex)**(`number`, `boolean`): `void` <br> 设置小腿粗细左右                             |
+| **[setShankScaleZ](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankscalez)**(`number`, `boolean`): `void` <br> 设置小腿粗细前后                             |
+| **[setShankStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setshankstretch)**(`number`, `boolean`): `void` <br> 设置小腿拉伸                               |
+| **[setShoulderArmThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmthickness)**(`number`, `boolean`): `void` <br> 设置肩膀的前后宽度         |
+| **[setShoulderArmWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderarmwidth)**(`number`, `boolean`): `void` <br> 设置肩膀的左右宽度                 |
+| **[setShoulderThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderthickness)**(`number`, `boolean`): `void` <br> 设置肩膀的前后宽度               |
+| **[setShoulderWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setshoulderwidth)**(`number`, `boolean`): `void` <br> 设置肩膀的宽度                           |
+| **[setThighStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighstretch)**(`number`, `boolean`): `void` <br> 设置大腿拉伸                               |
+| **[setThighThicknessX](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighthicknessx)**(`number`, `boolean`): `void` <br> 设置大腿粗细左右                     |
+| **[setThighThicknessZ](Gameplay.Gameplay.IHumanoidV2Shape.md#setthighthicknessz)**(`number`, `boolean`): `void` <br> 设置大腿粗细前后                     |
+| **[setUpperArmsStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsstretch)**(`number`, `boolean`): `void` <br> 设置大臂的拉伸                     |
+| **[setUpperArmsThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmsthickness)**(`number`, `boolean`): `void` <br> 设置大臂前后方向的宽度         |
+| **[setUpperArmsWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperarmswidth)**(`number`, `boolean`): `void` <br> 设置大臂左右方向的宽度                 |
+| **[setUpperFaceRange](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperfacerange)**(`number`, `boolean`): `void` <br> 调整上半脸前后移动                     |
+| **[setUpperMouthThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setuppermouththickness)**(`number`, `boolean`): `void` <br> 设置上嘴唇薄厚               |
+| **[setUpperStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setupperstretch)**(`number`, `boolean`): `void` <br> 调整耳朵上部拉伸                           |
+| **[setWaistStretch](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaiststretch)**(`number`, `boolean`): `void` <br> 设置腰部拉伸                               |
+| **[setWaistThickness](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistthickness)**(`number`, `boolean`): `void` <br> 设置腰的前后宽度                       |
+| **[setWaistWidth](Gameplay.Gameplay.IHumanoidV2Shape.md#setwaistwidth)**(`number`, `boolean`): `void` <br> 设置腰的左右宽度                               |
 
 ## Methods
 
@@ -203,10 +197,6 @@ guang.deng
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4781
-
 ---
 
 ### getBreastLength
@@ -226,10 +216,6 @@ Gameplay/index.d.ts:4781
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4787
 
 ---
 
@@ -251,10 +237,6 @@ Gameplay/index.d.ts:4787
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4769
-
 ---
 
 ### getBreastStretch
@@ -274,10 +256,6 @@ Gameplay/index.d.ts:4769
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4847
 
 ---
 
@@ -299,10 +277,6 @@ Gameplay/index.d.ts:4847
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4775
-
 ---
 
 ### getBrowGap
@@ -322,10 +296,6 @@ Gameplay/index.d.ts:4775
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4985
 
 ---
 
@@ -347,10 +317,6 @@ Gameplay/index.d.ts:4985
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4979
-
 ---
 
 ### getBrowInboardShape
@@ -370,10 +336,6 @@ Gameplay/index.d.ts:4979
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4997
 
 ---
 
@@ -395,10 +357,6 @@ Gameplay/index.d.ts:4997
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5003
-
 ---
 
 ### getBrowRotation
@@ -418,10 +376,6 @@ Gameplay/index.d.ts:5003
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4991
 
 ---
 
@@ -443,10 +397,6 @@ Gameplay/index.d.ts:4991
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5052
-
 ---
 
 ### getCanthusVerticalPosition
@@ -466,10 +416,6 @@ Gameplay/index.d.ts:5052
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:5058
 
 ---
 
@@ -491,10 +437,6 @@ Gameplay/index.d.ts:5058
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4577
-
 ---
 
 ### getCheekBoneRange
@@ -514,10 +456,6 @@ Gameplay/index.d.ts:4577
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4691
 
 ---
 
@@ -539,10 +477,6 @@ Gameplay/index.d.ts:4691
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4685
-
 ---
 
 ### getCheekHeight
@@ -562,10 +496,6 @@ Gameplay/index.d.ts:4685
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4709
 
 ---
 
@@ -587,10 +517,6 @@ Gameplay/index.d.ts:4709
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4703
-
 ---
 
 ### getCheekWidth
@@ -610,10 +536,6 @@ Gameplay/index.d.ts:4703
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4697
 
 ---
 
@@ -635,10 +557,6 @@ Gameplay/index.d.ts:4697
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4613
-
 ---
 
 ### getEarScale
@@ -658,10 +576,6 @@ Gameplay/index.d.ts:4613
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4607
 
 ---
 
@@ -683,10 +597,6 @@ Gameplay/index.d.ts:4607
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4619
-
 ---
 
 ### getEyesGap
@@ -706,10 +616,6 @@ Gameplay/index.d.ts:4619
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:5022
 
 ---
 
@@ -731,10 +637,6 @@ Gameplay/index.d.ts:5022
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5016
-
 ---
 
 ### getEyesLength
@@ -754,10 +656,6 @@ Gameplay/index.d.ts:5016
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:5040
 
 ---
 
@@ -779,10 +677,6 @@ Gameplay/index.d.ts:5040
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5028
-
 ---
 
 ### getEyesRotation
@@ -802,10 +696,6 @@ Gameplay/index.d.ts:5028
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:5034
 
 ---
 
@@ -827,10 +717,6 @@ Gameplay/index.d.ts:5034
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5046
-
 ---
 
 ### getFaceWidth
@@ -850,10 +736,6 @@ Gameplay/index.d.ts:5046
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4583
 
 ---
 
@@ -875,10 +757,6 @@ Gameplay/index.d.ts:4583
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4865
-
 ---
 
 ### getGroinWidth
@@ -898,10 +776,6 @@ Gameplay/index.d.ts:4865
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4859
 
 ---
 
@@ -927,10 +801,6 @@ Gameplay/index.d.ts:4859
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:5010
-
 ---
 
 ### getJawLength
@@ -950,10 +820,6 @@ Gameplay/index.d.ts:5010
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4649
 
 ---
 
@@ -975,10 +841,6 @@ Gameplay/index.d.ts:4649
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4661
-
 ---
 
 ### getJawSmooth
@@ -998,10 +860,6 @@ Gameplay/index.d.ts:4661
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4637
 
 ---
 
@@ -1023,10 +881,6 @@ Gameplay/index.d.ts:4637
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4667
-
 ---
 
 ### getJawVertexRange
@@ -1046,10 +900,6 @@ Gameplay/index.d.ts:4667
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4673
 
 ---
 
@@ -1071,10 +921,6 @@ Gameplay/index.d.ts:4673
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4679
-
 ---
 
 ### getLowerArmsStretch
@@ -1094,10 +940,6 @@ Gameplay/index.d.ts:4679
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4913
 
 ---
 
@@ -1119,10 +961,6 @@ Gameplay/index.d.ts:4913
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4901
-
 ---
 
 ### getLowerArmsWidth
@@ -1142,10 +980,6 @@ Gameplay/index.d.ts:4901
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4895
 
 ---
 
@@ -1167,10 +1001,6 @@ Gameplay/index.d.ts:4895
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4595
-
 ---
 
 ### getLowerFaceWidth
@@ -1190,10 +1020,6 @@ Gameplay/index.d.ts:4595
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4601
 
 ---
 
@@ -1215,10 +1041,6 @@ Gameplay/index.d.ts:4601
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4643
-
 ---
 
 ### getLowerJawWidth
@@ -1238,10 +1060,6 @@ Gameplay/index.d.ts:4643
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4655
 
 ---
 
@@ -1263,10 +1081,6 @@ Gameplay/index.d.ts:4655
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4757
-
 ---
 
 ### getLowerStretch
@@ -1286,10 +1100,6 @@ Gameplay/index.d.ts:4757
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4631
 
 ---
 
@@ -1311,10 +1121,6 @@ Gameplay/index.d.ts:4631
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4733
-
 ---
 
 ### getMouthRange
@@ -1334,10 +1140,6 @@ Gameplay/index.d.ts:4733
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4739
 
 ---
 
@@ -1359,10 +1161,6 @@ Gameplay/index.d.ts:4739
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4763
-
 ---
 
 ### getMouthWidth
@@ -1382,10 +1180,6 @@ Gameplay/index.d.ts:4763
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4745
 
 ---
 
@@ -1407,10 +1201,6 @@ Gameplay/index.d.ts:4745
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4841
-
 ---
 
 ### getNeckThickness
@@ -1430,10 +1220,6 @@ Gameplay/index.d.ts:4841
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4799
 
 ---
 
@@ -1455,10 +1241,6 @@ Gameplay/index.d.ts:4799
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4793
-
 ---
 
 ### getNoseHeight
@@ -1478,10 +1260,6 @@ Gameplay/index.d.ts:4793
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4727
 
 ---
 
@@ -1503,10 +1281,6 @@ Gameplay/index.d.ts:4727
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4715
-
 ---
 
 ### getNoseVerticalPosition
@@ -1526,10 +1300,6 @@ Gameplay/index.d.ts:4715
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4721
 
 ---
 
@@ -1551,10 +1321,6 @@ Gameplay/index.d.ts:4721
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4973
-
 ---
 
 ### getPupilHorizontalPosition
@@ -1574,10 +1340,6 @@ Gameplay/index.d.ts:4973
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4955
 
 ---
 
@@ -1599,10 +1361,6 @@ Gameplay/index.d.ts:4955
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4961
-
 ---
 
 ### getPupilWidth
@@ -1622,10 +1380,6 @@ Gameplay/index.d.ts:4961
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4967
 
 ---
 
@@ -1647,10 +1401,6 @@ Gameplay/index.d.ts:4967
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4823
-
 ---
 
 ### getRibWidth
@@ -1670,10 +1420,6 @@ Gameplay/index.d.ts:4823
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4817
 
 ---
 
@@ -1695,10 +1441,6 @@ Gameplay/index.d.ts:4817
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4931
-
 ---
 
 ### getShankScaleZ
@@ -1718,10 +1460,6 @@ Gameplay/index.d.ts:4931
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4937
 
 ---
 
@@ -1743,10 +1481,6 @@ Gameplay/index.d.ts:4937
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4949
-
 ---
 
 ### getShoulderArmThickness
@@ -1766,10 +1500,6 @@ Gameplay/index.d.ts:4949
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4877
 
 ---
 
@@ -1791,10 +1521,6 @@ Gameplay/index.d.ts:4877
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4871
-
 ---
 
 ### getShoulderThickness
@@ -1814,10 +1540,6 @@ Gameplay/index.d.ts:4871
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4811
 
 ---
 
@@ -1839,10 +1561,6 @@ Gameplay/index.d.ts:4811
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4805
-
 ---
 
 ### getThighStretch
@@ -1862,10 +1580,6 @@ Gameplay/index.d.ts:4805
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4943
 
 ---
 
@@ -1887,10 +1601,6 @@ Gameplay/index.d.ts:4943
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4919
-
 ---
 
 ### getThighThicknessZ
@@ -1910,10 +1620,6 @@ Gameplay/index.d.ts:4919
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4925
 
 ---
 
@@ -1935,10 +1641,6 @@ Gameplay/index.d.ts:4925
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4907
-
 ---
 
 ### getUpperArmsThickness
@@ -1958,10 +1660,6 @@ Gameplay/index.d.ts:4907
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4889
 
 ---
 
@@ -1983,10 +1681,6 @@ Gameplay/index.d.ts:4889
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4883
-
 ---
 
 ### getUpperFaceRange
@@ -2006,10 +1700,6 @@ Gameplay/index.d.ts:4883
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4589
 
 ---
 
@@ -2031,10 +1721,6 @@ Gameplay/index.d.ts:4589
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4751
-
 ---
 
 ### getUpperStretch
@@ -2054,10 +1740,6 @@ Gameplay/index.d.ts:4751
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4625
 
 ---
 
@@ -2079,10 +1761,6 @@ Gameplay/index.d.ts:4625
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4853
-
 ---
 
 ### getWaistThickness
@@ -2102,10 +1780,6 @@ Gameplay/index.d.ts:4853
 `number`
 
 值
-
-#### Defined in
-
-Gameplay/index.d.ts:4835
 
 ---
 
@@ -2127,10 +1801,6 @@ Gameplay/index.d.ts:4835
 
 值
 
-#### Defined in
-
-Gameplay/index.d.ts:4829
-
 ---
 
 ### setBreastHorizontalPosition
@@ -2150,18 +1820,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4155
 
 ---
 
@@ -2182,18 +1848,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4164
 
 ---
 
@@ -2214,18 +1876,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4137
 
 ---
 
@@ -2246,18 +1904,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4254
 
 ---
 
@@ -2278,18 +1932,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4146
 
 ---
 
@@ -2310,18 +1960,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4461
 
 ---
 
@@ -2342,18 +1988,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4452
 
 ---
 
@@ -2374,18 +2016,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4479
 
 ---
 
@@ -2406,18 +2044,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4488
 
 ---
 
@@ -2438,18 +2072,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4470
 
 ---
 
@@ -2470,18 +2100,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4562
 
 ---
 
@@ -2502,18 +2128,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4571
 
 ---
 
@@ -2532,18 +2154,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3849
 
 ---
 
@@ -2564,18 +2182,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4020
 
 ---
 
@@ -2596,18 +2210,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4011
 
 ---
 
@@ -2628,18 +2238,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4047
 
 ---
 
@@ -2660,18 +2266,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4038
 
 ---
 
@@ -2692,18 +2294,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4029
 
 ---
 
@@ -2724,18 +2322,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3903
 
 ---
 
@@ -2756,18 +2350,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3894
 
 ---
 
@@ -2788,18 +2378,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3912
 
 ---
 
@@ -2820,18 +2406,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4517
 
 ---
 
@@ -2852,18 +2434,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4508
 
 ---
 
@@ -2884,18 +2462,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4544
 
 ---
 
@@ -2916,18 +2490,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4526
 
 ---
 
@@ -2948,18 +2518,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4535
 
 ---
 
@@ -2980,18 +2546,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4553
 
 ---
 
@@ -3012,18 +2574,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3858
 
 ---
 
@@ -3044,18 +2602,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4281
 
 ---
 
@@ -3076,18 +2630,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4272
 
 ---
 
@@ -3113,18 +2663,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4499
 
 ---
 
@@ -3145,18 +2691,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3957
 
 ---
 
@@ -3177,18 +2719,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3975
 
 ---
 
@@ -3209,18 +2747,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3939
 
 ---
 
@@ -3241,18 +2775,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3984
 
 ---
 
@@ -3273,18 +2803,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3993
 
 ---
 
@@ -3305,18 +2831,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4002
 
 ---
 
@@ -3337,18 +2859,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4353
 
 ---
 
@@ -3369,18 +2887,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4335
 
 ---
 
@@ -3401,18 +2915,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4326
 
 ---
 
@@ -3433,18 +2943,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3876
 
 ---
 
@@ -3465,18 +2971,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3885
 
 ---
 
@@ -3497,18 +2999,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3948
 
 ---
 
@@ -3529,18 +3027,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3966
 
 ---
 
@@ -3561,18 +3055,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4119
 
 ---
 
@@ -3593,18 +3083,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3930
 
 ---
 
@@ -3623,18 +3109,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4083
 
 ---
 
@@ -3655,18 +3137,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4092
 
 ---
 
@@ -3687,18 +3165,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4128
 
 ---
 
@@ -3719,18 +3193,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4101
 
 ---
 
@@ -3751,18 +3221,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4245
 
 ---
 
@@ -3783,18 +3249,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4182
 
 ---
 
@@ -3815,18 +3277,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4173
 
 ---
 
@@ -3847,18 +3305,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4074
 
 ---
 
@@ -3879,18 +3333,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4056
 
 ---
 
@@ -3911,18 +3361,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4065
 
 ---
 
@@ -3943,18 +3389,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4443
 
 ---
 
@@ -3975,18 +3417,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4416
 
 ---
 
@@ -4007,18 +3445,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4425
 
 ---
 
@@ -4039,18 +3473,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4434
 
 ---
 
@@ -4071,18 +3501,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4218
 
 ---
 
@@ -4103,18 +3529,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4209
 
 ---
 
@@ -4135,18 +3557,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4380
 
 ---
 
@@ -4167,18 +3585,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4389
 
 ---
 
@@ -4199,18 +3613,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4407
 
 ---
 
@@ -4231,18 +3641,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4299
 
 ---
 
@@ -4263,18 +3669,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4290
 
 ---
 
@@ -4295,18 +3697,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4200
 
 ---
 
@@ -4327,18 +3725,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4191
 
 ---
 
@@ -4359,18 +3753,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4398
 
 ---
 
@@ -4391,18 +3781,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4362
 
 ---
 
@@ -4423,18 +3809,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4371
 
 ---
 
@@ -4455,18 +3837,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4344
 
 ---
 
@@ -4487,18 +3865,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4317
 
 ---
 
@@ -4519,18 +3893,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4308
 
 ---
 
@@ -4549,18 +3919,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3867
 
 ---
 
@@ -4581,18 +3947,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4110
 
 ---
 
@@ -4613,18 +3975,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3921
 
 ---
 
@@ -4645,18 +4003,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4263
 
 ---
 
@@ -4677,18 +4031,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4236
 
 ---
 
@@ -4709,15 +4059,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `value` | `number`  | usage:值                      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `value` | `number`  | 值                      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:4227

@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / TouchInputType
+[Gameplay](../modules/Gameplay.Gameplay.md) / TouchInputType
 
-# Enumeration: TouchInputType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).TouchInputType
+# TouchInputType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [TouchBegin](Gameplay.Gameplay.TouchInputType.md#touchbegin)
-- [TouchEnd](Gameplay.Gameplay.TouchInputType.md#touchend)
-- [TouchMove](Gameplay.Gameplay.TouchInputType.md#touchmove)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[TouchBegin](Gameplay.Gameplay.TouchInputType.md#touchbegin)** = `0` <br> 触摸开始 |
+| **[TouchEnd](Gameplay.Gameplay.TouchInputType.md#touchend)** = `2` <br> 触摸结束     |
+| **[TouchMove](Gameplay.Gameplay.TouchInputType.md#touchmove)** = `1` <br> 触摸移动   |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 触摸开始
 
-#### Defined in
-
-Gameplay/index.d.ts:10118
-
 ---
 
 ### TouchEnd
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:10118
 
 触摸结束
 
-#### Defined in
-
-Gameplay/index.d.ts:10122
-
 ---
 
 ### TouchMove
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:10122
 • **TouchMove** = `1`
 
 触摸移动
-
-#### Defined in
-
-Gameplay/index.d.ts:10120

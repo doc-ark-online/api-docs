@@ -1,44 +1,20 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / AnalogInputEvent
+[UI](../modules/UI.UI.md) / AnalogInputEvent
 
-# Class: AnalogInputEvent
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).AnalogInputEvent
-
-**`Author`**
-
-jie.wu
+# AnalogInputEvent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 轴输入事件
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.AnalogInputEvent.md#constructor)
-
-### Methods
-
-- [toInputEvent](UI.UI.AnalogInputEvent.md#toinputevent)
-
-## Constructors
-
-### constructor
-
-• `Private` **new AnalogInputEvent**()
+| Methods                                                                                                                  |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| **[toInputEvent](UI.UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent |
 
 **`Description`**
 
 默认构造
-
-#### Defined in
-
-UI/index.d.ts:4138
 
 ## Methods
 
@@ -59,7 +35,3 @@ UI/index.d.ts:4138
 [`InputEvent`](UI.UI.InputEvent.md)
 
 返回转化后 inputEvent
-
-#### Defined in
-
-UI/index.d.ts:4144

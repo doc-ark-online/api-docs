@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / PurchaseService
+[Service](../modules/Service.Service.md) / PurchaseService
 
-# Class: PurchaseService
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).PurchaseService
-
-**`Author`**
-
-huipeng.jia
+# PurchaseService <Badge type="tip" text="Class" />
 
 **`Instance`**
 
@@ -18,32 +12,18 @@ huipeng.jia
 
 单例类，请使用 instance 获取对象
 
-**`Network Status`**
-
-usage: 客户端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[onArkBalanceUpdated](Service.Service.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <br> 获取 Ark 币余额更新的委托 |
+| **[onOrderDelivered](Service.Service.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <br> 获取订单发货的委托                    |
 
-- [constructor](Service.Service.PurchaseService.md#constructor)
-
-### Accessors
-
-- [onArkBalanceUpdated](Service.Service.PurchaseService.md#onarkbalanceupdated)
-- [onOrderDelivered](Service.Service.PurchaseService.md#onorderdelivered)
-
-### Methods
-
-- [getArkBalance](Service.Service.PurchaseService.md#getarkbalance)
-- [placeOrder](Service.Service.PurchaseService.md#placeorder)
-- [getInstance](Service.Service.PurchaseService.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new PurchaseService**()
+| Methods                                                                                                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getArkBalance](Service.Service.PurchaseService.md#getarkbalance)**(): `void` <br> 获取 Ark 币余额                                                                                         |
+| **[placeOrder](Service.Service.PurchaseService.md#placeorder)**(`string`, `number`, `[placeOrder](Service.Service.PurchaseService.md#placeorder)Result`): `void` <br> 下单指定数量的指定商品 |
+| **[getInstance](Service.Service.PurchaseService.md#getinstance)**(): [`PurchaseService`](Service.Service.PurchaseService.md) <br> 获取应用内购管理器全局实例                                 |
 
 ## Accessors
 
@@ -68,10 +48,6 @@ usage: 客户端
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\>
 
 Ark 币余额更新的委托
-
-#### Defined in
-
-Service/index.d.ts:414
 
 ---
 
@@ -98,10 +74,6 @@ Service/index.d.ts:414
 
 订单发货的委托
 
-#### Defined in
-
-Service/index.d.ts:436
-
 ## Methods
 
 ### getArkBalance
@@ -124,10 +96,6 @@ Service/index.d.ts:436
 
 `void`
 
-#### Defined in
-
-Service/index.d.ts:407
-
 ---
 
 ### placeOrder
@@ -148,19 +116,15 @@ Service/index.d.ts:407
 
 #### Parameters
 
-| Name               | Type                                            | Description                                                                        |
-| :----------------- | :---------------------------------------------- | :--------------------------------------------------------------------------------- |
-| `commodityId`      | `string`                                        | usage: 商品 Id                                                                     |
-| `amount`           | `number`                                        | usage: 数量                                                                        |
-| `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` | usage: 订单状态回调，status = 200 时表示订单支付成功。msg 描述订单状态或者错误信息 |
+| Name               | Type                                            | Description                                                                 |
+| :----------------- | :---------------------------------------------- | :-------------------------------------------------------------------------- |
+| `commodityId`      | `string`                                        | 商品 Id                                                                     |
+| `amount`           | `number`                                        | 数量                                                                        |
+| `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` | 订单状态回调，status = 200 时表示订单支付成功。msg 描述订单状态或者错误信息 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:423
 
 ---
 
@@ -181,7 +145,3 @@ Service/index.d.ts:423
 [`PurchaseService`](Service.Service.PurchaseService.md)
 
 应用内购管理器全局实例
-
-#### Defined in
-
-Service/index.d.ts:401

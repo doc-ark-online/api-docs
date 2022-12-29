@@ -1,100 +1,80 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Vector2
+[Type](../modules/Type.Type.md) / Vector2
 
-# Class: Vector2
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Vector2
-
-**`Author`**
-
-SuoWei
+# Vector2 <Badge type="tip" text="Class" />
 
 **`Description`**
 
 由分量 (x,y) 组成的二维空间中的向量
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                   |
+| :----------------------------------------------------------- |
+| **[x](Type.Type.Vector2.md#x)**: `number` <br> 向量的 x 分量 |
+| **[y](Type.Type.Vector2.md#y)**: `number` <br> 向量的 y 分量 |
 
-- [constructor](Type.Type.Vector2.md#constructor)
+| Accessors                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------ |
+| **[length](Type.Type.Vector2.md#length)**(): `number` <br> 计算向量的长度                                                 |
+| **[magnitude](Type.Type.Vector2.md#magnitude)**([`Vector2`](Type.Type.Vector2.md)): `number` <br> 求向量长度              |
+| **[negative](Type.Type.Vector2.md#negative)**(): [`Vector2`](Type.Type.Vector2.md) <br> 返回各个分量取反的新 Vector2 对象 |
+| **[normalized](Type.Type.Vector2.md#normalized)**(): [`Vector2`](Type.Type.Vector2.md) <br> 返回一个新的 Vector2 对象     |
+| **[sqrLength](Type.Type.Vector2.md#sqrlength)**(): `number` <br> 向量长度的平方                                           |
+| **[sqrMagnitude](Type.Type.Vector2.md#sqrmagnitude)**([`Vector2`](Type.Type.Vector2.md)): `number` <br> 求向量长度平方    |
+| **[negOne](Type.Type.Vector2.md#negone)**(): [`Vector2`](Type.Type.Vector2.md) <br> (-1, -1)                              |
+| **[one](Type.Type.Vector2.md#one)**(): [`Vector2`](Type.Type.Vector2.md) <br> (1, 1)                                      |
+| **[unitX](Type.Type.Vector2.md#unitx)**(): [`Vector2`](Type.Type.Vector2.md) <br> (1, 0)                                  |
+| **[unitY](Type.Type.Vector2.md#unity)**(): [`Vector2`](Type.Type.Vector2.md) <br> (0, 1)                                  |
+| **[zero](Type.Type.Vector2.md#zero)**(): [`Vector2`](Type.Type.Vector2.md) <br> (0, 0)                                    |
 
-### Properties
-
-- [x](Type.Type.Vector2.md#x)
-- [y](Type.Type.Vector2.md#y)
-
-### Accessors
-
-- [length](Type.Type.Vector2.md#length)
-- [magnitude](Type.Type.Vector2.md#magnitude)
-- [negative](Type.Type.Vector2.md#negative)
-- [normalized](Type.Type.Vector2.md#normalized)
-- [sqrLength](Type.Type.Vector2.md#sqrlength)
-- [sqrMagnitude](Type.Type.Vector2.md#sqrmagnitude)
-- [negOne](Type.Type.Vector2.md#negone)
-- [one](Type.Type.Vector2.md#one)
-- [unitX](Type.Type.Vector2.md#unitx)
-- [unitY](Type.Type.Vector2.md#unity)
-- [zero](Type.Type.Vector2.md#zero)
-
-### Methods
-
-- [add](Type.Type.Vector2.md#add)
-- [clone](Type.Type.Vector2.md#clone)
-- [divide](Type.Type.Vector2.md#divide)
-- [equals](Type.Type.Vector2.md#equals)
-- [fromString](Type.Type.Vector2.md#fromstring)
-- [multiply](Type.Type.Vector2.md#multiply)
-- [normalize](Type.Type.Vector2.md#normalize)
-- [set](Type.Type.Vector2.md#set)
-- [strictEquals](Type.Type.Vector2.md#strictequals)
-- [subtract](Type.Type.Vector2.md#subtract)
-- [toString](Type.Type.Vector2.md#tostring)
-- [add](Type.Type.Vector2.md#add-1)
-- [angle](Type.Type.Vector2.md#angle)
-- [ceil](Type.Type.Vector2.md#ceil)
-- [clamp](Type.Type.Vector2.md#clamp)
-- [clone](Type.Type.Vector2.md#clone-1)
-- [copy](Type.Type.Vector2.md#copy)
-- [cross](Type.Type.Vector2.md#cross)
-- [distance](Type.Type.Vector2.md#distance)
-- [divide](Type.Type.Vector2.md#divide-1)
-- [dot](Type.Type.Vector2.md#dot)
-- [equals](Type.Type.Vector2.md#equals-1)
-- [floor](Type.Type.Vector2.md#floor)
-- [fromString](Type.Type.Vector2.md#fromstring-1)
-- [fromUEVector2D](Type.Type.Vector2.md#fromuevector2d)
-- [invert](Type.Type.Vector2.md#invert)
-- [invertSafe](Type.Type.Vector2.md#invertsafe)
-- [lerp](Type.Type.Vector2.md#lerp)
-- [magnitude](Type.Type.Vector2.md#magnitude-1)
-- [max](Type.Type.Vector2.md#max)
-- [min](Type.Type.Vector2.md#min)
-- [moveTowards](Type.Type.Vector2.md#movetowards)
-- [multiply](Type.Type.Vector2.md#multiply-1)
-- [negate](Type.Type.Vector2.md#negate)
-- [normalize](Type.Type.Vector2.md#normalize-1)
-- [project](Type.Type.Vector2.md#project)
-- [random](Type.Type.Vector2.md#random)
-- [reflect](Type.Type.Vector2.md#reflect)
-- [rotate](Type.Type.Vector2.md#rotate)
-- [round](Type.Type.Vector2.md#round)
-- [set](Type.Type.Vector2.md#set-1)
-- [signAngle](Type.Type.Vector2.md#signangle)
-- [sqrMagnitude](Type.Type.Vector2.md#sqrmagnitude-1)
-- [squaredDistance](Type.Type.Vector2.md#squareddistance)
-- [strictEquals](Type.Type.Vector2.md#strictequals-1)
-- [subtract](Type.Type.Vector2.md#subtract-1)
-
-## Constructors
-
-### constructor
-
-• **new Vector2**(`x?`, `y?`)
+| Methods                                                                                                                                                                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.Vector2.md#add)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算 ab 两个向量相加                                 |
+| **[clone](Type.Type.Vector2.md#clone)**([`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 克隆向量 a 得到的新 Vector2 向量                                                                                       |
+| **[divide](Type.Type.Vector2.md#divide)**([`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 遍历向量 a 的每个分量除以 b                                             |
+| **[equals](Type.Type.Vector2.md#equals)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断                                                                |
+| **[fromString](Type.Type.Vector2.md#fromstring)**(`string`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 通过一个字符串创建 Vector2 对象                                                                    |
+| **[multiply](Type.Type.Vector2.md#multiply)**([`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 遍历向量 a 的每个分量乘以 b                                         |
+| **[normalize](Type.Type.Vector2.md#normalize)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 归一化向量                                                                  |
+| **[set](Type.Type.Vector2.md#set)**([`Vector2`](Type.Type.Vector2.md), `number`, `number`): [`Vector2`](Type.Type.Vector2.md) <br> 设置向量 a 的值                                                                                        |
+| **[strictEquals](Type.Type.Vector2.md#strictequals)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `boolean` <br> 向量等价判断                                                                                  |
+| **[subtract](Type.Type.Vector2.md#subtract)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算向量 a 减去向量 b                      |
+| **[toString](Type.Type.Vector2.md#tostring)**(): `string` <br> 输出为字符串                                                                                                                                                               |
+| **[add](Type.Type.Vector2.md#add-1)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算 ab 两个向量相加                               |
+| **[angle](Type.Type.Vector2.md#angle)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 求两向量夹角角度                                                                                             |
+| **[ceil](Type.Type.Vector2.md#ceil)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量向上取整                                                                    |
+| **[clamp](Type.Type.Vector2.md#clamp)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 设置当前向量的值, 使其各个分量都处于指定的范围内 |
+| **[clone](Type.Type.Vector2.md#clone-1)**([`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 克隆向量 a 得到的新 Vector2 向量                                                                                     |
+| **[copy](Type.Type.Vector2.md#copy)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 获得指定向量的拷贝                                                                    |
+| **[cross](Type.Type.Vector2.md#cross)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 向量叉积 (向量积)                                                                                            |
+| **[distance](Type.Type.Vector2.md#distance)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 求两向量的欧氏距离                                                                                     |
+| **[divide](Type.Type.Vector2.md#divide-1)**([`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 遍历向量 a 的每个分量除以 b                                           |
+| **[dot](Type.Type.Vector2.md#dot)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 向量点积 (数量积)                                                                                                |
+| **[equals](Type.Type.Vector2.md#equals-1)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断                                                              |
+| **[floor](Type.Type.Vector2.md#floor)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量向下取整                                                                  |
+| **[fromString](Type.Type.Vector2.md#fromstring-1)**(`string`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 通过一个字符串创建 Vector2 对象                                                                  |
+| **[fromUEVector2D](Type.Type.Vector2.md#fromuevector2d)**(`Vector2D`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 通过一个 UE 向量创建 Vector2 对象                                                        |
+| **[invert](Type.Type.Vector2.md#invert)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量取倒数, 接近 0 时返回 Infinity                                          |
+| **[invertSafe](Type.Type.Vector2.md#invertsafe)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), `number`): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量取倒数, 接近 0 时返回 0                               |
+| **[lerp](Type.Type.Vector2.md#lerp)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量线性插值： A + t \* (B - A)    |
+| **[magnitude](Type.Type.Vector2.md#magnitude-1)**([`Vector2`](Type.Type.Vector2.md)): `number` <br> 求向量长度                                                                                                                            |
+| **[max](Type.Type.Vector2.md#max)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量最大值                                     |
+| **[min](Type.Type.Vector2.md#min)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量最小值                                     |
+| **[moveTowards](Type.Type.Vector2.md#movetowards)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 向目标移动                 |
+| **[multiply](Type.Type.Vector2.md#multiply-1)**([`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 遍历向量 a 的每个分量乘以 b                                       |
+| **[negate](Type.Type.Vector2.md#negate)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量取负                                                                    |
+| **[normalize](Type.Type.Vector2.md#normalize-1)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 归一化向量                                                                |
+| **[project](Type.Type.Vector2.md#project)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算向量 a 在向量 b 上的投影向量             |
+| **[random](Type.Type.Vector2.md#random)**(`number`): [`Vector2`](Type.Type.Vector2.md) <br> 生成一个在单位圆上均匀分布的随机 Vector2 对象                                                                                                 |
+| **[reflect](Type.Type.Vector2.md#reflect)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 求反射角                                     |
+| **[rotate](Type.Type.Vector2.md#rotate)**([`Vector2`](Type.Type.Vector2.md), `number`, [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算向量 a 旋转 radians 度后的向量                                      |
+| **[round](Type.Type.Vector2.md#round)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 逐元素向量四舍五入取整                                                              |
+| **[set](Type.Type.Vector2.md#set-1)**([`Vector2`](Type.Type.Vector2.md), `number`, `number`): [`Vector2`](Type.Type.Vector2.md) <br> 设置向量 a 的值                                                                                      |
+| **[signAngle](Type.Type.Vector2.md#signangle)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 获取向量 a 和向量 b 之间的有符号角度                                                                 |
+| **[sqrMagnitude](Type.Type.Vector2.md#sqrmagnitude-1)**([`Vector2`](Type.Type.Vector2.md)): `number` <br> 求向量长度平方                                                                                                                  |
+| **[squaredDistance](Type.Type.Vector2.md#squareddistance)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `number` <br> 求两向量的欧氏距离平方                                                                   |
+| **[strictEquals](Type.Type.Vector2.md#strictequals-1)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): `boolean` <br> 向量等价判断                                                                                |
+| **[subtract](Type.Type.Vector2.md#subtract-1)**([`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 计算向量 a 减去向量 b                    |
 
 **`Description`**
 
@@ -102,14 +82,10 @@ usage:双端
 
 #### Parameters
 
-| Name | Type     | Description            |
-| :--- | :------- | :--------------------- |
-| `x?` | `number` | usage:x 分量 default:0 |
-| `y?` | `number` | usage:y 分量 default:0 |
-
-#### Defined in
-
-Type/index.d.ts:3774
+| Name | Type     | Description      |
+| :--- | :------- | :--------------- |
+| `x?` | `number` | x 分量 default:0 |
+| `y?` | `number` | y 分量 default:0 |
 
 • **new Vector2**(`f`)
 
@@ -119,13 +95,9 @@ Type/index.d.ts:3774
 
 #### Parameters
 
-| Name | Type     | Description       |
-| :--- | :------- | :---------------- |
-| `f`  | `number` | usage:给定的 f 值 |
-
-#### Defined in
-
-Type/index.d.ts:3779
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `f`  | `number` | 给定的 f 值 |
 
 ## Properties
 
@@ -137,10 +109,6 @@ Type/index.d.ts:3779
 
 向量的 x 分量
 
-#### Defined in
-
-Type/index.d.ts:3764
-
 ---
 
 ### y
@@ -150,10 +118,6 @@ Type/index.d.ts:3764
 **`Description`**
 
 向量的 y 分量
-
-#### Defined in
-
-Type/index.d.ts:3768
 
 ## Accessors
 
@@ -171,10 +135,6 @@ Type/index.d.ts:3768
 
 向量的长度
 
-#### Defined in
-
-Type/index.d.ts:3858
-
 ---
 
 ### magnitude
@@ -191,10 +151,6 @@ Type/index.d.ts:3858
 
 向量的长度
 
-#### Defined in
-
-Type/index.d.ts:3868
-
 ---
 
 ### negative
@@ -210,10 +166,6 @@ Type/index.d.ts:3868
 [`Vector2`](Type.Type.Vector2.md)
 
 各个分量取反的新 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3873
 
 ---
 
@@ -235,10 +187,6 @@ Type/index.d.ts:3873
 
 返回一个新的 Vector2 对象
 
-#### Defined in
-
-Type/index.d.ts:3879
-
 ---
 
 ### sqrLength
@@ -254,10 +202,6 @@ Type/index.d.ts:3879
 `number`
 
 向量长度的平方
-
-#### Defined in
-
-Type/index.d.ts:3853
 
 ---
 
@@ -275,10 +219,6 @@ Type/index.d.ts:3853
 
 向量的长度平方
 
-#### Defined in
-
-Type/index.d.ts:3863
-
 ---
 
 ### negOne
@@ -292,10 +232,6 @@ Type/index.d.ts:3863
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
-
-#### Defined in
-
-Type/index.d.ts:3408
 
 ---
 
@@ -311,10 +247,6 @@ Type/index.d.ts:3408
 
 [`Vector2`](Type.Type.Vector2.md)
 
-#### Defined in
-
-Type/index.d.ts:3404
-
 ---
 
 ### unitX
@@ -328,10 +260,6 @@ Type/index.d.ts:3404
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
-
-#### Defined in
-
-Type/index.d.ts:3412
 
 ---
 
@@ -347,10 +275,6 @@ Type/index.d.ts:3412
 
 [`Vector2`](Type.Type.Vector2.md)
 
-#### Defined in
-
-Type/index.d.ts:3416
-
 ---
 
 ### zero
@@ -364,10 +288,6 @@ Type/index.d.ts:3416
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
-
-#### Defined in
-
-Type/index.d.ts:3400
 
 ## Methods
 
@@ -385,19 +305,15 @@ Type/index.d.ts:3400
 
 #### Parameters
 
-| Name | Type                              | Description          |
-| :--- | :-------------------------------- | :------------------- |
-| `v`  | [`Vector2`](Type.Type.Vector2.md) | usage:相加的向量对象 |
+| Name | Type                              | Description    |
+| :--- | :-------------------------------- | :------------- |
+| `v`  | [`Vector2`](Type.Type.Vector2.md) | 相加的向量对象 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3801
 
 ---
 
@@ -419,10 +335,6 @@ Type/index.d.ts:3801
 
 克隆得到的新 Vector2 对象
 
-#### Defined in
-
-Type/index.d.ts:3900
-
 ---
 
 ### divide
@@ -439,19 +351,15 @@ Type/index.d.ts:3900
 
 #### Parameters
 
-| Name | Type     | Description          |
-| :--- | :------- | :------------------- |
-| `v`  | `number` | usage:相除的向量对象 |
+| Name | Type     | Description    |
+| :--- | :------- | :------------- |
+| `v`  | `number` | 相除的向量对象 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3829
 
 ▸ **divide**(`v`): [`Vector2`](Type.Type.Vector2.md)
 
@@ -465,19 +373,15 @@ Type/index.d.ts:3829
 
 #### Parameters
 
-| Name | Type                              | Description              |
-| :--- | :-------------------------------- | :----------------------- |
-| `v`  | [`Vector2`](Type.Type.Vector2.md) | usage:每个分量除以的参数 |
+| Name | Type                              | Description        |
+| :--- | :-------------------------------- | :----------------- |
+| `v`  | [`Vector2`](Type.Type.Vector2.md) | 每个分量除以的参数 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3836
 
 ---
 
@@ -495,20 +399,16 @@ Type/index.d.ts:3836
 
 #### Parameters
 
-| Name       | Type                              | Description                    |
-| :--------- | :-------------------------------- | :----------------------------- |
-| `other`    | [`Vector2`](Type.Type.Vector2.md) | usage:指定向量                 |
-| `epsilon?` | `number`                          | usage:最小误差数 default:1.e-8 |
+| Name       | Type                              | Description              |
+| :--------- | :-------------------------------- | :----------------------- |
+| `other`    | [`Vector2`](Type.Type.Vector2.md) | 指定向量                 |
+| `epsilon?` | `number`                          | 最小误差数 default:1.e-8 |
 
 #### Returns
 
 `boolean`
 
 两向量是否相等
-
-#### Defined in
-
-Type/index.d.ts:3894
 
 ---
 
@@ -526,17 +426,13 @@ Type/index.d.ts:3894
 
 #### Parameters
 
-| Name  | Type     | Description      |
-| :---- | :------- | :--------------- |
-| `str` | `string` | usage:读取的字符 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `str` | `string` | 读取的字符  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:3842
 
 ---
 
@@ -554,19 +450,15 @@ Type/index.d.ts:3842
 
 #### Parameters
 
-| Name | Type                              | Description          |
-| :--- | :-------------------------------- | :------------------- |
-| `v`  | [`Vector2`](Type.Type.Vector2.md) | usage:相乘的向量对象 |
+| Name | Type                              | Description    |
+| :--- | :-------------------------------- | :------------- |
+| `v`  | [`Vector2`](Type.Type.Vector2.md) | 相乘的向量对象 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3815
 
 ▸ **multiply**(`v`): [`Vector2`](Type.Type.Vector2.md)
 
@@ -580,19 +472,15 @@ Type/index.d.ts:3815
 
 #### Parameters
 
-| Name | Type     | Description              |
-| :--- | :------- | :----------------------- |
-| `v`  | `number` | usage:每个分量乘以的参数 |
+| Name | Type     | Description        |
+| :--- | :------- | :----------------- |
+| `v`  | `number` | 每个分量乘以的参数 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3822
 
 ---
 
@@ -614,10 +502,6 @@ Type/index.d.ts:3822
 
 归一化后的自身对象
 
-#### Defined in
-
-Type/index.d.ts:3906
-
 ---
 
 ### set
@@ -634,19 +518,15 @@ Type/index.d.ts:3906
 
 #### Parameters
 
-| Name    | Type                              | Description      |
-| :------ | :-------------------------------- | :--------------- |
-| `other` | [`Vector2`](Type.Type.Vector2.md) | usage:指定的向量 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `other` | [`Vector2`](Type.Type.Vector2.md) | 指定的向量  |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 `this`
-
-#### Defined in
-
-Type/index.d.ts:3786
 
 ▸ **set**(`x?`, `y?`): [`Vector2`](Type.Type.Vector2.md)
 
@@ -660,20 +540,16 @@ Type/index.d.ts:3786
 
 #### Parameters
 
-| Name | Type     | Description              |
-| :--- | :------- | :----------------------- |
-| `x?` | `number` | usage:x 分量 default:0.0 |
-| `y?` | `number` | usage:y 分量 default:0.0 |
+| Name | Type     | Description        |
+| :--- | :------- | :----------------- |
+| `x?` | `number` | x 分量 default:0.0 |
+| `y?` | `number` | y 分量 default:0.0 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 `this`
-
-#### Defined in
-
-Type/index.d.ts:3794
 
 ---
 
@@ -691,19 +567,15 @@ Type/index.d.ts:3794
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `other` | [`Vector2`](Type.Type.Vector2.md) | usage:指定向量 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `other` | [`Vector2`](Type.Type.Vector2.md) | 指定向量    |
 
 #### Returns
 
 `boolean`
 
 两向量是否相等
-
-#### Defined in
-
-Type/index.d.ts:3886
 
 ---
 
@@ -721,19 +593,15 @@ Type/index.d.ts:3886
 
 #### Parameters
 
-| Name | Type                              | Description          |
-| :--- | :-------------------------------- | :------------------- |
-| `v`  | [`Vector2`](Type.Type.Vector2.md) | usage:相减的向量对象 |
+| Name | Type                              | Description    |
+| :--- | :-------------------------------- | :------------- |
+| `v`  | [`Vector2`](Type.Type.Vector2.md) | 相减的向量对象 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的自身对象
-
-#### Defined in
-
-Type/index.d.ts:3808
 
 ---
 
@@ -755,10 +623,6 @@ Type/index.d.ts:3808
 
 向量值字符串
 
-#### Defined in
-
-Type/index.d.ts:3848
-
 ---
 
 ### add
@@ -779,21 +643,17 @@ Type/index.d.ts:3848
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相加的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3444
 
 ---
 
@@ -811,20 +671,16 @@ Type/index.d.ts:3444
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 向量 a 与向量 b 的夹角角度
-
-#### Defined in
-
-Type/index.d.ts:3722
 
 ---
 
@@ -846,20 +702,16 @@ Type/index.d.ts:3722
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素向上取整后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3546
 
 ---
 
@@ -877,21 +729,17 @@ Type/index.d.ts:3546
 
 #### Parameters
 
-| Name  | Type                              | Description  |
-| :---- | :-------------------------------- | :----------- |
-| `v`   | [`Vector2`](Type.Type.Vector2.md) | usage:向量 v |
-| `min` | [`Vector2`](Type.Type.Vector2.md) | usage:最小值 |
-| `max` | [`Vector2`](Type.Type.Vector2.md) | usage:最大值 |
+| Name  | Type                              | Description |
+| :---- | :-------------------------------- | :---------- |
+| `v`   | [`Vector2`](Type.Type.Vector2.md) | 向量 v      |
+| `min` | [`Vector2`](Type.Type.Vector2.md) | 最小值      |
+| `max` | [`Vector2`](Type.Type.Vector2.md) | 最大值      |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的向量 v
-
-#### Defined in
-
-Type/index.d.ts:3760
 
 ---
 
@@ -909,19 +757,15 @@ Type/index.d.ts:3760
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 克隆得到的新 Vector2 向量
-
-#### Defined in
-
-Type/index.d.ts:3501
 
 ---
 
@@ -943,20 +787,16 @@ Type/index.d.ts:3501
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 拷贝得到的 Vector2 向量
-
-#### Defined in
-
-Type/index.d.ts:3510
 
 ---
 
@@ -978,20 +818,16 @@ Type/index.d.ts:3510
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 叉积
-
-#### Defined in
-
-Type/index.d.ts:3666
 
 ---
 
@@ -1009,20 +845,16 @@ Type/index.d.ts:3666
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 两向量的欧氏距离
-
-#### Defined in
-
-Type/index.d.ts:3590
 
 ---
 
@@ -1044,21 +876,17 @@ Type/index.d.ts:3590
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | `number`                          | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | `number`                          | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相除的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3484
 
 ▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Type.Vector2.md)
 
@@ -1076,21 +904,17 @@ Type/index.d.ts:3484
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相除的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3494
 
 ---
 
@@ -1108,20 +932,16 @@ Type/index.d.ts:3494
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 点积
-
-#### Defined in
-
-Type/index.d.ts:3657
 
 ---
 
@@ -1139,21 +959,17 @@ Type/index.d.ts:3657
 
 #### Parameters
 
-| Name       | Type                              | Description                                    |
-| :--------- | :-------------------------------- | :--------------------------------------------- |
-| `a`        | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                                   |
-| `b`        | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                                   |
-| `epsilon?` | `number`                          | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name       | Type                              | Description                              |
+| :--------- | :-------------------------------- | :--------------------------------------- |
+| `a`        | [`Vector2`](Type.Type.Vector2.md) | 向量 a                                   |
+| `b`        | [`Vector2`](Type.Type.Vector2.md) | 向量 b                                   |
+| `epsilon?` | `number`                          | 最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
 `boolean`
 
 是否相等
-
-#### Defined in
-
-Type/index.d.ts:3519
 
 ---
 
@@ -1175,20 +991,16 @@ Type/index.d.ts:3519
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素向下取整后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3555
 
 ---
 
@@ -1210,20 +1022,16 @@ Type/index.d.ts:3555
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `str`    | `string`                          | usage:传入的字符串                         |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `str`    | `string`                          | 传入的字符串                         |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 创建的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3434
 
 ---
 
@@ -1245,20 +1053,16 @@ Type/index.d.ts:3434
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `v`      | `Vector2D`                        | usage:UE.Vector                            |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `v`      | `Vector2D`                        | UE.Vector                            |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 创建的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3425
 
 ---
 
@@ -1280,20 +1084,16 @@ Type/index.d.ts:3425
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素取倒数得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3630
 
 ---
 
@@ -1315,21 +1115,17 @@ Type/index.d.ts:3630
 
 #### Parameters
 
-| Name       | Type                              | Description                                    |
-| :--------- | :-------------------------------- | :--------------------------------------------- |
-| `a`        | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                                   |
-| `outer?`   | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null     |
-| `epsilon?` | `number`                          | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name       | Type                              | Description                              |
+| :--------- | :-------------------------------- | :--------------------------------------- |
+| `a`        | [`Vector2`](Type.Type.Vector2.md) | 向量 a                                   |
+| `outer?`   | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null     |
+| `epsilon?` | `number`                          | 最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素取倒数得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3640
 
 ---
 
@@ -1351,22 +1147,18 @@ Type/index.d.ts:3640
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `t`      | `number`                          | usage:插值                                 |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `t`      | `number`                          | 插值                                 |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 线性插值得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3677
 
 ---
 
@@ -1384,19 +1176,15 @@ Type/index.d.ts:3677
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
 
 #### Returns
 
 `number`
 
 向量长度
-
-#### Defined in
-
-Type/index.d.ts:3605
 
 ---
 
@@ -1414,21 +1202,17 @@ Type/index.d.ts:3605
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素取最大值后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3574
 
 ---
 
@@ -1450,21 +1234,17 @@ Type/index.d.ts:3574
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素取最小值后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3565
 
 ---
 
@@ -1486,22 +1266,18 @@ Type/index.d.ts:3565
 
 #### Parameters
 
-| Name               | Type                              | Description                                |
-| :----------------- | :-------------------------------- | :----------------------------------------- |
-| `current`          | [`Vector2`](Type.Type.Vector2.md) | usage:当前向量                             |
-| `target`           | [`Vector2`](Type.Type.Vector2.md) | usage:目标向量                             |
-| `maxDistanceDelta` | `number`                          | usage:最大移动距离                         |
-| `outer?`           | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name               | Type                              | Description                          |
+| :----------------- | :-------------------------------- | :----------------------------------- |
+| `current`          | [`Vector2`](Type.Type.Vector2.md) | 当前向量                             |
+| `target`           | [`Vector2`](Type.Type.Vector2.md) | 目标向量                             |
+| `maxDistanceDelta` | `number`                          | 最大移动距离                         |
+| `outer?`           | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 移动后的得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3688
 
 ---
 
@@ -1523,21 +1299,17 @@ Type/index.d.ts:3688
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | `number`                          | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | `number`                          | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相乘的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3464
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Type.Vector2.md)
 
@@ -1555,21 +1327,17 @@ Type/index.d.ts:3464
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相乘的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3474
 
 ---
 
@@ -1591,20 +1359,16 @@ Type/index.d.ts:3474
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐元素向量取负得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3621
 
 ---
 
@@ -1626,20 +1390,16 @@ Type/index.d.ts:3621
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 归一化后得到的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3649
 
 ---
 
@@ -1661,21 +1421,17 @@ Type/index.d.ts:3649
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 投影向量
-
-#### Defined in
-
-Type/index.d.ts:3751
 
 ---
 
@@ -1693,19 +1449,15 @@ Type/index.d.ts:3751
 
 #### Parameters
 
-| Name     | Type     | Description            |
-| :------- | :------- | :--------------------- |
-| `range?` | `number` | usage:范围 default:1.0 |
+| Name     | Type     | Description      |
+| :------- | :------- | :--------------- |
+| `range?` | `number` | 范围 default:1.0 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 得到的随机 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3714
 
 ---
 
@@ -1727,21 +1479,17 @@ Type/index.d.ts:3714
 
 #### Parameters
 
-| Name          | Type                              | Description                                |
-| :------------ | :-------------------------------- | :----------------------------------------- |
-| `inDirection` | [`Vector2`](Type.Type.Vector2.md) | usage:入射向量                             |
-| `inNormal`    | [`Vector2`](Type.Type.Vector2.md) | usage:法线向量                             |
-| `outer?`      | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name          | Type                              | Description                          |
+| :------------ | :-------------------------------- | :----------------------------------- |
+| `inDirection` | [`Vector2`](Type.Type.Vector2.md) | 入射向量                             |
+| `inNormal`    | [`Vector2`](Type.Type.Vector2.md) | 法线向量                             |
+| `outer?`      | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 反射角
-
-#### Defined in
-
-Type/index.d.ts:3703
 
 ---
 
@@ -1763,21 +1511,17 @@ Type/index.d.ts:3703
 
 #### Parameters
 
-| Name      | Type                              | Description                                |
-| :-------- | :-------------------------------- | :----------------------------------------- |
-| `v`       | [`Vector2`](Type.Type.Vector2.md) | usage:向量 v                               |
-| `radians` | `number`                          | usage:旋转角度                             |
-| `outer?`  | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name      | Type                              | Description                          |
+| :-------- | :-------------------------------- | :----------------------------------- |
+| `v`       | [`Vector2`](Type.Type.Vector2.md) | 向量 v                               |
+| `radians` | `number`                          | 旋转角度                             |
+| `outer?`  | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 旋转后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3741
 
 ---
 
@@ -1795,20 +1539,16 @@ Type/index.d.ts:3741
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 逐逐元素向量四舍五入取整后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3582
 
 ---
 
@@ -1830,21 +1570,17 @@ Type/index.d.ts:3582
 
 #### Parameters
 
-| Name | Type                              | Description       |
-| :--- | :-------------------------------- | :---------------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a      |
-| `x`  | `number`                          | usage:修改的 x 值 |
-| `y`  | `number`                          | usage:修改的 y 值 |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `x`  | `number`                          | 修改的 x 值 |
+| `y`  | `number`                          | 修改的 y 值 |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 修改后的 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3537
 
 ---
 
@@ -1866,20 +1602,16 @@ Type/index.d.ts:3537
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 向量 a 和向量 b 之间的有符号角度
-
-#### Defined in
-
-Type/index.d.ts:3731
 
 ---
 
@@ -1897,19 +1629,15 @@ Type/index.d.ts:3731
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
 
 #### Returns
 
 `number`
 
 向量长度平方
-
-#### Defined in
-
-Type/index.d.ts:3612
 
 ---
 
@@ -1927,20 +1655,16 @@ Type/index.d.ts:3612
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `number`
 
 两向量的欧氏距离平方
-
-#### Defined in
-
-Type/index.d.ts:3598
 
 ---
 
@@ -1958,20 +1682,16 @@ Type/index.d.ts:3598
 
 #### Parameters
 
-| Name | Type                              | Description  |
-| :--- | :-------------------------------- | :----------- |
-| `a`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a |
-| `b`  | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b |
+| Name | Type                              | Description |
+| :--- | :-------------------------------- | :---------- |
+| `a`  | [`Vector2`](Type.Type.Vector2.md) | 向量 a      |
+| `b`  | [`Vector2`](Type.Type.Vector2.md) | 向量 b      |
 
 #### Returns
 
 `boolean`
 
 是否相等
-
-#### Defined in
-
-Type/index.d.ts:3527
 
 ---
 
@@ -1993,18 +1713,14 @@ Type/index.d.ts:3527
 
 #### Parameters
 
-| Name     | Type                              | Description                                |
-| :------- | :-------------------------------- | :----------------------------------------- |
-| `a`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 a                               |
-| `b`      | [`Vector2`](Type.Type.Vector2.md) | usage:向量 b                               |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md) | usage:接收结果的 Vector2 对象 default:null |
+| Name     | Type                              | Description                          |
+| :------- | :-------------------------------- | :----------------------------------- |
+| `a`      | [`Vector2`](Type.Type.Vector2.md) | 向量 a                               |
+| `b`      | [`Vector2`](Type.Type.Vector2.md) | 向量 b                               |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md) | 接收结果的 Vector2 对象 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 相减的结果 Vector2 对象
-
-#### Defined in
-
-Type/index.d.ts:3454

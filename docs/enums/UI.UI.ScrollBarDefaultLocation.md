@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / ScrollBarDefaultLocation
+[UI](../modules/UI.UI.md) / ScrollBarDefaultLocation
 
-# Enumeration: ScrollBarDefaultLocation
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).ScrollBarDefaultLocation
+# ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [BottomOrRight](UI.UI.ScrollBarDefaultLocation.md#bottomorright)
-- [Center](UI.UI.ScrollBarDefaultLocation.md#center)
-- [TopOrLeft](UI.UI.ScrollBarDefaultLocation.md#toporleft)
+| Enumeration Members                                                                           |
+| :-------------------------------------------------------------------------------------------- |
+| **[BottomOrRight](UI.UI.ScrollBarDefaultLocation.md#bottomorright)** = `2` <br> 默认底部/右侧 |
+| **[Center](UI.UI.ScrollBarDefaultLocation.md#center)** = `1` <br> 默认居中                    |
+| **[TopOrLeft](UI.UI.ScrollBarDefaultLocation.md#toporleft)** = `0` <br> 默认顶部/左侧         |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 默认底部/右侧
 
-#### Defined in
-
-UI/index.d.ts:3617
-
 ---
 
 ### Center
@@ -36,10 +30,6 @@ UI/index.d.ts:3617
 
 默认居中
 
-#### Defined in
-
-UI/index.d.ts:3615
-
 ---
 
 ### TopOrLeft
@@ -47,7 +37,3 @@ UI/index.d.ts:3615
 • **TopOrLeft** = `0`
 
 默认顶部/左侧
-
-#### Defined in
-
-UI/index.d.ts:3613

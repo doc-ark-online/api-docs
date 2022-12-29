@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape3D
+[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape3D
 
-# Enumeration: EffectRangeShape3D
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EffectRangeShape3D
+# EffectRangeShape3D <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Cube](Gameplay.Gameplay.EffectRangeShape3D.md#cube)
-- [CylindricalSector](Gameplay.Gameplay.EffectRangeShape3D.md#cylindricalsector)
-- [Sphere](Gameplay.Gameplay.EffectRangeShape3D.md#sphere)
+| Enumeration Members                                                                                  |
+| :--------------------------------------------------------------------------------------------------- |
+| **[Cube](Gameplay.Gameplay.EffectRangeShape3D.md#cube)** = `0` <br> 盒体                             |
+| **[CylindricalSector](Gameplay.Gameplay.EffectRangeShape3D.md#cylindricalsector)** = `2` <br> 扇形体 |
+| **[Sphere](Gameplay.Gameplay.EffectRangeShape3D.md#sphere)** = `1` <br> 球体                         |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 盒体
 
-#### Defined in
-
-Gameplay/index.d.ts:8667
-
 ---
 
 ### CylindricalSector
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:8667
 
 扇形体
 
-#### Defined in
-
-Gameplay/index.d.ts:8671
-
 ---
 
 ### Sphere
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:8671
 • **Sphere** = `1`
 
 球体
-
-#### Defined in
-
-Gameplay/index.d.ts:8669

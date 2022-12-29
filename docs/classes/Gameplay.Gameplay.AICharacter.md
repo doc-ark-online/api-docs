@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AICharacter
+[Gameplay](../modules/Gameplay.Gameplay.md) / AICharacter
 
-# Class: AICharacter
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AICharacter
-
-**`Author`**
-
-chenghao.song,hongbing.deng
+# AICharacter <Badge type="tip" text="Class" />
 
 **`Description`**
 
 人形对象
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -24,194 +14,180 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                                                                                                            |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[onLoadAppearanceDataAllCompleted](Gameplay.Gameplay.AICharacter.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 加载完角色形象数据后的回调 |
+| **[onMeshChanged](Gameplay.Gameplay.AICharacter.md#onmeshchanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色模型切换成功广播                                                                           |
+| **[onMovementStateChanged](Gameplay.Gameplay.AICharacter.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 移动状态切换时的回调                                                                                                                   |
+| **[onSetAppearanceDataCompleted](Gameplay.Gameplay.AICharacter.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 设置一个角色编辑 API 成功后的回调                            |
+| **[onTextureChanged](Gameplay.Gameplay.AICharacter.md#ontexturechanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色贴图切换成功广播                                                                     |
+| **[player](Gameplay.Gameplay.AICharacter.md#player)**: [`Player`](Gameplay.Gameplay.Player.md) <br> 玩家对象                                                                                                                                                                                                          |
 
-- [constructor](Gameplay.Gameplay.AICharacter.md#constructor)
+| Accessors                                                                                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[airControl](Gameplay.Gameplay.AICharacter.md#aircontrol)**(): `number` <br> 角色在空中时, 控制水平方向移动的灵活度                                                                                                                                  |
+| **[airControlBoostMultiplier](Gameplay.Gameplay.AICharacter.md#aircontrolboostmultiplier)**(): `number` <br> 当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数                                              |
+| **[airControlBoostVelocityThreshold](Gameplay.Gameplay.AICharacter.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍 |
+| **[animationMode](Gameplay.Gameplay.AICharacter.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md) <br> 动画播放模式                                                                                                |
+| **[animationStance](Gameplay.Gameplay.AICharacter.md#animationstance)**(): `string` <br> 动画姿态                                                                                                                                                      |
+| **[appearance](Gameplay.Gameplay.AICharacter.md#appearance)**(): [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md) <br> 当前外观修改对象                                                                                                         |
+| **[baseShadowLocationOffset](Gameplay.Gameplay.AICharacter.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移                                                                               |
+| **[baseShadowMaxVisibleHeight](Gameplay.Gameplay.AICharacter.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度                                                                                                              |
+| **[baseShadowScale](Gameplay.Gameplay.AICharacter.md#baseshadowscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影的缩放                                                                                                                       |
+| **[basicStance](Gameplay.Gameplay.AICharacter.md#basicstance)**(): `string` <br> 基础姿态                                                                                                                                                              |
+| **[basicStanceAimOffsetEnable](Gameplay.Gameplay.AICharacter.md#basicstanceaimoffsetenable)**(): `boolean` <br> 是否基础姿态的开启瞄准偏移                                                                                                             |
+| **[brakingDecelerationFalling](Gameplay.Gameplay.AICharacter.md#brakingdecelerationfalling)**(): `number` <br> 下落制动速率                                                                                                                            |
+| **[brakingDecelerationFlying](Gameplay.Gameplay.AICharacter.md#brakingdecelerationflying)**(): `number` <br> 飞行制动速率                                                                                                                              |
+| **[brakingDecelerationSwimming](Gameplay.Gameplay.AICharacter.md#brakingdecelerationswimming)**(): `number` <br> 游泳制动速率                                                                                                                          |
+| **[brakingDecelerationWalking](Gameplay.Gameplay.AICharacter.md#brakingdecelerationwalking)**(): `number` <br> 行走制动速率                                                                                                                            |
+| **[canSetAppearanceData](Gameplay.Gameplay.AICharacter.md#cansetappearancedata)**(): `boolean` <br> 是否可以设置角色形象数据                                                                                                                           |
+| **[canStepUpOn](Gameplay.Gameplay.AICharacter.md#canstepupon)**(): `boolean` <br> 获取组件是否可以被玩家站立                                                                                                                                           |
+| **[capsuleHalfHeight](Gameplay.Gameplay.AICharacter.md#capsulehalfheight)**(): `number` <br> 胶囊体半高                                                                                                                                                |
+| **[capsuleRadius](Gameplay.Gameplay.AICharacter.md#capsuleradius)**(): `number` <br> 胶囊体半径                                                                                                                                                        |
+| **[characterName](Gameplay.Gameplay.AICharacter.md#charactername)**(): `string` <br> 角色名称                                                                                                                                                          |
+| **[collisionEnable](Gameplay.Gameplay.AICharacter.md#collisionenable)**(): `boolean` <br> 是否开启碰撞                                                                                                                                                 |
+| **[collisionExtent](Gameplay.Gameplay.AICharacter.md#collisionextent)**(): [`Vector`](Type.Type.Vector.md) <br> 碰撞形状的大小                                                                                                                         |
+| **[collisionShape](Gameplay.Gameplay.AICharacter.md#collisionshape)**(): [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) <br> 碰撞形状                                                                                              |
+| **[collisionWithOtherCharacterEnable](Gameplay.Gameplay.AICharacter.md#collisionwithothercharacterenable)**(): `boolean` <br> 能否与其他角色发生碰撞                                                                                                   |
+| **[crouchEnable](Gameplay.Gameplay.AICharacter.md#crouchenable)**(): `boolean` <br> 启用/禁用下蹲能力                                                                                                                                                  |
+| **[crouchedHeight](Gameplay.Gameplay.AICharacter.md#crouchedheight)**(): `number` <br> 下蹲时胶囊体的高度                                                                                                                                              |
+| **[forwardVector](Gameplay.Gameplay.AICharacter.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                                                                     |
+| **[gravityScale](Gameplay.Gameplay.AICharacter.md#gravityscale)**(): `number` <br> 重力倍率                                                                                                                                                            |
+| **[groundFriction](Gameplay.Gameplay.AICharacter.md#groundfriction)**(): `number` <br> 地面摩檫力                                                                                                                                                      |
+| **[guid](Gameplay.Gameplay.AICharacter.md#guid)**(): `string` <br> 获取对象的 guid（唯一标识一个对象的字符串）。                                                                                                                                       |
+| **[headUIVisible](Gameplay.Gameplay.AICharacter.md#headuivisible)**(): `boolean` <br> 头顶 UI 是否可见                                                                                                                                                 |
+| **[headUIVisibleRange](Gameplay.Gameplay.AICharacter.md#headuivisiblerange)**(): `number` <br> 头顶 UI 可见距离                                                                                                                                        |
+| **[isCrouching](Gameplay.Gameplay.AICharacter.md#iscrouching)**(): `boolean` <br> 是否处于下蹲状态                                                                                                                                                     |
+| **[isJumping](Gameplay.Gameplay.AICharacter.md#isjumping)**(): `boolean` <br> 是否正在跳跃                                                                                                                                                             |
+| **[isMoving](Gameplay.Gameplay.AICharacter.md#ismoving)**(): `boolean` <br> 是否正在移动                                                                                                                                                               |
+| **[jumpEnable](Gameplay.Gameplay.AICharacter.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力                                                                                                                                                      |
+| **[jumpMaxCount](Gameplay.Gameplay.AICharacter.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数                                                                                                                                                      |
+| **[jumpingOutOfWaterEnable](Gameplay.Gameplay.AICharacter.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面                                                                                                                             |
+| **[locallyVisible](Gameplay.Gameplay.AICharacter.md#locallyvisible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()                                                                                                      |
+| **[lockStatus](Gameplay.Gameplay.AICharacter.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定                                                                                                                                                       |
+| **[maxAcceleration](Gameplay.Gameplay.AICharacter.md#maxacceleration)**(): `number` <br> 最大加速度                                                                                                                                                    |
+| **[maxFallingSpeed](Gameplay.Gameplay.AICharacter.md#maxfallingspeed)**(): `number` <br> 最大下落速度                                                                                                                                                  |
+| **[maxFlySpeed](Gameplay.Gameplay.AICharacter.md#maxflyspeed)**(): `number` <br> 最大飞行速度                                                                                                                                                          |
+| **[maxJumpHeight](Gameplay.Gameplay.AICharacter.md#maxjumpheight)**(): `number` <br> 最大跳跃高度                                                                                                                                                      |
+| **[maxStepHeight](Gameplay.Gameplay.AICharacter.md#maxstepheight)**(): `number` <br> 获取角色最大可跨越高度                                                                                                                                            |
+| **[maxSwimSpeed](Gameplay.Gameplay.AICharacter.md#maxswimspeed)**(): `number` <br> 最大游泳速度                                                                                                                                                        |
+| **[maxWalkSpeed](Gameplay.Gameplay.AICharacter.md#maxwalkspeed)**(): `number` <br> 地面最大速度                                                                                                                                                        |
+| **[maxWalkSpeedCrouched](Gameplay.Gameplay.AICharacter.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度                                                                                                                        |
+| **[moveEnable](Gameplay.Gameplay.AICharacter.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力                                                                                                                                                      |
+| **[moveFacingDirection](Gameplay.Gameplay.AICharacter.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md) <br> 运动面朝方向                                                                        |
+| **[movementAxisDirection](Gameplay.Gameplay.AICharacter.md#movementaxisdirection)**(): [`Vector`](Type.Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效                                                   |
+| **[movementDirection](Gameplay.Gameplay.AICharacter.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md) <br> 运动时依据的正方向                                                                          |
+| **[movementState](Gameplay.Gameplay.AICharacter.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md) <br> 当前角色运动状态                                                                                              |
+| **[name](Gameplay.Gameplay.AICharacter.md#name)**(): `string` <br> 返回当前物体名称                                                                                                                                                                    |
+| **[netStatus](Gameplay.Gameplay.AICharacter.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态                                                                                                                |
+| **[outOfWaterZ](Gameplay.Gameplay.AICharacter.md#outofwaterz)**(): `number` <br> 出水时 Z 轴方向上的速度                                                                                                                                               |
+| **[parent](Gameplay.Gameplay.AICharacter.md#parent)**(): `GameObject` <br> 获取当前父物体                                                                                                                                                              |
+| **[ragdollEnable](Gameplay.Gameplay.AICharacter.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态                                                                                                                                              |
+| **[relativeLocation](Gameplay.Gameplay.AICharacter.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                                                         |
+| **[relativeRotation](Gameplay.Gameplay.AICharacter.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                                                                     |
+| **[relativeScale](Gameplay.Gameplay.AICharacter.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                                                               |
+| **[rightVector](Gameplay.Gameplay.AICharacter.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                                                         |
+| **[rotateRate](Gameplay.Gameplay.AICharacter.md#rotaterate)**(): `number` <br> 最大转向速度                                                                                                                                                            |
+| **[scale](Gameplay.Gameplay.AICharacter.md#scale)**(): [`Vector`](Type.Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步                                                                                                                                 |
+| **[separateBrakingFrictionEnable](Gameplay.Gameplay.AICharacter.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦                                                                                                                 |
+| **[serverCalculateEnable](Gameplay.Gameplay.AICharacter.md#servercalculateenable)**(`boolean`): `void` <br> 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算                                                                        |
+| **[staticStatus](Gameplay.Gameplay.AICharacter.md#staticstatus)**(): `boolean` <br> 获取对象是否静态                                                                                                                                                   |
+| **[tag](Gameplay.Gameplay.AICharacter.md#tag)**(): `string` <br> 获取当前物体的 Tag                                                                                                                                                                    |
+| **[transform](Gameplay.Gameplay.AICharacter.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 transform                                                                                                                       |
+| **[upVector](Gameplay.Gameplay.AICharacter.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                                                               |
+| **[useUpdate](Gameplay.Gameplay.AICharacter.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新                                                                                                                                                     |
+| **[usedCapsuleCorrection](Gameplay.Gameplay.AICharacter.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。             |
+| **[velocity](Gameplay.Gameplay.AICharacter.md#velocity)**(): [`Vector`](Type.Type.Vector.md) <br> 当前移动速度                                                                                                                                         |
+| **[visible](Gameplay.Gameplay.AICharacter.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()                                                                                                                    |
+| **[walkableFloorAngle](Gameplay.Gameplay.AICharacter.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度                                                                                                                                        |
+| **[worldLocation](Gameplay.Gameplay.AICharacter.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                                                         |
+| **[worldRotation](Gameplay.Gameplay.AICharacter.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                                                                     |
+| **[worldScale](Gameplay.Gameplay.AICharacter.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                                                               |
 
-### Properties
-
-- [onLoadAppearanceDataAllCompleted](Gameplay.Gameplay.AICharacter.md#onloadappearancedataallcompleted)
-- [onMeshChanged](Gameplay.Gameplay.AICharacter.md#onmeshchanged)
-- [onMovementStateChanged](Gameplay.Gameplay.AICharacter.md#onmovementstatechanged)
-- [onSetAppearanceDataCompleted](Gameplay.Gameplay.AICharacter.md#onsetappearancedatacompleted)
-- [onTextureChanged](Gameplay.Gameplay.AICharacter.md#ontexturechanged)
-- [player](Gameplay.Gameplay.AICharacter.md#player)
-
-### Accessors
-
-- [airControl](Gameplay.Gameplay.AICharacter.md#aircontrol)
-- [airControlBoostMultiplier](Gameplay.Gameplay.AICharacter.md#aircontrolboostmultiplier)
-- [airControlBoostVelocityThreshold](Gameplay.Gameplay.AICharacter.md#aircontrolboostvelocitythreshold)
-- [animationMode](Gameplay.Gameplay.AICharacter.md#animationmode)
-- [animationStance](Gameplay.Gameplay.AICharacter.md#animationstance)
-- [appearance](Gameplay.Gameplay.AICharacter.md#appearance)
-- [baseShadowLocationOffset](Gameplay.Gameplay.AICharacter.md#baseshadowlocationoffset)
-- [baseShadowMaxVisibleHeight](Gameplay.Gameplay.AICharacter.md#baseshadowmaxvisibleheight)
-- [baseShadowScale](Gameplay.Gameplay.AICharacter.md#baseshadowscale)
-- [basicStance](Gameplay.Gameplay.AICharacter.md#basicstance)
-- [basicStanceAimOffsetEnable](Gameplay.Gameplay.AICharacter.md#basicstanceaimoffsetenable)
-- [brakingDecelerationFalling](Gameplay.Gameplay.AICharacter.md#brakingdecelerationfalling)
-- [brakingDecelerationFlying](Gameplay.Gameplay.AICharacter.md#brakingdecelerationflying)
-- [brakingDecelerationSwimming](Gameplay.Gameplay.AICharacter.md#brakingdecelerationswimming)
-- [brakingDecelerationWalking](Gameplay.Gameplay.AICharacter.md#brakingdecelerationwalking)
-- [canSetAppearanceData](Gameplay.Gameplay.AICharacter.md#cansetappearancedata)
-- [canStepUpOn](Gameplay.Gameplay.AICharacter.md#canstepupon)
-- [capsuleHalfHeight](Gameplay.Gameplay.AICharacter.md#capsulehalfheight)
-- [capsuleRadius](Gameplay.Gameplay.AICharacter.md#capsuleradius)
-- [characterName](Gameplay.Gameplay.AICharacter.md#charactername)
-- [collisionEnable](Gameplay.Gameplay.AICharacter.md#collisionenable)
-- [collisionExtent](Gameplay.Gameplay.AICharacter.md#collisionextent)
-- [collisionShape](Gameplay.Gameplay.AICharacter.md#collisionshape)
-- [collisionWithOtherCharacterEnable](Gameplay.Gameplay.AICharacter.md#collisionwithothercharacterenable)
-- [crouchEnable](Gameplay.Gameplay.AICharacter.md#crouchenable)
-- [crouchedHeight](Gameplay.Gameplay.AICharacter.md#crouchedheight)
-- [forwardVector](Gameplay.Gameplay.AICharacter.md#forwardvector)
-- [gravityScale](Gameplay.Gameplay.AICharacter.md#gravityscale)
-- [groundFriction](Gameplay.Gameplay.AICharacter.md#groundfriction)
-- [guid](Gameplay.Gameplay.AICharacter.md#guid)
-- [headUIVisible](Gameplay.Gameplay.AICharacter.md#headuivisible)
-- [headUIVisibleRange](Gameplay.Gameplay.AICharacter.md#headuivisiblerange)
-- [isCrouching](Gameplay.Gameplay.AICharacter.md#iscrouching)
-- [isJumping](Gameplay.Gameplay.AICharacter.md#isjumping)
-- [isMoving](Gameplay.Gameplay.AICharacter.md#ismoving)
-- [jumpEnable](Gameplay.Gameplay.AICharacter.md#jumpenable)
-- [jumpMaxCount](Gameplay.Gameplay.AICharacter.md#jumpmaxcount)
-- [jumpingOutOfWaterEnable](Gameplay.Gameplay.AICharacter.md#jumpingoutofwaterenable)
-- [locallyVisible](Gameplay.Gameplay.AICharacter.md#locallyvisible)
-- [lockStatus](Gameplay.Gameplay.AICharacter.md#lockstatus)
-- [maxAcceleration](Gameplay.Gameplay.AICharacter.md#maxacceleration)
-- [maxFallingSpeed](Gameplay.Gameplay.AICharacter.md#maxfallingspeed)
-- [maxFlySpeed](Gameplay.Gameplay.AICharacter.md#maxflyspeed)
-- [maxJumpHeight](Gameplay.Gameplay.AICharacter.md#maxjumpheight)
-- [maxStepHeight](Gameplay.Gameplay.AICharacter.md#maxstepheight)
-- [maxSwimSpeed](Gameplay.Gameplay.AICharacter.md#maxswimspeed)
-- [maxWalkSpeed](Gameplay.Gameplay.AICharacter.md#maxwalkspeed)
-- [maxWalkSpeedCrouched](Gameplay.Gameplay.AICharacter.md#maxwalkspeedcrouched)
-- [moveEnable](Gameplay.Gameplay.AICharacter.md#moveenable)
-- [moveFacingDirection](Gameplay.Gameplay.AICharacter.md#movefacingdirection)
-- [movementAxisDirection](Gameplay.Gameplay.AICharacter.md#movementaxisdirection)
-- [movementDirection](Gameplay.Gameplay.AICharacter.md#movementdirection)
-- [movementState](Gameplay.Gameplay.AICharacter.md#movementstate)
-- [name](Gameplay.Gameplay.AICharacter.md#name)
-- [netStatus](Gameplay.Gameplay.AICharacter.md#netstatus)
-- [outOfWaterZ](Gameplay.Gameplay.AICharacter.md#outofwaterz)
-- [parent](Gameplay.Gameplay.AICharacter.md#parent)
-- [ragdollEnable](Gameplay.Gameplay.AICharacter.md#ragdollenable)
-- [relativeLocation](Gameplay.Gameplay.AICharacter.md#relativelocation)
-- [relativeRotation](Gameplay.Gameplay.AICharacter.md#relativerotation)
-- [relativeScale](Gameplay.Gameplay.AICharacter.md#relativescale)
-- [rightVector](Gameplay.Gameplay.AICharacter.md#rightvector)
-- [rotateRate](Gameplay.Gameplay.AICharacter.md#rotaterate)
-- [scale](Gameplay.Gameplay.AICharacter.md#scale)
-- [separateBrakingFrictionEnable](Gameplay.Gameplay.AICharacter.md#separatebrakingfrictionenable)
-- [serverCalculateEnable](Gameplay.Gameplay.AICharacter.md#servercalculateenable)
-- [staticStatus](Gameplay.Gameplay.AICharacter.md#staticstatus)
-- [tag](Gameplay.Gameplay.AICharacter.md#tag)
-- [transform](Gameplay.Gameplay.AICharacter.md#transform)
-- [upVector](Gameplay.Gameplay.AICharacter.md#upvector)
-- [useUpdate](Gameplay.Gameplay.AICharacter.md#useupdate)
-- [usedCapsuleCorrection](Gameplay.Gameplay.AICharacter.md#usedcapsulecorrection)
-- [velocity](Gameplay.Gameplay.AICharacter.md#velocity)
-- [visible](Gameplay.Gameplay.AICharacter.md#visible)
-- [walkableFloorAngle](Gameplay.Gameplay.AICharacter.md#walkablefloorangle)
-- [worldLocation](Gameplay.Gameplay.AICharacter.md#worldlocation)
-- [worldRotation](Gameplay.Gameplay.AICharacter.md#worldrotation)
-- [worldScale](Gameplay.Gameplay.AICharacter.md#worldscale)
-
-### Methods
-
-- [addDestroyCallback](Gameplay.Gameplay.AICharacter.md#adddestroycallback)
-- [addImpulse](Gameplay.Gameplay.AICharacter.md#addimpulse)
-- [addMoveInput](Gameplay.Gameplay.AICharacter.md#addmoveinput)
-- [appearanceReady](Gameplay.Gameplay.AICharacter.md#appearanceready)
-- [asyncGetScriptByName](Gameplay.Gameplay.AICharacter.md#asyncgetscriptbyname)
-- [attach](Gameplay.Gameplay.AICharacter.md#attach)
-- [attachToGameObject](Gameplay.Gameplay.AICharacter.md#attachtogameobject)
-- [clearDecorations](Gameplay.Gameplay.AICharacter.md#cleardecorations)
-- [clearOneDecoration](Gameplay.Gameplay.AICharacter.md#clearonedecoration)
-- [clone](Gameplay.Gameplay.AICharacter.md#clone)
-- [crouch](Gameplay.Gameplay.AICharacter.md#crouch)
-- [deleteDestroyCallback](Gameplay.Gameplay.AICharacter.md#deletedestroycallback)
-- [destroy](Gameplay.Gameplay.AICharacter.md#destroy)
-- [detachFromGameObject](Gameplay.Gameplay.AICharacter.md#detachfromgameobject)
-- [getBoundingBoxSize](Gameplay.Gameplay.AICharacter.md#getboundingboxsize)
-- [getBounds](Gameplay.Gameplay.AICharacter.md#getbounds)
-- [getChildByGuid](Gameplay.Gameplay.AICharacter.md#getchildbyguid)
-- [getChildByName](Gameplay.Gameplay.AICharacter.md#getchildbyname)
-- [getChildren](Gameplay.Gameplay.AICharacter.md#getchildren)
-- [getChildrenBoxCenter](Gameplay.Gameplay.AICharacter.md#getchildrenboxcenter)
-- [getCollision](Gameplay.Gameplay.AICharacter.md#getcollision)
-- [getControlRotator](Gameplay.Gameplay.AICharacter.md#getcontrolrotator)
-- [getDecorations](Gameplay.Gameplay.AICharacter.md#getdecorations)
-- [getForwardVector](Gameplay.Gameplay.AICharacter.md#getforwardvector)
-- [getHeadUIWidget](Gameplay.Gameplay.AICharacter.md#getheaduiwidget)
-- [getRelativeLocation](Gameplay.Gameplay.AICharacter.md#getrelativelocation)
-- [getRelativeRotation](Gameplay.Gameplay.AICharacter.md#getrelativerotation)
-- [getRelativeScale](Gameplay.Gameplay.AICharacter.md#getrelativescale)
-- [getRightVector](Gameplay.Gameplay.AICharacter.md#getrightvector)
-- [getScriptByGuid](Gameplay.Gameplay.AICharacter.md#getscriptbyguid)
-- [getScriptByName](Gameplay.Gameplay.AICharacter.md#getscriptbyname)
-- [getScripts](Gameplay.Gameplay.AICharacter.md#getscripts)
-- [getSlotName](Gameplay.Gameplay.AICharacter.md#getslotname)
-- [getSourceAssetGuid](Gameplay.Gameplay.AICharacter.md#getsourceassetguid)
-- [getTransform](Gameplay.Gameplay.AICharacter.md#gettransform)
-- [getUpVector](Gameplay.Gameplay.AICharacter.md#getupvector)
-- [getVisibility](Gameplay.Gameplay.AICharacter.md#getvisibility)
-- [getWorldLocation](Gameplay.Gameplay.AICharacter.md#getworldlocation)
-- [getWorldRotation](Gameplay.Gameplay.AICharacter.md#getworldrotation)
-- [getWorldScale](Gameplay.Gameplay.AICharacter.md#getworldscale)
-- [isPlayingAnimation](Gameplay.Gameplay.AICharacter.md#isplayinganimation)
-- [isRunningClient](Gameplay.Gameplay.AICharacter.md#isrunningclient)
-- [jump](Gameplay.Gameplay.AICharacter.md#jump)
-- [loadAnimation](Gameplay.Gameplay.AICharacter.md#loadanimation)
-- [loadDecoration](Gameplay.Gameplay.AICharacter.md#loaddecoration)
-- [loadSlotAndEditorDataByGuid](Gameplay.Gameplay.AICharacter.md#loadslotandeditordatabyguid)
-- [loadSlotAndEditorDataByPath](Gameplay.Gameplay.AICharacter.md#loadslotandeditordatabypath)
-- [loadStance](Gameplay.Gameplay.AICharacter.md#loadstance)
-- [lookAt](Gameplay.Gameplay.AICharacter.md#lookat)
-- [onDestroy](Gameplay.Gameplay.AICharacter.md#ondestroy)
-- [onStart](Gameplay.Gameplay.AICharacter.md#onstart)
-- [onUpdate](Gameplay.Gameplay.AICharacter.md#onupdate)
-- [playAnimation](Gameplay.Gameplay.AICharacter.md#playanimation)
-- [playAnimationLocally](Gameplay.Gameplay.AICharacter.md#playanimationlocally)
-- [ready](Gameplay.Gameplay.AICharacter.md#ready)
-- [setAppearance](Gameplay.Gameplay.AICharacter.md#setappearance)
-- [setCollision](Gameplay.Gameplay.AICharacter.md#setcollision)
-- [setCollisionShapeAndExtent](Gameplay.Gameplay.AICharacter.md#setcollisionshapeandextent)
-- [setLocallyVisibility](Gameplay.Gameplay.AICharacter.md#setlocallyvisibility)
-- [setLocationAndRotation](Gameplay.Gameplay.AICharacter.md#setlocationandrotation)
-- [setRelativeLocation](Gameplay.Gameplay.AICharacter.md#setrelativelocation)
-- [setRelativeRotation](Gameplay.Gameplay.AICharacter.md#setrelativerotation)
-- [setRelativeScale](Gameplay.Gameplay.AICharacter.md#setrelativescale)
-- [setServerMovementEnable](Gameplay.Gameplay.AICharacter.md#setservermovementenable)
-- [setTransform](Gameplay.Gameplay.AICharacter.md#settransform)
-- [setVisibility](Gameplay.Gameplay.AICharacter.md#setvisibility)
-- [setWorldLocation](Gameplay.Gameplay.AICharacter.md#setworldlocation)
-- [setWorldRotation](Gameplay.Gameplay.AICharacter.md#setworldrotation)
-- [setWorldScale](Gameplay.Gameplay.AICharacter.md#setworldscale)
-- [stopAnimation](Gameplay.Gameplay.AICharacter.md#stopanimation)
-- [stopStance](Gameplay.Gameplay.AICharacter.md#stopstance)
-- [swimmingDown](Gameplay.Gameplay.AICharacter.md#swimmingdown)
-- [swimmingUp](Gameplay.Gameplay.AICharacter.md#swimmingup)
-- [switchToFlying](Gameplay.Gameplay.AICharacter.md#switchtoflying)
-- [switchToWalking](Gameplay.Gameplay.AICharacter.md#switchtowalking)
-- [asyncFind](Gameplay.Gameplay.AICharacter.md#asyncfind)
-- [asyncSpawnGameObject](Gameplay.Gameplay.AICharacter.md#asyncspawngameobject)
-- [find](Gameplay.Gameplay.AICharacter.md#find)
-- [findGameObjectByTag](Gameplay.Gameplay.AICharacter.md#findgameobjectbytag)
-- [getGameObjectByName](Gameplay.Gameplay.AICharacter.md#getgameobjectbyname)
-- [getGameObjectsByName](Gameplay.Gameplay.AICharacter.md#getgameobjectsbyname)
-- [spawnGameObject](Gameplay.Gameplay.AICharacter.md#spawngameobject)
-
-## Constructors
-
-### constructor
-
-• **new AICharacter**()
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[constructor](Gameplay.Gameplay.CharacterBase.md#constructor)
+| Methods                                                                                                                                                                                                                                                                     |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| **[addDestroyCallback](Gameplay.Gameplay.AICharacter.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体 Destroy 事件回调                                                                                                                     |
+| **[addImpulse](Gameplay.Gameplay.AICharacter.md#addimpulse)**([`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 添加冲量                                                                                                                                             |
+| **[addMoveInput](Gameplay.Gameplay.AICharacter.md#addmoveinput)**([`Vector`](Type.Type.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入                                                                                                                              |
+| **[appearanceReady](Gameplay.Gameplay.AICharacter.md#appearanceready)**(): `Promise`<`void`\> <br> 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断                                                   |
+| **[asyncGetScriptByName](Gameplay.Gameplay.AICharacter.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系                                                                                                    |
+| **[attach](Gameplay.Gameplay.AICharacter.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽                                                                                                       |
+| **[attachToGameObject](Gameplay.Gameplay.AICharacter.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上                                                                                                                                             |
+| **[clearDecorations](Gameplay.Gameplay.AICharacter.md#cleardecorations)**(): `void` <br> 清空所有挂件数据                                                                                                                                                                   |
+| **[clearOneDecoration](Gameplay.Gameplay.AICharacter.md#clearonedecoration)**(`string`): `void` <br> 删除一个挂件                                                                                                                                                           |
+| **[clone](Gameplay.Gameplay.AICharacter.md#clone)**(`boolean`): `GameObject` <br> 复制对象                                                                                                                                                                                  |
+| **[crouch](Gameplay.Gameplay.AICharacter.md#crouch)**(`boolean`): `void` <br> 下蹲                                                                                                                                                                                          |
+| **[deleteDestroyCallback](Gameplay.Gameplay.AICharacter.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体 Destroy 事件回调                                                                                                               |
+| **[destroy](Gameplay.Gameplay.AICharacter.md#destroy)**(): `void` <br> 删除对象                                                                                                                                                                                             |
+| **[detachFromGameObject](Gameplay.Gameplay.AICharacter.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离                                                                                                                                               |
+| **[getBoundingBoxSize](Gameplay.Gameplay.AICharacter.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小                                                                               |
+| **[getBounds](Gameplay.Gameplay.AICharacter.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取 GameObject 边界                                                                                       |
+| **[getChildByGuid](Gameplay.Gameplay.AICharacter.md#getchildbyguid)**(`string`): `GameObject` <br> 根据 Guid 查找子物体                                                                                                                                                     |
+| **[getChildByName](Gameplay.Gameplay.AICharacter.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体                                                                                                                                                       |
+| **[getChildren](Gameplay.Gameplay.AICharacter.md#getchildren)**(): `GameObject`[] <br> 获取 Children，客户端不维系父子关系。推荐使用 Find 替代                                                                                                                              |
+| **[getChildrenBoxCenter](Gameplay.Gameplay.AICharacter.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])                                                   |
+| **[getCollision](Gameplay.Gameplay.AICharacter.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态                                                               |
+| **[getControlRotator](Gameplay.Gameplay.AICharacter.md#getcontrolrotator)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取控制器的旋转                                                                                                 |
+| **[getDecorations](Gameplay.Gameplay.AICharacter.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的 Guid                                                                                          |
+| **[getForwardVector](Gameplay.Gameplay.AICharacter.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                                                     |
+| **[getHeadUIWidget](Gameplay.Gameplay.AICharacter.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.Gameplay.UIWidget.md) <br> 获取头顶 UIWidget                                                                                                                               |
+| **[getRelativeLocation](Gameplay.Gameplay.AICharacter.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                                         |
+| **[getRelativeRotation](Gameplay.Gameplay.AICharacter.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                                                 |
+| **[getRelativeScale](Gameplay.Gameplay.AICharacter.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                                               |
+| **[getRightVector](Gameplay.Gameplay.AICharacter.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                                         |
+| **[getScriptByGuid](Gameplay.Gameplay.AICharacter.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                           |
+| **[getScriptByName](Gameplay.Gameplay.AICharacter.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                           |
+| **[getScripts](Gameplay.Gameplay.AICharacter.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                                           |
+| **[getSlotName](Gameplay.Gameplay.AICharacter.md#getslotname)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称                                                                                                                       |
+| **[getSourceAssetGuid](Gameplay.Gameplay.AICharacter.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的 GUID                                                                                                                                                  |
+| **[getTransform](Gameplay.Gameplay.AICharacter.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 Transform                                                                                                 |
+| **[getUpVector](Gameplay.Gameplay.AICharacter.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                                               |
+| **[getVisibility](Gameplay.Gameplay.AICharacter.md#getvisibility)**(): `boolean` <br> 获取是否被显示                                                                                                                                                                        |
+| **[getWorldLocation](Gameplay.Gameplay.AICharacter.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                                         |
+| **[getWorldRotation](Gameplay.Gameplay.AICharacter.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                                                 |
+| **[getWorldScale](Gameplay.Gameplay.AICharacter.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                                               |
+| **[isPlayingAnimation](Gameplay.Gameplay.AICharacter.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画                                                                                                                                                            |
+| **[isRunningClient](Gameplay.Gameplay.AICharacter.md#isrunningclient)**(): `boolean` <br> 是否为客户端                                                                                                                                                                      |
+| **[jump](Gameplay.Gameplay.AICharacter.md#jump)**(): `void` <br> 跳跃                                                                                                                                                                                                       |
+| **[loadAnimation](Gameplay.Gameplay.AICharacter.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 加载动画,获取到动画对象                                                                                                        |
+| **[loadDecoration](Gameplay.Gameplay.AICharacter.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0                                                     | 0,-90,0                                                                                                                                       | 1,1,1",给移动角色编辑器提供的能力 |
+| **[loadSlotAndEditorDataByGuid](Gameplay.Gameplay.AICharacter.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过 Guid 加载插槽跟角色编辑数据                                                                                                                     |
+| **[loadSlotAndEditorDataByPath](Gameplay.Gameplay.AICharacter.md#loadslotandeditordatabypath)**(`string`): `void` <br> 通过路径加载插槽跟角色编辑数据                                                                                                                       |
+| **[loadStance](Gameplay.Gameplay.AICharacter.md#loadstance)**(`string`, `boolean`): [`SubStance`](Gameplay.Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回                                                                                                           |
+| **[lookAt](Gameplay.Gameplay.AICharacter.md#lookat)**([`Vector`](Type.Type.Vector.md)): `void` <br> 角色面朝目标点                                                                                                                                                          |
+| **[onDestroy](Gameplay.Gameplay.AICharacter.md#ondestroy)**(): `void` <br> onDestroy 生命周期函数                                                                                                                                                                           |
+| **[onStart](Gameplay.Gameplay.AICharacter.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用                                                                                                                                                                          |
+| **[onUpdate](Gameplay.Gameplay.AICharacter.md#onupdate)**(`number`): `void` <br> onUpdate 生命周期函数                                                                                                                                                                      |
+| **[playAnimation](Gameplay.Gameplay.AICharacter.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation 对象接口是同步的                                                                |
+| **[playAnimationLocally](Gameplay.Gameplay.AICharacter.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(guid,false) instead. |
+| **[ready](Gameplay.Gameplay.AICharacter.md#ready)**(): `Promise`<[`AICharacter`](Gameplay.Gameplay.AICharacter.md)\> <br> GameObject 准备好后返回                                                                                                                           |
+| **[setAppearance](Gameplay.Gameplay.AICharacter.md#setappearance)**<extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\>                                                                                                                                   | \>([`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> | <br> 设置外观修改功能             |
+| **[setCollision](Gameplay.Gameplay.AICharacter.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态                                                                                                          |
+| **[setCollisionShapeAndExtent](Gameplay.Gameplay.AICharacter.md#setcollisionshapeandextent)**([`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md), [`Vector`](Type.Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体                                |
+| **[setLocallyVisibility](Gameplay.Gameplay.AICharacter.md#setlocallyvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(本地生效)                                                                                |
+| **[setLocationAndRotation](Gameplay.Gameplay.AICharacter.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转                                                                       |
+| **[setRelativeLocation](Gameplay.Gameplay.AICharacter.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置                                                                                                                                  |
+| **[setRelativeRotation](Gameplay.Gameplay.AICharacter.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转                                                                                                                              |
+| **[setRelativeScale](Gameplay.Gameplay.AICharacter.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放                                                                                                                                        |
+| **[setServerMovementEnable](Gameplay.Gameplay.AICharacter.md#setservermovementenable)**(`boolean`): `void` <br> 开关角色的移动计算                                                                                                                                          |
+| **[setTransform](Gameplay.Gameplay.AICharacter.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体 transform                                                                                                                                |
+| **[setVisibility](Gameplay.Gameplay.AICharacter.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(自动同步)                                                                                              |
+| **[setWorldLocation](Gameplay.Gameplay.AICharacter.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标                                                                                                                                  |
+| **[setWorldRotation](Gameplay.Gameplay.AICharacter.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转                                                                                                                              |
+| **[setWorldScale](Gameplay.Gameplay.AICharacter.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放                                                                                                                                        |
+| **[stopAnimation](Gameplay.Gameplay.AICharacter.md#stopanimation)**(`string`): `void` <br> since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"                                                                                                              |
+| **[stopStance](Gameplay.Gameplay.AICharacter.md#stopstance)**(`boolean`): `void` <br> 停止任何正在播放的姿态                                                                                                                                                                |
+| **[swimmingDown](Gameplay.Gameplay.AICharacter.md#swimmingdown)**(`number`): `void` <br> 水中下潜                                                                                                                                                                           |
+| **[swimmingUp](Gameplay.Gameplay.AICharacter.md#swimmingup)**(`number`): `void` <br> 水中上浮                                                                                                                                                                               |
+| **[switchToFlying](Gameplay.Gameplay.AICharacter.md#switchtoflying)**(): `void` <br> 切换为飞行状态                                                                                                                                                                         |
+| **[switchToWalking](Gameplay.Gameplay.AICharacter.md#switchtowalking)**(): `void` <br> 切换为行走状态                                                                                                                                                                       |
+| **[asyncFind](Gameplay.Gameplay.AICharacter.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);                                                                                  |
+| **[asyncSpawnGameObject](Gameplay.Gameplay.AICharacter.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建                                                                              |
+| **[find](Gameplay.Gameplay.AICharacter.md#find)**(`string`): `GameObject` <br> 通过 Guid 查找 GameObject                                                                                                                                                                    |
+| **[findGameObjectByTag](Gameplay.Gameplay.AICharacter.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义 Tag 获取 GameObject                                                                                                                               |
+| **[getGameObjectByName](Gameplay.Gameplay.AICharacter.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体                                                                                                                                               |
+| **[getGameObjectsByName](Gameplay.Gameplay.AICharacter.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体                                                                                                                                           |
+| **[spawnGameObject](Gameplay.Gameplay.AICharacter.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject                                                                                                                                         |
 
 ## Properties
 
@@ -223,14 +199,6 @@ usage:双端
 
 加载完角色形象数据后的回调
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onLoadAppearanceDataAllCompleted](Gameplay.Gameplay.CharacterBase.md#onloadappearancedataallcompleted)
-
-#### Defined in
-
-Gameplay/index.d.ts:841
-
 ---
 
 ### onMeshChanged
@@ -240,14 +208,6 @@ Gameplay/index.d.ts:841
 **`Description`**
 
 角色模型切换成功广播
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onMeshChanged](Gameplay.Gameplay.CharacterBase.md#onmeshchanged)
-
-#### Defined in
-
-Gameplay/index.d.ts:829
 
 ---
 
@@ -259,14 +219,6 @@ Gameplay/index.d.ts:829
 
 移动状态切换时的回调
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onMovementStateChanged](Gameplay.Gameplay.CharacterBase.md#onmovementstatechanged)
-
-#### Defined in
-
-Gameplay/index.d.ts:821
-
 ---
 
 ### onSetAppearanceDataCompleted
@@ -276,14 +228,6 @@ Gameplay/index.d.ts:821
 **`Description`**
 
 设置一个角色编辑 API 成功后的回调
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onSetAppearanceDataCompleted](Gameplay.Gameplay.CharacterBase.md#onsetappearancedatacompleted)
-
-#### Defined in
-
-Gameplay/index.d.ts:837
 
 ---
 
@@ -295,14 +239,6 @@ Gameplay/index.d.ts:837
 
 角色贴图切换成功广播
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onTextureChanged](Gameplay.Gameplay.CharacterBase.md#ontexturechanged)
-
-#### Defined in
-
-Gameplay/index.d.ts:833
-
 ---
 
 ### player
@@ -312,14 +248,6 @@ Gameplay/index.d.ts:833
 **`Description`**
 
 玩家对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[player](Gameplay.Gameplay.CharacterBase.md#player)
-
-#### Defined in
-
-Gameplay/index.d.ts:862
 
 ## Accessors
 
@@ -338,14 +266,6 @@ Gameplay/index.d.ts:862
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.airControl
-
-#### Defined in
-
-Gameplay/index.d.ts:1075
 
 • `set` **airControl**(`InAirControl`): `void`
 
@@ -367,14 +287,6 @@ Gameplay/index.d.ts:1075
 
 `void`
 
-#### Inherited from
-
-CharacterBase.airControl
-
-#### Defined in
-
-Gameplay/index.d.ts:1080
-
 ---
 
 ### airControlBoostMultiplier
@@ -392,14 +304,6 @@ Gameplay/index.d.ts:1080
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.airControlBoostMultiplier
-
-#### Defined in
-
-Gameplay/index.d.ts:1085
 
 • `set` **airControlBoostMultiplier**(`InAirControlBoostMultiplier`): `void`
 
@@ -421,14 +325,6 @@ Gameplay/index.d.ts:1085
 
 `void`
 
-#### Inherited from
-
-CharacterBase.airControlBoostMultiplier
-
-#### Defined in
-
-Gameplay/index.d.ts:1090
-
 ---
 
 ### airControlBoostVelocityThreshold
@@ -446,14 +342,6 @@ Gameplay/index.d.ts:1090
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.airControlBoostVelocityThreshold
-
-#### Defined in
-
-Gameplay/index.d.ts:1095
 
 • `set` **airControlBoostVelocityThreshold**(`InAirControlBoostVelocityThreshold`): `void`
 
@@ -475,14 +363,6 @@ Gameplay/index.d.ts:1095
 
 `void`
 
-#### Inherited from
-
-CharacterBase.airControlBoostVelocityThreshold
-
-#### Defined in
-
-Gameplay/index.d.ts:1100
-
 ---
 
 ### animationMode
@@ -496,14 +376,6 @@ Gameplay/index.d.ts:1100
 #### Returns
 
 [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md)
-
-#### Inherited from
-
-CharacterBase.animationMode
-
-#### Defined in
-
-Gameplay/index.d.ts:1506
 
 • `set` **animationMode**(`mode`): `void`
 
@@ -520,14 +392,6 @@ Gameplay/index.d.ts:1506
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.animationMode
-
-#### Defined in
-
-Gameplay/index.d.ts:1510
 
 ---
 
@@ -546,14 +410,6 @@ Gameplay/index.d.ts:1510
 #### Returns
 
 `string`
-
-#### Inherited from
-
-CharacterBase.animationStance
-
-#### Defined in
-
-Gameplay/index.d.ts:1158
 
 • `set` **animationStance**(`StanceGuid`): `void`
 
@@ -575,14 +431,6 @@ Gameplay/index.d.ts:1158
 
 `void`
 
-#### Inherited from
-
-CharacterBase.animationStance
-
-#### Defined in
-
-Gameplay/index.d.ts:1163
-
 ---
 
 ### appearance
@@ -597,14 +445,6 @@ Gameplay/index.d.ts:1163
 
 [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)
 
-#### Inherited from
-
-CharacterBase.appearance
-
-#### Defined in
-
-Gameplay/index.d.ts:1463
-
 ---
 
 ### baseShadowLocationOffset
@@ -618,14 +458,6 @@ Gameplay/index.d.ts:1463
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
-
-#### Inherited from
-
-CharacterBase.baseShadowLocationOffset
-
-#### Defined in
-
-Gameplay/index.d.ts:1351
 
 • `set` **baseShadowLocationOffset**(`InLocationOffset`): `void`
 
@@ -643,14 +475,6 @@ Gameplay/index.d.ts:1351
 
 `void`
 
-#### Inherited from
-
-CharacterBase.baseShadowLocationOffset
-
-#### Defined in
-
-Gameplay/index.d.ts:1355
-
 ---
 
 ### baseShadowMaxVisibleHeight
@@ -664,14 +488,6 @@ Gameplay/index.d.ts:1355
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.baseShadowMaxVisibleHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1359
 
 • `set` **baseShadowMaxVisibleHeight**(`InHeight`): `void`
 
@@ -689,14 +505,6 @@ Gameplay/index.d.ts:1359
 
 `void`
 
-#### Inherited from
-
-CharacterBase.baseShadowMaxVisibleHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1363
-
 ---
 
 ### baseShadowScale
@@ -710,14 +518,6 @@ Gameplay/index.d.ts:1363
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
-
-#### Inherited from
-
-CharacterBase.baseShadowScale
-
-#### Defined in
-
-Gameplay/index.d.ts:1343
 
 • `set` **baseShadowScale**(`InScale`): `void`
 
@@ -734,14 +534,6 @@ Gameplay/index.d.ts:1343
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.baseShadowScale
-
-#### Defined in
-
-Gameplay/index.d.ts:1347
 
 ---
 
@@ -760,14 +552,6 @@ Gameplay/index.d.ts:1347
 #### Returns
 
 `string`
-
-#### Inherited from
-
-CharacterBase.basicStance
-
-#### Defined in
-
-Gameplay/index.d.ts:1148
 
 • `set` **basicStance**(`InBasicStance`): `void`
 
@@ -789,14 +573,6 @@ Gameplay/index.d.ts:1148
 
 `void`
 
-#### Inherited from
-
-CharacterBase.basicStance
-
-#### Defined in
-
-Gameplay/index.d.ts:1153
-
 ---
 
 ### basicStanceAimOffsetEnable
@@ -810,14 +586,6 @@ Gameplay/index.d.ts:1153
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.basicStanceAimOffsetEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1321
 
 • `set` **basicStanceAimOffsetEnable**(`InbEnableAimOffset`): `void`
 
@@ -835,14 +603,6 @@ Gameplay/index.d.ts:1321
 
 `void`
 
-#### Inherited from
-
-CharacterBase.basicStanceAimOffsetEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1325
-
 ---
 
 ### brakingDecelerationFalling
@@ -856,14 +616,6 @@ Gameplay/index.d.ts:1325
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.brakingDecelerationFalling
-
-#### Defined in
-
-Gameplay/index.d.ts:1131
 
 • `set` **brakingDecelerationFalling**(`InBrakingDecelerationFalling`): `void`
 
@@ -881,14 +633,6 @@ Gameplay/index.d.ts:1131
 
 `void`
 
-#### Inherited from
-
-CharacterBase.brakingDecelerationFalling
-
-#### Defined in
-
-Gameplay/index.d.ts:1135
-
 ---
 
 ### brakingDecelerationFlying
@@ -902,14 +646,6 @@ Gameplay/index.d.ts:1135
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.brakingDecelerationFlying
-
-#### Defined in
-
-Gameplay/index.d.ts:1115
 
 • `set` **brakingDecelerationFlying**(`InBrakingDecelerationFlying`): `void`
 
@@ -927,14 +663,6 @@ Gameplay/index.d.ts:1115
 
 `void`
 
-#### Inherited from
-
-CharacterBase.brakingDecelerationFlying
-
-#### Defined in
-
-Gameplay/index.d.ts:1119
-
 ---
 
 ### brakingDecelerationSwimming
@@ -948,14 +676,6 @@ Gameplay/index.d.ts:1119
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.brakingDecelerationSwimming
-
-#### Defined in
-
-Gameplay/index.d.ts:1139
 
 • `set` **brakingDecelerationSwimming**(`InBrakingDecelerationSwimming`): `void`
 
@@ -973,14 +693,6 @@ Gameplay/index.d.ts:1139
 
 `void`
 
-#### Inherited from
-
-CharacterBase.brakingDecelerationSwimming
-
-#### Defined in
-
-Gameplay/index.d.ts:1143
-
 ---
 
 ### brakingDecelerationWalking
@@ -994,14 +706,6 @@ Gameplay/index.d.ts:1143
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.brakingDecelerationWalking
-
-#### Defined in
-
-Gameplay/index.d.ts:1123
 
 • `set` **brakingDecelerationWalking**(`InBrakingDecelerationWalking`): `void`
 
@@ -1019,14 +723,6 @@ Gameplay/index.d.ts:1123
 
 `void`
 
-#### Inherited from
-
-CharacterBase.brakingDecelerationWalking
-
-#### Defined in
-
-Gameplay/index.d.ts:1127
-
 ---
 
 ### canSetAppearanceData
@@ -1040,14 +736,6 @@ Gameplay/index.d.ts:1127
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.canSetAppearanceData
-
-#### Defined in
-
-Gameplay/index.d.ts:825
 
 ---
 
@@ -1069,14 +757,6 @@ Gameplay/index.d.ts:825
 
 true 其他角色可以站到玩家头上 false 其他角色不可以站到玩家头上
 
-#### Inherited from
-
-CharacterBase.canStepUpOn
-
-#### Defined in
-
-Gameplay/index.d.ts:1400
-
 • `set` **canStepUpOn**(`CanStepUpOn`): `void`
 
 **`Description`**
@@ -1097,14 +777,6 @@ Gameplay/index.d.ts:1400
 
 `void`
 
-#### Inherited from
-
-CharacterBase.canStepUpOn
-
-#### Defined in
-
-Gameplay/index.d.ts:1405
-
 ---
 
 ### capsuleHalfHeight
@@ -1118,14 +790,6 @@ Gameplay/index.d.ts:1405
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.capsuleHalfHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1058
 
 • `set` **capsuleHalfHeight**(`InCapsuleHalfHeight`): `void`
 
@@ -1143,14 +807,6 @@ Gameplay/index.d.ts:1058
 
 `void`
 
-#### Inherited from
-
-CharacterBase.capsuleHalfHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1062
-
 ---
 
 ### capsuleRadius
@@ -1164,14 +820,6 @@ Gameplay/index.d.ts:1062
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.capsuleRadius
-
-#### Defined in
-
-Gameplay/index.d.ts:1066
 
 • `set` **capsuleRadius**(`InCapsuleRadius`): `void`
 
@@ -1188,14 +836,6 @@ Gameplay/index.d.ts:1066
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.capsuleRadius
-
-#### Defined in
-
-Gameplay/index.d.ts:1070
 
 ---
 
@@ -1214,14 +854,6 @@ Gameplay/index.d.ts:1070
 #### Returns
 
 `string`
-
-#### Inherited from
-
-CharacterBase.characterName
-
-#### Defined in
-
-Gameplay/index.d.ts:867
 
 • `set` **characterName**(`inCharacterName`): `void`
 
@@ -1243,14 +875,6 @@ Gameplay/index.d.ts:867
 
 `void`
 
-#### Inherited from
-
-CharacterBase.characterName
-
-#### Defined in
-
-Gameplay/index.d.ts:872
-
 ---
 
 ### collisionEnable
@@ -1264,14 +888,6 @@ Gameplay/index.d.ts:872
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.collisionEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1313
 
 • `set` **collisionEnable**(`InbEnableCollision`): `void`
 
@@ -1289,14 +905,6 @@ Gameplay/index.d.ts:1313
 
 `void`
 
-#### Inherited from
-
-CharacterBase.collisionEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1317
-
 ---
 
 ### collisionExtent
@@ -1310,14 +918,6 @@ Gameplay/index.d.ts:1317
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.collisionExtent
-
-#### Defined in
-
-Gameplay/index.d.ts:1502
 
 ---
 
@@ -1333,14 +933,6 @@ Gameplay/index.d.ts:1502
 
 [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md)
 
-#### Inherited from
-
-CharacterBase.collisionShape
-
-#### Defined in
-
-Gameplay/index.d.ts:1498
-
 ---
 
 ### collisionWithOtherCharacterEnable
@@ -1354,14 +946,6 @@ Gameplay/index.d.ts:1498
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.collisionWithOtherCharacterEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1427
 
 • `set` **collisionWithOtherCharacterEnable**(`value`): `void`
 
@@ -1379,14 +963,6 @@ Gameplay/index.d.ts:1427
 
 `void`
 
-#### Inherited from
-
-CharacterBase.collisionWithOtherCharacterEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1431
-
 ---
 
 ### crouchEnable
@@ -1400,14 +976,6 @@ Gameplay/index.d.ts:1431
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.crouchEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:920
 
 • `set` **crouchEnable**(`canCrouch`): `void`
 
@@ -1425,14 +993,6 @@ Gameplay/index.d.ts:920
 
 `void`
 
-#### Inherited from
-
-CharacterBase.crouchEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:924
-
 ---
 
 ### crouchedHeight
@@ -1446,14 +1006,6 @@ Gameplay/index.d.ts:924
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.crouchedHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1015
 
 • `set` **crouchedHeight**(`InCrouchedHeight`): `void`
 
@@ -1470,14 +1022,6 @@ Gameplay/index.d.ts:1015
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.crouchedHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1019
 
 ---
 
@@ -1499,14 +1043,6 @@ Gameplay/index.d.ts:1019
 
 Vector
 
-#### Inherited from
-
-CharacterBase.forwardVector
-
-#### Defined in
-
-Core/index.d.ts:409
-
 ---
 
 ### gravityScale
@@ -1525,14 +1061,6 @@ Core/index.d.ts:409
 
 `number`
 
-#### Inherited from
-
-CharacterBase.gravityScale
-
-#### Defined in
-
-Gameplay/index.d.ts:1107
-
 • `set` **gravityScale**(`newGravityScale`): `void`
 
 **`Description`**
@@ -1549,14 +1077,6 @@ Gameplay/index.d.ts:1107
 
 `void`
 
-#### Inherited from
-
-CharacterBase.gravityScale
-
-#### Defined in
-
-Gameplay/index.d.ts:1111
-
 ---
 
 ### groundFriction
@@ -1570,14 +1090,6 @@ Gameplay/index.d.ts:1111
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.groundFriction
-
-#### Defined in
-
-Gameplay/index.d.ts:983
 
 • `set` **groundFriction**(`inGroundFriction`): `void`
 
@@ -1594,14 +1106,6 @@ Gameplay/index.d.ts:983
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.groundFriction
-
-#### Defined in
-
-Gameplay/index.d.ts:987
 
 ---
 
@@ -1621,14 +1125,6 @@ Gameplay/index.d.ts:987
 
 `string`
 
-#### Inherited from
-
-CharacterBase.guid
-
-#### Defined in
-
-Core/index.d.ts:39
-
 ---
 
 ### headUIVisible
@@ -1642,14 +1138,6 @@ Core/index.d.ts:39
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.headUIVisible
-
-#### Defined in
-
-Gameplay/index.d.ts:1335
 
 • `set` **headUIVisible**(`isVisible`): `void`
 
@@ -1667,14 +1155,6 @@ Gameplay/index.d.ts:1335
 
 `void`
 
-#### Inherited from
-
-CharacterBase.headUIVisible
-
-#### Defined in
-
-Gameplay/index.d.ts:1339
-
 ---
 
 ### headUIVisibleRange
@@ -1688,14 +1168,6 @@ Gameplay/index.d.ts:1339
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.headUIVisibleRange
-
-#### Defined in
-
-Gameplay/index.d.ts:1367
 
 • `set` **headUIVisibleRange**(`VisibleDistance`): `void`
 
@@ -1713,14 +1185,6 @@ Gameplay/index.d.ts:1367
 
 `void`
 
-#### Inherited from
-
-CharacterBase.headUIVisibleRange
-
-#### Defined in
-
-Gameplay/index.d.ts:1371
-
 ---
 
 ### isCrouching
@@ -1734,14 +1198,6 @@ Gameplay/index.d.ts:1371
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.isCrouching
-
-#### Defined in
-
-Gameplay/index.d.ts:1185
 
 ---
 
@@ -1757,14 +1213,6 @@ Gameplay/index.d.ts:1185
 
 `boolean`
 
-#### Inherited from
-
-CharacterBase.isJumping
-
-#### Defined in
-
-Gameplay/index.d.ts:1249
-
 ---
 
 ### isMoving
@@ -1779,14 +1227,6 @@ Gameplay/index.d.ts:1249
 
 `boolean`
 
-#### Inherited from
-
-CharacterBase.isMoving
-
-#### Defined in
-
-Gameplay/index.d.ts:1253
-
 ---
 
 ### jumpEnable
@@ -1800,14 +1240,6 @@ Gameplay/index.d.ts:1253
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.jumpEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:888
 
 • `set` **jumpEnable**(`value`): `void`
 
@@ -1825,14 +1257,6 @@ Gameplay/index.d.ts:888
 
 `void`
 
-#### Inherited from
-
-CharacterBase.jumpEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:892
-
 ---
 
 ### jumpMaxCount
@@ -1846,14 +1270,6 @@ Gameplay/index.d.ts:892
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.jumpMaxCount
-
-#### Defined in
-
-Gameplay/index.d.ts:1007
 
 • `set` **jumpMaxCount**(`InJumpMaxCount`): `void`
 
@@ -1871,14 +1287,6 @@ Gameplay/index.d.ts:1007
 
 `void`
 
-#### Inherited from
-
-CharacterBase.jumpMaxCount
-
-#### Defined in
-
-Gameplay/index.d.ts:1011
-
 ---
 
 ### jumpingOutOfWaterEnable
@@ -1892,14 +1300,6 @@ Gameplay/index.d.ts:1011
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.jumpingOutOfWaterEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1443
 
 • `set` **jumpingOutOfWaterEnable**(`value`): `void`
 
@@ -1916,14 +1316,6 @@ Gameplay/index.d.ts:1443
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.jumpingOutOfWaterEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1447
 
 ---
 
@@ -1942,14 +1334,6 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.locallyVisible
-
-#### Defined in
-
-Gameplay/index.d.ts:1204
 
 • `set` **locallyVisible**(`inIsVisible`): `void`
 
@@ -1971,14 +1355,6 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 `void`
 
-#### Inherited from
-
-CharacterBase.locallyVisible
-
-#### Defined in
-
-Gameplay/index.d.ts:1209
-
 ---
 
 ### lockStatus
@@ -1996,14 +1372,6 @@ Gameplay/index.d.ts:1209
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:456
 
 • `set` **lockStatus**(`v`): `void`
 
@@ -2025,14 +1393,6 @@ Core/index.d.ts:456
 
 `void`
 
-#### Inherited from
-
-CharacterBase.lockStatus
-
-#### Defined in
-
-Core/index.d.ts:451
-
 ---
 
 ### maxAcceleration
@@ -2046,14 +1406,6 @@ Core/index.d.ts:451
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxAcceleration
-
-#### Defined in
-
-Gameplay/index.d.ts:949
 
 • `set` **maxAcceleration**(`InMaxAcceleration`): `void`
 
@@ -2071,14 +1423,6 @@ Gameplay/index.d.ts:949
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxAcceleration
-
-#### Defined in
-
-Gameplay/index.d.ts:953
-
 ---
 
 ### maxFallingSpeed
@@ -2092,14 +1436,6 @@ Gameplay/index.d.ts:953
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxFallingSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:928
 
 • `set` **maxFallingSpeed**(`speed`): `void`
 
@@ -2117,14 +1453,6 @@ Gameplay/index.d.ts:928
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxFallingSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:932
-
 ---
 
 ### maxFlySpeed
@@ -2138,14 +1466,6 @@ Gameplay/index.d.ts:932
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxFlySpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:904
 
 • `set` **maxFlySpeed**(`InMaxFlySpeed`): `void`
 
@@ -2163,14 +1483,6 @@ Gameplay/index.d.ts:904
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxFlySpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:908
-
 ---
 
 ### maxJumpHeight
@@ -2184,14 +1496,6 @@ Gameplay/index.d.ts:908
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxJumpHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:999
 
 • `set` **maxJumpHeight**(`InMaxJumpHeight`): `void`
 
@@ -2209,14 +1513,6 @@ Gameplay/index.d.ts:999
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxJumpHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:1003
-
 ---
 
 ### maxStepHeight
@@ -2230,14 +1526,6 @@ Gameplay/index.d.ts:1003
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxStepHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:957
 
 • `set` **maxStepHeight**(`InMaxStepHeight`): `void`
 
@@ -2255,14 +1543,6 @@ Gameplay/index.d.ts:957
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxStepHeight
-
-#### Defined in
-
-Gameplay/index.d.ts:961
-
 ---
 
 ### maxSwimSpeed
@@ -2276,14 +1556,6 @@ Gameplay/index.d.ts:961
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxSwimSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:912
 
 • `set` **maxSwimSpeed**(`InMaxSwimSpeed`): `void`
 
@@ -2301,14 +1573,6 @@ Gameplay/index.d.ts:912
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxSwimSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:916
-
 ---
 
 ### maxWalkSpeed
@@ -2322,14 +1586,6 @@ Gameplay/index.d.ts:916
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxWalkSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:896
 
 • `set` **maxWalkSpeed**(`InMaxWalkSpeed`): `void`
 
@@ -2347,14 +1603,6 @@ Gameplay/index.d.ts:896
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxWalkSpeed
-
-#### Defined in
-
-Gameplay/index.d.ts:900
-
 ---
 
 ### maxWalkSpeedCrouched
@@ -2368,14 +1616,6 @@ Gameplay/index.d.ts:900
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.maxWalkSpeedCrouched
-
-#### Defined in
-
-Gameplay/index.d.ts:936
 
 • `set` **maxWalkSpeedCrouched**(`maxSpeed`): `void`
 
@@ -2393,14 +1633,6 @@ Gameplay/index.d.ts:936
 
 `void`
 
-#### Inherited from
-
-CharacterBase.maxWalkSpeedCrouched
-
-#### Defined in
-
-Gameplay/index.d.ts:940
-
 ---
 
 ### moveEnable
@@ -2414,14 +1646,6 @@ Gameplay/index.d.ts:940
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.moveEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:880
 
 • `set` **moveEnable**(`value`): `void`
 
@@ -2439,14 +1663,6 @@ Gameplay/index.d.ts:880
 
 `void`
 
-#### Inherited from
-
-CharacterBase.moveEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:884
-
 ---
 
 ### moveFacingDirection
@@ -2460,14 +1676,6 @@ Gameplay/index.d.ts:884
 #### Returns
 
 [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md)
-
-#### Inherited from
-
-CharacterBase.moveFacingDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1031
 
 • `set` **moveFacingDirection**(`InMoveFacingDirection`): `void`
 
@@ -2485,14 +1693,6 @@ Gameplay/index.d.ts:1031
 
 `void`
 
-#### Inherited from
-
-CharacterBase.moveFacingDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1035
-
 ---
 
 ### movementAxisDirection
@@ -2506,14 +1706,6 @@ Gameplay/index.d.ts:1035
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.movementAxisDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1023
 
 • `set` **movementAxisDirection**(`InMovementAxisDirection`): `void`
 
@@ -2530,14 +1722,6 @@ Gameplay/index.d.ts:1023
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.movementAxisDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1027
 
 ---
 
@@ -2559,14 +1743,6 @@ Gameplay/index.d.ts:1027
 
 [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md)
 
-#### Inherited from
-
-CharacterBase.movementDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1042
-
 • `set` **movementDirection**(`InMovementDirection`): `void`
 
 **`Description`**
@@ -2583,14 +1759,6 @@ Gameplay/index.d.ts:1042
 
 `void`
 
-#### Inherited from
-
-CharacterBase.movementDirection
-
-#### Defined in
-
-Gameplay/index.d.ts:1046
-
 ---
 
 ### movementState
@@ -2604,14 +1772,6 @@ Gameplay/index.d.ts:1046
 #### Returns
 
 [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md)
-
-#### Inherited from
-
-CharacterBase.movementState
-
-#### Defined in
-
-Gameplay/index.d.ts:876
 
 ---
 
@@ -2633,14 +1793,6 @@ Gameplay/index.d.ts:876
 
 名称
 
-#### Inherited from
-
-CharacterBase.name
-
-#### Defined in
-
-Core/index.d.ts:171
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -2653,21 +1805,13 @@ Core/index.d.ts:171
 
 #### Parameters
 
-| Name   | Type     | Description          |
-| :----- | :------- | :------------------- |
-| `name` | `string` | usage:需要设置的名称 |
+| Name   | Type     | Description    |
+| :----- | :------- | :------------- |
+| `name` | `string` | 需要设置的名称 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.name
-
-#### Defined in
-
-Core/index.d.ts:177
 
 ---
 
@@ -2689,14 +1833,6 @@ Core/index.d.ts:177
 
 Type.NetStatus
 
-#### Inherited from
-
-CharacterBase.netStatus
-
-#### Defined in
-
-Core/index.d.ts:513
-
 ---
 
 ### outOfWaterZ
@@ -2710,14 +1846,6 @@ Core/index.d.ts:513
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.outOfWaterZ
-
-#### Defined in
-
-Gameplay/index.d.ts:1439
 
 • `set` **outOfWaterZ**(`value`): `void`
 
@@ -2734,14 +1862,6 @@ Gameplay/index.d.ts:1439
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.outOfWaterZ
-
-#### Defined in
-
-Gameplay/index.d.ts:1435
 
 ---
 
@@ -2763,14 +1883,6 @@ Gameplay/index.d.ts:1435
 
 父物体
 
-#### Inherited from
-
-CharacterBase.parent
-
-#### Defined in
-
-Core/index.d.ts:462
-
 • `set` **parent**(`newParent`): `void`
 
 **`Description`**
@@ -2791,14 +1903,6 @@ Core/index.d.ts:462
 
 `void`
 
-#### Inherited from
-
-CharacterBase.parent
-
-#### Defined in
-
-Core/index.d.ts:467
-
 ---
 
 ### ragdollEnable
@@ -2812,14 +1916,6 @@ Core/index.d.ts:467
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.ragdollEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1283
 
 • `set` **ragdollEnable**(`value`): `void`
 
@@ -2836,14 +1932,6 @@ Gameplay/index.d.ts:1283
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.ragdollEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:1287
 
 ---
 
@@ -2865,14 +1953,6 @@ Gameplay/index.d.ts:1287
 
 位置坐标
 
-#### Inherited from
-
-CharacterBase.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:308
-
 • `set` **relativeLocation**(`location`): `void`
 
 **`Description`**
@@ -2887,19 +1967,11 @@ Core/index.d.ts:308
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.relativeLocation
-
-#### Defined in
-
-Core/index.d.ts:314
 
 ---
 
@@ -2921,14 +1993,6 @@ Core/index.d.ts:314
 
 旋转角度
 
-#### Inherited from
-
-CharacterBase.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:334
-
 • `set` **relativeRotation**(`rotation`): `void`
 
 **`Description`**
@@ -2943,19 +2007,11 @@ Core/index.d.ts:334
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.relativeRotation
-
-#### Defined in
-
-Core/index.d.ts:340
 
 ---
 
@@ -2977,14 +2033,6 @@ Core/index.d.ts:340
 
 相对缩放
 
-#### Inherited from
-
-CharacterBase.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:360
-
 • `set` **relativeScale**(`scale`): `void`
 
 **`Description`**
@@ -2999,19 +2047,11 @@ Core/index.d.ts:360
 
 | Name    | Type                            | Description |
 | :------ | :------------------------------ | :---------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:缩放  |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.relativeScale
-
-#### Defined in
-
-Core/index.d.ts:366
 
 ---
 
@@ -3033,14 +2073,6 @@ Core/index.d.ts:366
 
 Vector
 
-#### Inherited from
-
-CharacterBase.rightVector
-
-#### Defined in
-
-Core/index.d.ts:423
-
 ---
 
 ### rotateRate
@@ -3058,14 +2090,6 @@ Core/index.d.ts:423
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.rotateRate
-
-#### Defined in
-
-Gameplay/index.d.ts:974
 
 • `set` **rotateRate**(`InRotateRate`): `void`
 
@@ -3087,14 +2111,6 @@ Gameplay/index.d.ts:974
 
 `void`
 
-#### Inherited from
-
-CharacterBase.rotateRate
-
-#### Defined in
-
-Gameplay/index.d.ts:979
-
 ---
 
 ### scale
@@ -3108,14 +2124,6 @@ Gameplay/index.d.ts:979
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.scale
-
-#### Defined in
-
-Gameplay/index.d.ts:1305
 
 • `set` **scale**(`InCharacterScale`): `void`
 
@@ -3133,14 +2141,6 @@ Gameplay/index.d.ts:1305
 
 `void`
 
-#### Inherited from
-
-CharacterBase.scale
-
-#### Defined in
-
-Gameplay/index.d.ts:1309
-
 ---
 
 ### separateBrakingFrictionEnable
@@ -3154,14 +2154,6 @@ Gameplay/index.d.ts:1309
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.separateBrakingFrictionEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:991
 
 • `set` **separateBrakingFrictionEnable**(`used`): `void`
 
@@ -3178,14 +2170,6 @@ Gameplay/index.d.ts:991
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.separateBrakingFrictionEnable
-
-#### Defined in
-
-Gameplay/index.d.ts:995
 
 ---
 
@@ -3207,17 +2191,13 @@ Gameplay/index.d.ts:995
 
 #### Parameters
 
-| Name     | Type      | Description                                 |
-| :------- | :-------- | :------------------------------------------ |
-| `enable` | `boolean` | usage: true 开启角色计算 false 关闭角色计算 |
+| Name     | Type      | Description                          |
+| :------- | :-------- | :----------------------------------- |
+| `enable` | `boolean` | true 开启角色计算 false 关闭角色计算 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:21
 
 ---
 
@@ -3236,14 +2216,6 @@ Gameplay/index.d.ts:21
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.staticStatus
-
-#### Defined in
-
-Core/index.d.ts:446
 
 ---
 
@@ -3265,14 +2237,6 @@ Core/index.d.ts:446
 
 Tag
 
-#### Inherited from
-
-CharacterBase.tag
-
-#### Defined in
-
-Core/index.d.ts:189
-
 • `set` **tag**(`tag`): `void`
 
 **`Description`**
@@ -3287,19 +2251,11 @@ Core/index.d.ts:189
 
 | Name  | Type     | Description |
 | :---- | :------- | :---------- |
-| `tag` | `string` | usage:Tag   |
+| `tag` | `string` | Tag         |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.tag
-
-#### Defined in
-
-Core/index.d.ts:183
 
 ---
 
@@ -3321,14 +2277,6 @@ Core/index.d.ts:183
 
 transform
 
-#### Inherited from
-
-CharacterBase.transform
-
-#### Defined in
-
-Core/index.d.ts:209
-
 • `set` **transform**(`transform`): `void`
 
 **`Description`**
@@ -3341,21 +2289,13 @@ Core/index.d.ts:209
 
 #### Parameters
 
-| Name        | Type                                  | Description              |
-| :---------- | :------------------------------------ | :----------------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:要设置的 transform |
+| Name        | Type                                  | Description        |
+| :---------- | :------------------------------------ | :----------------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的 transform |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.transform
-
-#### Defined in
-
-Core/index.d.ts:215
 
 ---
 
@@ -3377,14 +2317,6 @@ Core/index.d.ts:215
 
 Vector
 
-#### Inherited from
-
-CharacterBase.upVector
-
-#### Defined in
-
-Core/index.d.ts:396
-
 ---
 
 ### useUpdate
@@ -3402,14 +2334,6 @@ Core/index.d.ts:396
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:441
 
 • `set` **useUpdate**(`v`): `void`
 
@@ -3431,14 +2355,6 @@ Core/index.d.ts:441
 
 `void`
 
-#### Inherited from
-
-CharacterBase.useUpdate
-
-#### Defined in
-
-Core/index.d.ts:436
-
 ---
 
 ### usedCapsuleCorrection
@@ -3452,14 +2368,6 @@ Core/index.d.ts:436
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.usedCapsuleCorrection
-
-#### Defined in
-
-Gameplay/index.d.ts:1050
 
 • `set` **usedCapsuleCorrection**(`usedCapsuleCorrection`): `void`
 
@@ -3477,14 +2385,6 @@ Gameplay/index.d.ts:1050
 
 `void`
 
-#### Inherited from
-
-CharacterBase.usedCapsuleCorrection
-
-#### Defined in
-
-Gameplay/index.d.ts:1054
-
 ---
 
 ### velocity
@@ -3498,14 +2398,6 @@ Gameplay/index.d.ts:1054
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.velocity
-
-#### Defined in
-
-Gameplay/index.d.ts:1189
 
 ---
 
@@ -3524,14 +2416,6 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 #### Returns
 
 `boolean`
-
-#### Inherited from
-
-CharacterBase.visible
-
-#### Defined in
-
-Gameplay/index.d.ts:1194
 
 • `set` **visible**(`inIsVisible`): `void`
 
@@ -3553,14 +2437,6 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 `void`
 
-#### Inherited from
-
-CharacterBase.visible
-
-#### Defined in
-
-Gameplay/index.d.ts:1199
-
 ---
 
 ### walkableFloorAngle
@@ -3574,14 +2450,6 @@ Gameplay/index.d.ts:1199
 #### Returns
 
 `number`
-
-#### Inherited from
-
-CharacterBase.walkableFloorAngle
-
-#### Defined in
-
-Gameplay/index.d.ts:965
 
 • `set` **walkableFloorAngle**(`InWalkableFloorAngle`): `void`
 
@@ -3598,14 +2466,6 @@ Gameplay/index.d.ts:965
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.walkableFloorAngle
-
-#### Defined in
-
-Gameplay/index.d.ts:969
 
 ---
 
@@ -3624,14 +2484,6 @@ Gameplay/index.d.ts:969
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:234
 
 • `set` **worldLocation**(`v`): `void`
 
@@ -3653,14 +2505,6 @@ Core/index.d.ts:234
 
 `void`
 
-#### Inherited from
-
-CharacterBase.worldLocation
-
-#### Defined in
-
-Core/index.d.ts:239
-
 ---
 
 ### worldRotation
@@ -3679,14 +2523,6 @@ Core/index.d.ts:239
 
 [`Rotation`](Type.Type.Rotation.md)
 
-#### Inherited from
-
-CharacterBase.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:258
-
 • `set` **worldRotation**(`rotation`): `void`
 
 **`Description`**
@@ -3699,21 +2535,13 @@ Core/index.d.ts:258
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-CharacterBase.worldRotation
-
-#### Defined in
-
-Core/index.d.ts:264
 
 ---
 
@@ -3732,14 +2560,6 @@ Core/index.d.ts:264
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Inherited from
-
-CharacterBase.worldScale
-
-#### Defined in
-
-Core/index.d.ts:283
 
 • `set` **worldScale**(`v`): `void`
 
@@ -3761,14 +2581,6 @@ Core/index.d.ts:283
 
 `void`
 
-#### Inherited from
-
-CharacterBase.worldScale
-
-#### Defined in
-
-Core/index.d.ts:288
-
 ## Methods
 
 ### addDestroyCallback
@@ -3785,21 +2597,13 @@ Core/index.d.ts:288
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[addDestroyCallback](Gameplay.Gameplay.CharacterBase.md#adddestroycallback)
-
-#### Defined in
-
-Core/index.d.ts:627
 
 ---
 
@@ -3821,22 +2625,14 @@ Core/index.d.ts:627
 
 #### Parameters
 
-| Name          | Type                            | Description                                  |
-| :------------ | :------------------------------ | :------------------------------------------- |
-| `Vector`      | [`Vector`](Type.Type.Vector.md) | usage:应用的冲量                             |
-| `ignoreMass?` | `boolean`                       | usage:是否忽略质量对冲量的影响 default:false |
+| Name          | Type                            | Description                            |
+| :------------ | :------------------------------ | :------------------------------------- |
+| `Vector`      | [`Vector`](Type.Type.Vector.md) | 应用的冲量                             |
+| `ignoreMass?` | `boolean`                       | 是否忽略质量对冲量的影响 default:false |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[addImpulse](Gameplay.Gameplay.CharacterBase.md#addimpulse)
-
-#### Defined in
-
-Gameplay/index.d.ts:1279
 
 ---
 
@@ -3858,21 +2654,13 @@ Gameplay/index.d.ts:1279
 
 #### Parameters
 
-| Name        | Type                            | Description      |
-| :---------- | :------------------------------ | :--------------- |
-| `direction` | [`Vector`](Type.Type.Vector.md) | usage:输入的方向 |
+| Name        | Type                            | Description |
+| :---------- | :------------------------------ | :---------- |
+| `direction` | [`Vector`](Type.Type.Vector.md) | 输入的方向  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[addMoveInput](Gameplay.Gameplay.CharacterBase.md#addmoveinput)
-
-#### Defined in
-
-Gameplay/index.d.ts:1271
 
 ---
 
@@ -3894,14 +2682,6 @@ Gameplay/index.d.ts:1271
 
 异步回调
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[appearanceReady](Gameplay.Gameplay.CharacterBase.md#appearanceready)
-
-#### Defined in
-
-Gameplay/index.d.ts:847
-
 ---
 
 ### asyncGetScriptByName
@@ -3920,21 +2700,13 @@ Gameplay/index.d.ts:847
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Promise`<`Script`\>
 
 Script
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[asyncGetScriptByName](Gameplay.Gameplay.CharacterBase.md#asyncgetscriptbyname)
-
-#### Defined in
-
-Core/index.d.ts:574
 
 ---
 
@@ -3952,22 +2724,14 @@ Core/index.d.ts:574
 
 #### Parameters
 
-| Name         | Type                                                 | Description    |
-| :----------- | :--------------------------------------------------- | :------------- |
-| `gameObject` | `GameObject`                                         | usage:物体     |
-| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽类型 |
+| Name         | Type                                                 | Description |
+| :----------- | :--------------------------------------------------- | :---------- |
+| `gameObject` | `GameObject`                                         | 物体        |
+| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[attach](Gameplay.Gameplay.CharacterBase.md#attach)
-
-#### Defined in
-
-Gameplay/index.d.ts:1294
 
 ---
 
@@ -3987,19 +2751,11 @@ Gameplay/index.d.ts:1294
 
 | Name  | Type         | Description |
 | :---- | :----------- | :---------- |
-| `obj` | `GameObject` | usage:物体  |
+| `obj` | `GameObject` | 物体        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[attachToGameObject](Gameplay.Gameplay.CharacterBase.md#attachtogameobject)
-
-#### Defined in
-
-Core/index.d.ts:594
 
 ---
 
@@ -4019,14 +2775,6 @@ Core/index.d.ts:594
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[clearDecorations](Gameplay.Gameplay.CharacterBase.md#cleardecorations)
-
-#### Defined in
-
-Gameplay/index.d.ts:1475
-
 ---
 
 ### clearOneDecoration
@@ -4043,21 +2791,13 @@ Gameplay/index.d.ts:1475
 
 #### Parameters
 
-| Name   | Type     | Description                    |
-| :----- | :------- | :----------------------------- |
-| `guid` | `string` | usage: 实例化后的挂件对象 Guid |
+| Name   | Type     | Description             |
+| :----- | :------- | :---------------------- |
+| `guid` | `string` | 实例化后的挂件对象 Guid |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[clearOneDecoration](Gameplay.Gameplay.CharacterBase.md#clearonedecoration)
-
-#### Defined in
-
-Gameplay/index.d.ts:1488
 
 ---
 
@@ -4075,23 +2815,15 @@ Gameplay/index.d.ts:1488
 
 #### Parameters
 
-| Name            | Type      | Description                 |
-| :-------------- | :-------- | :-------------------------- |
-| `inReplicates?` | `boolean` | usage:是否复制 default:true |
+| Name            | Type      | Description           |
+| :-------------- | :-------- | :-------------------- |
+| `inReplicates?` | `boolean` | 是否复制 default:true |
 
 #### Returns
 
 `GameObject`
 
 克隆的对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[clone](Gameplay.Gameplay.CharacterBase.md#clone)
-
-#### Defined in
-
-Core/index.d.ts:554
 
 ---
 
@@ -4109,21 +2841,13 @@ Core/index.d.ts:554
 
 #### Parameters
 
-| Name       | Type      | Description    |
-| :--------- | :-------- | :------------- |
-| `isCrouch` | `boolean` | usage:是否下蹲 |
+| Name       | Type      | Description |
+| :--------- | :-------- | :---------- |
+| `isCrouch` | `boolean` | 是否下蹲    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[crouch](Gameplay.Gameplay.CharacterBase.md#crouch)
-
-#### Defined in
-
-Gameplay/index.d.ts:1264
 
 ---
 
@@ -4141,21 +2865,13 @@ Gameplay/index.d.ts:1264
 
 #### Parameters
 
-| Name       | Type                              | Description    |
-| :--------- | :-------------------------------- | :------------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | usage:回调事件 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[deleteDestroyCallback](Gameplay.Gameplay.CharacterBase.md#deletedestroycallback)
-
-#### Defined in
-
-Core/index.d.ts:633
 
 ---
 
@@ -4175,14 +2891,6 @@ Core/index.d.ts:633
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[destroy](Gameplay.Gameplay.CharacterBase.md#destroy)
-
-#### Defined in
-
-Core/index.d.ts:150
-
 ---
 
 ### detachFromGameObject
@@ -4200,14 +2908,6 @@ Core/index.d.ts:150
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[detachFromGameObject](Gameplay.Gameplay.CharacterBase.md#detachfromgameobject)
-
-#### Defined in
-
-Gameplay/index.d.ts:945
 
 ---
 
@@ -4229,25 +2929,17 @@ Gameplay/index.d.ts:945
 
 #### Parameters
 
-| Name                      | Type                            | Description                                        |
-| :------------------------ | :------------------------------ | :------------------------------------------------- |
-| `nonColliding?`           | `boolean`                       | usage:表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean`                       | usage:如果为 true，则递归子物体 default:false      |
-| `outer?`                  | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null      |
+| Name                      | Type                            | Description                                  |
+| :------------------------ | :------------------------------ | :------------------------------------------- |
+| `nonColliding?`           | `boolean`                       | 表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean`                       | 如果为 true，则递归子物体 default:false      |
+| `outer?`                  | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null      |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getBoundingBoxSize](Gameplay.Gameplay.CharacterBase.md#getboundingboxsize)
-
-#### Defined in
-
-Core/index.d.ts:609
 
 ---
 
@@ -4265,24 +2957,16 @@ Core/index.d.ts:609
 
 #### Parameters
 
-| Name                      | Type                            | Description                                      |
-| :------------------------ | :------------------------------ | :----------------------------------------------- |
-| `onlyCollidingComponents` | `boolean`                       | usage:是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | usage:传出参数，设置为 GameObject 尺寸的一半。   |
-| `includeFromChildActors?` | `boolean`                       | usage:是否递归包含子物体 default:undefined       |
+| Name                      | Type                            | Description                                |
+| :------------------------ | :------------------------------ | :----------------------------------------- |
+| `onlyCollidingComponents` | `boolean`                       | 是否只包含有碰撞的组件。                   |
+| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 的中心点坐标。 |
+| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 尺寸的一半。   |
+| `includeFromChildActors?` | `boolean`                       | 是否递归包含子物体 default:undefined       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getBounds](Gameplay.Gameplay.CharacterBase.md#getbounds)
-
-#### Defined in
-
-Core/index.d.ts:198
 
 ---
 
@@ -4302,21 +2986,13 @@ Core/index.d.ts:198
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getChildByGuid](Gameplay.Gameplay.CharacterBase.md#getchildbyguid)
-
-#### Defined in
-
-Core/index.d.ts:547
 
 ---
 
@@ -4336,21 +3012,13 @@ Core/index.d.ts:547
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名称  |
+| `name` | `string` | 名称        |
 
 #### Returns
 
 `GameObject`
 
 查找的物体
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getChildByName](Gameplay.Gameplay.CharacterBase.md#getchildbyname)
-
-#### Defined in
-
-Core/index.d.ts:540
 
 ---
 
@@ -4372,14 +3040,6 @@ Core/index.d.ts:540
 
 Array`<GameObject>`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getChildren](Gameplay.Gameplay.CharacterBase.md#getchildren)
-
-#### Defined in
-
-Core/index.d.ts:533
-
 ---
 
 ### getChildrenBoxCenter
@@ -4400,23 +3060,15 @@ Core/index.d.ts:533
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Type.Vector
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getChildrenBoxCenter](Gameplay.Gameplay.CharacterBase.md#getchildrenboxcenter)
-
-#### Defined in
-
-Core/index.d.ts:621
 
 ---
 
@@ -4438,14 +3090,6 @@ Core/index.d.ts:621
 
 碰撞状态
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getCollision](Gameplay.Gameplay.CharacterBase.md#getcollision)
-
-#### Defined in
-
-Core/index.d.ts:484
-
 ---
 
 ### getControlRotator
@@ -4462,23 +3106,15 @@ Core/index.d.ts:484
 
 #### Parameters
 
-| Name   | Type                                | Description                                 |
-| :----- | :---------------------------------- | :------------------------------------------ |
-| `Out?` | [`Rotation`](Type.Type.Rotation.md) | usage:获取控制器旋转 default:出参，可选参数 |
+| Name   | Type                                | Description                           |
+| :----- | :---------------------------------- | :------------------------------------ |
+| `Out?` | [`Rotation`](Type.Type.Rotation.md) | 获取控制器旋转 default:出参，可选参数 |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 控制器的旋转
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getControlRotator](Gameplay.Gameplay.CharacterBase.md#getcontrolrotator)
-
-#### Defined in
-
-Gameplay/index.d.ts:1384
 
 ---
 
@@ -4500,14 +3136,6 @@ Gameplay/index.d.ts:1384
 
 guid 数组
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getDecorations](Gameplay.Gameplay.CharacterBase.md#getdecorations)
-
-#### Defined in
-
-Gameplay/index.d.ts:1494
-
 ---
 
 ### getForwardVector
@@ -4528,23 +3156,15 @@ Gameplay/index.d.ts:1494
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getForwardVector](Gameplay.Gameplay.CharacterBase.md#getforwardvector)
-
-#### Defined in
-
-Core/index.d.ts:417
 
 ---
 
@@ -4566,14 +3186,6 @@ Core/index.d.ts:417
 
 头顶 UIWidget 对象
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getHeadUIWidget](Gameplay.Gameplay.CharacterBase.md#getheaduiwidget)
-
-#### Defined in
-
-Gameplay/index.d.ts:1331
-
 ---
 
 ### getRelativeLocation
@@ -4594,23 +3206,15 @@ Gameplay/index.d.ts:1331
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 位置坐标
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getRelativeLocation](Gameplay.Gameplay.CharacterBase.md#getrelativelocation)
-
-#### Defined in
-
-Core/index.d.ts:322
 
 ---
 
@@ -4632,23 +3236,15 @@ Core/index.d.ts:322
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 旋转角度
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getRelativeRotation](Gameplay.Gameplay.CharacterBase.md#getrelativerotation)
-
-#### Defined in
-
-Core/index.d.ts:348
 
 ---
 
@@ -4670,23 +3266,15 @@ Core/index.d.ts:348
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 相对缩放
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getRelativeScale](Gameplay.Gameplay.CharacterBase.md#getrelativescale)
-
-#### Defined in
-
-Core/index.d.ts:374
 
 ---
 
@@ -4708,23 +3296,15 @@ Core/index.d.ts:374
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getRightVector](Gameplay.Gameplay.CharacterBase.md#getrightvector)
-
-#### Defined in
-
-Core/index.d.ts:431
 
 ---
 
@@ -4744,21 +3324,13 @@ Core/index.d.ts:431
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `guid` | `string` | usage:guid  |
+| `guid` | `string` | guid        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getScriptByGuid](Gameplay.Gameplay.CharacterBase.md#getscriptbyguid)
-
-#### Defined in
-
-Core/index.d.ts:581
 
 ---
 
@@ -4778,21 +3350,13 @@ Core/index.d.ts:581
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `Script`
 
 Script
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getScriptByName](Gameplay.Gameplay.CharacterBase.md#getscriptbyname)
-
-#### Defined in
-
-Core/index.d.ts:567
 
 ---
 
@@ -4814,14 +3378,6 @@ Core/index.d.ts:567
 
 Array`<Script>`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getScripts](Gameplay.Gameplay.CharacterBase.md#getscripts)
-
-#### Defined in
-
-Core/index.d.ts:560
-
 ---
 
 ### getSlotName
@@ -4838,23 +3394,15 @@ Core/index.d.ts:560
 
 #### Parameters
 
-| Name       | Type                                                 | Description    |
-| :--------- | :--------------------------------------------------- | :------------- |
-| `slotType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽类型 |
+| Name       | Type                                                 | Description |
+| :--------- | :--------------------------------------------------- | :---------- |
+| `slotType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型    |
 
 #### Returns
 
 `string`
 
 插槽名称(string)
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getSlotName](Gameplay.Gameplay.CharacterBase.md#getslotname)
-
-#### Defined in
-
-Gameplay/index.d.ts:1301
 
 ---
 
@@ -4876,14 +3424,6 @@ Gameplay/index.d.ts:1301
 
 资源的 GUID
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getSourceAssetGuid](Gameplay.Gameplay.CharacterBase.md#getsourceassetguid)
-
-#### Defined in
-
-Core/index.d.ts:639
-
 ---
 
 ### getTransform
@@ -4904,23 +3444,15 @@ Core/index.d.ts:639
 
 #### Parameters
 
-| Name     | Type                                  | Description                                      |
-| :------- | :------------------------------------ | :----------------------------------------------- |
-| `outer?` | [`Transform`](Type.Type.Transform.md) | usage:接收转换数据的 Transform 对象 default:null |
+| Name     | Type                                  | Description                                |
+| :------- | :------------------------------------ | :----------------------------------------- |
+| `outer?` | [`Transform`](Type.Type.Transform.md) | 接收转换数据的 Transform 对象 default:null |
 
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
 
 Transform
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getTransform](Gameplay.Gameplay.CharacterBase.md#gettransform)
-
-#### Defined in
-
-Core/index.d.ts:223
 
 ---
 
@@ -4938,23 +3470,15 @@ Core/index.d.ts:223
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 Vector
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getUpVector](Gameplay.Gameplay.CharacterBase.md#getupvector)
-
-#### Defined in
-
-Core/index.d.ts:403
 
 ---
 
@@ -4976,14 +3500,6 @@ Core/index.d.ts:403
 
 bool
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getVisibility](Gameplay.Gameplay.CharacterBase.md#getvisibility)
-
-#### Defined in
-
-Gameplay/index.d.ts:1215
-
 ---
 
 ### getWorldLocation
@@ -5004,23 +3520,15 @@ Gameplay/index.d.ts:1215
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界位置坐标
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getWorldLocation](Gameplay.Gameplay.CharacterBase.md#getworldlocation)
-
-#### Defined in
-
-Core/index.d.ts:247
 
 ---
 
@@ -5042,23 +3550,15 @@ Core/index.d.ts:247
 
 #### Parameters
 
-| Name     | Type                                | Description                                     |
-| :------- | :---------------------------------- | :---------------------------------------------- |
-| `outer?` | [`Rotation`](Type.Type.Rotation.md) | usage:接收转换数据的 Rotation 对象 default:null |
+| Name     | Type                                | Description                               |
+| :------- | :---------------------------------- | :---------------------------------------- |
+| `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
 
 [`Rotation`](Type.Type.Rotation.md)
 
 世界旋转
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getWorldRotation](Gameplay.Gameplay.CharacterBase.md#getworldrotation)
-
-#### Defined in
-
-Core/index.d.ts:272
 
 ---
 
@@ -5080,23 +3580,15 @@ Core/index.d.ts:272
 
 #### Parameters
 
-| Name     | Type                            | Description                                   |
-| :------- | :------------------------------ | :-------------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收转换数据的 Vector 对象 default:null |
+| Name     | Type                            | Description                             |
+| :------- | :------------------------------ | :-------------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 世界缩放
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getWorldScale](Gameplay.Gameplay.CharacterBase.md#getworldscale)
-
-#### Defined in
-
-Core/index.d.ts:296
 
 ---
 
@@ -5118,14 +3610,6 @@ Core/index.d.ts:296
 
 是否正在播放动画
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[isPlayingAnimation](Gameplay.Gameplay.CharacterBase.md#isplayinganimation)
-
-#### Defined in
-
-Gameplay/index.d.ts:1516
-
 ---
 
 ### isRunningClient
@@ -5146,14 +3630,6 @@ Gameplay/index.d.ts:1516
 
 true 为客户端
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[isRunningClient](Gameplay.Gameplay.CharacterBase.md#isrunningclient)
-
-#### Defined in
-
-Core/index.d.ts:50
-
 ---
 
 ### jump
@@ -5172,14 +3648,6 @@ Core/index.d.ts:50
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[jump](Gameplay.Gameplay.CharacterBase.md#jump)
-
-#### Defined in
-
-Gameplay/index.d.ts:1258
-
 ---
 
 ### loadAnimation
@@ -5196,24 +3664,16 @@ Gameplay/index.d.ts:1258
 
 #### Parameters
 
-| Name    | Type      | Description                               |
-| :------ | :-------- | :---------------------------------------- |
-| `guid`  | `string`  | usage:动画 GUID                           |
-| `sync?` | `boolean` | usage:Animation 对象是否同步 default:true |
+| Name    | Type      | Description                         |
+| :------ | :-------- | :---------------------------------- |
+| `guid`  | `string`  | 动画 GUID                           |
+| `sync?` | `boolean` | Animation 对象是否同步 default:true |
 
 #### Returns
 
 [`Animation`](Gameplay.Gameplay.Animation.md)
 
 Animation 对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[loadAnimation](Gameplay.Gameplay.CharacterBase.md#loadanimation)
-
-#### Defined in
-
-Gameplay/index.d.ts:1546
 
 ---
 
@@ -5231,22 +3691,14 @@ Gameplay/index.d.ts:1546
 
 #### Parameters
 
-| Name               | Type                                                               | Description            |
-| :----------------- | :----------------------------------------------------------------- | :--------------------- |
-| `decorationString` | `string`                                                           | usage: 一个挂件数据    |
-| `callback`         | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) | usage: 挂件对象的 Guid |
+| Name               | Type                                                               | Description     |
+| :----------------- | :----------------------------------------------------------------- | :-------------- |
+| `decorationString` | `string`                                                           | 一个挂件数据    |
+| `callback`         | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) | 挂件对象的 Guid |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[loadDecoration](Gameplay.Gameplay.CharacterBase.md#loaddecoration)
-
-#### Defined in
-
-Gameplay/index.d.ts:1482
 
 ---
 
@@ -5264,21 +3716,13 @@ Gameplay/index.d.ts:1482
 
 #### Parameters
 
-| Name   | Type     | Description     |
-| :----- | :------- | :-------------- |
-| `guid` | `string` | usage:Slot Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | Slot Guid   |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[loadSlotAndEditorDataByGuid](Gameplay.Gameplay.CharacterBase.md#loadslotandeditordatabyguid)
-
-#### Defined in
-
-Gameplay/index.d.ts:1417
 
 ---
 
@@ -5296,21 +3740,13 @@ Gameplay/index.d.ts:1417
 
 #### Parameters
 
-| Name           | Type     | Description    |
-| :------------- | :------- | :------------- |
-| `relativePath` | `string` | usage:相对路径 |
+| Name           | Type     | Description |
+| :------------- | :------- | :---------- |
+| `relativePath` | `string` | 相对路径    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[loadSlotAndEditorDataByPath](Gameplay.Gameplay.CharacterBase.md#loadslotandeditordatabypath)
-
-#### Defined in
-
-Gameplay/index.d.ts:1411
 
 ---
 
@@ -5334,24 +3770,16 @@ guid 参数传入预制姿态资源 GUID 时, 会直接创建对应姿态;
 
 #### Parameters
 
-| Name    | Type      | Description                                      |
-| :------ | :-------- | :----------------------------------------------- |
-| `guid`  | `string`  | usage: 预制姿态资源 guid 或动画资源 guid         |
-| `sync?` | `boolean` | usage: 对姿态对象的操作是否自动同步 default:true |
+| Name    | Type      | Description                               |
+| :------ | :-------- | :---------------------------------------- |
+| `guid`  | `string`  | 预制姿态资源 guid 或动画资源 guid         |
+| `sync?` | `boolean` | 对姿态对象的操作是否自动同步 default:true |
 
 #### Returns
 
 [`SubStance`](Gameplay.Gameplay.SubStance.md)
 
 二级姿态对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[loadStance](Gameplay.Gameplay.CharacterBase.md#loadstance)
-
-#### Defined in
-
-Gameplay/index.d.ts:1174
 
 ---
 
@@ -5369,21 +3797,13 @@ Gameplay/index.d.ts:1174
 
 #### Parameters
 
-| Name          | Type                            | Description  |
-| :------------ | :------------------------------ | :----------- |
-| `TargetPoint` | [`Vector`](Type.Type.Vector.md) | usage:目标点 |
+| Name          | Type                            | Description |
+| :------------ | :------------------------------ | :---------- |
+| `TargetPoint` | [`Vector`](Type.Type.Vector.md) | 目标点      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[lookAt](Gameplay.Gameplay.CharacterBase.md#lookat)
-
-#### Defined in
-
-Gameplay/index.d.ts:1377
 
 ---
 
@@ -5403,14 +3823,6 @@ onDestroy 生命周期函数
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onDestroy](Gameplay.Gameplay.CharacterBase.md#ondestroy)
-
-#### Defined in
-
-Gameplay/index.d.ts:858
-
 ---
 
 ### onStart
@@ -5429,14 +3841,6 @@ Gameplay/index.d.ts:858
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onStart](Gameplay.Gameplay.CharacterBase.md#onstart)
-
-#### Defined in
-
-Core/index.d.ts:13
-
 ---
 
 ### onUpdate
@@ -5453,21 +3857,13 @@ onUpdate 生命周期函数
 
 #### Parameters
 
-| Name | Type     | Description        |
-| :--- | :------- | :----------------- |
-| `dt` | `number` | usage:函数调用间隔 |
+| Name | Type     | Description  |
+| :--- | :------- | :----------- |
+| `dt` | `number` | 函数调用间隔 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[onUpdate](Gameplay.Gameplay.CharacterBase.md#onupdate)
-
-#### Defined in
-
-Gameplay/index.d.ts:853
 
 ---
 
@@ -5485,25 +3881,17 @@ Gameplay/index.d.ts:853
 
 #### Parameters
 
-| Name         | Type     | Description                                                          |
-| :----------- | :------- | :------------------------------------------------------------------- |
-| `guid`       | `string` | usage:动画 GUID                                                      |
-| `loopCount?` | `number` | usage:循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
-| `rate?`      | `number` | usage:播放速率，1 表示正常速率 default:1                             |
+| Name         | Type     | Description                                                    |
+| :----------- | :------- | :------------------------------------------------------------- |
+| `guid`       | `string` | 动画 GUID                                                      |
+| `loopCount?` | `number` | 循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
+| `rate?`      | `number` | 播放速率，1 表示正常速率 default:1                             |
 
 #### Returns
 
 [`Animation`](Gameplay.Gameplay.Animation.md)
 
 Animation 对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[playAnimation](Gameplay.Gameplay.CharacterBase.md#playanimation)
-
-#### Defined in
-
-Gameplay/index.d.ts:1525
 
 ---
 
@@ -5525,23 +3913,15 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 #### Parameters
 
-| Name               | Type     | Description                                                          |
-| :----------------- | :------- | :------------------------------------------------------------------- |
-| `AnimationGuid`    | `string` | usage:动画 GUID                                                      |
-| `AnimationLength?` | `number` | usage:播放时长 default:0                                             |
-| `LoopCount?`       | `number` | usage:循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
+| Name               | Type     | Description                                                    |
+| :----------------- | :------- | :------------------------------------------------------------- |
+| `AnimationGuid`    | `string` | 动画 GUID                                                      |
+| `AnimationLength?` | `number` | 播放时长 default:0                                             |
+| `LoopCount?`       | `number` | 循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[playAnimationLocally](Gameplay.Gameplay.CharacterBase.md#playanimationlocally)
-
-#### Defined in
-
-Gameplay/index.d.ts:1534
 
 ---
 
@@ -5562,14 +3942,6 @@ GameObject 准备好后返回
 `Promise`<[`AICharacter`](Gameplay.Gameplay.AICharacter.md)\>
 
 准备好的对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[ready](Gameplay.Gameplay.CharacterBase.md#ready)
-
-#### Defined in
-
-Core/index.d.ts:126
 
 ---
 
@@ -5593,23 +3965,15 @@ Core/index.d.ts:126
 
 #### Parameters
 
-| Name  | Type                                                               | Description              |
-| :---- | :----------------------------------------------------------------- | :----------------------- |
-| `clz` | [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\> | usage:外观修改接口类类型 |
+| Name  | Type                                                               | Description        |
+| :---- | :----------------------------------------------------------------- | :----------------- |
+| `clz` | [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\> | 外观修改接口类类型 |
 
 #### Returns
 
 `T`
 
 外观修改对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setAppearance](Gameplay.Gameplay.CharacterBase.md#setappearance)
-
-#### Defined in
-
-Gameplay/index.d.ts:1470
 
 ---
 
@@ -5631,22 +3995,14 @@ Gameplay/index.d.ts:1470
 
 #### Parameters
 
-| Name                   | Type                                                                                                                   | Description                                                      |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | usage: 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean`                                                                                                              | usage: 是否传递给子节点 default: false                           |
+| Name                   | Type                                                                                                                   | Description                                               |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean`                                                                                                              | 是否传递给子节点 default: false                           |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setCollision](Gameplay.Gameplay.CharacterBase.md#setcollision)
-
-#### Defined in
-
-Core/index.d.ts:475
 
 ---
 
@@ -5664,22 +4020,14 @@ Core/index.d.ts:475
 
 #### Parameters
 
-| Name              | Type                                                               | Description          |
-| :---------------- | :----------------------------------------------------------------- | :------------------- |
-| `ShapeType`       | [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) | usage:启用的碰撞形状 |
-| `CollisionExtent` | [`Vector`](Type.Type.Vector.md)                                    | usage:启用的碰撞形状 |
+| Name              | Type                                                               | Description    |
+| :---------------- | :----------------------------------------------------------------- | :------------- |
+| `ShapeType`       | [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) | 启用的碰撞形状 |
+| `CollisionExtent` | [`Vector`](Type.Type.Vector.md)                                    | 启用的碰撞形状 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setCollisionShapeAndExtent](Gameplay.Gameplay.CharacterBase.md#setcollisionshapeandextent)
-
-#### Defined in
-
-Gameplay/index.d.ts:1391
 
 ---
 
@@ -5697,22 +4045,14 @@ Gameplay/index.d.ts:1391
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                        |
-| :--------------------- | :------------------------------------------------------- | :--------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态                         |
-| `propagateToChildren?` | `boolean`                                                | usage: 是否设置子物体 default:true |
+| Name                   | Type                                                     | Description                 |
+| :--------------------- | :------------------------------------------------------- | :-------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                        |
+| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:true |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setLocallyVisibility](Gameplay.Gameplay.CharacterBase.md#setlocallyvisibility)
-
-#### Defined in
-
-Gameplay/index.d.ts:1232
 
 ---
 
@@ -5730,22 +4070,14 @@ Gameplay/index.d.ts:1232
 
 #### Parameters
 
-| Name       | Type                                | Description    |
-| :--------- | :---------------------------------- | :------------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | usage:世界位置 |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:世界旋转 |
+| Name       | Type                                | Description |
+| :--------- | :---------------------------------- | :---------- |
+| `location` | [`Vector`](Type.Type.Vector.md)     | 世界位置    |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setLocationAndRotation](Gameplay.Gameplay.CharacterBase.md#setlocationandrotation)
-
-#### Defined in
-
-Core/index.d.ts:387
 
 ---
 
@@ -5765,19 +4097,11 @@ Core/index.d.ts:387
 
 | Name       | Type                            | Description |
 | :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | usage:位置  |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setRelativeLocation](Gameplay.Gameplay.CharacterBase.md#setrelativelocation)
-
-#### Defined in
-
-Core/index.d.ts:328
 
 ---
 
@@ -5797,19 +4121,11 @@ Core/index.d.ts:328
 
 | Name       | Type                                | Description |
 | :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:旋转  |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setRelativeRotation](Gameplay.Gameplay.CharacterBase.md#setrelativerotation)
-
-#### Defined in
-
-Core/index.d.ts:354
 
 ---
 
@@ -5827,21 +4143,13 @@ Core/index.d.ts:354
 
 #### Parameters
 
-| Name    | Type                            | Description            |
-| :------ | :------------------------------ | :--------------------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | usage:要设置的相对缩放 |
+| Name    | Type                            | Description      |
+| :------ | :------------------------------ | :--------------- |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 要设置的相对缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setRelativeScale](Gameplay.Gameplay.CharacterBase.md#setrelativescale)
-
-#### Defined in
-
-Core/index.d.ts:380
 
 ---
 
@@ -5863,17 +4171,13 @@ Core/index.d.ts:380
 
 #### Parameters
 
-| Name    | Type      | Description                                         |
-| :------ | :-------- | :-------------------------------------------------- |
-| `value` | `boolean` | usage: true 开启角色移动计算 false 关闭角色移动计算 |
+| Name    | Type      | Description                                  |
+| :------ | :-------- | :------------------------------------------- |
+| `value` | `boolean` | true 开启角色移动计算 false 关闭角色移动计算 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:14
 
 ---
 
@@ -5891,21 +4195,13 @@ Gameplay/index.d.ts:14
 
 #### Parameters
 
-| Name        | Type                                  | Description     |
-| :---------- | :------------------------------------ | :-------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | usage:transform |
+| Name        | Type                                  | Description |
+| :---------- | :------------------------------------ | :---------- |
+| `transform` | [`Transform`](Type.Type.Transform.md) | transform   |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setTransform](Gameplay.Gameplay.CharacterBase.md#settransform)
-
-#### Defined in
-
-Core/index.d.ts:229
 
 ---
 
@@ -5923,22 +4219,14 @@ Core/index.d.ts:229
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                        |
-| :--------------------- | :------------------------------------------------------- | :--------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | usage:状态                         |
-| `propagateToChildren?` | `boolean`                                                | usage: 是否设置子物体 default:true |
+| Name                   | Type                                                     | Description                 |
+| :--------------------- | :------------------------------------------------------- | :-------------------------- |
+| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                        |
+| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:true |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setVisibility](Gameplay.Gameplay.CharacterBase.md#setvisibility)
-
-#### Defined in
-
-Gameplay/index.d.ts:1222
 
 ---
 
@@ -5956,21 +4244,13 @@ Gameplay/index.d.ts:1222
 
 #### Parameters
 
-| Name | Type                            | Description             |
-| :--- | :------------------------------ | :---------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage: 要设置的世界坐标 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界坐标 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setWorldLocation](Gameplay.Gameplay.CharacterBase.md#setworldlocation)
-
-#### Defined in
-
-Core/index.d.ts:253
 
 ---
 
@@ -5988,21 +4268,13 @@ Core/index.d.ts:253
 
 #### Parameters
 
-| Name       | Type                                | Description            |
-| :--------- | :---------------------------------- | :--------------------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | usage:要设置的世界旋转 |
+| Name       | Type                                | Description      |
+| :--------- | :---------------------------------- | :--------------- |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setWorldRotation](Gameplay.Gameplay.CharacterBase.md#setworldrotation)
-
-#### Defined in
-
-Core/index.d.ts:278
 
 ---
 
@@ -6020,21 +4292,13 @@ Core/index.d.ts:278
 
 #### Parameters
 
-| Name | Type                            | Description            |
-| :--- | :------------------------------ | :--------------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage:要设置的世界缩放 |
+| Name | Type                            | Description      |
+| :--- | :------------------------------ | :--------------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[setWorldScale](Gameplay.Gameplay.CharacterBase.md#setworldscale)
-
-#### Defined in
-
-Core/index.d.ts:302
 
 ---
 
@@ -6056,21 +4320,13 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name              | Type     | Description                 |
-| :---------------- | :------- | :-------------------------- |
-| `InAnimationGuid` | `string` | usage:停止播放的动画的 Guid |
+| Name              | Type     | Description           |
+| :---------------- | :------- | :-------------------- |
+| `InAnimationGuid` | `string` | 停止播放的动画的 Guid |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[stopAnimation](Gameplay.Gameplay.CharacterBase.md#stopanimation)
-
-#### Defined in
-
-Gameplay/index.d.ts:1553
 
 ---
 
@@ -6092,21 +4348,13 @@ Gameplay/index.d.ts:1553
 
 #### Parameters
 
-| Name    | Type      | Description                      |
-| :------ | :-------- | :------------------------------- |
-| `sync?` | `boolean` | usage: 是否自动同步 default:true |
+| Name    | Type      | Description               |
+| :------ | :-------- | :------------------------ |
+| `sync?` | `boolean` | 是否自动同步 default:true |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[stopStance](Gameplay.Gameplay.CharacterBase.md#stopstance)
-
-#### Defined in
-
-Gameplay/index.d.ts:1181
 
 ---
 
@@ -6124,21 +4372,13 @@ Gameplay/index.d.ts:1181
 
 #### Parameters
 
-| Name    | Type     | Description                                       |
-| :------ | :------- | :------------------------------------------------ |
-| `speed` | `number` | usage:下潜速度不能超过 MaxSwimSpeed(游泳最大速度) |
+| Name    | Type     | Description                                 |
+| :------ | :------- | :------------------------------------------ |
+| `speed` | `number` | 下潜速度不能超过 MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[swimmingDown](Gameplay.Gameplay.CharacterBase.md#swimmingdown)
-
-#### Defined in
-
-Gameplay/index.d.ts:1459
 
 ---
 
@@ -6156,21 +4396,13 @@ Gameplay/index.d.ts:1459
 
 #### Parameters
 
-| Name    | Type     | Description                                       |
-| :------ | :------- | :------------------------------------------------ |
-| `speed` | `number` | usage:上浮速度不能超过 MaxSwimSpeed(游泳最大速度) |
+| Name    | Type     | Description                                 |
+| :------ | :------- | :------------------------------------------ |
+| `speed` | `number` | 上浮速度不能超过 MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[swimmingUp](Gameplay.Gameplay.CharacterBase.md#swimmingup)
-
-#### Defined in
-
-Gameplay/index.d.ts:1453
 
 ---
 
@@ -6190,14 +4422,6 @@ Gameplay/index.d.ts:1453
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[switchToFlying](Gameplay.Gameplay.CharacterBase.md#switchtoflying)
-
-#### Defined in
-
-Gameplay/index.d.ts:1240
-
 ---
 
 ### switchToWalking
@@ -6216,14 +4440,6 @@ Gameplay/index.d.ts:1240
 
 `void`
 
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[switchToWalking](Gameplay.Gameplay.CharacterBase.md#switchtowalking)
-
-#### Defined in
-
-Gameplay/index.d.ts:1245
-
 ---
 
 ### asyncFind
@@ -6241,23 +4457,15 @@ Gameplay/index.d.ts:1245
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 guid |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 Guid 对应的物体
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[asyncFind](Gameplay.Gameplay.CharacterBase.md#asyncfind)
-
-#### Defined in
-
-Core/index.d.ts:165
 
 ---
 
@@ -6275,24 +4483,16 @@ Core/index.d.ts:165
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
 构造的 GameObject
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[asyncSpawnGameObject](Gameplay.Gameplay.CharacterBase.md#asyncspawngameobject)
-
-#### Defined in
-
-Core/index.d.ts:142
 
 ---
 
@@ -6310,23 +4510,15 @@ Core/index.d.ts:142
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | usage:物体的 Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | 物体的 Guid |
 
 #### Returns
 
 `GameObject`
 
 Guid 对应的物体
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[find](Gameplay.Gameplay.CharacterBase.md#find)
-
-#### Defined in
-
-Core/index.d.ts:157
 
 ---
 
@@ -6344,23 +4536,15 @@ Core/index.d.ts:157
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `InTag` | `string` | usage:自定义 Tag |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `InTag` | `string` | 自定义 Tag  |
 
 #### Returns
 
 `GameObject`[]
 
 Array`<GameObject>`
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[findGameObjectByTag](Gameplay.Gameplay.CharacterBase.md#findgameobjectbytag)
-
-#### Defined in
-
-Core/index.d.ts:588
 
 ---
 
@@ -6378,23 +4562,15 @@ Core/index.d.ts:588
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getGameObjectByName](Gameplay.Gameplay.CharacterBase.md#getgameobjectbyname)
-
-#### Defined in
-
-Core/index.d.ts:527
 
 ---
 
@@ -6412,23 +4588,15 @@ Core/index.d.ts:527
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
-| `name` | `string` | usage:物体名字 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `name` | `string` | 物体名字    |
 
 #### Returns
 
 `GameObject`[]
 
 返回所有查找到的对象
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[getGameObjectsByName](Gameplay.Gameplay.CharacterBase.md#getgameobjectsbyname)
-
-#### Defined in
-
-Core/index.d.ts:520
 
 ---
 
@@ -6446,21 +4614,13 @@ Core/index.d.ts:520
 
 #### Parameters
 
-| Name            | Type      | Description                           |
-| :-------------- | :-------- | :------------------------------------ |
-| `assetId`       | `string`  | usage:资源的 GUID                     |
-| `inReplicates?` | `boolean` | usage:是否同步 default:默认服务端同步 |
+| Name            | Type      | Description                     |
+| :-------------- | :-------- | :------------------------------ |
+| `assetId`       | `string`  | 资源的 GUID                     |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `GameObject`
 
 构造的 GameObject
-
-#### Inherited from
-
-[CharacterBase](Gameplay.Gameplay.CharacterBase.md).[spawnGameObject](Gameplay.Gameplay.CharacterBase.md#spawngameobject)
-
-#### Defined in
-
-Core/index.d.ts:134

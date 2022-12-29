@@ -1,36 +1,16 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](../modules/Util.md) / [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Sequence
+[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Sequence
 
-# Class: Sequence
-
-[Util](../modules/Util.Util.md).[TweenUtil](../modules/Util.Util.TweenUtil.md).Sequence
-
-**`Author`**
-
-huipeng.jia
+# Sequence <Badge type="tip" text="Class" />
 
 **`Description`**
 
 序列工具类，主要用于获取连续的 ID
 
-**`Network Status`**
-
-usage: 双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Util.Util.TweenUtil.Sequence.md#constructor)
-
-### Methods
-
-- [nextID](Util.Util.TweenUtil.Sequence.md#nextid)
-
-## Constructors
-
-### constructor
-
-• **new Sequence**()
+| Methods                                                                             |
+| :---------------------------------------------------------------------------------- |
+| **[nextID](Util.Util.TweenUtil.Sequence.md#nextid)**(): `number` <br> 获取下一个 ID |
 
 ## Methods
 
@@ -51,7 +31,3 @@ usage: 双端
 `number`
 
 下一个 ID
-
-#### Defined in
-
-Util/index.d.ts:848

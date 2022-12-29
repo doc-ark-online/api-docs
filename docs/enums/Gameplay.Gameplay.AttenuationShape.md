@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationShape
+[Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationShape
 
-# Enumeration: AttenuationShape
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AttenuationShape
+# AttenuationShape <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Box](Gameplay.Gameplay.AttenuationShape.md#box)
-- [Capsule](Gameplay.Gameplay.AttenuationShape.md#capsule)
-- [Sphere](Gameplay.Gameplay.AttenuationShape.md#sphere)
+| Enumeration Members                                                            |
+| :----------------------------------------------------------------------------- |
+| **[Box](Gameplay.Gameplay.AttenuationShape.md#box)** = `2` <br> 盒体           |
+| **[Capsule](Gameplay.Gameplay.AttenuationShape.md#capsule)** = `1` <br> 胶囊体 |
+| **[Sphere](Gameplay.Gameplay.AttenuationShape.md#sphere)** = `0` <br> 球体     |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 盒体
 
-#### Defined in
-
-Gameplay/index.d.ts:9910
-
 ---
 
 ### Capsule
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:9910
 
 胶囊体
 
-#### Defined in
-
-Gameplay/index.d.ts:9908
-
 ---
 
 ### Sphere
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:9908
 • **Sphere** = `0`
 
 球体
-
-#### Defined in
-
-Gameplay/index.d.ts:9906

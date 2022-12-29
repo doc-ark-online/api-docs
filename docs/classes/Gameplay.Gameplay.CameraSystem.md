@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CameraSystem
+[Gameplay](../modules/Gameplay.Gameplay.md) / CameraSystem
 
-# Class: CameraSystem
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CameraSystem
-
-**`Author`**
-
-廖云浩
+# CameraSystem <Badge type="tip" text="Class" />
 
 **`Description`**
 
 摄像机系统
-
-**`Network Status`**
-
-usage:客户端
 
 **`Precautions`**
 
@@ -22,81 +12,71 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                        |
+| :---------------------------------------------------------------------------------------------------------------- |
+| **[enableFadeEffect](Gameplay.Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 设置是否开启透明效果   |
+| **[occludeCameraActor](Gameplay.Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 摄像机与角色之间的物体 |
 
-- [constructor](Gameplay.Gameplay.CameraSystem.md#constructor)
+| Accessors                                                                                                                                                                                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| **[cameraCollisionEnable](Gameplay.Gameplay.CameraSystem.md#cameracollisionenable)**(): `boolean` <br> 获取是否开启摄像机碰撞                                                                                                                                               |
+| **[cameraDownLimitAngle](Gameplay.Gameplay.CameraSystem.md#cameradownlimitangle)**(): `number` <br> 获取摄像机向下角度限制                                                                                                                                                  |
+| **[cameraFOV](Gameplay.Gameplay.CameraSystem.md#camerafov)**(): `number` <br> 获取当前摄像机 FOV                                                                                                                                                                            |
+| **[cameraFocusEnable](Gameplay.Gameplay.CameraSystem.md#camerafocusenable)**(): `boolean` <br> 获取是否开启摄像机聚焦                                                                                                                                                       |
+| **[cameraLocationLagEnable](Gameplay.Gameplay.CameraSystem.md#cameralocationlagenable)**(): `boolean` <br> 获取当前是否开启摄像机位置延迟                                                                                                                                   |
+| **[cameraLocationLagSpeed](Gameplay.Gameplay.CameraSystem.md#cameralocationlagspeed)**(): `number` <br> 获取当前摄像机位置延迟速度                                                                                                                                          |
+| **[cameraLocationMode](Gameplay.Gameplay.CameraSystem.md#cameralocationmode)**(): [`CameraLocationMode`](../enums/Gameplay.Gameplay.CameraLocationMode.md) <br> 获取摄像机位置模式                                                                                          |
+| **[cameraProjectionMode](Gameplay.Gameplay.CameraSystem.md#cameraprojectionmode)**(): [`CameraProjectionMode`](../enums/Gameplay.Gameplay.CameraProjectionMode.md) <br> 获取当前摄像机投影模式                                                                              |
+| **[cameraRelativeTransform](Gameplay.Gameplay.CameraSystem.md#camerarelativetransform)**(): [`Transform`](Type.Type.Transform.md) <br> 获取当前摄像机相对 Transform                                                                                                         |
+| **[cameraRotationLagEnable](Gameplay.Gameplay.CameraSystem.md#camerarotationlagenable)**(): `boolean` <br> 获取当前是否开启摄像机旋转延迟                                                                                                                                   |
+| **[cameraRotationLagSpeed](Gameplay.Gameplay.CameraSystem.md#camerarotationlagspeed)**(): `number` <br> 获取当前摄像机旋转延迟速度                                                                                                                                          |
+| **[cameraRotationMode](Gameplay.Gameplay.CameraSystem.md#camerarotationmode)**(): [`CameraRotationMode`](../enums/Gameplay.Gameplay.CameraRotationMode.md) <br> 获取摄像机旋转模式                                                                                          |
+| **[cameraSystemRelativeTransform](Gameplay.Gameplay.CameraSystem.md#camerasystemrelativetransform)**(): [`Transform`](Type.Type.Transform.md) <br> 获取当前摄像机系统相对 Transform,即弹簧臂的相对 transform，cameraSystemRelativeTransform.location 是弹簧臂挂点的相对位置 |
+| **[cameraSystemWorldTransform](Gameplay.Gameplay.CameraSystem.md#camerasystemworldtransform)**(): [`Transform`](Type.Type.Transform.md) <br> 获取当前摄像机系统世界 Transform,即弹簧臂的世界 transform                                                                      |
+| **[cameraUpLimitAngle](Gameplay.Gameplay.CameraSystem.md#camerauplimitangle)**(): `number` <br> 获取摄像机向上角度限制                                                                                                                                                      |
+| **[cameraWorldTransform](Gameplay.Gameplay.CameraSystem.md#cameraworldtransform)**(): [`Transform`](Type.Type.Transform.md) <br> 获取当前摄像机世界 Transform                                                                                                               |
+| **[enableMovementCollisionDetection](Gameplay.Gameplay.CameraSystem.md#enablemovementcollisiondetection)**(): `boolean` <br> 获取是否开启运动碰撞检测,启用后大于最小增量的位置改变会使摄像机忽视碰撞,默认启用                                                               |
+| **[fadeEffectValue](Gameplay.Gameplay.CameraSystem.md#fadeeffectvalue)**(): `number` <br> 获取透明效果的透明度                                                                                                                                                              |
+| **[fixedCameraZAxis](Gameplay.Gameplay.CameraSystem.md#fixedcamerazaxis)**(): `boolean` <br> 获取是否固定摄像机 Z 轴                                                                                                                                                        |
+| **[followTargetEnable](Gameplay.Gameplay.CameraSystem.md#followtargetenable)**(): `boolean` <br> 获取是否开启跟随目标功能                                                                                                                                                   |
+| **[followTargetInterpSpeed](Gameplay.Gameplay.CameraSystem.md#followtargetinterpspeed)**(): `number` <br> 获取跟随目标时的插值速度                                                                                                                                          |
+| **[lockTargetOffset](Gameplay.Gameplay.CameraSystem.md#locktargetoffset)**(): [`Vector`](Type.Type.Vector.md) <br> 获取锁定目标的偏移                                                                                                                                       |
+| **[movementCollisionDuration](Gameplay.Gameplay.CameraSystem.md#movementcollisionduration)**(): `number` <br> 获取停止运动后运动碰撞的持续时间                                                                                                                              |
+| **[movementCollisionMinLocationDelta](Gameplay.Gameplay.CameraSystem.md#movementcollisionminlocationdelta)**(): `number` <br> 获取启用运动碰撞的最小位置增量                                                                                                                |
+| **[occlusionDetectionEnable](Gameplay.Gameplay.CameraSystem.md#occlusiondetectionenable)**(): `boolean` <br> 获取是否开启透明效果                                                                                                                                           |
+| **[orthoFarClipPlane](Gameplay.Gameplay.CameraSystem.md#orthofarclipplane)**(): `number` <br> 获取正交视图的远平面距离(以世界单位表示)                                                                                                                                      |
+| **[orthoNearClipPlane](Gameplay.Gameplay.CameraSystem.md#orthonearclipplane)**(): `number` <br> 获取正交视图的近平面距离(以世界单位表示)                                                                                                                                    |
+| **[orthoWidth](Gameplay.Gameplay.CameraSystem.md#orthowidth)**(): `number` <br> 获取正交宽度                                                                                                                                                                                |
+| **[raiseCameraEnable](Gameplay.Gameplay.CameraSystem.md#raisecameraenable)**(): `boolean` <br> 获取是否开启抬高摄像机效果                                                                                                                                                   |
+| **[raiseCameraHeight](Gameplay.Gameplay.CameraSystem.md#raisecameraheight)**(): `number` <br> 获取摄像机抬高高度                                                                                                                                                            |
+| **[realEffectEnable](Gameplay.Gameplay.CameraSystem.md#realeffectenable)**(`boolean`                                                                                                                                                                                        | ): `void` <br> 启用/禁用真实效果 |
+| **[slotOffset](Gameplay.Gameplay.CameraSystem.md#slotoffset)**(): [`Vector`](Type.Type.Vector.md) <br> since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform                                                                                                  |
+| **[targetArmLength](Gameplay.Gameplay.CameraSystem.md#targetarmlength)**(): `number` <br> 获取当前摄像机弹簧臂长度                                                                                                                                                          |
+| **[targetOffset](Gameplay.Gameplay.CameraSystem.md#targetoffset)**(): [`Vector`](Type.Type.Vector.md) <br> since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform                                                                                                |
+| **[transform](Gameplay.Gameplay.CameraSystem.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 摄像机的 transform                                                                                                                                               |
+| **[usePawnControlRotation](Gameplay.Gameplay.CameraSystem.md#usepawncontrolrotation)**(): `boolean` <br> 获取当前是否使用控制器控制摄像机旋转                                                                                                                               |
 
-### Properties
-
-- [enableFadeEffect](Gameplay.Gameplay.CameraSystem.md#enablefadeeffect)
-- [occludeCameraActor](Gameplay.Gameplay.CameraSystem.md#occludecameraactor)
-
-### Accessors
-
-- [cameraCollisionEnable](Gameplay.Gameplay.CameraSystem.md#cameracollisionenable)
-- [cameraDownLimitAngle](Gameplay.Gameplay.CameraSystem.md#cameradownlimitangle)
-- [cameraFOV](Gameplay.Gameplay.CameraSystem.md#camerafov)
-- [cameraFocusEnable](Gameplay.Gameplay.CameraSystem.md#camerafocusenable)
-- [cameraLocationLagEnable](Gameplay.Gameplay.CameraSystem.md#cameralocationlagenable)
-- [cameraLocationLagSpeed](Gameplay.Gameplay.CameraSystem.md#cameralocationlagspeed)
-- [cameraLocationMode](Gameplay.Gameplay.CameraSystem.md#cameralocationmode)
-- [cameraProjectionMode](Gameplay.Gameplay.CameraSystem.md#cameraprojectionmode)
-- [cameraRelativeTransform](Gameplay.Gameplay.CameraSystem.md#camerarelativetransform)
-- [cameraRotationLagEnable](Gameplay.Gameplay.CameraSystem.md#camerarotationlagenable)
-- [cameraRotationLagSpeed](Gameplay.Gameplay.CameraSystem.md#camerarotationlagspeed)
-- [cameraRotationMode](Gameplay.Gameplay.CameraSystem.md#camerarotationmode)
-- [cameraSystemRelativeTransform](Gameplay.Gameplay.CameraSystem.md#camerasystemrelativetransform)
-- [cameraSystemWorldTransform](Gameplay.Gameplay.CameraSystem.md#camerasystemworldtransform)
-- [cameraUpLimitAngle](Gameplay.Gameplay.CameraSystem.md#camerauplimitangle)
-- [cameraWorldTransform](Gameplay.Gameplay.CameraSystem.md#cameraworldtransform)
-- [enableMovementCollisionDetection](Gameplay.Gameplay.CameraSystem.md#enablemovementcollisiondetection)
-- [fadeEffectValue](Gameplay.Gameplay.CameraSystem.md#fadeeffectvalue)
-- [fixedCameraZAxis](Gameplay.Gameplay.CameraSystem.md#fixedcamerazaxis)
-- [followTargetEnable](Gameplay.Gameplay.CameraSystem.md#followtargetenable)
-- [followTargetInterpSpeed](Gameplay.Gameplay.CameraSystem.md#followtargetinterpspeed)
-- [lockTargetOffset](Gameplay.Gameplay.CameraSystem.md#locktargetoffset)
-- [movementCollisionDuration](Gameplay.Gameplay.CameraSystem.md#movementcollisionduration)
-- [movementCollisionMinLocationDelta](Gameplay.Gameplay.CameraSystem.md#movementcollisionminlocationdelta)
-- [occlusionDetectionEnable](Gameplay.Gameplay.CameraSystem.md#occlusiondetectionenable)
-- [orthoFarClipPlane](Gameplay.Gameplay.CameraSystem.md#orthofarclipplane)
-- [orthoNearClipPlane](Gameplay.Gameplay.CameraSystem.md#orthonearclipplane)
-- [orthoWidth](Gameplay.Gameplay.CameraSystem.md#orthowidth)
-- [raiseCameraEnable](Gameplay.Gameplay.CameraSystem.md#raisecameraenable)
-- [raiseCameraHeight](Gameplay.Gameplay.CameraSystem.md#raisecameraheight)
-- [realEffectEnable](Gameplay.Gameplay.CameraSystem.md#realeffectenable)
-- [slotOffset](Gameplay.Gameplay.CameraSystem.md#slotoffset)
-- [targetArmLength](Gameplay.Gameplay.CameraSystem.md#targetarmlength)
-- [targetOffset](Gameplay.Gameplay.CameraSystem.md#targetoffset)
-- [transform](Gameplay.Gameplay.CameraSystem.md#transform)
-- [usePawnControlRotation](Gameplay.Gameplay.CameraSystem.md#usepawncontrolrotation)
-
-### Methods
-
-- [applySettings](Gameplay.Gameplay.CameraSystem.md#applysettings)
-- [attachCameraToCharacterCapsuleSlot](Gameplay.Gameplay.CameraSystem.md#attachcameratocharactercapsuleslot)
-- [attachCameraToCharacterMeshSlot](Gameplay.Gameplay.CameraSystem.md#attachcameratocharactermeshslot)
-- [attachToGameObject](Gameplay.Gameplay.CameraSystem.md#attachtogameobject)
-- [cameraFocusing](Gameplay.Gameplay.CameraSystem.md#camerafocusing)
-- [cameraLockTarget](Gameplay.Gameplay.CameraSystem.md#cameralocktarget)
-- [cancelCameraFollowTarget](Gameplay.Gameplay.CameraSystem.md#cancelcamerafollowtarget)
-- [cancelCameraLockTarget](Gameplay.Gameplay.CameraSystem.md#cancelcameralocktarget)
-- [getCurrentSettings](Gameplay.Gameplay.CameraSystem.md#getcurrentsettings)
-- [getDefaultCameraShakeData](Gameplay.Gameplay.CameraSystem.md#getdefaultcamerashakedata)
-- [moveByPath](Gameplay.Gameplay.CameraSystem.md#movebypath)
-- [resetOverrideCameraRotation](Gameplay.Gameplay.CameraSystem.md#resetoverridecamerarotation)
-- [screenShock](Gameplay.Gameplay.CameraSystem.md#screenshock)
-- [setCameraFollowTarget](Gameplay.Gameplay.CameraSystem.md#setcamerafollowtarget)
-- [setCameraLockTarget](Gameplay.Gameplay.CameraSystem.md#setcameralocktarget)
-- [setOverrideCameraRotation](Gameplay.Gameplay.CameraSystem.md#setoverridecamerarotation)
-- [startCameraShake](Gameplay.Gameplay.CameraSystem.md#startcamerashake)
-- [stopCameraShake](Gameplay.Gameplay.CameraSystem.md#stopcamerashake)
-- [switchCameraMode](Gameplay.Gameplay.CameraSystem.md#switchcameramode)
-
-## Constructors
-
-### constructor
-
-• **new CameraSystem**()
+| Methods                                                                                                                                                                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[applySettings](Gameplay.Gameplay.CameraSystem.md#applysettings)**([`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata)): `void` <br> 应用摄像机系统数据                                                                        |
+| **[attachCameraToCharacterCapsuleSlot](Gameplay.Gameplay.CameraSystem.md#attachcameratocharactercapsuleslot)**(): `void` <br> 附加摄像机到角色的胶囊体插槽上                                                                                        |
+| **[attachCameraToCharacterMeshSlot](Gameplay.Gameplay.CameraSystem.md#attachcameratocharactermeshslot)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 附加摄像机到角色的模型插槽上                                            |
+| **[attachToGameObject](Gameplay.Gameplay.CameraSystem.md#attachtogameobject)**(`GameObject`): `void` <br> 相机附加至目标物体                                                                                                                        |
+| **[cameraFocusing](Gameplay.Gameplay.CameraSystem.md#camerafocusing)**(`number`, [`Vector`](Type.Type.Vector.md), `number`): `void` <br> 摄像机聚焦                                                                                                 |
+| **[cameraLockTarget](Gameplay.Gameplay.CameraSystem.md#cameralocktarget)**(`GameObject`, `number`, `number`, `number`, `number`, [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 相机锁定目标(相比 setCameraLockTarget 多了更多复杂的设置) |
+| **[cancelCameraFollowTarget](Gameplay.Gameplay.CameraSystem.md#cancelcamerafollowtarget)**(): `void` <br> 取消跟随物体                                                                                                                              |
+| **[cancelCameraLockTarget](Gameplay.Gameplay.CameraSystem.md#cancelcameralocktarget)**(): `void` <br> 取消锁定物体                                                                                                                                  |
+| **[getCurrentSettings](Gameplay.Gameplay.CameraSystem.md#getcurrentsettings)**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <br> 获取当前的摄像机系统数据                                                              |
+| **[getDefaultCameraShakeData](Gameplay.Gameplay.CameraSystem.md#getdefaultcamerashakedata)**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <br> 获取默认的摄像机震动数据                                                  |
+| **[moveByPath](Gameplay.Gameplay.CameraSystem.md#movebypath)**({ `location`: [`Vector`](Type.Type.Vector.md) ; `rotation`: [`Vector`](Type.Type.Vector.md) ; `time`: `number` }[], () => `void`): `void` <br> 镜头移动                              |
+| **[resetOverrideCameraRotation](Gameplay.Gameplay.CameraSystem.md#resetoverridecamerarotation)**(): `void` <br> 取消旋转覆盖                                                                                                                        |
+| **[screenShock](Gameplay.Gameplay.CameraSystem.md#screenshock)**(`number`, `number`, `number`): `void` <br> 震屏                                                                                                                                    |
+| **[setCameraFollowTarget](Gameplay.Gameplay.CameraSystem.md#setcamerafollowtarget)**(`GameObject`): `void` <br> 相机跟随物体                                                                                                                        |
+| **[setCameraLockTarget](Gameplay.Gameplay.CameraSystem.md#setcameralocktarget)**(`GameObject`): `void` <br> 相机锁定物体                                                                                                                            |
+| **[setOverrideCameraRotation](Gameplay.Gameplay.CameraSystem.md#setoverridecamerarotation)**([`Rotation`](Type.Type.Rotation.md), `boolean`): `void` <br> 覆盖摄像机旋转，从控制器传入值处截断                                                      |
+| **[startCameraShake](Gameplay.Gameplay.CameraSystem.md#startcamerashake)**([`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata)): `void` <br> 开始摄像机震动                                                                        |
+| **[stopCameraShake](Gameplay.Gameplay.CameraSystem.md#stopcamerashake)**(): `void` <br> 停止摄像机震动                                                                                                                                              |
+| **[switchCameraMode](Gameplay.Gameplay.CameraSystem.md#switchcameramode)**([`CameraMode`](../enums/Gameplay.Gameplay.CameraMode.md), `boolean`): `void` <br> 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)                                |
 
 ## Properties
 
@@ -108,10 +88,6 @@ usage:客户端
 
 设置是否开启透明效果
 
-#### Defined in
-
-Gameplay/index.d.ts:148
-
 ---
 
 ### occludeCameraActor
@@ -121,10 +97,6 @@ Gameplay/index.d.ts:148
 **`Description`**
 
 摄像机与角色之间的物体
-
-#### Defined in
-
-Gameplay/index.d.ts:152
 
 ## Accessors
 
@@ -139,10 +111,6 @@ Gameplay/index.d.ts:152
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:292
 
 • `set` **cameraCollisionEnable**(`bEnableCameraCollision`): `void`
 
@@ -160,10 +128,6 @@ Gameplay/index.d.ts:292
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:296
-
 ---
 
 ### cameraDownLimitAngle
@@ -177,10 +141,6 @@ Gameplay/index.d.ts:296
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:328
 
 • `set` **cameraDownLimitAngle**(`newDownLimitAngle`): `void`
 
@@ -198,10 +158,6 @@ Gameplay/index.d.ts:328
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:332
-
 ---
 
 ### cameraFOV
@@ -215,10 +171,6 @@ Gameplay/index.d.ts:332
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:268
 
 • `set` **cameraFOV**(`fovNum`): `void`
 
@@ -236,10 +188,6 @@ Gameplay/index.d.ts:268
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:272
-
 ---
 
 ### cameraFocusEnable
@@ -253,10 +201,6 @@ Gameplay/index.d.ts:272
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:392
 
 • `set` **cameraFocusEnable**(`canCameraFocus`): `void`
 
@@ -274,10 +218,6 @@ Gameplay/index.d.ts:392
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:396
-
 ---
 
 ### cameraLocationLagEnable
@@ -291,10 +231,6 @@ Gameplay/index.d.ts:396
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:236
 
 • `set` **cameraLocationLagEnable**(`bEnableCameraLocationLag`): `void`
 
@@ -312,10 +248,6 @@ Gameplay/index.d.ts:236
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:240
-
 ---
 
 ### cameraLocationLagSpeed
@@ -329,10 +261,6 @@ Gameplay/index.d.ts:240
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:252
 
 • `set` **cameraLocationLagSpeed**(`newCameraLocationLagSpeed`): `void`
 
@@ -350,10 +278,6 @@ Gameplay/index.d.ts:252
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:256
-
 ---
 
 ### cameraLocationMode
@@ -367,10 +291,6 @@ Gameplay/index.d.ts:256
 #### Returns
 
 [`CameraLocationMode`](../enums/Gameplay.Gameplay.CameraLocationMode.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:276
 
 • `set` **cameraLocationMode**(`newCameraLocationMode`): `void`
 
@@ -388,10 +308,6 @@ Gameplay/index.d.ts:276
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:280
-
 ---
 
 ### cameraProjectionMode
@@ -405,10 +321,6 @@ Gameplay/index.d.ts:280
 #### Returns
 
 [`CameraProjectionMode`](../enums/Gameplay.Gameplay.CameraProjectionMode.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:188
 
 • `set` **cameraProjectionMode**(`newCameraProjectionMode`): `void`
 
@@ -426,10 +338,6 @@ Gameplay/index.d.ts:188
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:192
-
 ---
 
 ### cameraRelativeTransform
@@ -443,10 +351,6 @@ Gameplay/index.d.ts:192
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:172
 
 • `set` **cameraRelativeTransform**(`newTransform`): `void`
 
@@ -464,10 +368,6 @@ Gameplay/index.d.ts:172
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:176
-
 ---
 
 ### cameraRotationLagEnable
@@ -481,10 +381,6 @@ Gameplay/index.d.ts:176
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:244
 
 • `set` **cameraRotationLagEnable**(`bEnableCameraRotationLag`): `void`
 
@@ -502,10 +398,6 @@ Gameplay/index.d.ts:244
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:248
-
 ---
 
 ### cameraRotationLagSpeed
@@ -519,10 +411,6 @@ Gameplay/index.d.ts:248
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:260
 
 • `set` **cameraRotationLagSpeed**(`newCameraRotationLagSpeed`): `void`
 
@@ -540,10 +428,6 @@ Gameplay/index.d.ts:260
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:264
-
 ---
 
 ### cameraRotationMode
@@ -557,10 +441,6 @@ Gameplay/index.d.ts:264
 #### Returns
 
 [`CameraRotationMode`](../enums/Gameplay.Gameplay.CameraRotationMode.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:284
 
 • `set` **cameraRotationMode**(`newCameraRotationMode`): `void`
 
@@ -578,10 +458,6 @@ Gameplay/index.d.ts:284
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:288
-
 ---
 
 ### cameraSystemRelativeTransform
@@ -595,10 +471,6 @@ Gameplay/index.d.ts:288
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:156
 
 • `set` **cameraSystemRelativeTransform**(`newTransform`): `void`
 
@@ -616,10 +488,6 @@ Gameplay/index.d.ts:156
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:160
-
 ---
 
 ### cameraSystemWorldTransform
@@ -633,10 +501,6 @@ Gameplay/index.d.ts:160
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:164
 
 • `set` **cameraSystemWorldTransform**(`newTransform`): `void`
 
@@ -654,10 +518,6 @@ Gameplay/index.d.ts:164
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:168
-
 ---
 
 ### cameraUpLimitAngle
@@ -671,10 +531,6 @@ Gameplay/index.d.ts:168
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:320
 
 • `set` **cameraUpLimitAngle**(`newUpLimitAngle`): `void`
 
@@ -692,10 +548,6 @@ Gameplay/index.d.ts:320
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:324
-
 ---
 
 ### cameraWorldTransform
@@ -709,10 +561,6 @@ Gameplay/index.d.ts:324
 #### Returns
 
 [`Transform`](Type.Type.Transform.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:180
 
 • `set` **cameraWorldTransform**(`newTransform`): `void`
 
@@ -730,10 +578,6 @@ Gameplay/index.d.ts:180
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:184
-
 ---
 
 ### enableMovementCollisionDetection
@@ -747,10 +591,6 @@ Gameplay/index.d.ts:184
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:408
 
 • `set` **enableMovementCollisionDetection**(`bIsEnableMovementCollision`): `void`
 
@@ -768,10 +608,6 @@ Gameplay/index.d.ts:408
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:412
-
 ---
 
 ### fadeEffectValue
@@ -785,10 +621,6 @@ Gameplay/index.d.ts:412
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:344
 
 • `set` **fadeEffectValue**(`newFadeEffectValue`): `void`
 
@@ -806,10 +638,6 @@ Gameplay/index.d.ts:344
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:348
-
 ---
 
 ### fixedCameraZAxis
@@ -823,10 +651,6 @@ Gameplay/index.d.ts:348
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:400
 
 • `set` **fixedCameraZAxis**(`bIsFixedZAxis`): `void`
 
@@ -844,10 +668,6 @@ Gameplay/index.d.ts:400
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:404
-
 ---
 
 ### followTargetEnable
@@ -861,10 +681,6 @@ Gameplay/index.d.ts:404
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:368
 
 • `set` **followTargetEnable**(`bIsEnableFollowTarget`): `void`
 
@@ -882,10 +698,6 @@ Gameplay/index.d.ts:368
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:372
-
 ---
 
 ### followTargetInterpSpeed
@@ -899,10 +711,6 @@ Gameplay/index.d.ts:372
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:376
 
 • `set` **followTargetInterpSpeed**(`newInterpSpeed`): `void`
 
@@ -920,10 +728,6 @@ Gameplay/index.d.ts:376
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:380
-
 ---
 
 ### lockTargetOffset
@@ -937,10 +741,6 @@ Gameplay/index.d.ts:380
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:384
 
 • `set` **lockTargetOffset**(`newLockTargetOffset`): `void`
 
@@ -958,10 +758,6 @@ Gameplay/index.d.ts:384
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:388
-
 ---
 
 ### movementCollisionDuration
@@ -975,10 +771,6 @@ Gameplay/index.d.ts:388
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:424
 
 • `set` **movementCollisionDuration**(`Delta`): `void`
 
@@ -996,10 +788,6 @@ Gameplay/index.d.ts:424
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:428
-
 ---
 
 ### movementCollisionMinLocationDelta
@@ -1013,10 +801,6 @@ Gameplay/index.d.ts:428
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:416
 
 • `set` **movementCollisionMinLocationDelta**(`Delta`): `void`
 
@@ -1034,10 +818,6 @@ Gameplay/index.d.ts:416
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:420
-
 ---
 
 ### occlusionDetectionEnable
@@ -1051,10 +831,6 @@ Gameplay/index.d.ts:420
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:336
 
 • `set` **occlusionDetectionEnable**(`bEnableOcclusionDetection`): `void`
 
@@ -1072,10 +848,6 @@ Gameplay/index.d.ts:336
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:340
-
 ---
 
 ### orthoFarClipPlane
@@ -1089,10 +861,6 @@ Gameplay/index.d.ts:340
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:212
 
 • `set` **orthoFarClipPlane**(`newOrthoFarClipPlane`): `void`
 
@@ -1110,10 +878,6 @@ Gameplay/index.d.ts:212
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:216
-
 ---
 
 ### orthoNearClipPlane
@@ -1127,10 +891,6 @@ Gameplay/index.d.ts:216
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:204
 
 • `set` **orthoNearClipPlane**(`newOrthoNearClipPlane`): `void`
 
@@ -1148,10 +908,6 @@ Gameplay/index.d.ts:204
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:208
-
 ---
 
 ### orthoWidth
@@ -1165,10 +921,6 @@ Gameplay/index.d.ts:208
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:196
 
 • `set` **orthoWidth**(`newOrthoWidth`): `void`
 
@@ -1186,10 +938,6 @@ Gameplay/index.d.ts:196
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:200
-
 ---
 
 ### raiseCameraEnable
@@ -1203,10 +951,6 @@ Gameplay/index.d.ts:200
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:352
 
 • `set` **raiseCameraEnable**(`bIsEnableRaiseCamera`): `void`
 
@@ -1224,10 +968,6 @@ Gameplay/index.d.ts:352
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:356
-
 ---
 
 ### raiseCameraHeight
@@ -1241,10 +981,6 @@ Gameplay/index.d.ts:356
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:360
 
 • `set` **raiseCameraHeight**(`newRaiseCameraHeight`): `void`
 
@@ -1261,10 +997,6 @@ Gameplay/index.d.ts:360
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:364
 
 ---
 
@@ -1290,10 +1022,6 @@ Gameplay/index.d.ts:364
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:531
-
 ---
 
 ### slotOffset
@@ -1311,10 +1039,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:311
 
 • `set` **slotOffset**(`newSlotOffset`): `void`
 
@@ -1336,10 +1060,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:316
-
 ---
 
 ### targetArmLength
@@ -1353,10 +1073,6 @@ Gameplay/index.d.ts:316
 #### Returns
 
 `number`
-
-#### Defined in
-
-Gameplay/index.d.ts:220
 
 • `set` **targetArmLength**(`newTargetArmLength`): `void`
 
@@ -1373,10 +1089,6 @@ Gameplay/index.d.ts:220
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:224
 
 ---
 
@@ -1395,10 +1107,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
-
-#### Defined in
-
-Gameplay/index.d.ts:301
 
 • `set` **targetOffset**(`newTargetOffset`): `void`
 
@@ -1420,10 +1128,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:306
-
 ---
 
 ### transform
@@ -1438,10 +1142,6 @@ Gameplay/index.d.ts:306
 
 [`Transform`](Type.Type.Transform.md)
 
-#### Defined in
-
-Gameplay/index.d.ts:583
-
 ---
 
 ### usePawnControlRotation
@@ -1455,10 +1155,6 @@ Gameplay/index.d.ts:583
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-Gameplay/index.d.ts:228
 
 • `set` **usePawnControlRotation**(`bUsePawnControlRotation`): `void`
 
@@ -1476,10 +1172,6 @@ Gameplay/index.d.ts:228
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:232
-
 ## Methods
 
 ### applySettings
@@ -1496,17 +1188,13 @@ Gameplay/index.d.ts:232
 
 #### Parameters
 
-| Name            | Type                                                                   | Description          |
-| :-------------- | :--------------------------------------------------------------------- | :------------------- |
-| `CameraSetting` | [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) | usage:摄像机系统数据 |
+| Name            | Type                                                                   | Description    |
+| :-------------- | :--------------------------------------------------------------------- | :------------- |
+| `CameraSetting` | [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) | 摄像机系统数据 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:515
 
 ---
 
@@ -1526,10 +1214,6 @@ Gameplay/index.d.ts:515
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:526
-
 ---
 
 ### attachCameraToCharacterMeshSlot
@@ -1546,17 +1230,13 @@ Gameplay/index.d.ts:526
 
 #### Parameters
 
-| Name   | Type                                                 | Description  |
-| :----- | :--------------------------------------------------- | :----------- |
-| `slot` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽名 |
+| Name   | Type                                                 | Description |
+| :----- | :--------------------------------------------------- | :---------- |
+| `slot` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽名      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:521
 
 ---
 
@@ -1574,17 +1254,13 @@ Gameplay/index.d.ts:521
 
 #### Parameters
 
-| Name     | Type         | Description    |
-| :------- | :----------- | :------------- |
-| `target` | `GameObject` | usage:目标物体 |
+| Name     | Type         | Description |
+| :------- | :----------- | :---------- |
+| `target` | `GameObject` | 目标物体    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:468
 
 ---
 
@@ -1602,19 +1278,15 @@ Gameplay/index.d.ts:468
 
 #### Parameters
 
-| Name              | Type                            | Description                        |
-| :---------------- | :------------------------------ | :--------------------------------- |
-| `targetArmLength` | `number`                        | usage:目标距离                     |
-| `targetOffset`    | [`Vector`](Type.Type.Vector.md) | usage:目标偏移                     |
-| `timeInterval?`   | `number`                        | usage:聚焦间隔,越小越快 default:20 |
+| Name              | Type                            | Description                  |
+| :---------------- | :------------------------------ | :--------------------------- |
+| `targetArmLength` | `number`                        | 目标距离                     |
+| `targetOffset`    | [`Vector`](Type.Type.Vector.md) | 目标偏移                     |
+| `timeInterval?`   | `number`                        | 聚焦间隔,越小越快 default:20 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:436
 
 ---
 
@@ -1632,23 +1304,19 @@ Gameplay/index.d.ts:436
 
 #### Parameters
 
-| Name            | Type                            | Description                                                                                                  |
-| :-------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------- |
-| `target`        | `GameObject`                    | usage:目标物体                                                                                               |
-| `lockInterval?` | `number`                        | usage:锁定间隔(间隔多少秒暂停/恢复锁定) default:0                                                            |
-| `lockSpeed?`    | `number`                        | usage:锁定速度(决定摄像机多久旋转至目标朝向，参数值越大越快,范围 0-5，但 0 是直接旋转至目标朝向) default:1.3 |
-| `lockRange?`    | `number`                        | usage:锁定范围(以屏幕坐标中心为圆心，这个值表示半径) default:100                                             |
-| `lockDistance?` | `number`                        | usage:锁定距离(目标到摄像机的距离) default:1000                                                              |
-| `lockOffset?`   | [`Vector`](Type.Type.Vector.md) | usage:锁定偏移 default:Type.Vector.zero                                                                      |
-| `bPause?`       | `boolean`                       | usage:决定超出范围/距离后锁定是暂停/取消，为 true 是暂停 default:true                                        |
+| Name            | Type                            | Description                                                                                            |
+| :-------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| `target`        | `GameObject`                    | 目标物体                                                                                               |
+| `lockInterval?` | `number`                        | 锁定间隔(间隔多少秒暂停/恢复锁定) default:0                                                            |
+| `lockSpeed?`    | `number`                        | 锁定速度(决定摄像机多久旋转至目标朝向，参数值越大越快,范围 0-5，但 0 是直接旋转至目标朝向) default:1.3 |
+| `lockRange?`    | `number`                        | 锁定范围(以屏幕坐标中心为圆心，这个值表示半径) default:100                                             |
+| `lockDistance?` | `number`                        | 锁定距离(目标到摄像机的距离) default:1000                                                              |
+| `lockOffset?`   | [`Vector`](Type.Type.Vector.md) | 锁定偏移 default:Type.Vector.zero                                                                      |
+| `bPause?`       | `boolean`                       | 决定超出范围/距离后锁定是暂停/取消，为 true 是暂停 default:true                                        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:480
 
 ---
 
@@ -1668,10 +1336,6 @@ Gameplay/index.d.ts:480
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:462
-
 ---
 
 ### cancelCameraLockTarget
@@ -1689,10 +1353,6 @@ Gameplay/index.d.ts:462
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:451
 
 ---
 
@@ -1714,10 +1374,6 @@ Gameplay/index.d.ts:451
 
 当前的摄像机系统数据
 
-#### Defined in
-
-Gameplay/index.d.ts:509
-
 ---
 
 ### getDefaultCameraShakeData
@@ -1738,10 +1394,6 @@ Gameplay/index.d.ts:509
 
 默认的摄像机震动数据
 
-#### Defined in
-
-Gameplay/index.d.ts:547
-
 ---
 
 ### moveByPath
@@ -1758,18 +1410,14 @@ Gameplay/index.d.ts:547
 
 #### Parameters
 
-| Name               | Type                                                                                                               | Description    |
-| :----------------- | :----------------------------------------------------------------------------------------------------------------- | :------------- |
-| `path`             | { `location`: [`Vector`](Type.Type.Vector.md) ; `rotation`: [`Vector`](Type.Type.Vector.md) ; `time`: `number` }[] | usage:路径数据 |
-| `completeCallback` | () => `void`                                                                                                       | usage:完成回调 |
+| Name               | Type                                                                                                               | Description |
+| :----------------- | :----------------------------------------------------------------------------------------------------------------- | :---------- |
+| `path`             | { `location`: [`Vector`](Type.Type.Vector.md) ; `rotation`: [`Vector`](Type.Type.Vector.md) ; `time`: `number` }[] | 路径数据    |
+| `completeCallback` | () => `void`                                                                                                       | 完成回调    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:574
 
 ---
 
@@ -1789,10 +1437,6 @@ Gameplay/index.d.ts:574
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:503
-
 ---
 
 ### screenShock
@@ -1809,19 +1453,15 @@ Gameplay/index.d.ts:503
 
 #### Parameters
 
-| Name        | Type     | Description                        |
-| :---------- | :------- | :--------------------------------- |
-| `maxRange?` | `number` | usage: 最大幅度 default: 60        |
-| `decay?`    | `number` | usage: 每个周期的衰减 default: 0.5 |
-| `speed?`    | `number` | usage: 速度 default: 3000          |
+| Name        | Type     | Description                 |
+| :---------- | :------- | :-------------------------- |
+| `maxRange?` | `number` | 最大幅度 default: 60        |
+| `decay?`    | `number` | 每个周期的衰减 default: 0.5 |
+| `speed?`    | `number` | 速度 default: 3000          |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:567
 
 ---
 
@@ -1839,17 +1479,13 @@ Gameplay/index.d.ts:567
 
 #### Parameters
 
-| Name     | Type         | Description    |
-| :------- | :----------- | :------------- |
-| `target` | `GameObject` | usage:目标物体 |
+| Name     | Type         | Description |
+| :------- | :----------- | :---------- |
+| `target` | `GameObject` | 目标物体    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:457
 
 ---
 
@@ -1867,17 +1503,13 @@ Gameplay/index.d.ts:457
 
 #### Parameters
 
-| Name     | Type         | Description    |
-| :------- | :----------- | :------------- |
-| `target` | `GameObject` | usage:目标物体 |
+| Name     | Type         | Description |
+| :------- | :----------- | :---------- |
+| `target` | `GameObject` | 目标物体    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:446
 
 ---
 
@@ -1895,18 +1527,14 @@ Gameplay/index.d.ts:446
 
 #### Parameters
 
-| Name                               | Type                                | Description                                    |
-| :--------------------------------- | :---------------------------------- | :--------------------------------------------- |
-| `newOverrideRotation`              | [`Rotation`](Type.Type.Rotation.md) | usage:新的旋转值                               |
-| `clampByCameraModeRotationLimits?` | `boolean`                           | usage:是否应用摄像机模式旋转限制 default:false |
+| Name                               | Type                                | Description                              |
+| :--------------------------------- | :---------------------------------- | :--------------------------------------- |
+| `newOverrideRotation`              | [`Rotation`](Type.Type.Rotation.md) | 新的旋转值                               |
+| `clampByCameraModeRotationLimits?` | `boolean`                           | 是否应用摄像机模式旋转限制 default:false |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:495
 
 ---
 
@@ -1928,17 +1556,13 @@ Gameplay/index.d.ts:495
 
 #### Parameters
 
-| Name              | Type                                                                 | Description          |
-| :---------------- | :------------------------------------------------------------------- | :------------------- |
-| `cameraShakeData` | [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) | usage:摄像机震动数据 |
+| Name              | Type                                                                 | Description    |
+| :---------------- | :------------------------------------------------------------------- | :------------- |
+| `cameraShakeData` | [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) | 摄像机震动数据 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:554
 
 ---
 
@@ -1958,10 +1582,6 @@ Gameplay/index.d.ts:554
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:559
-
 ---
 
 ### switchCameraMode
@@ -1978,15 +1598,11 @@ Gameplay/index.d.ts:559
 
 #### Parameters
 
-| Name                | Type                                                     | Description                              |
-| :------------------ | :------------------------------------------------------- | :--------------------------------------- |
-| `newCameraMode`     | [`CameraMode`](../enums/Gameplay.Gameplay.CameraMode.md) | usage:新的摄像机模式                     |
-| `enableRealEffect?` | `boolean`                                                | usage:是否开启真实模拟效果 default:false |
+| Name                | Type                                                     | Description                        |
+| :------------------ | :------------------------------------------------------- | :--------------------------------- |
+| `newCameraMode`     | [`CameraMode`](../enums/Gameplay.Gameplay.CameraMode.md) | 新的摄像机模式                     |
+| `enableRealEffect?` | `boolean`                                                | 是否开启真实模拟效果 default:false |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:538

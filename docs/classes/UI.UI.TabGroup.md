@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / TabGroup
+[UI](../modules/UI.UI.md) / TabGroup
 
-# Class: TabGroup<T\>
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).TabGroup
-
-**`Author`**
-
-wei.yang
+# TabGroup<T\> <Badge type="tip" text="Class" />
 
 **`Description`**
 
 选项卡组
-
-**`Network Status`**
-
-usage:客户端
 
 ## Type parameters
 
@@ -24,25 +14,15 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                              |
+| :------------------------------------------------------------------------------------- |
+| **[currentIndex](UI.UI.TabGroup.md#currentindex)**(): `number` <br> 当前选择的标签索引 |
 
-- [constructor](UI.UI.TabGroup.md#constructor)
-
-### Accessors
-
-- [currentIndex](UI.UI.TabGroup.md#currentindex)
-
-### Methods
-
-- [init](UI.UI.TabGroup.md#init)
-- [select](UI.UI.TabGroup.md#select)
-- [setSelectableChecker](UI.UI.TabGroup.md#setselectablechecker)
-
-## Constructors
-
-### constructor
-
-• **new TabGroup**<`T`\>(`tabArr`)
+| Methods                                                                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[init](UI.UI.TabGroup.md#init)**((`btn`: `T`, `isSelect`: `boolean`) => `void`, (`index`: `number`) => `void`, `any`, `number`): `void` <br> 初始化     |
+| **[select](UI.UI.TabGroup.md#select)**(`number`, `boolean`): `boolean` <br> 设置当前的标签                                                                |
+| **[setSelectableChecker](UI.UI.TabGroup.md#setselectablechecker)**((`index`: `number`) => `boolean`, `any`): `void` <br> 设置该标签是否可以切换的检测方法 |
 
 构造
 
@@ -54,13 +34,9 @@ usage:客户端
 
 #### Parameters
 
-| Name     | Type  | Description          |
-| :------- | :---- | :------------------- |
-| `tabArr` | `T`[] | usage:标签的按钮数组 |
-
-#### Defined in
-
-UI/index.d.ts:2245
+| Name     | Type  | Description    |
+| :------- | :---- | :------------- |
+| `tabArr` | `T`[] | 标签的按钮数组 |
 
 ## Accessors
 
@@ -82,10 +58,6 @@ UI/index.d.ts:2245
 
 当前标签
 
-#### Defined in
-
-UI/index.d.ts:2283
-
 ## Methods
 
 ### init
@@ -102,20 +74,16 @@ UI/index.d.ts:2283
 
 #### Parameters
 
-| Name             | Type                                          | Description                                |
-| :--------------- | :-------------------------------------------- | :----------------------------------------- |
-| `tabStyleHandle` | (`btn`: `T`, `isSelect`: `boolean`) => `void` | usage:设置标签的样式方法（方法参数：按钮） |
-| `selectCallBack` | (`index`: `number`) => `void`                 | usage:选择标签的回调方法                   |
-| `thisArg`        | `any`                                         | usage:域                                   |
-| `defaultIndex?`  | `number`                                      | usage:默认选择的标签索引 default:0         |
+| Name             | Type                                          | Description                          |
+| :--------------- | :-------------------------------------------- | :----------------------------------- |
+| `tabStyleHandle` | (`btn`: `T`, `isSelect`: `boolean`) => `void` | 设置标签的样式方法（方法参数：按钮） |
+| `selectCallBack` | (`index`: `number`) => `void`                 | 选择标签的回调方法                   |
+| `thisArg`        | `any`                                         | 域                                   |
+| `defaultIndex?`  | `number`                                      | 默认选择的标签索引 default:0         |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2254
 
 ---
 
@@ -133,20 +101,16 @@ UI/index.d.ts:2254
 
 #### Parameters
 
-| Name          | Type      | Description                         |
-| :------------ | :-------- | :---------------------------------- |
-| `index`       | `number`  | usage:标签索引                      |
-| `ignoreSame?` | `boolean` | usage:是否忽略相同索引 default:true |
+| Name          | Type      | Description                   |
+| :------------ | :-------- | :---------------------------- |
+| `index`       | `number`  | 标签索引                      |
+| `ignoreSame?` | `boolean` | 是否忽略相同索引 default:true |
 
 #### Returns
 
 `boolean`
 
 是否成功
-
-#### Defined in
-
-UI/index.d.ts:2277
 
 ---
 
@@ -164,15 +128,11 @@ UI/index.d.ts:2277
 
 #### Parameters
 
-| Name            | Type                             | Description    |
-| :-------------- | :------------------------------- | :------------- |
-| `selectChecker` | (`index`: `number`) => `boolean` | usage:判断方法 |
-| `thisArg`       | `any`                            | usage:域       |
+| Name            | Type                             | Description |
+| :-------------- | :------------------------------- | :---------- |
+| `selectChecker` | (`index`: `number`) => `boolean` | 判断方法    |
+| `thisArg`       | `any`                            | 域          |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2266

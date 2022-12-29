@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2
+[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2
 
-# Interface: IHumanoidV2
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IHumanoidV2
+# IHumanoidV2 <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 人形对象 V2 插槽和外形加载
-
-**`Author`**
-
-guang.deng
 
 ## Implemented by
 
@@ -18,20 +12,20 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [appearanceSync](Gameplay.Gameplay.IHumanoidV2.md#appearancesync)
-- [attach](Gameplay.Gameplay.IHumanoidV2.md#attach)
-- [changeSomatotype](Gameplay.Gameplay.IHumanoidV2.md#changesomatotype)
-- [clearAppearance](Gameplay.Gameplay.IHumanoidV2.md#clearappearance)
-- [detach](Gameplay.Gameplay.IHumanoidV2.md#detach)
-- [getGoods](Gameplay.Gameplay.IHumanoidV2.md#getgoods)
-- [getSlotWorldPosition](Gameplay.Gameplay.IHumanoidV2.md#getslotworldposition)
-- [getSomatotype](Gameplay.Gameplay.IHumanoidV2.md#getsomatotype)
-- [setAppearanceData](Gameplay.Gameplay.IHumanoidV2.md#setappearancedata)
-- [setSlot](Gameplay.Gameplay.IHumanoidV2.md#setslot)
-- [setSomatotype](Gameplay.Gameplay.IHumanoidV2.md#setsomatotype)
-- [setSuit](Gameplay.Gameplay.IHumanoidV2.md#setsuit)
+| Methods                                                                                                                                                                                                                                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[appearanceSync](Gameplay.Gameplay.IHumanoidV2.md#appearancesync)**(): `void` <br> 把本地角色形象数据同步到多端                                                                                                                                     |
+| **[attach](Gameplay.Gameplay.IHumanoidV2.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 将物体附着到 V2 人物角色的指定插槽                                                                             |
+| **[changeSomatotype](Gameplay.Gameplay.IHumanoidV2.md#changesomatotype)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md), `boolean`): `void` <br> 切换角色主 Mesh                                                                       |
+| **[clearAppearance](Gameplay.Gameplay.IHumanoidV2.md#clearappearance)**(): `void` <br> 清空角色形象数据                                                                                                                                               |
+| **[detach](Gameplay.Gameplay.IHumanoidV2.md#detach)**(`GameObject`): `void` <br> 将物体从人物身上附着的物品预览插槽中分离                                                                                                                             |
+| **[getGoods](Gameplay.Gameplay.IHumanoidV2.md#getgoods)**(`string`): [`string`, `string`][] <br> 获取插槽文件里面的数据，Array<[string, string]>：Array<[物品资源 Id, 插入的插槽名]>                                                                  |
+| **[getSlotWorldPosition](Gameplay.Gameplay.IHumanoidV2.md#getslotworldposition)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): [`Vector`](../classes/Type.Type.Vector.md) <br> 获取 Slot 世界坐标位置,V2 物品预览的插槽使用                 |
+| **[getSomatotype](Gameplay.Gameplay.IHumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) <br> 获取当前的主 Mesh                                                                                            |
+| **[setAppearanceData](Gameplay.Gameplay.IHumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过 Guid 加载数据另存为角色数据                                               |
+| **[setSlot](Gameplay.Gameplay.IHumanoidV2.md#setslot)**(`string`, `boolean`): `void` <br> 通过插槽 Guid 加载数据                                                                                                                                      |
+| **[setSomatotype](Gameplay.Gameplay.IHumanoidV2.md#setsomatotype)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md)): `void` <br> 设置形象(如果没有预加载对应的 GUID，则是异步的,监听 onLoadAppearanceDataAllCompleted 获取加载完成回调) |
+| **[setSuit](Gameplay.Gameplay.IHumanoidV2.md#setsuit)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md), `string`, `string`, `string`, `string`, `string`, `string`, `string`): `void` <br> 加载一套角色数据                             |
 
 ## Methods
 
@@ -55,10 +49,6 @@ guang.deng
 
 `void`
 
-#### Defined in
-
-Gameplay/index.d.ts:2893
-
 ---
 
 ### attach
@@ -79,18 +69,14 @@ Gameplay/index.d.ts:2893
 
 #### Parameters
 
-| Name         | Type                                                 | Description                           |
-| :----------- | :--------------------------------------------------- | :------------------------------------ |
-| `gameObject` | `GameObject`                                         | usage: 被附着的物体                   |
-| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage: 插槽名字，被附着到指定的插槽名 |
+| Name         | Type                                                 | Description                    |
+| :----------- | :--------------------------------------------------- | :----------------------------- |
+| `gameObject` | `GameObject`                                         | 被附着的物体                   |
+| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽名字，被附着到指定的插槽名 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2839
 
 ---
 
@@ -109,18 +95,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                         | Description                             |
-| :------ | :----------------------------------------------------------- | :-------------------------------------- |
-| `value` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage: 主 Mesh 类型："None"不能作为参数 |
-| `sync`  | `boolean`                                                    | usage:true 同步; false 不同步           |
+| Name    | Type                                                         | Description                      |
+| :------ | :----------------------------------------------------------- | :------------------------------- |
+| `value` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 主 Mesh 类型："None"不能作为参数 |
+| `sync`  | `boolean`                                                    | true 同步; false 不同步          |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2862
 
 ---
 
@@ -139,10 +121,6 @@ Gameplay/index.d.ts:2862
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2887
 
 ---
 
@@ -164,17 +142,13 @@ Gameplay/index.d.ts:2887
 
 #### Parameters
 
-| Name         | Type         | Description           |
-| :----------- | :----------- | :-------------------- |
-| `gameObject` | `GameObject` | usage:物体 GameObject |
+| Name         | Type         | Description     |
+| :----------- | :----------- | :-------------- |
+| `gameObject` | `GameObject` | 物体 GameObject |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2846
 
 ---
 
@@ -192,19 +166,15 @@ Gameplay/index.d.ts:2846
 
 #### Parameters
 
-| Name   | Type     | Description     |
-| :----- | :------- | :-------------- |
-| `guid` | `string` | usage:Slot Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | Slot Guid   |
 
 #### Returns
 
 [`string`, `string`][]
 
 插槽数据中物品 Guid 数组
-
-#### Defined in
-
-Gameplay/index.d.ts:2831
 
 ---
 
@@ -222,19 +192,15 @@ Gameplay/index.d.ts:2831
 
 #### Parameters
 
-| Name       | Type                                                 | Description    |
-| :--------- | :--------------------------------------------------- | :------------- |
-| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽名字 |
+| Name       | Type                                                 | Description |
+| :--------- | :--------------------------------------------------- | :---------- |
+| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽名字    |
 
 #### Returns
 
 [`Vector`](../classes/Type.Type.Vector.md)
 
 坐标位置
-
-#### Defined in
-
-Gameplay/index.d.ts:2853
 
 ---
 
@@ -256,10 +222,6 @@ Gameplay/index.d.ts:2853
 
 主 Mesh
 
-#### Defined in
-
-Gameplay/index.d.ts:2868
-
 ---
 
 ### setAppearanceData
@@ -280,18 +242,14 @@ Gameplay/index.d.ts:2868
 
 #### Parameters
 
-| Name        | Type                                                             | Description                       |
-| :---------- | :--------------------------------------------------------------- | :-------------------------------- |
-| `guidArray` | `string`[]                                                       | usage:换装数据 GuidArray          |
-| `callback`  | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | usage:加载完成的回调 default:null |
+| Name        | Type                                                             | Description                 |
+| :---------- | :--------------------------------------------------------------- | :-------------------------- |
+| `guidArray` | `string`[]                                                       | 换装数据 GuidArray          |
+| `callback`  | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | 加载完成的回调 default:null |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2882
 
 ---
 
@@ -309,18 +267,14 @@ Gameplay/index.d.ts:2882
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:Slot Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | Slot Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2824
 
 ---
 
@@ -338,17 +292,13 @@ Gameplay/index.d.ts:2824
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage:角色类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 角色类型    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2874
 
 ---
 
@@ -370,21 +320,17 @@ Gameplay/index.d.ts:2874
 
 #### Parameters
 
-| Name         | Type                                                         | Description                                              |
-| :----------- | :----------------------------------------------------------- | :------------------------------------------------------- |
-| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage: 主 Mesh 类型："None"不能作为参数                  |
-| `head`       | `string`                                                     | usage: 头部资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `upperCloth` | `string`                                                     | usage: 上衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `lowerCloth` | `string`                                                     | usage: 下衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `gloves`     | `string`                                                     | usage: 手套资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `shoe`       | `string`                                                     | usage: 鞋子资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `frontHair`  | `string`                                                     | usage: 前发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `behindHair` | `string`                                                     | usage: 后发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| Name         | Type                                                         | Description                                       |
+| :----------- | :----------------------------------------------------------- | :------------------------------------------------ |
+| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 主 Mesh 类型："None"不能作为参数                  |
+| `head`       | `string`                                                     | 头部资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `upperCloth` | `string`                                                     | 上衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `lowerCloth` | `string`                                                     | 下衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `gloves`     | `string`                                                     | 手套资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `shoe`       | `string`                                                     | 鞋子资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `frontHair`  | `string`                                                     | 前发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `behindHair` | `string`                                                     | 后发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2907

@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Matrix3x3
+[Type](../modules/Type.Type.md) / Matrix3x3
 
-# Class: Matrix3x3
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Matrix3x3
-
-**`Author`**
-
-ChenYuHao
+# Matrix3x3 <Badge type="tip" text="Class" />
 
 **`Description`**
 
@@ -16,73 +10,59 @@ ChenYuHao
 
 列矩阵
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                      |
+| :------------------------------------------------------------------------------ |
+| **[m00](Type.Type.Matrix3x3.md#m00)**: `number` <br> 矩阵第 0 列第 0 行的元素。 |
+| **[m01](Type.Type.Matrix3x3.md#m01)**: `number` <br> 矩阵第 0 列第 1 行的元素。 |
+| **[m02](Type.Type.Matrix3x3.md#m02)**: `number` <br> 矩阵第 0 列第 2 行的元素。 |
+| **[m10](Type.Type.Matrix3x3.md#m10)**: `number` <br> 矩阵第 1 列第 0 行的元素。 |
+| **[m11](Type.Type.Matrix3x3.md#m11)**: `number` <br> 矩阵第 1 列第 1 行的元素。 |
+| **[m12](Type.Type.Matrix3x3.md#m12)**: `number` <br> 矩阵第 1 列第 2 行的元素。 |
+| **[m20](Type.Type.Matrix3x3.md#m20)**: `number` <br> 矩阵第 2 列第 0 行的元素。 |
+| **[m21](Type.Type.Matrix3x3.md#m21)**: `number` <br> 矩阵第 2 列第 1 行的元素。 |
+| **[m22](Type.Type.Matrix3x3.md#m22)**: `number` <br> 矩阵第 2 列第 2 行的元素。 |
 
-- [constructor](Type.Type.Matrix3x3.md#constructor)
+| Accessors                                                                               |
+| :-------------------------------------------------------------------------------------- |
+| **[identity](Type.Type.Matrix3x3.md#identity)**(): `void` <br> 将当前矩阵设为单位矩阵。 |
 
-### Properties
-
-- [m00](Type.Type.Matrix3x3.md#m00)
-- [m01](Type.Type.Matrix3x3.md#m01)
-- [m02](Type.Type.Matrix3x3.md#m02)
-- [m10](Type.Type.Matrix3x3.md#m10)
-- [m11](Type.Type.Matrix3x3.md#m11)
-- [m12](Type.Type.Matrix3x3.md#m12)
-- [m20](Type.Type.Matrix3x3.md#m20)
-- [m21](Type.Type.Matrix3x3.md#m21)
-- [m22](Type.Type.Matrix3x3.md#m22)
-
-### Accessors
-
-- [identity](Type.Type.Matrix3x3.md#identity)
-
-### Methods
-
-- [add](Type.Type.Matrix3x3.md#add)
-- [clone](Type.Type.Matrix3x3.md#clone)
-- [determinant](Type.Type.Matrix3x3.md#determinant)
-- [equals](Type.Type.Matrix3x3.md#equals)
-- [identity](Type.Type.Matrix3x3.md#identity-1)
-- [invert](Type.Type.Matrix3x3.md#invert)
-- [multiply](Type.Type.Matrix3x3.md#multiply)
-- [rotate](Type.Type.Matrix3x3.md#rotate)
-- [scale](Type.Type.Matrix3x3.md#scale)
-- [set](Type.Type.Matrix3x3.md#set)
-- [strictEquals](Type.Type.Matrix3x3.md#strictequals)
-- [subtract](Type.Type.Matrix3x3.md#subtract)
-- [toString](Type.Type.Matrix3x3.md#tostring)
-- [transpose](Type.Type.Matrix3x3.md#transpose)
-- [add](Type.Type.Matrix3x3.md#add-1)
-- [clone](Type.Type.Matrix3x3.md#clone-1)
-- [determinant](Type.Type.Matrix3x3.md#determinant-1)
-- [equals](Type.Type.Matrix3x3.md#equals-1)
-- [fromMat4](Type.Type.Matrix3x3.md#frommat4)
-- [fromRotation](Type.Type.Matrix3x3.md#fromrotation)
-- [fromScaling](Type.Type.Matrix3x3.md#fromscaling)
-- [fromTranslation](Type.Type.Matrix3x3.md#fromtranslation)
-- [fromViewUp](Type.Type.Matrix3x3.md#fromviewup)
-- [inverseTransposeMat4](Type.Type.Matrix3x3.md#inversetransposemat4)
-- [invert](Type.Type.Matrix3x3.md#invert-1)
-- [multiply](Type.Type.Matrix3x3.md#multiply-1)
-- [rotate](Type.Type.Matrix3x3.md#rotate-1)
-- [scale](Type.Type.Matrix3x3.md#scale-1)
-- [strictEquals](Type.Type.Matrix3x3.md#strictequals-1)
-- [subtract](Type.Type.Matrix3x3.md#subtract-1)
-- [transformVector](Type.Type.Matrix3x3.md#transformvector)
-- [transformVector2](Type.Type.Matrix3x3.md#transformvector2)
-- [transpose](Type.Type.Matrix3x3.md#transpose-1)
-
-## Constructors
-
-### constructor
-
-• **new Matrix3x3**(`other`)
+| Methods                                                                                                                                                                                                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[add](Type.Type.Matrix3x3.md#add)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 逐元素矩阵加法                                         |
+| **[clone](Type.Type.Matrix3x3.md#clone)**([`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 获得指定矩阵的拷贝                                                                                                               |
+| **[determinant](Type.Type.Matrix3x3.md#determinant)**([`Matrix3x3`](Type.Type.Matrix3x3.md)): `number` <br> 求目标矩阵行列式                                                                                                                                  |
+| **[equals](Type.Type.Matrix3x3.md#equals)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), `number`): `boolean` <br> 排除浮点数误差的矩阵近似等价判断                                                                          |
+| **[identity](Type.Type.Matrix3x3.md#identity-1)**(): `void` <br> 将当前矩阵设为单位矩阵。                                                                                                                                                                     |
+| **[invert](Type.Type.Matrix3x3.md#invert)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 将目标矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。                         |
+| **[multiply](Type.Type.Matrix3x3.md#multiply)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 矩阵乘法                                     |
+| **[rotate](Type.Type.Matrix3x3.md#rotate)**([`Matrix3x3`](Type.Type.Matrix3x3.md), `number`, [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 在给定矩阵变换基础上加入新旋转变换                                            |
+| **[scale](Type.Type.Matrix3x3.md#scale)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Vector`](Type.Type.Vector.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 在给定矩阵变换基础上加入新缩放变换                       |
+| **[set](Type.Type.Matrix3x3.md#set)**([`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 设置当前矩阵使其与指定矩阵相等。                                                                                                     |
+| **[strictEquals](Type.Type.Matrix3x3.md#strictequals)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): `boolean` <br> 矩阵等价判断                                                                                            |
+| **[subtract](Type.Type.Matrix3x3.md#subtract)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 逐元素矩阵减法                               |
+| **[toString](Type.Type.Matrix3x3.md#tostring)**(): `string` <br> 返回当前矩阵的字符串表示。                                                                                                                                                                   |
+| **[transpose](Type.Type.Matrix3x3.md#transpose)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 将目标矩阵变为转置矩阵                                                            |
+| **[add](Type.Type.Matrix3x3.md#add-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 逐元素矩阵加法                                       |
+| **[clone](Type.Type.Matrix3x3.md#clone-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 获得指定矩阵的拷贝                                                                                                             |
+| **[determinant](Type.Type.Matrix3x3.md#determinant-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md)): `number` <br> 求目标矩阵行列式                                                                                                                                |
+| **[equals](Type.Type.Matrix3x3.md#equals-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), `number`): `boolean` <br> 排除浮点数误差的矩阵近似等价判断                                                                        |
+| **[fromMat4](Type.Type.Matrix3x3.md#frommat4)**([`Matrix4x4`](Type.Type.Matrix4x4.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 取四阶矩阵的前三阶                                                                  |
+| **[fromRotation](Type.Type.Matrix3x3.md#fromrotation)**(`number`, [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 计算旋转矩阵                                                                                             |
+| **[fromScaling](Type.Type.Matrix3x3.md#fromscaling)**([`Vector2`](Type.Type.Vector2.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 计算缩放矩阵                                                                      |
+| **[fromTranslation](Type.Type.Matrix3x3.md#fromtranslation)**([`Vector2`](Type.Type.Vector2.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 计算位移矩阵                                                              |
+| **[fromViewUp](Type.Type.Matrix3x3.md#fromviewup)**([`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), `number`): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 根据视口前方向和上方向计算矩阵             |
+| **[inverseTransposeMat4](Type.Type.Matrix3x3.md#inversetransposemat4)**([`Matrix4x4`](Type.Type.Matrix4x4.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 计算指定四阶矩阵的逆转置三维矩阵                            |
+| **[invert](Type.Type.Matrix3x3.md#invert-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 将目标矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。                       |
+| **[multiply](Type.Type.Matrix3x3.md#multiply-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 矩阵乘法                                   |
+| **[rotate](Type.Type.Matrix3x3.md#rotate-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), `number`, [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 在给定矩阵变换基础上加入新旋转变换                                          |
+| **[scale](Type.Type.Matrix3x3.md#scale-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Vector`](Type.Type.Vector.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 在给定矩阵变换基础上加入新缩放变换                     |
+| **[strictEquals](Type.Type.Matrix3x3.md#strictequals-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): `boolean` <br> 矩阵等价判断                                                                                          |
+| **[subtract](Type.Type.Matrix3x3.md#subtract-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 逐元素矩阵减法                             |
+| **[transformVector](Type.Type.Matrix3x3.md#transformvector)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 向量与三维矩阵乘法                               |
+| **[transformVector2](Type.Type.Matrix3x3.md#transformvector2)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Vector2`](Type.Type.Vector2.md), [`Vector2`](Type.Type.Vector2.md)): [`Vector2`](Type.Type.Vector2.md) <br> 向量与三维矩阵乘法，默认向量第三位为 1。 |
+| **[transpose](Type.Type.Matrix3x3.md#transpose-1)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 将目标矩阵变为转置矩阵                                                          |
 
 **`Description`**
 
@@ -90,13 +70,9 @@ usage:双端
 
 #### Parameters
 
-| Name    | Type                                  | Description                 |
-| :------ | :------------------------------------ | :-------------------------- |
-| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:给定的 Matrix3x3 对象 |
-
-#### Defined in
-
-Type/index.d.ts:1417
+| Name    | Type                                  | Description           |
+| :------ | :------------------------------------ | :-------------------- |
+| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 给定的 Matrix3x3 对象 |
 
 • **new Matrix3x3**(`m00?`, `m01?`, `m02?`, `m10?`, `m11?`, `m12?`, `m20?`, `m21?`, `m22?`)
 
@@ -106,21 +82,17 @@ Type/index.d.ts:1417
 
 #### Parameters
 
-| Name   | Type     | Description                          |
-| :----- | :------- | :----------------------------------- |
-| `m00?` | `number` | usage:第 0 列第 0 行的元素 default:1 |
-| `m01?` | `number` | usage:第 0 列第 1 行的元素 default:0 |
-| `m02?` | `number` | usage:第 0 列第 2 行的元素 default:0 |
-| `m10?` | `number` | usage:第 1 列第 0 行的元素 default:0 |
-| `m11?` | `number` | usage:第 1 列第 1 行的元素 default:1 |
-| `m12?` | `number` | usage:第 1 列第 2 行的元素 default:0 |
-| `m20?` | `number` | usage:第 2 列第 0 行的元素 default:0 |
-| `m21?` | `number` | usage:第 2 列第 1 行的元素 default:0 |
-| `m22?` | `number` | usage:第 2 列第 2 行的元素 default:1 |
-
-#### Defined in
-
-Type/index.d.ts:1430
+| Name   | Type     | Description                    |
+| :----- | :------- | :----------------------------- |
+| `m00?` | `number` | 第 0 列第 0 行的元素 default:1 |
+| `m01?` | `number` | 第 0 列第 1 行的元素 default:0 |
+| `m02?` | `number` | 第 0 列第 2 行的元素 default:0 |
+| `m10?` | `number` | 第 1 列第 0 行的元素 default:0 |
+| `m11?` | `number` | 第 1 列第 1 行的元素 default:1 |
+| `m12?` | `number` | 第 1 列第 2 行的元素 default:0 |
+| `m20?` | `number` | 第 2 列第 0 行的元素 default:0 |
+| `m21?` | `number` | 第 2 列第 1 行的元素 default:0 |
+| `m22?` | `number` | 第 2 列第 2 行的元素 default:1 |
 
 ## Properties
 
@@ -132,10 +104,6 @@ Type/index.d.ts:1430
 
 矩阵第 0 列第 0 行的元素。
 
-#### Defined in
-
-Type/index.d.ts:1380
-
 ---
 
 ### m01
@@ -145,10 +113,6 @@ Type/index.d.ts:1380
 **`Description`**
 
 矩阵第 0 列第 1 行的元素。
-
-#### Defined in
-
-Type/index.d.ts:1384
 
 ---
 
@@ -160,10 +124,6 @@ Type/index.d.ts:1384
 
 矩阵第 0 列第 2 行的元素。
 
-#### Defined in
-
-Type/index.d.ts:1388
-
 ---
 
 ### m10
@@ -173,10 +133,6 @@ Type/index.d.ts:1388
 **`Description`**
 
 矩阵第 1 列第 0 行的元素。
-
-#### Defined in
-
-Type/index.d.ts:1392
 
 ---
 
@@ -188,10 +144,6 @@ Type/index.d.ts:1392
 
 矩阵第 1 列第 1 行的元素。
 
-#### Defined in
-
-Type/index.d.ts:1396
-
 ---
 
 ### m12
@@ -201,10 +153,6 @@ Type/index.d.ts:1396
 **`Description`**
 
 矩阵第 1 列第 2 行的元素。
-
-#### Defined in
-
-Type/index.d.ts:1400
 
 ---
 
@@ -216,10 +164,6 @@ Type/index.d.ts:1400
 
 矩阵第 2 列第 0 行的元素。
 
-#### Defined in
-
-Type/index.d.ts:1404
-
 ---
 
 ### m21
@@ -230,10 +174,6 @@ Type/index.d.ts:1404
 
 矩阵第 2 列第 1 行的元素。
 
-#### Defined in
-
-Type/index.d.ts:1408
-
 ---
 
 ### m22
@@ -243,10 +183,6 @@ Type/index.d.ts:1408
 **`Description`**
 
 矩阵第 2 列第 2 行的元素。
-
-#### Defined in
-
-Type/index.d.ts:1412
 
 ## Accessors
 
@@ -261,10 +197,6 @@ Type/index.d.ts:1412
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
-
-#### Defined in
-
-Type/index.d.ts:1176
 
 ## Methods
 
@@ -284,17 +216,13 @@ Type/index.d.ts:1176
 
 | Name  | Type                                  | Description |
 | :---- | :------------------------------------ | :---------- |
-| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵  |
+| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵        |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1527
 
 ---
 
@@ -316,10 +244,6 @@ Type/index.d.ts:1527
 
 克隆的新矩阵
 
-#### Defined in
-
-Type/index.d.ts:1446
-
 ---
 
 ### determinant
@@ -340,10 +264,6 @@ Type/index.d.ts:1446
 
 当前矩阵的行列式。
 
-#### Defined in
-
-Type/index.d.ts:1520
-
 ---
 
 ### equals
@@ -360,20 +280,16 @@ Type/index.d.ts:1520
 
 #### Parameters
 
-| Name       | Type                                  | Description                |
-| :--------- | :------------------------------------ | :------------------------- |
-| `other`    | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:比对的矩阵           |
-| `epsilon?` | `number`                              | usage:误差值 default:1.e-7 |
+| Name       | Type                                  | Description          |
+| :--------- | :------------------------------------ | :------------------- |
+| `other`    | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 比对的矩阵           |
+| `epsilon?` | `number`                              | 误差值 default:1.e-7 |
 
 #### Returns
 
 `boolean`
 
 比对的结果
-
-#### Defined in
-
-Type/index.d.ts:1486
 
 ---
 
@@ -393,10 +309,6 @@ Type/index.d.ts:1486
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:1504
-
 ---
 
 ### invert
@@ -414,10 +326,6 @@ Type/index.d.ts:1504
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:1514
 
 ---
 
@@ -437,17 +345,13 @@ Type/index.d.ts:1514
 
 | Name  | Type                                  | Description |
 | :---- | :------------------------------------ | :---------- |
-| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵  |
+| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵        |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1541
 
 ▸ **multiply**(`v`): [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
@@ -463,17 +367,13 @@ Type/index.d.ts:1541
 
 | Name | Type     | Description |
 | :--- | :------- | :---------- |
-| `v`  | `number` | usage:数    |
+| `v`  | `number` | 数          |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1548
 
 ---
 
@@ -491,19 +391,15 @@ Type/index.d.ts:1548
 
 #### Parameters
 
-| Name  | Type     | Description      |
-| :---- | :------- | :--------------- |
-| `rad` | `number` | usage:旋转的弧度 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `rad` | `number` | 旋转的弧度  |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1562
 
 ---
 
@@ -521,19 +417,15 @@ Type/index.d.ts:1562
 
 #### Parameters
 
-| Name  | Type                            | Description            |
-| :---- | :------------------------------ | :--------------------- |
-| `vec` | [`Vector`](Type.Type.Vector.md) | usage:对矩阵缩放的向量 |
+| Name  | Type                            | Description      |
+| :---- | :------------------------------ | :--------------- |
+| `vec` | [`Vector`](Type.Type.Vector.md) | 对矩阵缩放的向量 |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1555
 
 ---
 
@@ -551,19 +443,15 @@ Type/index.d.ts:1555
 
 #### Parameters
 
-| Name    | Type                                  | Description    |
-| :------ | :------------------------------------ | :------------- |
-| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:指定矩阵 |
+| Name    | Type                                  | Description |
+| :------ | :------------------------------------ | :---------- |
+| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 指定矩阵    |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1453
 
 ▸ **set**(`m00?`, `m01?`, `m02?`, `m10?`, `m11?`, `m12?`, `m20?`, `m21?`, `m22?`): [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
@@ -577,27 +465,23 @@ Type/index.d.ts:1453
 
 #### Parameters
 
-| Name   | Type     | Description                          |
-| :----- | :------- | :----------------------------------- |
-| `m00?` | `number` | usage:第 0 行第 0 列的元素 default:1 |
-| `m01?` | `number` | usage:第 0 行第 1 列的元素 default:0 |
-| `m02?` | `number` | usage:第 0 行第 2 列的元素 default:0 |
-| `m10?` | `number` | usage:第 1 行第 0 列的元素 default:0 |
-| `m11?` | `number` | usage:第 1 行第 1 列的元素 default:1 |
-| `m12?` | `number` | usage:第 1 行第 2 列的元素 default:0 |
-| `m20?` | `number` | usage:第 2 行第 0 列的元素 default:0 |
-| `m21?` | `number` | usage:第 2 行第 1 列的元素 default:0 |
-| `m22?` | `number` | usage:第 2 行第 2 列的元素 default:1 |
+| Name   | Type     | Description                    |
+| :----- | :------- | :----------------------------- |
+| `m00?` | `number` | 第 0 行第 0 列的元素 default:1 |
+| `m01?` | `number` | 第 0 行第 1 列的元素 default:0 |
+| `m02?` | `number` | 第 0 行第 2 列的元素 default:0 |
+| `m10?` | `number` | 第 1 行第 0 列的元素 default:0 |
+| `m11?` | `number` | 第 1 行第 1 列的元素 default:1 |
+| `m12?` | `number` | 第 1 行第 2 列的元素 default:0 |
+| `m20?` | `number` | 第 2 行第 0 列的元素 default:0 |
+| `m21?` | `number` | 第 2 行第 1 列的元素 default:0 |
+| `m22?` | `number` | 第 2 行第 2 列的元素 default:1 |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1468
 
 ---
 
@@ -615,19 +499,15 @@ Type/index.d.ts:1468
 
 #### Parameters
 
-| Name    | Type                                  | Description      |
-| :------ | :------------------------------------ | :--------------- |
-| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:比对的矩阵 |
+| Name    | Type                                  | Description |
+| :------ | :------------------------------------ | :---------- |
+| `other` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 比对的矩阵  |
 
 #### Returns
 
 `boolean`
 
 比对的结果
-
-#### Defined in
-
-Type/index.d.ts:1493
 
 ---
 
@@ -647,17 +527,13 @@ Type/index.d.ts:1493
 
 | Name  | Type                                  | Description |
 | :---- | :------------------------------------ | :---------- |
-| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵  |
+| `mat` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵        |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 this
-
-#### Defined in
-
-Type/index.d.ts:1534
 
 ---
 
@@ -679,10 +555,6 @@ Type/index.d.ts:1534
 
 返回矩阵的字符串信息
 
-#### Defined in
-
-Type/index.d.ts:1499
-
 ---
 
 ### transpose
@@ -700,10 +572,6 @@ Type/index.d.ts:1499
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:1509
 
 ---
 
@@ -725,21 +593,17 @@ Type/index.d.ts:1509
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a                      |
-| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 b                      |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a                      |
+| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 b                      |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1319
 
 ---
 
@@ -757,19 +621,15 @@ Type/index.d.ts:1319
 
 #### Parameters
 
-| Name | Type                                  | Description    |
-| :--- | :------------------------------------ | :------------- |
-| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:指定矩阵 |
+| Name | Type                                  | Description |
+| :--- | :------------------------------------ | :---------- |
+| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 指定矩阵    |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 一个新的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1183
 
 ---
 
@@ -787,19 +647,15 @@ Type/index.d.ts:1183
 
 #### Parameters
 
-| Name | Type                                  | Description    |
-| :--- | :------------------------------------ | :------------- |
-| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:目标矩阵 |
+| Name | Type                                  | Description |
+| :--- | :------------------------------------ | :---------- |
+| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 目标矩阵    |
 
 #### Returns
 
 `number`
 
 行列式的结果
-
-#### Defined in
-
-Type/index.d.ts:1208
 
 ---
 
@@ -817,21 +673,17 @@ Type/index.d.ts:1208
 
 #### Parameters
 
-| Name       | Type                                  | Description                |
-| :--------- | :------------------------------------ | :------------------------- |
-| `a`        | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a               |
-| `b`        | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 b               |
-| `epsilon?` | `number`                              | usage:误差值 default:1.e-7 |
+| Name       | Type                                  | Description          |
+| :--------- | :------------------------------------ | :------------------- |
+| `a`        | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a               |
+| `b`        | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 b               |
+| `epsilon?` | `number`                              | 误差值 default:1.e-7 |
 
 #### Returns
 
 `boolean`
 
 返回比对结果
-
-#### Defined in
-
-Type/index.d.ts:1376
 
 ---
 
@@ -853,20 +705,16 @@ Type/index.d.ts:1376
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:源四阶矩阵                        |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | 源四阶矩阵                        |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 提取后的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1257
 
 ---
 
@@ -888,20 +736,16 @@ Type/index.d.ts:1257
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `rad`    | `number`                              | usage:旋转弧度                          |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `rad`    | `number`                              | 旋转弧度                          |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 含旋转信息的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1300
 
 ---
 
@@ -923,20 +767,16 @@ Type/index.d.ts:1300
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `v`      | [`Vector2`](Type.Type.Vector2.md)     | usage:缩放信息的二维向量                |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `v`      | [`Vector2`](Type.Type.Vector2.md)     | 缩放信息的二维向量                |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 含缩放信息的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1291
 
 ---
 
@@ -958,20 +798,16 @@ Type/index.d.ts:1291
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `v`      | [`Vector2`](Type.Type.Vector2.md)     | usage:位移的二维向量                    |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `v`      | [`Vector2`](Type.Type.Vector2.md)     | 位移的二维向量                    |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 含位移信息的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1282
 
 ---
 
@@ -993,22 +829,18 @@ Type/index.d.ts:1282
 
 #### Parameters
 
-| Name       | Type                                  | Description                                 |
-| :--------- | :------------------------------------ | :------------------------------------------ |
-| `view`     | [`Vector`](Type.Type.Vector.md)       | usage:视口向量                              |
-| `up?`      | [`Vector`](Type.Type.Vector.md)       | usage:视口的上向量 default:null             |
-| `outer?`   | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null     |
-| `epsilon?` | `number`                              | usage:最小误差数 default:MathDefine.EPSILON |
+| Name       | Type                                  | Description                           |
+| :--------- | :------------------------------------ | :------------------------------------ |
+| `view`     | [`Vector`](Type.Type.Vector.md)       | 视口向量                              |
+| `up?`      | [`Vector`](Type.Type.Vector.md)       | 视口的上向量 default:null             |
+| `outer?`   | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null     |
+| `epsilon?` | `number`                              | 最小误差数 default:MathDefine.EPSILON |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1268
 
 ---
 
@@ -1030,20 +862,16 @@ Type/index.d.ts:1268
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:四阶矩阵                          |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `a`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | 四阶矩阵                          |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 逆转置后的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1309
 
 ---
 
@@ -1065,20 +893,16 @@ Type/index.d.ts:1309
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:目标矩阵                    |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:写入数据的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 目标矩阵                    |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 写入数据的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 求逆后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1201
 
 ---
 
@@ -1100,21 +924,17 @@ Type/index.d.ts:1201
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a                      |
-| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 b                      |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a                      |
+| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 b                      |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1339
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
@@ -1132,21 +952,17 @@ Type/index.d.ts:1339
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a                      |
-| `b`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | usage:矩阵 b                      |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a                      |
+| `b`      | [`Matrix4x4`](Type.Type.Matrix4x4.md) | 矩阵 b                      |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1349
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
@@ -1164,21 +980,17 @@ Type/index.d.ts:1349
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a                      |
-| `b`      | `number`                              | usage:数字 b                      |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a                      |
+| `b`      | `number`                              | 数字 b                      |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1359
 
 ---
 
@@ -1200,21 +1012,17 @@ Type/index.d.ts:1359
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:需要变换的矩阵                    |
-| `rad`    | `number`                              | usage:旋转弧度                          |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 需要变换的矩阵                    |
+| `rad`    | `number`                              | 旋转弧度                          |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 旋转后的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1248
 
 ---
 
@@ -1236,21 +1044,17 @@ Type/index.d.ts:1248
 
 #### Parameters
 
-| Name     | Type                                  | Description                             |
-| :------- | :------------------------------------ | :-------------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:三维矩阵                          |
-| `v`      | [`Vector`](Type.Type.Vector.md)       | usage:缩放矩阵的三维向量                |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果三维矩阵对象 default:null |
+| Name     | Type                                  | Description                       |
+| :------- | :------------------------------------ | :-------------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 三维矩阵                          |
+| `v`      | [`Vector`](Type.Type.Vector.md)       | 缩放矩阵的三维向量                |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果三维矩阵对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 缩放后的三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:1238
 
 ---
 
@@ -1268,20 +1072,16 @@ Type/index.d.ts:1238
 
 #### Parameters
 
-| Name | Type                                  | Description  |
-| :--- | :------------------------------------ | :----------- |
-| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a |
-| `b`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 b |
+| Name | Type                                  | Description |
+| :--- | :------------------------------------ | :---------- |
+| `a`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a      |
+| `b`  | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 b      |
 
 #### Returns
 
 `boolean`
 
 返回比对结果
-
-#### Defined in
-
-Type/index.d.ts:1367
 
 ---
 
@@ -1303,21 +1103,17 @@ Type/index.d.ts:1367
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 a                      |
-| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:矩阵 b                      |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:接收结果的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 a                      |
+| `b`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 矩阵 b                      |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 接收结果的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 计算后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1329
 
 ---
 
@@ -1339,21 +1135,17 @@ Type/index.d.ts:1329
 
 #### Parameters
 
-| Name     | Type                                  | Description                         |
-| :------- | :------------------------------------ | :---------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:三维矩阵                      |
-| `b`      | [`Vector`](Type.Type.Vector.md)       | usage:三维向量                      |
-| `outer?` | [`Vector`](Type.Type.Vector.md)       | usage:被写入的三维向量 default:null |
+| Name     | Type                                  | Description                   |
+| :------- | :------------------------------------ | :---------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 三维矩阵                      |
+| `b`      | [`Vector`](Type.Type.Vector.md)       | 三维向量                      |
+| `outer?` | [`Vector`](Type.Type.Vector.md)       | 被写入的三维向量 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 变换后的三维向量
-
-#### Defined in
-
-Type/index.d.ts:1228
 
 ---
 
@@ -1375,21 +1167,17 @@ Type/index.d.ts:1228
 
 #### Parameters
 
-| Name     | Type                                  | Description                         |
-| :------- | :------------------------------------ | :---------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:三维矩阵                      |
-| `b`      | [`Vector2`](Type.Type.Vector2.md)     | usage:二维向量                      |
-| `outer?` | [`Vector2`](Type.Type.Vector2.md)     | usage:被写入的二维向量 default:null |
+| Name     | Type                                  | Description                   |
+| :------- | :------------------------------------ | :---------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 三维矩阵                      |
+| `b`      | [`Vector2`](Type.Type.Vector2.md)     | 二维向量                      |
+| `outer?` | [`Vector2`](Type.Type.Vector2.md)     | 被写入的二维向量 default:null |
 
 #### Returns
 
 [`Vector2`](Type.Type.Vector2.md)
 
 变换后的二维向量
-
-#### Defined in
-
-Type/index.d.ts:1218
 
 ---
 
@@ -1411,17 +1199,13 @@ Type/index.d.ts:1218
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:目标矩阵                    |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | usage:写入数据的矩阵 default:null |
+| Name     | Type                                  | Description                 |
+| :------- | :------------------------------------ | :-------------------------- |
+| `a`      | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 目标矩阵                    |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md) | 写入数据的矩阵 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 转置后的矩阵
-
-#### Defined in
-
-Type/index.d.ts:1192

@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Extension](../modules/Extension.md) / [Extension](../modules/Extension.Extension.md) / GameObjPool
+[Extension](../modules/Extension.Extension.md) / GameObjPool
 
-# Class: GameObjPool
-
-[Extension](../modules/Extension.md).[Extension](../modules/Extension.Extension.md).GameObjPool
-
-**`Author`**
-
-huipeng.jia
+# GameObjPool <Badge type="tip" text="Class" />
 
 **`Instance`**
 
@@ -18,29 +12,15 @@ GameObject 对象池
 
 单例类，请使用 getInstance 获取对象
 
-**`Network Status`**
-
-usage: 双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Extension.Extension.GameObjPool.md#constructor)
-
-### Methods
-
-- [clear](Extension.Extension.GameObjPool.md#clear)
-- [despawn](Extension.Extension.GameObjPool.md#despawn)
-- [destroy](Extension.Extension.GameObjPool.md#destroy)
-- [spawn](Extension.Extension.GameObjPool.md#spawn)
-- [getInstance](Extension.Extension.GameObjPool.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new GameObjPool**()
+| Methods                                                                                                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------- |
+| **[clear](Extension.Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该 guid 对应的所有对象                                  |
+| **[despawn](Extension.Extension.GameObjPool.md#despawn)**(`GameObject`): `void` <br> 归还一个对象                                                |
+| **[destroy](Extension.Extension.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例                                                      |
+| **[spawn](Extension.Extension.GameObjPool.md#spawn)**<extends `GameObject`<`T`\>                                                                 | \>(`string`): extends `GameObject`<`T`\> | <br> 生成一个对象 |
+| **[getInstance](Extension.Extension.GameObjPool.md#getinstance)**(): [`GameObjPool`](Extension.Extension.GameObjPool.md) <br> 获取对象池全局实例 |
 
 ## Methods
 
@@ -58,17 +38,13 @@ usage: 双端
 
 #### Parameters
 
-| Name   | Type     | Description              |
-| :----- | :------- | :----------------------- |
-| `guid` | `string` | usage: 要清除对象的 guid |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
+| `guid` | `string` | 要清除对象的 guid |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Extension/index.d.ts:39
 
 ---
 
@@ -86,17 +62,13 @@ Extension/index.d.ts:39
 
 #### Parameters
 
-| Name  | Type         | Description         |
-| :---- | :----------- | :------------------ |
-| `obj` | `GameObject` | usage: 要归还的对象 |
+| Name  | Type         | Description  |
+| :---- | :----------- | :----------- |
+| `obj` | `GameObject` | 要归还的对象 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Extension/index.d.ts:33
 
 ---
 
@@ -115,10 +87,6 @@ Extension/index.d.ts:33
 #### Returns
 
 `void`
-
-#### Defined in
-
-Extension/index.d.ts:20
 
 ---
 
@@ -142,19 +110,15 @@ Extension/index.d.ts:20
 
 #### Parameters
 
-| Name   | Type     | Description                                             |
-| :----- | :------- | :------------------------------------------------------ |
-| `guid` | `string` | usage: 场景对象的 guid \| 资源的 guid \| prefab 的 guid |
+| Name   | Type     | Description                                      |
+| :----- | :------- | :----------------------------------------------- |
+| `guid` | `string` | 场景对象的 guid \| 资源的 guid \| prefab 的 guid |
 
 #### Returns
 
 `T`
 
 生成的对象
-
-#### Defined in
-
-Extension/index.d.ts:27
 
 ---
 
@@ -175,7 +139,3 @@ Extension/index.d.ts:27
 [`GameObjPool`](Extension.Extension.GameObjPool.md)
 
 对象池全局实例
-
-#### Defined in
-
-Extension/index.d.ts:15

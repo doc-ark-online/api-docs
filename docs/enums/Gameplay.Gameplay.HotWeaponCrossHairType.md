@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponCrossHairType
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponCrossHairType
 
-# Enumeration: HotWeaponCrossHairType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponCrossHairType
+# HotWeaponCrossHairType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FirstPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#firstpersoncrosshair)
-- [None](Gameplay.Gameplay.HotWeaponCrossHairType.md#none)
-- [ThirdPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersoncrosshair)
-- [ThirdPersonDot](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersondot)
+| Enumeration Members                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| **[FirstPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#firstpersoncrosshair)** = `3` <br> 第一人称十字准心 |
+| **[None](Gameplay.Gameplay.HotWeaponCrossHairType.md#none)** = `0` <br> 无准星                                           |
+| **[ThirdPersonCrossHair](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersoncrosshair)** = `1` <br> 第三人称十字准心 |
+| **[ThirdPersonDot](Gameplay.Gameplay.HotWeaponCrossHairType.md#thirdpersondot)** = `2` <br> 第三人称红点准心             |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 第一人称十字准心
 
-#### Defined in
-
-Gameplay/index.d.ts:11385
-
 ---
 
 ### None
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:11385
 • **None** = `0`
 
 无准星
-
-#### Defined in
-
-Gameplay/index.d.ts:11379
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:11379
 
 第三人称十字准心
 
-#### Defined in
-
-Gameplay/index.d.ts:11381
-
 ---
 
 ### ThirdPersonDot
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:11381
 • **ThirdPersonDot** = `2`
 
 第三人称红点准心
-
-#### Defined in
-
-Gameplay/index.d.ts:11383

@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / MessageChannelReceiver
+[Service](../modules/Service.Service.md) / MessageChannelReceiver
 
-# Enumeration: MessageChannelReceiver
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).MessageChannelReceiver
+# MessageChannelReceiver <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Client](Service.Service.MessageChannelReceiver.md#client)
-- [MGS](Service.Service.MessageChannelReceiver.md#mgs)
-- [MetaWorld](Service.Service.MessageChannelReceiver.md#metaworld)
-- [TS](Service.Service.MessageChannelReceiver.md#ts)
-- [WebSocket](Service.Service.MessageChannelReceiver.md#websocket)
+| Enumeration Members                                                                                                       |
+| :------------------------------------------------------------------------------------------------------------------------ |
+| **[Client](Service.Service.MessageChannelReceiver.md#client)** = `1` <br> 平台层，根据移动端平台可能是 Android、PC 或 iOS |
+| **[MGS](Service.Service.MessageChannelReceiver.md#mgs)** = `3` <br> 预留 MGS 对象，暂时没有实际接入通道                   |
+| **[MetaWorld](Service.Service.MessageChannelReceiver.md#metaworld)** = `0` <br> C++层，MetaWorld 引擎                     |
+| **[TS](Service.Service.MessageChannelReceiver.md#ts)** = `2` <br> TS 层，游戏项目                                         |
+| **[WebSocket](Service.Service.MessageChannelReceiver.md#websocket)** = `4` <br> Web 层，Room manager（并非 DS）           |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 平台层，根据移动端平台可能是 Android、PC 或 iOS
 
-#### Defined in
-
-Service/index.d.ts:268
-
 ---
 
 ### MGS
@@ -37,10 +31,6 @@ Service/index.d.ts:268
 • **MGS** = `3`
 
 预留 MGS 对象，暂时没有实际接入通道
-
-#### Defined in
-
-Service/index.d.ts:272
 
 ---
 
@@ -50,10 +40,6 @@ Service/index.d.ts:272
 
 C++层，MetaWorld 引擎
 
-#### Defined in
-
-Service/index.d.ts:266
-
 ---
 
 ### TS
@@ -62,10 +48,6 @@ Service/index.d.ts:266
 
 TS 层，游戏项目
 
-#### Defined in
-
-Service/index.d.ts:270
-
 ---
 
 ### WebSocket
@@ -73,7 +55,3 @@ Service/index.d.ts:270
 • **WebSocket** = `4`
 
 Web 层，Room manager（并非 DS）
-
-#### Defined in
-
-Service/index.d.ts:274

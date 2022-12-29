@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [MobileEditor](../modules/MobileEditor.md) / [MobileEditor](../modules/MobileEditor.MobileEditor.md) / SelectTapType
+[MobileEditor](../modules/MobileEditor.MobileEditor.md) / SelectTapType
 
-# Enumeration: SelectTapType
-
-[MobileEditor](../modules/MobileEditor.md).[MobileEditor](../modules/MobileEditor.MobileEditor.md).SelectTapType
+# SelectTapType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@ UGC 选中的单选或者多选
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Multi](MobileEditor.MobileEditor.SelectTapType.md#multi)
-- [None](MobileEditor.MobileEditor.SelectTapType.md#none)
-- [Single](MobileEditor.MobileEditor.SelectTapType.md#single)
+| Enumeration Members                                                             |
+| :------------------------------------------------------------------------------ |
+| **[Multi](MobileEditor.MobileEditor.SelectTapType.md#multi)** = `2` <br> 多选   |
+| **[None](MobileEditor.MobileEditor.SelectTapType.md#none)** = `0` <br> 未选中   |
+| **[Single](MobileEditor.MobileEditor.SelectTapType.md#single)** = `1` <br> 单选 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@ UGC 选中的单选或者多选
 
 多选
 
-#### Defined in
-
-MobileEditor/index.d.ts:620
-
 ---
 
 ### None
@@ -36,10 +30,6 @@ MobileEditor/index.d.ts:620
 
 未选中
 
-#### Defined in
-
-MobileEditor/index.d.ts:616
-
 ---
 
 ### Single
@@ -47,7 +37,3 @@ MobileEditor/index.d.ts:616
 • **Single** = `1`
 
 单选
-
-#### Defined in
-
-MobileEditor/index.d.ts:618
