@@ -1,40 +1,20 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / SlateBrushWithGuid
+[UI](../modules/UI.UI.md) / SlateBrushWithGuid
 
-# Class: SlateBrushWithGuid
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).SlateBrushWithGuid
-
-**`Author`**
-
-jie.wu
+# SlateBrushWithGuid <Badge type="tip" text="Class" />
 
 **`Description`**
 
 贴图信息
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.SlateBrushWithGuid.md#constructor)
-
-### Properties
-
-- [drawAs](UI.UI.SlateBrushWithGuid.md#drawas)
-- [guid](UI.UI.SlateBrushWithGuid.md#guid)
-- [imageSize](UI.UI.SlateBrushWithGuid.md#imagesize)
-- [marin](UI.UI.SlateBrushWithGuid.md#marin)
-- [tintColor](UI.UI.SlateBrushWithGuid.md#tintcolor)
-
-## Constructors
-
-### constructor
-
-• **new SlateBrushWithGuid**(`InGuid`)
+| Properties                                                                                                                   |
+| :--------------------------------------------------------------------------------------------------------------------------- |
+| **[drawAs](UI.UI.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 绘制模式 |
+| **[guid](UI.UI.SlateBrushWithGuid.md#guid)**: `string` <br> 资源 ID                                                          |
+| **[imageSize](UI.UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Type.Vector2.md) <br> 资源大小                      |
+| **[marin](UI.UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.UI.Margin.md) <br> 边缘缩进                                    |
+| **[tintColor](UI.UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.UI.SlateColor.md) <br> 颜色                        |
 
 **`Description`**
 
@@ -46,13 +26,9 @@ usage:客户端
 
 #### Parameters
 
-| Name     | Type     | Description   |
-| :------- | :------- | :------------ |
-| `InGuid` | `string` | usage:资源 id |
-
-#### Defined in
-
-UI/index.d.ts:3973
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `InGuid` | `string` | 资源 id     |
 
 ## Properties
 
@@ -64,10 +40,6 @@ UI/index.d.ts:3973
 
 绘制模式
 
-#### Defined in
-
-UI/index.d.ts:3981
-
 ---
 
 ### guid
@@ -77,10 +49,6 @@ UI/index.d.ts:3981
 **`Description`**
 
 资源 ID
-
-#### Defined in
-
-UI/index.d.ts:3983
 
 ---
 
@@ -92,10 +60,6 @@ UI/index.d.ts:3983
 
 资源大小
 
-#### Defined in
-
-UI/index.d.ts:3975
-
 ---
 
 ### marin
@@ -106,10 +70,6 @@ UI/index.d.ts:3975
 
 边缘缩进
 
-#### Defined in
-
-UI/index.d.ts:3977
-
 ---
 
 ### tintColor
@@ -119,7 +79,3 @@ UI/index.d.ts:3977
 **`Description`**
 
 颜色
-
-#### Defined in
-
-UI/index.d.ts:3979

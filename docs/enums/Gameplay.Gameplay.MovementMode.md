@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / MovementMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / MovementMode
 
-# Enumeration: MovementMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).MovementMode
+# MovementMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Fly](Gameplay.Gameplay.MovementMode.md#fly)
-- [Swim](Gameplay.Gameplay.MovementMode.md#swim)
-- [Walk](Gameplay.Gameplay.MovementMode.md#walk)
+| Enumeration Members                                                |
+| :----------------------------------------------------------------- |
+| **[Fly](Gameplay.Gameplay.MovementMode.md#fly)** = `2` <br> 飞行   |
+| **[Swim](Gameplay.Gameplay.MovementMode.md#swim)** = `1` <br> 游泳 |
+| **[Walk](Gameplay.Gameplay.MovementMode.md#walk)** = `0` <br> 行走 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 飞行
 
-#### Defined in
-
-Gameplay/index.d.ts:1694
-
 ---
 
 ### Swim
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:1694
 
 游泳
 
-#### Defined in
-
-Gameplay/index.d.ts:1692
-
 ---
 
 ### Walk
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:1692
 • **Walk** = `0`
 
 行走
-
-#### Defined in
-
-Gameplay/index.d.ts:1690

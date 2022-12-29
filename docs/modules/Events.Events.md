@@ -1,35 +1,33 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Events](Events.md) / Events
+Events
 
-# Namespace: Events
-
-[Events](Events.md).Events, hi
+# Events <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
-### Enumerations
+| Enumerations                                                                             |
+| :--------------------------------------------------------------------------------------- |
+| [DispatchEventResult](../enums/Events.Events.DispatchEventResult.md) <br> 事件发送的结果 |
 
-- [DispatchEventResult](../enums/Events.Events.DispatchEventResult.md)
+| Classes                                                                    |
+| :------------------------------------------------------------------------- |
+| [EventListener](../classes/Events.Events.EventListener.md) <br> 事件监听器 |
 
-### Classes
-
-- [EventListener](../classes/Events.Events.EventListener.md)
-
-### Functions
-
-- [addClientListener](Events.Events.md#addclientlistener)
-- [addExitListener](Events.Events.md#addexitlistener)
-- [addFocusListener](Events.Events.md#addfocuslistener)
-- [addLocalListener](Events.Events.md#addlocallistener)
-- [addOnPauseListener](Events.Events.md#addonpauselistener)
-- [addOnResumeListener](Events.Events.md#addonresumelistener)
-- [addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)
-- [addPlayerLeftListener](Events.Events.md#addplayerleftlistener)
-- [addServerListener](Events.Events.md#addserverlistener)
-- [addUnfocusedListener](Events.Events.md#addunfocusedlistener)
-- [dispatchLocal](Events.Events.md#dispatchlocal)
-- [dispatchToAllClient](Events.Events.md#dispatchtoallclient)
-- [dispatchToClient](Events.Events.md#dispatchtoclient)
-- [dispatchToServer](Events.Events.md#dispatchtoserver)
+| Functions                                                                                                                                                                                                                                                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addClientListener](Events.Events.md#addclientlistener)**(`string`, (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 服务器监听客户端发来的事件 |
+| **[addExitListener](Events.Events.md#addexitlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加退出游戏时执行的回调函数                                                                                                   |
+| **[addFocusListener](Events.Events.md#addfocuslistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数                                                                                                 |
+| **[addLocalListener](Events.Events.md#addlocallistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听本地事件                                                                               |
+| **[addOnPauseListener](Events.Events.md#addonpauselistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加 OnPause 开始时执行的回调函数                                                                                        |
+| **[addOnResumeListener](Events.Events.md#addonresumelistener)**((`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加 OnPause 结束时执行的回调函数                                                             |
+| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家进入 room 事件                             |
+| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家离开 room 事件                                 |
+| **[addServerListener](Events.Events.md#addserverlistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 客户端监听服务器事件                                                                     |
+| **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数                                                                                         |
+| **[dispatchLocal](Events.Events.md#dispatchlocal)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 发送本地事件                                                                                                    |
+| **[dispatchToAllClient](Events.Events.md#dispatchtoallclient)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端                                                                          |
+| **[dispatchToClient](Events.Events.md#dispatchtoclient)**([`Player`](../classes/Gameplay.Gameplay.Player.md), `string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端                            |
+| **[dispatchToServer](Events.Events.md#dispatchtoserver)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 客户端发送事件给服务器                                                                                    |
 
 ## Functions
 
@@ -51,20 +49,16 @@
 
 #### Parameters
 
-| Name        | Type                                                                                               | Description                                            |
-| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------- |
-| `eventName` | `string`                                                                                           | usage:事件名                                           |
-| `listener`  | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | usage:监听回调 Player 发送事件的客户端 target 事件内容 |
+| Name        | Type                                                                                               | Description                                      |
+| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------- |
+| `eventName` | `string`                                                                                           | 事件名                                           |
+| `listener`  | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:63
 
 ---
 
@@ -88,7 +82,7 @@ Events/index.d.ts:63
 
 使用示例:调用方法
 
-```
+```ts
 let listener = Events.addExitListener(this.testFunction);
 public testFunction() {
 }
@@ -98,19 +92,15 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description              |
-| :--------- | :----------- | :----------------------- |
-| `callback` | () => `void` | usage:需要触发的回调函数 |
+| Name       | Type         | Description        |
+| :--------- | :----------- | :----------------- |
+| `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:221
 
 ---
 
@@ -134,7 +124,7 @@ Events/index.d.ts:221
 
 使用示例:调用方法
 
-```
+```ts
 let listener = Events.addFocusListener(this.testFunction);
 public testFunction() {
 }
@@ -144,19 +134,15 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description              |
-| :--------- | :----------- | :----------------------- |
-| `callback` | () => `void` | usage:需要触发的回调函数 |
+| Name       | Type         | Description        |
+| :--------- | :----------- | :----------------- |
+| `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:151
 
 ---
 
@@ -174,20 +160,16 @@ Events/index.d.ts:151
 
 #### Parameters
 
-| Name        | Type                                 | Description    |
-| :---------- | :----------------------------------- | :------------- |
-| `eventName` | `string`                             | usage:事件名   |
-| `listener`  | (...`params`: `unknown`[]) => `void` | usage:监听回调 |
+| Name        | Type                                 | Description |
+| :---------- | :----------------------------------- | :---------- |
+| `eventName` | `string`                             | 事件名      |
+| `listener`  | (...`params`: `unknown`[]) => `void` | 监听回调    |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:40
 
 ---
 
@@ -211,7 +193,7 @@ Events/index.d.ts:40
 
 使用示例:调用方法
 
-```
+```ts
 let listener = Events.addOnPauseListener(this.testFunction);
 public testFunction() {
 }
@@ -221,19 +203,15 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description              |
-| :--------- | :----------- | :----------------------- |
-| `callback` | () => `void` | usage:需要触发的回调函数 |
+| Name       | Type         | Description        |
+| :--------- | :----------- | :----------------- |
+| `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:185
 
 ---
 
@@ -257,7 +235,7 @@ Events/index.d.ts:185
 
 使用示例:调用方法
 
-```
+```ts
 let listener = Events.addOnResumeListener(this.testFunction);
 public testFunction(leaveDuration: number) {
 }
@@ -267,19 +245,15 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type                                  | Description                                                 |
-| :--------- | :------------------------------------ | :---------------------------------------------------------- |
-| `callback` | (`leaveDuration`: `number`) => `void` | usage:需要触发的回调函数，leaveDuration 指 OnPause 持续时长 |
+| Name       | Type                                  | Description                                           |
+| :--------- | :------------------------------------ | :---------------------------------------------------- |
+| `callback` | (`leaveDuration`: `number`) => `void` | 需要触发的回调函数，leaveDuration 指 OnPause 持续时长 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:202
 
 ---
 
@@ -297,19 +271,15 @@ Events/index.d.ts:202
 
 #### Parameters
 
-| Name       | Type                                                                     | Description    |
-| :--------- | :----------------------------------------------------------------------- | :------------- |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | usage:监听回调 |
+| Name       | Type                                                                     | Description |
+| :--------- | :----------------------------------------------------------------------- | :---------- |
+| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调    |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:123
 
 ---
 
@@ -327,19 +297,15 @@ Events/index.d.ts:123
 
 #### Parameters
 
-| Name       | Type                                                                     | Description    |
-| :--------- | :----------------------------------------------------------------------- | :------------- |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | usage:监听回调 |
+| Name       | Type                                                                     | Description |
+| :--------- | :----------------------------------------------------------------------- | :---------- |
+| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调    |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:132
 
 ---
 
@@ -361,20 +327,16 @@ Events/index.d.ts:132
 
 #### Parameters
 
-| Name        | Type                                 | Description                    |
-| :---------- | :----------------------------------- | :----------------------------- |
-| `eventName` | `string`                             | usage:事件名                   |
-| `listener`  | (...`params`: `unknown`[]) => `void` | usage:监听回调 params 事件内容 |
+| Name        | Type                                 | Description              |
+| :---------- | :----------------------------------- | :----------------------- |
+| `eventName` | `string`                             | 事件名                   |
+| `listener`  | (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:87
 
 ---
 
@@ -398,7 +360,7 @@ Events/index.d.ts:87
 
 使用示例:调用方法
 
-```
+```ts
 let listener = Events.addUnfocusedListener(this.testFunction);
 public testFunction() {
 }
@@ -408,19 +370,15 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description              |
-| :--------- | :----------- | :----------------------- |
-| `callback` | () => `void` | usage:需要触发的回调函数 |
+| Name       | Type         | Description        |
+| :--------- | :----------- | :----------------- |
+| `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
 
 [`EventListener`](../classes/Events.Events.EventListener.md)
 
 返回一个事件监听器
-
-#### Defined in
-
-Events/index.d.ts:168
 
 ---
 
@@ -438,20 +396,16 @@ Events/index.d.ts:168
 
 #### Parameters
 
-| Name        | Type        | Description    |
-| :---------- | :---------- | :------------- |
-| `eventName` | `string`    | usage:事件名   |
-| `...params` | `unknown`[] | usage:事件内容 |
+| Name        | Type        | Description |
+| :---------- | :---------- | :---------- |
+| `eventName` | `string`    | 事件名      |
+| `...params` | `unknown`[] | 事件内容    |
 
 #### Returns
 
 [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md)
 
 返回发送本地事件的结果
-
-#### Defined in
-
-Events/index.d.ts:51
 
 ---
 
@@ -473,20 +427,16 @@ Events/index.d.ts:51
 
 #### Parameters
 
-| Name        | Type        | Description      |
-| :---------- | :---------- | :--------------- |
-| `eventName` | `string`    | usage:事件名     |
-| `...params` | `unknown`[] | usage:可变长参数 |
+| Name        | Type        | Description |
+| :---------- | :---------- | :---------- |
+| `eventName` | `string`    | 事件名      |
+| `...params` | `unknown`[] | 可变长参数  |
 
 #### Returns
 
 [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md)
 
 返回事件发送结果
-
-#### Defined in
-
-Events/index.d.ts:113
 
 ---
 
@@ -508,21 +458,17 @@ Events/index.d.ts:113
 
 #### Parameters
 
-| Name        | Type                                               | Description      |
-| :---------- | :------------------------------------------------- | :--------------- |
-| `player`    | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:客户端     |
-| `eventName` | `string`                                           | usage:事件名     |
-| `...params` | `unknown`[]                                        | usage:可变长参数 |
+| Name        | Type                                               | Description |
+| :---------- | :------------------------------------------------- | :---------- |
+| `player`    | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 客户端      |
+| `eventName` | `string`                                           | 事件名      |
+| `...params` | `unknown`[]                                        | 可变长参数  |
 
 #### Returns
 
 [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md)
 
 返回事件发送结果
-
-#### Defined in
-
-Events/index.d.ts:100
 
 ---
 
@@ -544,17 +490,13 @@ Events/index.d.ts:100
 
 #### Parameters
 
-| Name        | Type        | Description      |
-| :---------- | :---------- | :--------------- |
-| `eventName` | `string`    | usage:事件名     |
-| `...params` | `unknown`[] | usage:可变长参数 |
+| Name        | Type        | Description |
+| :---------- | :---------- | :---------- |
+| `eventName` | `string`    | 事件名      |
+| `...params` | `unknown`[] | 可变长参数  |
 
 #### Returns
 
 [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md)
 
 返回事件发送结果
-
-#### Defined in
-
-Events/index.d.ts:75

@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Events
 
-# Module: Events
-
-## Table of contents
+# Events <Badge type="tip" text="Module" />
 
 ### Namespaces
 

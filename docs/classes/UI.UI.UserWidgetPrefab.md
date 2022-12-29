@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UserWidgetPrefab
+[UI](../modules/UI.UI.md) / UserWidgetPrefab
 
-# Class: UserWidgetPrefab
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UserWidgetPrefab
-
-**`Author`**
-
-jie.wu
+# UserWidgetPrefab <Badge type="tip" text="Class" />
 
 **`Description`**
 
 ui 预制体
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,57 +14,43 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoSizeEnable](UI.UI.UserWidgetPrefab.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                       |
+| **[cachedGeometry](UI.UI.UserWidgetPrefab.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                    |
+| **[constraints](UI.UI.UserWidgetPrefab.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局          |
+| **[desiredSize](UI.UI.UserWidgetPrefab.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                             |
+| **[enable](UI.UI.UserWidgetPrefab.md#enable)**(): `boolean` <br> 是否可用                                                                                   |
+| **[focusable](UI.UI.UserWidgetPrefab.md#focusable)**(): `boolean` <br> 获取是否响应键盘焦点事件                                                             |
+| **[guid](UI.UI.UserWidgetPrefab.md#guid)**(): `string` <br> 获取控件 GUID                                                                                   |
+| **[isHovered](UI.UI.UserWidgetPrefab.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                       |
+| **[name](UI.UI.UserWidgetPrefab.md#name)**(): `string` <br> 获取名字                                                                                        |
+| **[paintSpaceGeometry](UI.UI.UserWidgetPrefab.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息       |
+| **[parent](UI.UI.UserWidgetPrefab.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                               |
+| **[position](UI.UI.UserWidgetPrefab.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                    |
+| **[renderOpacity](UI.UI.UserWidgetPrefab.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                |
+| **[renderScale](UI.UI.UserWidgetPrefab.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                             |
+| **[renderShear](UI.UI.UserWidgetPrefab.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                         |
+| **[renderTransformAngle](UI.UI.UserWidgetPrefab.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                  |
+| **[renderTransformPivot](UI.UI.UserWidgetPrefab.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                           |
+| **[rootContent](UI.UI.UserWidgetPrefab.md#rootcontent)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取根 Canvas                                                  |
+| **[size](UI.UI.UserWidgetPrefab.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                               |
+| **[slot](UI.UI.UserWidgetPrefab.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
+| **[tickSpaceGeometry](UI.UI.UserWidgetPrefab.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息    |
+| **[transform](UI.UI.UserWidgetPrefab.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                        |
+| **[visibility](UI.UI.UserWidgetPrefab.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                            |
+| **[visible](UI.UI.UserWidgetPrefab.md#visible)**(): `boolean` <br> 是否可见                                                                                 |
+| **[zOrder](UI.UI.UserWidgetPrefab.md#zorder)**(): `number` <br> 获取 zorder                                                                                 |
 
-- [constructor](UI.UI.UserWidgetPrefab.md#constructor)
-
-### Accessors
-
-- [autoSizeEnable](UI.UI.UserWidgetPrefab.md#autosizeenable)
-- [cachedGeometry](UI.UI.UserWidgetPrefab.md#cachedgeometry)
-- [constraints](UI.UI.UserWidgetPrefab.md#constraints)
-- [desiredSize](UI.UI.UserWidgetPrefab.md#desiredsize)
-- [enable](UI.UI.UserWidgetPrefab.md#enable)
-- [focusable](UI.UI.UserWidgetPrefab.md#focusable)
-- [guid](UI.UI.UserWidgetPrefab.md#guid)
-- [isHovered](UI.UI.UserWidgetPrefab.md#ishovered)
-- [name](UI.UI.UserWidgetPrefab.md#name)
-- [paintSpaceGeometry](UI.UI.UserWidgetPrefab.md#paintspacegeometry)
-- [parent](UI.UI.UserWidgetPrefab.md#parent)
-- [position](UI.UI.UserWidgetPrefab.md#position)
-- [renderOpacity](UI.UI.UserWidgetPrefab.md#renderopacity)
-- [renderScale](UI.UI.UserWidgetPrefab.md#renderscale)
-- [renderShear](UI.UI.UserWidgetPrefab.md#rendershear)
-- [renderTransformAngle](UI.UI.UserWidgetPrefab.md#rendertransformangle)
-- [renderTransformPivot](UI.UI.UserWidgetPrefab.md#rendertransformpivot)
-- [rootContent](UI.UI.UserWidgetPrefab.md#rootcontent)
-- [size](UI.UI.UserWidgetPrefab.md#size)
-- [slot](UI.UI.UserWidgetPrefab.md#slot)
-- [tickSpaceGeometry](UI.UI.UserWidgetPrefab.md#tickspacegeometry)
-- [transform](UI.UI.UserWidgetPrefab.md#transform)
-- [visibility](UI.UI.UserWidgetPrefab.md#visibility)
-- [visible](UI.UI.UserWidgetPrefab.md#visible)
-- [zOrder](UI.UI.UserWidgetPrefab.md#zorder)
-
-### Methods
-
-- [addToViewport](UI.UI.UserWidgetPrefab.md#addtoviewport)
-- [destroyObject](UI.UI.UserWidgetPrefab.md#destroyobject)
-- [equal](UI.UI.UserWidgetPrefab.md#equal)
-- [findChildByPath](UI.UI.UserWidgetPrefab.md#findchildbypath)
-- [invalidateLayoutAndVolatility](UI.UI.UserWidgetPrefab.md#invalidatelayoutandvolatility)
-- [removeRootContent](UI.UI.UserWidgetPrefab.md#removerootcontent)
-- [newObject](UI.UI.UserWidgetPrefab.md#newobject)
-
-## Constructors
-
-### constructor
-
-• **new UserWidgetPrefab**()
-
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[constructor](UI.UI.UserWidget.md#constructor)
+| Methods                                                                                                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addToViewport](UI.UI.UserWidgetPrefab.md#addtoviewport)**(`number`): `void` <br> 添加到屏幕上                                                 |
+| **[destroyObject](UI.UI.UserWidgetPrefab.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                          |
+| **[equal](UI.UI.UserWidgetPrefab.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                   |
+| **[findChildByPath](UI.UI.UserWidgetPrefab.md#findchildbypath)**(`string`): [`Widget`](UI.UI.Widget.md) <br> 通过相对路径查找节点                |
+| **[invalidateLayoutAndVolatility](UI.UI.UserWidgetPrefab.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算         |
+| **[removeRootContent](UI.UI.UserWidgetPrefab.md#removerootcontent)**(): `void` <br> 移除根 Canvas,会销毁根 Canvas，无法再次使用                  |
+| **[newObject](UI.UI.UserWidgetPrefab.md#newobject)**([`Canvas`](UI.UI.Canvas.md)): [`UserWidget`](UI.UI.UserWidget.md) <br> 创建 UserWidget 控件 |
 
 ## Accessors
 
@@ -96,14 +72,6 @@ usage:客户端
 
 是否自动设置大小
 
-#### Inherited from
-
-UserWidget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4987
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Description`**
@@ -116,21 +84,13 @@ UI/index.d.ts:4987
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4981
 
 ---
 
@@ -152,14 +112,6 @@ UI/index.d.ts:4981
 
 返回上一次的 GetTickSpaceGeometry
 
-#### Inherited from
-
-UserWidget.cachedGeometry
-
-#### Defined in
-
-UI/index.d.ts:4897
-
 ---
 
 ### constraints
@@ -180,14 +132,6 @@ UI/index.d.ts:4897
 
 控件的布局
 
-#### Inherited from
-
-UserWidget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4939
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Description`**
@@ -200,21 +144,13 @@ UI/index.d.ts:4939
 
 #### Parameters
 
-| Name              | Type                                                  | Description      |
-| :---------------- | :---------------------------------------------------- | :--------------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+| Name              | Type                                                  | Description |
+| :---------------- | :---------------------------------------------------- | :---------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4933
 
 ---
 
@@ -236,14 +172,6 @@ UI/index.d.ts:4933
 
 返回期望大小
 
-#### Inherited from
-
-UserWidget.desiredSize
-
-#### Defined in
-
-UI/index.d.ts:4831
-
 ---
 
 ### enable
@@ -264,14 +192,6 @@ UI/index.d.ts:4831
 
 boolean
 
-#### Inherited from
-
-UserWidget.enable
-
-#### Defined in
-
-UI/index.d.ts:4807
-
 • `set` **enable**(`isEnable`): `void`
 
 **`Description`**
@@ -284,23 +204,15 @@ UI/index.d.ts:4807
 
 #### Parameters
 
-| Name       | Type      | Description          |
-| :--------- | :-------- | :------------------- |
-| `isEnable` | `boolean` | usage:可用性 boolean |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
+| `isEnable` | `boolean` | 可用性 boolean |
 
 #### Returns
 
 `void`
 
 返回设置结果
-
-#### Inherited from
-
-UserWidget.enable
-
-#### Defined in
-
-UI/index.d.ts:4814
 
 ---
 
@@ -322,14 +234,6 @@ UI/index.d.ts:4814
 
 返回相应键盘的焦点事件
 
-#### Inherited from
-
-UserWidget.focusable
-
-#### Defined in
-
-UI/index.d.ts:4435
-
 • `set` **focusable**(`isFocus`): `void`
 
 **`Description`**
@@ -342,21 +246,13 @@ UI/index.d.ts:4435
 
 #### Parameters
 
-| Name      | Type      | Description    |
-| :-------- | :-------- | :------------- |
-| `isFocus` | `boolean` | usage:是否相应 |
+| Name      | Type      | Description |
+| :-------- | :-------- | :---------- |
+| `isFocus` | `boolean` | 是否相应    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.focusable
-
-#### Defined in
-
-UI/index.d.ts:4429
 
 ---
 
@@ -378,14 +274,6 @@ UI/index.d.ts:4429
 
 控件 GUID
 
-#### Inherited from
-
-UserWidget.guid
-
-#### Defined in
-
-UI/index.d.ts:4915
-
 ---
 
 ### isHovered
@@ -405,14 +293,6 @@ UI/index.d.ts:4915
 `boolean`
 
 boolean
-
-#### Inherited from
-
-UserWidget.isHovered
-
-#### Defined in
-
-UI/index.d.ts:4820
 
 ---
 
@@ -434,14 +314,6 @@ UI/index.d.ts:4820
 
 返回名字
 
-#### Inherited from
-
-UserWidget.name
-
-#### Defined in
-
-UI/index.d.ts:4783
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -456,19 +328,11 @@ UI/index.d.ts:4783
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.name
-
-#### Defined in
-
-UI/index.d.ts:4777
 
 ---
 
@@ -490,14 +354,6 @@ UI/index.d.ts:4777
 
 返回最后一次用于渲染 Widget 的几何信息
 
-#### Inherited from
-
-UserWidget.paintSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4909
-
 ---
 
 ### parent
@@ -517,14 +373,6 @@ UI/index.d.ts:4909
 [`Widget`](UI.UI.Widget.md)
 
 返回父节点
-
-#### Inherited from
-
-UserWidget.parent
-
-#### Defined in
-
-UI/index.d.ts:4764
 
 ---
 
@@ -546,14 +394,6 @@ UI/index.d.ts:4764
 
 控件的位置
 
-#### Inherited from
-
-UserWidget.position
-
-#### Defined in
-
-UI/index.d.ts:4951
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Description`**
@@ -566,21 +406,13 @@ UI/index.d.ts:4951
 
 #### Parameters
 
-| Name              | Type                              | Description      |
-| :---------------- | :-------------------------------- | :--------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.position
-
-#### Defined in
-
-UI/index.d.ts:4945
 
 ---
 
@@ -602,14 +434,6 @@ UI/index.d.ts:4945
 
 返回渲染透明度
 
-#### Inherited from
-
-UserWidget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4891
-
 • `set` **renderOpacity**(`InOpacity`): `void`
 
 **`Description`**
@@ -622,21 +446,13 @@ UI/index.d.ts:4891
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `InOpacity` | `number` | usage:透明度 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `InOpacity` | `number` | 透明度      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4885
 
 ---
 
@@ -658,14 +474,6 @@ UI/index.d.ts:4885
 
 返回渲染缩放
 
-#### Inherited from
-
-UserWidget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4879
-
 • `set` **renderScale**(`scale`): `void`
 
 **`Description`**
@@ -678,21 +486,13 @@ UI/index.d.ts:4879
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4873
 
 ---
 
@@ -714,14 +514,6 @@ UI/index.d.ts:4873
 
 返回渲染错切形变
 
-#### Inherited from
-
-UserWidget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4867
-
 • `set` **renderShear**(`shear`): `void`
 
 **`Description`**
@@ -734,21 +526,13 @@ UI/index.d.ts:4867
 
 #### Parameters
 
-| Name    | Type                              | Description        |
-| :------ | :-------------------------------- | :----------------- |
-| `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
+| Name    | Type                              | Description  |
+| :------ | :-------------------------------- | :----------- |
+| `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4861
 
 ---
 
@@ -770,14 +554,6 @@ UI/index.d.ts:4861
 
 返回渲染角度
 
-#### Inherited from
-
-UserWidget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4843
-
 • `set` **renderTransformAngle**(`o`): `void`
 
 **`Description`**
@@ -790,21 +566,13 @@ UI/index.d.ts:4843
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `o`  | `number` | usage:渲染角度 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `o`  | `number` | 渲染角度    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4837
 
 ---
 
@@ -826,14 +594,6 @@ UI/index.d.ts:4837
 
 返回渲染锚点
 
-#### Inherited from
-
-UserWidget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4855
-
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
 **`Description`**
@@ -846,21 +606,13 @@ UI/index.d.ts:4855
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4849
 
 ---
 
@@ -882,14 +634,6 @@ UI/index.d.ts:4849
 
 返回根 Canvas
 
-#### Inherited from
-
-UserWidget.rootContent
-
-#### Defined in
-
-UI/index.d.ts:4411
-
 • `set` **rootContent**(`content`): `void`
 
 **`Description`**
@@ -902,21 +646,13 @@ UI/index.d.ts:4411
 
 #### Parameters
 
-| Name      | Type                        | Description        |
-| :-------- | :-------------------------- | :----------------- |
-| `content` | [`Canvas`](UI.UI.Canvas.md) | usage:根 UI 的内容 |
+| Name      | Type                        | Description  |
+| :-------- | :-------------------------- | :----------- |
+| `content` | [`Canvas`](UI.UI.Canvas.md) | 根 UI 的内容 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.rootContent
-
-#### Defined in
-
-UI/index.d.ts:4405
 
 ---
 
@@ -938,14 +674,6 @@ UI/index.d.ts:4405
 
 FVector2D
 
-#### Inherited from
-
-UserWidget.size
-
-#### Defined in
-
-UI/index.d.ts:4963
-
 • `set` **size**(`inSize`): `void`
 
 **`Description`**
@@ -958,21 +686,13 @@ UI/index.d.ts:4963
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.size
-
-#### Defined in
-
-UI/index.d.ts:4957
 
 ---
 
@@ -998,14 +718,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
-#### Inherited from
-
-UserWidget.slot
-
-#### Defined in
-
-UI/index.d.ts:4771
-
 ---
 
 ### tickSpaceGeometry
@@ -1025,14 +737,6 @@ UI/index.d.ts:4771
 [`Geometry`](UI.UI.Geometry.md)
 
 返回最后一次用于驱动 Widget Tick 的几何信息
-
-#### Inherited from
-
-UserWidget.tickSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4903
 
 ---
 
@@ -1054,14 +758,6 @@ UI/index.d.ts:4903
 
 控件的大小和位置
 
-#### Inherited from
-
-UserWidget.transform
-
-#### Defined in
-
-UI/index.d.ts:4927
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Description`**
@@ -1074,21 +770,13 @@ UI/index.d.ts:4927
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.transform
-
-#### Defined in
-
-UI/index.d.ts:4921
 
 ---
 
@@ -1110,14 +798,6 @@ UI/index.d.ts:4921
 
 返回可见性
 
-#### Inherited from
-
-UserWidget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4795
-
 • `set` **visibility**(`Visibility`): `void`
 
 **`Description`**
@@ -1130,21 +810,13 @@ UI/index.d.ts:4795
 
 #### Parameters
 
-| Name         | Type                                                   | Description  |
-| :----------- | :----------------------------------------------------- | :----------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
+| Name         | Type                                                   | Description |
+| :----------- | :----------------------------------------------------- | :---------- |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4789
 
 ---
 
@@ -1166,14 +838,6 @@ UI/index.d.ts:4789
 
 boolean
 
-#### Inherited from
-
-UserWidget.visible
-
-#### Defined in
-
-UI/index.d.ts:4801
-
 ---
 
 ### zOrder
@@ -1194,14 +858,6 @@ UI/index.d.ts:4801
 
 zorder
 
-#### Inherited from
-
-UserWidget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4975
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Description`**
@@ -1214,21 +870,13 @@ UI/index.d.ts:4975
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-UserWidget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4969
 
 ## Methods
 
@@ -1246,21 +894,13 @@ UI/index.d.ts:4969
 
 #### Parameters
 
-| Name     | Type     | Description                |
-| :------- | :------- | :------------------------- |
-| `zOrder` | `number` | usage:添加到屏幕的层级关系 |
+| Name     | Type     | Description          |
+| :------- | :------- | :------------------- |
+| `zOrder` | `number` | 添加到屏幕的层级关系 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[addToViewport](UI.UI.UserWidget.md#addtoviewport)
-
-#### Defined in
-
-UI/index.d.ts:4399
 
 ---
 
@@ -1280,14 +920,6 @@ UI/index.d.ts:4399
 
 `void`
 
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[destroyObject](UI.UI.UserWidget.md#destroyobject)
-
-#### Defined in
-
-UI/index.d.ts:4751
-
 ---
 
 ### equal
@@ -1304,23 +936,15 @@ UI/index.d.ts:4751
 
 #### Parameters
 
-| Name   | Type                        | Description                  |
-| :----- | :-------------------------- | :--------------------------- |
-| `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
+| Name   | Type                        | Description            |
+| :----- | :-------------------------- | :--------------------- |
+| `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[equal](UI.UI.UserWidget.md#equal)
-
-#### Defined in
-
-UI/index.d.ts:4758
 
 ---
 
@@ -1340,21 +964,13 @@ UI/index.d.ts:4758
 
 | Name     | Type     | Description |
 | :------- | :------- | :---------- |
-| `inPath` | `string` | usage:路径  |
+| `inPath` | `string` | 路径        |
 
 #### Returns
 
 [`Widget`](UI.UI.Widget.md)
 
 返回查找节点结果
-
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[findChildByPath](UI.UI.UserWidget.md#findchildbypath)
-
-#### Defined in
-
-UI/index.d.ts:4423
 
 ---
 
@@ -1374,14 +990,6 @@ UI/index.d.ts:4423
 
 `void`
 
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[invalidateLayoutAndVolatility](UI.UI.UserWidget.md#invalidatelayoutandvolatility)
-
-#### Defined in
-
-UI/index.d.ts:4825
-
 ---
 
 ### removeRootContent
@@ -1400,14 +1008,6 @@ UI/index.d.ts:4825
 
 `void`
 
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[removeRootContent](UI.UI.UserWidget.md#removerootcontent)
-
-#### Defined in
-
-UI/index.d.ts:4416
-
 ---
 
 ### newObject
@@ -1424,20 +1024,12 @@ UI/index.d.ts:4416
 
 #### Parameters
 
-| Name      | Type                        | Description                                |
-| :-------- | :-------------------------- | :----------------------------------------- |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 Outer 对象 default:null |
+| Name      | Type                        | Description                          |
+| :-------- | :-------------------------- | :----------------------------------- |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 Outer 对象 default:null |
 
 #### Returns
 
 [`UserWidget`](UI.UI.UserWidget.md)
 
 返回创建的控件
-
-#### Inherited from
-
-[UserWidget](UI.UI.UserWidget.md).[newObject](UI.UI.UserWidget.md#newobject)
-
-#### Defined in
-
-UI/index.d.ts:4393

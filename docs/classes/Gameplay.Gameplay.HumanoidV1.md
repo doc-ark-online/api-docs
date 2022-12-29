@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
+[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
 
-# Class: HumanoidV1
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HumanoidV1
+# HumanoidV1 <Badge type="tip" text="Class" />
 
 **`Description`**
 
 人形对象 V1 接口
-
-**`Author`**
-
-guang.deng yuchen.ren
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -28,31 +18,21 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                              |
+| :-------------------------------------------------------------------------------------------------------------------------------------- |
+| **[enableOutline](Gameplay.Gameplay.HumanoidV1.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边                               |
+| **[face](Gameplay.Gameplay.HumanoidV1.md#face)**: [`HumanoidV1Face`](Gameplay.Gameplay.HumanoidV1Face.md) <br> 脸部                     |
+| **[hair](Gameplay.Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.Gameplay.HumanoidV1Hair.md) <br> 头发                     |
+| **[postProcessObj](Gameplay.Gameplay.HumanoidV1.md#postprocessobj)**: [`PostProcess`](Gameplay.Gameplay.PostProcess.md) <br> 后处理对象 |
+| **[trunk](Gameplay.Gameplay.HumanoidV1.md#trunk)**: [`HumanoidV1Trunk`](Gameplay.Gameplay.HumanoidV1Trunk.md) <br> 身体                 |
 
-- [constructor](Gameplay.Gameplay.HumanoidV1.md#constructor)
-
-### Properties
-
-- [enableOutline](Gameplay.Gameplay.HumanoidV1.md#enableoutline)
-- [face](Gameplay.Gameplay.HumanoidV1.md#face)
-- [hair](Gameplay.Gameplay.HumanoidV1.md#hair)
-- [postProcessObj](Gameplay.Gameplay.HumanoidV1.md#postprocessobj)
-- [trunk](Gameplay.Gameplay.HumanoidV1.md#trunk)
-
-### Methods
-
-- [enablePostProcess](Gameplay.Gameplay.HumanoidV1.md#enablepostprocess)
-- [getWholeBody](Gameplay.Gameplay.HumanoidV1.md#getwholebody)
-- [setOutline](Gameplay.Gameplay.HumanoidV1.md#setoutline)
-- [setOutlineAdvance](Gameplay.Gameplay.HumanoidV1.md#setoutlineadvance)
-- [setWholeBody](Gameplay.Gameplay.HumanoidV1.md#setwholebody)
-
-## Constructors
-
-### constructor
-
-• **new HumanoidV1**(`character`)
+| Methods                                                                                                                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[enablePostProcess](Gameplay.Gameplay.HumanoidV1.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.Type.LinearColor.md), `number`): `void` <br> 后处理开关 |
+| **[getWholeBody](Gameplay.Gameplay.HumanoidV1.md#getwholebody)**(): `string` <br> 获取全身模型                                                                     |
+| **[setOutline](Gameplay.Gameplay.HumanoidV1.md#setoutline)**(`boolean`): `boolean` <br> 描边开关                                                                   |
+| **[setOutlineAdvance](Gameplay.Gameplay.HumanoidV1.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关                                        |
+| **[setWholeBody](Gameplay.Gameplay.HumanoidV1.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型                                                    |
 
 **`Description`**
 
@@ -62,15 +42,7 @@ usage:双端
 
 | Name        | Type                                                  | Description |
 | :---------- | :---------------------------------------------------- | :---------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色  |
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[constructor](Gameplay.Gameplay.SomatotypeBase.md#constructor)
-
-#### Defined in
-
-Gameplay/index.d.ts:2731
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色        |
 
 ## Properties
 
@@ -82,14 +54,6 @@ Gameplay/index.d.ts:2731
 
 是否启动遮挡时角色描边
 
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
-
-#### Defined in
-
-Gameplay/index.d.ts:2726
-
 ---
 
 ### face
@@ -99,10 +63,6 @@ Gameplay/index.d.ts:2726
 **`Description`**
 
 脸部
-
-#### Defined in
-
-Gameplay/index.d.ts:5075
 
 ---
 
@@ -114,10 +74,6 @@ Gameplay/index.d.ts:5075
 
 头发
 
-#### Defined in
-
-Gameplay/index.d.ts:5071
-
 ---
 
 ### postProcessObj
@@ -128,14 +84,6 @@ Gameplay/index.d.ts:5071
 
 后处理对象
 
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[postProcessObj](Gameplay.Gameplay.SomatotypeBase.md#postprocessobj)
-
-#### Defined in
-
-Gameplay/index.d.ts:2722
-
 ---
 
 ### trunk
@@ -145,10 +93,6 @@ Gameplay/index.d.ts:2722
 **`Description`**
 
 身体
-
-#### Defined in
-
-Gameplay/index.d.ts:5079
 
 ## Methods
 
@@ -166,23 +110,15 @@ Gameplay/index.d.ts:5079
 
 #### Parameters
 
-| Name              | Type                                      | Description              |
-| :---------------- | :---------------------------------------- | :----------------------- |
-| `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
-| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
-| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
+| Name              | Type                                      | Description        |
+| :---------------- | :---------------------------------------- | :----------------- |
+| `usedPostProcess` | `boolean`                                 | 是否使用后处理功能 |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | Outline 宽度       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enablePostProcess](Gameplay.Gameplay.SomatotypeBase.md#enablepostprocess)
-
-#### Defined in
-
-Gameplay/index.d.ts:2739
 
 ---
 
@@ -208,10 +144,6 @@ Gameplay/index.d.ts:2739
 
 [IHumanoidV1Part](../interfaces/Gameplay.Gameplay.IHumanoidV1Part.md).[getWholeBody](../interfaces/Gameplay.Gameplay.IHumanoidV1Part.md#getwholebody)
 
-#### Defined in
-
-Gameplay/index.d.ts:5095
-
 ---
 
 ### setOutline
@@ -228,23 +160,15 @@ Gameplay/index.d.ts:5095
 
 #### Parameters
 
-| Name          | Type      | Description            |
-| :------------ | :-------- | :--------------------- |
-| `usedOutline` | `boolean` | usage:是否使用描边功能 |
+| Name          | Type      | Description      |
+| :------------ | :-------- | :--------------- |
+| `usedOutline` | `boolean` | 是否使用描边功能 |
 
 #### Returns
 
 `boolean`
 
 是否成功
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
-
-#### Defined in
-
-Gameplay/index.d.ts:2750
 
 ---
 
@@ -262,22 +186,14 @@ Gameplay/index.d.ts:2750
 
 #### Parameters
 
-| Name                   | Type      | Description            |
-| :--------------------- | :-------- | :--------------------- |
-| `newEnableOutline`     | `boolean` | usage:是否开启描边功能 |
-| `newOutlineColorIndex` | `number`  | usage:描边的颜色       |
+| Name                   | Type      | Description      |
+| :--------------------- | :-------- | :--------------- |
+| `newEnableOutline`     | `boolean` | 是否开启描边功能 |
+| `newOutlineColorIndex` | `number`  | 描边的颜色       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutlineAdvance](Gameplay.Gameplay.SomatotypeBase.md#setoutlineadvance)
-
-#### Defined in
-
-Gameplay/index.d.ts:2757
 
 ---
 
@@ -300,10 +216,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -312,7 +228,3 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV1Part](../interfaces/Gameplay.Gameplay.IHumanoidV1Part.md).[setWholeBody](../interfaces/Gameplay.Gameplay.IHumanoidV1Part.md#setwholebody)
-
-#### Defined in
-
-Gameplay/index.d.ts:5089

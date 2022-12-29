@@ -1,14 +1,12 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](Util.md) / [Util](Util.Util.md) / WindowUtil
+[Util](Util.Util.md) / WindowUtil
 
-# Namespace: WindowUtil
-
-[Util](Util.md).[Util](Util.Util.md).WindowUtil
+# WindowUtil <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
-### Functions
-
-- [getViewportSize](Util.Util.WindowUtil.md#getviewportsize)
+| Functions                                                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getViewportSize](Util.Util.WindowUtil.md#getviewportsize)**(): [`Vector2`](../classes/Type.Type.Vector2.md) <br> 获取当前游戏窗口尺寸 |
 
 ## Functions
 
@@ -29,7 +27,3 @@
 [`Vector2`](../classes/Type.Type.Vector2.md)
 
 窗口尺寸
-
-#### Defined in
-
-Util/index.d.ts:1233

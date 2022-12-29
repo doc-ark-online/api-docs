@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / WidgetSpaceMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetSpaceMode
 
-# Enumeration: WidgetSpaceMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).WidgetSpaceMode
+# WidgetSpaceMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@ UI 空间位置枚举
 
 ## Table of contents
 
-### Enumeration Members
-
-- [OverheadUI](Gameplay.Gameplay.WidgetSpaceMode.md#overheadui)
-- [Screen](Gameplay.Gameplay.WidgetSpaceMode.md#screen)
-- [World](Gameplay.Gameplay.WidgetSpaceMode.md#world)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[OverheadUI](Gameplay.Gameplay.WidgetSpaceMode.md#overheadui)** = `2` <br> 头顶 UI |
+| **[Screen](Gameplay.Gameplay.WidgetSpaceMode.md#screen)** = `1` <br> 屏幕空间        |
+| **[World](Gameplay.Gameplay.WidgetSpaceMode.md#world)** = `0` <br> 世界空间          |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@ UI 空间位置枚举
 
 头顶 UI
 
-#### Defined in
-
-Gameplay/index.d.ts:10252
-
 ---
 
 ### Screen
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:10252
 
 屏幕空间
 
-#### Defined in
-
-Gameplay/index.d.ts:10250
-
 ---
 
 ### World
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:10250
 • **World** = `0`
 
 世界空间
-
-#### Defined in
-
-Gameplay/index.d.ts:10248

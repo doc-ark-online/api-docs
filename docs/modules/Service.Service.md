@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](Service.md) / Service
+Service
 
-# Namespace: Service
-
-[Service](Service.md).Service
-
-**`Author`**
-
-huipeng.jia & guang.deng
+# Service <Badge type="tip" text="Namespace" />
 
 **`Description`**
 
@@ -14,41 +8,41 @@ Account Service
 
 ## Table of contents
 
-### Enumerations
+| Enumerations                                                                                                 |
+| :----------------------------------------------------------------------------------------------------------- |
+| [AdsState](../enums/Service.Service.AdsState.md) <br> 广告状态                                               |
+| [AdsType](../enums/Service.Service.AdsType.md) <br> 广告类型                                                 |
+| [MessageChannelReceiver](../enums/Service.Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方 |
 
-- [AdsState](../enums/Service.Service.AdsState.md)
-- [AdsType](../enums/Service.Service.AdsType.md)
-- [MessageChannelReceiver](../enums/Service.Service.MessageChannelReceiver.md)
+| Classes                                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [AccountService](../classes/Service.Service.AccountService.md) <br> 用户账号信息管理相关服务                                                                                     |
+| [AdsService](../classes/Service.Service.AdsService.md) <br> 广告服务，支持激励/插屏类型                                                                                          |
+| [AnalyticsService](../classes/Service.Service.AnalyticsService.md) <br> 分析服务                                                                                                 |
+| [DebugService](../classes/Service.Service.DebugService.md) <br> debug 调试服务                                                                                                   |
+| [EffectService](../classes/Service.Service.EffectService.md) <br> 特效管理器                                                                                                     |
+| [MessageChannelService](../classes/Service.Service.MessageChannelService.md) <br> 支持各端的通信，233、MW 引擎、Web 和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 |
+| [PurchaseService](../classes/Service.Service.PurchaseService.md) <br> 应用内购服务                                                                                               |
+| [RoomService](../classes/Service.Service.RoomService.md) <br> MGS 以及玩家信息、数据、头像等相关 API                                                                             |
+| [RouteService](../classes/Service.Service.RouteService.md) <br> 游戏管理器                                                                                                       |
+| [SoundService](../classes/Service.Service.SoundService.md) <br> 音效管理器                                                                                                       |
+| [UGCService](../classes/Service.Service.UGCService.md) <br> 用户建造服务                                                                                                         |
 
-### Classes
-
-- [AccountService](../classes/Service.Service.AccountService.md)
-- [AdsService](../classes/Service.Service.AdsService.md)
-- [AnalyticsService](../classes/Service.Service.AnalyticsService.md)
-- [DebugService](../classes/Service.Service.DebugService.md)
-- [EffectService](../classes/Service.Service.EffectService.md)
-- [MessageChannelService](../classes/Service.Service.MessageChannelService.md)
-- [PurchaseService](../classes/Service.Service.PurchaseService.md)
-- [RoomService](../classes/Service.Service.RoomService.md)
-- [RouteService](../classes/Service.Service.RouteService.md)
-- [SoundService](../classes/Service.Service.SoundService.md)
-- [UGCService](../classes/Service.Service.UGCService.md)
-
-### Type Aliases
-
-- [BoolResponse](Service.Service.md#boolresponse)
-- [DownloadDataResponse](Service.Service.md#downloaddataresponse)
-- [MGSEvent](Service.Service.md#mgsevent)
-- [MGSResponse](Service.Service.md#mgsresponse)
-- [OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)
-- [OnOrderDelivered](Service.Service.md#onorderdelivered)
-- [OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)
-- [OnViewRefreshed](Service.Service.md#onviewrefreshed)
-- [StringResponse](Service.Service.md#stringresponse)
-- [TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)
-- [UploadDataResponse](Service.Service.md#uploaddataresponse)
-- [VoidResponse](Service.Service.md#voidresponse)
-- [downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)
+| Type Aliases                                                                                                                                                                                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------- |
+| **[BoolResponse](Service.Service.md#boolresponse)**: (`boolean`                                                                                                                                                                                                                                                 | : `boolean`) => `void` <br> ▸ (`success`): `void`   |
+| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> ▸ (): `void`                                                                                                                                                                                                             |
+| **[MGSEvent](Service.Service.md#mgsevent)**: (`string`                                                                                                                                                                                                                                                          | : `string`) => `void` <br> ▸ (`jsonData`): `void`   |
+| **[MGSResponse](Service.Service.md#mgsresponse)**: (`boolean`                                                                                                                                                                                                                                                   | : `boolean`, `string`                               | : `string`) => `void` <br> ▸ (`isSuccess`, `jsonData`): `void` |
+| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`number`: `number`) => `void` <br> ▸ (`amount`): `void`                                                                                                                                                                                     |
+| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`number`: `number`, `string`: `string`, `string`: `string`, `number`: `number`, (`bReceived`: `boolean`) => `void`: (`bReceived`: `boolean`) => `void`) => `void` <br> ▸ (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void` |
+| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`number`: `number`) => `void` <br> ▸ (`newState`): `void`                                                                                                                                                                                 |
+| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> ▸ (): `void`                                                                                                                                                                                                                       |
+| **[StringResponse](Service.Service.md#stringresponse)**: (`string`                                                                                                                                                                                                                                              | : `string`) => `void` <br> ▸ (`dataString`): `void` |
+| **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调                                                                                                                                                                                                       |
+| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> ▸ (`success`): `void`                                                                                                                                                                                    |
+| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> ▸ (): `void`                                                                                                                                                                                                                             |
+| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string`                                                                                                                                                                                                    | : `string`) => `void` <br> ▸ (`dataString`): `void` |
 
 ## Type Aliases
 
@@ -74,10 +68,6 @@ Account Service
 
 `void`
 
-#### Defined in
-
-Service/index.d.ts:24
-
 ---
 
 ### DownloadDataResponse
@@ -95,10 +85,6 @@ Service/index.d.ts:24
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:15
 
 ---
 
@@ -123,10 +109,6 @@ Service/index.d.ts:15
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:886
 
 ---
 
@@ -153,10 +135,6 @@ Service/index.d.ts:886
 
 `void`
 
-#### Defined in
-
-Service/index.d.ts:882
-
 ---
 
 ### OnArkBalanceUpdated
@@ -173,17 +151,13 @@ Service/index.d.ts:882
 
 ##### Parameters
 
-| Name     | Type     | Description     |
-| :------- | :------- | :-------------- |
-| `amount` | `number` | usage: 新的余额 |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `amount` | `number` | 新的余额    |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:387
 
 ---
 
@@ -201,21 +175,17 @@ Service/index.d.ts:387
 
 ##### Parameters
 
-| Name           | Type                               | Description                                                                                                       |
-| :------------- | :--------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| `playerId`     | `number`                           | usage: 下单的玩家 playerId                                                                                        |
-| `orderId`      | `string`                           | usage: 订单 Id                                                                                                    |
-| `commodityId`  | `string`                           | usage: 商品 Id                                                                                                    |
-| `amount`       | `number`                           | usage: 数量                                                                                                       |
-| `confirmOrder` | (`bReceived`: `boolean`) => `void` | usage: 是否收到货的回调，会发给订单服务器。如果回调 false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
+| Name           | Type                               | Description                                                                                                |
+| :------------- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| `playerId`     | `number`                           | 下单的玩家 playerId                                                                                        |
+| `orderId`      | `string`                           | 订单 Id                                                                                                    |
+| `commodityId`  | `string`                           | 商品 Id                                                                                                    |
+| `amount`       | `number`                           | 数量                                                                                                       |
+| `confirmOrder` | (`bReceived`: `boolean`) => `void` | 是否收到货的回调，会发给订单服务器。如果回调 false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:376
 
 ---
 
@@ -233,17 +203,13 @@ Service/index.d.ts:376
 
 ##### Parameters
 
-| Name       | Type     | Description                                                 |
-| :--------- | :------- | :---------------------------------------------------------- |
-| `newState` | `number` | usage: 新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
+| Name       | Type     | Description                                          |
+| :--------- | :------- | :--------------------------------------------------- |
+| `newState` | `number` | 新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:452
 
 ---
 
@@ -262,10 +228,6 @@ Service/index.d.ts:452
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:447
 
 ---
 
@@ -291,10 +253,6 @@ Service/index.d.ts:447
 
 `void`
 
-#### Defined in
-
-Service/index.d.ts:32
-
 ---
 
 ### TeamMatchFailureInfo
@@ -312,10 +270,6 @@ Service/index.d.ts:32
 | `failedReason` | `string`   | 失败原因                 |
 | `playerIds`    | `number`[] | 组队玩家的 playerId 数组 |
 
-#### Defined in
-
-Service/index.d.ts:456
-
 ---
 
 ### UploadDataResponse
@@ -332,17 +286,13 @@ Service/index.d.ts:456
 
 ##### Parameters
 
-| Name      | Type      | Description         |
-| :-------- | :-------- | :------------------ |
-| `success` | `boolean` | usage: 上传是否成功 |
+| Name      | Type      | Description  |
+| :-------- | :-------- | :----------- |
+| `success` | `boolean` | 上传是否成功 |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:20
 
 ---
 
@@ -361,10 +311,6 @@ Service/index.d.ts:20
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:28
 
 ---
 
@@ -389,7 +335,3 @@ Service/index.d.ts:28
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:11

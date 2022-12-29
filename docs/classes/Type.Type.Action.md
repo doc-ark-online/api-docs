@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Action
+[Type](../modules/Type.Type.md) / Action
 
-# Class: Action
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Action
-
-**`Author`**
-
-huipeng.jia
+# Action <Badge type="tip" text="Class" />
 
 **`Description`**
 
 任意参数的代理
-
-**`Network Status`**
-
-usage: 双端
 
 ## Hierarchy
 
@@ -28,27 +18,17 @@ usage: 双端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                              |
+| :--------------------------------------------------------------------- |
+| **[count](Type.Type.Action.md#count)**(): `number` <br> 监听方法的数量 |
 
-- [constructor](Type.Type.Action.md#constructor)
-
-### Accessors
-
-- [count](Type.Type.Action.md#count)
-
-### Methods
-
-- [add](Type.Type.Action.md#add)
-- [call](Type.Type.Action.md#call)
-- [clear](Type.Type.Action.md#clear)
-- [includes](Type.Type.Action.md#includes)
-- [remove](Type.Type.Action.md#remove)
-
-## Constructors
-
-### constructor
-
-• **new Action**()
+| Methods                                                                                                  |
+| :------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.Action.md#add)**(`Function`, `any`): `void` <br> 添加一个监听方法(有重复过滤)          |
+| **[call](Type.Type.Action.md#call)**(`any`): `void` <br> 执行                                            |
+| **[clear](Type.Type.Action.md#clear)**(): `void` <br> 清除所有监听                                       |
+| **[includes](Type.Type.Action.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法 |
+| **[remove](Type.Type.Action.md#remove)**(`Function`, `any`): `void` <br> 移除一个监听方法                |
 
 ## Accessors
 
@@ -68,10 +48,6 @@ usage: 双端
 
 `number`
 
-#### Defined in
-
-Type/index.d.ts:838
-
 ## Methods
 
 ### add
@@ -88,18 +64,14 @@ Type/index.d.ts:838
 
 #### Parameters
 
-| Name       | Type       | Description                  |
-| :--------- | :--------- | :--------------------------- |
-| `fn`       | `Function` | usage: 方法                  |
-| `thisArg?` | `any`      | usage: 域 default: undefined |
+| Name       | Type       | Description           |
+| :--------- | :--------- | :-------------------- |
+| `fn`       | `Function` | 方法                  |
+| `thisArg?` | `any`      | 域 default: undefined |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:807
 
 ---
 
@@ -117,17 +89,13 @@ Type/index.d.ts:807
 
 #### Parameters
 
-| Name        | Type  | Description     |
-| :---------- | :---- | :-------------- |
-| `...params` | `any` | usage: 参数序列 |
+| Name        | Type  | Description |
+| :---------- | :---- | :---------- |
+| `...params` | `any` | 参数序列    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:820
 
 ---
 
@@ -147,10 +115,6 @@ Type/index.d.ts:820
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:833
-
 ---
 
 ### includes
@@ -169,18 +133,14 @@ Type/index.d.ts:833
 
 | Name      | Type       | Description |
 | :-------- | :--------- | :---------- |
-| `fn`      | `Function` | usage: 方法 |
-| `thisArg` | `any`      | usage: 域   |
+| `fn`      | `Function` | 方法        |
+| `thisArg` | `any`      | 域          |
 
 #### Returns
 
 `boolean`
 
 结果
-
-#### Defined in
-
-Type/index.d.ts:828
 
 ---
 
@@ -200,13 +160,9 @@ Type/index.d.ts:828
 
 | Name      | Type       | Description |
 | :-------- | :--------- | :---------- |
-| `fn`      | `Function` | usage: 方法 |
-| `thisArg` | `any`      | usage: 域   |
+| `fn`      | `Function` | 方法        |
+| `thisArg` | `any`      | 域          |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:814

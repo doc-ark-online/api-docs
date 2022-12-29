@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / ProgressBar
+[UI](../modules/UI.UI.md) / ProgressBar
 
-# Class: ProgressBar
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).ProgressBar
-
-**`Author`**
-
-jie.wu
+# ProgressBar <Badge type="tip" text="Class" />
 
 **`Description`**
 
 UI 进度条
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,74 +14,60 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoSizeEnable](UI.UI.ProgressBar.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                                                             |
+| **[backgroundImageColor](UI.UI.ProgressBar.md#backgroundimagecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取背景图片颜色                                                     |
+| **[backgroundImageDrawType](UI.UI.ProgressBar.md#backgroundimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取背景图片绘制类型                        |
+| **[backgroundImageGuid](UI.UI.ProgressBar.md#backgroundimageguid)**(): `string` <br> 获取背景图片 id                                                                                         |
+| **[backgroundImageMargin](UI.UI.ProgressBar.md#backgroundimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取进度条背景图片边距                                                           |
+| **[backgroundImageSize](UI.UI.ProgressBar.md#backgroundimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取背景图片大小                                                               |
+| **[cachedGeometry](UI.UI.ProgressBar.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                                                          |
+| **[constraints](UI.UI.ProgressBar.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局                                                |
+| **[currentValue](UI.UI.ProgressBar.md#currentvalue)**(): `number` <br> 获取当前值                                                                                                            |
+| **[desiredSize](UI.UI.ProgressBar.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                                                                   |
+| **[enable](UI.UI.ProgressBar.md#enable)**(): `boolean` <br> 是否可用                                                                                                                         |
+| **[fillImageColor](UI.UI.ProgressBar.md#fillimagecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取填充图片颜色                                                                 |
+| **[fillImageDrawType](UI.UI.ProgressBar.md#fillimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取填充图片绘制类型                                    |
+| **[fillImageGuid](UI.UI.ProgressBar.md#fillimageguid)**(): `string` <br> 获取填充区图片 id                                                                                                   |
+| **[fillImageMargin](UI.UI.ProgressBar.md#fillimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取进度条图片边距                                                                           |
+| **[fillImageSize](UI.UI.ProgressBar.md#fillimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取填充图片大小                                                                           |
+| **[fillType](UI.UI.ProgressBar.md#filltype)**(): [`ProgressBarFillType`](../enums/UI.UI.ProgressBarFillType.md) <br> 获取进度条填充的方式                                                    |
+| **[guid](UI.UI.ProgressBar.md#guid)**(): `string` <br> 获取控件 GUID                                                                                                                         |
+| **[isHovered](UI.UI.ProgressBar.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                                                             |
+| **[isRoundedToInt](UI.UI.ProgressBar.md#isroundedtoint)**(): `boolean` <br> 获取当前数值是否取整                                                                                             |
+| **[name](UI.UI.ProgressBar.md#name)**(): `string` <br> 获取名字                                                                                                                              |
+| **[onSliderValueChanged](UI.UI.ProgressBar.md#onslidervaluechanged)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider 值变化事件 |
+| **[paintSpaceGeometry](UI.UI.ProgressBar.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息                                             |
+| **[parent](UI.UI.ProgressBar.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                                                                     |
+| **[percent](UI.UI.ProgressBar.md#percent)**(): `number` <br> 获取当前百分比                                                                                                                  |
+| **[position](UI.UI.ProgressBar.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                                                          |
+| **[renderOpacity](UI.UI.ProgressBar.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                                                      |
+| **[renderScale](UI.UI.ProgressBar.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                                                                   |
+| **[renderShear](UI.UI.ProgressBar.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                                                               |
+| **[renderTransformAngle](UI.UI.ProgressBar.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                                                        |
+| **[renderTransformPivot](UI.UI.ProgressBar.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                                                                 |
+| **[size](UI.UI.ProgressBar.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                                                                     |
+| **[sliderMaxValue](UI.UI.ProgressBar.md#slidermaxvalue)**(): `number` <br> 获取拖动条最大值                                                                                                  |
+| **[sliderMinValue](UI.UI.ProgressBar.md#sliderminvalue)**(): `number` <br> 获取拖动条最小值                                                                                                  |
+| **[slot](UI.UI.ProgressBar.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                       |
+| **[thumbImageColor](UI.UI.ProgressBar.md#thumbimagecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取滑块图片颜色                                                               |
+| **[thumbImageDrawType](UI.UI.ProgressBar.md#thumbimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取滑块图片绘制类型                                  |
+| **[thumbImageGuid](UI.UI.ProgressBar.md#thumbimageguid)**(): `string` <br> 获取填充区图片 id                                                                                                 |
+| **[thumbImageMargin](UI.UI.ProgressBar.md#thumbimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取拖动条图片边距                                                                         |
+| **[thumbImageSize](UI.UI.ProgressBar.md#thumbimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取滑块图片大小                                                                         |
+| **[tickSpaceGeometry](UI.UI.ProgressBar.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息                                          |
+| **[transform](UI.UI.ProgressBar.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                                                              |
+| **[visibility](UI.UI.ProgressBar.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                                                                  |
+| **[visible](UI.UI.ProgressBar.md#visible)**(): `boolean` <br> 是否可见                                                                                                                       |
+| **[zOrder](UI.UI.ProgressBar.md#zorder)**(): `number` <br> 获取 zorder                                                                                                                       |
 
-- [constructor](UI.UI.ProgressBar.md#constructor)
-
-### Accessors
-
-- [autoSizeEnable](UI.UI.ProgressBar.md#autosizeenable)
-- [backgroundImageColor](UI.UI.ProgressBar.md#backgroundimagecolor)
-- [backgroundImageDrawType](UI.UI.ProgressBar.md#backgroundimagedrawtype)
-- [backgroundImageGuid](UI.UI.ProgressBar.md#backgroundimageguid)
-- [backgroundImageMargin](UI.UI.ProgressBar.md#backgroundimagemargin)
-- [backgroundImageSize](UI.UI.ProgressBar.md#backgroundimagesize)
-- [cachedGeometry](UI.UI.ProgressBar.md#cachedgeometry)
-- [constraints](UI.UI.ProgressBar.md#constraints)
-- [currentValue](UI.UI.ProgressBar.md#currentvalue)
-- [desiredSize](UI.UI.ProgressBar.md#desiredsize)
-- [enable](UI.UI.ProgressBar.md#enable)
-- [fillImageColor](UI.UI.ProgressBar.md#fillimagecolor)
-- [fillImageDrawType](UI.UI.ProgressBar.md#fillimagedrawtype)
-- [fillImageGuid](UI.UI.ProgressBar.md#fillimageguid)
-- [fillImageMargin](UI.UI.ProgressBar.md#fillimagemargin)
-- [fillImageSize](UI.UI.ProgressBar.md#fillimagesize)
-- [fillType](UI.UI.ProgressBar.md#filltype)
-- [guid](UI.UI.ProgressBar.md#guid)
-- [isHovered](UI.UI.ProgressBar.md#ishovered)
-- [isRoundedToInt](UI.UI.ProgressBar.md#isroundedtoint)
-- [name](UI.UI.ProgressBar.md#name)
-- [onSliderValueChanged](UI.UI.ProgressBar.md#onslidervaluechanged)
-- [paintSpaceGeometry](UI.UI.ProgressBar.md#paintspacegeometry)
-- [parent](UI.UI.ProgressBar.md#parent)
-- [percent](UI.UI.ProgressBar.md#percent)
-- [position](UI.UI.ProgressBar.md#position)
-- [renderOpacity](UI.UI.ProgressBar.md#renderopacity)
-- [renderScale](UI.UI.ProgressBar.md#renderscale)
-- [renderShear](UI.UI.ProgressBar.md#rendershear)
-- [renderTransformAngle](UI.UI.ProgressBar.md#rendertransformangle)
-- [renderTransformPivot](UI.UI.ProgressBar.md#rendertransformpivot)
-- [size](UI.UI.ProgressBar.md#size)
-- [sliderMaxValue](UI.UI.ProgressBar.md#slidermaxvalue)
-- [sliderMinValue](UI.UI.ProgressBar.md#sliderminvalue)
-- [slot](UI.UI.ProgressBar.md#slot)
-- [thumbImageColor](UI.UI.ProgressBar.md#thumbimagecolor)
-- [thumbImageDrawType](UI.UI.ProgressBar.md#thumbimagedrawtype)
-- [thumbImageGuid](UI.UI.ProgressBar.md#thumbimageguid)
-- [thumbImageMargin](UI.UI.ProgressBar.md#thumbimagemargin)
-- [thumbImageSize](UI.UI.ProgressBar.md#thumbimagesize)
-- [tickSpaceGeometry](UI.UI.ProgressBar.md#tickspacegeometry)
-- [transform](UI.UI.ProgressBar.md#transform)
-- [visibility](UI.UI.ProgressBar.md#visibility)
-- [visible](UI.UI.ProgressBar.md#visible)
-- [zOrder](UI.UI.ProgressBar.md#zorder)
-
-### Methods
-
-- [destroyObject](UI.UI.ProgressBar.md#destroyobject)
-- [equal](UI.UI.ProgressBar.md#equal)
-- [invalidateLayoutAndVolatility](UI.UI.ProgressBar.md#invalidatelayoutandvolatility)
-- [newObject](UI.UI.ProgressBar.md#newobject)
-
-## Constructors
-
-### constructor
-
-• **new ProgressBar**()
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[constructor](UI.UI.Widget.md#constructor)
+| Methods                                                                                                                                                                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[destroyObject](UI.UI.ProgressBar.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                                                                                                 |
+| **[equal](UI.UI.ProgressBar.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                                                                                          |
+| **[invalidateLayoutAndVolatility](UI.UI.ProgressBar.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算                                                                                |
+| **[newObject](UI.UI.ProgressBar.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`ProgressBar`](UI.UI.ProgressBar.md) <br> 创建 ProgressBar 控件，当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁 |
 
 ## Accessors
 
@@ -113,14 +89,6 @@ usage:客户端
 
 是否自动设置大小
 
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4987
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Description`**
@@ -133,21 +101,13 @@ UI/index.d.ts:4987
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4981
 
 ---
 
@@ -169,10 +129,6 @@ UI/index.d.ts:4981
 
 背景图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1224
-
 • `set` **backgroundImageColor**(`inColor`): `void`
 
 **`Description`**
@@ -185,17 +141,13 @@ UI/index.d.ts:1224
 
 #### Parameters
 
-| Name      | Type                                      | Description                                         |
-| :-------- | :---------------------------------------- | :-------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:背景颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                   |
+| :-------- | :---------------------------------------- | :-------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 背景颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1218
 
 ---
 
@@ -217,10 +169,6 @@ UI/index.d.ts:1218
 
 背景图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1236
-
 • `set` **backgroundImageDrawType**(`InDrawType`): `void`
 
 **`Description`**
@@ -233,17 +181,13 @@ UI/index.d.ts:1236
 
 #### Parameters
 
-| Name         | Type                                                         | Description      |
-| :----------- | :----------------------------------------------------------- | :--------------- |
-| `InDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:Brush 类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `InDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | Brush 类型  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1230
 
 ---
 
@@ -265,10 +209,6 @@ UI/index.d.ts:1230
 
 背景图片 id
 
-#### Defined in
-
-UI/index.d.ts:1188
-
 • `set` **backgroundImageGuid**(`inGuid`): `void`
 
 **`Description`**
@@ -281,19 +221,15 @@ UI/index.d.ts:1188
 
 #### Parameters
 
-| Name     | Type     | Description     |
-| :------- | :------- | :-------------- |
-| `inGuid` | `string` | usage:图片 GUID |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inGuid` | `string` | 图片 GUID   |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1182
 
 ---
 
@@ -315,10 +251,6 @@ UI/index.d.ts:1182
 
 进度条背景图片边距
 
-#### Defined in
-
-UI/index.d.ts:1194
-
 • `set` **backgroundImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -331,17 +263,13 @@ UI/index.d.ts:1194
 
 #### Parameters
 
-| Name       | Type                        | Description              |
-| :--------- | :-------------------------- | :----------------------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:进度条背景图片边距 |
+| Name       | Type                        | Description        |
+| :--------- | :-------------------------- | :----------------- |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 进度条背景图片边距 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1200
 
 ---
 
@@ -363,10 +291,6 @@ UI/index.d.ts:1200
 
 图片大小
 
-#### Defined in
-
-UI/index.d.ts:1212
-
 • `set` **backgroundImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -379,17 +303,13 @@ UI/index.d.ts:1212
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:图片大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 图片大小    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1206
 
 ---
 
@@ -411,14 +331,6 @@ UI/index.d.ts:1206
 
 返回上一次的 GetTickSpaceGeometry
 
-#### Inherited from
-
-Widget.cachedGeometry
-
-#### Defined in
-
-UI/index.d.ts:4897
-
 ---
 
 ### constraints
@@ -439,14 +351,6 @@ UI/index.d.ts:4897
 
 控件的布局
 
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4939
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Description`**
@@ -459,21 +363,13 @@ UI/index.d.ts:4939
 
 #### Parameters
 
-| Name              | Type                                                  | Description      |
-| :---------------- | :---------------------------------------------------- | :--------------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+| Name              | Type                                                  | Description |
+| :---------------- | :---------------------------------------------------- | :---------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4933
 
 ---
 
@@ -495,10 +391,6 @@ UI/index.d.ts:4933
 
 当前值
 
-#### Defined in
-
-UI/index.d.ts:1381
-
 • `set` **currentValue**(`inValue`): `void`
 
 **`Description`**
@@ -511,19 +403,15 @@ UI/index.d.ts:1381
 
 #### Parameters
 
-| Name      | Type     | Description  |
-| :-------- | :------- | :----------- |
-| `inValue` | `number` | usage:当前值 |
+| Name      | Type     | Description |
+| :-------- | :------- | :---------- |
+| `inValue` | `number` | 当前值      |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1388
 
 ---
 
@@ -545,14 +433,6 @@ UI/index.d.ts:1388
 
 返回期望大小
 
-#### Inherited from
-
-Widget.desiredSize
-
-#### Defined in
-
-UI/index.d.ts:4831
-
 ---
 
 ### enable
@@ -573,14 +453,6 @@ UI/index.d.ts:4831
 
 boolean
 
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4807
-
 • `set` **enable**(`isEnable`): `void`
 
 **`Description`**
@@ -593,23 +465,15 @@ UI/index.d.ts:4807
 
 #### Parameters
 
-| Name       | Type      | Description          |
-| :--------- | :-------- | :------------------- |
-| `isEnable` | `boolean` | usage:可用性 boolean |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
+| `isEnable` | `boolean` | 可用性 boolean |
 
 #### Returns
 
 `void`
 
 返回设置结果
-
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4814
 
 ---
 
@@ -631,10 +495,6 @@ UI/index.d.ts:4814
 
 填充图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1285
-
 • `set` **fillImageColor**(`inColor`): `void`
 
 **`Description`**
@@ -647,17 +507,13 @@ UI/index.d.ts:1285
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                     |
+| :-------- | :---------------------------------------- | :---------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1279
 
 ---
 
@@ -679,10 +535,6 @@ UI/index.d.ts:1279
 
 填充图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1297
-
 • `set` **fillImageDrawType**(`inDrawType`): `void`
 
 **`Description`**
@@ -695,17 +547,13 @@ UI/index.d.ts:1297
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:填充类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | 填充类型    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1291
 
 ---
 
@@ -727,10 +575,6 @@ UI/index.d.ts:1291
 
 填充区图片 id
 
-#### Defined in
-
-UI/index.d.ts:1249
-
 • `set` **fillImageGuid**(`inGuid`): `void`
 
 **`Description`**
@@ -743,19 +587,15 @@ UI/index.d.ts:1249
 
 #### Parameters
 
-| Name     | Type     | Description     |
-| :------- | :------- | :-------------- |
-| `inGuid` | `string` | usage:图片 GUID |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inGuid` | `string` | 图片 GUID   |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1243
 
 ---
 
@@ -777,10 +617,6 @@ UI/index.d.ts:1243
 
 进度条图片边距
 
-#### Defined in
-
-UI/index.d.ts:1255
-
 • `set` **fillImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -793,17 +629,13 @@ UI/index.d.ts:1255
 
 #### Parameters
 
-| Name       | Type                        | Description          |
-| :--------- | :-------------------------- | :------------------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:进度条图片边距 |
+| Name       | Type                        | Description    |
+| :--------- | :-------------------------- | :------------- |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 进度条图片边距 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1261
 
 ---
 
@@ -825,10 +657,6 @@ UI/index.d.ts:1261
 
 图片大小
 
-#### Defined in
-
-UI/index.d.ts:1273
-
 • `set` **fillImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -843,15 +671,11 @@ UI/index.d.ts:1273
 
 | Name     | Type                              | Description |
 | :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:大小  |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 大小        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1267
 
 ---
 
@@ -873,10 +697,6 @@ UI/index.d.ts:1267
 
 进度条填充
 
-#### Defined in
-
-UI/index.d.ts:1303
-
 • `set` **fillType**(`inType`): `void`
 
 **`Description`**
@@ -889,19 +709,15 @@ UI/index.d.ts:1303
 
 #### Parameters
 
-| Name     | Type                                                           | Description                                   |
-| :------- | :------------------------------------------------------------- | :-------------------------------------------- |
-| `inType` | [`ProgressBarFillType`](../enums/UI.UI.ProgressBarFillType.md) | usage:{ 从左到右,从右到左,从上到下,从下到上 } |
+| Name     | Type                                                           | Description                             |
+| :------- | :------------------------------------------------------------- | :-------------------------------------- |
+| `inType` | [`ProgressBarFillType`](../enums/UI.UI.ProgressBarFillType.md) | { 从左到右,从右到左,从上到下,从下到上 } |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1310
 
 ---
 
@@ -923,14 +739,6 @@ UI/index.d.ts:1310
 
 控件 GUID
 
-#### Inherited from
-
-Widget.guid
-
-#### Defined in
-
-UI/index.d.ts:4915
-
 ---
 
 ### isHovered
@@ -950,14 +758,6 @@ UI/index.d.ts:4915
 `boolean`
 
 boolean
-
-#### Inherited from
-
-Widget.isHovered
-
-#### Defined in
-
-UI/index.d.ts:4820
 
 ---
 
@@ -979,10 +779,6 @@ UI/index.d.ts:4820
 
 当前数值是否取整
 
-#### Defined in
-
-UI/index.d.ts:1433
-
 • `set` **isRoundedToInt**(`inToInt`): `void`
 
 **`Description`**
@@ -995,19 +791,15 @@ UI/index.d.ts:1433
 
 #### Parameters
 
-| Name      | Type      | Description    |
-| :-------- | :-------- | :------------- |
-| `inToInt` | `boolean` | usage:是否取整 |
+| Name      | Type      | Description |
+| :-------- | :-------- | :---------- |
+| `inToInt` | `boolean` | 是否取整    |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1440
 
 ---
 
@@ -1029,14 +821,6 @@ UI/index.d.ts:1440
 
 返回名字
 
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4783
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -1051,19 +835,11 @@ UI/index.d.ts:4783
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4777
 
 ---
 
@@ -1085,10 +861,6 @@ Slider 值变化事件
 
 变化事件
 
-#### Defined in
-
-UI/index.d.ts:1446
-
 ---
 
 ### paintSpaceGeometry
@@ -1108,14 +880,6 @@ UI/index.d.ts:1446
 [`Geometry`](UI.UI.Geometry.md)
 
 返回最后一次用于渲染 Widget 的几何信息
-
-#### Inherited from
-
-Widget.paintSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4909
 
 ---
 
@@ -1137,14 +901,6 @@ UI/index.d.ts:4909
 
 返回父节点
 
-#### Inherited from
-
-Widget.parent
-
-#### Defined in
-
-UI/index.d.ts:4764
-
 ---
 
 ### percent
@@ -1165,10 +921,6 @@ UI/index.d.ts:4764
 
 当前百分比
 
-#### Defined in
-
-UI/index.d.ts:1420
-
 • `set` **percent**(`inPercent`): `void`
 
 **`Description`**
@@ -1181,19 +933,15 @@ UI/index.d.ts:1420
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `inPercent` | `number` | usage:百分比 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `inPercent` | `number` | 百分比      |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1427
 
 ---
 
@@ -1215,14 +963,6 @@ UI/index.d.ts:1427
 
 控件的位置
 
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4951
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Description`**
@@ -1235,21 +975,13 @@ UI/index.d.ts:4951
 
 #### Parameters
 
-| Name              | Type                              | Description      |
-| :---------------- | :-------------------------------- | :--------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4945
 
 ---
 
@@ -1271,14 +1003,6 @@ UI/index.d.ts:4945
 
 返回渲染透明度
 
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4891
-
 • `set` **renderOpacity**(`InOpacity`): `void`
 
 **`Description`**
@@ -1291,21 +1015,13 @@ UI/index.d.ts:4891
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `InOpacity` | `number` | usage:透明度 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `InOpacity` | `number` | 透明度      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4885
 
 ---
 
@@ -1327,14 +1043,6 @@ UI/index.d.ts:4885
 
 返回渲染缩放
 
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4879
-
 • `set` **renderScale**(`scale`): `void`
 
 **`Description`**
@@ -1347,21 +1055,13 @@ UI/index.d.ts:4879
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4873
 
 ---
 
@@ -1383,14 +1083,6 @@ UI/index.d.ts:4873
 
 返回渲染错切形变
 
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4867
-
 • `set` **renderShear**(`shear`): `void`
 
 **`Description`**
@@ -1403,21 +1095,13 @@ UI/index.d.ts:4867
 
 #### Parameters
 
-| Name    | Type                              | Description        |
-| :------ | :-------------------------------- | :----------------- |
-| `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
+| Name    | Type                              | Description  |
+| :------ | :-------------------------------- | :----------- |
+| `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4861
 
 ---
 
@@ -1439,14 +1123,6 @@ UI/index.d.ts:4861
 
 返回渲染角度
 
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4843
-
 • `set` **renderTransformAngle**(`o`): `void`
 
 **`Description`**
@@ -1459,21 +1135,13 @@ UI/index.d.ts:4843
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `o`  | `number` | usage:渲染角度 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `o`  | `number` | 渲染角度    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4837
 
 ---
 
@@ -1495,14 +1163,6 @@ UI/index.d.ts:4837
 
 返回渲染锚点
 
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4855
-
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
 **`Description`**
@@ -1515,21 +1175,13 @@ UI/index.d.ts:4855
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4849
 
 ---
 
@@ -1551,14 +1203,6 @@ UI/index.d.ts:4849
 
 FVector2D
 
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4963
-
 • `set` **size**(`inSize`): `void`
 
 **`Description`**
@@ -1571,21 +1215,13 @@ UI/index.d.ts:4963
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4957
 
 ---
 
@@ -1607,10 +1243,6 @@ UI/index.d.ts:4957
 
 拖动条最大值
 
-#### Defined in
-
-UI/index.d.ts:1407
-
 • `set` **sliderMaxValue**(`inValue`): `void`
 
 **`Description`**
@@ -1623,19 +1255,15 @@ UI/index.d.ts:1407
 
 #### Parameters
 
-| Name      | Type     | Description        |
-| :-------- | :------- | :----------------- |
-| `inValue` | `number` | usage:拖动条最大值 |
+| Name      | Type     | Description  |
+| :-------- | :------- | :----------- |
+| `inValue` | `number` | 拖动条最大值 |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1414
 
 ---
 
@@ -1657,10 +1285,6 @@ UI/index.d.ts:1414
 
 拖动条最小值
 
-#### Defined in
-
-UI/index.d.ts:1394
-
 • `set` **sliderMinValue**(`inValue`): `void`
 
 **`Description`**
@@ -1673,19 +1297,15 @@ UI/index.d.ts:1394
 
 #### Parameters
 
-| Name      | Type     | Description        |
-| :-------- | :------- | :----------------- |
-| `inValue` | `number` | usage:拖动条最小值 |
+| Name      | Type     | Description  |
+| :-------- | :------- | :----------- |
+| `inValue` | `number` | 拖动条最小值 |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1401
 
 ---
 
@@ -1711,14 +1331,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
-#### Inherited from
-
-Widget.slot
-
-#### Defined in
-
-UI/index.d.ts:4771
-
 ---
 
 ### thumbImageColor
@@ -1739,10 +1351,6 @@ UI/index.d.ts:4771
 
 滑块图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1359
-
 • `set` **thumbImageColor**(`inColor`): `void`
 
 **`Description`**
@@ -1755,17 +1363,13 @@ UI/index.d.ts:1359
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                     |
+| :-------- | :---------------------------------------- | :---------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 设置的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1353
 
 ---
 
@@ -1787,10 +1391,6 @@ UI/index.d.ts:1353
 
 滑块图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1375
-
 • `set` **thumbImageDrawType**(`inDrawType`): `void`
 
 **`Description`**
@@ -1803,17 +1403,13 @@ UI/index.d.ts:1375
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:绘制类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | 绘制类型    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1365
 
 ---
 
@@ -1835,10 +1431,6 @@ UI/index.d.ts:1365
 
 填充区图片 id
 
-#### Defined in
-
-UI/index.d.ts:1323
-
 • `set` **thumbImageGuid**(`InGuid`): `void`
 
 **`Description`**
@@ -1851,19 +1443,15 @@ UI/index.d.ts:1323
 
 #### Parameters
 
-| Name     | Type     | Description           |
-| :------- | :------- | :-------------------- |
-| `InGuid` | `string` | usage:拖动条样式 GUID |
+| Name     | Type     | Description     |
+| :------- | :------- | :-------------- |
+| `InGuid` | `string` | 拖动条样式 GUID |
 
 #### Returns
 
 `void`
 
 void
-
-#### Defined in
-
-UI/index.d.ts:1317
 
 ---
 
@@ -1885,10 +1473,6 @@ UI/index.d.ts:1317
 
 拖动条图片边距
 
-#### Defined in
-
-UI/index.d.ts:1329
-
 • `set` **thumbImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -1901,17 +1485,13 @@ UI/index.d.ts:1329
 
 #### Parameters
 
-| Name       | Type                        | Description          |
-| :--------- | :-------------------------- | :------------------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:拖动条图片边距 |
+| Name       | Type                        | Description    |
+| :--------- | :-------------------------- | :------------- |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 拖动条图片边距 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1335
 
 ---
 
@@ -1933,10 +1513,6 @@ UI/index.d.ts:1335
 
 图片大小
 
-#### Defined in
-
-UI/index.d.ts:1347
-
 • `set` **thumbImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -1949,17 +1525,13 @@ UI/index.d.ts:1347
 
 #### Parameters
 
-| Name     | Type                              | Description        |
-| :------- | :-------------------------------- | :----------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:滑块图片大小 |
+| Name     | Type                              | Description  |
+| :------- | :-------------------------------- | :----------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 滑块图片大小 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1341
 
 ---
 
@@ -1981,14 +1553,6 @@ UI/index.d.ts:1341
 
 返回最后一次用于驱动 Widget Tick 的几何信息
 
-#### Inherited from
-
-Widget.tickSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4903
-
 ---
 
 ### transform
@@ -2009,14 +1573,6 @@ UI/index.d.ts:4903
 
 控件的大小和位置
 
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4927
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Description`**
@@ -2029,21 +1585,13 @@ UI/index.d.ts:4927
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4921
 
 ---
 
@@ -2065,14 +1613,6 @@ UI/index.d.ts:4921
 
 返回可见性
 
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4795
-
 • `set` **visibility**(`Visibility`): `void`
 
 **`Description`**
@@ -2085,21 +1625,13 @@ UI/index.d.ts:4795
 
 #### Parameters
 
-| Name         | Type                                                   | Description  |
-| :----------- | :----------------------------------------------------- | :----------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
+| Name         | Type                                                   | Description |
+| :----------- | :----------------------------------------------------- | :---------- |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4789
 
 ---
 
@@ -2121,14 +1653,6 @@ UI/index.d.ts:4789
 
 boolean
 
-#### Inherited from
-
-Widget.visible
-
-#### Defined in
-
-UI/index.d.ts:4801
-
 ---
 
 ### zOrder
@@ -2149,14 +1673,6 @@ UI/index.d.ts:4801
 
 zorder
 
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4975
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Description`**
@@ -2169,21 +1685,13 @@ UI/index.d.ts:4975
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4969
 
 ## Methods
 
@@ -2203,14 +1711,6 @@ UI/index.d.ts:4969
 
 `void`
 
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[destroyObject](UI.UI.Widget.md#destroyobject)
-
-#### Defined in
-
-UI/index.d.ts:4751
-
 ---
 
 ### equal
@@ -2227,23 +1727,15 @@ UI/index.d.ts:4751
 
 #### Parameters
 
-| Name   | Type                        | Description                  |
-| :----- | :-------------------------- | :--------------------------- |
-| `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
+| Name   | Type                        | Description            |
+| :----- | :-------------------------- | :--------------------- |
+| `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[equal](UI.UI.Widget.md#equal)
-
-#### Defined in
-
-UI/index.d.ts:4758
 
 ---
 
@@ -2263,14 +1755,6 @@ UI/index.d.ts:4758
 
 `void`
 
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[invalidateLayoutAndVolatility](UI.UI.Widget.md#invalidatelayoutandvolatility)
-
-#### Defined in
-
-UI/index.d.ts:4825
-
 ---
 
 ### newObject
@@ -2287,17 +1771,13 @@ UI/index.d.ts:4825
 
 #### Parameters
 
-| Name      | Type                        | Description                                 |
-| :-------- | :-------------------------- | :------------------------------------------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 parent 对象 default:null |
-| `inName?` | `string`                    | usage:创建控件的名称 default:null           |
+| Name      | Type                        | Description                           |
+| :-------- | :-------------------------- | :------------------------------------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 parent 对象 default:null |
+| `inName?` | `string`                    | 创建控件的名称 default:null           |
 
 #### Returns
 
 [`ProgressBar`](UI.UI.ProgressBar.md)
 
 创建的对象
-
-#### Defined in
-
-UI/index.d.ts:1175

@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / StaleButton
+[UI](../modules/UI.UI.md) / StaleButton
 
-# Class: StaleButton
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).StaleButton
-
-**`Author`**
-
-jie.wu
+# StaleButton <Badge type="tip" text="Class" />
 
 **`Description`**
 
 按钮
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,100 +14,86 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                       |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoSizeEnable](UI.UI.StaleButton.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                                |
+| **[cachedGeometry](UI.UI.StaleButton.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                             |
+| **[clickMethod](UI.UI.StaleButton.md#clickmethod)**([`ButtonClickMethod`](../enums/UI.UI.ButtonClickMethod.md)): `void` <br> 设置点击模式                       |
+| **[constraints](UI.UI.StaleButton.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局                   |
+| **[contentColor](UI.UI.StaleButton.md#contentcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置字体内容颜色                                        |
+| **[desiredSize](UI.UI.StaleButton.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                                      |
+| **[disableImageColor](UI.UI.StaleButton.md#disableimagecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取禁用图片颜色                              |
+| **[disableImageDrawType](UI.UI.StaleButton.md#disableimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取禁用图片绘制类型 |
+| **[disableImageGuid](UI.UI.StaleButton.md#disableimageguid)**(): `string` <br> 获取禁用图片 ID                                                                  |
+| **[disableImageMargin](UI.UI.StaleButton.md#disableimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取禁用图片边距                                          |
+| **[disableImageSize](UI.UI.StaleButton.md#disableimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取禁用图片大小                                        |
+| **[enable](UI.UI.StaleButton.md#enable)**(): `boolean` <br> 是否可用                                                                                            |
+| **[focusable](UI.UI.StaleButton.md#focusable)**(): `boolean` <br> 获取是否获取输入焦点                                                                          |
+| **[fontColor](UI.UI.StaleButton.md#fontcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体颜色                                                  |
+| **[fontLetterSpace](UI.UI.StaleButton.md#fontletterspace)**(): `number` <br> 获取字体间距                                                                       |
+| **[fontSize](UI.UI.StaleButton.md#fontsize)**(): `number` <br> 获取字体大小                                                                                     |
+| **[glyph](UI.UI.StaleButton.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) <br> 获取字体字形                                                     |
+| **[guid](UI.UI.StaleButton.md#guid)**(): `string` <br> 获取控件 GUID                                                                                            |
+| **[isHovered](UI.UI.StaleButton.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                                |
+| **[name](UI.UI.StaleButton.md#name)**(): `string` <br> 获取名字                                                                                                 |
+| **[normalImageColor](UI.UI.StaleButton.md#normalimagecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取普通图片颜色                                |
+| **[normalImageDrawType](UI.UI.StaleButton.md#normalimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取普通图片绘制类型   |
+| **[normalImageGuid](UI.UI.StaleButton.md#normalimageguid)**(): `string` <br> 获取普通图片 ID                                                                    |
+| **[normalImageMargin](UI.UI.StaleButton.md#normalimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取普通图片边距                                            |
+| **[normalImageSize](UI.UI.StaleButton.md#normalimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取图片大小                                              |
+| **[onClicked](UI.UI.StaleButton.md#onclicked)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 点击事件                           |
+| **[onHovered](UI.UI.StaleButton.md#onhovered)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 悬浮事件                           |
+| **[onPressed](UI.UI.StaleButton.md#onpressed)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 按下事件                           |
+| **[onReleased](UI.UI.StaleButton.md#onreleased)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 释放事件                         |
+| **[onUnhovered](UI.UI.StaleButton.md#onunhovered)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 未悬浮事件                     |
+| **[outlineColor](UI.UI.StaleButton.md#outlinecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体描边颜色                                        |
+| **[outlineSize](UI.UI.StaleButton.md#outlinesize)**(): `number` <br> 获取字体描边宽度                                                                           |
+| **[paintSpaceGeometry](UI.UI.StaleButton.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息                |
+| **[parent](UI.UI.StaleButton.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                                        |
+| **[position](UI.UI.StaleButton.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                             |
+| **[pressMethod](UI.UI.StaleButton.md#pressmethod)**([`ButtonPressMethod`](../enums/UI.UI.ButtonPressMethod.md)): `void` <br> 设置按压模式                       |
+| **[pressedImagColor](UI.UI.StaleButton.md#pressedimagcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取按压图片颜色                                |
+| **[pressedImageDrawType](UI.UI.StaleButton.md#pressedimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取按压图片绘制类型 |
+| **[pressedImageGuid](UI.UI.StaleButton.md#pressedimageguid)**(): `string` <br> 获取按下图片 ID                                                                  |
+| **[pressedImageMargin](UI.UI.StaleButton.md#pressedimagemargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取按压图片边距                                          |
+| **[pressedImageSize](UI.UI.StaleButton.md#pressedimagesize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取按压图片大小                                        |
+| **[renderOpacity](UI.UI.StaleButton.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                         |
+| **[renderScale](UI.UI.StaleButton.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                                      |
+| **[renderShear](UI.UI.StaleButton.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                                  |
+| **[renderTransformAngle](UI.UI.StaleButton.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                           |
+| **[renderTransformPivot](UI.UI.StaleButton.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                                    |
+| **[shadowColor](UI.UI.StaleButton.md#shadowcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体阴影颜色                                          |
+| **[shadowOffset](UI.UI.StaleButton.md#shadowoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取字体阴影偏移                                                |
+| **[size](UI.UI.StaleButton.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                                        |
+| **[slot](UI.UI.StaleButton.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息          |
+| **[strikethroughEnable](UI.UI.StaleButton.md#strikethroughenable)**(): `boolean` <br> 获取是否开启字体删除线                                                    |
+| **[text](UI.UI.StaleButton.md#text)**(): `string` <br> 获取按钮文字                                                                                             |
+| **[textAlign](UI.UI.StaleButton.md#textalign)**(): [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 获取字体对齐方式                                         |
+| **[textVerticalAlign](UI.UI.StaleButton.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 获取字体垂直对齐方式     |
+| **[tickSpaceGeometry](UI.UI.StaleButton.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息             |
+| **[touchMethod](UI.UI.StaleButton.md#touchmethod)**([`ButtonTouchMethod`](../enums/UI.UI.ButtonTouchMethod.md)): `void` <br> 设置触摸模式                       |
+| **[transform](UI.UI.StaleButton.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                                 |
+| **[transitionEnable](UI.UI.StaleButton.md#transitionenable)**(): `boolean` <br> 获取按钮是否启用过度模式,按下是否有效果                                         |
+| **[underlineEnable](UI.UI.StaleButton.md#underlineenable)**(): `boolean` <br> 返回是否开启字体下划线                                                            |
+| **[visibility](UI.UI.StaleButton.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                                     |
+| **[visible](UI.UI.StaleButton.md#visible)**(): `boolean` <br> 是否可见                                                                                          |
+| **[zOrder](UI.UI.StaleButton.md#zorder)**(): `number` <br> 获取 zorder                                                                                          |
 
-- [constructor](UI.UI.StaleButton.md#constructor)
-
-### Accessors
-
-- [autoSizeEnable](UI.UI.StaleButton.md#autosizeenable)
-- [cachedGeometry](UI.UI.StaleButton.md#cachedgeometry)
-- [clickMethod](UI.UI.StaleButton.md#clickmethod)
-- [constraints](UI.UI.StaleButton.md#constraints)
-- [contentColor](UI.UI.StaleButton.md#contentcolor)
-- [desiredSize](UI.UI.StaleButton.md#desiredsize)
-- [disableImageColor](UI.UI.StaleButton.md#disableimagecolor)
-- [disableImageDrawType](UI.UI.StaleButton.md#disableimagedrawtype)
-- [disableImageGuid](UI.UI.StaleButton.md#disableimageguid)
-- [disableImageMargin](UI.UI.StaleButton.md#disableimagemargin)
-- [disableImageSize](UI.UI.StaleButton.md#disableimagesize)
-- [enable](UI.UI.StaleButton.md#enable)
-- [focusable](UI.UI.StaleButton.md#focusable)
-- [fontColor](UI.UI.StaleButton.md#fontcolor)
-- [fontLetterSpace](UI.UI.StaleButton.md#fontletterspace)
-- [fontSize](UI.UI.StaleButton.md#fontsize)
-- [glyph](UI.UI.StaleButton.md#glyph)
-- [guid](UI.UI.StaleButton.md#guid)
-- [isHovered](UI.UI.StaleButton.md#ishovered)
-- [name](UI.UI.StaleButton.md#name)
-- [normalImageColor](UI.UI.StaleButton.md#normalimagecolor)
-- [normalImageDrawType](UI.UI.StaleButton.md#normalimagedrawtype)
-- [normalImageGuid](UI.UI.StaleButton.md#normalimageguid)
-- [normalImageMargin](UI.UI.StaleButton.md#normalimagemargin)
-- [normalImageSize](UI.UI.StaleButton.md#normalimagesize)
-- [onClicked](UI.UI.StaleButton.md#onclicked)
-- [onHovered](UI.UI.StaleButton.md#onhovered)
-- [onPressed](UI.UI.StaleButton.md#onpressed)
-- [onReleased](UI.UI.StaleButton.md#onreleased)
-- [onUnhovered](UI.UI.StaleButton.md#onunhovered)
-- [outlineColor](UI.UI.StaleButton.md#outlinecolor)
-- [outlineSize](UI.UI.StaleButton.md#outlinesize)
-- [paintSpaceGeometry](UI.UI.StaleButton.md#paintspacegeometry)
-- [parent](UI.UI.StaleButton.md#parent)
-- [position](UI.UI.StaleButton.md#position)
-- [pressMethod](UI.UI.StaleButton.md#pressmethod)
-- [pressedImagColor](UI.UI.StaleButton.md#pressedimagcolor)
-- [pressedImageDrawType](UI.UI.StaleButton.md#pressedimagedrawtype)
-- [pressedImageGuid](UI.UI.StaleButton.md#pressedimageguid)
-- [pressedImageMargin](UI.UI.StaleButton.md#pressedimagemargin)
-- [pressedImageSize](UI.UI.StaleButton.md#pressedimagesize)
-- [renderOpacity](UI.UI.StaleButton.md#renderopacity)
-- [renderScale](UI.UI.StaleButton.md#renderscale)
-- [renderShear](UI.UI.StaleButton.md#rendershear)
-- [renderTransformAngle](UI.UI.StaleButton.md#rendertransformangle)
-- [renderTransformPivot](UI.UI.StaleButton.md#rendertransformpivot)
-- [shadowColor](UI.UI.StaleButton.md#shadowcolor)
-- [shadowOffset](UI.UI.StaleButton.md#shadowoffset)
-- [size](UI.UI.StaleButton.md#size)
-- [slot](UI.UI.StaleButton.md#slot)
-- [strikethroughEnable](UI.UI.StaleButton.md#strikethroughenable)
-- [text](UI.UI.StaleButton.md#text)
-- [textAlign](UI.UI.StaleButton.md#textalign)
-- [textVerticalAlign](UI.UI.StaleButton.md#textverticalalign)
-- [tickSpaceGeometry](UI.UI.StaleButton.md#tickspacegeometry)
-- [touchMethod](UI.UI.StaleButton.md#touchmethod)
-- [transform](UI.UI.StaleButton.md#transform)
-- [transitionEnable](UI.UI.StaleButton.md#transitionenable)
-- [underlineEnable](UI.UI.StaleButton.md#underlineenable)
-- [visibility](UI.UI.StaleButton.md#visibility)
-- [visible](UI.UI.StaleButton.md#visible)
-- [zOrder](UI.UI.StaleButton.md#zorder)
-
-### Methods
-
-- [destroyObject](UI.UI.StaleButton.md#destroyobject)
-- [equal](UI.UI.StaleButton.md#equal)
-- [invalidateLayoutAndVolatility](UI.UI.StaleButton.md#invalidatelayoutandvolatility)
-- [isPressed](UI.UI.StaleButton.md#ispressed)
-- [setDisableImageColorByHex](UI.UI.StaleButton.md#setdisableimagecolorbyhex)
-- [setDisableImageColorDecimal](UI.UI.StaleButton.md#setdisableimagecolordecimal)
-- [setFontColorByHex](UI.UI.StaleButton.md#setfontcolorbyhex)
-- [setFontColorDecimal](UI.UI.StaleButton.md#setfontcolordecimal)
-- [setNormalImageColorByHex](UI.UI.StaleButton.md#setnormalimagecolorbyhex)
-- [setNormalImageColorDecimal](UI.UI.StaleButton.md#setnormalimagecolordecimal)
-- [setPressedImageColorByHex](UI.UI.StaleButton.md#setpressedimagecolorbyhex)
-- [setPressedImageColorDecimal](UI.UI.StaleButton.md#setpressedimagecolordecimal)
-- [newObject](UI.UI.StaleButton.md#newobject)
-
-## Constructors
-
-### constructor
-
-• **new StaleButton**()
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[constructor](UI.UI.Widget.md#constructor)
+| Methods                                                                                                                                                                                                           |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[destroyObject](UI.UI.StaleButton.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                                                                                                |
+| **[equal](UI.UI.StaleButton.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                                                                                         |
+| **[invalidateLayoutAndVolatility](UI.UI.StaleButton.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算                                                                               |
+| **[isPressed](UI.UI.StaleButton.md#ispressed)**(): `boolean` <br> 是否按下                                                                                                                                        |
+| **[setDisableImageColorByHex](UI.UI.StaleButton.md#setdisableimagecolorbyhex)**(`string`): `void` <br> 设置不可用颜色,指定 Hex 的颜色文本设定颜色 #05050505                                                       |
+| **[setDisableImageColorDecimal](UI.UI.StaleButton.md#setdisableimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置不可用颜色,指定 R、G、B、A 设置颜色 0 ~255                           |
+| **[setFontColorByHex](UI.UI.StaleButton.md#setfontcolorbyhex)**(`string`): `void` <br> 设置字体颜色,指定 Hex 的颜色文本设定颜色 #05050505                                                                         |
+| **[setFontColorDecimal](UI.UI.StaleButton.md#setfontcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体颜色,指定 R、G、B、A 设置颜色 0 ~255                                             |
+| **[setNormalImageColorByHex](UI.UI.StaleButton.md#setnormalimagecolorbyhex)**(`string`): `void` <br> 设置正常颜色,指定 Hex 的颜色文本设定颜色 #05050505                                                           |
+| **[setNormalImageColorDecimal](UI.UI.StaleButton.md#setnormalimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置正常颜色,指定 R、G、B、A 设置颜色 0 ~255                               |
+| **[setPressedImageColorByHex](UI.UI.StaleButton.md#setpressedimagecolorbyhex)**(`string`): `void` <br> 设置按下颜色,指定 Hex 的颜色文本设定颜色 #05050505                                                         |
+| **[setPressedImageColorDecimal](UI.UI.StaleButton.md#setpressedimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置按下颜色,指定 R、G、B、A 设置颜色 0 ~255                             |
+| **[newObject](UI.UI.StaleButton.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`StaleButton`](UI.UI.StaleButton.md) <br> 创建 StaleButton 控件 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁 |
 
 ## Accessors
 
@@ -139,14 +115,6 @@ usage:客户端
 
 是否自动设置大小
 
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4987
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Description`**
@@ -159,21 +127,13 @@ UI/index.d.ts:4987
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4981
 
 ---
 
@@ -195,14 +155,6 @@ UI/index.d.ts:4981
 
 返回上一次的 GetTickSpaceGeometry
 
-#### Inherited from
-
-Widget.cachedGeometry
-
-#### Defined in
-
-UI/index.d.ts:4897
-
 ---
 
 ### clickMethod
@@ -219,19 +171,15 @@ UI/index.d.ts:4897
 
 #### Parameters
 
-| Name            | Type                                                       | Description    |
-| :-------------- | :--------------------------------------------------------- | :------------- |
-| `inClickMethod` | [`ButtonClickMethod`](../enums/UI.UI.ButtonClickMethod.md) | usage:点击模式 |
+| Name            | Type                                                       | Description |
+| :-------------- | :--------------------------------------------------------- | :---------- |
+| `inClickMethod` | [`ButtonClickMethod`](../enums/UI.UI.ButtonClickMethod.md) | 点击模式    |
 
 #### Returns
 
 `void`
 
 点击模式选择
-
-#### Defined in
-
-UI/index.d.ts:2127
 
 ---
 
@@ -253,14 +201,6 @@ UI/index.d.ts:2127
 
 控件的布局
 
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4939
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Description`**
@@ -273,21 +213,13 @@ UI/index.d.ts:4939
 
 #### Parameters
 
-| Name              | Type                                                  | Description      |
-| :---------------- | :---------------------------------------------------- | :--------------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+| Name              | Type                                                  | Description |
+| :---------------- | :---------------------------------------------------- | :---------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4933
 
 ---
 
@@ -309,10 +241,6 @@ UI/index.d.ts:4933
 
 字体内容颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1820
-
 • `set` **contentColor**(`inContentColor`): `void`
 
 **`Description`**
@@ -325,17 +253,13 @@ UI/index.d.ts:1820
 
 #### Parameters
 
-| Name             | Type                                      | Description                                     |
-| :--------------- | :---------------------------------------- | :---------------------------------------------- |
-| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name             | Type                                      | Description                               |
+| :--------------- | :---------------------------------------- | :---------------------------------------- |
+| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1814
 
 ---
 
@@ -357,14 +281,6 @@ UI/index.d.ts:1814
 
 返回期望大小
 
-#### Inherited from
-
-Widget.desiredSize
-
-#### Defined in
-
-UI/index.d.ts:4831
-
 ---
 
 ### disableImageColor
@@ -385,10 +301,6 @@ UI/index.d.ts:4831
 
 禁用图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:2024
-
 • `set` **disableImageColor**(`inColor`): `void`
 
 **`Description`**
@@ -401,17 +313,13 @@ UI/index.d.ts:2024
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                     |
+| :-------- | :---------------------------------------- | :---------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2018
 
 ---
 
@@ -433,10 +341,6 @@ UI/index.d.ts:2018
 
 禁用图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:2036
-
 • `set` **disableImageDrawType**(`inDrawType`): `void`
 
 **`Description`**
@@ -451,15 +355,11 @@ UI/index.d.ts:2036
 
 | Name         | Type                                                         | Description |
 | :----------- | :----------------------------------------------------------- | :---------- |
-| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:void  |
+| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | void        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2030
 
 ---
 
@@ -481,10 +381,6 @@ UI/index.d.ts:2030
 
 禁用图片 ID
 
-#### Defined in
-
-UI/index.d.ts:2078
-
 • `set` **disableImageGuid**(`inGuid`): `void`
 
 **`Description`**
@@ -497,17 +393,13 @@ UI/index.d.ts:2078
 
 #### Parameters
 
-| Name     | Type     | Description   |
-| :------- | :------- | :------------ |
-| `inGuid` | `string` | usage:图片 id |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inGuid` | `string` | 图片 id     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2084
 
 ---
 
@@ -529,10 +421,6 @@ UI/index.d.ts:2084
 
 禁用图片边距
 
-#### Defined in
-
-UI/index.d.ts:2042
-
 • `set` **disableImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -547,15 +435,11 @@ UI/index.d.ts:2042
 
 | Name       | Type                        | Description |
 | :--------- | :-------------------------- | :---------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:边距  |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 边距        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2048
 
 ---
 
@@ -577,10 +461,6 @@ UI/index.d.ts:2048
 
 禁用图片大小
 
-#### Defined in
-
-UI/index.d.ts:2012
-
 • `set` **disableImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -595,15 +475,11 @@ UI/index.d.ts:2012
 
 | Name     | Type                              | Description |
 | :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:大小  |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 大小        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2006
 
 ---
 
@@ -625,14 +501,6 @@ UI/index.d.ts:2006
 
 boolean
 
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4807
-
 • `set` **enable**(`isEnable`): `void`
 
 **`Description`**
@@ -645,23 +513,15 @@ UI/index.d.ts:4807
 
 #### Parameters
 
-| Name       | Type      | Description          |
-| :--------- | :-------- | :------------------- |
-| `isEnable` | `boolean` | usage:可用性 boolean |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
+| `isEnable` | `boolean` | 可用性 boolean |
 
 #### Returns
 
 `void`
 
 返回设置结果
-
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4814
 
 ---
 
@@ -683,10 +543,6 @@ UI/index.d.ts:4814
 
 是否获取输入焦点
 
-#### Defined in
-
-UI/index.d.ts:1735
-
 • `set` **focusable**(`inFocus`): `void`
 
 **`Description`**
@@ -699,17 +555,13 @@ UI/index.d.ts:1735
 
 #### Parameters
 
-| Name      | Type      | Description            |
-| :-------- | :-------- | :--------------------- |
-| `inFocus` | `boolean` | usage:是否获取输入焦点 |
+| Name      | Type      | Description      |
+| :-------- | :-------- | :--------------- |
+| `inFocus` | `boolean` | 是否获取输入焦点 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1729
 
 ---
 
@@ -731,10 +583,6 @@ UI/index.d.ts:1729
 
 字体颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:2151
-
 • `set` **fontColor**(`inColor`): `void`
 
 **`Description`**
@@ -747,17 +595,13 @@ UI/index.d.ts:2151
 
 #### Parameters
 
-| Name      | Type                                      | Description                                         |
-| :-------- | :---------------------------------------- | :-------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:字体颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                   |
+| :-------- | :---------------------------------------- | :-------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 字体颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2145
 
 ---
 
@@ -779,10 +623,6 @@ UI/index.d.ts:2145
 
 字体间距
 
-#### Defined in
-
-UI/index.d.ts:1772
-
 • `set` **fontLetterSpace**(`fontLetterSpace`): `void`
 
 **`Description`**
@@ -797,15 +637,11 @@ UI/index.d.ts:1772
 
 | Name              | Type     | Description |
 | :---------------- | :------- | :---------- |
-| `fontLetterSpace` | `number` | usage:间距  |
+| `fontLetterSpace` | `number` | 间距        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1766
 
 ---
 
@@ -827,10 +663,6 @@ UI/index.d.ts:1766
 
 字体大小
 
-#### Defined in
-
-UI/index.d.ts:1760
-
 • `set` **fontSize**(`FontSize`): `void`
 
 **`Description`**
@@ -845,15 +677,11 @@ UI/index.d.ts:1760
 
 | Name       | Type     | Description |
 | :--------- | :------- | :---------- |
-| `FontSize` | `number` | usage:大小  |
+| `FontSize` | `number` | 大小        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1754
 
 ---
 
@@ -875,10 +703,6 @@ UI/index.d.ts:1754
 
 字体字形
 
-#### Defined in
-
-UI/index.d.ts:1784
-
 • `set` **glyph**(`inGlyph`): `void`
 
 **`Description`**
@@ -891,17 +715,13 @@ UI/index.d.ts:1784
 
 #### Parameters
 
-| Name      | Type                                           | Description          |
-| :-------- | :--------------------------------------------- | :------------------- |
-| `inGlyph` | [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) | usage:字体字形的类型 |
+| Name      | Type                                           | Description    |
+| :-------- | :--------------------------------------------- | :------------- |
+| `inGlyph` | [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) | 字体字形的类型 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1778
 
 ---
 
@@ -923,14 +743,6 @@ UI/index.d.ts:1778
 
 控件 GUID
 
-#### Inherited from
-
-Widget.guid
-
-#### Defined in
-
-UI/index.d.ts:4915
-
 ---
 
 ### isHovered
@@ -950,14 +762,6 @@ UI/index.d.ts:4915
 `boolean`
 
 boolean
-
-#### Inherited from
-
-Widget.isHovered
-
-#### Defined in
-
-UI/index.d.ts:4820
 
 ---
 
@@ -979,14 +783,6 @@ UI/index.d.ts:4820
 
 返回名字
 
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4783
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -1001,19 +797,11 @@ UI/index.d.ts:4783
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4777
 
 ---
 
@@ -1035,10 +823,6 @@ UI/index.d.ts:4777
 
 普通图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1916
-
 • `set` **normalImageColor**(`inColor`): `void`
 
 **`Description`**
@@ -1051,17 +835,13 @@ UI/index.d.ts:1916
 
 #### Parameters
 
-| Name      | Type                                      | Description                                              |
-| :-------- | :---------------------------------------- | :------------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 普通图片颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                       |
+| :-------- | :---------------------------------------- | :------------------------------------------------ |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 普通图片颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1910
 
 ---
 
@@ -1083,10 +863,6 @@ UI/index.d.ts:1910
 
 普通图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1928
-
 • `set` **normalImageDrawType**(`inDrawType`): `void`
 
 **`Description`**
@@ -1099,17 +875,13 @@ UI/index.d.ts:1928
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:绘制类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `inDrawType` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | 绘制类型    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1922
 
 ---
 
@@ -1131,10 +903,6 @@ UI/index.d.ts:1922
 
 普通图片 ID
 
-#### Defined in
-
-UI/index.d.ts:2054
-
 • `set` **normalImageGuid**(`inGuid`): `void`
 
 **`Description`**
@@ -1147,17 +915,13 @@ UI/index.d.ts:2054
 
 #### Parameters
 
-| Name     | Type     | Description   |
-| :------- | :------- | :------------ |
-| `inGuid` | `string` | usage:图片 id |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inGuid` | `string` | 图片 id     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2060
 
 ---
 
@@ -1179,10 +943,6 @@ UI/index.d.ts:2060
 
 边距
 
-#### Defined in
-
-UI/index.d.ts:1934
-
 • `set` **normalImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -1195,17 +955,13 @@ UI/index.d.ts:1934
 
 #### Parameters
 
-| Name       | Type                        | Description        |
-| :--------- | :-------------------------- | :----------------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:普通图片边距 |
+| Name       | Type                        | Description  |
+| :--------- | :-------------------------- | :----------- |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 普通图片边距 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1940
 
 ---
 
@@ -1227,10 +983,6 @@ UI/index.d.ts:1940
 
 普通图片大小
 
-#### Defined in
-
-UI/index.d.ts:1904
-
 • `set` **normalImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -1243,17 +995,13 @@ UI/index.d.ts:1904
 
 #### Parameters
 
-| Name     | Type                              | Description                                               |
-| :------- | :-------------------------------- | :-------------------------------------------------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:设置的图片大小，Type.LinearColor 类型，数据范围 0~1 |
+| Name     | Type                              | Description                                         |
+| :------- | :-------------------------------- | :-------------------------------------------------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 设置的图片大小，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1898
 
 ---
 
@@ -1275,10 +1023,6 @@ UI/index.d.ts:1898
 
 返回事件的代理
 
-#### Defined in
-
-UI/index.d.ts:2090
-
 ---
 
 ### onHovered
@@ -1298,10 +1042,6 @@ UI/index.d.ts:2090
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
 返回事件的代理
-
-#### Defined in
-
-UI/index.d.ts:2108
 
 ---
 
@@ -1323,10 +1063,6 @@ UI/index.d.ts:2108
 
 返回事件的代理
 
-#### Defined in
-
-UI/index.d.ts:2096
-
 ---
 
 ### onReleased
@@ -1346,10 +1082,6 @@ UI/index.d.ts:2096
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
 
 返回事件的代理
-
-#### Defined in
-
-UI/index.d.ts:2102
 
 ---
 
@@ -1371,10 +1103,6 @@ UI/index.d.ts:2102
 
 返回事件的代理
 
-#### Defined in
-
-UI/index.d.ts:2114
-
 ---
 
 ### outlineColor
@@ -1395,10 +1123,6 @@ UI/index.d.ts:2114
 
 字体描边颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1880
-
 • `set` **outlineColor**(`inOutlineColor`): `void`
 
 **`Description`**
@@ -1411,17 +1135,13 @@ UI/index.d.ts:1880
 
 #### Parameters
 
-| Name             | Type                                      | Description                                         |
-| :--------------- | :---------------------------------------- | :-------------------------------------------------- |
-| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:描边颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name             | Type                                      | Description                                   |
+| :--------------- | :---------------------------------------- | :-------------------------------------------- |
+| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | 描边颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1874
 
 ---
 
@@ -1443,10 +1163,6 @@ UI/index.d.ts:1874
 
 字体描边宽度
 
-#### Defined in
-
-UI/index.d.ts:1892
-
 • `set` **outlineSize**(`inOutlineSize`): `void`
 
 **`Description`**
@@ -1459,17 +1175,13 @@ UI/index.d.ts:1892
 
 #### Parameters
 
-| Name            | Type     | Description      |
-| :-------------- | :------- | :--------------- |
-| `inOutlineSize` | `number` | usage:设置的大小 |
+| Name            | Type     | Description |
+| :-------------- | :------- | :---------- |
+| `inOutlineSize` | `number` | 设置的大小  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1886
 
 ---
 
@@ -1491,14 +1203,6 @@ UI/index.d.ts:1886
 
 返回最后一次用于渲染 Widget 的几何信息
 
-#### Inherited from
-
-Widget.paintSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4909
-
 ---
 
 ### parent
@@ -1518,14 +1222,6 @@ UI/index.d.ts:4909
 [`Widget`](UI.UI.Widget.md)
 
 返回父节点
-
-#### Inherited from
-
-Widget.parent
-
-#### Defined in
-
-UI/index.d.ts:4764
 
 ---
 
@@ -1547,14 +1243,6 @@ UI/index.d.ts:4764
 
 控件的位置
 
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4951
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Description`**
@@ -1567,21 +1255,13 @@ UI/index.d.ts:4951
 
 #### Parameters
 
-| Name              | Type                              | Description      |
-| :---------------- | :-------------------------------- | :--------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4945
 
 ---
 
@@ -1599,17 +1279,13 @@ UI/index.d.ts:4945
 
 #### Parameters
 
-| Name            | Type                                                       | Description    |
-| :-------------- | :--------------------------------------------------------- | :------------- |
-| `inPressMethod` | [`ButtonPressMethod`](../enums/UI.UI.ButtonPressMethod.md) | usage:按压模式 |
+| Name            | Type                                                       | Description |
+| :-------------- | :--------------------------------------------------------- | :---------- |
+| `inPressMethod` | [`ButtonPressMethod`](../enums/UI.UI.ButtonPressMethod.md) | 按压模式    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2139
 
 ---
 
@@ -1631,10 +1307,6 @@ UI/index.d.ts:2139
 
 按压图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1976
-
 • `set` **pressedImagColor**(`inColor`): `void`
 
 **`Description`**
@@ -1647,17 +1319,13 @@ UI/index.d.ts:1976
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:按压的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                     |
+| :-------- | :---------------------------------------- | :---------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 按压的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1970
 
 ---
 
@@ -1679,10 +1347,6 @@ UI/index.d.ts:1970
 
 按压图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1988
-
 • `set` **pressedImageDrawType**(`inDrawTYpe`): `void`
 
 **`Description`**
@@ -1695,17 +1359,13 @@ UI/index.d.ts:1988
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `inDrawTYpe` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:绘制类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `inDrawTYpe` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | 绘制类型    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1982
 
 ---
 
@@ -1727,10 +1387,6 @@ UI/index.d.ts:1982
 
 按下图片 ID
 
-#### Defined in
-
-UI/index.d.ts:2066
-
 • `set` **pressedImageGuid**(`inGuid`): `void`
 
 **`Description`**
@@ -1743,17 +1399,13 @@ UI/index.d.ts:2066
 
 #### Parameters
 
-| Name     | Type     | Description   |
-| :------- | :------- | :------------ |
-| `inGuid` | `string` | usage:图片 id |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inGuid` | `string` | 图片 id     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2072
 
 ---
 
@@ -1775,10 +1427,6 @@ UI/index.d.ts:2072
 
 按压图片边距
 
-#### Defined in
-
-UI/index.d.ts:1994
-
 • `set` **pressedImageMargin**(`inMargin`): `void`
 
 **`Description`**
@@ -1793,15 +1441,11 @@ UI/index.d.ts:1994
 
 | Name       | Type                        | Description |
 | :--------- | :-------------------------- | :---------- |
-| `inMargin` | [`Margin`](UI.UI.Margin.md) | usage:边距  |
+| `inMargin` | [`Margin`](UI.UI.Margin.md) | 边距        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2000
 
 ---
 
@@ -1823,10 +1467,6 @@ UI/index.d.ts:2000
 
 按压图片大小
 
-#### Defined in
-
-UI/index.d.ts:1964
-
 • `set` **pressedImageSize**(`inSize`): `void`
 
 **`Description`**
@@ -1841,15 +1481,11 @@ UI/index.d.ts:1964
 
 | Name     | Type                              | Description |
 | :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:size  |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | size        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1958
 
 ---
 
@@ -1871,14 +1507,6 @@ UI/index.d.ts:1958
 
 返回渲染透明度
 
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4891
-
 • `set` **renderOpacity**(`InOpacity`): `void`
 
 **`Description`**
@@ -1891,21 +1519,13 @@ UI/index.d.ts:4891
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `InOpacity` | `number` | usage:透明度 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `InOpacity` | `number` | 透明度      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4885
 
 ---
 
@@ -1927,14 +1547,6 @@ UI/index.d.ts:4885
 
 返回渲染缩放
 
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4879
-
 • `set` **renderScale**(`scale`): `void`
 
 **`Description`**
@@ -1947,21 +1559,13 @@ UI/index.d.ts:4879
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4873
 
 ---
 
@@ -1983,14 +1587,6 @@ UI/index.d.ts:4873
 
 返回渲染错切形变
 
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4867
-
 • `set` **renderShear**(`shear`): `void`
 
 **`Description`**
@@ -2003,21 +1599,13 @@ UI/index.d.ts:4867
 
 #### Parameters
 
-| Name    | Type                              | Description        |
-| :------ | :-------------------------------- | :----------------- |
-| `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
+| Name    | Type                              | Description  |
+| :------ | :-------------------------------- | :----------- |
+| `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4861
 
 ---
 
@@ -2039,14 +1627,6 @@ UI/index.d.ts:4861
 
 返回渲染角度
 
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4843
-
 • `set` **renderTransformAngle**(`o`): `void`
 
 **`Description`**
@@ -2059,21 +1639,13 @@ UI/index.d.ts:4843
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `o`  | `number` | usage:渲染角度 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `o`  | `number` | 渲染角度    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4837
 
 ---
 
@@ -2095,14 +1667,6 @@ UI/index.d.ts:4837
 
 返回渲染锚点
 
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4855
-
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
 **`Description`**
@@ -2115,21 +1679,13 @@ UI/index.d.ts:4855
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4849
 
 ---
 
@@ -2151,10 +1707,6 @@ UI/index.d.ts:4849
 
 字体阴影颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1832
-
 • `set` **shadowColor**(`inShadowColor`): `void`
 
 **`Description`**
@@ -2167,17 +1719,13 @@ UI/index.d.ts:1832
 
 #### Parameters
 
-| Name            | Type                                      | Description                                           |
-| :-------------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name            | Type                                      | Description                                     |
+| :-------------- | :---------------------------------------- | :---------------------------------------------- |
+| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | 输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1826
 
 ---
 
@@ -2199,10 +1747,6 @@ UI/index.d.ts:1826
 
 字体阴影偏移
 
-#### Defined in
-
-UI/index.d.ts:1844
-
 • `set` **shadowOffset**(`inOffset`): `void`
 
 **`Description`**
@@ -2215,17 +1759,13 @@ UI/index.d.ts:1844
 
 #### Parameters
 
-| Name       | Type                              | Description      |
-| :--------- | :-------------------------------- | :--------------- |
-| `inOffset` | [`Vector2`](Type.Type.Vector2.md) | usage:阴影偏移量 |
+| Name       | Type                              | Description |
+| :--------- | :-------------------------------- | :---------- |
+| `inOffset` | [`Vector2`](Type.Type.Vector2.md) | 阴影偏移量  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1838
 
 ---
 
@@ -2247,14 +1787,6 @@ UI/index.d.ts:1838
 
 FVector2D
 
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4963
-
 • `set` **size**(`inSize`): `void`
 
 **`Description`**
@@ -2267,21 +1799,13 @@ UI/index.d.ts:4963
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4957
 
 ---
 
@@ -2307,14 +1831,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
-#### Inherited from
-
-Widget.slot
-
-#### Defined in
-
-UI/index.d.ts:4771
-
 ---
 
 ### strikethroughEnable
@@ -2335,10 +1851,6 @@ UI/index.d.ts:4771
 
 是否开启字体删除线
 
-#### Defined in
-
-UI/index.d.ts:1796
-
 • `set` **strikethroughEnable**(`inEnableStrikethrough`): `void`
 
 **`Description`**
@@ -2351,17 +1863,13 @@ UI/index.d.ts:1796
 
 #### Parameters
 
-| Name                    | Type      | Description    |
-| :---------------------- | :-------- | :------------- |
-| `inEnableStrikethrough` | `boolean` | usage:是否开启 |
+| Name                    | Type      | Description |
+| :---------------------- | :-------- | :---------- |
+| `inEnableStrikethrough` | `boolean` | 是否开启    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1790
 
 ---
 
@@ -2383,10 +1891,6 @@ UI/index.d.ts:1790
 
 返回文字
 
-#### Defined in
-
-UI/index.d.ts:1741
-
 • `set` **text**(`InString`): `void`
 
 **`Description`**
@@ -2401,17 +1905,13 @@ UI/index.d.ts:1741
 
 | Name       | Type     | Description |
 | :--------- | :------- | :---------- |
-| `InString` | `string` | usage:文字  |
+| `InString` | `string` | 文字        |
 
 #### Returns
 
 `void`
 
 新文本
-
-#### Defined in
-
-UI/index.d.ts:1748
 
 ---
 
@@ -2433,10 +1933,6 @@ UI/index.d.ts:1748
 
 字体对齐方式
 
-#### Defined in
-
-UI/index.d.ts:1856
-
 • `set` **textAlign**(`InTextJustify`): `void`
 
 **`Description`**
@@ -2449,17 +1945,13 @@ UI/index.d.ts:1856
 
 #### Parameters
 
-| Name            | Type                                           | Description          |
-| :-------------- | :--------------------------------------------- | :------------------- |
-| `InTextJustify` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | usage:对齐方式的枚举 |
+| Name            | Type                                           | Description    |
+| :-------------- | :--------------------------------------------- | :------------- |
+| `InTextJustify` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | 对齐方式的枚举 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1850
 
 ---
 
@@ -2481,10 +1973,6 @@ UI/index.d.ts:1850
 
 字体垂直对齐方式
 
-#### Defined in
-
-UI/index.d.ts:1868
-
 • `set` **textVerticalAlign**(`inTextVerticalJustify`): `void`
 
 **`Description`**
@@ -2497,17 +1985,13 @@ UI/index.d.ts:1868
 
 #### Parameters
 
-| Name                    | Type                                                           | Description    |
-| :---------------------- | :------------------------------------------------------------- | :------------- |
-| `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | usage:对齐方式 |
+| Name                    | Type                                                           | Description |
+| :---------------------- | :------------------------------------------------------------- | :---------- |
+| `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | 对齐方式    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1862
 
 ---
 
@@ -2529,14 +2013,6 @@ UI/index.d.ts:1862
 
 返回最后一次用于驱动 Widget Tick 的几何信息
 
-#### Inherited from
-
-Widget.tickSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4903
-
 ---
 
 ### touchMethod
@@ -2553,17 +2029,13 @@ UI/index.d.ts:4903
 
 #### Parameters
 
-| Name            | Type                                                       | Description          |
-| :-------------- | :--------------------------------------------------------- | :------------------- |
-| `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.UI.ButtonTouchMethod.md) | usage:Touch 模式选择 |
+| Name            | Type                                                       | Description    |
+| :-------------- | :--------------------------------------------------------- | :------------- |
+| `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.UI.ButtonTouchMethod.md) | Touch 模式选择 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2133
 
 ---
 
@@ -2585,14 +2057,6 @@ UI/index.d.ts:2133
 
 控件的大小和位置
 
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4927
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Description`**
@@ -2605,21 +2069,13 @@ UI/index.d.ts:4927
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4921
 
 ---
 
@@ -2641,10 +2097,6 @@ UI/index.d.ts:4921
 
 按钮是否启用过度模式
 
-#### Defined in
-
-UI/index.d.ts:1946
-
 • `set` **transitionEnable**(`inBoolean`): `void`
 
 **`Description`**
@@ -2657,17 +2109,13 @@ UI/index.d.ts:1946
 
 #### Parameters
 
-| Name        | Type      | Description                  |
-| :---------- | :-------- | :--------------------------- |
-| `inBoolean` | `boolean` | usage:是否套用不同的按下方案 |
+| Name        | Type      | Description            |
+| :---------- | :-------- | :--------------------- |
+| `inBoolean` | `boolean` | 是否套用不同的按下方案 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1952
 
 ---
 
@@ -2689,10 +2137,6 @@ UI/index.d.ts:1952
 
 获取是否开启字体下划线
 
-#### Defined in
-
-UI/index.d.ts:1808
-
 • `set` **underlineEnable**(`inEnableUnderline`): `void`
 
 **`Description`**
@@ -2705,17 +2149,13 @@ UI/index.d.ts:1808
 
 #### Parameters
 
-| Name                | Type      | Description              |
-| :------------------ | :-------- | :----------------------- |
-| `inEnableUnderline` | `boolean` | usage:设置是否开启下划线 |
+| Name                | Type      | Description        |
+| :------------------ | :-------- | :----------------- |
+| `inEnableUnderline` | `boolean` | 设置是否开启下划线 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1802
 
 ---
 
@@ -2737,14 +2177,6 @@ UI/index.d.ts:1802
 
 返回可见性
 
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4795
-
 • `set` **visibility**(`Visibility`): `void`
 
 **`Description`**
@@ -2757,21 +2189,13 @@ UI/index.d.ts:4795
 
 #### Parameters
 
-| Name         | Type                                                   | Description  |
-| :----------- | :----------------------------------------------------- | :----------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
+| Name         | Type                                                   | Description |
+| :----------- | :----------------------------------------------------- | :---------- |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4789
 
 ---
 
@@ -2793,14 +2217,6 @@ UI/index.d.ts:4789
 
 boolean
 
-#### Inherited from
-
-Widget.visible
-
-#### Defined in
-
-UI/index.d.ts:4801
-
 ---
 
 ### zOrder
@@ -2821,14 +2237,6 @@ UI/index.d.ts:4801
 
 zorder
 
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4975
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Description`**
@@ -2841,21 +2249,13 @@ UI/index.d.ts:4975
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4969
 
 ## Methods
 
@@ -2875,14 +2275,6 @@ UI/index.d.ts:4969
 
 `void`
 
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[destroyObject](UI.UI.Widget.md#destroyobject)
-
-#### Defined in
-
-UI/index.d.ts:4751
-
 ---
 
 ### equal
@@ -2899,23 +2291,15 @@ UI/index.d.ts:4751
 
 #### Parameters
 
-| Name   | Type                        | Description                  |
-| :----- | :-------------------------- | :--------------------------- |
-| `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
+| Name   | Type                        | Description            |
+| :----- | :-------------------------- | :--------------------- |
+| `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[equal](UI.UI.Widget.md#equal)
-
-#### Defined in
-
-UI/index.d.ts:4758
 
 ---
 
@@ -2934,14 +2318,6 @@ UI/index.d.ts:4758
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[invalidateLayoutAndVolatility](UI.UI.Widget.md#invalidatelayoutandvolatility)
-
-#### Defined in
-
-UI/index.d.ts:4825
 
 ---
 
@@ -2963,10 +2339,6 @@ UI/index.d.ts:4825
 
 返回按钮是否按下
 
-#### Defined in
-
-UI/index.d.ts:2120
-
 ---
 
 ### setDisableImageColorByHex
@@ -2983,17 +2355,13 @@ UI/index.d.ts:2120
 
 #### Parameters
 
-| Name          | Type     | Description      |
-| :------------ | :------- | :--------------- |
-| `inHexString` | `string` | usage:颜色字符串 |
+| Name          | Type     | Description |
+| :------------ | :------- | :---------- |
+| `inHexString` | `string` | 颜色字符串  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2226
 
 ---
 
@@ -3011,20 +2379,16 @@ UI/index.d.ts:2226
 
 #### Parameters
 
-| Name | Type     | Description                      |
-| :--- | :------- | :------------------------------- |
-| `R`  | `number` | usage:颜色 R 值，数据范围 0~255  |
-| `G`  | `number` | usage:颜色 G 值，数据范围 0~255  |
-| `B`  | `number` | usage:颜色 B 值，数据范围 0~255  |
-| `A`  | `number` | usage:颜色透明度，数据范围 0~255 |
+| Name | Type     | Description                |
+| :--- | :------- | :------------------------- |
+| `R`  | `number` | 颜色 R 值，数据范围 0~255  |
+| `G`  | `number` | 颜色 G 值，数据范围 0~255  |
+| `B`  | `number` | 颜色 B 值，数据范围 0~255  |
+| `A`  | `number` | 颜色透明度，数据范围 0~255 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2215
 
 ---
 
@@ -3042,17 +2406,13 @@ UI/index.d.ts:2215
 
 #### Parameters
 
-| Name          | Type     | Description          |
-| :------------ | :------- | :------------------- |
-| `inHexString` | `string` | usage:Hex 颜色字符串 |
+| Name          | Type     | Description    |
+| :------------ | :------- | :------------- |
+| `inHexString` | `string` | Hex 颜色字符串 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2166
 
 ---
 
@@ -3070,20 +2430,16 @@ UI/index.d.ts:2166
 
 #### Parameters
 
-| Name | Type     | Description                      |
-| :--- | :------- | :------------------------------- |
-| `R`  | `number` | usage:字体 R 值，数据范围 0~255  |
-| `G`  | `number` | usage:字体 G 值，数据范围 0~255  |
-| `B`  | `number` | usage:字体 B 值，数据范围 0~255  |
-| `A`  | `number` | usage:字体透明度，数据范围 0~255 |
+| Name | Type     | Description                |
+| :--- | :------- | :------------------------- |
+| `R`  | `number` | 字体 R 值，数据范围 0~255  |
+| `G`  | `number` | 字体 G 值，数据范围 0~255  |
+| `B`  | `number` | 字体 B 值，数据范围 0~255  |
+| `A`  | `number` | 字体透明度，数据范围 0~255 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2160
 
 ---
 
@@ -3101,17 +2457,13 @@ UI/index.d.ts:2160
 
 #### Parameters
 
-| Name          | Type     | Description      |
-| :------------ | :------- | :--------------- |
-| `inHexString` | `string` | usage:颜色字符串 |
+| Name          | Type     | Description |
+| :------------ | :------- | :---------- |
+| `inHexString` | `string` | 颜色字符串  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2186
 
 ---
 
@@ -3129,20 +2481,16 @@ UI/index.d.ts:2186
 
 #### Parameters
 
-| Name | Type     | Description                      |
-| :--- | :------- | :------------------------------- |
-| `R`  | `number` | usage:颜色 R 值，数据范围 0~255  |
-| `G`  | `number` | usage:颜色 G 值，数据范围 0~255  |
-| `B`  | `number` | usage:颜色 B 值，数据范围 0~255  |
-| `A`  | `number` | usage:颜色透明度，数据范围 0~255 |
+| Name | Type     | Description                |
+| :--- | :------- | :------------------------- |
+| `R`  | `number` | 颜色 R 值，数据范围 0~255  |
+| `G`  | `number` | 颜色 G 值，数据范围 0~255  |
+| `B`  | `number` | 颜色 B 值，数据范围 0~255  |
+| `A`  | `number` | 颜色透明度，数据范围 0~255 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2175
 
 ---
 
@@ -3160,17 +2508,13 @@ UI/index.d.ts:2175
 
 #### Parameters
 
-| Name          | Type     | Description      |
-| :------------ | :------- | :--------------- |
-| `inHexString` | `string` | usage:颜色字符串 |
+| Name          | Type     | Description |
+| :------------ | :------- | :---------- |
+| `inHexString` | `string` | 颜色字符串  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2206
 
 ---
 
@@ -3188,20 +2532,16 @@ UI/index.d.ts:2206
 
 #### Parameters
 
-| Name | Type     | Description                      |
-| :--- | :------- | :------------------------------- |
-| `R`  | `number` | usage:颜色 R 值，数据范围 0~255  |
-| `G`  | `number` | usage:颜色 G 值，数据范围 0~255  |
-| `B`  | `number` | usage:颜色 B 值，数据范围 0~255  |
-| `A`  | `number` | usage:颜色透明度，数据范围 0~255 |
+| Name | Type     | Description                |
+| :--- | :------- | :------------------------- |
+| `R`  | `number` | 颜色 R 值，数据范围 0~255  |
+| `G`  | `number` | 颜色 G 值，数据范围 0~255  |
+| `B`  | `number` | 颜色 B 值，数据范围 0~255  |
+| `A`  | `number` | 颜色透明度，数据范围 0~255 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2195
 
 ---
 
@@ -3219,17 +2559,13 @@ UI/index.d.ts:2195
 
 #### Parameters
 
-| Name      | Type                        | Description                                 |
-| :-------- | :-------------------------- | :------------------------------------------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 Parent 对象 default:null |
-| `inName?` | `string`                    | usage:创建控件的名称 default:null           |
+| Name      | Type                        | Description                           |
+| :-------- | :-------------------------- | :------------------------------------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 Parent 对象 default:null |
+| `inName?` | `string`                    | 创建控件的名称 default:null           |
 
 #### Returns
 
 [`StaleButton`](UI.UI.StaleButton.md)
 
 返回创建的对象
-
-#### Defined in
-
-UI/index.d.ts:1723

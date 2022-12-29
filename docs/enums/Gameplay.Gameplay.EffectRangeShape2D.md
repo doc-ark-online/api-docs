@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape2D
+[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape2D
 
-# Enumeration: EffectRangeShape2D
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EffectRangeShape2D
+# EffectRangeShape2D <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Circle](Gameplay.Gameplay.EffectRangeShape2D.md#circle)
-- [CircularSector](Gameplay.Gameplay.EffectRangeShape2D.md#circularsector)
-- [Rectangle](Gameplay.Gameplay.EffectRangeShape2D.md#rectangle)
+| Enumeration Members                                                                          |
+| :------------------------------------------------------------------------------------------- |
+| **[Circle](Gameplay.Gameplay.EffectRangeShape2D.md#circle)** = `1` <br> 圆形                 |
+| **[CircularSector](Gameplay.Gameplay.EffectRangeShape2D.md#circularsector)** = `2` <br> 扇形 |
+| **[Rectangle](Gameplay.Gameplay.EffectRangeShape2D.md#rectangle)** = `0` <br> 矩形           |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 圆形
 
-#### Defined in
-
-Gameplay/index.d.ts:8658
-
 ---
 
 ### CircularSector
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:8658
 
 扇形
 
-#### Defined in
-
-Gameplay/index.d.ts:8660
-
 ---
 
 ### Rectangle
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:8660
 • **Rectangle** = `0`
 
 矩形
-
-#### Defined in
-
-Gameplay/index.d.ts:8656

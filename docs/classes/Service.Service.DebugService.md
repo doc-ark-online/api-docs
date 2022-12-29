@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / DebugService
+[Service](../modules/Service.Service.md) / DebugService
 
-# Class: DebugService
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).DebugService
-
-**`Author`**
-
-xiangkun.sun
+# DebugService <Badge type="tip" text="Class" />
 
 **`Instance`**
 
@@ -18,26 +12,12 @@ debug 调试服务
 
 单例类，请使用 instance 获取对象
 
-**`Network Status`**
-
-usage: 双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Service.Service.DebugService.md#constructor)
-
-### Methods
-
-- [getHeapStatistics](Service.Service.DebugService.md#getheapstatistics)
-- [getInstance](Service.Service.DebugService.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new DebugService**()
+| Methods                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getHeapStatistics](Service.Service.DebugService.md#getheapstatistics)**(): `HeapStatistics` <br> 获取当前项目所有 TS 脚本内存占用                 |
+| **[getInstance](Service.Service.DebugService.md#getinstance)**(): [`DebugService`](Service.Service.DebugService.md) <br> 获取 debug 调试服务全局实例 |
 
 ## Methods
 
@@ -59,10 +39,6 @@ usage: 双端
 
 HeapStatistics 内存数据
 
-#### Defined in
-
-Service/index.d.ts:764
-
 ---
 
 ### getInstance
@@ -82,7 +58,3 @@ Service/index.d.ts:764
 [`DebugService`](Service.Service.DebugService.md)
 
 debug 调试服务全局实例
-
-#### Defined in
-
-Service/index.d.ts:758

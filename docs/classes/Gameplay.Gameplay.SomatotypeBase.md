@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeBase
+[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeBase
 
-# Class: SomatotypeBase
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).SomatotypeBase
+# SomatotypeBase <Badge type="tip" text="Class" />
 
 **`Description`**
 
 体型基类
-
-**`Author`**
-
-guang.deng
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -26,26 +16,16 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                  |
+| :------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边                               |
+| **[postProcessObj](Gameplay.Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.Gameplay.PostProcess.md) <br> 后处理对象 |
 
-- [constructor](Gameplay.Gameplay.SomatotypeBase.md#constructor)
-
-### Properties
-
-- [enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
-- [postProcessObj](Gameplay.Gameplay.SomatotypeBase.md#postprocessobj)
-
-### Methods
-
-- [enablePostProcess](Gameplay.Gameplay.SomatotypeBase.md#enablepostprocess)
-- [setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
-- [setOutlineAdvance](Gameplay.Gameplay.SomatotypeBase.md#setoutlineadvance)
-
-## Constructors
-
-### constructor
-
-• **new SomatotypeBase**(`character`)
+| Methods                                                                                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[enablePostProcess](Gameplay.Gameplay.SomatotypeBase.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.Type.LinearColor.md), `number`): `void` <br> 后处理开关 |
+| **[setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关                                                                   |
+| **[setOutlineAdvance](Gameplay.Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关                                        |
 
 **`Description`**
 
@@ -55,11 +35,7 @@ usage:双端
 
 | Name        | Type                                                  | Description |
 | :---------- | :---------------------------------------------------- | :---------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色  |
-
-#### Defined in
-
-Gameplay/index.d.ts:2731
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色        |
 
 ## Properties
 
@@ -71,10 +47,6 @@ Gameplay/index.d.ts:2731
 
 是否启动遮挡时角色描边
 
-#### Defined in
-
-Gameplay/index.d.ts:2726
-
 ---
 
 ### postProcessObj
@@ -84,10 +56,6 @@ Gameplay/index.d.ts:2726
 **`Description`**
 
 后处理对象
-
-#### Defined in
-
-Gameplay/index.d.ts:2722
 
 ## Methods
 
@@ -105,19 +73,15 @@ Gameplay/index.d.ts:2722
 
 #### Parameters
 
-| Name              | Type                                      | Description              |
-| :---------------- | :---------------------------------------- | :----------------------- |
-| `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
-| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
-| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
+| Name              | Type                                      | Description        |
+| :---------------- | :---------------------------------------- | :----------------- |
+| `usedPostProcess` | `boolean`                                 | 是否使用后处理功能 |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | Outline 宽度       |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2739
 
 ---
 
@@ -135,19 +99,15 @@ Gameplay/index.d.ts:2739
 
 #### Parameters
 
-| Name          | Type      | Description            |
-| :------------ | :-------- | :--------------------- |
-| `usedOutline` | `boolean` | usage:是否使用描边功能 |
+| Name          | Type      | Description      |
+| :------------ | :-------- | :--------------- |
+| `usedOutline` | `boolean` | 是否使用描边功能 |
 
 #### Returns
 
 `boolean`
 
 是否成功
-
-#### Defined in
-
-Gameplay/index.d.ts:2750
 
 ---
 
@@ -165,15 +125,11 @@ Gameplay/index.d.ts:2750
 
 #### Parameters
 
-| Name                   | Type      | Description            |
-| :--------------------- | :-------- | :--------------------- |
-| `newEnableOutline`     | `boolean` | usage:是否开启描边功能 |
-| `newOutlineColorIndex` | `number`  | usage:描边的颜色       |
+| Name                   | Type      | Description      |
+| :--------------------- | :-------- | :--------------- |
+| `newEnableOutline`     | `boolean` | 是否开启描边功能 |
+| `newOutlineColorIndex` | `number`  | 描边的颜色       |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2757

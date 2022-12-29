@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [MobileEditor](../modules/MobileEditor.md) / [MobileEditor](../modules/MobileEditor.MobileEditor.md) / EditorMode
+[MobileEditor](../modules/MobileEditor.MobileEditor.md) / EditorMode
 
-# Class: EditorMode
-
-[MobileEditor](../modules/MobileEditor.md).[MobileEditor](../modules/MobileEditor.MobileEditor.md).EditorMode
-
-**`Author`**
-
-jie.wu
+# EditorMode <Badge type="tip" text="Class" />
 
 **`Instance`**
 
@@ -18,83 +12,69 @@ jie.wu
 
 单例类，请使用 instance 获取对象
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[onMobileEditorStateChanged](MobileEditor.MobileEditor.EditorMode.md#onmobileeditorstatechanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\> <br> 代理通知状态改变 |
 
-- [constructor](MobileEditor.MobileEditor.EditorMode.md#constructor)
+| Accessors                                                                                                                                             |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[gizmoActor](MobileEditor.MobileEditor.EditorMode.md#gizmoactor)**(): `MWMobileGizmoActor` <br> 获取坐标轴 Actor                                    |
+| **[gizmoActorRotation](MobileEditor.MobileEditor.EditorMode.md#gizmoactorrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置坐标轴旋转 |
+| **[isMobileEditor](MobileEditor.MobileEditor.EditorMode.md#ismobileeditor)**(): `boolean` <br> 获取当前移动编辑器模式                                 |
+| **[isPermanentMobileEditor](MobileEditor.MobileEditor.EditorMode.md#ispermanentmobileeditor)**(): `boolean` <br> 获取初始化时候的状态                 |
+| **[selectedActor](MobileEditor.MobileEditor.EditorMode.md#selectedactor)**(): `GameObject` <br> 获取当前选中的对象                                    |
 
-### Properties
-
-- [onMobileEditorStateChanged](MobileEditor.MobileEditor.EditorMode.md#onmobileeditorstatechanged)
-
-### Accessors
-
-- [gizmoActor](MobileEditor.MobileEditor.EditorMode.md#gizmoactor)
-- [gizmoActorRotation](MobileEditor.MobileEditor.EditorMode.md#gizmoactorrotation)
-- [isMobileEditor](MobileEditor.MobileEditor.EditorMode.md#ismobileeditor)
-- [isPermanentMobileEditor](MobileEditor.MobileEditor.EditorMode.md#ispermanentmobileeditor)
-- [selectedActor](MobileEditor.MobileEditor.EditorMode.md#selectedactor)
-
-### Methods
-
-- [addEditorCharacterCameraFlexInput](MobileEditor.MobileEditor.EditorMode.md#addeditorcharactercameraflexinput)
-- [addEditorCharacterDeltaOffset](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacterdeltaoffset)
-- [addEditorCharacterPitch](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacterpitch)
-- [addEditorCharacterYaw](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacteryaw)
-- [attachActorToGizmo](MobileEditor.MobileEditor.EditorMode.md#attachactortogizmo)
-- [beginActorTransformChange](MobileEditor.MobileEditor.EditorMode.md#beginactortransformchange)
-- [beginAttachChange](MobileEditor.MobileEditor.EditorMode.md#beginattachchange)
-- [beginCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#begincombineactorchange)
-- [beginDeleteActorChange](MobileEditor.MobileEditor.EditorMode.md#begindeleteactorchange)
-- [beginMaterialsChange](MobileEditor.MobileEditor.EditorMode.md#beginmaterialschange)
-- [beginMaterialsChangeMulti](MobileEditor.MobileEditor.EditorMode.md#beginmaterialschangemulti)
-- [beginMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#beginmaterialscolorchange)
-- [beginSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#beginspawnactorchange)
-- [beginUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#beginuncombinedactorchange)
-- [detachActorFormGizmo](MobileEditor.MobileEditor.EditorMode.md#detachactorformgizmo)
-- [enableSelectActor](MobileEditor.MobileEditor.EditorMode.md#enableselectactor)
-- [endActorTransformChange](MobileEditor.MobileEditor.EditorMode.md#endactortransformchange)
-- [endCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#endcombineactorchange)
-- [endDeleteActorChange](MobileEditor.MobileEditor.EditorMode.md#enddeleteactorchange)
-- [endMaterialsChange](MobileEditor.MobileEditor.EditorMode.md#endmaterialschange)
-- [endMaterialsChangeMulti](MobileEditor.MobileEditor.EditorMode.md#endmaterialschangemulti)
-- [endMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#endmaterialscolorchange)
-- [endMultiCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#endmulticombineactorchange)
-- [endSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#endspawnactorchange)
-- [endUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#enduncombinedactorchange)
-- [focusToActors](MobileEditor.MobileEditor.EditorMode.md#focustoactors)
-- [focusToGizmo](MobileEditor.MobileEditor.EditorMode.md#focustogizmo)
-- [isRedoEmpty](MobileEditor.MobileEditor.EditorMode.md#isredoempty)
-- [isUndoEmpty](MobileEditor.MobileEditor.EditorMode.md#isundoempty)
-- [onAppendChange](MobileEditor.MobileEditor.EditorMode.md#onappendchange)
-- [onAttachChanged](MobileEditor.MobileEditor.EditorMode.md#onattachchanged)
-- [onAttachRedoChanged](MobileEditor.MobileEditor.EditorMode.md#onattachredochanged)
-- [onDeleteActorRedo](MobileEditor.MobileEditor.EditorMode.md#ondeleteactorredo)
-- [onDeleteActorUndo](MobileEditor.MobileEditor.EditorMode.md#ondeleteactorundo)
-- [onGizmoVisibleChanged](MobileEditor.MobileEditor.EditorMode.md#ongizmovisiblechanged)
-- [onSelectActor](MobileEditor.MobileEditor.EditorMode.md#onselectactor)
-- [saveProject](MobileEditor.MobileEditor.EditorMode.md#saveproject)
-- [setAdsorbDistance](MobileEditor.MobileEditor.EditorMode.md#setadsorbdistance)
-- [setGizmoActorLocation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocation)
-- [setGizmoActorLocationAndRotation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocationandrotation)
-- [setGizmoAxisColor](MobileEditor.MobileEditor.EditorMode.md#setgizmoaxiscolor)
-- [setGizmoHighlightColor](MobileEditor.MobileEditor.EditorMode.md#setgizmohighlightcolor)
-- [setGizmoScaleOffset](MobileEditor.MobileEditor.EditorMode.md#setgizmoscaleoffset)
-- [setIsAdsorb](MobileEditor.MobileEditor.EditorMode.md#setisadsorb)
-- [showGizmoActor](MobileEditor.MobileEditor.EditorMode.md#showgizmoactor)
-- [switchGizmoMode](MobileEditor.MobileEditor.EditorMode.md#switchgizmomode)
-- [getInstance](MobileEditor.MobileEditor.EditorMode.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new EditorMode**()
+| Methods                                                                                                                                                                                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addEditorCharacterCameraFlexInput](MobileEditor.MobileEditor.EditorMode.md#addeditorcharactercameraflexinput)**(`number`): `void` <br> 设置移动编辑器 Editor Mode 下人物的位置输入,仅在 Editor Mode 模式下生效.                                                                       |
+| **[addEditorCharacterDeltaOffset](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacterdeltaoffset)**([`Vector`](Type.Type.Vector.md), `number`): `void` <br> 设置移动编辑器 Editor Mode 下人物的位置输入,仅在 Editor Mode 模式下生效.Play Mode 使用 gamePlay 提供的接口            |
+| **[addEditorCharacterPitch](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacterpitch)**(`number`): `void` <br> 设置移动编辑器 Editor Mode 下人物的 Pitch 值输入,仅在 Editor Mode 模式下生效. Play Mode 使用 gamePlay 提供的接口                                                   |
+| **[addEditorCharacterYaw](MobileEditor.MobileEditor.EditorMode.md#addeditorcharacteryaw)**(`number`): `void` <br> 设置移动编辑器 Editor Mode 下人物的 Yaw 值输入,仅在 Editor Mode 模式下生效.Play Mode 使用 gameplay 提供的接口                                                          |
+| **[attachActorToGizmo](MobileEditor.MobileEditor.EditorMode.md#attachactortogizmo)**(`GameObject`, `boolean`): `void` <br> 附加物体到坐标轴                                                                                                                                              |
+| **[beginActorTransformChange](MobileEditor.MobileEditor.EditorMode.md#beginactortransformchange)**(`GameObject`): `void` <br> 开始记录位置改变操作                                                                                                                                       |
+| **[beginAttachChange](MobileEditor.MobileEditor.EditorMode.md#beginattachchange)**(`GameObject`, `GameObject`): `void` <br> 记录附加记录                                                                                                                                                 |
+| **[beginCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#begincombineactorchange)**(): `void` <br> 开始记录打组操作                                                                                                                                                           |
+| **[beginDeleteActorChange](MobileEditor.MobileEditor.EditorMode.md#begindeleteactorchange)**(): `void` <br> 开始记录删除操作                                                                                                                                                             |
+| **[beginMaterialsChange](MobileEditor.MobileEditor.EditorMode.md#beginmaterialschange)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)): `void` <br> 开始记录材质变换操作(仅支持记录单个 StaticMesh)，新工程更新后接口可废弃删掉                                                       |
+| **[beginMaterialsChangeMulti](MobileEditor.MobileEditor.EditorMode.md#beginmaterialschangemulti)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[]): `void` <br> 开始记录材质变换操作（支持记录多个 StaticMesh）                                                                       |
+| **[beginMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#beginmaterialscolorchange)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md), [`LinearColor`](Type.Type.LinearColor.md)): `void` <br> 开始记录材质颜色变换操作                                                     |
+| **[beginSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#beginspawnactorchange)**(): `void` <br> 开始记录创建操作                                                                                                                                                               |
+| **[beginUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#beginuncombinedactorchange)**(): `void` <br> 开始记录解组操作                                                                                                                                                     |
+| **[detachActorFormGizmo](MobileEditor.MobileEditor.EditorMode.md#detachactorformgizmo)**(`GameObject`): `void` <br> 移除物体到坐标轴                                                                                                                                                     |
+| **[enableSelectActor](MobileEditor.MobileEditor.EditorMode.md#enableselectactor)**(`boolean`): `void` <br> 设置是否可以选中物体                                                                                                                                                          |
+| **[endActorTransformChange](MobileEditor.MobileEditor.EditorMode.md#endactortransformchange)**(`GameObject`): `void` <br> 结束记录位置改变操作                                                                                                                                           |
+| **[endCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#endcombineactorchange)**(`GameObject`): `void` <br> 结束记录打组操作                                                                                                                                                   |
+| **[endDeleteActorChange](MobileEditor.MobileEditor.EditorMode.md#enddeleteactorchange)**(): `void` <br> 结束记录删除操作                                                                                                                                                                 |
+| **[endMaterialsChange](MobileEditor.MobileEditor.EditorMode.md#endmaterialschange)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md), `string`): `void` <br> 结束记录材质变换操作(仅支持记录单个 StaticMesh)，新工程更新后接口可废弃删掉                                                 |
+| **[endMaterialsChangeMulti](MobileEditor.MobileEditor.EditorMode.md#endmaterialschangemulti)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[], `string`): `void` <br> 结束记录材质变换操作（支持记录多个 StaticMesh）                                                                 |
+| **[endMaterialsColorChange](MobileEditor.MobileEditor.EditorMode.md#endmaterialscolorchange)**([`StaticMesh`](Gameplay.Gameplay.StaticMesh.md), [`LinearColor`](Type.Type.LinearColor.md)): `void` <br> 结束记录材质颜色变换操作                                                         |
+| **[endMultiCombineActorChange](MobileEditor.MobileEditor.EditorMode.md#endmulticombineactorchange)**(`GameObject`, `GameObject`[]): `void` <br> 结束记录多组合并打组操作                                                                                                                 |
+| **[endSpawnActorChange](MobileEditor.MobileEditor.EditorMode.md#endspawnactorchange)**(`GameObject`): `void` <br> 结束记录创建操作                                                                                                                                                       |
+| **[endUncombinedActorChange](MobileEditor.MobileEditor.EditorMode.md#enduncombinedactorchange)**(`GameObject`[]): `void` <br> 结束记录解组操作                                                                                                                                           |
+| **[focusToActors](MobileEditor.MobileEditor.EditorMode.md#focustoactors)**([`GameObject`]): `void` <br> 聚焦到物体                                                                                                                                                                       |
+| **[focusToGizmo](MobileEditor.MobileEditor.EditorMode.md#focustogizmo)**(): `void` <br> 聚焦到坐标轴                                                                                                                                                                                     |
+| **[isRedoEmpty](MobileEditor.MobileEditor.EditorMode.md#isredoempty)**(): `boolean` <br> 是否可执行 Redo 操作 true:表示当前没有可执行的步数，无法执行重做操作                                                                                                                            |
+| **[isUndoEmpty](MobileEditor.MobileEditor.EditorMode.md#isundoempty)**(): `boolean` <br> 是否可执行 Undo 操作 true:表示当前没有可执行的步数，无法执行撤销操作                                                                                                                            |
+| **[onAppendChange](MobileEditor.MobileEditor.EditorMode.md#onappendchange)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>): `void` <br> 主要用于设置撤销恢复按钮的可用性，如果有的话，可以配合 IsUndoEmpty 和 IsRedoEmpty 函数来判断当前是否可以执行撤销恢复操作 |
+| **[onAttachChanged](MobileEditor.MobileEditor.EditorMode.md#onattachchanged)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\>): `void` <br> 附加代理                                                                                        |
+| **[onAttachRedoChanged](MobileEditor.MobileEditor.EditorMode.md#onattachredochanged)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\>): `void` <br> 附加代理                                                                                |
+| **[onDeleteActorRedo](MobileEditor.MobileEditor.EditorMode.md#ondeleteactorredo)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`AssetGUID`: `string`, `ActorGUID`: `string`) => `void`\>): `void` <br> Redo 删除操作代理，会返回被删除的 ActorID 和 资源 ID                   |
+| **[onDeleteActorUndo](MobileEditor.MobileEditor.EditorMode.md#ondeleteactorundo)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `OldGUID`: `string`, `NewString`: `string`) => `void`\>): `void` <br> 撤销删除操作代理，会返回被删除的 Actor          |
+| **[onGizmoVisibleChanged](MobileEditor.MobileEditor.EditorMode.md#ongizmovisiblechanged)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\>): `void` <br> 坐标轴隐藏显示代理                                                                   |
+| **[onSelectActor](MobileEditor.MobileEditor.EditorMode.md#onselectactor)**([`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\>): `void` <br> 选择物体代理                                       |
+| **[saveProject](MobileEditor.MobileEditor.EditorMode.md#saveproject)**(): `void` <br> 保存当前场景                                                                                                                                                                                       |
+| **[setAdsorbDistance](MobileEditor.MobileEditor.EditorMode.md#setadsorbdistance)**(`number`): `void` <br> 设置吸附距离                                                                                                                                                                   |
+| **[setGizmoActorLocation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocation)**([`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 设置坐标轴位置                                                                                                                       |
+| **[setGizmoActorLocationAndRotation](MobileEditor.MobileEditor.EditorMode.md#setgizmoactorlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置坐标轴旋转和缩放                                                                 |
+| **[setGizmoAxisColor](MobileEditor.MobileEditor.EditorMode.md#setgizmoaxiscolor)**(`string`, [`LinearColor`](Type.Type.LinearColor.md)): `void` <br> 设置坐标轴颜色                                                                                                                      |
+| **[setGizmoHighlightColor](MobileEditor.MobileEditor.EditorMode.md#setgizmohighlightcolor)**([`LinearColor`](Type.Type.LinearColor.md)): `void` <br> 设置坐标轴选中时的高亮颜色                                                                                                          |
+| **[setGizmoScaleOffset](MobileEditor.MobileEditor.EditorMode.md#setgizmoscaleoffset)**(`number`): `void` <br> 设置坐标轴模型整体缩放倍数                                                                                                                                                 |
+| **[setIsAdsorb](MobileEditor.MobileEditor.EditorMode.md#setisadsorb)**(`boolean`): `void` <br> 设置是否吸附                                                                                                                                                                              |
+| **[showGizmoActor](MobileEditor.MobileEditor.EditorMode.md#showgizmoactor)**(`[showGizmoActor](MobileEditor.MobileEditor.EditorMode.md#showgizmoactor)`): `void` <br> 设置坐标轴隐藏或者显示                                                                                             |
+| **[switchGizmoMode](MobileEditor.MobileEditor.EditorMode.md#switchgizmomode)**([`GizmoModeType`](../enums/MobileEditor.MobileEditor.GizmoModeType.md)): `void` <br> 切换坐标轴模式                                                                                                       |
+| **[getInstance](MobileEditor.MobileEditor.EditorMode.md#getinstance)**(): [`EditorMode`](MobileEditor.MobileEditor.EditorMode.md) <br> 获取 editorMode 的单例                                                                                                                            |
 
 ## Properties
 
@@ -105,10 +85,6 @@ usage:客户端
 **`Description`**
 
 代理通知状态改变
-
-#### Defined in
-
-MobileEditor/index.d.ts:30
 
 ## Accessors
 
@@ -130,10 +106,6 @@ MobileEditor/index.d.ts:30
 
 返回 gizmoActor
 
-#### Defined in
-
-MobileEditor/index.d.ts:338
-
 ---
 
 ### gizmoActorRotation
@@ -150,17 +122,13 @@ MobileEditor/index.d.ts:338
 
 #### Parameters
 
-| Name          | Type                                | Description    |
-| :------------ | :---------------------------------- | :------------- |
-| `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | usage:新的旋转 |
+| Name          | Type                                | Description |
+| :------------ | :---------------------------------- | :---------- |
+| `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | 新的旋转    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:109
 
 ---
 
@@ -182,10 +150,6 @@ MobileEditor/index.d.ts:109
 
 是否是编辑器模式
 
-#### Defined in
-
-MobileEditor/index.d.ts:385
-
 • `set` **isMobileEditor**(`bIsMobileEditor`): `void`
 
 **`Description`**
@@ -202,17 +166,13 @@ MobileEditor/index.d.ts:385
 
 #### Parameters
 
-| Name              | Type      | Description                                         |
-| :---------------- | :-------- | :-------------------------------------------------- |
-| `bIsMobileEditor` | `boolean` | usage: true 则进 Editor Mode , false 进入 Play Mode |
+| Name              | Type      | Description                                  |
+| :---------------- | :-------- | :------------------------------------------- |
+| `bIsMobileEditor` | `boolean` | true 则进 Editor Mode , false 进入 Play Mode |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:392
 
 ---
 
@@ -234,10 +194,6 @@ MobileEditor/index.d.ts:392
 
 获取工程是否初始化时可以启动编辑器模式
 
-#### Defined in
-
-MobileEditor/index.d.ts:43
-
 ---
 
 ### selectedActor
@@ -258,10 +214,6 @@ MobileEditor/index.d.ts:43
 
 返回选中的 actor
 
-#### Defined in
-
-MobileEditor/index.d.ts:355
-
 ## Methods
 
 ### addEditorCharacterCameraFlexInput
@@ -278,17 +230,13 @@ MobileEditor/index.d.ts:355
 
 #### Parameters
 
-| Name    | Type     | Description     |
-| :------ | :------- | :-------------- |
-| `Scale` | `number` | usage: 输入数值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `Scale` | `number` | 输入数值    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:68
 
 ---
 
@@ -306,18 +254,14 @@ MobileEditor/index.d.ts:68
 
 #### Parameters
 
-| Name    | Type                            | Description       |
-| :------ | :------------------------------ | :---------------- |
-| `Delta` | [`Vector`](Type.Type.Vector.md) | usage: 偏移 delta |
-| `Scale` | `number`                        | usage: 缩放值     |
+| Name    | Type                            | Description |
+| :------ | :------------------------------ | :---------- |
+| `Delta` | [`Vector`](Type.Type.Vector.md) | 偏移 delta  |
+| `Scale` | `number`                        | 缩放值      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:62
 
 ---
 
@@ -335,17 +279,13 @@ MobileEditor/index.d.ts:62
 
 #### Parameters
 
-| Name    | Type     | Description    |
-| :------ | :------- | :------------- |
-| `Pitch` | `number` | usage:输入数值 |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `Pitch` | `number` | 输入数值    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:55
 
 ---
 
@@ -363,17 +303,13 @@ MobileEditor/index.d.ts:55
 
 #### Parameters
 
-| Name  | Type     | Description     |
-| :---- | :------- | :-------------- |
-| `Yaw` | `number` | usage: 输入数值 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `Yaw` | `number` | 输入数值    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:49
 
 ---
 
@@ -391,18 +327,14 @@ MobileEditor/index.d.ts:49
 
 #### Parameters
 
-| Name              | Type         | Description                       |
-| :---------------- | :----------- | :-------------------------------- |
-| `Actor`           | `GameObject` | usage: 附加到的 actor             |
-| `IsRecordChange?` | `boolean`    | usage: 是否支持撤销 default:false |
+| Name              | Type         | Description                |
+| :---------------- | :----------- | :------------------------- |
+| `Actor`           | `GameObject` | 附加到的 actor             |
+| `IsRecordChange?` | `boolean`    | 是否支持撤销 default:false |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:81
 
 ---
 
@@ -420,17 +352,13 @@ MobileEditor/index.d.ts:81
 
 #### Parameters
 
-| Name    | Type         | Description                 |
-| :------ | :----------- | :-------------------------- |
-| `Actor` | `GameObject` | usage: 记录的位置大小 actor |
+| Name    | Type         | Description          |
+| :------ | :----------- | :------------------- |
+| `Actor` | `GameObject` | 记录的位置大小 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:156
 
 ---
 
@@ -448,18 +376,14 @@ MobileEditor/index.d.ts:156
 
 #### Parameters
 
-| Name        | Type         | Description      |
-| :---------- | :----------- | :--------------- |
-| `LastActor` | `GameObject` | usage:上一个对象 |
-| `NewActor`  | `GameObject` | usage:新的对象   |
+| Name        | Type         | Description |
+| :---------- | :----------- | :---------- |
+| `LastActor` | `GameObject` | 上一个对象  |
+| `NewActor`  | `GameObject` | 新的对象    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:329
 
 ---
 
@@ -479,10 +403,6 @@ MobileEditor/index.d.ts:329
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:200
-
 ---
 
 ### beginDeleteActorChange
@@ -501,10 +421,6 @@ MobileEditor/index.d.ts:200
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:167
-
 ---
 
 ### beginMaterialsChange
@@ -521,17 +437,13 @@ MobileEditor/index.d.ts:167
 
 #### Parameters
 
-| Name    | Type                                            | Description                    |
-| :------ | :---------------------------------------------- | :----------------------------- |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性改变的 actor |
+| Name    | Type                                            | Description              |
+| :------ | :---------------------------------------------- | :----------------------- |
+| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | 记录材质属性改变的 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:189
 
 ---
 
@@ -549,17 +461,13 @@ MobileEditor/index.d.ts:189
 
 #### Parameters
 
-| Name    | Type                                              | Description     |
-| :------ | :------------------------------------------------ | :-------------- |
-| `Array` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | usage: 多个对象 |
+| Name    | Type                                              | Description |
+| :------ | :------------------------------------------------ | :---------- |
+| `Array` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | 多个对象    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:195
 
 ---
 
@@ -577,18 +485,14 @@ MobileEditor/index.d.ts:195
 
 #### Parameters
 
-| Name    | Type                                            | Description      |
-| :------ | :---------------------------------------------- | :--------------- |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录的对象 |
-| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | usage:颜色       |
+| Name    | Type                                            | Description |
+| :------ | :---------------------------------------------- | :---------- |
+| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | 记录的对象  |
+| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | 颜色        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:251
 
 ---
 
@@ -608,10 +512,6 @@ MobileEditor/index.d.ts:251
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:177
-
 ---
 
 ### beginUncombinedActorChange
@@ -630,10 +530,6 @@ MobileEditor/index.d.ts:177
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:221
-
 ---
 
 ### detachActorFormGizmo
@@ -650,17 +546,13 @@ MobileEditor/index.d.ts:221
 
 #### Parameters
 
-| Name    | Type         | Description        |
-| :------ | :----------- | :----------------- |
-| `Actor` | `GameObject` | usage:移除的 actor |
+| Name    | Type         | Description  |
+| :------ | :----------- | :----------- |
+| `Actor` | `GameObject` | 移除的 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:87
 
 ---
 
@@ -678,17 +570,13 @@ MobileEditor/index.d.ts:87
 
 #### Parameters
 
-| Name       | Type      | Description        |
-| :--------- | :-------- | :----------------- |
-| `IsEnable` | `boolean` | usage:是否可以选中 |
+| Name       | Type      | Description  |
+| :--------- | :-------- | :----------- |
+| `IsEnable` | `boolean` | 是否可以选中 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:349
 
 ---
 
@@ -706,17 +594,13 @@ MobileEditor/index.d.ts:349
 
 #### Parameters
 
-| Name    | Type         | Description                |
-| :------ | :----------- | :------------------------- |
-| `Actor` | `GameObject` | usage:记录的位置大小 actor |
+| Name    | Type         | Description          |
+| :------ | :----------- | :------------------- |
+| `Actor` | `GameObject` | 记录的位置大小 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:162
 
 ---
 
@@ -734,17 +618,13 @@ MobileEditor/index.d.ts:162
 
 #### Parameters
 
-| Name    | Type         | Description              |
-| :------ | :----------- | :----------------------- |
-| `Actor` | `GameObject` | usage:打组后的锚点 actor |
+| Name    | Type         | Description        |
+| :------ | :----------- | :----------------- |
+| `Actor` | `GameObject` | 打组后的锚点 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:206
 
 ---
 
@@ -764,10 +644,6 @@ MobileEditor/index.d.ts:206
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:172
-
 ---
 
 ### endMaterialsChange
@@ -784,18 +660,14 @@ MobileEditor/index.d.ts:172
 
 #### Parameters
 
-| Name         | Type                                            | Description                |
-| :----------- | :---------------------------------------------- | :------------------------- |
-| `Actor`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录材质属性的 actor |
-| `MaterialID` | `string`                                        | usage:材质 ID              |
+| Name         | Type                                            | Description          |
+| :----------- | :---------------------------------------------- | :------------------- |
+| `Actor`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | 记录材质属性的 actor |
+| `MaterialID` | `string`                                        | 材质 ID              |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:234
 
 ---
 
@@ -813,18 +685,14 @@ MobileEditor/index.d.ts:234
 
 #### Parameters
 
-| Name         | Type                                              | Description          |
-| :----------- | :------------------------------------------------ | :------------------- |
-| `Array`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | usage:操作的对象数组 |
-| `MaterialID` | `string`                                          | usage:材质 ID        |
+| Name         | Type                                              | Description    |
+| :----------- | :------------------------------------------------ | :------------- |
+| `Array`      | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)[] | 操作的对象数组 |
+| `MaterialID` | `string`                                          | 材质 ID        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:241
 
 ---
 
@@ -842,18 +710,14 @@ MobileEditor/index.d.ts:241
 
 #### Parameters
 
-| Name    | Type                                            | Description        |
-| :------ | :---------------------------------------------- | :----------------- |
-| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | usage:记录的 actor |
-| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | usage:颜色         |
+| Name    | Type                                            | Description  |
+| :------ | :---------------------------------------------- | :----------- |
+| `Actor` | [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md) | 记录的 actor |
+| `Color` | [`LinearColor`](Type.Type.LinearColor.md)       | 颜色         |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:261
 
 ---
 
@@ -871,18 +735,14 @@ MobileEditor/index.d.ts:261
 
 #### Parameters
 
-| Name    | Type           | Description                                             |
-| :------ | :------------- | :------------------------------------------------------ |
-| `Actor` | `GameObject`   | usage:合并打组后的锚点 actor                            |
-| `Array` | `GameObject`[] | usage:合并打组前所有组锚点（或者单个物体）的 actor 数组 |
+| Name    | Type           | Description                                       |
+| :------ | :------------- | :------------------------------------------------ |
+| `Actor` | `GameObject`   | 合并打组后的锚点 actor                            |
+| `Array` | `GameObject`[] | 合并打组前所有组锚点（或者单个物体）的 actor 数组 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:213
 
 ---
 
@@ -900,17 +760,13 @@ MobileEditor/index.d.ts:213
 
 #### Parameters
 
-| Name    | Type         | Description        |
-| :------ | :----------- | :----------------- |
-| `Actor` | `GameObject` | usage:记录的 actor |
+| Name    | Type         | Description  |
+| :------ | :----------- | :----------- |
+| `Actor` | `GameObject` | 记录的 actor |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:183
 
 ---
 
@@ -928,17 +784,13 @@ MobileEditor/index.d.ts:183
 
 #### Parameters
 
-| Name    | Type           | Description                           |
-| :------ | :------------- | :------------------------------------ |
-| `Array` | `GameObject`[] | usage:解组前所有组的锚点 actor 的数组 |
+| Name    | Type           | Description                     |
+| :------ | :------------- | :------------------------------ |
+| `Array` | `GameObject`[] | 解组前所有组的锚点 actor 的数组 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:227
 
 ---
 
@@ -956,17 +808,13 @@ MobileEditor/index.d.ts:227
 
 #### Parameters
 
-| Name     | Type           | Description      |
-| :------- | :------------- | :--------------- |
-| `Actors` | [`GameObject`] | usage:对象 actor |
+| Name     | Type           | Description |
+| :------- | :------------- | :---------- |
+| `Actors` | [`GameObject`] | 对象 actor  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:379
 
 ---
 
@@ -985,10 +833,6 @@ MobileEditor/index.d.ts:379
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:343
 
 ---
 
@@ -1010,10 +854,6 @@ MobileEditor/index.d.ts:343
 
 是否可执行 Redo 操作
 
-#### Defined in
-
-MobileEditor/index.d.ts:367
-
 ---
 
 ### isUndoEmpty
@@ -1034,10 +874,6 @@ MobileEditor/index.d.ts:367
 
 是否可执行 Undo 操作
 
-#### Defined in
-
-MobileEditor/index.d.ts:361
-
 ---
 
 ### onAppendChange
@@ -1054,17 +890,13 @@ MobileEditor/index.d.ts:361
 
 #### Parameters
 
-| Name       | Type                                                                 | Description            |
-| :--------- | :------------------------------------------------------------------- | :--------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> | usage:记录撤销恢复代理 |
+| Name       | Type                                                                 | Description      |
+| :--------- | :------------------------------------------------------------------- | :--------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> | 记录撤销恢复代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:373
 
 ---
 
@@ -1082,17 +914,13 @@ MobileEditor/index.d.ts:373
 
 #### Parameters
 
-| Name       | Type                                                                                        | Description                                  |
-| :--------- | :------------------------------------------------------------------------------------------ | :------------------------------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | usage:有 actor 附加到 gizmo 的时候触发的代理 |
+| Name       | Type                                                                                        | Description                            |
+| :--------- | :------------------------------------------------------------------------------------------ | :------------------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | 有 actor 附加到 gizmo 的时候触发的代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:320
 
 ---
 
@@ -1110,17 +938,13 @@ MobileEditor/index.d.ts:320
 
 #### Parameters
 
-| Name       | Type                                                                                        | Description             |
-| :--------- | :------------------------------------------------------------------------------------------ | :---------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | usage:attach 撤销的代理 |
+| Name       | Type                                                                                        | Description       |
+| :--------- | :------------------------------------------------------------------------------------------ | :---------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`) => `void`\> | attach 撤销的代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:290
 
 ---
 
@@ -1138,17 +962,13 @@ Redo 删除操作代理，会返回被删除的 ActorID 和 资源 ID
 
 #### Parameters
 
-| Name       | Type                                                                                                             | Description                   |
-| :--------- | :--------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`AssetGUID`: `string`, `ActorGUID`: `string`) => `void`\> | usage:返回被删除的 actor 代理 |
+| Name       | Type                                                                                                             | Description             |
+| :--------- | :--------------------------------------------------------------------------------------------------------------- | :---------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`AssetGUID`: `string`, `ActorGUID`: `string`) => `void`\> | 返回被删除的 actor 代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:280
 
 ---
 
@@ -1166,17 +986,13 @@ MobileEditor/index.d.ts:280
 
 #### Parameters
 
-| Name       | Type                                                                                                                                    | Description                   |
-| :--------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `OldGUID`: `string`, `NewString`: `string`) => `void`\> | usage:返回被删除的 actor 代理 |
+| Name       | Type                                                                                                                                    | Description             |
+| :--------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `OldGUID`: `string`, `NewString`: `string`) => `void`\> | 返回被删除的 actor 代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:270
 
 ---
 
@@ -1194,17 +1010,13 @@ MobileEditor/index.d.ts:270
 
 #### Parameters
 
-| Name       | Type                                                                                       | Description                      |
-| :--------- | :----------------------------------------------------------------------------------------- | :------------------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\> | usage:gizmo actor 隐藏显示的代理 |
+| Name       | Type                                                                                       | Description                |
+| :--------- | :----------------------------------------------------------------------------------------- | :------------------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\> | gizmo actor 隐藏显示的代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:312
 
 ---
 
@@ -1222,17 +1034,13 @@ MobileEditor/index.d.ts:312
 
 #### Parameters
 
-| Name       | Type                                                                                                                                         | Description             |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
-| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\> | usage:选中 actor 的代理 |
+| Name       | Type                                                                                                                                         | Description       |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------- |
+| `Delegate` | [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: `GameObject`, `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\> | 选中 actor 的代理 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:298
 
 ---
 
@@ -1252,10 +1060,6 @@ MobileEditor/index.d.ts:298
 
 `void`
 
-#### Defined in
-
-MobileEditor/index.d.ts:37
-
 ---
 
 ### setAdsorbDistance
@@ -1272,17 +1076,13 @@ MobileEditor/index.d.ts:37
 
 #### Parameters
 
-| Name         | Type     | Description     |
-| :----------- | :------- | :-------------- |
-| `InDistance` | `number` | usage: 吸附距离 |
+| Name         | Type     | Description |
+| :----------- | :------- | :---------- |
+| `InDistance` | `number` | 吸附距离    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:150
 
 ---
 
@@ -1300,18 +1100,14 @@ MobileEditor/index.d.ts:150
 
 #### Parameters
 
-| Name              | Type                            | Description                                   |
-| :---------------- | :------------------------------ | :-------------------------------------------- |
-| `NewLocation`     | [`Vector`](Type.Type.Vector.md) | usage:坐标轴位置                              |
-| `IsRecordChange?` | `boolean`                       | usage:是否记录本次坐标轴位置变动 default:true |
+| Name              | Type                            | Description                             |
+| :---------------- | :------------------------------ | :-------------------------------------- |
+| `NewLocation`     | [`Vector`](Type.Type.Vector.md) | 坐标轴位置                              |
+| `IsRecordChange?` | `boolean`                       | 是否记录本次坐标轴位置变动 default:true |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:100
 
 ---
 
@@ -1331,16 +1127,12 @@ MobileEditor/index.d.ts:100
 
 | Name          | Type                                | Description |
 | :------------ | :---------------------------------- | :---------- |
-| `NewLocation` | [`Vector`](Type.Type.Vector.md)     | usage: 位置 |
-| `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | usage: 旋转 |
+| `NewLocation` | [`Vector`](Type.Type.Vector.md)     | 位置        |
+| `NewRotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:116
 
 ---
 
@@ -1358,18 +1150,14 @@ MobileEditor/index.d.ts:116
 
 #### Parameters
 
-| Name          | Type                                      | Description       |
-| :------------ | :---------------------------------------- | :---------------- |
-| `InAxis`      | `string`                                  | usage: 单个坐标轴 |
-| `InAxisColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 颜色       |
+| Name          | Type                                      | Description |
+| :------------ | :---------------------------------------- | :---------- |
+| `InAxis`      | `string`                                  | 单个坐标轴  |
+| `InAxisColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:126
 
 ---
 
@@ -1387,17 +1175,13 @@ MobileEditor/index.d.ts:126
 
 #### Parameters
 
-| Name               | Type                                      | Description     |
-| :----------------- | :---------------------------------------- | :-------------- |
-| `InHighlightColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 高亮颜色 |
+| Name               | Type                                      | Description |
+| :----------------- | :---------------------------------------- | :---------- |
+| `InHighlightColor` | [`LinearColor`](Type.Type.LinearColor.md) | 高亮颜色    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:132
 
 ---
 
@@ -1415,17 +1199,13 @@ MobileEditor/index.d.ts:132
 
 #### Parameters
 
-| Name       | Type     | Description     |
-| :--------- | :------- | :-------------- |
-| `InOffset` | `number` | usage: 缩放倍数 |
+| Name       | Type     | Description |
+| :--------- | :------- | :---------- |
+| `InOffset` | `number` | 缩放倍数    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:138
 
 ---
 
@@ -1443,17 +1223,13 @@ MobileEditor/index.d.ts:138
 
 #### Parameters
 
-| Name         | Type      | Description     |
-| :----------- | :-------- | :-------------- |
-| `InIsAdsorb` | `boolean` | usage: 是否吸附 |
+| Name         | Type      | Description |
+| :----------- | :-------- | :---------- |
+| `InIsAdsorb` | `boolean` | 是否吸附    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:144
 
 ---
 
@@ -1471,17 +1247,13 @@ MobileEditor/index.d.ts:144
 
 #### Parameters
 
-| Name             | Type      | Description      |
-| :--------------- | :-------- | :--------------- |
-| `showGizmoActor` | `boolean` | usage:显隐坐标轴 |
+| Name             | Type      | Description |
+| :--------------- | :-------- | :---------- |
+| `showGizmoActor` | `boolean` | 显隐坐标轴  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:74
 
 ---
 
@@ -1501,15 +1273,11 @@ MobileEditor/index.d.ts:74
 
 | Name        | Type                                                                   | Description |
 | :---------- | :--------------------------------------------------------------------- | :---------- |
-| `GizmoMode` | [`GizmoModeType`](../enums/MobileEditor.MobileEditor.GizmoModeType.md) | usage:模式  |
+| `GizmoMode` | [`GizmoModeType`](../enums/MobileEditor.MobileEditor.GizmoModeType.md) | 模式        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-MobileEditor/index.d.ts:93
 
 ---
 
@@ -1530,7 +1298,3 @@ MobileEditor/index.d.ts:93
 [`EditorMode`](MobileEditor.MobileEditor.EditorMode.md)
 
 模式切换的单例
-
-#### Defined in
-
-MobileEditor/index.d.ts:26

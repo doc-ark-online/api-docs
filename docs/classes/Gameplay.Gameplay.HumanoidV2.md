@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2
+[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2
 
-# Class: HumanoidV2
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HumanoidV2
+# HumanoidV2 <Badge type="tip" text="Class" />
 
 **`Description`**
 
 人形对象 V2 接口
-
-**`Author`**
-
-guang.deng
-
-**`Network Status`**
-
-usage:双端
 
 ## Hierarchy
 
@@ -29,62 +19,52 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                          |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[behindHair](Gameplay.Gameplay.HumanoidV2.md#behindhair)**: [`HumanoidV2BehindHairPart`](Gameplay.Gameplay.HumanoidV2BehindHairPart.md) <br> 后发 |
+| **[enableOutline](Gameplay.Gameplay.HumanoidV2.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边                                           |
+| **[frontHair](Gameplay.Gameplay.HumanoidV2.md#fronthair)**: [`HumanoidV2FrontHairPart`](Gameplay.Gameplay.HumanoidV2FrontHairPart.md) <br> 前发     |
+| **[gloves](Gameplay.Gameplay.HumanoidV2.md#gloves)**: [`HumanoidV2GlovesPart`](Gameplay.Gameplay.HumanoidV2GlovesPart.md) <br> 手套                 |
+| **[head](Gameplay.Gameplay.HumanoidV2.md#head)**: [`HumanoidV2HeadPart`](Gameplay.Gameplay.HumanoidV2HeadPart.md) <br> 头                           |
+| **[lowerCloth](Gameplay.Gameplay.HumanoidV2.md#lowercloth)**: [`HumanoidV2LowerClothPart`](Gameplay.Gameplay.HumanoidV2LowerClothPart.md) <br> 下衣 |
+| **[postProcessObj](Gameplay.Gameplay.HumanoidV2.md#postprocessobj)**: [`PostProcess`](Gameplay.Gameplay.PostProcess.md) <br> 后处理对象             |
+| **[shape](Gameplay.Gameplay.HumanoidV2.md#shape)**: [`HumanoidV2Shape`](Gameplay.Gameplay.HumanoidV2Shape.md) <br> 体型                             |
+| **[shoe](Gameplay.Gameplay.HumanoidV2.md#shoe)**: [`HumanoidV2ShoePart`](Gameplay.Gameplay.HumanoidV2ShoePart.md) <br> 鞋子                         |
+| **[upperCloth](Gameplay.Gameplay.HumanoidV2.md#uppercloth)**: [`HumanoidV2UpperClothPart`](Gameplay.Gameplay.HumanoidV2UpperClothPart.md) <br> 上衣 |
 
-- [constructor](Gameplay.Gameplay.HumanoidV2.md#constructor)
-
-### Properties
-
-- [behindHair](Gameplay.Gameplay.HumanoidV2.md#behindhair)
-- [enableOutline](Gameplay.Gameplay.HumanoidV2.md#enableoutline)
-- [frontHair](Gameplay.Gameplay.HumanoidV2.md#fronthair)
-- [gloves](Gameplay.Gameplay.HumanoidV2.md#gloves)
-- [head](Gameplay.Gameplay.HumanoidV2.md#head)
-- [lowerCloth](Gameplay.Gameplay.HumanoidV2.md#lowercloth)
-- [postProcessObj](Gameplay.Gameplay.HumanoidV2.md#postprocessobj)
-- [shape](Gameplay.Gameplay.HumanoidV2.md#shape)
-- [shoe](Gameplay.Gameplay.HumanoidV2.md#shoe)
-- [upperCloth](Gameplay.Gameplay.HumanoidV2.md#uppercloth)
-
-### Methods
-
-- [appearanceSync](Gameplay.Gameplay.HumanoidV2.md#appearancesync)
-- [attach](Gameplay.Gameplay.HumanoidV2.md#attach)
-- [changeSomatotype](Gameplay.Gameplay.HumanoidV2.md#changesomatotype)
-- [clearAppearance](Gameplay.Gameplay.HumanoidV2.md#clearappearance)
-- [detach](Gameplay.Gameplay.HumanoidV2.md#detach)
-- [enablePostProcess](Gameplay.Gameplay.HumanoidV2.md#enablepostprocess)
-- [getBodyTattooColor](Gameplay.Gameplay.HumanoidV2.md#getbodytattoocolor)
-- [getBodyTattooPositionX](Gameplay.Gameplay.HumanoidV2.md#getbodytattoopositionx)
-- [getBodyTattooPositionY](Gameplay.Gameplay.HumanoidV2.md#getbodytattoopositiony)
-- [getBodyTattooRotation](Gameplay.Gameplay.HumanoidV2.md#getbodytattoorotation)
-- [getBodyTattooType](Gameplay.Gameplay.HumanoidV2.md#getbodytattootype)
-- [getBodyTattooZoom](Gameplay.Gameplay.HumanoidV2.md#getbodytattoozoom)
-- [getGoods](Gameplay.Gameplay.HumanoidV2.md#getgoods)
-- [getSkinColor](Gameplay.Gameplay.HumanoidV2.md#getskincolor)
-- [getSkinTexture](Gameplay.Gameplay.HumanoidV2.md#getskintexture)
-- [getSlotWorldPosition](Gameplay.Gameplay.HumanoidV2.md#getslotworldposition)
-- [getSomatotype](Gameplay.Gameplay.HumanoidV2.md#getsomatotype)
-- [setAppearanceData](Gameplay.Gameplay.HumanoidV2.md#setappearancedata)
-- [setBodyTattooColor](Gameplay.Gameplay.HumanoidV2.md#setbodytattoocolor)
-- [setBodyTattooPositionX](Gameplay.Gameplay.HumanoidV2.md#setbodytattoopositionx)
-- [setBodyTattooPositionY](Gameplay.Gameplay.HumanoidV2.md#setbodytattoopositiony)
-- [setBodyTattooRotation](Gameplay.Gameplay.HumanoidV2.md#setbodytattoorotation)
-- [setBodyTattooType](Gameplay.Gameplay.HumanoidV2.md#setbodytattootype)
-- [setBodyTattooZoom](Gameplay.Gameplay.HumanoidV2.md#setbodytattoozoom)
-- [setOutline](Gameplay.Gameplay.HumanoidV2.md#setoutline)
-- [setOutlineAdvance](Gameplay.Gameplay.HumanoidV2.md#setoutlineadvance)
-- [setSkinColor](Gameplay.Gameplay.HumanoidV2.md#setskincolor)
-- [setSkinTexture](Gameplay.Gameplay.HumanoidV2.md#setskintexture)
-- [setSlot](Gameplay.Gameplay.HumanoidV2.md#setslot)
-- [setSomatotype](Gameplay.Gameplay.HumanoidV2.md#setsomatotype)
-- [setSuit](Gameplay.Gameplay.HumanoidV2.md#setsuit)
-
-## Constructors
-
-### constructor
-
-• **new HumanoidV2**(`character`)
+| Methods                                                                                                                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[appearanceSync](Gameplay.Gameplay.HumanoidV2.md#appearancesync)**(): `void` <br> 把本地角色形象数据同步到多端                                                                                                                                     |
+| **[attach](Gameplay.Gameplay.HumanoidV2.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 将物体附着到 V2 人物角色的指定插槽                                                                             |
+| **[changeSomatotype](Gameplay.Gameplay.HumanoidV2.md#changesomatotype)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md), `boolean`): `void` <br> 切换角色主 Mesh                                                                       |
+| **[clearAppearance](Gameplay.Gameplay.HumanoidV2.md#clearappearance)**(): `void` <br> 清空角色形象数据                                                                                                                                               |
+| **[detach](Gameplay.Gameplay.HumanoidV2.md#detach)**(`GameObject`): `void` <br> V2 的将物体从人物身上附着的物品预览插槽中分离                                                                                                                        |
+| **[enablePostProcess](Gameplay.Gameplay.HumanoidV2.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.Type.LinearColor.md), `number`): `void` <br> 后处理开关                                                                                   |
+| **[getBodyTattooColor](Gameplay.Gameplay.HumanoidV2.md#getbodytattoocolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取纹身颜色                                                                                                  |
+| **[getBodyTattooPositionX](Gameplay.Gameplay.HumanoidV2.md#getbodytattoopositionx)**(`number`): `number` <br> 获取纹身位置左右偏移                                                                                                                   |
+| **[getBodyTattooPositionY](Gameplay.Gameplay.HumanoidV2.md#getbodytattoopositiony)**(`number`): `number` <br> 获取身体纹身位置上下位置                                                                                                               |
+| **[getBodyTattooRotation](Gameplay.Gameplay.HumanoidV2.md#getbodytattoorotation)**(`number`): `number` <br> 获取纹身旋转值                                                                                                                           |
+| **[getBodyTattooType](Gameplay.Gameplay.HumanoidV2.md#getbodytattootype)**(`number`): `string` <br> 获取纹身贴图 guid                                                                                                                                |
+| **[getBodyTattooZoom](Gameplay.Gameplay.HumanoidV2.md#getbodytattoozoom)**(`number`): `number` <br> 获取身体纹身位置缩放                                                                                                                             |
+| **[getGoods](Gameplay.Gameplay.HumanoidV2.md#getgoods)**(`string`): [`string`, `string`][] <br> 通过插槽 Guid 加载数据                                                                                                                               |
+| **[getSkinColor](Gameplay.Gameplay.HumanoidV2.md#getskincolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置皮肤颜色                                                                                                                      |
+| **[getSkinTexture](Gameplay.Gameplay.HumanoidV2.md#getskintexture)**(): `string` <br> 获取皮肤贴图                                                                                                                                                   |
+| **[getSlotWorldPosition](Gameplay.Gameplay.HumanoidV2.md#getslotworldposition)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): [`Vector`](Type.Type.Vector.md) <br> 获取 Slot 世界坐标位置,V2 物品预览的插槽使用                            |
+| **[getSomatotype](Gameplay.Gameplay.HumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) <br> 获取当前的主 Mesh                                                                                            |
+| **[setAppearanceData](Gameplay.Gameplay.HumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过 Guid 加载数据另存为角色数据                                               |
+| **[setBodyTattooColor](Gameplay.Gameplay.HumanoidV2.md#setbodytattoocolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 身体纹身颜色                                                                               |
+| **[setBodyTattooPositionX](Gameplay.Gameplay.HumanoidV2.md#setbodytattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 身体纹身位置左右偏移                                                                                                |
+| **[setBodyTattooPositionY](Gameplay.Gameplay.HumanoidV2.md#setbodytattoopositiony)**(`number`, `number`, `boolean`): `void` <br> 身体纹身位置上下位置                                                                                                |
+| **[setBodyTattooRotation](Gameplay.Gameplay.HumanoidV2.md#setbodytattoorotation)**(`number`, `number`, `boolean`): `void` <br> 身体纹旋转                                                                                                            |
+| **[setBodyTattooType](Gameplay.Gameplay.HumanoidV2.md#setbodytattootype)**(`number`, `string`, `boolean`): `void` <br> 身体纹身种类                                                                                                                  |
+| **[setBodyTattooZoom](Gameplay.Gameplay.HumanoidV2.md#setbodytattoozoom)**(`number`, `number`, `boolean`): `void` <br> 身体纹身位置缩放                                                                                                              |
+| **[setOutline](Gameplay.Gameplay.HumanoidV2.md#setoutline)**(`boolean`): `boolean` <br> 描边开关                                                                                                                                                     |
+| **[setOutlineAdvance](Gameplay.Gameplay.HumanoidV2.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关                                                                                                                          |
+| **[setSkinColor](Gameplay.Gameplay.HumanoidV2.md#setskincolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置皮肤颜色                                                                                                     |
+| **[setSkinTexture](Gameplay.Gameplay.HumanoidV2.md#setskintexture)**(`string`, `boolean`): `void` <br> 设置皮肤贴图                                                                                                                                  |
+| **[setSlot](Gameplay.Gameplay.HumanoidV2.md#setslot)**(`string`, `boolean`): `void` <br> 通过插槽 Guid 加载数据                                                                                                                                      |
+| **[setSomatotype](Gameplay.Gameplay.HumanoidV2.md#setsomatotype)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md)): `void` <br> 设置形象(如果没有预加载对应的 GUID，则是异步的,监听 onLoadAppearanceDataAllCompleted 获取加载完成回调) |
+| **[setSuit](Gameplay.Gameplay.HumanoidV2.md#setsuit)**([`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md), `string`, `string`, `string`, `string`, `string`, `string`, `string`): `void` <br> 加载一套角色数据                             |
 
 **`Description`**
 
@@ -94,15 +74,7 @@ usage:双端
 
 | Name        | Type                                                  | Description |
 | :---------- | :---------------------------------------------------- | :---------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | usage:角色  |
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[constructor](Gameplay.Gameplay.SomatotypeBase.md#constructor)
-
-#### Defined in
-
-Gameplay/index.d.ts:2731
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色        |
 
 ## Properties
 
@@ -114,10 +86,6 @@ Gameplay/index.d.ts:2731
 
 后发
 
-#### Defined in
-
-Gameplay/index.d.ts:5190
-
 ---
 
 ### enableOutline
@@ -127,14 +95,6 @@ Gameplay/index.d.ts:5190
 **`Description`**
 
 是否启动遮挡时角色描边
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enableOutline](Gameplay.Gameplay.SomatotypeBase.md#enableoutline)
-
-#### Defined in
-
-Gameplay/index.d.ts:2726
 
 ---
 
@@ -146,10 +106,6 @@ Gameplay/index.d.ts:2726
 
 前发
 
-#### Defined in
-
-Gameplay/index.d.ts:5186
-
 ---
 
 ### gloves
@@ -159,10 +115,6 @@ Gameplay/index.d.ts:5186
 **`Description`**
 
 手套
-
-#### Defined in
-
-Gameplay/index.d.ts:5206
 
 ---
 
@@ -174,10 +126,6 @@ Gameplay/index.d.ts:5206
 
 头
 
-#### Defined in
-
-Gameplay/index.d.ts:5194
-
 ---
 
 ### lowerCloth
@@ -187,10 +135,6 @@ Gameplay/index.d.ts:5194
 **`Description`**
 
 下衣
-
-#### Defined in
-
-Gameplay/index.d.ts:5202
 
 ---
 
@@ -202,14 +146,6 @@ Gameplay/index.d.ts:5202
 
 后处理对象
 
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[postProcessObj](Gameplay.Gameplay.SomatotypeBase.md#postprocessobj)
-
-#### Defined in
-
-Gameplay/index.d.ts:2722
-
 ---
 
 ### shape
@@ -219,10 +155,6 @@ Gameplay/index.d.ts:2722
 **`Description`**
 
 体型
-
-#### Defined in
-
-Gameplay/index.d.ts:5214
 
 ---
 
@@ -234,10 +166,6 @@ Gameplay/index.d.ts:5214
 
 鞋子
 
-#### Defined in
-
-Gameplay/index.d.ts:5210
-
 ---
 
 ### upperCloth
@@ -247,10 +175,6 @@ Gameplay/index.d.ts:5210
 **`Description`**
 
 上衣
-
-#### Defined in
-
-Gameplay/index.d.ts:5198
 
 ## Methods
 
@@ -278,10 +202,6 @@ Gameplay/index.d.ts:5198
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[appearanceSync](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#appearancesync)
 
-#### Defined in
-
-Gameplay/index.d.ts:5428
-
 ---
 
 ### attach
@@ -302,10 +222,10 @@ Gameplay/index.d.ts:5428
 
 #### Parameters
 
-| Name         | Type                                                 | Description                           |
-| :----------- | :--------------------------------------------------- | :------------------------------------ |
-| `gameObject` | `GameObject`                                         | usage: 被附着的物体                   |
-| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage: 插槽名字，被附着到指定的插槽名 |
+| Name         | Type                                                 | Description                    |
+| :----------- | :--------------------------------------------------- | :----------------------------- |
+| `gameObject` | `GameObject`                                         | 被附着的物体                   |
+| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽名字，被附着到指定的插槽名 |
 
 #### Returns
 
@@ -314,10 +234,6 @@ Gameplay/index.d.ts:5428
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[attach](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#attach)
-
-#### Defined in
-
-Gameplay/index.d.ts:5389
 
 ---
 
@@ -336,10 +252,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                         | Description                             |
-| :------ | :----------------------------------------------------------- | :-------------------------------------- |
-| `value` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage: 主 Mesh 类型："None"不能作为参数 |
-| `sync`  | `boolean`                                                    | usage:true 同步; false 不同步           |
+| Name    | Type                                                         | Description                      |
+| :------ | :----------------------------------------------------------- | :------------------------------- |
+| `value` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 主 Mesh 类型："None"不能作为参数 |
+| `sync`  | `boolean`                                                    | true 同步; false 不同步          |
 
 #### Returns
 
@@ -348,10 +264,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[changeSomatotype](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#changesomatotype)
-
-#### Defined in
-
-Gameplay/index.d.ts:5223
 
 ---
 
@@ -375,10 +287,6 @@ Gameplay/index.d.ts:5223
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[clearAppearance](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#clearappearance)
 
-#### Defined in
-
-Gameplay/index.d.ts:5422
-
 ---
 
 ### detach
@@ -399,9 +307,9 @@ V2 的将物体从人物身上附着的物品预览插槽中分离
 
 #### Parameters
 
-| Name         | Type         | Description           |
-| :----------- | :----------- | :-------------------- |
-| `gameObject` | `GameObject` | usage:物体 GameObject |
+| Name         | Type         | Description     |
+| :----------- | :----------- | :-------------- |
+| `gameObject` | `GameObject` | 物体 GameObject |
 
 #### Returns
 
@@ -410,10 +318,6 @@ V2 的将物体从人物身上附着的物品预览插槽中分离
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[detach](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#detach)
-
-#### Defined in
-
-Gameplay/index.d.ts:5396
 
 ---
 
@@ -431,23 +335,15 @@ Gameplay/index.d.ts:5396
 
 #### Parameters
 
-| Name              | Type                                      | Description              |
-| :---------------- | :---------------------------------------- | :----------------------- |
-| `usedPostProcess` | `boolean`                                 | usage:是否使用后处理功能 |
-| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:Outline 颜色       |
-| `newOutlineWidth` | `number`                                  | usage:Outline 宽度       |
+| Name              | Type                                      | Description        |
+| :---------------- | :---------------------------------------- | :----------------- |
+| `usedPostProcess` | `boolean`                                 | 是否使用后处理功能 |
+| `newOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | Outline 颜色       |
+| `newOutlineWidth` | `number`                                  | Outline 宽度       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[enablePostProcess](Gameplay.Gameplay.SomatotypeBase.md#enablepostprocess)
-
-#### Defined in
-
-Gameplay/index.d.ts:2739
 
 ---
 
@@ -465,9 +361,9 @@ Gameplay/index.d.ts:2739
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 Index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 Index  |
 
 #### Returns
 
@@ -478,10 +374,6 @@ Gameplay/index.d.ts:2739
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooColor](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoocolor)
-
-#### Defined in
-
-Gameplay/index.d.ts:5280
 
 ---
 
@@ -499,9 +391,9 @@ Gameplay/index.d.ts:5280
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 index  |
 
 #### Returns
 
@@ -512,10 +404,6 @@ Gameplay/index.d.ts:5280
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooPositionX](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoopositionx)
-
-#### Defined in
-
-Gameplay/index.d.ts:5315
 
 ---
 
@@ -533,9 +421,9 @@ Gameplay/index.d.ts:5315
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 index  |
 
 #### Returns
 
@@ -546,10 +434,6 @@ Gameplay/index.d.ts:5315
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooPositionY](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoopositiony)
-
-#### Defined in
-
-Gameplay/index.d.ts:5332
 
 ---
 
@@ -567,9 +451,9 @@ Gameplay/index.d.ts:5332
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 index  |
 
 #### Returns
 
@@ -580,10 +464,6 @@ Gameplay/index.d.ts:5332
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooRotation](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoorotation)
-
-#### Defined in
-
-Gameplay/index.d.ts:5366
 
 ---
 
@@ -602,9 +482,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 Index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 Index  |
 
 #### Returns
 
@@ -615,10 +495,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooType](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattootype)
-
-#### Defined in
-
-Gameplay/index.d.ts:5298
 
 ---
 
@@ -636,9 +512,9 @@ Gameplay/index.d.ts:5298
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `index` | `number` | usage:纹身 index |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `index` | `number` | 纹身 index  |
 
 #### Returns
 
@@ -649,10 +525,6 @@ Gameplay/index.d.ts:5298
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getBodyTattooZoom](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoozoom)
-
-#### Defined in
-
-Gameplay/index.d.ts:5349
 
 ---
 
@@ -670,9 +542,9 @@ Gameplay/index.d.ts:5349
 
 #### Parameters
 
-| Name   | Type     | Description     |
-| :----- | :------- | :-------------- |
-| `guid` | `string` | usage:Slot Guid |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `guid` | `string` | Slot Guid   |
 
 #### Returns
 
@@ -683,10 +555,6 @@ Gameplay/index.d.ts:5349
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[getGoods](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#getgoods)
-
-#### Defined in
-
-Gameplay/index.d.ts:5381
 
 ---
 
@@ -712,10 +580,6 @@ Gameplay/index.d.ts:5381
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getSkinColor](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getskincolor)
 
-#### Defined in
-
-Gameplay/index.d.ts:5244
-
 ---
 
 ### getSkinTexture
@@ -740,10 +604,6 @@ Gameplay/index.d.ts:5244
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[getSkinTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#getskintexture)
 
-#### Defined in
-
-Gameplay/index.d.ts:5259
-
 ---
 
 ### getSlotWorldPosition
@@ -760,9 +620,9 @@ Gameplay/index.d.ts:5259
 
 #### Parameters
 
-| Name       | Type                                                 | Description    |
-| :--------- | :--------------------------------------------------- | :------------- |
-| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | usage:插槽名字 |
+| Name       | Type                                                 | Description |
+| :--------- | :--------------------------------------------------- | :---------- |
+| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽名字    |
 
 #### Returns
 
@@ -773,10 +633,6 @@ Gameplay/index.d.ts:5259
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[getSlotWorldPosition](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#getslotworldposition)
-
-#### Defined in
-
-Gameplay/index.d.ts:5403
 
 ---
 
@@ -802,10 +658,6 @@ Gameplay/index.d.ts:5403
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[getSomatotype](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#getsomatotype)
 
-#### Defined in
-
-Gameplay/index.d.ts:5229
-
 ---
 
 ### setAppearanceData
@@ -826,10 +678,10 @@ Gameplay/index.d.ts:5229
 
 #### Parameters
 
-| Name        | Type                                                             | Description                       |
-| :---------- | :--------------------------------------------------------------- | :-------------------------------- |
-| `guidArray` | `string`[]                                                       | usage:换装数据 GuidArray          |
-| `callback?` | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | usage:加载完成的回调 default:null |
+| Name        | Type                                                             | Description                 |
+| :---------- | :--------------------------------------------------------------- | :-------------------------- |
+| `guidArray` | `string`[]                                                       | 换装数据 GuidArray          |
+| `callback?` | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | 加载完成的回调 default:null |
 
 #### Returns
 
@@ -838,10 +690,6 @@ Gameplay/index.d.ts:5229
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[setAppearanceData](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#setappearancedata)
-
-#### Defined in
-
-Gameplay/index.d.ts:5417
 
 ---
 
@@ -860,11 +708,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description                   |
-| :------ | :---------------------------------------- | :---------------------------- |
-| `index` | `number`                                  | usage: 纹身 index             |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 颜色值                 |
-| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description             |
+| :------ | :---------------------------------------- | :---------------------- |
+| `index` | `number`                                  | 纹身 index              |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色值                  |
+| `sync`  | `boolean`                                 | true 同步; false 不同步 |
 
 #### Returns
 
@@ -873,10 +721,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooColor](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoocolor)
-
-#### Defined in
-
-Gameplay/index.d.ts:5269
 
 ---
 
@@ -895,11 +739,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:纹身 Index              |
-| `value` | `number`  | usage:偏移值                  |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 纹身 Index              |
+| `value` | `number`  | 偏移值                  |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -908,10 +752,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooPositionX](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoopositionx)
-
-#### Defined in
-
-Gameplay/index.d.ts:5308
 
 ---
 
@@ -930,11 +770,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:纹身 Index              |
-| `value` | `number`  | usage:偏移值                  |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 纹身 Index              |
+| `value` | `number`  | 偏移值                  |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -943,10 +783,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooPositionY](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoopositiony)
-
-#### Defined in
-
-Gameplay/index.d.ts:5325
 
 ---
 
@@ -965,11 +801,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:纹身 Index              |
-| `value` | `number`  | usage:旋转值                  |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 纹身 Index              |
+| `value` | `number`  | 旋转值                  |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -978,10 +814,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooRotation](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoorotation)
-
-#### Defined in
-
-Gameplay/index.d.ts:5359
 
 ---
 
@@ -1000,11 +832,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:纹身 index              |
-| `guid`  | `string`  | usage:类型贴图 guid           |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 纹身 index              |
+| `guid`  | `string`  | 类型贴图 guid           |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -1013,10 +845,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooType](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattootype)
-
-#### Defined in
-
-Gameplay/index.d.ts:5290
 
 ---
 
@@ -1035,11 +863,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:纹身 Index              |
-| `value` | `number`  | usage: 缩放值                 |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 纹身 Index              |
+| `value` | `number`  | 缩放值                  |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -1048,10 +876,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooZoom](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoozoom)
-
-#### Defined in
-
-Gameplay/index.d.ts:5342
 
 ---
 
@@ -1069,23 +893,15 @@ Gameplay/index.d.ts:5342
 
 #### Parameters
 
-| Name          | Type      | Description            |
-| :------------ | :-------- | :--------------------- |
-| `usedOutline` | `boolean` | usage:是否使用描边功能 |
+| Name          | Type      | Description      |
+| :------------ | :-------- | :--------------- |
+| `usedOutline` | `boolean` | 是否使用描边功能 |
 
 #### Returns
 
 `boolean`
 
 是否成功
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutline](Gameplay.Gameplay.SomatotypeBase.md#setoutline)
-
-#### Defined in
-
-Gameplay/index.d.ts:2750
 
 ---
 
@@ -1103,22 +919,14 @@ Gameplay/index.d.ts:2750
 
 #### Parameters
 
-| Name                   | Type      | Description            |
-| :--------------------- | :-------- | :--------------------- |
-| `newEnableOutline`     | `boolean` | usage:是否开启描边功能 |
-| `newOutlineColorIndex` | `number`  | usage:描边的颜色       |
+| Name                   | Type      | Description      |
+| :--------------------- | :-------- | :--------------- |
+| `newEnableOutline`     | `boolean` | 是否开启描边功能 |
+| `newOutlineColorIndex` | `number`  | 描边的颜色       |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[SomatotypeBase](Gameplay.Gameplay.SomatotypeBase.md).[setOutlineAdvance](Gameplay.Gameplay.SomatotypeBase.md#setoutlineadvance)
-
-#### Defined in
-
-Gameplay/index.d.ts:2757
 
 ---
 
@@ -1137,10 +945,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description                   |
-| :------ | :---------------------------------------- | :---------------------------- |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | usage: 颜色                   |
-| `sync`  | `boolean`                                 | usage:true 同步; false 不同步 |
+| Name    | Type                                      | Description             |
+| :------ | :---------------------------------------- | :---------------------- |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                 | true 同步; false 不同步 |
 
 #### Returns
 
@@ -1149,10 +957,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setSkinColor](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setskincolor)
-
-#### Defined in
-
-Gameplay/index.d.ts:5238
 
 ---
 
@@ -1171,10 +975,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -1183,10 +987,6 @@ sync = true:双端
 #### Implementation of
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md).[setSkinTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2MaterialStyle.md#setskintexture)
-
-#### Defined in
-
-Gameplay/index.d.ts:5253
 
 ---
 
@@ -1204,10 +1004,10 @@ Gameplay/index.d.ts:5253
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:Slot Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | Slot Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -1216,10 +1016,6 @@ Gameplay/index.d.ts:5253
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[setSlot](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#setslot)
-
-#### Defined in
-
-Gameplay/index.d.ts:5374
 
 ---
 
@@ -1237,9 +1033,9 @@ Gameplay/index.d.ts:5374
 
 #### Parameters
 
-| Name         | Type                                                         | Description    |
-| :----------- | :----------------------------------------------------------- | :------------- |
-| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage:角色类型 |
+| Name         | Type                                                         | Description |
+| :----------- | :----------------------------------------------------------- | :---------- |
+| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 角色类型    |
 
 #### Returns
 
@@ -1248,10 +1044,6 @@ Gameplay/index.d.ts:5374
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[setSomatotype](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#setsomatotype)
-
-#### Defined in
-
-Gameplay/index.d.ts:5409
 
 ---
 
@@ -1273,16 +1065,16 @@ Gameplay/index.d.ts:5409
 
 #### Parameters
 
-| Name         | Type                                                         | Description                                              |
-| :----------- | :----------------------------------------------------------- | :------------------------------------------------------- |
-| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | usage: 主 Mesh 类型："None"不能作为参数                  |
-| `head`       | `string`                                                     | usage: 头部资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `upperCloth` | `string`                                                     | usage: 上衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `lowerCloth` | `string`                                                     | usage: 下衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `gloves`     | `string`                                                     | usage: 手套资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `shoe`       | `string`                                                     | usage: 鞋子资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `frontHair`  | `string`                                                     | usage: 前发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
-| `behindHair` | `string`                                                     | usage: 后发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| Name         | Type                                                         | Description                                       |
+| :----------- | :----------------------------------------------------------- | :------------------------------------------------ |
+| `somatotype` | [`SomatotypeV2`](../enums/Gameplay.Gameplay.SomatotypeV2.md) | 主 Mesh 类型："None"不能作为参数                  |
+| `head`       | `string`                                                     | 头部资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `upperCloth` | `string`                                                     | 上衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `lowerCloth` | `string`                                                     | 下衣资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `gloves`     | `string`                                                     | 手套资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `shoe`       | `string`                                                     | 鞋子资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `frontHair`  | `string`                                                     | 前发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
+| `behindHair` | `string`                                                     | 后发资源的 GUID(MWEditor 左侧资源列表里面的 GUID) |
 
 #### Returns
 
@@ -1291,7 +1083,3 @@ Gameplay/index.d.ts:5409
 #### Implementation of
 
 [IHumanoidV2](../interfaces/Gameplay.Gameplay.IHumanoidV2.md).[setSuit](../interfaces/Gameplay.Gameplay.IHumanoidV2.md#setsuit)
-
-#### Defined in
-
-Gameplay/index.d.ts:5442

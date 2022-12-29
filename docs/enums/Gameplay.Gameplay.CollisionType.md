@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CollisionType
+[Gameplay](../modules/Gameplay.Gameplay.md) / CollisionType
 
-# Enumeration: CollisionType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CollisionType
+# CollisionType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [NoCollision](Gameplay.Gameplay.CollisionType.md#nocollision)
-- [PhysicsOnly](Gameplay.Gameplay.CollisionType.md#physicsonly)
-- [QueryAndPhysics](Gameplay.Gameplay.CollisionType.md#queryandphysics)
-- [QueryOnly](Gameplay.Gameplay.CollisionType.md#queryonly)
+| Enumeration Members                                                                             |
+| :---------------------------------------------------------------------------------------------- |
+| **[NoCollision](Gameplay.Gameplay.CollisionType.md#nocollision)** = `0` <br> 无碰撞             |
+| **[PhysicsOnly](Gameplay.Gameplay.CollisionType.md#physicsonly)** = `2` <br> 仅物理             |
+| **[QueryAndPhysics](Gameplay.Gameplay.CollisionType.md#queryandphysics)** = `3` <br> 物理和检测 |
+| **[QueryOnly](Gameplay.Gameplay.CollisionType.md#queryonly)** = `1` <br> 仅检测                 |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 无碰撞
 
-#### Defined in
-
-Gameplay/index.d.ts:10173
-
 ---
 
 ### PhysicsOnly
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:10173
 • **PhysicsOnly** = `2`
 
 仅物理
-
-#### Defined in
-
-Gameplay/index.d.ts:10177
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:10177
 
 物理和检测
 
-#### Defined in
-
-Gameplay/index.d.ts:10179
-
 ---
 
 ### QueryOnly
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:10179
 • **QueryOnly** = `1`
 
 仅检测
-
-#### Defined in
-
-Gameplay/index.d.ts:10175

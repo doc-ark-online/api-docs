@@ -1,35 +1,25 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Network](../modules/Network.md) / [Network](../modules/Network.Network.md) / Response
+[Network](../modules/Network.Network.md) / Response
 
-# Interface: Response
-
-[Network](../modules/Network.md).[Network](../modules/Network.Network.md).Response
-
-**`Author`**
-
-吴思
+# Response <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 HTTP 响应信息的对象
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Properties
+| Properties                                                                                 |
+| :----------------------------------------------------------------------------------------- |
+| **[headers](Network.Network.Response.md#headers)**: `Map`<`string`, `string`\> <br> 响应头 |
+| **[ok](Network.Network.Response.md#ok)**: `boolean` <br> 是否成功（状态码是否为 200）      |
+| **[status](Network.Network.Response.md#status)**: `number` <br> 响应状态码                 |
+| **[type](Network.Network.Response.md#type)**: `string` <br> 响应类型                       |
+| **[url](Network.Network.Response.md#url)**: `string` <br> 响应 URL                         |
 
-- [headers](Network.Network.Response.md#headers)
-- [ok](Network.Network.Response.md#ok)
-- [status](Network.Network.Response.md#status)
-- [type](Network.Network.Response.md#type)
-- [url](Network.Network.Response.md#url)
-
-### Methods
-
-- [json](Network.Network.Response.md#json)
-- [text](Network.Network.Response.md#text)
+| Methods                                                                                  |
+| :--------------------------------------------------------------------------------------- |
+| **[json](Network.Network.Response.md#json)**<`T`\>(): `Promise`<`T`\> <br> 数据返回 json |
+| **[text](Network.Network.Response.md#text)**(): `Promise`<`string`\> <br> 数据返回文本   |
 
 ## Properties
 
@@ -41,10 +31,6 @@ usage:双端
 
 响应头
 
-#### Defined in
-
-Network/index.d.ts:26
-
 ---
 
 ### ok
@@ -54,10 +40,6 @@ Network/index.d.ts:26
 **`Description`**
 
 是否成功（状态码是否为 200）
-
-#### Defined in
-
-Network/index.d.ts:32
 
 ---
 
@@ -69,10 +51,6 @@ Network/index.d.ts:32
 
 响应状态码
 
-#### Defined in
-
-Network/index.d.ts:34
-
 ---
 
 ### type
@@ -83,10 +61,6 @@ Network/index.d.ts:34
 
 响应类型
 
-#### Defined in
-
-Network/index.d.ts:28
-
 ---
 
 ### url
@@ -96,10 +70,6 @@ Network/index.d.ts:28
 **`Description`**
 
 响应 URL
-
-#### Defined in
-
-Network/index.d.ts:30
 
 ## Methods
 
@@ -127,10 +97,6 @@ Network/index.d.ts:30
 
 数据返回 json
 
-#### Defined in
-
-Network/index.d.ts:46
-
 ---
 
 ### text
@@ -150,7 +116,3 @@ Network/index.d.ts:46
 `Promise`<`string`\>
 
 数据返回文本
-
-#### Defined in
-
-Network/index.d.ts:40

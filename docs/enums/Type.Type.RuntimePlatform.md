@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / RuntimePlatform
+[Type](../modules/Type.Type.md) / RuntimePlatform
 
-# Enumeration: RuntimePlatform
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).RuntimePlatform
+# RuntimePlatform <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Android](Type.Type.RuntimePlatform.md#android)
-- [Linux](Type.Type.RuntimePlatform.md#linux)
-- [MacOS](Type.Type.RuntimePlatform.md#macos)
-- [Windows](Type.Type.RuntimePlatform.md#windows)
-- [iOS](Type.Type.RuntimePlatform.md#ios)
+| Enumeration Members                                                             |
+| :------------------------------------------------------------------------------ |
+| **[Android](Type.Type.RuntimePlatform.md#android)** = `3` <br> Mobile - Android |
+| **[Linux](Type.Type.RuntimePlatform.md#linux)** = `1` <br> PC - Linux           |
+| **[MacOS](Type.Type.RuntimePlatform.md#macos)** = `2` <br> PC - MacOS           |
+| **[Windows](Type.Type.RuntimePlatform.md#windows)** = `0` <br> PC - Windows     |
+| **[iOS](Type.Type.RuntimePlatform.md#ios)** = `4` <br> Mobile - iOS             |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 Mobile - Android
 
-#### Defined in
-
-Type/index.d.ts:769
-
 ---
 
 ### Linux
@@ -37,10 +31,6 @@ Type/index.d.ts:769
 • **Linux** = `1`
 
 PC - Linux
-
-#### Defined in
-
-Type/index.d.ts:765
 
 ---
 
@@ -50,10 +40,6 @@ Type/index.d.ts:765
 
 PC - MacOS
 
-#### Defined in
-
-Type/index.d.ts:767
-
 ---
 
 ### Windows
@@ -62,10 +48,6 @@ Type/index.d.ts:767
 
 PC - Windows
 
-#### Defined in
-
-Type/index.d.ts:763
-
 ---
 
 ### iOS
@@ -73,7 +55,3 @@ Type/index.d.ts:763
 • **iOS** = `4`
 
 Mobile - iOS
-
-#### Defined in
-
-Type/index.d.ts:771

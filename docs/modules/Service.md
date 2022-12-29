@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Service
 
-# Module: Service
-
-## Table of contents
+# Service <Badge type="tip" text="Module" />
 
 ### Namespaces
 

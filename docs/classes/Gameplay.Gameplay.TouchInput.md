@@ -1,44 +1,24 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / TouchInput
+[Gameplay](../modules/Gameplay.Gameplay.md) / TouchInput
 
-# Class: TouchInput
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).TouchInput
-
-**`Author`**
-
-tengxiao.li
+# TouchInput <Badge type="tip" text="Class" />
 
 **`Description`**
 
 玩家从可触摸设备获取的数据信息
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[onTouch](Gameplay.Gameplay.TouchInput.md#ontouch)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.Gameplay.TouchInputType.md)) => `void`\> <br> 触摸事件               |
+| **[onTouchBegin](Gameplay.Gameplay.TouchInput.md#ontouchbegin)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.Gameplay.TouchInputType.md)) => `void`\> <br> 触摸开始事件 |
+| **[onTouchEnd](Gameplay.Gameplay.TouchInput.md#ontouchend)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.Gameplay.TouchInputType.md)) => `void`\> <br> 触摸结束事件     |
+| **[onTouchMove](Gameplay.Gameplay.TouchInput.md#ontouchmove)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.Gameplay.TouchInputType.md)) => `void`\> <br> 触摸移动事件   |
 
-- [constructor](Gameplay.Gameplay.TouchInput.md#constructor)
-
-### Properties
-
-- [onTouch](Gameplay.Gameplay.TouchInput.md#ontouch)
-- [onTouchBegin](Gameplay.Gameplay.TouchInput.md#ontouchbegin)
-- [onTouchEnd](Gameplay.Gameplay.TouchInput.md#ontouchend)
-- [onTouchMove](Gameplay.Gameplay.TouchInput.md#ontouchmove)
-
-### Methods
-
-- [getTouchVectorArray](Gameplay.Gameplay.TouchInput.md#gettouchvectorarray)
-- [setPlayerController](Gameplay.Gameplay.TouchInput.md#setplayercontroller)
-
-## Constructors
-
-### constructor
-
-• **new TouchInput**()
+| Methods                                                                                                                                       |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getTouchVectorArray](Gameplay.Gameplay.TouchInput.md#gettouchvectorarray)**(): [`Vector`](Type.Type.Vector.md)[] <br> 获取屏幕手指数的数组 |
+| **[setPlayerController](Gameplay.Gameplay.TouchInput.md#setplayercontroller)**(): `void` <br> 设置玩家控制器，使用前需调用一次                |
 
 ## Properties
 
@@ -50,10 +30,6 @@ usage:客户端
 
 触摸事件
 
-#### Defined in
-
-Gameplay/index.d.ts:10133
-
 ---
 
 ### onTouchBegin
@@ -63,10 +39,6 @@ Gameplay/index.d.ts:10133
 **`Description`**
 
 触摸开始事件
-
-#### Defined in
-
-Gameplay/index.d.ts:10139
 
 ---
 
@@ -78,10 +50,6 @@ Gameplay/index.d.ts:10139
 
 触摸结束事件
 
-#### Defined in
-
-Gameplay/index.d.ts:10151
-
 ---
 
 ### onTouchMove
@@ -91,10 +59,6 @@ Gameplay/index.d.ts:10151
 **`Description`**
 
 触摸移动事件
-
-#### Defined in
-
-Gameplay/index.d.ts:10145
 
 ## Methods
 
@@ -116,10 +80,6 @@ Gameplay/index.d.ts:10145
 
 当前 Touch 数组
 
-#### Defined in
-
-Gameplay/index.d.ts:10164
-
 ---
 
 ### setPlayerController
@@ -137,7 +97,3 @@ Gameplay/index.d.ts:10164
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:10158

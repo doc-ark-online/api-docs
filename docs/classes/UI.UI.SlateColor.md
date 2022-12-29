@@ -1,37 +1,17 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / SlateColor
+[UI](../modules/UI.UI.md) / SlateColor
 
-# Class: SlateColor
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).SlateColor
-
-**`Author`**
-
-jie.wu
+# SlateColor <Badge type="tip" text="Class" />
 
 **`Description`**
 
 UI 颜色管理
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.SlateColor.md#constructor)
-
-### Properties
-
-- [colorUseRule](UI.UI.SlateColor.md#coloruserule)
-- [specifiedColor](UI.UI.SlateColor.md#specifiedcolor)
-
-## Constructors
-
-### constructor
-
-• **new SlateColor**(`InColor`)
+| Properties                                                                                                                             |
+| :------------------------------------------------------------------------------------------------------------------------------------- |
+| **[colorUseRule](UI.UI.SlateColor.md#coloruserule)**: [`SlateColorStylingMode`](../enums/UI.UI.SlateColorStylingMode.md) <br> 颜色规则 |
+| **[specifiedColor](UI.UI.SlateColor.md#specifiedcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色                          |
 
 **`Description`**
 
@@ -45,11 +25,7 @@ usage:客户端
 
 | Name      | Type                                      | Description |
 | :-------- | :---------------------------------------- | :---------- |
-| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:颜色  |
-
-#### Defined in
-
-UI/index.d.ts:4017
+| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色        |
 
 ## Properties
 
@@ -61,10 +37,6 @@ UI/index.d.ts:4017
 
 颜色规则
 
-#### Defined in
-
-UI/index.d.ts:4021
-
 ---
 
 ### specifiedColor
@@ -74,7 +46,3 @@ UI/index.d.ts:4021
 **`Description`**
 
 颜色
-
-#### Defined in
-
-UI/index.d.ts:4019

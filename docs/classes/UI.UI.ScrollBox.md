@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / ScrollBox
+[UI](../modules/UI.UI.md) / ScrollBox
 
-# Class: ScrollBox
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).ScrollBox
-
-**`Author`**
-
-jie.wu
+# ScrollBox <Badge type="tip" text="Class" />
 
 **`Description`**
 
 滑动框
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,91 +14,77 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Properties                                                               |
+| :----------------------------------------------------------------------- |
+| **[brushMargin](UI.UI.ScrollBox.md#brushmargin)**: `any` <br> 临时变量   |
+| **[tempUEMargin](UI.UI.ScrollBox.md#tempuemargin)**: `any` <br> 临时变量 |
 
-- [constructor](UI.UI.ScrollBox.md#constructor)
+| Accessors                                                                                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[allowOverscroll](UI.UI.ScrollBox.md#allowoverscroll)**(`boolean`): `void` <br> 设置允许滚动超过滚动框大小                                                                      |
+| **[alwaysShowScrollBar](UI.UI.ScrollBox.md#alwaysshowscrollbar)**(`boolean`): `void` <br> 设置是否一直显示滚动条                                                                  |
+| **[animationType](UI.UI.ScrollBox.md#animationtype)**(): [`UIScrollBoxAnimationType`](../enums/UI.UI.UIScrollBoxAnimationType.md) <br> 获取动画类型                               |
+| **[autoSizeEnable](UI.UI.ScrollBox.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                                                    |
+| **[cachedGeometry](UI.UI.ScrollBox.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                                                 |
+| **[constraints](UI.UI.ScrollBox.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局                                       |
+| **[defaultLocation](UI.UI.ScrollBox.md#defaultlocation)**(): [`ScrollBarDefaultLocation`](../enums/UI.UI.ScrollBarDefaultLocation.md) <br> 返回滚动条的默认位置(类型，非具体坐标) |
+| **[desiredSize](UI.UI.ScrollBox.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                                                          |
+| **[elasticMultiplier](UI.UI.ScrollBox.md#elasticmultiplier)**(): `number` <br> 获取弹性系数                                                                                       |
+| **[enable](UI.UI.ScrollBox.md#enable)**(): `boolean` <br> 是否可用                                                                                                                |
+| **[guid](UI.UI.ScrollBox.md#guid)**(): `string` <br> 获取控件 GUID                                                                                                                |
+| **[isHovered](UI.UI.ScrollBox.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                                                    |
+| **[isScrollBarAlwaysShown](UI.UI.ScrollBox.md#isscrollbaralwaysshown)**(): `boolean` <br> 获取是否一直显示滚动条                                                                  |
+| **[name](UI.UI.ScrollBox.md#name)**(): `string` <br> 获取名字                                                                                                                     |
+| **[onScrollEnd](UI.UI.ScrollBox.md#onscrollend)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 滚动结束事件                                       |
+| **[onUserScrolled](UI.UI.ScrollBox.md#onuserscrolled)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`currentOffset`: `number`) => `void`\> <br> 滚动事件            |
+| **[orientation](UI.UI.ScrollBox.md#orientation)**(): [`Orientation`](../enums/UI.UI.Orientation.md) <br> 获取滚动方向                                                             |
+| **[paintSpaceGeometry](UI.UI.ScrollBox.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息                                    |
+| **[parent](UI.UI.ScrollBox.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                                                            |
+| **[position](UI.UI.ScrollBox.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                                                 |
+| **[renderOpacity](UI.UI.ScrollBox.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                                             |
+| **[renderScale](UI.UI.ScrollBox.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                                                          |
+| **[renderShear](UI.UI.ScrollBox.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                                                      |
+| **[renderTransformAngle](UI.UI.ScrollBox.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                                               |
+| **[renderTransformPivot](UI.UI.ScrollBox.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                                                        |
+| **[scrollAxisBrushDrawType](UI.UI.ScrollBox.md#scrollaxisbrushdrawtype)**(): [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 获取滚动条图片绘制类型             |
+| **[scrollAxisBrushGuid](UI.UI.ScrollBox.md#scrollaxisbrushguid)**(): `string` <br> 获取滚动条图片 ID                                                                              |
+| **[scrollAxisBrushMargin](UI.UI.ScrollBox.md#scrollaxisbrushmargin)**(): [`Margin`](UI.UI.Margin.md) <br> 获取滚动条图片边距                                                      |
+| **[scrollAxisColor](UI.UI.ScrollBox.md#scrollaxiscolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取滚动条图片颜色                                                    |
+| **[scrollBarVisibility](UI.UI.ScrollBox.md#scrollbarvisibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取滚动条的显示于隐藏                           |
+| **[scrollOffset](UI.UI.ScrollBox.md#scrolloffset)**(): `number` <br> 获取滚动框偏移                                                                                               |
+| **[scrollOffsetFraction](UI.UI.ScrollBox.md#scrolloffsetfraction)**(): `number` <br> 获取滚动框距离底部的偏移比例                                                                 |
+| **[scrollOffsetOfEnd](UI.UI.ScrollBox.md#scrolloffsetofend)**(): `number` <br> 获取滚动框距离底部的偏移                                                                           |
+| **[scrollWheelMultiplier](UI.UI.ScrollBox.md#scrollwheelmultiplier)**(`number`): `void` <br> 设置鼠标滚轮系数                                                                     |
+| **[scrollbarPadding](UI.UI.ScrollBox.md#scrollbarpadding)**([`Margin`](UI.UI.Margin.md)): `void` <br> 设置滚动条边距                                                              |
+| **[scrollbarThickness](UI.UI.ScrollBox.md#scrollbarthickness)**(`number`): `void` <br> 设置滚动条粗细                                                                             |
+| **[shadowVisibility](UI.UI.ScrollBox.md#shadowvisibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取阴影显示                                           |
+| **[size](UI.UI.ScrollBox.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                                                            |
+| **[slot](UI.UI.ScrollBox.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                              |
+| **[smoothScrollingEnable](UI.UI.ScrollBox.md#smoothscrollingenable)**(`boolean`): `void` <br> 设定鼠标滚动时，滚动速度是否插值运算,限制滚动速度更平滑                             |
+| **[supportElastic](UI.UI.ScrollBox.md#supportelastic)**(): `boolean` <br> 判断是否支持惯性                                                                                        |
+| **[tickSpaceGeometry](UI.UI.ScrollBox.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息                                 |
+| **[transform](UI.UI.ScrollBox.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                                                     |
+| **[visibility](UI.UI.ScrollBox.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                                                         |
+| **[visible](UI.UI.ScrollBox.md#visible)**(): `boolean` <br> 是否可见                                                                                                              |
+| **[zOrder](UI.UI.ScrollBox.md#zorder)**(): `number` <br> 获取 zorder                                                                                                              |
 
-### Properties
-
-- [brushMargin](UI.UI.ScrollBox.md#brushmargin)
-- [tempUEMargin](UI.UI.ScrollBox.md#tempuemargin)
-
-### Accessors
-
-- [allowOverscroll](UI.UI.ScrollBox.md#allowoverscroll)
-- [alwaysShowScrollBar](UI.UI.ScrollBox.md#alwaysshowscrollbar)
-- [animationType](UI.UI.ScrollBox.md#animationtype)
-- [autoSizeEnable](UI.UI.ScrollBox.md#autosizeenable)
-- [cachedGeometry](UI.UI.ScrollBox.md#cachedgeometry)
-- [constraints](UI.UI.ScrollBox.md#constraints)
-- [defaultLocation](UI.UI.ScrollBox.md#defaultlocation)
-- [desiredSize](UI.UI.ScrollBox.md#desiredsize)
-- [elasticMultiplier](UI.UI.ScrollBox.md#elasticmultiplier)
-- [enable](UI.UI.ScrollBox.md#enable)
-- [guid](UI.UI.ScrollBox.md#guid)
-- [isHovered](UI.UI.ScrollBox.md#ishovered)
-- [isScrollBarAlwaysShown](UI.UI.ScrollBox.md#isscrollbaralwaysshown)
-- [name](UI.UI.ScrollBox.md#name)
-- [onScrollEnd](UI.UI.ScrollBox.md#onscrollend)
-- [onUserScrolled](UI.UI.ScrollBox.md#onuserscrolled)
-- [orientation](UI.UI.ScrollBox.md#orientation)
-- [paintSpaceGeometry](UI.UI.ScrollBox.md#paintspacegeometry)
-- [parent](UI.UI.ScrollBox.md#parent)
-- [position](UI.UI.ScrollBox.md#position)
-- [renderOpacity](UI.UI.ScrollBox.md#renderopacity)
-- [renderScale](UI.UI.ScrollBox.md#renderscale)
-- [renderShear](UI.UI.ScrollBox.md#rendershear)
-- [renderTransformAngle](UI.UI.ScrollBox.md#rendertransformangle)
-- [renderTransformPivot](UI.UI.ScrollBox.md#rendertransformpivot)
-- [scrollAxisBrushDrawType](UI.UI.ScrollBox.md#scrollaxisbrushdrawtype)
-- [scrollAxisBrushGuid](UI.UI.ScrollBox.md#scrollaxisbrushguid)
-- [scrollAxisBrushMargin](UI.UI.ScrollBox.md#scrollaxisbrushmargin)
-- [scrollAxisColor](UI.UI.ScrollBox.md#scrollaxiscolor)
-- [scrollBarVisibility](UI.UI.ScrollBox.md#scrollbarvisibility)
-- [scrollOffset](UI.UI.ScrollBox.md#scrolloffset)
-- [scrollOffsetFraction](UI.UI.ScrollBox.md#scrolloffsetfraction)
-- [scrollOffsetOfEnd](UI.UI.ScrollBox.md#scrolloffsetofend)
-- [scrollWheelMultiplier](UI.UI.ScrollBox.md#scrollwheelmultiplier)
-- [scrollbarPadding](UI.UI.ScrollBox.md#scrollbarpadding)
-- [scrollbarThickness](UI.UI.ScrollBox.md#scrollbarthickness)
-- [shadowVisibility](UI.UI.ScrollBox.md#shadowvisibility)
-- [size](UI.UI.ScrollBox.md#size)
-- [slot](UI.UI.ScrollBox.md#slot)
-- [smoothScrollingEnable](UI.UI.ScrollBox.md#smoothscrollingenable)
-- [supportElastic](UI.UI.ScrollBox.md#supportelastic)
-- [tickSpaceGeometry](UI.UI.ScrollBox.md#tickspacegeometry)
-- [transform](UI.UI.ScrollBox.md#transform)
-- [visibility](UI.UI.ScrollBox.md#visibility)
-- [visible](UI.UI.ScrollBox.md#visible)
-- [zOrder](UI.UI.ScrollBox.md#zorder)
-
-### Methods
-
-- [addChild](UI.UI.ScrollBox.md#addchild)
-- [destroyObject](UI.UI.ScrollBox.md#destroyobject)
-- [endInertialScrolling](UI.UI.ScrollBox.md#endinertialscrolling)
-- [equal](UI.UI.ScrollBox.md#equal)
-- [findChildByPath](UI.UI.ScrollBox.md#findchildbypath)
-- [getChildAt](UI.UI.ScrollBox.md#getchildat)
-- [getChildByName](UI.UI.ScrollBox.md#getchildbyname)
-- [getChildrenCount](UI.UI.ScrollBox.md#getchildrencount)
-- [invalidateLayoutAndVolatility](UI.UI.ScrollBox.md#invalidatelayoutandvolatility)
-- [removeAllChildren](UI.UI.ScrollBox.md#removeallchildren)
-- [removeChild](UI.UI.ScrollBox.md#removechild)
-- [removeChildAt](UI.UI.ScrollBox.md#removechildat)
-- [scrollToEnd](UI.UI.ScrollBox.md#scrolltoend)
-- [scrollToStart](UI.UI.ScrollBox.md#scrolltostart)
-- [newObject](UI.UI.ScrollBox.md#newobject)
-
-## Constructors
-
-### constructor
-
-• **new ScrollBox**()
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[constructor](UI.UI.PanelWidget.md#constructor)
+| Methods                                                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | --------------------- |
+| **[addChild](UI.UI.ScrollBox.md#addchild)**([`Widget`](UI.UI.Widget.md)): `void` <br> 添加子节点                                                                                                           |
+| **[destroyObject](UI.UI.ScrollBox.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                                                                                           |
+| **[endInertialScrolling](UI.UI.ScrollBox.md#endinertialscrolling)**(): `void` <br> 立刻停止滚动                                                                                                            |
+| **[equal](UI.UI.ScrollBox.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                                                                                    |
+| **[findChildByPath](UI.UI.ScrollBox.md#findchildbypath)**(`string`): [`Widget`](UI.UI.Widget.md) <br> 通过相对路径查找节点                                                                                 |
+| **[getChildAt](UI.UI.ScrollBox.md#getchildat)**(`number`): [`Widget`](UI.UI.Widget.md) <br> 获取第几位子节点                                                                                               |
+| **[getChildByName](UI.UI.ScrollBox.md#getchildbyname)**<extends [`Widget`](UI.UI.Widget.md)<`T`\>                                                                                                          | \>(`string`): extends [`Widget`](UI.UI.Widget.md)<`T`\> | <br> 通过名字查找节点 |
+| **[getChildrenCount](UI.UI.ScrollBox.md#getchildrencount)**(): `number` <br> 获取子节点数量                                                                                                                |
+| **[invalidateLayoutAndVolatility](UI.UI.ScrollBox.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算                                                                          |
+| **[removeAllChildren](UI.UI.ScrollBox.md#removeallchildren)**(): `void` <br> 清除所有子节点,会销毁 UI 无法再使用                                                                                           |
+| **[removeChild](UI.UI.ScrollBox.md#removechild)**([`Widget`](UI.UI.Widget.md)): `void` <br> 移除节点,会销毁 UI 无法在使用                                                                                  |
+| **[removeChildAt](UI.UI.ScrollBox.md#removechildat)**(`number`): `void` <br> 移除第几个节点,会销毁 UI 无法再使用                                                                                           |
+| **[scrollToEnd](UI.UI.ScrollBox.md#scrolltoend)**(): `void` <br> 滚动到底部                                                                                                                                |
+| **[scrollToStart](UI.UI.ScrollBox.md#scrolltostart)**(): `void` <br> 滚动到开始位置                                                                                                                        |
+| **[newObject](UI.UI.ScrollBox.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`ScrollBox`](UI.UI.ScrollBox.md) <br> 创建 ScrollBox 控件，当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁 |
 
 ## Properties
 
@@ -120,10 +96,6 @@ usage:客户端
 
 临时变量
 
-#### Defined in
-
-UI/index.d.ts:1678
-
 ---
 
 ### tempUEMargin
@@ -133,10 +105,6 @@ UI/index.d.ts:1678
 **`Description`**
 
 临时变量
-
-#### Defined in
-
-UI/index.d.ts:1682
 
 ## Accessors
 
@@ -154,17 +122,13 @@ UI/index.d.ts:1682
 
 #### Parameters
 
-| Name                | Type      | Description                  |
-| :------------------ | :-------- | :--------------------------- |
-| `isAllowOverscroll` | `boolean` | usage:允许滚动超过滚动框大小 |
+| Name                | Type      | Description            |
+| :------------------ | :-------- | :--------------------- |
+| `isAllowOverscroll` | `boolean` | 允许滚动超过滚动框大小 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1534
 
 ---
 
@@ -182,17 +146,13 @@ UI/index.d.ts:1534
 
 #### Parameters
 
-| Name                     | Type      | Description              |
-| :----------------------- | :-------- | :----------------------- |
-| `isScrollBarAlwaysShown` | `boolean` | usage:是否一直显示滚动条 |
+| Name                     | Type      | Description        |
+| :----------------------- | :-------- | :----------------- |
+| `isScrollBarAlwaysShown` | `boolean` | 是否一直显示滚动条 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1522
 
 ---
 
@@ -214,10 +174,6 @@ UI/index.d.ts:1522
 
 动画类型
 
-#### Defined in
-
-UI/index.d.ts:1604
-
 • `set` **animationType**(`inAnimationType`): `void`
 
 **`Description`**
@@ -232,17 +188,13 @@ UI/index.d.ts:1604
 
 | Name              | Type                                                                     | Description |
 | :---------------- | :----------------------------------------------------------------------- | :---------- |
-| `inAnimationType` | [`UIScrollBoxAnimationType`](../enums/UI.UI.UIScrollBoxAnimationType.md) | usage:类型  |
+| `inAnimationType` | [`UIScrollBoxAnimationType`](../enums/UI.UI.UIScrollBoxAnimationType.md) | 类型        |
 
 #### Returns
 
 `void`
 
 动画类型
-
-#### Defined in
-
-UI/index.d.ts:1611
 
 ---
 
@@ -264,14 +216,6 @@ UI/index.d.ts:1611
 
 是否自动设置大小
 
-#### Inherited from
-
-PanelWidget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4987
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Description`**
@@ -284,21 +228,13 @@ UI/index.d.ts:4987
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4981
 
 ---
 
@@ -320,14 +256,6 @@ UI/index.d.ts:4981
 
 返回上一次的 GetTickSpaceGeometry
 
-#### Inherited from
-
-PanelWidget.cachedGeometry
-
-#### Defined in
-
-UI/index.d.ts:4897
-
 ---
 
 ### constraints
@@ -348,14 +276,6 @@ UI/index.d.ts:4897
 
 控件的布局
 
-#### Inherited from
-
-PanelWidget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4939
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Description`**
@@ -368,21 +288,13 @@ UI/index.d.ts:4939
 
 #### Parameters
 
-| Name              | Type                                                  | Description      |
-| :---------------- | :---------------------------------------------------- | :--------------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+| Name              | Type                                                  | Description |
+| :---------------- | :---------------------------------------------------- | :---------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4933
 
 ---
 
@@ -404,10 +316,6 @@ UI/index.d.ts:4933
 
 返回滚动条的默认位置(类型，非具体坐标)
 
-#### Defined in
-
-UI/index.d.ts:1598
-
 • `set` **defaultLocation**(`NewDefaultLocation`): `void`
 
 **`Description`**
@@ -420,17 +328,13 @@ UI/index.d.ts:1598
 
 #### Parameters
 
-| Name                 | Type                                                                     | Description                            |
-| :------------------- | :----------------------------------------------------------------------- | :------------------------------------- |
-| `NewDefaultLocation` | [`ScrollBarDefaultLocation`](../enums/UI.UI.ScrollBarDefaultLocation.md) | usage:滚动条默认位置(类型，非具体坐标) |
+| Name                 | Type                                                                     | Description                      |
+| :------------------- | :----------------------------------------------------------------------- | :------------------------------- |
+| `NewDefaultLocation` | [`ScrollBarDefaultLocation`](../enums/UI.UI.ScrollBarDefaultLocation.md) | 滚动条默认位置(类型，非具体坐标) |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1592
 
 ---
 
@@ -452,14 +356,6 @@ UI/index.d.ts:1592
 
 返回期望大小
 
-#### Inherited from
-
-PanelWidget.desiredSize
-
-#### Defined in
-
-UI/index.d.ts:4831
-
 ---
 
 ### elasticMultiplier
@@ -480,10 +376,6 @@ UI/index.d.ts:4831
 
 弹性系数
 
-#### Defined in
-
-UI/index.d.ts:1617
-
 • `set` **elasticMultiplier**(`inElasticMultiplier`): `void`
 
 **`Description`**
@@ -498,17 +390,13 @@ UI/index.d.ts:1617
 
 | Name                  | Type     | Description |
 | :-------------------- | :------- | :---------- |
-| `inElasticMultiplier` | `number` | usage:系数  |
+| `inElasticMultiplier` | `number` | 系数        |
 
 #### Returns
 
 `void`
 
 弹性系数
-
-#### Defined in
-
-UI/index.d.ts:1624
 
 ---
 
@@ -530,14 +418,6 @@ UI/index.d.ts:1624
 
 boolean
 
-#### Inherited from
-
-PanelWidget.enable
-
-#### Defined in
-
-UI/index.d.ts:4807
-
 • `set` **enable**(`isEnable`): `void`
 
 **`Description`**
@@ -550,23 +430,15 @@ UI/index.d.ts:4807
 
 #### Parameters
 
-| Name       | Type      | Description          |
-| :--------- | :-------- | :------------------- |
-| `isEnable` | `boolean` | usage:可用性 boolean |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
+| `isEnable` | `boolean` | 可用性 boolean |
 
 #### Returns
 
 `void`
 
 返回设置结果
-
-#### Inherited from
-
-PanelWidget.enable
-
-#### Defined in
-
-UI/index.d.ts:4814
 
 ---
 
@@ -588,14 +460,6 @@ UI/index.d.ts:4814
 
 控件 GUID
 
-#### Inherited from
-
-PanelWidget.guid
-
-#### Defined in
-
-UI/index.d.ts:4915
-
 ---
 
 ### isHovered
@@ -615,14 +479,6 @@ UI/index.d.ts:4915
 `boolean`
 
 boolean
-
-#### Inherited from
-
-PanelWidget.isHovered
-
-#### Defined in
-
-UI/index.d.ts:4820
 
 ---
 
@@ -644,10 +500,6 @@ UI/index.d.ts:4820
 
 是否一直显示滚动条
 
-#### Defined in
-
-UI/index.d.ts:1528
-
 ---
 
 ### name
@@ -668,14 +520,6 @@ UI/index.d.ts:1528
 
 返回名字
 
-#### Inherited from
-
-PanelWidget.name
-
-#### Defined in
-
-UI/index.d.ts:4783
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -690,19 +534,11 @@ UI/index.d.ts:4783
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.name
-
-#### Defined in
-
-UI/index.d.ts:4777
 
 ---
 
@@ -724,10 +560,6 @@ UI/index.d.ts:4777
 
 滚动结束事件
 
-#### Defined in
-
-UI/index.d.ts:1479
-
 ---
 
 ### onUserScrolled
@@ -747,10 +579,6 @@ UI/index.d.ts:1479
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`currentOffset`: `number`) => `void`\>
 
 滚动事件
-
-#### Defined in
-
-UI/index.d.ts:1471
 
 ---
 
@@ -772,10 +600,6 @@ UI/index.d.ts:1471
 
 滚动方向
 
-#### Defined in
-
-UI/index.d.ts:1492
-
 • `set` **orientation**(`inOrientation`): `void`
 
 **`Description`**
@@ -790,17 +614,13 @@ UI/index.d.ts:1492
 
 | Name            | Type                                           | Description |
 | :-------------- | :--------------------------------------------- | :---------- |
-| `inOrientation` | [`Orientation`](../enums/UI.UI.Orientation.md) | usage:方向  |
+| `inOrientation` | [`Orientation`](../enums/UI.UI.Orientation.md) | 方向        |
 
 #### Returns
 
 `void`
 
 滚动方向
-
-#### Defined in
-
-UI/index.d.ts:1486
 
 ---
 
@@ -822,14 +642,6 @@ UI/index.d.ts:1486
 
 返回最后一次用于渲染 Widget 的几何信息
 
-#### Inherited from
-
-PanelWidget.paintSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4909
-
 ---
 
 ### parent
@@ -849,14 +661,6 @@ UI/index.d.ts:4909
 [`Widget`](UI.UI.Widget.md)
 
 返回父节点
-
-#### Inherited from
-
-PanelWidget.parent
-
-#### Defined in
-
-UI/index.d.ts:4764
 
 ---
 
@@ -878,14 +682,6 @@ UI/index.d.ts:4764
 
 控件的位置
 
-#### Inherited from
-
-PanelWidget.position
-
-#### Defined in
-
-UI/index.d.ts:4951
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Description`**
@@ -898,21 +694,13 @@ UI/index.d.ts:4951
 
 #### Parameters
 
-| Name              | Type                              | Description      |
-| :---------------- | :-------------------------------- | :--------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.position
-
-#### Defined in
-
-UI/index.d.ts:4945
 
 ---
 
@@ -934,14 +722,6 @@ UI/index.d.ts:4945
 
 返回渲染透明度
 
-#### Inherited from
-
-PanelWidget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4891
-
 • `set` **renderOpacity**(`InOpacity`): `void`
 
 **`Description`**
@@ -954,21 +734,13 @@ UI/index.d.ts:4891
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `InOpacity` | `number` | usage:透明度 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `InOpacity` | `number` | 透明度      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4885
 
 ---
 
@@ -990,14 +762,6 @@ UI/index.d.ts:4885
 
 返回渲染缩放
 
-#### Inherited from
-
-PanelWidget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4879
-
 • `set` **renderScale**(`scale`): `void`
 
 **`Description`**
@@ -1010,21 +774,13 @@ UI/index.d.ts:4879
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4873
 
 ---
 
@@ -1046,14 +802,6 @@ UI/index.d.ts:4873
 
 返回渲染错切形变
 
-#### Inherited from
-
-PanelWidget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4867
-
 • `set` **renderShear**(`shear`): `void`
 
 **`Description`**
@@ -1066,21 +814,13 @@ UI/index.d.ts:4867
 
 #### Parameters
 
-| Name    | Type                              | Description        |
-| :------ | :-------------------------------- | :----------------- |
-| `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
+| Name    | Type                              | Description  |
+| :------ | :-------------------------------- | :----------- |
+| `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4861
 
 ---
 
@@ -1102,14 +842,6 @@ UI/index.d.ts:4861
 
 返回渲染角度
 
-#### Inherited from
-
-PanelWidget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4843
-
 • `set` **renderTransformAngle**(`o`): `void`
 
 **`Description`**
@@ -1122,21 +854,13 @@ UI/index.d.ts:4843
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `o`  | `number` | usage:渲染角度 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `o`  | `number` | 渲染角度    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4837
 
 ---
 
@@ -1158,14 +882,6 @@ UI/index.d.ts:4837
 
 返回渲染锚点
 
-#### Inherited from
-
-PanelWidget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4855
-
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
 **`Description`**
@@ -1178,21 +894,13 @@ UI/index.d.ts:4855
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4849
 
 ---
 
@@ -1214,10 +922,6 @@ UI/index.d.ts:4849
 
 图片绘制类型
 
-#### Defined in
-
-UI/index.d.ts:1674
-
 • `set` **scrollAxisBrushDrawType**(`InDrawAs`): `void`
 
 **`Description`**
@@ -1230,17 +934,13 @@ UI/index.d.ts:1674
 
 #### Parameters
 
-| Name       | Type                                                         | Description        |
-| :--------- | :----------------------------------------------------------- | :----------------- |
-| `InDrawAs` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | usage:图片绘制类型 |
+| Name       | Type                                                         | Description  |
+| :--------- | :----------------------------------------------------------- | :----------- |
+| `InDrawAs` | [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) | 图片绘制类型 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1668
 
 ---
 
@@ -1262,10 +962,6 @@ UI/index.d.ts:1668
 
 滚动条图片 ID
 
-#### Defined in
-
-UI/index.d.ts:1656
-
 • `set` **scrollAxisBrushGuid**(`InGUID`): `void`
 
 **`Description`**
@@ -1278,17 +974,13 @@ UI/index.d.ts:1656
 
 #### Parameters
 
-| Name     | Type     | Description   |
-| :------- | :------- | :------------ |
-| `InGUID` | `string` | usage:图片 ID |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `InGUID` | `string` | 图片 ID     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1662
 
 ---
 
@@ -1310,10 +1002,6 @@ UI/index.d.ts:1662
 
 滚动条图片边距
 
-#### Defined in
-
-UI/index.d.ts:1694
-
 • `set` **scrollAxisBrushMargin**(`InMargin`): `void`
 
 **`Description`**
@@ -1326,17 +1014,13 @@ UI/index.d.ts:1694
 
 #### Parameters
 
-| Name       | Type                        | Description          |
-| :--------- | :-------------------------- | :------------------- |
-| `InMargin` | [`Margin`](UI.UI.Margin.md) | usage:滚动条图片边距 |
+| Name       | Type                        | Description    |
+| :--------- | :-------------------------- | :------------- |
+| `InMargin` | [`Margin`](UI.UI.Margin.md) | 滚动条图片边距 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1688
 
 ---
 
@@ -1358,10 +1042,6 @@ UI/index.d.ts:1688
 
 滚动条图片颜色，Type.LinearColor 类型，数据范围 0~1
 
-#### Defined in
-
-UI/index.d.ts:1706
-
 • `set` **scrollAxisColor**(`InColor`): `void`
 
 **`Description`**
@@ -1374,17 +1054,13 @@ UI/index.d.ts:1706
 
 #### Parameters
 
-| Name      | Type                                      | Description                                               |
-| :-------- | :---------------------------------------- | :-------------------------------------------------------- |
-| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:滚动条图片颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                         |
+| :-------- | :---------------------------------------- | :-------------------------------------------------- |
+| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | 滚动条图片颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1700
 
 ---
 
@@ -1406,10 +1082,6 @@ UI/index.d.ts:1700
 
 滚动条的显示于隐藏
 
-#### Defined in
-
-UI/index.d.ts:1504
-
 • `set` **scrollBarVisibility**(`inScrollBarVisibility`): `void`
 
 **`Description`**
@@ -1422,17 +1094,13 @@ UI/index.d.ts:1504
 
 #### Parameters
 
-| Name                    | Type                                                   | Description          |
-| :---------------------- | :----------------------------------------------------- | :------------------- |
-| `inScrollBarVisibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:滚动条是否可见 |
+| Name                    | Type                                                   | Description    |
+| :---------------------- | :----------------------------------------------------- | :------------- |
+| `inScrollBarVisibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 滚动条是否可见 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1498
 
 ---
 
@@ -1454,10 +1122,6 @@ UI/index.d.ts:1498
 
 滚动框偏移
 
-#### Defined in
-
-UI/index.d.ts:1564
-
 • `set` **scrollOffset**(`inScrollOffset`): `void`
 
 **`Description`**
@@ -1470,17 +1134,13 @@ UI/index.d.ts:1564
 
 #### Parameters
 
-| Name             | Type     | Description    |
-| :--------------- | :------- | :------------- |
-| `inScrollOffset` | `number` | usage:滚动偏移 |
+| Name             | Type     | Description |
+| :--------------- | :------- | :---------- |
+| `inScrollOffset` | `number` | 滚动偏移    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1558
 
 ---
 
@@ -1502,10 +1162,6 @@ UI/index.d.ts:1558
 
 滚动框偏移比例
 
-#### Defined in
-
-UI/index.d.ts:1576
-
 ---
 
 ### scrollOffsetOfEnd
@@ -1526,10 +1182,6 @@ UI/index.d.ts:1576
 
 滚动框偏移
 
-#### Defined in
-
-UI/index.d.ts:1570
-
 ---
 
 ### scrollWheelMultiplier
@@ -1548,17 +1200,13 @@ UI/index.d.ts:1570
 
 | Name                      | Type     | Description |
 | :------------------------ | :------- | :---------- |
-| `inScrollWheelMultiplier` | `number` | usage:系数  |
+| `inScrollWheelMultiplier` | `number` | 系数        |
 
 #### Returns
 
 `void`
 
 鼠标滚轮系数
-
-#### Defined in
-
-UI/index.d.ts:1547
 
 ---
 
@@ -1576,17 +1224,13 @@ UI/index.d.ts:1547
 
 #### Parameters
 
-| Name                 | Type                        | Description      |
-| :------------------- | :-------------------------- | :--------------- |
-| `inScrollbarPadding` | [`Margin`](UI.UI.Margin.md) | usage:滚动条边距 |
+| Name                 | Type                        | Description |
+| :------------------- | :-------------------------- | :---------- |
+| `inScrollbarPadding` | [`Margin`](UI.UI.Margin.md) | 滚动条边距  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1516
 
 ---
 
@@ -1604,17 +1248,13 @@ UI/index.d.ts:1516
 
 #### Parameters
 
-| Name                   | Type     | Description      |
-| :--------------------- | :------- | :--------------- |
-| `inScrollbarThickness` | `number` | usage:滚动条粗细 |
+| Name                   | Type     | Description |
+| :--------------------- | :------- | :---------- |
+| `inScrollbarThickness` | `number` | 滚动条粗细  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1510
 
 ---
 
@@ -1636,10 +1276,6 @@ UI/index.d.ts:1510
 
 阴影显示
 
-#### Defined in
-
-UI/index.d.ts:1650
-
 • `set` **shadowVisibility**(`inVisibility`): `void`
 
 **`Description`**
@@ -1652,19 +1288,15 @@ UI/index.d.ts:1650
 
 #### Parameters
 
-| Name           | Type                                                   | Description     |
-| :------------- | :----------------------------------------------------- | :-------------- |
-| `inVisibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage: 阴影显示 |
+| Name           | Type                                                   | Description |
+| :------------- | :----------------------------------------------------- | :---------- |
+| `inVisibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 阴影显示    |
 
 #### Returns
 
 `void`
 
 阴影显示
-
-#### Defined in
-
-UI/index.d.ts:1644
 
 ---
 
@@ -1686,14 +1318,6 @@ UI/index.d.ts:1644
 
 FVector2D
 
-#### Inherited from
-
-PanelWidget.size
-
-#### Defined in
-
-UI/index.d.ts:4963
-
 • `set` **size**(`inSize`): `void`
 
 **`Description`**
@@ -1706,21 +1330,13 @@ UI/index.d.ts:4963
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.size
-
-#### Defined in
-
-UI/index.d.ts:4957
 
 ---
 
@@ -1746,14 +1362,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
-#### Inherited from
-
-PanelWidget.slot
-
-#### Defined in
-
-UI/index.d.ts:4771
-
 ---
 
 ### smoothScrollingEnable
@@ -1770,17 +1378,13 @@ UI/index.d.ts:4771
 
 #### Parameters
 
-| Name                | Type      | Description                            |
-| :------------------ | :-------- | :------------------------------------- |
-| `isSmoothScrolling` | `boolean` | usage:鼠标滚动时，滚动速度是否插值运算 |
+| Name                | Type      | Description                      |
+| :------------------ | :-------- | :------------------------------- |
+| `isSmoothScrolling` | `boolean` | 鼠标滚动时，滚动速度是否插值运算 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:1540
 
 ---
 
@@ -1802,10 +1406,6 @@ UI/index.d.ts:1540
 
 是否支持惯性
 
-#### Defined in
-
-UI/index.d.ts:1630
-
 • `set` **supportElastic**(`inSupportElastic`): `void`
 
 **`Description`**
@@ -1820,17 +1420,13 @@ UI/index.d.ts:1630
 
 | Name               | Type      | Description |
 | :----------------- | :-------- | :---------- |
-| `inSupportElastic` | `boolean` | usage:惯性  |
+| `inSupportElastic` | `boolean` | 惯性        |
 
 #### Returns
 
 `void`
 
 是否支持惯性
-
-#### Defined in
-
-UI/index.d.ts:1637
 
 ---
 
@@ -1852,14 +1448,6 @@ UI/index.d.ts:1637
 
 返回最后一次用于驱动 Widget Tick 的几何信息
 
-#### Inherited from
-
-PanelWidget.tickSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4903
-
 ---
 
 ### transform
@@ -1880,14 +1468,6 @@ UI/index.d.ts:4903
 
 控件的大小和位置
 
-#### Inherited from
-
-PanelWidget.transform
-
-#### Defined in
-
-UI/index.d.ts:4927
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Description`**
@@ -1900,21 +1480,13 @@ UI/index.d.ts:4927
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.transform
-
-#### Defined in
-
-UI/index.d.ts:4921
 
 ---
 
@@ -1936,14 +1508,6 @@ UI/index.d.ts:4921
 
 返回可见性
 
-#### Inherited from
-
-PanelWidget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4795
-
 • `set` **visibility**(`Visibility`): `void`
 
 **`Description`**
@@ -1956,21 +1520,13 @@ UI/index.d.ts:4795
 
 #### Parameters
 
-| Name         | Type                                                   | Description  |
-| :----------- | :----------------------------------------------------- | :----------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
+| Name         | Type                                                   | Description |
+| :----------- | :----------------------------------------------------- | :---------- |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4789
 
 ---
 
@@ -1992,14 +1548,6 @@ UI/index.d.ts:4789
 
 boolean
 
-#### Inherited from
-
-PanelWidget.visible
-
-#### Defined in
-
-UI/index.d.ts:4801
-
 ---
 
 ### zOrder
@@ -2020,14 +1568,6 @@ UI/index.d.ts:4801
 
 zorder
 
-#### Inherited from
-
-PanelWidget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4975
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Description`**
@@ -2040,21 +1580,13 @@ UI/index.d.ts:4975
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-PanelWidget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4969
 
 ## Methods
 
@@ -2072,21 +1604,13 @@ UI/index.d.ts:4969
 
 #### Parameters
 
-| Name    | Type                        | Description  |
-| :------ | :-------------------------- | :----------- |
-| `child` | [`Widget`](UI.UI.Widget.md) | usage:子控件 |
+| Name    | Type                        | Description |
+| :------ | :-------------------------- | :---------- |
+| `child` | [`Widget`](UI.UI.Widget.md) | 子控件      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[addChild](UI.UI.PanelWidget.md#addchild)
-
-#### Defined in
-
-UI/index.d.ts:1135
 
 ---
 
@@ -2106,14 +1630,6 @@ UI/index.d.ts:1135
 
 `void`
 
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[destroyObject](UI.UI.PanelWidget.md#destroyobject)
-
-#### Defined in
-
-UI/index.d.ts:4751
-
 ---
 
 ### endInertialScrolling
@@ -2132,10 +1648,6 @@ UI/index.d.ts:4751
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:1552
-
 ---
 
 ### equal
@@ -2152,23 +1664,15 @@ UI/index.d.ts:1552
 
 #### Parameters
 
-| Name   | Type                        | Description                  |
-| :----- | :-------------------------- | :--------------------------- |
-| `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
+| Name   | Type                        | Description            |
+| :----- | :-------------------------- | :--------------------- |
+| `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[equal](UI.UI.PanelWidget.md#equal)
-
-#### Defined in
-
-UI/index.d.ts:4758
 
 ---
 
@@ -2186,23 +1690,15 @@ UI/index.d.ts:4758
 
 #### Parameters
 
-| Name     | Type     | Description    |
-| :------- | :------- | :------------- |
-| `inPath` | `string` | usage:查找路径 |
+| Name     | Type     | Description |
+| :------- | :------- | :---------- |
+| `inPath` | `string` | 查找路径    |
 
 #### Returns
 
 [`Widget`](UI.UI.Widget.md)
 
 找到的控件
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[findChildByPath](UI.UI.PanelWidget.md#findchildbypath)
-
-#### Defined in
-
-UI/index.d.ts:1115
 
 ---
 
@@ -2222,21 +1718,13 @@ UI/index.d.ts:1115
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:下标  |
+| `index` | `number` | 下标        |
 
 #### Returns
 
 [`Widget`](UI.UI.Widget.md)
 
 找到的控件
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[getChildAt](UI.UI.PanelWidget.md#getchildat)
-
-#### Defined in
-
-UI/index.d.ts:1129
 
 ---
 
@@ -2262,21 +1750,13 @@ UI/index.d.ts:1129
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `T`
 
 找到的控件
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[getChildByName](UI.UI.PanelWidget.md#getchildbyname)
-
-#### Defined in
-
-UI/index.d.ts:1122
 
 ---
 
@@ -2298,14 +1778,6 @@ UI/index.d.ts:1122
 
 子节点数量
 
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[getChildrenCount](UI.UI.PanelWidget.md#getchildrencount)
-
-#### Defined in
-
-UI/index.d.ts:1158
-
 ---
 
 ### invalidateLayoutAndVolatility
@@ -2323,14 +1795,6 @@ UI/index.d.ts:1158
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[invalidateLayoutAndVolatility](UI.UI.PanelWidget.md#invalidatelayoutandvolatility)
-
-#### Defined in
-
-UI/index.d.ts:4825
 
 ---
 
@@ -2350,14 +1814,6 @@ UI/index.d.ts:4825
 
 `void`
 
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[removeAllChildren](UI.UI.PanelWidget.md#removeallchildren)
-
-#### Defined in
-
-UI/index.d.ts:1152
-
 ---
 
 ### removeChild
@@ -2374,21 +1830,13 @@ UI/index.d.ts:1152
 
 #### Parameters
 
-| Name    | Type                        | Description            |
-| :------ | :-------------------------- | :--------------------- |
-| `child` | [`Widget`](UI.UI.Widget.md) | usage:需要移除的子控件 |
+| Name    | Type                        | Description      |
+| :------ | :-------------------------- | :--------------- |
+| `child` | [`Widget`](UI.UI.Widget.md) | 需要移除的子控件 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[removeChild](UI.UI.PanelWidget.md#removechild)
-
-#### Defined in
-
-UI/index.d.ts:1141
 
 ---
 
@@ -2408,19 +1856,11 @@ UI/index.d.ts:1141
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:下标  |
+| `index` | `number` | 下标        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[PanelWidget](UI.UI.PanelWidget.md).[removeChildAt](UI.UI.PanelWidget.md#removechildat)
-
-#### Defined in
-
-UI/index.d.ts:1147
 
 ---
 
@@ -2440,10 +1880,6 @@ UI/index.d.ts:1147
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:1586
-
 ---
 
 ### scrollToStart
@@ -2462,10 +1898,6 @@ UI/index.d.ts:1586
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:1581
-
 ---
 
 ### newObject
@@ -2482,17 +1914,13 @@ UI/index.d.ts:1581
 
 #### Parameters
 
-| Name      | Type                        | Description                                 |
-| :-------- | :-------------------------- | :------------------------------------------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的外 parent 对象 default:null |
-| `inName?` | `string`                    | usage:创建控件的名称 default:null           |
+| Name      | Type                        | Description                           |
+| :-------- | :-------------------------- | :------------------------------------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 parent 对象 default:null |
+| `inName?` | `string`                    | 创建控件的名称 default:null           |
 
 #### Returns
 
 [`ScrollBox`](UI.UI.ScrollBox.md)
 
 创建的对象
-
-#### Defined in
-
-UI/index.d.ts:1465

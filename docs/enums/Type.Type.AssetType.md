@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / AssetType
+[Type](../modules/Type.Type.md) / AssetType
 
-# Enumeration: AssetType
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).AssetType
+# AssetType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,15 +8,15 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [All](Type.Type.AssetType.md#all)
-- [Cloth](Type.Type.AssetType.md#cloth)
-- [Prefab](Type.Type.AssetType.md#prefab)
-- [SkeletalMesh](Type.Type.AssetType.md#skeletalmesh)
-- [SoundWave](Type.Type.AssetType.md#soundwave)
-- [StaticMesh](Type.Type.AssetType.md#staticmesh)
-- [Texture](Type.Type.AssetType.md#texture)
+| Enumeration Members                                                             |
+| :------------------------------------------------------------------------------ |
+| **[All](Type.Type.AssetType.md#all)** = `0` <br> All                            |
+| **[Cloth](Type.Type.AssetType.md#cloth)** = `3` <br> Cloth                      |
+| **[Prefab](Type.Type.AssetType.md#prefab)** = `6` <br> Prefab                   |
+| **[SkeletalMesh](Type.Type.AssetType.md#skeletalmesh)** = `2` <br> SkeletalMesh |
+| **[SoundWave](Type.Type.AssetType.md#soundwave)** = `4` <br> SoundWave          |
+| **[StaticMesh](Type.Type.AssetType.md#staticmesh)** = `1` <br> StaticMesh       |
+| **[Texture](Type.Type.AssetType.md#texture)** = `5` <br> Texture                |
 
 ## Enumeration Members
 
@@ -28,10 +26,6 @@
 
 All
 
-#### Defined in
-
-Type/index.d.ts:778
-
 ---
 
 ### Cloth
@@ -39,10 +33,6 @@ Type/index.d.ts:778
 • **Cloth** = `3`
 
 Cloth
-
-#### Defined in
-
-Type/index.d.ts:784
 
 ---
 
@@ -52,10 +42,6 @@ Type/index.d.ts:784
 
 Prefab
 
-#### Defined in
-
-Type/index.d.ts:790
-
 ---
 
 ### SkeletalMesh
@@ -63,10 +49,6 @@ Type/index.d.ts:790
 • **SkeletalMesh** = `2`
 
 SkeletalMesh
-
-#### Defined in
-
-Type/index.d.ts:782
 
 ---
 
@@ -76,10 +58,6 @@ Type/index.d.ts:782
 
 SoundWave
 
-#### Defined in
-
-Type/index.d.ts:786
-
 ---
 
 ### StaticMesh
@@ -88,10 +66,6 @@ Type/index.d.ts:786
 
 StaticMesh
 
-#### Defined in
-
-Type/index.d.ts:780
-
 ---
 
 ### Texture
@@ -99,7 +73,3 @@ Type/index.d.ts:780
 • **Texture** = `5`
 
 Texture
-
-#### Defined in
-
-Type/index.d.ts:788

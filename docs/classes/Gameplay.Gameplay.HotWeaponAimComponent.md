@@ -1,52 +1,32 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimComponent
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimComponent
 
-# Class: HotWeaponAimComponent
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponAimComponent
+# HotWeaponAimComponent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 热武器瞄准组件
 
-**`Network Status`**
-
-usage: 双端
-
-**`Author`**
-
-jun.zhang
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[onAimEndClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端结束瞄准代理       |
+| **[onAimEndServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端结束瞄准代理     |
+| **[onAimStartClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始瞄准代理   |
+| **[onAimStartServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理 |
 
-- [constructor](Gameplay.Gameplay.HotWeaponAimComponent.md#constructor)
+| Accessors                                                                                                                                                                                       |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[aimMode](Gameplay.Gameplay.HotWeaponAimComponent.md#aimmode)**(): [`HotWeaponAimMode`](../enums/Gameplay.Gameplay.HotWeaponAimMode.md) <br> Get 瞄准时的第一/第三人称模式                    |
+| **[aimingZoom](Gameplay.Gameplay.HotWeaponAimComponent.md#aimingzoom)**(): `number` <br> Get 第一人称瞄准时的瞄准镜放大倍数                                                                     |
+| **[cameraOffsetDistanceInThirdPersonMode](Gameplay.Gameplay.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number` <br> Get 第三人称瞄准时的连接相机弹簧组件的长度       |
+| **[defaultCameraSpringArmLength](Gameplay.Gameplay.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number` <br> Get 第三人称常态下相机弹簧组件的默认长度                           |
+| **[scopeTypeIndex](Gameplay.Gameplay.HotWeaponAimComponent.md#scopetypeindex)**(): [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md) <br> Get 模拟瞄准镜 UI 种类 |
 
-### Properties
-
-- [onAimEndClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendclient)
-- [onAimEndServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimendserver)
-- [onAimStartClient](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartclient)
-- [onAimStartServer](Gameplay.Gameplay.HotWeaponAimComponent.md#onaimstartserver)
-
-### Accessors
-
-- [aimMode](Gameplay.Gameplay.HotWeaponAimComponent.md#aimmode)
-- [aimingZoom](Gameplay.Gameplay.HotWeaponAimComponent.md#aimingzoom)
-- [cameraOffsetDistanceInThirdPersonMode](Gameplay.Gameplay.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)
-- [defaultCameraSpringArmLength](Gameplay.Gameplay.HotWeaponAimComponent.md#defaultcameraspringarmlength)
-- [scopeTypeIndex](Gameplay.Gameplay.HotWeaponAimComponent.md#scopetypeindex)
-
-### Methods
-
-- [bindOpenAimComponentDelegates](Gameplay.Gameplay.HotWeaponAimComponent.md#bindopenaimcomponentdelegates)
-- [enableAiming](Gameplay.Gameplay.HotWeaponAimComponent.md#enableaiming)
-
-## Constructors
-
-### constructor
-
-• **new HotWeaponAimComponent**()
+| Methods                                                                                                                                       |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[bindOpenAimComponentDelegates](Gameplay.Gameplay.HotWeaponAimComponent.md#bindopenaimcomponentdelegates)**(): `void` <br> 绑定瞄准组件代理 |
+| **[enableAiming](Gameplay.Gameplay.HotWeaponAimComponent.md#enableaiming)**(`boolean`): `void` <br> 打开/关闭瞄准                             |
 
 ## Properties
 
@@ -58,10 +38,6 @@ jun.zhang
 
 客户端结束瞄准代理
 
-#### Defined in
-
-Gameplay/index.d.ts:11408
-
 ---
 
 ### onAimEndServer
@@ -71,10 +47,6 @@ Gameplay/index.d.ts:11408
 **`Description`**
 
 服务器端结束瞄准代理
-
-#### Defined in
-
-Gameplay/index.d.ts:11404
 
 ---
 
@@ -86,10 +58,6 @@ Gameplay/index.d.ts:11404
 
 客户端开始瞄准代理
 
-#### Defined in
-
-Gameplay/index.d.ts:11400
-
 ---
 
 ### onAimStartServer
@@ -99,10 +67,6 @@ Gameplay/index.d.ts:11400
 **`Description`**
 
 服务器端开始瞄准代理
-
-#### Defined in
-
-Gameplay/index.d.ts:11396
 
 ## Accessors
 
@@ -124,10 +88,6 @@ Get 瞄准时的第一/第三人称模式
 
 当前瞄准时的第一/第三人称模式
 
-#### Defined in
-
-Gameplay/index.d.ts:11435
-
 • `set` **aimMode**(`NewAimMode`): `void`
 
 **`Description`**
@@ -140,17 +100,13 @@ Set 瞄准时的第一/第三人称模式
 
 #### Parameters
 
-| Name         | Type                                                                 | Description                      |
-| :----------- | :------------------------------------------------------------------- | :------------------------------- |
-| `NewAimMode` | [`HotWeaponAimMode`](../enums/Gameplay.Gameplay.HotWeaponAimMode.md) | usage: 新设置的瞄准模式 default: |
+| Name         | Type                                                                 | Description               |
+| :----------- | :------------------------------------------------------------------- | :------------------------ |
+| `NewAimMode` | [`HotWeaponAimMode`](../enums/Gameplay.Gameplay.HotWeaponAimMode.md) | 新设置的瞄准模式 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11429
 
 ---
 
@@ -176,10 +132,6 @@ Get 第一人称瞄准时的瞄准镜放大倍数
 
 当前第一人称瞄准时的瞄准镜放大倍数
 
-#### Defined in
-
-Gameplay/index.d.ts:11461
-
 • `set` **aimingZoom**(`newAimingZoom`): `void`
 
 **`Description`**
@@ -196,17 +148,13 @@ Set 模拟瞄准时的瞄准镜放大倍数
 
 #### Parameters
 
-| Name            | Type     | Description                            |
-| :-------------- | :------- | :------------------------------------- |
-| `newAimingZoom` | `number` | usage: 新设置的瞄准镜放大倍数 default: |
+| Name            | Type     | Description                     |
+| :-------------- | :------- | :------------------------------ |
+| `newAimingZoom` | `number` | 新设置的瞄准镜放大倍数 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11454
 
 ---
 
@@ -228,10 +176,6 @@ Get 第三人称瞄准时的连接相机弹簧组件的长度
 
 当前连接相机弹簧组件的长度
 
-#### Defined in
-
-Gameplay/index.d.ts:11474
-
 • `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void`
 
 **`Description`**
@@ -248,17 +192,13 @@ Set 第三人称瞄准时的连接相机弹簧组件的长度
 
 #### Parameters
 
-| Name                      | Type     | Description                                    |
-| :------------------------ | :------- | :--------------------------------------------- |
-| `NewCameraOffsetDistance` | `number` | usage: 新设置的连接相机弹簧组件的长度 default: |
+| Name                      | Type     | Description                             |
+| :------------------------ | :------- | :-------------------------------------- |
+| `NewCameraOffsetDistance` | `number` | 新设置的连接相机弹簧组件的长度 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11468
 
 ---
 
@@ -280,10 +220,6 @@ Get 第三人称常态下相机弹簧组件的默认长度
 
 第三人称常态下相机弹簧组件的默认长度
 
-#### Defined in
-
-Gameplay/index.d.ts:11487
-
 • `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void`
 
 **`Description`**
@@ -300,17 +236,13 @@ Set 第三人称常态下相机弹簧组件的默认长度
 
 #### Parameters
 
-| Name                 | Type     | Description                                        |
-| :------------------- | :------- | :------------------------------------------------- |
-| `NewCameraArmLength` | `number` | usage: 新设置的连接相机弹簧组件的默认长度 default: |
+| Name                 | Type     | Description                                 |
+| :------------------- | :------- | :------------------------------------------ |
+| `NewCameraArmLength` | `number` | 新设置的连接相机弹簧组件的默认长度 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11481
 
 ---
 
@@ -332,10 +264,6 @@ Get 模拟瞄准镜 UI 种类
 
 当前瞄准镜 UI 种类
 
-#### Defined in
-
-Gameplay/index.d.ts:11447
-
 • `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void`
 
 **`Description`**
@@ -348,17 +276,13 @@ Set 模拟瞄准镜 UI 种类
 
 #### Parameters
 
-| Name                | Type                                                                             | Description                        |
-| :------------------ | :------------------------------------------------------------------------------- | :--------------------------------- |
-| `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md) | usage: 新的瞄准镜 UI 种类 default: |
+| Name                | Type                                                                             | Description                 |
+| :------------------ | :------------------------------------------------------------------------------- | :-------------------------- |
+| `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/Gameplay.Gameplay.HotWeaponCrossHairType.md) | 新的瞄准镜 UI 种类 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11441
 
 ## Methods
 
@@ -377,10 +301,6 @@ Gameplay/index.d.ts:11441
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11413
 
 ---
 
@@ -403,14 +323,10 @@ Gameplay/index.d.ts:11413
 
 #### Parameters
 
-| Name          | Type      | Description                      |
-| :------------ | :-------- | :------------------------------- |
-| `NewAimState` | `boolean` | usage: 是否开启瞄准功能 default: |
+| Name          | Type      | Description               |
+| :------------ | :-------- | :------------------------ |
+| `NewAimState` | `boolean` | 是否开启瞄准功能 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11423

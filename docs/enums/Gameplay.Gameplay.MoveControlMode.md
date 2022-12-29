@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / MoveControlMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / MoveControlMode
 
-# Enumeration: MoveControlMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).MoveControlMode
+# MoveControlMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FaceMode](Gameplay.Gameplay.MoveControlMode.md#facemode)
-- [FixedMode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)
-- [FollowMode](Gameplay.Gameplay.MoveControlMode.md#followmode)
-- [FreeMode](Gameplay.Gameplay.MoveControlMode.md#freemode)
-- [null](Gameplay.Gameplay.MoveControlMode.md#null)
+| Enumeration Members                                                                   |
+| :------------------------------------------------------------------------------------ |
+| **[FaceMode](Gameplay.Gameplay.MoveControlMode.md#facemode)** = `2` <br> 面向模式     |
+| **[FixedMode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)** = `1` <br> 固定模式   |
+| **[FollowMode](Gameplay.Gameplay.MoveControlMode.md#followmode)** = `3` <br> 运动模式 |
+| **[FreeMode](Gameplay.Gameplay.MoveControlMode.md#freemode)** = `4` <br> 自由模式     |
+| **[null](Gameplay.Gameplay.MoveControlMode.md#null)** = `0` <br> 空                   |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 面向模式
 
-#### Defined in
-
-Gameplay/index.d.ts:1705
-
 ---
 
 ### FixedMode
@@ -37,10 +31,6 @@ Gameplay/index.d.ts:1705
 • **FixedMode** = `1`
 
 固定模式
-
-#### Defined in
-
-Gameplay/index.d.ts:1703
 
 ---
 
@@ -50,10 +40,6 @@ Gameplay/index.d.ts:1703
 
 运动模式
 
-#### Defined in
-
-Gameplay/index.d.ts:1707
-
 ---
 
 ### FreeMode
@@ -62,10 +48,6 @@ Gameplay/index.d.ts:1707
 
 自由模式
 
-#### Defined in
-
-Gameplay/index.d.ts:1709
-
 ---
 
 ### null
@@ -73,7 +55,3 @@ Gameplay/index.d.ts:1709
 • **null** = `0`
 
 空
-
-#### Defined in
-
-Gameplay/index.d.ts:1701

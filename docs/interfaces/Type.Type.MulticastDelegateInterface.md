@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / MulticastDelegateInterface
+[Type](../modules/Type.Type.md) / MulticastDelegateInterface
 
-# Interface: MulticastDelegateInterface<T\>
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).MulticastDelegateInterface
-
-**`Author`**
-
-xiangkun.sun
+# MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" />
 
 **`Description`**
 
@@ -28,11 +22,11 @@ xiangkun.sun
 
 ## Table of contents
 
-### Methods
-
-- [add](Type.Type.MulticastDelegateInterface.md#add)
-- [broadcast](Type.Type.MulticastDelegateInterface.md#broadcast)
-- [remove](Type.Type.MulticastDelegateInterface.md#remove)
+| Methods                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.MulticastDelegateInterface.md#add)**(`T`): `void` <br> 绑定代理函数                                |
+| **[broadcast](Type.Type.MulticastDelegateInterface.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数 |
+| **[remove](Type.Type.MulticastDelegateInterface.md#remove)**(`T`): `void` <br> 删除代理函数                          |
 
 ## Methods
 
@@ -50,17 +44,13 @@ xiangkun.sun
 
 #### Parameters
 
-| Name   | Type | Description               |
-| :----- | :--- | :------------------------ |
-| `func` | `T`  | usage: 绑定的函数 default |
+| Name   | Type | Description        |
+| :----- | :--- | :----------------- |
+| `func` | `T`  | 绑定的函数 default |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:90
 
 ---
 
@@ -80,15 +70,11 @@ Type/index.d.ts:90
 
 | Name     | Type               | Description |
 | :------- | :----------------- | :---------- |
-| `...arg` | `Parameters`<`T`\> | usage: 参数 |
+| `...arg` | `Parameters`<`T`\> | 参数        |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:102
 
 ---
 
@@ -106,14 +92,10 @@ Type/index.d.ts:102
 
 #### Parameters
 
-| Name   | Type | Description                   |
-| :----- | :--- | :---------------------------- |
-| `func` | `T`  | usage: 删除绑定的函数 default |
+| Name   | Type | Description            |
+| :----- | :--- | :--------------------- |
+| `func` | `T`  | 删除绑定的函数 default |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:96

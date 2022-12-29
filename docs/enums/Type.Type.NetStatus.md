@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / NetStatus
+[Type](../modules/Type.Type.md) / NetStatus
 
-# Enumeration: NetStatus
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).NetStatus
+# NetStatus <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Client](Type.Type.NetStatus.md#client)
-- [Server](Type.Type.NetStatus.md#server)
-- [ServerAndClient](Type.Type.NetStatus.md#serverandclient)
+| Enumeration Members                                                                               |
+| :------------------------------------------------------------------------------------------------ |
+| **[Client](Type.Type.NetStatus.md#client)** = `1` <br> 客户端                                     |
+| **[Server](Type.Type.NetStatus.md#server)** = `0` <br> 服务端                                     |
+| **[ServerAndClient](Type.Type.NetStatus.md#serverandclient)** = `2` <br> 服务器创建，同步到客户端 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 客户端
 
-#### Defined in
-
-Type/index.d.ts:249
-
 ---
 
 ### Server
@@ -36,10 +30,6 @@ Type/index.d.ts:249
 
 服务端
 
-#### Defined in
-
-Type/index.d.ts:245
-
 ---
 
 ### ServerAndClient
@@ -47,7 +37,3 @@ Type/index.d.ts:245
 • **ServerAndClient** = `2`
 
 服务器创建，同步到客户端
-
-#### Defined in
-
-Type/index.d.ts:253

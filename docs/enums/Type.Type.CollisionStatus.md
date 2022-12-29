@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / CollisionStatus
+[Type](../modules/Type.Type.md) / CollisionStatus
 
-# Enumeration: CollisionStatus
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).CollisionStatus
+# CollisionStatus <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FromParent](Type.Type.CollisionStatus.md#fromparent)
-- [Off](Type.Type.CollisionStatus.md#off)
-- [On](Type.Type.CollisionStatus.md#on)
-- [QueryOnly](Type.Type.CollisionStatus.md#queryonly)
+| Enumeration Members                                                             |
+| :------------------------------------------------------------------------------ |
+| **[FromParent](Type.Type.CollisionStatus.md#fromparent)** = `0` <br> 跟随父节点 |
+| **[Off](Type.Type.CollisionStatus.md#off)** = `2` <br> 关                       |
+| **[On](Type.Type.CollisionStatus.md#on)** = `1` <br> 开                         |
+| **[QueryOnly](Type.Type.CollisionStatus.md#queryonly)** = `3` <br> 关           |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 跟随父节点
 
-#### Defined in
-
-Type/index.d.ts:224
-
 ---
 
 ### Off
@@ -36,10 +30,6 @@ Type/index.d.ts:224
 • **Off** = `2`
 
 关
-
-#### Defined in
-
-Type/index.d.ts:232
 
 ---
 
@@ -49,10 +39,6 @@ Type/index.d.ts:232
 
 开
 
-#### Defined in
-
-Type/index.d.ts:228
-
 ---
 
 ### QueryOnly
@@ -60,7 +46,3 @@ Type/index.d.ts:228
 • **QueryOnly** = `3`
 
 关
-
-#### Defined in
-
-Type/index.d.ts:236

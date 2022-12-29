@@ -9,7 +9,7 @@
     "docker:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "tscc": "tsc ./utils/index.ts && node ./utils/index.js",
-    "prettier:fix": "prettier --write docs/**"
+    "prettier:fix": "prettier --write docs/** --ignore-path .gitignore"
   },
   "license": "MIT",
   "devDependencies": {

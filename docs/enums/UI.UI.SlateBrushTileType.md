@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / SlateBrushTileType
+[UI](../modules/UI.UI.md) / SlateBrushTileType
 
-# Enumeration: SlateBrushTileType
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).SlateBrushTileType
+# SlateBrushTileType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Both](UI.UI.SlateBrushTileType.md#both)
-- [Horizontal](UI.UI.SlateBrushTileType.md#horizontal)
-- [NoTile](UI.UI.SlateBrushTileType.md#notile)
-- [Vertical](UI.UI.SlateBrushTileType.md#vertical)
+| Enumeration Members                                                          |
+| :--------------------------------------------------------------------------- |
+| **[Both](UI.UI.SlateBrushTileType.md#both)** = `3` <br> 水平垂直平铺         |
+| **[Horizontal](UI.UI.SlateBrushTileType.md#horizontal)** = `1` <br> 水平平铺 |
+| **[NoTile](UI.UI.SlateBrushTileType.md#notile)** = `0` <br> 拉伸             |
+| **[Vertical](UI.UI.SlateBrushTileType.md#vertical)** = `2` <br> 垂直平铺     |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 水平垂直平铺
 
-#### Defined in
-
-UI/index.d.ts:3674
-
 ---
 
 ### Horizontal
@@ -36,10 +30,6 @@ UI/index.d.ts:3674
 • **Horizontal** = `1`
 
 水平平铺
-
-#### Defined in
-
-UI/index.d.ts:3670
 
 ---
 
@@ -49,10 +39,6 @@ UI/index.d.ts:3670
 
 拉伸
 
-#### Defined in
-
-UI/index.d.ts:3668
-
 ---
 
 ### Vertical
@@ -60,7 +46,3 @@ UI/index.d.ts:3668
 • **Vertical** = `2`
 
 垂直平铺
-
-#### Defined in
-
-UI/index.d.ts:3672

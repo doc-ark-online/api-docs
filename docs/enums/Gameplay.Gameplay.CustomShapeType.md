@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CustomShapeType
+[Gameplay](../modules/Gameplay.Gameplay.md) / CustomShapeType
 
-# Enumeration: CustomShapeType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CustomShapeType
+# CustomShapeType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Box](Gameplay.Gameplay.CustomShapeType.md#box)
-- [HorizontalCapsule](Gameplay.Gameplay.CustomShapeType.md#horizontalcapsule)
-- [Sphere](Gameplay.Gameplay.CustomShapeType.md#sphere)
-- [VerticalCapsule](Gameplay.Gameplay.CustomShapeType.md#verticalcapsule)
+| Enumeration Members                                                                                   |
+| :---------------------------------------------------------------------------------------------------- |
+| **[Box](Gameplay.Gameplay.CustomShapeType.md#box)** = `2` <br> 盒形                                   |
+| **[HorizontalCapsule](Gameplay.Gameplay.CustomShapeType.md#horizontalcapsule)** = `1` <br> 水平胶囊体 |
+| **[Sphere](Gameplay.Gameplay.CustomShapeType.md#sphere)** = `3` <br> 球形                             |
+| **[VerticalCapsule](Gameplay.Gameplay.CustomShapeType.md#verticalcapsule)** = `0` <br> 竖直的胶囊体   |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 盒形
 
-#### Defined in
-
-Gameplay/index.d.ts:1908
-
 ---
 
 ### HorizontalCapsule
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:1908
 • **HorizontalCapsule** = `1`
 
 水平胶囊体
-
-#### Defined in
-
-Gameplay/index.d.ts:1906
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:1906
 
 球形
 
-#### Defined in
-
-Gameplay/index.d.ts:1910
-
 ---
 
 ### VerticalCapsule
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:1910
 • **VerticalCapsule** = `0`
 
 竖直的胶囊体
-
-#### Defined in
-
-Gameplay/index.d.ts:1904

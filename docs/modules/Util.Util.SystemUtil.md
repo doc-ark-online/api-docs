@@ -1,32 +1,30 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](Util.md) / [Util](Util.Util.md) / SystemUtil
+[Util](Util.Util.md) / SystemUtil
 
-# Namespace: SystemUtil
-
-[Util](Util.md).[Util](Util.Util.md).SystemUtil
+# SystemUtil <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
-### Variables
+| Variables                                                                                            |
+| :--------------------------------------------------------------------------------------------------- |
+| **[currentPlatform](Util.Util.SystemUtil.md#currentplatform)**: `string` <br> 判定当前程序的运行平台 |
+| **[isPIE](Util.Util.SystemUtil.md#ispie)**: `boolean` <br> 判定当前程序的运行环境是否为 PIE          |
 
-- [currentPlatform](Util.Util.SystemUtil.md#currentplatform)
-- [isPIE](Util.Util.SystemUtil.md#ispie)
-
-### Functions
-
-- [getCurrentEnv](Util.Util.SystemUtil.md#getcurrentenv)
-- [getDefaultGraphicsCPULevel](Util.Util.SystemUtil.md#getdefaultgraphicscpulevel)
-- [getDefaultGraphicsGPULevel](Util.Util.SystemUtil.md#getdefaultgraphicsgpulevel)
-- [getEditorVersion](Util.Util.SystemUtil.md#geteditorversion)
-- [getFullEditorVersion](Util.Util.SystemUtil.md#getfulleditorversion)
-- [getGameId](Util.Util.SystemUtil.md#getgameid)
-- [getGraphicsCPULevel](Util.Util.SystemUtil.md#getgraphicscpulevel)
-- [getGraphicsGPULevel](Util.Util.SystemUtil.md#getgraphicsgpulevel)
-- [getVersion](Util.Util.SystemUtil.md#getversion)
-- [isClient](Util.Util.SystemUtil.md#isclient)
-- [isMobile](Util.Util.SystemUtil.md#ismobile)
-- [isServer](Util.Util.SystemUtil.md#isserver)
-- [setGraphicsCPULevel](Util.Util.SystemUtil.md#setgraphicscpulevel)
-- [setGraphicsGPULevel](Util.Util.SystemUtil.md#setgraphicsgpulevel)
+| Functions                                                                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[getCurrentEnv](Util.Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境                                                                                  |
+| **[getDefaultGraphicsCPULevel](Util.Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认 CPU 画质等级 |
+| **[getDefaultGraphicsGPULevel](Util.Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认 GPU 画质等级 |
+| **[getEditorVersion](Util.Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号                                                                        |
+| **[getFullEditorVersion](Util.Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号                                                            |
+| **[getGameId](Util.Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏 GameId                                                                                   |
+| **[getGraphicsCPULevel](Util.Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前 CPU 画质等级               |
+| **[getGraphicsGPULevel](Util.Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前 GPU 画质等级               |
+| **[getVersion](Util.Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本                                                                                    |
+| **[isClient](Util.Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行                                                                                         |
+| **[isMobile](Util.Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端                                                                                   |
+| **[isServer](Util.Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行                                                                                         |
+| **[setGraphicsCPULevel](Util.Util.SystemUtil.md#setgraphicscpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前 CPU 画质等级         |
+| **[setGraphicsGPULevel](Util.Util.SystemUtil.md#setgraphicsgpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前 GPU 画质等级         |
 
 ## Variables
 
@@ -42,10 +40,6 @@
 
 调用端生效
 
-#### Defined in
-
-Util/index.d.ts:623
-
 ---
 
 ### isPIE
@@ -59,10 +53,6 @@ Util/index.d.ts:623
 **`Effect`**
 
 调用端生效
-
-#### Defined in
-
-Util/index.d.ts:618
 
 ## Functions
 
@@ -84,10 +74,6 @@ Util/index.d.ts:618
 
 当前环境
 
-#### Defined in
-
-Util/index.d.ts:635
-
 ---
 
 ### getDefaultGraphicsCPULevel
@@ -107,10 +93,6 @@ Util/index.d.ts:635
 [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 默认画质等级
-
-#### Defined in
-
-Util/index.d.ts:665
 
 ---
 
@@ -132,10 +114,6 @@ Util/index.d.ts:665
 
 默认画质等级
 
-#### Defined in
-
-Util/index.d.ts:671
-
 ---
 
 ### getEditorVersion
@@ -155,10 +133,6 @@ Util/index.d.ts:671
 `string`
 
 当前编辑器版本号
-
-#### Defined in
-
-Util/index.d.ts:647
 
 ---
 
@@ -180,10 +154,6 @@ Util/index.d.ts:647
 
 当前完整编辑器版本号
 
-#### Defined in
-
-Util/index.d.ts:641
-
 ---
 
 ### getGameId
@@ -203,10 +173,6 @@ Util/index.d.ts:641
 `string`
 
 当前游戏 GameId
-
-#### Defined in
-
-Util/index.d.ts:689
 
 ---
 
@@ -228,10 +194,6 @@ Util/index.d.ts:689
 
 画质等级
 
-#### Defined in
-
-Util/index.d.ts:653
-
 ---
 
 ### getGraphicsGPULevel
@@ -251,10 +213,6 @@ Util/index.d.ts:653
 [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)
 
 画质等级
-
-#### Defined in
-
-Util/index.d.ts:659
 
 ---
 
@@ -276,10 +234,6 @@ Util/index.d.ts:659
 
 当前游戏版本
 
-#### Defined in
-
-Util/index.d.ts:695
-
 ---
 
 ### isClient
@@ -299,10 +253,6 @@ Util/index.d.ts:695
 `boolean`
 
 是否客户端运行
-
-#### Defined in
-
-Util/index.d.ts:607
 
 ---
 
@@ -324,10 +274,6 @@ Util/index.d.ts:607
 
 是否是移动端
 
-#### Defined in
-
-Util/index.d.ts:629
-
 ---
 
 ### isServer
@@ -348,10 +294,6 @@ Util/index.d.ts:629
 
 是否服务器运行
 
-#### Defined in
-
-Util/index.d.ts:613
-
 ---
 
 ### setGraphicsCPULevel
@@ -368,17 +310,13 @@ Util/index.d.ts:613
 
 #### Parameters
 
-| Name       | Type                                                   | Description        |
-| :--------- | :----------------------------------------------------- | :----------------- |
-| `CPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | usage:CPU 画质等级 |
+| Name       | Type                                                   | Description  |
+| :--------- | :----------------------------------------------------- | :----------- |
+| `CPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | CPU 画质等级 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Util/index.d.ts:677
 
 ---
 
@@ -396,14 +334,10 @@ Util/index.d.ts:677
 
 #### Parameters
 
-| Name       | Type                                                   | Description        |
-| :--------- | :----------------------------------------------------- | :----------------- |
-| `GPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | usage:GPU 画质等级 |
+| Name       | Type                                                   | Description  |
+| :--------- | :----------------------------------------------------- | :----------- |
+| `GPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | GPU 画质等级 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Util/index.d.ts:683

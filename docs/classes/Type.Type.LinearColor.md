@@ -1,63 +1,43 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / LinearColor
+[Type](../modules/Type.Type.md) / LinearColor
 
-# Class: LinearColor
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).LinearColor
-
-**`Author`**
-
-SuoWei
+# LinearColor <Badge type="tip" text="Class" />
 
 **`Description`**
 
 线性 RGBA 颜色
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------------ |
+| **[a](Type.Type.LinearColor.md#a)**(): `number` <br> 获取当前 LinearColor 的 a 值                                   |
+| **[b](Type.Type.LinearColor.md#b)**(): `num[b](Type.Type.LinearColor.md#b)er` <br> 获取当前 LinearColor 的 b 值     |
+| **[g](Type.Type.LinearColor.md#g)**(): `number` <br> 获取当前 LinearColor 的 g 值                                   |
+| **[r](Type.Type.LinearColor.md#r)**(): `numbe[r](Type.Type.LinearColor.md#r)` <br> 获取当前 LinearColor 的 r 值     |
+| **[black](Type.Type.LinearColor.md#black)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 黑色 (0, 0, 0, 1)     |
+| **[blue](Type.Type.LinearColor.md#blue)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 蓝色 (0, 0, 1, 1)       |
+| **[gray](Type.Type.LinearColor.md#gray)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 灰色 (0.5, 0.5, 0.5, 1) |
+| **[green](Type.Type.LinearColor.md#green)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 绿色 (0, 1, 0, 1)     |
+| **[red](Type.Type.LinearColor.md#red)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 红色 (1, 0, 0, 1)         |
+| **[white](Type.Type.LinearColor.md#white)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 白色 (1, 1, 1, 1)     |
+| **[yellow](Type.Type.LinearColor.md#yellow)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 黄色 (1, 1, 0, 1)   |
 
-- [constructor](Type.Type.LinearColor.md#constructor)
-
-### Accessors
-
-- [a](Type.Type.LinearColor.md#a)
-- [b](Type.Type.LinearColor.md#b)
-- [g](Type.Type.LinearColor.md#g)
-- [r](Type.Type.LinearColor.md#r)
-- [black](Type.Type.LinearColor.md#black)
-- [blue](Type.Type.LinearColor.md#blue)
-- [gray](Type.Type.LinearColor.md#gray)
-- [green](Type.Type.LinearColor.md#green)
-- [red](Type.Type.LinearColor.md#red)
-- [white](Type.Type.LinearColor.md#white)
-- [yellow](Type.Type.LinearColor.md#yellow)
-
-### Methods
-
-- [addition](Type.Type.LinearColor.md#addition)
-- [division](Type.Type.LinearColor.md#division)
-- [equality](Type.Type.LinearColor.md#equality)
-- [fromString](Type.Type.LinearColor.md#fromstring)
-- [inequality](Type.Type.LinearColor.md#inequality)
-- [multiply](Type.Type.LinearColor.md#multiply)
-- [subtraction](Type.Type.LinearColor.md#subtraction)
-- [toString](Type.Type.LinearColor.md#tostring)
-- [colorHexToLinearColor](Type.Type.LinearColor.md#colorhextolinearcolor)
-- [colorHsvToLinearColor](Type.Type.LinearColor.md#colorhsvtolinearcolor)
-- [colorToLinearColor](Type.Type.LinearColor.md#colortolinearcolor)
-- [fromString](Type.Type.LinearColor.md#fromstring-1)
-- [makeFromHSV](Type.Type.LinearColor.md#makefromhsv)
-- [random](Type.Type.LinearColor.md#random)
-
-## Constructors
-
-### constructor
-
-• **new LinearColor**(`r`, `g`, `b`)
+| Methods                                                                                                                                                                                                                             |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addition](Type.Type.LinearColor.md#addition)**([`LinearColor`](Type.Type.LinearColor.md), [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色值相加                                  |
+| **[division](Type.Type.LinearColor.md#division)**([`LinearColor`](Type.Type.LinearColor.md), [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色值相除                                  |
+| **[equality](Type.Type.LinearColor.md#equality)**([`LinearColor`](Type.Type.LinearColor.md), `number`): `boolean` <br> 判断两个颜色值是否相等                                                                                       |
+| **[fromString](Type.Type.LinearColor.md#fromstring)**(`string`): [`LinearColor`](Type.Type.LinearColor.md) <br> 用数据生成一个新的对象                                                                                              |
+| **[inequality](Type.Type.LinearColor.md#inequality)**([`LinearColor`](Type.Type.LinearColor.md), `number`): `boolean` <br> 判断两个颜色值是否不相等                                                                                 |
+| **[multiply](Type.Type.LinearColor.md#multiply)**([`LinearColor`](Type.Type.LinearColor.md), [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色值相乘                                  |
+| **[subtraction](Type.Type.LinearColor.md#subtraction)**([`LinearColor`](Type.Type.LinearColor.md), [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色值相减                            |
+| **[toString](Type.Type.LinearColor.md#tostring)**(): `string` <br> 以字符串的形式输出对象属性                                                                                                                                       |
+| **[colorHexToLinearColor](Type.Type.LinearColor.md#colorhextolinearcolor)**(`string`, [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 将 HexColor 转化为 LinearColor                     |
+| **[colorHsvToLinearColor](Type.Type.LinearColor.md#colorhsvtolinearcolor)**(`number`, `number`, `number`, [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 将 HsvColor 转化为 LinearColor |
+| **[colorToLinearColor](Type.Type.LinearColor.md#colortolinearcolor)**(`number`, `number`, `number`, `number`, [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 转换 Color                 |
+| **[fromString](Type.Type.LinearColor.md#fromstring-1)**(`string`): [`LinearColor`](Type.Type.LinearColor.md) <br> 用数据生成一个新的对象                                                                                            |
+| **[makeFromHSV](Type.Type.LinearColor.md#makefromhsv)**(`number`, `number`, `number`, [`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 将字节色调饱和度亮度转换为 LinearColor             |
+| **[random](Type.Type.LinearColor.md#random)**([`LinearColor`](Type.Type.LinearColor.md)): [`LinearColor`](Type.Type.LinearColor.md) <br> 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色                                                |
 
 **`Description`**
 
@@ -67,13 +47,9 @@ usage:双端
 
 | Name | Type     | Description |
 | :--- | :------- | :---------- |
-| `r`  | `number` | usage:r     |
-| `g`  | `number` | usage:g     |
-| `b`  | `number` | usage:b     |
-
-#### Defined in
-
-Type/index.d.ts:938
+| `r`  | `number` | r           |
+| `g`  | `number` | g           |
+| `b`  | `number` | b           |
 
 • **new LinearColor**(`r`, `g`, `b`, `a`)
 
@@ -85,14 +61,10 @@ Type/index.d.ts:938
 
 | Name | Type     | Description |
 | :--- | :------- | :---------- |
-| `r`  | `number` | usage:r     |
-| `g`  | `number` | usage:g     |
-| `b`  | `number` | usage:b     |
-| `a`  | `number` | usage:a     |
-
-#### Defined in
-
-Type/index.d.ts:946
+| `r`  | `number` | r           |
+| `g`  | `number` | g           |
+| `b`  | `number` | b           |
+| `a`  | `number` | a           |
 
 • **new LinearColor**(`v`)
 
@@ -102,13 +74,9 @@ Type/index.d.ts:946
 
 #### Parameters
 
-| Name | Type                            | Description       |
-| :--- | :------------------------------ | :---------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | usage:Vector 对象 |
-
-#### Defined in
-
-Type/index.d.ts:951
+| Name | Type                            | Description |
+| :--- | :------------------------------ | :---------- |
+| `v`  | [`Vector`](Type.Type.Vector.md) | Vector 对象 |
 
 • **new LinearColor**(`c`)
 
@@ -118,13 +86,9 @@ Type/index.d.ts:951
 
 #### Parameters
 
-| Name | Type                                      | Description       |
-| :--- | :---------------------------------------- | :---------------- |
-| `c`  | [`LinearColor`](Type.Type.LinearColor.md) | usage:Vector 对象 |
-
-#### Defined in
-
-Type/index.d.ts:956
+| Name | Type                                      | Description |
+| :--- | :---------------------------------------- | :---------- |
+| `c`  | [`LinearColor`](Type.Type.LinearColor.md) | Vector 对象 |
 
 ## Accessors
 
@@ -139,10 +103,6 @@ Type/index.d.ts:956
 #### Returns
 
 `number`
-
-#### Defined in
-
-Type/index.d.ts:1067
 
 • `set` **a**(`v`): `void`
 
@@ -164,10 +124,6 @@ Type/index.d.ts:1067
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:1072
-
 ---
 
 ### b
@@ -181,10 +137,6 @@ Type/index.d.ts:1072
 #### Returns
 
 `number`
-
-#### Defined in
-
-Type/index.d.ts:1058
 
 • `set` **b**(`v`): `void`
 
@@ -206,10 +158,6 @@ Type/index.d.ts:1058
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:1063
-
 ---
 
 ### g
@@ -223,10 +171,6 @@ Type/index.d.ts:1063
 #### Returns
 
 `number`
-
-#### Defined in
-
-Type/index.d.ts:1049
 
 • `set` **g**(`v`): `void`
 
@@ -248,10 +192,6 @@ Type/index.d.ts:1049
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:1054
-
 ---
 
 ### r
@@ -265,10 +205,6 @@ Type/index.d.ts:1054
 #### Returns
 
 `number`
-
-#### Defined in
-
-Type/index.d.ts:1040
 
 • `set` **r**(`v`): `void`
 
@@ -290,10 +226,6 @@ Type/index.d.ts:1040
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:1045
-
 ---
 
 ### black
@@ -307,10 +239,6 @@ Type/index.d.ts:1045
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
-
-#### Defined in
-
-Type/index.d.ts:1084
 
 ---
 
@@ -326,10 +254,6 @@ Type/index.d.ts:1084
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-#### Defined in
-
-Type/index.d.ts:1096
-
 ---
 
 ### gray
@@ -343,10 +267,6 @@ Type/index.d.ts:1096
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
-
-#### Defined in
-
-Type/index.d.ts:1080
 
 ---
 
@@ -362,10 +282,6 @@ Type/index.d.ts:1080
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-#### Defined in
-
-Type/index.d.ts:1092
-
 ---
 
 ### red
@@ -379,10 +295,6 @@ Type/index.d.ts:1092
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
-
-#### Defined in
-
-Type/index.d.ts:1088
 
 ---
 
@@ -398,10 +310,6 @@ Type/index.d.ts:1088
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-#### Defined in
-
-Type/index.d.ts:1076
-
 ---
 
 ### yellow
@@ -415,10 +323,6 @@ Type/index.d.ts:1076
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
-
-#### Defined in
-
-Type/index.d.ts:1100
 
 ## Methods
 
@@ -440,20 +344,16 @@ Type/index.d.ts:1100
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:相加的颜色 B                             |
-| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收结果的 LinearColor 对象 default:null |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 相加的颜色 B                             |
+| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | 接收结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1117
 
 ---
 
@@ -475,20 +375,16 @@ Type/index.d.ts:1117
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:相除的颜色 B                             |
-| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收结果的 LinearColor 对象 default:null |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 相除的颜色 B                             |
+| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | 接收结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1144
 
 ---
 
@@ -510,20 +406,16 @@ Type/index.d.ts:1144
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:对比的颜色 B                             |
-| `epsilon?`     | `number`                                  | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 对比的颜色 B                             |
+| `epsilon?`     | `number`                                  | 最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
 `boolean`
 
 是否相等
-
-#### Defined in
-
-Type/index.d.ts:1153
 
 ---
 
@@ -541,17 +433,13 @@ Type/index.d.ts:1153
 
 #### Parameters
 
-| Name  | Type     | Description      |
-| :---- | :------- | :--------------- |
-| `str` | `string` | usage:数据字符串 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `str` | `string` | 数据字符串  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:962
 
 ---
 
@@ -573,20 +461,16 @@ Type/index.d.ts:962
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:对比的颜色 B                             |
-| `epsilon?`     | `number`                                  | usage:最小误差数 default:Util.MathUtil.EPSILON |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 对比的颜色 B                             |
+| `epsilon?`     | `number`                                  | 最小误差数 default:Util.MathUtil.EPSILON |
 
 #### Returns
 
 `boolean`
 
 是否相等
-
-#### Defined in
-
-Type/index.d.ts:1162
 
 ---
 
@@ -608,20 +492,16 @@ Type/index.d.ts:1162
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:相乘的颜色 B                             |
-| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收结果的 LinearColor 对象 default:null |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 相乘的颜色 B                             |
+| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | 接收结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1135
 
 ---
 
@@ -643,20 +523,16 @@ Type/index.d.ts:1135
 
 #### Parameters
 
-| Name           | Type                                      | Description                                    |
-| :------------- | :---------------------------------------- | :--------------------------------------------- |
-| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | usage:相减的颜色 B                             |
-| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收结果的 LinearColor 对象 default:null |
+| Name           | Type                                      | Description                              |
+| :------------- | :---------------------------------------- | :--------------------------------------- |
+| `linearColorB` | [`LinearColor`](Type.Type.LinearColor.md) | 相减的颜色 B                             |
+| `outer?`       | [`LinearColor`](Type.Type.LinearColor.md) | 接收结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1126
 
 ---
 
@@ -678,10 +554,6 @@ Type/index.d.ts:1126
 
 对象属性字符串
 
-#### Defined in
-
-Type/index.d.ts:975
-
 ---
 
 ### colorHexToLinearColor
@@ -702,20 +574,16 @@ Type/index.d.ts:975
 
 #### Parameters
 
-| Name         | Type                                      | Description                                        |
-| :----------- | :---------------------------------------- | :------------------------------------------------- |
-| `inColorHex` | `string`                                  | usage:HexColor 字符串                              |
-| `outer?`     | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收转化后的 LinearColor 的对象 default:null |
+| Name         | Type                                      | Description                                  |
+| :----------- | :---------------------------------------- | :------------------------------------------- |
+| `inColorHex` | `string`                                  | HexColor 字符串                              |
+| `outer?`     | [`LinearColor`](Type.Type.LinearColor.md) | 接收转化后的 LinearColor 的对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 LinerColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1001
 
 ---
 
@@ -737,22 +605,18 @@ Type/index.d.ts:1001
 
 #### Parameters
 
-| Name     | Type                                      | Description                                        |
-| :------- | :---------------------------------------- | :------------------------------------------------- |
-| `h`      | `number`                                  | usage:色调                                         |
-| `s`      | `number`                                  | usage:饱和度                                       |
-| `v`      | `number`                                  | usage:明度                                         |
-| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收转换结果的 LinearColor 对象 default:null |
+| Name     | Type                                      | Description                                  |
+| :------- | :---------------------------------------- | :------------------------------------------- |
+| `h`      | `number`                                  | 色调                                         |
+| `s`      | `number`                                  | 饱和度                                       |
+| `v`      | `number`                                  | 明度                                         |
+| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | 接收转换结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1015
 
 ---
 
@@ -770,23 +634,19 @@ Type/index.d.ts:1015
 
 #### Parameters
 
-| Name     | Type                                      | Description                                        |
-| :------- | :---------------------------------------- | :------------------------------------------------- |
-| `r`      | `number`                                  | usage:r(0 ~255)                                    |
-| `g`      | `number`                                  | usage:g(0 ~255)                                    |
-| `b`      | `number`                                  | usage:b(0 ~255)                                    |
-| `a?`     | `number`                                  | usage:a(0 ~255) default:255                        |
-| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收转换结果的 LinearColor 对象 default:null |
+| Name     | Type                                      | Description                                  |
+| :------- | :---------------------------------------- | :------------------------------------------- |
+| `r`      | `number`                                  | r(0 ~255)                                    |
+| `g`      | `number`                                  | g(0 ~255)                                    |
+| `b`      | `number`                                  | b(0 ~255)                                    |
+| `a?`     | `number`                                  | a(0 ~255) default:255                        |
+| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | 接收转换结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:986
 
 ---
 
@@ -804,19 +664,15 @@ Type/index.d.ts:986
 
 #### Parameters
 
-| Name      | Type     | Description      |
-| :-------- | :------- | :--------------- |
-| `jsonStr` | `string` | usage:数据字符串 |
+| Name      | Type     | Description |
+| :-------- | :------- | :---------- |
+| `jsonStr` | `string` | 数据字符串  |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 新的 LinearColor 类型对象
-
-#### Defined in
-
-Type/index.d.ts:969
 
 ---
 
@@ -838,22 +694,18 @@ Type/index.d.ts:969
 
 #### Parameters
 
-| Name     | Type                                      | Description                                        |
-| :------- | :---------------------------------------- | :------------------------------------------------- |
-| `h`      | `number`                                  | usage:色调                                         |
-| `s`      | `number`                                  | usage:饱和度                                       |
-| `v`      | `number`                                  | usage:明度                                         |
-| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收转换结果的 LinearColor 对象 default:null |
+| Name     | Type                                      | Description                                  |
+| :------- | :---------------------------------------- | :------------------------------------------- |
+| `h`      | `number`                                  | 色调                                         |
+| `s`      | `number`                                  | 饱和度                                       |
+| `v`      | `number`                                  | 明度                                         |
+| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | 接收转换结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1031
 
 ---
 
@@ -875,16 +727,12 @@ Type/index.d.ts:1031
 
 #### Parameters
 
-| Name     | Type                                      | Description                                    |
-| :------- | :---------------------------------------- | :--------------------------------------------- |
-| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | usage:接收结果的 LinearColor 对象 default:null |
+| Name     | Type                                      | Description                              |
+| :------- | :---------------------------------------- | :--------------------------------------- |
+| `outer?` | [`LinearColor`](Type.Type.LinearColor.md) | 接收结果的 LinearColor 对象 default:null |
 
 #### Returns
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
-
-#### Defined in
-
-Type/index.d.ts:1108

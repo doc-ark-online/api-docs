@@ -1,45 +1,25 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / Decoration
+[Gameplay](../modules/Gameplay.Gameplay.md) / Decoration
 
-# Class: Decoration
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Decoration
+# Decoration <Badge type="tip" text="Class" />
 
 **`Description`**
 
 挂件数据
 
-**`Author`**
-
-guang.deng
-
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[assetId](Gameplay.Gameplay.Decoration.md#assetid)**: `string` <br> 资源 Id                                                                 |
+| **[relativeTransform](Gameplay.Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Type.Transform.md) <br> 相对 ue slot Transform |
+| **[skeletonName](Gameplay.Gameplay.Decoration.md#skeletonname)**: `string` <br> 骨架名字                                                      |
+| **[slotName](Gameplay.Gameplay.Decoration.md#slotname)**: `string` <br> 插槽名                                                                |
 
-- [constructor](Gameplay.Gameplay.Decoration.md#constructor)
-
-### Properties
-
-- [assetId](Gameplay.Gameplay.Decoration.md#assetid)
-- [relativeTransform](Gameplay.Gameplay.Decoration.md#relativetransform)
-- [skeletonName](Gameplay.Gameplay.Decoration.md#skeletonname)
-- [slotName](Gameplay.Gameplay.Decoration.md#slotname)
-
-### Methods
-
-- [deserialize](Gameplay.Gameplay.Decoration.md#deserialize)
-- [equal](Gameplay.Gameplay.Decoration.md#equal)
-- [serialize](Gameplay.Gameplay.Decoration.md#serialize)
-
-## Constructors
-
-### constructor
-
-• **new Decoration**()
+| Methods                                                                                             |
+| :-------------------------------------------------------------------------------------------------- |
+| **[deserialize](Gameplay.Gameplay.Decoration.md#deserialize)**(`string`): `void` <br> 反序列化      |
+| **[equal](Gameplay.Gameplay.Decoration.md#equal)**(`string`): `boolean` <br> 比较是否是一个插槽数据 |
+| **[serialize](Gameplay.Gameplay.Decoration.md#serialize)**(): `string` <br> 获取序列化 String       |
 
 ## Properties
 
@@ -51,10 +31,6 @@ usage:双端
 
 资源 Id
 
-#### Defined in
-
-Gameplay/index.d.ts:1574
-
 ---
 
 ### relativeTransform
@@ -64,10 +40,6 @@ Gameplay/index.d.ts:1574
 **`Description`**
 
 相对 ue slot Transform
-
-#### Defined in
-
-Gameplay/index.d.ts:1582
 
 ---
 
@@ -79,10 +51,6 @@ Gameplay/index.d.ts:1582
 
 骨架名字
 
-#### Defined in
-
-Gameplay/index.d.ts:1570
-
 ---
 
 ### slotName
@@ -92,10 +60,6 @@ Gameplay/index.d.ts:1570
 **`Description`**
 
 插槽名
-
-#### Defined in
-
-Gameplay/index.d.ts:1578
 
 ## Methods
 
@@ -113,17 +77,13 @@ Gameplay/index.d.ts:1578
 
 #### Parameters
 
-| Name   | Type     | Description             |
-| :----- | :------- | :---------------------- |
-| `data` | `string` | usage: 挂件 string 数据 |
+| Name   | Type     | Description      |
+| :----- | :------- | :--------------- |
+| `data` | `string` | 挂件 string 数据 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:1594
 
 ---
 
@@ -141,19 +101,15 @@ Gameplay/index.d.ts:1594
 
 #### Parameters
 
-| Name           | Type     | Description    |
-| :------------- | :------- | :------------- |
-| `widgetString` | `string` | usage:插槽数据 |
+| Name           | Type     | Description |
+| :------------- | :------- | :---------- |
+| `widgetString` | `string` | 插槽数据    |
 
 #### Returns
 
 `boolean`
 
 是否相等
-
-#### Defined in
-
-Gameplay/index.d.ts:1601
 
 ---
 
@@ -174,7 +130,3 @@ Gameplay/index.d.ts:1601
 `string`
 
 string
-
-#### Defined in
-
-Gameplay/index.d.ts:1588

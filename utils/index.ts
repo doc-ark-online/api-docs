@@ -75,7 +75,7 @@ export function typeToNamespace(paths: string[]) {
   return sidebar;
 }
 /**
- * 根据 md 名字包含的信息
+ * 根据 md 名字包含的信息变成一下格式
  * Core.Core.Base.md
  * ```ts
  * {

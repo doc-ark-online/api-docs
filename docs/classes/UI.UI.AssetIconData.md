@@ -1,36 +1,16 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / AssetIconData
+[UI](../modules/UI.UI.md) / AssetIconData
 
-# Class: AssetIconData
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).AssetIconData
-
-**`Author`**
-
-yw
+# AssetIconData <Badge type="tip" text="Class" />
 
 **`Description`**
 
 资源 ICON 信息
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.AssetIconData.md#constructor)
-
-### Accessors
-
-- [assetID](UI.UI.AssetIconData.md#assetid)
-
-## Constructors
-
-### constructor
-
-• **new AssetIconData**()
+| Accessors                                                                  |
+| :------------------------------------------------------------------------- |
+| **[assetID](UI.UI.AssetIconData.md#assetid)**(): `string` <br> 获取资源 ID |
 
 **`Description`**
 
@@ -39,10 +19,6 @@ usage:客户端
 **`Effect`**
 
 只在客户端调用生效
-
-#### Defined in
-
-UI/index.d.ts:4254
 
 ## Accessors
 
@@ -64,10 +40,6 @@ UI/index.d.ts:4254
 
 资源 ID 信息
 
-#### Defined in
-
-UI/index.d.ts:4260
-
 • `set` **assetID**(`v`): `void`
 
 **`Description`**
@@ -80,14 +52,10 @@ UI/index.d.ts:4260
 
 #### Parameters
 
-| Name | Type     | Description        |
-| :--- | :------- | :----------------- |
-| `v`  | `string` | usage:资源 ID 信息 |
+| Name | Type     | Description  |
+| :--- | :------- | :----------- |
+| `v`  | `string` | 资源 ID 信息 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:4266

@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / ObjectTypeQuery
+[Gameplay](../modules/Gameplay.Gameplay.md) / ObjectTypeQuery
 
-# Enumeration: ObjectTypeQuery
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).ObjectTypeQuery
+# ObjectTypeQuery <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,40 +8,40 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [ObjectTypeQuery1](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery1)
-- [ObjectTypeQuery10](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery10)
-- [ObjectTypeQuery11](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery11)
-- [ObjectTypeQuery12](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery12)
-- [ObjectTypeQuery13](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery13)
-- [ObjectTypeQuery14](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery14)
-- [ObjectTypeQuery15](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery15)
-- [ObjectTypeQuery16](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery16)
-- [ObjectTypeQuery17](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery17)
-- [ObjectTypeQuery18](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery18)
-- [ObjectTypeQuery19](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery19)
-- [ObjectTypeQuery2](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery2)
-- [ObjectTypeQuery20](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery20)
-- [ObjectTypeQuery21](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery21)
-- [ObjectTypeQuery22](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery22)
-- [ObjectTypeQuery23](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery23)
-- [ObjectTypeQuery24](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery24)
-- [ObjectTypeQuery25](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery25)
-- [ObjectTypeQuery26](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery26)
-- [ObjectTypeQuery27](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery27)
-- [ObjectTypeQuery28](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery28)
-- [ObjectTypeQuery29](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery29)
-- [ObjectTypeQuery3](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery3)
-- [ObjectTypeQuery30](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery30)
-- [ObjectTypeQuery31](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery31)
-- [ObjectTypeQuery32](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery32)
-- [ObjectTypeQuery4](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery4)
-- [ObjectTypeQuery5](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery5)
-- [ObjectTypeQuery6](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery6)
-- [ObjectTypeQuery7](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery7)
-- [ObjectTypeQuery8](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery8)
-- [ObjectTypeQuery9](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery9)
+| Enumeration Members                                                                                     |
+| :------------------------------------------------------------------------------------------------------ |
+| **[ObjectTypeQuery1](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery1)** = `0` <br> 检测通道 1     |
+| **[ObjectTypeQuery10](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery10)** = `9` <br> 检测通道 10  |
+| **[ObjectTypeQuery11](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery11)** = `10` <br> 检测通道 11 |
+| **[ObjectTypeQuery12](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery12)** = `11` <br> 检测通道 12 |
+| **[ObjectTypeQuery13](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery13)** = `12` <br> 检测通道 13 |
+| **[ObjectTypeQuery14](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery14)** = `13` <br> 检测通道 14 |
+| **[ObjectTypeQuery15](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery15)** = `14` <br> 检测通道 15 |
+| **[ObjectTypeQuery16](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery16)** = `15` <br> 检测通道 16 |
+| **[ObjectTypeQuery17](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery17)** = `16` <br> 检测通道 17 |
+| **[ObjectTypeQuery18](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery18)** = `17` <br> 检测通道 18 |
+| **[ObjectTypeQuery19](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery19)** = `18` <br> 检测通道 19 |
+| **[ObjectTypeQuery2](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery2)** = `1` <br> 检测通道 2     |
+| **[ObjectTypeQuery20](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery20)** = `19` <br> 检测通道 20 |
+| **[ObjectTypeQuery21](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery21)** = `20` <br> 检测通道 21 |
+| **[ObjectTypeQuery22](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery22)** = `21` <br> 检测通道 22 |
+| **[ObjectTypeQuery23](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery23)** = `22` <br> 检测通道 23 |
+| **[ObjectTypeQuery24](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery24)** = `23` <br> 检测通道 24 |
+| **[ObjectTypeQuery25](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery25)** = `24` <br> 检测通道 25 |
+| **[ObjectTypeQuery26](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery26)** = `25` <br> 检测通道 26 |
+| **[ObjectTypeQuery27](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery27)** = `26` <br> 检测通道 27 |
+| **[ObjectTypeQuery28](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery28)** = `27` <br> 检测通道 28 |
+| **[ObjectTypeQuery29](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery29)** = `28` <br> 检测通道 29 |
+| **[ObjectTypeQuery3](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery3)** = `2` <br> 检测通道 3     |
+| **[ObjectTypeQuery30](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery30)** = `29` <br> 检测通道 30 |
+| **[ObjectTypeQuery31](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery31)** = `30` <br> 检测通道 31 |
+| **[ObjectTypeQuery32](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery32)** = `31` <br> 检测通道 32 |
+| **[ObjectTypeQuery4](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery4)** = `3` <br> 检测通道 4     |
+| **[ObjectTypeQuery5](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery5)** = `4` <br> 检测通道 5     |
+| **[ObjectTypeQuery6](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery6)** = `5` <br> 检测通道 6     |
+| **[ObjectTypeQuery7](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery7)** = `6` <br> 检测通道 7     |
+| **[ObjectTypeQuery8](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery8)** = `7` <br> 检测通道 8     |
+| **[ObjectTypeQuery9](Gameplay.Gameplay.ObjectTypeQuery.md#objecttypequery9)** = `8` <br> 检测通道 9     |
 
 ## Enumeration Members
 
@@ -53,10 +51,6 @@
 
 检测通道 1
 
-#### Defined in
-
-Gameplay/index.d.ts:2360
-
 ---
 
 ### ObjectTypeQuery10
@@ -64,10 +58,6 @@ Gameplay/index.d.ts:2360
 • **ObjectTypeQuery10** = `9`
 
 检测通道 10
-
-#### Defined in
-
-Gameplay/index.d.ts:2378
 
 ---
 
@@ -77,10 +67,6 @@ Gameplay/index.d.ts:2378
 
 检测通道 11
 
-#### Defined in
-
-Gameplay/index.d.ts:2380
-
 ---
 
 ### ObjectTypeQuery12
@@ -88,10 +74,6 @@ Gameplay/index.d.ts:2380
 • **ObjectTypeQuery12** = `11`
 
 检测通道 12
-
-#### Defined in
-
-Gameplay/index.d.ts:2382
 
 ---
 
@@ -101,10 +83,6 @@ Gameplay/index.d.ts:2382
 
 检测通道 13
 
-#### Defined in
-
-Gameplay/index.d.ts:2384
-
 ---
 
 ### ObjectTypeQuery14
@@ -112,10 +90,6 @@ Gameplay/index.d.ts:2384
 • **ObjectTypeQuery14** = `13`
 
 检测通道 14
-
-#### Defined in
-
-Gameplay/index.d.ts:2386
 
 ---
 
@@ -125,10 +99,6 @@ Gameplay/index.d.ts:2386
 
 检测通道 15
 
-#### Defined in
-
-Gameplay/index.d.ts:2388
-
 ---
 
 ### ObjectTypeQuery16
@@ -136,10 +106,6 @@ Gameplay/index.d.ts:2388
 • **ObjectTypeQuery16** = `15`
 
 检测通道 16
-
-#### Defined in
-
-Gameplay/index.d.ts:2390
 
 ---
 
@@ -149,10 +115,6 @@ Gameplay/index.d.ts:2390
 
 检测通道 17
 
-#### Defined in
-
-Gameplay/index.d.ts:2392
-
 ---
 
 ### ObjectTypeQuery18
@@ -160,10 +122,6 @@ Gameplay/index.d.ts:2392
 • **ObjectTypeQuery18** = `17`
 
 检测通道 18
-
-#### Defined in
-
-Gameplay/index.d.ts:2394
 
 ---
 
@@ -173,10 +131,6 @@ Gameplay/index.d.ts:2394
 
 检测通道 19
 
-#### Defined in
-
-Gameplay/index.d.ts:2396
-
 ---
 
 ### ObjectTypeQuery2
@@ -184,10 +138,6 @@ Gameplay/index.d.ts:2396
 • **ObjectTypeQuery2** = `1`
 
 检测通道 2
-
-#### Defined in
-
-Gameplay/index.d.ts:2362
 
 ---
 
@@ -197,10 +147,6 @@ Gameplay/index.d.ts:2362
 
 检测通道 20
 
-#### Defined in
-
-Gameplay/index.d.ts:2398
-
 ---
 
 ### ObjectTypeQuery21
@@ -208,10 +154,6 @@ Gameplay/index.d.ts:2398
 • **ObjectTypeQuery21** = `20`
 
 检测通道 21
-
-#### Defined in
-
-Gameplay/index.d.ts:2400
 
 ---
 
@@ -221,10 +163,6 @@ Gameplay/index.d.ts:2400
 
 检测通道 22
 
-#### Defined in
-
-Gameplay/index.d.ts:2402
-
 ---
 
 ### ObjectTypeQuery23
@@ -232,10 +170,6 @@ Gameplay/index.d.ts:2402
 • **ObjectTypeQuery23** = `22`
 
 检测通道 23
-
-#### Defined in
-
-Gameplay/index.d.ts:2404
 
 ---
 
@@ -245,10 +179,6 @@ Gameplay/index.d.ts:2404
 
 检测通道 24
 
-#### Defined in
-
-Gameplay/index.d.ts:2406
-
 ---
 
 ### ObjectTypeQuery25
@@ -256,10 +186,6 @@ Gameplay/index.d.ts:2406
 • **ObjectTypeQuery25** = `24`
 
 检测通道 25
-
-#### Defined in
-
-Gameplay/index.d.ts:2408
 
 ---
 
@@ -269,10 +195,6 @@ Gameplay/index.d.ts:2408
 
 检测通道 26
 
-#### Defined in
-
-Gameplay/index.d.ts:2410
-
 ---
 
 ### ObjectTypeQuery27
@@ -280,10 +202,6 @@ Gameplay/index.d.ts:2410
 • **ObjectTypeQuery27** = `26`
 
 检测通道 27
-
-#### Defined in
-
-Gameplay/index.d.ts:2412
 
 ---
 
@@ -293,10 +211,6 @@ Gameplay/index.d.ts:2412
 
 检测通道 28
 
-#### Defined in
-
-Gameplay/index.d.ts:2414
-
 ---
 
 ### ObjectTypeQuery29
@@ -304,10 +218,6 @@ Gameplay/index.d.ts:2414
 • **ObjectTypeQuery29** = `28`
 
 检测通道 29
-
-#### Defined in
-
-Gameplay/index.d.ts:2416
 
 ---
 
@@ -317,10 +227,6 @@ Gameplay/index.d.ts:2416
 
 检测通道 3
 
-#### Defined in
-
-Gameplay/index.d.ts:2364
-
 ---
 
 ### ObjectTypeQuery30
@@ -328,10 +234,6 @@ Gameplay/index.d.ts:2364
 • **ObjectTypeQuery30** = `29`
 
 检测通道 30
-
-#### Defined in
-
-Gameplay/index.d.ts:2418
 
 ---
 
@@ -341,10 +243,6 @@ Gameplay/index.d.ts:2418
 
 检测通道 31
 
-#### Defined in
-
-Gameplay/index.d.ts:2420
-
 ---
 
 ### ObjectTypeQuery32
@@ -352,10 +250,6 @@ Gameplay/index.d.ts:2420
 • **ObjectTypeQuery32** = `31`
 
 检测通道 32
-
-#### Defined in
-
-Gameplay/index.d.ts:2422
 
 ---
 
@@ -365,10 +259,6 @@ Gameplay/index.d.ts:2422
 
 检测通道 4
 
-#### Defined in
-
-Gameplay/index.d.ts:2366
-
 ---
 
 ### ObjectTypeQuery5
@@ -376,10 +266,6 @@ Gameplay/index.d.ts:2366
 • **ObjectTypeQuery5** = `4`
 
 检测通道 5
-
-#### Defined in
-
-Gameplay/index.d.ts:2368
 
 ---
 
@@ -389,10 +275,6 @@ Gameplay/index.d.ts:2368
 
 检测通道 6
 
-#### Defined in
-
-Gameplay/index.d.ts:2370
-
 ---
 
 ### ObjectTypeQuery7
@@ -400,10 +282,6 @@ Gameplay/index.d.ts:2370
 • **ObjectTypeQuery7** = `6`
 
 检测通道 7
-
-#### Defined in
-
-Gameplay/index.d.ts:2372
 
 ---
 
@@ -413,10 +291,6 @@ Gameplay/index.d.ts:2372
 
 检测通道 8
 
-#### Defined in
-
-Gameplay/index.d.ts:2374
-
 ---
 
 ### ObjectTypeQuery9
@@ -424,7 +298,3 @@ Gameplay/index.d.ts:2374
 • **ObjectTypeQuery9** = `8`
 
 检测通道 9
-
-#### Defined in
-
-Gameplay/index.d.ts:2376

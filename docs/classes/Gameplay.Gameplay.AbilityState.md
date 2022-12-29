@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
+[Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
 
-# Class: AbilityState
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AbilityState
-
-**`Author`**
-
-baoqiang.han
+# AbilityState <Badge type="tip" text="Class" />
 
 **`Description`**
 
 技能状态
-
-**`Network Status`**
-
-usage:双端
 
 **`Precautions`**
 
@@ -22,30 +12,20 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------- |
+| **[animation](Gameplay.Gameplay.AbilityState.md#animation)**(): `string` <br> 获取动画资源                     |
+| **[duration](Gameplay.Gameplay.AbilityState.md#duration)**(): `number` <br> 获取释放状态当前执行时间           |
+| **[executeTime](Gameplay.Gameplay.AbilityState.md#executetime)**(): `number` <br> 获取释放状态可执行总时长时间 |
+| **[loop](Gameplay.Gameplay.AbilityState.md#loop)**(): `boolean` <br> 获取释放状态是否可循环 isLoop             |
 
-- [constructor](Gameplay.Gameplay.AbilityState.md#constructor)
-
-### Accessors
-
-- [animation](Gameplay.Gameplay.AbilityState.md#animation)
-- [duration](Gameplay.Gameplay.AbilityState.md#duration)
-- [executeTime](Gameplay.Gameplay.AbilityState.md#executetime)
-- [loop](Gameplay.Gameplay.AbilityState.md#loop)
-
-### Methods
-
-- [addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)
-- [cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)
-- [enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)
-- [enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)
-- [enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)
-
-## Constructors
-
-### constructor
-
-• **new AbilityState**()
+| Methods                                                                                                                                                                                                  |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性       |
+| **[cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性 |
+| **[enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> 获取对象是否可跳跃                                                                                                      |
+| **[enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> 获取对象是否可移动                                                                                                      |
+| **[enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md) <br> 获取对象是否可转向                                             |
 
 ## Accessors
 
@@ -67,10 +47,6 @@ usage:双端
 
 资源 GUID
 
-#### Defined in
-
-Gameplay/index.d.ts:8330
-
 • `set` **animation**(`AnimGuid`): `void`
 
 **`Description`**
@@ -83,17 +59,13 @@ Gameplay/index.d.ts:8330
 
 #### Parameters
 
-| Name       | Type     | Description     |
-| :--------- | :------- | :-------------- |
-| `AnimGuid` | `string` | usage:资源 GUID |
+| Name       | Type     | Description |
+| :--------- | :------- | :---------- |
+| `AnimGuid` | `string` | 资源 GUID   |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:8336
 
 ---
 
@@ -114,10 +86,6 @@ Gameplay/index.d.ts:8336
 `number`
 
 获取释放状态当前执行时间
-
-#### Defined in
-
-Gameplay/index.d.ts:8298
 
 ---
 
@@ -143,10 +111,6 @@ Gameplay/index.d.ts:8298
 
 获取释放状态可执行总时长时间
 
-#### Defined in
-
-Gameplay/index.d.ts:8305
-
 • `set` **executeTime**(`Time`): `void`
 
 **`Description`**
@@ -163,17 +127,13 @@ Gameplay/index.d.ts:8305
 
 #### Parameters
 
-| Name   | Type     | Description                        |
-| :----- | :------- | :--------------------------------- |
-| `Time` | `number` | usage:设置释放状态可执行总时长时间 |
+| Name   | Type     | Description                  |
+| :----- | :------- | :--------------------------- |
+| `Time` | `number` | 设置释放状态可执行总时长时间 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:8312
 
 ---
 
@@ -195,10 +155,6 @@ Gameplay/index.d.ts:8312
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:8318
-
 • `set` **loop**(`LoopState`): `void`
 
 **`Description`**
@@ -211,17 +167,13 @@ Gameplay/index.d.ts:8318
 
 #### Parameters
 
-| Name        | Type      | Description         |
-| :---------- | :-------- | :------------------ |
-| `LoopState` | `boolean` | usage:true 或 false |
+| Name        | Type      | Description   |
+| :---------- | :-------- | :------------ |
+| `LoopState` | `boolean` | true 或 false |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:8324
 
 ## Methods
 
@@ -239,17 +191,13 @@ Gameplay/index.d.ts:8324
 
 #### Parameters
 
-| Name          | Type                                                                               | Description            |
-| :------------ | :--------------------------------------------------------------------------------- | :--------------------- |
-| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | usage:技能状态控制枚举 |
+| Name          | Type                                                                               | Description      |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:8342
 
 ---
 
@@ -267,17 +215,13 @@ Gameplay/index.d.ts:8342
 
 #### Parameters
 
-| Name          | Type                                                                               | Description            |
-| :------------ | :--------------------------------------------------------------------------------- | :--------------------- |
-| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | usage:技能状态控制枚举 |
+| Name          | Type                                                                               | Description      |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:8348
 
 ---
 
@@ -299,10 +243,6 @@ Gameplay/index.d.ts:8348
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:8366
-
 ---
 
 ### enableMove
@@ -323,10 +263,6 @@ Gameplay/index.d.ts:8366
 
 true 或 false
 
-#### Defined in
-
-Gameplay/index.d.ts:8354
-
 ---
 
 ### enableTurn
@@ -346,7 +282,3 @@ Gameplay/index.d.ts:8354
 [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md)
 
 true 或 false
-
-#### Defined in
-
-Gameplay/index.d.ts:8360

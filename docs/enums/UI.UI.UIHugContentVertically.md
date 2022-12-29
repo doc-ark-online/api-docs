@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIHugContentVertically
+[UI](../modules/UI.UI.md) / UIHugContentVertically
 
-# Enumeration: UIHugContentVertically
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIHugContentVertically
+# UIHugContentVertically <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [FixHeight](UI.UI.UIHugContentVertically.md#fixheight)
-- [HugContent](UI.UI.UIHugContentVertically.md#hugcontent)
+| Enumeration Members                                                                |
+| :--------------------------------------------------------------------------------- |
+| **[FixHeight](UI.UI.UIHugContentVertically.md#fixheight)** = `0` <br> 固定高度     |
+| **[HugContent](UI.UI.UIHugContentVertically.md#hugcontent)** = `1` <br> 自适应高度 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 固定高度
 
-#### Defined in
-
-UI/index.d.ts:3369
-
 ---
 
 ### HugContent
@@ -34,7 +28,3 @@ UI/index.d.ts:3369
 • **HugContent** = `1`
 
 自适应高度
-
-#### Defined in
-
-UI/index.d.ts:3371

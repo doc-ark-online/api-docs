@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Delegate
+[Type](../modules/Type.Type.md) / Delegate
 
-# Class: Delegate<T\>
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Delegate
-
-**`Author`**
-
-xiangkun.sun
+# Delegate<T\> <Badge type="tip" text="Class" />
 
 **`Description`**
 
 委托
-
-**`Network Status`**
-
-usage:双端
 
 **`Effect`**
 
@@ -32,22 +22,12 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Type.Type.Delegate.md#constructor)
-
-### Methods
-
-- [bind](Type.Type.Delegate.md#bind)
-- [execute](Type.Type.Delegate.md#execute)
-- [isBound](Type.Type.Delegate.md#isbound)
-- [unbind](Type.Type.Delegate.md#unbind)
-
-## Constructors
-
-### constructor
-
-• **new Delegate**<`T`\>()
+| Methods                                                                                                |
+| :----------------------------------------------------------------------------------------------------- |
+| **[bind](Type.Type.Delegate.md#bind)**(`T`): `void` <br> 绑定函数                                      |
+| **[execute](Type.Type.Delegate.md#execute)**(`Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数 |
+| **[isBound](Type.Type.Delegate.md#isbound)**(): `boolean` <br> 是否绑定                                |
+| **[unbind](Type.Type.Delegate.md#unbind)**(): `void` <br> 解绑函数                                     |
 
 #### Type parameters
 
@@ -71,9 +51,9 @@ usage:双端
 
 #### Parameters
 
-| Name   | Type | Description                |
-| :----- | :--- | :------------------------- |
-| `func` | `T`  | usage: 绑定的函数 default: |
+| Name   | Type | Description         |
+| :----- | :--- | :------------------ |
+| `func` | `T`  | 绑定的函数 default: |
 
 #### Returns
 
@@ -82,10 +62,6 @@ usage:双端
 #### Implementation of
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[bind](../interfaces/Type.Type.DelegateInterface.md#bind)
-
-#### Defined in
-
-Type/index.d.ts:118
 
 ---
 
@@ -103,9 +79,9 @@ Type/index.d.ts:118
 
 #### Parameters
 
-| Name     | Type               | Description     |
-| :------- | :----------------- | :-------------- |
-| `...arg` | `Parameters`<`T`\> | usage: 执行参数 |
+| Name     | Type               | Description |
+| :------- | :----------------- | :---------- |
+| `...arg` | `Parameters`<`T`\> | 执行参数    |
 
 #### Returns
 
@@ -116,10 +92,6 @@ Type/index.d.ts:118
 #### Implementation of
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[execute](../interfaces/Type.Type.DelegateInterface.md#execute)
-
-#### Defined in
-
-Type/index.d.ts:136
 
 ---
 
@@ -145,10 +117,6 @@ Type/index.d.ts:136
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[isBound](../interfaces/Type.Type.DelegateInterface.md#isbound)
 
-#### Defined in
-
-Type/index.d.ts:129
-
 ---
 
 ### unbind
@@ -170,7 +138,3 @@ Type/index.d.ts:129
 #### Implementation of
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[unbind](../interfaces/Type.Type.DelegateInterface.md#unbind)
-
-#### Defined in
-
-Type/index.d.ts:123

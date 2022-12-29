@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIHorizontalCollation
+[UI](../modules/UI.UI.md) / UIHorizontalCollation
 
-# Enumeration: UIHorizontalCollation
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIHorizontalCollation
+# UIHorizontalCollation <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [LeftToRight](UI.UI.UIHorizontalCollation.md#lefttoright)
-- [RightToLeft](UI.UI.UIHorizontalCollation.md#righttoleft)
+| Enumeration Members                                                                   |
+| :------------------------------------------------------------------------------------ |
+| **[LeftToRight](UI.UI.UIHorizontalCollation.md#lefttoright)** = `0` <br> 从左到右排序 |
+| **[RightToLeft](UI.UI.UIHorizontalCollation.md#righttoleft)** = `1` <br> 从右到左排序 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 从左到右排序
 
-#### Defined in
-
-UI/index.d.ts:3379
-
 ---
 
 ### RightToLeft
@@ -34,7 +28,3 @@ UI/index.d.ts:3379
 • **RightToLeft** = `1`
 
 从右到左排序
-
-#### Defined in
-
-UI/index.d.ts:3381

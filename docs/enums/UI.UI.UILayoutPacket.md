@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UILayoutPacket
+[UI](../modules/UI.UI.md) / UILayoutPacket
 
-# Enumeration: UILayoutPacket
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UILayoutPacket
+# UILayoutPacket <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,17 +8,17 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [CenterBottom](UI.UI.UILayoutPacket.md#centerbottom)
-- [CenterCenter](UI.UI.UILayoutPacket.md#centercenter)
-- [CenterTop](UI.UI.UILayoutPacket.md#centertop)
-- [LeftBottom](UI.UI.UILayoutPacket.md#leftbottom)
-- [LeftCenter](UI.UI.UILayoutPacket.md#leftcenter)
-- [LeftTop](UI.UI.UILayoutPacket.md#lefttop)
-- [RightBottom](UI.UI.UILayoutPacket.md#rightbottom)
-- [RightCenter](UI.UI.UILayoutPacket.md#rightcenter)
-- [RightTop](UI.UI.UILayoutPacket.md#righttop)
+| Enumeration Members                                                          |
+| :--------------------------------------------------------------------------- |
+| **[CenterBottom](UI.UI.UILayoutPacket.md#centerbottom)** = `8` <br> 中下对齐 |
+| **[CenterCenter](UI.UI.UILayoutPacket.md#centercenter)** = `7` <br> 中中对齐 |
+| **[CenterTop](UI.UI.UILayoutPacket.md#centertop)** = `6` <br> 中上对齐       |
+| **[LeftBottom](UI.UI.UILayoutPacket.md#leftbottom)** = `2` <br> 左下对齐     |
+| **[LeftCenter](UI.UI.UILayoutPacket.md#leftcenter)** = `1` <br> 左中对齐     |
+| **[LeftTop](UI.UI.UILayoutPacket.md#lefttop)** = `0` <br> 左上对齐           |
+| **[RightBottom](UI.UI.UILayoutPacket.md#rightbottom)** = `5` <br> 右下对齐   |
+| **[RightCenter](UI.UI.UILayoutPacket.md#rightcenter)** = `4` <br> 右中对齐   |
+| **[RightTop](UI.UI.UILayoutPacket.md#righttop)** = `3` <br> 右上对齐         |
 
 ## Enumeration Members
 
@@ -30,10 +28,6 @@
 
 中下对齐
 
-#### Defined in
-
-UI/index.d.ts:3341
-
 ---
 
 ### CenterCenter
@@ -41,10 +35,6 @@ UI/index.d.ts:3341
 • **CenterCenter** = `7`
 
 中中对齐
-
-#### Defined in
-
-UI/index.d.ts:3339
 
 ---
 
@@ -54,10 +44,6 @@ UI/index.d.ts:3339
 
 中上对齐
 
-#### Defined in
-
-UI/index.d.ts:3337
-
 ---
 
 ### LeftBottom
@@ -65,10 +51,6 @@ UI/index.d.ts:3337
 • **LeftBottom** = `2`
 
 左下对齐
-
-#### Defined in
-
-UI/index.d.ts:3329
 
 ---
 
@@ -78,10 +60,6 @@ UI/index.d.ts:3329
 
 左中对齐
 
-#### Defined in
-
-UI/index.d.ts:3327
-
 ---
 
 ### LeftTop
@@ -89,10 +67,6 @@ UI/index.d.ts:3327
 • **LeftTop** = `0`
 
 左上对齐
-
-#### Defined in
-
-UI/index.d.ts:3325
 
 ---
 
@@ -102,10 +76,6 @@ UI/index.d.ts:3325
 
 右下对齐
 
-#### Defined in
-
-UI/index.d.ts:3335
-
 ---
 
 ### RightCenter
@@ -114,10 +84,6 @@ UI/index.d.ts:3335
 
 右中对齐
 
-#### Defined in
-
-UI/index.d.ts:3333
-
 ---
 
 ### RightTop
@@ -125,7 +91,3 @@ UI/index.d.ts:3333
 • **RightTop** = `3`
 
 右上对齐
-
-#### Defined in
-
-UI/index.d.ts:3331

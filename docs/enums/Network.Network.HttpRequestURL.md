@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Network](../modules/Network.md) / [Network](../modules/Network.Network.md) / HttpRequestURL
+[Network](../modules/Network.Network.md) / HttpRequestURL
 
-# Enumeration: HttpRequestURL
-
-[Network](../modules/Network.md).[Network](../modules/Network.Network.md).HttpRequestURL
+# HttpRequestURL <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,20 +8,20 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [CobblestoneService](Network.Network.HttpRequestURL.md#cobblestoneservice)
-- [Developers](Network.Network.HttpRequestURL.md#developers)
-- [Games](Network.Network.HttpRequestURL.md#games)
-- [Gateway](Network.Network.HttpRequestURL.md#gateway)
-- [Login](Network.Network.HttpRequestURL.md#login)
-- [MGS](Network.Network.HttpRequestURL.md#mgs)
-- [Packages](Network.Network.HttpRequestURL.md#packages)
-- [Pandora](Network.Network.HttpRequestURL.md#pandora)
-- [Register](Network.Network.HttpRequestURL.md#register)
-- [Resource](Network.Network.HttpRequestURL.md#resource)
-- [Tasks](Network.Network.HttpRequestURL.md#tasks)
-- [Translation](Network.Network.HttpRequestURL.md#translation)
+| Enumeration Members                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------- |
+| **[CobblestoneService](Network.Network.HttpRequestURL.md#cobblestoneservice)** = `0` <br> http://test1010-api.meta-verse.co |
+| **[Developers](Network.Network.HttpRequestURL.md#developers)** = `3` <br> http://test-dev-account.meta-verse.co             |
+| **[Games](Network.Network.HttpRequestURL.md#games)** = `5` <br> http://test-game.meta-verse.co                              |
+| **[Gateway](Network.Network.HttpRequestURL.md#gateway)** = `2` <br> http://test1010-api.meta-verse.co                       |
+| **[Login](Network.Network.HttpRequestURL.md#login)** = `8` <br> http://dev-developer-api.233leyuan.com                      |
+| **[MGS](Network.Network.HttpRequestURL.md#mgs)** = `6` <br> http://dev-internal-api.233lyly.com                             |
+| **[Packages](Network.Network.HttpRequestURL.md#packages)** = `9` <br> http://dev-api.meta-verse.co                          |
+| **[Pandora](Network.Network.HttpRequestURL.md#pandora)** = `10` <br> https://mw-push.233bigdata.cn/cDEwMDAx/log_main        |
+| **[Register](Network.Network.HttpRequestURL.md#register)** = `7` <br> http://test-app-dev-admin.233nan.cn                   |
+| **[Resource](Network.Network.HttpRequestURL.md#resource)** = `1` <br> http://test-resources.meta-verse.co                   |
+| **[Tasks](Network.Network.HttpRequestURL.md#tasks)** = `4` <br> http://test-tasks.meta-verse.co                             |
+| **[Translation](Network.Network.HttpRequestURL.md#translation)** = `11` <br> test1010-api.meta-verse.co/internalRouter      |
 
 ## Enumeration Members
 
@@ -33,10 +31,6 @@
 
 http://test1010-api.meta-verse.co
 
-#### Defined in
-
-Network/index.d.ts:91
-
 ---
 
 ### Developers
@@ -44,10 +38,6 @@ Network/index.d.ts:91
 • **Developers** = `3`
 
 http://test-dev-account.meta-verse.co
-
-#### Defined in
-
-Network/index.d.ts:103
 
 ---
 
@@ -57,10 +47,6 @@ Network/index.d.ts:103
 
 http://test-game.meta-verse.co
 
-#### Defined in
-
-Network/index.d.ts:111
-
 ---
 
 ### Gateway
@@ -68,10 +54,6 @@ Network/index.d.ts:111
 • **Gateway** = `2`
 
 http://test1010-api.meta-verse.co
-
-#### Defined in
-
-Network/index.d.ts:99
 
 ---
 
@@ -81,10 +63,6 @@ Network/index.d.ts:99
 
 http://dev-developer-api.233leyuan.com
 
-#### Defined in
-
-Network/index.d.ts:123
-
 ---
 
 ### MGS
@@ -92,10 +70,6 @@ Network/index.d.ts:123
 • **MGS** = `6`
 
 http://dev-internal-api.233lyly.com
-
-#### Defined in
-
-Network/index.d.ts:115
 
 ---
 
@@ -105,10 +79,6 @@ Network/index.d.ts:115
 
 http://dev-api.meta-verse.co
 
-#### Defined in
-
-Network/index.d.ts:127
-
 ---
 
 ### Pandora
@@ -116,10 +86,6 @@ Network/index.d.ts:127
 • **Pandora** = `10`
 
 https://mw-push.233bigdata.cn/cDEwMDAx/log_main
-
-#### Defined in
-
-Network/index.d.ts:131
 
 ---
 
@@ -129,10 +95,6 @@ Network/index.d.ts:131
 
 http://test-app-dev-admin.233nan.cn
 
-#### Defined in
-
-Network/index.d.ts:119
-
 ---
 
 ### Resource
@@ -140,10 +102,6 @@ Network/index.d.ts:119
 • **Resource** = `1`
 
 http://test-resources.meta-verse.co
-
-#### Defined in
-
-Network/index.d.ts:95
 
 ---
 
@@ -153,10 +111,6 @@ Network/index.d.ts:95
 
 http://test-tasks.meta-verse.co
 
-#### Defined in
-
-Network/index.d.ts:107
-
 ---
 
 ### Translation
@@ -164,7 +118,3 @@ Network/index.d.ts:107
 • **Translation** = `11`
 
 test1010-api.meta-verse.co/internalRouter
-
-#### Defined in
-
-Network/index.d.ts:135

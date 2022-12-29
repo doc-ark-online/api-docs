@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / ColorPick
+[UI](../modules/UI.UI.md) / ColorPick
 
-# Class: ColorPick
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).ColorPick
-
-**`Author`**
-
-jie.wu
+# ColorPick <Badge type="tip" text="Class" />
 
 **`Description`**
 
 颜色选择器
-
-**`Network Status`**
-
-usage:客户端
 
 ## Hierarchy
 
@@ -24,58 +14,44 @@ usage:客户端
 
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                                                                                                                           |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoSizeEnable](UI.UI.ColorPick.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                                                                                                      |
+| **[cachedGeometry](UI.UI.ColorPick.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                                                                                                   |
+| **[color](UI.UI.ColorPick.md#color)**([`LinearColor`](Type.Type.LinearColor.md)): `void` <br> 设置 color picker 的颜色                                                                                                              |
+| **[constraints](UI.UI.ColorPick.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局                                                                                         |
+| **[desiredSize](UI.UI.ColorPick.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                                                                                                            |
+| **[enable](UI.UI.ColorPick.md#enable)**(): `boolean` <br> 是否可用                                                                                                                                                                  |
+| **[guid](UI.UI.ColorPick.md#guid)**(): `string` <br> 获取控件 GUID                                                                                                                                                                  |
+| **[imageGuid](UI.UI.ColorPick.md#imageguid)**(`string`): `void` <br> 设置 color picker 的图片                                                                                                                                       |
+| **[isHovered](UI.UI.ColorPick.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                                                                                                      |
+| **[name](UI.UI.ColorPick.md#name)**(): `string` <br> 获取名字                                                                                                                                                                       |
+| **[onColorChangeFinished](UI.UI.ColorPick.md#oncolorchangefinished)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\> <br> 颜色改变完成时触发的函数代理 |
+| **[onColorChanged](UI.UI.ColorPick.md#oncolorchanged)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\> <br> 颜色改变时触发的代理                       |
+| **[onTouchFinished](UI.UI.ColorPick.md#ontouchfinished)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\> <br> 点击完成时触发的代理函数                 |
+| **[onTouchStart](UI.UI.ColorPick.md#ontouchstart)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\> <br> 点击时触发的代理                               |
+| **[paintSpaceGeometry](UI.UI.ColorPick.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息                                                                                      |
+| **[parent](UI.UI.ColorPick.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                                                                                                              |
+| **[position](UI.UI.ColorPick.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                                                                                                   |
+| **[renderOpacity](UI.UI.ColorPick.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                                                                                               |
+| **[renderScale](UI.UI.ColorPick.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                                                                                                            |
+| **[renderShear](UI.UI.ColorPick.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                                                                                                        |
+| **[renderTransformAngle](UI.UI.ColorPick.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                                                                                                 |
+| **[renderTransformPivot](UI.UI.ColorPick.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                                                                                                          |
+| **[size](UI.UI.ColorPick.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                                                                                                              |
+| **[slot](UI.UI.ColorPick.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                                                                |
+| **[tickSpaceGeometry](UI.UI.ColorPick.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息                                                                                   |
+| **[transform](UI.UI.ColorPick.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                                                                                                       |
+| **[visibility](UI.UI.ColorPick.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                                                                                                           |
+| **[visible](UI.UI.ColorPick.md#visible)**(): `boolean` <br> 是否可见                                                                                                                                                                |
+| **[zOrder](UI.UI.ColorPick.md#zorder)**(): `number` <br> 获取 zorder                                                                                                                                                                |
 
-- [constructor](UI.UI.ColorPick.md#constructor)
-
-### Accessors
-
-- [autoSizeEnable](UI.UI.ColorPick.md#autosizeenable)
-- [cachedGeometry](UI.UI.ColorPick.md#cachedgeometry)
-- [color](UI.UI.ColorPick.md#color)
-- [constraints](UI.UI.ColorPick.md#constraints)
-- [desiredSize](UI.UI.ColorPick.md#desiredsize)
-- [enable](UI.UI.ColorPick.md#enable)
-- [guid](UI.UI.ColorPick.md#guid)
-- [imageGuid](UI.UI.ColorPick.md#imageguid)
-- [isHovered](UI.UI.ColorPick.md#ishovered)
-- [name](UI.UI.ColorPick.md#name)
-- [onColorChangeFinished](UI.UI.ColorPick.md#oncolorchangefinished)
-- [onColorChanged](UI.UI.ColorPick.md#oncolorchanged)
-- [onTouchFinished](UI.UI.ColorPick.md#ontouchfinished)
-- [onTouchStart](UI.UI.ColorPick.md#ontouchstart)
-- [paintSpaceGeometry](UI.UI.ColorPick.md#paintspacegeometry)
-- [parent](UI.UI.ColorPick.md#parent)
-- [position](UI.UI.ColorPick.md#position)
-- [renderOpacity](UI.UI.ColorPick.md#renderopacity)
-- [renderScale](UI.UI.ColorPick.md#renderscale)
-- [renderShear](UI.UI.ColorPick.md#rendershear)
-- [renderTransformAngle](UI.UI.ColorPick.md#rendertransformangle)
-- [renderTransformPivot](UI.UI.ColorPick.md#rendertransformpivot)
-- [size](UI.UI.ColorPick.md#size)
-- [slot](UI.UI.ColorPick.md#slot)
-- [tickSpaceGeometry](UI.UI.ColorPick.md#tickspacegeometry)
-- [transform](UI.UI.ColorPick.md#transform)
-- [visibility](UI.UI.ColorPick.md#visibility)
-- [visible](UI.UI.ColorPick.md#visible)
-- [zOrder](UI.UI.ColorPick.md#zorder)
-
-### Methods
-
-- [destroyObject](UI.UI.ColorPick.md#destroyobject)
-- [equal](UI.UI.ColorPick.md#equal)
-- [invalidateLayoutAndVolatility](UI.UI.ColorPick.md#invalidatelayoutandvolatility)
-- [newObject](UI.UI.ColorPick.md#newobject)
-
-## Constructors
-
-### constructor
-
-• **new ColorPick**()
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[constructor](UI.UI.Widget.md#constructor)
+| Methods                                                                                                                                                                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[destroyObject](UI.UI.ColorPick.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                                                                                          |
+| **[equal](UI.UI.ColorPick.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                                                                                   |
+| **[invalidateLayoutAndVolatility](UI.UI.ColorPick.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算                                                                         |
+| **[newObject](UI.UI.ColorPick.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`ColorPick`](UI.UI.ColorPick.md) <br> 创建 ColorPick 控件 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁 |
 
 ## Accessors
 
@@ -97,14 +73,6 @@ usage:客户端
 
 是否自动设置大小
 
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4987
-
 • `set` **autoSizeEnable**(`autoSize`): `void`
 
 **`Description`**
@@ -117,21 +85,13 @@ UI/index.d.ts:4987
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
-| `autoSize` | `boolean` | usage:是否自动设置大小 |
+| Name       | Type      | Description      |
+| :--------- | :-------- | :--------------- |
+| `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.autoSizeEnable
-
-#### Defined in
-
-UI/index.d.ts:4981
 
 ---
 
@@ -153,14 +113,6 @@ UI/index.d.ts:4981
 
 返回上一次的 GetTickSpaceGeometry
 
-#### Inherited from
-
-Widget.cachedGeometry
-
-#### Defined in
-
-UI/index.d.ts:4897
-
 ---
 
 ### color
@@ -177,17 +129,13 @@ UI/index.d.ts:4897
 
 #### Parameters
 
-| Name      | Type                                      | Description                                           |
-| :-------- | :---------------------------------------- | :---------------------------------------------------- |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | usage:输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name      | Type                                      | Description                                     |
+| :-------- | :---------------------------------------- | :---------------------------------------------- |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 输入的颜色，Type.LinearColor 类型，数据范围 0~1 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:489
 
 ---
 
@@ -209,14 +157,6 @@ UI/index.d.ts:489
 
 控件的布局
 
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4939
-
 • `set` **constraints**(`ininconstraints`): `void`
 
 **`Description`**
@@ -229,21 +169,13 @@ UI/index.d.ts:4939
 
 #### Parameters
 
-| Name              | Type                                                  | Description      |
-| :---------------- | :---------------------------------------------------- | :--------------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | usage:控件的布局 |
+| Name              | Type                                                  | Description |
+| :---------------- | :---------------------------------------------------- | :---------- |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.constraints
-
-#### Defined in
-
-UI/index.d.ts:4933
 
 ---
 
@@ -265,14 +197,6 @@ UI/index.d.ts:4933
 
 返回期望大小
 
-#### Inherited from
-
-Widget.desiredSize
-
-#### Defined in
-
-UI/index.d.ts:4831
-
 ---
 
 ### enable
@@ -293,14 +217,6 @@ UI/index.d.ts:4831
 
 boolean
 
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4807
-
 • `set` **enable**(`isEnable`): `void`
 
 **`Description`**
@@ -313,23 +229,15 @@ UI/index.d.ts:4807
 
 #### Parameters
 
-| Name       | Type      | Description          |
-| :--------- | :-------- | :------------------- |
-| `isEnable` | `boolean` | usage:可用性 boolean |
+| Name       | Type      | Description    |
+| :--------- | :-------- | :------------- |
+| `isEnable` | `boolean` | 可用性 boolean |
 
 #### Returns
 
 `void`
 
 返回设置结果
-
-#### Inherited from
-
-Widget.enable
-
-#### Defined in
-
-UI/index.d.ts:4814
 
 ---
 
@@ -351,14 +259,6 @@ UI/index.d.ts:4814
 
 控件 GUID
 
-#### Inherited from
-
-Widget.guid
-
-#### Defined in
-
-UI/index.d.ts:4915
-
 ---
 
 ### imageGuid
@@ -375,17 +275,13 @@ UI/index.d.ts:4915
 
 #### Parameters
 
-| Name     | Type     | Description         |
-| :------- | :------- | :------------------ |
-| `inGuid` | `string` | usage:输入的图片 ID |
+| Name     | Type     | Description   |
+| :------- | :------- | :------------ |
+| `inGuid` | `string` | 输入的图片 ID |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:495
 
 ---
 
@@ -407,14 +303,6 @@ UI/index.d.ts:495
 
 boolean
 
-#### Inherited from
-
-Widget.isHovered
-
-#### Defined in
-
-UI/index.d.ts:4820
-
 ---
 
 ### name
@@ -435,14 +323,6 @@ UI/index.d.ts:4820
 
 返回名字
 
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4783
-
 • `set` **name**(`name`): `void`
 
 **`Description`**
@@ -457,19 +337,11 @@ UI/index.d.ts:4783
 
 | Name   | Type     | Description |
 | :----- | :------- | :---------- |
-| `name` | `string` | usage:名字  |
+| `name` | `string` | 名字        |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.name
-
-#### Defined in
-
-UI/index.d.ts:4777
 
 ---
 
@@ -491,10 +363,6 @@ UI/index.d.ts:4777
 
 返回事件的代理
 
-#### Defined in
-
-UI/index.d.ts:509
-
 ---
 
 ### onColorChanged
@@ -514,10 +382,6 @@ UI/index.d.ts:509
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\>
 
 返回事件的代理
-
-#### Defined in
-
-UI/index.d.ts:501
 
 ---
 
@@ -539,10 +403,6 @@ UI/index.d.ts:501
 
 返回事件的代理
 
-#### Defined in
-
-UI/index.d.ts:525
-
 ---
 
 ### onTouchStart
@@ -562,10 +422,6 @@ UI/index.d.ts:525
 [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.Type.LinearColor.md)) => `void`\>
 
 返回事件的代理
-
-#### Defined in
-
-UI/index.d.ts:517
 
 ---
 
@@ -587,14 +443,6 @@ UI/index.d.ts:517
 
 返回最后一次用于渲染 Widget 的几何信息
 
-#### Inherited from
-
-Widget.paintSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4909
-
 ---
 
 ### parent
@@ -614,14 +462,6 @@ UI/index.d.ts:4909
 [`Widget`](UI.UI.Widget.md)
 
 返回父节点
-
-#### Inherited from
-
-Widget.parent
-
-#### Defined in
-
-UI/index.d.ts:4764
 
 ---
 
@@ -643,14 +483,6 @@ UI/index.d.ts:4764
 
 控件的位置
 
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4951
-
 • `set` **position**(`inFigmaPosition`): `void`
 
 **`Description`**
@@ -663,21 +495,13 @@ UI/index.d.ts:4951
 
 #### Parameters
 
-| Name              | Type                              | Description      |
-| :---------------- | :-------------------------------- | :--------------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | usage:控件的位置 |
+| Name              | Type                              | Description |
+| :---------------- | :-------------------------------- | :---------- |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.position
-
-#### Defined in
-
-UI/index.d.ts:4945
 
 ---
 
@@ -699,14 +523,6 @@ UI/index.d.ts:4945
 
 返回渲染透明度
 
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4891
-
 • `set` **renderOpacity**(`InOpacity`): `void`
 
 **`Description`**
@@ -719,21 +535,13 @@ UI/index.d.ts:4891
 
 #### Parameters
 
-| Name        | Type     | Description  |
-| :---------- | :------- | :----------- |
-| `InOpacity` | `number` | usage:透明度 |
+| Name        | Type     | Description |
+| :---------- | :------- | :---------- |
+| `InOpacity` | `number` | 透明度      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderOpacity
-
-#### Defined in
-
-UI/index.d.ts:4885
 
 ---
 
@@ -755,14 +563,6 @@ UI/index.d.ts:4885
 
 返回渲染缩放
 
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4879
-
 • `set` **renderScale**(`scale`): `void`
 
 **`Description`**
@@ -775,21 +575,13 @@ UI/index.d.ts:4879
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染缩放 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderScale
-
-#### Defined in
-
-UI/index.d.ts:4873
 
 ---
 
@@ -811,14 +603,6 @@ UI/index.d.ts:4873
 
 返回渲染错切形变
 
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4867
-
 • `set` **renderShear**(`shear`): `void`
 
 **`Description`**
@@ -831,21 +615,13 @@ UI/index.d.ts:4867
 
 #### Parameters
 
-| Name    | Type                              | Description        |
-| :------ | :-------------------------------- | :----------------- |
-| `shear` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染错切形变 |
+| Name    | Type                              | Description  |
+| :------ | :-------------------------------- | :----------- |
+| `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderShear
-
-#### Defined in
-
-UI/index.d.ts:4861
 
 ---
 
@@ -867,14 +643,6 @@ UI/index.d.ts:4861
 
 返回渲染角度
 
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4843
-
 • `set` **renderTransformAngle**(`o`): `void`
 
 **`Description`**
@@ -887,21 +655,13 @@ UI/index.d.ts:4843
 
 #### Parameters
 
-| Name | Type     | Description    |
-| :--- | :------- | :------------- |
-| `o`  | `number` | usage:渲染角度 |
+| Name | Type     | Description |
+| :--- | :------- | :---------- |
+| `o`  | `number` | 渲染角度    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformAngle
-
-#### Defined in
-
-UI/index.d.ts:4837
 
 ---
 
@@ -923,14 +683,6 @@ UI/index.d.ts:4837
 
 返回渲染锚点
 
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4855
-
 • `set` **renderTransformPivot**(`Pivot`): `void`
 
 **`Description`**
@@ -943,21 +695,13 @@ UI/index.d.ts:4855
 
 #### Parameters
 
-| Name    | Type                              | Description    |
-| :------ | :-------------------------------- | :------------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | usage:渲染锚点 |
+| Name    | Type                              | Description |
+| :------ | :-------------------------------- | :---------- |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.renderTransformPivot
-
-#### Defined in
-
-UI/index.d.ts:4849
 
 ---
 
@@ -979,14 +723,6 @@ UI/index.d.ts:4849
 
 FVector2D
 
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4963
-
 • `set` **size**(`inSize`): `void`
 
 **`Description`**
@@ -999,21 +735,13 @@ UI/index.d.ts:4963
 
 #### Parameters
 
-| Name     | Type                              | Description    |
-| :------- | :-------------------------------- | :------------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | usage:输入大小 |
+| Name     | Type                              | Description |
+| :------- | :-------------------------------- | :---------- |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.size
-
-#### Defined in
-
-UI/index.d.ts:4957
 
 ---
 
@@ -1039,14 +767,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
-#### Inherited from
-
-Widget.slot
-
-#### Defined in
-
-UI/index.d.ts:4771
-
 ---
 
 ### tickSpaceGeometry
@@ -1066,14 +786,6 @@ UI/index.d.ts:4771
 [`Geometry`](UI.UI.Geometry.md)
 
 返回最后一次用于驱动 Widget Tick 的几何信息
-
-#### Inherited from
-
-Widget.tickSpaceGeometry
-
-#### Defined in
-
-UI/index.d.ts:4903
 
 ---
 
@@ -1095,14 +807,6 @@ UI/index.d.ts:4903
 
 控件的大小和位置
 
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4927
-
 • `set` **transform**(`inTransform`): `void`
 
 **`Description`**
@@ -1115,21 +819,13 @@ UI/index.d.ts:4927
 
 #### Parameters
 
-| Name          | Type                                  | Description    |
-| :------------ | :------------------------------------ | :------------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | usage:大小位置 |
+| Name          | Type                                  | Description |
+| :------------ | :------------------------------------ | :---------- |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.transform
-
-#### Defined in
-
-UI/index.d.ts:4921
 
 ---
 
@@ -1151,14 +847,6 @@ UI/index.d.ts:4921
 
 返回可见性
 
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4795
-
 • `set` **visibility**(`Visibility`): `void`
 
 **`Description`**
@@ -1171,21 +859,13 @@ UI/index.d.ts:4795
 
 #### Parameters
 
-| Name         | Type                                                   | Description  |
-| :----------- | :----------------------------------------------------- | :----------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage:可见性 |
+| Name         | Type                                                   | Description |
+| :----------- | :----------------------------------------------------- | :---------- |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.visibility
-
-#### Defined in
-
-UI/index.d.ts:4789
 
 ---
 
@@ -1207,14 +887,6 @@ UI/index.d.ts:4789
 
 boolean
 
-#### Inherited from
-
-Widget.visible
-
-#### Defined in
-
-UI/index.d.ts:4801
-
 ---
 
 ### zOrder
@@ -1235,14 +907,6 @@ UI/index.d.ts:4801
 
 zorder
 
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4975
-
 • `set` **zOrder**(`InZOrder`): `void`
 
 **`Description`**
@@ -1255,21 +919,13 @@ UI/index.d.ts:4975
 
 #### Parameters
 
-| Name       | Type     | Description          |
-| :--------- | :------- | :------------------- |
-| `InZOrder` | `number` | usage:值越大在越上层 |
+| Name       | Type     | Description    |
+| :--------- | :------- | :------------- |
+| `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-Widget.zOrder
-
-#### Defined in
-
-UI/index.d.ts:4969
 
 ## Methods
 
@@ -1289,14 +945,6 @@ UI/index.d.ts:4969
 
 `void`
 
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[destroyObject](UI.UI.Widget.md#destroyobject)
-
-#### Defined in
-
-UI/index.d.ts:4751
-
 ---
 
 ### equal
@@ -1313,23 +961,15 @@ UI/index.d.ts:4751
 
 #### Parameters
 
-| Name   | Type                        | Description                  |
-| :----- | :-------------------------- | :--------------------------- |
-| `that` | [`Widget`](UI.UI.Widget.md) | usage:需要比较的另外一个对象 |
+| Name   | Type                        | Description            |
+| :----- | :-------------------------- | :--------------------- |
+| `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[equal](UI.UI.Widget.md#equal)
-
-#### Defined in
-
-UI/index.d.ts:4758
 
 ---
 
@@ -1349,14 +989,6 @@ UI/index.d.ts:4758
 
 `void`
 
-#### Inherited from
-
-[Widget](UI.UI.Widget.md).[invalidateLayoutAndVolatility](UI.UI.Widget.md#invalidatelayoutandvolatility)
-
-#### Defined in
-
-UI/index.d.ts:4825
-
 ---
 
 ### newObject
@@ -1373,17 +1005,13 @@ UI/index.d.ts:4825
 
 #### Parameters
 
-| Name      | Type                        | Description                               |
-| :-------- | :-------------------------- | :---------------------------------------- |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | usage:创建控件的 parent 对象 default:null |
-| `inName?` | `string`                    | usage:创建控件的名称 default:null         |
+| Name      | Type                        | Description                         |
+| :-------- | :-------------------------- | :---------------------------------- |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的 parent 对象 default:null |
+| `inName?` | `string`                    | 创建控件的名称 default:null         |
 
 #### Returns
 
 [`ColorPick`](UI.UI.ColorPick.md)
 
 返回创建的对象
-
-#### Defined in
-
-UI/index.d.ts:483

@@ -1,118 +1,90 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / Quaternion
+[Type](../modules/Type.Type.md) / Quaternion
 
-# Class: Quaternion
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).Quaternion
-
-**`Author`**
-
-SuoWei
+# Quaternion <Badge type="tip" text="Class" />
 
 **`Description`**
 
 四元数
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                        |
+| :-------------------------------------------------------------------------------- |
+| **[w](Type.Type.Quaternion.md#w)**: `number` <br> w 分量。                        |
+| **[x](Type.Type.Quaternion.md#x)**: `number` <br> x 分量。                        |
+| **[y](Type.Type.Quaternion.md#y)**: `number` <br> y 分量。                        |
+| **[z](Type.Type.Quaternion.md#z)**: `number` <br> z 分量。                        |
+| **[halfToRad](Type.Type.Quaternion.md#halftorad)**: `any` <br> 获取一个半弧度系数 |
 
-- [constructor](Type.Type.Quaternion.md#constructor)
+| Accessors                                                                                                                                                         |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[conjugated](Type.Type.Quaternion.md#conjugated)**(): [`Quaternion`](Type.Type.Quaternion.md) <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效 |
+| **[inverted](Type.Type.Quaternion.md#inverted)**(): [`Quaternion`](Type.Type.Quaternion.md) <br> 返回当前四元数的逆                                               |
+| **[length](Type.Type.Quaternion.md#length)**(): `number` <br> 求四元数长度                                                                                        |
+| **[normalized](Type.Type.Quaternion.md#normalized)**(): [`Quaternion`](Type.Type.Quaternion.md) <br> 返回一个当前四元数归一后的新四元数                           |
+| **[sqrLength](Type.Type.Quaternion.md#sqrlength)**(): `number` <br> 求四元数长度平方                                                                              |
+| **[identity](Type.Type.Quaternion.md#identity)**(): [`Quaternion`](Type.Type.Quaternion.md) <br> 获取一个单位四元数                                               |
 
-### Properties
-
-- [w](Type.Type.Quaternion.md#w)
-- [x](Type.Type.Quaternion.md#x)
-- [y](Type.Type.Quaternion.md#y)
-- [z](Type.Type.Quaternion.md#z)
-- [halfToRad](Type.Type.Quaternion.md#halftorad)
-
-### Accessors
-
-- [conjugated](Type.Type.Quaternion.md#conjugated)
-- [inverted](Type.Type.Quaternion.md#inverted)
-- [length](Type.Type.Quaternion.md#length)
-- [normalized](Type.Type.Quaternion.md#normalized)
-- [sqrLength](Type.Type.Quaternion.md#sqrlength)
-- [identity](Type.Type.Quaternion.md#identity)
-
-### Methods
-
-- [clone](Type.Type.Quaternion.md#clone)
-- [equals](Type.Type.Quaternion.md#equals)
-- [fromRotation](Type.Type.Quaternion.md#fromrotation)
-- [getAxisX](Type.Type.Quaternion.md#getaxisx)
-- [getAxisY](Type.Type.Quaternion.md#getaxisy)
-- [getAxisZ](Type.Type.Quaternion.md#getaxisz)
-- [getEuler](Type.Type.Quaternion.md#geteuler)
-- [getEulerAngles](Type.Type.Quaternion.md#geteulerangles)
-- [normalize](Type.Type.Quaternion.md#normalize)
-- [set](Type.Type.Quaternion.md#set)
-- [setEulerAngles](Type.Type.Quaternion.md#seteulerangles)
-- [strictEquals](Type.Type.Quaternion.md#strictequals)
-- [toRotation](Type.Type.Quaternion.md#torotation)
-- [toString](Type.Type.Quaternion.md#tostring)
-- [calculateW](Type.Type.Quaternion.md#calculatew)
-- [conjugate](Type.Type.Quaternion.md#conjugate)
-- [dot](Type.Type.Quaternion.md#dot)
-- [equals](Type.Type.Quaternion.md#equals-1)
-- [fromAngleZ](Type.Type.Quaternion.md#fromanglez)
-- [fromAxes](Type.Type.Quaternion.md#fromaxes)
-- [fromAxisAngle](Type.Type.Quaternion.md#fromaxisangle)
-- [fromMatrix3x3](Type.Type.Quaternion.md#frommatrix3x3)
-- [fromRotation](Type.Type.Quaternion.md#fromrotation-1)
-- [fromViewUp](Type.Type.Quaternion.md#fromviewup)
-- [getAxis](Type.Type.Quaternion.md#getaxis)
-- [getAxisAngle](Type.Type.Quaternion.md#getaxisangle)
-- [invert](Type.Type.Quaternion.md#invert)
-- [lerp](Type.Type.Quaternion.md#lerp)
-- [multiply](Type.Type.Quaternion.md#multiply)
-- [multiplyVector](Type.Type.Quaternion.md#multiplyvector)
-- [normalize](Type.Type.Quaternion.md#normalize-1)
-- [rotateAround](Type.Type.Quaternion.md#rotatearound)
-- [rotateAroundLocal](Type.Type.Quaternion.md#rotatearoundlocal)
-- [rotateX](Type.Type.Quaternion.md#rotatex)
-- [rotateY](Type.Type.Quaternion.md#rotatey)
-- [rotateZ](Type.Type.Quaternion.md#rotatez)
-- [rotationTo](Type.Type.Quaternion.md#rotationto)
-- [slerp](Type.Type.Quaternion.md#slerp)
-- [sqlerp](Type.Type.Quaternion.md#sqlerp)
-- [strictEquals](Type.Type.Quaternion.md#strictequals-1)
-- [toMatrix3x3](Type.Type.Quaternion.md#tomatrix3x3)
-
-## Constructors
-
-### constructor
-
-• **new Quaternion**(`v`)
+| Methods                                                                                                                                                                                                                                                                                                                                        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[clone](Type.Type.Quaternion.md#clone)**(): [`Quaternion`](Type.Type.Quaternion.md) <br> 克隆当前四元数。                                                                                                                                                                                                                                    |
+| **[equals](Type.Type.Quaternion.md#equals)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断                                                                                                                                                    |
+| **[fromRotation](Type.Type.Quaternion.md#fromrotation)**([`Rotation`](Type.Type.Rotation.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数                                                                                                                      |
+| **[getAxisX](Type.Type.Quaternion.md#getaxisx)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 返回定义此四元数的坐标系 X 轴向量                                                                                                                                                                                      |
+| **[getAxisY](Type.Type.Quaternion.md#getaxisy)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 返回定义此四元数的坐标系 Y 轴向量                                                                                                                                                                                      |
+| **[getAxisZ](Type.Type.Quaternion.md#getaxisz)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 返回定义此四元数的坐标系 Z 轴向量                                                                                                                                                                                      |
+| **[getEuler](Type.Type.Quaternion.md#geteuler)**(`boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX                                                                                                        |
+| **[getEulerAngles](Type.Type.Quaternion.md#geteulerangles)**(): [`Vector`](Type.Type.Vector.md) <br> 返回当前四元数转化的欧拉角（x-y-z）。                                                                                                                                                                                                     |
+| **[normalize](Type.Type.Quaternion.md#normalize)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 归一化四元数                                                                                                                                                |
+| **[set](Type.Type.Quaternion.md#set)**([`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 设置当前四元数使其与指定四元数相等。                                                                                                                                                                             |
+| **[setEulerAngles](Type.Type.Quaternion.md#seteulerangles)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置欧拉角                                                                                                                                                                                                                          |
+| **[strictEquals](Type.Type.Quaternion.md#strictequals)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): `boolean` <br> 四元数等价判断                                                                                                                                                                      |
+| **[toRotation](Type.Type.Quaternion.md#torotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取一个当前四元数的旋转数据                                                                                                                                                                                                                  |
+| **[toString](Type.Type.Quaternion.md#tostring)**(): `string` <br> 输出为字符串                                                                                                                                                                                                                                                                 |
+| **[calculateW](Type.Type.Quaternion.md#calculatew)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据 xyz 分量计算 w 分量，默认已归一化                                                                                                                    |
+| **[conjugate](Type.Type.Quaternion.md#conjugate)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 求共轭四元数，对单位四元数与求逆等价，但更高效                                                                                                              |
+| **[dot](Type.Type.Quaternion.md#dot)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): `number` <br> 四元数点积（数量积）                                                                                                                                                                                   |
+| **[equals](Type.Type.Quaternion.md#equals-1)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断                                                                                                                                                  |
+| **[fromAngleZ](Type.Type.Quaternion.md#fromanglez)**(`number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据 2D 角度（0, 0, z）计算四元数                                                                                                                                                        |
+| **[fromAxes](Type.Type.Quaternion.md#fromaxes)**([`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直                                            |
+| **[fromAxisAngle](Type.Type.Quaternion.md#fromaxisangle)**([`Vector`](Type.Type.Vector.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据旋转轴和旋转弧度计算四元数                                                                                                                    |
+| **[fromMatrix3x3](Type.Type.Quaternion.md#frommatrix3x3)**([`Matrix3x3`](Type.Type.Matrix3x3.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息                                                                                                |
+| **[fromRotation](Type.Type.Quaternion.md#fromrotation-1)**([`Rotation`](Type.Type.Rotation.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数                                                                                                                    |
+| **[fromViewUp](Type.Type.Quaternion.md#fromviewup)**([`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 根据视口的前方向和上方向计算四元数                                                                                               |
+| **[getAxis](Type.Type.Quaternion.md#getaxis)**([`Quaternion`](Type.Type.Quaternion.md), [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取四元数的旋转轴                                                                                                                                                              |
+| **[getAxisAngle](Type.Type.Quaternion.md#getaxisangle)**([`Quaternion`](Type.Type.Quaternion.md)): `number` <br> 获取四元数的旋转弧度                                                                                                                                                                                                          |
+| **[invert](Type.Type.Quaternion.md#invert)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 四元数求逆                                                                                                                                                        |
+| **[lerp](Type.Type.Quaternion.md#lerp)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 逐元素线性插值： A + t \* (B - A)                                                                                  |
+| **[multiply](Type.Type.Quaternion.md#multiply)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 四元数乘法                                                                                                           |
+| **[multiplyVector](Type.Type.Quaternion.md#multiplyvector)**([`Vector`](Type.Type.Vector.md), [`Quaternion`](Type.Type.Quaternion.md), [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 四元数乘以一个三维向量(通常用于向量通过四元数旋转)                                                                               |
+| **[normalize](Type.Type.Quaternion.md#normalize-1)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 归一化四元数                                                                                                                                              |
+| **[rotateAround](Type.Type.Quaternion.md#rotatearound)**([`Quaternion`](Type.Type.Quaternion.md), [`Vector`](Type.Type.Vector.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 绕世界空间下指定轴旋转四元数                                                                               |
+| **[rotateAroundLocal](Type.Type.Quaternion.md#rotatearoundlocal)**([`Quaternion`](Type.Type.Quaternion.md), [`Vector`](Type.Type.Vector.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 绕本地空间下指定轴旋转四元数                                                                     |
+| **[rotateX](Type.Type.Quaternion.md#rotatex)**([`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 绕 X 轴旋转指定四元数                                                                                                                                 |
+| **[rotateY](Type.Type.Quaternion.md#rotatey)**([`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 绕 Y 轴旋转指定四元数                                                                                                                                 |
+| **[rotateZ](Type.Type.Quaternion.md#rotatez)**([`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 绕 Z 轴旋转指定四元数                                                                                                                                 |
+| **[rotationTo](Type.Type.Quaternion.md#rotationto)**([`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 设置四元数为两向量 a 和 b 间的最短路径旋转，默认两向量都已归一化                                                                 |
+| **[slerp](Type.Type.Quaternion.md#slerp)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 四元数球面插值                                                                                                   |
+| **[sqlerp](Type.Type.Quaternion.md#sqlerp)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md), `number`, [`Quaternion`](Type.Type.Quaternion.md)): [`Quaternion`](Type.Type.Quaternion.md) <br> 带两个控制点的四元数球面插值 |
+| **[strictEquals](Type.Type.Quaternion.md#strictequals-1)**([`Quaternion`](Type.Type.Quaternion.md), [`Quaternion`](Type.Type.Quaternion.md)): `boolean` <br> 四元数等价判断                                                                                                                                                                    |
+| **[toMatrix3x3](Type.Type.Quaternion.md#tomatrix3x3)**([`Quaternion`](Type.Type.Quaternion.md), [`Matrix3x3`](Type.Type.Matrix3x3.md)): [`Matrix3x3`](Type.Type.Matrix3x3.md) <br> 根据四元数旋转信息计算矩阵                                                                                                                                  |
 
 #### Parameters
 
-| Name | Type                                    | Description  |
-| :--- | :-------------------------------------- | :----------- |
-| `v`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元素 |
-
-#### Defined in
-
-Type/index.d.ts:2290
+| Name | Type                                    | Description |
+| :--- | :-------------------------------------- | :---------- |
+| `v`  | [`Quaternion`](Type.Type.Quaternion.md) | 四元素      |
 
 • **new Quaternion**(`x?`, `y?`, `z?`, `w?`)
 
 #### Parameters
 
-| Name | Type     | Description            |
-| :--- | :------- | :--------------------- |
-| `x?` | `number` | usage:x 分量 default:0 |
-| `y?` | `number` | usage:y 分量 default:0 |
-| `z?` | `number` | usage:z 分量 default:0 |
-| `w?` | `number` | usage:w 分量 default:1 |
-
-#### Defined in
-
-Type/index.d.ts:2297
+| Name | Type     | Description      |
+| :--- | :------- | :--------------- |
+| `x?` | `number` | x 分量 default:0 |
+| `y?` | `number` | y 分量 default:0 |
+| `z?` | `number` | z 分量 default:0 |
+| `w?` | `number` | w 分量 default:1 |
 
 ## Properties
 
@@ -124,10 +96,6 @@ Type/index.d.ts:2297
 
 w 分量。
 
-#### Defined in
-
-Type/index.d.ts:2286
-
 ---
 
 ### x
@@ -137,10 +105,6 @@ Type/index.d.ts:2286
 **`Description`**
 
 x 分量。
-
-#### Defined in
-
-Type/index.d.ts:2274
 
 ---
 
@@ -152,10 +116,6 @@ Type/index.d.ts:2274
 
 y 分量。
 
-#### Defined in
-
-Type/index.d.ts:2278
-
 ---
 
 ### z
@@ -166,10 +126,6 @@ Type/index.d.ts:2278
 
 z 分量。
 
-#### Defined in
-
-Type/index.d.ts:2282
-
 ---
 
 ### halfToRad
@@ -179,10 +135,6 @@ Type/index.d.ts:2282
 **`Description`**
 
 获取一个半弧度系数
-
-#### Defined in
-
-Type/index.d.ts:1960
 
 ## Accessors
 
@@ -198,10 +150,6 @@ Type/index.d.ts:1960
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
-#### Defined in
-
-Type/index.d.ts:2367
-
 ---
 
 ### inverted
@@ -215,10 +163,6 @@ Type/index.d.ts:2367
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
-
-#### Defined in
-
-Type/index.d.ts:2363
 
 ---
 
@@ -234,10 +178,6 @@ Type/index.d.ts:2363
 
 `number`
 
-#### Defined in
-
-Type/index.d.ts:2355
-
 ---
 
 ### normalized
@@ -252,10 +192,6 @@ Type/index.d.ts:2355
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
-#### Defined in
-
-Type/index.d.ts:2351
-
 ---
 
 ### sqrLength
@@ -269,10 +205,6 @@ Type/index.d.ts:2351
 #### Returns
 
 `number`
-
-#### Defined in
-
-Type/index.d.ts:2359
 
 ---
 
@@ -291,10 +223,6 @@ Quaternion(0,0,0,1)
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
-
-#### Defined in
-
-Type/index.d.ts:1965
 
 ## Methods
 
@@ -316,10 +244,6 @@ Type/index.d.ts:1965
 
 四元数
 
-#### Defined in
-
-Type/index.d.ts:2303
-
 ---
 
 ### equals
@@ -336,20 +260,16 @@ Type/index.d.ts:2303
 
 #### Parameters
 
-| Name       | Type                                    | Description                             |
-| :--------- | :-------------------------------------- | :-------------------------------------- |
-| `other`    | [`Quaternion`](Type.Type.Quaternion.md) | usage:比对的目标四元数                  |
-| `epsilon?` | `number`                                | usage:容差值 default:MathDefine.EPSILON |
+| Name       | Type                                    | Description                       |
+| :--------- | :-------------------------------------- | :-------------------------------- |
+| `other`    | [`Quaternion`](Type.Type.Quaternion.md) | 比对的目标四元数                  |
+| `epsilon?` | `number`                                | 容差值 default:MathDefine.EPSILON |
 
 #### Returns
 
 `boolean`
 
 比对后的结果
-
-#### Defined in
-
-Type/index.d.ts:2340
 
 ---
 
@@ -367,17 +287,13 @@ Type/index.d.ts:2340
 
 #### Parameters
 
-| Name | Type                                | Description          |
-| :--- | :---------------------------------- | :------------------- |
-| `v`  | [`Rotation`](Type.Type.Rotation.md) | usage:读取的旋转数据 |
+| Name | Type                                | Description    |
+| :--- | :---------------------------------- | :------------- |
+| `v`  | [`Rotation`](Type.Type.Rotation.md) | 读取的旋转数据 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:2411
 
 ---
 
@@ -399,19 +315,15 @@ Type/index.d.ts:2411
 
 #### Parameters
 
-| Name     | Type                            | Description                               |
-| :------- | :------------------------------ | :---------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null |
+| Name     | Type                            | Description                         |
+| :------- | :------------------------------ | :---------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收结果的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 此四元数的坐标系 X 轴向量
-
-#### Defined in
-
-Type/index.d.ts:2380
 
 ---
 
@@ -433,19 +345,15 @@ Type/index.d.ts:2380
 
 #### Parameters
 
-| Name     | Type                            | Description                               |
-| :------- | :------------------------------ | :---------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null |
+| Name     | Type                            | Description                         |
+| :------- | :------------------------------ | :---------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收结果的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 此四元数的坐标系 Y 轴向量
-
-#### Defined in
-
-Type/index.d.ts:2388
 
 ---
 
@@ -467,19 +375,15 @@ Type/index.d.ts:2388
 
 #### Parameters
 
-| Name     | Type                            | Description                               |
-| :------- | :------------------------------ | :---------------------------------------- |
-| `outer?` | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null |
+| Name     | Type                            | Description                         |
+| :------- | :------------------------------ | :---------------------------------- |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收结果的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 此四元数的坐标系 Z 轴向量
-
-#### Defined in
-
-Type/index.d.ts:2396
 
 ---
 
@@ -501,20 +405,16 @@ Type/index.d.ts:2396
 
 #### Parameters
 
-| Name      | Type                            | Description                                                |
-| :-------- | :------------------------------ | :--------------------------------------------------------- |
-| `outerZ?` | `boolean`                       | usage:将 z 值范围更改为[-180，-90]U[90，180] default:false |
-| `outer?`  | [`Vector`](Type.Type.Vector.md) | usage:接收结果的 Vector 对象 default:null                  |
+| Name      | Type                            | Description                                          |
+| :-------- | :------------------------------ | :--------------------------------------------------- |
+| `outerZ?` | `boolean`                       | 将 z 值范围更改为[-180，-90]U[90，180] default:false |
+| `outer?`  | [`Vector`](Type.Type.Vector.md) | 接收结果的 Vector 对象 default:null                  |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 欧拉角
-
-#### Defined in
-
-Type/index.d.ts:2405
 
 ---
 
@@ -536,10 +436,6 @@ Type/index.d.ts:2405
 
 欧拉角
 
-#### Defined in
-
-Type/index.d.ts:2332
-
 ---
 
 ### normalize
@@ -558,10 +454,6 @@ Type/index.d.ts:2332
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:2372
-
 ---
 
 ### set
@@ -578,19 +470,15 @@ Type/index.d.ts:2372
 
 #### Parameters
 
-| Name    | Type                                    | Description      |
-| :------ | :-------------------------------------- | :--------------- |
-| `other` | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数数据 |
+| Name    | Type                                    | Description |
+| :------ | :-------------------------------------- | :---------- |
+| `other` | [`Quaternion`](Type.Type.Quaternion.md) | 四元数数据  |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 `this`
-
-#### Defined in
-
-Type/index.d.ts:2310
 
 ▸ **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](Type.Type.Quaternion.md)
 
@@ -604,22 +492,18 @@ Type/index.d.ts:2310
 
 #### Parameters
 
-| Name | Type     | Description                     |
-| :--- | :------- | :------------------------------ |
-| `x?` | `number` | usage:四元数的 x 分量 default:0 |
-| `y?` | `number` | usage:四元数的 y 分量 default:0 |
-| `z?` | `number` | usage:四元数的 z 分量 default:0 |
-| `w?` | `number` | usage:四元数的 w 分量 default:0 |
+| Name | Type     | Description               |
+| :--- | :------- | :------------------------ |
+| `x?` | `number` | 四元数的 x 分量 default:0 |
+| `y?` | `number` | 四元数的 y 分量 default:0 |
+| `z?` | `number` | 四元数的 z 分量 default:0 |
+| `w?` | `number` | 四元数的 w 分量 default:0 |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 `this`
-
-#### Defined in
-
-Type/index.d.ts:2320
 
 ---
 
@@ -637,17 +521,13 @@ Type/index.d.ts:2320
 
 #### Parameters
 
-| Name    | Type                            | Description        |
-| :------ | :------------------------------ | :----------------- |
-| `euler` | [`Vector`](Type.Type.Vector.md) | usage:传入的欧拉角 |
+| Name    | Type                            | Description  |
+| :------ | :------------------------------ | :----------- |
+| `euler` | [`Vector`](Type.Type.Vector.md) | 传入的欧拉角 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:2326
 
 ---
 
@@ -665,19 +545,15 @@ Type/index.d.ts:2326
 
 #### Parameters
 
-| Name    | Type                                    | Description            |
-| :------ | :-------------------------------------- | :--------------------- |
-| `other` | [`Quaternion`](Type.Type.Quaternion.md) | usage:比对的目标四元数 |
+| Name    | Type                                    | Description      |
+| :------ | :-------------------------------------- | :--------------- |
+| `other` | [`Quaternion`](Type.Type.Quaternion.md) | 比对的目标四元数 |
 
 #### Returns
 
 `boolean`
 
 比对后的结果
-
-#### Defined in
-
-Type/index.d.ts:2347
 
 ---
 
@@ -699,10 +575,6 @@ Type/index.d.ts:2347
 
 旋转数据
 
-#### Defined in
-
-Type/index.d.ts:2417
-
 ---
 
 ### toString
@@ -722,10 +594,6 @@ Type/index.d.ts:2417
 `string`
 
 四元数值字符串
-
-#### Defined in
-
-Type/index.d.ts:2423
 
 ---
 
@@ -747,20 +615,16 @@ Type/index.d.ts:2423
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:目标四元数                              |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 目标四元数                              |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2166
 
 ---
 
@@ -782,20 +646,16 @@ Type/index.d.ts:2166
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2244
 
 ---
 
@@ -813,20 +673,16 @@ Type/index.d.ts:2244
 
 #### Parameters
 
-| Name | Type                                    | Description    |
-| :--- | :-------------------------------------- | :------------- |
-| `a`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a |
-| `b`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b |
+| Name | Type                                    | Description |
+| :--- | :-------------------------------------- | :---------- |
+| `a`  | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a    |
+| `b`  | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b    |
 
 #### Returns
 
 `number`
 
 返回一个结果数
-
-#### Defined in
-
-Type/index.d.ts:2174
 
 ---
 
@@ -844,21 +700,17 @@ Type/index.d.ts:2174
 
 #### Parameters
 
-| Name       | Type                                    | Description                                 |
-| :--------- | :-------------------------------------- | :------------------------------------------ |
-| `a`        | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                              |
-| `b`        | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b                              |
-| `epsilon?` | `number`                                | usage:最小误差数 default:MathDefine.EPSILON |
+| Name       | Type                                    | Description                           |
+| :--------- | :-------------------------------------- | :------------------------------------ |
+| `a`        | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                              |
+| `b`        | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b                              |
+| `epsilon?` | `number`                                | 最小误差数 default:MathDefine.EPSILON |
 
 #### Returns
 
 `boolean`
 
 返回是否相等的结果
-
-#### Defined in
-
-Type/index.d.ts:2270
 
 ---
 
@@ -880,20 +732,16 @@ Type/index.d.ts:2270
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `z`      | `number`                                | usage:绕 z 旋转的角度值                       |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `z`      | `number`                                | 绕 z 旋转的角度值                       |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2045
 
 ---
 
@@ -915,22 +763,18 @@ Type/index.d.ts:2045
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `xAxis`  | [`Vector`](Type.Type.Vector.md)         | usage:x 轴的向量值                            |
-| `yAxis`  | [`Vector`](Type.Type.Vector.md)         | usage:y 轴的向量值                            |
-| `zAxis`  | [`Vector`](Type.Type.Vector.md)         | usage:z 轴的向量值                            |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `xAxis`  | [`Vector`](Type.Type.Vector.md)         | x 轴的向量值                            |
+| `yAxis`  | [`Vector`](Type.Type.Vector.md)         | y 轴的向量值                            |
+| `zAxis`  | [`Vector`](Type.Type.Vector.md)         | z 轴的向量值                            |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:1985
 
 ---
 
@@ -952,21 +796,17 @@ Type/index.d.ts:1985
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `axis`   | [`Vector`](Type.Type.Vector.md)         | usage:旋转轴                                  |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `axis`   | [`Vector`](Type.Type.Vector.md)         | 旋转轴                                  |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2014
 
 ---
 
@@ -988,20 +828,16 @@ Type/index.d.ts:2014
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `m`      | [`Matrix3x3`](Type.Type.Matrix3x3.md)   | usage:三维矩阵                                |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `m`      | [`Matrix3x3`](Type.Type.Matrix3x3.md)   | 三维矩阵                                |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2027
 
 ---
 
@@ -1023,20 +859,16 @@ Type/index.d.ts:2027
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `v`      | [`Rotation`](Type.Type.Rotation.md)     | usage:读取的字符串数据                        |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `v`      | [`Rotation`](Type.Type.Rotation.md)     | 读取的字符串数据                        |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:1974
 
 ---
 
@@ -1058,21 +890,17 @@ Type/index.d.ts:1974
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `view`   | [`Vector`](Type.Type.Vector.md)         | usage:视口的前向量                            |
-| `up?`    | [`Vector`](Type.Type.Vector.md)         | usage:上方向量 default:null                   |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `view`   | [`Vector`](Type.Type.Vector.md)         | 视口的前向量                            |
+| `up?`    | [`Vector`](Type.Type.Vector.md)         | 上方向量 default:null                   |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2000
 
 ---
 
@@ -1094,20 +922,16 @@ Type/index.d.ts:2000
 
 #### Parameters
 
-| Name     | Type                                    | Description                             |
-| :------- | :-------------------------------------- | :-------------------------------------- |
-| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:目标四元数                        |
-| `outer?` | [`Vector`](Type.Type.Vector.md)         | usage:被写入的 Vector 对象 default:null |
+| Name     | Type                                    | Description                       |
+| :------- | :-------------------------------------- | :-------------------------------- |
+| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | 目标四元数                        |
+| `outer?` | [`Vector`](Type.Type.Vector.md)         | 被写入的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 返回一个三维向量
-
-#### Defined in
-
-Type/index.d.ts:2064
 
 ---
 
@@ -1125,19 +949,15 @@ Type/index.d.ts:2064
 
 #### Parameters
 
-| Name | Type                                    | Description      |
-| :--- | :-------------------------------------- | :--------------- |
-| `q`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:目标四元数 |
+| Name | Type                                    | Description |
+| :--- | :-------------------------------------- | :---------- |
+| `q`  | [`Quaternion`](Type.Type.Quaternion.md) | 目标四元数  |
 
 #### Returns
 
 `number`
 
 返回一个弧度值
-
-#### Defined in
-
-Type/index.d.ts:2071
 
 ---
 
@@ -1159,20 +979,16 @@ Type/index.d.ts:2071
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2235
 
 ---
 
@@ -1194,22 +1010,18 @@ Type/index.d.ts:2235
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b                                |
-| `t`      | `number`                                | usage:插值（通常为 0-1 之间)                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b                                |
+| `t`      | `number`                                | 插值（通常为 0-1 之间)                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2185
 
 ---
 
@@ -1231,21 +1043,17 @@ Type/index.d.ts:2185
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b                                |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b                                |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2091
 
 ---
 
@@ -1267,21 +1075,17 @@ Type/index.d.ts:2091
 
 #### Parameters
 
-| Name     | Type                                    | Description                             |
-| :------- | :-------------------------------------- | :-------------------------------------- |
-| `a`      | [`Vector`](Type.Type.Vector.md)         | usage:目标向量                          |
-| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数                            |
-| `outer?` | [`Vector`](Type.Type.Vector.md)         | usage:被写入的 Vector 对象 default:null |
+| Name     | Type                                    | Description                       |
+| :------- | :-------------------------------------- | :-------------------------------- |
+| `a`      | [`Vector`](Type.Type.Vector.md)         | 目标向量                          |
+| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数                            |
+| `outer?` | [`Vector`](Type.Type.Vector.md)         | 被写入的 Vector 对象 default:null |
 
 #### Returns
 
 [`Vector`](Type.Type.Vector.md)
 
 返回一个旋转后的三维向量
-
-#### Defined in
-
-Type/index.d.ts:2081
 
 ---
 
@@ -1303,20 +1107,16 @@ Type/index.d.ts:2081
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2253
 
 ---
 
@@ -1338,22 +1138,18 @@ Type/index.d.ts:2253
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `rot`    | [`Quaternion`](Type.Type.Quaternion.md) | usage:被旋转的四元数                          |
-| `axis`   | [`Vector`](Type.Type.Vector.md)         | usage:代表旋转轴的三维向量                    |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `rot`    | [`Quaternion`](Type.Type.Quaternion.md) | 被旋转的四元数                          |
+| `axis`   | [`Vector`](Type.Type.Vector.md)         | 代表旋转轴的三维向量                    |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2136
 
 ---
 
@@ -1375,22 +1171,18 @@ Type/index.d.ts:2136
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `rot`    | [`Quaternion`](Type.Type.Quaternion.md) | usage:需要变换的四元数                        |
-| `axis`   | [`Vector`](Type.Type.Vector.md)         | usage:代表旋转轴的三维向量                    |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `rot`    | [`Quaternion`](Type.Type.Quaternion.md) | 需要变换的四元数                        |
+| `axis`   | [`Vector`](Type.Type.Vector.md)         | 代表旋转轴的三维向量                    |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2152
 
 ---
 
@@ -1412,21 +1204,17 @@ Type/index.d.ts:2152
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数                                  |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数                                  |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2105
 
 ---
 
@@ -1448,21 +1236,17 @@ Type/index.d.ts:2105
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数                                  |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数                                  |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2115
 
 ---
 
@@ -1484,21 +1268,17 @@ Type/index.d.ts:2115
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数                                  |
-| `rad`    | `number`                                | usage:弧度值                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数                                  |
+| `rad`    | `number`                                | 弧度值                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2125
 
 ---
 
@@ -1520,21 +1300,17 @@ Type/index.d.ts:2125
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Vector`](Type.Type.Vector.md)         | usage:向量 a                                  |
-| `b`      | [`Vector`](Type.Type.Vector.md)         | usage:向量 b                                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Vector`](Type.Type.Vector.md)         | 向量 a                                  |
+| `b`      | [`Vector`](Type.Type.Vector.md)         | 向量 b                                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2055
 
 ---
 
@@ -1556,22 +1332,18 @@ Type/index.d.ts:2055
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b                                |
-| `t`      | `number`                                | usage:插值（通常为 0-1 之间)                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b                                |
+| `t`      | `number`                                | 插值（通常为 0-1 之间)                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2201
 
 ---
 
@@ -1593,24 +1365,20 @@ Type/index.d.ts:2201
 
 #### Parameters
 
-| Name     | Type                                    | Description                                   |
-| :------- | :-------------------------------------- | :-------------------------------------------- |
-| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a                                |
-| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b                                |
-| `c`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 c                                |
-| `d`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 d                                |
-| `t`      | `number`                                | usage:插值（通常为 0-1 之间)                  |
-| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | usage:接收结果的 Quaternion 对象 default:null |
+| Name     | Type                                    | Description                             |
+| :------- | :-------------------------------------- | :-------------------------------------- |
+| `a`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a                                |
+| `b`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b                                |
+| `c`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 c                                |
+| `d`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 d                                |
+| `t`      | `number`                                | 插值（通常为 0-1 之间)                  |
+| `outer?` | [`Quaternion`](Type.Type.Quaternion.md) | 接收结果的 Quaternion 对象 default:null |
 
 #### Returns
 
 [`Quaternion`](Type.Type.Quaternion.md)
 
 返回一个四元数
-
-#### Defined in
-
-Type/index.d.ts:2219
 
 ---
 
@@ -1628,20 +1396,16 @@ Type/index.d.ts:2219
 
 #### Parameters
 
-| Name | Type                                    | Description    |
-| :--- | :-------------------------------------- | :------------- |
-| `a`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 a |
-| `b`  | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数 b |
+| Name | Type                                    | Description |
+| :--- | :-------------------------------------- | :---------- |
+| `a`  | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 a    |
+| `b`  | [`Quaternion`](Type.Type.Quaternion.md) | 四元数 b    |
 
 #### Returns
 
 `boolean`
 
 返回是否相等的结果
-
-#### Defined in
-
-Type/index.d.ts:2261
 
 ---
 
@@ -1663,17 +1427,13 @@ Type/index.d.ts:2261
 
 #### Parameters
 
-| Name     | Type                                    | Description                                |
-| :------- | :-------------------------------------- | :----------------------------------------- |
-| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | usage:四元数信息                           |
-| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md)   | usage:被写入的 Matrix3x3 对象 default:null |
+| Name     | Type                                    | Description                          |
+| :------- | :-------------------------------------- | :----------------------------------- |
+| `q`      | [`Quaternion`](Type.Type.Quaternion.md) | 四元数信息                           |
+| `outer?` | [`Matrix3x3`](Type.Type.Matrix3x3.md)   | 被写入的 Matrix3x3 对象 default:null |
 
 #### Returns
 
 [`Matrix3x3`](Type.Type.Matrix3x3.md)
 
 返回一个三维矩阵
-
-#### Defined in
-
-Type/index.d.ts:2036

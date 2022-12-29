@@ -1,54 +1,34 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIBehavior
+[UI](../modules/UI.UI.md) / UIBehavior
 
-# Class: UIBehavior
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIBehavior
-
-**`Author`**
-
-jie.wu
+# UIBehavior <Badge type="tip" text="Class" />
 
 **`Description`**
 
 UI 的驱动脚本基类
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
+| Accessors                                                                                                                             |
+| :------------------------------------------------------------------------------------------------------------------------------------ |
+| **[canUpdate](UI.UI.UIBehavior.md#canupdate)**(): `boolean` <br> 是否能触发 onUpdate 函数                                             |
+| **[fullScreen](UI.UI.UIBehavior.md#fullscreen)**(`boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小  |
+| **[layer](UI.UI.UIBehavior.md#layer)**(): `number` <br> 获取 UI 的 Layer 层级,显示可能会影响到 zOrder,使用 UIManager 显示 UI 时，     |
+| **[rootCanvas](UI.UI.UIBehavior.md#rootcanvas)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取 UI 的根 Canvas 节点                         |
+| **[uiObject](UI.UI.UIBehavior.md#uiobject)**(): [`Widget`](UI.UI.Widget.md) <br> 获取脚本挂载的 UI 对象                               |
+| **[uiWidgetBase](UI.UI.UIBehavior.md#uiwidgetbase)**(): [`UserWidget`](UI.UI.UserWidget.md) <br> 转化 UIObject 为指定 UserWidget 对象 |
+| **[visible](UI.UI.UIBehavior.md#visible)**(): `boolean` <br> 获取 UI 是否显示                                                         |
 
-- [constructor](UI.UI.UIBehavior.md#constructor)
-
-### Accessors
-
-- [canUpdate](UI.UI.UIBehavior.md#canupdate)
-- [fullScreen](UI.UI.UIBehavior.md#fullscreen)
-- [layer](UI.UI.UIBehavior.md#layer)
-- [rootCanvas](UI.UI.UIBehavior.md#rootcanvas)
-- [uiObject](UI.UI.UIBehavior.md#uiobject)
-- [uiWidgetBase](UI.UI.UIBehavior.md#uiwidgetbase)
-- [visible](UI.UI.UIBehavior.md#visible)
-
-### Methods
-
-- [destroy](UI.UI.UIBehavior.md#destroy)
-- [detectDrag](UI.UI.UIBehavior.md#detectdrag)
-- [detectDragIfPressed](UI.UI.UIBehavior.md#detectdragifpressed)
-- [newDragDrop](UI.UI.UIBehavior.md#newdragdrop)
-- [setVisible](UI.UI.UIBehavior.md#setvisible)
-- [addBehavior](UI.UI.UIBehavior.md#addbehavior)
-- [clearBehavior](UI.UI.UIBehavior.md#clearbehavior)
-- [getBehavior](UI.UI.UIBehavior.md#getbehavior)
-- [removeBehavior](UI.UI.UIBehavior.md#removebehavior)
-
-## Constructors
-
-### constructor
-
-• **new UIBehavior**()
+| Methods                                                                                                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[destroy](UI.UI.UIBehavior.md#destroy)**(): `void` <br> 销毁 UI 对象                                                                                                                                                                                     |
+| **[detectDrag](UI.UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 触发 DragDrop 事件的检测                                                                                                  |
+| **[detectDragIfPressed](UI.UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.UI.PointerEvent.md), [`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 如果事件检测通过就触发 DragDrop 事件的回复                     |
+| **[newDragDrop](UI.UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.UI.DragPivot.md), [`Vector2`](Type.Type.Vector2.md)): [`DragDropOperation`](UI.UI.DragDropOperation.md) <br> 创建 DragDrop 事件 |
+| **[setVisible](UI.UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置 UI 是否显示,会触发绑定的脚本的 OnShow/OnHide 事件，可以传递参数                                                                                                   |
+| **[addBehavior](UI.UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录                                                                                                                                                    |
+| **[clearBehavior](UI.UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录                                                                                                                                                                   |
+| **[getBehavior](UI.UI.UIBehavior.md#getbehavior)**(`string`): `any` <br> 获取一个全局的行为记录                                                                                                                                                            |
+| **[removeBehavior](UI.UI.UIBehavior.md#removebehavior)**(`string`): `void` <br> 移除一个全局的行为记录                                                                                                                                                     |
 
 ## Accessors
 
@@ -70,10 +50,6 @@ usage:客户端
 
 返回能否触发的标志
 
-#### Defined in
-
-UI/index.d.ts:2680
-
 • `set` **canUpdate**(`bCanUpdate`): `void`
 
 **`Description`**
@@ -86,17 +62,13 @@ UI/index.d.ts:2680
 
 #### Parameters
 
-| Name         | Type      | Description          |
-| :----------- | :-------- | :------------------- |
-| `bCanUpdate` | `boolean` | usage:能否触发的标志 |
+| Name         | Type      | Description    |
+| :----------- | :-------- | :------------- |
+| `bCanUpdate` | `boolean` | 能否触发的标志 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2686
 
 ---
 
@@ -114,17 +86,13 @@ UI/index.d.ts:2686
 
 #### Parameters
 
-| Name     | Type      | Description                       |
-| :------- | :-------- | :-------------------------------- |
-| `inFull` | `boolean` | usage: 设置为随父节点大小全屏适配 |
+| Name     | Type      | Description                |
+| :------- | :-------- | :------------------------- |
+| `inFull` | `boolean` | 设置为随父节点大小全屏适配 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2709
 
 ---
 
@@ -145,7 +113,7 @@ UI/index.d.ts:2709
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 
-```
+```ts
 Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
 // 内置定义好的层级
 [
@@ -166,10 +134,6 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 Layer 层级
 
-#### Defined in
-
-UI/index.d.ts:2763
-
 • `set` **layer**(`inLayer`): `void`
 
 **`Description`**
@@ -185,7 +149,7 @@ UI/index.d.ts:2763
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 
-```
+```ts
 this.layer = Extension.UILayerScene;
 // 内置定义好的层级
 [
@@ -202,17 +166,13 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name      | Type     | Description            |
-| :-------- | :------- | :--------------------- |
-| `inLayer` | `number` | usage: 设置 Layer 层级 |
+| Name      | Type     | Description     |
+| :-------- | :------- | :-------------- |
+| `inLayer` | `number` | 设置 Layer 层级 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2740
 
 ---
 
@@ -234,10 +194,6 @@ UI/index.d.ts:2740
 
 返回 canvas 节点
 
-#### Defined in
-
-UI/index.d.ts:2769
-
 ---
 
 ### uiObject
@@ -253,10 +209,6 @@ UI/index.d.ts:2769
 [`Widget`](UI.UI.Widget.md)
 
 脚本挂载的 UI 对象
-
-#### Defined in
-
-UI/index.d.ts:2668
 
 ---
 
@@ -278,10 +230,6 @@ UI/index.d.ts:2668
 
 返回转化指定 UserWidget 对象
 
-#### Defined in
-
-UI/index.d.ts:2674
-
 ---
 
 ### visible
@@ -302,10 +250,6 @@ UI/index.d.ts:2674
 
 返回是否可见
 
-#### Defined in
-
-UI/index.d.ts:2697
-
 • `set` **visible**(`inVisible`): `void`
 
 **`Description`**
@@ -318,17 +262,13 @@ UI/index.d.ts:2697
 
 #### Parameters
 
-| Name        | Type      | Description                                                                |
-| :---------- | :-------- | :------------------------------------------------------------------------- |
-| `inVisible` | `boolean` | usage: 设置是否可见 可见设置为 SelfHitTestInvisible,不可见设置为 Collapsed |
+| Name        | Type      | Description                                                         |
+| :---------- | :-------- | :------------------------------------------------------------------ |
+| `inVisible` | `boolean` | 设置是否可见 可见设置为 SelfHitTestInvisible,不可见设置为 Collapsed |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2703
 
 ## Methods
 
@@ -348,10 +288,6 @@ UI/index.d.ts:2703
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:2691
-
 ---
 
 ### detectDrag
@@ -368,19 +304,15 @@ UI/index.d.ts:2691
 
 #### Parameters
 
-| Name      | Type                                 | Description                      |
-| :-------- | :----------------------------------- | :------------------------------- |
-| `dragKey` | [`Keys`](../enums/Type.Type.Keys.md) | usage:触发按键 default:Type.Keys |
+| Name      | Type                                 | Description                |
+| :-------- | :----------------------------------- | :------------------------- |
+| `dragKey` | [`Keys`](../enums/Type.Type.Keys.md) | 触发按键 default:Type.Keys |
 
 #### Returns
 
 [`EventReply`](UI.UI.EventReply.md)
 
 返回触发的事件回复
-
-#### Defined in
-
-UI/index.d.ts:2776
 
 ---
 
@@ -398,20 +330,16 @@ UI/index.d.ts:2776
 
 #### Parameters
 
-| Name           | Type                                    | Description              |
-| :------------- | :-------------------------------------- | :----------------------- |
-| `inPointEvent` | [`PointerEvent`](UI.UI.PointerEvent.md) | usage:传递触发的事件信息 |
-| `dragKey`      | [`Keys`](../enums/Type.Type.Keys.md)    | usage:触发按键           |
+| Name           | Type                                    | Description        |
+| :------------- | :-------------------------------------- | :----------------- |
+| `inPointEvent` | [`PointerEvent`](UI.UI.PointerEvent.md) | 传递触发的事件信息 |
+| `dragKey`      | [`Keys`](../enums/Type.Type.Keys.md)    | 触发按键           |
 
 #### Returns
 
 [`EventReply`](UI.UI.EventReply.md)
 
 返回触发的事件回复
-
-#### Defined in
-
-UI/index.d.ts:2784
 
 ---
 
@@ -429,23 +357,19 @@ UI/index.d.ts:2784
 
 #### Parameters
 
-| Name             | Type                                       | Description                                               |
-| :--------------- | :----------------------------------------- | :-------------------------------------------------------- |
-| `inVisualWidget` | [`Widget`](UI.UI.Widget.md)                | usage:拖拽显示的 UI 控件                                  |
-| `inTag?`         | `string`                                   | usage:标签文本 default:""                                 |
-| `inPayLoad?`     | `any`                                      | usage:拖拽事件数据信息 default:null                       |
-| `inPivot?`       | [`DragPivot`](../enums/UI.UI.DragPivot.md) | usage:拖拽显示 UI 的锚点 default:UIType.DragPivot.TopLeft |
-| `inOffset?`      | [`Vector2`](Type.Type.Vector2.md)          | usage:拖拽显示 UI 相对于锚点的偏移 default:vector2(0,0)   |
+| Name             | Type                                       | Description                                         |
+| :--------------- | :----------------------------------------- | :-------------------------------------------------- |
+| `inVisualWidget` | [`Widget`](UI.UI.Widget.md)                | 拖拽显示的 UI 控件                                  |
+| `inTag?`         | `string`                                   | 标签文本 default:""                                 |
+| `inPayLoad?`     | `any`                                      | 拖拽事件数据信息 default:null                       |
+| `inPivot?`       | [`DragPivot`](../enums/UI.UI.DragPivot.md) | 拖拽显示 UI 的锚点 default:UIType.DragPivot.TopLeft |
+| `inOffset?`      | [`Vector2`](Type.Type.Vector2.md)          | 拖拽显示 UI 相对于锚点的偏移 default:vector2(0,0)   |
 
 #### Returns
 
 [`DragDropOperation`](UI.UI.DragDropOperation.md)
 
 返回触发的事件回复
-
-#### Defined in
-
-UI/index.d.ts:2798
 
 ---
 
@@ -463,18 +387,14 @@ UI/index.d.ts:2798
 
 #### Parameters
 
-| Name        | Type                                                                | Description                                                                                                                          |
-| :---------- | :------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
-| `inVisible` | `boolean` \| [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | usage: 设置是否可见,如果是 boolean 类型设置为 SelfHitTestInvisible,不可见设置为 Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
-| `...params` | `any`[]                                                             | usage: 传递给 onShow 的参数                                                                                                          |
+| Name        | Type                                                                | Description                                                                                                                   |
+| :---------- | :------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
+| `inVisible` | `boolean` \| [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 设置是否可见,如果是 boolean 类型设置为 SelfHitTestInvisible,不可见设置为 Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
+| `...params` | `any`[]                                                             | 传递给 onShow 的参数                                                                                                          |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2717
 
 ---
 
@@ -492,18 +412,14 @@ UI/index.d.ts:2717
 
 #### Parameters
 
-| Name    | Type     | Description     |
-| :------ | :------- | :-------------- |
-| `key`   | `string` | usage: 行为标记 |
-| `value` | `any`    | usage: 行为值   |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `key`   | `string` | 行为标记    |
+| `value` | `any`    | 行为值      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2645
 
 ---
 
@@ -523,10 +439,6 @@ UI/index.d.ts:2645
 
 `void`
 
-#### Defined in
-
-UI/index.d.ts:2656
-
 ---
 
 ### getBehavior
@@ -543,19 +455,15 @@ UI/index.d.ts:2656
 
 #### Parameters
 
-| Name  | Type     | Description     |
-| :---- | :------- | :-------------- |
-| `key` | `string` | usage: 行为标记 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `key` | `string` | 行为标记    |
 
 #### Returns
 
 `any`
 
 返回一个行为
-
-#### Defined in
-
-UI/index.d.ts:2663
 
 ---
 
@@ -573,14 +481,10 @@ UI/index.d.ts:2663
 
 #### Parameters
 
-| Name  | Type     | Description     |
-| :---- | :------- | :-------------- |
-| `key` | `string` | usage: 行为标记 |
+| Name  | Type     | Description |
+| :---- | :------- | :---------- |
+| `key` | `string` | 行为标记    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-UI/index.d.ts:2651

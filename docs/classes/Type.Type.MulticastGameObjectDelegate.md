@@ -1,38 +1,18 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / MulticastGameObjectDelegate
+[Type](../modules/Type.Type.md) / MulticastGameObjectDelegate
 
-# Class: MulticastGameObjectDelegate
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).MulticastGameObjectDelegate
-
-**`Author`**
-
-吴思
+# MulticastGameObjectDelegate <Badge type="tip" text="Class" />
 
 **`Description`**
 
 广播代理
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Type.Type.MulticastGameObjectDelegate.md#constructor)
-
-### Methods
-
-- [add](Type.Type.MulticastGameObjectDelegate.md#add)
-- [broadcast](Type.Type.MulticastGameObjectDelegate.md#broadcast)
-- [remove](Type.Type.MulticastGameObjectDelegate.md#remove)
-
-## Constructors
-
-### constructor
-
-• **new MulticastGameObjectDelegate**()
+| Methods                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.MulticastGameObjectDelegate.md#add)**(`GameObjectDelegateFuncType`): `void` <br> 添加回调函数       |
+| **[broadcast](Type.Type.MulticastGameObjectDelegate.md#broadcast)**(`GameObject`): `void` <br> 触发代理事件           |
+| **[remove](Type.Type.MulticastGameObjectDelegate.md#remove)**(`GameObjectDelegateFuncType`): `void` <br> 删除回调函数 |
 
 ## Methods
 
@@ -50,17 +30,13 @@ usage:双端
 
 #### Parameters
 
-| Name   | Type                         | Description              |
-| :----- | :--------------------------- | :----------------------- |
-| `func` | `GameObjectDelegateFuncType` | usage: 回调函数 default: |
+| Name   | Type                         | Description       |
+| :----- | :--------------------------- | :---------------- |
+| `func` | `GameObjectDelegateFuncType` | 回调函数 default: |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:184
 
 ---
 
@@ -78,17 +54,13 @@ Type/index.d.ts:184
 
 #### Parameters
 
-| Name  | Type         | Description         |
-| :---- | :----------- | :------------------ |
-| `obj` | `GameObject` | usage: 触发物体对象 |
+| Name  | Type         | Description  |
+| :---- | :----------- | :----------- |
+| `obj` | `GameObject` | 触发物体对象 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:196
 
 ---
 
@@ -106,14 +78,10 @@ Type/index.d.ts:196
 
 #### Parameters
 
-| Name   | Type                         | Description     |
-| :----- | :--------------------------- | :-------------- |
-| `func` | `GameObjectDelegateFuncType` | usage: 回调函数 |
+| Name   | Type                         | Description |
+| :----- | :--------------------------- | :---------- |
+| `func` | `GameObjectDelegateFuncType` | 回调函数    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Type/index.d.ts:190

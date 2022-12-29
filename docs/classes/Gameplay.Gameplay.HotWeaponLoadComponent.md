@@ -1,49 +1,29 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponLoadComponent
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponLoadComponent
 
-# Class: HotWeaponLoadComponent
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponLoadComponent
+# HotWeaponLoadComponent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 热武器上膛组件
 
-**`Network Status`**
-
-usage: 双端
-
-**`Author`**
-
-jun.zhang
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                     |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[onEndLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端上膛结束时执行绑定函数     |
+| **[onEndLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数     |
+| **[onStartLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始上膛时执行绑定函数 |
+| **[onStartLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数 |
 
-- [constructor](Gameplay.Gameplay.HotWeaponLoadComponent.md#constructor)
+| Accessors                                                                                                                                     |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[animationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画 GUID                           |
+| **[loadAfterFireEnable](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadafterfireenable)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能 |
+| **[loadDuration](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间                                    |
 
-### Properties
-
-- [onEndLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadclient)
-- [onEndLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadserver)
-- [onStartLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadclient)
-- [onStartLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadserver)
-
-### Accessors
-
-- [animationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#animationguid)
-- [loadAfterFireEnable](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadafterfireenable)
-- [loadDuration](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadduration)
-
-### Methods
-
-- [hadAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#hadanimationguid)
-
-## Constructors
-
-### constructor
-
-• **new HotWeaponLoadComponent**()
+| Methods                                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------- |
+| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画 GUID |
 
 ## Properties
 
@@ -55,10 +35,6 @@ jun.zhang
 
 客户端上膛结束时执行绑定函数
 
-#### Defined in
-
-Gameplay/index.d.ts:11672
-
 ---
 
 ### onEndLoadServer
@@ -68,10 +44,6 @@ Gameplay/index.d.ts:11672
 **`Description`**
 
 服务器上膛结束时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11668
 
 ---
 
@@ -83,10 +55,6 @@ Gameplay/index.d.ts:11668
 
 客户端开始上膛时执行绑定函数
 
-#### Defined in
-
-Gameplay/index.d.ts:11664
-
 ---
 
 ### onStartLoadServer
@@ -96,10 +64,6 @@ Gameplay/index.d.ts:11664
 **`Description`**
 
 服务器开始上膛时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11660
 
 ## Accessors
 
@@ -121,10 +85,6 @@ Gameplay/index.d.ts:11660
 
 绑定的动画 GUID
 
-#### Defined in
-
-Gameplay/index.d.ts:11684
-
 • `set` **animationGuid**(`guid`): `void`
 
 **`Description`**
@@ -137,17 +97,13 @@ Gameplay/index.d.ts:11684
 
 #### Parameters
 
-| Name   | Type     | Description                      |
-| :----- | :------- | :------------------------------- |
-| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
+| Name   | Type     | Description               |
+| :----- | :------- | :------------------------ |
+| `guid` | `string` | 需要设置的蒙太奇动画 guid |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11678
 
 ---
 
@@ -169,10 +125,6 @@ Gameplay/index.d.ts:11678
 
 是否开启开火后自动上膛的功能
 
-#### Defined in
-
-Gameplay/index.d.ts:11703
-
 • `set` **loadAfterFireEnable**(`enable`): `void`
 
 **`Description`**
@@ -189,17 +141,13 @@ Gameplay/index.d.ts:11703
 
 #### Parameters
 
-| Name     | Type      | Description                         |
-| :------- | :-------- | :---------------------------------- |
-| `enable` | `boolean` | usage: 是否开启开火后自动上膛的功能 |
+| Name     | Type      | Description                  |
+| :------- | :-------- | :--------------------------- |
+| `enable` | `boolean` | 是否开启开火后自动上膛的功能 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11697
 
 ---
 
@@ -221,10 +169,6 @@ Gameplay/index.d.ts:11697
 
 上膛时间
 
-#### Defined in
-
-Gameplay/index.d.ts:11715
-
 • `set` **loadDuration**(`time`): `void`
 
 **`Description`**
@@ -237,17 +181,13 @@ Gameplay/index.d.ts:11715
 
 #### Parameters
 
-| Name   | Type     | Description     |
-| :----- | :------- | :-------------- |
-| `time` | `number` | usage: 上膛时间 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `time` | `number` | 上膛时间    |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11709
 
 ## Methods
 
@@ -268,7 +208,3 @@ Gameplay/index.d.ts:11709
 `boolean`
 
 是否有动画 GUID
-
-#### Defined in
-
-Gameplay/index.d.ts:11690

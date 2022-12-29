@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIConstraintHorizontal
+[UI](../modules/UI.UI.md) / UIConstraintHorizontal
 
-# Enumeration: UIConstraintHorizontal
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIConstraintHorizontal
+# UIConstraintHorizontal <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Center](UI.UI.UIConstraintHorizontal.md#center)
-- [Left](UI.UI.UIConstraintHorizontal.md#left)
-- [LeftRight](UI.UI.UIConstraintHorizontal.md#leftright)
-- [Right](UI.UI.UIConstraintHorizontal.md#right)
-- [Scale](UI.UI.UIConstraintHorizontal.md#scale)
+| Enumeration Members                                                                    |
+| :------------------------------------------------------------------------------------- |
+| **[Center](UI.UI.UIConstraintHorizontal.md#center)** = `3` <br> 居中对齐               |
+| **[Left](UI.UI.UIConstraintHorizontal.md#left)** = `0` <br> 左对齐                     |
+| **[LeftRight](UI.UI.UIConstraintHorizontal.md#leftright)** = `2` <br> 距离左右边距固定 |
+| **[Right](UI.UI.UIConstraintHorizontal.md#right)** = `1` <br> 右对齐                   |
+| **[Scale](UI.UI.UIConstraintHorizontal.md#scale)** = `4` <br> 距离左右百分比固定       |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 居中对齐
 
-#### Defined in
-
-UI/index.d.ts:3429
-
 ---
 
 ### Left
@@ -37,10 +31,6 @@ UI/index.d.ts:3429
 • **Left** = `0`
 
 左对齐
-
-#### Defined in
-
-UI/index.d.ts:3423
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3423
 
 距离左右边距固定
 
-#### Defined in
-
-UI/index.d.ts:3427
-
 ---
 
 ### Right
@@ -62,10 +48,6 @@ UI/index.d.ts:3427
 
 右对齐
 
-#### Defined in
-
-UI/index.d.ts:3425
-
 ---
 
 ### Scale
@@ -73,7 +55,3 @@ UI/index.d.ts:3425
 • **Scale** = `4`
 
 距离左右百分比固定
-
-#### Defined in
-
-UI/index.d.ts:3431

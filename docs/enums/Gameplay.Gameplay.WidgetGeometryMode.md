@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / WidgetGeometryMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetGeometryMode
 
-# Enumeration: WidgetGeometryMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).WidgetGeometryMode
+# WidgetGeometryMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@ UI 形状枚举
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Cylinder](Gameplay.Gameplay.WidgetGeometryMode.md#cylinder)
-- [Plane](Gameplay.Gameplay.WidgetGeometryMode.md#plane)
+| Enumeration Members                                                              |
+| :------------------------------------------------------------------------------- |
+| **[Cylinder](Gameplay.Gameplay.WidgetGeometryMode.md#cylinder)** = `1` <br> 圆柱 |
+| **[Plane](Gameplay.Gameplay.WidgetGeometryMode.md#plane)** = `0` <br> 平面       |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@ UI 形状枚举
 
 圆柱
 
-#### Defined in
-
-Gameplay/index.d.ts:10261
-
 ---
 
 ### Plane
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:10261
 • **Plane** = `0`
 
 平面
-
-#### Defined in
-
-Gameplay/index.d.ts:10259

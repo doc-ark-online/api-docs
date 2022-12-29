@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponState
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponState
 
-# Enumeration: HotWeaponState
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponState
+# HotWeaponState <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Firing](Gameplay.Gameplay.HotWeaponState.md#firing)
-- [Idle](Gameplay.Gameplay.HotWeaponState.md#idle)
-- [Loading](Gameplay.Gameplay.HotWeaponState.md#loading)
-- [Reloading](Gameplay.Gameplay.HotWeaponState.md#reloading)
+| Enumeration Members                                                                             |
+| :---------------------------------------------------------------------------------------------- |
+| **[Firing](Gameplay.Gameplay.HotWeaponState.md#firing)** = `3` <br> 射击中                      |
+| **[Idle](Gameplay.Gameplay.HotWeaponState.md#idle)** = `0` <br> 准备好，可以进行射击 非射机姿态 |
+| **[Loading](Gameplay.Gameplay.HotWeaponState.md#loading)** = `2` <br> 上膛                      |
+| **[Reloading](Gameplay.Gameplay.HotWeaponState.md#reloading)** = `1` <br> 换弹夹，装弹          |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 射击中
 
-#### Defined in
-
-Gameplay/index.d.ts:10988
-
 ---
 
 ### Idle
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:10988
 • **Idle** = `0`
 
 准备好，可以进行射击 非射机姿态
-
-#### Defined in
-
-Gameplay/index.d.ts:10982
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:10982
 
 上膛
 
-#### Defined in
-
-Gameplay/index.d.ts:10986
-
 ---
 
 ### Reloading
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:10986
 • **Reloading** = `1`
 
 换弹夹，装弹
-
-#### Defined in
-
-Gameplay/index.d.ts:10984

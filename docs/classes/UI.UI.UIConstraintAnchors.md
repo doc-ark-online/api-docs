@@ -1,37 +1,17 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIConstraintAnchors
+[UI](../modules/UI.UI.md) / UIConstraintAnchors
 
-# Class: UIConstraintAnchors
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIConstraintAnchors
-
-**`Author`**
-
-jie.wu
+# UIConstraintAnchors <Badge type="tip" text="Class" />
 
 **`Description`**
 
 节点对齐规则
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.UIConstraintAnchors.md#constructor)
-
-### Properties
-
-- [constraintHorizontal](UI.UI.UIConstraintAnchors.md#constrainthorizontal)
-- [constraintVertical](UI.UI.UIConstraintAnchors.md#constraintvertical)
-
-## Constructors
-
-### constructor
-
-• **new UIConstraintAnchors**()
+| Properties                                                                                                                                                            |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[constraintHorizontal](UI.UI.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) <br> 水平对齐规则 |
+| **[constraintVertical](UI.UI.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md) <br> 垂直对齐规则         |
 
 **`Description`**
 
@@ -40,10 +20,6 @@ usage:客户端
 **`Effect`**
 
 只在客户端调用生效
-
-#### Defined in
-
-UI/index.d.ts:3915
 
 • **new UIConstraintAnchors**(`InConstraintHorizontal`, `InConstraintVertical`)
 
@@ -57,14 +33,10 @@ UI/index.d.ts:3915
 
 #### Parameters
 
-| Name                     | Type                                                                 | Description        |
-| :----------------------- | :------------------------------------------------------------------- | :----------------- |
-| `InConstraintHorizontal` | [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) | usage:水平对齐规则 |
-| `InConstraintVertical`   | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md)     | usage:垂直对齐规则 |
-
-#### Defined in
-
-UI/index.d.ts:3922
+| Name                     | Type                                                                 | Description  |
+| :----------------------- | :------------------------------------------------------------------- | :----------- |
+| `InConstraintHorizontal` | [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) | 水平对齐规则 |
+| `InConstraintVertical`   | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md)     | 垂直对齐规则 |
 
 ## Properties
 
@@ -76,10 +48,6 @@ UI/index.d.ts:3922
 
 水平对齐规则
 
-#### Defined in
-
-UI/index.d.ts:3927
-
 ---
 
 ### constraintVertical
@@ -89,7 +57,3 @@ UI/index.d.ts:3927
 **`Description`**
 
 垂直对齐规则
-
-#### Defined in
-
-UI/index.d.ts:3929

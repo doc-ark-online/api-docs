@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / CameraLocationMode
+[Gameplay](../modules/Gameplay.Gameplay.md) / CameraLocationMode
 
-# Enumeration: CameraLocationMode
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).CameraLocationMode
+# CameraLocationMode <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [LocationFixed](Gameplay.Gameplay.CameraLocationMode.md#locationfixed)
-- [LocationFollow](Gameplay.Gameplay.CameraLocationMode.md#locationfollow)
+| Enumeration Members                                                                                  |
+| :--------------------------------------------------------------------------------------------------- |
+| **[LocationFixed](Gameplay.Gameplay.CameraLocationMode.md#locationfixed)** = `0` <br> 位置固定       |
+| **[LocationFollow](Gameplay.Gameplay.CameraLocationMode.md#locationfollow)** = `1` <br> 位置跟随目标 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 位置固定
 
-#### Defined in
-
-Gameplay/index.d.ts:1837
-
 ---
 
 ### LocationFollow
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:1837
 • **LocationFollow** = `1`
 
 位置跟随目标
-
-#### Defined in
-
-Gameplay/index.d.ts:1839

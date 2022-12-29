@@ -1,22 +1,12 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / MessageChannelService
+[Service](../modules/Service.Service.md) / MessageChannelService
 
-# Class: MessageChannelService
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).MessageChannelService
-
-**`Author`**
-
-zifei.wu
+# MessageChannelService <Badge type="tip" text="Class" />
 
 **`Instance`**
 
 **`Description`**
 
 支持各端的通信，233、MW 引擎、Web 和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
-
-**`Network Status`**
-
-usage: 客户端
 
 **`Precautions`**
 
@@ -29,33 +19,29 @@ usage: 客户端
 
 使用示例:通道的注册、发送的使用示例
 
-```
+```ts
 // 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
-Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall);
+Service.MessageChannelService.getInstance().registerAction(
+  "ts.test.myaction",
+  this,
+  OnCall
+);
 // 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
-Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}");
+Service.MessageChannelService.getInstance().send(
+  '{"action":"ts.test.myaction","data":{}}'
+);
 // 指定一个目标端toWhom发送消息message，对方无需提前注册就可以收到该消息
 Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 ```
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Service.Service.MessageChannelService.md#constructor)
-
-### Methods
-
-- [registerAction](Service.Service.MessageChannelService.md#registeraction)
-- [send](Service.Service.MessageChannelService.md#send)
-- [sendTo](Service.Service.MessageChannelService.md#sendto)
-- [getInstance](Service.Service.MessageChannelService.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new MessageChannelService**()
+| Methods                                                                                                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[registerAction](Service.Service.MessageChannelService.md#registeraction)**(`string`, `any`, (`data`: `string`) => `void`): `void` <br> 注册需要收到消息的 action 以及对应要调用的回调函数 |
+| **[send](Service.Service.MessageChannelService.md#send)**(`string`): `void` <br> 发送消息到通道上                                                                                            |
+| **[sendTo](Service.Service.MessageChannelService.md#sendto)**([`MessageChannelReceiver`](../enums/Service.Service.MessageChannelReceiver.md), `string`): `void` <br> 发送消息给指定对象      |
+| **[getInstance](Service.Service.MessageChannelService.md#getinstance)**(): [`MessageChannelService`](Service.Service.MessageChannelService.md) <br> 获取 API 实例进行调用                    |
 
 ## Methods
 
@@ -80,26 +66,26 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 使用示例:通道注册 action
 
-```
+```ts
 // 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
-Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall);
+Service.MessageChannelService.getInstance().registerAction(
+  "ts.test.myaction",
+  this,
+  OnCall
+);
 ```
 
 #### Parameters
 
-| Name     | Type                         | Description                                                       |
-| :------- | :--------------------------- | :---------------------------------------------------------------- |
-| `action` | `string`                     | usage:需要被注册的 action，通道收到该 action 的消息会调用对应回调 |
-| `caller` | `any`                        | usage:调用者，一般传 this                                         |
-| `onCall` | (`data`: `string`) => `void` | usage:通道收到消息后应该执行的对应的回调函数                      |
+| Name     | Type                         | Description                                                 |
+| :------- | :--------------------------- | :---------------------------------------------------------- |
+| `action` | `string`                     | 需要被注册的 action，通道收到该 action 的消息会调用对应回调 |
+| `caller` | `any`                        | 调用者，一般传 this                                         |
+| `onCall` | (`data`: `string`) => `void` | 通道收到消息后应该执行的对应的回调函数                      |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:325
 
 ---
 
@@ -126,24 +112,22 @@ Service/index.d.ts:325
 
 使用示例:通道广播消息
 
-```
+```ts
 // 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
-Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}");
+Service.MessageChannelService.getInstance().send(
+  '{"action":"ts.test.myaction","data":{}}'
+);
 ```
 
 #### Parameters
 
-| Name      | Type     | Description          |
-| :-------- | :------- | :------------------- |
-| `message` | `string` | usage:需要发送的消息 |
+| Name      | Type     | Description    |
+| :-------- | :------- | :------------- |
+| `message` | `string` | 需要发送的消息 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:345
 
 ---
 
@@ -168,25 +152,24 @@ Service/index.d.ts:345
 
 使用示例:通道私发消息
 
-```
+```ts
 // 指定一个目标端toWhom:Client发送消息message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"，对方无需提前注册就可以收到该消息
-Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceiver.Client, "{\"action\":\"ts.test.myaction\",\"data\":{}}");
+Service.MessageChannelService.getInstance().sendTo(
+  Service.MessageChannelReceiver.Client,
+  '{"action":"ts.test.myaction","data":{}}'
+);
 ```
 
 #### Parameters
 
-| Name      | Type                                                                           | Description                                         |
-| :-------- | :----------------------------------------------------------------------------- | :-------------------------------------------------- |
-| `toWhom`  | [`MessageChannelReceiver`](../enums/Service.Service.MessageChannelReceiver.md) | usage:指定的对象，使用枚举值 MessageChannelReceiver |
-| `message` | `string`                                                                       | usage:需要发送的消息                                |
+| Name      | Type                                                                           | Description                                   |
+| :-------- | :----------------------------------------------------------------------------- | :-------------------------------------------- |
+| `toWhom`  | [`MessageChannelReceiver`](../enums/Service.Service.MessageChannelReceiver.md) | 指定的对象，使用枚举值 MessageChannelReceiver |
+| `message` | `string`                                                                       | 需要发送的消息                                |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Service/index.d.ts:360
 
 ---
 
@@ -210,7 +193,7 @@ Service/index.d.ts:360
 
 使用示例:通道发送消息
 
-```
+```ts
 // 通过实例调用函数发送消息
 Service.MessageChannelService.getInstance().send(message);
 ```
@@ -220,7 +203,3 @@ Service.MessageChannelService.getInstance().send(message);
 [`MessageChannelService`](Service.Service.MessageChannelService.md)
 
 返回 API 实例用以调用相关功能函数
-
-#### Defined in
-
-Service/index.d.ts:309

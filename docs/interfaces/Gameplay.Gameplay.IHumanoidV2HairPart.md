@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2HairPart
+[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2HairPart
 
-# Interface: IHumanoidV2HairPart
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IHumanoidV2HairPart
+# IHumanoidV2HairPart <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 人形对象 V2 部位
-
-**`Author`**
-
-guang.deng
 
 ## Hierarchy
 
@@ -25,20 +19,20 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [getColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#getcolor)
-- [getGradientColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientcolor)
-- [getGradientIntensity](Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientintensity)
-- [getHighlightColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightcolor)
-- [getHighlightMask](Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightmask)
-- [getMesh](Gameplay.Gameplay.IHumanoidV2HairPart.md#getmesh)
-- [setColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#setcolor)
-- [setGradientColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientcolor)
-- [setGradientIntensity](Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientintensity)
-- [setHighlightColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightcolor)
-- [setHighlightMask](Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightmask)
-- [setMesh](Gameplay.Gameplay.IHumanoidV2HairPart.md#setmesh)
+| Methods                                                                                                                                                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[getColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#getcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取头发颜色                                        |
+| **[getGradientColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取头发渐变染色                    |
+| **[getGradientIntensity](Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientintensity)**(): `number` <br> 获取头发渐变区域                                                        |
+| **[getHighlightColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取头发高光颜色                  |
+| **[getHighlightMask](Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightmask)**(): `string` <br> 获取头发高光形状                                                                |
+| **[getMesh](Gameplay.Gameplay.IHumanoidV2HairPart.md#getmesh)**(): `string` <br> 获取部位模型                                                                                      |
+| **[setColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#setcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发颜色                       |
+| **[setGradientColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发渐变染色   |
+| **[setGradientIntensity](Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientintensity)**(`number`, `boolean`): `void` <br> 设置头发渐变区域                                       |
+| **[setHighlightColor](Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发高光颜色 |
+| **[setHighlightMask](Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightmask)**(`string`, `boolean`): `void` <br> 设置头发高光形状                                               |
+| **[setMesh](Gameplay.Gameplay.IHumanoidV2HairPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型                                                                     |
 
 ## Methods
 
@@ -60,10 +54,6 @@ guang.deng
 
 颜色
 
-#### Defined in
-
-Gameplay/index.d.ts:3127
-
 ---
 
 ### getGradientColor
@@ -83,10 +73,6 @@ Gameplay/index.d.ts:3127
 [`LinearColor`](../classes/Type.Type.LinearColor.md)
 
 颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:3142
 
 ---
 
@@ -108,10 +94,6 @@ Gameplay/index.d.ts:3142
 
 强度
 
-#### Defined in
-
-Gameplay/index.d.ts:3157
-
 ---
 
 ### getHighlightColor
@@ -131,10 +113,6 @@ Gameplay/index.d.ts:3157
 [`LinearColor`](../classes/Type.Type.LinearColor.md)
 
 颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:3187
 
 ---
 
@@ -156,10 +134,6 @@ Gameplay/index.d.ts:3187
 
 guid
 
-#### Defined in
-
-Gameplay/index.d.ts:3172
-
 ---
 
 ### getMesh
@@ -180,14 +154,6 @@ Gameplay/index.d.ts:3172
 
 模型 Guid
 
-#### Inherited from
-
-[IPart](Gameplay.Gameplay.IPart.md).[getMesh](Gameplay.Gameplay.IPart.md#getmesh)
-
-#### Defined in
-
-Gameplay/index.d.ts:2784
-
 ---
 
 ### setColor
@@ -205,18 +171,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3121
 
 ---
 
@@ -235,18 +197,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3136
 
 ---
 
@@ -265,18 +223,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name        | Type      | Description                   |
-| :---------- | :-------- | :---------------------------- |
-| `intensity` | `number`  | usage:强度                    |
-| `sync`      | `boolean` | usage:true 同步; false 不同步 |
+| Name        | Type      | Description             |
+| :---------- | :-------- | :---------------------- |
+| `intensity` | `number`  | 强度                    |
+| `sync`      | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3151
 
 ---
 
@@ -295,18 +249,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3181
 
 ---
 
@@ -325,18 +275,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:贴图 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 贴图 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3166
 
 ---
 
@@ -359,19 +305,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[IPart](Gameplay.Gameplay.IPart.md).[setMesh](Gameplay.Gameplay.IPart.md#setmesh)
-
-#### Defined in
-
-Gameplay/index.d.ts:2778

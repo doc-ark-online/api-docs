@@ -1,20 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / MulticastDelegate
+[Type](../modules/Type.Type.md) / MulticastDelegate
 
-# Class: MulticastDelegate<T\>
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).MulticastDelegate
-
-**`Author`**
-
-xiangkun.sun
+# MulticastDelegate<T\> <Badge type="tip" text="Class" />
 
 **`Description`**
 
 多播委托接口
-
-**`Network Status`**
-
-usage:双端
 
 **`Effect`**
 
@@ -32,22 +22,12 @@ usage:双端
 
 ## Table of contents
 
-### Constructors
-
-- [constructor](Type.Type.MulticastDelegate.md#constructor)
-
-### Methods
-
-- [add](Type.Type.MulticastDelegate.md#add)
-- [broadcast](Type.Type.MulticastDelegate.md#broadcast)
-- [clear](Type.Type.MulticastDelegate.md#clear)
-- [remove](Type.Type.MulticastDelegate.md#remove)
-
-## Constructors
-
-### constructor
-
-• **new MulticastDelegate**<`T`\>()
+| Methods                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------- |
+| **[add](Type.Type.MulticastDelegate.md#add)**(`T`): `void` <br> 绑定代理函数                                |
+| **[broadcast](Type.Type.MulticastDelegate.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数 |
+| **[clear](Type.Type.MulticastDelegate.md#clear)**(): `void` <br> 情况委托                                   |
+| **[remove](Type.Type.MulticastDelegate.md#remove)**(`T`): `void` <br> 删除绑定代理函数                      |
 
 #### Type parameters
 
@@ -71,9 +51,9 @@ usage:双端
 
 #### Parameters
 
-| Name   | Type | Description               |
-| :----- | :--- | :------------------------ |
-| `func` | `T`  | usage: 绑定的函数 default |
+| Name   | Type | Description        |
+| :----- | :--- | :----------------- |
+| `func` | `T`  | 绑定的函数 default |
 
 #### Returns
 
@@ -82,10 +62,6 @@ usage:双端
 #### Implementation of
 
 [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md).[add](../interfaces/Type.Type.MulticastDelegateInterface.md#add)
-
-#### Defined in
-
-Type/index.d.ts:152
 
 ---
 
@@ -105,7 +81,7 @@ Type/index.d.ts:152
 
 | Name     | Type               | Description |
 | :------- | :----------------- | :---------- |
-| `...arg` | `Parameters`<`T`\> | usage: 参数 |
+| `...arg` | `Parameters`<`T`\> | 参数        |
 
 #### Returns
 
@@ -114,10 +90,6 @@ Type/index.d.ts:152
 #### Implementation of
 
 [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md).[broadcast](../interfaces/Type.Type.MulticastDelegateInterface.md#broadcast)
-
-#### Defined in
-
-Type/index.d.ts:169
 
 ---
 
@@ -137,10 +109,6 @@ Type/index.d.ts:169
 
 `void`
 
-#### Defined in
-
-Type/index.d.ts:163
-
 ---
 
 ### remove
@@ -157,9 +125,9 @@ Type/index.d.ts:163
 
 #### Parameters
 
-| Name   | Type | Description                   |
-| :----- | :--- | :---------------------------- |
-| `func` | `T`  | usage: 删除绑定的函数 default |
+| Name   | Type | Description            |
+| :----- | :--- | :--------------------- |
+| `func` | `T`  | 删除绑定的函数 default |
 
 #### Returns
 
@@ -168,7 +136,3 @@ Type/index.d.ts:163
 #### Implementation of
 
 [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md).[remove](../interfaces/Type.Type.MulticastDelegateInterface.md#remove)
-
-#### Defined in
-
-Type/index.d.ts:158

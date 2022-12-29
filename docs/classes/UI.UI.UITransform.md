@@ -1,37 +1,17 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UITransform
+[UI](../modules/UI.UI.md) / UITransform
 
-# Class: UITransform
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UITransform
-
-**`Author`**
-
-jie.wu
+# UITransform <Badge type="tip" text="Class" />
 
 **`Description`**
 
 节点 Transform
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.UITransform.md#constructor)
-
-### Properties
-
-- [position](UI.UI.UITransform.md#position)
-- [size](UI.UI.UITransform.md#size)
-
-## Constructors
-
-### constructor
-
-• **new UITransform**(`x`, `y`, `w`, `h`)
+| Properties                                                                                 |
+| :----------------------------------------------------------------------------------------- |
+| **[position](UI.UI.UITransform.md#position)**: [`Vector2`](Type.Type.Vector2.md) <br> 位置 |
+| **[size](UI.UI.UITransform.md#size)**: [`Vector2`](Type.Type.Vector2.md) <br> 大小         |
 
 **`Description`**
 
@@ -43,16 +23,12 @@ usage:客户端
 
 #### Parameters
 
-| Name | Type     | Description            |
-| :--- | :------- | :--------------------- |
-| `x`  | `number` | usage:位置 Position.X  |
-| `y`  | `number` | usage: 位置 Position.Y |
-| `w`  | `number` | usage:大小 Size.W 宽   |
-| `h`  | `number` | usage:大小 Size.H 高   |
-
-#### Defined in
-
-UI/index.d.ts:3891
+| Name | Type     | Description     |
+| :--- | :------- | :-------------- |
+| `x`  | `number` | 位置 Position.X |
+| `y`  | `number` | 位置 Position.Y |
+| `w`  | `number` | 大小 Size.W 宽  |
+| `h`  | `number` | 大小 Size.H 高  |
 
 • **new UITransform**(`xy`, `wh`)
 
@@ -68,12 +44,8 @@ UI/index.d.ts:3891
 
 | Name | Type                              | Description |
 | :--- | :-------------------------------- | :---------- |
-| `xy` | [`Vector2`](Type.Type.Vector2.md) | usage:位置  |
-| `wh` | [`Vector2`](Type.Type.Vector2.md) | usage:大小  |
-
-#### Defined in
-
-UI/index.d.ts:3898
+| `xy` | [`Vector2`](Type.Type.Vector2.md) | 位置        |
+| `wh` | [`Vector2`](Type.Type.Vector2.md) | 大小        |
 
 ## Properties
 
@@ -85,10 +57,6 @@ UI/index.d.ts:3898
 
 位置
 
-#### Defined in
-
-UI/index.d.ts:3900
-
 ---
 
 ### size
@@ -98,7 +66,3 @@ UI/index.d.ts:3900
 **`Description`**
 
 大小
-
-#### Defined in
-
-UI/index.d.ts:3902

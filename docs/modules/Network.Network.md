@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Network](Network.md) / Network
+Network
 
-# Namespace: Network
-
-[Network](Network.md).Network
-
-**`Author`**
-
-tengxiao.li
+# Network <Badge type="tip" text="Namespace" />
 
 **`Description`**
 
@@ -14,29 +8,29 @@ tengxiao.li
 
 ## Table of contents
 
-### Enumerations
+| Enumerations                                                                                                      |
+| :---------------------------------------------------------------------------------------------------------------- |
+| [HttpRequestType](../enums/Network.Network.HttpRequestType.md) <br> 开发给用户用的 Http 请求类型枚举              |
+| [HttpRequestURL](../enums/Network.Network.HttpRequestURL.md) <br> 开发给用户用的 URL 枚举，需要与 C++层的枚举对应 |
 
-- [HttpRequestType](../enums/Network.Network.HttpRequestType.md)
-- [HttpRequestURL](../enums/Network.Network.HttpRequestURL.md)
+| Interfaces                                                                           |
+| :----------------------------------------------------------------------------------- |
+| [RequestInit](../interfaces/Network.Network.RequestInit.md) <br> HTTP 请求信息的对象 |
+| [Response](../interfaces/Network.Network.Response.md) <br> HTTP 响应信息的对象       |
 
-### Interfaces
+| Type Aliases                                                                                                                                                                       |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> ▸ (`result`, `content`, `responseCode`): `void` |
+| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> ▸ (`isSuccess`, `content`): `void`                            |
 
-- [RequestInit](../interfaces/Network.Network.RequestInit.md)
-- [Response](../interfaces/Network.Network.Response.md)
-
-### Type Aliases
-
-- [HttpResponse](Network.Network.md#httpresponse)
-- [TransactionType](Network.Network.md#transactiontype)
-
-### Functions
-
-- [fetch](Network.Network.md#fetch)
-- [generalHttpRequest](Network.Network.md#generalhttprequest)
-- [getUrlParameter](Network.Network.md#geturlparameter)
-- [httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)
-- [urlDecode](Network.Network.md#urldecode)
-- [urlEncode](Network.Network.md#urlencode)
+| Functions                                                                                                                                                                                                                                                                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[fetch](Network.Network.md#fetch)**(`string`, [`RequestInit`](../interfaces/Network.Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Network.Response.md)\> <br> HTTP 请求                                                                                                   |
+| **[generalHttpRequest](Network.Network.md#generalhttprequest)**([`HttpResponse`](Network.Network.md#httpresponse), [`HttpRequestURL`](../enums/Network.Network.HttpRequestURL.md), `string`, `any`, [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md)): `boolean` <br> 通用 Http 请求 |
+| **[getUrlParameter](Network.Network.md#geturlparameter)**(`string`, `string`): `string` <br> 获取 url 参数                                                                                                                                                                                           |
+| **[httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)**([`HttpResponse`](Network.Network.md#httpresponse), `string`, `string`, [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md)): `boolean` <br> Http 请求接口                                                     |
+| **[urlDecode](Network.Network.md#urldecode)**(`string`): `string` <br> url 解码                                                                                                                                                                                                                      |
+| **[urlEncode](Network.Network.md#urlencode)**(`string`): `string` <br> url 转码                                                                                                                                                                                                                      |
 
 ## Type Aliases
 
@@ -58,19 +52,15 @@ Http 请求的回调消息格式
 
 ##### Parameters
 
-| Name           | Type      | Description       |
-| :------------- | :-------- | :---------------- |
-| `result`       | `boolean` | usage: 请求否成功 |
-| `content`      | `string`  | usage: 消息内容   |
-| `responseCode` | `number`  | usage: 状态码     |
+| Name           | Type      | Description |
+| :------------- | :-------- | :---------- |
+| `result`       | `boolean` | 请求否成功  |
+| `content`      | `string`  | 消息内容    |
+| `responseCode` | `number`  | 状态码      |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Network/index.d.ts:157
 
 ---
 
@@ -88,18 +78,14 @@ Network/index.d.ts:157
 
 ##### Parameters
 
-| Name        | Type      | Description     |
-| :---------- | :-------- | :-------------- |
-| `isSuccess` | `boolean` | usage: 通信结果 |
-| `content`   | `string`  | usage: 消息内容 |
+| Name        | Type      | Description |
+| :---------- | :-------- | :---------- |
+| `isSuccess` | `boolean` | 通信结果    |
+| `content`   | `string`  | 消息内容    |
 
 ##### Returns
 
 `void`
-
-#### Defined in
-
-Network/index.d.ts:167
 
 ## Functions
 
@@ -117,10 +103,10 @@ HTTP 请求
 
 #### Parameters
 
-| Name    | Type                                                          | Description                     |
-| :------ | :------------------------------------------------------------ | :------------------------------ |
-| `url`   | `string`                                                      | usage:url                       |
-| `init?` | [`RequestInit`](../interfaces/Network.Network.RequestInit.md) | usage:请求信息 default:请求信息 |
+| Name    | Type                                                          | Description               |
+| :------ | :------------------------------------------------------------ | :------------------------ |
+| `url`   | `string`                                                      | url                       |
+| `init?` | [`RequestInit`](../interfaces/Network.Network.RequestInit.md) | 请求信息 default:请求信息 |
 
 #### Returns
 
@@ -128,19 +114,11 @@ HTTP 请求
 
 响应信息
 
-#### Defined in
-
-Network/index.d.ts:55
-
 ---
 
 ### generalHttpRequest
 
 ▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
-
-**`Author`**
-
-tengxiao.li
 
 **`Description`**
 
@@ -154,29 +132,25 @@ tengxiao.li
 
 使用示例:发送 Http 请求
 
-```
-generalHttpRequest(Response,Url,Param,JsonContent)
+```ts
+generalHttpRequest(Response, Url, Param, JsonContent);
 ```
 
 #### Parameters
 
-| Name          | Type                                                             | Description              |
-| :------------ | :--------------------------------------------------------------- | :----------------------- |
-| `response`    | [`HttpResponse`](Network.Network.md#httpresponse)                | usage:OnHttpResponse     |
-| `requestUrl`  | [`HttpRequestURL`](../enums/Network.Network.HttpRequestURL.md)   | usage:EHttpRequestURL    |
-| `param`       | `string`                                                         | usage:string             |
-| `jsonContent` | `any`                                                            | usage:any                |
-| `requestType` | [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md) | usage:0 是 Get 1 是 Post |
+| Name          | Type                                                             | Description        |
+| :------------ | :--------------------------------------------------------------- | :----------------- |
+| `response`    | [`HttpResponse`](Network.Network.md#httpresponse)                | OnHttpResponse     |
+| `requestUrl`  | [`HttpRequestURL`](../enums/Network.Network.HttpRequestURL.md)   | EHttpRequestURL    |
+| `param`       | `string`                                                         | string             |
+| `jsonContent` | `any`                                                            | any                |
+| `requestType` | [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md) | 0 是 Get 1 是 Post |
 
 #### Returns
 
 `boolean`
 
 bool
-
-#### Defined in
-
-Network/index.d.ts:199
 
 ---
 
@@ -194,20 +168,16 @@ Network/index.d.ts:199
 
 #### Parameters
 
-| Name            | Type     | Description  |
-| :-------------- | :------- | :----------- |
-| `url`           | `string` | usage:url    |
-| `parameterName` | `string` | usage:参数名 |
+| Name            | Type     | Description |
+| :-------------- | :------- | :---------- |
+| `url`           | `string` | url         |
+| `parameterName` | `string` | 参数名      |
 
 #### Returns
 
 `string`
 
 参数值
-
-#### Defined in
-
-Network/index.d.ts:77
 
 ---
 
@@ -225,22 +195,18 @@ Http 请求接口
 
 #### Parameters
 
-| Name          | Type                                                             | Description                             |
-| :------------ | :--------------------------------------------------------------- | :-------------------------------------- |
-| `response`    | [`HttpResponse`](Network.Network.md#httpresponse)                | usage: 请求的回调                       |
-| `paramUrl`    | `string`                                                         | usage: 请求的参数和值                   |
-| `jsonContent` | `string`                                                         | usage: 请求数据内容，json 格式          |
-| `requestType` | [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md) | usage: 请求类型。HttpRequestType 枚举值 |
+| Name          | Type                                                             | Description                      |
+| :------------ | :--------------------------------------------------------------- | :------------------------------- |
+| `response`    | [`HttpResponse`](Network.Network.md#httpresponse)                | 请求的回调                       |
+| `paramUrl`    | `string`                                                         | 请求的参数和值                   |
+| `jsonContent` | `string`                                                         | 请求数据内容，json 格式          |
+| `requestType` | [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md) | 请求类型。HttpRequestType 枚举值 |
 
 #### Returns
 
 `boolean`
 
 请求是否发送成功
-
-#### Defined in
-
-Network/index.d.ts:177
 
 ---
 
@@ -260,17 +226,13 @@ url 解码
 
 | Name  | Type     | Description |
 | :---- | :------- | :---------- |
-| `str` | `string` | usage:内容  |
+| `str` | `string` | 内容        |
 
 #### Returns
 
 `string`
 
 解码后的内容
-
-#### Defined in
-
-Network/index.d.ts:69
 
 ---
 
@@ -290,14 +252,10 @@ url 转码
 
 | Name  | Type     | Description |
 | :---- | :------- | :---------- |
-| `str` | `string` | usage:内容  |
+| `str` | `string` | 内容        |
 
 #### Returns
 
 `string`
 
 转码后的内容
-
-#### Defined in
-
-Network/index.d.ts:62

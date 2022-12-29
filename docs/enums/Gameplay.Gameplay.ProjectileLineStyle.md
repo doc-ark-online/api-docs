@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLineStyle
+[Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLineStyle
 
-# Enumeration: ProjectileLineStyle
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).ProjectileLineStyle
+# ProjectileLineStyle <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Dot](Gameplay.Gameplay.ProjectileLineStyle.md#dot)
-- [Line](Gameplay.Gameplay.ProjectileLineStyle.md#line)
-- [Segment](Gameplay.Gameplay.ProjectileLineStyle.md#segment)
+| Enumeration Members                                                               |
+| :-------------------------------------------------------------------------------- |
+| **[Dot](Gameplay.Gameplay.ProjectileLineStyle.md#dot)** = `0` <br> 点绘制         |
+| **[Line](Gameplay.Gameplay.ProjectileLineStyle.md#line)** = `1` <br> 线绘制       |
+| **[Segment](Gameplay.Gameplay.ProjectileLineStyle.md#segment)** = `2` <br> 段绘制 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 点绘制
 
-#### Defined in
-
-Gameplay/index.d.ts:13073
-
 ---
 
 ### Line
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:13073
 
 线绘制
 
-#### Defined in
-
-Gameplay/index.d.ts:13075
-
 ---
 
 ### Segment
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:13075
 • **Segment** = `2`
 
 段绘制
-
-#### Defined in
-
-Gameplay/index.d.ts:13077

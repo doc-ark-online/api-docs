@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / TextJustify
+[UI](../modules/UI.UI.md) / TextJustify
 
-# Enumeration: TextJustify
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).TextJustify
+# TextJustify <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Center](UI.UI.TextJustify.md#center)
-- [Left](UI.UI.TextJustify.md#left)
-- [Right](UI.UI.TextJustify.md#right)
+| Enumeration Members                                                       |
+| :------------------------------------------------------------------------ |
+| **[Center](UI.UI.TextJustify.md#center)** = `1` <br> 对齐中间的文本。     |
+| **[Left](UI.UI.TextJustify.md#left)** = `0` <br> 从逻辑上向左对齐文本。   |
+| **[Right](UI.UI.TextJustify.md#right)** = `2` <br> 在逻辑上向右对齐文本。 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 对齐中间的文本。
 文本流动方向对该对齐模式没有影响。
-
-#### Defined in
-
-UI/index.d.ts:3478
 
 ---
 
@@ -39,10 +33,6 @@ UI/index.d.ts:3478
 当文本从左向右流动时，这将使文本在视觉上向左对齐。
 当文本从右向左流动时，这将使文本在视觉上向右对齐。
 
-#### Defined in
-
-UI/index.d.ts:3473
-
 ---
 
 ### Right
@@ -52,7 +42,3 @@ UI/index.d.ts:3473
 在逻辑上向右对齐文本。
 当文本从左向右流动时，这将使文本在视觉上向右对齐。
 当文本从右向左流动时，这将使文本在视觉上向左对齐。
-
-#### Defined in
-
-UI/index.d.ts:3484

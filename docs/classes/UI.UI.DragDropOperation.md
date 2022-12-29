@@ -1,52 +1,24 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / DragDropOperation
+[UI](../modules/UI.UI.md) / DragDropOperation
 
-# Class: DragDropOperation
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).DragDropOperation
-
-**`Author`**
-
-jie.wu
+# DragDropOperation <Badge type="tip" text="Class" />
 
 **`Description`**
 
 UI 拖拽事件
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.DragDropOperation.md#constructor)
-
-### Methods
-
-- [equal](UI.UI.DragDropOperation.md#equal)
-- [getDragPivot](UI.UI.DragDropOperation.md#getdragpivot)
-- [getDragVisualWidget](UI.UI.DragDropOperation.md#getdragvisualwidget)
-- [getOffset](UI.UI.DragDropOperation.md#getoffset)
-- [getTag](UI.UI.DragDropOperation.md#gettag)
-- [tryGetDragDropPayLoad](UI.UI.DragDropOperation.md#trygetdragdroppayload)
-- [tryGetDragDropPayLoadAs](UI.UI.DragDropOperation.md#trygetdragdroppayloadas)
-
-## Constructors
-
-### constructor
+| Methods                                                                                                                                                |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- |
+| **[equal](UI.UI.DragDropOperation.md#equal)**([`DragDropOperation`](UI.UI.DragDropOperation.md)): `boolean` <br> 判断是否相同                          |
+| **[getDragPivot](UI.UI.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/UI.UI.DragPivot.md) <br> 获取拖拽锚点                            |
+| **[getDragVisualWidget](UI.UI.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](UI.UI.Widget.md) <br> 获取拖拽显示的 UI                        |
+| **[getOffset](UI.UI.DragDropOperation.md#getoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取拖拽 UI 的百分比偏移                               |
+| **[getTag](UI.UI.DragDropOperation.md#gettag)**(): `string` <br> 获取 Tag 标签                                                                         |
+| **[tryGetDragDropPayLoad](UI.UI.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md) <br> 获取传递的数据信息 |
+| **[tryGetDragDropPayLoadAs](UI.UI.DragDropOperation.md#trygetdragdroppayloadas)**<extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\>          | \>(): extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> | <br> 获取传递的数据信息 |
 
 • `Private` **new DragDropOperation**()
-
-#### Defined in
-
-UI/index.d.ts:580
-
-• `Private` **new DragDropOperation**()
-
-#### Defined in
-
-UI/index.d.ts:581
 
 ## Methods
 
@@ -64,19 +36,15 @@ UI/index.d.ts:581
 
 #### Parameters
 
-| Name    | Type                                              | Description              |
-| :------ | :------------------------------------------------ | :----------------------- |
-| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | usage:另一个 UI 拖拽事件 |
+| Name    | Type                                              | Description        |
+| :------ | :------------------------------------------------ | :----------------- |
+| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | 另一个 UI 拖拽事件 |
 
 #### Returns
 
 `boolean`
 
 boolean
-
-#### Defined in
-
-UI/index.d.ts:588
 
 ---
 
@@ -98,10 +66,6 @@ UI/index.d.ts:588
 
 拖拽锚点
 
-#### Defined in
-
-UI/index.d.ts:606
-
 ---
 
 ### getDragVisualWidget
@@ -121,10 +85,6 @@ UI/index.d.ts:606
 [`Widget`](UI.UI.Widget.md)
 
 拖拽显示的 UI
-
-#### Defined in
-
-UI/index.d.ts:600
 
 ---
 
@@ -146,10 +106,6 @@ UI/index.d.ts:600
 
 百分比偏移
 
-#### Defined in
-
-UI/index.d.ts:612
-
 ---
 
 ### getTag
@@ -170,10 +126,6 @@ UI/index.d.ts:612
 
 返回 tag
 
-#### Defined in
-
-UI/index.d.ts:594
-
 ---
 
 ### tryGetDragDropPayLoad
@@ -193,10 +145,6 @@ UI/index.d.ts:594
 [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)
 
 数据信息
-
-#### Defined in
-
-UI/index.d.ts:618
 
 ---
 
@@ -223,7 +171,3 @@ UI/index.d.ts:618
 `T`
 
 数据信息
-
-#### Defined in
-
-UI/index.d.ts:624

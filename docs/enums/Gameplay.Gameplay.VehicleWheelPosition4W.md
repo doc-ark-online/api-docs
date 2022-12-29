@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / VehicleWheelPosition4W
+[Gameplay](../modules/Gameplay.Gameplay.md) / VehicleWheelPosition4W
 
-# Enumeration: VehicleWheelPosition4W
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).VehicleWheelPosition4W
+# VehicleWheelPosition4W <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Front](Gameplay.Gameplay.VehicleWheelPosition4W.md#front)
-- [Rear](Gameplay.Gameplay.VehicleWheelPosition4W.md#rear)
+| Enumeration Members                                                            |
+| :----------------------------------------------------------------------------- |
+| **[Front](Gameplay.Gameplay.VehicleWheelPosition4W.md#front)** = `0` <br> 前轮 |
+| **[Rear](Gameplay.Gameplay.VehicleWheelPosition4W.md#rear)** = `1` <br> 后轮   |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 前轮
 
-#### Defined in
-
-Gameplay/index.d.ts:10435
-
 ---
 
 ### Rear
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:10435
 • **Rear** = `1`
 
 后轮
-
-#### Defined in
-
-Gameplay/index.d.ts:10437

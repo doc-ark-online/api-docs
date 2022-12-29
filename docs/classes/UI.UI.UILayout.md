@@ -1,43 +1,23 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UILayout
+[UI](../modules/UI.UI.md) / UILayout
 
-# Class: UILayout
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UILayout
-
-**`Author`**
-
-jie.wu
+# UILayout <Badge type="tip" text="Class" />
 
 **`Description`**
 
 容器自动布局规则
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.UILayout.md#constructor)
-
-### Properties
-
-- [autoLayout](UI.UI.UILayout.md#autolayout)
-- [autoWrap](UI.UI.UILayout.md#autowrap)
-- [childCollation](UI.UI.UILayout.md#childcollation)
-- [hugContent](UI.UI.UILayout.md#hugcontent)
-- [layout](UI.UI.UILayout.md#layout)
-- [layoutPacket](UI.UI.UILayout.md#layoutpacket)
-- [layoutSpace](UI.UI.UILayout.md#layoutspace)
-- [padding](UI.UI.UILayout.md#padding)
-
-## Constructors
-
-### constructor
-
-• **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`)
+| Properties                                                                                                                         |
+| :--------------------------------------------------------------------------------------------------------------------------------- |
+| **[autoLayout](UI.UI.UILayout.md#autolayout)**: `boolean` <br> 是否自动布局                                                        |
+| **[autoWrap](UI.UI.UILayout.md#autowrap)**: `boolean` <br> 是否网格模式                                                            |
+| **[childCollation](UI.UI.UILayout.md#childcollation)**: [`UIChildCollation`](UI.UI.UIChildCollation.md) <br> 子项布局规则          |
+| **[hugContent](UI.UI.UILayout.md#hugcontent)**: [`UIHugContent`](UI.UI.UIHugContent.md) <br> 容器布局适应规则                      |
+| **[layout](UI.UI.UILayout.md#layout)**: [`UILayoutType`](../enums/UI.UI.UILayoutType.md) <br> 自动布局规则                         |
+| **[layoutPacket](UI.UI.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) <br> 自动布局节点排列规则 |
+| **[layoutSpace](UI.UI.UILayout.md#layoutspace)**: `number` <br> 排列间隔                                                           |
+| **[padding](UI.UI.UILayout.md#padding)**: [`Margin`](UI.UI.Margin.md) <br> 四边边距                                                |
 
 **`Description`**
 
@@ -49,19 +29,15 @@ usage:客户端
 
 #### Parameters
 
-| Name             | Type                                                 | Description                |
-| :--------------- | :--------------------------------------------------- | :------------------------- |
-| `InLayoutSpace`  | `number`                                             | usage:排列间隔             |
-| `InPadding`      | [`Margin`](UI.UI.Margin.md)                          | usage:四边边距             |
-| `InLayout`       | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | usage:自动布局规则         |
-| `InLayoutPacket` | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | usage:自动布局节点排列规则 |
-| `InHugContent`   | [`UIHugContent`](UI.UI.UIHugContent.md)              | usage:容器布局适应规则     |
-| `InAutoLayout`   | `boolean`                                            | usage:是否自动布局         |
-| `InAutoWrap`     | `boolean`                                            | usage:是否网格模式         |
-
-#### Defined in
-
-UI/index.d.ts:3829
+| Name             | Type                                                 | Description          |
+| :--------------- | :--------------------------------------------------- | :------------------- |
+| `InLayoutSpace`  | `number`                                             | 排列间隔             |
+| `InPadding`      | [`Margin`](UI.UI.Margin.md)                          | 四边边距             |
+| `InLayout`       | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | 自动布局规则         |
+| `InLayoutPacket` | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | 自动布局节点排列规则 |
+| `InHugContent`   | [`UIHugContent`](UI.UI.UIHugContent.md)              | 容器布局适应规则     |
+| `InAutoLayout`   | `boolean`                                            | 是否自动布局         |
+| `InAutoWrap`     | `boolean`                                            | 是否网格模式         |
 
 • **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
 
@@ -75,20 +51,16 @@ UI/index.d.ts:3829
 
 #### Parameters
 
-| Name               | Type                                                 | Description                |
-| :----------------- | :--------------------------------------------------- | :------------------------- |
-| `InLayoutSpace`    | `number`                                             | usage:排列间隔             |
-| `InPadding`        | [`Margin`](UI.UI.Margin.md)                          | usage:四边边距             |
-| `InLayout`         | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | usage:自动布局规则         |
-| `InLayoutPacket`   | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | usage:自动布局节点排列规则 |
-| `InHugContent`     | [`UIHugContent`](UI.UI.UIHugContent.md)              | usage:容器布局适应规则     |
-| `InAutoLayout`     | `boolean`                                            | usage:是否自动布局         |
-| `InAutoWrap`       | `boolean`                                            | usage:是否网格模式         |
-| `InChildCollation` | [`UIChildCollation`](UI.UI.UIChildCollation.md)      | usage:子项排序规则         |
-
-#### Defined in
-
-UI/index.d.ts:3850
+| Name               | Type                                                 | Description          |
+| :----------------- | :--------------------------------------------------- | :------------------- |
+| `InLayoutSpace`    | `number`                                             | 排列间隔             |
+| `InPadding`        | [`Margin`](UI.UI.Margin.md)                          | 四边边距             |
+| `InLayout`         | [`UILayoutType`](../enums/UI.UI.UILayoutType.md)     | 自动布局规则         |
+| `InLayoutPacket`   | [`UILayoutPacket`](../enums/UI.UI.UILayoutPacket.md) | 自动布局节点排列规则 |
+| `InHugContent`     | [`UIHugContent`](UI.UI.UIHugContent.md)              | 容器布局适应规则     |
+| `InAutoLayout`     | `boolean`                                            | 是否自动布局         |
+| `InAutoWrap`       | `boolean`                                            | 是否网格模式         |
+| `InChildCollation` | [`UIChildCollation`](UI.UI.UIChildCollation.md)      | 子项排序规则         |
 
 ## Properties
 
@@ -100,10 +72,6 @@ UI/index.d.ts:3850
 
 是否自动布局
 
-#### Defined in
-
-UI/index.d.ts:3869
-
 ---
 
 ### autoWrap
@@ -113,10 +81,6 @@ UI/index.d.ts:3869
 **`Description`**
 
 是否网格模式
-
-#### Defined in
-
-UI/index.d.ts:3875
 
 ---
 
@@ -128,10 +92,6 @@ UI/index.d.ts:3875
 
 子项布局规则
 
-#### Defined in
-
-UI/index.d.ts:3873
-
 ---
 
 ### hugContent
@@ -141,10 +101,6 @@ UI/index.d.ts:3873
 **`Description`**
 
 容器布局适应规则
-
-#### Defined in
-
-UI/index.d.ts:3871
 
 ---
 
@@ -156,10 +112,6 @@ UI/index.d.ts:3871
 
 自动布局规则
 
-#### Defined in
-
-UI/index.d.ts:3865
-
 ---
 
 ### layoutPacket
@@ -169,10 +121,6 @@ UI/index.d.ts:3865
 **`Description`**
 
 自动布局节点排列规则
-
-#### Defined in
-
-UI/index.d.ts:3867
 
 ---
 
@@ -184,10 +132,6 @@ UI/index.d.ts:3867
 
 排列间隔
 
-#### Defined in
-
-UI/index.d.ts:3861
-
 ---
 
 ### padding
@@ -197,7 +141,3 @@ UI/index.d.ts:3861
 **`Description`**
 
 四边边距
-
-#### Defined in
-
-UI/index.d.ts:3863

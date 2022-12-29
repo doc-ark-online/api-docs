@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseForceType
+[Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseForceType
 
-# Enumeration: ImpulseForceType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).ImpulseForceType
+# ImpulseForceType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [RadialForce](Gameplay.Gameplay.ImpulseForceType.md#radialforce)
-- [VectorForce](Gameplay.Gameplay.ImpulseForceType.md#vectorforce)
+| Enumeration Members                                                                    |
+| :------------------------------------------------------------------------------------- |
+| **[RadialForce](Gameplay.Gameplay.ImpulseForceType.md#radialforce)** = `0` <br> 径向力 |
+| **[VectorForce](Gameplay.Gameplay.ImpulseForceType.md#vectorforce)** = `1` <br> 矢量力 |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 径向力
 
-#### Defined in
-
-Gameplay/index.d.ts:12634
-
 ---
 
 ### VectorForce
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:12634
 • **VectorForce** = `1`
 
 矢量力
-
-#### Defined in
-
-Gameplay/index.d.ts:12636

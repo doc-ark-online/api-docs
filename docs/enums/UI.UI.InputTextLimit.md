@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / InputTextLimit
+[UI](../modules/UI.UI.md) / InputTextLimit
 
-# Enumeration: InputTextLimit
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).InputTextLimit
+# InputTextLimit <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [LimitToFloat](UI.UI.InputTextLimit.md#limittofloat)
-- [LimitToInt](UI.UI.InputTextLimit.md#limittoint)
-- [LimitToNumberAndChar](UI.UI.InputTextLimit.md#limittonumberandchar)
-- [LimitToPassword](UI.UI.InputTextLimit.md#limittopassword)
-- [NoLimit](UI.UI.InputTextLimit.md#nolimit)
+| Enumeration Members                                                                              |
+| :----------------------------------------------------------------------------------------------- |
+| **[LimitToFloat](UI.UI.InputTextLimit.md#limittofloat)** = `2` <br> 浮点数                       |
+| **[LimitToInt](UI.UI.InputTextLimit.md#limittoint)** = `1` <br> 整数                             |
+| **[LimitToNumberAndChar](UI.UI.InputTextLimit.md#limittonumberandchar)** = `3` <br> 数字或则字母 |
+| **[LimitToPassword](UI.UI.InputTextLimit.md#limittopassword)** = `4` <br> 密码                   |
+| **[NoLimit](UI.UI.InputTextLimit.md#nolimit)** = `0` <br> 无限制                                 |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 浮点数
 
-#### Defined in
-
-UI/index.d.ts:3686
-
 ---
 
 ### LimitToInt
@@ -37,10 +31,6 @@ UI/index.d.ts:3686
 • **LimitToInt** = `1`
 
 整数
-
-#### Defined in
-
-UI/index.d.ts:3684
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3684
 
 数字或则字母
 
-#### Defined in
-
-UI/index.d.ts:3688
-
 ---
 
 ### LimitToPassword
@@ -62,10 +48,6 @@ UI/index.d.ts:3688
 
 密码
 
-#### Defined in
-
-UI/index.d.ts:3690
-
 ---
 
 ### NoLimit
@@ -73,7 +55,3 @@ UI/index.d.ts:3690
 • **NoLimit** = `0`
 
 无限制
-
-#### Defined in
-
-UI/index.d.ts:3682

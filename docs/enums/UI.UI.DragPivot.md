@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / DragPivot
+[UI](../modules/UI.UI.md) / DragPivot
 
-# Enumeration: DragPivot
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).DragPivot
+# DragPivot <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,18 +8,18 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [BottomCenter](UI.UI.DragPivot.md#bottomcenter)
-- [BottomLeft](UI.UI.DragPivot.md#bottomleft)
-- [BottomRight](UI.UI.DragPivot.md#bottomright)
-- [CenterCenter](UI.UI.DragPivot.md#centercenter)
-- [CenterLeft](UI.UI.DragPivot.md#centerleft)
-- [CenterRight](UI.UI.DragPivot.md#centerright)
-- [MouseDown](UI.UI.DragPivot.md#mousedown)
-- [TopCenter](UI.UI.DragPivot.md#topcenter)
-- [TopLeft](UI.UI.DragPivot.md#topleft)
-- [TopRight](UI.UI.DragPivot.md#topright)
+| Enumeration Members                                                   |
+| :-------------------------------------------------------------------- |
+| **[BottomCenter](UI.UI.DragPivot.md#bottomcenter)** = `8` <br> 中下   |
+| **[BottomLeft](UI.UI.DragPivot.md#bottomleft)** = `7` <br> 左下       |
+| **[BottomRight](UI.UI.DragPivot.md#bottomright)** = `9` <br> 右下     |
+| **[CenterCenter](UI.UI.DragPivot.md#centercenter)** = `5` <br> 中心点 |
+| **[CenterLeft](UI.UI.DragPivot.md#centerleft)** = `4` <br> 左中       |
+| **[CenterRight](UI.UI.DragPivot.md#centerright)** = `6` <br> 右中     |
+| **[MouseDown](UI.UI.DragPivot.md#mousedown)** = `0` <br> 按下点       |
+| **[TopCenter](UI.UI.DragPivot.md#topcenter)** = `2` <br> 上中         |
+| **[TopLeft](UI.UI.DragPivot.md#topleft)** = `1` <br> 左上             |
+| **[TopRight](UI.UI.DragPivot.md#topright)** = `3` <br> 右上           |
 
 ## Enumeration Members
 
@@ -31,10 +29,6 @@
 
 中下
 
-#### Defined in
-
-UI/index.d.ts:3727
-
 ---
 
 ### BottomLeft
@@ -42,10 +36,6 @@ UI/index.d.ts:3727
 • **BottomLeft** = `7`
 
 左下
-
-#### Defined in
-
-UI/index.d.ts:3725
 
 ---
 
@@ -55,10 +45,6 @@ UI/index.d.ts:3725
 
 右下
 
-#### Defined in
-
-UI/index.d.ts:3729
-
 ---
 
 ### CenterCenter
@@ -66,10 +52,6 @@ UI/index.d.ts:3729
 • **CenterCenter** = `5`
 
 中心点
-
-#### Defined in
-
-UI/index.d.ts:3721
 
 ---
 
@@ -79,10 +61,6 @@ UI/index.d.ts:3721
 
 左中
 
-#### Defined in
-
-UI/index.d.ts:3719
-
 ---
 
 ### CenterRight
@@ -90,10 +68,6 @@ UI/index.d.ts:3719
 • **CenterRight** = `6`
 
 右中
-
-#### Defined in
-
-UI/index.d.ts:3723
 
 ---
 
@@ -103,10 +77,6 @@ UI/index.d.ts:3723
 
 按下点
 
-#### Defined in
-
-UI/index.d.ts:3711
-
 ---
 
 ### TopCenter
@@ -114,10 +84,6 @@ UI/index.d.ts:3711
 • **TopCenter** = `2`
 
 上中
-
-#### Defined in
-
-UI/index.d.ts:3715
 
 ---
 
@@ -127,10 +93,6 @@ UI/index.d.ts:3715
 
 左上
 
-#### Defined in
-
-UI/index.d.ts:3713
-
 ---
 
 ### TopRight
@@ -138,7 +100,3 @@ UI/index.d.ts:3713
 • **TopRight** = `3`
 
 右上
-
-#### Defined in
-
-UI/index.d.ts:3717

@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Util](Util.md) / [Util](Util.Util.md) / TweenUtil
+[Util](Util.Util.md) / TweenUtil
 
-# Namespace: TweenUtil
-
-[Util](Util.md).[Util](Util.Util.md).TweenUtil
-
-**`Author`**
-
-huipeng.jia
+# TweenUtil <Badge type="tip" text="Namespace" />
 
 **`Description`**
 
@@ -14,15 +8,11 @@ huipeng.jia
 你只需告诉它哪些属性要更改，当补间结束运行时它们应该具有哪些最终值，以及这需要多长时间，
 补间引擎将负责计算从起始点到结束点的值。
 
-**`Network Status`**
-
-usage: 双端
-
 **`Example`**
 
 使用示例: 示例
 
-```
+```ts
 // 例如，position对象拥有x和y两个坐标:
 var position = {x: 100, y: 0};
 
@@ -48,25 +38,25 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ## Table of contents
 
-### Classes
+| Classes                                                                                                                           |
+| :-------------------------------------------------------------------------------------------------------------------------------- |
+| [Group](../classes/Util.Util.TweenUtil.Group.md) <br> 补间组，用于同时控制多个补间对象                                            |
+| [Sequence](../classes/Util.Util.TweenUtil.Sequence.md) <br> 序列工具类，主要用于获取连续的 ID                                     |
+| [Tween](../classes/Util.Util.TweenUtil.Tween.md) <br> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 |
 
-- [Group](../classes/Util.Util.TweenUtil.Group.md)
-- [Sequence](../classes/Util.Util.TweenUtil.Sequence.md)
-- [Tween](../classes/Util.Util.TweenUtil.Tween.md)
+| Type Aliases                                                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------- |
+| **[EasingFunction](Util.Util.TweenUtil.md#easingfunction)**: (`number`                                                    | : `number`) => `number` <br> ▸ (`amount`): `number` |
+| **[InterpolationFunction](Util.Util.TweenUtil.md#interpolationfunction)**: (`number`[]                                    | : `number`[], `number`                              | : `number`) => `number` <br> ▸ (`v`, `k`): `number` |
+| **[UnknownProps](Util.Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展 |
 
-### Type Aliases
+| Variables                                                                                                                                                         |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[TWEEN](Util.Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组 |
 
-- [EasingFunction](Util.Util.TweenUtil.md#easingfunction)
-- [InterpolationFunction](Util.Util.TweenUtil.md#interpolationfunction)
-- [UnknownProps](Util.Util.TweenUtil.md#unknownprops)
-
-### Variables
-
-- [TWEEN](Util.Util.TweenUtil.md#tween)
-
-### Functions
-
-- [nextId](Util.Util.TweenUtil.md#nextid)
+| Functions                                                                             |
+| :------------------------------------------------------------------------------------ |
+| **[nextId](Util.Util.TweenUtil.md#nextid)**(): `number` <br> 获取下一个 ID 的全局方法 |
 
 ## Type Aliases
 
@@ -91,10 +81,6 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 ##### Returns
 
 `number`
-
-#### Defined in
-
-Util/index.d.ts:927
 
 ---
 
@@ -121,10 +107,6 @@ Util/index.d.ts:927
 
 `number`
 
-#### Defined in
-
-Util/index.d.ts:853
-
 ---
 
 ### UnknownProps
@@ -135,10 +117,6 @@ Util/index.d.ts:853
 
 补间属性的定义，用户可以自由扩展
 
-#### Defined in
-
-Util/index.d.ts:1213
-
 ## Variables
 
 ### TWEEN
@@ -148,10 +126,6 @@ Util/index.d.ts:1213
 **`Description`**
 
 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
-
-#### Defined in
-
-Util/index.d.ts:1223
 
 ## Functions
 
@@ -172,7 +146,3 @@ Util/index.d.ts:1223
 `number`
 
 下一个 ID
-
-#### Defined in
-
-Util/index.d.ts:848

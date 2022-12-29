@@ -1,12 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Service](../modules/Service.md) / [Service](../modules/Service.Service.md) / UGCService
+[Service](../modules/Service.Service.md) / UGCService
 
-# Class: UGCService
-
-[Service](../modules/Service.md).[Service](../modules/Service.Service.md).UGCService
-
-**`Author`**
-
-huipeng.jia
+# UGCService <Badge type="tip" text="Class" />
 
 **`Instance`**
 
@@ -18,29 +12,15 @@ huipeng.jia
 
 单例类，请使用 getInstance 获取对象
 
-**`Network Status`**
-
-usage: 客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Service.Service.UGCService.md#constructor)
-
-### Methods
-
-- [createNewLocalGameFromTemplate](Service.Service.UGCService.md#createnewlocalgamefromtemplate)
-- [requestLocalUGCGameList](Service.Service.UGCService.md#requestlocalugcgamelist)
-- [requestPublishedUGCGameList](Service.Service.UGCService.md#requestpublishedugcgamelist)
-- [requestUGCTemplateList](Service.Service.UGCService.md#requestugctemplatelist)
-- [getInstance](Service.Service.UGCService.md#getinstance)
-
-## Constructors
-
-### constructor
-
-• **new UGCService**()
+| Methods                                                                                                                                                                                                                    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[createNewLocalGameFromTemplate](Service.Service.UGCService.md#createnewlocalgamefromtemplate)**(`Record`<`string`, `unknown`\>): `Promise`<`Record`<`string`, `unknown`\>\> <br> 以指定模板创建本地工程，并获取工程路径 |
+| **[requestLocalUGCGameList](Service.Service.UGCService.md#requestlocalugcgamelist)**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取当前手机本地的 UGC 工程列表                                                  |
+| **[requestPublishedUGCGameList](Service.Service.UGCService.md#requestpublishedugcgamelist)**(`string`): `Promise`<`Record`<`string`, `unknown`\>\> <br> 获取当前玩家已发布的 UGC 游戏列表                                  |
+| **[requestUGCTemplateList](Service.Service.UGCService.md#requestugctemplatelist)**(`string`): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取模板列表，可以分页方式查询                                             |
+| **[getInstance](Service.Service.UGCService.md#getinstance)**(): [`UGCService`](Service.Service.UGCService.md) <br> 获取用户建造管理器全局实例                                                                              |
 
 ## Methods
 
@@ -67,26 +47,22 @@ usage: 客户端
 
 使用示例: 模板信息包含如下字段:
 
-```
+```ts
 path: "data/data/local",
 parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
 ```
 
 #### Parameters
 
-| Name                 | Type                           | Description                   |
-| :------------------- | :----------------------------- | :---------------------------- |
-| `targetTemplateData` | `Record`<`string`, `unknown`\> | usage: 想要创建的模板游戏信息 |
+| Name                 | Type                           | Description            |
+| :------------------- | :----------------------------- | :--------------------- |
+| `targetTemplateData` | `Record`<`string`, `unknown`\> | 想要创建的模板游戏信息 |
 
 #### Returns
 
 `Promise`<`Record`<`string`, `unknown`\>\>
 
 复制好的本地工程信息
-
-#### Defined in
-
-Service/index.d.ts:739
 
 ---
 
@@ -113,7 +89,7 @@ Service/index.d.ts:739
 
 使用示例: 模板信息包含如下字段:
 
-```
+```ts
 gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // mw的游戏id
 path: "data/data/local",
 parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
@@ -124,10 +100,6 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 `Promise`<`Record`<`string`, `unknown`\>[]\>
 
 当前手机本地的 UGC 工程列表。只列出来发布过的游戏，未发布过的工程用不到
-
-#### Defined in
-
-Service/index.d.ts:721
 
 ---
 
@@ -154,7 +126,7 @@ Service/index.d.ts:721
 
 使用示例: 模板信息包含如下字段:
 
-```
+```ts
 "end": true,
 "games": [
     {
@@ -170,19 +142,15 @@ Service/index.d.ts:721
 
 #### Parameters
 
-| Name      | Type     | Description                                                     |
-| :-------- | :------- | :-------------------------------------------------------------- |
-| `lastId?` | `string` | usage: 上一页的最后一个 id, 如果是第一页传 null。 default: null |
+| Name      | Type     | Description                                              |
+| :-------- | :------- | :------------------------------------------------------- |
+| `lastId?` | `string` | 上一页的最后一个 id, 如果是第一页传 null。 default: null |
 
 #### Returns
 
 `Promise`<`Record`<`string`, `unknown`\>\>
 
 玩家已发布的 UGC 游戏列表，两个字段：end-表示是否最后一页；games-游戏信息数组
-
-#### Defined in
-
-Service/index.d.ts:701
 
 ---
 
@@ -209,7 +177,7 @@ Service/index.d.ts:701
 
 使用示例: 模板信息包含如下字段:
 
-```
+```ts
 {
     "id": 1001579,// 分页用的id
     "gid": "680244",
@@ -227,19 +195,15 @@ Service/index.d.ts:701
 
 #### Parameters
 
-| Name      | Type     | Description                                                     |
-| :-------- | :------- | :-------------------------------------------------------------- |
-| `lastId?` | `string` | usage: 上一页的最后一个 id, 如果是第一页传 null。 default: null |
+| Name      | Type     | Description                                              |
+| :-------- | :------- | :------------------------------------------------------- |
+| `lastId?` | `string` | 上一页的最后一个 id, 如果是第一页传 null。 default: null |
 
 #### Returns
 
 `Promise`<`Record`<`string`, `unknown`\>[]\>
 
 模板列表，数组形式。
-
-#### Defined in
-
-Service/index.d.ts:674
 
 ---
 
@@ -260,7 +224,3 @@ Service/index.d.ts:674
 [`UGCService`](Service.Service.UGCService.md)
 
 用户建造管理器全局实例
-
-#### Defined in
-
-Service/index.d.ts:645

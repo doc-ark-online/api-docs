@@ -1,48 +1,28 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
+[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
-# Class: HotWeaponReloadComponent
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).HotWeaponReloadComponent
+# HotWeaponReloadComponent <Badge type="tip" text="Class" />
 
 **`Description`**
 
 热武器换弹组件
 
-**`Network Status`**
-
-usage: 双端
-
-**`Author`**
-
-jun.zhang
-
 ## Table of contents
 
-### Constructors
+| Properties                                                                                                                                                                                                                              |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[onEndReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数     |
+| **[onEndReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数     |
+| **[onStartReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数 |
+| **[onStartReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数 |
 
-- [constructor](Gameplay.Gameplay.HotWeaponReloadComponent.md#constructor)
+| Accessors                                                                                                             |
+| :-------------------------------------------------------------------------------------------------------------------- |
+| **[animationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画 GUID |
+| **[reloadDuration](Gameplay.Gameplay.HotWeaponReloadComponent.md#reloadduration)**(): `number` <br> 获取换弹时间      |
 
-### Properties
-
-- [onEndReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadclient)
-- [onEndReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadserver)
-- [onStartReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)
-- [onStartReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)
-
-### Accessors
-
-- [animationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#animationguid)
-- [reloadDuration](Gameplay.Gameplay.HotWeaponReloadComponent.md#reloadduration)
-
-### Methods
-
-- [hadAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#hadanimationguid)
-
-## Constructors
-
-### constructor
-
-• **new HotWeaponReloadComponent**()
+| Methods                                                                                                                  |
+| :----------------------------------------------------------------------------------------------------------------------- |
+| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画 GUID |
 
 ## Properties
 
@@ -54,10 +34,6 @@ jun.zhang
 
 [客户端] 结束换弹时执行绑定函数
 
-#### Defined in
-
-Gameplay/index.d.ts:11889
-
 ---
 
 ### onEndReloadServer
@@ -67,10 +43,6 @@ Gameplay/index.d.ts:11889
 **`Description`**
 
 [服务端] 结束换弹时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11885
 
 ---
 
@@ -82,10 +54,6 @@ Gameplay/index.d.ts:11885
 
 [客户端] 开始换弹时执行绑定函数
 
-#### Defined in
-
-Gameplay/index.d.ts:11881
-
 ---
 
 ### onStartReloadServer
@@ -95,10 +63,6 @@ Gameplay/index.d.ts:11881
 **`Description`**
 
 [服务端] 开始换弹时执行绑定函数
-
-#### Defined in
-
-Gameplay/index.d.ts:11877
 
 ## Accessors
 
@@ -120,10 +84,6 @@ Gameplay/index.d.ts:11877
 
 绑定的动画 GUID
 
-#### Defined in
-
-Gameplay/index.d.ts:11901
-
 • `set` **animationGuid**(`guid`): `void`
 
 **`Description`**
@@ -136,17 +96,13 @@ Gameplay/index.d.ts:11901
 
 #### Parameters
 
-| Name   | Type     | Description                      |
-| :----- | :------- | :------------------------------- |
-| `guid` | `string` | usage: 需要设置的蒙太奇动画 guid |
+| Name   | Type     | Description               |
+| :----- | :------- | :------------------------ |
+| `guid` | `string` | 需要设置的蒙太奇动画 guid |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11895
 
 ---
 
@@ -168,10 +124,6 @@ Gameplay/index.d.ts:11895
 
 是换弹时间
 
-#### Defined in
-
-Gameplay/index.d.ts:11920
-
 • `set` **reloadDuration**(`time`): `void`
 
 **`Description`**
@@ -188,17 +140,13 @@ Gameplay/index.d.ts:11920
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `time` | `number` | usage: 新换弹时间 |
+| Name   | Type     | Description |
+| :----- | :------- | :---------- |
+| `time` | `number` | 新换弹时间  |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:11914
 
 ## Methods
 
@@ -219,7 +167,3 @@ Gameplay/index.d.ts:11914
 `boolean`
 
 是否有动画 GUID
-
-#### Defined in
-
-Gameplay/index.d.ts:11907

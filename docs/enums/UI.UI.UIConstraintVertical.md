@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / UIConstraintVertical
+[UI](../modules/UI.UI.md) / UIConstraintVertical
 
-# Enumeration: UIConstraintVertical
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).UIConstraintVertical
+# UIConstraintVertical <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,13 +8,13 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Bottom](UI.UI.UIConstraintVertical.md#bottom)
-- [Center](UI.UI.UIConstraintVertical.md#center)
-- [Scale](UI.UI.UIConstraintVertical.md#scale)
-- [Top](UI.UI.UIConstraintVertical.md#top)
-- [TopBottom](UI.UI.UIConstraintVertical.md#topbottom)
+| Enumeration Members                                                                  |
+| :----------------------------------------------------------------------------------- |
+| **[Bottom](UI.UI.UIConstraintVertical.md#bottom)** = `1` <br> 下对齐                 |
+| **[Center](UI.UI.UIConstraintVertical.md#center)** = `3` <br> 居中对齐               |
+| **[Scale](UI.UI.UIConstraintVertical.md#scale)** = `4` <br> 距离上下边距百分比固定   |
+| **[Top](UI.UI.UIConstraintVertical.md#top)** = `0` <br> 上对齐                       |
+| **[TopBottom](UI.UI.UIConstraintVertical.md#topbottom)** = `2` <br> 距离上下边距固定 |
 
 ## Enumeration Members
 
@@ -26,10 +24,6 @@
 
 下对齐
 
-#### Defined in
-
-UI/index.d.ts:3440
-
 ---
 
 ### Center
@@ -37,10 +31,6 @@ UI/index.d.ts:3440
 • **Center** = `3`
 
 居中对齐
-
-#### Defined in
-
-UI/index.d.ts:3444
 
 ---
 
@@ -50,10 +40,6 @@ UI/index.d.ts:3444
 
 距离上下边距百分比固定
 
-#### Defined in
-
-UI/index.d.ts:3446
-
 ---
 
 ### Top
@@ -62,10 +48,6 @@ UI/index.d.ts:3446
 
 上对齐
 
-#### Defined in
-
-UI/index.d.ts:3438
-
 ---
 
 ### TopBottom
@@ -73,7 +55,3 @@ UI/index.d.ts:3438
 • **TopBottom** = `2`
 
 距离上下边距固定
-
-#### Defined in
-
-UI/index.d.ts:3442

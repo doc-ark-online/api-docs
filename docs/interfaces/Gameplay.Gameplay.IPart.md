@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IPart
+[Gameplay](../modules/Gameplay.Gameplay.md) / IPart
 
-# Interface: IPart
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IPart
+# IPart <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 部位基类
-
-**`Author`**
-
-guang.deng
 
 ## Hierarchy
 
@@ -30,10 +24,10 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [getMesh](Gameplay.Gameplay.IPart.md#getmesh)
-- [setMesh](Gameplay.Gameplay.IPart.md#setmesh)
+| Methods                                                                                          |
+| :----------------------------------------------------------------------------------------------- |
+| **[getMesh](Gameplay.Gameplay.IPart.md#getmesh)**(): `string` <br> 获取部位模型                  |
+| **[setMesh](Gameplay.Gameplay.IPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型 |
 
 ## Methods
 
@@ -54,10 +48,6 @@ guang.deng
 `string`
 
 模型 Guid
-
-#### Defined in
-
-Gameplay/index.d.ts:2784
 
 ---
 
@@ -80,15 +70,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2778

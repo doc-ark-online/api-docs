@@ -1,16 +1,10 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2ClothPart
+[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2ClothPart
 
-# Interface: IHumanoidV2ClothPart
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).IHumanoidV2ClothPart
+# IHumanoidV2ClothPart <Badge type="tip" text="Interface" />
 
 **`Description`**
 
 人形对象 V2 部位
-
-**`Author`**
-
-guang.deng
 
 ## Hierarchy
 
@@ -27,31 +21,31 @@ guang.deng
 
 ## Table of contents
 
-### Methods
-
-- [getAreaCount](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)
-- [getColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)
-- [getDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)
-- [getDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)
-- [getDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigntexture)
-- [getMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getmesh)
-- [getPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternangle)
-- [getPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatterncolor)
-- [getPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternheight)
-- [getPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternintensity)
-- [getPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternwidth)
-- [getTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#gettexture)
-- [setColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setcolor)
-- [setDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesignangle)
-- [setDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigncolor)
-- [setDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigntexture)
-- [setMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setmesh)
-- [setPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternangle)
-- [setPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatterncolor)
-- [setPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternheight)
-- [setPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternintensity)
-- [setPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternwidth)
-- [setTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#settexture)
+| Methods                                                                                                                                                                               |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **[getAreaCount](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)**(): `number` <br> 获取衣服区域数量                                                                          |
+| **[getColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取颜色                                      |
+| **[getDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)**(`number`): `number` <br> 获取图案方向                                                                  |
+| **[getDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取图案颜色                      |
+| **[getDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigntexture)**(`number`): `string` <br> 获取衣服图案                                                              |
+| **[getMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getmesh)**(): `string` <br> 获取部位模型                                                                                        |
+| **[getPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternangle)**(`number`): `number` <br> 获取花纹旋转                                                                |
+| **[getPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatterncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取花纹颜色                    |
+| **[getPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternheight)**(`number`): `number` <br> 设置花纹纵向拉伸                                                          |
+| **[getPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternintensity)**(`number`): `number` <br> 获取花纹显示程度                                                    |
+| **[getPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternwidth)**(`number`): `number` <br> 获取花纹横向拉伸                                                            |
+| **[getTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#gettexture)**(`number`): `string` <br> 获取花纹                                                                              |
+| **[setColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setcolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置颜色                   |
+| **[setDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesignangle)**(`number`, `number`, `boolean`): `void` <br> 设置图案方向                                               |
+| **[setDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置图案颜色   |
+| **[setDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigntexture)**(`number`, `string`, `boolean`): `void` <br> 设置衣服图案                                           |
+| **[setMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型                                                                       |
+| **[setPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternangle)**(`number`, `number`, `boolean`): `void` <br> 设置花纹旋转                                             |
+| **[setPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatterncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置花纹颜色 |
+| **[setPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternheight)**(`number`, `number`, `boolean`): `void` <br> 设置花纹纵向拉伸                                       |
+| **[setPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternintensity)**(`number`, `number`, `boolean`): `void` <br> 设置花纹显示程度                                 |
+| **[setPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternwidth)**(`number`, `number`, `boolean`): `void` <br> 设置花纹横向拉伸                                         |
+| **[setTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#settexture)**(`number`, `string`, `boolean`): `void` <br> 设置花纹                                                           |
 
 ## Methods
 
@@ -73,10 +67,6 @@ guang.deng
 
 区域数量
 
-#### Defined in
-
-Gameplay/index.d.ts:2930
-
 ---
 
 ### getColor
@@ -95,17 +85,13 @@ Gameplay/index.d.ts:2930
 
 | Name        | Type     | Description |
 | :---------- | :------- | :---------- |
-| `areaIndex` | `number` | usage:区域  |
+| `areaIndex` | `number` | 区域        |
 
 #### Returns
 
 [`LinearColor`](../classes/Type.Type.LinearColor.md)
 
 颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:2947
 
 ---
 
@@ -125,17 +111,13 @@ Gameplay/index.d.ts:2947
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `number`
 
 方向值
-
-#### Defined in
-
-Gameplay/index.d.ts:3104
 
 ---
 
@@ -155,17 +137,13 @@ Gameplay/index.d.ts:3104
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 [`LinearColor`](../classes/Type.Type.LinearColor.md)
 
 颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:3087
 
 ---
 
@@ -185,17 +163,13 @@ Gameplay/index.d.ts:3087
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `string`
 
 guid
-
-#### Defined in
-
-Gameplay/index.d.ts:3070
 
 ---
 
@@ -217,14 +191,6 @@ Gameplay/index.d.ts:3070
 
 模型 Guid
 
-#### Inherited from
-
-[IPart](Gameplay.Gameplay.IPart.md).[getMesh](Gameplay.Gameplay.IPart.md#getmesh)
-
-#### Defined in
-
-Gameplay/index.d.ts:2784
-
 ---
 
 ### getPatternAngle
@@ -243,17 +209,13 @@ Gameplay/index.d.ts:2784
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `number`
 
 旋转值
-
-#### Defined in
-
-Gameplay/index.d.ts:3036
 
 ---
 
@@ -273,17 +235,13 @@ Gameplay/index.d.ts:3036
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 [`LinearColor`](../classes/Type.Type.LinearColor.md)
 
 颜色
-
-#### Defined in
-
-Gameplay/index.d.ts:2985
 
 ---
 
@@ -303,17 +261,13 @@ Gameplay/index.d.ts:2985
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `number`
 
 拉伸值
-
-#### Defined in
-
-Gameplay/index.d.ts:3019
 
 ---
 
@@ -333,17 +287,13 @@ Gameplay/index.d.ts:3019
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `number`
 
 显示程度
-
-#### Defined in
-
-Gameplay/index.d.ts:3053
 
 ---
 
@@ -363,17 +313,13 @@ Gameplay/index.d.ts:3053
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `number`
 
 拉伸值
-
-#### Defined in
-
-Gameplay/index.d.ts:3002
 
 ---
 
@@ -393,17 +339,13 @@ Gameplay/index.d.ts:3002
 
 | Name    | Type     | Description |
 | :------ | :------- | :---------- |
-| `index` | `number` | usage:区域  |
+| `index` | `number` | 区域        |
 
 #### Returns
 
 `string`
 
 guid
-
-#### Defined in
-
-Gameplay/index.d.ts:2964
 
 ---
 
@@ -422,19 +364,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `index` | `number`                                             | usage:区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `index` | `number`                                             | 区域                    |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2940
 
 ---
 
@@ -453,19 +391,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:区域                    |
-| `value` | `number`  | usage:角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 区域                    |
+| `value` | `number`  | 角度 {Min:0,Max:360}    |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3097
 
 ---
 
@@ -484,19 +418,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `index` | `number`                                             | usage:区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `index` | `number`                                             | 区域                    |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3080
 
 ---
 
@@ -515,19 +445,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:区域                    |
-| `guid`  | `string`  | usage:贴图 Guid               |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 区域                    |
+| `guid`  | `string`  | 贴图 Guid               |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3063
 
 ---
 
@@ -550,22 +476,14 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description                   |
-| :----- | :-------- | :---------------------------- |
-| `guid` | `string`  | usage:模型 Guid               |
-| `sync` | `boolean` | usage:true 同步; false 不同步 |
+| Name   | Type      | Description             |
+| :----- | :-------- | :---------------------- |
+| `guid` | `string`  | 模型 Guid               |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[IPart](Gameplay.Gameplay.IPart.md).[setMesh](Gameplay.Gameplay.IPart.md#setmesh)
-
-#### Defined in
-
-Gameplay/index.d.ts:2778
 
 ---
 
@@ -584,19 +502,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:区域                    |
-| `value` | `number`  | usage:角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 区域                    |
+| `value` | `number`  | 角度 {Min:0,Max:360}    |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3029
 
 ---
 
@@ -615,19 +529,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description                   |
-| :------ | :--------------------------------------------------- | :---------------------------- |
-| `index` | `number`                                             | usage:区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | usage:颜色                    |
-| `sync`  | `boolean`                                            | usage:true 同步; false 不同步 |
+| Name    | Type                                                 | Description             |
+| :------ | :--------------------------------------------------- | :---------------------- |
+| `index` | `number`                                             | 区域                    |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
+| `sync`  | `boolean`                                            | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2974
 
 ---
 
@@ -646,19 +556,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                       |
-| :------ | :-------- | :-------------------------------- |
-| `index` | `number`  | usage:区域                        |
-| `value` | `number`  | usage:拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | usage:true 同步; false 不同步     |
+| Name    | Type      | Description                 |
+| :------ | :-------- | :-------------------------- |
+| `index` | `number`  | 区域                        |
+| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
+| `sync`  | `boolean` | true 同步; false 不同步     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3012
 
 ---
 
@@ -677,19 +583,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:区域                    |
-| `value` | `number`  | usage:强度 {Min:0,Max:1}      |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 区域                    |
+| `value` | `number`  | 强度 {Min:0,Max:1}      |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:3046
 
 ---
 
@@ -708,19 +610,15 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                       |
-| :------ | :-------- | :-------------------------------- |
-| `index` | `number`  | usage:区域                        |
-| `value` | `number`  | usage:拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | usage:true 同步; false 不同步     |
+| Name    | Type      | Description                 |
+| :------ | :-------- | :-------------------------- |
+| `index` | `number`  | 区域                        |
+| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
+| `sync`  | `boolean` | true 同步; false 不同步     |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2995
 
 ---
 
@@ -739,16 +637,12 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                   |
-| :------ | :-------- | :---------------------------- |
-| `index` | `number`  | usage:区域                    |
-| `guid`  | `string`  | usage:贴图 Guid               |
-| `sync`  | `boolean` | usage:true 同步; false 不同步 |
+| Name    | Type      | Description             |
+| :------ | :-------- | :---------------------- |
+| `index` | `number`  | 区域                    |
+| `guid`  | `string`  | 贴图 Guid               |
+| `sync`  | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:2957

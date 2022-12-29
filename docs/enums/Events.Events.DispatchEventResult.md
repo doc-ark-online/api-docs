@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Events](../modules/Events.md) / [Events](../modules/Events.Events.md) / DispatchEventResult
+[Events](../modules/Events.Events.md) / DispatchEventResult
 
-# Enumeration: DispatchEventResult
-
-[Events](../modules/Events.md).[Events](../modules/Events.Events.md).DispatchEventResult
+# DispatchEventResult <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Failure](Events.Events.DispatchEventResult.md#failure)
-- [FailureCountLimit](Events.Events.DispatchEventResult.md#failurecountlimit)
-- [FailureRateLimit](Events.Events.DispatchEventResult.md#failureratelimit)
-- [Success](Events.Events.DispatchEventResult.md#success)
+| Enumeration Members                                                                                     |
+| :------------------------------------------------------------------------------------------------------ |
+| **[Failure](Events.Events.DispatchEventResult.md#failure)** = `1` <br> 失败                             |
+| **[FailureCountLimit](Events.Events.DispatchEventResult.md#failurecountlimit)** = `2` <br> 失败次数限制 |
+| **[FailureRateLimit](Events.Events.DispatchEventResult.md#failureratelimit)** = `3` <br> 失败频率限制   |
+| **[Success](Events.Events.DispatchEventResult.md#success)** = `0` <br> 成功                             |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 失败
 
-#### Defined in
-
-Events/index.d.ts:11
-
 ---
 
 ### FailureCountLimit
@@ -36,10 +30,6 @@ Events/index.d.ts:11
 • **FailureCountLimit** = `2`
 
 失败次数限制
-
-#### Defined in
-
-Events/index.d.ts:13
 
 ---
 
@@ -49,10 +39,6 @@ Events/index.d.ts:13
 
 失败频率限制
 
-#### Defined in
-
-Events/index.d.ts:15
-
 ---
 
 ### Success
@@ -60,7 +46,3 @@ Events/index.d.ts:15
 • **Success** = `0`
 
 成功
-
-#### Defined in
-
-Events/index.d.ts:9

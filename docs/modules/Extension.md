@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Extension
 
-# Module: Extension
-
-## Table of contents
+# Extension <Badge type="tip" text="Module" />
 
 ### Namespaces
 

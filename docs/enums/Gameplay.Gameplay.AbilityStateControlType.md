@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityStateControlType
+[Gameplay](../modules/Gameplay.Gameplay.md) / AbilityStateControlType
 
-# Enumeration: AbilityStateControlType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).AbilityStateControlType
+# AbilityStateControlType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,12 +8,12 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [CanJump](Gameplay.Gameplay.AbilityStateControlType.md#canjump)
-- [CanMove](Gameplay.Gameplay.AbilityStateControlType.md#canmove)
-- [CanTurn](Gameplay.Gameplay.AbilityStateControlType.md#canturn)
-- [None](Gameplay.Gameplay.AbilityStateControlType.md#none)
+| Enumeration Members                                                                   |
+| :------------------------------------------------------------------------------------ |
+| **[CanJump](Gameplay.Gameplay.AbilityStateControlType.md#canjump)** = `2` <br> 可跳跃 |
+| **[CanMove](Gameplay.Gameplay.AbilityStateControlType.md#canmove)** = `1` <br> 可移动 |
+| **[CanTurn](Gameplay.Gameplay.AbilityStateControlType.md#canturn)** = `4` <br> 可转向 |
+| **[None](Gameplay.Gameplay.AbilityStateControlType.md#none)** = `0` <br> 默认值       |
 
 ## Enumeration Members
 
@@ -25,10 +23,6 @@
 
 可跳跃
 
-#### Defined in
-
-Gameplay/index.d.ts:8282
-
 ---
 
 ### CanMove
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:8282
 • **CanMove** = `1`
 
 可移动
-
-#### Defined in
-
-Gameplay/index.d.ts:8280
 
 ---
 
@@ -49,10 +39,6 @@ Gameplay/index.d.ts:8280
 
 可转向
 
-#### Defined in
-
-Gameplay/index.d.ts:8284
-
 ---
 
 ### None
@@ -60,7 +46,3 @@ Gameplay/index.d.ts:8284
 • **None** = `0`
 
 默认值
-
-#### Defined in
-
-Gameplay/index.d.ts:8278

@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Network
 
-# Module: Network
-
-## Table of contents
+# Network <Badge type="tip" text="Module" />
 
 ### Namespaces
 

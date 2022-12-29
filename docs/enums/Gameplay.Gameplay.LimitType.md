@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / LimitType
+[Gameplay](../modules/Gameplay.Gameplay.md) / LimitType
 
-# Enumeration: LimitType
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).LimitType
+# LimitType <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Free](Gameplay.Gameplay.LimitType.md#free)
-- [Limited](Gameplay.Gameplay.LimitType.md#limited)
-- [Locked](Gameplay.Gameplay.LimitType.md#locked)
+| Enumeration Members                                                   |
+| :-------------------------------------------------------------------- |
+| **[Free](Gameplay.Gameplay.LimitType.md#free)** = `0` <br> 自由       |
+| **[Limited](Gameplay.Gameplay.LimitType.md#limited)** = `1` <br> 限制 |
+| **[Locked](Gameplay.Gameplay.LimitType.md#locked)** = `2` <br> 锁定   |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 自由
 
-#### Defined in
-
-Gameplay/index.d.ts:12149
-
 ---
 
 ### Limited
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:12149
 
 限制
 
-#### Defined in
-
-Gameplay/index.d.ts:12151
-
 ---
 
 ### Locked
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:12151
 • **Locked** = `2`
 
 锁定
-
-#### Defined in
-
-Gameplay/index.d.ts:12153

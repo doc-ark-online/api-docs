@@ -1,36 +1,16 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / Optimization
+[Gameplay](../modules/Gameplay.Gameplay.md) / Optimization
 
-# Class: Optimization
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).Optimization
-
-**`Author`**
-
-song.zhang
+# Optimization <Badge type="tip" text="Class" />
 
 **`Description`**
 
 控制一些优化项的开启关闭
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Gameplay.Gameplay.Optimization.md#constructor)
-
-### Methods
-
-- [enableOptimization](Gameplay.Gameplay.Optimization.md#enableoptimization)
-
-## Constructors
-
-### constructor
-
-• **new Optimization**()
+| Methods                                                                                                                                               |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[enableOptimization](Gameplay.Gameplay.Optimization.md#enableoptimization)**(`boolean`): `void` <br> 开启或关闭角色优化(角色裁剪、动画更新率降低等) |
 
 ## Methods
 
@@ -48,14 +28,10 @@ usage:客户端
 
 #### Parameters
 
-| Name       | Type      | Description                  |
-| :--------- | :-------- | :--------------------------- |
-| `isEnable` | `boolean` | usage:是否开启或关闭角色优化 |
+| Name       | Type      | Description            |
+| :--------- | :-------- | :--------------------- |
+| `isEnable` | `boolean` | 是否开启或关闭角色优化 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-Gameplay/index.d.ts:13356

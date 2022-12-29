@@ -1,25 +1,23 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [DataStorage](DataStorage.md) / DataStorage
+DataStorage
 
-# Namespace: DataStorage
-
-[DataStorage](DataStorage.md).DataStorage
+# DataStorage <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
-### Enumerations
+| Enumerations                                                                                             |
+| :------------------------------------------------------------------------------------------------------- |
+| [DataStorageResultCode](../enums/DataStorage.DataStorage.DataStorageResultCode.md) <br> 数据储存返回代码 |
 
-- [DataStorageResultCode](../enums/DataStorage.DataStorage.DataStorageResultCode.md)
-
-### Functions
-
-- [asyncGetCustomData](DataStorage.DataStorage.md#asyncgetcustomdata)
-- [asyncGetPlayerData](DataStorage.DataStorage.md#asyncgetplayerdata)
-- [asyncRemoveCustomData](DataStorage.DataStorage.md#asyncremovecustomdata)
-- [asyncRemovePlayerData](DataStorage.DataStorage.md#asyncremoveplayerdata)
-- [asyncSetCustomData](DataStorage.DataStorage.md#asyncsetcustomdata)
-- [asyncSetPlayerData](DataStorage.DataStorage.md#asyncsetplayerdata)
-- [setTemporaryStorage](DataStorage.DataStorage.md#settemporarystorage)
-- [sizeOfData](DataStorage.DataStorage.md#sizeofdata)
+| Functions                                                                                                                                                                                                                                                        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[asyncGetCustomData](DataStorage.DataStorage.md#asyncgetcustomdata)**(`string`): `Promise`<`unknown`\> <br> 异步获取自定义数据                                                                                                                                 |
+| **[asyncGetPlayerData](DataStorage.DataStorage.md#asyncgetplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md)): `Promise`<`unknown`\> <br> 异步获取玩家数据                                                                                         |
+| **[asyncRemoveCustomData](DataStorage.DataStorage.md#asyncremovecustomdata)**(`string`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步删除自定义数据                                                |
+| **[asyncRemovePlayerData](DataStorage.DataStorage.md#asyncremoveplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md)): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步删除用户数据        |
+| **[asyncSetCustomData](DataStorage.DataStorage.md#asyncsetcustomdata)**(`string`, `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据                                           |
+| **[asyncSetPlayerData](DataStorage.DataStorage.md#asyncsetplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md), `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据 |
+| **[setTemporaryStorage](DataStorage.DataStorage.md#settemporarystorage)**(`boolean`): `void` <br> 设置数据存储环境是否是临时的                                                                                                                                   |
+| **[sizeOfData](DataStorage.DataStorage.md#sizeofdata)**(`unknown`): `number` <br> 返回 data 的当前大小。单位为 bytes（字节）。                                                                                                                                   |
 
 ## Functions
 
@@ -37,19 +35,15 @@
 
 #### Parameters
 
-| Name  | Type     | Description        |
-| :---- | :------- | :----------------- |
-| `key` | `string` | usage:字符串类型键 |
+| Name  | Type     | Description  |
+| :---- | :------- | :----------- |
+| `key` | `string` | 字符串类型键 |
 
 #### Returns
 
 `Promise`<`unknown`\>
 
 之前保存的自定义数据
-
-#### Defined in
-
-DataStorage/index.d.ts:75
 
 ---
 
@@ -67,19 +61,15 @@ DataStorage/index.d.ts:75
 
 #### Parameters
 
-| Name     | Type                                               | Description    |
-| :------- | :------------------------------------------------- | :------------- |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象 |
+| Name     | Type                                               | Description |
+| :------- | :------------------------------------------------- | :---------- |
+| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象    |
 
 #### Returns
 
 `Promise`<`unknown`\>
 
 保存的玩家数据
-
-#### Defined in
-
-DataStorage/index.d.ts:48
 
 ---
 
@@ -97,19 +87,15 @@ DataStorage/index.d.ts:48
 
 #### Parameters
 
-| Name  | Type     | Description        |
-| :---- | :------- | :----------------- |
-| `key` | `string` | usage:字符串类型键 |
+| Name  | Type     | Description  |
+| :---- | :------- | :----------- |
+| `key` | `string` | 字符串类型键 |
 
 #### Returns
 
 `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
 
 数据删除状态
-
-#### Defined in
-
-DataStorage/index.d.ts:82
 
 ---
 
@@ -127,19 +113,15 @@ DataStorage/index.d.ts:82
 
 #### Parameters
 
-| Name     | Type                                               | Description    |
-| :------- | :------------------------------------------------- | :------------- |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象 |
+| Name     | Type                                               | Description |
+| :------- | :------------------------------------------------- | :---------- |
+| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象    |
 
 #### Returns
 
 `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
 
 数据储存状态
-
-#### Defined in
-
-DataStorage/index.d.ts:55
 
 ---
 
@@ -157,20 +139,16 @@ DataStorage/index.d.ts:55
 
 #### Parameters
 
-| Name    | Type      | Description                                    |
-| :------ | :-------- | :--------------------------------------------- |
-| `key`   | `string`  | usage:字符串类型的键，用来唯一标识存储的数据。 |
-| `value` | `unknown` | usage:任意类型的数据                           |
+| Name    | Type      | Description                              |
+| :------ | :-------- | :--------------------------------------- |
+| `key`   | `string`  | 字符串类型的键，用来唯一标识存储的数据。 |
+| `value` | `unknown` | 任意类型的数据                           |
 
 #### Returns
 
 `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
 
 数据储存状态
-
-#### Defined in
-
-DataStorage/index.d.ts:65
 
 ---
 
@@ -192,20 +170,16 @@ DataStorage/index.d.ts:65
 
 #### Parameters
 
-| Name     | Type                                               | Description        |
-| :------- | :------------------------------------------------- | :----------------- |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | usage:玩家对象     |
-| `data`   | `unknown`                                          | usage:要保存的数据 |
+| Name     | Type                                               | Description  |
+| :------- | :------------------------------------------------- | :----------- |
+| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象     |
+| `data`   | `unknown`                                          | 要保存的数据 |
 
 #### Returns
 
 `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
 
 设置操作结果
-
-#### Defined in
-
-DataStorage/index.d.ts:38
 
 ---
 
@@ -223,17 +197,13 @@ DataStorage/index.d.ts:38
 
 #### Parameters
 
-| Name          | Type      | Description                                                                                                                               |
-| :------------ | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| `isTemporary` | `boolean` | usage:true 代表临时存储，数据在游戏服务器进程中，游戏退出时数据被删除。false 为永久存储，数据存储在专用服务器，游戏退出时数据不会被删除。 |
+| Name          | Type      | Description                                                                                                                         |
+| :------------ | :-------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| `isTemporary` | `boolean` | true 代表临时存储，数据在游戏服务器进程中，游戏退出时数据被删除。false 为永久存储，数据存储在专用服务器，游戏退出时数据不会被删除。 |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-DataStorage/index.d.ts:88
 
 ---
 
@@ -251,16 +221,12 @@ DataStorage/index.d.ts:88
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `data` | `unknown` | usage: 数据键值对对象。 |
+| Name   | Type      | Description      |
+| :----- | :-------- | :--------------- |
+| `data` | `unknown` | 数据键值对对象。 |
 
 #### Returns
 
 `number`
 
 数据大小
-
-#### Defined in
-
-DataStorage/index.d.ts:29

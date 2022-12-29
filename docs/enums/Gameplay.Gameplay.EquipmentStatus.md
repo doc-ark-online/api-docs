@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EquipmentStatus
+[Gameplay](../modules/Gameplay.Gameplay.md) / EquipmentStatus
 
-# Enumeration: EquipmentStatus
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EquipmentStatus
+# EquipmentStatus <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Equipped](Gameplay.Gameplay.EquipmentStatus.md#equipped)
-- [NotPickedUp](Gameplay.Gameplay.EquipmentStatus.md#notpickedup)
-- [PickedUp](Gameplay.Gameplay.EquipmentStatus.md#pickedup)
+| Enumeration Members                                                                       |
+| :---------------------------------------------------------------------------------------- |
+| **[Equipped](Gameplay.Gameplay.EquipmentStatus.md#equipped)** = `2` <br> 已拿出装备       |
+| **[NotPickedUp](Gameplay.Gameplay.EquipmentStatus.md#notpickedup)** = `0` <br> 未拾取装备 |
+| **[PickedUp](Gameplay.Gameplay.EquipmentStatus.md#pickedup)** = `1` <br> 已拾取装备       |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@
 
 已拿出装备
 
-#### Defined in
-
-Gameplay/index.d.ts:8852
-
 ---
 
 ### NotPickedUp
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:8852
 
 未拾取装备
 
-#### Defined in
-
-Gameplay/index.d.ts:8848
-
 ---
 
 ### PickedUp
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:8848
 • **PickedUp** = `1`
 
 已拾取装备
-
-#### Defined in
-
-Gameplay/index.d.ts:8850

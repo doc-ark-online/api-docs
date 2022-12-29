@@ -1,37 +1,17 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [UI](../modules/UI.md) / [UI](../modules/UI.UI.md) / EventReply
+[UI](../modules/UI.UI.md) / EventReply
 
-# Class: EventReply
-
-[UI](../modules/UI.md).[UI](../modules/UI.UI.md).EventReply
-
-**`Author`**
-
-jie.wu
+# EventReply <Badge type="tip" text="Class" />
 
 **`Description`**
 
 事件回复
 
-**`Network Status`**
-
-usage:客户端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](UI.UI.EventReply.md#constructor)
-
-### Accessors
-
-- [handled](UI.UI.EventReply.md#handled)
-- [unHandled](UI.UI.EventReply.md#unhandled)
-
-## Constructors
-
-### constructor
-
-• `Private` **new EventReply**()
+| Accessors                                                                                             |
+| :---------------------------------------------------------------------------------------------------- |
+| **[handled](UI.UI.EventReply.md#handled)**(): [`EventReply`](UI.UI.EventReply.md) <br> 事件已处理     |
+| **[unHandled](UI.UI.EventReply.md#unhandled)**(): [`EventReply`](UI.UI.EventReply.md) <br> 事件未处理 |
 
 **`Description`**
 
@@ -40,10 +20,6 @@ usage:客户端
 **`Effect`**
 
 只在客户端调用生效
-
-#### Defined in
-
-UI/index.d.ts:4227
 
 • `Private` **new EventReply**()
 
@@ -54,10 +30,6 @@ UE 的默认值构造
 **`Effect`**
 
 只在客户端调用生效
-
-#### Defined in
-
-UI/index.d.ts:4232
 
 ## Accessors
 
@@ -77,10 +49,6 @@ UI/index.d.ts:4232
 
 [`EventReply`](UI.UI.EventReply.md)
 
-#### Defined in
-
-UI/index.d.ts:4237
-
 ---
 
 ### unHandled
@@ -98,7 +66,3 @@ UI/index.d.ts:4237
 #### Returns
 
 [`EventReply`](UI.UI.EventReply.md)
-
-#### Defined in
-
-UI/index.d.ts:4242

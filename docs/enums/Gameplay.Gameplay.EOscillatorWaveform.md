@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / EOscillatorWaveform
+[Gameplay](../modules/Gameplay.Gameplay.md) / EOscillatorWaveform
 
-# Enumeration: EOscillatorWaveform
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).EOscillatorWaveform
+# EOscillatorWaveform <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,10 +8,10 @@
 
 ## Table of contents
 
-### Enumeration Members
-
-- [PerlinNoise](Gameplay.Gameplay.EOscillatorWaveform.md#perlinnoise)
-- [SineWave](Gameplay.Gameplay.EOscillatorWaveform.md#sinewave)
+| Enumeration Members                                                                            |
+| :--------------------------------------------------------------------------------------------- |
+| **[PerlinNoise](Gameplay.Gameplay.EOscillatorWaveform.md#perlinnoise)** = `1` <br> Perlin 噪声 |
+| **[SineWave](Gameplay.Gameplay.EOscillatorWaveform.md#sinewave)** = `0` <br> 正弦波            |
 
 ## Enumeration Members
 
@@ -23,10 +21,6 @@
 
 Perlin 噪声
 
-#### Defined in
-
-Gameplay/index.d.ts:1946
-
 ---
 
 ### SineWave
@@ -34,7 +28,3 @@ Gameplay/index.d.ts:1946
 • **SineWave** = `0`
 
 正弦波
-
-#### Defined in
-
-Gameplay/index.d.ts:1944

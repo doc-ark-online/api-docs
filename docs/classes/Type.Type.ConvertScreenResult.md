@@ -1,39 +1,19 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Type](../modules/Type.md) / [Type](../modules/Type.Type.md) / ConvertScreenResult
+[Type](../modules/Type.Type.md) / ConvertScreenResult
 
-# Class: ConvertScreenResult
-
-[Type](../modules/Type.md).[Type](../modules/Type.Type.md).ConvertScreenResult
-
-**`Author`**
-
-孙向坤
+# ConvertScreenResult <Badge type="tip" text="Class" />
 
 **`Description`**
 
 屏幕坐标转换结果
 
-**`Network Status`**
-
-usage:双端
-
 ## Table of contents
 
-### Constructors
-
-- [constructor](Type.Type.ConvertScreenResult.md#constructor)
-
-### Properties
-
-- [result](Type.Type.ConvertScreenResult.md#result)
-- [screenPosition](Type.Type.ConvertScreenResult.md#screenposition)
-- [worldDirection](Type.Type.ConvertScreenResult.md#worlddirection)
-- [worldLocation](Type.Type.ConvertScreenResult.md#worldlocation)
-
-## Constructors
-
-### constructor
-
-• **new ConvertScreenResult**()
+| Properties                                                                                                             |
+| :--------------------------------------------------------------------------------------------------------------------- |
+| **[result](Type.Type.ConvertScreenResult.md#result)**: `boolean` <br> 如果无法确定值，则返回 false。                   |
+| **[screenPosition](Type.Type.ConvertScreenResult.md#screenposition)**: [`Vector2`](Type.Type.Vector2.md) <br> 屏幕位置 |
+| **[worldDirection](Type.Type.ConvertScreenResult.md#worlddirection)**: [`Vector`](Type.Type.Vector.md) <br> 世界方向   |
+| **[worldLocation](Type.Type.ConvertScreenResult.md#worldlocation)**: [`Vector`](Type.Type.Vector.md) <br> 世界坐标     |
 
 ## Properties
 
@@ -45,10 +25,6 @@ usage:双端
 
 如果无法确定值，则返回 false。
 
-#### Defined in
-
-Type/index.d.ts:11
-
 ---
 
 ### screenPosition
@@ -58,10 +34,6 @@ Type/index.d.ts:11
 **`Description`**
 
 屏幕位置
-
-#### Defined in
-
-Type/index.d.ts:23
 
 ---
 
@@ -73,10 +45,6 @@ Type/index.d.ts:23
 
 世界方向
 
-#### Defined in
-
-Type/index.d.ts:19
-
 ---
 
 ### worldLocation
@@ -86,7 +54,3 @@ Type/index.d.ts:19
 **`Description`**
 
 世界坐标
-
-#### Defined in
-
-Type/index.d.ts:15

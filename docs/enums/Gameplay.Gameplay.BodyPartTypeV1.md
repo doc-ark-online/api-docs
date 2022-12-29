@@ -1,8 +1,6 @@
-[auto-mwapi-lib](../README.md) / [Exports](../modules.md) / [Gameplay](../modules/Gameplay.md) / [Gameplay](../modules/Gameplay.Gameplay.md) / BodyPartTypeV1
+[Gameplay](../modules/Gameplay.Gameplay.md) / BodyPartTypeV1
 
-# Enumeration: BodyPartTypeV1
-
-[Gameplay](../modules/Gameplay.md).[Gameplay](../modules/Gameplay.Gameplay.md).BodyPartTypeV1
+# BodyPartTypeV1 <Badge type="tip" text="Enumeration" />
 
 **`Description`**
 
@@ -10,11 +8,11 @@ V1 角色部位
 
 ## Table of contents
 
-### Enumeration Members
-
-- [Face](Gameplay.Gameplay.BodyPartTypeV1.md#face)
-- [Hair](Gameplay.Gameplay.BodyPartTypeV1.md#hair)
-- [Trunk](Gameplay.Gameplay.BodyPartTypeV1.md#trunk)
+| Enumeration Members                                                    |
+| :--------------------------------------------------------------------- |
+| **[Face](Gameplay.Gameplay.BodyPartTypeV1.md#face)** = `1` <br> 面部   |
+| **[Hair](Gameplay.Gameplay.BodyPartTypeV1.md#hair)** = `0` <br> 头发   |
+| **[Trunk](Gameplay.Gameplay.BodyPartTypeV1.md#trunk)** = `2` <br> 身体 |
 
 ## Enumeration Members
 
@@ -24,10 +22,6 @@ V1 角色部位
 
 面部
 
-#### Defined in
-
-Gameplay/index.d.ts:1740
-
 ---
 
 ### Hair
@@ -36,10 +30,6 @@ Gameplay/index.d.ts:1740
 
 头发
 
-#### Defined in
-
-Gameplay/index.d.ts:1738
-
 ---
 
 ### Trunk
@@ -47,7 +37,3 @@ Gameplay/index.d.ts:1738
 • **Trunk** = `2`
 
 身体
-
-#### Defined in
-
-Gameplay/index.d.ts:1742

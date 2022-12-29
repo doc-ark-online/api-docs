@@ -1,8 +1,6 @@
 [auto-mwapi-lib](../README.md) / [Exports](../modules.md) / Util
 
-# Module: Util
-
-## Table of contents
+# Util <Badge type="tip" text="Module" />
 
 ### Namespaces
 
