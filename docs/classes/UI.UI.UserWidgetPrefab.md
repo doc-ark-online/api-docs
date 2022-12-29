@@ -4,7 +4,7 @@
 
 **`Description`**
 
-ui 预制体
+ui预制体
 
 ## Hierarchy
 
@@ -14,43 +14,43 @@ ui 预制体
 
 ## Table of contents
 
-| Accessors                                                                                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[autoSizeEnable](UI.UI.UserWidgetPrefab.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                       |
-| **[cachedGeometry](UI.UI.UserWidgetPrefab.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                    |
-| **[constraints](UI.UI.UserWidgetPrefab.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局          |
-| **[desiredSize](UI.UI.UserWidgetPrefab.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                             |
-| **[enable](UI.UI.UserWidgetPrefab.md#enable)**(): `boolean` <br> 是否可用                                                                                   |
-| **[focusable](UI.UI.UserWidgetPrefab.md#focusable)**(): `boolean` <br> 获取是否响应键盘焦点事件                                                             |
-| **[guid](UI.UI.UserWidgetPrefab.md#guid)**(): `string` <br> 获取控件 GUID                                                                                   |
-| **[isHovered](UI.UI.UserWidgetPrefab.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                       |
-| **[name](UI.UI.UserWidgetPrefab.md#name)**(): `string` <br> 获取名字                                                                                        |
-| **[paintSpaceGeometry](UI.UI.UserWidgetPrefab.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息       |
-| **[parent](UI.UI.UserWidgetPrefab.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                               |
-| **[position](UI.UI.UserWidgetPrefab.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                    |
-| **[renderOpacity](UI.UI.UserWidgetPrefab.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                |
-| **[renderScale](UI.UI.UserWidgetPrefab.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                             |
-| **[renderShear](UI.UI.UserWidgetPrefab.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                         |
-| **[renderTransformAngle](UI.UI.UserWidgetPrefab.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                  |
-| **[renderTransformPivot](UI.UI.UserWidgetPrefab.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                           |
-| **[rootContent](UI.UI.UserWidgetPrefab.md#rootcontent)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取根 Canvas                                                  |
-| **[size](UI.UI.UserWidgetPrefab.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                               |
-| **[slot](UI.UI.UserWidgetPrefab.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
-| **[tickSpaceGeometry](UI.UI.UserWidgetPrefab.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息    |
-| **[transform](UI.UI.UserWidgetPrefab.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                        |
-| **[visibility](UI.UI.UserWidgetPrefab.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                            |
-| **[visible](UI.UI.UserWidgetPrefab.md#visible)**(): `boolean` <br> 是否可见                                                                                 |
-| **[zOrder](UI.UI.UserWidgetPrefab.md#zorder)**(): `number` <br> 获取 zorder                                                                                 |
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.UI.UserWidgetPrefab.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.UI.UserWidgetPrefab.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.UI.UserWidgetPrefab.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[desiredSize](UI.UI.UserWidgetPrefab.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.UI.UserWidgetPrefab.md#enable)**(): `boolean` <br> 是否可用|
+| **[focusable](UI.UI.UserWidgetPrefab.md#focusable)**(): `boolean` <br> 获取是否响应键盘焦点事件|
+| **[guid](UI.UI.UserWidgetPrefab.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.UI.UserWidgetPrefab.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[name](UI.UI.UserWidgetPrefab.md#name)**(): `string` <br> 获取名字|
+| **[paintSpaceGeometry](UI.UI.UserWidgetPrefab.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.UI.UserWidgetPrefab.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点|
+| **[position](UI.UI.UserWidgetPrefab.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.UI.UserWidgetPrefab.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.UI.UserWidgetPrefab.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.UI.UserWidgetPrefab.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.UI.UserWidgetPrefab.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.UI.UserWidgetPrefab.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点|
+| **[rootContent](UI.UI.UserWidgetPrefab.md#rootcontent)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取根Canvas|
+| **[size](UI.UI.UserWidgetPrefab.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.UI.UserWidgetPrefab.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[tickSpaceGeometry](UI.UI.UserWidgetPrefab.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.UI.UserWidgetPrefab.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[visibility](UI.UI.UserWidgetPrefab.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.UI.UserWidgetPrefab.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.UI.UserWidgetPrefab.md#zorder)**(): `number` <br> 获取zorder|
 
-| Methods                                                                                                                                          |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[addToViewport](UI.UI.UserWidgetPrefab.md#addtoviewport)**(`number`): `void` <br> 添加到屏幕上                                                 |
-| **[destroyObject](UI.UI.UserWidgetPrefab.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                          |
-| **[equal](UI.UI.UserWidgetPrefab.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                   |
-| **[findChildByPath](UI.UI.UserWidgetPrefab.md#findchildbypath)**(`string`): [`Widget`](UI.UI.Widget.md) <br> 通过相对路径查找节点                |
-| **[invalidateLayoutAndVolatility](UI.UI.UserWidgetPrefab.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算         |
-| **[removeRootContent](UI.UI.UserWidgetPrefab.md#removerootcontent)**(): `void` <br> 移除根 Canvas,会销毁根 Canvas，无法再次使用                  |
-| **[newObject](UI.UI.UserWidgetPrefab.md#newobject)**([`Canvas`](UI.UI.Canvas.md)): [`UserWidget`](UI.UI.UserWidget.md) <br> 创建 UserWidget 控件 |
+| Methods |
+| :-----|
+| **[addToViewport](UI.UI.UserWidgetPrefab.md#addtoviewport)**(`number`): `void` <br> 添加到屏幕上|
+| **[destroyObject](UI.UI.UserWidgetPrefab.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.UI.UserWidgetPrefab.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[findChildByPath](UI.UI.UserWidgetPrefab.md#findchildbypath)**(`string`): [`Widget`](UI.UI.Widget.md) <br> 通过相对路径查找节点|
+| **[invalidateLayoutAndVolatility](UI.UI.UserWidgetPrefab.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[removeRootContent](UI.UI.UserWidgetPrefab.md#removerootcontent)**(): `void` <br> 移除根Canvas,会销毁根Canvas，无法再次使用|
+| **[newObject](UI.UI.UserWidgetPrefab.md#newobject)**([`Canvas`](UI.UI.Canvas.md)): [`UserWidget`](UI.UI.UserWidget.md) <br> 创建 UserWidget 控件|
 
 ## Accessors
 
@@ -84,15 +84,15 @@ ui 预制体
 
 #### Parameters
 
-| Name       | Type      | Description      |
-| :--------- | :-------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### cachedGeometry
 
@@ -100,7 +100,7 @@ ui 预制体
 
 **`Description`**
 
-获取上一次的 GetTickSpaceGeometry
+获取上一次的GetTickSpaceGeometry
 
 **`Effect`**
 
@@ -112,7 +112,7 @@ ui 预制体
 
 返回上一次的 GetTickSpaceGeometry
 
----
+___
 
 ### constraints
 
@@ -144,15 +144,15 @@ ui 预制体
 
 #### Parameters
 
-| Name              | Type                                                  | Description |
-| :---------------- | :---------------------------------------------------- | :---------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### desiredSize
 
@@ -172,7 +172,7 @@ ui 预制体
 
 返回期望大小
 
----
+___
 
 ### enable
 
@@ -204,9 +204,9 @@ boolean
 
 #### Parameters
 
-| Name       | Type      | Description    |
-| :--------- | :-------- | :------------- |
-| `isEnable` | `boolean` | 可用性 boolean |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isEnable` | `boolean` | 可用性boolean |
 
 #### Returns
 
@@ -214,7 +214,7 @@ boolean
 
 返回设置结果
 
----
+___
 
 ### focusable
 
@@ -246,15 +246,15 @@ boolean
 
 #### Parameters
 
-| Name      | Type      | Description |
-| :-------- | :-------- | :---------- |
-| `isFocus` | `boolean` | 是否相应    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isFocus` | `boolean` | 是否相应 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### guid
 
@@ -262,7 +262,7 @@ boolean
 
 **`Description`**
 
-获取控件 GUID
+获取控件GUID
 
 **`Effect`**
 
@@ -272,9 +272,9 @@ boolean
 
 `string`
 
-控件 GUID
+控件GUID
 
----
+___
 
 ### isHovered
 
@@ -282,7 +282,7 @@ boolean
 
 **`Description`**
 
-是否是 hovered
+是否是hovered
 
 **`Effect`**
 
@@ -294,7 +294,7 @@ boolean
 
 boolean
 
----
+___
 
 ### name
 
@@ -326,15 +326,15 @@ boolean
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### paintSpaceGeometry
 
@@ -342,7 +342,7 @@ boolean
 
 **`Description`**
 
-获取最后一次用于渲染 Widget 的几何信息
+获取最后一次用于渲染Widget的几何信息
 
 **`Effect`**
 
@@ -352,9 +352,9 @@ boolean
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染 Widget 的几何信息
+返回最后一次用于渲染Widget的几何信息
 
----
+___
 
 ### parent
 
@@ -374,7 +374,7 @@ boolean
 
 返回父节点
 
----
+___
 
 ### position
 
@@ -406,15 +406,15 @@ boolean
 
 #### Parameters
 
-| Name              | Type                              | Description |
-| :---------------- | :-------------------------------- | :---------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderOpacity
 
@@ -446,15 +446,15 @@ boolean
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InOpacity` | `number` | 透明度      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InOpacity` | `number` | 透明度 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderScale
 
@@ -486,15 +486,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description |
-| :------ | :-------------------------------- | :---------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderShear
 
@@ -526,15 +526,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description  |
-| :------ | :-------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderTransformAngle
 
@@ -566,15 +566,15 @@ boolean
 
 #### Parameters
 
-| Name | Type     | Description |
-| :--- | :------- | :---------- |
-| `o`  | `number` | 渲染角度    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `o` | `number` | 渲染角度 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderTransformPivot
 
@@ -606,15 +606,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description |
-| :------ | :-------------------------------- | :---------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rootContent
 
@@ -622,7 +622,7 @@ boolean
 
 **`Description`**
 
-获取根 Canvas
+获取根Canvas
 
 **`Effect`**
 
@@ -632,13 +632,13 @@ boolean
 
 [`Canvas`](UI.UI.Canvas.md)
 
-返回根 Canvas
+返回根Canvas
 
 • `set` **rootContent**(`content`): `void`
 
 **`Description`**
 
-设置 UI 的根 Canvas
+设置UI的根Canvas
 
 **`Effect`**
 
@@ -646,15 +646,15 @@ boolean
 
 #### Parameters
 
-| Name      | Type                        | Description  |
-| :-------- | :-------------------------- | :----------- |
-| `content` | [`Canvas`](UI.UI.Canvas.md) | 根 UI 的内容 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `content` | [`Canvas`](UI.UI.Canvas.md) | 根UI的内容 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### size
 
@@ -686,15 +686,15 @@ FVector2D
 
 #### Parameters
 
-| Name     | Type                              | Description |
-| :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### slot
 
@@ -718,7 +718,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
----
+___
 
 ### tickSpaceGeometry
 
@@ -726,7 +726,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-获取最后一次用于驱动 Widget Tick 的几何信息
+获取最后一次用于驱动Widget Tick的几何信息
 
 **`Effect`**
 
@@ -736,9 +736,9 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动 Widget Tick 的几何信息
+返回最后一次用于驱动Widget Tick的几何信息
 
----
+___
 
 ### transform
 
@@ -770,15 +770,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name          | Type                                  | Description |
-| :------------ | :------------------------------------ | :---------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### visibility
 
@@ -810,15 +810,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name         | Type                                                   | Description |
-| :----------- | :----------------------------------------------------- | :---------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### visible
 
@@ -838,7 +838,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 boolean
 
----
+___
 
 ### zOrder
 
@@ -846,7 +846,7 @@ boolean
 
 **`Description`**
 
-获取 zorder
+获取zorder
 
 **`Effect`**
 
@@ -862,7 +862,7 @@ zorder
 
 **`Description`**
 
-设置 zoder
+设置zoder
 
 **`Effect`**
 
@@ -870,8 +870,8 @@ zorder
 
 #### Parameters
 
-| Name       | Type     | Description    |
-| :--------- | :------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
@@ -894,15 +894,15 @@ zorder
 
 #### Parameters
 
-| Name     | Type     | Description          |
-| :------- | :------- | :------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `zOrder` | `number` | 添加到屏幕的层级关系 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### destroyObject
 
@@ -920,7 +920,7 @@ zorder
 
 `void`
 
----
+___
 
 ### equal
 
@@ -936,8 +936,8 @@ zorder
 
 #### Parameters
 
-| Name   | Type                        | Description            |
-| :----- | :-------------------------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
@@ -946,7 +946,7 @@ zorder
 
 boolean
 
----
+___
 
 ### findChildByPath
 
@@ -962,9 +962,9 @@ boolean
 
 #### Parameters
 
-| Name     | Type     | Description |
-| :------- | :------- | :---------- |
-| `inPath` | `string` | 路径        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inPath` | `string` | 路径 |
 
 #### Returns
 
@@ -972,7 +972,7 @@ boolean
 
 返回查找节点结果
 
----
+___
 
 ### invalidateLayoutAndVolatility
 
@@ -990,7 +990,7 @@ boolean
 
 `void`
 
----
+___
 
 ### removeRootContent
 
@@ -998,7 +998,7 @@ boolean
 
 **`Description`**
 
-移除根 Canvas,会销毁根 Canvas，无法再次使用
+移除根Canvas,会销毁根Canvas，无法再次使用
 
 **`Effect`**
 
@@ -1008,7 +1008,7 @@ boolean
 
 `void`
 
----
+___
 
 ### newObject
 
@@ -1024,9 +1024,9 @@ boolean
 
 #### Parameters
 
-| Name      | Type                        | Description                          |
-| :-------- | :-------------------------- | :----------------------------------- |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 Outer 对象 default:null |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外Outer对象 default:null |
 
 #### Returns
 

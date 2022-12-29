@@ -11,7 +11,6 @@
 **`Example`**
 
 使用示例: 示例
-
 ```ts
 // 例如，position对象拥有x和y两个坐标:
 var position = {x: 100, y: 0};
@@ -38,25 +37,25 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ## Table of contents
 
-| Classes                                                                                                                           |
-| :-------------------------------------------------------------------------------------------------------------------------------- |
-| [Group](../classes/Util.Util.TweenUtil.Group.md) <br> 补间组，用于同时控制多个补间对象                                            |
-| [Sequence](../classes/Util.Util.TweenUtil.Sequence.md) <br> 序列工具类，主要用于获取连续的 ID                                     |
-| [Tween](../classes/Util.Util.TweenUtil.Tween.md) <br> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 |
+| Classes |
+| :-----|
+| [Group](../classes/Util.Util.TweenUtil.Group.md) <br> 补间组，用于同时控制多个补间对象|
+| [Sequence](../classes/Util.Util.TweenUtil.Sequence.md) <br> 序列工具类，主要用于获取连续的ID|
+| [Tween](../classes/Util.Util.TweenUtil.Tween.md) <br> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。|
 
-| Type Aliases                                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------- |
-| **[EasingFunction](Util.Util.TweenUtil.md#easingfunction)**: (`number`                                                    | : `number`) => `number` <br> ▸ (`amount`): `number` |
-| **[InterpolationFunction](Util.Util.TweenUtil.md#interpolationfunction)**: (`number`[]                                    | : `number`[], `number`                              | : `number`) => `number` <br> ▸ (`v`, `k`): `number` |
-| **[UnknownProps](Util.Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展 |
+| Type Aliases |
+| :-----|
+| **[EasingFunction](Util.Util.TweenUtil.md#easingfunction)**: (`number` |: `number`) => `number` <br> ▸ (`amount`): `number`|
+| **[InterpolationFunction](Util.Util.TweenUtil.md#interpolationfunction)**: (`number`[] |: `number`[], `number` |: `number`) => `number` <br> ▸ (`v`, `k`): `number`|
+| **[UnknownProps](Util.Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
 
-| Variables                                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[TWEEN](Util.Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组 |
+| Variables |
+| :-----|
+| **[TWEEN](Util.Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
 
-| Functions                                                                             |
-| :------------------------------------------------------------------------------------ |
-| **[nextId](Util.Util.TweenUtil.md#nextid)**(): `number` <br> 获取下一个 ID 的全局方法 |
+| Functions |
+| :-----|
+| **[nextId](Util.Util.TweenUtil.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
 
 ## Type Aliases
 
@@ -74,15 +73,15 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ##### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `amount` | `number` |
 
 ##### Returns
 
 `number`
 
----
+___
 
 ### InterpolationFunction
 
@@ -98,16 +97,16 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ##### Parameters
 
-| Name | Type       |
-| :--- | :--------- |
-| `v`  | `number`[] |
-| `k`  | `number`   |
+| Name | Type |
+| :------ | :------ |
+| `v` | `number`[] |
+| `k` | `number` |
 
 ##### Returns
 
 `number`
 
----
+___
 
 ### UnknownProps
 
@@ -135,7 +134,7 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 **`Description`**
 
-获取下一个 ID 的全局方法
+获取下一个ID的全局方法
 
 **`Effect`**
 
@@ -145,4 +144,4 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 `number`
 
-下一个 ID
+下一个ID

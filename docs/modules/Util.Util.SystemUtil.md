@@ -4,27 +4,27 @@
 
 ## Table of contents
 
-| Variables                                                                                            |
-| :--------------------------------------------------------------------------------------------------- |
-| **[currentPlatform](Util.Util.SystemUtil.md#currentplatform)**: `string` <br> 判定当前程序的运行平台 |
-| **[isPIE](Util.Util.SystemUtil.md#ispie)**: `boolean` <br> 判定当前程序的运行环境是否为 PIE          |
+| Variables |
+| :-----|
+| **[currentPlatform](Util.Util.SystemUtil.md#currentplatform)**: `string` <br> 判定当前程序的运行平台|
+| **[isPIE](Util.Util.SystemUtil.md#ispie)**: `boolean` <br> 判定当前程序的运行环境是否为PIE|
 
-| Functions                                                                                                                                                                 |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[getCurrentEnv](Util.Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境                                                                                  |
-| **[getDefaultGraphicsCPULevel](Util.Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认 CPU 画质等级 |
-| **[getDefaultGraphicsGPULevel](Util.Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认 GPU 画质等级 |
-| **[getEditorVersion](Util.Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号                                                                        |
-| **[getFullEditorVersion](Util.Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号                                                            |
-| **[getGameId](Util.Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏 GameId                                                                                   |
-| **[getGraphicsCPULevel](Util.Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前 CPU 画质等级               |
-| **[getGraphicsGPULevel](Util.Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前 GPU 画质等级               |
-| **[getVersion](Util.Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本                                                                                    |
-| **[isClient](Util.Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行                                                                                         |
-| **[isMobile](Util.Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端                                                                                   |
-| **[isServer](Util.Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行                                                                                         |
-| **[setGraphicsCPULevel](Util.Util.SystemUtil.md#setgraphicscpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前 CPU 画质等级         |
-| **[setGraphicsGPULevel](Util.Util.SystemUtil.md#setgraphicsgpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前 GPU 画质等级         |
+| Functions |
+| :-----|
+| **[getCurrentEnv](Util.Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境|
+| **[getDefaultGraphicsCPULevel](Util.Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认CPU画质等级|
+| **[getDefaultGraphicsGPULevel](Util.Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认GPU画质等级|
+| **[getEditorVersion](Util.Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
+| **[getFullEditorVersion](Util.Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
+| **[getGameId](Util.Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
+| **[getGraphicsCPULevel](Util.Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前CPU画质等级|
+| **[getGraphicsGPULevel](Util.Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前GPU画质等级|
+| **[getVersion](Util.Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本|
+| **[isClient](Util.Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行|
+| **[isMobile](Util.Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
+| **[isServer](Util.Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行|
+| **[setGraphicsCPULevel](Util.Util.SystemUtil.md#setgraphicscpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
+| **[setGraphicsGPULevel](Util.Util.SystemUtil.md#setgraphicsgpulevel)**([`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
 
 ## Variables
 
@@ -40,7 +40,7 @@
 
 调用端生效
 
----
+___
 
 ### isPIE
 
@@ -48,7 +48,7 @@
 
 **`Description`**
 
-判定当前程序的运行环境是否为 PIE
+判定当前程序的运行环境是否为PIE
 
 **`Effect`**
 
@@ -74,7 +74,7 @@
 
 当前环境
 
----
+___
 
 ### getDefaultGraphicsCPULevel
 
@@ -82,7 +82,7 @@
 
 **`Description`**
 
-获取默认 CPU 画质等级
+获取默认CPU画质等级
 
 **`Effect`**
 
@@ -94,7 +94,7 @@
 
 默认画质等级
 
----
+___
 
 ### getDefaultGraphicsGPULevel
 
@@ -102,7 +102,7 @@
 
 **`Description`**
 
-获取默认 GPU 画质等级
+获取默认GPU画质等级
 
 **`Effect`**
 
@@ -114,7 +114,7 @@
 
 默认画质等级
 
----
+___
 
 ### getEditorVersion
 
@@ -134,7 +134,7 @@
 
 当前编辑器版本号
 
----
+___
 
 ### getFullEditorVersion
 
@@ -154,7 +154,7 @@
 
 当前完整编辑器版本号
 
----
+___
 
 ### getGameId
 
@@ -162,7 +162,7 @@
 
 **`Description`**
 
-获取当前游戏 GameId
+获取当前游戏GameId
 
 **`Effect`**
 
@@ -172,9 +172,9 @@
 
 `string`
 
-当前游戏 GameId
+当前游戏GameId
 
----
+___
 
 ### getGraphicsCPULevel
 
@@ -182,7 +182,7 @@
 
 **`Description`**
 
-获取当前 CPU 画质等级
+获取当前CPU画质等级
 
 **`Effect`**
 
@@ -194,7 +194,7 @@
 
 画质等级
 
----
+___
 
 ### getGraphicsGPULevel
 
@@ -202,7 +202,7 @@
 
 **`Description`**
 
-获取当前 GPU 画质等级
+获取当前GPU画质等级
 
 **`Effect`**
 
@@ -214,7 +214,7 @@
 
 画质等级
 
----
+___
 
 ### getVersion
 
@@ -234,7 +234,7 @@
 
 当前游戏版本
 
----
+___
 
 ### isClient
 
@@ -254,7 +254,7 @@
 
 是否客户端运行
 
----
+___
 
 ### isMobile
 
@@ -274,7 +274,7 @@
 
 是否是移动端
 
----
+___
 
 ### isServer
 
@@ -294,7 +294,7 @@
 
 是否服务器运行
 
----
+___
 
 ### setGraphicsCPULevel
 
@@ -302,7 +302,7 @@
 
 **`Description`**
 
-设置当前 CPU 画质等级
+设置当前CPU画质等级
 
 **`Effect`**
 
@@ -310,15 +310,15 @@
 
 #### Parameters
 
-| Name       | Type                                                   | Description  |
-| :--------- | :----------------------------------------------------- | :----------- |
-| `CPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | CPU 画质等级 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `CPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | CPU画质等级 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setGraphicsGPULevel
 
@@ -326,7 +326,7 @@
 
 **`Description`**
 
-设置当前 GPU 画质等级
+设置当前GPU画质等级
 
 **`Effect`**
 
@@ -334,9 +334,9 @@
 
 #### Parameters
 
-| Name       | Type                                                   | Description  |
-| :--------- | :----------------------------------------------------- | :----------- |
-| `GPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | GPU 画质等级 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GPULevel` | [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) | GPU画质等级 |
 
 #### Returns
 

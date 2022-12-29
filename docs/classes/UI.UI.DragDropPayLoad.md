@@ -8,17 +8,17 @@
 
 ## Table of contents
 
-| Properties                                                       |
-| :--------------------------------------------------------------- |
-| **[guidStr](UI.UI.DragDropPayLoad.md#guidstr)**: `any` <br> guid |
-| **[idStr](UI.UI.DragDropPayLoad.md#idstr)**: `any` <br> id       |
-| **[nameStr](UI.UI.DragDropPayLoad.md#namestr)**: `any` <br> name |
+| Properties |
+| :-----|
+| **[guidStr](UI.UI.DragDropPayLoad.md#guidstr)**: `any` <br> guid|
+| **[idStr](UI.UI.DragDropPayLoad.md#idstr)**: `any` <br> id|
+| **[nameStr](UI.UI.DragDropPayLoad.md#namestr)**: `any` <br> name|
 
-| Accessors                                                           |
-| :------------------------------------------------------------------ |
-| **[guid](UI.UI.DragDropPayLoad.md#guid)**(): `string` <br> guid     |
-| **[id](UI.UI.DragDropPayLoad.md#id)**(): `number` <br> 获取 id      |
-| **[name](UI.UI.DragDropPayLoad.md#name)**(): `string` <br> 获取名字 |
+| Accessors |
+| :-----|
+| **[guid](UI.UI.DragDropPayLoad.md#guid)**(): `string` <br> guid|
+| **[id](UI.UI.DragDropPayLoad.md#id)**(): `number` <br> 获取id|
+| **[name](UI.UI.DragDropPayLoad.md#name)**(): `string` <br> 获取名字|
 
 ## Properties
 
@@ -30,7 +30,7 @@
 
 guid
 
----
+___
 
 ### idStr
 
@@ -40,7 +40,7 @@ guid
 
 id
 
----
+___
 
 ### nameStr
 
@@ -66,7 +66,7 @@ guid
 
 guid
 
----
+___
 
 ### id
 
@@ -74,7 +74,7 @@ guid
 
 **`Description`**
 
-获取 id
+获取id
 
 #### Returns
 
@@ -86,19 +86,19 @@ id
 
 **`Description`**
 
-设置 id
+设置id
 
 #### Parameters
 
-| Name   | Type     |
-| :----- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `inId` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### name
 
@@ -122,8 +122,8 @@ id
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `inName` | `string` |
 
 #### Returns

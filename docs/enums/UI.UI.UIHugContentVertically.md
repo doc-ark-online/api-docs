@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                |
-| :--------------------------------------------------------------------------------- |
-| **[FixHeight](UI.UI.UIHugContentVertically.md#fixheight)** = `0` <br> 固定高度     |
-| **[HugContent](UI.UI.UIHugContentVertically.md#hugcontent)** = `1` <br> 自适应高度 |
+| Enumeration Members |
+| :-----|
+| **[FixHeight](UI.UI.UIHugContentVertically.md#fixheight)** = ``0`` <br> 固定高度|
+| **[HugContent](UI.UI.UIHugContentVertically.md#hugcontent)** = ``1`` <br> 自适应高度|
 
 ## Enumeration Members
 
 ### FixHeight
 
-• **FixHeight** = `0`
+• **FixHeight** = ``0``
 
 固定高度
 
----
+___
 
 ### HugContent
 
-• **HugContent** = `1`
+• **HugContent** = ``1``
 
 自适应高度

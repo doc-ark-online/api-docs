@@ -4,7 +4,7 @@
 
 **`Description`**
 
-UI 文本
+UI文本
 
 ## Hierarchy
 
@@ -14,65 +14,65 @@ UI 文本
 
 ## Table of contents
 
-| Accessors                                                                                                                                                                   |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[autoSizeEnable](UI.UI.TextBlock.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小                                                                              |
-| **[cachedGeometry](UI.UI.TextBlock.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的 GetTickSpaceGeometry                                           |
-| **[constraints](UI.UI.TextBlock.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局                                 |
-| **[contentColor](UI.UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置字体内容颜色                                                      |
-| **[desiredSize](UI.UI.TextBlock.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小                                                                    |
-| **[enable](UI.UI.TextBlock.md#enable)**(): `boolean` <br> 是否可用                                                                                                          |
-| **[fontColor](UI.UI.TextBlock.md#fontcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体颜色                                                                |
-| **[fontLetterSpace](UI.UI.TextBlock.md#fontletterspace)**(`number`): `void` <br> 设置字体间距                                                                               |
-| **[fontLitterSpace](UI.UI.TextBlock.md#fontlitterspace)**(): `number` <br> 获取字体间距                                                                                     |
-| **[fontSize](UI.UI.TextBlock.md#fontsize)**(): `number` <br> 获取字体大小                                                                                                   |
-| **[glyph](UI.UI.TextBlock.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) <br> 获取字体字形                                                                   |
-| **[guid](UI.UI.TextBlock.md#guid)**(): `string` <br> 获取控件 GUID                                                                                                          |
-| **[isHovered](UI.UI.TextBlock.md#ishovered)**(): `boolean` <br> 是否是 hovered                                                                                              |
-| **[lineHeightPercentage](UI.UI.TextBlock.md#lineheightpercentage)**(): `number` <br> 获取行高系数                                                                           |
-| **[name](UI.UI.TextBlock.md#name)**(): `string` <br> 获取名字                                                                                                               |
-| **[outlineColor](UI.UI.TextBlock.md#outlinecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体描边颜色                                                      |
-| **[outlineSize](UI.UI.TextBlock.md#outlinesize)**(): `number` <br> 获取字体描边宽度                                                                                         |
-| **[paintSpaceGeometry](UI.UI.TextBlock.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染 Widget 的几何信息                              |
-| **[parent](UI.UI.TextBlock.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点                                                                                      |
-| **[position](UI.UI.TextBlock.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置                                                           |
-| **[renderOpacity](UI.UI.TextBlock.md#renderopacity)**(): `number` <br> 获取渲染透明度                                                                                       |
-| **[renderScale](UI.UI.TextBlock.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放                                                                    |
-| **[renderShear](UI.UI.TextBlock.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变                                                                |
-| **[renderTransformAngle](UI.UI.TextBlock.md#rendertransformangle)**(): `number` <br> 获取渲染的角度                                                                         |
-| **[renderTransformPivot](UI.UI.TextBlock.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点                                                  |
-| **[shadowColor](UI.UI.TextBlock.md#shadowcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置字体阴影颜色                                                        |
-| **[shadowOffset](UI.UI.TextBlock.md#shadowoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取字体阴影颜色                                                              |
-| **[size](UI.UI.TextBlock.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小                                                                                      |
-| **[slot](UI.UI.TextBlock.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                        |
-| **[strikethroughEnable](UI.UI.TextBlock.md#strikethroughenable)**(): `boolean` <br> 获取是否开启字体删除线                                                                  |
-| **[text](UI.UI.TextBlock.md#text)**(): `string` <br> 获取当前的文本内容                                                                                                     |
-| **[textAlign](UI.UI.TextBlock.md#textalign)**(): [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 获取字体对齐方式                                                       |
-| **[textHeight](UI.UI.TextBlock.md#textheight)**(): `number` <br> 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)                                         |
-| **[textHorizontalLayout](UI.UI.TextBlock.md#texthorizontallayout)**(): [`UITextHorizontalLayout`](../enums/UI.UI.UITextHorizontalLayout.md) <br> 获取当前字体的水平显示方式 |
-| **[textJustification](UI.UI.TextBlock.md#textjustification)**(): [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 获取字体的对齐方式                                     |
-| **[textSingleHeight](UI.UI.TextBlock.md#textsingleheight)**(): `number` <br> 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)                               |
-| **[textVerticalAlign](UI.UI.TextBlock.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 获取字体垂直对齐方式                   |
-| **[textVerticalJustification](UI.UI.TextBlock.md#textverticaljustification)**(): [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 获取字体的垂直对齐方式 |
-| **[tickSpaceGeometry](UI.UI.TextBlock.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动 Widget Tick 的几何信息                           |
-| **[transform](UI.UI.TextBlock.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置                                               |
-| **[underlineEnable](UI.UI.TextBlock.md#underlineenable)**(): `boolean` <br> 返回是否开启字体下划线                                                                          |
-| **[visibility](UI.UI.TextBlock.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性                                                   |
-| **[visible](UI.UI.TextBlock.md#visible)**(): `boolean` <br> 是否可见                                                                                                        |
-| **[zOrder](UI.UI.TextBlock.md#zorder)**(): `number` <br> 获取 zorder                                                                                                        |
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.UI.TextBlock.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.UI.TextBlock.md#cachedgeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.UI.TextBlock.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[contentColor](UI.UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置字体内容颜色|
+| **[desiredSize](UI.UI.TextBlock.md#desiredsize)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.UI.TextBlock.md#enable)**(): `boolean` <br> 是否可用|
+| **[fontColor](UI.UI.TextBlock.md#fontcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体颜色|
+| **[fontLetterSpace](UI.UI.TextBlock.md#fontletterspace)**(`number`): `void` <br> 设置字体间距|
+| **[fontLitterSpace](UI.UI.TextBlock.md#fontlitterspace)**(): `number` <br> 获取字体间距|
+| **[fontSize](UI.UI.TextBlock.md#fontsize)**(): `number` <br> 获取字体大小|
+| **[glyph](UI.UI.TextBlock.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) <br> 获取字体字形|
+| **[guid](UI.UI.TextBlock.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.UI.TextBlock.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[lineHeightPercentage](UI.UI.TextBlock.md#lineheightpercentage)**(): `number` <br> 获取行高系数|
+| **[name](UI.UI.TextBlock.md#name)**(): `string` <br> 获取名字|
+| **[outlineColor](UI.UI.TextBlock.md#outlinecolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取字体描边颜色|
+| **[outlineSize](UI.UI.TextBlock.md#outlinesize)**(): `number` <br> 获取字体描边宽度|
+| **[paintSpaceGeometry](UI.UI.TextBlock.md#paintspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.UI.TextBlock.md#parent)**(): [`Widget`](UI.UI.Widget.md) <br> 获取父节点|
+| **[position](UI.UI.TextBlock.md#position)**(): `Readonly`<[`Vector2`](Type.Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.UI.TextBlock.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.UI.TextBlock.md#renderscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.UI.TextBlock.md#rendershear)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.UI.TextBlock.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.UI.TextBlock.md#rendertransformpivot)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取渲染锚点|
+| **[shadowColor](UI.UI.TextBlock.md#shadowcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 设置字体阴影颜色|
+| **[shadowOffset](UI.UI.TextBlock.md#shadowoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取字体阴影颜色|
+| **[size](UI.UI.TextBlock.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.UI.TextBlock.md#slot)**(): [`UISlot`](UI.UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[strikethroughEnable](UI.UI.TextBlock.md#strikethroughenable)**(): `boolean` <br> 获取是否开启字体删除线|
+| **[text](UI.UI.TextBlock.md#text)**(): `string` <br> 获取当前的文本内容|
+| **[textAlign](UI.UI.TextBlock.md#textalign)**(): [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 获取字体对齐方式|
+| **[textHeight](UI.UI.TextBlock.md#textheight)**(): `number` <br> 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)|
+| **[textHorizontalLayout](UI.UI.TextBlock.md#texthorizontallayout)**(): [`UITextHorizontalLayout`](../enums/UI.UI.UITextHorizontalLayout.md) <br> 获取当前字体的水平显示方式|
+| **[textJustification](UI.UI.TextBlock.md#textjustification)**(): [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 获取字体的对齐方式|
+| **[textSingleHeight](UI.UI.TextBlock.md#textsingleheight)**(): `number` <br> 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)|
+| **[textVerticalAlign](UI.UI.TextBlock.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 获取字体垂直对齐方式|
+| **[textVerticalJustification](UI.UI.TextBlock.md#textverticaljustification)**(): [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 获取字体的垂直对齐方式|
+| **[tickSpaceGeometry](UI.UI.TextBlock.md#tickspacegeometry)**(): [`Geometry`](UI.UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.UI.TextBlock.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[underlineEnable](UI.UI.TextBlock.md#underlineenable)**(): `boolean` <br> 返回是否开启字体下划线|
+| **[visibility](UI.UI.TextBlock.md#visibility)**(): [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.UI.TextBlock.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.UI.TextBlock.md#zorder)**(): `number` <br> 获取zorder|
 
-| Methods                                                                                                                                                                                                           |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[destroyObject](UI.UI.TextBlock.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用                                                                                                                  |
-| **[equal](UI.UI.TextBlock.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象                                                                                                           |
-| **[invalidateLayoutAndVolatility](UI.UI.TextBlock.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算                                                                                 |
-| **[setFontColorByHex](UI.UI.TextBlock.md#setfontcolorbyhex)**(`string`): `void` <br> 设置字体颜色,指定 Hex 的颜色文本设定颜色 #05050505                                                                           |
-| **[setFontColorDecimal](UI.UI.TextBlock.md#setfontcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体颜色,指定 R、G、B、A 设置颜色 0 ~255                                               |
-| **[setOutlineColorByHex](UI.UI.TextBlock.md#setoutlinecolorbyhex)**(`string`): `void` <br> 设置当前的描边颜色，指定描边颜色设定颜色 #05050505                                                                     |
-| **[setOutlineColorDecimal](UI.UI.TextBlock.md#setoutlinecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置当前的描边颜色,指定 R、G、B、A 设置颜色 0 ~255                                   |
-| **[setShadowColorByHex](UI.UI.TextBlock.md#setshadowcolorbyhex)**(`string`): `void` <br> 设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果,指定 Hex 的颜色文本设定颜色 #05050505                              |
-| **[setShadowColorDecimal](UI.UI.TextBlock.md#setshadowcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果, 指定 R、G、B、A 设置颜色 0 ~255 |
-| **[newObject](UI.UI.TextBlock.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`TextBlock`](UI.UI.TextBlock.md) <br> 创建 TextBlock 控件 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁         |
+| Methods |
+| :-----|
+| **[destroyObject](UI.UI.TextBlock.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.UI.TextBlock.md#equal)**([`Widget`](UI.UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[invalidateLayoutAndVolatility](UI.UI.TextBlock.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[setFontColorByHex](UI.UI.TextBlock.md#setfontcolorbyhex)**(`string`): `void` <br> 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505|
+| **[setFontColorDecimal](UI.UI.TextBlock.md#setfontcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体颜色,指定R、G、B、A设置颜色 0 ~255|
+| **[setOutlineColorByHex](UI.UI.TextBlock.md#setoutlinecolorbyhex)**(`string`): `void` <br> 设置当前的描边颜色，指定描边颜色设定颜色 #05050505|
+| **[setOutlineColorDecimal](UI.UI.TextBlock.md#setoutlinecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255|
+| **[setShadowColorByHex](UI.UI.TextBlock.md#setshadowcolorbyhex)**(`string`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505|
+| **[setShadowColorDecimal](UI.UI.TextBlock.md#setshadowcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255|
+| **[newObject](UI.UI.TextBlock.md#newobject)**([`Canvas`](UI.UI.Canvas.md), `string`): [`TextBlock`](UI.UI.TextBlock.md) <br> 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 ## Accessors
 
@@ -106,15 +106,15 @@ UI 文本
 
 #### Parameters
 
-| Name       | Type      | Description      |
-| :--------- | :-------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### cachedGeometry
 
@@ -122,7 +122,7 @@ UI 文本
 
 **`Description`**
 
-获取上一次的 GetTickSpaceGeometry
+获取上一次的GetTickSpaceGeometry
 
 **`Effect`**
 
@@ -134,7 +134,7 @@ UI 文本
 
 返回上一次的 GetTickSpaceGeometry
 
----
+___
 
 ### constraints
 
@@ -166,15 +166,15 @@ UI 文本
 
 #### Parameters
 
-| Name              | Type                                                  | Description |
-| :---------------- | :---------------------------------------------------- | :---------- |
-| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) | 控件的布局 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### contentColor
 
@@ -192,7 +192,7 @@ UI 文本
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体内容颜色，Type.LinearColor 类型，数据范围 0~1
+字体内容颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **contentColor**(`inContentColor`): `void`
 
@@ -206,15 +206,15 @@ UI 文本
 
 #### Parameters
 
-| Name             | Type                                      | Description                                   |
-| :--------------- | :---------------------------------------- | :-------------------------------------------- |
-| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) | 内容颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inContentColor` | [`LinearColor`](Type.Type.LinearColor.md) |  内容颜色，Type.LinearColor类型，数据范围0~1 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### desiredSize
 
@@ -234,7 +234,7 @@ UI 文本
 
 返回期望大小
 
----
+___
 
 ### enable
 
@@ -266,9 +266,9 @@ boolean
 
 #### Parameters
 
-| Name       | Type      | Description    |
-| :--------- | :-------- | :------------- |
-| `isEnable` | `boolean` | 可用性 boolean |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isEnable` | `boolean` | 可用性boolean |
 
 #### Returns
 
@@ -276,7 +276,7 @@ boolean
 
 返回设置结果
 
----
+___
 
 ### fontColor
 
@@ -294,7 +294,7 @@ boolean
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体颜色，Type.LinearColor 类型，数据范围 0~1
+字体颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **fontColor**(`inColor`): `void`
 
@@ -308,15 +308,15 @@ boolean
 
 #### Parameters
 
-| Name      | Type                                      | Description                                       |
-| :-------- | :---------------------------------------- | :------------------------------------------------ |
-| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 字体的颜色值，Type.LinearColor 类型，数据范围 0~1 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inColor` | [`LinearColor`](Type.Type.LinearColor.md) | 字体的颜色值，Type.LinearColor类型，数据范围0~1 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### fontLetterSpace
 
@@ -332,15 +332,15 @@ boolean
 
 #### Parameters
 
-| Name            | Type     | Description |
-| :-------------- | :------- | :---------- |
-| `inLetterSpace` | `number` | 字体间距    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inLetterSpace` | `number` | 字体间距 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### fontLitterSpace
 
@@ -360,7 +360,7 @@ boolean
 
 返回字体间距
 
----
+___
 
 ### fontSize
 
@@ -392,15 +392,15 @@ boolean
 
 #### Parameters
 
-| Name     | Type     | Description |
-| :------- | :------- | :---------- |
-| `InSize` | `number` | 字体大小    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InSize` | `number` | 字体大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### glyph
 
@@ -432,15 +432,15 @@ boolean
 
 #### Parameters
 
-| Name      | Type                                           | Description |
-| :-------- | :--------------------------------------------- | :---------- |
-| `inGlyph` | [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) | 字形        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inGlyph` | [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) |  字形 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### guid
 
@@ -448,7 +448,7 @@ boolean
 
 **`Description`**
 
-获取控件 GUID
+获取控件GUID
 
 **`Effect`**
 
@@ -458,9 +458,9 @@ boolean
 
 `string`
 
-控件 GUID
+控件GUID
 
----
+___
 
 ### isHovered
 
@@ -468,7 +468,7 @@ boolean
 
 **`Description`**
 
-是否是 hovered
+是否是hovered
 
 **`Effect`**
 
@@ -480,7 +480,7 @@ boolean
 
 boolean
 
----
+___
 
 ### lineHeightPercentage
 
@@ -512,15 +512,15 @@ boolean
 
 #### Parameters
 
-| Name      | Type     | Description |
-| :-------- | :------- | :---------- |
-| `inValue` | `number` | 系数        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inValue` | `number` | 系数 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### name
 
@@ -552,15 +552,15 @@ boolean
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### outlineColor
 
@@ -578,7 +578,7 @@ boolean
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-字体描边颜色，Type.LinearColor 类型，数据范围 0~1
+字体描边颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **outlineColor**(`inOutlineColor`): `void`
 
@@ -592,9 +592,9 @@ boolean
 
 #### Parameters
 
-| Name             | Type                                      | Description                                   |
-| :--------------- | :---------------------------------------- | :-------------------------------------------- |
-| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) | 描边颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inOutlineColor` | [`LinearColor`](Type.Type.LinearColor.md) |  描边颜色，Type.LinearColor类型，数据范围0~1 |
 
 #### Returns
 
@@ -602,7 +602,7 @@ boolean
 
 字体描边颜色
 
----
+___
 
 ### outlineSize
 
@@ -634,15 +634,15 @@ boolean
 
 #### Parameters
 
-| Name            | Type     | Description |
-| :-------------- | :------- | :---------- |
-| `inOutlineSize` | `number` | 设置的大小  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inOutlineSize` | `number` | 设置的大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### paintSpaceGeometry
 
@@ -650,7 +650,7 @@ boolean
 
 **`Description`**
 
-获取最后一次用于渲染 Widget 的几何信息
+获取最后一次用于渲染Widget的几何信息
 
 **`Effect`**
 
@@ -660,9 +660,9 @@ boolean
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于渲染 Widget 的几何信息
+返回最后一次用于渲染Widget的几何信息
 
----
+___
 
 ### parent
 
@@ -682,7 +682,7 @@ boolean
 
 返回父节点
 
----
+___
 
 ### position
 
@@ -714,15 +714,15 @@ boolean
 
 #### Parameters
 
-| Name              | Type                              | Description |
-| :---------------- | :-------------------------------- | :---------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | 控件的位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderOpacity
 
@@ -754,15 +754,15 @@ boolean
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InOpacity` | `number` | 透明度      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InOpacity` | `number` | 透明度 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderScale
 
@@ -794,15 +794,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description |
-| :------ | :-------------------------------- | :---------- |
-| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `scale` | [`Vector2`](Type.Type.Vector2.md) | 渲染缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderShear
 
@@ -834,15 +834,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description  |
-| :------ | :-------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `shear` | [`Vector2`](Type.Type.Vector2.md) | 渲染错切形变 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderTransformAngle
 
@@ -874,15 +874,15 @@ boolean
 
 #### Parameters
 
-| Name | Type     | Description |
-| :--- | :------- | :---------- |
-| `o`  | `number` | 渲染角度    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `o` | `number` | 渲染角度 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### renderTransformPivot
 
@@ -914,15 +914,15 @@ boolean
 
 #### Parameters
 
-| Name    | Type                              | Description |
-| :------ | :-------------------------------- | :---------- |
-| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Pivot` | [`Vector2`](Type.Type.Vector2.md) | 渲染锚点 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### shadowColor
 
@@ -940,7 +940,7 @@ boolean
 
 [`LinearColor`](Type.Type.LinearColor.md)
 
-阴影颜色，Type.LinearColor 类型，数据范围 0~1
+阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowColor**(`inShadowColor`): `void`
 
@@ -954,15 +954,15 @@ boolean
 
 #### Parameters
 
-| Name            | Type                                      | Description                                   |
-| :-------------- | :---------------------------------------- | :-------------------------------------------- |
-| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | 阴影颜色，Type.LinearColor 类型，数据范围 0~1 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inShadowColor` | [`LinearColor`](Type.Type.LinearColor.md) | 阴影颜色，Type.LinearColor类型，数据范围0~1 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### shadowOffset
 
@@ -980,7 +980,7 @@ boolean
 
 [`Vector2`](Type.Type.Vector2.md)
 
-字体阴影颜色，Type.LinearColor 类型，数据范围 0~1
+字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowOffset**(`inOffset`): `void`
 
@@ -994,15 +994,15 @@ boolean
 
 #### Parameters
 
-| Name       | Type                              | Description |
-| :--------- | :-------------------------------- | :---------- |
-| `inOffset` | [`Vector2`](Type.Type.Vector2.md) | 阴影偏移量  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inOffset` | [`Vector2`](Type.Type.Vector2.md) | 阴影偏移量 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### size
 
@@ -1034,15 +1034,15 @@ FVector2D
 
 #### Parameters
 
-| Name     | Type                              | Description |
-| :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | 输入大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### slot
 
@@ -1066,7 +1066,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 返回插槽
 
----
+___
 
 ### strikethroughEnable
 
@@ -1098,15 +1098,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                    | Type      | Description |
-| :---------------------- | :-------- | :---------- |
-| `inEnableStrikethrough` | `boolean` | 是否开启    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inEnableStrikethrough` | `boolean` | 是否开启 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### text
 
@@ -1138,15 +1138,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name     | Type     | Description |
-| :------- | :------- | :---------- |
-| `inText` | `string` | 文本内容    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inText` | `string` | 文本内容 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### textAlign
 
@@ -1178,15 +1178,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name            | Type                                           | Description    |
-| :-------------- | :--------------------------------------------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inTextJustify` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | 对齐方式的枚举 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### textHeight
 
@@ -1206,7 +1206,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 文本高度
 
----
+___
 
 ### textHorizontalLayout
 
@@ -1238,15 +1238,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                     | Type                                                                 | Description  |
-| :----------------------- | :------------------------------------------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inTextHorizontalLayout` | [`UITextHorizontalLayout`](../enums/UI.UI.UITextHorizontalLayout.md) | 水平显示方式 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### textJustification
 
@@ -1278,15 +1278,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                  | Type                                           | Description  |
-| :-------------------- | :--------------------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inTextJustification` | [`TextJustify`](../enums/UI.UI.TextJustify.md) | 新的对齐方式 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### textSingleHeight
 
@@ -1306,7 +1306,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 文本单行高度
 
----
+___
 
 ### textVerticalAlign
 
@@ -1338,15 +1338,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                    | Type                                                           | Description  |
-| :---------------------- | :------------------------------------------------------------- | :----------- |
-| `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | 垂直对齐方式 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) |  垂直对齐方式 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### textVerticalJustification
 
@@ -1378,15 +1378,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                  | Type                                                           | Description  |
-| :-------------------- | :------------------------------------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inTextJustification` | [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) | 垂直对齐方式 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### tickSpaceGeometry
 
@@ -1394,7 +1394,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-获取最后一次用于驱动 Widget Tick 的几何信息
+获取最后一次用于驱动Widget Tick的几何信息
 
 **`Effect`**
 
@@ -1404,9 +1404,9 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 [`Geometry`](UI.UI.Geometry.md)
 
-返回最后一次用于驱动 Widget Tick 的几何信息
+返回最后一次用于驱动Widget Tick的几何信息
 
----
+___
 
 ### transform
 
@@ -1438,15 +1438,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name          | Type                                  | Description |
-| :------------ | :------------------------------------ | :---------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### underlineEnable
 
@@ -1478,15 +1478,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name                | Type      | Description        |
-| :------------------ | :-------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inEnableUnderline` | `boolean` | 设置是否开启下划线 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### visibility
 
@@ -1518,15 +1518,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name         | Type                                                   | Description |
-| :----------- | :----------------------------------------------------- | :---------- |
-| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Visibility` | [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 可见性 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### visible
 
@@ -1546,7 +1546,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 boolean
 
----
+___
 
 ### zOrder
 
@@ -1554,7 +1554,7 @@ boolean
 
 **`Description`**
 
-获取 zorder
+获取zorder
 
 **`Effect`**
 
@@ -1570,7 +1570,7 @@ zorder
 
 **`Description`**
 
-设置 zoder
+设置zoder
 
 **`Effect`**
 
@@ -1578,8 +1578,8 @@ zorder
 
 #### Parameters
 
-| Name       | Type     | Description    |
-| :--------- | :------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
@@ -1604,7 +1604,7 @@ zorder
 
 `void`
 
----
+___
 
 ### equal
 
@@ -1620,8 +1620,8 @@ zorder
 
 #### Parameters
 
-| Name   | Type                        | Description            |
-| :----- | :-------------------------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `that` | [`Widget`](UI.UI.Widget.md) | 需要比较的另外一个对象 |
 
 #### Returns
@@ -1630,7 +1630,7 @@ zorder
 
 boolean
 
----
+___
 
 ### invalidateLayoutAndVolatility
 
@@ -1648,7 +1648,7 @@ boolean
 
 `void`
 
----
+___
 
 ### setFontColorByHex
 
@@ -1656,7 +1656,7 @@ boolean
 
 **`Description`**
 
-设置字体颜色,指定 Hex 的颜色文本设定颜色 #05050505
+设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
 
 **`Effect`**
 
@@ -1664,15 +1664,15 @@ boolean
 
 #### Parameters
 
-| Name          | Type     | Description    |
-| :------------ | :------- | :------------- |
-| `inHexString` | `string` | Hex 颜色字符串 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inHexString` | `string` | Hex颜色字符串 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFontColorDecimal
 
@@ -1680,7 +1680,7 @@ boolean
 
 **`Description`**
 
-设置字体颜色,指定 R、G、B、A 设置颜色 0 ~255
+设置字体颜色,指定R、G、B、A设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1688,18 +1688,18 @@ boolean
 
 #### Parameters
 
-| Name | Type     | Description                |
-| :--- | :------- | :------------------------- |
-| `R`  | `number` | 字体 R 值，数据范围 0~255  |
-| `G`  | `number` | 字体 G 值，数据范围 0~255  |
-| `B`  | `number` | 字体 B 值，数据范围 0~255  |
-| `A`  | `number` | 字体透明度，数据范围 0~255 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `R` | `number` | 字体R值，数据范围0~255 |
+| `G` | `number` | 字体G值，数据范围0~255 |
+| `B` | `number` | 字体B值，数据范围0~255 |
+| `A` | `number` | 字体透明度，数据范围0~255 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setOutlineColorByHex
 
@@ -1715,15 +1715,15 @@ boolean
 
 #### Parameters
 
-| Name          | Type     | Description      |
-| :------------ | :------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inHexString` | `string` | 十六进制的字符串 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setOutlineColorDecimal
 
@@ -1731,7 +1731,7 @@ boolean
 
 **`Description`**
 
-设置当前的描边颜色,指定 R、G、B、A 设置颜色 0 ~255
+设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1739,18 +1739,18 @@ boolean
 
 #### Parameters
 
-| Name | Type     | Description                     |
-| :--- | :------- | :------------------------------ |
-| `R`  | `number` | 颜色 R 通道的值，数据范围 0~255 |
-| `G`  | `number` | 颜色 G 通道的值，数据范围 0~255 |
-| `B`  | `number` | 颜色 B 通道的值，数据范围 0~255 |
-| `A`  | `number` | 透明度，数据范围 0~255          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `R` | `number` | 颜色R通道的值，数据范围0~255 |
+| `G` | `number` | 颜色G通道的值，数据范围0~255 |
+| `B` | `number` | 颜色B通道的值，数据范围0~255 |
+| `A` | `number` | 透明度，数据范围0~255 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setShadowColorByHex
 
@@ -1758,7 +1758,7 @@ boolean
 
 **`Description`**
 
-设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果,指定 Hex 的颜色文本设定颜色 #05050505
+设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505
 
 **`Effect`**
 
@@ -1766,15 +1766,15 @@ boolean
 
 #### Parameters
 
-| Name          | Type     | Description |
-| :------------ | :------- | :---------- |
-| `inHexString` | `string` | 颜色        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inHexString` | `string` | 颜色 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setShadowColorDecimal
 
@@ -1782,7 +1782,7 @@ boolean
 
 **`Description`**
 
-设置字体的阴影颜色,Shadow Offset 必须设值才能看到效果, 指定 R、G、B、A 设置颜色 0 ~255
+设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255
 
 **`Effect`**
 
@@ -1790,18 +1790,18 @@ boolean
 
 #### Parameters
 
-| Name | Type     | Description                     |
-| :--- | :------- | :------------------------------ |
-| `R`  | `number` | 颜色 R 通道的值，数据范围 0~255 |
-| `G`  | `number` | 颜色 G 通道的值，数据范围 0~255 |
-| `B`  | `number` | 颜色 B 通道的值，数据范围 0~255 |
-| `A`  | `number` | 透明度，数据范围 0~255          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `R` | `number` | 颜色R通道的值，数据范围0~255 |
+| `G` | `number` | 颜色G通道的值，数据范围0~255 |
+| `B` | `number` | 颜色B通道的值，数据范围0~255 |
+| `A` | `number` | 透明度，数据范围0~255 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### newObject
 
@@ -1809,7 +1809,7 @@ boolean
 
 **`Description`**
 
-创建 TextBlock 控件 当 parent 和 inName 与已有的对象相同时，旧的对象会被销毁
+创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 
 **`Effect`**
 
@@ -1817,10 +1817,10 @@ boolean
 
 #### Parameters
 
-| Name      | Type                        | Description                           |
-| :-------- | :-------------------------- | :------------------------------------ |
-| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外 parent 对象 default:null |
-| `inName?` | `string`                    | 创建控件的名称 default:null           |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parent?` | [`Canvas`](UI.UI.Canvas.md) | 创建控件的外parent对象 default:null |
+| `inName?` | `string` | 创建控件的名称 default:null |
 
 #### Returns
 

@@ -8,10 +8,10 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                            |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[constraintHorizontal](UI.UI.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) <br> 水平对齐规则 |
-| **[constraintVertical](UI.UI.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md) <br> 垂直对齐规则         |
+| Properties |
+| :-----|
+| **[constraintHorizontal](UI.UI.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) <br> 水平对齐规则|
+| **[constraintVertical](UI.UI.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md) <br> 垂直对齐规则|
 
 **`Description`**
 
@@ -33,10 +33,10 @@
 
 #### Parameters
 
-| Name                     | Type                                                                 | Description  |
-| :----------------------- | :------------------------------------------------------------------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `InConstraintHorizontal` | [`UIConstraintHorizontal`](../enums/UI.UI.UIConstraintHorizontal.md) | 水平对齐规则 |
-| `InConstraintVertical`   | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md)     | 垂直对齐规则 |
+| `InConstraintVertical` | [`UIConstraintVertical`](../enums/UI.UI.UIConstraintVertical.md) | 垂直对齐规则 |
 
 ## Properties
 
@@ -48,7 +48,7 @@
 
 水平对齐规则
 
----
+___
 
 ### constraintVertical
 

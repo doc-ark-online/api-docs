@@ -8,30 +8,30 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                                                 |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[onEndContinuousFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数 |
-| **[onEndFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数                                 |
-| **[onEndFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数                                 |
-| **[onStartFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数                             |
-| **[onStartFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数                             |
+| Properties |
+| :-----|
+| **[onEndContinuousFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数|
+| **[onEndFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数|
+| **[onEndFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数|
+| **[onStartFireClient](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数|
+| **[onStartFireServer](Gameplay.Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数|
 
-| Accessors                                                                                                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[animationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#animationguid)**(): `string` <br> 绑定的动画 GUID                                                                        |
-| **[currentBulletSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentbulletsize)**(): `number` <br> 获取当前弹夹中子弹数量                                                         |
-| **[currentClipSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentclipsize)**(): `number` <br> 获取当前弹夹容量                                                                   |
-| **[currentFireInterval](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfireinterval)**(): `number` <br> 获取开火间隙                                                               |
-| **[currentFireModel](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfiremodel)**(): [`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md) <br> 获取当前的开火模式 |
-| **[currentMultipleShot](Gameplay.Gameplay.HotWeaponFireComponent.md#currentmultipleshot)**(): `number` <br> 获取一次开火发射的子弹数量                                                 |
-| **[isFireOnScreenCenter](Gameplay.Gameplay.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火                                                  |
-| **[isFullAutoMode](Gameplay.Gameplay.HotWeaponFireComponent.md#isfullautomode)**(): `boolean` <br> 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹            |
-| **[offsetOfFireOnScreenCenter](Gameplay.Gameplay.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](Type.Type.Vector.md) <br> 获取屏幕中心开火时的偏移              |
+| Accessors |
+| :-----|
+| **[animationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#animationguid)**(): `string` <br> 绑定的动画GUID|
+| **[currentBulletSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentbulletsize)**(): `number` <br> 获取当前弹夹中子弹数量|
+| **[currentClipSize](Gameplay.Gameplay.HotWeaponFireComponent.md#currentclipsize)**(): `number` <br> 获取当前弹夹容量|
+| **[currentFireInterval](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfireinterval)**(): `number` <br> 获取开火间隙|
+| **[currentFireModel](Gameplay.Gameplay.HotWeaponFireComponent.md#currentfiremodel)**(): [`HotWeaponFireMode`](../enums/Gameplay.Gameplay.HotWeaponFireMode.md) <br> 获取当前的开火模式|
+| **[currentMultipleShot](Gameplay.Gameplay.HotWeaponFireComponent.md#currentmultipleshot)**(): `number` <br> 获取一次开火发射的子弹数量|
+| **[isFireOnScreenCenter](Gameplay.Gameplay.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火|
+| **[isFullAutoMode](Gameplay.Gameplay.HotWeaponFireComponent.md#isfullautomode)**(): `boolean` <br> 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹|
+| **[offsetOfFireOnScreenCenter](Gameplay.Gameplay.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](Type.Type.Vector.md) <br> 获取屏幕中心开火时的偏移|
 
-| Methods                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画 GUID                                     |
-| **[isFiring](Gameplay.Gameplay.HotWeaponFireComponent.md#isfiring)**(): `boolean` <br> 获取当前状态下 bFiring 的值，一般用于处理全自动开火模式下的自动换弹 |
+| Methods |
+| :-----|
+| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponFireComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
+| **[isFiring](Gameplay.Gameplay.HotWeaponFireComponent.md#isfiring)**(): `boolean` <br> 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹|
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 服务器完成一次连发射击周期时执行绑定函数
 
----
+___
 
 ### onEndFireClient
 
@@ -53,7 +53,7 @@
 
 客户端停止开火时执行绑定函数
 
----
+___
 
 ### onEndFireServer
 
@@ -63,7 +63,7 @@
 
 服务器停止开火时执行绑定函数
 
----
+___
 
 ### onStartFireClient
 
@@ -73,7 +73,7 @@
 
 客户端开始开火时执行绑定函数
 
----
+___
 
 ### onStartFireServer
 
@@ -91,7 +91,7 @@
 
 **`Description`**
 
-绑定的动画 GUID
+绑定的动画GUID
 
 **`Effect`**
 
@@ -115,15 +115,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description               |
-| :----- | :------- | :------------------------ |
-| `guid` | `string` | 需要设置的蒙太奇动画 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  需要设置的蒙太奇动画 guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### currentBulletSize
 
@@ -155,15 +155,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description      |
-| :------ | :------- | :--------------- |
-| `value` | `number` | 新弹夹中子弹数量 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新弹夹中子弹数量 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### currentClipSize
 
@@ -199,15 +199,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description  |
-| :------ | :------- | :----------- |
-| `value` | `number` | 当前弹夹容量 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  当前弹夹容量 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### currentFireInterval
 
@@ -243,15 +243,15 @@
 
 #### Parameters
 
-| Name       | Type     | Description |
-| :--------- | :------- | :---------- |
-| `interval` | `number` | 开火间隙    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `interval` | `number` |  开火间隙 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### currentFireModel
 
@@ -271,7 +271,7 @@
 
 当前的开火模式
 
----
+___
 
 ### currentMultipleShot
 
@@ -307,15 +307,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description            |
-| :------ | :------- | :--------------------- |
-| `count` | `number` | 一次开火发射的子弹数量 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `count` | `number` |  一次开火发射的子弹数量 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### isFireOnScreenCenter
 
@@ -351,15 +351,15 @@
 
 #### Parameters
 
-| Name    | Type      | Description        |
-| :------ | :-------- | :----------------- |
-| `value` | `boolean` | 是否在屏幕中心开火 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` |  是否在屏幕中心开火 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### isFullAutoMode
 
@@ -383,7 +383,7 @@
 
 **`Description`**
 
-设置当前状态下 isInFullAuto 的值
+设置当前状态下isInFullAuto的值
 
 **`Effect`**
 
@@ -395,15 +395,15 @@
 
 #### Parameters
 
-| Name           | Type      | Description                  |
-| :------------- | :-------- | :--------------------------- |
-| `isInFullAuto` | `boolean` | 当前状态下 isInFullAuto 的值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isInFullAuto` | `boolean` |  当前状态下isInFullAuto的值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### offsetOfFireOnScreenCenter
 
@@ -439,9 +439,9 @@
 
 #### Parameters
 
-| Name     | Type                            | Description          |
-| :------- | :------------------------------ | :------------------- |
-| `offset` | [`Vector`](Type.Type.Vector.md) | 屏幕中心开火时的偏移 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `offset` | [`Vector`](Type.Type.Vector.md) |  屏幕中心开火时的偏移 |
 
 #### Returns
 
@@ -455,7 +455,7 @@
 
 **`Description`**
 
-是否有动画 GUID
+是否有动画GUID
 
 **`Effect`**
 
@@ -465,9 +465,9 @@
 
 `boolean`
 
-是否有动画 GUID
+是否有动画GUID
 
----
+___
 
 ### isFiring
 
@@ -475,7 +475,7 @@
 
 **`Description`**
 
-获取当前状态下 bFiring 的值，一般用于处理全自动开火模式下的自动换弹
+获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
 
 **`Effect`**
 

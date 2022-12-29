@@ -4,15 +4,15 @@
 
 **`Description`**
 
-HTTP 请求信息的对象
+HTTP请求信息的对象
 
 ## Table of contents
 
-| Properties                                                                                             |
-| :----------------------------------------------------------------------------------------------------- |
-| **[body](Network.Network.RequestInit.md#body)**: `string` <br> HTTP 请求体                             |
-| **[headers](Network.Network.RequestInit.md#headers)**: `Object` <br> HTTP 请求头                       |
-| **[method](Network.Network.RequestInit.md#method)**: `"POST"` \| `"PUT"` \| `"GET"` <br> HTTP 请求类型 |
+| Properties |
+| :-----|
+| **[body](Network.Network.RequestInit.md#body)**: `string` <br> HTTP请求体|
+| **[headers](Network.Network.RequestInit.md#headers)**: `Object` <br> HTTP请求头|
+| **[method](Network.Network.RequestInit.md#method)**: ``"POST"`` \| ``"PUT"`` \| ``"GET"`` <br> HTTP请求类型|
 
 ## Properties
 
@@ -22,9 +22,9 @@ HTTP 请求信息的对象
 
 **`Description`**
 
-HTTP 请求体
+HTTP请求体
 
----
+___
 
 ### headers
 
@@ -32,18 +32,18 @@ HTTP 请求体
 
 **`Description`**
 
-HTTP 请求头
+HTTP请求头
 
 #### Index signature
 
 ▪ [key: `string`]: `string`
 
----
+___
 
 ### method
 
-• `Optional` **method**: `"POST"` \| `"PUT"` \| `"GET"`
+• `Optional` **method**: ``"POST"`` \| ``"PUT"`` \| ``"GET"``
 
 **`Description`**
 
-HTTP 请求类型
+HTTP请求类型

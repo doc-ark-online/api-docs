@@ -4,13 +4,13 @@
 
 **`Description`**
 
-序列工具类，主要用于获取连续的 ID
+序列工具类，主要用于获取连续的ID
 
 ## Table of contents
 
-| Methods                                                                             |
-| :---------------------------------------------------------------------------------- |
-| **[nextID](Util.Util.TweenUtil.Sequence.md#nextid)**(): `number` <br> 获取下一个 ID |
+| Methods |
+| :-----|
+| **[nextID](Util.Util.TweenUtil.Sequence.md#nextid)**(): `number` <br> 获取下一个ID|
 
 ## Methods
 
@@ -20,7 +20,7 @@
 
 **`Description`**
 
-获取下一个 ID
+获取下一个ID
 
 **`Effect`**
 
@@ -30,4 +30,4 @@
 
 `number`
 
-下一个 ID
+下一个ID

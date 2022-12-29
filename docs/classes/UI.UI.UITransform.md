@@ -4,14 +4,14 @@
 
 **`Description`**
 
-节点 Transform
+节点Transform
 
 ## Table of contents
 
-| Properties                                                                                 |
-| :----------------------------------------------------------------------------------------- |
-| **[position](UI.UI.UITransform.md#position)**: [`Vector2`](Type.Type.Vector2.md) <br> 位置 |
-| **[size](UI.UI.UITransform.md#size)**: [`Vector2`](Type.Type.Vector2.md) <br> 大小         |
+| Properties |
+| :-----|
+| **[position](UI.UI.UITransform.md#position)**: [`Vector2`](Type.Type.Vector2.md) <br> 位置|
+| **[size](UI.UI.UITransform.md#size)**: [`Vector2`](Type.Type.Vector2.md) <br> 大小|
 
 **`Description`**
 
@@ -23,12 +23,12 @@
 
 #### Parameters
 
-| Name | Type     | Description     |
-| :--- | :------- | :-------------- |
-| `x`  | `number` | 位置 Position.X |
-| `y`  | `number` | 位置 Position.Y |
-| `w`  | `number` | 大小 Size.W 宽  |
-| `h`  | `number` | 大小 Size.H 高  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `x` | `number` | 位置 Position.X |
+| `y` | `number` |  位置 Position.Y |
+| `w` | `number` | 大小 Size.W 宽 |
+| `h` | `number` | 大小 Size.H 高 |
 
 • **new UITransform**(`xy`, `wh`)
 
@@ -42,10 +42,10 @@
 
 #### Parameters
 
-| Name | Type                              | Description |
-| :--- | :-------------------------------- | :---------- |
-| `xy` | [`Vector2`](Type.Type.Vector2.md) | 位置        |
-| `wh` | [`Vector2`](Type.Type.Vector2.md) | 大小        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `xy` | [`Vector2`](Type.Type.Vector2.md) | 位置 |
+| `wh` | [`Vector2`](Type.Type.Vector2.md) | 大小 |
 
 ## Properties
 
@@ -57,7 +57,7 @@
 
 位置
 
----
+___
 
 ### size
 

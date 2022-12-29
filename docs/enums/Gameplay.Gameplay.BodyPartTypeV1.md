@@ -4,36 +4,36 @@
 
 **`Description`**
 
-V1 角色部位
+V1角色部位
 
 ## Table of contents
 
-| Enumeration Members                                                    |
-| :--------------------------------------------------------------------- |
-| **[Face](Gameplay.Gameplay.BodyPartTypeV1.md#face)** = `1` <br> 面部   |
-| **[Hair](Gameplay.Gameplay.BodyPartTypeV1.md#hair)** = `0` <br> 头发   |
-| **[Trunk](Gameplay.Gameplay.BodyPartTypeV1.md#trunk)** = `2` <br> 身体 |
+| Enumeration Members |
+| :-----|
+| **[Face](Gameplay.Gameplay.BodyPartTypeV1.md#face)** = ``1`` <br> 面部|
+| **[Hair](Gameplay.Gameplay.BodyPartTypeV1.md#hair)** = ``0`` <br> 头发|
+| **[Trunk](Gameplay.Gameplay.BodyPartTypeV1.md#trunk)** = ``2`` <br> 身体|
 
 ## Enumeration Members
 
 ### Face
 
-• **Face** = `1`
+• **Face** = ``1``
 
 面部
 
----
+___
 
 ### Hair
 
-• **Hair** = `0`
+• **Hair** = ``0``
 
 头发
 
----
+___
 
 ### Trunk
 
-• **Trunk** = `2`
+• **Trunk** = ``2``
 
 身体

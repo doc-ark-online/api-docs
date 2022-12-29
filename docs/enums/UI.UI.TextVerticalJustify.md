@@ -8,32 +8,32 @@
 
 ## Table of contents
 
-| Enumeration Members                                                   |
-| :-------------------------------------------------------------------- |
-| **[Bottom](UI.UI.TextVerticalJustify.md#bottom)** = `2` <br> 居下对齐 |
-| **[Center](UI.UI.TextVerticalJustify.md#center)** = `1` <br> 居中对齐 |
-| **[Top](UI.UI.TextVerticalJustify.md#top)** = `0` <br> 居上对齐       |
+| Enumeration Members |
+| :-----|
+| **[Bottom](UI.UI.TextVerticalJustify.md#bottom)** = ``2`` <br> 居下对齐|
+| **[Center](UI.UI.TextVerticalJustify.md#center)** = ``1`` <br> 居中对齐|
+| **[Top](UI.UI.TextVerticalJustify.md#top)** = ``0`` <br> 居上对齐|
 
 ## Enumeration Members
 
 ### Bottom
 
-• **Bottom** = `2`
+• **Bottom** = ``2``
 
 居下对齐
 
----
+___
 
 ### Center
 
-• **Center** = `1`
+• **Center** = ``1``
 
 居中对齐
 
----
+___
 
 ### Top
 
-• **Top** = `0`
+• **Top** = ``0``
 
 居上对齐

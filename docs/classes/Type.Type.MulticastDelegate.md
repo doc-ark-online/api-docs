@@ -12,9 +12,9 @@
 
 ## Type parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
-| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implements
 
@@ -22,18 +22,18 @@
 
 ## Table of contents
 
-| Methods                                                                                                     |
-| :---------------------------------------------------------------------------------------------------------- |
-| **[add](Type.Type.MulticastDelegate.md#add)**(`T`): `void` <br> 绑定代理函数                                |
-| **[broadcast](Type.Type.MulticastDelegate.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数 |
-| **[clear](Type.Type.MulticastDelegate.md#clear)**(): `void` <br> 情况委托                                   |
-| **[remove](Type.Type.MulticastDelegate.md#remove)**(`T`): `void` <br> 删除绑定代理函数                      |
+| Methods |
+| :-----|
+| **[add](Type.Type.MulticastDelegate.md#add)**(`T`): `void` <br> 绑定代理函数|
+| **[broadcast](Type.Type.MulticastDelegate.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数|
+| **[clear](Type.Type.MulticastDelegate.md#clear)**(): `void` <br> 情况委托|
+| **[remove](Type.Type.MulticastDelegate.md#remove)**(`T`): `void` <br> 删除绑定代理函数|
 
 #### Type parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
-| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Methods
 
@@ -51,9 +51,9 @@
 
 #### Parameters
 
-| Name   | Type | Description        |
-| :----- | :--- | :----------------- |
-| `func` | `T`  | 绑定的函数 default |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `T` |  绑定的函数 default |
 
 #### Returns
 
@@ -63,7 +63,7 @@
 
 [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md).[add](../interfaces/Type.Type.MulticastDelegateInterface.md#add)
 
----
+___
 
 ### broadcast
 
@@ -79,9 +79,9 @@
 
 #### Parameters
 
-| Name     | Type               | Description |
-| :------- | :----------------- | :---------- |
-| `...arg` | `Parameters`<`T`\> | 参数        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...arg` | `Parameters`<`T`\> |  参数 |
 
 #### Returns
 
@@ -91,7 +91,7 @@
 
 [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md).[broadcast](../interfaces/Type.Type.MulticastDelegateInterface.md#broadcast)
 
----
+___
 
 ### clear
 
@@ -109,7 +109,7 @@
 
 `void`
 
----
+___
 
 ### remove
 
@@ -125,9 +125,9 @@
 
 #### Parameters
 
-| Name   | Type | Description            |
-| :----- | :--- | :--------------------- |
-| `func` | `T`  | 删除绑定的函数 default |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `T` |  删除绑定的函数 default |
 
 #### Returns
 

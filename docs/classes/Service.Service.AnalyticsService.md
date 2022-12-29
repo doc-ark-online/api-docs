@@ -10,15 +10,15 @@
 
 **`Precautions`**
 
-单例类，请使用 instance 获取对象
+单例类，请使用instance获取对象
 
 ## Table of contents
 
-| Methods                                                                                                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[getInstance](Service.Service.AnalyticsService.md#getinstance)**(): [`AnalyticsService`](Service.Service.AnalyticsService.md) <br> 分析服务全局实例 |
-| **[googleEventTracking](Service.Service.AnalyticsService.md#googleeventtracking)**(`string`, `Object`): `void` <br> 埋点                              |
-| **[googleInit](Service.Service.AnalyticsService.md#googleinit)**(`string`): `void` <br> Initialize Google Analytics client                            |
+| Methods |
+| :-----|
+| **[getInstance](Service.Service.AnalyticsService.md#getinstance)**(): [`AnalyticsService`](Service.Service.AnalyticsService.md) <br> 分析服务全局实例|
+| **[googleEventTracking](Service.Service.AnalyticsService.md#googleeventtracking)**(`string`, `Object`): `void` <br> 埋点|
+| **[googleInit](Service.Service.AnalyticsService.md#googleinit)**(`string`): `void` <br> Initialize Google Analytics client|
 
 ## Methods
 
@@ -40,7 +40,7 @@
 
 分析服务全局实例
 
----
+___
 
 ### googleEventTracking
 
@@ -56,16 +56,16 @@
 
 #### Parameters
 
-| Name           | Type     | Description           |
-| :------------- | :------- | :-------------------- |
-| `eventName`    | `string` | 埋点名                |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 埋点名 |
 | `eventParams?` | `Object` | 埋点参数 default:选填 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### googleInit
 
@@ -81,8 +81,8 @@ Initialize Google Analytics client
 
 #### Parameters
 
-| Name  | Type     | Description                     |
-| :---- | :------- | :------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `mId` | `string` | Google Analytics measurement ID |
 
 #### Returns

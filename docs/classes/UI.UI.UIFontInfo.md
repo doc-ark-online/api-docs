@@ -8,20 +8,20 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                       |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[contentColor](UI.UI.UIFontInfo.md#contentcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 内容颜色                                    |
-| **[fontSize](UI.UI.UIFontInfo.md#fontsize)**: `number` <br> 大小                                                                                 |
-| **[glyph](UI.UI.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) <br> 字形                                                 |
-| **[letterSpacing](UI.UI.UIFontInfo.md#letterspacing)**: `number` <br> 间距                                                                       |
-| **[outLineColor](UI.UI.UIFontInfo.md#outlinecolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 描边颜色                                    |
-| **[outLineSize](UI.UI.UIFontInfo.md#outlinesize)**: `number` <br> 描边大小                                                                       |
-| **[shadowColor](UI.UI.UIFontInfo.md#shadowcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 阴影颜色                                      |
-| **[shadowOffset](UI.UI.UIFontInfo.md#shadowoffset)**: [`Vector2`](Type.Type.Vector2.md) <br> 阴影偏移                                            |
-| **[strikethrough](UI.UI.UIFontInfo.md#strikethrough)**: `boolean` <br> 删除线                                                                    |
-| **[textAlign](UI.UI.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 对齐方式                                     |
-| **[textVerticalAlign](UI.UI.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 垂直对齐方式 |
-| **[underline](UI.UI.UIFontInfo.md#underline)**: `boolean` <br> 下划线                                                                            |
+| Properties |
+| :-----|
+| **[contentColor](UI.UI.UIFontInfo.md#contentcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 内容颜色|
+| **[fontSize](UI.UI.UIFontInfo.md#fontsize)**: `number` <br> 大小|
+| **[glyph](UI.UI.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/UI.UI.UIFontGlyph.md) <br> 字形|
+| **[letterSpacing](UI.UI.UIFontInfo.md#letterspacing)**: `number` <br> 间距|
+| **[outLineColor](UI.UI.UIFontInfo.md#outlinecolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 描边颜色|
+| **[outLineSize](UI.UI.UIFontInfo.md#outlinesize)**: `number` <br> 描边大小|
+| **[shadowColor](UI.UI.UIFontInfo.md#shadowcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 阴影颜色|
+| **[shadowOffset](UI.UI.UIFontInfo.md#shadowoffset)**: [`Vector2`](Type.Type.Vector2.md) <br> 阴影偏移|
+| **[strikethrough](UI.UI.UIFontInfo.md#strikethrough)**: `boolean` <br> 删除线|
+| **[textAlign](UI.UI.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/UI.UI.TextJustify.md) <br> 对齐方式|
+| **[textVerticalAlign](UI.UI.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/UI.UI.TextVerticalJustify.md) <br> 垂直对齐方式|
+| **[underline](UI.UI.UIFontInfo.md#underline)**: `boolean` <br> 下划线|
 
 ## Properties
 
@@ -33,7 +33,7 @@
 
 内容颜色
 
----
+___
 
 ### fontSize
 
@@ -43,7 +43,7 @@
 
 大小
 
----
+___
 
 ### glyph
 
@@ -53,7 +53,7 @@
 
 字形
 
----
+___
 
 ### letterSpacing
 
@@ -63,7 +63,7 @@
 
 间距
 
----
+___
 
 ### outLineColor
 
@@ -73,7 +73,7 @@
 
 描边颜色
 
----
+___
 
 ### outLineSize
 
@@ -83,7 +83,7 @@
 
 描边大小
 
----
+___
 
 ### shadowColor
 
@@ -93,7 +93,7 @@
 
 阴影颜色
 
----
+___
 
 ### shadowOffset
 
@@ -103,7 +103,7 @@
 
 阴影偏移
 
----
+___
 
 ### strikethrough
 
@@ -113,7 +113,7 @@
 
 删除线
 
----
+___
 
 ### textAlign
 
@@ -123,7 +123,7 @@
 
 对齐方式
 
----
+___
 
 ### textVerticalAlign
 
@@ -133,7 +133,7 @@
 
 垂直对齐方式
 
----
+___
 
 ### underline
 

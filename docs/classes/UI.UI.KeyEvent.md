@@ -8,11 +8,11 @@
 
 ## Table of contents
 
-| Methods                                                                                                            |
-| :----------------------------------------------------------------------------------------------------------------- |
-| **[getKey](UI.UI.KeyEvent.md#getkey)**(): [`KeyEvent`](UI.UI.KeyEvent.md) <br> 获取按下的键                        |
-| **[getUserIndex](UI.UI.KeyEvent.md#getuserindex)**(): `number` <br> 获取事件触发玩家 index                         |
-| **[toInputEvent](UI.UI.KeyEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent\* |
+| Methods |
+| :-----|
+| **[getKey](UI.UI.KeyEvent.md#getkey)**(): [`KeyEvent`](UI.UI.KeyEvent.md) <br> 获取按下的键|
+| **[getUserIndex](UI.UI.KeyEvent.md#getuserindex)**(): `number` <br> 获取事件触发玩家index|
+| **[toInputEvent](UI.UI.KeyEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent*|
 
 **`Description`**
 
@@ -38,7 +38,7 @@
 
 返回按下的键
 
----
+___
 
 ### getUserIndex
 
@@ -46,7 +46,7 @@
 
 **`Description`**
 
-获取事件触发玩家 index
+获取事件触发玩家index
 
 **`Effect`**
 
@@ -56,9 +56,9 @@
 
 `number`
 
-返回事件触发玩家 index
+返回事件触发玩家index
 
----
+___
 
 ### toInputEvent
 
@@ -66,7 +66,7 @@
 
 **`Description`**
 
-转化为 InputEvent\*
+转化为 InputEvent*
 
 **`Effect`**
 

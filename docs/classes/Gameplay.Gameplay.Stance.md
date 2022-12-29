@@ -14,12 +14,12 @@
 
 ## Table of contents
 
-| Methods                                                                                           |
-| :------------------------------------------------------------------------------------------------ |
-| **[play](Gameplay.Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果   |
-| **[playInternal](Gameplay.Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现 |
-| **[stop](Gameplay.Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果   |
-| **[stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现 |
+| Methods |
+| :-----|
+| **[play](Gameplay.Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
+| **[playInternal](Gameplay.Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现|
+| **[stop](Gameplay.Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
+| **[stopInternal](Gameplay.Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现|
 
 **`Description`**
 
@@ -31,10 +31,10 @@
 
 #### Parameters
 
-| Name        | Type                                                  | Description  |
-| :---------- | :---------------------------------------------------- | :----------- |
-| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色         |
-| `sync`      | `boolean`                                             | 是否自动同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](Gameplay.Gameplay.CharacterBase.md) | 角色 |
+| `sync` | `boolean` | 是否自动同步 |
 
 ## Methods
 
@@ -52,9 +52,9 @@
 
 **`Precautions`**
 
-这个操作是否会自动同步多端, 取决于调用 Character.loadStance()时传入的 sync 参数.
+这个操作是否会自动同步多端, 取决于调用Character.loadStance()时传入的sync参数.
 返回的执行结果, 在不自动同步时多数情况下可靠;
-在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
+在自动同步时完全不可靠, 总是会返回true, 因为无法判断其他端的执行情况
 
 #### Returns
 
@@ -62,7 +62,7 @@
 
 是否执行成功
 
----
+___
 
 ### playInternal
 
@@ -82,7 +82,7 @@
 
 是否执行成功
 
----
+___
 
 ### stop
 
@@ -98,9 +98,9 @@
 
 **`Precautions`**
 
-这个操作是否会自动同步多端, 取决于调用 Character.loadStance()时传入的 sync 参数.
+这个操作是否会自动同步多端, 取决于调用Character.loadStance()时传入的sync参数.
 返回的执行结果, 在不自动同步时多数情况下可靠;
-在自动同步时完全不可靠, 总是会返回 true, 因为无法判断其他端的执行情况
+在自动同步时完全不可靠, 总是会返回true, 因为无法判断其他端的执行情况
 
 #### Returns
 
@@ -108,7 +108,7 @@
 
 是否执行成功
 
----
+___
 
 ### stopInternal
 

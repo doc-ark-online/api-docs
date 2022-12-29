@@ -4,22 +4,22 @@
 
 **`Description`**
 
-HTTP 响应信息的对象
+HTTP响应信息的对象
 
 ## Table of contents
 
-| Properties                                                                                 |
-| :----------------------------------------------------------------------------------------- |
-| **[headers](Network.Network.Response.md#headers)**: `Map`<`string`, `string`\> <br> 响应头 |
-| **[ok](Network.Network.Response.md#ok)**: `boolean` <br> 是否成功（状态码是否为 200）      |
-| **[status](Network.Network.Response.md#status)**: `number` <br> 响应状态码                 |
-| **[type](Network.Network.Response.md#type)**: `string` <br> 响应类型                       |
-| **[url](Network.Network.Response.md#url)**: `string` <br> 响应 URL                         |
+| Properties |
+| :-----|
+| **[headers](Network.Network.Response.md#headers)**: `Map`<`string`, `string`\> <br> 响应头|
+| **[ok](Network.Network.Response.md#ok)**: `boolean` <br> 是否成功（状态码是否为200）|
+| **[status](Network.Network.Response.md#status)**: `number` <br> 响应状态码|
+| **[type](Network.Network.Response.md#type)**: `string` <br> 响应类型|
+| **[url](Network.Network.Response.md#url)**: `string` <br> 响应URL|
 
-| Methods                                                                                  |
-| :--------------------------------------------------------------------------------------- |
-| **[json](Network.Network.Response.md#json)**<`T`\>(): `Promise`<`T`\> <br> 数据返回 json |
-| **[text](Network.Network.Response.md#text)**(): `Promise`<`string`\> <br> 数据返回文本   |
+| Methods |
+| :-----|
+| **[json](Network.Network.Response.md#json)**<`T`\>(): `Promise`<`T`\> <br> 数据返回json|
+| **[text](Network.Network.Response.md#text)**(): `Promise`<`string`\> <br> 数据返回文本|
 
 ## Properties
 
@@ -31,7 +31,7 @@ HTTP 响应信息的对象
 
 响应头
 
----
+___
 
 ### ok
 
@@ -39,9 +39,9 @@ HTTP 响应信息的对象
 
 **`Description`**
 
-是否成功（状态码是否为 200）
+是否成功（状态码是否为200）
 
----
+___
 
 ### status
 
@@ -51,7 +51,7 @@ HTTP 响应信息的对象
 
 响应状态码
 
----
+___
 
 ### type
 
@@ -61,7 +61,7 @@ HTTP 响应信息的对象
 
 响应类型
 
----
+___
 
 ### url
 
@@ -69,7 +69,7 @@ HTTP 响应信息的对象
 
 **`Description`**
 
-响应 URL
+响应URL
 
 ## Methods
 
@@ -79,7 +79,7 @@ HTTP 响应信息的对象
 
 **`Description`**
 
-数据返回 json
+数据返回json
 
 **`Effect`**
 
@@ -88,16 +88,16 @@ HTTP 响应信息的对象
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Returns
 
 `Promise`<`T`\>
 
-数据返回 json
+数据返回json
 
----
+___
 
 ### text
 

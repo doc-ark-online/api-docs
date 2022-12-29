@@ -4,7 +4,7 @@
 
 **`Description`**
 
-人形对象 V2 前发部位接口
+人形对象V2前发部位接口
 
 ## Implements
 
@@ -12,20 +12,20 @@
 
 ## Table of contents
 
-| Methods                                                                                                                                                                     |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[getColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发颜色                                        |
-| **[getGradientColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getgradientcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发渐变染色                    |
-| **[getGradientIntensity](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getgradientintensity)**(): `number` <br> 获取头发渐变区域                                             |
-| **[getHighlightColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#gethighlightcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发高光颜色                  |
-| **[getHighlightMask](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#gethighlightmask)**(): `string` <br> 获取头发高光形状                                                     |
-| **[getMesh](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getmesh)**(): `string` <br> 获取前发部位模型                                                                       |
-| **[setColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发颜色                       |
-| **[setGradientColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setgradientcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发渐变染色   |
-| **[setGradientIntensity](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setgradientintensity)**(`number`, `boolean`): `void` <br> 设置头发渐变区域                            |
-| **[setHighlightColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#sethighlightcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发高光颜色 |
-| **[setHighlightMask](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#sethighlightmask)**(`string`, `boolean`): `void` <br> 设置头发高光形状                                    |
-| **[setMesh](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置前发部位模型                                                      |
+| Methods |
+| :-----|
+| **[getColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发颜色|
+| **[getGradientColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getgradientcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发渐变染色|
+| **[getGradientIntensity](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getgradientintensity)**(): `number` <br> 获取头发渐变区域|
+| **[getHighlightColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#gethighlightcolor)**(): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取头发高光颜色|
+| **[getHighlightMask](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#gethighlightmask)**(): `string` <br> 获取头发高光形状|
+| **[getMesh](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#getmesh)**(): `string` <br> 获取前发部位模型|
+| **[setColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发颜色|
+| **[setGradientColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setgradientcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发渐变染色|
+| **[setGradientIntensity](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setgradientintensity)**(`number`, `boolean`): `void` <br> 设置头发渐变区域|
+| **[setHighlightColor](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#sethighlightcolor)**([`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置头发高光颜色|
+| **[setHighlightMask](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#sethighlightmask)**(`string`, `boolean`): `void` <br> 设置头发高光形状|
+| **[setMesh](Gameplay.Gameplay.HumanoidV2FrontHairPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置前发部位模型|
 
 ## Methods
 
@@ -51,7 +51,7 @@
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#getcolor)
 
----
+___
 
 ### getGradientColor
 
@@ -75,7 +75,7 @@
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getGradientColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientcolor)
 
----
+___
 
 ### getGradientIntensity
 
@@ -99,7 +99,7 @@
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getGradientIntensity](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#getgradientintensity)
 
----
+___
 
 ### getHighlightColor
 
@@ -123,7 +123,7 @@
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightcolor)
 
----
+___
 
 ### getHighlightMask
 
@@ -147,7 +147,7 @@ guid
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getHighlightMask](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#gethighlightmask)
 
----
+___
 
 ### getMesh
 
@@ -165,13 +165,13 @@ guid
 
 `string`
 
-模型 Guid
+模型Guid
 
 #### Implementation of
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[getMesh](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#getmesh)
 
----
+___
 
 ### setColor
 
@@ -188,10 +188,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -201,7 +201,7 @@ sync = true:双端
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[setColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#setcolor)
 
----
+___
 
 ### setGradientColor
 
@@ -218,10 +218,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -231,7 +231,7 @@ sync = true:双端
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[setGradientColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientcolor)
 
----
+___
 
 ### setGradientIntensity
 
@@ -248,10 +248,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `value` | `number`  | 强度                    |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 强度 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -261,7 +261,7 @@ sync = true:双端
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[setGradientIntensity](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#setgradientintensity)
 
----
+___
 
 ### setHighlightColor
 
@@ -278,10 +278,10 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -291,7 +291,7 @@ sync = true:双端
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[setHighlightColor](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightcolor)
 
----
+___
 
 ### setHighlightMask
 
@@ -308,9 +308,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
@@ -321,7 +321,7 @@ sync = true:双端
 
 [IHumanoidV2HairPart](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md).[setHighlightMask](../interfaces/Gameplay.Gameplay.IHumanoidV2HairPart.md#sethighlightmask)
 
----
+___
 
 ### setMesh
 
@@ -333,7 +333,7 @@ sync = true:双端
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -342,9 +342,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns

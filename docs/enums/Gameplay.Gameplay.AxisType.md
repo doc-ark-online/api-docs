@@ -8,32 +8,32 @@
 
 ## Table of contents
 
-| Enumeration Members                                      |
-| :------------------------------------------------------- |
-| **[X](Gameplay.Gameplay.AxisType.md#x)** = `0` <br> X 轴 |
-| **[Y](Gameplay.Gameplay.AxisType.md#y)** = `1` <br> Y 轴 |
-| **[Z](Gameplay.Gameplay.AxisType.md#z)** = `2` <br> Z 轴 |
+| Enumeration Members |
+| :-----|
+| **[X](Gameplay.Gameplay.AxisType.md#x)** = ``0`` <br> X轴|
+| **[Y](Gameplay.Gameplay.AxisType.md#y)** = ``1`` <br> Y轴|
+| **[Z](Gameplay.Gameplay.AxisType.md#z)** = ``2`` <br> Z轴|
 
 ## Enumeration Members
 
 ### X
 
-• **X** = `0`
+• **X** = ``0``
 
-X 轴
+X轴
 
----
+___
 
 ### Y
 
-• **Y** = `1`
+• **Y** = ``1``
 
-Y 轴
+Y轴
 
----
+___
 
 ### Z
 
-• **Z** = `2`
+• **Z** = ``2``
 
-Z 轴
+Z轴

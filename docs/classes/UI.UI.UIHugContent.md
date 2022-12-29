@@ -8,10 +8,10 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                       |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[hugContentH](UI.UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md) <br> 垂直适应规则     |
-| **[hugContentW](UI.UI.UIHugContent.md#hugcontentw)**: [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) <br> 水平适应规则 |
+| Properties |
+| :-----|
+| **[hugContentH](UI.UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md) <br> 垂直适应规则|
+| **[hugContentW](UI.UI.UIHugContent.md#hugcontentw)**: [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) <br> 水平适应规则|
 
 **`Description`**
 
@@ -23,10 +23,10 @@
 
 #### Parameters
 
-| Name | Type                                                                     | Description  |
-| :--- | :----------------------------------------------------------------------- | :----------- |
-| `w`  | [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) | 水平应用规则 |
-| `h`  | [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md)     | 垂直使用规则 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `w` | [`UIHugContentHorizontally`](../enums/UI.UI.UIHugContentHorizontally.md) | 水平应用规则 |
+| `h` | [`UIHugContentVertically`](../enums/UI.UI.UIHugContentVertically.md) | 垂直使用规则 |
 
 ## Properties
 
@@ -38,7 +38,7 @@
 
 垂直适应规则
 
----
+___
 
 ### hugContentW
 

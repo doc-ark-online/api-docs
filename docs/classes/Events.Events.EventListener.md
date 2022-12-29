@@ -8,13 +8,13 @@
 
 ## Table of contents
 
-| Accessors                                                                                            |
-| :--------------------------------------------------------------------------------------------------- |
-| **[isConnected](Events.Events.EventListener.md#isconnected)**(): `boolean` <br> 用来判断事件是否有效 |
+| Accessors |
+| :-----|
+| **[isConnected](Events.Events.EventListener.md#isconnected)**(): `boolean` <br> 用来判断事件是否有效|
 
-| Methods                                                                             |
-| :---------------------------------------------------------------------------------- |
-| **[disconnect](Events.Events.EventListener.md#disconnect)**(): `void` <br> 卸载事件 |
+| Methods |
+| :-----|
+| **[disconnect](Events.Events.EventListener.md#disconnect)**(): `void` <br> 卸载事件|
 
 ## Accessors
 

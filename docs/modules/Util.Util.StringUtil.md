@@ -8,12 +8,12 @@
 
 ## Table of contents
 
-| Functions                                                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[clipboardCopy](Util.Util.StringUtil.md#clipboardcopy)**(`string`): `void` <br> 文本复制，将字符串复制到剪切板                                                     |
-| **[clipboardPaste](Util.Util.StringUtil.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本                                                             |
-| **[format](Util.Util.StringUtil.md#format)**(`string`, `any`[]): `string` <br> 将{i}中的内容依次替换为后续参数。i 从 0 开始，表示第 i+2 个参数，详细请查看使用示例。 |
-| **[isEmpty](Util.Util.StringUtil.md#isempty)**(`string`): `boolean` <br> 判断字符串是否为空(null 或"")                                                               |
+| Functions |
+| :-----|
+| **[clipboardCopy](Util.Util.StringUtil.md#clipboardcopy)**(`string`): `void` <br> 文本复制，将字符串复制到剪切板|
+| **[clipboardPaste](Util.Util.StringUtil.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
+| **[format](Util.Util.StringUtil.md#format)**(`string`, `any`[]): `string` <br> 将{i}中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[isEmpty](Util.Util.StringUtil.md#isempty)**(`string`): `boolean` <br> 判断字符串是否为空(null或"")|
 
 ## Functions
 
@@ -31,15 +31,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description        |
-| :----- | :------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `text` | `string` | 复制到剪切板的文本 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### clipboardPaste
 
@@ -59,7 +59,7 @@
 
 剪切板的文本
 
----
+___
 
 ### format
 
@@ -67,7 +67,7 @@
 
 **`Description`**
 
-将{i}中的内容依次替换为后续参数。i 从 0 开始，表示第 i+2 个参数，详细请查看使用示例。
+将{i}中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
 **`Effect`**
 
@@ -76,7 +76,6 @@
 **`Example`**
 
 使用示例:格式化字符串用法
-
 ```ts
 // targetString = "hello world!";
 let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
@@ -84,10 +83,10 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 
 #### Parameters
 
-| Name       | Type     | Description    |
-| :--------- | :------- | :------------- |
-| `str`      | `string` | 要处理的字符串 |
-| `...param` | `any`[]  | 替换序列       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` |  要处理的字符串 |
+| `...param` | `any`[] |  替换序列 |
 
 #### Returns
 
@@ -95,7 +94,7 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 
 新的字符串
 
----
+___
 
 ### isEmpty
 
@@ -103,7 +102,7 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 
 **`Description`**
 
-判断字符串是否为空(null 或"")
+判断字符串是否为空(null或"")
 
 **`Effect`**
 
@@ -111,9 +110,9 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 
 #### Parameters
 
-| Name  | Type     | Description    |
-| :---- | :------- | :------------- |
-| `str` | `string` | 要判断的字符串 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` |  要判断的字符串 |
 
 #### Returns
 

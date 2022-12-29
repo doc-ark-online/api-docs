@@ -8,9 +8,9 @@
 
 ## Table of contents
 
-| Methods                                                                                                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[enableOptimization](Gameplay.Gameplay.Optimization.md#enableoptimization)**(`boolean`): `void` <br> 开启或关闭角色优化(角色裁剪、动画更新率降低等) |
+| Methods |
+| :-----|
+| **[enableOptimization](Gameplay.Gameplay.Optimization.md#enableoptimization)**(`boolean`): `void` <br> 开启或关闭角色优化(角色裁剪、动画更新率降低等)|
 
 ## Methods
 
@@ -28,8 +28,8 @@
 
 #### Parameters
 
-| Name       | Type      | Description            |
-| :--------- | :-------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `isEnable` | `boolean` | 是否开启或关闭角色优化 |
 
 #### Returns

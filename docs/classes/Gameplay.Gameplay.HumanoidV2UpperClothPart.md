@@ -4,7 +4,7 @@
 
 **`Description`**
 
-人形对象 V2 上衣部位接口
+人形对象V2上衣部位接口
 
 ## Implements
 
@@ -12,31 +12,31 @@
 
 ## Table of contents
 
-| Methods                                                                                                                                                                        |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[getAreaCount](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getareacount)**(): `number` <br> 获取衣服区域数量                                                               |
-| **[getColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getcolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取颜色                                      |
-| **[getDesignAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesignangle)**(`number`): `number` <br> 获取图案方向                                                       |
-| **[getDesignColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesigncolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取图案颜色                      |
-| **[getDesignTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesigntexture)**(`number`): `string` <br> 获取衣服图案                                                   |
-| **[getMesh](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getmesh)**(): `string` <br> 获取上衣模型                                                                             |
-| **[getPatternAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternangle)**(`number`): `number` <br> 获取花纹旋转                                                     |
-| **[getPatternColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatterncolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取花纹颜色                    |
-| **[getPatternHeight](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternheight)**(`number`): `number` <br> 设置花纹纵向拉伸                                               |
-| **[getPatternIntensity](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternintensity)**(`number`): `number` <br> 获取花纹显示程度                                         |
-| **[getPatternWidth](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternwidth)**(`number`): `number` <br> 获取花纹横向拉伸                                                 |
-| **[getTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#gettexture)**(`number`): `string` <br> 获取花纹                                                                   |
-| **[setColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setcolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置颜色                   |
-| **[setDesignAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesignangle)**(`number`, `number`, `boolean`): `void` <br> 设置图案方向                                    |
-| **[setDesignColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesigncolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置图案颜色   |
-| **[setDesignTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesigntexture)**(`number`, `string`, `boolean`): `void` <br> 设置衣服图案                                |
-| **[setMesh](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置上衣模型                                                            |
-| **[setPatternAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternangle)**(`number`, `number`, `boolean`): `void` <br> 设置花纹旋转                                  |
-| **[setPatternColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatterncolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置花纹颜色 |
-| **[setPatternHeight](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternheight)**(`number`, `number`, `boolean`): `void` <br> 设置花纹纵向拉伸                            |
-| **[setPatternIntensity](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternintensity)**(`number`, `number`, `boolean`): `void` <br> 设置花纹显示程度                      |
-| **[setPatternWidth](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternwidth)**(`number`, `number`, `boolean`): `void` <br> 设置花纹横向拉伸                              |
-| **[setTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#settexture)**(`number`, `string`, `boolean`): `void` <br> 设置花纹                                                |
+| Methods |
+| :-----|
+| **[getAreaCount](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getareacount)**(): `number` <br> 获取衣服区域数量|
+| **[getColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getcolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取颜色|
+| **[getDesignAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesignangle)**(`number`): `number` <br> 获取图案方向|
+| **[getDesignColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesigncolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取图案颜色|
+| **[getDesignTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getdesigntexture)**(`number`): `string` <br> 获取衣服图案|
+| **[getMesh](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getmesh)**(): `string` <br> 获取上衣模型|
+| **[getPatternAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternangle)**(`number`): `number` <br> 获取花纹旋转|
+| **[getPatternColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatterncolor)**(`number`): [`LinearColor`](Type.Type.LinearColor.md) <br> 获取花纹颜色|
+| **[getPatternHeight](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternheight)**(`number`): `number` <br> 设置花纹纵向拉伸|
+| **[getPatternIntensity](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternintensity)**(`number`): `number` <br> 获取花纹显示程度|
+| **[getPatternWidth](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#getpatternwidth)**(`number`): `number` <br> 获取花纹横向拉伸|
+| **[getTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#gettexture)**(`number`): `string` <br> 获取花纹|
+| **[setColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setcolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置颜色|
+| **[setDesignAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesignangle)**(`number`, `number`, `boolean`): `void` <br> 设置图案方向|
+| **[setDesignColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesigncolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置图案颜色|
+| **[setDesignTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setdesigntexture)**(`number`, `string`, `boolean`): `void` <br> 设置衣服图案|
+| **[setMesh](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置上衣模型|
+| **[setPatternAngle](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternangle)**(`number`, `number`, `boolean`): `void` <br> 设置花纹旋转|
+| **[setPatternColor](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatterncolor)**(`number`, [`LinearColor`](Type.Type.LinearColor.md), `boolean`): `void` <br> 设置花纹颜色|
+| **[setPatternHeight](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternheight)**(`number`, `number`, `boolean`): `void` <br> 设置花纹纵向拉伸|
+| **[setPatternIntensity](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternintensity)**(`number`, `number`, `boolean`): `void` <br> 设置花纹显示程度|
+| **[setPatternWidth](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#setpatternwidth)**(`number`, `number`, `boolean`): `void` <br> 设置花纹横向拉伸|
+| **[setTexture](Gameplay.Gameplay.HumanoidV2UpperClothPart.md#settexture)**(`number`, `string`, `boolean`): `void` <br> 设置花纹|
 
 ## Methods
 
@@ -62,7 +62,7 @@
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getAreaCount](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)
 
----
+___
 
 ### getColor
 
@@ -78,9 +78,9 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `areaIndex` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `areaIndex` | `number` | 区域 |
 
 #### Returns
 
@@ -92,7 +92,7 @@
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)
 
----
+___
 
 ### getDesignAngle
 
@@ -108,9 +108,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -122,7 +122,7 @@
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getDesignAngle](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)
 
----
+___
 
 ### getDesignColor
 
@@ -138,9 +138,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -152,7 +152,7 @@
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getDesignColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)
 
----
+___
 
 ### getDesignTexture
 
@@ -168,9 +168,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -182,7 +182,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getDesignTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigntexture)
 
----
+___
 
 ### getMesh
 
@@ -200,13 +200,13 @@ guid
 
 `string`
 
-模型 Guid
+模型Guid
 
 #### Implementation of
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getMesh](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getmesh)
 
----
+___
 
 ### getPatternAngle
 
@@ -222,9 +222,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -236,7 +236,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getPatternAngle](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternangle)
 
----
+___
 
 ### getPatternColor
 
@@ -252,9 +252,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -266,7 +266,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getPatternColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatterncolor)
 
----
+___
 
 ### getPatternHeight
 
@@ -282,9 +282,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -296,7 +296,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getPatternHeight](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternheight)
 
----
+___
 
 ### getPatternIntensity
 
@@ -312,9 +312,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -326,7 +326,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getPatternIntensity](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternintensity)
 
----
+___
 
 ### getPatternWidth
 
@@ -342,9 +342,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -356,7 +356,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getPatternWidth](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternwidth)
 
----
+___
 
 ### getTexture
 
@@ -372,9 +372,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -386,7 +386,7 @@ guid
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[getTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#gettexture)
 
----
+___
 
 ### setColor
 
@@ -403,11 +403,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `index` | `number`                                  | 区域                    |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -417,7 +417,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setcolor)
 
----
+___
 
 ### setDesignAngle
 
@@ -434,11 +434,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 {Min:0,Max:360} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -448,7 +448,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setDesignAngle](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesignangle)
 
----
+___
 
 ### setDesignColor
 
@@ -465,11 +465,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `index` | `number`                                  | 区域                    |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -479,7 +479,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setDesignColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigncolor)
 
----
+___
 
 ### setDesignTexture
 
@@ -496,11 +496,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `guid`  | `string`  | 贴图 Guid               |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `guid` | `string` | 贴图Guid |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -510,7 +510,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setDesignTexture](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigntexture)
 
----
+___
 
 ### setMesh
 
@@ -522,7 +522,7 @@ sync = true:双端
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -531,9 +531,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
@@ -544,7 +544,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setMesh](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setmesh)
 
----
+___
 
 ### setPatternAngle
 
@@ -561,11 +561,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 {Min:0,Max:360} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -575,7 +575,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setPatternAngle](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternangle)
 
----
+___
 
 ### setPatternColor
 
@@ -592,11 +592,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                      | Description             |
-| :------ | :---------------------------------------- | :---------------------- |
-| `index` | `number`                                  | 区域                    |
-| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                 | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -606,7 +606,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setPatternColor](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatterncolor)
 
----
+___
 
 ### setPatternHeight
 
@@ -623,11 +623,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                 |
-| :------ | :-------- | :-------------------------- |
-| `index` | `number`  | 区域                        |
-| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | true 同步; false 不同步     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -637,7 +637,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setPatternHeight](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternheight)
 
----
+___
 
 ### setPatternIntensity
 
@@ -654,11 +654,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 强度 {Min:0,Max:1}      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 强度 {Min:0,Max:1} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -668,7 +668,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setPatternIntensity](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternintensity)
 
----
+___
 
 ### setPatternWidth
 
@@ -685,11 +685,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                 |
-| :------ | :-------- | :-------------------------- |
-| `index` | `number`  | 区域                        |
-| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | true 同步; false 不同步     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
@@ -699,7 +699,7 @@ sync = true:双端
 
 [IHumanoidV2ClothPart](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md).[setPatternWidth](../interfaces/Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternwidth)
 
----
+___
 
 ### setTexture
 
@@ -716,11 +716,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `guid`  | `string`  | 贴图 Guid               |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `guid` | `string` | 贴图Guid |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 

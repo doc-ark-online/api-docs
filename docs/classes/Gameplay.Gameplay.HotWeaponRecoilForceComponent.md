@@ -8,29 +8,29 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[onStartRecoilForceClient](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播 |
-| **[onStartRecoilForceServer](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播 |
+| Properties |
+| :-----|
+| **[onStartRecoilForceClient](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播|
+| **[onStartRecoilForceServer](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播|
 
-| Accessors                                                                                                                                 |
-| :---------------------------------------------------------------------------------------------------------------------------------------- |
-| **[maxHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值 |
-| **[maxHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值     |
-| **[maxVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值     |
-| **[maxVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值         |
-| **[minHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值 |
-| **[minHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值     |
-| **[minVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值     |
-| **[minVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值         |
+| Accessors |
+| :-----|
+| **[maxHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值|
+| **[maxHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值|
+| **[maxVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值|
+| **[maxVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值|
+| **[minHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值|
+| **[minHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值|
+| **[minVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值|
+| **[minVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值|
 
-| Methods                                                                                                                           |
-| :-------------------------------------------------------------------------------------------------------------------------------- |
-| **[getDeepJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值             |
-| **[getHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值 |
-| **[getHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number` <br> 获取水平偏移值 |
-| **[getVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值     |
-| **[getVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值     |
+| Methods |
+| :-----|
+| **[getDeepJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值|
+| **[getHorizontalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值|
+| **[getHorizontalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number` <br> 获取水平偏移值|
+| **[getVerticalJitter](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值|
+| **[getVerticalOffset](Gameplay.Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值|
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 客户端后坐力开始广播
 
----
+___
 
 ### onStartRecoilForceServer
 
@@ -88,15 +88,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description        |
-| :------ | :------- | :----------------- |
-| `value` | `number` | 相机水平抖动最大值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  相机水平抖动最大值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxHorizontalOffset
 
@@ -128,15 +128,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description    |
-| :------ | :------- | :------------- |
-| `value` | `number` | 水平偏移最大值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  水平偏移最大值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxVerticalJitter
 
@@ -172,15 +172,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description          |
-| :------ | :------- | :------------------- |
-| `value` | `number` | 新相机垂直抖动最大值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新相机垂直抖动最大值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxVerticalOffset
 
@@ -216,15 +216,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description    |
-| :------ | :------- | :------------- |
-| `value` | `number` | 垂直偏移最大值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  垂直偏移最大值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### minHorizontalJitter
 
@@ -260,15 +260,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description          |
-| :------ | :------- | :------------------- |
-| `value` | `number` | 新相机水平抖动最小值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新相机水平抖动最小值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### minHorizontalOffset
 
@@ -300,15 +300,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description    |
-| :------ | :------- | :------------- |
-| `value` | `number` | 水平偏移最小值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  水平偏移最小值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### minVerticalJitter
 
@@ -344,15 +344,15 @@
 
 #### Parameters
 
-| Name    | Type     | Description          |
-| :------ | :------- | :------------------- |
-| `value` | `number` | 新相机垂直抖动最小值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新相机垂直抖动最小值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### minVerticalOffset
 
@@ -388,9 +388,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description    |
-| :------ | :------- | :------------- |
-| `value` | `number` | 垂直偏移最小值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  垂直偏移最小值 |
 
 #### Returns
 
@@ -416,7 +416,7 @@
 
 深度抖动值
 
----
+___
 
 ### getHorizontalJitter
 
@@ -436,7 +436,7 @@
 
 水平抖动值
 
----
+___
 
 ### getHorizontalOffset
 
@@ -456,7 +456,7 @@
 
 水平偏移值
 
----
+___
 
 ### getVerticalJitter
 
@@ -476,7 +476,7 @@
 
 垂直抖动值
 
----
+___
 
 ### getVerticalOffset
 

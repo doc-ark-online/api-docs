@@ -4,9 +4,9 @@
 
 ## Table of contents
 
-| Functions                                                                                                                                |
-| :--------------------------------------------------------------------------------------------------------------------------------------- |
-| **[getViewportSize](Util.Util.WindowUtil.md#getviewportsize)**(): [`Vector2`](../classes/Type.Type.Vector2.md) <br> 获取当前游戏窗口尺寸 |
+| Functions |
+| :-----|
+| **[getViewportSize](Util.Util.WindowUtil.md#getviewportsize)**(): [`Vector2`](../classes/Type.Type.Vector2.md) <br> 获取当前游戏窗口尺寸|
 
 ## Functions
 

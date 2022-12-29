@@ -12,9 +12,9 @@
 
 ## Type parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
-| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implemented by
 
@@ -22,11 +22,11 @@
 
 ## Table of contents
 
-| Methods                                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------- |
-| **[add](Type.Type.MulticastDelegateInterface.md#add)**(`T`): `void` <br> 绑定代理函数                                |
-| **[broadcast](Type.Type.MulticastDelegateInterface.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数 |
-| **[remove](Type.Type.MulticastDelegateInterface.md#remove)**(`T`): `void` <br> 删除代理函数                          |
+| Methods |
+| :-----|
+| **[add](Type.Type.MulticastDelegateInterface.md#add)**(`T`): `void` <br> 绑定代理函数|
+| **[broadcast](Type.Type.MulticastDelegateInterface.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数|
+| **[remove](Type.Type.MulticastDelegateInterface.md#remove)**(`T`): `void` <br> 删除代理函数|
 
 ## Methods
 
@@ -44,15 +44,15 @@
 
 #### Parameters
 
-| Name   | Type | Description        |
-| :----- | :--- | :----------------- |
-| `func` | `T`  | 绑定的函数 default |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `T` |  绑定的函数 default |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### broadcast
 
@@ -68,15 +68,15 @@
 
 #### Parameters
 
-| Name     | Type               | Description |
-| :------- | :----------------- | :---------- |
-| `...arg` | `Parameters`<`T`\> | 参数        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...arg` | `Parameters`<`T`\> |  参数 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### remove
 
@@ -92,9 +92,9 @@
 
 #### Parameters
 
-| Name   | Type | Description            |
-| :----- | :--- | :--------------------- |
-| `func` | `T`  | 删除绑定的函数 default |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `T` |  删除绑定的函数 default |
 
 #### Returns
 

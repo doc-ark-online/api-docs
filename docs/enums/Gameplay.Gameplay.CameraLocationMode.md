@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                                  |
-| :--------------------------------------------------------------------------------------------------- |
-| **[LocationFixed](Gameplay.Gameplay.CameraLocationMode.md#locationfixed)** = `0` <br> 位置固定       |
-| **[LocationFollow](Gameplay.Gameplay.CameraLocationMode.md#locationfollow)** = `1` <br> 位置跟随目标 |
+| Enumeration Members |
+| :-----|
+| **[LocationFixed](Gameplay.Gameplay.CameraLocationMode.md#locationfixed)** = ``0`` <br> 位置固定|
+| **[LocationFollow](Gameplay.Gameplay.CameraLocationMode.md#locationfollow)** = ``1`` <br> 位置跟随目标|
 
 ## Enumeration Members
 
 ### LocationFixed
 
-• **LocationFixed** = `0`
+• **LocationFixed** = ``0``
 
 位置固定
 
----
+___
 
 ### LocationFollow
 
-• **LocationFollow** = `1`
+• **LocationFollow** = ``1``
 
 位置跟随目标

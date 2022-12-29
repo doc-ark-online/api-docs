@@ -8,15 +8,15 @@ UI 拖拽事件
 
 ## Table of contents
 
-| Methods                                                                                                                                                |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- |
-| **[equal](UI.UI.DragDropOperation.md#equal)**([`DragDropOperation`](UI.UI.DragDropOperation.md)): `boolean` <br> 判断是否相同                          |
-| **[getDragPivot](UI.UI.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/UI.UI.DragPivot.md) <br> 获取拖拽锚点                            |
-| **[getDragVisualWidget](UI.UI.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](UI.UI.Widget.md) <br> 获取拖拽显示的 UI                        |
-| **[getOffset](UI.UI.DragDropOperation.md#getoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取拖拽 UI 的百分比偏移                               |
-| **[getTag](UI.UI.DragDropOperation.md#gettag)**(): `string` <br> 获取 Tag 标签                                                                         |
-| **[tryGetDragDropPayLoad](UI.UI.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md) <br> 获取传递的数据信息 |
-| **[tryGetDragDropPayLoadAs](UI.UI.DragDropOperation.md#trygetdragdroppayloadas)**<extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\>          | \>(): extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> | <br> 获取传递的数据信息 |
+| Methods |
+| :-----|
+| **[equal](UI.UI.DragDropOperation.md#equal)**([`DragDropOperation`](UI.UI.DragDropOperation.md)): `boolean` <br> 判断是否相同|
+| **[getDragPivot](UI.UI.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/UI.UI.DragPivot.md) <br> 获取拖拽锚点|
+| **[getDragVisualWidget](UI.UI.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](UI.UI.Widget.md) <br> 获取拖拽显示的UI|
+| **[getOffset](UI.UI.DragDropOperation.md#getoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 获取拖拽UI的百分比偏移|
+| **[getTag](UI.UI.DragDropOperation.md#gettag)**(): `string` <br> 获取Tag 标签|
+| **[tryGetDragDropPayLoad](UI.UI.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md) <br> 获取传递的数据信息|
+| **[tryGetDragDropPayLoadAs](UI.UI.DragDropOperation.md#trygetdragdroppayloadas)**<extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> |\>(): extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> | <br> 获取传递的数据信息|
 
 • `Private` **new DragDropOperation**()
 
@@ -36,9 +36,9 @@ UI 拖拽事件
 
 #### Parameters
 
-| Name    | Type                                              | Description        |
-| :------ | :------------------------------------------------ | :----------------- |
-| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | 另一个 UI 拖拽事件 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `other` | [`DragDropOperation`](UI.UI.DragDropOperation.md) | 另一个UI拖拽事件 |
 
 #### Returns
 
@@ -46,7 +46,7 @@ UI 拖拽事件
 
 boolean
 
----
+___
 
 ### getDragPivot
 
@@ -66,7 +66,7 @@ boolean
 
 拖拽锚点
 
----
+___
 
 ### getDragVisualWidget
 
@@ -74,7 +74,7 @@ boolean
 
 **`Description`**
 
-获取拖拽显示的 UI
+获取拖拽显示的UI
 
 **`Effect`**
 
@@ -84,9 +84,9 @@ boolean
 
 [`Widget`](UI.UI.Widget.md)
 
-拖拽显示的 UI
+拖拽显示的UI
 
----
+___
 
 ### getOffset
 
@@ -94,7 +94,7 @@ boolean
 
 **`Description`**
 
-获取拖拽 UI 的百分比偏移
+获取拖拽UI的百分比偏移
 
 **`Effect`**
 
@@ -106,7 +106,7 @@ boolean
 
 百分比偏移
 
----
+___
 
 ### getTag
 
@@ -114,7 +114,7 @@ boolean
 
 **`Description`**
 
-获取 Tag 标签
+获取Tag 标签
 
 **`Effect`**
 
@@ -124,9 +124,9 @@ boolean
 
 `string`
 
-返回 tag
+返回tag
 
----
+___
 
 ### tryGetDragDropPayLoad
 
@@ -146,7 +146,7 @@ boolean
 
 数据信息
 
----
+___
 
 ### tryGetDragDropPayLoadAs
 
@@ -162,9 +162,9 @@ boolean
 
 #### Type parameters
 
-| Name | Type                                                        |
-| :--- | :---------------------------------------------------------- |
-| `T`  | extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`DragDropPayLoad`](UI.UI.DragDropPayLoad.md)<`T`\> |
 
 #### Returns
 

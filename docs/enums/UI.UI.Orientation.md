@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                           |
-| :---------------------------------------------------------------------------- |
-| **[OrientHorizontal](UI.UI.Orientation.md#orienthorizontal)** = `0` <br> 水平 |
-| **[OrientVertical](UI.UI.Orientation.md#orientvertical)** = `1` <br> 垂直     |
+| Enumeration Members |
+| :-----|
+| **[OrientHorizontal](UI.UI.Orientation.md#orienthorizontal)** = ``0`` <br> 水平|
+| **[OrientVertical](UI.UI.Orientation.md#orientvertical)** = ``1`` <br> 垂直|
 
 ## Enumeration Members
 
 ### OrientHorizontal
 
-• **OrientHorizontal** = `0`
+• **OrientHorizontal** = ``0``
 
 水平
 
----
+___
 
 ### OrientVertical
 
-• **OrientVertical** = `1`
+• **OrientVertical** = ``1``
 
 垂直

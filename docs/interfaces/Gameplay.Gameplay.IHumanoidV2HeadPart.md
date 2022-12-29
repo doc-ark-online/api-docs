@@ -4,7 +4,7 @@
 
 **`Description`**
 
-人形对象 V2 部位
+人形对象V2部位
 
 ## Hierarchy
 
@@ -18,73 +18,73 @@
 
 ## Table of contents
 
-| Methods                                                                                                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[characterFaceShadow](Gameplay.Gameplay.IHumanoidV2HeadPart.md#characterfaceshadow)**([`Rotation`](../classes/Type.Type.Rotation.md), `number`): `void` <br> 设置模型                            |
-| **[getBlushColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getblushcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取腮红颜色                                              |
-| **[getBlushTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getblushtexture)**(): `string` <br> 获取腮红贴图                                                                                      |
-| **[getBrowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getbrowcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眉毛颜色                                                |
-| **[getBrowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getbrowtexture)**(): `string` <br> 获取眉毛                                                                                            |
-| **[getEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼睛高光颜色                            |
-| **[getEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlighttexture)**(): `string` <br> 获取眼睛高光形状                                                                    |
-| **[getEyeShadowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyeshadowcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼影颜色                                      |
-| **[getEyeShadowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyeshadowtexture)**(): `string` <br> 获取眼影贴图                                                                              |
-| **[getEyeTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyetexture)**(): `string` <br> 获取眼睛贴图                                                                                          |
-| **[getEyelashColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取睫毛颜色                                          |
-| **[getEyelashTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashtexture)**(): `string` <br> 获取睫毛                                                                                      |
-| **[getFacialTattooColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoocolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取面部纹身颜色                    |
-| **[getFacialTattooPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoopositionx)**(`number`): `number` <br> 获取面部纹身左右位置                                                    |
-| **[getFacialTattooPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoopositiony)**(`number`): `number` <br> 获取面部纹身上下位置                                                    |
-| **[getFacialTattooRotation](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoorotation)**(`number`): `number` <br> 获取面部纹身旋转                                                          |
-| **[getFacialTattooType](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattootype)**(`number`): `string` <br> 获取面部纹身种类贴图                                                              |
-| **[getFacialTattooZoom](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoozoom)**(`number`): `number` <br> 获取面部纹身缩放                                                                  |
-| **[getLeftEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlefteyecolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取左眼睛颜色                                        |
-| **[getLipstickColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlipstickcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取唇膏颜色                                        |
-| **[getLipstickTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlipsticktexture)**(): `string` <br> 获取唇膏贴图                                                                                |
-| **[getLowerEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取上高光颜色                    |
-| **[getLowerEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlighttexture)**(): `string` <br> 获取下高光种类                                                            |
-| **[getMesh](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getmesh)**(): `string` <br> 获取部位模型                                                                                                      |
-| **[getPupilColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼睛瞳孔花纹颜色                                      |
-| **[getPupilPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilpositionx)**(): `number` <br> 获取瞳孔左右位置                                                                              |
-| **[getPupilPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilpositiony)**(): `number` <br> 获取瞳孔上下位置                                                                              |
-| **[getPupilRotate](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilrotate)**(): `number` <br> 获取瞳孔旋转                                                                                        |
-| **[getPupilScale](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilscale)**(): `number` <br> 获取瞳孔大小缩放                                                                                      |
-| **[getPupilTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupiltexture)**(): `string` <br> 获取眼睛瞳孔花纹                                                                                  |
-| **[getRightEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getrighteyecolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取右眼睛颜色                                      |
-| **[getUpperEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取上高光颜色                    |
-| **[getUpperEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlighttexture)**(): `string` <br> 获取上高光种类                                                            |
-| **[setBlushColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setblushcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置腮红颜色                             |
-| **[setBlushTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setblushtexture)**(`string`, `boolean`): `void` <br> 设置腮红贴图                                                                     |
-| **[setBrowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setbrowcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眉毛颜色                               |
-| **[setBrowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setbrowtexture)**(`string`, `boolean`): `void` <br> 设置眉毛                                                                           |
-| **[setEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛高光颜色           |
-| **[setEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置眼睛高光形状                                                   |
-| **[setEyeShadowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyeshadowcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼影颜色                     |
-| **[setEyeShadowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyeshadowtexture)**(`string`, `boolean`): `void` <br> 设置眼影贴图                                                             |
-| **[setEyeTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyetexture)**(`string`, `boolean`): `void` <br> 设置眼睛贴图                                                                         |
-| **[setEyelashColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置睫毛颜色                         |
-| **[setEyelashTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashtexture)**(`string`, `boolean`): `void` <br> 设置睫毛                                                                     |
-| **[setFacialTattooColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoocolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置面部纹身颜色 |
-| **[setFacialTattooPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身左右位置                                 |
-| **[setFacialTattooPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoopositiony)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身上下位置                                 |
-| **[setFacialTattooRotation](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoorotation)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身旋转                                       |
-| **[setFacialTattooType](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattootype)**(`number`, `string`, `boolean`): `void` <br> 设置面部纹身种类贴图                                           |
-| **[setFacialTattooZoom](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoozoom)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身缩放                                               |
-| **[setLeftEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlefteyecolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置左眼睛颜色                       |
-| **[setLipstickColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlipstickcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置唇膏颜色                       |
-| **[setLipstickTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlipsticktexture)**(`string`, `boolean`): `void` <br> 设置唇膏贴图                                                               |
-| **[setLowerEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置下高光颜色   |
-| **[setLowerEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置下高光种类                                           |
-| **[setMesh](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型                                                                                     |
-| **[setPupilColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛瞳孔花纹颜色                     |
-| **[setPupilPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilpositionx)**(`number`, `boolean`): `void` <br> 设置瞳孔左右位置                                                             |
-| **[setPupilPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilpositiony)**(`number`, `boolean`): `void` <br> 设置瞳孔上下位置                                                             |
-| **[setPupilRotate](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilrotate)**(`number`, `boolean`): `void` <br> 设置瞳孔旋转                                                                       |
-| **[setPupilScale](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilscale)**(`number`, `boolean`): `void` <br> 设置瞳孔大小缩放                                                                     |
-| **[setPupilTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupiltexture)**(`string`, `boolean`): `void` <br> 设置眼睛瞳孔花纹                                                                 |
-| **[setRightEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setrighteyecolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置右眼睛颜色                     |
-| **[setUpperEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置上高光颜色   |
-| **[setUpperEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置上高光种类                                           |
+| Methods |
+| :-----|
+| **[characterFaceShadow](Gameplay.Gameplay.IHumanoidV2HeadPart.md#characterfaceshadow)**([`Rotation`](../classes/Type.Type.Rotation.md), `number`): `void` <br> 设置模型|
+| **[getBlushColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getblushcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取腮红颜色|
+| **[getBlushTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getblushtexture)**(): `string` <br> 获取腮红贴图|
+| **[getBrowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getbrowcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眉毛颜色|
+| **[getBrowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getbrowtexture)**(): `string` <br> 获取眉毛|
+| **[getEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼睛高光颜色|
+| **[getEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyehighlighttexture)**(): `string` <br> 获取眼睛高光形状|
+| **[getEyeShadowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyeshadowcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼影颜色|
+| **[getEyeShadowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyeshadowtexture)**(): `string` <br> 获取眼影贴图|
+| **[getEyeTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyetexture)**(): `string` <br> 获取眼睛贴图|
+| **[getEyelashColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取睫毛颜色|
+| **[getEyelashTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#geteyelashtexture)**(): `string` <br> 获取睫毛|
+| **[getFacialTattooColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoocolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取面部纹身颜色|
+| **[getFacialTattooPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoopositionx)**(`number`): `number` <br> 获取面部纹身左右位置|
+| **[getFacialTattooPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoopositiony)**(`number`): `number` <br> 获取面部纹身上下位置|
+| **[getFacialTattooRotation](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoorotation)**(`number`): `number` <br> 获取面部纹身旋转|
+| **[getFacialTattooType](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattootype)**(`number`): `string` <br> 获取面部纹身种类贴图|
+| **[getFacialTattooZoom](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getfacialtattoozoom)**(`number`): `number` <br> 获取面部纹身缩放|
+| **[getLeftEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlefteyecolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取左眼睛颜色|
+| **[getLipstickColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlipstickcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取唇膏颜色|
+| **[getLipstickTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlipsticktexture)**(): `string` <br> 获取唇膏贴图|
+| **[getLowerEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取上高光颜色|
+| **[getLowerEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getlowereyehighlighttexture)**(): `string` <br> 获取下高光种类|
+| **[getMesh](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getmesh)**(): `string` <br> 获取部位模型|
+| **[getPupilColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取眼睛瞳孔花纹颜色|
+| **[getPupilPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilpositionx)**(): `number` <br> 获取瞳孔左右位置|
+| **[getPupilPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilpositiony)**(): `number` <br> 获取瞳孔上下位置|
+| **[getPupilRotate](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilrotate)**(): `number` <br> 获取瞳孔旋转|
+| **[getPupilScale](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupilscale)**(): `number` <br> 获取瞳孔大小缩放|
+| **[getPupilTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getpupiltexture)**(): `string` <br> 获取眼睛瞳孔花纹|
+| **[getRightEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getrighteyecolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取右眼睛颜色|
+| **[getUpperEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlightcolor)**(): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取上高光颜色|
+| **[getUpperEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#getuppereyehighlighttexture)**(): `string` <br> 获取上高光种类|
+| **[setBlushColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setblushcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置腮红颜色|
+| **[setBlushTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setblushtexture)**(`string`, `boolean`): `void` <br> 设置腮红贴图|
+| **[setBrowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setbrowcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眉毛颜色|
+| **[setBrowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setbrowtexture)**(`string`, `boolean`): `void` <br> 设置眉毛|
+| **[setEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛高光颜色|
+| **[setEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置眼睛高光形状|
+| **[setEyeShadowColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyeshadowcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼影颜色|
+| **[setEyeShadowTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyeshadowtexture)**(`string`, `boolean`): `void` <br> 设置眼影贴图|
+| **[setEyeTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyetexture)**(`string`, `boolean`): `void` <br> 设置眼睛贴图|
+| **[setEyelashColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置睫毛颜色|
+| **[setEyelashTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#seteyelashtexture)**(`string`, `boolean`): `void` <br> 设置睫毛|
+| **[setFacialTattooColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoocolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置面部纹身颜色|
+| **[setFacialTattooPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身左右位置|
+| **[setFacialTattooPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoopositiony)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身上下位置|
+| **[setFacialTattooRotation](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoorotation)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身旋转|
+| **[setFacialTattooType](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattootype)**(`number`, `string`, `boolean`): `void` <br> 设置面部纹身种类贴图|
+| **[setFacialTattooZoom](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setfacialtattoozoom)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身缩放|
+| **[setLeftEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlefteyecolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置左眼睛颜色|
+| **[setLipstickColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlipstickcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置唇膏颜色|
+| **[setLipstickTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlipsticktexture)**(`string`, `boolean`): `void` <br> 设置唇膏贴图|
+| **[setLowerEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置下高光颜色|
+| **[setLowerEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setlowereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置下高光种类|
+| **[setMesh](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型|
+| **[setPupilColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛瞳孔花纹颜色|
+| **[setPupilPositionX](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilpositionx)**(`number`, `boolean`): `void` <br> 设置瞳孔左右位置|
+| **[setPupilPositionY](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilpositiony)**(`number`, `boolean`): `void` <br> 设置瞳孔上下位置|
+| **[setPupilRotate](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilrotate)**(`number`, `boolean`): `void` <br> 设置瞳孔旋转|
+| **[setPupilScale](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupilscale)**(`number`, `boolean`): `void` <br> 设置瞳孔大小缩放|
+| **[setPupilTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setpupiltexture)**(`string`, `boolean`): `void` <br> 设置眼睛瞳孔花纹|
+| **[setRightEyeColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setrighteyecolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置右眼睛颜色|
+| **[setUpperEyeHighlightColor](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlightcolor)**([`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置上高光颜色|
+| **[setUpperEyeHighlightTexture](Gameplay.Gameplay.IHumanoidV2HeadPart.md#setuppereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置上高光种类|
 
 ## Methods
 
@@ -102,16 +102,16 @@
 
 #### Parameters
 
-| Name                 | Type                                           | Description                   |
-| :------------------- | :--------------------------------------------- | :---------------------------- |
-| `directLightRotator` | [`Rotation`](../classes/Type.Type.Rotation.md) | 平行光方向                    |
-| `traceDistance`      | `number`                                       | 检测距离 default:默认检测距离 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `directLightRotator` | [`Rotation`](../classes/Type.Type.Rotation.md) | 平行光方向 |
+| `traceDistance` | `number` | 检测距离 default:默认检测距离 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getBlushColor
 
@@ -131,7 +131,7 @@
 
 颜色
 
----
+___
 
 ### getBlushTexture
 
@@ -151,7 +151,7 @@
 
 guid
 
----
+___
 
 ### getBrowColor
 
@@ -171,7 +171,7 @@ guid
 
 颜色
 
----
+___
 
 ### getBrowTexture
 
@@ -191,7 +191,7 @@ guid
 
 guid
 
----
+___
 
 ### getEyeHighlightColor
 
@@ -211,7 +211,7 @@ guid
 
 颜色
 
----
+___
 
 ### getEyeHighlightTexture
 
@@ -232,7 +232,7 @@ sync = true:双端
 
 guid
 
----
+___
 
 ### getEyeShadowColor
 
@@ -252,7 +252,7 @@ guid
 
 颜色
 
----
+___
 
 ### getEyeShadowTexture
 
@@ -272,7 +272,7 @@ guid
 
 guid
 
----
+___
 
 ### getEyeTexture
 
@@ -292,7 +292,7 @@ guid
 
 guid
 
----
+___
 
 ### getEyelashColor
 
@@ -312,7 +312,7 @@ guid
 
 颜色
 
----
+___
 
 ### getEyelashTexture
 
@@ -332,7 +332,7 @@ guid
 
 guid
 
----
+___
 
 ### getFacialTattooColor
 
@@ -348,9 +348,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -358,7 +358,7 @@ guid
 
 颜色
 
----
+___
 
 ### getFacialTattooPositionX
 
@@ -374,9 +374,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -384,7 +384,7 @@ guid
 
 值
 
----
+___
 
 ### getFacialTattooPositionY
 
@@ -400,9 +400,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -410,7 +410,7 @@ guid
 
 值
 
----
+___
 
 ### getFacialTattooRotation
 
@@ -426,9 +426,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -436,7 +436,7 @@ guid
 
 值
 
----
+___
 
 ### getFacialTattooType
 
@@ -452,9 +452,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -462,7 +462,7 @@ guid
 
 guid
 
----
+___
 
 ### getFacialTattooZoom
 
@@ -478,9 +478,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 纹身索引    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
 
 #### Returns
 
@@ -488,7 +488,7 @@ guid
 
 值
 
----
+___
 
 ### getLeftEyeColor
 
@@ -508,7 +508,7 @@ guid
 
 颜色
 
----
+___
 
 ### getLipstickColor
 
@@ -528,7 +528,7 @@ guid
 
 颜色
 
----
+___
 
 ### getLipstickTexture
 
@@ -548,7 +548,7 @@ guid
 
 guid
 
----
+___
 
 ### getLowerEyeHighlightColor
 
@@ -568,7 +568,7 @@ guid
 
 颜色
 
----
+___
 
 ### getLowerEyeHighlightTexture
 
@@ -586,9 +586,9 @@ guid
 
 `string`
 
-下高光 guid
+下高光guid
 
----
+___
 
 ### getMesh
 
@@ -606,9 +606,9 @@ guid
 
 `string`
 
-模型 Guid
+模型Guid
 
----
+___
 
 ### getPupilColor
 
@@ -628,7 +628,7 @@ guid
 
 颜色
 
----
+___
 
 ### getPupilPositionX
 
@@ -648,7 +648,7 @@ guid
 
 左右位置值
 
----
+___
 
 ### getPupilPositionY
 
@@ -668,7 +668,7 @@ guid
 
 上下位置值
 
----
+___
 
 ### getPupilRotate
 
@@ -688,7 +688,7 @@ guid
 
 瞳孔旋转值
 
----
+___
 
 ### getPupilScale
 
@@ -708,7 +708,7 @@ guid
 
 大小缩放值
 
----
+___
 
 ### getPupilTexture
 
@@ -728,7 +728,7 @@ guid
 
 guid
 
----
+___
 
 ### getRightEyeColor
 
@@ -748,7 +748,7 @@ guid
 
 颜色
 
----
+___
 
 ### getUpperEyeHighlightColor
 
@@ -768,7 +768,7 @@ guid
 
 颜色
 
----
+___
 
 ### getUpperEyeHighlightTexture
 
@@ -788,7 +788,7 @@ guid
 
 guid
 
----
+___
 
 ### setBlushColor
 
@@ -805,16 +805,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setBlushTexture
 
@@ -831,16 +831,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setBrowColor
 
@@ -857,16 +857,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setBrowTexture
 
@@ -883,16 +883,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyeHighlightColor
 
@@ -909,16 +909,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyeHighlightTexture
 
@@ -935,16 +935,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyeShadowColor
 
@@ -961,16 +961,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyeShadowTexture
 
@@ -987,16 +987,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyeTexture
 
@@ -1013,16 +1013,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyelashColor
 
@@ -1039,16 +1039,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setEyelashTexture
 
@@ -1065,16 +1065,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooColor
 
@@ -1091,17 +1091,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `index` | `number`                                             | 纹身索引                |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooPositionX
 
@@ -1118,17 +1118,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 纹身索引                |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooPositionY
 
@@ -1145,17 +1145,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 纹身索引                |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooRotation
 
@@ -1172,17 +1172,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 纹身索引                |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooType
 
@@ -1199,17 +1199,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 纹身索引                |
-| `guid`  | `string`  | 贴图 Guid               |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `guid` | `string` | 贴图Guid |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setFacialTattooZoom
 
@@ -1226,17 +1226,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 纹身索引                |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLeftEyeColor
 
@@ -1253,16 +1253,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLipstickColor
 
@@ -1279,16 +1279,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLipstickTexture
 
@@ -1305,16 +1305,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLowerEyeHighlightColor
 
@@ -1331,16 +1331,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 值                      |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLowerEyeHighlightTexture
 
@@ -1357,16 +1357,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 值                      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setMesh
 
@@ -1378,7 +1378,7 @@ sync = true:双端
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -1387,16 +1387,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilColor
 
@@ -1413,16 +1413,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilPositionX
 
@@ -1439,16 +1439,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilPositionY
 
@@ -1465,16 +1465,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilRotate
 
@@ -1491,16 +1491,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilScale
 
@@ -1517,16 +1517,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `value` | `number`  | 值                      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPupilTexture
 
@@ -1543,16 +1543,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 贴图 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 贴图Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRightEyeColor
 
@@ -1569,16 +1569,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUpperEyeHighlightColor
 
@@ -1595,16 +1595,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 值                      |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setUpperEyeHighlightTexture
 
@@ -1621,9 +1621,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | guid 值                 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | guid值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns

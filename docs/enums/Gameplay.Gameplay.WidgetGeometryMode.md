@@ -4,27 +4,27 @@
 
 **`Description`**
 
-UI 形状枚举
+UI形状枚举
 
 ## Table of contents
 
-| Enumeration Members                                                              |
-| :------------------------------------------------------------------------------- |
-| **[Cylinder](Gameplay.Gameplay.WidgetGeometryMode.md#cylinder)** = `1` <br> 圆柱 |
-| **[Plane](Gameplay.Gameplay.WidgetGeometryMode.md#plane)** = `0` <br> 平面       |
+| Enumeration Members |
+| :-----|
+| **[Cylinder](Gameplay.Gameplay.WidgetGeometryMode.md#cylinder)** = ``1`` <br> 圆柱|
+| **[Plane](Gameplay.Gameplay.WidgetGeometryMode.md#plane)** = ``0`` <br> 平面|
 
 ## Enumeration Members
 
 ### Cylinder
 
-• **Cylinder** = `1`
+• **Cylinder** = ``1``
 
 圆柱
 
----
+___
 
 ### Plane
 
-• **Plane** = `0`
+• **Plane** = ``0``
 
 平面

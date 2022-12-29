@@ -4,14 +4,14 @@
 
 **`Description`**
 
-UI 颜色管理
+UI颜色管理
 
 ## Table of contents
 
-| Properties                                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------- |
-| **[colorUseRule](UI.UI.SlateColor.md#coloruserule)**: [`SlateColorStylingMode`](../enums/UI.UI.SlateColorStylingMode.md) <br> 颜色规则 |
-| **[specifiedColor](UI.UI.SlateColor.md#specifiedcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色                          |
+| Properties |
+| :-----|
+| **[colorUseRule](UI.UI.SlateColor.md#coloruserule)**: [`SlateColorStylingMode`](../enums/UI.UI.SlateColorStylingMode.md) <br> 颜色规则|
+| **[specifiedColor](UI.UI.SlateColor.md#specifiedcolor)**: [`LinearColor`](Type.Type.LinearColor.md) <br> 颜色|
 
 **`Description`**
 
@@ -23,9 +23,9 @@ UI 颜色管理
 
 #### Parameters
 
-| Name      | Type                                      | Description |
-| :-------- | :---------------------------------------- | :---------- |
-| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InColor` | [`LinearColor`](Type.Type.LinearColor.md) | 颜色 |
 
 ## Properties
 
@@ -37,7 +37,7 @@ UI 颜色管理
 
 颜色规则
 
----
+___
 
 ### specifiedColor
 

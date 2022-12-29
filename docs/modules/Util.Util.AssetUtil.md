@@ -4,12 +4,12 @@
 
 ## Table of contents
 
-| Functions                                                                                                          |
-| :----------------------------------------------------------------------------------------------------------------- |
-| **[asyncDownloadAsset](Util.Util.AssetUtil.md#asyncdownloadasset)**(`string`): `Promise`<`boolean`\> <br> 资源下载 |
-| **[isAssetExist](Util.Util.AssetUtil.md#isassetexist)**(`string`): `boolean` <br> 资源是否存在                     |
-| **[isAssetLoaded](Util.Util.AssetUtil.md#isassetloaded)**(`string`): `boolean` <br> 资源是否加载                   |
-| **[loadAsset](Util.Util.AssetUtil.md#loadasset)**(`string`): `boolean` <br> 资源加载                               |
+| Functions |
+| :-----|
+| **[asyncDownloadAsset](Util.Util.AssetUtil.md#asyncdownloadasset)**(`string`): `Promise`<`boolean`\> <br> 资源下载|
+| **[isAssetExist](Util.Util.AssetUtil.md#isassetexist)**(`string`): `boolean` <br> 资源是否存在|
+| **[isAssetLoaded](Util.Util.AssetUtil.md#isassetloaded)**(`string`): `boolean` <br> 资源是否加载|
+| **[loadAsset](Util.Util.AssetUtil.md#loadasset)**(`string`): `boolean` <br> 资源加载|
 
 ## Functions
 
@@ -27,17 +27,17 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InAssetId` | `string` | 资源 Guid   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源Guid |
 
 #### Returns
 
 `Promise`<`boolean`\>
 
-下载失败将返回 false
+下载失败将返回false
 
----
+___
 
 ### isAssetExist
 
@@ -53,17 +53,17 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InAssetId` | `string` | 资源 Guid   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源Guid |
 
 #### Returns
 
 `boolean`
 
-不存在将返回 false
+不存在将返回false
 
----
+___
 
 ### isAssetLoaded
 
@@ -79,17 +79,17 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InAssetId` | `string` | 资源 Guid   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源Guid |
 
 #### Returns
 
 `boolean`
 
-未加载将返回 false
+未加载将返回false
 
----
+___
 
 ### loadAsset
 
@@ -105,12 +105,12 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `InAssetId` | `string` | 资源 Guid   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源Guid |
 
 #### Returns
 
 `boolean`
 
-未加载成功将返回 false
+未加载成功将返回false

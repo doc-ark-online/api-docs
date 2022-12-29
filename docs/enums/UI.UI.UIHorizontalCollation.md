@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                   |
-| :------------------------------------------------------------------------------------ |
-| **[LeftToRight](UI.UI.UIHorizontalCollation.md#lefttoright)** = `0` <br> 从左到右排序 |
-| **[RightToLeft](UI.UI.UIHorizontalCollation.md#righttoleft)** = `1` <br> 从右到左排序 |
+| Enumeration Members |
+| :-----|
+| **[LeftToRight](UI.UI.UIHorizontalCollation.md#lefttoright)** = ``0`` <br> 从左到右排序|
+| **[RightToLeft](UI.UI.UIHorizontalCollation.md#righttoleft)** = ``1`` <br> 从右到左排序|
 
 ## Enumeration Members
 
 ### LeftToRight
 
-• **LeftToRight** = `0`
+• **LeftToRight** = ``0``
 
 从左到右排序
 
----
+___
 
 ### RightToLeft
 
-• **RightToLeft** = `1`
+• **RightToLeft** = ``1``
 
 从右到左排序

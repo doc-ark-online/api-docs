@@ -8,22 +8,22 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-UI 插槽
+UI插槽
 
 ## Table of contents
 
-| Accessors                                                                                                                                                                                 |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[autoSizeEnable](UI.UI.UISlot.md#autosizeenable)**(): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                       |
-| **[constraints](UI.UI.UISlot.md#constraints)**(): [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
-| **[position](UI.UI.UISlot.md#position)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                           |
-| **[size](UI.UI.UISlot.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                   |
-| **[transform](UI.UI.UISlot.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息        |
-| **[zOrder](UI.UI.UISlot.md#zorder)**(): `number` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息                                                        |
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.UI.UISlot.md#autosizeenable)**(): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[constraints](UI.UI.UISlot.md#constraints)**(): [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[position](UI.UI.UISlot.md#position)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[size](UI.UI.UISlot.md#size)**(): [`Vector2`](Type.Type.Vector2.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[transform](UI.UI.UISlot.md#transform)**(): `Readonly`<[`UITransform`](UI.UI.UITransform.md)\> <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[zOrder](UI.UI.UISlot.md#zorder)**(): `number` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 
-| Methods                                                                                                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[equal](UI.UI.UISlot.md#equal)**([`UISlot`](UI.UI.UISlot.md)): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息 |
+| Methods |
+| :-----|
+| **[equal](UI.UI.UISlot.md#equal)**([`UISlot`](UI.UI.UISlot.md)): `boolean` <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 
 ## Accessors
 
@@ -65,15 +65,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name       | Type      | Description      |
-| :--------- | :-------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `autoSize` | `boolean` | 是否自动设置大小 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### constraints
 
@@ -85,7 +85,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-获取 Slot 布局(Figma 布局)
+获取Slot布局(Figma布局)
 
 **`Effect`**
 
@@ -95,7 +95,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md)
 
-Slot 布局
+Slot布局
 
 • `set` **constraints**(`ininconstraints`): `void`
 
@@ -105,7 +105,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-设置 Slot 布局(figma 布局)
+设置Slot布局(figma布局)
 
 **`Effect`**
 
@@ -113,15 +113,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name              | Type                                                  |
-| :---------------- | :---------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ininconstraints` | [`UIConstraintAnchors`](UI.UI.UIConstraintAnchors.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### position
 
@@ -153,7 +153,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-设置 Slot 位置
+设置Slot位置
 
 **`Effect`**
 
@@ -161,15 +161,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name              | Type                              | Description |
-| :---------------- | :-------------------------------- | :---------- |
-| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | Slot 位置   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inFigmaPosition` | [`Vector2`](Type.Type.Vector2.md) | Slot位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### size
 
@@ -209,15 +209,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name     | Type                              | Description |
-| :------- | :-------------------------------- | :---------- |
-| `inSize` | [`Vector2`](Type.Type.Vector2.md) | size        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inSize` | [`Vector2`](Type.Type.Vector2.md) | size |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### transform
 
@@ -229,7 +229,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-得到 Slot 大小和位置
+得到Slot大小和位置
 
 **`Effect`**
 
@@ -239,7 +239,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 `Readonly`<[`UITransform`](UI.UI.UITransform.md)\>
 
-Slot 大小和位置
+Slot大小和位置
 
 • `set` **transform**(`inTransform`): `void`
 
@@ -249,7 +249,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-设置 Slot 大小和位置
+设置Slot大小和位置
 
 **`Effect`**
 
@@ -257,15 +257,15 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name          | Type                                  | Description |
-| :------------ | :------------------------------------ | :---------- |
-| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inTransform` | [`UITransform`](UI.UI.UITransform.md) | 大小位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### zOrder
 
@@ -277,7 +277,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-获取 zOrder
+获取zOrder
 
 **`Effect`**
 
@@ -297,7 +297,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-设置 zOrder
+设置zOrder
 
 **`Effect`**
 
@@ -305,8 +305,8 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name       | Type     | Description    |
-| :--------- | :------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `InZOrder` | `number` | 值越大在越上层 |
 
 #### Returns
@@ -325,7 +325,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-判断是不是同一个 Slot
+判断是不是同一个Slot
 
 **`Effect`**
 
@@ -333,9 +333,9 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 #### Parameters
 
-| Name   | Type                        | Description             |
-| :----- | :-------------------------- | :---------------------- |
-| `that` | [`UISlot`](UI.UI.UISlot.md) | 需要比较的另外一个 Slot |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `that` | [`UISlot`](UI.UI.UISlot.md) | 需要比较的另外一个Slot |
 
 #### Returns
 

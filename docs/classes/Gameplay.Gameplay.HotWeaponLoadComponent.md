@@ -8,22 +8,22 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                     |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[onEndLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端上膛结束时执行绑定函数     |
-| **[onEndLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数     |
-| **[onStartLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始上膛时执行绑定函数 |
-| **[onStartLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数 |
+| Properties |
+| :-----|
+| **[onEndLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端上膛结束时执行绑定函数|
+| **[onEndLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数|
+| **[onStartLoadClient](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始上膛时执行绑定函数|
+| **[onStartLoadServer](Gameplay.Gameplay.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数|
 
-| Accessors                                                                                                                                     |
-| :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[animationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画 GUID                           |
-| **[loadAfterFireEnable](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadafterfireenable)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能 |
-| **[loadDuration](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间                                    |
+| Accessors |
+| :-----|
+| **[animationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画GUID|
+| **[loadAfterFireEnable](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadafterfireenable)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能|
+| **[loadDuration](Gameplay.Gameplay.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间|
 
-| Methods                                                                                                                |
-| :--------------------------------------------------------------------------------------------------------------------- |
-| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画 GUID |
+| Methods |
+| :-----|
+| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponLoadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
 
 ## Properties
 
@@ -35,7 +35,7 @@
 
 客户端上膛结束时执行绑定函数
 
----
+___
 
 ### onEndLoadServer
 
@@ -45,7 +45,7 @@
 
 服务器上膛结束时执行绑定函数
 
----
+___
 
 ### onStartLoadClient
 
@@ -55,7 +55,7 @@
 
 客户端开始上膛时执行绑定函数
 
----
+___
 
 ### onStartLoadServer
 
@@ -73,7 +73,7 @@
 
 **`Description`**
 
-获取绑定的动画 GUID
+获取绑定的动画GUID
 
 **`Effect`**
 
@@ -83,7 +83,7 @@
 
 `string`
 
-绑定的动画 GUID
+绑定的动画GUID
 
 • `set` **animationGuid**(`guid`): `void`
 
@@ -97,15 +97,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description               |
-| :----- | :------- | :------------------------ |
-| `guid` | `string` | 需要设置的蒙太奇动画 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  需要设置的蒙太奇动画 guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loadAfterFireEnable
 
@@ -141,15 +141,15 @@
 
 #### Parameters
 
-| Name     | Type      | Description                  |
-| :------- | :-------- | :--------------------------- |
-| `enable` | `boolean` | 是否开启开火后自动上膛的功能 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enable` | `boolean` |  是否开启开火后自动上膛的功能 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loadDuration
 
@@ -181,9 +181,9 @@
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `time` | `number` | 上膛时间    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  上膛时间 |
 
 #### Returns
 
@@ -197,7 +197,7 @@
 
 **`Description`**
 
-是否有动画 GUID
+是否有动画GUID
 
 **`Effect`**
 
@@ -207,4 +207,4 @@
 
 `boolean`
 
-是否有动画 GUID
+是否有动画GUID

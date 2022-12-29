@@ -8,21 +8,21 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                              |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[onEndReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数     |
-| **[onEndReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数     |
-| **[onStartReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数 |
-| **[onStartReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数 |
+| Properties |
+| :-----|
+| **[onEndReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数|
+| **[onEndReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数|
+| **[onStartReloadClient](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数|
+| **[onStartReloadServer](Gameplay.Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数|
 
-| Accessors                                                                                                             |
-| :-------------------------------------------------------------------------------------------------------------------- |
-| **[animationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画 GUID |
-| **[reloadDuration](Gameplay.Gameplay.HotWeaponReloadComponent.md#reloadduration)**(): `number` <br> 获取换弹时间      |
+| Accessors |
+| :-----|
+| **[animationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画GUID|
+| **[reloadDuration](Gameplay.Gameplay.HotWeaponReloadComponent.md#reloadduration)**(): `number` <br> 获取换弹时间|
 
-| Methods                                                                                                                  |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画 GUID |
+| Methods |
+| :-----|
+| **[hadAnimationGuid](Gameplay.Gameplay.HotWeaponReloadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
 
 ## Properties
 
@@ -34,7 +34,7 @@
 
 [客户端] 结束换弹时执行绑定函数
 
----
+___
 
 ### onEndReloadServer
 
@@ -44,7 +44,7 @@
 
 [服务端] 结束换弹时执行绑定函数
 
----
+___
 
 ### onStartReloadClient
 
@@ -54,7 +54,7 @@
 
 [客户端] 开始换弹时执行绑定函数
 
----
+___
 
 ### onStartReloadServer
 
@@ -72,7 +72,7 @@
 
 **`Description`**
 
-获取绑定的动画 GUID
+获取绑定的动画GUID
 
 **`Effect`**
 
@@ -82,7 +82,7 @@
 
 `string`
 
-绑定的动画 GUID
+绑定的动画GUID
 
 • `set` **animationGuid**(`guid`): `void`
 
@@ -96,15 +96,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description               |
-| :----- | :------- | :------------------------ |
-| `guid` | `string` | 需要设置的蒙太奇动画 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  需要设置的蒙太奇动画 guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### reloadDuration
 
@@ -140,9 +140,9 @@
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `time` | `number` | 新换弹时间  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  新换弹时间 |
 
 #### Returns
 
@@ -156,7 +156,7 @@
 
 **`Description`**
 
-是否有动画 GUID
+是否有动画GUID
 
 **`Effect`**
 
@@ -166,4 +166,4 @@
 
 `boolean`
 
-是否有动画 GUID
+是否有动画GUID

@@ -24,10 +24,10 @@
 
 ## Table of contents
 
-| Methods                                                                                          |
-| :----------------------------------------------------------------------------------------------- |
-| **[getMesh](Gameplay.Gameplay.IPart.md#getmesh)**(): `string` <br> 获取部位模型                  |
-| **[setMesh](Gameplay.Gameplay.IPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型 |
+| Methods |
+| :-----|
+| **[getMesh](Gameplay.Gameplay.IPart.md#getmesh)**(): `string` <br> 获取部位模型|
+| **[setMesh](Gameplay.Gameplay.IPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型|
 
 ## Methods
 
@@ -47,9 +47,9 @@
 
 `string`
 
-模型 Guid
+模型Guid
 
----
+___
 
 ### setMesh
 
@@ -61,7 +61,7 @@
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -70,9 +70,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns

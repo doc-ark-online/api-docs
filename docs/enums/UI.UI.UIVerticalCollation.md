@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                 |
-| :---------------------------------------------------------------------------------- |
-| **[BottomToTop](UI.UI.UIVerticalCollation.md#bottomtotop)** = `1` <br> 从下到上排序 |
-| **[TopToBottom](UI.UI.UIVerticalCollation.md#toptobottom)** = `0` <br> 从上到下排序 |
+| Enumeration Members |
+| :-----|
+| **[BottomToTop](UI.UI.UIVerticalCollation.md#bottomtotop)** = ``1`` <br> 从下到上排序|
+| **[TopToBottom](UI.UI.UIVerticalCollation.md#toptobottom)** = ``0`` <br> 从上到下排序|
 
 ## Enumeration Members
 
 ### BottomToTop
 
-• **BottomToTop** = `1`
+• **BottomToTop** = ``1``
 
 从下到上排序
 
----
+___
 
 ### TopToBottom
 
-• **TopToBottom** = `0`
+• **TopToBottom** = ``0``
 
 从上到下排序

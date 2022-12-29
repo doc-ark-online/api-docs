@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                               |
-| :-------------------------------------------------------------------------------- |
-| **[Bounce](Gameplay.Gameplay.ProjectileCollisionMode.md#bounce)** = `1` <br> 弹跳 |
-| **[Pierce](Gameplay.Gameplay.ProjectileCollisionMode.md#pierce)** = `0` <br> 穿透 |
+| Enumeration Members |
+| :-----|
+| **[Bounce](Gameplay.Gameplay.ProjectileCollisionMode.md#bounce)** = ``1`` <br> 弹跳|
+| **[Pierce](Gameplay.Gameplay.ProjectileCollisionMode.md#pierce)** = ``0`` <br> 穿透|
 
 ## Enumeration Members
 
 ### Bounce
 
-• **Bounce** = `1`
+• **Bounce** = ``1``
 
 弹跳
 
----
+___
 
 ### Pierce
 
-• **Pierce** = `0`
+• **Pierce** = ``0``
 
 穿透

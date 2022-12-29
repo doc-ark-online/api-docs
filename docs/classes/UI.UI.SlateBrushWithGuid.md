@@ -8,17 +8,17 @@
 
 ## Table of contents
 
-| Properties                                                                                                                   |
-| :--------------------------------------------------------------------------------------------------------------------------- |
-| **[drawAs](UI.UI.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 绘制模式 |
-| **[guid](UI.UI.SlateBrushWithGuid.md#guid)**: `string` <br> 资源 ID                                                          |
-| **[imageSize](UI.UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Type.Vector2.md) <br> 资源大小                      |
-| **[marin](UI.UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.UI.Margin.md) <br> 边缘缩进                                    |
-| **[tintColor](UI.UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.UI.SlateColor.md) <br> 颜色                        |
+| Properties |
+| :-----|
+| **[drawAs](UI.UI.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/UI.UI.SlateBrushDrawType.md) <br> 绘制模式|
+| **[guid](UI.UI.SlateBrushWithGuid.md#guid)**: `string` <br> 资源ID|
+| **[imageSize](UI.UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Type.Vector2.md) <br> 资源大小|
+| **[marin](UI.UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.UI.Margin.md) <br> 边缘缩进|
+| **[tintColor](UI.UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.UI.SlateColor.md) <br> 颜色|
 
 **`Description`**
 
-通过资源 id 构造对象
+通过资源id构造对象
 
 **`Effect`**
 
@@ -26,9 +26,9 @@
 
 #### Parameters
 
-| Name     | Type     | Description |
-| :------- | :------- | :---------- |
-| `InGuid` | `string` | 资源 id     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InGuid` | `string` | 资源id |
 
 ## Properties
 
@@ -40,7 +40,7 @@
 
 绘制模式
 
----
+___
 
 ### guid
 
@@ -48,9 +48,9 @@
 
 **`Description`**
 
-资源 ID
+资源ID
 
----
+___
 
 ### imageSize
 
@@ -60,7 +60,7 @@
 
 资源大小
 
----
+___
 
 ### marin
 
@@ -70,7 +70,7 @@
 
 边缘缩进
 
----
+___
 
 ### tintColor
 

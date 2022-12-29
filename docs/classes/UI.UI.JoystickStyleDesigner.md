@@ -8,11 +8,11 @@
 
 ## Table of contents
 
-| Properties                                                                                                               |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| **[disable](UI.UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 禁用资源 |
-| **[normal](UI.UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 普通资源   |
-| **[touch](UI.UI.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 按压资源     |
+| Properties |
+| :-----|
+| **[disable](UI.UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 禁用资源|
+| **[normal](UI.UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 普通资源|
+| **[touch](UI.UI.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](UI.UI.SlateBrushWithGuid.md) <br> 按压资源|
 
 **`Description`**
 
@@ -24,11 +24,11 @@
 
 #### Parameters
 
-| Name          | Type     | Description |
-| :------------ | :------- | :---------- |
-| `NormalGuid`  | `string` | 普通资源    |
-| `TouchGuid`   | `string` | 按压资源    |
-| `DisableGuid` | `string` | 禁用资源    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `NormalGuid` | `string` | 普通资源 |
+| `TouchGuid` | `string` | 按压资源 |
+| `DisableGuid` | `string` | 禁用资源 |
 
 ## Properties
 
@@ -40,7 +40,7 @@
 
 禁用资源
 
----
+___
 
 ### normal
 
@@ -50,7 +50,7 @@
 
 普通资源
 
----
+___
 
 ### touch
 

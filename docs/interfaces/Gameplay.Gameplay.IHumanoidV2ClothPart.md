@@ -4,7 +4,7 @@
 
 **`Description`**
 
-人形对象 V2 部位
+人形对象V2部位
 
 ## Hierarchy
 
@@ -21,31 +21,31 @@
 
 ## Table of contents
 
-| Methods                                                                                                                                                                               |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[getAreaCount](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)**(): `number` <br> 获取衣服区域数量                                                                          |
-| **[getColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取颜色                                      |
-| **[getDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)**(`number`): `number` <br> 获取图案方向                                                                  |
-| **[getDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取图案颜色                      |
-| **[getDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigntexture)**(`number`): `string` <br> 获取衣服图案                                                              |
-| **[getMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getmesh)**(): `string` <br> 获取部位模型                                                                                        |
-| **[getPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternangle)**(`number`): `number` <br> 获取花纹旋转                                                                |
-| **[getPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatterncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取花纹颜色                    |
-| **[getPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternheight)**(`number`): `number` <br> 设置花纹纵向拉伸                                                          |
-| **[getPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternintensity)**(`number`): `number` <br> 获取花纹显示程度                                                    |
-| **[getPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternwidth)**(`number`): `number` <br> 获取花纹横向拉伸                                                            |
-| **[getTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#gettexture)**(`number`): `string` <br> 获取花纹                                                                              |
-| **[setColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setcolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置颜色                   |
-| **[setDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesignangle)**(`number`, `number`, `boolean`): `void` <br> 设置图案方向                                               |
-| **[setDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置图案颜色   |
-| **[setDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigntexture)**(`number`, `string`, `boolean`): `void` <br> 设置衣服图案                                           |
-| **[setMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型                                                                       |
-| **[setPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternangle)**(`number`, `number`, `boolean`): `void` <br> 设置花纹旋转                                             |
-| **[setPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatterncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置花纹颜色 |
-| **[setPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternheight)**(`number`, `number`, `boolean`): `void` <br> 设置花纹纵向拉伸                                       |
-| **[setPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternintensity)**(`number`, `number`, `boolean`): `void` <br> 设置花纹显示程度                                 |
-| **[setPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternwidth)**(`number`, `number`, `boolean`): `void` <br> 设置花纹横向拉伸                                         |
-| **[setTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#settexture)**(`number`, `string`, `boolean`): `void` <br> 设置花纹                                                           |
+| Methods |
+| :-----|
+| **[getAreaCount](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getareacount)**(): `number` <br> 获取衣服区域数量|
+| **[getColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getcolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取颜色|
+| **[getDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesignangle)**(`number`): `number` <br> 获取图案方向|
+| **[getDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取图案颜色|
+| **[getDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getdesigntexture)**(`number`): `string` <br> 获取衣服图案|
+| **[getMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getmesh)**(): `string` <br> 获取部位模型|
+| **[getPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternangle)**(`number`): `number` <br> 获取花纹旋转|
+| **[getPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatterncolor)**(`number`): [`LinearColor`](../classes/Type.Type.LinearColor.md) <br> 获取花纹颜色|
+| **[getPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternheight)**(`number`): `number` <br> 设置花纹纵向拉伸|
+| **[getPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternintensity)**(`number`): `number` <br> 获取花纹显示程度|
+| **[getPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#getpatternwidth)**(`number`): `number` <br> 获取花纹横向拉伸|
+| **[getTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#gettexture)**(`number`): `string` <br> 获取花纹|
+| **[setColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setcolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置颜色|
+| **[setDesignAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesignangle)**(`number`, `number`, `boolean`): `void` <br> 设置图案方向|
+| **[setDesignColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置图案颜色|
+| **[setDesignTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setdesigntexture)**(`number`, `string`, `boolean`): `void` <br> 设置衣服图案|
+| **[setMesh](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型|
+| **[setPatternAngle](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternangle)**(`number`, `number`, `boolean`): `void` <br> 设置花纹旋转|
+| **[setPatternColor](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatterncolor)**(`number`, [`LinearColor`](../classes/Type.Type.LinearColor.md), `boolean`): `void` <br> 设置花纹颜色|
+| **[setPatternHeight](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternheight)**(`number`, `number`, `boolean`): `void` <br> 设置花纹纵向拉伸|
+| **[setPatternIntensity](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternintensity)**(`number`, `number`, `boolean`): `void` <br> 设置花纹显示程度|
+| **[setPatternWidth](Gameplay.Gameplay.IHumanoidV2ClothPart.md#setpatternwidth)**(`number`, `number`, `boolean`): `void` <br> 设置花纹横向拉伸|
+| **[setTexture](Gameplay.Gameplay.IHumanoidV2ClothPart.md#settexture)**(`number`, `string`, `boolean`): `void` <br> 设置花纹|
 
 ## Methods
 
@@ -67,7 +67,7 @@
 
 区域数量
 
----
+___
 
 ### getColor
 
@@ -83,9 +83,9 @@
 
 #### Parameters
 
-| Name        | Type     | Description |
-| :---------- | :------- | :---------- |
-| `areaIndex` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `areaIndex` | `number` | 区域 |
 
 #### Returns
 
@@ -93,7 +93,7 @@
 
 颜色
 
----
+___
 
 ### getDesignAngle
 
@@ -109,9 +109,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -119,7 +119,7 @@
 
 方向值
 
----
+___
 
 ### getDesignColor
 
@@ -135,9 +135,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -145,7 +145,7 @@
 
 颜色
 
----
+___
 
 ### getDesignTexture
 
@@ -161,9 +161,9 @@
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -171,7 +171,7 @@
 
 guid
 
----
+___
 
 ### getMesh
 
@@ -189,9 +189,9 @@ guid
 
 `string`
 
-模型 Guid
+模型Guid
 
----
+___
 
 ### getPatternAngle
 
@@ -207,9 +207,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -217,7 +217,7 @@ guid
 
 旋转值
 
----
+___
 
 ### getPatternColor
 
@@ -233,9 +233,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -243,7 +243,7 @@ guid
 
 颜色
 
----
+___
 
 ### getPatternHeight
 
@@ -259,9 +259,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -269,7 +269,7 @@ guid
 
 拉伸值
 
----
+___
 
 ### getPatternIntensity
 
@@ -285,9 +285,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -295,7 +295,7 @@ guid
 
 显示程度
 
----
+___
 
 ### getPatternWidth
 
@@ -311,9 +311,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -321,7 +321,7 @@ guid
 
 拉伸值
 
----
+___
 
 ### getTexture
 
@@ -337,9 +337,9 @@ guid
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `index` | `number` | 区域        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
 
 #### Returns
 
@@ -347,7 +347,7 @@ guid
 
 guid
 
----
+___
 
 ### setColor
 
@@ -364,17 +364,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `index` | `number`                                             | 区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setDesignAngle
 
@@ -391,17 +391,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 {Min:0,Max:360} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setDesignColor
 
@@ -418,17 +418,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `index` | `number`                                             | 区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setDesignTexture
 
@@ -445,17 +445,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `guid`  | `string`  | 贴图 Guid               |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `guid` | `string` | 贴图Guid |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setMesh
 
@@ -467,7 +467,7 @@ sync = true:双端
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -476,16 +476,16 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPatternAngle
 
@@ -502,17 +502,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 角度 {Min:0,Max:360}    |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 {Min:0,Max:360} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPatternColor
 
@@ -529,17 +529,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type                                                 | Description             |
-| :------ | :--------------------------------------------------- | :---------------------- |
-| `index` | `number`                                             | 区域                    |
-| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色                    |
-| `sync`  | `boolean`                                            | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPatternHeight
 
@@ -556,17 +556,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                 |
-| :------ | :-------- | :-------------------------- |
-| `index` | `number`  | 区域                        |
-| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | true 同步; false 不同步     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPatternIntensity
 
@@ -583,17 +583,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `value` | `number`  | 强度 {Min:0,Max:1}      |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 强度 {Min:0,Max:1} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setPatternWidth
 
@@ -610,17 +610,17 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description                 |
-| :------ | :-------- | :-------------------------- |
-| `index` | `number`  | 区域                        |
-| `value` | `number`  | 拉伸比例 {Min:0.01,Max:100} |
-| `sync`  | `boolean` | true 同步; false 不同步     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setTexture
 
@@ -637,11 +637,11 @@ sync = true:双端
 
 #### Parameters
 
-| Name    | Type      | Description             |
-| :------ | :-------- | :---------------------- |
-| `index` | `number`  | 区域                    |
-| `guid`  | `string`  | 贴图 Guid               |
-| `sync`  | `boolean` | true 同步; false 不同步 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `guid` | `string` | 贴图Guid |
+| `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns
 

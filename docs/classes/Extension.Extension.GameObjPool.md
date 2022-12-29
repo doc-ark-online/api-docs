@@ -6,21 +6,21 @@
 
 **`Description`**
 
-GameObject 对象池
+GameObject对象池
 
 **`Precautions`**
 
-单例类，请使用 getInstance 获取对象
+单例类，请使用getInstance获取对象
 
 ## Table of contents
 
-| Methods                                                                                                                                          |
-| :----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------- |
-| **[clear](Extension.Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该 guid 对应的所有对象                                  |
-| **[despawn](Extension.Extension.GameObjPool.md#despawn)**(`GameObject`): `void` <br> 归还一个对象                                                |
-| **[destroy](Extension.Extension.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例                                                      |
-| **[spawn](Extension.Extension.GameObjPool.md#spawn)**<extends `GameObject`<`T`\>                                                                 | \>(`string`): extends `GameObject`<`T`\> | <br> 生成一个对象 |
-| **[getInstance](Extension.Extension.GameObjPool.md#getinstance)**(): [`GameObjPool`](Extension.Extension.GameObjPool.md) <br> 获取对象池全局实例 |
+| Methods |
+| :-----|
+| **[clear](Extension.Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该guid对应的所有对象|
+| **[despawn](Extension.Extension.GameObjPool.md#despawn)**(`GameObject`): `void` <br> 归还一个对象|
+| **[destroy](Extension.Extension.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
+| **[spawn](Extension.Extension.GameObjPool.md#spawn)**<extends `GameObject`<`T`\> |\>(`string`): extends `GameObject`<`T`\> | <br> 生成一个对象|
+| **[getInstance](Extension.Extension.GameObjPool.md#getinstance)**(): [`GameObjPool`](Extension.Extension.GameObjPool.md) <br> 获取对象池全局实例|
 
 ## Methods
 
@@ -30,7 +30,7 @@ GameObject 对象池
 
 **`Description`**
 
-清除对象池中该 guid 对应的所有对象
+清除对象池中该guid对应的所有对象
 
 **`Effect`**
 
@@ -38,15 +38,15 @@ GameObject 对象池
 
 #### Parameters
 
-| Name   | Type     | Description       |
-| :----- | :------- | :---------------- |
-| `guid` | `string` | 要清除对象的 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  要清除对象的guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### despawn
 
@@ -62,15 +62,15 @@ GameObject 对象池
 
 #### Parameters
 
-| Name  | Type         | Description  |
-| :---- | :----------- | :----------- |
-| `obj` | `GameObject` | 要归还的对象 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `GameObject` |  要归还的对象 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### destroy
 
@@ -88,7 +88,7 @@ GameObject 对象池
 
 `void`
 
----
+___
 
 ### spawn
 
@@ -104,15 +104,15 @@ GameObject 对象池
 
 #### Type parameters
 
-| Name | Type                       |
-| :--- | :------------------------- |
-| `T`  | extends `GameObject`<`T`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `GameObject`<`T`\> |
 
 #### Parameters
 
-| Name   | Type     | Description                                      |
-| :----- | :------- | :----------------------------------------------- |
-| `guid` | `string` | 场景对象的 guid \| 资源的 guid \| prefab 的 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  场景对象的guid \| 资源的guid \| prefab的guid |
 
 #### Returns
 
@@ -120,7 +120,7 @@ GameObject 对象池
 
 生成的对象
 
----
+___
 
 ### getInstance
 

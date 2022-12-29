@@ -8,41 +8,41 @@
 
 ## Table of contents
 
-| Enumeration Members                                                          |
-| :--------------------------------------------------------------------------- |
-| **[Both](UI.UI.SlateBrushTileType.md#both)** = `3` <br> 水平垂直平铺         |
-| **[Horizontal](UI.UI.SlateBrushTileType.md#horizontal)** = `1` <br> 水平平铺 |
-| **[NoTile](UI.UI.SlateBrushTileType.md#notile)** = `0` <br> 拉伸             |
-| **[Vertical](UI.UI.SlateBrushTileType.md#vertical)** = `2` <br> 垂直平铺     |
+| Enumeration Members |
+| :-----|
+| **[Both](UI.UI.SlateBrushTileType.md#both)** = ``3`` <br> 水平垂直平铺|
+| **[Horizontal](UI.UI.SlateBrushTileType.md#horizontal)** = ``1`` <br> 水平平铺|
+| **[NoTile](UI.UI.SlateBrushTileType.md#notile)** = ``0`` <br> 拉伸|
+| **[Vertical](UI.UI.SlateBrushTileType.md#vertical)** = ``2`` <br> 垂直平铺|
 
 ## Enumeration Members
 
 ### Both
 
-• **Both** = `3`
+• **Both** = ``3``
 
 水平垂直平铺
 
----
+___
 
 ### Horizontal
 
-• **Horizontal** = `1`
+• **Horizontal** = ``1``
 
 水平平铺
 
----
+___
 
 ### NoTile
 
-• **NoTile** = `0`
+• **NoTile** = ``0``
 
 拉伸
 
----
+___
 
 ### Vertical
 
-• **Vertical** = `2`
+• **Vertical** = ``2``
 
 垂直平铺

@@ -4,30 +4,30 @@ Events
 
 ## Table of contents
 
-| Enumerations                                                                             |
-| :--------------------------------------------------------------------------------------- |
-| [DispatchEventResult](../enums/Events.Events.DispatchEventResult.md) <br> 事件发送的结果 |
+| Enumerations |
+| :-----|
+| [DispatchEventResult](../enums/Events.Events.DispatchEventResult.md) <br> 事件发送的结果|
 
-| Classes                                                                    |
-| :------------------------------------------------------------------------- |
-| [EventListener](../classes/Events.Events.EventListener.md) <br> 事件监听器 |
+| Classes |
+| :-----|
+| [EventListener](../classes/Events.Events.EventListener.md) <br> 事件监听器|
 
-| Functions                                                                                                                                                                                                                                                               |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[addClientListener](Events.Events.md#addclientlistener)**(`string`, (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 服务器监听客户端发来的事件 |
-| **[addExitListener](Events.Events.md#addexitlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加退出游戏时执行的回调函数                                                                                                   |
-| **[addFocusListener](Events.Events.md#addfocuslistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数                                                                                                 |
-| **[addLocalListener](Events.Events.md#addlocallistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听本地事件                                                                               |
-| **[addOnPauseListener](Events.Events.md#addonpauselistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加 OnPause 开始时执行的回调函数                                                                                        |
-| **[addOnResumeListener](Events.Events.md#addonresumelistener)**((`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加 OnPause 结束时执行的回调函数                                                             |
-| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家进入 room 事件                             |
-| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家离开 room 事件                                 |
-| **[addServerListener](Events.Events.md#addserverlistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 客户端监听服务器事件                                                                     |
-| **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数                                                                                         |
-| **[dispatchLocal](Events.Events.md#dispatchlocal)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 发送本地事件                                                                                                    |
-| **[dispatchToAllClient](Events.Events.md#dispatchtoallclient)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端                                                                          |
-| **[dispatchToClient](Events.Events.md#dispatchtoclient)**([`Player`](../classes/Gameplay.Gameplay.Player.md), `string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端                            |
-| **[dispatchToServer](Events.Events.md#dispatchtoserver)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 客户端发送事件给服务器                                                                                    |
+| Functions |
+| :-----|
+| **[addClientListener](Events.Events.md#addclientlistener)**(`string`, (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 服务器监听客户端发来的事件|
+| **[addExitListener](Events.Events.md#addexitlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加退出游戏时执行的回调函数|
+| **[addFocusListener](Events.Events.md#addfocuslistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数|
+| **[addLocalListener](Events.Events.md#addlocallistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听本地事件|
+| **[addOnPauseListener](Events.Events.md#addonpauselistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加OnPause开始时执行的回调函数|
+| **[addOnResumeListener](Events.Events.md#addonresumelistener)**((`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加OnPause结束时执行的回调函数|
+| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家进入room事件|
+| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**((`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 监听玩家离开room事件|
+| **[addServerListener](Events.Events.md#addserverlistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 客户端监听服务器事件|
+| **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(() => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
+| **[dispatchLocal](Events.Events.md#dispatchlocal)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 发送本地事件|
+| **[dispatchToAllClient](Events.Events.md#dispatchtoallclient)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
+| **[dispatchToClient](Events.Events.md#dispatchtoclient)**([`Player`](../classes/Gameplay.Gameplay.Player.md), `string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
+| **[dispatchToServer](Events.Events.md#dispatchtoserver)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.Events.DispatchEventResult.md) <br> 客户端发送事件给服务器|
 
 ## Functions
 
@@ -49,10 +49,10 @@ Events
 
 #### Parameters
 
-| Name        | Type                                                                                               | Description                                      |
-| :---------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------- |
-| `eventName` | `string`                                                                                           | 事件名                                           |
-| `listener`  | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
 
 #### Returns
 
@@ -60,7 +60,7 @@ Events
 
 返回一个事件监听器
 
----
+___
 
 ### addExitListener
 
@@ -76,12 +76,11 @@ Events
 
 **`Precautions`**
 
-只在 233 悬浮球退出和 PIE 关闭窗口时生效。
+只在233悬浮球退出和PIE关闭窗口时生效。
 
 **`Example`**
 
 使用示例:调用方法
-
 ```ts
 let listener = Events.addExitListener(this.testFunction);
 public testFunction() {
@@ -92,8 +91,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description        |
-| :--------- | :----------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
@@ -102,7 +101,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addFocusListener
 
@@ -118,12 +117,11 @@ listener.disconnect();
 
 **`Precautions`**
 
-只在 PIE 模式下生效。
+只在PIE模式下生效。
 
 **`Example`**
 
 使用示例:调用方法
-
 ```ts
 let listener = Events.addFocusListener(this.testFunction);
 public testFunction() {
@@ -134,8 +132,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description        |
-| :--------- | :----------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
@@ -144,7 +142,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addLocalListener
 
@@ -160,10 +158,10 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type                                 | Description |
-| :---------- | :----------------------------------- | :---------- |
-| `eventName` | `string`                             | 事件名      |
-| `listener`  | (...`params`: `unknown`[]) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
 
 #### Returns
 
@@ -171,7 +169,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addOnPauseListener
 
@@ -179,7 +177,7 @@ listener.disconnect();
 
 **`Description`**
 
-添加 OnPause 开始时执行的回调函数
+添加OnPause开始时执行的回调函数
 
 **`Effect`**
 
@@ -187,12 +185,11 @@ listener.disconnect();
 
 **`Precautions`**
 
-只在 Android 和 IOS 生效。触发时机有切入后台、息屏和播广告。
+只在Android和IOS生效。触发时机有切入后台、息屏和播广告。
 
 **`Example`**
 
 使用示例:调用方法
-
 ```ts
 let listener = Events.addOnPauseListener(this.testFunction);
 public testFunction() {
@@ -203,8 +200,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description        |
-| :--------- | :----------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
@@ -213,7 +210,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addOnResumeListener
 
@@ -221,7 +218,7 @@ listener.disconnect();
 
 **`Description`**
 
-添加 OnPause 结束时执行的回调函数
+添加OnPause结束时执行的回调函数
 
 **`Effect`**
 
@@ -229,12 +226,11 @@ listener.disconnect();
 
 **`Precautions`**
 
-只在 Android 和 IOS 生效。触发时机有切入后台、息屏和播广告后回到游戏。
+只在Android和IOS生效。触发时机有切入后台、息屏和播广告后回到游戏。
 
 **`Example`**
 
 使用示例:调用方法
-
 ```ts
 let listener = Events.addOnResumeListener(this.testFunction);
 public testFunction(leaveDuration: number) {
@@ -245,9 +241,9 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type                                  | Description                                           |
-| :--------- | :------------------------------------ | :---------------------------------------------------- |
-| `callback` | (`leaveDuration`: `number`) => `void` | 需要触发的回调函数，leaveDuration 指 OnPause 持续时长 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | (`leaveDuration`: `number`) => `void` | 需要触发的回调函数，leaveDuration指OnPause持续时长 |
 
 #### Returns
 
@@ -255,7 +251,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addPlayerJoinedListener
 
@@ -263,7 +259,7 @@ listener.disconnect();
 
 **`Description`**
 
-监听玩家进入 room 事件
+监听玩家进入room事件
 
 **`Effect`**
 
@@ -271,9 +267,9 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type                                                                     | Description |
-| :--------- | :----------------------------------------------------------------------- | :---------- |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调 |
 
 #### Returns
 
@@ -281,7 +277,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addPlayerLeftListener
 
@@ -289,7 +285,7 @@ listener.disconnect();
 
 **`Description`**
 
-监听玩家离开 room 事件
+监听玩家离开room事件
 
 **`Effect`**
 
@@ -297,9 +293,9 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type                                                                     | Description |
-| :--------- | :----------------------------------------------------------------------- | :---------- |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `listener` | (`player`: [`Player`](../classes/Gameplay.Gameplay.Player.md)) => `void` | 监听回调 |
 
 #### Returns
 
@@ -307,7 +303,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addServerListener
 
@@ -327,10 +323,10 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type                                 | Description              |
-| :---------- | :----------------------------------- | :----------------------- |
-| `eventName` | `string`                             | 事件名                   |
-| `listener`  | (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
 
 #### Returns
 
@@ -338,7 +334,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### addUnfocusedListener
 
@@ -354,12 +350,11 @@ listener.disconnect();
 
 **`Precautions`**
 
-只在 PIE 模式下生效。
+只在PIE模式下生效。
 
 **`Example`**
 
 使用示例:调用方法
-
 ```ts
 let listener = Events.addUnfocusedListener(this.testFunction);
 public testFunction() {
@@ -370,8 +365,8 @@ listener.disconnect();
 
 #### Parameters
 
-| Name       | Type         | Description        |
-| :--------- | :----------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `callback` | () => `void` | 需要触发的回调函数 |
 
 #### Returns
@@ -380,7 +375,7 @@ listener.disconnect();
 
 返回一个事件监听器
 
----
+___
 
 ### dispatchLocal
 
@@ -396,10 +391,10 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type        | Description |
-| :---------- | :---------- | :---------- |
-| `eventName` | `string`    | 事件名      |
-| `...params` | `unknown`[] | 事件内容    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `...params` | `unknown`[] | 事件内容 |
 
 #### Returns
 
@@ -407,7 +402,7 @@ listener.disconnect();
 
 返回发送本地事件的结果
 
----
+___
 
 ### dispatchToAllClient
 
@@ -427,10 +422,10 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type        | Description |
-| :---------- | :---------- | :---------- |
-| `eventName` | `string`    | 事件名      |
-| `...params` | `unknown`[] | 可变长参数  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `...params` | `unknown`[] | 可变长参数 |
 
 #### Returns
 
@@ -438,7 +433,7 @@ listener.disconnect();
 
 返回事件发送结果
 
----
+___
 
 ### dispatchToClient
 
@@ -458,11 +453,11 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type                                               | Description |
-| :---------- | :------------------------------------------------- | :---------- |
-| `player`    | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 客户端      |
-| `eventName` | `string`                                           | 事件名      |
-| `...params` | `unknown`[]                                        | 可变长参数  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 客户端 |
+| `eventName` | `string` | 事件名 |
+| `...params` | `unknown`[] | 可变长参数 |
 
 #### Returns
 
@@ -470,7 +465,7 @@ listener.disconnect();
 
 返回事件发送结果
 
----
+___
 
 ### dispatchToServer
 
@@ -490,10 +485,10 @@ listener.disconnect();
 
 #### Parameters
 
-| Name        | Type        | Description |
-| :---------- | :---------- | :---------- |
-| `eventName` | `string`    | 事件名      |
-| `...params` | `unknown`[] | 可变长参数  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `eventName` | `string` | 事件名 |
+| `...params` | `unknown`[] | 可变长参数 |
 
 #### Returns
 

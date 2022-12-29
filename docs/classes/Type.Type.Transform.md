@@ -12,31 +12,31 @@ Transform 由缩放、旋转和平移组成
 
 ## Table of contents
 
-| Properties                                                                                         |
-| :------------------------------------------------------------------------------------------------- |
-| **[location](Type.Type.Transform.md#location)**: [`Vector`](Type.Type.Vector.md) <br> 坐标信息     |
-| **[rotation](Type.Type.Transform.md#rotation)**: [`Rotation`](Type.Type.Rotation.md) <br> 旋转信息 |
-| **[scale](Type.Type.Transform.md#scale)**: [`Vector`](Type.Type.Vector.md) <br> 缩放信息           |
+| Properties |
+| :-----|
+| **[location](Type.Type.Transform.md#location)**: [`Vector`](Type.Type.Vector.md) <br> 坐标信息|
+| **[rotation](Type.Type.Transform.md#rotation)**: [`Rotation`](Type.Type.Rotation.md) <br> 旋转信息|
+| **[scale](Type.Type.Transform.md#scale)**: [`Vector`](Type.Type.Vector.md) <br> 缩放信息|
 
-| Accessors                                                                                                            |
-| :------------------------------------------------------------------------------------------------------------------- |
-| **[identity](Type.Type.Transform.md#identity)**(): [`Transform`](Type.Type.Transform.md) <br> 获取一个单位 Transform |
+| Accessors |
+| :-----|
+| **[identity](Type.Type.Transform.md#identity)**(): [`Transform`](Type.Type.Transform.md) <br> 获取一个单位 Transform|
 
-| Methods                                                                                                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[clone](Type.Type.Transform.md#clone)**(): [`Transform`](Type.Type.Transform.md) <br> 克隆一个新的 Transform                                                                              |
-| **[fromString](Type.Type.Transform.md#fromstring)**(`string`, [`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 读取字符串数据创建或者写入一个 Transform   |
-| **[getForwardVector](Type.Type.Transform.md#getforwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向前方向向量                                                       |
-| **[getRightVector](Type.Type.Transform.md#getrightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向右方向向量                                                           |
-| **[getUpVector](Type.Type.Transform.md#getupvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向上方向向量                                                                 |
-| **[inverseTransformDirection](Type.Type.Transform.md#inversetransformdirection)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将世界方向转化为本地方向           |
-| **[inverseTransformLocation](Type.Type.Transform.md#inversetransformlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将世界坐标转化为本地坐标             |
-| **[lookAt](Type.Type.Transform.md#lookat)**([`Vector`](Type.Type.Vector.md)): `void` <br> Transform 面向目标方向                                                                            |
-| **[rotate](Type.Type.Transform.md#rotate)**([`Vector`](Type.Type.Vector.md), `number`): `void` <br> Transform 绕指定轴旋转                                                                  |
-| **[toString](Type.Type.Transform.md#tostring)**(): `string` <br> 输出为一个有格式的字符串                                                                                                   |
-| **[transformDirection](Type.Type.Transform.md#transformdirection)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将本地方向转化为世界方向                         |
-| **[transformLocation](Type.Type.Transform.md#transformlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 本地坐标转化为世界坐标                             |
-| **[fromString](Type.Type.Transform.md#fromstring-1)**(`string`, [`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 读取字符串数据创建或者写入一个 Transform |
+| Methods |
+| :-----|
+| **[clone](Type.Type.Transform.md#clone)**(): [`Transform`](Type.Type.Transform.md) <br> 克隆一个新的 Transform|
+| **[fromString](Type.Type.Transform.md#fromstring)**(`string`, [`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 读取字符串数据创建或者写入一个 Transform|
+| **[getForwardVector](Type.Type.Transform.md#getforwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向前方向向量|
+| **[getRightVector](Type.Type.Transform.md#getrightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向右方向向量|
+| **[getUpVector](Type.Type.Transform.md#getupvector)**(): [`Vector`](Type.Type.Vector.md) <br> 返回 Transform 的向上方向向量|
+| **[inverseTransformDirection](Type.Type.Transform.md#inversetransformdirection)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将世界方向转化为本地方向|
+| **[inverseTransformLocation](Type.Type.Transform.md#inversetransformlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将世界坐标转化为本地坐标|
+| **[lookAt](Type.Type.Transform.md#lookat)**([`Vector`](Type.Type.Vector.md)): `void` <br> Transform面向目标方向|
+| **[rotate](Type.Type.Transform.md#rotate)**([`Vector`](Type.Type.Vector.md), `number`): `void` <br> Transform绕指定轴旋转|
+| **[toString](Type.Type.Transform.md#tostring)**(): `string` <br> 输出为一个有格式的字符串|
+| **[transformDirection](Type.Type.Transform.md#transformdirection)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 将本地方向转化为世界方向|
+| **[transformLocation](Type.Type.Transform.md#transformlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 本地坐标转化为世界坐标|
+| **[fromString](Type.Type.Transform.md#fromstring-1)**(`string`, [`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 读取字符串数据创建或者写入一个 Transform|
 
 **`Description`**
 
@@ -50,11 +50,11 @@ Transform 由缩放、旋转和平移组成
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | 坐标信息    |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转信息    |
-| `scale`    | [`Vector`](Type.Type.Vector.md)     | 缩放信息    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 坐标信息 |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转信息 |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放信息 |
 
 • **new Transform**(`newTransform`)
 
@@ -64,8 +64,8 @@ Transform 由缩放、旋转和平移组成
 
 #### Parameters
 
-| Name           | Type                                  | Description    |
-| :------------- | :------------------------------------ | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Type.Transform.md) | Transform 对象 |
 
 ## Properties
@@ -78,7 +78,7 @@ Transform 由缩放、旋转和平移组成
 
 坐标信息
 
----
+___
 
 ### rotation
 
@@ -88,7 +88,7 @@ Transform 由缩放、旋转和平移组成
 
 旋转信息
 
----
+___
 
 ### scale
 
@@ -136,7 +136,7 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 新的数据相同的 Transform
 
----
+___
 
 ### fromString
 
@@ -152,15 +152,15 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 #### Parameters
 
-| Name  | Type     | Description      |
-| :---- | :------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `str` | `string` | 读取的字符串数据 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getForwardVector
 
@@ -180,7 +180,7 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 Transform 的向前方向向量
 
----
+___
 
 ### getRightVector
 
@@ -200,7 +200,7 @@ Transform 的向前方向向量
 
 Transform 的向右方向向量
 
----
+___
 
 ### getUpVector
 
@@ -220,7 +220,7 @@ Transform 的向右方向向量
 
 Transform 的向上方向向量
 
----
+___
 
 ### inverseTransformDirection
 
@@ -236,9 +236,9 @@ Transform 的向上方向向量
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 世界方向    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 世界方向 |
 
 #### Returns
 
@@ -246,7 +246,7 @@ Transform 的向上方向向量
 
 本地方向
 
----
+___
 
 ### inverseTransformLocation
 
@@ -262,9 +262,9 @@ Transform 的向上方向向量
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 世界坐标    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 世界坐标 |
 
 #### Returns
 
@@ -272,7 +272,7 @@ Transform 的向上方向向量
 
 本地坐标
 
----
+___
 
 ### lookAt
 
@@ -280,7 +280,7 @@ Transform 的向上方向向量
 
 **`Description`**
 
-Transform 面向目标方向
+Transform面向目标方向
 
 **`Effect`**
 
@@ -288,15 +288,15 @@ Transform 面向目标方向
 
 #### Parameters
 
-| Name     | Type                            | Description |
-| :------- | :------------------------------ | :---------- |
-| `target` | [`Vector`](Type.Type.Vector.md) | 世界坐标    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [`Vector`](Type.Type.Vector.md) | 世界坐标 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rotate
 
@@ -304,7 +304,7 @@ Transform 面向目标方向
 
 **`Description`**
 
-Transform 绕指定轴旋转
+Transform绕指定轴旋转
 
 **`Effect`**
 
@@ -312,16 +312,16 @@ Transform 绕指定轴旋转
 
 #### Parameters
 
-| Name    | Type                            | Description  |
-| :------ | :------------------------------ | :----------- |
-| `axis`  | [`Vector`](Type.Type.Vector.md) | 旋转轴       |
-| `angle` | `number`                        | 旋转的角度值 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `axis` | [`Vector`](Type.Type.Vector.md) | 旋转轴 |
+| `angle` | `number` | 旋转的角度值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### toString
 
@@ -341,7 +341,7 @@ Transform 绕指定轴旋转
 
 字符串
 
----
+___
 
 ### transformDirection
 
@@ -357,9 +357,9 @@ Transform 绕指定轴旋转
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 本地方向    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 本地方向 |
 
 #### Returns
 
@@ -367,7 +367,7 @@ Transform 绕指定轴旋转
 
 世界方向
 
----
+___
 
 ### transformLocation
 
@@ -383,9 +383,9 @@ Transform 绕指定轴旋转
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 本地坐标    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 本地坐标 |
 
 #### Returns
 
@@ -393,7 +393,7 @@ Transform 绕指定轴旋转
 
 世界坐标
 
----
+___
 
 ### fromString
 
@@ -413,10 +413,10 @@ Transform 绕指定轴旋转
 
 #### Parameters
 
-| Name     | Type                                  | Description                       |
-| :------- | :------------------------------------ | :-------------------------------- |
-| `str`    | `string`                              | 读取的字符串数据                  |
-| `outer?` | [`Transform`](Type.Type.Transform.md) | 接受结果的 Transform default:null |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `str` | `string` | 读取的字符串数据 |
+| `outer?` | [`Transform`](Type.Type.Transform.md) | 接受结果的Transform default:null |
 
 #### Returns
 

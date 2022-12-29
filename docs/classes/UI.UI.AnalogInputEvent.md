@@ -8,9 +8,9 @@
 
 ## Table of contents
 
-| Methods                                                                                                                  |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| **[toInputEvent](UI.UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent |
+| Methods |
+| :-----|
+| **[toInputEvent](UI.UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.UI.InputEvent.md) <br> 转化为 InputEvent|
 
 **`Description`**
 
@@ -34,4 +34,4 @@
 
 [`InputEvent`](UI.UI.InputEvent.md)
 
-返回转化后 inputEvent
+返回转化后inputEvent

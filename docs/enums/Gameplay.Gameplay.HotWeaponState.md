@@ -8,41 +8,41 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                             |
-| :---------------------------------------------------------------------------------------------- |
-| **[Firing](Gameplay.Gameplay.HotWeaponState.md#firing)** = `3` <br> 射击中                      |
-| **[Idle](Gameplay.Gameplay.HotWeaponState.md#idle)** = `0` <br> 准备好，可以进行射击 非射机姿态 |
-| **[Loading](Gameplay.Gameplay.HotWeaponState.md#loading)** = `2` <br> 上膛                      |
-| **[Reloading](Gameplay.Gameplay.HotWeaponState.md#reloading)** = `1` <br> 换弹夹，装弹          |
+| Enumeration Members |
+| :-----|
+| **[Firing](Gameplay.Gameplay.HotWeaponState.md#firing)** = ``3`` <br> 射击中|
+| **[Idle](Gameplay.Gameplay.HotWeaponState.md#idle)** = ``0`` <br> 准备好，可以进行射击 非射机姿态|
+| **[Loading](Gameplay.Gameplay.HotWeaponState.md#loading)** = ``2`` <br> 上膛|
+| **[Reloading](Gameplay.Gameplay.HotWeaponState.md#reloading)** = ``1`` <br> 换弹夹，装弹|
 
 ## Enumeration Members
 
 ### Firing
 
-• **Firing** = `3`
+• **Firing** = ``3``
 
 射击中
 
----
+___
 
 ### Idle
 
-• **Idle** = `0`
+• **Idle** = ``0``
 
 准备好，可以进行射击 非射机姿态
 
----
+___
 
 ### Loading
 
-• **Loading** = `2`
+• **Loading** = ``2``
 
 上膛
 
----
+___
 
 ### Reloading
 
-• **Reloading** = `1`
+• **Reloading** = ``1``
 
 换弹夹，装弹

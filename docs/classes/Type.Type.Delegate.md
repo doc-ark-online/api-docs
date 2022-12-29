@@ -12,9 +12,9 @@
 
 ## Type parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
-| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Implements
 
@@ -22,18 +22,18 @@
 
 ## Table of contents
 
-| Methods                                                                                                |
-| :----------------------------------------------------------------------------------------------------- |
-| **[bind](Type.Type.Delegate.md#bind)**(`T`): `void` <br> 绑定函数                                      |
-| **[execute](Type.Type.Delegate.md#execute)**(`Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数 |
-| **[isBound](Type.Type.Delegate.md#isbound)**(): `boolean` <br> 是否绑定                                |
-| **[unbind](Type.Type.Delegate.md#unbind)**(): `void` <br> 解绑函数                                     |
+| Methods |
+| :-----|
+| **[bind](Type.Type.Delegate.md#bind)**(`T`): `void` <br> 绑定函数|
+| **[execute](Type.Type.Delegate.md#execute)**(`Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数|
+| **[isBound](Type.Type.Delegate.md#isbound)**(): `boolean` <br> 是否绑定|
+| **[unbind](Type.Type.Delegate.md#unbind)**(): `void` <br> 解绑函数|
 
 #### Type parameters
 
-| Name | Type                                         |
-| :--- | :------------------------------------------- |
-| `T`  | extends (...`arg`: `unknown`[]) => `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
 
 ## Methods
 
@@ -51,9 +51,9 @@
 
 #### Parameters
 
-| Name   | Type | Description         |
-| :----- | :--- | :------------------ |
-| `func` | `T`  | 绑定的函数 default: |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `T` |  绑定的函数 default: |
 
 #### Returns
 
@@ -63,7 +63,7 @@
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[bind](../interfaces/Type.Type.DelegateInterface.md#bind)
 
----
+___
 
 ### execute
 
@@ -79,9 +79,9 @@
 
 #### Parameters
 
-| Name     | Type               | Description |
-| :------- | :----------------- | :---------- |
-| `...arg` | `Parameters`<`T`\> | 执行参数    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...arg` | `Parameters`<`T`\> |  执行参数 |
 
 #### Returns
 
@@ -93,7 +93,7 @@
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[execute](../interfaces/Type.Type.DelegateInterface.md#execute)
 
----
+___
 
 ### isBound
 
@@ -117,7 +117,7 @@
 
 [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md).[isBound](../interfaces/Type.Type.DelegateInterface.md#isbound)
 
----
+___
 
 ### unbind
 

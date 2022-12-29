@@ -8,50 +8,50 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                   |
-| :------------------------------------------------------------------------------------ |
-| **[FaceMode](Gameplay.Gameplay.MoveControlMode.md#facemode)** = `2` <br> 面向模式     |
-| **[FixedMode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)** = `1` <br> 固定模式   |
-| **[FollowMode](Gameplay.Gameplay.MoveControlMode.md#followmode)** = `3` <br> 运动模式 |
-| **[FreeMode](Gameplay.Gameplay.MoveControlMode.md#freemode)** = `4` <br> 自由模式     |
-| **[null](Gameplay.Gameplay.MoveControlMode.md#null)** = `0` <br> 空                   |
+| Enumeration Members |
+| :-----|
+| **[FaceMode](Gameplay.Gameplay.MoveControlMode.md#facemode)** = ``2`` <br> 面向模式|
+| **[FixedMode](Gameplay.Gameplay.MoveControlMode.md#fixedmode)** = ``1`` <br> 固定模式|
+| **[FollowMode](Gameplay.Gameplay.MoveControlMode.md#followmode)** = ``3`` <br> 运动模式|
+| **[FreeMode](Gameplay.Gameplay.MoveControlMode.md#freemode)** = ``4`` <br> 自由模式|
+| **[null](Gameplay.Gameplay.MoveControlMode.md#null)** = ``0`` <br> 空|
 
 ## Enumeration Members
 
 ### FaceMode
 
-• **FaceMode** = `2`
+• **FaceMode** = ``2``
 
 面向模式
 
----
+___
 
 ### FixedMode
 
-• **FixedMode** = `1`
+• **FixedMode** = ``1``
 
 固定模式
 
----
+___
 
 ### FollowMode
 
-• **FollowMode** = `3`
+• **FollowMode** = ``3``
 
 运动模式
 
----
+___
 
 ### FreeMode
 
-• **FreeMode** = `4`
+• **FreeMode** = ``4``
 
 自由模式
 
----
+___
 
 ### null
 
-• **null** = `0`
+• **null** = ``0``
 
 空

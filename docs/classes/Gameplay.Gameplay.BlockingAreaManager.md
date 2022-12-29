@@ -13,16 +13,15 @@
 **`Example`**
 
 使用示例:单例
-
 ```ts
 // 无需主动生成
 ```
 
 ## Table of contents
 
-| Methods                                                                                                                                                                           |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[setPlayerPassableForArea](Gameplay.Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`MWActor`, `boolean`, `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限 |
+| Methods |
+| :-----|
+| **[setPlayerPassableForArea](Gameplay.Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`MWActor`, `boolean`, `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限|
 
 ## Methods
 
@@ -41,18 +40,17 @@
 **`Example`**
 
 使用示例:setPlayerPassableWithAllArea
-
 ```ts
-setPlayerPassableForArea(player, true, player.getPlayerID());
+setPlayerPassableForArea(player,true,player.getPlayerID())
 ```
 
 #### Parameters
 
-| Name      | Type      | Description  |
-| :-------- | :-------- | :----------- |
-| `Target`  | `MWActor` | 对应 Actor   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Target` | `MWActor` | 对应Actor |
 | `CanPass` | `boolean` | 是否能够通过 |
-| `Guid`    | `number`  | Guid         |
+| `Guid` | `number` | Guid |
 
 #### Returns
 

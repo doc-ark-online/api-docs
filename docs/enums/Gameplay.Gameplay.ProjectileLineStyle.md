@@ -8,32 +8,32 @@
 
 ## Table of contents
 
-| Enumeration Members                                                               |
-| :-------------------------------------------------------------------------------- |
-| **[Dot](Gameplay.Gameplay.ProjectileLineStyle.md#dot)** = `0` <br> 点绘制         |
-| **[Line](Gameplay.Gameplay.ProjectileLineStyle.md#line)** = `1` <br> 线绘制       |
-| **[Segment](Gameplay.Gameplay.ProjectileLineStyle.md#segment)** = `2` <br> 段绘制 |
+| Enumeration Members |
+| :-----|
+| **[Dot](Gameplay.Gameplay.ProjectileLineStyle.md#dot)** = ``0`` <br> 点绘制|
+| **[Line](Gameplay.Gameplay.ProjectileLineStyle.md#line)** = ``1`` <br> 线绘制|
+| **[Segment](Gameplay.Gameplay.ProjectileLineStyle.md#segment)** = ``2`` <br> 段绘制|
 
 ## Enumeration Members
 
 ### Dot
 
-• **Dot** = `0`
+• **Dot** = ``0``
 
 点绘制
 
----
+___
 
 ### Line
 
-• **Line** = `1`
+• **Line** = ``1``
 
 线绘制
 
----
+___
 
 ### Segment
 
-• **Segment** = `2`
+• **Segment** = ``2``
 
 段绘制

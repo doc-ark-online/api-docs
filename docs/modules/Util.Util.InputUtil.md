@@ -4,21 +4,21 @@
 
 ## Table of contents
 
-| Functions                                                                                                                                                                                                                                                                      |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[convertScreenLocationToWorldSpace](Util.Util.InputUtil.md#convertscreenlocationtoworldspace)**(`number`, `number`): [`ConvertScreenResult`](../classes/Type.Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向                                    |
-| **[enableCursorInteractWithUI](Util.Util.InputUtil.md#enablecursorinteractwithui)**(`boolean`): `void` <br> 设置鼠标指针是否能与 UI 交互                                                                                                                                       |
-| **[enableCursorLock](Util.Util.InputUtil.md#enablecursorlock)**(`boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按 shift 键切换光标是否显示。                                                                                                                          |
-| **[isCursorInteractiveWithUI](Util.Util.InputUtil.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与 UI 交互                                                                                                                                               |
-| **[isCursorLockEnabled](Util.Util.InputUtil.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式                                                                                                                                         |
-| **[isCursorLocked](Util.Util.InputUtil.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定                                                                                                                                                                             |
-| **[isCursorVisible](Util.Util.InputUtil.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见                                                                                                                                                                           |
-| **[onKeyDown](Util.Util.InputUtil.md#onkeydown)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-点击                                                             |
-| **[onKeyPress](Util.Util.InputUtil.md#onkeypress)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-按压                                                           |
-| **[onKeyUp](Util.Util.InputUtil.md#onkeyup)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-抬起                                                                 |
-| **[projectWorldLocationToWidgetPosition](Util.Util.InputUtil.md#projectworldlocationtowidgetposition)**([`Vector`](../classes/Type.Type.Vector.md), `boolean`): [`ConvertScreenResult`](../classes/Type.Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上 |
-| **[setCursorLocked](Util.Util.InputUtil.md#setcursorlocked)**(`boolean`): `void` <br> 设置鼠标指针是否锁定                                                                                                                                                                     |
-| **[setCursorVisible](Util.Util.InputUtil.md#setcursorvisible)**(`boolean`): `void` <br> 设置鼠标指针是否可见                                                                                                                                                                   |
+| Functions |
+| :-----|
+| **[convertScreenLocationToWorldSpace](Util.Util.InputUtil.md#convertscreenlocationtoworldspace)**(`number`, `number`): [`ConvertScreenResult`](../classes/Type.Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[enableCursorInteractWithUI](Util.Util.InputUtil.md#enablecursorinteractwithui)**(`boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
+| **[enableCursorLock](Util.Util.InputUtil.md#enablecursorlock)**(`boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
+| **[isCursorInteractiveWithUI](Util.Util.InputUtil.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
+| **[isCursorLockEnabled](Util.Util.InputUtil.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
+| **[isCursorLocked](Util.Util.InputUtil.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
+| **[isCursorVisible](Util.Util.InputUtil.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
+| **[onKeyDown](Util.Util.InputUtil.md#onkeydown)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-点击|
+| **[onKeyPress](Util.Util.InputUtil.md#onkeypress)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-按压|
+| **[onKeyUp](Util.Util.InputUtil.md#onkeyup)**([`Keys`](../enums/Type.Type.Keys.md), (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.Events.EventListener.md) <br> 键盘输入事件-抬起|
+| **[projectWorldLocationToWidgetPosition](Util.Util.InputUtil.md#projectworldlocationtowidgetposition)**([`Vector`](../classes/Type.Type.Vector.md), `boolean`): [`ConvertScreenResult`](../classes/Type.Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
+| **[setCursorLocked](Util.Util.InputUtil.md#setcursorlocked)**(`boolean`): `void` <br> 设置鼠标指针是否锁定|
+| **[setCursorVisible](Util.Util.InputUtil.md#setcursorvisible)**(`boolean`): `void` <br> 设置鼠标指针是否可见|
 
 ## Functions
 
@@ -36,10 +36,10 @@
 
 #### Parameters
 
-| Name      | Type     | Description              |
-| :-------- | :------- | :----------------------- |
-| `screenX` | `number` | 屏幕 X 轴坐标值 default: |
-| `screenY` | `number` | 屏幕 Y 轴坐标值          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenX` | `number` |  屏幕X轴坐标值 default: |
+| `screenY` | `number` |  屏幕Y轴坐标值 |
 
 #### Returns
 
@@ -47,7 +47,7 @@
 
 屏幕坐标转换结果
 
----
+___
 
 ### enableCursorInteractWithUI
 
@@ -55,7 +55,7 @@
 
 **`Description`**
 
-设置鼠标指针是否能与 UI 交互
+设置鼠标指针是否能与UI交互
 
 **`Effect`**
 
@@ -63,15 +63,15 @@
 
 #### Parameters
 
-| Name          | Type      | Description |
-| :------------ | :-------- | :---------- |
-| `canInteract` | `boolean` | 可交互      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `canInteract` | `boolean` | 可交互 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### enableCursorLock
 
@@ -79,7 +79,7 @@
 
 **`Description`**
 
-设置是开启光标锁功能，开启后可以按 shift 键切换光标是否显示。
+设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
 **`Effect`**
 
@@ -87,15 +87,15 @@
 
 #### Parameters
 
-| Name                | Type      | Description |
-| :------------------ | :-------- | :---------- |
-| `isEnableMouseLock` | `boolean` | 是否可切换  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isEnableMouseLock` | `boolean` | 是否可切换 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### isCursorInteractiveWithUI
 
@@ -103,7 +103,7 @@
 
 **`Description`**
 
-获取鼠标指针是否能与 UI 交互
+获取鼠标指针是否能与UI交互
 
 **`Effect`**
 
@@ -113,9 +113,9 @@
 
 `boolean`
 
-是否能与 UI 交互
+是否能与UI交互
 
----
+___
 
 ### isCursorLockEnabled
 
@@ -135,7 +135,7 @@
 
 是否可切换
 
----
+___
 
 ### isCursorLocked
 
@@ -155,7 +155,7 @@
 
 是否锁定
 
----
+___
 
 ### isCursorVisible
 
@@ -175,7 +175,7 @@
 
 是否可见
 
----
+___
 
 ### onKeyDown
 
@@ -191,10 +191,10 @@
 
 #### Parameters
 
-| Name       | Type                                 | Description |
-| :--------- | :----------------------------------- | :---------- |
-| `Key`      | [`Keys`](../enums/Type.Type.Keys.md) | 按键值      |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Key` | [`Keys`](../enums/Type.Type.Keys.md) | 按键值 |
+| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
 
 #### Returns
 
@@ -202,7 +202,7 @@
 
 返回一个事件监听器
 
----
+___
 
 ### onKeyPress
 
@@ -218,10 +218,10 @@
 
 #### Parameters
 
-| Name       | Type                                 | Description |
-| :--------- | :----------------------------------- | :---------- |
-| `Key`      | [`Keys`](../enums/Type.Type.Keys.md) | 按键值      |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Key` | [`Keys`](../enums/Type.Type.Keys.md) | 按键值 |
+| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
 
 #### Returns
 
@@ -229,7 +229,7 @@
 
 返回一个事件监听器
 
----
+___
 
 ### onKeyUp
 
@@ -245,10 +245,10 @@
 
 #### Parameters
 
-| Name       | Type                                 | Description |
-| :--------- | :----------------------------------- | :---------- |
-| `Key`      | [`Keys`](../enums/Type.Type.Keys.md) | 按键值      |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Key` | [`Keys`](../enums/Type.Type.Keys.md) | 按键值 |
+| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
 
 #### Returns
 
@@ -256,7 +256,7 @@
 
 返回一个事件监听器
 
----
+___
 
 ### projectWorldLocationToWidgetPosition
 
@@ -272,18 +272,18 @@
 
 #### Parameters
 
-| Name                      | Type                                       | Description                                                                                           |
-| :------------------------ | :----------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-| `worldLocation`           | [`Vector`](../classes/Type.Type.Vector.md) | 世界坐标                                                                                              |
-| `playerViewportRelative?` | `boolean`                                  | 这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `worldLocation` | [`Vector`](../classes/Type.Type.Vector.md) |  世界坐标 |
+| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
 
 #### Returns
 
 [`ConvertScreenResult`](../classes/Type.Type.ConvertScreenResult.md)
 
-屏幕坐标转换结果，无 WorldDirection，为默认值 Type.Vector.ZERO
+屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
 
----
+___
 
 ### setCursorLocked
 
@@ -299,15 +299,15 @@
 
 #### Parameters
 
-| Name     | Type      | Description |
-| :------- | :-------- | :---------- |
-| `isLock` | `boolean` | 是否锁定    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isLock` | `boolean` | 是否锁定 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setCursorVisible
 
@@ -323,9 +323,9 @@
 
 #### Parameters
 
-| Name        | Type      | Description |
-| :---------- | :-------- | :---------- |
-| `isVisible` | `boolean` | 是否可见    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isVisible` | `boolean` | 是否可见 |
 
 #### Returns
 

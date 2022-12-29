@@ -9,10 +9,10 @@
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-| `S`  |
-| `P`  |
+| :------ |
+| `T` |
+| `S` |
+| `P` |
 
 ## Hierarchy
 
@@ -22,25 +22,25 @@
 
 ## Table of contents
 
-| Accessors                                                               |
-| :---------------------------------------------------------------------- |
-| **[count](Type.Type.Action3.md#count)**(): `number` <br> 监听方法的数量 |
+| Accessors |
+| :-----|
+| **[count](Type.Type.Action3.md#count)**(): `number` <br> 监听方法的数量|
 
-| Methods                                                                                                                        |
-| :----------------------------------------------------------------------------------------------------------------------------- |
-| **[add](Type.Type.Action3.md#add)**((`a`: `T`, `b`: `S`, `c`: `P`) => `void`, `any`): `void` <br> 添加一个监听方法(有重复过滤) |
-| **[call](Type.Type.Action3.md#call)**(`T`, `S`, `P`): `void` <br> 执行                                                         |
-| **[clear](Type.Type.Action3.md#clear)**(): `void` <br> 清除所有监听                                                            |
-| **[includes](Type.Type.Action3.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法                      |
-| **[remove](Type.Type.Action3.md#remove)**((`a`: `T`, `b`: `S`, `c`: `P`) => `void`, `any`): `void` <br> 移除一个监听方法       |
+| Methods |
+| :-----|
+| **[add](Type.Type.Action3.md#add)**((`a`: `T`, `b`: `S`, `c`: `P`) => `void`, `any`): `void` <br> 添加一个监听方法(有重复过滤)|
+| **[call](Type.Type.Action3.md#call)**(`T`, `S`, `P`): `void` <br> 执行|
+| **[clear](Type.Type.Action3.md#clear)**(): `void` <br> 清除所有监听|
+| **[includes](Type.Type.Action3.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法|
+| **[remove](Type.Type.Action3.md#remove)**((`a`: `T`, `b`: `S`, `c`: `P`) => `void`, `any`): `void` <br> 移除一个监听方法|
 
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-| `S`  |
-| `P`  |
+| :------ |
+| `T` |
+| `S` |
+| `P` |
 
 ## Accessors
 
@@ -76,10 +76,10 @@
 
 #### Parameters
 
-| Name       | Type                                     | Description           |
-| :--------- | :--------------------------------------- | :-------------------- |
-| `fn`       | (`a`: `T`, `b`: `S`, `c`: `P`) => `void` | 方法                  |
-| `thisArg?` | `any`                                    | 域 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fn` | (`a`: `T`, `b`: `S`, `c`: `P`) => `void` |  方法 |
+| `thisArg?` | `any` |  域 default: undefined |
 
 #### Returns
 
@@ -89,7 +89,7 @@
 
 [Action](Type.Type.Action.md).[add](Type.Type.Action.md#add)
 
----
+___
 
 ### call
 
@@ -106,10 +106,10 @@
 #### Parameters
 
 | Name | Type | Description |
-| :--- | :--- | :---------- |
-| `a`  | `T`  | 参数 a      |
-| `b`  | `S`  | 参数 b      |
-| `c`  | `P`  | 参数 c      |
+| :------ | :------ | :------ |
+| `a` | `T` |  参数a |
+| `b` | `S` |  参数b |
+| `c` | `P` |  参数c |
 
 #### Returns
 
@@ -119,7 +119,7 @@
 
 [Action](Type.Type.Action.md).[call](Type.Type.Action.md#call)
 
----
+___
 
 ### clear
 
@@ -137,7 +137,7 @@
 
 `void`
 
----
+___
 
 ### includes
 
@@ -153,10 +153,10 @@
 
 #### Parameters
 
-| Name      | Type       | Description |
-| :-------- | :--------- | :---------- |
-| `fn`      | `Function` | 方法        |
-| `thisArg` | `any`      | 域          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fn` | `Function` |  方法 |
+| `thisArg` | `any` |  域 |
 
 #### Returns
 
@@ -164,7 +164,7 @@
 
 结果
 
----
+___
 
 ### remove
 
@@ -180,10 +180,10 @@
 
 #### Parameters
 
-| Name      | Type                                     | Description |
-| :-------- | :--------------------------------------- | :---------- |
-| `fn`      | (`a`: `T`, `b`: `S`, `c`: `P`) => `void` | 方法        |
-| `thisArg` | `any`                                    | 域          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fn` | (`a`: `T`, `b`: `S`, `c`: `P`) => `void` |  方法 |
+| `thisArg` | `any` |  域 |
 
 #### Returns
 

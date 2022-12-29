@@ -8,10 +8,10 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[horizontalCollation](UI.UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) <br> 水平适应规则 |
-| **[verticalCollation](UI.UI.UIChildCollation.md#verticalcollation)**: [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md) <br> 垂直适应规则         |
+| Properties |
+| :-----|
+| **[horizontalCollation](UI.UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) <br> 水平适应规则|
+| **[verticalCollation](UI.UI.UIChildCollation.md#verticalcollation)**: [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md) <br> 垂直适应规则|
 
 **`Description`**
 
@@ -23,10 +23,10 @@
 
 #### Parameters
 
-| Name | Type                                                               | Description  |
-| :--- | :----------------------------------------------------------------- | :----------- |
-| `h`  | [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) | 水平应用规则 |
-| `v`  | [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md)     | 垂直使用规则 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `h` | [`UIHorizontalCollation`](../enums/UI.UI.UIHorizontalCollation.md) | 水平应用规则 |
+| `v` | [`UIVerticalCollation`](../enums/UI.UI.UIVerticalCollation.md) | 垂直使用规则 |
 
 ## Properties
 
@@ -38,7 +38,7 @@
 
 水平适应规则
 
----
+___
 
 ### verticalCollation
 

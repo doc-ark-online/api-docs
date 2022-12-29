@@ -6,18 +6,18 @@
 
 **`Description`**
 
-debug 调试服务
+debug调试服务
 
 **`Precautions`**
 
-单例类，请使用 instance 获取对象
+单例类，请使用instance获取对象
 
 ## Table of contents
 
-| Methods                                                                                                                                              |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[getHeapStatistics](Service.Service.DebugService.md#getheapstatistics)**(): `HeapStatistics` <br> 获取当前项目所有 TS 脚本内存占用                 |
-| **[getInstance](Service.Service.DebugService.md#getinstance)**(): [`DebugService`](Service.Service.DebugService.md) <br> 获取 debug 调试服务全局实例 |
+| Methods |
+| :-----|
+| **[getHeapStatistics](Service.Service.DebugService.md#getheapstatistics)**(): `HeapStatistics` <br> 获取当前项目所有TS脚本内存占用|
+| **[getInstance](Service.Service.DebugService.md#getinstance)**(): [`DebugService`](Service.Service.DebugService.md) <br> 获取debug调试服务全局实例|
 
 ## Methods
 
@@ -27,7 +27,7 @@ debug 调试服务
 
 **`Description`**
 
-获取当前项目所有 TS 脚本内存占用
+获取当前项目所有TS脚本内存占用
 
 **`Effect`**
 
@@ -39,7 +39,7 @@ debug 调试服务
 
 HeapStatistics 内存数据
 
----
+___
 
 ### getInstance
 
@@ -47,7 +47,7 @@ HeapStatistics 内存数据
 
 **`Description`**
 
-获取 debug 调试服务全局实例
+获取debug调试服务全局实例
 
 **`Effect`**
 
@@ -57,4 +57,4 @@ HeapStatistics 内存数据
 
 [`DebugService`](Service.Service.DebugService.md)
 
-debug 调试服务全局实例
+debug调试服务全局实例

@@ -4,31 +4,31 @@
 
 **`Description`**
 
-UI 的驱动脚本基类
+UI的驱动脚本基类
 
 ## Table of contents
 
-| Accessors                                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------ |
-| **[canUpdate](UI.UI.UIBehavior.md#canupdate)**(): `boolean` <br> 是否能触发 onUpdate 函数                                             |
-| **[fullScreen](UI.UI.UIBehavior.md#fullscreen)**(`boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小  |
-| **[layer](UI.UI.UIBehavior.md#layer)**(): `number` <br> 获取 UI 的 Layer 层级,显示可能会影响到 zOrder,使用 UIManager 显示 UI 时，     |
-| **[rootCanvas](UI.UI.UIBehavior.md#rootcanvas)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取 UI 的根 Canvas 节点                         |
-| **[uiObject](UI.UI.UIBehavior.md#uiobject)**(): [`Widget`](UI.UI.Widget.md) <br> 获取脚本挂载的 UI 对象                               |
-| **[uiWidgetBase](UI.UI.UIBehavior.md#uiwidgetbase)**(): [`UserWidget`](UI.UI.UserWidget.md) <br> 转化 UIObject 为指定 UserWidget 对象 |
-| **[visible](UI.UI.UIBehavior.md#visible)**(): `boolean` <br> 获取 UI 是否显示                                                         |
+| Accessors |
+| :-----|
+| **[canUpdate](UI.UI.UIBehavior.md#canupdate)**(): `boolean` <br> 是否能触发onUpdate函数|
+| **[fullScreen](UI.UI.UIBehavior.md#fullscreen)**(`boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
+| **[layer](UI.UI.UIBehavior.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，|
+| **[rootCanvas](UI.UI.UIBehavior.md#rootcanvas)**(): [`Canvas`](UI.UI.Canvas.md) <br> 获取UI的根Canvas节点|
+| **[uiObject](UI.UI.UIBehavior.md#uiobject)**(): [`Widget`](UI.UI.Widget.md) <br> 获取脚本挂载的UI对象|
+| **[uiWidgetBase](UI.UI.UIBehavior.md#uiwidgetbase)**(): [`UserWidget`](UI.UI.UserWidget.md) <br> 转化UIObject 为指定UserWidget对象|
+| **[visible](UI.UI.UIBehavior.md#visible)**(): `boolean` <br> 获取UI是否显示|
 
-| Methods                                                                                                                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[destroy](UI.UI.UIBehavior.md#destroy)**(): `void` <br> 销毁 UI 对象                                                                                                                                                                                     |
-| **[detectDrag](UI.UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 触发 DragDrop 事件的检测                                                                                                  |
-| **[detectDragIfPressed](UI.UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.UI.PointerEvent.md), [`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 如果事件检测通过就触发 DragDrop 事件的回复                     |
-| **[newDragDrop](UI.UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.UI.DragPivot.md), [`Vector2`](Type.Type.Vector2.md)): [`DragDropOperation`](UI.UI.DragDropOperation.md) <br> 创建 DragDrop 事件 |
-| **[setVisible](UI.UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置 UI 是否显示,会触发绑定的脚本的 OnShow/OnHide 事件，可以传递参数                                                                                                   |
-| **[addBehavior](UI.UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录                                                                                                                                                    |
-| **[clearBehavior](UI.UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录                                                                                                                                                                   |
-| **[getBehavior](UI.UI.UIBehavior.md#getbehavior)**(`string`): `any` <br> 获取一个全局的行为记录                                                                                                                                                            |
-| **[removeBehavior](UI.UI.UIBehavior.md#removebehavior)**(`string`): `void` <br> 移除一个全局的行为记录                                                                                                                                                     |
+| Methods |
+| :-----|
+| **[destroy](UI.UI.UIBehavior.md#destroy)**(): `void` <br> 销毁UI对象|
+| **[detectDrag](UI.UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 触发DragDrop事件的检测|
+| **[detectDragIfPressed](UI.UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.UI.PointerEvent.md), [`Keys`](../enums/Type.Type.Keys.md)): [`EventReply`](UI.UI.EventReply.md) <br> 如果事件检测通过就触发DragDrop事件的回复|
+| **[newDragDrop](UI.UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.UI.DragPivot.md), [`Vector2`](Type.Type.Vector2.md)): [`DragDropOperation`](UI.UI.DragDropOperation.md) <br> 创建DragDrop事件|
+| **[setVisible](UI.UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
+| **[addBehavior](UI.UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录|
+| **[clearBehavior](UI.UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录|
+| **[getBehavior](UI.UI.UIBehavior.md#getbehavior)**(`string`): `any` <br> 获取一个全局的行为记录|
+| **[removeBehavior](UI.UI.UIBehavior.md#removebehavior)**(`string`): `void` <br> 移除一个全局的行为记录|
 
 ## Accessors
 
@@ -38,7 +38,7 @@ UI 的驱动脚本基类
 
 **`Description`**
 
-是否能触发 onUpdate 函数
+是否能触发onUpdate函数
 
 **`Effect`**
 
@@ -54,7 +54,7 @@ UI 的驱动脚本基类
 
 **`Description`**
 
-设置是否能触发 onUpdate 函数
+设置是否能触发onUpdate函数
 
 **`Effect`**
 
@@ -62,15 +62,15 @@ UI 的驱动脚本基类
 
 #### Parameters
 
-| Name         | Type      | Description    |
-| :----------- | :-------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `bCanUpdate` | `boolean` | 能否触发的标志 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### fullScreen
 
@@ -86,15 +86,15 @@ UI 的驱动脚本基类
 
 #### Parameters
 
-| Name     | Type      | Description                |
-| :------- | :-------- | :------------------------- |
-| `inFull` | `boolean` | 设置为随父节点大小全屏适配 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inFull` | `boolean` |  设置为随父节点大小全屏适配 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### layer
 
@@ -102,8 +102,8 @@ UI 的驱动脚本基类
 
 **`Description`**
 
-获取 UI 的 Layer 层级,显示可能会影响到 zOrder,使用 UIManager 显示 UI 时，
-会根据 Layer 层级动态设置 zOrder，每一次调用都会重新计算当前 layer 的新 zOrder，确保 UI 位于当前层级的顶端
+获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
+会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
 **`Effect`**
 
@@ -112,7 +112,6 @@ UI 的驱动脚本基类
 **`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
-
 ```ts
 Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
 // 内置定义好的层级
@@ -132,14 +131,14 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 `number`
 
-Layer 层级
+Layer层级
 
 • `set` **layer**(`inLayer`): `void`
 
 **`Description`**
 
-设置 UI 的所在的 Layer 层级,显示可能会影响到 zOrder,使用 UIManager 显示 UI 时，
-会根据 Layer 层级动态设置 zOrder，每一次调用都会重新计算当前 layer 的新 zOrder，确保 UI 位于当前层级的顶端
+设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
+会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
 **`Effect`**
 
@@ -148,7 +147,6 @@ Layer 层级
 **`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
-
 ```ts
 this.layer = Extension.UILayerScene;
 // 内置定义好的层级
@@ -166,15 +164,15 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name      | Type     | Description     |
-| :-------- | :------- | :-------------- |
-| `inLayer` | `number` | 设置 Layer 层级 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inLayer` | `number` |  设置Layer层级 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rootCanvas
 
@@ -182,7 +180,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-获取 UI 的根 Canvas 节点
+获取UI的根Canvas节点
 
 **`Effect`**
 
@@ -192,9 +190,9 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 [`Canvas`](UI.UI.Canvas.md)
 
-返回 canvas 节点
+返回canvas节点
 
----
+___
 
 ### uiObject
 
@@ -202,15 +200,15 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-获取脚本挂载的 UI 对象
+获取脚本挂载的UI对象
 
 #### Returns
 
 [`Widget`](UI.UI.Widget.md)
 
-脚本挂载的 UI 对象
+脚本挂载的UI对象
 
----
+___
 
 ### uiWidgetBase
 
@@ -218,7 +216,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-转化 UIObject 为指定 UserWidget 对象
+转化UIObject 为指定UserWidget对象
 
 **`Effect`**
 
@@ -228,9 +226,9 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 [`UserWidget`](UI.UI.UserWidget.md)
 
-返回转化指定 UserWidget 对象
+返回转化指定UserWidget对象
 
----
+___
 
 ### visible
 
@@ -238,7 +236,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-获取 UI 是否显示
+获取UI是否显示
 
 **`Effect`**
 
@@ -254,7 +252,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-设置 UI 是否显示,会触发绑定的脚本的 OnShow/OnHide 事件，需要传递参数的可以使用 setVisible 方法
+设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，需要传递参数的可以使用setVisible方法
 
 **`Effect`**
 
@@ -262,9 +260,9 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name        | Type      | Description                                                         |
-| :---------- | :-------- | :------------------------------------------------------------------ |
-| `inVisible` | `boolean` | 设置是否可见 可见设置为 SelfHitTestInvisible,不可见设置为 Collapsed |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inVisible` | `boolean` |  设置是否可见 可见设置为SelfHitTestInvisible,不可见设置为Collapsed |
 
 #### Returns
 
@@ -278,7 +276,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-销毁 UI 对象
+销毁UI对象
 
 **`Effect`**
 
@@ -288,7 +286,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 `void`
 
----
+___
 
 ### detectDrag
 
@@ -296,7 +294,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-触发 DragDrop 事件的检测
+触发DragDrop事件的检测
 
 **`Effect`**
 
@@ -304,8 +302,8 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name      | Type                                 | Description                |
-| :-------- | :----------------------------------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `dragKey` | [`Keys`](../enums/Type.Type.Keys.md) | 触发按键 default:Type.Keys |
 
 #### Returns
@@ -314,7 +312,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 返回触发的事件回复
 
----
+___
 
 ### detectDragIfPressed
 
@@ -322,7 +320,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-如果事件检测通过就触发 DragDrop 事件的回复
+如果事件检测通过就触发DragDrop事件的回复
 
 **`Effect`**
 
@@ -330,10 +328,10 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name           | Type                                    | Description        |
-| :------------- | :-------------------------------------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inPointEvent` | [`PointerEvent`](UI.UI.PointerEvent.md) | 传递触发的事件信息 |
-| `dragKey`      | [`Keys`](../enums/Type.Type.Keys.md)    | 触发按键           |
+| `dragKey` | [`Keys`](../enums/Type.Type.Keys.md) | 触发按键 |
 
 #### Returns
 
@@ -341,7 +339,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 返回触发的事件回复
 
----
+___
 
 ### newDragDrop
 
@@ -349,7 +347,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-创建 DragDrop 事件
+创建DragDrop事件
 
 **`Effect`**
 
@@ -357,13 +355,13 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name             | Type                                       | Description                                         |
-| :--------------- | :----------------------------------------- | :-------------------------------------------------- |
-| `inVisualWidget` | [`Widget`](UI.UI.Widget.md)                | 拖拽显示的 UI 控件                                  |
-| `inTag?`         | `string`                                   | 标签文本 default:""                                 |
-| `inPayLoad?`     | `any`                                      | 拖拽事件数据信息 default:null                       |
-| `inPivot?`       | [`DragPivot`](../enums/UI.UI.DragPivot.md) | 拖拽显示 UI 的锚点 default:UIType.DragPivot.TopLeft |
-| `inOffset?`      | [`Vector2`](Type.Type.Vector2.md)          | 拖拽显示 UI 相对于锚点的偏移 default:vector2(0,0)   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inVisualWidget` | [`Widget`](UI.UI.Widget.md) | 拖拽显示的UI控件 |
+| `inTag?` | `string` | 标签文本 default:"" |
+| `inPayLoad?` | `any` | 拖拽事件数据信息 default:null |
+| `inPivot?` | [`DragPivot`](../enums/UI.UI.DragPivot.md) | 拖拽显示UI的锚点 default:UIType.DragPivot.TopLeft |
+| `inOffset?` | [`Vector2`](Type.Type.Vector2.md) | 拖拽显示UI相对于锚点的偏移 default:vector2(0,0) |
 
 #### Returns
 
@@ -371,7 +369,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 返回触发的事件回复
 
----
+___
 
 ### setVisible
 
@@ -379,7 +377,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 **`Description`**
 
-设置 UI 是否显示,会触发绑定的脚本的 OnShow/OnHide 事件，可以传递参数
+设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数
 
 **`Effect`**
 
@@ -387,16 +385,16 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name        | Type                                                                | Description                                                                                                                   |
-| :---------- | :------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------- |
-| `inVisible` | `boolean` \| [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) | 设置是否可见,如果是 boolean 类型设置为 SelfHitTestInvisible,不可见设置为 Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
-| `...params` | `any`[]                                                             | 传递给 onShow 的参数                                                                                                          |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inVisible` | `boolean` \| [`SlateVisibility`](../enums/UI.UI.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
+| `...params` | `any`[] |  传递给onShow的参数 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### addBehavior
 
@@ -412,16 +410,16 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `key`   | `string` | 行为标记    |
-| `value` | `any`    | 行为值      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `key` | `string` |  行为标记 |
+| `value` | `any` |  行为值 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### clearBehavior
 
@@ -439,7 +437,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 `void`
 
----
+___
 
 ### getBehavior
 
@@ -455,9 +453,9 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name  | Type     | Description |
-| :---- | :------- | :---------- |
-| `key` | `string` | 行为标记    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `key` | `string` |  行为标记 |
 
 #### Returns
 
@@ -465,7 +463,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 返回一个行为
 
----
+___
 
 ### removeBehavior
 
@@ -481,9 +479,9 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 #### Parameters
 
-| Name  | Type     | Description |
-| :---- | :------- | :---------- |
-| `key` | `string` | 行为标记    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `key` | `string` |  行为标记 |
 
 #### Returns
 

@@ -14,180 +14,180 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                                                                                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[onLoadAppearanceDataAllCompleted](Gameplay.Gameplay.Humanoid.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 加载完角色形象数据后的回调 |
-| **[onMeshChanged](Gameplay.Gameplay.Humanoid.md#onmeshchanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色模型切换成功广播                                                                           |
-| **[onMovementStateChanged](Gameplay.Gameplay.Humanoid.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 移动状态切换时的回调                                                                                                                   |
-| **[onSetAppearanceDataCompleted](Gameplay.Gameplay.Humanoid.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 设置一个角色编辑 API 成功后的回调                            |
-| **[onTextureChanged](Gameplay.Gameplay.Humanoid.md#ontexturechanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色贴图切换成功广播                                                                     |
-| **[player](Gameplay.Gameplay.Humanoid.md#player)**: [`Player`](Gameplay.Gameplay.Player.md) <br> 玩家对象                                                                                                                                                                                                          |
+| Properties |
+| :-----|
+| **[onLoadAppearanceDataAllCompleted](Gameplay.Gameplay.Humanoid.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 加载完角色形象数据后的回调|
+| **[onMeshChanged](Gameplay.Gameplay.Humanoid.md#onmeshchanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色模型切换成功广播|
+| **[onMovementStateChanged](Gameplay.Gameplay.Humanoid.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 移动状态切换时的回调|
+| **[onSetAppearanceDataCompleted](Gameplay.Gameplay.Humanoid.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 设置一个角色编辑API成功后的回调|
+| **[onTextureChanged](Gameplay.Gameplay.Humanoid.md#ontexturechanged)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色贴图切换成功广播|
+| **[player](Gameplay.Gameplay.Humanoid.md#player)**: [`Player`](Gameplay.Gameplay.Player.md) <br> 玩家对象|
 
-| Accessors                                                                                                                                                                                                                                           |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[airControl](Gameplay.Gameplay.Humanoid.md#aircontrol)**(): `number` <br> 角色在空中时, 控制水平方向移动的灵活度                                                                                                                                  |
-| **[airControlBoostMultiplier](Gameplay.Gameplay.Humanoid.md#aircontrolboostmultiplier)**(): `number` <br> 当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数                                              |
-| **[airControlBoostVelocityThreshold](Gameplay.Gameplay.Humanoid.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍 |
-| **[animationMode](Gameplay.Gameplay.Humanoid.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md) <br> 动画播放模式                                                                                                |
-| **[animationStance](Gameplay.Gameplay.Humanoid.md#animationstance)**(): `string` <br> 动画姿态                                                                                                                                                      |
-| **[appearance](Gameplay.Gameplay.Humanoid.md#appearance)**(): [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md) <br> 当前外观修改对象                                                                                                         |
-| **[baseShadowLocationOffset](Gameplay.Gameplay.Humanoid.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移                                                                               |
-| **[baseShadowMaxVisibleHeight](Gameplay.Gameplay.Humanoid.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度                                                                                                              |
-| **[baseShadowScale](Gameplay.Gameplay.Humanoid.md#baseshadowscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影的缩放                                                                                                                       |
-| **[basicStance](Gameplay.Gameplay.Humanoid.md#basicstance)**(): `string` <br> 基础姿态                                                                                                                                                              |
-| **[basicStanceAimOffsetEnable](Gameplay.Gameplay.Humanoid.md#basicstanceaimoffsetenable)**(): `boolean` <br> 是否基础姿态的开启瞄准偏移                                                                                                             |
-| **[brakingDecelerationFalling](Gameplay.Gameplay.Humanoid.md#brakingdecelerationfalling)**(): `number` <br> 下落制动速率                                                                                                                            |
-| **[brakingDecelerationFlying](Gameplay.Gameplay.Humanoid.md#brakingdecelerationflying)**(): `number` <br> 飞行制动速率                                                                                                                              |
-| **[brakingDecelerationSwimming](Gameplay.Gameplay.Humanoid.md#brakingdecelerationswimming)**(): `number` <br> 游泳制动速率                                                                                                                          |
-| **[brakingDecelerationWalking](Gameplay.Gameplay.Humanoid.md#brakingdecelerationwalking)**(): `number` <br> 行走制动速率                                                                                                                            |
-| **[canSetAppearanceData](Gameplay.Gameplay.Humanoid.md#cansetappearancedata)**(): `boolean` <br> 是否可以设置角色形象数据                                                                                                                           |
-| **[canStepUpOn](Gameplay.Gameplay.Humanoid.md#canstepupon)**(): `boolean` <br> 获取组件是否可以被玩家站立                                                                                                                                           |
-| **[capsuleHalfHeight](Gameplay.Gameplay.Humanoid.md#capsulehalfheight)**(): `number` <br> 胶囊体半高                                                                                                                                                |
-| **[capsuleRadius](Gameplay.Gameplay.Humanoid.md#capsuleradius)**(): `number` <br> 胶囊体半径                                                                                                                                                        |
-| **[characterName](Gameplay.Gameplay.Humanoid.md#charactername)**(): `string` <br> 角色名称                                                                                                                                                          |
-| **[collisionEnable](Gameplay.Gameplay.Humanoid.md#collisionenable)**(): `boolean` <br> 是否开启碰撞                                                                                                                                                 |
-| **[collisionExtent](Gameplay.Gameplay.Humanoid.md#collisionextent)**(): [`Vector`](Type.Type.Vector.md) <br> 碰撞形状的大小                                                                                                                         |
-| **[collisionShape](Gameplay.Gameplay.Humanoid.md#collisionshape)**(): [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) <br> 碰撞形状                                                                                              |
-| **[collisionWithOtherCharacterEnable](Gameplay.Gameplay.Humanoid.md#collisionwithothercharacterenable)**(): `boolean` <br> 能否与其他角色发生碰撞                                                                                                   |
-| **[crouchEnable](Gameplay.Gameplay.Humanoid.md#crouchenable)**(): `boolean` <br> 启用/禁用下蹲能力                                                                                                                                                  |
-| **[crouchedHeight](Gameplay.Gameplay.Humanoid.md#crouchedheight)**(): `number` <br> 下蹲时胶囊体的高度                                                                                                                                              |
-| **[forwardVector](Gameplay.Gameplay.Humanoid.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                                                                     |
-| **[gravityScale](Gameplay.Gameplay.Humanoid.md#gravityscale)**(): `number` <br> 重力倍率                                                                                                                                                            |
-| **[groundFriction](Gameplay.Gameplay.Humanoid.md#groundfriction)**(): `number` <br> 地面摩檫力                                                                                                                                                      |
-| **[guid](Gameplay.Gameplay.Humanoid.md#guid)**(): `string` <br> 获取对象的 guid（唯一标识一个对象的字符串）。                                                                                                                                       |
-| **[headUIVisible](Gameplay.Gameplay.Humanoid.md#headuivisible)**(): `boolean` <br> 头顶 UI 是否可见                                                                                                                                                 |
-| **[headUIVisibleRange](Gameplay.Gameplay.Humanoid.md#headuivisiblerange)**(): `number` <br> 头顶 UI 可见距离                                                                                                                                        |
-| **[isCrouching](Gameplay.Gameplay.Humanoid.md#iscrouching)**(): `boolean` <br> 是否处于下蹲状态                                                                                                                                                     |
-| **[isJumping](Gameplay.Gameplay.Humanoid.md#isjumping)**(): `boolean` <br> 是否正在跳跃                                                                                                                                                             |
-| **[isMoving](Gameplay.Gameplay.Humanoid.md#ismoving)**(): `boolean` <br> 是否正在移动                                                                                                                                                               |
-| **[jumpEnable](Gameplay.Gameplay.Humanoid.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力                                                                                                                                                      |
-| **[jumpMaxCount](Gameplay.Gameplay.Humanoid.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数                                                                                                                                                      |
-| **[jumpingOutOfWaterEnable](Gameplay.Gameplay.Humanoid.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面                                                                                                                             |
-| **[locallyVisible](Gameplay.Gameplay.Humanoid.md#locallyvisible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()                                                                                                      |
-| **[lockStatus](Gameplay.Gameplay.Humanoid.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定                                                                                                                                                       |
-| **[maxAcceleration](Gameplay.Gameplay.Humanoid.md#maxacceleration)**(): `number` <br> 最大加速度                                                                                                                                                    |
-| **[maxFallingSpeed](Gameplay.Gameplay.Humanoid.md#maxfallingspeed)**(): `number` <br> 最大下落速度                                                                                                                                                  |
-| **[maxFlySpeed](Gameplay.Gameplay.Humanoid.md#maxflyspeed)**(): `number` <br> 最大飞行速度                                                                                                                                                          |
-| **[maxJumpHeight](Gameplay.Gameplay.Humanoid.md#maxjumpheight)**(): `number` <br> 最大跳跃高度                                                                                                                                                      |
-| **[maxStepHeight](Gameplay.Gameplay.Humanoid.md#maxstepheight)**(): `number` <br> 获取角色最大可跨越高度                                                                                                                                            |
-| **[maxSwimSpeed](Gameplay.Gameplay.Humanoid.md#maxswimspeed)**(): `number` <br> 最大游泳速度                                                                                                                                                        |
-| **[maxWalkSpeed](Gameplay.Gameplay.Humanoid.md#maxwalkspeed)**(): `number` <br> 地面最大速度                                                                                                                                                        |
-| **[maxWalkSpeedCrouched](Gameplay.Gameplay.Humanoid.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度                                                                                                                        |
-| **[moveEnable](Gameplay.Gameplay.Humanoid.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力                                                                                                                                                      |
-| **[moveFacingDirection](Gameplay.Gameplay.Humanoid.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md) <br> 运动面朝方向                                                                        |
-| **[movementAxisDirection](Gameplay.Gameplay.Humanoid.md#movementaxisdirection)**(): [`Vector`](Type.Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效                                                   |
-| **[movementDirection](Gameplay.Gameplay.Humanoid.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md) <br> 运动时依据的正方向                                                                          |
-| **[movementState](Gameplay.Gameplay.Humanoid.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md) <br> 当前角色运动状态                                                                                              |
-| **[name](Gameplay.Gameplay.Humanoid.md#name)**(): `string` <br> 返回当前物体名称                                                                                                                                                                    |
-| **[netStatus](Gameplay.Gameplay.Humanoid.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态                                                                                                                |
-| **[outOfWaterZ](Gameplay.Gameplay.Humanoid.md#outofwaterz)**(): `number` <br> 出水时 Z 轴方向上的速度                                                                                                                                               |
-| **[parent](Gameplay.Gameplay.Humanoid.md#parent)**(): `GameObject` <br> 获取当前父物体                                                                                                                                                              |
-| **[ragdollEnable](Gameplay.Gameplay.Humanoid.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态                                                                                                                                              |
-| **[relativeLocation](Gameplay.Gameplay.Humanoid.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                                                         |
-| **[relativeRotation](Gameplay.Gameplay.Humanoid.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                                                                     |
-| **[relativeScale](Gameplay.Gameplay.Humanoid.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                                                               |
-| **[rightVector](Gameplay.Gameplay.Humanoid.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                                                         |
-| **[rotateRate](Gameplay.Gameplay.Humanoid.md#rotaterate)**(): `number` <br> 最大转向速度                                                                                                                                                            |
-| **[scale](Gameplay.Gameplay.Humanoid.md#scale)**(): [`Vector`](Type.Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步                                                                                                                                 |
-| **[separateBrakingFrictionEnable](Gameplay.Gameplay.Humanoid.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦                                                                                                                 |
-| **[serverCalculateEnable](Gameplay.Gameplay.Humanoid.md#servercalculateenable)**(`boolean`): `void` <br> 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算                                                                        |
-| **[serverMovementEnable](Gameplay.Gameplay.Humanoid.md#servermovementenable)**(`boolean`): `void` <br> 开关角色的移动计算                                                                                                                           |
-| **[staticStatus](Gameplay.Gameplay.Humanoid.md#staticstatus)**(): `boolean` <br> 获取对象是否静态                                                                                                                                                   |
-| **[tag](Gameplay.Gameplay.Humanoid.md#tag)**(): `string` <br> 获取当前物体的 Tag                                                                                                                                                                    |
-| **[transform](Gameplay.Gameplay.Humanoid.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 transform                                                                                                                       |
-| **[upVector](Gameplay.Gameplay.Humanoid.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                                                               |
-| **[useUpdate](Gameplay.Gameplay.Humanoid.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新                                                                                                                                                     |
-| **[usedCapsuleCorrection](Gameplay.Gameplay.Humanoid.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。             |
-| **[velocity](Gameplay.Gameplay.Humanoid.md#velocity)**(): [`Vector`](Type.Type.Vector.md) <br> 当前移动速度                                                                                                                                         |
-| **[visible](Gameplay.Gameplay.Humanoid.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()                                                                                                                    |
-| **[walkableFloorAngle](Gameplay.Gameplay.Humanoid.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度                                                                                                                                        |
-| **[worldLocation](Gameplay.Gameplay.Humanoid.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                                                         |
-| **[worldRotation](Gameplay.Gameplay.Humanoid.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                                                                     |
-| **[worldScale](Gameplay.Gameplay.Humanoid.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                                                               |
+| Accessors |
+| :-----|
+| **[airControl](Gameplay.Gameplay.Humanoid.md#aircontrol)**(): `number` <br> 角色在空中时, 控制水平方向移动的灵活度|
+| **[airControlBoostMultiplier](Gameplay.Gameplay.Humanoid.md#aircontrolboostmultiplier)**(): `number` <br> 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数|
+| **[airControlBoostVelocityThreshold](Gameplay.Gameplay.Humanoid.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍|
+| **[animationMode](Gameplay.Gameplay.Humanoid.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md) <br> 动画播放模式|
+| **[animationStance](Gameplay.Gameplay.Humanoid.md#animationstance)**(): `string` <br> 动画姿态|
+| **[appearance](Gameplay.Gameplay.Humanoid.md#appearance)**(): [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md) <br> 当前外观修改对象|
+| **[baseShadowLocationOffset](Gameplay.Gameplay.Humanoid.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移|
+| **[baseShadowMaxVisibleHeight](Gameplay.Gameplay.Humanoid.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度|
+| **[baseShadowScale](Gameplay.Gameplay.Humanoid.md#baseshadowscale)**(): [`Vector2`](Type.Type.Vector2.md) <br> 模拟阴影的缩放|
+| **[basicStance](Gameplay.Gameplay.Humanoid.md#basicstance)**(): `string` <br> 基础姿态|
+| **[basicStanceAimOffsetEnable](Gameplay.Gameplay.Humanoid.md#basicstanceaimoffsetenable)**(): `boolean` <br> 是否基础姿态的开启瞄准偏移|
+| **[brakingDecelerationFalling](Gameplay.Gameplay.Humanoid.md#brakingdecelerationfalling)**(): `number` <br> 下落制动速率|
+| **[brakingDecelerationFlying](Gameplay.Gameplay.Humanoid.md#brakingdecelerationflying)**(): `number` <br> 飞行制动速率|
+| **[brakingDecelerationSwimming](Gameplay.Gameplay.Humanoid.md#brakingdecelerationswimming)**(): `number` <br> 游泳制动速率|
+| **[brakingDecelerationWalking](Gameplay.Gameplay.Humanoid.md#brakingdecelerationwalking)**(): `number` <br> 行走制动速率|
+| **[canSetAppearanceData](Gameplay.Gameplay.Humanoid.md#cansetappearancedata)**(): `boolean` <br> 是否可以设置角色形象数据|
+| **[canStepUpOn](Gameplay.Gameplay.Humanoid.md#canstepupon)**(): `boolean` <br> 获取组件是否可以被玩家站立|
+| **[capsuleHalfHeight](Gameplay.Gameplay.Humanoid.md#capsulehalfheight)**(): `number` <br> 胶囊体半高|
+| **[capsuleRadius](Gameplay.Gameplay.Humanoid.md#capsuleradius)**(): `number` <br> 胶囊体半径|
+| **[characterName](Gameplay.Gameplay.Humanoid.md#charactername)**(): `string` <br> 角色名称|
+| **[collisionEnable](Gameplay.Gameplay.Humanoid.md#collisionenable)**(): `boolean` <br> 是否开启碰撞|
+| **[collisionExtent](Gameplay.Gameplay.Humanoid.md#collisionextent)**(): [`Vector`](Type.Type.Vector.md) <br> 碰撞形状的大小|
+| **[collisionShape](Gameplay.Gameplay.Humanoid.md#collisionshape)**(): [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) <br> 碰撞形状|
+| **[collisionWithOtherCharacterEnable](Gameplay.Gameplay.Humanoid.md#collisionwithothercharacterenable)**(): `boolean` <br> 能否与其他角色发生碰撞|
+| **[crouchEnable](Gameplay.Gameplay.Humanoid.md#crouchenable)**(): `boolean` <br> 启用/禁用下蹲能力|
+| **[crouchedHeight](Gameplay.Gameplay.Humanoid.md#crouchedheight)**(): `number` <br> 下蹲时胶囊体的高度|
+| **[forwardVector](Gameplay.Gameplay.Humanoid.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[gravityScale](Gameplay.Gameplay.Humanoid.md#gravityscale)**(): `number` <br> 重力倍率|
+| **[groundFriction](Gameplay.Gameplay.Humanoid.md#groundfriction)**(): `number` <br> 地面摩檫力|
+| **[guid](Gameplay.Gameplay.Humanoid.md#guid)**(): `string` <br> 获取对象的guid（唯一标识一个对象的字符串）。|
+| **[headUIVisible](Gameplay.Gameplay.Humanoid.md#headuivisible)**(): `boolean` <br> 头顶UI是否可见|
+| **[headUIVisibleRange](Gameplay.Gameplay.Humanoid.md#headuivisiblerange)**(): `number` <br> 头顶UI可见距离|
+| **[isCrouching](Gameplay.Gameplay.Humanoid.md#iscrouching)**(): `boolean` <br> 是否处于下蹲状态|
+| **[isJumping](Gameplay.Gameplay.Humanoid.md#isjumping)**(): `boolean` <br> 是否正在跳跃|
+| **[isMoving](Gameplay.Gameplay.Humanoid.md#ismoving)**(): `boolean` <br> 是否正在移动|
+| **[jumpEnable](Gameplay.Gameplay.Humanoid.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
+| **[jumpMaxCount](Gameplay.Gameplay.Humanoid.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
+| **[jumpingOutOfWaterEnable](Gameplay.Gameplay.Humanoid.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
+| **[locallyVisible](Gameplay.Gameplay.Humanoid.md#locallyvisible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[lockStatus](Gameplay.Gameplay.Humanoid.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定|
+| **[maxAcceleration](Gameplay.Gameplay.Humanoid.md#maxacceleration)**(): `number` <br> 最大加速度|
+| **[maxFallingSpeed](Gameplay.Gameplay.Humanoid.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
+| **[maxFlySpeed](Gameplay.Gameplay.Humanoid.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
+| **[maxJumpHeight](Gameplay.Gameplay.Humanoid.md#maxjumpheight)**(): `number` <br> 最大跳跃高度|
+| **[maxStepHeight](Gameplay.Gameplay.Humanoid.md#maxstepheight)**(): `number` <br> 获取角色最大可跨越高度|
+| **[maxSwimSpeed](Gameplay.Gameplay.Humanoid.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
+| **[maxWalkSpeed](Gameplay.Gameplay.Humanoid.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
+| **[maxWalkSpeedCrouched](Gameplay.Gameplay.Humanoid.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[moveEnable](Gameplay.Gameplay.Humanoid.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
+| **[moveFacingDirection](Gameplay.Gameplay.Humanoid.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
+| **[movementAxisDirection](Gameplay.Gameplay.Humanoid.md#movementaxisdirection)**(): [`Vector`](Type.Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
+| **[movementDirection](Gameplay.Gameplay.Humanoid.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md) <br> 运动时依据的正方向|
+| **[movementState](Gameplay.Gameplay.Humanoid.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md) <br> 当前角色运动状态|
+| **[name](Gameplay.Gameplay.Humanoid.md#name)**(): `string` <br> 返回当前物体名称|
+| **[netStatus](Gameplay.Gameplay.Humanoid.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态|
+| **[outOfWaterZ](Gameplay.Gameplay.Humanoid.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
+| **[parent](Gameplay.Gameplay.Humanoid.md#parent)**(): `GameObject` <br> 获取当前父物体|
+| **[ragdollEnable](Gameplay.Gameplay.Humanoid.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
+| **[relativeLocation](Gameplay.Gameplay.Humanoid.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置|
+| **[relativeRotation](Gameplay.Gameplay.Humanoid.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转|
+| **[relativeScale](Gameplay.Gameplay.Humanoid.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放|
+| **[rightVector](Gameplay.Gameplay.Humanoid.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[rotateRate](Gameplay.Gameplay.Humanoid.md#rotaterate)**(): `number` <br> 最大转向速度|
+| **[scale](Gameplay.Gameplay.Humanoid.md#scale)**(): [`Vector`](Type.Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步|
+| **[separateBrakingFrictionEnable](Gameplay.Gameplay.Humanoid.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
+| **[serverCalculateEnable](Gameplay.Gameplay.Humanoid.md#servercalculateenable)**(`boolean`): `void` <br> 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算|
+| **[serverMovementEnable](Gameplay.Gameplay.Humanoid.md#servermovementenable)**(`boolean`): `void` <br> 开关角色的移动计算|
+| **[staticStatus](Gameplay.Gameplay.Humanoid.md#staticstatus)**(): `boolean` <br> 获取对象是否静态|
+| **[tag](Gameplay.Gameplay.Humanoid.md#tag)**(): `string` <br> 获取当前物体的Tag|
+| **[transform](Gameplay.Gameplay.Humanoid.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体transform|
+| **[upVector](Gameplay.Gameplay.Humanoid.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[useUpdate](Gameplay.Gameplay.Humanoid.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[usedCapsuleCorrection](Gameplay.Gameplay.Humanoid.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
+| **[velocity](Gameplay.Gameplay.Humanoid.md#velocity)**(): [`Vector`](Type.Type.Vector.md) <br> 当前移动速度|
+| **[visible](Gameplay.Gameplay.Humanoid.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[walkableFloorAngle](Gameplay.Gameplay.Humanoid.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度|
+| **[worldLocation](Gameplay.Gameplay.Humanoid.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标|
+| **[worldRotation](Gameplay.Gameplay.Humanoid.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[worldScale](Gameplay.Gameplay.Humanoid.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放|
 
-| Methods                                                                                                                                                                                                                                                                  |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| **[addDestroyCallback](Gameplay.Gameplay.Humanoid.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体 Destroy 事件回调                                                                                                                     |
-| **[addImpulse](Gameplay.Gameplay.Humanoid.md#addimpulse)**([`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 添加冲量                                                                                                                                             |
-| **[addMoveInput](Gameplay.Gameplay.Humanoid.md#addmoveinput)**([`Vector`](Type.Type.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入                                                                                                                              |
-| **[appearanceReady](Gameplay.Gameplay.Humanoid.md#appearanceready)**(): `Promise`<`void`\> <br> 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断                                                   |
-| **[asyncGetScriptByName](Gameplay.Gameplay.Humanoid.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系                                                                                                    |
-| **[attach](Gameplay.Gameplay.Humanoid.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽                                                                                                       |
-| **[attachToGameObject](Gameplay.Gameplay.Humanoid.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上                                                                                                                                             |
-| **[clearDecorations](Gameplay.Gameplay.Humanoid.md#cleardecorations)**(): `void` <br> 清空所有挂件数据                                                                                                                                                                   |
-| **[clearOneDecoration](Gameplay.Gameplay.Humanoid.md#clearonedecoration)**(`string`): `void` <br> 删除一个挂件                                                                                                                                                           |
-| **[clone](Gameplay.Gameplay.Humanoid.md#clone)**(`boolean`): `GameObject` <br> 复制对象                                                                                                                                                                                  |
-| **[crouch](Gameplay.Gameplay.Humanoid.md#crouch)**(`boolean`): `void` <br> 下蹲                                                                                                                                                                                          |
-| **[deleteDestroyCallback](Gameplay.Gameplay.Humanoid.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体 Destroy 事件回调                                                                                                               |
-| **[destroy](Gameplay.Gameplay.Humanoid.md#destroy)**(): `void` <br> 删除对象                                                                                                                                                                                             |
-| **[detachFromGameObject](Gameplay.Gameplay.Humanoid.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离                                                                                                                                               |
-| **[getBoundingBoxSize](Gameplay.Gameplay.Humanoid.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小                                                                               |
-| **[getBounds](Gameplay.Gameplay.Humanoid.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取 GameObject 边界                                                                                       |
-| **[getChildByGuid](Gameplay.Gameplay.Humanoid.md#getchildbyguid)**(`string`): `GameObject` <br> 根据 Guid 查找子物体                                                                                                                                                     |
-| **[getChildByName](Gameplay.Gameplay.Humanoid.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体                                                                                                                                                       |
-| **[getChildren](Gameplay.Gameplay.Humanoid.md#getchildren)**(): `GameObject`[] <br> 获取 Children，客户端不维系父子关系。推荐使用 Find 替代                                                                                                                              |
-| **[getChildrenBoxCenter](Gameplay.Gameplay.Humanoid.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])                                                   |
-| **[getCollision](Gameplay.Gameplay.Humanoid.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态                                                               |
-| **[getControlRotator](Gameplay.Gameplay.Humanoid.md#getcontrolrotator)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取控制器的旋转                                                                                                 |
-| **[getDecorations](Gameplay.Gameplay.Humanoid.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的 Guid                                                                                          |
-| **[getForwardVector](Gameplay.Gameplay.Humanoid.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                                                     |
-| **[getHeadUIWidget](Gameplay.Gameplay.Humanoid.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.Gameplay.UIWidget.md) <br> 获取头顶 UIWidget                                                                                                                               |
-| **[getRelativeLocation](Gameplay.Gameplay.Humanoid.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                                         |
-| **[getRelativeRotation](Gameplay.Gameplay.Humanoid.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                                                 |
-| **[getRelativeScale](Gameplay.Gameplay.Humanoid.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                                               |
-| **[getRightVector](Gameplay.Gameplay.Humanoid.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                                         |
-| **[getScriptByGuid](Gameplay.Gameplay.Humanoid.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                           |
-| **[getScriptByName](Gameplay.Gameplay.Humanoid.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                           |
-| **[getScripts](Gameplay.Gameplay.Humanoid.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                                           |
-| **[getSlotName](Gameplay.Gameplay.Humanoid.md#getslotname)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称                                                                                                                       |
-| **[getSourceAssetGuid](Gameplay.Gameplay.Humanoid.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的 GUID                                                                                                                                                  |
-| **[getTransform](Gameplay.Gameplay.Humanoid.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 Transform                                                                                                 |
-| **[getUpVector](Gameplay.Gameplay.Humanoid.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                                               |
-| **[getVisibility](Gameplay.Gameplay.Humanoid.md#getvisibility)**(): `boolean` <br> 获取是否被显示                                                                                                                                                                        |
-| **[getWorldLocation](Gameplay.Gameplay.Humanoid.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                                         |
-| **[getWorldRotation](Gameplay.Gameplay.Humanoid.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                                                 |
-| **[getWorldScale](Gameplay.Gameplay.Humanoid.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                                               |
-| **[isPlayingAnimation](Gameplay.Gameplay.Humanoid.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画                                                                                                                                                            |
-| **[isRunningClient](Gameplay.Gameplay.Humanoid.md#isrunningclient)**(): `boolean` <br> 是否为客户端                                                                                                                                                                      |
-| **[jump](Gameplay.Gameplay.Humanoid.md#jump)**(): `void` <br> 跳跃                                                                                                                                                                                                       |
-| **[loadAnimation](Gameplay.Gameplay.Humanoid.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 加载动画,获取到动画对象                                                                                                        |
-| **[loadDecoration](Gameplay.Gameplay.Humanoid.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0                                                     | 0,-90,0                                                                                                                                       | 1,1,1",给移动角色编辑器提供的能力 |
-| **[loadSlotAndEditorDataByGuid](Gameplay.Gameplay.Humanoid.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过 Guid 加载插槽跟角色编辑数据                                                                                                                     |
-| **[loadSlotAndEditorDataByPath](Gameplay.Gameplay.Humanoid.md#loadslotandeditordatabypath)**(`string`): `void` <br> 通过路径加载插槽跟角色编辑数据                                                                                                                       |
-| **[loadStance](Gameplay.Gameplay.Humanoid.md#loadstance)**(`string`, `boolean`): [`SubStance`](Gameplay.Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回                                                                                                           |
-| **[lookAt](Gameplay.Gameplay.Humanoid.md#lookat)**([`Vector`](Type.Type.Vector.md)): `void` <br> 角色面朝目标点                                                                                                                                                          |
-| **[onDestroy](Gameplay.Gameplay.Humanoid.md#ondestroy)**(): `void` <br> onDestroy 生命周期函数                                                                                                                                                                           |
-| **[onStart](Gameplay.Gameplay.Humanoid.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用                                                                                                                                                                          |
-| **[onUpdate](Gameplay.Gameplay.Humanoid.md#onupdate)**(`number`): `void` <br> onUpdate 生命周期函数                                                                                                                                                                      |
-| **[playAnimation](Gameplay.Gameplay.Humanoid.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation 对象接口是同步的                                                                |
-| **[playAnimationLocally](Gameplay.Gameplay.Humanoid.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(guid,false) instead. |
-| **[ready](Gameplay.Gameplay.Humanoid.md#ready)**(): `Promise`<[`Humanoid`](Gameplay.Gameplay.Humanoid.md)\> <br> GameObject 准备好后返回                                                                                                                                 |
-| **[setAppearance](Gameplay.Gameplay.Humanoid.md#setappearance)**<extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\>                                                                                                                                   | \>([`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> | <br> 设置外观修改功能             |
-| **[setCollision](Gameplay.Gameplay.Humanoid.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态                                                                                                          |
-| **[setCollisionShapeAndExtent](Gameplay.Gameplay.Humanoid.md#setcollisionshapeandextent)**([`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md), [`Vector`](Type.Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体                                |
-| **[setLocallyVisibility](Gameplay.Gameplay.Humanoid.md#setlocallyvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(本地生效)                                                                                |
-| **[setLocationAndRotation](Gameplay.Gameplay.Humanoid.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转                                                                       |
-| **[setRelativeLocation](Gameplay.Gameplay.Humanoid.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置                                                                                                                                  |
-| **[setRelativeRotation](Gameplay.Gameplay.Humanoid.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转                                                                                                                              |
-| **[setRelativeScale](Gameplay.Gameplay.Humanoid.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放                                                                                                                                        |
-| **[setTransform](Gameplay.Gameplay.Humanoid.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体 transform                                                                                                                                |
-| **[setVisibility](Gameplay.Gameplay.Humanoid.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(自动同步)                                                                                              |
-| **[setWorldLocation](Gameplay.Gameplay.Humanoid.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标                                                                                                                                  |
-| **[setWorldRotation](Gameplay.Gameplay.Humanoid.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转                                                                                                                              |
-| **[setWorldScale](Gameplay.Gameplay.Humanoid.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放                                                                                                                                        |
-| **[stopAnimation](Gameplay.Gameplay.Humanoid.md#stopanimation)**(`string`): `void` <br> since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"                                                                                                              |
-| **[stopStance](Gameplay.Gameplay.Humanoid.md#stopstance)**(`boolean`): `void` <br> 停止任何正在播放的姿态                                                                                                                                                                |
-| **[swimmingDown](Gameplay.Gameplay.Humanoid.md#swimmingdown)**(`number`): `void` <br> 水中下潜                                                                                                                                                                           |
-| **[swimmingUp](Gameplay.Gameplay.Humanoid.md#swimmingup)**(`number`): `void` <br> 水中上浮                                                                                                                                                                               |
-| **[switchToFlying](Gameplay.Gameplay.Humanoid.md#switchtoflying)**(): `void` <br> 切换为飞行状态                                                                                                                                                                         |
-| **[switchToWalking](Gameplay.Gameplay.Humanoid.md#switchtowalking)**(): `void` <br> 切换为行走状态                                                                                                                                                                       |
-| **[asyncFind](Gameplay.Gameplay.Humanoid.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);                                                                                  |
-| **[asyncSpawnGameObject](Gameplay.Gameplay.Humanoid.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建                                                                              |
-| **[find](Gameplay.Gameplay.Humanoid.md#find)**(`string`): `GameObject` <br> 通过 Guid 查找 GameObject                                                                                                                                                                    |
-| **[findGameObjectByTag](Gameplay.Gameplay.Humanoid.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义 Tag 获取 GameObject                                                                                                                               |
-| **[getGameObjectByName](Gameplay.Gameplay.Humanoid.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体                                                                                                                                               |
-| **[getGameObjectsByName](Gameplay.Gameplay.Humanoid.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体                                                                                                                                           |
-| **[spawnGameObject](Gameplay.Gameplay.Humanoid.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject                                                                                                                                         |
+| Methods |
+| :-----|
+| **[addDestroyCallback](Gameplay.Gameplay.Humanoid.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[addImpulse](Gameplay.Gameplay.Humanoid.md#addimpulse)**([`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 添加冲量|
+| **[addMoveInput](Gameplay.Gameplay.Humanoid.md#addmoveinput)**([`Vector`](Type.Type.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入|
+| **[appearanceReady](Gameplay.Gameplay.Humanoid.md#appearanceready)**(): `Promise`<`void`\> <br> 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断|
+| **[asyncGetScriptByName](Gameplay.Gameplay.Humanoid.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attach](Gameplay.Gameplay.Humanoid.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽|
+| **[attachToGameObject](Gameplay.Gameplay.Humanoid.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[clearDecorations](Gameplay.Gameplay.Humanoid.md#cleardecorations)**(): `void` <br> 清空所有挂件数据|
+| **[clearOneDecoration](Gameplay.Gameplay.Humanoid.md#clearonedecoration)**(`string`): `void` <br> 删除一个挂件|
+| **[clone](Gameplay.Gameplay.Humanoid.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[crouch](Gameplay.Gameplay.Humanoid.md#crouch)**(`boolean`): `void` <br> 下蹲|
+| **[deleteDestroyCallback](Gameplay.Gameplay.Humanoid.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[destroy](Gameplay.Gameplay.Humanoid.md#destroy)**(): `void` <br> 删除对象|
+| **[detachFromGameObject](Gameplay.Gameplay.Humanoid.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
+| **[getBoundingBoxSize](Gameplay.Gameplay.Humanoid.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.Gameplay.Humanoid.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.Gameplay.Humanoid.md#getchildbyguid)**(`string`): `GameObject` <br> 根据Guid查找子物体|
+| **[getChildByName](Gameplay.Gameplay.Humanoid.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体|
+| **[getChildren](Gameplay.Gameplay.Humanoid.md#getchildren)**(): `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
+| **[getChildrenBoxCenter](Gameplay.Gameplay.Humanoid.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getCollision](Gameplay.Gameplay.Humanoid.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态|
+| **[getControlRotator](Gameplay.Gameplay.Humanoid.md#getcontrolrotator)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取控制器的旋转|
+| **[getDecorations](Gameplay.Gameplay.Humanoid.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的Guid|
+| **[getForwardVector](Gameplay.Gameplay.Humanoid.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getHeadUIWidget](Gameplay.Gameplay.Humanoid.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.Gameplay.UIWidget.md) <br> 获取头顶UIWidget|
+| **[getRelativeLocation](Gameplay.Gameplay.Humanoid.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.Gameplay.Humanoid.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.Gameplay.Humanoid.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.Gameplay.Humanoid.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.Gameplay.Humanoid.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.Gameplay.Humanoid.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScripts](Gameplay.Gameplay.Humanoid.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getSlotName](Gameplay.Gameplay.Humanoid.md#getslotname)**([`SlotType`](../enums/Gameplay.Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称|
+| **[getSourceAssetGuid](Gameplay.Gameplay.Humanoid.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
+| **[getTransform](Gameplay.Gameplay.Humanoid.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.Gameplay.Humanoid.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getVisibility](Gameplay.Gameplay.Humanoid.md#getvisibility)**(): `boolean` <br> 获取是否被显示|
+| **[getWorldLocation](Gameplay.Gameplay.Humanoid.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.Gameplay.Humanoid.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.Gameplay.Humanoid.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放|
+| **[isPlayingAnimation](Gameplay.Gameplay.Humanoid.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画|
+| **[isRunningClient](Gameplay.Gameplay.Humanoid.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
+| **[jump](Gameplay.Gameplay.Humanoid.md#jump)**(): `void` <br> 跳跃|
+| **[loadAnimation](Gameplay.Gameplay.Humanoid.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 加载动画,获取到动画对象|
+| **[loadDecoration](Gameplay.Gameplay.Humanoid.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0|0,-90,0|1,1,1",给移动角色编辑器提供的能力|
+| **[loadSlotAndEditorDataByGuid](Gameplay.Gameplay.Humanoid.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过Guid加载插槽跟角色编辑数据|
+| **[loadSlotAndEditorDataByPath](Gameplay.Gameplay.Humanoid.md#loadslotandeditordatabypath)**(`string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
+| **[loadStance](Gameplay.Gameplay.Humanoid.md#loadstance)**(`string`, `boolean`): [`SubStance`](Gameplay.Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
+| **[lookAt](Gameplay.Gameplay.Humanoid.md#lookat)**([`Vector`](Type.Type.Vector.md)): `void` <br> 角色面朝目标点|
+| **[onDestroy](Gameplay.Gameplay.Humanoid.md#ondestroy)**(): `void` <br> onDestroy 生命周期函数|
+| **[onStart](Gameplay.Gameplay.Humanoid.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
+| **[onUpdate](Gameplay.Gameplay.Humanoid.md#onupdate)**(`number`): `void` <br> onUpdate 生命周期函数|
+| **[playAnimation](Gameplay.Gameplay.Humanoid.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口是同步的|
+| **[playAnimationLocally](Gameplay.Gameplay.Humanoid.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(guid,false) instead.|
+| **[ready](Gameplay.Gameplay.Humanoid.md#ready)**(): `Promise`<[`Humanoid`](Gameplay.Gameplay.Humanoid.md)\> <br> GameObject准备好后返回|
+| **[setAppearance](Gameplay.Gameplay.Humanoid.md#setappearance)**<extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> |\>([`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> | <br> 设置外观修改功能|
+| **[setCollision](Gameplay.Gameplay.Humanoid.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
+| **[setCollisionShapeAndExtent](Gameplay.Gameplay.Humanoid.md#setcollisionshapeandextent)**([`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md), [`Vector`](Type.Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
+| **[setLocallyVisibility](Gameplay.Gameplay.Humanoid.md#setlocallyvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(本地生效)|
+| **[setLocationAndRotation](Gameplay.Gameplay.Humanoid.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.Gameplay.Humanoid.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.Gameplay.Humanoid.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.Gameplay.Humanoid.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.Gameplay.Humanoid.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.Gameplay.Humanoid.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(自动同步)|
+| **[setWorldLocation](Gameplay.Gameplay.Humanoid.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.Gameplay.Humanoid.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.Gameplay.Humanoid.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[stopAnimation](Gameplay.Gameplay.Humanoid.md#stopanimation)**(`string`): `void` <br> since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"|
+| **[stopStance](Gameplay.Gameplay.Humanoid.md#stopstance)**(`boolean`): `void` <br> 停止任何正在播放的姿态|
+| **[swimmingDown](Gameplay.Gameplay.Humanoid.md#swimmingdown)**(`number`): `void` <br> 水中下潜|
+| **[swimmingUp](Gameplay.Gameplay.Humanoid.md#swimmingup)**(`number`): `void` <br> 水中上浮|
+| **[switchToFlying](Gameplay.Gameplay.Humanoid.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
+| **[switchToWalking](Gameplay.Gameplay.Humanoid.md#switchtowalking)**(): `void` <br> 切换为行走状态|
+| **[asyncFind](Gameplay.Gameplay.Humanoid.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawnGameObject](Gameplay.Gameplay.Humanoid.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.Gameplay.Humanoid.md#find)**(`string`): `GameObject` <br> 通过Guid查找GameObject|
+| **[findGameObjectByTag](Gameplay.Gameplay.Humanoid.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.Gameplay.Humanoid.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.Gameplay.Humanoid.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawnGameObject](Gameplay.Gameplay.Humanoid.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
 
 ## Properties
 
@@ -199,7 +199,7 @@
 
 加载完角色形象数据后的回调
 
----
+___
 
 ### onMeshChanged
 
@@ -209,7 +209,7 @@
 
 角色模型切换成功广播
 
----
+___
 
 ### onMovementStateChanged
 
@@ -219,7 +219,7 @@
 
 移动状态切换时的回调
 
----
+___
 
 ### onSetAppearanceDataCompleted
 
@@ -227,9 +227,9 @@
 
 **`Description`**
 
-设置一个角色编辑 API 成功后的回调
+设置一个角色编辑API成功后的回调
 
----
+___
 
 ### onTextureChanged
 
@@ -239,7 +239,7 @@
 
 角色贴图切换成功广播
 
----
+___
 
 ### player
 
@@ -261,7 +261,7 @@
 
 **`Precautions`**
 
-范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
+范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
 
 #### Returns
 
@@ -275,19 +275,19 @@
 
 **`Precautions`**
 
-范围:0~1, 0 表示不能控制, 1 表示能按地面最大移动速率完全控制
+范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InAirControl` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### airControlBoostMultiplier
 
@@ -295,11 +295,11 @@
 
 **`Description`**
 
-当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数
+当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
 **`Precautions`**
 
-范围:大于等于 0 的数字, 取 0 时, 不会对 airControl 效果加倍, 无论取值多大, airControl 最大值都被限制为 1
+范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
 
 #### Returns
 
@@ -309,23 +309,23 @@
 
 **`Description`**
 
-当角色空中水平移动速率比 airControlBoostVelocityThreshold 小时, 对 airControl 效果加倍的倍数
+当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
 **`Precautions`**
 
-范围:大于等于 0 的数字, 取 0 时, 不会对 airControl 效果加倍, 无论取值多大, airControl 最大值都被限制为 1
+范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
 
 #### Parameters
 
-| Name                          | Type     |
-| :---------------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InAirControlBoostMultiplier` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### airControlBoostVelocityThreshold
 
@@ -333,11 +333,11 @@
 
 **`Description`**
 
-下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍
+下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
 **`Precautions`**
 
-范围: 大于等于 0
+范围: 大于等于0
 
 #### Returns
 
@@ -347,23 +347,23 @@
 
 **`Description`**
 
-下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照 airControlBoostMultiplier 的值对 airControl 效果进行加倍
+下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
 **`Precautions`**
 
-范围: 大于等于 0
+范围: 大于等于0
 
 #### Parameters
 
-| Name                                 | Type     |
-| :----------------------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InAirControlBoostVelocityThreshold` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### animationMode
 
@@ -385,15 +385,15 @@
 
 #### Parameters
 
-| Name   | Type                                                           |
-| :----- | :------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `mode` | [`AnimationMode`](../enums/Gameplay.Gameplay.AnimationMode.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### animationStance
 
@@ -405,7 +405,7 @@
 
 **`Precautions`**
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
 
 #### Returns
 
@@ -419,19 +419,19 @@
 
 **`Precautions`**
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的 guid 进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
 
 #### Parameters
 
-| Name         | Type     |
-| :----------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `StanceGuid` | `string` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### appearance
 
@@ -445,7 +445,7 @@
 
 [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)
 
----
+___
 
 ### baseShadowLocationOffset
 
@@ -467,15 +467,15 @@
 
 #### Parameters
 
-| Name               | Type                              |
-| :----------------- | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `InLocationOffset` | [`Vector2`](Type.Type.Vector2.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### baseShadowMaxVisibleHeight
 
@@ -497,15 +497,15 @@
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InHeight` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### baseShadowScale
 
@@ -527,15 +527,15 @@
 
 #### Parameters
 
-| Name      | Type                              |
-| :-------- | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `InScale` | [`Vector2`](Type.Type.Vector2.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### basicStance
 
@@ -547,7 +547,7 @@
 
 **`Precautions`**
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的 guid 进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
 
 #### Returns
 
@@ -561,19 +561,19 @@
 
 **`Precautions`**
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的 guid 进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InBasicStance` | `string` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### basicStanceAimOffsetEnable
 
@@ -595,15 +595,15 @@
 
 #### Parameters
 
-| Name                 | Type      |
-| :------------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `InbEnableAimOffset` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### brakingDecelerationFalling
 
@@ -625,15 +625,15 @@
 
 #### Parameters
 
-| Name                           | Type     |
-| :----------------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InBrakingDecelerationFalling` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### brakingDecelerationFlying
 
@@ -655,15 +655,15 @@
 
 #### Parameters
 
-| Name                          | Type     |
-| :---------------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InBrakingDecelerationFlying` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### brakingDecelerationSwimming
 
@@ -685,15 +685,15 @@
 
 #### Parameters
 
-| Name                            | Type     |
-| :------------------------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InBrakingDecelerationSwimming` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### brakingDecelerationWalking
 
@@ -715,15 +715,15 @@
 
 #### Parameters
 
-| Name                           | Type     |
-| :----------------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InBrakingDecelerationWalking` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### canSetAppearanceData
 
@@ -737,7 +737,7 @@
 
 `boolean`
 
----
+___
 
 ### canStepUpOn
 
@@ -755,7 +755,7 @@
 
 `boolean`
 
-true 其他角色可以站到玩家头上 false 其他角色不可以站到玩家头上
+true 其他角色可以站到玩家头上  false 其他角色不可以站到玩家头上
 
 • `set` **canStepUpOn**(`CanStepUpOn`): `void`
 
@@ -769,15 +769,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name          | Type      |
-| :------------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `CanStepUpOn` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### capsuleHalfHeight
 
@@ -799,15 +799,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name                  | Type     |
-| :-------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InCapsuleHalfHeight` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### capsuleRadius
 
@@ -829,15 +829,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InCapsuleRadius` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### characterName
 
@@ -849,7 +849,7 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 **`Precautions`**
 
-会显示在角色头顶 UI 上
+会显示在角色头顶UI上
 
 #### Returns
 
@@ -863,19 +863,19 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 **`Precautions`**
 
-会显示在角色头顶 UI 上
+会显示在角色头顶UI上
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `inCharacterName` | `string` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### collisionEnable
 
@@ -897,15 +897,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name                 | Type      |
-| :------------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `InbEnableCollision` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### collisionExtent
 
@@ -919,7 +919,7 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 [`Vector`](Type.Type.Vector.md)
 
----
+___
 
 ### collisionShape
 
@@ -933,7 +933,7 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md)
 
----
+___
 
 ### collisionWithOtherCharacterEnable
 
@@ -955,15 +955,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### crouchEnable
 
@@ -985,15 +985,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name        | Type      |
-| :---------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `canCrouch` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### crouchedHeight
 
@@ -1015,15 +1015,15 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 #### Parameters
 
-| Name               | Type     |
-| :----------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InCrouchedHeight` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### forwardVector
 
@@ -1043,7 +1043,7 @@ true 其他角色可以站到玩家头上 false 其他角色不可以站到玩�
 
 Vector
 
----
+___
 
 ### gravityScale
 
@@ -1055,7 +1055,7 @@ Vector
 
 **`Precautions`**
 
-范围 0~10, 过大和过小的值都会被限制
+范围0~10, 过大和过小的值都会被限制
 
 #### Returns
 
@@ -1069,15 +1069,15 @@ Vector
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `newGravityScale` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### groundFriction
 
@@ -1099,15 +1099,15 @@ Vector
 
 #### Parameters
 
-| Name               | Type     |
-| :----------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `inGroundFriction` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### guid
 
@@ -1115,7 +1115,7 @@ Vector
 
 **`Description`**
 
-获取对象的 guid（唯一标识一个对象的字符串）。
+获取对象的guid（唯一标识一个对象的字符串）。
 
 **`Effect`**
 
@@ -1125,7 +1125,7 @@ Vector
 
 `string`
 
----
+___
 
 ### headUIVisible
 
@@ -1133,7 +1133,7 @@ Vector
 
 **`Description`**
 
-头顶 UI 是否可见
+头顶UI是否可见
 
 #### Returns
 
@@ -1143,19 +1143,19 @@ Vector
 
 **`Description`**
 
-头顶 UI 是否可见
+头顶UI是否可见
 
 #### Parameters
 
-| Name        | Type      |
-| :---------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `isVisible` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### headUIVisibleRange
 
@@ -1163,7 +1163,7 @@ Vector
 
 **`Description`**
 
-头顶 UI 可见距离
+头顶UI可见距离
 
 #### Returns
 
@@ -1173,19 +1173,19 @@ Vector
 
 **`Description`**
 
-头顶 UI 可见距离
+头顶UI可见距离
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `VisibleDistance` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### isCrouching
 
@@ -1199,7 +1199,7 @@ Vector
 
 `boolean`
 
----
+___
 
 ### isJumping
 
@@ -1213,7 +1213,7 @@ Vector
 
 `boolean`
 
----
+___
 
 ### isMoving
 
@@ -1227,7 +1227,7 @@ Vector
 
 `boolean`
 
----
+___
 
 ### jumpEnable
 
@@ -1249,15 +1249,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### jumpMaxCount
 
@@ -1279,15 +1279,15 @@ Vector
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InJumpMaxCount` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### jumpingOutOfWaterEnable
 
@@ -1309,15 +1309,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### locallyVisible
 
@@ -1325,7 +1325,7 @@ Vector
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api 重构 replacement:getVisibility()
+since:v0.20.0 reason:api重构 replacement:getVisibility()
 
 **`Description`**
 
@@ -1339,7 +1339,7 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
+since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
 **`Description`**
 
@@ -1347,15 +1347,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name          | Type      |
-| :------------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `inIsVisible` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### lockStatus
 
@@ -1385,15 +1385,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `v`  | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `v` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxAcceleration
 
@@ -1415,15 +1415,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name                | Type     |
-| :------------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxAcceleration` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxFallingSpeed
 
@@ -1445,15 +1445,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `speed` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxFlySpeed
 
@@ -1475,15 +1475,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxFlySpeed` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxJumpHeight
 
@@ -1505,15 +1505,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxJumpHeight` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxStepHeight
 
@@ -1535,15 +1535,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name              | Type     |
-| :---------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxStepHeight` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxSwimSpeed
 
@@ -1565,15 +1565,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxSwimSpeed` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxWalkSpeed
 
@@ -1595,15 +1595,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name             | Type     |
-| :--------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InMaxWalkSpeed` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxWalkSpeedCrouched
 
@@ -1625,15 +1625,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `maxSpeed` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### moveEnable
 
@@ -1655,15 +1655,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### moveFacingDirection
 
@@ -1685,15 +1685,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name                    | Type                                                                       |
-| :---------------------- | :------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `InMoveFacingDirection` | [`MoveFacingDirection`](../enums/Gameplay.Gameplay.MoveFacingDirection.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### movementAxisDirection
 
@@ -1701,7 +1701,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 **`Description`**
 
-运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效
+运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
 
 #### Returns
 
@@ -1711,19 +1711,19 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 **`Description`**
 
-运动时依据的轴方向, 只有当前的 MovementDirection 为 AxisDirection 时有效
+运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
 
 #### Parameters
 
-| Name                      | Type                            |
-| :------------------------ | :------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `InMovementAxisDirection` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### movementDirection
 
@@ -1737,7 +1737,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 如果是控制器方向, 就以控制器坐标系为轴;
 如果是定轴方向，就以世界坐标系为轴;
-如果是视线方向, 就以相机坐标系为轴. 在玩家相机不存在 Z 轴旋转时, 控制器方向和视线方向效果一致, 人形对象的控制器方向和视线方向效果永远一致.
+如果是视线方向, 就以相机坐标系为轴. 在玩家相机不存在Z轴旋转时, 控制器方向和视线方向效果一致, 人形对象的控制器方向和视线方向效果永远一致.
 
 #### Returns
 
@@ -1751,15 +1751,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name                  | Type                                                                   |
-| :-------------------- | :--------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `InMovementDirection` | [`MovementDirection`](../enums/Gameplay.Gameplay.MovementDirection.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### movementState
 
@@ -1773,7 +1773,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md)
 
----
+___
 
 ### name
 
@@ -1805,15 +1805,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `name` | `string` | 需要设置的名称 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### netStatus
 
@@ -1833,7 +1833,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibilityLocally()
 
 Type.NetStatus
 
----
+___
 
 ### outOfWaterZ
 
@@ -1841,7 +1841,7 @@ Type.NetStatus
 
 **`Description`**
 
-出水时 Z 轴方向上的速度
+出水时Z轴方向上的速度
 
 #### Returns
 
@@ -1851,19 +1851,19 @@ Type.NetStatus
 
 **`Description`**
 
-出水时 Z 轴方向上的速度
+出水时Z轴方向上的速度
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### parent
 
@@ -1895,15 +1895,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name        | Type         |
-| :---------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `newParent` | `GameObject` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### ragdollEnable
 
@@ -1925,15 +1925,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeLocation
 
@@ -1965,15 +1965,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeRotation
 
@@ -2005,15 +2005,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeScale
 
@@ -2045,15 +2045,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name    | Type                            | Description |
-| :------ | :------------------------------ | :---------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rightVector
 
@@ -2073,7 +2073,7 @@ Type.NetStatus
 
 Vector
 
----
+___
 
 ### rotateRate
 
@@ -2103,15 +2103,15 @@ Vector
 
 #### Parameters
 
-| Name           | Type     |
-| :------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InRotateRate` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### scale
 
@@ -2133,15 +2133,15 @@ Vector
 
 #### Parameters
 
-| Name               | Type                            |
-| :----------------- | :------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `InCharacterScale` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### separateBrakingFrictionEnable
 
@@ -2163,15 +2163,15 @@ Vector
 
 #### Parameters
 
-| Name   | Type      |
-| :----- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `used` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### serverCalculateEnable
 
@@ -2187,19 +2187,19 @@ Vector
 
 **`Precautions`**
 
-针对处于静默状态的 ai 调用用于降低暂时不必要的计算带来的性能消耗，如果 ai 角色需要参与到游戏中请开启
+针对处于静默状态的ai调用用于降低暂时不必要的计算带来的性能消耗，如果ai角色需要参与到游戏中请开启
 
 #### Parameters
 
-| Name     | Type      | Description                          |
-| :------- | :-------- | :----------------------------------- |
-| `enable` | `boolean` | true 开启角色计算 false 关闭角色计算 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### serverMovementEnable
 
@@ -2215,19 +2215,19 @@ Vector
 
 **`Precautions`**
 
-针对处于静默状态的 ai 调用用于降低移动计算带来的性能消耗，如果 ai 角色需要参与到游戏中请开启移动计算
+针对处于静默状态的ai调用用于降低移动计算带来的性能消耗，如果ai角色需要参与到游戏中请开启移动计算
 
 #### Parameters
 
-| Name    | Type      | Description                                  |
-| :------ | :-------- | :------------------------------------------- |
-| `value` | `boolean` | true 开启角色移动计算 false 关闭角色移动计算 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` |  true 开启角色移动计算 false 关闭角色移动计算 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### staticStatus
 
@@ -2245,7 +2245,7 @@ Vector
 
 `boolean`
 
----
+___
 
 ### tag
 
@@ -2253,7 +2253,7 @@ Vector
 
 **`Description`**
 
-获取当前物体的 Tag
+获取当前物体的Tag
 
 **`Effect`**
 
@@ -2269,7 +2269,7 @@ Tag
 
 **`Description`**
 
-设置当前物体的 Tag
+设置当前物体的Tag
 
 **`Effect`**
 
@@ -2277,15 +2277,15 @@ Tag
 
 #### Parameters
 
-| Name  | Type     | Description |
-| :---- | :------- | :---------- |
-| `tag` | `string` | Tag         |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tag` | `string` | Tag |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### transform
 
@@ -2293,7 +2293,7 @@ Tag
 
 **`Description`**
 
-返回当前物体 transform
+返回当前物体transform
 
 **`Effect`**
 
@@ -2309,7 +2309,7 @@ transform
 
 **`Description`**
 
-设置当前物体 transform
+设置当前物体transform
 
 **`Effect`**
 
@@ -2317,15 +2317,15 @@ transform
 
 #### Parameters
 
-| Name        | Type                                  | Description        |
-| :---------- | :------------------------------------ | :----------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的 transform |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的transform |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### upVector
 
@@ -2345,7 +2345,7 @@ transform
 
 Vector
 
----
+___
 
 ### useUpdate
 
@@ -2375,15 +2375,15 @@ Vector
 
 #### Parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `v`  | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `v` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### usedCapsuleCorrection
 
@@ -2391,7 +2391,7 @@ Vector
 
 **`Description`**
 
-使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 #### Returns
 
@@ -2401,19 +2401,19 @@ Vector
 
 **`Description`**
 
-使用胶囊体修正 true 代表应用角色编辑中的数据自动计算胶囊体大小。false 代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
 #### Parameters
 
-| Name                    | Type      |
-| :---------------------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `usedCapsuleCorrection` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### velocity
 
@@ -2427,7 +2427,7 @@ Vector
 
 [`Vector`](Type.Type.Vector.md)
 
----
+___
 
 ### visible
 
@@ -2435,7 +2435,7 @@ Vector
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api 重构 replacement:getVisibility()
+since:v0.20.0 reason:api重构 replacement:getVisibility()
 
 **`Description`**
 
@@ -2449,7 +2449,7 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api 重构 replacement:setVisibility()
+since:v0.20.0 reason:api重构 replacement:setVisibility()
 
 **`Description`**
 
@@ -2457,15 +2457,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name          | Type      |
-| :------------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `inIsVisible` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### walkableFloorAngle
 
@@ -2487,15 +2487,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name                   | Type     |
-| :--------------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `InWalkableFloorAngle` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### worldLocation
 
@@ -2525,15 +2525,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name | Type                            |
-| :--- | :------------------------------ |
-| `v`  | [`Vector`](Type.Type.Vector.md) |
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### worldRotation
 
@@ -2563,15 +2563,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name       | Type                                | Description      |
-| :--------- | :---------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### worldScale
 
@@ -2601,9 +2601,9 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name | Type                            |
-| :--- | :------------------------------ |
-| `v`  | [`Vector`](Type.Type.Vector.md) |
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
@@ -2617,7 +2617,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 **`Description`**
 
-添加物体 Destroy 事件回调
+添加物体Destroy事件回调
 
 **`Effect`**
 
@@ -2625,15 +2625,15 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name       | Type                              | Description |
-| :--------- | :-------------------------------- | :---------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### addImpulse
 
@@ -2649,20 +2649,20 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 **`Precautions`**
 
-质量固定为 100, 受质量影响的算法为: 冲量按位除以质量
+质量固定为100, 受质量影响的算法为: 冲量按位除以质量
 
 #### Parameters
 
-| Name          | Type                            | Description                            |
-| :------------ | :------------------------------ | :------------------------------------- |
-| `Vector`      | [`Vector`](Type.Type.Vector.md) | 应用的冲量                             |
-| `ignoreMass?` | `boolean`                       | 是否忽略质量对冲量的影响 default:false |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Vector` | [`Vector`](Type.Type.Vector.md) | 应用的冲量 |
+| `ignoreMass?` | `boolean` | 是否忽略质量对冲量的影响 default:false |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### addMoveInput
 
@@ -2678,19 +2678,19 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 **`Precautions`**
 
-效果受 movementDirection 属性影响
+效果受movementDirection属性影响
 
 #### Parameters
 
-| Name        | Type                            | Description |
-| :---------- | :------------------------------ | :---------- |
-| `direction` | [`Vector`](Type.Type.Vector.md) | 输入的方向  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `direction` | [`Vector`](Type.Type.Vector.md) | 输入的方向 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### appearanceReady
 
@@ -2710,7 +2710,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 异步回调
 
----
+___
 
 ### asyncGetScriptByName
 
@@ -2726,9 +2726,9 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
@@ -2736,7 +2736,7 @@ since:v0.20.0 reason:api 重构 replacement:setVisibility()
 
 Script
 
----
+___
 
 ### attach
 
@@ -2752,16 +2752,16 @@ Script
 
 #### Parameters
 
-| Name         | Type                                                 | Description |
-| :----------- | :--------------------------------------------------- | :---------- |
-| `gameObject` | `GameObject`                                         | 物体        |
-| `slotName`   | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameObject` | `GameObject` | 物体 |
+| `slotName` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### attachToGameObject
 
@@ -2777,15 +2777,15 @@ Script
 
 #### Parameters
 
-| Name  | Type         | Description |
-| :---- | :----------- | :---------- |
-| `obj` | `GameObject` | 物体        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `GameObject` | 物体 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### clearDecorations
 
@@ -2803,7 +2803,7 @@ Script
 
 `void`
 
----
+___
 
 ### clearOneDecoration
 
@@ -2819,15 +2819,15 @@ Script
 
 #### Parameters
 
-| Name   | Type     | Description             |
-| :----- | :------- | :---------------------- |
-| `guid` | `string` | 实例化后的挂件对象 Guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  实例化后的挂件对象Guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### clone
 
@@ -2843,8 +2843,8 @@ Script
 
 #### Parameters
 
-| Name            | Type      | Description           |
-| :-------------- | :-------- | :-------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inReplicates?` | `boolean` | 是否复制 default:true |
 
 #### Returns
@@ -2853,7 +2853,7 @@ Script
 
 克隆的对象
 
----
+___
 
 ### crouch
 
@@ -2869,15 +2869,15 @@ Script
 
 #### Parameters
 
-| Name       | Type      | Description |
-| :--------- | :-------- | :---------- |
-| `isCrouch` | `boolean` | 是否下蹲    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isCrouch` | `boolean` | 是否下蹲 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### deleteDestroyCallback
 
@@ -2885,7 +2885,7 @@ Script
 
 **`Description`**
 
-移除物体 Destroy 事件回调
+移除物体Destroy事件回调
 
 **`Effect`**
 
@@ -2893,15 +2893,15 @@ Script
 
 #### Parameters
 
-| Name       | Type                              | Description |
-| :--------- | :-------------------------------- | :---------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### destroy
 
@@ -2923,7 +2923,7 @@ Script
 
 [CharacterBase](Gameplay.Gameplay.CharacterBase.md).[destroy](Gameplay.Gameplay.CharacterBase.md#destroy)
 
----
+___
 
 ### detachFromGameObject
 
@@ -2941,7 +2941,7 @@ Script
 
 `void`
 
----
+___
 
 ### getBoundingBoxSize
 
@@ -2961,11 +2961,11 @@ Script
 
 #### Parameters
 
-| Name                      | Type                            | Description                                  |
-| :------------------------ | :------------------------------ | :------------------------------------------- |
-| `nonColliding?`           | `boolean`                       | 表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean`                       | 如果为 true，则递归子物体 default:false      |
-| `outer?`                  | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `nonColliding?` | `boolean` | 表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean` | 如果为 true，则递归子物体 default:false |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
@@ -2973,7 +2973,7 @@ Script
 
 Type.Vector
 
----
+___
 
 ### getBounds
 
@@ -2981,7 +2981,7 @@ Type.Vector
 
 **`Description`**
 
-获取 GameObject 边界
+获取GameObject边界
 
 **`Effect`**
 
@@ -2989,18 +2989,18 @@ Type.Vector
 
 #### Parameters
 
-| Name                      | Type                            | Description                                |
-| :------------------------ | :------------------------------ | :----------------------------------------- |
-| `onlyCollidingComponents` | `boolean`                       | 是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 尺寸的一半。   |
-| `includeFromChildActors?` | `boolean`                       | 是否递归包含子物体 default:undefined       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `onlyCollidingComponents` | `boolean` | 是否只包含有碰撞的组件。 |
+| `OriginOuter` | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为GameObject的中心点坐标。 |
+| `BoxExtentOuter` | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为GameObject尺寸的一半。 |
+| `includeFromChildActors?` | `boolean` | 是否递归包含子物体 default:undefined |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getChildByGuid
 
@@ -3008,7 +3008,7 @@ Type.Vector
 
 **`Description`**
 
-根据 Guid 查找子物体
+根据Guid查找子物体
 
 **`Effect`**
 
@@ -3016,9 +3016,9 @@ Type.Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | guid        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | guid |
 
 #### Returns
 
@@ -3026,7 +3026,7 @@ Type.Vector
 
 查找的物体
 
----
+___
 
 ### getChildByName
 
@@ -3042,9 +3042,9 @@ Type.Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名称        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名称 |
 
 #### Returns
 
@@ -3052,7 +3052,7 @@ Type.Vector
 
 查找的物体
 
----
+___
 
 ### getChildren
 
@@ -3060,7 +3060,7 @@ Type.Vector
 
 **`Description`**
 
-获取 Children，客户端不维系父子关系。推荐使用 Find 替代
+获取Children，客户端不维系父子关系。推荐使用Find替代
 
 **`Effect`**
 
@@ -3072,7 +3072,7 @@ Type.Vector
 
 Array`<GameObject>`
 
----
+___
 
 ### getChildrenBoxCenter
 
@@ -3092,8 +3092,8 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3102,7 +3102,7 @@ Array`<GameObject>`
 
 Type.Vector
 
----
+___
 
 ### getCollision
 
@@ -3122,7 +3122,7 @@ Type.Vector
 
 碰撞状态
 
----
+___
 
 ### getControlRotator
 
@@ -3138,8 +3138,8 @@ Type.Vector
 
 #### Parameters
 
-| Name   | Type                                | Description                           |
-| :----- | :---------------------------------- | :------------------------------------ |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `Out?` | [`Rotation`](Type.Type.Rotation.md) | 获取控制器旋转 default:出参，可选参数 |
 
 #### Returns
@@ -3148,7 +3148,7 @@ Type.Vector
 
 控制器的旋转
 
----
+___
 
 ### getDecorations
 
@@ -3156,7 +3156,7 @@ Type.Vector
 
 **`Description`**
 
-获取当前挂件实例化对象的 Guid
+获取当前挂件实例化对象的Guid
 
 **`Effect`**
 
@@ -3166,9 +3166,9 @@ Type.Vector
 
 [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[]
 
-guid 数组
+guid数组
 
----
+___
 
 ### getForwardVector
 
@@ -3188,8 +3188,8 @@ guid 数组
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3198,7 +3198,7 @@ guid 数组
 
 Vector
 
----
+___
 
 ### getHeadUIWidget
 
@@ -3206,7 +3206,7 @@ Vector
 
 **`Description`**
 
-获取头顶 UIWidget
+获取头顶UIWidget
 
 **`Effect`**
 
@@ -3216,9 +3216,9 @@ Vector
 
 [`UIWidget`](Gameplay.Gameplay.UIWidget.md)
 
-头顶 UIWidget 对象
+头顶UIWidget对象
 
----
+___
 
 ### getRelativeLocation
 
@@ -3238,8 +3238,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3248,7 +3248,7 @@ Vector
 
 位置坐标
 
----
+___
 
 ### getRelativeRotation
 
@@ -3268,8 +3268,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                                | Description                               |
-| :------- | :---------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -3278,7 +3278,7 @@ Vector
 
 旋转角度
 
----
+___
 
 ### getRelativeScale
 
@@ -3298,8 +3298,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3308,7 +3308,7 @@ Vector
 
 相对缩放
 
----
+___
 
 ### getRightVector
 
@@ -3328,8 +3328,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3338,7 +3338,7 @@ Vector
 
 Vector
 
----
+___
 
 ### getScriptByGuid
 
@@ -3346,7 +3346,7 @@ Vector
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -3354,9 +3354,9 @@ Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | guid        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | guid |
 
 #### Returns
 
@@ -3364,7 +3364,7 @@ Vector
 
 Script
 
----
+___
 
 ### getScriptByName
 
@@ -3372,7 +3372,7 @@ Script
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -3380,9 +3380,9 @@ Script
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
@@ -3390,7 +3390,7 @@ Script
 
 Script
 
----
+___
 
 ### getScripts
 
@@ -3398,7 +3398,7 @@ Script
 
 **`Description`**
 
-获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -3410,7 +3410,7 @@ Script
 
 Array`<Script>`
 
----
+___
 
 ### getSlotName
 
@@ -3426,9 +3426,9 @@ Array`<Script>`
 
 #### Parameters
 
-| Name       | Type                                                 | Description |
-| :--------- | :--------------------------------------------------- | :---------- |
-| `slotType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `slotType` | [`SlotType`](../enums/Gameplay.Gameplay.SlotType.md) | 插槽类型 |
 
 #### Returns
 
@@ -3436,7 +3436,7 @@ Array`<Script>`
 
 插槽名称(string)
 
----
+___
 
 ### getSourceAssetGuid
 
@@ -3444,7 +3444,7 @@ Array`<Script>`
 
 **`Description`**
 
-获取当前物体使用资源的 GUID
+获取当前物体使用资源的GUID
 
 **`Effect`**
 
@@ -3454,9 +3454,9 @@ Array`<Script>`
 
 `string`
 
-资源的 GUID
+资源的GUID
 
----
+___
 
 ### getTransform
 
@@ -3464,7 +3464,7 @@ Array`<Script>`
 
 **`Description`**
 
-返回当前物体 Transform
+返回当前物体Transform
 
 **`Effect`**
 
@@ -3476,8 +3476,8 @@ Array`<Script>`
 
 #### Parameters
 
-| Name     | Type                                  | Description                                |
-| :------- | :------------------------------------ | :----------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Transform`](Type.Type.Transform.md) | 接收转换数据的 Transform 对象 default:null |
 
 #### Returns
@@ -3486,7 +3486,7 @@ Array`<Script>`
 
 Transform
 
----
+___
 
 ### getUpVector
 
@@ -3502,8 +3502,8 @@ Transform
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3512,7 +3512,7 @@ Transform
 
 Vector
 
----
+___
 
 ### getVisibility
 
@@ -3532,7 +3532,7 @@ Vector
 
 bool
 
----
+___
 
 ### getWorldLocation
 
@@ -3552,8 +3552,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3562,7 +3562,7 @@ bool
 
 世界位置坐标
 
----
+___
 
 ### getWorldRotation
 
@@ -3582,8 +3582,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                                | Description                               |
-| :------- | :---------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -3592,7 +3592,7 @@ bool
 
 世界旋转
 
----
+___
 
 ### getWorldScale
 
@@ -3612,8 +3612,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -3622,7 +3622,7 @@ bool
 
 世界缩放
 
----
+___
 
 ### isPlayingAnimation
 
@@ -3642,7 +3642,7 @@ bool
 
 是否正在播放动画
 
----
+___
 
 ### isRunningClient
 
@@ -3660,9 +3660,9 @@ bool
 
 `boolean`
 
-true 为客户端
+true为客户端
 
----
+___
 
 ### jump
 
@@ -3680,7 +3680,7 @@ true 为客户端
 
 `void`
 
----
+___
 
 ### loadAnimation
 
@@ -3696,10 +3696,10 @@ true 为客户端
 
 #### Parameters
 
-| Name    | Type      | Description                         |
-| :------ | :-------- | :---------------------------------- |
-| `guid`  | `string`  | 动画 GUID                           |
-| `sync?` | `boolean` | Animation 对象是否同步 default:true |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 动画GUID |
+| `sync?` | `boolean` | Animation对象是否同步 default:true |
 
 #### Returns
 
@@ -3707,7 +3707,7 @@ true 为客户端
 
 Animation 对象
 
----
+___
 
 ### loadDecoration
 
@@ -3723,16 +3723,16 @@ Animation 对象
 
 #### Parameters
 
-| Name               | Type                                                               | Description     |
-| :----------------- | :----------------------------------------------------------------- | :-------------- |
-| `decorationString` | `string`                                                           | 一个挂件数据    |
-| `callback`         | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) | 挂件对象的 Guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `decorationString` | `string` |  一个挂件数据 |
+| `callback` | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) |  挂件对象的Guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loadSlotAndEditorDataByGuid
 
@@ -3740,7 +3740,7 @@ Animation 对象
 
 **`Description`**
 
-通过 Guid 加载插槽跟角色编辑数据
+通过Guid加载插槽跟角色编辑数据
 
 **`Effect`**
 
@@ -3748,15 +3748,15 @@ Animation 对象
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | Slot Guid   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | Slot Guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loadSlotAndEditorDataByPath
 
@@ -3772,15 +3772,15 @@ Animation 对象
 
 #### Parameters
 
-| Name           | Type     | Description |
-| :------------- | :------- | :---------- |
-| `relativePath` | `string` | 相对路径    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `relativePath` | `string` | 相对路径 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loadStance
 
@@ -3796,16 +3796,16 @@ Animation 对象
 
 **`Precautions`**
 
-guid 参数传入预制姿态资源 GUID 时, 会直接创建对应姿态;
-传入动画资源 GUID 时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
-即使在服务器上调用 loadStance(), 如果 sync 参数置为 false, 也不会同步操作到客户端.
+guid参数传入预制姿态资源GUID时, 会直接创建对应姿态;
+传入动画资源GUID时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
+即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端.
 
 #### Parameters
 
-| Name    | Type      | Description                               |
-| :------ | :-------- | :---------------------------------------- |
-| `guid`  | `string`  | 预制姿态资源 guid 或动画资源 guid         |
-| `sync?` | `boolean` | 对姿态对象的操作是否自动同步 default:true |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` |  预制姿态资源guid或动画资源guid |
+| `sync?` | `boolean` |  对姿态对象的操作是否自动同步 default:true |
 
 #### Returns
 
@@ -3813,7 +3813,7 @@ guid 参数传入预制姿态资源 GUID 时, 会直接创建对应姿态;
 
 二级姿态对象
 
----
+___
 
 ### lookAt
 
@@ -3829,15 +3829,15 @@ guid 参数传入预制姿态资源 GUID 时, 会直接创建对应姿态;
 
 #### Parameters
 
-| Name          | Type                            | Description |
-| :------------ | :------------------------------ | :---------- |
-| `TargetPoint` | [`Vector`](Type.Type.Vector.md) | 目标点      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `TargetPoint` | [`Vector`](Type.Type.Vector.md) | 目标点 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### onDestroy
 
@@ -3855,7 +3855,7 @@ onDestroy 生命周期函数
 
 `void`
 
----
+___
 
 ### onStart
 
@@ -3873,7 +3873,7 @@ onDestroy 生命周期函数
 
 `void`
 
----
+___
 
 ### onUpdate
 
@@ -3889,15 +3889,15 @@ onUpdate 生命周期函数
 
 #### Parameters
 
-| Name | Type     | Description  |
-| :--- | :------- | :----------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `dt` | `number` | 函数调用间隔 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### playAnimation
 
@@ -3905,7 +3905,7 @@ onUpdate 生命周期函数
 
 **`Description`**
 
-播放动画,同时获取到动画对象,Animation 对象接口是同步的
+播放动画,同时获取到动画对象,Animation对象接口是同步的
 
 **`Effect`**
 
@@ -3913,11 +3913,11 @@ onUpdate 生命周期函数
 
 #### Parameters
 
-| Name         | Type     | Description                                                    |
-| :----------- | :------- | :------------------------------------------------------------- |
-| `guid`       | `string` | 动画 GUID                                                      |
-| `loopCount?` | `number` | 循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
-| `rate?`      | `number` | 播放速率，1 表示正常速率 default:1                             |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 动画GUID |
+| `loopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
+| `rate?` | `number` | 播放速率，1表示正常速率 default:1 |
 
 #### Returns
 
@@ -3925,7 +3925,7 @@ onUpdate 生命周期函数
 
 Animation 对象
 
----
+___
 
 ### playAnimationLocally
 
@@ -3945,17 +3945,17 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 #### Parameters
 
-| Name               | Type     | Description                                                    |
-| :----------------- | :------- | :------------------------------------------------------------- |
-| `AnimationGuid`    | `string` | 动画 GUID                                                      |
-| `AnimationLength?` | `number` | 播放时长 default:0                                             |
-| `LoopCount?`       | `number` | 循环播放次数, 范围 0~2147483647, 设置为 0 时无限循环 default:1 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `AnimationGuid` | `string` | 动画GUID |
+| `AnimationLength?` | `number` | 播放时长 default:0 |
+| `LoopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### ready
 
@@ -3963,7 +3963,7 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 **`Description`**
 
-GameObject 准备好后返回
+GameObject准备好后返回
 
 **`Effect`**
 
@@ -3975,7 +3975,7 @@ GameObject 准备好后返回
 
 准备好的对象
 
----
+___
 
 ### setAppearance
 
@@ -3991,14 +3991,14 @@ GameObject 准备好后返回
 
 #### Type parameters
 
-| Name | Type                                                                  |
-| :--- | :-------------------------------------------------------------------- |
-| `T`  | extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`SomatotypeBase`](Gameplay.Gameplay.SomatotypeBase.md)<`T`\> |
 
 #### Parameters
 
-| Name  | Type                                                               | Description        |
-| :---- | :----------------------------------------------------------------- | :----------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `clz` | [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\> | 外观修改接口类类型 |
 
 #### Returns
@@ -4007,7 +4007,7 @@ GameObject 准备好后返回
 
 外观修改对象
 
----
+___
 
 ### setCollision
 
@@ -4027,16 +4027,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name                   | Type                                                                                                                   | Description                                               |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean`                                                                                                              | 是否传递给子节点 default: false                           |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) |  碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean` |  是否传递给子节点 default: false |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setCollisionShapeAndExtent
 
@@ -4052,16 +4052,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name              | Type                                                               | Description    |
-| :---------------- | :----------------------------------------------------------------- | :------------- |
-| `ShapeType`       | [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) | 启用的碰撞形状 |
-| `CollisionExtent` | [`Vector`](Type.Type.Vector.md)                                    | 启用的碰撞形状 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ShapeType` | [`CustomShapeType`](../enums/Gameplay.Gameplay.CustomShapeType.md) | 启用的碰撞形状 |
+| `CollisionExtent` | [`Vector`](Type.Type.Vector.md) | 启用的碰撞形状 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLocallyVisibility
 
@@ -4077,16 +4077,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                 |
-| :--------------------- | :------------------------------------------------------- | :-------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                        |
-| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:true |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态 |
+| `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLocationAndRotation
 
@@ -4102,16 +4102,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | 世界位置    |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 世界位置 |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeLocation
 
@@ -4127,15 +4127,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeRotation
 
@@ -4151,15 +4151,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeScale
 
@@ -4175,15 +4175,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name    | Type                            | Description      |
-| :------ | :------------------------------ | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `scale` | [`Vector`](Type.Type.Vector.md) | 要设置的相对缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setTransform
 
@@ -4191,7 +4191,7 @@ GameObject 准备好后返回
 
 **`Description`**
 
-设置当前物体 transform
+设置当前物体transform
 
 **`Effect`**
 
@@ -4199,15 +4199,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name        | Type                                  | Description |
-| :---------- | :------------------------------------ | :---------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | transform   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](Type.Type.Transform.md) | transform |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setVisibility
 
@@ -4223,16 +4223,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                 |
-| :--------------------- | :------------------------------------------------------- | :-------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                        |
-| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:true |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态 |
+| `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldLocation
 
@@ -4248,15 +4248,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name | Type                            | Description      |
-| :--- | :------------------------------ | :--------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界坐标 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |  要设置的世界坐标 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldRotation
 
@@ -4272,15 +4272,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description      |
-| :--------- | :---------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldScale
 
@@ -4296,15 +4296,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name | Type                            | Description      |
-| :--- | :------------------------------ | :--------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### stopAnimation
 
@@ -4324,15 +4324,15 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name              | Type     | Description           |
-| :---------------- | :------- | :-------------------- |
-| `InAnimationGuid` | `string` | 停止播放的动画的 Guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAnimationGuid` | `string` | 停止播放的动画的Guid |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### stopStance
 
@@ -4348,19 +4348,19 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 **`Precautions`**
 
-当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态. 对单端对象操作时需要把它置为 false.
+当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. 对单端对象操作时需要把它置为false.
 
 #### Parameters
 
-| Name    | Type      | Description               |
-| :------ | :-------- | :------------------------ |
-| `sync?` | `boolean` | 是否自动同步 default:true |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `sync?` | `boolean` |  是否自动同步 default:true |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### swimmingDown
 
@@ -4376,15 +4376,15 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name    | Type     | Description                                 |
-| :------ | :------- | :------------------------------------------ |
-| `speed` | `number` | 下潜速度不能超过 MaxSwimSpeed(游泳最大速度) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `speed` | `number` | 下潜速度不能超过MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### swimmingUp
 
@@ -4400,15 +4400,15 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name    | Type     | Description                                 |
-| :------ | :------- | :------------------------------------------ |
-| `speed` | `number` | 上浮速度不能超过 MaxSwimSpeed(游泳最大速度) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `speed` | `number` | 上浮速度不能超过MaxSwimSpeed(游泳最大速度) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### switchToFlying
 
@@ -4426,7 +4426,7 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 `void`
 
----
+___
 
 ### switchToWalking
 
@@ -4444,7 +4444,7 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 `void`
 
----
+___
 
 ### asyncFind
 
@@ -4452,7 +4452,7 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 **`Description`**
 
-通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -4461,17 +4461,17 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | 物体的 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 物体的guid |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
-Guid 对应的物体
+Guid对应的物体
 
----
+___
 
 ### asyncSpawnGameObject
 
@@ -4487,18 +4487,18 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name            | Type      | Description                     |
-| :-------------- | :-------- | :------------------------------ |
-| `assetId`       | `string`  | 资源的 GUID                     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
-构造的 GameObject
+构造的GameObject
 
----
+___
 
 ### find
 
@@ -4506,7 +4506,7 @@ Guid 对应的物体
 
 **`Description`**
 
-通过 Guid 查找 GameObject
+通过Guid查找GameObject
 
 **`Effect`**
 
@@ -4514,17 +4514,17 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | 物体的 Guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 物体的Guid |
 
 #### Returns
 
 `GameObject`
 
-Guid 对应的物体
+Guid对应的物体
 
----
+___
 
 ### findGameObjectByTag
 
@@ -4532,7 +4532,7 @@ Guid 对应的物体
 
 **`Description`**
 
-通过自定义 Tag 获取 GameObject
+通过自定义Tag获取GameObject
 
 **`Effect`**
 
@@ -4540,9 +4540,9 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `InTag` | `string` | 自定义 Tag  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InTag` | `string` | 自定义Tag |
 
 #### Returns
 
@@ -4550,7 +4550,7 @@ Guid 对应的物体
 
 Array`<GameObject>`
 
----
+___
 
 ### getGameObjectByName
 
@@ -4566,9 +4566,9 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 物体名字    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 物体名字 |
 
 #### Returns
 
@@ -4576,7 +4576,7 @@ Array`<GameObject>`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
----
+___
 
 ### getGameObjectsByName
 
@@ -4592,9 +4592,9 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 物体名字    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 物体名字 |
 
 #### Returns
 
@@ -4602,7 +4602,7 @@ Array`<GameObject>`
 
 返回所有查找到的对象
 
----
+___
 
 ### spawnGameObject
 
@@ -4618,13 +4618,13 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name            | Type      | Description                     |
-| :-------------- | :-------- | :------------------------------ |
-| `assetId`       | `string`  | 资源的 GUID                     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `GameObject`
 
-构造的 GameObject
+构造的GameObject

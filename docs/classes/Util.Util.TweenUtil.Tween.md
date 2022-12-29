@@ -10,39 +10,39 @@
 
 ## Type parameters
 
-| Name | Type                                                                     |
-| :--- | :----------------------------------------------------------------------- |
-| `T`  | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
 
 ## Table of contents
 
-| Methods                                                                                                                                                                                                                             |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[chain](Util.Util.TweenUtil.Tween.md#chain)**([`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[]): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间 |
-| **[delay](Util.Util.TweenUtil.Tween.md#delay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 延迟启动                                                                                                              |
-| **[duration](Util.Util.TweenUtil.Tween.md#duration)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置完成补间需要的时间（周期）                                                                                  |
-| **[easing](Util.Util.TweenUtil.Tween.md#easing)**(`[easing](Util.Util.TweenUtil.Tween.md#easing)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置缓动函数                                                        |
-| **[end](Util.Util.TweenUtil.Tween.md#end)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将当前补间置为目标状态                                                                                                            |
-| **[getID](Util.Util.TweenUtil.Tween.md#getid)**(): `number` <br> 获取当前补间对象的 ID                                                                                                                                              |
-| **[group](Util.Util.TweenUtil.Tween.md#group)**(`[group](Util.Util.TweenUtil.Tween.md#group)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置当前补间对象的分组                                                          |
-| **[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)**(`[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置插值函数                            |
-| **[isPaused](Util.Util.TweenUtil.Tween.md#ispaused)**(): `boolean` <br> 获取当前补间对象是否为暂停状态。                                                                                                                            |
-| **[isPlaying](Util.Util.TweenUtil.Tween.md#isplaying)**(): `boolean` <br> 获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回 true。                                                                             |
-| **[onComplete](Util.Util.TweenUtil.Tween.md#oncomplete)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入                               |
-| **[onRepeat](Util.Util.TweenUtil.Tween.md#onrepeat)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入                             |
-| **[onStart](Util.Util.TweenUtil.Tween.md#onstart)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 在补间开始之前触发，补间对象作为第一个参数传入                                                   |
-| **[onStop](Util.Util.TweenUtil.Tween.md#onstop)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入                                       |
-| **[onUpdate](Util.Util.TweenUtil.Tween.md#onupdate)**((`object`: `T`, `elapsed`: `number`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间更新时触发，补间对象作为第一个参数传入                            |
-| **[pause](Util.Util.TweenUtil.Tween.md#pause)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 暂停补间，可以指定暂停生效时间，默认为当前时间                                                                        |
-| **[repeat](Util.Util.TweenUtil.Tween.md#repeat)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复次数, 补间的总次数将是重复参数加上一个初始补间                                                              |
-| **[repeatDelay](Util.Util.TweenUtil.Tween.md#repeatdelay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复补间时的延迟启动时间                                                                              |
-| **[resume](Util.Util.TweenUtil.Tween.md#resume)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 恢复补间，可以指定恢复生效时间，默认为当前时间                                                                      |
-| **[start](Util.Util.TweenUtil.Tween.md#start)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 启动补间，可以指定启动生效时间，默认为当前时间                                                                        |
-| **[stop](Util.Util.TweenUtil.Tween.md#stop)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出                                                         |
-| **[stopChainedTweens](Util.Util.TweenUtil.Tween.md#stopchainedtweens)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止所有链接到当前补间的补间对象                                                                      |
-| **[to](Util.Util.TweenUtil.Tween.md#to)**([`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops), `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间                    |
-| **[update](Util.Util.TweenUtil.Tween.md#update)**(`number`, `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。                                                                             |
-| **[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)**(`[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。                  |
+| Methods |
+| :-----|
+| **[chain](Util.Util.TweenUtil.Tween.md#chain)**([`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[]): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间|
+| **[delay](Util.Util.TweenUtil.Tween.md#delay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 延迟启动|
+| **[duration](Util.Util.TweenUtil.Tween.md#duration)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置完成补间需要的时间（周期）|
+| **[easing](Util.Util.TweenUtil.Tween.md#easing)**(`[easing](Util.Util.TweenUtil.Tween.md#easing)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置缓动函数|
+| **[end](Util.Util.TweenUtil.Tween.md#end)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将当前补间置为目标状态|
+| **[getID](Util.Util.TweenUtil.Tween.md#getid)**(): `number` <br> 获取当前补间对象的ID|
+| **[group](Util.Util.TweenUtil.Tween.md#group)**(`[group](Util.Util.TweenUtil.Tween.md#group)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置当前补间对象的分组|
+| **[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)**(`[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置插值函数|
+| **[isPaused](Util.Util.TweenUtil.Tween.md#ispaused)**(): `boolean` <br> 获取当前补间对象是否为暂停状态。|
+| **[isPlaying](Util.Util.TweenUtil.Tween.md#isplaying)**(): `boolean` <br> 获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。|
+| **[onComplete](Util.Util.TweenUtil.Tween.md#oncomplete)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入|
+| **[onRepeat](Util.Util.TweenUtil.Tween.md#onrepeat)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入|
+| **[onStart](Util.Util.TweenUtil.Tween.md#onstart)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 在补间开始之前触发，补间对象作为第一个参数传入|
+| **[onStop](Util.Util.TweenUtil.Tween.md#onstop)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入|
+| **[onUpdate](Util.Util.TweenUtil.Tween.md#onupdate)**((`object`: `T`, `elapsed`: `number`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间更新时触发，补间对象作为第一个参数传入|
+| **[pause](Util.Util.TweenUtil.Tween.md#pause)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 暂停补间，可以指定暂停生效时间，默认为当前时间|
+| **[repeat](Util.Util.TweenUtil.Tween.md#repeat)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复次数, 补间的总次数将是重复参数加上一个初始补间|
+| **[repeatDelay](Util.Util.TweenUtil.Tween.md#repeatdelay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复补间时的延迟启动时间|
+| **[resume](Util.Util.TweenUtil.Tween.md#resume)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 恢复补间，可以指定恢复生效时间，默认为当前时间|
+| **[start](Util.Util.TweenUtil.Tween.md#start)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 启动补间，可以指定启动生效时间，默认为当前时间|
+| **[stop](Util.Util.TweenUtil.Tween.md#stop)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出|
+| **[stopChainedTweens](Util.Util.TweenUtil.Tween.md#stopchainedtweens)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止所有链接到当前补间的补间对象|
+| **[to](Util.Util.TweenUtil.Tween.md#to)**([`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops), `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间|
+| **[update](Util.Util.TweenUtil.Tween.md#update)**(`number`, `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
+| **[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)**(`[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。|
 
 **`Description`**
 
@@ -54,16 +54,16 @@
 
 #### Type parameters
 
-| Name | Type                                                                     |
-| :--- | :----------------------------------------------------------------------- |
-| `T`  | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
 
 #### Parameters
 
-| Name     | Type                                               | Description                               |
-| :------- | :------------------------------------------------- | :---------------------------------------- |
-| `obj`    | `T`                                                | 要创建补间的对象类型                      |
-| `group?` | `false` \| [`Group`](Util.Util.TweenUtil.Group.md) | 要创建的补间对象的分组 default: mainGroup |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `T` |  要创建补间的对象类型 |
+| `group?` | ``false`` \| [`Group`](Util.Util.TweenUtil.Group.md) |  要创建的补间对象的分组 default: mainGroup |
 
 ## Methods
 
@@ -82,24 +82,23 @@
 **`Example`**
 
 使用示例: 示例
-
 ```ts
 // A结束后启动B
-tweenA.chain(tweenB);
+tweenA.chain(tweenB)
 
 // A-B循环
-tweenA.chain(tweenB);
-tweenB.chain(tweenA);
+tweenA.chain(tweenB)
+tweenB.chain(tweenA)
 
 // A结束后同时启动B,C
-tweenA.chain(tweenB, tweenC);
+tweenA.chain(tweenB, tweenC)
 ```
 
 #### Parameters
 
-| Name        | Type                                              | Description              |
-| :---------- | :------------------------------------------------ | :----------------------- |
-| `...tweens` | [`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[] | 要链接的补间对象（数组） |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...tweens` | [`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[] |  要链接的补间对象（数组） |
 
 #### Returns
 
@@ -107,7 +106,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### delay
 
@@ -123,9 +122,9 @@ tweenA.chain(tweenB, tweenC);
 
 #### Parameters
 
-| Name      | Type     | Description                     |
-| :-------- | :------- | :------------------------------ |
-| `amount?` | `number` | 延迟时间，单位：ms。 default: 0 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `amount?` | `number` |  延迟时间，单位：ms。 default: 0 |
 
 #### Returns
 
@@ -133,7 +132,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### duration
 
@@ -149,9 +148,9 @@ tweenA.chain(tweenB, tweenC);
 
 #### Parameters
 
-| Name | Type     | Description                                  |
-| :--- | :------- | :------------------------------------------- |
-| `d?` | `number` | 完成补间需要的时间，单位：ms。 default: 1000 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `d?` | `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns
 
@@ -159,7 +158,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### easing
 
@@ -175,9 +174,9 @@ tweenA.chain(tweenB, tweenC);
 
 #### Parameters
 
-| Name              | Type                                                                 | Description                          |
-| :---------------- | :------------------------------------------------------------------- | :----------------------------------- |
-| `easingFunction?` | [`EasingFunction`](../modules/Util.Util.TweenUtil.md#easingfunction) | 缓动函数 default: Easing.Linear.None |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `easingFunction?` | [`EasingFunction`](../modules/Util.Util.TweenUtil.md#easingfunction) |  缓动函数 default: Easing.Linear.None |
 
 #### Returns
 
@@ -185,7 +184,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### end
 
@@ -205,7 +204,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### getID
 
@@ -213,7 +212,7 @@ tweenA.chain(tweenB, tweenC);
 
 **`Description`**
 
-获取当前补间对象的 ID
+获取当前补间对象的ID
 
 **`Effect`**
 
@@ -223,9 +222,9 @@ tweenA.chain(tweenB, tweenC);
 
 `number`
 
-当前补间对象的 ID
+当前补间对象的ID
 
----
+___
 
 ### group
 
@@ -241,9 +240,9 @@ tweenA.chain(tweenB, tweenC);
 
 #### Parameters
 
-| Name     | Type                                    | Description                 |
-| :------- | :-------------------------------------- | :-------------------------- |
-| `group?` | [`Group`](Util.Util.TweenUtil.Group.md) | 新的分组 default: mainGroup |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `group?` | [`Group`](Util.Util.TweenUtil.Group.md) |  新的分组 default: mainGroup |
 
 #### Returns
 
@@ -251,7 +250,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### interpolation
 
@@ -267,9 +266,9 @@ tweenA.chain(tweenB, tweenC);
 
 #### Parameters
 
-| Name                     | Type                                                                               | Description                            |
-| :----------------------- | :--------------------------------------------------------------------------------- | :------------------------------------- |
-| `interpolationFunction?` | [`InterpolationFunction`](../modules/Util.Util.TweenUtil.md#interpolationfunction) | 插值函数 default: Interpolation.Linear |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `interpolationFunction?` | [`InterpolationFunction`](../modules/Util.Util.TweenUtil.md#interpolationfunction) |  插值函数 default: Interpolation.Linear |
 
 #### Returns
 
@@ -277,7 +276,7 @@ tweenA.chain(tweenB, tweenC);
 
 当前补间对象，可链式调用
 
----
+___
 
 ### isPaused
 
@@ -297,7 +296,7 @@ tweenA.chain(tweenB, tweenC);
 
 true-暂停；false-在补间。
 
----
+___
 
 ### isPlaying
 
@@ -305,7 +304,7 @@ true-暂停；false-在补间。
 
 **`Description`**
 
-获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回 true。
+获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。
 
 **`Effect`**
 
@@ -317,7 +316,7 @@ true-暂停；false-在补间。
 
 true-在补间过程中；false-不在补间过程，未开始或已结束。
 
----
+___
 
 ### onComplete
 
@@ -333,9 +332,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name        | Type                      | Description                         |
-| :---------- | :------------------------ | :---------------------------------- |
-| `callback?` | (`object`: `T`) => `void` | 要绑定的回调函数 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback?` | (`object`: `T`) => `void` |  要绑定的回调函数 default: undefined |
 
 #### Returns
 
@@ -343,7 +342,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### onRepeat
 
@@ -359,9 +358,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name        | Type                      | Description                         |
-| :---------- | :------------------------ | :---------------------------------- |
-| `callback?` | (`object`: `T`) => `void` | 要绑定的回调函数 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback?` | (`object`: `T`) => `void` |  要绑定的回调函数 default: undefined |
 
 #### Returns
 
@@ -369,7 +368,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### onStart
 
@@ -390,9 +389,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name        | Type                      | Description                         |
-| :---------- | :------------------------ | :---------------------------------- |
-| `callback?` | (`object`: `T`) => `void` | 要绑定的回调函数 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback?` | (`object`: `T`) => `void` |  要绑定的回调函数 default: undefined |
 
 #### Returns
 
@@ -400,7 +399,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### onStop
 
@@ -421,9 +420,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name        | Type                      | Description                         |
-| :---------- | :------------------------ | :---------------------------------- |
-| `callback?` | (`object`: `T`) => `void` | 要绑定的回调函数 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback?` | (`object`: `T`) => `void` |  要绑定的回调函数 default: undefined |
 
 #### Returns
 
@@ -431,7 +430,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### onUpdate
 
@@ -451,9 +450,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name        | Type                                           | Description                         |
-| :---------- | :--------------------------------------------- | :---------------------------------- |
-| `callback?` | (`object`: `T`, `elapsed`: `number`) => `void` | 要绑定的回调函数 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback?` | (`object`: `T`, `elapsed`: `number`) => `void` |  要绑定的回调函数 default: undefined |
 
 #### Returns
 
@@ -461,7 +460,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### pause
 
@@ -481,9 +480,9 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 #### Parameters
 
-| Name    | Type     | Description                    |
-| :------ | :------- | :----------------------------- |
-| `time?` | `number` | 暂停生效时间 default: 当前时间 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time?` | `number` |  暂停生效时间 default: 当前时间 |
 
 #### Returns
 
@@ -491,7 +490,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 当前补间对象，可链式调用
 
----
+___
 
 ### repeat
 
@@ -512,17 +511,16 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 **`Example`**
 
 使用示例: 示例
-
 ```ts
-tween.repeat(10); // 循环10次
-tween.repeat(Infinity); // 无限循环
+tween.repeat(10) // 循环10次
+tween.repeat(Infinity) // 无限循环
 ```
 
 #### Parameters
 
-| Name     | Type     | Description         |
-| :------- | :------- | :------------------ |
-| `times?` | `number` | 重复次数 default: 0 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `times?` | `number` |  重复次数 default: 0 |
 
 #### Returns
 
@@ -530,7 +528,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### repeatDelay
 
@@ -546,9 +544,9 @@ tween.repeat(Infinity); // 无限循环
 
 #### Parameters
 
-| Name      | Type     | Description                             |
-| :-------- | :------- | :-------------------------------------- |
-| `amount?` | `number` | 延迟时间，单位：ms。 default: undefined |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `amount?` | `number` |  延迟时间，单位：ms。 default: undefined |
 
 #### Returns
 
@@ -556,7 +554,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### resume
 
@@ -576,9 +574,9 @@ tween.repeat(Infinity); // 无限循环
 
 #### Parameters
 
-| Name    | Type     | Description                    |
-| :------ | :------- | :----------------------------- |
-| `time?` | `number` | 恢复生效时间 default: 当前时间 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time?` | `number` |  恢复生效时间 default: 当前时间 |
 
 #### Returns
 
@@ -586,7 +584,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### start
 
@@ -606,9 +604,9 @@ tween.repeat(Infinity); // 无限循环
 
 #### Parameters
 
-| Name    | Type     | Description                    |
-| :------ | :------- | :----------------------------- |
-| `time?` | `number` | 启动生效时间 default: 当前时间 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time?` | `number` |  启动生效时间 default: 当前时间 |
 
 #### Returns
 
@@ -616,7 +614,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### stop
 
@@ -636,7 +634,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### stopChainedTweens
 
@@ -656,7 +654,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### to
 
@@ -672,10 +670,10 @@ tween.repeat(Infinity); // 无限循环
 
 #### Parameters
 
-| Name         | Type                                                             | Description                                  |
-| :----------- | :--------------------------------------------------------------- | :------------------------------------------- |
-| `properties` | [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) | 目标状态                                     |
-| `duration?`  | `number`                                                         | 完成补间需要的时间，单位：ms。 default: 1000 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `properties` | [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |  目标状态 |
+| `duration?` | `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns
 
@@ -683,7 +681,7 @@ tween.repeat(Infinity); // 无限循环
 
 当前补间对象，可链式调用
 
----
+___
 
 ### update
 
@@ -699,10 +697,10 @@ tween.repeat(Infinity); // 无限循环
 
 #### Parameters
 
-| Name         | Type      | Description                        |
-| :----------- | :-------- | :--------------------------------- |
-| `time?`      | `number`  | 要绑定的回调函数 default: 当前时间 |
-| `autoStart?` | `boolean` | 是否自动开始 default: true         |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time?` | `number` |  要绑定的回调函数 default: 当前时间 |
+| `autoStart?` | `boolean` |  是否自动开始 default: true |
 
 #### Returns
 
@@ -710,7 +708,7 @@ tween.repeat(Infinity); // 无限循环
 
 true-如果当前更新之后尚未结束, false-当前更新之后补间结束
 
----
+___
 
 ### yoyo
 
@@ -727,9 +725,9 @@ true-如果当前更新之后尚未结束, false-当前更新之后补间结束
 
 #### Parameters
 
-| Name    | Type      | Description                  |
-| :------ | :-------- | :--------------------------- |
-| `yoyo?` | `boolean` | 是否启用 yoyo default: false |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `yoyo?` | `boolean` |  是否启用yoyo default: false |
 
 #### Returns
 

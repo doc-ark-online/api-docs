@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                            |
-| :--------------------------------------------------------------------------------------------- |
-| **[PerlinNoise](Gameplay.Gameplay.EOscillatorWaveform.md#perlinnoise)** = `1` <br> Perlin 噪声 |
-| **[SineWave](Gameplay.Gameplay.EOscillatorWaveform.md#sinewave)** = `0` <br> 正弦波            |
+| Enumeration Members |
+| :-----|
+| **[PerlinNoise](Gameplay.Gameplay.EOscillatorWaveform.md#perlinnoise)** = ``1`` <br> Perlin噪声|
+| **[SineWave](Gameplay.Gameplay.EOscillatorWaveform.md#sinewave)** = ``0`` <br> 正弦波|
 
 ## Enumeration Members
 
 ### PerlinNoise
 
-• **PerlinNoise** = `1`
+• **PerlinNoise** = ``1``
 
-Perlin 噪声
+Perlin噪声
 
----
+___
 
 ### SineWave
 
-• **SineWave** = `0`
+• **SineWave** = ``0``
 
 正弦波

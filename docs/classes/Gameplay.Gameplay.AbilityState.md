@@ -12,20 +12,20 @@
 
 ## Table of contents
 
-| Accessors                                                                                                      |
-| :------------------------------------------------------------------------------------------------------------- |
-| **[animation](Gameplay.Gameplay.AbilityState.md#animation)**(): `string` <br> 获取动画资源                     |
-| **[duration](Gameplay.Gameplay.AbilityState.md#duration)**(): `number` <br> 获取释放状态当前执行时间           |
-| **[executeTime](Gameplay.Gameplay.AbilityState.md#executetime)**(): `number` <br> 获取释放状态可执行总时长时间 |
-| **[loop](Gameplay.Gameplay.AbilityState.md#loop)**(): `boolean` <br> 获取释放状态是否可循环 isLoop             |
+| Accessors |
+| :-----|
+| **[animation](Gameplay.Gameplay.AbilityState.md#animation)**(): `string` <br> 获取动画资源|
+| **[duration](Gameplay.Gameplay.AbilityState.md#duration)**(): `number` <br> 获取释放状态当前执行时间|
+| **[executeTime](Gameplay.Gameplay.AbilityState.md#executetime)**(): `number` <br> 获取释放状态可执行总时长时间|
+| **[loop](Gameplay.Gameplay.AbilityState.md#loop)**(): `boolean` <br> 获取释放状态是否可循环isLoop|
 
-| Methods                                                                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性       |
-| **[cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性 |
-| **[enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> 获取对象是否可跳跃                                                                                                      |
-| **[enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> 获取对象是否可移动                                                                                                      |
-| **[enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md) <br> 获取对象是否可转向                                             |
+| Methods |
+| :-----|
+| **[addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性|
+| **[cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性|
+| **[enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> 获取对象是否可跳跃|
+| **[enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> 获取对象是否可移动|
+| **[enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md) <br> 获取对象是否可转向|
 
 ## Accessors
 
@@ -45,7 +45,7 @@
 
 `string`
 
-资源 GUID
+资源GUID
 
 • `set` **animation**(`AnimGuid`): `void`
 
@@ -59,15 +59,15 @@
 
 #### Parameters
 
-| Name       | Type     | Description |
-| :--------- | :------- | :---------- |
-| `AnimGuid` | `string` | 资源 GUID   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `AnimGuid` | `string` | 资源GUID |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### duration
 
@@ -87,7 +87,7 @@
 
 获取释放状态当前执行时间
 
----
+___
 
 ### executeTime
 
@@ -99,7 +99,7 @@
 
 **`Precautions`**
 
-状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
+状态执行的时间，小于0为无限（根据Cell耗时最长的来确定），否则按配置时间进行结束
 
 **`Effect`**
 
@@ -119,7 +119,7 @@
 
 **`Precautions`**
 
-状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
+状态执行的时间，小于0为无限（根据Cell耗时最长的来确定），否则按配置时间进行结束
 
 **`Effect`**
 
@@ -127,15 +127,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description                  |
-| :----- | :------- | :--------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `Time` | `number` | 设置释放状态可执行总时长时间 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### loop
 
@@ -143,7 +143,7 @@
 
 **`Description`**
 
-获取释放状态是否可循环 isLoop
+获取释放状态是否可循环isLoop
 
 **`Effect`**
 
@@ -153,7 +153,7 @@
 
 `boolean`
 
-true 或 false
+true或false
 
 • `set` **loop**(`LoopState`): `void`
 
@@ -167,9 +167,9 @@ true 或 false
 
 #### Parameters
 
-| Name        | Type      | Description   |
-| :---------- | :-------- | :------------ |
-| `LoopState` | `boolean` | true 或 false |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `LoopState` | `boolean` | true或false |
 
 #### Returns
 
@@ -191,15 +191,15 @@ true 或 false
 
 #### Parameters
 
-| Name          | Type                                                                               | Description      |
-| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### cancelControlAbility
 
@@ -215,15 +215,15 @@ true 或 false
 
 #### Parameters
 
-| Name          | Type                                                                               | Description      |
-| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### enableJump
 
@@ -241,9 +241,9 @@ true 或 false
 
 `boolean`
 
-true 或 false
+true或false
 
----
+___
 
 ### enableMove
 
@@ -261,9 +261,9 @@ true 或 false
 
 `boolean`
 
-true 或 false
+true或false
 
----
+___
 
 ### enableTurn
 
@@ -281,4 +281,4 @@ true 或 false
 
 [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md)
 
-true 或 false
+true或false

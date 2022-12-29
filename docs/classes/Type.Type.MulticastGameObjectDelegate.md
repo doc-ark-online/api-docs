@@ -8,11 +8,11 @@
 
 ## Table of contents
 
-| Methods                                                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------- |
-| **[add](Type.Type.MulticastGameObjectDelegate.md#add)**(`GameObjectDelegateFuncType`): `void` <br> 添加回调函数       |
-| **[broadcast](Type.Type.MulticastGameObjectDelegate.md#broadcast)**(`GameObject`): `void` <br> 触发代理事件           |
-| **[remove](Type.Type.MulticastGameObjectDelegate.md#remove)**(`GameObjectDelegateFuncType`): `void` <br> 删除回调函数 |
+| Methods |
+| :-----|
+| **[add](Type.Type.MulticastGameObjectDelegate.md#add)**(`GameObjectDelegateFuncType`): `void` <br> 添加回调函数|
+| **[broadcast](Type.Type.MulticastGameObjectDelegate.md#broadcast)**(`GameObject`): `void` <br> 触发代理事件|
+| **[remove](Type.Type.MulticastGameObjectDelegate.md#remove)**(`GameObjectDelegateFuncType`): `void` <br> 删除回调函数|
 
 ## Methods
 
@@ -30,15 +30,15 @@
 
 #### Parameters
 
-| Name   | Type                         | Description       |
-| :----- | :--------------------------- | :---------------- |
-| `func` | `GameObjectDelegateFuncType` | 回调函数 default: |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `GameObjectDelegateFuncType` |  回调函数 default: |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### broadcast
 
@@ -54,15 +54,15 @@
 
 #### Parameters
 
-| Name  | Type         | Description  |
-| :---- | :----------- | :----------- |
-| `obj` | `GameObject` | 触发物体对象 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `GameObject` |  触发物体对象 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### remove
 
@@ -78,9 +78,9 @@
 
 #### Parameters
 
-| Name   | Type                         | Description |
-| :----- | :--------------------------- | :---------- |
-| `func` | `GameObjectDelegateFuncType` | 回调函数    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `func` | `GameObjectDelegateFuncType` |  回调函数 |
 
 #### Returns
 

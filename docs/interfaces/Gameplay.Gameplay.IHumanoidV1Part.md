@@ -4,7 +4,7 @@
 
 **`Description`**
 
-人形对象 V1 部位
+人形对象V1部位
 
 ## Implemented by
 
@@ -12,10 +12,10 @@
 
 ## Table of contents
 
-| Methods                                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------- |
-| **[getWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#getwholebody)**(): `string` <br> 获取全身模型                  |
-| **[setWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型 |
+| Methods |
+| :-----|
+| **[getWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#getwholebody)**(): `string` <br> 获取全身模型|
+| **[setWholeBody](Gameplay.Gameplay.IHumanoidV1Part.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型|
 
 ## Methods
 
@@ -35,9 +35,9 @@
 
 `string`
 
-模型 Guid
+模型Guid
 
----
+___
 
 ### setWholeBody
 
@@ -49,7 +49,7 @@
 
 **`Precautions`**
 
-如果模型 Guid 没有预加载，则 v2 本地设置时异步的
+如果模型Guid没有预加载，则v2本地设置时异步的
 
 **`Effect`**
 
@@ -58,9 +58,9 @@ sync = true:双端
 
 #### Parameters
 
-| Name   | Type      | Description             |
-| :----- | :-------- | :---------------------- |
-| `guid` | `string`  | 模型 Guid               |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 模型Guid |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 #### Returns

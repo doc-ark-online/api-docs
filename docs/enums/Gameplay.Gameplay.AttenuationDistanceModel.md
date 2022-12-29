@@ -8,41 +8,41 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                              |
-| :----------------------------------------------------------------------------------------------- |
-| **[Inverse](Gameplay.Gameplay.AttenuationDistanceModel.md#inverse)** = `2` <br> 倒数衰减         |
-| **[Linear](Gameplay.Gameplay.AttenuationDistanceModel.md#linear)** = `0` <br> 线性衰减           |
-| **[LogReverse](Gameplay.Gameplay.AttenuationDistanceModel.md#logreverse)** = `3` <br> 反指数衰减 |
-| **[Logarithmic](Gameplay.Gameplay.AttenuationDistanceModel.md#logarithmic)** = `1` <br> 指数衰减 |
+| Enumeration Members |
+| :-----|
+| **[Inverse](Gameplay.Gameplay.AttenuationDistanceModel.md#inverse)** = ``2`` <br> 倒数衰减|
+| **[Linear](Gameplay.Gameplay.AttenuationDistanceModel.md#linear)** = ``0`` <br> 线性衰减|
+| **[LogReverse](Gameplay.Gameplay.AttenuationDistanceModel.md#logreverse)** = ``3`` <br> 反指数衰减|
+| **[Logarithmic](Gameplay.Gameplay.AttenuationDistanceModel.md#logarithmic)** = ``1`` <br> 指数衰减|
 
 ## Enumeration Members
 
 ### Inverse
 
-• **Inverse** = `2`
+• **Inverse** = ``2``
 
 倒数衰减
 
----
+___
 
 ### Linear
 
-• **Linear** = `0`
+• **Linear** = ``0``
 
 线性衰减
 
----
+___
 
 ### LogReverse
 
-• **LogReverse** = `3`
+• **LogReverse** = ``3``
 
 反指数衰减
 
----
+___
 
 ### Logarithmic
 
-• **Logarithmic** = `1`
+• **Logarithmic** = ``1``
 
 指数衰减

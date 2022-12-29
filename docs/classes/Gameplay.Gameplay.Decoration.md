@@ -8,18 +8,18 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                    |
-| :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[assetId](Gameplay.Gameplay.Decoration.md#assetid)**: `string` <br> 资源 Id                                                                 |
-| **[relativeTransform](Gameplay.Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Type.Transform.md) <br> 相对 ue slot Transform |
-| **[skeletonName](Gameplay.Gameplay.Decoration.md#skeletonname)**: `string` <br> 骨架名字                                                      |
-| **[slotName](Gameplay.Gameplay.Decoration.md#slotname)**: `string` <br> 插槽名                                                                |
+| Properties |
+| :-----|
+| **[assetId](Gameplay.Gameplay.Decoration.md#assetid)**: `string` <br> 资源Id|
+| **[relativeTransform](Gameplay.Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Type.Transform.md) <br> 相对ue slot Transform|
+| **[skeletonName](Gameplay.Gameplay.Decoration.md#skeletonname)**: `string` <br> 骨架名字|
+| **[slotName](Gameplay.Gameplay.Decoration.md#slotname)**: `string` <br> 插槽名|
 
-| Methods                                                                                             |
-| :-------------------------------------------------------------------------------------------------- |
-| **[deserialize](Gameplay.Gameplay.Decoration.md#deserialize)**(`string`): `void` <br> 反序列化      |
-| **[equal](Gameplay.Gameplay.Decoration.md#equal)**(`string`): `boolean` <br> 比较是否是一个插槽数据 |
-| **[serialize](Gameplay.Gameplay.Decoration.md#serialize)**(): `string` <br> 获取序列化 String       |
+| Methods |
+| :-----|
+| **[deserialize](Gameplay.Gameplay.Decoration.md#deserialize)**(`string`): `void` <br> 反序列化|
+| **[equal](Gameplay.Gameplay.Decoration.md#equal)**(`string`): `boolean` <br> 比较是否是一个插槽数据|
+| **[serialize](Gameplay.Gameplay.Decoration.md#serialize)**(): `string` <br> 获取序列化String|
 
 ## Properties
 
@@ -29,9 +29,9 @@
 
 **`Description`**
 
-资源 Id
+资源Id
 
----
+___
 
 ### relativeTransform
 
@@ -39,9 +39,9 @@
 
 **`Description`**
 
-相对 ue slot Transform
+相对ue slot Transform
 
----
+___
 
 ### skeletonName
 
@@ -51,7 +51,7 @@
 
 骨架名字
 
----
+___
 
 ### slotName
 
@@ -77,15 +77,15 @@
 
 #### Parameters
 
-| Name   | Type     | Description      |
-| :----- | :------- | :--------------- |
-| `data` | `string` | 挂件 string 数据 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `string` |  挂件string数据 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### equal
 
@@ -101,9 +101,9 @@
 
 #### Parameters
 
-| Name           | Type     | Description |
-| :------------- | :------- | :---------- |
-| `widgetString` | `string` | 插槽数据    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `widgetString` | `string` | 插槽数据 |
 
 #### Returns
 
@@ -111,7 +111,7 @@
 
 是否相等
 
----
+___
 
 ### serialize
 
@@ -119,7 +119,7 @@
 
 **`Description`**
 
-获取序列化 String
+获取序列化String
 
 **`Effect`**
 

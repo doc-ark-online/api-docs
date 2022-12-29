@@ -8,68 +8,68 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                                        |
-| :--------------------------------------------------------------------------------------------------------- |
-| **[AnimeFemale](Gameplay.Gameplay.SomatotypeV2.md#animefemale)** = `2` <br> 二次元成年女性                 |
-| **[AnimeMale](Gameplay.Gameplay.SomatotypeV2.md#animemale)** = `1` <br> 二次元成年男性                     |
-| **[LowpolyAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = `4` <br> Lowpoly 成年女性 |
-| **[LowpolyAdultMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultmale)** = `3` <br> Lowpoly 成年男性     |
-| **[None](Gameplay.Gameplay.SomatotypeV2.md#none)** = `0` <br> 空骨骼模型，默认二次元女骨架                 |
-| **[RealisticAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)** = `6` <br> 写实成年女性 |
-| **[RealisticAdultMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultmale)** = `5` <br> 写实成年男性     |
+| Enumeration Members |
+| :-----|
+| **[AnimeFemale](Gameplay.Gameplay.SomatotypeV2.md#animefemale)** = ``2`` <br> 二次元成年女性|
+| **[AnimeMale](Gameplay.Gameplay.SomatotypeV2.md#animemale)** = ``1`` <br> 二次元成年男性|
+| **[LowpolyAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` <br> Lowpoly成年女性|
+| **[LowpolyAdultMale](Gameplay.Gameplay.SomatotypeV2.md#lowpolyadultmale)** = ``3`` <br> Lowpoly成年男性|
+| **[None](Gameplay.Gameplay.SomatotypeV2.md#none)** = ``0`` <br> 空骨骼模型，默认二次元女骨架|
+| **[RealisticAdultFemale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultfemale)** = ``6`` <br> 写实成年女性|
+| **[RealisticAdultMale](Gameplay.Gameplay.SomatotypeV2.md#realisticadultmale)** = ``5`` <br> 写实成年男性|
 
 ## Enumeration Members
 
 ### AnimeFemale
 
-• **AnimeFemale** = `2`
+• **AnimeFemale** = ``2``
 
 二次元成年女性
 
----
+___
 
 ### AnimeMale
 
-• **AnimeMale** = `1`
+• **AnimeMale** = ``1``
 
 二次元成年男性
 
----
+___
 
 ### LowpolyAdultFemale
 
-• **LowpolyAdultFemale** = `4`
+• **LowpolyAdultFemale** = ``4``
 
-Lowpoly 成年女性
+Lowpoly成年女性
 
----
+___
 
 ### LowpolyAdultMale
 
-• **LowpolyAdultMale** = `3`
+• **LowpolyAdultMale** = ``3``
 
-Lowpoly 成年男性
+Lowpoly成年男性
 
----
+___
 
 ### None
 
-• **None** = `0`
+• **None** = ``0``
 
 空骨骼模型，默认二次元女骨架
 
----
+___
 
 ### RealisticAdultFemale
 
-• **RealisticAdultFemale** = `6`
+• **RealisticAdultFemale** = ``6``
 
 写实成年女性
 
----
+___
 
 ### RealisticAdultMale
 
-• **RealisticAdultMale** = `5`
+• **RealisticAdultMale** = ``5``
 
 写实成年男性

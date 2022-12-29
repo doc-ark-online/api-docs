@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                  |
-| :----------------------------------------------------------------------------------- |
-| **[Random](Gameplay.Gameplay.EInitialOscillatorOffset.md#random)** = `0` <br> 随机值 |
-| **[Zero](Gameplay.Gameplay.EInitialOscillatorOffset.md#zero)** = `1` <br> 零         |
+| Enumeration Members |
+| :-----|
+| **[Random](Gameplay.Gameplay.EInitialOscillatorOffset.md#random)** = ``0`` <br> 随机值|
+| **[Zero](Gameplay.Gameplay.EInitialOscillatorOffset.md#zero)** = ``1`` <br> 零|
 
 ## Enumeration Members
 
 ### Random
 
-• **Random** = `0`
+• **Random** = ``0``
 
 随机值
 
----
+___
 
 ### Zero
 
-• **Zero** = `1`
+• **Zero** = ``1``
 
 零

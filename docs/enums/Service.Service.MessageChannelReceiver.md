@@ -8,50 +8,50 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                                                       |
-| :------------------------------------------------------------------------------------------------------------------------ |
-| **[Client](Service.Service.MessageChannelReceiver.md#client)** = `1` <br> 平台层，根据移动端平台可能是 Android、PC 或 iOS |
-| **[MGS](Service.Service.MessageChannelReceiver.md#mgs)** = `3` <br> 预留 MGS 对象，暂时没有实际接入通道                   |
-| **[MetaWorld](Service.Service.MessageChannelReceiver.md#metaworld)** = `0` <br> C++层，MetaWorld 引擎                     |
-| **[TS](Service.Service.MessageChannelReceiver.md#ts)** = `2` <br> TS 层，游戏项目                                         |
-| **[WebSocket](Service.Service.MessageChannelReceiver.md#websocket)** = `4` <br> Web 层，Room manager（并非 DS）           |
+| Enumeration Members |
+| :-----|
+| **[Client](Service.Service.MessageChannelReceiver.md#client)** = ``1`` <br> 平台层，根据移动端平台可能是Android、PC或iOS|
+| **[MGS](Service.Service.MessageChannelReceiver.md#mgs)** = ``3`` <br> 预留MGS对象，暂时没有实际接入通道|
+| **[MetaWorld](Service.Service.MessageChannelReceiver.md#metaworld)** = ``0`` <br> C++层，MetaWorld引擎|
+| **[TS](Service.Service.MessageChannelReceiver.md#ts)** = ``2`` <br> TS层，游戏项目|
+| **[WebSocket](Service.Service.MessageChannelReceiver.md#websocket)** = ``4`` <br> Web层，Room manager（并非DS）|
 
 ## Enumeration Members
 
 ### Client
 
-• **Client** = `1`
+• **Client** = ``1``
 
-平台层，根据移动端平台可能是 Android、PC 或 iOS
+平台层，根据移动端平台可能是Android、PC或iOS
 
----
+___
 
 ### MGS
 
-• **MGS** = `3`
+• **MGS** = ``3``
 
-预留 MGS 对象，暂时没有实际接入通道
+预留MGS对象，暂时没有实际接入通道
 
----
+___
 
 ### MetaWorld
 
-• **MetaWorld** = `0`
+• **MetaWorld** = ``0``
 
-C++层，MetaWorld 引擎
+C++层，MetaWorld引擎
 
----
+___
 
 ### TS
 
-• **TS** = `2`
+• **TS** = ``2``
 
-TS 层，游戏项目
+TS层，游戏项目
 
----
+___
 
 ### WebSocket
 
-• **WebSocket** = `4`
+• **WebSocket** = ``4``
 
-Web 层，Room manager（并非 DS）
+Web层，Room manager（并非DS）

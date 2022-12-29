@@ -8,23 +8,23 @@
 
 ## Table of contents
 
-| Enumeration Members                                                                      |
-| :--------------------------------------------------------------------------------------- |
-| **[Interstitial](Service.Service.AdsType.md#interstitial)** = `"interstitial"` <br> 插屏 |
-| **[Reward](Service.Service.AdsType.md#reward)** = `"reward"` <br> 激励                   |
+| Enumeration Members |
+| :-----|
+| **[Interstitial](Service.Service.AdsType.md#interstitial)** = ``"interstitial"`` <br> 插屏|
+| **[Reward](Service.Service.AdsType.md#reward)** = ``"reward"`` <br> 激励|
 
 ## Enumeration Members
 
 ### Interstitial
 
-• **Interstitial** = `"interstitial"`
+• **Interstitial** = ``"interstitial"``
 
 插屏
 
----
+___
 
 ### Reward
 
-• **Reward** = `"reward"`
+• **Reward** = ``"reward"``
 
 激励

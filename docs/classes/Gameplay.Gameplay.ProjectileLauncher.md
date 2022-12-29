@@ -8,7 +8,7 @@
 
 **`Precautions`**
 
-此类遵循规则：getter/setter 方法仅做简单的 get/set，不能进行其他任何类似 RPC、循环、事件派发等较复杂的操作
+此类遵循规则：getter/setter 方法仅做简单的 get/set，不能进行其他任何类似RPC、循环、事件派发等较复杂的操作
 
 ## Hierarchy
 
@@ -18,115 +18,115 @@
 
 ## Table of contents
 
-| Properties                                                                                                                                                                                                                                                                                                                   |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[onProjectileDestroy](Gameplay.Gameplay.ProjectileLauncher.md#onprojectiledestroy)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 投掷物被销毁时触发绑定函数                                                                                                                                 |
-| **[onProjectileHit](Gameplay.Gameplay.ProjectileLauncher.md#onprojectilehit)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.Gameplay.HitResult.md)) => `void`\> <br> 投掷物击中物体时触发绑定函数 |
-| **[onProjectileSpawned](Gameplay.Gameplay.ProjectileLauncher.md#onprojectilespawned)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\> <br> 投掷物生成实例时触发绑定函数，此回调触发时实例还没有开始移动，建议将此函数作为临时附着网格体或特效时使用                    |
+| Properties |
+| :-----|
+| **[onProjectileDestroy](Gameplay.Gameplay.ProjectileLauncher.md#onprojectiledestroy)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 投掷物被销毁时触发绑定函数|
+| **[onProjectileHit](Gameplay.Gameplay.ProjectileLauncher.md#onprojectilehit)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.Gameplay.HitResult.md)) => `void`\> <br> 投掷物击中物体时触发绑定函数|
+| **[onProjectileSpawned](Gameplay.Gameplay.ProjectileLauncher.md#onprojectilespawned)**: [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\> <br> 投掷物生成实例时触发绑定函数，此回调触发时实例还没有开始移动，建议将此函数作为临时附着网格体或特效时使用|
 
-| Accessors                                                                                                                                                                                                                               |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[acceleration](Gameplay.Gameplay.ProjectileLauncher.md#acceleration)**(): `number` <br> 加速度值，正值加速，负值减速                                                                                                                  |
-| **[accelerationEnable](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenable)**(): `boolean` <br> 投掷物是否在发射后受加速度影响                                                                                                   |
-| **[accelerationEnableDistance](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenabledistance)**(): `number` <br> 发射后多长距离后启用加速度                                                                                        |
-| **[accelerationEnableMode](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenablemode)**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) <br> 加速度按照 时间 / 距离 后生效 |
-| **[accelerationEnableTime](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenabletime)**(): `number` <br> 发射后多长时间后启用加速度                                                                                                |
-| **[collisionLossCoefficient](Gameplay.Gameplay.ProjectileLauncher.md#collisionlosscoefficient)**(): `number` <br> 投掷物每次执行穿透后速度衰减的系数，系数为正，每次穿透后速度减少，系数为负，每次穿透后速度增加。                      |
-| **[collisionMode](Gameplay.Gameplay.ProjectileLauncher.md#collisionmode)**(): [`ProjectileCollisionMode`](../enums/Gameplay.Gameplay.ProjectileCollisionMode.md) <br> 投掷物碰撞后如何运动：穿透/反弹                                   |
-| **[detectionRadius](Gameplay.Gameplay.ProjectileLauncher.md#detectionradius)**(): `number` <br> 投掷物检测碰撞的宽度                                                                                                                    |
-| **[forwardVector](Gameplay.Gameplay.ProjectileLauncher.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                                               |
-| **[gravitationalAcceleration](Gameplay.Gameplay.ProjectileLauncher.md#gravitationalacceleration)**(): `number` <br> 重力值，正值重力向下，负值重力向上                                                                                  |
-| **[gravityEnable](Gameplay.Gameplay.ProjectileLauncher.md#gravityenable)**(): `boolean` <br> 投掷物是否在发射后受重力影响                                                                                                               |
-| **[gravityEnableDistance](Gameplay.Gameplay.ProjectileLauncher.md#gravityenabledistance)**(): `number` <br> 发射后多长距离后启用重力                                                                                                    |
-| **[gravityEnableMode](Gameplay.Gameplay.ProjectileLauncher.md#gravityenablemode)**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) <br> 重力按照 时间 / 距离 后生效             |
-| **[gravityEnableTime](Gameplay.Gameplay.ProjectileLauncher.md#gravityenabletime)**(): `number` <br> 发射后多长时间后启用重力                                                                                                            |
-| **[guid](Gameplay.Gameplay.ProjectileLauncher.md#guid)**(): `string` <br> 获取对象的 guid（唯一标识一个对象的字符串）。                                                                                                                 |
-| **[initialSpeed](Gameplay.Gameplay.ProjectileLauncher.md#initialspeed)**(): `number` <br> 投掷物发射的初始速度                                                                                                                          |
-| **[isAutoDestroy](Gameplay.Gameplay.ProjectileLauncher.md#isautodestroy)**(): `boolean` <br> 投掷物超出有效射程距离或者运动持续时间后自动销毁                                                                                           |
-| **[launchDirection](Gameplay.Gameplay.ProjectileLauncher.md#launchdirection)**(): [`Rotation`](Type.Type.Rotation.md) <br> 投掷物发射方向                                                                                               |
-| **[lifeSpan](Gameplay.Gameplay.ProjectileLauncher.md#lifespan)**(): `number` <br> 投掷物运动持续时间，超出后投掷物不再运动。                                                                                                            |
-| **[lockStatus](Gameplay.Gameplay.ProjectileLauncher.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定                                                                                                                                 |
-| **[maxCollisionTimes](Gameplay.Gameplay.ProjectileLauncher.md#maxcollisiontimes)**(): `number` <br> 允许投掷物执行穿透的次数，超出次数后，再次碰撞投掷物不再移动。                                                                      |
-| **[maxSpeed](Gameplay.Gameplay.ProjectileLauncher.md#maxspeed)**(): `number` <br> 投掷物发射后的最大速度                                                                                                                                |
-| **[name](Gameplay.Gameplay.ProjectileLauncher.md#name)**(): `string` <br> 返回当前物体名称                                                                                                                                              |
-| **[netStatus](Gameplay.Gameplay.ProjectileLauncher.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态                                                                                          |
-| **[parent](Gameplay.Gameplay.ProjectileLauncher.md#parent)**(): `GameObject` <br> 获取当前父物体                                                                                                                                        |
-| **[range](Gameplay.Gameplay.ProjectileLauncher.md#range)**(): `number` <br> 投掷物有效射程距离，超出后投掷物不再运动。                                                                                                                  |
-| **[relativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                                   |
-| **[relativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                                               |
-| **[relativeScale](Gameplay.Gameplay.ProjectileLauncher.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                                         |
-| **[rightVector](Gameplay.Gameplay.ProjectileLauncher.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                                   |
-| **[startLocation](Gameplay.Gameplay.ProjectileLauncher.md#startlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 投掷物起始位置                                                                                                       |
-| **[staticStatus](Gameplay.Gameplay.ProjectileLauncher.md#staticstatus)**(): `boolean` <br> 获取对象是否静态                                                                                                                             |
-| **[tag](Gameplay.Gameplay.ProjectileLauncher.md#tag)**(): `string` <br> 获取当前物体的 Tag                                                                                                                                              |
-| **[traceLineStyle](Gameplay.Gameplay.ProjectileLauncher.md#tracelinestyle)**(): [`ProjectileLineStyle`](../enums/Gameplay.Gameplay.ProjectileLineStyle.md) <br> 轨迹风格                                                                |
-| **[transform](Gameplay.Gameplay.ProjectileLauncher.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 transform                                                                                                 |
-| **[upVector](Gameplay.Gameplay.ProjectileLauncher.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                                         |
-| **[useUpdate](Gameplay.Gameplay.ProjectileLauncher.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新                                                                                                                               |
-| **[visible](Gameplay.Gameplay.ProjectileLauncher.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api 重构 replacement:getVisibility()                                                                                              |
-| **[worldLocation](Gameplay.Gameplay.ProjectileLauncher.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                                   |
-| **[worldRotation](Gameplay.Gameplay.ProjectileLauncher.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                                               |
-| **[worldScale](Gameplay.Gameplay.ProjectileLauncher.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                                         |
+| Accessors |
+| :-----|
+| **[acceleration](Gameplay.Gameplay.ProjectileLauncher.md#acceleration)**(): `number` <br> 加速度值，正值加速，负值减速|
+| **[accelerationEnable](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenable)**(): `boolean` <br> 投掷物是否在发射后受加速度影响|
+| **[accelerationEnableDistance](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenabledistance)**(): `number` <br> 发射后多长距离后启用加速度|
+| **[accelerationEnableMode](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenablemode)**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) <br> 加速度按照 时间 / 距离 后生效|
+| **[accelerationEnableTime](Gameplay.Gameplay.ProjectileLauncher.md#accelerationenabletime)**(): `number` <br> 发射后多长时间后启用加速度|
+| **[collisionLossCoefficient](Gameplay.Gameplay.ProjectileLauncher.md#collisionlosscoefficient)**(): `number` <br> 投掷物每次执行穿透后速度衰减的系数，系数为正，每次穿透后速度减少，系数为负，每次穿透后速度增加。|
+| **[collisionMode](Gameplay.Gameplay.ProjectileLauncher.md#collisionmode)**(): [`ProjectileCollisionMode`](../enums/Gameplay.Gameplay.ProjectileCollisionMode.md) <br> 投掷物碰撞后如何运动：穿透/反弹|
+| **[detectionRadius](Gameplay.Gameplay.ProjectileLauncher.md#detectionradius)**(): `number` <br> 投掷物检测碰撞的宽度|
+| **[forwardVector](Gameplay.Gameplay.ProjectileLauncher.md#forwardvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[gravitationalAcceleration](Gameplay.Gameplay.ProjectileLauncher.md#gravitationalacceleration)**(): `number` <br> 重力值，正值重力向下，负值重力向上|
+| **[gravityEnable](Gameplay.Gameplay.ProjectileLauncher.md#gravityenable)**(): `boolean` <br> 投掷物是否在发射后受重力影响|
+| **[gravityEnableDistance](Gameplay.Gameplay.ProjectileLauncher.md#gravityenabledistance)**(): `number` <br> 发射后多长距离后启用重力|
+| **[gravityEnableMode](Gameplay.Gameplay.ProjectileLauncher.md#gravityenablemode)**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) <br> 重力按照 时间 / 距离 后生效|
+| **[gravityEnableTime](Gameplay.Gameplay.ProjectileLauncher.md#gravityenabletime)**(): `number` <br> 发射后多长时间后启用重力|
+| **[guid](Gameplay.Gameplay.ProjectileLauncher.md#guid)**(): `string` <br> 获取对象的guid（唯一标识一个对象的字符串）。|
+| **[initialSpeed](Gameplay.Gameplay.ProjectileLauncher.md#initialspeed)**(): `number` <br> 投掷物发射的初始速度|
+| **[isAutoDestroy](Gameplay.Gameplay.ProjectileLauncher.md#isautodestroy)**(): `boolean` <br> 投掷物超出有效射程距离或者运动持续时间后自动销毁|
+| **[launchDirection](Gameplay.Gameplay.ProjectileLauncher.md#launchdirection)**(): [`Rotation`](Type.Type.Rotation.md) <br> 投掷物发射方向|
+| **[lifeSpan](Gameplay.Gameplay.ProjectileLauncher.md#lifespan)**(): `number` <br> 投掷物运动持续时间，超出后投掷物不再运动。|
+| **[lockStatus](Gameplay.Gameplay.ProjectileLauncher.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定|
+| **[maxCollisionTimes](Gameplay.Gameplay.ProjectileLauncher.md#maxcollisiontimes)**(): `number` <br> 允许投掷物执行穿透的次数，超出次数后，再次碰撞投掷物不再移动。|
+| **[maxSpeed](Gameplay.Gameplay.ProjectileLauncher.md#maxspeed)**(): `number` <br> 投掷物发射后的最大速度|
+| **[name](Gameplay.Gameplay.ProjectileLauncher.md#name)**(): `string` <br> 返回当前物体名称|
+| **[netStatus](Gameplay.Gameplay.ProjectileLauncher.md#netstatus)**(): [`NetStatus`](../enums/Type.Type.NetStatus.md) <br> 获取当前物体同步状态|
+| **[parent](Gameplay.Gameplay.ProjectileLauncher.md#parent)**(): `GameObject` <br> 获取当前父物体|
+| **[range](Gameplay.Gameplay.ProjectileLauncher.md#range)**(): `number` <br> 投掷物有效射程距离，超出后投掷物不再运动。|
+| **[relativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#relativelocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置|
+| **[relativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#relativerotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转|
+| **[relativeScale](Gameplay.Gameplay.ProjectileLauncher.md#relativescale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放|
+| **[rightVector](Gameplay.Gameplay.ProjectileLauncher.md#rightvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[startLocation](Gameplay.Gameplay.ProjectileLauncher.md#startlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 投掷物起始位置|
+| **[staticStatus](Gameplay.Gameplay.ProjectileLauncher.md#staticstatus)**(): `boolean` <br> 获取对象是否静态|
+| **[tag](Gameplay.Gameplay.ProjectileLauncher.md#tag)**(): `string` <br> 获取当前物体的Tag|
+| **[traceLineStyle](Gameplay.Gameplay.ProjectileLauncher.md#tracelinestyle)**(): [`ProjectileLineStyle`](../enums/Gameplay.Gameplay.ProjectileLineStyle.md) <br> 轨迹风格|
+| **[transform](Gameplay.Gameplay.ProjectileLauncher.md#transform)**(): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体transform|
+| **[upVector](Gameplay.Gameplay.ProjectileLauncher.md#upvector)**(): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[useUpdate](Gameplay.Gameplay.ProjectileLauncher.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.Gameplay.ProjectileLauncher.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[worldLocation](Gameplay.Gameplay.ProjectileLauncher.md#worldlocation)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标|
+| **[worldRotation](Gameplay.Gameplay.ProjectileLauncher.md#worldrotation)**(): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[worldScale](Gameplay.Gameplay.ProjectileLauncher.md#worldscale)**(): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放|
 
-| Methods                                                                                                                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[addDestroyCallback](Gameplay.Gameplay.ProjectileLauncher.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体 Destroy 事件回调                                                                                             |
-| **[asyncGetScriptByName](Gameplay.Gameplay.ProjectileLauncher.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系                                                                            |
-| **[attachToGameObject](Gameplay.Gameplay.ProjectileLauncher.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上                                                                                                                     |
-| **[bindPlayer](Gameplay.Gameplay.ProjectileLauncher.md#bindplayer)**([`Player`](Gameplay.Gameplay.Player.md)): `boolean` <br> 绑定玩家                                                                                                                     |
-| **[clone](Gameplay.Gameplay.ProjectileLauncher.md#clone)**(`boolean`): `GameObject` <br> 复制对象                                                                                                                                                          |
-| **[deleteDestroyCallback](Gameplay.Gameplay.ProjectileLauncher.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体 Destroy 事件回调                                                                                       |
-| **[destroy](Gameplay.Gameplay.ProjectileLauncher.md#destroy)**(): `void` <br> 删除对象                                                                                                                                                                     |
-| **[detachFromGameObject](Gameplay.Gameplay.ProjectileLauncher.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离                                                                                                                       |
-| **[drawPredictedTrajectory](Gameplay.Gameplay.ProjectileLauncher.md#drawpredictedtrajectory)**(`number`, `number`): `void` <br> 绘制路径预测的轨迹，调一次开启，掉第二次即关闭，如此循环                                                                   |
-| **[getBoundingBoxSize](Gameplay.Gameplay.ProjectileLauncher.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小                                                       |
-| **[getBounds](Gameplay.Gameplay.ProjectileLauncher.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取 GameObject 边界                                                               |
-| **[getChildByGuid](Gameplay.Gameplay.ProjectileLauncher.md#getchildbyguid)**(`string`): `GameObject` <br> 根据 Guid 查找子物体                                                                                                                             |
-| **[getChildByName](Gameplay.Gameplay.ProjectileLauncher.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体                                                                                                                               |
-| **[getChildren](Gameplay.Gameplay.ProjectileLauncher.md#getchildren)**(): `GameObject`[] <br> 获取 Children，客户端不维系父子关系。推荐使用 Find 替代                                                                                                      |
-| **[getChildrenBoxCenter](Gameplay.Gameplay.ProjectileLauncher.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])                           |
-| **[getCollision](Gameplay.Gameplay.ProjectileLauncher.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态                                       |
-| **[getForwardVector](Gameplay.Gameplay.ProjectileLauncher.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量                                                                             |
-| **[getRelativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置                                                                                 |
-| **[getRelativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转                                                                         |
-| **[getRelativeScale](Gameplay.Gameplay.ProjectileLauncher.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放                                                                                       |
-| **[getRightVector](Gameplay.Gameplay.ProjectileLauncher.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量                                                                                 |
-| **[getScriptByGuid](Gameplay.Gameplay.ProjectileLauncher.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                   |
-| **[getScriptByName](Gameplay.Gameplay.ProjectileLauncher.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                   |
-| **[getScripts](Gameplay.Gameplay.ProjectileLauncher.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代                                                                                                   |
-| **[getSourceAssetGuid](Gameplay.Gameplay.ProjectileLauncher.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的 GUID                                                                                                                          |
-| **[getTransform](Gameplay.Gameplay.ProjectileLauncher.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体 Transform                                                                         |
-| **[getUpVector](Gameplay.Gameplay.ProjectileLauncher.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量                                                                                       |
-| **[getVisibility](Gameplay.Gameplay.ProjectileLauncher.md#getvisibility)**(): `boolean` <br> 获取 GameObject 是否被显示                                                                                                                                    |
-| **[getWorldLocation](Gameplay.Gameplay.ProjectileLauncher.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标                                                                                 |
-| **[getWorldRotation](Gameplay.Gameplay.ProjectileLauncher.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转                                                                         |
-| **[getWorldScale](Gameplay.Gameplay.ProjectileLauncher.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放                                                                                       |
-| **[isRunningClient](Gameplay.Gameplay.ProjectileLauncher.md#isrunningclient)**(): `boolean` <br> 是否为客户端                                                                                                                                              |
-| **[onDestroy](Gameplay.Gameplay.ProjectileLauncher.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用                                                                                                                                                    |
-| **[onStart](Gameplay.Gameplay.ProjectileLauncher.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用                                                                                                                                                  |
-| **[onUpdate](Gameplay.Gameplay.ProjectileLauncher.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为 false,不会执行                                                                                                 |
-| **[predictedTrajectory](Gameplay.Gameplay.ProjectileLauncher.md#predictedtrajectory)**(`number`, `number`): [`Vector`](Type.Type.Vector.md)[] <br> 获取路径预测的轨迹                                                                                      |
-| **[ready](Gameplay.Gameplay.ProjectileLauncher.md#ready)**(): `Promise`<[`ProjectileLauncher`](Gameplay.Gameplay.ProjectileLauncher.md)\> <br> GameObject 准备好后返回                                                                                     |
-| **[setCollision](Gameplay.Gameplay.ProjectileLauncher.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态                                                                                  |
-| **[setLocationAndRotation](Gameplay.Gameplay.ProjectileLauncher.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转                                               |
-| **[setRelativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置                                                                                                          |
-| **[setRelativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转                                                                                                      |
-| **[setRelativeScale](Gameplay.Gameplay.ProjectileLauncher.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放                                                                                                                |
-| **[setTransform](Gameplay.Gameplay.ProjectileLauncher.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体 transform                                                                                                        |
-| **[setVisibility](Gameplay.Gameplay.ProjectileLauncher.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置 GameObject 是否被显示                                                                    |
-| **[setWorldLocation](Gameplay.Gameplay.ProjectileLauncher.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标                                                                                                          |
-| **[setWorldRotation](Gameplay.Gameplay.ProjectileLauncher.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转                                                                                                      |
-| **[setWorldScale](Gameplay.Gameplay.ProjectileLauncher.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放                                                                                                                |
-| **[spawnProjectileInstanceLaunch](Gameplay.Gameplay.ProjectileLauncher.md#spawnprojectileinstancelaunch)**(): [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md) <br> 发射子弹实例                                                                    |
-| **[spawnProjectileInstanceLaunchToTarget](Gameplay.Gameplay.ProjectileLauncher.md#spawnprojectileinstancelaunchtotarget)**([`Vector`](Type.Type.Vector.md), `number`, `number`): [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md) <br> 发射子弹实例 |
-| **[unbindPlayer](Gameplay.Gameplay.ProjectileLauncher.md#unbindplayer)**(): `void` <br> 解绑玩家                                                                                                                                                           |
-| **[asyncFind](Gameplay.Gameplay.ProjectileLauncher.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);                                                          |
-| **[asyncSpawnGameObject](Gameplay.Gameplay.ProjectileLauncher.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建                                                      |
-| **[find](Gameplay.Gameplay.ProjectileLauncher.md#find)**(`string`): `GameObject` <br> 通过 Guid 查找 GameObject                                                                                                                                            |
-| **[findGameObjectByTag](Gameplay.Gameplay.ProjectileLauncher.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义 Tag 获取 GameObject                                                                                                       |
-| **[getGameObjectByName](Gameplay.Gameplay.ProjectileLauncher.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体                                                                                                                       |
-| **[getGameObjectsByName](Gameplay.Gameplay.ProjectileLauncher.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体                                                                                                                   |
-| **[spawnGameObject](Gameplay.Gameplay.ProjectileLauncher.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject                                                                                                                 |
+| Methods |
+| :-----|
+| **[addDestroyCallback](Gameplay.Gameplay.ProjectileLauncher.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[asyncGetScriptByName](Gameplay.Gameplay.ProjectileLauncher.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attachToGameObject](Gameplay.Gameplay.ProjectileLauncher.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[bindPlayer](Gameplay.Gameplay.ProjectileLauncher.md#bindplayer)**([`Player`](Gameplay.Gameplay.Player.md)): `boolean` <br> 绑定玩家|
+| **[clone](Gameplay.Gameplay.ProjectileLauncher.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[deleteDestroyCallback](Gameplay.Gameplay.ProjectileLauncher.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[destroy](Gameplay.Gameplay.ProjectileLauncher.md#destroy)**(): `void` <br> 删除对象|
+| **[detachFromGameObject](Gameplay.Gameplay.ProjectileLauncher.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
+| **[drawPredictedTrajectory](Gameplay.Gameplay.ProjectileLauncher.md#drawpredictedtrajectory)**(`number`, `number`): `void` <br> 绘制路径预测的轨迹，调一次开启，掉第二次即关闭，如此循环|
+| **[getBoundingBoxSize](Gameplay.Gameplay.ProjectileLauncher.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.Gameplay.ProjectileLauncher.md#getbounds)**(`boolean`, [`Vector`](Type.Type.Vector.md), [`Vector`](Type.Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.Gameplay.ProjectileLauncher.md#getchildbyguid)**(`string`): `GameObject` <br> 根据Guid查找子物体|
+| **[getChildByName](Gameplay.Gameplay.ProjectileLauncher.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体|
+| **[getChildren](Gameplay.Gameplay.ProjectileLauncher.md#getchildren)**(): `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
+| **[getChildrenBoxCenter](Gameplay.Gameplay.ProjectileLauncher.md#getchildrenboxcenter)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getCollision](Gameplay.Gameplay.ProjectileLauncher.md#getcollision)**(): [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) <br> 返回碰撞状态|
+| **[getForwardVector](Gameplay.Gameplay.ProjectileLauncher.md#getforwardvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getRelativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#getrelativelocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#getrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.Gameplay.ProjectileLauncher.md#getrelativescale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.Gameplay.ProjectileLauncher.md#getrightvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.Gameplay.ProjectileLauncher.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.Gameplay.ProjectileLauncher.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScripts](Gameplay.Gameplay.ProjectileLauncher.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getSourceAssetGuid](Gameplay.Gameplay.ProjectileLauncher.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
+| **[getTransform](Gameplay.Gameplay.ProjectileLauncher.md#gettransform)**([`Transform`](Type.Type.Transform.md)): [`Transform`](Type.Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.Gameplay.ProjectileLauncher.md#getupvector)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getVisibility](Gameplay.Gameplay.ProjectileLauncher.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
+| **[getWorldLocation](Gameplay.Gameplay.ProjectileLauncher.md#getworldlocation)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.Gameplay.ProjectileLauncher.md#getworldrotation)**([`Rotation`](Type.Type.Rotation.md)): [`Rotation`](Type.Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.Gameplay.ProjectileLauncher.md#getworldscale)**([`Vector`](Type.Type.Vector.md)): [`Vector`](Type.Type.Vector.md) <br> 获取物体的世界缩放|
+| **[isRunningClient](Gameplay.Gameplay.ProjectileLauncher.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
+| **[onDestroy](Gameplay.Gameplay.ProjectileLauncher.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
+| **[onStart](Gameplay.Gameplay.ProjectileLauncher.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
+| **[onUpdate](Gameplay.Gameplay.ProjectileLauncher.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| **[predictedTrajectory](Gameplay.Gameplay.ProjectileLauncher.md#predictedtrajectory)**(`number`, `number`): [`Vector`](Type.Type.Vector.md)[] <br> 获取路径预测的轨迹|
+| **[ready](Gameplay.Gameplay.ProjectileLauncher.md#ready)**(): `Promise`<[`ProjectileLauncher`](Gameplay.Gameplay.ProjectileLauncher.md)\> <br> GameObject准备好后返回|
+| **[setCollision](Gameplay.Gameplay.ProjectileLauncher.md#setcollision)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
+| **[setLocationAndRotation](Gameplay.Gameplay.ProjectileLauncher.md#setlocationandrotation)**([`Vector`](Type.Type.Vector.md), [`Rotation`](Type.Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.Gameplay.ProjectileLauncher.md#setrelativelocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.Gameplay.ProjectileLauncher.md#setrelativerotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.Gameplay.ProjectileLauncher.md#setrelativescale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.Gameplay.ProjectileLauncher.md#settransform)**([`Transform`](Type.Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.Gameplay.ProjectileLauncher.md#setvisibility)**([`PropertyStatus`](../enums/Type.Type.PropertyStatus.md), `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[setWorldLocation](Gameplay.Gameplay.ProjectileLauncher.md#setworldlocation)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.Gameplay.ProjectileLauncher.md#setworldrotation)**([`Rotation`](Type.Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.Gameplay.ProjectileLauncher.md#setworldscale)**([`Vector`](Type.Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[spawnProjectileInstanceLaunch](Gameplay.Gameplay.ProjectileLauncher.md#spawnprojectileinstancelaunch)**(): [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md) <br> 发射子弹实例|
+| **[spawnProjectileInstanceLaunchToTarget](Gameplay.Gameplay.ProjectileLauncher.md#spawnprojectileinstancelaunchtotarget)**([`Vector`](Type.Type.Vector.md), `number`, `number`): [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md) <br> 发射子弹实例|
+| **[unbindPlayer](Gameplay.Gameplay.ProjectileLauncher.md#unbindplayer)**(): `void` <br> 解绑玩家|
+| **[asyncFind](Gameplay.Gameplay.ProjectileLauncher.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawnGameObject](Gameplay.Gameplay.ProjectileLauncher.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.Gameplay.ProjectileLauncher.md#find)**(`string`): `GameObject` <br> 通过Guid查找GameObject|
+| **[findGameObjectByTag](Gameplay.Gameplay.ProjectileLauncher.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.Gameplay.ProjectileLauncher.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.Gameplay.ProjectileLauncher.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawnGameObject](Gameplay.Gameplay.ProjectileLauncher.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
 
 ## Properties
 
@@ -142,7 +142,7 @@
 
 所有投掷物都是使用的同一个回调，请不要循环添加事件绑定函数
 
----
+___
 
 ### onProjectileHit
 
@@ -156,7 +156,7 @@
 
 所有投掷物都是使用的同一个回调，请不要循环添加事件绑定函数
 
----
+___
 
 ### onProjectileSpawned
 
@@ -192,15 +192,15 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### accelerationEnable
 
@@ -222,15 +222,15 @@
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### accelerationEnableDistance
 
@@ -252,15 +252,15 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### accelerationEnableMode
 
@@ -282,15 +282,15 @@
 
 #### Parameters
 
-| Name    | Type                                                                                                 |
-| :------ | :--------------------------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### accelerationEnableTime
 
@@ -312,15 +312,15 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### collisionLossCoefficient
 
@@ -342,15 +342,15 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### collisionMode
 
@@ -372,15 +372,15 @@
 
 #### Parameters
 
-| Name    | Type                                                                               |
-| :------ | :--------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProjectileCollisionMode`](../enums/Gameplay.Gameplay.ProjectileCollisionMode.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### detectionRadius
 
@@ -402,15 +402,15 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### forwardVector
 
@@ -430,7 +430,7 @@
 
 Vector
 
----
+___
 
 ### gravitationalAcceleration
 
@@ -452,15 +452,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### gravityEnable
 
@@ -482,15 +482,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### gravityEnableDistance
 
@@ -512,15 +512,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### gravityEnableMode
 
@@ -542,15 +542,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type                                                                                                 |
-| :------ | :--------------------------------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProjectileAccelerationEnableMode`](../enums/Gameplay.Gameplay.ProjectileAccelerationEnableMode.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### gravityEnableTime
 
@@ -572,15 +572,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### guid
 
@@ -588,7 +588,7 @@ Vector
 
 **`Description`**
 
-获取对象的 guid（唯一标识一个对象的字符串）。
+获取对象的guid（唯一标识一个对象的字符串）。
 
 **`Effect`**
 
@@ -598,7 +598,7 @@ Vector
 
 `string`
 
----
+___
 
 ### initialSpeed
 
@@ -620,15 +620,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### isAutoDestroy
 
@@ -650,15 +650,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### launchDirection
 
@@ -680,15 +680,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type                                |
-| :------ | :---------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`Rotation`](Type.Type.Rotation.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### lifeSpan
 
@@ -710,15 +710,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### lockStatus
 
@@ -748,15 +748,15 @@ Vector
 
 #### Parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `v`  | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `v` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxCollisionTimes
 
@@ -778,15 +778,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### maxSpeed
 
@@ -808,15 +808,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### name
 
@@ -848,15 +848,15 @@ Vector
 
 #### Parameters
 
-| Name   | Type     | Description    |
-| :----- | :------- | :------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `name` | `string` | 需要设置的名称 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### netStatus
 
@@ -876,7 +876,7 @@ Vector
 
 Type.NetStatus
 
----
+___
 
 ### parent
 
@@ -908,15 +908,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name        | Type         |
-| :---------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `newParent` | `GameObject` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### range
 
@@ -938,15 +938,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `number` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeLocation
 
@@ -978,15 +978,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeRotation
 
@@ -1018,15 +1018,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### relativeScale
 
@@ -1058,15 +1058,15 @@ Type.NetStatus
 
 #### Parameters
 
-| Name    | Type                            | Description |
-| :------ | :------------------------------ | :---------- |
-| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `scale` | [`Vector`](Type.Type.Vector.md) | 缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### rightVector
 
@@ -1086,7 +1086,7 @@ Type.NetStatus
 
 Vector
 
----
+___
 
 ### startLocation
 
@@ -1108,15 +1108,15 @@ Vector
 
 #### Parameters
 
-| Name    | Type                            |
-| :------ | :------------------------------ |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### staticStatus
 
@@ -1134,7 +1134,7 @@ Vector
 
 `boolean`
 
----
+___
 
 ### tag
 
@@ -1142,7 +1142,7 @@ Vector
 
 **`Description`**
 
-获取当前物体的 Tag
+获取当前物体的Tag
 
 **`Effect`**
 
@@ -1158,7 +1158,7 @@ Tag
 
 **`Description`**
 
-设置当前物体的 Tag
+设置当前物体的Tag
 
 **`Effect`**
 
@@ -1166,15 +1166,15 @@ Tag
 
 #### Parameters
 
-| Name  | Type     | Description |
-| :---- | :------- | :---------- |
-| `tag` | `string` | Tag         |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tag` | `string` | Tag |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### traceLineStyle
 
@@ -1196,15 +1196,15 @@ Tag
 
 #### Parameters
 
-| Name    | Type                                                                       |
-| :------ | :------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | [`ProjectileLineStyle`](../enums/Gameplay.Gameplay.ProjectileLineStyle.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### transform
 
@@ -1212,7 +1212,7 @@ Tag
 
 **`Description`**
 
-返回当前物体 transform
+返回当前物体transform
 
 **`Effect`**
 
@@ -1228,7 +1228,7 @@ transform
 
 **`Description`**
 
-设置当前物体 transform
+设置当前物体transform
 
 **`Effect`**
 
@@ -1236,15 +1236,15 @@ transform
 
 #### Parameters
 
-| Name        | Type                                  | Description        |
-| :---------- | :------------------------------------ | :----------------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的 transform |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](Type.Type.Transform.md) | 要设置的transform |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### upVector
 
@@ -1264,7 +1264,7 @@ transform
 
 Vector
 
----
+___
 
 ### useUpdate
 
@@ -1294,15 +1294,15 @@ Vector
 
 #### Parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `v`  | `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `v` | `boolean` |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### visible
 
@@ -1310,7 +1310,7 @@ Vector
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api 重构 replacement:getVisibility()
+since:v0.20.0 reason:api重构 replacement:getVisibility()
 
 **`Description`**
 
@@ -1326,7 +1326,7 @@ since:v0.20.0 reason:api 重构 replacement:getVisibility()
 
 bool
 
----
+___
 
 ### worldLocation
 
@@ -1356,15 +1356,15 @@ bool
 
 #### Parameters
 
-| Name | Type                            |
-| :--- | :------------------------------ |
-| `v`  | [`Vector`](Type.Type.Vector.md) |
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### worldRotation
 
@@ -1394,15 +1394,15 @@ bool
 
 #### Parameters
 
-| Name       | Type                                | Description      |
-| :--------- | :---------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### worldScale
 
@@ -1432,9 +1432,9 @@ bool
 
 #### Parameters
 
-| Name | Type                            |
-| :--- | :------------------------------ |
-| `v`  | [`Vector`](Type.Type.Vector.md) |
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |
 
 #### Returns
 
@@ -1448,7 +1448,7 @@ bool
 
 **`Description`**
 
-添加物体 Destroy 事件回调
+添加物体Destroy事件回调
 
 **`Effect`**
 
@@ -1456,15 +1456,15 @@ bool
 
 #### Parameters
 
-| Name       | Type                              | Description |
-| :--------- | :-------------------------------- | :---------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### asyncGetScriptByName
 
@@ -1480,9 +1480,9 @@ bool
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
@@ -1490,7 +1490,7 @@ bool
 
 Script
 
----
+___
 
 ### attachToGameObject
 
@@ -1506,15 +1506,15 @@ Script
 
 #### Parameters
 
-| Name  | Type         | Description |
-| :---- | :----------- | :---------- |
-| `obj` | `GameObject` | 物体        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `GameObject` | 物体 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### bindPlayer
 
@@ -1530,9 +1530,9 @@ Script
 
 #### Parameters
 
-| Name     | Type                                    | Description |
-| :------- | :-------------------------------------- | :---------- |
-| `player` | [`Player`](Gameplay.Gameplay.Player.md) | 玩家类      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](Gameplay.Gameplay.Player.md) |  玩家类 |
 
 #### Returns
 
@@ -1540,7 +1540,7 @@ Script
 
 true：参数 player 有效，绑定成功
 
----
+___
 
 ### clone
 
@@ -1556,8 +1556,8 @@ true：参数 player 有效，绑定成功
 
 #### Parameters
 
-| Name            | Type      | Description           |
-| :-------------- | :-------- | :-------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `inReplicates?` | `boolean` | 是否复制 default:true |
 
 #### Returns
@@ -1566,7 +1566,7 @@ true：参数 player 有效，绑定成功
 
 克隆的对象
 
----
+___
 
 ### deleteDestroyCallback
 
@@ -1574,7 +1574,7 @@ true：参数 player 有效，绑定成功
 
 **`Description`**
 
-移除物体 Destroy 事件回调
+移除物体Destroy事件回调
 
 **`Effect`**
 
@@ -1582,15 +1582,15 @@ true：参数 player 有效，绑定成功
 
 #### Parameters
 
-| Name       | Type                              | Description |
-| :--------- | :-------------------------------- | :---------- |
-| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### destroy
 
@@ -1608,7 +1608,7 @@ true：参数 player 有效，绑定成功
 
 `void`
 
----
+___
 
 ### detachFromGameObject
 
@@ -1626,7 +1626,7 @@ true：参数 player 有效，绑定成功
 
 `void`
 
----
+___
 
 ### drawPredictedTrajectory
 
@@ -1646,16 +1646,16 @@ true：参数 player 有效，绑定成功
 
 #### Parameters
 
-| Name        | Type     | Description                                      |
-| :---------- | :------- | :----------------------------------------------- |
-| `density?`  | `number` | 密度，值越大路径点越密，性能消耗越大 default: 15 |
-| `duration?` | `number` | 预测的时长 default: 2                            |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `density?` | `number` |  密度，值越大路径点越密，性能消耗越大 default: 15 |
+| `duration?` | `number` |  预测的时长 default: 2 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getBoundingBoxSize
 
@@ -1675,11 +1675,11 @@ true：参数 player 有效，绑定成功
 
 #### Parameters
 
-| Name                      | Type                            | Description                                  |
-| :------------------------ | :------------------------------ | :------------------------------------------- |
-| `nonColliding?`           | `boolean`                       | 表示要在边界框中包含非碰撞组件 default:false |
-| `includeFromChildActors?` | `boolean`                       | 如果为 true，则递归子物体 default:false      |
-| `outer?`                  | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `nonColliding?` | `boolean` | 表示要在边界框中包含非碰撞组件 default:false |
+| `includeFromChildActors?` | `boolean` | 如果为 true，则递归子物体 default:false |
+| `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
 
@@ -1687,7 +1687,7 @@ true：参数 player 有效，绑定成功
 
 Type.Vector
 
----
+___
 
 ### getBounds
 
@@ -1695,7 +1695,7 @@ Type.Vector
 
 **`Description`**
 
-获取 GameObject 边界
+获取GameObject边界
 
 **`Effect`**
 
@@ -1703,18 +1703,18 @@ Type.Vector
 
 #### Parameters
 
-| Name                      | Type                            | Description                                |
-| :------------------------ | :------------------------------ | :----------------------------------------- |
-| `onlyCollidingComponents` | `boolean`                       | 是否只包含有碰撞的组件。                   |
-| `OriginOuter`             | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 的中心点坐标。 |
-| `BoxExtentOuter`          | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为 GameObject 尺寸的一半。   |
-| `includeFromChildActors?` | `boolean`                       | 是否递归包含子物体 default:undefined       |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `onlyCollidingComponents` | `boolean` | 是否只包含有碰撞的组件。 |
+| `OriginOuter` | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为GameObject的中心点坐标。 |
+| `BoxExtentOuter` | [`Vector`](Type.Type.Vector.md) | 传出参数，设置为GameObject尺寸的一半。 |
+| `includeFromChildActors?` | `boolean` | 是否递归包含子物体 default:undefined |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### getChildByGuid
 
@@ -1722,7 +1722,7 @@ Type.Vector
 
 **`Description`**
 
-根据 Guid 查找子物体
+根据Guid查找子物体
 
 **`Effect`**
 
@@ -1730,9 +1730,9 @@ Type.Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | guid        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | guid |
 
 #### Returns
 
@@ -1740,7 +1740,7 @@ Type.Vector
 
 查找的物体
 
----
+___
 
 ### getChildByName
 
@@ -1756,9 +1756,9 @@ Type.Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名称        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名称 |
 
 #### Returns
 
@@ -1766,7 +1766,7 @@ Type.Vector
 
 查找的物体
 
----
+___
 
 ### getChildren
 
@@ -1774,7 +1774,7 @@ Type.Vector
 
 **`Description`**
 
-获取 Children，客户端不维系父子关系。推荐使用 Find 替代
+获取Children，客户端不维系父子关系。推荐使用Find替代
 
 **`Effect`**
 
@@ -1786,7 +1786,7 @@ Type.Vector
 
 Array`<GameObject>`
 
----
+___
 
 ### getChildrenBoxCenter
 
@@ -1806,8 +1806,8 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -1816,7 +1816,7 @@ Array`<GameObject>`
 
 Type.Vector
 
----
+___
 
 ### getCollision
 
@@ -1836,7 +1836,7 @@ Type.Vector
 
 碰撞状态
 
----
+___
 
 ### getForwardVector
 
@@ -1856,8 +1856,8 @@ Type.Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -1866,7 +1866,7 @@ Type.Vector
 
 Vector
 
----
+___
 
 ### getRelativeLocation
 
@@ -1886,8 +1886,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -1896,7 +1896,7 @@ Vector
 
 位置坐标
 
----
+___
 
 ### getRelativeRotation
 
@@ -1916,8 +1916,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                                | Description                               |
-| :------- | :---------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -1926,7 +1926,7 @@ Vector
 
 旋转角度
 
----
+___
 
 ### getRelativeScale
 
@@ -1946,8 +1946,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -1956,7 +1956,7 @@ Vector
 
 相对缩放
 
----
+___
 
 ### getRightVector
 
@@ -1976,8 +1976,8 @@ Vector
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -1986,7 +1986,7 @@ Vector
 
 Vector
 
----
+___
 
 ### getScriptByGuid
 
@@ -1994,7 +1994,7 @@ Vector
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -2002,9 +2002,9 @@ Vector
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | guid        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | guid |
 
 #### Returns
 
@@ -2012,7 +2012,7 @@ Vector
 
 Script
 
----
+___
 
 ### getScriptByName
 
@@ -2020,7 +2020,7 @@ Script
 
 **`Description`**
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -2028,9 +2028,9 @@ Script
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 名字        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 名字 |
 
 #### Returns
 
@@ -2038,7 +2038,7 @@ Script
 
 Script
 
----
+___
 
 ### getScripts
 
@@ -2046,7 +2046,7 @@ Script
 
 **`Description`**
 
-获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用 Find 替代
+获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
 
 **`Effect`**
 
@@ -2058,7 +2058,7 @@ Script
 
 Array`<Script>`
 
----
+___
 
 ### getSourceAssetGuid
 
@@ -2066,7 +2066,7 @@ Array`<Script>`
 
 **`Description`**
 
-获取当前物体使用资源的 GUID
+获取当前物体使用资源的GUID
 
 **`Effect`**
 
@@ -2076,9 +2076,9 @@ Array`<Script>`
 
 `string`
 
-资源的 GUID
+资源的GUID
 
----
+___
 
 ### getTransform
 
@@ -2086,7 +2086,7 @@ Array`<Script>`
 
 **`Description`**
 
-返回当前物体 Transform
+返回当前物体Transform
 
 **`Effect`**
 
@@ -2098,8 +2098,8 @@ Array`<Script>`
 
 #### Parameters
 
-| Name     | Type                                  | Description                                |
-| :------- | :------------------------------------ | :----------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Transform`](Type.Type.Transform.md) | 接收转换数据的 Transform 对象 default:null |
 
 #### Returns
@@ -2108,7 +2108,7 @@ Array`<Script>`
 
 Transform
 
----
+___
 
 ### getUpVector
 
@@ -2124,8 +2124,8 @@ Transform
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -2134,7 +2134,7 @@ Transform
 
 Vector
 
----
+___
 
 ### getVisibility
 
@@ -2142,7 +2142,7 @@ Vector
 
 **`Description`**
 
-获取 GameObject 是否被显示
+获取GameObject是否被显示
 
 **`Effect`**
 
@@ -2154,7 +2154,7 @@ Vector
 
 bool
 
----
+___
 
 ### getWorldLocation
 
@@ -2174,8 +2174,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -2184,7 +2184,7 @@ bool
 
 世界位置坐标
 
----
+___
 
 ### getWorldRotation
 
@@ -2204,8 +2204,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                                | Description                               |
-| :------- | :---------------------------------- | :---------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Rotation`](Type.Type.Rotation.md) | 接收转换数据的 Rotation 对象 default:null |
 
 #### Returns
@@ -2214,7 +2214,7 @@ bool
 
 世界旋转
 
----
+___
 
 ### getWorldScale
 
@@ -2234,8 +2234,8 @@ bool
 
 #### Parameters
 
-| Name     | Type                            | Description                             |
-| :------- | :------------------------------ | :-------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `outer?` | [`Vector`](Type.Type.Vector.md) | 接收转换数据的 Vector 对象 default:null |
 
 #### Returns
@@ -2244,7 +2244,7 @@ bool
 
 世界缩放
 
----
+___
 
 ### isRunningClient
 
@@ -2262,9 +2262,9 @@ bool
 
 `boolean`
 
-true 为客户端
+true为客户端
 
----
+___
 
 ### onDestroy
 
@@ -2282,7 +2282,7 @@ true 为客户端
 
 `void`
 
----
+___
 
 ### onStart
 
@@ -2300,7 +2300,7 @@ true 为客户端
 
 `void`
 
----
+___
 
 ### onUpdate
 
@@ -2308,7 +2308,7 @@ true 为客户端
 
 **`Description`**
 
-周期函数 useUpdate 设置为 true 后,每帧被执行,设置为 false,不会执行
+周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
 
 **`Effect`**
 
@@ -2316,15 +2316,15 @@ true 为客户端
 
 #### Parameters
 
-| Name | Type     | Description            |
-| :--- | :------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `dt` | `number` | 与上一帧的延迟 单位:秒 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### predictedTrajectory
 
@@ -2340,14 +2340,14 @@ true 为客户端
 
 **`Precautions`**
 
-如果返回的数组长度为 1，可能投掷物被卡住了
+如果返回的数组长度为1，可能投掷物被卡住了
 
 #### Parameters
 
-| Name       | Type     | Description                          |
-| :--------- | :------- | :----------------------------------- |
-| `density`  | `number` | 密度，值越大路径点越细，性能消耗越大 |
-| `duration` | `number` | 预测的时长                           |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `density` | `number` |  密度，值越大路径点越细，性能消耗越大 |
+| `duration` | `number` |  预测的时长 |
 
 #### Returns
 
@@ -2355,7 +2355,7 @@ true 为客户端
 
 路径轨迹点
 
----
+___
 
 ### ready
 
@@ -2363,7 +2363,7 @@ true 为客户端
 
 **`Description`**
 
-GameObject 准备好后返回
+GameObject准备好后返回
 
 **`Effect`**
 
@@ -2375,7 +2375,7 @@ GameObject 准备好后返回
 
 准备好的对象
 
----
+___
 
 ### setCollision
 
@@ -2395,16 +2395,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name                   | Type                                                                                                                   | Description                                               |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) | 碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean`                                                                                                              | 是否传递给子节点 default: false                           |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.Type.CollisionStatus.md) |  碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
+| `propagateToChildren?` | `boolean` |  是否传递给子节点 default: false |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setLocationAndRotation
 
@@ -2420,16 +2420,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md)     | 世界位置    |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 世界位置 |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeLocation
 
@@ -2445,15 +2445,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                            | Description |
-| :--------- | :------------------------------ | :---------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 位置        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) | 位置 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeRotation
 
@@ -2469,15 +2469,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description |
-| :--------- | :---------------------------------- | :---------- |
-| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](Type.Type.Rotation.md) | 旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setRelativeScale
 
@@ -2493,15 +2493,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name    | Type                            | Description      |
-| :------ | :------------------------------ | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `scale` | [`Vector`](Type.Type.Vector.md) | 要设置的相对缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setTransform
 
@@ -2509,7 +2509,7 @@ GameObject 准备好后返回
 
 **`Description`**
 
-设置当前物体 transform
+设置当前物体transform
 
 **`Effect`**
 
@@ -2517,15 +2517,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name        | Type                                  | Description |
-| :---------- | :------------------------------------ | :---------- |
-| `transform` | [`Transform`](Type.Type.Transform.md) | transform   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](Type.Type.Transform.md) | transform |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setVisibility
 
@@ -2533,7 +2533,7 @@ GameObject 准备好后返回
 
 **`Description`**
 
-设置 GameObject 是否被显示
+设置GameObject是否被显示
 
 **`Effect`**
 
@@ -2541,16 +2541,16 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name                   | Type                                                     | Description                  |
-| :--------------------- | :------------------------------------------------------- | :--------------------------- |
-| `status`               | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态                         |
-| `propagateToChildren?` | `boolean`                                                | 是否设置子物体 default:false |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.Type.PropertyStatus.md) | 状态 |
+| `propagateToChildren?` | `boolean` |  是否设置子物体 default:false |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldLocation
 
@@ -2566,15 +2566,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name | Type                            | Description      |
-| :--- | :------------------------------ | :--------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界坐标 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) |  要设置的世界坐标 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldRotation
 
@@ -2590,15 +2590,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                                | Description      |
-| :--------- | :---------------------------------- | :--------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `rotation` | [`Rotation`](Type.Type.Rotation.md) | 要设置的世界旋转 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### setWorldScale
 
@@ -2614,15 +2614,15 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name | Type                            | Description      |
-| :--- | :------------------------------ | :--------------- |
-| `v`  | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | [`Vector`](Type.Type.Vector.md) | 要设置的世界缩放 |
 
 #### Returns
 
 `void`
 
----
+___
 
 ### spawnProjectileInstanceLaunch
 
@@ -2644,9 +2644,9 @@ GameObject 准备好后返回
 
 [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md)
 
-投掷物 v2 实例
+投掷物v2实例
 
----
+___
 
 ### spawnProjectileInstanceLaunchToTarget
 
@@ -2666,19 +2666,19 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name       | Type                            | Description            |
-| :--------- | :------------------------------ | :--------------------- |
-| `location` | [`Vector`](Type.Type.Vector.md) | 发射位置               |
-| `time?`    | `number`                        | 最大飞行时长 default:5 |
-| `speed?`   | `number`                        | 初始速度 default:1000  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](Type.Type.Vector.md) |  发射位置 |
+| `time?` | `number` | 最大飞行时长 default:5 |
+| `speed?` | `number` | 初始速度 default:1000 |
 
 #### Returns
 
 [`ProjectileInst`](Gameplay.Gameplay.ProjectileInst.md)
 
-投掷物 v2 实例
+投掷物v2实例
 
----
+___
 
 ### unbindPlayer
 
@@ -2696,7 +2696,7 @@ GameObject 准备好后返回
 
 `void`
 
----
+___
 
 ### asyncFind
 
@@ -2704,7 +2704,7 @@ GameObject 准备好后返回
 
 **`Description`**
 
-通过 guid 异步查找 GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 **`Effect`**
@@ -2713,17 +2713,17 @@ GameObject 准备好后返回
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | 物体的 guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 物体的guid |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
-Guid 对应的物体
+Guid对应的物体
 
----
+___
 
 ### asyncSpawnGameObject
 
@@ -2739,18 +2739,18 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name            | Type      | Description                     |
-| :-------------- | :-------- | :------------------------------ |
-| `assetId`       | `string`  | 资源的 GUID                     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `Promise`<`GameObject`\>
 
-构造的 GameObject
+构造的GameObject
 
----
+___
 
 ### find
 
@@ -2758,7 +2758,7 @@ Guid 对应的物体
 
 **`Description`**
 
-通过 Guid 查找 GameObject
+通过Guid查找GameObject
 
 **`Effect`**
 
@@ -2766,17 +2766,17 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `guid` | `string` | 物体的 Guid |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 物体的Guid |
 
 #### Returns
 
 `GameObject`
 
-Guid 对应的物体
+Guid对应的物体
 
----
+___
 
 ### findGameObjectByTag
 
@@ -2784,7 +2784,7 @@ Guid 对应的物体
 
 **`Description`**
 
-通过自定义 Tag 获取 GameObject
+通过自定义Tag获取GameObject
 
 **`Effect`**
 
@@ -2792,9 +2792,9 @@ Guid 对应的物体
 
 #### Parameters
 
-| Name    | Type     | Description |
-| :------ | :------- | :---------- |
-| `InTag` | `string` | 自定义 Tag  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InTag` | `string` | 自定义Tag |
 
 #### Returns
 
@@ -2802,7 +2802,7 @@ Guid 对应的物体
 
 Array`<GameObject>`
 
----
+___
 
 ### getGameObjectByName
 
@@ -2818,9 +2818,9 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 物体名字    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 物体名字 |
 
 #### Returns
 
@@ -2828,7 +2828,7 @@ Array`<GameObject>`
 
 返回第一个查找到的对象，如有多个同名对象，随机返回一个
 
----
+___
 
 ### getGameObjectsByName
 
@@ -2844,9 +2844,9 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name   | Type     | Description |
-| :----- | :------- | :---------- |
-| `name` | `string` | 物体名字    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | 物体名字 |
 
 #### Returns
 
@@ -2854,7 +2854,7 @@ Array`<GameObject>`
 
 返回所有查找到的对象
 
----
+___
 
 ### spawnGameObject
 
@@ -2870,13 +2870,13 @@ Array`<GameObject>`
 
 #### Parameters
 
-| Name            | Type      | Description                     |
-| :-------------- | :-------- | :------------------------------ |
-| `assetId`       | `string`  | 资源的 GUID                     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
 
 #### Returns
 
 `GameObject`
 
-构造的 GameObject
+构造的GameObject

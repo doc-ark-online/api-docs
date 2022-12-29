@@ -8,68 +8,68 @@
 
 ## Table of contents
 
-| Enumeration Members                                                             |
-| :------------------------------------------------------------------------------ |
-| **[All](Type.Type.AssetType.md#all)** = `0` <br> All                            |
-| **[Cloth](Type.Type.AssetType.md#cloth)** = `3` <br> Cloth                      |
-| **[Prefab](Type.Type.AssetType.md#prefab)** = `6` <br> Prefab                   |
-| **[SkeletalMesh](Type.Type.AssetType.md#skeletalmesh)** = `2` <br> SkeletalMesh |
-| **[SoundWave](Type.Type.AssetType.md#soundwave)** = `4` <br> SoundWave          |
-| **[StaticMesh](Type.Type.AssetType.md#staticmesh)** = `1` <br> StaticMesh       |
-| **[Texture](Type.Type.AssetType.md#texture)** = `5` <br> Texture                |
+| Enumeration Members |
+| :-----|
+| **[All](Type.Type.AssetType.md#all)** = ``0`` <br> All|
+| **[Cloth](Type.Type.AssetType.md#cloth)** = ``3`` <br> Cloth|
+| **[Prefab](Type.Type.AssetType.md#prefab)** = ``6`` <br> Prefab|
+| **[SkeletalMesh](Type.Type.AssetType.md#skeletalmesh)** = ``2`` <br> SkeletalMesh|
+| **[SoundWave](Type.Type.AssetType.md#soundwave)** = ``4`` <br> SoundWave|
+| **[StaticMesh](Type.Type.AssetType.md#staticmesh)** = ``1`` <br> StaticMesh|
+| **[Texture](Type.Type.AssetType.md#texture)** = ``5`` <br> Texture|
 
 ## Enumeration Members
 
 ### All
 
-• **All** = `0`
+• **All** = ``0``
 
 All
 
----
+___
 
 ### Cloth
 
-• **Cloth** = `3`
+• **Cloth** = ``3``
 
 Cloth
 
----
+___
 
 ### Prefab
 
-• **Prefab** = `6`
+• **Prefab** = ``6``
 
 Prefab
 
----
+___
 
 ### SkeletalMesh
 
-• **SkeletalMesh** = `2`
+• **SkeletalMesh** = ``2``
 
 SkeletalMesh
 
----
+___
 
 ### SoundWave
 
-• **SoundWave** = `4`
+• **SoundWave** = ``4``
 
 SoundWave
 
----
+___
 
 ### StaticMesh
 
-• **StaticMesh** = `1`
+• **StaticMesh** = ``1``
 
 StaticMesh
 
----
+___
 
 ### Texture
 
-• **Texture** = `5`
+• **Texture** = ``5``
 
 Texture

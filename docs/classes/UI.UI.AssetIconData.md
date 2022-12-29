@@ -4,13 +4,13 @@
 
 **`Description`**
 
-资源 ICON 信息
+资源ICON信息
 
 ## Table of contents
 
-| Accessors                                                                  |
-| :------------------------------------------------------------------------- |
-| **[assetID](UI.UI.AssetIconData.md#assetid)**(): `string` <br> 获取资源 ID |
+| Accessors |
+| :-----|
+| **[assetID](UI.UI.AssetIconData.md#assetid)**(): `string` <br> 获取资源ID|
 
 **`Description`**
 
@@ -28,7 +28,7 @@
 
 **`Description`**
 
-获取资源 ID
+获取资源ID
 
 **`Effect`**
 
@@ -38,13 +38,13 @@
 
 `string`
 
-资源 ID 信息
+资源ID信息
 
 • `set` **assetID**(`v`): `void`
 
 **`Description`**
 
-设置资源 ID
+设置资源ID
 
 **`Effect`**
 
@@ -52,9 +52,9 @@
 
 #### Parameters
 
-| Name | Type     | Description  |
-| :--- | :------- | :----------- |
-| `v`  | `string` | 资源 ID 信息 |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | `string` | 资源ID信息 |
 
 #### Returns
 

@@ -4,16 +4,16 @@
 
 **`Description`**
 
-基础的边距，提供 4 个方向的数值修改
+基础的边距，提供4个方向的数值修改
 
 ## Table of contents
 
-| Properties                                             |
-| :----------------------------------------------------- |
-| **[bottom](UI.UI.Margin.md#bottom)**: `number` <br> 下 |
-| **[left](UI.UI.Margin.md#left)**: `number` <br> 左     |
-| **[right](UI.UI.Margin.md#right)**: `number` <br> 右   |
-| **[top](UI.UI.Margin.md#top)**: `number` <br> 上       |
+| Properties |
+| :-----|
+| **[bottom](UI.UI.Margin.md#bottom)**: `number` <br> 下|
+| **[left](UI.UI.Margin.md#left)**: `number` <br> 左|
+| **[right](UI.UI.Margin.md#right)**: `number` <br> 右|
+| **[top](UI.UI.Margin.md#top)**: `number` <br> 上|
 
 **`Description`**
 
@@ -25,9 +25,9 @@
 
 #### Parameters
 
-| Name | Type     | Description |
-| :--- | :------- | :---------- |
-| `In` | `number` | 初始化值    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `In` | `number` | 初始化值 |
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
 
@@ -37,12 +37,12 @@
 
 #### Parameters
 
-| Name       | Type     | Description |
-| :--------- | :------- | :---------- |
-| `InLeft`   | `number` | 左值        |
-| `InTop`    | `number` | 上值        |
-| `InRight`  | `number` | 右值        |
-| `InBottom` | `number` | 下值        |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InLeft` | `number` | 左值 |
+| `InTop` | `number` | 上值 |
+| `InRight` | `number` | 右值 |
+| `InBottom` | `number` | 下值 |
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 下
 
----
+___
 
 ### left
 
@@ -64,7 +64,7 @@
 
 左
 
----
+___
 
 ### right
 
@@ -74,7 +74,7 @@
 
 右
 
----
+___
 
 ### top
 
