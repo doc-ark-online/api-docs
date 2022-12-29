@@ -5,7 +5,8 @@ export default defineConfig({
   ignoreDeadLinks: true,
   title: "API",
   description: "口袋方舟 编辑器的 Api 文档",
-  base: "/api-docs/",
+  // base: "/api-docs/",
+  outDir: "../dist",
   themeConfig: {
     algolia: {
       appId: "I2PHYUBLCN",
@@ -49,7 +50,7 @@ export default defineConfig({
         items: [
           { text: "Events", link: "/modules/Events.Events" },
           { text: "Extension", link: "/modules/Extension.Extension" },
-           { text: "Gameplay", link: "/modules/Gameplay.Gameplay" },
+          { text: "Gameplay", link: "/modules/Gameplay.Gameplay" },
           { text: "MobileEditor", link: "/modules/MobileEditor.MobileEditor" },
           { text: "Type", link: "/modules/Type.Type" },
           { text: "UI", link: "/modules/UI.UI" },
