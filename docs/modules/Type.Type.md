@@ -1,5 +1,3 @@
-Type
-
 # Type <Badge type="tip" text="Namespace" />
 
 ## Table of contents
@@ -37,4 +35,4 @@ Type
 | Interfaces |
 | :-----|
 | [DelegateInterface](../interfaces/Type.Type.DelegateInterface.md) <br> 委托接口|
-- [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md)
+| [MulticastDelegateInterface](../interfaces/Type.Type.MulticastDelegateInterface.md) <br> 多播委托接口|
