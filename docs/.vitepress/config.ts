@@ -61,6 +61,23 @@ export default defineConfig({
       },
       ...typeToNamespace(["classes", "enums", "interfaces"]),
       // ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
+      {
+        text: 'Util',
+        collapsible: true,
+        collapsed: true,
+        items: [
+          { text: 'AssetUtil', link: '/modules/Util.Util.AssetUtil.md' },
+          { text: 'InputUtil', link: '/modules/Util.Util.InputUtil.md' },
+          { text: 'LocaleUtil', link: '/modules/Util.Util.LocaleUtil.md' },
+          { text: 'MathUtil', link: '/modules/Util.Util.MathUtil.md' },
+          { text: 'NFTUtil', link: '/modules/Util.Util.NFTUtil.md' },
+          { text: 'StringUtil', link: '/modules/Util.Util.StringUtil.md' },
+          { text: 'SystemUtil', link: '/modules/Util.Util.SystemUtil.md' },
+          { text: 'TimeUtil', link: '/modules/Util.Util.TimeUtil.md' },
+          { text: 'TweenUtil', link: '/modules/Util.Util.TweenUtil.md' },
+          { text: 'WindowUtil', link: '/modules/Util.Util.WindowUtil.md' },
+        ]
+      }
     ],
     editLink: {
       pattern:

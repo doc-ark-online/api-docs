@@ -20,9 +20,12 @@ export function pathToSideBar(paths: string[]) {
     });
   });
   // sidebar.forEach((side) => {
-  //   side.items.forEach((s) => {
-  //     console.log(s.link);
-  //   });
+  //   if(side.text === 'modules') {
+  //     side.items.forEach((s) => {
+  //       if(s.text.includes('Util.Util'))
+  //       console.log(s.link);
+  //     });
+  //   }
   // });
   return sidebar;
 }
@@ -72,6 +75,7 @@ export function typeToNamespace(paths: string[]) {
         }),
       });
   });
+  sidebar = sidebar.filter(item => item.text !== 'Util')
   return sidebar;
 }
 /**
