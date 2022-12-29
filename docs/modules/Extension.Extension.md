@@ -1,5 +1,3 @@
-Extension
-
 # Extension <Badge type="tip" text="Namespace" />
 
 ## Table of contents
@@ -7,4 +5,4 @@ Extension
 | Classes |
 | :-----|
 | [GameObjPool](../classes/Extension.Extension.GameObjPool.md) <br> GameObject对象池|
-- [ObjPool](../classes/Extension.Extension.ObjPool.md)
+| [ObjPool](../classes/Extension.Extension.ObjPool.md) <br> 对象池|
