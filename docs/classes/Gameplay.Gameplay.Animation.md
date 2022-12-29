@@ -2,15 +2,15 @@
 
 # Animation <Badge type="tip" text="Class" />
 
-**`简介`**
+**`Description`**
 
 动画类
 
-**`注意事项`**
+**`Precautions`**
 
 请不要直接使用 new 创建
 
-**`案例`**
+**`Example`**
 
 创建方式
 
@@ -22,10 +22,6 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 ```
 
 ## Table of contents
-
-### constructor
-
-• **new Animation**()
 
 | Accessors                                                                                                                                                                                                                  |
 | :----- |
@@ -44,6 +40,10 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 | **[play](Gameplay.Gameplay.Animation.md#play)**(): `boolean` <br> 从动画资源的起点播放动画 |
 | **[resume](Gameplay.Gameplay.Animation.md#resume)**(): `boolean` <br> 从当前位置继续动画播放 |
 | **[stop](Gameplay.Gameplay.Animation.md#stop)**(): `boolean` <br> 停止播放,不会触发 onAnimFinished 委托 |
+
+### constructor
+
+• **new Animation**()
 
 
 ## Accessors
@@ -85,7 +85,7 @@ console.log(anim.length)
 
 ---
 
-### loop <Badge type="info" text="client" />
+### loop
 
 • `get` **loop**(): `number`
 
