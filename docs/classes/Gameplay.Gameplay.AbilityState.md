@@ -1,135 +1,67 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Animation
+[Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
 
-# Animation <Badge type="tip" text="Class" />
+# AbilityState <Badge type="tip" text="Class" />
 
 **`Description`**
 
-动画类
+技能状态
 
 **`Precautions`**
 
-请不要直接使用 new 创建
-
-**`Example`**
-
-使用示例:创建方式
-
-```ts
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-  let Anim = player.character.playAnimation(animGuid);
-  Anim = player.character.loadAnimation(animGuid);
-});
-```
+服务端运行，多数情况客户端运行会自动同步至服务端
 
 ## Table of contents
 
-| Accessors                                                                                                                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[isPlaying](Gameplay.Gameplay.Animation.md#isplaying)**(): `boolean` <br> 是否正在播放                                                                                                                      |
-| **[length](Gameplay.Gameplay.Animation.md#length)**(): `number` <br> 动画长度,单位为秒,只读                                                                                                                   |
-| **[loop](Gameplay.Gameplay.Animation.md#loop)**(): `number` <br> Auto 模式表示循环播放次数，Custom 模式表示是否循环 非 1:是，1:否                                                                             |
-| **[onAnimFinished](Gameplay.Gameplay.Animation.md#onanimfinished)**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\> <br> 动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发) |
-| **[rate](Gameplay.Gameplay.Animation.md#rate)**(): `number` <br> 获取动画播放速率                                                                                                                             |
+| Accessors                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------- |
+| **[animation](Gameplay.Gameplay.AbilityState.md#animation)**(): `string` <br> 获取动画资源                     |
+| **[duration](Gameplay.Gameplay.AbilityState.md#duration)**(): `number` <br> 获取释放状态当前执行时间           |
+| **[executeTime](Gameplay.Gameplay.AbilityState.md#executetime)**(): `number` <br> 获取释放状态可执行总时长时间 |
+| **[loop](Gameplay.Gameplay.AbilityState.md#loop)**(): `boolean` <br> 获取释放状态是否可循环 isLoop             |
 
-| Methods                                                                                                   |
-| :-------------------------------------------------------------------------------------------------------- |
-| **[pause](Gameplay.Gameplay.Animation.md#pause)**(): `boolean` <br> 暂停动画,不会触发 onAnimFinished 委托 |
-| **[play](Gameplay.Gameplay.Animation.md#play)**(): `boolean` <br> 从动画资源的起点播放动画                |
-| **[resume](Gameplay.Gameplay.Animation.md#resume)**(): `boolean` <br> 从当前位置继续动画播放              |
-| **[stop](Gameplay.Gameplay.Animation.md#stop)**(): `boolean` <br> 停止播放,不会触发 onAnimFinished 委托   |
+| Methods                                                                                                                                                                                                  |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[addControlAbility](Gameplay.Gameplay.AbilityState.md#addcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性       |
+| **[cancelControlAbility](Gameplay.Gameplay.AbilityState.md#cancelcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性 |
+| **[enableJump](Gameplay.Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> 获取对象是否可跳跃                                                                                                      |
+| **[enableMove](Gameplay.Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> 获取对象是否可移动                                                                                                      |
+| **[enableTurn](Gameplay.Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md) <br> 获取对象是否可转向                                             |
 
 ## Accessors
 
-### isPlaying
+### animation
 
-• `get` **isPlaying**(): `boolean`
+• `get` **animation**(): `string`
 
 **`Description`**
 
-是否正在播放
+获取动画资源
 
-**`Example`**
+**`Effect`**
 
-判断是否该动画对象是否播放中
-
-```ts
-if (anim.isPlaying) {
-   do Something
-} else {
-   do something else
-}
-```
+调用端生效
 
 #### Returns
 
-`boolean`
+`string`
 
----
+资源 GUID
 
-### length
-
-• `get` **length**(): `number`
+• `set` **animation**(`AnimGuid`): `void`
 
 **`Description`**
 
-动画长度,单位为秒,只读
+设置动画资源
 
-**`Example`**
+**`Effect`**
 
-获取对象时长
-
-```ts
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.length);
-```
-
-#### Returns
-
-`number`
-
----
-
-### loop
-
-• `get` **loop**(): `number`
-
-**`Description`**
-
-Auto 模式表示循环播放次数，Custom 模式表示是否循环 非 1:是，1:否
-
-**`Example`**
-
-获取循环次数
-
-```ts
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.loop);
-```
-
-#### Returns
-
-`number`
-
-• `set` **loop**(`loopCount`): `void`
-
-**`Description`**
-
-循环播放次数,不同步，Custom 模式支持取消循环
-
-**`Example`**
-
-设置循环次数
-
-```ts
-let anim = player.character.playAnimation(animGuid);
-anim.loop = 23333;
-```
+调用端生效
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
-| `loopCount` | `number` |
+| Name       | Type     | Description |
+| :--------- | :------- | :---------- |
+| `AnimGuid` | `string` | 资源 GUID   |
 
 #### Returns
 
@@ -137,81 +69,107 @@ anim.loop = 23333;
 
 ---
 
-### onAnimFinished
+### duration
 
-• `get` **onAnimFinished**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
-
-**`Description`**
-
-动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发)
-
-**`Example`**
-
-动画播放结束后执行逻辑
-
-```ts
-anim.onAnimFinished.add(()=>{
-       do something
-})
-```
-
-#### Returns
-
-[`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
-
----
-
-### rate
-
-• `get` **rate**(): `number`
+• `get` **duration**(): `number`
 
 **`Description`**
 
-获取动画播放速率
+获取释放状态当前执行时间
 
-**`Example`**
+**`Effect`**
 
-获取速率
-
-```ts
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.rate);
-```
+调用端生效
 
 #### Returns
 
 `number`
 
-• `set` **rate**(`animRate`): `void`
+获取释放状态当前执行时间
+
+---
+
+### executeTime
+
+• `get` **executeTime**(): `number`
 
 **`Description`**
 
-设置播放速率(动画切换时有融合时间,动画太短，当 rate=1 时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
-负表示逆向播放, rate 为 1 表示原始速率,默认值为 1。设置该值不会改变播放的起点.
+获取释放状态可执行总时长时间
 
-**`Example`**
+**`Precautions`**
 
-两倍速播放
+状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
 
-```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.rate = 2;
-anim.play();
-```
+**`Effect`**
 
-动画播放加速/减慢成 n 秒
+调用端生效
 
-```ts
-this.Anim = player.character.loadAnimation(this.AnimList[0]);
-this.Anim.rate = this.Anim.length / n;
-this.Anim.play();
-```
+#### Returns
+
+`number`
+
+获取释放状态可执行总时长时间
+
+• `set` **executeTime**(`Time`): `void`
+
+**`Description`**
+
+设置释放状态可执行总时长时间
+
+**`Precautions`**
+
+状态执行的时间，小于 0 为无限（根据 Cell 耗时最长的来确定），否则按配置时间进行结束
+
+**`Effect`**
+
+调用端生效
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
-| `animRate` | `number` |
+| Name   | Type     | Description                  |
+| :----- | :------- | :--------------------------- |
+| `Time` | `number` | 设置释放状态可执行总时长时间 |
+
+#### Returns
+
+`void`
+
+---
+
+### loop
+
+• `get` **loop**(): `boolean`
+
+**`Description`**
+
+获取释放状态是否可循环 isLoop
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+`boolean`
+
+true 或 false
+
+• `set` **loop**(`LoopState`): `void`
+
+**`Description`**
+
+设置释放状态是否循环
+
+**`Effect`**
+
+调用端生效
+
+#### Parameters
+
+| Name        | Type      | Description   |
+| :---------- | :-------- | :------------ |
+| `LoopState` | `boolean` | true 或 false |
 
 #### Returns
 
@@ -219,122 +177,108 @@ this.Anim.play();
 
 ## Methods
 
-### pause
+### addControlAbility
 
-▸ **pause**(): `boolean`
+▸ **addControlAbility**(`ControlType`): `void`
 
 **`Description`**
 
-暂停动画,不会触发 onAnimFinished 委托
+添加释放状态的控制性
 
 **`Effect`**
 
-与角色创建方式绑定
+调用端生效
 
-**`Example`**
+#### Parameters
 
-使用示例:暂停动画
-
-```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-.......
-anim.pause();
-```
+| Name          | Type                                                                               | Description      |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
-`boolean`
-
-true 成功，false 失败
+`void`
 
 ---
 
-### play
+### cancelControlAbility
 
-▸ **play**(): `boolean`
+▸ **cancelControlAbility**(`ControlType`): `void`
 
 **`Description`**
 
-从动画资源的起点播放动画
+取消释放状态的控制性
 
 **`Effect`**
 
-与角色创建方式绑定
+调用端生效
 
-**`Example`**
+#### Parameters
 
-使用示例:播放动画
-
-```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-```
+| Name          | Type                                                                               | Description      |
+| :------------ | :--------------------------------------------------------------------------------- | :--------------- |
+| `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 #### Returns
 
-`boolean`
-
-true 成功，false 失败
+`void`
 
 ---
 
-### resume
+### enableJump
 
-▸ **resume**(): `boolean`
+▸ **enableJump**(): `boolean`
 
 **`Description`**
 
-从当前位置继续动画播放
+获取对象是否可跳跃
 
 **`Effect`**
 
-与角色创建方式绑定
-
-**`Example`**
-
-使用示例:恢复播放
-
-```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-...
-anim.resume();
-```
+调用端生效
 
 #### Returns
 
 `boolean`
 
-true 成功，false 失败
+true 或 false
 
 ---
 
-### stop
+### enableMove
 
-▸ **stop**(): `boolean`
+▸ **enableMove**(): `boolean`
 
 **`Description`**
 
-停止播放,不会触发 onAnimFinished 委托
+获取对象是否可移动
 
 **`Effect`**
 
-与角色创建方式绑定
-
-**`Example`**
-
-使用示例:暂停播放
-
-```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-...
-anim.stop();
-```
+调用端生效
 
 #### Returns
 
 `boolean`
 
-true 成功，false 失败
+true 或 false
+
+---
+
+### enableTurn
+
+▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md)
+
+**`Description`**
+
+获取对象是否可转向
+
+**`Effect`**
+
+调用端生效
+
+#### Returns
+
+[`MoveControlMode`](../enums/Gameplay.Gameplay.MoveControlMode.md)
+
+true 或 false

@@ -4,22 +4,13 @@
 
 **`Description`**
 
-动画类
+空锚点，可以用作根节点
 
 ## Hierarchy
 
-请不要直接使用 new 创建
+- `GameObject`
 
-**`Example`**
-
-使用示例:创建方式
-
-```
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-  let Anim = player.character.playAnimation(animGuid);
-  Anim = player.character.loadAnimation(animGuid);
-});
-```
+  ↳ **`Anchor`**
 
 ## Table of contents
 
@@ -101,15 +92,15 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
-### isPlaying
+### forwardVector
 
-• `get` **isPlaying**(): `boolean`
+• `get` **forwardVector**(): [`Vector`](Type.Type.Vector.md)
 
 **`Description`**
 
-是否正在播放
+获取当前物体的向前向量
 
-**`Example`**
+**`Effect`**
 
 调用端生效
 
@@ -159,72 +150,17 @@ Vector
 
 **`Description`**
 
-动画长度,单位为秒,只读
+设置对象是否锁定
 
-**`Example`**
+**`Effect`**
 
-获取对象时长
-
-```
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.length)
-```
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-Gameplay/index.d.ts:653
-
----
-
-### loop
-
-• `get` **loop**(): `number`
-
-**`Description`**
-
-Auto 模式表示循环播放次数，Custom 模式表示是否循环 非 1:是，1:否
-
-**`Example`**
-
-获取循环次数
-
-```
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.loop)
-```
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-Gameplay/index.d.ts:663
-
-• `set` **loop**(`loopCount`): `void`
-
-**`Description`**
-
-循环播放次数,不同步，Custom 模式支持取消循环
-
-**`Example`**
-
-设置循环次数
-
-```
-let anim = player.character.playAnimation(animGuid);
-anim.loop = 23333;
-```
+调用端生效
 
 #### Parameters
 
-| Name        | Type     |
-| :---------- | :------- |
-| `loopCount` | `number` |
+| Name | Type      |
+| :--- | :-------- |
+| `v`  | `boolean` |
 
 #### Returns
 
@@ -232,23 +168,17 @@ anim.loop = 23333;
 
 ---
 
-### onAnimFinished
+### name
 
-• `get` **onAnimFinished**(): [`MulticastDelegate`](Type.Type.MulticastDelegate.md)<() => `void`\>
+• `get` **name**(): `string`
 
 **`Description`**
 
-动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发)
+返回当前物体名称
 
-**`Example`**
+**`Effect`**
 
-动画播放结束后执行逻辑
-
-```
-anim.onAnimFinished.add(()=>{
-       do something
-})
-```
+调用端生效
 
 #### Returns
 
@@ -260,49 +190,11 @@ anim.onAnimFinished.add(()=>{
 
 **`Description`**
 
-获取动画播放速率
+设置物体名称
 
-**`Example`**
+**`Effect`**
 
-获取速率
-
-```
-let anim = player.character.playAnimation(animGuid);
-console.log(anim.rate);
-```
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-Gameplay/index.d.ts:701
-
-• `set` **rate**(`animRate`): `void`
-
-**`Description`**
-
-设置播放速率(动画切换时有融合时间,动画太短，当 rate=1 时 动画可能不明显) ,数值无范围限制，速率的符号表示播放方向，正表示正向播放，
-负表示逆向播放, rate 为 1 表示原始速率,默认值为 1。设置该值不会改变播放的起点.
-
-**`Example`**
-
-两倍速播放
-
-```
-let anim = player.character.loadAnimation(animGuid);
-anim.rate = 2;
-anim.play();
-```
-
-动画播放加速/减慢成 n 秒
-
-```
-this.Anim = player.character.loadAnimation(this.AnimList[0]);
-this.Anim.rate = this.Anim.length/n;
-this.Anim.play();
-```
+调用端生效
 
 #### Parameters
 
@@ -810,19 +702,19 @@ bool
 
 ## Methods
 
-### pause
+### addDestroyCallback
 
-▸ **pause**(): `boolean`
+▸ **addDestroyCallback**(`callback`): `void`
 
 **`Description`**
 
-暂停动画,不会触发 onAnimFinished 委托
+添加物体 Destroy 事件回调
 
 **`Effect`**
 
-与角色创建方式绑定
+调用端生效
 
-**`Example`**
+#### Parameters
 
 | Name       | Type                              | Description |
 | :--------- | :-------------------------------- | :---------- |
@@ -1469,19 +1361,23 @@ bool
 
 ---
 
-### play
+### getWorldLocation
 
-▸ **play**(): `boolean`
+▸ **getWorldLocation**(`outer?`): [`Vector`](Type.Type.Vector.md)
 
 **`Description`**
 
-从动画资源的起点播放动画
+获取物体的世界坐标
+
+**`Precautions`**
+
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象,建议传入 outer 来减少 new 对象\
 
 **`Effect`**
 
-与角色创建方式绑定
+调用端生效
 
-**`Example`**
+#### Parameters
 
 | Name     | Type                            | Description                             |
 | :------- | :------------------------------ | :-------------------------------------- |
@@ -1575,61 +1471,39 @@ true 为客户端
 
 ---
 
-### resume
+### onDestroy
 
-▸ **resume**(): `boolean`
+▸ `Protected` **onDestroy**(): `void`
 
 **`Description`**
 
-从当前位置继续动画播放
+周期函数 被销毁时调用
 
 **`Effect`**
 
-与角色创建方式绑定
-
-**`Example`**
-
-使用示例:恢复播放
-
-```
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-...
-anim.resume();
-```
+调用端生效
 
 #### Returns
 
-`boolean`
+`void`
 
 ---
 
-### stop
+### onStart
 
-▸ **stop**(): `boolean`
+▸ `Protected` **onStart**(): `void`
 
 **`Description`**
 
-停止播放,不会触发 onAnimFinished 委托
+周期函数 脚本开始执行时调用
 
 **`Effect`**
 
-与角色创建方式绑定
-
-**`Example`**
-
-使用示例:暂停播放
-
-```
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
-...
-anim.stop();
-```
+调用端生效
 
 #### Returns
 
-`boolean`
+`void`
 
 ---
 
