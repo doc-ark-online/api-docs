@@ -255,7 +255,9 @@ ___
 
 使用示例:播放动画
 ```ts
+//通过guid获取到角色要播放的动画
 let anim = player.character.loadAnimation(animGuid);
+//播放动画
 anim.play();
 ```
 
