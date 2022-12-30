@@ -2,7 +2,7 @@
 
 # CharacterBase <Badge type="tip" text="Class" />
 
-**`简介`**
+**`描述`**
 
 * CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
 * CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
