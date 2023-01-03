@@ -11,11 +11,6 @@
 * Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem，是由玩家控制的角色，通常被内置的输入系统所操作。
 * 你可以在场景的Player面板中修改Character的初始化配置。
 
-**`如何获取`**
-* Character可以通过[Player](../classes/Gameplay.Gameplay.Player.md)对象获取`player.character`
-* 通过getAllPlayers可以获取到
-* Character无法被用户主动实例化，根据当前Player的数量由世界生成，不可通过new创建
-
 ::: warning 注意
 * 频繁更改location、rotation等可能会导致性能问题
 * 部分API是仅单端可调用，部分是自动同步双端，请参考具体的函数说明
