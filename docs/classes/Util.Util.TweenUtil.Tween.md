@@ -1,4 +1,4 @@
-[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Tween
+[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Tween
 
 # Tween<T\> <Badge type="tip" text="Class" />
 
@@ -12,7 +12,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| `T` | extends [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops) |
 
 ## Table of contents
 
@@ -40,7 +40,7 @@
 | **[start](Util.Util.TweenUtil.Tween.md#start)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 启动补间，可以指定启动生效时间，默认为当前时间|
 | **[stop](Util.Util.TweenUtil.Tween.md#stop)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出|
 | **[stopChainedTweens](Util.Util.TweenUtil.Tween.md#stopchainedtweens)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止所有链接到当前补间的补间对象|
-| **[to](Util.Util.TweenUtil.Tween.md#to)**([`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops), `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间|
+| **[to](Util.Util.TweenUtil.Tween.md#to)**([`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops), `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间|
 | **[update](Util.Util.TweenUtil.Tween.md#update)**(`number`, `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
 | **[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)**(`[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。|
 
@@ -56,7 +56,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |
+| `T` | extends [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops) |
 
 #### Parameters
 
@@ -176,7 +176,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `easingFunction?` | [`EasingFunction`](../modules/Util.Util.TweenUtil.md#easingfunction) |  缓动函数 default: Easing.Linear.None |
+| `easingFunction?` | [`EasingFunction`](../modules/Util.TweenUtil.md#easingfunction) |  缓动函数 default: Easing.Linear.None |
 
 #### Returns
 
@@ -268,7 +268,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `interpolationFunction?` | [`InterpolationFunction`](../modules/Util.Util.TweenUtil.md#interpolationfunction) |  插值函数 default: Interpolation.Linear |
+| `interpolationFunction?` | [`InterpolationFunction`](../modules/Util.TweenUtil.md#interpolationfunction) |  插值函数 default: Interpolation.Linear |
 
 #### Returns
 
@@ -672,7 +672,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `properties` | [`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops) |  目标状态 |
+| `properties` | [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops) |  目标状态 |
 | `duration?` | `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns

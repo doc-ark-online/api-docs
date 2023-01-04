@@ -1,19 +1,21 @@
+DataStorage
+
 # DataStorage <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
 | Enumerations |
 | :-----|
-| [DataStorageResultCode](../enums/DataStorage.DataStorage.DataStorageResultCode.md) <br> 数据储存返回代码|
+| [DataStorageResultCode](../enums/DataStorage.DataStorageResultCode.md) <br> 数据储存返回代码|
 
 | Functions |
 | :-----|
 | **[asyncGetCustomData](DataStorage.DataStorage.md#asyncgetcustomdata)**(`string`): `Promise`<`unknown`\> <br> 异步获取自定义数据|
-| **[asyncGetPlayerData](DataStorage.DataStorage.md#asyncgetplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md)): `Promise`<`unknown`\> <br> 异步获取玩家数据|
-| **[asyncRemoveCustomData](DataStorage.DataStorage.md#asyncremovecustomdata)**(`string`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步删除自定义数据|
-| **[asyncRemovePlayerData](DataStorage.DataStorage.md#asyncremoveplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md)): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步删除用户数据|
-| **[asyncSetCustomData](DataStorage.DataStorage.md#asyncsetcustomdata)**(`string`, `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
-| **[asyncSetPlayerData](DataStorage.DataStorage.md#asyncsetplayerdata)**([`Player`](../classes/Gameplay.Gameplay.Player.md), `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
+| **[asyncGetPlayerData](DataStorage.DataStorage.md#asyncgetplayerdata)**([`Player`](../classes/Gameplay.Player.md)): `Promise`<`unknown`\> <br> 异步获取玩家数据|
+| **[asyncRemoveCustomData](DataStorage.DataStorage.md#asyncremovecustomdata)**(`string`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <br> 异步删除自定义数据|
+| **[asyncRemovePlayerData](DataStorage.DataStorage.md#asyncremoveplayerdata)**([`Player`](../classes/Gameplay.Player.md)): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <br> 异步删除用户数据|
+| **[asyncSetCustomData](DataStorage.DataStorage.md#asyncsetcustomdata)**(`string`, `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
+| **[asyncSetPlayerData](DataStorage.DataStorage.md#asyncsetplayerdata)**([`Player`](../classes/Gameplay.Player.md), `unknown`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
 | **[setTemporaryStorage](DataStorage.DataStorage.md#settemporarystorage)**(`boolean`): `void` <br> 设置数据存储环境是否是临时的|
 | **[sizeOfData](DataStorage.DataStorage.md#sizeofdata)**(`unknown`): `number` <br> 返回data的当前大小。单位为bytes（字节）。|
 
@@ -61,7 +63,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象 |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家对象 |
 
 #### Returns
 
@@ -73,7 +75,7 @@ ___
 
 ### asyncRemoveCustomData
 
-▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 **`Description`**
 
@@ -91,7 +93,7 @@ ___
 
 #### Returns
 
-`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 数据删除状态
 
@@ -99,7 +101,7 @@ ___
 
 ### asyncRemovePlayerData
 
-▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 **`Description`**
 
@@ -113,11 +115,11 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象 |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家对象 |
 
 #### Returns
 
-`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 数据储存状态
 
@@ -125,7 +127,7 @@ ___
 
 ### asyncSetCustomData
 
-▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 **`Description`**
 
@@ -144,7 +146,7 @@ ___
 
 #### Returns
 
-`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 数据储存状态
 
@@ -152,7 +154,7 @@ ___
 
 ### asyncSetPlayerData
 
-▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 **`Description`**
 
@@ -170,12 +172,12 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `player` | [`Player`](../classes/Gameplay.Gameplay.Player.md) | 玩家对象 |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家对象 |
 | `data` | `unknown` | 要保存的数据 |
 
 #### Returns
 
-`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorage.DataStorageResultCode.md)\>
+`Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
 
 设置操作结果
 

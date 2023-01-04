@@ -1,4 +1,4 @@
-[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Group
+[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Group
 
 # Group <Badge type="tip" text="Class" />
 
@@ -10,9 +10,9 @@
 
 | Methods |
 | :-----|
-| **[add](Util.Util.TweenUtil.Group.md#add)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
-| **[getAll](Util.Util.TweenUtil.Group.md#getall)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>[] <br> 获取当前补间组中所有补间对象|
-| **[remove](Util.Util.TweenUtil.Group.md#remove)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
+| **[add](Util.Util.TweenUtil.Group.md#add)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
+| **[getAll](Util.Util.TweenUtil.Group.md#getall)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <br> 获取当前补间组中所有补间对象|
+| **[remove](Util.Util.TweenUtil.Group.md#remove)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
 | **[removeAll](Util.Util.TweenUtil.Group.md#removeall)**(): `void` <br> 移除当前补间组中所有补间对象|
 | **[update](Util.Util.TweenUtil.Group.md#update)**(`number`, `boolean`): `boolean` <br> 更新补间组|
 
@@ -34,7 +34,7 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> |  要添加的补间对象 |
+| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\> |  要添加的补间对象 |
 
 #### Returns
 
@@ -44,7 +44,7 @@ ___
 
 ### getAll
 
-▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>[]
+▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[]
 
 **`Description`**
 
@@ -56,7 +56,7 @@ ___
 
 #### Returns
 
-[`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\>[]
+[`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[]
 
 补间对象数组
 
@@ -78,7 +78,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.Util.TweenUtil.md#unknownprops)\> |  要移出并删除的补间对象 |
+| `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\> |  要移出并删除的补间对象 |
 
 #### Returns
 

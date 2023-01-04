@@ -1,4 +1,4 @@
-[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.Util.TweenUtil.md) / Sequence
+[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Sequence
 
 # Sequence <Badge type="tip" text="Class" />
 

@@ -10,23 +10,23 @@ Account Service
 
 | Enumerations |
 | :-----|
-| [AdsState](../enums/Service.Service.AdsState.md) <br> 广告状态|
-| [AdsType](../enums/Service.Service.AdsType.md) <br> 广告类型|
-| [MessageChannelReceiver](../enums/Service.Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
+| [AdsState](../enums/Service.AdsState.md) <br> 广告状态|
+| [AdsType](../enums/Service.AdsType.md) <br> 广告类型|
+| [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
 
 | Classes |
 | :-----|
-| [AccountService](../classes/Service.Service.AccountService.md) <br> 用户账号信息管理相关服务|
-| [AdsService](../classes/Service.Service.AdsService.md) <br> 广告服务，支持激励/插屏类型|
-| [AnalyticsService](../classes/Service.Service.AnalyticsService.md) <br> 分析服务|
-| [DebugService](../classes/Service.Service.DebugService.md) <br> debug调试服务|
-| [EffectService](../classes/Service.Service.EffectService.md) <br> 特效管理器|
-| [MessageChannelService](../classes/Service.Service.MessageChannelService.md) <br> 支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码|
-| [PurchaseService](../classes/Service.Service.PurchaseService.md) <br> 应用内购服务|
-| [RoomService](../classes/Service.Service.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API|
-| [RouteService](../classes/Service.Service.RouteService.md) <br> 游戏管理器|
-| [SoundService](../classes/Service.Service.SoundService.md) <br> 音效管理器|
-| [UGCService](../classes/Service.Service.UGCService.md) <br> 用户建造服务|
+| [AccountService](../classes/Service.AccountService.md) <br> 用户账号信息管理相关服务|
+| [AdsService](../classes/Service.AdsService.md) <br> 广告服务，支持激励/插屏类型|
+| [AnalyticsService](../classes/Service.AnalyticsService.md) <br> 分析服务|
+| [DebugService](../classes/Service.DebugService.md) <br> debug调试服务|
+| [EffectService](../classes/Service.EffectService.md) <br> 特效管理器|
+| [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码|
+| [PurchaseService](../classes/Service.PurchaseService.md) <br> 应用内购服务|
+| [RoomService](../classes/Service.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API|
+| [RouteService](../classes/Service.RouteService.md) <br> 游戏管理器|
+| [SoundService](../classes/Service.SoundService.md) <br> 音效管理器|
+| [UGCService](../classes/Service.UGCService.md) <br> 用户建造服务|
 
 | Type Aliases |
 | :-----|
