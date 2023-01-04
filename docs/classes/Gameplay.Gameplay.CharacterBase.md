@@ -11,15 +11,7 @@
 
 ## Hierarchy
 
-- `GameObject`
-
-  ↳ **`CharacterBase`**
-
-  ↳↳ [`AICharacter`](Gameplay.Gameplay.AICharacter.md)
-
-  ↳↳ [`Character`](Gameplay.Gameplay.Character.md)
-
-  ↳↳ [`Humanoid`](Gameplay.Gameplay.Humanoid.md)
+- 继承与`GameObject`，子类有： **`CharacterBase`** [`AICharacter`](Gameplay.Gameplay.AICharacter.md)、 [`Character`](Gameplay.Gameplay.Character.md)、[`Humanoid`](Gameplay.Gameplay.Humanoid.md)
 
 ## Table of contents
 
