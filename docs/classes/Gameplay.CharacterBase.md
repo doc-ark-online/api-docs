@@ -4,10 +4,11 @@
 
 **`Description`**
 
-CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
-CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
-CharacterBase通常会有默认的形象，你也可以对不同的形象进行编辑，以及选择设置为无形象
-在MW的世界中，无法对CharacterBase进行实例化，它只用于提供玩家角色和非玩家角色的通用功能
+- CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
+- CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
+- CharacterBase通常会有默认的形象，你也可以对不同的形象进行编辑，以及选择设置为无形象
+- 在MW的世界中，无法对CharacterBase进行实例化，它只用于提供玩家角色和非玩家角色的通用功能
+
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
