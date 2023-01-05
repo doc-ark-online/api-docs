@@ -1,7 +1,28 @@
 import { defineConfig, DefaultTheme } from "vitepress";
 import { pathToSideBar, typeToNamespace } from "../../utils";
+import type { Config as ThemeConfig } from "../../customTheme";
+import { defineConfigWithTheme } from "vitepress";
 
-export default defineConfig({
+export const sidebar: ThemeConfig["sidebar"] = [
+  {
+    text: "Index",
+    // collapsible: false,
+    // collapsed: false,
+    items: [
+      { text: "Events", link: "/modules/Events.Events" },
+      { text: "Extension", link: "/modules/Extension.Extension" },
+      { text: "Gameplay", link: "/modules/Gameplay.Gameplay" },
+      { text: "MobileEditor", link: "/modules/MobileEditor.MobileEditor" },
+      { text: "Type", link: "/modules/Type.Type" },
+      { text: "UI", link: "/modules/UI.UI" },
+      { text: "Util", link: "/modules/Util.Util" },
+      { text: "DataStorage", link: "/modules/DataStorage.DataStorage" },
+      { text: "Network", link: "/modules/Network.Network" },
+    ],
+  },
+];
+
+export default defineConfigWithTheme<ThemeConfig>({
   ignoreDeadLinks: true,
   title: "API",
   description: "口袋方舟 编辑器的 Api 文档",
@@ -13,7 +34,7 @@ export default defineConfig({
       apiKey: "62ee775311415d26549e0e30fef5aa38",
       indexName: "api-docs_prodigytech",
     },
-    siteTitle: "API",
+    // siteTitle: "API",
     nav: [
       {
         text: "020 版本",
@@ -31,54 +52,19 @@ export default defineConfig({
         ],
       },
     ],
-    sidebar: [
-      {
-        text: "Index",
-        collapsible: false,
-        collapsed: false,
-        items: [
-          { text: "Events", link: "/modules/Events.Events" },
-          { text: "Extension", link: "/modules/Extension.Extension" },
-          { text: "Gameplay", link: "/modules/Gameplay.Gameplay" },
-          { text: "MobileEditor", link: "/modules/MobileEditor.MobileEditor" },
-          { text: "Type", link: "/modules/Type.Type" },
-          { text: "UI", link: "/modules/UI.UI" },
-          { text: "Util", link: "/modules/Util.Util" },
-          { text: "DataStorage", link: "/modules/DataStorage.DataStorage" },
-          { text: "Network", link: "/modules/Network.Network" },
-        ],
-      },
-      ...typeToNamespace(["classes", "enums", "interfaces"]),
-      // ...pathToSideBar(["classes", "enums", "interfaces", "modules"]),
-      {
-        text: "Util",
-        collapsible: true,
-        collapsed: true,
-        items: [
-          { text: "AssetUtil", link: "/modules/Util.AssetUtil.md" },
-          { text: "InputUtil", link: "/modules/Util.InputUtil.md" },
-          { text: "LocaleUtil", link: "/modules/Util.LocaleUtil.md" },
-          { text: "MathUtil", link: "/modules/Util.MathUtil.md" },
-          { text: "NFTUtil", link: "/modules/Util.NFTUtil.md" },
-          { text: "StringUtil", link: "/modules/Util.StringUtil.md" },
-          { text: "SystemUtil", link: "/modules/Util.SystemUtil.md" },
-          { text: "TimeUtil", link: "/modules/Util.TimeUtil.md" },
-          { text: "TweenUtil", link: "/modules/Util.TweenUtil.md" },
-          { text: "WindowUtil", link: "/modules/Util.WindowUtil.md" },
-        ],
-      },
-    ],
-    editLink: {
-      pattern:
-        "https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path",
-      text: "到 github 上进行修改",
-    },
-    lastUpdatedText: "Updated Date",
-    docFooter: {
-      prev: "Pagina prior",
-      next: "Proxima pagina",
-    },
-    outline: [2, 3],
+    sidebar,
+    outline: true,
+    // editLink: {
+    //   pattern:
+    //     "https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path",
+    //   text: "到 github 上进行修改",
+    // },
+    // lastUpdatedText: "Updated Date",
+    // docFooter: {
+    //   prev: "Pagina prior",
+    //   next: "Proxima pagina",
+    // },
+    // outline: [2, 3],
   },
 });
 
