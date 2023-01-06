@@ -96,7 +96,7 @@ export function usePandoraView() {
         type: pandoraParams.type,
         page_hash: v?.replace('#', '')
       })
-    }, 5000)
+    }, 3000)
   })
 
   onMounted(async () => {

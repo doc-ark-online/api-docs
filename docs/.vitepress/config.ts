@@ -46,6 +46,22 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   description: '口袋方舟 编辑器的 Api 文档',
   // base: "/api-docs/",
   outDir: '../dist',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon_kd.ico' }],
+    [
+      'script',
+      {},
+      `
+    var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5629eb7e7272f7af14f1b8ef288c5f57";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+    `
+    ]
+  ],
   themeConfig: {
     algolia: {
       appId: 'I2PHYUBLCN',
@@ -55,20 +71,35 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     siteTitle: 'API',
     nav: [
       {
+        text: '官方教程',
+        link: 'https://meta.feishu.cn/wiki/wikcnmY0MQweLdbnlywkJJiDucd'
+      },
+      {
+        text: '产品手册',
+        link: 'https://meta.feishu.cn/wiki/wikcnmFHMSugP9ozHw5PAkcEwYd'
+      },
+      {
+        text: '论坛',
+        link: 'https://forums.ark.online/#/'
+      },
+      {
         text: '020 版本',
         items: [
           { text: '021 预发', link: '/item-1' },
           { text: '019 版本', link: '/item-2' },
           { text: '018 版本', link: '/item-3' }
         ]
-      },
-      {
-        text: '语言',
-        items: [
-          { text: '中文', link: '/item-1' },
-          { text: '英文', link: '/item-2' }
-        ]
       }
+      // {
+      //   text: '语言',
+      //   items: [
+      //     { text: '中文', link: '/item-1' },
+      //     { text: '英文', link: '/item-2' }
+      //   ]
+      // }
+    ],
+    socialLinks: [
+      { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' }
     ],
     sidebar,
     outline: [2, 3],

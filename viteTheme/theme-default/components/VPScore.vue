@@ -3,7 +3,7 @@
     <span
       :style="{
         color: status === '赞' ? 'var(--vp-c-brand)' : '#676D77',
-        cursor: status ? 'not-allowed' : 'pointer'
+        cursor: 'pointer'
       }"
       @click="praiseHandler"
       ><VPIconPraise></VPIconPraise
@@ -11,8 +11,8 @@
     <span
       @click="treadHandler"
       :style="{
-        color: status === '踩' ? 'val(--vp-c-brand)' : '#676D77',
-        cursor: status ? 'not-allowed' : 'pointer'
+        color: status === '踩' ? 'var(--vp-c-brand)' : '#676D77',
+        cursor: 'pointer'
       }"
       ><VPIconTread></VPIconTread
     ></span>
@@ -30,25 +30,23 @@ const pandoraParams = usePandoraParams()
 const status = ref<string>()
 
 function treadHandler() {
-  if (!status.value) {
-    status.value = '踩'
-    pandora.send('thumbs_up_click_api', {
-      button: status.value,
-      name: pandoraParams.name,
-      type: pandoraParams.type,
-      title: props.text
-    })
-  }
+  if (status.value === '踩') return
+  status.value = '踩'
+  pandora.send('thumbs_up_click_api', {
+    button: status.value,
+    name: pandoraParams.name,
+    type: pandoraParams.type,
+    title: props.text
+  })
 }
 function praiseHandler() {
-  if (!status.value) {
-    status.value = '赞'
-    pandora.send('thumbs_up_click_api', {
-      button: status.value,
-      name: pandoraParams.name,
-      type: pandoraParams.type,
-      title: props.text
-    })
-  }
+  if (status.value === '赞') return
+  status.value = '赞'
+  pandora.send('thumbs_up_click_api', {
+    button: status.value,
+    name: pandoraParams.name,
+    type: pandoraParams.type,
+    title: props.text
+  })
 }
 </script>

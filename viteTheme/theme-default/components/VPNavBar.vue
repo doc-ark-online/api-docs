@@ -4,7 +4,7 @@ import VPNavBarTitle from './VPNavBarTitle.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
 import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarTranslations from './VPNavBarTranslations.vue'
-import VPNavBarAppearance from './VPNavBarAppearance.vue'
+// import VPNavBarAppearance from './VPNavBarAppearance.vue'
 import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
 import VPNavBarExtra from './VPNavBarExtra.vue'
 import VPNavBarHamburger from './VPNavBarHamburger.vue'
@@ -21,11 +21,15 @@ const { hasSidebar } = useSidebar()
 </script>
 
 <template>
-  <div class="VPNavBar" :class="{ 'has-sidebar' : hasSidebar }">
+  <div class="VPNavBar" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <VPNavBarTitle>
-        <template #nav-bar-title-before><slot name="nav-bar-title-before" /></template>
-        <template #nav-bar-title-after><slot name="nav-bar-title-after" /></template>
+        <template #nav-bar-title-before
+          ><slot name="nav-bar-title-before"
+        /></template>
+        <template #nav-bar-title-after
+          ><slot name="nav-bar-title-after"
+        /></template>
       </VPNavBarTitle>
 
       <div class="content">
@@ -33,7 +37,7 @@ const { hasSidebar } = useSidebar()
         <VPNavBarSearch class="search" />
         <VPNavBarMenu class="menu" />
         <VPNavBarTranslations class="translations" />
-        <VPNavBarAppearance class="appearance" />
+        <!-- <VPNavBarAppearance class="appearance" /> -->
         <VPNavBarSocialLinks class="social-links" />
         <VPNavBarExtra class="extra" />
         <slot name="nav-bar-content-after" />
@@ -116,7 +120,7 @@ const { hasSidebar } = useSidebar()
   width: 1px;
   height: 24px;
   background-color: var(--vp-c-divider-light);
-  content: "";
+  content: '';
 }
 
 .menu + .appearance::before,
