@@ -1,39 +1,39 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
-import { resolveHeaders, useActiveAnchor } from "../composables/outline";
-import { computed, inject, ref } from "vue";
-import { useConfig } from "../composables/config";
-import { Config } from "../config";
+import { useData } from 'vitepress'
+import { resolveHeaders, useActiveAnchor } from '../composables/outline'
+import { computed, inject, ref } from 'vue'
+import { useConfig } from '../composables/config'
+import { Config } from '../config'
 
-const { page, frontmatter, theme } = useData();
-const { config } = useConfig();
-const container = ref();
-const marker = ref();
-useActiveAnchor(container, marker);
+const { page, frontmatter, theme } = useData()
+const { config } = useConfig()
+const container = ref()
+const marker = ref()
+useActiveAnchor(container, marker)
 
-const filterHeaders = inject("filter-headers", null) as any;
+const filterHeaders = inject('filter-headers', null) as any
 const filteredHeaders = computed(() => {
-  return resolveHeaders(page.value.headers, filterHeaders);
-});
+  return resolveHeaders(page.value.headers, filterHeaders)
+})
 
-const pageOutline = computed<Config["outline"]>(() => {
-  return frontmatter.value.outline ?? theme.value.outline;
-});
+const pageOutline = computed<Config['outline']>(() => {
+  return frontmatter.value.outline ?? theme.value.outline
+})
 
 const handleClick = ({ target: el }: Event) => {
-  const id = "#" + (el as HTMLAnchorElement).href!.split("#")[1];
-  const heading = document.querySelector(id) as HTMLAnchorElement;
-  heading?.focus();
-};
+  const id = '#' + (el as HTMLAnchorElement).href!.split('#')[1]
+  const heading = document.querySelector(id) as HTMLAnchorElement
+  heading?.focus()
+}
 </script>
 
 <template>
   <div class="VPContentDocOutline" ref="container">
     <div class="outline-marker" ref="marker" />
-    <div class="outline-title">{{ config.i18n?.toc ?? "On this page" }}</div>
+    <div class="outline-title">{{ config.i18n?.toc ?? 'On this page' }}</div>
     <nav aria-labelledby="doc-outline-aria-label">
       <span id="doc-outline-aria-label" class="visually-hidden">{{
-        config.i18n?.ariaToC ?? "Table of Contents for current page"
+        config.i18n?.ariaToC ?? 'Table of Contents for current page'
       }}</span>
       <ul class="root">
         <li

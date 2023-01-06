@@ -20,3 +20,7 @@ declare module '@theme/index' {
   const theme: Theme
   export default theme
 }
+
+interface Window {
+  _API_HOST: () => {}
+}
