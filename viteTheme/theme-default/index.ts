@@ -10,6 +10,7 @@ import './styles/components/vp-sponsor.css'
 
 import { Theme } from 'vitepress'
 import VPBadge from './components/VPBadge.vue'
+import VPScore from './components/VPScore.vue'
 import Layout from './Layout.vue'
 import NotFound from './NotFound.vue'
 
@@ -27,6 +28,7 @@ const theme: Theme = {
   NotFound,
   enhanceApp: ({ app }) => {
     app.component('Badge', VPBadge)
+    app.component('Score', VPScore)
   }
 }
 

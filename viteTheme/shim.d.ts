@@ -24,3 +24,7 @@ declare module '@theme/index' {
 interface Window {
   _API_HOST: () => {}
 }
+
+interface History {
+  custorReplaceState?: typeof history.replaceState
+}

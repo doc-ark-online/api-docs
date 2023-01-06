@@ -1,16 +1,33 @@
 <script setup lang="ts">
-import { useRoute } from 'vitepress'
+import { useEditLink } from '../composables/edit-link'
+import { useData, useRoute } from 'vitepress'
 import { computed, provide, ref } from 'vue'
 import { useSidebar } from '../composables/sidebar.js'
 import VPDocAside from './VPDocAside.vue'
 import VPDocFooter from './VPDocFooter.vue'
+import VPLink from './VPLink.vue'
+import VPIconEdit from './icons/VPIconEdit.vue'
+import { pandora, usePandoraParams } from '../composables/pandora-view'
 
+const { theme, frontmatter } = useData()
+const pandoraParams = usePandoraParams()
 const route = useRoute()
 const { hasSidebar, hasAside } = useSidebar()
+const editLink = useEditLink()
+
+const hasEditLink = computed(() => {
+  return theme.value.editLink && frontmatter.value.editLink !== false
+})
 
 const pageName = computed(() =>
   route.path.replace(/[./]+/g, '_').replace(/_html$/, '')
 )
+
+function githubHandler() {
+  pandora.send('github_click_api', {
+    ...pandoraParams
+  })
+}
 
 const onContentUpdated = ref()
 provide('onContentUpdated', onContentUpdated)
@@ -29,10 +46,18 @@ provide('onContentUpdated', onContentUpdated)
             <VPDocAside>
               <template #aside-top><slot name="aside-top" /></template>
               <template #aside-bottom><slot name="aside-bottom" /></template>
-              <template #aside-outline-before><slot name="aside-outline-before" /></template>
-              <template #aside-outline-after><slot name="aside-outline-after" /></template>
-              <template #aside-ads-before><slot name="aside-ads-before" /></template>
-              <template #aside-ads-after><slot name="aside-ads-after" /></template>
+              <template #aside-outline-before
+                ><slot name="aside-outline-before"
+              /></template>
+              <template #aside-outline-after
+                ><slot name="aside-outline-after"
+              /></template>
+              <template #aside-ads-before
+                ><slot name="aside-ads-before"
+              /></template>
+              <template #aside-ads-after
+                ><slot name="aside-ads-after"
+              /></template>
             </VPDocAside>
           </div>
         </div>
@@ -41,8 +66,23 @@ provide('onContentUpdated', onContentUpdated)
       <div class="content">
         <div class="content-container">
           <slot name="doc-before" />
+          <div v-if="hasEditLink" class="edit-link">
+            <VPLink
+              @click="githubHandler"
+              class="edit-link-button"
+              :href="editLink.url"
+              :no-icon="true"
+            >
+              <VPIconEdit class="edit-link-icon" />
+              {{ editLink.text }}
+            </VPLink>
+          </div>
           <main class="main">
-            <Content class="vp-doc" :class="pageName" :onContentUpdated="onContentUpdated" />
+            <Content
+              class="vp-doc"
+              :class="pageName"
+              :onContentUpdated="onContentUpdated"
+            />
           </main>
           <slot name="doc-footer-before" />
           <VPDocFooter />
@@ -54,6 +94,33 @@ provide('onContentUpdated', onContentUpdated)
 </template>
 
 <style scoped>
+.edit-link {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+.edit-link-button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-brand);
+  transition: color 0.25s;
+}
+
+.edit-link-button:hover {
+  color: var(--vp-c-brand-dark);
+}
+
+.edit-link-icon {
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
 .VPDoc {
   padding: 32px 24px 96px;
   width: 100%;
@@ -120,8 +187,13 @@ provide('onContentUpdated', onContentUpdated)
 .aside-container {
   position: sticky;
   top: 0;
-  margin-top: calc((var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px)) * -1 - 32px);
-  padding-top: calc(var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px);
+  margin-top: calc(
+    (var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px)) * -1 -
+      32px
+  );
+  padding-top: calc(
+    var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px
+  );
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -144,7 +216,10 @@ provide('onContentUpdated', onContentUpdated)
 .aside-content {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - (var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px));
+  min-height: calc(
+    100vh -
+      (var(--vp-nav-height-desktop) + var(--vp-layout-top-height, 0px) + 32px)
+  );
   padding-bottom: 32px;
 }
 

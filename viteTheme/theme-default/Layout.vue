@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, provide, ref, watch } from 'vue'
+import { provide, watch } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { useSidebar, useCloseSidebarOnEscape } from './composables/sidebar.js'
 import VPSkipLink from './components/VPSkipLink.vue'
@@ -9,10 +9,8 @@ import VPLocalNav from './components/VPLocalNav.vue'
 import VPSidebar from './components/VPSidebar.vue'
 import VPContent from './components/VPContent.vue'
 import VPFooter from './components/VPFooter.vue'
-import { PandoraSDKInterface } from 'metaapp-pandora-sdk'
-import { detect } from 'detect-browser'
-const browser = detect()
-const Pandora = ref<PandoraSDKInterface>()
+import { usePandoraView } from './composables/pandora-view'
+
 const {
   isOpen: isSidebarOpen,
   open: openSidebar,
@@ -29,40 +27,10 @@ watch(
 )
 
 useCloseSidebarOnEscape(isSidebarOpen, closeSidebar)
-
+usePandoraView()
 provide('close-sidebar', closeSidebar)
 
-provide('Pandora', Pandora)
-
 const { frontmatter } = useData()
-
-onMounted(async () => {
-  ;(window as any)._API_HOST = () => {}
-  Pandora.value = (await import(
-    'metaapp-pandora-sdk'
-  )) as unknown as PandoraSDKInterface
-
-  Pandora.value.send(
-    'config',
-    {
-      index_type: 'wl',
-      selfpackagename: 'com.meta.xx',
-      send_interval: 100,
-      debug: true,
-      env: 'test',
-      collectErrors: false,
-      enableBridge: false,
-      browser_type: browser?.name,
-      browser_version: browser?.version,
-      os_type: browser?.os
-    } as any,
-    {
-      appkey: 'xx',
-      zone: 'zh'
-    }
-  )
-  Pandora.value.send('start')
-})
 </script>
 
 <template>

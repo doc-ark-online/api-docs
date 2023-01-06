@@ -38,7 +38,11 @@ function handleClick({ target: el }: Event) {
 </script>
 
 <template>
-  <div class="VPDocAsideOutline" :class="{ 'has-outline': hasOutline }" ref="container">
+  <div
+    class="VPDocAsideOutline"
+    :class="{ 'has-outline': hasOutline }"
+    ref="container"
+  >
     <div class="content">
       <div class="outline-marker" ref="marker" />
 
@@ -50,7 +54,11 @@ function handleClick({ target: el }: Event) {
         <span class="visually-hidden" id="doc-outline-aria-label">
           Table of Contents for current page
         </span>
-        <VPDocAsideOutlineItem :headers="headers" :root="true" :onClick="handleClick" />
+        <VPDocAsideOutlineItem
+          :headers="headers"
+          :root="true"
+          :onClick="handleClick"
+        />
       </nav>
     </div>
   </div>
@@ -82,7 +90,8 @@ function handleClick({ target: el }: Event) {
   width: 1px;
   height: 18px;
   background-color: var(--vp-c-brand);
-  transition: top 0.25s cubic-bezier(0, 1, 0.5, 1), background-color 0.5s, opacity 0.25s;
+  transition: top 0.25s cubic-bezier(0, 1, 0.5, 1), background-color 0.5s,
+    opacity 0.25s;
 }
 
 .outline-title {

@@ -2,15 +2,11 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import { normalizeLink } from '../support/utils.js'
-import { useEditLink } from '../composables/edit-link.js'
 import { usePrevNext } from '../composables/prev-next.js'
-import VPIconEdit from './icons/VPIconEdit.vue'
-import VPLink from './VPLink.vue'
 import VPDocFooterLastUpdated from './VPDocFooterLastUpdated.vue'
 
 const { theme, page, frontmatter } = useData()
 
-const editLink = useEditLink()
 const control = usePrevNext()
 
 const hasEditLink = computed(() => {
@@ -20,19 +16,24 @@ const hasLastUpdated = computed(() => {
   return page.value.lastUpdated && frontmatter.value.lastUpdated !== false
 })
 const showFooter = computed(() => {
-  return hasEditLink.value || hasLastUpdated.value || control.value.prev || control.value.next
+  return (
+    hasEditLink.value ||
+    hasLastUpdated.value ||
+    control.value.prev ||
+    control.value.next
+  )
 })
 </script>
 
 <template>
   <footer v-if="showFooter" class="VPDocFooter">
     <div v-if="hasEditLink || hasLastUpdated" class="edit-info">
-      <div v-if="hasEditLink" class="edit-link">
+      <!-- <div v-if="hasEditLink" class="edit-link">
         <VPLink class="edit-link-button" :href="editLink.url" :no-icon="true">
           <VPIconEdit class="edit-link-icon" />
           {{ editLink.text }}
         </VPLink>
-      </div>
+      </div> -->
 
       <div v-if="hasLastUpdated" class="last-updated">
         <VPDocFooterLastUpdated />
@@ -41,14 +42,28 @@ const showFooter = computed(() => {
 
     <div v-if="control.prev || control.next" class="prev-next">
       <div class="pager">
-        <a v-if="control.prev" class="pager-link prev" :href="normalizeLink(control.prev.link)">
-          <span class="desc" v-html="theme.docFooter?.prev ?? 'Previous page'"></span>
+        <a
+          v-if="control.prev"
+          class="pager-link prev"
+          :href="normalizeLink(control.prev.link)"
+        >
+          <span
+            class="desc"
+            v-html="theme.docFooter?.prev ?? 'Previous page'"
+          ></span>
           <span class="title" v-html="control.prev.text"></span>
         </a>
       </div>
       <div class="pager" :class="{ 'has-prev': control.prev }">
-        <a v-if="control.next" class="pager-link next" :href="normalizeLink(control.next.link)">
-          <span class="desc" v-html="theme.docFooter?.next ?? 'Next page'"></span>
+        <a
+          v-if="control.next"
+          class="pager-link next"
+          :href="normalizeLink(control.next.link)"
+        >
+          <span
+            class="desc"
+            v-html="theme.docFooter?.next ?? 'Next page'"
+          ></span>
           <span class="title" v-html="control.next.text"></span>
         </a>
       </div>
