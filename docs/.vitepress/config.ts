@@ -1,13 +1,12 @@
-import { defineConfig, DefaultTheme } from "vitepress";
-import { pathToSideBar, typeToNamespace } from "../../utils";
-import type { Config as ThemeConfig } from "../../customTheme";
+import type { DefaultTheme } from "../../viteTheme/shared";
+import { typeToNamespace } from "../../utils";
 import { defineConfigWithTheme } from "vitepress";
 
-export const sidebar: ThemeConfig["sidebar"] = [
+export const sidebar: DefaultTheme.Config["sidebar"] = [
   {
     text: "Index",
-    // collapsible: false,
-    // collapsed: false,
+    collapsible: true,
+    // collapsed: true,
     items: [
       { text: "Events", link: "/modules/Events.Events" },
       { text: "Extension", link: "/modules/Extension.Extension" },
@@ -20,9 +19,27 @@ export const sidebar: ThemeConfig["sidebar"] = [
       { text: "Network", link: "/modules/Network.Network" },
     ],
   },
+  ...typeToNamespace(["classes", "enums", "interfaces"]),
+  {
+    text: "Util",
+    collapsible: true,
+    collapsed: true,
+    items: [
+      { text: "AssetUtil", link: "/modules/Util.AssetUtil.md" },
+      { text: "InputUtil", link: "/modules/Util.InputUtil.md" },
+      { text: "LocaleUtil", link: "/modules/Util.LocaleUtil.md" },
+      { text: "MathUtil", link: "/modules/Util.MathUtil.md" },
+      { text: "NFTUtil", link: "/modules/Util.NFTUtil.md" },
+      { text: "StringUtil", link: "/modules/Util.StringUtil.md" },
+      { text: "SystemUtil", link: "/modules/Util.SystemUtil.md" },
+      { text: "TimeUtil", link: "/modules/Util.TimeUtil.md" },
+      { text: "TweenUtil", link: "/modules/Util.TweenUtil.md" },
+      { text: "WindowUtil", link: "/modules/Util.WindowUtil.md" },
+    ],
+  },
 ];
 
-export default defineConfigWithTheme<ThemeConfig>({
+export default defineConfigWithTheme<DefaultTheme.Config>({
   ignoreDeadLinks: true,
   title: "API",
   description: "口袋方舟 编辑器的 Api 文档",
@@ -34,7 +51,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       apiKey: "62ee775311415d26549e0e30fef5aa38",
       indexName: "api-docs_prodigytech",
     },
-    // siteTitle: "API",
+    siteTitle: "API",
     nav: [
       {
         text: "020 版本",
@@ -53,106 +70,16 @@ export default defineConfigWithTheme<ThemeConfig>({
       },
     ],
     sidebar,
-    outline: true,
-    // editLink: {
-    //   pattern:
-    //     "https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path",
-    //   text: "到 github 上进行修改",
-    // },
-    // lastUpdatedText: "Updated Date",
-    // docFooter: {
-    //   prev: "Pagina prior",
-    //   next: "Proxima pagina",
-    // },
-    // outline: [2, 3],
+    outline: [2, 3],
+    editLink: {
+      pattern:
+        "https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path",
+      text: "到 github 上进行修改",
+    },
+    lastUpdatedText: "Updated Date",
+    docFooter: {
+      prev: "Pagina prior",
+      next: "Proxima pagina",
+    },
   },
 });
-
-function otherSidebar() {
-  return [
-    {
-      text: "自动化生成",
-      collapsible: true,
-      collapsed: true,
-      items: [{ text: "enums", link: "/auto/enums" }],
-    },
-    {
-      text: "Common",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        { text: "Delegate", link: "/common/Delegate" },
-        { text: "DelegateInterface", link: "/common/DelegateInterface" },
-        { text: "MulticastDelegate", link: "/common/MulticastDelegate" },
-        {
-          text: "MulticastDelegateInterface",
-          link: "/common/MulticastDelegateInterface",
-        },
-      ],
-    },
-    {
-      text: "Core",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        { text: "Base", link: "/core" },
-        { text: "Game Play", link: "/game-play" },
-        { text: "GameObject", link: "/GameObject" },
-      ],
-    },
-    {
-      text: "DataStorage",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "Events",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "Extension",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "Gameplay",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "Global",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "GoogleAnalytics",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "KeyboardSimulation",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "MathLibrary",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-    {
-      text: "MobileEditor",
-      collapsible: true,
-      collapsed: true,
-      items: [],
-    },
-  ];
-}
