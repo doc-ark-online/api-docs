@@ -163,7 +163,7 @@ this.stanceProxy.stop();
 
 在角色初始化完成后, 可以执行下面的代码, 仅让这个客户端的角色下半身播放一个坐下的姿态
 
-```typescript
+```js
 // 通过动画GUID, 创建姿态对象(别忘了预加载资源)
 let stanceProxy = this.character.loadStance("29741", false); // [!code  focus]
 // 修改姿态的混合模式为下半身(默认是全身)
