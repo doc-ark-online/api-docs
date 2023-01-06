@@ -31,7 +31,7 @@
 
 ### serverCalculateEnable
 
-• `set` **serverCalculateEnable**(`enable`): `void` <Badge type="warning" text="client&server" />
+• `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="client&server" />
 
 **`Description`**
 
@@ -47,9 +47,48 @@
 | :------ | :------ | :------ |
 | `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
 
-#### Returns
 
-`void`
+### serverCalculateEnable
+
+• `set` **serverCalculateEnable**(`enable`): `void` <Badge type="info" text="client&server" />
+
+**`Description`**
+
+同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
+
+::: warning Precautions
+针对处于静默状态的ai调用用于降低暂时不必要的计算带来的性能消耗，如果ai角色需要参与到游戏中请开启
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
+
+
+
+### serverCalculateEnable
+
+• `set` **serverCalculateEnable**(`enable`): `void` <Badge type="info" text="client&server" />
+
+**`Description`**
+
+同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
+
+::: danger Precautions
+针对处于静默状态的ai调用用于降低暂时不必要的计算带来的性能消耗，如果ai角色需要参与到游戏中请开启
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
+
+
+
+
 
 
 ## Methods
