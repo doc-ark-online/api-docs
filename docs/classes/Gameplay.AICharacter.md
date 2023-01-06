@@ -31,7 +31,7 @@
 
 ### serverCalculateEnable
 
-• `set` **serverCalculateEnable**(`enable`): `void`
+• `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="client&server" />
 
 **`Description`**
 
