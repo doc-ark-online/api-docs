@@ -144,7 +144,7 @@ stopStance(sync = true): void;
 
 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
-```ts
+```typescript
 通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
 this.stanceProxy = this.character.loadStance("49096", true); // [!code  --]
 修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
@@ -163,16 +163,16 @@ this.stanceProxy.stop();
 
 在角色初始化完成后, 可以执行下面的代码, 仅让这个客户端的角色下半身播放一个坐下的姿态
 
-```ts
+```typescript
 // 通过动画GUID, 创建姿态对象(别忘了预加载资源)
-let stanceProxy = this.character.loadStance("29741", false);
+let stanceProxy = this.character.loadStance("29741", false); // [!code  focus]
 // 修改姿态的混合模式为下半身(默认是全身)
 stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 // 播放这个姿态
 stanceProxy.play();
 ```
 
-```ts
+```typescript
 export default {
   data () {
     return {
