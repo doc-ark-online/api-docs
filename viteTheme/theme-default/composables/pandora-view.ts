@@ -61,7 +61,7 @@ export const pandora = {
 export function usePandoraParams() {
   const { page } = useData()
   const pandoraParams = computed(() => {
-    const [name, type] = page.value.relativePath.replace('.md', '').split('/')
+    const [type, name] = page.value.relativePath.replace('.md', '').split('/')
     return {
       name,
       type
