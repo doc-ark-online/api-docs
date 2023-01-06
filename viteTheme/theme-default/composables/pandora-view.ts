@@ -1,7 +1,7 @@
 import { PandoraSDKInterface } from 'metaapp-pandora-sdk'
 import { onMounted, ref, watch, provide, computed } from 'vue'
 import { detect } from 'detect-browser'
-import { useData, useRoute } from 'vitepress'
+import { useData, useRoute, inBrowser } from 'vitepress'
 const browser = detect()
 
 let initPandora: undefined | PandoraSDKInterface
@@ -41,7 +41,9 @@ async function loadPandora() {
   }
 }
 
-loadPandora()
+if (inBrowser) {
+  loadPandora()
+}
 
 export const pandora = {
   send: (key: string, obj: Record<string, any>) => {
