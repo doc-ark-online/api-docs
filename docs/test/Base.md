@@ -85,7 +85,7 @@ blendMode: Gameplay.StanceBlendMode;
 /**
  * @description 姿态混合模式
  */
-enum StanceBlendMode {
+enum StanceBlendMode { // [!code  focus]
   /** 不指定 */
   None,
   /** 只混合上半身 */
@@ -109,7 +109,7 @@ enum StanceBlendMode {
  * @description 播放姿态
  * @effect 可选同步
  */
-public play(): boolean;
+public play(): boolean; 
 ```
 
 ```ts
@@ -146,9 +146,9 @@ stopStance(sync = true): void;
 
 ```ts
 // 通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
-this.stanceProxy = this.character.loadStance("49096", true); // [!code  focus]
+this.stanceProxy = this.character.loadStance("49096", true); // [!code  --]
 // 修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
-this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;
+this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;// [!code  ++]
 // 播放这个姿态
 this.stanceProxy.play();
 ```
