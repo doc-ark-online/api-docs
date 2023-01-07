@@ -9,7 +9,14 @@
 ## Hierarchy
 
 - [`CharacterBase`](Gameplay.CharacterBase.md)
-- 
+  ↳ **`AICharacter`**
+  
+
+## Table of contents
+
+| Properties |
+| :-----|
+
 ::: details 点击查看继承于CharacterBase
 | Properties |
 | :-----|
@@ -21,15 +28,6 @@
 | **[onTextureChanged](Gameplay.CharacterBase.md#ontexturechanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色贴图切换成功广播|
 | **[player](Gameplay.CharacterBase.md#player)**: [`Player`](Gameplay.Player.md) <br> 玩家对象|
 :::
-
-
-  ↳ **`AICharacter`**
-  
-
-## Table of contents
-
-| Properties |
-| :-----|
 
 | Accessors |
 | :-----|
