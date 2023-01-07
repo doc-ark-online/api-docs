@@ -10,7 +10,6 @@
 
 - [`CharacterBase`](Gameplay.CharacterBase.md)
 
- [`Gameplay跳转`](Gameplay.Gameplay.md)
   ↳ **`AICharacter`**
   
 
@@ -19,7 +18,7 @@
 | Properties |
 | :-----|
 
-::: details 点击查看继承于[`CharacterBase`](Gameplay.CharacterBase.md)
+::: details 点击查看继承于CharacterBase
 | Properties |
 | :-----|
 | **[isV1](Gameplay.CharacterBase.md#isv1)**: `any` <br> 判断当前角色是否是V1版本|
@@ -35,7 +34,7 @@
 | :-----|
 | **[serverCalculateEnable](Gameplay.AICharacter.md#servercalculateenable)**(`boolean`): `void` <br> 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算|
 
-::: details [`CharacterBase`](Gameplay.CharacterBase.md)
+::: details 点击查看继承于CharacterBase
 | Accessors |
 | :-----|
 | **[airControl](Gameplay.CharacterBase.md#aircontrol)**(): `number` <br> 角色在空中时, 控制水平方向移动的灵活度|
@@ -102,7 +101,7 @@
 | :-----|
 | **[setServerMovementEnable](Gameplay.AICharacter.md#setservermovementenable)**(`boolean`): `void` <br> 开关角色的移动计算|
 
-::: details [`CharacterBase`](Gameplay.CharacterBase.md)
+::: details 点击查看继承于CharacterBase
 | Methods |
 | :-----|
 | **[addImpulse](Gameplay.CharacterBase.md#addimpulse)**([`Vector`](Type.Vector.md), `boolean`): `void` <br> 添加冲量|
