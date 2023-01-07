@@ -9,12 +9,8 @@
 ## Hierarchy
 
 - [`CharacterBase`](Gameplay.CharacterBase.md)
-
-  ↳ **`AICharacter`**
-
-## Table of contents
-
-::: details 点击查看CharacterBase
+- 
+::: details 点击查看继承于CharacterBase
 | Properties |
 | :-----|
 | **[isV1](Gameplay.CharacterBase.md#isv1)**: `any` <br> 判断当前角色是否是V1版本|
@@ -26,6 +22,11 @@
 | **[player](Gameplay.CharacterBase.md#player)**: [`Player`](Gameplay.Player.md) <br> 玩家对象|
 :::
 
+
+  ↳ **`AICharacter`**
+  
+
+## Table of contents
 
 | Properties |
 | :-----|
