@@ -14,7 +14,7 @@
 
 ## Table of contents
 
-::: 查看CharacterBase
+::: details 点击查看CharacterBase
 | Properties |
 | :-----|
 | **[isV1](Gameplay.CharacterBase.md#isv1)**: `any` <br> 判断当前角色是否是V1版本|
