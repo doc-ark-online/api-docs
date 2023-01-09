@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterAnimation
 
-# CharacterAnimation <Badge type="tip" text="Class" />
+# CharacterAnimation <Badge type="tip" text="Class" /> <Score text="CharacterAnimation" />
 
 extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 
@@ -8,7 +8,7 @@ extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 为了方便使用与结构统一, 将姿态也抽象出一个对象, 使用方式和动画对象类似.
 </pre>
 
-## Table of contents <Score text="Table of contents" />
+## Table of contents
 
 | Properties                                                                                                                                                                                                                  |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,7 +62,7 @@ extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 loadStance(guid: string, sync = true): Gameplay.SubStance;
 ```
 
-### SubStance.blendMode
+### SubStance.blendMode <Score text="SubStance.blendMode" />
 
 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).
 
@@ -85,7 +85,7 @@ blendMode: Gameplay.StanceBlendMode;
 /**
  * @description 姿态混合模式
  */
-enum StanceBlendMode {
+enum StanceBlendMode { // [!code  focus]
   /** 不指定 */
   None,
   /** 只混合上半身 */
@@ -97,7 +97,7 @@ enum StanceBlendMode {
 }
 ```
 
-### SubStance.play/stop
+### SubStance.play/stop <Score text="SubStance.play/stop" />
 
 播放 / 停止这个姿态对象, 并返回执行结果.
 
@@ -109,7 +109,7 @@ enum StanceBlendMode {
  * @description 播放姿态
  * @effect 可选同步
  */
-public play(): boolean;
+public play(): boolean; 
 ```
 
 ```ts
@@ -120,7 +120,7 @@ public play(): boolean;
 public stop(): boolean;
 ```
 
-### Character.stopStance
+### Character.stopStance <Score text="Character.stopStance" />
 
 停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态.
 **sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是 true, 所以对**单端对象**操作时需要把它置为**false**.
@@ -144,12 +144,12 @@ stopStance(sync = true): void;
 
 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态
 
-```ts
-// 通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
-this.stanceProxy = this.character.loadStance("49096", true); // [!code  focus]
-// 修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
-this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;
-// 播放这个姿态
+```typescript
+通过预制姿态GUID, 创建姿态对象(别忘了预加载资源)
+this.stanceProxy = this.character.loadStance("49096", true); // [!code  --]
+修改姿态的混合模式为全身(默认是不指定, 如果你不修改它, 它会按照资源本身的blendMode参数进行播放, 即只在上半身播放)
+this.stanceProxy.blendMode = Gameplay.StanceBlendMode.WholeBody;// [!code  ++]
+播放这个姿态
 this.stanceProxy.play();
 ```
 
@@ -163,13 +163,23 @@ this.stanceProxy.stop();
 
 在角色初始化完成后, 可以执行下面的代码, 仅让这个客户端的角色下半身播放一个坐下的姿态
 
-```ts
+```js
 // 通过动画GUID, 创建姿态对象(别忘了预加载资源)
-let stanceProxy = this.character.loadStance("29741", false);
+let stanceProxy = this.character.loadStance("29741", false); // [!code  focus]
 // 修改姿态的混合模式为下半身(默认是全身)
 stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 // 播放这个姿态
 stanceProxy.play();
+```
+
+```typescript
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code  focus]
+    }
+  }
+}
 ```
 
 当你想停止它时, 可以执行下面的代码
