@@ -19,19 +19,22 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
 import { pandora, usePandoraParams } from '../composables/pandora-view'
+import { useScoreStorage } from '../composables/localstorage'
 import VPIconPraise from './icons/VPIconPraise.vue'
 import VPIconTread from './icons/VPIconTread.vue'
 const props = defineProps<{
   text: string
 }>()
 const pandoraParams = usePandoraParams()
-const status = ref<string>()
-
+const key = computed(() => {
+  return `${pandoraParams.name}-${pandoraParams.type}-${props.text}`
+})
+const { status, statusChange } = useScoreStorage(key)
 function treadHandler() {
   if (status.value === '踩') return
-  status.value = '踩'
+  statusChange('踩')
   pandora.send('thumbs_up_click_api', {
     button: status.value,
     name: pandoraParams.name,
@@ -41,7 +44,7 @@ function treadHandler() {
 }
 function praiseHandler() {
   if (status.value === '赞') return
-  status.value = '赞'
+  statusChange('赞')
   pandora.send('thumbs_up_click_api', {
     button: status.value,
     name: pandoraParams.name,
