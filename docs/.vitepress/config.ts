@@ -52,17 +52,18 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       'script',
       {},
       `
-    var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5629eb7e7272f7af14f1b8ef288c5f57";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+            var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5629eb7e7272f7af14f1b8ef288c5f57";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
     `
     ]
   ],
   themeConfig: {
+    logo: '/logo.png',
     algolia: {
       appId: 'I2PHYUBLCN',
       apiKey: '62ee775311415d26549e0e30fef5aa38',
