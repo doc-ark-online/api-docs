@@ -1,3 +1,4 @@
+
 # Events <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
