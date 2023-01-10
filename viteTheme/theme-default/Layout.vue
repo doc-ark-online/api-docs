@@ -19,12 +19,6 @@ const {
 
 const route = useRoute()
 watch(() => route.path, closeSidebar)
-watch(
-  () => route.path,
-  (v, o) => {
-    console.log(v, o)
-  }
-)
 
 useCloseSidebarOnEscape(isSidebarOpen, closeSidebar)
 usePandoraView()
