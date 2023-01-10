@@ -1,3 +1,5 @@
+Events
+
 # Events <Badge type="tip" text="Namespace" /> <Score text="Events" />
 
 ## Table of contents
