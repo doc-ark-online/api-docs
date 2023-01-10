@@ -3,16 +3,16 @@ import { typeToNamespace, pathToSideBar } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
-  ...pathToSideBar(['test']),
   {
     text: 'Index',
-    collapsible: true,
-    // collapsed: true,
+    collapsible: false,
+    // collapsed: false,
     items: [
       { text: 'Events', link: '/modules/Events.Events' },
       { text: 'Extension', link: '/modules/Extension.Extension' },
       { text: 'Gameplay', link: '/modules/Gameplay.Gameplay' },
       { text: 'MobileEditor', link: '/modules/MobileEditor.MobileEditor' },
+      { text: ' Service', link: '/modules/Service.Service' },
       { text: 'Type', link: '/modules/Type.Type' },
       { text: 'UI', link: '/modules/UI.UI' },
       { text: 'Util', link: '/modules/Util.Util' },
