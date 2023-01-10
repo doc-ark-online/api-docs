@@ -4,7 +4,7 @@ import VPNavBarTitle from './VPNavBarTitle.vue'
 import VPNavBarSearch from './VPNavBarSearch.vue'
 import VPNavBarMenu from './VPNavBarMenu.vue'
 import VPNavBarTranslations from './VPNavBarTranslations.vue'
-// import VPNavBarAppearance from './VPNavBarAppearance.vue'
+import VPNavBarAppearance from './VPNavBarAppearance.vue'
 import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
 import VPNavBarExtra from './VPNavBarExtra.vue'
 import VPNavBarHamburger from './VPNavBarHamburger.vue'
@@ -37,7 +37,7 @@ const { hasSidebar } = useSidebar()
         <VPNavBarSearch class="search" />
         <VPNavBarMenu class="menu" />
         <VPNavBarTranslations class="translations" />
-        <!-- <VPNavBarAppearance class="appearance" /> -->
+        <VPNavBarAppearance class="appearance" />
         <VPNavBarSocialLinks class="social-links" />
         <VPNavBarExtra class="extra" />
         <slot name="nav-bar-content-after" />
