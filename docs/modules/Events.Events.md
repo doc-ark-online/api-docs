@@ -1,6 +1,6 @@
 Events
 
-# Events <Badge type="tip" text="Namespace" />
+# Events <Badge type="tip" text="Namespace" /> <Score text="Events" />
 
 ## Table of contents
 
@@ -31,21 +31,20 @@ Events
 
 ## Functions
 
-### addClientListener
+### addClientListener <Score text="addClientListener" /> 
 
-▸ **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 服务器监听客户端发来的事件
 
-**`Effect`**
 
-只在服务端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 应该在服务器端的逻辑里面使用
+
+:::
 
 #### Parameters
 
@@ -62,7 +61,7 @@ Events
 
 ___
 
-### addExitListener
+### addExitListener <Score text="addExitListener" /> 
 
 ▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -70,19 +69,18 @@ ___
 
 添加退出游戏时执行的回调函数
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233悬浮球退出和PIE关闭窗口时生效。
+
+:::
 
 **`Example`**
 
 使用示例:调用方法
 ```ts
-let listener = Events.addExitListener(this.testFunction);
+let listener = Events.addExitListener(this.testFunction); <Badge type="tip" text="other" />
 public testFunction() {
 }
 // 移除监听
@@ -103,7 +101,7 @@ listener.disconnect();
 
 ___
 
-### addFocusListener
+### addFocusListener <Score text="addFocusListener" /> 
 
 ▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -111,19 +109,18 @@ ___
 
 添加窗口聚焦时执行的回调函数
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在PIE模式下生效。
+
+:::
 
 **`Example`**
 
 使用示例:调用方法
 ```ts
-let listener = Events.addFocusListener(this.testFunction);
+let listener = Events.addFocusListener(this.testFunction); <Badge type="tip" text="other" />
 public testFunction() {
 }
 // 移除监听
@@ -144,17 +141,14 @@ listener.disconnect();
 
 ___
 
-### addLocalListener
+### addLocalListener <Score text="addLocalListener" /> 
 
-▸ **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 监听本地事件
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -171,7 +165,7 @@ ___
 
 ___
 
-### addOnPauseListener
+### addOnPauseListener <Score text="addOnPauseListener" /> 
 
 ▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -179,19 +173,19 @@ ___
 
 添加OnPause开始时执行的回调函数
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在Android和IOS生效。触发时机有切入后台、息屏和播广告。
+             部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
+
+:::
 
 **`Example`**
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnPauseListener(this.testFunction);
+let listener = Events.addOnPauseListener(this.testFunction); <Badge type="tip" text="other" />
 public testFunction() {
 }
 // 移除监听
@@ -212,7 +206,7 @@ listener.disconnect();
 
 ___
 
-### addOnResumeListener
+### addOnResumeListener <Score text="addOnResumeListener" /> 
 
 ▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -220,19 +214,19 @@ ___
 
 添加OnPause结束时执行的回调函数
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在Android和IOS生效。触发时机有切入后台、息屏和播广告后回到游戏。
+             部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
+
+:::
 
 **`Example`**
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnResumeListener(this.testFunction);
+let listener = Events.addOnResumeListener(this.testFunction); <Badge type="tip" text="other" />
 public testFunction(leaveDuration: number) {
 }
 // 移除监听
@@ -253,17 +247,14 @@ listener.disconnect();
 
 ___
 
-### addPlayerJoinedListener
+### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
 
-▸ **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 监听玩家进入room事件
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -279,17 +270,14 @@ ___
 
 ___
 
-### addPlayerLeftListener
+### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
 
-▸ **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 监听玩家离开room事件
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -305,21 +293,20 @@ ___
 
 ___
 
-### addServerListener
+### addServerListener <Score text="addServerListener" /> 
 
-▸ **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 客户端监听服务器事件
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 应在客户端逻辑里调用
+
+:::
 
 #### Parameters
 
@@ -336,7 +323,7 @@ ___
 
 ___
 
-### addUnfocusedListener
+### addUnfocusedListener <Score text="addUnfocusedListener" /> 
 
 ▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -344,19 +331,18 @@ ___
 
 添加窗口失焦时执行的回调函数
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在PIE模式下生效。
+
+:::
 
 **`Example`**
 
 使用示例:调用方法
 ```ts
-let listener = Events.addUnfocusedListener(this.testFunction);
+let listener = Events.addUnfocusedListener(this.testFunction); <Badge type="tip" text="other" />
 public testFunction() {
 }
 // 移除监听
@@ -377,17 +363,14 @@ listener.disconnect();
 
 ___
 
-### dispatchLocal
+### dispatchLocal <Score text="dispatchLocal" /> 
 
-▸ **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md)
+▸ **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 发送本地事件
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -404,21 +387,20 @@ ___
 
 ___
 
-### dispatchToAllClient
+### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
-▸ **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md)
+▸ **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 服务器发送事件给所有客户端
 
-**`Effect`**
 
-只在服务端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 应在服务器逻辑里调用
+
+:::
 
 #### Parameters
 
@@ -435,21 +417,20 @@ ___
 
 ___
 
-### dispatchToClient
+### dispatchToClient <Score text="dispatchToClient" /> 
 
-▸ **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md)
+▸ **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 服务器发送事件给指定客户端
 
-**`Effect`**
 
-只在服务端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 应在服务器逻辑里调用
+
+:::
 
 #### Parameters
 
@@ -467,21 +448,20 @@ ___
 
 ___
 
-### dispatchToServer
+### dispatchToServer <Score text="dispatchToServer" /> 
 
-▸ **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md)
+▸ **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 客户端发送事件给服务器
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 应在客户端逻辑里面调用
+
+:::
 
 #### Parameters
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
 
-# HumanoidV1 <Badge type="tip" text="Class" />
+# HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
 
 **`Description`**
 
@@ -24,10 +24,29 @@
 | **[hair](Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md) <br> 头发|
 | **[trunk](Gameplay.HumanoidV1.md#trunk)**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md) <br> 身体|
 
+
+::: details 点击查看继承
+| Properties |
+| :-----|
+| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边|
+| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理对象|
+:::
+
+
 | Methods |
 | :-----|
 | **[getWholeBody](Gameplay.HumanoidV1.md#getwholebody)**(): `string` <br> 获取全身模型|
 | **[setWholeBody](Gameplay.HumanoidV1.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型|
+
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.LinearColor.md), `number`): `void` <br> 后处理开关|
+| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关|
+| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关|
+:::
+
 
 **`Description`**
 
@@ -41,7 +60,7 @@
 
 ## Properties
 
-### face
+### face <Score text="face" /> 
 
 • **face**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md)
 
@@ -51,7 +70,7 @@
 
 ___
 
-### hair
+### hair <Score text="hair" /> 
 
 • **hair**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md)
 
@@ -60,7 +79,7 @@ ___
 头发
 
 
-### trunk
+### trunk <Score text="trunk" /> 
 
 • **trunk**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md)
 
@@ -70,15 +89,13 @@ ___
 
 ## Methods
 
-### getWholeBody
+### getWholeBody <Score text="getWholeBody" /> 
 
-▸ **getWholeBody**(): `string`
+▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取全身模型
-
-**`Effect`**
 
 双端
 
@@ -86,26 +103,26 @@ ___
 
 `string`
 
-模型Guid
+模型GUID
 
 #### Implementation of
 
 [IHumanoidV1Part](../interfaces/Gameplay.IHumanoidV1Part.md).[getWholeBody](../interfaces/Gameplay.IHumanoidV1Part.md#getwholebody)
 
 
-### setWholeBody
+### setWholeBody <Score text="setWholeBody" /> 
 
-▸ **setWholeBody**(`guid`, `sync`): `void`
+▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置全身模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则本地设置时异步的
+如果模型GUID没有预加载，则本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -114,12 +131,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

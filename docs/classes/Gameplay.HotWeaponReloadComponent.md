@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
-# HotWeaponReloadComponent <Badge type="tip" text="Class" />
+# HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
 **`Description`**
 
@@ -26,7 +26,7 @@
 
 ## Properties
 
-### onEndReloadClient
+### onEndReloadClient <Score text="onEndReloadClient" /> 
 
 • **onEndReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -36,7 +36,7 @@
 
 ___
 
-### onEndReloadServer
+### onEndReloadServer <Score text="onEndReloadServer" /> 
 
 • **onEndReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -46,7 +46,7 @@ ___
 
 ___
 
-### onStartReloadClient
+### onStartReloadClient <Score text="onStartReloadClient" /> 
 
 • **onStartReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -56,7 +56,7 @@ ___
 
 ___
 
-### onStartReloadServer
+### onStartReloadServer <Score text="onStartReloadServer" /> 
 
 • **onStartReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -66,17 +66,14 @@ ___
 
 ## Accessors
 
-### animationGuid
+### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string`
+• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取绑定的动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -84,39 +81,30 @@ ___
 
 绑定的动画GUID
 
-• `set` **animationGuid**(`guid`): `void`
+• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置动画 GUID
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  需要设置的蒙太奇动画 guid |
+| `GUID` | `string` |  需要设置的蒙太奇动画 GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### reloadDuration
+### reloadDuration <Score text="reloadDuration" /> 
 
-• `get` **reloadDuration**(): `number`
+• `get` **reloadDuration**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取换弹时间
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -124,19 +112,18 @@ ___
 
 是换弹时间
 
-• `set` **reloadDuration**(`time`): `void`
+• `set` **reloadDuration**(`time`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置换弹时间
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -144,23 +131,17 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  新换弹时间 |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### hadAnimationGuid
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-▸ **hadAnimationGuid**(): `boolean`
+▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否有动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

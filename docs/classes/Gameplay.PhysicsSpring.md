@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsSpring
 
-# PhysicsSpring <Badge type="tip" text="Class" />
+# PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 
 **`Description`**
 
@@ -24,20 +24,34 @@
 | **[maxStretchLength](Gameplay.PhysicsSpring.md#maxstretchlength)**(): `number` <br> 获取最大伸缩长度|
 | **[stiffness](Gameplay.PhysicsSpring.md#stiffness)**(): `number` <br> 获取刚度参数|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
+
 ## Accessors
 
-### currentLength
+### currentLength <Score text="currentLength" /> 
 
-• `get` **currentLength**(): `number`
+• `get` **currentLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取弹簧当前长度
-
-**`Effect`**
 
 调用端
 
@@ -49,7 +63,7 @@
 
 ___
 
-### damping
+### damping <Score text="damping" /> 
 
 • `get` **damping**(): `number`
 
@@ -75,21 +89,16 @@ ___
 | :------ | :------ | :------ |
 | `InSpringDamping` | `number` | 阻尼参数 |
 
-#### Returns
-
-`void`
 
 ___
 
-### defaultLength
+### defaultLength <Score text="defaultLength" /> 
 
-• `get` **defaultLength**(): `number`
+• `get` **defaultLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取弹簧静止长度（无拉伸挤压状态长度）
-
-**`Effect`**
 
 调用端
 
@@ -101,7 +110,7 @@ ___
 
 ___
 
-### enable
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -127,12 +136,9 @@ ___
 | :------ | :------ | :------ |
 | `EnableState` | `boolean` | 启用状态 |
 
-#### Returns
-
-`void`
 
 
-### isLengthLimited
+### isLengthLimited <Score text="isLengthLimited" /> 
 
 • `get` **isLengthLimited**(): `boolean`
 
@@ -158,12 +164,9 @@ ___
 | :------ | :------ | :------ |
 | `isLimited` | `boolean` | 限定状态 |
 
-#### Returns
-
-`void`
 
 
-### maxStretchLength
+### maxStretchLength <Score text="maxStretchLength" /> 
 
 • `get` **maxStretchLength**(): `number`
 
@@ -189,12 +192,9 @@ ___
 | :------ | :------ | :------ |
 | `StretchLength` | `number` | 最大伸缩长度 |
 
-#### Returns
-
-`void`
 
 
-### stiffness
+### stiffness <Score text="stiffness" /> 
 
 • `get` **stiffness**(): `number`
 
@@ -220,9 +220,6 @@ ___
 | :------ | :------ | :------ |
 | `InSpringStiffness` | `number` | 刚度参数 |
 
-#### Returns
-
-`void`
 
 
 ## Methods

@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AnalyticsService
 
-# AnalyticsService <Badge type="tip" text="Class" />
+# AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 分析服务
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用instance获取对象
+
+:::
 
 ## Table of contents
 
@@ -22,17 +24,14 @@
 
 ## Methods
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md)
+▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 分析服务全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -42,17 +41,14 @@
 
 ___
 
-### googleEventTracking
+### googleEventTracking <Score text="googleEventTracking" /> 
 
-▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void`
+▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 埋点
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -61,23 +57,17 @@ ___
 | `eventName` | `string` | 埋点名 |
 | `eventParams?` | `Object` | 埋点参数 default:选填 |
 
-#### Returns
-
-`void`
 
 ___
 
-### googleInit
+### googleInit <Score text="googleInit" /> 
 
-▸ `Static` **googleInit**(`mId`): `void`
+▸ `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Initialize Google Analytics client
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -85,6 +75,3 @@ Initialize Google Analytics client
 | :------ | :------ | :------ |
 | `mId` | `string` | Google Analytics measurement ID |
 
-#### Returns
-
-`void`

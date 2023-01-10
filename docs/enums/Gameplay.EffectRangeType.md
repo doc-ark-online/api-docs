@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeType
 
-# EffectRangeType <Badge type="tip" text="Enumeration" />
+# EffectRangeType <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeType" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### ThreeD
+### ThreeD <Score text="ThreeD" /> 
 
 • **ThreeD** = ``1``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### TwoD
+### TwoD <Score text="TwoD" /> 
 
 • **TwoD** = ``0``
 

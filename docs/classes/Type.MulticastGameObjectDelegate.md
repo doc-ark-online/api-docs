@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / MulticastGameObjectDelegate
 
-# MulticastGameObjectDelegate <Badge type="tip" text="Class" />
+# MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
 **`Description`**
 
@@ -16,17 +16,14 @@
 
 ## Methods
 
-### add
+### add <Score text="add" /> 
 
-▸ **add**(`func`): `void`
+▸ **add**(`func`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加回调函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -34,23 +31,17 @@
 | :------ | :------ | :------ |
 | `func` | `GameObjectDelegateFuncType` |  回调函数 default: |
 
-#### Returns
-
-`void`
 
 ___
 
-### broadcast
+### broadcast <Score text="broadcast" /> 
 
-▸ **broadcast**(`obj`): `void`
+▸ **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 触发代理事件
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -58,23 +49,17 @@ ___
 | :------ | :------ | :------ |
 | `obj` | `GameObject` |  触发物体对象 |
 
-#### Returns
-
-`void`
 
 ___
 
-### remove
+### remove <Score text="remove" /> 
 
-▸ **remove**(`func`): `void`
+▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 删除回调函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -82,6 +67,3 @@ ___
 | :------ | :------ | :------ |
 | `func` | `GameObjectDelegateFuncType` |  回调函数 |
 
-#### Returns
-
-`void`

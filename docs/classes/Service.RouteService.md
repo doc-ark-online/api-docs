@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / RouteService
 
-# RouteService <Badge type="tip" text="Class" />
+# RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 游戏管理器
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用getInstance获取对象
+
+:::
 
 ## Table of contents
 
@@ -47,7 +49,7 @@
 
 ## Properties
 
-### onReceiveTeamData
+### onReceiveTeamData <Score text="onReceiveTeamData" /> 
 
 • **onReceiveTeamData**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\>
 
@@ -57,7 +59,7 @@
 
 ___
 
-### onTeamMatchFailure
+### onTeamMatchFailure <Score text="onTeamMatchFailure" /> 
 
 • **onTeamMatchFailure**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\>
 
@@ -67,21 +69,20 @@ ___
 
 ## Accessors
 
-### onViewLayoutSwitched
+### onViewLayoutSwitched <Score text="onViewLayoutSwitched" /> 
 
-• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\>
+• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取角色展示/编辑游戏的显示模式切换的委托
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233内使用时生效
+
+:::
 
 #### Returns
 
@@ -91,21 +92,20 @@ ___
 
 ___
 
-### onViewRefreshed
+### onViewRefreshed <Score text="onViewRefreshed" /> 
 
-• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\>
+• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 注册View刷新的委托
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233内使用时生效
+
+:::
 
 #### Returns
 
@@ -115,17 +115,14 @@ View刷新的委托
 
 ## Methods
 
-### clearTeamCarryingData
+### clearTeamCarryingData <Score text="clearTeamCarryingData" /> 
 
-▸ **clearTeamCarryingData**(`teamId`): `void`
+▸ **clearTeamCarryingData**(`teamId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 删除指定Team在组队跳转时带入游戏的数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -133,49 +130,41 @@ View刷新的委托
 | :------ | :------ | :------ |
 | `teamId` | `string` |  目标teamId |
 
-#### Returns
-
-`void`
 
 ___
 
-### enterDressUpGame
+### enterDressUpGame <Score text="enterDressUpGame" /> 
 
-▸ **enterDressUpGame**(): `void`
+▸ **enterDressUpGame**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 退出当前游戏进程，回到主线程的角色编辑游戏。
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233内使用时生效
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### enterLocalGame
+### enterLocalGame <Score text="enterLocalGame" /> 
 
-▸ **enterLocalGame**(`targetGameId`, `gamePath`): `void`
+▸ **enterLocalGame**(`targetGameId`, `gamePath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 跳转本地游戏(可编辑的UGC工程) ，同进程跳转
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 需要用创建本地工程时所对应模板游戏的gameId
+
+:::
 
 #### Parameters
 
@@ -184,23 +173,17 @@ ___
 | `targetGameId` | `string` |  目标游戏的MWGameId，一般来说，这里会是模板游戏的gameId |
 | `gamePath` | `string` |  本地游戏工程的路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### enterNewGame
+### enterNewGame <Score text="enterNewGame" /> 
 
-▸ **enterNewGame**(`targetGameId`): `void`
+▸ **enterNewGame**(`targetGameId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 跳转到新游戏，同进程跳转
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -208,23 +191,17 @@ ___
 | :------ | :------ | :------ |
 | `targetGameId` | `string` |  要跳转的目标游戏ID，MWGameId |
 
-#### Returns
-
-`void`
 
 ___
 
-### enterNewGameByTeam
+### enterNewGameByTeam <Score text="enterNewGameByTeam" /> 
 
-▸ **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\>
+▸ **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 组队跳游戏，可以携带数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -242,21 +219,20 @@ ___
 
 ___
 
-### enterSquareGame
+### enterSquareGame <Score text="enterSquareGame" /> 
 
-▸ **enterSquareGame**(`squareMGSGameId?`): `void`
+▸ **enterSquareGame**(`squareMGSGameId?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233内使用时生效
+
+:::
 
 #### Parameters
 
@@ -264,23 +240,17 @@ ___
 | :------ | :------ | :------ |
 | `squareMGSGameId?` | `string` |  新的广场游戏GameId，如果为空，则使用各环境默认的广场游戏Id default: null |
 
-#### Returns
-
-`void`
 
 ___
 
-### getTeamCarryingData
+### getTeamCarryingData <Score text="getTeamCarryingData" /> 
 
-▸ **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\>
+▸ **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取指定Team在组队跳转时带入游戏的数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -296,21 +266,20 @@ ___
 
 ___
 
-### isInDressUpGame
+### isInDressUpGame <Score text="isInDressUpGame" /> 
 
-▸ **isInDressUpGame**(): `boolean`
+▸ **isInDressUpGame**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断当前游戏是不是角色展示/编辑游戏
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 在PIE或者服务端调用则固定返回false
+
+:::
 
 #### Returns
 
@@ -320,43 +289,38 @@ true-当前游戏是角色展示/编辑游戏，false-不是
 
 ___
 
-### notifyCharacterLoaded
+### notifyCharacterLoaded <Score text="notifyCharacterLoaded" /> 
 
-▸ **notifyCharacterLoaded**(): `void`
+▸ **notifyCharacterLoaded**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 通知233/Playza角色形象加载完毕
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233/Playza内使用时生效
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### notifyGameLoadingState
+### notifyGameLoadingState <Score text="notifyGameLoadingState" /> 
 
-▸ **notifyGameLoadingState**(`newState`): `void`
+▸ **notifyGameLoadingState**(`newState`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233/Playza内使用时生效
+
+:::
 
 #### Parameters
 
@@ -364,23 +328,17 @@ ___
 | :------ | :------ | :------ |
 | `newState` | `number` |  状态Id。newState = 1 : 游戏加载成功，newState = 2 ：游戏加载失败 |
 
-#### Returns
-
-`void`
 
 ___
 
-### requestGameId
+### requestGameId <Score text="requestGameId" /> 
 
-▸ **requestGameId**(`targetMGSGameId`): `Promise`<`string`\>
+▸ **requestGameId**(`targetMGSGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 用内容库MGSGameId来换取gameId
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -396,17 +354,14 @@ ___
 
 ___
 
-### requestMGSGameId
+### requestMGSGameId <Score text="requestMGSGameId" /> 
 
-▸ **requestMGSGameId**(`targetGameId`): `Promise`<`string`\>
+▸ **requestMGSGameId**(`targetGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 用gameId来换取内容库MGSGameId
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -422,43 +377,38 @@ ___
 
 ___
 
-### requestRefreshView
+### requestRefreshView <Score text="requestRefreshView" /> 
 
-▸ **requestRefreshView**(): `void`
+▸ **requestRefreshView**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 TS请求233刷新View
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233内使用时生效
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### requestSwitchViewLayout
+### requestSwitchViewLayout <Score text="requestSwitchViewLayout" /> 
 
-▸ **requestSwitchViewLayout**(`newState`): `void`
+▸ **requestSwitchViewLayout**(`newState`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 切换角色展示/编辑游戏的显示模式。
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在233/Playza内使用时生效
+
+:::
 
 #### Parameters
 
@@ -466,27 +416,23 @@ ___
 | :------ | :------ | :------ |
 | `newState` | `number` |  新模式。newState = 1 为“角色展示模式”，newState = 2 为“角色编辑模式” |
 
-#### Returns
-
-`void`
 
 ___
 
-### getGameId
+### getGameId <Score text="getGameId" /> 
 
-▸ `Static` **getGameId**(): `string`
+▸ `Static` **getGameId**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取游戏Id
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Returns
 
@@ -496,21 +442,20 @@ GameId
 
 ___
 
-### getGameVersion
+### getGameVersion <Score text="getGameVersion" /> 
 
-▸ `Static` **getGameVersion**(): `string`
+▸ `Static` **getGameVersion**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取游戏版本
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Returns
 
@@ -520,17 +465,14 @@ GameVersion
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`RouteService`](Service.RouteService.md)
+▸ `Static` **getInstance**(): [`RouteService`](Service.RouteService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取游戏管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -540,21 +482,20 @@ ___
 
 ___
 
-### getMGSGameId
+### getMGSGameId <Score text="getMGSGameId" /> 
 
-▸ `Static` **getMGSGameId**(): `string`
+▸ `Static` **getMGSGameId**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取短游戏ID
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Returns
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2
 
-# IHumanoidV2 <Badge type="tip" text="Interface" />
+# IHumanoidV2 <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2" />
 
 **`Description`**
 
@@ -22,50 +22,46 @@
 | **[getGoods](Gameplay.IHumanoidV2.md#getgoods)**(`string`): [`string`, `string`][] <br> 获取插槽文件里面的数据，Array<[string, string]>：Array<[物品资源Id, 插入的插槽名]>|
 | **[getSlotWorldPosition](Gameplay.IHumanoidV2.md#getslotworldposition)**([`SlotType`](../enums/Gameplay.SlotType.md)): [`Vector`](../classes/Type.Vector.md) <br> 获取Slot世界坐标位置,V2物品预览的插槽使用|
 | **[getSomatotype](Gameplay.IHumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <br> 获取当前的主Mesh|
-| **[setAppearanceData](Gameplay.IHumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过Guid加载数据另存为角色数据|
-| **[setSlot](Gameplay.IHumanoidV2.md#setslot)**(`string`, `boolean`): `void` <br> 通过插槽Guid加载数据|
+| **[setAppearanceData](Gameplay.IHumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过GUID加载数据另存为角色数据|
+| **[setSlot](Gameplay.IHumanoidV2.md#setslot)**(`string`, `boolean`): `void` <br> 通过插槽GUID加载数据|
 | **[setSomatotype](Gameplay.IHumanoidV2.md#setsomatotype)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md)): `void` <br> 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)|
 | **[setSuit](Gameplay.IHumanoidV2.md#setsuit)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md), `string`, `string`, `string`, `string`, `string`, `string`, `string`): `void` <br> 加载一套角色数据|
 
 ## Methods
 
-### appearanceSync
+### appearanceSync <Score text="appearanceSync" /> 
 
-▸ **appearanceSync**(): `void`
+▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 把本地角色形象数据同步到多端
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 不要频繁调用，等本地角色编辑完成后再使用
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### attach
+### attach <Score text="attach" /> 
 
-▸ **attach**(`gameObject`, `slotName`): `void`
+▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将物体附着到V2人物角色的指定插槽
 
-**`Effect`**
-
 双端都可以使用
 
-**`Precautions`**
+::: warning Precautions
 
 1.只适用于V2角色，人形对象
+
+:::
 
 #### Parameters
 
@@ -74,21 +70,16 @@ ___
 | `gameObject` | `GameObject` |  被附着的物体 |
 | `slotName` | [`SlotType`](../enums/Gameplay.SlotType.md) |  插槽名字，被附着到指定的插槽名 |
 
-#### Returns
-
-`void`
 
 ___
 
-### changeSomatotype
+### changeSomatotype <Score text="changeSomatotype" /> 
 
-▸ **changeSomatotype**(`value`, `sync`): `void`
+▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 切换角色主Mesh
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -100,45 +91,37 @@ sync = true:双端
 | `value` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) |  主Mesh类型："None"不能作为参数 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### clearAppearance
+### clearAppearance <Score text="clearAppearance" /> 
 
-▸ **clearAppearance**(): `void`
+▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清空角色形象数据
 
-**`Effect`**
-
 双端
 
-#### Returns
-
-`void`
 
 ___
 
-### detach
+### detach <Score text="detach" /> 
 
-▸ **detach**(`gameObject`): `void`
+▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将物体从人物身上附着的物品预览插槽中分离
 
-**`Effect`**
-
 双端
 
-**`Precautions`**
+::: warning Precautions
 
 带同步
+
+:::
 
 #### Parameters
 
@@ -146,21 +129,16 @@ ___
 | :------ | :------ | :------ |
 | `gameObject` | `GameObject` | 物体GameObject |
 
-#### Returns
-
-`void`
 
 ___
 
-### getGoods
+### getGoods <Score text="getGoods" /> 
 
-▸ **getGoods**(`guid`): [`string`, `string`][]
+▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取插槽文件里面的数据，Array<[string, string]>：Array<[物品资源Id, 插入的插槽名]>
-
-**`Effect`**
 
 双端
 
@@ -168,25 +146,23 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | Slot Guid |
+| `GUID` | `string` | Slot GUID |
 
 #### Returns
 
 [`string`, `string`][]
 
-插槽数据中物品Guid数组
+插槽数据中物品GUID数组
 
 ___
 
-### getSlotWorldPosition
+### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
-▸ **getSlotWorldPosition**(`slotName`): [`Vector`](../classes/Type.Vector.md)
+▸ **getSlotWorldPosition**(`slotName`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取Slot世界坐标位置,V2物品预览的插槽使用
-
-**`Effect`**
 
 双端
 
@@ -204,15 +180,13 @@ ___
 
 ___
 
-### getSomatotype
+### getSomatotype <Score text="getSomatotype" /> 
 
-▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md)
+▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前的主Mesh
-
-**`Effect`**
 
 双端
 
@@ -224,44 +198,39 @@ ___
 
 ___
 
-### setAppearanceData
+### setAppearanceData <Score text="setAppearanceData" /> 
 
-▸ **setAppearanceData**(`guidArray`, `callback`): `void`
+▸ **setAppearanceData**(`GUIDArray`, `callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
-通过Guid加载数据另存为角色数据
-
-**`Effect`**
+通过GUID加载数据另存为角色数据
 
 双端
 
-**`Precautions`**
+::: warning Precautions
 
 客户端：如果角色GUID没有被预加载，则是异步的，需要再callback里再触发下一次加载 。双端：接口数据是叠加的；只有当前端生效，要同步到多端，请调用同步接口；使用前可以使用重置接口清空之前的数据
 
+:::
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guidArray` | `string`[] | 换装数据GuidArray |
+| `GUIDArray` | `string`[] | 换装数据GUIDArray |
 | `callback` | [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback) | 加载完成的回调 default:null |
 
-#### Returns
-
-`void`
 
 ___
 
-### setSlot
+### setSlot <Score text="setSlot" /> 
 
-▸ **setSlot**(`guid`, `sync`): `void`
+▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
-通过插槽Guid加载数据
-
-**`Effect`**
+通过插槽GUID加载数据
 
 双端
 
@@ -269,24 +238,19 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | Slot Guid |
+| `GUID` | `string` | Slot GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setSomatotype
+### setSomatotype <Score text="setSomatotype" /> 
 
-▸ **setSomatotype**(`somatotype`): `void`
+▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
-
-**`Effect`**
 
 客户端
 
@@ -296,27 +260,23 @@ ___
 | :------ | :------ | :------ |
 | `somatotype` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) | 角色类型 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setSuit
+### setSuit <Score text="setSuit" /> 
 
-▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void`
+▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 加载一套角色数据
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调
+
+:::
 
 #### Parameters
 
@@ -331,6 +291,3 @@ ___
 | `frontHair` | `string` |  前发资源的GUID(MWEditor左侧资源列表里面的GUID) |
 | `behindHair` | `string` |  后发资源的GUID(MWEditor左侧资源列表里面的GUID) |
 
-#### Returns
-
-`void`

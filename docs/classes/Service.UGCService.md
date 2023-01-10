@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / UGCService
 
-# UGCService <Badge type="tip" text="Class" />
+# UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 用户建造服务
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用getInstance获取对象
+
+:::
 
 ## Table of contents
 
@@ -24,24 +26,23 @@
 
 ## Methods
 
-### createNewLocalGameFromTemplate
+### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
-▸ **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\>
+▸ **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 以指定模板创建本地工程，并获取工程路径
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 只在233内使用时生效
 2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+
+:::
 
 **`Example`**
 
@@ -65,7 +66,7 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestLocalUGCGameList
+### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
 ▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
@@ -73,16 +74,15 @@ ___
 
 获取当前手机本地的UGC工程列表
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 只在233内使用时生效
 2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
-[ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
+[ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。 <Badge type="tip" text="other" />
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
+
+:::
 
 **`Example`**
 
@@ -101,7 +101,7 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestPublishedUGCGameList
+### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
 ▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
 
@@ -109,16 +109,15 @@ ___
 
 获取当前玩家已发布的UGC游戏列表
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 只在233内使用时生效
-2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
+2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ] <Badge type="tip" text="other" />
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+
+:::
 
 **`Example`**
 
@@ -151,7 +150,7 @@ ___
 
 ___
 
-### requestUGCTemplateList
+### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
 ▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
@@ -159,16 +158,15 @@ ___
 
 获取模板列表，可以分页方式查询
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 只在233内使用时生效
-2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
+2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ] <Badge type="tip" text="other" />
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
+
+:::
 
 **`Example`**
 
@@ -203,17 +201,14 @@ ___
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`UGCService`](Service.UGCService.md)
+▸ `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取用户建造管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

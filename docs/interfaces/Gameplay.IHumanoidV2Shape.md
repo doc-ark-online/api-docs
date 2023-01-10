@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2Shape
 
-# IHumanoidV2Shape <Badge type="tip" text="Interface" />
+# IHumanoidV2Shape <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2Shape" />
 
 **`Description`**
 
@@ -179,16 +179,14 @@
 
 ## Methods
 
-### getBreastHorizontalPosition
+### getBreastHorizontalPosition <Score text="getBreastHorizontalPosition" /> 
 
-▸ **getBreastHorizontalPosition**(): `number`
+▸ **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部左右位置
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -199,16 +197,14 @@
 
 ___
 
-### getBreastLength
+### getBreastLength <Score text="getBreastLength" /> 
 
-▸ **getBreastLength**(): `number`
+▸ **getBreastLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部长度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -219,16 +215,14 @@ ___
 
 ___
 
-### getBreastScale
+### getBreastScale <Score text="getBreastScale" /> 
 
-▸ **getBreastScale**(): `number`
+▸ **getBreastScale**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部整体大小；
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -239,16 +233,14 @@ ___
 
 ___
 
-### getBreastStretch
+### getBreastStretch <Score text="getBreastStretch" /> 
 
-▸ **getBreastStretch**(): `number`
+▸ **getBreastStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取胸部拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -259,16 +251,14 @@ ___
 
 ___
 
-### getBreastVerticalPosition
+### getBreastVerticalPosition <Score text="getBreastVerticalPosition" /> 
 
-▸ **getBreastVerticalPosition**(): `number`
+▸ **getBreastVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部上下位置
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -279,16 +269,14 @@ ___
 
 ___
 
-### getBrowGap
+### getBrowGap <Score text="getBrowGap" /> 
 
-▸ **getBrowGap**(): `number`
+▸ **getBrowGap**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉间距
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -299,16 +287,14 @@ ___
 
 ___
 
-### getBrowHeight
+### getBrowHeight <Score text="getBrowHeight" /> 
 
-▸ **getBrowHeight**(): `number`
+▸ **getBrowHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -319,16 +305,14 @@ ___
 
 ___
 
-### getBrowInboardShape
+### getBrowInboardShape <Score text="getBrowInboardShape" /> 
 
-▸ **getBrowInboardShape**(): `number`
+▸ **getBrowInboardShape**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛内侧角度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -339,16 +323,14 @@ ___
 
 ___
 
-### getBrowOutsideShape
+### getBrowOutsideShape <Score text="getBrowOutsideShape" /> 
 
-▸ **getBrowOutsideShape**(): `number`
+▸ **getBrowOutsideShape**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛外侧形状
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -359,16 +341,14 @@ ___
 
 ___
 
-### getBrowRotation
+### getBrowRotation <Score text="getBrowRotation" /> 
 
-▸ **getBrowRotation**(): `number`
+▸ **getBrowRotation**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛角度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -379,16 +359,14 @@ ___
 
 ___
 
-### getCanthusHorizontalPosition
+### getCanthusHorizontalPosition <Score text="getCanthusHorizontalPosition" /> 
 
-▸ **getCanthusHorizontalPosition**(): `number`
+▸ **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼角左右移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -399,16 +377,14 @@ ___
 
 ___
 
-### getCanthusVerticalPosition
+### getCanthusVerticalPosition <Score text="getCanthusVerticalPosition" /> 
 
-▸ **getCanthusVerticalPosition**(): `number`
+▸ **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取外眼角上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -419,16 +395,14 @@ ___
 
 ___
 
-### getCharacterHeight
+### getCharacterHeight <Score text="getCharacterHeight" /> 
 
-▸ **getCharacterHeight**(): `number`
+▸ **getCharacterHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取角色身高
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -439,16 +413,14 @@ ___
 
 ___
 
-### getCheekBoneRange
+### getCheekBoneRange <Score text="getCheekBoneRange" /> 
 
-▸ **getCheekBoneRange**(): `number`
+▸ **getCheekBoneRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取颧骨前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -459,16 +431,14 @@ ___
 
 ___
 
-### getCheekBoneWidth
+### getCheekBoneWidth <Score text="getCheekBoneWidth" /> 
 
-▸ **getCheekBoneWidth**(): `number`
+▸ **getCheekBoneWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取颧骨横向宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -479,16 +449,14 @@ ___
 
 ___
 
-### getCheekHeight
+### getCheekHeight <Score text="getCheekHeight" /> 
 
-▸ **getCheekHeight**(): `number`
+▸ **getCheekHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脸颊上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -499,16 +467,14 @@ ___
 
 ___
 
-### getCheekRange
+### getCheekRange <Score text="getCheekRange" /> 
 
-▸ **getCheekRange**(): `number`
+▸ **getCheekRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脸颊前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -519,16 +485,14 @@ ___
 
 ___
 
-### getCheekWidth
+### getCheekWidth <Score text="getCheekWidth" /> 
 
-▸ **getCheekWidth**(): `number`
+▸ **getCheekWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脸颊宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -539,16 +503,14 @@ ___
 
 ___
 
-### getEarRoll
+### getEarRoll <Score text="getEarRoll" /> 
 
-▸ **getEarRoll**(): `number`
+▸ **getEarRoll**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵左右旋转
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -559,16 +521,14 @@ ___
 
 ___
 
-### getEarScale
+### getEarScale <Score text="getEarScale" /> 
 
-▸ **getEarScale**(): `number`
+▸ **getEarScale**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵大小
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -579,16 +539,14 @@ ___
 
 ___
 
-### getEarYaw
+### getEarYaw <Score text="getEarYaw" /> 
 
-▸ **getEarYaw**(): `number`
+▸ **getEarYaw**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵前后旋转
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -599,16 +557,14 @@ ___
 
 ___
 
-### getEyesGap
+### getEyesGap <Score text="getEyesGap" /> 
 
-▸ **getEyesGap**(): `number`
+▸ **getEyesGap**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛间距
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -619,16 +575,14 @@ ___
 
 ___
 
-### getEyesHeight
+### getEyesHeight <Score text="getEyesHeight" /> 
 
-▸ **getEyesHeight**(): `number`
+▸ **getEyesHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -639,16 +593,14 @@ ___
 
 ___
 
-### getEyesLength
+### getEyesLength <Score text="getEyesLength" /> 
 
-▸ **getEyesLength**(): `number`
+▸ **getEyesLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 眼睛长度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -659,16 +611,14 @@ ___
 
 ___
 
-### getEyesRange
+### getEyesRange <Score text="getEyesRange" /> 
 
-▸ **getEyesRange**(): `number`
+▸ **getEyesRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -679,16 +629,14 @@ ___
 
 ___
 
-### getEyesRotation
+### getEyesRotation <Score text="getEyesRotation" /> 
 
-▸ **getEyesRotation**(): `number`
+▸ **getEyesRotation**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛角度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -699,16 +647,14 @@ ___
 
 ___
 
-### getEyesWidth
+### getEyesWidth <Score text="getEyesWidth" /> 
 
-▸ **getEyesWidth**(): `number`
+▸ **getEyesWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛左右宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -719,16 +665,14 @@ ___
 
 ___
 
-### getFaceWidth
+### getFaceWidth <Score text="getFaceWidth" /> 
 
-▸ **getFaceWidth**(): `number`
+▸ **getFaceWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整头部整体宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -739,16 +683,14 @@ ___
 
 ___
 
-### getGroinThickness
+### getGroinThickness <Score text="getGroinThickness" /> 
 
-▸ **getGroinThickness**(): `number`
+▸ **getGroinThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取胯宽度前后
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -759,16 +701,14 @@ ___
 
 ___
 
-### getGroinWidth
+### getGroinWidth <Score text="getGroinWidth" /> 
 
-▸ **getGroinWidth**(): `number`
+▸ **getGroinWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取胯宽度左右
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -779,19 +719,15 @@ ___
 
 ___
 
-### getHeadScale
+### getHeadScale <Score text="getHeadScale" /> 
 
-▸ **getHeadScale**(): `number`
+▸ **getHeadScale**(): `number` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取角色头部大小
 
-**`Effect`**
-
 客户端调用
-
-**`Effect`**
 
 客户端
 
@@ -803,16 +739,14 @@ ___
 
 ___
 
-### getJawLength
+### getJawLength <Score text="getJawLength" /> 
 
-▸ **getJawLength**(): `number`
+▸ **getJawLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴长度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -823,16 +757,14 @@ ___
 
 ___
 
-### getJawRange
+### getJawRange <Score text="getJawRange" /> 
 
-▸ **getJawRange**(): `number`
+▸ **getJawRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -843,16 +775,14 @@ ___
 
 ___
 
-### getJawSmooth
+### getJawSmooth <Score text="getJawSmooth" /> 
 
-▸ **getJawSmooth**(): `number`
+▸ **getJawSmooth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴圆度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -863,16 +793,14 @@ ___
 
 ___
 
-### getJawVertexHeight
+### getJawVertexHeight <Score text="getJawVertexHeight" /> 
 
-▸ **getJawVertexHeight**(): `number`
+▸ **getJawVertexHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -883,16 +811,14 @@ ___
 
 ___
 
-### getJawVertexRange
+### getJawVertexRange <Score text="getJawVertexRange" /> 
 
-▸ **getJawVertexRange**(): `number`
+▸ **getJawVertexRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -903,16 +829,14 @@ ___
 
 ___
 
-### getJawVertexWidth
+### getJawVertexWidth <Score text="getJawVertexWidth" /> 
 
-▸ **getJawVertexWidth**(): `number`
+▸ **getJawVertexWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -923,16 +847,14 @@ ___
 
 ___
 
-### getLowerArmsStretch
+### getLowerArmsStretch <Score text="getLowerArmsStretch" /> 
 
-▸ **getLowerArmsStretch**(): `number`
+▸ **getLowerArmsStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小臂的拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -943,16 +865,14 @@ ___
 
 ___
 
-### getLowerArmsThickness
+### getLowerArmsThickness <Score text="getLowerArmsThickness" /> 
 
-▸ **getLowerArmsThickness**(): `number`
+▸ **getLowerArmsThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小臂前后方向的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -963,16 +883,14 @@ ___
 
 ___
 
-### getLowerArmsWidth
+### getLowerArmsWidth <Score text="getLowerArmsWidth" /> 
 
-▸ **getLowerArmsWidth**(): `number`
+▸ **getLowerArmsWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小臂左右方向的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -983,16 +901,14 @@ ___
 
 ___
 
-### getLowerFaceRange
+### getLowerFaceRange <Score text="getLowerFaceRange" /> 
 
-▸ **getLowerFaceRange**(): `number`
+▸ **getLowerFaceRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取下半脸前后
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1003,16 +919,14 @@ ___
 
 ___
 
-### getLowerFaceWidth
+### getLowerFaceWidth <Score text="getLowerFaceWidth" /> 
 
-▸ **getLowerFaceWidth**(): `number`
+▸ **getLowerFaceWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取下半脸的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1023,16 +937,14 @@ ___
 
 ___
 
-### getLowerJawRange
+### getLowerJawRange <Score text="getLowerJawRange" /> 
 
-▸ **getLowerJawRange**(): `number`
+▸ **getLowerJawRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下颚骨前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1043,16 +955,14 @@ ___
 
 ___
 
-### getLowerJawWidth
+### getLowerJawWidth <Score text="getLowerJawWidth" /> 
 
-▸ **getLowerJawWidth**(): `number`
+▸ **getLowerJawWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下颚骨宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1063,16 +973,14 @@ ___
 
 ___
 
-### getLowerMouthThickness
+### getLowerMouthThickness <Score text="getLowerMouthThickness" /> 
 
-▸ **getLowerMouthThickness**(): `number`
+▸ **getLowerMouthThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取下嘴唇薄厚
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1083,16 +991,14 @@ ___
 
 ___
 
-### getLowerStretch
+### getLowerStretch <Score text="getLowerStretch" /> 
 
-▸ **getLowerStretch**(): `number`
+▸ **getLowerStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵下部拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1103,16 +1009,14 @@ ___
 
 ___
 
-### getMouthHeight
+### getMouthHeight <Score text="getMouthHeight" /> 
 
-▸ **getMouthHeight**(): `number`
+▸ **getMouthHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取嘴巴上下位置
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1123,16 +1027,14 @@ ___
 
 ___
 
-### getMouthRange
+### getMouthRange <Score text="getMouthRange" /> 
 
-▸ **getMouthRange**(): `number`
+▸ **getMouthRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取嘴巴前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1143,16 +1045,14 @@ ___
 
 ___
 
-### getMouthShape
+### getMouthShape <Score text="getMouthShape" /> 
 
-▸ **getMouthShape**(): `number`
+▸ **getMouthShape**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整嘴巴形状
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1163,16 +1063,14 @@ ___
 
 ___
 
-### getMouthWidth
+### getMouthWidth <Score text="getMouthWidth" /> 
 
-▸ **getMouthWidth**(): `number`
+▸ **getMouthWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取嘴巴宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1183,16 +1081,14 @@ ___
 
 ___
 
-### getNeckStretch
+### getNeckStretch <Score text="getNeckStretch" /> 
 
-▸ **getNeckStretch**(): `number`
+▸ **getNeckStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脖子拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1203,16 +1099,14 @@ ___
 
 ___
 
-### getNeckThickness
+### getNeckThickness <Score text="getNeckThickness" /> 
 
-▸ **getNeckThickness**(): `number`
+▸ **getNeckThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脖子前后的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1223,16 +1117,14 @@ ___
 
 ___
 
-### getNeckWidth
+### getNeckWidth <Score text="getNeckWidth" /> 
 
-▸ **getNeckWidth**(): `number`
+▸ **getNeckWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整脖子的左右宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1243,16 +1135,14 @@ ___
 
 ___
 
-### getNoseHeight
+### getNoseHeight <Score text="getNoseHeight" /> 
 
-▸ **getNoseHeight**(): `number`
+▸ **getNoseHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取鼻梁高度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1263,16 +1153,14 @@ ___
 
 ___
 
-### getNoseProtrusion
+### getNoseProtrusion <Score text="getNoseProtrusion" /> 
 
-▸ **getNoseProtrusion**(): `number`
+▸ **getNoseProtrusion**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取鼻尖长度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1283,16 +1171,14 @@ ___
 
 ___
 
-### getNoseVerticalPosition
+### getNoseVerticalPosition <Score text="getNoseVerticalPosition" /> 
 
-▸ **getNoseVerticalPosition**(): `number`
+▸ **getNoseVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取鼻子上下移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1303,16 +1189,14 @@ ___
 
 ___
 
-### getPupilHeight
+### getPupilHeight <Score text="getPupilHeight" /> 
 
-▸ **getPupilHeight**(): `number`
+▸ **getPupilHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔高度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1323,16 +1207,14 @@ ___
 
 ___
 
-### getPupilHorizontalPosition
+### getPupilHorizontalPosition <Score text="getPupilHorizontalPosition" /> 
 
-▸ **getPupilHorizontalPosition**(): `number`
+▸ **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔左右位置
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1343,16 +1225,14 @@ ___
 
 ___
 
-### getPupilVerticalPosition
+### getPupilVerticalPosition <Score text="getPupilVerticalPosition" /> 
 
-▸ **getPupilVerticalPosition**(): `number`
+▸ **getPupilVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔上下位置
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1363,16 +1243,14 @@ ___
 
 ___
 
-### getPupilWidth
+### getPupilWidth <Score text="getPupilWidth" /> 
 
-▸ **getPupilWidth**(): `number`
+▸ **getPupilWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1383,16 +1261,14 @@ ___
 
 ___
 
-### getRibThickness
+### getRibThickness <Score text="getRibThickness" /> 
 
-▸ **getRibThickness**(): `number`
+▸ **getRibThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肋骨的前后宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1403,16 +1279,14 @@ ___
 
 ___
 
-### getRibWidth
+### getRibWidth <Score text="getRibWidth" /> 
 
-▸ **getRibWidth**(): `number`
+▸ **getRibWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肋骨的左右宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1423,16 +1297,14 @@ ___
 
 ___
 
-### getShankScaleX
+### getShankScaleX <Score text="getShankScaleX" /> 
 
-▸ **getShankScaleX**(): `number`
+▸ **getShankScaleX**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小腿粗细左右
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1443,16 +1315,14 @@ ___
 
 ___
 
-### getShankScaleZ
+### getShankScaleZ <Score text="getShankScaleZ" /> 
 
-▸ **getShankScaleZ**(): `number`
+▸ **getShankScaleZ**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小腿粗细前后
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1463,16 +1333,14 @@ ___
 
 ___
 
-### getShankStretch
+### getShankStretch <Score text="getShankStretch" /> 
 
-▸ **getShankStretch**(): `number`
+▸ **getShankStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取小腿拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1483,16 +1351,14 @@ ___
 
 ___
 
-### getShoulderArmThickness
+### getShoulderArmThickness <Score text="getShoulderArmThickness" /> 
 
-▸ **getShoulderArmThickness**(): `number`
+▸ **getShoulderArmThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肩膀的前后宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1503,16 +1369,14 @@ ___
 
 ___
 
-### getShoulderArmWidth
+### getShoulderArmWidth <Score text="getShoulderArmWidth" /> 
 
-▸ **getShoulderArmWidth**(): `number`
+▸ **getShoulderArmWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肩膀的左右宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1523,16 +1387,14 @@ ___
 
 ___
 
-### getShoulderThickness
+### getShoulderThickness <Score text="getShoulderThickness" /> 
 
-▸ **getShoulderThickness**(): `number`
+▸ **getShoulderThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肩膀的前后宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1543,16 +1405,14 @@ ___
 
 ___
 
-### getShoulderWidth
+### getShoulderWidth <Score text="getShoulderWidth" /> 
 
-▸ **getShoulderWidth**(): `number`
+▸ **getShoulderWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取肩膀的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1563,16 +1423,14 @@ ___
 
 ___
 
-### getThighStretch
+### getThighStretch <Score text="getThighStretch" /> 
 
-▸ **getThighStretch**(): `number`
+▸ **getThighStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大腿拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1583,16 +1441,14 @@ ___
 
 ___
 
-### getThighThicknessX
+### getThighThicknessX <Score text="getThighThicknessX" /> 
 
-▸ **getThighThicknessX**(): `number`
+▸ **getThighThicknessX**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大腿粗细左右
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1603,16 +1459,14 @@ ___
 
 ___
 
-### getThighThicknessZ
+### getThighThicknessZ <Score text="getThighThicknessZ" /> 
 
-▸ **getThighThicknessZ**(): `number`
+▸ **getThighThicknessZ**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大腿粗细前后
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1623,16 +1477,14 @@ ___
 
 ___
 
-### getUpperArmsStretch
+### getUpperArmsStretch <Score text="getUpperArmsStretch" /> 
 
-▸ **getUpperArmsStretch**(): `number`
+▸ **getUpperArmsStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大臂的拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1643,16 +1495,14 @@ ___
 
 ___
 
-### getUpperArmsThickness
+### getUpperArmsThickness <Score text="getUpperArmsThickness" /> 
 
-▸ **getUpperArmsThickness**(): `number`
+▸ **getUpperArmsThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大臂前后方向的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1663,16 +1513,14 @@ ___
 
 ___
 
-### getUpperArmsWidth
+### getUpperArmsWidth <Score text="getUpperArmsWidth" /> 
 
-▸ **getUpperArmsWidth**(): `number`
+▸ **getUpperArmsWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取大臂左右方向的宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1683,16 +1531,14 @@ ___
 
 ___
 
-### getUpperFaceRange
+### getUpperFaceRange <Score text="getUpperFaceRange" /> 
 
-▸ **getUpperFaceRange**(): `number`
+▸ **getUpperFaceRange**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整上半脸前后移动
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1703,16 +1549,14 @@ ___
 
 ___
 
-### getUpperMouthThickness
+### getUpperMouthThickness <Score text="getUpperMouthThickness" /> 
 
-▸ **getUpperMouthThickness**(): `number`
+▸ **getUpperMouthThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取上嘴唇薄厚
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1723,16 +1567,14 @@ ___
 
 ___
 
-### getUpperStretch
+### getUpperStretch <Score text="getUpperStretch" /> 
 
-▸ **getUpperStretch**(): `number`
+▸ **getUpperStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵上部拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1743,16 +1585,14 @@ ___
 
 ___
 
-### getWaistStretch
+### getWaistStretch <Score text="getWaistStretch" /> 
 
-▸ **getWaistStretch**(): `number`
+▸ **getWaistStretch**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取腰部拉伸
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1763,16 +1603,14 @@ ___
 
 ___
 
-### getWaistThickness
+### getWaistThickness <Score text="getWaistThickness" /> 
 
-▸ **getWaistThickness**(): `number`
+▸ **getWaistThickness**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取腰的前后宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1783,16 +1621,14 @@ ___
 
 ___
 
-### getWaistWidth
+### getWaistWidth <Score text="getWaistWidth" /> 
 
-▸ **getWaistWidth**(): `number`
+▸ **getWaistWidth**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取腰的左右宽度
 
-**`Effect`**
-
 客户端
 
 #### Returns
@@ -1803,17 +1639,15 @@ ___
 
 ___
 
-### setBreastHorizontalPosition
+### setBreastHorizontalPosition <Score text="setBreastHorizontalPosition" /> 
 
-▸ **setBreastHorizontalPosition**(`value`, `sync`): `void`
+▸ **setBreastHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部左右位置
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1824,23 +1658,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBreastLength
+### setBreastLength <Score text="setBreastLength" /> 
 
-▸ **setBreastLength**(`value`, `sync`): `void`
+▸ **setBreastLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部长度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1851,23 +1680,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBreastScale
+### setBreastScale <Score text="setBreastScale" /> 
 
-▸ **setBreastScale**(`value`, `sync`): `void`
+▸ **setBreastScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部整体大小；
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1878,23 +1702,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBreastStretch
+### setBreastStretch <Score text="setBreastStretch" /> 
 
-▸ **setBreastStretch**(`value`, `sync`): `void`
+▸ **setBreastStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置胸部拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1905,23 +1724,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBreastVerticalPosition
+### setBreastVerticalPosition <Score text="setBreastVerticalPosition" /> 
 
-▸ **setBreastVerticalPosition**(`value`, `sync`): `void`
+▸ **setBreastVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整胸部上下位置
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1932,23 +1746,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBrowGap
+### setBrowGap <Score text="setBrowGap" /> 
 
-▸ **setBrowGap**(`value`, `sync`): `void`
+▸ **setBrowGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉间距
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1959,23 +1768,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBrowHeight
+### setBrowHeight <Score text="setBrowHeight" /> 
 
-▸ **setBrowHeight**(`value`, `sync`): `void`
+▸ **setBrowHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -1986,23 +1790,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBrowInboardShape
+### setBrowInboardShape <Score text="setBrowInboardShape" /> 
 
-▸ **setBrowInboardShape**(`value`, `sync`): `void`
+▸ **setBrowInboardShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛内侧角度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2013,23 +1812,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBrowOutsideShape
+### setBrowOutsideShape <Score text="setBrowOutsideShape" /> 
 
-▸ **setBrowOutsideShape**(`value`, `sync`): `void`
+▸ **setBrowOutsideShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛外侧形状
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2040,23 +1834,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBrowRotation
+### setBrowRotation <Score text="setBrowRotation" /> 
 
-▸ **setBrowRotation**(`value`, `sync`): `void`
+▸ **setBrowRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛角度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2067,23 +1856,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCanthusHorizontalPosition
+### setCanthusHorizontalPosition <Score text="setCanthusHorizontalPosition" /> 
 
-▸ **setCanthusHorizontalPosition**(`value`, `sync`): `void`
+▸ **setCanthusHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼角左右移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2094,23 +1878,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCanthusVerticalPosition
+### setCanthusVerticalPosition <Score text="setCanthusVerticalPosition" /> 
 
-▸ **setCanthusVerticalPosition**(`value`, `sync`): `void`
+▸ **setCanthusVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置外眼角上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2121,22 +1900,17 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCharacterHeight
+### setCharacterHeight <Score text="setCharacterHeight" /> 
 
-▸ **setCharacterHeight**(`value`, `sync`): `void`
+▸ **setCharacterHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置角色身高
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2147,23 +1921,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCheekBoneRange
+### setCheekBoneRange <Score text="setCheekBoneRange" /> 
 
-▸ **setCheekBoneRange**(`value`, `sync`): `void`
+▸ **setCheekBoneRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置颧骨前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2174,23 +1943,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCheekBoneWidth
+### setCheekBoneWidth <Score text="setCheekBoneWidth" /> 
 
-▸ **setCheekBoneWidth**(`value`, `sync`): `void`
+▸ **setCheekBoneWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置颧骨横向宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2201,23 +1965,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCheekHeight
+### setCheekHeight <Score text="setCheekHeight" /> 
 
-▸ **setCheekHeight**(`value`, `sync`): `void`
+▸ **setCheekHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脸颊上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2228,23 +1987,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCheekRange
+### setCheekRange <Score text="setCheekRange" /> 
 
-▸ **setCheekRange**(`value`, `sync`): `void`
+▸ **setCheekRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脸颊前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2255,23 +2009,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCheekWidth
+### setCheekWidth <Score text="setCheekWidth" /> 
 
-▸ **setCheekWidth**(`value`, `sync`): `void`
+▸ **setCheekWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脸颊宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2282,23 +2031,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEarRoll
+### setEarRoll <Score text="setEarRoll" /> 
 
-▸ **setEarRoll**(`value`, `sync`): `void`
+▸ **setEarRoll**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵左右旋转
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2309,23 +2053,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEarScale
+### setEarScale <Score text="setEarScale" /> 
 
-▸ **setEarScale**(`value`, `sync`): `void`
+▸ **setEarScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵大小
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2336,23 +2075,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEarYaw
+### setEarYaw <Score text="setEarYaw" /> 
 
-▸ **setEarYaw**(`value`, `sync`): `void`
+▸ **setEarYaw**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵前后旋转
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2363,23 +2097,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesGap
+### setEyesGap <Score text="setEyesGap" /> 
 
-▸ **setEyesGap**(`value`, `sync`): `void`
+▸ **setEyesGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛间距
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2390,23 +2119,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesHeight
+### setEyesHeight <Score text="setEyesHeight" /> 
 
-▸ **setEyesHeight**(`value`, `sync`): `void`
+▸ **setEyesHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2417,23 +2141,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesLength
+### setEyesLength <Score text="setEyesLength" /> 
 
-▸ **setEyesLength**(`value`, `sync`): `void`
+▸ **setEyesLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 眼睛长度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2444,23 +2163,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesRange
+### setEyesRange <Score text="setEyesRange" /> 
 
-▸ **setEyesRange**(`value`, `sync`): `void`
+▸ **setEyesRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2471,23 +2185,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesRotation
+### setEyesRotation <Score text="setEyesRotation" /> 
 
-▸ **setEyesRotation**(`value`, `sync`): `void`
+▸ **setEyesRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛角度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2498,23 +2207,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setEyesWidth
+### setEyesWidth <Score text="setEyesWidth" /> 
 
-▸ **setEyesWidth**(`value`, `sync`): `void`
+▸ **setEyesWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛左右宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2525,23 +2229,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setFaceWidth
+### setFaceWidth <Score text="setFaceWidth" /> 
 
-▸ **setFaceWidth**(`value`, `sync`): `void`
+▸ **setFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整头部整体宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2552,23 +2251,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setGroinThickness
+### setGroinThickness <Score text="setGroinThickness" /> 
 
-▸ **setGroinThickness**(`value`, `sync`): `void`
+▸ **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置胯宽度前后
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2579,23 +2273,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setGroinWidth
+### setGroinWidth <Score text="setGroinWidth" /> 
 
-▸ **setGroinWidth**(`value`, `sync`): `void`
+▸ **setGroinWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置胯宽度左右
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2606,27 +2295,20 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setHeadScale
+### setHeadScale <Score text="setHeadScale" /> 
 
-▸ **setHeadScale**(`value`, `sync`): `void`
+▸ **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置角色头部大小
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端调用
  *
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -2638,23 +2320,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawLength
+### setJawLength <Score text="setJawLength" /> 
 
-▸ **setJawLength**(`value`, `sync`): `void`
+▸ **setJawLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴长度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2665,23 +2342,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawRange
+### setJawRange <Score text="setJawRange" /> 
 
-▸ **setJawRange**(`value`, `sync`): `void`
+▸ **setJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2692,23 +2364,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawSmooth
+### setJawSmooth <Score text="setJawSmooth" /> 
 
-▸ **setJawSmooth**(`value`, `sync`): `void`
+▸ **setJawSmooth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴圆度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2719,23 +2386,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawVertexHeight
+### setJawVertexHeight <Score text="setJawVertexHeight" /> 
 
-▸ **setJawVertexHeight**(`value`, `sync`): `void`
+▸ **setJawVertexHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2746,23 +2408,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawVertexRange
+### setJawVertexRange <Score text="setJawVertexRange" /> 
 
-▸ **setJawVertexRange**(`value`, `sync`): `void`
+▸ **setJawVertexRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2773,23 +2430,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setJawVertexWidth
+### setJawVertexWidth <Score text="setJawVertexWidth" /> 
 
-▸ **setJawVertexWidth**(`value`, `sync`): `void`
+▸ **setJawVertexWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下巴尖宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2800,23 +2452,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerArmsStretch
+### setLowerArmsStretch <Score text="setLowerArmsStretch" /> 
 
-▸ **setLowerArmsStretch**(`value`, `sync`): `void`
+▸ **setLowerArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小臂的拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2827,23 +2474,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerArmsThickness
+### setLowerArmsThickness <Score text="setLowerArmsThickness" /> 
 
-▸ **setLowerArmsThickness**(`value`, `sync`): `void`
+▸ **setLowerArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小臂前后方向的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2854,23 +2496,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerArmsWidth
+### setLowerArmsWidth <Score text="setLowerArmsWidth" /> 
 
-▸ **setLowerArmsWidth**(`value`, `sync`): `void`
+▸ **setLowerArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小臂左右方向的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2881,23 +2518,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerFaceRange
+### setLowerFaceRange <Score text="setLowerFaceRange" /> 
 
-▸ **setLowerFaceRange**(`value`, `sync`): `void`
+▸ **setLowerFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置下半脸前后
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2908,23 +2540,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerFaceWidth
+### setLowerFaceWidth <Score text="setLowerFaceWidth" /> 
 
-▸ **setLowerFaceWidth**(`value`, `sync`): `void`
+▸ **setLowerFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置下半脸的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2935,23 +2562,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerJawRange
+### setLowerJawRange <Score text="setLowerJawRange" /> 
 
-▸ **setLowerJawRange**(`value`, `sync`): `void`
+▸ **setLowerJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下颚骨前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2962,23 +2584,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerJawWidth
+### setLowerJawWidth <Score text="setLowerJawWidth" /> 
 
-▸ **setLowerJawWidth**(`value`, `sync`): `void`
+▸ **setLowerJawWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整下颚骨宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -2989,23 +2606,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerMouthThickness
+### setLowerMouthThickness <Score text="setLowerMouthThickness" /> 
 
-▸ **setLowerMouthThickness**(`value`, `sync`): `void`
+▸ **setLowerMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置下嘴唇薄厚
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3016,23 +2628,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLowerStretch
+### setLowerStretch <Score text="setLowerStretch" /> 
 
-▸ **setLowerStretch**(`value`, `sync`): `void`
+▸ **setLowerStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵下部拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3043,22 +2650,17 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setMouthHeight
+### setMouthHeight <Score text="setMouthHeight" /> 
 
-▸ **setMouthHeight**(`value`, `sync`): `void`
+▸ **setMouthHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置嘴巴上下位置
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3069,23 +2671,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setMouthRange
+### setMouthRange <Score text="setMouthRange" /> 
 
-▸ **setMouthRange**(`value`, `sync`): `void`
+▸ **setMouthRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置嘴巴前后移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3096,23 +2693,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setMouthShape
+### setMouthShape <Score text="setMouthShape" /> 
 
-▸ **setMouthShape**(`value`, `sync`): `void`
+▸ **setMouthShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整嘴巴形状
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3123,23 +2715,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setMouthWidth
+### setMouthWidth <Score text="setMouthWidth" /> 
 
-▸ **setMouthWidth**(`value`, `sync`): `void`
+▸ **setMouthWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置嘴巴宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3150,23 +2737,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNeckStretch
+### setNeckStretch <Score text="setNeckStretch" /> 
 
-▸ **setNeckStretch**(`value`, `sync`): `void`
+▸ **setNeckStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脖子拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3177,23 +2759,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNeckThickness
+### setNeckThickness <Score text="setNeckThickness" /> 
 
-▸ **setNeckThickness**(`value`, `sync`): `void`
+▸ **setNeckThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脖子前后的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3204,23 +2781,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNeckWidth
+### setNeckWidth <Score text="setNeckWidth" /> 
 
-▸ **setNeckWidth**(`value`, `sync`): `void`
+▸ **setNeckWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整脖子的左右宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3231,23 +2803,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNoseHeight
+### setNoseHeight <Score text="setNoseHeight" /> 
 
-▸ **setNoseHeight**(`value`, `sync`): `void`
+▸ **setNoseHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置鼻梁高度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3258,23 +2825,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNoseProtrusion
+### setNoseProtrusion <Score text="setNoseProtrusion" /> 
 
-▸ **setNoseProtrusion**(`value`, `sync`): `void`
+▸ **setNoseProtrusion**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置鼻尖长度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3285,23 +2847,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNoseVerticalPosition
+### setNoseVerticalPosition <Score text="setNoseVerticalPosition" /> 
 
-▸ **setNoseVerticalPosition**(`value`, `sync`): `void`
+▸ **setNoseVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置鼻子上下移动
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3312,23 +2869,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPupilHeight
+### setPupilHeight <Score text="setPupilHeight" /> 
 
-▸ **setPupilHeight**(`value`, `sync`): `void`
+▸ **setPupilHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔高度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3339,23 +2891,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPupilHorizontalPosition
+### setPupilHorizontalPosition <Score text="setPupilHorizontalPosition" /> 
 
-▸ **setPupilHorizontalPosition**(`value`, `sync`): `void`
+▸ **setPupilHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔左右位置
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3366,23 +2913,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPupilVerticalPosition
+### setPupilVerticalPosition <Score text="setPupilVerticalPosition" /> 
 
-▸ **setPupilVerticalPosition**(`value`, `sync`): `void`
+▸ **setPupilVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔上下位置
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3393,23 +2935,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPupilWidth
+### setPupilWidth <Score text="setPupilWidth" /> 
 
-▸ **setPupilWidth**(`value`, `sync`): `void`
+▸ **setPupilWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3420,23 +2957,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setRibThickness
+### setRibThickness <Score text="setRibThickness" /> 
 
-▸ **setRibThickness**(`value`, `sync`): `void`
+▸ **setRibThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肋骨的前后宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3447,23 +2979,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setRibWidth
+### setRibWidth <Score text="setRibWidth" /> 
 
-▸ **setRibWidth**(`value`, `sync`): `void`
+▸ **setRibWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肋骨的左右宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3474,23 +3001,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShankScaleX
+### setShankScaleX <Score text="setShankScaleX" /> 
 
-▸ **setShankScaleX**(`value`, `sync`): `void`
+▸ **setShankScaleX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小腿粗细左右
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3501,23 +3023,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShankScaleZ
+### setShankScaleZ <Score text="setShankScaleZ" /> 
 
-▸ **setShankScaleZ**(`value`, `sync`): `void`
+▸ **setShankScaleZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小腿粗细前后
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3528,23 +3045,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShankStretch
+### setShankStretch <Score text="setShankStretch" /> 
 
-▸ **setShankStretch**(`value`, `sync`): `void`
+▸ **setShankStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置小腿拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3555,23 +3067,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShoulderArmThickness
+### setShoulderArmThickness <Score text="setShoulderArmThickness" /> 
 
-▸ **setShoulderArmThickness**(`value`, `sync`): `void`
+▸ **setShoulderArmThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肩膀的前后宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3582,23 +3089,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShoulderArmWidth
+### setShoulderArmWidth <Score text="setShoulderArmWidth" /> 
 
-▸ **setShoulderArmWidth**(`value`, `sync`): `void`
+▸ **setShoulderArmWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肩膀的左右宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3609,23 +3111,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShoulderThickness
+### setShoulderThickness <Score text="setShoulderThickness" /> 
 
-▸ **setShoulderThickness**(`value`, `sync`): `void`
+▸ **setShoulderThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肩膀的前后宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3636,23 +3133,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShoulderWidth
+### setShoulderWidth <Score text="setShoulderWidth" /> 
 
-▸ **setShoulderWidth**(`value`, `sync`): `void`
+▸ **setShoulderWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置肩膀的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3663,23 +3155,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setThighStretch
+### setThighStretch <Score text="setThighStretch" /> 
 
-▸ **setThighStretch**(`value`, `sync`): `void`
+▸ **setThighStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大腿拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3690,23 +3177,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setThighThicknessX
+### setThighThicknessX <Score text="setThighThicknessX" /> 
 
-▸ **setThighThicknessX**(`value`, `sync`): `void`
+▸ **setThighThicknessX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大腿粗细左右
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3717,23 +3199,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setThighThicknessZ
+### setThighThicknessZ <Score text="setThighThicknessZ" /> 
 
-▸ **setThighThicknessZ**(`value`, `sync`): `void`
+▸ **setThighThicknessZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大腿粗细前后
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3744,23 +3221,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperArmsStretch
+### setUpperArmsStretch <Score text="setUpperArmsStretch" /> 
 
-▸ **setUpperArmsStretch**(`value`, `sync`): `void`
+▸ **setUpperArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大臂的拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3771,23 +3243,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperArmsThickness
+### setUpperArmsThickness <Score text="setUpperArmsThickness" /> 
 
-▸ **setUpperArmsThickness**(`value`, `sync`): `void`
+▸ **setUpperArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大臂前后方向的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3798,23 +3265,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperArmsWidth
+### setUpperArmsWidth <Score text="setUpperArmsWidth" /> 
 
-▸ **setUpperArmsWidth**(`value`, `sync`): `void`
+▸ **setUpperArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置大臂左右方向的宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3825,22 +3287,17 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperFaceRange
+### setUpperFaceRange <Score text="setUpperFaceRange" /> 
 
-▸ **setUpperFaceRange**(`value`, `sync`): `void`
+▸ **setUpperFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整上半脸前后移动
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3851,23 +3308,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperMouthThickness
+### setUpperMouthThickness <Score text="setUpperMouthThickness" /> 
 
-▸ **setUpperMouthThickness**(`value`, `sync`): `void`
+▸ **setUpperMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置上嘴唇薄厚
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3878,23 +3330,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setUpperStretch
+### setUpperStretch <Score text="setUpperStretch" /> 
 
-▸ **setUpperStretch**(`value`, `sync`): `void`
+▸ **setUpperStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 调整耳朵上部拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3905,23 +3352,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setWaistStretch
+### setWaistStretch <Score text="setWaistStretch" /> 
 
-▸ **setWaistStretch**(`value`, `sync`): `void`
+▸ **setWaistStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置腰部拉伸
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3932,23 +3374,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setWaistThickness
+### setWaistThickness <Score text="setWaistThickness" /> 
 
-▸ **setWaistThickness**(`value`, `sync`): `void`
+▸ **setWaistThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置腰的前后宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3959,23 +3396,18 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setWaistWidth
+### setWaistWidth <Score text="setWaistWidth" /> 
 
-▸ **setWaistWidth**(`value`, `sync`): `void`
+▸ **setWaistWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置腰的左右宽度
  *
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -3986,6 +3418,3 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`

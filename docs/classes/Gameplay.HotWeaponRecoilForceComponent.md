@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
 
-# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" />
+# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
 **`Description`**
 
@@ -34,7 +34,7 @@
 
 ## Properties
 
-### onStartRecoilForceClient
+### onStartRecoilForceClient <Score text="onStartRecoilForceClient" /> 
 
 • **onStartRecoilForceClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -44,7 +44,7 @@
 
 ___
 
-### onStartRecoilForceServer
+### onStartRecoilForceServer <Score text="onStartRecoilForceServer" /> 
 
 • **onStartRecoilForceServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -54,17 +54,14 @@ ___
 
 ## Accessors
 
-### maxHorizontalJitter
+### maxHorizontalJitter <Score text="maxHorizontalJitter" /> 
 
-• `get` **maxHorizontalJitter**(): `number`
+• `get` **maxHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取相机水平抖动最大值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -72,19 +69,18 @@ ___
 
 相机水平抖动最大值
 
-• `set` **maxHorizontalJitter**(`value`): `void`
+• `set` **maxHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置相机水平抖动最大值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -92,23 +88,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  相机水平抖动最大值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxHorizontalOffset
+### maxHorizontalOffset <Score text="maxHorizontalOffset" /> 
 
-• `get` **maxHorizontalOffset**(): `number`
+• `get` **maxHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取水平偏移最大值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -116,13 +106,11 @@ ___
 
 水平偏移最大值
 
-• `set` **maxHorizontalOffset**(`value`): `void`
+• `set` **maxHorizontalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置水平偏移最大值
-
-**`Effect`**
 
 装备热武器前仅服务器调用，装备后双端都可调用
 
@@ -132,23 +120,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  水平偏移最大值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxVerticalJitter
+### maxVerticalJitter <Score text="maxVerticalJitter" /> 
 
-• `get` **maxVerticalJitter**(): `number`
+• `get` **maxVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取相机垂直抖动最大值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -156,19 +138,18 @@ ___
 
 相机垂直抖动最大值
 
-• `set` **maxVerticalJitter**(`value`): `void`
+• `set` **maxVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置相机垂直抖动最大值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -176,23 +157,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  新相机垂直抖动最大值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxVerticalOffset
+### maxVerticalOffset <Score text="maxVerticalOffset" /> 
 
-• `get` **maxVerticalOffset**(): `number`
+• `get` **maxVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取垂直偏移最大值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -200,19 +175,18 @@ ___
 
 垂直偏移最大值
 
-• `set` **maxVerticalOffset**(`value`): `void`
+• `set` **maxVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置垂直偏移最大值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -220,23 +194,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  垂直偏移最大值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### minHorizontalJitter
+### minHorizontalJitter <Score text="minHorizontalJitter" /> 
 
-• `get` **minHorizontalJitter**(): `number`
+• `get` **minHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取相机水平抖动最小值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -244,19 +212,18 @@ ___
 
 相机水平抖动最小值
 
-• `set` **minHorizontalJitter**(`value`): `void`
+• `set` **minHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置相机水平抖动最小值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -264,23 +231,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  新相机水平抖动最小值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### minHorizontalOffset
+### minHorizontalOffset <Score text="minHorizontalOffset" /> 
 
-• `get` **minHorizontalOffset**(): `number`
+• `get` **minHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取水平偏移最小值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -288,13 +249,11 @@ ___
 
 水平偏移最小值
 
-• `set` **minHorizontalOffset**(`value`): `void`
+• `set` **minHorizontalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置水平偏移最小值
-
-**`Effect`**
 
 装备热武器前仅服务器调用，装备后双端都可调用
 
@@ -304,23 +263,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  水平偏移最小值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### minVerticalJitter
+### minVerticalJitter <Score text="minVerticalJitter" /> 
 
-• `get` **minVerticalJitter**(): `number`
+• `get` **minVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取相机垂直抖动最小值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -328,19 +281,18 @@ ___
 
 相机垂直抖动最小值
 
-• `set` **minVerticalJitter**(`value`): `void`
+• `set` **minVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置相机垂直抖动最小值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -348,23 +300,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  新相机垂直抖动最小值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### minVerticalOffset
+### minVerticalOffset <Score text="minVerticalOffset" /> 
 
-• `get` **minVerticalOffset**(): `number`
+• `get` **minVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取垂直偏移最小值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -372,19 +318,18 @@ ___
 
 垂直偏移最小值
 
-• `set` **minVerticalOffset**(`value`): `void`
+• `set` **minVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置垂直偏移最小值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -392,23 +337,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  垂直偏移最小值 |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### getDeepJitter
+### getDeepJitter <Score text="getDeepJitter" /> 
 
-▸ **getDeepJitter**(): `number`
+▸ **getDeepJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取深度抖动值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -418,17 +357,14 @@ ___
 
 ___
 
-### getHorizontalJitter
+### getHorizontalJitter <Score text="getHorizontalJitter" /> 
 
-▸ **getHorizontalJitter**(): `number`
+▸ **getHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取水平抖动值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -438,17 +374,14 @@ ___
 
 ___
 
-### getHorizontalOffset
+### getHorizontalOffset <Score text="getHorizontalOffset" /> 
 
-▸ **getHorizontalOffset**(): `number`
+▸ **getHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取水平偏移值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -458,17 +391,14 @@ ___
 
 ___
 
-### getVerticalJitter
+### getVerticalJitter <Score text="getVerticalJitter" /> 
 
-▸ **getVerticalJitter**(): `number`
+▸ **getVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取垂直抖动值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -478,17 +408,14 @@ ___
 
 ___
 
-### getVerticalOffset
+### getVerticalOffset <Score text="getVerticalOffset" /> 
 
-▸ **getVerticalOffset**(): `number`
+▸ **getVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取垂直偏移值
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

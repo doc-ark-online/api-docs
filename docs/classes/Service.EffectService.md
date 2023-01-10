@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / EffectService
 
-# EffectService <Badge type="tip" text="Class" />
+# EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
 **`Instance`**
 
@@ -24,33 +24,25 @@
 
 ## Methods
 
-### clearAll
+### clearAll <Score text="clearAll" /> 
 
-▸ **clearAll**(): `void`
+▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止所有特效，并释放所有特效资源
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### getEffectGameObject
+### getEffectGameObject <Score text="getEffectGameObject" /> 
 
-▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\>
+▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 根据播放id获取一个特效对象
-
-**`Effect`**
 
 客户端生效
 
@@ -68,15 +60,13 @@ Sound对象的gameObject
 
 ___
 
-### playEffectAtLocation
+### playEffectAtLocation <Score text="playEffectAtLocation" /> 
 
-▸ **playEffectAtLocation**(`resId`, `location`, `loop?`, `rotation?`, `scale?`): `number`
+▸ **playEffectAtLocation**(`resId`, `location`, `loop?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 在指定位置播放特效
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -98,15 +88,13 @@ ___
 
 ___
 
-### playEffectOnGameObject
+### playEffectOnGameObject <Score text="playEffectOnGameObject" /> 
 
-▸ **playEffectOnGameObject**(`resId`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number`
+▸ **playEffectOnGameObject**(`resId`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 在一个GameObject上播放特效
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -115,7 +103,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `resId` | `string` |  特效资源Id |
-| `target` | `GameObject` |  目标GameObject \| 目标GameObject的guid |
+| `target` | `GameObject` |  目标GameObject \| 目标GameObject的GUID |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `offset?` | [`Vector`](Type.Vector.md) |  坐标偏移 default: Type.Vector.zero |
 | `rotation?` | [`Rotation`](Type.Rotation.md) |  旋转 default: Type.Rotation.zero |
@@ -129,15 +117,13 @@ ___
 
 ___
 
-### playEffectOnPlayer
+### playEffectOnPlayer <Score text="playEffectOnPlayer" /> 
 
-▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number`
+▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 在一个角色的挂点上播放特效
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -161,33 +147,26 @@ ___
 
 ___
 
-### stopAllEffect
+### stopAllEffect <Score text="stopAllEffect" /> 
 
-▸ **stopAllEffect**(): `void`
+▸ **stopAllEffect**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止所有特效
 
-**`Effect`**
-
 调用端生效|服务端调用自动广播
 
-#### Returns
-
-`void`
 
 ___
 
-### stopEffect
+### stopEffect <Score text="stopEffect" /> 
 
-▸ **stopEffect**(`playId`): `void`
+▸ **stopEffect**(`playId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止一个特效的播放
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -197,21 +176,16 @@ ___
 | :------ | :------ | :------ |
 | `playId` | `number` |  播放的唯一标识 |
 
-#### Returns
-
-`void`
 
 ___
 
-### stopEffectFromHost
+### stopEffectFromHost <Score text="stopEffectFromHost" /> 
 
-▸ **stopEffectFromHost**(`resId`, `target?`): `void`
+▸ **stopEffectFromHost**(`resId`, `target?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止目标对象上所有资源Id的特效
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -222,23 +196,17 @@ ___
 | `resId` | `string` |  特效资源Id |
 | `target?` | `GameObject` \| [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  目标对象(Player或者GameObject) default: undefined |
 
-#### Returns
-
-`void`
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`EffectService`](Service.EffectService.md)
+▸ `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取特效管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

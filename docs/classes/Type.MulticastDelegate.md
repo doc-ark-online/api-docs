@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / MulticastDelegate
 
-# MulticastDelegate<T\> <Badge type="tip" text="Class" />
+# MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
 **`Description`**
 
@@ -8,7 +8,6 @@
 
 **`Effect`**
 
-调用端生效
 
 ## Type parameters
 
@@ -37,17 +36,14 @@
 
 ## Methods
 
-### add
+### add <Score text="add" /> 
 
-▸ **add**(`func`): `void`
+▸ **add**(`func`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绑定代理函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -55,9 +51,6 @@
 | :------ | :------ | :------ |
 | `func` | `T` |  绑定的函数 default |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -65,17 +58,14 @@
 
 ___
 
-### broadcast
+### broadcast <Score text="broadcast" /> 
 
-▸ **broadcast**(`...arg`): `void`
+▸ **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 广播通知代理函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -83,9 +73,6 @@ ___
 | :------ | :------ | :------ |
 | `...arg` | `Parameters`<`T`\> |  参数 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -93,35 +80,26 @@ ___
 
 ___
 
-### clear
+### clear <Score text="clear" /> 
 
-▸ **clear**(): `void`
+▸ **clear**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 情况委托
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### remove
+### remove <Score text="remove" /> 
 
-▸ **remove**(`func`): `void`
+▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 删除绑定代理函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -129,9 +107,6 @@ ___
 | :------ | :------ | :------ |
 | `func` | `T` |  删除绑定的函数 default |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

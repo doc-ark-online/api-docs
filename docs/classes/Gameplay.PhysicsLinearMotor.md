@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsLinearMotor
 
-# PhysicsLinearMotor <Badge type="tip" text="Class" />
+# PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
 **`Description`**
 
@@ -20,12 +20,28 @@
 | **[maxVelocity](Gameplay.PhysicsLinearMotor.md#maxvelocity)**(): [`Vector`](Type.Vector.md) <br> 获取最大速度|
 | **[strength](Gameplay.PhysicsLinearMotor.md#strength)**(): `number` <br> 获取加速度|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
+
 ## Accessors
 
-### enable
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -39,13 +55,11 @@
 
 激活状态
 
-• `set` **enable**(`value`): `void`
+• `set` **enable**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置激活状态
-
-**`Effect`**
 
 自动同步
 
@@ -55,12 +69,9 @@
 | :------ | :------ | :------ |
 | `value` | `boolean` | 激活状态 |
 
-#### Returns
-
-`void`
 
 
-### maxVelocity
+### maxVelocity <Score text="maxVelocity" /> 
 
 • `get` **maxVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -74,13 +85,11 @@
 
 最大速度
 
-• `set` **maxVelocity**(`maxSpeed`): `void`
+• `set` **maxVelocity**(`maxSpeed`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置最大速度
-
-**`Effect`**
 
 自动同步
 
@@ -90,12 +99,9 @@
 | :------ | :------ | :------ |
 | `maxSpeed` | [`Vector`](Type.Vector.md) | 最大速度 |
 
-#### Returns
-
-`void`
 
 
-### strength
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
 
@@ -109,13 +115,11 @@
 
 加速度
 
-• `set` **strength**(`acceleration`): `void`
+• `set` **strength**(`acceleration`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置加速度
-
-**`Effect`**
 
 自动同步
 
@@ -125,9 +129,6 @@
 | :------ | :------ | :------ |
 | `acceleration` | `number` | 加速度 |
 
-#### Returns
-
-`void`
 
 
 ## Methods

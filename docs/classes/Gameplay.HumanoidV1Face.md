@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Face
 
-# HumanoidV1Face <Badge type="tip" text="Class" />
+# HumanoidV1Face <Badge type="tip" text="Class" /> <Score text="HumanoidV1Face" />
 
 **`Description`**
 
@@ -19,15 +19,13 @@
 
 ## Methods
 
-### getMesh
+### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string`
+▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取脸部模型
-
-**`Effect`**
 
 双端
 
@@ -35,7 +33,7 @@
 
 `string`
 
-模型Guid
+模型GUID
 
 #### Implementation of
 
@@ -43,19 +41,19 @@
 
 ___
 
-### setMesh
+### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`guid`, `sync`): `void`
+▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置脸部模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载, 则本地设置时异步的, 需要监听onMeshChanged回调
+如果模型GUID没有预加载, 则本地设置时异步的, 需要监听onMeshChanged回调
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -64,12 +62,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

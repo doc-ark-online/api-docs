@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / SoundService
 
-# SoundService <Badge type="tip" text="Class" />
+# SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 音效管理器
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用getInstance获取对象
+
+:::
 
 ## Table of contents
 
@@ -39,9 +41,9 @@
 
 ## Properties
 
-### onPlaySoundComplete
+### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
-• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\>
+• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
 **`Description`**
 
@@ -49,7 +51,7 @@
 
 ## Accessors
 
-### BGMVolumeScale
+### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
 • `get` **BGMVolumeScale**(): `number`
 
@@ -57,9 +59,6 @@
 
 BGM音量
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -71,9 +70,6 @@ BGM音量
 
 BGM音量
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -81,45 +77,40 @@ BGM音量
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### volumeScale
+### volumeScale <Score text="volumeScale" /> 
 
-• `get` **volumeScale**(): `number`
+• `get` **volumeScale**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 音效的音量
 
-**`Precautions`**
+::: warning Precautions
 
 取值范围0-1
 
-**`Effect`**
+:::
 
-只在客户端调用生效
 
 #### Returns
 
 `number`
 
-• `set` **volumeScale**(`value`): `void`
+• `set` **volumeScale**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 音效的音量
 
-**`Precautions`**
+::: warning Precautions
 
 取值范围0-1
 
-**`Effect`**
+:::
 
-只在客户端调用生效
 
 #### Parameters
 
@@ -127,39 +118,28 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### clearAll
+### clearAll <Score text="clearAll" /> 
 
-▸ **clearAll**(): `void`
+▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止所有音效和BGM，并释放所有音效和BGM资源
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### get3DSoundGameObject
+### get3DSoundGameObject <Score text="get" /> 
 
-▸ **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\>
+▸ **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 根据播放id获取一个Sound
-
-**`Effect`**
 
 客户端生效
 
@@ -177,15 +157,13 @@ Sound对象的gameObject
 
 ___
 
-### play3DSound
+### play3DSound <Score text="play" /> 
 
-▸ **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number`
+▸ **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 在目标播放3D音效
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -194,10 +172,10 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `resId` | `string` |  资源Id |
-| `target` | `string` \| `GameObject` \| [`Vector`](Type.Vector.md) |  播放目标 (GameObject的guid \| GameObject \| 世界坐标) |
+| `target` | `string` \| `GameObject` \| [`Vector`](Type.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
 | `loopNum?` | `number` |  循环次数 default: 1 |
 | `volume?` | `number` |  音量 default: 1 |
-| `playParam?` | `any` |  播放参数: {radius:半径} default: {} |
+| `playParam?` | `any` |  播放参数: { innerRadius: 内部半径(默认值200), falloffDistance: 衰减距离(默认值600)，与内部半径是累加关系。(内部半径+衰减距离)是最终范围 } default: {} |
 
 #### Returns
 
@@ -207,15 +185,13 @@ ___
 
 ___
 
-### playBGM
+### playBGM <Score text="playBGM" /> 
 
-▸ **playBGM**(`resId`, `volume?`): `void`
+▸ **playBGM**(`resId`, `volume?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 播放背景音乐
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -226,27 +202,24 @@ ___
 | `resId` | `string` |  资源Id |
 | `volume?` | `number` |  音量 default: 1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### playSound
+### playSound <Score text="playSound" /> 
 
-▸ **playSound**(`resId`, `loopNum?`, `volume?`): `string`
+▸ **playSound**(`resId`, `loopNum?`, `volume?`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 根据资源Id播放声音
 
-**`Effect`**
-
 调用端生效|服务端调用自动广播
 
-**`Precautions`**
+::: warning Precautions
 
 不可叠加
+
+:::
 
 #### Parameters
 
@@ -264,15 +237,13 @@ ___
 
 ___
 
-### stop3DSound
+### stop3DSound <Score text="stop" /> 
 
-▸ **stop3DSound**(`playId`): `void`
+▸ **stop3DSound**(`playId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止3D声音
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -282,75 +253,55 @@ ___
 | :------ | :------ | :------ |
 | `playId` | `number` |  播放声音的唯一标识 |
 
-#### Returns
-
-`void`
 
 ___
 
-### stopAll3DSound
+### stopAll3DSound <Score text="stopAll" /> 
 
-▸ **stopAll3DSound**(): `void`
+▸ **stopAll3DSound**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止一切3D声音
 
-**`Effect`**
-
 调用端生效|服务端调用自动广播
 
-#### Returns
-
-`void`
 
 ___
 
-### stopAllSound
+### stopAllSound <Score text="stopAllSound" /> 
 
-▸ **stopAllSound**(): `void`
+▸ **stopAllSound**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止除BGM以外的一切2D声音
 
-**`Effect`**
-
 调用端生效|服务端调用自动广播
 
-#### Returns
-
-`void`
 
 ___
 
-### stopBGM
+### stopBGM <Score text="stopBGM" /> 
 
-▸ **stopBGM**(): `void`
+▸ **stopBGM**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止背景音乐
 
-**`Effect`**
-
 调用端生效|服务端调用自动广播
 
-#### Returns
-
-`void`
 
 ___
 
-### stopSound
+### stopSound <Score text="stopSound" /> 
 
-▸ **stopSound**(`resId`): `void`
+▸ **stopSound**(`resId`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 根据资源Id停止声音
-
-**`Effect`**
 
 调用端生效|服务端调用自动广播
 
@@ -360,23 +311,17 @@ ___
 | :------ | :------ | :------ |
 | `resId` | `string` |  资源Id |
 
-#### Returns
-
-`void`
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`SoundService`](Service.SoundService.md)
+▸ `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取音效管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

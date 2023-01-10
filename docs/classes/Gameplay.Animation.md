@@ -1,22 +1,24 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Animation
 
-# Animation <Badge type="tip" text="Class" />
+# Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
 **`Description`**
 
 动画类
 
-**`Precautions`**
+::: warning Precautions
 
 请不要直接使用new创建
+
+:::
 
 **`Example`**
 
 使用示例:创建方式
 ```ts
 Gameplay.asyncGetCurrentPlayer().then((player) => {
-  let Anim = player.character.playAnimation(animGuid);
-  Anim = player.character.loadAnimation(animGuid);
+  let Anim = player.character.playAnimation(animGUID);
+  Anim = player.character.loadAnimation(animGUID);
 });
 ```
 
@@ -39,7 +41,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
-### isPlaying
+### isPlaying <Score text="isPlaying" /> 
 
 • `get` **isPlaying**(): `boolean`
 
@@ -49,7 +51,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 **`Example`**
 
-判断是否该动画对象是否播放中
+使用示例:判断是否该动画对象是否播放中
 ```ts
 if (anim.isPlaying) {
    do Something
@@ -64,7 +66,7 @@ if (anim.isPlaying) {
 
 ___
 
-### length
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
 
@@ -74,9 +76,9 @@ ___
 
 **`Example`**
 
-获取对象时长
+使用示例:获取对象时长
 ```ts
-let anim = player.character.playAnimation(animGuid);
+let anim = player.character.playAnimation(animGUID);
 console.log(anim.length)
 ```
 
@@ -86,7 +88,7 @@ console.log(anim.length)
 
 ___
 
-### loop
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `number`
 
@@ -96,9 +98,9 @@ Auto模式表示循环播放次数，Custom模式表示是否循环  非1:是，
 
 **`Example`**
 
-获取循环次数
+使用示例:获取循环次数
 ```ts
-let anim = player.character.playAnimation(animGuid);
+let anim = player.character.playAnimation(animGUID);
 console.log(anim.loop)
 ```
 
@@ -114,9 +116,9 @@ console.log(anim.loop)
 
 **`Example`**
 
-设置循环次数
+使用示例:设置循环次数
 ```ts
-let anim = player.character.playAnimation(animGuid);
+let anim = player.character.playAnimation(animGUID);
 anim.loop = 23333;
 ```
 
@@ -126,13 +128,10 @@ anim.loop = 23333;
 | :------ | :------ |
 | `loopCount` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### onAnimFinished
+### onAnimFinished <Score text="onAnimFinished" /> 
 
 • `get` **onAnimFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -142,7 +141,7 @@ ___
 
 **`Example`**
 
-动画播放结束后执行逻辑
+使用示例:动画播放结束后执行逻辑
 ```ts
 anim.onAnimFinished.add(()=>{
        do something
@@ -155,7 +154,7 @@ anim.onAnimFinished.add(()=>{
 
 ___
 
-### rate
+### rate <Score text="rate" /> 
 
 • `get` **rate**(): `number`
 
@@ -165,9 +164,9 @@ ___
 
 **`Example`**
 
-获取速率
+使用示例:获取速率
 ```ts
-let anim = player.character.playAnimation(animGuid);
+let anim = player.character.playAnimation(animGUID);
 console.log(anim.rate);
 ```
 
@@ -184,14 +183,13 @@ console.log(anim.rate);
 
 **`Example`**
 
-两倍速播放
+使用示例:动画播放方式
 ```ts
-let anim = player.character.loadAnimation(animGuid);
+// 两倍速播放
+let anim = player.character.loadAnimation(animGUID);
 anim.rate = 2;
 anim.play();
-```
-动画播放加速/减慢成n秒
-```ts
+// 动画播放加速/减慢成n秒
 this.Anim = player.character.loadAnimation(this.AnimList[0]);
 this.Anim.rate = this.Anim.length/n;
 this.Anim.play();
@@ -203,13 +201,10 @@ this.Anim.play();
 | :------ | :------ |
 | `animRate` | `number` |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### pause
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `boolean`
 
@@ -217,18 +212,16 @@ this.Anim.play();
 
 暂停动画,不会触发onAnimFinished委托
 
-**`Effect`**
-
 与角色创建方式绑定
 
 **`Example`**
 
 使用示例:暂停动画
 ```ts
-let anim = player.character.loadAnimation(animGuid);
+let anim = player.character.loadAnimation(animGUID);
 anim.play();
 .......
-anim.pause();
+anim.pause(); <Badge type="tip" text="other" />
 ```
 
 #### Returns
@@ -239,7 +232,7 @@ true 成功，false 失败
 
 ___
 
-### play
+### play <Score text="play" /> 
 
 ▸ **play**(): `boolean`
 
@@ -247,16 +240,14 @@ ___
 
 从动画资源的起点播放动画
 
-**`Effect`**
-
 与角色创建方式绑定
 
 **`Example`**
 
 使用示例:播放动画
 ```ts
-let anim = player.character.loadAnimation(animGuid);
-anim.play();
+let anim = player.character.loadAnimation(animGUID);
+anim.play(); <Badge type="tip" text="other" />
 ```
 
 #### Returns
@@ -267,7 +258,7 @@ true 成功，false 失败
 
 ___
 
-### resume
+### resume <Score text="resume" /> 
 
 ▸ **resume**(): `boolean`
 
@@ -275,18 +266,16 @@ ___
 
 从当前位置继续动画播放
 
-**`Effect`**
-
 与角色创建方式绑定
 
 **`Example`**
 
 使用示例:恢复播放
 ```ts
-let anim = player.character.loadAnimation(animGuid);
+let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.resume();
+anim.resume(); <Badge type="tip" text="other" />
 ```
 
 #### Returns
@@ -297,7 +286,7 @@ true 成功，false 失败
 
 ___
 
-### stop
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `boolean`
 
@@ -305,18 +294,16 @@ ___
 
 停止播放,不会触发onAnimFinished委托
 
-**`Effect`**
-
 与角色创建方式绑定
 
 **`Example`**
 
 使用示例:暂停播放
 ```ts
-let anim = player.character.loadAnimation(animGuid);
+let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.stop();
+anim.stop(); <Badge type="tip" text="other" />
 ```
 
 #### Returns

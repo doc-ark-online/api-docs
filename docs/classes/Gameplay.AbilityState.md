@@ -1,14 +1,16 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
 
-# AbilityState <Badge type="tip" text="Class" />
+# AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
 **`Description`**
 
 技能状态
 
-**`Precautions`**
+::: warning Precautions
 
 服务端运行，多数情况客户端运行会自动同步至服务端
+
+:::
 
 ## Table of contents
 
@@ -29,17 +31,14 @@
 
 ## Accessors
 
-### animation
+### animation <Score text="animation" /> 
 
-• `get` **animation**(): `string`
+• `get` **animation**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取动画资源
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -47,15 +46,12 @@
 
 资源GUID
 
-• `set` **animation**(`AnimGuid`): `void`
+• `set` **animation**(`AnimGuid`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置动画资源
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -63,23 +59,17 @@
 | :------ | :------ | :------ |
 | `AnimGuid` | `string` | 资源GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### duration
+### duration <Score text="duration" /> 
 
-• `get` **duration**(): `number`
+• `get` **duration**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取释放状态当前执行时间
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -89,21 +79,20 @@ ___
 
 ___
 
-### executeTime
+### executeTime <Score text="executeTime" /> 
 
-• `get` **executeTime**(): `number`
+• `get` **executeTime**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取释放状态可执行总时长时间
 
-**`Precautions`**
+::: warning Precautions
 
 状态执行的时间，小于0为无限（根据Cell耗时最长的来确定），否则按配置时间进行结束
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Returns
 
@@ -111,19 +100,18 @@ ___
 
 获取释放状态可执行总时长时间
 
-• `set` **executeTime**(`Time`): `void`
+• `set` **executeTime**(`Time`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置释放状态可执行总时长时间
 
-**`Precautions`**
+::: warning Precautions
 
 状态执行的时间，小于0为无限（根据Cell耗时最长的来确定），否则按配置时间进行结束
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Parameters
 
@@ -131,23 +119,17 @@ ___
 | :------ | :------ | :------ |
 | `Time` | `number` | 设置释放状态可执行总时长时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### loop
+### loop <Score text="loop" /> 
 
-• `get` **loop**(): `boolean`
+• `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取释放状态是否可循环isLoop
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -155,15 +137,12 @@ ___
 
 true或false
 
-• `set` **loop**(`LoopState`): `void`
+• `set` **loop**(`LoopState`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置释放状态是否循环
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -171,23 +150,17 @@ true或false
 | :------ | :------ | :------ |
 | `LoopState` | `boolean` | true或false |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### addControlAbility
+### addControlAbility <Score text="addControlAbility" /> 
 
-▸ **addControlAbility**(`ControlType`): `void`
+▸ **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加释放状态的控制性
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -195,23 +168,17 @@ true或false
 | :------ | :------ | :------ |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
-#### Returns
-
-`void`
 
 ___
 
-### cancelControlAbility
+### cancelControlAbility <Score text="cancelControlAbility" /> 
 
-▸ **cancelControlAbility**(`ControlType`): `void`
+▸ **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 取消释放状态的控制性
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -219,23 +186,17 @@ ___
 | :------ | :------ | :------ |
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
-#### Returns
-
-`void`
 
 ___
 
-### enableJump
+### enableJump <Score text="enableJump" /> 
 
-▸ **enableJump**(): `boolean`
+▸ **enableJump**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取对象是否可跳跃
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -245,17 +206,14 @@ true或false
 
 ___
 
-### enableMove
+### enableMove <Score text="enableMove" /> 
 
-▸ **enableMove**(): `boolean`
+▸ **enableMove**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取对象是否可移动
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -265,17 +223,14 @@ true或false
 
 ___
 
-### enableTurn
+### enableTurn <Score text="enableTurn" /> 
 
-▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md)
+▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取对象是否可转向
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

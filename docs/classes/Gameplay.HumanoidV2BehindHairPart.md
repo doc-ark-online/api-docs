@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2BehindHairPart
 
-# HumanoidV2BehindHairPart <Badge type="tip" text="Class" />
+# HumanoidV2BehindHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2BehindHairPart" />
 
 **`Description`**
 
@@ -29,15 +29,13 @@
 
 ## Methods
 
-### getColor
+### getColor <Score text="getColor" /> 
 
-▸ **getColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头发颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -53,15 +51,13 @@
 
 ___
 
-### getGradientColor
+### getGradientColor <Score text="getGradientColor" /> 
 
-▸ **getGradientColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getGradientColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头发渐变染色
-
-**`Effect`**
 
 客户端生效
 
@@ -77,15 +73,13 @@ ___
 
 ___
 
-### getGradientIntensity
+### getGradientIntensity <Score text="getGradientIntensity" /> 
 
-▸ **getGradientIntensity**(): `number`
+▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头发渐变区域
-
-**`Effect`**
 
 客户端生效
 
@@ -101,15 +95,13 @@ ___
 
 ___
 
-### getHighlightColor
+### getHighlightColor <Score text="getHighlightColor" /> 
 
-▸ **getHighlightColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头发高光颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -125,15 +117,13 @@ ___
 
 ___
 
-### getHighlightMask
+### getHighlightMask <Score text="getHighlightMask" /> 
 
-▸ **getHighlightMask**(): `string`
+▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头发高光形状
-
-**`Effect`**
 
 客户端生效
 
@@ -141,7 +131,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -149,15 +139,13 @@ guid
 
 ___
 
-### getMesh
+### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string`
+▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取后发部位模型
-
-**`Effect`**
 
 双端
 
@@ -165,7 +153,7 @@ ___
 
 `string`
 
-模型Guid
+模型GUID
 
 #### Implementation of
 
@@ -173,15 +161,13 @@ ___
 
 ___
 
-### setColor
+### setColor <Score text="setColor" /> 
 
-▸ **setColor**(`color`, `sync`): `void`
+▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头发颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -193,9 +179,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -203,15 +186,13 @@ sync = true:双端
 
 ___
 
-### setGradientColor
+### setGradientColor <Score text="setGradientColor" /> 
 
-▸ **setGradientColor**(`color`, `sync`): `void`
+▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头发渐变染色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -223,9 +204,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -233,15 +211,13 @@ sync = true:双端
 
 ___
 
-### setGradientIntensity
+### setGradientIntensity <Score text="setGradientIntensity" /> 
 
-▸ **setGradientIntensity**(`intensity`, `sync`): `void`
+▸ **setGradientIntensity**(`intensity`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头发渐变区域
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -253,9 +229,6 @@ sync = true:双端
 | `intensity` | `number` | 强度 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -263,15 +236,13 @@ sync = true:双端
 
 ___
 
-### setHighlightColor
+### setHighlightColor <Score text="setHighlightColor" /> 
 
-▸ **setHighlightColor**(`color`, `sync`): `void`
+▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头发高光颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -283,9 +254,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -293,15 +261,13 @@ sync = true:双端
 
 ___
 
-### setHighlightMask
+### setHighlightMask <Score text="setHighlightMask" /> 
 
-▸ **setHighlightMask**(`guid`, `sync`): `void`
+▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头发高光形状
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -310,12 +276,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -323,19 +286,19 @@ sync = true:双端
 
 ___
 
-### setMesh
+### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`guid`, `sync`): `void`
+▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置后发部位模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型GUID没有预加载，则v2本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -344,12 +307,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

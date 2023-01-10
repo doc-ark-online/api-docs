@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotation
 
-# PhysicsRotation <Badge type="tip" text="Class" />
+# PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
 **`Description`**
 
@@ -21,14 +21,30 @@
 | **[enable](Gameplay.PhysicsRotation.md#enable)**(): `boolean` <br> 获取旋转轴约束组件是否开启|
 | **[strength](Gameplay.PhysicsRotation.md#strength)**(): `number` <br> 获取最大加速度|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
 | **[getAngularLimitType](Gameplay.PhysicsRotation.md#getangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取限制类型|
 | **[setAngularLimitType](Gameplay.PhysicsRotation.md#setangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md), [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
+
 ## Accessors
 
-### angularLimit
+### angularLimit <Score text="angularLimit" /> 
 
 • `get` **angularLimit**(): [`Vector`](Type.Vector.md)
 
@@ -52,13 +68,10 @@
 | :------ | :------ | :------ |
 | `LimitValue` | [`Vector`](Type.Vector.md) | 限制值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### angularVelocity
+### angularVelocity <Score text="angularVelocity" /> 
 
 • `get` **angularVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -84,12 +97,9 @@ ___
 | :------ | :------ | :------ |
 | `Velocity` | [`Vector`](Type.Vector.md) | 速度向量 |
 
-#### Returns
-
-`void`
 
 
-### enable
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -115,12 +125,9 @@ ___
 | :------ | :------ | :------ |
 | `EnableState` | `boolean` | 要设置的激活状态 |
 
-#### Returns
-
-`void`
 
 
-### strength
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
 
@@ -146,22 +153,17 @@ ___
 | :------ | :------ | :------ |
 | `Strength` | `number` | 最大加速度 |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### getAngularLimitType
+### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md)
+▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取限制类型
-
-**`Effect`**
 
 调用端
 
@@ -178,15 +180,13 @@ ___
 限制类型
 
 
-### setAngularLimitType
+### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-▸ **setAngularLimitType**(`Axis`, `rotationType`): `void`
+▸ **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置旋转类型
-
-**`Effect`**
 
 调用端
 
@@ -197,6 +197,3 @@ ___
 | `Axis` | [`AxisType`](../enums/Gameplay.AxisType.md) | 轴类型 |
 | `rotationType` | [`LimitType`](../enums/Gameplay.LimitType.md) | 旋转类型向量，顺序为x，y，z |
 
-#### Returns
-
-`void`

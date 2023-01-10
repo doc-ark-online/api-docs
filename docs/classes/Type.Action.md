@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Action
 
-# Action <Badge type="tip" text="Class" />
+# Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
 **`Description`**
 
@@ -32,17 +32,14 @@
 
 ## Accessors
 
-### count
+### count <Score text="count" /> 
 
-• `get` **count**(): `number`
+• `get` **count**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 监听方法的数量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -50,17 +47,14 @@
 
 ## Methods
 
-### add
+### add <Score text="add" /> 
 
-▸ **add**(`fn`, `thisArg?`): `void`
+▸ **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加一个监听方法(有重复过滤)
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -69,23 +63,17 @@
 | `fn` | `Function` |  方法 |
 | `thisArg?` | `any` |  域 default: undefined |
 
-#### Returns
-
-`void`
 
 ___
 
-### call
+### call <Score text="call" /> 
 
-▸ **call**(`...params`): `void`
+▸ **call**(`...params`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 执行
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -93,41 +81,29 @@ ___
 | :------ | :------ | :------ |
 | `...params` | `any` |  参数序列 |
 
-#### Returns
-
-`void`
 
 ___
 
-### clear
+### clear <Score text="clear" /> 
 
-▸ **clear**(): `void`
+▸ **clear**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清除所有监听
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### includes
+### includes <Score text="includes" /> 
 
-▸ **includes**(`fn`, `thisArg`): `boolean`
+▸ **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断是否包含某个监听方法
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -144,17 +120,14 @@ ___
 
 ___
 
-### remove
+### remove <Score text="remove" /> 
 
-▸ **remove**(`fn`, `thisArg`): `void`
+▸ **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 移除一个监听方法
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -163,6 +136,3 @@ ___
 | `fn` | `Function` |  方法 |
 | `thisArg` | `any` |  域 |
 
-#### Returns
-
-`void`

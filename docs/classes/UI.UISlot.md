@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UISlot
 
-# UISlot <Badge type="tip" text="Class" />
+# UISlot <Badge type="tip" text="Class" /> <Score text="UISlot" />
 
 **`Deprecated`**
 
@@ -27,9 +27,9 @@ UI插槽
 
 ## Accessors
 
-### autoSizeEnable
+### autoSizeEnable <Score text="autoSizeEnable" /> 
 
-• `get` **autoSizeEnable**(): `boolean`
+• `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -39,9 +39,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 获取是否自动设置大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -49,7 +46,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 是否自动设置大小
 
-• `set` **autoSizeEnable**(`autoSize`): `void`
+• `set` **autoSizeEnable**(`autoSize`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -59,9 +56,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 设置是否自动设置大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -69,15 +63,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ | :------ |
 | `autoSize` | `boolean` | 是否自动设置大小 |
 
-#### Returns
-
-`void`
 
 ___
 
-### constraints
+### constraints <Score text="constraints" /> 
 
-• `get` **constraints**(): [`UIConstraintAnchors`](UI.UIConstraintAnchors.md)
+• `get` **constraints**(): [`UIConstraintAnchors`](UI.UIConstraintAnchors.md) <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -87,9 +78,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 获取Slot布局(Figma布局)
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -97,7 +85,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 Slot布局
 
-• `set` **constraints**(`ininconstraints`): `void`
+• `set` **constraints**(`ininconstraints`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -107,9 +95,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 设置Slot布局(figma布局)
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -117,15 +102,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ |
 | `ininconstraints` | [`UIConstraintAnchors`](UI.UIConstraintAnchors.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### position
+### position <Score text="position" /> 
 
-• `get` **position**(): [`Vector2`](Type.Vector2.md)
+• `get` **position**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -135,9 +117,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 获取位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -145,7 +124,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 FVector2D
 
-• `set` **position**(`inFigmaPosition`): `void`
+• `set` **position**(`inFigmaPosition`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -155,9 +134,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 设置Slot位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -165,15 +141,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ | :------ |
 | `inFigmaPosition` | [`Vector2`](Type.Vector2.md) | Slot位置 |
 
-#### Returns
-
-`void`
 
 ___
 
-### size
+### size <Score text="size" /> 
 
-• `get` **size**(): [`Vector2`](Type.Vector2.md)
+• `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -183,9 +156,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 获取大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -193,7 +163,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 FVector2D
 
-• `set` **size**(`inSize`): `void`
+• `set` **size**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -203,9 +173,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 设置大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -213,15 +180,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | size |
 
-#### Returns
-
-`void`
 
 ___
 
-### transform
+### transform <Score text="transform" /> 
 
-• `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\>
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -231,9 +195,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 得到Slot大小和位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -241,7 +202,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 Slot大小和位置
 
-• `set` **transform**(`inTransform`): `void`
+• `set` **transform**(`inTransform`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -251,9 +212,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 设置Slot大小和位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -261,13 +219,10 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ | :------ |
 | `inTransform` | [`UITransform`](UI.UITransform.md) | 大小位置 |
 
-#### Returns
-
-`void`
 
 ___
 
-### zOrder
+### zOrder <Score text="zOrder" /> 
 
 • `get` **zOrder**(): `number`
 
@@ -277,11 +232,8 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-获取zOrder
+获取zOrder <Badge type="tip" text="other" />
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -297,11 +249,8 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 **`Description`**
 
-设置zOrder
+设置zOrder <Badge type="tip" text="other" />
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -309,15 +258,12 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 | :------ | :------ | :------ |
 | `InZOrder` | `number` | 值越大在越上层 |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### equal
+### equal <Score text="equal" /> 
 
-▸ **equal**(`that`): `boolean`
+▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -327,9 +273,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 判断是不是同一个Slot
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 

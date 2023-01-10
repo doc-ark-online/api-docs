@@ -1,13 +1,13 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterBase
 
-# CharacterBase <Badge type="tip" text="Class" />
+# CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
 **`Description`**
 
-- CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
-- CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
-- CharacterBase通常会有默认的形象，你也可以对不同的形象进行编辑，以及选择设置为无形象
-- 在MW的世界中，无法对CharacterBase进行实例化，它只用于提供玩家角色和非玩家角色的通用功能
+CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
+             CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
+             CharacterBase通常会有默认的形象，你也可以对不同的形象进行编辑，以及选择设置为无形象
+             你无法对CharacterBase进行实例化，它只用于提供玩家角色和非玩家角色的通用功能
 
 ## Hierarchy
 
@@ -61,6 +61,7 @@
 | **[collisionWithOtherCharacterEnable](Gameplay.CharacterBase.md#collisionwithothercharacterenable)**(): `boolean` <br> 能否与其他角色发生碰撞|
 | **[crouchEnable](Gameplay.CharacterBase.md#crouchenable)**(): `boolean` <br> 启用/禁用下蹲能力|
 | **[crouchedHeight](Gameplay.CharacterBase.md#crouchedheight)**(): `number` <br> 下蹲时胶囊体的高度|
+| **[forceUpdateMovement](Gameplay.CharacterBase.md#forceupdatemovement)**(`boolean` |): `void` <br> 启用/禁用强制更新移动|
 | **[gravityScale](Gameplay.CharacterBase.md#gravityscale)**(): `number` <br> 重力倍率|
 | **[groundFriction](Gameplay.CharacterBase.md#groundfriction)**(): `number` <br> 地面摩檫力|
 | **[headUIVisible](Gameplay.CharacterBase.md#headuivisible)**(): `boolean` <br> 头顶UI是否可见|
@@ -94,6 +95,32 @@
 | **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
 | **[walkableFloorAngle](Gameplay.CharacterBase.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[forwardVector](Gameplay.GameObject.md#forwardvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[guid](Gameplay.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
+| **[lockStatus](Gameplay.GameObject.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定|
+| **[name](Gameplay.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
+| **[netStatus](Gameplay.GameObject.md#netstatus)**(): [`NetStatus`](../enums/Type.NetStatus.md) <br> 获取当前物体同步状态|
+| **[parent](Gameplay.GameObject.md#parent)**(): `GameObject` <br> 获取当前父物体|
+| **[relativeLocation](Gameplay.GameObject.md#relativelocation)**(): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[relativeRotation](Gameplay.GameObject.md#relativerotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[relativeScale](Gameplay.GameObject.md#relativescale)**(): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[rightVector](Gameplay.GameObject.md#rightvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[staticStatus](Gameplay.GameObject.md#staticstatus)**(): `boolean` <br> 获取对象是否静态|
+| **[tag](Gameplay.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
+| **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
+| **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+:::
+
+
 | Methods |
 | :-----|
 | **[addImpulse](Gameplay.CharacterBase.md#addimpulse)**([`Vector`](Type.Vector.md), `boolean`): `void` <br> 添加冲量|
@@ -104,19 +131,19 @@
 | **[clearOneDecoration](Gameplay.CharacterBase.md#clearonedecoration)**(`string`): `void` <br> 删除一个挂件|
 | **[crouch](Gameplay.CharacterBase.md#crouch)**(`boolean`): `void` <br> 下蹲|
 | **[getControlRotator](Gameplay.CharacterBase.md#getcontrolrotator)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取控制器的旋转|
-| **[getDecorations](Gameplay.CharacterBase.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的Guid|
+| **[getDecorations](Gameplay.CharacterBase.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的GUID|
 | **[getHeadUIWidget](Gameplay.CharacterBase.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.UIWidget.md) <br> 获取头顶UIWidget|
 | **[getSlotName](Gameplay.CharacterBase.md#getslotname)**([`SlotType`](../enums/Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称|
 | **[isPlayingAnimation](Gameplay.CharacterBase.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画|
 | **[jump](Gameplay.CharacterBase.md#jump)**(): `void` <br> 跳跃|
 | **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象|
 | **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0|0,-90,0|1,1,1",给移动角色编辑器提供的能力|
-| **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过Guid加载插槽跟角色编辑数据|
+| **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过GUID加载插槽跟角色编辑数据|
 | **[loadSlotAndEditorDataByPath](Gameplay.CharacterBase.md#loadslotandeditordatabypath)**(`string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
 | **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`string`, `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
 | **[lookAt](Gameplay.CharacterBase.md#lookat)**([`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
 | **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口是同步的|
-| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(guid,false) instead.|
+| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.|
 | **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> |\>([`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> | <br> 设置外观修改功能|
 | **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**([`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
 | **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(本地生效)|
@@ -127,23 +154,79 @@
 | **[switchToFlying](Gameplay.CharacterBase.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
 | **[switchToWalking](Gameplay.CharacterBase.md#switchtowalking)**(): `void` <br> 切换为行走状态|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
+| **[detachFromGameObject](Gameplay.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
+| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.GameObject.md#getbounds)**(`boolean`, [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`string`): `GameObject` <br> 根据GUID查找子物体|
+| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体|
+| **[getChildren](Gameplay.GameObject.md#getchildren)**(): `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
+| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
+| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.GameObject.md#getrightvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
+| **[getTransform](Gameplay.GameObject.md#gettransform)**([`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.GameObject.md#getupvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getVisibility](Gameplay.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
+| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+| **[isRunningClient](Gameplay.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
+| **[onDestroy](Gameplay.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
+| **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
+| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
+| **[setCollision](Gameplay.GameObject.md#setcollision)**([`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
+| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**([`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.GameObject.md#settransform)**([`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.GameObject.md#setvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
+| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+:::
+
+
 ## Properties
 
-### isV1
+### isV1 <Score text="isV" /> 
 
-• `Private` **isV1**: `any`
+• `Private` **isV1**: `any` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断当前角色是否是V1版本
 
-**`Effect`**
-
 调用端调用生效
 
 ___
 
-### onLoadAppearanceDataAllCompleted
+### onLoadAppearanceDataAllCompleted <Score text="onLoadAppearanceDataAllCompleted" /> 
 
 • **onLoadAppearanceDataAllCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\>
 
@@ -153,7 +236,7 @@ ___
 
 ___
 
-### onMeshChanged
+### onMeshChanged <Score text="onMeshChanged" /> 
 
 • **onMeshChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
 
@@ -163,7 +246,7 @@ ___
 
 ___
 
-### onMovementStateChanged
+### onMovementStateChanged <Score text="onMovementStateChanged" /> 
 
 • **onMovementStateChanged**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged)
 
@@ -173,7 +256,7 @@ ___
 
 ___
 
-### onSetAppearanceDataCompleted
+### onSetAppearanceDataCompleted <Score text="onSetAppearanceDataCompleted" /> 
 
 • **onSetAppearanceDataCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\>
 
@@ -183,7 +266,7 @@ ___
 
 ___
 
-### onTextureChanged
+### onTextureChanged <Score text="onTextureChanged" /> 
 
 • **onTextureChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
 
@@ -193,7 +276,7 @@ ___
 
 ___
 
-### player
+### player <Score text="player" /> 
 
 • **player**: [`Player`](Gameplay.Player.md)
 
@@ -203,7 +286,7 @@ ___
 
 ## Accessors
 
-### airControl
+### airControl <Score text="airControl" /> 
 
 • `get` **airControl**(): `number`
 
@@ -211,9 +294,11 @@ ___
 
 角色在空中时, 控制水平方向移动的灵活度
 
-**`Precautions`**
+::: warning Precautions
 
 范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
+
+:::
 
 #### Returns
 
@@ -225,9 +310,11 @@ ___
 
 角色在空中时, 控制水平方向移动的灵活度
 
-**`Precautions`**
+::: warning Precautions
 
 范围:0~1, 0表示不能控制, 1表示能按地面最大移动速率完全控制
+
+:::
 
 #### Parameters
 
@@ -235,13 +322,10 @@ ___
 | :------ | :------ |
 | `InAirControl` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### airControlBoostMultiplier
+### airControlBoostMultiplier <Score text="airControlBoostMultiplier" /> 
 
 • `get` **airControlBoostMultiplier**(): `number`
 
@@ -249,9 +333,11 @@ ___
 
 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
-**`Precautions`**
+::: warning Precautions
 
 范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
+
+:::
 
 #### Returns
 
@@ -263,9 +349,11 @@ ___
 
 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
-**`Precautions`**
+::: warning Precautions
 
 范围:大于等于0的数字, 取0时, 不会对airControl效果加倍, 无论取值多大, airControl最大值都被限制为1
+
+:::
 
 #### Parameters
 
@@ -273,13 +361,10 @@ ___
 | :------ | :------ |
 | `InAirControlBoostMultiplier` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### airControlBoostVelocityThreshold
+### airControlBoostVelocityThreshold <Score text="airControlBoostVelocityThreshold" /> 
 
 • `get` **airControlBoostVelocityThreshold**(): `number`
 
@@ -287,9 +372,11 @@ ___
 
 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
-**`Precautions`**
+::: warning Precautions
 
 范围: 大于等于0
+
+:::
 
 #### Returns
 
@@ -301,9 +388,11 @@ ___
 
 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
-**`Precautions`**
+::: warning Precautions
 
 范围: 大于等于0
+
+:::
 
 #### Parameters
 
@@ -311,13 +400,10 @@ ___
 | :------ | :------ |
 | `InAirControlBoostVelocityThreshold` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### animationMode
+### animationMode <Score text="animationMode" /> 
 
 • `get` **animationMode**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md)
 
@@ -341,13 +427,10 @@ ___
 | :------ | :------ |
 | `mode` | [`AnimationMode`](../enums/Gameplay.AnimationMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### animationStance
+### animationStance <Score text="animationStance" /> 
 
 • `get` **animationStance**(): `string`
 
@@ -355,37 +438,38 @@ ___
 
 动画姿态
 
-**`Precautions`**
+::: warning Precautions
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的GUID进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+
+:::
 
 #### Returns
 
 `string`
 
-• `set` **animationStance**(`StanceGuid`): `void`
+• `set` **animationStance**(`StanceGUID`): `void`
 
 **`Description`**
 
 动画姿态
 
-**`Precautions`**
+::: warning Precautions
 
-动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的guid进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+动画姿态是更多样的预制动画状态机, 它可以和基础姿态进行上下半身的动画混合, 传入动画姿态资源的GUID进行动画姿态的切换, 传入空字符串时, 清除动画姿态
+
+:::
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `StanceGuid` | `string` |
+| `StanceGUID` | `string` |
 
-#### Returns
-
-`void`
 
 ___
 
-### appearance
+### appearance <Score text="appearance" /> 
 
 • `get` **appearance**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md)
 
@@ -399,7 +483,7 @@ ___
 
 ___
 
-### baseShadowLocationOffset
+### baseShadowLocationOffset <Score text="baseShadowLocationOffset" /> 
 
 • `get` **baseShadowLocationOffset**(): [`Vector2`](Type.Vector2.md)
 
@@ -423,13 +507,10 @@ ___
 | :------ | :------ |
 | `InLocationOffset` | [`Vector2`](Type.Vector2.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### baseShadowMaxVisibleHeight
+### baseShadowMaxVisibleHeight <Score text="baseShadowMaxVisibleHeight" /> 
 
 • `get` **baseShadowMaxVisibleHeight**(): `number`
 
@@ -453,13 +534,10 @@ ___
 | :------ | :------ |
 | `InHeight` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### baseShadowScale
+### baseShadowScale <Score text="baseShadowScale" /> 
 
 • `get` **baseShadowScale**(): [`Vector2`](Type.Vector2.md)
 
@@ -483,13 +561,10 @@ ___
 | :------ | :------ |
 | `InScale` | [`Vector2`](Type.Vector2.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### basicStance
+### basicStance <Score text="basicStance" /> 
 
 • `get` **basicStance**(): `string`
 
@@ -497,9 +572,11 @@ ___
 
 基础姿态
 
-**`Precautions`**
+::: warning Precautions
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的GUID进行基础姿态的切换
+
+:::
 
 #### Returns
 
@@ -511,9 +588,11 @@ ___
 
 基础姿态
 
-**`Precautions`**
+::: warning Precautions
 
-基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的guid进行基础姿态的切换
+基础姿态是一个预制的基本动画状态机, 包含行走, 跳跃, 飞行等基本动画, 传入基础姿态资源的GUID进行基础姿态的切换
+
+:::
 
 #### Parameters
 
@@ -521,13 +600,10 @@ ___
 | :------ | :------ |
 | `InBasicStance` | `string` |
 
-#### Returns
-
-`void`
 
 ___
 
-### basicStanceAimOffsetEnable
+### basicStanceAimOffsetEnable <Score text="basicStanceAimOffsetEnable" /> 
 
 • `get` **basicStanceAimOffsetEnable**(): `boolean`
 
@@ -551,13 +627,10 @@ ___
 | :------ | :------ |
 | `InbEnableAimOffset` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### brakingDecelerationFalling
+### brakingDecelerationFalling <Score text="brakingDecelerationFalling" /> 
 
 • `get` **brakingDecelerationFalling**(): `number`
 
@@ -581,13 +654,10 @@ ___
 | :------ | :------ |
 | `InBrakingDecelerationFalling` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### brakingDecelerationFlying
+### brakingDecelerationFlying <Score text="brakingDecelerationFlying" /> 
 
 • `get` **brakingDecelerationFlying**(): `number`
 
@@ -611,13 +681,10 @@ ___
 | :------ | :------ |
 | `InBrakingDecelerationFlying` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### brakingDecelerationSwimming
+### brakingDecelerationSwimming <Score text="brakingDecelerationSwimming" /> 
 
 • `get` **brakingDecelerationSwimming**(): `number`
 
@@ -641,13 +708,10 @@ ___
 | :------ | :------ |
 | `InBrakingDecelerationSwimming` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### brakingDecelerationWalking
+### brakingDecelerationWalking <Score text="brakingDecelerationWalking" /> 
 
 • `get` **brakingDecelerationWalking**(): `number`
 
@@ -671,13 +735,10 @@ ___
 | :------ | :------ |
 | `InBrakingDecelerationWalking` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### canSetAppearanceData
+### canSetAppearanceData <Score text="canSetAppearanceData" /> 
 
 • `get` **canSetAppearanceData**(): `boolean`
 
@@ -691,15 +752,13 @@ ___
 
 ___
 
-### canStepUpOn
+### canStepUpOn <Score text="canStepUpOn" /> 
 
-• `get` **canStepUpOn**(): `boolean`
+• `get` **canStepUpOn**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取组件是否可以被玩家站立
-
-**`Effect`**
 
 调用端调用生效
 
@@ -709,13 +768,11 @@ ___
 
 true 其他角色可以站到玩家头上  false 其他角色不可以站到玩家头上
 
-• `set` **canStepUpOn**(`CanStepUpOn`): `void`
+• `set` **canStepUpOn**(`CanStepUpOn`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置组件是否可以被玩家站立
-
-**`Effect`**
 
 服务端生效
 
@@ -725,13 +782,10 @@ true 其他角色可以站到玩家头上  false 其他角色不可以站到玩�
 | :------ | :------ |
 | `CanStepUpOn` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### capsuleHalfHeight
+### capsuleHalfHeight <Score text="capsuleHalfHeight" /> 
 
 • `get` **capsuleHalfHeight**(): `number`
 
@@ -755,13 +809,10 @@ ___
 | :------ | :------ |
 | `InCapsuleHalfHeight` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### capsuleRadius
+### capsuleRadius <Score text="capsuleRadius" /> 
 
 • `get` **capsuleRadius**(): `number`
 
@@ -785,13 +836,10 @@ ___
 | :------ | :------ |
 | `InCapsuleRadius` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### characterName
+### characterName <Score text="characterName" /> 
 
 • `get` **characterName**(): `string`
 
@@ -799,9 +847,11 @@ ___
 
 角色名称
 
-**`Precautions`**
+::: warning Precautions
 
 会显示在角色头顶UI上
+
+:::
 
 #### Returns
 
@@ -813,9 +863,11 @@ ___
 
 角色名称
 
-**`Precautions`**
+::: warning Precautions
 
 会显示在角色头顶UI上
+
+:::
 
 #### Parameters
 
@@ -823,13 +875,10 @@ ___
 | :------ | :------ |
 | `inCharacterName` | `string` |
 
-#### Returns
-
-`void`
 
 ___
 
-### collisionEnable
+### collisionEnable <Score text="collisionEnable" /> 
 
 • `get` **collisionEnable**(): `boolean`
 
@@ -853,13 +902,10 @@ ___
 | :------ | :------ |
 | `InbEnableCollision` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### collisionExtent
+### collisionExtent <Score text="collisionExtent" /> 
 
 • `get` **collisionExtent**(): [`Vector`](Type.Vector.md)
 
@@ -873,7 +919,7 @@ ___
 
 ___
 
-### collisionShape
+### collisionShape <Score text="collisionShape" /> 
 
 • `get` **collisionShape**(): [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md)
 
@@ -887,7 +933,7 @@ ___
 
 ___
 
-### collisionWithOtherCharacterEnable
+### collisionWithOtherCharacterEnable <Score text="collisionWithOtherCharacterEnable" /> 
 
 • `get` **collisionWithOtherCharacterEnable**(): `boolean`
 
@@ -911,13 +957,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### crouchEnable
+### crouchEnable <Score text="crouchEnable" /> 
 
 • `get` **crouchEnable**(): `boolean`
 
@@ -941,13 +984,10 @@ ___
 | :------ | :------ |
 | `canCrouch` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### crouchedHeight
+### crouchedHeight <Score text="crouchedHeight" /> 
 
 • `get` **crouchedHeight**(): `number`
 
@@ -971,12 +1011,27 @@ ___
 | :------ | :------ |
 | `InCrouchedHeight` | `number` |
 
-#### Returns
 
-`void`
+___
+
+### forceUpdateMovement <Score text="forceUpdateMovement" /> 
+
+• `set` **forceUpdateMovement**(`value`): `void` <Badge type="tip" text="other" />
+
+**`Description`**
+
+启用/禁用强制更新移动
 
 
-### gravityScale
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+
+### gravityScale <Score text="gravityScale" /> 
 
 • `get` **gravityScale**(): `number`
 
@@ -984,9 +1039,11 @@ ___
 
 重力倍率
 
-**`Precautions`**
+::: warning Precautions
 
 范围0~10, 过大和过小的值都会被限制
+
+:::
 
 #### Returns
 
@@ -1004,13 +1061,10 @@ ___
 | :------ | :------ |
 | `newGravityScale` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### groundFriction
+### groundFriction <Score text="groundFriction" /> 
 
 • `get` **groundFriction**(): `number`
 
@@ -1034,12 +1088,9 @@ ___
 | :------ | :------ |
 | `inGroundFriction` | `number` |
 
-#### Returns
-
-`void`
 
 
-### headUIVisible
+### headUIVisible <Score text="headUIVisible" /> 
 
 • `get` **headUIVisible**(): `boolean`
 
@@ -1063,13 +1114,10 @@ ___
 | :------ | :------ |
 | `isVisible` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### headUIVisibleRange
+### headUIVisibleRange <Score text="headUIVisibleRange" /> 
 
 • `get` **headUIVisibleRange**(): `number`
 
@@ -1093,13 +1141,10 @@ ___
 | :------ | :------ |
 | `VisibleDistance` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### isCrouching
+### isCrouching <Score text="isCrouching" /> 
 
 • `get` **isCrouching**(): `boolean`
 
@@ -1113,7 +1158,7 @@ ___
 
 ___
 
-### isJumping
+### isJumping <Score text="isJumping" /> 
 
 • `get` **isJumping**(): `boolean`
 
@@ -1127,7 +1172,7 @@ ___
 
 ___
 
-### isMoving
+### isMoving <Score text="isMoving" /> 
 
 • `get` **isMoving**(): `boolean`
 
@@ -1141,7 +1186,7 @@ ___
 
 ___
 
-### jumpEnable
+### jumpEnable <Score text="jumpEnable" /> 
 
 • `get` **jumpEnable**(): `boolean`
 
@@ -1165,13 +1210,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### jumpMaxCount
+### jumpMaxCount <Score text="jumpMaxCount" /> 
 
 • `get` **jumpMaxCount**(): `number`
 
@@ -1195,13 +1237,10 @@ ___
 | :------ | :------ |
 | `InJumpMaxCount` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### jumpingOutOfWaterEnable
+### jumpingOutOfWaterEnable <Score text="jumpingOutOfWaterEnable" /> 
 
 • `get` **jumpingOutOfWaterEnable**(): `boolean`
 
@@ -1225,13 +1264,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### locallyVisible
+### locallyVisible <Score text="locallyVisible" /> 
 
 • `get` **locallyVisible**(): `boolean`
 
@@ -1263,12 +1299,9 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 | :------ | :------ |
 | `inIsVisible` | `boolean` |
 
-#### Returns
-
-`void`
 
 
-### maxAcceleration
+### maxAcceleration <Score text="maxAcceleration" /> 
 
 • `get` **maxAcceleration**(): `number`
 
@@ -1292,13 +1325,10 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 | :------ | :------ |
 | `InMaxAcceleration` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxFallingSpeed
+### maxFallingSpeed <Score text="maxFallingSpeed" /> 
 
 • `get` **maxFallingSpeed**(): `number`
 
@@ -1322,13 +1352,10 @@ ___
 | :------ | :------ |
 | `speed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxFlySpeed
+### maxFlySpeed <Score text="maxFlySpeed" /> 
 
 • `get` **maxFlySpeed**(): `number`
 
@@ -1352,13 +1379,10 @@ ___
 | :------ | :------ |
 | `InMaxFlySpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxJumpHeight
+### maxJumpHeight <Score text="maxJumpHeight" /> 
 
 • `get` **maxJumpHeight**(): `number`
 
@@ -1382,13 +1406,10 @@ ___
 | :------ | :------ |
 | `InMaxJumpHeight` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxStepHeight
+### maxStepHeight <Score text="maxStepHeight" /> 
 
 • `get` **maxStepHeight**(): `number`
 
@@ -1412,13 +1433,10 @@ ___
 | :------ | :------ |
 | `InMaxStepHeight` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxSwimSpeed
+### maxSwimSpeed <Score text="maxSwimSpeed" /> 
 
 • `get` **maxSwimSpeed**(): `number`
 
@@ -1442,13 +1460,10 @@ ___
 | :------ | :------ |
 | `InMaxSwimSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxWalkSpeed
+### maxWalkSpeed <Score text="maxWalkSpeed" /> 
 
 • `get` **maxWalkSpeed**(): `number`
 
@@ -1472,13 +1487,10 @@ ___
 | :------ | :------ |
 | `InMaxWalkSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxWalkSpeedCrouched
+### maxWalkSpeedCrouched <Score text="maxWalkSpeedCrouched" /> 
 
 • `get` **maxWalkSpeedCrouched**(): `number`
 
@@ -1502,13 +1514,10 @@ ___
 | :------ | :------ |
 | `maxSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### moveEnable
+### moveEnable <Score text="moveEnable" /> 
 
 • `get` **moveEnable**(): `boolean`
 
@@ -1532,13 +1541,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### moveFacingDirection
+### moveFacingDirection <Score text="moveFacingDirection" /> 
 
 • `get` **moveFacingDirection**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
 
@@ -1562,13 +1568,10 @@ ___
 | :------ | :------ |
 | `InMoveFacingDirection` | [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### movementAxisDirection
+### movementAxisDirection <Score text="movementAxisDirection" /> 
 
 • `get` **movementAxisDirection**(): [`Vector`](Type.Vector.md)
 
@@ -1592,13 +1595,10 @@ ___
 | :------ | :------ |
 | `InMovementAxisDirection` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### movementDirection
+### movementDirection <Score text="movementDirection" /> 
 
 • `get` **movementDirection**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md)
 
@@ -1606,11 +1606,13 @@ ___
 
 运动时依据的正方向
 
-**`Precautions`**
+::: warning Precautions
 
 如果是控制器方向, 就以控制器坐标系为轴;
 如果是定轴方向，就以世界坐标系为轴;
 如果是视线方向, 就以相机坐标系为轴. 在玩家相机不存在Z轴旋转时, 控制器方向和视线方向效果一致, 人形对象的控制器方向和视线方向效果永远一致.
+
+:::
 
 #### Returns
 
@@ -1628,13 +1630,10 @@ ___
 | :------ | :------ |
 | `InMovementDirection` | [`MovementDirection`](../enums/Gameplay.MovementDirection.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### movementState
+### movementState <Score text="movementState" /> 
 
 • `get` **movementState**(): [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
@@ -1647,7 +1646,7 @@ ___
 [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
 
-### outOfWaterZ
+### outOfWaterZ <Score text="outOfWaterZ" /> 
 
 • `get` **outOfWaterZ**(): `number`
 
@@ -1671,12 +1670,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### ragdollEnable
+### ragdollEnable <Score text="ragdollEnable" /> 
 
 • `get` **ragdollEnable**(): `boolean`
 
@@ -1700,12 +1696,9 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 
-### rotateRate
+### rotateRate <Score text="rotateRate" /> 
 
 • `get` **rotateRate**(): `number`
 
@@ -1713,9 +1706,11 @@ ___
 
 最大转向速度
 
-**`Precautions`**
+::: warning Precautions
 
 设置为负值时, 转向速度被视为无限大, 可以瞬间转向
+
+:::
 
 #### Returns
 
@@ -1727,9 +1722,11 @@ ___
 
 最大转向速度
 
-**`Precautions`**
+::: warning Precautions
 
 设置为负值时, 转向速度被视为无限大, 可以瞬间转向
+
+:::
 
 #### Parameters
 
@@ -1737,13 +1734,10 @@ ___
 | :------ | :------ |
 | `InRotateRate` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### scale
+### scale <Score text="scale" /> 
 
 • `get` **scale**(): [`Vector`](Type.Vector.md)
 
@@ -1767,13 +1761,10 @@ ___
 | :------ | :------ |
 | `InCharacterScale` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### separateBrakingFrictionEnable
+### separateBrakingFrictionEnable <Score text="separateBrakingFrictionEnable" /> 
 
 • `get` **separateBrakingFrictionEnable**(): `boolean`
 
@@ -1797,12 +1788,9 @@ ___
 | :------ | :------ |
 | `used` | `boolean` |
 
-#### Returns
-
-`void`
 
 
-### usedCapsuleCorrection
+### usedCapsuleCorrection <Score text="usedCapsuleCorrection" /> 
 
 • `get` **usedCapsuleCorrection**(): `boolean`
 
@@ -1826,13 +1814,10 @@ ___
 | :------ | :------ |
 | `usedCapsuleCorrection` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### velocity
+### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): [`Vector`](Type.Vector.md)
 
@@ -1845,7 +1830,7 @@ ___
 [`Vector`](Type.Vector.md)
 
 
-### walkableFloorAngle
+### walkableFloorAngle <Score text="walkableFloorAngle" /> 
 
 • `get` **walkableFloorAngle**(): `number`
 
@@ -1869,28 +1854,25 @@ ___
 | :------ | :------ |
 | `InWalkableFloorAngle` | `number` |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### addImpulse
+### addImpulse <Score text="addImpulse" /> 
 
-▸ **addImpulse**(`Vector`, `ignoreMass?`): `void`
+▸ **addImpulse**(`Vector`, `ignoreMass?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加冲量
 
-**`Effect`**
-
 服务端调用生效
 
-**`Precautions`**
+::: warning Precautions
 
 质量固定为100, 受质量影响的算法为: 冲量按位除以质量
+
+:::
 
 #### Parameters
 
@@ -1899,27 +1881,24 @@ ___
 | `Vector` | [`Vector`](Type.Vector.md) | 应用的冲量 |
 | `ignoreMass?` | `boolean` | 是否忽略质量对冲量的影响 default:false |
 
-#### Returns
-
-`void`
 
 ___
 
-### addMoveInput
+### addMoveInput <Score text="addMoveInput" /> 
 
-▸ **addMoveInput**(`direction`): `void`
+▸ **addMoveInput**(`direction`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 沿着给定的方向向量添加移动输入
 
-**`Effect`**
-
 调用端调用生效
 
-**`Precautions`**
+::: warning Precautions
 
 效果受movementDirection属性影响
+
+:::
 
 #### Parameters
 
@@ -1927,21 +1906,16 @@ ___
 | :------ | :------ | :------ |
 | `direction` | [`Vector`](Type.Vector.md) | 输入的方向 |
 
-#### Returns
-
-`void`
 
 ___
 
-### appearanceReady
+### appearanceReady <Score text="appearanceReady" /> 
 
-▸ **appearanceReady**(): `Promise`<`void`\>
+▸ **appearanceReady**(): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断
-
-**`Effect`**
 
 客户端
 
@@ -1952,15 +1926,13 @@ ___
 异步回调
 
 
-### attach
+### attach <Score text="attach" /> 
 
-▸ **attach**(`gameObject`, `slotName`): `void`
+▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将物体附着到人物角色的指定插槽
-
-**`Effect`**
 
 调用端调用生效
 
@@ -1971,38 +1943,28 @@ ___
 | `gameObject` | `GameObject` | 物体 |
 | `slotName` | [`SlotType`](../enums/Gameplay.SlotType.md) | 插槽类型 |
 
-#### Returns
-
-`void`
 
 
-### clearDecorations
+### clearDecorations <Score text="clearDecorations" /> 
 
-▸ **clearDecorations**(): `void`
+▸ **clearDecorations**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清空所有挂件数据
 
-**`Effect`**
-
 客户端
 
-#### Returns
-
-`void`
 
 ___
 
-### clearOneDecoration
+### clearOneDecoration <Score text="clearOneDecoration" /> 
 
-▸ **clearOneDecoration**(`guid`): `void`
+▸ **clearOneDecoration**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 删除一个挂件
-
-**`Effect`**
 
 客户端
 
@@ -2010,22 +1972,17 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  实例化后的挂件对象Guid |
-
-#### Returns
-
-`void`
+| `GUID` | `string` |  实例化后的挂件对象GUID |
 
 
-### crouch
 
-▸ **crouch**(`isCrouch`): `void`
+### crouch <Score text="crouch" /> 
+
+▸ **crouch**(`isCrouch`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 下蹲
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2035,20 +1992,15 @@ ___
 | :------ | :------ | :------ |
 | `isCrouch` | `boolean` | 是否下蹲 |
 
-#### Returns
-
-`void`
 
 
-### getControlRotator
+### getControlRotator <Score text="getControlRotator" /> 
 
-▸ **getControlRotator**(`Out?`): [`Rotation`](Type.Rotation.md)
+▸ **getControlRotator**(`Out?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取控制器的旋转
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2066,15 +2018,13 @@ ___
 
 ___
 
-### getDecorations
+### getDecorations <Score text="getDecorations" /> 
 
-▸ **getDecorations**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[]
+▸ **getDecorations**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <Badge type="tip" text="other" />
 
 **`Description`**
 
-获取当前挂件实例化对象的Guid
-
-**`Effect`**
+获取当前挂件实例化对象的GUID
 
 客户端
 
@@ -2082,18 +2032,16 @@ ___
 
 [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[]
 
-guid数组
+GUID数组
 
 
-### getHeadUIWidget
+### getHeadUIWidget <Score text="getHeadUIWidget" /> 
 
-▸ **getHeadUIWidget**(): [`UIWidget`](Gameplay.UIWidget.md)
+▸ **getHeadUIWidget**(): [`UIWidget`](Gameplay.UIWidget.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头顶UIWidget
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2104,15 +2052,13 @@ guid数组
 头顶UIWidget对象
 
 
-### getSlotName
+### getSlotName <Score text="getSlotName" /> 
 
-▸ **getSlotName**(`slotType`): `string`
+▸ **getSlotName**(`slotType`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取对应插槽名称
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2129,15 +2075,13 @@ guid数组
 插槽名称(string)
 
 
-### isPlayingAnimation
+### isPlayingAnimation <Score text="isPlayingAnimation" /> 
 
-▸ **isPlayingAnimation**(): `boolean`
+▸ **isPlayingAnimation**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否正在播放动画
-
-**`Effect`**
 
 客户端调用生效
 
@@ -2148,33 +2092,26 @@ guid数组
 是否正在播放动画
 
 
-### jump
+### jump <Score text="jump" /> 
 
-▸ **jump**(): `void`
+▸ **jump**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 跳跃
 
-**`Effect`**
-
 调用端调用生效
 
-#### Returns
-
-`void`
 
 ___
 
-### loadAnimation
+### loadAnimation <Score text="loadAnimation" /> 
 
-▸ **loadAnimation**(`guid`, `sync?`): [`Animation`](Gameplay.Animation.md)
+▸ **loadAnimation**(`GUID`, `sync?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 加载动画,获取到动画对象
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2182,7 +2119,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 动画GUID |
+| `GUID` | `string` | 动画GUID |
 | `sync?` | `boolean` | Animation对象是否同步 default:true |
 
 #### Returns
@@ -2193,15 +2130,13 @@ Animation 对象
 
 ___
 
-### loadDecoration
+### loadDecoration <Score text="loadDecoration" /> 
 
-▸ **loadDecoration**(`decorationString`, `callback`): `void`
+▸ **loadDecoration**(`decorationString`, `callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0|0,-90,0|1,1,1",给移动角色编辑器提供的能力
-
-**`Effect`**
 
 客户端
 
@@ -2210,23 +2145,18 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `decorationString` | `string` |  一个挂件数据 |
-| `callback` | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) |  挂件对象的Guid |
+| `callback` | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) |  挂件对象的GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### loadSlotAndEditorDataByGuid
+### loadSlotAndEditorDataByGuid <Score text="loadSlotAndEditorDataByGuid" /> 
 
-▸ **loadSlotAndEditorDataByGuid**(`guid`): `void`
+▸ **loadSlotAndEditorDataByGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
-通过Guid加载插槽跟角色编辑数据
-
-**`Effect`**
+通过GUID加载插槽跟角色编辑数据
 
 双端
 
@@ -2234,23 +2164,18 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | Slot Guid |
+| `GUID` | `string` | Slot GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### loadSlotAndEditorDataByPath
+### loadSlotAndEditorDataByPath <Score text="loadSlotAndEditorDataByPath" /> 
 
-▸ **loadSlotAndEditorDataByPath**(`relativePath`): `void`
+▸ **loadSlotAndEditorDataByPath**(`relativePath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 通过路径加载插槽跟角色编辑数据
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2260,35 +2185,30 @@ ___
 | :------ | :------ | :------ |
 | `relativePath` | `string` | 相对路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### loadStance
+### loadStance <Score text="loadStance" /> 
 
-▸ **loadStance**(`guid`, `sync?`): [`SubStance`](Gameplay.SubStance.md)
+▸ **loadStance**(`GUID`, `sync?`): [`SubStance`](Gameplay.SubStance.md)
 
 **`Description`**
 
 创建一个二级姿态对象并返回
 
-**`Effect`**
-
 任意端调用生效
 
-**`Precautions`**
+::: warning Precautions
 
-guid参数传入预制姿态资源GUID时, 会直接创建对应姿态;
-传入动画资源GUID时, 会创建单动画姿态模板, 并将模板的动画槽位设置为指定的动画资源(动态创建单动画姿态).
-即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端.
+即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端. <Badge type="tip" text="other" />
+
+:::
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  预制姿态资源guid或动画资源guid |
+| `GUID` | `string` |  预制姿态资源GUID或动画资源GUID |
 | `sync?` | `boolean` |  对姿态对象的操作是否自动同步 default:true |
 
 #### Returns
@@ -2299,15 +2219,13 @@ guid参数传入预制姿态资源GUID时, 会直接创建对应姿态;
 
 ___
 
-### lookAt
+### lookAt <Score text="lookAt" /> 
 
-▸ **lookAt**(`TargetPoint`): `void`
+▸ **lookAt**(`TargetPoint`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 角色面朝目标点
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2317,20 +2235,15 @@ ___
 | :------ | :------ | :------ |
 | `TargetPoint` | [`Vector`](Type.Vector.md) | 目标点 |
 
-#### Returns
-
-`void`
 
 
-### playAnimation
+### playAnimation <Score text="playAnimation" /> 
 
-▸ **playAnimation**(`guid`, `loopCount?`, `rate?`): [`Animation`](Gameplay.Animation.md)
+▸ **playAnimation**(`GUID`, `loopCount?`, `rate?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 播放动画,同时获取到动画对象,Animation对象接口是同步的
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2338,7 +2251,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 动画GUID |
+| `GUID` | `string` | 动画GUID |
 | `loopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
 | `rate?` | `number` | 播放速率，1表示正常速率 default:1 |
 
@@ -2350,19 +2263,17 @@ Animation 对象
 
 ___
 
-### playAnimationLocally
+### playAnimationLocally <Score text="playAnimationLocally" /> 
 
-▸ **playAnimationLocally**(`AnimationGuid`, `AnimationLength?`, `LoopCount?`): `void`
+▸ **playAnimationLocally**(`AnimationGuid`, `AnimationLength?`, `LoopCount?`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
-since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(guid,false) instead.
+since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.
 
 **`Description`**
 
 本地播放动画
-
-**`Effect`**
 
 客户端调用生效
 
@@ -2374,20 +2285,15 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 | `AnimationLength?` | `number` | 播放时长 default:0 |
 | `LoopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
 
-#### Returns
-
-`void`
 
 
-### setAppearance
+### setAppearance <Score text="setAppearance" /> 
 
-▸ **setAppearance**<`T`\>(`clz`): `T`
+▸ **setAppearance**<`T`\>(`clz`): `T` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置外观修改功能
-
-**`Effect`**
 
 双端
 
@@ -2410,15 +2316,13 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 外观修改对象
 
 
-### setCollisionShapeAndExtent
+### setCollisionShapeAndExtent <Score text="setCollisionShapeAndExtent" /> 
 
-▸ **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void`
+▸ **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置不同形状不同大小的碰撞体
-
-**`Effect`**
 
 调用端调用生效
 
@@ -2429,21 +2333,16 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 | `ShapeType` | [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md) | 启用的碰撞形状 |
 | `CollisionExtent` | [`Vector`](Type.Vector.md) | 启用的碰撞形状 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLocallyVisibility
+### setLocallyVisibility <Score text="setLocallyVisibility" /> 
 
-▸ **setLocallyVisibility**(`status`, `propagateToChildren?`): `void`
+▸ **setLocallyVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否被显示(本地生效)
-
-**`Effect`**
 
 客户端生效
 
@@ -2454,14 +2353,11 @@ ___
 | `status` | [`PropertyStatus`](../enums/Type.PropertyStatus.md) | 状态 |
 | `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
 
-#### Returns
-
-`void`
 
 
-### stopAnimation
+### stopAnimation <Score text="stopAnimation" /> 
 
-▸ **stopAnimation**(`InAnimationGuid`): `void`
+▸ **stopAnimation**(`InAnimationGuid`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -2471,37 +2367,32 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 停止播放动画
 
-**`Effect`**
-
 服务端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `InAnimationGuid` | `string` | 停止播放的动画的Guid |
+| `InAnimationGuid` | `string` | 停止播放的动画的GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### stopStance
+### stopStance <Score text="stopStance" /> 
 
-▸ **stopStance**(`sync?`): `void`
+▸ **stopStance**(`sync?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止任何正在播放的姿态
 
-**`Effect`**
-
 可选同步
 
-**`Precautions`**
+::: warning Precautions
 
-当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. 对单端对象操作时需要把它置为false.
+当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. 对单端对象操作时需要把sync参数置为false.
+
+:::
 
 #### Parameters
 
@@ -2509,21 +2400,16 @@ ___
 | :------ | :------ | :------ |
 | `sync?` | `boolean` |  是否自动同步 default:true |
 
-#### Returns
-
-`void`
 
 ___
 
-### swimmingDown
+### swimmingDown <Score text="swimmingDown" /> 
 
-▸ **swimmingDown**(`speed`): `void`
+▸ **swimmingDown**(`speed`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 水中下潜
-
-**`Effect`**
 
 双端
 
@@ -2533,21 +2419,16 @@ ___
 | :------ | :------ | :------ |
 | `speed` | `number` | 下潜速度不能超过MaxSwimSpeed(游泳最大速度) |
 
-#### Returns
-
-`void`
 
 ___
 
-### swimmingUp
+### swimmingUp <Score text="swimmingUp" /> 
 
-▸ **swimmingUp**(`speed`): `void`
+▸ **swimmingUp**(`speed`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 水中上浮
-
-**`Effect`**
 
 双端
 
@@ -2557,42 +2438,29 @@ ___
 | :------ | :------ | :------ |
 | `speed` | `number` | 上浮速度不能超过MaxSwimSpeed(游泳最大速度) |
 
-#### Returns
-
-`void`
 
 ___
 
-### switchToFlying
+### switchToFlying <Score text="switchToFlying" /> 
 
-▸ **switchToFlying**(): `void`
+▸ **switchToFlying**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 切换为飞行状态
 
-**`Effect`**
-
 调用端调用生效
 
-#### Returns
-
-`void`
 
 ___
 
-### switchToWalking
+### switchToWalking <Score text="switchToWalking" /> 
 
-▸ **switchToWalking**(): `void`
+▸ **switchToWalking**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 切换为行走状态
 
-**`Effect`**
-
 调用端调用生效
 
-#### Returns
-
-`void`

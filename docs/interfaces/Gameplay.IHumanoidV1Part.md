@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV1Part
 
-# IHumanoidV1Part <Badge type="tip" text="Interface" />
+# IHumanoidV1Part <Badge type="tip" text="Interface" /> <Score text="IHumanoidV1Part" />
 
 **`Description`**
 
@@ -19,15 +19,13 @@
 
 ## Methods
 
-### getWholeBody
+### getWholeBody <Score text="getWholeBody" /> 
 
-▸ **getWholeBody**(): `string`
+▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取全身模型
-
-**`Effect`**
 
 双端
 
@@ -35,23 +33,23 @@
 
 `string`
 
-模型Guid
+模型GUID
 
 ___
 
-### setWholeBody
+### setWholeBody <Score text="setWholeBody" /> 
 
-▸ **setWholeBody**(`guid`, `sync`): `void`
+▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置全身模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型GUID没有预加载，则v2本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -60,9 +58,6 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`

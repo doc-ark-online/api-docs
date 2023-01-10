@@ -1,14 +1,16 @@
 [Type](../modules/Type.Type.md) / Transform
 
-# Transform <Badge type="tip" text="Class" />
+# Transform <Badge type="tip" text="Class" /> <Score text="Transform" />
 
 **`Description`**
 
 Transform 由缩放、旋转和平移组成
 
-**`Precautions`**
+::: warning Precautions
 
 按以下顺序应用位置向量变换：缩放->旋转->平移, 方向向量的变换按以下顺序应用：缩放->旋转
+
+:::
 
 ## Table of contents
 
@@ -70,7 +72,7 @@ Transform 由缩放、旋转和平移组成
 
 ## Properties
 
-### location
+### location <Score text="location" /> 
 
 • **location**: [`Vector`](Type.Vector.md)
 
@@ -80,7 +82,7 @@ Transform 由缩放、旋转和平移组成
 
 ___
 
-### rotation
+### rotation <Score text="rotation" /> 
 
 • **rotation**: [`Rotation`](Type.Rotation.md)
 
@@ -90,7 +92,7 @@ ___
 
 ___
 
-### scale
+### scale <Score text="scale" /> 
 
 • **scale**: [`Vector`](Type.Vector.md)
 
@@ -100,7 +102,7 @@ ___
 
 ## Accessors
 
-### identity
+### identity <Score text="identity" /> 
 
 • `Static` `get` **identity**(): [`Transform`](Type.Transform.md)
 
@@ -108,9 +110,11 @@ ___
 
 获取一个单位 Transform
 
-**`Precautions`**
+::: warning Precautions
 
 Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
+
+:::
 
 #### Returns
 
@@ -118,17 +122,14 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 ## Methods
 
-### clone
+### clone <Score text="clone" /> 
 
-▸ **clone**(): [`Transform`](Type.Transform.md)
+▸ **clone**(): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 克隆一个新的 Transform
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -138,17 +139,14 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ **fromString**(`str`): `void`
+▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 读取字符串数据
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -156,23 +154,17 @@ ___
 | :------ | :------ | :------ |
 | `str` | `string` | 读取的字符串数据 |
 
-#### Returns
-
-`void`
 
 ___
 
-### getForwardVector
+### getForwardVector <Score text="getForwardVector" /> 
 
-▸ **getForwardVector**(): [`Vector`](Type.Vector.md)
+▸ **getForwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回 Transform 的向前方向向量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -182,17 +174,14 @@ Transform 的向前方向向量
 
 ___
 
-### getRightVector
+### getRightVector <Score text="getRightVector" /> 
 
-▸ **getRightVector**(): [`Vector`](Type.Vector.md)
+▸ **getRightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回 Transform 的向右方向向量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -202,17 +191,14 @@ Transform 的向右方向向量
 
 ___
 
-### getUpVector
+### getUpVector <Score text="getUpVector" /> 
 
-▸ **getUpVector**(): [`Vector`](Type.Vector.md)
+▸ **getUpVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回 Transform 的向上方向向量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -222,17 +208,14 @@ Transform 的向上方向向量
 
 ___
 
-### inverseTransformDirection
+### inverseTransformDirection <Score text="inverseTransformDirection" /> 
 
-▸ **inverseTransformDirection**(`location`): [`Vector`](Type.Vector.md)
+▸ **inverseTransformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将世界方向转化为本地方向
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -248,17 +231,14 @@ ___
 
 ___
 
-### inverseTransformLocation
+### inverseTransformLocation <Score text="inverseTransformLocation" /> 
 
-▸ **inverseTransformLocation**(`location`): [`Vector`](Type.Vector.md)
+▸ **inverseTransformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将世界坐标转化为本地坐标
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -274,17 +254,14 @@ ___
 
 ___
 
-### lookAt
+### lookAt <Score text="lookAt" /> 
 
-▸ **lookAt**(`target`): `void`
+▸ **lookAt**(`target`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Transform面向目标方向
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -292,23 +269,17 @@ Transform面向目标方向
 | :------ | :------ | :------ |
 | `target` | [`Vector`](Type.Vector.md) | 世界坐标 |
 
-#### Returns
-
-`void`
 
 ___
 
-### rotate
+### rotate <Score text="rotate" /> 
 
-▸ **rotate**(`axis`, `angle`): `void`
+▸ **rotate**(`axis`, `angle`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Transform绕指定轴旋转
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -317,23 +288,17 @@ Transform绕指定轴旋转
 | `axis` | [`Vector`](Type.Vector.md) | 旋转轴 |
 | `angle` | `number` | 旋转的角度值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### toString
+### toString <Score text="toString" /> 
 
-▸ **toString**(): `string`
+▸ **toString**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 输出为一个有格式的字符串
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -343,17 +308,14 @@ ___
 
 ___
 
-### transformDirection
+### transformDirection <Score text="transformDirection" /> 
 
-▸ **transformDirection**(`location`): [`Vector`](Type.Vector.md)
+▸ **transformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将本地方向转化为世界方向
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -369,17 +331,14 @@ ___
 
 ___
 
-### transformLocation
+### transformLocation <Score text="transformLocation" /> 
 
-▸ **transformLocation**(`location`): [`Vector`](Type.Vector.md)
+▸ **transformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 本地坐标转化为世界坐标
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -395,21 +354,20 @@ ___
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ `Static` **fromString**(`str`, `outer?`): [`Transform`](Type.Transform.md)
+▸ `Static` **fromString**(`str`, `outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 读取字符串数据创建或者写入一个 Transform
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Transform 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TouchPad
 
-# TouchPad <Badge type="tip" text="Class" />
+# TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
 **`Description`**
 
@@ -19,23 +19,60 @@
 | **[controlByMouseEnable](UI.TouchPad.md#controlbymouseenable)**(): `boolean` <br> 获取是否被鼠标控制，只作用于PC端|
 | **[inputScale](UI.TouchPad.md#inputscale)**(): [`Vector2`](Type.Vector2.md) <br> 获取移动touchPad的delta的缩放值|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.Widget.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.Widget.md#cachedgeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[desiredSize](UI.Widget.md#desiredsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.Widget.md#enable)**(): `boolean` <br> 是否可用|
+| **[guid](UI.Widget.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.Widget.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[name](UI.Widget.md#name)**(): `string` <br> 获取名字|
+| **[paintSpaceGeometry](UI.Widget.md#paintspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.Widget.md#parent)**(): [`Widget`](UI.Widget.md) <br> 获取父节点|
+| **[position](UI.Widget.md#position)**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.Widget.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.Widget.md#renderscale)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.Widget.md#rendershear)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
+| **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.Widget.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.Widget.md#zorder)**(): `number` <br> 获取zorder|
+:::
+
+
 | Methods |
 | :-----|
 | **[newObject](UI.TouchPad.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`TouchPad`](UI.TouchPad.md) <br> 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+:::
+
+
 ## Accessors
 
-### controlByMouseEnable
+### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
-• `get` **controlByMouseEnable**(): `boolean`
+• `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否被鼠标控制，只作用于PC端
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -43,15 +80,12 @@
 
 是否被鼠标控制
 
-• `set` **controlByMouseEnable**(`controlByMouse`): `void`
+• `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否被鼠标控制，只作用于PC端
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -59,22 +93,16 @@
 | :------ | :------ | :------ |
 | `controlByMouse` | `boolean` |  是否被鼠标控制 |
 
-#### Returns
-
-`void`
 
 
-### inputScale
+### inputScale <Score text="inputScale" /> 
 
-• `get` **inputScale**(): [`Vector2`](Type.Vector2.md)
+• `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取移动touchPad的delta的缩放值
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -82,15 +110,12 @@
 
 返回移动touchPad的delta的缩放值
 
-• `set` **inputScale**(`inScale`): `void`
+• `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置移动touchPad的delta的缩放值
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -98,24 +123,18 @@
 | :------ | :------ | :------ |
 | `inScale` | [`Vector2`](Type.Vector2.md) | 缩放值 |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### newObject
+### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md)
+▸ `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 

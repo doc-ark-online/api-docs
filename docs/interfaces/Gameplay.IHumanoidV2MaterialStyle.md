@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2MaterialStyle
 
-# IHumanoidV2MaterialStyle <Badge type="tip" text="Interface" />
+# IHumanoidV2MaterialStyle <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2MaterialStyle" />
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 | **[getBodyTattooPositionX](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoopositionx)**(`number`): `number` <br> 获取纹身位置左右偏移|
 | **[getBodyTattooPositionY](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoopositiony)**(`number`): `number` <br> 获取身体纹身位置上下位置|
 | **[getBodyTattooRotation](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoorotation)**(`number`): `number` <br> 获取纹身旋转值|
-| **[getBodyTattooType](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattootype)**(`number`): `string` <br> 获取纹身贴图 guid|
+| **[getBodyTattooType](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattootype)**(`number`): `string` <br> 获取纹身贴图 GUID|
 | **[getBodyTattooZoom](Gameplay.IHumanoidV2MaterialStyle.md#getbodytattoozoom)**(`number`): `number` <br> 获取身体纹身位置缩放|
 | **[getSkinColor](Gameplay.IHumanoidV2MaterialStyle.md#getskincolor)**(): [`LinearColor`](../classes/Type.LinearColor.md) <br> 设置皮肤颜色|
 | **[getSkinTexture](Gameplay.IHumanoidV2MaterialStyle.md#getskintexture)**(): `string` <br> 获取皮肤贴图|
@@ -33,15 +33,13 @@
 
 ## Methods
 
-### getBodyTattooColor
+### getBodyTattooColor <Score text="getBodyTattooColor" /> 
 
-▸ **getBodyTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+▸ **getBodyTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取纹身颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -59,15 +57,13 @@
 
 ___
 
-### getBodyTattooPositionX
+### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
 
-▸ **getBodyTattooPositionX**(`index`): `number`
+▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取纹身位置左右偏移
-
-**`Effect`**
 
 客户端生效
 
@@ -85,15 +81,13 @@ ___
 
 ___
 
-### getBodyTattooPositionY
+### getBodyTattooPositionY <Score text="getBodyTattooPositionY" /> 
 
-▸ **getBodyTattooPositionY**(`index`): `number`
+▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取身体纹身位置上下位置
-
-**`Effect`**
 
 客户端生效
 
@@ -111,15 +105,13 @@ ___
 
 ___
 
-### getBodyTattooRotation
+### getBodyTattooRotation <Score text="getBodyTattooRotation" /> 
 
-▸ **getBodyTattooRotation**(`index`): `number`
+▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取纹身旋转值
-
-**`Effect`**
 
 客户端生效
 
@@ -137,15 +129,13 @@ ___
 
 ___
 
-### getBodyTattooType
+### getBodyTattooType <Score text="getBodyTattooType" /> 
 
-▸ **getBodyTattooType**(`index`): `string`
+▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
-获取纹身贴图 guid
-
-**`Effect`**
+获取纹身贴图 GUID
 
 sync = false:客户端;
 sync = true:双端
@@ -160,19 +150,17 @@ sync = true:双端
 
 `string`
 
-纹身贴图guid
+纹身贴图GUID
 
 ___
 
-### getBodyTattooZoom
+### getBodyTattooZoom <Score text="getBodyTattooZoom" /> 
 
-▸ **getBodyTattooZoom**(`index`): `number`
+▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取身体纹身位置缩放
-
-**`Effect`**
 
 客户端生效
 
@@ -190,15 +178,13 @@ ___
 
 ___
 
-### getSkinColor
+### getSkinColor <Score text="getSkinColor" /> 
 
-▸ **getSkinColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+▸ **getSkinColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置皮肤颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -210,15 +196,13 @@ ___
 
 ___
 
-### getSkinTexture
+### getSkinTexture <Score text="getSkinTexture" /> 
 
-▸ **getSkinTexture**(): `string`
+▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取皮肤贴图
-
-**`Effect`**
 
 客户端生效
 
@@ -226,19 +210,17 @@ ___
 
 `string`
 
-皮肤贴图guid
+皮肤贴图GUID
 
 ___
 
-### setBodyTattooColor
+### setBodyTattooColor <Score text="setBodyTattooColor" /> 
 
-▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void`
+▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹身颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -251,22 +233,17 @@ sync = true:双端
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) |  颜色值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBodyTattooPositionX
+### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
 
-▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void`
+▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹身位置左右偏移
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -278,22 +255,17 @@ sync = true:双端
 | `value` | `number` | 偏移值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBodyTattooPositionY
+### setBodyTattooPositionY <Score text="setBodyTattooPositionY" /> 
 
-▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void`
+▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹身位置上下位置
 
-**`Effect`**
-
 sync = false:客户端;
 sync = true:双端
 
@@ -305,21 +277,16 @@ sync = true:双端
 | `value` | `number` | 偏移值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBodyTattooRotation
+### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
 
-▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void`
+▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹旋转
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -332,21 +299,16 @@ sync = true:双端
 | `value` | `number` | 旋转值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBodyTattooType
+### setBodyTattooType <Score text="setBodyTattooType" /> 
 
-▸ **setBodyTattooType**(`index`, `guid`, `sync`): `void`
+▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹身种类
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -356,24 +318,19 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身index |
-| `guid` | `string` | 类型贴图guid |
+| `GUID` | `string` | 类型贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setBodyTattooZoom
+### setBodyTattooZoom <Score text="setBodyTattooZoom" /> 
 
-▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void`
+▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 身体纹身位置缩放
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -386,21 +343,16 @@ sync = true:双端
 | `value` | `number` |  缩放值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setSkinColor
+### setSkinColor <Score text="setSkinColor" /> 
 
-▸ **setSkinColor**(`color`, `sync`): `void`
+▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置皮肤颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -412,21 +364,16 @@ sync = true:双端
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) |  颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setSkinTexture
+### setSkinTexture <Score text="setSkinTexture" /> 
 
-▸ **setSkinTexture**(`guid`, `sync`): `void`
+▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置皮肤贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -435,9 +382,6 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`

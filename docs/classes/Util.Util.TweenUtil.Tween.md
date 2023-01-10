@@ -1,6 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Tween
 
-# Tween<T\> <Badge type="tip" text="Class" />
+# Tween<T\> <Badge type="tip" text="Class" /> <Score text="Tween<T\>" />
 
 **`Description`**
 
@@ -50,7 +50,6 @@
 
 **`Effect`**
 
-调用端生效
 
 #### Type parameters
 
@@ -67,7 +66,7 @@
 
 ## Methods
 
-### chain
+### chain <Score text="chain" /> 
 
 ▸ **chain**(`...tweens`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
 
@@ -75,9 +74,6 @@
 
 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间
 
-**`Effect`**
-
-调用端生效
 
 **`Example`**
 
@@ -91,7 +87,7 @@ tweenA.chain(tweenB)
 tweenB.chain(tweenA)
 
 // A结束后同时启动B,C
-tweenA.chain(tweenB, tweenC)
+tweenA.chain(tweenB, tweenC) <Badge type="tip" text="other" />
 ```
 
 #### Parameters
@@ -108,17 +104,14 @@ tweenA.chain(tweenB, tweenC)
 
 ___
 
-### delay
+### delay <Score text="delay" /> 
 
-▸ **delay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **delay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 延迟启动
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -134,17 +127,14 @@ ___
 
 ___
 
-### duration
+### duration <Score text="duration" /> 
 
-▸ **duration**(`d?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **duration**(`d?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置完成补间需要的时间（周期）
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -160,17 +150,14 @@ ___
 
 ___
 
-### easing
+### easing <Score text="easing" /> 
 
-▸ **easing**(`easingFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **easing**(`easingFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置缓动函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -186,17 +173,14 @@ ___
 
 ___
 
-### end
+### end <Score text="end" /> 
 
-▸ **end**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **end**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 将当前补间置为目标状态
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -206,17 +190,14 @@ ___
 
 ___
 
-### getID
+### getID <Score text="getID" /> 
 
-▸ **getID**(): `number`
+▸ **getID**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前补间对象的ID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -226,17 +207,14 @@ ___
 
 ___
 
-### group
+### group <Score text="group" /> 
 
-▸ **group**(`group?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **group**(`group?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前补间对象的分组
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -252,17 +230,14 @@ ___
 
 ___
 
-### interpolation
+### interpolation <Score text="interpolation" /> 
 
-▸ **interpolation**(`interpolationFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **interpolation**(`interpolationFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置插值函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -278,17 +253,14 @@ ___
 
 ___
 
-### isPaused
+### isPaused <Score text="isPaused" /> 
 
-▸ **isPaused**(): `boolean`
+▸ **isPaused**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前补间对象是否为暂停状态。
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -298,17 +270,14 @@ true-暂停；false-在补间。
 
 ___
 
-### isPlaying
+### isPlaying <Score text="isPlaying" /> 
 
-▸ **isPlaying**(): `boolean`
+▸ **isPlaying**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -318,17 +287,14 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 ___
 
-### onComplete
+### onComplete <Score text="onComplete" /> 
 
-▸ **onComplete**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **onComplete**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -344,17 +310,14 @@ ___
 
 ___
 
-### onRepeat
+### onRepeat <Score text="onRepeat" /> 
 
-▸ **onRepeat**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **onRepeat**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -370,22 +333,21 @@ ___
 
 ___
 
-### onStart
+### onStart <Score text="onStart" /> 
 
-▸ **onStart**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **onStart**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 在补间开始之前触发，补间对象作为第一个参数传入
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 在补间开始之前执行，即在计算之前。
 2. 每个补间只能执行一次。当通过 repeat() 重复补间时，它将不会运行。
+
+:::
 
 #### Parameters
 
@@ -401,22 +363,21 @@ ___
 
 ___
 
-### onStop
+### onStop <Score text="onStop" /> 
 
-▸ **onStop**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **onStop**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 在正常完成时不触发。
 2. 在任何可能的链接补间都停止之后才触发。
+
+:::
 
 #### Parameters
 
@@ -432,21 +393,20 @@ ___
 
 ___
 
-### onUpdate
+### onUpdate <Score text="onUpdate" /> 
 
-▸ **onUpdate**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **onUpdate**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 每次补间更新时触发，补间对象作为第一个参数传入
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 回调触发时，属性已更新完成。
+
+:::
 
 #### Parameters
 
@@ -462,21 +422,20 @@ ___
 
 ___
 
-### pause
+### pause <Score text="pause" /> 
 
-▸ **pause**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **pause**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 暂停补间，可以指定暂停生效时间，默认为当前时间
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 接受一个参数 time。如果你使用它，那么暂停不会立即生效，直到特定时刻，否则会尽快暂停（i.e 即在下次调用 update）
+
+:::
 
 #### Parameters
 
@@ -492,7 +451,7 @@ ___
 
 ___
 
-### repeat
+### repeat <Score text="repeat" /> 
 
 ▸ **repeat**(`times?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
 
@@ -500,20 +459,19 @@ ___
 
 设置重复次数, 补间的总次数将是重复参数加上一个初始补间
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 会重置当前的重复次数
+
+:::
 
 **`Example`**
 
 使用示例: 示例
 ```ts
 tween.repeat(10) // 循环10次
-tween.repeat(Infinity) // 无限循环
+tween.repeat(Infinity) // 无限循环 <Badge type="tip" text="other" />
 ```
 
 #### Parameters
@@ -530,17 +488,14 @@ tween.repeat(Infinity) // 无限循环
 
 ___
 
-### repeatDelay
+### repeatDelay <Score text="repeatDelay" /> 
 
-▸ **repeatDelay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **repeatDelay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置重复补间时的延迟启动时间
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -556,21 +511,20 @@ ___
 
 ___
 
-### resume
+### resume <Score text="resume" /> 
 
-▸ **resume**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **resume**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 恢复补间，可以指定恢复生效时间，默认为当前时间
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 接受一个参数 time。如果你使用它，那么恢复不会立即生效，直到特定时刻，否则会尽快恢复（i.e 即在下次调用 update）
+
+:::
 
 #### Parameters
 
@@ -586,21 +540,20 @@ ___
 
 ___
 
-### start
+### start <Score text="start" /> 
 
-▸ **start**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **start**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 启动补间，可以指定启动生效时间，默认为当前时间
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 接受一个参数 time。如果你使用它，那么补间不会立即开始，直到特定时刻，否则会尽快启动（i.e 即在下次调用 update）
+
+:::
 
 #### Parameters
 
@@ -616,17 +569,14 @@ ___
 
 ___
 
-### stop
+### stop <Score text="stop" /> 
 
-▸ **stop**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **stop**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -636,17 +586,14 @@ ___
 
 ___
 
-### stopChainedTweens
+### stopChainedTweens <Score text="stopChainedTweens" /> 
 
-▸ **stopChainedTweens**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **stopChainedTweens**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止所有链接到当前补间的补间对象
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -656,17 +603,14 @@ ___
 
 ___
 
-### to
+### to <Score text="to" /> 
 
-▸ **to**(`properties`, `duration?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **to**(`properties`, `duration?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置补间的目标状态和完成补间需要的时间
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -683,17 +627,14 @@ ___
 
 ___
 
-### update
+### update <Score text="update" /> 
 
-▸ **update**(`time?`, `autoStart?`): `boolean`
+▸ **update**(`time?`, `autoStart?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -710,18 +651,15 @@ true-如果当前更新之后尚未结束, false-当前更新之后补间结束
 
 ___
 
-### yoyo
+### yoyo <Score text="yoyo" /> 
 
-▸ **yoyo**(`yoyo?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
+▸ **yoyo**(`yoyo?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。
 启用后，补间的行为将像悠悠球一样，会在起始值和结束值之间往复，而不是从头开始重复。
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 

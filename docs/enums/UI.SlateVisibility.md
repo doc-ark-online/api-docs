@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateVisibility
 
-# SlateVisibility <Badge type="tip" text="Enumeration" />
+# SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 
 **`Description`**
 
@@ -18,7 +18,7 @@ UI节点显示规则
 
 ## Enumeration Members
 
-### Collapsed
+### Collapsed <Score text="Collapsed" /> 
 
 • **Collapsed** = ``1``
 
@@ -26,7 +26,7 @@ UI节点显示规则
 
 ___
 
-### Hidden
+### Hidden <Score text="Hidden" /> 
 
 • **Hidden** = ``2``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### HitTestInvisible
+### HitTestInvisible <Score text="HitTestInvisible" /> 
 
 • **HitTestInvisible** = ``3``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### SelfHitTestInvisible
+### SelfHitTestInvisible <Score text="SelfHitTestInvisible" /> 
 
 • **SelfHitTestInvisible** = ``4``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### Visible
+### Visible <Score text="Visible" /> 
 
 • **Visible** = ``0``
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2HeadPart
 
-# HumanoidV2HeadPart <Badge type="tip" text="Class" />
+# HumanoidV2HeadPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2HeadPart" />
 
 **`Description`**
 
@@ -86,15 +86,13 @@
 
 ## Methods
 
-### characterFaceShadow
+### characterFaceShadow <Score text="characterFaceShadow" /> 
 
-▸ **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void`
+▸ **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置模型
-
-**`Effect`**
 
 客户端
 
@@ -105,9 +103,6 @@
 | `directLightRotator` | [`Rotation`](Type.Rotation.md) | 平行光方向 |
 | `traceDistance` | `number` | 检测距离 default:默认检测距离 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -115,15 +110,13 @@
 
 ___
 
-### getBlushColor
+### getBlushColor <Score text="getBlushColor" /> 
 
-▸ **getBlushColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getBlushColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取腮红颜色
-
-**`Effect`**
 
 客户端
 
@@ -139,15 +132,13 @@ ___
 
 ___
 
-### getBlushTexture
+### getBlushTexture <Score text="getBlushTexture" /> 
 
-▸ **getBlushTexture**(): `string`
+▸ **getBlushTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取腮红贴图
-
-**`Effect`**
 
 客户端
 
@@ -155,7 +146,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -163,15 +154,13 @@ guid
 
 ___
 
-### getBrowColor
+### getBrowColor <Score text="getBrowColor" /> 
 
-▸ **getBrowColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getBrowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛颜色
-
-**`Effect`**
 
 客户端
 
@@ -187,15 +176,13 @@ ___
 
 ___
 
-### getBrowTexture
+### getBrowTexture <Score text="getBrowTexture" /> 
 
-▸ **getBrowTexture**(): `string`
+▸ **getBrowTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眉毛
-
-**`Effect`**
 
 客户端
 
@@ -203,7 +190,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -211,15 +198,13 @@ guid
 
 ___
 
-### getEyeHighlightColor
+### getEyeHighlightColor <Score text="getEyeHighlightColor" /> 
 
-▸ **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛高光颜色
-
-**`Effect`**
 
 客户端
 
@@ -235,15 +220,13 @@ ___
 
 ___
 
-### getEyeHighlightTexture
+### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
 
-▸ **getEyeHighlightTexture**(): `string`
+▸ **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛高光形状
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -252,7 +235,7 @@ sync = true:双端
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -260,15 +243,13 @@ guid
 
 ___
 
-### getEyeShadowColor
+### getEyeShadowColor <Score text="getEyeShadowColor" /> 
 
-▸ **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼影颜色
-
-**`Effect`**
 
 客户端
 
@@ -284,15 +265,13 @@ ___
 
 ___
 
-### getEyeShadowTexture
+### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
 
-▸ **getEyeShadowTexture**(): `string`
+▸ **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼影贴图
-
-**`Effect`**
 
 客户端
 
@@ -300,7 +279,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -308,15 +287,13 @@ guid
 
 ___
 
-### getEyeTexture
+### getEyeTexture <Score text="getEyeTexture" /> 
 
-▸ **getEyeTexture**(): `string`
+▸ **getEyeTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛贴图
-
-**`Effect`**
 
 客户端
 
@@ -324,7 +301,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -332,15 +309,13 @@ guid
 
 ___
 
-### getEyelashColor
+### getEyelashColor <Score text="getEyelashColor" /> 
 
-▸ **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取睫毛颜色
-
-**`Effect`**
 
 客户端
 
@@ -356,15 +331,13 @@ ___
 
 ___
 
-### getEyelashTexture
+### getEyelashTexture <Score text="getEyelashTexture" /> 
 
-▸ **getEyelashTexture**(): `string`
+▸ **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取睫毛
-
-**`Effect`**
 
 客户端
 
@@ -372,7 +345,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -380,15 +353,13 @@ guid
 
 ___
 
-### getFacialTattooColor
+### getFacialTattooColor <Score text="getFacialTattooColor" /> 
 
-▸ **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md)
+▸ **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身颜色
-
-**`Effect`**
 
 客户端
 
@@ -410,15 +381,13 @@ ___
 
 ___
 
-### getFacialTattooPositionX
+### getFacialTattooPositionX <Score text="getFacialTattooPositionX" /> 
 
-▸ **getFacialTattooPositionX**(`index`): `number`
+▸ **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身左右位置
-
-**`Effect`**
 
 客户端
 
@@ -440,15 +409,13 @@ ___
 
 ___
 
-### getFacialTattooPositionY
+### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
 
-▸ **getFacialTattooPositionY**(`index`): `number`
+▸ **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身上下位置
-
-**`Effect`**
 
 客户端
 
@@ -470,15 +437,13 @@ ___
 
 ___
 
-### getFacialTattooRotation
+### getFacialTattooRotation <Score text="getFacialTattooRotation" /> 
 
-▸ **getFacialTattooRotation**(`index`): `number`
+▸ **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身旋转
-
-**`Effect`**
 
 客户端
 
@@ -500,15 +465,13 @@ ___
 
 ___
 
-### getFacialTattooType
+### getFacialTattooType <Score text="getFacialTattooType" /> 
 
-▸ **getFacialTattooType**(`index`): `string`
+▸ **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身种类贴图
-
-**`Effect`**
 
 客户端
 
@@ -522,7 +485,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -530,15 +493,13 @@ guid
 
 ___
 
-### getFacialTattooZoom
+### getFacialTattooZoom <Score text="getFacialTattooZoom" /> 
 
-▸ **getFacialTattooZoom**(`index`): `number`
+▸ **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取面部纹身缩放
-
-**`Effect`**
 
 客户端
 
@@ -560,15 +521,13 @@ ___
 
 ___
 
-### getHeadPatternColor
+### getHeadPatternColor <Score text="getHeadPatternColor" /> 
 
-▸ **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头部花纹颜色
-
-**`Effect`**
 
 客户端
 
@@ -580,15 +539,13 @@ ___
 
 ___
 
-### getHeadPatternTexture
+### getHeadPatternTexture <Score text="getHeadPatternTexture" /> 
 
-▸ **getHeadPatternTexture**(): `string`
+▸ **getHeadPatternTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头部花纹贴图
-
-**`Effect`**
 
 客户端
 
@@ -596,19 +553,17 @@ ___
 
 `string`
 
-guid
+GUID
 
 ___
 
-### getLeftEyeColor
+### getLeftEyeColor <Score text="getLeftEyeColor" /> 
 
-▸ **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取左眼睛颜色
-
-**`Effect`**
 
 客户端
 
@@ -624,15 +579,13 @@ ___
 
 ___
 
-### getLipstickColor
+### getLipstickColor <Score text="getLipstickColor" /> 
 
-▸ **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取唇膏颜色
-
-**`Effect`**
 
 客户端
 
@@ -648,15 +601,13 @@ ___
 
 ___
 
-### getLipstickTexture
+### getLipstickTexture <Score text="getLipstickTexture" /> 
 
-▸ **getLipstickTexture**(): `string`
+▸ **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取唇膏贴图
-
-**`Effect`**
 
 客户端
 
@@ -664,7 +615,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -672,15 +623,13 @@ guid
 
 ___
 
-### getLowerEyeHighlightColor
+### getLowerEyeHighlightColor <Score text="getLowerEyeHighlightColor" /> 
 
-▸ **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取上高光颜色
-
-**`Effect`**
 
 客户端
 
@@ -696,15 +645,13 @@ ___
 
 ___
 
-### getLowerEyeHighlightTexture
+### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
 
-▸ **getLowerEyeHighlightTexture**(): `string`
+▸ **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取下高光种类
-
-**`Effect`**
 
 客户端
 
@@ -712,7 +659,7 @@ ___
 
 `string`
 
-下高光guid
+下高光GUID
 
 #### Implementation of
 
@@ -720,15 +667,13 @@ ___
 
 ___
 
-### getMesh
+### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string`
+▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取头部模型
-
-**`Effect`**
 
 双端
 
@@ -736,7 +681,7 @@ ___
 
 `string`
 
-模型Guid
+模型GUID
 
 #### Implementation of
 
@@ -744,15 +689,13 @@ ___
 
 ___
 
-### getPupilColor
+### getPupilColor <Score text="getPupilColor" /> 
 
-▸ **getPupilColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getPupilColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛瞳孔花纹颜色
-
-**`Effect`**
 
 客户端
 
@@ -768,15 +711,13 @@ ___
 
 ___
 
-### getPupilPositionX
+### getPupilPositionX <Score text="getPupilPositionX" /> 
 
-▸ **getPupilPositionX**(): `number`
+▸ **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔左右位置
-
-**`Effect`**
 
 客户端
 
@@ -792,15 +733,13 @@ ___
 
 ___
 
-### getPupilPositionY
+### getPupilPositionY <Score text="getPupilPositionY" /> 
 
-▸ **getPupilPositionY**(): `number`
+▸ **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔上下位置
-
-**`Effect`**
 
 客户端
 
@@ -816,15 +755,13 @@ ___
 
 ___
 
-### getPupilRotate
+### getPupilRotate <Score text="getPupilRotate" /> 
 
-▸ **getPupilRotate**(): `number`
+▸ **getPupilRotate**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔旋转
-
-**`Effect`**
 
 客户端
 
@@ -840,15 +777,13 @@ ___
 
 ___
 
-### getPupilScale
+### getPupilScale <Score text="getPupilScale" /> 
 
-▸ **getPupilScale**(): `number`
+▸ **getPupilScale**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取瞳孔大小缩放
-
-**`Effect`**
 
 客户端
 
@@ -864,15 +799,13 @@ ___
 
 ___
 
-### getPupilTexture
+### getPupilTexture <Score text="getPupilTexture" /> 
 
-▸ **getPupilTexture**(): `string`
+▸ **getPupilTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取眼睛瞳孔花纹
-
-**`Effect`**
 
 客户端
 
@@ -880,7 +813,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -888,15 +821,13 @@ guid
 
 ___
 
-### getRightEyeColor
+### getRightEyeColor <Score text="getRightEyeColor" /> 
 
-▸ **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取右眼睛颜色
-
-**`Effect`**
 
 客户端
 
@@ -912,15 +843,13 @@ ___
 
 ___
 
-### getUpperEyeHighlightColor
+### getUpperEyeHighlightColor <Score text="getUpperEyeHighlightColor" /> 
 
-▸ **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md)
+▸ **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取上高光颜色
-
-**`Effect`**
 
 客户端
 
@@ -936,15 +865,13 @@ ___
 
 ___
 
-### getUpperEyeHighlightTexture
+### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
 
-▸ **getUpperEyeHighlightTexture**(): `string`
+▸ **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取上高光种类
-
-**`Effect`**
 
 客户端
 
@@ -952,7 +879,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -960,15 +887,13 @@ guid
 
 ___
 
-### setBlushColor
+### setBlushColor <Score text="setBlushColor" /> 
 
-▸ **setBlushColor**(`color`, `sync`): `void`
+▸ **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置腮红颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -980,9 +905,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -990,15 +912,13 @@ sync = true:双端
 
 ___
 
-### setBlushTexture
+### setBlushTexture <Score text="setBlushTexture" /> 
 
-▸ **setBlushTexture**(`guid`, `sync`): `void`
+▸ **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置腮红贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1007,12 +927,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1020,15 +937,13 @@ sync = true:双端
 
 ___
 
-### setBrowColor
+### setBrowColor <Score text="setBrowColor" /> 
 
-▸ **setBrowColor**(`color`, `sync`): `void`
+▸ **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1040,9 +955,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1050,15 +962,13 @@ sync = true:双端
 
 ___
 
-### setBrowTexture
+### setBrowTexture <Score text="setBrowTexture" /> 
 
-▸ **setBrowTexture**(`guid`, `sync`): `void`
+▸ **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眉毛
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1067,12 +977,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1080,15 +987,13 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightColor
+### setEyeHighlightColor <Score text="setEyeHighlightColor" /> 
 
-▸ **setEyeHighlightColor**(`color`, `sync`): `void`
+▸ **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛高光颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1100,9 +1005,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1110,15 +1012,13 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightTexture
+### setEyeHighlightTexture <Score text="setEyeHighlightTexture" /> 
 
-▸ **setEyeHighlightTexture**(`guid`, `sync`): `void`
+▸ **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛高光形状
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1127,12 +1027,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUIDUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1140,15 +1037,13 @@ sync = true:双端
 
 ___
 
-### setEyeShadowColor
+### setEyeShadowColor <Score text="setEyeShadowColor" /> 
 
-▸ **setEyeShadowColor**(`color`, `sync`): `void`
+▸ **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼影颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1160,9 +1055,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1170,15 +1062,13 @@ sync = true:双端
 
 ___
 
-### setEyeShadowTexture
+### setEyeShadowTexture <Score text="setEyeShadowTexture" /> 
 
-▸ **setEyeShadowTexture**(`guid`, `sync`): `void`
+▸ **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼影贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1187,12 +1077,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1200,15 +1087,13 @@ sync = true:双端
 
 ___
 
-### setEyeTexture
+### setEyeTexture <Score text="setEyeTexture" /> 
 
-▸ **setEyeTexture**(`guid`, `sync`): `void`
+▸ **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1217,12 +1102,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1230,15 +1112,13 @@ sync = true:双端
 
 ___
 
-### setEyelashColor
+### setEyelashColor <Score text="setEyelashColor" /> 
 
-▸ **setEyelashColor**(`color`, `sync`): `void`
+▸ **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置睫毛颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1250,9 +1130,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1260,15 +1137,13 @@ sync = true:双端
 
 ___
 
-### setEyelashTexture
+### setEyelashTexture <Score text="setEyelashTexture" /> 
 
-▸ **setEyelashTexture**(`guid`, `sync`): `void`
+▸ **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置睫毛
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1277,12 +1152,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1290,15 +1162,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooColor
+### setFacialTattooColor <Score text="setFacialTattooColor" /> 
 
-▸ **setFacialTattooColor**(`index`, `color`, `sync`): `void`
+▸ **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1311,9 +1181,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1321,15 +1188,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionX
+### setFacialTattooPositionX <Score text="setFacialTattooPositionX" /> 
 
-▸ **setFacialTattooPositionX**(`index`, `value`, `sync`): `void`
+▸ **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身左右位置
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1342,9 +1207,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1352,15 +1214,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionY
+### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
 
-▸ **setFacialTattooPositionY**(`index`, `value`, `sync`): `void`
+▸ **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身上下位置
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1373,9 +1233,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1383,15 +1240,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooRotation
+### setFacialTattooRotation <Score text="setFacialTattooRotation" /> 
 
-▸ **setFacialTattooRotation**(`index`, `value`, `sync`): `void`
+▸ **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身旋转
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1404,9 +1259,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1414,15 +1266,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooType
+### setFacialTattooType <Score text="setFacialTattooType" /> 
 
-▸ **setFacialTattooType**(`index`, `guid`, `sync`): `void`
+▸ **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身种类贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1432,12 +1282,9 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1445,15 +1292,13 @@ sync = true:双端
 
 ___
 
-### setFacialTattooZoom
+### setFacialTattooZoom <Score text="setFacialTattooZoom" /> 
 
-▸ **setFacialTattooZoom**(`index`, `value`, `sync`): `void`
+▸ **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置面部纹身缩放
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1466,9 +1311,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1476,15 +1318,13 @@ sync = true:双端
 
 ___
 
-### setHeadPatternColor
+### setHeadPatternColor <Score text="setHeadPatternColor" /> 
 
-▸ **setHeadPatternColor**(`color`, `sync`): `void`
+▸ **setHeadPatternColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头部花纹颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1496,21 +1336,16 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setHeadPatternTexture
+### setHeadPatternTexture <Score text="setHeadPatternTexture" /> 
 
-▸ **setHeadPatternTexture**(`textureGuid`, `sync`): `void`
+▸ **setHeadPatternTexture**(`textureGuid`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头部花纹贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1522,21 +1357,16 @@ sync = true:双端
 | `textureGuid` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setLeftEyeColor
+### setLeftEyeColor <Score text="setLeftEyeColor" /> 
 
-▸ **setLeftEyeColor**(`color`, `sync`): `void`
+▸ **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置左眼睛颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1548,9 +1378,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1558,15 +1385,13 @@ sync = true:双端
 
 ___
 
-### setLipstickColor
+### setLipstickColor <Score text="setLipstickColor" /> 
 
-▸ **setLipstickColor**(`color`, `sync`): `void`
+▸ **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置唇膏颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1578,9 +1403,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1588,15 +1410,13 @@ sync = true:双端
 
 ___
 
-### setLipstickTexture
+### setLipstickTexture <Score text="setLipstickTexture" /> 
 
-▸ **setLipstickTexture**(`guid`, `sync`): `void`
+▸ **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置唇膏贴图
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1605,12 +1425,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1618,15 +1435,13 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightColor
+### setLowerEyeHighlightColor <Score text="setLowerEyeHighlightColor" /> 
 
-▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void`
+▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置下高光颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1638,9 +1453,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1648,15 +1460,13 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightTexture
+### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
 
-▸ **setLowerEyeHighlightTexture**(`guid`, `sync`): `void`
+▸ **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置下高光种类
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1665,12 +1475,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  值 |
+| `GUID` | `string` |  值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1678,19 +1485,19 @@ sync = true:双端
 
 ___
 
-### setMesh
+### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`guid`, `sync`): `void`
+▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置头部模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型GUID没有预加载，则v2本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -1699,12 +1506,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1712,15 +1516,13 @@ sync = true:双端
 
 ___
 
-### setPupilColor
+### setPupilColor <Score text="setPupilColor" /> 
 
-▸ **setPupilColor**(`color`, `sync`): `void`
+▸ **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛瞳孔花纹颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1732,9 +1534,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1742,15 +1541,13 @@ sync = true:双端
 
 ___
 
-### setPupilPositionX
+### setPupilPositionX <Score text="setPupilPositionX" /> 
 
-▸ **setPupilPositionX**(`value`, `sync`): `void`
+▸ **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔左右位置
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1762,9 +1559,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1772,15 +1566,13 @@ sync = true:双端
 
 ___
 
-### setPupilPositionY
+### setPupilPositionY <Score text="setPupilPositionY" /> 
 
-▸ **setPupilPositionY**(`value`, `sync`): `void`
+▸ **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔上下位置
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1792,9 +1584,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1802,15 +1591,13 @@ sync = true:双端
 
 ___
 
-### setPupilRotate
+### setPupilRotate <Score text="setPupilRotate" /> 
 
-▸ **setPupilRotate**(`value`, `sync`): `void`
+▸ **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔旋转
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1822,9 +1609,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1832,15 +1616,13 @@ sync = true:双端
 
 ___
 
-### setPupilScale
+### setPupilScale <Score text="setPupilScale" /> 
 
-▸ **setPupilScale**(`value`, `sync`): `void`
+▸ **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置瞳孔大小缩放
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1852,9 +1634,6 @@ sync = true:双端
 | `value` | `number` | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1862,15 +1641,13 @@ sync = true:双端
 
 ___
 
-### setPupilTexture
+### setPupilTexture <Score text="setPupilTexture" /> 
 
-▸ **setPupilTexture**(`guid`, `sync`): `void`
+▸ **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置眼睛瞳孔花纹
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1879,12 +1656,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1892,15 +1666,13 @@ sync = true:双端
 
 ___
 
-### setRightEyeColor
+### setRightEyeColor <Score text="setRightEyeColor" /> 
 
-▸ **setRightEyeColor**(`color`, `sync`): `void`
+▸ **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置右眼睛颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1912,9 +1684,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1922,15 +1691,13 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightColor
+### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
 
-▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void`
+▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置上高光颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1942,9 +1709,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -1952,15 +1716,13 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightTexture
+### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
 
-▸ **setUpperEyeHighlightTexture**(`guid`, `sync`): `void`
+▸ **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置上高光种类
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -1969,12 +1731,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | guid值 |
+| `GUID` | `string` | GUID值 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

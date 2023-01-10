@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Vector2
 
-# Vector2 <Badge type="tip" text="Class" />
+# Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
 **`Description`**
 
@@ -101,7 +101,7 @@
 
 ## Properties
 
-### x
+### x <Score text="x" /> 
 
 • **x**: `number`
 
@@ -111,7 +111,7 @@
 
 ___
 
-### y
+### y <Score text="y" /> 
 
 • **y**: `number`
 
@@ -121,7 +121,7 @@ ___
 
 ## Accessors
 
-### length
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### magnitude
+### magnitude <Score text="magnitude" /> 
 
 • `get` **magnitude**(): `number`
 
@@ -153,7 +153,7 @@ ___
 
 ___
 
-### negative
+### negative <Score text="negative" /> 
 
 • `get` **negative**(): [`Vector2`](Type.Vector2.md)
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### normalized
+### normalized <Score text="normalized" /> 
 
 • `get` **normalized**(): [`Vector2`](Type.Vector2.md)
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### sqrLength
+### sqrLength <Score text="sqrLength" /> 
 
 • `get` **sqrLength**(): `number`
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### sqrMagnitude
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
 • `get` **sqrMagnitude**(): `number`
 
@@ -221,7 +221,7 @@ ___
 
 ___
 
-### negOne
+### negOne <Score text="negOne" /> 
 
 • `Static` `get` **negOne**(): [`Vector2`](Type.Vector2.md)
 
@@ -235,7 +235,7 @@ ___
 
 ___
 
-### one
+### one <Score text="one" /> 
 
 • `Static` `get` **one**(): [`Vector2`](Type.Vector2.md)
 
@@ -249,7 +249,7 @@ ___
 
 ___
 
-### unitX
+### unitX <Score text="unitX" /> 
 
 • `Static` `get` **unitX**(): [`Vector2`](Type.Vector2.md)
 
@@ -263,7 +263,7 @@ ___
 
 ___
 
-### unitY
+### unitY <Score text="unitY" /> 
 
 • `Static` `get` **unitY**(): [`Vector2`](Type.Vector2.md)
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-### zero
+### zero <Score text="zero" /> 
 
 • `Static` `get` **zero**(): [`Vector2`](Type.Vector2.md)
 
@@ -291,17 +291,14 @@ ___
 
 ## Methods
 
-### add
+### add <Score text="add" /> 
 
-▸ **add**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **add**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 加一个向量
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -317,17 +314,14 @@ ___
 
 ___
 
-### clone
+### clone <Score text="clone" /> 
 
-▸ **clone**(): [`Vector2`](Type.Vector2.md)
+▸ **clone**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 克隆当前向量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -337,17 +331,14 @@ ___
 
 ___
 
-### divide
+### divide <Score text="divide" /> 
 
-▸ **divide**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **divide**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 每个分量除以参数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -361,15 +352,12 @@ ___
 
 修改后的自身对象
 
-▸ **divide**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **divide**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 除以一个向量
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -385,17 +373,14 @@ ___
 
 ___
 
-### equals
+### equals <Score text="equals" /> 
 
-▸ **equals**(`other`, `epsilon?`): `boolean`
+▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断当前向量是否在误差范围内与指定向量相等
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -412,17 +397,14 @@ ___
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ **fromString**(`str`): `void`
+▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 读取字符串数据
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -430,23 +412,17 @@ ___
 | :------ | :------ | :------ |
 | `str` | `string` | 读取的字符 |
 
-#### Returns
-
-`void`
 
 ___
 
-### multiply
+### multiply <Score text="multiply" /> 
 
-▸ **multiply**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **multiply**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 乘以一个向量
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -460,15 +436,12 @@ ___
 
 修改后的自身对象
 
-▸ **multiply**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **multiply**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 每个分量乘以参数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -484,17 +457,14 @@ ___
 
 ___
 
-### normalize
+### normalize <Score text="normalize" /> 
 
-▸ **normalize**(): [`Vector2`](Type.Vector2.md)
+▸ **normalize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将当前向量归一化
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -504,17 +474,14 @@ ___
 
 ___
 
-### set
+### set <Score text="set" /> 
 
-▸ **set**(`other`): [`Vector2`](Type.Vector2.md)
+▸ **set**(`other`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前向量使其与指定向量相等
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -528,15 +495,12 @@ ___
 
 `this`
 
-▸ **set**(`x?`, `y?`): [`Vector2`](Type.Vector2.md)
+▸ **set**(`x?`, `y?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前向量的具体分量值
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -553,17 +517,14 @@ ___
 
 ___
 
-### strictEquals
+### strictEquals <Score text="strictEquals" /> 
 
-▸ **strictEquals**(`other`): `boolean`
+▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断当前向量是否与指定向量相等
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -579,17 +540,14 @@ ___
 
 ___
 
-### subtract
+### subtract <Score text="subtract" /> 
 
-▸ **subtract**(`v`): [`Vector2`](Type.Vector2.md)
+▸ **subtract**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 减去一个向量
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -605,17 +563,14 @@ ___
 
 ___
 
-### toString
+### toString <Score text="toString" /> 
 
-▸ **toString**(): `string`
+▸ **toString**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 输出为字符串
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -625,21 +580,20 @@ ___
 
 ___
 
-### add
+### add <Score text="add" /> 
 
-▸ `Static` **add**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **add**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算ab两个向量相加
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -657,17 +611,14 @@ ___
 
 ___
 
-### angle
+### angle <Score text="angle" /> 
 
-▸ `Static` **angle**(`a`, `b`): `number`
+▸ `Static` **angle**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 求两向量夹角角度
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -684,21 +635,20 @@ ___
 
 ___
 
-### ceil
+### ceil <Score text="ceil" /> 
 
-▸ `Static` **ceil**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **ceil**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量向上取整
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -715,17 +665,14 @@ ___
 
 ___
 
-### clamp
+### clamp <Score text="clamp" /> 
 
-▸ `Static` **clamp**(`v`, `min`, `max`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **clamp**(`v`, `min`, `max`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前向量的值, 使其各个分量都处于指定的范围内
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -743,17 +690,14 @@ ___
 
 ___
 
-### clone
+### clone <Score text="clone" /> 
 
-▸ `Static` **clone**(`a`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **clone**(`a`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 克隆向量a得到的新 Vector2 向量
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -769,21 +713,20 @@ ___
 
 ___
 
-### copy
+### copy <Score text="copy" /> 
 
-▸ `Static` **copy**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **copy**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获得指定向量的拷贝
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -800,21 +743,20 @@ ___
 
 ___
 
-### cross
+### cross <Score text="cross" /> 
 
-▸ `Static` **cross**(`a`, `b`): `number`
+▸ `Static` **cross**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 向量叉积 (向量积)
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 注意二维向量的叉积为与 Z 轴平行的三维向量, 此处以向量的模长表示
+
+:::
 
 #### Parameters
 
@@ -831,17 +773,14 @@ ___
 
 ___
 
-### distance
+### distance <Score text="distance" /> 
 
-▸ `Static` **distance**(`a`, `b`): `number`
+▸ `Static` **distance**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 求两向量的欧氏距离
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -858,21 +797,20 @@ ___
 
 ___
 
-### divide
+### divide <Score text="divide" /> 
 
-▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 遍历向量a的每个分量除以b
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -888,19 +826,18 @@ ___
 
 相除的结果 Vector2 对象
 
-▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算向量a除以向量b
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -918,17 +855,14 @@ ___
 
 ___
 
-### dot
+### dot <Score text="dot" /> 
 
-▸ `Static` **dot**(`a`, `b`): `number`
+▸ `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 向量点积 (数量积)
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -945,17 +879,14 @@ ___
 
 ___
 
-### equals
+### equals <Score text="equals" /> 
 
-▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean`
+▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 排除浮点数误差的向量近似等价判断
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -973,21 +904,20 @@ ___
 
 ___
 
-### floor
+### floor <Score text="floor" /> 
 
-▸ `Static` **floor**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **floor**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量向下取整
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1004,21 +934,20 @@ ___
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ `Static` **fromString**(`str`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **fromString**(`str`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 通过一个字符串创建 Vector2 对象
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1035,21 +964,20 @@ ___
 
 ___
 
-### fromUEVector2D
+### fromUEVector2D <Score text="fromUEVector" /> 
 
-▸ `Static` **fromUEVector2D**(`v`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **fromUEVector2D**(`v`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 通过一个UE向量创建 Vector2 对象
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1066,21 +994,20 @@ ___
 
 ___
 
-### invert
+### invert <Score text="invert" /> 
 
-▸ `Static` **invert**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **invert**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量取倒数, 接近 0 时返回 Infinity
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1097,21 +1024,20 @@ ___
 
 ___
 
-### invertSafe
+### invertSafe <Score text="invertSafe" /> 
 
-▸ `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量取倒数, 接近 0 时返回 0
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1129,21 +1055,20 @@ ___
 
 ___
 
-### lerp
+### lerp <Score text="lerp" /> 
 
-▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量线性插值： A + t  * (B - A)
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1162,17 +1087,14 @@ ___
 
 ___
 
-### magnitude
+### magnitude <Score text="magnitude" /> 
 
-▸ `Static` **magnitude**(`a`): `number`
+▸ `Static` **magnitude**(`a`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 求向量长度
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1188,17 +1110,14 @@ ___
 
 ___
 
-### max
+### max <Score text="max" /> 
 
-▸ `Static` **max**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **max**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量最大值
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1216,21 +1135,20 @@ ___
 
 ___
 
-### min
+### min <Score text="min" /> 
 
-▸ `Static` **min**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **min**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量最小值
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1248,21 +1166,20 @@ ___
 
 ___
 
-### moveTowards
+### moveTowards <Score text="moveTowards" /> 
 
-▸ `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 向目标移动
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1281,21 +1198,20 @@ ___
 
 ___
 
-### multiply
+### multiply <Score text="multiply" /> 
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 遍历向量a的每个分量乘以b
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1311,19 +1227,18 @@ ___
 
 相乘的结果 Vector2 对象
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算向量a乘以向量b
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1341,21 +1256,20 @@ ___
 
 ___
 
-### negate
+### negate <Score text="negate" /> 
 
-▸ `Static` **negate**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **negate**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量取负
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1372,21 +1286,20 @@ ___
 
 ___
 
-### normalize
+### normalize <Score text="normalize" /> 
 
-▸ `Static` **normalize**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **normalize**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 归一化向量
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1403,21 +1316,20 @@ ___
 
 ___
 
-### project
+### project <Score text="project" /> 
 
-▸ `Static` **project**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **project**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算向量a在向量b上的投影向量
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1435,17 +1347,14 @@ ___
 
 ___
 
-### random
+### random <Score text="random" /> 
 
-▸ `Static` **random**(`range?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **random**(`range?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 生成一个在单位圆上均匀分布的随机 Vector2 对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1461,21 +1370,20 @@ ___
 
 ___
 
-### reflect
+### reflect <Score text="reflect" /> 
 
-▸ `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 求反射角
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1493,21 +1401,20 @@ ___
 
 ___
 
-### rotate
+### rotate <Score text="rotate" /> 
 
-▸ `Static` **rotate**(`v`, `radians`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **rotate**(`v`, `radians`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算向量a旋转radians度后的向量
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 
@@ -1525,17 +1432,14 @@ ___
 
 ___
 
-### round
+### round <Score text="round" /> 
 
-▸ `Static` **round**(`a`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **round**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 逐元素向量四舍五入取整
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1552,21 +1456,20 @@ ___
 
 ___
 
-### set
+### set <Score text="set" /> 
 
-▸ `Static` **set**(`a`, `x`, `y`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **set**(`a`, `x`, `y`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置向量a的值
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 向量a不能为空对象
+
+:::
 
 #### Parameters
 
@@ -1584,21 +1487,20 @@ ___
 
 ___
 
-### signAngle
+### signAngle <Score text="signAngle" /> 
 
-▸ `Static` **signAngle**(`a`, `b`): `number`
+▸ `Static` **signAngle**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取向量a和向量b之间的有符号角度
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 有符号角度的取值范围为 (-180, 180], 当前向量可以通过逆时针旋转有符号角度与指定向量同向 <br/>
+
+:::
 
 #### Parameters
 
@@ -1615,17 +1517,14 @@ ___
 
 ___
 
-### sqrMagnitude
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
-▸ `Static` **sqrMagnitude**(`a`): `number`
+▸ `Static` **sqrMagnitude**(`a`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 求向量长度平方
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1641,17 +1540,14 @@ ___
 
 ___
 
-### squaredDistance
+### squaredDistance <Score text="squaredDistance" /> 
 
-▸ `Static` **squaredDistance**(`a`, `b`): `number`
+▸ `Static` **squaredDistance**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 求两向量的欧氏距离平方
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1668,17 +1564,14 @@ ___
 
 ___
 
-### strictEquals
+### strictEquals <Score text="strictEquals" /> 
 
-▸ `Static` **strictEquals**(`a`, `b`): `boolean`
+▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 向量等价判断
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -1695,21 +1588,20 @@ ___
 
 ___
 
-### subtract
+### subtract <Score text="subtract" /> 
 
-▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md)
+▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 计算向量a减去向量b
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
 
 #### Parameters
 

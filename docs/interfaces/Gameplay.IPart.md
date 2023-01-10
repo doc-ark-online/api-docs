@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IPart
 
-# IPart <Badge type="tip" text="Interface" />
+# IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 
 **`Description`**
 
@@ -31,15 +31,13 @@
 
 ## Methods
 
-### getMesh
+### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string`
+▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取部位模型
-
-**`Effect`**
 
 双端
 
@@ -47,23 +45,23 @@
 
 `string`
 
-模型Guid
+模型GUID
 
 ___
 
-### setMesh
+### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`guid`, `sync`): `void`
+▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置部位模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型GUID没有预加载，则v2本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -72,9 +70,6 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`

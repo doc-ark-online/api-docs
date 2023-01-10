@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIBehavior
 
-# UIBehavior <Badge type="tip" text="Class" />
+# UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
 **`Description`**
 
@@ -32,17 +32,14 @@ UI的驱动脚本基类
 
 ## Accessors
 
-### canUpdate
+### canUpdate <Score text="canUpdate" /> 
 
-• `get` **canUpdate**(): `boolean`
+• `get` **canUpdate**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否能触发onUpdate函数
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -50,15 +47,12 @@ UI的驱动脚本基类
 
 返回能否触发的标志
 
-• `set` **canUpdate**(`bCanUpdate`): `void`
+• `set` **canUpdate**(`bCanUpdate`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否能触发onUpdate函数
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -66,23 +60,17 @@ UI的驱动脚本基类
 | :------ | :------ | :------ |
 | `bCanUpdate` | `boolean` | 能否触发的标志 |
 
-#### Returns
-
-`void`
 
 ___
 
-### fullScreen
+### fullScreen <Score text="fullScreen" /> 
 
-• `set` **fullScreen**(`inFull`): `void`
+• `set` **fullScreen**(`inFull`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -90,13 +78,10 @@ ___
 | :------ | :------ | :------ |
 | `inFull` | `boolean` |  设置为随父节点大小全屏适配 |
 
-#### Returns
-
-`void`
 
 ___
 
-### layer
+### layer <Score text="layer" /> 
 
 • `get` **layer**(): `number`
 
@@ -105,15 +90,12 @@ ___
 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
-**`Effect`**
-
-只在客户端调用生效
 
 **`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
-Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
+Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer) <Badge type="tip" text="other" />
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
@@ -140,15 +122,12 @@ Layer层级
 设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
-**`Effect`**
-
-只在客户端调用生效
 
 **`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 ```ts
-this.layer = Extension.UILayerScene;
+this.layer = Extension.UILayerScene; <Badge type="tip" text="other" />
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
@@ -168,23 +147,17 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 | :------ | :------ | :------ |
 | `inLayer` | `number` |  设置Layer层级 |
 
-#### Returns
-
-`void`
 
 ___
 
-### rootCanvas
+### rootCanvas <Score text="rootCanvas" /> 
 
-• `get` **rootCanvas**(): [`Canvas`](UI.Canvas.md)
+• `get` **rootCanvas**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取UI的根Canvas节点
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -194,7 +167,7 @@ ___
 
 ___
 
-### uiObject
+### uiObject <Score text="uiObject" /> 
 
 • `get` **uiObject**(): [`Widget`](UI.Widget.md)
 
@@ -210,17 +183,14 @@ ___
 
 ___
 
-### uiWidgetBase
+### uiWidgetBase <Score text="uiWidgetBase" /> 
 
-• `get` **uiWidgetBase**(): [`UserWidget`](UI.UserWidget.md)
+• `get` **uiWidgetBase**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 转化UIObject 为指定UserWidget对象
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -230,17 +200,14 @@ ___
 
 ___
 
-### visible
+### visible <Score text="visible" /> 
 
-• `get` **visible**(): `boolean`
+• `get` **visible**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取UI是否显示
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -248,15 +215,12 @@ ___
 
 返回是否可见
 
-• `set` **visible**(`inVisible`): `void`
+• `set` **visible**(`inVisible`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，需要传递参数的可以使用setVisible方法
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -264,41 +228,29 @@ ___
 | :------ | :------ | :------ |
 | `inVisible` | `boolean` |  设置是否可见 可见设置为SelfHitTestInvisible,不可见设置为Collapsed |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### destroy
+### destroy <Score text="destroy" /> 
 
-▸ **destroy**(): `void`
+▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 销毁UI对象
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### detectDrag
+### detectDrag <Score text="detectDrag" /> 
 
-▸ **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md)
+▸ **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 触发DragDrop事件的检测
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -314,17 +266,14 @@ ___
 
 ___
 
-### detectDragIfPressed
+### detectDragIfPressed <Score text="detectDragIfPressed" /> 
 
-▸ **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md)
+▸ **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 如果事件检测通过就触发DragDrop事件的回复
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -341,17 +290,14 @@ ___
 
 ___
 
-### newDragDrop
+### newDragDrop <Score text="newDragDrop" /> 
 
-▸ **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md)
+▸ **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 创建DragDrop事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -371,17 +317,14 @@ ___
 
 ___
 
-### setVisible
+### setVisible <Score text="setVisible" /> 
 
-▸ **setVisible**(`inVisible`, `...params`): `void`
+▸ **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -390,23 +333,17 @@ ___
 | `inVisible` | `boolean` \| [`SlateVisibility`](../enums/UI.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
 | `...params` | `any`[] |  传递给onShow的参数 |
 
-#### Returns
-
-`void`
 
 ___
 
-### addBehavior
+### addBehavior <Score text="addBehavior" /> 
 
-▸ `Static` **addBehavior**(`key`, `value`): `void`
+▸ `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加一个全局的行为记录
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -415,41 +352,29 @@ ___
 | `key` | `string` |  行为标记 |
 | `value` | `any` |  行为值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### clearBehavior
+### clearBehavior <Score text="clearBehavior" /> 
 
-▸ `Static` **clearBehavior**(): `void`
+▸ `Static` **clearBehavior**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清空全局的行为记录
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### getBehavior
+### getBehavior <Score text="getBehavior" /> 
 
-▸ `Static` **getBehavior**(`key`): `any`
+▸ `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取一个全局的行为记录
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -465,17 +390,14 @@ ___
 
 ___
 
-### removeBehavior
+### removeBehavior <Score text="removeBehavior" /> 
 
-▸ `Static` **removeBehavior**(`key`): `void`
+▸ `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 移除一个全局的行为记录
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -483,6 +405,3 @@ ___
 | :------ | :------ | :------ |
 | `key` | `string` |  行为标记 |
 
-#### Returns
-
-`void`

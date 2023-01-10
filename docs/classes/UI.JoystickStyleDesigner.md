@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / JoystickStyleDesigner
 
-# JoystickStyleDesigner <Badge type="tip" text="Class" />
+# JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
 **`Description`**
 
@@ -20,19 +20,18 @@
 
 **`Effect`**
 
-只在客户端调用生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `NormalGuid` | `string` | 普通资源 |
-| `TouchGuid` | `string` | 按压资源 |
-| `DisableGuid` | `string` | 禁用资源 |
+| `NormalGUID` | `string` | 普通资源 |
+| `TouchGUID` | `string` | 按压资源 |
+| `DisableGUID` | `string` | 禁用资源 |
 
 ## Properties
 
-### disable
+### disable <Score text="disable" /> 
 
 • **disable**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 
@@ -42,7 +41,7 @@
 
 ___
 
-### normal
+### normal <Score text="normal" /> 
 
 • **normal**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 
@@ -52,7 +51,7 @@ ___
 
 ___
 
-### touch
+### touch <Score text="touch" /> 
 
 • **touch**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 

@@ -1,6 +1,6 @@
 [Extension](../modules/Extension.Extension.md) / GameObjPool
 
-# GameObjPool <Badge type="tip" text="Class" />
+# GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
 **`Instance`**
 
@@ -8,15 +8,17 @@
 
 GameObject对象池
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用getInstance获取对象
+
+:::
 
 ## Table of contents
 
 | Methods |
 | :-----|
-| **[clear](Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该guid对应的所有对象|
+| **[clear](Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该GUID对应的所有对象|
 | **[despawn](Extension.GameObjPool.md#despawn)**(`GameObject`): `void` <br> 归还一个对象|
 | **[destroy](Extension.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
 | **[spawn](Extension.GameObjPool.md#spawn)**<extends `GameObject`<`T`\> |\>(`string`): extends `GameObject`<`T`\> | <br> 生成一个对象|
@@ -24,41 +26,32 @@ GameObject对象池
 
 ## Methods
 
-### clear
+### clear <Score text="clear" /> 
 
-▸ **clear**(`guid`): `void`
+▸ **clear**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
-清除对象池中该guid对应的所有对象
+清除对象池中该GUID对应的所有对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  要清除对象的guid |
+| `GUID` | `string` |  要清除对象的GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### despawn
+### despawn <Score text="despawn" /> 
 
-▸ **despawn**(`obj`): `void`
+▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 归还一个对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -66,41 +59,29 @@ ___
 | :------ | :------ | :------ |
 | `obj` | `GameObject` |  要归还的对象 |
 
-#### Returns
-
-`void`
 
 ___
 
-### destroy
+### destroy <Score text="destroy" /> 
 
-▸ **destroy**(): `void`
+▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 销毁对象池全局实例
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### spawn
+### spawn <Score text="spawn" /> 
 
-▸ **spawn**<`T`\>(`guid`): `T`
+▸ **spawn**<`T`\>(`GUID`): `T` <Badge type="tip" text="other" />
 
 **`Description`**
 
 生成一个对象
 
-**`Effect`**
-
-调用端生效
 
 #### Type parameters
 
@@ -112,7 +93,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  场景对象的guid \| 资源的guid \| prefab的guid |
+| `GUID` | `string` |  场景对象的GUID \| 资源的GUID \| prefab的GUID |
 
 #### Returns
 
@@ -122,17 +103,14 @@ ___
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`GameObjPool`](Extension.GameObjPool.md)
+▸ `Static` **getInstance**(): [`GameObjPool`](Extension.GameObjPool.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取对象池全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

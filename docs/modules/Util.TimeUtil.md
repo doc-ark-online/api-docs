@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / TimeUtil
 
-# TimeUtil <Badge type="tip" text="Namespace" />
+# TimeUtil <Badge type="tip" text="Namespace" /> <Score text="TimeUtil" />
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Variables
 
-### onEnterFrame
+### onEnterFrame <Score text="onEnterFrame" /> 
 
 • `Const` **onEnterFrame**: [`Action1`](../classes/Type.Action1.md)<`number`\>
 
@@ -37,9 +37,11 @@
 
 进入帧事件时执行绑定函数(参数deltaTime)
 
-**`Precautions`**
+::: warning Precautions
 
 每次update时自动执行所有绑定的函数
+
+:::
 
 **`Example`**
 
@@ -52,7 +54,7 @@ onEnterFrame.add((dt : number) =>{
 
 ___
 
-### traceFrameTime
+### traceFrameTime <Score text="traceFrameTime" /> 
 
 • **traceFrameTime**: `boolean`
 
@@ -62,35 +64,26 @@ ___
 
 ## Functions
 
-### clear
+### clear <Score text="clear" /> 
 
-▸ **clear**(): `void`
+▸ **clear**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清除所有
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### clearDelayExecute
+### clearDelayExecute <Score text="clearDelayExecute" /> 
 
-▸ **clearDelayExecute**(`id`): `void`
+▸ **clearDelayExecute**(`id`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清除delayExecute
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -98,23 +91,17 @@ ___
 | :------ | :------ | :------ |
 | `id` | `number` |  delayExecute方法返回的ID |
 
-#### Returns
-
-`void`
 
 ___
 
-### clearInterval
+### clearInterval <Score text="clearInterval" /> 
 
-▸ **clearInterval**(`id`): `void`
+▸ **clearInterval**(`id`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清除setInterval
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -122,23 +109,17 @@ ___
 | :------ | :------ | :------ |
 | `id` | `number` |  setInterval方法返回的ID |
 
-#### Returns
-
-`void`
 
 ___
 
-### delayExecute
+### delayExecute <Score text="delayExecute" /> 
 
-▸ **delayExecute**(`handler`, `frameNum?`): `number`
+▸ **delayExecute**(`handler`, `frameNum?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 延迟一定帧数执行方法
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -155,17 +136,14 @@ ___
 
 ___
 
-### delaySecond
+### delaySecond <Score text="delaySecond" /> 
 
-▸ **delaySecond**(`second`): `Promise`<`void`\>
+▸ **delaySecond**(`second`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 延迟一定秒数,用于异步方法中间的等待，不可取消
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -181,21 +159,20 @@ Promise
 
 ___
 
-### delayTime
+### delayTime <Score text="delayTime" /> 
 
-▸ **delayTime**(): `number`
+▸ **delayTime**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 每一帧经过的时间 (单位：秒)
 
-**`Precautions`**
+::: warning Precautions
 
 调用这个函数之前两次Update函数调用之间的间隔时间
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Returns
 
@@ -205,21 +182,20 @@ number（单位：秒）
 
 ___
 
-### elapsedTime
+### elapsedTime <Score text="elapsedTime" /> 
 
-▸ **elapsedTime**(): `number`
+▸ **elapsedTime**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
+
+:::
 
 #### Returns
 
@@ -229,17 +205,14 @@ ___
 
 ___
 
-### getExecuteTime
+### getExecuteTime <Score text="getExecuteTime" /> 
 
-▸ **getExecuteTime**(`fn`): `number`
+▸ **getExecuteTime**(`fn`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取一个方法的执行时间
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -255,17 +228,14 @@ ___
 
 ___
 
-### parseTime
+### parseTime <Score text="parseTime" /> 
 
-▸ **parseTime**(`timeData`, `format?`): `string`
+▸ **parseTime**(`timeData`, `format?`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 格式化时间戳
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -282,17 +252,14 @@ ___
 
 ___
 
-### setInterval
+### setInterval <Score text="setInterval" /> 
 
-▸ **setInterval**(`handler`, `timeout`, `exitJudge?`): `number`
+▸ **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 按一定时间间隔执行方法
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -310,21 +277,20 @@ ___
 
 ___
 
-### time
+### time <Score text="time" /> 
 
-▸ **time**(): `number`
+▸ **time**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 UNIX 纪元的开始日期为 1970 年 1 月 1 日。
+
+:::
 
 #### Returns
 

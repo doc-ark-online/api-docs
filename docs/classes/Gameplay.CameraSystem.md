@@ -1,14 +1,16 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraSystem
 
-# CameraSystem <Badge type="tip" text="Class" />
+# CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 
 **`Description`**
 
 摄像机系统
 
-**`Precautions`**
+::: warning Precautions
 
 使用character.cameraSystem进行调用
+
+:::
 
 ## Table of contents
 
@@ -80,7 +82,7 @@
 
 ## Properties
 
-### enableFadeEffect
+### enableFadeEffect <Score text="enableFadeEffect" /> 
 
 • **enableFadeEffect**: `boolean`
 
@@ -90,7 +92,7 @@
 
 ___
 
-### occludeCameraActor
+### occludeCameraActor <Score text="occludeCameraActor" /> 
 
 • **occludeCameraActor**: `any`
 
@@ -100,7 +102,7 @@ ___
 
 ## Accessors
 
-### cameraCollisionEnable
+### cameraCollisionEnable <Score text="cameraCollisionEnable" /> 
 
 • `get` **cameraCollisionEnable**(): `boolean`
 
@@ -124,13 +126,10 @@ ___
 | :------ | :------ |
 | `bEnableCameraCollision` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraDownLimitAngle
+### cameraDownLimitAngle <Score text="cameraDownLimitAngle" /> 
 
 • `get` **cameraDownLimitAngle**(): `number`
 
@@ -154,13 +153,10 @@ ___
 | :------ | :------ |
 | `newDownLimitAngle` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraFOV
+### cameraFOV <Score text="cameraFOV" /> 
 
 • `get` **cameraFOV**(): `number`
 
@@ -184,13 +180,10 @@ ___
 | :------ | :------ |
 | `fovNum` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraFocusEnable
+### cameraFocusEnable <Score text="cameraFocusEnable" /> 
 
 • `get` **cameraFocusEnable**(): `boolean`
 
@@ -214,13 +207,10 @@ ___
 | :------ | :------ |
 | `canCameraFocus` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraLocationLagEnable
+### cameraLocationLagEnable <Score text="cameraLocationLagEnable" /> 
 
 • `get` **cameraLocationLagEnable**(): `boolean`
 
@@ -244,13 +234,10 @@ ___
 | :------ | :------ |
 | `bEnableCameraLocationLag` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraLocationLagSpeed
+### cameraLocationLagSpeed <Score text="cameraLocationLagSpeed" /> 
 
 • `get` **cameraLocationLagSpeed**(): `number`
 
@@ -274,13 +261,10 @@ ___
 | :------ | :------ |
 | `newCameraLocationLagSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraLocationMode
+### cameraLocationMode <Score text="cameraLocationMode" /> 
 
 • `get` **cameraLocationMode**(): [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md)
 
@@ -304,13 +288,10 @@ ___
 | :------ | :------ |
 | `newCameraLocationMode` | [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraProjectionMode
+### cameraProjectionMode <Score text="cameraProjectionMode" /> 
 
 • `get` **cameraProjectionMode**(): [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md)
 
@@ -334,13 +315,10 @@ ___
 | :------ | :------ |
 | `newCameraProjectionMode` | [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraRelativeTransform
+### cameraRelativeTransform <Score text="cameraRelativeTransform" /> 
 
 • `get` **cameraRelativeTransform**(): [`Transform`](Type.Transform.md)
 
@@ -364,13 +342,10 @@ ___
 | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Transform.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraRotationLagEnable
+### cameraRotationLagEnable <Score text="cameraRotationLagEnable" /> 
 
 • `get` **cameraRotationLagEnable**(): `boolean`
 
@@ -394,13 +369,10 @@ ___
 | :------ | :------ |
 | `bEnableCameraRotationLag` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraRotationLagSpeed
+### cameraRotationLagSpeed <Score text="cameraRotationLagSpeed" /> 
 
 • `get` **cameraRotationLagSpeed**(): `number`
 
@@ -424,13 +396,10 @@ ___
 | :------ | :------ |
 | `newCameraRotationLagSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraRotationMode
+### cameraRotationMode <Score text="cameraRotationMode" /> 
 
 • `get` **cameraRotationMode**(): [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md)
 
@@ -454,13 +423,10 @@ ___
 | :------ | :------ |
 | `newCameraRotationMode` | [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraSystemRelativeTransform
+### cameraSystemRelativeTransform <Score text="cameraSystemRelativeTransform" /> 
 
 • `get` **cameraSystemRelativeTransform**(): [`Transform`](Type.Transform.md)
 
@@ -484,13 +450,10 @@ ___
 | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Transform.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraSystemWorldTransform
+### cameraSystemWorldTransform <Score text="cameraSystemWorldTransform" /> 
 
 • `get` **cameraSystemWorldTransform**(): [`Transform`](Type.Transform.md)
 
@@ -514,13 +477,10 @@ ___
 | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Transform.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraUpLimitAngle
+### cameraUpLimitAngle <Score text="cameraUpLimitAngle" /> 
 
 • `get` **cameraUpLimitAngle**(): `number`
 
@@ -544,13 +504,10 @@ ___
 | :------ | :------ |
 | `newUpLimitAngle` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraWorldTransform
+### cameraWorldTransform <Score text="cameraWorldTransform" /> 
 
 • `get` **cameraWorldTransform**(): [`Transform`](Type.Transform.md)
 
@@ -574,13 +531,10 @@ ___
 | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Transform.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### enableMovementCollisionDetection
+### enableMovementCollisionDetection <Score text="enableMovementCollisionDetection" /> 
 
 • `get` **enableMovementCollisionDetection**(): `boolean`
 
@@ -604,13 +558,10 @@ ___
 | :------ | :------ |
 | `bIsEnableMovementCollision` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### fadeEffectValue
+### fadeEffectValue <Score text="fadeEffectValue" /> 
 
 • `get` **fadeEffectValue**(): `number`
 
@@ -634,13 +585,10 @@ ___
 | :------ | :------ |
 | `newFadeEffectValue` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### fixedCameraZAxis
+### fixedCameraZAxis <Score text="fixedCameraZAxis" /> 
 
 • `get` **fixedCameraZAxis**(): `boolean`
 
@@ -664,13 +612,10 @@ ___
 | :------ | :------ |
 | `bIsFixedZAxis` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### followTargetEnable
+### followTargetEnable <Score text="followTargetEnable" /> 
 
 • `get` **followTargetEnable**(): `boolean`
 
@@ -694,13 +639,10 @@ ___
 | :------ | :------ |
 | `bIsEnableFollowTarget` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### followTargetInterpSpeed
+### followTargetInterpSpeed <Score text="followTargetInterpSpeed" /> 
 
 • `get` **followTargetInterpSpeed**(): `number`
 
@@ -724,13 +666,10 @@ ___
 | :------ | :------ |
 | `newInterpSpeed` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### lockTargetOffset
+### lockTargetOffset <Score text="lockTargetOffset" /> 
 
 • `get` **lockTargetOffset**(): [`Vector`](Type.Vector.md)
 
@@ -754,13 +693,10 @@ ___
 | :------ | :------ |
 | `newLockTargetOffset` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### movementCollisionDuration
+### movementCollisionDuration <Score text="movementCollisionDuration" /> 
 
 • `get` **movementCollisionDuration**(): `number`
 
@@ -784,13 +720,10 @@ ___
 | :------ | :------ |
 | `Delta` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### movementCollisionMinLocationDelta
+### movementCollisionMinLocationDelta <Score text="movementCollisionMinLocationDelta" /> 
 
 • `get` **movementCollisionMinLocationDelta**(): `number`
 
@@ -814,13 +747,10 @@ ___
 | :------ | :------ |
 | `Delta` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### occlusionDetectionEnable
+### occlusionDetectionEnable <Score text="occlusionDetectionEnable" /> 
 
 • `get` **occlusionDetectionEnable**(): `boolean`
 
@@ -844,13 +774,10 @@ ___
 | :------ | :------ |
 | `bEnableOcclusionDetection` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### orthoFarClipPlane
+### orthoFarClipPlane <Score text="orthoFarClipPlane" /> 
 
 • `get` **orthoFarClipPlane**(): `number`
 
@@ -874,13 +801,10 @@ ___
 | :------ | :------ |
 | `newOrthoFarClipPlane` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### orthoNearClipPlane
+### orthoNearClipPlane <Score text="orthoNearClipPlane" /> 
 
 • `get` **orthoNearClipPlane**(): `number`
 
@@ -904,13 +828,10 @@ ___
 | :------ | :------ |
 | `newOrthoNearClipPlane` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### orthoWidth
+### orthoWidth <Score text="orthoWidth" /> 
 
 • `get` **orthoWidth**(): `number`
 
@@ -934,13 +855,10 @@ ___
 | :------ | :------ |
 | `newOrthoWidth` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### raiseCameraEnable
+### raiseCameraEnable <Score text="raiseCameraEnable" /> 
 
 • `get` **raiseCameraEnable**(): `boolean`
 
@@ -964,13 +882,10 @@ ___
 | :------ | :------ |
 | `bIsEnableRaiseCamera` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### raiseCameraHeight
+### raiseCameraHeight <Score text="raiseCameraHeight" /> 
 
 • `get` **raiseCameraHeight**(): `number`
 
@@ -994,13 +909,10 @@ ___
 | :------ | :------ |
 | `newRaiseCameraHeight` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### realEffectEnable
+### realEffectEnable <Score text="realEffectEnable" /> 
 
 • `set` **realEffectEnable**(`value`): `void`
 
@@ -1008,9 +920,11 @@ ___
 
 启用/禁用真实效果
 
-**`Precautions`**
+::: warning Precautions
 
 只在客户端调用生效, 目前真实效果是第一人称模式下镜头会随着人物走动而晃动
+
+:::
 
 #### Parameters
 
@@ -1018,13 +932,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### slotOffset
+### slotOffset <Score text="slotOffset" /> 
 
 • `get` **slotOffset**(): [`Vector`](Type.Vector.md)
 
@@ -1056,13 +967,10 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 | :------ | :------ |
 | `newSlotOffset` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### targetArmLength
+### targetArmLength <Score text="targetArmLength" /> 
 
 • `get` **targetArmLength**(): `number`
 
@@ -1086,13 +994,10 @@ ___
 | :------ | :------ |
 | `newTargetArmLength` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### targetOffset
+### targetOffset <Score text="targetOffset" /> 
 
 • `get` **targetOffset**(): [`Vector`](Type.Vector.md)
 
@@ -1124,13 +1029,10 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
 | :------ | :------ |
 | `newTargetOffset` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### transform
+### transform <Score text="transform" /> 
 
 • `get` **transform**(): [`Transform`](Type.Transform.md)
 
@@ -1144,7 +1046,7 @@ ___
 
 ___
 
-### usePawnControlRotation
+### usePawnControlRotation <Score text="usePawnControlRotation" /> 
 
 • `get` **usePawnControlRotation**(): `boolean`
 
@@ -1168,23 +1070,17 @@ ___
 | :------ | :------ |
 | `bUsePawnControlRotation` | `boolean` |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### applySettings
+### applySettings <Score text="applySettings" /> 
 
-▸ **applySettings**(`CameraSetting`): `void`
+▸ **applySettings**(`CameraSetting`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 应用摄像机系统数据
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1192,41 +1088,29 @@ ___
 | :------ | :------ | :------ |
 | `CameraSetting` | [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) | 摄像机系统数据 |
 
-#### Returns
-
-`void`
 
 ___
 
-### attachCameraToCharacterCapsuleSlot
+### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
 
-▸ **attachCameraToCharacterCapsuleSlot**(): `void`
+▸ **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 附加摄像机到角色的胶囊体插槽上
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### attachCameraToCharacterMeshSlot
+### attachCameraToCharacterMeshSlot <Score text="attachCameraToCharacterMeshSlot" /> 
 
-▸ **attachCameraToCharacterMeshSlot**(`slot`): `void`
+▸ **attachCameraToCharacterMeshSlot**(`slot`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 附加摄像机到角色的模型插槽上
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1234,23 +1118,17 @@ ___
 | :------ | :------ | :------ |
 | `slot` | [`SlotType`](../enums/Gameplay.SlotType.md) | 插槽名 |
 
-#### Returns
-
-`void`
 
 ___
 
-### attachToGameObject
+### attachToGameObject <Score text="attachToGameObject" /> 
 
-▸ **attachToGameObject**(`target`): `void`
+▸ **attachToGameObject**(`target`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 相机附加至目标物体
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1258,23 +1136,17 @@ ___
 | :------ | :------ | :------ |
 | `target` | `GameObject` | 目标物体 |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraFocusing
+### cameraFocusing <Score text="cameraFocusing" /> 
 
-▸ **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void`
+▸ **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 摄像机聚焦
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1284,23 +1156,17 @@ ___
 | `targetOffset` | [`Vector`](Type.Vector.md) | 目标偏移 |
 | `timeInterval?` | `number` | 聚焦间隔,越小越快 default:20 |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraLockTarget
+### cameraLockTarget <Score text="cameraLockTarget" /> 
 
-▸ **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void`
+▸ **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 相机锁定目标(相比setCameraLockTarget多了更多复杂的设置)
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1314,59 +1180,41 @@ ___
 | `lockOffset?` | [`Vector`](Type.Vector.md) | 锁定偏移 default:Type.Vector.zero |
 | `bPause?` | `boolean` | 决定超出范围/距离后锁定是暂停/取消，为true是暂停 default:true |
 
-#### Returns
-
-`void`
 
 ___
 
-### cancelCameraFollowTarget
+### cancelCameraFollowTarget <Score text="cancelCameraFollowTarget" /> 
 
-▸ **cancelCameraFollowTarget**(): `void`
+▸ **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 取消跟随物体
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### cancelCameraLockTarget
+### cancelCameraLockTarget <Score text="cancelCameraLockTarget" /> 
 
-▸ **cancelCameraLockTarget**(): `void`
+▸ **cancelCameraLockTarget**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 取消锁定物体
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### getCurrentSettings
+### getCurrentSettings <Score text="getCurrentSettings" /> 
 
-▸ **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata)
+▸ **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前的摄像机系统数据
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -1376,17 +1224,14 @@ ___
 
 ___
 
-### getDefaultCameraShakeData
+### getDefaultCameraShakeData <Score text="getDefaultCameraShakeData" /> 
 
-▸ **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata)
+▸ **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取默认的摄像机震动数据
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -1396,17 +1241,14 @@ ___
 
 ___
 
-### moveByPath
+### moveByPath <Score text="moveByPath" /> 
 
-▸ **moveByPath**(`path`, `completeCallback`): `void`
+▸ **moveByPath**(`path`, `completeCallback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 镜头移动
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1415,41 +1257,29 @@ ___
 | `path` | { `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }[] | 路径数据 |
 | `completeCallback` | () => `void` | 完成回调 |
 
-#### Returns
-
-`void`
 
 ___
 
-### resetOverrideCameraRotation
+### resetOverrideCameraRotation <Score text="resetOverrideCameraRotation" /> 
 
-▸ **resetOverrideCameraRotation**(): `void`
+▸ **resetOverrideCameraRotation**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 取消旋转覆盖
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### screenShock
+### screenShock <Score text="screenShock" /> 
 
-▸ **screenShock**(`maxRange?`, `decay?`, `speed?`): `void`
+▸ **screenShock**(`maxRange?`, `decay?`, `speed?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 震屏
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1459,23 +1289,17 @@ ___
 | `decay?` | `number` |  每个周期的衰减 default: 0.5 |
 | `speed?` | `number` |  速度 default: 3000 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCameraFollowTarget
+### setCameraFollowTarget <Score text="setCameraFollowTarget" /> 
 
-▸ **setCameraFollowTarget**(`target`): `void`
+▸ **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 相机跟随物体
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1483,23 +1307,17 @@ ___
 | :------ | :------ | :------ |
 | `target` | `GameObject` | 目标物体 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setCameraLockTarget
+### setCameraLockTarget <Score text="setCameraLockTarget" /> 
 
-▸ **setCameraLockTarget**(`target`): `void`
+▸ **setCameraLockTarget**(`target`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 相机锁定物体
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1507,23 +1325,17 @@ ___
 | :------ | :------ | :------ |
 | `target` | `GameObject` | 目标物体 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setOverrideCameraRotation
+### setOverrideCameraRotation <Score text="setOverrideCameraRotation" /> 
 
-▸ **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void`
+▸ **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 覆盖摄像机旋转，从控制器传入值处截断
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1532,27 +1344,23 @@ ___
 | `newOverrideRotation` | [`Rotation`](Type.Rotation.md) | 新的旋转值 |
 | `clampByCameraModeRotationLimits?` | `boolean` | 是否应用摄像机模式旋转限制 default:false |
 
-#### Returns
-
-`void`
 
 ___
 
-### startCameraShake
+### startCameraShake <Score text="startCameraShake" /> 
 
-▸ **startCameraShake**(`cameraShakeData`): `void`
+▸ **startCameraShake**(`cameraShakeData`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 开始摄像机震动
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 该方法参数通过cameraSystem.getDefaultCameraShakeData获取,多次调用震动效果会叠加
+
+:::
 
 #### Parameters
 
@@ -1560,41 +1368,29 @@ ___
 | :------ | :------ | :------ |
 | `cameraShakeData` | [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) | 摄像机震动数据 |
 
-#### Returns
-
-`void`
 
 ___
 
-### stopCameraShake
+### stopCameraShake <Score text="stopCameraShake" /> 
 
-▸ **stopCameraShake**(): `void`
+▸ **stopCameraShake**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止摄像机震动
 
-**`Effect`**
 
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 ___
 
-### switchCameraMode
+### switchCameraMode <Score text="switchCameraMode" /> 
 
-▸ **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void`
+▸ **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1603,6 +1399,3 @@ ___
 | `newCameraMode` | [`CameraMode`](../enums/Gameplay.CameraMode.md) | 新的摄像机模式 |
 | `enableRealEffect?` | `boolean` | 是否开启真实模拟效果 default:false |
 
-#### Returns
-
-`void`

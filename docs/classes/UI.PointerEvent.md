@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / PointerEvent
 
-# PointerEvent <Badge type="tip" text="Class" />
+# PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 
 **`Description`**
 
@@ -30,17 +30,14 @@
 
 ## Accessors
 
-### effectingButton
+### effectingButton <Score text="effectingButton" /> 
 
-• `get` **effectingButton**(): [`KeyEvent`](UI.KeyEvent.md)
+• `get` **effectingButton**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取响应的事件key
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -50,17 +47,14 @@
 
 ___
 
-### isTouchEvent
+### isTouchEvent <Score text="isTouchEvent" /> 
 
-• `get` **isTouchEvent**(): `boolean`
+• `get` **isTouchEvent**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断是不是触摸事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -70,17 +64,14 @@ ___
 
 ___
 
-### lastScreenSpacePosition
+### lastScreenSpacePosition <Score text="lastScreenSpacePosition" /> 
 
-• `get` **lastScreenSpacePosition**(): [`Vector2`](Type.Vector2.md)
+• `get` **lastScreenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取该事件上一次的屏幕位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -90,17 +81,14 @@ ___
 
 ___
 
-### mouseWheelDelta
+### mouseWheelDelta <Score text="mouseWheelDelta" /> 
 
-• `get` **mouseWheelDelta**(): `number`
+• `get` **mouseWheelDelta**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取鼠标滚轮滑动的距离
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -110,17 +98,14 @@ ___
 
 ___
 
-### pointerIndex
+### pointerIndex <Score text="pointerIndex" /> 
 
-• `get` **pointerIndex**(): `number`
+• `get` **pointerIndex**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回该事件的唯一标识index
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -130,17 +115,14 @@ ___
 
 ___
 
-### screenSpacePosition
+### screenSpacePosition <Score text="screenSpacePosition" /> 
 
-• `get` **screenSpacePosition**(): [`Vector2`](Type.Vector2.md)
+• `get` **screenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取触发的屏幕位置
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -150,17 +132,14 @@ ___
 
 ___
 
-### touchPadIndex
+### touchPadIndex <Score text="touchPadIndex" /> 
 
-• `get` **touchPadIndex**(): `number`
+• `get` **touchPadIndex**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取触摸事件index
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -170,17 +149,14 @@ ___
 
 ___
 
-### userIndex
+### userIndex <Score text="userIndex" /> 
 
-• `get` **userIndex**(): `number`
+• `get` **userIndex**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取事件触发玩家的index
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -190,17 +166,14 @@ ___
 
 ## Methods
 
-### isMouseButtonDown
+### isMouseButtonDown <Score text="isMouseButtonDown" /> 
 
-▸ **isMouseButtonDown**(`MouseButton`): `boolean`
+▸ **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断是不是鼠标按键事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -216,17 +189,14 @@ ___
 
 ___
 
-### toInputEvent
+### toInputEvent <Score text="toInputEvent" /> 
 
-▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md)
+▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 转化为 InputEvent
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 

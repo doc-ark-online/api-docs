@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape3D
 
-# EffectRangeShape3D <Badge type="tip" text="Enumeration" />
+# EffectRangeShape3D <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeShape3D" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Cube
+### Cube <Score text="Cube" /> 
 
 • **Cube** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### CylindricalSector
+### CylindricalSector <Score text="CylindricalSector" /> 
 
 • **CylindricalSector** = ``2``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Sphere
+### Sphere <Score text="Sphere" /> 
 
 • **Sphere** = ``1``
 

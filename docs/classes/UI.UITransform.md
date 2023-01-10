@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UITransform
 
-# UITransform <Badge type="tip" text="Class" />
+# UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
 **`Description`**
 
@@ -19,7 +19,6 @@
 
 **`Effect`**
 
-只在客户端调用生效
 
 #### Parameters
 
@@ -38,7 +37,6 @@
 
 **`Effect`**
 
-只在客户端调用生效
 
 #### Parameters
 
@@ -49,7 +47,7 @@
 
 ## Properties
 
-### position
+### position <Score text="position" /> 
 
 • **position**: [`Vector2`](Type.Vector2.md)
 
@@ -59,7 +57,7 @@
 
 ___
 
-### size
+### size <Score text="size" /> 
 
 • **size**: [`Vector2`](Type.Vector2.md)
 

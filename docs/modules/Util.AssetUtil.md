@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / AssetUtil
 
-# AssetUtil <Badge type="tip" text="Namespace" />
+# AssetUtil <Badge type="tip" text="Namespace" /> <Score text="AssetUtil" />
 
 ## Table of contents
 
@@ -13,23 +13,20 @@
 
 ## Functions
 
-### asyncDownloadAsset
+### asyncDownloadAsset <Score text="asyncDownloadAsset" /> 
 
-▸ **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\>
+▸ **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 资源下载
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源Guid |
+| `InAssetId` | `string` | 资源GUID |
 
 #### Returns
 
@@ -39,23 +36,20 @@
 
 ___
 
-### isAssetExist
+### isAssetExist <Score text="isAssetExist" /> 
 
-▸ **isAssetExist**(`InAssetId`): `boolean`
+▸ **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 资源是否存在
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源Guid |
+| `InAssetId` | `string` | 资源GUID |
 
 #### Returns
 
@@ -65,23 +59,20 @@ ___
 
 ___
 
-### isAssetLoaded
+### isAssetLoaded <Score text="isAssetLoaded" /> 
 
-▸ **isAssetLoaded**(`InAssetId`): `boolean`
+▸ **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 资源是否加载
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源Guid |
+| `InAssetId` | `string` | 资源GUID |
 
 #### Returns
 
@@ -91,23 +82,20 @@ ___
 
 ___
 
-### loadAsset
+### loadAsset <Score text="loadAsset" /> 
 
-▸ **loadAsset**(`InAssetId`): `boolean`
+▸ **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 资源加载
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源Guid |
+| `InAssetId` | `string` | 资源GUID |
 
 #### Returns
 

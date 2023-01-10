@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Image
 
-# Image <Badge type="tip" text="Class" />
+# Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
 **`Description`**
 
@@ -22,6 +22,36 @@ UI 图片
 | **[imageSize](UI.Image.md#imagesize)**(): [`Vector2`](Type.Vector2.md) <br> 获取图片大小|
 | **[margin](UI.Image.md#margin)**(): [`Margin`](UI.Margin.md) <br> 获取图片边距|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.Widget.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.Widget.md#cachedgeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[desiredSize](UI.Widget.md#desiredsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.Widget.md#enable)**(): `boolean` <br> 是否可用|
+| **[guid](UI.Widget.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.Widget.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[name](UI.Widget.md#name)**(): `string` <br> 获取名字|
+| **[paintSpaceGeometry](UI.Widget.md#paintspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.Widget.md#parent)**(): [`Widget`](UI.Widget.md) <br> 获取父节点|
+| **[position](UI.Widget.md#position)**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.Widget.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.Widget.md#renderscale)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.Widget.md#rendershear)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
+| **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.Widget.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.Widget.md#zorder)**(): `number` <br> 获取zorder|
+:::
+
+
 | Methods |
 | :-----|
 | **[asyncExportBlendBrush](UI.Image.md#asyncexportblendbrush)**(): `Promise`<`string`\> <br> 将融合的图片导出为一张|
@@ -34,19 +64,26 @@ UI 图片
 | **[setImageColorDecimal](UI.Image.md#setimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置图片颜色,指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](UI.Image.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`Image`](UI.Image.md) <br> 创建 Image 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+:::
+
+
 ## Accessors
 
-### imageColor
+### imageColor <Score text="imageColor" /> 
 
-• `get` **imageColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **imageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片的颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -54,15 +91,12 @@ UI 图片
 
 图片的颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **imageColor**(`inColor`): `void`
+• `set` **imageColor**(`inColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -70,25 +104,19 @@ UI 图片
 | :------ | :------ | :------ |
 | `inColor` | [`LinearColor`](Type.LinearColor.md) | 图片颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 颜色
 
 ___
 
-### imageDrawType
+### imageDrawType <Score text="imageDrawType" /> 
 
-• `get` **imageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
+• `get` **imageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -96,15 +124,12 @@ ___
 
 图片绘制类型
 
-• `set` **imageDrawType**(`inDrawType`): `void`
+• `set` **imageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -112,23 +137,17 @@ ___
 | :------ | :------ | :------ |
 | `inDrawType` | [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) | 绘制类型 |
 
-#### Returns
-
-`void`
 
 ___
 
-### imageGuid
+### imageGuid <Score text="imageGuid" /> 
 
-• `get` **imageGuid**(): `string`
+• `get` **imageGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片id
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -136,39 +155,30 @@ ___
 
 图片id
 
-• `set` **imageGuid**(`inGuid`): `void`
+• `set` **imageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片id
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inGuid` | `string` | 新的图片样式 |
+| `inGUID` | `string` | 新的图片样式 |
 
-#### Returns
-
-`void`
 
 ___
 
-### imageSize
+### imageSize <Score text="imageSize" /> 
 
-• `get` **imageSize**(): [`Vector2`](Type.Vector2.md)
+• `get` **imageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -176,15 +186,12 @@ ___
 
 图片大小
 
-• `set` **imageSize**(`inSize`): `void`
+• `set` **imageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -192,22 +199,16 @@ ___
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | size |
 
-#### Returns
-
-`void`
 
 
-### margin
+### margin <Score text="margin" /> 
 
-• `get` **margin**(): [`Margin`](UI.Margin.md)
+• `get` **margin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -215,15 +216,12 @@ ___
 
 图片边距
 
-• `set` **margin**(`inMargin`): `void`
+• `set` **margin**(`inMargin`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片的边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -231,28 +229,24 @@ ___
 | :------ | :------ | :------ |
 | `inMargin` | [`Margin`](UI.Margin.md) | 图片边距 |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### asyncExportBlendBrush
+### asyncExportBlendBrush <Score text="asyncExportBlendBrush" /> 
 
-▸ **asyncExportBlendBrush**(): `Promise`<`string`\>
+▸ **asyncExportBlendBrush**(): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 将融合的图片导出为一张
 
-**`Precautions`**
+::: warning Precautions
 
 必须调用过setImageByBlendMode后才会生效，高消耗操作注意
 
-**`Effect`**
+:::
 
-只在客户端调用生效
 
 #### Returns
 
@@ -261,17 +255,14 @@ ___
 导出的图片的本地路径
 
 
-### getImageAssetIconData
+### getImageAssetIconData <Score text="getImageAssetIconData" /> 
 
-▸ **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md)
+▸ **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取显示资源的ICON
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -280,17 +271,14 @@ ___
 资源的ICON信息
 
 
-### setImageByAssetIconData
+### setImageByAssetIconData <Score text="setImageByAssetIconData" /> 
 
-▸ **setImageByAssetIconData**(`data`): `void`
+▸ **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置显示资源的ICON
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -298,23 +286,17 @@ ___
 | :------ | :------ | :------ |
 | `data` | [`AssetIconData`](UI.AssetIconData.md) | 资源的ICON信息 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setImageByBlendMode
+### setImageByBlendMode <Score text="setImageByBlendMode" /> 
 
-▸ **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void`
+▸ **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将两张图片融合叠加显示在图片组件上
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -323,23 +305,17 @@ ___
 | `backgroundPic` | `string` | 背景图片绝对路径 |
 | `foregroundPic` | `string` | 前景图片绝对路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setImageByFile
+### setImageByFile <Score text="setImageByFile" /> 
 
-▸ **setImageByFile**(`absPath`): `void`
+▸ **setImageByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片样式为本地图片文件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -347,21 +323,16 @@ ___
 | :------ | :------ | :------ |
 | `absPath` | `string` | 图片绝对路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setImageByURL
+### setImageByURL <Score text="setImageByURL" /> 
 
-▸ **setImageByURL**(`inURL`): `void`
+▸ **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接
-
-**`Effect`**
 
 只在客户端调用生效,下载图片需要时间，失败时暂无回调
 
@@ -371,23 +342,17 @@ ___
 | :------ | :------ | :------ |
 | `inURL` | `string` | 图片链接 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setImageColorByHex
+### setImageColorByHex <Score text="setImageColorByHex" /> 
 
-▸ **setImageColorByHex**(`inHexString`): `void`
+▸ **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -395,23 +360,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | Hex颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setImageColorDecimal
+### setImageColorDecimal <Score text="setImageColorDecimal" /> 
 
-▸ **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片颜色,指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -422,23 +381,17 @@ ___
 | `B` | `number` | 图片B值，数据范围0~255 |
 | `A` | `number` | 图片透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### newObject
+### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md)
+▸ `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 创建 Image 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 

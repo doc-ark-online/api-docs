@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / StringUtil
 
-# StringUtil <Badge type="tip" text="Namespace" />
+# StringUtil <Badge type="tip" text="Namespace" /> <Score text="StringUtil" />
 
 **`Description`**
 
@@ -17,17 +17,14 @@
 
 ## Functions
 
-### clipboardCopy
+### clipboardCopy <Score text="clipboardCopy" /> 
 
-▸ **clipboardCopy**(`text`): `void`
+▸ **clipboardCopy**(`text`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 文本复制，将字符串复制到剪切板
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -35,23 +32,17 @@
 | :------ | :------ | :------ |
 | `text` | `string` | 复制到剪切板的文本 |
 
-#### Returns
-
-`void`
 
 ___
 
-### clipboardPaste
+### clipboardPaste <Score text="clipboardPaste" /> 
 
-▸ **clipboardPaste**(): `string`
+▸ **clipboardPaste**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 文本粘贴，获取剪切板的文本
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -61,7 +52,7 @@ ___
 
 ___
 
-### format
+### format <Score text="format" /> 
 
 ▸ **format**(`str`, `...param`): `string`
 
@@ -69,16 +60,13 @@ ___
 
 将{i}中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
-**`Effect`**
-
-调用端生效
 
 **`Example`**
 
 使用示例:格式化字符串用法
 ```ts
 // targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!"); <Badge type="tip" text="other" />
 ```
 
 #### Parameters
@@ -96,17 +84,14 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 
 ___
 
-### isEmpty
+### isEmpty <Score text="isEmpty" /> 
 
-▸ **isEmpty**(`str`): `boolean`
+▸ **isEmpty**(`str`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断字符串是否为空(null或"")
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 

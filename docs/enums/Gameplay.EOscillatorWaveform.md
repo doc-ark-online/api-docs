@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EOscillatorWaveform
 
-# EOscillatorWaveform <Badge type="tip" text="Enumeration" />
+# EOscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="EOscillatorWaveform" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### PerlinNoise
+### PerlinNoise <Score text="PerlinNoise" /> 
 
 • **PerlinNoise** = ``1``
 
@@ -23,7 +23,7 @@ Perlin噪声
 
 ___
 
-### SineWave
+### SineWave <Score text="SineWave" /> 
 
 • **SineWave** = ``0``
 

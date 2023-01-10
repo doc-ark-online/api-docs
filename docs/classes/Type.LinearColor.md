@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / LinearColor
 
-# LinearColor <Badge type="tip" text="Class" />
+# LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
 **`Description`**
 
@@ -92,7 +92,7 @@
 
 ## Accessors
 
-### a
+### a <Score text="a" /> 
 
 • `get` **a**(): `number`
 
@@ -110,9 +110,11 @@
 
 设置当前 LinearColor 的 a 值
 
-**`Precautions`**
+::: warning Precautions
 
 颜色值的有效范围是 0.0 <= value <= 1.0
+
+:::
 
 #### Parameters
 
@@ -120,13 +122,10 @@
 | :------ | :------ |
 | `v` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### b
+### b <Score text="b" /> 
 
 • `get` **b**(): `number`
 
@@ -144,9 +143,11 @@ ___
 
 设置当前 LinearColor 的 b 值
 
-**`Precautions`**
+::: warning Precautions
 
 颜色值的有效范围是 0.0 <= value <= 1.0
+
+:::
 
 #### Parameters
 
@@ -154,13 +155,10 @@ ___
 | :------ | :------ |
 | `v` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### g
+### g <Score text="g" /> 
 
 • `get` **g**(): `number`
 
@@ -178,9 +176,11 @@ ___
 
 设置当前 LinearColor 的 g 值 颜色值的有效范围是
 
-**`Precautions`**
+::: warning Precautions
 
 0.0 <= value <= 1.0
+
+:::
 
 #### Parameters
 
@@ -188,13 +188,10 @@ ___
 | :------ | :------ |
 | `v` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### r
+### r <Score text="r" /> 
 
 • `get` **r**(): `number`
 
@@ -212,9 +209,11 @@ ___
 
 设置当前 LinearColor 的 r 值
 
-**`Precautions`**
+::: warning Precautions
 
 颜色值的有效范围是 0.0 <= value <= 1.0
+
+:::
 
 #### Parameters
 
@@ -222,13 +221,10 @@ ___
 | :------ | :------ |
 | `v` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### black
+### black <Score text="black" /> 
 
 • `Static` `get` **black**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -242,7 +238,7 @@ ___
 
 ___
 
-### blue
+### blue <Score text="blue" /> 
 
 • `Static` `get` **blue**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -256,7 +252,7 @@ ___
 
 ___
 
-### gray
+### gray <Score text="gray" /> 
 
 • `Static` `get` **gray**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -270,7 +266,7 @@ ___
 
 ___
 
-### green
+### green <Score text="green" /> 
 
 • `Static` `get` **green**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -284,7 +280,7 @@ ___
 
 ___
 
-### red
+### red <Score text="red" /> 
 
 • `Static` `get` **red**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -298,7 +294,7 @@ ___
 
 ___
 
-### white
+### white <Score text="white" /> 
 
 • `Static` `get` **white**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -312,7 +308,7 @@ ___
 
 ___
 
-### yellow
+### yellow <Score text="yellow" /> 
 
 • `Static` `get` **yellow**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -326,21 +322,20 @@ ___
 
 ## Methods
 
-### addition
+### addition <Score text="addition" /> 
 
-▸ **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 颜色值相加
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -357,21 +352,20 @@ ___
 
 ___
 
-### division
+### division <Score text="division" /> 
 
-▸ **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 颜色值相除
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -388,21 +382,20 @@ ___
 
 ___
 
-### equality
+### equality <Score text="equality" /> 
 
-▸ **equality**(`linearColorB`, `epsilon?`): `boolean`
+▸ **equality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断两个颜色值是否相等
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 相等返回true，不相等返回false
+
+:::
 
 #### Parameters
 
@@ -419,17 +412,14 @@ ___
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ **fromString**(`str`): `void`
+▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 用数据填充对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -437,27 +427,23 @@ ___
 | :------ | :------ | :------ |
 | `str` | `string` | 数据字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### inequality
+### inequality <Score text="inequality" /> 
 
-▸ **inequality**(`linearColorB`, `epsilon?`): `boolean`
+▸ **inequality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断两个颜色值是否不相等
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 不相等返回true，相等返回false
+
+:::
 
 #### Parameters
 
@@ -474,21 +460,20 @@ ___
 
 ___
 
-### multiply
+### multiply <Score text="multiply" /> 
 
-▸ **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 颜色值相乘
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -505,21 +490,20 @@ ___
 
 ___
 
-### subtraction
+### subtraction <Score text="subtraction" /> 
 
-▸ **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 颜色值相减
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -536,17 +520,14 @@ ___
 
 ___
 
-### toString
+### toString <Score text="toString" /> 
 
-▸ **toString**(): `string`
+▸ **toString**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 以字符串的形式输出对象属性
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -556,21 +537,20 @@ ___
 
 ___
 
-### colorHexToLinearColor
+### colorHexToLinearColor <Score text="colorHexToLinearColor" /> 
 
-▸ `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将 HexColor 转化为 LinearColor
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -587,21 +567,20 @@ LinerColor 对象
 
 ___
 
-### colorHsvToLinearColor
+### colorHsvToLinearColor <Score text="colorHsvToLinearColor" /> 
 
-▸ `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将 HsvColor 转化为 LinearColor
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -620,17 +599,14 @@ ___
 
 ___
 
-### colorToLinearColor
+### colorToLinearColor <Score text="colorToLinearColor" /> 
 
-▸ `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 转换 Color
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -650,17 +626,14 @@ ___
 
 ___
 
-### fromString
+### fromString <Score text="fromString" /> 
 
-▸ `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 用数据生成一个新的对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -676,21 +649,20 @@ ___
 
 ___
 
-### makeFromHSV
+### makeFromHSV <Score text="makeFromHSV" /> 
 
-▸ `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 将字节色调饱和度亮度转换为 LinearColor
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 
@@ -709,21 +681,20 @@ ___
 
 ___
 
-### random
+### random <Score text="random" /> 
 
-▸ `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md)
+▸ `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 建议传入 outer 来减少 new 对象
+
+:::
 
 #### Parameters
 

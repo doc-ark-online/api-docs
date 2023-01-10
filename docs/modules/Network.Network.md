@@ -1,6 +1,6 @@
 Network
 
-# Network <Badge type="tip" text="Namespace" />
+# Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
 
 **`Description`**
 
@@ -34,7 +34,7 @@ Network
 
 ## Type Aliases
 
-### HttpResponse
+### HttpResponse <Score text="HttpResponse" /> 
 
 Ƭ **HttpResponse**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void`
 
@@ -46,9 +46,11 @@ Network
 
 Http请求的回调消息格式
 
-**`Precautions`**
+::: warning Precautions
 
 无需主动销毁，生命周期由UObject管理
+
+:::
 
 ##### Parameters
 
@@ -64,7 +66,7 @@ Http请求的回调消息格式
 
 ___
 
-### TransactionType
+### TransactionType <Score text="TransactionType" /> 
 
 Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
 
@@ -89,17 +91,14 @@ ___
 
 ## Functions
 
-### fetch
+### fetch <Score text="fetch" /> 
 
-▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\>
+▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 HTTP请求
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -116,7 +115,7 @@ HTTP请求
 
 ___
 
-### generalHttpRequest
+### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 ▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
 
@@ -124,15 +123,12 @@ ___
 
 通用Http请求
 
-**`Effect`**
-
-调用端生效
 
 **`Example`**
 
 使用示例:发送Http请求
 ```ts
-generalHttpRequest(Response,Url,Param,JsonContent)
+generalHttpRequest(Response,Url,Param,JsonContent) <Badge type="tip" text="other" />
 ```
 
 #### Parameters
@@ -153,17 +149,14 @@ bool
 
 ___
 
-### getUrlParameter
+### getUrlParameter <Score text="getUrlParameter" /> 
 
-▸ **getUrlParameter**(`url`, `parameterName`): `string`
+▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取url参数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -180,17 +173,14 @@ ___
 
 ___
 
-### httpRequestTransmitData
+### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
-▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean`
+▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Http请求接口
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -209,17 +199,14 @@ Http请求接口
 
 ___
 
-### urlDecode
+### urlDecode <Score text="urlDecode" /> 
 
-▸ **urlDecode**(`str`): `string`
+▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 url解码
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -235,17 +222,14 @@ url解码
 
 ___
 
-### urlEncode
+### urlEncode <Score text="urlEncode" /> 
 
-▸ **urlEncode**(`str`): `string`
+▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 url转码
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 

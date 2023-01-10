@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / LocaleUtil
 
-# LocaleUtil <Badge type="tip" text="Namespace" />
+# LocaleUtil <Badge type="tip" text="Namespace" /> <Score text="LocaleUtil" />
 
 ## Table of contents
 
@@ -10,17 +10,14 @@
 
 ## Functions
 
-### getDefaultLocale
+### getDefaultLocale <Score text="getDefaultLocale" /> 
 
-▸ **getDefaultLocale**(): `string`
+▸ **getDefaultLocale**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取默认的语言和地区
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / NFTUtil
 
-# NFTUtil <Badge type="tip" text="Namespace" />
+# NFTUtil <Badge type="tip" text="Namespace" /> <Score text="NFTUtil" />
 
 ## Table of contents
 
@@ -19,17 +19,14 @@
 
 ## Functions
 
-### addUserGameCoin
+### addUserGameCoin <Score text="addUserGameCoin" /> 
 
-▸ **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
+▸ **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -42,23 +39,17 @@
 | `Note` | `string` | 注释 |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### addUserGameCoinWithEnv
+### addUserGameCoinWithEnv <Score text="addUserGameCoinWithEnv" /> 
 
-▸ **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
+▸ **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -73,23 +64,17 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
 
-#### Returns
-
-`void`
 
 ___
 
-### addUserGameCoinWithGameID
+### addUserGameCoinWithGameID <Score text="addUserGameCoinWithGameID" /> 
 
-▸ **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
+▸ **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 添加游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -103,23 +88,17 @@ ___
 | `Note` | `string` | 注释 |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### decreaseUserGameCoin
+### decreaseUserGameCoin <Score text="decreaseUserGameCoin" /> 
 
-▸ **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
+▸ **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 减少游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -132,23 +111,17 @@ ___
 | `Note` | `string` | 注释 |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### decreaseUserGameCoinWithEnv
+### decreaseUserGameCoinWithEnv <Score text="decreaseUserGameCoinWithEnv" /> 
 
-▸ **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
+▸ **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 减少游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -163,23 +136,17 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
 
-#### Returns
-
-`void`
 
 ___
 
-### decreaseUserGameCoinWithGameID
+### decreaseUserGameCoinWithGameID <Score text="decreaseUserGameCoinWithGameID" /> 
 
-▸ **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
+▸ **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 减少游戏币接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -193,23 +160,17 @@ ___
 | `Note` | `string` | 注释 |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### queryUserGameCoin
+### queryUserGameCoin <Score text="queryUserGameCoin" /> 
 
-▸ **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
+▸ **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 查询账户的游戏币数量
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -220,23 +181,17 @@ ___
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### queryUserGameCoinWithEnv
+### queryUserGameCoinWithEnv <Score text="queryUserGameCoinWithEnv" /> 
 
-▸ **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
+▸ **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 查询账户的游戏币数量
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -248,23 +203,17 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境 |
 
-#### Returns
-
-`void`
 
 ___
 
-### queryUserGameCoinWithGameID
+### queryUserGameCoinWithGameID <Score text="queryUserGameCoinWithGameID" /> 
 
-▸ **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
+▸ **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 查询账户的游戏币数量
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -275,23 +224,17 @@ ___
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### queryUserNFT
+### queryUserNFT <Score text="queryUserNFT" /> 
 
-▸ **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
+▸ **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 查询NFT接口
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -303,6 +246,3 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境 |
 
-#### Returns
-
-`void`

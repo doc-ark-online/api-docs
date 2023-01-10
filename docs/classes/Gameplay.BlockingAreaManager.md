@@ -1,14 +1,16 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / BlockingAreaManager
 
-# BlockingAreaManager <Badge type="tip" text="Class" />
+# BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
 
 **`Description`**
 
 禁行区管理类,用于调用禁行区的全局方法
 
-**`Precautions`**
+::: warning Precautions
 
 该对象由服务器生成同步到客户端
+
+:::
 
 **`Example`**
 
@@ -25,7 +27,7 @@
 
 ## Methods
 
-### setPlayerPassableForArea
+### setPlayerPassableForArea <Score text="setPlayerPassableForArea" /> 
 
 ▸ `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void`
 
@@ -33,15 +35,12 @@
 
 设置所有禁行区对某个玩家的通过权限
 
-**`Effect`**
-
-调用端生效
 
 **`Example`**
 
 使用示例:setPlayerPassableWithAllArea
 ```ts
-setPlayerPassableForArea(player,true,player.getPlayerID())
+setPlayerPassableForArea(player,true,player.getPlayerID()) <Badge type="tip" text="other" />
 ```
 
 #### Parameters
@@ -50,8 +49,5 @@ setPlayerPassableForArea(player,true,player.getPlayerID())
 | :------ | :------ | :------ |
 | `Target` | `MWActor` | 对应Actor |
 | `CanPass` | `boolean` | 是否能够通过 |
-| `Guid` | `number` | Guid |
+| `Guid` | `number` | GUID |
 
-#### Returns
-
-`void`

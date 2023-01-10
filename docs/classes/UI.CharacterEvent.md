@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / CharacterEvent
 
-# CharacterEvent <Badge type="tip" text="Class" />
+# CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
 **`Description`**
 
@@ -16,17 +16,14 @@
 
 ## Methods
 
-### toInputEvent
+### toInputEvent <Score text="toInputEvent" /> 
 
-▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md)
+▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 转化为 InputEvent
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 

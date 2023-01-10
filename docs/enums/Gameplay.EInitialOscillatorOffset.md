@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EInitialOscillatorOffset
 
-# EInitialOscillatorOffset <Badge type="tip" text="Enumeration" />
+# EInitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="EInitialOscillatorOffset" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Random
+### Random <Score text="Random" /> 
 
 • **Random** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Zero
+### Zero <Score text="Zero" /> 
 
 • **Zero** = ``1``
 

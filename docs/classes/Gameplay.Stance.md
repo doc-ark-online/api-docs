@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Stance
 
-# Stance <Badge type="tip" text="Class" />
+# Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
 **`Description`**
 
@@ -38,23 +38,23 @@
 
 ## Methods
 
-### play
+### play <Score text="play" /> 
 
-▸ **play**(): `boolean`
+▸ **play**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 播放这个姿态对象, 并返回执行结果
 
-**`Effect`**
-
 可选同步
 
-**`Precautions`**
+::: warning Precautions
 
 这个操作是否会自动同步多端, 取决于调用Character.loadStance()时传入的sync参数.
 返回的执行结果, 在不自动同步时多数情况下可靠;
 在自动同步时完全不可靠, 总是会返回true, 因为无法判断其他端的执行情况
+
+:::
 
 #### Returns
 
@@ -64,17 +64,14 @@
 
 ___
 
-### playInternal
+### playInternal <Score text="playInternal" /> 
 
-▸ `Protected` **playInternal**(): `boolean`
+▸ `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 播放姿态的内部实现
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -84,23 +81,23 @@ ___
 
 ___
 
-### stop
+### stop <Score text="stop" /> 
 
-▸ **stop**(): `boolean`
+▸ **stop**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止这个姿态对象, 并返回执行结果
 
-**`Effect`**
-
 可选同步
 
-**`Precautions`**
+::: warning Precautions
 
 这个操作是否会自动同步多端, 取决于调用Character.loadStance()时传入的sync参数.
 返回的执行结果, 在不自动同步时多数情况下可靠;
-在自动同步时完全不可靠, 总是会返回true, 因为无法判断其他端的执行情况
+在自动同步时完全不可靠, 总是会返回true, 因为无法判断其他端的执行情况.
+
+:::
 
 #### Returns
 
@@ -110,17 +107,14 @@ ___
 
 ___
 
-### stopInternal
+### stopInternal <Score text="stopInternal" /> 
 
-▸ **stopInternal**(): `boolean`
+▸ **stopInternal**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 停止姿态的内部实现
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

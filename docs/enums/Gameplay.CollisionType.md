@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CollisionType
 
-# CollisionType <Badge type="tip" text="Enumeration" />
+# CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### NoCollision
+### NoCollision <Score text="NoCollision" /> 
 
 • **NoCollision** = ``0``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### PhysicsOnly
+### PhysicsOnly <Score text="PhysicsOnly" /> 
 
 • **PhysicsOnly** = ``2``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### QueryAndPhysics
+### QueryAndPhysics <Score text="QueryAndPhysics" /> 
 
 • **QueryAndPhysics** = ``3``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### QueryOnly
+### QueryOnly <Score text="QueryOnly" /> 
 
 • **QueryOnly** = ``1``
 

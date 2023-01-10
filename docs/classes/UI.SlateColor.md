@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateColor
 
-# SlateColor <Badge type="tip" text="Class" />
+# SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 
 **`Description`**
 
@@ -19,7 +19,6 @@ UI颜色管理
 
 **`Effect`**
 
-只在客户端调用生效
 
 #### Parameters
 
@@ -29,7 +28,7 @@ UI颜色管理
 
 ## Properties
 
-### colorUseRule
+### colorUseRule <Score text="colorUseRule" /> 
 
 • **colorUseRule**: [`SlateColorStylingMode`](../enums/UI.SlateColorStylingMode.md)
 
@@ -39,7 +38,7 @@ UI颜色管理
 
 ___
 
-### specifiedColor
+### specifiedColor <Score text="specifiedColor" /> 
 
 • **specifiedColor**: [`LinearColor`](Type.LinearColor.md)
 

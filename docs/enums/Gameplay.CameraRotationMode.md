@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraRotationMode
 
-# CameraRotationMode <Badge type="tip" text="Enumeration" />
+# CameraRotationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraRotationMode" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### RotationControl
+### RotationControl <Score text="RotationControl" /> 
 
 • **RotationControl** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### RotationFixed
+### RotationFixed <Score text="RotationFixed" /> 
 
 • **RotationFixed** = ``0``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### RotationFollow
+### RotationFollow <Score text="RotationFollow" /> 
 
 • **RotationFollow** = ``1``
 

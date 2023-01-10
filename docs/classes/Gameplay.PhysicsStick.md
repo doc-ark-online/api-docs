@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
 
-# PhysicsStick <Badge type="tip" text="Class" />
+# PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 
 **`Description`**
 
@@ -17,8 +17,24 @@
 | Accessors |
 | :-----|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
+
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
 
 ## Accessors
 

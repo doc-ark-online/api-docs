@@ -1,6 +1,6 @@
 [Network](../modules/Network.Network.md) / HttpRequestType
 
-# HttpRequestType <Badge type="tip" text="Enumeration" />
+# HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Get
+### Get <Score text="Get" /> 
 
 • **Get** = ``0``
 
@@ -23,7 +23,7 @@ Get请求
 
 ___
 
-### Post
+### Post <Score text="Post" /> 
 
 • **Post** = ``1``
 

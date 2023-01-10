@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireComponent
 
-# HotWeaponFireComponent <Badge type="tip" text="Class" />
+# HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
 **`Description`**
 
@@ -35,7 +35,7 @@
 
 ## Properties
 
-### onEndContinuousFireServer
+### onEndContinuousFireServer <Score text="onEndContinuousFireServer" /> 
 
 • **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -45,7 +45,7 @@
 
 ___
 
-### onEndFireClient
+### onEndFireClient <Score text="onEndFireClient" /> 
 
 • **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -55,7 +55,7 @@ ___
 
 ___
 
-### onEndFireServer
+### onEndFireServer <Score text="onEndFireServer" /> 
 
 • **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -65,7 +65,7 @@ ___
 
 ___
 
-### onStartFireClient
+### onStartFireClient <Score text="onStartFireClient" /> 
 
 • **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -75,7 +75,7 @@ ___
 
 ___
 
-### onStartFireServer
+### onStartFireServer <Score text="onStartFireServer" /> 
 
 • **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -85,17 +85,14 @@ ___
 
 ## Accessors
 
-### animationGuid
+### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string`
+• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绑定的动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -103,39 +100,30 @@ ___
 
 绑定的动画 GUID
 
-• `set` **animationGuid**(`guid`): `void`
+• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置动画 GUID
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  需要设置的蒙太奇动画 guid |
+| `GUID` | `string` |  需要设置的蒙太奇动画 GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### currentBulletSize
+### currentBulletSize <Score text="currentBulletSize" /> 
 
-• `get` **currentBulletSize**(): `number`
+• `get` **currentBulletSize**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前弹夹中子弹数量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -143,15 +131,12 @@ ___
 
 当前弹夹中子弹数量
 
-• `set` **currentBulletSize**(`value`): `void`
+• `set` **currentBulletSize**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前弹夹中子弹数量
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
@@ -159,23 +144,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  新弹夹中子弹数量 |
 
-#### Returns
-
-`void`
 
 ___
 
-### currentClipSize
+### currentClipSize <Score text="currentClipSize" /> 
 
-• `get` **currentClipSize**(): `number`
+• `get` **currentClipSize**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前弹夹容量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -183,19 +162,18 @@ ___
 
 当前弹夹容量
 
-• `set` **currentClipSize**(`value`): `void`
+• `set` **currentClipSize**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前弹夹容量
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -203,23 +181,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `number` |  当前弹夹容量 |
 
-#### Returns
-
-`void`
 
 ___
 
-### currentFireInterval
+### currentFireInterval <Score text="currentFireInterval" /> 
 
-• `get` **currentFireInterval**(): `number`
+• `get` **currentFireInterval**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取开火间隙
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -227,19 +199,18 @@ ___
 
 开火间隙
 
-• `set` **currentFireInterval**(`interval`): `void`
+• `set` **currentFireInterval**(`interval`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置开火间隙
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -247,23 +218,17 @@ ___
 | :------ | :------ | :------ |
 | `interval` | `number` |  开火间隙 |
 
-#### Returns
-
-`void`
 
 ___
 
-### currentFireModel
+### currentFireModel <Score text="currentFireModel" /> 
 
-• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md)
+• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前的开火模式
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -273,17 +238,14 @@ ___
 
 ___
 
-### currentMultipleShot
+### currentMultipleShot <Score text="currentMultipleShot" /> 
 
-• `get` **currentMultipleShot**(): `number`
+• `get` **currentMultipleShot**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取一次开火发射的子弹数量
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -291,19 +253,18 @@ ___
 
 一次开火发射的子弹数量
 
-• `set` **currentMultipleShot**(`count`): `void`
+• `set` **currentMultipleShot**(`count`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置一次开火发射的子弹数量
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -311,23 +272,17 @@ ___
 | :------ | :------ | :------ |
 | `count` | `number` |  一次开火发射的子弹数量 |
 
-#### Returns
-
-`void`
 
 ___
 
-### isFireOnScreenCenter
+### isFireOnScreenCenter <Score text="isFireOnScreenCenter" /> 
 
-• `get` **isFireOnScreenCenter**(): `boolean`
+• `get` **isFireOnScreenCenter**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否在屏幕中心开火
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -335,19 +290,18 @@ ___
 
 是否在屏幕中心开火
 
-• `set` **isFireOnScreenCenter**(`value`): `void`
+• `set` **isFireOnScreenCenter**(`value`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否在屏幕中心开火
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -355,23 +309,17 @@ ___
 | :------ | :------ | :------ |
 | `value` | `boolean` |  是否在屏幕中心开火 |
 
-#### Returns
-
-`void`
 
 ___
 
-### isFullAutoMode
+### isFullAutoMode <Score text="isFullAutoMode" /> 
 
-• `get` **isFullAutoMode**(): `boolean`
+• `get` **isFullAutoMode**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -379,19 +327,18 @@ ___
 
 当前状态下 isInFullAuto
 
-• `set` **isFullAutoMode**(`isInFullAuto`): `void`
+• `set` **isFullAutoMode**(`isInFullAuto`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前状态下isInFullAuto的值
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 一般用于处理全自动开火模式下的自动换弹
+
+:::
 
 #### Parameters
 
@@ -399,23 +346,17 @@ ___
 | :------ | :------ | :------ |
 | `isInFullAuto` | `boolean` |  当前状态下isInFullAuto的值 |
 
-#### Returns
-
-`void`
 
 ___
 
-### offsetOfFireOnScreenCenter
+### offsetOfFireOnScreenCenter <Score text="offsetOfFireOnScreenCenter" /> 
 
-• `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md)
+• `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取屏幕中心开火时的偏移
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -423,19 +364,18 @@ ___
 
 屏幕中心开火时的偏移
 
-• `set` **offsetOfFireOnScreenCenter**(`offset`): `void`
+• `set` **offsetOfFireOnScreenCenter**(`offset`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置屏幕中心开火时的偏移
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -443,23 +383,17 @@ ___
 | :------ | :------ | :------ |
 | `offset` | [`Vector`](Type.Vector.md) |  屏幕中心开火时的偏移 |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### hadAnimationGuid
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-▸ **hadAnimationGuid**(): `boolean`
+▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否有动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -469,17 +403,14 @@ ___
 
 ___
 
-### isFiring
+### isFiring <Score text="isFiring" /> 
 
-▸ **isFiring**(): `boolean`
+▸ **isFiring**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

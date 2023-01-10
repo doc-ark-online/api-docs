@@ -1,6 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Group
 
-# Group <Badge type="tip" text="Class" />
+# Group <Badge type="tip" text="Class" /> <Score text="Group" />
 
 **`Description`**
 
@@ -18,17 +18,14 @@
 
 ## Methods
 
-### add
+### add <Score text="add" /> 
 
-▸ **add**(`tween`): `void`
+▸ **add**(`tween`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将指定补间对象加入当前补间组
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -36,23 +33,17 @@
 | :------ | :------ | :------ |
 | `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\> |  要添加的补间对象 |
 
-#### Returns
-
-`void`
 
 ___
 
-### getAll
+### getAll <Score text="getAll" /> 
 
-▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[]
+▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前补间组中所有补间对象
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -62,17 +53,14 @@ ___
 
 ___
 
-### remove
+### remove <Score text="remove" /> 
 
-▸ **remove**(`tween`): `void`
+▸ **remove**(`tween`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将指定补间对象移出当前补间组并删除
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -80,35 +68,28 @@ ___
 | :------ | :------ | :------ |
 | `tween` | [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\> |  要移出并删除的补间对象 |
 
-#### Returns
-
-`void`
 
 ___
 
-### removeAll
+### removeAll <Score text="removeAll" /> 
 
-▸ **removeAll**(): `void`
+▸ **removeAll**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 移除当前补间组中所有补间对象
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 按照当前函数的实现，只是从补间组中移除补间对象，并未删除
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### update
+### update <Score text="update" /> 
 
 ▸ **update**(`time?`, `preserve?`): `boolean`
 
@@ -116,9 +97,6 @@ ___
 
 更新补间组
 
-**`Effect`**
-
-调用端生效
 
 **`Example`**
 
@@ -129,7 +107,7 @@ const group = new Extension.TweenUtil.Group()
 group.update()
 
 // 更新全局补间组
-Extension.TweenUtil.TWEEN.update()
+Extension.TweenUtil.TWEEN.update() <Badge type="tip" text="other" />
 ```
 
 #### Parameters

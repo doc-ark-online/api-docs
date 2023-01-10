@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / EventReply
 
-# EventReply <Badge type="tip" text="Class" />
+# EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 
 **`Description`**
 
@@ -19,7 +19,6 @@
 
 **`Effect`**
 
-只在客户端调用生效
 
 • `Private` **new EventReply**()
 
@@ -29,21 +28,17 @@ UE的默认值构造
 
 **`Effect`**
 
-只在客户端调用生效
 
 ## Accessors
 
-### handled
+### handled <Score text="handled" /> 
 
-• `Static` `get` **handled**(): [`EventReply`](UI.EventReply.md)
+• `Static` `get` **handled**(): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 事件已处理
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -51,17 +46,14 @@ UE的默认值构造
 
 ___
 
-### unHandled
+### unHandled <Score text="unHandled" /> 
 
-• `Static` `get` **unHandled**(): [`EventReply`](UI.EventReply.md)
+• `Static` `get` **unHandled**(): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 事件未处理
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 

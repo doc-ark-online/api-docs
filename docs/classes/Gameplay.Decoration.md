@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Decoration
 
-# Decoration <Badge type="tip" text="Class" />
+# Decoration <Badge type="tip" text="Class" /> <Score text="Decoration" />
 
 **`Description`**
 
@@ -23,7 +23,7 @@
 
 ## Properties
 
-### assetId
+### assetId <Score text="assetId" /> 
 
 • **assetId**: `string`
 
@@ -33,7 +33,7 @@
 
 ___
 
-### relativeTransform
+### relativeTransform <Score text="relativeTransform" /> 
 
 • **relativeTransform**: [`Transform`](Type.Transform.md)
 
@@ -43,7 +43,7 @@ ___
 
 ___
 
-### skeletonName
+### skeletonName <Score text="skeletonName" /> 
 
 • **skeletonName**: `string`
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### slotName
+### slotName <Score text="slotName" /> 
 
 • **slotName**: `string`
 
@@ -63,15 +63,13 @@ ___
 
 ## Methods
 
-### deserialize
+### deserialize <Score text="deserialize" /> 
 
-▸ **deserialize**(`data`): `void`
+▸ **deserialize**(`data`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 反序列化
-
-**`Effect`**
 
 双端
 
@@ -81,21 +79,16 @@ ___
 | :------ | :------ | :------ |
 | `data` | `string` |  挂件string数据 |
 
-#### Returns
-
-`void`
 
 ___
 
-### equal
+### equal <Score text="equal" /> 
 
-▸ **equal**(`widgetString`): `boolean`
+▸ **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 比较是否是一个插槽数据
-
-**`Effect`**
 
 双端
 
@@ -113,15 +106,13 @@ ___
 
 ___
 
-### serialize
+### serialize <Score text="serialize" /> 
 
-▸ **serialize**(): `string`
+▸ **serialize**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取序列化String
-
-**`Effect`**
 
 双端
 

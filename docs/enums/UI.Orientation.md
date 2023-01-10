@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Orientation
 
-# Orientation <Badge type="tip" text="Enumeration" />
+# Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### OrientHorizontal
+### OrientHorizontal <Score text="OrientHorizontal" /> 
 
 • **OrientHorizontal** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### OrientVertical
+### OrientVertical <Score text="OrientVertical" /> 
 
 • **OrientVertical** = ``1``
 

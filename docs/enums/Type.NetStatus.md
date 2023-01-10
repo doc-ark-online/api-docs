@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / NetStatus
 
-# NetStatus <Badge type="tip" text="Enumeration" />
+# NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Client
+### Client <Score text="Client" /> 
 
 • **Client** = ``1``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Server
+### Server <Score text="Server" /> 
 
 • **Server** = ``0``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### ServerAndClient
+### ServerAndClient <Score text="ServerAndClient" /> 
 
 • **ServerAndClient** = ``2``
 

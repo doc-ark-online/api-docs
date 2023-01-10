@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / DragDropPayLoad
 
-# DragDropPayLoad <Badge type="tip" text="Class" />
+# DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
 **`Description`**
 
@@ -10,29 +10,29 @@
 
 | Properties |
 | :-----|
-| **[guidStr](UI.DragDropPayLoad.md#guidstr)**: `any` <br> guid|
+| **[guidStr](UI.DragDropPayLoad.md#guidstr)**: `any` <br> GUID|
 | **[idStr](UI.DragDropPayLoad.md#idstr)**: `any` <br> id|
 | **[nameStr](UI.DragDropPayLoad.md#namestr)**: `any` <br> name|
 
 | Accessors |
 | :-----|
-| **[guid](UI.DragDropPayLoad.md#guid)**(): `string` <br> guid|
+| **[guid](UI.DragDropPayLoad.md#guid)**(): `string` <br> GUID|
 | **[id](UI.DragDropPayLoad.md#id)**(): `number` <br> 获取id|
 | **[name](UI.DragDropPayLoad.md#name)**(): `string` <br> 获取名字|
 
 ## Properties
 
-### guidStr
+### guidStr <Score text="guidStr" /> 
 
 • `Private` **guidStr**: `any`
 
 **`Description`**
 
-guid
+GUID
 
 ___
 
-### idStr
+### idStr <Score text="idStr" /> 
 
 • `Private` **idStr**: `any`
 
@@ -42,7 +42,7 @@ id
 
 ___
 
-### nameStr
+### nameStr <Score text="nameStr" /> 
 
 • `Private` **nameStr**: `any`
 
@@ -52,23 +52,23 @@ name
 
 ## Accessors
 
-### guid
+### guid <Score text="guid" /> 
 
 • `get` **guid**(): `string`
 
 **`Description`**
 
-guid
+GUID
 
 #### Returns
 
 `string`
 
-guid
+GUID
 
 ___
 
-### id
+### id <Score text="id" /> 
 
 • `get` **id**(): `number`
 
@@ -94,13 +94,10 @@ id
 | :------ | :------ |
 | `inId` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### name
+### name <Score text="name" /> 
 
 • `get` **name**(): `string`
 
@@ -126,6 +123,3 @@ ___
 | :------ | :------ |
 | `inName` | `string` |
 
-#### Returns
-
-`void`

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Button
 
-# Button <Badge type="tip" text="Class" />
+# Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
 **`Description`**
 
@@ -42,6 +42,36 @@
 | **[touchMethod](UI.Button.md#touchmethod)**([`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md)): `void` <br> 设置触摸模式|
 | **[transitionEnable](UI.Button.md#transitionenable)**(): `boolean` <br> 按钮是否启用过度模式,按下是否有效果|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.Widget.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.Widget.md#cachedgeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[desiredSize](UI.Widget.md#desiredsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.Widget.md#enable)**(): `boolean` <br> 是否可用|
+| **[guid](UI.Widget.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.Widget.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[name](UI.Widget.md#name)**(): `string` <br> 获取名字|
+| **[paintSpaceGeometry](UI.Widget.md#paintspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.Widget.md#parent)**(): [`Widget`](UI.Widget.md) <br> 获取父节点|
+| **[position](UI.Widget.md#position)**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.Widget.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.Widget.md#renderscale)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.Widget.md#rendershear)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
+| **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.Widget.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.Widget.md#zorder)**(): `number` <br> 获取zorder|
+:::
+
+
 | Methods |
 | :-----|
 | **[isPressed](UI.Button.md#ispressed)**(): `boolean` <br> 是否按下|
@@ -56,19 +86,26 @@
 | **[setPressedImageColorDecimal](UI.Button.md#setpressedimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置按下颜色指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](UI.Button.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`Button`](UI.Button.md) <br> 创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+:::
+
+
 ## Accessors
 
-### clickMethod
+### clickMethod <Score text="clickMethod" /> 
 
-• `set` **clickMethod**(`inClickMethod`): `void`
+• `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置点击模式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -76,22 +113,16 @@
 | :------ | :------ | :------ |
 | `inClickMethod` | [`ButtonClickMethod`](../enums/UI.ButtonClickMethod.md) | 点击模式选择 |
 
-#### Returns
-
-`void`
 
 
-### disableImageColor
+### disableImageColor <Score text="disableImageColor" /> 
 
-• `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取禁用图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -99,15 +130,12 @@
 
 禁用图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **disableImageColor**(`inColor`): `void`
+• `set` **disableImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置禁用图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -115,23 +143,17 @@
 | :------ | :------ | :------ |
 | `inColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### disableImageDrawType
+### disableImageDrawType <Score text="disableImageDrawType" /> 
 
-• `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
+• `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取禁用图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -139,15 +161,12 @@ ___
 
 禁用图片绘制类型
 
-• `set` **disableImageDrawType**(`inDrawTYpe`): `void`
+• `set` **disableImageDrawType**(`inDrawTYpe`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置禁用图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -155,23 +174,17 @@ ___
 | :------ | :------ | :------ |
 | `inDrawTYpe` | [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) | 类型 |
 
-#### Returns
-
-`void`
 
 ___
 
-### disableImageGuid
+### disableImageGuid <Score text="disableImageGuid" /> 
 
-• `get` **disableImageGuid**(): `string`
+• `get` **disableImageGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取禁用图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -179,39 +192,30 @@ ___
 
 禁用图片ID
 
-• `set` **disableImageGuid**(`inGuid`): `void`
+• `set` **disableImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置不可用图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inGuid` | `string` | 图片id |
+| `inGUID` | `string` | 图片id |
 
-#### Returns
-
-`void`
 
 ___
 
-### disableImageMargin
+### disableImageMargin <Score text="disableImageMargin" /> 
 
-• `get` **disableImageMargin**(): [`Margin`](UI.Margin.md)
+• `get` **disableImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取禁用图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -219,15 +223,12 @@ ___
 
 禁用图片边距
 
-• `set` **disableImageMargin**(`inMargin`): `void`
+• `set` **disableImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置禁用图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -235,23 +236,17 @@ ___
 | :------ | :------ | :------ |
 | `inMargin` | [`Margin`](UI.Margin.md) | 禁用图片边距 |
 
-#### Returns
-
-`void`
 
 ___
 
-### disableImageSize
+### disableImageSize <Score text="disableImageSize" /> 
 
-• `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md)
+• `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取禁用图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -259,15 +254,12 @@ ___
 
 禁用图片大小
 
-• `set` **disableImageSize**(`inSize`): `void`
+• `set` **disableImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置禁用图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -275,22 +267,16 @@ ___
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
-#### Returns
-
-`void`
 
 
-### focusable
+### focusable <Score text="focusable" /> 
 
-• `get` **focusable**(): `boolean`
+• `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否获取输入焦点
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -298,15 +284,12 @@ ___
 
 是否获取输入焦点
 
-• `set` **focusable**(`inFocus`): `void`
+• `set` **focusable**(`inFocus`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否获取输入焦点
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -314,22 +297,16 @@ ___
 | :------ | :------ | :------ |
 | `inFocus` | `boolean` | 是否获取输入焦点 |
 
-#### Returns
-
-`void`
 
 
-### normalImageColor
+### normalImageColor <Score text="normalImageColor" /> 
 
-• `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取普通图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -337,15 +314,12 @@ ___
 
 普通图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **normalImageColor**(`inNormalColor`): `void`
+• `set` **normalImageColor**(`inNormalColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置普通图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -353,23 +327,17 @@ ___
 | :------ | :------ | :------ |
 | `inNormalColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### normalImageDrawType
+### normalImageDrawType <Score text="normalImageDrawType" /> 
 
-• `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
+• `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取普通图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -377,15 +345,12 @@ ___
 
 普通图片绘制类型
 
-• `set` **normalImageDrawType**(`inDrawType`): `void`
+• `set` **normalImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置普通图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -393,23 +358,17 @@ ___
 | :------ | :------ | :------ |
 | `inDrawType` | [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) | 类型 |
 
-#### Returns
-
-`void`
 
 ___
 
-### normalImageGuid
+### normalImageGuid <Score text="normalImageGuid" /> 
 
-• `get` **normalImageGuid**(): `string`
+• `get` **normalImageGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取普通图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -417,39 +376,30 @@ ___
 
 普通图片ID
 
-• `set` **normalImageGuid**(`inGuid`): `void`
+• `set` **normalImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置正常图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inGuid` | `string` | 图片id |
+| `inGUID` | `string` | 图片id |
 
-#### Returns
-
-`void`
 
 ___
 
-### normalImageMargin
+### normalImageMargin <Score text="normalImageMargin" /> 
 
-• `get` **normalImageMargin**(): [`Margin`](UI.Margin.md)
+• `get` **normalImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取普通图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -457,15 +407,12 @@ ___
 
 普通图片边距
 
-• `set` **normalImageMargin**(`inMargin`): `void`
+• `set` **normalImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置普通图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -473,23 +420,17 @@ ___
 | :------ | :------ | :------ |
 | `inMargin` | [`Margin`](UI.Margin.md) | 普通图片边距 |
 
-#### Returns
-
-`void`
 
 ___
 
-### normalImageSize
+### normalImageSize <Score text="normalImageSize" /> 
 
-• `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md)
+• `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -497,15 +438,12 @@ ___
 
 普通图片大小
 
-• `set` **normalImageSize**(`inSize`): `void`
+• `set` **normalImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -513,23 +451,17 @@ ___
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
-#### Returns
-
-`void`
 
 ___
 
-### onClicked
+### onClicked <Score text="onClicked" /> 
 
-• `get` **onClicked**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+• `get` **onClicked**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 点击事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -539,17 +471,14 @@ ___
 
 ___
 
-### onHovered
+### onHovered <Score text="onHovered" /> 
 
-• `get` **onHovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+• `get` **onHovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 悬浮事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -559,17 +488,14 @@ ___
 
 ___
 
-### onPressed
+### onPressed <Score text="onPressed" /> 
 
-• `get` **onPressed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+• `get` **onPressed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 按下事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -579,17 +505,14 @@ ___
 
 ___
 
-### onReleased
+### onReleased <Score text="onReleased" /> 
 
-• `get` **onReleased**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+• `get` **onReleased**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 释放事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -599,17 +522,14 @@ ___
 
 ___
 
-### onUnhovered
+### onUnhovered <Score text="onUnhovered" /> 
 
-• `get` **onUnhovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+• `get` **onUnhovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 未悬浮事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -618,17 +538,14 @@ ___
 返回事件的代理
 
 
-### pressedImageColor
+### pressedImageColor <Score text="pressedImageColor" /> 
 
-• `get` **pressedImageColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **pressedImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按压图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -636,15 +553,12 @@ ___
 
 按压图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **pressedImageColor**(`inColor`): `void`
+• `set` **pressedImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按压图片颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -652,23 +566,17 @@ ___
 | :------ | :------ | :------ |
 | `inColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### pressedImageDrawType
+### pressedImageDrawType <Score text="pressedImageDrawType" /> 
 
-• `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
+• `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按压图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -676,15 +584,12 @@ ___
 
 按压图片绘制类型
 
-• `set` **pressedImageDrawType**(`inDrawType`): `void`
+• `set` **pressedImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按压图片绘制类型
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -692,23 +597,17 @@ ___
 | :------ | :------ | :------ |
 | `inDrawType` | [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) | 类型 |
 
-#### Returns
-
-`void`
 
 ___
 
-### pressedImageGuid
+### pressedImageGuid <Score text="pressedImageGuid" /> 
 
-• `get` **pressedImageGuid**(): `string`
+• `get` **pressedImageGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按下图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -716,39 +615,30 @@ ___
 
 按下图片ID
 
-• `set` **pressedImageGuid**(`inGuid`): `void`
+• `set` **pressedImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按下图片ID
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inGuid` | `string` | 图片id |
+| `inGUID` | `string` | 图片id |
 
-#### Returns
-
-`void`
 
 ___
 
-### pressedImageMargin
+### pressedImageMargin <Score text="pressedImageMargin" /> 
 
-• `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md)
+• `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按压图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -756,15 +646,12 @@ ___
 
 按压图片边距
 
-• `set` **pressedImageMargin**(`inMargin`): `void`
+• `set` **pressedImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按压图片边距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -772,23 +659,17 @@ ___
 | :------ | :------ | :------ |
 | `inMargin` | [`Margin`](UI.Margin.md) | 按压图片边距 |
 
-#### Returns
-
-`void`
 
 ___
 
-### pressedImageSize
+### pressedImageSize <Score text="pressedImageSize" /> 
 
-• `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md)
+• `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按压图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -796,15 +677,12 @@ ___
 
 按压图片大小
 
-• `set` **pressedImageSize**(`inSize`): `void`
+• `set` **pressedImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按压图片大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -812,23 +690,17 @@ ___
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
-#### Returns
-
-`void`
 
 ___
 
-### pressedMethod
+### pressedMethod <Score text="pressedMethod" /> 
 
-• `set` **pressedMethod**(`inPressedMethod`): `void`
+• `set` **pressedMethod**(`inPressedMethod`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按压模式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -836,22 +708,16 @@ ___
 | :------ | :------ | :------ |
 | `inPressedMethod` | [`ButtonPressMethod`](../enums/UI.ButtonPressMethod.md) | Press模式选择 |
 
-#### Returns
-
-`void`
 
 
-### touchMethod
+### touchMethod <Score text="touchMethod" /> 
 
-• `set` **touchMethod**(`inTouchMethod`): `void`
+• `set` **touchMethod**(`inTouchMethod`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置触摸模式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -859,22 +725,16 @@ ___
 | :------ | :------ | :------ |
 | `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) | Touch模式选择 |
 
-#### Returns
-
-`void`
 
 
-### transitionEnable
+### transitionEnable <Score text="transitionEnable" /> 
 
-• `get` **transitionEnable**(): `boolean`
+• `get` **transitionEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 按钮是否启用过度模式,按下是否有效果
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -882,15 +742,12 @@ ___
 
 按钮是否启用过度模式
 
-• `set` **transitionEnable**(`inBoolean`): `void`
+• `set` **transitionEnable**(`inBoolean`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否套用不同的按下方案
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -898,24 +755,18 @@ ___
 | :------ | :------ | :------ |
 | `inBoolean` | `boolean` | 是否套用不同的按下方案 |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### isPressed
+### isPressed <Score text="isPressed" /> 
 
-▸ **isPressed**(): `boolean`
+▸ **isPressed**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否按下
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -925,17 +776,14 @@ ___
 
 ___
 
-### setButtonDisableByFile
+### setButtonDisableByFile <Score text="setButtonDisableByFile" /> 
 
-▸ **setButtonDisableByFile**(`absPath`): `void`
+▸ **setButtonDisableByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置不可用图片
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -943,23 +791,17 @@ ___
 | :------ | :------ | :------ |
 | `absPath` | `string` | 图片文件路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setButtonNormalByFile
+### setButtonNormalByFile <Score text="setButtonNormalByFile" /> 
 
-▸ **setButtonNormalByFile**(`absPath`): `void`
+▸ **setButtonNormalByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置正常图片
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -967,23 +809,17 @@ ___
 | :------ | :------ | :------ |
 | `absPath` | `string` | 图片文件路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setButtonPressedByFile
+### setButtonPressedByFile <Score text="setButtonPressedByFile" /> 
 
-▸ **setButtonPressedByFile**(`absPath`): `void`
+▸ **setButtonPressedByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按下图片
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -991,23 +827,17 @@ ___
 | :------ | :------ | :------ |
 | `absPath` | `string` | 图片文件路径 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setDisableImageColorByHex
+### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 
-▸ **setDisableImageColorByHex**(`inHexString`): `void`
+▸ **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1015,23 +845,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | 颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setDisableImageColorDecimal
+### setDisableImageColorDecimal <Score text="setDisableImageColorDecimal" /> 
 
-▸ **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置不可用颜色指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1042,23 +866,17 @@ ___
 | `B` | `number` | 颜色B值，数据范围0~255 |
 | `A` | `number` | 颜色透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNormalImageColorByHex
+### setNormalImageColorByHex <Score text="setNormalImageColorByHex" /> 
 
-▸ **setNormalImageColorByHex**(`inHexString`): `void`
+▸ **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置正常颜色指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1066,23 +884,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | 颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setNormalImageColorDecimal
+### setNormalImageColorDecimal <Score text="setNormalImageColorDecimal" /> 
 
-▸ **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置正常颜色 指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1093,23 +905,17 @@ ___
 | `B` | `number` | 颜色B值，数据范围0~255 |
 | `A` | `number` | 颜色透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPressedImageColorByHex
+### setPressedImageColorByHex <Score text="setPressedImageColorByHex" /> 
 
-▸ **setPressedImageColorByHex**(`inHexString`): `void`
+▸ **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按下颜色指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1117,23 +923,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | 颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setPressedImageColorDecimal
+### setPressedImageColorDecimal <Score text="setPressedImageColorDecimal" /> 
 
-▸ **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置按下颜色指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1144,23 +944,17 @@ ___
 | `B` | `number` | 颜色B值，数据范围0~255 |
 | `A` | `number` | 颜色透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### newObject
+### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`Button`](UI.Button.md)
+▸ `Static` **newObject**(`parent?`, `inName?`): [`Button`](UI.Button.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 

@@ -1,14 +1,16 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLauncher
 
-# ProjectileLauncher <Badge type="tip" text="Class" />
+# ProjectileLauncher <Badge type="tip" text="Class" /> <Score text="ProjectileLauncher" />
 
 **`Description`**
 
 投掷物 v2
 
-**`Precautions`**
+::: warning Precautions
 
 此类遵循规则：getter/setter 方法仅做简单的 get/set，不能进行其他任何类似RPC、循环、事件派发等较复杂的操作
+
+:::
 
 ## Hierarchy
 
@@ -49,6 +51,32 @@
 | **[startLocation](Gameplay.ProjectileLauncher.md#startlocation)**(): [`Vector`](Type.Vector.md) <br> 投掷物起始位置|
 | **[traceLineStyle](Gameplay.ProjectileLauncher.md#tracelinestyle)**(): [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md) <br> 轨迹风格|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[forwardVector](Gameplay.GameObject.md#forwardvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[guid](Gameplay.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
+| **[lockStatus](Gameplay.GameObject.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定|
+| **[name](Gameplay.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
+| **[netStatus](Gameplay.GameObject.md#netstatus)**(): [`NetStatus`](../enums/Type.NetStatus.md) <br> 获取当前物体同步状态|
+| **[parent](Gameplay.GameObject.md#parent)**(): `GameObject` <br> 获取当前父物体|
+| **[relativeLocation](Gameplay.GameObject.md#relativelocation)**(): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[relativeRotation](Gameplay.GameObject.md#relativerotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[relativeScale](Gameplay.GameObject.md#relativescale)**(): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[rightVector](Gameplay.GameObject.md#rightvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[staticStatus](Gameplay.GameObject.md#staticstatus)**(): `boolean` <br> 获取对象是否静态|
+| **[tag](Gameplay.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
+| **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
+| **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+:::
+
+
 | Methods |
 | :-----|
 | **[bindPlayer](Gameplay.ProjectileLauncher.md#bindplayer)**([`Player`](Gameplay.Player.md)): `boolean` <br> 绑定玩家|
@@ -58,9 +86,67 @@
 | **[spawnProjectileInstanceLaunchToTarget](Gameplay.ProjectileLauncher.md#spawnprojectileinstancelaunchtotarget)**([`Vector`](Type.Vector.md), `number`, `number`): [`ProjectileInst`](Gameplay.ProjectileInst.md) <br> 发射子弹实例|
 | **[unbindPlayer](Gameplay.ProjectileLauncher.md#unbindplayer)**(): `void` <br> 解绑玩家|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
+| **[detachFromGameObject](Gameplay.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
+| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.GameObject.md#getbounds)**(`boolean`, [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`string`): `GameObject` <br> 根据GUID查找子物体|
+| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`string`): `GameObject` <br> 根据名称查找子物体|
+| **[getChildren](Gameplay.GameObject.md#getchildren)**(): `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
+| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
+| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.GameObject.md#getrightvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`string`): `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
+| **[getTransform](Gameplay.GameObject.md#gettransform)**([`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.GameObject.md#getupvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getVisibility](Gameplay.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
+| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+| **[isRunningClient](Gameplay.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
+| **[onDestroy](Gameplay.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
+| **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
+| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
+| **[setCollision](Gameplay.GameObject.md#setcollision)**([`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
+| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**([`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.GameObject.md#settransform)**([`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.GameObject.md#setvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
+| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+:::
+
+
 ## Properties
 
-### onProjectileDestroy
+### onProjectileDestroy <Score text="onProjectileDestroy" /> 
 
 • **onProjectileDestroy**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -68,13 +154,15 @@
 
 投掷物被销毁时触发绑定函数
 
-**`Precautions`**
+::: warning Precautions
 
 所有投掷物都是使用的同一个回调，请不要循环添加事件绑定函数
 
+:::
+
 ___
 
-### onProjectileHit
+### onProjectileHit <Score text="onProjectileHit" /> 
 
 • **onProjectileHit**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
@@ -82,13 +170,15 @@ ___
 
 投掷物击中物体时触发绑定函数
 
-**`Precautions`**
+::: warning Precautions
 
 所有投掷物都是使用的同一个回调，请不要循环添加事件绑定函数
 
+:::
+
 ___
 
-### onProjectileSpawned
+### onProjectileSpawned <Score text="onProjectileSpawned" /> 
 
 • **onProjectileSpawned**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\>
 
@@ -96,13 +186,15 @@ ___
 
 投掷物生成实例时触发绑定函数，此回调触发时实例还没有开始移动，建议将此函数作为临时附着网格体或特效时使用
 
-**`Precautions`**
+::: warning Precautions
 
 所有投掷物都是使用的同一个回调，请不要循环添加事件绑定函数
 
+:::
+
 ## Accessors
 
-### acceleration
+### acceleration <Score text="acceleration" /> 
 
 • `get` **acceleration**(): `number`
 
@@ -126,13 +218,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### accelerationEnable
+### accelerationEnable <Score text="accelerationEnable" /> 
 
 • `get` **accelerationEnable**(): `boolean`
 
@@ -156,13 +245,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### accelerationEnableDistance
+### accelerationEnableDistance <Score text="accelerationEnableDistance" /> 
 
 • `get` **accelerationEnableDistance**(): `number`
 
@@ -186,13 +272,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### accelerationEnableMode
+### accelerationEnableMode <Score text="accelerationEnableMode" /> 
 
 • `get` **accelerationEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
@@ -216,13 +299,10 @@ ___
 | :------ | :------ |
 | `value` | [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### accelerationEnableTime
+### accelerationEnableTime <Score text="accelerationEnableTime" /> 
 
 • `get` **accelerationEnableTime**(): `number`
 
@@ -246,13 +326,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### collisionLossCoefficient
+### collisionLossCoefficient <Score text="collisionLossCoefficient" /> 
 
 • `get` **collisionLossCoefficient**(): `number`
 
@@ -276,13 +353,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### collisionMode
+### collisionMode <Score text="collisionMode" /> 
 
 • `get` **collisionMode**(): [`ProjectileCollisionMode`](../enums/Gameplay.ProjectileCollisionMode.md)
 
@@ -306,13 +380,10 @@ ___
 | :------ | :------ |
 | `value` | [`ProjectileCollisionMode`](../enums/Gameplay.ProjectileCollisionMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### detectionRadius
+### detectionRadius <Score text="detectionRadius" /> 
 
 • `get` **detectionRadius**(): `number`
 
@@ -336,12 +407,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### gravitationalAcceleration
+### gravitationalAcceleration <Score text="gravitationalAcceleration" /> 
 
 • `get` **gravitationalAcceleration**(): `number`
 
@@ -365,13 +433,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### gravityEnable
+### gravityEnable <Score text="gravityEnable" /> 
 
 • `get` **gravityEnable**(): `boolean`
 
@@ -395,13 +460,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### gravityEnableDistance
+### gravityEnableDistance <Score text="gravityEnableDistance" /> 
 
 • `get` **gravityEnableDistance**(): `number`
 
@@ -425,13 +487,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### gravityEnableMode
+### gravityEnableMode <Score text="gravityEnableMode" /> 
 
 • `get` **gravityEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
@@ -455,13 +514,10 @@ ___
 | :------ | :------ |
 | `value` | [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### gravityEnableTime
+### gravityEnableTime <Score text="gravityEnableTime" /> 
 
 • `get` **gravityEnableTime**(): `number`
 
@@ -485,12 +541,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### initialSpeed
+### initialSpeed <Score text="initialSpeed" /> 
 
 • `get` **initialSpeed**(): `number`
 
@@ -514,13 +567,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### isAutoDestroy
+### isAutoDestroy <Score text="isAutoDestroy" /> 
 
 • `get` **isAutoDestroy**(): `boolean`
 
@@ -544,13 +594,10 @@ ___
 | :------ | :------ |
 | `value` | `boolean` |
 
-#### Returns
-
-`void`
 
 ___
 
-### launchDirection
+### launchDirection <Score text="launchDirection" /> 
 
 • `get` **launchDirection**(): [`Rotation`](Type.Rotation.md)
 
@@ -574,13 +621,10 @@ ___
 | :------ | :------ |
 | `value` | [`Rotation`](Type.Rotation.md) |
 
-#### Returns
-
-`void`
 
 ___
 
-### lifeSpan
+### lifeSpan <Score text="lifeSpan" /> 
 
 • `get` **lifeSpan**(): `number`
 
@@ -604,12 +648,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### maxCollisionTimes
+### maxCollisionTimes <Score text="maxCollisionTimes" /> 
 
 • `get` **maxCollisionTimes**(): `number`
 
@@ -633,13 +674,10 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 ___
 
-### maxSpeed
+### maxSpeed <Score text="maxSpeed" /> 
 
 • `get` **maxSpeed**(): `number`
 
@@ -663,12 +701,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### range
+### range <Score text="range" /> 
 
 • `get` **range**(): `number`
 
@@ -692,12 +727,9 @@ ___
 | :------ | :------ |
 | `value` | `number` |
 
-#### Returns
-
-`void`
 
 
-### startLocation
+### startLocation <Score text="startLocation" /> 
 
 • `get` **startLocation**(): [`Vector`](Type.Vector.md)
 
@@ -721,12 +753,9 @@ ___
 | :------ | :------ |
 | `value` | [`Vector`](Type.Vector.md) |
 
-#### Returns
-
-`void`
 
 
-### traceLineStyle
+### traceLineStyle <Score text="traceLineStyle" /> 
 
 • `get` **traceLineStyle**(): [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md)
 
@@ -750,24 +779,18 @@ ___
 | :------ | :------ |
 | `value` | [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md) |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### bindPlayer
+### bindPlayer <Score text="bindPlayer" /> 
 
-▸ **bindPlayer**(`player`): `boolean`
+▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绑定玩家
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
@@ -782,21 +805,20 @@ ___
 true：参数 player 有效，绑定成功
 
 
-### drawPredictedTrajectory
+### drawPredictedTrajectory <Score text="drawPredictedTrajectory" /> 
 
-▸ **drawPredictedTrajectory**(`density?`, `duration?`): `void`
+▸ **drawPredictedTrajectory**(`density?`, `duration?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绘制路径预测的轨迹，调一次开启，掉第二次即关闭，如此循环
 
-**`Precautions`**
+::: warning Precautions
 
 如果只绘制了一个点，可能投掷物被卡住了
 
-**`Effect`**
+:::
 
-只在客户端调用生效
 
 #### Parameters
 
@@ -805,26 +827,22 @@ true：参数 player 有效，绑定成功
 | `density?` | `number` |  密度，值越大路径点越密，性能消耗越大 default: 15 |
 | `duration?` | `number` |  预测的时长 default: 2 |
 
-#### Returns
-
-`void`
 
 
-### predictedTrajectory
+### predictedTrajectory <Score text="predictedTrajectory" /> 
 
-▸ **predictedTrajectory**(`density`, `duration`): [`Vector`](Type.Vector.md)[]
+▸ **predictedTrajectory**(`density`, `duration`): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取路径预测的轨迹
 
-**`Effect`**
 
-调用端生效
-
-**`Precautions`**
+::: warning Precautions
 
 如果返回的数组长度为1，可能投掷物被卡住了
+
+:::
 
 #### Parameters
 
@@ -840,21 +858,20 @@ true：参数 player 有效，绑定成功
 路径轨迹点
 
 
-### spawnProjectileInstanceLaunch
+### spawnProjectileInstanceLaunch <Score text="spawnProjectileInstanceLaunch" /> 
 
-▸ **spawnProjectileInstanceLaunch**(): [`ProjectileInst`](Gameplay.ProjectileInst.md)
+▸ **spawnProjectileInstanceLaunch**(): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 发射子弹实例
 
-**`Precautions`**
+::: warning Precautions
 
 发射后再更新其他属性无法对本次发射的子弹产生影响；允许重复发射，注意服务端发射时，返回的值是无效的
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Returns
 
@@ -864,21 +881,20 @@ true：参数 player 有效，绑定成功
 
 ___
 
-### spawnProjectileInstanceLaunchToTarget
+### spawnProjectileInstanceLaunchToTarget <Score text="spawnProjectileInstanceLaunchToTarget" /> 
 
-▸ **spawnProjectileInstanceLaunchToTarget**(`location`, `time?`, `speed?`): [`ProjectileInst`](Gameplay.ProjectileInst.md)
+▸ **spawnProjectileInstanceLaunchToTarget**(`location`, `time?`, `speed?`): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 发射子弹实例
 
-**`Precautions`**
+::: warning Precautions
 
 发射后再更新其他属性无法对本次发射的子弹产生影响；允许重复发送
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Parameters
 
@@ -896,18 +912,12 @@ ___
 
 ___
 
-### unbindPlayer
+### unbindPlayer <Score text="unbindPlayer" /> 
 
-▸ **unbindPlayer**(): `void`
+▸ **unbindPlayer**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 解绑玩家
 
-**`Effect`**
 
-客户端调用自动广播
-
-#### Returns
-
-`void`

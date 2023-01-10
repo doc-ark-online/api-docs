@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Delegate
 
-# Delegate<T\> <Badge type="tip" text="Class" />
+# Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
 **`Description`**
 
@@ -8,7 +8,6 @@
 
 **`Effect`**
 
-调用端生效
 
 ## Type parameters
 
@@ -37,17 +36,14 @@
 
 ## Methods
 
-### bind
+### bind <Score text="bind" /> 
 
-▸ **bind**(`func`): `void`
+▸ **bind**(`func`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绑定函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -55,9 +51,6 @@
 | :------ | :------ | :------ |
 | `func` | `T` |  绑定的函数 default: |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -65,17 +58,14 @@
 
 ___
 
-### execute
+### execute <Score text="execute" /> 
 
-▸ **execute**(`...arg`): `ReturnType`<`T`\>
+▸ **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 执行绑定函数
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -95,17 +85,14 @@ ___
 
 ___
 
-### isBound
+### isBound <Score text="isBound" /> 
 
-▸ **isBound**(): `boolean`
+▸ **isBound**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否绑定
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -119,21 +106,15 @@ ___
 
 ___
 
-### unbind
+### unbind <Score text="unbind" /> 
 
-▸ **unbind**(): `void`
+▸ **unbind**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 解绑函数
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 #### Implementation of
 

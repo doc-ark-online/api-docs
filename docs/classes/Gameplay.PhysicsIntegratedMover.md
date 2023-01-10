@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsIntegratedMover
 
-# PhysicsIntegratedMover <Badge type="tip" text="Class" />
+# PhysicsIntegratedMover <Badge type="tip" text="Class" /> <Score text="PhysicsIntegratedMover" />
 
 **`Description`**
 
@@ -29,12 +29,28 @@
 | **[swingAngle](Gameplay.PhysicsIntegratedMover.md#swingangle)**(): `number` <br> 获取摆动最大角度|
 | **[swingSpeed](Gameplay.PhysicsIntegratedMover.md#swingspeed)**(): [`Vector`](Type.Vector.md) <br> 获取摆动运动速度|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
+
 ## Accessors
 
-### enable
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -60,12 +76,9 @@
 | :------ | :------ | :------ |
 | `newEnable` | `boolean` | 启用状态 |
 
-#### Returns
-
-`void`
 
 
-### linearRepeat
+### linearRepeat <Score text="linearRepeat" /> 
 
 • `get` **linearRepeat**(): `boolean`
 
@@ -91,13 +104,10 @@
 | :------ | :------ | :------ |
 | `newRepeat` | `boolean` | 线性重复运动状态 |
 
-#### Returns
-
-`void`
 
 ___
 
-### linearRepeatDelay
+### linearRepeatDelay <Score text="linearRepeatDelay" /> 
 
 • `get` **linearRepeatDelay**(): `number`
 
@@ -123,13 +133,10 @@ ___
 | :------ | :------ | :------ |
 | `newDelay` | `number` | 线性重复运动间隔 |
 
-#### Returns
-
-`void`
 
 ___
 
-### linearRepeatTime
+### linearRepeatTime <Score text="linearRepeatTime" /> 
 
 • `get` **linearRepeatTime**(): `number`
 
@@ -155,13 +162,10 @@ ___
 | :------ | :------ | :------ |
 | `newTime` | `number` | 线性重复运动时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### linearSpeed
+### linearSpeed <Score text="linearSpeed" /> 
 
 • `get` **linearSpeed**(): [`Vector`](Type.Vector.md)
 
@@ -187,12 +191,9 @@ ___
 | :------ | :------ | :------ |
 | `newSpeed` | [`Vector`](Type.Vector.md) | 线性速度大小 |
 
-#### Returns
-
-`void`
 
 
-### rotationRepeat
+### rotationRepeat <Score text="rotationRepeat" /> 
 
 • `get` **rotationRepeat**(): `boolean`
 
@@ -218,13 +219,10 @@ ___
 | :------ | :------ | :------ |
 | `newRepeat` | `boolean` | 旋转重复运动状态 |
 
-#### Returns
-
-`void`
 
 ___
 
-### rotationRepeatDelay
+### rotationRepeatDelay <Score text="rotationRepeatDelay" /> 
 
 • `get` **rotationRepeatDelay**(): `number`
 
@@ -250,13 +248,10 @@ ___
 | :------ | :------ | :------ |
 | `newDelay` | `number` | 旋转重复运动间隔 |
 
-#### Returns
-
-`void`
 
 ___
 
-### rotationRepeatTime
+### rotationRepeatTime <Score text="rotationRepeatTime" /> 
 
 • `get` **rotationRepeatTime**(): `number`
 
@@ -282,13 +277,10 @@ ___
 | :------ | :------ | :------ |
 | `newTime` | `number` | 旋转重复运动时间 |
 
-#### Returns
-
-`void`
 
 ___
 
-### rotationSpeed
+### rotationSpeed <Score text="rotationSpeed" /> 
 
 • `get` **rotationSpeed**(): [`Vector`](Type.Vector.md)
 
@@ -314,13 +306,10 @@ ___
 | :------ | :------ | :------ |
 | `newSpeed` | [`Vector`](Type.Vector.md) | 旋转速度大小 |
 
-#### Returns
-
-`void`
 
 ___
 
-### smooth
+### smooth <Score text="smooth" /> 
 
 • `get` **smooth**(): `boolean`
 
@@ -346,12 +335,9 @@ ___
 | :------ | :------ | :------ |
 | `newSmooth` | `boolean` | 启用状态 |
 
-#### Returns
-
-`void`
 
 
-### swingAngle
+### swingAngle <Score text="swingAngle" /> 
 
 • `get` **swingAngle**(): `number`
 
@@ -377,13 +363,10 @@ ___
 | :------ | :------ | :------ |
 | `newAngle` | `number` | 摆动最大角度 |
 
-#### Returns
-
-`void`
 
 ___
 
-### swingSpeed
+### swingSpeed <Score text="swingSpeed" /> 
 
 • `get` **swingSpeed**(): [`Vector`](Type.Vector.md)
 
@@ -409,9 +392,6 @@ ___
 | :------ | :------ | :------ |
 | `newSpeed` | [`Vector`](Type.Vector.md) | 摆动运动速度 |
 
-#### Returns
-
-`void`
 
 
 ## Methods

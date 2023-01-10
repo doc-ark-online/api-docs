@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeBase
 
-# SomatotypeBase <Badge type="tip" text="Class" />
+# SomatotypeBase <Badge type="tip" text="Class" /> <Score text="SomatotypeBase" />
 
 **`Description`**
 
@@ -39,7 +39,7 @@
 
 ## Properties
 
-### enableOutline
+### enableOutline <Score text="enableOutline" /> 
 
 • `Protected` **enableOutline**: `boolean`
 
@@ -49,7 +49,7 @@
 
 ___
 
-### postProcessObj
+### postProcessObj <Score text="postProcessObj" /> 
 
 • `Protected` **postProcessObj**: [`PostProcess`](Gameplay.PostProcess.md)
 
@@ -59,15 +59,13 @@ ___
 
 ## Methods
 
-### enablePostProcess
+### enablePostProcess <Score text="enablePostProcess" /> 
 
-▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void`
+▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 后处理开关
-
-**`Effect`**
 
 客户端调用生效
 
@@ -79,21 +77,16 @@ ___
 | `newOutlineColor` | [`LinearColor`](Type.LinearColor.md) | Outline颜色 |
 | `newOutlineWidth` | `number` | Outline宽度 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setOutline
+### setOutline <Score text="setOutline" /> 
 
-▸ **setOutline**(`usedOutline`): `boolean`
+▸ **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 描边开关
-
-**`Effect`**
 
 调用调用生效
 
@@ -111,15 +104,13 @@ ___
 
 ___
 
-### setOutlineAdvance
+### setOutlineAdvance <Score text="setOutlineAdvance" /> 
 
-▸ **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void`
+▸ **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 后处理描边开关
-
-**`Effect`**
 
 调用端调用生效
 
@@ -130,6 +121,3 @@ ___
 | `newEnableOutline` | `boolean` | 是否开启描边功能 |
 | `newOutlineColorIndex` | `number` | 描边的颜色 |
 
-#### Returns
-
-`void`

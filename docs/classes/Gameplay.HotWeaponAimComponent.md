@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimComponent
 
-# HotWeaponAimComponent <Badge type="tip" text="Class" />
+# HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
 **`Description`**
 
@@ -30,7 +30,7 @@
 
 ## Properties
 
-### onAimEndClient
+### onAimEndClient <Score text="onAimEndClient" /> 
 
 • **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -40,7 +40,7 @@
 
 ___
 
-### onAimEndServer
+### onAimEndServer <Score text="onAimEndServer" /> 
 
 • **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### onAimStartClient
+### onAimStartClient <Score text="onAimStartClient" /> 
 
 • **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### onAimStartServer
+### onAimStartServer <Score text="onAimStartServer" /> 
 
 • **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -70,17 +70,14 @@ ___
 
 ## Accessors
 
-### aimMode
+### aimMode <Score text="aimMode" /> 
 
-• `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md)
+• `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 Get瞄准时的第一/第三人称模式
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -88,15 +85,12 @@ Get瞄准时的第一/第三人称模式
 
 当前瞄准时的第一/第三人称模式
 
-• `set` **aimMode**(`NewAimMode`): `void`
+• `set` **aimMode**(`NewAimMode`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Set瞄准时的第一/第三人称模式
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
@@ -104,27 +98,23 @@ Set瞄准时的第一/第三人称模式
 | :------ | :------ | :------ |
 | `NewAimMode` | [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) |  新设置的瞄准模式 default: |
 
-#### Returns
-
-`void`
 
 ___
 
-### aimingZoom
+### aimingZoom <Score text="aimingZoom" /> 
 
-• `get` **aimingZoom**(): `number`
+• `get` **aimingZoom**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Get第一人称瞄准时的瞄准镜放大倍数
 
-**`Precautions`**
+::: warning Precautions
 
 合法范围为[1.0 , 18.0]，对应[0° , 90°]的FOV值每增加1.0，对应FOV增加5°
 
-**`Effect`**
+:::
 
-调用端生效
 
 #### Returns
 
@@ -132,19 +122,18 @@ Get第一人称瞄准时的瞄准镜放大倍数
 
 当前第一人称瞄准时的瞄准镜放大倍数
 
-• `set` **aimingZoom**(`newAimingZoom`): `void`
+• `set` **aimingZoom**(`newAimingZoom`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Set模拟瞄准时的瞄准镜放大倍数
 
-**`Precautions`**
+::: warning Precautions
 
 合法范围为[1.0 , 18.0]，对应[0° , 90°]的 FOV 值每增加1.0，对应FOV增加5°
 
-**`Effect`**
+:::
 
-客户端调用自动广播
 
 #### Parameters
 
@@ -152,23 +141,17 @@ Set模拟瞄准时的瞄准镜放大倍数
 | :------ | :------ | :------ |
 | `newAimingZoom` | `number` |  新设置的瞄准镜放大倍数 default: |
 
-#### Returns
-
-`void`
 
 ___
 
-### cameraOffsetDistanceInThirdPersonMode
+### cameraOffsetDistanceInThirdPersonMode <Score text="cameraOffsetDistanceInThirdPersonMode" /> 
 
-• `get` **cameraOffsetDistanceInThirdPersonMode**(): `number`
+• `get` **cameraOffsetDistanceInThirdPersonMode**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Get第三人称瞄准时的连接相机弹簧组件的长度
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -176,19 +159,18 @@ Get第三人称瞄准时的连接相机弹簧组件的长度
 
 当前连接相机弹簧组件的长度
 
-• `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void`
+• `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Set第三人称瞄准时的连接相机弹簧组件的长度
 
-**`Precautions`**
+::: warning Precautions
 
 相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离Character太近导致穿模，太远则没有必要
 
-**`Effect`**
+:::
 
-客户端调用自动广播
 
 #### Parameters
 
@@ -196,23 +178,17 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 | :------ | :------ | :------ |
 | `NewCameraOffsetDistance` | `number` |  新设置的连接相机弹簧组件的长度 default: |
 
-#### Returns
-
-`void`
 
 ___
 
-### defaultCameraSpringArmLength
+### defaultCameraSpringArmLength <Score text="defaultCameraSpringArmLength" /> 
 
-• `get` **defaultCameraSpringArmLength**(): `number`
+• `get` **defaultCameraSpringArmLength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Get第三人称常态下相机弹簧组件的默认长度
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -220,19 +196,18 @@ Get第三人称常态下相机弹簧组件的默认长度
 
 第三人称常态下相机弹簧组件的默认长度
 
-• `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void`
+• `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Set第三人称常态下相机弹簧组件的默认长度
 
-**`Precautions`**
+::: warning Precautions
 
 相机弹簧组件长度有一个闭区间范围，目的是为了防止相机离Character太近导致穿模，太远则没有必要
 
-**`Effect`**
+:::
 
-客户端调用自动广播
 
 #### Parameters
 
@@ -240,23 +215,17 @@ Set第三人称常态下相机弹簧组件的默认长度
 | :------ | :------ | :------ |
 | `NewCameraArmLength` | `number` |  新设置的连接相机弹簧组件的默认长度 default: |
 
-#### Returns
-
-`void`
 
 ___
 
-### scopeTypeIndex
+### scopeTypeIndex <Score text="scopeTypeIndex" /> 
 
-• `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md)
+• `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 Get模拟瞄准镜UI种类
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -264,15 +233,12 @@ Get模拟瞄准镜UI种类
 
 当前瞄准镜UI种类
 
-• `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void`
+• `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 Set模拟瞄准镜UI种类
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
@@ -280,33 +246,24 @@ Set模拟瞄准镜UI种类
 | :------ | :------ | :------ |
 | `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) |  新的瞄准镜UI种类 default: |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### bindOpenAimComponentDelegates
+### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
 
-▸ **bindOpenAimComponentDelegates**(): `void`
+▸ **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 绑定瞄准组件代理
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### enableAiming
+### enableAiming <Score text="enableAiming" /> 
 
-▸ **enableAiming**(`NewAimState`): `void`
+▸ **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
@@ -316,9 +273,6 @@ ___
 - 切换准星UI
 - 修改子弹发射精度-上升到用户层，开发者自己在瞄准时设置默认精准度
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
@@ -326,6 +280,3 @@ ___
 | :------ | :------ | :------ |
 | `NewAimState` | `boolean` |  是否开启瞄准功能 default: |
 
-#### Returns
-
-`void`

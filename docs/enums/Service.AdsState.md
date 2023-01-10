@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AdsState
 
-# AdsState <Badge type="tip" text="Enumeration" />
+# AdsState <Badge type="tip" text="Enumeration" /> <Score text="AdsState" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Close
+### Close <Score text="Close" /> 
 
 • **Close** = ``1``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### Fail
+### Fail <Score text="Fail" /> 
 
 • **Fail** = ``-1``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### Reward
+### Reward <Score text="Reward" /> 
 
 • **Reward** = ``4``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### Success
+### Success <Score text="Success" /> 
 
 • **Success** = ``0``
 

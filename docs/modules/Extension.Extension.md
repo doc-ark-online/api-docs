@@ -1,6 +1,6 @@
 Extension
 
-# Extension <Badge type="tip" text="Namespace" />
+# Extension <Badge type="tip" text="Namespace" /> <Score text="Extension" />
 
 ## Table of contents
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / InputBox
 
-# InputBox <Badge type="tip" text="Class" />
+# InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
 **`Description`**
 
@@ -42,6 +42,36 @@ UI的输入框
 | **[textVerticalAlign](UI.InputBox.md#textverticalalign)**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <br> 获取字体垂直对齐方式|
 | **[underlineEnable](UI.InputBox.md#underlineenable)**(): `boolean` <br> 获取是否开启字体下划线|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[autoSizeEnable](UI.Widget.md#autosizeenable)**(): `boolean` <br> 获取是否自动设置大小|
+| **[cachedGeometry](UI.Widget.md#cachedgeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取上一次的GetTickSpaceGeometry|
+| **[constraints](UI.Widget.md#constraints)**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <br> 获取控件的布局|
+| **[desiredSize](UI.Widget.md#desiredsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取期望大小|
+| **[enable](UI.Widget.md#enable)**(): `boolean` <br> 是否可用|
+| **[guid](UI.Widget.md#guid)**(): `string` <br> 获取控件GUID|
+| **[isHovered](UI.Widget.md#ishovered)**(): `boolean` <br> 是否是hovered|
+| **[name](UI.Widget.md#name)**(): `string` <br> 获取名字|
+| **[paintSpaceGeometry](UI.Widget.md#paintspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于渲染Widget的几何信息|
+| **[parent](UI.Widget.md#parent)**(): [`Widget`](UI.Widget.md) <br> 获取父节点|
+| **[position](UI.Widget.md#position)**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <br> 获取控件的位置|
+| **[renderOpacity](UI.Widget.md#renderopacity)**(): `number` <br> 获取渲染透明度|
+| **[renderScale](UI.Widget.md#renderscale)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染缩放|
+| **[renderShear](UI.Widget.md#rendershear)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染错切形变|
+| **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
+| **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
+| **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
+| **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
+| **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
+| **[visible](UI.Widget.md#visible)**(): `boolean` <br> 是否可见|
+| **[zOrder](UI.Widget.md#zorder)**(): `number` <br> 获取zorder|
+:::
+
+
 | Methods |
 | :-----|
 | **[deFocus](UI.InputBox.md#defocus)**(): `void` <br> 设置输入框失焦状态，取消输入状态|
@@ -55,19 +85,26 @@ UI的输入框
 | **[setTextJustification](UI.InputBox.md#settextjustification)**([`TextJustify`](../enums/UI.TextJustify.md)): `void` <br> 设置输入框的对齐方式|
 | **[newObject](UI.InputBox.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`InputBox`](UI.InputBox.md) <br> 创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
+| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+:::
+
+
 ## Accessors
 
-### autoWrap
+### autoWrap <Score text="autoWrap" /> 
 
-• `get` **autoWrap**(): `boolean`
+• `get` **autoWrap**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否自动换行
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -75,15 +112,12 @@ UI的输入框
 
 是否自动换行
 
-• `set` **autoWrap**(`inAutoWrap`): `void`
+• `set` **autoWrap**(`inAutoWrap`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置自动换行
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -91,22 +125,16 @@ UI的输入框
 | :------ | :------ | :------ |
 | `inAutoWrap` | `boolean` | 是否自动换行 |
 
-#### Returns
-
-`void`
 
 
-### contentColor
+### contentColor <Score text="contentColor" /> 
 
-• `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体内容颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -114,15 +142,12 @@ UI的输入框
 
 字体内容颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **contentColor**(`inContentColor`): `void`
+• `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体内容颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -130,22 +155,16 @@ UI的输入框
 | :------ | :------ | :------ |
 | `inContentColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 
-### errorText
+### errorText <Score text="errorText" /> 
 
-• `get` **errorText**(): `string`
+• `get` **errorText**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取设置错误提示
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -153,15 +172,12 @@ UI的输入框
 
 错误提示
 
-• `set` **errorText**(`inText`): `void`
+• `set` **errorText**(`inText`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置错误提示
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -169,23 +185,17 @@ UI的输入框
 | :------ | :------ | :------ |
 | `inText` | `string` | 错误提示 |
 
-#### Returns
-
-`void`
 
 ___
 
-### fontColor
+### fontColor <Score text="fontColor" /> 
 
-• `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前的字体的颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -193,15 +203,12 @@ ___
 
 字体颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **fontColor**(`inColor`): `void`
+• `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置文本颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -209,23 +216,17 @@ ___
 | :------ | :------ | :------ |
 | `inColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### fontLetterSpace
+### fontLetterSpace <Score text="fontLetterSpace" /> 
 
-• `set` **fontLetterSpace**(`inLetterSpace`): `void`
+• `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体间距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -233,23 +234,17 @@ ___
 | :------ | :------ | :------ |
 | `inLetterSpace` | `number` | 字体间距 |
 
-#### Returns
-
-`void`
 
 ___
 
-### fontLitterSpace
+### fontLitterSpace <Score text="fontLitterSpace" /> 
 
-• `get` **fontLitterSpace**(): `number`
+• `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取体间距
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -259,17 +254,14 @@ ___
 
 ___
 
-### fontSize
+### fontSize <Score text="fontSize" /> 
 
-• `get` **fontSize**(): `number`
+• `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -277,15 +269,12 @@ ___
 
 字体大小
 
-• `set` **fontSize**(`inSize`): `void`
+• `set` **fontSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体大小
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -293,23 +282,17 @@ ___
 | :------ | :------ | :------ |
 | `inSize` | `number` | 字体大小 |
 
-#### Returns
-
-`void`
 
 ___
 
-### glyph
+### glyph <Score text="glyph" /> 
 
-• `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md)
+• `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体字形
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -317,15 +300,12 @@ ___
 
 字体字形
 
-• `set` **glyph**(`inGlyph`): `void`
+• `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体字形
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -333,22 +313,16 @@ ___
 | :------ | :------ | :------ |
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) | 设置的字体字形 |
 
-#### Returns
-
-`void`
 
 
-### hintString
+### hintString <Score text="hintString" /> 
 
-• `get` **hintString**(): `string`
+• `get` **hintString**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取提示文本内容
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -356,15 +330,12 @@ ___
 
 提示文本内容
 
-• `set` **hintString**(`inHintString`): `void`
+• `set` **hintString**(`inHintString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置提示内容
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -372,23 +343,17 @@ ___
 | :------ | :------ | :------ |
 | `inHintString` | `string` | 提示内容 |
 
-#### Returns
-
-`void`
 
 ___
 
-### inputTextLimit
+### inputTextLimit <Score text="inputTextLimit" /> 
 
-• `get` **inputTextLimit**(): [`InputTextLimit`](../enums/UI.InputTextLimit.md)
+• `get` **inputTextLimit**(): [`InputTextLimit`](../enums/UI.InputTextLimit.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取输入框的输入格式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -396,15 +361,12 @@ ___
 
 InputTextLimit { 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 }
 
-• `set` **inputTextLimit**(`inLimit`): `void`
+• `set` **inputTextLimit**(`inLimit`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 显示输入框的输入格式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -412,22 +374,16 @@ InputTextLimit { 无限制,限制为整数,限制为小数,限制为数字和字
 | :------ | :------ | :------ |
 | `inLimit` | [`InputTextLimit`](../enums/UI.InputTextLimit.md) | 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 |
 
-#### Returns
-
-`void`
 
 
-### onTextChanged
+### onTextChanged <Score text="onTextChanged" /> 
 
-• `get` **onTextChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`) => `void`\>
+• `get` **onTextChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 文本改变事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -437,17 +393,14 @@ InputTextLimit { 无限制,限制为整数,限制为小数,限制为数字和字
 
 ___
 
-### onTextCommitted
+### onTextCommitted <Score text="onTextCommitted" /> 
 
-• `get` **onTextCommitted**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/UI.TextCommit.md)) => `void`\>
+• `get` **onTextCommitted**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/UI.TextCommit.md)) => `void`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 文本提交事件
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -457,17 +410,14 @@ ___
 
 ___
 
-### outlineColor
+### outlineColor <Score text="outlineColor" /> 
 
-• `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体描边颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -475,15 +425,12 @@ ___
 
 字体描边颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **outlineColor**(`inOutlineColor`): `void`
+• `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体描边颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -491,23 +438,17 @@ ___
 | :------ | :------ | :------ |
 | `inOutlineColor` | [`LinearColor`](Type.LinearColor.md) | 描边颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### outlineSize
+### outlineSize <Score text="outlineSize" /> 
 
-• `get` **outlineSize**(): `number`
+• `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体描边宽度
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -515,15 +456,12 @@ ___
 
 字体描边宽度
 
-• `set` **outlineSize**(`inOutlineSize`): `void`
+• `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体描边宽度
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -531,22 +469,16 @@ ___
 | :------ | :------ | :------ |
 | `inOutlineSize` | `number` | 宽度 |
 
-#### Returns
-
-`void`
 
 
-### readOnlyEnable
+### readOnlyEnable <Score text="readOnlyEnable" /> 
 
-• `get` **readOnlyEnable**(): `boolean`
+• `get` **readOnlyEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取可读性
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -554,15 +486,12 @@ ___
 
 是否可读
 
-• `set` **readOnlyEnable**(`inValue`): `void`
+• `set` **readOnlyEnable**(`inValue`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置可读性
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -570,22 +499,16 @@ ___
 | :------ | :------ | :------ |
 | `inValue` | `boolean` | 可读性 |
 
-#### Returns
-
-`void`
 
 
-### shadowColor
+### shadowColor <Score text="shadowColor" /> 
 
-• `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md)
+• `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体阴影颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -593,15 +516,12 @@ ___
 
 字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **shadowColor**(`inShadowColor`): `void`
+• `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置阴影颜色
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -609,23 +529,17 @@ ___
 | :------ | :------ | :------ |
 | `inShadowColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
-#### Returns
-
-`void`
 
 ___
 
-### shadowOffset
+### shadowOffset <Score text="shadowOffset" /> 
 
-• `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md)
+• `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体阴影偏移
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -633,15 +547,12 @@ ___
 
 字体阴影偏移
 
-• `set` **shadowOffset**(`inOffset`): `void`
+• `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置阴影偏移
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -649,22 +560,16 @@ ___
 | :------ | :------ | :------ |
 | `inOffset` | [`Vector2`](Type.Vector2.md) | 偏移 |
 
-#### Returns
-
-`void`
 
 
-### strikethroughEnable
+### strikethroughEnable <Score text="strikethroughEnable" /> 
 
-• `get` **strikethroughEnable**(): `boolean`
+• `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否开启字体删除线
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -672,15 +577,12 @@ ___
 
 是否开启字体删除线
 
-• `set` **strikethroughEnable**(`inEnableStrikethrough`): `void`
+• `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否开启字体删除线
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -688,23 +590,17 @@ ___
 | :------ | :------ | :------ |
 | `inEnableStrikethrough` | `boolean` | 删除线 |
 
-#### Returns
-
-`void`
 
 ___
 
-### text
+### text <Score text="text" /> 
 
-• `get` **text**(): `string`
+• `get` **text**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取文本内容
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -712,15 +608,12 @@ ___
 
 文本内容
 
-• `set` **text**(`inText`): `void`
+• `set` **text**(`inText`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置文本内容
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -728,23 +621,17 @@ ___
 | :------ | :------ | :------ |
 | `inText` | `string` | 文本 |
 
-#### Returns
-
-`void`
 
 ___
 
-### textAlign
+### textAlign <Score text="textAlign" /> 
 
-• `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md)
+• `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体对齐方式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -752,15 +639,12 @@ ___
 
 字体对齐方式
 
-• `set` **textAlign**(`inTextJustify`): `void`
+• `set` **textAlign**(`inTextJustify`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体对齐方式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -768,21 +652,16 @@ ___
 | :------ | :------ | :------ |
 | `inTextJustify` | [`TextJustify`](../enums/UI.TextJustify.md) | 对齐方式 |
 
-#### Returns
-
-`void`
 
 ___
 
-### textHeight
+### textHeight <Score text="textHeight" /> 
 
-• `get` **textHeight**(): `number`
+• `get` **textHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)
-
-**`Effect`**
 
 只在客户端调用生效, 控件初始化完成后调用才准确生效，需要等待控件渲染完成
 
@@ -794,17 +673,14 @@ ___
 
 ___
 
-### textLengthLimit
+### textLengthLimit <Score text="textLengthLimit" /> 
 
-• `get` **textLengthLimit**(): `number`
+• `get` **textLengthLimit**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取输入框的字数限制,字数限制不适用与邮箱格式和密码格式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -812,15 +688,12 @@ ___
 
 获取输入框的字数限制
 
-• `set` **textLengthLimit**(`inTextLength`): `void`
+• `set` **textLengthLimit**(`inTextLength`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前输入框的字数限制
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -828,23 +701,17 @@ ___
 | :------ | :------ | :------ |
 | `inTextLength` | `number` | 字数限制 |
 
-#### Returns
-
-`void`
 
 ___
 
-### textSingleHeight
+### textSingleHeight <Score text="textSingleHeight" /> 
 
-• `get` **textSingleHeight**(): `number`
+• `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -854,17 +721,14 @@ ___
 
 ___
 
-### textVerticalAlign
+### textVerticalAlign <Score text="textVerticalAlign" /> 
 
-• `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md)
+• `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取字体垂直对齐方式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -872,15 +736,12 @@ ___
 
 字体垂直对齐方式
 
-• `set` **textVerticalAlign**(`inTextVerticalJustify`): `void`
+• `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置字体垂直对齐方式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -888,22 +749,16 @@ ___
 | :------ | :------ | :------ |
 | `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) | 对齐方式 |
 
-#### Returns
-
-`void`
 
 
-### underlineEnable
+### underlineEnable <Score text="underlineEnable" /> 
 
-• `get` **underlineEnable**(): `boolean`
+• `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否开启字体下划线
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -911,15 +766,12 @@ ___
 
 true:开启，false:关闭
 
-• `set` **underlineEnable**(`inEnableUnderline`): `void`
+• `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否开启字体下划线
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -927,58 +779,40 @@ true:开启，false:关闭
 | :------ | :------ | :------ |
 | `inEnableUnderline` | `boolean` | 下户线 |
 
-#### Returns
-
-`void`
 
 
 ## Methods
 
-### deFocus
+### deFocus <Score text="deFocus" /> 
 
-▸ **deFocus**(): `void`
+▸ **deFocus**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置输入框失焦状态，取消输入状态
 
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 
-### focus
 
-▸ **focus**(): `void`
+### focus <Score text="focus" /> 
+
+▸ **focus**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置输入框聚焦状态，进入可输入状态
 
-**`Effect`**
-
-只在客户端调用生效
-
-#### Returns
-
-`void`
 
 
-### setContentColorByHex
 
-▸ **setContentColorByHex**(`inHexString`): `void`
+### setContentColorByHex <Score text="setContentColorByHex" /> 
+
+▸ **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置输入框的内容颜色 指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -986,23 +820,17 @@ true:开启，false:关闭
 | :------ | :------ | :------ |
 | `inHexString` | `string` | Hex颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setContentColorDecimal
+### setContentColorDecimal <Score text="setContentColorDecimal" /> 
 
-▸ **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置输入框的内容颜色 指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1013,23 +841,17 @@ ___
 | `B` | `number` | 内容B值，数据范围0~255 |
 | `A` | `number` | 内容透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setFontColorByHex
+### setFontColorByHex <Score text="setFontColorByHex" /> 
 
-▸ **setFontColorByHex**(`inHexString`): `void`
+▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置文本颜色,指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1037,23 +859,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | Hex颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setFontColorDecimal
+### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
-▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置文本颜色,指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1064,23 +880,17 @@ ___
 | `B` | `number` | 文本B值，数据范围0~255 |
 | `A` | `number` | 文本透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShadowColorByHex
+### setShadowColorByHex <Score text="setShadowColorByHex" /> 
 
-▸ **setShadowColorByHex**(`inHexString`): `void`
+▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置阴影颜色,指定Hex的颜色文本设定颜色 #05050505
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1088,23 +898,17 @@ ___
 | :------ | :------ | :------ |
 | `inHexString` | `string` | Hex颜色字符串 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setShadowColorDecimal
+### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
-▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void`
+▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置阴影颜色,指定R、G、B、A设置颜色 0 ~255
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1115,23 +919,17 @@ ___
 | `B` | `number` | 阴影B值，数据范围0~255 |
 | `A` | `number` | 阴影透明度，数据范围0~255 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setTextJustification
+### setTextJustification <Score text="setTextJustification" /> 
 
-▸ **setTextJustification**(`inTextJustification`): `void`
+▸ **setTextJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置输入框的对齐方式
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -1139,23 +937,17 @@ ___
 | :------ | :------ | :------ |
 | `inTextJustification` | [`TextJustify`](../enums/UI.TextJustify.md) | 对齐方式 |
 
-#### Returns
-
-`void`
 
 ___
 
-### newObject
+### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md)
+▸ `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 

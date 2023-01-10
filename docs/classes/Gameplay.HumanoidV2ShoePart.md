@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2ShoePart
 
-# HumanoidV2ShoePart <Badge type="tip" text="Class" />
+# HumanoidV2ShoePart <Badge type="tip" text="Class" /> <Score text="HumanoidV2ShoePart" />
 
 **`Description`**
 
@@ -40,15 +40,13 @@
 
 ## Methods
 
-### getAreaCount
+### getAreaCount <Score text="getAreaCount" /> 
 
-▸ **getAreaCount**(): `number`
+▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取衣服区域数量
-
-**`Effect`**
 
 客户端生效
 
@@ -64,15 +62,13 @@
 
 ___
 
-### getColor
+### getColor <Score text="getColor" /> 
 
-▸ **getColor**(`areaIndex`): [`LinearColor`](Type.LinearColor.md)
+▸ **getColor**(`areaIndex`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -94,15 +90,13 @@ ___
 
 ___
 
-### getDesignAngle
+### getDesignAngle <Score text="getDesignAngle" /> 
 
-▸ **getDesignAngle**(`index`): `number`
+▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图案方向
-
-**`Effect`**
 
 客户端生效
 
@@ -124,15 +118,13 @@ ___
 
 ___
 
-### getDesignColor
+### getDesignColor <Score text="getDesignColor" /> 
 
-▸ **getDesignColor**(`index`): [`LinearColor`](Type.LinearColor.md)
+▸ **getDesignColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取图案颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -154,15 +146,13 @@ ___
 
 ___
 
-### getDesignTexture
+### getDesignTexture <Score text="getDesignTexture" /> 
 
-▸ **getDesignTexture**(`index`): `string`
+▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取衣服图案
-
-**`Effect`**
 
 客户端生效
 
@@ -176,7 +166,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -184,15 +174,13 @@ guid
 
 ___
 
-### getMesh
+### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string`
+▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取鞋子模型
-
-**`Effect`**
 
 双端
 
@@ -200,7 +188,7 @@ ___
 
 `string`
 
-模型Guid
+模型GUID
 
 #### Implementation of
 
@@ -208,15 +196,13 @@ ___
 
 ___
 
-### getPatternAngle
+### getPatternAngle <Score text="getPatternAngle" /> 
 
-▸ **getPatternAngle**(`index`): `number`
+▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取花纹旋转
-
-**`Effect`**
 
 客户端生效
 
@@ -238,15 +224,13 @@ ___
 
 ___
 
-### getPatternColor
+### getPatternColor <Score text="getPatternColor" /> 
 
-▸ **getPatternColor**(`index`): [`LinearColor`](Type.LinearColor.md)
+▸ **getPatternColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取花纹颜色
-
-**`Effect`**
 
 客户端生效
 
@@ -268,15 +252,13 @@ ___
 
 ___
 
-### getPatternHeight
+### getPatternHeight <Score text="getPatternHeight" /> 
 
-▸ **getPatternHeight**(`index`): `number`
+▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹纵向拉伸
-
-**`Effect`**
 
 客户端生效
 
@@ -298,15 +280,13 @@ ___
 
 ___
 
-### getPatternIntensity
+### getPatternIntensity <Score text="getPatternIntensity" /> 
 
-▸ **getPatternIntensity**(`index`): `number`
+▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取花纹显示程度
-
-**`Effect`**
 
 客户端生效
 
@@ -328,15 +308,13 @@ ___
 
 ___
 
-### getPatternWidth
+### getPatternWidth <Score text="getPatternWidth" /> 
 
-▸ **getPatternWidth**(`index`): `number`
+▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取花纹横向拉伸
-
-**`Effect`**
 
 客户端生效
 
@@ -358,15 +336,13 @@ ___
 
 ___
 
-### getTexture
+### getTexture <Score text="getTexture" /> 
 
-▸ **getTexture**(`index`): `string`
+▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取花纹
-
-**`Effect`**
 
 客户端生效
 
@@ -380,7 +356,7 @@ ___
 
 `string`
 
-guid
+GUID
 
 #### Implementation of
 
@@ -388,15 +364,13 @@ guid
 
 ___
 
-### setColor
+### setColor <Score text="setColor" /> 
 
-▸ **setColor**(`index`, `color`, `sync`): `void`
+▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -409,9 +383,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -419,15 +390,13 @@ sync = true:双端
 
 ___
 
-### setDesignAngle
+### setDesignAngle <Score text="setDesignAngle" /> 
 
-▸ **setDesignAngle**(`index`, `value`, `sync`): `void`
+▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图案方向
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -440,9 +409,6 @@ sync = true:双端
 | `value` | `number` | 角度 {Min:0,Max:360} |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -450,15 +416,13 @@ sync = true:双端
 
 ___
 
-### setDesignColor
+### setDesignColor <Score text="setDesignColor" /> 
 
-▸ **setDesignColor**(`index`, `color`, `sync`): `void`
+▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置图案颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -471,9 +435,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -481,15 +442,13 @@ sync = true:双端
 
 ___
 
-### setDesignTexture
+### setDesignTexture <Score text="setDesignTexture" /> 
 
-▸ **setDesignTexture**(`index`, `guid`, `sync`): `void`
+▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置衣服图案
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -499,12 +458,9 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -512,19 +468,19 @@ sync = true:双端
 
 ___
 
-### setMesh
+### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`guid`, `sync`): `void`
+▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置鞋子模型
 
-**`Precautions`**
+::: warning Precautions
 
-如果模型Guid没有预加载，则v2本地设置时异步的
+如果模型GUID没有预加载，则v2本地设置时异步的
 
-**`Effect`**
+:::
 
 sync = false:客户端;
 sync = true:双端
@@ -533,12 +489,9 @@ sync = true:双端
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` | 模型Guid |
+| `GUID` | `string` | 模型GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -546,15 +499,13 @@ sync = true:双端
 
 ___
 
-### setPatternAngle
+### setPatternAngle <Score text="setPatternAngle" /> 
 
-▸ **setPatternAngle**(`index`, `value`, `sync`): `void`
+▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹旋转
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -567,9 +518,6 @@ sync = true:双端
 | `value` | `number` | 角度 {Min:0,Max:360} |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -577,15 +525,13 @@ sync = true:双端
 
 ___
 
-### setPatternColor
+### setPatternColor <Score text="setPatternColor" /> 
 
-▸ **setPatternColor**(`index`, `color`, `sync`): `void`
+▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹颜色
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -598,9 +544,6 @@ sync = true:双端
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -608,15 +551,13 @@ sync = true:双端
 
 ___
 
-### setPatternHeight
+### setPatternHeight <Score text="setPatternHeight" /> 
 
-▸ **setPatternHeight**(`index`, `value`, `sync`): `void`
+▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹纵向拉伸
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -629,9 +570,6 @@ sync = true:双端
 | `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -639,15 +577,13 @@ sync = true:双端
 
 ___
 
-### setPatternIntensity
+### setPatternIntensity <Score text="setPatternIntensity" /> 
 
-▸ **setPatternIntensity**(`index`, `value`, `sync`): `void`
+▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹显示程度
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -660,9 +596,6 @@ sync = true:双端
 | `value` | `number` | 强度 {Min:0,Max:1} |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -670,15 +603,13 @@ sync = true:双端
 
 ___
 
-### setPatternWidth
+### setPatternWidth <Score text="setPatternWidth" /> 
 
-▸ **setPatternWidth**(`index`, `value`, `sync`): `void`
+▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹横向拉伸
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -691,9 +622,6 @@ sync = true:双端
 | `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 
@@ -701,15 +629,13 @@ sync = true:双端
 
 ___
 
-### setTexture
+### setTexture <Score text="setTexture" /> 
 
-▸ **setTexture**(`index`, `guid`, `sync`): `void`
+▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置花纹
-
-**`Effect`**
 
 sync = false:客户端;
 sync = true:双端
@@ -719,12 +645,9 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `guid` | `string` | 贴图Guid |
+| `GUID` | `string` | 贴图GUID |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
-#### Returns
-
-`void`
 
 #### Implementation of
 

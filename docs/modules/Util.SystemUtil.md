@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / SystemUtil
 
-# SystemUtil <Badge type="tip" text="Namespace" />
+# SystemUtil <Badge type="tip" text="Namespace" /> <Score text="SystemUtil" />
 
 ## Table of contents
 
@@ -28,45 +28,36 @@
 
 ## Variables
 
-### currentPlatform
+### currentPlatform <Score text="currentPlatform" /> 
 
-• `Const` **currentPlatform**: `string`
+• `Const` **currentPlatform**: `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判定当前程序的运行平台
 
-**`Effect`**
-
-调用端生效
 
 ___
 
-### isPIE
+### isPIE <Score text="isPIE" /> 
 
-• `Const` **isPIE**: `boolean`
+• `Const` **isPIE**: `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判定当前程序的运行环境是否为PIE
 
-**`Effect`**
-
-调用端生效
 
 ## Functions
 
-### getCurrentEnv
+### getCurrentEnv <Score text="getCurrentEnv" /> 
 
-▸ **getCurrentEnv**(): `string`
+▸ **getCurrentEnv**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前环境
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -76,17 +67,14 @@ ___
 
 ___
 
-### getDefaultGraphicsCPULevel
+### getDefaultGraphicsCPULevel <Score text="getDefaultGraphicsCPULevel" /> 
 
-▸ **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
+▸ **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取默认CPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -96,17 +84,14 @@ ___
 
 ___
 
-### getDefaultGraphicsGPULevel
+### getDefaultGraphicsGPULevel <Score text="getDefaultGraphicsGPULevel" /> 
 
-▸ **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
+▸ **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取默认GPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -116,17 +101,14 @@ ___
 
 ___
 
-### getEditorVersion
+### getEditorVersion <Score text="getEditorVersion" /> 
 
-▸ **getEditorVersion**(): `string`
+▸ **getEditorVersion**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取编辑器版本号
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -136,17 +118,14 @@ ___
 
 ___
 
-### getFullEditorVersion
+### getFullEditorVersion <Score text="getFullEditorVersion" /> 
 
-▸ **getFullEditorVersion**(): `string`
+▸ **getFullEditorVersion**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取完整编辑器版本号
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -156,17 +135,14 @@ ___
 
 ___
 
-### getGameId
+### getGameId <Score text="getGameId" /> 
 
-▸ **getGameId**(): `string`
+▸ **getGameId**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前游戏GameId
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -176,17 +152,14 @@ ___
 
 ___
 
-### getGraphicsCPULevel
+### getGraphicsCPULevel <Score text="getGraphicsCPULevel" /> 
 
-▸ **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
+▸ **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前CPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -196,17 +169,14 @@ ___
 
 ___
 
-### getGraphicsGPULevel
+### getGraphicsGPULevel <Score text="getGraphicsGPULevel" /> 
 
-▸ **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
+▸ **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前GPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -216,17 +186,14 @@ ___
 
 ___
 
-### getVersion
+### getVersion <Score text="getVersion" /> 
 
-▸ **getVersion**(): `string`
+▸ **getVersion**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取当前游戏版本
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -236,17 +203,14 @@ ___
 
 ___
 
-### isClient
+### isClient <Score text="isClient" /> 
 
-▸ **isClient**(): `boolean`
+▸ **isClient**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否客户端运行
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -256,17 +220,14 @@ ___
 
 ___
 
-### isMobile
+### isMobile <Score text="isMobile" /> 
 
-▸ **isMobile**(): `boolean`
+▸ **isMobile**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断当前是否是移动端
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -276,17 +237,14 @@ ___
 
 ___
 
-### isServer
+### isServer <Score text="isServer" /> 
 
-▸ **isServer**(): `boolean`
+▸ **isServer**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否服务器运行
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -296,17 +254,14 @@ ___
 
 ___
 
-### setGraphicsCPULevel
+### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
 
-▸ **setGraphicsCPULevel**(`CPULevel`): `void`
+▸ **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前CPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -314,23 +269,17 @@ ___
 | :------ | :------ | :------ |
 | `CPULevel` | [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) | CPU画质等级 |
 
-#### Returns
-
-`void`
 
 ___
 
-### setGraphicsGPULevel
+### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
 
-▸ **setGraphicsGPULevel**(`GPULevel`): `void`
+▸ **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前GPU画质等级
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -338,6 +287,3 @@ ___
 | :------ | :------ | :------ |
 | `GPULevel` | [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) | GPU画质等级 |
 
-#### Returns
-
-`void`

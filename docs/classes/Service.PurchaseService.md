@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / PurchaseService
 
-# PurchaseService <Badge type="tip" text="Class" />
+# PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 应用内购服务
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用instance获取对象
+
+:::
 
 ## Table of contents
 
@@ -27,21 +29,20 @@
 
 ## Accessors
 
-### onArkBalanceUpdated
+### onArkBalanceUpdated <Score text="onArkBalanceUpdated" /> 
 
-• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\>
+• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取Ark币余额更新的委托
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
+
+:::
 
 #### Returns
 
@@ -51,22 +52,21 @@ Ark币余额更新的委托
 
 ___
 
-### onOrderDelivered
+### onOrderDelivered <Score text="onOrderDelivered" /> 
 
-• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\>
+• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取订单发货的委托
 
-**`Effect`**
 
-只在服务端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 1. 只在支持IAP的233/Playza/口袋方舟内使用时生效
 2. 仅在服务端有效。暂未考虑单机模式，使用需谨慎
+
+:::
 
 #### Returns
 
@@ -76,43 +76,38 @@ ___
 
 ## Methods
 
-### getArkBalance
+### getArkBalance <Score text="getArkBalance" /> 
 
-▸ **getArkBalance**(): `void`
+▸ **getArkBalance**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取Ark币余额
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
 
-#### Returns
+:::
 
-`void`
 
 ___
 
-### placeOrder
+### placeOrder <Score text="placeOrder" /> 
 
-▸ **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void`
+▸ **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 下单指定数量的指定商品
 
-**`Effect`**
 
-只在客户端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
+
+:::
 
 #### Parameters
 
@@ -122,23 +117,17 @@ ___
 | `amount` | `number` |  数量 |
 | `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
 
-#### Returns
-
-`void`
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md)
+▸ `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取应用内购管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

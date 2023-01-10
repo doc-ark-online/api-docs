@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsAngularMotor
 
-# PhysicsAngularMotor <Badge type="tip" text="Class" />
+# PhysicsAngularMotor <Badge type="tip" text="Class" /> <Score text="PhysicsAngularMotor" />
 
 **`Description`**
 
@@ -20,22 +20,35 @@
 | **[torque](Gameplay.PhysicsAngularMotor.md#torque)**(): [`Vector`](Type.Vector.md) <br> 获取旋转最大速度|
 | **[torqueStrength](Gameplay.PhysicsAngularMotor.md#torquestrength)**(): `number` <br> 获取加速度|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[constraintTarget1](Gameplay.PhysicsConstraintBase.md#constrainttarget1)**(): `string` <br> 获取约束对象1|
+| **[constraintTarget2](Gameplay.PhysicsConstraintBase.md#constrainttarget2)**(): `string` <br> 获取约束对象2|
+:::
+
+
 | Methods |
 | :-----|
 
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+:::
+
+
 ## Accessors
 
-### enable
+### enable <Score text="enable" /> 
 
-• `get` **enable**(): `boolean`
+• `get` **enable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取激活状态
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -43,13 +56,11 @@
 
 激活状态
 
-• `set` **enable**(`EnableState`): `void`
+• `set` **enable**(`EnableState`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置激活状态
-
-**`Effect`**
 
 自动同步
 
@@ -59,22 +70,16 @@
 | :------ | :------ | :------ |
 | `EnableState` | `boolean` | 激活状态 |
 
-#### Returns
-
-`void`
 
 
-### torque
+### torque <Score text="torque" /> 
 
-• `get` **torque**(): [`Vector`](Type.Vector.md)
+• `get` **torque**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取旋转最大速度
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -82,13 +87,11 @@
 
 旋转最大速度
 
-• `set` **torque**(`vector`): `void`
+• `set` **torque**(`vector`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置旋转最大速度
-
-**`Effect`**
 
 自动同步
 
@@ -98,23 +101,17 @@
 | :------ | :------ | :------ |
 | `vector` | [`Vector`](Type.Vector.md) | 旋转最大速度 |
 
-#### Returns
-
-`void`
 
 ___
 
-### torqueStrength
+### torqueStrength <Score text="torqueStrength" /> 
 
-• `get` **torqueStrength**(): `number`
+• `get` **torqueStrength**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取加速度
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -122,15 +119,12 @@ ___
 
 加速度
 
-• `set` **torqueStrength**(`strength`): `void`
+• `set` **torqueStrength**(`strength`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置加速度
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -138,9 +132,6 @@ ___
 | :------ | :------ | :------ |
 | `strength` | `number` | 加速度 |
 
-#### Returns
-
-`void`
 
 
 ## Methods

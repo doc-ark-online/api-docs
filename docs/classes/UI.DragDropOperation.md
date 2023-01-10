@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / DragDropOperation
 
-# DragDropOperation <Badge type="tip" text="Class" />
+# DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 
 **`Description`**
 
@@ -22,17 +22,14 @@ UI 拖拽事件
 
 ## Methods
 
-### equal
+### equal <Score text="equal" /> 
 
-▸ **equal**(`other`): `boolean`
+▸ **equal**(`other`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 判断是否相同
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -48,17 +45,14 @@ boolean
 
 ___
 
-### getDragPivot
+### getDragPivot <Score text="getDragPivot" /> 
 
-▸ **getDragPivot**(): [`DragPivot`](../enums/UI.DragPivot.md)
+▸ **getDragPivot**(): [`DragPivot`](../enums/UI.DragPivot.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取拖拽锚点
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -68,17 +62,14 @@ ___
 
 ___
 
-### getDragVisualWidget
+### getDragVisualWidget <Score text="getDragVisualWidget" /> 
 
-▸ **getDragVisualWidget**(): [`Widget`](UI.Widget.md)
+▸ **getDragVisualWidget**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取拖拽显示的UI
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -88,17 +79,14 @@ ___
 
 ___
 
-### getOffset
+### getOffset <Score text="getOffset" /> 
 
-▸ **getOffset**(): [`Vector2`](Type.Vector2.md)
+▸ **getOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取拖拽UI的百分比偏移
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -108,17 +96,14 @@ ___
 
 ___
 
-### getTag
+### getTag <Score text="getTag" /> 
 
-▸ **getTag**(): `string`
+▸ **getTag**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取Tag 标签
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -128,17 +113,14 @@ ___
 
 ___
 
-### tryGetDragDropPayLoad
+### tryGetDragDropPayLoad <Score text="tryGetDragDropPayLoad" /> 
 
-▸ **tryGetDragDropPayLoad**(): [`DragDropPayLoad`](UI.DragDropPayLoad.md)
+▸ **tryGetDragDropPayLoad**(): [`DragDropPayLoad`](UI.DragDropPayLoad.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取传递的数据信息
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -148,17 +130,14 @@ ___
 
 ___
 
-### tryGetDragDropPayLoadAs
+### tryGetDragDropPayLoadAs <Score text="tryGetDragDropPayLoadAs" /> 
 
-▸ **tryGetDragDropPayLoadAs**<`T`\>(): `T`
+▸ **tryGetDragDropPayLoadAs**<`T`\>(): `T` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取传递的数据信息
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Type parameters
 

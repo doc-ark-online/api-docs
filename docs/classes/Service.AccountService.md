@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AccountService
 
-# AccountService <Badge type="tip" text="Class" />
+# AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
 **`Instance`**
 
@@ -8,9 +8,11 @@
 
 用户账号信息管理相关服务
 
-**`Precautions`**
+::: warning Precautions
 
 单例类，请使用getInstance获取对象
+
+:::
 
 ## Table of contents
 
@@ -32,15 +34,13 @@
 
 ## Methods
 
-### applySharedId
+### applySharedId <Score text="applySharedId" /> 
 
-▸ **applySharedId**(`character`, `id`, `callback`): `void`
+▸ **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 应用分享Id的角色数据
-
-**`Effect`**
 
 客户端调用
 
@@ -52,21 +52,16 @@
 | `id` | `string` | 分享Id |
 | `callback` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) |  回调参数，true:应用成功；false:应用失败 |
 
-#### Returns
-
-`void`
 
 ___
 
-### createSharedId
+### createSharedId <Score text="createSharedId" /> 
 
-▸ **createSharedId**(`character`, `callback`): `void`
+▸ **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 生成分享Id
-
-**`Effect`**
 
 客户端调用
 
@@ -77,21 +72,16 @@ ___
 | `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 分享换装数据的角色 |
 | `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) |  回调参数，返回生成的Id |
 
-#### Returns
-
-`void`
 
 ___
 
-### dataShowToOther
+### dataShowToOther <Score text="dataShowToOther" /> 
 
-▸ **dataShowToOther**(`index`, `isOpen`, `callback?`): `void`
+▸ **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置数据是否公开给其他用户
-
-**`Effect`**
 
 客户端
 
@@ -103,21 +93,16 @@ ___
 | `isOpen` | `boolean` | 是否公开 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | 设置是否成功的回调 default:无回调 |
 
-#### Returns
-
-`void`
 
 ___
 
-### downloadData
+### downloadData <Score text="downloadData" /> 
 
-▸ **downloadData**(`character`, `callback?`, `index?`): `void`
+▸ **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 下载角色形象并应用到当前角色身上
-
-**`Effect`**
 
 客户端调用
 
@@ -129,21 +114,16 @@ ___
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
 
-#### Returns
-
-`void`
 
 ___
 
-### downloadDefaultDataString
+### downloadDefaultDataString <Score text="downloadDefaultDataString" /> 
 
-▸ **downloadDefaultDataString**(`callback`): `void`
+▸ **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 下载默认角色数据
-
-**`Effect`**
 
 客户端调用
 
@@ -153,27 +133,24 @@ ___
 | :------ | :------ | :------ |
 | `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | 回调 |
 
-#### Returns
-
-`void`
 
 ___
 
-### fillAvatar
+### fillAvatar <Score text="fillAvatar" /> 
 
-▸ **fillAvatar**(`img`): `void`
+▸ **fillAvatar**(`img`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将头像赋值到Image变量上
 
-**`Effect`**
-
 客户端调用
 
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Parameters
 
@@ -181,27 +158,24 @@ ___
 | :------ | :------ | :------ |
 | `img` | [`Image`](UI.Image.md) | 需要赋值获得头像的Image变量 |
 
-#### Returns
-
-`void`
 
 ___
 
-### getNickName
+### getNickName <Score text="getNickName" /> 
 
-▸ **getNickName**(): `string`
+▸ **getNickName**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取玩家昵称
 
-**`Effect`**
-
 客户端调用
 
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Returns
 
@@ -211,21 +185,21 @@ ___
 
 ___
 
-### getOpenId
+### getOpenId <Score text="getOpenId" /> 
 
-▸ **getOpenId**(): `string`
+▸ **getOpenId**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取OpenId
 
-**`Effect`**
-
 客户端调用
 
-**`Precautions`**
+::: warning Precautions
 
 只在由233拉起生效
+
+:::
 
 #### Returns
 
@@ -235,15 +209,13 @@ OpenId
 
 ___
 
-### getUserData
+### getUserData <Score text="getUserData" /> 
 
-▸ **getUserData**(`userId`, `index`, `callback`): `void`
+▸ **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取用户存储在服务器上的角色形象数据
-
-**`Effect`**
 
 客户端调用
 
@@ -255,21 +227,16 @@ ___
 | `index` | `number` | 资源位(0-5) |
 | `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | 返回获取的数据string. |
 
-#### Returns
-
-`void`
 
 ___
 
-### getUserId
+### getUserId <Score text="getUserId" /> 
 
-▸ **getUserId**(): `string`
+▸ **getUserId**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取平台的用户Id,可以用于getUserData接口
-
-**`Effect`**
 
 客户端调用
 
@@ -281,15 +248,13 @@ ___
 
 ___
 
-### setUserData
+### setUserData <Score text="setUserData" /> 
 
-▸ **setUserData**(`character`, `dataString`, `callback?`): `void`
+▸ **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 将角色形象数据应用至角色
-
-**`Effect`**
 
 客户端调用
 
@@ -301,21 +266,16 @@ ___
 | `dataString` | `string` |  返回的数据 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | 设置是否成功的回调 default:无回调 |
 
-#### Returns
-
-`void`
 
 ___
 
-### uploadData
+### uploadData <Score text="uploadData" /> 
 
-▸ **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void`
+▸ **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
-
-**`Effect`**
 
 客户端调用
 
@@ -328,23 +288,17 @@ ___
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
 | `openStatus?` | `number` | 开发状态 default:1,默认是开放状态 |
 
-#### Returns
-
-`void`
 
 ___
 
-### getInstance
+### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`AccountService`](Service.AccountService.md)
+▸ `Static` **getInstance**(): [`AccountService`](Service.AccountService.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取用户账号信息管理器全局实例
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

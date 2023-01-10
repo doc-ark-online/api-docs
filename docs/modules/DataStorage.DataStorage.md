@@ -1,6 +1,6 @@
 DataStorage
 
-# DataStorage <Badge type="tip" text="Namespace" />
+# DataStorage <Badge type="tip" text="Namespace" /> <Score text="DataStorage" />
 
 ## Table of contents
 
@@ -21,17 +21,14 @@ DataStorage
 
 ## Functions
 
-### asyncGetCustomData
+### asyncGetCustomData <Score text="asyncGetCustomData" /> 
 
-▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\>
+▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步获取自定义数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -47,17 +44,14 @@ DataStorage
 
 ___
 
-### asyncGetPlayerData
+### asyncGetPlayerData <Score text="asyncGetPlayerData" /> 
 
-▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\>
+▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步获取玩家数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -73,17 +67,14 @@ ___
 
 ___
 
-### asyncRemoveCustomData
+### asyncRemoveCustomData <Score text="asyncRemoveCustomData" /> 
 
-▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
+▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步删除自定义数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -99,17 +90,14 @@ ___
 
 ___
 
-### asyncRemovePlayerData
+### asyncRemovePlayerData <Score text="asyncRemovePlayerData" /> 
 
-▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
+▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步删除用户数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -125,17 +113,14 @@ ___
 
 ___
 
-### asyncSetCustomData
+### asyncSetCustomData <Score text="asyncSetCustomData" /> 
 
-▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
+▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步设置自定义数据
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -152,21 +137,20 @@ ___
 
 ___
 
-### asyncSetPlayerData
+### asyncSetPlayerData <Score text="asyncSetPlayerData" /> 
 
-▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\>
+▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 **`Description`**
 
 异步设置自定义数据
 
-**`Effect`**
 
-只在服务端调用生效
-
-**`Precautions`**
+::: warning Precautions
 
 每个玩家在每一个游戏中允许最多存储16Kb的编码数据。超过此限制的任何数据都不能保证被存储。
+
+:::
 
 #### Parameters
 
@@ -183,17 +167,14 @@ ___
 
 ___
 
-### setTemporaryStorage
+### setTemporaryStorage <Score text="setTemporaryStorage" /> 
 
-▸ **setTemporaryStorage**(`isTemporary`): `void`
+▸ **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置数据存储环境是否是临时的
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 
@@ -201,23 +182,17 @@ ___
 | :------ | :------ | :------ |
 | `isTemporary` | `boolean` | true代表临时存储，数据在游戏服务器进程中，游戏退出时数据被删除。false为永久存储，数据存储在专用服务器，游戏退出时数据不会被删除。 |
 
-#### Returns
-
-`void`
 
 ___
 
-### sizeOfData
+### sizeOfData <Score text="sizeOfData" /> 
 
-▸ **sizeOfData**(`data`): `number`
+▸ **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 返回data的当前大小。单位为bytes（字节）。
 
-**`Effect`**
-
-只在服务端调用生效
 
 #### Parameters
 

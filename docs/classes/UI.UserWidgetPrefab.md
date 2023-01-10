@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UserWidgetPrefab
 
-# UserWidgetPrefab <Badge type="tip" text="Class" />
+# UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
 **`Description`**
 
@@ -17,8 +17,28 @@ ui预制体
 | Accessors |
 | :-----|
 
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[focusable](UI.UserWidget.md#focusable)**(): `boolean` <br> 获取是否响应键盘焦点事件|
+| **[rootContent](UI.UserWidget.md#rootcontent)**(): [`Canvas`](UI.Canvas.md) <br> 获取根Canvas|
+:::
+
+
 | Methods |
 | :-----|
+
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[addToViewport](UI.UserWidget.md#addtoviewport)**(`number`): `void` <br> 添加到屏幕上|
+| **[findChildByPath](UI.UserWidget.md#findchildbypath)**(`string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
+| **[removeRootContent](UI.UserWidget.md#removerootcontent)**(): `void` <br> 移除根Canvas,会销毁根Canvas，无法再次使用|
+| **[newObject](UI.UserWidget.md#newobject)**([`Canvas`](UI.Canvas.md)): [`UserWidget`](UI.UserWidget.md) <br> 创建 UserWidget 控件|
+:::
+
 
 ## Accessors
 

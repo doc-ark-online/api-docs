@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponLoadComponent
 
-# HotWeaponLoadComponent <Badge type="tip" text="Class" />
+# HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
 **`Description`**
 
@@ -27,7 +27,7 @@
 
 ## Properties
 
-### onEndLoadClient
+### onEndLoadClient <Score text="onEndLoadClient" /> 
 
 • **onEndLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -37,7 +37,7 @@
 
 ___
 
-### onEndLoadServer
+### onEndLoadServer <Score text="onEndLoadServer" /> 
 
 • **onEndLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -47,7 +47,7 @@ ___
 
 ___
 
-### onStartLoadClient
+### onStartLoadClient <Score text="onStartLoadClient" /> 
 
 • **onStartLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -57,7 +57,7 @@ ___
 
 ___
 
-### onStartLoadServer
+### onStartLoadServer <Score text="onStartLoadServer" /> 
 
 • **onStartLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -67,17 +67,14 @@ ___
 
 ## Accessors
 
-### animationGuid
+### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string`
+• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取绑定的动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -85,39 +82,30 @@ ___
 
 绑定的动画GUID
 
-• `set` **animationGuid**(`guid`): `void`
+• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置动画 GUID
 
-**`Effect`**
-
-客户端调用自动广播
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `guid` | `string` |  需要设置的蒙太奇动画 guid |
+| `GUID` | `string` |  需要设置的蒙太奇动画 GUID |
 
-#### Returns
-
-`void`
 
 ___
 
-### loadAfterFireEnable
+### loadAfterFireEnable <Score text="loadAfterFireEnable" /> 
 
-• `get` **loadAfterFireEnable**(): `boolean`
+• `get` **loadAfterFireEnable**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取是否开启开火后自动上膛的功能
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -125,19 +113,18 @@ ___
 
 是否开启开火后自动上膛的功能
 
-• `set` **loadAfterFireEnable**(`enable`): `void`
+• `set` **loadAfterFireEnable**(`enable`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置是否开启开火后自动上膛的功能
 
-**`Effect`**
 
-客户端调用自动广播
-
-**`Precautions`**
+::: warning Precautions
 
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -145,23 +132,17 @@ ___
 | :------ | :------ | :------ |
 | `enable` | `boolean` |  是否开启开火后自动上膛的功能 |
 
-#### Returns
-
-`void`
 
 ___
 
-### loadDuration
+### loadDuration <Score text="loadDuration" /> 
 
-• `get` **loadDuration**(): `number`
+• `get` **loadDuration**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取上膛时间
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 
@@ -169,13 +150,11 @@ ___
 
 上膛时间
 
-• `set` **loadDuration**(`time`): `void`
+• `set` **loadDuration**(`time`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置上膛时间
-
-**`Effect`**
 
 装备热武器前仅服务器调用，装备后双端都可调用
 
@@ -185,23 +164,17 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  上膛时间 |
 
-#### Returns
-
-`void`
 
 ## Methods
 
-### hadAnimationGuid
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-▸ **hadAnimationGuid**(): `boolean`
+▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 是否有动画GUID
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

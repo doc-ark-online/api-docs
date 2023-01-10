@@ -1,6 +1,6 @@
 [Extension](../modules/Extension.Extension.md) / ObjPool
 
-# ObjPool<T\> <Badge type="tip" text="Class" />
+# ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
 **`Description`**
 
@@ -26,7 +26,6 @@
 
 **`Effect`**
 
-调用端生效
 
 #### Type parameters
 
@@ -45,35 +44,26 @@
 
 ## Methods
 
-### clear
+### clear <Score text="clear" /> 
 
-▸ **clear**(): `void`
+▸ **clear**(): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 清除池中对象
 
-**`Effect`**
 
-调用端生效
-
-#### Returns
-
-`void`
 
 ___
 
-### despawn
+### despawn <Score text="despawn" /> 
 
-▸ **despawn**(`obj`): `void`
+▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 归还一个对象
 
-**`Effect`**
-
-调用端生效
 
 #### Parameters
 
@@ -81,23 +71,17 @@ ___
 | :------ | :------ | :------ |
 | `obj` | `T` |  对象 |
 
-#### Returns
-
-`void`
 
 ___
 
-### spawn
+### spawn <Score text="spawn" /> 
 
-▸ **spawn**(): `T`
+▸ **spawn**(): `T` <Badge type="tip" text="other" />
 
 **`Description`**
 
 生成一个对象
 
-**`Effect`**
-
-调用端生效
 
 #### Returns
 

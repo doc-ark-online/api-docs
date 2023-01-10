@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TabGroup
 
-# TabGroup<T\> <Badge type="tip" text="Class" />
+# TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
 **`Description`**
 
@@ -40,17 +40,14 @@
 
 ## Accessors
 
-### currentIndex
+### currentIndex <Score text="currentIndex" /> 
 
-• `get` **currentIndex**(): `number`
+• `get` **currentIndex**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 当前选择的标签索引
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -60,17 +57,14 @@
 
 ## Methods
 
-### init
+### init <Score text="init" /> 
 
-▸ **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void`
+▸ **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 初始化
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -81,23 +75,17 @@
 | `thisArg` | `any` | 域 |
 | `defaultIndex?` | `number` | 默认选择的标签索引 default:0 |
 
-#### Returns
-
-`void`
 
 ___
 
-### select
+### select <Score text="select" /> 
 
-▸ **select**(`index`, `ignoreSame?`): `boolean`
+▸ **select**(`index`, `ignoreSame?`): `boolean` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置当前的标签
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -114,17 +102,14 @@ ___
 
 ___
 
-### setSelectableChecker
+### setSelectableChecker <Score text="setSelectableChecker" /> 
 
-▸ **setSelectableChecker**(`selectChecker`, `thisArg`): `void`
+▸ **setSelectableChecker**(`selectChecker`, `thisArg`): `void` <Badge type="tip" text="other" />
 
 **`Description`**
 
 设置该标签是否可以切换的检测方法
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Parameters
 
@@ -133,6 +118,3 @@ ___
 | `selectChecker` | (`index`: `number`) => `boolean` | 判断方法 |
 | `thisArg` | `any` | 域 |
 
-#### Returns
-
-`void`

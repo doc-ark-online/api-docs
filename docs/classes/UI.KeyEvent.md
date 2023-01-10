@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / KeyEvent
 
-# KeyEvent <Badge type="tip" text="Class" />
+# KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
 **`Description`**
 
@@ -20,17 +20,14 @@
 
 ## Methods
 
-### getKey
+### getKey <Score text="getKey" /> 
 
-▸ **getKey**(): [`KeyEvent`](UI.KeyEvent.md)
+▸ **getKey**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取按下的键
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -40,17 +37,14 @@
 
 ___
 
-### getUserIndex
+### getUserIndex <Score text="getUserIndex" /> 
 
-▸ **getUserIndex**(): `number`
+▸ **getUserIndex**(): `number` <Badge type="tip" text="other" />
 
 **`Description`**
 
 获取事件触发玩家index
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 
@@ -60,17 +54,14 @@ ___
 
 ___
 
-### toInputEvent
+### toInputEvent <Score text="toInputEvent" /> 
 
-▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md)
+▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 
 **`Description`**
 
 转化为 InputEvent*
 
-**`Effect`**
-
-只在客户端调用生效
 
 #### Returns
 

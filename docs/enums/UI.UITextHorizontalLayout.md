@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UITextHorizontalLayout
 
-# UITextHorizontalLayout <Badge type="tip" text="Enumeration" />
+# UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### AutoWarpText
+### AutoWarpText <Score text="AutoWarpText" /> 
 
 • **AutoWarpText** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Clipping
+### Clipping <Score text="Clipping" /> 
 
 • **Clipping** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### NoClipping
+### NoClipping <Score text="NoClipping" /> 
 
 • **NoClipping** = ``2``
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateColorStylingMode
 
-# SlateColorStylingMode <Badge type="tip" text="Enumeration" />
+# SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@ UI颜色应用模式
 
 ## Enumeration Members
 
-### UseColorForeground
+### UseColorForeground <Score text="UseColorForeground" /> 
 
 • **UseColorForeground** = ``2``
 
@@ -25,7 +25,7 @@ UI颜色应用模式
 
 ___
 
-### UseColorForegroundSubdued
+### UseColorForegroundSubdued <Score text="UseColorForegroundSubdued" /> 
 
 • **UseColorForegroundSubdued** = ``3``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### UseColorSpecified
+### UseColorSpecified <Score text="UseColorSpecified" /> 
 
 • **UseColorSpecified** = ``0``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### UseColorSpecifiedLink
+### UseColorSpecifiedLink <Score text="UseColorSpecifiedLink" /> 
 
 • **UseColorSpecifiedLink** = ``1``
 
