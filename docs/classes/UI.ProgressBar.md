@@ -457,7 +457,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inType` | [`ProgressBarFillType`](../enums/UI.ProgressBarFillType.md) | { 从左到右,从右到左,从上到下,从下到上 } |
+| `inType` | [`ProgressBarFillType`](../enums/UI.ProgressBarFillType.md) | `{ 从左到右,从右到左,从上到下,从下到上 }` |
 
 
 void

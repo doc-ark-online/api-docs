@@ -149,7 +149,7 @@ ___
 
 ::: warning Precautions
 
-不能添加空枚举 如 export enum test {},会影响数据还原
+不能添加空枚举 如 export enum test `{}`,会影响数据还原
 
 :::
 

@@ -12,7 +12,7 @@
 | :-----|
 | **[clipboardCopy](Util.StringUtil.md#clipboardcopy)**(`string`): `void` <br> 文本复制，将字符串复制到剪切板|
 | **[clipboardPaste](Util.StringUtil.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
-| **[format](Util.StringUtil.md#format)**(`string`, `any`[]): `string` <br> 将{i}中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[format](Util.StringUtil.md#format)**(`string`, `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
 | **[isEmpty](Util.StringUtil.md#isempty)**(`string`): `boolean` <br> 判断字符串是否为空(null或"")|
 
 ## Functions
@@ -58,7 +58,7 @@ ___
 
 **`Description`**
 
-将{i}中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
+将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
 
 **`Example`**

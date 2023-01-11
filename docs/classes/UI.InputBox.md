@@ -359,7 +359,7 @@ ___
 
 [`InputTextLimit`](../enums/UI.InputTextLimit.md)
 
-InputTextLimit { 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 }
+InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 }`
 
 • `set` **inputTextLimit**(`inLimit`): `void` <Badge type="tip" text="other" />
 

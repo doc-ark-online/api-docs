@@ -66,7 +66,7 @@ provide('onContentUpdated', onContentUpdated)
       <div class="content">
         <div class="content-container">
           <slot name="doc-before" />
-          <div v-if="hasEditLink" class="edit-link">
+          <div v-if="hasEditLink" class="edit-link" style="z-index: 100">
             <VPLink
               @click="githubHandler"
               class="edit-link-button"

@@ -70,7 +70,7 @@
 | **[cancelCameraLockTarget](Gameplay.CameraSystem.md#cancelcameralocktarget)**(): `void` <br> 取消锁定物体|
 | **[getCurrentSettings](Gameplay.CameraSystem.md#getcurrentsettings)**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <br> 获取当前的摄像机系统数据|
 | **[getDefaultCameraShakeData](Gameplay.CameraSystem.md#getdefaultcamerashakedata)**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <br> 获取默认的摄像机震动数据|
-| **[moveByPath](Gameplay.CameraSystem.md#movebypath)**({ `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }[], () => `void`): `void` <br> 镜头移动|
+| **[moveByPath](Gameplay.CameraSystem.md#movebypath)**(`{ `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }`[], () => `void`): `void` <br> 镜头移动|
 | **[resetOverrideCameraRotation](Gameplay.CameraSystem.md#resetoverridecamerarotation)**(): `void` <br> 取消旋转覆盖|
 | **[screenShock](Gameplay.CameraSystem.md#screenshock)**(`number`, `number`, `number`): `void` <br> 震屏|
 | **[setCameraFollowTarget](Gameplay.CameraSystem.md#setcamerafollowtarget)**(`GameObject`): `void` <br> 相机跟随物体|
@@ -1254,7 +1254,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `path` | { `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }[] | 路径数据 |
+| `path` | `{ `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }`[] | 路径数据 |
 | `completeCallback` | () => `void` | 完成回调 |
 
 

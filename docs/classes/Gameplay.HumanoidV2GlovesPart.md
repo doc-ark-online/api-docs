@@ -406,7 +406,7 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `value` | `number` | 角度 {Min:0,Max:360} |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 
@@ -515,7 +515,7 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `value` | `number` | 角度 {Min:0,Max:360} |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 
@@ -567,7 +567,7 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 
@@ -593,7 +593,7 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `value` | `number` | 强度 {Min:0,Max:1} |
+| `value` | `number` | 强度 `{Min:0,Max:1}` |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 
@@ -619,7 +619,7 @@ sync = true:双端
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
-| `value` | `number` | 拉伸比例 {Min:0.01,Max:100} |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
 | `sync` | `boolean` | true 同步; false 不同步 |
 
 
