@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TouchPad
 
-# TouchPad <Badge type="tip" text="Class" /> 
+# TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
 **`Description`**
 
@@ -65,7 +65,7 @@
 
 ## Accessors
 
-### controlByMouseEnable  
+### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
 • `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -95,7 +95,7 @@
 
 
 
-### inputScale  
+### inputScale <Score text="inputScale" /> 
 
 • `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -127,7 +127,7 @@
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
 

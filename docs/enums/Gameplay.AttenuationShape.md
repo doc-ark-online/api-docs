@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationShape
 
-# AttenuationShape <Badge type="tip" text="Enumeration" /> 
+# AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Box  
+### Box <Score text="Box" /> 
 
 • **Box** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Capsule  
+### Capsule <Score text="Capsule" /> 
 
 • **Capsule** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Sphere  
+### Sphere <Score text="Sphere" /> 
 
 • **Sphere** = ``0``
 

@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / StringUtil
 
-# StringUtil <Badge type="tip" text="Namespace" /> 
+# StringUtil <Badge type="tip" text="Namespace" /> <Score text="StringUtil" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Functions
 
-### clipboardCopy  
+### clipboardCopy <Score text="clipboardCopy" /> 
 
 ▸ **clipboardCopy**(`text`): `void` <Badge type="tip" text="other" />
 
@@ -35,7 +35,7 @@
 
 ___
 
-### clipboardPaste  
+### clipboardPaste <Score text="clipboardPaste" /> 
 
 ▸ **clipboardPaste**(): `string` <Badge type="tip" text="other" />
 
@@ -52,7 +52,7 @@ ___
 
 ___
 
-### format  
+### format <Score text="format" /> 
 
 ▸ **format**(`str`, `...param`): `string`
 
@@ -84,7 +84,7 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!"); 
 
 ___
 
-### isEmpty  
+### isEmpty <Score text="isEmpty" /> 
 
 ▸ **isEmpty**(`str`): `boolean` <Badge type="tip" text="other" />
 

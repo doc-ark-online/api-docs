@@ -1,6 +1,6 @@
 DataStorage
 
-# DataStorage <Badge type="tip" text="Namespace" /> 
+# DataStorage <Badge type="tip" text="Namespace" /> <Score text="DataStorage" />
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ DataStorage
 
 ## Functions
 
-### asyncGetCustomData  
+### asyncGetCustomData <Score text="asyncGetCustomData" /> 
 
 ▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
@@ -44,7 +44,7 @@ DataStorage
 
 ___
 
-### asyncGetPlayerData  
+### asyncGetPlayerData <Score text="asyncGetPlayerData" /> 
 
 ▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
@@ -67,7 +67,7 @@ ___
 
 ___
 
-### asyncRemoveCustomData  
+### asyncRemoveCustomData <Score text="asyncRemoveCustomData" /> 
 
 ▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
@@ -90,7 +90,7 @@ ___
 
 ___
 
-### asyncRemovePlayerData  
+### asyncRemovePlayerData <Score text="asyncRemovePlayerData" /> 
 
 ▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
@@ -113,7 +113,7 @@ ___
 
 ___
 
-### asyncSetCustomData  
+### asyncSetCustomData <Score text="asyncSetCustomData" /> 
 
 ▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### asyncSetPlayerData  
+### asyncSetPlayerData <Score text="asyncSetPlayerData" /> 
 
 ▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
@@ -167,7 +167,7 @@ ___
 
 ___
 
-### setTemporaryStorage  
+### setTemporaryStorage <Score text="setTemporaryStorage" /> 
 
 ▸ **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
 
@@ -185,7 +185,7 @@ ___
 
 ___
 
-### sizeOfData  
+### sizeOfData <Score text="sizeOfData" /> 
 
 ▸ **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
 

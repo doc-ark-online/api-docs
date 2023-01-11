@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / VehicleDriveMode4W
 
-# VehicleDriveMode4W <Badge type="tip" text="Enumeration" /> 
+# VehicleDriveMode4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4W" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### FourDrive  
+### FourDrive <Score text="FourDrive" /> 
 
 • **FourDrive** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### FrontDrive  
+### FrontDrive <Score text="FrontDrive" /> 
 
 • **FrontDrive** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### RearDrive  
+### RearDrive <Score text="RearDrive" /> 
 
 • **RearDrive** = ``2``
 

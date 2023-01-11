@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkyBox
 
-# SkyBox <Badge type="tip" text="Class" /> 
+# SkyBox <Badge type="tip" text="Class" /> <Score text="SkyBox" />
 
 **`Description`**
 
@@ -138,7 +138,7 @@
 
 ## Accessors
 
-### cloudDensity  
+### cloudDensity <Score text="cloudDensity" /> 
 
 • `get` **cloudDensity**(): `number` <Badge type="tip" text="other" />
 
@@ -171,7 +171,7 @@
 
 ___
 
-### cloudEnable  
+### cloudEnable <Score text="cloudEnable" /> 
 
 • `set` **cloudEnable**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -190,7 +190,7 @@ ___
 
 ___
 
-### cloudEnabled  
+### cloudEnabled <Score text="cloudEnabled" /> 
 
 • `get` **cloudEnabled**(): `boolean` <Badge type="tip" text="other" />
 
@@ -208,7 +208,7 @@ ___
 
 ___
 
-### cloudOpacity  
+### cloudOpacity <Score text="cloudOpacity" /> 
 
 • `get` **cloudOpacity**(): `number` <Badge type="tip" text="other" />
 
@@ -241,7 +241,7 @@ ___
 
 ___
 
-### cloudSpeed  
+### cloudSpeed <Score text="cloudSpeed" /> 
 
 • `get` **cloudSpeed**(): `number` <Badge type="tip" text="other" />
 
@@ -274,7 +274,7 @@ ___
 
 ___
 
-### cloudTextureAssetByID  
+### cloudTextureAssetByID <Score text="cloudTextureAssetByID" /> 
 
 • `set` **cloudTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -293,7 +293,7 @@ ___
 
 ___
 
-### cloudTint  
+### cloudTint <Score text="cloudTint" /> 
 
 • `get` **cloudTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -325,7 +325,7 @@ ___
 
 
 
-### moonEnable  
+### moonEnable <Score text="moonEnable" /> 
 
 • `get` **moonEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -358,7 +358,7 @@ ___
 
 ___
 
-### moonIntensity  
+### moonIntensity <Score text="moonIntensity" /> 
 
 • `get` **moonIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -391,7 +391,7 @@ ___
 
 ___
 
-### moonSize  
+### moonSize <Score text="moonSize" /> 
 
 • `get` **moonSize**(): `number` <Badge type="tip" text="other" />
 
@@ -424,7 +424,7 @@ ___
 
 ___
 
-### moonTextureAssetByID  
+### moonTextureAssetByID <Score text="moonTextureAssetByID" /> 
 
 • `set` **moonTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -443,7 +443,7 @@ ___
 
 ___
 
-### moonTint  
+### moonTint <Score text="moonTint" /> 
 
 • `get` **moonTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -475,7 +475,7 @@ ___
 
 
 
-### skyDomeBotTint  
+### skyDomeBotTint <Score text="skyDomeBotTint" /> 
 
 • `get` **skyDomeBotTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -508,7 +508,7 @@ ___
 
 ___
 
-### skyDomeGradientEnable  
+### skyDomeGradientEnable <Score text="skyDomeGradientEnable" /> 
 
 • `get` **skyDomeGradientEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -541,7 +541,7 @@ ___
 
 ___
 
-### skyDomeHorizontalFallOff  
+### skyDomeHorizontalFallOff <Score text="skyDomeHorizontalFallOff" /> 
 
 • `get` **skyDomeHorizontalFallOff**(): `number` <Badge type="tip" text="other" />
 
@@ -574,7 +574,7 @@ ___
 
 ___
 
-### skyDomeHorizontalTint  
+### skyDomeHorizontalTint <Score text="skyDomeHorizontalTint" /> 
 
 • `get` **skyDomeHorizontalTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -607,7 +607,7 @@ ___
 
 ___
 
-### skyDomeIntensity  
+### skyDomeIntensity <Score text="skyDomeIntensity" /> 
 
 • `get` **skyDomeIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -640,7 +640,7 @@ ___
 
 ___
 
-### skyDomeTextureAssetByID  
+### skyDomeTextureAssetByID <Score text="skyDomeTextureAssetByID" /> 
 
 • `set` **skyDomeTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -659,7 +659,7 @@ ___
 
 ___
 
-### skyDomeTint  
+### skyDomeTint <Score text="skyDomeTint" /> 
 
 • `get` **skyDomeTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -692,7 +692,7 @@ ___
 
 ___
 
-### skyDomeTopTint  
+### skyDomeTopTint <Score text="skyDomeTopTint" /> 
 
 • `get` **skyDomeTopTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -725,7 +725,7 @@ ___
 
 ___
 
-### skyPreset  
+### skyPreset <Score text="skyPreset" /> 
 
 • `get` **skyPreset**(): `number` <Badge type="tip" text="other" />
 
@@ -758,7 +758,7 @@ ___
 
 ___
 
-### starEnable  
+### starEnable <Score text="starEnable" /> 
 
 • `get` **starEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -791,7 +791,7 @@ ___
 
 ___
 
-### starIntensity  
+### starIntensity <Score text="starIntensity" /> 
 
 • `get` **starIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -824,7 +824,7 @@ ___
 
 ___
 
-### starTextureAssetByID  
+### starTextureAssetByID <Score text="starTextureAssetByID" /> 
 
 • `set` **starTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -843,7 +843,7 @@ ___
 
 ___
 
-### starTiling  
+### starTiling <Score text="starTiling" /> 
 
 • `get` **starTiling**(): `number` <Badge type="tip" text="other" />
 
@@ -875,7 +875,7 @@ ___
 
 
 
-### sunEnable  
+### sunEnable <Score text="sunEnable" /> 
 
 • `get` **sunEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -908,7 +908,7 @@ ___
 
 ___
 
-### sunIntensity  
+### sunIntensity <Score text="sunIntensity" /> 
 
 • `get` **sunIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -941,7 +941,7 @@ ___
 
 ___
 
-### sunSize  
+### sunSize <Score text="sunSize" /> 
 
 • `get` **sunSize**(): `number` <Badge type="tip" text="other" />
 
@@ -974,7 +974,7 @@ ___
 
 ___
 
-### sunTextureAssetByID  
+### sunTextureAssetByID <Score text="sunTextureAssetByID" /> 
 
 • `set` **sunTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -993,7 +993,7 @@ ___
 
 ___
 
-### sunTint  
+### sunTint <Score text="sunTint" /> 
 
 • `get` **sunTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -1027,7 +1027,7 @@ ___
 
 ## Methods
 
-### refresh  
+### refresh <Score text="refresh" /> 
 
 ▸ **refresh**(): `void` <Badge type="tip" text="other" />
 
@@ -1040,7 +1040,7 @@ ___
 
 ___
 
-### reset  
+### reset <Score text="reset" /> 
 
 ▸ **reset**(): `void` <Badge type="tip" text="other" />
 

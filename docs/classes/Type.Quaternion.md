@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Quaternion
 
-# Quaternion <Badge type="tip" text="Class" /> 
+# Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 
 **`Description`**
 
@@ -88,7 +88,7 @@
 
 ## Properties
 
-### w  
+### w <Score text="w" /> 
 
 • **w**: `number`
 
@@ -98,7 +98,7 @@ w 分量。
 
 ___
 
-### x  
+### x <Score text="x" /> 
 
 • **x**: `number`
 
@@ -108,7 +108,7 @@ x 分量。
 
 ___
 
-### y  
+### y <Score text="y" /> 
 
 • **y**: `number`
 
@@ -118,7 +118,7 @@ y 分量。
 
 ___
 
-### z  
+### z <Score text="z" /> 
 
 • **z**: `number`
 
@@ -128,7 +128,7 @@ z 分量。
 
 ___
 
-### halfToRad  
+### halfToRad <Score text="halfToRad" /> 
 
 ▪ `Static` `Private` **halfToRad**: `any`
 
@@ -138,7 +138,7 @@ ___
 
 ## Accessors
 
-### conjugated  
+### conjugated <Score text="conjugated" /> 
 
 • `get` **conjugated**(): [`Quaternion`](Type.Quaternion.md)
 
@@ -152,7 +152,7 @@ ___
 
 ___
 
-### inverted  
+### inverted <Score text="inverted" /> 
 
 • `get` **inverted**(): [`Quaternion`](Type.Quaternion.md)
 
@@ -166,7 +166,7 @@ ___
 
 ___
 
-### length  
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
 
@@ -180,7 +180,7 @@ ___
 
 ___
 
-### normalized  
+### normalized <Score text="normalized" /> 
 
 • `get` **normalized**(): [`Quaternion`](Type.Quaternion.md)
 
@@ -194,7 +194,7 @@ ___
 
 ___
 
-### sqrLength  
+### sqrLength <Score text="sqrLength" /> 
 
 • `get` **sqrLength**(): `number`
 
@@ -208,7 +208,7 @@ ___
 
 ___
 
-### identity  
+### identity <Score text="identity" /> 
 
 • `Static` `get` **identity**(): [`Quaternion`](Type.Quaternion.md)
 
@@ -228,7 +228,7 @@ Quaternion(0,0,0,1)
 
 ## Methods
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -245,7 +245,7 @@ Quaternion(0,0,0,1)
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -269,7 +269,7 @@ ___
 
 ___
 
-### fromRotation  
+### fromRotation <Score text="fromRotation" /> 
 
 ▸ **fromRotation**(`v`): `void` <Badge type="tip" text="other" />
 
@@ -287,7 +287,7 @@ ___
 
 ___
 
-### getAxisX  
+### getAxisX <Score text="getAxisX" /> 
 
 ▸ **getAxisX**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -316,7 +316,7 @@ ___
 
 ___
 
-### getAxisY  
+### getAxisY <Score text="getAxisY" /> 
 
 ▸ **getAxisY**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### getAxisZ  
+### getAxisZ <Score text="getAxisZ" /> 
 
 ▸ **getAxisZ**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -374,7 +374,7 @@ ___
 
 ___
 
-### getEuler  
+### getEuler <Score text="getEuler" /> 
 
 ▸ **getEuler**(`outerZ?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -404,7 +404,7 @@ ___
 
 ___
 
-### getEulerAngles  
+### getEulerAngles <Score text="getEulerAngles" /> 
 
 ▸ **getEulerAngles**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -421,7 +421,7 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ **normalize**(): `void` <Badge type="tip" text="other" />
 
@@ -433,7 +433,7 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ **set**(`other`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -478,7 +478,7 @@ ___
 
 ___
 
-### setEulerAngles  
+### setEulerAngles <Score text="setEulerAngles" /> 
 
 ▸ **setEulerAngles**(`euler`): `void` <Badge type="tip" text="other" />
 
@@ -496,7 +496,7 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -519,7 +519,7 @@ ___
 
 ___
 
-### toRotation  
+### toRotation <Score text="toRotation" /> 
 
 ▸ **toRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -536,7 +536,7 @@ ___
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -553,7 +553,7 @@ ___
 
 ___
 
-### calculateW  
+### calculateW <Score text="calculateW" /> 
 
 ▸ `Static` **calculateW**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -583,7 +583,7 @@ ___
 
 ___
 
-### conjugate  
+### conjugate <Score text="conjugate" /> 
 
 ▸ `Static` **conjugate**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -613,7 +613,7 @@ ___
 
 ___
 
-### dot  
+### dot <Score text="dot" /> 
 
 ▸ `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -637,7 +637,7 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -662,7 +662,7 @@ ___
 
 ___
 
-### fromAngleZ  
+### fromAngleZ <Score text="fromAngleZ" /> 
 
 ▸ `Static` **fromAngleZ**(`z`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -692,7 +692,7 @@ ___
 
 ___
 
-### fromAxes  
+### fromAxes <Score text="fromAxes" /> 
 
 ▸ `Static` **fromAxes**(`xAxis`, `yAxis`, `zAxis`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -724,7 +724,7 @@ ___
 
 ___
 
-### fromAxisAngle  
+### fromAxisAngle <Score text="fromAxisAngle" /> 
 
 ▸ `Static` **fromAxisAngle**(`axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -755,7 +755,7 @@ ___
 
 ___
 
-### fromMatrix3x3  
+### fromMatrix3x3 <Score text="fromMatrix" /> 
 
 ▸ `Static` **fromMatrix3x3**(`m`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -785,7 +785,7 @@ ___
 
 ___
 
-### fromRotation  
+### fromRotation <Score text="fromRotation" /> 
 
 ▸ `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -815,7 +815,7 @@ ___
 
 ___
 
-### fromViewUp  
+### fromViewUp <Score text="fromViewUp" /> 
 
 ▸ `Static` **fromViewUp**(`view`, `up?`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -846,7 +846,7 @@ ___
 
 ___
 
-### getAxis  
+### getAxis <Score text="getAxis" /> 
 
 ▸ `Static` **getAxis**(`q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -876,7 +876,7 @@ ___
 
 ___
 
-### getAxisAngle  
+### getAxisAngle <Score text="getAxisAngle" /> 
 
 ▸ `Static` **getAxisAngle**(`q`): `number` <Badge type="tip" text="other" />
 
@@ -899,7 +899,7 @@ ___
 
 ___
 
-### invert  
+### invert <Score text="invert" /> 
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -929,7 +929,7 @@ ___
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -961,7 +961,7 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -992,7 +992,7 @@ ___
 
 ___
 
-### multiplyVector  
+### multiplyVector <Score text="multiplyVector" /> 
 
 ▸ `Static` **multiplyVector**(`a`, `q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1023,7 +1023,7 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ `Static` **normalize**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1053,7 +1053,7 @@ ___
 
 ___
 
-### rotateAround  
+### rotateAround <Score text="rotateAround" /> 
 
 ▸ `Static` **rotateAround**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1085,7 +1085,7 @@ ___
 
 ___
 
-### rotateAroundLocal  
+### rotateAroundLocal <Score text="rotateAroundLocal" /> 
 
 ▸ `Static` **rotateAroundLocal**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1117,7 +1117,7 @@ ___
 
 ___
 
-### rotateX  
+### rotateX <Score text="rotateX" /> 
 
 ▸ `Static` **rotateX**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1148,7 +1148,7 @@ ___
 
 ___
 
-### rotateY  
+### rotateY <Score text="rotateY" /> 
 
 ▸ `Static` **rotateY**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1179,7 +1179,7 @@ ___
 
 ___
 
-### rotateZ  
+### rotateZ <Score text="rotateZ" /> 
 
 ▸ `Static` **rotateZ**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1210,7 +1210,7 @@ ___
 
 ___
 
-### rotationTo  
+### rotationTo <Score text="rotationTo" /> 
 
 ▸ `Static` **rotationTo**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1241,7 +1241,7 @@ ___
 
 ___
 
-### slerp  
+### slerp <Score text="slerp" /> 
 
 ▸ `Static` **slerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1273,7 +1273,7 @@ ___
 
 ___
 
-### sqlerp  
+### sqlerp <Score text="sqlerp" /> 
 
 ▸ `Static` **sqlerp**(`a`, `b`, `c`, `d`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -1307,7 +1307,7 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
@@ -1331,7 +1331,7 @@ ___
 
 ___
 
-### toMatrix3x3  
+### toMatrix3x3 <Score text="toMatrix" /> 
 
 ▸ `Static` **toMatrix3x3**(`q`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 

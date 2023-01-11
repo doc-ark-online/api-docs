@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2ClothPart
 
-# IHumanoidV2ClothPart <Badge type="tip" text="Interface" /> 
+# IHumanoidV2ClothPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2ClothPart" />
 
 **`Description`**
 
@@ -56,7 +56,7 @@
 
 ## Methods
 
-### getAreaCount  
+### getAreaCount <Score text="getAreaCount" /> 
 
 ▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
 
@@ -74,7 +74,7 @@
 
 ___
 
-### getColor  
+### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -98,7 +98,7 @@ ___
 
 ___
 
-### getDesignAngle  
+### getDesignAngle <Score text="getDesignAngle" /> 
 
 ▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -122,7 +122,7 @@ ___
 
 ___
 
-### getDesignColor  
+### getDesignColor <Score text="getDesignColor" /> 
 
 ▸ **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -146,7 +146,7 @@ ___
 
 ___
 
-### getDesignTexture  
+### getDesignTexture <Score text="getDesignTexture" /> 
 
 ▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
 
@@ -169,7 +169,7 @@ ___
 GUID
 
 
-### getPatternAngle  
+### getPatternAngle <Score text="getPatternAngle" /> 
 
 ▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -193,7 +193,7 @@ GUID
 
 ___
 
-### getPatternColor  
+### getPatternColor <Score text="getPatternColor" /> 
 
 ▸ **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -217,7 +217,7 @@ ___
 
 ___
 
-### getPatternHeight  
+### getPatternHeight <Score text="getPatternHeight" /> 
 
 ▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -241,7 +241,7 @@ ___
 
 ___
 
-### getPatternIntensity  
+### getPatternIntensity <Score text="getPatternIntensity" /> 
 
 ▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -265,7 +265,7 @@ ___
 
 ___
 
-### getPatternWidth  
+### getPatternWidth <Score text="getPatternWidth" /> 
 
 ▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ ___
 
 ___
 
-### getTexture  
+### getTexture <Score text="getTexture" /> 
 
 ▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
 
@@ -313,7 +313,7 @@ GUID
 
 ___
 
-### setColor  
+### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -335,7 +335,7 @@ sync = true:双端
 
 ___
 
-### setDesignAngle  
+### setDesignAngle <Score text="setDesignAngle" /> 
 
 ▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -357,7 +357,7 @@ sync = true:双端
 
 ___
 
-### setDesignColor  
+### setDesignColor <Score text="setDesignColor" /> 
 
 ▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -379,7 +379,7 @@ sync = true:双端
 
 ___
 
-### setDesignTexture  
+### setDesignTexture <Score text="setDesignTexture" /> 
 
 ▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -400,7 +400,7 @@ sync = true:双端
 
 
 
-### setPatternAngle  
+### setPatternAngle <Score text="setPatternAngle" /> 
 
 ▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -422,7 +422,7 @@ sync = true:双端
 
 ___
 
-### setPatternColor  
+### setPatternColor <Score text="setPatternColor" /> 
 
 ▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -444,7 +444,7 @@ sync = true:双端
 
 ___
 
-### setPatternHeight  
+### setPatternHeight <Score text="setPatternHeight" /> 
 
 ▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -466,7 +466,7 @@ sync = true:双端
 
 ___
 
-### setPatternIntensity  
+### setPatternIntensity <Score text="setPatternIntensity" /> 
 
 ▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -488,7 +488,7 @@ sync = true:双端
 
 ___
 
-### setPatternWidth  
+### setPatternWidth <Score text="setPatternWidth" /> 
 
 ▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -510,7 +510,7 @@ sync = true:双端
 
 ___
 
-### setTexture  
+### setTexture <Score text="setTexture" /> 
 
 ▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

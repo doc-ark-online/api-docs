@@ -1,6 +1,6 @@
 Network
 
-# Network <Badge type="tip" text="Namespace" /> 
+# Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
 
 **`Description`**
 
@@ -34,7 +34,7 @@ Network
 
 ## Type Aliases
 
-### HttpResponse  
+### HttpResponse <Score text="HttpResponse" /> 
 
 Ƭ **HttpResponse**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void`
 
@@ -66,7 +66,7 @@ Http请求的回调消息格式
 
 ___
 
-### TransactionType  
+### TransactionType <Score text="TransactionType" /> 
 
 Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
 
@@ -91,7 +91,7 @@ ___
 
 ## Functions
 
-### fetch  
+### fetch <Score text="fetch" /> 
 
 ▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@ HTTP请求
 
 ___
 
-### generalHttpRequest  
+### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 ▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
 
@@ -149,7 +149,7 @@ bool
 
 ___
 
-### getUrlParameter  
+### getUrlParameter <Score text="getUrlParameter" /> 
 
 ▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
 
@@ -173,7 +173,7 @@ ___
 
 ___
 
-### httpRequestTransmitData  
+### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
 ▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
@@ -199,7 +199,7 @@ Http请求接口
 
 ___
 
-### urlDecode  
+### urlDecode <Score text="urlDecode" /> 
 
 ▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
 
@@ -222,7 +222,7 @@ url解码
 
 ___
 
-### urlEncode  
+### urlEncode <Score text="urlEncode" /> 
 
 ▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
 

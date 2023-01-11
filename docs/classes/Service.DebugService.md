@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / DebugService
 
-# DebugService <Badge type="tip" text="Class" /> 
+# DebugService <Badge type="tip" text="Class" /> <Score text="DebugService" />
 
 **`Instance`**
 
@@ -23,7 +23,7 @@ debug调试服务
 
 ## Methods
 
-### getHeapStatistics  
+### getHeapStatistics <Score text="getHeapStatistics" /> 
 
 ▸ `Static` **getHeapStatistics**(): `HeapStatistics` <Badge type="tip" text="other" />
 
@@ -40,7 +40,7 @@ HeapStatistics 内存数据
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`DebugService`](Service.DebugService.md) <Badge type="tip" text="other" />
 

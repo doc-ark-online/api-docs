@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsIntegratedMover
 
-# PhysicsIntegratedMover <Badge type="tip" text="Class" /> 
+# PhysicsIntegratedMover <Badge type="tip" text="Class" /> <Score text="PhysicsIntegratedMover" />
 
 **`Description`**
 
@@ -50,7 +50,7 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -78,7 +78,7 @@
 
 
 
-### linearRepeat  
+### linearRepeat <Score text="linearRepeat" /> 
 
 • `get` **linearRepeat**(): `boolean`
 
@@ -107,7 +107,7 @@
 
 ___
 
-### linearRepeatDelay  
+### linearRepeatDelay <Score text="linearRepeatDelay" /> 
 
 • `get` **linearRepeatDelay**(): `number`
 
@@ -136,7 +136,7 @@ ___
 
 ___
 
-### linearRepeatTime  
+### linearRepeatTime <Score text="linearRepeatTime" /> 
 
 • `get` **linearRepeatTime**(): `number`
 
@@ -165,7 +165,7 @@ ___
 
 ___
 
-### linearSpeed  
+### linearSpeed <Score text="linearSpeed" /> 
 
 • `get` **linearSpeed**(): [`Vector`](Type.Vector.md)
 
@@ -193,7 +193,7 @@ ___
 
 
 
-### rotationRepeat  
+### rotationRepeat <Score text="rotationRepeat" /> 
 
 • `get` **rotationRepeat**(): `boolean`
 
@@ -222,7 +222,7 @@ ___
 
 ___
 
-### rotationRepeatDelay  
+### rotationRepeatDelay <Score text="rotationRepeatDelay" /> 
 
 • `get` **rotationRepeatDelay**(): `number`
 
@@ -251,7 +251,7 @@ ___
 
 ___
 
-### rotationRepeatTime  
+### rotationRepeatTime <Score text="rotationRepeatTime" /> 
 
 • `get` **rotationRepeatTime**(): `number`
 
@@ -280,7 +280,7 @@ ___
 
 ___
 
-### rotationSpeed  
+### rotationSpeed <Score text="rotationSpeed" /> 
 
 • `get` **rotationSpeed**(): [`Vector`](Type.Vector.md)
 
@@ -309,7 +309,7 @@ ___
 
 ___
 
-### smooth  
+### smooth <Score text="smooth" /> 
 
 • `get` **smooth**(): `boolean`
 
@@ -337,7 +337,7 @@ ___
 
 
 
-### swingAngle  
+### swingAngle <Score text="swingAngle" /> 
 
 • `get` **swingAngle**(): `number`
 
@@ -366,7 +366,7 @@ ___
 
 ___
 
-### swingSpeed  
+### swingSpeed <Score text="swingSpeed" /> 
 
 • `get` **swingSpeed**(): [`Vector`](Type.Vector.md)
 

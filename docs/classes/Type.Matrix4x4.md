@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Matrix4x4
 
-# Matrix4x4 <Badge type="tip" text="Class" /> 
+# Matrix4x4 <Badge type="tip" text="Class" /> <Score text="Matrix4x4" />
 
 **`Description`**
 
@@ -108,7 +108,7 @@
 
 ## Properties
 
-### m00  
+### m00 <Score text="m" /> 
 
 • **m00**: `number`
 
@@ -118,7 +118,7 @@
 
 ___
 
-### m01  
+### m01 <Score text="m" /> 
 
 • **m01**: `number`
 
@@ -128,7 +128,7 @@ ___
 
 ___
 
-### m02  
+### m02 <Score text="m" /> 
 
 • **m02**: `number`
 
@@ -138,7 +138,7 @@ ___
 
 ___
 
-### m03  
+### m03 <Score text="m" /> 
 
 • **m03**: `number`
 
@@ -148,7 +148,7 @@ ___
 
 ___
 
-### m10  
+### m10 <Score text="m" /> 
 
 • **m10**: `number`
 
@@ -158,7 +158,7 @@ ___
 
 ___
 
-### m11  
+### m11 <Score text="m" /> 
 
 • **m11**: `number`
 
@@ -168,7 +168,7 @@ ___
 
 ___
 
-### m12  
+### m12 <Score text="m" /> 
 
 • **m12**: `number`
 
@@ -178,7 +178,7 @@ ___
 
 ___
 
-### m13  
+### m13 <Score text="m" /> 
 
 • **m13**: `number`
 
@@ -188,7 +188,7 @@ ___
 
 ___
 
-### m20  
+### m20 <Score text="m" /> 
 
 • **m20**: `number`
 
@@ -198,7 +198,7 @@ ___
 
 ___
 
-### m21  
+### m21 <Score text="m" /> 
 
 • **m21**: `number`
 
@@ -208,7 +208,7 @@ ___
 
 ___
 
-### m22  
+### m22 <Score text="m" /> 
 
 • **m22**: `number`
 
@@ -218,7 +218,7 @@ ___
 
 ___
 
-### m23  
+### m23 <Score text="m" /> 
 
 • **m23**: `number`
 
@@ -228,7 +228,7 @@ ___
 
 ___
 
-### m30  
+### m30 <Score text="m" /> 
 
 • **m30**: `number`
 
@@ -238,7 +238,7 @@ ___
 
 ___
 
-### m31  
+### m31 <Score text="m" /> 
 
 • **m31**: `number`
 
@@ -248,7 +248,7 @@ ___
 
 ___
 
-### m32  
+### m32 <Score text="m" /> 
 
 • **m32**: `number`
 
@@ -258,7 +258,7 @@ ___
 
 ___
 
-### m33  
+### m33 <Score text="m" /> 
 
 • **m33**: `number`
 
@@ -268,7 +268,7 @@ ___
 
 ## Accessors
 
-### identity  
+### identity <Score text="identity" /> 
 
 • `Static` `get` **identity**(): [`Matrix4x4`](Type.Matrix4x4.md)
 
@@ -282,7 +282,7 @@ ___
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -305,7 +305,7 @@ this
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -322,7 +322,7 @@ ___
 
 ___
 
-### determinant  
+### determinant <Score text="determinant" /> 
 
 ▸ **determinant**(): `number` <Badge type="tip" text="other" />
 
@@ -339,7 +339,7 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -363,7 +363,7 @@ ___
 
 ___
 
-### fromQuaternion  
+### fromQuaternion <Score text="fromQuaternion" /> 
 
 ▸ **fromQuaternion**(`q`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -386,7 +386,7 @@ this
 
 ___
 
-### fromRTS  
+### fromRTS <Score text="fromRTS" /> 
 
 ▸ **fromRTS**(`q`, `v`, `s`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -411,7 +411,7 @@ this
 
 ___
 
-### getRotation  
+### getRotation <Score text="getRotation" /> 
 
 ▸ **getRotation**(`outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -440,7 +440,7 @@ ___
 
 ___
 
-### getScale  
+### getScale <Score text="getScale" /> 
 
 ▸ **getScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -469,7 +469,7 @@ ___
 
 ___
 
-### getTranslation  
+### getTranslation <Score text="getTranslation" /> 
 
 ▸ **getTranslation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -498,7 +498,7 @@ ___
 
 ___
 
-### identity  
+### identity <Score text="identity" /> 
 
 ▸ **identity**(): `void` <Badge type="tip" text="other" />
 
@@ -510,7 +510,7 @@ ___
 
 ___
 
-### invert  
+### invert <Score text="invert" /> 
 
 ▸ **invert**(): `void` <Badge type="tip" text="other" />
 
@@ -522,7 +522,7 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -564,7 +564,7 @@ this
 
 ___
 
-### rotate  
+### rotate <Score text="rotate" /> 
 
 ▸ **rotate**(`axis`, `rad`, `epsilon?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -589,7 +589,7 @@ this
 
 ___
 
-### scale  
+### scale <Score text="scale" /> 
 
 ▸ **scale**(`vec`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -612,7 +612,7 @@ this
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ **set**(`other`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -669,7 +669,7 @@ this
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -692,7 +692,7 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -715,7 +715,7 @@ this
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -732,7 +732,7 @@ ___
 
 ___
 
-### translate  
+### translate <Score text="translate" /> 
 
 ▸ **translate**(`vec`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -755,7 +755,7 @@ this
 
 ___
 
-### transpose  
+### transpose <Score text="transpose" /> 
 
 ▸ **transpose**(): `void` <Badge type="tip" text="other" />
 
@@ -767,7 +767,7 @@ ___
 
 ___
 
-### zero  
+### zero <Score text="zero" /> 
 
 ▸ **zero**(): `void` <Badge type="tip" text="other" />
 
@@ -779,7 +779,7 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ `Static` **clone**(`a`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -802,7 +802,7 @@ ___
 
 ___
 
-### invert  
+### invert <Score text="invert" /> 
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
@@ -832,7 +832,7 @@ ___
 
 ___
 
-### transformAffine  
+### transformAffine <Score text="transformAffine" /> 
 
 ▸ `Static` **transformAffine**(`m`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -863,7 +863,7 @@ ___
 
 ___
 
-### transformAffine4  
+### transformAffine4 <Score text="transformAffine" /> 
 
 ▸ `Static` **transformAffine4**(`m`, `a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
@@ -894,7 +894,7 @@ ___
 
 ___
 
-### transformVector  
+### transformVector <Score text="transformVector" /> 
 
 ▸ `Static` **transformVector**(`m`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -925,7 +925,7 @@ ___
 
 ___
 
-### transformVector2  
+### transformVector2 <Score text="transformVector" /> 
 
 ▸ `Static` **transformVector2**(`m`, `a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -956,7 +956,7 @@ ___
 
 ___
 
-### transformVector4  
+### transformVector4 <Score text="transformVector" /> 
 
 ▸ `Static` **transformVector4**(`m`, `a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
@@ -987,7 +987,7 @@ ___
 
 ___
 
-### transpose  
+### transpose <Score text="transpose" /> 
 
 ▸ `Static` **transpose**(`a`, `outer?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 

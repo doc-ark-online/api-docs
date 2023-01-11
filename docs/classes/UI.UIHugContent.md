@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHugContent
 
-# UIHugContent <Badge type="tip" text="Class" /> 
+# UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Properties
 
-### hugContentH  
+### hugContentH <Score text="hugContentH" /> 
 
 • **hugContentH**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md)
 
@@ -39,7 +39,7 @@
 
 ___
 
-### hugContentW  
+### hugContentW <Score text="hugContentW" /> 
 
 • **hugContentW**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md)
 

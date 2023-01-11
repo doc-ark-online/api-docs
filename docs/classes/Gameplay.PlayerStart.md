@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PlayerStart
 
-# PlayerStart <Badge type="tip" text="Class" /> 
+# PlayerStart <Badge type="tip" text="Class" /> <Score text="PlayerStart" />
 
 **`Description`**
 

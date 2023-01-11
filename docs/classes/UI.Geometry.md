@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Geometry
 
-# Geometry <Badge type="tip" text="Class" /> 
+# Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
 **`Description`**
 
@@ -23,7 +23,7 @@
 
 ## Methods
 
-### getAbsolutePosition  
+### getAbsolutePosition <Score text="getAbsolutePosition" /> 
 
 ▸ **getAbsolutePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -40,7 +40,7 @@
 
 ___
 
-### getAbsolutePositionAtCoordinates  
+### getAbsolutePositionAtCoordinates <Score text="getAbsolutePositionAtCoordinates" /> 
 
 ▸ **getAbsolutePositionAtCoordinates**(`Coordinate`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -63,7 +63,7 @@ ___
 
 ___
 
-### getAbsoluteSize  
+### getAbsoluteSize <Score text="getAbsoluteSize" /> 
 
 ▸ **getAbsoluteSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -80,7 +80,7 @@ ___
 
 ___
 
-### getLocalPositionAtCoordinates  
+### getLocalPositionAtCoordinates <Score text="getLocalPositionAtCoordinates" /> 
 
 ▸ **getLocalPositionAtCoordinates**(`Coordinate`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -103,7 +103,7 @@ ___
 
 ___
 
-### getLocalSize  
+### getLocalSize <Score text="getLocalSize" /> 
 
 ▸ **getLocalSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -120,7 +120,7 @@ ___
 
 ___
 
-### isUnderLocation  
+### isUnderLocation <Score text="isUnderLocation" /> 
 
 ▸ **isUnderLocation**(`AbsoluteCoordinate`): `boolean` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsConstraintBase
 
-# PhysicsConstraintBase <Badge type="tip" text="Class" /> 
+# PhysicsConstraintBase <Badge type="tip" text="Class" /> <Score text="PhysicsConstraintBase" />
 
 **`Description`**
 
@@ -132,7 +132,7 @@
 
 ## Accessors
 
-### constraintTarget1  
+### constraintTarget1 <Score text="constraintTarget" /> 
 
 • `get` **constraintTarget1**(): `string`
 
@@ -161,7 +161,7 @@
 
 ___
 
-### constraintTarget2  
+### constraintTarget2 <Score text="constraintTarget" /> 
 
 • `get` **constraintTarget2**(): `string`
 

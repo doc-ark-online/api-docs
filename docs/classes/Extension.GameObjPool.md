@@ -1,6 +1,6 @@
 [Extension](../modules/Extension.Extension.md) / GameObjPool
 
-# GameObjPool <Badge type="tip" text="Class" /> 
+# GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
 **`Instance`**
 
@@ -26,7 +26,7 @@ GameObject对象池
 
 ## Methods
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(`GUID`): `void` <Badge type="tip" text="other" />
 
@@ -44,7 +44,7 @@ GameObject对象池
 
 ___
 
-### despawn  
+### despawn <Score text="despawn" /> 
 
 ▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
 
@@ -62,7 +62,7 @@ ___
 
 ___
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
@@ -74,7 +74,7 @@ ___
 
 ___
 
-### spawn  
+### spawn <Score text="spawn" /> 
 
 ▸ **spawn**<`T`\>(`GUID`): `T` <Badge type="tip" text="other" />
 
@@ -103,7 +103,7 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`GameObjPool`](Extension.GameObjPool.md) <Badge type="tip" text="other" />
 

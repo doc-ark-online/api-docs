@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ScrollBarDefaultLocation
 
-# ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> 
+# ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### BottomOrRight  
+### BottomOrRight <Score text="BottomOrRight" /> 
 
 • **BottomOrRight** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Center  
+### Center <Score text="Center" /> 
 
 • **Center** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### TopOrLeft  
+### TopOrLeft <Score text="TopOrLeft" /> 
 
 • **TopOrLeft** = ``0``
 

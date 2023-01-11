@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / UIWidget
 
-# UIWidget <Badge type="tip" text="Class" /> 
+# UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
 **`Description`**
 
@@ -123,7 +123,7 @@
 
 ## Accessors
 
-### cylinderArcAngle  
+### cylinderArcAngle <Score text="cylinderArcAngle" /> 
 
 • `get` **cylinderArcAngle**(): `number`
 
@@ -152,7 +152,7 @@
 
 ___
 
-### distanceScaleFactor  
+### distanceScaleFactor <Score text="distanceScaleFactor" /> 
 
 • `get` **distanceScaleFactor**(): `number`
 
@@ -181,7 +181,7 @@ ___
 
 ___
 
-### drawSize  
+### drawSize <Score text="drawSize" /> 
 
 • `get` **drawSize**(): [`Vector2`](Type.Vector2.md)
 
@@ -209,7 +209,7 @@ ___
 
 
 
-### geometryMode  
+### geometryMode <Score text="geometryMode" /> 
 
 • `get` **geometryMode**(): [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md)
 
@@ -237,7 +237,7 @@ ___
 
 
 
-### headUIMaxVisibleDistance  
+### headUIMaxVisibleDistance <Score text="headUIMaxVisibleDistance" /> 
 
 • `get` **headUIMaxVisibleDistance**(): `number`
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### hideByDistanceEnable  
+### hideByDistanceEnable <Score text="hideByDistanceEnable" /> 
 
 • `get` **hideByDistanceEnable**(): `boolean`
 
@@ -295,7 +295,7 @@ true：开启
 
 ___
 
-### interaction  
+### interaction <Score text="interaction" /> 
 
 • `get` **interaction**(): `boolean` <Badge type="tip" text="other" />
 
@@ -342,7 +342,7 @@ ___
 
 ___
 
-### isEnemy  
+### isEnemy <Score text="isEnemy" /> 
 
 • `get` **isEnemy**(): `boolean`
 
@@ -370,7 +370,7 @@ ___
 
 
 
-### occlusionEnable  
+### occlusionEnable <Score text="occlusionEnable" /> 
 
 • `get` **occlusionEnable**(): `boolean`
 
@@ -398,7 +398,7 @@ true：可被遮挡
 
 
 
-### pivot  
+### pivot <Score text="pivot" /> 
 
 • `get` **pivot**(): [`Vector2`](Type.Vector2.md)
 
@@ -426,7 +426,7 @@ true：可被遮挡
 
 
 
-### scaledByDistanceEnable  
+### scaledByDistanceEnable <Score text="scaledByDistanceEnable" /> 
 
 • `get` **scaledByDistanceEnable**(): `boolean`
 
@@ -455,7 +455,7 @@ true：开启
 
 ___
 
-### selfOcclusion  
+### selfOcclusion <Score text="selfOcclusion" /> 
 
 • `get` **selfOcclusion**(): `boolean`
 
@@ -483,7 +483,7 @@ ___
 
 
 
-### widgetSpace  
+### widgetSpace <Score text="widgetSpace" /> 
 
 • `get` **widgetSpace**(): [`WidgetSpaceMode`](../enums/Gameplay.WidgetSpaceMode.md)
 
@@ -513,7 +513,7 @@ ___
 
 ## Methods
 
-### getUI  
+### getUI <Score text="getUI" /> 
 
 ▸ **getUI**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 
@@ -530,7 +530,7 @@ ___
 UI对象
 
 
-### refresh  
+### refresh <Score text="refresh" /> 
 
 ▸ **refresh**(): `void` <Badge type="tip" text="other" />
 
@@ -542,7 +542,7 @@ UI对象
 
 
 
-### setTargetUIWidget  
+### setTargetUIWidget <Score text="setTargetUIWidget" /> 
 
 ▸ **setTargetUIWidget**(`uiUserWidget`): `void` <Badge type="tip" text="other" />
 
@@ -560,7 +560,7 @@ UI对象
 
 
 
-### setUI  
+### setUI <Score text="setUI" /> 
 
 ▸ **setUI**(`GUID`): `void` <Badge type="tip" text="other" />
 

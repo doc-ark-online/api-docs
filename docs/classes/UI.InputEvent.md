@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / InputEvent
 
-# InputEvent <Badge type="tip" text="Class" /> 
+# InputEvent <Badge type="tip" text="Class" /> <Score text="InputEvent" />
 
 **`Description`**
 

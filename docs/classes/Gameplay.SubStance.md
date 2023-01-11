@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SubStance
 
-# SubStance <Badge type="tip" text="Class" /> 
+# SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
 **`Description`**
 
@@ -62,7 +62,7 @@ this.stanceProxy.stop();
 
 ## Accessors
 
-### blendMode  
+### blendMode <Score text="blendMode" /> 
 
 • `get` **blendMode**(): [`StanceBlendMode`](../enums/Gameplay.StanceBlendMode.md)
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCable
 
-# PhysicsCable <Badge type="tip" text="Class" /> 
+# PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 
 **`Description`**
 
@@ -41,7 +41,7 @@
 
 ## Accessors
 
-### collisionEnable  
+### collisionEnable <Score text="collisionEnable" /> 
 
 • `get` **collisionEnable**(): `boolean`
 
@@ -71,7 +71,7 @@
 
 
 
-### currentLength  
+### currentLength <Score text="currentLength" /> 
 
 • `get` **currentLength**(): `number`
 
@@ -86,7 +86,7 @@
 当前长度
 
 
-### maxLength  
+### maxLength <Score text="maxLength" /> 
 
 • `get` **maxLength**(): `number`
 

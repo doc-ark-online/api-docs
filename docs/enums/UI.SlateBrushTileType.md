@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateBrushTileType
 
-# SlateBrushTileType <Badge type="tip" text="Enumeration" /> 
+# SlateBrushTileType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushTileType" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Both  
+### Both <Score text="Both" /> 
 
 • **Both** = ``3``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### Horizontal  
+### Horizontal <Score text="Horizontal" /> 
 
 • **Horizontal** = ``1``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### NoTile  
+### NoTile <Score text="NoTile" /> 
 
 • **NoTile** = ``0``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### Vertical  
+### Vertical <Score text="Vertical" /> 
 
 • **Vertical** = ``2``
 

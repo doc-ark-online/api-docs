@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireComponent
 
-# HotWeaponFireComponent <Badge type="tip" text="Class" /> 
+# HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
 **`Description`**
 
@@ -35,7 +35,7 @@
 
 ## Properties
 
-### onEndContinuousFireServer  
+### onEndContinuousFireServer <Score text="onEndContinuousFireServer" /> 
 
 • **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -45,7 +45,7 @@
 
 ___
 
-### onEndFireClient  
+### onEndFireClient <Score text="onEndFireClient" /> 
 
 • **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -55,7 +55,7 @@ ___
 
 ___
 
-### onEndFireServer  
+### onEndFireServer <Score text="onEndFireServer" /> 
 
 • **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -65,7 +65,7 @@ ___
 
 ___
 
-### onStartFireClient  
+### onStartFireClient <Score text="onStartFireClient" /> 
 
 • **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -75,7 +75,7 @@ ___
 
 ___
 
-### onStartFireServer  
+### onStartFireServer <Score text="onStartFireServer" /> 
 
 • **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -85,7 +85,7 @@ ___
 
 ## Accessors
 
-### animationGuid  
+### animationGuid <Score text="animationGuid" /> 
 
 • `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -116,7 +116,7 @@ ___
 
 ___
 
-### currentBulletSize  
+### currentBulletSize <Score text="currentBulletSize" /> 
 
 • `get` **currentBulletSize**(): `number` <Badge type="tip" text="other" />
 
@@ -147,7 +147,7 @@ ___
 
 ___
 
-### currentClipSize  
+### currentClipSize <Score text="currentClipSize" /> 
 
 • `get` **currentClipSize**(): `number` <Badge type="tip" text="other" />
 
@@ -184,7 +184,7 @@ ___
 
 ___
 
-### currentFireInterval  
+### currentFireInterval <Score text="currentFireInterval" /> 
 
 • `get` **currentFireInterval**(): `number` <Badge type="tip" text="other" />
 
@@ -221,7 +221,7 @@ ___
 
 ___
 
-### currentFireModel  
+### currentFireModel <Score text="currentFireModel" /> 
 
 • `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) <Badge type="tip" text="other" />
 
@@ -238,7 +238,7 @@ ___
 
 ___
 
-### currentMultipleShot  
+### currentMultipleShot <Score text="currentMultipleShot" /> 
 
 • `get` **currentMultipleShot**(): `number` <Badge type="tip" text="other" />
 
@@ -275,7 +275,7 @@ ___
 
 ___
 
-### isFireOnScreenCenter  
+### isFireOnScreenCenter <Score text="isFireOnScreenCenter" /> 
 
 • `get` **isFireOnScreenCenter**(): `boolean` <Badge type="tip" text="other" />
 
@@ -312,7 +312,7 @@ ___
 
 ___
 
-### isFullAutoMode  
+### isFullAutoMode <Score text="isFullAutoMode" /> 
 
 • `get` **isFullAutoMode**(): `boolean` <Badge type="tip" text="other" />
 
@@ -349,7 +349,7 @@ ___
 
 ___
 
-### offsetOfFireOnScreenCenter  
+### offsetOfFireOnScreenCenter <Score text="offsetOfFireOnScreenCenter" /> 
 
 • `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -386,7 +386,7 @@ ___
 
 ## Methods
 
-### hadAnimationGuid  
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
 ▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
@@ -403,7 +403,7 @@ ___
 
 ___
 
-### isFiring  
+### isFiring <Score text="isFiring" /> 
 
 ▸ **isFiring**(): `boolean` <Badge type="tip" text="other" />
 

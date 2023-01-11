@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Particle
 
-# Particle <Badge type="tip" text="Class" /> 
+# Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 
 **`Description`**
 
@@ -113,7 +113,7 @@
 
 ## Accessors
 
-### color  
+### color <Score text="color" /> 
 
 • `set` **color**(`EffectColor`): `void` <Badge type="tip" text="other" />
 
@@ -131,7 +131,7 @@
 
 
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
@@ -164,7 +164,7 @@
 
 ___
 
-### loopCount  
+### loopCount <Score text="loopCount" /> 
 
 • `get` **loopCount**(): `number` <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 
 
-### particleLength  
+### particleLength <Score text="particleLength" /> 
 
 • `get` **particleLength**(): `number` <Badge type="tip" text="other" />
 
@@ -215,7 +215,7 @@ ___
 
 ## Methods
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(`OnSuccess?`): `void` <Badge type="tip" text="other" />
 
@@ -233,7 +233,7 @@ ___
 
 
 
-### setCullDistance  
+### setCullDistance <Score text="setCullDistance" /> 
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
 
@@ -256,7 +256,7 @@ ___
 
 
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
 

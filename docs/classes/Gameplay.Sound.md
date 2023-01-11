@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Sound
 
-# Sound <Badge type="tip" text="Class" /> 
+# Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
 **`Description`**
 
@@ -130,7 +130,7 @@
 
 ## Properties
 
-### onSoundFinished  
+### onSoundFinished <Score text="onSoundFinished" /> 
 
 • **onSoundFinished**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -140,7 +140,7 @@
 
 ___
 
-### onSoundPaused  
+### onSoundPaused <Score text="onSoundPaused" /> 
 
 • **onSoundPaused**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### onSoundStarted  
+### onSoundStarted <Score text="onSoundStarted" /> 
 
 • **onSoundStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -160,7 +160,7 @@ ___
 
 ## Accessors
 
-### attenuationDistanceModel  
+### attenuationDistanceModel <Score text="attenuationDistanceModel" /> 
 
 • `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <Badge type="tip" text="other" />
 
@@ -177,7 +177,7 @@ ___
 
 ___
 
-### audioAsset  
+### audioAsset <Score text="audioAsset" /> 
 
 • `set` **audioAsset**(`assetGuid`): `void`
 
@@ -194,7 +194,7 @@ ___
 
 ___
 
-### autoPlay  
+### autoPlay <Score text="autoPlay" /> 
 
 • `get` **autoPlay**(): `boolean`
 
@@ -223,7 +223,7 @@ ___
 
 ___
 
-### currentProgress  
+### currentProgress <Score text="currentProgress" /> 
 
 • `get` **currentProgress**(): `number`
 
@@ -239,7 +239,7 @@ ___
 
 ___
 
-### drawInnerBounds  
+### drawInnerBounds <Score text="drawInnerBounds" /> 
 
 • `get` **drawInnerBounds**(): `boolean`
 
@@ -268,7 +268,7 @@ ___
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
 
@@ -284,7 +284,7 @@ ___
 音效时长(ms)
 
 
-### innerRadius  
+### innerRadius <Score text="innerRadius" /> 
 
 • `get` **innerRadius**(): `number`
 
@@ -312,7 +312,7 @@ ___
 
 
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean`
 
@@ -340,7 +340,7 @@ ___
 
 
 
-### outerRadius  
+### outerRadius <Score text="outerRadius" /> 
 
 • `get` **outerRadius**(): `number`
 
@@ -368,7 +368,7 @@ ___
 
 
 
-### playState  
+### playState <Score text="playState" /> 
 
 • `get` **playState**(): `boolean` <Badge type="tip" text="other" />
 
@@ -384,7 +384,7 @@ ___
 是否正在播放
 
 
-### spatialization  
+### spatialization <Score text="spatialization" /> 
 
 • `get` **spatialization**(): `boolean`
 
@@ -412,7 +412,7 @@ ___
 
 
 
-### uiSound  
+### uiSound <Score text="uiSound" /> 
 
 • `get` **uiSound**(): `boolean` <Badge type="tip" text="other" />
 
@@ -442,7 +442,7 @@ Vector XYZ 0-1
 
 
 
-### volumeMultiplier  
+### volumeMultiplier <Score text="volumeMultiplier" /> 
 
 • `get` **volumeMultiplier**(): `number`
 
@@ -472,7 +472,7 @@ Vector XYZ 0-1
 
 ## Methods
 
-### getIsDrawInnerBounds  
+### getIsDrawInnerBounds <Score text="getIsDrawInnerBounds" /> 
 
 ▸ **getIsDrawInnerBounds**(): `boolean` <Badge type="tip" text="other" />
 
@@ -488,7 +488,7 @@ Vector XYZ 0-1
 是否启用
 
 
-### pause  
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
 
@@ -500,7 +500,7 @@ Vector XYZ 0-1
 
 ___
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(): `void` <Badge type="tip" text="other" />
 
@@ -511,7 +511,7 @@ ___
 
 
 
-### setSoundSphere  
+### setSoundSphere <Score text="setSoundSphere" /> 
 
 ▸ **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` <Badge type="tip" text="other" />
 
@@ -531,7 +531,7 @@ ___
 
 
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
 

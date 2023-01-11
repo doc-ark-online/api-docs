@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / EffectService
 
-# EffectService <Badge type="tip" text="Class" /> 
+# EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
 **`Instance`**
 
@@ -24,7 +24,7 @@
 
 ## Methods
 
-### clearAll  
+### clearAll <Score text="clearAll" /> 
 
 ▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
@@ -36,7 +36,7 @@
 
 ___
 
-### getEffectGameObject  
+### getEffectGameObject <Score text="getEffectGameObject" /> 
 
 ▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
 
@@ -60,7 +60,7 @@ Sound对象的gameObject
 
 ___
 
-### playEffectAtLocation  
+### playEffectAtLocation <Score text="playEffectAtLocation" /> 
 
 ▸ **playEffectAtLocation**(`resId`, `location`, `loop?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
@@ -88,7 +88,7 @@ ___
 
 ___
 
-### playEffectOnGameObject  
+### playEffectOnGameObject <Score text="playEffectOnGameObject" /> 
 
 ▸ **playEffectOnGameObject**(`resId`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
@@ -117,7 +117,7 @@ ___
 
 ___
 
-### playEffectOnPlayer  
+### playEffectOnPlayer <Score text="playEffectOnPlayer" /> 
 
 ▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
@@ -147,7 +147,7 @@ ___
 
 ___
 
-### stopAllEffect  
+### stopAllEffect <Score text="stopAllEffect" /> 
 
 ▸ **stopAllEffect**(): `void` <Badge type="tip" text="other" />
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### stopEffect  
+### stopEffect <Score text="stopEffect" /> 
 
 ▸ **stopEffect**(`playId`): `void` <Badge type="tip" text="other" />
 
@@ -179,7 +179,7 @@ ___
 
 ___
 
-### stopEffectFromHost  
+### stopEffectFromHost <Score text="stopEffectFromHost" /> 
 
 ▸ **stopEffectFromHost**(`resId`, `target?`): `void` <Badge type="tip" text="other" />
 
@@ -199,7 +199,7 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
 

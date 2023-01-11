@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TabGroup
 
-# TabGroup<T\> <Badge type="tip" text="Class" /> 
+# TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
 **`Description`**
 
@@ -40,7 +40,7 @@
 
 ## Accessors
 
-### currentIndex  
+### currentIndex <Score text="currentIndex" /> 
 
 • `get` **currentIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -57,7 +57,7 @@
 
 ## Methods
 
-### init  
+### init <Score text="init" /> 
 
 ▸ **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void` <Badge type="tip" text="other" />
 
@@ -78,7 +78,7 @@
 
 ___
 
-### select  
+### select <Score text="select" /> 
 
 ▸ **select**(`index`, `ignoreSame?`): `boolean` <Badge type="tip" text="other" />
 
@@ -102,7 +102,7 @@ ___
 
 ___
 
-### setSelectableChecker  
+### setSelectableChecker <Score text="setSelectableChecker" /> 
 
 ▸ **setSelectableChecker**(`selectChecker`, `thisArg`): `void` <Badge type="tip" text="other" />
 

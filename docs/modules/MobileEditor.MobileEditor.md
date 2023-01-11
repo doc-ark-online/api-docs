@@ -1,6 +1,6 @@
 MobileEditor
 
-# MobileEditor <Badge type="tip" text="Namespace" /> 
+# MobileEditor <Badge type="tip" text="Namespace" /> <Score text="MobileEditor" />
 
 ## Table of contents
 
@@ -60,7 +60,7 @@ MobileEditor
 
 ## Functions
 
-### UGCEditor  
+### UGCEditor <Score text="UGCEditor" /> 
 
 ▸ **UGCEditor**(`target`): `void`
 
@@ -80,7 +80,7 @@ UGC Editor使用的装饰器,避免数据被还原
 
 ___
 
-### addEditorPawnPanInputMovement  
+### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
 
 ▸ **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="other" />
 
@@ -98,7 +98,7 @@ ___
 
 ___
 
-### asyncCaptureAvatar  
+### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
 
 ▸ **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
@@ -127,7 +127,7 @@ ___
 
 ___
 
-### asyncSaveProject  
+### asyncSaveProject <Score text="asyncSaveProject" /> 
 
 ▸ **asyncSaveProject**(): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
@@ -151,7 +151,7 @@ ___
 
 ___
 
-### beginActorPropertiesChange  
+### beginActorPropertiesChange <Score text="beginActorPropertiesChange" /> 
 
 ▸ **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### beginActorTransformChange  
+### beginActorTransformChange <Score text="beginActorTransformChange" /> 
 
 ▸ **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -187,7 +187,7 @@ ___
 
 ___
 
-### captureAvatar  
+### captureAvatar <Score text="captureAvatar" /> 
 
 ▸ **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -212,7 +212,7 @@ ___
 
 ___
 
-### endActorPropertiesChange  
+### endActorPropertiesChange <Score text="endActorPropertiesChange" /> 
 
 ▸ **endActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### endActorTransformChange  
+### endActorTransformChange <Score text="endActorTransformChange" /> 
 
 ▸ **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="other" />
 
@@ -249,7 +249,7 @@ ___
 
 ___
 
-### getEditorPawnLocation  
+### getEditorPawnLocation <Score text="getEditorPawnLocation" /> 
 
 ▸ **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -266,7 +266,7 @@ Vector 返回的位置
 
 ___
 
-### getEditorPawnRotation  
+### getEditorPawnRotation <Score text="getEditorPawnRotation" /> 
 
 ▸ **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -283,7 +283,7 @@ ___
 
 ___
 
-### getHeadSculpture  
+### getHeadSculpture <Score text="getHeadSculpture" /> 
 
 ▸ **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -308,7 +308,7 @@ ___
 
 ___
 
-### getOneFingerMoveGestureDelegate  
+### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
 
 ▸ **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -325,7 +325,7 @@ ___
 
 ___
 
-### getPinchGestureDelegate  
+### getPinchGestureDelegate <Score text="getPinchGestureDelegate" /> 
 
 ▸ **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="other" />
 
@@ -342,7 +342,7 @@ ___
 
 ___
 
-### getSavedDir  
+### getSavedDir <Score text="getSavedDir" /> 
 
 ▸ **getSavedDir**(): `string` <Badge type="tip" text="other" />
 
@@ -359,7 +359,7 @@ ___
 
 ___
 
-### getTapGestureDelegate  
+### getTapGestureDelegate <Score text="getTapGestureDelegate" /> 
 
 ▸ **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -376,7 +376,7 @@ ___
 
 ___
 
-### getTouchBeganGestureDelegate  
+### getTouchBeganGestureDelegate <Score text="getTouchBeganGestureDelegate" /> 
 
 ▸ **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -393,7 +393,7 @@ ___
 
 ___
 
-### getTouchData  
+### getTouchData <Score text="getTouchData" /> 
 
 ▸ **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[] <Badge type="tip" text="other" />
 
@@ -410,7 +410,7 @@ ___
 
 ___
 
-### getTouchEndGestureDelegate  
+### getTouchEndGestureDelegate <Score text="getTouchEndGestureDelegate" /> 
 
 ▸ **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="other" />
 
@@ -427,7 +427,7 @@ ___
 
 ___
 
-### getTouchMoveGestureDelegate  
+### getTouchMoveGestureDelegate <Score text="getTouchMoveGestureDelegate" /> 
 
 ▸ **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -444,7 +444,7 @@ ___
 
 ___
 
-### getTwoFingerMoveGestureDelegate  
+### getTwoFingerMoveGestureDelegate <Score text="getTwoFingerMoveGestureDelegate" /> 
 
 ▸ **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -461,7 +461,7 @@ ___
 
 ___
 
-### mobileReleaseGame  
+### mobileReleaseGame <Score text="mobileReleaseGame" /> 
 
 ▸ **mobileReleaseGame**(`InGameName`): `void` <Badge type="tip" text="other" />
 
@@ -480,7 +480,7 @@ ___
 
 ___
 
-### recordingCharacterGif  
+### recordingCharacterGif <Score text="recordingCharacterGif" /> 
 
 ▸ **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="other" />
 
@@ -511,7 +511,7 @@ Playza定制接口
 
 ___
 
-### redo  
+### redo <Score text="redo" /> 
 
 ▸ **redo**(): `void` <Badge type="tip" text="other" />
 
@@ -523,7 +523,7 @@ ___
 
 ___
 
-### saveProject  
+### saveProject <Score text="saveProject" /> 
 
 ▸ **saveProject**(): `void` <Badge type="tip" text="other" />
 
@@ -542,7 +542,7 @@ ___
 
 ___
 
-### screenShot  
+### screenShot <Score text="screenShot" /> 
 
 ▸ **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -564,7 +564,7 @@ ___
 
 ___
 
-### screenShotExist  
+### screenShotExist <Score text="screenShotExist" /> 
 
 ▸ **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="other" />
 
@@ -587,7 +587,7 @@ ___
 
 ___
 
-### sendShareId  
+### sendShareId <Score text="sendShareId" /> 
 
 ▸ **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="other" />
 
@@ -613,7 +613,7 @@ Playza定制接口
 
 ___
 
-### setEditorCameraLocation  
+### setEditorCameraLocation <Score text="setEditorCameraLocation" /> 
 
 ▸ **setEditorCameraLocation**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -636,7 +636,7 @@ ___
 
 ___
 
-### setEditorCameraRotation  
+### setEditorCameraRotation <Score text="setEditorCameraRotation" /> 
 
 ▸ **setEditorCameraRotation**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -659,7 +659,7 @@ bool 是否设置成功
 
 ___
 
-### setEditorCameraTransform  
+### setEditorCameraTransform <Score text="setEditorCameraTransform" /> 
 
 ▸ **setEditorCameraTransform**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -682,7 +682,7 @@ ___
 
 ___
 
-### setEditorPawnLocation  
+### setEditorPawnLocation <Score text="setEditorPawnLocation" /> 
 
 ▸ **setEditorPawnLocation**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -705,7 +705,7 @@ ___
 
 ___
 
-### setEditorPawnRotation  
+### setEditorPawnRotation <Score text="setEditorPawnRotation" /> 
 
 ▸ **setEditorPawnRotation**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -728,7 +728,7 @@ bool 是否设置成功
 
 ___
 
-### setEditorPawnTransform  
+### setEditorPawnTransform <Score text="setEditorPawnTransform" /> 
 
 ▸ **setEditorPawnTransform**(`input`): `boolean` <Badge type="tip" text="other" />
 
@@ -751,7 +751,7 @@ ___
 
 ___
 
-### setMultiSwipeTime  
+### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
 
 ▸ **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
 
@@ -769,7 +769,7 @@ ___
 
 ___
 
-### setPinchAngleTolerance  
+### setPinchAngleTolerance <Score text="setPinchAngleTolerance" /> 
 
 ▸ **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="other" />
 
@@ -787,7 +787,7 @@ ___
 
 ___
 
-### setSingleSwipeTime  
+### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 
 
 ▸ **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
 
@@ -805,7 +805,7 @@ ___
 
 ___
 
-### setSwipeTolerance  
+### setSwipeTolerance <Score text="setSwipeTolerance" /> 
 
 ▸ **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="other" />
 
@@ -823,7 +823,7 @@ ___
 
 ___
 
-### setTapTime  
+### setTapTime <Score text="setTapTime" /> 
 
 ▸ **setTapTime**(`time`): `void` <Badge type="tip" text="other" />
 
@@ -841,7 +841,7 @@ tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间
 
 ___
 
-### undo  
+### undo <Score text="undo" /> 
 
 ▸ **undo**(): `void` <Badge type="tip" text="other" />
 
@@ -853,7 +853,7 @@ ___
 
 ___
 
-### uploadScreenShot  
+### uploadScreenShot <Score text="uploadScreenShot" /> 
 
 ▸ **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void` <Badge type="tip" text="other" />
 
@@ -879,7 +879,7 @@ Playza定制接口
 
 ___
 
-### uploadScreenShots  
+### uploadScreenShots <Score text="uploadScreenShots" /> 
 
 ▸ **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="other" />
 

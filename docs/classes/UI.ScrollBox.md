@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ScrollBox
 
-# ScrollBox <Badge type="tip" text="Class" /> 
+# ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
 **`Description`**
 
@@ -76,7 +76,7 @@
 
 ## Properties
 
-### brushMargin  
+### brushMargin <Score text="brushMargin" /> 
 
 • `Private` **brushMargin**: `any`
 
@@ -86,7 +86,7 @@
 
 ___
 
-### tempUEMargin  
+### tempUEMargin <Score text="tempUEMargin" /> 
 
 • `Private` **tempUEMargin**: `any`
 
@@ -96,7 +96,7 @@ ___
 
 ## Accessors
 
-### allowOverscroll  
+### allowOverscroll <Score text="allowOverscroll" /> 
 
 • `set` **allowOverscroll**(`isAllowOverscroll`): `void` <Badge type="tip" text="other" />
 
@@ -114,7 +114,7 @@ ___
 
 ___
 
-### alwaysShowScrollBar  
+### alwaysShowScrollBar <Score text="alwaysShowScrollBar" /> 
 
 • `set` **alwaysShowScrollBar**(`isScrollBarAlwaysShown`): `void` <Badge type="tip" text="other" />
 
@@ -132,7 +132,7 @@ ___
 
 ___
 
-### animationType  
+### animationType <Score text="animationType" /> 
 
 • `get` **animationType**(): [`UIScrollBoxAnimationType`](../enums/UI.UIScrollBoxAnimationType.md) <Badge type="tip" text="other" />
 
@@ -164,7 +164,7 @@ ___
 动画类型
 
 
-### defaultLocation  
+### defaultLocation <Score text="defaultLocation" /> 
 
 • `get` **defaultLocation**(): [`ScrollBarDefaultLocation`](../enums/UI.ScrollBarDefaultLocation.md) <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 
 
-### elasticMultiplier  
+### elasticMultiplier <Score text="elasticMultiplier" /> 
 
 • `get` **elasticMultiplier**(): `number` <Badge type="tip" text="other" />
 
@@ -228,7 +228,7 @@ ___
 弹性系数
 
 
-### isScrollBarAlwaysShown  
+### isScrollBarAlwaysShown <Score text="isScrollBarAlwaysShown" /> 
 
 • `get` **isScrollBarAlwaysShown**(): `boolean` <Badge type="tip" text="other" />
 
@@ -244,7 +244,7 @@ ___
 是否一直显示滚动条
 
 
-### onScrollEnd  
+### onScrollEnd <Score text="onScrollEnd" /> 
 
 • `get` **onScrollEnd**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -261,7 +261,7 @@ ___
 
 ___
 
-### onUserScrolled  
+### onUserScrolled <Score text="onUserScrolled" /> 
 
 • `get` **onUserScrolled**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`currentOffset`: `number`) => `void`\> <Badge type="tip" text="other" />
 
@@ -278,7 +278,7 @@ ___
 
 ___
 
-### orientation  
+### orientation <Score text="orientation" /> 
 
 • `get` **orientation**(): [`Orientation`](../enums/UI.Orientation.md) <Badge type="tip" text="other" />
 
@@ -310,7 +310,7 @@ ___
 滚动方向
 
 
-### scrollAxisBrushDrawType  
+### scrollAxisBrushDrawType <Score text="scrollAxisBrushDrawType" /> 
 
 • `get` **scrollAxisBrushDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -341,7 +341,7 @@ ___
 
 ___
 
-### scrollAxisBrushGuid  
+### scrollAxisBrushGuid <Score text="scrollAxisBrushGuid" /> 
 
 • `get` **scrollAxisBrushGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -372,7 +372,7 @@ ___
 
 ___
 
-### scrollAxisBrushMargin  
+### scrollAxisBrushMargin <Score text="scrollAxisBrushMargin" /> 
 
 • `get` **scrollAxisBrushMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -403,7 +403,7 @@ ___
 
 ___
 
-### scrollAxisColor  
+### scrollAxisColor <Score text="scrollAxisColor" /> 
 
 • `get` **scrollAxisColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -434,7 +434,7 @@ ___
 
 ___
 
-### scrollBarVisibility  
+### scrollBarVisibility <Score text="scrollBarVisibility" /> 
 
 • `get` **scrollBarVisibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
 
@@ -465,7 +465,7 @@ ___
 
 ___
 
-### scrollOffset  
+### scrollOffset <Score text="scrollOffset" /> 
 
 • `get` **scrollOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -496,7 +496,7 @@ ___
 
 ___
 
-### scrollOffsetFraction  
+### scrollOffsetFraction <Score text="scrollOffsetFraction" /> 
 
 • `get` **scrollOffsetFraction**(): `number` <Badge type="tip" text="other" />
 
@@ -513,7 +513,7 @@ ___
 
 ___
 
-### scrollOffsetOfEnd  
+### scrollOffsetOfEnd <Score text="scrollOffsetOfEnd" /> 
 
 • `get` **scrollOffsetOfEnd**(): `number` <Badge type="tip" text="other" />
 
@@ -530,7 +530,7 @@ ___
 
 ___
 
-### scrollWheelMultiplier  
+### scrollWheelMultiplier <Score text="scrollWheelMultiplier" /> 
 
 • `set` **scrollWheelMultiplier**(`inScrollWheelMultiplier`): `void` <Badge type="tip" text="other" />
 
@@ -550,7 +550,7 @@ ___
 
 ___
 
-### scrollbarPadding  
+### scrollbarPadding <Score text="scrollbarPadding" /> 
 
 • `set` **scrollbarPadding**(`inScrollbarPadding`): `void` <Badge type="tip" text="other" />
 
@@ -568,7 +568,7 @@ ___
 
 ___
 
-### scrollbarThickness  
+### scrollbarThickness <Score text="scrollbarThickness" /> 
 
 • `set` **scrollbarThickness**(`inScrollbarThickness`): `void` <Badge type="tip" text="other" />
 
@@ -586,7 +586,7 @@ ___
 
 ___
 
-### shadowVisibility  
+### shadowVisibility <Score text="shadowVisibility" /> 
 
 • `get` **shadowVisibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
 
@@ -618,7 +618,7 @@ ___
 阴影显示
 
 
-### smoothScrollingEnable  
+### smoothScrollingEnable <Score text="smoothScrollingEnable" /> 
 
 • `set` **smoothScrollingEnable**(`isSmoothScrolling`): `void` <Badge type="tip" text="other" />
 
@@ -636,7 +636,7 @@ ___
 
 ___
 
-### supportElastic  
+### supportElastic <Score text="supportElastic" /> 
 
 • `get` **supportElastic**(): `boolean` <Badge type="tip" text="other" />
 
@@ -670,7 +670,7 @@ ___
 
 ## Methods
 
-### endInertialScrolling  
+### endInertialScrolling <Score text="endInertialScrolling" /> 
 
 ▸ **endInertialScrolling**(): `void` <Badge type="tip" text="other" />
 
@@ -681,7 +681,7 @@ ___
 
 
 
-### scrollToEnd  
+### scrollToEnd <Score text="scrollToEnd" /> 
 
 ▸ **scrollToEnd**(): `void` <Badge type="tip" text="other" />
 
@@ -693,7 +693,7 @@ ___
 
 ___
 
-### scrollToStart  
+### scrollToStart <Score text="scrollToStart" /> 
 
 ▸ **scrollToStart**(): `void` <Badge type="tip" text="other" />
 
@@ -705,7 +705,7 @@ ___
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ScrollBox`](UI.ScrollBox.md) <Badge type="tip" text="other" />
 

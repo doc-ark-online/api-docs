@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Image
 
-# Image <Badge type="tip" text="Class" /> 
+# Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
 **`Description`**
 
@@ -76,7 +76,7 @@ UI 图片
 
 ## Accessors
 
-### imageColor  
+### imageColor <Score text="imageColor" /> 
 
 • `get` **imageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -109,7 +109,7 @@ UI 图片
 
 ___
 
-### imageDrawType  
+### imageDrawType <Score text="imageDrawType" /> 
 
 • `get` **imageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -140,7 +140,7 @@ ___
 
 ___
 
-### imageGuid  
+### imageGuid <Score text="imageGuid" /> 
 
 • `get` **imageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -171,7 +171,7 @@ ___
 
 ___
 
-### imageSize  
+### imageSize <Score text="imageSize" /> 
 
 • `get` **imageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -201,7 +201,7 @@ ___
 
 
 
-### margin  
+### margin <Score text="margin" /> 
 
 • `get` **margin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -233,7 +233,7 @@ ___
 
 ## Methods
 
-### asyncExportBlendBrush  
+### asyncExportBlendBrush <Score text="asyncExportBlendBrush" /> 
 
 ▸ **asyncExportBlendBrush**(): `Promise`<`string`\> <Badge type="tip" text="other" />
 
@@ -255,7 +255,7 @@ ___
 导出的图片的本地路径
 
 
-### getImageAssetIconData  
+### getImageAssetIconData <Score text="getImageAssetIconData" /> 
 
 ▸ **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md) <Badge type="tip" text="other" />
 
@@ -271,7 +271,7 @@ ___
 资源的ICON信息
 
 
-### setImageByAssetIconData  
+### setImageByAssetIconData <Score text="setImageByAssetIconData" /> 
 
 ▸ **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ ___
 
 ___
 
-### setImageByBlendMode  
+### setImageByBlendMode <Score text="setImageByBlendMode" /> 
 
 ▸ **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void` <Badge type="tip" text="other" />
 
@@ -308,7 +308,7 @@ ___
 
 ___
 
-### setImageByFile  
+### setImageByFile <Score text="setImageByFile" /> 
 
 ▸ **setImageByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
@@ -326,7 +326,7 @@ ___
 
 ___
 
-### setImageByURL  
+### setImageByURL <Score text="setImageByURL" /> 
 
 ▸ **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### setImageColorByHex  
+### setImageColorByHex <Score text="setImageColorByHex" /> 
 
 ▸ **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -363,7 +363,7 @@ ___
 
 ___
 
-### setImageColorDecimal  
+### setImageColorDecimal <Score text="setImageColorDecimal" /> 
 
 ▸ **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -384,7 +384,7 @@ ___
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md) <Badge type="tip" text="other" />
 

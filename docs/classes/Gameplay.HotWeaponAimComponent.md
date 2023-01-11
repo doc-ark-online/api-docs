@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimComponent
 
-# HotWeaponAimComponent <Badge type="tip" text="Class" /> 
+# HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
 **`Description`**
 
@@ -30,7 +30,7 @@
 
 ## Properties
 
-### onAimEndClient  
+### onAimEndClient <Score text="onAimEndClient" /> 
 
 • **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -40,7 +40,7 @@
 
 ___
 
-### onAimEndServer  
+### onAimEndServer <Score text="onAimEndServer" /> 
 
 • **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### onAimStartClient  
+### onAimStartClient <Score text="onAimStartClient" /> 
 
 • **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### onAimStartServer  
+### onAimStartServer <Score text="onAimStartServer" /> 
 
 • **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -70,7 +70,7 @@ ___
 
 ## Accessors
 
-### aimMode  
+### aimMode <Score text="aimMode" /> 
 
 • `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <Badge type="tip" text="other" />
 
@@ -101,7 +101,7 @@ Set瞄准时的第一/第三人称模式
 
 ___
 
-### aimingZoom  
+### aimingZoom <Score text="aimingZoom" /> 
 
 • `get` **aimingZoom**(): `number` <Badge type="tip" text="other" />
 
@@ -144,7 +144,7 @@ Set模拟瞄准时的瞄准镜放大倍数
 
 ___
 
-### cameraOffsetDistanceInThirdPersonMode  
+### cameraOffsetDistanceInThirdPersonMode <Score text="cameraOffsetDistanceInThirdPersonMode" /> 
 
 • `get` **cameraOffsetDistanceInThirdPersonMode**(): `number` <Badge type="tip" text="other" />
 
@@ -181,7 +181,7 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 
 ___
 
-### defaultCameraSpringArmLength  
+### defaultCameraSpringArmLength <Score text="defaultCameraSpringArmLength" /> 
 
 • `get` **defaultCameraSpringArmLength**(): `number` <Badge type="tip" text="other" />
 
@@ -218,7 +218,7 @@ Set第三人称常态下相机弹簧组件的默认长度
 
 ___
 
-### scopeTypeIndex  
+### scopeTypeIndex <Score text="scopeTypeIndex" /> 
 
 • `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <Badge type="tip" text="other" />
 
@@ -249,7 +249,7 @@ Set模拟瞄准镜UI种类
 
 ## Methods
 
-### bindOpenAimComponentDelegates  
+### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
 
 ▸ **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
@@ -261,7 +261,7 @@ Set模拟瞄准镜UI种类
 
 ___
 
-### enableAiming  
+### enableAiming <Score text="enableAiming" /> 
 
 ▸ **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
 

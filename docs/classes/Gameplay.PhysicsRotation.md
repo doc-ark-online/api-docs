@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotation
 
-# PhysicsRotation <Badge type="tip" text="Class" /> 
+# PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
 **`Description`**
 
@@ -44,7 +44,7 @@
 
 ## Accessors
 
-### angularLimit  
+### angularLimit <Score text="angularLimit" /> 
 
 • `get` **angularLimit**(): [`Vector`](Type.Vector.md)
 
@@ -71,7 +71,7 @@
 
 ___
 
-### angularVelocity  
+### angularVelocity <Score text="angularVelocity" /> 
 
 • `get` **angularVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -99,7 +99,7 @@ ___
 
 
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -127,7 +127,7 @@ ___
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
 
@@ -157,7 +157,7 @@ ___
 
 ## Methods
 
-### getAngularLimitType  
+### getAngularLimitType <Score text="getAngularLimitType" /> 
 
 ▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -180,7 +180,7 @@ ___
 限制类型
 
 
-### setAngularLimitType  
+### setAngularLimitType <Score text="setAngularLimitType" /> 
 
 ▸ **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
 

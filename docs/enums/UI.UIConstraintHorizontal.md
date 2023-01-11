@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIConstraintHorizontal
 
-# UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> 
+# UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### Center  
+### Center <Score text="Center" /> 
 
 • **Center** = ``3``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### Left  
+### Left <Score text="Left" /> 
 
 • **Left** = ``0``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### LeftRight  
+### LeftRight <Score text="LeftRight" /> 
 
 • **LeftRight** = ``2``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### Right  
+### Right <Score text="Right" /> 
 
 • **Right** = ``1``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### Scale  
+### Scale <Score text="Scale" /> 
 
 • **Scale** = ``4``
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterBase
 
-# CharacterBase <Badge type="tip" text="Class" /> 
+# CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
 **`Description`**
 
@@ -214,7 +214,7 @@ CharacterBase是一个具有外观和动画表现，且内置移动逻辑的Game
 
 ## Properties
 
-### isV1  
+### isV1 <Score text="isV" /> 
 
 • `Private` **isV1**: `any` <Badge type="tip" text="other" />
 
@@ -226,7 +226,7 @@ CharacterBase是一个具有外观和动画表现，且内置移动逻辑的Game
 
 ___
 
-### onLoadAppearanceDataAllCompleted  
+### onLoadAppearanceDataAllCompleted <Score text="onLoadAppearanceDataAllCompleted" /> 
 
 • **onLoadAppearanceDataAllCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\>
 
@@ -236,7 +236,7 @@ ___
 
 ___
 
-### onMeshChanged  
+### onMeshChanged <Score text="onMeshChanged" /> 
 
 • **onMeshChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
 
@@ -246,7 +246,7 @@ ___
 
 ___
 
-### onMovementStateChanged  
+### onMovementStateChanged <Score text="onMovementStateChanged" /> 
 
 • **onMovementStateChanged**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged)
 
@@ -256,7 +256,7 @@ ___
 
 ___
 
-### onSetAppearanceDataCompleted  
+### onSetAppearanceDataCompleted <Score text="onSetAppearanceDataCompleted" /> 
 
 • **onSetAppearanceDataCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\>
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### onTextureChanged  
+### onTextureChanged <Score text="onTextureChanged" /> 
 
 • **onTextureChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
 
@@ -276,7 +276,7 @@ ___
 
 ___
 
-### player  
+### player <Score text="player" /> 
 
 • **player**: [`Player`](Gameplay.Player.md)
 
@@ -286,7 +286,7 @@ ___
 
 ## Accessors
 
-### airControl  
+### airControl <Score text="airControl" /> 
 
 • `get` **airControl**(): `number`
 
@@ -325,7 +325,7 @@ ___
 
 ___
 
-### airControlBoostMultiplier  
+### airControlBoostMultiplier <Score text="airControlBoostMultiplier" /> 
 
 • `get` **airControlBoostMultiplier**(): `number`
 
@@ -364,7 +364,7 @@ ___
 
 ___
 
-### airControlBoostVelocityThreshold  
+### airControlBoostVelocityThreshold <Score text="airControlBoostVelocityThreshold" /> 
 
 • `get` **airControlBoostVelocityThreshold**(): `number`
 
@@ -403,7 +403,7 @@ ___
 
 ___
 
-### animationMode  
+### animationMode <Score text="animationMode" /> 
 
 • `get` **animationMode**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md)
 
@@ -430,7 +430,7 @@ ___
 
 ___
 
-### animationStance  
+### animationStance <Score text="animationStance" /> 
 
 • `get` **animationStance**(): `string`
 
@@ -469,7 +469,7 @@ ___
 
 ___
 
-### appearance  
+### appearance <Score text="appearance" /> 
 
 • `get` **appearance**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md)
 
@@ -483,7 +483,7 @@ ___
 
 ___
 
-### baseShadowLocationOffset  
+### baseShadowLocationOffset <Score text="baseShadowLocationOffset" /> 
 
 • `get` **baseShadowLocationOffset**(): [`Vector2`](Type.Vector2.md)
 
@@ -510,7 +510,7 @@ ___
 
 ___
 
-### baseShadowMaxVisibleHeight  
+### baseShadowMaxVisibleHeight <Score text="baseShadowMaxVisibleHeight" /> 
 
 • `get` **baseShadowMaxVisibleHeight**(): `number`
 
@@ -537,7 +537,7 @@ ___
 
 ___
 
-### baseShadowScale  
+### baseShadowScale <Score text="baseShadowScale" /> 
 
 • `get` **baseShadowScale**(): [`Vector2`](Type.Vector2.md)
 
@@ -564,7 +564,7 @@ ___
 
 ___
 
-### basicStance  
+### basicStance <Score text="basicStance" /> 
 
 • `get` **basicStance**(): `string`
 
@@ -603,7 +603,7 @@ ___
 
 ___
 
-### basicStanceAimOffsetEnable  
+### basicStanceAimOffsetEnable <Score text="basicStanceAimOffsetEnable" /> 
 
 • `get` **basicStanceAimOffsetEnable**(): `boolean`
 
@@ -630,7 +630,7 @@ ___
 
 ___
 
-### brakingDecelerationFalling  
+### brakingDecelerationFalling <Score text="brakingDecelerationFalling" /> 
 
 • `get` **brakingDecelerationFalling**(): `number`
 
@@ -657,7 +657,7 @@ ___
 
 ___
 
-### brakingDecelerationFlying  
+### brakingDecelerationFlying <Score text="brakingDecelerationFlying" /> 
 
 • `get` **brakingDecelerationFlying**(): `number`
 
@@ -684,7 +684,7 @@ ___
 
 ___
 
-### brakingDecelerationSwimming  
+### brakingDecelerationSwimming <Score text="brakingDecelerationSwimming" /> 
 
 • `get` **brakingDecelerationSwimming**(): `number`
 
@@ -711,7 +711,7 @@ ___
 
 ___
 
-### brakingDecelerationWalking  
+### brakingDecelerationWalking <Score text="brakingDecelerationWalking" /> 
 
 • `get` **brakingDecelerationWalking**(): `number`
 
@@ -738,7 +738,7 @@ ___
 
 ___
 
-### canSetAppearanceData  
+### canSetAppearanceData <Score text="canSetAppearanceData" /> 
 
 • `get` **canSetAppearanceData**(): `boolean`
 
@@ -752,7 +752,7 @@ ___
 
 ___
 
-### canStepUpOn  
+### canStepUpOn <Score text="canStepUpOn" /> 
 
 • `get` **canStepUpOn**(): `boolean` <Badge type="tip" text="other" />
 
@@ -785,7 +785,7 @@ true 其他角色可以站到玩家头上  false 其他角色不可以站到玩�
 
 ___
 
-### capsuleHalfHeight  
+### capsuleHalfHeight <Score text="capsuleHalfHeight" /> 
 
 • `get` **capsuleHalfHeight**(): `number`
 
@@ -812,7 +812,7 @@ ___
 
 ___
 
-### capsuleRadius  
+### capsuleRadius <Score text="capsuleRadius" /> 
 
 • `get` **capsuleRadius**(): `number`
 
@@ -839,7 +839,7 @@ ___
 
 ___
 
-### characterName  
+### characterName <Score text="characterName" /> 
 
 • `get` **characterName**(): `string`
 
@@ -878,7 +878,7 @@ ___
 
 ___
 
-### collisionEnable  
+### collisionEnable <Score text="collisionEnable" /> 
 
 • `get` **collisionEnable**(): `boolean`
 
@@ -905,7 +905,7 @@ ___
 
 ___
 
-### collisionExtent  
+### collisionExtent <Score text="collisionExtent" /> 
 
 • `get` **collisionExtent**(): [`Vector`](Type.Vector.md)
 
@@ -919,7 +919,7 @@ ___
 
 ___
 
-### collisionShape  
+### collisionShape <Score text="collisionShape" /> 
 
 • `get` **collisionShape**(): [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md)
 
@@ -933,7 +933,7 @@ ___
 
 ___
 
-### collisionWithOtherCharacterEnable  
+### collisionWithOtherCharacterEnable <Score text="collisionWithOtherCharacterEnable" /> 
 
 • `get` **collisionWithOtherCharacterEnable**(): `boolean`
 
@@ -960,7 +960,7 @@ ___
 
 ___
 
-### crouchEnable  
+### crouchEnable <Score text="crouchEnable" /> 
 
 • `get` **crouchEnable**(): `boolean`
 
@@ -987,7 +987,7 @@ ___
 
 ___
 
-### crouchedHeight  
+### crouchedHeight <Score text="crouchedHeight" /> 
 
 • `get` **crouchedHeight**(): `number`
 
@@ -1014,7 +1014,7 @@ ___
 
 ___
 
-### forceUpdateMovement  
+### forceUpdateMovement <Score text="forceUpdateMovement" /> 
 
 • `set` **forceUpdateMovement**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -1031,7 +1031,7 @@ ___
 
 
 
-### gravityScale  
+### gravityScale <Score text="gravityScale" /> 
 
 • `get` **gravityScale**(): `number`
 
@@ -1064,7 +1064,7 @@ ___
 
 ___
 
-### groundFriction  
+### groundFriction <Score text="groundFriction" /> 
 
 • `get` **groundFriction**(): `number`
 
@@ -1090,7 +1090,7 @@ ___
 
 
 
-### headUIVisible  
+### headUIVisible <Score text="headUIVisible" /> 
 
 • `get` **headUIVisible**(): `boolean`
 
@@ -1117,7 +1117,7 @@ ___
 
 ___
 
-### headUIVisibleRange  
+### headUIVisibleRange <Score text="headUIVisibleRange" /> 
 
 • `get` **headUIVisibleRange**(): `number`
 
@@ -1144,7 +1144,7 @@ ___
 
 ___
 
-### isCrouching  
+### isCrouching <Score text="isCrouching" /> 
 
 • `get` **isCrouching**(): `boolean`
 
@@ -1158,7 +1158,7 @@ ___
 
 ___
 
-### isJumping  
+### isJumping <Score text="isJumping" /> 
 
 • `get` **isJumping**(): `boolean`
 
@@ -1172,7 +1172,7 @@ ___
 
 ___
 
-### isMoving  
+### isMoving <Score text="isMoving" /> 
 
 • `get` **isMoving**(): `boolean`
 
@@ -1186,7 +1186,7 @@ ___
 
 ___
 
-### jumpEnable  
+### jumpEnable <Score text="jumpEnable" /> 
 
 • `get` **jumpEnable**(): `boolean`
 
@@ -1213,7 +1213,7 @@ ___
 
 ___
 
-### jumpMaxCount  
+### jumpMaxCount <Score text="jumpMaxCount" /> 
 
 • `get` **jumpMaxCount**(): `number`
 
@@ -1240,7 +1240,7 @@ ___
 
 ___
 
-### jumpingOutOfWaterEnable  
+### jumpingOutOfWaterEnable <Score text="jumpingOutOfWaterEnable" /> 
 
 • `get` **jumpingOutOfWaterEnable**(): `boolean`
 
@@ -1267,7 +1267,7 @@ ___
 
 ___
 
-### locallyVisible  
+### locallyVisible <Score text="locallyVisible" /> 
 
 • `get` **locallyVisible**(): `boolean`
 
@@ -1301,7 +1301,7 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
 
 
-### maxAcceleration  
+### maxAcceleration <Score text="maxAcceleration" /> 
 
 • `get` **maxAcceleration**(): `number`
 
@@ -1328,7 +1328,7 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
 ___
 
-### maxFallingSpeed  
+### maxFallingSpeed <Score text="maxFallingSpeed" /> 
 
 • `get` **maxFallingSpeed**(): `number`
 
@@ -1355,7 +1355,7 @@ ___
 
 ___
 
-### maxFlySpeed  
+### maxFlySpeed <Score text="maxFlySpeed" /> 
 
 • `get` **maxFlySpeed**(): `number`
 
@@ -1382,7 +1382,7 @@ ___
 
 ___
 
-### maxJumpHeight  
+### maxJumpHeight <Score text="maxJumpHeight" /> 
 
 • `get` **maxJumpHeight**(): `number`
 
@@ -1409,7 +1409,7 @@ ___
 
 ___
 
-### maxStepHeight  
+### maxStepHeight <Score text="maxStepHeight" /> 
 
 • `get` **maxStepHeight**(): `number`
 
@@ -1436,7 +1436,7 @@ ___
 
 ___
 
-### maxSwimSpeed  
+### maxSwimSpeed <Score text="maxSwimSpeed" /> 
 
 • `get` **maxSwimSpeed**(): `number`
 
@@ -1463,7 +1463,7 @@ ___
 
 ___
 
-### maxWalkSpeed  
+### maxWalkSpeed <Score text="maxWalkSpeed" /> 
 
 • `get` **maxWalkSpeed**(): `number`
 
@@ -1490,7 +1490,7 @@ ___
 
 ___
 
-### maxWalkSpeedCrouched  
+### maxWalkSpeedCrouched <Score text="maxWalkSpeedCrouched" /> 
 
 • `get` **maxWalkSpeedCrouched**(): `number`
 
@@ -1517,7 +1517,7 @@ ___
 
 ___
 
-### moveEnable  
+### moveEnable <Score text="moveEnable" /> 
 
 • `get` **moveEnable**(): `boolean`
 
@@ -1544,7 +1544,7 @@ ___
 
 ___
 
-### moveFacingDirection  
+### moveFacingDirection <Score text="moveFacingDirection" /> 
 
 • `get` **moveFacingDirection**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
 
@@ -1571,7 +1571,7 @@ ___
 
 ___
 
-### movementAxisDirection  
+### movementAxisDirection <Score text="movementAxisDirection" /> 
 
 • `get` **movementAxisDirection**(): [`Vector`](Type.Vector.md)
 
@@ -1598,7 +1598,7 @@ ___
 
 ___
 
-### movementDirection  
+### movementDirection <Score text="movementDirection" /> 
 
 • `get` **movementDirection**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md)
 
@@ -1633,7 +1633,7 @@ ___
 
 ___
 
-### movementState  
+### movementState <Score text="movementState" /> 
 
 • `get` **movementState**(): [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
@@ -1646,7 +1646,7 @@ ___
 [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
 
-### outOfWaterZ  
+### outOfWaterZ <Score text="outOfWaterZ" /> 
 
 • `get` **outOfWaterZ**(): `number`
 
@@ -1672,7 +1672,7 @@ ___
 
 
 
-### ragdollEnable  
+### ragdollEnable <Score text="ragdollEnable" /> 
 
 • `get` **ragdollEnable**(): `boolean`
 
@@ -1698,7 +1698,7 @@ ___
 
 
 
-### rotateRate  
+### rotateRate <Score text="rotateRate" /> 
 
 • `get` **rotateRate**(): `number`
 
@@ -1737,7 +1737,7 @@ ___
 
 ___
 
-### scale  
+### scale <Score text="scale" /> 
 
 • `get` **scale**(): [`Vector`](Type.Vector.md)
 
@@ -1764,7 +1764,7 @@ ___
 
 ___
 
-### separateBrakingFrictionEnable  
+### separateBrakingFrictionEnable <Score text="separateBrakingFrictionEnable" /> 
 
 • `get` **separateBrakingFrictionEnable**(): `boolean`
 
@@ -1790,7 +1790,7 @@ ___
 
 
 
-### usedCapsuleCorrection  
+### usedCapsuleCorrection <Score text="usedCapsuleCorrection" /> 
 
 • `get` **usedCapsuleCorrection**(): `boolean`
 
@@ -1817,7 +1817,7 @@ ___
 
 ___
 
-### velocity  
+### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): [`Vector`](Type.Vector.md)
 
@@ -1830,7 +1830,7 @@ ___
 [`Vector`](Type.Vector.md)
 
 
-### walkableFloorAngle  
+### walkableFloorAngle <Score text="walkableFloorAngle" /> 
 
 • `get` **walkableFloorAngle**(): `number`
 
@@ -1858,7 +1858,7 @@ ___
 
 ## Methods
 
-### addImpulse  
+### addImpulse <Score text="addImpulse" /> 
 
 ▸ **addImpulse**(`Vector`, `ignoreMass?`): `void` <Badge type="tip" text="other" />
 
@@ -1884,7 +1884,7 @@ ___
 
 ___
 
-### addMoveInput  
+### addMoveInput <Score text="addMoveInput" /> 
 
 ▸ **addMoveInput**(`direction`): `void` <Badge type="tip" text="other" />
 
@@ -1909,7 +1909,7 @@ ___
 
 ___
 
-### appearanceReady  
+### appearanceReady <Score text="appearanceReady" /> 
 
 ▸ **appearanceReady**(): `Promise`<`void`\> <Badge type="tip" text="other" />
 
@@ -1926,7 +1926,7 @@ ___
 异步回调
 
 
-### attach  
+### attach <Score text="attach" /> 
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
@@ -1945,7 +1945,7 @@ ___
 
 
 
-### clearDecorations  
+### clearDecorations <Score text="clearDecorations" /> 
 
 ▸ **clearDecorations**(): `void` <Badge type="tip" text="other" />
 
@@ -1958,7 +1958,7 @@ ___
 
 ___
 
-### clearOneDecoration  
+### clearOneDecoration <Score text="clearOneDecoration" /> 
 
 ▸ **clearOneDecoration**(`GUID`): `void` <Badge type="tip" text="other" />
 
@@ -1976,7 +1976,7 @@ ___
 
 
 
-### crouch  
+### crouch <Score text="crouch" /> 
 
 ▸ **crouch**(`isCrouch`): `void` <Badge type="tip" text="other" />
 
@@ -1994,7 +1994,7 @@ ___
 
 
 
-### getControlRotator  
+### getControlRotator <Score text="getControlRotator" /> 
 
 ▸ **getControlRotator**(`Out?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -2018,7 +2018,7 @@ ___
 
 ___
 
-### getDecorations  
+### getDecorations <Score text="getDecorations" /> 
 
 ▸ **getDecorations**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <Badge type="tip" text="other" />
 
@@ -2035,7 +2035,7 @@ ___
 GUID数组
 
 
-### getHeadUIWidget  
+### getHeadUIWidget <Score text="getHeadUIWidget" /> 
 
 ▸ **getHeadUIWidget**(): [`UIWidget`](Gameplay.UIWidget.md) <Badge type="tip" text="other" />
 
@@ -2052,7 +2052,7 @@ GUID数组
 头顶UIWidget对象
 
 
-### getSlotName  
+### getSlotName <Score text="getSlotName" /> 
 
 ▸ **getSlotName**(`slotType`): `string` <Badge type="tip" text="other" />
 
@@ -2075,7 +2075,7 @@ GUID数组
 插槽名称(string)
 
 
-### isPlayingAnimation  
+### isPlayingAnimation <Score text="isPlayingAnimation" /> 
 
 ▸ **isPlayingAnimation**(): `boolean` <Badge type="tip" text="other" />
 
@@ -2092,7 +2092,7 @@ GUID数组
 是否正在播放动画
 
 
-### jump  
+### jump <Score text="jump" /> 
 
 ▸ **jump**(): `void` <Badge type="tip" text="other" />
 
@@ -2105,7 +2105,7 @@ GUID数组
 
 ___
 
-### loadAnimation  
+### loadAnimation <Score text="loadAnimation" /> 
 
 ▸ **loadAnimation**(`GUID`, `sync?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
 
@@ -2130,7 +2130,7 @@ Animation 对象
 
 ___
 
-### loadDecoration  
+### loadDecoration <Score text="loadDecoration" /> 
 
 ▸ **loadDecoration**(`decorationString`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -2150,7 +2150,7 @@ ___
 
 ___
 
-### loadSlotAndEditorDataByGuid  
+### loadSlotAndEditorDataByGuid <Score text="loadSlotAndEditorDataByGuid" /> 
 
 ▸ **loadSlotAndEditorDataByGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
@@ -2169,7 +2169,7 @@ ___
 
 ___
 
-### loadSlotAndEditorDataByPath  
+### loadSlotAndEditorDataByPath <Score text="loadSlotAndEditorDataByPath" /> 
 
 ▸ **loadSlotAndEditorDataByPath**(`relativePath`): `void` <Badge type="tip" text="other" />
 
@@ -2188,7 +2188,7 @@ ___
 
 ___
 
-### loadStance  
+### loadStance <Score text="loadStance" /> 
 
 ▸ **loadStance**(`GUID`, `sync?`): [`SubStance`](Gameplay.SubStance.md)
 
@@ -2219,7 +2219,7 @@ ___
 
 ___
 
-### lookAt  
+### lookAt <Score text="lookAt" /> 
 
 ▸ **lookAt**(`TargetPoint`): `void` <Badge type="tip" text="other" />
 
@@ -2237,7 +2237,7 @@ ___
 
 
 
-### playAnimation  
+### playAnimation <Score text="playAnimation" /> 
 
 ▸ **playAnimation**(`GUID`, `loopCount?`, `rate?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
 
@@ -2263,7 +2263,7 @@ Animation 对象
 
 ___
 
-### playAnimationLocally  
+### playAnimationLocally <Score text="playAnimationLocally" /> 
 
 ▸ **playAnimationLocally**(`AnimationGuid`, `AnimationLength?`, `LoopCount?`): `void` <Badge type="tip" text="other" />
 
@@ -2287,7 +2287,7 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 
 
-### setAppearance  
+### setAppearance <Score text="setAppearance" /> 
 
 ▸ **setAppearance**<`T`\>(`clz`): `T` <Badge type="tip" text="other" />
 
@@ -2316,7 +2316,7 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 外观修改对象
 
 
-### setCollisionShapeAndExtent  
+### setCollisionShapeAndExtent <Score text="setCollisionShapeAndExtent" /> 
 
 ▸ **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void` <Badge type="tip" text="other" />
 
@@ -2336,7 +2336,7 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 ___
 
-### setLocallyVisibility  
+### setLocallyVisibility <Score text="setLocallyVisibility" /> 
 
 ▸ **setLocallyVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
 
@@ -2355,7 +2355,7 @@ ___
 
 
 
-### stopAnimation  
+### stopAnimation <Score text="stopAnimation" /> 
 
 ▸ **stopAnimation**(`InAnimationGuid`): `void` <Badge type="tip" text="other" />
 
@@ -2378,7 +2378,7 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 ___
 
-### stopStance  
+### stopStance <Score text="stopStance" /> 
 
 ▸ **stopStance**(`sync?`): `void` <Badge type="tip" text="other" />
 
@@ -2403,7 +2403,7 @@ ___
 
 ___
 
-### swimmingDown  
+### swimmingDown <Score text="swimmingDown" /> 
 
 ▸ **swimmingDown**(`speed`): `void` <Badge type="tip" text="other" />
 
@@ -2422,7 +2422,7 @@ ___
 
 ___
 
-### swimmingUp  
+### swimmingUp <Score text="swimmingUp" /> 
 
 ▸ **swimmingUp**(`speed`): `void` <Badge type="tip" text="other" />
 
@@ -2441,7 +2441,7 @@ ___
 
 ___
 
-### switchToFlying  
+### switchToFlying <Score text="switchToFlying" /> 
 
 ▸ **switchToFlying**(): `void` <Badge type="tip" text="other" />
 
@@ -2454,7 +2454,7 @@ ___
 
 ___
 
-### switchToWalking  
+### switchToWalking <Score text="switchToWalking" /> 
 
 ▸ **switchToWalking**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkeletalMesh
 
-# SkeletalMesh <Badge type="tip" text="Class" /> 
+# SkeletalMesh <Badge type="tip" text="Class" /> <Score text="SkeletalMesh" />
 
 **`Description`**
 

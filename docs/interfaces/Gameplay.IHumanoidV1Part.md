@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV1Part
 
-# IHumanoidV1Part <Badge type="tip" text="Interface" /> 
+# IHumanoidV1Part <Badge type="tip" text="Interface" /> <Score text="IHumanoidV1Part" />
 
 **`Description`**
 
@@ -19,7 +19,7 @@
 
 ## Methods
 
-### getWholeBody  
+### getWholeBody <Score text="getWholeBody" /> 
 
 ▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
 
@@ -37,7 +37,7 @@
 
 ___
 
-### setWholeBody  
+### setWholeBody <Score text="setWholeBody" /> 
 
 ▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

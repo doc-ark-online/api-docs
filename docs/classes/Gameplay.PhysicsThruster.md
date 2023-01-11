@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsThruster
 
-# PhysicsThruster <Badge type="tip" text="Class" /> 
+# PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 
 **`Description`**
 
@@ -108,7 +108,7 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -136,7 +136,7 @@ true：启用
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
 

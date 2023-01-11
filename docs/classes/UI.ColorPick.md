@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ColorPick
 
-# ColorPick <Badge type="tip" text="Class" /> 
+# ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
 **`Description`**
 
@@ -69,7 +69,7 @@
 
 ## Accessors
 
-### color  
+### color <Score text="color" /> 
 
 • `set` **color**(`inColor`): `void`
 
@@ -86,7 +86,7 @@
 
 
 
-### imageGuid  
+### imageGuid <Score text="imageGuid" /> 
 
 • `set` **imageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
 
@@ -103,7 +103,7 @@
 
 
 
-### onColorChangeFinished  
+### onColorChangeFinished <Score text="onColorChangeFinished" /> 
 
 • `get` **onColorChangeFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -120,7 +120,7 @@
 
 ___
 
-### onColorChanged  
+### onColorChanged <Score text="onColorChanged" /> 
 
 • `get` **onColorChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### onTouchFinished  
+### onTouchFinished <Score text="onTouchFinished" /> 
 
 • `get` **onTouchFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -154,7 +154,7 @@ ___
 
 ___
 
-### onTouchStart  
+### onTouchStart <Score text="onTouchStart" /> 
 
 • `get` **onTouchStart**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -172,7 +172,7 @@ ___
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ColorPick`](UI.ColorPick.md) <Badge type="tip" text="other" />
 

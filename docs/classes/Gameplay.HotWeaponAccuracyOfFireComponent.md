@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAccuracyOfFireComponent
 
-# HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> 
+# HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
 **`Description`**
 
@@ -30,7 +30,7 @@
 
 ## Properties
 
-### onCurrentDispersionChangedClient  
+### onCurrentDispersionChangedClient <Score text="onCurrentDispersionChangedClient" /> 
 
 • **onCurrentDispersionChangedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -40,7 +40,7 @@
 
 ## Accessors
 
-### defaultDispersionHalfAngle  
+### defaultDispersionHalfAngle <Score text="defaultDispersionHalfAngle" /> 
 
 • `get` **defaultDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -72,7 +72,7 @@ Set子弹随机发散范围的默认半径
 
 ___
 
-### dispersionHalfAngleDecreaseSpeed  
+### dispersionHalfAngleDecreaseSpeed <Score text="dispersionHalfAngleDecreaseSpeed" /> 
 
 • `get` **dispersionHalfAngleDecreaseSpeed**(): `number` <Badge type="tip" text="other" />
 
@@ -109,7 +109,7 @@ Set子弹随机发散范围半径的收缩速度
 
 ___
 
-### dispersionHalfAngleIncreasePerShot  
+### dispersionHalfAngleIncreasePerShot <Score text="dispersionHalfAngleIncreasePerShot" /> 
 
 • `get` **dispersionHalfAngleIncreasePerShot**(): `number` <Badge type="tip" text="other" />
 
@@ -146,7 +146,7 @@ Set子弹随机发散范围半径在每次射击后的扩张值
 
 ___
 
-### dispersionHalfAngleIncreaseSpeed  
+### dispersionHalfAngleIncreaseSpeed <Score text="dispersionHalfAngleIncreaseSpeed" /> 
 
 • `get` **dispersionHalfAngleIncreaseSpeed**(): `number` <Badge type="tip" text="other" />
 
@@ -183,7 +183,7 @@ Set子弹随机发散范围半径的扩张速度
 
 ___
 
-### maxDispersionHalfAngle  
+### maxDispersionHalfAngle <Score text="maxDispersionHalfAngle" /> 
 
 • `get` **maxDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -215,7 +215,7 @@ Set子弹随机发散范围的最大半径
 
 ___
 
-### minDispersionHalfAngle  
+### minDispersionHalfAngle <Score text="minDispersionHalfAngle" /> 
 
 • `get` **minDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -252,7 +252,7 @@ Set子弹随机发散范围的最小半径
 
 ## Methods
 
-### bindOpenAccuracyOfFireComponentDelegates  
+### bindOpenAccuracyOfFireComponentDelegates <Score text="bindOpenAccuracyOfFireComponentDelegates" /> 
 
 ▸ **bindOpenAccuracyOfFireComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
@@ -264,7 +264,7 @@ Set子弹随机发散范围的最小半径
 
 ___
 
-### getCurrentDispersionHalfAngle  
+### getCurrentDispersionHalfAngle <Score text="getCurrentDispersionHalfAngle" /> 
 
 ▸ **getCurrentDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -281,7 +281,7 @@ Get当前子弹随机发散范围半径实际值
 
 ___
 
-### getRandomShootDir  
+### getRandomShootDir <Score text="getRandomShootDir" /> 
 
 ▸ **getRandomShootDir**(`ShootDirNoDispersion`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -311,7 +311,7 @@ ___
 
 ___
 
-### getTargetDispersionHalfAngle  
+### getTargetDispersionHalfAngle <Score text="getTargetDispersionHalfAngle" /> 
 
 ▸ **getTargetDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 

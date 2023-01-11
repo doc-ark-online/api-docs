@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / PointerEvent
 
-# PointerEvent <Badge type="tip" text="Class" /> 
+# PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 
 **`Description`**
 
@@ -30,7 +30,7 @@
 
 ## Accessors
 
-### effectingButton  
+### effectingButton <Score text="effectingButton" /> 
 
 • `get` **effectingButton**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="other" />
 
@@ -47,7 +47,7 @@
 
 ___
 
-### isTouchEvent  
+### isTouchEvent <Score text="isTouchEvent" /> 
 
 • `get` **isTouchEvent**(): `boolean` <Badge type="tip" text="other" />
 
@@ -64,7 +64,7 @@ ___
 
 ___
 
-### lastScreenSpacePosition  
+### lastScreenSpacePosition <Score text="lastScreenSpacePosition" /> 
 
 • `get` **lastScreenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -81,7 +81,7 @@ ___
 
 ___
 
-### mouseWheelDelta  
+### mouseWheelDelta <Score text="mouseWheelDelta" /> 
 
 • `get` **mouseWheelDelta**(): `number` <Badge type="tip" text="other" />
 
@@ -98,7 +98,7 @@ ___
 
 ___
 
-### pointerIndex  
+### pointerIndex <Score text="pointerIndex" /> 
 
 • `get` **pointerIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@ ___
 
 ___
 
-### screenSpacePosition  
+### screenSpacePosition <Score text="screenSpacePosition" /> 
 
 • `get` **screenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -132,7 +132,7 @@ ___
 
 ___
 
-### touchPadIndex  
+### touchPadIndex <Score text="touchPadIndex" /> 
 
 • `get` **touchPadIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -149,7 +149,7 @@ ___
 
 ___
 
-### userIndex  
+### userIndex <Score text="userIndex" /> 
 
 • `get` **userIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -166,7 +166,7 @@ ___
 
 ## Methods
 
-### isMouseButtonDown  
+### isMouseButtonDown <Score text="isMouseButtonDown" /> 
 
 ▸ **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="other" />
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### toInputEvent  
+### toInputEvent <Score text="toInputEvent" /> 
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TextBlock
 
-# TextBlock <Badge type="tip" text="Class" /> 
+# TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
 **`Description`**
 
@@ -90,7 +90,7 @@ UI文本
 
 ## Accessors
 
-### contentColor  
+### contentColor <Score text="contentColor" /> 
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -120,7 +120,7 @@ UI文本
 
 
 
-### fontColor  
+### fontColor <Score text="fontColor" /> 
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -151,7 +151,7 @@ UI文本
 
 ___
 
-### fontLetterSpace  
+### fontLetterSpace <Score text="fontLetterSpace" /> 
 
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### fontLitterSpace  
+### fontLitterSpace <Score text="fontLitterSpace" /> 
 
 • `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
 
@@ -186,7 +186,7 @@ ___
 
 ___
 
-### fontSize  
+### fontSize <Score text="fontSize" /> 
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
@@ -217,7 +217,7 @@ ___
 
 ___
 
-### glyph  
+### glyph <Score text="glyph" /> 
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
@@ -247,7 +247,7 @@ ___
 
 
 
-### lineHeightPercentage  
+### lineHeightPercentage <Score text="lineHeightPercentage" /> 
 
 • `get` **lineHeightPercentage**(): `number` <Badge type="tip" text="other" />
 
@@ -277,7 +277,7 @@ ___
 
 
 
-### outlineColor  
+### outlineColor <Score text="outlineColor" /> 
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -310,7 +310,7 @@ ___
 
 ___
 
-### outlineSize  
+### outlineSize <Score text="outlineSize" /> 
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
@@ -340,7 +340,7 @@ ___
 
 
 
-### shadowColor  
+### shadowColor <Score text="shadowColor" /> 
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -371,7 +371,7 @@ ___
 
 ___
 
-### shadowOffset  
+### shadowOffset <Score text="shadowOffset" /> 
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -401,7 +401,7 @@ ___
 
 
 
-### strikethroughEnable  
+### strikethroughEnable <Score text="strikethroughEnable" /> 
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -432,7 +432,7 @@ ___
 
 ___
 
-### text  
+### text <Score text="text" /> 
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
 
@@ -463,7 +463,7 @@ ___
 
 ___
 
-### textAlign  
+### textAlign <Score text="textAlign" /> 
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
@@ -494,7 +494,7 @@ ___
 
 ___
 
-### textHeight  
+### textHeight <Score text="textHeight" /> 
 
 • `get` **textHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -512,7 +512,7 @@ ___
 
 ___
 
-### textHorizontalLayout  
+### textHorizontalLayout <Score text="textHorizontalLayout" /> 
 
 • `get` **textHorizontalLayout**(): [`UITextHorizontalLayout`](../enums/UI.UITextHorizontalLayout.md) <Badge type="tip" text="other" />
 
@@ -543,7 +543,7 @@ ___
 
 ___
 
-### textJustification  
+### textJustification <Score text="textJustification" /> 
 
 • `get` **textJustification**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
@@ -574,7 +574,7 @@ ___
 
 ___
 
-### textSingleHeight  
+### textSingleHeight <Score text="textSingleHeight" /> 
 
 • `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -591,7 +591,7 @@ ___
 
 ___
 
-### textVerticalAlign  
+### textVerticalAlign <Score text="textVerticalAlign" /> 
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
@@ -622,7 +622,7 @@ ___
 
 ___
 
-### textVerticalJustification  
+### textVerticalJustification <Score text="textVerticalJustification" /> 
 
 • `get` **textVerticalJustification**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
@@ -652,7 +652,7 @@ ___
 
 
 
-### underlineEnable  
+### underlineEnable <Score text="underlineEnable" /> 
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -684,7 +684,7 @@ ___
 
 ## Methods
 
-### setFontColorByHex  
+### setFontColorByHex <Score text="setFontColorByHex" /> 
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -702,7 +702,7 @@ ___
 
 ___
 
-### setFontColorDecimal  
+### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -723,7 +723,7 @@ ___
 
 ___
 
-### setOutlineColorByHex  
+### setOutlineColorByHex <Score text="setOutlineColorByHex" /> 
 
 ▸ **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -741,7 +741,7 @@ ___
 
 ___
 
-### setOutlineColorDecimal  
+### setOutlineColorDecimal <Score text="setOutlineColorDecimal" /> 
 
 ▸ **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -762,7 +762,7 @@ ___
 
 ___
 
-### setShadowColorByHex  
+### setShadowColorByHex <Score text="setShadowColorByHex" /> 
 
 ▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -780,7 +780,7 @@ ___
 
 ___
 
-### setShadowColorDecimal  
+### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
 ▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -801,7 +801,7 @@ ___
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="other" />
 

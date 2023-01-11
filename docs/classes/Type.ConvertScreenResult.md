@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / ConvertScreenResult
 
-# ConvertScreenResult <Badge type="tip" text="Class" /> 
+# ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Properties
 
-### result  
+### result <Score text="result" /> 
 
 • **result**: `boolean`
 
@@ -27,7 +27,7 @@
 
 ___
 
-### screenPosition  
+### screenPosition <Score text="screenPosition" /> 
 
 • **screenPosition**: [`Vector2`](Type.Vector2.md)
 
@@ -37,7 +37,7 @@ ___
 
 ___
 
-### worldDirection  
+### worldDirection <Score text="worldDirection" /> 
 
 • **worldDirection**: [`Vector`](Type.Vector.md)
 
@@ -47,7 +47,7 @@ ___
 
 ___
 
-### worldLocation  
+### worldLocation <Score text="worldLocation" /> 
 
 • **worldLocation**: [`Vector`](Type.Vector.md)
 

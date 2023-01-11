@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / EventReply
 
-# EventReply <Badge type="tip" text="Class" /> 
+# EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 
 **`Description`**
 
@@ -31,7 +31,7 @@ UE的默认值构造
 
 ## Accessors
 
-### handled  
+### handled <Score text="handled" /> 
 
 • `Static` `get` **handled**(): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
@@ -46,7 +46,7 @@ UE的默认值构造
 
 ___
 
-### unHandled  
+### unHandled <Score text="unHandled" /> 
 
 • `Static` `get` **unHandled**(): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 

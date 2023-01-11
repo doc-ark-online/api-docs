@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AnalyticsService
 
-# AnalyticsService <Badge type="tip" text="Class" /> 
+# AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 
 **`Instance`**
 
@@ -24,7 +24,7 @@
 
 ## Methods
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
 
@@ -41,7 +41,7 @@
 
 ___
 
-### googleEventTracking  
+### googleEventTracking <Score text="googleEventTracking" /> 
 
 ▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### googleInit  
+### googleInit <Score text="googleInit" /> 
 
 ▸ `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
 

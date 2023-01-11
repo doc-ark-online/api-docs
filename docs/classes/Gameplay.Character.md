@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Character
 
-# Character <Badge type="tip" text="Class" /> 
+# Character <Badge type="tip" text="Class" /> <Score text="Character" />
 
 **`Description`**
 
@@ -159,7 +159,7 @@ Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem�
 
 ## Accessors
 
-### cameraSystem  
+### cameraSystem <Score text="cameraSystem" /> 
 
 • `get` **cameraSystem**(): [`CameraSystem`](Gameplay.CameraSystem.md)
 
@@ -172,7 +172,7 @@ Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem�
 [`CameraSystem`](Gameplay.CameraSystem.md)
 
 
-### onSkill1Triggered  
+### onSkill1Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill1Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -186,7 +186,7 @@ Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem�
 
 ___
 
-### onSkill2Triggered  
+### onSkill2Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill2Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -200,7 +200,7 @@ ___
 
 ___
 
-### onSkill3Triggered  
+### onSkill3Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill3Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### onSkill4Triggered  
+### onSkill4Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill4Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -228,7 +228,7 @@ ___
 
 ___
 
-### onSkill5Triggered  
+### onSkill5Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill5Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 

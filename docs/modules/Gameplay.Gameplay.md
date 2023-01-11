@@ -1,6 +1,6 @@
 Gameplay
 
-# Gameplay <Badge type="tip" text="Namespace" /> 
+# Gameplay <Badge type="tip" text="Namespace" /> <Score text="Gameplay" />
 
 ## Table of contents
 
@@ -195,7 +195,7 @@ Gameplay
 
 ## Type Aliases
 
-### CameraShakeData  
+### CameraShakeData <Score text="CameraShakeData" /> 
 
 Ƭ **CameraShakeData**: `Object`
 
@@ -223,7 +223,7 @@ Gameplay
 
 ___
 
-### CameraSystemData  
+### CameraSystemData <Score text="CameraSystemData" /> 
 
 Ƭ **CameraSystemData**: `Object`
 
@@ -267,7 +267,7 @@ ___
 
 ___
 
-### Constructor  
+### Constructor <Score text="Constructor" /> 
 
 Ƭ **Constructor**<`T`\>: (...`args`: `any`[]) => `T`
 
@@ -293,7 +293,7 @@ ___
 
 ___
 
-### DecorationTuple  
+### DecorationTuple <Score text="DecorationTuple" /> 
 
 Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`]
 
@@ -303,7 +303,7 @@ ___
 
 ___
 
-### EmptyCallback  
+### EmptyCallback <Score text="EmptyCallback" /> 
 
 Ƭ **EmptyCallback**: () => `void`
 
@@ -321,7 +321,7 @@ ___
 
 ___
 
-### LoadAppearanceDataAllCompletedCallback  
+### LoadAppearanceDataAllCompletedCallback <Score text="LoadAppearanceDataAllCompletedCallback" /> 
 
 Ƭ **LoadAppearanceDataAllCompletedCallback**: () => `void`
 
@@ -339,7 +339,7 @@ ___
 
 ___
 
-### OnMovementStateChanged  
+### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
 
 Ƭ **OnMovementStateChanged**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void`
 
@@ -363,7 +363,7 @@ ___
 
 ___
 
-### OnRecvChatMessage  
+### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
 
 Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
 
@@ -388,7 +388,7 @@ ___
 
 ___
 
-### Oscillator  
+### Oscillator <Score text="Oscillator" /> 
 
 Ƭ **Oscillator**: `Object`
 
@@ -412,7 +412,7 @@ ___
 
 ___
 
-### SetAppearanceDataCallback  
+### SetAppearanceDataCallback <Score text="SetAppearanceDataCallback" /> 
 
 Ƭ **SetAppearanceDataCallback**: (`APIName`: `string`) => `void`
 
@@ -436,7 +436,7 @@ ___
 
 ___
 
-### StringCallback  
+### StringCallback <Score text="StringCallback" /> 
 
 Ƭ **StringCallback**: (`str`: `string`) => `void`
 
@@ -460,7 +460,7 @@ ___
 
 ___
 
-### VehicleGearData  
+### VehicleGearData <Score text="VehicleGearData" /> 
 
 Ƭ **VehicleGearData**: `Object`
 
@@ -479,7 +479,7 @@ ___
 
 ___
 
-### VehicleWheelData  
+### VehicleWheelData <Score text="VehicleWheelData" /> 
 
 Ƭ **VehicleWheelData**: `Object`
 
@@ -497,7 +497,7 @@ ___
 
 ___
 
-### onAppearanceDataChanged  
+### onAppearanceDataChanged <Score text="onAppearanceDataChanged" /> 
 
 Ƭ **onAppearanceDataChanged**: (`GUID`: `string`) => `void`
 
@@ -521,7 +521,7 @@ ___
 
 ## Functions
 
-### addOutlineEffect  
+### addOutlineEffect <Score text="addOutlineEffect" /> 
 
 ▸ **addOutlineEffect**(`obj`, `OutlineColor?`, `OutlineWidth?`, `OutlineDepthOffset?`, `OutlineClampValue?`, `considerCameraPosition?`, `outlineSilhouetteOnly?`): `void` <Badge type="tip" text="other" />
 
@@ -546,7 +546,7 @@ ___
 
 ___
 
-### angleCheck  
+### angleCheck <Score text="angleCheck" /> 
 
 ▸ **angleCheck**(`StartLocation`, `StartDirection`, `TargetLocation`, `Angle`): `boolean` <Badge type="tip" text="other" />
 
@@ -572,7 +572,7 @@ true，在角度范围内
 
 ___
 
-### asyncGetCurrentPlayer  
+### asyncGetCurrentPlayer <Score text="asyncGetCurrentPlayer" /> 
 
 ▸ **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
 
@@ -589,7 +589,7 @@ ___
 
 ___
 
-### asyncGetPlayer  
+### asyncGetPlayer <Score text="asyncGetPlayer" /> 
 
 ▸ **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
 
@@ -612,7 +612,7 @@ playerId对应的玩家
 
 ___
 
-### boxOverlapInLevel  
+### boxOverlapInLevel <Score text="boxOverlapInLevel" /> 
 
 ▸ **boxOverlapInLevel**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
 
@@ -639,7 +639,7 @@ GameObject数组
 
 ___
 
-### clearMoveTo  
+### clearMoveTo <Score text="clearMoveTo" /> 
 
 ▸ **clearMoveTo**(`player`): `void` <Badge type="tip" text="other" />
 
@@ -658,7 +658,7 @@ ___
 
 ___
 
-### cylinderOverlap  
+### cylinderOverlap <Score text="cylinderOverlap" /> 
 
 ▸ **cylinderOverlap**(`StartLocation`, `Radius`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
 
@@ -684,7 +684,7 @@ GameObject数组
 
 ___
 
-### getAllPlayers  
+### getAllPlayers <Score text="getAllPlayers" /> 
 
 ▸ **getAllPlayers**(): [`Player`](../classes/Gameplay.Player.md)[] <Badge type="tip" text="other" />
 
@@ -701,7 +701,7 @@ ___
 
 ___
 
-### getClickGameObjectByScene  
+### getClickGameObjectByScene <Score text="getClickGameObjectByScene" /> 
 
 ▸ **getClickGameObjectByScene**(`SceneX`, `SceneY`, `Distance`, `multiTrace`, `onRay`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
 
@@ -729,7 +729,7 @@ ___
 
 ___
 
-### getCurrentPlayer  
+### getCurrentPlayer <Score text="getCurrentPlayer" /> 
 
 ▸ **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
 
@@ -746,7 +746,7 @@ ___
 
 ___
 
-### getPlayer  
+### getPlayer <Score text="getPlayer" /> 
 
 ▸ **getPlayer**(`playerId`): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
 
@@ -769,7 +769,7 @@ ___
 
 ___
 
-### getShootDir  
+### getShootDir <Score text="getShootDir" /> 
 
 ▸ **getShootDir**(`character`, `startLoc`, `distance?`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -795,7 +795,7 @@ ___
 
 ___
 
-### isDynamicVibration  
+### isDynamicVibration <Score text="isDynamicVibration" /> 
 
 ▸ **isDynamicVibration**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -814,7 +814,7 @@ ___
 
 ___
 
-### lineTrace  
+### lineTrace <Score text="lineTrace" /> 
 
 ▸ **lineTrace**(`StartLocation`, `EndLocation`, `multiTrace`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
 
@@ -840,7 +840,7 @@ HitResult数组
 
 ___
 
-### moveTo  
+### moveTo <Score text="moveTo" /> 
 
 ▸ **moveTo**(`player`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` <Badge type="tip" text="other" />
 
@@ -863,7 +863,7 @@ ___
 
 ___
 
-### parabolicTrace  
+### parabolicTrace <Score text="parabolicTrace" /> 
 
 ▸ **parabolicTrace**(`StartLocation`, `Direction`, `InitSpeed`, `Range`, `CapsuleRadius`, `IgnoreObjectTypes`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md) <Badge type="tip" text="other" />
 
@@ -892,7 +892,7 @@ HitResult
 
 ___
 
-### playDynamicForceFeedbackStart  
+### playDynamicForceFeedbackStart <Score text="playDynamicForceFeedbackStart" /> 
 
 ▸ **playDynamicForceFeedbackStart**(`Intensity?`, `Duration?`): `void` <Badge type="tip" text="other" />
 
@@ -912,7 +912,7 @@ ___
 
 ___
 
-### playDynamicForceFeedbackStop  
+### playDynamicForceFeedbackStop <Score text="playDynamicForceFeedbackStop" /> 
 
 ▸ **playDynamicForceFeedbackStop**(): `void` <Badge type="tip" text="other" />
 
@@ -925,7 +925,7 @@ ___
 
 ___
 
-### removeOutlineEffect  
+### removeOutlineEffect <Score text="removeOutlineEffect" /> 
 
 ▸ **removeOutlineEffect**(`obj`): `void` <Badge type="tip" text="other" />
 
@@ -944,7 +944,7 @@ ___
 
 ___
 
-### setGlobalAsyncTimeout  
+### setGlobalAsyncTimeout <Score text="setGlobalAsyncTimeout" /> 
 
 ▸ **setGlobalAsyncTimeout**(`overtime`): `void` <Badge type="tip" text="other" />
 
@@ -962,7 +962,7 @@ ___
 
 ___
 
-### setGlobalTimeDilation  
+### setGlobalTimeDilation <Score text="setGlobalTimeDilation" /> 
 
 ▸ **setGlobalTimeDilation**(`Time`): `void` <Badge type="tip" text="other" />
 
@@ -986,7 +986,7 @@ ___
 
 ___
 
-### setPlayerPassableForAllArea  
+### setPlayerPassableForAllArea <Score text="setPlayerPassableForAllArea" /> 
 
 ▸ **setPlayerPassableForAllArea**(`Target`, `CanPass`): `void` <Badge type="tip" text="other" />
 
@@ -1012,7 +1012,7 @@ setPassableBlockingAreaActor(player,true)
 
 ___
 
-### setStaticMeshMaterialColor  
+### setStaticMeshMaterialColor <Score text="setStaticMeshMaterialColor" /> 
 
 ▸ **setStaticMeshMaterialColor**(`obj`, `color`): `void` <Badge type="tip" text="other" />
 
@@ -1032,7 +1032,7 @@ ___
 
 ___
 
-### spawnNewParticle  
+### spawnNewParticle <Score text="spawnNewParticle" /> 
 
 ▸ **spawnNewParticle**(`template`, `trans`, `bloop?`): `void` <Badge type="tip" text="other" />
 
@@ -1053,7 +1053,7 @@ ___
 
 ___
 
-### spawnNewSound  
+### spawnNewSound <Score text="spawnNewSound" /> 
 
 ▸ **spawnNewSound**(`template`, `location`): `void` <Badge type="tip" text="other" />
 
@@ -1073,7 +1073,7 @@ ___
 
 ___
 
-### sphereOverlap  
+### sphereOverlap <Score text="sphereOverlap" /> 
 
 ▸ **sphereOverlap**(`StartLocation`, `Radius`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
 

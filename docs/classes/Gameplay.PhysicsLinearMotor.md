@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsLinearMotor
 
-# PhysicsLinearMotor <Badge type="tip" text="Class" /> 
+# PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
 **`Description`**
 
@@ -41,7 +41,7 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
 
@@ -71,7 +71,7 @@
 
 
 
-### maxVelocity  
+### maxVelocity <Score text="maxVelocity" /> 
 
 • `get` **maxVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -101,7 +101,7 @@
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
 

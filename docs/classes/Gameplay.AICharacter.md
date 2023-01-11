@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AICharacter
 
-# AICharacter <Badge type="tip" text="Class" /> 
+# AICharacter <Badge type="tip" text="Class" /> <Score text="AICharacter" />
 
 **`Description`**
 
@@ -146,7 +146,7 @@
 
 ## Accessors
 
-### serverCalculateEnable  
+### serverCalculateEnable <Score text="serverCalculateEnable" /> 
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
 
@@ -172,7 +172,7 @@
 
 ## Methods
 
-### setServerMovementEnable  
+### setServerMovementEnable <Score text="setServerMovementEnable" /> 
 
 ▸ **setServerMovementEnable**(`value`): `void` <Badge type="tip" text="other" />
 

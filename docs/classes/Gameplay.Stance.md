@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Stance
 
-# Stance <Badge type="tip" text="Class" /> 
+# Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
 **`Description`**
 
@@ -38,7 +38,7 @@
 
 ## Methods
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(): `boolean` <Badge type="tip" text="other" />
 
@@ -64,7 +64,7 @@
 
 ___
 
-### playInternal  
+### playInternal <Score text="playInternal" /> 
 
 ▸ `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
 
@@ -81,7 +81,7 @@ ___
 
 ___
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `boolean` <Badge type="tip" text="other" />
 
@@ -107,7 +107,7 @@ ___
 
 ___
 
-### stopInternal  
+### stopInternal <Score text="stopInternal" /> 
 
 ▸ **stopInternal**(): `boolean` <Badge type="tip" text="other" />
 

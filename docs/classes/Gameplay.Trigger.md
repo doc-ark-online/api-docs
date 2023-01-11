@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Trigger
 
-# Trigger <Badge type="tip" text="Class" /> 
+# Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 
 **`Description`**
 
@@ -124,7 +124,7 @@
 
 ## Properties
 
-### onEnter  
+### onEnter <Score text="onEnter" /> 
 
 • **onEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
@@ -134,7 +134,7 @@
 
 ___
 
-### onLeave  
+### onLeave <Score text="onLeave" /> 
 
 • **onLeave**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
@@ -146,7 +146,7 @@ ___
 
 ## Methods
 
-### isBoxShape  
+### isBoxShape <Score text="isBoxShape" /> 
 
 ▸ **isBoxShape**(): `boolean` <Badge type="tip" text="other" />
 
@@ -163,7 +163,7 @@ true:触发器是盒体
 
 ___
 
-### isInArea  
+### isInArea <Score text="isInArea" /> 
 
 ▸ **isInArea**(`gameObject`): `boolean` <Badge type="tip" text="other" />
 
@@ -185,7 +185,7 @@ ___
 true:为在触发器范围内
 
 
-### isSphereShape  
+### isSphereShape <Score text="isSphereShape" /> 
 
 ▸ **isSphereShape**(): `boolean` <Badge type="tip" text="other" />
 
@@ -201,7 +201,7 @@ true:为在触发器范围内
 true:触发器是球体
 
 
-### setBoxExtent  
+### setBoxExtent <Score text="setBoxExtent" /> 
 
 ▸ **setBoxExtent**(`InBoxExtent`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
 
@@ -219,7 +219,7 @@ true:触发器是球体
 
 
 
-### setCollisionEnabled  
+### setCollisionEnabled <Score text="setCollisionEnabled" /> 
 
 ▸ **setCollisionEnabled**(`enable`): `void` <Badge type="tip" text="other" />
 
@@ -236,7 +236,7 @@ true:触发器是球体
 
 
 
-### setSphereRadius  
+### setSphereRadius <Score text="setSphereRadius" /> 
 
 ▸ **setSphereRadius**(`InSphereRadius`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ true:触发器是球体
 
 
 
-### toggleTriggerShape  
+### toggleTriggerShape <Score text="toggleTriggerShape" /> 
 
 ▸ **toggleTriggerShape**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ProgressBar
 
-# ProgressBar <Badge type="tip" text="Class" /> 
+# ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
 **`Description`**
 
@@ -85,7 +85,7 @@ UI进度条
 
 ## Accessors
 
-### backgroundImageColor  
+### backgroundImageColor <Score text="backgroundImageColor" /> 
 
 • `get` **backgroundImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -116,7 +116,7 @@ UI进度条
 
 ___
 
-### backgroundImageDrawType  
+### backgroundImageDrawType <Score text="backgroundImageDrawType" /> 
 
 • `get` **backgroundImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -147,7 +147,7 @@ ___
 
 ___
 
-### backgroundImageGuid  
+### backgroundImageGuid <Score text="backgroundImageGuid" /> 
 
 • `get` **backgroundImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -180,7 +180,7 @@ void
 
 ___
 
-### backgroundImageMargin  
+### backgroundImageMargin <Score text="backgroundImageMargin" /> 
 
 • `get` **backgroundImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -211,7 +211,7 @@ ___
 
 ___
 
-### backgroundImageSize  
+### backgroundImageSize <Score text="backgroundImageSize" /> 
 
 • `get` **backgroundImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -241,7 +241,7 @@ ___
 
 
 
-### currentValue  
+### currentValue <Score text="currentValue" /> 
 
 • `get` **currentValue**(): `number` <Badge type="tip" text="other" />
 
@@ -273,7 +273,7 @@ ___
 void
 
 
-### fillImageColor  
+### fillImageColor <Score text="fillImageColor" /> 
 
 • `get` **fillImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -304,7 +304,7 @@ void
 
 ___
 
-### fillImageDrawType  
+### fillImageDrawType <Score text="fillImageDrawType" /> 
 
 • `get` **fillImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -336,7 +336,7 @@ ___
 
 ___
 
-### fillImageGuid  
+### fillImageGuid <Score text="fillImageGuid" /> 
 
 • `get` **fillImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -369,7 +369,7 @@ void
 
 ___
 
-### fillImageMargin  
+### fillImageMargin <Score text="fillImageMargin" /> 
 
 • `get` **fillImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -400,7 +400,7 @@ ___
 
 ___
 
-### fillImageSize  
+### fillImageSize <Score text="fillImageSize" /> 
 
 • `get` **fillImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -431,7 +431,7 @@ ___
 
 ___
 
-### fillType  
+### fillType <Score text="fillType" /> 
 
 • `get` **fillType**(): [`ProgressBarFillType`](../enums/UI.ProgressBarFillType.md) <Badge type="tip" text="other" />
 
@@ -463,7 +463,7 @@ ___
 void
 
 
-### isRoundedToInt  
+### isRoundedToInt <Score text="isRoundedToInt" /> 
 
 • `get` **isRoundedToInt**(): `boolean` <Badge type="tip" text="other" />
 
@@ -495,7 +495,7 @@ void
 void
 
 
-### onSliderValueChanged  
+### onSliderValueChanged <Score text="onSliderValueChanged" /> 
 
 • `get` **onSliderValueChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="other" />
 
@@ -511,7 +511,7 @@ Slider值变化事件
 变化事件
 
 
-### percent  
+### percent <Score text="percent" /> 
 
 • `get` **percent**(): `number` <Badge type="tip" text="other" />
 
@@ -543,7 +543,7 @@ Slider值变化事件
 void
 
 
-### sliderMaxValue  
+### sliderMaxValue <Score text="sliderMaxValue" /> 
 
 • `get` **sliderMaxValue**(): `number` <Badge type="tip" text="other" />
 
@@ -576,7 +576,7 @@ void
 
 ___
 
-### sliderMinValue  
+### sliderMinValue <Score text="sliderMinValue" /> 
 
 • `get` **sliderMinValue**(): `number` <Badge type="tip" text="other" />
 
@@ -608,7 +608,7 @@ ___
 void
 
 
-### thumbImageColor  
+### thumbImageColor <Score text="thumbImageColor" /> 
 
 • `get` **thumbImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -639,7 +639,7 @@ void
 
 ___
 
-### thumbImageDrawType  
+### thumbImageDrawType <Score text="thumbImageDrawType" /> 
 
 • `get` **thumbImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -670,7 +670,7 @@ ___
 
 ___
 
-### thumbImageGuid  
+### thumbImageGuid <Score text="thumbImageGuid" /> 
 
 • `get` **thumbImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -703,7 +703,7 @@ void
 
 ___
 
-### thumbImageMargin  
+### thumbImageMargin <Score text="thumbImageMargin" /> 
 
 • `get` **thumbImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -734,7 +734,7 @@ ___
 
 ___
 
-### thumbImageSize  
+### thumbImageSize <Score text="thumbImageSize" /> 
 
 • `get` **thumbImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -766,7 +766,7 @@ ___
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ProgressBar`](UI.ProgressBar.md) <Badge type="tip" text="other" />
 

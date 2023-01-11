@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
 
-# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> 
+# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
 **`Description`**
 
@@ -34,7 +34,7 @@
 
 ## Properties
 
-### onStartRecoilForceClient  
+### onStartRecoilForceClient <Score text="onStartRecoilForceClient" /> 
 
 • **onStartRecoilForceClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -44,7 +44,7 @@
 
 ___
 
-### onStartRecoilForceServer  
+### onStartRecoilForceServer <Score text="onStartRecoilForceServer" /> 
 
 • **onStartRecoilForceServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -54,7 +54,7 @@ ___
 
 ## Accessors
 
-### maxHorizontalJitter  
+### maxHorizontalJitter <Score text="maxHorizontalJitter" /> 
 
 • `get` **maxHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -91,7 +91,7 @@ ___
 
 ___
 
-### maxHorizontalOffset  
+### maxHorizontalOffset <Score text="maxHorizontalOffset" /> 
 
 • `get` **maxHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -123,7 +123,7 @@ ___
 
 ___
 
-### maxVerticalJitter  
+### maxVerticalJitter <Score text="maxVerticalJitter" /> 
 
 • `get` **maxVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### maxVerticalOffset  
+### maxVerticalOffset <Score text="maxVerticalOffset" /> 
 
 • `get` **maxVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -197,7 +197,7 @@ ___
 
 ___
 
-### minHorizontalJitter  
+### minHorizontalJitter <Score text="minHorizontalJitter" /> 
 
 • `get` **minHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -234,7 +234,7 @@ ___
 
 ___
 
-### minHorizontalOffset  
+### minHorizontalOffset <Score text="minHorizontalOffset" /> 
 
 • `get` **minHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### minVerticalJitter  
+### minVerticalJitter <Score text="minVerticalJitter" /> 
 
 • `get` **minVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -303,7 +303,7 @@ ___
 
 ___
 
-### minVerticalOffset  
+### minVerticalOffset <Score text="minVerticalOffset" /> 
 
 • `get` **minVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -340,7 +340,7 @@ ___
 
 ## Methods
 
-### getDeepJitter  
+### getDeepJitter <Score text="getDeepJitter" /> 
 
 ▸ **getDeepJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -357,7 +357,7 @@ ___
 
 ___
 
-### getHorizontalJitter  
+### getHorizontalJitter <Score text="getHorizontalJitter" /> 
 
 ▸ **getHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -374,7 +374,7 @@ ___
 
 ___
 
-### getHorizontalOffset  
+### getHorizontalOffset <Score text="getHorizontalOffset" /> 
 
 ▸ **getHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
@@ -391,7 +391,7 @@ ___
 
 ___
 
-### getVerticalJitter  
+### getVerticalJitter <Score text="getVerticalJitter" /> 
 
 ▸ **getVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
@@ -408,7 +408,7 @@ ___
 
 ___
 
-### getVerticalOffset  
+### getVerticalOffset <Score text="getVerticalOffset" /> 
 
 ▸ **getVerticalOffset**(): `number` <Badge type="tip" text="other" />
 

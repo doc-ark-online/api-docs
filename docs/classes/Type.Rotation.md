@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Rotation
 
-# Rotation <Badge type="tip" text="Class" /> 
+# Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
 **`Description`**
 
@@ -125,7 +125,7 @@
 
 ## Properties
 
-### x  
+### x <Score text="x" /> 
 
 • **x**: `number`
 
@@ -135,7 +135,7 @@
 
 ___
 
-### y  
+### y <Score text="y" /> 
 
 • **y**: `number`
 
@@ -145,7 +145,7 @@ ___
 
 ___
 
-### z  
+### z <Score text="z" /> 
 
 • **z**: `number`
 
@@ -155,7 +155,7 @@ ___
 
 ## Accessors
 
-### zero  
+### zero <Score text="zero" /> 
 
 • `Static` `get` **zero**(): [`Rotation`](Type.Rotation.md)
 
@@ -171,7 +171,7 @@ Rotation (0, 0, 0)
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`a`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -194,7 +194,7 @@ this
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -211,7 +211,7 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -235,7 +235,7 @@ ___
 
 ___
 
-### fromQuaternion  
+### fromQuaternion <Score text="fromQuaternion" /> 
 
 ▸ **fromQuaternion**(`v`): `void` <Badge type="tip" text="other" />
 
@@ -253,7 +253,7 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
@@ -271,7 +271,7 @@ ___
 
 ___
 
-### fromVector  
+### fromVector <Score text="fromVector" /> 
 
 ▸ **fromVector**(`v`): `void` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ ___
 
 ___
 
-### getForce  
+### getForce <Score text="getForce" /> 
 
 ▸ **getForce**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -318,7 +318,7 @@ ___
 
 ___
 
-### getInverse  
+### getInverse <Score text="getInverse" /> 
 
 ▸ **getInverse**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -347,7 +347,7 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`v`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -370,7 +370,7 @@ this
 
 ___
 
-### rotateVector  
+### rotateVector <Score text="rotateVector" /> 
 
 ▸ **rotateVector**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -393,7 +393,7 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ **set**(`v`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -437,7 +437,7 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -460,7 +460,7 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`a`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -483,7 +483,7 @@ this
 
 ___
 
-### toQuaternion  
+### toQuaternion <Score text="toQuaternion" /> 
 
 ▸ **toQuaternion**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
@@ -500,7 +500,7 @@ ___
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -517,7 +517,7 @@ ___
 
 ___
 
-### add  
+### add <Score text="add" /> 
 
 ▸ `Static` **add**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -548,7 +548,7 @@ outer 不能为 null/undefined
 
 ___
 
-### copy  
+### copy <Score text="copy" /> 
 
 ▸ `Static` **copy**(`a`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -578,7 +578,7 @@ outer 不能为 null/undefined
 
 ___
 
-### fromQuaternion  
+### fromQuaternion <Score text="fromQuaternion" /> 
 
 ▸ `Static` **fromQuaternion**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -608,7 +608,7 @@ Rotation
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ `Static` **fromString**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -638,7 +638,7 @@ Rotation
 
 ___
 
-### fromVector  
+### fromVector <Score text="fromVector" /> 
 
 ▸ `Static` **fromVector**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -668,7 +668,7 @@ Rotation
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ `Static` **lerp**(`a`, `b`, `alpha`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -693,7 +693,7 @@ Rotation
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ `Static` **multiply**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -724,7 +724,7 @@ outer 不能为 null/undefined
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ `Static` **subtract**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 

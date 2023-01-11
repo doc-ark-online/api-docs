@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeBase
 
-# SomatotypeBase <Badge type="tip" text="Class" /> 
+# SomatotypeBase <Badge type="tip" text="Class" /> <Score text="SomatotypeBase" />
 
 **`Description`**
 
@@ -39,7 +39,7 @@
 
 ## Properties
 
-### enableOutline  
+### enableOutline <Score text="enableOutline" /> 
 
 • `Protected` **enableOutline**: `boolean`
 
@@ -49,7 +49,7 @@
 
 ___
 
-### postProcessObj  
+### postProcessObj <Score text="postProcessObj" /> 
 
 • `Protected` **postProcessObj**: [`PostProcess`](Gameplay.PostProcess.md)
 
@@ -59,7 +59,7 @@ ___
 
 ## Methods
 
-### enablePostProcess  
+### enablePostProcess <Score text="enablePostProcess" /> 
 
 ▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
 
@@ -80,7 +80,7 @@ ___
 
 ___
 
-### setOutline  
+### setOutline <Score text="setOutline" /> 
 
 ▸ **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
 
@@ -104,7 +104,7 @@ ___
 
 ___
 
-### setOutlineAdvance  
+### setOutlineAdvance <Score text="setOutlineAdvance" /> 
 
 ▸ **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
 

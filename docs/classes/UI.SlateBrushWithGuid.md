@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateBrushWithGuid
 
-# SlateBrushWithGuid <Badge type="tip" text="Class" /> 
+# SlateBrushWithGuid <Badge type="tip" text="Class" /> <Score text="SlateBrushWithGuid" />
 
 **`Description`**
 
@@ -31,7 +31,7 @@
 
 ## Properties
 
-### drawAs  
+### drawAs <Score text="drawAs" /> 
 
 • **drawAs**: [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
 
@@ -41,7 +41,7 @@
 
 ___
 
-### guid  
+### guid <Score text="guid" /> 
 
 • **guid**: `string`
 
@@ -51,7 +51,7 @@ ___
 
 ___
 
-### imageSize  
+### imageSize <Score text="imageSize" /> 
 
 • **imageSize**: [`Vector2`](Type.Vector2.md)
 
@@ -61,7 +61,7 @@ ___
 
 ___
 
-### marin  
+### marin <Score text="marin" /> 
 
 • **marin**: [`Margin`](UI.Margin.md)
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### tintColor  
+### tintColor <Score text="tintColor" /> 
 
 • **tintColor**: [`SlateColor`](UI.SlateColor.md)
 

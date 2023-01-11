@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Animation
 
-# Animation <Badge type="tip" text="Class" /> 
+# Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
 **`Description`**
 
@@ -41,7 +41,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
-### isPlaying  
+### isPlaying <Score text="isPlaying" /> 
 
 • `get` **isPlaying**(): `boolean`
 
@@ -66,7 +66,7 @@ if (anim.isPlaying) {
 
 ___
 
-### length  
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
 
@@ -88,7 +88,7 @@ console.log(anim.length)
 
 ___
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `number`
 
@@ -131,7 +131,7 @@ anim.loop = 23333;
 
 ___
 
-### onAnimFinished  
+### onAnimFinished <Score text="onAnimFinished" /> 
 
 • `get` **onAnimFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -154,7 +154,7 @@ anim.onAnimFinished.add(()=>{
 
 ___
 
-### rate  
+### rate <Score text="rate" /> 
 
 • `get` **rate**(): `number`
 
@@ -204,7 +204,7 @@ this.Anim.play();
 
 ## Methods
 
-### pause  
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `boolean`
 
@@ -232,7 +232,7 @@ true 成功，false 失败
 
 ___
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(): `boolean`
 
@@ -258,7 +258,7 @@ true 成功，false 失败
 
 ___
 
-### resume  
+### resume <Score text="resume" /> 
 
 ▸ **resume**(): `boolean`
 
@@ -286,7 +286,7 @@ true 成功，false 失败
 
 ___
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `boolean`
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileInst
 
-# ProjectileInst <Badge type="tip" text="Class" /> 
+# ProjectileInst <Badge type="tip" text="Class" /> <Score text="ProjectileInst" />
 
 **`Description`**
 

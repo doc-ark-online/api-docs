@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
 
-# AbilityState <Badge type="tip" text="Class" /> 
+# AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
 **`Description`**
 
@@ -31,7 +31,7 @@
 
 ## Accessors
 
-### animation  
+### animation <Score text="animation" /> 
 
 • `get` **animation**(): `string` <Badge type="tip" text="other" />
 
@@ -62,7 +62,7 @@
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
 
@@ -79,7 +79,7 @@ ___
 
 ___
 
-### executeTime  
+### executeTime <Score text="executeTime" /> 
 
 • `get` **executeTime**(): `number` <Badge type="tip" text="other" />
 
@@ -122,7 +122,7 @@ ___
 
 ___
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
@@ -153,7 +153,7 @@ true或false
 
 ## Methods
 
-### addControlAbility  
+### addControlAbility <Score text="addControlAbility" /> 
 
 ▸ **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
@@ -171,7 +171,7 @@ true或false
 
 ___
 
-### cancelControlAbility  
+### cancelControlAbility <Score text="cancelControlAbility" /> 
 
 ▸ **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### enableJump  
+### enableJump <Score text="enableJump" /> 
 
 ▸ **enableJump**(): `boolean` <Badge type="tip" text="other" />
 
@@ -206,7 +206,7 @@ true或false
 
 ___
 
-### enableMove  
+### enableMove <Score text="enableMove" /> 
 
 ▸ **enableMove**(): `boolean` <Badge type="tip" text="other" />
 
@@ -223,7 +223,7 @@ true或false
 
 ___
 
-### enableTurn  
+### enableTurn <Score text="enableTurn" /> 
 
 ▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / GameObject
 
-# GameObject <Badge type="tip" text="Class" /> 
+# GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
 **`Description`**
 
@@ -92,7 +92,7 @@ GameObject的基类
 
 ## Accessors
 
-### forwardVector  
+### forwardVector <Score text="forwardVector" /> 
 
 • `get` **forwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -109,7 +109,7 @@ Vector
 
 ___
 
-### guid  
+### guid <Score text="guid" /> 
 
 • `get` **guid**(): `string` <Badge type="tip" text="other" />
 
@@ -124,7 +124,7 @@ ___
 
 ___
 
-### lockStatus  
+### lockStatus <Score text="lockStatus" /> 
 
 • `get` **lockStatus**(): `boolean` <Badge type="tip" text="other" />
 
@@ -153,7 +153,7 @@ ___
 
 ___
 
-### name  
+### name <Score text="name" /> 
 
 • `get` **name**(): `string` <Badge type="tip" text="other" />
 
@@ -184,7 +184,7 @@ ___
 
 ___
 
-### netStatus  
+### netStatus <Score text="netStatus" /> 
 
 • `get` **netStatus**(): [`NetStatus`](../enums/Type.NetStatus.md) <Badge type="tip" text="other" />
 
@@ -201,7 +201,7 @@ Type.NetStatus
 
 ___
 
-### parent  
+### parent <Score text="parent" /> 
 
 • `get` **parent**(): `GameObject` <Badge type="tip" text="other" />
 
@@ -232,7 +232,7 @@ ___
 
 ___
 
-### relativeLocation  
+### relativeLocation <Score text="relativeLocation" /> 
 
 • `get` **relativeLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -263,7 +263,7 @@ ___
 
 ___
 
-### relativeRotation  
+### relativeRotation <Score text="relativeRotation" /> 
 
 • `get` **relativeRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -294,7 +294,7 @@ ___
 
 ___
 
-### relativeScale  
+### relativeScale <Score text="relativeScale" /> 
 
 • `get` **relativeScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -325,7 +325,7 @@ ___
 
 ___
 
-### rightVector  
+### rightVector <Score text="rightVector" /> 
 
 • `get` **rightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -342,7 +342,7 @@ Vector
 
 ___
 
-### staticStatus  
+### staticStatus <Score text="staticStatus" /> 
 
 • `get` **staticStatus**(): `boolean` <Badge type="tip" text="other" />
 
@@ -357,7 +357,7 @@ ___
 
 ___
 
-### tag  
+### tag <Score text="tag" /> 
 
 • `get` **tag**(): `string` <Badge type="tip" text="other" />
 
@@ -388,7 +388,7 @@ Tag
 
 ___
 
-### transform  
+### transform <Score text="transform" /> 
 
 • `get` **transform**(): [`Transform`](Type.Transform.md)
 
@@ -419,7 +419,7 @@ transform
 
 ___
 
-### upVector  
+### upVector <Score text="upVector" /> 
 
 • `get` **upVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -436,7 +436,7 @@ Vector
 
 ___
 
-### useUpdate  
+### useUpdate <Score text="useUpdate" /> 
 
 • `get` **useUpdate**(): `boolean` <Badge type="tip" text="other" />
 
@@ -465,7 +465,7 @@ ___
 
 ___
 
-### visible  
+### visible <Score text="visible" /> 
 
 • `get` **visible**(): `boolean` <Badge type="tip" text="other" />
 
@@ -486,7 +486,7 @@ bool
 
 ___
 
-### worldLocation  
+### worldLocation <Score text="worldLocation" /> 
 
 • `get` **worldLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -515,7 +515,7 @@ ___
 
 ___
 
-### worldRotation  
+### worldRotation <Score text="worldRotation" /> 
 
 • `get` **worldRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -544,7 +544,7 @@ ___
 
 ___
 
-### worldScale  
+### worldScale <Score text="worldScale" /> 
 
 • `get` **worldScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -573,7 +573,7 @@ ___
 
 ## Methods
 
-### addDestroyCallback  
+### addDestroyCallback <Score text="addDestroyCallback" /> 
 
 ▸ **addDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
 
@@ -591,7 +591,7 @@ ___
 
 ___
 
-### asyncGetScriptByName  
+### asyncGetScriptByName <Score text="asyncGetScriptByName" /> 
 
 ▸ **asyncGetScriptByName**(`name`): `Promise`<`Script`\> <Badge type="tip" text="other" />
 
@@ -614,7 +614,7 @@ Script
 
 ___
 
-### attachToGameObject  
+### attachToGameObject <Score text="attachToGameObject" /> 
 
 ▸ **attachToGameObject**(`obj`): `void` <Badge type="tip" text="other" />
 
@@ -632,7 +632,7 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(`inReplicates?`): `GameObject` <Badge type="tip" text="other" />
 
@@ -655,7 +655,7 @@ ___
 
 ___
 
-### deleteDestroyCallback  
+### deleteDestroyCallback <Score text="deleteDestroyCallback" /> 
 
 ▸ **deleteDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
 
@@ -673,7 +673,7 @@ ___
 
 ___
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
@@ -685,7 +685,7 @@ ___
 
 ___
 
-### detachFromGameObject  
+### detachFromGameObject <Score text="detachFromGameObject" /> 
 
 ▸ **detachFromGameObject**(): `void` <Badge type="tip" text="other" />
 
@@ -697,7 +697,7 @@ ___
 
 ___
 
-### getBoundingBoxSize  
+### getBoundingBoxSize <Score text="getBoundingBoxSize" /> 
 
 ▸ **getBoundingBoxSize**(`nonColliding?`, `includeFromChildActors?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -728,7 +728,7 @@ Type.Vector
 
 ___
 
-### getBounds  
+### getBounds <Score text="getBounds" /> 
 
 ▸ **getBounds**(`onlyCollidingComponents`, `OriginOuter`, `BoxExtentOuter`, `includeFromChildActors?`): `void` <Badge type="tip" text="other" />
 
@@ -749,7 +749,7 @@ ___
 
 ___
 
-### getChildByGuid  
+### getChildByGuid <Score text="getChildByGuid" /> 
 
 ▸ **getChildByGuid**(`GUID`): `GameObject` <Badge type="tip" text="other" />
 
@@ -772,7 +772,7 @@ ___
 
 ___
 
-### getChildByName  
+### getChildByName <Score text="getChildByName" /> 
 
 ▸ **getChildByName**(`name`): `GameObject` <Badge type="tip" text="other" />
 
@@ -795,7 +795,7 @@ ___
 
 ___
 
-### getChildren  
+### getChildren <Score text="getChildren" /> 
 
 ▸ **getChildren**(): `GameObject`[] <Badge type="tip" text="other" />
 
@@ -812,7 +812,7 @@ Array`<GameObject>`
 
 ___
 
-### getChildrenBoxCenter  
+### getChildrenBoxCenter <Score text="getChildrenBoxCenter" /> 
 
 ▸ **getChildrenBoxCenter**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -841,7 +841,7 @@ Type.Vector
 
 ___
 
-### getCollision  
+### getCollision <Score text="getCollision" /> 
 
 ▸ **getCollision**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <Badge type="tip" text="other" />
 
@@ -858,7 +858,7 @@ ___
 
 ___
 
-### getForwardVector  
+### getForwardVector <Score text="getForwardVector" /> 
 
 ▸ **getForwardVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -887,7 +887,7 @@ Vector
 
 ___
 
-### getRelativeLocation  
+### getRelativeLocation <Score text="getRelativeLocation" /> 
 
 ▸ **getRelativeLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -916,7 +916,7 @@ ___
 
 ___
 
-### getRelativeRotation  
+### getRelativeRotation <Score text="getRelativeRotation" /> 
 
 ▸ **getRelativeRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -945,7 +945,7 @@ ___
 
 ___
 
-### getRelativeScale  
+### getRelativeScale <Score text="getRelativeScale" /> 
 
 ▸ **getRelativeScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -974,7 +974,7 @@ ___
 
 ___
 
-### getRightVector  
+### getRightVector <Score text="getRightVector" /> 
 
 ▸ **getRightVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1003,7 +1003,7 @@ Vector
 
 ___
 
-### getScriptByGuid  
+### getScriptByGuid <Score text="getScriptByGuid" /> 
 
 ▸ **getScriptByGuid**(`GUID`): `Script` <Badge type="tip" text="other" />
 
@@ -1026,7 +1026,7 @@ Script
 
 ___
 
-### getScriptByName  
+### getScriptByName <Score text="getScriptByName" /> 
 
 ▸ **getScriptByName**(`name`): `Script` <Badge type="tip" text="other" />
 
@@ -1049,7 +1049,7 @@ Script
 
 ___
 
-### getScripts  
+### getScripts <Score text="getScripts" /> 
 
 ▸ **getScripts**(): `Script`[] <Badge type="tip" text="other" />
 
@@ -1066,7 +1066,7 @@ Array`<Script>`
 
 ___
 
-### getSourceAssetGuid  
+### getSourceAssetGuid <Score text="getSourceAssetGuid" /> 
 
 ▸ **getSourceAssetGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -1083,7 +1083,7 @@ ___
 
 ___
 
-### getTransform  
+### getTransform <Score text="getTransform" /> 
 
 ▸ **getTransform**(`outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
@@ -1112,7 +1112,7 @@ Transform
 
 ___
 
-### getUpVector  
+### getUpVector <Score text="getUpVector" /> 
 
 ▸ **getUpVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1135,7 +1135,7 @@ Vector
 
 ___
 
-### getVisibility  
+### getVisibility <Score text="getVisibility" /> 
 
 ▸ **getVisibility**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1152,7 +1152,7 @@ bool
 
 ___
 
-### getWorldLocation  
+### getWorldLocation <Score text="getWorldLocation" /> 
 
 ▸ **getWorldLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1181,7 +1181,7 @@ ___
 
 ___
 
-### getWorldRotation  
+### getWorldRotation <Score text="getWorldRotation" /> 
 
 ▸ **getWorldRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
@@ -1210,7 +1210,7 @@ ___
 
 ___
 
-### getWorldScale  
+### getWorldScale <Score text="getWorldScale" /> 
 
 ▸ **getWorldScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1239,7 +1239,7 @@ ___
 
 ___
 
-### isRunningClient  
+### isRunningClient <Score text="isRunningClient" /> 
 
 ▸ **isRunningClient**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1256,7 +1256,7 @@ true为客户端
 
 ___
 
-### onDestroy  
+### onDestroy <Score text="onDestroy" /> 
 
 ▸ `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
 
@@ -1268,7 +1268,7 @@ ___
 
 ___
 
-### onStart  
+### onStart <Score text="onStart" /> 
 
 ▸ `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
 
@@ -1280,7 +1280,7 @@ ___
 
 ___
 
-### onUpdate  
+### onUpdate <Score text="onUpdate" /> 
 
 ▸ `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
 
@@ -1298,7 +1298,7 @@ ___
 
 ___
 
-### ready  
+### ready <Score text="ready" /> 
 
 ▸ **ready**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <Badge type="tip" text="other" />
 
@@ -1315,7 +1315,7 @@ GameObject准备好后返回
 
 ___
 
-### setCollision  
+### setCollision <Score text="setCollision" /> 
 
 ▸ **setCollision**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
 
@@ -1340,7 +1340,7 @@ ___
 
 ___
 
-### setLocationAndRotation  
+### setLocationAndRotation <Score text="setLocationAndRotation" /> 
 
 ▸ **setLocationAndRotation**(`location`, `rotation`): `void` <Badge type="tip" text="other" />
 
@@ -1359,7 +1359,7 @@ ___
 
 ___
 
-### setRelativeLocation  
+### setRelativeLocation <Score text="setRelativeLocation" /> 
 
 ▸ **setRelativeLocation**(`location`): `void` <Badge type="tip" text="other" />
 
@@ -1377,7 +1377,7 @@ ___
 
 ___
 
-### setRelativeRotation  
+### setRelativeRotation <Score text="setRelativeRotation" /> 
 
 ▸ **setRelativeRotation**(`rotation`): `void` <Badge type="tip" text="other" />
 
@@ -1395,7 +1395,7 @@ ___
 
 ___
 
-### setRelativeScale  
+### setRelativeScale <Score text="setRelativeScale" /> 
 
 ▸ **setRelativeScale**(`scale`): `void` <Badge type="tip" text="other" />
 
@@ -1413,7 +1413,7 @@ ___
 
 ___
 
-### setTransform  
+### setTransform <Score text="setTransform" /> 
 
 ▸ **setTransform**(`transform`): `void` <Badge type="tip" text="other" />
 
@@ -1431,7 +1431,7 @@ ___
 
 ___
 
-### setVisibility  
+### setVisibility <Score text="setVisibility" /> 
 
 ▸ **setVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
 
@@ -1450,7 +1450,7 @@ ___
 
 ___
 
-### setWorldLocation  
+### setWorldLocation <Score text="setWorldLocation" /> 
 
 ▸ **setWorldLocation**(`v`): `void` <Badge type="tip" text="other" />
 
@@ -1468,7 +1468,7 @@ ___
 
 ___
 
-### setWorldRotation  
+### setWorldRotation <Score text="setWorldRotation" /> 
 
 ▸ **setWorldRotation**(`rotation`): `void` <Badge type="tip" text="other" />
 
@@ -1486,7 +1486,7 @@ ___
 
 ___
 
-### setWorldScale  
+### setWorldScale <Score text="setWorldScale" /> 
 
 ▸ **setWorldScale**(`v`): `void` <Badge type="tip" text="other" />
 
@@ -1504,7 +1504,7 @@ ___
 
 ___
 
-### asyncFind  
+### asyncFind <Score text="asyncFind" /> 
 
 ▸ `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
 
@@ -1528,7 +1528,7 @@ GUID对应的物体
 
 ___
 
-### asyncSpawnGameObject  
+### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
 
 ▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
 
@@ -1552,7 +1552,7 @@ ___
 
 ___
 
-### find  
+### find <Score text="find" /> 
 
 ▸ `Static` **find**(`GUID`): `GameObject` <Badge type="tip" text="other" />
 
@@ -1575,7 +1575,7 @@ GUID对应的物体
 
 ___
 
-### findGameObjectByTag  
+### findGameObjectByTag <Score text="findGameObjectByTag" /> 
 
 ▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[] <Badge type="tip" text="other" />
 
@@ -1598,7 +1598,7 @@ Array`<GameObject>`
 
 ___
 
-### getGameObjectByName  
+### getGameObjectByName <Score text="getGameObjectByName" /> 
 
 ▸ `Static` **getGameObjectByName**(`name`): `GameObject` <Badge type="tip" text="other" />
 
@@ -1621,7 +1621,7 @@ ___
 
 ___
 
-### getGameObjectsByName  
+### getGameObjectsByName <Score text="getGameObjectsByName" /> 
 
 ▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[] <Badge type="tip" text="other" />
 
@@ -1644,7 +1644,7 @@ ___
 
 ___
 
-### spawnGameObject  
+### spawnGameObject <Score text="spawnGameObject" /> 
 
 ▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject` <Badge type="tip" text="other" />
 

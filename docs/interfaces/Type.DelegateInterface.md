@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / DelegateInterface
 
-# DelegateInterface<T\> <Badge type="tip" text="Interface" /> 
+# DelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="DelegateInterface<T\>" />
 
 **`Description`**
 
@@ -30,7 +30,7 @@
 
 ## Methods
 
-### bind  
+### bind <Score text="bind" /> 
 
 ▸ **bind**(`func`): `void` <Badge type="tip" text="other" />
 
@@ -48,7 +48,7 @@
 
 ___
 
-### execute  
+### execute <Score text="execute" /> 
 
 ▸ **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### isBound  
+### isBound <Score text="isBound" /> 
 
 ▸ **isBound**(): `boolean` <Badge type="tip" text="other" />
 
@@ -88,7 +88,7 @@ ___
 
 ___
 
-### unbind  
+### unbind <Score text="unbind" /> 
 
 ▸ **unbind**(): `void` <Badge type="tip" text="other" />
 

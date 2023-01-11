@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2Shape
 
-# HumanoidV2Shape <Badge type="tip" text="Class" /> 
+# HumanoidV2Shape <Badge type="tip" text="Class" /> <Score text="HumanoidV2Shape" />
 
 **`Description`**
 
@@ -179,7 +179,7 @@
 
 ## Methods
 
-### getBreastHorizontalPosition  
+### getBreastHorizontalPosition <Score text="getBreastHorizontalPosition" /> 
 
 ▸ **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -201,7 +201,7 @@
 
 ___
 
-### getBreastLength  
+### getBreastLength <Score text="getBreastLength" /> 
 
 ▸ **getBreastLength**(): `number` <Badge type="tip" text="other" />
 
@@ -223,7 +223,7 @@ ___
 
 ___
 
-### getBreastScale  
+### getBreastScale <Score text="getBreastScale" /> 
 
 ▸ **getBreastScale**(): `number` <Badge type="tip" text="other" />
 
@@ -245,7 +245,7 @@ ___
 
 ___
 
-### getBreastStretch  
+### getBreastStretch <Score text="getBreastStretch" /> 
 
 ▸ **getBreastStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -267,7 +267,7 @@ ___
 
 ___
 
-### getBreastVerticalPosition  
+### getBreastVerticalPosition <Score text="getBreastVerticalPosition" /> 
 
 ▸ **getBreastVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ ___
 
 ___
 
-### getBrowGap  
+### getBrowGap <Score text="getBrowGap" /> 
 
 ▸ **getBrowGap**(): `number` <Badge type="tip" text="other" />
 
@@ -311,7 +311,7 @@ ___
 
 ___
 
-### getBrowHeight  
+### getBrowHeight <Score text="getBrowHeight" /> 
 
 ▸ **getBrowHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -333,7 +333,7 @@ ___
 
 ___
 
-### getBrowInboardShape  
+### getBrowInboardShape <Score text="getBrowInboardShape" /> 
 
 ▸ **getBrowInboardShape**(): `number` <Badge type="tip" text="other" />
 
@@ -355,7 +355,7 @@ ___
 
 ___
 
-### getBrowOutsideShape  
+### getBrowOutsideShape <Score text="getBrowOutsideShape" /> 
 
 ▸ **getBrowOutsideShape**(): `number` <Badge type="tip" text="other" />
 
@@ -377,7 +377,7 @@ ___
 
 ___
 
-### getBrowRotation  
+### getBrowRotation <Score text="getBrowRotation" /> 
 
 ▸ **getBrowRotation**(): `number` <Badge type="tip" text="other" />
 
@@ -399,7 +399,7 @@ ___
 
 ___
 
-### getCanthusHorizontalPosition  
+### getCanthusHorizontalPosition <Score text="getCanthusHorizontalPosition" /> 
 
 ▸ **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -421,7 +421,7 @@ ___
 
 ___
 
-### getCanthusVerticalPosition  
+### getCanthusVerticalPosition <Score text="getCanthusVerticalPosition" /> 
 
 ▸ **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -443,7 +443,7 @@ ___
 
 ___
 
-### getCharacterHeight  
+### getCharacterHeight <Score text="getCharacterHeight" /> 
 
 ▸ **getCharacterHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -465,7 +465,7 @@ ___
 
 ___
 
-### getCheekBoneRange  
+### getCheekBoneRange <Score text="getCheekBoneRange" /> 
 
 ▸ **getCheekBoneRange**(): `number` <Badge type="tip" text="other" />
 
@@ -487,7 +487,7 @@ ___
 
 ___
 
-### getCheekBoneWidth  
+### getCheekBoneWidth <Score text="getCheekBoneWidth" /> 
 
 ▸ **getCheekBoneWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -509,7 +509,7 @@ ___
 
 ___
 
-### getCheekHeight  
+### getCheekHeight <Score text="getCheekHeight" /> 
 
 ▸ **getCheekHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -531,7 +531,7 @@ ___
 
 ___
 
-### getCheekRange  
+### getCheekRange <Score text="getCheekRange" /> 
 
 ▸ **getCheekRange**(): `number` <Badge type="tip" text="other" />
 
@@ -553,7 +553,7 @@ ___
 
 ___
 
-### getCheekWidth  
+### getCheekWidth <Score text="getCheekWidth" /> 
 
 ▸ **getCheekWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -575,7 +575,7 @@ ___
 
 ___
 
-### getEarRoll  
+### getEarRoll <Score text="getEarRoll" /> 
 
 ▸ **getEarRoll**(): `number` <Badge type="tip" text="other" />
 
@@ -597,7 +597,7 @@ ___
 
 ___
 
-### getEarScale  
+### getEarScale <Score text="getEarScale" /> 
 
 ▸ **getEarScale**(): `number` <Badge type="tip" text="other" />
 
@@ -619,7 +619,7 @@ ___
 
 ___
 
-### getEarYaw  
+### getEarYaw <Score text="getEarYaw" /> 
 
 ▸ **getEarYaw**(): `number` <Badge type="tip" text="other" />
 
@@ -641,7 +641,7 @@ ___
 
 ___
 
-### getEyesGap  
+### getEyesGap <Score text="getEyesGap" /> 
 
 ▸ **getEyesGap**(): `number` <Badge type="tip" text="other" />
 
@@ -663,7 +663,7 @@ ___
 
 ___
 
-### getEyesHeight  
+### getEyesHeight <Score text="getEyesHeight" /> 
 
 ▸ **getEyesHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -685,7 +685,7 @@ ___
 
 ___
 
-### getEyesLength  
+### getEyesLength <Score text="getEyesLength" /> 
 
 ▸ **getEyesLength**(): `number` <Badge type="tip" text="other" />
 
@@ -707,7 +707,7 @@ ___
 
 ___
 
-### getEyesRange  
+### getEyesRange <Score text="getEyesRange" /> 
 
 ▸ **getEyesRange**(): `number` <Badge type="tip" text="other" />
 
@@ -729,7 +729,7 @@ ___
 
 ___
 
-### getEyesRotation  
+### getEyesRotation <Score text="getEyesRotation" /> 
 
 ▸ **getEyesRotation**(): `number` <Badge type="tip" text="other" />
 
@@ -751,7 +751,7 @@ ___
 
 ___
 
-### getEyesWidth  
+### getEyesWidth <Score text="getEyesWidth" /> 
 
 ▸ **getEyesWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -773,7 +773,7 @@ ___
 
 ___
 
-### getFaceWidth  
+### getFaceWidth <Score text="getFaceWidth" /> 
 
 ▸ **getFaceWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -795,7 +795,7 @@ ___
 
 ___
 
-### getGroinThickness  
+### getGroinThickness <Score text="getGroinThickness" /> 
 
 ▸ **getGroinThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -817,7 +817,7 @@ ___
 
 ___
 
-### getGroinWidth  
+### getGroinWidth <Score text="getGroinWidth" /> 
 
 ▸ **getGroinWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -839,7 +839,7 @@ ___
 
 ___
 
-### getHeadScale  
+### getHeadScale <Score text="getHeadScale" /> 
 
 ▸ **getHeadScale**(): `number` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
@@ -863,7 +863,7 @@ ___
 
 ___
 
-### getJawLength  
+### getJawLength <Score text="getJawLength" /> 
 
 ▸ **getJawLength**(): `number` <Badge type="tip" text="other" />
 
@@ -885,7 +885,7 @@ ___
 
 ___
 
-### getJawRange  
+### getJawRange <Score text="getJawRange" /> 
 
 ▸ **getJawRange**(): `number` <Badge type="tip" text="other" />
 
@@ -907,7 +907,7 @@ ___
 
 ___
 
-### getJawSmooth  
+### getJawSmooth <Score text="getJawSmooth" /> 
 
 ▸ **getJawSmooth**(): `number` <Badge type="tip" text="other" />
 
@@ -929,7 +929,7 @@ ___
 
 ___
 
-### getJawVertexHeight  
+### getJawVertexHeight <Score text="getJawVertexHeight" /> 
 
 ▸ **getJawVertexHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -951,7 +951,7 @@ ___
 
 ___
 
-### getJawVertexRange  
+### getJawVertexRange <Score text="getJawVertexRange" /> 
 
 ▸ **getJawVertexRange**(): `number` <Badge type="tip" text="other" />
 
@@ -973,7 +973,7 @@ ___
 
 ___
 
-### getJawVertexWidth  
+### getJawVertexWidth <Score text="getJawVertexWidth" /> 
 
 ▸ **getJawVertexWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -995,7 +995,7 @@ ___
 
 ___
 
-### getLowerArmsStretch  
+### getLowerArmsStretch <Score text="getLowerArmsStretch" /> 
 
 ▸ **getLowerArmsStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1017,7 +1017,7 @@ ___
 
 ___
 
-### getLowerArmsThickness  
+### getLowerArmsThickness <Score text="getLowerArmsThickness" /> 
 
 ▸ **getLowerArmsThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1039,7 +1039,7 @@ ___
 
 ___
 
-### getLowerArmsWidth  
+### getLowerArmsWidth <Score text="getLowerArmsWidth" /> 
 
 ▸ **getLowerArmsWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1061,7 +1061,7 @@ ___
 
 ___
 
-### getLowerFaceRange  
+### getLowerFaceRange <Score text="getLowerFaceRange" /> 
 
 ▸ **getLowerFaceRange**(): `number` <Badge type="tip" text="other" />
 
@@ -1083,7 +1083,7 @@ ___
 
 ___
 
-### getLowerFaceWidth  
+### getLowerFaceWidth <Score text="getLowerFaceWidth" /> 
 
 ▸ **getLowerFaceWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1105,7 +1105,7 @@ ___
 
 ___
 
-### getLowerJawRange  
+### getLowerJawRange <Score text="getLowerJawRange" /> 
 
 ▸ **getLowerJawRange**(): `number` <Badge type="tip" text="other" />
 
@@ -1127,7 +1127,7 @@ ___
 
 ___
 
-### getLowerJawWidth  
+### getLowerJawWidth <Score text="getLowerJawWidth" /> 
 
 ▸ **getLowerJawWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1149,7 +1149,7 @@ ___
 
 ___
 
-### getLowerMouthThickness  
+### getLowerMouthThickness <Score text="getLowerMouthThickness" /> 
 
 ▸ **getLowerMouthThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1171,7 +1171,7 @@ ___
 
 ___
 
-### getLowerStretch  
+### getLowerStretch <Score text="getLowerStretch" /> 
 
 ▸ **getLowerStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1193,7 +1193,7 @@ ___
 
 ___
 
-### getMouthHeight  
+### getMouthHeight <Score text="getMouthHeight" /> 
 
 ▸ **getMouthHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -1215,7 +1215,7 @@ ___
 
 ___
 
-### getMouthRange  
+### getMouthRange <Score text="getMouthRange" /> 
 
 ▸ **getMouthRange**(): `number` <Badge type="tip" text="other" />
 
@@ -1237,7 +1237,7 @@ ___
 
 ___
 
-### getMouthShape  
+### getMouthShape <Score text="getMouthShape" /> 
 
 ▸ **getMouthShape**(): `number` <Badge type="tip" text="other" />
 
@@ -1259,7 +1259,7 @@ ___
 
 ___
 
-### getMouthWidth  
+### getMouthWidth <Score text="getMouthWidth" /> 
 
 ▸ **getMouthWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1281,7 +1281,7 @@ ___
 
 ___
 
-### getNeckStretch  
+### getNeckStretch <Score text="getNeckStretch" /> 
 
 ▸ **getNeckStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1303,7 +1303,7 @@ ___
 
 ___
 
-### getNeckThickness  
+### getNeckThickness <Score text="getNeckThickness" /> 
 
 ▸ **getNeckThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1325,7 +1325,7 @@ ___
 
 ___
 
-### getNeckWidth  
+### getNeckWidth <Score text="getNeckWidth" /> 
 
 ▸ **getNeckWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1347,7 +1347,7 @@ ___
 
 ___
 
-### getNoseHeight  
+### getNoseHeight <Score text="getNoseHeight" /> 
 
 ▸ **getNoseHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -1369,7 +1369,7 @@ ___
 
 ___
 
-### getNoseProtrusion  
+### getNoseProtrusion <Score text="getNoseProtrusion" /> 
 
 ▸ **getNoseProtrusion**(): `number` <Badge type="tip" text="other" />
 
@@ -1391,7 +1391,7 @@ ___
 
 ___
 
-### getNoseVerticalPosition  
+### getNoseVerticalPosition <Score text="getNoseVerticalPosition" /> 
 
 ▸ **getNoseVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -1413,7 +1413,7 @@ ___
 
 ___
 
-### getPupilHeight  
+### getPupilHeight <Score text="getPupilHeight" /> 
 
 ▸ **getPupilHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -1435,7 +1435,7 @@ ___
 
 ___
 
-### getPupilHorizontalPosition  
+### getPupilHorizontalPosition <Score text="getPupilHorizontalPosition" /> 
 
 ▸ **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -1457,7 +1457,7 @@ ___
 
 ___
 
-### getPupilVerticalPosition  
+### getPupilVerticalPosition <Score text="getPupilVerticalPosition" /> 
 
 ▸ **getPupilVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
@@ -1479,7 +1479,7 @@ ___
 
 ___
 
-### getPupilWidth  
+### getPupilWidth <Score text="getPupilWidth" /> 
 
 ▸ **getPupilWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1501,7 +1501,7 @@ ___
 
 ___
 
-### getRibThickness  
+### getRibThickness <Score text="getRibThickness" /> 
 
 ▸ **getRibThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1523,7 +1523,7 @@ ___
 
 ___
 
-### getRibWidth  
+### getRibWidth <Score text="getRibWidth" /> 
 
 ▸ **getRibWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1545,7 +1545,7 @@ ___
 
 ___
 
-### getShankScaleX  
+### getShankScaleX <Score text="getShankScaleX" /> 
 
 ▸ **getShankScaleX**(): `number` <Badge type="tip" text="other" />
 
@@ -1567,7 +1567,7 @@ ___
 
 ___
 
-### getShankScaleZ  
+### getShankScaleZ <Score text="getShankScaleZ" /> 
 
 ▸ **getShankScaleZ**(): `number` <Badge type="tip" text="other" />
 
@@ -1589,7 +1589,7 @@ ___
 
 ___
 
-### getShankStretch  
+### getShankStretch <Score text="getShankStretch" /> 
 
 ▸ **getShankStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1611,7 +1611,7 @@ ___
 
 ___
 
-### getShoulderArmThickness  
+### getShoulderArmThickness <Score text="getShoulderArmThickness" /> 
 
 ▸ **getShoulderArmThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1633,7 +1633,7 @@ ___
 
 ___
 
-### getShoulderArmWidth  
+### getShoulderArmWidth <Score text="getShoulderArmWidth" /> 
 
 ▸ **getShoulderArmWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1655,7 +1655,7 @@ ___
 
 ___
 
-### getShoulderThickness  
+### getShoulderThickness <Score text="getShoulderThickness" /> 
 
 ▸ **getShoulderThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1677,7 +1677,7 @@ ___
 
 ___
 
-### getShoulderWidth  
+### getShoulderWidth <Score text="getShoulderWidth" /> 
 
 ▸ **getShoulderWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1699,7 +1699,7 @@ ___
 
 ___
 
-### getThighStretch  
+### getThighStretch <Score text="getThighStretch" /> 
 
 ▸ **getThighStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1721,7 +1721,7 @@ ___
 
 ___
 
-### getThighThicknessX  
+### getThighThicknessX <Score text="getThighThicknessX" /> 
 
 ▸ **getThighThicknessX**(): `number` <Badge type="tip" text="other" />
 
@@ -1743,7 +1743,7 @@ ___
 
 ___
 
-### getThighThicknessZ  
+### getThighThicknessZ <Score text="getThighThicknessZ" /> 
 
 ▸ **getThighThicknessZ**(): `number` <Badge type="tip" text="other" />
 
@@ -1765,7 +1765,7 @@ ___
 
 ___
 
-### getUpperArmsStretch  
+### getUpperArmsStretch <Score text="getUpperArmsStretch" /> 
 
 ▸ **getUpperArmsStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1787,7 +1787,7 @@ ___
 
 ___
 
-### getUpperArmsThickness  
+### getUpperArmsThickness <Score text="getUpperArmsThickness" /> 
 
 ▸ **getUpperArmsThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1809,7 +1809,7 @@ ___
 
 ___
 
-### getUpperArmsWidth  
+### getUpperArmsWidth <Score text="getUpperArmsWidth" /> 
 
 ▸ **getUpperArmsWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1831,7 +1831,7 @@ ___
 
 ___
 
-### getUpperFaceRange  
+### getUpperFaceRange <Score text="getUpperFaceRange" /> 
 
 ▸ **getUpperFaceRange**(): `number` <Badge type="tip" text="other" />
 
@@ -1853,7 +1853,7 @@ ___
 
 ___
 
-### getUpperMouthThickness  
+### getUpperMouthThickness <Score text="getUpperMouthThickness" /> 
 
 ▸ **getUpperMouthThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1875,7 +1875,7 @@ ___
 
 ___
 
-### getUpperStretch  
+### getUpperStretch <Score text="getUpperStretch" /> 
 
 ▸ **getUpperStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1897,7 +1897,7 @@ ___
 
 ___
 
-### getWaistStretch  
+### getWaistStretch <Score text="getWaistStretch" /> 
 
 ▸ **getWaistStretch**(): `number` <Badge type="tip" text="other" />
 
@@ -1919,7 +1919,7 @@ ___
 
 ___
 
-### getWaistThickness  
+### getWaistThickness <Score text="getWaistThickness" /> 
 
 ▸ **getWaistThickness**(): `number` <Badge type="tip" text="other" />
 
@@ -1941,7 +1941,7 @@ ___
 
 ___
 
-### getWaistWidth  
+### getWaistWidth <Score text="getWaistWidth" /> 
 
 ▸ **getWaistWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -1963,7 +1963,7 @@ ___
 
 ___
 
-### setBreastHorizontalPosition  
+### setBreastHorizontalPosition <Score text="setBreastHorizontalPosition" /> 
 
 ▸ **setBreastHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1989,7 +1989,7 @@ sync = true:双端
 
 ___
 
-### setBreastLength  
+### setBreastLength <Score text="setBreastLength" /> 
 
 ▸ **setBreastLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2015,7 +2015,7 @@ sync = true:双端
 
 ___
 
-### setBreastScale  
+### setBreastScale <Score text="setBreastScale" /> 
 
 ▸ **setBreastScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2041,7 +2041,7 @@ sync = true:双端
 
 ___
 
-### setBreastStretch  
+### setBreastStretch <Score text="setBreastStretch" /> 
 
 ▸ **setBreastStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2067,7 +2067,7 @@ sync = true:双端
 
 ___
 
-### setBreastVerticalPosition  
+### setBreastVerticalPosition <Score text="setBreastVerticalPosition" /> 
 
 ▸ **setBreastVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2093,7 +2093,7 @@ sync = true:双端
 
 ___
 
-### setBrowGap  
+### setBrowGap <Score text="setBrowGap" /> 
 
 ▸ **setBrowGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2119,7 +2119,7 @@ sync = true:双端
 
 ___
 
-### setBrowHeight  
+### setBrowHeight <Score text="setBrowHeight" /> 
 
 ▸ **setBrowHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2145,7 +2145,7 @@ sync = true:双端
 
 ___
 
-### setBrowInboardShape  
+### setBrowInboardShape <Score text="setBrowInboardShape" /> 
 
 ▸ **setBrowInboardShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2171,7 +2171,7 @@ sync = true:双端
 
 ___
 
-### setBrowOutsideShape  
+### setBrowOutsideShape <Score text="setBrowOutsideShape" /> 
 
 ▸ **setBrowOutsideShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2197,7 +2197,7 @@ sync = true:双端
 
 ___
 
-### setBrowRotation  
+### setBrowRotation <Score text="setBrowRotation" /> 
 
 ▸ **setBrowRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2223,7 +2223,7 @@ sync = true:双端
 
 ___
 
-### setCanthusHorizontalPosition  
+### setCanthusHorizontalPosition <Score text="setCanthusHorizontalPosition" /> 
 
 ▸ **setCanthusHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2249,7 +2249,7 @@ sync = true:双端
 
 ___
 
-### setCanthusVerticalPosition  
+### setCanthusVerticalPosition <Score text="setCanthusVerticalPosition" /> 
 
 ▸ **setCanthusVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2275,7 +2275,7 @@ sync = true:双端
 
 ___
 
-### setCharacterHeight  
+### setCharacterHeight <Score text="setCharacterHeight" /> 
 
 ▸ **setCharacterHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2300,7 +2300,7 @@ sync = true:双端
 
 ___
 
-### setCheekBoneRange  
+### setCheekBoneRange <Score text="setCheekBoneRange" /> 
 
 ▸ **setCheekBoneRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2326,7 +2326,7 @@ sync = true:双端
 
 ___
 
-### setCheekBoneWidth  
+### setCheekBoneWidth <Score text="setCheekBoneWidth" /> 
 
 ▸ **setCheekBoneWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2352,7 +2352,7 @@ sync = true:双端
 
 ___
 
-### setCheekHeight  
+### setCheekHeight <Score text="setCheekHeight" /> 
 
 ▸ **setCheekHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2378,7 +2378,7 @@ sync = true:双端
 
 ___
 
-### setCheekRange  
+### setCheekRange <Score text="setCheekRange" /> 
 
 ▸ **setCheekRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2404,7 +2404,7 @@ sync = true:双端
 
 ___
 
-### setCheekWidth  
+### setCheekWidth <Score text="setCheekWidth" /> 
 
 ▸ **setCheekWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2430,7 +2430,7 @@ sync = true:双端
 
 ___
 
-### setEarRoll  
+### setEarRoll <Score text="setEarRoll" /> 
 
 ▸ **setEarRoll**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2456,7 +2456,7 @@ sync = true:双端
 
 ___
 
-### setEarScale  
+### setEarScale <Score text="setEarScale" /> 
 
 ▸ **setEarScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2482,7 +2482,7 @@ sync = true:双端
 
 ___
 
-### setEarYaw  
+### setEarYaw <Score text="setEarYaw" /> 
 
 ▸ **setEarYaw**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2508,7 +2508,7 @@ sync = true:双端
 
 ___
 
-### setEyesGap  
+### setEyesGap <Score text="setEyesGap" /> 
 
 ▸ **setEyesGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2534,7 +2534,7 @@ sync = true:双端
 
 ___
 
-### setEyesHeight  
+### setEyesHeight <Score text="setEyesHeight" /> 
 
 ▸ **setEyesHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2560,7 +2560,7 @@ sync = true:双端
 
 ___
 
-### setEyesLength  
+### setEyesLength <Score text="setEyesLength" /> 
 
 ▸ **setEyesLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2586,7 +2586,7 @@ sync = true:双端
 
 ___
 
-### setEyesRange  
+### setEyesRange <Score text="setEyesRange" /> 
 
 ▸ **setEyesRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2612,7 +2612,7 @@ sync = true:双端
 
 ___
 
-### setEyesRotation  
+### setEyesRotation <Score text="setEyesRotation" /> 
 
 ▸ **setEyesRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2638,7 +2638,7 @@ sync = true:双端
 
 ___
 
-### setEyesWidth  
+### setEyesWidth <Score text="setEyesWidth" /> 
 
 ▸ **setEyesWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2664,7 +2664,7 @@ sync = true:双端
 
 ___
 
-### setFaceWidth  
+### setFaceWidth <Score text="setFaceWidth" /> 
 
 ▸ **setFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2690,7 +2690,7 @@ sync = true:双端
 
 ___
 
-### setGroinThickness  
+### setGroinThickness <Score text="setGroinThickness" /> 
 
 ▸ **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2716,7 +2716,7 @@ sync = true:双端
 
 ___
 
-### setGroinWidth  
+### setGroinWidth <Score text="setGroinWidth" /> 
 
 ▸ **setGroinWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2742,7 +2742,7 @@ sync = true:双端
 
 ___
 
-### setHeadScale  
+### setHeadScale <Score text="setHeadScale" /> 
 
 ▸ **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
@@ -2771,7 +2771,7 @@ sync = true:双端
 
 ___
 
-### setJawLength  
+### setJawLength <Score text="setJawLength" /> 
 
 ▸ **setJawLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2797,7 +2797,7 @@ sync = true:双端
 
 ___
 
-### setJawRange  
+### setJawRange <Score text="setJawRange" /> 
 
 ▸ **setJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2823,7 +2823,7 @@ sync = true:双端
 
 ___
 
-### setJawSmooth  
+### setJawSmooth <Score text="setJawSmooth" /> 
 
 ▸ **setJawSmooth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2849,7 +2849,7 @@ sync = true:双端
 
 ___
 
-### setJawVertexHeight  
+### setJawVertexHeight <Score text="setJawVertexHeight" /> 
 
 ▸ **setJawVertexHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2875,7 +2875,7 @@ sync = true:双端
 
 ___
 
-### setJawVertexRange  
+### setJawVertexRange <Score text="setJawVertexRange" /> 
 
 ▸ **setJawVertexRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2901,7 +2901,7 @@ sync = true:双端
 
 ___
 
-### setJawVertexWidth  
+### setJawVertexWidth <Score text="setJawVertexWidth" /> 
 
 ▸ **setJawVertexWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2927,7 +2927,7 @@ sync = true:双端
 
 ___
 
-### setLowerArmsStretch  
+### setLowerArmsStretch <Score text="setLowerArmsStretch" /> 
 
 ▸ **setLowerArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2953,7 +2953,7 @@ sync = true:双端
 
 ___
 
-### setLowerArmsThickness  
+### setLowerArmsThickness <Score text="setLowerArmsThickness" /> 
 
 ▸ **setLowerArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -2979,7 +2979,7 @@ sync = true:双端
 
 ___
 
-### setLowerArmsWidth  
+### setLowerArmsWidth <Score text="setLowerArmsWidth" /> 
 
 ▸ **setLowerArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3005,7 +3005,7 @@ sync = true:双端
 
 ___
 
-### setLowerFaceRange  
+### setLowerFaceRange <Score text="setLowerFaceRange" /> 
 
 ▸ **setLowerFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3031,7 +3031,7 @@ sync = true:双端
 
 ___
 
-### setLowerFaceWidth  
+### setLowerFaceWidth <Score text="setLowerFaceWidth" /> 
 
 ▸ **setLowerFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3057,7 +3057,7 @@ sync = true:双端
 
 ___
 
-### setLowerJawRange  
+### setLowerJawRange <Score text="setLowerJawRange" /> 
 
 ▸ **setLowerJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3083,7 +3083,7 @@ sync = true:双端
 
 ___
 
-### setLowerJawWidth  
+### setLowerJawWidth <Score text="setLowerJawWidth" /> 
 
 ▸ **setLowerJawWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3109,7 +3109,7 @@ sync = true:双端
 
 ___
 
-### setLowerMouthThickness  
+### setLowerMouthThickness <Score text="setLowerMouthThickness" /> 
 
 ▸ **setLowerMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3135,7 +3135,7 @@ sync = true:双端
 
 ___
 
-### setLowerStretch  
+### setLowerStretch <Score text="setLowerStretch" /> 
 
 ▸ **setLowerStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3161,7 +3161,7 @@ sync = true:双端
 
 ___
 
-### setMouthHeight  
+### setMouthHeight <Score text="setMouthHeight" /> 
 
 ▸ **setMouthHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3186,7 +3186,7 @@ sync = true:双端
 
 ___
 
-### setMouthRange  
+### setMouthRange <Score text="setMouthRange" /> 
 
 ▸ **setMouthRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3212,7 +3212,7 @@ sync = true:双端
 
 ___
 
-### setMouthShape  
+### setMouthShape <Score text="setMouthShape" /> 
 
 ▸ **setMouthShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3238,7 +3238,7 @@ sync = true:双端
 
 ___
 
-### setMouthWidth  
+### setMouthWidth <Score text="setMouthWidth" /> 
 
 ▸ **setMouthWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3264,7 +3264,7 @@ sync = true:双端
 
 ___
 
-### setNeckStretch  
+### setNeckStretch <Score text="setNeckStretch" /> 
 
 ▸ **setNeckStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3290,7 +3290,7 @@ sync = true:双端
 
 ___
 
-### setNeckThickness  
+### setNeckThickness <Score text="setNeckThickness" /> 
 
 ▸ **setNeckThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3316,7 +3316,7 @@ sync = true:双端
 
 ___
 
-### setNeckWidth  
+### setNeckWidth <Score text="setNeckWidth" /> 
 
 ▸ **setNeckWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3342,7 +3342,7 @@ sync = true:双端
 
 ___
 
-### setNoseHeight  
+### setNoseHeight <Score text="setNoseHeight" /> 
 
 ▸ **setNoseHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3368,7 +3368,7 @@ sync = true:双端
 
 ___
 
-### setNoseProtrusion  
+### setNoseProtrusion <Score text="setNoseProtrusion" /> 
 
 ▸ **setNoseProtrusion**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3394,7 +3394,7 @@ sync = true:双端
 
 ___
 
-### setNoseVerticalPosition  
+### setNoseVerticalPosition <Score text="setNoseVerticalPosition" /> 
 
 ▸ **setNoseVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3420,7 +3420,7 @@ sync = true:双端
 
 ___
 
-### setPupilHeight  
+### setPupilHeight <Score text="setPupilHeight" /> 
 
 ▸ **setPupilHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3446,7 +3446,7 @@ sync = true:双端
 
 ___
 
-### setPupilHorizontalPosition  
+### setPupilHorizontalPosition <Score text="setPupilHorizontalPosition" /> 
 
 ▸ **setPupilHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3472,7 +3472,7 @@ sync = true:双端
 
 ___
 
-### setPupilVerticalPosition  
+### setPupilVerticalPosition <Score text="setPupilVerticalPosition" /> 
 
 ▸ **setPupilVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3498,7 +3498,7 @@ sync = true:双端
 
 ___
 
-### setPupilWidth  
+### setPupilWidth <Score text="setPupilWidth" /> 
 
 ▸ **setPupilWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3524,7 +3524,7 @@ sync = true:双端
 
 ___
 
-### setRibThickness  
+### setRibThickness <Score text="setRibThickness" /> 
 
 ▸ **setRibThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3550,7 +3550,7 @@ sync = true:双端
 
 ___
 
-### setRibWidth  
+### setRibWidth <Score text="setRibWidth" /> 
 
 ▸ **setRibWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3576,7 +3576,7 @@ sync = true:双端
 
 ___
 
-### setShankScaleX  
+### setShankScaleX <Score text="setShankScaleX" /> 
 
 ▸ **setShankScaleX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3602,7 +3602,7 @@ sync = true:双端
 
 ___
 
-### setShankScaleZ  
+### setShankScaleZ <Score text="setShankScaleZ" /> 
 
 ▸ **setShankScaleZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3628,7 +3628,7 @@ sync = true:双端
 
 ___
 
-### setShankStretch  
+### setShankStretch <Score text="setShankStretch" /> 
 
 ▸ **setShankStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3654,7 +3654,7 @@ sync = true:双端
 
 ___
 
-### setShoulderArmThickness  
+### setShoulderArmThickness <Score text="setShoulderArmThickness" /> 
 
 ▸ **setShoulderArmThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3680,7 +3680,7 @@ sync = true:双端
 
 ___
 
-### setShoulderArmWidth  
+### setShoulderArmWidth <Score text="setShoulderArmWidth" /> 
 
 ▸ **setShoulderArmWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3706,7 +3706,7 @@ sync = true:双端
 
 ___
 
-### setShoulderThickness  
+### setShoulderThickness <Score text="setShoulderThickness" /> 
 
 ▸ **setShoulderThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3732,7 +3732,7 @@ sync = true:双端
 
 ___
 
-### setShoulderWidth  
+### setShoulderWidth <Score text="setShoulderWidth" /> 
 
 ▸ **setShoulderWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3758,7 +3758,7 @@ sync = true:双端
 
 ___
 
-### setThighStretch  
+### setThighStretch <Score text="setThighStretch" /> 
 
 ▸ **setThighStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3784,7 +3784,7 @@ sync = true:双端
 
 ___
 
-### setThighThicknessX  
+### setThighThicknessX <Score text="setThighThicknessX" /> 
 
 ▸ **setThighThicknessX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3810,7 +3810,7 @@ sync = true:双端
 
 ___
 
-### setThighThicknessZ  
+### setThighThicknessZ <Score text="setThighThicknessZ" /> 
 
 ▸ **setThighThicknessZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3836,7 +3836,7 @@ sync = true:双端
 
 ___
 
-### setUpperArmsStretch  
+### setUpperArmsStretch <Score text="setUpperArmsStretch" /> 
 
 ▸ **setUpperArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3862,7 +3862,7 @@ sync = true:双端
 
 ___
 
-### setUpperArmsThickness  
+### setUpperArmsThickness <Score text="setUpperArmsThickness" /> 
 
 ▸ **setUpperArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3888,7 +3888,7 @@ sync = true:双端
 
 ___
 
-### setUpperArmsWidth  
+### setUpperArmsWidth <Score text="setUpperArmsWidth" /> 
 
 ▸ **setUpperArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3914,7 +3914,7 @@ sync = true:双端
 
 ___
 
-### setUpperFaceRange  
+### setUpperFaceRange <Score text="setUpperFaceRange" /> 
 
 ▸ **setUpperFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3939,7 +3939,7 @@ sync = true:双端
 
 ___
 
-### setUpperMouthThickness  
+### setUpperMouthThickness <Score text="setUpperMouthThickness" /> 
 
 ▸ **setUpperMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3965,7 +3965,7 @@ sync = true:双端
 
 ___
 
-### setUpperStretch  
+### setUpperStretch <Score text="setUpperStretch" /> 
 
 ▸ **setUpperStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -3991,7 +3991,7 @@ sync = true:双端
 
 ___
 
-### setWaistStretch  
+### setWaistStretch <Score text="setWaistStretch" /> 
 
 ▸ **setWaistStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -4017,7 +4017,7 @@ sync = true:双端
 
 ___
 
-### setWaistThickness  
+### setWaistThickness <Score text="setWaistThickness" /> 
 
 ▸ **setWaistThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -4043,7 +4043,7 @@ sync = true:双端
 
 ___
 
-### setWaistWidth  
+### setWaistWidth <Score text="setWaistWidth" /> 
 
 ▸ **setWaistWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 

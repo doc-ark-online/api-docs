@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraSystem
 
-# CameraSystem <Badge type="tip" text="Class" /> 
+# CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 
 **`Description`**
 
@@ -82,7 +82,7 @@
 
 ## Properties
 
-### enableFadeEffect  
+### enableFadeEffect <Score text="enableFadeEffect" /> 
 
 • **enableFadeEffect**: `boolean`
 
@@ -92,7 +92,7 @@
 
 ___
 
-### occludeCameraActor  
+### occludeCameraActor <Score text="occludeCameraActor" /> 
 
 • **occludeCameraActor**: `any`
 
@@ -102,7 +102,7 @@ ___
 
 ## Accessors
 
-### cameraCollisionEnable  
+### cameraCollisionEnable <Score text="cameraCollisionEnable" /> 
 
 • `get` **cameraCollisionEnable**(): `boolean`
 
@@ -129,7 +129,7 @@ ___
 
 ___
 
-### cameraDownLimitAngle  
+### cameraDownLimitAngle <Score text="cameraDownLimitAngle" /> 
 
 • `get` **cameraDownLimitAngle**(): `number`
 
@@ -156,7 +156,7 @@ ___
 
 ___
 
-### cameraFOV  
+### cameraFOV <Score text="cameraFOV" /> 
 
 • `get` **cameraFOV**(): `number`
 
@@ -183,7 +183,7 @@ ___
 
 ___
 
-### cameraFocusEnable  
+### cameraFocusEnable <Score text="cameraFocusEnable" /> 
 
 • `get` **cameraFocusEnable**(): `boolean`
 
@@ -210,7 +210,7 @@ ___
 
 ___
 
-### cameraLocationLagEnable  
+### cameraLocationLagEnable <Score text="cameraLocationLagEnable" /> 
 
 • `get` **cameraLocationLagEnable**(): `boolean`
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### cameraLocationLagSpeed  
+### cameraLocationLagSpeed <Score text="cameraLocationLagSpeed" /> 
 
 • `get` **cameraLocationLagSpeed**(): `number`
 
@@ -264,7 +264,7 @@ ___
 
 ___
 
-### cameraLocationMode  
+### cameraLocationMode <Score text="cameraLocationMode" /> 
 
 • `get` **cameraLocationMode**(): [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md)
 
@@ -291,7 +291,7 @@ ___
 
 ___
 
-### cameraProjectionMode  
+### cameraProjectionMode <Score text="cameraProjectionMode" /> 
 
 • `get` **cameraProjectionMode**(): [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md)
 
@@ -318,7 +318,7 @@ ___
 
 ___
 
-### cameraRelativeTransform  
+### cameraRelativeTransform <Score text="cameraRelativeTransform" /> 
 
 • `get` **cameraRelativeTransform**(): [`Transform`](Type.Transform.md)
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### cameraRotationLagEnable  
+### cameraRotationLagEnable <Score text="cameraRotationLagEnable" /> 
 
 • `get` **cameraRotationLagEnable**(): `boolean`
 
@@ -372,7 +372,7 @@ ___
 
 ___
 
-### cameraRotationLagSpeed  
+### cameraRotationLagSpeed <Score text="cameraRotationLagSpeed" /> 
 
 • `get` **cameraRotationLagSpeed**(): `number`
 
@@ -399,7 +399,7 @@ ___
 
 ___
 
-### cameraRotationMode  
+### cameraRotationMode <Score text="cameraRotationMode" /> 
 
 • `get` **cameraRotationMode**(): [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md)
 
@@ -426,7 +426,7 @@ ___
 
 ___
 
-### cameraSystemRelativeTransform  
+### cameraSystemRelativeTransform <Score text="cameraSystemRelativeTransform" /> 
 
 • `get` **cameraSystemRelativeTransform**(): [`Transform`](Type.Transform.md)
 
@@ -453,7 +453,7 @@ ___
 
 ___
 
-### cameraSystemWorldTransform  
+### cameraSystemWorldTransform <Score text="cameraSystemWorldTransform" /> 
 
 • `get` **cameraSystemWorldTransform**(): [`Transform`](Type.Transform.md)
 
@@ -480,7 +480,7 @@ ___
 
 ___
 
-### cameraUpLimitAngle  
+### cameraUpLimitAngle <Score text="cameraUpLimitAngle" /> 
 
 • `get` **cameraUpLimitAngle**(): `number`
 
@@ -507,7 +507,7 @@ ___
 
 ___
 
-### cameraWorldTransform  
+### cameraWorldTransform <Score text="cameraWorldTransform" /> 
 
 • `get` **cameraWorldTransform**(): [`Transform`](Type.Transform.md)
 
@@ -534,7 +534,7 @@ ___
 
 ___
 
-### enableMovementCollisionDetection  
+### enableMovementCollisionDetection <Score text="enableMovementCollisionDetection" /> 
 
 • `get` **enableMovementCollisionDetection**(): `boolean`
 
@@ -561,7 +561,7 @@ ___
 
 ___
 
-### fadeEffectValue  
+### fadeEffectValue <Score text="fadeEffectValue" /> 
 
 • `get` **fadeEffectValue**(): `number`
 
@@ -588,7 +588,7 @@ ___
 
 ___
 
-### fixedCameraZAxis  
+### fixedCameraZAxis <Score text="fixedCameraZAxis" /> 
 
 • `get` **fixedCameraZAxis**(): `boolean`
 
@@ -615,7 +615,7 @@ ___
 
 ___
 
-### followTargetEnable  
+### followTargetEnable <Score text="followTargetEnable" /> 
 
 • `get` **followTargetEnable**(): `boolean`
 
@@ -642,7 +642,7 @@ ___
 
 ___
 
-### followTargetInterpSpeed  
+### followTargetInterpSpeed <Score text="followTargetInterpSpeed" /> 
 
 • `get` **followTargetInterpSpeed**(): `number`
 
@@ -669,7 +669,7 @@ ___
 
 ___
 
-### lockTargetOffset  
+### lockTargetOffset <Score text="lockTargetOffset" /> 
 
 • `get` **lockTargetOffset**(): [`Vector`](Type.Vector.md)
 
@@ -696,7 +696,7 @@ ___
 
 ___
 
-### movementCollisionDuration  
+### movementCollisionDuration <Score text="movementCollisionDuration" /> 
 
 • `get` **movementCollisionDuration**(): `number`
 
@@ -723,7 +723,7 @@ ___
 
 ___
 
-### movementCollisionMinLocationDelta  
+### movementCollisionMinLocationDelta <Score text="movementCollisionMinLocationDelta" /> 
 
 • `get` **movementCollisionMinLocationDelta**(): `number`
 
@@ -750,7 +750,7 @@ ___
 
 ___
 
-### occlusionDetectionEnable  
+### occlusionDetectionEnable <Score text="occlusionDetectionEnable" /> 
 
 • `get` **occlusionDetectionEnable**(): `boolean`
 
@@ -777,7 +777,7 @@ ___
 
 ___
 
-### orthoFarClipPlane  
+### orthoFarClipPlane <Score text="orthoFarClipPlane" /> 
 
 • `get` **orthoFarClipPlane**(): `number`
 
@@ -804,7 +804,7 @@ ___
 
 ___
 
-### orthoNearClipPlane  
+### orthoNearClipPlane <Score text="orthoNearClipPlane" /> 
 
 • `get` **orthoNearClipPlane**(): `number`
 
@@ -831,7 +831,7 @@ ___
 
 ___
 
-### orthoWidth  
+### orthoWidth <Score text="orthoWidth" /> 
 
 • `get` **orthoWidth**(): `number`
 
@@ -858,7 +858,7 @@ ___
 
 ___
 
-### raiseCameraEnable  
+### raiseCameraEnable <Score text="raiseCameraEnable" /> 
 
 • `get` **raiseCameraEnable**(): `boolean`
 
@@ -885,7 +885,7 @@ ___
 
 ___
 
-### raiseCameraHeight  
+### raiseCameraHeight <Score text="raiseCameraHeight" /> 
 
 • `get` **raiseCameraHeight**(): `number`
 
@@ -912,7 +912,7 @@ ___
 
 ___
 
-### realEffectEnable  
+### realEffectEnable <Score text="realEffectEnable" /> 
 
 • `set` **realEffectEnable**(`value`): `void`
 
@@ -935,7 +935,7 @@ ___
 
 ___
 
-### slotOffset  
+### slotOffset <Score text="slotOffset" /> 
 
 • `get` **slotOffset**(): [`Vector`](Type.Vector.md)
 
@@ -970,7 +970,7 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
 ___
 
-### targetArmLength  
+### targetArmLength <Score text="targetArmLength" /> 
 
 • `get` **targetArmLength**(): `number`
 
@@ -997,7 +997,7 @@ ___
 
 ___
 
-### targetOffset  
+### targetOffset <Score text="targetOffset" /> 
 
 • `get` **targetOffset**(): [`Vector`](Type.Vector.md)
 
@@ -1032,7 +1032,7 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
 
 ___
 
-### transform  
+### transform <Score text="transform" /> 
 
 • `get` **transform**(): [`Transform`](Type.Transform.md)
 
@@ -1046,7 +1046,7 @@ ___
 
 ___
 
-### usePawnControlRotation  
+### usePawnControlRotation <Score text="usePawnControlRotation" /> 
 
 • `get` **usePawnControlRotation**(): `boolean`
 
@@ -1073,7 +1073,7 @@ ___
 
 ## Methods
 
-### applySettings  
+### applySettings <Score text="applySettings" /> 
 
 ▸ **applySettings**(`CameraSetting`): `void` <Badge type="tip" text="other" />
 
@@ -1091,7 +1091,7 @@ ___
 
 ___
 
-### attachCameraToCharacterCapsuleSlot  
+### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
 
 ▸ **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
 
@@ -1103,7 +1103,7 @@ ___
 
 ___
 
-### attachCameraToCharacterMeshSlot  
+### attachCameraToCharacterMeshSlot <Score text="attachCameraToCharacterMeshSlot" /> 
 
 ▸ **attachCameraToCharacterMeshSlot**(`slot`): `void` <Badge type="tip" text="other" />
 
@@ -1121,7 +1121,7 @@ ___
 
 ___
 
-### attachToGameObject  
+### attachToGameObject <Score text="attachToGameObject" /> 
 
 ▸ **attachToGameObject**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -1139,7 +1139,7 @@ ___
 
 ___
 
-### cameraFocusing  
+### cameraFocusing <Score text="cameraFocusing" /> 
 
 ▸ **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void` <Badge type="tip" text="other" />
 
@@ -1159,7 +1159,7 @@ ___
 
 ___
 
-### cameraLockTarget  
+### cameraLockTarget <Score text="cameraLockTarget" /> 
 
 ▸ **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void` <Badge type="tip" text="other" />
 
@@ -1183,7 +1183,7 @@ ___
 
 ___
 
-### cancelCameraFollowTarget  
+### cancelCameraFollowTarget <Score text="cancelCameraFollowTarget" /> 
 
 ▸ **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
 
@@ -1195,7 +1195,7 @@ ___
 
 ___
 
-### cancelCameraLockTarget  
+### cancelCameraLockTarget <Score text="cancelCameraLockTarget" /> 
 
 ▸ **cancelCameraLockTarget**(): `void` <Badge type="tip" text="other" />
 
@@ -1207,7 +1207,7 @@ ___
 
 ___
 
-### getCurrentSettings  
+### getCurrentSettings <Score text="getCurrentSettings" /> 
 
 ▸ **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
 
@@ -1224,7 +1224,7 @@ ___
 
 ___
 
-### getDefaultCameraShakeData  
+### getDefaultCameraShakeData <Score text="getDefaultCameraShakeData" /> 
 
 ▸ **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <Badge type="tip" text="other" />
 
@@ -1241,7 +1241,7 @@ ___
 
 ___
 
-### moveByPath  
+### moveByPath <Score text="moveByPath" /> 
 
 ▸ **moveByPath**(`path`, `completeCallback`): `void` <Badge type="tip" text="other" />
 
@@ -1260,7 +1260,7 @@ ___
 
 ___
 
-### resetOverrideCameraRotation  
+### resetOverrideCameraRotation <Score text="resetOverrideCameraRotation" /> 
 
 ▸ **resetOverrideCameraRotation**(): `void` <Badge type="tip" text="other" />
 
@@ -1272,7 +1272,7 @@ ___
 
 ___
 
-### screenShock  
+### screenShock <Score text="screenShock" /> 
 
 ▸ **screenShock**(`maxRange?`, `decay?`, `speed?`): `void` <Badge type="tip" text="other" />
 
@@ -1292,7 +1292,7 @@ ___
 
 ___
 
-### setCameraFollowTarget  
+### setCameraFollowTarget <Score text="setCameraFollowTarget" /> 
 
 ▸ **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -1310,7 +1310,7 @@ ___
 
 ___
 
-### setCameraLockTarget  
+### setCameraLockTarget <Score text="setCameraLockTarget" /> 
 
 ▸ **setCameraLockTarget**(`target`): `void` <Badge type="tip" text="other" />
 
@@ -1328,7 +1328,7 @@ ___
 
 ___
 
-### setOverrideCameraRotation  
+### setOverrideCameraRotation <Score text="setOverrideCameraRotation" /> 
 
 ▸ **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void` <Badge type="tip" text="other" />
 
@@ -1347,7 +1347,7 @@ ___
 
 ___
 
-### startCameraShake  
+### startCameraShake <Score text="startCameraShake" /> 
 
 ▸ **startCameraShake**(`cameraShakeData`): `void` <Badge type="tip" text="other" />
 
@@ -1371,7 +1371,7 @@ ___
 
 ___
 
-### stopCameraShake  
+### stopCameraShake <Score text="stopCameraShake" /> 
 
 ▸ **stopCameraShake**(): `void` <Badge type="tip" text="other" />
 
@@ -1383,7 +1383,7 @@ ___
 
 ___
 
-### switchCameraMode  
+### switchCameraMode <Score text="switchCameraMode" /> 
 
 ▸ **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void` <Badge type="tip" text="other" />
 

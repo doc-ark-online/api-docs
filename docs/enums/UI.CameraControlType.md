@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / CameraControlType
 
-# CameraControlType <Badge type="tip" text="Enumeration" /> 
+# CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### CameraType  
+### CameraType <Score text="CameraType" /> 
 
 • **CameraType** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### MoveType  
+### MoveType <Score text="MoveType" /> 
 
 • **MoveType** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### None  
+### None <Score text="None" /> 
 
 • **None** = ``0``
 

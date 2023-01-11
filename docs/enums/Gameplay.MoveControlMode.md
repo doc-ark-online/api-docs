@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / MoveControlMode
 
-# MoveControlMode <Badge type="tip" text="Enumeration" /> 
+# MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### FaceMode  
+### FaceMode <Score text="FaceMode" /> 
 
 • **FaceMode** = ``2``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### FixedMode  
+### FixedMode <Score text="FixedMode" /> 
 
 • **FixedMode** = ``1``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### FollowMode  
+### FollowMode <Score text="FollowMode" /> 
 
 • **FollowMode** = ``3``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### FreeMode  
+### FreeMode <Score text="FreeMode" /> 
 
 • **FreeMode** = ``4``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### null  
+### null <Score text="null" /> 
 
 • **null** = ``0``
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ExpressionType
 
-# ExpressionType <Badge type="tip" text="Enumeration" /> 
+# ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 
 **`Description`**
 
@@ -23,7 +23,7 @@
 
 ## Enumeration Members
 
-### Anger  
+### Anger <Score text="Anger" /> 
 
 • **Anger** = ``4``
 
@@ -31,7 +31,7 @@
 
 ___
 
-### Awkward  
+### Awkward <Score text="Awkward" /> 
 
 • **Awkward** = ``5``
 
@@ -39,7 +39,7 @@ ___
 
 ___
 
-### Cute  
+### Cute <Score text="Cute" /> 
 
 • **Cute** = ``8``
 
@@ -47,7 +47,7 @@ ___
 
 ___
 
-### Default  
+### Default <Score text="Default" /> 
 
 • **Default** = ``0``
 
@@ -55,7 +55,7 @@ ___
 
 ___
 
-### Doubt  
+### Doubt <Score text="Doubt" /> 
 
 • **Doubt** = ``9``
 
@@ -63,7 +63,7 @@ ___
 
 ___
 
-### Happy  
+### Happy <Score text="Happy" /> 
 
 • **Happy** = ``2``
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### Laugh  
+### Laugh <Score text="Laugh" /> 
 
 • **Laugh** = ``6``
 
@@ -79,7 +79,7 @@ ___
 
 ___
 
-### Mischievous  
+### Mischievous <Score text="Mischievous" /> 
 
 • **Mischievous** = ``7``
 
@@ -87,7 +87,7 @@ ___
 
 ___
 
-### Sad  
+### Sad <Score text="Sad" /> 
 
 • **Sad** = ``3``
 
@@ -95,7 +95,7 @@ ___
 
 ___
 
-### Smile  
+### Smile <Score text="Smile" /> 
 
 • **Smile** = ``1``
 

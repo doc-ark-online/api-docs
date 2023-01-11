@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / SoundService
 
-# SoundService <Badge type="tip" text="Class" /> 
+# SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
 **`Instance`**
 
@@ -41,7 +41,7 @@
 
 ## Properties
 
-### onPlaySoundComplete  
+### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
 • `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
@@ -51,7 +51,7 @@
 
 ## Accessors
 
-### BGMVolumeScale  
+### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
 • `get` **BGMVolumeScale**(): `number`
 
@@ -80,7 +80,7 @@ BGM音量
 
 ___
 
-### volumeScale  
+### volumeScale <Score text="volumeScale" /> 
 
 • `get` **volumeScale**(): `number` <Badge type="tip" text="other" />
 
@@ -121,7 +121,7 @@ ___
 
 ## Methods
 
-### clearAll  
+### clearAll <Score text="clearAll" /> 
 
 ▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
@@ -133,7 +133,7 @@ ___
 
 ___
 
-### get3DSoundGameObject  
+### get3DSoundGameObject <Score text="get" /> 
 
 ▸ **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
 
@@ -157,7 +157,7 @@ Sound对象的gameObject
 
 ___
 
-### play3DSound  
+### play3DSound <Score text="play" /> 
 
 ▸ **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number` <Badge type="tip" text="other" />
 
@@ -185,7 +185,7 @@ ___
 
 ___
 
-### playBGM  
+### playBGM <Score text="playBGM" /> 
 
 ▸ **playBGM**(`resId`, `volume?`): `void` <Badge type="tip" text="other" />
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### playSound  
+### playSound <Score text="playSound" /> 
 
 ▸ **playSound**(`resId`, `loopNum?`, `volume?`): `string` <Badge type="tip" text="other" />
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### stop3DSound  
+### stop3DSound <Score text="stop" /> 
 
 ▸ **stop3DSound**(`playId`): `void` <Badge type="tip" text="other" />
 
@@ -256,7 +256,7 @@ ___
 
 ___
 
-### stopAll3DSound  
+### stopAll3DSound <Score text="stopAll" /> 
 
 ▸ **stopAll3DSound**(): `void` <Badge type="tip" text="other" />
 
@@ -269,7 +269,7 @@ ___
 
 ___
 
-### stopAllSound  
+### stopAllSound <Score text="stopAllSound" /> 
 
 ▸ **stopAllSound**(): `void` <Badge type="tip" text="other" />
 
@@ -282,7 +282,7 @@ ___
 
 ___
 
-### stopBGM  
+### stopBGM <Score text="stopBGM" /> 
 
 ▸ **stopBGM**(): `void` <Badge type="tip" text="other" />
 
@@ -295,7 +295,7 @@ ___
 
 ___
 
-### stopSound  
+### stopSound <Score text="stopSound" /> 
 
 ▸ **stopSound**(`resId`): `void` <Badge type="tip" text="other" />
 
@@ -314,7 +314,7 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UserWidgetPrefab
 
-# UserWidgetPrefab <Badge type="tip" text="Class" /> 
+# UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
 **`Description`**
 

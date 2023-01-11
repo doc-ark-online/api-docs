@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / MessageChannelService
 
-# MessageChannelService <Badge type="tip" text="Class" /> 
+# MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 
 **`Instance`**
 
@@ -40,7 +40,7 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 ## Methods
 
-### registerAction  
+### registerAction <Score text="registerAction" /> 
 
 ▸ **registerAction**(`action`, `caller`, `onCall`): `void`
 
@@ -76,7 +76,7 @@ Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", t
 
 ___
 
-### send  
+### send <Score text="send" /> 
 
 ▸ **send**(`message`): `void`
 
@@ -112,7 +112,7 @@ Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction
 
 ___
 
-### sendTo  
+### sendTo <Score text="sendTo" /> 
 
 ▸ **sendTo**(`toWhom`, `message`): `void`
 
@@ -147,7 +147,7 @@ Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceive
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md)
 

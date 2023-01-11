@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PostProcess
 
-# PostProcess <Badge type="tip" text="Class" /> 
+# PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 
 **`Description`**
 
@@ -134,7 +134,7 @@
 
 ## Accessors
 
-### ambientOcclusionIntensity  
+### ambientOcclusionIntensity <Score text="ambientOcclusionIntensity" /> 
 
 • `get` **ambientOcclusionIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -165,7 +165,7 @@
 
 ___
 
-### ambientOcclusionRadius  
+### ambientOcclusionRadius <Score text="ambientOcclusionRadius" /> 
 
 • `get` **ambientOcclusionRadius**(): `number` <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 ___
 
-### autoExposureBias  
+### autoExposureBias <Score text="autoExposureBias" /> 
 
 • `get` **autoExposureBias**(): `number` <Badge type="tip" text="other" />
 
@@ -227,7 +227,7 @@ ___
 
 ___
 
-### autoExposureMaxBrightness  
+### autoExposureMaxBrightness <Score text="autoExposureMaxBrightness" /> 
 
 • `get` **autoExposureMaxBrightness**(): `number` <Badge type="tip" text="other" />
 
@@ -258,7 +258,7 @@ ___
 
 ___
 
-### autoExposureMinBrightness  
+### autoExposureMinBrightness <Score text="autoExposureMinBrightness" /> 
 
 • `get` **autoExposureMinBrightness**(): `number` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ ___
 
 ___
 
-### bloomIntensity  
+### bloomIntensity <Score text="bloomIntensity" /> 
 
 • `get` **bloomIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -319,7 +319,7 @@ ___
 
 
 
-### globalContrast  
+### globalContrast <Score text="globalContrast" /> 
 
 • `get` **globalContrast**(): `number` <Badge type="tip" text="other" />
 
@@ -350,7 +350,7 @@ ___
 
 ___
 
-### globalGamma  
+### globalGamma <Score text="globalGamma" /> 
 
 • `get` **globalGamma**(): `number` <Badge type="tip" text="other" />
 
@@ -381,7 +381,7 @@ ___
 
 ___
 
-### globalSaturation  
+### globalSaturation <Score text="globalSaturation" /> 
 
 • `get` **globalSaturation**(): `number` <Badge type="tip" text="other" />
 
@@ -411,7 +411,7 @@ ___
 
 
 
-### hDRContrast  
+### hDRContrast <Score text="hDRContrast" /> 
 
 • `get` **hDRContrast**(): `number` <Badge type="tip" text="other" />
 
@@ -442,7 +442,7 @@ ___
 
 ___
 
-### hDRGamma  
+### hDRGamma <Score text="hDRGamma" /> 
 
 • `get` **hDRGamma**(): `number` <Badge type="tip" text="other" />
 
@@ -473,7 +473,7 @@ ___
 
 ___
 
-### hDRSaturation  
+### hDRSaturation <Score text="hDRSaturation" /> 
 
 • `get` **hDRSaturation**(): `number` <Badge type="tip" text="other" />
 
@@ -504,7 +504,7 @@ ___
 
 ___
 
-### lDR2HDRThreshold  
+### lDR2HDRThreshold <Score text="lDR" /> 
 
 • `get` **lDR2HDRThreshold**(): `number` <Badge type="tip" text="other" />
 
@@ -535,7 +535,7 @@ ___
 
 ___
 
-### lDRContrast  
+### lDRContrast <Score text="lDRContrast" /> 
 
 • `get` **lDRContrast**(): `number` <Badge type="tip" text="other" />
 
@@ -566,7 +566,7 @@ ___
 
 ___
 
-### lDRGamma  
+### lDRGamma <Score text="lDRGamma" /> 
 
 • `get` **lDRGamma**(): `number` <Badge type="tip" text="other" />
 
@@ -597,7 +597,7 @@ ___
 
 ___
 
-### lDRSaturation  
+### lDRSaturation <Score text="lDRSaturation" /> 
 
 • `get` **lDRSaturation**(): `number` <Badge type="tip" text="other" />
 
@@ -628,7 +628,7 @@ ___
 
 ___
 
-### lUTBlend  
+### lUTBlend <Score text="lUTBlend" /> 
 
 • `get` **lUTBlend**(): `number` <Badge type="tip" text="other" />
 
@@ -659,7 +659,7 @@ ___
 
 ___
 
-### lUTTextureAssetByGuid  
+### lUTTextureAssetByGuid <Score text="lUTTextureAssetByGuid" /> 
 
 • `get` **lUTTextureAssetByGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -689,7 +689,7 @@ ___
 
 
 
-### motionBlur  
+### motionBlur <Score text="motionBlur" /> 
 
 • `get` **motionBlur**(): `number` <Badge type="tip" text="other" />
 
@@ -719,7 +719,7 @@ ___
 
 
 
-### occlusionBlend  
+### occlusionBlend <Score text="occlusionBlend" /> 
 
 • `get` **occlusionBlend**(): `number` <Badge type="tip" text="other" />
 
@@ -750,7 +750,7 @@ ___
 
 ___
 
-### outlineWidth  
+### outlineWidth <Score text="outlineWidth" /> 
 
 • `get` **outlineWidth**(): `number` <Badge type="tip" text="other" />
 
@@ -780,7 +780,7 @@ ___
 
 
 
-### toneBlackClip  
+### toneBlackClip <Score text="toneBlackClip" /> 
 
 • `get` **toneBlackClip**(): `number` <Badge type="tip" text="other" />
 
@@ -811,7 +811,7 @@ ___
 
 ___
 
-### toneCurveAmount  
+### toneCurveAmount <Score text="toneCurveAmount" /> 
 
 • `get` **toneCurveAmount**(): `number` <Badge type="tip" text="other" />
 
@@ -842,7 +842,7 @@ ___
 
 ___
 
-### toneShoulder  
+### toneShoulder <Score text="toneShoulder" /> 
 
 • `get` **toneShoulder**(): `number` <Badge type="tip" text="other" />
 
@@ -873,7 +873,7 @@ ___
 
 ___
 
-### toneSlope  
+### toneSlope <Score text="toneSlope" /> 
 
 • `get` **toneSlope**(): `number` <Badge type="tip" text="other" />
 
@@ -904,7 +904,7 @@ ___
 
 ___
 
-### toneToe  
+### toneToe <Score text="toneToe" /> 
 
 • `get` **toneToe**(): `number` <Badge type="tip" text="other" />
 
@@ -935,7 +935,7 @@ ___
 
 ___
 
-### toneWhiteClip  
+### toneWhiteClip <Score text="toneWhiteClip" /> 
 
 • `get` **toneWhiteClip**(): `number` <Badge type="tip" text="other" />
 
@@ -967,7 +967,7 @@ ___
 
 ## Methods
 
-### addOutlineColor  
+### addOutlineColor <Score text="addOutlineColor" /> 
 
 ▸ **addOutlineColor**(`newOutlineColor`): `number` <Badge type="tip" text="other" />
 

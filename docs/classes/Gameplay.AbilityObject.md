@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityObject
 
-# AbilityObject <Badge type="tip" text="Class" /> 
+# AbilityObject <Badge type="tip" text="Class" /> <Score text="AbilityObject" />
 
 **`Description`**
 
@@ -134,7 +134,7 @@
 
 ## Properties
 
-### onAbilityStateChanged  
+### onAbilityStateChanged <Score text="onAbilityStateChanged" /> 
 
 • **onAbilityStateChanged**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
 
@@ -144,7 +144,7 @@
 
 ___
 
-### onAbilityStateEnter  
+### onAbilityStateEnter <Score text="onAbilityStateEnter" /> 
 
 • **onAbilityStateEnter**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
 
@@ -154,7 +154,7 @@ ___
 
 ___
 
-### onAbilityStateExit  
+### onAbilityStateExit <Score text="onAbilityStateExit" /> 
 
 • **onAbilityStateExit**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
 
@@ -164,7 +164,7 @@ ___
 
 ___
 
-### onAbilityStatePause  
+### onAbilityStatePause <Score text="onAbilityStatePause" /> 
 
 • **onAbilityStatePause**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
 
@@ -174,7 +174,7 @@ ___
 
 ___
 
-### onAbilityStateResume  
+### onAbilityStateResume <Score text="onAbilityStateResume" /> 
 
 • **onAbilityStateResume**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
 
@@ -184,7 +184,7 @@ ___
 
 ## Accessors
 
-### currentAbilityState  
+### currentAbilityState <Score text="currentAbilityState" /> 
 
 • `get` **currentAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md) <Badge type="tip" text="other" />
 
@@ -201,7 +201,7 @@ ___
 
 ___
 
-### currentAbilityStateIndex  
+### currentAbilityStateIndex <Score text="currentAbilityStateIndex" /> 
 
 • `get` **currentAbilityStateIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -219,7 +219,7 @@ ___
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
 
@@ -235,7 +235,7 @@ ___
 获取能力对象执行时间
 
 
-### isAbilityReady  
+### isAbilityReady <Score text="isAbilityReady" /> 
 
 • `get` **isAbilityReady**(): `boolean` <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ true或false
 
 ## Methods
 
-### activate  
+### activate <Score text="activate" /> 
 
 ▸ **activate**(): `void` <Badge type="tip" text="other" />
 
@@ -267,7 +267,7 @@ true或false
 
 ___
 
-### addAbilityState  
+### addAbilityState <Score text="addAbilityState" /> 
 
 ▸ **addAbilityState**(`animAssetGUID`, `duration?`, `isLoop?`, `canMove?`, `canJump?`, `moveControl?`): `number` <Badge type="tip" text="other" />
 
@@ -295,7 +295,7 @@ ___
 成功返回技能索引，失败返回-1
 
 
-### bindPlayer  
+### bindPlayer <Score text="bindPlayer" /> 
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
 
@@ -324,7 +324,7 @@ ___
 当有对内部玩家进行赋值时，返回 true
 
 
-### deactivate  
+### deactivate <Score text="deactivate" /> 
 
 ▸ **deactivate**(): `void` <Badge type="tip" text="other" />
 
@@ -336,7 +336,7 @@ ___
 
 
 
-### getAbilityStateByIndex  
+### getAbilityStateByIndex <Score text="getAbilityStateByIndex" /> 
 
 ▸ **getAbilityStateByIndex**(`Index`): [`AbilityState`](Gameplay.AbilityState.md) <Badge type="tip" text="other" />
 
@@ -359,7 +359,7 @@ ___
 
 ___
 
-### getAllAbilityState  
+### getAllAbilityState <Score text="getAllAbilityState" /> 
 
 ▸ **getAllAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md)[] <Badge type="tip" text="other" />
 
@@ -375,7 +375,7 @@ ___
 能力状态数组
 
 
-### pause  
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
 
@@ -387,7 +387,7 @@ ___
 
 
 
-### removeAbilityState  
+### removeAbilityState <Score text="removeAbilityState" /> 
 
 ▸ **removeAbilityState**(`Index`): `boolean` <Badge type="tip" text="other" />
 
@@ -417,7 +417,7 @@ ___
 
 ___
 
-### resume  
+### resume <Score text="resume" /> 
 
 ▸ **resume**(): `void` <Badge type="tip" text="other" />
 
@@ -429,7 +429,7 @@ ___
 
 
 
-### switchTo  
+### switchTo <Score text="switchTo" /> 
 
 ▸ **switchTo**(`StateIndex`): `void` <Badge type="tip" text="other" />
 

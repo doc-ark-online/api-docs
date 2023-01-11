@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Equipment
 
-# Equipment <Badge type="tip" text="Class" /> 
+# Equipment <Badge type="tip" text="Class" /> <Score text="Equipment" />
 
 **`Description`**
 
@@ -130,7 +130,7 @@
 
 ## Properties
 
-### onDiscardEquipment  
+### onDiscardEquipment <Score text="onDiscardEquipment" /> 
 
 • **onDiscardEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
@@ -140,7 +140,7 @@
 
 ___
 
-### onHoldEquipment  
+### onHoldEquipment <Score text="onHoldEquipment" /> 
 
 • **onHoldEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### onPickupEquipment  
+### onPickupEquipment <Score text="onPickupEquipment" /> 
 
 • **onPickupEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### onUnholdEquipment  
+### onUnholdEquipment <Score text="onUnholdEquipment" /> 
 
 • **onUnholdEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
@@ -170,7 +170,7 @@ ___
 
 ## Accessors
 
-### autoHoldEquipment  
+### autoHoldEquipment <Score text="autoHoldEquipment" /> 
 
 • `get` **autoHoldEquipment**(): `boolean`
 
@@ -197,7 +197,7 @@ ___
 
 ___
 
-### autoPickup  
+### autoPickup <Score text="autoPickup" /> 
 
 • `get` **autoPickup**(): `boolean`
 
@@ -224,7 +224,7 @@ ___
 
 ___
 
-### autoPlayPickupAnimation  
+### autoPlayPickupAnimation <Score text="autoPlayPickupAnimation" /> 
 
 • `get` **autoPlayPickupAnimation**(): `boolean`
 
@@ -251,7 +251,7 @@ ___
 
 ___
 
-### discardAnimation  
+### discardAnimation <Score text="discardAnimation" /> 
 
 • `get` **discardAnimation**(): `string`
 
@@ -278,7 +278,7 @@ ___
 
 ___
 
-### equipmentSlot  
+### equipmentSlot <Score text="equipmentSlot" /> 
 
 • `get` **equipmentSlot**(): `string`
 
@@ -305,7 +305,7 @@ ___
 
 ___
 
-### equipmentStatus  
+### equipmentStatus <Score text="equipmentStatus" /> 
 
 • `get` **equipmentStatus**(): [`EquipmentStatus`](../enums/Gameplay.EquipmentStatus.md)
 
@@ -318,7 +318,7 @@ ___
 [`EquipmentStatus`](../enums/Gameplay.EquipmentStatus.md)
 
 
-### holdAnimation  
+### holdAnimation <Score text="holdAnimation" /> 
 
 • `get` **holdAnimation**(): `string`
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### holdEquipmentStance  
+### holdEquipmentStance <Score text="holdEquipmentStance" /> 
 
 • `get` **holdEquipmentStance**(): `string`
 
@@ -371,7 +371,7 @@ ___
 
 
 
-### pickupAnimation  
+### pickupAnimation <Score text="pickupAnimation" /> 
 
 • `get` **pickupAnimation**(): `string`
 
@@ -398,7 +398,7 @@ ___
 
 ___
 
-### pickupTrigger  
+### pickupTrigger <Score text="pickupTrigger" /> 
 
 • `get` **pickupTrigger**(): `string`
 
@@ -424,7 +424,7 @@ ___
 
 
 
-### unholdAnimation  
+### unholdAnimation <Score text="unholdAnimation" /> 
 
 • `get` **unholdAnimation**(): `string`
 
@@ -451,7 +451,7 @@ ___
 
 ___
 
-### unholdSlot  
+### unholdSlot <Score text="unholdSlot" /> 
 
 • `get` **unholdSlot**(): `string`
 
@@ -479,7 +479,7 @@ ___
 
 ## Methods
 
-### discardEquipment  
+### discardEquipment <Score text="discardEquipment" /> 
 
 ▸ **discardEquipment**(): `void` <Badge type="tip" text="other" />
 
@@ -491,7 +491,7 @@ ___
 
 
 
-### getCurrentOwner  
+### getCurrentOwner <Score text="getCurrentOwner" /> 
 
 ▸ **getCurrentOwner**(): [`CharacterBase`](Gameplay.CharacterBase.md) <Badge type="tip" text="other" />
 
@@ -507,7 +507,7 @@ ___
 装备所有角色
 
 
-### holdEquipment  
+### holdEquipment <Score text="holdEquipment" /> 
 
 ▸ **holdEquipment**(): `void` <Badge type="tip" text="other" />
 
@@ -519,7 +519,7 @@ ___
 
 
 
-### pickupEquipment  
+### pickupEquipment <Score text="pickupEquipment" /> 
 
 ▸ **pickupEquipment**(`character`, `autoHold`): `void` <Badge type="tip" text="other" />
 
@@ -538,7 +538,7 @@ ___
 
 
 
-### unholdEquipment  
+### unholdEquipment <Score text="unholdEquipment" /> 
 
 ▸ **unholdEquipment**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / UGCService
 
-# UGCService <Badge type="tip" text="Class" /> 
+# UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
 **`Instance`**
 
@@ -26,7 +26,7 @@
 
 ## Methods
 
-### createNewLocalGameFromTemplate  
+### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
 ▸ **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
 
@@ -66,7 +66,7 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestLocalUGCGameList  
+### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
 ▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
@@ -101,7 +101,7 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestPublishedUGCGameList  
+### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
 ▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### requestUGCTemplateList  
+### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
 ▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
 
@@ -201,7 +201,7 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
 

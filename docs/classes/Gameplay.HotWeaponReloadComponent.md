@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
-# HotWeaponReloadComponent <Badge type="tip" text="Class" /> 
+# HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
 **`Description`**
 
@@ -26,7 +26,7 @@
 
 ## Properties
 
-### onEndReloadClient  
+### onEndReloadClient <Score text="onEndReloadClient" /> 
 
 • **onEndReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -36,7 +36,7 @@
 
 ___
 
-### onEndReloadServer  
+### onEndReloadServer <Score text="onEndReloadServer" /> 
 
 • **onEndReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -46,7 +46,7 @@ ___
 
 ___
 
-### onStartReloadClient  
+### onStartReloadClient <Score text="onStartReloadClient" /> 
 
 • **onStartReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -56,7 +56,7 @@ ___
 
 ___
 
-### onStartReloadServer  
+### onStartReloadServer <Score text="onStartReloadServer" /> 
 
 • **onStartReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -66,7 +66,7 @@ ___
 
 ## Accessors
 
-### animationGuid  
+### animationGuid <Score text="animationGuid" /> 
 
 • `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -97,7 +97,7 @@ ___
 
 ___
 
-### reloadDuration  
+### reloadDuration <Score text="reloadDuration" /> 
 
 • `get` **reloadDuration**(): `number` <Badge type="tip" text="other" />
 
@@ -134,7 +134,7 @@ ___
 
 ## Methods
 
-### hadAnimationGuid  
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
 ▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 

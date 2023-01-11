@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIManager
 
-# UIManager <Badge type="tip" text="Class" /> 
+# UIManager <Badge type="tip" text="Class" /> <Score text="UIManager" />
 
 **`Instance`**
 
@@ -51,7 +51,7 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 ## Properties
 
-### allPanels  
+### allPanels <Score text="allPanels" /> 
 
 • `Protected` **allPanels**: [`UIBehavior`](UI.UIBehavior.md)[]
 
@@ -61,7 +61,7 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 ___
 
-### createPanelMap  
+### createPanelMap <Score text="createPanelMap" /> 
 
 • `Protected` **createPanelMap**: `Map`<`string`, [`UIBehavior`](UI.UIBehavior.md)[]\>
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### logUIInfo  
+### logUIInfo <Score text="logUIInfo" /> 
 
 • `Protected` **logUIInfo**: `boolean`
 
@@ -81,7 +81,7 @@ ___
 
 ___
 
-### uniquePanel  
+### uniquePanel <Score text="uniquePanel" /> 
 
 • `Protected` **uniquePanel**: [`UIBehavior`](UI.UIBehavior.md)
 
@@ -91,7 +91,7 @@ ___
 
 ## Accessors
 
-### canvas  
+### canvas <Score text="canvas" /> 
 
 • `get` **canvas**(): [`Canvas`](UI.Canvas.md)
 
@@ -108,7 +108,7 @@ ___
 
 ___
 
-### uiLogInfoEnable  
+### uiLogInfoEnable <Score text="uiLogInfoEnable" /> 
 
 • `get` **uiLogInfoEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -139,7 +139,7 @@ ___
 
 ___
 
-### instance  
+### instance <Score text="instance" /> 
 
 • `Static` `get` **instance**(): [`UIManager`](UI.UIManager.md) <Badge type="tip" text="other" />
 
@@ -156,7 +156,7 @@ ___
 
 ## Methods
 
-### addUILayerMap  
+### addUILayerMap <Score text="addUILayerMap" /> 
 
 ▸ `Protected` **addUILayerMap**(`layer`, `startZOrder`): `void` <Badge type="tip" text="other" />
 
@@ -175,7 +175,7 @@ ___
 
 ___
 
-### create  
+### create <Score text="create" /> 
 
 ▸ **create**<`T`\>(`PanelClass`): `T` <Badge type="tip" text="other" />
 
@@ -204,7 +204,7 @@ ___
 
 ___
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
@@ -216,7 +216,7 @@ ___
 
 ___
 
-### destroyUI  
+### destroyUI <Score text="destroyUI" /> 
 
 ▸ **destroyUI**<`T`\>(`PanelClass`): `void` <Badge type="tip" text="other" />
 
@@ -240,7 +240,7 @@ ___
 
 ___
 
-### dumpUIData  
+### dumpUIData <Score text="dumpUIData" /> 
 
 ▸ **dumpUIData**(): `void` <Badge type="tip" text="other" />
 
@@ -252,7 +252,7 @@ ___
 
 ___
 
-### getAllUI  
+### getAllUI <Score text="getAllUI" /> 
 
 ▸ **getAllUI**<`T`\>(`PanelClass`): `T`[] <Badge type="tip" text="other" />
 
@@ -281,7 +281,7 @@ ___
 
 ___
 
-### getUI  
+### getUI <Score text="getUI" /> 
 
 ▸ **getUI**<`T`\>(`PanelClass`, `bNeedNew?`): `T` <Badge type="tip" text="other" />
 
@@ -311,7 +311,7 @@ ___
 
 ___
 
-### getUILayer  
+### getUILayer <Score text="getUILayer" /> 
 
 ▸ **getUILayer**(`panel`): `number` <Badge type="tip" text="other" />
 
@@ -334,7 +334,7 @@ UI的层级
 
 ___
 
-### hide  
+### hide <Score text="hide" /> 
 
 ▸ **hide**<`T`\>(`PanelClass`): `T` <Badge type="tip" text="other" />
 
@@ -363,7 +363,7 @@ ___
 
 ___
 
-### hideUI  
+### hideUI <Score text="hideUI" /> 
 
 ▸ **hideUI**(`panel`): `boolean` <Badge type="tip" text="other" />
 
@@ -386,7 +386,7 @@ ___
 
 ___
 
-### init  
+### init <Score text="init" /> 
 
 ▸ `Protected` **init**(): `void` <Badge type="tip" text="other" />
 
@@ -398,7 +398,7 @@ ___
 
 ___
 
-### isShown  
+### isShown <Score text="isShown" /> 
 
 ▸ `Protected` **isShown**(`panel`): `boolean` <Badge type="tip" text="other" />
 
@@ -422,7 +422,7 @@ ___
 
 ___
 
-### setAllMiddleAndBottomPanelVisible  
+### setAllMiddleAndBottomPanelVisible <Score text="setAllMiddleAndBottomPanelVisible" /> 
 
 ▸ **setAllMiddleAndBottomPanelVisible**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -440,7 +440,7 @@ ___
 
 ___
 
-### show  
+### show <Score text="show" /> 
 
 ▸ **show**<`T`\>(`PanelClass`, `...params`): `T` <Badge type="tip" text="other" />
 
@@ -470,7 +470,7 @@ ___
 
 ___
 
-### showUI  
+### showUI <Score text="showUI" /> 
 
 ▸ **showUI**(`panel`, `layer?`, `...params`): [`UIBehavior`](UI.UIBehavior.md) <Badge type="tip" text="other" />
 
@@ -495,7 +495,7 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**<`T`\>(`ManagerClass`): `T` <Badge type="tip" text="other" />
 

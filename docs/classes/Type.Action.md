@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Action
 
-# Action <Badge type="tip" text="Class" /> 
+# Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
 **`Description`**
 
@@ -32,7 +32,7 @@
 
 ## Accessors
 
-### count  
+### count <Score text="count" /> 
 
 • `get` **count**(): `number` <Badge type="tip" text="other" />
 
@@ -47,7 +47,7 @@
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
 
@@ -66,7 +66,7 @@
 
 ___
 
-### call  
+### call <Score text="call" /> 
 
 ▸ **call**(`...params`): `void` <Badge type="tip" text="other" />
 
@@ -84,7 +84,7 @@ ___
 
 ___
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
@@ -96,7 +96,7 @@ ___
 
 ___
 
-### includes  
+### includes <Score text="includes" /> 
 
 ▸ **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
 
@@ -120,7 +120,7 @@ ___
 
 ___
 
-### remove  
+### remove <Score text="remove" /> 
 
 ▸ **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
 

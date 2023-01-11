@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIFontInfo
 
-# UIFontInfo <Badge type="tip" text="Class" /> 
+# UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
 **`Description`**
 
@@ -25,7 +25,7 @@
 
 ## Properties
 
-### contentColor  
+### contentColor <Score text="contentColor" /> 
 
 • **contentColor**: [`LinearColor`](Type.LinearColor.md)
 
@@ -35,7 +35,7 @@
 
 ___
 
-### fontSize  
+### fontSize <Score text="fontSize" /> 
 
 • **fontSize**: `number`
 
@@ -45,7 +45,7 @@ ___
 
 ___
 
-### glyph  
+### glyph <Score text="glyph" /> 
 
 • **glyph**: [`UIFontGlyph`](../enums/UI.UIFontGlyph.md)
 
@@ -55,7 +55,7 @@ ___
 
 ___
 
-### letterSpacing  
+### letterSpacing <Score text="letterSpacing" /> 
 
 • **letterSpacing**: `number`
 
@@ -65,7 +65,7 @@ ___
 
 ___
 
-### outLineColor  
+### outLineColor <Score text="outLineColor" /> 
 
 • **outLineColor**: [`LinearColor`](Type.LinearColor.md)
 
@@ -75,7 +75,7 @@ ___
 
 ___
 
-### outLineSize  
+### outLineSize <Score text="outLineSize" /> 
 
 • **outLineSize**: `number`
 
@@ -85,7 +85,7 @@ ___
 
 ___
 
-### shadowColor  
+### shadowColor <Score text="shadowColor" /> 
 
 • **shadowColor**: [`LinearColor`](Type.LinearColor.md)
 
@@ -95,7 +95,7 @@ ___
 
 ___
 
-### shadowOffset  
+### shadowOffset <Score text="shadowOffset" /> 
 
 • **shadowOffset**: [`Vector2`](Type.Vector2.md)
 
@@ -105,7 +105,7 @@ ___
 
 ___
 
-### strikethrough  
+### strikethrough <Score text="strikethrough" /> 
 
 • **strikethrough**: `boolean`
 
@@ -115,7 +115,7 @@ ___
 
 ___
 
-### textAlign  
+### textAlign <Score text="textAlign" /> 
 
 • **textAlign**: [`TextJustify`](../enums/UI.TextJustify.md)
 
@@ -125,7 +125,7 @@ ___
 
 ___
 
-### textVerticalAlign  
+### textVerticalAlign <Score text="textVerticalAlign" /> 
 
 • **textVerticalAlign**: [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md)
 
@@ -135,7 +135,7 @@ ___
 
 ___
 
-### underline  
+### underline <Score text="underline" /> 
 
 • **underline**: `boolean`
 

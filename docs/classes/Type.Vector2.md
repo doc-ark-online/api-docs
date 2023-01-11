@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Vector2
 
-# Vector2 <Badge type="tip" text="Class" /> 
+# Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
 **`Description`**
 
@@ -101,7 +101,7 @@
 
 ## Properties
 
-### x  
+### x <Score text="x" /> 
 
 • **x**: `number`
 
@@ -111,7 +111,7 @@
 
 ___
 
-### y  
+### y <Score text="y" /> 
 
 • **y**: `number`
 
@@ -121,7 +121,7 @@ ___
 
 ## Accessors
 
-### length  
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### magnitude  
+### magnitude <Score text="magnitude" /> 
 
 • `get` **magnitude**(): `number`
 
@@ -153,7 +153,7 @@ ___
 
 ___
 
-### negative  
+### negative <Score text="negative" /> 
 
 • `get` **negative**(): [`Vector2`](Type.Vector2.md)
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### normalized  
+### normalized <Score text="normalized" /> 
 
 • `get` **normalized**(): [`Vector2`](Type.Vector2.md)
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### sqrLength  
+### sqrLength <Score text="sqrLength" /> 
 
 • `get` **sqrLength**(): `number`
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### sqrMagnitude  
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
 • `get` **sqrMagnitude**(): `number`
 
@@ -221,7 +221,7 @@ ___
 
 ___
 
-### negOne  
+### negOne <Score text="negOne" /> 
 
 • `Static` `get` **negOne**(): [`Vector2`](Type.Vector2.md)
 
@@ -235,7 +235,7 @@ ___
 
 ___
 
-### one  
+### one <Score text="one" /> 
 
 • `Static` `get` **one**(): [`Vector2`](Type.Vector2.md)
 
@@ -249,7 +249,7 @@ ___
 
 ___
 
-### unitX  
+### unitX <Score text="unitX" /> 
 
 • `Static` `get` **unitX**(): [`Vector2`](Type.Vector2.md)
 
@@ -263,7 +263,7 @@ ___
 
 ___
 
-### unitY  
+### unitY <Score text="unitY" /> 
 
 • `Static` `get` **unitY**(): [`Vector2`](Type.Vector2.md)
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-### zero  
+### zero <Score text="zero" /> 
 
 • `Static` `get` **zero**(): [`Vector2`](Type.Vector2.md)
 
@@ -291,7 +291,7 @@ ___
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -314,7 +314,7 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -331,7 +331,7 @@ ___
 
 ___
 
-### divide  
+### divide <Score text="divide" /> 
 
 ▸ **divide**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -373,7 +373,7 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -397,7 +397,7 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
@@ -415,7 +415,7 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -457,7 +457,7 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ **normalize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -474,7 +474,7 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ **set**(`other`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -517,7 +517,7 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -540,7 +540,7 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`v`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -563,7 +563,7 @@ ___
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -580,7 +580,7 @@ ___
 
 ___
 
-### add  
+### add <Score text="add" /> 
 
 ▸ `Static` **add**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -611,7 +611,7 @@ ___
 
 ___
 
-### angle  
+### angle <Score text="angle" /> 
 
 ▸ `Static` **angle**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -635,7 +635,7 @@ ___
 
 ___
 
-### ceil  
+### ceil <Score text="ceil" /> 
 
 ▸ `Static` **ceil**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -665,7 +665,7 @@ ___
 
 ___
 
-### clamp  
+### clamp <Score text="clamp" /> 
 
 ▸ `Static` **clamp**(`v`, `min`, `max`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -690,7 +690,7 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ `Static` **clone**(`a`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -713,7 +713,7 @@ ___
 
 ___
 
-### copy  
+### copy <Score text="copy" /> 
 
 ▸ `Static` **copy**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -743,7 +743,7 @@ ___
 
 ___
 
-### cross  
+### cross <Score text="cross" /> 
 
 ▸ `Static` **cross**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -773,7 +773,7 @@ ___
 
 ___
 
-### distance  
+### distance <Score text="distance" /> 
 
 ▸ `Static` **distance**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -797,7 +797,7 @@ ___
 
 ___
 
-### divide  
+### divide <Score text="divide" /> 
 
 ▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -855,7 +855,7 @@ ___
 
 ___
 
-### dot  
+### dot <Score text="dot" /> 
 
 ▸ `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -879,7 +879,7 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -904,7 +904,7 @@ ___
 
 ___
 
-### floor  
+### floor <Score text="floor" /> 
 
 ▸ `Static` **floor**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -934,7 +934,7 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ `Static` **fromString**(`str`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -964,7 +964,7 @@ ___
 
 ___
 
-### fromUEVector2D  
+### fromUEVector2D <Score text="fromUEVector" /> 
 
 ▸ `Static` **fromUEVector2D**(`v`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -994,7 +994,7 @@ ___
 
 ___
 
-### invert  
+### invert <Score text="invert" /> 
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1024,7 +1024,7 @@ ___
 
 ___
 
-### invertSafe  
+### invertSafe <Score text="invertSafe" /> 
 
 ▸ `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1055,7 +1055,7 @@ ___
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1087,7 +1087,7 @@ ___
 
 ___
 
-### magnitude  
+### magnitude <Score text="magnitude" /> 
 
 ▸ `Static` **magnitude**(`a`): `number` <Badge type="tip" text="other" />
 
@@ -1110,7 +1110,7 @@ ___
 
 ___
 
-### max  
+### max <Score text="max" /> 
 
 ▸ `Static` **max**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1135,7 +1135,7 @@ ___
 
 ___
 
-### min  
+### min <Score text="min" /> 
 
 ▸ `Static` **min**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1166,7 +1166,7 @@ ___
 
 ___
 
-### moveTowards  
+### moveTowards <Score text="moveTowards" /> 
 
 ▸ `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1198,7 +1198,7 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1256,7 +1256,7 @@ ___
 
 ___
 
-### negate  
+### negate <Score text="negate" /> 
 
 ▸ `Static` **negate**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1286,7 +1286,7 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ `Static` **normalize**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1316,7 +1316,7 @@ ___
 
 ___
 
-### project  
+### project <Score text="project" /> 
 
 ▸ `Static` **project**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1347,7 +1347,7 @@ ___
 
 ___
 
-### random  
+### random <Score text="random" /> 
 
 ▸ `Static` **random**(`range?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1370,7 +1370,7 @@ ___
 
 ___
 
-### reflect  
+### reflect <Score text="reflect" /> 
 
 ▸ `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1401,7 +1401,7 @@ ___
 
 ___
 
-### rotate  
+### rotate <Score text="rotate" /> 
 
 ▸ `Static` **rotate**(`v`, `radians`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1432,7 +1432,7 @@ ___
 
 ___
 
-### round  
+### round <Score text="round" /> 
 
 ▸ `Static` **round**(`a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1456,7 +1456,7 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ `Static` **set**(`a`, `x`, `y`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1487,7 +1487,7 @@ ___
 
 ___
 
-### signAngle  
+### signAngle <Score text="signAngle" /> 
 
 ▸ `Static` **signAngle**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -1517,7 +1517,7 @@ ___
 
 ___
 
-### sqrMagnitude  
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
 ▸ `Static` **sqrMagnitude**(`a`): `number` <Badge type="tip" text="other" />
 
@@ -1540,7 +1540,7 @@ ___
 
 ___
 
-### squaredDistance  
+### squaredDistance <Score text="squaredDistance" /> 
 
 ▸ `Static` **squaredDistance**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
@@ -1564,7 +1564,7 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
@@ -1588,7 +1588,7 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 

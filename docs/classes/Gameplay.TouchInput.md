@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / TouchInput
 
-# TouchInput <Badge type="tip" text="Class" /> 
+# TouchInput <Badge type="tip" text="Class" /> <Score text="TouchInput" />
 
 **`Description`**
 
@@ -22,7 +22,7 @@
 
 ## Properties
 
-### onTouch  
+### onTouch <Score text="onTouch" /> 
 
 • **onTouch**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
 
@@ -32,7 +32,7 @@
 
 ___
 
-### onTouchBegin  
+### onTouchBegin <Score text="onTouchBegin" /> 
 
 • **onTouchBegin**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### onTouchEnd  
+### onTouchEnd <Score text="onTouchEnd" /> 
 
 • **onTouchEnd**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
 
@@ -52,7 +52,7 @@ ___
 
 ___
 
-### onTouchMove  
+### onTouchMove <Score text="onTouchMove" /> 
 
 • **onTouchMove**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
 
@@ -62,7 +62,7 @@ ___
 
 ## Methods
 
-### getTouchVectorArray  
+### getTouchVectorArray <Score text="getTouchVectorArray" /> 
 
 ▸ **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
 
@@ -80,7 +80,7 @@ ___
 
 ___
 
-### setPlayerController  
+### setPlayerController <Score text="setPlayerController" /> 
 
 ▸ **setPlayerController**(): `void` <Badge type="tip" text="other" />
 

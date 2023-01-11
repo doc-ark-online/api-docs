@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLauncher
 
-# ProjectileLauncher <Badge type="tip" text="Class" /> 
+# ProjectileLauncher <Badge type="tip" text="Class" /> <Score text="ProjectileLauncher" />
 
 **`Description`**
 
@@ -146,7 +146,7 @@
 
 ## Properties
 
-### onProjectileDestroy  
+### onProjectileDestroy <Score text="onProjectileDestroy" /> 
 
 • **onProjectileDestroy**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
@@ -162,7 +162,7 @@
 
 ___
 
-### onProjectileHit  
+### onProjectileHit <Score text="onProjectileHit" /> 
 
 • **onProjectileHit**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
@@ -178,7 +178,7 @@ ___
 
 ___
 
-### onProjectileSpawned  
+### onProjectileSpawned <Score text="onProjectileSpawned" /> 
 
 • **onProjectileSpawned**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\>
 
@@ -194,7 +194,7 @@ ___
 
 ## Accessors
 
-### acceleration  
+### acceleration <Score text="acceleration" /> 
 
 • `get` **acceleration**(): `number`
 
@@ -221,7 +221,7 @@ ___
 
 ___
 
-### accelerationEnable  
+### accelerationEnable <Score text="accelerationEnable" /> 
 
 • `get` **accelerationEnable**(): `boolean`
 
@@ -248,7 +248,7 @@ ___
 
 ___
 
-### accelerationEnableDistance  
+### accelerationEnableDistance <Score text="accelerationEnableDistance" /> 
 
 • `get` **accelerationEnableDistance**(): `number`
 
@@ -275,7 +275,7 @@ ___
 
 ___
 
-### accelerationEnableMode  
+### accelerationEnableMode <Score text="accelerationEnableMode" /> 
 
 • `get` **accelerationEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
@@ -302,7 +302,7 @@ ___
 
 ___
 
-### accelerationEnableTime  
+### accelerationEnableTime <Score text="accelerationEnableTime" /> 
 
 • `get` **accelerationEnableTime**(): `number`
 
@@ -329,7 +329,7 @@ ___
 
 ___
 
-### collisionLossCoefficient  
+### collisionLossCoefficient <Score text="collisionLossCoefficient" /> 
 
 • `get` **collisionLossCoefficient**(): `number`
 
@@ -356,7 +356,7 @@ ___
 
 ___
 
-### collisionMode  
+### collisionMode <Score text="collisionMode" /> 
 
 • `get` **collisionMode**(): [`ProjectileCollisionMode`](../enums/Gameplay.ProjectileCollisionMode.md)
 
@@ -383,7 +383,7 @@ ___
 
 ___
 
-### detectionRadius  
+### detectionRadius <Score text="detectionRadius" /> 
 
 • `get` **detectionRadius**(): `number`
 
@@ -409,7 +409,7 @@ ___
 
 
 
-### gravitationalAcceleration  
+### gravitationalAcceleration <Score text="gravitationalAcceleration" /> 
 
 • `get` **gravitationalAcceleration**(): `number`
 
@@ -436,7 +436,7 @@ ___
 
 ___
 
-### gravityEnable  
+### gravityEnable <Score text="gravityEnable" /> 
 
 • `get` **gravityEnable**(): `boolean`
 
@@ -463,7 +463,7 @@ ___
 
 ___
 
-### gravityEnableDistance  
+### gravityEnableDistance <Score text="gravityEnableDistance" /> 
 
 • `get` **gravityEnableDistance**(): `number`
 
@@ -490,7 +490,7 @@ ___
 
 ___
 
-### gravityEnableMode  
+### gravityEnableMode <Score text="gravityEnableMode" /> 
 
 • `get` **gravityEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
@@ -517,7 +517,7 @@ ___
 
 ___
 
-### gravityEnableTime  
+### gravityEnableTime <Score text="gravityEnableTime" /> 
 
 • `get` **gravityEnableTime**(): `number`
 
@@ -543,7 +543,7 @@ ___
 
 
 
-### initialSpeed  
+### initialSpeed <Score text="initialSpeed" /> 
 
 • `get` **initialSpeed**(): `number`
 
@@ -570,7 +570,7 @@ ___
 
 ___
 
-### isAutoDestroy  
+### isAutoDestroy <Score text="isAutoDestroy" /> 
 
 • `get` **isAutoDestroy**(): `boolean`
 
@@ -597,7 +597,7 @@ ___
 
 ___
 
-### launchDirection  
+### launchDirection <Score text="launchDirection" /> 
 
 • `get` **launchDirection**(): [`Rotation`](Type.Rotation.md)
 
@@ -624,7 +624,7 @@ ___
 
 ___
 
-### lifeSpan  
+### lifeSpan <Score text="lifeSpan" /> 
 
 • `get` **lifeSpan**(): `number`
 
@@ -650,7 +650,7 @@ ___
 
 
 
-### maxCollisionTimes  
+### maxCollisionTimes <Score text="maxCollisionTimes" /> 
 
 • `get` **maxCollisionTimes**(): `number`
 
@@ -677,7 +677,7 @@ ___
 
 ___
 
-### maxSpeed  
+### maxSpeed <Score text="maxSpeed" /> 
 
 • `get` **maxSpeed**(): `number`
 
@@ -703,7 +703,7 @@ ___
 
 
 
-### range  
+### range <Score text="range" /> 
 
 • `get` **range**(): `number`
 
@@ -729,7 +729,7 @@ ___
 
 
 
-### startLocation  
+### startLocation <Score text="startLocation" /> 
 
 • `get` **startLocation**(): [`Vector`](Type.Vector.md)
 
@@ -755,7 +755,7 @@ ___
 
 
 
-### traceLineStyle  
+### traceLineStyle <Score text="traceLineStyle" /> 
 
 • `get` **traceLineStyle**(): [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md)
 
@@ -783,7 +783,7 @@ ___
 
 ## Methods
 
-### bindPlayer  
+### bindPlayer <Score text="bindPlayer" /> 
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
 
@@ -805,7 +805,7 @@ ___
 true：参数 player 有效，绑定成功
 
 
-### drawPredictedTrajectory  
+### drawPredictedTrajectory <Score text="drawPredictedTrajectory" /> 
 
 ▸ **drawPredictedTrajectory**(`density?`, `duration?`): `void` <Badge type="tip" text="other" />
 
@@ -829,7 +829,7 @@ true：参数 player 有效，绑定成功
 
 
 
-### predictedTrajectory  
+### predictedTrajectory <Score text="predictedTrajectory" /> 
 
 ▸ **predictedTrajectory**(`density`, `duration`): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
 
@@ -858,7 +858,7 @@ true：参数 player 有效，绑定成功
 路径轨迹点
 
 
-### spawnProjectileInstanceLaunch  
+### spawnProjectileInstanceLaunch <Score text="spawnProjectileInstanceLaunch" /> 
 
 ▸ **spawnProjectileInstanceLaunch**(): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
 
@@ -881,7 +881,7 @@ true：参数 player 有效，绑定成功
 
 ___
 
-### spawnProjectileInstanceLaunchToTarget  
+### spawnProjectileInstanceLaunchToTarget <Score text="spawnProjectileInstanceLaunchToTarget" /> 
 
 ▸ **spawnProjectileInstanceLaunchToTarget**(`location`, `time?`, `speed?`): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
 
@@ -912,7 +912,7 @@ ___
 
 ___
 
-### unbindPlayer  
+### unbindPlayer <Score text="unbindPlayer" /> 
 
 ▸ **unbindPlayer**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Extension](../modules/Extension.Extension.md) / ObjPool
 
-# ObjPool<T\> <Badge type="tip" text="Class" /> 
+# ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
 **`Description`**
 
@@ -44,7 +44,7 @@
 
 ## Methods
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
@@ -56,7 +56,7 @@
 
 ___
 
-### despawn  
+### despawn <Score text="despawn" /> 
 
 ▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
 
@@ -74,7 +74,7 @@ ___
 
 ___
 
-### spawn  
+### spawn <Score text="spawn" /> 
 
 ▸ **spawn**(): `T` <Badge type="tip" text="other" />
 

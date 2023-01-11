@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / TimeUtil
 
-# TimeUtil <Badge type="tip" text="Namespace" /> 
+# TimeUtil <Badge type="tip" text="Namespace" /> <Score text="TimeUtil" />
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Variables
 
-### onEnterFrame  
+### onEnterFrame <Score text="onEnterFrame" /> 
 
 • `Const` **onEnterFrame**: [`Action1`](../classes/Type.Action1.md)<`number`\>
 
@@ -54,7 +54,7 @@ onEnterFrame.add((dt : number) =>{
 
 ___
 
-### traceFrameTime  
+### traceFrameTime <Score text="traceFrameTime" /> 
 
 • **traceFrameTime**: `boolean`
 
@@ -64,7 +64,7 @@ ___
 
 ## Functions
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
@@ -76,7 +76,7 @@ ___
 
 ___
 
-### clearDelayExecute  
+### clearDelayExecute <Score text="clearDelayExecute" /> 
 
 ▸ **clearDelayExecute**(`id`): `void` <Badge type="tip" text="other" />
 
@@ -94,7 +94,7 @@ ___
 
 ___
 
-### clearInterval  
+### clearInterval <Score text="clearInterval" /> 
 
 ▸ **clearInterval**(`id`): `void` <Badge type="tip" text="other" />
 
@@ -112,7 +112,7 @@ ___
 
 ___
 
-### delayExecute  
+### delayExecute <Score text="delayExecute" /> 
 
 ▸ **delayExecute**(`handler`, `frameNum?`): `number` <Badge type="tip" text="other" />
 
@@ -136,7 +136,7 @@ ___
 
 ___
 
-### delaySecond  
+### delaySecond <Score text="delaySecond" /> 
 
 ▸ **delaySecond**(`second`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
@@ -159,7 +159,7 @@ Promise
 
 ___
 
-### delayTime  
+### delayTime <Score text="delayTime" /> 
 
 ▸ **delayTime**(): `number` <Badge type="tip" text="other" />
 
@@ -182,7 +182,7 @@ number（单位：秒）
 
 ___
 
-### elapsedTime  
+### elapsedTime <Score text="elapsedTime" /> 
 
 ▸ **elapsedTime**(): `number` <Badge type="tip" text="other" />
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### getExecuteTime  
+### getExecuteTime <Score text="getExecuteTime" /> 
 
 ▸ **getExecuteTime**(`fn`): `number` <Badge type="tip" text="other" />
 
@@ -228,7 +228,7 @@ ___
 
 ___
 
-### parseTime  
+### parseTime <Score text="parseTime" /> 
 
 ▸ **parseTime**(`timeData`, `format?`): `string` <Badge type="tip" text="other" />
 
@@ -252,7 +252,7 @@ ___
 
 ___
 
-### setInterval  
+### setInterval <Score text="setInterval" /> 
 
 ▸ **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` <Badge type="tip" text="other" />
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-### time  
+### time <Score text="time" /> 
 
 ▸ **time**(): `number` <Badge type="tip" text="other" />
 

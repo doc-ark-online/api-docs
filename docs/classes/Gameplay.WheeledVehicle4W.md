@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / WheeledVehicle4W
 
-# WheeledVehicle4W <Badge type="tip" text="Class" /> 
+# WheeledVehicle4W <Badge type="tip" text="Class" /> <Score text="WheeledVehicle4W" />
 
 **`Description`**
 
@@ -137,7 +137,7 @@
 
 ## Accessors
 
-### brakingTorque  
+### brakingTorque <Score text="brakingTorque" /> 
 
 • `get` **brakingTorque**(): `number` <Badge type="tip" text="other" />
 
@@ -154,7 +154,7 @@
 
 ___
 
-### currentGearLevel  
+### currentGearLevel <Score text="currentGearLevel" /> 
 
 • `get` **currentGearLevel**(): `number` <Badge type="tip" text="other" />
 
@@ -192,7 +192,7 @@ ___
 
 ___
 
-### driveMode  
+### driveMode <Score text="driveMode" /> 
 
 • `get` **driveMode**(): [`VehicleDriveMode4W`](../enums/Gameplay.VehicleDriveMode4W.md) <Badge type="tip" text="other" />
 
@@ -208,7 +208,7 @@ ___
 载具驱动模式
 
 
-### friction  
+### friction <Score text="friction" /> 
 
 • `get` **friction**(): `number` <Badge type="tip" text="other" />
 
@@ -224,7 +224,7 @@ ___
 载具摩擦力系数
 
 
-### handbrakeInputEnable  
+### handbrakeInputEnable <Score text="handbrakeInputEnable" /> 
 
 • `set` **handbrakeInputEnable**(`useHandbrake`): `void` <Badge type="tip" text="other" />
 
@@ -247,7 +247,7 @@ ___
 
 
 
-### mass  
+### mass <Score text="mass" /> 
 
 • `get` **mass**(): `number` <Badge type="tip" text="other" />
 
@@ -285,7 +285,7 @@ ___
 
 ___
 
-### maxEngineRPM  
+### maxEngineRPM <Score text="maxEngineRPM" /> 
 
 • `get` **maxEngineRPM**(): `number` <Badge type="tip" text="other" />
 
@@ -302,7 +302,7 @@ ___
 
 ___
 
-### maxGearLevel  
+### maxGearLevel <Score text="maxGearLevel" /> 
 
 • `get` **maxGearLevel**(): `number` <Badge type="tip" text="other" />
 
@@ -324,7 +324,7 @@ ___
 最大档位级别
 
 
-### velocity  
+### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): `number` <Badge type="tip" text="other" />
 
@@ -340,7 +340,7 @@ ___
 当前行驶速度
 
 
-### wheelNum  
+### wheelNum <Score text="wheelNum" /> 
 
 • `get` **wheelNum**(): `number` <Badge type="tip" text="other" />
 
@@ -358,7 +358,7 @@ ___
 
 ## Methods
 
-### gearDown  
+### gearDown <Score text="gearDown" /> 
 
 ▸ **gearDown**(): `void` <Badge type="tip" text="other" />
 
@@ -370,7 +370,7 @@ ___
 
 ___
 
-### gearUp  
+### gearUp <Score text="gearUp" /> 
 
 ▸ **gearUp**(): `void` <Badge type="tip" text="other" />
 
@@ -381,7 +381,7 @@ ___
 
 
 
-### getGearRatio  
+### getGearRatio <Score text="getGearRatio" /> 
 
 ▸ **getGearRatio**(`gearLevel`): [`VehicleGearData`](../modules/Gameplay.Gameplay.md#vehiclegeardata) <Badge type="tip" text="other" />
 
@@ -409,7 +409,7 @@ ___
 指定档位属性
 
 
-### getWheelData  
+### getWheelData <Score text="getWheelData" /> 
 
 ▸ **getWheelData**(`wheelId`): [`VehicleWheelData`](../modules/Gameplay.Gameplay.md#vehiclewheeldata) <Badge type="tip" text="other" />
 
@@ -438,7 +438,7 @@ ___
 
 ___
 
-### getWheelMaxSteerAngle  
+### getWheelMaxSteerAngle <Score text="getWheelMaxSteerAngle" /> 
 
 ▸ **getWheelMaxSteerAngle**(`wheelId`): `number` <Badge type="tip" text="other" />
 
@@ -467,7 +467,7 @@ ___
 
 ___
 
-### getWheelPosition  
+### getWheelPosition <Score text="getWheelPosition" /> 
 
 ▸ **getWheelPosition**(`wheelId`): [`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md) <Badge type="tip" text="other" />
 
@@ -496,7 +496,7 @@ ___
 
 ___
 
-### getWheelRadius  
+### getWheelRadius <Score text="getWheelRadius" /> 
 
 ▸ **getWheelRadius**(`wheelId`): `number` <Badge type="tip" text="other" />
 
@@ -524,7 +524,7 @@ ___
 指定车轮半径
 
 
-### setCullDistance  
+### setCullDistance <Score text="setCullDistance" /> 
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
 
@@ -548,7 +548,7 @@ ___
 
 ___
 
-### setDriver  
+### setDriver <Score text="setDriver" /> 
 
 ▸ **setDriver**(`inDriver`): `void` <Badge type="tip" text="other" />
 
@@ -565,7 +565,7 @@ ___
 
 
 
-### setSteeringInput  
+### setSteeringInput <Score text="setSteeringInput" /> 
 
 ▸ **setSteeringInput**(`newInput`): `void` <Badge type="tip" text="other" />
 
@@ -590,7 +590,7 @@ ___
 
 ___
 
-### setThrottleInput  
+### setThrottleInput <Score text="setThrottleInput" /> 
 
 ▸ **setThrottleInput**(`newInput`): `void` <Badge type="tip" text="other" />
 
@@ -614,7 +614,7 @@ ___
 
 
 
-### switchCamera  
+### switchCamera <Score text="switchCamera" /> 
 
 ▸ **switchCamera**(`useVehicleCamera`): `void` <Badge type="tip" text="other" />
 

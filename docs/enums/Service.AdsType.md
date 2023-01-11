@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AdsType
 
-# AdsType <Badge type="tip" text="Enumeration" /> 
+# AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Interstitial  
+### Interstitial <Score text="Interstitial" /> 
 
 • **Interstitial** = ``"interstitial"``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Reward  
+### Reward <Score text="Reward" /> 
 
 • **Reward** = ``"reward"``
 

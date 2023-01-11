@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIBehavior
 
-# UIBehavior <Badge type="tip" text="Class" /> 
+# UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
 **`Description`**
 
@@ -32,7 +32,7 @@ UI的驱动脚本基类
 
 ## Accessors
 
-### canUpdate  
+### canUpdate <Score text="canUpdate" /> 
 
 • `get` **canUpdate**(): `boolean` <Badge type="tip" text="other" />
 
@@ -63,7 +63,7 @@ UI的驱动脚本基类
 
 ___
 
-### fullScreen  
+### fullScreen <Score text="fullScreen" /> 
 
 • `set` **fullScreen**(`inFull`): `void` <Badge type="tip" text="other" />
 
@@ -81,7 +81,7 @@ ___
 
 ___
 
-### layer  
+### layer <Score text="layer" /> 
 
 • `get` **layer**(): `number`
 
@@ -150,7 +150,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 ___
 
-### rootCanvas  
+### rootCanvas <Score text="rootCanvas" /> 
 
 • `get` **rootCanvas**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 
@@ -167,7 +167,7 @@ ___
 
 ___
 
-### uiObject  
+### uiObject <Score text="uiObject" /> 
 
 • `get` **uiObject**(): [`Widget`](UI.Widget.md)
 
@@ -183,7 +183,7 @@ ___
 
 ___
 
-### uiWidgetBase  
+### uiWidgetBase <Score text="uiWidgetBase" /> 
 
 • `get` **uiWidgetBase**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 
@@ -200,7 +200,7 @@ ___
 
 ___
 
-### visible  
+### visible <Score text="visible" /> 
 
 • `get` **visible**(): `boolean` <Badge type="tip" text="other" />
 
@@ -231,7 +231,7 @@ ___
 
 ## Methods
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
@@ -243,7 +243,7 @@ ___
 
 ___
 
-### detectDrag  
+### detectDrag <Score text="detectDrag" /> 
 
 ▸ **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### detectDragIfPressed  
+### detectDragIfPressed <Score text="detectDragIfPressed" /> 
 
 ▸ **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
@@ -290,7 +290,7 @@ ___
 
 ___
 
-### newDragDrop  
+### newDragDrop <Score text="newDragDrop" /> 
 
 ▸ **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md) <Badge type="tip" text="other" />
 
@@ -317,7 +317,7 @@ ___
 
 ___
 
-### setVisible  
+### setVisible <Score text="setVisible" /> 
 
 ▸ **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="other" />
 
@@ -336,7 +336,7 @@ ___
 
 ___
 
-### addBehavior  
+### addBehavior <Score text="addBehavior" /> 
 
 ▸ `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="other" />
 
@@ -355,7 +355,7 @@ ___
 
 ___
 
-### clearBehavior  
+### clearBehavior <Score text="clearBehavior" /> 
 
 ▸ `Static` **clearBehavior**(): `void` <Badge type="tip" text="other" />
 
@@ -367,7 +367,7 @@ ___
 
 ___
 
-### getBehavior  
+### getBehavior <Score text="getBehavior" /> 
 
 ▸ `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="other" />
 
@@ -390,7 +390,7 @@ ___
 
 ___
 
-### removeBehavior  
+### removeBehavior <Score text="removeBehavior" /> 
 
 ▸ `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="other" />
 

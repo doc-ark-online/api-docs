@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / SystemUtil
 
-# SystemUtil <Badge type="tip" text="Namespace" /> 
+# SystemUtil <Badge type="tip" text="Namespace" /> <Score text="SystemUtil" />
 
 ## Table of contents
 
@@ -28,7 +28,7 @@
 
 ## Variables
 
-### currentPlatform  
+### currentPlatform <Score text="currentPlatform" /> 
 
 • `Const` **currentPlatform**: `string` <Badge type="tip" text="other" />
 
@@ -39,7 +39,7 @@
 
 ___
 
-### isPIE  
+### isPIE <Score text="isPIE" /> 
 
 • `Const` **isPIE**: `boolean` <Badge type="tip" text="other" />
 
@@ -50,7 +50,7 @@ ___
 
 ## Functions
 
-### getCurrentEnv  
+### getCurrentEnv <Score text="getCurrentEnv" /> 
 
 ▸ **getCurrentEnv**(): `string` <Badge type="tip" text="other" />
 
@@ -67,7 +67,7 @@ ___
 
 ___
 
-### getDefaultGraphicsCPULevel  
+### getDefaultGraphicsCPULevel <Score text="getDefaultGraphicsCPULevel" /> 
 
 ▸ **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
@@ -84,7 +84,7 @@ ___
 
 ___
 
-### getDefaultGraphicsGPULevel  
+### getDefaultGraphicsGPULevel <Score text="getDefaultGraphicsGPULevel" /> 
 
 ▸ **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
@@ -101,7 +101,7 @@ ___
 
 ___
 
-### getEditorVersion  
+### getEditorVersion <Score text="getEditorVersion" /> 
 
 ▸ **getEditorVersion**(): `string` <Badge type="tip" text="other" />
 
@@ -118,7 +118,7 @@ ___
 
 ___
 
-### getFullEditorVersion  
+### getFullEditorVersion <Score text="getFullEditorVersion" /> 
 
 ▸ **getFullEditorVersion**(): `string` <Badge type="tip" text="other" />
 
@@ -135,7 +135,7 @@ ___
 
 ___
 
-### getGameId  
+### getGameId <Score text="getGameId" /> 
 
 ▸ **getGameId**(): `string` <Badge type="tip" text="other" />
 
@@ -152,7 +152,7 @@ ___
 
 ___
 
-### getGraphicsCPULevel  
+### getGraphicsCPULevel <Score text="getGraphicsCPULevel" /> 
 
 ▸ **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### getGraphicsGPULevel  
+### getGraphicsGPULevel <Score text="getGraphicsGPULevel" /> 
 
 ▸ **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
@@ -186,7 +186,7 @@ ___
 
 ___
 
-### getVersion  
+### getVersion <Score text="getVersion" /> 
 
 ▸ **getVersion**(): `string` <Badge type="tip" text="other" />
 
@@ -203,7 +203,7 @@ ___
 
 ___
 
-### isClient  
+### isClient <Score text="isClient" /> 
 
 ▸ **isClient**(): `boolean` <Badge type="tip" text="other" />
 
@@ -220,7 +220,7 @@ ___
 
 ___
 
-### isMobile  
+### isMobile <Score text="isMobile" /> 
 
 ▸ **isMobile**(): `boolean` <Badge type="tip" text="other" />
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### isServer  
+### isServer <Score text="isServer" /> 
 
 ▸ **isServer**(): `boolean` <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ ___
 
 ___
 
-### setGraphicsCPULevel  
+### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
 
 ▸ **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="other" />
 
@@ -272,7 +272,7 @@ ___
 
 ___
 
-### setGraphicsGPULevel  
+### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
 
 ▸ **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="other" />
 

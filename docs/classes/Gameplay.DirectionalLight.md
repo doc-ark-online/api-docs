@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / DirectionalLight
 
-# DirectionalLight <Badge type="tip" text="Class" /> 
+# DirectionalLight <Badge type="tip" text="Class" /> <Score text="DirectionalLight" />
 
 **`Description`**
 
@@ -114,7 +114,7 @@
 
 ## Accessors
 
-### baseShadowEnable  
+### baseShadowEnable <Score text="baseShadowEnable" /> 
 
 • `get` **baseShadowEnable**(): `boolean`
 
@@ -147,7 +147,7 @@
 
 ___
 
-### castShadowsEnable  
+### castShadowsEnable <Score text="castShadowsEnable" /> 
 
 • `get` **castShadowsEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -179,7 +179,7 @@ true或false
 
 
 
-### intensity  
+### intensity <Score text="intensity" /> 
 
 • `get` **intensity**(): `number` <Badge type="tip" text="other" />
 
@@ -212,7 +212,7 @@ true或false
 
 ___
 
-### lightColor  
+### lightColor <Score text="lightColor" /> 
 
 • `get` **lightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -244,7 +244,7 @@ ___
 
 
 
-### pitchAngle  
+### pitchAngle <Score text="pitchAngle" /> 
 
 • `get` **pitchAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -276,7 +276,7 @@ ___
 
 
 
-### temperature  
+### temperature <Score text="temperature" /> 
 
 • `get` **temperature**(): `number` <Badge type="tip" text="other" />
 
@@ -309,7 +309,7 @@ true或false
 
 ___
 
-### temperatureEnable  
+### temperatureEnable <Score text="temperatureEnable" /> 
 
 • `get` **temperatureEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -341,7 +341,7 @@ true或false
 
 
 
-### yawAngle  
+### yawAngle <Score text="yawAngle" /> 
 
 • `get` **yawAngle**(): `number` <Badge type="tip" text="other" />
 

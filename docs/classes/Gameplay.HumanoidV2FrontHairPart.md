@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2FrontHairPart
 
-# HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> 
+# HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2FrontHairPart" />
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Methods
 
-### getColor  
+### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -51,7 +51,7 @@
 
 ___
 
-### getGradientColor  
+### getGradientColor <Score text="getGradientColor" /> 
 
 ▸ **getGradientColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -73,7 +73,7 @@ ___
 
 ___
 
-### getGradientIntensity  
+### getGradientIntensity <Score text="getGradientIntensity" /> 
 
 ▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -95,7 +95,7 @@ ___
 
 ___
 
-### getHighlightColor  
+### getHighlightColor <Score text="getHighlightColor" /> 
 
 ▸ **getHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -117,7 +117,7 @@ ___
 
 ___
 
-### getHighlightMask  
+### getHighlightMask <Score text="getHighlightMask" /> 
 
 ▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
@@ -139,7 +139,7 @@ GUID
 
 ___
 
-### getMesh  
+### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
@@ -161,7 +161,7 @@ ___
 
 ___
 
-### setColor  
+### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -186,7 +186,7 @@ sync = true:双端
 
 ___
 
-### setGradientColor  
+### setGradientColor <Score text="setGradientColor" /> 
 
 ▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -211,7 +211,7 @@ sync = true:双端
 
 ___
 
-### setGradientIntensity  
+### setGradientIntensity <Score text="setGradientIntensity" /> 
 
 ▸ **setGradientIntensity**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -236,7 +236,7 @@ sync = true:双端
 
 ___
 
-### setHighlightColor  
+### setHighlightColor <Score text="setHighlightColor" /> 
 
 ▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -261,7 +261,7 @@ sync = true:双端
 
 ___
 
-### setHighlightMask  
+### setHighlightMask <Score text="setHighlightMask" /> 
 
 ▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -286,7 +286,7 @@ sync = true:双端
 
 ___
 
-### setMesh  
+### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

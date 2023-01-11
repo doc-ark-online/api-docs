@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / MoveFacingDirection
 
-# MoveFacingDirection <Badge type="tip" text="Enumeration" /> 
+# MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### ControllerDirection  
+### ControllerDirection <Score text="ControllerDirection" /> 
 
 • **ControllerDirection** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### FixedDirection  
+### FixedDirection <Score text="FixedDirection" /> 
 
 • **FixedDirection** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### MovementDirection  
+### MovementDirection <Score text="MovementDirection" /> 
 
 • **MovementDirection** = ``0``
 

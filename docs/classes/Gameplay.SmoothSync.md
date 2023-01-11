@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SmoothSync
 
-# SmoothSync <Badge type="tip" text="Class" /> 
+# SmoothSync <Badge type="tip" text="Class" /> <Score text="SmoothSync" />
 
 **`Description`**
 
@@ -116,7 +116,7 @@
 
 ## Accessors
 
-### extrapolationTimeLint  
+### extrapolationTimeLint <Score text="extrapolationTimeLint" /> 
 
 • `get` **extrapolationTimeLint**(): `number` <Badge type="tip" text="other" />
 
@@ -146,7 +146,7 @@ extrapolationTimeLint
 
 
 
-### positionSnapThreshold  
+### positionSnapThreshold <Score text="positionSnapThreshold" /> 
 
 • `get` **positionSnapThreshold**(): `number`
 
@@ -176,7 +176,7 @@ positionSnapThreshold
 
 
 
-### rotationSnapThreshold  
+### rotationSnapThreshold <Score text="rotationSnapThreshold" /> 
 
 • `get` **rotationSnapThreshold**(): `number`
 
@@ -207,7 +207,7 @@ rotationSnapThreshold
 
 ___
 
-### scaleSnapThreshold  
+### scaleSnapThreshold <Score text="scaleSnapThreshold" /> 
 
 • `get` **scaleSnapThreshold**(): `number`
 
@@ -238,7 +238,7 @@ scaleSnapThreshold值
 
 ___
 
-### sceneComponentToSync  
+### sceneComponentToSync <Score text="sceneComponentToSync" /> 
 
 • `set` **sceneComponentToSync**(`object`): `void` <Badge type="tip" text="other" />
 
@@ -256,7 +256,7 @@ ___
 
 ___
 
-### sendRate  
+### sendRate <Score text="sendRate" /> 
 
 • `get` **sendRate**(): `number` <Badge type="tip" text="other" />
 
@@ -286,7 +286,7 @@ ___
 
 
 
-### syncPositionEnable  
+### syncPositionEnable <Score text="syncPositionEnable" /> 
 
 • `get` **syncPositionEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -319,7 +319,7 @@ false : 不同步位置
 
 ___
 
-### syncRotationEnable  
+### syncRotationEnable <Score text="syncRotationEnable" /> 
 
 • `get` **syncRotationEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -350,7 +350,7 @@ true : 同步旋转，false : 不同步旋转
 
 ___
 
-### syncScaleEnable  
+### syncScaleEnable <Score text="syncScaleEnable" /> 
 
 • `get` **syncScaleEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -382,7 +382,7 @@ false : 不同步缩放
 
 
 
-### timeSmoothing  
+### timeSmoothing <Score text="timeSmoothing" /> 
 
 • `get` **timeSmoothing**(): `number` <Badge type="tip" text="other" />
 
