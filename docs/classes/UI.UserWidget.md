@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UserWidget
 
-# UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
+# UserWidget <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -70,7 +70,7 @@ UI控件的集合,预制体UI
 
 ## Accessors
 
-### focusable <Score text="focusable" /> 
+### focusable  
 
 • `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -100,7 +100,7 @@ UI控件的集合,预制体UI
 
 
 
-### rootContent <Score text="rootContent" /> 
+### rootContent  
 
 • `get` **rootContent**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 
@@ -132,7 +132,7 @@ UI控件的集合,预制体UI
 
 ## Methods
 
-### addToViewport <Score text="addToViewport" /> 
+### addToViewport  
 
 ▸ **addToViewport**(`zOrder`): `void` <Badge type="tip" text="other" />
 
@@ -149,7 +149,7 @@ UI控件的集合,预制体UI
 
 
 
-### findChildByPath <Score text="findChildByPath" /> 
+### findChildByPath  
 
 ▸ **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
@@ -171,7 +171,7 @@ UI控件的集合,预制体UI
 返回查找节点结果
 
 
-### removeRootContent <Score text="removeRootContent" /> 
+### removeRootContent  
 
 ▸ **removeRootContent**(): `void` <Badge type="tip" text="other" />
 
@@ -183,7 +183,7 @@ UI控件的集合,预制体UI
 
 ___
 
-### newObject <Score text="newObject" /> 
+### newObject  
 
 ▸ `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsPrism
 
-# PhysicsPrism <Badge type="tip" text="Class" /> <Score text="PhysicsPrism" />
+# PhysicsPrism <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -49,7 +49,7 @@
 
 ## Accessors
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean`
 
@@ -77,7 +77,7 @@
 
 
 
-### linearLimit <Score text="linearLimit" /> 
+### linearLimit  
 
 • `get` **linearLimit**(): `number`
 
@@ -106,7 +106,7 @@
 
 ___
 
-### linearVelocity <Score text="linearVelocity" /> 
+### linearVelocity  
 
 • `get` **linearVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -134,7 +134,7 @@ ___
 
 
 
-### restitution <Score text="restitution" /> 
+### restitution  
 
 • `get` **restitution**(): `number`
 
@@ -162,7 +162,7 @@ ___
 
 
 
-### strength <Score text="strength" /> 
+### strength  
 
 • `get` **strength**(): `number`
 
@@ -192,7 +192,7 @@ ___
 
 ## Methods
 
-### getAxisXLinearType <Score text="getAxisXLinearType" /> 
+### getAxisXLinearType  
 
 ▸ **getAxisXLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -209,7 +209,7 @@ X轴滑动类型
 
 ___
 
-### getAxisYLinearType <Score text="getAxisYLinearType" /> 
+### getAxisYLinearType  
 
 ▸ **getAxisYLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -226,7 +226,7 @@ Y轴滑动类型
 
 ___
 
-### getAxisZLinearType <Score text="getAxisZLinearType" /> 
+### getAxisZLinearType  
 
 ▸ **getAxisZLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -242,7 +242,7 @@ ___
 Z轴滑动类型
 
 
-### setAxisXLinearType <Score text="setAxisXLinearType" /> 
+### setAxisXLinearType  
 
 ▸ **setAxisXLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 
@@ -260,7 +260,7 @@ Z轴滑动类型
 
 ___
 
-### setAxisYLinearType <Score text="setAxisYLinearType" /> 
+### setAxisYLinearType  
 
 ▸ **setAxisYLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 
@@ -278,7 +278,7 @@ ___
 
 ___
 
-### setAxisZLinearType <Score text="setAxisZLinearType" /> 
+### setAxisZLinearType  
 
 ▸ **setAxisZLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 

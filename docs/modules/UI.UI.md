@@ -1,6 +1,6 @@
 UI
 
-# UI <Badge type="tip" text="Namespace" /> <Score text="UI" />
+# UI <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -134,7 +134,7 @@ UI
 
 ## Variables
 
-### UILayerBottom <Score text="UILayerBottom" /> 
+### UILayerBottom  
 
 • `Const` **UILayerBottom**: ``1``
 
@@ -144,7 +144,7 @@ UI
 
 ___
 
-### UILayerDialog <Score text="UILayerDialog" /> 
+### UILayerDialog  
 
 • `Const` **UILayerDialog**: ``5``
 
@@ -154,7 +154,7 @@ ___
 
 ___
 
-### UILayerError <Score text="UILayerError" /> 
+### UILayerError  
 
 • `Const` **UILayerError**: ``7``
 
@@ -164,7 +164,7 @@ ___
 
 ___
 
-### UILayerMiddle <Score text="UILayerMiddle" /> 
+### UILayerMiddle  
 
 • `Const` **UILayerMiddle**: ``2``
 
@@ -174,7 +174,7 @@ ___
 
 ___
 
-### UILayerOwn <Score text="UILayerOwn" /> 
+### UILayerOwn  
 
 • `Const` **UILayerOwn**: ``3``
 
@@ -184,7 +184,7 @@ ___
 
 ___
 
-### UILayerScene <Score text="UILayerScene" /> 
+### UILayerScene  
 
 • `Const` **UILayerScene**: ``0``
 
@@ -194,7 +194,7 @@ ___
 
 ___
 
-### UILayerSystem <Score text="UILayerSystem" /> 
+### UILayerSystem  
 
 • `Const` **UILayerSystem**: ``6``
 
@@ -204,7 +204,7 @@ ___
 
 ___
 
-### UILayerTop <Score text="UILayerTop" /> 
+### UILayerTop  
 
 • `Const` **UILayerTop**: ``4``
 
@@ -214,7 +214,7 @@ ___
 
 ## Functions
 
-### absoluteToLocal <Score text="absoluteToLocal" /> 
+### absoluteToLocal  
 
 ▸ **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -238,7 +238,7 @@ ___
 
 ___
 
-### absoluteToViewport <Score text="absoluteToViewport" /> 
+### absoluteToViewport  
 
 ▸ **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
 
@@ -258,7 +258,7 @@ ___
 
 ___
 
-### assetIDChangeIConUrlRequest <Score text="assetIDChangeIConUrlRequest" /> 
+### assetIDChangeIConUrlRequest  
 
 ▸ **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
@@ -285,7 +285,7 @@ since:v0.20.0.0 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequ
 
 ___
 
-### assetIDChangeIconUrlRequest <Score text="assetIDChangeIconUrlRequest" /> 
+### assetIDChangeIconUrlRequest  
 
 ▸ **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
@@ -308,7 +308,7 @@ ___
 
 ___
 
-### cancelDragDrop <Score text="cancelDragDrop" /> 
+### cancelDragDrop  
 
 ▸ **cancelDragDrop**(): `void` <Badge type="tip" text="other" />
 
@@ -320,7 +320,7 @@ ___
 
 ___
 
-### createUI <Score text="createUI" /> 
+### createUI  
 
 ▸ **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="other" />
 
@@ -350,7 +350,7 @@ ___
 
 ___
 
-### createUIByName <Score text="createUIByName" /> 
+### createUIByName  
 
 ▸ **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
 
@@ -373,7 +373,7 @@ ___
 
 ___
 
-### createUIByPath <Score text="createUIByPath" /> 
+### createUIByPath  
 
 ▸ **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
 
@@ -396,7 +396,7 @@ ___
 
 ___
 
-### createUIOnlyClass <Score text="createUIOnlyClass" /> 
+### createUIOnlyClass  
 
 ▸ **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="other" />
 
@@ -425,7 +425,7 @@ ___
 
 ___
 
-### endDragDrop <Score text="endDragDrop" /> 
+### endDragDrop  
 
 ▸ **endDragDrop**(`InReply`): `void` <Badge type="tip" text="other" />
 
@@ -443,7 +443,7 @@ ___
 
 ___
 
-### findUIBehavior <Score text="findUIBehavior" /> 
+### findUIBehavior  
 
 ▸ **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md) <Badge type="tip" text="other" />
 
@@ -466,7 +466,7 @@ UI绑定的脚本
 
 ___
 
-### getAbsoluteSize <Score text="getAbsoluteSize" /> 
+### getAbsoluteSize  
 
 ▸ **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -489,7 +489,7 @@ ___
 
 ___
 
-### getAssetIconDataByAssetID <Score text="getAssetIconDataByAssetID" /> 
+### getAssetIconDataByAssetID  
 
 ▸ **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="other" />
 
@@ -512,7 +512,7 @@ ___
 
 ___
 
-### getCurrentMousePosition <Score text="getCurrentMousePosition" /> 
+### getCurrentMousePosition  
 
 ▸ **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -529,7 +529,7 @@ ___
 
 ___
 
-### getDragDroppingContent <Score text="getDragDroppingContent" /> 
+### getDragDroppingContent  
 
 ▸ **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <Badge type="tip" text="other" />
 
@@ -546,7 +546,7 @@ ___
 
 ___
 
-### getLastMousePosition <Score text="getLastMousePosition" /> 
+### getLastMousePosition  
 
 ▸ **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -563,7 +563,7 @@ ___
 
 ___
 
-### getLocalSize <Score text="getLocalSize" /> 
+### getLocalSize  
 
 ▸ **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -586,7 +586,7 @@ ___
 
 ___
 
-### getLocalTopLeft <Score text="getLocalTopLeft" /> 
+### getLocalTopLeft  
 
 ▸ **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -609,7 +609,7 @@ ___
 
 ___
 
-### getMousePositionOnPlatform <Score text="getMousePositionOnPlatform" /> 
+### getMousePositionOnPlatform  
 
 ▸ **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -626,7 +626,7 @@ ___
 
 ___
 
-### getMousePositionOnViewport <Score text="getMousePositionOnViewport" /> 
+### getMousePositionOnViewport  
 
 ▸ **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -643,7 +643,7 @@ ___
 
 ___
 
-### getPlayerScreenWidgetGeometry <Score text="getPlayerScreenWidgetGeometry" /> 
+### getPlayerScreenWidgetGeometry  
 
 ▸ **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
 
@@ -666,7 +666,7 @@ ___
 
 ___
 
-### getResolutionChanged <Score text="getResolutionChanged" /> 
+### getResolutionChanged  
 
 ▸ **getResolutionChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -684,7 +684,7 @@ ___
 
 ___
 
-### getViewportScale <Score text="getViewportScale" /> 
+### getViewportScale  
 
 ▸ **getViewportScale**(): `number` <Badge type="tip" text="other" />
 
@@ -701,7 +701,7 @@ ___
 
 ___
 
-### getViewportSize <Score text="getViewportSize" /> 
+### getViewportSize  
 
 ▸ **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -718,7 +718,7 @@ ___
 
 ___
 
-### getViewportWidgetGeometry <Score text="getViewportWidgetGeometry" /> 
+### getViewportWidgetGeometry  
 
 ▸ **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
 
@@ -735,7 +735,7 @@ ___
 
 ___
 
-### isDragDropping <Score text="isDragDropping" /> 
+### isDragDropping  
 
 ▸ **isDragDropping**(): `boolean` <Badge type="tip" text="other" />
 
@@ -752,7 +752,7 @@ boolean
 
 ___
 
-### isUnderLocation <Score text="isUnderLocation" /> 
+### isUnderLocation  
 
 ▸ **isUnderLocation**(`geometry`, `absolutePosition`): `boolean` <Badge type="tip" text="other" />
 
@@ -776,7 +776,7 @@ ___
 
 ___
 
-### localToAbsolute <Score text="localToAbsolute" /> 
+### localToAbsolute  
 
 ▸ **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -800,7 +800,7 @@ ___
 
 ___
 
-### localToViewport <Score text="localToViewport" /> 
+### localToViewport  
 
 ▸ **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
 
@@ -821,7 +821,7 @@ ___
 
 ___
 
-### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
+### projectWorldLocationToWidgetPosition  
 
 ▸ **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="other" />
 
@@ -847,7 +847,7 @@ boolean
 
 ___
 
-### screenToViewport <Score text="screenToViewport" /> 
+### screenToViewport  
 
 ▸ **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -870,7 +870,7 @@ ___
 
 ___
 
-### screenToWidgetAbsolute <Score text="screenToWidgetAbsolute" /> 
+### screenToWidgetAbsolute  
 
 ▸ **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -894,7 +894,7 @@ ___
 
 ___
 
-### screenToWidgetLocal <Score text="screenToWidgetLocal" /> 
+### screenToWidgetLocal  
 
 ▸ **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -919,7 +919,7 @@ ___
 
 ___
 
-### setFocusToGameViewport <Score text="setFocusToGameViewport" /> 
+### setFocusToGameViewport  
 
 ▸ **setFocusToGameViewport**(): `void` <Badge type="tip" text="other" />
 
@@ -931,7 +931,7 @@ ___
 
 ___
 
-### setInputModeGameAndUI <Score text="setInputModeGameAndUI" /> 
+### setInputModeGameAndUI  
 
 ▸ **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void` <Badge type="tip" text="other" />
 
@@ -951,7 +951,7 @@ ___
 
 ___
 
-### setInputModeGameOnly <Score text="setInputModeGameOnly" /> 
+### setInputModeGameOnly  
 
 ▸ **setInputModeGameOnly**(): `void` <Badge type="tip" text="other" />
 
@@ -963,7 +963,7 @@ ___
 
 ___
 
-### setInputModeUIOnly <Score text="setInputModeUIOnly" /> 
+### setInputModeUIOnly  
 
 ▸ **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void` <Badge type="tip" text="other" />
 
@@ -982,7 +982,7 @@ ___
 
 ___
 
-### transformVectorAbsoluteToLocal <Score text="transformVectorAbsoluteToLocal" /> 
+### transformVectorAbsoluteToLocal  
 
 ▸ **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1006,7 +1006,7 @@ ___
 
 ___
 
-### transformVectorLocalToAbsolute <Score text="transformVectorLocalToAbsolute" /> 
+### transformVectorLocalToAbsolute  
 
 ▸ **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / MulticastDelegate
 
-# MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
+# MulticastDelegate<T\> <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -36,7 +36,7 @@
 
 ## Methods
 
-### add <Score text="add" /> 
+### add  
 
 ▸ **add**(`func`): `void` <Badge type="tip" text="other" />
 
@@ -58,7 +58,7 @@
 
 ___
 
-### broadcast <Score text="broadcast" /> 
+### broadcast  
 
 ▸ **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
 
@@ -80,7 +80,7 @@ ___
 
 ___
 
-### clear <Score text="clear" /> 
+### clear  
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### remove <Score text="remove" /> 
+### remove  
 
 ▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
 

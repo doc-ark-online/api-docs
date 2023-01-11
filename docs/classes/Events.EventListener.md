@@ -1,6 +1,6 @@
 [Events](../modules/Events.Events.md) / EventListener
 
-# EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
+# EventListener <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Accessors
 
-### isConnected <Score text="isConnected" /> 
+### isConnected  
 
 • `get` **isConnected**(): `boolean`
 
@@ -32,7 +32,7 @@
 
 ## Methods
 
-### disconnect <Score text="disconnect" /> 
+### disconnect  
 
 ▸ **disconnect**(): `void` <Badge type="tip" text="other" />
 

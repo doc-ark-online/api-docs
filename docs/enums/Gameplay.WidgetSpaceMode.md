@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / WidgetSpaceMode
 
-# WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
+# WidgetSpaceMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@ UI空间位置枚举
 
 ## Enumeration Members
 
-### OverheadUI <Score text="OverheadUI" /> 
+### OverheadUI  
 
 • **OverheadUI** = ``2``
 
@@ -24,7 +24,7 @@ UI空间位置枚举
 
 ___
 
-### Screen <Score text="Screen" /> 
+### Screen  
 
 • **Screen** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### World <Score text="World" /> 
+### World  
 
 • **World** = ``0``
 

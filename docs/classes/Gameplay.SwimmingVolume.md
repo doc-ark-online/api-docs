@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SwimmingVolume
 
-# SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
+# SwimmingVolume <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -109,7 +109,7 @@
 
 ## Methods
 
-### inArea <Score text="inArea" /> 
+### inArea  
 
 ▸ **inArea**(`player`): `boolean` <Badge type="tip" text="other" />
 

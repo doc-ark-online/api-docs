@@ -1,6 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Sequence
 
-# Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
+# Sequence <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -14,7 +14,7 @@
 
 ## Methods
 
-### nextID <Score text="nextID" /> 
+### nextID  
 
 ▸ `Static` **nextID**(): `number` <Badge type="tip" text="other" />
 

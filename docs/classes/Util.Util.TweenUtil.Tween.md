@@ -1,6 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Tween
 
-# Tween<T\> <Badge type="tip" text="Class" /> <Score text="Tween<T\>" />
+# Tween<T\> <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -66,7 +66,7 @@
 
 ## Methods
 
-### chain <Score text="chain" /> 
+### chain  
 
 ▸ **chain**(`...tweens`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
 
@@ -104,7 +104,7 @@ tweenA.chain(tweenB, tweenC) <Badge type="tip" text="other" />
 
 ___
 
-### delay <Score text="delay" /> 
+### delay  
 
 ▸ **delay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -127,7 +127,7 @@ ___
 
 ___
 
-### duration <Score text="duration" /> 
+### duration  
 
 ▸ **duration**(`d?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### easing <Score text="easing" /> 
+### easing  
 
 ▸ **easing**(`easingFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -173,7 +173,7 @@ ___
 
 ___
 
-### end <Score text="end" /> 
+### end  
 
 ▸ **end**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -190,7 +190,7 @@ ___
 
 ___
 
-### getID <Score text="getID" /> 
+### getID  
 
 ▸ **getID**(): `number` <Badge type="tip" text="other" />
 
@@ -207,7 +207,7 @@ ___
 
 ___
 
-### group <Score text="group" /> 
+### group  
 
 ▸ **group**(`group?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### interpolation <Score text="interpolation" /> 
+### interpolation  
 
 ▸ **interpolation**(`interpolationFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -253,7 +253,7 @@ ___
 
 ___
 
-### isPaused <Score text="isPaused" /> 
+### isPaused  
 
 ▸ **isPaused**(): `boolean` <Badge type="tip" text="other" />
 
@@ -270,7 +270,7 @@ true-暂停；false-在补间。
 
 ___
 
-### isPlaying <Score text="isPlaying" /> 
+### isPlaying  
 
 ▸ **isPlaying**(): `boolean` <Badge type="tip" text="other" />
 
@@ -287,7 +287,7 @@ true-在补间过程中；false-不在补间过程，未开始或已结束。
 
 ___
 
-### onComplete <Score text="onComplete" /> 
+### onComplete  
 
 ▸ **onComplete**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -310,7 +310,7 @@ ___
 
 ___
 
-### onRepeat <Score text="onRepeat" /> 
+### onRepeat  
 
 ▸ **onRepeat**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -333,7 +333,7 @@ ___
 
 ___
 
-### onStart <Score text="onStart" /> 
+### onStart  
 
 ▸ **onStart**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -363,7 +363,7 @@ ___
 
 ___
 
-### onStop <Score text="onStop" /> 
+### onStop  
 
 ▸ **onStop**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -393,7 +393,7 @@ ___
 
 ___
 
-### onUpdate <Score text="onUpdate" /> 
+### onUpdate  
 
 ▸ **onUpdate**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -422,7 +422,7 @@ ___
 
 ___
 
-### pause <Score text="pause" /> 
+### pause  
 
 ▸ **pause**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -451,7 +451,7 @@ ___
 
 ___
 
-### repeat <Score text="repeat" /> 
+### repeat  
 
 ▸ **repeat**(`times?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\>
 
@@ -488,7 +488,7 @@ tween.repeat(Infinity) // 无限循环 <Badge type="tip" text="other" />
 
 ___
 
-### repeatDelay <Score text="repeatDelay" /> 
+### repeatDelay  
 
 ▸ **repeatDelay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -511,7 +511,7 @@ ___
 
 ___
 
-### resume <Score text="resume" /> 
+### resume  
 
 ▸ **resume**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -540,7 +540,7 @@ ___
 
 ___
 
-### start <Score text="start" /> 
+### start  
 
 ▸ **start**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -569,7 +569,7 @@ ___
 
 ___
 
-### stop <Score text="stop" /> 
+### stop  
 
 ▸ **stop**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -586,7 +586,7 @@ ___
 
 ___
 
-### stopChainedTweens <Score text="stopChainedTweens" /> 
+### stopChainedTweens  
 
 ▸ **stopChainedTweens**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -603,7 +603,7 @@ ___
 
 ___
 
-### to <Score text="to" /> 
+### to  
 
 ▸ **to**(`properties`, `duration?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 
@@ -627,7 +627,7 @@ ___
 
 ___
 
-### update <Score text="update" /> 
+### update  
 
 ▸ **update**(`time?`, `autoStart?`): `boolean` <Badge type="tip" text="other" />
 
@@ -651,7 +651,7 @@ true-如果当前更新之后尚未结束, false-当前更新之后补间结束
 
 ___
 
-### yoyo <Score text="yoyo" /> 
+### yoyo  
 
 ▸ **yoyo**(`yoyo?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
 

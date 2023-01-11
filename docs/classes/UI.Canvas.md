@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Canvas
 
-# Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
+# Canvas <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -53,7 +53,7 @@
 
 ## Accessors
 
-### autoLayoutContainerRule <Score text="autoLayoutContainerRule" /> 
+### autoLayoutContainerRule  
 
 • `get` **autoLayoutContainerRule**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <Badge type="tip" text="other" />
 
@@ -84,7 +84,7 @@
 
 ___
 
-### autoLayoutEnable <Score text="autoLayoutEnable" /> 
+### autoLayoutEnable  
 
 • `get` **autoLayoutEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@ ___
 
 ___
 
-### autoLayoutHugContent <Score text="autoLayoutHugContent" /> 
+### autoLayoutHugContent  
 
 • `get` **autoLayoutHugContent**(): [`UIHugContent`](UI.UIHugContent.md) <Badge type="tip" text="other" />
 
@@ -146,7 +146,7 @@ ___
 
 ___
 
-### autoLayoutPacketRule <Score text="autoLayoutPacketRule" /> 
+### autoLayoutPacketRule  
 
 • `get` **autoLayoutPacketRule**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <Badge type="tip" text="other" />
 
@@ -177,7 +177,7 @@ ___
 
 ___
 
-### autoLayoutPadding <Score text="autoLayoutPadding" /> 
+### autoLayoutPadding  
 
 • `get` **autoLayoutPadding**(): `Readonly`<[`Margin`](UI.Margin.md)\> <Badge type="tip" text="other" />
 
@@ -208,7 +208,7 @@ ___
 
 ___
 
-### autoLayoutRule <Score text="autoLayoutRule" /> 
+### autoLayoutRule  
 
 • `get` **autoLayoutRule**(): [`UILayout`](UI.UILayout.md) <Badge type="tip" text="other" />
 
@@ -239,7 +239,7 @@ ___
 
 ___
 
-### autoLayoutSpacing <Score text="autoLayoutSpacing" /> 
+### autoLayoutSpacing  
 
 • `get` **autoLayoutSpacing**(): `number` <Badge type="tip" text="other" />
 
@@ -269,7 +269,7 @@ ___
 
 
 
-### clipEnable <Score text="clipEnable" /> 
+### clipEnable  
 
 • `get` **clipEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -301,7 +301,7 @@ ___
 
 ## Methods
 
-### newObject <Score text="newObject" /> 
+### newObject  
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 

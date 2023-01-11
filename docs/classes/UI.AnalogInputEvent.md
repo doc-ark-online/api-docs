@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / AnalogInputEvent
 
-# AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
+# AnalogInputEvent <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Methods
 
-### toInputEvent <Score text="toInputEvent" /> 
+### toInputEvent  
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Matrix3x3
 
-# Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
+# Matrix3x3 <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -98,7 +98,7 @@
 
 ## Properties
 
-### m00 <Score text="m" /> 
+### m00  
 
 • **m00**: `number`
 
@@ -108,7 +108,7 @@
 
 ___
 
-### m01 <Score text="m" /> 
+### m01  
 
 • **m01**: `number`
 
@@ -118,7 +118,7 @@ ___
 
 ___
 
-### m02 <Score text="m" /> 
+### m02  
 
 • **m02**: `number`
 
@@ -128,7 +128,7 @@ ___
 
 ___
 
-### m10 <Score text="m" /> 
+### m10  
 
 • **m10**: `number`
 
@@ -138,7 +138,7 @@ ___
 
 ___
 
-### m11 <Score text="m" /> 
+### m11  
 
 • **m11**: `number`
 
@@ -148,7 +148,7 @@ ___
 
 ___
 
-### m12 <Score text="m" /> 
+### m12  
 
 • **m12**: `number`
 
@@ -158,7 +158,7 @@ ___
 
 ___
 
-### m20 <Score text="m" /> 
+### m20  
 
 • **m20**: `number`
 
@@ -168,7 +168,7 @@ ___
 
 ___
 
-### m21 <Score text="m" /> 
+### m21  
 
 • **m21**: `number`
 
@@ -178,7 +178,7 @@ ___
 
 ___
 
-### m22 <Score text="m" /> 
+### m22  
 
 • **m22**: `number`
 
@@ -188,7 +188,7 @@ ___
 
 ## Accessors
 
-### identity <Score text="identity" /> 
+### identity  
 
 • `Static` `get` **identity**(): [`Matrix3x3`](Type.Matrix3x3.md)
 
@@ -202,7 +202,7 @@ ___
 
 ## Methods
 
-### add <Score text="add" /> 
+### add  
 
 ▸ **add**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -225,7 +225,7 @@ this
 
 ___
 
-### clone <Score text="clone" /> 
+### clone  
 
 ▸ **clone**(): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -242,7 +242,7 @@ ___
 
 ___
 
-### determinant <Score text="determinant" /> 
+### determinant  
 
 ▸ **determinant**(): `number` <Badge type="tip" text="other" />
 
@@ -259,7 +259,7 @@ ___
 
 ___
 
-### equals <Score text="equals" /> 
+### equals  
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -283,7 +283,7 @@ ___
 
 ___
 
-### identity <Score text="identity" /> 
+### identity  
 
 ▸ **identity**(): `void` <Badge type="tip" text="other" />
 
@@ -295,7 +295,7 @@ ___
 
 ___
 
-### invert <Score text="invert" /> 
+### invert  
 
 ▸ **invert**(): `void` <Badge type="tip" text="other" />
 
@@ -307,7 +307,7 @@ ___
 
 ___
 
-### multiply <Score text="multiply" /> 
+### multiply  
 
 ▸ **multiply**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -349,7 +349,7 @@ this
 
 ___
 
-### rotate <Score text="rotate" /> 
+### rotate  
 
 ▸ **rotate**(`rad`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -372,7 +372,7 @@ this
 
 ___
 
-### scale <Score text="scale" /> 
+### scale  
 
 ▸ **scale**(`vec`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -395,7 +395,7 @@ this
 
 ___
 
-### set <Score text="set" /> 
+### set  
 
 ▸ **set**(`other`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -445,7 +445,7 @@ this
 
 ___
 
-### strictEquals <Score text="strictEquals" /> 
+### strictEquals  
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -468,7 +468,7 @@ ___
 
 ___
 
-### subtract <Score text="subtract" /> 
+### subtract  
 
 ▸ **subtract**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -491,7 +491,7 @@ this
 
 ___
 
-### toString <Score text="toString" /> 
+### toString  
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -508,7 +508,7 @@ ___
 
 ___
 
-### transpose <Score text="transpose" /> 
+### transpose  
 
 ▸ **transpose**(): `void` <Badge type="tip" text="other" />
 
@@ -520,7 +520,7 @@ ___
 
 ___
 
-### add <Score text="add" /> 
+### add  
 
 ▸ `Static` **add**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -551,7 +551,7 @@ ___
 
 ___
 
-### clone <Score text="clone" /> 
+### clone  
 
 ▸ `Static` **clone**(`a`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -574,7 +574,7 @@ ___
 
 ___
 
-### determinant <Score text="determinant" /> 
+### determinant  
 
 ▸ `Static` **determinant**(`a`): `number` <Badge type="tip" text="other" />
 
@@ -597,7 +597,7 @@ ___
 
 ___
 
-### equals <Score text="equals" /> 
+### equals  
 
 ▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -622,7 +622,7 @@ ___
 
 ___
 
-### fromMat4 <Score text="fromMat" /> 
+### fromMat4  
 
 ▸ `Static` **fromMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -652,7 +652,7 @@ ___
 
 ___
 
-### fromRotation <Score text="fromRotation" /> 
+### fromRotation  
 
 ▸ `Static` **fromRotation**(`rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -682,7 +682,7 @@ ___
 
 ___
 
-### fromScaling <Score text="fromScaling" /> 
+### fromScaling  
 
 ▸ `Static` **fromScaling**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -712,7 +712,7 @@ ___
 
 ___
 
-### fromTranslation <Score text="fromTranslation" /> 
+### fromTranslation  
 
 ▸ `Static` **fromTranslation**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -742,7 +742,7 @@ ___
 
 ___
 
-### fromViewUp <Score text="fromViewUp" /> 
+### fromViewUp  
 
 ▸ `Static` **fromViewUp**(`view`, `up?`, `outer?`, `epsilon?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -774,7 +774,7 @@ ___
 
 ___
 
-### inverseTransposeMat4 <Score text="inverseTransposeMat" /> 
+### inverseTransposeMat4  
 
 ▸ `Static` **inverseTransposeMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -804,7 +804,7 @@ ___
 
 ___
 
-### invert <Score text="invert" /> 
+### invert  
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -834,7 +834,7 @@ ___
 
 ___
 
-### multiply <Score text="multiply" /> 
+### multiply  
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -919,7 +919,7 @@ ___
 
 ___
 
-### rotate <Score text="rotate" /> 
+### rotate  
 
 ▸ `Static` **rotate**(`a`, `rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -950,7 +950,7 @@ ___
 
 ___
 
-### scale <Score text="scale" /> 
+### scale  
 
 ▸ `Static` **scale**(`a`, `v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -981,7 +981,7 @@ ___
 
 ___
 
-### strictEquals <Score text="strictEquals" /> 
+### strictEquals  
 
 ▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
@@ -1005,7 +1005,7 @@ ___
 
 ___
 
-### subtract <Score text="subtract" /> 
+### subtract  
 
 ▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
@@ -1036,7 +1036,7 @@ ___
 
 ___
 
-### transformVector <Score text="transformVector" /> 
+### transformVector  
 
 ▸ `Static` **transformVector**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -1067,7 +1067,7 @@ ___
 
 ___
 
-### transformVector2 <Score text="transformVector" /> 
+### transformVector2  
 
 ▸ `Static` **transformVector2**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1098,7 +1098,7 @@ ___
 
 ___
 
-### transpose <Score text="transpose" /> 
+### transpose  
 
 ▸ `Static` **transpose**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 

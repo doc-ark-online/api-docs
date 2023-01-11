@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotator
 
-# PhysicsRotator <Badge type="tip" text="Class" /> <Score text="PhysicsRotator" />
+# PhysicsRotator <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -124,7 +124,7 @@
 
 ## Properties
 
-### onRotationStart <Score text="onRotationStart" /> 
+### onRotationStart  
 
 • **onRotationStart**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -134,7 +134,7 @@
 
 ___
 
-### onRotationStop <Score text="onRotationStop" /> 
+### onRotationStop  
 
 • **onRotationStop**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -144,7 +144,7 @@ ___
 
 ## Accessors
 
-### limitAngle <Score text="limitAngle" /> 
+### limitAngle  
 
 • `get` **limitAngle**(): `number`
 
@@ -173,7 +173,7 @@ ___
 
 ___
 
-### limitEnable <Score text="limitEnable" /> 
+### limitEnable  
 
 • `get` **limitEnable**(): `boolean`
 
@@ -202,7 +202,7 @@ ___
 
 ___
 
-### limitType <Score text="limitType" /> 
+### limitType  
 
 • `get` **limitType**(): [`AxisType`](../enums/Gameplay.AxisType.md) <Badge type="tip" text="other" />
 
@@ -232,7 +232,7 @@ ___
 
 
 
-### maxRotationalAngularVelocity <Score text="maxRotationalAngularVelocity" /> 
+### maxRotationalAngularVelocity  
 
 • `get` **maxRotationalAngularVelocity**(): `number` <Badge type="tip" text="other" />
 
@@ -262,7 +262,7 @@ ___
 
 
 
-### physicsEnable <Score text="physicsEnable" /> 
+### physicsEnable  
 
 • `get` **physicsEnable**(): `boolean`
 
@@ -291,7 +291,7 @@ ___
 
 ___
 
-### recoveryStrength <Score text="recoveryStrength" /> 
+### recoveryStrength  
 
 • `get` **recoveryStrength**(): `number`
 
@@ -319,7 +319,7 @@ ___
 
 
 
-### rotationalAngularAcceleration <Score text="rotationalAngularAcceleration" /> 
+### rotationalAngularAcceleration  
 
 • `get` **rotationalAngularAcceleration**(): `number` <Badge type="tip" text="other" />
 
@@ -350,7 +350,7 @@ ___
 
 ___
 
-### rotationalAngularVelocity <Score text="rotationalAngularVelocity" /> 
+### rotationalAngularVelocity  
 
 • `get` **rotationalAngularVelocity**(): `number` <Badge type="tip" text="other" />
 
@@ -382,7 +382,7 @@ ___
 
 ## Methods
 
-### getConstraintTargetGUID <Score text="getConstraintTargetGUID" /> 
+### getConstraintTargetGUID  
 
 ▸ **getConstraintTargetGUID**(): `string` <Badge type="tip" text="other" />
 
@@ -398,7 +398,7 @@ ___
 对象GUID
 
 
-### reverse <Score text="reverse" /> 
+### reverse  
 
 ▸ **reverse**(): `void` <Badge type="tip" text="other" />
 
@@ -409,7 +409,7 @@ ___
 
 
 
-### setConstraintTargetByGUID <Score text="setConstraintTargetByGUID" /> 
+### setConstraintTargetByGUID  
 
 ▸ **setConstraintTargetByGUID**(`value`): `void` <Badge type="tip" text="other" />
 
@@ -426,7 +426,7 @@ ___
 
 
 
-### start <Score text="start" /> 
+### start  
 
 ▸ **start**(): `void` <Badge type="tip" text="other" />
 
@@ -438,7 +438,7 @@ Running
 
 ___
 
-### stop <Score text="stop" /> 
+### stop  
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterAnimation
 
-# CharacterAnimation <Badge type="tip" text="Class" /> <Score text="CharacterAnimation" />
+# CharacterAnimation <Badge type="tip" text="Class" /> 
 
 extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 
@@ -62,7 +62,7 @@ extends [CharacterBase](../classes/Gameplay.Gameplay.CharacterBase.md)
 loadStance(guid: string, sync = true): Gameplay.SubStance;
 ```
 
-### SubStance.blendMode <Score text="SubStance.blendMode" />
+### SubStance.blendMode 
 
 姿态的混合模式, 可以理解为姿态的播放位置(上半身, 下半身, 全身).
 
@@ -97,7 +97,7 @@ enum StanceBlendMode { // [!code  focus]
 }
 ```
 
-### SubStance.play/stop <Score text="SubStance.play/stop" />
+### SubStance.play/stop 
 
 播放 / 停止这个姿态对象, 并返回执行结果.
 
@@ -120,7 +120,7 @@ public play(): boolean;
 public stop(): boolean;
 ```
 
-### Character.stopStance <Score text="Character.stopStance" />
+### Character.stopStance 
 
 停止任何正在播放的姿态, 当你不想保存执行 play()后的姿态对象时, 可以直接调用这个方法停止姿态.
 **sync**参数代表了这个操作是否会自动**同步**多端. 因为默认值是 true, 所以对**单端对象**操作时需要把它置为**false**.

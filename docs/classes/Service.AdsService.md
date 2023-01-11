@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AdsService
 
-# AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
+# AdsService <Badge type="tip" text="Class" /> 
 
 **`Instance`**
 
@@ -25,7 +25,7 @@
 
 ## Methods
 
-### isActive <Score text="isActive" /> 
+### isActive  
 
 ▸ **isActive**(`adsType`): `boolean` <Badge type="tip" text="other" />
 
@@ -48,7 +48,7 @@ true:该类型广告已激活，false:该类型广告未激活
 
 ___
 
-### isReady <Score text="isReady" /> 
+### isReady  
 
 ▸ **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -73,7 +73,7 @@ ___
 
 ___
 
-### show <Score text="show" /> 
+### show  
 
 ▸ **show**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### getInstance <Score text="getInstance" /> 
+### getInstance  
 
 ▸ `Static` **getInstance**(): [`AdsService`](Service.AdsService.md) <Badge type="tip" text="other" />
 

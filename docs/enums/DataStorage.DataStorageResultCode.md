@@ -1,6 +1,6 @@
 [DataStorage](../modules/DataStorage.DataStorage.md) / DataStorageResultCode
 
-# DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
+# DataStorageResultCode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -20,7 +20,7 @@
 
 ## Enumeration Members
 
-### ExceededSizeLimit <Score text="ExceededSizeLimit" /> 
+### ExceededSizeLimit  
 
 • **ExceededSizeLimit** = ``2``
 
@@ -28,7 +28,7 @@
 
 ___
 
-### Failure <Score text="Failure" /> 
+### Failure  
 
 • **Failure** = ``400``
 
@@ -36,7 +36,7 @@ ___
 
 ___
 
-### KeyValueError <Score text="KeyValueError" /> 
+### KeyValueError  
 
 • **KeyValueError** = ``1010``
 
@@ -44,7 +44,7 @@ key或者Value格式错误
 
 ___
 
-### OnlyServerCall <Score text="OnlyServerCall" /> 
+### OnlyServerCall  
 
 • **OnlyServerCall** = ``3``
 
@@ -52,7 +52,7 @@ ___
 
 ___
 
-### RequestIntervalTooClose <Score text="RequestIntervalTooClose" /> 
+### RequestIntervalTooClose  
 
 • **RequestIntervalTooClose** = ``423``
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### RequestTooFrequent <Score text="RequestTooFrequent" /> 
+### RequestTooFrequent  
 
 • **RequestTooFrequent** = ``424``
 
@@ -68,7 +68,7 @@ ___
 
 ___
 
-### Success <Score text="Success" /> 
+### Success  
 
 • **Success** = ``200``
 

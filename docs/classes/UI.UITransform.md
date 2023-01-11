@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UITransform
 
-# UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
+# UITransform <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -47,7 +47,7 @@
 
 ## Properties
 
-### position <Score text="position" /> 
+### position  
 
 • **position**: [`Vector2`](Type.Vector2.md)
 
@@ -57,7 +57,7 @@
 
 ___
 
-### size <Score text="size" /> 
+### size  
 
 • **size**: [`Vector2`](Type.Vector2.md)
 

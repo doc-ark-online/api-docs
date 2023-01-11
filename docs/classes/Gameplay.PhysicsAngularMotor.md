@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsAngularMotor
 
-# PhysicsAngularMotor <Badge type="tip" text="Class" /> <Score text="PhysicsAngularMotor" />
+# PhysicsAngularMotor <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -41,7 +41,7 @@
 
 ## Accessors
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -72,7 +72,7 @@
 
 
 
-### torque <Score text="torque" /> 
+### torque  
 
 • `get` **torque**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -104,7 +104,7 @@
 
 ___
 
-### torqueStrength <Score text="torqueStrength" /> 
+### torqueStrength  
 
 • `get` **torqueStrength**(): `number` <Badge type="tip" text="other" />
 

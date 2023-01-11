@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / AssetIconData
 
-# AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
+# AssetIconData <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -21,7 +21,7 @@
 
 ## Accessors
 
-### assetID <Score text="assetID" /> 
+### assetID  
 
 • `get` **assetID**(): `string` <Badge type="tip" text="other" />
 

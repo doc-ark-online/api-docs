@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / LinearColor
 
-# LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
+# LinearColor <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -92,7 +92,7 @@
 
 ## Accessors
 
-### a <Score text="a" /> 
+### a  
 
 • `get` **a**(): `number`
 
@@ -125,7 +125,7 @@
 
 ___
 
-### b <Score text="b" /> 
+### b  
 
 • `get` **b**(): `number`
 
@@ -158,7 +158,7 @@ ___
 
 ___
 
-### g <Score text="g" /> 
+### g  
 
 • `get` **g**(): `number`
 
@@ -191,7 +191,7 @@ ___
 
 ___
 
-### r <Score text="r" /> 
+### r  
 
 • `get` **r**(): `number`
 
@@ -224,7 +224,7 @@ ___
 
 ___
 
-### black <Score text="black" /> 
+### black  
 
 • `Static` `get` **black**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -238,7 +238,7 @@ ___
 
 ___
 
-### blue <Score text="blue" /> 
+### blue  
 
 • `Static` `get` **blue**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -252,7 +252,7 @@ ___
 
 ___
 
-### gray <Score text="gray" /> 
+### gray  
 
 • `Static` `get` **gray**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### green <Score text="green" /> 
+### green  
 
 • `Static` `get` **green**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -280,7 +280,7 @@ ___
 
 ___
 
-### red <Score text="red" /> 
+### red  
 
 • `Static` `get` **red**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -294,7 +294,7 @@ ___
 
 ___
 
-### white <Score text="white" /> 
+### white  
 
 • `Static` `get` **white**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -308,7 +308,7 @@ ___
 
 ___
 
-### yellow <Score text="yellow" /> 
+### yellow  
 
 • `Static` `get` **yellow**(): [`LinearColor`](Type.LinearColor.md)
 
@@ -322,7 +322,7 @@ ___
 
 ## Methods
 
-### addition <Score text="addition" /> 
+### addition  
 
 ▸ **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -352,7 +352,7 @@ ___
 
 ___
 
-### division <Score text="division" /> 
+### division  
 
 ▸ **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -382,7 +382,7 @@ ___
 
 ___
 
-### equality <Score text="equality" /> 
+### equality  
 
 ▸ **equality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -412,7 +412,7 @@ ___
 
 ___
 
-### fromString <Score text="fromString" /> 
+### fromString  
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
@@ -430,7 +430,7 @@ ___
 
 ___
 
-### inequality <Score text="inequality" /> 
+### inequality  
 
 ▸ **inequality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
@@ -460,7 +460,7 @@ ___
 
 ___
 
-### multiply <Score text="multiply" /> 
+### multiply  
 
 ▸ **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -490,7 +490,7 @@ ___
 
 ___
 
-### subtraction <Score text="subtraction" /> 
+### subtraction  
 
 ▸ **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -520,7 +520,7 @@ ___
 
 ___
 
-### toString <Score text="toString" /> 
+### toString  
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
@@ -537,7 +537,7 @@ ___
 
 ___
 
-### colorHexToLinearColor <Score text="colorHexToLinearColor" /> 
+### colorHexToLinearColor  
 
 ▸ `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -567,7 +567,7 @@ LinerColor 对象
 
 ___
 
-### colorHsvToLinearColor <Score text="colorHsvToLinearColor" /> 
+### colorHsvToLinearColor  
 
 ▸ `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -599,7 +599,7 @@ ___
 
 ___
 
-### colorToLinearColor <Score text="colorToLinearColor" /> 
+### colorToLinearColor  
 
 ▸ `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -626,7 +626,7 @@ ___
 
 ___
 
-### fromString <Score text="fromString" /> 
+### fromString  
 
 ▸ `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -649,7 +649,7 @@ ___
 
 ___
 
-### makeFromHSV <Score text="makeFromHSV" /> 
+### makeFromHSV  
 
 ▸ `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -681,7 +681,7 @@ ___
 
 ___
 
-### random <Score text="random" /> 
+### random  
 
 ▸ `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 

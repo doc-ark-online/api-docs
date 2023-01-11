@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / LocaleUtil
 
-# LocaleUtil <Badge type="tip" text="Namespace" /> <Score text="LocaleUtil" />
+# LocaleUtil <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 
 ## Functions
 
-### getDefaultLocale <Score text="getDefaultLocale" /> 
+### getDefaultLocale  
 
 ▸ **getDefaultLocale**(): `string` <Badge type="tip" text="other" />
 

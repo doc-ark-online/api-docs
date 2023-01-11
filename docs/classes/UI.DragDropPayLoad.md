@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / DragDropPayLoad
 
-# DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
+# DragDropPayLoad <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -22,7 +22,7 @@
 
 ## Properties
 
-### guidStr <Score text="guidStr" /> 
+### guidStr  
 
 • `Private` **guidStr**: `any`
 
@@ -32,7 +32,7 @@ GUID
 
 ___
 
-### idStr <Score text="idStr" /> 
+### idStr  
 
 • `Private` **idStr**: `any`
 
@@ -42,7 +42,7 @@ id
 
 ___
 
-### nameStr <Score text="nameStr" /> 
+### nameStr  
 
 • `Private` **nameStr**: `any`
 
@@ -52,7 +52,7 @@ name
 
 ## Accessors
 
-### guid <Score text="guid" /> 
+### guid  
 
 • `get` **guid**(): `string`
 
@@ -68,7 +68,7 @@ GUID
 
 ___
 
-### id <Score text="id" /> 
+### id  
 
 • `get` **id**(): `number`
 
@@ -97,7 +97,7 @@ id
 
 ___
 
-### name <Score text="name" /> 
+### name  
 
 • `get` **name**(): `string`
 

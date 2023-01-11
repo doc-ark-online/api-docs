@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimMode
 
-# HotWeaponAimMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponAimMode" />
+# HotWeaponAimMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### FirstPerson <Score text="FirstPerson" /> 
+### FirstPerson  
 
 • **FirstPerson** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### ThirdPerson <Score text="ThirdPerson" /> 
+### ThirdPerson  
 
 • **ThirdPerson** = ``1``
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Union
 
-# Union <Badge type="tip" text="Class" /> <Score text="Union" />
+# Union <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

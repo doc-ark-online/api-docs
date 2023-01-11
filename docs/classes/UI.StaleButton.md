@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / StaleButton
 
-# StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
+# StaleButton <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -111,7 +111,7 @@
 
 ## Accessors
 
-### clickMethod <Score text="clickMethod" /> 
+### clickMethod  
 
 • `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="other" />
 
@@ -130,7 +130,7 @@
 点击模式选择
 
 
-### contentColor <Score text="contentColor" /> 
+### contentColor  
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -160,7 +160,7 @@
 
 
 
-### disableImageColor <Score text="disableImageColor" /> 
+### disableImageColor  
 
 • `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -191,7 +191,7 @@
 
 ___
 
-### disableImageDrawType <Score text="disableImageDrawType" /> 
+### disableImageDrawType  
 
 • `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -222,7 +222,7 @@ ___
 
 ___
 
-### disableImageGuid <Score text="disableImageGuid" /> 
+### disableImageGuid  
 
 • `get` **disableImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -253,7 +253,7 @@ ___
 
 ___
 
-### disableImageMargin <Score text="disableImageMargin" /> 
+### disableImageMargin  
 
 • `get` **disableImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -284,7 +284,7 @@ ___
 
 ___
 
-### disableImageSize <Score text="disableImageSize" /> 
+### disableImageSize  
 
 • `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -314,7 +314,7 @@ ___
 
 
 
-### focusable <Score text="focusable" /> 
+### focusable  
 
 • `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### fontColor <Score text="fontColor" /> 
+### fontColor  
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -376,7 +376,7 @@ ___
 
 ___
 
-### fontLetterSpace <Score text="fontLetterSpace" /> 
+### fontLetterSpace  
 
 • `get` **fontLetterSpace**(): `number` <Badge type="tip" text="other" />
 
@@ -407,7 +407,7 @@ ___
 
 ___
 
-### fontSize <Score text="fontSize" /> 
+### fontSize  
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
@@ -438,7 +438,7 @@ ___
 
 ___
 
-### glyph <Score text="glyph" /> 
+### glyph  
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
@@ -468,7 +468,7 @@ ___
 
 
 
-### normalImageColor <Score text="normalImageColor" /> 
+### normalImageColor  
 
 • `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -499,7 +499,7 @@ ___
 
 ___
 
-### normalImageDrawType <Score text="normalImageDrawType" /> 
+### normalImageDrawType  
 
 • `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -530,7 +530,7 @@ ___
 
 ___
 
-### normalImageGuid <Score text="normalImageGuid" /> 
+### normalImageGuid  
 
 • `get` **normalImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -561,7 +561,7 @@ ___
 
 ___
 
-### normalImageMargin <Score text="normalImageMargin" /> 
+### normalImageMargin  
 
 • `get` **normalImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -592,7 +592,7 @@ ___
 
 ___
 
-### normalImageSize <Score text="normalImageSize" /> 
+### normalImageSize  
 
 • `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -623,7 +623,7 @@ ___
 
 ___
 
-### onClicked <Score text="onClicked" /> 
+### onClicked  
 
 • `get` **onClicked**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -640,7 +640,7 @@ ___
 
 ___
 
-### onHovered <Score text="onHovered" /> 
+### onHovered  
 
 • `get` **onHovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -658,7 +658,7 @@ ___
 
 ___
 
-### onPressed <Score text="onPressed" /> 
+### onPressed  
 
 • `get` **onPressed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -675,7 +675,7 @@ ___
 
 ___
 
-### onReleased <Score text="onReleased" /> 
+### onReleased  
 
 • `get` **onReleased**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -692,7 +692,7 @@ ___
 
 ___
 
-### onUnhovered <Score text="onUnhovered" /> 
+### onUnhovered  
 
 • `get` **onUnhovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -709,7 +709,7 @@ ___
 
 ___
 
-### outlineColor <Score text="outlineColor" /> 
+### outlineColor  
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -740,7 +740,7 @@ ___
 
 ___
 
-### outlineSize <Score text="outlineSize" /> 
+### outlineSize  
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
@@ -770,7 +770,7 @@ ___
 
 
 
-### pressMethod <Score text="pressMethod" /> 
+### pressMethod  
 
 • `set` **pressMethod**(`inPressMethod`): `void` <Badge type="tip" text="other" />
 
@@ -788,7 +788,7 @@ ___
 
 ___
 
-### pressedImagColor <Score text="pressedImagColor" /> 
+### pressedImagColor  
 
 • `get` **pressedImagColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -819,7 +819,7 @@ ___
 
 ___
 
-### pressedImageDrawType <Score text="pressedImageDrawType" /> 
+### pressedImageDrawType  
 
 • `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
@@ -850,7 +850,7 @@ ___
 
 ___
 
-### pressedImageGuid <Score text="pressedImageGuid" /> 
+### pressedImageGuid  
 
 • `get` **pressedImageGuid**(): `string` <Badge type="tip" text="other" />
 
@@ -881,7 +881,7 @@ ___
 
 ___
 
-### pressedImageMargin <Score text="pressedImageMargin" /> 
+### pressedImageMargin  
 
 • `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
@@ -912,7 +912,7 @@ ___
 
 ___
 
-### pressedImageSize <Score text="pressedImageSize" /> 
+### pressedImageSize  
 
 • `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -942,7 +942,7 @@ ___
 
 
 
-### shadowColor <Score text="shadowColor" /> 
+### shadowColor  
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -973,7 +973,7 @@ ___
 
 ___
 
-### shadowOffset <Score text="shadowOffset" /> 
+### shadowOffset  
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -1003,7 +1003,7 @@ ___
 
 
 
-### strikethroughEnable <Score text="strikethroughEnable" /> 
+### strikethroughEnable  
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1034,7 +1034,7 @@ ___
 
 ___
 
-### text <Score text="text" /> 
+### text  
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
 
@@ -1067,7 +1067,7 @@ ___
 
 ___
 
-### textAlign <Score text="textAlign" /> 
+### textAlign  
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
@@ -1098,7 +1098,7 @@ ___
 
 ___
 
-### textVerticalAlign <Score text="textVerticalAlign" /> 
+### textVerticalAlign  
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
@@ -1128,7 +1128,7 @@ ___
 
 
 
-### touchMethod <Score text="touchMethod" /> 
+### touchMethod  
 
 • `set` **touchMethod**(`inTouchMethod`): `void` <Badge type="tip" text="other" />
 
@@ -1145,7 +1145,7 @@ ___
 
 
 
-### transitionEnable <Score text="transitionEnable" /> 
+### transitionEnable  
 
 • `get` **transitionEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1176,7 +1176,7 @@ ___
 
 ___
 
-### underlineEnable <Score text="underlineEnable" /> 
+### underlineEnable  
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1208,7 +1208,7 @@ ___
 
 ## Methods
 
-### isPressed <Score text="isPressed" /> 
+### isPressed  
 
 ▸ **isPressed**(): `boolean` <Badge type="tip" text="other" />
 
@@ -1225,7 +1225,7 @@ ___
 
 ___
 
-### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
+### setDisableImageColorByHex  
 
 ▸ **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -1243,7 +1243,7 @@ ___
 
 ___
 
-### setDisableImageColorDecimal <Score text="setDisableImageColorDecimal" /> 
+### setDisableImageColorDecimal  
 
 ▸ **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -1264,7 +1264,7 @@ ___
 
 ___
 
-### setFontColorByHex <Score text="setFontColorByHex" /> 
+### setFontColorByHex  
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -1282,7 +1282,7 @@ ___
 
 ___
 
-### setFontColorDecimal <Score text="setFontColorDecimal" /> 
+### setFontColorDecimal  
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -1303,7 +1303,7 @@ ___
 
 ___
 
-### setNormalImageColorByHex <Score text="setNormalImageColorByHex" /> 
+### setNormalImageColorByHex  
 
 ▸ **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -1321,7 +1321,7 @@ ___
 
 ___
 
-### setNormalImageColorDecimal <Score text="setNormalImageColorDecimal" /> 
+### setNormalImageColorDecimal  
 
 ▸ **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -1342,7 +1342,7 @@ ___
 
 ___
 
-### setPressedImageColorByHex <Score text="setPressedImageColorByHex" /> 
+### setPressedImageColorByHex  
 
 ▸ **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -1360,7 +1360,7 @@ ___
 
 ___
 
-### setPressedImageColorDecimal <Score text="setPressedImageColorDecimal" /> 
+### setPressedImageColorDecimal  
 
 ▸ **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -1381,7 +1381,7 @@ ___
 
 ___
 
-### newObject <Score text="newObject" /> 
+### newObject  
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`StaleButton`](UI.StaleButton.md) <Badge type="tip" text="other" />
 

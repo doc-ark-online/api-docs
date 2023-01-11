@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ObjectTypeQuery
 
-# ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
+# ObjectTypeQuery <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -45,7 +45,7 @@
 
 ## Enumeration Members
 
-### ObjectTypeQuery1 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery1  
 
 • **ObjectTypeQuery1** = ``0``
 
@@ -53,7 +53,7 @@
 
 ___
 
-### ObjectTypeQuery10 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery10  
 
 • **ObjectTypeQuery10** = ``9``
 
@@ -61,7 +61,7 @@ ___
 
 ___
 
-### ObjectTypeQuery11 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery11  
 
 • **ObjectTypeQuery11** = ``10``
 
@@ -69,7 +69,7 @@ ___
 
 ___
 
-### ObjectTypeQuery12 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery12  
 
 • **ObjectTypeQuery12** = ``11``
 
@@ -77,7 +77,7 @@ ___
 
 ___
 
-### ObjectTypeQuery13 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery13  
 
 • **ObjectTypeQuery13** = ``12``
 
@@ -85,7 +85,7 @@ ___
 
 ___
 
-### ObjectTypeQuery14 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery14  
 
 • **ObjectTypeQuery14** = ``13``
 
@@ -93,7 +93,7 @@ ___
 
 ___
 
-### ObjectTypeQuery15 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery15  
 
 • **ObjectTypeQuery15** = ``14``
 
@@ -101,7 +101,7 @@ ___
 
 ___
 
-### ObjectTypeQuery16 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery16  
 
 • **ObjectTypeQuery16** = ``15``
 
@@ -109,7 +109,7 @@ ___
 
 ___
 
-### ObjectTypeQuery17 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery17  
 
 • **ObjectTypeQuery17** = ``16``
 
@@ -117,7 +117,7 @@ ___
 
 ___
 
-### ObjectTypeQuery18 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery18  
 
 • **ObjectTypeQuery18** = ``17``
 
@@ -125,7 +125,7 @@ ___
 
 ___
 
-### ObjectTypeQuery19 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery19  
 
 • **ObjectTypeQuery19** = ``18``
 
@@ -133,7 +133,7 @@ ___
 
 ___
 
-### ObjectTypeQuery2 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery2  
 
 • **ObjectTypeQuery2** = ``1``
 
@@ -141,7 +141,7 @@ ___
 
 ___
 
-### ObjectTypeQuery20 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery20  
 
 • **ObjectTypeQuery20** = ``19``
 
@@ -149,7 +149,7 @@ ___
 
 ___
 
-### ObjectTypeQuery21 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery21  
 
 • **ObjectTypeQuery21** = ``20``
 
@@ -157,7 +157,7 @@ ___
 
 ___
 
-### ObjectTypeQuery22 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery22  
 
 • **ObjectTypeQuery22** = ``21``
 
@@ -165,7 +165,7 @@ ___
 
 ___
 
-### ObjectTypeQuery23 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery23  
 
 • **ObjectTypeQuery23** = ``22``
 
@@ -173,7 +173,7 @@ ___
 
 ___
 
-### ObjectTypeQuery24 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery24  
 
 • **ObjectTypeQuery24** = ``23``
 
@@ -181,7 +181,7 @@ ___
 
 ___
 
-### ObjectTypeQuery25 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery25  
 
 • **ObjectTypeQuery25** = ``24``
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### ObjectTypeQuery26 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery26  
 
 • **ObjectTypeQuery26** = ``25``
 
@@ -197,7 +197,7 @@ ___
 
 ___
 
-### ObjectTypeQuery27 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery27  
 
 • **ObjectTypeQuery27** = ``26``
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### ObjectTypeQuery28 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery28  
 
 • **ObjectTypeQuery28** = ``27``
 
@@ -213,7 +213,7 @@ ___
 
 ___
 
-### ObjectTypeQuery29 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery29  
 
 • **ObjectTypeQuery29** = ``28``
 
@@ -221,7 +221,7 @@ ___
 
 ___
 
-### ObjectTypeQuery3 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery3  
 
 • **ObjectTypeQuery3** = ``2``
 
@@ -229,7 +229,7 @@ ___
 
 ___
 
-### ObjectTypeQuery30 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery30  
 
 • **ObjectTypeQuery30** = ``29``
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### ObjectTypeQuery31 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery31  
 
 • **ObjectTypeQuery31** = ``30``
 
@@ -245,7 +245,7 @@ ___
 
 ___
 
-### ObjectTypeQuery32 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery32  
 
 • **ObjectTypeQuery32** = ``31``
 
@@ -253,7 +253,7 @@ ___
 
 ___
 
-### ObjectTypeQuery4 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery4  
 
 • **ObjectTypeQuery4** = ``3``
 
@@ -261,7 +261,7 @@ ___
 
 ___
 
-### ObjectTypeQuery5 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery5  
 
 • **ObjectTypeQuery5** = ``4``
 
@@ -269,7 +269,7 @@ ___
 
 ___
 
-### ObjectTypeQuery6 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery6  
 
 • **ObjectTypeQuery6** = ``5``
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-### ObjectTypeQuery7 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery7  
 
 • **ObjectTypeQuery7** = ``6``
 
@@ -285,7 +285,7 @@ ___
 
 ___
 
-### ObjectTypeQuery8 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery8  
 
 • **ObjectTypeQuery8** = ``7``
 
@@ -293,7 +293,7 @@ ___
 
 ___
 
-### ObjectTypeQuery9 <Score text="ObjectTypeQuery" /> 
+### ObjectTypeQuery9  
 
 • **ObjectTypeQuery9** = ``8``
 

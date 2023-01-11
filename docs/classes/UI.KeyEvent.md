@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / KeyEvent
 
-# KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
+# KeyEvent <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -20,7 +20,7 @@
 
 ## Methods
 
-### getKey <Score text="getKey" /> 
+### getKey  
 
 ▸ **getKey**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="other" />
 
@@ -37,7 +37,7 @@
 
 ___
 
-### getUserIndex <Score text="getUserIndex" /> 
+### getUserIndex  
 
 ▸ **getUserIndex**(): `number` <Badge type="tip" text="other" />
 
@@ -54,7 +54,7 @@ ___
 
 ___
 
-### toInputEvent <Score text="toInputEvent" /> 
+### toInputEvent  
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 

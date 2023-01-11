@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ButtonPressMethod
 
-# ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
+# ButtonPressMethod <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### ButtonPress <Score text="ButtonPress" /> 
+### ButtonPress  
 
 • **ButtonPress** = ``1``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### ButtonRelease <Score text="ButtonRelease" /> 
+### ButtonRelease  
 
 • **ButtonRelease** = ``2``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### DownAndUp <Score text="DownAndUp" /> 
+### DownAndUp  
 
 • **DownAndUp** = ``0``
 

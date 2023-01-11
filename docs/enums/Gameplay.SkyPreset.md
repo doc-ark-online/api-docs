@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkyPreset
 
-# SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
+# SkyPreset <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -21,7 +21,7 @@
 
 ## Enumeration Members
 
-### Dusk2D <Score text="Dusk" /> 
+### Dusk2D  
 
 • **Dusk2D** = ``2``
 
@@ -29,7 +29,7 @@
 
 ___
 
-### DuskLowPoly <Score text="DuskLowPoly" /> 
+### DuskLowPoly  
 
 • **DuskLowPoly** = ``6``
 
@@ -37,7 +37,7 @@ ___
 
 ___
 
-### Morning2D <Score text="Morning" /> 
+### Morning2D  
 
 • **Morning2D** = ``0``
 
@@ -45,7 +45,7 @@ ___
 
 ___
 
-### MorningLowPoly <Score text="MorningLowPoly" /> 
+### MorningLowPoly  
 
 • **MorningLowPoly** = ``4``
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### Night2D <Score text="Night" /> 
+### Night2D  
 
 • **Night2D** = ``3``
 
@@ -61,7 +61,7 @@ ___
 
 ___
 
-### NightLowPoly <Score text="NightLowPoly" /> 
+### NightLowPoly  
 
 • **NightLowPoly** = ``7``
 
@@ -69,7 +69,7 @@ ___
 
 ___
 
-### Noon2D <Score text="Noon" /> 
+### Noon2D  
 
 • **Noon2D** = ``1``
 
@@ -77,7 +77,7 @@ ___
 
 ___
 
-### NoonLowPoly <Score text="NoonLowPoly" /> 
+### NoonLowPoly  
 
 • **NoonLowPoly** = ``5``
 

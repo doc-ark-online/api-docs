@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIChildCollation
 
-# UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
+# UIChildCollation <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Properties
 
-### horizontalCollation <Score text="horizontalCollation" /> 
+### horizontalCollation  
 
 • **horizontalCollation**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md)
 
@@ -39,7 +39,7 @@
 
 ___
 
-### verticalCollation <Score text="verticalCollation" /> 
+### verticalCollation  
 
 • **verticalCollation**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md)
 

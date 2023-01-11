@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLineStyle
 
-# ProjectileLineStyle <Badge type="tip" text="Enumeration" /> <Score text="ProjectileLineStyle" />
+# ProjectileLineStyle <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Dot <Score text="Dot" /> 
+### Dot  
 
 • **Dot** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Line <Score text="Line" /> 
+### Line  
 
 • **Line** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Segment <Score text="Segment" /> 
+### Segment  
 
 • **Segment** = ``2``
 

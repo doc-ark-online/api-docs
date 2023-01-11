@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Interactor
 
-# Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
+# Interactor <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -117,7 +117,7 @@
 
 ## Properties
 
-### onInteractorEnter <Score text="onInteractorEnter" /> 
+### onInteractorEnter  
 
 • **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
@@ -127,7 +127,7 @@
 
 ___
 
-### onInteractorExit <Score text="onInteractorExit" /> 
+### onInteractorExit  
 
 • **onInteractorExit**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### serverSetShowDebugLog <Score text="serverSetShowDebugLog" /> 
+### serverSetShowDebugLog  
 
 • `Private` **serverSetShowDebugLog**: `any`
 
@@ -153,7 +153,7 @@ usage:是否显示debug日志
 
 ## Methods
 
-### convertStringToStanceGuid <Score text="convertStringToStanceGuid" /> 
+### convertStringToStanceGuid  
 
 ▸ **convertStringToStanceGuid**(`stance`): `string` <Badge type="tip" text="other" />
 
@@ -175,7 +175,7 @@ usage:是否显示debug日志
 姿态对应的GUID
 
 
-### enterInteractiveState <Score text="enterInteractiveState" /> 
+### enterInteractiveState  
 
 ▸ **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
@@ -198,7 +198,7 @@ usage:是否显示debug日志
 
 ___
 
-### exitInteractiveState <Score text="exitInteractiveState" /> 
+### exitInteractiveState  
 
 ▸ **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
@@ -221,7 +221,7 @@ ___
 将返回是否退出激活成功的 Promise
 
 
-### getInteractiveState <Score text="getInteractiveState" /> 
+### getInteractiveState  
 
 ▸ **getInteractiveState**(): `boolean` <Badge type="tip" text="other" />
 
@@ -237,7 +237,7 @@ ___
 true: 为交互中
 
 
-### interactiveCharacter <Score text="interactiveCharacter" /> 
+### interactiveCharacter  
 
 ▸ **interactiveCharacter**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / AccountService
 
-# AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
+# AccountService <Badge type="tip" text="Class" /> 
 
 **`Instance`**
 
@@ -34,7 +34,7 @@
 
 ## Methods
 
-### applySharedId <Score text="applySharedId" /> 
+### applySharedId  
 
 ▸ **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -55,7 +55,7 @@
 
 ___
 
-### createSharedId <Score text="createSharedId" /> 
+### createSharedId  
 
 ▸ **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -75,7 +75,7 @@ ___
 
 ___
 
-### dataShowToOther <Score text="dataShowToOther" /> 
+### dataShowToOther  
 
 ▸ **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="other" />
 
@@ -96,7 +96,7 @@ ___
 
 ___
 
-### downloadData <Score text="downloadData" /> 
+### downloadData  
 
 ▸ **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="other" />
 
@@ -117,7 +117,7 @@ ___
 
 ___
 
-### downloadDefaultDataString <Score text="downloadDefaultDataString" /> 
+### downloadDefaultDataString  
 
 ▸ **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="other" />
 
@@ -136,7 +136,7 @@ ___
 
 ___
 
-### fillAvatar <Score text="fillAvatar" /> 
+### fillAvatar  
 
 ▸ **fillAvatar**(`img`): `void` <Badge type="tip" text="other" />
 
@@ -161,7 +161,7 @@ ___
 
 ___
 
-### getNickName <Score text="getNickName" /> 
+### getNickName  
 
 ▸ **getNickName**(): `string` <Badge type="tip" text="other" />
 
@@ -185,7 +185,7 @@ ___
 
 ___
 
-### getOpenId <Score text="getOpenId" /> 
+### getOpenId  
 
 ▸ **getOpenId**(): `string` <Badge type="tip" text="other" />
 
@@ -209,7 +209,7 @@ OpenId
 
 ___
 
-### getUserData <Score text="getUserData" /> 
+### getUserData  
 
 ▸ **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### getUserId <Score text="getUserId" /> 
+### getUserId  
 
 ▸ **getUserId**(): `string` <Badge type="tip" text="other" />
 
@@ -248,7 +248,7 @@ ___
 
 ___
 
-### setUserData <Score text="setUserData" /> 
+### setUserData  
 
 ▸ **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
 
@@ -269,7 +269,7 @@ ___
 
 ___
 
-### uploadData <Score text="uploadData" /> 
+### uploadData  
 
 ▸ **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="other" />
 
@@ -291,7 +291,7 @@ ___
 
 ___
 
-### getInstance <Score text="getInstance" /> 
+### getInstance  
 
 ▸ `Static` **getInstance**(): [`AccountService`](Service.AccountService.md) <Badge type="tip" text="other" />
 

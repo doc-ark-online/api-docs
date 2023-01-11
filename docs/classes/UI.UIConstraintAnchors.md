@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIConstraintAnchors
 
-# UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
+# UIConstraintAnchors <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -38,7 +38,7 @@
 
 ## Properties
 
-### constraintHorizontal <Score text="constraintHorizontal" /> 
+### constraintHorizontal  
 
 • **constraintHorizontal**: [`UIConstraintHorizontal`](../enums/UI.UIConstraintHorizontal.md)
 
@@ -48,7 +48,7 @@
 
 ___
 
-### constraintVertical <Score text="constraintVertical" /> 
+### constraintVertical  
 
 • **constraintVertical**: [`UIConstraintVertical`](../enums/UI.UIConstraintVertical.md)
 

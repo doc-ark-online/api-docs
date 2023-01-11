@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2HeadPart
 
-# IHumanoidV2HeadPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HeadPart" />
+# IHumanoidV2HeadPart <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -95,7 +95,7 @@
 
 ## Methods
 
-### characterFaceShadow <Score text="characterFaceShadow" /> 
+### characterFaceShadow  
 
 ▸ **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@
 
 ___
 
-### getBlushColor <Score text="getBlushColor" /> 
+### getBlushColor  
 
 ▸ **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -133,7 +133,7 @@ ___
 
 ___
 
-### getBlushTexture <Score text="getBlushTexture" /> 
+### getBlushTexture  
 
 ▸ **getBlushTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -151,7 +151,7 @@ GUID
 
 ___
 
-### getBrowColor <Score text="getBrowColor" /> 
+### getBrowColor  
 
 ▸ **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -169,7 +169,7 @@ ___
 
 ___
 
-### getBrowTexture <Score text="getBrowTexture" /> 
+### getBrowTexture  
 
 ▸ **getBrowTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -187,7 +187,7 @@ GUID
 
 ___
 
-### getEyeHighlightColor <Score text="getEyeHighlightColor" /> 
+### getEyeHighlightColor  
 
 ▸ **getEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -205,7 +205,7 @@ ___
 
 ___
 
-### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
+### getEyeHighlightTexture  
 
 ▸ **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -224,7 +224,7 @@ GUID
 
 ___
 
-### getEyeShadowColor <Score text="getEyeShadowColor" /> 
+### getEyeShadowColor  
 
 ▸ **getEyeShadowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -242,7 +242,7 @@ ___
 
 ___
 
-### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
+### getEyeShadowTexture  
 
 ▸ **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -260,7 +260,7 @@ GUID
 
 ___
 
-### getEyeTexture <Score text="getEyeTexture" /> 
+### getEyeTexture  
 
 ▸ **getEyeTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -278,7 +278,7 @@ GUID
 
 ___
 
-### getEyelashColor <Score text="getEyelashColor" /> 
+### getEyelashColor  
 
 ▸ **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -296,7 +296,7 @@ ___
 
 ___
 
-### getEyelashTexture <Score text="getEyelashTexture" /> 
+### getEyelashTexture  
 
 ▸ **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -314,7 +314,7 @@ GUID
 
 ___
 
-### getFacialTattooColor <Score text="getFacialTattooColor" /> 
+### getFacialTattooColor  
 
 ▸ **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -338,7 +338,7 @@ ___
 
 ___
 
-### getFacialTattooPositionX <Score text="getFacialTattooPositionX" /> 
+### getFacialTattooPositionX  
 
 ▸ **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -362,7 +362,7 @@ ___
 
 ___
 
-### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
+### getFacialTattooPositionY  
 
 ▸ **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -386,7 +386,7 @@ ___
 
 ___
 
-### getFacialTattooRotation <Score text="getFacialTattooRotation" /> 
+### getFacialTattooRotation  
 
 ▸ **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -410,7 +410,7 @@ ___
 
 ___
 
-### getFacialTattooType <Score text="getFacialTattooType" /> 
+### getFacialTattooType  
 
 ▸ **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
@@ -434,7 +434,7 @@ GUID
 
 ___
 
-### getFacialTattooZoom <Score text="getFacialTattooZoom" /> 
+### getFacialTattooZoom  
 
 ▸ **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -458,7 +458,7 @@ ___
 
 ___
 
-### getLeftEyeColor <Score text="getLeftEyeColor" /> 
+### getLeftEyeColor  
 
 ▸ **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -476,7 +476,7 @@ ___
 
 ___
 
-### getLipstickColor <Score text="getLipstickColor" /> 
+### getLipstickColor  
 
 ▸ **getLipstickColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -494,7 +494,7 @@ ___
 
 ___
 
-### getLipstickTexture <Score text="getLipstickTexture" /> 
+### getLipstickTexture  
 
 ▸ **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -512,7 +512,7 @@ GUID
 
 ___
 
-### getLowerEyeHighlightColor <Score text="getLowerEyeHighlightColor" /> 
+### getLowerEyeHighlightColor  
 
 ▸ **getLowerEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -530,7 +530,7 @@ ___
 
 ___
 
-### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
+### getLowerEyeHighlightTexture  
 
 ▸ **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -547,7 +547,7 @@ ___
 下高光GUID
 
 
-### getPupilColor <Score text="getPupilColor" /> 
+### getPupilColor  
 
 ▸ **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -565,7 +565,7 @@ ___
 
 ___
 
-### getPupilPositionX <Score text="getPupilPositionX" /> 
+### getPupilPositionX  
 
 ▸ **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
 
@@ -583,7 +583,7 @@ ___
 
 ___
 
-### getPupilPositionY <Score text="getPupilPositionY" /> 
+### getPupilPositionY  
 
 ▸ **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
 
@@ -601,7 +601,7 @@ ___
 
 ___
 
-### getPupilRotate <Score text="getPupilRotate" /> 
+### getPupilRotate  
 
 ▸ **getPupilRotate**(): `number` <Badge type="tip" text="other" />
 
@@ -619,7 +619,7 @@ ___
 
 ___
 
-### getPupilScale <Score text="getPupilScale" /> 
+### getPupilScale  
 
 ▸ **getPupilScale**(): `number` <Badge type="tip" text="other" />
 
@@ -637,7 +637,7 @@ ___
 
 ___
 
-### getPupilTexture <Score text="getPupilTexture" /> 
+### getPupilTexture  
 
 ▸ **getPupilTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -655,7 +655,7 @@ GUID
 
 ___
 
-### getRightEyeColor <Score text="getRightEyeColor" /> 
+### getRightEyeColor  
 
 ▸ **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -673,7 +673,7 @@ ___
 
 ___
 
-### getUpperEyeHighlightColor <Score text="getUpperEyeHighlightColor" /> 
+### getUpperEyeHighlightColor  
 
 ▸ **getUpperEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -691,7 +691,7 @@ ___
 
 ___
 
-### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
+### getUpperEyeHighlightTexture  
 
 ▸ **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -709,7 +709,7 @@ GUID
 
 ___
 
-### setBlushColor <Score text="setBlushColor" /> 
+### setBlushColor  
 
 ▸ **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -730,7 +730,7 @@ sync = true:双端
 
 ___
 
-### setBlushTexture <Score text="setBlushTexture" /> 
+### setBlushTexture  
 
 ▸ **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -751,7 +751,7 @@ sync = true:双端
 
 ___
 
-### setBrowColor <Score text="setBrowColor" /> 
+### setBrowColor  
 
 ▸ **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -772,7 +772,7 @@ sync = true:双端
 
 ___
 
-### setBrowTexture <Score text="setBrowTexture" /> 
+### setBrowTexture  
 
 ▸ **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -793,7 +793,7 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightColor <Score text="setEyeHighlightColor" /> 
+### setEyeHighlightColor  
 
 ▸ **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -814,7 +814,7 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightTexture <Score text="setEyeHighlightTexture" /> 
+### setEyeHighlightTexture  
 
 ▸ **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -835,7 +835,7 @@ sync = true:双端
 
 ___
 
-### setEyeShadowColor <Score text="setEyeShadowColor" /> 
+### setEyeShadowColor  
 
 ▸ **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -856,7 +856,7 @@ sync = true:双端
 
 ___
 
-### setEyeShadowTexture <Score text="setEyeShadowTexture" /> 
+### setEyeShadowTexture  
 
 ▸ **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -877,7 +877,7 @@ sync = true:双端
 
 ___
 
-### setEyeTexture <Score text="setEyeTexture" /> 
+### setEyeTexture  
 
 ▸ **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -898,7 +898,7 @@ sync = true:双端
 
 ___
 
-### setEyelashColor <Score text="setEyelashColor" /> 
+### setEyelashColor  
 
 ▸ **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -919,7 +919,7 @@ sync = true:双端
 
 ___
 
-### setEyelashTexture <Score text="setEyelashTexture" /> 
+### setEyelashTexture  
 
 ▸ **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -940,7 +940,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooColor <Score text="setFacialTattooColor" /> 
+### setFacialTattooColor  
 
 ▸ **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -962,7 +962,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionX <Score text="setFacialTattooPositionX" /> 
+### setFacialTattooPositionX  
 
 ▸ **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -984,7 +984,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
+### setFacialTattooPositionY  
 
 ▸ **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1006,7 +1006,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooRotation <Score text="setFacialTattooRotation" /> 
+### setFacialTattooRotation  
 
 ▸ **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1028,7 +1028,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooType <Score text="setFacialTattooType" /> 
+### setFacialTattooType  
 
 ▸ **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1050,7 +1050,7 @@ sync = true:双端
 
 ___
 
-### setFacialTattooZoom <Score text="setFacialTattooZoom" /> 
+### setFacialTattooZoom  
 
 ▸ **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1072,7 +1072,7 @@ sync = true:双端
 
 ___
 
-### setLeftEyeColor <Score text="setLeftEyeColor" /> 
+### setLeftEyeColor  
 
 ▸ **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1093,7 +1093,7 @@ sync = true:双端
 
 ___
 
-### setLipstickColor <Score text="setLipstickColor" /> 
+### setLipstickColor  
 
 ▸ **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1114,7 +1114,7 @@ sync = true:双端
 
 ___
 
-### setLipstickTexture <Score text="setLipstickTexture" /> 
+### setLipstickTexture  
 
 ▸ **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1135,7 +1135,7 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightColor <Score text="setLowerEyeHighlightColor" /> 
+### setLowerEyeHighlightColor  
 
 ▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1156,7 +1156,7 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
+### setLowerEyeHighlightTexture  
 
 ▸ **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1176,7 +1176,7 @@ sync = true:双端
 
 
 
-### setPupilColor <Score text="setPupilColor" /> 
+### setPupilColor  
 
 ▸ **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1197,7 +1197,7 @@ sync = true:双端
 
 ___
 
-### setPupilPositionX <Score text="setPupilPositionX" /> 
+### setPupilPositionX  
 
 ▸ **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1218,7 +1218,7 @@ sync = true:双端
 
 ___
 
-### setPupilPositionY <Score text="setPupilPositionY" /> 
+### setPupilPositionY  
 
 ▸ **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1239,7 +1239,7 @@ sync = true:双端
 
 ___
 
-### setPupilRotate <Score text="setPupilRotate" /> 
+### setPupilRotate  
 
 ▸ **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1260,7 +1260,7 @@ sync = true:双端
 
 ___
 
-### setPupilScale <Score text="setPupilScale" /> 
+### setPupilScale  
 
 ▸ **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1281,7 +1281,7 @@ sync = true:双端
 
 ___
 
-### setPupilTexture <Score text="setPupilTexture" /> 
+### setPupilTexture  
 
 ▸ **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1302,7 +1302,7 @@ sync = true:双端
 
 ___
 
-### setRightEyeColor <Score text="setRightEyeColor" /> 
+### setRightEyeColor  
 
 ▸ **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1323,7 +1323,7 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
+### setUpperEyeHighlightColor  
 
 ▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -1344,7 +1344,7 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
+### setUpperEyeHighlightTexture  
 
 ▸ **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

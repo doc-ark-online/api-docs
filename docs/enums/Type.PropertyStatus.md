@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / PropertyStatus
 
-# PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
+# PropertyStatus <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### FromParent <Score text="FromParent" /> 
+### FromParent  
 
 • **FromParent** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Off <Score text="Off" /> 
+### Off  
 
 • **Off** = ``2``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### On <Score text="On" /> 
+### On  
 
 • **On** = ``1``
 

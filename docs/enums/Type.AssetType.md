@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / AssetType
 
-# AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
+# AssetType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -20,7 +20,7 @@
 
 ## Enumeration Members
 
-### All <Score text="All" /> 
+### All  
 
 • **All** = ``0``
 
@@ -28,7 +28,7 @@ All
 
 ___
 
-### Cloth <Score text="Cloth" /> 
+### Cloth  
 
 • **Cloth** = ``3``
 
@@ -36,7 +36,7 @@ Cloth
 
 ___
 
-### Prefab <Score text="Prefab" /> 
+### Prefab  
 
 • **Prefab** = ``6``
 
@@ -44,7 +44,7 @@ Prefab
 
 ___
 
-### SkeletalMesh <Score text="SkeletalMesh" /> 
+### SkeletalMesh  
 
 • **SkeletalMesh** = ``2``
 
@@ -52,7 +52,7 @@ SkeletalMesh
 
 ___
 
-### SoundWave <Score text="SoundWave" /> 
+### SoundWave  
 
 • **SoundWave** = ``4``
 
@@ -60,7 +60,7 @@ SoundWave
 
 ___
 
-### StaticMesh <Score text="StaticMesh" /> 
+### StaticMesh  
 
 • **StaticMesh** = ``1``
 
@@ -68,7 +68,7 @@ StaticMesh
 
 ___
 
-### Texture <Score text="Texture" /> 
+### Texture  
 
 • **Texture** = ``5``
 

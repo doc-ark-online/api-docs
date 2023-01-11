@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / TweenUtil
 
-# TweenUtil <Badge type="tip" text="Namespace" /> <Score text="TweenUtil" />
+# TweenUtil <Badge type="tip" text="Namespace" /> 
 
 **`Description`**
 
@@ -59,7 +59,7 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ## Type Aliases
 
-### EasingFunction <Score text="EasingFunction" /> 
+### EasingFunction  
 
 Ƭ **EasingFunction**: (`amount`: `number`) => `number`
 
@@ -83,7 +83,7 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ___
 
-### InterpolationFunction <Score text="InterpolationFunction" /> 
+### InterpolationFunction  
 
 Ƭ **InterpolationFunction**: (`v`: `number`[], `k`: `number`) => `number`
 
@@ -108,7 +108,7 @@ ___
 
 ___
 
-### UnknownProps <Score text="UnknownProps" /> 
+### UnknownProps  
 
 Ƭ **UnknownProps**: `Record`<`string`, `any`\>
 
@@ -118,7 +118,7 @@ ___
 
 ## Variables
 
-### TWEEN <Score text="TWEEN" /> 
+### TWEEN  
 
 • `Const` **TWEEN**: [`Group`](../classes/Util.Util.TweenUtil.Group.md)
 
@@ -128,7 +128,7 @@ ___
 
 ## Functions
 
-### nextId <Score text="nextId" /> 
+### nextId  
 
 ▸ **nextId**(): `number` <Badge type="tip" text="other" />
 

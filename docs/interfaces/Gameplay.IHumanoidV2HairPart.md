@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2HairPart
 
-# IHumanoidV2HairPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HairPart" />
+# IHumanoidV2HairPart <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -43,7 +43,7 @@
 
 ## Methods
 
-### getColor <Score text="getColor" /> 
+### getColor  
 
 ▸ **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -61,7 +61,7 @@
 
 ___
 
-### getGradientColor <Score text="getGradientColor" /> 
+### getGradientColor  
 
 ▸ **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -79,7 +79,7 @@ ___
 
 ___
 
-### getGradientIntensity <Score text="getGradientIntensity" /> 
+### getGradientIntensity  
 
 ▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
@@ -97,7 +97,7 @@ ___
 
 ___
 
-### getHighlightColor <Score text="getHighlightColor" /> 
+### getHighlightColor  
 
 ▸ **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@ ___
 
 ___
 
-### getHighlightMask <Score text="getHighlightMask" /> 
+### getHighlightMask  
 
 ▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
@@ -132,7 +132,7 @@ ___
 GUID
 
 
-### setColor <Score text="setColor" /> 
+### setColor  
 
 ▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -153,7 +153,7 @@ sync = true:双端
 
 ___
 
-### setGradientColor <Score text="setGradientColor" /> 
+### setGradientColor  
 
 ▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -174,7 +174,7 @@ sync = true:双端
 
 ___
 
-### setGradientIntensity <Score text="setGradientIntensity" /> 
+### setGradientIntensity  
 
 ▸ **setGradientIntensity**(`intensity`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -195,7 +195,7 @@ sync = true:双端
 
 ___
 
-### setHighlightColor <Score text="setHighlightColor" /> 
+### setHighlightColor  
 
 ▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -216,7 +216,7 @@ sync = true:双端
 
 ___
 
-### setHighlightMask <Score text="setHighlightMask" /> 
+### setHighlightMask  
 
 ▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

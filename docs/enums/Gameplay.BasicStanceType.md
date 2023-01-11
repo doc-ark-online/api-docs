@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / BasicStanceType
 
-# BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
+# BasicStanceType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Cartoon <Score text="Cartoon" /> 
+### Cartoon  
 
 • **Cartoon** = ``"30274"``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### SakuraSchool1 <Score text="SakuraSchool" /> 
+### SakuraSchool1  
 
 • **SakuraSchool1** = ``"Default"``
 

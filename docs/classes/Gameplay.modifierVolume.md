@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / modifierVolume
 
-# modifierVolume <Badge type="tip" text="Class" /> <Score text="modifierVolume" />
+# modifierVolume <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -107,7 +107,7 @@
 
 ## Accessors
 
-### areaClass <Score text="areaClass" /> 
+### areaClass  
 
 • `get` **areaClass**(): [`AreaClass`](../enums/Gameplay.AreaClass.md)
 

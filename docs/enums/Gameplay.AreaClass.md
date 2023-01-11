@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AreaClass
 
-# AreaClass <Badge type="tip" text="Enumeration" /> <Score text="AreaClass" />
+# AreaClass <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Default <Score text="Default" /> 
+### Default  
 
 • **Default** = ``1``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### LowHeight <Score text="LowHeight" /> 
+### LowHeight  
 
 • **LowHeight** = ``2``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### Null <Score text="Null" /> 
+### Null  
 
 • **Null** = ``0``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### Obstacle <Score text="Obstacle" /> 
+### Obstacle  
 
 • **Obstacle** = ``3``
 

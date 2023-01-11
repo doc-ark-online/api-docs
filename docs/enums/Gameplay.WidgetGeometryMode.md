@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / WidgetGeometryMode
 
-# WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
+# WidgetGeometryMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@ UI形状枚举
 
 ## Enumeration Members
 
-### Cylinder <Score text="Cylinder" /> 
+### Cylinder  
 
 • **Cylinder** = ``1``
 
@@ -23,7 +23,7 @@ UI形状枚举
 
 ___
 
-### Plane <Score text="Plane" /> 
+### Plane  
 
 • **Plane** = ``0``
 

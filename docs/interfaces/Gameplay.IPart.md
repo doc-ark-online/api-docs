@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IPart
 
-# IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
+# IPart <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -31,7 +31,7 @@
 
 ## Methods
 
-### getMesh <Score text="getMesh" /> 
+### getMesh  
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
@@ -49,7 +49,7 @@
 
 ___
 
-### setMesh <Score text="setMesh" /> 
+### setMesh  
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

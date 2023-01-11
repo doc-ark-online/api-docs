@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHugContentVertically
 
-# UIHugContentVertically <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentVertically" />
+# UIHugContentVertically <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### FixHeight <Score text="FixHeight" /> 
+### FixHeight  
 
 • **FixHeight** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### HugContent <Score text="HugContent" /> 
+### HugContent  
 
 • **HugContent** = ``1``
 

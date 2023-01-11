@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2
 
-# IHumanoidV2 <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2" />
+# IHumanoidV2 <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -29,7 +29,7 @@
 
 ## Methods
 
-### appearanceSync <Score text="appearanceSync" /> 
+### appearanceSync  
 
 ▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
 
@@ -47,7 +47,7 @@
 
 ___
 
-### attach <Score text="attach" /> 
+### attach  
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
@@ -73,7 +73,7 @@ ___
 
 ___
 
-### changeSomatotype <Score text="changeSomatotype" /> 
+### changeSomatotype  
 
 ▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -94,7 +94,7 @@ sync = true:双端
 
 ___
 
-### clearAppearance <Score text="clearAppearance" /> 
+### clearAppearance  
 
 ▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
@@ -107,7 +107,7 @@ ___
 
 ___
 
-### detach <Score text="detach" /> 
+### detach  
 
 ▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
 
@@ -132,7 +132,7 @@ ___
 
 ___
 
-### getGoods <Score text="getGoods" /> 
+### getGoods  
 
 ▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
@@ -156,7 +156,7 @@ ___
 
 ___
 
-### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
+### getSlotWorldPosition  
 
 ▸ **getSlotWorldPosition**(`slotName`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -180,7 +180,7 @@ ___
 
 ___
 
-### getSomatotype <Score text="getSomatotype" /> 
+### getSomatotype  
 
 ▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
@@ -198,7 +198,7 @@ ___
 
 ___
 
-### setAppearanceData <Score text="setAppearanceData" /> 
+### setAppearanceData  
 
 ▸ **setAppearanceData**(`GUIDArray`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -224,7 +224,7 @@ ___
 
 ___
 
-### setSlot <Score text="setSlot" /> 
+### setSlot  
 
 ▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -244,7 +244,7 @@ ___
 
 ___
 
-### setSomatotype <Score text="setSomatotype" /> 
+### setSomatotype  
 
 ▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
@@ -263,7 +263,7 @@ ___
 
 ___
 
-### setSuit <Score text="setSuit" /> 
+### setSuit  
 
 ▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
 

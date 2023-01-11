@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / InputUtil
 
-# InputUtil <Badge type="tip" text="Namespace" /> <Score text="InputUtil" />
+# InputUtil <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -25,7 +25,7 @@
 
 ## Functions
 
-### bindButton <Score text="bindButton" /> 
+### bindButton  
 
 ▸ **bindButton**(`key`, `Widget`): `void` <Badge type="tip" text="other" />
 
@@ -44,7 +44,7 @@
 
 ___
 
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+### convertScreenLocationToWorldSpace  
 
 ▸ **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
@@ -68,7 +68,7 @@ ___
 
 ___
 
-### enableCursorInteractWithUI <Score text="enableCursorInteractWithUI" /> 
+### enableCursorInteractWithUI  
 
 ▸ **enableCursorInteractWithUI**(`canInteract`): `void` <Badge type="tip" text="other" />
 
@@ -87,7 +87,7 @@ ___
 
 ___
 
-### enableCursorLock <Score text="enableCursorLock" /> 
+### enableCursorLock  
 
 ▸ **enableCursorLock**(`isEnableMouseLock`): `void` <Badge type="tip" text="other" />
 
@@ -106,7 +106,7 @@ ___
 
 ___
 
-### isCursorInteractiveWithUI <Score text="isCursorInteractiveWithUI" /> 
+### isCursorInteractiveWithUI  
 
 ▸ **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="other" />
 
@@ -124,7 +124,7 @@ ___
 
 ___
 
-### isCursorLockEnabled <Score text="isCursorLockEnabled" /> 
+### isCursorLockEnabled  
 
 ▸ **isCursorLockEnabled**(): `boolean` <Badge type="tip" text="other" />
 
@@ -142,7 +142,7 @@ ___
 
 ___
 
-### isCursorLocked <Score text="isCursorLocked" /> 
+### isCursorLocked  
 
 ▸ **isCursorLocked**(): `boolean` <Badge type="tip" text="other" />
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### isCursorVisible <Score text="isCursorVisible" /> 
+### isCursorVisible  
 
 ▸ **isCursorVisible**(): `boolean` <Badge type="tip" text="other" />
 
@@ -178,7 +178,7 @@ ___
 
 ___
 
-### onKeyDown <Score text="onKeyDown" /> 
+### onKeyDown  
 
 ▸ **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -202,7 +202,7 @@ ___
 
 ___
 
-### onKeyPress <Score text="onKeyPress" /> 
+### onKeyPress  
 
 ▸ **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -226,7 +226,7 @@ ___
 
 ___
 
-### onKeyUp <Score text="onKeyUp" /> 
+### onKeyUp  
 
 ▸ **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -250,7 +250,7 @@ ___
 
 ___
 
-### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
+### projectWorldLocationToWidgetPosition  
 
 ▸ **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
@@ -274,7 +274,7 @@ ___
 
 ___
 
-### setCursorLocked <Score text="setCursorLocked" /> 
+### setCursorLocked  
 
 ▸ **setCursorLocked**(`isLock`): `void` <Badge type="tip" text="other" />
 
@@ -293,7 +293,7 @@ ___
 
 ___
 
-### setCursorVisible <Score text="setCursorVisible" /> 
+### setCursorVisible  
 
 ▸ **setCursorVisible**(`isVisible`): `void` <Badge type="tip" text="other" />
 
@@ -312,7 +312,7 @@ ___
 
 ___
 
-### setMouseLockable <Score text="setMouseLockable" /> 
+### setMouseLockable  
 
 ▸ **setMouseLockable**(`can`): `void` <Badge type="tip" text="other" />
 
@@ -330,7 +330,7 @@ ___
 
 ___
 
-### unbindButton <Score text="unbindButton" /> 
+### unbindButton  
 
 ▸ **unbindButton**(`key`): `void` <Badge type="tip" text="other" />
 

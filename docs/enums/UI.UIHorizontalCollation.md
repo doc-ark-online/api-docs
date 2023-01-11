@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHorizontalCollation
 
-# UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
+# UIHorizontalCollation <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### LeftToRight <Score text="LeftToRight" /> 
+### LeftToRight  
 
 • **LeftToRight** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### RightToLeft <Score text="RightToLeft" /> 
+### RightToLeft  
 
 • **RightToLeft** = ``1``
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UILayoutType
 
-# UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
+# UILayoutType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Horizontal <Score text="Horizontal" /> 
+### Horizontal  
 
 • **Horizontal** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Vertical <Score text="Vertical" /> 
+### Vertical  
 
 • **Vertical** = ``1``
 

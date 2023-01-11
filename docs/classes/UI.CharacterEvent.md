@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / CharacterEvent
 
-# CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
+# CharacterEvent <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Methods
 
-### toInputEvent <Score text="toInputEvent" /> 
+### toInputEvent  
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 

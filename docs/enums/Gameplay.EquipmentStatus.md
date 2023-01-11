@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EquipmentStatus
 
-# EquipmentStatus <Badge type="tip" text="Enumeration" /> <Score text="EquipmentStatus" />
+# EquipmentStatus <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Equipped <Score text="Equipped" /> 
+### Equipped  
 
 • **Equipped** = ``2``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### NotPickedUp <Score text="NotPickedUp" /> 
+### NotPickedUp  
 
 • **NotPickedUp** = ``0``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### PickedUp <Score text="PickedUp" /> 
+### PickedUp  
 
 • **PickedUp** = ``1``
 

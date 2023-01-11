@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TextCommit
 
-# TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
+# TextCommit <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Default <Score text="Default" /> 
+### Default  
 
 • **Default** = ``0``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### OnCleared <Score text="OnCleared" /> 
+### OnCleared  
 
 • **OnCleared** = ``3``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### OnEnter <Score text="OnEnter" /> 
+### OnEnter  
 
 • **OnEnter** = ``1``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### OnUserMovedFocus <Score text="OnUserMovedFocus" /> 
+### OnUserMovedFocus  
 
 • **OnUserMovedFocus** = ``2``
 

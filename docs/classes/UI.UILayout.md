@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UILayout
 
-# UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
+# UILayout <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -62,7 +62,7 @@
 
 ## Properties
 
-### autoLayout <Score text="autoLayout" /> 
+### autoLayout  
 
 • **autoLayout**: `boolean`
 
@@ -72,7 +72,7 @@
 
 ___
 
-### autoWrap <Score text="autoWrap" /> 
+### autoWrap  
 
 • **autoWrap**: `boolean`
 
@@ -82,7 +82,7 @@ ___
 
 ___
 
-### childCollation <Score text="childCollation" /> 
+### childCollation  
 
 • **childCollation**: [`UIChildCollation`](UI.UIChildCollation.md)
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### hugContent <Score text="hugContent" /> 
+### hugContent  
 
 • **hugContent**: [`UIHugContent`](UI.UIHugContent.md)
 
@@ -102,7 +102,7 @@ ___
 
 ___
 
-### layout <Score text="layout" /> 
+### layout  
 
 • **layout**: [`UILayoutType`](../enums/UI.UILayoutType.md)
 
@@ -112,7 +112,7 @@ ___
 
 ___
 
-### layoutPacket <Score text="layoutPacket" /> 
+### layoutPacket  
 
 • **layoutPacket**: [`UILayoutPacket`](../enums/UI.UILayoutPacket.md)
 
@@ -122,7 +122,7 @@ ___
 
 ___
 
-### layoutSpace <Score text="layoutSpace" /> 
+### layoutSpace  
 
 • **layoutSpace**: `number`
 
@@ -132,7 +132,7 @@ ___
 
 ___
 
-### padding <Score text="padding" /> 
+### padding  
 
 • **padding**: [`Margin`](UI.Margin.md)
 

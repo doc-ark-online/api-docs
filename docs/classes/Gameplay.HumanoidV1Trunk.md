@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Trunk
 
-# HumanoidV1Trunk <Badge type="tip" text="Class" /> <Score text="HumanoidV1Trunk" />
+# HumanoidV1Trunk <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -19,7 +19,7 @@
 
 ## Methods
 
-### getMesh <Score text="getMesh" /> 
+### getMesh  
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
@@ -41,7 +41,7 @@
 
 ___
 
-### setMesh <Score text="setMesh" /> 
+### setMesh  
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

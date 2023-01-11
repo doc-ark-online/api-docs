@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraMode
 
-# CameraMode <Badge type="tip" text="Enumeration" /> <Score text="CameraMode" />
+# CameraMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -19,7 +19,7 @@
 
 ## Enumeration Members
 
-### Default <Score text="Default" /> 
+### Default  
 
 • **Default** = ``3``
 
@@ -27,7 +27,7 @@
 
 ___
 
-### FPSShootingAngle <Score text="FPSShootingAngle" /> 
+### FPSShootingAngle  
 
 • **FPSShootingAngle** = ``5``
 
@@ -35,7 +35,7 @@ FPS射击视角
 
 ___
 
-### FirstPerson <Score text="FirstPerson" /> 
+### FirstPerson  
 
 • **FirstPerson** = ``0``
 
@@ -43,7 +43,7 @@ ___
 
 ___
 
-### TPSOverShoulderAngle <Score text="TPSOverShoulderAngle" /> 
+### TPSOverShoulderAngle  
 
 • **TPSOverShoulderAngle** = ``4``
 
@@ -51,7 +51,7 @@ TPS过肩视角
 
 ___
 
-### ThirdPerson <Score text="ThirdPerson" /> 
+### ThirdPerson  
 
 • **ThirdPerson** = ``1``
 
@@ -59,7 +59,7 @@ ___
 
 ___
 
-### TopDownAngle <Score text="TopDownAngle" /> 
+### TopDownAngle  
 
 • **TopDownAngle** = ``2``
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIVerticalCollation
 
-# UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
+# UIVerticalCollation <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### BottomToTop <Score text="BottomToTop" /> 
+### BottomToTop  
 
 • **BottomToTop** = ``1``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### TopToBottom <Score text="TopToBottom" /> 
+### TopToBottom  
 
 • **TopToBottom** = ``0``
 

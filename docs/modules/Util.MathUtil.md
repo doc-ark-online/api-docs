@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / MathUtil
 
-# MathUtil <Badge type="tip" text="Namespace" /> <Score text="MathUtil" />
+# MathUtil <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -57,7 +57,7 @@
 
 ## Variables
 
-### D2R <Score text="D" /> 
+### D2R  
 
 • `Const` **D2R**: `number`
 
@@ -67,7 +67,7 @@
 
 ___
 
-### DBL\_DECIMAL\_DIG <Score text="DBL" /> 
+### DBL\_DECIMAL\_DIG  
 
 • `Const` **DBL\_DECIMAL\_DIG**: ``17``
 
@@ -77,7 +77,7 @@ ___
 
 ___
 
-### DBL\_DIG <Score text="DBL" /> 
+### DBL\_DIG  
 
 • `Const` **DBL\_DIG**: ``15``
 
@@ -87,7 +87,7 @@ ___
 
 ___
 
-### DBL\_EPSILON <Score text="DBL" /> 
+### DBL\_EPSILON  
 
 • `Const` **DBL\_EPSILON**: ``2.220446049250313e-16``
 
@@ -97,7 +97,7 @@ ___
 
 ___
 
-### DBL\_HAS\_SUBNORM <Score text="DBL" /> 
+### DBL\_HAS\_SUBNORM  
 
 • `Const` **DBL\_HAS\_SUBNORM**: ``1``
 
@@ -107,7 +107,7 @@ ___
 
 ___
 
-### DBL\_MANT\_DIG <Score text="DBL" /> 
+### DBL\_MANT\_DIG  
 
 • `Const` **DBL\_MANT\_DIG**: ``53``
 
@@ -117,7 +117,7 @@ ___
 
 ___
 
-### DBL\_MAX <Score text="DBL" /> 
+### DBL\_MAX  
 
 • `Const` **DBL\_MAX**: ``1.7976931348623157e+308``
 
@@ -127,7 +127,7 @@ ___
 
 ___
 
-### DBL\_MAX\_10\_EXP <Score text="DBL" /> 
+### DBL\_MAX\_10\_EXP  
 
 • `Const` **DBL\_MAX\_10\_EXP**: ``308``
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### DBL\_MAX\_EXP <Score text="DBL" /> 
+### DBL\_MAX\_EXP  
 
 • `Const` **DBL\_MAX\_EXP**: ``1024``
 
@@ -147,7 +147,7 @@ ___
 
 ___
 
-### DBL\_MIN <Score text="DBL" /> 
+### DBL\_MIN  
 
 • `Const` **DBL\_MIN**: ``2.2250738585072014e-308``
 
@@ -157,7 +157,7 @@ ___
 
 ___
 
-### DBL\_MIN\_10\_EXP <Score text="DBL" /> 
+### DBL\_MIN\_10\_EXP  
 
 • `Const` **DBL\_MIN\_10\_EXP**: ``-307``
 
@@ -167,7 +167,7 @@ ___
 
 ___
 
-### DBL\_MIN\_EXP <Score text="DBL" /> 
+### DBL\_MIN\_EXP  
 
 • `Const` **DBL\_MIN\_EXP**: ``-1021``
 
@@ -177,7 +177,7 @@ ___
 
 ___
 
-### DBL\_RADIX <Score text="DBL" /> 
+### DBL\_RADIX  
 
 • `Const` **DBL\_RADIX**: ``2``
 
@@ -187,7 +187,7 @@ ___
 
 ___
 
-### DBL\_TRUE\_MIN <Score text="DBL" /> 
+### DBL\_TRUE\_MIN  
 
 • `Const` **DBL\_TRUE\_MIN**: ``5e-324``
 
@@ -197,7 +197,7 @@ ___
 
 ___
 
-### EPSILON <Score text="EPSILON" /> 
+### EPSILON  
 
 • `Const` **EPSILON**: ``1e-7``
 
@@ -207,7 +207,7 @@ ___
 
 ___
 
-### FLOAT\_NON\_FRACTIONAL <Score text="FLOAT" /> 
+### FLOAT\_NON\_FRACTIONAL  
 
 • `Const` **FLOAT\_NON\_FRACTIONAL**: ``8388608``
 
@@ -217,7 +217,7 @@ ___
 
 ___
 
-### FLT\_DECIMAL\_DIG <Score text="FLT" /> 
+### FLT\_DECIMAL\_DIG  
 
 • `Const` **FLT\_DECIMAL\_DIG**: ``9``
 
@@ -227,7 +227,7 @@ ___
 
 ___
 
-### FLT\_DIG <Score text="FLT" /> 
+### FLT\_DIG  
 
 • `Const` **FLT\_DIG**: ``6``
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### FLT\_EPSILON <Score text="FLT" /> 
+### FLT\_EPSILON  
 
 • `Const` **FLT\_EPSILON**: ``1.192092896e-7``
 
@@ -247,7 +247,7 @@ ___
 
 ___
 
-### FLT\_GUARD <Score text="FLT" /> 
+### FLT\_GUARD  
 
 • `Const` **FLT\_GUARD**: ``0``
 
@@ -257,7 +257,7 @@ ___
 
 ___
 
-### FLT\_HAS\_SUBNORM <Score text="FLT" /> 
+### FLT\_HAS\_SUBNORM  
 
 • `Const` **FLT\_HAS\_SUBNORM**: ``1``
 
@@ -267,7 +267,7 @@ ___
 
 ___
 
-### FLT\_MANT\_DIG <Score text="FLT" /> 
+### FLT\_MANT\_DIG  
 
 • `Const` **FLT\_MANT\_DIG**: ``24``
 
@@ -277,7 +277,7 @@ ___
 
 ___
 
-### FLT\_MAX <Score text="FLT" /> 
+### FLT\_MAX  
 
 • `Const` **FLT\_MAX**: ``3.402823466e+38``
 
@@ -287,7 +287,7 @@ ___
 
 ___
 
-### FLT\_MAX\_10\_EXP <Score text="FLT" /> 
+### FLT\_MAX\_10\_EXP  
 
 • `Const` **FLT\_MAX\_10\_EXP**: ``38``
 
@@ -297,7 +297,7 @@ ___
 
 ___
 
-### FLT\_MAX\_EXP <Score text="FLT" /> 
+### FLT\_MAX\_EXP  
 
 • `Const` **FLT\_MAX\_EXP**: ``128``
 
@@ -307,7 +307,7 @@ ___
 
 ___
 
-### FLT\_MIN <Score text="FLT" /> 
+### FLT\_MIN  
 
 • `Const` **FLT\_MIN**: ``1.175494351e-38``
 
@@ -317,7 +317,7 @@ ___
 
 ___
 
-### FLT\_MIN\_10\_EXP <Score text="FLT" /> 
+### FLT\_MIN\_10\_EXP  
 
 • `Const` **FLT\_MIN\_10\_EXP**: ``-37``
 
@@ -327,7 +327,7 @@ ___
 
 ___
 
-### FLT\_MIN\_EXP <Score text="FLT" /> 
+### FLT\_MIN\_EXP  
 
 • `Const` **FLT\_MIN\_EXP**: ``-125``
 
@@ -337,7 +337,7 @@ ___
 
 ___
 
-### FLT\_NORMALIZE <Score text="FLT" /> 
+### FLT\_NORMALIZE  
 
 • `Const` **FLT\_NORMALIZE**: ``0``
 
@@ -347,7 +347,7 @@ ___
 
 ___
 
-### FLT\_RADIX <Score text="FLT" /> 
+### FLT\_RADIX  
 
 • `Const` **FLT\_RADIX**: ``2``
 
@@ -357,7 +357,7 @@ ___
 
 ___
 
-### FLT\_TRUE\_MIN <Score text="FLT" /> 
+### FLT\_TRUE\_MIN  
 
 • `Const` **FLT\_TRUE\_MIN**: ``1.401298464e-45``
 
@@ -367,7 +367,7 @@ ___
 
 ___
 
-### HALF\_PI <Score text="HALF" /> 
+### HALF\_PI  
 
 • `Const` **HALF\_PI**: ``1.57079632679``
 
@@ -377,7 +377,7 @@ PI/2
 
 ___
 
-### INV\_PI <Score text="INV" /> 
+### INV\_PI  
 
 • `Const` **INV\_PI**: ``0.31830988618``
 
@@ -387,7 +387,7 @@ ___
 
 ___
 
-### R2D <Score text="R" /> 
+### R2D  
 
 • `Const` **R2D**: `number`
 
@@ -397,7 +397,7 @@ ___
 
 ___
 
-### SIGN\_BIT <Score text="SIGN" /> 
+### SIGN\_BIT  
 
 • `Const` **SIGN\_BIT**: `number`
 
@@ -407,7 +407,7 @@ ___
 
 ## Functions
 
-### clamp <Score text="clamp" /> 
+### clamp  
 
 ▸ **clamp**(`a`, `min`, `max`): `number` <Badge type="tip" text="other" />
 
@@ -432,7 +432,7 @@ ___
 
 ___
 
-### cos <Score text="cos" /> 
+### cos  
 
 ▸ **cos**(`a`): `number`
 
@@ -455,7 +455,7 @@ cos值
 
 ___
 
-### degreesToRadians <Score text="degreesToRadians" /> 
+### degreesToRadians  
 
 ▸ **degreesToRadians**(`a`): `number` <Badge type="tip" text="other" />
 
@@ -478,7 +478,7 @@ ___
 
 ___
 
-### fmod <Score text="fmod" /> 
+### fmod  
 
 ▸ **fmod**(`x`, `y`): `number` <Badge type="tip" text="other" />
 
@@ -502,7 +502,7 @@ ___
 
 ___
 
-### lerp <Score text="lerp" /> 
+### lerp  
 
 ▸ **lerp**(`a`, `b`, `alpha`): `number` <Badge type="tip" text="other" />
 
@@ -533,7 +533,7 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 ___
 
-### radiansToDegrees <Score text="radiansToDegrees" /> 
+### radiansToDegrees  
 
 ▸ **radiansToDegrees**(`a`): `number` <Badge type="tip" text="other" />
 
@@ -556,7 +556,7 @@ ___
 
 ___
 
-### randomFloat <Score text="randomFloat" /> 
+### randomFloat  
 
 ▸ **randomFloat**(`min`, `max`): `number` <Badge type="tip" text="other" />
 
@@ -580,7 +580,7 @@ ___
 
 ___
 
-### randomInt <Score text="randomInt" /> 
+### randomInt  
 
 ▸ **randomInt**(`min`, `max`): `number` <Badge type="tip" text="other" />
 
@@ -604,7 +604,7 @@ ___
 
 ___
 
-### sin <Score text="sin" /> 
+### sin  
 
 ▸ **sin**(`a`): `number`
 
@@ -627,7 +627,7 @@ sin值
 
 ___
 
-### tan <Score text="tan" /> 
+### tan  
 
 ▸ **tan**(`a`): `number`
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / FocusEvent
 
-# FocusEvent <Badge type="tip" text="Class" /> <Score text="FocusEvent" />
+# FocusEvent <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

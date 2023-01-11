@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / NFTUtil
 
-# NFTUtil <Badge type="tip" text="Namespace" /> <Score text="NFTUtil" />
+# NFTUtil <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -19,7 +19,7 @@
 
 ## Functions
 
-### addUserGameCoin <Score text="addUserGameCoin" /> 
+### addUserGameCoin  
 
 ▸ **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -42,7 +42,7 @@
 
 ___
 
-### addUserGameCoinWithEnv <Score text="addUserGameCoinWithEnv" /> 
+### addUserGameCoinWithEnv  
 
 ▸ **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
@@ -67,7 +67,7 @@ ___
 
 ___
 
-### addUserGameCoinWithGameID <Score text="addUserGameCoinWithGameID" /> 
+### addUserGameCoinWithGameID  
 
 ▸ **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -91,7 +91,7 @@ ___
 
 ___
 
-### decreaseUserGameCoin <Score text="decreaseUserGameCoin" /> 
+### decreaseUserGameCoin  
 
 ▸ **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -114,7 +114,7 @@ ___
 
 ___
 
-### decreaseUserGameCoinWithEnv <Score text="decreaseUserGameCoinWithEnv" /> 
+### decreaseUserGameCoinWithEnv  
 
 ▸ **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
@@ -139,7 +139,7 @@ ___
 
 ___
 
-### decreaseUserGameCoinWithGameID <Score text="decreaseUserGameCoinWithGameID" /> 
+### decreaseUserGameCoinWithGameID  
 
 ▸ **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -163,7 +163,7 @@ ___
 
 ___
 
-### queryUserGameCoin <Score text="queryUserGameCoin" /> 
+### queryUserGameCoin  
 
 ▸ **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -184,7 +184,7 @@ ___
 
 ___
 
-### queryUserGameCoinWithEnv <Score text="queryUserGameCoinWithEnv" /> 
+### queryUserGameCoinWithEnv  
 
 ▸ **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
@@ -206,7 +206,7 @@ ___
 
 ___
 
-### queryUserGameCoinWithGameID <Score text="queryUserGameCoinWithGameID" /> 
+### queryUserGameCoinWithGameID  
 
 ▸ **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
@@ -227,7 +227,7 @@ ___
 
 ___
 
-### queryUserNFT <Score text="queryUserNFT" /> 
+### queryUserNFT  
 
 ▸ **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 

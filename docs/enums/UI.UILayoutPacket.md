@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UILayoutPacket
 
-# UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
+# UILayoutPacket <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -22,7 +22,7 @@
 
 ## Enumeration Members
 
-### CenterBottom <Score text="CenterBottom" /> 
+### CenterBottom  
 
 • **CenterBottom** = ``8``
 
@@ -30,7 +30,7 @@
 
 ___
 
-### CenterCenter <Score text="CenterCenter" /> 
+### CenterCenter  
 
 • **CenterCenter** = ``7``
 
@@ -38,7 +38,7 @@ ___
 
 ___
 
-### CenterTop <Score text="CenterTop" /> 
+### CenterTop  
 
 • **CenterTop** = ``6``
 
@@ -46,7 +46,7 @@ ___
 
 ___
 
-### LeftBottom <Score text="LeftBottom" /> 
+### LeftBottom  
 
 • **LeftBottom** = ``2``
 
@@ -54,7 +54,7 @@ ___
 
 ___
 
-### LeftCenter <Score text="LeftCenter" /> 
+### LeftCenter  
 
 • **LeftCenter** = ``1``
 
@@ -62,7 +62,7 @@ ___
 
 ___
 
-### LeftTop <Score text="LeftTop" /> 
+### LeftTop  
 
 • **LeftTop** = ``0``
 
@@ -70,7 +70,7 @@ ___
 
 ___
 
-### RightBottom <Score text="RightBottom" /> 
+### RightBottom  
 
 • **RightBottom** = ``5``
 
@@ -78,7 +78,7 @@ ___
 
 ___
 
-### RightCenter <Score text="RightCenter" /> 
+### RightCenter  
 
 • **RightCenter** = ``4``
 
@@ -86,7 +86,7 @@ ___
 
 ___
 
-### RightTop <Score text="RightTop" /> 
+### RightTop  
 
 • **RightTop** = ``3``
 

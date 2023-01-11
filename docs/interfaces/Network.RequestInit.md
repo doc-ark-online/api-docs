@@ -1,6 +1,6 @@
 [Network](../modules/Network.Network.md) / RequestInit
 
-# RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
+# RequestInit <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@ HTTP请求信息的对象
 
 ## Properties
 
-### body <Score text="body" /> 
+### body  
 
 • `Optional` **body**: `string`
 
@@ -26,7 +26,7 @@ HTTP请求体
 
 ___
 
-### headers <Score text="headers" /> 
+### headers  
 
 • `Optional` **headers**: `Object`
 
@@ -40,7 +40,7 @@ HTTP请求头
 
 ___
 
-### method <Score text="method" /> 
+### method  
 
 • `Optional` **method**: ``"POST"`` \| ``"PUT"`` \| ``"GET"``
 

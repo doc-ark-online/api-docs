@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PointLight
 
-# PointLight <Badge type="tip" text="Class" /> <Score text="PointLight" />
+# PointLight <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkyLight
 
-# SkyLight <Badge type="tip" text="Class" /> <Score text="SkyLight" />
+# SkyLight <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -108,7 +108,7 @@
 
 ## Accessors
 
-### intensity <Score text="intensity" /> 
+### intensity  
 
 • `get` **intensity**(): `number` <Badge type="tip" text="other" />
 
@@ -139,7 +139,7 @@
 
 ___
 
-### lightColor <Score text="lightColor" /> 
+### lightColor  
 
 • `get` **lightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 

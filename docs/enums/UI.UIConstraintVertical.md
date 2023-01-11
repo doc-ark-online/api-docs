@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UIConstraintVertical
 
-# UIConstraintVertical <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintVertical" />
+# UIConstraintVertical <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### Bottom <Score text="Bottom" /> 
+### Bottom  
 
 • **Bottom** = ``1``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### Center <Score text="Center" /> 
+### Center  
 
 • **Center** = ``3``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### Scale <Score text="Scale" /> 
+### Scale  
 
 • **Scale** = ``4``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### Top <Score text="Top" /> 
+### Top  
 
 • **Top** = ``0``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### TopBottom <Score text="TopBottom" /> 
+### TopBottom  
 
 • **TopBottom** = ``2``
 

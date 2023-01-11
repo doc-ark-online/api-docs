@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / BlockingAreaManager
 
-# BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
+# BlockingAreaManager <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -27,7 +27,7 @@
 
 ## Methods
 
-### setPlayerPassableForArea <Score text="setPlayerPassableForArea" /> 
+### setPlayerPassableForArea  
 
 ▸ `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void`
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / MouseLockMode
 
-# MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
+# MouseLockMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### DoNotLock <Score text="DoNotLock" /> 
+### DoNotLock  
 
 • **DoNotLock** = ``0``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### LockAlways <Score text="LockAlways" /> 
+### LockAlways  
 
 • **LockAlways** = ``2``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### LockInFullscreen <Score text="LockInFullscreen" /> 
+### LockInFullscreen  
 
 • **LockInFullscreen** = ``3``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### LockOnCapture <Score text="LockOnCapture" /> 
+### LockOnCapture  
 
 • **LockOnCapture** = ``1``
 

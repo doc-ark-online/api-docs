@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2
 
-# HumanoidV2 <Badge type="tip" text="Class" /> <Score text="HumanoidV2" />
+# HumanoidV2 <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -92,7 +92,7 @@
 
 ## Properties
 
-### behindHair <Score text="behindHair" /> 
+### behindHair  
 
 • **behindHair**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md)
 
@@ -101,7 +101,7 @@
 后发
 
 
-### frontHair <Score text="frontHair" /> 
+### frontHair  
 
 • **frontHair**: [`HumanoidV2FrontHairPart`](Gameplay.HumanoidV2FrontHairPart.md)
 
@@ -111,7 +111,7 @@
 
 ___
 
-### gloves <Score text="gloves" /> 
+### gloves  
 
 • **gloves**: [`HumanoidV2GlovesPart`](Gameplay.HumanoidV2GlovesPart.md)
 
@@ -121,7 +121,7 @@ ___
 
 ___
 
-### head <Score text="head" /> 
+### head  
 
 • **head**: [`HumanoidV2HeadPart`](Gameplay.HumanoidV2HeadPart.md)
 
@@ -131,7 +131,7 @@ ___
 
 ___
 
-### lowerCloth <Score text="lowerCloth" /> 
+### lowerCloth  
 
 • **lowerCloth**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md)
 
@@ -140,7 +140,7 @@ ___
 下衣
 
 
-### shape <Score text="shape" /> 
+### shape  
 
 • **shape**: [`HumanoidV2Shape`](Gameplay.HumanoidV2Shape.md)
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### shoe <Score text="shoe" /> 
+### shoe  
 
 • **shoe**: [`HumanoidV2ShoePart`](Gameplay.HumanoidV2ShoePart.md)
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### upperCloth <Score text="upperCloth" /> 
+### upperCloth  
 
 • **upperCloth**: [`HumanoidV2UpperClothPart`](Gameplay.HumanoidV2UpperClothPart.md)
 
@@ -170,7 +170,7 @@ ___
 
 ## Methods
 
-### appearanceSync <Score text="appearanceSync" /> 
+### appearanceSync  
 
 ▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
 
@@ -192,7 +192,7 @@ ___
 
 ___
 
-### attach <Score text="attach" /> 
+### attach  
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
@@ -222,7 +222,7 @@ ___
 
 ___
 
-### changeSomatotype <Score text="changeSomatotype" /> 
+### changeSomatotype  
 
 ▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -247,7 +247,7 @@ sync = true:双端
 
 ___
 
-### clearAppearance <Score text="clearAppearance" /> 
+### clearAppearance  
 
 ▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
@@ -264,7 +264,7 @@ ___
 
 ___
 
-### detach <Score text="detach" /> 
+### detach  
 
 ▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
 
@@ -292,7 +292,7 @@ V2的将物体从人物身上附着的物品预览插槽中分离
 [IHumanoidV2](../interfaces/Gameplay.IHumanoidV2.md).[detach](../interfaces/Gameplay.IHumanoidV2.md#detach)
 
 
-### getBodyTattooColor <Score text="getBodyTattooColor" /> 
+### getBodyTattooColor  
 
 ▸ **getBodyTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -320,7 +320,7 @@ V2的将物体从人物身上附着的物品预览插槽中分离
 
 ___
 
-### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
+### getBodyTattooPositionX  
 
 ▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -348,7 +348,7 @@ ___
 
 ___
 
-### getBodyTattooPositionY <Score text="getBodyTattooPositionY" /> 
+### getBodyTattooPositionY  
 
 ▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -376,7 +376,7 @@ ___
 
 ___
 
-### getBodyTattooRotation <Score text="getBodyTattooRotation" /> 
+### getBodyTattooRotation  
 
 ▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -404,7 +404,7 @@ ___
 
 ___
 
-### getBodyTattooType <Score text="getBodyTattooType" /> 
+### getBodyTattooType  
 
 ▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
@@ -433,7 +433,7 @@ sync = true:双端
 
 ___
 
-### getBodyTattooZoom <Score text="getBodyTattooZoom" /> 
+### getBodyTattooZoom  
 
 ▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -461,7 +461,7 @@ ___
 
 ___
 
-### getGoods <Score text="getGoods" /> 
+### getGoods  
 
 ▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
@@ -489,7 +489,7 @@ ___
 
 ___
 
-### getSkinColor <Score text="getSkinColor" /> 
+### getSkinColor  
 
 ▸ **getSkinColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -511,7 +511,7 @@ ___
 
 ___
 
-### getSkinTexture <Score text="getSkinTexture" /> 
+### getSkinTexture  
 
 ▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -533,7 +533,7 @@ ___
 
 ___
 
-### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
+### getSlotWorldPosition  
 
 ▸ **getSlotWorldPosition**(`slotName`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -561,7 +561,7 @@ ___
 
 ___
 
-### getSomatotype <Score text="getSomatotype" /> 
+### getSomatotype  
 
 ▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
@@ -583,7 +583,7 @@ ___
 
 ___
 
-### setAppearanceData <Score text="setAppearanceData" /> 
+### setAppearanceData  
 
 ▸ **setAppearanceData**(`GUIDArray`, `callback?`): `void` <Badge type="tip" text="other" />
 
@@ -613,7 +613,7 @@ ___
 
 ___
 
-### setBodyTattooColor <Score text="setBodyTattooColor" /> 
+### setBodyTattooColor  
 
 ▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -639,7 +639,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
+### setBodyTattooPositionX  
 
 ▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -665,7 +665,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooPositionY <Score text="setBodyTattooPositionY" /> 
+### setBodyTattooPositionY  
 
 ▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -691,7 +691,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
+### setBodyTattooRotation  
 
 ▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -717,7 +717,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooType <Score text="setBodyTattooType" /> 
+### setBodyTattooType  
 
 ▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -743,7 +743,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooZoom <Score text="setBodyTattooZoom" /> 
+### setBodyTattooZoom  
 
 ▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -768,7 +768,7 @@ sync = true:双端
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooZoom](../interfaces/Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoozoom)
 
 
-### setSkinColor <Score text="setSkinColor" /> 
+### setSkinColor  
 
 ▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -793,7 +793,7 @@ sync = true:双端
 
 ___
 
-### setSkinTexture <Score text="setSkinTexture" /> 
+### setSkinTexture  
 
 ▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -818,7 +818,7 @@ sync = true:双端
 
 ___
 
-### setSlot <Score text="setSlot" /> 
+### setSlot  
 
 ▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -842,7 +842,7 @@ ___
 
 ___
 
-### setSomatotype <Score text="setSomatotype" /> 
+### setSomatotype  
 
 ▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
@@ -865,7 +865,7 @@ ___
 
 ___
 
-### setSuit <Score text="setSuit" /> 
+### setSuit  
 
 ▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
 

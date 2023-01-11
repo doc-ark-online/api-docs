@@ -1,6 +1,6 @@
 [MobileEditor](../modules/MobileEditor.MobileEditor.md) / GizmoModeType
 
-# GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
+# GizmoModeType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@ gizmo类型
 
 ## Enumeration Members
 
-### Location <Score text="Location" /> 
+### Location  
 
 • **Location** = ``0``
 
@@ -24,7 +24,7 @@ gizmo类型
 
 ___
 
-### Rotation <Score text="Rotation" /> 
+### Rotation  
 
 • **Rotation** = ``1``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Scale <Score text="Scale" /> 
+### Scale  
 
 • **Scale** = ``2``
 

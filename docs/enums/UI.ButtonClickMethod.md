@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ButtonClickMethod
 
-# ButtonClickMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonClickMethod" />
+# ButtonClickMethod <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### DownAndUp <Score text="DownAndUp" /> 
+### DownAndUp  
 
 • **DownAndUp** = ``0``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### MouseDown <Score text="MouseDown" /> 
+### MouseDown  
 
 • **MouseDown** = ``1``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### MouseUp <Score text="MouseUp" /> 
+### MouseUp  
 
 • **MouseUp** = ``2``
 
@@ -43,7 +43,7 @@ ___
 
 ___
 
-### PreciseClick <Score text="PreciseClick" /> 
+### PreciseClick  
 
 • **PreciseClick** = ``3``
 

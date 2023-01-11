@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Optimization
 
-# Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
+# Optimization <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -14,7 +14,7 @@
 
 ## Methods
 
-### enableOptimization <Score text="enableOptimization" /> 
+### enableOptimization  
 
 ▸ `Static` **enableOptimization**(`isEnable`): `void` <Badge type="tip" text="other" />
 

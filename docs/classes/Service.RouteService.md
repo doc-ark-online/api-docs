@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / RouteService
 
-# RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
+# RouteService <Badge type="tip" text="Class" /> 
 
 **`Instance`**
 
@@ -49,7 +49,7 @@
 
 ## Properties
 
-### onReceiveTeamData <Score text="onReceiveTeamData" /> 
+### onReceiveTeamData  
 
 • **onReceiveTeamData**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\>
 
@@ -59,7 +59,7 @@
 
 ___
 
-### onTeamMatchFailure <Score text="onTeamMatchFailure" /> 
+### onTeamMatchFailure  
 
 • **onTeamMatchFailure**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\>
 
@@ -69,7 +69,7 @@ ___
 
 ## Accessors
 
-### onViewLayoutSwitched <Score text="onViewLayoutSwitched" /> 
+### onViewLayoutSwitched  
 
 • `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\> <Badge type="tip" text="other" />
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### onViewRefreshed <Score text="onViewRefreshed" /> 
+### onViewRefreshed  
 
 • `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\> <Badge type="tip" text="other" />
 
@@ -115,7 +115,7 @@ View刷新的委托
 
 ## Methods
 
-### clearTeamCarryingData <Score text="clearTeamCarryingData" /> 
+### clearTeamCarryingData  
 
 ▸ **clearTeamCarryingData**(`teamId`): `void` <Badge type="tip" text="other" />
 
@@ -133,7 +133,7 @@ View刷新的委托
 
 ___
 
-### enterDressUpGame <Score text="enterDressUpGame" /> 
+### enterDressUpGame  
 
 ▸ **enterDressUpGame**(): `void` <Badge type="tip" text="other" />
 
@@ -151,7 +151,7 @@ ___
 
 ___
 
-### enterLocalGame <Score text="enterLocalGame" /> 
+### enterLocalGame  
 
 ▸ **enterLocalGame**(`targetGameId`, `gamePath`): `void` <Badge type="tip" text="other" />
 
@@ -176,7 +176,7 @@ ___
 
 ___
 
-### enterNewGame <Score text="enterNewGame" /> 
+### enterNewGame  
 
 ▸ **enterNewGame**(`targetGameId`): `void` <Badge type="tip" text="other" />
 
@@ -194,7 +194,7 @@ ___
 
 ___
 
-### enterNewGameByTeam <Score text="enterNewGameByTeam" /> 
+### enterNewGameByTeam  
 
 ▸ **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
@@ -219,7 +219,7 @@ ___
 
 ___
 
-### enterSquareGame <Score text="enterSquareGame" /> 
+### enterSquareGame  
 
 ▸ **enterSquareGame**(`squareMGSGameId?`): `void` <Badge type="tip" text="other" />
 
@@ -243,7 +243,7 @@ ___
 
 ___
 
-### getTeamCarryingData <Score text="getTeamCarryingData" /> 
+### getTeamCarryingData  
 
 ▸ **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\> <Badge type="tip" text="other" />
 
@@ -266,7 +266,7 @@ ___
 
 ___
 
-### isInDressUpGame <Score text="isInDressUpGame" /> 
+### isInDressUpGame  
 
 ▸ **isInDressUpGame**(): `boolean` <Badge type="tip" text="other" />
 
@@ -289,7 +289,7 @@ true-当前游戏是角色展示/编辑游戏，false-不是
 
 ___
 
-### notifyCharacterLoaded <Score text="notifyCharacterLoaded" /> 
+### notifyCharacterLoaded  
 
 ▸ **notifyCharacterLoaded**(): `void` <Badge type="tip" text="other" />
 
@@ -307,7 +307,7 @@ ___
 
 ___
 
-### notifyGameLoadingState <Score text="notifyGameLoadingState" /> 
+### notifyGameLoadingState  
 
 ▸ **notifyGameLoadingState**(`newState`): `void` <Badge type="tip" text="other" />
 
@@ -331,7 +331,7 @@ ___
 
 ___
 
-### requestGameId <Score text="requestGameId" /> 
+### requestGameId  
 
 ▸ **requestGameId**(`targetMGSGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
@@ -354,7 +354,7 @@ ___
 
 ___
 
-### requestMGSGameId <Score text="requestMGSGameId" /> 
+### requestMGSGameId  
 
 ▸ **requestMGSGameId**(`targetGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
@@ -377,7 +377,7 @@ ___
 
 ___
 
-### requestRefreshView <Score text="requestRefreshView" /> 
+### requestRefreshView  
 
 ▸ **requestRefreshView**(): `void` <Badge type="tip" text="other" />
 
@@ -395,7 +395,7 @@ TS请求233刷新View
 
 ___
 
-### requestSwitchViewLayout <Score text="requestSwitchViewLayout" /> 
+### requestSwitchViewLayout  
 
 ▸ **requestSwitchViewLayout**(`newState`): `void` <Badge type="tip" text="other" />
 
@@ -419,7 +419,7 @@ ___
 
 ___
 
-### getGameId <Score text="getGameId" /> 
+### getGameId  
 
 ▸ `Static` **getGameId**(): `string` <Badge type="tip" text="other" />
 
@@ -442,7 +442,7 @@ GameId
 
 ___
 
-### getGameVersion <Score text="getGameVersion" /> 
+### getGameVersion  
 
 ▸ `Static` **getGameVersion**(): `string` <Badge type="tip" text="other" />
 
@@ -465,7 +465,7 @@ GameVersion
 
 ___
 
-### getInstance <Score text="getInstance" /> 
+### getInstance  
 
 ▸ `Static` **getInstance**(): [`RouteService`](Service.RouteService.md) <Badge type="tip" text="other" />
 
@@ -482,7 +482,7 @@ ___
 
 ___
 
-### getMGSGameId <Score text="getMGSGameId" /> 
+### getMGSGameId  
 
 ▸ `Static` **getMGSGameId**(): `string` <Badge type="tip" text="other" />
 

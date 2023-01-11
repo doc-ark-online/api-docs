@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / InputTextLimit
 
-# InputTextLimit <Badge type="tip" text="Enumeration" /> <Score text="InputTextLimit" />
+# InputTextLimit <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### LimitToFloat <Score text="LimitToFloat" /> 
+### LimitToFloat  
 
 • **LimitToFloat** = ``2``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### LimitToInt <Score text="LimitToInt" /> 
+### LimitToInt  
 
 • **LimitToInt** = ``1``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### LimitToNumberAndChar <Score text="LimitToNumberAndChar" /> 
+### LimitToNumberAndChar  
 
 • **LimitToNumberAndChar** = ``3``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### LimitToPassword <Score text="LimitToPassword" /> 
+### LimitToPassword  
 
 • **LimitToPassword** = ``4``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### NoLimit <Score text="NoLimit" /> 
+### NoLimit  
 
 • **NoLimit** = ``0``
 

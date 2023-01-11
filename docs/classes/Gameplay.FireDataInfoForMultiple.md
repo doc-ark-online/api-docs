@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / FireDataInfoForMultiple
 
-# FireDataInfoForMultiple <Badge type="tip" text="Class" /> <Score text="FireDataInfoForMultiple" />
+# FireDataInfoForMultiple <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -19,7 +19,7 @@
 
 ## Properties
 
-### forwardVecAgainstHitCircle <Score text="forwardVecAgainstHitCircle" /> 
+### forwardVecAgainstHitCircle  
 
 • **forwardVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
 
@@ -29,7 +29,7 @@
 
 ___
 
-### hitLoc <Score text="hitLoc" /> 
+### hitLoc  
 
 • **hitLoc**: [`Vector`](Type.Vector.md)
 
@@ -39,7 +39,7 @@ ___
 
 ___
 
-### radiusMax <Score text="radiusMax" /> 
+### radiusMax  
 
 • **radiusMax**: `number`
 
@@ -49,7 +49,7 @@ ___
 
 ___
 
-### rightVecAgainstHitCircle <Score text="rightVecAgainstHitCircle" /> 
+### rightVecAgainstHitCircle  
 
 • **rightVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
 
@@ -59,7 +59,7 @@ ___
 
 ___
 
-### shootDistance <Score text="shootDistance" /> 
+### shootDistance  
 
 • **shootDistance**: `number`
 
@@ -69,7 +69,7 @@ ___
 
 ___
 
-### upVecAgainstHitCircle <Score text="upVecAgainstHitCircle" /> 
+### upVecAgainstHitCircle  
 
 • **upVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
 

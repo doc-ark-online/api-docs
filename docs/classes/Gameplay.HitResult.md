@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HitResult
 
-# HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
+# HitResult <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -24,7 +24,7 @@
 
 ## Properties
 
-### blockingHit <Score text="blockingHit" /> 
+### blockingHit  
 
 • **blockingHit**: `boolean`
 
@@ -34,7 +34,7 @@
 
 ___
 
-### boneName <Score text="boneName" /> 
+### boneName  
 
 • **boneName**: `string`
 
@@ -44,7 +44,7 @@ ___
 
 ___
 
-### distance <Score text="distance" /> 
+### distance  
 
 • **distance**: `number`
 
@@ -54,7 +54,7 @@ ___
 
 ___
 
-### gameObject <Score text="gameObject" /> 
+### gameObject  
 
 • **gameObject**: `GameObject`
 
@@ -64,7 +64,7 @@ ___
 
 ___
 
-### impactNormal <Score text="impactNormal" /> 
+### impactNormal  
 
 • **impactNormal**: [`Vector`](Type.Vector.md)
 
@@ -74,7 +74,7 @@ ___
 
 ___
 
-### impactPoint <Score text="impactPoint" /> 
+### impactPoint  
 
 • **impactPoint**: [`Vector`](Type.Vector.md)
 
@@ -84,7 +84,7 @@ ___
 
 ___
 
-### location <Score text="location" /> 
+### location  
 
 • **location**: [`Vector`](Type.Vector.md)
 
@@ -94,7 +94,7 @@ ___
 
 ___
 
-### normal <Score text="normal" /> 
+### normal  
 
 • **normal**: [`Vector`](Type.Vector.md)
 
@@ -104,7 +104,7 @@ ___
 
 ___
 
-### time <Score text="time" /> 
+### time  
 
 • **time**: `number`
 
@@ -114,7 +114,7 @@ ___
 
 ___
 
-### traceEnd <Score text="traceEnd" /> 
+### traceEnd  
 
 • **traceEnd**: [`Vector`](Type.Vector.md)
 
@@ -124,7 +124,7 @@ ___
 
 ___
 
-### traceStart <Score text="traceStart" /> 
+### traceStart  
 
 • **traceStart**: [`Vector`](Type.Vector.md)
 

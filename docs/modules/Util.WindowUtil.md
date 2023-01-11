@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / WindowUtil
 
-# WindowUtil <Badge type="tip" text="Namespace" /> <Score text="WindowUtil" />
+# WindowUtil <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 
 ## Functions
 
-### getViewportSize <Score text="getViewportSize" /> 
+### getViewportSize  
 
 ▸ **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 

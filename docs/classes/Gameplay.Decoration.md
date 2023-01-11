@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Decoration
 
-# Decoration <Badge type="tip" text="Class" /> <Score text="Decoration" />
+# Decoration <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -23,7 +23,7 @@
 
 ## Properties
 
-### assetId <Score text="assetId" /> 
+### assetId  
 
 • **assetId**: `string`
 
@@ -33,7 +33,7 @@
 
 ___
 
-### relativeTransform <Score text="relativeTransform" /> 
+### relativeTransform  
 
 • **relativeTransform**: [`Transform`](Type.Transform.md)
 
@@ -43,7 +43,7 @@ ___
 
 ___
 
-### skeletonName <Score text="skeletonName" /> 
+### skeletonName  
 
 • **skeletonName**: `string`
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### slotName <Score text="slotName" /> 
+### slotName  
 
 • **slotName**: `string`
 
@@ -63,7 +63,7 @@ ___
 
 ## Methods
 
-### deserialize <Score text="deserialize" /> 
+### deserialize  
 
 ▸ **deserialize**(`data`): `void` <Badge type="tip" text="other" />
 
@@ -82,7 +82,7 @@ ___
 
 ___
 
-### equal <Score text="equal" /> 
+### equal  
 
 ▸ **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
 
@@ -106,7 +106,7 @@ ___
 
 ___
 
-### serialize <Score text="serialize" /> 
+### serialize  
 
 ▸ **serialize**(): `string` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Action1
 
-# Action1<T\> <Badge type="tip" text="Class" /> <Score text="Action1<T\>" />
+# Action1<T\> <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

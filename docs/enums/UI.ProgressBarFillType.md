@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / ProgressBarFillType
 
-# ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
+# ProgressBarFillType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### BottomToTop <Score text="BottomToTop" /> 
+### BottomToTop  
 
 • **BottomToTop** = ``4``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### FillFromCenter <Score text="FillFromCenter" /> 
+### FillFromCenter  
 
 • **FillFromCenter** = ``2``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### LeftToRight <Score text="LeftToRight" /> 
+### LeftToRight  
 
 • **LeftToRight** = ``0``
 
@@ -42,7 +42,7 @@ ___
 
 ___
 
-### RightToLeft <Score text="RightToLeft" /> 
+### RightToLeft  
 
 • **RightToLeft** = ``1``
 
@@ -50,7 +50,7 @@ ___
 
 ___
 
-### TopToBottom <Score text="TopToBottom" /> 
+### TopToBottom  
 
 • **TopToBottom** = ``3``
 

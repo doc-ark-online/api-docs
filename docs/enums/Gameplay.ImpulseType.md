@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseType
 
-# ImpulseType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseType" />
+# ImpulseType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Absolute <Score text="Absolute" /> 
+### Absolute  
 
 • **Absolute** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### Relative <Score text="Relative" /> 
+### Relative  
 
 • **Relative** = ``1``
 

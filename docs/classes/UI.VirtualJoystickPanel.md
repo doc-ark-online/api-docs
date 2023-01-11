@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / VirtualJoystickPanel
 
-# VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
+# VirtualJoystickPanel <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -88,7 +88,7 @@
 
 ## Accessors
 
-### activeOpacity <Score text="activeOpacity" /> 
+### activeOpacity  
 
 • `get` **activeOpacity**(): `number` <Badge type="tip" text="other" />
 
@@ -118,7 +118,7 @@
 
 
 
-### backgroundDisabledImageId <Score text="backgroundDisabledImageId" /> 
+### backgroundDisabledImageId  
 
 • `get` **backgroundDisabledImageId**(): `string` <Badge type="tip" text="other" />
 
@@ -149,7 +149,7 @@
 
 ___
 
-### backgroundImageDesigner <Score text="backgroundImageDesigner" /> 
+### backgroundImageDesigner  
 
 • `get` **backgroundImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="other" />
 
@@ -180,7 +180,7 @@ ___
 
 ___
 
-### backgroundImageId <Score text="backgroundImageId" /> 
+### backgroundImageId  
 
 • `get` **backgroundImageId**(): `string` <Badge type="tip" text="other" />
 
@@ -211,7 +211,7 @@ ___
 
 ___
 
-### backgroundImageSize <Score text="backgroundImageSize" /> 
+### backgroundImageSize  
 
 • `get` **backgroundImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -242,7 +242,7 @@ ___
 
 ___
 
-### backgroundTouchImageId <Score text="backgroundTouchImageId" /> 
+### backgroundTouchImageId  
 
 • `get` **backgroundTouchImageId**(): `string` <Badge type="tip" text="other" />
 
@@ -272,7 +272,7 @@ ___
 
 
 
-### center <Score text="center" /> 
+### center  
 
 • `get` **center**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -303,7 +303,7 @@ ___
 
 ___
 
-### centerDisableImageId <Score text="centerDisableImageId" /> 
+### centerDisableImageId  
 
 • `get` **centerDisableImageId**(): `string` <Badge type="tip" text="other" />
 
@@ -334,7 +334,7 @@ ___
 
 ___
 
-### centerImageDesigner <Score text="centerImageDesigner" /> 
+### centerImageDesigner  
 
 • `get` **centerImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="other" />
 
@@ -365,7 +365,7 @@ ___
 
 ___
 
-### centerImageId <Score text="centerImageId" /> 
+### centerImageId  
 
 • `get` **centerImageId**(): `string` <Badge type="tip" text="other" />
 
@@ -396,7 +396,7 @@ ___
 
 ___
 
-### centerImageSize <Score text="centerImageSize" /> 
+### centerImageSize  
 
 • `get` **centerImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -427,7 +427,7 @@ ___
 
 ___
 
-### centerTouchImage <Score text="centerTouchImage" /> 
+### centerTouchImage  
 
 • `get` **centerTouchImage**(): `string` <Badge type="tip" text="other" />
 
@@ -457,7 +457,7 @@ ___
 
 
 
-### controlByMouseEnable <Score text="controlByMouseEnable" /> 
+### controlByMouseEnable  
 
 • `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -488,7 +488,7 @@ ___
 
 ___
 
-### controlType <Score text="controlType" /> 
+### controlType  
 
 • `get` **controlType**(): [`CameraControlType`](../enums/UI.CameraControlType.md) <Badge type="tip" text="other" />
 
@@ -518,7 +518,7 @@ ___
 
 
 
-### inActiveOpacity <Score text="inActiveOpacity" /> 
+### inActiveOpacity  
 
 • `get` **inActiveOpacity**(): `number` <Badge type="tip" text="other" />
 
@@ -549,7 +549,7 @@ ___
 
 ___
 
-### inputScale <Score text="inputScale" /> 
+### inputScale  
 
 • `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -579,7 +579,7 @@ ___
 
 
 
-### isLocationFixed <Score text="isLocationFixed" /> 
+### isLocationFixed  
 
 • `get` **isLocationFixed**(): `boolean` <Badge type="tip" text="other" />
 
@@ -609,7 +609,7 @@ boolean
 
 
 
-### onInputDir <Score text="onInputDir" /> 
+### onInputDir  
 
 • `get` **onInputDir**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`vec`: [`Vector2`](Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -626,7 +626,7 @@ boolean
 
 ___
 
-### onJoyStickDown <Score text="onJoyStickDown" /> 
+### onJoyStickDown  
 
 • `get` **onJoyStickDown**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -643,7 +643,7 @@ ___
 
 ___
 
-### onJoyStickUp <Score text="onJoyStickUp" /> 
+### onJoyStickUp  
 
 • `get` **onJoyStickUp**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
 
@@ -659,7 +659,7 @@ ___
 抬起摇杆事件的代理
 
 
-### timeUntilInactive <Score text="timeUntilInactive" /> 
+### timeUntilInactive  
 
 • `get` **timeUntilInactive**(): `number` <Badge type="tip" text="other" />
 
@@ -690,7 +690,7 @@ ___
 
 ___
 
-### timeUntilReset <Score text="timeUntilReset" /> 
+### timeUntilReset  
 
 • `get` **timeUntilReset**(): `number` <Badge type="tip" text="other" />
 
@@ -722,7 +722,7 @@ ___
 
 ## Methods
 
-### resetJoyStick <Score text="resetJoyStick" /> 
+### resetJoyStick  
 
 ▸ **resetJoyStick**(): `void` <Badge type="tip" text="other" />
 
@@ -734,7 +734,7 @@ ___
 
 ___
 
-### setVisibility <Score text="setVisibility" /> 
+### setVisibility  
 
 ▸ **setVisibility**(`Visibility`): `void` <Badge type="tip" text="other" />
 
@@ -752,7 +752,7 @@ ___
 
 ___
 
-### newObject <Score text="newObject" /> 
+### newObject  
 
 ▸ `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
 
@@ -776,7 +776,7 @@ ___
 
 ___
 
-### newObjectAndAdd <Score text="newObjectAndAdd" /> 
+### newObjectAndAdd  
 
 ▸ `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
 

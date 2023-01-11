@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeV2
 
-# SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
+# SomatotypeV2 <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -20,7 +20,7 @@
 
 ## Enumeration Members
 
-### AnimeFemale <Score text="AnimeFemale" /> 
+### AnimeFemale  
 
 • **AnimeFemale** = ``2``
 
@@ -28,7 +28,7 @@
 
 ___
 
-### AnimeMale <Score text="AnimeMale" /> 
+### AnimeMale  
 
 • **AnimeMale** = ``1``
 
@@ -36,7 +36,7 @@ ___
 
 ___
 
-### LowpolyAdultFemale <Score text="LowpolyAdultFemale" /> 
+### LowpolyAdultFemale  
 
 • **LowpolyAdultFemale** = ``4``
 
@@ -44,7 +44,7 @@ Lowpoly成年女性
 
 ___
 
-### LowpolyAdultMale <Score text="LowpolyAdultMale" /> 
+### LowpolyAdultMale  
 
 • **LowpolyAdultMale** = ``3``
 
@@ -52,7 +52,7 @@ Lowpoly成年男性
 
 ___
 
-### None <Score text="None" /> 
+### None  
 
 • **None** = ``0``
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### RealisticAdultFemale <Score text="RealisticAdultFemale" /> 
+### RealisticAdultFemale  
 
 • **RealisticAdultFemale** = ``6``
 
@@ -68,7 +68,7 @@ ___
 
 ___
 
-### RealisticAdultMale <Score text="RealisticAdultMale" /> 
+### RealisticAdultMale  
 
 • **RealisticAdultMale** = ``5``
 

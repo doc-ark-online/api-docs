@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
 
-# HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
+# HumanoidV1 <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -60,7 +60,7 @@
 
 ## Properties
 
-### face <Score text="face" /> 
+### face  
 
 • **face**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md)
 
@@ -70,7 +70,7 @@
 
 ___
 
-### hair <Score text="hair" /> 
+### hair  
 
 • **hair**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md)
 
@@ -79,7 +79,7 @@ ___
 头发
 
 
-### trunk <Score text="trunk" /> 
+### trunk  
 
 • **trunk**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md)
 
@@ -89,7 +89,7 @@ ___
 
 ## Methods
 
-### getWholeBody <Score text="getWholeBody" /> 
+### getWholeBody  
 
 ▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
 
@@ -110,7 +110,7 @@ ___
 [IHumanoidV1Part](../interfaces/Gameplay.IHumanoidV1Part.md).[getWholeBody](../interfaces/Gameplay.IHumanoidV1Part.md#getwholebody)
 
 
-### setWholeBody <Score text="setWholeBody" /> 
+### setWholeBody  
 
 ▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

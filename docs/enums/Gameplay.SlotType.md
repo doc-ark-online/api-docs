@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SlotType
 
-# SlotType <Badge type="tip" text="Enumeration" /> <Score text="SlotType" />
+# SlotType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -44,7 +44,7 @@
 
 ## Enumeration Members
 
-### BackOrnamental <Score text="BackOrnamental" /> 
+### BackOrnamental  
 
 • **BackOrnamental** = ``12``
 
@@ -52,7 +52,7 @@
 
 ___
 
-### Buttocks <Score text="Buttocks" /> 
+### Buttocks  
 
 • **Buttocks** = ``19``
 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-### ChatFrame <Score text="ChatFrame" /> 
+### ChatFrame  
 
 • **ChatFrame** = ``22``
 
@@ -68,7 +68,7 @@ ___
 
 ___
 
-### Eyes <Score text="Eyes" /> 
+### Eyes  
 
 • **Eyes** = ``5``
 
@@ -76,7 +76,7 @@ ___
 
 ___
 
-### FaceOrnamental <Score text="FaceOrnamental" /> 
+### FaceOrnamental  
 
 • **FaceOrnamental** = ``6``
 
@@ -84,7 +84,7 @@ ___
 
 ___
 
-### Glasses <Score text="Glasses" /> 
+### Glasses  
 
 • **Glasses** = ``4``
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### Hair <Score text="Hair" /> 
+### Hair  
 
 • **Hair** = ``0``
 
@@ -100,7 +100,7 @@ ___
 
 ___
 
-### Head <Score text="Head" /> 
+### Head  
 
 • **Head** = ``1``
 
@@ -108,7 +108,7 @@ ___
 
 ___
 
-### LeftBack <Score text="LeftBack" /> 
+### LeftBack  
 
 • **LeftBack** = ``13``
 
@@ -116,7 +116,7 @@ ___
 
 ___
 
-### LeftCalf <Score text="LeftCalf" /> 
+### LeftCalf  
 
 • **LeftCalf** = ``28``
 
@@ -124,7 +124,7 @@ ___
 
 ___
 
-### LeftFoot <Score text="LeftFoot" /> 
+### LeftFoot  
 
 • **LeftFoot** = ``17``
 
@@ -132,7 +132,7 @@ ___
 
 ___
 
-### LeftGlove <Score text="LeftGlove" /> 
+### LeftGlove  
 
 • **LeftGlove** = ``10``
 
@@ -140,7 +140,7 @@ ___
 
 ___
 
-### LeftHand <Score text="LeftHand" /> 
+### LeftHand  
 
 • **LeftHand** = ``15``
 
@@ -148,7 +148,7 @@ ___
 
 ___
 
-### LeftHead <Score text="LeftHead" /> 
+### LeftHead  
 
 • **LeftHead** = ``2``
 
@@ -156,7 +156,7 @@ ___
 
 ___
 
-### LeftLowerArm <Score text="LeftLowerArm" /> 
+### LeftLowerArm  
 
 • **LeftLowerArm** = ``24``
 
@@ -164,7 +164,7 @@ ___
 
 ___
 
-### LeftShoulder <Score text="LeftShoulder" /> 
+### LeftShoulder  
 
 • **LeftShoulder** = ``8``
 
@@ -172,7 +172,7 @@ ___
 
 ___
 
-### LeftThigh <Score text="LeftThigh" /> 
+### LeftThigh  
 
 • **LeftThigh** = ``26``
 
@@ -180,7 +180,7 @@ ___
 
 ___
 
-### Mouse <Score text="Mouse" /> 
+### Mouse  
 
 • **Mouse** = ``7``
 
@@ -188,7 +188,7 @@ ___
 
 ___
 
-### Nameplate <Score text="Nameplate" /> 
+### Nameplate  
 
 • **Nameplate** = ``21``
 
@@ -196,7 +196,7 @@ ___
 
 ___
 
-### RightBack <Score text="RightBack" /> 
+### RightBack  
 
 • **RightBack** = ``14``
 
@@ -204,7 +204,7 @@ ___
 
 ___
 
-### RightCalf <Score text="RightCalf" /> 
+### RightCalf  
 
 • **RightCalf** = ``29``
 
@@ -212,7 +212,7 @@ ___
 
 ___
 
-### RightFoot <Score text="RightFoot" /> 
+### RightFoot  
 
 • **RightFoot** = ``18``
 
@@ -220,7 +220,7 @@ ___
 
 ___
 
-### RightGlove <Score text="RightGlove" /> 
+### RightGlove  
 
 • **RightGlove** = ``11``
 
@@ -228,7 +228,7 @@ ___
 
 ___
 
-### RightHand <Score text="RightHand" /> 
+### RightHand  
 
 • **RightHand** = ``16``
 
@@ -236,7 +236,7 @@ ___
 
 ___
 
-### RightHead <Score text="RightHead" /> 
+### RightHead  
 
 • **RightHead** = ``3``
 
@@ -244,7 +244,7 @@ ___
 
 ___
 
-### RightLowerArm <Score text="RightLowerArm" /> 
+### RightLowerArm  
 
 • **RightLowerArm** = ``25``
 
@@ -252,7 +252,7 @@ ___
 
 ___
 
-### RightShoulder <Score text="RightShoulder" /> 
+### RightShoulder  
 
 • **RightShoulder** = ``9``
 
@@ -260,7 +260,7 @@ ___
 
 ___
 
-### RightThigh <Score text="RightThigh" /> 
+### RightThigh  
 
 • **RightThigh** = ``27``
 
@@ -268,7 +268,7 @@ ___
 
 ___
 
-### Rings <Score text="Rings" /> 
+### Rings  
 
 • **Rings** = ``20``
 
@@ -276,7 +276,7 @@ ___
 
 ___
 
-### Root <Score text="Root" /> 
+### Root  
 
 • **Root** = ``23``
 

@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / RoomService
 
-# RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
+# RoomService <Badge type="tip" text="Class" /> 
 
 **`Instance`**
 
@@ -41,7 +41,7 @@ MGS以及玩家信息、数据、头像等相关API
 
 ## Methods
 
-### addFriend <Score text="addFriend" /> 
+### addFriend  
 
 ▸ **addFriend**(`resp`, `friendOpenId`): `void`
 
@@ -66,7 +66,7 @@ MGS以及玩家信息、数据、头像等相关API
 
 ___
 
-### createAndJoinRoom <Score text="createAndJoinRoom" /> 
+### createAndJoinRoom  
 
 ▸ **createAndJoinRoom**(`resp`, `roomId`, `roomName`, `roomLimit`): `void`
 
@@ -93,7 +93,7 @@ ___
 
 ___
 
-### destroySDK <Score text="destroySDK" /> 
+### destroySDK  
 
 ▸ **destroySDK**(): `void` <Badge type="tip" text="other" />
 
@@ -111,7 +111,7 @@ SDK提供销毁方法，在游戏退出后可以销毁SDK，释放相应的内�
 
 ___
 
-### dispatchMGSChatMessage <Score text="dispatchMGSChatMessage" /> 
+### dispatchMGSChatMessage  
 
 ▸ **dispatchMGSChatMessage**(`chatMessage`): `void` <Badge type="tip" text="other" />
 
@@ -135,7 +135,7 @@ ___
 
 ___
 
-### getCurrentEnvironment <Score text="getCurrentEnvironment" /> 
+### getCurrentEnvironment  
 
 ▸ **getCurrentEnvironment**(`resp`): `void` <Badge type="tip" text="other" />
 
@@ -159,7 +159,7 @@ ___
 
 ___
 
-### getMGSRoomId <Score text="getMGSRoomId" /> 
+### getMGSRoomId  
 
 ▸ **getMGSRoomId**(): `string` <Badge type="tip" text="other" />
 
@@ -182,7 +182,7 @@ MGS平台的RoomId
 
 ___
 
-### getRoomId <Score text="getRoomId" /> 
+### getRoomId  
 
 ▸ **getRoomId**(): `string` <Badge type="tip" text="other" />
 
@@ -205,7 +205,7 @@ MW的RoomMgr分配的RoomId
 
 ___
 
-### initAndLoginMGS <Score text="initAndLoginMGS" /> 
+### initAndLoginMGS  
 
 ▸ **initAndLoginMGS**(`resp`, `gameID`): `void` <Badge type="tip" text="other" />
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### invokeMGSConfig <Score text="invokeMGSConfig" /> 
+### invokeMGSConfig  
 
 ▸ **invokeMGSConfig**(`resp`): `void` <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ ___
 
 ___
 
-### isFriend <Score text="isFriend" /> 
+### isFriend  
 
 ▸ **isFriend**(`resp`, `friendOpenId`): `void`
 
@@ -279,7 +279,7 @@ ___
 
 ___
 
-### isSupported <Score text="isSupported" /> 
+### isSupported  
 
 ▸ **isSupported**(): `boolean` <Badge type="tip" text="other" />
 
@@ -296,7 +296,7 @@ ___
 
 ___
 
-### joinAudio <Score text="joinAudio" /> 
+### joinAudio  
 
 ▸ **joinAudio**(`resp`): `void`
 
@@ -320,7 +320,7 @@ ___
 
 ___
 
-### joinRoom <Score text="joinRoom" /> 
+### joinRoom  
 
 ▸ **joinRoom**(`resp`, `roomId`): `void`
 
@@ -345,7 +345,7 @@ ___
 
 ___
 
-### leaveRoom <Score text="leaveRoom" /> 
+### leaveRoom  
 
 ▸ **leaveRoom**(`resp`, `roomId`): `void`
 
@@ -370,7 +370,7 @@ ___
 
 ___
 
-### queryPlayerAction <Score text="queryPlayerAction" /> 
+### queryPlayerAction  
 
 ▸ **queryPlayerAction**(`resp`): `void`
 
@@ -394,7 +394,7 @@ ___
 
 ___
 
-### registerMGSChatMessageEvent <Score text="registerMGSChatMessageEvent" /> 
+### registerMGSChatMessageEvent  
 
 ▸ **registerMGSChatMessageEvent**(`callback`): `void` <Badge type="tip" text="other" />
 
@@ -418,7 +418,7 @@ ___
 
 ___
 
-### registerMGSEvent <Score text="registerMGSEvent" /> 
+### registerMGSEvent  
 
 ▸ **registerMGSEvent**(`eventType`, `callback`): `void` <Badge type="tip" text="other" />
 
@@ -443,7 +443,7 @@ ___
 
 ___
 
-### registerMGSEventListener <Score text="registerMGSEventListener" /> 
+### registerMGSEventListener  
 
 ▸ **registerMGSEventListener**(`eventType`): `void` <Badge type="tip" text="other" />
 
@@ -467,7 +467,7 @@ ___
 
 ___
 
-### reportLogInfo <Score text="reportLogInfo" /> 
+### reportLogInfo  
 
 ▸ **reportLogInfo**(`eventName`, `eventDesc`, `jsonData`): `void`
 
@@ -493,7 +493,7 @@ ___
 
 ___
 
-### requestSaveImage <Score text="requestSaveImage" /> 
+### requestSaveImage  
 
 ▸ **requestSaveImage**(`resp`, `mgsData`): `void` <Badge type="tip" text="other" />
 
@@ -518,7 +518,7 @@ ___
 
 ___
 
-### requestSavePortrait <Score text="requestSavePortrait" /> 
+### requestSavePortrait  
 
 ▸ **requestSavePortrait**(`resp`, `mgsData`): `void` <Badge type="tip" text="other" />
 
@@ -543,7 +543,7 @@ ___
 
 ___
 
-### requestShareScreenShot <Score text="requestShareScreenShot" /> 
+### requestShareScreenShot  
 
 ▸ **requestShareScreenShot**(`resp`, `mgsData`): `void` <Badge type="tip" text="other" />
 
@@ -568,7 +568,7 @@ ___
 
 ___
 
-### showExitGameDialog <Score text="showExitGameDialog" /> 
+### showExitGameDialog  
 
 ▸ **showExitGameDialog**(`resp`): `void`
 
@@ -592,7 +592,7 @@ ___
 
 ___
 
-### showFloatingLayer <Score text="showFloatingLayer" /> 
+### showFloatingLayer  
 
 ▸ **showFloatingLayer**(`resp`, `tab`): `void`
 
@@ -617,7 +617,7 @@ ___
 
 ___
 
-### showUserProfile <Score text="showUserProfile" /> 
+### showUserProfile  
 
 ▸ **showUserProfile**(`resp`, `openId`): `void`
 
@@ -642,7 +642,7 @@ ___
 
 ___
 
-### getInstance <Score text="getInstance" /> 
+### getInstance  
 
 ▸ `Static` **getInstance**(): [`RoomService`](Service.RoomService.md)
 

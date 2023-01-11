@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsFulcrum
 
-# PhysicsFulcrum <Badge type="tip" text="Class" /> <Score text="PhysicsFulcrum" />
+# PhysicsFulcrum <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -108,7 +108,7 @@
 
 ## Accessors
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean`
 
@@ -136,7 +136,7 @@
 
 
 
-### limitAngle <Score text="limitAngle" /> 
+### limitAngle  
 
 • `get` **limitAngle**(): [`Vector`](Type.Vector.md)
 

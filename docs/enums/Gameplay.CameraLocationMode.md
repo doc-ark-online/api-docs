@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraLocationMode
 
-# CameraLocationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraLocationMode" />
+# CameraLocationMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### LocationFixed <Score text="LocationFixed" /> 
+### LocationFixed  
 
 • **LocationFixed** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### LocationFollow <Score text="LocationFollow" /> 
+### LocationFollow  
 
 • **LocationFollow** = ``1``
 

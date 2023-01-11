@@ -1,6 +1,6 @@
 Util
 
-# Util <Badge type="tip" text="Namespace" /> <Score text="Util" />
+# Util <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 

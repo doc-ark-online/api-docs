@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponCrossHairType
 
-# HotWeaponCrossHairType <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponCrossHairType" />
+# HotWeaponCrossHairType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### FirstPersonCrossHair <Score text="FirstPersonCrossHair" /> 
+### FirstPersonCrossHair  
 
 • **FirstPersonCrossHair** = ``3``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### None <Score text="None" /> 
+### None  
 
 • **None** = ``0``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### ThirdPersonCrossHair <Score text="ThirdPersonCrossHair" /> 
+### ThirdPersonCrossHair  
 
 • **ThirdPersonCrossHair** = ``1``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### ThirdPersonDot <Score text="ThirdPersonDot" /> 
+### ThirdPersonDot  
 
 • **ThirdPersonDot** = ``2``
 

@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileAccelerationEnableMode
 
-# ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileAccelerationEnableMode" />
+# ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Distance <Score text="Distance" /> 
+### Distance  
 
 • **Distance** = ``0``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Time <Score text="Time" /> 
+### Time  
 
 • **Time** = ``1``
 

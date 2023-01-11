@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / PanelWidget
 
-# PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
+# PanelWidget <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -76,7 +76,7 @@ UI的PanelWidget可以挂载子节点
 
 ## Methods
 
-### addChild <Score text="addChild" /> 
+### addChild  
 
 ▸ **addChild**(`child`): `void` <Badge type="tip" text="other" />
 
@@ -93,7 +93,7 @@ UI的PanelWidget可以挂载子节点
 
 
 
-### findChildByPath <Score text="findChildByPath" /> 
+### findChildByPath  
 
 ▸ **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
@@ -116,7 +116,7 @@ UI的PanelWidget可以挂载子节点
 
 ___
 
-### getChildAt <Score text="getChildAt" /> 
+### getChildAt  
 
 ▸ **getChildAt**(`index`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
@@ -139,7 +139,7 @@ ___
 
 ___
 
-### getChildByName <Score text="getChildByName" /> 
+### getChildByName  
 
 ▸ **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="other" />
 
@@ -168,7 +168,7 @@ ___
 
 ___
 
-### getChildrenCount <Score text="getChildrenCount" /> 
+### getChildrenCount  
 
 ▸ **getChildrenCount**(): `number` <Badge type="tip" text="other" />
 
@@ -184,7 +184,7 @@ ___
 子节点数量
 
 
-### removeAllChildren <Score text="removeAllChildren" /> 
+### removeAllChildren  
 
 ▸ **removeAllChildren**(): `void` <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 ___
 
-### removeChild <Score text="removeChild" /> 
+### removeChild  
 
 ▸ **removeChild**(`child`): `void` <Badge type="tip" text="other" />
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### removeChildAt <Score text="removeChildAt" /> 
+### removeChildAt  
 
 ▸ **removeChildAt**(`index`): `void` <Badge type="tip" text="other" />
 

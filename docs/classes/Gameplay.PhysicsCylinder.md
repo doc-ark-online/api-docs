@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCylinder
 
-# PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
+# PhysicsCylinder <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -50,7 +50,7 @@
 
 ## Accessors
 
-### angularLimit <Score text="angularLimit" /> 
+### angularLimit  
 
 • `get` **angularLimit**(): [`Vector`](Type.Vector.md)
 
@@ -79,7 +79,7 @@
 
 ___
 
-### angularStrength <Score text="angularStrength" /> 
+### angularStrength  
 
 • `get` **angularStrength**(): `number`
 
@@ -108,7 +108,7 @@ ___
 
 ___
 
-### angularVelocity <Score text="angularVelocity" /> 
+### angularVelocity  
 
 • `get` **angularVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -136,7 +136,7 @@ ___
 
 
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean`
 
@@ -164,7 +164,7 @@ ___
 
 
 
-### linearLimit <Score text="linearLimit" /> 
+### linearLimit  
 
 • `get` **linearLimit**(): `number`
 
@@ -193,7 +193,7 @@ ___
 
 ___
 
-### linearStrength <Score text="linearStrength" /> 
+### linearStrength  
 
 • `get` **linearStrength**(): `number`
 
@@ -222,7 +222,7 @@ ___
 
 ___
 
-### linearVelocity <Score text="linearVelocity" /> 
+### linearVelocity  
 
 • `get` **linearVelocity**(): [`Vector`](Type.Vector.md)
 
@@ -250,7 +250,7 @@ ___
 
 
 
-### restitution <Score text="restitution" /> 
+### restitution  
 
 • `get` **restitution**(): `number`
 
@@ -280,7 +280,7 @@ ___
 
 ## Methods
 
-### getAngularLimitType <Score text="getAngularLimitType" /> 
+### getAngularLimitType  
 
 ▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -302,7 +302,7 @@ ___
 旋转类型
 
 
-### getLinearLimitType <Score text="getLinearLimitType" /> 
+### getLinearLimitType  
 
 ▸ **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
@@ -324,7 +324,7 @@ ___
 限制类型
 
 
-### setAngularLimitType <Score text="setAngularLimitType" /> 
+### setAngularLimitType  
 
 ▸ **setAngularLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
 
@@ -342,7 +342,7 @@ ___
 
 
 
-### setLinearLimitType <Score text="setLinearLimitType" /> 
+### setLinearLimitType  
 
 ▸ **setLinearLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Widget
 
-# Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
+# Widget <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -68,7 +68,7 @@
 
 ## Accessors
 
-### autoSizeEnable <Score text="autoSizeEnable" /> 
+### autoSizeEnable  
 
 • `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -99,7 +99,7 @@
 
 ___
 
-### cachedGeometry <Score text="cachedGeometry" /> 
+### cachedGeometry  
 
 • `get` **cachedGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
 
@@ -116,7 +116,7 @@ ___
 
 ___
 
-### constraints <Score text="constraints" /> 
+### constraints  
 
 • `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <Badge type="tip" text="other" />
 
@@ -147,7 +147,7 @@ ___
 
 ___
 
-### desiredSize <Score text="desiredSize" /> 
+### desiredSize  
 
 • `get` **desiredSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -164,7 +164,7 @@ ___
 
 ___
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -197,7 +197,7 @@ boolean
 
 ___
 
-### guid <Score text="guid" /> 
+### guid  
 
 • `get` **guid**(): `string` <Badge type="tip" text="other" />
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### isHovered <Score text="isHovered" /> 
+### isHovered  
 
 • `get` **isHovered**(): `boolean` <Badge type="tip" text="other" />
 
@@ -231,7 +231,7 @@ boolean
 
 ___
 
-### name <Score text="name" /> 
+### name  
 
 • `get` **name**(): `string` <Badge type="tip" text="other" />
 
@@ -262,7 +262,7 @@ ___
 
 ___
 
-### paintSpaceGeometry <Score text="paintSpaceGeometry" /> 
+### paintSpaceGeometry  
 
 • `get` **paintSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
 
@@ -279,7 +279,7 @@ ___
 
 ___
 
-### parent <Score text="parent" /> 
+### parent  
 
 • `get` **parent**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
@@ -296,7 +296,7 @@ ___
 
 ___
 
-### position <Score text="position" /> 
+### position  
 
 • `get` **position**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <Badge type="tip" text="other" />
 
@@ -327,7 +327,7 @@ ___
 
 ___
 
-### renderOpacity <Score text="renderOpacity" /> 
+### renderOpacity  
 
 • `get` **renderOpacity**(): `number` <Badge type="tip" text="other" />
 
@@ -358,7 +358,7 @@ ___
 
 ___
 
-### renderScale <Score text="renderScale" /> 
+### renderScale  
 
 • `get` **renderScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -389,7 +389,7 @@ ___
 
 ___
 
-### renderShear <Score text="renderShear" /> 
+### renderShear  
 
 • `get` **renderShear**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -420,7 +420,7 @@ ___
 
 ___
 
-### renderTransformAngle <Score text="renderTransformAngle" /> 
+### renderTransformAngle  
 
 • `get` **renderTransformAngle**(): `number` <Badge type="tip" text="other" />
 
@@ -451,7 +451,7 @@ ___
 
 ___
 
-### renderTransformPivot <Score text="renderTransformPivot" /> 
+### renderTransformPivot  
 
 • `get` **renderTransformPivot**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -482,7 +482,7 @@ ___
 
 ___
 
-### size <Score text="size" /> 
+### size  
 
 • `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -513,7 +513,7 @@ FVector2D
 
 ___
 
-### slot <Score text="slot" /> 
+### slot  
 
 • `get` **slot**(): [`UISlot`](UI.UISlot.md) <Badge type="tip" text="other" />
 
@@ -534,7 +534,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### tickSpaceGeometry <Score text="tickSpaceGeometry" /> 
+### tickSpaceGeometry  
 
 • `get` **tickSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
 
@@ -551,7 +551,7 @@ ___
 
 ___
 
-### transform <Score text="transform" /> 
+### transform  
 
 • `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="other" />
 
@@ -582,7 +582,7 @@ ___
 
 ___
 
-### visibility <Score text="visibility" /> 
+### visibility  
 
 • `get` **visibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
 
@@ -613,7 +613,7 @@ ___
 
 ___
 
-### visible <Score text="visible" /> 
+### visible  
 
 • `get` **visible**(): `boolean` <Badge type="tip" text="other" />
 
@@ -630,7 +630,7 @@ boolean
 
 ___
 
-### zOrder <Score text="zOrder" /> 
+### zOrder  
 
 • `get` **zOrder**(): `number` <Badge type="tip" text="other" />
 
@@ -661,7 +661,7 @@ zorder
 
 ## Methods
 
-### destroyObject <Score text="destroyObject" /> 
+### destroyObject  
 
 ▸ **destroyObject**(): `void` <Badge type="tip" text="other" />
 
@@ -673,7 +673,7 @@ zorder
 
 ___
 
-### equal <Score text="equal" /> 
+### equal  
 
 ▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
 
@@ -696,7 +696,7 @@ boolean
 
 ___
 
-### invalidateLayoutAndVolatility <Score text="invalidateLayoutAndVolatility" /> 
+### invalidateLayoutAndVolatility  
 
 ▸ **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="other" />
 

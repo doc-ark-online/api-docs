@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Anchor
 
-# Anchor <Badge type="tip" text="Class" /> <Score text="Anchor" />
+# Anchor <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

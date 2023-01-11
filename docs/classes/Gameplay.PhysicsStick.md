@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
 
-# PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
+# PhysicsStick <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

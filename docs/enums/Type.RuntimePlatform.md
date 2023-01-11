@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / RuntimePlatform
 
-# RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
+# RuntimePlatform <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### Android <Score text="Android" /> 
+### Android  
 
 • **Android** = ``3``
 
@@ -26,7 +26,7 @@ Mobile - Android
 
 ___
 
-### Linux <Score text="Linux" /> 
+### Linux  
 
 • **Linux** = ``1``
 
@@ -34,7 +34,7 @@ PC - Linux
 
 ___
 
-### MacOS <Score text="MacOS" /> 
+### MacOS  
 
 • **MacOS** = ``2``
 
@@ -42,7 +42,7 @@ PC - MacOS
 
 ___
 
-### Windows <Score text="Windows" /> 
+### Windows  
 
 • **Windows** = ``0``
 
@@ -50,7 +50,7 @@ PC - Windows
 
 ___
 
-### iOS <Score text="iOS" /> 
+### iOS  
 
 • **iOS** = ``4``
 

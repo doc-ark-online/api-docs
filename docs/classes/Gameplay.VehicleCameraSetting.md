@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / VehicleCameraSetting
 
-# VehicleCameraSetting <Badge type="tip" text="Class" /> <Score text="VehicleCameraSetting" />
+# VehicleCameraSetting <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -111,7 +111,7 @@
 
 ## Methods
 
-### applyClientSettings <Score text="applyClientSettings" /> 
+### applyClientSettings  
 
 ▸ **applyClientSettings**(`cameraSystem`): `void` <Badge type="tip" text="other" />
 
@@ -128,7 +128,7 @@
 
 
 
-### getSettings <Score text="getSettings" /> 
+### getSettings  
 
 ▸ **getSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
 
@@ -144,7 +144,7 @@
 摄像机配置数据
 
 
-### saveSettings <Score text="saveSettings" /> 
+### saveSettings  
 
 ▸ **saveSettings**(): `void` <Badge type="tip" text="other" />
 

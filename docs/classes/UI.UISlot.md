@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / UISlot
 
-# UISlot <Badge type="tip" text="Class" /> <Score text="UISlot" />
+# UISlot <Badge type="tip" text="Class" /> 
 
 **`Deprecated`**
 
@@ -27,7 +27,7 @@ UI插槽
 
 ## Accessors
 
-### autoSizeEnable <Score text="autoSizeEnable" /> 
+### autoSizeEnable  
 
 • `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -66,7 +66,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### constraints <Score text="constraints" /> 
+### constraints  
 
 • `get` **constraints**(): [`UIConstraintAnchors`](UI.UIConstraintAnchors.md) <Badge type="tip" text="other" />
 
@@ -105,7 +105,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### position <Score text="position" /> 
+### position  
 
 • `get` **position**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -144,7 +144,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### size <Score text="size" /> 
+### size  
 
 • `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -183,7 +183,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### transform <Score text="transform" /> 
+### transform  
 
 • `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="other" />
 
@@ -222,7 +222,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### zOrder <Score text="zOrder" /> 
+### zOrder  
 
 • `get` **zOrder**(): `number`
 
@@ -261,7 +261,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ## Methods
 
-### equal <Score text="equal" /> 
+### equal  
 
 ▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
 

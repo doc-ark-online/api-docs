@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsImpulse
 
-# PhysicsImpulse <Badge type="tip" text="Class" /> <Score text="PhysicsImpulse" />
+# PhysicsImpulse <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -115,7 +115,7 @@
 
 ## Properties
 
-### onImpulseEnter <Score text="onImpulseEnter" /> 
+### onImpulseEnter  
 
 • **onImpulseEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
@@ -125,7 +125,7 @@
 
 ## Accessors
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -155,7 +155,7 @@
 
 
 
-### impulseForceType <Score text="impulseForceType" /> 
+### impulseForceType  
 
 • `get` **impulseForceType**(): [`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md) <Badge type="tip" text="other" />
 
@@ -186,7 +186,7 @@
 
 ___
 
-### impulseRadialForce <Score text="impulseRadialForce" /> 
+### impulseRadialForce  
 
 • `get` **impulseRadialForce**(): `number` <Badge type="tip" text="other" />
 
@@ -217,7 +217,7 @@ ___
 
 ___
 
-### impulseType <Score text="impulseType" /> 
+### impulseType  
 
 • `get` **impulseType**(): [`ImpulseType`](../enums/Gameplay.ImpulseType.md) <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ ___
 
 ___
 
-### impulseVector <Score text="impulseVector" /> 
+### impulseVector  
 
 • `get` **impulseVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 

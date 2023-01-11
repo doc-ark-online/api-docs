@@ -1,6 +1,6 @@
 [Service](../modules/Service.Service.md) / MessageChannelReceiver
 
-# MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
+# MessageChannelReceiver <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Enumeration Members
 
-### Client <Score text="Client" /> 
+### Client  
 
 • **Client** = ``1``
 
@@ -26,7 +26,7 @@
 
 ___
 
-### MGS <Score text="MGS" /> 
+### MGS  
 
 • **MGS** = ``3``
 
@@ -34,7 +34,7 @@ ___
 
 ___
 
-### MetaWorld <Score text="MetaWorld" /> 
+### MetaWorld  
 
 • **MetaWorld** = ``0``
 
@@ -42,7 +42,7 @@ C++层，MetaWorld引擎
 
 ___
 
-### TS <Score text="TS" /> 
+### TS  
 
 • **TS** = ``2``
 
@@ -50,7 +50,7 @@ TS层，游戏项目
 
 ___
 
-### WebSocket <Score text="WebSocket" /> 
+### WebSocket  
 
 • **WebSocket** = ``4``
 

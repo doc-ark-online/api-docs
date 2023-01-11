@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2MaterialStyle
 
-# IHumanoidV2MaterialStyle <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2MaterialStyle" />
+# IHumanoidV2MaterialStyle <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -33,7 +33,7 @@
 
 ## Methods
 
-### getBodyTattooColor <Score text="getBodyTattooColor" /> 
+### getBodyTattooColor  
 
 ▸ **getBodyTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -57,7 +57,7 @@
 
 ___
 
-### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
+### getBodyTattooPositionX  
 
 ▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -81,7 +81,7 @@ ___
 
 ___
 
-### getBodyTattooPositionY <Score text="getBodyTattooPositionY" /> 
+### getBodyTattooPositionY  
 
 ▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -105,7 +105,7 @@ ___
 
 ___
 
-### getBodyTattooRotation <Score text="getBodyTattooRotation" /> 
+### getBodyTattooRotation  
 
 ▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -129,7 +129,7 @@ ___
 
 ___
 
-### getBodyTattooType <Score text="getBodyTattooType" /> 
+### getBodyTattooType  
 
 ▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
@@ -154,7 +154,7 @@ sync = true:双端
 
 ___
 
-### getBodyTattooZoom <Score text="getBodyTattooZoom" /> 
+### getBodyTattooZoom  
 
 ▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
@@ -178,7 +178,7 @@ ___
 
 ___
 
-### getSkinColor <Score text="getSkinColor" /> 
+### getSkinColor  
 
 ▸ **getSkinColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 ___
 
-### getSkinTexture <Score text="getSkinTexture" /> 
+### getSkinTexture  
 
 ▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### setBodyTattooColor <Score text="setBodyTattooColor" /> 
+### setBodyTattooColor  
 
 ▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -236,7 +236,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
+### setBodyTattooPositionX  
 
 ▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -258,7 +258,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooPositionY <Score text="setBodyTattooPositionY" /> 
+### setBodyTattooPositionY  
 
 ▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -280,7 +280,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
+### setBodyTattooRotation  
 
 ▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -302,7 +302,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooType <Score text="setBodyTattooType" /> 
+### setBodyTattooType  
 
 ▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -324,7 +324,7 @@ sync = true:双端
 
 ___
 
-### setBodyTattooZoom <Score text="setBodyTattooZoom" /> 
+### setBodyTattooZoom  
 
 ▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -346,7 +346,7 @@ sync = true:双端
 
 ___
 
-### setSkinColor <Score text="setSkinColor" /> 
+### setSkinColor  
 
 ▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
@@ -367,7 +367,7 @@ sync = true:双端
 
 ___
 
-### setSkinTexture <Score text="setSkinTexture" /> 
+### setSkinTexture  
 
 ▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 

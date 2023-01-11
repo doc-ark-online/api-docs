@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape2D
 
-# EffectRangeShape2D <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeShape2D" />
+# EffectRangeShape2D <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Circle <Score text="Circle" /> 
+### Circle  
 
 • **Circle** = ``1``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### CircularSector <Score text="CircularSector" /> 
+### CircularSector  
 
 • **CircularSector** = ``2``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Rectangle <Score text="Rectangle" /> 
+### Rectangle  
 
 • **Rectangle** = ``0``
 

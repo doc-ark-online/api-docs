@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraProjectionMode
 
-# CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
+# CameraProjectionMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Orthographic <Score text="Orthographic" /> 
+### Orthographic  
 
 • **Orthographic** = ``1``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Perspective <Score text="Perspective" /> 
+### Perspective  
 
 • **Perspective** = ``0``
 

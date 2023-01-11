@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeapon
 
-# HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
+# HotWeapon <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -140,7 +140,7 @@
 
 ## Properties
 
-### accuracyOfFireComponent <Score text="accuracyOfFireComponent" /> 
+### accuracyOfFireComponent  
 
 • **accuracyOfFireComponent**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md)
 
@@ -150,7 +150,7 @@
 
 ___
 
-### aimComponent <Score text="aimComponent" /> 
+### aimComponent  
 
 • **aimComponent**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md)
 
@@ -160,7 +160,7 @@ ___
 
 ___
 
-### fireComponent <Score text="fireComponent" /> 
+### fireComponent  
 
 • **fireComponent**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md)
 
@@ -170,7 +170,7 @@ ___
 
 ___
 
-### loadComponent <Score text="loadComponent" /> 
+### loadComponent  
 
 • **loadComponent**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md)
 
@@ -180,7 +180,7 @@ ___
 
 ___
 
-### onEquippedClient <Score text="onEquippedClient" /> 
+### onEquippedClient  
 
 • **onEquippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
 
@@ -190,7 +190,7 @@ ___
 
 ___
 
-### onEquippedServer <Score text="onEquippedServer" /> 
+### onEquippedServer  
 
 • **onEquippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
 
@@ -200,7 +200,7 @@ ___
 
 ___
 
-### onUnequippedClient <Score text="onUnequippedClient" /> 
+### onUnequippedClient  
 
 • **onUnequippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -210,7 +210,7 @@ ___
 
 ___
 
-### onUnequippedServer <Score text="onUnequippedServer" /> 
+### onUnequippedServer  
 
 • **onUnequippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -220,7 +220,7 @@ ___
 
 ___
 
-### recoilForceComponent <Score text="recoilForceComponent" /> 
+### recoilForceComponent  
 
 • **recoilForceComponent**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md)
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### reloadComponent <Score text="reloadComponent" /> 
+### reloadComponent  
 
 • **reloadComponent**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md)
 
@@ -240,7 +240,7 @@ ___
 
 ## Accessors
 
-### accuracyOfFireEnable <Score text="accuracyOfFireEnable" /> 
+### accuracyOfFireEnable  
 
 • `get` **accuracyOfFireEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -280,7 +280,7 @@ ___
 
 ___
 
-### aimEnable <Score text="aimEnable" /> 
+### aimEnable  
 
 • `get` **aimEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -317,7 +317,7 @@ ___
 
 
 
-### loadEnable <Score text="loadEnable" /> 
+### loadEnable  
 
 • `get` **loadEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -356,7 +356,7 @@ ___
 
 
 
-### recoilForceEnable <Score text="recoilForceEnable" /> 
+### recoilForceEnable  
 
 • `get` **recoilForceEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -393,7 +393,7 @@ ___
 
 
 
-### reloadEnable <Score text="reloadEnable" /> 
+### reloadEnable  
 
 • `get` **reloadEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -432,7 +432,7 @@ ___
 
 ## Methods
 
-### breakLoad <Score text="breakLoad" /> 
+### breakLoad  
 
 ▸ **breakLoad**(): `void` <Badge type="tip" text="other" />
 
@@ -444,7 +444,7 @@ ___
 
 ___
 
-### breakReload <Score text="breakReload" /> 
+### breakReload  
 
 ▸ **breakReload**(): `void` <Badge type="tip" text="other" />
 
@@ -455,7 +455,7 @@ ___
 
 
 
-### cloneComponentsData <Score text="cloneComponentsData" /> 
+### cloneComponentsData  
 
 ▸ **cloneComponentsData**(`otherHotWeapon`): `void` <Badge type="tip" text="other" />
 
@@ -479,7 +479,7 @@ ___
 
 
 
-### equipment <Score text="equipment" /> 
+### equipment  
 
 ▸ **equipment**(`character`, `slotName`): `void` <Badge type="tip" text="other" />
 
@@ -506,7 +506,7 @@ ___
 
 
 
-### getBulletLocWhileSpawnOnScreenCenter <Score text="getBulletLocWhileSpawnOnScreenCenter" /> 
+### getBulletLocWhileSpawnOnScreenCenter  
 
 ▸ **getBulletLocWhileSpawnOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -523,7 +523,7 @@ ___
 子弹投掷物生成的location
 
 
-### getCurrentOwner <Score text="getCurrentOwner" /> 
+### getCurrentOwner  
 
 ▸ **getCurrentOwner**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
 
@@ -540,7 +540,7 @@ ___
 
 ___
 
-### getCurrentState <Score text="getCurrentState" /> 
+### getCurrentState  
 
 ▸ **getCurrentState**(): [`HotWeaponState`](../enums/Gameplay.HotWeaponState.md) <Badge type="tip" text="other" />
 
@@ -557,7 +557,7 @@ ___
 
 ___
 
-### getDefaultCrossHairSize <Score text="getDefaultCrossHairSize" /> 
+### getDefaultCrossHairSize  
 
 ▸ **getDefaultCrossHairSize**(`maxShootRange`): `number` <Badge type="tip" text="other" />
 
@@ -580,7 +580,7 @@ ___
 默认准星大小(射击精度半角值)
 
 
-### getShootDirWithDispersion <Score text="getShootDirWithDispersion" /> 
+### getShootDirWithDispersion  
 
 ▸ **getShootDirWithDispersion**(`StartLoc`, `ShootRange`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
@@ -610,7 +610,7 @@ ___
 子弹的实际飞行方向
 
 
-### getTransformForFire <Score text="getTransformForFire" /> 
+### getTransformForFire  
 
 ▸ **getTransformForFire**(`ShootRange`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
@@ -639,7 +639,7 @@ todo Need Completed
 生成子弹的Transform
 
 
-### load <Score text="load" /> 
+### load  
 
 ▸ **load**(): `void` <Badge type="tip" text="other" />
 
@@ -650,7 +650,7 @@ todo Need Completed
 
 
 
-### reload <Score text="reload" /> 
+### reload  
 
 ▸ **reload**(`bulletSize`): `void` <Badge type="tip" text="other" />
 
@@ -667,7 +667,7 @@ todo Need Completed
 
 
 
-### setCurrentFireModel <Score text="setCurrentFireModel" /> 
+### setCurrentFireModel  
 
 ▸ **setCurrentFireModel**(`FireMode`): `void` <Badge type="tip" text="other" />
 
@@ -690,7 +690,7 @@ todo Need Completed
 
 
 
-### startFire <Score text="startFire" /> 
+### startFire  
 
 ▸ **startFire**(): `void` <Badge type="tip" text="other" />
 
@@ -702,7 +702,7 @@ todo Need Completed
 
 ___
 
-### stopFire <Score text="stopFire" /> 
+### stopFire  
 
 ▸ **stopFire**(): `void` <Badge type="tip" text="other" />
 
@@ -714,7 +714,7 @@ ___
 
 ___
 
-### unequipHotWeapon <Score text="unequipHotWeapon" /> 
+### unequipHotWeapon  
 
 ▸ **unequipHotWeapon**(): `void` <Badge type="tip" text="other" />
 

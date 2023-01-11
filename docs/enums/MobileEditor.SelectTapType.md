@@ -1,6 +1,6 @@
 [MobileEditor](../modules/MobileEditor.MobileEditor.md) / SelectTapType
 
-# SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
+# SelectTapType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@ UGC 选中的单选或者多选
 
 ## Enumeration Members
 
-### Multi <Score text="Multi" /> 
+### Multi  
 
 • **Multi** = ``2``
 
@@ -24,7 +24,7 @@ UGC 选中的单选或者多选
 
 ___
 
-### None <Score text="None" /> 
+### None  
 
 • **None** = ``0``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### Single <Score text="Single" /> 
+### Single  
 
 • **Single** = ``1``
 

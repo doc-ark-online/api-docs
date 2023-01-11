@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / DragPivot
 
-# DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
+# DragPivot <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -23,7 +23,7 @@
 
 ## Enumeration Members
 
-### BottomCenter <Score text="BottomCenter" /> 
+### BottomCenter  
 
 • **BottomCenter** = ``8``
 
@@ -31,7 +31,7 @@
 
 ___
 
-### BottomLeft <Score text="BottomLeft" /> 
+### BottomLeft  
 
 • **BottomLeft** = ``7``
 
@@ -39,7 +39,7 @@ ___
 
 ___
 
-### BottomRight <Score text="BottomRight" /> 
+### BottomRight  
 
 • **BottomRight** = ``9``
 
@@ -47,7 +47,7 @@ ___
 
 ___
 
-### CenterCenter <Score text="CenterCenter" /> 
+### CenterCenter  
 
 • **CenterCenter** = ``5``
 
@@ -55,7 +55,7 @@ ___
 
 ___
 
-### CenterLeft <Score text="CenterLeft" /> 
+### CenterLeft  
 
 • **CenterLeft** = ``4``
 
@@ -63,7 +63,7 @@ ___
 
 ___
 
-### CenterRight <Score text="CenterRight" /> 
+### CenterRight  
 
 • **CenterRight** = ``6``
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### MouseDown <Score text="MouseDown" /> 
+### MouseDown  
 
 • **MouseDown** = ``0``
 
@@ -79,7 +79,7 @@ ___
 
 ___
 
-### TopCenter <Score text="TopCenter" /> 
+### TopCenter  
 
 • **TopCenter** = ``2``
 
@@ -87,7 +87,7 @@ ___
 
 ___
 
-### TopLeft <Score text="TopLeft" /> 
+### TopLeft  
 
 • **TopLeft** = ``1``
 
@@ -95,7 +95,7 @@ ___
 
 ___
 
-### TopRight <Score text="TopRight" /> 
+### TopRight  
 
 • **TopRight** = ``3``
 

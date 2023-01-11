@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / InputBox
 
-# InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
+# InputBox <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -97,7 +97,7 @@ UI的输入框
 
 ## Accessors
 
-### autoWrap <Score text="autoWrap" /> 
+### autoWrap  
 
 • `get` **autoWrap**(): `boolean` <Badge type="tip" text="other" />
 
@@ -127,7 +127,7 @@ UI的输入框
 
 
 
-### contentColor <Score text="contentColor" /> 
+### contentColor  
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -157,7 +157,7 @@ UI的输入框
 
 
 
-### errorText <Score text="errorText" /> 
+### errorText  
 
 • `get` **errorText**(): `string` <Badge type="tip" text="other" />
 
@@ -188,7 +188,7 @@ UI的输入框
 
 ___
 
-### fontColor <Score text="fontColor" /> 
+### fontColor  
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -219,7 +219,7 @@ ___
 
 ___
 
-### fontLetterSpace <Score text="fontLetterSpace" /> 
+### fontLetterSpace  
 
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### fontLitterSpace <Score text="fontLitterSpace" /> 
+### fontLitterSpace  
 
 • `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
 
@@ -254,7 +254,7 @@ ___
 
 ___
 
-### fontSize <Score text="fontSize" /> 
+### fontSize  
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
@@ -285,7 +285,7 @@ ___
 
 ___
 
-### glyph <Score text="glyph" /> 
+### glyph  
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
@@ -315,7 +315,7 @@ ___
 
 
 
-### hintString <Score text="hintString" /> 
+### hintString  
 
 • `get` **hintString**(): `string` <Badge type="tip" text="other" />
 
@@ -346,7 +346,7 @@ ___
 
 ___
 
-### inputTextLimit <Score text="inputTextLimit" /> 
+### inputTextLimit  
 
 • `get` **inputTextLimit**(): [`InputTextLimit`](../enums/UI.InputTextLimit.md) <Badge type="tip" text="other" />
 
@@ -376,7 +376,7 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 
 
 
-### onTextChanged <Score text="onTextChanged" /> 
+### onTextChanged  
 
 • `get` **onTextChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="other" />
 
@@ -393,7 +393,7 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 
 ___
 
-### onTextCommitted <Score text="onTextCommitted" /> 
+### onTextCommitted  
 
 • `get` **onTextCommitted**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/UI.TextCommit.md)) => `void`\> <Badge type="tip" text="other" />
 
@@ -410,7 +410,7 @@ ___
 
 ___
 
-### outlineColor <Score text="outlineColor" /> 
+### outlineColor  
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -441,7 +441,7 @@ ___
 
 ___
 
-### outlineSize <Score text="outlineSize" /> 
+### outlineSize  
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
@@ -471,7 +471,7 @@ ___
 
 
 
-### readOnlyEnable <Score text="readOnlyEnable" /> 
+### readOnlyEnable  
 
 • `get` **readOnlyEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -501,7 +501,7 @@ ___
 
 
 
-### shadowColor <Score text="shadowColor" /> 
+### shadowColor  
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -532,7 +532,7 @@ ___
 
 ___
 
-### shadowOffset <Score text="shadowOffset" /> 
+### shadowOffset  
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -562,7 +562,7 @@ ___
 
 
 
-### strikethroughEnable <Score text="strikethroughEnable" /> 
+### strikethroughEnable  
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -593,7 +593,7 @@ ___
 
 ___
 
-### text <Score text="text" /> 
+### text  
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
 
@@ -624,7 +624,7 @@ ___
 
 ___
 
-### textAlign <Score text="textAlign" /> 
+### textAlign  
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
@@ -655,7 +655,7 @@ ___
 
 ___
 
-### textHeight <Score text="textHeight" /> 
+### textHeight  
 
 • `get` **textHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -673,7 +673,7 @@ ___
 
 ___
 
-### textLengthLimit <Score text="textLengthLimit" /> 
+### textLengthLimit  
 
 • `get` **textLengthLimit**(): `number` <Badge type="tip" text="other" />
 
@@ -704,7 +704,7 @@ ___
 
 ___
 
-### textSingleHeight <Score text="textSingleHeight" /> 
+### textSingleHeight  
 
 • `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
 
@@ -721,7 +721,7 @@ ___
 
 ___
 
-### textVerticalAlign <Score text="textVerticalAlign" /> 
+### textVerticalAlign  
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
@@ -751,7 +751,7 @@ ___
 
 
 
-### underlineEnable <Score text="underlineEnable" /> 
+### underlineEnable  
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
@@ -783,7 +783,7 @@ true:开启，false:关闭
 
 ## Methods
 
-### deFocus <Score text="deFocus" /> 
+### deFocus  
 
 ▸ **deFocus**(): `void` <Badge type="tip" text="other" />
 
@@ -794,7 +794,7 @@ true:开启，false:关闭
 
 
 
-### focus <Score text="focus" /> 
+### focus  
 
 ▸ **focus**(): `void` <Badge type="tip" text="other" />
 
@@ -805,7 +805,7 @@ true:开启，false:关闭
 
 
 
-### setContentColorByHex <Score text="setContentColorByHex" /> 
+### setContentColorByHex  
 
 ▸ **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -823,7 +823,7 @@ true:开启，false:关闭
 
 ___
 
-### setContentColorDecimal <Score text="setContentColorDecimal" /> 
+### setContentColorDecimal  
 
 ▸ **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -844,7 +844,7 @@ ___
 
 ___
 
-### setFontColorByHex <Score text="setFontColorByHex" /> 
+### setFontColorByHex  
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -862,7 +862,7 @@ ___
 
 ___
 
-### setFontColorDecimal <Score text="setFontColorDecimal" /> 
+### setFontColorDecimal  
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -883,7 +883,7 @@ ___
 
 ___
 
-### setShadowColorByHex <Score text="setShadowColorByHex" /> 
+### setShadowColorByHex  
 
 ▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
@@ -901,7 +901,7 @@ ___
 
 ___
 
-### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
+### setShadowColorDecimal  
 
 ▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
@@ -922,7 +922,7 @@ ___
 
 ___
 
-### setTextJustification <Score text="setTextJustification" /> 
+### setTextJustification  
 
 ▸ **setTextJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
 
@@ -940,7 +940,7 @@ ___
 
 ___
 
-### newObject <Score text="newObject" /> 
+### newObject  
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md) <Badge type="tip" text="other" />
 

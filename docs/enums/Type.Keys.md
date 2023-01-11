@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / Keys
 
-# Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
+# Keys <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -126,7 +126,7 @@
 
 ## Enumeration Members
 
-### A <Score text="A" /> 
+### A  
 
 • **A** = ``"A"``
 
@@ -134,7 +134,7 @@ A键
 
 ___
 
-### Add <Score text="Add" /> 
+### Add  
 
 • **Add** = ``"Add"``
 
@@ -142,7 +142,7 @@ ___
 
 ___
 
-### AnyKey <Score text="AnyKey" /> 
+### AnyKey  
 
 • **AnyKey** = ``"AnyKey"``
 
@@ -150,7 +150,7 @@ ___
 
 ___
 
-### B <Score text="B" /> 
+### B  
 
 • **B** = ``"B"``
 
@@ -158,7 +158,7 @@ B键
 
 ___
 
-### Backspace <Score text="Backspace" /> 
+### Backspace  
 
 • **Backspace** = ``"BackSpace"``
 
@@ -166,7 +166,7 @@ ___
 
 ___
 
-### C <Score text="C" /> 
+### C  
 
 • **C** = ``"C"``
 
@@ -174,7 +174,7 @@ C键
 
 ___
 
-### CapsLock <Score text="CapsLock" /> 
+### CapsLock  
 
 • **CapsLock** = ``"CapsLock"``
 
@@ -182,7 +182,7 @@ Caps键
 
 ___
 
-### Colon <Score text="Colon" /> 
+### Colon  
 
 • **Colon** = ``"Colon"``
 
@@ -190,7 +190,7 @@ ___
 
 ___
 
-### Comma <Score text="Comma" /> 
+### Comma  
 
 • **Comma** = ``"Comma"``
 
@@ -198,7 +198,7 @@ ___
 
 ___
 
-### D <Score text="D" /> 
+### D  
 
 • **D** = ``"D"``
 
@@ -206,7 +206,7 @@ D键
 
 ___
 
-### Decimal <Score text="Decimal" /> 
+### Decimal  
 
 • **Decimal** = ``"Decimal"``
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### Delete <Score text="Delete" /> 
+### Delete  
 
 • **Delete** = ``"Delete"``
 
@@ -222,7 +222,7 @@ Del键
 
 ___
 
-### Divide <Score text="Divide" /> 
+### Divide  
 
 • **Divide** = ``"Divide"``
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### Dollar <Score text="Dollar" /> 
+### Dollar  
 
 • **Dollar** = ``"Dollar"``
 
@@ -238,7 +238,7 @@ $号
 
 ___
 
-### Down <Score text="Down" /> 
+### Down  
 
 • **Down** = ``"Down"``
 
@@ -246,7 +246,7 @@ ___
 
 ___
 
-### E <Score text="E" /> 
+### E  
 
 • **E** = ``"E"``
 
@@ -254,7 +254,7 @@ E键
 
 ___
 
-### Eight <Score text="Eight" /> 
+### Eight  
 
 • **Eight** = ``"Eight"``
 
@@ -262,7 +262,7 @@ ___
 
 ___
 
-### End <Score text="End" /> 
+### End  
 
 • **End** = ``"End"``
 
@@ -270,7 +270,7 @@ End键
 
 ___
 
-### Enter <Score text="Enter" /> 
+### Enter  
 
 • **Enter** = ``"Enter"``
 
@@ -278,7 +278,7 @@ ___
 
 ___
 
-### Equals <Score text="Equals" /> 
+### Equals  
 
 • **Equals** = ``"Equals"``
 
@@ -286,7 +286,7 @@ ___
 
 ___
 
-### Escape <Score text="Escape" /> 
+### Escape  
 
 • **Escape** = ``"Escape"``
 
@@ -294,7 +294,7 @@ Esc键
 
 ___
 
-### Exclamation <Score text="Exclamation" /> 
+### Exclamation  
 
 • **Exclamation** = ``"Exclamation"``
 
@@ -302,7 +302,7 @@ ___
 
 ___
 
-### F <Score text="F" /> 
+### F  
 
 • **F** = ``"F"``
 
@@ -310,7 +310,7 @@ F键
 
 ___
 
-### F1 <Score text="F" /> 
+### F1  
 
 • **F1** = ``"F1"``
 
@@ -318,7 +318,7 @@ F1键
 
 ___
 
-### F10 <Score text="F" /> 
+### F10  
 
 • **F10** = ``"F10"``
 
@@ -326,7 +326,7 @@ F10键
 
 ___
 
-### F11 <Score text="F" /> 
+### F11  
 
 • **F11** = ``"F11"``
 
@@ -334,7 +334,7 @@ F11键
 
 ___
 
-### F12 <Score text="F" /> 
+### F12  
 
 • **F12** = ``"F12"``
 
@@ -342,7 +342,7 @@ F12键
 
 ___
 
-### F2 <Score text="F" /> 
+### F2  
 
 • **F2** = ``"F2"``
 
@@ -350,7 +350,7 @@ F2键
 
 ___
 
-### F3 <Score text="F" /> 
+### F3  
 
 • **F3** = ``"F3"``
 
@@ -358,7 +358,7 @@ F3键
 
 ___
 
-### F4 <Score text="F" /> 
+### F4  
 
 • **F4** = ``"F4"``
 
@@ -366,7 +366,7 @@ F4键
 
 ___
 
-### F5 <Score text="F" /> 
+### F5  
 
 • **F5** = ``"F5"``
 
@@ -374,7 +374,7 @@ F5键
 
 ___
 
-### F6 <Score text="F" /> 
+### F6  
 
 • **F6** = ``"F6"``
 
@@ -382,7 +382,7 @@ F6键
 
 ___
 
-### F7 <Score text="F" /> 
+### F7  
 
 • **F7** = ``"F7"``
 
@@ -390,7 +390,7 @@ F7键
 
 ___
 
-### F8 <Score text="F" /> 
+### F8  
 
 • **F8** = ``"F8"``
 
@@ -398,7 +398,7 @@ F8键
 
 ___
 
-### F9 <Score text="F" /> 
+### F9  
 
 • **F9** = ``"F9"``
 
@@ -406,7 +406,7 @@ F9键
 
 ___
 
-### Five <Score text="Five" /> 
+### Five  
 
 • **Five** = ``"Five"``
 
@@ -414,7 +414,7 @@ ___
 
 ___
 
-### Four <Score text="Four" /> 
+### Four  
 
 • **Four** = ``"Four"``
 
@@ -422,7 +422,7 @@ ___
 
 ___
 
-### G <Score text="G" /> 
+### G  
 
 • **G** = ``"G"``
 
@@ -430,7 +430,7 @@ G键
 
 ___
 
-### H <Score text="H" /> 
+### H  
 
 • **H** = ``"H"``
 
@@ -438,7 +438,7 @@ H键
 
 ___
 
-### Home <Score text="Home" /> 
+### Home  
 
 • **Home** = ``"Home"``
 
@@ -446,7 +446,7 @@ Home键
 
 ___
 
-### Hyphen <Score text="Hyphen" /> 
+### Hyphen  
 
 • **Hyphen** = ``"Hyphen"``
 
@@ -454,7 +454,7 @@ ___
 
 ___
 
-### I <Score text="I" /> 
+### I  
 
 • **I** = ``"I"``
 
@@ -462,7 +462,7 @@ I键
 
 ___
 
-### Insert <Score text="Insert" /> 
+### Insert  
 
 • **Insert** = ``"Insert"``
 
@@ -470,7 +470,7 @@ Ins键
 
 ___
 
-### J <Score text="J" /> 
+### J  
 
 • **J** = ``"J"``
 
@@ -478,7 +478,7 @@ J键
 
 ___
 
-### K <Score text="K" /> 
+### K  
 
 • **K** = ``"K"``
 
@@ -486,7 +486,7 @@ K键
 
 ___
 
-### L <Score text="L" /> 
+### L  
 
 • **L** = ``"L"``
 
@@ -494,7 +494,7 @@ L键
 
 ___
 
-### Left <Score text="Left" /> 
+### Left  
 
 • **Left** = ``"Left"``
 
@@ -502,7 +502,7 @@ ___
 
 ___
 
-### LeftAlt <Score text="LeftAlt" /> 
+### LeftAlt  
 
 • **LeftAlt** = ``"LeftAlt"``
 
@@ -510,7 +510,7 @@ ___
 
 ___
 
-### LeftBracket <Score text="LeftBracket" /> 
+### LeftBracket  
 
 • **LeftBracket** = ``"LeftBracket"``
 
@@ -518,7 +518,7 @@ ___
 
 ___
 
-### LeftCommand <Score text="LeftCommand" /> 
+### LeftCommand  
 
 • **LeftCommand** = ``"LeftCommand"``
 
@@ -526,7 +526,7 @@ ___
 
 ___
 
-### LeftControl <Score text="LeftControl" /> 
+### LeftControl  
 
 • **LeftControl** = ``"LeftControl"``
 
@@ -534,7 +534,7 @@ ___
 
 ___
 
-### LeftShift <Score text="LeftShift" /> 
+### LeftShift  
 
 • **LeftShift** = ``"LeftShift"``
 
@@ -542,7 +542,7 @@ ___
 
 ___
 
-### M <Score text="M" /> 
+### M  
 
 • **M** = ``"M"``
 
@@ -550,7 +550,7 @@ M键
 
 ___
 
-### MiddleMouseButton <Score text="MiddleMouseButton" /> 
+### MiddleMouseButton  
 
 • **MiddleMouseButton** = ``"MiddleMouseButton"``
 
@@ -558,7 +558,7 @@ ___
 
 ___
 
-### Mouse2D <Score text="Mouse" /> 
+### Mouse2D  
 
 • **Mouse2D** = ``"Mouse2D"``
 
@@ -566,7 +566,7 @@ ___
 
 ___
 
-### MouseScrollDown <Score text="MouseScrollDown" /> 
+### MouseScrollDown  
 
 • **MouseScrollDown** = ``"MouseScrollDown"``
 
@@ -574,7 +574,7 @@ ___
 
 ___
 
-### MouseScrollUp <Score text="MouseScrollUp" /> 
+### MouseScrollUp  
 
 • **MouseScrollUp** = ``"MouseScrollUp"``
 
@@ -582,7 +582,7 @@ ___
 
 ___
 
-### MouseWheelAxis <Score text="MouseWheelAxis" /> 
+### MouseWheelAxis  
 
 • **MouseWheelAxis** = ``"MouseWheelAxis"``
 
@@ -590,7 +590,7 @@ ___
 
 ___
 
-### MouseX <Score text="MouseX" /> 
+### MouseX  
 
 • **MouseX** = ``"MouseX"``
 
@@ -598,7 +598,7 @@ ___
 
 ___
 
-### MouseY <Score text="MouseY" /> 
+### MouseY  
 
 • **MouseY** = ``"MouseY"``
 
@@ -606,7 +606,7 @@ ___
 
 ___
 
-### Multiply <Score text="Multiply" /> 
+### Multiply  
 
 • **Multiply** = ``"Multiply"``
 
@@ -614,7 +614,7 @@ ___
 
 ___
 
-### N <Score text="N" /> 
+### N  
 
 • **N** = ``"N"``
 
@@ -622,7 +622,7 @@ N键
 
 ___
 
-### Nine <Score text="Nine" /> 
+### Nine  
 
 • **Nine** = ``"Nine"``
 
@@ -630,7 +630,7 @@ ___
 
 ___
 
-### NumLock <Score text="NumLock" /> 
+### NumLock  
 
 • **NumLock** = ``"NumLock"``
 
@@ -638,7 +638,7 @@ NumLock键
 
 ___
 
-### NumPadEight <Score text="NumPadEight" /> 
+### NumPadEight  
 
 • **NumPadEight** = ``"NumPadEight"``
 
@@ -646,7 +646,7 @@ ___
 
 ___
 
-### NumPadFive <Score text="NumPadFive" /> 
+### NumPadFive  
 
 • **NumPadFive** = ``"NumPadFive"``
 
@@ -654,7 +654,7 @@ ___
 
 ___
 
-### NumPadFour <Score text="NumPadFour" /> 
+### NumPadFour  
 
 • **NumPadFour** = ``"NumPadFour"``
 
@@ -662,7 +662,7 @@ ___
 
 ___
 
-### NumPadNine <Score text="NumPadNine" /> 
+### NumPadNine  
 
 • **NumPadNine** = ``"NumPadNine"``
 
@@ -670,7 +670,7 @@ ___
 
 ___
 
-### NumPadOne <Score text="NumPadOne" /> 
+### NumPadOne  
 
 • **NumPadOne** = ``"NumPadOne"``
 
@@ -678,7 +678,7 @@ ___
 
 ___
 
-### NumPadSeven <Score text="NumPadSeven" /> 
+### NumPadSeven  
 
 • **NumPadSeven** = ``"NumPadSeven"``
 
@@ -686,7 +686,7 @@ ___
 
 ___
 
-### NumPadSix <Score text="NumPadSix" /> 
+### NumPadSix  
 
 • **NumPadSix** = ``"NumPadSix"``
 
@@ -694,7 +694,7 @@ ___
 
 ___
 
-### NumPadThree <Score text="NumPadThree" /> 
+### NumPadThree  
 
 • **NumPadThree** = ``"NumPadThree"``
 
@@ -702,7 +702,7 @@ ___
 
 ___
 
-### NumPadTwo <Score text="NumPadTwo" /> 
+### NumPadTwo  
 
 • **NumPadTwo** = ``"NumPadTwo"``
 
@@ -710,7 +710,7 @@ ___
 
 ___
 
-### NumPadZero <Score text="NumPadZero" /> 
+### NumPadZero  
 
 • **NumPadZero** = ``"NumPadZero"``
 
@@ -718,7 +718,7 @@ ___
 
 ___
 
-### O <Score text="O" /> 
+### O  
 
 • **O** = ``"O"``
 
@@ -726,7 +726,7 @@ O键
 
 ___
 
-### One <Score text="One" /> 
+### One  
 
 • **One** = ``"One"``
 
@@ -734,7 +734,7 @@ ___
 
 ___
 
-### P <Score text="P" /> 
+### P  
 
 • **P** = ``"P"``
 
@@ -742,7 +742,7 @@ P键
 
 ___
 
-### PageDown <Score text="PageDown" /> 
+### PageDown  
 
 • **PageDown** = ``"PageDown"``
 
@@ -750,7 +750,7 @@ PageDown键
 
 ___
 
-### PageUp <Score text="PageUp" /> 
+### PageUp  
 
 • **PageUp** = ``"PageUp"``
 
@@ -758,7 +758,7 @@ PageUp键
 
 ___
 
-### Pause <Score text="Pause" /> 
+### Pause  
 
 • **Pause** = ``"Pause"``
 
@@ -766,7 +766,7 @@ ___
 
 ___
 
-### Period <Score text="Period" /> 
+### Period  
 
 • **Period** = ``"Period"``
 
@@ -774,7 +774,7 @@ ___
 
 ___
 
-### Q <Score text="Q" /> 
+### Q  
 
 • **Q** = ``"Q"``
 
@@ -782,7 +782,7 @@ Q键
 
 ___
 
-### R <Score text="R" /> 
+### R  
 
 • **R** = ``"R"``
 
@@ -790,7 +790,7 @@ R键
 
 ___
 
-### Right <Score text="Right" /> 
+### Right  
 
 • **Right** = ``"Right"``
 
@@ -798,7 +798,7 @@ ___
 
 ___
 
-### RightAlt <Score text="RightAlt" /> 
+### RightAlt  
 
 • **RightAlt** = ``"RightAlt"``
 
@@ -806,7 +806,7 @@ ___
 
 ___
 
-### RightCommand <Score text="RightCommand" /> 
+### RightCommand  
 
 • **RightCommand** = ``"RightCommand"``
 
@@ -814,7 +814,7 @@ ___
 
 ___
 
-### RightControl <Score text="RightControl" /> 
+### RightControl  
 
 • **RightControl** = ``"RightControl"``
 
@@ -822,7 +822,7 @@ ___
 
 ___
 
-### RightMouseButton <Score text="RightMouseButton" /> 
+### RightMouseButton  
 
 • **RightMouseButton** = ``"RightMouseButton"``
 
@@ -830,7 +830,7 @@ ___
 
 ___
 
-### RightShift <Score text="RightShift" /> 
+### RightShift  
 
 • **RightShift** = ``"RightShift"``
 
@@ -838,7 +838,7 @@ ___
 
 ___
 
-### S <Score text="S" /> 
+### S  
 
 • **S** = ``"S"``
 
@@ -846,7 +846,7 @@ S键
 
 ___
 
-### ScrollLock <Score text="ScrollLock" /> 
+### ScrollLock  
 
 • **ScrollLock** = ``"ScrollLock"``
 
@@ -854,7 +854,7 @@ ScrollLock键
 
 ___
 
-### Semicolon <Score text="Semicolon" /> 
+### Semicolon  
 
 • **Semicolon** = ``"Semicolon"``
 
@@ -863,7 +863,7 @@ ___
 
 ___
 
-### Seven <Score text="Seven" /> 
+### Seven  
 
 • **Seven** = ``"Seven"``
 
@@ -871,7 +871,7 @@ ___
 
 ___
 
-### Six <Score text="Six" /> 
+### Six  
 
 • **Six** = ``"Six"``
 
@@ -879,7 +879,7 @@ ___
 
 ___
 
-### Slash <Score text="Slash" /> 
+### Slash  
 
 • **Slash** = ``"Slash"``
 
@@ -887,7 +887,7 @@ ___
 
 ___
 
-### SpaceBar <Score text="SpaceBar" /> 
+### SpaceBar  
 
 • **SpaceBar** = ``"SpaceBar"``
 
@@ -895,7 +895,7 @@ ___
 
 ___
 
-### Subtract <Score text="Subtract" /> 
+### Subtract  
 
 • **Subtract** = ``"Subtract"``
 
@@ -903,7 +903,7 @@ ___
 
 ___
 
-### T <Score text="T" /> 
+### T  
 
 • **T** = ``"T"``
 
@@ -911,7 +911,7 @@ T键
 
 ___
 
-### Tab <Score text="Tab" /> 
+### Tab  
 
 • **Tab** = ``"Tab"``
 
@@ -919,7 +919,7 @@ Tab键
 
 ___
 
-### Three <Score text="Three" /> 
+### Three  
 
 • **Three** = ``"Three"``
 
@@ -927,7 +927,7 @@ ___
 
 ___
 
-### ThumbMouseButton <Score text="ThumbMouseButton" /> 
+### ThumbMouseButton  
 
 • **ThumbMouseButton** = ``"ThumbMouseButton"``
 
@@ -935,7 +935,7 @@ ___
 
 ___
 
-### ThumbMouseButton2 <Score text="ThumbMouseButton" /> 
+### ThumbMouseButton2  
 
 • **ThumbMouseButton2** = ``"ThumbMouseButton2"``
 
@@ -943,7 +943,7 @@ ___
 
 ___
 
-### Tilde <Score text="Tilde" /> 
+### Tilde  
 
 • **Tilde** = ``"Tilde"``
 
@@ -951,7 +951,7 @@ ___
 
 ___
 
-### Two <Score text="Two" /> 
+### Two  
 
 • **Two** = ``"Two"``
 
@@ -959,7 +959,7 @@ ___
 
 ___
 
-### U <Score text="U" /> 
+### U  
 
 • **U** = ``"U"``
 
@@ -967,7 +967,7 @@ U键
 
 ___
 
-### Underscore <Score text="Underscore" /> 
+### Underscore  
 
 • **Underscore** = ``"Underscore"``
 
@@ -975,7 +975,7 @@ _号
 
 ___
 
-### Up <Score text="Up" /> 
+### Up  
 
 • **Up** = ``"Up"``
 
@@ -983,7 +983,7 @@ ___
 
 ___
 
-### V <Score text="V" /> 
+### V  
 
 • **V** = ``"V"``
 
@@ -991,7 +991,7 @@ V键
 
 ___
 
-### W <Score text="W" /> 
+### W  
 
 • **W** = ``"W"``
 
@@ -999,7 +999,7 @@ W键
 
 ___
 
-### X <Score text="X" /> 
+### X  
 
 • **X** = ``"X"``
 
@@ -1007,7 +1007,7 @@ X键
 
 ___
 
-### Y <Score text="Y" /> 
+### Y  
 
 • **Y** = ``"Y"``
 
@@ -1015,7 +1015,7 @@ Y键
 
 ___
 
-### Z <Score text="Z" /> 
+### Z  
 
 • **Z** = ``"Z"``
 
@@ -1023,7 +1023,7 @@ Z键
 
 ___
 
-### Zero <Score text="Zero" /> 
+### Zero  
 
 • **Zero** = ``"Zero"``
 

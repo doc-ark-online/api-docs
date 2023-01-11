@@ -1,6 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Group
 
-# Group <Badge type="tip" text="Class" /> <Score text="Group" />
+# Group <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -18,7 +18,7 @@
 
 ## Methods
 
-### add <Score text="add" /> 
+### add  
 
 ▸ **add**(`tween`): `void` <Badge type="tip" text="other" />
 
@@ -36,7 +36,7 @@
 
 ___
 
-### getAll <Score text="getAll" /> 
+### getAll  
 
 ▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### remove <Score text="remove" /> 
+### remove  
 
 ▸ **remove**(`tween`): `void` <Badge type="tip" text="other" />
 
@@ -71,7 +71,7 @@ ___
 
 ___
 
-### removeAll <Score text="removeAll" /> 
+### removeAll  
 
 ▸ **removeAll**(): `void` <Badge type="tip" text="other" />
 
@@ -89,7 +89,7 @@ ___
 
 ___
 
-### update <Score text="update" /> 
+### update  
 
 ▸ **update**(`time?`, `preserve?`): `boolean`
 

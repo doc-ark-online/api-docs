@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / InstanceStaticMesh
 
-# InstanceStaticMesh <Badge type="tip" text="Class" /> <Score text="InstanceStaticMesh" />
+# InstanceStaticMesh <Badge type="tip" text="Class" /> 
 
 **`Description`**
 

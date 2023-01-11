@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationDistanceModel
 
-# AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
+# AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Inverse <Score text="Inverse" /> 
+### Inverse  
 
 • **Inverse** = ``2``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### Linear <Score text="Linear" /> 
+### Linear  
 
 • **Linear** = ``0``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### LogReverse <Score text="LogReverse" /> 
+### LogReverse  
 
 • **LogReverse** = ``3``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### Logarithmic <Score text="Logarithmic" /> 
+### Logarithmic  
 
 • **Logarithmic** = ``1``
 

@@ -1,6 +1,6 @@
 [Network](../modules/Network.Network.md) / Response
 
-# Response <Badge type="tip" text="Interface" /> <Score text="Response" />
+# Response <Badge type="tip" text="Interface" /> 
 
 **`Description`**
 
@@ -23,7 +23,7 @@ HTTP响应信息的对象
 
 ## Properties
 
-### headers <Score text="headers" /> 
+### headers  
 
 • **headers**: `Map`<`string`, `string`\>
 
@@ -33,7 +33,7 @@ HTTP响应信息的对象
 
 ___
 
-### ok <Score text="ok" /> 
+### ok  
 
 • **ok**: `boolean`
 
@@ -43,7 +43,7 @@ ___
 
 ___
 
-### status <Score text="status" /> 
+### status  
 
 • **status**: `number`
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### type <Score text="type" /> 
+### type  
 
 • **type**: `string`
 
@@ -63,7 +63,7 @@ ___
 
 ___
 
-### url <Score text="url" /> 
+### url  
 
 • **url**: `string`
 
@@ -73,7 +73,7 @@ ___
 
 ## Methods
 
-### json <Score text="json" /> 
+### json  
 
 ▸ **json**<`T`\>(): `Promise`<`T`\>
 
@@ -96,7 +96,7 @@ ___
 
 ___
 
-### text <Score text="text" /> 
+### text  
 
 ▸ **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
 

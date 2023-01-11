@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / DragDropOperation
 
-# DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
+# DragDropOperation <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -22,7 +22,7 @@ UI 拖拽事件
 
 ## Methods
 
-### equal <Score text="equal" /> 
+### equal  
 
 ▸ **equal**(`other`): `boolean` <Badge type="tip" text="other" />
 
@@ -45,7 +45,7 @@ boolean
 
 ___
 
-### getDragPivot <Score text="getDragPivot" /> 
+### getDragPivot  
 
 ▸ **getDragPivot**(): [`DragPivot`](../enums/UI.DragPivot.md) <Badge type="tip" text="other" />
 
@@ -62,7 +62,7 @@ ___
 
 ___
 
-### getDragVisualWidget <Score text="getDragVisualWidget" /> 
+### getDragVisualWidget  
 
 ▸ **getDragVisualWidget**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
@@ -79,7 +79,7 @@ ___
 
 ___
 
-### getOffset <Score text="getOffset" /> 
+### getOffset  
 
 ▸ **getOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
@@ -96,7 +96,7 @@ ___
 
 ___
 
-### getTag <Score text="getTag" /> 
+### getTag  
 
 ▸ **getTag**(): `string` <Badge type="tip" text="other" />
 
@@ -113,7 +113,7 @@ ___
 
 ___
 
-### tryGetDragDropPayLoad <Score text="tryGetDragDropPayLoad" /> 
+### tryGetDragDropPayLoad  
 
 ▸ **tryGetDragDropPayLoad**(): [`DragDropPayLoad`](UI.DragDropPayLoad.md) <Badge type="tip" text="other" />
 
@@ -130,7 +130,7 @@ ___
 
 ___
 
-### tryGetDragDropPayLoadAs <Score text="tryGetDragDropPayLoadAs" /> 
+### tryGetDragDropPayLoadAs  
 
 ▸ **tryGetDragDropPayLoadAs**<`T`\>(): `T` <Badge type="tip" text="other" />
 

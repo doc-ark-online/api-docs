@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / TextJustify
 
-# TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
+# TextJustify <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### Center <Score text="Center" /> 
+### Center  
 
 • **Center** = ``1``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### Left <Score text="Left" /> 
+### Left  
 
 • **Left** = ``0``
 
@@ -35,7 +35,7 @@ ___
 
 ___
 
-### Right <Score text="Right" /> 
+### Right  
 
 • **Right** = ``2``
 

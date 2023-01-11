@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / StaticMesh
 
-# StaticMesh <Badge type="tip" text="Class" /> <Score text="StaticMesh" />
+# StaticMesh <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -135,7 +135,7 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 
 ## Accessors
 
-### angularDamping <Score text="angularDamping" /> 
+### angularDamping  
 
 • `get` **angularDamping**(): `number`
 
@@ -162,7 +162,7 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 
 ___
 
-### applyImpulseOnDamage <Score text="applyImpulseOnDamage" /> 
+### applyImpulseOnDamage  
 
 • `get` **applyImpulseOnDamage**(): `boolean`
 
@@ -188,7 +188,7 @@ ___
 
 
 
-### gravityEnable <Score text="gravityEnable" /> 
+### gravityEnable  
 
 • `get` **gravityEnable**(): `boolean`
 
@@ -214,7 +214,7 @@ ___
 
 
 
-### ignoreRadialForce <Score text="ignoreRadialForce" /> 
+### ignoreRadialForce  
 
 • `get` **ignoreRadialForce**(): `boolean`
 
@@ -241,7 +241,7 @@ ___
 
 ___
 
-### ignoreRadialImpulse <Score text="ignoreRadialImpulse" /> 
+### ignoreRadialImpulse  
 
 • `get` **ignoreRadialImpulse**(): `boolean`
 
@@ -268,7 +268,7 @@ ___
 
 ___
 
-### isSimulatingPhysics <Score text="isSimulatingPhysics" /> 
+### isSimulatingPhysics  
 
 • `get` **isSimulatingPhysics**(): `boolean`
 
@@ -295,7 +295,7 @@ ___
 
 ___
 
-### linerDamping <Score text="linerDamping" /> 
+### linerDamping  
 
 • `get` **linerDamping**(): `number`
 
@@ -322,7 +322,7 @@ ___
 
 ___
 
-### lockPositionX <Score text="lockPositionX" /> 
+### lockPositionX  
 
 • `get` **lockPositionX**(): `boolean`
 
@@ -349,7 +349,7 @@ ___
 
 ___
 
-### lockPositionY <Score text="lockPositionY" /> 
+### lockPositionY  
 
 • `get` **lockPositionY**(): `boolean`
 
@@ -376,7 +376,7 @@ ___
 
 ___
 
-### lockPositionZ <Score text="lockPositionZ" /> 
+### lockPositionZ  
 
 • `get` **lockPositionZ**(): `boolean`
 
@@ -403,7 +403,7 @@ ___
 
 ___
 
-### lockRotationX <Score text="lockRotationX" /> 
+### lockRotationX  
 
 • `get` **lockRotationX**(): `boolean`
 
@@ -430,7 +430,7 @@ ___
 
 ___
 
-### lockRotationY <Score text="lockRotationY" /> 
+### lockRotationY  
 
 • `get` **lockRotationY**(): `boolean`
 
@@ -457,7 +457,7 @@ ___
 
 ___
 
-### lockRotationZ <Score text="lockRotationZ" /> 
+### lockRotationZ  
 
 • `get` **lockRotationZ**(): `boolean`
 
@@ -483,7 +483,7 @@ ___
 
 
 
-### massEnable <Score text="massEnable" /> 
+### massEnable  
 
 • `get` **massEnable**(): `boolean`
 
@@ -510,7 +510,7 @@ ___
 
 ___
 
-### massInKg <Score text="massInKg" /> 
+### massInKg  
 
 • `get` **massInKg**(): `number`
 
@@ -538,7 +538,7 @@ ___
 
 ## Methods
 
-### createMaterialInstance <Score text="createMaterialInstance" /> 
+### createMaterialInstance  
 
 ▸ **createMaterialInstance**(`Index`): `void` <Badge type="tip" text="other" />
 
@@ -555,7 +555,7 @@ ___
 
 
 
-### getMaterialColor <Score text="getMaterialColor" /> 
+### getMaterialColor  
 
 ▸ **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
@@ -577,7 +577,7 @@ ___
 获取的颜色
 
 
-### resetMaterial <Score text="resetMaterial" /> 
+### resetMaterial  
 
 ▸ **resetMaterial**(): `void` <Badge type="tip" text="other" />
 
@@ -588,7 +588,7 @@ ___
 
 
 
-### setCullDistance <Score text="setCullDistance" /> 
+### setCullDistance  
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
 
@@ -611,7 +611,7 @@ ___
 
 
 
-### setMaterial <Score text="setMaterial" /> 
+### setMaterial  
 
 ▸ **setMaterial**(`MaterialGUID`): `void` <Badge type="tip" text="other" />
 
@@ -645,7 +645,7 @@ ___
 
 ___
 
-### setMaterialColor <Score text="setMaterialColor" /> 
+### setMaterialColor  
 
 ▸ **setMaterialColor**(`Index`, `InColor`): `void` <Badge type="tip" text="other" />
 
@@ -664,7 +664,7 @@ ___
 
 ___
 
-### setOutlineAndColor <Score text="setOutlineAndColor" /> 
+### setOutlineAndColor  
 
 ▸ **setOutlineAndColor**(`Enable`, `ColorIndex`): `void` <Badge type="tip" text="other" />
 
@@ -682,7 +682,7 @@ ___
 
 
 
-### setStaticMeshAsset <Score text="setStaticMeshAsset" /> 
+### setStaticMeshAsset  
 
 ▸ **setStaticMeshAsset**(`InAssetGuid`): `void` <Badge type="tip" text="other" />
 

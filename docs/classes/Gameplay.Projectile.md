@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Projectile
 
-# Projectile <Badge type="tip" text="Class" /> <Score text="Projectile" />
+# Projectile <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -126,7 +126,7 @@
 
 ## Properties
 
-### onProjectileBeginOverlap <Score text="onProjectileBeginOverlap" /> 
+### onProjectileBeginOverlap  
 
 • **onProjectileBeginOverlap**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`, `fromSweep`: `boolean`, `sweepResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
@@ -136,7 +136,7 @@
 
 ___
 
-### onProjectileBounce <Score text="onProjectileBounce" /> 
+### onProjectileBounce  
 
 • **onProjectileBounce**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`impactResult`: [`HitResult`](Gameplay.HitResult.md), `impactVelocity`: [`Vector`](Type.Vector.md), `bounceNum`: `number`) => `void`\>
 
@@ -146,7 +146,7 @@ ___
 
 ___
 
-### onProjectileEndOverlap <Score text="onProjectileEndOverlap" /> 
+### onProjectileEndOverlap  
 
 • **onProjectileEndOverlap**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`) => `void`\>
 
@@ -156,7 +156,7 @@ ___
 
 ___
 
-### onProjectileHit <Score text="onProjectileHit" /> 
+### onProjectileHit  
 
 • **onProjectileHit**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
@@ -166,7 +166,7 @@ ___
 
 ___
 
-### onProjectileInterrupt <Score text="onProjectileInterrupt" /> 
+### onProjectileInterrupt  
 
 • **onProjectileInterrupt**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
@@ -176,7 +176,7 @@ ___
 
 ## Accessors
 
-### collisionLength <Score text="collisionLength" /> 
+### collisionLength  
 
 • `get` **collisionLength**(): `number`
 
@@ -203,7 +203,7 @@ ___
 
 ___
 
-### collisionRadius <Score text="collisionRadius" /> 
+### collisionRadius  
 
 • `get` **collisionRadius**(): `number`
 
@@ -230,7 +230,7 @@ ___
 
 ___
 
-### flyRange <Score text="flyRange" /> 
+### flyRange  
 
 • `get` **flyRange**(): `number`
 
@@ -256,7 +256,7 @@ ___
 
 
 
-### gravityScale <Score text="gravityScale" /> 
+### gravityScale  
 
 • `get` **gravityScale**(): `number`
 
@@ -282,7 +282,7 @@ ___
 
 
 
-### initialSpeed <Score text="initialSpeed" /> 
+### initialSpeed  
 
 • `get` **initialSpeed**(): `number`
 
@@ -308,7 +308,7 @@ ___
 
 
 
-### maxBounceCount <Score text="maxBounceCount" /> 
+### maxBounceCount  
 
 • `get` **maxBounceCount**(): `number`
 
@@ -334,7 +334,7 @@ ___
 
 
 
-### simulatePhysics <Score text="simulatePhysics" /> 
+### simulatePhysics  
 
 • `get` **simulatePhysics**(): `boolean`
 
@@ -362,7 +362,7 @@ ___
 
 ## Methods
 
-### bindPlayer <Score text="bindPlayer" /> 
+### bindPlayer  
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
 
@@ -391,7 +391,7 @@ ___
 当有对内部玩家进行赋值时，返回 true
 
 
-### init <Score text="init" /> 
+### init  
 
 ▸ **init**(`Speed?`, `CollisionLength?`, `CollisionRadius?`, `FlyRange?`, `GravityScale?`, `SimulatePhysics?`): `void` <Badge type="tip" text="other" />
 
@@ -413,7 +413,7 @@ ___
 
 
 
-### launch <Score text="launch" /> 
+### launch  
 
 ▸ **launch**(): `void` <Badge type="tip" text="other" />
 
@@ -454,7 +454,7 @@ ___
 
 
 
-### pause <Score text="pause" /> 
+### pause  
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
 
@@ -465,7 +465,7 @@ ___
 
 
 
-### resume <Score text="resume" /> 
+### resume  
 
 ▸ **resume**(): `void` <Badge type="tip" text="other" />
 

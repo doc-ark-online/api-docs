@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / BlockingArea
 
-# BlockingArea <Badge type="tip" text="Class" /> <Score text="BlockingArea" />
+# BlockingArea <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -124,7 +124,7 @@
 
 ## Accessors
 
-### playerStateResponse <Score text="playerStateResponse" /> 
+### playerStateResponse  
 
 • `get` **playerStateResponse**(): `unknown` <Badge type="tip" text="other" />
 
@@ -150,7 +150,7 @@ bool
 
 ## Methods
 
-### getCurrentPlayerPassable <Score text="getCurrentPlayerPassable" /> 
+### getCurrentPlayerPassable  
 
 ▸ **getCurrentPlayerPassable**(`Target`): `boolean` <Badge type="tip" text="other" />
 
@@ -180,7 +180,7 @@ BlockArea.getPlayerCanPass(player.getPlayerID())
 bool
 
 
-### setBlockAllPlayer <Score text="setBlockAllPlayer" /> 
+### setBlockAllPlayer  
 
 ▸ **setBlockAllPlayer**(`BlockAll`): `boolean`
 
@@ -210,7 +210,7 @@ BlockArea.setBlockAllPlayer() <Badge type="tip" text="other" />
 bool
 
 
-### setCurrentPlayerPassable <Score text="setCurrentPlayerPassable" /> 
+### setCurrentPlayerPassable  
 
 ▸ **setCurrentPlayerPassable**(`Target`, `CanPass`): `void`
 
@@ -236,7 +236,7 @@ BlockArea.setCurrentPlayerPassable(player,true) <Badge type="tip" text="other" /
 
 
 
-### setNonCharacterActorCanPass <Score text="setNonCharacterActorCanPass" /> 
+### setNonCharacterActorCanPass  
 
 ▸ **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void`
 

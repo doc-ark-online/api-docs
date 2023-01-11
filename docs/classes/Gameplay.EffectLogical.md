@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / EffectLogical
 
-# EffectLogical <Badge type="tip" text="Class" /> <Score text="EffectLogical" />
+# EffectLogical <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -129,7 +129,7 @@
 
 ## Accessors
 
-### circleRadius <Score text="circleRadius" /> 
+### circleRadius  
 
 • `get` **circleRadius**(): `number`
 
@@ -156,7 +156,7 @@
 
 ___
 
-### cubeHeight <Score text="cubeHeight" /> 
+### cubeHeight  
 
 • `get` **cubeHeight**(): `number`
 
@@ -183,7 +183,7 @@ ___
 
 ___
 
-### cubeLength <Score text="cubeLength" /> 
+### cubeLength  
 
 • `get` **cubeLength**(): `number`
 
@@ -210,7 +210,7 @@ ___
 
 ___
 
-### cubeWidget <Score text="cubeWidget" /> 
+### cubeWidget  
 
 • `get` **cubeWidget**(): `number`
 
@@ -237,7 +237,7 @@ ___
 
 ___
 
-### effectRangeShape <Score text="effectRangeShape" /> 
+### effectRangeShape  
 
 • `get` **effectRangeShape**(): [`EffectRangeShape3D`](../enums/Gameplay.EffectRangeShape3D.md)
 
@@ -264,7 +264,7 @@ ___
 
 ___
 
-### effectRangeType <Score text="effectRangeType" /> 
+### effectRangeType  
 
 • `get` **effectRangeType**(): [`EffectRangeType`](../enums/Gameplay.EffectRangeType.md)
 
@@ -290,7 +290,7 @@ ___
 
 
 
-### rectangleHeight <Score text="rectangleHeight" /> 
+### rectangleHeight  
 
 • `get` **rectangleHeight**(): `number`
 
@@ -317,7 +317,7 @@ ___
 
 ___
 
-### rectangleWidget <Score text="rectangleWidget" /> 
+### rectangleWidget  
 
 • `get` **rectangleWidget**(): `number`
 
@@ -343,7 +343,7 @@ ___
 
 
 
-### sectorAngle <Score text="sectorAngle" /> 
+### sectorAngle  
 
 • `get` **sectorAngle**(): `number`
 
@@ -370,7 +370,7 @@ ___
 
 ___
 
-### sectorRadius <Score text="sectorRadius" /> 
+### sectorRadius  
 
 • `get` **sectorRadius**(): `number`
 
@@ -397,7 +397,7 @@ ___
 
 ___
 
-### segmentAngle <Score text="segmentAngle" /> 
+### segmentAngle  
 
 • `get` **segmentAngle**(): `number`
 
@@ -424,7 +424,7 @@ ___
 
 ___
 
-### segmentHeight <Score text="segmentHeight" /> 
+### segmentHeight  
 
 • `get` **segmentHeight**(): `number`
 
@@ -451,7 +451,7 @@ ___
 
 ___
 
-### segmentRadius <Score text="segmentRadius" /> 
+### segmentRadius  
 
 • `get` **segmentRadius**(): `number`
 
@@ -478,7 +478,7 @@ ___
 
 ___
 
-### sphereRadius <Score text="sphereRadius" /> 
+### sphereRadius  
 
 • `get` **sphereRadius**(): `number`
 
@@ -506,7 +506,7 @@ ___
 
 ## Methods
 
-### getInRangeAllActor <Score text="getInRangeAllActor" /> 
+### getInRangeAllActor  
 
 ▸ **getInRangeAllActor**(): `GameObject`[] <Badge type="tip" text="other" />
 
@@ -522,7 +522,7 @@ ___
 GameObject数组
 
 
-### startPlay <Score text="startPlay" /> 
+### startPlay  
 
 ▸ **startPlay**(): `void` <Badge type="tip" text="other" />
 
@@ -534,7 +534,7 @@ GameObject数组
 
 ___
 
-### stopPlay <Score text="stopPlay" /> 
+### stopPlay  
 
 ▸ **stopPlay**(): `void` <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / JoystickStyleDesigner
 
-# JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
+# JoystickStyleDesigner <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -31,7 +31,7 @@
 
 ## Properties
 
-### disable <Score text="disable" /> 
+### disable  
 
 • **disable**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 
@@ -41,7 +41,7 @@
 
 ___
 
-### normal <Score text="normal" /> 
+### normal  
 
 • **normal**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 
@@ -51,7 +51,7 @@ ___
 
 ___
 
-### touch <Score text="touch" /> 
+### touch  
 
 • **touch**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
 

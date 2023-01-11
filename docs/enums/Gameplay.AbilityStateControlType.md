@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityStateControlType
 
-# AbilityStateControlType <Badge type="tip" text="Enumeration" /> <Score text="AbilityStateControlType" />
+# AbilityStateControlType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### CanJump <Score text="CanJump" /> 
+### CanJump  
 
 • **CanJump** = ``2``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### CanMove <Score text="CanMove" /> 
+### CanMove  
 
 • **CanMove** = ``1``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### CanTurn <Score text="CanTurn" /> 
+### CanTurn  
 
 • **CanTurn** = ``4``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### None <Score text="None" /> 
+### None  
 
 • **None** = ``0``
 

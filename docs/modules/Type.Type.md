@@ -1,6 +1,6 @@
 Type
 
-# Type <Badge type="tip" text="Namespace" /> <Score text="Type" />
+# Type <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 

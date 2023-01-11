@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileCollisionMode
 
-# ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
+# ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -15,7 +15,7 @@
 
 ## Enumeration Members
 
-### Bounce <Score text="Bounce" /> 
+### Bounce  
 
 • **Bounce** = ``1``
 
@@ -23,7 +23,7 @@
 
 ___
 
-### Pierce <Score text="Pierce" /> 
+### Pierce  
 
 • **Pierce** = ``0``
 

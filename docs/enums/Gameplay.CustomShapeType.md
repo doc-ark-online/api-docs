@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CustomShapeType
 
-# CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
+# CustomShapeType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -17,7 +17,7 @@
 
 ## Enumeration Members
 
-### Box <Score text="Box" /> 
+### Box  
 
 • **Box** = ``2``
 
@@ -25,7 +25,7 @@
 
 ___
 
-### HorizontalCapsule <Score text="HorizontalCapsule" /> 
+### HorizontalCapsule  
 
 • **HorizontalCapsule** = ``1``
 
@@ -33,7 +33,7 @@ ___
 
 ___
 
-### Sphere <Score text="Sphere" /> 
+### Sphere  
 
 • **Sphere** = ``3``
 
@@ -41,7 +41,7 @@ ___
 
 ___
 
-### VerticalCapsule <Score text="VerticalCapsule" /> 
+### VerticalCapsule  
 
 • **VerticalCapsule** = ``0``
 

@@ -1,6 +1,6 @@
 Service
 
-# Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
+# Service <Badge type="tip" text="Namespace" /> 
 
 **`Description`**
 
@@ -46,7 +46,7 @@ Account Service
 
 ## Type Aliases
 
-### BoolResponse <Score text="BoolResponse" /> 
+### BoolResponse  
 
 Ƭ **BoolResponse**: (`success`: `boolean`) => `void`
 
@@ -70,7 +70,7 @@ Account Service
 
 ___
 
-### DownloadDataResponse <Score text="DownloadDataResponse" /> 
+### DownloadDataResponse  
 
 Ƭ **DownloadDataResponse**: () => `void`
 
@@ -88,7 +88,7 @@ ___
 
 ___
 
-### MGSEvent <Score text="MGSEvent" /> 
+### MGSEvent  
 
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
 
@@ -112,7 +112,7 @@ ___
 
 ___
 
-### MGSResponse <Score text="MGSResponse" /> 
+### MGSResponse  
 
 Ƭ **MGSResponse**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`
 
@@ -137,7 +137,7 @@ ___
 
 ___
 
-### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
+### OnArkBalanceUpdated  
 
 Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
 
@@ -161,7 +161,7 @@ ___
 
 ___
 
-### OnOrderDelivered <Score text="OnOrderDelivered" /> 
+### OnOrderDelivered  
 
 Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
 
@@ -189,7 +189,7 @@ ___
 
 ___
 
-### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
+### OnViewLayoutSwitched  
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
 
@@ -213,7 +213,7 @@ ___
 
 ___
 
-### OnViewRefreshed <Score text="OnViewRefreshed" /> 
+### OnViewRefreshed  
 
 Ƭ **OnViewRefreshed**: () => `void`
 
@@ -231,7 +231,7 @@ ___
 
 ___
 
-### StringResponse <Score text="StringResponse" /> 
+### StringResponse  
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
 
@@ -255,7 +255,7 @@ ___
 
 ___
 
-### TeamMatchFailureInfo <Score text="TeamMatchFailureInfo" /> 
+### TeamMatchFailureInfo  
 
 Ƭ **TeamMatchFailureInfo**: `Object`
 
@@ -272,7 +272,7 @@ ___
 
 ___
 
-### UploadDataResponse <Score text="UploadDataResponse" /> 
+### UploadDataResponse  
 
 Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
 
@@ -296,7 +296,7 @@ ___
 
 ___
 
-### VoidResponse <Score text="VoidResponse" /> 
+### VoidResponse  
 
 Ƭ **VoidResponse**: () => `void`
 
@@ -314,7 +314,7 @@ ___
 
 ___
 
-### downloadCharacterDataStringCallback <Score text="downloadCharacterDataStringCallback" /> 
+### downloadCharacterDataStringCallback  
 
 Ƭ **downloadCharacterDataStringCallback**: (`dataString`: `string`) => `void`
 

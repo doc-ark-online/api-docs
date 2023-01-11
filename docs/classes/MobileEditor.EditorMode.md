@@ -1,6 +1,6 @@
 [MobileEditor](../modules/MobileEditor.MobileEditor.md) / EditorMode
 
-# EditorMode <Badge type="tip" text="Class" /> <Score text="EditorMode" />
+# EditorMode <Badge type="tip" text="Class" /> 
 
 **`Instance`**
 
@@ -80,7 +80,7 @@
 
 ## Properties
 
-### onMobileEditorStateChanged <Score text="onMobileEditorStateChanged" /> 
+### onMobileEditorStateChanged  
 
 • **onMobileEditorStateChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\>
 
@@ -90,7 +90,7 @@
 
 ## Accessors
 
-### gizmoActor <Score text="gizmoActor" /> 
+### gizmoActor  
 
 • `get` **gizmoActor**(): `MWMobileGizmoActor` <Badge type="tip" text="other" />
 
@@ -107,7 +107,7 @@
 
 ___
 
-### gizmoActorRotation <Score text="gizmoActorRotation" /> 
+### gizmoActorRotation  
 
 • `set` **gizmoActorRotation**(`NewRotation`): `void` <Badge type="tip" text="other" />
 
@@ -125,7 +125,7 @@ ___
 
 ___
 
-### isMobileEditor <Score text="isMobileEditor" /> 
+### isMobileEditor  
 
 • `get` **isMobileEditor**(): `boolean` <Badge type="tip" text="other" />
 
@@ -162,7 +162,7 @@ ___
 
 ___
 
-### isPermanentMobileEditor <Score text="isPermanentMobileEditor" /> 
+### isPermanentMobileEditor  
 
 • `get` **isPermanentMobileEditor**(): `boolean` <Badge type="tip" text="other" />
 
@@ -179,7 +179,7 @@ ___
 
 ___
 
-### selectedActor <Score text="selectedActor" /> 
+### selectedActor  
 
 • `get` **selectedActor**(): `GameObject` <Badge type="tip" text="other" />
 
@@ -196,7 +196,7 @@ ___
 
 ## Methods
 
-### addEditorCharacterCameraFlexInput <Score text="addEditorCharacterCameraFlexInput" /> 
+### addEditorCharacterCameraFlexInput  
 
 ▸ **addEditorCharacterCameraFlexInput**(`Scale`): `void` <Badge type="tip" text="other" />
 
@@ -214,7 +214,7 @@ ___
 
 ___
 
-### addEditorCharacterDeltaOffset <Score text="addEditorCharacterDeltaOffset" /> 
+### addEditorCharacterDeltaOffset  
 
 ▸ **addEditorCharacterDeltaOffset**(`Delta`, `Scale`): `void` <Badge type="tip" text="other" />
 
@@ -233,7 +233,7 @@ ___
 
 ___
 
-### addEditorCharacterPitch <Score text="addEditorCharacterPitch" /> 
+### addEditorCharacterPitch  
 
 ▸ **addEditorCharacterPitch**(`Pitch`): `void` <Badge type="tip" text="other" />
 
@@ -251,7 +251,7 @@ ___
 
 ___
 
-### addEditorCharacterYaw <Score text="addEditorCharacterYaw" /> 
+### addEditorCharacterYaw  
 
 ▸ **addEditorCharacterYaw**(`Yaw`): `void` <Badge type="tip" text="other" />
 
@@ -269,7 +269,7 @@ ___
 
 ___
 
-### attachActorToGizmo <Score text="attachActorToGizmo" /> 
+### attachActorToGizmo  
 
 ▸ **attachActorToGizmo**(`Actor`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
 
@@ -288,7 +288,7 @@ ___
 
 ___
 
-### beginActorTransformChange <Score text="beginActorTransformChange" /> 
+### beginActorTransformChange  
 
 ▸ **beginActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -306,7 +306,7 @@ ___
 
 ___
 
-### beginAttachChange <Score text="beginAttachChange" /> 
+### beginAttachChange  
 
 ▸ **beginAttachChange**(`LastActor`, `NewActor`): `void` <Badge type="tip" text="other" />
 
@@ -325,7 +325,7 @@ ___
 
 ___
 
-### beginCombineActorChange <Score text="beginCombineActorChange" /> 
+### beginCombineActorChange  
 
 ▸ **beginCombineActorChange**(): `void` <Badge type="tip" text="other" />
 
@@ -337,7 +337,7 @@ ___
 
 ___
 
-### beginDeleteActorChange <Score text="beginDeleteActorChange" /> 
+### beginDeleteActorChange  
 
 ▸ **beginDeleteActorChange**(): `void` <Badge type="tip" text="other" />
 
@@ -349,7 +349,7 @@ ___
 
 ___
 
-### beginMaterialsChange <Score text="beginMaterialsChange" /> 
+### beginMaterialsChange  
 
 ▸ **beginMaterialsChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -367,7 +367,7 @@ ___
 
 ___
 
-### beginMaterialsChangeMulti <Score text="beginMaterialsChangeMulti" /> 
+### beginMaterialsChangeMulti  
 
 ▸ **beginMaterialsChangeMulti**(`Array`): `void` <Badge type="tip" text="other" />
 
@@ -385,7 +385,7 @@ ___
 
 ___
 
-### beginMaterialsColorChange <Score text="beginMaterialsColorChange" /> 
+### beginMaterialsColorChange  
 
 ▸ **beginMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
 
@@ -404,7 +404,7 @@ ___
 
 ___
 
-### beginSpawnActorChange <Score text="beginSpawnActorChange" /> 
+### beginSpawnActorChange  
 
 ▸ **beginSpawnActorChange**(): `void` <Badge type="tip" text="other" />
 
@@ -416,7 +416,7 @@ ___
 
 ___
 
-### beginUncombinedActorChange <Score text="beginUncombinedActorChange" /> 
+### beginUncombinedActorChange  
 
 ▸ **beginUncombinedActorChange**(): `void` <Badge type="tip" text="other" />
 
@@ -428,7 +428,7 @@ ___
 
 ___
 
-### detachActorFormGizmo <Score text="detachActorFormGizmo" /> 
+### detachActorFormGizmo  
 
 ▸ **detachActorFormGizmo**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -446,7 +446,7 @@ ___
 
 ___
 
-### enableSelectActor <Score text="enableSelectActor" /> 
+### enableSelectActor  
 
 ▸ **enableSelectActor**(`IsEnable`): `void` <Badge type="tip" text="other" />
 
@@ -464,7 +464,7 @@ ___
 
 ___
 
-### endActorTransformChange <Score text="endActorTransformChange" /> 
+### endActorTransformChange  
 
 ▸ **endActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -482,7 +482,7 @@ ___
 
 ___
 
-### endCombineActorChange <Score text="endCombineActorChange" /> 
+### endCombineActorChange  
 
 ▸ **endCombineActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -500,7 +500,7 @@ ___
 
 ___
 
-### endDeleteActorChange <Score text="endDeleteActorChange" /> 
+### endDeleteActorChange  
 
 ▸ **endDeleteActorChange**(): `void` <Badge type="tip" text="other" />
 
@@ -512,7 +512,7 @@ ___
 
 ___
 
-### endMaterialsChange <Score text="endMaterialsChange" /> 
+### endMaterialsChange  
 
 ▸ **endMaterialsChange**(`Actor`, `MaterialID`): `void` <Badge type="tip" text="other" />
 
@@ -531,7 +531,7 @@ ___
 
 ___
 
-### endMaterialsChangeMulti <Score text="endMaterialsChangeMulti" /> 
+### endMaterialsChangeMulti  
 
 ▸ **endMaterialsChangeMulti**(`Array`, `MaterialID`): `void` <Badge type="tip" text="other" />
 
@@ -550,7 +550,7 @@ ___
 
 ___
 
-### endMaterialsColorChange <Score text="endMaterialsColorChange" /> 
+### endMaterialsColorChange  
 
 ▸ **endMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
 
@@ -569,7 +569,7 @@ ___
 
 ___
 
-### endMultiCombineActorChange <Score text="endMultiCombineActorChange" /> 
+### endMultiCombineActorChange  
 
 ▸ **endMultiCombineActorChange**(`Actor`, `Array`): `void` <Badge type="tip" text="other" />
 
@@ -588,7 +588,7 @@ ___
 
 ___
 
-### endSpawnActorChange <Score text="endSpawnActorChange" /> 
+### endSpawnActorChange  
 
 ▸ **endSpawnActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
@@ -606,7 +606,7 @@ ___
 
 ___
 
-### endUncombinedActorChange <Score text="endUncombinedActorChange" /> 
+### endUncombinedActorChange  
 
 ▸ **endUncombinedActorChange**(`Array`): `void` <Badge type="tip" text="other" />
 
@@ -624,7 +624,7 @@ ___
 
 ___
 
-### focusToActors <Score text="focusToActors" /> 
+### focusToActors  
 
 ▸ **focusToActors**(`Actors`): `void` <Badge type="tip" text="other" />
 
@@ -642,7 +642,7 @@ ___
 
 ___
 
-### focusToGizmo <Score text="focusToGizmo" /> 
+### focusToGizmo  
 
 ▸ **focusToGizmo**(): `void` <Badge type="tip" text="other" />
 
@@ -654,7 +654,7 @@ ___
 
 ___
 
-### isRedoEmpty <Score text="isRedoEmpty" /> 
+### isRedoEmpty  
 
 ▸ **isRedoEmpty**(): `boolean` <Badge type="tip" text="other" />
 
@@ -671,7 +671,7 @@ ___
 
 ___
 
-### isUndoEmpty <Score text="isUndoEmpty" /> 
+### isUndoEmpty  
 
 ▸ **isUndoEmpty**(): `boolean` <Badge type="tip" text="other" />
 
@@ -688,7 +688,7 @@ ___
 
 ___
 
-### onAppendChange <Score text="onAppendChange" /> 
+### onAppendChange  
 
 ▸ **onAppendChange**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -706,7 +706,7 @@ ___
 
 ___
 
-### onAttachChanged <Score text="onAttachChanged" /> 
+### onAttachChanged  
 
 ▸ **onAttachChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -724,7 +724,7 @@ ___
 
 ___
 
-### onAttachRedoChanged <Score text="onAttachRedoChanged" /> 
+### onAttachRedoChanged  
 
 ▸ **onAttachRedoChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -742,7 +742,7 @@ ___
 
 ___
 
-### onDeleteActorRedo <Score text="onDeleteActorRedo" /> 
+### onDeleteActorRedo  
 
 ▸ **onDeleteActorRedo**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -760,7 +760,7 @@ Redo删除操作代理，会返回被删除的ActorID 和 资源ID
 
 ___
 
-### onDeleteActorUndo <Score text="onDeleteActorUndo" /> 
+### onDeleteActorUndo  
 
 ▸ **onDeleteActorUndo**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -778,7 +778,7 @@ ___
 
 ___
 
-### onGizmoVisibleChanged <Score text="onGizmoVisibleChanged" /> 
+### onGizmoVisibleChanged  
 
 ▸ **onGizmoVisibleChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -796,7 +796,7 @@ ___
 
 ___
 
-### onSelectActor <Score text="onSelectActor" /> 
+### onSelectActor  
 
 ▸ **onSelectActor**(`Delegate`): `void` <Badge type="tip" text="other" />
 
@@ -814,7 +814,7 @@ ___
 
 ___
 
-### saveProject <Score text="saveProject" /> 
+### saveProject  
 
 ▸ **saveProject**(): `void` <Badge type="tip" text="other" />
 
@@ -826,7 +826,7 @@ ___
 
 ___
 
-### setAdsorbDistance <Score text="setAdsorbDistance" /> 
+### setAdsorbDistance  
 
 ▸ **setAdsorbDistance**(`InDistance`): `void` <Badge type="tip" text="other" />
 
@@ -844,7 +844,7 @@ ___
 
 ___
 
-### setGizmoActorLocation <Score text="setGizmoActorLocation" /> 
+### setGizmoActorLocation  
 
 ▸ **setGizmoActorLocation**(`NewLocation`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
 
@@ -863,7 +863,7 @@ ___
 
 ___
 
-### setGizmoActorLocationAndRotation <Score text="setGizmoActorLocationAndRotation" /> 
+### setGizmoActorLocationAndRotation  
 
 ▸ **setGizmoActorLocationAndRotation**(`NewLocation`, `NewRotation`): `void` <Badge type="tip" text="other" />
 
@@ -882,7 +882,7 @@ ___
 
 ___
 
-### setGizmoAxisColor <Score text="setGizmoAxisColor" /> 
+### setGizmoAxisColor  
 
 ▸ **setGizmoAxisColor**(`InAxis`, `InAxisColor`): `void` <Badge type="tip" text="other" />
 
@@ -901,7 +901,7 @@ ___
 
 ___
 
-### setGizmoHighlightColor <Score text="setGizmoHighlightColor" /> 
+### setGizmoHighlightColor  
 
 ▸ **setGizmoHighlightColor**(`InHighlightColor`): `void` <Badge type="tip" text="other" />
 
@@ -919,7 +919,7 @@ ___
 
 ___
 
-### setGizmoScaleOffset <Score text="setGizmoScaleOffset" /> 
+### setGizmoScaleOffset  
 
 ▸ **setGizmoScaleOffset**(`InOffset`): `void` <Badge type="tip" text="other" />
 
@@ -937,7 +937,7 @@ ___
 
 ___
 
-### setIsAdsorb <Score text="setIsAdsorb" /> 
+### setIsAdsorb  
 
 ▸ **setIsAdsorb**(`InIsAdsorb`): `void` <Badge type="tip" text="other" />
 
@@ -955,7 +955,7 @@ ___
 
 ___
 
-### showGizmoActor <Score text="showGizmoActor" /> 
+### showGizmoActor  
 
 ▸ **showGizmoActor**(`showGizmoActor`): `void` <Badge type="tip" text="other" />
 
@@ -973,7 +973,7 @@ ___
 
 ___
 
-### switchGizmoMode <Score text="switchGizmoMode" /> 
+### switchGizmoMode  
 
 ▸ **switchGizmoMode**(`GizmoMode`): `void` <Badge type="tip" text="other" />
 
@@ -991,7 +991,7 @@ ___
 
 ___
 
-### getInstance <Score text="getInstance" /> 
+### getInstance  
 
 ▸ `Static` **getInstance**(): [`EditorMode`](MobileEditor.EditorMode.md) <Badge type="tip" text="other" />
 

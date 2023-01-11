@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsSpring
 
-# PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
+# PhysicsSpring <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -45,7 +45,7 @@
 
 ## Accessors
 
-### currentLength <Score text="currentLength" /> 
+### currentLength  
 
 • `get` **currentLength**(): `number` <Badge type="tip" text="other" />
 
@@ -63,7 +63,7 @@
 
 ___
 
-### damping <Score text="damping" /> 
+### damping  
 
 • `get` **damping**(): `number`
 
@@ -92,7 +92,7 @@ ___
 
 ___
 
-### defaultLength <Score text="defaultLength" /> 
+### defaultLength  
 
 • `get` **defaultLength**(): `number` <Badge type="tip" text="other" />
 
@@ -110,7 +110,7 @@ ___
 
 ___
 
-### enable <Score text="enable" /> 
+### enable  
 
 • `get` **enable**(): `boolean`
 
@@ -138,7 +138,7 @@ ___
 
 
 
-### isLengthLimited <Score text="isLengthLimited" /> 
+### isLengthLimited  
 
 • `get` **isLengthLimited**(): `boolean`
 
@@ -166,7 +166,7 @@ ___
 
 
 
-### maxStretchLength <Score text="maxStretchLength" /> 
+### maxStretchLength  
 
 • `get` **maxStretchLength**(): `number`
 
@@ -194,7 +194,7 @@ ___
 
 
 
-### stiffness <Score text="stiffness" /> 
+### stiffness  
 
 • `get` **stiffness**(): `number`
 

@@ -1,6 +1,6 @@
 Events 
 
-# Events <Badge type="tip" text="Namespace" /> <Score text="Events" />
+# Events <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
@@ -31,7 +31,7 @@ Events
 
 ## Functions
 
-### addClientListener <Score text="addClientListener" /> 
+### addClientListener  
 
 ▸ **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -61,7 +61,7 @@ Events
 
 ___
 
-### addExitListener <Score text="addExitListener" /> 
+### addExitListener  
 
 ▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -101,7 +101,7 @@ listener.disconnect();
 
 ___
 
-### addFocusListener <Score text="addFocusListener" /> 
+### addFocusListener  
 
 ▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -141,7 +141,7 @@ listener.disconnect();
 
 ___
 
-### addLocalListener <Score text="addLocalListener" /> 
+### addLocalListener  
 
 ▸ **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -165,7 +165,7 @@ ___
 
 ___
 
-### addOnPauseListener <Score text="addOnPauseListener" /> 
+### addOnPauseListener  
 
 ▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -206,7 +206,7 @@ listener.disconnect();
 
 ___
 
-### addOnResumeListener <Score text="addOnResumeListener" /> 
+### addOnResumeListener  
 
 ▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -247,7 +247,7 @@ listener.disconnect();
 
 ___
 
-### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
+### addPlayerJoinedListener  
 
 ▸ **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -270,7 +270,7 @@ ___
 
 ___
 
-### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
+### addPlayerLeftListener  
 
 ▸ **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -293,7 +293,7 @@ ___
 
 ___
 
-### addServerListener <Score text="addServerListener" /> 
+### addServerListener  
 
 ▸ **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
@@ -323,7 +323,7 @@ ___
 
 ___
 
-### addUnfocusedListener <Score text="addUnfocusedListener" /> 
+### addUnfocusedListener  
 
 ▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
 
@@ -363,7 +363,7 @@ listener.disconnect();
 
 ___
 
-### dispatchLocal <Score text="dispatchLocal" /> 
+### dispatchLocal  
 
 ▸ **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
@@ -387,7 +387,7 @@ ___
 
 ___
 
-### dispatchToAllClient <Score text="dispatchToAllClient" /> 
+### dispatchToAllClient  
 
 ▸ **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
@@ -417,7 +417,7 @@ ___
 
 ___
 
-### dispatchToClient <Score text="dispatchToClient" /> 
+### dispatchToClient  
 
 ▸ **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
@@ -448,7 +448,7 @@ ___
 
 ___
 
-### dispatchToServer <Score text="dispatchToServer" /> 
+### dispatchToServer  
 
 ▸ **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 

@@ -1,6 +1,6 @@
 [UI](../modules/UI.UI.md) / Margin
 
-# Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
+# Margin <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -45,7 +45,7 @@
 
 ## Properties
 
-### bottom <Score text="bottom" /> 
+### bottom  
 
 • **bottom**: `number`
 
@@ -55,7 +55,7 @@
 
 ___
 
-### left <Score text="left" /> 
+### left  
 
 • **left**: `number`
 
@@ -65,7 +65,7 @@ ___
 
 ___
 
-### right <Score text="right" /> 
+### right  
 
 • **right**: `number`
 
@@ -75,7 +75,7 @@ ___
 
 ___
 
-### top <Score text="top" /> 
+### top  
 
 • **top**: `number`
 

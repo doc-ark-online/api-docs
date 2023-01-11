@@ -1,6 +1,6 @@
 [Type](../modules/Type.Type.md) / MulticastGameObjectDelegate
 
-# MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
+# MulticastGameObjectDelegate <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Methods
 
-### add <Score text="add" /> 
+### add  
 
 ▸ **add**(`func`): `void` <Badge type="tip" text="other" />
 
@@ -34,7 +34,7 @@
 
 ___
 
-### broadcast <Score text="broadcast" /> 
+### broadcast  
 
 ▸ **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
 
@@ -52,7 +52,7 @@ ___
 
 ___
 
-### remove <Score text="remove" /> 
+### remove  
 
 ▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
 

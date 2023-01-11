@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AxisType
 
-# AxisType <Badge type="tip" text="Enumeration" /> <Score text="AxisType" />
+# AxisType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### X <Score text="X" /> 
+### X  
 
 • **X** = ``0``
 
@@ -24,7 +24,7 @@ X轴
 
 ___
 
-### Y <Score text="Y" /> 
+### Y  
 
 • **Y** = ``1``
 
@@ -32,7 +32,7 @@ Y轴
 
 ___
 
-### Z <Score text="Z" /> 
+### Z  
 
 • **Z** = ``2``
 

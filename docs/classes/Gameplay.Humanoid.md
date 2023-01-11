@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Humanoid
 
-# Humanoid <Badge type="tip" text="Class" /> <Score text="Humanoid" />
+# Humanoid <Badge type="tip" text="Class" /> 
 
 **`Description`**
 
@@ -147,7 +147,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 ## Accessors
 
-### serverCalculateEnable <Score text="serverCalculateEnable" /> 
+### serverCalculateEnable  
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
 
@@ -172,7 +172,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 ___
 
-### serverMovementEnable <Score text="serverMovementEnable" /> 
+### serverMovementEnable  
 
 • `set` **serverMovementEnable**(`value`): `void` <Badge type="tip" text="other" />
 

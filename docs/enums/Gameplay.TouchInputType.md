@@ -1,6 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / TouchInputType
 
-# TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
+# TouchInputType <Badge type="tip" text="Enumeration" /> 
 
 **`Description`**
 
@@ -16,7 +16,7 @@
 
 ## Enumeration Members
 
-### TouchBegin <Score text="TouchBegin" /> 
+### TouchBegin  
 
 • **TouchBegin** = ``0``
 
@@ -24,7 +24,7 @@
 
 ___
 
-### TouchEnd <Score text="TouchEnd" /> 
+### TouchEnd  
 
 • **TouchEnd** = ``2``
 
@@ -32,7 +32,7 @@ ___
 
 ___
 
-### TouchMove <Score text="TouchMove" /> 
+### TouchMove  
 
 • **TouchMove** = ``1``
 
