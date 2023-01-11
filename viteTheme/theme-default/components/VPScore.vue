@@ -19,19 +19,16 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { ref } from 'vue'
 import { pandora, usePandoraParams } from '../composables/pandora-view'
-import { useScoreStorage } from '../composables/localstorage'
 import VPIconPraise from './icons/VPIconPraise.vue'
 import VPIconTread from './icons/VPIconTread.vue'
 const props = defineProps<{
   text: string
 }>()
 const pandoraParams = usePandoraParams()
-const key = computed(() => {
-  return `${pandoraParams.name}-${pandoraParams.type}-${props.text}`
-})
-const { status, statusChange } = useScoreStorage(key)
+// const { status, statusChange } = useScoreStorage(key)
+const status = ref()
 function treadHandler() {
   if (status.value === '踩') return
   statusChange('踩')
@@ -51,5 +48,9 @@ function praiseHandler() {
     type: pandoraParams.type,
     title: props.text
   })
+}
+
+function statusChange(s: string) {
+  status.value = s
 }
 </script>
