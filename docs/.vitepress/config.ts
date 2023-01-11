@@ -87,9 +87,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       {
         text: '020 版本',
         items: [
-          { text: '021 预发', link: '/item-1' },
-          { text: '019 版本', link: '/item-2' },
-          { text: '018 版本', link: '/item-3' }
+          { text: '021 灰度', link: '/item-1' },
         ]
       }
       // {
