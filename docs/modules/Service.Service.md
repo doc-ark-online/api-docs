@@ -2,10 +2,6 @@ Service
 
 # Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
 
-**`Description`**
-
-Account Service
-
 ## Table of contents
 
 | Enumerations |
@@ -40,9 +36,9 @@ Account Service
 | **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> ▸ (): `void`|
 | **[StringResponse](Service.Service.md#stringresponse)**: (`string` |: `string`) => `void` <br> ▸ (`dataString`): `void`|
 | **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> ▸ (`success`): `void`|
-| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> ▸ (): `void`|
-| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string` |: `string`) => `void` <br> ▸ (`dataString`): `void`|
+| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
+| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string` |: `string`) => `void` <br> 下载平台数据回调|
 
 ## Type Aliases
 
@@ -63,11 +59,6 @@ Account Service
 | Name | Type |
 | :------ | :------ |
 | `success` | `boolean` |
-
-##### Returns
-
-`void`
-
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
@@ -81,11 +72,6 @@ ___
 **`Description`**
 
 下载角色形象的回调，无参数
-
-##### Returns
-
-`void`
-
 ___
 
 ### MGSEvent <Score text="MGSEvent" /> 
@@ -105,11 +91,6 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `jsonData` | `string` |
-
-##### Returns
-
-`void`
-
 ___
 
 ### MGSResponse <Score text="MGSResponse" /> 
@@ -131,10 +112,6 @@ ___
 | `isSuccess` | `boolean` |
 | `jsonData` | `string` |
 
-##### Returns
-
-`void`
-
 ___
 
 ### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
@@ -154,10 +131,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `amount` | `number` |  新的余额 |
-
-##### Returns
-
-`void`
 
 ___
 
@@ -183,10 +156,6 @@ ___
 | `amount` | `number` |  数量 |
 | `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
 
-##### Returns
-
-`void`
-
 ___
 
 ### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
@@ -207,10 +176,6 @@ ___
 | :------ | :------ | :------ |
 | `newState` | `number` |  新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
 
-##### Returns
-
-`void`
-
 ___
 
 ### OnViewRefreshed <Score text="OnViewRefreshed" /> 
@@ -224,10 +189,6 @@ ___
 **`Description`**
 
 233中MW窗口刷新的消息格式
-
-##### Returns
-
-`void`
 
 ___
 
@@ -248,10 +209,6 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `dataString` | `string` |
-
-##### Returns
-
-`void`
 
 ___
 
@@ -290,10 +247,6 @@ ___
 | :------ | :------ | :------ |
 | `success` | `boolean` |  上传是否成功 |
 
-##### Returns
-
-`void`
-
 ___
 
 ### VoidResponse <Score text="VoidResponse" /> 
@@ -307,10 +260,6 @@ ___
 **`Description`**
 
 返回无参数的回调
-
-##### Returns
-
-`void`
 
 ___
 
@@ -331,7 +280,3 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `dataString` | `string` |
-
-##### Returns
-
-`void`
