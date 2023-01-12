@@ -2,8 +2,6 @@
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
-**`Description`**
-
 动画类
 
 ::: warning Precautions
@@ -11,8 +9,6 @@
 请不要直接使用new创建
 
 :::
-
-**`Example`**
 
 使用示例:创建方式
 ```ts
@@ -45,11 +41,9 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 
 • `get` **isPlaying**(): `boolean`
 
-**`Description`**
-
 是否正在播放
 
-**`Example`**
+
 
 使用示例:判断是否该动画对象是否播放中
 ```ts
@@ -70,11 +64,8 @@ ___
 
 • `get` **length**(): `number`
 
-**`Description`**
-
 动画长度,单位为秒,只读
 
-**`Example`**
 
 使用示例:获取对象时长
 ```ts
@@ -92,11 +83,7 @@ ___
 
 • `get` **loop**(): `number`
 
-**`Description`**
-
 Auto模式表示循环播放次数，Custom模式表示是否循环  非1:是，1:否
-
-**`Example`**
 
 使用示例:获取循环次数
 ```ts
