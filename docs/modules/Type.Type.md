@@ -37,4 +37,4 @@ Type
 | Interfaces |
 | :-----|
 | [DelegateInterface](../interfaces/Type.DelegateInterface.md) <br> 委托接口|
-- [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md)
+| [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md)|

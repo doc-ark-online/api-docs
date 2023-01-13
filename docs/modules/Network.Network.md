@@ -56,10 +56,6 @@ Http请求的回调消息格式
 | `content` | `string` |  消息内容 |
 | `responseCode` | `number` |  状态码 |
 
-##### Returns
-
-`void`
-
 ___
 
 ### TransactionType <Score text="TransactionType" /> 
@@ -79,9 +75,6 @@ ___
 | `isSuccess` | `boolean` |  通信结果 |
 | `content` | `string` |  消息内容 |
 
-##### Returns
-
-`void`
 
 ## Functions
 
