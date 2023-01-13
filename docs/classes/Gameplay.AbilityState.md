@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
 
-# AbilityState <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
 技能状态
 
@@ -31,11 +29,9 @@
 
 ## Accessors
 
-### animation  
+### animation <Score text="animation" /> 
 
 • `get` **animation**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取动画资源
 
@@ -47,8 +43,6 @@
 资源GUID
 
 • `set` **animation**(`AnimGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置动画资源
 
@@ -62,11 +56,9 @@
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取释放状态当前执行时间
 
@@ -79,11 +71,9 @@ ___
 
 ___
 
-### executeTime  
+### executeTime <Score text="executeTime" /> 
 
 • `get` **executeTime**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取释放状态可执行总时长时间
 
@@ -101,8 +91,6 @@ ___
 获取释放状态可执行总时长时间
 
 • `set` **executeTime**(`Time`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置释放状态可执行总时长时间
 
@@ -122,11 +110,9 @@ ___
 
 ___
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取释放状态是否可循环isLoop
 
@@ -138,8 +124,6 @@ ___
 true或false
 
 • `set` **loop**(`LoopState`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置释放状态是否循环
 
@@ -153,11 +137,9 @@ true或false
 
 ## Methods
 
-### addControlAbility  
+### addControlAbility <Score text="addControlAbility" /> 
 
 ▸ **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加释放状态的控制性
 
@@ -171,11 +153,9 @@ true或false
 
 ___
 
-### cancelControlAbility  
+### cancelControlAbility <Score text="cancelControlAbility" /> 
 
 ▸ **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 取消释放状态的控制性
 
@@ -189,11 +169,9 @@ ___
 
 ___
 
-### enableJump  
+### enableJump <Score text="enableJump" /> 
 
 ▸ **enableJump**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象是否可跳跃
 
@@ -206,11 +184,9 @@ true或false
 
 ___
 
-### enableMove  
+### enableMove <Score text="enableMove" /> 
 
 ▸ **enableMove**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象是否可移动
 
@@ -223,11 +199,9 @@ true或false
 
 ___
 
-### enableTurn  
+### enableTurn <Score text="enableTurn" /> 
 
 ▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象是否可转向
 

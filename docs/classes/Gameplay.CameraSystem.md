@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CameraSystem
 
-# CameraSystem <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 
 摄像机系统
 
@@ -82,31 +80,25 @@
 
 ## Properties
 
-### enableFadeEffect  
+### enableFadeEffect <Score text="enableFadeEffect" /> 
 
 • **enableFadeEffect**: `boolean`
-
-**`Description`**
 
 设置是否开启透明效果
 
 ___
 
-### occludeCameraActor  
+### occludeCameraActor <Score text="occludeCameraActor" /> 
 
 • **occludeCameraActor**: `any`
-
-**`Description`**
 
 摄像机与角色之间的物体
 
 ## Accessors
 
-### cameraCollisionEnable  
+### cameraCollisionEnable <Score text="cameraCollisionEnable" /> 
 
 • `get` **cameraCollisionEnable**(): `boolean`
-
-**`Description`**
 
 获取是否开启摄像机碰撞
 
@@ -115,8 +107,6 @@ ___
 `boolean`
 
 • `set` **cameraCollisionEnable**(`bEnableCameraCollision`): `void`
-
-**`Description`**
 
 设置是否开启摄像机碰撞
 
@@ -129,11 +119,9 @@ ___
 
 ___
 
-### cameraDownLimitAngle  
+### cameraDownLimitAngle <Score text="cameraDownLimitAngle" /> 
 
 • `get` **cameraDownLimitAngle**(): `number`
-
-**`Description`**
 
 获取摄像机向下角度限制
 
@@ -142,8 +130,6 @@ ___
 `number`
 
 • `set` **cameraDownLimitAngle**(`newDownLimitAngle`): `void`
-
-**`Description`**
 
 设置摄像机向下角度限制
 
@@ -156,11 +142,9 @@ ___
 
 ___
 
-### cameraFOV  
+### cameraFOV <Score text="cameraFOV" /> 
 
 • `get` **cameraFOV**(): `number`
-
-**`Description`**
 
 获取当前摄像机FOV
 
@@ -169,8 +153,6 @@ ___
 `number`
 
 • `set` **cameraFOV**(`fovNum`): `void`
-
-**`Description`**
 
 设置当前摄像机FOV
 
@@ -183,11 +165,9 @@ ___
 
 ___
 
-### cameraFocusEnable  
+### cameraFocusEnable <Score text="cameraFocusEnable" /> 
 
 • `get` **cameraFocusEnable**(): `boolean`
-
-**`Description`**
 
 获取是否开启摄像机聚焦
 
@@ -196,8 +176,6 @@ ___
 `boolean`
 
 • `set` **cameraFocusEnable**(`canCameraFocus`): `void`
-
-**`Description`**
 
 设置是否开启摄像机聚焦
 
@@ -210,11 +188,9 @@ ___
 
 ___
 
-### cameraLocationLagEnable  
+### cameraLocationLagEnable <Score text="cameraLocationLagEnable" /> 
 
 • `get` **cameraLocationLagEnable**(): `boolean`
-
-**`Description`**
 
 获取当前是否开启摄像机位置延迟
 
@@ -223,8 +199,6 @@ ___
 `boolean`
 
 • `set` **cameraLocationLagEnable**(`bEnableCameraLocationLag`): `void`
-
-**`Description`**
 
 设置当前是否开启摄像机位置延迟
 
@@ -237,11 +211,9 @@ ___
 
 ___
 
-### cameraLocationLagSpeed  
+### cameraLocationLagSpeed <Score text="cameraLocationLagSpeed" /> 
 
 • `get` **cameraLocationLagSpeed**(): `number`
-
-**`Description`**
 
 获取当前摄像机位置延迟速度
 
@@ -250,8 +222,6 @@ ___
 `number`
 
 • `set` **cameraLocationLagSpeed**(`newCameraLocationLagSpeed`): `void`
-
-**`Description`**
 
 设置当前摄像机位置延迟速度
 
@@ -264,11 +234,9 @@ ___
 
 ___
 
-### cameraLocationMode  
+### cameraLocationMode <Score text="cameraLocationMode" /> 
 
 • `get` **cameraLocationMode**(): [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md)
-
-**`Description`**
 
 获取摄像机位置模式
 
@@ -277,8 +245,6 @@ ___
 [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md)
 
 • `set` **cameraLocationMode**(`newCameraLocationMode`): `void`
-
-**`Description`**
 
 设置摄像机位置模式
 
@@ -291,11 +257,9 @@ ___
 
 ___
 
-### cameraProjectionMode  
+### cameraProjectionMode <Score text="cameraProjectionMode" /> 
 
 • `get` **cameraProjectionMode**(): [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md)
-
-**`Description`**
 
 获取当前摄像机投影模式
 
@@ -304,8 +268,6 @@ ___
 [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md)
 
 • `set` **cameraProjectionMode**(`newCameraProjectionMode`): `void`
-
-**`Description`**
 
 设置当前摄像机投影模式
 
@@ -318,11 +280,9 @@ ___
 
 ___
 
-### cameraRelativeTransform  
+### cameraRelativeTransform <Score text="cameraRelativeTransform" /> 
 
 • `get` **cameraRelativeTransform**(): [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 获取当前摄像机相对Transform
 
@@ -331,8 +291,6 @@ ___
 [`Transform`](Type.Transform.md)
 
 • `set` **cameraRelativeTransform**(`newTransform`): `void`
-
-**`Description`**
 
 设置当前摄像机相对Transform
 
@@ -345,11 +303,9 @@ ___
 
 ___
 
-### cameraRotationLagEnable  
+### cameraRotationLagEnable <Score text="cameraRotationLagEnable" /> 
 
 • `get` **cameraRotationLagEnable**(): `boolean`
-
-**`Description`**
 
 获取当前是否开启摄像机旋转延迟
 
@@ -358,8 +314,6 @@ ___
 `boolean`
 
 • `set` **cameraRotationLagEnable**(`bEnableCameraRotationLag`): `void`
-
-**`Description`**
 
 设置当前是否开启摄像机旋转延迟
 
@@ -372,11 +326,9 @@ ___
 
 ___
 
-### cameraRotationLagSpeed  
+### cameraRotationLagSpeed <Score text="cameraRotationLagSpeed" /> 
 
 • `get` **cameraRotationLagSpeed**(): `number`
-
-**`Description`**
 
 获取当前摄像机旋转延迟速度
 
@@ -385,8 +337,6 @@ ___
 `number`
 
 • `set` **cameraRotationLagSpeed**(`newCameraRotationLagSpeed`): `void`
-
-**`Description`**
 
 设置当前摄像机旋转延迟速度
 
@@ -399,11 +349,9 @@ ___
 
 ___
 
-### cameraRotationMode  
+### cameraRotationMode <Score text="cameraRotationMode" /> 
 
 • `get` **cameraRotationMode**(): [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md)
-
-**`Description`**
 
 获取摄像机旋转模式
 
@@ -412,8 +360,6 @@ ___
 [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md)
 
 • `set` **cameraRotationMode**(`newCameraRotationMode`): `void`
-
-**`Description`**
 
 设置摄像机旋转模式
 
@@ -426,11 +372,9 @@ ___
 
 ___
 
-### cameraSystemRelativeTransform  
+### cameraSystemRelativeTransform <Score text="cameraSystemRelativeTransform" /> 
 
 • `get` **cameraSystemRelativeTransform**(): [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 获取当前摄像机系统相对Transform,即弹簧臂的相对transform，cameraSystemRelativeTransform.location是弹簧臂挂点的相对位置
 
@@ -439,8 +383,6 @@ ___
 [`Transform`](Type.Transform.md)
 
 • `set` **cameraSystemRelativeTransform**(`newTransform`): `void`
-
-**`Description`**
 
 设置当前摄像机系统相对Transform,即弹簧臂的相对transform，cameraSystemRelativeTransform.location是弹簧臂挂点的相对位置
 
@@ -453,11 +395,9 @@ ___
 
 ___
 
-### cameraSystemWorldTransform  
+### cameraSystemWorldTransform <Score text="cameraSystemWorldTransform" /> 
 
 • `get` **cameraSystemWorldTransform**(): [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 获取当前摄像机系统世界Transform,即弹簧臂的世界transform
 
@@ -466,8 +406,6 @@ ___
 [`Transform`](Type.Transform.md)
 
 • `set` **cameraSystemWorldTransform**(`newTransform`): `void`
-
-**`Description`**
 
 设置当前摄像机系统世界Transform,即弹簧臂的世界transform
 
@@ -480,11 +418,9 @@ ___
 
 ___
 
-### cameraUpLimitAngle  
+### cameraUpLimitAngle <Score text="cameraUpLimitAngle" /> 
 
 • `get` **cameraUpLimitAngle**(): `number`
-
-**`Description`**
 
 获取摄像机向上角度限制
 
@@ -493,8 +429,6 @@ ___
 `number`
 
 • `set` **cameraUpLimitAngle**(`newUpLimitAngle`): `void`
-
-**`Description`**
 
 设置摄像机向上角度限制
 
@@ -507,11 +441,9 @@ ___
 
 ___
 
-### cameraWorldTransform  
+### cameraWorldTransform <Score text="cameraWorldTransform" /> 
 
 • `get` **cameraWorldTransform**(): [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 获取当前摄像机世界Transform
 
@@ -520,8 +452,6 @@ ___
 [`Transform`](Type.Transform.md)
 
 • `set` **cameraWorldTransform**(`newTransform`): `void`
-
-**`Description`**
 
 设置当前摄像机世界Transform
 
@@ -534,11 +464,9 @@ ___
 
 ___
 
-### enableMovementCollisionDetection  
+### enableMovementCollisionDetection <Score text="enableMovementCollisionDetection" /> 
 
 • `get` **enableMovementCollisionDetection**(): `boolean`
-
-**`Description`**
 
 获取是否开启运动碰撞检测,启用后大于最小增量的位置改变会使摄像机忽视碰撞,默认启用
 
@@ -547,8 +475,6 @@ ___
 `boolean`
 
 • `set` **enableMovementCollisionDetection**(`bIsEnableMovementCollision`): `void`
-
-**`Description`**
 
 设置是否开启运动碰撞检测,启用后大于最小增量的位置改变会使摄像机忽视碰撞,默认启用
 
@@ -561,11 +487,9 @@ ___
 
 ___
 
-### fadeEffectValue  
+### fadeEffectValue <Score text="fadeEffectValue" /> 
 
 • `get` **fadeEffectValue**(): `number`
-
-**`Description`**
 
 获取透明效果的透明度
 
@@ -574,8 +498,6 @@ ___
 `number`
 
 • `set` **fadeEffectValue**(`newFadeEffectValue`): `void`
-
-**`Description`**
 
 设置透明效果的透明度
 
@@ -588,11 +510,9 @@ ___
 
 ___
 
-### fixedCameraZAxis  
+### fixedCameraZAxis <Score text="fixedCameraZAxis" /> 
 
 • `get` **fixedCameraZAxis**(): `boolean`
-
-**`Description`**
 
 获取是否固定摄像机Z轴
 
@@ -601,8 +521,6 @@ ___
 `boolean`
 
 • `set` **fixedCameraZAxis**(`bIsFixedZAxis`): `void`
-
-**`Description`**
 
 设置是否固定摄像机Z轴
 
@@ -615,11 +533,9 @@ ___
 
 ___
 
-### followTargetEnable  
+### followTargetEnable <Score text="followTargetEnable" /> 
 
 • `get` **followTargetEnable**(): `boolean`
-
-**`Description`**
 
 获取是否开启跟随目标功能
 
@@ -628,8 +544,6 @@ ___
 `boolean`
 
 • `set` **followTargetEnable**(`bIsEnableFollowTarget`): `void`
-
-**`Description`**
 
 设置是否开启跟随目标功能
 
@@ -642,11 +556,9 @@ ___
 
 ___
 
-### followTargetInterpSpeed  
+### followTargetInterpSpeed <Score text="followTargetInterpSpeed" /> 
 
 • `get` **followTargetInterpSpeed**(): `number`
-
-**`Description`**
 
 获取跟随目标时的插值速度
 
@@ -655,8 +567,6 @@ ___
 `number`
 
 • `set` **followTargetInterpSpeed**(`newInterpSpeed`): `void`
-
-**`Description`**
 
 设置跟随目标时的插值速度
 
@@ -669,11 +579,9 @@ ___
 
 ___
 
-### lockTargetOffset  
+### lockTargetOffset <Score text="lockTargetOffset" /> 
 
 • `get` **lockTargetOffset**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取锁定目标的偏移
 
@@ -682,8 +590,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **lockTargetOffset**(`newLockTargetOffset`): `void`
-
-**`Description`**
 
 设置锁定目标的偏移
 
@@ -696,11 +602,9 @@ ___
 
 ___
 
-### movementCollisionDuration  
+### movementCollisionDuration <Score text="movementCollisionDuration" /> 
 
 • `get` **movementCollisionDuration**(): `number`
-
-**`Description`**
 
 获取停止运动后运动碰撞的持续时间
 
@@ -709,8 +613,6 @@ ___
 `number`
 
 • `set` **movementCollisionDuration**(`Delta`): `void`
-
-**`Description`**
 
 设置停止运动后运动碰撞的持续时间
 
@@ -723,11 +625,9 @@ ___
 
 ___
 
-### movementCollisionMinLocationDelta  
+### movementCollisionMinLocationDelta <Score text="movementCollisionMinLocationDelta" /> 
 
 • `get` **movementCollisionMinLocationDelta**(): `number`
-
-**`Description`**
 
 获取启用运动碰撞的最小位置增量
 
@@ -736,8 +636,6 @@ ___
 `number`
 
 • `set` **movementCollisionMinLocationDelta**(`Delta`): `void`
-
-**`Description`**
 
 设置启用运动碰撞的最小位置增量
 
@@ -750,11 +648,9 @@ ___
 
 ___
 
-### occlusionDetectionEnable  
+### occlusionDetectionEnable <Score text="occlusionDetectionEnable" /> 
 
 • `get` **occlusionDetectionEnable**(): `boolean`
-
-**`Description`**
 
 获取是否开启透明效果
 
@@ -763,8 +659,6 @@ ___
 `boolean`
 
 • `set` **occlusionDetectionEnable**(`bEnableOcclusionDetection`): `void`
-
-**`Description`**
 
 设置是否开启透明效果
 
@@ -777,11 +671,9 @@ ___
 
 ___
 
-### orthoFarClipPlane  
+### orthoFarClipPlane <Score text="orthoFarClipPlane" /> 
 
 • `get` **orthoFarClipPlane**(): `number`
-
-**`Description`**
 
 获取正交视图的远平面距离(以世界单位表示)
 
@@ -790,8 +682,6 @@ ___
 `number`
 
 • `set` **orthoFarClipPlane**(`newOrthoFarClipPlane`): `void`
-
-**`Description`**
 
 设置正交视图的远平面距离(以世界单位表示)
 
@@ -804,11 +694,9 @@ ___
 
 ___
 
-### orthoNearClipPlane  
+### orthoNearClipPlane <Score text="orthoNearClipPlane" /> 
 
 • `get` **orthoNearClipPlane**(): `number`
-
-**`Description`**
 
 获取正交视图的近平面距离(以世界单位表示)
 
@@ -817,8 +705,6 @@ ___
 `number`
 
 • `set` **orthoNearClipPlane**(`newOrthoNearClipPlane`): `void`
-
-**`Description`**
 
 设置正交视图的近平面距离(以世界单位表示)
 
@@ -831,11 +717,9 @@ ___
 
 ___
 
-### orthoWidth  
+### orthoWidth <Score text="orthoWidth" /> 
 
 • `get` **orthoWidth**(): `number`
-
-**`Description`**
 
 获取正交宽度
 
@@ -844,8 +728,6 @@ ___
 `number`
 
 • `set` **orthoWidth**(`newOrthoWidth`): `void`
-
-**`Description`**
 
 设置正交宽度
 
@@ -858,11 +740,9 @@ ___
 
 ___
 
-### raiseCameraEnable  
+### raiseCameraEnable <Score text="raiseCameraEnable" /> 
 
 • `get` **raiseCameraEnable**(): `boolean`
-
-**`Description`**
 
 获取是否开启抬高摄像机效果
 
@@ -871,8 +751,6 @@ ___
 `boolean`
 
 • `set` **raiseCameraEnable**(`bIsEnableRaiseCamera`): `void`
-
-**`Description`**
 
 设置是否开启抬高摄像机效果
 
@@ -885,11 +763,9 @@ ___
 
 ___
 
-### raiseCameraHeight  
+### raiseCameraHeight <Score text="raiseCameraHeight" /> 
 
 • `get` **raiseCameraHeight**(): `number`
-
-**`Description`**
 
 获取摄像机抬高高度
 
@@ -898,8 +774,6 @@ ___
 `number`
 
 • `set` **raiseCameraHeight**(`newRaiseCameraHeight`): `void`
-
-**`Description`**
 
 设置摄像机抬高高度
 
@@ -912,11 +786,9 @@ ___
 
 ___
 
-### realEffectEnable  
+### realEffectEnable <Score text="realEffectEnable" /> 
 
 • `set` **realEffectEnable**(`value`): `void`
-
-**`Description`**
 
 启用/禁用真实效果
 
@@ -935,15 +807,13 @@ ___
 
 ___
 
-### slotOffset  
+### slotOffset <Score text="slotOffset" /> 
 
 • `get` **slotOffset**(): [`Vector`](Type.Vector.md)
 
 **`Deprecated`**
 
 since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
-
-**`Description`**
 
 获取摄像机位置偏移
 
@@ -957,8 +827,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
 since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
-**`Description`**
-
 设置摄像机位置偏移
 
 #### Parameters
@@ -970,11 +838,9 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
 ___
 
-### targetArmLength  
+### targetArmLength <Score text="targetArmLength" /> 
 
 • `get` **targetArmLength**(): `number`
-
-**`Description`**
 
 获取当前摄像机弹簧臂长度
 
@@ -983,8 +849,6 @@ ___
 `number`
 
 • `set` **targetArmLength**(`newTargetArmLength`): `void`
-
-**`Description`**
 
 设置当前摄像机弹簧臂长度
 
@@ -997,15 +861,13 @@ ___
 
 ___
 
-### targetOffset  
+### targetOffset <Score text="targetOffset" /> 
 
 • `get` **targetOffset**(): [`Vector`](Type.Vector.md)
 
 **`Deprecated`**
 
 since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform
-
-**`Description`**
 
 获取挂点位置偏移
 
@@ -1019,8 +881,6 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform
 
 since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
 
-**`Description`**
-
 设置挂点位置偏移
 
 #### Parameters
@@ -1032,11 +892,9 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
 
 ___
 
-### transform  
+### transform <Score text="transform" /> 
 
 • `get` **transform**(): [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 摄像机的transform
 
@@ -1046,11 +904,9 @@ ___
 
 ___
 
-### usePawnControlRotation  
+### usePawnControlRotation <Score text="usePawnControlRotation" /> 
 
 • `get` **usePawnControlRotation**(): `boolean`
-
-**`Description`**
 
 获取当前是否使用控制器控制摄像机旋转
 
@@ -1059,8 +915,6 @@ ___
 `boolean`
 
 • `set` **usePawnControlRotation**(`bUsePawnControlRotation`): `void`
-
-**`Description`**
 
 设置当前是否使用控制器控制摄像机旋转
 
@@ -1073,11 +927,9 @@ ___
 
 ## Methods
 
-### applySettings  
+### applySettings <Score text="applySettings" /> 
 
 ▸ **applySettings**(`CameraSetting`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 应用摄像机系统数据
 
@@ -1091,11 +943,9 @@ ___
 
 ___
 
-### attachCameraToCharacterCapsuleSlot  
+### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
 
 ▸ **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 附加摄像机到角色的胶囊体插槽上
 
@@ -1103,11 +953,9 @@ ___
 
 ___
 
-### attachCameraToCharacterMeshSlot  
+### attachCameraToCharacterMeshSlot <Score text="attachCameraToCharacterMeshSlot" /> 
 
 ▸ **attachCameraToCharacterMeshSlot**(`slot`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 附加摄像机到角色的模型插槽上
 
@@ -1121,11 +969,9 @@ ___
 
 ___
 
-### attachToGameObject  
+### attachToGameObject <Score text="attachToGameObject" /> 
 
 ▸ **attachToGameObject**(`target`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 相机附加至目标物体
 
@@ -1139,11 +985,9 @@ ___
 
 ___
 
-### cameraFocusing  
+### cameraFocusing <Score text="cameraFocusing" /> 
 
 ▸ **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 摄像机聚焦
 
@@ -1159,11 +1003,9 @@ ___
 
 ___
 
-### cameraLockTarget  
+### cameraLockTarget <Score text="cameraLockTarget" /> 
 
 ▸ **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 相机锁定目标(相比setCameraLockTarget多了更多复杂的设置)
 
@@ -1183,11 +1025,9 @@ ___
 
 ___
 
-### cancelCameraFollowTarget  
+### cancelCameraFollowTarget <Score text="cancelCameraFollowTarget" /> 
 
 ▸ **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 取消跟随物体
 
@@ -1195,11 +1035,9 @@ ___
 
 ___
 
-### cancelCameraLockTarget  
+### cancelCameraLockTarget <Score text="cancelCameraLockTarget" /> 
 
 ▸ **cancelCameraLockTarget**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 取消锁定物体
 
@@ -1207,11 +1045,9 @@ ___
 
 ___
 
-### getCurrentSettings  
+### getCurrentSettings <Score text="getCurrentSettings" /> 
 
 ▸ **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前的摄像机系统数据
 
@@ -1224,11 +1060,9 @@ ___
 
 ___
 
-### getDefaultCameraShakeData  
+### getDefaultCameraShakeData <Score text="getDefaultCameraShakeData" /> 
 
 ▸ **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取默认的摄像机震动数据
 
@@ -1241,11 +1075,9 @@ ___
 
 ___
 
-### moveByPath  
+### moveByPath <Score text="moveByPath" /> 
 
 ▸ **moveByPath**(`path`, `completeCallback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 镜头移动
 
@@ -1260,11 +1092,9 @@ ___
 
 ___
 
-### resetOverrideCameraRotation  
+### resetOverrideCameraRotation <Score text="resetOverrideCameraRotation" /> 
 
 ▸ **resetOverrideCameraRotation**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 取消旋转覆盖
 
@@ -1272,11 +1102,9 @@ ___
 
 ___
 
-### screenShock  
+### screenShock <Score text="screenShock" /> 
 
 ▸ **screenShock**(`maxRange?`, `decay?`, `speed?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 震屏
 
@@ -1292,11 +1120,9 @@ ___
 
 ___
 
-### setCameraFollowTarget  
+### setCameraFollowTarget <Score text="setCameraFollowTarget" /> 
 
 ▸ **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 相机跟随物体
 
@@ -1310,11 +1136,9 @@ ___
 
 ___
 
-### setCameraLockTarget  
+### setCameraLockTarget <Score text="setCameraLockTarget" /> 
 
 ▸ **setCameraLockTarget**(`target`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 相机锁定物体
 
@@ -1328,11 +1152,9 @@ ___
 
 ___
 
-### setOverrideCameraRotation  
+### setOverrideCameraRotation <Score text="setOverrideCameraRotation" /> 
 
 ▸ **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 覆盖摄像机旋转，从控制器传入值处截断
 
@@ -1347,11 +1169,9 @@ ___
 
 ___
 
-### startCameraShake  
+### startCameraShake <Score text="startCameraShake" /> 
 
 ▸ **startCameraShake**(`cameraShakeData`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开始摄像机震动
 
@@ -1371,11 +1191,9 @@ ___
 
 ___
 
-### stopCameraShake  
+### stopCameraShake <Score text="stopCameraShake" /> 
 
 ▸ **stopCameraShake**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止摄像机震动
 
@@ -1383,11 +1201,9 @@ ___
 
 ___
 
-### switchCameraMode  
+### switchCameraMode <Score text="switchCameraMode" /> 
 
 ▸ **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)
 

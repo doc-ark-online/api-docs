@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Optimization
 
-# Optimization <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
 
 控制一些优化项的开启关闭
 
@@ -14,11 +12,9 @@
 
 ## Methods
 
-### enableOptimization  
+### enableOptimization <Score text="enableOptimization" /> 
 
 ▸ `Static` **enableOptimization**(`isEnable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开启或关闭角色优化(角色裁剪、动画更新率降低等)
 

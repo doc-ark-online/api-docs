@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / MulticastDelegateInterface
 
-# MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" /> 
-
-**`Description`**
+# MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="MulticastDelegateInterface<T\>" />
 
 多播委托接口
 
@@ -29,11 +27,9 @@
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定代理函数
 
@@ -47,11 +43,9 @@
 
 ___
 
-### broadcast  
+### broadcast <Score text="broadcast" /> 
 
 ▸ **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 广播通知代理函数
 
@@ -65,11 +59,9 @@ ___
 
 ___
 
-### remove  
+### remove <Score text="remove" /> 
 
 ▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 删除代理函数
 

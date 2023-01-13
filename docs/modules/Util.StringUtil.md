@@ -1,8 +1,6 @@
 [Util](Util.Util.md) / StringUtil
 
-# StringUtil <Badge type="tip" text="Namespace" /> 
-
-**`Description`**
+# StringUtil <Badge type="tip" text="Namespace" /> <Score text="StringUtil" />
 
 字符串工具
 
@@ -17,11 +15,9 @@
 
 ## Functions
 
-### clipboardCopy  
+### clipboardCopy <Score text="clipboardCopy" /> 
 
 ▸ **clipboardCopy**(`text`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 文本复制，将字符串复制到剪切板
 
@@ -35,11 +31,9 @@
 
 ___
 
-### clipboardPaste  
+### clipboardPaste <Score text="clipboardPaste" /> 
 
 ▸ **clipboardPaste**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 文本粘贴，获取剪切板的文本
 
@@ -52,16 +46,12 @@ ___
 
 ___
 
-### format  
+### format <Score text="format" /> 
 
 ▸ **format**(`str`, `...param`): `string`
 
-**`Description`**
-
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
-
-**`Example`**
 
 使用示例:格式化字符串用法
 ```ts
@@ -84,11 +74,9 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!"); 
 
 ___
 
-### isEmpty  
+### isEmpty <Score text="isEmpty" /> 
 
 ▸ **isEmpty**(`str`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断字符串是否为空(null或"")
 

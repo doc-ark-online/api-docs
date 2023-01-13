@@ -1,10 +1,8 @@
 [UI](../modules/UI.UI.md) / UIManager
 
-# UIManager <Badge type="tip" text="Class" /> 
+# UIManager <Badge type="tip" text="Class" /> <Score text="UIManager" />
 
 **`Instance`**
-
-**`Description`**
 
 UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
@@ -51,51 +49,41 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 ## Properties
 
-### allPanels  
+### allPanels <Score text="allPanels" /> 
 
 • `Protected` **allPanels**: [`UIBehavior`](UI.UIBehavior.md)[]
-
-**`Description`**
 
 所有创建过的Panel
 
 ___
 
-### createPanelMap  
+### createPanelMap <Score text="createPanelMap" /> 
 
 • `Protected` **createPanelMap**: `Map`<`string`, [`UIBehavior`](UI.UIBehavior.md)[]\>
-
-**`Description`**
 
 所有创建过的管理好的 panels
 
 ___
 
-### logUIInfo  
+### logUIInfo <Score text="logUIInfo" /> 
 
 • `Protected` **logUIInfo**: `boolean`
-
-**`Description`**
 
 是否dump GameUI Log 信息
 
 ___
 
-### uniquePanel  
+### uniquePanel <Score text="uniquePanel" /> 
 
 • `Protected` **uniquePanel**: [`UIBehavior`](UI.UIBehavior.md)
-
-**`Description`**
 
 独占Panel
 
 ## Accessors
 
-### canvas  
+### canvas <Score text="canvas" /> 
 
 • `get` **canvas**(): [`Canvas`](UI.Canvas.md)
-
-**`Description`**
 
 全局所有UI的根canvas <Badge type="tip" text="other" />
 
@@ -108,11 +96,9 @@ ___
 
 ___
 
-### uiLogInfoEnable  
+### uiLogInfoEnable <Score text="uiLogInfoEnable" /> 
 
 • `get` **uiLogInfoEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取允许定时输出UIManager中管理到的UI的信息
 
@@ -124,8 +110,6 @@ ___
 是否允许
 
 • `set` **uiLogInfoEnable**(`enable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 允许定时输出UIManager中管理到的UI的信息
 
@@ -139,11 +123,9 @@ ___
 
 ___
 
-### instance  
+### instance <Score text="instance" /> 
 
 • `Static` `get` **instance**(): [`UIManager`](UI.UIManager.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取UIManager单例
 
@@ -156,11 +138,9 @@ ___
 
 ## Methods
 
-### addUILayerMap  
+### addUILayerMap <Score text="addUILayerMap" /> 
 
 ▸ `Protected` **addUILayerMap**(`layer`, `startZOrder`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加UI的管理层
 
@@ -175,11 +155,9 @@ ___
 
 ___
 
-### create  
+### create <Score text="create" /> 
 
 ▸ **create**<`T`\>(`PanelClass`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建一个界面
 
@@ -204,11 +182,9 @@ ___
 
 ___
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 销毁该单列，也会销毁所有的UI,需要重新创建才能管理UI
 
@@ -216,11 +192,9 @@ ___
 
 ___
 
-### destroyUI  
+### destroyUI <Score text="destroyUI" /> 
 
 ▸ **destroyUI**<`T`\>(`PanelClass`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 销毁一个界面,相当于DestroyObject
 
@@ -240,11 +214,9 @@ ___
 
 ___
 
-### dumpUIData  
+### dumpUIData <Score text="dumpUIData" /> 
 
 ▸ **dumpUIData**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 打印所有管理到的UI信息
 
@@ -252,11 +224,9 @@ ___
 
 ___
 
-### getAllUI  
+### getAllUI <Score text="getAllUI" /> 
 
 ▸ **getAllUI**<`T`\>(`PanelClass`): `T`[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据界面类获取界面的所有对象
 
@@ -281,11 +251,9 @@ ___
 
 ___
 
-### getUI  
+### getUI <Score text="getUI" /> 
 
 ▸ **getUI**<`T`\>(`PanelClass`, `bNeedNew?`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据界面类获取界面的对象
 
@@ -311,11 +279,9 @@ ___
 
 ___
 
-### getUILayer  
+### getUILayer <Score text="getUILayer" /> 
 
 ▸ **getUILayer**(`panel`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取一个UI的层级
 
@@ -334,11 +300,9 @@ UI的层级
 
 ___
 
-### hide  
+### hide <Score text="hide" /> 
 
 ▸ **hide**<`T`\>(`PanelClass`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 隐藏一个界面，只是隐藏界面设置为Collapsed
 
@@ -363,11 +327,9 @@ ___
 
 ___
 
-### hideUI  
+### hideUI <Score text="hideUI" /> 
 
 ▸ **hideUI**(`panel`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 移除一个显示的界面,只是隐藏界面设置为Collapsed
 
@@ -386,11 +348,9 @@ ___
 
 ___
 
-### init  
+### init <Score text="init" /> 
 
 ▸ `Protected` **init**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 初始化UIManger
 
@@ -398,11 +358,9 @@ ___
 
 ___
 
-### isShown  
+### isShown <Score text="isShown" /> 
 
 ▸ `Protected` **isShown**(`panel`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断界面是否处于显示状态,需要位于层类显示并且是可见的
 
@@ -422,11 +380,9 @@ ___
 
 ___
 
-### setAllMiddleAndBottomPanelVisible  
+### setAllMiddleAndBottomPanelVisible <Score text="setAllMiddleAndBottomPanelVisible" /> 
 
 ▸ **setAllMiddleAndBottomPanelVisible**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置Middle和Bottom层所有Panel的可见性
 
@@ -440,11 +396,9 @@ ___
 
 ___
 
-### show  
+### show <Score text="show" /> 
 
 ▸ **show**<`T`\>(`PanelClass`, `...params`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 显示一个界面，会把界面添加到界面上，从原有父节点移除
 
@@ -470,11 +424,9 @@ ___
 
 ___
 
-### showUI  
+### showUI <Score text="showUI" /> 
 
 ▸ **showUI**(`panel`, `layer?`, `...params`): [`UIBehavior`](UI.UIBehavior.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 显示一个界面,会把界面添加到界面上，从原有父节点移除
 
@@ -495,11 +447,9 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**<`T`\>(`ManagerClass`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取UIManager子类ManagerClass单例，如果是第一次调用会创建一个ManagerClass的单例供全局使用
 

@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / AnalyticsService
 
-# AnalyticsService <Badge type="tip" text="Class" /> 
+# AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 
 **`Instance`**
-
-**`Description`**
 
 分析服务
 
@@ -24,11 +22,9 @@
 
 ## Methods
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 分析服务全局实例
 
@@ -41,11 +37,9 @@
 
 ___
 
-### googleEventTracking  
+### googleEventTracking <Score text="googleEventTracking" /> 
 
 ▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 埋点
 
@@ -60,11 +54,9 @@ ___
 
 ___
 
-### googleInit  
+### googleInit <Score text="googleInit" /> 
 
 ▸ `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Initialize Google Analytics client
 

@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / ScrollBarDefaultLocation
 
-# ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
 滚动条默认位置
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### BottomOrRight  
+### BottomOrRight <Score text="BottomOrRight" /> 
 
 • **BottomOrRight** = ``2``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Center  
+### Center <Score text="Center" /> 
 
 • **Center** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### TopOrLeft  
+### TopOrLeft <Score text="TopOrLeft" /> 
 
 • **TopOrLeft** = ``0``
 

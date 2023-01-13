@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / MovementMode
 
-# MovementMode <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 
 角色状态
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Fly  
+### Fly <Score text="Fly" /> 
 
 • **Fly** = ``2``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Swim  
+### Swim <Score text="Swim" /> 
 
 • **Swim** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### Walk  
+### Walk <Score text="Walk" /> 
 
 • **Walk** = ``0``
 

@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / MaskType
 
-# MaskType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# MaskType <Badge type="tip" text="Enumeration" /> <Score text="MaskType" />
 
 遮罩类型
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### MTCircle  
+### MTCircle <Score text="MTCircle" /> 
 
 • **MTCircle** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### MTFanShaped  
+### MTFanShaped <Score text="MTFanShaped" /> 
 
 • **MTFanShaped** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### MTRoundRect  
+### MTRoundRect <Score text="MTRoundRect" /> 
 
 • **MTRoundRect** = ``2``
 

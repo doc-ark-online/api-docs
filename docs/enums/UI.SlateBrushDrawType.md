@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / SlateBrushDrawType
 
-# SlateBrushDrawType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# SlateBrushDrawType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushDrawType" />
 
 图片画刷绘制模式
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Border  
+### Border <Score text="Border" /> 
 
 • **Border** = ``2``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### Box  
+### Box <Score text="Box" /> 
 
 • **Box** = ``1``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### Image  
+### Image <Score text="Image" /> 
 
 • **Image** = ``3``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### NoDrawType  
+### NoDrawType <Score text="NoDrawType" /> 
 
 • **NoDrawType** = ``0``
 

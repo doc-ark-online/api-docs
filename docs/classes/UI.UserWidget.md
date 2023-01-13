@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UserWidget
 
-# UserWidget <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
 UI控件的集合,预制体UI
 
@@ -70,11 +68,9 @@ UI控件的集合,预制体UI
 
 ## Accessors
 
-### focusable  
+### focusable <Score text="focusable" /> 
 
 • `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否响应键盘焦点事件
 
@@ -87,8 +83,6 @@ UI控件的集合,预制体UI
 
 • `set` **focusable**(`isFocus`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否响应键盘焦点事件
 
 
@@ -100,11 +94,9 @@ UI控件的集合,预制体UI
 
 
 
-### rootContent  
+### rootContent <Score text="rootContent" /> 
 
 • `get` **rootContent**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取根Canvas
 
@@ -116,8 +108,6 @@ UI控件的集合,预制体UI
 返回根Canvas
 
 • `set` **rootContent**(`content`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置UI的根Canvas
 
@@ -132,11 +122,9 @@ UI控件的集合,预制体UI
 
 ## Methods
 
-### addToViewport  
+### addToViewport <Score text="addToViewport" /> 
 
 ▸ **addToViewport**(`zOrder`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加到屏幕上
 
@@ -149,11 +137,9 @@ UI控件的集合,预制体UI
 
 
 
-### findChildByPath  
+### findChildByPath <Score text="findChildByPath" /> 
 
 ▸ **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过相对路径查找节点
 
@@ -171,11 +157,9 @@ UI控件的集合,预制体UI
 返回查找节点结果
 
 
-### removeRootContent  
+### removeRootContent <Score text="removeRootContent" /> 
 
 ▸ **removeRootContent**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 移除根Canvas,会销毁根Canvas，无法再次使用
 
@@ -183,11 +167,9 @@ UI控件的集合,预制体UI
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 UserWidget 控件
 

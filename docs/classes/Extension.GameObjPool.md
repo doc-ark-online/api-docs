@@ -1,10 +1,8 @@
 [Extension](../modules/Extension.Extension.md) / GameObjPool
 
-# GameObjPool <Badge type="tip" text="Class" /> 
+# GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
 **`Instance`**
-
-**`Description`**
 
 GameObject对象池
 
@@ -26,11 +24,9 @@ GameObject对象池
 
 ## Methods
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清除对象池中该GUID对应的所有对象
 
@@ -44,11 +40,9 @@ GameObject对象池
 
 ___
 
-### despawn  
+### despawn <Score text="despawn" /> 
 
 ▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 归还一个对象
 
@@ -62,11 +56,9 @@ ___
 
 ___
 
-### destroy  
+### destroy <Score text="destroy" /> 
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 销毁对象池全局实例
 
@@ -74,11 +66,9 @@ ___
 
 ___
 
-### spawn  
+### spawn <Score text="spawn" /> 
 
 ▸ **spawn**<`T`\>(`GUID`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 生成一个对象
 
@@ -103,11 +93,9 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`GameObjPool`](Extension.GameObjPool.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象池全局实例
 

@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIFontGlyph
 
-# UIFontGlyph <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 
 字体类型
 
@@ -18,7 +16,7 @@
 
 ## Enumeration Members
 
-### Bold  
+### Bold <Score text="Bold" /> 
 
 • **Bold** = ``1``
 
@@ -26,7 +24,7 @@
 
 ___
 
-### BoldItalics  
+### BoldItalics <Score text="BoldItalics" /> 
 
 • **BoldItalics** = ``4``
 
@@ -34,7 +32,7 @@ ___
 
 ___
 
-### Italics  
+### Italics <Score text="Italics" /> 
 
 • **Italics** = ``3``
 
@@ -42,7 +40,7 @@ ___
 
 ___
 
-### Light  
+### Light <Score text="Light" /> 
 
 • **Light** = ``2``
 
@@ -50,7 +48,7 @@ ___
 
 ___
 
-### Normal  
+### Normal <Score text="Normal" /> 
 
 • **Normal** = ``0``
 

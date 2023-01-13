@@ -1,17 +1,18 @@
-[Type](../modules/Type.Type.md) / ConvertScreenResult
+[MobileEditor](../modules/MobileEditor.MobileEditor.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
 屏幕坐标转换结果
+@client/server usage:双端
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[result](Type.ConvertScreenResult.md#result)**: `boolean` <br> 如果无法确定值，则返回  false。|
-| **[screenPosition](Type.ConvertScreenResult.md#screenposition)**: [`Vector2`](Type.Vector2.md) <br> 屏幕位置|
-| **[worldDirection](Type.ConvertScreenResult.md#worlddirection)**: [`Vector`](Type.Vector.md) <br> 世界方向|
-| **[worldLocation](Type.ConvertScreenResult.md#worldlocation)**: [`Vector`](Type.Vector.md) <br> 世界坐标|
+| **[result](MobileEditor.ConvertScreenResult.md#result)**: `boolean` <br> 如果无法确定值，则返回  false。|
+| **[screenPosition](MobileEditor.ConvertScreenResult.md#screenposition)**: [`Vector2`](Type.Vector2.md) <br> 屏幕位置|
+| **[worldDirection](MobileEditor.ConvertScreenResult.md#worlddirection)**: [`Vector`](Type.Vector.md) <br> 世界方向|
+| **[worldLocation](MobileEditor.ConvertScreenResult.md#worldlocation)**: [`Vector`](Type.Vector.md) <br> 世界坐标|
 
 ## Properties
 

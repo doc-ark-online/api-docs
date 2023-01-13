@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AnimationMode
 
-# AnimationMode <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
 动画模式
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### Auto  
+### Auto <Score text="Auto" /> 
 
 • **Auto** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### Custom  
+### Custom <Score text="Custom" /> 
 
 • **Custom** = ``1``
 

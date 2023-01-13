@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2FrontHairPart
 
-# HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2FrontHairPart" />
 
 人形对象V2前发部位接口
 
@@ -29,11 +27,9 @@
 
 ## Methods
 
-### getColor  
+### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发颜色
 
@@ -51,11 +47,9 @@
 
 ___
 
-### getGradientColor  
+### getGradientColor <Score text="getGradientColor" /> 
 
 ▸ **getGradientColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发渐变染色
 
@@ -73,11 +67,9 @@ ___
 
 ___
 
-### getGradientIntensity  
+### getGradientIntensity <Score text="getGradientIntensity" /> 
 
 ▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发渐变区域
 
@@ -95,11 +87,9 @@ ___
 
 ___
 
-### getHighlightColor  
+### getHighlightColor <Score text="getHighlightColor" /> 
 
 ▸ **getHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发高光颜色
 
@@ -117,11 +107,9 @@ ___
 
 ___
 
-### getHighlightMask  
+### getHighlightMask <Score text="getHighlightMask" /> 
 
 ▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发高光形状
 
@@ -139,11 +127,9 @@ GUID
 
 ___
 
-### getMesh  
+### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取前发部位模型
 
@@ -161,11 +147,9 @@ ___
 
 ___
 
-### setColor  
+### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发颜色
 
@@ -186,11 +170,9 @@ sync = true:双端
 
 ___
 
-### setGradientColor  
+### setGradientColor <Score text="setGradientColor" /> 
 
 ▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发渐变染色
 
@@ -211,11 +193,9 @@ sync = true:双端
 
 ___
 
-### setGradientIntensity  
+### setGradientIntensity <Score text="setGradientIntensity" /> 
 
 ▸ **setGradientIntensity**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发渐变区域
 
@@ -236,11 +216,9 @@ sync = true:双端
 
 ___
 
-### setHighlightColor  
+### setHighlightColor <Score text="setHighlightColor" /> 
 
 ▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发高光颜色
 
@@ -261,11 +239,9 @@ sync = true:双端
 
 ___
 
-### setHighlightMask  
+### setHighlightMask <Score text="setHighlightMask" /> 
 
 ▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发高光形状
 
@@ -286,11 +262,9 @@ sync = true:双端
 
 ___
 
-### setMesh  
+### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置前发部位模型
 

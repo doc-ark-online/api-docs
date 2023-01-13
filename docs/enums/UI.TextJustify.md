@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / TextJustify
 
-# TextJustify <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
 
 文本排列对齐规则
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Center  
+### Center <Score text="Center" /> 
 
 • **Center** = ``1``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### Left  
+### Left <Score text="Left" /> 
 
 • **Left** = ``0``
 
@@ -35,7 +33,7 @@ ___
 
 ___
 
-### Right  
+### Right <Score text="Right" /> 
 
 • **Right** = ``2``
 

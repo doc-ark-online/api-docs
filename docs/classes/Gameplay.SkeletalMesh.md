@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkeletalMesh
 
-# SkeletalMesh <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# SkeletalMesh <Badge type="tip" text="Class" /> <Score text="SkeletalMesh" />
 
 骨骼模型逻辑对象。用于对骨骼模型进行操作。
 

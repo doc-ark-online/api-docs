@@ -1,8 +1,6 @@
 [Events](../modules/Events.Events.md) / DispatchEventResult
 
-# DispatchEventResult <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 
 事件发送的结果
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Failure  
+### Failure <Score text="Failure" /> 
 
 • **Failure** = ``1``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### FailureCountLimit  
+### FailureCountLimit <Score text="FailureCountLimit" /> 
 
 • **FailureCountLimit** = ``2``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### FailureRateLimit  
+### FailureRateLimit <Score text="FailureRateLimit" /> 
 
 • **FailureRateLimit** = ``3``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### Success  
+### Success <Score text="Success" /> 
 
 • **Success** = ``0``
 

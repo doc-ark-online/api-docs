@@ -1,6 +1,6 @@
-Events 
+Events
 
-# Events <Badge type="tip" text="Namespace" /> 
+# Events <Badge type="tip" text="Namespace" /> <Score text="Events" />
 
 ## Table of contents
 
@@ -31,11 +31,9 @@ Events
 
 ## Functions
 
-### addClientListener  
+### addClientListener <Score text="addClientListener" /> 
 
 ▸ **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 服务器监听客户端发来的事件
 
@@ -61,11 +59,9 @@ Events
 
 ___
 
-### addExitListener  
+### addExitListener <Score text="addExitListener" /> 
 
 ▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
-
-**`Description`**
 
 添加退出游戏时执行的回调函数
 
@@ -75,8 +71,6 @@ ___
 只在233悬浮球退出和PIE关闭窗口时生效。
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -101,11 +95,9 @@ listener.disconnect();
 
 ___
 
-### addFocusListener  
+### addFocusListener <Score text="addFocusListener" /> 
 
 ▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
-
-**`Description`**
 
 添加窗口聚焦时执行的回调函数
 
@@ -115,8 +107,6 @@ ___
 只在PIE模式下生效。
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -141,11 +131,9 @@ listener.disconnect();
 
 ___
 
-### addLocalListener  
+### addLocalListener <Score text="addLocalListener" /> 
 
 ▸ **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 监听本地事件
 
@@ -165,11 +153,9 @@ ___
 
 ___
 
-### addOnPauseListener  
+### addOnPauseListener <Score text="addOnPauseListener" /> 
 
 ▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
-
-**`Description`**
 
 添加OnPause开始时执行的回调函数
 
@@ -180,8 +166,6 @@ ___
              部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -206,11 +190,9 @@ listener.disconnect();
 
 ___
 
-### addOnResumeListener  
+### addOnResumeListener <Score text="addOnResumeListener" /> 
 
 ▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
-
-**`Description`**
 
 添加OnPause结束时执行的回调函数
 
@@ -221,8 +203,6 @@ ___
              部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -247,11 +227,9 @@ listener.disconnect();
 
 ___
 
-### addPlayerJoinedListener  
+### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
 
 ▸ **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 监听玩家进入room事件
 
@@ -270,11 +248,9 @@ ___
 
 ___
 
-### addPlayerLeftListener  
+### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
 
 ▸ **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 监听玩家离开room事件
 
@@ -293,11 +269,9 @@ ___
 
 ___
 
-### addServerListener  
+### addServerListener <Score text="addServerListener" /> 
 
 ▸ **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 客户端监听服务器事件
 
@@ -323,11 +297,9 @@ ___
 
 ___
 
-### addUnfocusedListener  
+### addUnfocusedListener <Score text="addUnfocusedListener" /> 
 
 ▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
-
-**`Description`**
 
 添加窗口失焦时执行的回调函数
 
@@ -337,8 +309,6 @@ ___
 只在PIE模式下生效。
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -363,11 +333,9 @@ listener.disconnect();
 
 ___
 
-### dispatchLocal  
+### dispatchLocal <Score text="dispatchLocal" /> 
 
 ▸ **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 发送本地事件
 
@@ -387,11 +355,9 @@ ___
 
 ___
 
-### dispatchToAllClient  
+### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
 ▸ **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 服务器发送事件给所有客户端
 
@@ -417,11 +383,9 @@ ___
 
 ___
 
-### dispatchToClient  
+### dispatchToClient <Score text="dispatchToClient" /> 
 
 ▸ **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 服务器发送事件给指定客户端
 
@@ -448,11 +412,9 @@ ___
 
 ___
 
-### dispatchToServer  
+### dispatchToServer <Score text="dispatchToServer" /> 
 
 ▸ **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 客户端发送事件给服务器
 

@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / DebugService
 
-# DebugService <Badge type="tip" text="Class" /> 
+# DebugService <Badge type="tip" text="Class" /> <Score text="DebugService" />
 
 **`Instance`**
-
-**`Description`**
 
 debug调试服务
 
@@ -23,11 +21,9 @@ debug调试服务
 
 ## Methods
 
-### getHeapStatistics  
+### getHeapStatistics <Score text="getHeapStatistics" /> 
 
 ▸ `Static` **getHeapStatistics**(): `HeapStatistics` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前项目所有TS脚本内存占用
 
@@ -40,11 +36,9 @@ HeapStatistics 内存数据
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`DebugService`](Service.DebugService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取debug调试服务全局实例
 

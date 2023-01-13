@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsConstraintBase
 
-# PhysicsConstraintBase <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsConstraintBase <Badge type="tip" text="Class" /> <Score text="PhysicsConstraintBase" />
 
 物理约束基类对象
 
@@ -132,11 +130,9 @@
 
 ## Accessors
 
-### constraintTarget1  
+### constraintTarget1 <Score text="constraintTarget" /> 
 
 • `get` **constraintTarget1**(): `string`
-
-**`Description`**
 
 获取约束对象1
 
@@ -145,8 +141,6 @@
 `string`
 
 • `set` **constraintTarget1**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置约束对象1
 
@@ -161,11 +155,9 @@
 
 ___
 
-### constraintTarget2  
+### constraintTarget2 <Score text="constraintTarget" /> 
 
 • `get` **constraintTarget2**(): `string`
-
-**`Description`**
 
 获取约束对象2
 
@@ -174,8 +166,6 @@ ___
 `string`
 
 • `set` **constraintTarget2**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置约束对象2
 

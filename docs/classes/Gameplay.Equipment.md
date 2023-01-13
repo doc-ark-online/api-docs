@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Equipment
 
-# Equipment <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Equipment <Badge type="tip" text="Class" /> <Score text="Equipment" />
 
 装备对象
 
@@ -130,51 +128,41 @@
 
 ## Properties
 
-### onDiscardEquipment  
+### onDiscardEquipment <Score text="onDiscardEquipment" /> 
 
 • **onDiscardEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 丢弃装备事件
 
 ___
 
-### onHoldEquipment  
+### onHoldEquipment <Score text="onHoldEquipment" /> 
 
 • **onHoldEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 持有装备事件
 
 ___
 
-### onPickupEquipment  
+### onPickupEquipment <Score text="onPickupEquipment" /> 
 
 • **onPickupEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 拾取装备事件
 
 ___
 
-### onUnholdEquipment  
+### onUnholdEquipment <Score text="onUnholdEquipment" /> 
 
 • **onUnholdEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 收起装备事件
 
 ## Accessors
 
-### autoHoldEquipment  
+### autoHoldEquipment <Score text="autoHoldEquipment" /> 
 
 • `get` **autoHoldEquipment**(): `boolean`
-
-**`Description`**
 
 自动持有装备
 
@@ -184,8 +172,6 @@ ___
 
 • `set` **autoHoldEquipment**(`bValue`): `void`
 
-**`Description`**
-
 自动持有装备
 
 #### Parameters
@@ -197,11 +183,9 @@ ___
 
 ___
 
-### autoPickup  
+### autoPickup <Score text="autoPickup" /> 
 
 • `get` **autoPickup**(): `boolean`
-
-**`Description`**
 
 自动拾取
 
@@ -211,8 +195,6 @@ ___
 
 • `set` **autoPickup**(`bValue`): `void`
 
-**`Description`**
-
 自动拾取
 
 #### Parameters
@@ -224,11 +206,9 @@ ___
 
 ___
 
-### autoPlayPickupAnimation  
+### autoPlayPickupAnimation <Score text="autoPlayPickupAnimation" /> 
 
 • `get` **autoPlayPickupAnimation**(): `boolean`
-
-**`Description`**
 
 自动播放拾取动画
 
@@ -237,8 +217,6 @@ ___
 `boolean`
 
 • `set` **autoPlayPickupAnimation**(`bValue`): `void`
-
-**`Description`**
 
 自动播放拾取动画
 
@@ -251,11 +229,9 @@ ___
 
 ___
 
-### discardAnimation  
+### discardAnimation <Score text="discardAnimation" /> 
 
 • `get` **discardAnimation**(): `string`
-
-**`Description`**
 
 丢弃动画
 
@@ -264,8 +240,6 @@ ___
 `string`
 
 • `set` **discardAnimation**(`sValue`): `void`
-
-**`Description`**
 
 丢弃动画
 
@@ -278,11 +252,9 @@ ___
 
 ___
 
-### equipmentSlot  
+### equipmentSlot <Score text="equipmentSlot" /> 
 
 • `get` **equipmentSlot**(): `string`
-
-**`Description`**
 
 装备插槽
 
@@ -291,8 +263,6 @@ ___
 `string`
 
 • `set` **equipmentSlot**(`sValue`): `void`
-
-**`Description`**
 
 设置装备插槽
 
@@ -305,11 +275,9 @@ ___
 
 ___
 
-### equipmentStatus  
+### equipmentStatus <Score text="equipmentStatus" /> 
 
 • `get` **equipmentStatus**(): [`EquipmentStatus`](../enums/Gameplay.EquipmentStatus.md)
-
-**`Description`**
 
 装备状态
 
@@ -318,11 +286,9 @@ ___
 [`EquipmentStatus`](../enums/Gameplay.EquipmentStatus.md)
 
 
-### holdAnimation  
+### holdAnimation <Score text="holdAnimation" /> 
 
 • `get` **holdAnimation**(): `string`
-
-**`Description`**
 
 拿出动画
 
@@ -332,8 +298,6 @@ ___
 
 • `set` **holdAnimation**(`sValue`): `void`
 
-**`Description`**
-
 拿出动画
 
 #### Parameters
@@ -345,11 +309,9 @@ ___
 
 ___
 
-### holdEquipmentStance  
+### holdEquipmentStance <Score text="holdEquipmentStance" /> 
 
 • `get` **holdEquipmentStance**(): `string`
-
-**`Description`**
 
 持有装备的姿态资源
 
@@ -358,8 +320,6 @@ ___
 `string`
 
 • `set` **holdEquipmentStance**(`sValue`): `void`
-
-**`Description`**
 
 持有装备的姿态资源
 
@@ -371,11 +331,9 @@ ___
 
 
 
-### pickupAnimation  
+### pickupAnimation <Score text="pickupAnimation" /> 
 
 • `get` **pickupAnimation**(): `string`
-
-**`Description`**
 
 拾取动画
 
@@ -384,8 +342,6 @@ ___
 `string`
 
 • `set` **pickupAnimation**(`sValue`): `void`
-
-**`Description`**
 
 拾取动画
 
@@ -398,11 +354,9 @@ ___
 
 ___
 
-### pickupTrigger  
+### pickupTrigger <Score text="pickupTrigger" /> 
 
 • `get` **pickupTrigger**(): `string`
-
-**`Description`**
 
 获取绑定触发器的GUID
 
@@ -411,8 +365,6 @@ ___
 `string`
 
 • `set` **pickupTrigger**(`TriggerGuid`): `void`
-
-**`Description`**
 
 触发器
 
@@ -424,11 +376,9 @@ ___
 
 
 
-### unholdAnimation  
+### unholdAnimation <Score text="unholdAnimation" /> 
 
 • `get` **unholdAnimation**(): `string`
-
-**`Description`**
 
 收起动画
 
@@ -437,8 +387,6 @@ ___
 `string`
 
 • `set` **unholdAnimation**(`sValue`): `void`
-
-**`Description`**
 
 收起动画
 
@@ -451,11 +399,9 @@ ___
 
 ___
 
-### unholdSlot  
+### unholdSlot <Score text="unholdSlot" /> 
 
 • `get` **unholdSlot**(): `string`
-
-**`Description`**
 
 携带插槽
 
@@ -464,8 +410,6 @@ ___
 `string`
 
 • `set` **unholdSlot**(`slotName`): `void`
-
-**`Description`**
 
 设置携带插槽
 
@@ -479,11 +423,9 @@ ___
 
 ## Methods
 
-### discardEquipment  
+### discardEquipment <Score text="discardEquipment" /> 
 
 ▸ **discardEquipment**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 丢弃装备
 
@@ -491,11 +433,9 @@ ___
 
 
 
-### getCurrentOwner  
+### getCurrentOwner <Score text="getCurrentOwner" /> 
 
 ▸ **getCurrentOwner**(): [`CharacterBase`](Gameplay.CharacterBase.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取装备的所有者
 
@@ -507,11 +447,9 @@ ___
 装备所有角色
 
 
-### holdEquipment  
+### holdEquipment <Score text="holdEquipment" /> 
 
 ▸ **holdEquipment**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 持有装备
 
@@ -519,11 +457,9 @@ ___
 
 
 
-### pickupEquipment  
+### pickupEquipment <Score text="pickupEquipment" /> 
 
 ▸ **pickupEquipment**(`character`, `autoHold`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 拾取装备
 
@@ -538,11 +474,9 @@ ___
 
 
 
-### unholdEquipment  
+### unholdEquipment <Score text="unholdEquipment" /> 
 
 ▸ **unholdEquipment**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 收起装备
 

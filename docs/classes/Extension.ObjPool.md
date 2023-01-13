@@ -1,8 +1,6 @@
 [Extension](../modules/Extension.Extension.md) / ObjPool
 
-# ObjPool<T\> <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
 对象池
 
@@ -19,8 +17,6 @@
 | **[clear](Extension.ObjPool.md#clear)**(): `void` <br> 清除池中对象|
 | **[despawn](Extension.ObjPool.md#despawn)**(`T`): `void` <br> 归还一个对象|
 | **[spawn](Extension.ObjPool.md#spawn)**(): `T` <br> 生成一个对象|
-
-**`Description`**
 
 构造一个对象池
 
@@ -44,11 +40,9 @@
 
 ## Methods
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清除池中对象
 
@@ -56,11 +50,9 @@
 
 ___
 
-### despawn  
+### despawn <Score text="despawn" /> 
 
 ▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 归还一个对象
 
@@ -74,11 +66,9 @@ ___
 
 ___
 
-### spawn  
+### spawn <Score text="spawn" /> 
 
 ▸ **spawn**(): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 生成一个对象
 

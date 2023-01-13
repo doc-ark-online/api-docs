@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHugContent
 
-# UIHugContent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
 容器自动布局大小适应规则
 
@@ -12,8 +10,6 @@
 | :-----|
 | **[hugContentH](UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md) <br> 垂直适应规则|
 | **[hugContentW](UI.UIHugContent.md#hugcontentw)**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md) <br> 水平适应规则|
-
-**`Description`**
 
 构造具体规则方法
 
@@ -29,20 +25,16 @@
 
 ## Properties
 
-### hugContentH  
+### hugContentH <Score text="hugContentH" /> 
 
 • **hugContentH**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md)
-
-**`Description`**
 
 垂直适应规则
 
 ___
 
-### hugContentW  
+### hugContentW <Score text="hugContentW" /> 
 
 • **hugContentW**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md)
-
-**`Description`**
 
 水平适应规则

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseForceType
 
-# ImpulseForceType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 
 冲量力类型
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### RadialForce  
+### RadialForce <Score text="RadialForce" /> 
 
 • **RadialForce** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### VectorForce  
+### VectorForce <Score text="VectorForce" /> 
 
 • **VectorForce** = ``1``
 

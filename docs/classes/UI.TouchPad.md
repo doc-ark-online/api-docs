@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / TouchPad
 
-# TouchPad <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
 摄像机滑动区
 
@@ -65,11 +63,9 @@
 
 ## Accessors
 
-### controlByMouseEnable  
+### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
 • `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否被鼠标控制，只作用于PC端
 
@@ -82,8 +78,6 @@
 
 • `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否被鼠标控制，只作用于PC端
 
 
@@ -95,11 +89,9 @@
 
 
 
-### inputScale  
+### inputScale <Score text="inputScale" /> 
 
 • `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取移动touchPad的delta的缩放值
 
@@ -111,8 +103,6 @@
 返回移动touchPad的delta的缩放值
 
 • `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置移动touchPad的delta的缩放值
 
@@ -127,11 +117,9 @@
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁
 

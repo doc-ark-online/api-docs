@@ -1,6 +1,6 @@
 DataStorage
 
-# DataStorage <Badge type="tip" text="Namespace" /> 
+# DataStorage <Badge type="tip" text="Namespace" /> <Score text="DataStorage" />
 
 ## Table of contents
 
@@ -21,11 +21,9 @@ DataStorage
 
 ## Functions
 
-### asyncGetCustomData  
+### asyncGetCustomData <Score text="asyncGetCustomData" /> 
 
 ▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步获取自定义数据
 
@@ -44,11 +42,9 @@ DataStorage
 
 ___
 
-### asyncGetPlayerData  
+### asyncGetPlayerData <Score text="asyncGetPlayerData" /> 
 
 ▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步获取玩家数据
 
@@ -67,11 +63,9 @@ ___
 
 ___
 
-### asyncRemoveCustomData  
+### asyncRemoveCustomData <Score text="asyncRemoveCustomData" /> 
 
 ▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步删除自定义数据
 
@@ -90,11 +84,9 @@ ___
 
 ___
 
-### asyncRemovePlayerData  
+### asyncRemovePlayerData <Score text="asyncRemovePlayerData" /> 
 
 ▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步删除用户数据
 
@@ -113,11 +105,9 @@ ___
 
 ___
 
-### asyncSetCustomData  
+### asyncSetCustomData <Score text="asyncSetCustomData" /> 
 
 ▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步设置自定义数据
 
@@ -137,11 +127,9 @@ ___
 
 ___
 
-### asyncSetPlayerData  
+### asyncSetPlayerData <Score text="asyncSetPlayerData" /> 
 
 ▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步设置自定义数据
 
@@ -167,11 +155,9 @@ ___
 
 ___
 
-### setTemporaryStorage  
+### setTemporaryStorage <Score text="setTemporaryStorage" /> 
 
 ▸ **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置数据存储环境是否是临时的
 
@@ -185,11 +171,9 @@ ___
 
 ___
 
-### sizeOfData  
+### sizeOfData <Score text="sizeOfData" /> 
 
 ▸ **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回data的当前大小。单位为bytes（字节）。
 

@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHugContentHorizontally
 
-# UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentHorizontally" />
 
 自动布局容器水平适应规则
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### FixWidth  
+### FixWidth <Score text="FixWidth" /> 
 
 • **FixWidth** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### HugContent  
+### HugContent <Score text="HugContent" /> 
 
 • **HugContent** = ``1``
 

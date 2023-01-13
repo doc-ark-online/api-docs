@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AICharacter
 
-# AICharacter <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# AICharacter <Badge type="tip" text="Class" /> <Score text="AICharacter" />
 
 人形对象
 
@@ -146,11 +144,9 @@
 
 ## Accessors
 
-### serverCalculateEnable  
+### serverCalculateEnable <Score text="serverCalculateEnable" /> 
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
 
@@ -172,11 +168,9 @@
 
 ## Methods
 
-### setServerMovementEnable  
+### setServerMovementEnable <Score text="setServerMovementEnable" /> 
 
 ▸ **setServerMovementEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开关角色的移动计算
 

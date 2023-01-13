@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / Delegate
 
-# Delegate<T\> <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
 委托
 
@@ -36,11 +34,9 @@
 
 ## Methods
 
-### bind  
+### bind <Score text="bind" /> 
 
 ▸ **bind**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定函数
 
@@ -58,11 +54,9 @@
 
 ___
 
-### execute  
+### execute <Score text="execute" /> 
 
 ▸ **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 执行绑定函数
 
@@ -85,11 +79,9 @@ ___
 
 ___
 
-### isBound  
+### isBound <Score text="isBound" /> 
 
 ▸ **isBound**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否绑定
 
@@ -106,11 +98,9 @@ ___
 
 ___
 
-### unbind  
+### unbind <Score text="unbind" /> 
 
 ▸ **unbind**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 解绑函数
 

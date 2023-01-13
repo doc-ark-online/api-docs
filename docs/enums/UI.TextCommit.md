@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / TextCommit
 
-# TextCommit <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 
 输入提交模式
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Default  
+### Default <Score text="Default" /> 
 
 • **Default** = ``0``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### OnCleared  
+### OnCleared <Score text="OnCleared" /> 
 
 • **OnCleared** = ``3``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### OnEnter  
+### OnEnter <Score text="OnEnter" /> 
 
 • **OnEnter** = ``1``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### OnUserMovedFocus  
+### OnUserMovedFocus <Score text="OnUserMovedFocus" /> 
 
 • **OnUserMovedFocus** = ``2``
 

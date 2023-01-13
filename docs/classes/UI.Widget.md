@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / Widget
 
-# Widget <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 
 可挂载叶子节点的根节点，以及提供各种自动布局功能
 
@@ -68,11 +66,9 @@
 
 ## Accessors
 
-### autoSizeEnable  
+### autoSizeEnable <Score text="autoSizeEnable" /> 
 
 • `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否自动设置大小
 
@@ -84,8 +80,6 @@
 是否自动设置大小
 
 • `set` **autoSizeEnable**(`autoSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否自动设置大小
 
@@ -99,11 +93,9 @@
 
 ___
 
-### cachedGeometry  
+### cachedGeometry <Score text="cachedGeometry" /> 
 
 • `get` **cachedGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上一次的GetTickSpaceGeometry
 
@@ -116,11 +108,9 @@ ___
 
 ___
 
-### constraints  
+### constraints <Score text="constraints" /> 
 
 • `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取控件的布局
 
@@ -132,8 +122,6 @@ ___
 控件的布局
 
 • `set` **constraints**(`ininconstraints`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置控件的布局
 
@@ -147,11 +135,9 @@ ___
 
 ___
 
-### desiredSize  
+### desiredSize <Score text="desiredSize" /> 
 
 • `get` **desiredSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取期望大小
 
@@ -164,11 +150,9 @@ ___
 
 ___
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否可用
 
@@ -180,8 +164,6 @@ ___
 boolean
 
 • `set` **enable**(`isEnable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置可用性
 
@@ -197,11 +179,9 @@ boolean
 
 ___
 
-### guid  
+### guid <Score text="guid" /> 
 
 • `get` **guid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取控件GUID
 
@@ -214,11 +194,9 @@ ___
 
 ___
 
-### isHovered  
+### isHovered <Score text="isHovered" /> 
 
 • `get` **isHovered**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否是hovered
 
@@ -231,11 +209,9 @@ boolean
 
 ___
 
-### name  
+### name <Score text="name" /> 
 
 • `get` **name**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取名字
 
@@ -247,8 +223,6 @@ ___
 返回名字
 
 • `set` **name**(`name`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定名字
 
@@ -262,11 +236,9 @@ ___
 
 ___
 
-### paintSpaceGeometry  
+### paintSpaceGeometry <Score text="paintSpaceGeometry" /> 
 
 • `get` **paintSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取最后一次用于渲染Widget的几何信息
 
@@ -279,11 +251,9 @@ ___
 
 ___
 
-### parent  
+### parent <Score text="parent" /> 
 
 • `get` **parent**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取父节点
 
@@ -296,11 +266,9 @@ ___
 
 ___
 
-### position  
+### position <Score text="position" /> 
 
 • `get` **position**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取控件的位置
 
@@ -312,8 +280,6 @@ ___
 控件的位置
 
 • `set` **position**(`inFigmaPosition`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置控件的位置
 
@@ -327,11 +293,9 @@ ___
 
 ___
 
-### renderOpacity  
+### renderOpacity <Score text="renderOpacity" /> 
 
 • `get` **renderOpacity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取渲染透明度
 
@@ -343,8 +307,6 @@ ___
 返回渲染透明度
 
 • `set` **renderOpacity**(`InOpacity`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置渲染透明度 0 ~ 1
 
@@ -358,11 +320,9 @@ ___
 
 ___
 
-### renderScale  
+### renderScale <Score text="renderScale" /> 
 
 • `get` **renderScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取渲染缩放
 
@@ -374,8 +334,6 @@ ___
 返回渲染缩放
 
 • `set` **renderScale**(`scale`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置渲染缩放
 
@@ -389,11 +347,9 @@ ___
 
 ___
 
-### renderShear  
+### renderShear <Score text="renderShear" /> 
 
 • `get` **renderShear**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取渲染错切形变
 
@@ -405,8 +361,6 @@ ___
 返回渲染错切形变
 
 • `set` **renderShear**(`shear`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置渲染错切形变
 
@@ -420,11 +374,9 @@ ___
 
 ___
 
-### renderTransformAngle  
+### renderTransformAngle <Score text="renderTransformAngle" /> 
 
 • `get` **renderTransformAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取渲染的角度
 
@@ -436,8 +388,6 @@ ___
 返回渲染角度
 
 • `set` **renderTransformAngle**(`o`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置渲染的角度
 
@@ -451,11 +401,9 @@ ___
 
 ___
 
-### renderTransformPivot  
+### renderTransformPivot <Score text="renderTransformPivot" /> 
 
 • `get` **renderTransformPivot**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取渲染锚点
 
@@ -467,8 +415,6 @@ ___
 返回渲染锚点
 
 • `set` **renderTransformPivot**(`Pivot`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置渲染锚点
 
@@ -482,11 +428,9 @@ ___
 
 ___
 
-### size  
+### size <Score text="size" /> 
 
 • `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取大小
 
@@ -498,8 +442,6 @@ ___
 FVector2D
 
 • `set` **size**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置控件的大小
 
@@ -513,15 +455,13 @@ FVector2D
 
 ___
 
-### slot  
+### slot <Score text="slot" /> 
 
 • `get` **slot**(): [`UISlot`](UI.UISlot.md) <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 获取插槽
 
@@ -534,11 +474,9 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ___
 
-### tickSpaceGeometry  
+### tickSpaceGeometry <Score text="tickSpaceGeometry" /> 
 
 • `get` **tickSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取最后一次用于驱动Widget Tick的几何信息
 
@@ -551,11 +489,9 @@ ___
 
 ___
 
-### transform  
+### transform <Score text="transform" /> 
 
 • `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 得到控件的大小和位置
 
@@ -567,8 +503,6 @@ ___
 控件的大小和位置
 
 • `set` **transform**(`inTransform`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置控件的大小和位置
 
@@ -582,11 +516,9 @@ ___
 
 ___
 
-### visibility  
+### visibility <Score text="visibility" /> 
 
 • `get` **visibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取可见性
 
@@ -598,8 +530,6 @@ ___
 返回可见性
 
 • `set` **visibility**(`Visibility`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置可见性
 
@@ -613,11 +543,9 @@ ___
 
 ___
 
-### visible  
+### visible <Score text="visible" /> 
 
 • `get` **visible**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否可见
 
@@ -630,11 +558,9 @@ boolean
 
 ___
 
-### zOrder  
+### zOrder <Score text="zOrder" /> 
 
 • `get` **zOrder**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取zorder
 
@@ -646,8 +572,6 @@ ___
 zorder
 
 • `set` **zOrder**(`InZOrder`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置zoder
 
@@ -661,11 +585,9 @@ zorder
 
 ## Methods
 
-### destroyObject  
+### destroyObject <Score text="destroyObject" /> 
 
 ▸ **destroyObject**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 立刻移除并销毁 不可以在使用
 
@@ -673,11 +595,9 @@ zorder
 
 ___
 
-### equal  
+### equal <Score text="equal" /> 
 
 ▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断是不是同一个对象
 
@@ -696,11 +616,9 @@ boolean
 
 ___
 
-### invalidateLayoutAndVolatility  
+### invalidateLayoutAndVolatility <Score text="invalidateLayoutAndVolatility" /> 
 
 ▸ **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 立刻触发重新渲染的和排布计算
 

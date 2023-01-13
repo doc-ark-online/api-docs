@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / DirectionalLight
 
-# DirectionalLight <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# DirectionalLight <Badge type="tip" text="Class" /> <Score text="DirectionalLight" />
 
 平行光
 
@@ -114,11 +112,9 @@
 
 ## Accessors
 
-### baseShadowEnable  
+### baseShadowEnable <Score text="baseShadowEnable" /> 
 
 • `get` **baseShadowEnable**(): `boolean`
-
-**`Description`**
 
 启用/禁用所有角色的模拟阴影
 
@@ -134,8 +130,6 @@
 
 • `set` **baseShadowEnable**(`enable`): `void`
 
-**`Description`**
-
 启用/禁用所有角色的模拟阴影
 
 #### Parameters
@@ -147,11 +141,9 @@
 
 ___
 
-### castShadowsEnable  
+### castShadowsEnable <Score text="castShadowsEnable" /> 
 
 • `get` **castShadowsEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启阴影
 
@@ -165,8 +157,6 @@ true或false
 
 • `set` **castShadowsEnable**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否开启阴影
 
 客户端生效
@@ -179,11 +169,9 @@ true或false
 
 
 
-### intensity  
+### intensity <Score text="intensity" /> 
 
 • `get` **intensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取光照强度
 
@@ -196,8 +184,6 @@ true或false
 光照强度
 
 • `set` **intensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置光照强度 （0 ~ 100）
 
@@ -212,11 +198,9 @@ true或false
 
 ___
 
-### lightColor  
+### lightColor <Score text="lightColor" /> 
 
 • `get` **lightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取光照颜色
 
@@ -230,8 +214,6 @@ ___
 
 • `set` **lightColor**(`newLightColor`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置光照颜色
 
 客户端生效
@@ -244,11 +226,9 @@ ___
 
 
 
-### pitchAngle  
+### pitchAngle <Score text="pitchAngle" /> 
 
 • `get` **pitchAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取俯仰角度
 
@@ -262,8 +242,6 @@ ___
 
 • `set` **pitchAngle**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置俯仰角度 （-90 ~ 90）
 
 客户端生效
@@ -276,11 +254,9 @@ ___
 
 
 
-### temperature  
+### temperature <Score text="temperature" /> 
 
 • `get` **temperature**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色温
 
@@ -293,8 +269,6 @@ ___
 true或false
 
 • `set` **temperature**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色温 （1000 ~ 14000）
 
@@ -309,11 +283,9 @@ true或false
 
 ___
 
-### temperatureEnable  
+### temperatureEnable <Score text="temperatureEnable" /> 
 
 • `get` **temperatureEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启色温
 
@@ -327,8 +299,6 @@ true或false
 
 • `set` **temperatureEnable**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否开启色温
 
 客户端生效
@@ -341,11 +311,9 @@ true或false
 
 
 
-### yawAngle  
+### yawAngle <Score text="yawAngle" /> 
 
 • `get` **yawAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取朝向角度
 
@@ -358,8 +326,6 @@ true或false
 朝向角度
 
 • `set` **yawAngle**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置朝向角度 （-180 ~ 180）
 

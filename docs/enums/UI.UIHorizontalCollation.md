@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIHorizontalCollation
 
-# UIHorizontalCollation <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 
 自动布局子项布局排序 - 水平排序
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### LeftToRight  
+### LeftToRight <Score text="LeftToRight" /> 
 
 • **LeftToRight** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### RightToLeft  
+### RightToLeft <Score text="RightToLeft" /> 
 
 • **RightToLeft** = ``1``
 

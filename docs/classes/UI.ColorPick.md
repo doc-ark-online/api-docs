@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / ColorPick
 
-# ColorPick <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
 颜色选择器
 
@@ -69,11 +67,9 @@
 
 ## Accessors
 
-### color  
+### color <Score text="color" /> 
 
 • `set` **color**(`inColor`): `void`
-
-**`Description`**
 
 设置color picker的颜色 <Badge type="tip" text="other" />
 
@@ -86,11 +82,9 @@
 
 
 
-### imageGuid  
+### imageGuid <Score text="imageGuid" /> 
 
 • `set` **imageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置color picker 的图片
 
@@ -103,11 +97,9 @@
 
 
 
-### onColorChangeFinished  
+### onColorChangeFinished <Score text="onColorChangeFinished" /> 
 
 • `get` **onColorChangeFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 颜色改变完成时触发的函数代理
 
@@ -120,11 +112,9 @@
 
 ___
 
-### onColorChanged  
+### onColorChanged <Score text="onColorChanged" /> 
 
 • `get` **onColorChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 颜色改变时触发的代理
 
@@ -137,11 +127,9 @@ ___
 
 ___
 
-### onTouchFinished  
+### onTouchFinished <Score text="onTouchFinished" /> 
 
 • `get` **onTouchFinished**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 点击完成时触发的代理函数
 
@@ -154,11 +142,9 @@ ___
 
 ___
 
-### onTouchStart  
+### onTouchStart <Score text="onTouchStart" /> 
 
 • `get` **onTouchStart**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: [`LinearColor`](Type.LinearColor.md)) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 点击时触发的代理
 
@@ -172,11 +158,9 @@ ___
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ColorPick`](UI.ColorPick.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 ColorPick 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

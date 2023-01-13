@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / Vector4
 
-# Vector4 <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 
 由分量 (x,y,z,w) 组成的4D齐次向量
 
@@ -66,8 +64,6 @@
 | **[strictEquals](Type.Vector4.md#strictequals-1)**([`Vector4`](Type.Vector4.md), [`Vector4`](Type.Vector4.md)): `boolean` <br> 向量等价判断|
 | **[subtract](Type.Vector4.md#subtract-1)**([`Vector4`](Type.Vector4.md), [`Vector4`](Type.Vector4.md), [`Vector4`](Type.Vector4.md)): [`Vector4`](Type.Vector4.md) <br> 计算向量a减去向量b|
 
-**`Description`**
-
 用给定的 x 值设定给 x，y，z，w
 
 #### Parameters
@@ -77,8 +73,6 @@
 | `x?` | `number` | 给定的 x 值 default:0.0 |
 
 • **new Vector4**(`x`, `y`, `z`, `w`)
-
-**`Description`**
 
 用给定的 x，y，z，w 分量构建一个新的 Vector4
 
@@ -93,51 +87,41 @@
 
 ## Properties
 
-### w  
+### w <Score text="w" /> 
 
 • **w**: `number`
-
-**`Description`**
 
 w 分量
 
 ___
 
-### x  
+### x <Score text="x" /> 
 
 • **x**: `number`
-
-**`Description`**
 
 x 分量
 
 ___
 
-### y  
+### y <Score text="y" /> 
 
 • **y**: `number`
-
-**`Description`**
 
 y 分量
 
 ___
 
-### z  
+### z <Score text="z" /> 
 
 • **z**: `number`
-
-**`Description`**
 
 z 分量
 
 ## Accessors
 
-### length  
+### length <Score text="length" /> 
 
 • `get` **length**(): `number`
-
-**`Description`**
 
 计算向量长度 (模)
 
@@ -147,11 +131,9 @@ z 分量
 
 ___
 
-### magnitude  
+### magnitude <Score text="magnitude" /> 
 
 • `get` **magnitude**(): `number`
-
-**`Description`**
 
 计算向量的长度
 
@@ -161,11 +143,9 @@ ___
 
 ___
 
-### negative  
+### negative <Score text="negative" /> 
 
 • `get` **negative**(): [`Vector4`](Type.Vector4.md)
-
-**`Description`**
 
 返回各个分量取反的新向量
 
@@ -175,11 +155,9 @@ ___
 
 ___
 
-### normalized  
+### normalized <Score text="normalized" /> 
 
 • `get` **normalized**(): [`Vector4`](Type.Vector4.md)
-
-**`Description`**
 
 返回一个归一化的新向量,但不影响本向量.
 
@@ -189,11 +167,9 @@ ___
 
 ___
 
-### sqrLength  
+### sqrLength <Score text="sqrLength" /> 
 
 • `get` **sqrLength**(): `number`
-
-**`Description`**
 
 计算向量长度 (模)的平方
 
@@ -203,11 +179,9 @@ ___
 
 ___
 
-### sqrMagnitude  
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
 • `get` **sqrMagnitude**(): `number`
-
-**`Description`**
 
 计算向量的长度平方
 
@@ -217,11 +191,9 @@ ___
 
 ___
 
-### negOne  
+### negOne <Score text="negOne" /> 
 
 • `Static` `get` **negOne**(): [`Vector4`](Type.Vector4.md)
-
-**`Description`**
 
 (-1, -1, -1, -1)
 
@@ -231,11 +203,9 @@ ___
 
 ___
 
-### one  
+### one <Score text="one" /> 
 
 • `Static` `get` **one**(): [`Vector4`](Type.Vector4.md)
-
-**`Description`**
 
 (1, 1, 1, 1)
 
@@ -245,11 +215,9 @@ ___
 
 ___
 
-### zero  
+### zero <Score text="zero" /> 
 
 • `Static` `get` **zero**(): [`Vector4`](Type.Vector4.md)
-
-**`Description`**
 
 (0, 0, 0, 0)
 
@@ -259,11 +227,9 @@ ___
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 加一个向量
 
@@ -282,11 +248,9 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 克隆当前向量
 
@@ -299,11 +263,9 @@ ___
 
 ___
 
-### divide  
+### divide <Score text="divide" /> 
 
 ▸ **divide**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 每个分量除以参数
 
@@ -322,8 +284,6 @@ ___
 
 ▸ **divide**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 除以一个向量
 
 
@@ -341,11 +301,9 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`a`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前向量是否在误差范围内与向量a相等
 
@@ -365,11 +323,9 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 读取字符串数据
 
@@ -383,11 +339,9 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 乘以一个向量
 
@@ -406,8 +360,6 @@ ___
 
 ▸ **multiply**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 每个分量乘以参数
 
 
@@ -425,11 +377,9 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ **normalize**(): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将当前向量归一化
 
@@ -442,11 +392,9 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`a`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前向量是否与向量a相等
 
@@ -465,11 +413,9 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`v`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 减去一个向量
 
@@ -488,11 +434,9 @@ ___
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 输出为格式化字符串
 
@@ -505,11 +449,9 @@ Vector4 对象值的字符串
 
 ___
 
-### add  
+### add <Score text="add" /> 
 
 ▸ `Static` **add**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 计算ab两个向量相加
 
@@ -536,11 +478,9 @@ ___
 
 ___
 
-### ceil  
+### ceil <Score text="ceil" /> 
 
 ▸ `Static` **ceil**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量向上取整
 
@@ -566,11 +506,9 @@ ___
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ `Static` **clone**(`a`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获得指定向量的拷贝
 
@@ -589,11 +527,9 @@ ___
 
 ___
 
-### copy  
+### copy <Score text="copy" /> 
 
 ▸ `Static` **copy**(`a`, `b`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将向量a的值赋给向量b
 
@@ -613,11 +549,9 @@ ___
 
 ___
 
-### distance  
+### distance <Score text="distance" /> 
 
 ▸ `Static` **distance**(`a`, `b`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 求两向量的欧氏距离
 
@@ -637,11 +571,9 @@ ___
 
 ___
 
-### divide  
+### divide <Score text="divide" /> 
 
 ▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 遍历向量a的每个分量除以数字b
 
@@ -668,8 +600,6 @@ ___
 
 ▸ `Static` **divide**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 计算向量a除以向量b
 
 
@@ -695,11 +625,9 @@ ___
 
 ___
 
-### dot  
+### dot <Score text="dot" /> 
 
 ▸ `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 向量点积 (数量积)
 
@@ -719,11 +647,9 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 排除浮点数误差的向量近似等价判断
 
@@ -744,11 +670,9 @@ ___
 
 ___
 
-### floor  
+### floor <Score text="floor" /> 
 
 ▸ `Static` **floor**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量向下取整
 
@@ -774,11 +698,9 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ `Static` **fromString**(`str`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过一个字符串创建 Vector4 对象
 
@@ -804,11 +726,9 @@ ___
 
 ___
 
-### invert  
+### invert <Score text="invert" /> 
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量取倒数，接近 0 时返回 Infinity
 
@@ -834,11 +754,9 @@ ___
 
 ___
 
-### invertSafe  
+### invertSafe <Score text="invertSafe" /> 
 
 ▸ `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量取倒数，接近 0 时返回 0
 
@@ -865,11 +783,9 @@ ___
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量线性插值： A + t * (B - A)
 
@@ -897,11 +813,9 @@ ___
 
 ___
 
-### magnitude  
+### magnitude <Score text="magnitude" /> 
 
 ▸ `Static` **magnitude**(`a`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 求向量长度
 
@@ -920,11 +834,9 @@ ___
 
 ___
 
-### max  
+### max <Score text="max" /> 
 
 ▸ `Static` **max**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量最大值
 
@@ -951,11 +863,9 @@ ___
 
 ___
 
-### min  
+### min <Score text="min" /> 
 
 ▸ `Static` **min**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量最小值
 
@@ -982,11 +892,9 @@ ___
 
 ___
 
-### moveTowards  
+### moveTowards <Score text="moveTowards" /> 
 
 ▸ `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 向目标向量移动
 
@@ -1014,11 +922,9 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 遍历向量a的每个分量乘以数字b
 
@@ -1045,8 +951,6 @@ ___
 
 ▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 计算向量a乘以向量b
 
 
@@ -1072,11 +976,9 @@ ___
 
 ___
 
-### negate  
+### negate <Score text="negate" /> 
 
 ▸ `Static` **negate**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量取负
 
@@ -1102,11 +1004,9 @@ ___
 
 ___
 
-### normalize  
+### normalize <Score text="normalize" /> 
 
 ▸ `Static` **normalize**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 归一化向量
 
@@ -1132,11 +1032,9 @@ ___
 
 ___
 
-### round  
+### round <Score text="round" /> 
 
 ▸ `Static` **round**(`a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 逐元素向量四舍五入取整
 
@@ -1162,11 +1060,9 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ `Static` **set**(`a`, `x`, `y`, `z`, `w`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置向量值
 
@@ -1189,11 +1085,9 @@ ___
 
 ___
 
-### sqrMagnitude  
+### sqrMagnitude <Score text="sqrMagnitude" /> 
 
 ▸ `Static` **sqrMagnitude**(`a`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 求向量长度平方
 
@@ -1212,11 +1106,9 @@ ___
 
 ___
 
-### squaredDistance  
+### squaredDistance <Score text="squaredDistance" /> 
 
 ▸ `Static` **squaredDistance**(`a`, `b`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 求两向量的欧氏距离平方
 
@@ -1236,11 +1128,9 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 向量等价判断
 
@@ -1260,11 +1150,9 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 计算向量a减去向量b
 

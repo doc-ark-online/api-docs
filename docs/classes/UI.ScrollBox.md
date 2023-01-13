@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / ScrollBox
 
-# ScrollBox <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
 滑动框
 
@@ -76,31 +74,25 @@
 
 ## Properties
 
-### brushMargin  
+### brushMargin <Score text="brushMargin" /> 
 
 • `Private` **brushMargin**: `any`
-
-**`Description`**
 
 临时变量
 
 ___
 
-### tempUEMargin  
+### tempUEMargin <Score text="tempUEMargin" /> 
 
 • `Private` **tempUEMargin**: `any`
-
-**`Description`**
 
 临时变量
 
 ## Accessors
 
-### allowOverscroll  
+### allowOverscroll <Score text="allowOverscroll" /> 
 
 • `set` **allowOverscroll**(`isAllowOverscroll`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置允许滚动超过滚动框大小
 
@@ -114,11 +106,9 @@ ___
 
 ___
 
-### alwaysShowScrollBar  
+### alwaysShowScrollBar <Score text="alwaysShowScrollBar" /> 
 
 • `set` **alwaysShowScrollBar**(`isScrollBarAlwaysShown`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否一直显示滚动条
 
@@ -132,11 +122,9 @@ ___
 
 ___
 
-### animationType  
+### animationType <Score text="animationType" /> 
 
 • `get` **animationType**(): [`UIScrollBoxAnimationType`](../enums/UI.UIScrollBoxAnimationType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取动画类型
 
@@ -148,8 +136,6 @@ ___
 动画类型
 
 • `set` **animationType**(`inAnimationType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定动画类型
 
@@ -164,11 +150,9 @@ ___
 动画类型
 
 
-### defaultLocation  
+### defaultLocation <Score text="defaultLocation" /> 
 
 • `get` **defaultLocation**(): [`ScrollBarDefaultLocation`](../enums/UI.ScrollBarDefaultLocation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回滚动条的默认位置(类型，非具体坐标)
 
@@ -182,8 +166,6 @@ ___
 
 • `set` **defaultLocation**(`NewDefaultLocation`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置滚动条的默认位置(类型，非具体坐标)
 
 没有操作滚动条的情况下滚动条的默认位置
@@ -196,11 +178,9 @@ ___
 
 
 
-### elasticMultiplier  
+### elasticMultiplier <Score text="elasticMultiplier" /> 
 
 • `get` **elasticMultiplier**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取弹性系数
 
@@ -212,8 +192,6 @@ ___
 弹性系数
 
 • `set` **elasticMultiplier**(`inElasticMultiplier`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定弹性系数
 
@@ -228,11 +206,9 @@ ___
 弹性系数
 
 
-### isScrollBarAlwaysShown  
+### isScrollBarAlwaysShown <Score text="isScrollBarAlwaysShown" /> 
 
 • `get` **isScrollBarAlwaysShown**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否一直显示滚动条
 
@@ -244,11 +220,9 @@ ___
 是否一直显示滚动条
 
 
-### onScrollEnd  
+### onScrollEnd <Score text="onScrollEnd" /> 
 
 • `get` **onScrollEnd**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 滚动结束事件
 
@@ -261,11 +235,9 @@ ___
 
 ___
 
-### onUserScrolled  
+### onUserScrolled <Score text="onUserScrolled" /> 
 
 • `get` **onUserScrolled**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`currentOffset`: `number`) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 滚动事件
 
@@ -278,11 +250,9 @@ ___
 
 ___
 
-### orientation  
+### orientation <Score text="orientation" /> 
 
 • `get` **orientation**(): [`Orientation`](../enums/UI.Orientation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动方向
 
@@ -294,8 +264,6 @@ ___
 滚动方向
 
 • `set` **orientation**(`inOrientation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动方向
 
@@ -310,11 +278,9 @@ ___
 滚动方向
 
 
-### scrollAxisBrushDrawType  
+### scrollAxisBrushDrawType <Score text="scrollAxisBrushDrawType" /> 
 
 • `get` **scrollAxisBrushDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动条图片绘制类型
 
@@ -326,8 +292,6 @@ ___
 图片绘制类型
 
 • `set` **scrollAxisBrushDrawType**(`InDrawAs`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片绘制类型
 
@@ -341,11 +305,9 @@ ___
 
 ___
 
-### scrollAxisBrushGuid  
+### scrollAxisBrushGuid <Score text="scrollAxisBrushGuid" /> 
 
 • `get` **scrollAxisBrushGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动条图片ID
 
@@ -357,8 +319,6 @@ ___
 滚动条图片ID
 
 • `set` **scrollAxisBrushGuid**(`InGUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条图片ID
 
@@ -372,11 +332,9 @@ ___
 
 ___
 
-### scrollAxisBrushMargin  
+### scrollAxisBrushMargin <Score text="scrollAxisBrushMargin" /> 
 
 • `get` **scrollAxisBrushMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动条图片边距
 
@@ -388,8 +346,6 @@ ___
 滚动条图片边距
 
 • `set` **scrollAxisBrushMargin**(`InMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条图片边距
 
@@ -403,11 +359,9 @@ ___
 
 ___
 
-### scrollAxisColor  
+### scrollAxisColor <Score text="scrollAxisColor" /> 
 
 • `get` **scrollAxisColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动条图片颜色
 
@@ -419,8 +373,6 @@ ___
 滚动条图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **scrollAxisColor**(`InColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条图片颜色
 
@@ -434,11 +386,9 @@ ___
 
 ___
 
-### scrollBarVisibility  
+### scrollBarVisibility <Score text="scrollBarVisibility" /> 
 
 • `get` **scrollBarVisibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动条的显示于隐藏
 
@@ -450,8 +400,6 @@ ___
 滚动条的显示于隐藏
 
 • `set` **scrollBarVisibility**(`inScrollBarVisibility`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条是否可见,必须是在SetAlwaysShowScrollbar 为false才生效
 
@@ -465,11 +413,9 @@ ___
 
 ___
 
-### scrollOffset  
+### scrollOffset <Score text="scrollOffset" /> 
 
 • `get` **scrollOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动框偏移
 
@@ -481,8 +427,6 @@ ___
 滚动框偏移
 
 • `set` **scrollOffset**(`inScrollOffset`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定滚动框滚动偏移
 
@@ -496,11 +440,9 @@ ___
 
 ___
 
-### scrollOffsetFraction  
+### scrollOffsetFraction <Score text="scrollOffsetFraction" /> 
 
 • `get` **scrollOffsetFraction**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动框距离底部的偏移比例
 
@@ -513,11 +455,9 @@ ___
 
 ___
 
-### scrollOffsetOfEnd  
+### scrollOffsetOfEnd <Score text="scrollOffsetOfEnd" /> 
 
 • `get` **scrollOffsetOfEnd**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取滚动框距离底部的偏移
 
@@ -530,11 +470,9 @@ ___
 
 ___
 
-### scrollWheelMultiplier  
+### scrollWheelMultiplier <Score text="scrollWheelMultiplier" /> 
 
 • `set` **scrollWheelMultiplier**(`inScrollWheelMultiplier`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置鼠标滚轮系数
 
@@ -550,11 +488,9 @@ ___
 
 ___
 
-### scrollbarPadding  
+### scrollbarPadding <Score text="scrollbarPadding" /> 
 
 • `set` **scrollbarPadding**(`inScrollbarPadding`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条边距
 
@@ -568,11 +504,9 @@ ___
 
 ___
 
-### scrollbarThickness  
+### scrollbarThickness <Score text="scrollbarThickness" /> 
 
 • `set` **scrollbarThickness**(`inScrollbarThickness`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滚动条粗细
 
@@ -586,11 +520,9 @@ ___
 
 ___
 
-### shadowVisibility  
+### shadowVisibility <Score text="shadowVisibility" /> 
 
 • `get` **shadowVisibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取阴影显示
 
@@ -602,8 +534,6 @@ ___
 阴影显示
 
 • `set` **shadowVisibility**(`inVisibility`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定阴影显示
 
@@ -618,11 +548,9 @@ ___
 阴影显示
 
 
-### smoothScrollingEnable  
+### smoothScrollingEnable <Score text="smoothScrollingEnable" /> 
 
 • `set` **smoothScrollingEnable**(`isSmoothScrolling`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定鼠标滚动时，滚动速度是否插值运算,限制滚动速度更平滑
 
@@ -636,11 +564,9 @@ ___
 
 ___
 
-### supportElastic  
+### supportElastic <Score text="supportElastic" /> 
 
 • `get` **supportElastic**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断是否支持惯性
 
@@ -652,8 +578,6 @@ ___
 是否支持惯性
 
 • `set` **supportElastic**(`inSupportElastic`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设定是否支持惯性
 
@@ -670,22 +594,18 @@ ___
 
 ## Methods
 
-### endInertialScrolling  
+### endInertialScrolling <Score text="endInertialScrolling" /> 
 
 ▸ **endInertialScrolling**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 立刻停止滚动
 
 
 
 
-### scrollToEnd  
+### scrollToEnd <Score text="scrollToEnd" /> 
 
 ▸ **scrollToEnd**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 滚动到底部
 
@@ -693,11 +613,9 @@ ___
 
 ___
 
-### scrollToStart  
+### scrollToStart <Score text="scrollToStart" /> 
 
 ▸ **scrollToStart**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 滚动到开始位置
 
@@ -705,11 +623,9 @@ ___
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ScrollBox`](UI.ScrollBox.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 ScrollBox 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
 

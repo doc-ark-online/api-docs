@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / GraphicsLevel
 
-# GraphicsLevel <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 
 画质等级
 
@@ -23,7 +21,7 @@
 
 ## Enumeration Members
 
-### Cinematic1  
+### Cinematic1 <Score text="Cinematic" /> 
 
 • **Cinematic1** = ``7``
 
@@ -31,7 +29,7 @@
 
 ___
 
-### Cinematic2  
+### Cinematic2 <Score text="Cinematic" /> 
 
 • **Cinematic2** = ``8``
 
@@ -39,7 +37,7 @@ ___
 
 ___
 
-### Cinematic3  
+### Cinematic3 <Score text="Cinematic" /> 
 
 • **Cinematic3** = ``9``
 
@@ -47,7 +45,7 @@ ___
 
 ___
 
-### High1  
+### High1 <Score text="High" /> 
 
 • **High1** = ``5``
 
@@ -55,7 +53,7 @@ ___
 
 ___
 
-### High2  
+### High2 <Score text="High" /> 
 
 • **High2** = ``6``
 
@@ -63,7 +61,7 @@ ___
 
 ___
 
-### Low1  
+### Low1 <Score text="Low" /> 
 
 • **Low1** = ``0``
 
@@ -71,7 +69,7 @@ ___
 
 ___
 
-### Low2  
+### Low2 <Score text="Low" /> 
 
 • **Low2** = ``1``
 
@@ -79,7 +77,7 @@ ___
 
 ___
 
-### Low3  
+### Low3 <Score text="Low" /> 
 
 • **Low3** = ``2``
 
@@ -87,7 +85,7 @@ ___
 
 ___
 
-### Medium1  
+### Medium1 <Score text="Medium" /> 
 
 • **Medium1** = ``3``
 
@@ -95,7 +93,7 @@ ___
 
 ___
 
-### Medium2  
+### Medium2 <Score text="Medium" /> 
 
 • **Medium2** = ``4``
 

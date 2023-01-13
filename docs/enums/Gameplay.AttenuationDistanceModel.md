@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationDistanceModel
 
-# AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 
 音效衰减函数模型
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Inverse  
+### Inverse <Score text="Inverse" /> 
 
 • **Inverse** = ``2``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### Linear  
+### Linear <Score text="Linear" /> 
 
 • **Linear** = ``0``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### LogReverse  
+### LogReverse <Score text="LogReverse" /> 
 
 • **LogReverse** = ``3``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### Logarithmic  
+### Logarithmic <Score text="Logarithmic" /> 
 
 • **Logarithmic** = ``1``
 

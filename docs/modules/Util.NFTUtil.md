@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / NFTUtil
 
-# NFTUtil <Badge type="tip" text="Namespace" /> 
+# NFTUtil <Badge type="tip" text="Namespace" /> <Score text="NFTUtil" />
 
 ## Table of contents
 
@@ -19,11 +19,9 @@
 
 ## Functions
 
-### addUserGameCoin  
+### addUserGameCoin <Score text="addUserGameCoin" /> 
 
 ▸ **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加游戏币接口
 
@@ -42,11 +40,9 @@
 
 ___
 
-### addUserGameCoinWithEnv  
+### addUserGameCoinWithEnv <Score text="addUserGameCoinWithEnv" /> 
 
 ▸ **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加游戏币接口
 
@@ -67,11 +63,9 @@ ___
 
 ___
 
-### addUserGameCoinWithGameID  
+### addUserGameCoinWithGameID <Score text="addUserGameCoinWithGameID" /> 
 
 ▸ **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加游戏币接口
 
@@ -91,11 +85,9 @@ ___
 
 ___
 
-### decreaseUserGameCoin  
+### decreaseUserGameCoin <Score text="decreaseUserGameCoin" /> 
 
 ▸ **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 减少游戏币接口
 
@@ -114,11 +106,9 @@ ___
 
 ___
 
-### decreaseUserGameCoinWithEnv  
+### decreaseUserGameCoinWithEnv <Score text="decreaseUserGameCoinWithEnv" /> 
 
 ▸ **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 减少游戏币接口
 
@@ -139,11 +129,9 @@ ___
 
 ___
 
-### decreaseUserGameCoinWithGameID  
+### decreaseUserGameCoinWithGameID <Score text="decreaseUserGameCoinWithGameID" /> 
 
 ▸ **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 减少游戏币接口
 
@@ -163,11 +151,9 @@ ___
 
 ___
 
-### queryUserGameCoin  
+### queryUserGameCoin <Score text="queryUserGameCoin" /> 
 
 ▸ **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询账户的游戏币数量
 
@@ -184,11 +170,9 @@ ___
 
 ___
 
-### queryUserGameCoinWithEnv  
+### queryUserGameCoinWithEnv <Score text="queryUserGameCoinWithEnv" /> 
 
 ▸ **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询账户的游戏币数量
 
@@ -206,11 +190,9 @@ ___
 
 ___
 
-### queryUserGameCoinWithGameID  
+### queryUserGameCoinWithGameID <Score text="queryUserGameCoinWithGameID" /> 
 
 ▸ **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询账户的游戏币数量
 
@@ -227,11 +209,9 @@ ___
 
 ___
 
-### queryUserNFT  
+### queryUserNFT <Score text="queryUserNFT" /> 
 
 ▸ **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询NFT接口
 

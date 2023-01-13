@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsIntegratedMover
 
-# PhysicsIntegratedMover <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsIntegratedMover <Badge type="tip" text="Class" /> <Score text="PhysicsIntegratedMover" />
 
 运动器组件
 
@@ -50,11 +48,9 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
-
-**`Description`**
 
 获取启用状态
 
@@ -66,8 +62,6 @@
 
 • `set` **enable**(`newEnable`): `void`
 
-**`Description`**
-
 设置启用状态
 
 #### Parameters
@@ -78,11 +72,9 @@
 
 
 
-### linearRepeat  
+### linearRepeat <Score text="linearRepeat" /> 
 
 • `get` **linearRepeat**(): `boolean`
-
-**`Description`**
 
 获取线性重复运动状态
 
@@ -93,8 +85,6 @@
 线性重复运动状态
 
 • `set` **linearRepeat**(`newRepeat`): `void`
-
-**`Description`**
 
 设置线性重复运动状态
 
@@ -107,11 +97,9 @@
 
 ___
 
-### linearRepeatDelay  
+### linearRepeatDelay <Score text="linearRepeatDelay" /> 
 
 • `get` **linearRepeatDelay**(): `number`
-
-**`Description`**
 
 获取线性重复运动间隔
 
@@ -122,8 +110,6 @@ ___
 线性重复运动间隔
 
 • `set` **linearRepeatDelay**(`newDelay`): `void`
-
-**`Description`**
 
 设置线性重复运动间隔
 
@@ -136,11 +122,9 @@ ___
 
 ___
 
-### linearRepeatTime  
+### linearRepeatTime <Score text="linearRepeatTime" /> 
 
 • `get` **linearRepeatTime**(): `number`
-
-**`Description`**
 
 获取线性重复运动时间
 
@@ -151,8 +135,6 @@ ___
 线性重复运动时间
 
 • `set` **linearRepeatTime**(`newTime`): `void`
-
-**`Description`**
 
 设置线性重复运动时间
 
@@ -165,11 +147,9 @@ ___
 
 ___
 
-### linearSpeed  
+### linearSpeed <Score text="linearSpeed" /> 
 
 • `get` **linearSpeed**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取线性速度大小
 
@@ -181,8 +161,6 @@ ___
 
 • `set` **linearSpeed**(`newSpeed`): `void`
 
-**`Description`**
-
 设置线性速度大小
 
 #### Parameters
@@ -193,11 +171,9 @@ ___
 
 
 
-### rotationRepeat  
+### rotationRepeat <Score text="rotationRepeat" /> 
 
 • `get` **rotationRepeat**(): `boolean`
-
-**`Description`**
 
 获取旋转重复运动状态
 
@@ -208,8 +184,6 @@ ___
 旋转重复运动状态
 
 • `set` **rotationRepeat**(`newRepeat`): `void`
-
-**`Description`**
 
 设置旋转重复运动状态
 
@@ -222,11 +196,9 @@ ___
 
 ___
 
-### rotationRepeatDelay  
+### rotationRepeatDelay <Score text="rotationRepeatDelay" /> 
 
 • `get` **rotationRepeatDelay**(): `number`
-
-**`Description`**
 
 获取旋转重复运动间隔
 
@@ -237,8 +209,6 @@ ___
 旋转重复运动间隔
 
 • `set` **rotationRepeatDelay**(`newDelay`): `void`
-
-**`Description`**
 
 设置旋转重复运动间隔
 
@@ -251,11 +221,9 @@ ___
 
 ___
 
-### rotationRepeatTime  
+### rotationRepeatTime <Score text="rotationRepeatTime" /> 
 
 • `get` **rotationRepeatTime**(): `number`
-
-**`Description`**
 
 获取旋转重复运动时间
 
@@ -266,8 +234,6 @@ ___
 旋转重复运动时间
 
 • `set` **rotationRepeatTime**(`newTime`): `void`
-
-**`Description`**
 
 设置旋转重复运动时间
 
@@ -280,11 +246,9 @@ ___
 
 ___
 
-### rotationSpeed  
+### rotationSpeed <Score text="rotationSpeed" /> 
 
 • `get` **rotationSpeed**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取线性速度大小
 
@@ -295,8 +259,6 @@ ___
 旋转速度大小
 
 • `set` **rotationSpeed**(`newSpeed`): `void`
-
-**`Description`**
 
 设置旋转速度大小
 
@@ -309,11 +271,9 @@ ___
 
 ___
 
-### smooth  
+### smooth <Score text="smooth" /> 
 
 • `get` **smooth**(): `boolean`
-
-**`Description`**
 
 获取平滑设置
 
@@ -325,8 +285,6 @@ ___
 
 • `set` **smooth**(`newSmooth`): `void`
 
-**`Description`**
-
 设置启用状态
 
 #### Parameters
@@ -337,11 +295,9 @@ ___
 
 
 
-### swingAngle  
+### swingAngle <Score text="swingAngle" /> 
 
 • `get` **swingAngle**(): `number`
-
-**`Description`**
 
 获取摆动最大角度
 
@@ -352,8 +308,6 @@ ___
 摆动最大角度
 
 • `set` **swingAngle**(`newAngle`): `void`
-
-**`Description`**
 
 设置摆动最大角度
 
@@ -366,11 +320,9 @@ ___
 
 ___
 
-### swingSpeed  
+### swingSpeed <Score text="swingSpeed" /> 
 
 • `get` **swingSpeed**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取摆动运动速度
 
@@ -381,8 +333,6 @@ ___
 摆动运动速度
 
 • `set` **swingSpeed**(`newSpeed`): `void`
-
-**`Description`**
 
 设置摆动运动速度
 

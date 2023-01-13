@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2UpperClothPart
 
-# HumanoidV2UpperClothPart <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HumanoidV2UpperClothPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2UpperClothPart" />
 
 人形对象V2上衣部位接口
 
@@ -40,11 +38,9 @@
 
 ## Methods
 
-### getAreaCount  
+### getAreaCount <Score text="getAreaCount" /> 
 
 ▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取衣服区域数量
 
@@ -62,11 +58,9 @@
 
 ___
 
-### getColor  
+### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(`areaIndex`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取颜色
 
@@ -90,11 +84,9 @@ ___
 
 ___
 
-### getDesignAngle  
+### getDesignAngle <Score text="getDesignAngle" /> 
 
 ▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取图案方向
 
@@ -118,11 +110,9 @@ ___
 
 ___
 
-### getDesignColor  
+### getDesignColor <Score text="getDesignColor" /> 
 
 ▸ **getDesignColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取图案颜色
 
@@ -146,11 +136,9 @@ ___
 
 ___
 
-### getDesignTexture  
+### getDesignTexture <Score text="getDesignTexture" /> 
 
 ▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取衣服图案
 
@@ -174,11 +162,9 @@ GUID
 
 ___
 
-### getMesh  
+### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上衣模型
 
@@ -196,11 +182,9 @@ ___
 
 ___
 
-### getPatternAngle  
+### getPatternAngle <Score text="getPatternAngle" /> 
 
 ▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹旋转
 
@@ -224,11 +208,9 @@ ___
 
 ___
 
-### getPatternColor  
+### getPatternColor <Score text="getPatternColor" /> 
 
 ▸ **getPatternColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹颜色
 
@@ -252,11 +234,9 @@ ___
 
 ___
 
-### getPatternHeight  
+### getPatternHeight <Score text="getPatternHeight" /> 
 
 ▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹纵向拉伸
 
@@ -280,11 +260,9 @@ ___
 
 ___
 
-### getPatternIntensity  
+### getPatternIntensity <Score text="getPatternIntensity" /> 
 
 ▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹显示程度
 
@@ -308,11 +286,9 @@ ___
 
 ___
 
-### getPatternWidth  
+### getPatternWidth <Score text="getPatternWidth" /> 
 
 ▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹横向拉伸
 
@@ -336,11 +312,9 @@ ___
 
 ___
 
-### getTexture  
+### getTexture <Score text="getTexture" /> 
 
 ▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹
 
@@ -364,11 +338,9 @@ GUID
 
 ___
 
-### setColor  
+### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置颜色
 
@@ -390,11 +362,9 @@ sync = true:双端
 
 ___
 
-### setDesignAngle  
+### setDesignAngle <Score text="setDesignAngle" /> 
 
 ▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图案方向
 
@@ -416,11 +386,9 @@ sync = true:双端
 
 ___
 
-### setDesignColor  
+### setDesignColor <Score text="setDesignColor" /> 
 
 ▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图案颜色
 
@@ -442,11 +410,9 @@ sync = true:双端
 
 ___
 
-### setDesignTexture  
+### setDesignTexture <Score text="setDesignTexture" /> 
 
 ▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置衣服图案
 
@@ -468,11 +434,9 @@ sync = true:双端
 
 ___
 
-### setMesh  
+### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置上衣模型
 
@@ -499,11 +463,9 @@ sync = true:双端
 
 ___
 
-### setPatternAngle  
+### setPatternAngle <Score text="setPatternAngle" /> 
 
 ▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹旋转
 
@@ -525,11 +487,9 @@ sync = true:双端
 
 ___
 
-### setPatternColor  
+### setPatternColor <Score text="setPatternColor" /> 
 
 ▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹颜色
 
@@ -551,11 +511,9 @@ sync = true:双端
 
 ___
 
-### setPatternHeight  
+### setPatternHeight <Score text="setPatternHeight" /> 
 
 ▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹纵向拉伸
 
@@ -577,11 +535,9 @@ sync = true:双端
 
 ___
 
-### setPatternIntensity  
+### setPatternIntensity <Score text="setPatternIntensity" /> 
 
 ▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹显示程度
 
@@ -603,11 +559,9 @@ sync = true:双端
 
 ___
 
-### setPatternWidth  
+### setPatternWidth <Score text="setPatternWidth" /> 
 
 ▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹横向拉伸
 
@@ -629,11 +583,9 @@ sync = true:双端
 
 ___
 
-### setTexture  
+### setTexture <Score text="setTexture" /> 
 
 ▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹
 

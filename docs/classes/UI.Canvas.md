@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / Canvas
 
-# Canvas <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
 可挂载叶子节点的根节点，以及提供各种自动布局功能
 
@@ -53,11 +51,9 @@
 
 ## Accessors
 
-### autoLayoutContainerRule  
+### autoLayoutContainerRule <Score text="autoLayoutContainerRule" /> 
 
 • `get` **autoLayoutContainerRule**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取自动布局规则(Figma布局)
 
@@ -69,8 +65,6 @@
 自动布局规则
 
 • `set` **autoLayoutContainerRule**(`inRule`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置自动布局规则(Figma布局)
 
@@ -84,11 +78,9 @@
 
 ___
 
-### autoLayoutEnable  
+### autoLayoutEnable <Score text="autoLayoutEnable" /> 
 
 • `get` **autoLayoutEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否时自动布局
 
@@ -100,8 +92,6 @@ ___
 是否自动布局
 
 • `set` **autoLayoutEnable**(`inAutoLayout`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否自动布局
 
@@ -115,11 +105,9 @@ ___
 
 ___
 
-### autoLayoutHugContent  
+### autoLayoutHugContent <Score text="autoLayoutHugContent" /> 
 
 • `get` **autoLayoutHugContent**(): [`UIHugContent`](UI.UIHugContent.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取宽高随内容大小还是固定大小
 
@@ -131,8 +119,6 @@ ___
 宽高大小规则
 
 • `set` **autoLayoutHugContent**(`inRule`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置宽高随内容大小还是固定大小
 
@@ -146,11 +132,9 @@ ___
 
 ___
 
-### autoLayoutPacketRule  
+### autoLayoutPacketRule <Score text="autoLayoutPacketRule" /> 
 
 • `get` **autoLayoutPacketRule**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取自动排版规则
 
@@ -162,8 +146,6 @@ ___
 自动排版规则
 
 • `set` **autoLayoutPacketRule**(`inRule`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置自动排版规则
 
@@ -177,11 +159,9 @@ ___
 
 ___
 
-### autoLayoutPadding  
+### autoLayoutPadding <Score text="autoLayoutPadding" /> 
 
 • `get` **autoLayoutPadding**(): `Readonly`<[`Margin`](UI.Margin.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取边缘间距
 
@@ -193,8 +173,6 @@ ___
 获取填充
 
 • `set` **autoLayoutPadding**(`inPadding`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置边缘间距
 
@@ -208,11 +186,9 @@ ___
 
 ___
 
-### autoLayoutRule  
+### autoLayoutRule <Score text="autoLayoutRule" /> 
 
 • `get` **autoLayoutRule**(): [`UILayout`](UI.UILayout.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取完整的布局规则
 
@@ -224,8 +200,6 @@ ___
 布局规则
 
 • `set` **autoLayoutRule**(`layout`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置完整的布局规则
 
@@ -239,11 +213,9 @@ ___
 
 ___
 
-### autoLayoutSpacing  
+### autoLayoutSpacing <Score text="autoLayoutSpacing" /> 
 
 • `get` **autoLayoutSpacing**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取自动布局间隔
 
@@ -256,8 +228,6 @@ ___
 
 • `set` **autoLayoutSpacing**(`inSpaceInItem`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置自动布局间隔
 
 
@@ -269,11 +239,9 @@ ___
 
 
 
-### clipEnable  
+### clipEnable <Score text="clipEnable" /> 
 
 • `get` **clipEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否裁剪
 
@@ -285,8 +253,6 @@ ___
 是否裁剪
 
 • `set` **clipEnable**(`clip`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否裁剪
 
@@ -301,11 +267,9 @@ ___
 
 ## Methods
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

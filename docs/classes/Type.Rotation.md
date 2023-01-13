@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / Rotation
 
-# Rotation <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
 
@@ -50,13 +48,9 @@
 | **[multiply](Type.Rotation.md#multiply-1)**([`Rotation`](Type.Rotation.md), [`Rotation`](Type.Rotation.md), [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
 | **[subtract](Type.Rotation.md#subtract-1)**([`Rotation`](Type.Rotation.md), [`Rotation`](Type.Rotation.md), [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
 
-**`Description`**
-
 构建一个新的 Rotation。值为(0, 0, 0)
 
 • **new Rotation**(`vector`)
-
-**`Description`**
 
 用给定的 vector 中的x, y, z值设定给 x, y, z 。
 
@@ -67,8 +61,6 @@
 | `vector` | [`Vector`](Type.Vector.md) | 给定的 vector |
 
 • **new Rotation**(`forward`, `up`)
-
-**`Description`**
 
 构造一个旋转，将旋转 Vector.FORWARD 以指向给定的前向矢量的方向，向上矢量作为参考。
 
@@ -87,8 +79,6 @@
 
 • **new Rotation**(`rotation`)
 
-**`Description`**
-
 复制rotation，并返回一个新的。
 
 #### Parameters
@@ -99,8 +89,6 @@
 
 • **new Rotation**(`v`)
 
-**`Description`**
-
 通过四元数构造
 
 #### Parameters
@@ -110,8 +98,6 @@
 | `v` | [`Quaternion`](Type.Quaternion.md) | 四元数 |
 
 • **new Rotation**(`x`, `y`, `z`)
-
-**`Description`**
 
 通过三个分量构造
 
@@ -125,41 +111,33 @@
 
 ## Properties
 
-### x  
+### x <Score text="x" /> 
 
 • **x**: `number`
-
-**`Description`**
 
 旋转的 x 分量
 
 ___
 
-### y  
+### y <Score text="y" /> 
 
 • **y**: `number`
-
-**`Description`**
 
 旋转的 y 分量
 
 ___
 
-### z  
+### z <Score text="z" /> 
 
 • **z**: `number`
-
-**`Description`**
 
 旋转的 z 分量
 
 ## Accessors
 
-### zero  
+### zero <Score text="zero" /> 
 
 • `Static` `get` **zero**(): [`Rotation`](Type.Rotation.md)
-
-**`Description`**
 
 获取一个空旋转的角度 (0, 0, 0)
 
@@ -171,11 +149,9 @@ Rotation (0, 0, 0)
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`a`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量加上一个旋转量
 
@@ -194,11 +170,9 @@ this
 
 ___
 
-### clone  
+### clone <Score text="clone" /> 
 
 ▸ **clone**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 克隆当前旋转量
 
@@ -211,11 +185,9 @@ ___
 
 ___
 
-### equals  
+### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前角度是否在误差范围内与指定向量相等。
 
@@ -235,11 +207,9 @@ ___
 
 ___
 
-### fromQuaternion  
+### fromQuaternion <Score text="fromQuaternion" /> 
 
 ▸ **fromQuaternion**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Rotation读取一个四元数
 
@@ -253,11 +223,9 @@ ___
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Rotation读取一个字符串数据
 
@@ -271,11 +239,9 @@ ___
 
 ___
 
-### fromVector  
+### fromVector <Score text="fromVector" /> 
 
 ▸ **fromVector**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Rotation读取一个Vector
 
@@ -289,11 +255,9 @@ ___
 
 ___
 
-### getForce  
+### getForce <Score text="getForce" /> 
 
 ▸ **getForce**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取此旋转后的方向向量
 
@@ -318,11 +282,9 @@ ___
 
 ___
 
-### getInverse  
+### getInverse <Score text="getInverse" /> 
 
 ▸ **getInverse**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回一个新的反向旋转。
 
@@ -347,11 +309,9 @@ ___
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`v`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量乘以一个旋转量 (相当于四元数叉乘)
 
@@ -370,11 +330,9 @@ this
 
 ___
 
-### rotateVector  
+### rotateVector <Score text="rotateVector" /> 
 
 ▸ **rotateVector**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前角度旋转一个向量
 
@@ -393,11 +351,9 @@ ___
 
 ___
 
-### set  
+### set <Score text="set" /> 
 
 ▸ **set**(`v`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量设置为新的旋转量
 
@@ -415,8 +371,6 @@ ___
 旋转量
 
 ▸ **set**(`x`, `y`, `z`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 为当前旋转量设置每个分量
 
@@ -437,11 +391,9 @@ ___
 
 ___
 
-### strictEquals  
+### strictEquals <Score text="strictEquals" /> 
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前角度是否与指定向量相等。
 
@@ -460,11 +412,9 @@ ___
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`a`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量减去一个旋转量
 
@@ -483,11 +433,9 @@ this
 
 ___
 
-### toQuaternion  
+### toQuaternion <Score text="toQuaternion" /> 
 
 ▸ **toQuaternion**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Rotation输出为四元数
 
@@ -500,11 +448,9 @@ ___
 
 ___
 
-### toString  
+### toString <Score text="toString" /> 
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Rotation输出为字符串
 
@@ -517,11 +463,9 @@ ___
 
 ___
 
-### add  
+### add <Score text="add" /> 
 
 ▸ `Static` **add**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量加上一个旋转量
 
@@ -548,11 +492,9 @@ outer 不能为 null/undefined
 
 ___
 
-### copy  
+### copy <Score text="copy" /> 
 
 ▸ `Static` **copy**(`a`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 复制目标旋转
 
@@ -578,11 +520,9 @@ outer 不能为 null/undefined
 
 ___
 
-### fromQuaternion  
+### fromQuaternion <Score text="fromQuaternion" /> 
 
 ▸ `Static` **fromQuaternion**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转换Quaternion为Rotation
 
@@ -608,11 +548,9 @@ Rotation
 
 ___
 
-### fromString  
+### fromString <Score text="fromString" /> 
 
 ▸ `Static` **fromString**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转换字符串数据为Rotation
 
@@ -638,11 +576,9 @@ Rotation
 
 ___
 
-### fromVector  
+### fromVector <Score text="fromVector" /> 
 
 ▸ `Static` **fromVector**(`v`, `outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转换Vector为Rotation
 
@@ -668,11 +604,9 @@ Rotation
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ `Static` **lerp**(`a`, `b`, `alpha`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 对两个旋转量进行插值
 
@@ -693,11 +627,9 @@ Rotation
 
 ___
 
-### multiply  
+### multiply <Score text="multiply" /> 
 
 ▸ `Static` **multiply**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量减去一个旋转量
 
@@ -724,11 +656,9 @@ outer 不能为 null/undefined
 
 ___
 
-### subtract  
+### subtract <Score text="subtract" /> 
 
 ▸ `Static` **subtract**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前旋转量减去一个旋转量
 

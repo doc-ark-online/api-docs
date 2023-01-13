@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / DragPivot
 
-# DragPivot <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
 
 拖拽的锚点
 
@@ -23,7 +21,7 @@
 
 ## Enumeration Members
 
-### BottomCenter  
+### BottomCenter <Score text="BottomCenter" /> 
 
 • **BottomCenter** = ``8``
 
@@ -31,7 +29,7 @@
 
 ___
 
-### BottomLeft  
+### BottomLeft <Score text="BottomLeft" /> 
 
 • **BottomLeft** = ``7``
 
@@ -39,7 +37,7 @@ ___
 
 ___
 
-### BottomRight  
+### BottomRight <Score text="BottomRight" /> 
 
 • **BottomRight** = ``9``
 
@@ -47,7 +45,7 @@ ___
 
 ___
 
-### CenterCenter  
+### CenterCenter <Score text="CenterCenter" /> 
 
 • **CenterCenter** = ``5``
 
@@ -55,7 +53,7 @@ ___
 
 ___
 
-### CenterLeft  
+### CenterLeft <Score text="CenterLeft" /> 
 
 • **CenterLeft** = ``4``
 
@@ -63,7 +61,7 @@ ___
 
 ___
 
-### CenterRight  
+### CenterRight <Score text="CenterRight" /> 
 
 • **CenterRight** = ``6``
 
@@ -71,7 +69,7 @@ ___
 
 ___
 
-### MouseDown  
+### MouseDown <Score text="MouseDown" /> 
 
 • **MouseDown** = ``0``
 
@@ -79,7 +77,7 @@ ___
 
 ___
 
-### TopCenter  
+### TopCenter <Score text="TopCenter" /> 
 
 • **TopCenter** = ``2``
 
@@ -87,7 +85,7 @@ ___
 
 ___
 
-### TopLeft  
+### TopLeft <Score text="TopLeft" /> 
 
 • **TopLeft** = ``1``
 
@@ -95,7 +93,7 @@ ___
 
 ___
 
-### TopRight  
+### TopRight <Score text="TopRight" /> 
 
 • **TopRight** = ``3``
 

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HitResult
 
-# HitResult <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 
 命中结果
 
@@ -24,110 +22,88 @@
 
 ## Properties
 
-### blockingHit  
+### blockingHit <Score text="blockingHit" /> 
 
 • **blockingHit**: `boolean`
-
-**`Description`**
 
 是否击中了物体，如果发生了碰撞则为 true, 否则为 false
 
 ___
 
-### boneName  
+### boneName <Score text="boneName" /> 
 
 • **boneName**: `string`
-
-**`Description`**
 
 碰撞的骨骼名称
 
 ___
 
-### distance  
+### distance <Score text="distance" /> 
 
 • **distance**: `number`
-
-**`Description`**
 
 距离，traceStart到location的距离
 
 ___
 
-### gameObject  
+### gameObject <Score text="gameObject" /> 
 
 • **gameObject**: `GameObject`
-
-**`Description`**
 
 命中的GameObject
 
 ___
 
-### impactNormal  
+### impactNormal <Score text="impactNormal" /> 
 
 • **impactNormal**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 接触点的法线
 
 ___
 
-### impactPoint  
+### impactPoint <Score text="impactPoint" /> 
 
 • **impactPoint**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞发生的接触点
 
 ___
 
-### location  
+### location <Score text="location" /> 
 
 • **location**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞发生的位置点
 
 ___
 
-### normal  
+### normal <Score text="normal" /> 
 
 • **normal**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞位置法线
 
 ___
 
-### time  
+### time <Score text="time" /> 
 
 • **time**: `number`
-
-**`Description`**
 
 时间
 
 ___
 
-### traceEnd  
+### traceEnd <Score text="traceEnd" /> 
 
 • **traceEnd**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞检测的终点位置
 
 ___
 
-### traceStart  
+### traceStart <Score text="traceStart" /> 
 
 • **traceStart**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞检测的起点位置

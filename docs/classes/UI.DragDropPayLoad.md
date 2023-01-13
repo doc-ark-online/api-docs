@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / DragDropPayLoad
 
-# DragDropPayLoad <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
 拖拽事件数据传递类
 
@@ -22,41 +20,33 @@
 
 ## Properties
 
-### guidStr  
+### guidStr <Score text="guidStr" /> 
 
 • `Private` **guidStr**: `any`
-
-**`Description`**
 
 GUID
 
 ___
 
-### idStr  
+### idStr <Score text="idStr" /> 
 
 • `Private` **idStr**: `any`
-
-**`Description`**
 
 id
 
 ___
 
-### nameStr  
+### nameStr <Score text="nameStr" /> 
 
 • `Private` **nameStr**: `any`
-
-**`Description`**
 
 name
 
 ## Accessors
 
-### guid  
+### guid <Score text="guid" /> 
 
 • `get` **guid**(): `string`
-
-**`Description`**
 
 GUID
 
@@ -68,11 +58,9 @@ GUID
 
 ___
 
-### id  
+### id <Score text="id" /> 
 
 • `get` **id**(): `number`
-
-**`Description`**
 
 获取id
 
@@ -83,8 +71,6 @@ ___
 id
 
 • `set` **id**(`inId`): `void`
-
-**`Description`**
 
 设置id
 
@@ -97,11 +83,9 @@ id
 
 ___
 
-### name  
+### name <Score text="name" /> 
 
 • `get` **name**(): `string`
-
-**`Description`**
 
 获取名字
 
@@ -112,8 +96,6 @@ ___
 名字
 
 • `set` **name**(`inName`): `void`
-
-**`Description`**
 
 设置名字
 

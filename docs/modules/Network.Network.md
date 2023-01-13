@@ -1,8 +1,6 @@
 Network
 
-# Network <Badge type="tip" text="Namespace" /> 
-
-**`Description`**
+# Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
 
 暴露给用户使用的Http请求接口,用户可选的是网络身份(服务器,客户端)
 
@@ -34,15 +32,13 @@ Network
 
 ## Type Aliases
 
-### HttpResponse  
+### HttpResponse <Score text="HttpResponse" /> 
 
 Ƭ **HttpResponse**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void`
 
 #### Type declaration
 
 ▸ (`result`, `content`, `responseCode`): `void`
-
-**`Description`**
 
 Http请求的回调消息格式
 
@@ -66,15 +62,13 @@ Http请求的回调消息格式
 
 ___
 
-### TransactionType  
+### TransactionType <Score text="TransactionType" /> 
 
 Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`isSuccess`, `content`): `void`
-
-**`Description`**
 
 商城通信回调消息格式
 
@@ -91,11 +85,9 @@ ___
 
 ## Functions
 
-### fetch  
+### fetch <Score text="fetch" /> 
 
 ▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 HTTP请求
 
@@ -115,16 +107,12 @@ HTTP请求
 
 ___
 
-### generalHttpRequest  
+### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 ▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
 
-**`Description`**
-
 通用Http请求
 
-
-**`Example`**
 
 使用示例:发送Http请求
 ```ts
@@ -149,11 +137,9 @@ bool
 
 ___
 
-### getUrlParameter  
+### getUrlParameter <Score text="getUrlParameter" /> 
 
 ▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取url参数
 
@@ -173,11 +159,9 @@ ___
 
 ___
 
-### httpRequestTransmitData  
+### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
 ▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Http请求接口
 
@@ -199,11 +183,9 @@ Http请求接口
 
 ___
 
-### urlDecode  
+### urlDecode <Score text="urlDecode" /> 
 
 ▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 url解码
 
@@ -222,11 +204,9 @@ url解码
 
 ___
 
-### urlEncode  
+### urlEncode <Score text="urlEncode" /> 
 
 ▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 url转码
 

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2HeadPart
 
-# IHumanoidV2HeadPart <Badge type="tip" text="Interface" /> 
-
-**`Description`**
+# IHumanoidV2HeadPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HeadPart" />
 
 人形对象V2部位
 
@@ -95,11 +93,9 @@
 
 ## Methods
 
-### characterFaceShadow  
+### characterFaceShadow <Score text="characterFaceShadow" /> 
 
 ▸ **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置模型
 
@@ -115,11 +111,9 @@
 
 ___
 
-### getBlushColor  
+### getBlushColor <Score text="getBlushColor" /> 
 
 ▸ **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取腮红颜色
 
@@ -133,11 +127,9 @@ ___
 
 ___
 
-### getBlushTexture  
+### getBlushTexture <Score text="getBlushTexture" /> 
 
 ▸ **getBlushTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取腮红贴图
 
@@ -151,11 +143,9 @@ GUID
 
 ___
 
-### getBrowColor  
+### getBrowColor <Score text="getBrowColor" /> 
 
 ▸ **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眉毛颜色
 
@@ -169,11 +159,9 @@ ___
 
 ___
 
-### getBrowTexture  
+### getBrowTexture <Score text="getBrowTexture" /> 
 
 ▸ **getBrowTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眉毛
 
@@ -187,11 +175,9 @@ GUID
 
 ___
 
-### getEyeHighlightColor  
+### getEyeHighlightColor <Score text="getEyeHighlightColor" /> 
 
 ▸ **getEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼睛高光颜色
 
@@ -205,11 +191,9 @@ ___
 
 ___
 
-### getEyeHighlightTexture  
+### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
 
 ▸ **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼睛高光形状
 
@@ -224,11 +208,9 @@ GUID
 
 ___
 
-### getEyeShadowColor  
+### getEyeShadowColor <Score text="getEyeShadowColor" /> 
 
 ▸ **getEyeShadowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼影颜色
 
@@ -242,11 +224,9 @@ ___
 
 ___
 
-### getEyeShadowTexture  
+### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
 
 ▸ **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼影贴图
 
@@ -260,11 +240,9 @@ GUID
 
 ___
 
-### getEyeTexture  
+### getEyeTexture <Score text="getEyeTexture" /> 
 
 ▸ **getEyeTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼睛贴图
 
@@ -278,11 +256,9 @@ GUID
 
 ___
 
-### getEyelashColor  
+### getEyelashColor <Score text="getEyelashColor" /> 
 
 ▸ **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取睫毛颜色
 
@@ -296,11 +272,9 @@ ___
 
 ___
 
-### getEyelashTexture  
+### getEyelashTexture <Score text="getEyelashTexture" /> 
 
 ▸ **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取睫毛
 
@@ -314,11 +288,9 @@ GUID
 
 ___
 
-### getFacialTattooColor  
+### getFacialTattooColor <Score text="getFacialTattooColor" /> 
 
 ▸ **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身颜色
 
@@ -338,11 +310,9 @@ ___
 
 ___
 
-### getFacialTattooPositionX  
+### getFacialTattooPositionX <Score text="getFacialTattooPositionX" /> 
 
 ▸ **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身左右位置
 
@@ -362,11 +332,9 @@ ___
 
 ___
 
-### getFacialTattooPositionY  
+### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
 
 ▸ **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身上下位置
 
@@ -386,11 +354,9 @@ ___
 
 ___
 
-### getFacialTattooRotation  
+### getFacialTattooRotation <Score text="getFacialTattooRotation" /> 
 
 ▸ **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身旋转
 
@@ -410,11 +376,9 @@ ___
 
 ___
 
-### getFacialTattooType  
+### getFacialTattooType <Score text="getFacialTattooType" /> 
 
 ▸ **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身种类贴图
 
@@ -434,11 +398,9 @@ GUID
 
 ___
 
-### getFacialTattooZoom  
+### getFacialTattooZoom <Score text="getFacialTattooZoom" /> 
 
 ▸ **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取面部纹身缩放
 
@@ -458,11 +420,9 @@ ___
 
 ___
 
-### getLeftEyeColor  
+### getLeftEyeColor <Score text="getLeftEyeColor" /> 
 
 ▸ **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取左眼睛颜色
 
@@ -476,11 +436,9 @@ ___
 
 ___
 
-### getLipstickColor  
+### getLipstickColor <Score text="getLipstickColor" /> 
 
 ▸ **getLipstickColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取唇膏颜色
 
@@ -494,11 +452,9 @@ ___
 
 ___
 
-### getLipstickTexture  
+### getLipstickTexture <Score text="getLipstickTexture" /> 
 
 ▸ **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取唇膏贴图
 
@@ -512,11 +468,9 @@ GUID
 
 ___
 
-### getLowerEyeHighlightColor  
+### getLowerEyeHighlightColor <Score text="getLowerEyeHighlightColor" /> 
 
 ▸ **getLowerEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上高光颜色
 
@@ -530,11 +484,9 @@ ___
 
 ___
 
-### getLowerEyeHighlightTexture  
+### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
 
 ▸ **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取下高光种类
 
@@ -547,11 +499,9 @@ ___
 下高光GUID
 
 
-### getPupilColor  
+### getPupilColor <Score text="getPupilColor" /> 
 
 ▸ **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼睛瞳孔花纹颜色
 
@@ -565,11 +515,9 @@ ___
 
 ___
 
-### getPupilPositionX  
+### getPupilPositionX <Score text="getPupilPositionX" /> 
 
 ▸ **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取瞳孔左右位置
 
@@ -583,11 +531,9 @@ ___
 
 ___
 
-### getPupilPositionY  
+### getPupilPositionY <Score text="getPupilPositionY" /> 
 
 ▸ **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取瞳孔上下位置
 
@@ -601,11 +547,9 @@ ___
 
 ___
 
-### getPupilRotate  
+### getPupilRotate <Score text="getPupilRotate" /> 
 
 ▸ **getPupilRotate**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取瞳孔旋转
 
@@ -619,11 +563,9 @@ ___
 
 ___
 
-### getPupilScale  
+### getPupilScale <Score text="getPupilScale" /> 
 
 ▸ **getPupilScale**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取瞳孔大小缩放
 
@@ -637,11 +579,9 @@ ___
 
 ___
 
-### getPupilTexture  
+### getPupilTexture <Score text="getPupilTexture" /> 
 
 ▸ **getPupilTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取眼睛瞳孔花纹
 
@@ -655,11 +595,9 @@ GUID
 
 ___
 
-### getRightEyeColor  
+### getRightEyeColor <Score text="getRightEyeColor" /> 
 
 ▸ **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取右眼睛颜色
 
@@ -673,11 +611,9 @@ ___
 
 ___
 
-### getUpperEyeHighlightColor  
+### getUpperEyeHighlightColor <Score text="getUpperEyeHighlightColor" /> 
 
 ▸ **getUpperEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上高光颜色
 
@@ -691,11 +627,9 @@ ___
 
 ___
 
-### getUpperEyeHighlightTexture  
+### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
 
 ▸ **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上高光种类
 
@@ -709,11 +643,9 @@ GUID
 
 ___
 
-### setBlushColor  
+### setBlushColor <Score text="setBlushColor" /> 
 
 ▸ **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置腮红颜色
 
@@ -730,11 +662,9 @@ sync = true:双端
 
 ___
 
-### setBlushTexture  
+### setBlushTexture <Score text="setBlushTexture" /> 
 
 ▸ **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置腮红贴图
 
@@ -751,11 +681,9 @@ sync = true:双端
 
 ___
 
-### setBrowColor  
+### setBrowColor <Score text="setBrowColor" /> 
 
 ▸ **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眉毛颜色
 
@@ -772,11 +700,9 @@ sync = true:双端
 
 ___
 
-### setBrowTexture  
+### setBrowTexture <Score text="setBrowTexture" /> 
 
 ▸ **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眉毛
 
@@ -793,11 +719,9 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightColor  
+### setEyeHighlightColor <Score text="setEyeHighlightColor" /> 
 
 ▸ **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼睛高光颜色
 
@@ -814,11 +738,9 @@ sync = true:双端
 
 ___
 
-### setEyeHighlightTexture  
+### setEyeHighlightTexture <Score text="setEyeHighlightTexture" /> 
 
 ▸ **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼睛高光形状
 
@@ -835,11 +757,9 @@ sync = true:双端
 
 ___
 
-### setEyeShadowColor  
+### setEyeShadowColor <Score text="setEyeShadowColor" /> 
 
 ▸ **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼影颜色
 
@@ -856,11 +776,9 @@ sync = true:双端
 
 ___
 
-### setEyeShadowTexture  
+### setEyeShadowTexture <Score text="setEyeShadowTexture" /> 
 
 ▸ **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼影贴图
 
@@ -877,11 +795,9 @@ sync = true:双端
 
 ___
 
-### setEyeTexture  
+### setEyeTexture <Score text="setEyeTexture" /> 
 
 ▸ **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼睛贴图
 
@@ -898,11 +814,9 @@ sync = true:双端
 
 ___
 
-### setEyelashColor  
+### setEyelashColor <Score text="setEyelashColor" /> 
 
 ▸ **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置睫毛颜色
 
@@ -919,11 +833,9 @@ sync = true:双端
 
 ___
 
-### setEyelashTexture  
+### setEyelashTexture <Score text="setEyelashTexture" /> 
 
 ▸ **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置睫毛
 
@@ -940,11 +852,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooColor  
+### setFacialTattooColor <Score text="setFacialTattooColor" /> 
 
 ▸ **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身颜色
 
@@ -962,11 +872,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionX  
+### setFacialTattooPositionX <Score text="setFacialTattooPositionX" /> 
 
 ▸ **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身左右位置
 
@@ -984,11 +892,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooPositionY  
+### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
 
 ▸ **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身上下位置
 
@@ -1006,11 +912,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooRotation  
+### setFacialTattooRotation <Score text="setFacialTattooRotation" /> 
 
 ▸ **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身旋转
 
@@ -1028,11 +932,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooType  
+### setFacialTattooType <Score text="setFacialTattooType" /> 
 
 ▸ **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身种类贴图
 
@@ -1050,11 +952,9 @@ sync = true:双端
 
 ___
 
-### setFacialTattooZoom  
+### setFacialTattooZoom <Score text="setFacialTattooZoom" /> 
 
 ▸ **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置面部纹身缩放
 
@@ -1072,11 +972,9 @@ sync = true:双端
 
 ___
 
-### setLeftEyeColor  
+### setLeftEyeColor <Score text="setLeftEyeColor" /> 
 
 ▸ **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置左眼睛颜色
 
@@ -1093,11 +991,9 @@ sync = true:双端
 
 ___
 
-### setLipstickColor  
+### setLipstickColor <Score text="setLipstickColor" /> 
 
 ▸ **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置唇膏颜色
 
@@ -1114,11 +1010,9 @@ sync = true:双端
 
 ___
 
-### setLipstickTexture  
+### setLipstickTexture <Score text="setLipstickTexture" /> 
 
 ▸ **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置唇膏贴图
 
@@ -1135,11 +1029,9 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightColor  
+### setLowerEyeHighlightColor <Score text="setLowerEyeHighlightColor" /> 
 
 ▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置下高光颜色
 
@@ -1156,11 +1048,9 @@ sync = true:双端
 
 ___
 
-### setLowerEyeHighlightTexture  
+### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
 
 ▸ **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置下高光种类
 
@@ -1176,11 +1066,9 @@ sync = true:双端
 
 
 
-### setPupilColor  
+### setPupilColor <Score text="setPupilColor" /> 
 
 ▸ **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼睛瞳孔花纹颜色
 
@@ -1197,11 +1085,9 @@ sync = true:双端
 
 ___
 
-### setPupilPositionX  
+### setPupilPositionX <Score text="setPupilPositionX" /> 
 
 ▸ **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置瞳孔左右位置
 
@@ -1218,11 +1104,9 @@ sync = true:双端
 
 ___
 
-### setPupilPositionY  
+### setPupilPositionY <Score text="setPupilPositionY" /> 
 
 ▸ **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置瞳孔上下位置
 
@@ -1239,11 +1123,9 @@ sync = true:双端
 
 ___
 
-### setPupilRotate  
+### setPupilRotate <Score text="setPupilRotate" /> 
 
 ▸ **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置瞳孔旋转
 
@@ -1260,11 +1142,9 @@ sync = true:双端
 
 ___
 
-### setPupilScale  
+### setPupilScale <Score text="setPupilScale" /> 
 
 ▸ **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置瞳孔大小缩放
 
@@ -1281,11 +1161,9 @@ sync = true:双端
 
 ___
 
-### setPupilTexture  
+### setPupilTexture <Score text="setPupilTexture" /> 
 
 ▸ **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置眼睛瞳孔花纹
 
@@ -1302,11 +1180,9 @@ sync = true:双端
 
 ___
 
-### setRightEyeColor  
+### setRightEyeColor <Score text="setRightEyeColor" /> 
 
 ▸ **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置右眼睛颜色
 
@@ -1323,11 +1199,9 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightColor  
+### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
 
 ▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置上高光颜色
 
@@ -1344,11 +1218,9 @@ sync = true:双端
 
 ___
 
-### setUpperEyeHighlightTexture  
+### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
 
 ▸ **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置上高光种类
 

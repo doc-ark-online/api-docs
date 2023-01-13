@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsAngularMotor
 
-# PhysicsAngularMotor <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsAngularMotor <Badge type="tip" text="Class" /> <Score text="PhysicsAngularMotor" />
 
 物理力矩发动机
 
@@ -41,11 +39,9 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取激活状态
 
@@ -57,8 +53,6 @@
 激活状态
 
 • `set` **enable**(`EnableState`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置激活状态
 
@@ -72,11 +66,9 @@
 
 
 
-### torque  
+### torque <Score text="torque" /> 
 
 • `get` **torque**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取旋转最大速度
 
@@ -88,8 +80,6 @@
 旋转最大速度
 
 • `set` **torque**(`vector`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置旋转最大速度
 
@@ -104,11 +94,9 @@
 
 ___
 
-### torqueStrength  
+### torqueStrength <Score text="torqueStrength" /> 
 
 • `get` **torqueStrength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取加速度
 
@@ -120,8 +108,6 @@ ___
 加速度
 
 • `set` **torqueStrength**(`strength`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置加速度
 

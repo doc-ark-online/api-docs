@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / Action3
 
-# Action3<T, S, P\> <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Action3<T, S, P\> <Badge type="tip" text="Class" /> <Score text="Action3<T, S, P\>" />
 
 三个参数的代理
 

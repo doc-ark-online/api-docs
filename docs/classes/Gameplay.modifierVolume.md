@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / modifierVolume
 
-# modifierVolume <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# modifierVolume <Badge type="tip" text="Class" /> <Score text="modifierVolume" />
 
 提供基础寻路数据
 
@@ -107,11 +105,9 @@
 
 ## Accessors
 
-### areaClass  
+### areaClass <Score text="areaClass" /> 
 
 • `get` **areaClass**(): [`AreaClass`](../enums/Gameplay.AreaClass.md)
-
-**`Description`**
 
 获取区域类型
 
@@ -120,8 +116,6 @@
 [`AreaClass`](../enums/Gameplay.AreaClass.md)
 
 • `set` **areaClass**(`areaClass`): `void`
-
-**`Description`**
 
 设置区域类型
 

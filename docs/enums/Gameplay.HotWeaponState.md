@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponState
 
-# HotWeaponState <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 
 热武器状态
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Firing  
+### Firing <Score text="Firing" /> 
 
 • **Firing** = ``3``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### Idle  
+### Idle <Score text="Idle" /> 
 
 • **Idle** = ``0``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### Loading  
+### Loading <Score text="Loading" /> 
 
 • **Loading** = ``2``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### Reloading  
+### Reloading <Score text="Reloading" /> 
 
 • **Reloading** = ``1``
 

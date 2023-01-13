@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UILayoutType
 
-# UILayoutType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
 自动布局排版规则
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### Horizontal  
+### Horizontal <Score text="Horizontal" /> 
 
 • **Horizontal** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### Vertical  
+### Vertical <Score text="Vertical" /> 
 
 • **Vertical** = ``1``
 

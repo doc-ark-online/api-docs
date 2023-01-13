@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Prefab
 
-# Prefab <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Prefab <Badge type="tip" text="Class" /> <Score text="Prefab" />
 
 预制体
 

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
 
-# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
 热武器 - 后坐力组件
 
@@ -34,31 +32,25 @@
 
 ## Properties
 
-### onStartRecoilForceClient  
+### onStartRecoilForceClient <Score text="onStartRecoilForceClient" /> 
 
 • **onStartRecoilForceClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端后坐力开始广播
 
 ___
 
-### onStartRecoilForceServer  
+### onStartRecoilForceServer <Score text="onStartRecoilForceServer" /> 
 
 • **onStartRecoilForceServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器后坐力开始广播
 
 ## Accessors
 
-### maxHorizontalJitter  
+### maxHorizontalJitter <Score text="maxHorizontalJitter" /> 
 
 • `get` **maxHorizontalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相机水平抖动最大值
 
@@ -70,8 +62,6 @@ ___
 相机水平抖动最大值
 
 • `set` **maxHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相机水平抖动最大值
 
@@ -91,11 +81,9 @@ ___
 
 ___
 
-### maxHorizontalOffset  
+### maxHorizontalOffset <Score text="maxHorizontalOffset" /> 
 
 • `get` **maxHorizontalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取水平偏移最大值
 
@@ -107,8 +95,6 @@ ___
 水平偏移最大值
 
 • `set` **maxHorizontalOffset**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置水平偏移最大值
 
@@ -123,11 +109,9 @@ ___
 
 ___
 
-### maxVerticalJitter  
+### maxVerticalJitter <Score text="maxVerticalJitter" /> 
 
 • `get` **maxVerticalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相机垂直抖动最大值
 
@@ -139,8 +123,6 @@ ___
 相机垂直抖动最大值
 
 • `set` **maxVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相机垂直抖动最大值
 
@@ -160,11 +142,9 @@ ___
 
 ___
 
-### maxVerticalOffset  
+### maxVerticalOffset <Score text="maxVerticalOffset" /> 
 
 • `get` **maxVerticalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取垂直偏移最大值
 
@@ -176,8 +156,6 @@ ___
 垂直偏移最大值
 
 • `set` **maxVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置垂直偏移最大值
 
@@ -197,11 +175,9 @@ ___
 
 ___
 
-### minHorizontalJitter  
+### minHorizontalJitter <Score text="minHorizontalJitter" /> 
 
 • `get` **minHorizontalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相机水平抖动最小值
 
@@ -213,8 +189,6 @@ ___
 相机水平抖动最小值
 
 • `set` **minHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相机水平抖动最小值
 
@@ -234,11 +208,9 @@ ___
 
 ___
 
-### minHorizontalOffset  
+### minHorizontalOffset <Score text="minHorizontalOffset" /> 
 
 • `get` **minHorizontalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取水平偏移最小值
 
@@ -250,8 +222,6 @@ ___
 水平偏移最小值
 
 • `set` **minHorizontalOffset**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置水平偏移最小值
 
@@ -266,11 +236,9 @@ ___
 
 ___
 
-### minVerticalJitter  
+### minVerticalJitter <Score text="minVerticalJitter" /> 
 
 • `get` **minVerticalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相机垂直抖动最小值
 
@@ -282,8 +250,6 @@ ___
 相机垂直抖动最小值
 
 • `set` **minVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相机垂直抖动最小值
 
@@ -303,11 +269,9 @@ ___
 
 ___
 
-### minVerticalOffset  
+### minVerticalOffset <Score text="minVerticalOffset" /> 
 
 • `get` **minVerticalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取垂直偏移最小值
 
@@ -319,8 +283,6 @@ ___
 垂直偏移最小值
 
 • `set` **minVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置垂直偏移最小值
 
@@ -340,11 +302,9 @@ ___
 
 ## Methods
 
-### getDeepJitter  
+### getDeepJitter <Score text="getDeepJitter" /> 
 
 ▸ **getDeepJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取深度抖动值
 
@@ -357,11 +317,9 @@ ___
 
 ___
 
-### getHorizontalJitter  
+### getHorizontalJitter <Score text="getHorizontalJitter" /> 
 
 ▸ **getHorizontalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取水平抖动值
 
@@ -374,11 +332,9 @@ ___
 
 ___
 
-### getHorizontalOffset  
+### getHorizontalOffset <Score text="getHorizontalOffset" /> 
 
 ▸ **getHorizontalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取水平偏移值
 
@@ -391,11 +347,9 @@ ___
 
 ___
 
-### getVerticalJitter  
+### getVerticalJitter <Score text="getVerticalJitter" /> 
 
 ▸ **getVerticalJitter**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取垂直抖动值
 
@@ -408,11 +362,9 @@ ___
 
 ___
 
-### getVerticalOffset  
+### getVerticalOffset <Score text="getVerticalOffset" /> 
 
 ▸ **getVerticalOffset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取垂直偏移值
 

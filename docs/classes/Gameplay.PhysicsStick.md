@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
 
-# PhysicsStick <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 
 物理杆组件
 

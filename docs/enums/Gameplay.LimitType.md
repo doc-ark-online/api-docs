@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / LimitType
 
-# LimitType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# LimitType <Badge type="tip" text="Enumeration" /> <Score text="LimitType" />
 
 限制类型
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Free  
+### Free <Score text="Free" /> 
 
 • **Free** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Limited  
+### Limited <Score text="Limited" /> 
 
 • **Limited** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### Locked  
+### Locked <Score text="Locked" /> 
 
 • **Locked** = ``2``
 

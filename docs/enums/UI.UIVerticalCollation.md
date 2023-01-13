@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIVerticalCollation
 
-# UIVerticalCollation <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 
 自动布局子项布局排序 - 垂直排序
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### BottomToTop  
+### BottomToTop <Score text="BottomToTop" /> 
 
 • **BottomToTop** = ``1``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### TopToBottom  
+### TopToBottom <Score text="TopToBottom" /> 
 
 • **TopToBottom** = ``0``
 

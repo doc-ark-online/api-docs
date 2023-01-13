@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Trigger
 
-# Trigger <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 
 触发器
 
@@ -124,21 +122,17 @@
 
 ## Properties
 
-### onEnter  
+### onEnter <Score text="onEnter" /> 
 
 • **onEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
-
-**`Description`**
 
 进入触发器事件
 
 ___
 
-### onLeave  
+### onLeave <Score text="onLeave" /> 
 
 • **onLeave**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
-
-**`Description`**
 
 离开触发器事件
 
@@ -146,11 +140,9 @@ ___
 
 ## Methods
 
-### isBoxShape  
+### isBoxShape <Score text="isBoxShape" /> 
 
 ▸ **isBoxShape**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前触发器区域是否为盒体
 
@@ -163,11 +155,9 @@ true:触发器是盒体
 
 ___
 
-### isInArea  
+### isInArea <Score text="isInArea" /> 
 
 ▸ **isInArea**(`gameObject`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断指定对象是否在触发器区域
 
@@ -185,11 +175,9 @@ ___
 true:为在触发器范围内
 
 
-### isSphereShape  
+### isSphereShape <Score text="isSphereShape" /> 
 
 ▸ **isSphereShape**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前触发器区域是否为球体
 
@@ -201,11 +189,9 @@ true:为在触发器范围内
 true:触发器是球体
 
 
-### setBoxExtent  
+### setBoxExtent <Score text="setBoxExtent" /> 
 
 ▸ **setBoxExtent**(`InBoxExtent`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置立方体触发器大小
 
@@ -219,11 +205,9 @@ true:触发器是球体
 
 
 
-### setCollisionEnabled  
+### setCollisionEnabled <Score text="setCollisionEnabled" /> 
 
 ▸ **setCollisionEnabled**(`enable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置触发器是否激活
 
@@ -236,11 +220,9 @@ true:触发器是球体
 
 
 
-### setSphereRadius  
+### setSphereRadius <Score text="setSphereRadius" /> 
 
 ▸ **setSphereRadius**(`InSphereRadius`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置球形触发器大小
 
@@ -254,11 +236,9 @@ true:触发器是球体
 
 
 
-### toggleTriggerShape  
+### toggleTriggerShape <Score text="toggleTriggerShape" /> 
 
 ▸ **toggleTriggerShape**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换触发器形状
 

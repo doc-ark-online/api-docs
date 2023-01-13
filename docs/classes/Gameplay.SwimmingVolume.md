@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SwimmingVolume
 
-# SwimmingVolume <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
 
 游泳区域
 
@@ -109,11 +107,9 @@
 
 ## Methods
 
-### inArea  
+### inArea <Score text="inArea" /> 
 
 ▸ **inArea**(`player`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Player是否在游泳区域内
 

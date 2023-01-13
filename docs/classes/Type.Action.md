@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / Action
 
-# Action <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
 任意参数的代理
 
@@ -32,11 +30,9 @@
 
 ## Accessors
 
-### count  
+### count <Score text="count" /> 
 
 • `get` **count**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 监听方法的数量
 
@@ -47,11 +43,9 @@
 
 ## Methods
 
-### add  
+### add <Score text="add" /> 
 
 ▸ **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加一个监听方法(有重复过滤)
 
@@ -66,11 +60,9 @@
 
 ___
 
-### call  
+### call <Score text="call" /> 
 
 ▸ **call**(`...params`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 执行
 
@@ -84,11 +76,9 @@ ___
 
 ___
 
-### clear  
+### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清除所有监听
 
@@ -96,11 +86,9 @@ ___
 
 ___
 
-### includes  
+### includes <Score text="includes" /> 
 
 ▸ **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断是否包含某个监听方法
 
@@ -120,11 +108,9 @@ ___
 
 ___
 
-### remove  
+### remove <Score text="remove" /> 
 
 ▸ **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 移除一个监听方法
 

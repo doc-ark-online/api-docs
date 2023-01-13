@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IPart
 
-# IPart <Badge type="tip" text="Interface" /> 
-
-**`Description`**
+# IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 
 部位基类
 
@@ -31,11 +29,9 @@
 
 ## Methods
 
-### getMesh  
+### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取部位模型
 
@@ -49,11 +45,9 @@
 
 ___
 
-### setMesh  
+### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置部位模型
 

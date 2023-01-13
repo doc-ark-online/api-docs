@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Anchor
 
-# Anchor <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Anchor <Badge type="tip" text="Class" /> <Score text="Anchor" />
 
 空锚点，可以用作根节点
 

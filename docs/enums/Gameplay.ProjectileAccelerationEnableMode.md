@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileAccelerationEnableMode
 
-# ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileAccelerationEnableMode" />
 
 投掷物加速启用模式
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### Distance  
+### Distance <Score text="Distance" /> 
 
 • **Distance** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### Time  
+### Time <Score text="Time" /> 
 
 • **Time** = ``1``
 

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV1Part
 
-# IHumanoidV1Part <Badge type="tip" text="Interface" /> 
-
-**`Description`**
+# IHumanoidV1Part <Badge type="tip" text="Interface" /> <Score text="IHumanoidV1Part" />
 
 人形对象V1部位
 
@@ -19,11 +17,9 @@
 
 ## Methods
 
-### getWholeBody  
+### getWholeBody <Score text="getWholeBody" /> 
 
 ▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取全身模型
 
@@ -37,11 +33,9 @@
 
 ___
 
-### setWholeBody  
+### setWholeBody <Score text="setWholeBody" /> 
 
 ▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置全身模型
 

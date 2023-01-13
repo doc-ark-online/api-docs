@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CharacterBase
 
-# CharacterBase <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
 CharacterBase是一个具有外观和动画表现，且内置移动逻辑的GameObject，具备GameObject的所有功能。
              CharacterBase是玩家角色和非玩家角色的基类，可以在场景中行走、跳跃、飞行和游泳，可与世界中的所有物理效果交互
@@ -214,11 +212,9 @@ CharacterBase是一个具有外观和动画表现，且内置移动逻辑的Game
 
 ## Properties
 
-### isV1  
+### isV1 <Score text="isV" /> 
 
 • `Private` **isV1**: `any` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前角色是否是V1版本
 
@@ -226,71 +222,57 @@ CharacterBase是一个具有外观和动画表现，且内置移动逻辑的Game
 
 ___
 
-### onLoadAppearanceDataAllCompleted  
+### onLoadAppearanceDataAllCompleted <Score text="onLoadAppearanceDataAllCompleted" /> 
 
 • **onLoadAppearanceDataAllCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\>
-
-**`Description`**
 
 加载完角色形象数据后的回调
 
 ___
 
-### onMeshChanged  
+### onMeshChanged <Score text="onMeshChanged" /> 
 
 • **onMeshChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
-
-**`Description`**
 
 角色模型切换成功广播
 
 ___
 
-### onMovementStateChanged  
+### onMovementStateChanged <Score text="onMovementStateChanged" /> 
 
 • **onMovementStateChanged**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged)
-
-**`Description`**
 
 移动状态切换时的回调
 
 ___
 
-### onSetAppearanceDataCompleted  
+### onSetAppearanceDataCompleted <Score text="onSetAppearanceDataCompleted" /> 
 
 • **onSetAppearanceDataCompleted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\>
-
-**`Description`**
 
 设置一个角色编辑API成功后的回调
 
 ___
 
-### onTextureChanged  
+### onTextureChanged <Score text="onTextureChanged" /> 
 
 • **onTextureChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\>
-
-**`Description`**
 
 角色贴图切换成功广播
 
 ___
 
-### player  
+### player <Score text="player" /> 
 
 • **player**: [`Player`](Gameplay.Player.md)
-
-**`Description`**
 
 玩家对象
 
 ## Accessors
 
-### airControl  
+### airControl <Score text="airControl" /> 
 
 • `get` **airControl**(): `number`
-
-**`Description`**
 
 角色在空中时, 控制水平方向移动的灵活度
 
@@ -305,8 +287,6 @@ ___
 `number`
 
 • `set` **airControl**(`InAirControl`): `void`
-
-**`Description`**
 
 角色在空中时, 控制水平方向移动的灵活度
 
@@ -325,11 +305,9 @@ ___
 
 ___
 
-### airControlBoostMultiplier  
+### airControlBoostMultiplier <Score text="airControlBoostMultiplier" /> 
 
 • `get` **airControlBoostMultiplier**(): `number`
-
-**`Description`**
 
 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
@@ -344,8 +322,6 @@ ___
 `number`
 
 • `set` **airControlBoostMultiplier**(`InAirControlBoostMultiplier`): `void`
-
-**`Description`**
 
 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数
 
@@ -364,11 +340,9 @@ ___
 
 ___
 
-### airControlBoostVelocityThreshold  
+### airControlBoostVelocityThreshold <Score text="airControlBoostVelocityThreshold" /> 
 
 • `get` **airControlBoostVelocityThreshold**(): `number`
-
-**`Description`**
 
 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
@@ -383,8 +357,6 @@ ___
 `number`
 
 • `set` **airControlBoostVelocityThreshold**(`InAirControlBoostVelocityThreshold`): `void`
-
-**`Description`**
 
 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍
 
@@ -403,11 +375,9 @@ ___
 
 ___
 
-### animationMode  
+### animationMode <Score text="animationMode" /> 
 
 • `get` **animationMode**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md)
-
-**`Description`**
 
 动画播放模式
 
@@ -416,8 +386,6 @@ ___
 [`AnimationMode`](../enums/Gameplay.AnimationMode.md)
 
 • `set` **animationMode**(`mode`): `void`
-
-**`Description`**
 
 动画播放模式
 
@@ -430,11 +398,9 @@ ___
 
 ___
 
-### animationStance  
+### animationStance <Score text="animationStance" /> 
 
 • `get` **animationStance**(): `string`
-
-**`Description`**
 
 动画姿态
 
@@ -449,8 +415,6 @@ ___
 `string`
 
 • `set` **animationStance**(`StanceGUID`): `void`
-
-**`Description`**
 
 动画姿态
 
@@ -469,11 +433,9 @@ ___
 
 ___
 
-### appearance  
+### appearance <Score text="appearance" /> 
 
 • `get` **appearance**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md)
-
-**`Description`**
 
 当前外观修改对象
 
@@ -483,11 +445,9 @@ ___
 
 ___
 
-### baseShadowLocationOffset  
+### baseShadowLocationOffset <Score text="baseShadowLocationOffset" /> 
 
 • `get` **baseShadowLocationOffset**(): [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 模拟阴影相对于角色脚底中心的位置偏移
 
@@ -496,8 +456,6 @@ ___
 [`Vector2`](Type.Vector2.md)
 
 • `set` **baseShadowLocationOffset**(`InLocationOffset`): `void`
-
-**`Description`**
 
 模拟阴影相对于角色脚底中心的位置偏移
 
@@ -510,11 +468,9 @@ ___
 
 ___
 
-### baseShadowMaxVisibleHeight  
+### baseShadowMaxVisibleHeight <Score text="baseShadowMaxVisibleHeight" /> 
 
 • `get` **baseShadowMaxVisibleHeight**(): `number`
-
-**`Description`**
 
 模拟阴影可见的最大离地高度
 
@@ -523,8 +479,6 @@ ___
 `number`
 
 • `set` **baseShadowMaxVisibleHeight**(`InHeight`): `void`
-
-**`Description`**
 
 模拟阴影可见的最大离地高度
 
@@ -537,11 +491,9 @@ ___
 
 ___
 
-### baseShadowScale  
+### baseShadowScale <Score text="baseShadowScale" /> 
 
 • `get` **baseShadowScale**(): [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 模拟阴影的缩放
 
@@ -550,8 +502,6 @@ ___
 [`Vector2`](Type.Vector2.md)
 
 • `set` **baseShadowScale**(`InScale`): `void`
-
-**`Description`**
 
 模拟阴影的缩放
 
@@ -564,11 +514,9 @@ ___
 
 ___
 
-### basicStance  
+### basicStance <Score text="basicStance" /> 
 
 • `get` **basicStance**(): `string`
-
-**`Description`**
 
 基础姿态
 
@@ -583,8 +531,6 @@ ___
 `string`
 
 • `set` **basicStance**(`InBasicStance`): `void`
-
-**`Description`**
 
 基础姿态
 
@@ -603,11 +549,9 @@ ___
 
 ___
 
-### basicStanceAimOffsetEnable  
+### basicStanceAimOffsetEnable <Score text="basicStanceAimOffsetEnable" /> 
 
 • `get` **basicStanceAimOffsetEnable**(): `boolean`
-
-**`Description`**
 
 是否基础姿态的开启瞄准偏移
 
@@ -616,8 +560,6 @@ ___
 `boolean`
 
 • `set` **basicStanceAimOffsetEnable**(`InbEnableAimOffset`): `void`
-
-**`Description`**
 
 是否基础姿态的开启瞄准偏移
 
@@ -630,11 +572,9 @@ ___
 
 ___
 
-### brakingDecelerationFalling  
+### brakingDecelerationFalling <Score text="brakingDecelerationFalling" /> 
 
 • `get` **brakingDecelerationFalling**(): `number`
-
-**`Description`**
 
 下落制动速率
 
@@ -643,8 +583,6 @@ ___
 `number`
 
 • `set` **brakingDecelerationFalling**(`InBrakingDecelerationFalling`): `void`
-
-**`Description`**
 
 下落制动速率
 
@@ -657,11 +595,9 @@ ___
 
 ___
 
-### brakingDecelerationFlying  
+### brakingDecelerationFlying <Score text="brakingDecelerationFlying" /> 
 
 • `get` **brakingDecelerationFlying**(): `number`
-
-**`Description`**
 
 飞行制动速率
 
@@ -670,8 +606,6 @@ ___
 `number`
 
 • `set` **brakingDecelerationFlying**(`InBrakingDecelerationFlying`): `void`
-
-**`Description`**
 
 飞行制动速率
 
@@ -684,11 +618,9 @@ ___
 
 ___
 
-### brakingDecelerationSwimming  
+### brakingDecelerationSwimming <Score text="brakingDecelerationSwimming" /> 
 
 • `get` **brakingDecelerationSwimming**(): `number`
-
-**`Description`**
 
 游泳制动速率
 
@@ -697,8 +629,6 @@ ___
 `number`
 
 • `set` **brakingDecelerationSwimming**(`InBrakingDecelerationSwimming`): `void`
-
-**`Description`**
 
 游泳制动速率
 
@@ -711,11 +641,9 @@ ___
 
 ___
 
-### brakingDecelerationWalking  
+### brakingDecelerationWalking <Score text="brakingDecelerationWalking" /> 
 
 • `get` **brakingDecelerationWalking**(): `number`
-
-**`Description`**
 
 行走制动速率
 
@@ -724,8 +652,6 @@ ___
 `number`
 
 • `set` **brakingDecelerationWalking**(`InBrakingDecelerationWalking`): `void`
-
-**`Description`**
 
 行走制动速率
 
@@ -738,11 +664,9 @@ ___
 
 ___
 
-### canSetAppearanceData  
+### canSetAppearanceData <Score text="canSetAppearanceData" /> 
 
 • `get` **canSetAppearanceData**(): `boolean`
-
-**`Description`**
 
 是否可以设置角色形象数据
 
@@ -752,11 +676,9 @@ ___
 
 ___
 
-### canStepUpOn  
+### canStepUpOn <Score text="canStepUpOn" /> 
 
 • `get` **canStepUpOn**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取组件是否可以被玩家站立
 
@@ -769,8 +691,6 @@ ___
 true 其他角色可以站到玩家头上  false 其他角色不可以站到玩家头上
 
 • `set` **canStepUpOn**(`CanStepUpOn`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置组件是否可以被玩家站立
 
@@ -785,11 +705,9 @@ true 其他角色可以站到玩家头上  false 其他角色不可以站到玩�
 
 ___
 
-### capsuleHalfHeight  
+### capsuleHalfHeight <Score text="capsuleHalfHeight" /> 
 
 • `get` **capsuleHalfHeight**(): `number`
-
-**`Description`**
 
 胶囊体半高
 
@@ -798,8 +716,6 @@ ___
 `number`
 
 • `set` **capsuleHalfHeight**(`InCapsuleHalfHeight`): `void`
-
-**`Description`**
 
 胶囊体半高
 
@@ -812,11 +728,9 @@ ___
 
 ___
 
-### capsuleRadius  
+### capsuleRadius <Score text="capsuleRadius" /> 
 
 • `get` **capsuleRadius**(): `number`
-
-**`Description`**
 
 胶囊体半径
 
@@ -825,8 +739,6 @@ ___
 `number`
 
 • `set` **capsuleRadius**(`InCapsuleRadius`): `void`
-
-**`Description`**
 
 胶囊体半径
 
@@ -839,11 +751,9 @@ ___
 
 ___
 
-### characterName  
+### characterName <Score text="characterName" /> 
 
 • `get` **characterName**(): `string`
-
-**`Description`**
 
 角色名称
 
@@ -858,8 +768,6 @@ ___
 `string`
 
 • `set` **characterName**(`inCharacterName`): `void`
-
-**`Description`**
 
 角色名称
 
@@ -878,11 +786,9 @@ ___
 
 ___
 
-### collisionEnable  
+### collisionEnable <Score text="collisionEnable" /> 
 
 • `get` **collisionEnable**(): `boolean`
-
-**`Description`**
 
 是否开启碰撞
 
@@ -891,8 +797,6 @@ ___
 `boolean`
 
 • `set` **collisionEnable**(`InbEnableCollision`): `void`
-
-**`Description`**
 
 是否开启碰撞
 
@@ -905,11 +809,9 @@ ___
 
 ___
 
-### collisionExtent  
+### collisionExtent <Score text="collisionExtent" /> 
 
 • `get` **collisionExtent**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 碰撞形状的大小
 
@@ -919,11 +821,9 @@ ___
 
 ___
 
-### collisionShape  
+### collisionShape <Score text="collisionShape" /> 
 
 • `get` **collisionShape**(): [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md)
-
-**`Description`**
 
 碰撞形状
 
@@ -933,11 +833,9 @@ ___
 
 ___
 
-### collisionWithOtherCharacterEnable  
+### collisionWithOtherCharacterEnable <Score text="collisionWithOtherCharacterEnable" /> 
 
 • `get` **collisionWithOtherCharacterEnable**(): `boolean`
-
-**`Description`**
 
 能否与其他角色发生碰撞
 
@@ -946,8 +844,6 @@ ___
 `boolean`
 
 • `set` **collisionWithOtherCharacterEnable**(`value`): `void`
-
-**`Description`**
 
 能否与其他角色发生碰撞
 
@@ -960,11 +856,9 @@ ___
 
 ___
 
-### crouchEnable  
+### crouchEnable <Score text="crouchEnable" /> 
 
 • `get` **crouchEnable**(): `boolean`
-
-**`Description`**
 
 启用/禁用下蹲能力
 
@@ -973,8 +867,6 @@ ___
 `boolean`
 
 • `set` **crouchEnable**(`canCrouch`): `void`
-
-**`Description`**
 
 启用/禁用下蹲能力
 
@@ -987,11 +879,9 @@ ___
 
 ___
 
-### crouchedHeight  
+### crouchedHeight <Score text="crouchedHeight" /> 
 
 • `get` **crouchedHeight**(): `number`
-
-**`Description`**
 
 下蹲时胶囊体的高度
 
@@ -1000,8 +890,6 @@ ___
 `number`
 
 • `set` **crouchedHeight**(`InCrouchedHeight`): `void`
-
-**`Description`**
 
 下蹲时胶囊体的高度
 
@@ -1014,11 +902,9 @@ ___
 
 ___
 
-### forceUpdateMovement  
+### forceUpdateMovement <Score text="forceUpdateMovement" /> 
 
 • `set` **forceUpdateMovement**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 启用/禁用强制更新移动
 
@@ -1031,11 +917,9 @@ ___
 
 
 
-### gravityScale  
+### gravityScale <Score text="gravityScale" /> 
 
 • `get` **gravityScale**(): `number`
-
-**`Description`**
 
 重力倍率
 
@@ -1051,8 +935,6 @@ ___
 
 • `set` **gravityScale**(`newGravityScale`): `void`
 
-**`Description`**
-
 重力倍率
 
 #### Parameters
@@ -1064,11 +946,9 @@ ___
 
 ___
 
-### groundFriction  
+### groundFriction <Score text="groundFriction" /> 
 
 • `get` **groundFriction**(): `number`
-
-**`Description`**
 
 地面摩檫力
 
@@ -1077,8 +957,6 @@ ___
 `number`
 
 • `set` **groundFriction**(`inGroundFriction`): `void`
-
-**`Description`**
 
 地面摩檫力
 
@@ -1090,11 +968,9 @@ ___
 
 
 
-### headUIVisible  
+### headUIVisible <Score text="headUIVisible" /> 
 
 • `get` **headUIVisible**(): `boolean`
-
-**`Description`**
 
 头顶UI是否可见
 
@@ -1103,8 +979,6 @@ ___
 `boolean`
 
 • `set` **headUIVisible**(`isVisible`): `void`
-
-**`Description`**
 
 头顶UI是否可见
 
@@ -1117,11 +991,9 @@ ___
 
 ___
 
-### headUIVisibleRange  
+### headUIVisibleRange <Score text="headUIVisibleRange" /> 
 
 • `get` **headUIVisibleRange**(): `number`
-
-**`Description`**
 
 头顶UI可见距离
 
@@ -1130,8 +1002,6 @@ ___
 `number`
 
 • `set` **headUIVisibleRange**(`VisibleDistance`): `void`
-
-**`Description`**
 
 头顶UI可见距离
 
@@ -1144,11 +1014,9 @@ ___
 
 ___
 
-### isCrouching  
+### isCrouching <Score text="isCrouching" /> 
 
 • `get` **isCrouching**(): `boolean`
-
-**`Description`**
 
 是否处于下蹲状态
 
@@ -1158,11 +1026,9 @@ ___
 
 ___
 
-### isJumping  
+### isJumping <Score text="isJumping" /> 
 
 • `get` **isJumping**(): `boolean`
-
-**`Description`**
 
 是否正在跳跃
 
@@ -1172,11 +1038,9 @@ ___
 
 ___
 
-### isMoving  
+### isMoving <Score text="isMoving" /> 
 
 • `get` **isMoving**(): `boolean`
-
-**`Description`**
 
 是否正在移动
 
@@ -1186,11 +1050,9 @@ ___
 
 ___
 
-### jumpEnable  
+### jumpEnable <Score text="jumpEnable" /> 
 
 • `get` **jumpEnable**(): `boolean`
-
-**`Description`**
 
 启用/禁用跳跃能力
 
@@ -1199,8 +1061,6 @@ ___
 `boolean`
 
 • `set` **jumpEnable**(`value`): `void`
-
-**`Description`**
 
 启用/禁用跳跃能力
 
@@ -1213,11 +1073,9 @@ ___
 
 ___
 
-### jumpMaxCount  
+### jumpMaxCount <Score text="jumpMaxCount" /> 
 
 • `get` **jumpMaxCount**(): `number`
-
-**`Description`**
 
 最大可跳跃次数
 
@@ -1226,8 +1084,6 @@ ___
 `number`
 
 • `set` **jumpMaxCount**(`InJumpMaxCount`): `void`
-
-**`Description`**
 
 最大可跳跃次数
 
@@ -1240,11 +1096,9 @@ ___
 
 ___
 
-### jumpingOutOfWaterEnable  
+### jumpingOutOfWaterEnable <Score text="jumpingOutOfWaterEnable" /> 
 
 • `get` **jumpingOutOfWaterEnable**(): `boolean`
-
-**`Description`**
 
 是否可以跳出水面
 
@@ -1253,8 +1107,6 @@ ___
 `boolean`
 
 • `set` **jumpingOutOfWaterEnable**(`value`): `void`
-
-**`Description`**
 
 是否可以跳出水面
 
@@ -1267,15 +1119,13 @@ ___
 
 ___
 
-### locallyVisible  
+### locallyVisible <Score text="locallyVisible" /> 
 
 • `get` **locallyVisible**(): `boolean`
 
 **`Deprecated`**
 
 since:v0.20.0 reason:api重构 replacement:getVisibility()
-
-**`Description`**
 
 是否可见(本地设置)
 
@@ -1289,8 +1139,6 @@ since:v0.20.0 reason:api重构 replacement:getVisibility()
 
 since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
-**`Description`**
-
 是否可见(本地设置)
 
 #### Parameters
@@ -1301,11 +1149,9 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
 
 
-### maxAcceleration  
+### maxAcceleration <Score text="maxAcceleration" /> 
 
 • `get` **maxAcceleration**(): `number`
-
-**`Description`**
 
 最大加速度
 
@@ -1314,8 +1160,6 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 `number`
 
 • `set` **maxAcceleration**(`InMaxAcceleration`): `void`
-
-**`Description`**
 
 最大加速度
 
@@ -1328,11 +1172,9 @@ since:v0.20.0 reason:api重构 replacement:setVisibilityLocally()
 
 ___
 
-### maxFallingSpeed  
+### maxFallingSpeed <Score text="maxFallingSpeed" /> 
 
 • `get` **maxFallingSpeed**(): `number`
-
-**`Description`**
 
 最大下落速度
 
@@ -1341,8 +1183,6 @@ ___
 `number`
 
 • `set` **maxFallingSpeed**(`speed`): `void`
-
-**`Description`**
 
 最大下落速度
 
@@ -1355,11 +1195,9 @@ ___
 
 ___
 
-### maxFlySpeed  
+### maxFlySpeed <Score text="maxFlySpeed" /> 
 
 • `get` **maxFlySpeed**(): `number`
-
-**`Description`**
 
 最大飞行速度
 
@@ -1368,8 +1206,6 @@ ___
 `number`
 
 • `set` **maxFlySpeed**(`InMaxFlySpeed`): `void`
-
-**`Description`**
 
 最大飞行速度
 
@@ -1382,11 +1218,9 @@ ___
 
 ___
 
-### maxJumpHeight  
+### maxJumpHeight <Score text="maxJumpHeight" /> 
 
 • `get` **maxJumpHeight**(): `number`
-
-**`Description`**
 
 最大跳跃高度
 
@@ -1395,8 +1229,6 @@ ___
 `number`
 
 • `set` **maxJumpHeight**(`InMaxJumpHeight`): `void`
-
-**`Description`**
 
 最大跳跃高度
 
@@ -1409,11 +1241,9 @@ ___
 
 ___
 
-### maxStepHeight  
+### maxStepHeight <Score text="maxStepHeight" /> 
 
 • `get` **maxStepHeight**(): `number`
-
-**`Description`**
 
 获取角色最大可跨越高度
 
@@ -1422,8 +1252,6 @@ ___
 `number`
 
 • `set` **maxStepHeight**(`InMaxStepHeight`): `void`
-
-**`Description`**
 
 设置角色最大可跨越高度
 
@@ -1436,11 +1264,9 @@ ___
 
 ___
 
-### maxSwimSpeed  
+### maxSwimSpeed <Score text="maxSwimSpeed" /> 
 
 • `get` **maxSwimSpeed**(): `number`
-
-**`Description`**
 
 最大游泳速度
 
@@ -1449,8 +1275,6 @@ ___
 `number`
 
 • `set` **maxSwimSpeed**(`InMaxSwimSpeed`): `void`
-
-**`Description`**
 
 最大游泳速度
 
@@ -1463,11 +1287,9 @@ ___
 
 ___
 
-### maxWalkSpeed  
+### maxWalkSpeed <Score text="maxWalkSpeed" /> 
 
 • `get` **maxWalkSpeed**(): `number`
-
-**`Description`**
 
 地面最大速度
 
@@ -1476,8 +1298,6 @@ ___
 `number`
 
 • `set` **maxWalkSpeed**(`InMaxWalkSpeed`): `void`
-
-**`Description`**
 
 地面最大速度
 
@@ -1490,11 +1310,9 @@ ___
 
 ___
 
-### maxWalkSpeedCrouched  
+### maxWalkSpeedCrouched <Score text="maxWalkSpeedCrouched" /> 
 
 • `get` **maxWalkSpeedCrouched**(): `number`
-
-**`Description`**
 
 地面蹲伏行走时的最大移动速度
 
@@ -1503,8 +1321,6 @@ ___
 `number`
 
 • `set` **maxWalkSpeedCrouched**(`maxSpeed`): `void`
-
-**`Description`**
 
 地面蹲伏行走时的最大移动速度
 
@@ -1517,11 +1333,9 @@ ___
 
 ___
 
-### moveEnable  
+### moveEnable <Score text="moveEnable" /> 
 
 • `get` **moveEnable**(): `boolean`
-
-**`Description`**
 
 启用/禁用移动能力
 
@@ -1530,8 +1344,6 @@ ___
 `boolean`
 
 • `set` **moveEnable**(`value`): `void`
-
-**`Description`**
 
 启用/禁用移动能力
 
@@ -1544,11 +1356,9 @@ ___
 
 ___
 
-### moveFacingDirection  
+### moveFacingDirection <Score text="moveFacingDirection" /> 
 
 • `get` **moveFacingDirection**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
-
-**`Description`**
 
 运动面朝方向
 
@@ -1557,8 +1367,6 @@ ___
 [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
 
 • `set` **moveFacingDirection**(`InMoveFacingDirection`): `void`
-
-**`Description`**
 
 运动面朝方向
 
@@ -1571,11 +1379,9 @@ ___
 
 ___
 
-### movementAxisDirection  
+### movementAxisDirection <Score text="movementAxisDirection" /> 
 
 • `get` **movementAxisDirection**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
 
@@ -1584,8 +1390,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **movementAxisDirection**(`InMovementAxisDirection`): `void`
-
-**`Description`**
 
 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
 
@@ -1598,11 +1402,9 @@ ___
 
 ___
 
-### movementDirection  
+### movementDirection <Score text="movementDirection" /> 
 
 • `get` **movementDirection**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md)
-
-**`Description`**
 
 运动时依据的正方向
 
@@ -1620,8 +1422,6 @@ ___
 
 • `set` **movementDirection**(`InMovementDirection`): `void`
 
-**`Description`**
-
 运动时依据的正方向
 
 #### Parameters
@@ -1633,11 +1433,9 @@ ___
 
 ___
 
-### movementState  
+### movementState <Score text="movementState" /> 
 
 • `get` **movementState**(): [`MovementMode`](../enums/Gameplay.MovementMode.md)
-
-**`Description`**
 
 当前角色运动状态
 
@@ -1646,11 +1444,9 @@ ___
 [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
 
-### outOfWaterZ  
+### outOfWaterZ <Score text="outOfWaterZ" /> 
 
 • `get` **outOfWaterZ**(): `number`
-
-**`Description`**
 
 出水时Z轴方向上的速度
 
@@ -1659,8 +1455,6 @@ ___
 `number`
 
 • `set` **outOfWaterZ**(`value`): `void`
-
-**`Description`**
 
 出水时Z轴方向上的速度
 
@@ -1672,11 +1466,9 @@ ___
 
 
 
-### ragdollEnable  
+### ragdollEnable <Score text="ragdollEnable" /> 
 
 • `get` **ragdollEnable**(): `boolean`
-
-**`Description`**
 
 启用/禁用布娃娃状态
 
@@ -1685,8 +1477,6 @@ ___
 `boolean`
 
 • `set` **ragdollEnable**(`value`): `void`
-
-**`Description`**
 
 启用/禁用布娃娃状态
 
@@ -1698,11 +1488,9 @@ ___
 
 
 
-### rotateRate  
+### rotateRate <Score text="rotateRate" /> 
 
 • `get` **rotateRate**(): `number`
-
-**`Description`**
 
 最大转向速度
 
@@ -1717,8 +1505,6 @@ ___
 `number`
 
 • `set` **rotateRate**(`InRotateRate`): `void`
-
-**`Description`**
 
 最大转向速度
 
@@ -1737,11 +1523,9 @@ ___
 
 ___
 
-### scale  
+### scale <Score text="scale" /> 
 
 • `get` **scale**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 角色胶囊体的缩放, 自动同步
 
@@ -1750,8 +1534,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **scale**(`InCharacterScale`): `void`
-
-**`Description`**
 
 角色胶囊体的缩放, 自动同步
 
@@ -1764,11 +1546,9 @@ ___
 
 ___
 
-### separateBrakingFrictionEnable  
+### separateBrakingFrictionEnable <Score text="separateBrakingFrictionEnable" /> 
 
 • `get` **separateBrakingFrictionEnable**(): `boolean`
-
-**`Description`**
 
 使用单独制动摩擦
 
@@ -1777,8 +1557,6 @@ ___
 `boolean`
 
 • `set` **separateBrakingFrictionEnable**(`used`): `void`
-
-**`Description`**
 
 使用单独制动摩擦
 
@@ -1790,11 +1568,9 @@ ___
 
 
 
-### usedCapsuleCorrection  
+### usedCapsuleCorrection <Score text="usedCapsuleCorrection" /> 
 
 • `get` **usedCapsuleCorrection**(): `boolean`
-
-**`Description`**
 
 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
@@ -1803,8 +1579,6 @@ ___
 `boolean`
 
 • `set` **usedCapsuleCorrection**(`usedCapsuleCorrection`): `void`
-
-**`Description`**
 
 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
 
@@ -1817,11 +1591,9 @@ ___
 
 ___
 
-### velocity  
+### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 当前移动速度
 
@@ -1830,11 +1602,9 @@ ___
 [`Vector`](Type.Vector.md)
 
 
-### walkableFloorAngle  
+### walkableFloorAngle <Score text="walkableFloorAngle" /> 
 
 • `get` **walkableFloorAngle**(): `number`
-
-**`Description`**
 
 可行走的最大角度
 
@@ -1843,8 +1613,6 @@ ___
 `number`
 
 • `set` **walkableFloorAngle**(`InWalkableFloorAngle`): `void`
-
-**`Description`**
 
 可行走的最大角度
 
@@ -1858,11 +1626,9 @@ ___
 
 ## Methods
 
-### addImpulse  
+### addImpulse <Score text="addImpulse" /> 
 
 ▸ **addImpulse**(`Vector`, `ignoreMass?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加冲量
 
@@ -1884,11 +1650,9 @@ ___
 
 ___
 
-### addMoveInput  
+### addMoveInput <Score text="addMoveInput" /> 
 
 ▸ **addMoveInput**(`direction`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 沿着给定的方向向量添加移动输入
 
@@ -1909,11 +1673,9 @@ ___
 
 ___
 
-### appearanceReady  
+### appearanceReady <Score text="appearanceReady" /> 
 
 ▸ **appearanceReady**(): `Promise`<`void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断
 
@@ -1926,11 +1688,9 @@ ___
 异步回调
 
 
-### attach  
+### attach <Score text="attach" /> 
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将物体附着到人物角色的指定插槽
 
@@ -1945,11 +1705,9 @@ ___
 
 
 
-### clearDecorations  
+### clearDecorations <Score text="clearDecorations" /> 
 
 ▸ **clearDecorations**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清空所有挂件数据
 
@@ -1958,11 +1716,9 @@ ___
 
 ___
 
-### clearOneDecoration  
+### clearOneDecoration <Score text="clearOneDecoration" /> 
 
 ▸ **clearOneDecoration**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 删除一个挂件
 
@@ -1976,11 +1732,9 @@ ___
 
 
 
-### crouch  
+### crouch <Score text="crouch" /> 
 
 ▸ **crouch**(`isCrouch`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 下蹲
 
@@ -1994,11 +1748,9 @@ ___
 
 
 
-### getControlRotator  
+### getControlRotator <Score text="getControlRotator" /> 
 
 ▸ **getControlRotator**(`Out?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取控制器的旋转
 
@@ -2018,11 +1770,9 @@ ___
 
 ___
 
-### getDecorations  
+### getDecorations <Score text="getDecorations" /> 
 
 ▸ **getDecorations**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前挂件实例化对象的GUID
 
@@ -2035,11 +1785,9 @@ ___
 GUID数组
 
 
-### getHeadUIWidget  
+### getHeadUIWidget <Score text="getHeadUIWidget" /> 
 
 ▸ **getHeadUIWidget**(): [`UIWidget`](Gameplay.UIWidget.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头顶UIWidget
 
@@ -2052,11 +1800,9 @@ GUID数组
 头顶UIWidget对象
 
 
-### getSlotName  
+### getSlotName <Score text="getSlotName" /> 
 
 ▸ **getSlotName**(`slotType`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对应插槽名称
 
@@ -2075,11 +1821,9 @@ GUID数组
 插槽名称(string)
 
 
-### isPlayingAnimation  
+### isPlayingAnimation <Score text="isPlayingAnimation" /> 
 
 ▸ **isPlayingAnimation**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否正在播放动画
 
@@ -2092,11 +1836,9 @@ GUID数组
 是否正在播放动画
 
 
-### jump  
+### jump <Score text="jump" /> 
 
 ▸ **jump**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 跳跃
 
@@ -2105,11 +1847,9 @@ GUID数组
 
 ___
 
-### loadAnimation  
+### loadAnimation <Score text="loadAnimation" /> 
 
 ▸ **loadAnimation**(`GUID`, `sync?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 加载动画,获取到动画对象
 
@@ -2130,11 +1870,9 @@ Animation 对象
 
 ___
 
-### loadDecoration  
+### loadDecoration <Score text="loadDecoration" /> 
 
 ▸ **loadDecoration**(`decorationString`, `callback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0|0,-90,0|1,1,1",给移动角色编辑器提供的能力
 
@@ -2150,11 +1888,9 @@ ___
 
 ___
 
-### loadSlotAndEditorDataByGuid  
+### loadSlotAndEditorDataByGuid <Score text="loadSlotAndEditorDataByGuid" /> 
 
 ▸ **loadSlotAndEditorDataByGuid**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过GUID加载插槽跟角色编辑数据
 
@@ -2169,11 +1905,9 @@ ___
 
 ___
 
-### loadSlotAndEditorDataByPath  
+### loadSlotAndEditorDataByPath <Score text="loadSlotAndEditorDataByPath" /> 
 
 ▸ **loadSlotAndEditorDataByPath**(`relativePath`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过路径加载插槽跟角色编辑数据
 
@@ -2188,11 +1922,9 @@ ___
 
 ___
 
-### loadStance  
+### loadStance <Score text="loadStance" /> 
 
 ▸ **loadStance**(`GUID`, `sync?`): [`SubStance`](Gameplay.SubStance.md)
-
-**`Description`**
 
 创建一个二级姿态对象并返回
 
@@ -2219,11 +1951,9 @@ ___
 
 ___
 
-### lookAt  
+### lookAt <Score text="lookAt" /> 
 
 ▸ **lookAt**(`TargetPoint`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 角色面朝目标点
 
@@ -2237,11 +1967,9 @@ ___
 
 
 
-### playAnimation  
+### playAnimation <Score text="playAnimation" /> 
 
 ▸ **playAnimation**(`GUID`, `loopCount?`, `rate?`): [`Animation`](Gameplay.Animation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 播放动画,同时获取到动画对象,Animation对象接口是同步的
 
@@ -2263,15 +1991,13 @@ Animation 对象
 
 ___
 
-### playAnimationLocally  
+### playAnimationLocally <Score text="playAnimationLocally" /> 
 
 ▸ **playAnimationLocally**(`AnimationGuid`, `AnimationLength?`, `LoopCount?`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
 since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.
-
-**`Description`**
 
 本地播放动画
 
@@ -2287,11 +2013,9 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 
 
-### setAppearance  
+### setAppearance <Score text="setAppearance" /> 
 
 ▸ **setAppearance**<`T`\>(`clz`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置外观修改功能
 
@@ -2316,11 +2040,9 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 外观修改对象
 
 
-### setCollisionShapeAndExtent  
+### setCollisionShapeAndExtent <Score text="setCollisionShapeAndExtent" /> 
 
 ▸ **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置不同形状不同大小的碰撞体
 
@@ -2336,11 +2058,9 @@ since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 rep
 
 ___
 
-### setLocallyVisibility  
+### setLocallyVisibility <Score text="setLocallyVisibility" /> 
 
 ▸ **setLocallyVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否被显示(本地生效)
 
@@ -2355,15 +2075,13 @@ ___
 
 
 
-### stopAnimation  
+### stopAnimation <Score text="stopAnimation" /> 
 
 ▸ **stopAnimation**(`InAnimationGuid`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
 since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
-
-**`Description`**
 
 停止播放动画
 
@@ -2378,11 +2096,9 @@ since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 ___
 
-### stopStance  
+### stopStance <Score text="stopStance" /> 
 
 ▸ **stopStance**(`sync?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止任何正在播放的姿态
 
@@ -2403,11 +2119,9 @@ ___
 
 ___
 
-### swimmingDown  
+### swimmingDown <Score text="swimmingDown" /> 
 
 ▸ **swimmingDown**(`speed`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 水中下潜
 
@@ -2422,11 +2136,9 @@ ___
 
 ___
 
-### swimmingUp  
+### swimmingUp <Score text="swimmingUp" /> 
 
 ▸ **swimmingUp**(`speed`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 水中上浮
 
@@ -2441,11 +2153,9 @@ ___
 
 ___
 
-### switchToFlying  
+### switchToFlying <Score text="switchToFlying" /> 
 
 ▸ **switchToFlying**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换为飞行状态
 
@@ -2454,11 +2164,9 @@ ___
 
 ___
 
-### switchToWalking  
+### switchToWalking <Score text="switchToWalking" /> 
 
 ▸ **switchToWalking**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换为行走状态
 

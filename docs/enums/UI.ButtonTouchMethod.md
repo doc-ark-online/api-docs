@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / ButtonTouchMethod
 
-# ButtonTouchMethod <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ButtonTouchMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonTouchMethod" />
 
 按钮触摸响应规则
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Down  
+### Down <Score text="Down" /> 
 
 • **Down** = ``1``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### DownAndUp  
+### DownAndUp <Score text="DownAndUp" /> 
 
 • **DownAndUp** = ``0``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### PreciseTap  
+### PreciseTap <Score text="PreciseTap" /> 
 
 • **PreciseTap** = ``2``
 

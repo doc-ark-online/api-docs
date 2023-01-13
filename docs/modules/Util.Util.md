@@ -1,6 +1,6 @@
 Util
 
-# Util <Badge type="tip" text="Namespace" /> 
+# Util <Badge type="tip" text="Namespace" /> <Score text="Util" />
 
 ## Table of contents
 
@@ -8,6 +8,7 @@ Util
 | :-----|
 | [AssetUtil](Util.AssetUtil.md) |
 | [InputUtil](Util.InputUtil.md) |
+| [LanguageUtil](Util.LanguageUtil.md) <br> 多语言标记|
 | [LocaleUtil](Util.LocaleUtil.md) <br> 获取默认的语言和地区|
 | [MathUtil](Util.MathUtil.md) |
 | [NFTUtil](Util.NFTUtil.md) |

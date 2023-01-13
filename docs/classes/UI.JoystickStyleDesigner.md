@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / JoystickStyleDesigner
 
-# JoystickStyleDesigner <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
 摇杆信息
 
@@ -13,8 +11,6 @@
 | **[disable](UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 禁用资源|
 | **[normal](UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 普通资源|
 | **[touch](UI.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 按压资源|
-
-**`Description`**
 
 指定内容构造对象
 
@@ -31,30 +27,24 @@
 
 ## Properties
 
-### disable  
+### disable <Score text="disable" /> 
 
 • **disable**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
-
-**`Description`**
 
 禁用资源
 
 ___
 
-### normal  
+### normal <Score text="normal" /> 
 
 • **normal**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
-
-**`Description`**
 
 普通资源
 
 ___
 
-### touch  
+### touch <Score text="touch" /> 
 
 • **touch**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md)
-
-**`Description`**
 
 按压资源

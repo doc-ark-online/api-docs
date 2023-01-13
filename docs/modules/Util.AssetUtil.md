@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / AssetUtil
 
-# AssetUtil <Badge type="tip" text="Namespace" /> 
+# AssetUtil <Badge type="tip" text="Namespace" /> <Score text="AssetUtil" />
 
 ## Table of contents
 
@@ -13,11 +13,9 @@
 
 ## Functions
 
-### asyncDownloadAsset  
+### asyncDownloadAsset <Score text="asyncDownloadAsset" /> 
 
 ▸ **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源下载
 
@@ -36,11 +34,9 @@
 
 ___
 
-### isAssetExist  
+### isAssetExist <Score text="isAssetExist" /> 
 
 ▸ **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源是否存在
 
@@ -59,11 +55,9 @@ ___
 
 ___
 
-### isAssetLoaded  
+### isAssetLoaded <Score text="isAssetLoaded" /> 
 
 ▸ **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源是否加载
 
@@ -82,11 +76,9 @@ ___
 
 ___
 
-### loadAsset  
+### loadAsset <Score text="loadAsset" /> 
 
 ▸ **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源加载
 

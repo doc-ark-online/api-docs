@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / WindowUtil
 
-# WindowUtil <Badge type="tip" text="Namespace" /> 
+# WindowUtil <Badge type="tip" text="Namespace" /> <Score text="WindowUtil" />
 
 ## Table of contents
 
@@ -10,11 +10,9 @@
 
 ## Functions
 
-### getViewportSize  
+### getViewportSize <Score text="getViewportSize" /> 
 
 ▸ **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前游戏窗口尺寸
 

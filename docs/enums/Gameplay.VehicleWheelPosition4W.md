@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / VehicleWheelPosition4W
 
-# VehicleWheelPosition4W <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# VehicleWheelPosition4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4W" />
 
 四轮载具车轮位置
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### Front  
+### Front <Score text="Front" /> 
 
 • **Front** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### Rear  
+### Rear <Score text="Rear" /> 
 
 • **Rear** = ``1``
 

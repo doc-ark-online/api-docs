@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / TabGroup
 
-# TabGroup<T\> <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
 选项卡组
 
@@ -40,11 +38,9 @@
 
 ## Accessors
 
-### currentIndex  
+### currentIndex <Score text="currentIndex" /> 
 
 • `get` **currentIndex**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前选择的标签索引
 
@@ -57,11 +53,9 @@
 
 ## Methods
 
-### init  
+### init <Score text="init" /> 
 
 ▸ **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 初始化
 
@@ -78,11 +72,9 @@
 
 ___
 
-### select  
+### select <Score text="select" /> 
 
 ▸ **select**(`index`, `ignoreSame?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前的标签
 
@@ -102,11 +94,9 @@ ___
 
 ___
 
-### setSelectableChecker  
+### setSelectableChecker <Score text="setSelectableChecker" /> 
 
 ▸ **setSelectableChecker**(`selectChecker`, `thisArg`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置该标签是否可以切换的检测方法
 

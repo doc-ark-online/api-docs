@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCable
 
-# PhysicsCable <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 
 物理绳组件
 
@@ -41,11 +39,9 @@
 
 ## Accessors
 
-### collisionEnable  
+### collisionEnable <Score text="collisionEnable" /> 
 
 • `get` **collisionEnable**(): `boolean`
-
-**`Description`**
 
 获取禁用碰撞
 
@@ -56,8 +52,6 @@
 是否禁用碰撞
 
 • `set` **collisionEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置禁用碰撞
 
@@ -71,11 +65,9 @@
 
 
 
-### currentLength  
+### currentLength <Score text="currentLength" /> 
 
 • `get` **currentLength**(): `number`
-
-**`Description`**
 
 获取绳子当前长度
 
@@ -86,11 +78,9 @@
 当前长度
 
 
-### maxLength  
+### maxLength <Score text="maxLength" /> 
 
 • `get` **maxLength**(): `number`
-
-**`Description`**
 
 获取绳子最大长度
 
@@ -101,8 +91,6 @@
 最大长度
 
 • `set` **maxLength**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置绳子最大长度
 

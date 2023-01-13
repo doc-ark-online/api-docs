@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIScrollBoxAnimationType
 
-# UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 
 滚动框动画类型
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### ElasticAnimation  
+### ElasticAnimation <Score text="ElasticAnimation" /> 
 
 • **ElasticAnimation** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Limit  
+### Limit <Score text="Limit" /> 
 
 • **Limit** = ``2``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### NoneLimit  
+### NoneLimit <Score text="NoneLimit" /> 
 
 • **NoneLimit** = ``1``
 

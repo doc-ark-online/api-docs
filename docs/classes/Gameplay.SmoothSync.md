@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SmoothSync
 
-# SmoothSync <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# SmoothSync <Badge type="tip" text="Class" /> <Score text="SmoothSync" />
 
 平滑组件
 
@@ -116,11 +114,9 @@
 
 ## Accessors
 
-### extrapolationTimeLint  
+### extrapolationTimeLint <Score text="extrapolationTimeLint" /> 
 
 • `get` **extrapolationTimeLint**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取一个非拥有的对象可以推测到未来多长时间
 
@@ -133,8 +129,6 @@ extrapolationTimeLint
 
 • `set` **extrapolationTimeLint**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置一个非拥有的对象可以推测到未来多长时间
 
 
@@ -146,11 +140,9 @@ extrapolationTimeLint
 
 
 
-### positionSnapThreshold  
+### positionSnapThreshold <Score text="positionSnapThreshold" /> 
 
 • `get` **positionSnapThreshold**(): `number`
-
-**`Description`**
 
 如果一个同步对象的位置超过目标位置的positionSnapThreshold单位，它将立即跳到目标位置而不是线性插值。 <Badge type="tip" text="other" />
 
@@ -163,8 +155,6 @@ positionSnapThreshold
 
 • `set` **positionSnapThreshold**(`value`): `void`
 
-**`Description`**
-
 设置positionSnapThreshold值 <Badge type="tip" text="other" />
 
 
@@ -176,11 +166,9 @@ positionSnapThreshold
 
 
 
-### rotationSnapThreshold  
+### rotationSnapThreshold <Score text="rotationSnapThreshold" /> 
 
 • `get` **rotationSnapThreshold**(): `number`
-
-**`Description`**
 
 如果一个同步对象的旋转大于目标旋转的rotationSnapThreshold，它将立即跳转到目标旋转而不是线性插值 <Badge type="tip" text="other" />
 
@@ -192,8 +180,6 @@ positionSnapThreshold
 rotationSnapThreshold
 
 • `set` **rotationSnapThreshold**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置RotationSnapThreshold值
 
@@ -207,11 +193,9 @@ rotationSnapThreshold
 
 ___
 
-### scaleSnapThreshold  
+### scaleSnapThreshold <Score text="scaleSnapThreshold" /> 
 
 • `get` **scaleSnapThreshold**(): `number`
-
-**`Description`**
 
 如果一个同步对象的规模超过目标规模的scaleSnapThreshold单位，它将立即跳转到目标规模而不是线性插值。 <Badge type="tip" text="other" />
 
@@ -223,8 +207,6 @@ ___
 scaleSnapThreshold值
 
 • `set` **scaleSnapThreshold**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置ScaleSnapThreshold值
 
@@ -238,11 +220,9 @@ scaleSnapThreshold值
 
 ___
 
-### sceneComponentToSync  
+### sceneComponentToSync <Score text="sceneComponentToSync" /> 
 
 • `set` **sceneComponentToSync**(`object`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置在平滑同步上要同步的物体
 
@@ -256,11 +236,9 @@ ___
 
 ___
 
-### sendRate  
+### sendRate <Score text="sendRate" /> 
 
 • `get` **sendRate**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取每秒发送网络更新的次数
 
@@ -273,8 +251,6 @@ ___
 
 • `set` **sendRate**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置每秒发送网络更新的次数
 
 
@@ -286,11 +262,9 @@ ___
 
 
 
-### syncPositionEnable  
+### syncPositionEnable <Score text="syncPositionEnable" /> 
 
 • `get` **syncPositionEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否同步位置
 
@@ -305,8 +279,6 @@ false : 不同步位置
 
 • `set` **syncPositionEnable**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否同步位置
 
 
@@ -319,11 +291,9 @@ false : 不同步位置
 
 ___
 
-### syncRotationEnable  
+### syncRotationEnable <Score text="syncRotationEnable" /> 
 
 • `get` **syncRotationEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否同步旋转
 
@@ -335,8 +305,6 @@ ___
 true : 同步旋转，false : 不同步旋转
 
 • `set` **syncRotationEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否同步旋转
 
@@ -350,11 +318,9 @@ true : 同步旋转，false : 不同步旋转
 
 ___
 
-### syncScaleEnable  
+### syncScaleEnable <Score text="syncScaleEnable" /> 
 
 • `get` **syncScaleEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否同步缩放
 
@@ -369,8 +335,6 @@ false : 不同步缩放
 
 • `set` **syncScaleEnable**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否同步缩放
 
 
@@ -382,11 +346,9 @@ false : 不同步缩放
 
 
 
-### timeSmoothing  
+### timeSmoothing <Score text="timeSmoothing" /> 
 
 • `get` **timeSmoothing**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取要花多少时间才能使所有者平滑
 
@@ -398,8 +360,6 @@ false : 不同步缩放
 要花费的时间
 
 • `set` **timeSmoothing**(`value`): `void`
-
-**`Description`**
 
 设置timeSmoothing值 <Badge type="tip" text="other" />
 

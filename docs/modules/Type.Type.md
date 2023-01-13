@@ -1,6 +1,6 @@
 Type
 
-# Type <Badge type="tip" text="Namespace" /> 
+# Type <Badge type="tip" text="Namespace" /> <Score text="Type" />
 
 ## Table of contents
 
@@ -10,6 +10,7 @@ Type
 | [CollisionStatus](../enums/Type.CollisionStatus.md) <br> 碰撞属性状态|
 | [GraphicsLevel](../enums/Type.GraphicsLevel.md) <br> 画质等级|
 | [Keys](../enums/Type.Keys.md) <br> 按键Key值|
+| [LanguageType](../enums/Type.LanguageType.md) <br> 游戏语言|
 | [NetStatus](../enums/Type.NetStatus.md) <br> 同步状态|
 | [PropertyStatus](../enums/Type.PropertyStatus.md) <br> 属性状态|
 | [RuntimePlatform](../enums/Type.RuntimePlatform.md) <br> 运行平台|

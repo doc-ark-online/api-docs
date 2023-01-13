@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Trunk
 
-# HumanoidV1Trunk <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HumanoidV1Trunk <Badge type="tip" text="Class" /> <Score text="HumanoidV1Trunk" />
 
 人形对象V1身体接口
 
@@ -19,11 +17,9 @@
 
 ## Methods
 
-### getMesh  
+### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取身体模型
 
@@ -41,11 +37,9 @@
 
 ___
 
-### setMesh  
+### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置身体模型
 

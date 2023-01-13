@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Decoration
 
-# Decoration <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Decoration <Badge type="tip" text="Class" /> <Score text="Decoration" />
 
 挂件数据
 
@@ -23,51 +21,41 @@
 
 ## Properties
 
-### assetId  
+### assetId <Score text="assetId" /> 
 
 • **assetId**: `string`
-
-**`Description`**
 
 资源Id
 
 ___
 
-### relativeTransform  
+### relativeTransform <Score text="relativeTransform" /> 
 
 • **relativeTransform**: [`Transform`](Type.Transform.md)
-
-**`Description`**
 
 相对ue slot Transform
 
 ___
 
-### skeletonName  
+### skeletonName <Score text="skeletonName" /> 
 
 • **skeletonName**: `string`
-
-**`Description`**
 
 骨架名字
 
 ___
 
-### slotName  
+### slotName <Score text="slotName" /> 
 
 • **slotName**: `string`
-
-**`Description`**
 
 插槽名
 
 ## Methods
 
-### deserialize  
+### deserialize <Score text="deserialize" /> 
 
 ▸ **deserialize**(`data`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 反序列化
 
@@ -82,11 +70,9 @@ ___
 
 ___
 
-### equal  
+### equal <Score text="equal" /> 
 
 ▸ **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 比较是否是一个插槽数据
 
@@ -106,11 +92,9 @@ ___
 
 ___
 
-### serialize  
+### serialize <Score text="serialize" /> 
 
 ▸ **serialize**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取序列化String
 

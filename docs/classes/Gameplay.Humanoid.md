@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Humanoid
 
-# Humanoid <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Humanoid <Badge type="tip" text="Class" /> <Score text="Humanoid" />
 
 Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通常被用户自己实现AI逻辑操作
              可以将对应的逻辑对象拖入到场景中或调用spawnGameObject接口进行实例化
@@ -147,11 +145,9 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 ## Accessors
 
-### serverCalculateEnable  
+### serverCalculateEnable <Score text="serverCalculateEnable" /> 
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
 
@@ -172,11 +168,9 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 ___
 
-### serverMovementEnable  
+### serverMovementEnable <Score text="serverMovementEnable" /> 
 
 • `set` **serverMovementEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开关角色的移动计算
 

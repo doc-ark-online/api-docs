@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkyBox
 
-# SkyBox <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# SkyBox <Badge type="tip" text="Class" /> <Score text="SkyBox" />
 
 天空球
 
@@ -138,11 +136,9 @@
 
 ## Accessors
 
-### cloudDensity  
+### cloudDensity <Score text="cloudDensity" /> 
 
 • `get` **cloudDensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取云密度
 
@@ -155,8 +151,6 @@
 云密度
 
 • `set` **cloudDensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置云密度
 
@@ -171,11 +165,9 @@
 
 ___
 
-### cloudEnable  
+### cloudEnable <Score text="cloudEnable" /> 
 
 • `set` **cloudEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启云
 
@@ -190,11 +182,9 @@ ___
 
 ___
 
-### cloudEnabled  
+### cloudEnabled <Score text="cloudEnabled" /> 
 
 • `get` **cloudEnabled**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启云
 
@@ -208,11 +198,9 @@ ___
 
 ___
 
-### cloudOpacity  
+### cloudOpacity <Score text="cloudOpacity" /> 
 
 • `get` **cloudOpacity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取云的透明度
 
@@ -225,8 +213,6 @@ ___
 云的透明度
 
 • `set` **cloudOpacity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置云的透明度
 
@@ -241,11 +227,9 @@ ___
 
 ___
 
-### cloudSpeed  
+### cloudSpeed <Score text="cloudSpeed" /> 
 
 • `get` **cloudSpeed**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取云速度
 
@@ -258,8 +242,6 @@ ___
 云速度
 
 • `set` **cloudSpeed**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置云速度
 
@@ -274,11 +256,9 @@ ___
 
 ___
 
-### cloudTextureAssetByID  
+### cloudTextureAssetByID <Score text="cloudTextureAssetByID" /> 
 
 • `set` **cloudTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置云贴图资源ID
 
@@ -293,11 +273,9 @@ ___
 
 ___
 
-### cloudTint  
+### cloudTint <Score text="cloudTint" /> 
 
 • `get` **cloudTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取云颜色
 
@@ -311,8 +289,6 @@ ___
 
 • `set` **cloudTint**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置云颜色
 
 客户端生效
@@ -325,11 +301,9 @@ ___
 
 
 
-### moonEnable  
+### moonEnable <Score text="moonEnable" /> 
 
 • `get` **moonEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启月亮
 
@@ -342,8 +316,6 @@ ___
 是否开启月亮
 
 • `set` **moonEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启月亮
 
@@ -358,11 +330,9 @@ ___
 
 ___
 
-### moonIntensity  
+### moonIntensity <Score text="moonIntensity" /> 
 
 • `get` **moonIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取月亮亮度
 
@@ -375,8 +345,6 @@ ___
 月亮亮度
 
 • `set` **moonIntensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置月亮亮度
 
@@ -391,11 +359,9 @@ ___
 
 ___
 
-### moonSize  
+### moonSize <Score text="moonSize" /> 
 
 • `get` **moonSize**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取月亮大小
 
@@ -408,8 +374,6 @@ ___
 月亮大小
 
 • `set` **moonSize**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置月亮大小
 
@@ -424,11 +388,9 @@ ___
 
 ___
 
-### moonTextureAssetByID  
+### moonTextureAssetByID <Score text="moonTextureAssetByID" /> 
 
 • `set` **moonTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置月亮贴图资源ID
 
@@ -443,11 +405,9 @@ ___
 
 ___
 
-### moonTint  
+### moonTint <Score text="moonTint" /> 
 
 • `get` **moonTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取月亮颜色
 
@@ -461,8 +421,6 @@ ___
 
 • `set` **moonTint**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置月亮颜色
 
 客户端生效
@@ -475,11 +433,9 @@ ___
 
 
 
-### skyDomeBotTint  
+### skyDomeBotTint <Score text="skyDomeBotTint" /> 
 
 • `get` **skyDomeBotTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 天空下层颜色
 
@@ -492,8 +448,6 @@ ___
 天空下层颜色
 
 • `set` **skyDomeBotTint**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空下层颜色
 
@@ -508,11 +462,9 @@ ___
 
 ___
 
-### skyDomeGradientEnable  
+### skyDomeGradientEnable <Score text="skyDomeGradientEnable" /> 
 
 • `get` **skyDomeGradientEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启渐变效果
 
@@ -525,8 +477,6 @@ ___
 是否开启渐变效果
 
 • `set` **skyDomeGradientEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启渐变效果
 
@@ -541,11 +491,9 @@ ___
 
 ___
 
-### skyDomeHorizontalFallOff  
+### skyDomeHorizontalFallOff <Score text="skyDomeHorizontalFallOff" /> 
 
 • `get` **skyDomeHorizontalFallOff**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取地平线渐出值
 
@@ -558,8 +506,6 @@ ___
 地平线渐出值
 
 • `set` **skyDomeHorizontalFallOff**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置地平线渐出值
 
@@ -574,11 +520,9 @@ ___
 
 ___
 
-### skyDomeHorizontalTint  
+### skyDomeHorizontalTint <Score text="skyDomeHorizontalTint" /> 
 
 • `get` **skyDomeHorizontalTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 天空中层颜色
 
@@ -591,8 +535,6 @@ ___
 天空中层颜色
 
 • `set` **skyDomeHorizontalTint**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空中层颜色
 
@@ -607,11 +549,9 @@ ___
 
 ___
 
-### skyDomeIntensity  
+### skyDomeIntensity <Score text="skyDomeIntensity" /> 
 
 • `get` **skyDomeIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取天空球亮度
 
@@ -624,8 +564,6 @@ ___
 天空球亮度
 
 • `set` **skyDomeIntensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空球亮度3
 
@@ -640,11 +578,9 @@ ___
 
 ___
 
-### skyDomeTextureAssetByID  
+### skyDomeTextureAssetByID <Score text="skyDomeTextureAssetByID" /> 
 
 • `set` **skyDomeTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空球贴图
 
@@ -659,11 +595,9 @@ ___
 
 ___
 
-### skyDomeTint  
+### skyDomeTint <Score text="skyDomeTint" /> 
 
 • `get` **skyDomeTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取天空球颜色
 
@@ -676,8 +610,6 @@ ___
 天空球颜色
 
 • `set` **skyDomeTint**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空球颜色
 
@@ -692,11 +624,9 @@ ___
 
 ___
 
-### skyDomeTopTint  
+### skyDomeTopTint <Score text="skyDomeTopTint" /> 
 
 • `get` **skyDomeTopTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取天空顶层颜色
 
@@ -709,8 +639,6 @@ ___
 天空顶层颜色
 
 • `set` **skyDomeTopTint**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空顶层颜色
 
@@ -725,11 +653,9 @@ ___
 
 ___
 
-### skyPreset  
+### skyPreset <Score text="skyPreset" /> 
 
 • `get` **skyPreset**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取预设
 
@@ -742,8 +668,6 @@ ___
 返回预设
 
 • `set` **skyPreset**(`NewPreset`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置预设
 
@@ -758,11 +682,9 @@ ___
 
 ___
 
-### starEnable  
+### starEnable <Score text="starEnable" /> 
 
 • `get` **starEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启星星
 
@@ -775,8 +697,6 @@ ___
 是否开启星星
 
 • `set` **starEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启星星
 
@@ -791,11 +711,9 @@ ___
 
 ___
 
-### starIntensity  
+### starIntensity <Score text="starIntensity" /> 
 
 • `get` **starIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取星星亮度
 
@@ -808,8 +726,6 @@ ___
 星星亮度
 
 • `set` **starIntensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置星星亮度
 
@@ -824,11 +740,9 @@ ___
 
 ___
 
-### starTextureAssetByID  
+### starTextureAssetByID <Score text="starTextureAssetByID" /> 
 
 • `set` **starTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置星星贴图资源ID
 
@@ -843,11 +757,9 @@ ___
 
 ___
 
-### starTiling  
+### starTiling <Score text="starTiling" /> 
 
 • `get` **starTiling**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取星星密度
 
@@ -861,8 +773,6 @@ ___
 
 • `set` **starTiling**(`value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置星星密度
 
 客户端生效
@@ -875,11 +785,9 @@ ___
 
 
 
-### sunEnable  
+### sunEnable <Score text="sunEnable" /> 
 
 • `get` **sunEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启太阳
 
@@ -892,8 +800,6 @@ ___
 是否开启太阳
 
 • `set` **sunEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启太阳
 
@@ -908,11 +814,9 @@ ___
 
 ___
 
-### sunIntensity  
+### sunIntensity <Score text="sunIntensity" /> 
 
 • `get` **sunIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取太阳光亮度
 
@@ -925,8 +829,6 @@ ___
 太阳光亮度
 
 • `set` **sunIntensity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置太阳光亮度
 
@@ -941,11 +843,9 @@ ___
 
 ___
 
-### sunSize  
+### sunSize <Score text="sunSize" /> 
 
 • `get` **sunSize**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取太阳大小
 
@@ -958,8 +858,6 @@ ___
 太阳大小
 
 • `set` **sunSize**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置太阳大小
 
@@ -974,11 +872,9 @@ ___
 
 ___
 
-### sunTextureAssetByID  
+### sunTextureAssetByID <Score text="sunTextureAssetByID" /> 
 
 • `set` **sunTextureAssetByID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置太阳贴图资源ID
 
@@ -993,11 +889,9 @@ ___
 
 ___
 
-### sunTint  
+### sunTint <Score text="sunTint" /> 
 
 • `get` **sunTint**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取太阳颜色
 
@@ -1010,8 +904,6 @@ ___
 太阳颜色
 
 • `set` **sunTint**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置太阳颜色
 
@@ -1027,11 +919,9 @@ ___
 
 ## Methods
 
-### refresh  
+### refresh <Score text="refresh" /> 
 
 ▸ **refresh**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 天空球刷新
 
@@ -1040,11 +930,9 @@ ___
 
 ___
 
-### reset  
+### reset <Score text="reset" /> 
 
 ▸ **reset**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 重置为默认参数
 

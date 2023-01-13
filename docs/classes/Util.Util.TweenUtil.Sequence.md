@@ -1,8 +1,6 @@
 [Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Sequence
 
-# Sequence <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
 
 序列工具类，主要用于获取连续的ID
 
@@ -14,11 +12,9 @@
 
 ## Methods
 
-### nextID  
+### nextID <Score text="nextID" /> 
 
 ▸ `Static` **nextID**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取下一个ID
 

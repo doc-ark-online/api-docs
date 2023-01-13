@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotation
 
-# PhysicsRotation <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
 物理旋转轴
 
@@ -44,11 +42,9 @@
 
 ## Accessors
 
-### angularLimit  
+### angularLimit <Score text="angularLimit" /> 
 
 • `get` **angularLimit**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取角度限制值
 
@@ -57,8 +53,6 @@
 [`Vector`](Type.Vector.md)
 
 • `set` **angularLimit**(`LimitValue`): `void`
-
-**`Description`**
 
 设置角度限制值
 
@@ -71,11 +65,9 @@
 
 ___
 
-### angularVelocity  
+### angularVelocity <Score text="angularVelocity" /> 
 
 • `get` **angularVelocity**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取速度向量
 
@@ -87,8 +79,6 @@ ___
 
 • `set` **angularVelocity**(`Velocity`): `void`
 
-**`Description`**
-
 设置速度向量
 
 #### Parameters
@@ -99,11 +89,9 @@ ___
 
 
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
-
-**`Description`**
 
 获取旋转轴约束组件是否开启
 
@@ -115,8 +103,6 @@ ___
 
 • `set` **enable**(`EnableState`): `void`
 
-**`Description`**
-
 启用或关闭旋转轴约束组件
 
 #### Parameters
@@ -127,11 +113,9 @@ ___
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
-
-**`Description`**
 
 获取最大加速度
 
@@ -142,8 +126,6 @@ ___
 最大加速度
 
 • `set` **strength**(`Strength`): `void`
-
-**`Description`**
 
 设置最大加速度
 
@@ -157,11 +139,9 @@ ___
 
 ## Methods
 
-### getAngularLimitType  
+### getAngularLimitType <Score text="getAngularLimitType" /> 
 
 ▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取限制类型
 
@@ -180,11 +160,9 @@ ___
 限制类型
 
 
-### setAngularLimitType  
+### setAngularLimitType <Score text="setAngularLimitType" /> 
 
 ▸ **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置旋转类型
 

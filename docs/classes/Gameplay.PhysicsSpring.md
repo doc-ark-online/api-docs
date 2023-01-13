@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsSpring
 
-# PhysicsSpring <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 
 物理弹簧组件
 
@@ -45,11 +43,9 @@
 
 ## Accessors
 
-### currentLength  
+### currentLength <Score text="currentLength" /> 
 
 • `get` **currentLength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取弹簧当前长度
 
@@ -63,11 +59,9 @@
 
 ___
 
-### damping  
+### damping <Score text="damping" /> 
 
 • `get` **damping**(): `number`
-
-**`Description`**
 
 获取阻尼参数
 
@@ -78,8 +72,6 @@ ___
 阻尼参数
 
 • `set` **damping**(`InSpringDamping`): `void`
-
-**`Description`**
 
 设定阻尼参数
 
@@ -92,11 +84,9 @@ ___
 
 ___
 
-### defaultLength  
+### defaultLength <Score text="defaultLength" /> 
 
 • `get` **defaultLength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取弹簧静止长度（无拉伸挤压状态长度）
 
@@ -110,11 +100,9 @@ ___
 
 ___
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
-
-**`Description`**
 
 获取启用状态
 
@@ -126,8 +114,6 @@ ___
 
 • `set` **enable**(`EnableState`): `void`
 
-**`Description`**
-
 设置启用状态
 
 #### Parameters
@@ -138,11 +124,9 @@ ___
 
 
 
-### isLengthLimited  
+### isLengthLimited <Score text="isLengthLimited" /> 
 
 • `get` **isLengthLimited**(): `boolean`
-
-**`Description`**
 
 获取弹簧运动长度限定状态
 
@@ -154,8 +138,6 @@ ___
 
 • `set` **isLengthLimited**(`isLimited`): `void`
 
-**`Description`**
-
 设定弹簧运动长度限定状态
 
 #### Parameters
@@ -166,11 +148,9 @@ ___
 
 
 
-### maxStretchLength  
+### maxStretchLength <Score text="maxStretchLength" /> 
 
 • `get` **maxStretchLength**(): `number`
-
-**`Description`**
 
 获取最大伸缩长度
 
@@ -182,8 +162,6 @@ ___
 
 • `set` **maxStretchLength**(`StretchLength`): `void`
 
-**`Description`**
-
 设定最大伸缩长度
 
 #### Parameters
@@ -194,11 +172,9 @@ ___
 
 
 
-### stiffness  
+### stiffness <Score text="stiffness" /> 
 
 • `get` **stiffness**(): `number`
-
-**`Description`**
 
 获取刚度参数
 
@@ -209,8 +185,6 @@ ___
 刚度参数
 
 • `set` **stiffness**(`InSpringStiffness`): `void`
-
-**`Description`**
 
 设定刚度参数
 

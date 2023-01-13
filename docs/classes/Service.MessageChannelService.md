@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / MessageChannelService
 
-# MessageChannelService <Badge type="tip" text="Class" /> 
+# MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 
 **`Instance`**
-
-**`Description`**
 
 支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
 
@@ -16,8 +14,6 @@
              如果游戏在后台收到消息，通道会将消息缓存并在游戏回到前台后一并发送。
 
 :::
-
-**`Example`**
 
 使用示例:通道的注册、发送的使用示例
 ```ts
@@ -40,11 +36,9 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 ## Methods
 
-### registerAction  
+### registerAction <Score text="registerAction" /> 
 
 ▸ **registerAction**(`action`, `caller`, `onCall`): `void`
-
-**`Description`**
 
 注册需要收到消息的action以及对应要调用的回调函数
 
@@ -56,8 +50,6 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
              注册action需要在收到消息之前，请保证注册时机足够早
 
 :::
-
-**`Example`**
 
 使用示例:通道注册action
 ```ts
@@ -76,11 +68,9 @@ Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", t
 
 ___
 
-### send  
+### send <Score text="send" /> 
 
 ▸ **send**(`message`): `void`
-
-**`Description`**
 
 发送消息到通道上
 
@@ -94,8 +84,6 @@ ___
              消息需要是Json格式的字符串，包含"action"字段
 
 :::
-
-**`Example`**
 
 使用示例:通道广播消息
 ```ts
@@ -112,11 +100,9 @@ Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction
 
 ___
 
-### sendTo  
+### sendTo <Score text="sendTo" /> 
 
 ▸ **sendTo**(`toWhom`, `message`): `void`
-
-**`Description`**
 
 发送消息给指定对象
 
@@ -128,8 +114,6 @@ ___
              消息需要是Json格式的字符串，包含"action"字段
 
 :::
-
-**`Example`**
 
 使用示例:通道私发消息
 ```ts
@@ -147,11 +131,9 @@ Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceive
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md)
-
-**`Description`**
 
 获取API实例进行调用
 
@@ -162,8 +144,6 @@ ___
 无
 
 :::
-
-**`Example`**
 
 使用示例:通道发送消息
 ```ts

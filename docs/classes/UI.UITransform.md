@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UITransform
 
-# UITransform <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
 节点Transform
 
@@ -12,8 +10,6 @@
 | :-----|
 | **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 位置|
 | **[size](UI.UITransform.md#size)**: [`Vector2`](Type.Vector2.md) <br> 大小|
-
-**`Description`**
 
 构造每一个值
 
@@ -31,8 +27,6 @@
 
 • **new UITransform**(`xy`, `wh`)
 
-**`Description`**
-
 通过点构造
 
 **`Effect`**
@@ -47,20 +41,16 @@
 
 ## Properties
 
-### position  
+### position <Score text="position" /> 
 
 • **position**: [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 位置
 
 ___
 
-### size  
+### size <Score text="size" /> 
 
 • **size**: [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 大小

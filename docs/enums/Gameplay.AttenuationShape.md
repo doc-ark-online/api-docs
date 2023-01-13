@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationShape
 
-# AttenuationShape <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
 音效衰减形状
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Box  
+### Box <Score text="Box" /> 
 
 • **Box** = ``2``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Capsule  
+### Capsule <Score text="Capsule" /> 
 
 • **Capsule** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### Sphere  
+### Sphere <Score text="Sphere" /> 
 
 • **Sphere** = ``0``
 

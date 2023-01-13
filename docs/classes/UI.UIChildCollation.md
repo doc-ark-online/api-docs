@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UIChildCollation
 
-# UIChildCollation <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
 容器自动布局子项排序规则
 
@@ -12,8 +10,6 @@
 | :-----|
 | **[horizontalCollation](UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md) <br> 水平适应规则|
 | **[verticalCollation](UI.UIChildCollation.md#verticalcollation)**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md) <br> 垂直适应规则|
-
-**`Description`**
 
 构造具体规则方法
 
@@ -29,20 +25,16 @@
 
 ## Properties
 
-### horizontalCollation  
+### horizontalCollation <Score text="horizontalCollation" /> 
 
 • **horizontalCollation**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md)
-
-**`Description`**
 
 水平适应规则
 
 ___
 
-### verticalCollation  
+### verticalCollation <Score text="verticalCollation" /> 
 
 • **verticalCollation**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md)
-
-**`Description`**
 
 垂直适应规则

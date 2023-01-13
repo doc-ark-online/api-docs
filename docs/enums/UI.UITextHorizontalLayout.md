@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / UITextHorizontalLayout
 
-# UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
 文本框规则显示规则限制
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### AutoWarpText  
+### AutoWarpText <Score text="AutoWarpText" /> 
 
 • **AutoWarpText** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Clipping  
+### Clipping <Score text="Clipping" /> 
 
 • **Clipping** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### NoClipping  
+### NoClipping <Score text="NoClipping" /> 
 
 • **NoClipping** = ``2``
 

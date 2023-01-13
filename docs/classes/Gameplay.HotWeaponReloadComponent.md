@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
-# HotWeaponReloadComponent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
 热武器换弹组件
 
@@ -26,51 +24,41 @@
 
 ## Properties
 
-### onEndReloadClient  
+### onEndReloadClient <Score text="onEndReloadClient" /> 
 
 • **onEndReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 [客户端] 结束换弹时执行绑定函数
 
 ___
 
-### onEndReloadServer  
+### onEndReloadServer <Score text="onEndReloadServer" /> 
 
 • **onEndReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 [服务端] 结束换弹时执行绑定函数
 
 ___
 
-### onStartReloadClient  
+### onStartReloadClient <Score text="onStartReloadClient" /> 
 
 • **onStartReloadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 [客户端] 开始换弹时执行绑定函数
 
 ___
 
-### onStartReloadServer  
+### onStartReloadServer <Score text="onStartReloadServer" /> 
 
 • **onStartReloadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 [服务端] 开始换弹时执行绑定函数
 
 ## Accessors
 
-### animationGuid  
+### animationGuid <Score text="animationGuid" /> 
 
 • `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取绑定的动画GUID
 
@@ -82,8 +70,6 @@ ___
 绑定的动画GUID
 
 • `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置动画 GUID
 
@@ -97,11 +83,9 @@ ___
 
 ___
 
-### reloadDuration  
+### reloadDuration <Score text="reloadDuration" /> 
 
 • `get` **reloadDuration**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取换弹时间
 
@@ -113,8 +97,6 @@ ___
 是换弹时间
 
 • `set` **reloadDuration**(`time`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置换弹时间
 
@@ -134,11 +116,9 @@ ___
 
 ## Methods
 
-### hadAnimationGuid  
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
 ▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否有动画GUID
 

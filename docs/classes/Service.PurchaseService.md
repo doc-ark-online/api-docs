@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / PurchaseService
 
-# PurchaseService <Badge type="tip" text="Class" /> 
+# PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
 **`Instance`**
-
-**`Description`**
 
 应用内购服务
 
@@ -29,11 +27,9 @@
 
 ## Accessors
 
-### onArkBalanceUpdated  
+### onArkBalanceUpdated <Score text="onArkBalanceUpdated" /> 
 
 • `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取Ark币余额更新的委托
 
@@ -52,11 +48,9 @@ Ark币余额更新的委托
 
 ___
 
-### onOrderDelivered  
+### onOrderDelivered <Score text="onOrderDelivered" /> 
 
 • `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取订单发货的委托
 
@@ -76,11 +70,9 @@ ___
 
 ## Methods
 
-### getArkBalance  
+### getArkBalance <Score text="getArkBalance" /> 
 
 ▸ **getArkBalance**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取Ark币余额
 
@@ -94,11 +86,9 @@ ___
 
 ___
 
-### placeOrder  
+### placeOrder <Score text="placeOrder" /> 
 
 ▸ **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 下单指定数量的指定商品
 
@@ -120,11 +110,9 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取应用内购管理器全局实例
 

@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / StanceBlendMode
 
-# StanceBlendMode <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 
 姿态混合模式
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### BlendLower  
+### BlendLower <Score text="BlendLower" /> 
 
 • **BlendLower** = ``2``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### BlendUpper  
+### BlendUpper <Score text="BlendUpper" /> 
 
 • **BlendUpper** = ``1``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### None  
+### None <Score text="None" /> 
 
 • **None** = ``0``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### WholeBody  
+### WholeBody <Score text="WholeBody" /> 
 
 • **WholeBody** = ``3``
 

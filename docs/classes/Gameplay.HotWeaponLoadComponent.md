@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponLoadComponent
 
-# HotWeaponLoadComponent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
 热武器上膛组件
 
@@ -27,51 +25,41 @@
 
 ## Properties
 
-### onEndLoadClient  
+### onEndLoadClient <Score text="onEndLoadClient" /> 
 
 • **onEndLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端上膛结束时执行绑定函数
 
 ___
 
-### onEndLoadServer  
+### onEndLoadServer <Score text="onEndLoadServer" /> 
 
 • **onEndLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器上膛结束时执行绑定函数
 
 ___
 
-### onStartLoadClient  
+### onStartLoadClient <Score text="onStartLoadClient" /> 
 
 • **onStartLoadClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端开始上膛时执行绑定函数
 
 ___
 
-### onStartLoadServer  
+### onStartLoadServer <Score text="onStartLoadServer" /> 
 
 • **onStartLoadServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器开始上膛时执行绑定函数
 
 ## Accessors
 
-### animationGuid  
+### animationGuid <Score text="animationGuid" /> 
 
 • `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取绑定的动画GUID
 
@@ -83,8 +71,6 @@ ___
 绑定的动画GUID
 
 • `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置动画 GUID
 
@@ -98,11 +84,9 @@ ___
 
 ___
 
-### loadAfterFireEnable  
+### loadAfterFireEnable <Score text="loadAfterFireEnable" /> 
 
 • `get` **loadAfterFireEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启开火后自动上膛的功能
 
@@ -114,8 +98,6 @@ ___
 是否开启开火后自动上膛的功能
 
 • `set` **loadAfterFireEnable**(`enable`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启开火后自动上膛的功能
 
@@ -135,11 +117,9 @@ ___
 
 ___
 
-### loadDuration  
+### loadDuration <Score text="loadDuration" /> 
 
 • `get` **loadDuration**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取上膛时间
 
@@ -151,8 +131,6 @@ ___
 上膛时间
 
 • `set` **loadDuration**(`time`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置上膛时间
 
@@ -167,11 +145,9 @@ ___
 
 ## Methods
 
-### hadAnimationGuid  
+### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
 ▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否有动画GUID
 

@@ -1,6 +1,6 @@
 [Util](Util.Util.md) / MathUtil
 
-# MathUtil <Badge type="tip" text="Namespace" /> 
+# MathUtil <Badge type="tip" text="Namespace" /> <Score text="MathUtil" />
 
 ## Table of contents
 
@@ -57,361 +57,289 @@
 
 ## Variables
 
-### D2R  
+### D2R <Score text="D" /> 
 
 • `Const` **D2R**: `number`
-
-**`Description`**
 
 角度转换弧度参数
 
 ___
 
-### DBL\_DECIMAL\_DIG  
+### DBL\_DECIMAL\_DIG <Score text="DBL" /> 
 
 • `Const` **DBL\_DECIMAL\_DIG**: ``17``
-
-**`Description`**
 
 序列化/反序列化浮点值所要求的十进制精度 (double)
 
 ___
 
-### DBL\_DIG  
+### DBL\_DIG <Score text="DBL" /> 
 
 • `Const` **DBL\_DIG**: ``15``
-
-**`Description`**
 
 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (double)
 
 ___
 
-### DBL\_EPSILON  
+### DBL\_EPSILON <Score text="DBL" /> 
 
 • `Const` **DBL\_EPSILON**: ``2.220446049250313e-16``
-
-**`Description`**
 
 1 和大于 1 的最小浮点数之间的差值。(double)
 
 ___
 
-### DBL\_HAS\_SUBNORM  
+### DBL\_HAS\_SUBNORM <Score text="DBL" /> 
 
 • `Const` **DBL\_HAS\_SUBNORM**: ``1``
-
-**`Description`**
 
 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。 (double)
 
 ___
 
-### DBL\_MANT\_DIG  
+### DBL\_MANT\_DIG <Score text="DBL" /> 
 
 • `Const` **DBL\_MANT\_DIG**: ``53``
-
-**`Description`**
 
 有效数字（尾数）的位数(double)
 
 ___
 
-### DBL\_MAX  
+### DBL\_MAX <Score text="DBL" /> 
 
 • `Const` **DBL\_MAX**: ``1.7976931348623157e+308``
-
-**`Description`**
 
 最大的有效浮点数的值（为正数），也即浮点数的最大值。(double)
 
 ___
 
-### DBL\_MAX\_10\_EXP  
+### DBL\_MAX\_10\_EXP <Score text="DBL" /> 
 
 • `Const` **DBL\_MAX\_10\_EXP**: ``308``
-
-**`Description`**
 
 分别为能够使 10 的该整数减一次幂为可表示的有限的最大正整数 (double)
 
 ___
 
-### DBL\_MAX\_EXP  
+### DBL\_MAX\_EXP <Score text="DBL" /> 
 
 • `Const` **DBL\_MAX\_EXP**: ``1024``
-
-**`Description`**
 
 最大二进制指数 (double)
 
 ___
 
-### DBL\_MIN  
+### DBL\_MIN <Score text="DBL" /> 
 
 • `Const` **DBL\_MIN**: ``2.2250738585072014e-308``
-
-**`Description`**
 
 最小规格化正数值 (double)
 
 ___
 
-### DBL\_MIN\_10\_EXP  
+### DBL\_MIN\_10\_EXP <Score text="DBL" /> 
 
 • `Const` **DBL\_MIN\_10\_EXP**: ``-307``
-
-**`Description`**
 
 能够使 10 的该整数减一次幂为规格化的最小负整数 (double)
 
 ___
 
-### DBL\_MIN\_EXP  
+### DBL\_MIN\_EXP <Score text="DBL" /> 
 
 • `Const` **DBL\_MIN\_EXP**: ``-1021``
-
-**`Description`**
 
 能够使FLT_RADIX 的该整数减一次幂为规格化的最小负整数 (double)
 
 ___
 
-### DBL\_RADIX  
+### DBL\_RADIX <Score text="DBL" /> 
 
 • `Const` **DBL\_RADIX**: ``2``
-
-**`Description`**
 
 基数(进制)(double)
 
 ___
 
-### DBL\_TRUE\_MIN  
+### DBL\_TRUE\_MIN <Score text="DBL" /> 
 
 • `Const` **DBL\_TRUE\_MIN**: ``5e-324``
-
-**`Description`**
 
 最小正数值(double)
 
 ___
 
-### EPSILON  
+### EPSILON <Score text="EPSILON" /> 
 
 • `Const` **EPSILON**: ``1e-7``
-
-**`Description`**
 
 最小误差数
 
 ___
 
-### FLOAT\_NON\_FRACTIONAL  
+### FLOAT\_NON\_FRACTIONAL <Score text="FLOAT" /> 
 
 • `Const` **FLOAT\_NON\_FRACTIONAL**: ``8388608``
-
-**`Description`**
 
 所有大于或等于此值的单精度浮点数都没有小数
 
 ___
 
-### FLT\_DECIMAL\_DIG  
+### FLT\_DECIMAL\_DIG <Score text="FLT" /> 
 
 • `Const` **FLT\_DECIMAL\_DIG**: ``9``
-
-**`Description`**
 
 序列化/反序列化浮点值所要求的十进制精度 (float)
 
 ___
 
-### FLT\_DIG  
+### FLT\_DIG <Score text="FLT" /> 
 
 • `Const` **FLT\_DIG**: ``6``
-
-**`Description`**
 
 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (float)
 
 ___
 
-### FLT\_EPSILON  
+### FLT\_EPSILON <Score text="FLT" /> 
 
 • `Const` **FLT\_EPSILON**: ``1.192092896e-7``
-
-**`Description`**
 
 1 和大于 1 的最小浮点数之间的差值。(float)
 
 ___
 
-### FLT\_GUARD  
+### FLT\_GUARD <Score text="FLT" /> 
 
 • `Const` **FLT\_GUARD**: ``0``
-
-**`Description`**
 
 算术结果中是否使用保护位(例如 0)
 
 ___
 
-### FLT\_HAS\_SUBNORM  
+### FLT\_HAS\_SUBNORM <Score text="FLT" /> 
 
 • `Const` **FLT\_HAS\_SUBNORM**: ``1``
-
-**`Description`**
 
 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。
 
 ___
 
-### FLT\_MANT\_DIG  
+### FLT\_MANT\_DIG <Score text="FLT" /> 
 
 • `Const` **FLT\_MANT\_DIG**: ``24``
-
-**`Description`**
 
 有效数字（尾数）的位数 (float)
 
 ___
 
-### FLT\_MAX  
+### FLT\_MAX <Score text="FLT" /> 
 
 • `Const` **FLT\_MAX**: ``3.402823466e+38``
-
-**`Description`**
 
 最大的有效浮点数的值(为正数)，也即浮点数的最大值。(float)
 
 ___
 
-### FLT\_MAX\_10\_EXP  
+### FLT\_MAX\_10\_EXP <Score text="FLT" /> 
 
 • `Const` **FLT\_MAX\_10\_EXP**: ``38``
-
-**`Description`**
 
 转换成十进制形式后，规格化浮点数的指数的最大值（为正数）。 (float)
 
 ___
 
-### FLT\_MAX\_EXP  
+### FLT\_MAX\_EXP <Score text="FLT" /> 
 
 • `Const` **FLT\_MAX\_EXP**: ``128``
-
-**`Description`**
 
 最大二进制指数 (float)
 
 ___
 
-### FLT\_MIN  
+### FLT\_MIN <Score text="FLT" /> 
 
 • `Const` **FLT\_MIN**: ``1.175494351e-38``
-
-**`Description`**
 
 最小正规值 (float)
 
 ___
 
-### FLT\_MIN\_10\_EXP  
+### FLT\_MIN\_10\_EXP <Score text="FLT" /> 
 
 • `Const` **FLT\_MIN\_10\_EXP**: ``-37``
-
-**`Description`**
 
 最小十进制指数 (float)
 
 ___
 
-### FLT\_MIN\_EXP  
+### FLT\_MIN\_EXP <Score text="FLT" /> 
 
 • `Const` **FLT\_MIN\_EXP**: ``-125``
-
-**`Description`**
 
 最小二进制指数 (float)
 
 ___
 
-### FLT\_NORMALIZE  
+### FLT\_NORMALIZE <Score text="FLT" /> 
 
 • `Const` **FLT\_NORMALIZE**: ``0``
-
-**`Description`**
 
 指示应始终规范化浮点数。
 
 ___
 
-### FLT\_RADIX  
+### FLT\_RADIX <Score text="FLT" /> 
 
 • `Const` **FLT\_RADIX**: ``2``
-
-**`Description`**
 
 基数(进制)(float)
 
 ___
 
-### FLT\_TRUE\_MIN  
+### FLT\_TRUE\_MIN <Score text="FLT" /> 
 
 • `Const` **FLT\_TRUE\_MIN**: ``1.401298464e-45``
-
-**`Description`**
 
 最小正数值 (float)
 
 ___
 
-### HALF\_PI  
+### HALF\_PI <Score text="HALF" /> 
 
 • `Const` **HALF\_PI**: ``1.57079632679``
-
-**`Description`**
 
 PI/2
 
 ___
 
-### INV\_PI  
+### INV\_PI <Score text="INV" /> 
 
 • `Const` **INV\_PI**: ``0.31830988618``
-
-**`Description`**
 
 1/PI
 
 ___
 
-### R2D  
+### R2D <Score text="R" /> 
 
 • `Const` **R2D**: `number`
-
-**`Description`**
 
 弧度转换角度参数
 
 ___
 
-### SIGN\_BIT  
+### SIGN\_BIT <Score text="SIGN" /> 
 
 • `Const` **SIGN\_BIT**: `number`
-
-**`Description`**
 
 字节偏移
 
 ## Functions
 
-### clamp  
+### clamp <Score text="clamp" /> 
 
 ▸ **clamp**(`a`, `min`, `max`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 数值a在最小值和最大值之间，包括最小值和最大值
 
@@ -432,11 +360,9 @@ ___
 
 ___
 
-### cos  
+### cos <Score text="cos" /> 
 
 ▸ **cos**(`a`): `number`
-
-**`Description`**
 
 计算cos值 <Badge type="tip" text="other" />
 
@@ -455,11 +381,9 @@ cos值
 
 ___
 
-### degreesToRadians  
+### degreesToRadians <Score text="degreesToRadians" /> 
 
 ▸ **degreesToRadians**(`a`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据输入的度数返回弧度值
 
@@ -478,11 +402,9 @@ ___
 
 ___
 
-### fmod  
+### fmod <Score text="fmod" /> 
 
 ▸ **fmod**(`x`, `y`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回 数值x 除以 数值y 的余数
 
@@ -502,11 +424,9 @@ ___
 
 ___
 
-### lerp  
+### lerp <Score text="lerp" /> 
 
 ▸ **lerp**(`a`, `b`, `alpha`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
 
@@ -533,11 +453,9 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 ___
 
-### radiansToDegrees  
+### radiansToDegrees <Score text="radiansToDegrees" /> 
 
 ▸ **radiansToDegrees**(`a`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据输入的弧度值返回度数
 
@@ -556,11 +474,9 @@ ___
 
 ___
 
-### randomFloat  
+### randomFloat <Score text="randomFloat" /> 
 
 ▸ **randomFloat**(`min`, `max`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取随机范围内浮点数[包含min, 不包含max)
 
@@ -580,11 +496,9 @@ ___
 
 ___
 
-### randomInt  
+### randomInt <Score text="randomInt" /> 
 
 ▸ **randomInt**(`min`, `max`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取随机范围内整数[包含min, 不包含max)
 
@@ -604,11 +518,9 @@ ___
 
 ___
 
-### sin  
+### sin <Score text="sin" /> 
 
 ▸ **sin**(`a`): `number`
-
-**`Description`**
 
 计算sin值 <Badge type="tip" text="other" />
 
@@ -627,11 +539,9 @@ sin值
 
 ___
 
-### tan  
+### tan <Score text="tan" /> 
 
 ▸ **tan**(`a`): `number`
-
-**`Description`**
 
 计算tan值 <Badge type="tip" text="other" />
 

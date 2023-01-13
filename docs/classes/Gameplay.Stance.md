@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Stance
 
-# Stance <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
 姿态
 
@@ -21,8 +19,6 @@
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
 | **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现|
 
-**`Description`**
-
 构造函数
 
 **`Effect`**
@@ -38,11 +34,9 @@
 
 ## Methods
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 播放这个姿态对象, 并返回执行结果
 
@@ -64,11 +58,9 @@
 
 ___
 
-### playInternal  
+### playInternal <Score text="playInternal" /> 
 
 ▸ `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 播放姿态的内部实现
 
@@ -81,11 +73,9 @@ ___
 
 ___
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止这个姿态对象, 并返回执行结果
 
@@ -107,11 +97,9 @@ ___
 
 ___
 
-### stopInternal  
+### stopInternal <Score text="stopInternal" /> 
 
 ▸ **stopInternal**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止姿态的内部实现
 

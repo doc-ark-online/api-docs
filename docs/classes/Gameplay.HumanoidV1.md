@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
 
-# HumanoidV1 <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
 
 人形对象V1接口
 
@@ -48,8 +46,6 @@
 :::
 
 
-**`Description`**
-
 构造函数
 
 #### Parameters
@@ -60,40 +56,32 @@
 
 ## Properties
 
-### face  
+### face <Score text="face" /> 
 
 • **face**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md)
-
-**`Description`**
 
 脸部
 
 ___
 
-### hair  
+### hair <Score text="hair" /> 
 
 • **hair**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md)
-
-**`Description`**
 
 头发
 
 
-### trunk  
+### trunk <Score text="trunk" /> 
 
 • **trunk**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md)
-
-**`Description`**
 
 身体
 
 ## Methods
 
-### getWholeBody  
+### getWholeBody <Score text="getWholeBody" /> 
 
 ▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取全身模型
 
@@ -110,11 +98,9 @@ ___
 [IHumanoidV1Part](../interfaces/Gameplay.IHumanoidV1Part.md).[getWholeBody](../interfaces/Gameplay.IHumanoidV1Part.md#getwholebody)
 
 
-### setWholeBody  
+### setWholeBody <Score text="setWholeBody" /> 
 
 ▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置全身模型
 

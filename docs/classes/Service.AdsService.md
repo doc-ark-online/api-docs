@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / AdsService
 
-# AdsService <Badge type="tip" text="Class" /> 
+# AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
 **`Instance`**
-
-**`Description`**
 
 广告服务，支持激励/插屏类型
 
@@ -25,11 +23,9 @@
 
 ## Methods
 
-### isActive  
+### isActive <Score text="isActive" /> 
 
 ▸ **isActive**(`adsType`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 广告是否激活
 
@@ -48,11 +44,9 @@ true:该类型广告已激活，false:该类型广告未激活
 
 ___
 
-### isReady  
+### isReady <Score text="isReady" /> 
 
 ▸ **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 广告是否准备好
 
@@ -73,11 +67,9 @@ ___
 
 ___
 
-### show  
+### show <Score text="show" /> 
 
 ▸ **show**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 展示广告
 
@@ -92,11 +84,9 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`AdsService`](Service.AdsService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取广告服务管理器全局实例
 

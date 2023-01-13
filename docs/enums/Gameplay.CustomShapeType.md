@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / CustomShapeType
 
-# CustomShapeType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 
 碰撞体形状类型*
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Box  
+### Box <Score text="Box" /> 
 
 • **Box** = ``2``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### HorizontalCapsule  
+### HorizontalCapsule <Score text="HorizontalCapsule" /> 
 
 • **HorizontalCapsule** = ``1``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### Sphere  
+### Sphere <Score text="Sphere" /> 
 
 • **Sphere** = ``3``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### VerticalCapsule  
+### VerticalCapsule <Score text="VerticalCapsule" /> 
 
 • **VerticalCapsule** = ``0``
 

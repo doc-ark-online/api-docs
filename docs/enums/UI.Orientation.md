@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / Orientation
 
-# Orientation <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
 滚动框类型
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### OrientHorizontal  
+### OrientHorizontal <Score text="OrientHorizontal" /> 
 
 • **OrientHorizontal** = ``0``
 
@@ -23,7 +21,7 @@
 
 ___
 
-### OrientVertical  
+### OrientVertical <Score text="OrientVertical" /> 
 
 • **OrientVertical** = ``1``
 

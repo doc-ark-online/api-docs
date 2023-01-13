@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseType
 
-# ImpulseType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ImpulseType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseType" />
 
 冲量的应用方式
 
@@ -15,7 +13,7 @@
 
 ## Enumeration Members
 
-### Absolute  
+### Absolute <Score text="Absolute" /> 
 
 • **Absolute** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Relative  
+### Relative <Score text="Relative" /> 
 
 • **Relative** = ``1``
 

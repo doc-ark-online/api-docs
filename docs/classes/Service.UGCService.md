@@ -1,10 +1,8 @@
 [Service](../modules/Service.Service.md) / UGCService
 
-# UGCService <Badge type="tip" text="Class" /> 
+# UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
 **`Instance`**
-
-**`Description`**
 
 用户建造服务
 
@@ -26,11 +24,9 @@
 
 ## Methods
 
-### createNewLocalGameFromTemplate  
+### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
 ▸ **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 以指定模板创建本地工程，并获取工程路径
 
@@ -43,8 +39,6 @@
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 :::
-
-**`Example`**
 
 使用示例: 模板信息包含如下字段:
 ```ts
@@ -66,11 +60,9 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestLocalUGCGameList  
+### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
 ▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
-
-**`Description`**
 
 获取当前手机本地的UGC工程列表
 
@@ -83,8 +75,6 @@ ___
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
 
 :::
-
-**`Example`**
 
 使用示例: 模板信息包含如下字段:
 ```ts
@@ -101,11 +91,9 @@ parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id�
 
 ___
 
-### requestPublishedUGCGameList  
+### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
 ▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
-
-**`Description`**
 
 获取当前玩家已发布的UGC游戏列表
 
@@ -118,8 +106,6 @@ ___
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 :::
-
-**`Example`**
 
 使用示例: 模板信息包含如下字段:
 ```ts
@@ -150,11 +136,9 @@ ___
 
 ___
 
-### requestUGCTemplateList  
+### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
 ▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
-
-**`Description`**
 
 获取模板列表，可以分页方式查询
 
@@ -167,8 +151,6 @@ ___
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
 :::
-
-**`Example`**
 
 使用示例: 模板信息包含如下字段:
 ```ts
@@ -201,11 +183,9 @@ ___
 
 ___
 
-### getInstance  
+### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取用户建造管理器全局实例
 

@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / CameraControlType
 
-# CameraControlType <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
 相机控制模式
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### CameraType  
+### CameraType <Score text="CameraType" /> 
 
 • **CameraType** = ``2``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### MoveType  
+### MoveType <Score text="MoveType" /> 
 
 • **MoveType** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### None  
+### None <Score text="None" /> 
 
 • **None** = ``0``
 

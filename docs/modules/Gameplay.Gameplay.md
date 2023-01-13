@@ -1,6 +1,6 @@
 Gameplay
 
-# Gameplay <Badge type="tip" text="Namespace" /> 
+# Gameplay <Badge type="tip" text="Namespace" /> <Score text="Gameplay" />
 
 ## Table of contents
 
@@ -195,11 +195,9 @@ Gameplay
 
 ## Type Aliases
 
-### CameraShakeData  
+### CameraShakeData <Score text="CameraShakeData" /> 
 
 Ƭ **CameraShakeData**: `Object`
-
-**`Description`**
 
 摄像机震动数据
 
@@ -223,11 +221,9 @@ Gameplay
 
 ___
 
-### CameraSystemData  
+### CameraSystemData <Score text="CameraSystemData" /> 
 
 Ƭ **CameraSystemData**: `Object`
-
-**`Description`**
 
 摄像机属性数据
 
@@ -267,7 +263,7 @@ ___
 
 ___
 
-### Constructor  
+### Constructor <Score text="Constructor" /> 
 
 Ƭ **Constructor**<`T`\>: (...`args`: `any`[]) => `T`
 
@@ -281,8 +277,6 @@ ___
 
 • (`...args`)
 
-**`Description`**
-
 角色形象修改构造类型
 
 ##### Parameters
@@ -293,25 +287,21 @@ ___
 
 ___
 
-### DecorationTuple  
+### DecorationTuple <Score text="DecorationTuple" /> 
 
 Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`]
-
-**`Description`**
 
 运行时态角色身上的挂件数据
 
 ___
 
-### EmptyCallback  
+### EmptyCallback <Score text="EmptyCallback" /> 
 
 Ƭ **EmptyCallback**: () => `void`
 
 #### Type declaration
 
 ▸ (): `void`
-
-**`Description`**
 
 空的回调函数类型
 
@@ -321,15 +311,13 @@ ___
 
 ___
 
-### LoadAppearanceDataAllCompletedCallback  
+### LoadAppearanceDataAllCompletedCallback <Score text="LoadAppearanceDataAllCompletedCallback" /> 
 
 Ƭ **LoadAppearanceDataAllCompletedCallback**: () => `void`
 
 #### Type declaration
 
 ▸ (): `void`
-
-**`Description`**
 
 角色编辑器数据加载完成后的回调
 
@@ -339,15 +327,13 @@ ___
 
 ___
 
-### OnMovementStateChanged  
+### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
 
 Ƭ **OnMovementStateChanged**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void`
 
 #### Type declaration
 
 ▸ (`mode`): `void`
-
-**`Description`**
 
 移动状态切换回调
 
@@ -363,15 +349,13 @@ ___
 
 ___
 
-### OnRecvChatMessage  
+### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
 
 Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`nCount`, `ChatContent`): `void`
-
-**`Description`**
 
 接收聊天信息回调方法类型
 
@@ -388,11 +372,9 @@ ___
 
 ___
 
-### Oscillator  
+### Oscillator <Score text="Oscillator" /> 
 
 Ƭ **Oscillator**: `Object`
-
-**`Description`**
 
 震动数值
 
@@ -412,15 +394,13 @@ ___
 
 ___
 
-### SetAppearanceDataCallback  
+### SetAppearanceDataCallback <Score text="SetAppearanceDataCallback" /> 
 
 Ƭ **SetAppearanceDataCallback**: (`APIName`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`APIName`): `void`
-
-**`Description`**
 
 设置编辑数据完成的回调
 
@@ -436,15 +416,13 @@ ___
 
 ___
 
-### StringCallback  
+### StringCallback <Score text="StringCallback" /> 
 
 Ƭ **StringCallback**: (`str`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`str`): `void`
-
-**`Description`**
 
 返回String的回调
 
@@ -460,11 +438,9 @@ ___
 
 ___
 
-### VehicleGearData  
+### VehicleGearData <Score text="VehicleGearData" /> 
 
 Ƭ **VehicleGearData**: `Object`
-
-**`Description`**
 
 四轮载具挡位属性
 
@@ -479,11 +455,9 @@ ___
 
 ___
 
-### VehicleWheelData  
+### VehicleWheelData <Score text="VehicleWheelData" /> 
 
 Ƭ **VehicleWheelData**: `Object`
-
-**`Description`**
 
 四轮载具车轮属性
 
@@ -497,15 +471,13 @@ ___
 
 ___
 
-### onAppearanceDataChanged  
+### onAppearanceDataChanged <Score text="onAppearanceDataChanged" /> 
 
 Ƭ **onAppearanceDataChanged**: (`GUID`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`GUID`): `void`
-
-**`Description`**
 
 角色身上GUID切换成功回调
 
@@ -521,11 +493,9 @@ ___
 
 ## Functions
 
-### addOutlineEffect  
+### addOutlineEffect <Score text="addOutlineEffect" /> 
 
 ▸ **addOutlineEffect**(`obj`, `OutlineColor?`, `OutlineWidth?`, `OutlineDepthOffset?`, `OutlineClampValue?`, `considerCameraPosition?`, `outlineSilhouetteOnly?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加描边效果
 
@@ -546,11 +516,9 @@ ___
 
 ___
 
-### angleCheck  
+### angleCheck <Score text="angleCheck" /> 
 
 ▸ **angleCheck**(`StartLocation`, `StartDirection`, `TargetLocation`, `Angle`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 角度检查
 
@@ -572,11 +540,9 @@ true，在角度范围内
 
 ___
 
-### asyncGetCurrentPlayer  
+### asyncGetCurrentPlayer <Score text="asyncGetCurrentPlayer" /> 
 
 ▸ **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步获取当前玩家
 
@@ -589,11 +555,9 @@ ___
 
 ___
 
-### asyncGetPlayer  
+### asyncGetPlayer <Score text="asyncGetPlayer" /> 
 
 ▸ **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步根据playerId获取Player
 
@@ -612,11 +576,9 @@ playerId对应的玩家
 
 ___
 
-### boxOverlapInLevel  
+### boxOverlapInLevel <Score text="boxOverlapInLevel" /> 
 
 ▸ **boxOverlapInLevel**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 矩形范围检测
 
@@ -639,11 +601,9 @@ GameObject数组
 
 ___
 
-### clearMoveTo  
+### clearMoveTo <Score text="clearMoveTo" /> 
 
 ▸ **clearMoveTo**(`player`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 导航停止
 
@@ -658,11 +618,9 @@ ___
 
 ___
 
-### cylinderOverlap  
+### cylinderOverlap <Score text="cylinderOverlap" /> 
 
 ▸ **cylinderOverlap**(`StartLocation`, `Radius`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 圆柱范围检测
 
@@ -684,11 +642,9 @@ GameObject数组
 
 ___
 
-### getAllPlayers  
+### getAllPlayers <Score text="getAllPlayers" /> 
 
 ▸ **getAllPlayers**(): [`Player`](../classes/Gameplay.Player.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前所有Player
 
@@ -701,11 +657,9 @@ ___
 
 ___
 
-### getClickGameObjectByScene  
+### getClickGameObjectByScene <Score text="getClickGameObjectByScene" /> 
 
 ▸ **getClickGameObjectByScene**(`SceneX`, `SceneY`, `Distance`, `multiTrace`, `onRay`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取点击屏幕位置的物体
 
@@ -729,11 +683,9 @@ ___
 
 ___
 
-### getCurrentPlayer  
+### getCurrentPlayer <Score text="getCurrentPlayer" /> 
 
 ▸ **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前玩家
 
@@ -746,11 +698,9 @@ ___
 
 ___
 
-### getPlayer  
+### getPlayer <Score text="getPlayer" /> 
 
 ▸ **getPlayer**(`playerId`): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取玩家
 
@@ -769,11 +719,9 @@ ___
 
 ___
 
-### getShootDir  
+### getShootDir <Score text="getShootDir" /> 
 
 ▸ **getShootDir**(`character`, `startLoc`, `distance?`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取某位置指向屏幕中心瞄准位置的向量
 
@@ -795,11 +743,9 @@ ___
 
 ___
 
-### isDynamicVibration  
+### isDynamicVibration <Score text="isDynamicVibration" /> 
 
 ▸ **isDynamicVibration**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 振动开关
 
@@ -814,11 +760,9 @@ ___
 
 ___
 
-### lineTrace  
+### lineTrace <Score text="lineTrace" /> 
 
 ▸ **lineTrace**(`StartLocation`, `EndLocation`, `multiTrace`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 射线检测
 
@@ -840,11 +784,9 @@ HitResult数组
 
 ___
 
-### moveTo  
+### moveTo <Score text="moveTo" /> 
 
 ▸ **moveTo**(`player`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 寻路移动
 
@@ -863,11 +805,9 @@ ___
 
 ___
 
-### parabolicTrace  
+### parabolicTrace <Score text="parabolicTrace" /> 
 
 ▸ **parabolicTrace**(`StartLocation`, `Direction`, `InitSpeed`, `Range`, `CapsuleRadius`, `IgnoreObjectTypes`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 抛物线检测
 
@@ -892,11 +832,9 @@ HitResult
 
 ___
 
-### playDynamicForceFeedbackStart  
+### playDynamicForceFeedbackStart <Score text="playDynamicForceFeedbackStart" /> 
 
 ▸ **playDynamicForceFeedbackStart**(`Intensity?`, `Duration?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 播放震动
 
@@ -912,11 +850,9 @@ ___
 
 ___
 
-### playDynamicForceFeedbackStop  
+### playDynamicForceFeedbackStop <Score text="playDynamicForceFeedbackStop" /> 
 
 ▸ **playDynamicForceFeedbackStop**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止震动
 
@@ -925,11 +861,9 @@ ___
 
 ___
 
-### removeOutlineEffect  
+### removeOutlineEffect <Score text="removeOutlineEffect" /> 
 
 ▸ **removeOutlineEffect**(`obj`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 移除描边效果
 
@@ -944,11 +878,9 @@ ___
 
 ___
 
-### setGlobalAsyncTimeout  
+### setGlobalAsyncTimeout <Score text="setGlobalAsyncTimeout" /> 
 
 ▸ **setGlobalAsyncTimeout**(`overtime`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置异步回调超时时间，单位毫秒，默认5000
 
@@ -962,11 +894,9 @@ ___
 
 ___
 
-### setGlobalTimeDilation  
+### setGlobalTimeDilation <Score text="setGlobalTimeDilation" /> 
 
 ▸ **setGlobalTimeDilation**(`Time`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置世界整体膨胀时间速度
 
@@ -986,16 +916,12 @@ ___
 
 ___
 
-### setPlayerPassableForAllArea  
+### setPlayerPassableForAllArea <Score text="setPlayerPassableForAllArea" /> 
 
 ▸ **setPlayerPassableForAllArea**(`Target`, `CanPass`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置所有禁行区对某个玩家的通过权限
 
-
-**`Example`**
 
 使用示例:设置所有禁行区对某个玩家的通过权限,安全的版本
 ```ts
@@ -1012,11 +938,9 @@ setPassableBlockingAreaActor(player,true)
 
 ___
 
-### setStaticMeshMaterialColor  
+### setStaticMeshMaterialColor <Score text="setStaticMeshMaterialColor" /> 
 
 ▸ **setStaticMeshMaterialColor**(`obj`, `color`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体静态网格材质颜色
 
@@ -1032,11 +956,9 @@ ___
 
 ___
 
-### spawnNewParticle  
+### spawnNewParticle <Score text="spawnNewParticle" /> 
 
 ▸ **spawnNewParticle**(`template`, `trans`, `bloop?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 动态生成特效
 
@@ -1053,11 +975,9 @@ ___
 
 ___
 
-### spawnNewSound  
+### spawnNewSound <Score text="spawnNewSound" /> 
 
 ▸ **spawnNewSound**(`template`, `location`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 动态生成音效
 
@@ -1073,11 +993,9 @@ ___
 
 ___
 
-### sphereOverlap  
+### sphereOverlap <Score text="sphereOverlap" /> 
 
 ▸ **sphereOverlap**(`StartLocation`, `Radius`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 圆形范围检测
 

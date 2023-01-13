@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Union
 
-# Union <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Union <Badge type="tip" text="Class" /> <Score text="Union" />
 
 合并对象
 

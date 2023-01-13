@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsThruster
 
-# PhysicsThruster <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 
 推进器
 
@@ -108,11 +106,9 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
-
-**`Description`**
 
 获取启用状态
 
@@ -124,8 +120,6 @@ true：启用
 
 • `set` **enable**(`enable`): `void`
 
-**`Description`**
-
 设置启用状态
 
 #### Parameters
@@ -136,11 +130,9 @@ true：启用
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
-
-**`Description`**
 
 获取推进力
 
@@ -151,8 +143,6 @@ true：启用
 推进力大小
 
 • `set` **strength**(`value`): `void`
-
-**`Description`**
 
 设置推进力
 

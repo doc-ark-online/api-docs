@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / FireDataInfoForMultiple
 
-# FireDataInfoForMultiple <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# FireDataInfoForMultiple <Badge type="tip" text="Class" /> <Score text="FireDataInfoForMultiple" />
 
 获取开火时生成投掷物的着弹点位置、飞行距离、打击面圆的前/上/右单位向量、打击面圆的最大半径
 
@@ -19,60 +17,48 @@
 
 ## Properties
 
-### forwardVecAgainstHitCircle  
+### forwardVecAgainstHitCircle <Score text="forwardVecAgainstHitCircle" /> 
 
 • **forwardVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点的前向向量
 
 ___
 
-### hitLoc  
+### hitLoc <Score text="hitLoc" /> 
 
 • **hitLoc**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点坐标
 
 ___
 
-### radiusMax  
+### radiusMax <Score text="radiusMax" /> 
 
 • **radiusMax**: `number`
-
-**`Description`**
 
 打击面的最大半径
 
 ___
 
-### rightVecAgainstHitCircle  
+### rightVecAgainstHitCircle <Score text="rightVecAgainstHitCircle" /> 
 
 • **rightVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点的向右向量
 
 ___
 
-### shootDistance  
+### shootDistance <Score text="shootDistance" /> 
 
 • **shootDistance**: `number`
-
-**`Description`**
 
 射击的距离
 
 ___
 
-### upVecAgainstHitCircle  
+### upVecAgainstHitCircle <Score text="upVecAgainstHitCircle" /> 
 
 • **upVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点的向上向量

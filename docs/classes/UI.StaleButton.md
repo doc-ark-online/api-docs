@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / StaleButton
 
-# StaleButton <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 
 按钮
 
@@ -111,11 +109,9 @@
 
 ## Accessors
 
-### clickMethod  
+### clickMethod <Score text="clickMethod" /> 
 
 • `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置点击模式
 
@@ -130,11 +126,9 @@
 点击模式选择
 
 
-### contentColor  
+### contentColor <Score text="contentColor" /> 
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体内容颜色
 
@@ -147,8 +141,6 @@
 
 • `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体内容颜色
 
 
@@ -160,11 +152,9 @@
 
 
 
-### disableImageColor  
+### disableImageColor <Score text="disableImageColor" /> 
 
 • `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取禁用图片颜色
 
@@ -176,8 +166,6 @@
 禁用图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **disableImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置禁用图片颜色
 
@@ -191,11 +179,9 @@
 
 ___
 
-### disableImageDrawType  
+### disableImageDrawType <Score text="disableImageDrawType" /> 
 
 • `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取禁用图片绘制类型
 
@@ -207,8 +193,6 @@ ___
 禁用图片绘制类型
 
 • `set` **disableImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置禁用图片绘制类型
 
@@ -222,11 +206,9 @@ ___
 
 ___
 
-### disableImageGuid  
+### disableImageGuid <Score text="disableImageGuid" /> 
 
 • `get` **disableImageGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取禁用图片ID
 
@@ -238,8 +220,6 @@ ___
 禁用图片ID
 
 • `set` **disableImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置不可用图片ID
 
@@ -253,11 +233,9 @@ ___
 
 ___
 
-### disableImageMargin  
+### disableImageMargin <Score text="disableImageMargin" /> 
 
 • `get` **disableImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取禁用图片边距
 
@@ -269,8 +247,6 @@ ___
 禁用图片边距
 
 • `set` **disableImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置禁用图片边距
 
@@ -284,11 +260,9 @@ ___
 
 ___
 
-### disableImageSize  
+### disableImageSize <Score text="disableImageSize" /> 
 
 • `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取禁用图片大小
 
@@ -301,8 +275,6 @@ ___
 
 • `set` **disableImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置禁用图片大小
 
 
@@ -314,11 +286,9 @@ ___
 
 
 
-### focusable  
+### focusable <Score text="focusable" /> 
 
 • `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否获取输入焦点
 
@@ -330,8 +300,6 @@ ___
 是否获取输入焦点
 
 • `set` **focusable**(`inFocus`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否获取输入焦点
 
@@ -345,11 +313,9 @@ ___
 
 ___
 
-### fontColor  
+### fontColor <Score text="fontColor" /> 
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体颜色
 
@@ -361,8 +327,6 @@ ___
 字体颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体颜色
 
@@ -376,11 +340,9 @@ ___
 
 ___
 
-### fontLetterSpace  
+### fontLetterSpace <Score text="fontLetterSpace" /> 
 
 • `get` **fontLetterSpace**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体间距
 
@@ -392,8 +354,6 @@ ___
 字体间距
 
 • `set` **fontLetterSpace**(`fontLetterSpace`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体间距
 
@@ -407,11 +367,9 @@ ___
 
 ___
 
-### fontSize  
+### fontSize <Score text="fontSize" /> 
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体大小
 
@@ -423,8 +381,6 @@ ___
 字体大小
 
 • `set` **fontSize**(`FontSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体大小
 
@@ -438,11 +394,9 @@ ___
 
 ___
 
-### glyph  
+### glyph <Score text="glyph" /> 
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体字形
 
@@ -455,8 +409,6 @@ ___
 
 • `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体字形
 
 
@@ -468,11 +420,9 @@ ___
 
 
 
-### normalImageColor  
+### normalImageColor <Score text="normalImageColor" /> 
 
 • `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取普通图片颜色
 
@@ -484,8 +434,6 @@ ___
 普通图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **normalImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置普通图片颜色
 
@@ -499,11 +447,9 @@ ___
 
 ___
 
-### normalImageDrawType  
+### normalImageDrawType <Score text="normalImageDrawType" /> 
 
 • `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取普通图片绘制类型
 
@@ -515,8 +461,6 @@ ___
 普通图片绘制类型
 
 • `set` **normalImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置普通图片绘制类型
 
@@ -530,11 +474,9 @@ ___
 
 ___
 
-### normalImageGuid  
+### normalImageGuid <Score text="normalImageGuid" /> 
 
 • `get` **normalImageGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取普通图片ID
 
@@ -546,8 +488,6 @@ ___
 普通图片ID
 
 • `set` **normalImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置正常图片ID
 
@@ -561,11 +501,9 @@ ___
 
 ___
 
-### normalImageMargin  
+### normalImageMargin <Score text="normalImageMargin" /> 
 
 • `get` **normalImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取普通图片边距
 
@@ -577,8 +515,6 @@ ___
 边距
 
 • `set` **normalImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置普通图片边距
 
@@ -592,11 +528,9 @@ ___
 
 ___
 
-### normalImageSize  
+### normalImageSize <Score text="normalImageSize" /> 
 
 • `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取图片大小
 
@@ -608,8 +542,6 @@ ___
 普通图片大小
 
 • `set` **normalImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片大小
 
@@ -623,11 +555,9 @@ ___
 
 ___
 
-### onClicked  
+### onClicked <Score text="onClicked" /> 
 
 • `get` **onClicked**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 点击事件
 
@@ -640,11 +570,9 @@ ___
 
 ___
 
-### onHovered  
+### onHovered <Score text="onHovered" /> 
 
 • `get` **onHovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 悬浮事件
 
@@ -658,11 +586,9 @@ ___
 
 ___
 
-### onPressed  
+### onPressed <Score text="onPressed" /> 
 
 • `get` **onPressed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 按下事件
 
@@ -675,11 +601,9 @@ ___
 
 ___
 
-### onReleased  
+### onReleased <Score text="onReleased" /> 
 
 • `get` **onReleased**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 释放事件
 
@@ -692,11 +616,9 @@ ___
 
 ___
 
-### onUnhovered  
+### onUnhovered <Score text="onUnhovered" /> 
 
 • `get` **onUnhovered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 未悬浮事件
 
@@ -709,11 +631,9 @@ ___
 
 ___
 
-### outlineColor  
+### outlineColor <Score text="outlineColor" /> 
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体描边颜色
 
@@ -725,8 +645,6 @@ ___
 字体描边颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体描边颜色
 
@@ -740,11 +658,9 @@ ___
 
 ___
 
-### outlineSize  
+### outlineSize <Score text="outlineSize" /> 
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体描边宽度
 
@@ -757,8 +673,6 @@ ___
 
 • `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体描边宽度
 
 
@@ -770,11 +684,9 @@ ___
 
 
 
-### pressMethod  
+### pressMethod <Score text="pressMethod" /> 
 
 • `set` **pressMethod**(`inPressMethod`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按压模式
 
@@ -788,11 +700,9 @@ ___
 
 ___
 
-### pressedImagColor  
+### pressedImagColor <Score text="pressedImagColor" /> 
 
 • `get` **pressedImagColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按压图片颜色
 
@@ -804,8 +714,6 @@ ___
 按压图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **pressedImagColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按压图片颜色
 
@@ -819,11 +727,9 @@ ___
 
 ___
 
-### pressedImageDrawType  
+### pressedImageDrawType <Score text="pressedImageDrawType" /> 
 
 • `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按压图片绘制类型
 
@@ -835,8 +741,6 @@ ___
 按压图片绘制类型
 
 • `set` **pressedImageDrawType**(`inDrawTYpe`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按压图片绘制类型
 
@@ -850,11 +754,9 @@ ___
 
 ___
 
-### pressedImageGuid  
+### pressedImageGuid <Score text="pressedImageGuid" /> 
 
 • `get` **pressedImageGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按下图片ID
 
@@ -866,8 +768,6 @@ ___
 按下图片ID
 
 • `set` **pressedImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按下图片ID
 
@@ -881,11 +781,9 @@ ___
 
 ___
 
-### pressedImageMargin  
+### pressedImageMargin <Score text="pressedImageMargin" /> 
 
 • `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按压图片边距
 
@@ -897,8 +795,6 @@ ___
 按压图片边距
 
 • `set` **pressedImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按压图片边距
 
@@ -912,11 +808,9 @@ ___
 
 ___
 
-### pressedImageSize  
+### pressedImageSize <Score text="pressedImageSize" /> 
 
 • `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按压图片大小
 
@@ -929,8 +823,6 @@ ___
 
 • `set` **pressedImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置按压图片大小
 
 
@@ -942,11 +834,9 @@ ___
 
 
 
-### shadowColor  
+### shadowColor <Score text="shadowColor" /> 
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体阴影颜色
 
@@ -958,8 +848,6 @@ ___
 字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体阴影颜色
 
@@ -973,11 +861,9 @@ ___
 
 ___
 
-### shadowOffset  
+### shadowOffset <Score text="shadowOffset" /> 
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体阴影偏移
 
@@ -990,8 +876,6 @@ ___
 
 • `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体阴影偏移
 
 
@@ -1003,11 +887,9 @@ ___
 
 
 
-### strikethroughEnable  
+### strikethroughEnable <Score text="strikethroughEnable" /> 
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否开启字体删除线
 
@@ -1019,8 +901,6 @@ ___
 是否开启字体删除线
 
 • `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体删除线
 
@@ -1034,11 +914,9 @@ ___
 
 ___
 
-### text  
+### text <Score text="text" /> 
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按钮文字
 
@@ -1050,8 +928,6 @@ ___
 返回文字
 
 • `set` **text**(`InString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按钮文字
 
@@ -1067,11 +943,9 @@ ___
 
 ___
 
-### textAlign  
+### textAlign <Score text="textAlign" /> 
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体对齐方式
 
@@ -1083,8 +957,6 @@ ___
 字体对齐方式
 
 • `set` **textAlign**(`InTextJustify`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体对齐方式
 
@@ -1098,11 +970,9 @@ ___
 
 ___
 
-### textVerticalAlign  
+### textVerticalAlign <Score text="textVerticalAlign" /> 
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体垂直对齐方式
 
@@ -1115,8 +985,6 @@ ___
 
 • `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体垂直对齐方式
 
 
@@ -1128,11 +996,9 @@ ___
 
 
 
-### touchMethod  
+### touchMethod <Score text="touchMethod" /> 
 
 • `set` **touchMethod**(`inTouchMethod`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置触摸模式
 
@@ -1145,11 +1011,9 @@ ___
 
 
 
-### transitionEnable  
+### transitionEnable <Score text="transitionEnable" /> 
 
 • `get` **transitionEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取按钮是否启用过度模式,按下是否有效果
 
@@ -1161,8 +1025,6 @@ ___
 按钮是否启用过度模式
 
 • `set` **transitionEnable**(`inBoolean`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否套用不同的按下方案
 
@@ -1176,11 +1038,9 @@ ___
 
 ___
 
-### underlineEnable  
+### underlineEnable <Score text="underlineEnable" /> 
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回是否开启字体下划线
 
@@ -1192,8 +1052,6 @@ ___
 获取是否开启字体下划线
 
 • `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体下划线
 
@@ -1208,11 +1066,9 @@ ___
 
 ## Methods
 
-### isPressed  
+### isPressed <Score text="isPressed" /> 
 
 ▸ **isPressed**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否按下
 
@@ -1225,11 +1081,9 @@ ___
 
 ___
 
-### setDisableImageColorByHex  
+### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 
 ▸ **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置不可用颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -1243,11 +1097,9 @@ ___
 
 ___
 
-### setDisableImageColorDecimal  
+### setDisableImageColorDecimal <Score text="setDisableImageColorDecimal" /> 
 
 ▸ **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置不可用颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -1264,11 +1116,9 @@ ___
 
 ___
 
-### setFontColorByHex  
+### setFontColorByHex <Score text="setFontColorByHex" /> 
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -1282,11 +1132,9 @@ ___
 
 ___
 
-### setFontColorDecimal  
+### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -1303,11 +1151,9 @@ ___
 
 ___
 
-### setNormalImageColorByHex  
+### setNormalImageColorByHex <Score text="setNormalImageColorByHex" /> 
 
 ▸ **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置正常颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -1321,11 +1167,9 @@ ___
 
 ___
 
-### setNormalImageColorDecimal  
+### setNormalImageColorDecimal <Score text="setNormalImageColorDecimal" /> 
 
 ▸ **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置正常颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -1342,11 +1186,9 @@ ___
 
 ___
 
-### setPressedImageColorByHex  
+### setPressedImageColorByHex <Score text="setPressedImageColorByHex" /> 
 
 ▸ **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按下颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -1360,11 +1202,9 @@ ___
 
 ___
 
-### setPressedImageColorDecimal  
+### setPressedImageColorDecimal <Score text="setPressedImageColorDecimal" /> 
 
 ▸ **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置按下颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -1381,11 +1221,9 @@ ___
 
 ___
 
-### newObject  
+### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`StaleButton`](UI.StaleButton.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 StaleButton 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

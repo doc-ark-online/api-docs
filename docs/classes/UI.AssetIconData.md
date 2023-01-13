@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / AssetIconData
 
-# AssetIconData <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 
 资源ICON信息
 
@@ -12,8 +10,6 @@
 | :-----|
 | **[assetID](UI.AssetIconData.md#assetid)**(): `string` <br> 获取资源ID|
 
-**`Description`**
-
 默认构造
 
 **`Effect`**
@@ -21,11 +17,9 @@
 
 ## Accessors
 
-### assetID  
+### assetID <Score text="assetID" /> 
 
 • `get` **assetID**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取资源ID
 
@@ -37,8 +31,6 @@
 资源ID信息
 
 • `set` **assetID**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置资源ID
 

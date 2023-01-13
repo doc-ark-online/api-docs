@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeapon
 
-# HotWeapon <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 
 热武器
 
@@ -140,113 +138,91 @@
 
 ## Properties
 
-### accuracyOfFireComponent  
+### accuracyOfFireComponent <Score text="accuracyOfFireComponent" /> 
 
 • **accuracyOfFireComponent**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md)
-
-**`Description`**
 
 射击精度功能
 
 ___
 
-### aimComponent  
+### aimComponent <Score text="aimComponent" /> 
 
 • **aimComponent**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md)
-
-**`Description`**
 
 瞄准功能
 
 ___
 
-### fireComponent  
+### fireComponent <Score text="fireComponent" /> 
 
 • **fireComponent**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md)
-
-**`Description`**
 
 射击功能
 
 ___
 
-### loadComponent  
+### loadComponent <Score text="loadComponent" /> 
 
 • **loadComponent**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md)
-
-**`Description`**
 
 上膛功能
 
 ___
 
-### onEquippedClient  
+### onEquippedClient <Score text="onEquippedClient" /> 
 
 • **onEquippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
-
-**`Description`**
 
 客户端装备时执行绑定函数
 
 ___
 
-### onEquippedServer  
+### onEquippedServer <Score text="onEquippedServer" /> 
 
 • **onEquippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
-
-**`Description`**
 
 服务器装备时执行绑定函数
 
 ___
 
-### onUnequippedClient  
+### onUnequippedClient <Score text="onUnequippedClient" /> 
 
 • **onUnequippedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端卸载时执行绑定函数
 
 ___
 
-### onUnequippedServer  
+### onUnequippedServer <Score text="onUnequippedServer" /> 
 
 • **onUnequippedServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器卸载时执行绑定函数
 
 ___
 
-### recoilForceComponent  
+### recoilForceComponent <Score text="recoilForceComponent" /> 
 
 • **recoilForceComponent**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md)
-
-**`Description`**
 
 后坐力功能
 
 ___
 
-### reloadComponent  
+### reloadComponent <Score text="reloadComponent" /> 
 
 • **reloadComponent**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md)
-
-**`Description`**
 
 换弹功能
 
 ## Accessors
 
-### accuracyOfFireEnable  
+### accuracyOfFireEnable <Score text="accuracyOfFireEnable" /> 
 
 • `get` **accuracyOfFireEnable**(): `boolean` <Badge type="tip" text="other" />
 
 是否开启了射击精度组件
-
-**`Description`**
 
 是否开启了射击精度组件
 
@@ -258,8 +234,6 @@ ___
 是否开启了射击精度组件
 
 • `set` **accuracyOfFireEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启射击精度组件
 
@@ -280,11 +254,9 @@ ___
 
 ___
 
-### aimEnable  
+### aimEnable <Score text="aimEnable" /> 
 
 • `get` **aimEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否开启了瞄准组件
 
@@ -296,8 +268,6 @@ ___
 是否开启了瞄准组件
 
 • `set` **aimEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启瞄准组件
 
@@ -317,13 +287,11 @@ ___
 
 
 
-### loadEnable  
+### loadEnable <Score text="loadEnable" /> 
 
 • `get` **loadEnable**(): `boolean` <Badge type="tip" text="other" />
 
 是否开启了上膛组件
-
-**`Description`**
 
 是否开启了上膛组件
 
@@ -335,8 +303,6 @@ ___
 是否开启了上膛组件
 
 • `set` **loadEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启上膛组件
 
@@ -356,11 +322,9 @@ ___
 
 
 
-### recoilForceEnable  
+### recoilForceEnable <Score text="recoilForceEnable" /> 
 
 • `get` **recoilForceEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否开启了后坐力组件
 
@@ -372,8 +336,6 @@ ___
 是否开启了后坐力组件
 
 • `set` **recoilForceEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启后座力组件
 
@@ -393,11 +355,9 @@ ___
 
 
 
-### reloadEnable  
+### reloadEnable <Score text="reloadEnable" /> 
 
 • `get` **reloadEnable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否开启了换弹组件
 
@@ -409,8 +369,6 @@ ___
 是否开启了换弹组件
 
 • `set` **reloadEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启换弹组件
 
@@ -432,11 +390,9 @@ ___
 
 ## Methods
 
-### breakLoad  
+### breakLoad <Score text="breakLoad" /> 
 
 ▸ **breakLoad**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 打断上膛
 
@@ -444,22 +400,18 @@ ___
 
 ___
 
-### breakReload  
+### breakReload <Score text="breakReload" /> 
 
 ▸ **breakReload**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 打断换弹
 
 
 
 
-### cloneComponentsData  
+### cloneComponentsData <Score text="cloneComponentsData" /> 
 
 ▸ **cloneComponentsData**(`otherHotWeapon`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 从传入的热武器逻辑对象中拷贝所有组件数据
 
@@ -479,11 +431,9 @@ ___
 
 
 
-### equipment  
+### equipment <Score text="equipment" /> 
 
 ▸ **equipment**(`character`, `slotName`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 装备热武器到目标角色的指定插槽位置
 
@@ -506,11 +456,9 @@ ___
 
 
 
-### getBulletLocWhileSpawnOnScreenCenter  
+### getBulletLocWhileSpawnOnScreenCenter <Score text="getBulletLocWhileSpawnOnScreenCenter" /> 
 
 ▸ **getBulletLocWhileSpawnOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location
 
@@ -523,11 +471,9 @@ ___
 子弹投掷物生成的location
 
 
-### getCurrentOwner  
+### getCurrentOwner <Score text="getCurrentOwner" /> 
 
 ▸ **getCurrentOwner**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前热武器的所有者
 
@@ -540,11 +486,9 @@ ___
 
 ___
 
-### getCurrentState  
+### getCurrentState <Score text="getCurrentState" /> 
 
 ▸ **getCurrentState**(): [`HotWeaponState`](../enums/Gameplay.HotWeaponState.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前热武器状态
 
@@ -557,11 +501,9 @@ ___
 
 ___
 
-### getDefaultCrossHairSize  
+### getDefaultCrossHairSize <Score text="getDefaultCrossHairSize" /> 
 
 ▸ **getDefaultCrossHairSize**(`maxShootRange`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 传入Player和最大射程，获取默认准星大小
 
@@ -580,11 +522,9 @@ ___
 默认准星大小(射击精度半角值)
 
 
-### getShootDirWithDispersion  
+### getShootDirWithDispersion <Score text="getShootDirWithDispersion" /> 
 
 ▸ **getShootDirWithDispersion**(`StartLoc`, `ShootRange`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 非屏幕中心生成子弹模式下，获取子弹飞行方向
 
@@ -610,11 +550,9 @@ ___
 子弹的实际飞行方向
 
 
-### getTransformForFire  
+### getTransformForFire <Score text="getTransformForFire" /> 
 
 ▸ **getTransformForFire**(`ShootRange`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取开火的Transform
 
@@ -639,22 +577,18 @@ todo Need Completed
 生成子弹的Transform
 
 
-### load  
+### load <Score text="load" /> 
 
 ▸ **load**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 上膛
 
 
 
 
-### reload  
+### reload <Score text="reload" /> 
 
 ▸ **reload**(`bulletSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 换弹
 
@@ -667,11 +601,9 @@ todo Need Completed
 
 
 
-### setCurrentFireModel  
+### setCurrentFireModel <Score text="setCurrentFireModel" /> 
 
 ▸ **setCurrentFireModel**(`FireMode`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换设置当前开火模式
 
@@ -690,11 +622,9 @@ todo Need Completed
 
 
 
-### startFire  
+### startFire <Score text="startFire" /> 
 
 ▸ **startFire**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开火
 
@@ -702,11 +632,9 @@ todo Need Completed
 
 ___
 
-### stopFire  
+### stopFire <Score text="stopFire" /> 
 
 ▸ **stopFire**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止开火
 
@@ -714,11 +642,9 @@ ___
 
 ___
 
-### unequipHotWeapon  
+### unequipHotWeapon <Score text="unequipHotWeapon" /> 
 
 ▸ **unequipHotWeapon**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 卸载热武器
 

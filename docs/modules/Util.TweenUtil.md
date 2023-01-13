@@ -1,14 +1,10 @@
 [Util](Util.Util.md) / TweenUtil
 
-# TweenUtil <Badge type="tip" text="Namespace" /> 
-
-**`Description`**
+# TweenUtil <Badge type="tip" text="Namespace" /> <Score text="TweenUtil" />
 
 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。
 你只需告诉它哪些属性要更改，当补间结束运行时它们应该具有哪些最终值，以及这需要多长时间，
 补间引擎将负责计算从起始点到结束点的值。
-
-**`Example`**
 
 使用示例: 示例
 ```ts
@@ -59,15 +55,13 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ## Type Aliases
 
-### EasingFunction  
+### EasingFunction <Score text="EasingFunction" /> 
 
 Ƭ **EasingFunction**: (`amount`: `number`) => `number`
 
 #### Type declaration
 
 ▸ (`amount`): `number`
-
-**`Description`**
 
 缓动函数的类型定义
 
@@ -83,15 +77,13 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 ___
 
-### InterpolationFunction  
+### InterpolationFunction <Score text="InterpolationFunction" /> 
 
 Ƭ **InterpolationFunction**: (`v`: `number`[], `k`: `number`) => `number`
 
 #### Type declaration
 
 ▸ (`v`, `k`): `number`
-
-**`Description`**
 
 插值函数的类型定义
 
@@ -108,31 +100,25 @@ ___
 
 ___
 
-### UnknownProps  
+### UnknownProps <Score text="UnknownProps" /> 
 
 Ƭ **UnknownProps**: `Record`<`string`, `any`\>
-
-**`Description`**
 
 补间属性的定义，用户可以自由扩展
 
 ## Variables
 
-### TWEEN  
+### TWEEN <Score text="TWEEN" /> 
 
 • `Const` **TWEEN**: [`Group`](../classes/Util.Util.TweenUtil.Group.md)
-
-**`Description`**
 
 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
 
 ## Functions
 
-### nextId  
+### nextId <Score text="nextId" /> 
 
 ▸ **nextId**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取下一个ID的全局方法
 

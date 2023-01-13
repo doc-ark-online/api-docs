@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Interactor
 
-# Interactor <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
 交互物功能对象，正重新改版，新交互物 InteractiveObject
 
@@ -117,31 +115,25 @@
 
 ## Properties
 
-### onInteractorEnter  
+### onInteractorEnter <Score text="onInteractorEnter" /> 
 
 • **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
-
-**`Description`**
 
 激活交互时执行绑定函数
 
 ___
 
-### onInteractorExit  
+### onInteractorExit <Score text="onInteractorExit" /> 
 
 • **onInteractorExit**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
-
-**`Description`**
 
 退出交互时执行绑定函数
 
 ___
 
-### serverSetShowDebugLog  
+### serverSetShowDebugLog <Score text="serverSetShowDebugLog" /> 
 
 • `Private` **serverSetShowDebugLog**: `any`
-
-**`Description`**
 
 服务器设置显示debug日志
 
@@ -153,11 +145,9 @@ usage:是否显示debug日志
 
 ## Methods
 
-### convertStringToStanceGuid  
+### convertStringToStanceGuid <Score text="convertStringToStanceGuid" /> 
 
 ▸ **convertStringToStanceGuid**(`stance`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将姿态转换为GUID
 
@@ -175,11 +165,9 @@ usage:是否显示debug日志
 姿态对应的GUID
 
 
-### enterInteractiveState  
+### enterInteractiveState <Score text="enterInteractiveState" /> 
 
 ▸ **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 激活交互
 
@@ -198,11 +186,9 @@ usage:是否显示debug日志
 
 ___
 
-### exitInteractiveState  
+### exitInteractiveState <Score text="exitInteractiveState" /> 
 
 ▸ **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 客户端请求退出交互
 
@@ -221,11 +207,9 @@ ___
 将返回是否退出激活成功的 Promise
 
 
-### getInteractiveState  
+### getInteractiveState <Score text="getInteractiveState" /> 
 
 ▸ **getInteractiveState**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取该交互物的交互状态
 
@@ -237,11 +221,9 @@ ___
 true: 为交互中
 
 
-### interactiveCharacter  
+### interactiveCharacter <Score text="interactiveCharacter" /> 
 
 ▸ **interactiveCharacter**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取和交互物发生交互的角色
 

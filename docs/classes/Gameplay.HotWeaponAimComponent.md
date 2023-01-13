@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponAimComponent
 
-# HotWeaponAimComponent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
 热武器瞄准组件
 
@@ -30,51 +28,41 @@
 
 ## Properties
 
-### onAimEndClient  
+### onAimEndClient <Score text="onAimEndClient" /> 
 
 • **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端结束瞄准代理
 
 ___
 
-### onAimEndServer  
+### onAimEndServer <Score text="onAimEndServer" /> 
 
 • **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器端结束瞄准代理
 
 ___
 
-### onAimStartClient  
+### onAimStartClient <Score text="onAimStartClient" /> 
 
 • **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端开始瞄准代理
 
 ___
 
-### onAimStartServer  
+### onAimStartServer <Score text="onAimStartServer" /> 
 
 • **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器端开始瞄准代理
 
 ## Accessors
 
-### aimMode  
+### aimMode <Score text="aimMode" /> 
 
 • `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get瞄准时的第一/第三人称模式
 
@@ -86,8 +74,6 @@ Get瞄准时的第一/第三人称模式
 当前瞄准时的第一/第三人称模式
 
 • `set` **aimMode**(`NewAimMode`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set瞄准时的第一/第三人称模式
 
@@ -101,11 +87,9 @@ Set瞄准时的第一/第三人称模式
 
 ___
 
-### aimingZoom  
+### aimingZoom <Score text="aimingZoom" /> 
 
 • `get` **aimingZoom**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get第一人称瞄准时的瞄准镜放大倍数
 
@@ -123,8 +107,6 @@ Get第一人称瞄准时的瞄准镜放大倍数
 当前第一人称瞄准时的瞄准镜放大倍数
 
 • `set` **aimingZoom**(`newAimingZoom`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set模拟瞄准时的瞄准镜放大倍数
 
@@ -144,11 +126,9 @@ Set模拟瞄准时的瞄准镜放大倍数
 
 ___
 
-### cameraOffsetDistanceInThirdPersonMode  
+### cameraOffsetDistanceInThirdPersonMode <Score text="cameraOffsetDistanceInThirdPersonMode" /> 
 
 • `get` **cameraOffsetDistanceInThirdPersonMode**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get第三人称瞄准时的连接相机弹簧组件的长度
 
@@ -160,8 +140,6 @@ Get第三人称瞄准时的连接相机弹簧组件的长度
 当前连接相机弹簧组件的长度
 
 • `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set第三人称瞄准时的连接相机弹簧组件的长度
 
@@ -181,11 +159,9 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 
 ___
 
-### defaultCameraSpringArmLength  
+### defaultCameraSpringArmLength <Score text="defaultCameraSpringArmLength" /> 
 
 • `get` **defaultCameraSpringArmLength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get第三人称常态下相机弹簧组件的默认长度
 
@@ -197,8 +173,6 @@ Get第三人称常态下相机弹簧组件的默认长度
 第三人称常态下相机弹簧组件的默认长度
 
 • `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set第三人称常态下相机弹簧组件的默认长度
 
@@ -218,11 +192,9 @@ Set第三人称常态下相机弹簧组件的默认长度
 
 ___
 
-### scopeTypeIndex  
+### scopeTypeIndex <Score text="scopeTypeIndex" /> 
 
 • `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get模拟瞄准镜UI种类
 
@@ -234,8 +206,6 @@ Get模拟瞄准镜UI种类
 当前瞄准镜UI种类
 
 • `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set模拟瞄准镜UI种类
 
@@ -249,11 +219,9 @@ Set模拟瞄准镜UI种类
 
 ## Methods
 
-### bindOpenAimComponentDelegates  
+### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
 
 ▸ **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定瞄准组件代理
 
@@ -261,11 +229,9 @@ Set模拟瞄准镜UI种类
 
 ___
 
-### enableAiming  
+### enableAiming <Score text="enableAiming" /> 
 
 ▸ **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 打开/关闭瞄准
 - 切换持枪姿态

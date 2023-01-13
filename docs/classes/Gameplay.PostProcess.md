@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PostProcess
 
-# PostProcess <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 
 后处理对象
 
@@ -134,11 +132,9 @@
 
 ## Accessors
 
-### ambientOcclusionIntensity  
+### ambientOcclusionIntensity <Score text="ambientOcclusionIntensity" /> 
 
 • `get` **ambientOcclusionIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取环境光遮蔽强度
 
@@ -150,8 +146,6 @@
 获取值
 
 • `set` **ambientOcclusionIntensity**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置环境光遮蔽强度（0 ~ 1）
 
@@ -165,11 +159,9 @@
 
 ___
 
-### ambientOcclusionRadius  
+### ambientOcclusionRadius <Score text="ambientOcclusionRadius" /> 
 
 • `get` **ambientOcclusionRadius**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取环境光遮蔽半径
 
@@ -181,8 +173,6 @@ ___
 获取值
 
 • `set` **ambientOcclusionRadius**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置环境光遮蔽半径（0.1 ~ 500.0）
 
@@ -196,11 +186,9 @@ ___
 
 ___
 
-### autoExposureBias  
+### autoExposureBias <Score text="autoExposureBias" /> 
 
 • `get` **autoExposureBias**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取曝光补偿
 
@@ -212,8 +200,6 @@ ___
 获取值
 
 • `set` **autoExposureBias**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置曝光补偿（-15 ~ 15）
 
@@ -227,11 +213,9 @@ ___
 
 ___
 
-### autoExposureMaxBrightness  
+### autoExposureMaxBrightness <Score text="autoExposureMaxBrightness" /> 
 
 • `get` **autoExposureMaxBrightness**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取曝光最大亮度
 
@@ -243,8 +227,6 @@ ___
 获取值
 
 • `set` **autoExposureMaxBrightness**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置曝光最大亮度（-10 ~ 20）
 
@@ -258,11 +240,9 @@ ___
 
 ___
 
-### autoExposureMinBrightness  
+### autoExposureMinBrightness <Score text="autoExposureMinBrightness" /> 
 
 • `get` **autoExposureMinBrightness**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取曝光最小亮度
 
@@ -274,8 +254,6 @@ ___
 获取值
 
 • `set` **autoExposureMinBrightness**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置曝光最小亮度（-10 ~ 20）
 
@@ -289,11 +267,9 @@ ___
 
 ___
 
-### bloomIntensity  
+### bloomIntensity <Score text="bloomIntensity" /> 
 
 • `get` **bloomIntensity**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取泛光
 
@@ -306,8 +282,6 @@ ___
 
 • `set` **bloomIntensity**(`Value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置泛光（0 ~ 8）
 
 
@@ -319,11 +293,9 @@ ___
 
 
 
-### globalContrast  
+### globalContrast <Score text="globalContrast" /> 
 
 • `get` **globalContrast**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取全局对比度
 
@@ -335,8 +307,6 @@ ___
 获取值
 
 • `set` **globalContrast**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置全局对比度 （0.2 ~ 5.0）
 
@@ -350,11 +320,9 @@ ___
 
 ___
 
-### globalGamma  
+### globalGamma <Score text="globalGamma" /> 
 
 • `get` **globalGamma**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取全局伽马值
 
@@ -366,8 +334,6 @@ ___
 获取值
 
 • `set` **globalGamma**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置全局伽马值（0 ~ 5）
 
@@ -381,11 +347,9 @@ ___
 
 ___
 
-### globalSaturation  
+### globalSaturation <Score text="globalSaturation" /> 
 
 • `get` **globalSaturation**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取全局饱和度
 
@@ -398,8 +362,6 @@ ___
 
 • `set` **globalSaturation**(`Value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置全局饱和度 （0 ~ 2）
 
 
@@ -411,11 +373,9 @@ ___
 
 
 
-### hDRContrast  
+### hDRContrast <Score text="hDRContrast" /> 
 
 • `get` **hDRContrast**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取HDR对比度
 
@@ -427,8 +387,6 @@ ___
 获取值
 
 • `set` **hDRContrast**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置HDR对比度 （0 ~ 5）
 
@@ -442,11 +400,9 @@ ___
 
 ___
 
-### hDRGamma  
+### hDRGamma <Score text="hDRGamma" /> 
 
 • `get` **hDRGamma**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取HDR伽马值
 
@@ -458,8 +414,6 @@ ___
 获取值
 
 • `set` **hDRGamma**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置HDR伽马值 （0 ~ 5）
 
@@ -473,11 +427,9 @@ ___
 
 ___
 
-### hDRSaturation  
+### hDRSaturation <Score text="hDRSaturation" /> 
 
 • `get` **hDRSaturation**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取HDR饱和度
 
@@ -489,8 +441,6 @@ ___
 获取值
 
 • `set` **hDRSaturation**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置HDR饱和度 （0 ~ 2）
 
@@ -504,11 +454,9 @@ ___
 
 ___
 
-### lDR2HDRThreshold  
+### lDR2HDRThreshold <Score text="lDR" /> 
 
 • `get` **lDR2HDRThreshold**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LDR与HDR阈值
 
@@ -520,8 +468,6 @@ ___
 获取值
 
 • `set` **lDR2HDRThreshold**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置LDR与HDR阈值 （-1 ~ 1）
 
@@ -535,11 +481,9 @@ ___
 
 ___
 
-### lDRContrast  
+### lDRContrast <Score text="lDRContrast" /> 
 
 • `get` **lDRContrast**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LDR对比度Contrast
 
@@ -551,8 +495,6 @@ ___
 获取值
 
 • `set` **lDRContrast**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置LDR对比度Contrast （0.2 ~ 5.0）
 
@@ -566,11 +508,9 @@ ___
 
 ___
 
-### lDRGamma  
+### lDRGamma <Score text="lDRGamma" /> 
 
 • `get` **lDRGamma**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LDR伽马值
 
@@ -582,8 +522,6 @@ ___
 获取值
 
 • `set` **lDRGamma**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置LDR伽马值 （0 ~ 5）
 
@@ -597,11 +535,9 @@ ___
 
 ___
 
-### lDRSaturation  
+### lDRSaturation <Score text="lDRSaturation" /> 
 
 • `get` **lDRSaturation**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LDR饱和度
 
@@ -613,8 +549,6 @@ ___
 获取值
 
 • `set` **lDRSaturation**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置LDR饱和度（0 ~ 2）
 
@@ -628,11 +562,9 @@ ___
 
 ___
 
-### lUTBlend  
+### lUTBlend <Score text="lUTBlend" /> 
 
 • `get` **lUTBlend**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LUT百分比
 
@@ -644,8 +576,6 @@ ___
 获取值
 
 • `set` **lUTBlend**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置LUT百分比 （0 ~ 100）
 
@@ -659,11 +589,9 @@ ___
 
 ___
 
-### lUTTextureAssetByGuid  
+### lUTTextureAssetByGuid <Score text="lUTTextureAssetByGuid" /> 
 
 • `get` **lUTTextureAssetByGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取LUT贴图资源GUID
 
@@ -676,8 +604,6 @@ ___
 
 • `set` **lUTTextureAssetByGuid**(`Value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置LUT贴图资源通过GUID
 
 
@@ -689,11 +615,9 @@ ___
 
 
 
-### motionBlur  
+### motionBlur <Score text="motionBlur" /> 
 
 • `get` **motionBlur**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取动态模糊
 
@@ -706,8 +630,6 @@ ___
 
 • `set` **motionBlur**(`Value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置动态模糊 （0 ~ 1）
 
 
@@ -719,11 +641,9 @@ ___
 
 
 
-### occlusionBlend  
+### occlusionBlend <Score text="occlusionBlend" /> 
 
 • `get` **occlusionBlend**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取被遮挡融合比例
 
@@ -735,8 +655,6 @@ ___
 获取值
 
 • `set` **occlusionBlend**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置被遮挡融合比例（0 ~ 1）
 
@@ -750,11 +668,9 @@ ___
 
 ___
 
-### outlineWidth  
+### outlineWidth <Score text="outlineWidth" /> 
 
 • `get` **outlineWidth**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取描边宽度
 
@@ -767,8 +683,6 @@ ___
 
 • `set` **outlineWidth**(`Value`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置描边宽度 （0 ~ 4）
 
 
@@ -780,11 +694,9 @@ ___
 
 
 
-### toneBlackClip  
+### toneBlackClip <Score text="toneBlackClip" /> 
 
 • `get` **toneBlackClip**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色调映射暗部裁剪
 
@@ -796,8 +708,6 @@ ___
 获取值
 
 • `set` **toneBlackClip**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射暗部裁剪（0 ~ 1）
 
@@ -811,11 +721,9 @@ ___
 
 ___
 
-### toneCurveAmount  
+### toneCurveAmount <Score text="toneCurveAmount" /> 
 
 • `get` **toneCurveAmount**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前色调映射
 
@@ -827,8 +735,6 @@ ___
 获取值
 
 • `set` **toneCurveAmount**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射 （0 ~ 100）
 
@@ -842,11 +748,9 @@ ___
 
 ___
 
-### toneShoulder  
+### toneShoulder <Score text="toneShoulder" /> 
 
 • `get` **toneShoulder**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色调映射高位阈值
 
@@ -858,8 +762,6 @@ ___
 获取值
 
 • `set` **toneShoulder**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射高位阈值（0 ~ 1）
 
@@ -873,11 +775,9 @@ ___
 
 ___
 
-### toneSlope  
+### toneSlope <Score text="toneSlope" /> 
 
 • `get` **toneSlope**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色调映射斜率
 
@@ -889,8 +789,6 @@ ___
 获取值
 
 • `set` **toneSlope**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射斜率 （0 ~ 1）
 
@@ -904,11 +802,9 @@ ___
 
 ___
 
-### toneToe  
+### toneToe <Score text="toneToe" /> 
 
 • `get` **toneToe**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色调映射低位阈值
 
@@ -920,8 +816,6 @@ ___
 获取值
 
 • `set` **toneToe**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射低位阈值（0 ~ 1）
 
@@ -935,11 +829,9 @@ ___
 
 ___
 
-### toneWhiteClip  
+### toneWhiteClip <Score text="toneWhiteClip" /> 
 
 • `get` **toneWhiteClip**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取色调映射亮部裁剪
 
@@ -951,8 +843,6 @@ ___
 获取值
 
 • `set` **toneWhiteClip**(`Value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置色调映射亮部裁剪（0 ~ 1）
 
@@ -967,11 +857,9 @@ ___
 
 ## Methods
 
-### addOutlineColor  
+### addOutlineColor <Score text="addOutlineColor" /> 
 
 ▸ **addOutlineColor**(`newOutlineColor`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加一个描边颜色并返回对应的索引
 

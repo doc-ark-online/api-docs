@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AbilityObject
 
-# AbilityObject <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# AbilityObject <Badge type="tip" text="Class" /> <Score text="AbilityObject" />
 
 技能
 
@@ -134,61 +132,49 @@
 
 ## Properties
 
-### onAbilityStateChanged  
+### onAbilityStateChanged <Score text="onAbilityStateChanged" /> 
 
 • **onAbilityStateChanged**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-**`Description`**
 
 技能状态改变时发送事件
 
 ___
 
-### onAbilityStateEnter  
+### onAbilityStateEnter <Score text="onAbilityStateEnter" /> 
 
 • **onAbilityStateEnter**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-**`Description`**
 
 技能状态进入时发送事件
 
 ___
 
-### onAbilityStateExit  
+### onAbilityStateExit <Score text="onAbilityStateExit" /> 
 
 • **onAbilityStateExit**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-**`Description`**
 
 技能状态退出时发送事件
 
 ___
 
-### onAbilityStatePause  
+### onAbilityStatePause <Score text="onAbilityStatePause" /> 
 
 • **onAbilityStatePause**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-**`Description`**
 
 技能状态暂停时发送事件
 
 ___
 
-### onAbilityStateResume  
+### onAbilityStateResume <Score text="onAbilityStateResume" /> 
 
 • **onAbilityStateResume**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-**`Description`**
 
 技能状态继续时发送事件
 
 ## Accessors
 
-### currentAbilityState  
+### currentAbilityState <Score text="currentAbilityState" /> 
 
 • `get` **currentAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取能力状态
 
@@ -201,11 +187,9 @@ ___
 
 ___
 
-### currentAbilityStateIndex  
+### currentAbilityStateIndex <Score text="currentAbilityStateIndex" /> 
 
 • `get` **currentAbilityStateIndex**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前能力状态索引值
 
@@ -219,11 +203,9 @@ ___
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取能力对象执行时间
 
@@ -235,11 +217,9 @@ ___
 获取能力对象执行时间
 
 
-### isAbilityReady  
+### isAbilityReady <Score text="isAbilityReady" /> 
 
 • `get` **isAbilityReady**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 是否进入Ready状态
 
@@ -254,11 +234,9 @@ true或false
 
 ## Methods
 
-### activate  
+### activate <Score text="activate" /> 
 
 ▸ **activate**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 激活能力
 
@@ -267,11 +245,9 @@ true或false
 
 ___
 
-### addAbilityState  
+### addAbilityState <Score text="addAbilityState" /> 
 
 ▸ **addAbilityState**(`animAssetGUID`, `duration?`, `isLoop?`, `canMove?`, `canJump?`, `moveControl?`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加能力状态
 
@@ -295,11 +271,9 @@ ___
 成功返回技能索引，失败返回-1
 
 
-### bindPlayer  
+### bindPlayer <Score text="bindPlayer" /> 
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定玩家，特指使用该能力对象的玩家
 
@@ -324,11 +298,9 @@ ___
 当有对内部玩家进行赋值时，返回 true
 
 
-### deactivate  
+### deactivate <Score text="deactivate" /> 
 
 ▸ **deactivate**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 失活能力
 
@@ -336,11 +308,9 @@ ___
 
 
 
-### getAbilityStateByIndex  
+### getAbilityStateByIndex <Score text="getAbilityStateByIndex" /> 
 
 ▸ **getAbilityStateByIndex**(`Index`): [`AbilityState`](Gameplay.AbilityState.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据索引获取能力状态
 
@@ -359,11 +329,9 @@ ___
 
 ___
 
-### getAllAbilityState  
+### getAllAbilityState <Score text="getAllAbilityState" /> 
 
 ▸ **getAllAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取所有能力状态
 
@@ -375,11 +343,9 @@ ___
 能力状态数组
 
 
-### pause  
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 暂停能力
 
@@ -387,11 +353,9 @@ ___
 
 
 
-### removeAbilityState  
+### removeAbilityState <Score text="removeAbilityState" /> 
 
 ▸ **removeAbilityState**(`Index`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 删除添加状态
 
@@ -417,11 +381,9 @@ ___
 
 ___
 
-### resume  
+### resume <Score text="resume" /> 
 
 ▸ **resume**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 唤醒能力
 
@@ -429,11 +391,9 @@ ___
 
 
 
-### switchTo  
+### switchTo <Score text="switchTo" /> 
 
 ▸ **switchTo**(`StateIndex`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 跳转能力释放阶段
 

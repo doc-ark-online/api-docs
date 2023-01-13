@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsLinearMotor
 
-# PhysicsLinearMotor <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
 物理线性发动机组件
 
@@ -41,11 +39,9 @@
 
 ## Accessors
 
-### enable  
+### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
-
-**`Description`**
 
 获取激活状态
 
@@ -56,8 +52,6 @@
 激活状态
 
 • `set` **enable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置激活状态
 
@@ -71,11 +65,9 @@
 
 
 
-### maxVelocity  
+### maxVelocity <Score text="maxVelocity" /> 
 
 • `get` **maxVelocity**(): [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 获取最大速度
 
@@ -86,8 +78,6 @@
 最大速度
 
 • `set` **maxVelocity**(`maxSpeed`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置最大速度
 
@@ -101,11 +91,9 @@
 
 
 
-### strength  
+### strength <Score text="strength" /> 
 
 • `get` **strength**(): `number`
-
-**`Description`**
 
 获取加速度
 
@@ -116,8 +104,6 @@
 加速度
 
 • `set` **strength**(`acceleration`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置加速度
 

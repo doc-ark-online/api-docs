@@ -1,8 +1,6 @@
 [Network](../modules/Network.Network.md) / Response
 
-# Response <Badge type="tip" text="Interface" /> 
-
-**`Description`**
+# Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 
 HTTP响应信息的对象
 
@@ -23,61 +21,49 @@ HTTP响应信息的对象
 
 ## Properties
 
-### headers  
+### headers <Score text="headers" /> 
 
 • **headers**: `Map`<`string`, `string`\>
-
-**`Description`**
 
 响应头
 
 ___
 
-### ok  
+### ok <Score text="ok" /> 
 
 • **ok**: `boolean`
-
-**`Description`**
 
 是否成功（状态码是否为200）
 
 ___
 
-### status  
+### status <Score text="status" /> 
 
 • **status**: `number`
-
-**`Description`**
 
 响应状态码
 
 ___
 
-### type  
+### type <Score text="type" /> 
 
 • **type**: `string`
-
-**`Description`**
 
 响应类型
 
 ___
 
-### url  
+### url <Score text="url" /> 
 
 • **url**: `string`
-
-**`Description`**
 
 响应URL
 
 ## Methods
 
-### json  
+### json <Score text="json" /> 
 
 ▸ **json**<`T`\>(): `Promise`<`T`\>
-
-**`Description`**
 
 数据返回json <Badge type="tip" text="other" />
 
@@ -96,11 +82,9 @@ ___
 
 ___
 
-### text  
+### text <Score text="text" /> 
 
 ▸ **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 数据返回文本
 

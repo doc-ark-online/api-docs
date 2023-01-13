@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / SkyPreset
 
-# SkyPreset <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 
 天空球预设枚举
 
@@ -21,7 +19,7 @@
 
 ## Enumeration Members
 
-### Dusk2D  
+### Dusk2D <Score text="Dusk" /> 
 
 • **Dusk2D** = ``2``
 
@@ -29,7 +27,7 @@
 
 ___
 
-### DuskLowPoly  
+### DuskLowPoly <Score text="DuskLowPoly" /> 
 
 • **DuskLowPoly** = ``6``
 
@@ -37,7 +35,7 @@ ___
 
 ___
 
-### Morning2D  
+### Morning2D <Score text="Morning" /> 
 
 • **Morning2D** = ``0``
 
@@ -45,7 +43,7 @@ ___
 
 ___
 
-### MorningLowPoly  
+### MorningLowPoly <Score text="MorningLowPoly" /> 
 
 • **MorningLowPoly** = ``4``
 
@@ -53,7 +51,7 @@ ___
 
 ___
 
-### Night2D  
+### Night2D <Score text="Night" /> 
 
 • **Night2D** = ``3``
 
@@ -61,7 +59,7 @@ ___
 
 ___
 
-### NightLowPoly  
+### NightLowPoly <Score text="NightLowPoly" /> 
 
 • **NightLowPoly** = ``7``
 
@@ -69,7 +67,7 @@ ___
 
 ___
 
-### Noon2D  
+### Noon2D <Score text="Noon" /> 
 
 • **Noon2D** = ``1``
 
@@ -77,7 +75,7 @@ ___
 
 ___
 
-### NoonLowPoly  
+### NoonLowPoly <Score text="NoonLowPoly" /> 
 
 • **NoonLowPoly** = ``5``
 

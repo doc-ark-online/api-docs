@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / TouchInput
 
-# TouchInput <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# TouchInput <Badge type="tip" text="Class" /> <Score text="TouchInput" />
 
 玩家从可触摸设备获取的数据信息
 
@@ -22,51 +20,41 @@
 
 ## Properties
 
-### onTouch  
+### onTouch <Score text="onTouch" /> 
 
 • **onTouch**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
-
-**`Description`**
 
 触摸事件
 
 ___
 
-### onTouchBegin  
+### onTouchBegin <Score text="onTouchBegin" /> 
 
 • **onTouchBegin**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
-
-**`Description`**
 
 触摸开始事件
 
 ___
 
-### onTouchEnd  
+### onTouchEnd <Score text="onTouchEnd" /> 
 
 • **onTouchEnd**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
-
-**`Description`**
 
 触摸结束事件
 
 ___
 
-### onTouchMove  
+### onTouchMove <Score text="onTouchMove" /> 
 
 • **onTouchMove**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\>
-
-**`Description`**
 
 触摸移动事件
 
 ## Methods
 
-### getTouchVectorArray  
+### getTouchVectorArray <Score text="getTouchVectorArray" /> 
 
 ▸ **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取屏幕手指数的数组
 
@@ -80,11 +68,9 @@ ___
 
 ___
 
-### setPlayerController  
+### setPlayerController <Score text="setPlayerController" /> 
 
 ▸ **setPlayerController**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置玩家控制器，使用前需调用一次
 

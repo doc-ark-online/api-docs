@@ -1,8 +1,6 @@
 [UI](../modules/UI.UI.md) / AnalogInputEvent
 
-# AnalogInputEvent <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
 
 轴输入事件
 
@@ -12,17 +10,13 @@
 | :-----|
 | **[toInputEvent](UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent|
 
-**`Description`**
-
 默认构造
 
 ## Methods
 
-### toInputEvent  
+### toInputEvent <Score text="toInputEvent" /> 
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转化为 InputEvent
 

@@ -1,8 +1,6 @@
 Service
 
-# Service <Badge type="tip" text="Namespace" /> 
-
-**`Description`**
+# Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
 
 Account Service
 
@@ -46,15 +44,13 @@ Account Service
 
 ## Type Aliases
 
-### BoolResponse  
+### BoolResponse <Score text="BoolResponse" /> 
 
 Ƭ **BoolResponse**: (`success`: `boolean`) => `void`
 
 #### Type declaration
 
 ▸ (`success`): `void`
-
-**`Description`**
 
 返回bool的回调
 
@@ -70,15 +66,13 @@ Account Service
 
 ___
 
-### DownloadDataResponse  
+### DownloadDataResponse <Score text="DownloadDataResponse" /> 
 
 Ƭ **DownloadDataResponse**: () => `void`
 
 #### Type declaration
 
 ▸ (): `void`
-
-**`Description`**
 
 下载角色形象的回调，无参数
 
@@ -88,15 +82,13 @@ ___
 
 ___
 
-### MGSEvent  
+### MGSEvent <Score text="MGSEvent" /> 
 
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`jsonData`): `void`
-
-**`Description`**
 
 收到MGS事件调用
 
@@ -112,15 +104,13 @@ ___
 
 ___
 
-### MGSResponse  
+### MGSResponse <Score text="MGSResponse" /> 
 
 Ƭ **MGSResponse**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`isSuccess`, `jsonData`): `void`
-
-**`Description`**
 
 收到233回复
 
@@ -137,15 +127,13 @@ ___
 
 ___
 
-### OnArkBalanceUpdated  
+### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
 
 Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
 
 #### Type declaration
 
 ▸ (`amount`): `void`
-
-**`Description`**
 
 客户端接收余额更新的消息格式
 
@@ -161,15 +149,13 @@ ___
 
 ___
 
-### OnOrderDelivered  
+### OnOrderDelivered <Score text="OnOrderDelivered" /> 
 
 Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
 
 #### Type declaration
 
 ▸ (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
-
-**`Description`**
 
 服务端接收发货通知的消息格式
 
@@ -189,15 +175,13 @@ ___
 
 ___
 
-### OnViewLayoutSwitched  
+### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
 
 #### Type declaration
 
 ▸ (`newState`): `void`
-
-**`Description`**
 
 233中MW窗口显示模式切换的消息格式
 
@@ -213,15 +197,13 @@ ___
 
 ___
 
-### OnViewRefreshed  
+### OnViewRefreshed <Score text="OnViewRefreshed" /> 
 
 Ƭ **OnViewRefreshed**: () => `void`
 
 #### Type declaration
 
 ▸ (): `void`
-
-**`Description`**
 
 233中MW窗口刷新的消息格式
 
@@ -231,15 +213,13 @@ ___
 
 ___
 
-### StringResponse  
+### StringResponse <Score text="StringResponse" /> 
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`dataString`): `void`
-
-**`Description`**
 
 返回string的回调
 
@@ -255,11 +235,9 @@ ___
 
 ___
 
-### TeamMatchFailureInfo  
+### TeamMatchFailureInfo <Score text="TeamMatchFailureInfo" /> 
 
 Ƭ **TeamMatchFailureInfo**: `Object`
-
-**`Description`**
 
 组队跳游戏请求失败回调
 
@@ -272,15 +250,13 @@ ___
 
 ___
 
-### UploadDataResponse  
+### UploadDataResponse <Score text="UploadDataResponse" /> 
 
 Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
 
 #### Type declaration
 
 ▸ (`success`): `void`
-
-**`Description`**
 
 下载角色形象的回调消息格式
 
@@ -296,15 +272,13 @@ ___
 
 ___
 
-### VoidResponse  
+### VoidResponse <Score text="VoidResponse" /> 
 
 Ƭ **VoidResponse**: () => `void`
 
 #### Type declaration
 
 ▸ (): `void`
-
-**`Description`**
 
 返回无参数的回调
 
@@ -314,15 +288,13 @@ ___
 
 ___
 
-### downloadCharacterDataStringCallback  
+### downloadCharacterDataStringCallback <Score text="downloadCharacterDataStringCallback" /> 
 
 Ƭ **downloadCharacterDataStringCallback**: (`dataString`: `string`) => `void`
 
 #### Type declaration
 
 ▸ (`dataString`): `void`
-
-**`Description`**
 
 下载平台数据回调
 

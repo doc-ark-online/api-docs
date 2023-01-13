@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLineStyle
 
-# ProjectileLineStyle <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# ProjectileLineStyle <Badge type="tip" text="Enumeration" /> <Score text="ProjectileLineStyle" />
 
 投掷物轨迹绘制的显示风格
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### Dot  
+### Dot <Score text="Dot" /> 
 
 • **Dot** = ``0``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### Line  
+### Line <Score text="Line" /> 
 
 • **Line** = ``1``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### Segment  
+### Segment <Score text="Segment" /> 
 
 • **Segment** = ``2``
 

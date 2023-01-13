@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireMode
 
-# HotWeaponFireMode <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# HotWeaponFireMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponFireMode" />
 
 热武器开火模式
 
@@ -16,7 +14,7 @@
 
 ## Enumeration Members
 
-### ContinuousFire  
+### ContinuousFire <Score text="ContinuousFire" /> 
 
 • **ContinuousFire** = ``1``
 
@@ -24,7 +22,7 @@
 
 ___
 
-### FullAutomationFire  
+### FullAutomationFire <Score text="FullAutomationFire" /> 
 
 • **FullAutomationFire** = ``2``
 
@@ -32,7 +30,7 @@ ___
 
 ___
 
-### SingleFire  
+### SingleFire <Score text="SingleFire" /> 
 
 • **SingleFire** = ``0``
 

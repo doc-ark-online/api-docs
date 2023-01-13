@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / Sound
 
-# Sound <Badge type="tip" text="Class" /> 
-
-**`Description`**
+# Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
 音效组件
 
@@ -130,41 +128,33 @@
 
 ## Properties
 
-### onSoundFinished  
+### onSoundFinished <Score text="onSoundFinished" /> 
 
 • **onSoundFinished**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
-
-**`Description`**
 
 声音结束事件
 
 ___
 
-### onSoundPaused  
+### onSoundPaused <Score text="onSoundPaused" /> 
 
 • **onSoundPaused**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
-
-**`Description`**
 
 声音暂停事件
 
 ___
 
-### onSoundStarted  
+### onSoundStarted <Score text="onSoundStarted" /> 
 
 • **onSoundStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
-
-**`Description`**
 
 声音开始事件
 
 ## Accessors
 
-### attenuationDistanceModel  
+### attenuationDistanceModel <Score text="attenuationDistanceModel" /> 
 
 • `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取音效的衰减方式
 
@@ -177,11 +167,9 @@ ___
 
 ___
 
-### audioAsset  
+### audioAsset <Score text="audioAsset" /> 
 
 • `set` **audioAsset**(`assetGuid`): `void`
-
-**`Description`**
 
 设置音效
 
@@ -194,11 +182,9 @@ ___
 
 ___
 
-### autoPlay  
+### autoPlay <Score text="autoPlay" /> 
 
 • `get` **autoPlay**(): `boolean`
-
-**`Description`**
 
 获取是否自动播放
 
@@ -209,8 +195,6 @@ ___
 是否自动播放
 
 • `set` **autoPlay**(`autoPlay`): `void`
-
-**`Description`**
 
 设置是否自动播放
 
@@ -223,11 +207,9 @@ ___
 
 ___
 
-### currentProgress  
+### currentProgress <Score text="currentProgress" /> 
 
 • `get` **currentProgress**(): `number`
-
-**`Description`**
 
 获取当前播放时长进度
 
@@ -239,11 +221,9 @@ ___
 
 ___
 
-### drawInnerBounds  
+### drawInnerBounds <Score text="drawInnerBounds" /> 
 
 • `get` **drawInnerBounds**(): `boolean`
-
-**`Description`**
 
 获取是否绘制Bounds辅助线
 
@@ -254,8 +234,6 @@ ___
 是否绘制
 
 • `set` **drawInnerBounds**(`drawInnerBounds`): `void`
-
-**`Description`**
 
 设置是否绘制Bounds辅助线
 
@@ -268,11 +246,9 @@ ___
 
 ___
 
-### duration  
+### duration <Score text="duration" /> 
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取音效时长
 
@@ -284,11 +260,9 @@ ___
 音效时长(ms)
 
 
-### innerRadius  
+### innerRadius <Score text="innerRadius" /> 
 
 • `get` **innerRadius**(): `number`
-
-**`Description`**
 
 获取音量内部半径
 
@@ -300,8 +274,6 @@ ___
 
 • `set` **innerRadius**(`innerRadius`): `void`
 
-**`Description`**
-
 设置音量内部半径
 
 #### Parameters
@@ -312,11 +284,9 @@ ___
 
 
 
-### loop  
+### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean`
-
-**`Description`**
 
 获取是否循环播放
 
@@ -328,8 +298,6 @@ ___
 
 • `set` **loop**(`Loop`): `void`
 
-**`Description`**
-
 设置循环播放
 
 #### Parameters
@@ -340,11 +308,9 @@ ___
 
 
 
-### outerRadius  
+### outerRadius <Score text="outerRadius" /> 
 
 • `get` **outerRadius**(): `number`
-
-**`Description`**
 
 获取衰减距离
 
@@ -356,8 +322,6 @@ ___
 
 • `set` **outerRadius**(`outerRadius`): `void`
 
-**`Description`**
-
 设置外部半径（衰减距离）
 
 #### Parameters
@@ -368,11 +332,9 @@ ___
 
 
 
-### playState  
+### playState <Score text="playState" /> 
 
 • `get` **playState**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取音效播放状态
 
@@ -384,11 +346,9 @@ ___
 是否正在播放
 
 
-### spatialization  
+### spatialization <Score text="spatialization" /> 
 
 • `get` **spatialization**(): `boolean`
-
-**`Description`**
 
 获取音效空间化
 
@@ -400,8 +360,6 @@ ___
 
 • `set` **spatialization**(`spatialization`): `void`
 
-**`Description`**
-
 设置音效空间化
 
 #### Parameters
@@ -412,11 +370,9 @@ ___
 
 
 
-### uiSound  
+### uiSound <Score text="uiSound" /> 
 
 • `get` **uiSound**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否是空间音效,UI音效和循环
 
@@ -429,8 +385,6 @@ Vector XYZ 0-1
 
 • `set` **uiSound**(`uiSound`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置UI音效
 
 
@@ -442,11 +396,9 @@ Vector XYZ 0-1
 
 
 
-### volumeMultiplier  
+### volumeMultiplier <Score text="volumeMultiplier" /> 
 
 • `get` **volumeMultiplier**(): `number`
-
-**`Description`**
 
 获取音量比例
 
@@ -457,8 +409,6 @@ Vector XYZ 0-1
 音量比例
 
 • `set` **volumeMultiplier**(`volumeMultiplier`): `void`
-
-**`Description`**
 
 设置音量比例
 
@@ -472,11 +422,9 @@ Vector XYZ 0-1
 
 ## Methods
 
-### getIsDrawInnerBounds  
+### getIsDrawInnerBounds <Score text="getIsDrawInnerBounds" /> 
 
 ▸ **getIsDrawInnerBounds**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否启用Bounds辅助线
 
@@ -488,11 +436,9 @@ Vector XYZ 0-1
 是否启用
 
 
-### pause  
+### pause <Score text="pause" /> 
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 暂停播放特效
 
@@ -500,22 +446,18 @@ Vector XYZ 0-1
 
 ___
 
-### play  
+### play <Score text="play" /> 
 
 ▸ **play**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 播放音效
 
 
 
 
-### setSoundSphere  
+### setSoundSphere <Score text="setSoundSphere" /> 
 
 ▸ **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置音效.复合函数
 
@@ -531,11 +473,9 @@ ___
 
 
 
-### stop  
+### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止播放特效
 

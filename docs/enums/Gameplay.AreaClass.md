@@ -1,8 +1,6 @@
 [Gameplay](../modules/Gameplay.Gameplay.md) / AreaClass
 
-# AreaClass <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# AreaClass <Badge type="tip" text="Enumeration" /> <Score text="AreaClass" />
 
 寻路区域屏障寻路计算类型
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### Default  
+### Default <Score text="Default" /> 
 
 • **Default** = ``1``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### LowHeight  
+### LowHeight <Score text="LowHeight" /> 
 
 • **LowHeight** = ``2``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### Null  
+### Null <Score text="Null" /> 
 
 • **Null** = ``0``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### Obstacle  
+### Obstacle <Score text="Obstacle" /> 
 
 • **Obstacle** = ``3``
 

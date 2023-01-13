@@ -1,8 +1,6 @@
 [Type](../modules/Type.Type.md) / CollisionStatus
 
-# CollisionStatus <Badge type="tip" text="Enumeration" /> 
-
-**`Description`**
+# CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 
 碰撞属性状态
 
@@ -17,7 +15,7 @@
 
 ## Enumeration Members
 
-### FromParent  
+### FromParent <Score text="FromParent" /> 
 
 • **FromParent** = ``0``
 
@@ -25,7 +23,7 @@
 
 ___
 
-### Off  
+### Off <Score text="Off" /> 
 
 • **Off** = ``2``
 
@@ -33,7 +31,7 @@ ___
 
 ___
 
-### On  
+### On <Score text="On" /> 
 
 • **On** = ``1``
 
@@ -41,7 +39,7 @@ ___
 
 ___
 
-### QueryOnly  
+### QueryOnly <Score text="QueryOnly" /> 
 
 • **QueryOnly** = ``3``
 
