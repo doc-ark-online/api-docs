@@ -83,11 +83,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       {
         text: '论坛',
         link: 'https://forums.ark.online/#/'
-      },
-      {
-        text: '020 版本',
-        items: [{ text: '021 灰度', link: 'https://api-docs-021.ark.online/' }]
       }
+      // {
+      //   text: '020 版本'
+      //   // items: [{ text: '021 灰度', link: 'https://api-docs-021.ark.online/' }]
+      // }
       // {
       //   text: '语言',
       //   items: [
