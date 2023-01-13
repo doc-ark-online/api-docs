@@ -86,9 +86,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '020 版本',
-        items: [
-          { text: '021 灰度', link: '/item-1' },
-        ]
+        items: [{ text: '021 灰度', link: '/item-1' }]
       }
       // {
       //   text: '语言',
@@ -99,7 +97,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       // }
     ],
     socialLinks: [
-      { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' },
+      // { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' },
       {
         link: 'https://wenjuan.feishu.cn/m/cfm?t=sEJP3cVJZ3Ii-ewdc',
         icon: {
