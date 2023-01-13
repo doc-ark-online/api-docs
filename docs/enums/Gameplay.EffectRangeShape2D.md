@@ -2,8 +2,6 @@
 
 # EffectRangeShape2D <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeShape2D" />
 
-**`Description`**
-
 效果范围形状
 
 ## Table of contents

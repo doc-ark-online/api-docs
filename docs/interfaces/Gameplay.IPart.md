@@ -2,8 +2,6 @@
 
 # IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 
-**`Description`**
-
 部位基类
 
 ## Hierarchy
@@ -35,8 +33,6 @@
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取部位模型
 
 双端
@@ -52,8 +48,6 @@ ___
 ### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置部位模型
 

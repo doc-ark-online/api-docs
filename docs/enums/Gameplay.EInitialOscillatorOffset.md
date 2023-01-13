@@ -2,8 +2,6 @@
 
 # EInitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="EInitialOscillatorOffset" />
 
-**`Description`**
-
 定义如何开始(从零开始，或者从随机值开始)
 
 ## Table of contents

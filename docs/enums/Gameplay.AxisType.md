@@ -2,8 +2,6 @@
 
 # AxisType <Badge type="tip" text="Enumeration" /> <Score text="AxisType" />
 
-**`Description`**
-
 轴标记
 
 ## Table of contents

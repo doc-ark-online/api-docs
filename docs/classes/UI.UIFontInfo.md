@@ -2,8 +2,6 @@
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
-**`Description`**
-
 字体信息
 
 ## Table of contents
@@ -29,8 +27,6 @@
 
 • **contentColor**: [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 内容颜色
 
 ___
@@ -38,8 +34,6 @@ ___
 ### fontSize <Score text="fontSize" /> 
 
 • **fontSize**: `number`
-
-**`Description`**
 
 大小
 
@@ -49,8 +43,6 @@ ___
 
 • **glyph**: [`UIFontGlyph`](../enums/UI.UIFontGlyph.md)
 
-**`Description`**
-
 字形
 
 ___
@@ -58,8 +50,6 @@ ___
 ### letterSpacing <Score text="letterSpacing" /> 
 
 • **letterSpacing**: `number`
-
-**`Description`**
 
 间距
 
@@ -69,8 +59,6 @@ ___
 
 • **outLineColor**: [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 描边颜色
 
 ___
@@ -78,8 +66,6 @@ ___
 ### outLineSize <Score text="outLineSize" /> 
 
 • **outLineSize**: `number`
-
-**`Description`**
 
 描边大小
 
@@ -89,8 +75,6 @@ ___
 
 • **shadowColor**: [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 阴影颜色
 
 ___
@@ -98,8 +82,6 @@ ___
 ### shadowOffset <Score text="shadowOffset" /> 
 
 • **shadowOffset**: [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 阴影偏移
 
@@ -109,8 +91,6 @@ ___
 
 • **strikethrough**: `boolean`
 
-**`Description`**
-
 删除线
 
 ___
@@ -118,8 +98,6 @@ ___
 ### textAlign <Score text="textAlign" /> 
 
 • **textAlign**: [`TextJustify`](../enums/UI.TextJustify.md)
-
-**`Description`**
 
 对齐方式
 
@@ -129,8 +107,6 @@ ___
 
 • **textVerticalAlign**: [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md)
 
-**`Description`**
-
 垂直对齐方式
 
 ___
@@ -138,7 +114,5 @@ ___
 ### underline <Score text="underline" /> 
 
 • **underline**: `boolean`
-
-**`Description`**
 
 下划线

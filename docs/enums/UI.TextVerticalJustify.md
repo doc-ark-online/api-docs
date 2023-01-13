@@ -2,8 +2,6 @@
 
 # TextVerticalJustify <Badge type="tip" text="Enumeration" /> <Score text="TextVerticalJustify" />
 
-**`Description`**
-
 文本排列垂直对齐规则
 
 ## Table of contents

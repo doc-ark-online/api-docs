@@ -2,8 +2,6 @@
 
 # Projectile <Badge type="tip" text="Class" /> <Score text="Projectile" />
 
-**`Description`**
-
 投掷物逻辑对象
 
 ## Hierarchy
@@ -130,8 +128,6 @@
 
 • **onProjectileBeginOverlap**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`, `fromSweep`: `boolean`, `sweepResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
-**`Description`**
-
 当投掷物与其他物体开始接触重叠时执行绑定函数
 
 ___
@@ -139,8 +135,6 @@ ___
 ### onProjectileBounce <Score text="onProjectileBounce" /> 
 
 • **onProjectileBounce**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`impactResult`: [`HitResult`](Gameplay.HitResult.md), `impactVelocity`: [`Vector`](Type.Vector.md), `bounceNum`: `number`) => `void`\>
-
-**`Description`**
 
 当投掷物发生弹跳时执行绑定函数
 
@@ -150,8 +144,6 @@ ___
 
 • **onProjectileEndOverlap**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`) => `void`\>
 
-**`Description`**
-
 当投掷物与其他物体结束接触重叠时执行绑定函数
 
 ___
@@ -159,8 +151,6 @@ ___
 ### onProjectileHit <Score text="onProjectileHit" /> 
 
 • **onProjectileHit**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
-
-**`Description`**
 
 当投掷物发生碰撞时执行绑定函数
 
@@ -170,8 +160,6 @@ ___
 
 • **onProjectileInterrupt**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 当投掷物自动终止时执行绑定函数
 
 ## Accessors
@@ -180,8 +168,6 @@ ___
 
 • `get` **collisionLength**(): `number`
 
-**`Description`**
-
 包围盒高度
 
 #### Returns
@@ -189,8 +175,6 @@ ___
 `number`
 
 • `set` **collisionLength**(`length`): `void`
-
-**`Description`**
 
 包围盒高度
 
@@ -207,8 +191,6 @@ ___
 
 • `get` **collisionRadius**(): `number`
 
-**`Description`**
-
 包围盒半径
 
 #### Returns
@@ -216,8 +198,6 @@ ___
 `number`
 
 • `set` **collisionRadius**(`radius`): `void`
-
-**`Description`**
 
 包围盒半径
 
@@ -234,8 +214,6 @@ ___
 
 • `get` **flyRange**(): `number`
 
-**`Description`**
-
 飞行距离
 
 #### Returns
@@ -243,8 +221,6 @@ ___
 `number`
 
 • `set` **flyRange**(`range`): `void`
-
-**`Description`**
 
 飞行距离
 
@@ -260,8 +236,6 @@ ___
 
 • `get` **gravityScale**(): `number`
 
-**`Description`**
-
 重力缩放值
 
 #### Returns
@@ -269,8 +243,6 @@ ___
 `number`
 
 • `set` **gravityScale**(`scale`): `void`
-
-**`Description`**
 
 重力缩放值
 
@@ -286,8 +258,6 @@ ___
 
 • `get` **initialSpeed**(): `number`
 
-**`Description`**
-
 初始速度
 
 #### Returns
@@ -295,8 +265,6 @@ ___
 `number`
 
 • `set` **initialSpeed**(`value`): `void`
-
-**`Description`**
 
 初始速度
 
@@ -312,8 +280,6 @@ ___
 
 • `get` **maxBounceCount**(): `number`
 
-**`Description`**
-
 最大弹跳
 
 #### Returns
@@ -321,8 +287,6 @@ ___
 `number`
 
 • `set` **maxBounceCount**(`bounceCount`): `void`
-
-**`Description`**
 
 最大弹跳
 
@@ -338,8 +302,6 @@ ___
 
 • `get` **simulatePhysics**(): `boolean`
 
-**`Description`**
-
 模拟物理
 
 #### Returns
@@ -347,8 +309,6 @@ ___
 `boolean`
 
 • `set` **simulatePhysics**(`isSimulated`): `void`
-
-**`Description`**
 
 模拟物理
 
@@ -365,8 +325,6 @@ ___
 ### bindPlayer <Score text="bindPlayer" /> 
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定玩家，需要使用该接口在Server绑定具体的Player
 
@@ -395,8 +353,6 @@ ___
 
 ▸ **init**(`Speed?`, `CollisionLength?`, `CollisionRadius?`, `FlyRange?`, `GravityScale?`, `SimulatePhysics?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 子弹初始化,只有在客户端调用时会自动绑定当前角色
 
 
@@ -417,8 +373,6 @@ ___
 
 ▸ **launch**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 发射投掷物，将目前射程清零
 
 ::: warning Precautions
@@ -431,8 +385,6 @@ ___
 
 
 ▸ **launch**(`fromLoc`, `toLoc`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 发射投掷物，将目前射程清零
 
@@ -458,8 +410,6 @@ ___
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 暂停投掷物
 
 
@@ -468,8 +418,6 @@ ___
 ### resume <Score text="resume" /> 
 
 ▸ **resume**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 唤醒投掷物
 

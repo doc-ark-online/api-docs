@@ -23,8 +23,6 @@
 
 ▸ **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 添加游戏币接口
 
 
@@ -45,8 +43,6 @@ ___
 ### addUserGameCoinWithEnv <Score text="addUserGameCoinWithEnv" /> 
 
 ▸ **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加游戏币接口
 
@@ -71,8 +67,6 @@ ___
 
 ▸ **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 添加游戏币接口
 
 
@@ -95,8 +89,6 @@ ___
 
 ▸ **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 减少游戏币接口
 
 
@@ -117,8 +109,6 @@ ___
 ### decreaseUserGameCoinWithEnv <Score text="decreaseUserGameCoinWithEnv" /> 
 
 ▸ **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 减少游戏币接口
 
@@ -143,8 +133,6 @@ ___
 
 ▸ **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 减少游戏币接口
 
 
@@ -167,8 +155,6 @@ ___
 
 ▸ **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 查询账户的游戏币数量
 
 
@@ -187,8 +173,6 @@ ___
 ### queryUserGameCoinWithEnv <Score text="queryUserGameCoinWithEnv" /> 
 
 ▸ **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询账户的游戏币数量
 
@@ -210,8 +194,6 @@ ___
 
 ▸ **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 查询账户的游戏币数量
 
 
@@ -230,8 +212,6 @@ ___
 ### queryUserNFT <Score text="queryUserNFT" /> 
 
 ▸ **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 查询NFT接口
 

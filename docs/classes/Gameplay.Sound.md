@@ -2,8 +2,6 @@
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
-**`Description`**
-
 音效组件
 
 ## Hierarchy
@@ -134,8 +132,6 @@
 
 • **onSoundFinished**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-**`Description`**
-
 声音结束事件
 
 ___
@@ -143,8 +139,6 @@ ___
 ### onSoundPaused <Score text="onSoundPaused" /> 
 
 • **onSoundPaused**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
-
-**`Description`**
 
 声音暂停事件
 
@@ -154,8 +148,6 @@ ___
 
 • **onSoundStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-**`Description`**
-
 声音开始事件
 
 ## Accessors
@@ -163,8 +155,6 @@ ___
 ### attenuationDistanceModel <Score text="attenuationDistanceModel" /> 
 
 • `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取音效的衰减方式
 
@@ -181,8 +171,6 @@ ___
 
 • `set` **audioAsset**(`assetGuid`): `void`
 
-**`Description`**
-
 设置音效
 
 #### Parameters
@@ -198,8 +186,6 @@ ___
 
 • `get` **autoPlay**(): `boolean`
 
-**`Description`**
-
 获取是否自动播放
 
 #### Returns
@@ -209,8 +195,6 @@ ___
 是否自动播放
 
 • `set` **autoPlay**(`autoPlay`): `void`
-
-**`Description`**
 
 设置是否自动播放
 
@@ -227,8 +211,6 @@ ___
 
 • `get` **currentProgress**(): `number`
 
-**`Description`**
-
 获取当前播放时长进度
 
 #### Returns
@@ -243,8 +225,6 @@ ___
 
 • `get` **drawInnerBounds**(): `boolean`
 
-**`Description`**
-
 获取是否绘制Bounds辅助线
 
 #### Returns
@@ -254,8 +234,6 @@ ___
 是否绘制
 
 • `set` **drawInnerBounds**(`drawInnerBounds`): `void`
-
-**`Description`**
 
 设置是否绘制Bounds辅助线
 
@@ -272,8 +250,6 @@ ___
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取音效时长
 
 
@@ -288,8 +264,6 @@ ___
 
 • `get` **innerRadius**(): `number`
 
-**`Description`**
-
 获取音量内部半径
 
 #### Returns
@@ -299,8 +273,6 @@ ___
 音量内部半径
 
 • `set` **innerRadius**(`innerRadius`): `void`
-
-**`Description`**
 
 设置音量内部半径
 
@@ -316,8 +288,6 @@ ___
 
 • `get` **loop**(): `boolean`
 
-**`Description`**
-
 获取是否循环播放
 
 #### Returns
@@ -327,8 +297,6 @@ ___
 是否循环
 
 • `set` **loop**(`Loop`): `void`
-
-**`Description`**
 
 设置循环播放
 
@@ -344,8 +312,6 @@ ___
 
 • `get` **outerRadius**(): `number`
 
-**`Description`**
-
 获取衰减距离
 
 #### Returns
@@ -355,8 +321,6 @@ ___
 距离
 
 • `set` **outerRadius**(`outerRadius`): `void`
-
-**`Description`**
 
 设置外部半径（衰减距离）
 
@@ -372,8 +336,6 @@ ___
 
 • `get` **playState**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取音效播放状态
 
 
@@ -388,8 +350,6 @@ ___
 
 • `get` **spatialization**(): `boolean`
 
-**`Description`**
-
 获取音效空间化
 
 #### Returns
@@ -399,8 +359,6 @@ ___
 是否开启音效空间化
 
 • `set` **spatialization**(`spatialization`): `void`
-
-**`Description`**
 
 设置音效空间化
 
@@ -416,8 +374,6 @@ ___
 
 • `get` **uiSound**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否是空间音效,UI音效和循环
 
 
@@ -428,8 +384,6 @@ ___
 Vector XYZ 0-1
 
 • `set` **uiSound**(`uiSound`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置UI音效
 
@@ -446,8 +400,6 @@ Vector XYZ 0-1
 
 • `get` **volumeMultiplier**(): `number`
 
-**`Description`**
-
 获取音量比例
 
 #### Returns
@@ -457,8 +409,6 @@ Vector XYZ 0-1
 音量比例
 
 • `set` **volumeMultiplier**(`volumeMultiplier`): `void`
-
-**`Description`**
 
 设置音量比例
 
@@ -476,8 +426,6 @@ Vector XYZ 0-1
 
 ▸ **getIsDrawInnerBounds**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否启用Bounds辅助线
 
 
@@ -492,8 +440,6 @@ Vector XYZ 0-1
 
 ▸ **pause**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 暂停播放特效
 
 
@@ -504,8 +450,6 @@ ___
 
 ▸ **play**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 播放音效
 
 
@@ -514,8 +458,6 @@ ___
 ### setSoundSphere <Score text="setSoundSphere" /> 
 
 ▸ **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置音效.复合函数
 
@@ -534,8 +476,6 @@ ___
 ### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止播放特效
 

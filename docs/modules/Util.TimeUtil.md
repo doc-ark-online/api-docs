@@ -2,8 +2,6 @@
 
 # TimeUtil <Badge type="tip" text="Namespace" /> <Score text="TimeUtil" />
 
-**`Description`**
-
 时间工具
 
 ## Table of contents
@@ -33,8 +31,6 @@
 
 • `Const` **onEnterFrame**: [`Action1`](../classes/Type.Action1.md)<`number`\>
 
-**`Description`**
-
 进入帧事件时执行绑定函数(参数deltaTime)
 
 ::: warning Precautions
@@ -42,8 +38,6 @@
 每次update时自动执行所有绑定的函数
 
 :::
-
-**`Example`**
 
 使用示例:绑定函数
 ```ts
@@ -58,8 +52,6 @@ ___
 
 • **traceFrameTime**: `boolean`
 
-**`Description`**
-
 是否输出每帧的执行时间
 
 ## Functions
@@ -67,8 +59,6 @@ ___
 ### clear <Score text="clear" /> 
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清除所有
 
@@ -79,8 +69,6 @@ ___
 ### clearDelayExecute <Score text="clearDelayExecute" /> 
 
 ▸ **clearDelayExecute**(`id`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 清除delayExecute
 
@@ -98,8 +86,6 @@ ___
 
 ▸ **clearInterval**(`id`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 清除setInterval
 
 
@@ -115,8 +101,6 @@ ___
 ### delayExecute <Score text="delayExecute" /> 
 
 ▸ **delayExecute**(`handler`, `frameNum?`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 延迟一定帧数执行方法
 
@@ -140,8 +124,6 @@ ___
 
 ▸ **delaySecond**(`second`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 延迟一定秒数,用于异步方法中间的等待，不可取消
 
 
@@ -162,8 +144,6 @@ ___
 ### delayTime <Score text="delayTime" /> 
 
 ▸ **delayTime**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 每一帧经过的时间 (单位：秒)
 
@@ -186,8 +166,6 @@ ___
 
 ▸ **elapsedTime**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
 
@@ -209,8 +187,6 @@ ___
 
 ▸ **getExecuteTime**(`fn`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取一个方法的执行时间
 
 
@@ -231,8 +207,6 @@ ___
 ### parseTime <Score text="parseTime" /> 
 
 ▸ **parseTime**(`timeData`, `format?`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 格式化时间戳
 
@@ -256,8 +230,6 @@ ___
 
 ▸ **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 按一定时间间隔执行方法
 
 
@@ -280,8 +252,6 @@ ___
 ### time <Score text="time" /> 
 
 ▸ **time**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
 

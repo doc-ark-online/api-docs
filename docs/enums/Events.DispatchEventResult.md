@@ -2,8 +2,6 @@
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 
-**`Description`**
-
 事件发送的结果
 
 ## Table of contents

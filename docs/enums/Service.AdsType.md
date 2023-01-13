@@ -2,8 +2,6 @@
 
 # AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 
-**`Description`**
-
 广告类型
 
 ## Table of contents

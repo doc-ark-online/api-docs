@@ -2,8 +2,6 @@
 
 # AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
 
-**`Description`**
-
 轴输入事件
 
 ## Table of contents
@@ -12,8 +10,6 @@
 | :-----|
 | **[toInputEvent](UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent|
 
-**`Description`**
-
 默认构造
 
 ## Methods
@@ -21,8 +17,6 @@
 ### toInputEvent <Score text="toInputEvent" /> 
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转化为 InputEvent
 

@@ -2,8 +2,6 @@
 
 # Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 
-**`Description`**
-
 特效对象
 
 ## Hierarchy
@@ -117,8 +115,6 @@
 
 • `set` **color**(`EffectColor`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置特效颜色
 
 客户端生效
@@ -135,8 +131,6 @@
 
 • `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取特效是否是循环
 
 客户端生效
@@ -148,8 +142,6 @@
 是否循环
 
 • `set` **loop**(`NewLoop`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置特效循环
 
@@ -168,8 +160,6 @@ ___
 
 • `get` **loopCount**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取特效循环次数
 
 客户端生效
@@ -181,8 +171,6 @@ ___
 循环的次数
 
 • `set` **loopCount**(`NewLoopCount`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置特效循环次数
 
@@ -199,8 +187,6 @@ ___
 ### particleLength <Score text="particleLength" /> 
 
 • `get` **particleLength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取特效时长
 
@@ -219,8 +205,6 @@ ___
 
 ▸ **play**(`OnSuccess?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 播放特效
 
 客户端生效
@@ -236,8 +220,6 @@ ___
 ### setCullDistance <Score text="setCullDistance" /> 
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
 
@@ -259,8 +241,6 @@ ___
 ### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止特效
 

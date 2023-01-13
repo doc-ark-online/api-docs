@@ -2,8 +2,6 @@
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 
-**`Description`**
-
 姿态混合模式
 
 ## Table of contents

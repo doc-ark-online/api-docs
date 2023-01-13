@@ -2,8 +2,6 @@
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
-**`Description`**
-
 屏幕坐标转换结果
 
 ## Table of contents
@@ -21,8 +19,6 @@
 
 • **result**: `boolean`
 
-**`Description`**
-
 如果无法确定值，则返回  false。
 
 ___
@@ -30,8 +26,6 @@ ___
 ### screenPosition <Score text="screenPosition" /> 
 
 • **screenPosition**: [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 屏幕位置
 
@@ -41,8 +35,6 @@ ___
 
 • **worldDirection**: [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 世界方向
 
 ___
@@ -50,7 +42,5 @@ ___
 ### worldLocation <Score text="worldLocation" /> 
 
 • **worldLocation**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 世界坐标

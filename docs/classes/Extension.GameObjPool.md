@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 GameObject对象池
 
 ::: warning Precautions
@@ -30,8 +28,6 @@ GameObject对象池
 
 ▸ **clear**(`GUID`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 清除对象池中该GUID对应的所有对象
 
 
@@ -47,8 +43,6 @@ ___
 ### despawn <Score text="despawn" /> 
 
 ▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 归还一个对象
 
@@ -66,8 +60,6 @@ ___
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 销毁对象池全局实例
 
 
@@ -77,8 +69,6 @@ ___
 ### spawn <Score text="spawn" /> 
 
 ▸ **spawn**<`T`\>(`GUID`): `T` <Badge type="tip" text="other" />
-
-**`Description`**
 
 生成一个对象
 
@@ -106,8 +96,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`GameObjPool`](Extension.GameObjPool.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象池全局实例
 

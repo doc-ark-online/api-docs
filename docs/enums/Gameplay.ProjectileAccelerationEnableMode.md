@@ -2,8 +2,6 @@
 
 # ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileAccelerationEnableMode" />
 
-**`Description`**
-
 投掷物加速启用模式
 
 ## Table of contents

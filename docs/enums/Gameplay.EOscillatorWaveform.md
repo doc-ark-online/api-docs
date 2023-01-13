@@ -2,8 +2,6 @@
 
 # EOscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="EOscillatorWaveform" />
 
-**`Description`**
-
 振荡器波形
 
 ## Table of contents

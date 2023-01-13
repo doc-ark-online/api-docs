@@ -2,8 +2,6 @@
 
 # Equipment <Badge type="tip" text="Class" /> <Score text="Equipment" />
 
-**`Description`**
-
 装备对象
 
 ## Hierarchy
@@ -134,8 +132,6 @@
 
 • **onDiscardEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
-**`Description`**
-
 丢弃装备事件
 
 ___
@@ -143,8 +139,6 @@ ___
 ### onHoldEquipment <Score text="onHoldEquipment" /> 
 
 • **onHoldEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 持有装备事件
 
@@ -154,8 +148,6 @@ ___
 
 • **onPickupEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
 
-**`Description`**
-
 拾取装备事件
 
 ___
@@ -163,8 +155,6 @@ ___
 ### onUnholdEquipment <Score text="onUnholdEquipment" /> 
 
 • **onUnholdEquipment**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\>
-
-**`Description`**
 
 收起装备事件
 
@@ -174,8 +164,6 @@ ___
 
 • `get` **autoHoldEquipment**(): `boolean`
 
-**`Description`**
-
 自动持有装备
 
 #### Returns
@@ -183,8 +171,6 @@ ___
 `boolean`
 
 • `set` **autoHoldEquipment**(`bValue`): `void`
-
-**`Description`**
 
 自动持有装备
 
@@ -201,8 +187,6 @@ ___
 
 • `get` **autoPickup**(): `boolean`
 
-**`Description`**
-
 自动拾取
 
 #### Returns
@@ -210,8 +194,6 @@ ___
 `boolean`
 
 • `set` **autoPickup**(`bValue`): `void`
-
-**`Description`**
 
 自动拾取
 
@@ -228,8 +210,6 @@ ___
 
 • `get` **autoPlayPickupAnimation**(): `boolean`
 
-**`Description`**
-
 自动播放拾取动画
 
 #### Returns
@@ -237,8 +217,6 @@ ___
 `boolean`
 
 • `set` **autoPlayPickupAnimation**(`bValue`): `void`
-
-**`Description`**
 
 自动播放拾取动画
 
@@ -255,8 +233,6 @@ ___
 
 • `get` **discardAnimation**(): `string`
 
-**`Description`**
-
 丢弃动画
 
 #### Returns
@@ -264,8 +240,6 @@ ___
 `string`
 
 • `set` **discardAnimation**(`sValue`): `void`
-
-**`Description`**
 
 丢弃动画
 
@@ -282,8 +256,6 @@ ___
 
 • `get` **equipmentSlot**(): `string`
 
-**`Description`**
-
 装备插槽
 
 #### Returns
@@ -291,8 +263,6 @@ ___
 `string`
 
 • `set` **equipmentSlot**(`sValue`): `void`
-
-**`Description`**
 
 设置装备插槽
 
@@ -309,8 +279,6 @@ ___
 
 • `get` **equipmentStatus**(): [`EquipmentStatus`](../enums/Gameplay.EquipmentStatus.md)
 
-**`Description`**
-
 装备状态
 
 #### Returns
@@ -322,8 +290,6 @@ ___
 
 • `get` **holdAnimation**(): `string`
 
-**`Description`**
-
 拿出动画
 
 #### Returns
@@ -331,8 +297,6 @@ ___
 `string`
 
 • `set` **holdAnimation**(`sValue`): `void`
-
-**`Description`**
 
 拿出动画
 
@@ -349,8 +313,6 @@ ___
 
 • `get` **holdEquipmentStance**(): `string`
 
-**`Description`**
-
 持有装备的姿态资源
 
 #### Returns
@@ -358,8 +320,6 @@ ___
 `string`
 
 • `set` **holdEquipmentStance**(`sValue`): `void`
-
-**`Description`**
 
 持有装备的姿态资源
 
@@ -375,8 +335,6 @@ ___
 
 • `get` **pickupAnimation**(): `string`
 
-**`Description`**
-
 拾取动画
 
 #### Returns
@@ -384,8 +342,6 @@ ___
 `string`
 
 • `set` **pickupAnimation**(`sValue`): `void`
-
-**`Description`**
 
 拾取动画
 
@@ -402,8 +358,6 @@ ___
 
 • `get` **pickupTrigger**(): `string`
 
-**`Description`**
-
 获取绑定触发器的GUID
 
 #### Returns
@@ -411,8 +365,6 @@ ___
 `string`
 
 • `set` **pickupTrigger**(`TriggerGuid`): `void`
-
-**`Description`**
 
 触发器
 
@@ -428,8 +380,6 @@ ___
 
 • `get` **unholdAnimation**(): `string`
 
-**`Description`**
-
 收起动画
 
 #### Returns
@@ -437,8 +387,6 @@ ___
 `string`
 
 • `set` **unholdAnimation**(`sValue`): `void`
-
-**`Description`**
 
 收起动画
 
@@ -455,8 +403,6 @@ ___
 
 • `get` **unholdSlot**(): `string`
 
-**`Description`**
-
 携带插槽
 
 #### Returns
@@ -464,8 +410,6 @@ ___
 `string`
 
 • `set` **unholdSlot**(`slotName`): `void`
-
-**`Description`**
 
 设置携带插槽
 
@@ -483,8 +427,6 @@ ___
 
 ▸ **discardEquipment**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 丢弃装备
 
 自动同步
@@ -494,8 +436,6 @@ ___
 ### getCurrentOwner <Score text="getCurrentOwner" /> 
 
 ▸ **getCurrentOwner**(): [`CharacterBase`](Gameplay.CharacterBase.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取装备的所有者
 
@@ -511,8 +451,6 @@ ___
 
 ▸ **holdEquipment**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 持有装备
 
 自动同步
@@ -522,8 +460,6 @@ ___
 ### pickupEquipment <Score text="pickupEquipment" /> 
 
 ▸ **pickupEquipment**(`character`, `autoHold`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 拾取装备
 
@@ -541,8 +477,6 @@ ___
 ### unholdEquipment <Score text="unholdEquipment" /> 
 
 ▸ **unholdEquipment**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 收起装备
 

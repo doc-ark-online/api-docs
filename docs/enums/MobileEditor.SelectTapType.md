@@ -2,8 +2,6 @@
 
 # SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
 
-**`Description`**
-
 UGC 选中的单选或者多选
 
 ## Table of contents

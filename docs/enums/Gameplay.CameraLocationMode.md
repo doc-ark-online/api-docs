@@ -2,8 +2,6 @@
 
 # CameraLocationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraLocationMode" />
 
-**`Description`**
-
 摄像机位置模式
 
 ## Table of contents

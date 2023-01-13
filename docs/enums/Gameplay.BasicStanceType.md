@@ -2,8 +2,6 @@
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 
-**`Description`**
-
 基础姿态风格
 
 ## Table of contents

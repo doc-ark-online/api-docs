@@ -2,8 +2,6 @@
 
 # MaskType <Badge type="tip" text="Enumeration" /> <Score text="MaskType" />
 
-**`Description`**
-
 遮罩类型
 
 ## Table of contents

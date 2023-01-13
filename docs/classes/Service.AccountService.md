@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 用户账号信息管理相关服务
 
 ::: warning Precautions
@@ -38,8 +36,6 @@
 
 ▸ **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 应用分享Id的角色数据
 
 客户端调用
@@ -59,8 +55,6 @@ ___
 
 ▸ **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 生成分享Id
 
 客户端调用
@@ -78,8 +72,6 @@ ___
 ### dataShowToOther <Score text="dataShowToOther" /> 
 
 ▸ **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置数据是否公开给其他用户
 
@@ -100,8 +92,6 @@ ___
 
 ▸ **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 下载角色形象并应用到当前角色身上
 
 客户端调用
@@ -121,8 +111,6 @@ ___
 
 ▸ **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 下载默认角色数据
 
 客户端调用
@@ -139,8 +127,6 @@ ___
 ### fillAvatar <Score text="fillAvatar" /> 
 
 ▸ **fillAvatar**(`img`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将头像赋值到Image变量上
 
@@ -165,8 +151,6 @@ ___
 
 ▸ **getNickName**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取玩家昵称
 
 客户端调用
@@ -188,8 +172,6 @@ ___
 ### getOpenId <Score text="getOpenId" /> 
 
 ▸ **getOpenId**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取OpenId
 
@@ -213,8 +195,6 @@ ___
 
 ▸ **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取用户存储在服务器上的角色形象数据
 
 客户端调用
@@ -234,8 +214,6 @@ ___
 
 ▸ **getUserId**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取平台的用户Id,可以用于getUserData接口
 
 客户端调用
@@ -251,8 +229,6 @@ ___
 ### setUserData <Score text="setUserData" /> 
 
 ▸ **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将角色形象数据应用至角色
 
@@ -273,8 +249,6 @@ ___
 
 ▸ **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
 客户端调用
@@ -294,8 +268,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`AccountService`](Service.AccountService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取用户账号信息管理器全局实例
 

@@ -2,8 +2,6 @@
 
 # EffectLogical <Badge type="tip" text="Class" /> <Score text="EffectLogical" />
 
-**`Description`**
-
 效果逻辑对象
 
 ::: warning Precautions
@@ -133,8 +131,6 @@
 
 • `get` **circleRadius**(): `number`
 
-**`Description`**
-
 获取圆形半径
 
 #### Returns
@@ -142,8 +138,6 @@
 `number`
 
 • `set` **circleRadius**(`inCircleRadius`): `void`
-
-**`Description`**
 
 设置圆形半径
 
@@ -160,8 +154,6 @@ ___
 
 • `get` **cubeHeight**(): `number`
 
-**`Description`**
-
 获取立方体宽度
 
 #### Returns
@@ -169,8 +161,6 @@ ___
 `number`
 
 • `set` **cubeHeight**(`inCubeHeight`): `void`
-
-**`Description`**
 
 设置立方体宽度
 
@@ -187,8 +177,6 @@ ___
 
 • `get` **cubeLength**(): `number`
 
-**`Description`**
-
 获取立方体高度
 
 #### Returns
@@ -196,8 +184,6 @@ ___
 `number`
 
 • `set` **cubeLength**(`inCubeLength`): `void`
-
-**`Description`**
 
 设置立方体高度
 
@@ -214,8 +200,6 @@ ___
 
 • `get` **cubeWidget**(): `number`
 
-**`Description`**
-
 获取立方体长度
 
 #### Returns
@@ -223,8 +207,6 @@ ___
 `number`
 
 • `set` **cubeWidget**(`inCubeWidget`): `void`
-
-**`Description`**
 
 设置立方体长度
 
@@ -241,8 +223,6 @@ ___
 
 • `get` **effectRangeShape**(): [`EffectRangeShape3D`](../enums/Gameplay.EffectRangeShape3D.md)
 
-**`Description`**
-
 获取效果形状
 
 #### Returns
@@ -250,8 +230,6 @@ ___
 [`EffectRangeShape3D`](../enums/Gameplay.EffectRangeShape3D.md)
 
 • `set` **effectRangeShape**(`inEffectRangeShape`): `void`
-
-**`Description`**
 
 设置效果形状3D
 
@@ -268,8 +246,6 @@ ___
 
 • `get` **effectRangeType**(): [`EffectRangeType`](../enums/Gameplay.EffectRangeType.md)
 
-**`Description`**
-
 获取效果类型
 
 #### Returns
@@ -277,8 +253,6 @@ ___
 [`EffectRangeType`](../enums/Gameplay.EffectRangeType.md)
 
 • `set` **effectRangeType**(`inEffectRangeType`): `void`
-
-**`Description`**
 
 设置效果类型
 
@@ -294,8 +268,6 @@ ___
 
 • `get` **rectangleHeight**(): `number`
 
-**`Description`**
-
 获取矩形宽度
 
 #### Returns
@@ -303,8 +275,6 @@ ___
 `number`
 
 • `set` **rectangleHeight**(`rectangleHeight`): `void`
-
-**`Description`**
 
 设置矩形宽度
 
@@ -321,8 +291,6 @@ ___
 
 • `get` **rectangleWidget**(): `number`
 
-**`Description`**
-
 获取矩形长度
 
 #### Returns
@@ -330,8 +298,6 @@ ___
 `number`
 
 • `set` **rectangleWidget**(`inRectangleWidget`): `void`
-
-**`Description`**
 
 设置矩形长度
 
@@ -347,8 +313,6 @@ ___
 
 • `get` **sectorAngle**(): `number`
 
-**`Description`**
-
 获取扇形角度
 
 #### Returns
@@ -356,8 +320,6 @@ ___
 `number`
 
 • `set` **sectorAngle**(`inSectorAngle`): `void`
-
-**`Description`**
 
 设置扇形角度
 
@@ -374,8 +336,6 @@ ___
 
 • `get` **sectorRadius**(): `number`
 
-**`Description`**
-
 获取扇形半径
 
 #### Returns
@@ -383,8 +343,6 @@ ___
 `number`
 
 • `set` **sectorRadius**(`inSectorRadius`): `void`
-
-**`Description`**
 
 设置扇形半径
 
@@ -401,8 +359,6 @@ ___
 
 • `get` **segmentAngle**(): `number`
 
-**`Description`**
-
 获取扇形体角度
 
 #### Returns
@@ -410,8 +366,6 @@ ___
 `number`
 
 • `set` **segmentAngle**(`inSegmentAngle`): `void`
-
-**`Description`**
 
 设置扇形体角度
 
@@ -428,8 +382,6 @@ ___
 
 • `get` **segmentHeight**(): `number`
 
-**`Description`**
-
 获取扇形体高度
 
 #### Returns
@@ -437,8 +389,6 @@ ___
 `number`
 
 • `set` **segmentHeight**(`inSegmentHeight`): `void`
-
-**`Description`**
 
 设置扇形体高度
 
@@ -455,8 +405,6 @@ ___
 
 • `get` **segmentRadius**(): `number`
 
-**`Description`**
-
 获取扇形半径
 
 #### Returns
@@ -464,8 +412,6 @@ ___
 `number`
 
 • `set` **segmentRadius**(`inSegmentRadius`): `void`
-
-**`Description`**
 
 设置扇形半径
 
@@ -482,8 +428,6 @@ ___
 
 • `get` **sphereRadius**(): `number`
 
-**`Description`**
-
 获取球形半径
 
 #### Returns
@@ -491,8 +435,6 @@ ___
 `number`
 
 • `set` **sphereRadius**(`inSphereRadius`): `void`
-
-**`Description`**
 
 设置球形半径
 
@@ -510,8 +452,6 @@ ___
 
 ▸ **getInRangeAllActor**(): `GameObject`[] <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取范围内的所有GameObject
 
 
@@ -526,8 +466,6 @@ GameObject数组
 
 ▸ **startPlay**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 播放效果
 
 
@@ -537,8 +475,6 @@ ___
 ### stopPlay <Score text="stopPlay" /> 
 
 ▸ **stopPlay**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止效果
 

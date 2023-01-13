@@ -2,8 +2,6 @@
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
-**`Description`**
-
 拖拽事件数据传递类
 
 ## Table of contents
@@ -26,8 +24,6 @@
 
 • `Private` **guidStr**: `any`
 
-**`Description`**
-
 GUID
 
 ___
@@ -35,8 +31,6 @@ ___
 ### idStr <Score text="idStr" /> 
 
 • `Private` **idStr**: `any`
-
-**`Description`**
 
 id
 
@@ -46,8 +40,6 @@ ___
 
 • `Private` **nameStr**: `any`
 
-**`Description`**
-
 name
 
 ## Accessors
@@ -55,8 +47,6 @@ name
 ### guid <Score text="guid" /> 
 
 • `get` **guid**(): `string`
-
-**`Description`**
 
 GUID
 
@@ -72,8 +62,6 @@ ___
 
 • `get` **id**(): `number`
 
-**`Description`**
-
 获取id
 
 #### Returns
@@ -83,8 +71,6 @@ ___
 id
 
 • `set` **id**(`inId`): `void`
-
-**`Description`**
 
 设置id
 
@@ -101,8 +87,6 @@ ___
 
 • `get` **name**(): `string`
 
-**`Description`**
-
 获取名字
 
 #### Returns
@@ -112,8 +96,6 @@ ___
 名字
 
 • `set` **name**(`inName`): `void`
-
-**`Description`**
 
 设置名字
 

@@ -2,8 +2,6 @@
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
-**`Description`**
-
 自动布局排版规则
 
 ## Table of contents

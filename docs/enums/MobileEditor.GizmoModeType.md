@@ -2,8 +2,6 @@
 
 # GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
 
-**`Description`**
-
 gizmo类型
 
 ## Table of contents

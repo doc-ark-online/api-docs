@@ -2,8 +2,6 @@
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
-**`Description`**
-
 热武器瞄准组件
 
 ## Table of contents
@@ -34,8 +32,6 @@
 
 • **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 客户端结束瞄准代理
 
 ___
@@ -43,8 +39,6 @@ ___
 ### onAimEndServer <Score text="onAimEndServer" /> 
 
 • **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 服务器端结束瞄准代理
 
@@ -54,8 +48,6 @@ ___
 
 • **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 客户端开始瞄准代理
 
 ___
@@ -64,8 +56,6 @@ ___
 
 • **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 服务器端开始瞄准代理
 
 ## Accessors
@@ -73,8 +63,6 @@ ___
 ### aimMode <Score text="aimMode" /> 
 
 • `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get瞄准时的第一/第三人称模式
 
@@ -86,8 +74,6 @@ Get瞄准时的第一/第三人称模式
 当前瞄准时的第一/第三人称模式
 
 • `set` **aimMode**(`NewAimMode`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set瞄准时的第一/第三人称模式
 
@@ -105,8 +91,6 @@ ___
 
 • `get` **aimingZoom**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get第一人称瞄准时的瞄准镜放大倍数
 
 ::: warning Precautions
@@ -123,8 +107,6 @@ Get第一人称瞄准时的瞄准镜放大倍数
 当前第一人称瞄准时的瞄准镜放大倍数
 
 • `set` **aimingZoom**(`newAimingZoom`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set模拟瞄准时的瞄准镜放大倍数
 
@@ -148,8 +130,6 @@ ___
 
 • `get` **cameraOffsetDistanceInThirdPersonMode**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get第三人称瞄准时的连接相机弹簧组件的长度
 
 
@@ -160,8 +140,6 @@ Get第三人称瞄准时的连接相机弹簧组件的长度
 当前连接相机弹簧组件的长度
 
 • `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set第三人称瞄准时的连接相机弹簧组件的长度
 
@@ -185,8 +163,6 @@ ___
 
 • `get` **defaultCameraSpringArmLength**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get第三人称常态下相机弹簧组件的默认长度
 
 
@@ -197,8 +173,6 @@ Get第三人称常态下相机弹簧组件的默认长度
 第三人称常态下相机弹簧组件的默认长度
 
 • `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set第三人称常态下相机弹簧组件的默认长度
 
@@ -222,8 +196,6 @@ ___
 
 • `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get模拟瞄准镜UI种类
 
 
@@ -234,8 +206,6 @@ Get模拟瞄准镜UI种类
 当前瞄准镜UI种类
 
 • `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set模拟瞄准镜UI种类
 
@@ -253,8 +223,6 @@ Set模拟瞄准镜UI种类
 
 ▸ **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 绑定瞄准组件代理
 
 
@@ -264,8 +232,6 @@ ___
 ### enableAiming <Score text="enableAiming" /> 
 
 ▸ **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 打开/关闭瞄准
 - 切换持枪姿态

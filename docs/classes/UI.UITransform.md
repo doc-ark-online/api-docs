@@ -2,8 +2,6 @@
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
-**`Description`**
-
 节点Transform
 
 ## Table of contents
@@ -12,8 +10,6 @@
 | :-----|
 | **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 位置|
 | **[size](UI.UITransform.md#size)**: [`Vector2`](Type.Vector2.md) <br> 大小|
-
-**`Description`**
 
 构造每一个值
 
@@ -30,8 +26,6 @@
 | `h` | `number` | 大小 Size.H 高 |
 
 • **new UITransform**(`xy`, `wh`)
-
-**`Description`**
 
 通过点构造
 
@@ -51,8 +45,6 @@
 
 • **position**: [`Vector2`](Type.Vector2.md)
 
-**`Description`**
-
 位置
 
 ___
@@ -60,7 +52,5 @@ ___
 ### size <Score text="size" /> 
 
 • **size**: [`Vector2`](Type.Vector2.md)
-
-**`Description`**
 
 大小

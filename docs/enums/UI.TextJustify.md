@@ -2,8 +2,6 @@
 
 # TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
 
-**`Description`**
-
 文本排列对齐规则
 
 ## Table of contents

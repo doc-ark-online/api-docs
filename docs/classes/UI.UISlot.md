@@ -6,8 +6,6 @@
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 UI插槽
 
 ## Table of contents
@@ -35,8 +33,6 @@ UI插槽
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 获取是否自动设置大小
 
 
@@ -51,8 +47,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置是否自动设置大小
 
@@ -74,8 +68,6 @@ ___
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 获取Slot布局(Figma布局)
 
 
@@ -90,8 +82,6 @@ Slot布局
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置Slot布局(figma布局)
 
@@ -113,8 +103,6 @@ ___
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 获取位置
 
 
@@ -129,8 +117,6 @@ FVector2D
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置Slot位置
 
@@ -152,8 +138,6 @@ ___
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 获取大小
 
 
@@ -168,8 +152,6 @@ FVector2D
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置大小
 
@@ -191,8 +173,6 @@ ___
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 得到Slot大小和位置
 
 
@@ -207,8 +187,6 @@ Slot大小和位置
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置Slot大小和位置
 
@@ -230,8 +208,6 @@ ___
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-**`Description`**
-
 获取zOrder <Badge type="tip" text="other" />
 
 
@@ -246,8 +222,6 @@ zOrder
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 设置zOrder <Badge type="tip" text="other" />
 
@@ -268,8 +242,6 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-**`Description`**
 
 判断是不是同一个Slot
 

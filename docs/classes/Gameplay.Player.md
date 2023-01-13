@@ -2,8 +2,6 @@
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
-**`Description`**
-
 角色控制
 
 ## Hierarchy
@@ -111,8 +109,6 @@
 
 • **character**: [`Character`](Gameplay.Character.md)
 
-**`Description`**
-
 玩家控制的角色
 
 ## Accessors
@@ -120,8 +116,6 @@
 ### customTimeDilation <Score text="customTimeDilation" /> 
 
 • `get` **customTimeDilation**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前角色对象膨胀时间速度
 
@@ -138,8 +132,6 @@ ___
 
 • `get` **forwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的向前向量
 
 
@@ -155,8 +147,6 @@ ___
 
 • `get` **guid**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象的GUID（唯一标识一个对象的字符串）。
 
 
@@ -170,8 +160,6 @@ ___
 
 • `get` **lockStatus**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象是否锁定
 
 
@@ -180,8 +168,6 @@ ___
 `boolean`
 
 • `set` **lockStatus**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置对象是否锁定
 
@@ -199,8 +185,6 @@ ___
 
 • `get` **name**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 返回当前物体名称
 
 
@@ -211,8 +195,6 @@ ___
 名称
 
 • `set` **name**(`name`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体名称
 
@@ -230,8 +212,6 @@ ___
 
 • `get` **netStatus**(): [`NetStatus`](../enums/Type.NetStatus.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体同步状态
 
 
@@ -247,8 +227,6 @@ ___
 
 • `get` **parent**(): `GameObject` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前父物体
 
 
@@ -259,8 +237,6 @@ ___
 父物体
 
 • `set` **parent**(`newParent`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置父物体
 
@@ -278,8 +254,6 @@ ___
 
 • `get` **relativeLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取相对位置
 
 
@@ -290,8 +264,6 @@ ___
 位置坐标
 
 • `set` **relativeLocation**(`location`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相对位置
 
@@ -309,8 +281,6 @@ ___
 
 • `get` **relativeRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取相对旋转
 
 
@@ -321,8 +291,6 @@ ___
 旋转角度
 
 • `set` **relativeRotation**(`rotation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相对旋转
 
@@ -340,8 +308,6 @@ ___
 
 • `get` **relativeScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取相对缩放
 
 
@@ -352,8 +318,6 @@ ___
 相对缩放
 
 • `set` **relativeScale**(`scale`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相对缩放
 
@@ -371,8 +335,6 @@ ___
 
 • `get` **rightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的向右向量
 
 
@@ -388,8 +350,6 @@ ___
 
 • `get` **staticStatus**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象是否静态
 
 
@@ -403,8 +363,6 @@ ___
 
 • `get` **tag**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的Tag
 
 
@@ -415,8 +373,6 @@ ___
 Tag
 
 • `set` **tag**(`tag`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前物体的Tag
 
@@ -434,8 +390,6 @@ ___
 
 • `get` **transform**(): [`Transform`](Type.Transform.md)
 
-**`Description`**
-
 返回当前物体transform <Badge type="tip" text="other" />
 
 
@@ -446,8 +400,6 @@ ___
 transform
 
 • `set` **transform**(`transform`): `void`
-
-**`Description`**
 
 设置当前物体transform <Badge type="tip" text="other" />
 
@@ -465,8 +417,6 @@ ___
 
 • `get` **upVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的向上向量
 
 
@@ -482,8 +432,6 @@ ___
 
 • `get` **useUpdate**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象是否使用更新
 
 
@@ -492,8 +440,6 @@ ___
 `boolean`
 
 • `set` **useUpdate**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置对象是否使用更新
 
@@ -515,8 +461,6 @@ ___
 
 since:v0.20.0 reason:api重构 replacement:getVisibility()
 
-**`Description`**
-
 获取当前物体是否显示
 
 
@@ -532,8 +476,6 @@ ___
 
 • `get` **worldLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取物体的世界坐标
 
 
@@ -542,8 +484,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **worldLocation**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体的世界坐标
 
@@ -561,8 +501,6 @@ ___
 
 • `get` **worldRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取物体的世界旋转
 
 
@@ -571,8 +509,6 @@ ___
 [`Rotation`](Type.Rotation.md)
 
 • `set` **worldRotation**(`rotation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体的世界旋转
 
@@ -590,8 +526,6 @@ ___
 
 • `get` **worldScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取物体的世界缩放
 
 
@@ -600,8 +534,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **worldScale**(`v`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体的是世界缩放
 
@@ -619,8 +551,6 @@ ___
 
 ▸ **addDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 添加物体Destroy事件回调
 
 
@@ -637,8 +567,6 @@ ___
 
 ▸ **addNetworkDisconnectListener**(`callback`): `void`
 
-**`Description`**
-
 添加网络断开连接时执行的回调函数
 
 
@@ -647,8 +575,6 @@ ___
 如果需要删除回调函数，请不要使用Lambda表达式，只对当前player生效
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -672,8 +598,6 @@ ___
 
 ▸ **addNetworkReconnectListener**(`callback`): `void`
 
-**`Description`**
-
 添加网络断开连接后恢复网络时执行的回调函数
 
 
@@ -682,8 +606,6 @@ ___
 如果需要删除回调函数，请不要使用Lambda表达式，只对当前player生效
 
 :::
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -707,8 +629,6 @@ ___
 
 ▸ **asyncGetScriptByName**(`name`): `Promise`<`Script`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 异步获得当前物体下的指定脚本 客户端不维系父子关系
 
 
@@ -730,8 +650,6 @@ ___
 
 ▸ **attachToGameObject**(`obj`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将物体附着到指定物体上
 
 
@@ -747,8 +665,6 @@ ___
 ### clone <Score text="clone" /> 
 
 ▸ **clone**(`inReplicates?`): `GameObject` <Badge type="tip" text="other" />
-
-**`Description`**
 
 复制对象
 
@@ -771,8 +687,6 @@ ___
 
 ▸ **deleteDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 移除物体Destroy事件回调
 
 
@@ -789,8 +703,6 @@ ___
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 删除对象
 
 
@@ -801,8 +713,6 @@ ___
 
 ▸ **detachFromGameObject**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将此物体与当前附着的物体分离
 
 
@@ -812,8 +722,6 @@ ___
 ### getAccount <Score text="getAccount" /> 
 
 ▸ **getAccount**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取玩家账户
 
@@ -829,8 +737,6 @@ ___
 ### getBoundingBoxSize <Score text="getBoundingBoxSize" /> 
 
 ▸ **getBoundingBoxSize**(`nonColliding?`, `includeFromChildActors?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取物体包围盒大小
 
@@ -861,8 +767,6 @@ ___
 
 ▸ **getBounds**(`onlyCollidingComponents`, `OriginOuter`, `BoxExtentOuter`, `includeFromChildActors?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取GameObject边界
 
 
@@ -881,8 +785,6 @@ ___
 ### getChildByGuid <Score text="getChildByGuid" /> 
 
 ▸ **getChildByGuid**(`GUID`): `GameObject` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据GUID查找子物体
 
@@ -905,8 +807,6 @@ ___
 
 ▸ **getChildByName**(`name`): `GameObject` <Badge type="tip" text="other" />
 
-**`Description`**
-
 根据名称查找子物体
 
 
@@ -928,8 +828,6 @@ ___
 
 ▸ **getChildren**(): `GameObject`[] <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取Children，客户端不维系父子关系。推荐使用Find替代
 
 
@@ -944,8 +842,6 @@ ___
 ### getChildrenBoxCenter <Score text="getChildrenBoxCenter" /> 
 
 ▸ **getChildrenBoxCenter**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])
 
@@ -974,8 +870,6 @@ ___
 
 ▸ **getCollision**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 返回碰撞状态
 
 
@@ -990,8 +884,6 @@ ___
 ### getForwardVector <Score text="getForwardVector" /> 
 
 ▸ **getForwardVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前物体的向前向量
 
@@ -1020,8 +912,6 @@ ___
 
 ▸ **getPlayerID**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。
 
 
@@ -1040,8 +930,6 @@ ___
 ### getRelativeLocation <Score text="getRelativeLocation" /> 
 
 ▸ **getRelativeLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相对位置
 
@@ -1070,8 +958,6 @@ ___
 
 ▸ **getRelativeRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取相对旋转
 
 
@@ -1098,8 +984,6 @@ ___
 ### getRelativeScale <Score text="getRelativeScale" /> 
 
 ▸ **getRelativeScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取相对缩放
 
@@ -1128,8 +1012,6 @@ ___
 
 ▸ **getRightVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的向右向量
 
 ::: warning Precautions
@@ -1157,8 +1039,6 @@ ___
 
 ▸ **getScriptByGuid**(`GUID`): `Script` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
 
@@ -1179,8 +1059,6 @@ ___
 ### getScriptByName <Score text="getScriptByName" /> 
 
 ▸ **getScriptByName**(`name`): `Script` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
@@ -1203,8 +1081,6 @@ ___
 
 ▸ **getScripts**(): `Script`[] <Badge type="tip" text="other" />
 
-**`Description`**
-
 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
 
 
@@ -1219,8 +1095,6 @@ ___
 ### getSourceAssetGuid <Score text="getSourceAssetGuid" /> 
 
 ▸ **getSourceAssetGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前物体使用资源的GUID
 
@@ -1237,8 +1111,6 @@ ___
 
 ▸ **getTeamId**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取玩家的TeamId
 
 
@@ -1253,8 +1125,6 @@ ___
 ### getTransform <Score text="getTransform" /> 
 
 ▸ **getTransform**(`outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回当前物体Transform
 
@@ -1283,8 +1153,6 @@ ___
 
 ▸ **getUpVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前物体的向上向量
 
 
@@ -1306,8 +1174,6 @@ ___
 
 ▸ **getUserSystemId**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取用户系统的玩家Id
 
 
@@ -1323,8 +1189,6 @@ ___
 
 ▸ **getVisibility**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取GameObject是否被显示
 
 
@@ -1339,8 +1203,6 @@ ___
 ### getWorldLocation <Score text="getWorldLocation" /> 
 
 ▸ **getWorldLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取物体的世界坐标
 
@@ -1369,8 +1231,6 @@ ___
 
 ▸ **getWorldRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取物体的世界旋转
 
 ::: warning Precautions
@@ -1397,8 +1257,6 @@ ___
 ### getWorldScale <Score text="getWorldScale" /> 
 
 ▸ **getWorldScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取物体的世界缩放
 
@@ -1427,8 +1285,6 @@ ___
 
 ▸ **isRunningClient**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 是否为客户端
 
 
@@ -1444,8 +1300,6 @@ ___
 
 ▸ `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 周期函数 被销毁时调用
 
 
@@ -1456,8 +1310,6 @@ ___
 
 ▸ `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 周期函数 脚本开始执行时调用
 
 
@@ -1467,8 +1319,6 @@ ___
 ### onUpdate <Score text="onUpdate" /> 
 
 ▸ `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
 
@@ -1486,8 +1336,6 @@ ___
 
 ▸ **ping**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 当前Player的Ping值(-1时表示获取失败)
 
 
@@ -1502,8 +1350,6 @@ ___
 ### ready <Score text="ready" /> 
 
 ▸ **ready**(): `Promise`<[`Player`](Gameplay.Player.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 GameObject准备好后返回
 
@@ -1520,12 +1366,8 @@ ___
 
 ▸ **removeNetworkDisconnectListener**(`callback`): `void`
 
-**`Description`**
-
 移除网络断开连接时执行的回调函数
 
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -1549,12 +1391,8 @@ ___
 
 ▸ **removeNetworkReconnectListener**(`callback`): `void`
 
-**`Description`**
-
 移除网络断开连接后恢复网络时执行的回调函数
 
-
-**`Example`**
 
 使用示例:调用方法
 ```ts
@@ -1577,8 +1415,6 @@ ___
 ### setCollision <Score text="setCollision" /> 
 
 ▸ **setCollision**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置碰撞状态
 
@@ -1603,8 +1439,6 @@ ___
 
 ▸ **setCustomTimeDilation**(`Time`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置当前角色对象膨胀时间速度说明：对象膨胀速度默认为1，当膨胀时间速度设置小于1时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值0.1。
 
 
@@ -1620,8 +1454,6 @@ ___
 ### setLocationAndRotation <Score text="setLocationAndRotation" /> 
 
 ▸ **setLocationAndRotation**(`location`, `rotation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 同时设置物体的世界位置与旋转
 
@@ -1640,8 +1472,6 @@ ___
 
 ▸ **setRelativeLocation**(`location`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置相对位置
 
 
@@ -1657,8 +1487,6 @@ ___
 ### setRelativeRotation <Score text="setRelativeRotation" /> 
 
 ▸ **setRelativeRotation**(`rotation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置相对旋转
 
@@ -1676,8 +1504,6 @@ ___
 
 ▸ **setRelativeScale**(`scale`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置相对缩放
 
 
@@ -1694,8 +1520,6 @@ ___
 
 ▸ **setTransform**(`transform`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置当前物体transform
 
 
@@ -1711,8 +1535,6 @@ ___
 ### setVisibility <Score text="setVisibility" /> 
 
 ▸ **setVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置GameObject是否被显示
 
@@ -1731,8 +1553,6 @@ ___
 
 ▸ **setWorldLocation**(`v`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置物体的世界坐标
 
 
@@ -1748,8 +1568,6 @@ ___
 ### setWorldRotation <Score text="setWorldRotation" /> 
 
 ▸ **setWorldRotation**(`rotation`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体的世界旋转
 
@@ -1767,8 +1585,6 @@ ___
 
 ▸ **setWorldScale**(`v`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置物体的世界缩放
 
 
@@ -1784,8 +1600,6 @@ ___
 ### asyncFind <Score text="asyncFind" /> 
 
 ▸ `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
@@ -1809,8 +1623,6 @@ ___
 
 ▸ `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 异步构造一个 GameObject 资源不存在会先去下载资源再去创建
 
 
@@ -1833,8 +1645,6 @@ ___
 
 ▸ `Static` **find**(`GUID`): `GameObject` <Badge type="tip" text="other" />
 
-**`Description`**
-
 通过GUID查找GameObject
 
 
@@ -1855,8 +1665,6 @@ ___
 ### findGameObjectByTag <Score text="findGameObjectByTag" /> 
 
 ▸ `Static` **findGameObjectByTag**(`InTag`): `GameObject`[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过自定义Tag获取GameObject
 
@@ -1879,8 +1687,6 @@ ___
 
 ▸ `Static` **getGameObjectByName**(`name`): `GameObject` <Badge type="tip" text="other" />
 
-**`Description`**
-
 通过名字查找物体
 
 
@@ -1902,8 +1708,6 @@ ___
 
 ▸ `Static` **getGameObjectsByName**(`name`): `GameObject`[] <Badge type="tip" text="other" />
 
-**`Description`**
-
 通过名字查找物体
 
 
@@ -1924,8 +1728,6 @@ ___
 ### spawnGameObject <Score text="spawnGameObject" /> 
 
 ▸ `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject` <Badge type="tip" text="other" />
-
-**`Description`**
 
 构造一个 GameObject
 

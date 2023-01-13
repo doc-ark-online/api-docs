@@ -2,8 +2,6 @@
 
 # PhysicsImpulse <Badge type="tip" text="Class" /> <Score text="PhysicsImpulse" />
 
-**`Description`**
-
 冲量对象
 
 ## Hierarchy
@@ -119,8 +117,6 @@
 
 • **onImpulseEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
-**`Description`**
-
 发生冲量碰撞后的回调函数
 
 ## Accessors
@@ -128,8 +124,6 @@
 ### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否启用冲量
 
@@ -141,8 +135,6 @@
 是否启用冲量
 
 • `set` **enable**(`impulseEnabled`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否启用冲量，禁用状态下，不会应用冲量到物体上
 
@@ -159,8 +151,6 @@
 
 • `get` **impulseForceType**(): [`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前冲量力类型
 
 
@@ -171,8 +161,6 @@
 冲量力类型
 
 • `set` **impulseForceType**(`impulseCollisionType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置冲量力类型
 
@@ -190,8 +178,6 @@ ___
 
 • `get` **impulseRadialForce**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取径向力的冲量值
 
 
@@ -202,8 +188,6 @@ ___
 径向力时的冲量值
 
 • `set` **impulseRadialForce**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置径向力的冲量值
 
@@ -221,8 +205,6 @@ ___
 
 • `get` **impulseType**(): [`ImpulseType`](../enums/Gameplay.ImpulseType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取冲量应用方式，绝对或相对
 
 
@@ -233,8 +215,6 @@ ___
 当前冲量应用方式
 
 • `set` **impulseType**(`impulseType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置冲量应用方式
 
@@ -258,8 +238,6 @@ ___
 
 • `get` **impulseVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取矢量力的冲量向量
 
 
@@ -270,8 +248,6 @@ ___
 当前冲量类型
 
 • `set` **impulseVector**(`vec`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置矢量力的冲量向量
 

@@ -2,8 +2,6 @@
 
 # BlockingArea <Badge type="tip" text="Class" /> <Score text="BlockingArea" />
 
-**`Description`**
-
 禁行区
 
 ::: warning Precautions
@@ -11,8 +9,6 @@
 该对象由服务器生成同步到客户端
 
 :::
-
-**`Example`**
 
 使用示例:请尽量放置在场景中，不要动态生成，不支持重叠使用
 ```ts
@@ -128,13 +124,9 @@
 
 • `get` **playerStateResponse**(): `unknown` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数
 
 获取玩家是否能够通过该禁行区的回调对象
-
-**`Example`**
 
 使用示例:简单调用
 ```ts
@@ -154,13 +146,9 @@ bool
 
 ▸ **getCurrentPlayerPassable**(`Target`): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值
 
 获取玩家是否能够通过该禁行区
-
-**`Example`**
 
 使用示例: 简单调用
 ```ts
@@ -184,13 +172,9 @@ bool
 
 ▸ **setBlockAllPlayer**(`BlockAll`): `boolean`
 
-**`Description`**
-
 让该禁行区阻挡所有玩家
 
 让该禁行区阻挡所有玩家
-
-**`Example`**
 
 使用示例:让该禁行区阻挡所有玩家
 ```ts
@@ -214,13 +198,9 @@ bool
 
 ▸ **setCurrentPlayerPassable**(`Target`, `CanPass`): `void`
 
-**`Description`**
-
 设置玩家通过该区域屏障权限
 
 设置玩家通过该区域屏障权限
-
-**`Example`**
 
 使用示例: 简单调用
 ```ts
@@ -240,13 +220,9 @@ BlockArea.setCurrentPlayerPassable(player,true) <Badge type="tip" text="other" /
 
 ▸ **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void`
 
-**`Description`**
-
 设置非角色Actor的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
 
 设置非角色Actor的通过权限
-
-**`Example`**
 
 使用示例:传递GameObject和bool
 ```ts

@@ -2,8 +2,6 @@
 
 # PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 
-**`Description`**
-
 推进器
 
 ## Hierarchy
@@ -112,8 +110,6 @@
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取启用状态
 
 #### Returns
@@ -123,8 +119,6 @@
 true：启用
 
 • `set` **enable**(`enable`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -140,8 +134,6 @@ true：启用
 
 • `get` **strength**(): `number`
 
-**`Description`**
-
 获取推进力
 
 #### Returns
@@ -151,8 +143,6 @@ true：启用
 推进力大小
 
 • `set` **strength**(`value`): `void`
-
-**`Description`**
 
 设置推进力
 

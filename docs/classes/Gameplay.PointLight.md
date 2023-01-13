@@ -2,8 +2,6 @@
 
 # PointLight <Badge type="tip" text="Class" /> <Score text="PointLight" />
 
-**`Description`**
-
 点光源
 
 ## Hierarchy

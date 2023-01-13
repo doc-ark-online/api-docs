@@ -2,8 +2,6 @@
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
-**`Description`**
-
 UI空间位置枚举
 
 ## Table of contents

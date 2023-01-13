@@ -14,8 +14,6 @@
 
 ▸ **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前游戏窗口尺寸
 
 

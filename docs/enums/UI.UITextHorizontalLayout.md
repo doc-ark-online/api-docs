@@ -2,8 +2,6 @@
 
 # UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
-**`Description`**
-
 文本框规则显示规则限制
 
 ## Table of contents

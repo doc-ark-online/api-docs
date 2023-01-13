@@ -2,8 +2,6 @@
 
 # Action3<T, S, P\> <Badge type="tip" text="Class" /> <Score text="Action3<T, S, P\>" />
 
-**`Description`**
-
 三个参数的代理
 
 ## Type parameters

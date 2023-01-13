@@ -2,8 +2,6 @@
 
 # MovementDirection <Badge type="tip" text="Enumeration" /> <Score text="MovementDirection" />
 
-**`Description`**
-
 运动时依据的正方向
 
 ## Table of contents

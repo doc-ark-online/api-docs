@@ -2,8 +2,6 @@
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 
-**`Description`**
-
 按键Key值
 
 ## Table of contents

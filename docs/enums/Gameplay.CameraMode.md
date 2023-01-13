@@ -2,8 +2,6 @@
 
 # CameraMode <Badge type="tip" text="Enumeration" /> <Score text="CameraMode" />
 
-**`Description`**
-
 摄像机模式
 
 ## Table of contents

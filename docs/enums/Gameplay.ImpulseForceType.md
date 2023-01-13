@@ -2,8 +2,6 @@
 
 # ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 
-**`Description`**
-
 冲量力类型
 
 ## Table of contents

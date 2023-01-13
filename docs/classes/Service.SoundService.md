@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 音效管理器
 
 ::: warning Precautions
@@ -45,8 +43,6 @@
 
 • `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
-**`Description`**
-
 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)
 
 ## Accessors
@@ -54,8 +50,6 @@
 ### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
 • `get` **BGMVolumeScale**(): `number`
-
-**`Description`**
 
 BGM音量
 
@@ -65,8 +59,6 @@ BGM音量
 `number`
 
 • `set` **BGMVolumeScale**(`value`): `void`
-
-**`Description`**
 
 BGM音量
 
@@ -84,8 +76,6 @@ ___
 
 • `get` **volumeScale**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 音效的音量
 
 ::: warning Precautions
@@ -100,8 +90,6 @@ ___
 `number`
 
 • `set` **volumeScale**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 音效的音量
 
@@ -125,8 +113,6 @@ ___
 
 ▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止所有音效和BGM，并释放所有音效和BGM资源
 
 
@@ -136,8 +122,6 @@ ___
 ### get3DSoundGameObject <Score text="get" /> 
 
 ▸ **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据播放id获取一个Sound
 
@@ -160,8 +144,6 @@ ___
 ### play3DSound <Score text="play" /> 
 
 ▸ **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 在目标播放3D音效
 
@@ -189,8 +171,6 @@ ___
 
 ▸ **playBGM**(`resId`, `volume?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 播放背景音乐
 
 调用端生效|服务端调用自动广播
@@ -208,8 +188,6 @@ ___
 ### playSound <Score text="playSound" /> 
 
 ▸ **playSound**(`resId`, `loopNum?`, `volume?`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据资源Id播放声音
 
@@ -241,8 +219,6 @@ ___
 
 ▸ **stop3DSound**(`playId`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止3D声音
 
 调用端生效|服务端调用自动广播
@@ -260,8 +236,6 @@ ___
 
 ▸ **stopAll3DSound**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止一切3D声音
 
 调用端生效|服务端调用自动广播
@@ -272,8 +246,6 @@ ___
 ### stopAllSound <Score text="stopAllSound" /> 
 
 ▸ **stopAllSound**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止除BGM以外的一切2D声音
 
@@ -286,8 +258,6 @@ ___
 
 ▸ **stopBGM**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止背景音乐
 
 调用端生效|服务端调用自动广播
@@ -298,8 +268,6 @@ ___
 ### stopSound <Score text="stopSound" /> 
 
 ▸ **stopSound**(`resId`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据资源Id停止声音
 
@@ -317,8 +285,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取音效管理器全局实例
 

@@ -2,8 +2,6 @@
 
 # CameraRotationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraRotationMode" />
 
-**`Description`**
-
 摄像机旋转模式
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
-**`Description`**
-
 容器自动布局子项排序规则
 
 ## Table of contents
@@ -12,8 +10,6 @@
 | :-----|
 | **[horizontalCollation](UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md) <br> 水平适应规则|
 | **[verticalCollation](UI.UIChildCollation.md#verticalcollation)**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md) <br> 垂直适应规则|
-
-**`Description`**
 
 构造具体规则方法
 
@@ -33,8 +29,6 @@
 
 • **horizontalCollation**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md)
 
-**`Description`**
-
 水平适应规则
 
 ___
@@ -42,7 +36,5 @@ ___
 ### verticalCollation <Score text="verticalCollation" /> 
 
 • **verticalCollation**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md)
-
-**`Description`**
 
 垂直适应规则

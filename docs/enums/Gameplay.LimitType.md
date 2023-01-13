@@ -2,8 +2,6 @@
 
 # LimitType <Badge type="tip" text="Enumeration" /> <Score text="LimitType" />
 
-**`Description`**
-
 限制类型
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # HumanoidV2 <Badge type="tip" text="Class" /> <Score text="HumanoidV2" />
 
-**`Description`**
-
 人形对象V2接口
 
 ## Hierarchy
@@ -80,8 +78,6 @@
 :::
 
 
-**`Description`**
-
 构造函数
 
 #### Parameters
@@ -96,16 +92,12 @@
 
 • **behindHair**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md)
 
-**`Description`**
-
 后发
 
 
 ### frontHair <Score text="frontHair" /> 
 
 • **frontHair**: [`HumanoidV2FrontHairPart`](Gameplay.HumanoidV2FrontHairPart.md)
-
-**`Description`**
 
 前发
 
@@ -115,8 +107,6 @@ ___
 
 • **gloves**: [`HumanoidV2GlovesPart`](Gameplay.HumanoidV2GlovesPart.md)
 
-**`Description`**
-
 手套
 
 ___
@@ -124,8 +114,6 @@ ___
 ### head <Score text="head" /> 
 
 • **head**: [`HumanoidV2HeadPart`](Gameplay.HumanoidV2HeadPart.md)
-
-**`Description`**
 
 头
 
@@ -135,16 +123,12 @@ ___
 
 • **lowerCloth**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md)
 
-**`Description`**
-
 下衣
 
 
 ### shape <Score text="shape" /> 
 
 • **shape**: [`HumanoidV2Shape`](Gameplay.HumanoidV2Shape.md)
-
-**`Description`**
 
 体型
 
@@ -154,8 +138,6 @@ ___
 
 • **shoe**: [`HumanoidV2ShoePart`](Gameplay.HumanoidV2ShoePart.md)
 
-**`Description`**
-
 鞋子
 
 ___
@@ -164,8 +146,6 @@ ___
 
 • **upperCloth**: [`HumanoidV2UpperClothPart`](Gameplay.HumanoidV2UpperClothPart.md)
 
-**`Description`**
-
 上衣
 
 ## Methods
@@ -173,8 +153,6 @@ ___
 ### appearanceSync <Score text="appearanceSync" /> 
 
 ▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 把本地角色形象数据同步到多端
 
@@ -195,8 +173,6 @@ ___
 ### attach <Score text="attach" /> 
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将物体附着到V2人物角色的指定插槽
 
@@ -226,8 +202,6 @@ ___
 
 ▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 切换角色主Mesh
 
 sync = false:客户端;
@@ -251,8 +225,6 @@ ___
 
 ▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 清空角色形象数据
 
 双端
@@ -267,8 +239,6 @@ ___
 ### detach <Score text="detach" /> 
 
 ▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 V2的将物体从人物身上附着的物品预览插槽中分离
 
@@ -296,8 +266,6 @@ V2的将物体从人物身上附着的物品预览插槽中分离
 
 ▸ **getBodyTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取纹身颜色
 
 客户端生效
@@ -323,8 +291,6 @@ ___
 ### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
 
 ▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取纹身位置左右偏移
 
@@ -352,8 +318,6 @@ ___
 
 ▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取身体纹身位置上下位置
 
 客户端生效
@@ -380,8 +344,6 @@ ___
 
 ▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取纹身旋转值
 
 客户端生效
@@ -407,8 +369,6 @@ ___
 ### getBodyTattooType <Score text="getBodyTattooType" /> 
 
 ▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取纹身贴图 GUID
 
@@ -437,8 +397,6 @@ ___
 
 ▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取身体纹身位置缩放
 
 客户端生效
@@ -464,8 +422,6 @@ ___
 ### getGoods <Score text="getGoods" /> 
 
 ▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过插槽GUID加载数据
 
@@ -493,8 +449,6 @@ ___
 
 ▸ **getSkinColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置皮肤颜色
 
 客户端生效
@@ -515,8 +469,6 @@ ___
 
 ▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取皮肤贴图
 
 客户端生效
@@ -536,8 +488,6 @@ ___
 ### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
 ▸ **getSlotWorldPosition**(`slotName`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取Slot世界坐标位置,V2物品预览的插槽使用
 
@@ -565,8 +515,6 @@ ___
 
 ▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前的主Mesh
 
 双端
@@ -586,8 +534,6 @@ ___
 ### setAppearanceData <Score text="setAppearanceData" /> 
 
 ▸ **setAppearanceData**(`GUIDArray`, `callback?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过GUID加载数据另存为角色数据
 
@@ -617,8 +563,6 @@ ___
 
 ▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 身体纹身颜色
 
 sync = false:客户端;
@@ -642,8 +586,6 @@ ___
 ### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
 
 ▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 身体纹身位置左右偏移
 
@@ -669,8 +611,6 @@ ___
 
 ▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 身体纹身位置上下位置
 
 sync = false:客户端;
@@ -694,8 +634,6 @@ ___
 ### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
 
 ▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 身体纹旋转
 
@@ -721,8 +659,6 @@ ___
 
 ▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 身体纹身种类
 
 sync = false:客户端;
@@ -747,8 +683,6 @@ ___
 
 ▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 身体纹身位置缩放
 
 sync = false:客户端;
@@ -771,8 +705,6 @@ sync = true:双端
 ### setSkinColor <Score text="setSkinColor" /> 
 
 ▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置皮肤颜色
 
@@ -797,8 +729,6 @@ ___
 
 ▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置皮肤贴图
 
 sync = false:客户端;
@@ -822,8 +752,6 @@ ___
 
 ▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 通过插槽GUID加载数据
 
 双端
@@ -846,8 +774,6 @@ ___
 
 ▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
 
 客户端
@@ -868,8 +794,6 @@ ___
 ### setSuit <Score text="setSuit" /> 
 
 ▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 加载一套角色数据
 

@@ -2,8 +2,6 @@
 
 # Group <Badge type="tip" text="Class" /> <Score text="Group" />
 
-**`Description`**
-
 补间组，用于同时控制多个补间对象
 
 ## Table of contents
@@ -22,8 +20,6 @@
 
 ▸ **add**(`tween`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将指定补间对象加入当前补间组
 
 
@@ -40,8 +36,6 @@ ___
 
 ▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前补间组中所有补间对象
 
 
@@ -56,8 +50,6 @@ ___
 ### remove <Score text="remove" /> 
 
 ▸ **remove**(`tween`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将指定补间对象移出当前补间组并删除
 
@@ -75,8 +67,6 @@ ___
 
 ▸ **removeAll**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 移除当前补间组中所有补间对象
 
 
@@ -93,12 +83,8 @@ ___
 
 ▸ **update**(`time?`, `preserve?`): `boolean`
 
-**`Description`**
-
 更新补间组
 
-
-**`Example`**
 
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
 ```ts

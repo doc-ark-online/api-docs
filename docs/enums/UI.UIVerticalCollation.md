@@ -2,8 +2,6 @@
 
 # UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 
-**`Description`**
-
 自动布局子项布局排序 - 垂直排序
 
 ## Table of contents

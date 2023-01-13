@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 应用内购服务
 
 ::: warning Precautions
@@ -33,8 +31,6 @@
 
 • `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取Ark币余额更新的委托
 
 
@@ -55,8 +51,6 @@ ___
 ### onOrderDelivered <Score text="onOrderDelivered" /> 
 
 • `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取订单发货的委托
 
@@ -80,8 +74,6 @@ ___
 
 ▸ **getArkBalance**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取Ark币余额
 
 
@@ -97,8 +89,6 @@ ___
 ### placeOrder <Score text="placeOrder" /> 
 
 ▸ **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 下单指定数量的指定商品
 
@@ -123,8 +113,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取应用内购管理器全局实例
 

@@ -2,8 +2,6 @@
 
 # SkeletalMesh <Badge type="tip" text="Class" /> <Score text="SkeletalMesh" />
 
-**`Description`**
-
 骨骼模型逻辑对象。用于对骨骼模型进行操作。
 
 ::: warning Precautions

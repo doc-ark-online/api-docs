@@ -2,8 +2,6 @@
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 
-**`Description`**
-
 容器自动布局规则
 
 ## Table of contents
@@ -18,8 +16,6 @@
 | **[layoutPacket](UI.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <br> 自动布局节点排列规则|
 | **[layoutSpace](UI.UILayout.md#layoutspace)**: `number` <br> 排列间隔|
 | **[padding](UI.UILayout.md#padding)**: [`Margin`](UI.Margin.md) <br> 四边边距|
-
-**`Description`**
 
 构造函数，传入每一个值
 
@@ -39,8 +35,6 @@
 | `InAutoWrap` | `boolean` | 是否网格模式 |
 
 • **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
-
-**`Description`**
 
 构造函数，传入每一个值
 
@@ -66,8 +60,6 @@
 
 • **autoLayout**: `boolean`
 
-**`Description`**
-
 是否自动布局
 
 ___
@@ -75,8 +67,6 @@ ___
 ### autoWrap <Score text="autoWrap" /> 
 
 • **autoWrap**: `boolean`
-
-**`Description`**
 
 是否网格模式
 
@@ -86,8 +76,6 @@ ___
 
 • **childCollation**: [`UIChildCollation`](UI.UIChildCollation.md)
 
-**`Description`**
-
 子项布局规则
 
 ___
@@ -95,8 +83,6 @@ ___
 ### hugContent <Score text="hugContent" /> 
 
 • **hugContent**: [`UIHugContent`](UI.UIHugContent.md)
-
-**`Description`**
 
 容器布局适应规则
 
@@ -106,8 +92,6 @@ ___
 
 • **layout**: [`UILayoutType`](../enums/UI.UILayoutType.md)
 
-**`Description`**
-
 自动布局规则
 
 ___
@@ -115,8 +99,6 @@ ___
 ### layoutPacket <Score text="layoutPacket" /> 
 
 • **layoutPacket**: [`UILayoutPacket`](../enums/UI.UILayoutPacket.md)
-
-**`Description`**
 
 自动布局节点排列规则
 
@@ -126,8 +108,6 @@ ___
 
 • **layoutSpace**: `number`
 
-**`Description`**
-
 排列间隔
 
 ___
@@ -135,7 +115,5 @@ ___
 ### padding <Score text="padding" /> 
 
 • **padding**: [`Margin`](UI.Margin.md)
-
-**`Description`**
 
 四边边距

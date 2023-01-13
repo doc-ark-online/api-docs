@@ -2,8 +2,6 @@
 
 # SlateBrushWithGuid <Badge type="tip" text="Class" /> <Score text="SlateBrushWithGuid" />
 
-**`Description`**
-
 贴图信息
 
 ## Table of contents
@@ -15,8 +13,6 @@
 | **[imageSize](UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Vector2.md) <br> 资源大小|
 | **[marin](UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.Margin.md) <br> 边缘缩进|
 | **[tintColor](UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.SlateColor.md) <br> 颜色|
-
-**`Description`**
 
 通过资源id构造对象
 
@@ -35,8 +31,6 @@
 
 • **drawAs**: [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md)
 
-**`Description`**
-
 绘制模式
 
 ___
@@ -44,8 +38,6 @@ ___
 ### guid <Score text="guid" /> 
 
 • **guid**: `string`
-
-**`Description`**
 
 资源ID
 
@@ -55,8 +47,6 @@ ___
 
 • **imageSize**: [`Vector2`](Type.Vector2.md)
 
-**`Description`**
-
 资源大小
 
 ___
@@ -65,8 +55,6 @@ ___
 
 • **marin**: [`Margin`](UI.Margin.md)
 
-**`Description`**
-
 边缘缩进
 
 ___
@@ -74,7 +62,5 @@ ___
 ### tintColor <Score text="tintColor" /> 
 
 • **tintColor**: [`SlateColor`](UI.SlateColor.md)
-
-**`Description`**
 
 颜色

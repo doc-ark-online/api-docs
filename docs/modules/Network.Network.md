@@ -2,8 +2,6 @@ Network
 
 # Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
 
-**`Description`**
-
 暴露给用户使用的Http请求接口,用户可选的是网络身份(服务器,客户端)
 
 ## Table of contents
@@ -42,8 +40,6 @@ Network
 
 ▸ (`result`, `content`, `responseCode`): `void`
 
-**`Description`**
-
 Http请求的回调消息格式
 
 ::: warning Precautions
@@ -74,8 +70,6 @@ ___
 
 ▸ (`isSuccess`, `content`): `void`
 
-**`Description`**
-
 商城通信回调消息格式
 
 ##### Parameters
@@ -94,8 +88,6 @@ ___
 ### fetch <Score text="fetch" /> 
 
 ▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 HTTP请求
 
@@ -119,12 +111,8 @@ ___
 
 ▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
 
-**`Description`**
-
 通用Http请求
 
-
-**`Example`**
 
 使用示例:发送Http请求
 ```ts
@@ -153,8 +141,6 @@ ___
 
 ▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取url参数
 
 
@@ -176,8 +162,6 @@ ___
 ### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
 ▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Http请求接口
 
@@ -203,8 +187,6 @@ ___
 
 ▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 url解码
 
 
@@ -225,8 +207,6 @@ ___
 ### urlEncode <Score text="urlEncode" /> 
 
 ▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 url转码
 

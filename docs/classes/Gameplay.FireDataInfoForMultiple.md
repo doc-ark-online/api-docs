@@ -2,8 +2,6 @@
 
 # FireDataInfoForMultiple <Badge type="tip" text="Class" /> <Score text="FireDataInfoForMultiple" />
 
-**`Description`**
-
 获取开火时生成投掷物的着弹点位置、飞行距离、打击面圆的前/上/右单位向量、打击面圆的最大半径
 
 ## Table of contents
@@ -23,8 +21,6 @@
 
 • **forwardVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 击中点的前向向量
 
 ___
@@ -32,8 +28,6 @@ ___
 ### hitLoc <Score text="hitLoc" /> 
 
 • **hitLoc**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点坐标
 
@@ -43,8 +37,6 @@ ___
 
 • **radiusMax**: `number`
 
-**`Description`**
-
 打击面的最大半径
 
 ___
@@ -52,8 +44,6 @@ ___
 ### rightVecAgainstHitCircle <Score text="rightVecAgainstHitCircle" /> 
 
 • **rightVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点的向右向量
 
@@ -63,8 +53,6 @@ ___
 
 • **shootDistance**: `number`
 
-**`Description`**
-
 射击的距离
 
 ___
@@ -72,7 +60,5 @@ ___
 ### upVecAgainstHitCircle <Score text="upVecAgainstHitCircle" /> 
 
 • **upVecAgainstHitCircle**: [`Vector`](Type.Vector.md)
-
-**`Description`**
 
 击中点的向上向量

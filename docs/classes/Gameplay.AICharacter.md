@@ -2,8 +2,6 @@
 
 # AICharacter <Badge type="tip" text="Class" /> <Score text="AICharacter" />
 
-**`Description`**
-
 人形对象
 
 ## Hierarchy
@@ -150,8 +148,6 @@
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
 
 可双端直接调用
@@ -175,8 +171,6 @@
 ### setServerMovementEnable <Score text="setServerMovementEnable" /> 
 
 ▸ **setServerMovementEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 开关角色的移动计算
 

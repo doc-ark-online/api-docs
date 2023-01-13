@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 分析服务
 
 ::: warning Precautions
@@ -28,8 +26,6 @@
 
 ▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 分析服务全局实例
 
 
@@ -44,8 +40,6 @@ ___
 ### googleEventTracking <Score text="googleEventTracking" /> 
 
 ▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 埋点
 
@@ -63,8 +57,6 @@ ___
 ### googleInit <Score text="googleInit" /> 
 
 ▸ `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Initialize Google Analytics client
 

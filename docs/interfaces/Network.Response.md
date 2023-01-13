@@ -2,8 +2,6 @@
 
 # Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 
-**`Description`**
-
 HTTP响应信息的对象
 
 ## Table of contents
@@ -27,8 +25,6 @@ HTTP响应信息的对象
 
 • **headers**: `Map`<`string`, `string`\>
 
-**`Description`**
-
 响应头
 
 ___
@@ -36,8 +32,6 @@ ___
 ### ok <Score text="ok" /> 
 
 • **ok**: `boolean`
-
-**`Description`**
 
 是否成功（状态码是否为200）
 
@@ -47,8 +41,6 @@ ___
 
 • **status**: `number`
 
-**`Description`**
-
 响应状态码
 
 ___
@@ -56,8 +48,6 @@ ___
 ### type <Score text="type" /> 
 
 • **type**: `string`
-
-**`Description`**
 
 响应类型
 
@@ -67,8 +57,6 @@ ___
 
 • **url**: `string`
 
-**`Description`**
-
 响应URL
 
 ## Methods
@@ -76,8 +64,6 @@ ___
 ### json <Score text="json" /> 
 
 ▸ **json**<`T`\>(): `Promise`<`T`\>
-
-**`Description`**
 
 数据返回json <Badge type="tip" text="other" />
 
@@ -99,8 +85,6 @@ ___
 ### text <Score text="text" /> 
 
 ▸ **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 数据返回文本
 

@@ -2,8 +2,6 @@
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 
-**`Description`**
-
 开发给用户用的Http请求类型枚举
 
 ## Table of contents

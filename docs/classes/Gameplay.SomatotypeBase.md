@@ -2,8 +2,6 @@
 
 # SomatotypeBase <Badge type="tip" text="Class" /> <Score text="SomatotypeBase" />
 
-**`Description`**
-
 体型基类
 
 ## Hierarchy
@@ -27,8 +25,6 @@
 | **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关|
 | **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关|
 
-**`Description`**
-
 构造函数
 
 #### Parameters
@@ -43,8 +39,6 @@
 
 • `Protected` **enableOutline**: `boolean`
 
-**`Description`**
-
 是否启动遮挡时角色描边
 
 ___
@@ -53,8 +47,6 @@ ___
 
 • `Protected` **postProcessObj**: [`PostProcess`](Gameplay.PostProcess.md)
 
-**`Description`**
-
 后处理对象
 
 ## Methods
@@ -62,8 +54,6 @@ ___
 ### enablePostProcess <Score text="enablePostProcess" /> 
 
 ▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 后处理开关
 
@@ -83,8 +73,6 @@ ___
 ### setOutline <Score text="setOutline" /> 
 
 ▸ **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 描边开关
 
@@ -107,8 +95,6 @@ ___
 ### setOutlineAdvance <Score text="setOutlineAdvance" /> 
 
 ▸ **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 后处理描边开关
 

@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 特效管理器
 
 ## Table of contents
@@ -28,8 +26,6 @@
 
 ▸ **clearAll**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止所有特效，并释放所有特效资源
 
 
@@ -39,8 +35,6 @@ ___
 ### getEffectGameObject <Score text="getEffectGameObject" /> 
 
 ▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 根据播放id获取一个特效对象
 
@@ -63,8 +57,6 @@ ___
 ### playEffectAtLocation <Score text="playEffectAtLocation" /> 
 
 ▸ **playEffectAtLocation**(`resId`, `location`, `loop?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 在指定位置播放特效
 
@@ -92,8 +84,6 @@ ___
 
 ▸ **playEffectOnGameObject**(`resId`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 在一个GameObject上播放特效
 
 调用端生效|服务端调用自动广播
@@ -120,8 +110,6 @@ ___
 ### playEffectOnPlayer <Score text="playEffectOnPlayer" /> 
 
 ▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 在一个角色的挂点上播放特效
 
@@ -151,8 +139,6 @@ ___
 
 ▸ **stopAllEffect**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止所有特效
 
 调用端生效|服务端调用自动广播
@@ -163,8 +149,6 @@ ___
 ### stopEffect <Score text="stopEffect" /> 
 
 ▸ **stopEffect**(`playId`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止一个特效的播放
 
@@ -183,8 +167,6 @@ ___
 
 ▸ **stopEffectFromHost**(`resId`, `target?`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 停止目标对象上所有资源Id的特效
 
 调用端生效|服务端调用自动广播
@@ -202,8 +184,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取特效管理器全局实例
 

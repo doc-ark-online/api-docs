@@ -2,8 +2,6 @@
 
 # modifierVolume <Badge type="tip" text="Class" /> <Score text="modifierVolume" />
 
-**`Description`**
-
 提供基础寻路数据
 
 ## Hierarchy
@@ -111,8 +109,6 @@
 
 • `get` **areaClass**(): [`AreaClass`](../enums/Gameplay.AreaClass.md)
 
-**`Description`**
-
 获取区域类型
 
 #### Returns
@@ -120,8 +116,6 @@
 [`AreaClass`](../enums/Gameplay.AreaClass.md)
 
 • `set` **areaClass**(`areaClass`): `void`
-
-**`Description`**
 
 设置区域类型
 

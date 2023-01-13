@@ -2,8 +2,6 @@
 
 # Prefab <Badge type="tip" text="Class" /> <Score text="Prefab" />
 
-**`Description`**
-
 预制体
 
 ## Hierarchy

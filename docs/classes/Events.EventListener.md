@@ -2,8 +2,6 @@
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
-**`Description`**
-
 事件监听器
 
 ## Table of contents
@@ -22,8 +20,6 @@
 
 • `get` **isConnected**(): `boolean`
 
-**`Description`**
-
 用来判断事件是否有效
 
 #### Returns
@@ -35,8 +31,6 @@
 ### disconnect <Score text="disconnect" /> 
 
 ▸ **disconnect**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 卸载事件
 

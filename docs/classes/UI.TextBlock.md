@@ -2,8 +2,6 @@
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
-**`Description`**
-
 UI文本
 
 ## Hierarchy
@@ -94,8 +92,6 @@ UI文本
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体内容颜色
 
 
@@ -106,8 +102,6 @@ UI文本
 字体内容颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体内容颜色
 
@@ -124,8 +118,6 @@ UI文本
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体颜色
 
 
@@ -136,8 +128,6 @@ UI文本
 字体颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体颜色
 
@@ -155,8 +145,6 @@ ___
 
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体间距
 
 
@@ -173,8 +161,6 @@ ___
 
 • `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体间距
 
 
@@ -190,8 +176,6 @@ ___
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体大小
 
 
@@ -202,8 +186,6 @@ ___
 返回字体的大小
 
 • `set` **fontSize**(`InSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体大小
 
@@ -221,8 +203,6 @@ ___
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体字形
 
 
@@ -233,8 +213,6 @@ ___
 字体字形
 
 • `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体字形
 
@@ -251,8 +229,6 @@ ___
 
 • `get` **lineHeightPercentage**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取行高系数
 
 
@@ -263,8 +239,6 @@ ___
 行高系数
 
 • `set` **lineHeightPercentage**(`inValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置行高系数
 
@@ -281,8 +255,6 @@ ___
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体描边颜色
 
 
@@ -293,8 +265,6 @@ ___
 字体描边颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体描边颜色
 
@@ -314,8 +284,6 @@ ___
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体描边宽度
 
 
@@ -326,8 +294,6 @@ ___
 字体描边宽度
 
 • `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体描边宽度
 
@@ -344,8 +310,6 @@ ___
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体阴影颜色
 
 
@@ -356,8 +320,6 @@ ___
 阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体阴影颜色
 
@@ -375,8 +337,6 @@ ___
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体阴影颜色
 
 
@@ -387,8 +347,6 @@ ___
 字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体阴影偏移
 
@@ -405,8 +363,6 @@ ___
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否开启字体删除线
 
 
@@ -417,8 +373,6 @@ ___
 是否开启字体删除线
 
 • `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体删除线
 
@@ -436,8 +390,6 @@ ___
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前的文本内容
 
 
@@ -448,8 +400,6 @@ ___
 返回当前的文本内容
 
 • `set` **text**(`inText`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置文本内容
 
@@ -467,8 +417,6 @@ ___
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体对齐方式
 
 
@@ -479,8 +427,6 @@ ___
 字体对齐方式
 
 • `set` **textAlign**(`inTextJustify`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体对齐方式
 
@@ -498,8 +444,6 @@ ___
 
 • `get` **textHeight**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)
 
 只在客户端调用生效，控件初始化完成后调用才准确生效，需要等待控件渲染完成
@@ -516,8 +460,6 @@ ___
 
 • `get` **textHorizontalLayout**(): [`UITextHorizontalLayout`](../enums/UI.UITextHorizontalLayout.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前字体的水平显示方式
 
 
@@ -528,8 +470,6 @@ ___
 返回字体的水平显示方式
 
 • `set` **textHorizontalLayout**(`inTextHorizontalLayout`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体的水平显示方式
 
@@ -547,8 +487,6 @@ ___
 
 • `get` **textJustification**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体的对齐方式
 
 
@@ -559,8 +497,6 @@ ___
 返回字体的对齐方式
 
 • `set` **textJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体的对齐方式
 
@@ -578,8 +514,6 @@ ___
 
 • `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)
 
 
@@ -595,8 +529,6 @@ ___
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体垂直对齐方式
 
 
@@ -607,8 +539,6 @@ ___
 字体垂直对齐方式
 
 • `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体垂直对齐方式
 
@@ -626,8 +556,6 @@ ___
 
 • `get` **textVerticalJustification**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体的垂直对齐方式
 
 
@@ -638,8 +566,6 @@ ___
 返回字体的垂直对齐方式
 
 • `set` **textVerticalJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体的垂直对齐方式
 
@@ -656,8 +582,6 @@ ___
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 返回是否开启字体下划线
 
 
@@ -668,8 +592,6 @@ ___
 获取是否开启字体下划线
 
 • `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体下划线
 
@@ -688,8 +610,6 @@ ___
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
 
 
@@ -705,8 +625,6 @@ ___
 ### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -727,8 +645,6 @@ ___
 
 ▸ **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置当前的描边颜色，指定描边颜色设定颜色 #05050505
 
 
@@ -744,8 +660,6 @@ ___
 ### setOutlineColorDecimal <Score text="setOutlineColorDecimal" /> 
 
 ▸ **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -766,8 +680,6 @@ ___
 
 ▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505
 
 
@@ -783,8 +695,6 @@ ___
 ### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
 ▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255
 
@@ -804,8 +714,6 @@ ___
 ### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

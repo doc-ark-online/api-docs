@@ -2,8 +2,6 @@
 
 # StaticMesh <Badge type="tip" text="Class" /> <Score text="StaticMesh" />
 
-**`Description`**
-
 StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口
 
 ::: warning Precautions
@@ -139,8 +137,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 
 • `get` **angularDamping**(): `number`
 
-**`Description`**
-
 角阻尼
 
 #### Returns
@@ -148,8 +144,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 `number`
 
 • `set` **angularDamping**(`value`): `void`
-
-**`Description`**
 
 设置角阻尼
 
@@ -166,8 +160,6 @@ ___
 
 • `get` **applyImpulseOnDamage**(): `boolean`
 
-**`Description`**
-
 在伤害上应用冲量
 
 #### Returns
@@ -175,8 +167,6 @@ ___
 `boolean`
 
 • `set` **applyImpulseOnDamage**(`value`): `void`
-
-**`Description`**
 
 在伤害上应用冲量
 
@@ -192,8 +182,6 @@ ___
 
 • `get` **gravityEnable**(): `boolean`
 
-**`Description`**
-
 获取是否启用重力
 
 #### Returns
@@ -201,8 +189,6 @@ ___
 `boolean`
 
 • `set` **gravityEnable**(`value`): `void`
-
-**`Description`**
 
 是否启用重力
 
@@ -218,8 +204,6 @@ ___
 
 • `get` **ignoreRadialForce**(): `boolean`
 
-**`Description`**
-
 获取是否忽视径向力
 
 #### Returns
@@ -227,8 +211,6 @@ ___
 `boolean`
 
 • `set` **ignoreRadialForce**(`value`): `void`
-
-**`Description`**
 
 设置是否忽视径向力
 
@@ -245,8 +227,6 @@ ___
 
 • `get` **ignoreRadialImpulse**(): `boolean`
 
-**`Description`**
-
 获取是否忽视径向冲量
 
 #### Returns
@@ -254,8 +234,6 @@ ___
 `boolean`
 
 • `set` **ignoreRadialImpulse**(`value`): `void`
-
-**`Description`**
 
 忽视径向冲量
 
@@ -272,8 +250,6 @@ ___
 
 • `get` **isSimulatingPhysics**(): `boolean`
 
-**`Description`**
-
 获取是否模拟物理
 
 #### Returns
@@ -281,8 +257,6 @@ ___
 `boolean`
 
 • `set` **isSimulatingPhysics**(`value`): `void`
-
-**`Description`**
 
 设置模拟物理状态
 
@@ -299,8 +273,6 @@ ___
 
 • `get` **linerDamping**(): `number`
 
-**`Description`**
-
 获取线性阻尼
 
 #### Returns
@@ -308,8 +280,6 @@ ___
 `number`
 
 • `set` **linerDamping**(`value`): `void`
-
-**`Description`**
 
 设置线性阻尼
 
@@ -326,8 +296,6 @@ ___
 
 • `get` **lockPositionX**(): `boolean`
 
-**`Description`**
-
 获取是否约束位置X
 
 #### Returns
@@ -335,8 +303,6 @@ ___
 `boolean`
 
 • `set` **lockPositionX**(`value`): `void`
-
-**`Description`**
 
 设置是否约束位置X
 
@@ -353,8 +319,6 @@ ___
 
 • `get` **lockPositionY**(): `boolean`
 
-**`Description`**
-
 获取是否约束位置Y
 
 #### Returns
@@ -362,8 +326,6 @@ ___
 `boolean`
 
 • `set` **lockPositionY**(`value`): `void`
-
-**`Description`**
 
 设置是否约束位置Y
 
@@ -380,8 +342,6 @@ ___
 
 • `get` **lockPositionZ**(): `boolean`
 
-**`Description`**
-
 获取是否约束位置Z
 
 #### Returns
@@ -389,8 +349,6 @@ ___
 `boolean`
 
 • `set` **lockPositionZ**(`value`): `void`
-
-**`Description`**
 
 设置是否约束位置Z
 
@@ -407,8 +365,6 @@ ___
 
 • `get` **lockRotationX**(): `boolean`
 
-**`Description`**
-
 获取是否约束旋转X
 
 #### Returns
@@ -416,8 +372,6 @@ ___
 `boolean`
 
 • `set` **lockRotationX**(`value`): `void`
-
-**`Description`**
 
 设置是否约束旋转X
 
@@ -434,8 +388,6 @@ ___
 
 • `get` **lockRotationY**(): `boolean`
 
-**`Description`**
-
 获取是否约束旋转Y
 
 #### Returns
@@ -443,8 +395,6 @@ ___
 `boolean`
 
 • `set` **lockRotationY**(`value`): `void`
-
-**`Description`**
 
 设置是否约束旋转Y
 
@@ -461,8 +411,6 @@ ___
 
 • `get` **lockRotationZ**(): `boolean`
 
-**`Description`**
-
 获取是否约束旋转Z
 
 #### Returns
@@ -470,8 +418,6 @@ ___
 `boolean`
 
 • `set` **lockRotationZ**(`value`): `void`
-
-**`Description`**
 
 约束旋转Z
 
@@ -487,8 +433,6 @@ ___
 
 • `get` **massEnable**(): `boolean`
 
-**`Description`**
-
 获取是否使用质量
 
 #### Returns
@@ -496,8 +440,6 @@ ___
 `boolean`
 
 • `set` **massEnable**(`value`): `void`
-
-**`Description`**
 
 是否启用质量
 
@@ -514,8 +456,6 @@ ___
 
 • `get` **massInKg**(): `number`
 
-**`Description`**
-
 获取质量大小
 
 #### Returns
@@ -523,8 +463,6 @@ ___
 `number`
 
 • `set` **massInKg**(`value`): `void`
-
-**`Description`**
 
 设置质量大小
 
@@ -542,8 +480,6 @@ ___
 
 ▸ **createMaterialInstance**(`Index`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 创建材质实例
 
 
@@ -558,8 +494,6 @@ ___
 ### getMaterialColor <Score text="getMaterialColor" /> 
 
 ▸ **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败
 
@@ -581,8 +515,6 @@ ___
 
 ▸ **resetMaterial**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 还原物体材质
 
 
@@ -591,8 +523,6 @@ ___
 ### setCullDistance <Score text="setCullDistance" /> 
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
 
@@ -615,8 +545,6 @@ ___
 
 ▸ **setMaterial**(`MaterialGUID`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置物体材质
 
 
@@ -628,8 +556,6 @@ ___
 
 
 ▸ **setMaterial**(`MaterialGUID`, `Transparency`, `isTransparent`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置物体材质
 
@@ -649,8 +575,6 @@ ___
 
 ▸ **setMaterialColor**(`Index`, `InColor`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置材质颜色
 
 
@@ -668,8 +592,6 @@ ___
 
 ▸ **setOutlineAndColor**(`Enable`, `ColorIndex`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置对象描边及描边颜色，需要场景中存在后处理对象。
 
 
@@ -685,8 +607,6 @@ ___
 ### setStaticMeshAsset <Score text="setStaticMeshAsset" /> 
 
 ▸ **setStaticMeshAsset**(`InAssetGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置静态网格资源
 

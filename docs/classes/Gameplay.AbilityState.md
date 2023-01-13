@@ -2,8 +2,6 @@
 
 # AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
-**`Description`**
-
 技能状态
 
 ::: warning Precautions
@@ -35,8 +33,6 @@
 
 • `get` **animation**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取动画资源
 
 
@@ -47,8 +43,6 @@
 资源GUID
 
 • `set` **animation**(`AnimGuid`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置动画资源
 
@@ -66,8 +60,6 @@ ___
 
 • `get` **duration**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取释放状态当前执行时间
 
 
@@ -82,8 +74,6 @@ ___
 ### executeTime <Score text="executeTime" /> 
 
 • `get` **executeTime**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取释放状态可执行总时长时间
 
@@ -101,8 +91,6 @@ ___
 获取释放状态可执行总时长时间
 
 • `set` **executeTime**(`Time`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置释放状态可执行总时长时间
 
@@ -126,8 +114,6 @@ ___
 
 • `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取释放状态是否可循环isLoop
 
 
@@ -138,8 +124,6 @@ ___
 true或false
 
 • `set` **loop**(`LoopState`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置释放状态是否循环
 
@@ -157,8 +141,6 @@ true或false
 
 ▸ **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 添加释放状态的控制性
 
 
@@ -174,8 +156,6 @@ ___
 ### cancelControlAbility <Score text="cancelControlAbility" /> 
 
 ▸ **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 取消释放状态的控制性
 
@@ -193,8 +173,6 @@ ___
 
 ▸ **enableJump**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象是否可跳跃
 
 
@@ -210,8 +188,6 @@ ___
 
 ▸ **enableMove**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取对象是否可移动
 
 
@@ -226,8 +202,6 @@ ___
 ### enableTurn <Score text="enableTurn" /> 
 
 ▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取对象是否可转向
 

@@ -2,8 +2,6 @@
 
 # IHumanoidV2ClothPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2ClothPart" />
 
-**`Description`**
-
 人形对象V2部位
 
 ## Hierarchy
@@ -60,8 +58,6 @@
 
 ▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取衣服区域数量
 
 客户端生效
@@ -77,8 +73,6 @@ ___
 ### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取颜色
 
@@ -102,8 +96,6 @@ ___
 
 ▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图案方向
 
 客户端生效
@@ -125,8 +117,6 @@ ___
 ### getDesignColor <Score text="getDesignColor" /> 
 
 ▸ **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取图案颜色
 
@@ -150,8 +140,6 @@ ___
 
 ▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取衣服图案
 
 客户端生效
@@ -172,8 +160,6 @@ GUID
 ### getPatternAngle <Score text="getPatternAngle" /> 
 
 ▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹旋转
 
@@ -197,8 +183,6 @@ ___
 
 ▸ **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹颜色
 
 客户端生效
@@ -220,8 +204,6 @@ ___
 ### getPatternHeight <Score text="getPatternHeight" /> 
 
 ▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹纵向拉伸
 
@@ -245,8 +227,6 @@ ___
 
 ▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹显示程度
 
 客户端生效
@@ -268,8 +248,6 @@ ___
 ### getPatternWidth <Score text="getPatternWidth" /> 
 
 ▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹横向拉伸
 
@@ -293,8 +271,6 @@ ___
 
 ▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹
 
 客户端生效
@@ -317,8 +293,6 @@ ___
 
 ▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置颜色
 
 sync = false:客户端;
@@ -338,8 +312,6 @@ ___
 ### setDesignAngle <Score text="setDesignAngle" /> 
 
 ▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图案方向
 
@@ -361,8 +333,6 @@ ___
 
 ▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置图案颜色
 
 sync = false:客户端;
@@ -383,8 +353,6 @@ ___
 
 ▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置衣服图案
 
 sync = false:客户端;
@@ -403,8 +371,6 @@ sync = true:双端
 ### setPatternAngle <Score text="setPatternAngle" /> 
 
 ▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹旋转
 
@@ -426,8 +392,6 @@ ___
 
 ▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹颜色
 
 sync = false:客户端;
@@ -447,8 +411,6 @@ ___
 ### setPatternHeight <Score text="setPatternHeight" /> 
 
 ▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹纵向拉伸
 
@@ -470,8 +432,6 @@ ___
 
 ▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹显示程度
 
 sync = false:客户端;
@@ -492,8 +452,6 @@ ___
 
 ▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹横向拉伸
 
 sync = false:客户端;
@@ -513,8 +471,6 @@ ___
 ### setTexture <Score text="setTexture" /> 
 
 ▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹
 

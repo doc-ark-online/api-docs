@@ -2,8 +2,6 @@
 
 # AbilityStateControlType <Badge type="tip" text="Enumeration" /> <Score text="AbilityStateControlType" />
 
-**`Description`**
-
 技能状态控制枚举
 
 ## Table of contents

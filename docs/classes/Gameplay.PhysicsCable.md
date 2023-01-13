@@ -2,8 +2,6 @@
 
 # PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 
-**`Description`**
-
 物理绳组件
 
 ## Hierarchy
@@ -45,8 +43,6 @@
 
 • `get` **collisionEnable**(): `boolean`
 
-**`Description`**
-
 获取禁用碰撞
 
 #### Returns
@@ -56,8 +52,6 @@
 是否禁用碰撞
 
 • `set` **collisionEnable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置禁用碰撞
 
@@ -75,8 +69,6 @@
 
 • `get` **currentLength**(): `number`
 
-**`Description`**
-
 获取绳子当前长度
 
 #### Returns
@@ -90,8 +82,6 @@
 
 • `get` **maxLength**(): `number`
 
-**`Description`**
-
 获取绳子最大长度
 
 #### Returns
@@ -101,8 +91,6 @@
 最大长度
 
 • `set` **maxLength**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置绳子最大长度
 

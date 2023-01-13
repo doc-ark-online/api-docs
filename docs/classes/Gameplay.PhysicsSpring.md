@@ -2,8 +2,6 @@
 
 # PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 
-**`Description`**
-
 物理弹簧组件
 
 ## Hierarchy
@@ -49,8 +47,6 @@
 
 • `get` **currentLength**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取弹簧当前长度
 
 调用端
@@ -67,8 +63,6 @@ ___
 
 • `get` **damping**(): `number`
 
-**`Description`**
-
 获取阻尼参数
 
 #### Returns
@@ -78,8 +72,6 @@ ___
 阻尼参数
 
 • `set` **damping**(`InSpringDamping`): `void`
-
-**`Description`**
 
 设定阻尼参数
 
@@ -95,8 +87,6 @@ ___
 ### defaultLength <Score text="defaultLength" /> 
 
 • `get` **defaultLength**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取弹簧静止长度（无拉伸挤压状态长度）
 
@@ -114,8 +104,6 @@ ___
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取启用状态
 
 #### Returns
@@ -125,8 +113,6 @@ ___
 启用状态
 
 • `set` **enable**(`EnableState`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -142,8 +128,6 @@ ___
 
 • `get` **isLengthLimited**(): `boolean`
 
-**`Description`**
-
 获取弹簧运动长度限定状态
 
 #### Returns
@@ -153,8 +137,6 @@ ___
 限定状态
 
 • `set` **isLengthLimited**(`isLimited`): `void`
-
-**`Description`**
 
 设定弹簧运动长度限定状态
 
@@ -170,8 +152,6 @@ ___
 
 • `get` **maxStretchLength**(): `number`
 
-**`Description`**
-
 获取最大伸缩长度
 
 #### Returns
@@ -181,8 +161,6 @@ ___
 最大伸缩长度
 
 • `set` **maxStretchLength**(`StretchLength`): `void`
-
-**`Description`**
 
 设定最大伸缩长度
 
@@ -198,8 +176,6 @@ ___
 
 • `get` **stiffness**(): `number`
 
-**`Description`**
-
 获取刚度参数
 
 #### Returns
@@ -209,8 +185,6 @@ ___
 刚度参数
 
 • `set` **stiffness**(`InSpringStiffness`): `void`
-
-**`Description`**
 
 设定刚度参数
 

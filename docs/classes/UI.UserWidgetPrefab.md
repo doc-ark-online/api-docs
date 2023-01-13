@@ -2,8 +2,6 @@
 
 # UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
-**`Description`**
-
 ui预制体
 
 ## Hierarchy

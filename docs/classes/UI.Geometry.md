@@ -2,8 +2,6 @@
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
-**`Description`**
-
 几何坐标信息
 
 ## Table of contents
@@ -17,8 +15,6 @@
 | **[getLocalSize](UI.Geometry.md#getlocalsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取相对大小|
 | **[isUnderLocation](UI.Geometry.md#isunderlocation)**([`Vector2`](Type.Vector2.md)): `boolean` <br> 判断该Geometry 是否在AbsoluteCoordinate坐标下|
 
-**`Description`**
-
 默认构造
 
 ## Methods
@@ -26,8 +22,6 @@
 ### getAbsolutePosition <Score text="getAbsolutePosition" /> 
 
 ▸ **getAbsolutePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取绝对坐标
 
@@ -43,8 +37,6 @@ ___
 ### getAbsolutePositionAtCoordinates <Score text="getAbsolutePositionAtCoordinates" /> 
 
 ▸ **getAbsolutePositionAtCoordinates**(`Coordinate`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取基于Coordinate的绝对坐标
 
@@ -67,8 +59,6 @@ ___
 
 ▸ **getAbsoluteSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取绝对大小
 
 
@@ -83,8 +73,6 @@ ___
 ### getLocalPositionAtCoordinates <Score text="getLocalPositionAtCoordinates" /> 
 
 ▸ **getLocalPositionAtCoordinates**(`Coordinate`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取基于Coordinate的相对坐标
 
@@ -107,8 +95,6 @@ ___
 
 ▸ **getLocalSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取相对大小
 
 
@@ -123,8 +109,6 @@ ___
 ### isUnderLocation <Score text="isUnderLocation" /> 
 
 ▸ **isUnderLocation**(`AbsoluteCoordinate`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断该Geometry 是否在AbsoluteCoordinate坐标下
 

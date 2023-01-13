@@ -2,8 +2,6 @@
 
 # UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentHorizontally" />
 
-**`Description`**
-
 自动布局容器水平适应规则
 
 ## Table of contents

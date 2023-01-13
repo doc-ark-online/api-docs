@@ -2,8 +2,6 @@
 
 # Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 
-**`Description`**
-
 触发器
 
 ::: warning Precautions
@@ -128,8 +126,6 @@
 
 • **onEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
-**`Description`**
-
 进入触发器事件
 
 ___
@@ -137,8 +133,6 @@ ___
 ### onLeave <Score text="onLeave" /> 
 
 • **onLeave**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
-
-**`Description`**
 
 离开触发器事件
 
@@ -149,8 +143,6 @@ ___
 ### isBoxShape <Score text="isBoxShape" /> 
 
 ▸ **isBoxShape**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前触发器区域是否为盒体
 
@@ -166,8 +158,6 @@ ___
 ### isInArea <Score text="isInArea" /> 
 
 ▸ **isInArea**(`gameObject`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断指定对象是否在触发器区域
 
@@ -189,8 +179,6 @@ true:为在触发器范围内
 
 ▸ **isSphereShape**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 判断当前触发器区域是否为球体
 
 
@@ -204,8 +192,6 @@ true:触发器是球体
 ### setBoxExtent <Score text="setBoxExtent" /> 
 
 ▸ **setBoxExtent**(`InBoxExtent`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置立方体触发器大小
 
@@ -223,8 +209,6 @@ true:触发器是球体
 
 ▸ **setCollisionEnabled**(`enable`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置触发器是否激活
 
 
@@ -239,8 +223,6 @@ true:触发器是球体
 ### setSphereRadius <Score text="setSphereRadius" /> 
 
 ▸ **setSphereRadius**(`InSphereRadius`, `updateOverlaps?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置球形触发器大小
 
@@ -257,8 +239,6 @@ true:触发器是球体
 ### toggleTriggerShape <Score text="toggleTriggerShape" /> 
 
 ▸ **toggleTriggerShape**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 切换触发器形状
 

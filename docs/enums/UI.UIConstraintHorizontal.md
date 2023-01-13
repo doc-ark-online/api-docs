@@ -2,8 +2,6 @@
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 
-**`Description`**
-
 对齐策略水平规则
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
-**`Description`**
-
 热武器射击精度组件
 
 ## Table of contents
@@ -34,8 +32,6 @@
 
 • **onCurrentDispersionChangedClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 客户端实际射击精度值发生变化时执行绑定函数
 
 ## Accessors
@@ -43,8 +39,6 @@
 ### defaultDispersionHalfAngle <Score text="defaultDispersionHalfAngle" /> 
 
 • `get` **defaultDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get子弹随机发散范围的默认半径
 
@@ -56,8 +50,6 @@ Get子弹随机发散范围的默认半径
 圆型范围半径值
 
 • `set` **defaultDispersionHalfAngle**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围的默认半径
 
@@ -76,8 +68,6 @@ ___
 
 • `get` **dispersionHalfAngleDecreaseSpeed**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get子弹随机发散范围半径的收缩速度
 
 
@@ -88,8 +78,6 @@ Get子弹随机发散范围半径的收缩速度
 圆型范围半径每秒变化量
 
 • `set` **dispersionHalfAngleDecreaseSpeed**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围半径的收缩速度
 
@@ -113,8 +101,6 @@ ___
 
 • `get` **dispersionHalfAngleIncreasePerShot**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get子弹随机发散范围半径在每次射击后的扩张值
 
 
@@ -125,8 +111,6 @@ Get子弹随机发散范围半径在每次射击后的扩张值
 圆型范围半径增量
 
 • `set` **dispersionHalfAngleIncreasePerShot**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围半径在每次射击后的扩张值
 
@@ -150,8 +134,6 @@ ___
 
 • `get` **dispersionHalfAngleIncreaseSpeed**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get子弹随机发散范围半径的扩张速度
 
 
@@ -162,8 +144,6 @@ Get子弹随机发散范围半径的扩张速度
 圆型范围半径每秒变化量
 
 • `set` **dispersionHalfAngleIncreaseSpeed**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围半径的扩张速度
 
@@ -187,8 +167,6 @@ ___
 
 • `get` **maxDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get子弹随机发散范围的最大半径
 
 
@@ -199,8 +177,6 @@ Get子弹随机发散范围的最大半径
 圆型范围半径值
 
 • `set` **maxDispersionHalfAngle**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围的最大半径
 
@@ -219,8 +195,6 @@ ___
 
 • `get` **minDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Get子弹随机发散范围的最小半径
 
 
@@ -231,8 +205,6 @@ Get子弹随机发散范围的最小半径
 圆型范围半径值
 
 • `set` **minDispersionHalfAngle**(`NewValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Set子弹随机发散范围的最小半径
 
@@ -256,8 +228,6 @@ Set子弹随机发散范围的最小半径
 
 ▸ **bindOpenAccuracyOfFireComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 客户端 绑定射击精度组件代理
 
 
@@ -267,8 +237,6 @@ ___
 ### getCurrentDispersionHalfAngle <Score text="getCurrentDispersionHalfAngle" /> 
 
 ▸ **getCurrentDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get当前子弹随机发散范围半径实际值
 
@@ -284,8 +252,6 @@ ___
 ### getRandomShootDir <Score text="getRandomShootDir" /> 
 
 ▸ **getRandomShootDir**(`ShootDirNoDispersion`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）
 
@@ -314,8 +280,6 @@ ___
 ### getTargetDispersionHalfAngle <Score text="getTargetDispersionHalfAngle" /> 
 
 ▸ **getTargetDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 Get目标子弹随机发散范围半径实际值
 

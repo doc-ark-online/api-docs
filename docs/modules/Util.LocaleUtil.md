@@ -14,8 +14,6 @@
 
 ▸ **getDefaultLocale**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取默认的语言和地区
 
 

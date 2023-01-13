@@ -2,8 +2,6 @@
 
 # Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
 
-**`Description`**
-
 序列工具类，主要用于获取连续的ID
 
 ## Table of contents
@@ -17,8 +15,6 @@
 ### nextID <Score text="nextID" /> 
 
 ▸ `Static` **nextID**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取下一个ID
 

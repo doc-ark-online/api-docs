@@ -2,8 +2,6 @@
 
 # InstanceStaticMesh <Badge type="tip" text="Class" /> <Score text="InstanceStaticMesh" />
 
-**`Description`**
-
 InstanceStaticMesh
 
 ## Hierarchy

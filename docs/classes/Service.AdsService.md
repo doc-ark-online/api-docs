@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 广告服务，支持激励/插屏类型
 
 ::: warning Precautions
@@ -29,8 +27,6 @@
 
 ▸ **isActive**(`adsType`): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 广告是否激活
 
 
@@ -51,8 +47,6 @@ ___
 ### isReady <Score text="isReady" /> 
 
 ▸ **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 广告是否准备好
 
@@ -77,8 +71,6 @@ ___
 
 ▸ **show**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 展示广告
 
 
@@ -95,8 +87,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`AdsService`](Service.AdsService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取广告服务管理器全局实例
 

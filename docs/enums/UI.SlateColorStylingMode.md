@@ -2,8 +2,6 @@
 
 # SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 
-**`Description`**
-
 UI颜色应用模式
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
 
-**`Description`**
-
 HTTP请求信息的对象
 
 ## Table of contents
@@ -20,8 +18,6 @@ HTTP请求信息的对象
 
 • `Optional` **body**: `string`
 
-**`Description`**
-
 HTTP请求体
 
 ___
@@ -29,8 +25,6 @@ ___
 ### headers <Score text="headers" /> 
 
 • `Optional` **headers**: `Object`
-
-**`Description`**
 
 HTTP请求头
 
@@ -43,7 +37,5 @@ ___
 ### method <Score text="method" /> 
 
 • `Optional` **method**: ``"POST"`` \| ``"PUT"`` \| ``"GET"``
-
-**`Description`**
 
 HTTP请求类型

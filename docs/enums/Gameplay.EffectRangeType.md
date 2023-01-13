@@ -2,8 +2,6 @@
 
 # EffectRangeType <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeType" />
 
-**`Description`**
-
 效果范围类型
 
 ## Table of contents

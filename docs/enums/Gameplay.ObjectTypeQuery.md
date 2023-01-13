@@ -2,8 +2,6 @@
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 
-**`Description`**
-
 碰撞检测通道
 
 ## Table of contents

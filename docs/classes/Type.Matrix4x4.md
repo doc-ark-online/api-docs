@@ -2,8 +2,6 @@
 
 # Matrix4x4 <Badge type="tip" text="Class" /> <Score text="Matrix4x4" />
 
-**`Description`**
-
 四维矩阵
 
 ::: warning Precautions
@@ -69,8 +67,6 @@
 | **[transformVector4](Type.Matrix4x4.md#transformvector4)**([`Matrix4x4`](Type.Matrix4x4.md), [`Vector4`](Type.Vector4.md), [`Vector4`](Type.Vector4.md)): [`Vector4`](Type.Vector4.md) <br> 四维向量与四维矩阵乘法|
 | **[transpose](Type.Matrix4x4.md#transpose-1)**([`Matrix4x4`](Type.Matrix4x4.md), [`Matrix4x4`](Type.Matrix4x4.md)): [`Matrix4x4`](Type.Matrix4x4.md) <br> 转置矩阵|
 
-**`Description`**
-
 用给定的 other 构建一个新的 Matrix4x4
 
 #### Parameters
@@ -80,8 +76,6 @@
 | `other` | [`Matrix4x4`](Type.Matrix4x4.md) | 给定的 Matrix4x4 对象 |
 
 • **new Matrix4x4**(`m00?`, `m01?`, `m02?`, `m03?`, `m10?`, `m11?`, `m12?`, `m13?`, `m20?`, `m21?`, `m22?`, `m23?`, `m30?`, `m31?`, `m32?`, `m33?`)
-
-**`Description`**
 
 用给定的元素构建一个新的 Matrix4x4
 
@@ -112,8 +106,6 @@
 
 • **m00**: `number`
 
-**`Description`**
-
 矩阵第 0 列第 0 行的元素。
 
 ___
@@ -121,8 +113,6 @@ ___
 ### m01 <Score text="m" /> 
 
 • **m01**: `number`
-
-**`Description`**
 
 矩阵第 0 列第 1 行的元素。
 
@@ -132,8 +122,6 @@ ___
 
 • **m02**: `number`
 
-**`Description`**
-
 矩阵第 0 列第 2 行的元素。
 
 ___
@@ -141,8 +129,6 @@ ___
 ### m03 <Score text="m" /> 
 
 • **m03**: `number`
-
-**`Description`**
 
 矩阵第 0 列第 3 行的元素。
 
@@ -152,8 +138,6 @@ ___
 
 • **m10**: `number`
 
-**`Description`**
-
 矩阵第 1 列第 0 行的元素。
 
 ___
@@ -161,8 +145,6 @@ ___
 ### m11 <Score text="m" /> 
 
 • **m11**: `number`
-
-**`Description`**
 
 矩阵第 1 列第 1 行的元素。
 
@@ -172,8 +154,6 @@ ___
 
 • **m12**: `number`
 
-**`Description`**
-
 矩阵第 1 列第 2 行的元素。
 
 ___
@@ -181,8 +161,6 @@ ___
 ### m13 <Score text="m" /> 
 
 • **m13**: `number`
-
-**`Description`**
 
 矩阵第 1 列第 3 行的元素。
 
@@ -192,8 +170,6 @@ ___
 
 • **m20**: `number`
 
-**`Description`**
-
 矩阵第 2 列第 0 行的元素。
 
 ___
@@ -201,8 +177,6 @@ ___
 ### m21 <Score text="m" /> 
 
 • **m21**: `number`
-
-**`Description`**
 
 矩阵第 2 列第 1 行的元素。
 
@@ -212,8 +186,6 @@ ___
 
 • **m22**: `number`
 
-**`Description`**
-
 矩阵第 2 列第 2 行的元素。
 
 ___
@@ -221,8 +193,6 @@ ___
 ### m23 <Score text="m" /> 
 
 • **m23**: `number`
-
-**`Description`**
 
 矩阵第 2 列第 3 行的元素。
 
@@ -232,8 +202,6 @@ ___
 
 • **m30**: `number`
 
-**`Description`**
-
 矩阵第 3 列第 0 行的元素。
 
 ___
@@ -241,8 +209,6 @@ ___
 ### m31 <Score text="m" /> 
 
 • **m31**: `number`
-
-**`Description`**
 
 矩阵第 3 列第 1 行的元素。
 
@@ -252,8 +218,6 @@ ___
 
 • **m32**: `number`
 
-**`Description`**
-
 矩阵第 3 列第 2 行的元素。
 
 ___
@@ -262,8 +226,6 @@ ___
 
 • **m33**: `number`
 
-**`Description`**
-
 矩阵第 3 列第 3 行的元素。
 
 ## Accessors
@@ -271,8 +233,6 @@ ___
 ### identity <Score text="identity" /> 
 
 • `Static` `get` **identity**(): [`Matrix4x4`](Type.Matrix4x4.md)
-
-**`Description`**
 
 获得一个默认矩阵
 
@@ -285,8 +245,6 @@ ___
 ### add <Score text="add" /> 
 
 ▸ **add**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 矩阵加法。将当前矩阵与指定矩阵的相加，结果返回给当前矩阵。
 
@@ -309,8 +267,6 @@ ___
 
 ▸ **clone**(): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 克隆当前矩阵。
 
 
@@ -326,8 +282,6 @@ ___
 
 ▸ **determinant**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 计算当前矩阵的行列式。
 
 
@@ -342,8 +296,6 @@ ___
 ### equals <Score text="equals" /> 
 
 ▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断当前矩阵是否在误差范围内与指定矩阵相等。
 
@@ -367,8 +319,6 @@ ___
 
 ▸ **fromQuaternion**(`q`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 重置当前矩阵的值，使其表示指定四元数表示的旋转变换。
 
 
@@ -389,8 +339,6 @@ ___
 ### fromRTS <Score text="fromRTS" /> 
 
 ▸ **fromRTS**(`q`, `v`, `s`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 重置当前矩阵的值，使其表示指定的旋转、缩放、位移依次组合的变换。
 
@@ -414,8 +362,6 @@ ___
 ### getRotation <Score text="getRotation" /> 
 
 ▸ **getRotation**(`outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 从当前矩阵中计算出旋转变换的部分，并以四元数的形式赋值给出口四元数。
 
@@ -444,8 +390,6 @@ ___
 
 ▸ **getScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 从当前矩阵中计算出缩放变换的部分，并以各个轴上缩放的形式赋值给出口向量。
 
 
@@ -472,8 +416,6 @@ ___
 ### getTranslation <Score text="getTranslation" /> 
 
 ▸ **getTranslation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 从当前矩阵中计算出位移变换的部分，并以各个轴上位移的形式赋值给出口向量。
 
@@ -502,8 +444,6 @@ ___
 
 ▸ **identity**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将当前矩阵设为单位矩阵。
 
 
@@ -514,8 +454,6 @@ ___
 
 ▸ **invert**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将当前矩阵变为逆矩阵。注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。
 
 
@@ -525,8 +463,6 @@ ___
 ### multiply <Score text="multiply" /> 
 
 ▸ **multiply**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 矩阵乘法。将当前矩阵左乘指定矩阵的结果赋值给当前矩阵。
 
@@ -544,8 +480,6 @@ ___
 this
 
 ▸ **multiply**(`scalar`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 矩阵数乘。将当前矩阵与指定标量的数乘结果赋值给当前矩阵。
 
@@ -567,8 +501,6 @@ ___
 ### rotate <Score text="rotate" /> 
 
 ▸ **rotate**(`axis`, `rad`, `epsilon?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将当前矩阵左乘旋转矩阵的结果赋值给当前矩阵，旋转矩阵由旋转轴和旋转角度给出。
 
@@ -593,8 +525,6 @@ ___
 
 ▸ **scale**(`vec`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 将当前矩阵左乘缩放矩阵的结果赋值给当前矩阵，缩放矩阵由各个轴的缩放给出。
 
 
@@ -616,8 +546,6 @@ ___
 
 ▸ **set**(`other`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置当前矩阵使其与指定矩阵相等。
 
 
@@ -634,8 +562,6 @@ ___
 this
 
 ▸ **set**(`m00?`, `m01?`, `m02?`, `m03?`, `m10?`, `m11?`, `m12?`, `m13?`, `m20?`, `m21?`, `m22?`, `m23?`, `m30?`, `m31?`, `m32?`, `m33?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前矩阵指定元素值。
 
@@ -673,8 +599,6 @@ ___
 
 ▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 判断当前矩阵是否与指定矩阵相等。
 
 
@@ -695,8 +619,6 @@ ___
 ### subtract <Score text="subtract" /> 
 
 ▸ **subtract**(`mat`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 计算矩阵减法。将当前矩阵减去指定矩阵的结果赋值给当前矩阵。
 
@@ -719,8 +641,6 @@ ___
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 返回当前矩阵的字符串表示。
 
 
@@ -735,8 +655,6 @@ ___
 ### translate <Score text="translate" /> 
 
 ▸ **translate**(`vec`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将当前矩阵左乘位移矩阵的结果赋值给当前矩阵，位移矩阵由各个轴的位移给出。
 
@@ -759,8 +677,6 @@ ___
 
 ▸ **transpose**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将当前矩阵变为转置矩阵。
 
 
@@ -771,8 +687,6 @@ ___
 
 ▸ **zero**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 将当前矩阵设为 0矩阵。
 
 
@@ -782,8 +696,6 @@ ___
 ### clone <Score text="clone" /> 
 
 ▸ `Static` **clone**(`a`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获得指定矩阵的拷贝
 
@@ -805,8 +717,6 @@ ___
 ### invert <Score text="invert" /> 
 
 ▸ `Static` **invert**(`a`, `outer?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。
 
@@ -835,8 +745,6 @@ ___
 ### transformAffine <Score text="transformAffine" /> 
 
 ▸ `Static` **transformAffine**(`m`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 向量仿射变换
 
@@ -867,8 +775,6 @@ ___
 
 ▸ `Static` **transformAffine4**(`m`, `a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 四维向量仿射变换
 
 
@@ -897,8 +803,6 @@ ___
 ### transformVector <Score text="transformVector" /> 
 
 ▸ `Static` **transformVector**(`m`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 向量与四维矩阵乘法，默认向量第四位为 0。
 
@@ -929,8 +833,6 @@ ___
 
 ▸ `Static` **transformVector2**(`m`, `a`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 向量与四维矩阵乘法，默认向量第三位为 0，第四位为 1。
 
 
@@ -960,8 +862,6 @@ ___
 
 ▸ `Static` **transformVector4**(`m`, `a`, `outer?`): [`Vector4`](Type.Vector4.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 四维向量与四维矩阵乘法
 
 
@@ -990,8 +890,6 @@ ___
 ### transpose <Score text="transpose" /> 
 
 ▸ `Static` **transpose**(`a`, `outer?`): [`Matrix4x4`](Type.Matrix4x4.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转置矩阵
 

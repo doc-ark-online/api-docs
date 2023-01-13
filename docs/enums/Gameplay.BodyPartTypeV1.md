@@ -2,8 +2,6 @@
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 
-**`Description`**
-
 V1角色部位
 
 ## Table of contents

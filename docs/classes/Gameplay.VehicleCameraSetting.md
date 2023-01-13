@@ -2,8 +2,6 @@
 
 # VehicleCameraSetting <Badge type="tip" text="Class" /> <Score text="VehicleCameraSetting" />
 
-**`Description`**
-
 载具摄像机
 
 ## Hierarchy
@@ -115,8 +113,6 @@
 
 ▸ **applyClientSettings**(`cameraSystem`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 应用面板的摄像机配置数据
 
 
@@ -132,8 +128,6 @@
 
 ▸ **getSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取存储的摄像机配置数据
 
 
@@ -147,8 +141,6 @@
 ### saveSettings <Score text="saveSettings" /> 
 
 ▸ **saveSettings**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 存储面板的摄像机配置数据
 

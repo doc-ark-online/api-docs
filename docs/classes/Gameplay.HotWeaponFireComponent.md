@@ -2,8 +2,6 @@
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
-**`Description`**
-
 热武器开火组件
 
 ## Table of contents
@@ -39,8 +37,6 @@
 
 • **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 服务器完成一次连发射击周期时执行绑定函数
 
 ___
@@ -48,8 +44,6 @@ ___
 ### onEndFireClient <Score text="onEndFireClient" /> 
 
 • **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端停止开火时执行绑定函数
 
@@ -59,8 +53,6 @@ ___
 
 • **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 服务器停止开火时执行绑定函数
 
 ___
@@ -68,8 +60,6 @@ ___
 ### onStartFireClient <Score text="onStartFireClient" /> 
 
 • **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 客户端开始开火时执行绑定函数
 
@@ -79,8 +69,6 @@ ___
 
 • **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 服务器开始开火时执行绑定函数
 
 ## Accessors
@@ -88,8 +76,6 @@ ___
 ### animationGuid <Score text="animationGuid" /> 
 
 • `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定的动画GUID
 
@@ -101,8 +87,6 @@ ___
 绑定的动画 GUID
 
 • `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置动画 GUID
 
@@ -120,8 +104,6 @@ ___
 
 • `get` **currentBulletSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前弹夹中子弹数量
 
 
@@ -132,8 +114,6 @@ ___
 当前弹夹中子弹数量
 
 • `set` **currentBulletSize**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前弹夹中子弹数量
 
@@ -151,8 +131,6 @@ ___
 
 • `get` **currentClipSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前弹夹容量
 
 
@@ -163,8 +141,6 @@ ___
 当前弹夹容量
 
 • `set` **currentClipSize**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前弹夹容量
 
@@ -188,8 +164,6 @@ ___
 
 • `get` **currentFireInterval**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取开火间隙
 
 
@@ -200,8 +174,6 @@ ___
 开火间隙
 
 • `set` **currentFireInterval**(`interval`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置开火间隙
 
@@ -225,8 +197,6 @@ ___
 
 • `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前的开火模式
 
 
@@ -242,8 +212,6 @@ ___
 
 • `get` **currentMultipleShot**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取一次开火发射的子弹数量
 
 
@@ -254,8 +222,6 @@ ___
 一次开火发射的子弹数量
 
 • `set` **currentMultipleShot**(`count`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置一次开火发射的子弹数量
 
@@ -279,8 +245,6 @@ ___
 
 • `get` **isFireOnScreenCenter**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否在屏幕中心开火
 
 
@@ -291,8 +255,6 @@ ___
 是否在屏幕中心开火
 
 • `set` **isFireOnScreenCenter**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否在屏幕中心开火
 
@@ -316,8 +278,6 @@ ___
 
 • `get` **isFullAutoMode**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹
 
 
@@ -328,8 +288,6 @@ ___
 当前状态下 isInFullAuto
 
 • `set` **isFullAutoMode**(`isInFullAuto`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前状态下isInFullAuto的值
 
@@ -353,8 +311,6 @@ ___
 
 • `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取屏幕中心开火时的偏移
 
 
@@ -365,8 +321,6 @@ ___
 屏幕中心开火时的偏移
 
 • `set` **offsetOfFireOnScreenCenter**(`offset`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置屏幕中心开火时的偏移
 
@@ -390,8 +344,6 @@ ___
 
 ▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 是否有动画GUID
 
 
@@ -406,8 +358,6 @@ ___
 ### isFiring <Score text="isFiring" /> 
 
 ▸ **isFiring**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
 

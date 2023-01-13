@@ -2,8 +2,6 @@
 
 # IHumanoidV2 <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2" />
 
-**`Description`**
-
 人形对象V2插槽和外形加载
 
 ## Implemented by
@@ -33,8 +31,6 @@
 
 ▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 把本地角色形象数据同步到多端
 
 
@@ -50,8 +46,6 @@ ___
 ### attach <Score text="attach" /> 
 
 ▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将物体附着到V2人物角色的指定插槽
 
@@ -77,8 +71,6 @@ ___
 
 ▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 切换角色主Mesh
 
 sync = false:客户端;
@@ -98,8 +90,6 @@ ___
 
 ▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 清空角色形象数据
 
 双端
@@ -110,8 +100,6 @@ ___
 ### detach <Score text="detach" /> 
 
 ▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将物体从人物身上附着的物品预览插槽中分离
 
@@ -136,8 +124,6 @@ ___
 
 ▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取插槽文件里面的数据，Array<[string, string]>：Array<[物品资源Id, 插入的插槽名]>
 
 双端
@@ -159,8 +145,6 @@ ___
 ### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
 ▸ **getSlotWorldPosition**(`slotName`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取Slot世界坐标位置,V2物品预览的插槽使用
 
@@ -184,8 +168,6 @@ ___
 
 ▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前的主Mesh
 
 双端
@@ -201,8 +183,6 @@ ___
 ### setAppearanceData <Score text="setAppearanceData" /> 
 
 ▸ **setAppearanceData**(`GUIDArray`, `callback`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过GUID加载数据另存为角色数据
 
@@ -228,8 +208,6 @@ ___
 
 ▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 通过插槽GUID加载数据
 
 双端
@@ -248,8 +226,6 @@ ___
 
 ▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
 
 客户端
@@ -266,8 +242,6 @@ ___
 ### setSuit <Score text="setSuit" /> 
 
 ▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 加载一套角色数据
 

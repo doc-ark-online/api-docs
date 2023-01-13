@@ -2,8 +2,6 @@
 
 # AreaClass <Badge type="tip" text="Enumeration" /> <Score text="AreaClass" />
 
-**`Description`**
-
 寻路区域屏障寻路计算类型
 
 ## Table of contents

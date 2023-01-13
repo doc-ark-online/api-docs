@@ -2,8 +2,6 @@
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
-**`Description`**
-
 动画模式
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # PhysicsIntegratedMover <Badge type="tip" text="Class" /> <Score text="PhysicsIntegratedMover" />
 
-**`Description`**
-
 运动器组件
 
 ## Hierarchy
@@ -54,8 +52,6 @@
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取启用状态
 
 #### Returns
@@ -65,8 +61,6 @@
 启用状态
 
 • `set` **enable**(`newEnable`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -82,8 +76,6 @@
 
 • `get` **linearRepeat**(): `boolean`
 
-**`Description`**
-
 获取线性重复运动状态
 
 #### Returns
@@ -93,8 +85,6 @@
 线性重复运动状态
 
 • `set` **linearRepeat**(`newRepeat`): `void`
-
-**`Description`**
 
 设置线性重复运动状态
 
@@ -111,8 +101,6 @@ ___
 
 • `get` **linearRepeatDelay**(): `number`
 
-**`Description`**
-
 获取线性重复运动间隔
 
 #### Returns
@@ -122,8 +110,6 @@ ___
 线性重复运动间隔
 
 • `set` **linearRepeatDelay**(`newDelay`): `void`
-
-**`Description`**
 
 设置线性重复运动间隔
 
@@ -140,8 +126,6 @@ ___
 
 • `get` **linearRepeatTime**(): `number`
 
-**`Description`**
-
 获取线性重复运动时间
 
 #### Returns
@@ -151,8 +135,6 @@ ___
 线性重复运动时间
 
 • `set` **linearRepeatTime**(`newTime`): `void`
-
-**`Description`**
 
 设置线性重复运动时间
 
@@ -169,8 +151,6 @@ ___
 
 • `get` **linearSpeed**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取线性速度大小
 
 #### Returns
@@ -180,8 +160,6 @@ ___
 线性速度大小
 
 • `set` **linearSpeed**(`newSpeed`): `void`
-
-**`Description`**
 
 设置线性速度大小
 
@@ -197,8 +175,6 @@ ___
 
 • `get` **rotationRepeat**(): `boolean`
 
-**`Description`**
-
 获取旋转重复运动状态
 
 #### Returns
@@ -208,8 +184,6 @@ ___
 旋转重复运动状态
 
 • `set` **rotationRepeat**(`newRepeat`): `void`
-
-**`Description`**
 
 设置旋转重复运动状态
 
@@ -226,8 +200,6 @@ ___
 
 • `get` **rotationRepeatDelay**(): `number`
 
-**`Description`**
-
 获取旋转重复运动间隔
 
 #### Returns
@@ -237,8 +209,6 @@ ___
 旋转重复运动间隔
 
 • `set` **rotationRepeatDelay**(`newDelay`): `void`
-
-**`Description`**
 
 设置旋转重复运动间隔
 
@@ -255,8 +225,6 @@ ___
 
 • `get` **rotationRepeatTime**(): `number`
 
-**`Description`**
-
 获取旋转重复运动时间
 
 #### Returns
@@ -266,8 +234,6 @@ ___
 旋转重复运动时间
 
 • `set` **rotationRepeatTime**(`newTime`): `void`
-
-**`Description`**
 
 设置旋转重复运动时间
 
@@ -284,8 +250,6 @@ ___
 
 • `get` **rotationSpeed**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取线性速度大小
 
 #### Returns
@@ -295,8 +259,6 @@ ___
 旋转速度大小
 
 • `set` **rotationSpeed**(`newSpeed`): `void`
-
-**`Description`**
 
 设置旋转速度大小
 
@@ -313,8 +275,6 @@ ___
 
 • `get` **smooth**(): `boolean`
 
-**`Description`**
-
 获取平滑设置
 
 #### Returns
@@ -324,8 +284,6 @@ ___
 平滑设置状态
 
 • `set` **smooth**(`newSmooth`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -341,8 +299,6 @@ ___
 
 • `get` **swingAngle**(): `number`
 
-**`Description`**
-
 获取摆动最大角度
 
 #### Returns
@@ -352,8 +308,6 @@ ___
 摆动最大角度
 
 • `set` **swingAngle**(`newAngle`): `void`
-
-**`Description`**
 
 设置摆动最大角度
 
@@ -370,8 +324,6 @@ ___
 
 • `get` **swingSpeed**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取摆动运动速度
 
 #### Returns
@@ -381,8 +333,6 @@ ___
 摆动运动速度
 
 • `set` **swingSpeed**(`newSpeed`): `void`
-
-**`Description`**
 
 设置摆动运动速度
 

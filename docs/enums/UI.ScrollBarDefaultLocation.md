@@ -2,8 +2,6 @@
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
-**`Description`**
-
 滚动条默认位置
 
 ## Table of contents

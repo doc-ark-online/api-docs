@@ -17,8 +17,6 @@
 
 ▸ **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 资源下载
 
 
@@ -39,8 +37,6 @@ ___
 ### isAssetExist <Score text="isAssetExist" /> 
 
 ▸ **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源是否存在
 
@@ -63,8 +59,6 @@ ___
 
 ▸ **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 资源是否加载
 
 
@@ -85,8 +79,6 @@ ___
 ### loadAsset <Score text="loadAsset" /> 
 
 ▸ **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 资源加载
 

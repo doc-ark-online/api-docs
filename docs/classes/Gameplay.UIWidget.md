@@ -2,8 +2,6 @@
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
-**`Description`**
-
 世界UI组件
 
 ## Hierarchy
@@ -127,8 +125,6 @@
 
 • `get` **cylinderArcAngle**(): `number`
 
-**`Description`**
-
 获取圆柱体弧形角度
 
 #### Returns
@@ -138,8 +134,6 @@
 角度
 
 • `set` **cylinderArcAngle**(`inCylinderArcAngle`): `void`
-
-**`Description`**
 
 设置圆柱体弧形角度
 
@@ -156,8 +150,6 @@ ___
 
 • `get` **distanceScaleFactor**(): `number`
 
-**`Description`**
-
 获取缩放距离系数
 
 #### Returns
@@ -167,8 +159,6 @@ ___
 距离系数
 
 • `set` **distanceScaleFactor**(`Value`): `void`
-
-**`Description`**
 
 设置缩放距离系数
 
@@ -185,8 +175,6 @@ ___
 
 • `get` **drawSize**(): [`Vector2`](Type.Vector2.md)
 
-**`Description`**
-
 获取实际渲染大小
 
 #### Returns
@@ -196,8 +184,6 @@ ___
 渲染大小2D
 
 • `set` **drawSize**(`newSize`): `void`
-
-**`Description`**
 
 设置实际渲染大小
 
@@ -213,8 +199,6 @@ ___
 
 • `get` **geometryMode**(): [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md)
 
-**`Description`**
-
 获取几何体模式
 
 #### Returns
@@ -224,8 +208,6 @@ ___
 几何体模式枚举
 
 • `set` **geometryMode**(`inGeometryMode`): `void`
-
-**`Description`**
 
 设置几何体模式
 
@@ -241,8 +223,6 @@ ___
 
 • `get` **headUIMaxVisibleDistance**(): `number`
 
-**`Description`**
-
 获取最大头顶UI可见距离
 
 #### Returns
@@ -252,8 +232,6 @@ ___
 可见距离
 
 • `set` **headUIMaxVisibleDistance**(`Value`): `void`
-
-**`Description`**
 
 设置最大头顶UI可见距离
 
@@ -270,8 +248,6 @@ ___
 
 • `get` **hideByDistanceEnable**(): `boolean`
 
-**`Description`**
-
 获取是否启用最大可见距离
 
 #### Returns
@@ -281,8 +257,6 @@ ___
 true：开启
 
 • `set` **hideByDistanceEnable**(`Value`): `void`
-
-**`Description`**
 
 设置是否启用最大可见距离
 
@@ -298,8 +272,6 @@ ___
 ### interaction <Score text="interaction" /> 
 
 • `get` **interaction**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取世界UI交互状态
 
@@ -318,8 +290,6 @@ ___
 是否可交互
 
 • `set` **interaction**(`inInteraction`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置世界UI交互状态
 
@@ -346,8 +316,6 @@ ___
 
 • `get` **isEnemy**(): `boolean`
 
-**`Description`**
-
 获取是否作为敌方玩家，敌方玩家不显示头顶UI
 
 #### Returns
@@ -357,8 +325,6 @@ ___
 布尔值
 
 • `set` **isEnemy**(`Value`): `void`
-
-**`Description`**
 
 设置是否作为敌方玩家，敌方玩家不显示头顶UI
 
@@ -374,8 +340,6 @@ ___
 
 • `get` **occlusionEnable**(): `boolean`
 
-**`Description`**
-
 获取是否可被遮挡
 
 #### Returns
@@ -385,8 +349,6 @@ ___
 true：可被遮挡
 
 • `set` **occlusionEnable**(`Value`): `void`
-
-**`Description`**
 
 设置是否可被遮挡
 
@@ -402,8 +364,6 @@ true：可被遮挡
 
 • `get` **pivot**(): [`Vector2`](Type.Vector2.md)
 
-**`Description`**
-
 获取锚点位置
 
 #### Returns
@@ -413,8 +373,6 @@ true：可被遮挡
 位置信息
 
 • `set` **pivot**(`position`): `void`
-
-**`Description`**
 
 设置锚点位置
 
@@ -430,8 +388,6 @@ true：可被遮挡
 
 • `get` **scaledByDistanceEnable**(): `boolean`
 
-**`Description`**
-
 获取是否开启近大远小
 
 #### Returns
@@ -441,8 +397,6 @@ true：可被遮挡
 true：开启
 
 • `set` **scaledByDistanceEnable**(`Value`): `void`
-
-**`Description`**
 
 设置是否开启近大远小
 
@@ -459,8 +413,6 @@ ___
 
 • `get` **selfOcclusion**(): `boolean`
 
-**`Description`**
-
 获取是否可被自己遮挡
 
 #### Returns
@@ -470,8 +422,6 @@ ___
 布尔值
 
 • `set` **selfOcclusion**(`Value`): `void`
-
-**`Description`**
 
 设置是否可被自己遮挡
 
@@ -487,8 +437,6 @@ ___
 
 • `get` **widgetSpace**(): [`WidgetSpaceMode`](../enums/Gameplay.WidgetSpaceMode.md)
 
-**`Description`**
-
 获取显示方式
 
 #### Returns
@@ -498,8 +446,6 @@ ___
 显示方式枚举
 
 • `set` **widgetSpace**(`newSpace`): `void`
-
-**`Description`**
 
 设置显示方式
 
@@ -517,8 +463,6 @@ ___
 
 ▸ **getUI**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取UI对象
 
 客户端生效
@@ -534,8 +478,6 @@ UI对象
 
 ▸ **refresh**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 请求重新绘制
 
 客户端生效
@@ -545,8 +487,6 @@ UI对象
 ### setTargetUIWidget <Score text="setTargetUIWidget" /> 
 
 ▸ **setTargetUIWidget**(`uiUserWidget`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置UI
 
@@ -563,8 +503,6 @@ UI对象
 ### setUI <Score text="setUI" /> 
 
 ▸ **setUI**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 通过GUID设置UI
 

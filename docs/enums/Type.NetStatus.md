@@ -2,8 +2,6 @@
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 
-**`Description`**
-
 同步状态
 
 ## Table of contents

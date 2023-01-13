@@ -2,8 +2,6 @@
 
 # Union <Badge type="tip" text="Class" /> <Score text="Union" />
 
-**`Description`**
-
 合并对象
 
 ## Hierarchy

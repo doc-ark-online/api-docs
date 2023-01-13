@@ -2,8 +2,6 @@
 
 # CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 
-**`Description`**
-
 碰撞体形状类型*
 
 ## Table of contents

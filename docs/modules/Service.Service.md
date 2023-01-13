@@ -2,8 +2,6 @@ Service
 
 # Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
 
-**`Description`**
-
 Account Service
 
 ## Table of contents
@@ -54,8 +52,6 @@ Account Service
 
 ▸ (`success`): `void`
 
-**`Description`**
-
 返回bool的回调
 
 ##### Parameters
@@ -78,8 +74,6 @@ ___
 
 ▸ (): `void`
 
-**`Description`**
-
 下载角色形象的回调，无参数
 
 ##### Returns
@@ -95,8 +89,6 @@ ___
 #### Type declaration
 
 ▸ (`jsonData`): `void`
-
-**`Description`**
 
 收到MGS事件调用
 
@@ -119,8 +111,6 @@ ___
 #### Type declaration
 
 ▸ (`isSuccess`, `jsonData`): `void`
-
-**`Description`**
 
 收到233回复
 
@@ -145,8 +135,6 @@ ___
 
 ▸ (`amount`): `void`
 
-**`Description`**
-
 客户端接收余额更新的消息格式
 
 ##### Parameters
@@ -168,8 +156,6 @@ ___
 #### Type declaration
 
 ▸ (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
-
-**`Description`**
 
 服务端接收发货通知的消息格式
 
@@ -197,8 +183,6 @@ ___
 
 ▸ (`newState`): `void`
 
-**`Description`**
-
 233中MW窗口显示模式切换的消息格式
 
 ##### Parameters
@@ -221,8 +205,6 @@ ___
 
 ▸ (): `void`
 
-**`Description`**
-
 233中MW窗口刷新的消息格式
 
 ##### Returns
@@ -238,8 +220,6 @@ ___
 #### Type declaration
 
 ▸ (`dataString`): `void`
-
-**`Description`**
 
 返回string的回调
 
@@ -259,8 +239,6 @@ ___
 
 Ƭ **TeamMatchFailureInfo**: `Object`
 
-**`Description`**
-
 组队跳游戏请求失败回调
 
 #### Type declaration
@@ -279,8 +257,6 @@ ___
 #### Type declaration
 
 ▸ (`success`): `void`
-
-**`Description`**
 
 下载角色形象的回调消息格式
 
@@ -304,8 +280,6 @@ ___
 
 ▸ (): `void`
 
-**`Description`**
-
 返回无参数的回调
 
 ##### Returns
@@ -321,8 +295,6 @@ ___
 #### Type declaration
 
 ▸ (`dataString`): `void`
-
-**`Description`**
 
 下载平台数据回调
 

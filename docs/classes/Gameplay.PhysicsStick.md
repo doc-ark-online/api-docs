@@ -2,8 +2,6 @@
 
 # PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 
-**`Description`**
-
 物理杆组件
 
 ## Hierarchy

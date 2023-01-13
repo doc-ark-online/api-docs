@@ -2,8 +2,6 @@
 
 # HumanoidV1Hair <Badge type="tip" text="Class" /> <Score text="HumanoidV1Hair" />
 
-**`Description`**
-
 人形对象V1头发接口
 
 ## Implements
@@ -22,8 +20,6 @@
 ### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发模型
 
@@ -44,8 +40,6 @@ ___
 ### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发模型
 

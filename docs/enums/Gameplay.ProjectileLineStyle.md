@@ -2,8 +2,6 @@
 
 # ProjectileLineStyle <Badge type="tip" text="Enumeration" /> <Score text="ProjectileLineStyle" />
 
-**`Description`**
-
 投掷物轨迹绘制的显示风格
 
 ## Table of contents

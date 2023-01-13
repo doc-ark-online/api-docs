@@ -2,8 +2,6 @@
 
 # WheeledVehicle4W <Badge type="tip" text="Class" /> <Score text="WheeledVehicle4W" />
 
-**`Description`**
-
 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。
 
 ::: warning Precautions
@@ -141,8 +139,6 @@
 
 • `get` **brakingTorque**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取制动力矩。单位：牛*米（N*m）
 
 
@@ -158,8 +154,6 @@ ___
 
 • `get` **currentGearLevel**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前档位级别
 
 
@@ -170,8 +164,6 @@ ___
 当前档位级别
 
 • `set` **currentGearLevel**(`level`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置载具档位(直接变换档位到某一档)。
 
@@ -196,8 +188,6 @@ ___
 
 • `get` **driveMode**(): [`VehicleDriveMode4W`](../enums/Gameplay.VehicleDriveMode4W.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取载具驱动模式
 
 
@@ -212,8 +202,6 @@ ___
 
 • `get` **friction**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取载具摩擦力系数
 
 
@@ -227,8 +215,6 @@ ___
 ### handbrakeInputEnable <Score text="handbrakeInputEnable" /> 
 
 • `set` **handbrakeInputEnable**(`useHandbrake`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 手刹。
 
@@ -251,8 +237,6 @@ ___
 
 • `get` **mass**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取载具质量。单位：千克（kg）
 
 
@@ -263,8 +247,6 @@ ___
 载具质量
 
 • `set` **mass**(`mass`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置载具质量。单位：千克（kg）
 
@@ -289,8 +271,6 @@ ___
 
 • `get` **maxEngineRPM**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取最大发动机转速。单位：转/分（r/min）
 
 
@@ -305,8 +285,6 @@ ___
 ### maxGearLevel <Score text="maxGearLevel" /> 
 
 • `get` **maxGearLevel**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。
 
@@ -328,8 +306,6 @@ ___
 
 • `get` **velocity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前行驶速度。单位：米/秒（m/s）
 
 
@@ -343,8 +319,6 @@ ___
 ### wheelNum <Score text="wheelNum" /> 
 
 • `get` **wheelNum**(): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取车轮数量
 
@@ -362,8 +336,6 @@ ___
 
 ▸ **gearDown**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 降档，立即切换。
 
 
@@ -374,8 +346,6 @@ ___
 
 ▸ **gearUp**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 升档，立即切换。
 
 
@@ -384,8 +354,6 @@ ___
 ### getGearRatio <Score text="getGearRatio" /> 
 
 ▸ **getGearRatio**(`gearLevel`): [`VehicleGearData`](../modules/Gameplay.Gameplay.md#vehiclegeardata) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取指定档位属性
 
@@ -412,8 +380,6 @@ ___
 ### getWheelData <Score text="getWheelData" /> 
 
 ▸ **getWheelData**(`wheelId`): [`VehicleWheelData`](../modules/Gameplay.Gameplay.md#vehiclewheeldata) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取车轮属性
 
@@ -442,8 +408,6 @@ ___
 
 ▸ **getWheelMaxSteerAngle**(`wheelId`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取车轮最大转向角度。单位：度（°）
 
 
@@ -470,8 +434,6 @@ ___
 ### getWheelPosition <Score text="getWheelPosition" /> 
 
 ▸ **getWheelPosition**(`wheelId`): [`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取车轮位置，前轮或者后轮
 
@@ -500,8 +462,6 @@ ___
 
 ▸ **getWheelRadius**(`wheelId`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取车轮半径。单位：厘米（cm）
 
 
@@ -528,8 +488,6 @@ ___
 
 ▸ **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
 
 
@@ -552,8 +510,6 @@ ___
 
 ▸ **setDriver**(`inDriver`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置载具驾驶员。只有驾驶员才可以操作载具
 
 
@@ -568,8 +524,6 @@ ___
 ### setSteeringInput <Score text="setSteeringInput" /> 
 
 ▸ **setSteeringInput**(`newInput`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 控制载具左/右转向。
 
@@ -594,8 +548,6 @@ ___
 
 ▸ **setThrottleInput**(`newInput`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 控制载具前进/后退。
 
 
@@ -617,8 +569,6 @@ ___
 ### switchCamera <Score text="switchCamera" /> 
 
 ▸ **switchCamera**(`useVehicleCamera`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 在载具和角色之间切换摄像机。
 

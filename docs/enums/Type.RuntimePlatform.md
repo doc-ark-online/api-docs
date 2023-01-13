@@ -2,8 +2,6 @@
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 
-**`Description`**
-
 运行平台
 
 ## Table of contents

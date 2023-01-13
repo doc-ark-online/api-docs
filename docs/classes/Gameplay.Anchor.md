@@ -2,8 +2,6 @@
 
 # Anchor <Badge type="tip" text="Class" /> <Score text="Anchor" />
 
-**`Description`**
-
 空锚点，可以用作根节点
 
 ## Hierarchy

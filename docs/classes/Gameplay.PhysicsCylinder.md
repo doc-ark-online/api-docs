@@ -2,8 +2,6 @@
 
 # PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
 
-**`Description`**
-
 物理圆柱组件
 
 ## Hierarchy
@@ -54,8 +52,6 @@
 
 • `get` **angularLimit**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取限制角度
 
 #### Returns
@@ -65,8 +61,6 @@
 限制角度
 
 • `set` **angularLimit**(`Value`): `void`
-
-**`Description`**
 
 设置限制角度
 
@@ -83,8 +77,6 @@ ___
 
 • `get` **angularStrength**(): `number`
 
-**`Description`**
-
 获取角力度
 
 #### Returns
@@ -94,8 +86,6 @@ ___
 力度
 
 • `set` **angularStrength**(`Acceleration`): `void`
-
-**`Description`**
 
 设置角力度
 
@@ -112,8 +102,6 @@ ___
 
 • `get` **angularVelocity**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取最大角速度
 
 #### Returns
@@ -123,8 +111,6 @@ ___
 最大角速度
 
 • `set` **angularVelocity**(`Velocity`): `void`
-
-**`Description`**
 
 设置最大角速度
 
@@ -140,8 +126,6 @@ ___
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取启用状态
 
 #### Returns
@@ -151,8 +135,6 @@ ___
 启用状态
 
 • `set` **enable**(`EnableState`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -168,8 +150,6 @@ ___
 
 • `get` **linearLimit**(): `number`
 
-**`Description`**
-
 获取限制距离
 
 #### Returns
@@ -179,8 +159,6 @@ ___
 限制距离
 
 • `set` **linearLimit**(`Distance`): `void`
-
-**`Description`**
 
 设置限制距离
 
@@ -197,8 +175,6 @@ ___
 
 • `get` **linearStrength**(): `number`
 
-**`Description`**
-
 获取加速度
 
 #### Returns
@@ -208,8 +184,6 @@ ___
 加速度
 
 • `set` **linearStrength**(`Strength`): `void`
-
-**`Description`**
 
 设置加速度
 
@@ -226,8 +200,6 @@ ___
 
 • `get` **linearVelocity**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取最大速度
 
 #### Returns
@@ -237,8 +209,6 @@ ___
 最大速度
 
 • `set` **linearVelocity**(`Velocity`): `void`
-
-**`Description`**
 
 设置最大速度
 
@@ -254,8 +224,6 @@ ___
 
 • `get` **restitution**(): `number`
 
-**`Description`**
-
 获取反弹力
 
 #### Returns
@@ -265,8 +233,6 @@ ___
 反弹力
 
 • `set` **restitution**(`Value`): `void`
-
-**`Description`**
 
 设置反弹力
 
@@ -283,8 +249,6 @@ ___
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
 ▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取旋转类型
 
@@ -306,8 +270,6 @@ ___
 
 ▸ **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取滑动类型
 
 
@@ -328,8 +290,6 @@ ___
 
 ▸ **setAngularLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置旋转类型
 
 
@@ -345,8 +305,6 @@ ___
 ### setLinearLimitType <Score text="setLinearLimitType" /> 
 
 ▸ **setLinearLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滑动类型
 

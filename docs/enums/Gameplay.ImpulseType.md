@@ -2,8 +2,6 @@
 
 # ImpulseType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseType" />
 
-**`Description`**
-
 冲量的应用方式
 
 ## Table of contents

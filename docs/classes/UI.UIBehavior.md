@@ -2,8 +2,6 @@
 
 # UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
-**`Description`**
-
 UI的驱动脚本基类
 
 ## Table of contents
@@ -36,8 +34,6 @@ UI的驱动脚本基类
 
 • `get` **canUpdate**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 是否能触发onUpdate函数
 
 
@@ -48,8 +44,6 @@ UI的驱动脚本基类
 返回能否触发的标志
 
 • `set` **canUpdate**(`bCanUpdate`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否能触发onUpdate函数
 
@@ -67,8 +61,6 @@ ___
 
 • `set` **fullScreen**(`inFull`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小
 
 
@@ -85,13 +77,9 @@ ___
 
 • `get` **layer**(): `number`
 
-**`Description`**
-
 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
-
-**`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
@@ -117,13 +105,9 @@ Layer层级
 
 • `set` **layer**(`inLayer`): `void`
 
-**`Description`**
-
 设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
-
-**`Example`**
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 ```ts
@@ -154,8 +138,6 @@ ___
 
 • `get` **rootCanvas**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取UI的根Canvas节点
 
 
@@ -171,8 +153,6 @@ ___
 
 • `get` **uiObject**(): [`Widget`](UI.Widget.md)
 
-**`Description`**
-
 获取脚本挂载的UI对象
 
 #### Returns
@@ -186,8 +166,6 @@ ___
 ### uiWidgetBase <Score text="uiWidgetBase" /> 
 
 • `get` **uiWidgetBase**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转化UIObject 为指定UserWidget对象
 
@@ -204,8 +182,6 @@ ___
 
 • `get` **visible**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取UI是否显示
 
 
@@ -216,8 +192,6 @@ ___
 返回是否可见
 
 • `set` **visible**(`inVisible`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，需要传递参数的可以使用setVisible方法
 
@@ -235,8 +209,6 @@ ___
 
 ▸ **destroy**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 销毁UI对象
 
 
@@ -246,8 +218,6 @@ ___
 ### detectDrag <Score text="detectDrag" /> 
 
 ▸ **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 触发DragDrop事件的检测
 
@@ -270,8 +240,6 @@ ___
 
 ▸ **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 如果事件检测通过就触发DragDrop事件的回复
 
 
@@ -293,8 +261,6 @@ ___
 ### newDragDrop <Score text="newDragDrop" /> 
 
 ▸ **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建DragDrop事件
 
@@ -321,8 +287,6 @@ ___
 
 ▸ **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数
 
 
@@ -339,8 +303,6 @@ ___
 ### addBehavior <Score text="addBehavior" /> 
 
 ▸ `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加一个全局的行为记录
 
@@ -359,8 +321,6 @@ ___
 
 ▸ `Static` **clearBehavior**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 清空全局的行为记录
 
 
@@ -370,8 +330,6 @@ ___
 ### getBehavior <Score text="getBehavior" /> 
 
 ▸ `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取一个全局的行为记录
 
@@ -393,8 +351,6 @@ ___
 ### removeBehavior <Score text="removeBehavior" /> 
 
 ▸ `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 移除一个全局的行为记录
 

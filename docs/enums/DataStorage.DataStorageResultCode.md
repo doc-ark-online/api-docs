@@ -2,8 +2,6 @@
 
 # DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
 
-**`Description`**
-
 数据储存返回代码
 
 ## Table of contents

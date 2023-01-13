@@ -2,8 +2,6 @@
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
-**`Description`**
-
 角色输入事件
 
 ## Table of contents
@@ -19,8 +17,6 @@
 ### toInputEvent <Score text="toInputEvent" /> 
 
 ▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 转化为 InputEvent
 

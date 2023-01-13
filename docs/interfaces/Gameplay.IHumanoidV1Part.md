@@ -2,8 +2,6 @@
 
 # IHumanoidV1Part <Badge type="tip" text="Interface" /> <Score text="IHumanoidV1Part" />
 
-**`Description`**
-
 人形对象V1部位
 
 ## Implemented by
@@ -23,8 +21,6 @@
 
 ▸ **getWholeBody**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取全身模型
 
 双端
@@ -40,8 +36,6 @@ ___
 ### setWholeBody <Score text="setWholeBody" /> 
 
 ▸ **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置全身模型
 

@@ -2,8 +2,6 @@
 
 # StringUtil <Badge type="tip" text="Namespace" /> <Score text="StringUtil" />
 
-**`Description`**
-
 字符串工具
 
 ## Table of contents
@@ -21,8 +19,6 @@
 
 ▸ **clipboardCopy**(`text`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 文本复制，将字符串复制到剪切板
 
 
@@ -39,8 +35,6 @@ ___
 
 ▸ **clipboardPaste**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 文本粘贴，获取剪切板的文本
 
 
@@ -56,12 +50,8 @@ ___
 
 ▸ **format**(`str`, `...param`): `string`
 
-**`Description`**
-
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
-
-**`Example`**
 
 使用示例:格式化字符串用法
 ```ts
@@ -87,8 +77,6 @@ ___
 ### isEmpty <Score text="isEmpty" /> 
 
 ▸ **isEmpty**(`str`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断字符串是否为空(null或"")
 

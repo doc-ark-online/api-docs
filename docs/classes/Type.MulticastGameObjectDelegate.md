@@ -2,8 +2,6 @@
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
-**`Description`**
-
 广播代理
 
 ## Table of contents
@@ -19,8 +17,6 @@
 ### add <Score text="add" /> 
 
 ▸ **add**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 添加回调函数
 
@@ -38,8 +34,6 @@ ___
 
 ▸ **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 触发代理事件
 
 
@@ -55,8 +49,6 @@ ___
 ### remove <Score text="remove" /> 
 
 ▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 删除回调函数
 

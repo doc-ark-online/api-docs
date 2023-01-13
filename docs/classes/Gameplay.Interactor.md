@@ -2,8 +2,6 @@
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
-**`Description`**
-
 交互物功能对象，正重新改版，新交互物 InteractiveObject
 
 ## Hierarchy
@@ -121,8 +119,6 @@
 
 • **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
-**`Description`**
-
 激活交互时执行绑定函数
 
 ___
@@ -131,8 +127,6 @@ ___
 
 • **onInteractorExit**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
-**`Description`**
-
 退出交互时执行绑定函数
 
 ___
@@ -140,8 +134,6 @@ ___
 ### serverSetShowDebugLog <Score text="serverSetShowDebugLog" /> 
 
 • `Private` **serverSetShowDebugLog**: `any`
-
-**`Description`**
 
 服务器设置显示debug日志
 
@@ -156,8 +148,6 @@ usage:是否显示debug日志
 ### convertStringToStanceGuid <Score text="convertStringToStanceGuid" /> 
 
 ▸ **convertStringToStanceGuid**(`stance`): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将姿态转换为GUID
 
@@ -178,8 +168,6 @@ usage:是否显示debug日志
 ### enterInteractiveState <Score text="enterInteractiveState" /> 
 
 ▸ **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 激活交互
 
@@ -202,8 +190,6 @@ ___
 
 ▸ **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 客户端请求退出交互
 
 
@@ -225,8 +211,6 @@ ___
 
 ▸ **getInteractiveState**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取该交互物的交互状态
 
 
@@ -240,8 +224,6 @@ true: 为交互中
 ### interactiveCharacter <Score text="interactiveCharacter" /> 
 
 ▸ **interactiveCharacter**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取和交互物发生交互的角色
 

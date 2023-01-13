@@ -2,8 +2,6 @@
 
 # PhysicsFulcrum <Badge type="tip" text="Class" /> <Score text="PhysicsFulcrum" />
 
-**`Description`**
-
 物理支撑点组件
 
 ## Hierarchy
@@ -112,8 +110,6 @@
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取启用状态
 
 #### Returns
@@ -123,8 +119,6 @@
 启用状态
 
 • `set` **enable**(`EnableState`): `void`
-
-**`Description`**
 
 设置启用状态
 
@@ -140,8 +134,6 @@
 
 • `get` **limitAngle**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取限制角度
 
 #### Returns
@@ -151,8 +143,6 @@
 限制角度
 
 • `set` **limitAngle**(`LimitAngle`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置限制角度
 

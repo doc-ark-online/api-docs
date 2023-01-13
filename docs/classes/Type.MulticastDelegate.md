@@ -2,8 +2,6 @@
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
-**`Description`**
-
 多播委托接口
 
 **`Effect`**
@@ -40,8 +38,6 @@
 
 ▸ **add**(`func`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 绑定代理函数
 
 
@@ -61,8 +57,6 @@ ___
 ### broadcast <Score text="broadcast" /> 
 
 ▸ **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 广播通知代理函数
 
@@ -84,8 +78,6 @@ ___
 
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 情况委托
 
 
@@ -95,8 +87,6 @@ ___
 ### remove <Score text="remove" /> 
 
 ▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 删除绑定代理函数
 

@@ -2,8 +2,6 @@
 
 # SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
 
-**`Description`**
-
 游泳区域
 
 ## Hierarchy
@@ -112,8 +110,6 @@
 ### inArea <Score text="inArea" /> 
 
 ▸ **inArea**(`player`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 当前Player是否在游泳区域内
 

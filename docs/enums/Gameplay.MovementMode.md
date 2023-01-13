@@ -2,8 +2,6 @@
 
 # MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 
-**`Description`**
-
 角色状态
 
 ## Table of contents

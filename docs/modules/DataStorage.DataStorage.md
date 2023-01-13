@@ -25,8 +25,6 @@ DataStorage
 
 ▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 异步获取自定义数据
 
 
@@ -47,8 +45,6 @@ ___
 ### asyncGetPlayerData <Score text="asyncGetPlayerData" /> 
 
 ▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步获取玩家数据
 
@@ -71,8 +67,6 @@ ___
 
 ▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 异步删除自定义数据
 
 
@@ -93,8 +87,6 @@ ___
 ### asyncRemovePlayerData <Score text="asyncRemovePlayerData" /> 
 
 ▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步删除用户数据
 
@@ -117,8 +109,6 @@ ___
 
 ▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 异步设置自定义数据
 
 
@@ -140,8 +130,6 @@ ___
 ### asyncSetPlayerData <Score text="asyncSetPlayerData" /> 
 
 ▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 异步设置自定义数据
 
@@ -171,8 +159,6 @@ ___
 
 ▸ **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置数据存储环境是否是临时的
 
 
@@ -188,8 +174,6 @@ ___
 ### sizeOfData <Score text="sizeOfData" /> 
 
 ▸ **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回data的当前大小。单位为bytes（字节）。
 

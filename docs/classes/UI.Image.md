@@ -2,8 +2,6 @@
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
-**`Description`**
-
 UI 图片
 
 ## Hierarchy
@@ -80,8 +78,6 @@ UI 图片
 
 • `get` **imageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图片的颜色
 
 
@@ -92,8 +88,6 @@ UI 图片
 图片的颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **imageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片颜色
 
@@ -113,8 +107,6 @@ ___
 
 • `get` **imageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图片绘制类型
 
 
@@ -125,8 +117,6 @@ ___
 图片绘制类型
 
 • `set` **imageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片绘制类型
 
@@ -144,8 +134,6 @@ ___
 
 • `get` **imageGuid**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图片id
 
 
@@ -156,8 +144,6 @@ ___
 图片id
 
 • `set` **imageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片id
 
@@ -175,8 +161,6 @@ ___
 
 • `get` **imageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图片大小
 
 
@@ -187,8 +171,6 @@ ___
 图片大小
 
 • `set` **imageSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片大小
 
@@ -205,8 +187,6 @@ ___
 
 • `get` **margin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图片边距
 
 
@@ -217,8 +197,6 @@ ___
 图片边距
 
 • `set` **margin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片的边距
 
@@ -236,8 +214,6 @@ ___
 ### asyncExportBlendBrush <Score text="asyncExportBlendBrush" /> 
 
 ▸ **asyncExportBlendBrush**(): `Promise`<`string`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 将融合的图片导出为一张
 
@@ -259,8 +235,6 @@ ___
 
 ▸ **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取显示资源的ICON
 
 
@@ -274,8 +248,6 @@ ___
 ### setImageByAssetIconData <Score text="setImageByAssetIconData" /> 
 
 ▸ **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置显示资源的ICON
 
@@ -292,8 +264,6 @@ ___
 ### setImageByBlendMode <Score text="setImageByBlendMode" /> 
 
 ▸ **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 将两张图片融合叠加显示在图片组件上
 
@@ -312,8 +282,6 @@ ___
 
 ▸ **setImageByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置图片样式为本地图片文件
 
 
@@ -329,8 +297,6 @@ ___
 ### setImageByURL <Score text="setImageByURL" /> 
 
 ▸ **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接
 
@@ -349,8 +315,6 @@ ___
 
 ▸ **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505
 
 
@@ -366,8 +330,6 @@ ___
 ### setImageColorDecimal <Score text="setImageColorDecimal" /> 
 
 ▸ **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图片颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -387,8 +349,6 @@ ___
 ### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 Image 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

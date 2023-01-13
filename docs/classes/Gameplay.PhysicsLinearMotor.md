@@ -2,8 +2,6 @@
 
 # PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
-**`Description`**
-
 物理线性发动机组件
 
 ## Hierarchy
@@ -45,8 +43,6 @@
 
 • `get` **enable**(): `boolean`
 
-**`Description`**
-
 获取激活状态
 
 #### Returns
@@ -56,8 +52,6 @@
 激活状态
 
 • `set` **enable**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置激活状态
 
@@ -75,8 +69,6 @@
 
 • `get` **maxVelocity**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 获取最大速度
 
 #### Returns
@@ -86,8 +78,6 @@
 最大速度
 
 • `set` **maxVelocity**(`maxSpeed`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置最大速度
 
@@ -105,8 +95,6 @@
 
 • `get` **strength**(): `number`
 
-**`Description`**
-
 获取加速度
 
 #### Returns
@@ -116,8 +104,6 @@
 加速度
 
 • `set` **strength**(`acceleration`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置加速度
 

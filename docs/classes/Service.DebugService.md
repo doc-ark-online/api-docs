@@ -4,8 +4,6 @@
 
 **`Instance`**
 
-**`Description`**
-
 debug调试服务
 
 ::: warning Precautions
@@ -27,8 +25,6 @@ debug调试服务
 
 ▸ `Static` **getHeapStatistics**(): `HeapStatistics` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前项目所有TS脚本内存占用
 
 
@@ -43,8 +39,6 @@ ___
 ### getInstance <Score text="getInstance" /> 
 
 ▸ `Static` **getInstance**(): [`DebugService`](Service.DebugService.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取debug调试服务全局实例
 

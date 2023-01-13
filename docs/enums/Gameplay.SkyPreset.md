@@ -2,8 +2,6 @@
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 
-**`Description`**
-
 天空球预设枚举
 
 ## Table of contents

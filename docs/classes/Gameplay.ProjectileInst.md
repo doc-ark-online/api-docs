@@ -2,8 +2,6 @@
 
 # ProjectileInst <Badge type="tip" text="Class" /> <Score text="ProjectileInst" />
 
-**`Description`**
-
 投掷物 v2 实例
 
 ::: warning Precautions

@@ -29,8 +29,6 @@
 
 ▸ **bindButton**(`key`, `Widget`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 绑定按键
 
 
@@ -47,8 +45,6 @@ ___
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
 
 ▸ **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将二维屏幕位置转换为世界空间三维位置和方向
 
@@ -72,8 +68,6 @@ ___
 
 ▸ **enableCursorInteractWithUI**(`canInteract`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置鼠标指针是否能与UI交互
 
 客户端生效
@@ -90,8 +84,6 @@ ___
 ### enableCursorLock <Score text="enableCursorLock" /> 
 
 ▸ **enableCursorLock**(`isEnableMouseLock`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
@@ -110,8 +102,6 @@ ___
 
 ▸ **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取鼠标指针是否能与UI交互
 
 客户端生效
@@ -127,8 +117,6 @@ ___
 ### isCursorLockEnabled <Score text="isCursorLockEnabled" /> 
 
 ▸ **isCursorLockEnabled**(): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
 
@@ -146,8 +134,6 @@ ___
 
 ▸ **isCursorLocked**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取鼠标指针是否锁定
 
 客户端生效
@@ -164,8 +150,6 @@ ___
 
 ▸ **isCursorVisible**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取鼠标指针是否可见
 
 客户端生效
@@ -181,8 +165,6 @@ ___
 ### onKeyDown <Score text="onKeyDown" /> 
 
 ▸ **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 键盘输入事件-点击
 
@@ -206,8 +188,6 @@ ___
 
 ▸ **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 键盘输入事件-按压
 
 
@@ -229,8 +209,6 @@ ___
 ### onKeyUp <Score text="onKeyUp" /> 
 
 ▸ **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 键盘输入事件-抬起
 
@@ -254,8 +232,6 @@ ___
 
 ▸ **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取角色在世界中的位置，投射到屏幕上
 
 
@@ -278,8 +254,6 @@ ___
 
 ▸ **setCursorLocked**(`isLock`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置鼠标指针是否锁定
 
 客户端生效
@@ -296,8 +270,6 @@ ___
 ### setCursorVisible <Score text="setCursorVisible" /> 
 
 ▸ **setCursorVisible**(`isVisible`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置鼠标指针是否可见
 
@@ -316,8 +288,6 @@ ___
 
 ▸ **setMouseLockable**(`can`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置是否可以锁定鼠标
 
 
@@ -333,8 +303,6 @@ ___
 ### unbindButton <Score text="unbindButton" /> 
 
 ▸ **unbindButton**(`key`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
 

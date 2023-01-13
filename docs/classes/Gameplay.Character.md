@@ -2,8 +2,6 @@
 
 # Character <Badge type="tip" text="Class" /> <Score text="Character" />
 
-**`Description`**
-
 Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem，是由玩家控制的角色，通常被内置的输入系统所操作
              Character无法被用户主动实例化，根据当前Player的数量由世界自动生成，你可以在Player上获取Character，通过getAllPlayers可以获取到
              你可以在场景的Player面板中修改Character的初始化配置
@@ -163,8 +161,6 @@ Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem�
 
 • `get` **cameraSystem**(): [`CameraSystem`](Gameplay.CameraSystem.md)
 
-**`Description`**
-
 获得摄像机系统
 
 #### Returns
@@ -175,8 +171,6 @@ Character拥有CharacterBase的所有功能，并且额外附带了CameraSystem�
 ### onSkill1Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill1Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 技能1触发时调用委托
 
@@ -190,8 +184,6 @@ ___
 
 • `get` **onSkill2Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 技能2触发时调用委托
 
 #### Returns
@@ -203,8 +195,6 @@ ___
 ### onSkill3Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill3Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 技能3触发时调用委托
 
@@ -218,8 +208,6 @@ ___
 
 • `get` **onSkill4Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 技能4触发时调用委托
 
 #### Returns
@@ -231,8 +219,6 @@ ___
 ### onSkill5Triggered <Score text="onSkill" /> 
 
 • `get` **onSkill5Triggered**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-**`Description`**
 
 技能5触发时调用委托
 

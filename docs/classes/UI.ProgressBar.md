@@ -2,8 +2,6 @@
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
-**`Description`**
-
 UI进度条
 
 ## Hierarchy
@@ -89,8 +87,6 @@ UI进度条
 
 • `get` **backgroundImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取背景图片颜色
 
 
@@ -101,8 +97,6 @@ UI进度条
 背景图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **backgroundImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置背景图片颜色
 
@@ -120,8 +114,6 @@ ___
 
 • `get` **backgroundImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取背景图片绘制类型
 
 
@@ -132,8 +124,6 @@ ___
 背景图片绘制类型
 
 • `set` **backgroundImageDrawType**(`InDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置背景图片绘制类型
 
@@ -151,8 +141,6 @@ ___
 
 • `get` **backgroundImageGuid**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取背景图片id
 
 
@@ -163,8 +151,6 @@ ___
 背景图片id
 
 • `set` **backgroundImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置进度条背景图片
 
@@ -184,8 +170,6 @@ ___
 
 • `get` **backgroundImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取进度条背景图片边距
 
 
@@ -196,8 +180,6 @@ ___
 进度条背景图片边距
 
 • `set` **backgroundImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置进度条背景图片边距
 
@@ -215,8 +197,6 @@ ___
 
 • `get` **backgroundImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取背景图片大小
 
 
@@ -227,8 +207,6 @@ ___
 图片大小
 
 • `set` **backgroundImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置背景图片大小
 
@@ -245,8 +223,6 @@ ___
 
 • `get` **currentValue**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前值
 
 
@@ -257,8 +233,6 @@ ___
 当前值
 
 • `set` **currentValue**(`inValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前值
 
@@ -277,8 +251,6 @@ void
 
 • `get` **fillImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取填充图片颜色
 
 
@@ -289,8 +261,6 @@ void
 填充图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **fillImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置填充图片颜色
 
@@ -308,8 +278,6 @@ ___
 
 • `get` **fillImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取填充图片绘制类型
 
 只在客户端调用生效\
@@ -321,8 +289,6 @@ ___
 填充图片绘制类型
 
 • `set` **fillImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置填充图片绘制类型
 
@@ -340,8 +306,6 @@ ___
 
 • `get` **fillImageGuid**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取填充区图片id
 
 
@@ -352,8 +316,6 @@ ___
 填充区图片id
 
 • `set` **fillImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置进度条图片
 
@@ -373,8 +335,6 @@ ___
 
 • `get` **fillImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取进度条图片边距
 
 
@@ -385,8 +345,6 @@ ___
 进度条图片边距
 
 • `set` **fillImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置进度条图片边距
 
@@ -404,8 +362,6 @@ ___
 
 • `get` **fillImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取填充图片大小
 
 
@@ -416,8 +372,6 @@ ___
 图片大小
 
 • `set` **fillImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置填充图片大小
 
@@ -435,8 +389,6 @@ ___
 
 • `get` **fillType**(): [`ProgressBarFillType`](../enums/UI.ProgressBarFillType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取进度条填充的方式
 
 
@@ -447,8 +399,6 @@ ___
 进度条填充
 
 • `set` **fillType**(`inType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置进度条填充的方式
 
@@ -467,8 +417,6 @@ void
 
 • `get` **isRoundedToInt**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前数值是否取整
 
 
@@ -479,8 +427,6 @@ void
 当前数值是否取整
 
 • `set` **isRoundedToInt**(`inToInt`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前数值是否取整
 
@@ -499,8 +445,6 @@ void
 
 • `get` **onSliderValueChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 Slider值变化事件
 
 
@@ -515,8 +459,6 @@ Slider值变化事件
 
 • `get` **percent**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前百分比
 
 
@@ -527,8 +469,6 @@ Slider值变化事件
 当前百分比
 
 • `set` **percent**(`inPercent`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前百分比
 
@@ -547,8 +487,6 @@ void
 
 • `get` **sliderMaxValue**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取拖动条最大值
 
 
@@ -559,8 +497,6 @@ void
 拖动条最大值
 
 • `set` **sliderMaxValue**(`inValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置拖动条的最大值
 
@@ -580,8 +516,6 @@ ___
 
 • `get` **sliderMinValue**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取拖动条最小值
 
 
@@ -592,8 +526,6 @@ ___
 拖动条最小值
 
 • `set` **sliderMinValue**(`inValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置拖动条的最小值
 
@@ -612,8 +544,6 @@ void
 
 • `get` **thumbImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取滑块图片颜色
 
 
@@ -624,8 +554,6 @@ void
 滑块图片颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **thumbImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滑块图片颜色
 
@@ -643,8 +571,6 @@ ___
 
 • `get` **thumbImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取滑块图片绘制类型
 
 
@@ -655,8 +581,6 @@ ___
 滑块图片绘制类型
 
 • `set` **thumbImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滑块图片绘制类型
 
@@ -674,8 +598,6 @@ ___
 
 • `get` **thumbImageGuid**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取填充区图片id
 
 
@@ -686,8 +608,6 @@ ___
 填充区图片id
 
 • `set` **thumbImageGuid**(`inGUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置拖动条的样式
 
@@ -707,8 +627,6 @@ ___
 
 • `get` **thumbImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取拖动条图片边距
 
 
@@ -719,8 +637,6 @@ ___
 拖动条图片边距
 
 • `set` **thumbImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置拖动条图片边距
 
@@ -738,8 +654,6 @@ ___
 
 • `get` **thumbImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取滑块图片大小
 
 
@@ -750,8 +664,6 @@ ___
 图片大小
 
 • `set` **thumbImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置滑块图片大小
 
@@ -769,8 +681,6 @@ ___
 ### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`ProgressBar`](UI.ProgressBar.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 ProgressBar 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
 

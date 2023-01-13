@@ -2,8 +2,6 @@
 
 # HumanoidV2ShoePart <Badge type="tip" text="Class" /> <Score text="HumanoidV2ShoePart" />
 
-**`Description`**
-
 人形对象V2鞋子部位接口
 
 ## Implements
@@ -44,8 +42,6 @@
 
 ▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取衣服区域数量
 
 客户端生效
@@ -65,8 +61,6 @@ ___
 ### getColor <Score text="getColor" /> 
 
 ▸ **getColor**(`areaIndex`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取颜色
 
@@ -94,8 +88,6 @@ ___
 
 ▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取图案方向
 
 客户端生效
@@ -121,8 +113,6 @@ ___
 ### getDesignColor <Score text="getDesignColor" /> 
 
 ▸ **getDesignColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取图案颜色
 
@@ -150,8 +140,6 @@ ___
 
 ▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取衣服图案
 
 客户端生效
@@ -178,8 +166,6 @@ ___
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取鞋子模型
 
 双端
@@ -199,8 +185,6 @@ ___
 ### getPatternAngle <Score text="getPatternAngle" /> 
 
 ▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹旋转
 
@@ -228,8 +212,6 @@ ___
 
 ▸ **getPatternColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹颜色
 
 客户端生效
@@ -255,8 +237,6 @@ ___
 ### getPatternHeight <Score text="getPatternHeight" /> 
 
 ▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹纵向拉伸
 
@@ -284,8 +264,6 @@ ___
 
 ▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹显示程度
 
 客户端生效
@@ -311,8 +289,6 @@ ___
 ### getPatternWidth <Score text="getPatternWidth" /> 
 
 ▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取花纹横向拉伸
 
@@ -340,8 +316,6 @@ ___
 
 ▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取花纹
 
 客户端生效
@@ -368,8 +342,6 @@ ___
 
 ▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置颜色
 
 sync = false:客户端;
@@ -393,8 +365,6 @@ ___
 ### setDesignAngle <Score text="setDesignAngle" /> 
 
 ▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置图案方向
 
@@ -420,8 +390,6 @@ ___
 
 ▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置图案颜色
 
 sync = false:客户端;
@@ -446,8 +414,6 @@ ___
 
 ▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置衣服图案
 
 sync = false:客户端;
@@ -471,8 +437,6 @@ ___
 ### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置鞋子模型
 
@@ -503,8 +467,6 @@ ___
 
 ▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹旋转
 
 sync = false:客户端;
@@ -528,8 +490,6 @@ ___
 ### setPatternColor <Score text="setPatternColor" /> 
 
 ▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹颜色
 
@@ -555,8 +515,6 @@ ___
 
 ▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹纵向拉伸
 
 sync = false:客户端;
@@ -580,8 +538,6 @@ ___
 ### setPatternIntensity <Score text="setPatternIntensity" /> 
 
 ▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹显示程度
 
@@ -607,8 +563,6 @@ ___
 
 ▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置花纹横向拉伸
 
 sync = false:客户端;
@@ -632,8 +586,6 @@ ___
 ### setTexture <Score text="setTexture" /> 
 
 ▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置花纹
 

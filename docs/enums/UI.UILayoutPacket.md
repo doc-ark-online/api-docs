@@ -2,8 +2,6 @@
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 
-**`Description`**
-
 自动布局节点排列规则
 
 ## Table of contents

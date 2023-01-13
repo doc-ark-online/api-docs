@@ -2,8 +2,6 @@
 
 # AdsState <Badge type="tip" text="Enumeration" /> <Score text="AdsState" />
 
-**`Description`**
-
 广告状态
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
-**`Description`**
-
 UI的输入框
 
 ## Hierarchy
@@ -101,8 +99,6 @@ UI的输入框
 
 • `get` **autoWrap**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否自动换行
 
 
@@ -113,8 +109,6 @@ UI的输入框
 是否自动换行
 
 • `set` **autoWrap**(`inAutoWrap`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置自动换行
 
@@ -131,8 +125,6 @@ UI的输入框
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体内容颜色
 
 
@@ -143,8 +135,6 @@ UI的输入框
 字体内容颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体内容颜色
 
@@ -161,8 +151,6 @@ UI的输入框
 
 • `get` **errorText**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取设置错误提示
 
 
@@ -173,8 +161,6 @@ UI的输入框
 错误提示
 
 • `set` **errorText**(`inText`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置错误提示
 
@@ -192,8 +178,6 @@ ___
 
 • `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取当前的字体的颜色
 
 
@@ -204,8 +188,6 @@ ___
 字体颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置文本颜色
 
@@ -223,8 +205,6 @@ ___
 
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体间距
 
 
@@ -241,8 +221,6 @@ ___
 
 • `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取体间距
 
 
@@ -258,8 +236,6 @@ ___
 
 • `get` **fontSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体大小
 
 
@@ -270,8 +246,6 @@ ___
 字体大小
 
 • `set` **fontSize**(`inSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体大小
 
@@ -289,8 +263,6 @@ ___
 
 • `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体字形
 
 
@@ -301,8 +273,6 @@ ___
 字体字形
 
 • `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体字形
 
@@ -319,8 +289,6 @@ ___
 
 • `get` **hintString**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取提示文本内容
 
 
@@ -331,8 +299,6 @@ ___
 提示文本内容
 
 • `set` **hintString**(`inHintString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置提示内容
 
@@ -350,8 +316,6 @@ ___
 
 • `get` **inputTextLimit**(): [`InputTextLimit`](../enums/UI.InputTextLimit.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取输入框的输入格式
 
 
@@ -362,8 +326,6 @@ ___
 InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 }`
 
 • `set` **inputTextLimit**(`inLimit`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 显示输入框的输入格式
 
@@ -380,8 +342,6 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 
 • `get` **onTextChanged**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <Badge type="tip" text="other" />
 
-**`Description`**
-
 文本改变事件
 
 
@@ -396,8 +356,6 @@ ___
 ### onTextCommitted <Score text="onTextCommitted" /> 
 
 • `get` **onTextCommitted**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/UI.TextCommit.md)) => `void`\> <Badge type="tip" text="other" />
-
-**`Description`**
 
 文本提交事件
 
@@ -414,8 +372,6 @@ ___
 
 • `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置字体描边颜色
 
 
@@ -426,8 +382,6 @@ ___
 字体描边颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取字体描边颜色
 
@@ -445,8 +399,6 @@ ___
 
 • `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体描边宽度
 
 
@@ -457,8 +409,6 @@ ___
 字体描边宽度
 
 • `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体描边宽度
 
@@ -475,8 +425,6 @@ ___
 
 • `get` **readOnlyEnable**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取可读性
 
 
@@ -487,8 +435,6 @@ ___
 是否可读
 
 • `set` **readOnlyEnable**(`inValue`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置可读性
 
@@ -505,8 +451,6 @@ ___
 
 • `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体阴影颜色
 
 
@@ -517,8 +461,6 @@ ___
 字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
 • `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置阴影颜色
 
@@ -536,8 +478,6 @@ ___
 
 • `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体阴影偏移
 
 
@@ -548,8 +488,6 @@ ___
 字体阴影偏移
 
 • `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置阴影偏移
 
@@ -566,8 +504,6 @@ ___
 
 • `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否开启字体删除线
 
 
@@ -578,8 +514,6 @@ ___
 是否开启字体删除线
 
 • `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体删除线
 
@@ -597,8 +531,6 @@ ___
 
 • `get` **text**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取文本内容
 
 
@@ -609,8 +541,6 @@ ___
 文本内容
 
 • `set` **text**(`inText`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置文本内容
 
@@ -628,8 +558,6 @@ ___
 
 • `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体对齐方式
 
 
@@ -640,8 +568,6 @@ ___
 字体对齐方式
 
 • `set` **textAlign**(`inTextJustify`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体对齐方式
 
@@ -659,8 +585,6 @@ ___
 
 • `get` **textHeight**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取文本的高度(文本内容整体的高度，与组件大小无关，受字体属性影响)
 
 只在客户端调用生效, 控件初始化完成后调用才准确生效，需要等待控件渲染完成
@@ -677,8 +601,6 @@ ___
 
 • `get` **textLengthLimit**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取输入框的字数限制,字数限制不适用与邮箱格式和密码格式
 
 
@@ -689,8 +611,6 @@ ___
 获取输入框的字数限制
 
 • `set` **textLengthLimit**(`inTextLength`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置当前输入框的字数限制
 
@@ -708,8 +628,6 @@ ___
 
 • `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)
 
 
@@ -725,8 +643,6 @@ ___
 
 • `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取字体垂直对齐方式
 
 
@@ -737,8 +653,6 @@ ___
 字体垂直对齐方式
 
 • `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置字体垂直对齐方式
 
@@ -755,8 +669,6 @@ ___
 
 • `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取是否开启字体下划线
 
 
@@ -767,8 +679,6 @@ ___
 true:开启，false:关闭
 
 • `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置是否开启字体下划线
 
@@ -787,8 +697,6 @@ true:开启，false:关闭
 
 ▸ **deFocus**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置输入框失焦状态，取消输入状态
 
 
@@ -798,8 +706,6 @@ true:开启，false:关闭
 
 ▸ **focus**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置输入框聚焦状态，进入可输入状态
 
 
@@ -808,8 +714,6 @@ true:开启，false:关闭
 ### setContentColorByHex <Score text="setContentColorByHex" /> 
 
 ▸ **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置输入框的内容颜色 指定Hex的颜色文本设定颜色 #05050505
 
@@ -826,8 +730,6 @@ ___
 ### setContentColorDecimal <Score text="setContentColorDecimal" /> 
 
 ▸ **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置输入框的内容颜色 指定R、G、B、A设置颜色 0 ~255
 
@@ -848,8 +750,6 @@ ___
 
 ▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置文本颜色,指定Hex的颜色文本设定颜色 #05050505
 
 
@@ -865,8 +765,6 @@ ___
 ### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
 ▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置文本颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -887,8 +785,6 @@ ___
 
 ▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置阴影颜色,指定Hex的颜色文本设定颜色 #05050505
 
 
@@ -904,8 +800,6 @@ ___
 ### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
 ▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置阴影颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -926,8 +820,6 @@ ___
 
 ▸ **setTextJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置输入框的对齐方式
 
 
@@ -943,8 +835,6 @@ ___
 ### newObject <Score text="newObject" /> 
 
 ▸ `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

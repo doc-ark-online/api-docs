@@ -2,8 +2,6 @@
 
 # EquipmentStatus <Badge type="tip" text="Enumeration" /> <Score text="EquipmentStatus" />
 
-**`Description`**
-
 装备状态
 
 ## Table of contents

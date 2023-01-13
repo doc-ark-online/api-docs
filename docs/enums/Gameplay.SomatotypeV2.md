@@ -2,8 +2,6 @@
 
 # SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
 
-**`Description`**
-
 角色体型
 
 ## Table of contents

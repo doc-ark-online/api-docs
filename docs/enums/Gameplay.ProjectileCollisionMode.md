@@ -2,8 +2,6 @@
 
 # ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
 
-**`Description`**
-
 投掷物碰撞反馈模式
 
 ## Table of contents

@@ -2,8 +2,6 @@
 
 # PhysicsConstraintBase <Badge type="tip" text="Class" /> <Score text="PhysicsConstraintBase" />
 
-**`Description`**
-
 物理约束基类对象
 
 ::: warning Precautions
@@ -136,8 +134,6 @@
 
 • `get` **constraintTarget1**(): `string`
 
-**`Description`**
-
 获取约束对象1
 
 #### Returns
@@ -145,8 +141,6 @@
 `string`
 
 • `set` **constraintTarget1**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置约束对象1
 
@@ -165,8 +159,6 @@ ___
 
 • `get` **constraintTarget2**(): `string`
 
-**`Description`**
-
 获取约束对象2
 
 #### Returns
@@ -174,8 +166,6 @@ ___
 `string`
 
 • `set` **constraintTarget2**(`GUID`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置约束对象2
 

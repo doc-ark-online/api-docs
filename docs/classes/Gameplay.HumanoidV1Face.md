@@ -2,8 +2,6 @@
 
 # HumanoidV1Face <Badge type="tip" text="Class" /> <Score text="HumanoidV1Face" />
 
-**`Description`**
-
 人形对象V1脸部接口
 
 ## Implements
@@ -22,8 +20,6 @@
 ### getMesh <Score text="getMesh" /> 
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取脸部模型
 
@@ -44,8 +40,6 @@ ___
 ### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置脸部模型
 

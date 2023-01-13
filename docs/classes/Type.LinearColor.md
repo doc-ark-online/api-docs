@@ -2,8 +2,6 @@
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
-**`Description`**
-
 线性RGBA颜色
 
 ## Table of contents
@@ -39,8 +37,6 @@
 | **[makeFromHSV](Type.LinearColor.md#makefromhsv)**(`number`, `number`, `number`, [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将字节色调饱和度亮度转换为 LinearColor|
 | **[random](Type.LinearColor.md#random)**([`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色|
 
-**`Description`**
-
 用给定的 r, g, b 值构建一个新的 Color
 
 #### Parameters
@@ -52,8 +48,6 @@
 | `b` | `number` | b |
 
 • **new LinearColor**(`r`, `g`, `b`, `a`)
-
-**`Description`**
 
 用给定的 r, g, b ,a 值构建一个新的 Color
 
@@ -68,8 +62,6 @@
 
 • **new LinearColor**(`v`)
 
-**`Description`**
-
 用给定的 Vector 对象构建一个新的 LinearColor
 
 #### Parameters
@@ -79,8 +71,6 @@
 | `v` | [`Vector`](Type.Vector.md) | Vector 对象 |
 
 • **new LinearColor**(`c`)
-
-**`Description`**
 
 用给定的 LinearColor 构建一个新的 LinearColor
 
@@ -96,8 +86,6 @@
 
 • `get` **a**(): `number`
 
-**`Description`**
-
 获取当前 LinearColor 的 a 值
 
 #### Returns
@@ -105,8 +93,6 @@
 `number`
 
 • `set` **a**(`v`): `void`
-
-**`Description`**
 
 设置当前 LinearColor 的 a 值
 
@@ -129,8 +115,6 @@ ___
 
 • `get` **b**(): `number`
 
-**`Description`**
-
 获取当前 LinearColor 的 b 值
 
 #### Returns
@@ -138,8 +122,6 @@ ___
 `number`
 
 • `set` **b**(`v`): `void`
-
-**`Description`**
 
 设置当前 LinearColor 的 b 值
 
@@ -162,8 +144,6 @@ ___
 
 • `get` **g**(): `number`
 
-**`Description`**
-
 获取当前 LinearColor 的 g 值
 
 #### Returns
@@ -171,8 +151,6 @@ ___
 `number`
 
 • `set` **g**(`v`): `void`
-
-**`Description`**
 
 设置当前 LinearColor 的 g 值 颜色值的有效范围是
 
@@ -195,8 +173,6 @@ ___
 
 • `get` **r**(): `number`
 
-**`Description`**
-
 获取当前 LinearColor 的 r 值
 
 #### Returns
@@ -204,8 +180,6 @@ ___
 `number`
 
 • `set` **r**(`v`): `void`
-
-**`Description`**
 
 设置当前 LinearColor 的 r 值
 
@@ -228,8 +202,6 @@ ___
 
 • `Static` `get` **black**(): [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 黑色 (0, 0, 0, 1)
 
 #### Returns
@@ -241,8 +213,6 @@ ___
 ### blue <Score text="blue" /> 
 
 • `Static` `get` **blue**(): [`LinearColor`](Type.LinearColor.md)
-
-**`Description`**
 
 蓝色 (0, 0, 1, 1)
 
@@ -256,8 +226,6 @@ ___
 
 • `Static` `get` **gray**(): [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 灰色 (0.5, 0.5, 0.5, 1)
 
 #### Returns
@@ -269,8 +237,6 @@ ___
 ### green <Score text="green" /> 
 
 • `Static` `get` **green**(): [`LinearColor`](Type.LinearColor.md)
-
-**`Description`**
 
 绿色 (0, 1, 0, 1)
 
@@ -284,8 +250,6 @@ ___
 
 • `Static` `get` **red**(): [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 红色 (1, 0, 0, 1)
 
 #### Returns
@@ -297,8 +261,6 @@ ___
 ### white <Score text="white" /> 
 
 • `Static` `get` **white**(): [`LinearColor`](Type.LinearColor.md)
-
-**`Description`**
 
 白色 (1, 1, 1, 1)
 
@@ -312,8 +274,6 @@ ___
 
 • `Static` `get` **yellow**(): [`LinearColor`](Type.LinearColor.md)
 
-**`Description`**
-
 黄色 (1, 1, 0, 1)
 
 #### Returns
@@ -325,8 +285,6 @@ ___
 ### addition <Score text="addition" /> 
 
 ▸ **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 颜色值相加
 
@@ -356,8 +314,6 @@ ___
 
 ▸ **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 颜色值相除
 
 
@@ -385,8 +341,6 @@ ___
 ### equality <Score text="equality" /> 
 
 ▸ **equality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断两个颜色值是否相等
 
@@ -416,8 +370,6 @@ ___
 
 ▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 用数据填充对象
 
 
@@ -433,8 +385,6 @@ ___
 ### inequality <Score text="inequality" /> 
 
 ▸ **inequality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 判断两个颜色值是否不相等
 
@@ -464,8 +414,6 @@ ___
 
 ▸ **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 颜色值相乘
 
 
@@ -493,8 +441,6 @@ ___
 ### subtraction <Score text="subtraction" /> 
 
 ▸ **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 颜色值相减
 
@@ -524,8 +470,6 @@ ___
 
 ▸ **toString**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 以字符串的形式输出对象属性
 
 
@@ -540,8 +484,6 @@ ___
 ### colorHexToLinearColor <Score text="colorHexToLinearColor" /> 
 
 ▸ `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将 HexColor 转化为 LinearColor
 
@@ -570,8 +512,6 @@ ___
 ### colorHsvToLinearColor <Score text="colorHsvToLinearColor" /> 
 
 ▸ `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将 HsvColor 转化为 LinearColor
 
@@ -603,8 +543,6 @@ ___
 
 ▸ `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 转换 Color
 
 
@@ -630,8 +568,6 @@ ___
 
 ▸ `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 用数据生成一个新的对象
 
 
@@ -652,8 +588,6 @@ ___
 ### makeFromHSV <Score text="makeFromHSV" /> 
 
 ▸ `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 将字节色调饱和度亮度转换为 LinearColor
 
@@ -684,8 +618,6 @@ ___
 ### random <Score text="random" /> 
 
 ▸ `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色
 

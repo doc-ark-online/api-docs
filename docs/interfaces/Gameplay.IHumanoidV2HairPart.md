@@ -2,8 +2,6 @@
 
 # IHumanoidV2HairPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HairPart" />
 
-**`Description`**
-
 人形对象V2部位
 
 ## Hierarchy
@@ -47,8 +45,6 @@
 
 ▸ **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发颜色
 
 客户端生效
@@ -64,8 +60,6 @@ ___
 ### getGradientColor <Score text="getGradientColor" /> 
 
 ▸ **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发渐变染色
 
@@ -83,8 +77,6 @@ ___
 
 ▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发渐变区域
 
 客户端生效
@@ -100,8 +92,6 @@ ___
 ### getHighlightColor <Score text="getHighlightColor" /> 
 
 ▸ **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发高光颜色
 
@@ -119,8 +109,6 @@ ___
 
 ▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发高光形状
 
 客户端生效
@@ -135,8 +123,6 @@ GUID
 ### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发颜色
 
@@ -157,8 +143,6 @@ ___
 
 ▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置头发渐变染色
 
 sync = false:客户端;
@@ -177,8 +161,6 @@ ___
 ### setGradientIntensity <Score text="setGradientIntensity" /> 
 
 ▸ **setGradientIntensity**(`intensity`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发渐变区域
 
@@ -199,8 +181,6 @@ ___
 
 ▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置头发高光颜色
 
 sync = false:客户端;
@@ -219,8 +199,6 @@ ___
 ### setHighlightMask <Score text="setHighlightMask" /> 
 
 ▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发高光形状
 

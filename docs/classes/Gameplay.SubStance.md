@@ -2,11 +2,7 @@
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
-**`Description`**
-
 二级姿态
-
-**`Example`**
 
 使用示例: 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态.
 ```ts
@@ -45,8 +41,6 @@ this.stanceProxy.stop();
 :::
 
 
-**`Description`**
-
 构造函数
 
 **`Effect`**
@@ -66,8 +60,6 @@ this.stanceProxy.stop();
 
 • `get` **blendMode**(): [`StanceBlendMode`](../enums/Gameplay.StanceBlendMode.md)
 
-**`Description`**
-
 姿态的混合模式
 
 ::: warning Precautions
@@ -79,8 +71,6 @@ this.stanceProxy.stop();
 
 :::
 
-**`Example`**
-
 使用示例:设置混合模式为只混合下半身
 ```ts
 stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
@@ -91,8 +81,6 @@ stanceProxy.blendMode = Gameplay.StanceBlendMode.BlendLower;
 [`StanceBlendMode`](../enums/Gameplay.StanceBlendMode.md)
 
 • `set` **blendMode**(`newBlendMode`): `void`
-
-**`Description`**
 
 姿态的混合模式
 

@@ -2,8 +2,6 @@
 
 # SkyLight <Badge type="tip" text="Class" /> <Score text="SkyLight" />
 
-**`Description`**
-
 环境光
 
 ## Hierarchy
@@ -112,8 +110,6 @@
 
 • `get` **intensity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取强度范围
 
 
@@ -124,8 +120,6 @@
 返回强度范围值
 
 • `set` **intensity**(`newIntensityScale`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置强度范围的值
 
@@ -143,8 +137,6 @@ ___
 
 • `get` **lightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取天空光的灯光颜色
 
 
@@ -155,8 +147,6 @@ ___
 天空光的灯光颜色
 
 • `set` **lightColor**(`newLightColor`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置天空光的灯光颜色
 

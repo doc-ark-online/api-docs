@@ -2,8 +2,6 @@
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
-**`Description`**
-
 基础的边距，提供4个方向的数值修改
 
 ## Table of contents
@@ -14,8 +12,6 @@
 | **[left](UI.Margin.md#left)**: `number` <br> 左|
 | **[right](UI.Margin.md#right)**: `number` <br> 右|
 | **[top](UI.Margin.md#top)**: `number` <br> 上|
-
-**`Description`**
 
 使用一个值初始化四个值的构造方法
 
@@ -29,8 +25,6 @@
 | `In` | `number` | 初始化值 |
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
-
-**`Description`**
 
 对每个值赋值的构造方法
 
@@ -49,8 +43,6 @@
 
 • **bottom**: `number`
 
-**`Description`**
-
 下
 
 ___
@@ -58,8 +50,6 @@ ___
 ### left <Score text="left" /> 
 
 • **left**: `number`
-
-**`Description`**
 
 左
 
@@ -69,8 +59,6 @@ ___
 
 • **right**: `number`
 
-**`Description`**
-
 右
 
 ___
@@ -78,7 +66,5 @@ ___
 ### top <Score text="top" /> 
 
 • **top**: `number`
-
-**`Description`**
 
 上

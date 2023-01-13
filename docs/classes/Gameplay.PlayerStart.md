@@ -2,8 +2,6 @@
 
 # PlayerStart <Badge type="tip" text="Class" /> <Score text="PlayerStart" />
 
-**`Description`**
-
 玩家起始
 
 ## Hierarchy

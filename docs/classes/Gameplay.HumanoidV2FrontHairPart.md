@@ -2,8 +2,6 @@
 
 # HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2FrontHairPart" />
 
-**`Description`**
-
 人形对象V2前发部位接口
 
 ## Implements
@@ -33,8 +31,6 @@
 
 ▸ **getColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发颜色
 
 客户端生效
@@ -54,8 +50,6 @@ ___
 ### getGradientColor <Score text="getGradientColor" /> 
 
 ▸ **getGradientColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发渐变染色
 
@@ -77,8 +71,6 @@ ___
 
 ▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发渐变区域
 
 客户端生效
@@ -98,8 +90,6 @@ ___
 ### getHighlightColor <Score text="getHighlightColor" /> 
 
 ▸ **getHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取头发高光颜色
 
@@ -121,8 +111,6 @@ ___
 
 ▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取头发高光形状
 
 客户端生效
@@ -143,8 +131,6 @@ ___
 
 ▸ **getMesh**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取前发部位模型
 
 双端
@@ -164,8 +150,6 @@ ___
 ### setColor <Score text="setColor" /> 
 
 ▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发颜色
 
@@ -190,8 +174,6 @@ ___
 
 ▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置头发渐变染色
 
 sync = false:客户端;
@@ -214,8 +196,6 @@ ___
 ### setGradientIntensity <Score text="setGradientIntensity" /> 
 
 ▸ **setGradientIntensity**(`value`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置头发渐变区域
 
@@ -240,8 +220,6 @@ ___
 
 ▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置头发高光颜色
 
 sync = false:客户端;
@@ -265,8 +243,6 @@ ___
 
 ▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 设置头发高光形状
 
 sync = false:客户端;
@@ -289,8 +265,6 @@ ___
 ### setMesh <Score text="setMesh" /> 
 
 ▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置前发部位模型
 

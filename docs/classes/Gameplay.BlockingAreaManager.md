@@ -2,8 +2,6 @@
 
 # BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
 
-**`Description`**
-
 禁行区管理类,用于调用禁行区的全局方法
 
 ::: warning Precautions
@@ -11,8 +9,6 @@
 该对象由服务器生成同步到客户端
 
 :::
-
-**`Example`**
 
 使用示例:单例
 ```ts
@@ -31,12 +27,8 @@
 
 ▸ `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void`
 
-**`Description`**
-
 设置所有禁行区对某个玩家的通过权限
 
-
-**`Example`**
 
 使用示例:setPlayerPassableWithAllArea
 ```ts

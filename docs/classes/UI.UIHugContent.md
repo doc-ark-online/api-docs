@@ -2,8 +2,6 @@
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
-**`Description`**
-
 容器自动布局大小适应规则
 
 ## Table of contents
@@ -12,8 +10,6 @@
 | :-----|
 | **[hugContentH](UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md) <br> 垂直适应规则|
 | **[hugContentW](UI.UIHugContent.md#hugcontentw)**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md) <br> 水平适应规则|
-
-**`Description`**
 
 构造具体规则方法
 
@@ -33,8 +29,6 @@
 
 • **hugContentH**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md)
 
-**`Description`**
-
 垂直适应规则
 
 ___
@@ -42,7 +36,5 @@ ___
 ### hugContentW <Score text="hugContentW" /> 
 
 • **hugContentW**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md)
-
-**`Description`**
 
 水平适应规则

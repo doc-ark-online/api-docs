@@ -2,8 +2,6 @@
 
 # PhysicsRotator <Badge type="tip" text="Class" /> <Score text="PhysicsRotator" />
 
-**`Description`**
-
 旋转轴
 
 ## Hierarchy
@@ -128,8 +126,6 @@
 
 • **onRotationStart**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 旋转轴开始事件
 
 ___
@@ -138,8 +134,6 @@ ___
 
 • **onRotationStop**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-**`Description`**
-
 旋转轴停止事件
 
 ## Accessors
@@ -147,8 +141,6 @@ ___
 ### limitAngle <Score text="limitAngle" /> 
 
 • `get` **limitAngle**(): `number`
-
-**`Description`**
 
 获取最大可旋转角度
 
@@ -159,8 +151,6 @@ ___
 最大可旋转角度
 
 • `set` **limitAngle**(`value`): `void`
-
-**`Description`**
 
 设置最大可旋转角度
 
@@ -177,8 +167,6 @@ ___
 
 • `get` **limitEnable**(): `boolean`
 
-**`Description`**
-
 获取是否开启约束旋转角度
 
 #### Returns
@@ -188,8 +176,6 @@ ___
 是否开启约束旋转角度
 
 • `set` **limitEnable**(`value`): `void`
-
-**`Description`**
 
 设置是否开启约束旋转角度
 
@@ -206,8 +192,6 @@ ___
 
 • `get` **limitType**(): [`AxisType`](../enums/Gameplay.AxisType.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取旋转轴限制类型
 
 
@@ -218,8 +202,6 @@ ___
 旋转轴限制类型
 
 • `set` **limitType**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置旋转轴限制类型
 
@@ -236,8 +218,6 @@ ___
 
 • `get` **maxRotationalAngularVelocity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 最大旋转角速度Get
 
 
@@ -248,8 +228,6 @@ ___
 最大旋转角速度
 
 • `set` **maxRotationalAngularVelocity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 最大旋转角速度Set
 
@@ -266,8 +244,6 @@ ___
 
 • `get` **physicsEnable**(): `boolean`
 
-**`Description`**
-
 获取是否启用物理旋转
 
 #### Returns
@@ -277,8 +253,6 @@ ___
 是否启用物理旋转
 
 • `set` **physicsEnable**(`value`): `void`
-
-**`Description`**
 
 设置是否启用物理旋转
 
@@ -295,8 +269,6 @@ ___
 
 • `get` **recoveryStrength**(): `number`
 
-**`Description`**
-
 获取回复强度
 
 #### Returns
@@ -306,8 +278,6 @@ ___
 回复强度
 
 • `set` **recoveryStrength**(`value`): `void`
-
-**`Description`**
 
 设置回复强度
 
@@ -323,8 +293,6 @@ ___
 
 • `get` **rotationalAngularAcceleration**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 旋转角加速度Get
 
 
@@ -335,8 +303,6 @@ ___
 角加速度
 
 • `set` **rotationalAngularAcceleration**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 旋转角加速度Set
 
@@ -354,8 +320,6 @@ ___
 
 • `get` **rotationalAngularVelocity**(): `number` <Badge type="tip" text="other" />
 
-**`Description`**
-
 旋转角速度Get
 
 
@@ -366,8 +330,6 @@ ___
 角速度
 
 • `set` **rotationalAngularVelocity**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 旋转角速度Set
 
@@ -386,8 +348,6 @@ ___
 
 ▸ **getConstraintTargetGUID**(): `string` <Badge type="tip" text="other" />
 
-**`Description`**
-
 获取约束对象GUID
 
 
@@ -402,8 +362,6 @@ ___
 
 ▸ **reverse**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 激活旋转轴非物理旋转，此时会触发OnRotationRun代理
 
 
@@ -412,8 +370,6 @@ ___
 ### setConstraintTargetByGUID <Score text="setConstraintTargetByGUID" /> 
 
 ▸ **setConstraintTargetByGUID**(`value`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 设置约束对象GUID
 
@@ -430,8 +386,6 @@ ___
 
 ▸ **start**(): `void` <Badge type="tip" text="other" />
 
-**`Description`**
-
 Running
 
 
@@ -441,8 +395,6 @@ ___
 ### stop <Score text="stop" /> 
 
 ▸ **stop**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 停止旋转轴非物理旋转，此时会触发OnRotationStop代理
 

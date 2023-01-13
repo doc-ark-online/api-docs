@@ -2,8 +2,6 @@
 
 # ProjectileLauncher <Badge type="tip" text="Class" /> <Score text="ProjectileLauncher" />
 
-**`Description`**
-
 投掷物 v2
 
 ::: warning Precautions
@@ -150,8 +148,6 @@
 
 • **onProjectileDestroy**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-**`Description`**
-
 投掷物被销毁时触发绑定函数
 
 ::: warning Precautions
@@ -165,8 +161,6 @@ ___
 ### onProjectileHit <Score text="onProjectileHit" /> 
 
 • **onProjectileHit**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
-
-**`Description`**
 
 投掷物击中物体时触发绑定函数
 
@@ -182,8 +176,6 @@ ___
 
 • **onProjectileSpawned**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\>
 
-**`Description`**
-
 投掷物生成实例时触发绑定函数，此回调触发时实例还没有开始移动，建议将此函数作为临时附着网格体或特效时使用
 
 ::: warning Precautions
@@ -198,8 +190,6 @@ ___
 
 • `get` **acceleration**(): `number`
 
-**`Description`**
-
 加速度值，正值加速，负值减速
 
 #### Returns
@@ -207,8 +197,6 @@ ___
 `number`
 
 • `set` **acceleration**(`value`): `void`
-
-**`Description`**
 
 加速度值，正值加速，负值减速
 
@@ -225,8 +213,6 @@ ___
 
 • `get` **accelerationEnable**(): `boolean`
 
-**`Description`**
-
 投掷物是否在发射后受加速度影响
 
 #### Returns
@@ -234,8 +220,6 @@ ___
 `boolean`
 
 • `set` **accelerationEnable**(`value`): `void`
-
-**`Description`**
 
 投掷物是否在发射后受加速度影响
 
@@ -252,8 +236,6 @@ ___
 
 • `get` **accelerationEnableDistance**(): `number`
 
-**`Description`**
-
 发射后多长距离后启用加速度
 
 #### Returns
@@ -261,8 +243,6 @@ ___
 `number`
 
 • `set` **accelerationEnableDistance**(`value`): `void`
-
-**`Description`**
 
 发射后多长距离后启用加速度
 
@@ -279,8 +259,6 @@ ___
 
 • `get` **accelerationEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
-**`Description`**
-
 加速度按照 时间 / 距离 后生效
 
 #### Returns
@@ -288,8 +266,6 @@ ___
 [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
 • `set` **accelerationEnableMode**(`value`): `void`
-
-**`Description`**
 
 加速度按照 时间 / 距离 后生效
 
@@ -306,8 +282,6 @@ ___
 
 • `get` **accelerationEnableTime**(): `number`
 
-**`Description`**
-
 发射后多长时间后启用加速度
 
 #### Returns
@@ -315,8 +289,6 @@ ___
 `number`
 
 • `set` **accelerationEnableTime**(`value`): `void`
-
-**`Description`**
 
 发射后多长时间后启用加速度
 
@@ -333,8 +305,6 @@ ___
 
 • `get` **collisionLossCoefficient**(): `number`
 
-**`Description`**
-
 投掷物每次执行穿透后速度衰减的系数，系数为正，每次穿透后速度减少，系数为负，每次穿透后速度增加。
 
 #### Returns
@@ -342,8 +312,6 @@ ___
 `number`
 
 • `set` **collisionLossCoefficient**(`value`): `void`
-
-**`Description`**
 
 投掷物每次执行穿透后速度衰减的系数，系数为正，每次穿透后速度减少，系数为负，每次穿透后速度增加。
 
@@ -360,8 +328,6 @@ ___
 
 • `get` **collisionMode**(): [`ProjectileCollisionMode`](../enums/Gameplay.ProjectileCollisionMode.md)
 
-**`Description`**
-
 投掷物碰撞后如何运动：穿透/反弹
 
 #### Returns
@@ -369,8 +335,6 @@ ___
 [`ProjectileCollisionMode`](../enums/Gameplay.ProjectileCollisionMode.md)
 
 • `set` **collisionMode**(`value`): `void`
-
-**`Description`**
 
 投掷物碰撞后如何运动：穿透/反弹
 
@@ -387,8 +351,6 @@ ___
 
 • `get` **detectionRadius**(): `number`
 
-**`Description`**
-
 投掷物检测碰撞的宽度
 
 #### Returns
@@ -396,8 +358,6 @@ ___
 `number`
 
 • `set` **detectionRadius**(`value`): `void`
-
-**`Description`**
 
 投掷物检测碰撞的宽度
 
@@ -413,8 +373,6 @@ ___
 
 • `get` **gravitationalAcceleration**(): `number`
 
-**`Description`**
-
 重力值，正值重力向下，负值重力向上
 
 #### Returns
@@ -422,8 +380,6 @@ ___
 `number`
 
 • `set` **gravitationalAcceleration**(`value`): `void`
-
-**`Description`**
 
 重力值，正值重力向下，负值重力向上
 
@@ -440,8 +396,6 @@ ___
 
 • `get` **gravityEnable**(): `boolean`
 
-**`Description`**
-
 投掷物是否在发射后受重力影响
 
 #### Returns
@@ -449,8 +403,6 @@ ___
 `boolean`
 
 • `set` **gravityEnable**(`value`): `void`
-
-**`Description`**
 
 投掷物是否在发射后受重力影响
 
@@ -467,8 +419,6 @@ ___
 
 • `get` **gravityEnableDistance**(): `number`
 
-**`Description`**
-
 发射后多长距离后启用重力
 
 #### Returns
@@ -476,8 +426,6 @@ ___
 `number`
 
 • `set` **gravityEnableDistance**(`value`): `void`
-
-**`Description`**
 
 发射后多长距离后启用重力
 
@@ -494,8 +442,6 @@ ___
 
 • `get` **gravityEnableMode**(): [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
-**`Description`**
-
 重力按照 时间 / 距离 后生效
 
 #### Returns
@@ -503,8 +449,6 @@ ___
 [`ProjectileAccelerationEnableMode`](../enums/Gameplay.ProjectileAccelerationEnableMode.md)
 
 • `set` **gravityEnableMode**(`value`): `void`
-
-**`Description`**
 
 重力按照 时间 / 距离 后生效
 
@@ -521,8 +465,6 @@ ___
 
 • `get` **gravityEnableTime**(): `number`
 
-**`Description`**
-
 发射后多长时间后启用重力
 
 #### Returns
@@ -530,8 +472,6 @@ ___
 `number`
 
 • `set` **gravityEnableTime**(`value`): `void`
-
-**`Description`**
 
 发射后多长时间后启用重力
 
@@ -547,8 +487,6 @@ ___
 
 • `get` **initialSpeed**(): `number`
 
-**`Description`**
-
 投掷物发射的初始速度
 
 #### Returns
@@ -556,8 +494,6 @@ ___
 `number`
 
 • `set` **initialSpeed**(`value`): `void`
-
-**`Description`**
 
 投掷物发射的初始速度
 
@@ -574,8 +510,6 @@ ___
 
 • `get` **isAutoDestroy**(): `boolean`
 
-**`Description`**
-
 投掷物超出有效射程距离或者运动持续时间后自动销毁
 
 #### Returns
@@ -583,8 +517,6 @@ ___
 `boolean`
 
 • `set` **isAutoDestroy**(`value`): `void`
-
-**`Description`**
 
 投掷物超出有效射程距离或者运动持续时间后自动销毁
 
@@ -601,8 +533,6 @@ ___
 
 • `get` **launchDirection**(): [`Rotation`](Type.Rotation.md)
 
-**`Description`**
-
 投掷物发射方向
 
 #### Returns
@@ -610,8 +540,6 @@ ___
 [`Rotation`](Type.Rotation.md)
 
 • `set` **launchDirection**(`value`): `void`
-
-**`Description`**
 
 投掷物发射方向
 
@@ -628,8 +556,6 @@ ___
 
 • `get` **lifeSpan**(): `number`
 
-**`Description`**
-
 投掷物运动持续时间，超出后投掷物不再运动。
 
 #### Returns
@@ -637,8 +563,6 @@ ___
 `number`
 
 • `set` **lifeSpan**(`value`): `void`
-
-**`Description`**
 
 投掷物运动持续时间，超出后投掷物不再运动。
 
@@ -654,8 +578,6 @@ ___
 
 • `get` **maxCollisionTimes**(): `number`
 
-**`Description`**
-
 允许投掷物执行穿透的次数，超出次数后，再次碰撞投掷物不再移动。
 
 #### Returns
@@ -663,8 +585,6 @@ ___
 `number`
 
 • `set` **maxCollisionTimes**(`value`): `void`
-
-**`Description`**
 
 允许投掷物执行穿透的次数，超出次数后，再次碰撞投掷物不再移动。
 
@@ -681,8 +601,6 @@ ___
 
 • `get` **maxSpeed**(): `number`
 
-**`Description`**
-
 投掷物发射后的最大速度
 
 #### Returns
@@ -690,8 +608,6 @@ ___
 `number`
 
 • `set` **maxSpeed**(`value`): `void`
-
-**`Description`**
 
 投掷物发射后的最大速度
 
@@ -707,8 +623,6 @@ ___
 
 • `get` **range**(): `number`
 
-**`Description`**
-
 投掷物有效射程距离，超出后投掷物不再运动。
 
 #### Returns
@@ -716,8 +630,6 @@ ___
 `number`
 
 • `set` **range**(`value`): `void`
-
-**`Description`**
 
 投掷物有效射程距离，超出后投掷物不再运动。
 
@@ -733,8 +645,6 @@ ___
 
 • `get` **startLocation**(): [`Vector`](Type.Vector.md)
 
-**`Description`**
-
 投掷物起始位置
 
 #### Returns
@@ -742,8 +652,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 • `set` **startLocation**(`value`): `void`
-
-**`Description`**
 
 投掷物起始位置
 
@@ -759,8 +667,6 @@ ___
 
 • `get` **traceLineStyle**(): [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md)
 
-**`Description`**
-
 轨迹风格
 
 #### Returns
@@ -768,8 +674,6 @@ ___
 [`ProjectileLineStyle`](../enums/Gameplay.ProjectileLineStyle.md)
 
 • `set` **traceLineStyle**(`value`): `void`
-
-**`Description`**
 
 轨迹风格
 
@@ -786,8 +690,6 @@ ___
 ### bindPlayer <Score text="bindPlayer" /> 
 
 ▸ **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绑定玩家
 
@@ -808,8 +710,6 @@ true：参数 player 有效，绑定成功
 ### drawPredictedTrajectory <Score text="drawPredictedTrajectory" /> 
 
 ▸ **drawPredictedTrajectory**(`density?`, `duration?`): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 绘制路径预测的轨迹，调一次开启，掉第二次即关闭，如此循环
 
@@ -832,8 +732,6 @@ true：参数 player 有效，绑定成功
 ### predictedTrajectory <Score text="predictedTrajectory" /> 
 
 ▸ **predictedTrajectory**(`density`, `duration`): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
-
-**`Description`**
 
 获取路径预测的轨迹
 
@@ -862,8 +760,6 @@ true：参数 player 有效，绑定成功
 
 ▸ **spawnProjectileInstanceLaunch**(): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
 
-**`Description`**
-
 发射子弹实例
 
 ::: warning Precautions
@@ -884,8 +780,6 @@ ___
 ### spawnProjectileInstanceLaunchToTarget <Score text="spawnProjectileInstanceLaunchToTarget" /> 
 
 ▸ **spawnProjectileInstanceLaunchToTarget**(`location`, `time?`, `speed?`): [`ProjectileInst`](Gameplay.ProjectileInst.md) <Badge type="tip" text="other" />
-
-**`Description`**
 
 发射子弹实例
 
@@ -915,8 +809,6 @@ ___
 ### unbindPlayer <Score text="unbindPlayer" /> 
 
 ▸ **unbindPlayer**(): `void` <Badge type="tip" text="other" />
-
-**`Description`**
 
 解绑玩家
 
