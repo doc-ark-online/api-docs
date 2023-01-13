@@ -44,7 +44,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ignoreDeadLinks: true,
   title: 'API',
   appearance: false,
-  description: '口袋方舟 编辑器的 Api 文档',
+  description: '口袋方舟编辑器的API文档',
   // base: "/api-docs/",
   outDir: '../dist',
   head: [
