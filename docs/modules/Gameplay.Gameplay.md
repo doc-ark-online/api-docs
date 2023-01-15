@@ -267,10 +267,6 @@ ___
 | :------ | :------ |
 | `T` | extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) |
 
-#### Type declaration
-
-• (`...args`)
-
 角色形象修改构造类型
 
 ___
@@ -287,10 +283,6 @@ ___
 
 Ƭ **EmptyCallback**: () => `void`
 
-#### Type declaration
-
-▸ (): `void`
-
 空的回调函数类型
 
 ___
@@ -298,10 +290,6 @@ ___
 ### LoadAppearanceDataAllCompletedCallback <Score text="LoadAppearanceDataAllCompletedCallback" /> 
 
 Ƭ **LoadAppearanceDataAllCompletedCallback**: () => `void`
-
-#### Type declaration
-
-▸ (): `void`
 
 角色编辑器数据加载完成后的回调
 
@@ -311,10 +299,6 @@ ___
 
 Ƭ **OnMovementStateChanged**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void`
 
-#### Type declaration
-
-▸ (`mode`): `void`
-
 移动状态切换回调
 
 ___
@@ -322,10 +306,6 @@ ___
 ### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
 
 Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
-
-#### Type declaration
-
-▸ (`nCount`, `ChatContent`): `void`
 
 接收聊天信息回调方法类型
 
@@ -351,10 +331,6 @@ ___
 
 Ƭ **SetAppearanceDataCallback**: (`APIName`: `string`) => `void`
 
-#### Type declaration
-
-▸ (`APIName`): `void`
-
 设置编辑数据完成的回调
 
 ___
@@ -362,10 +338,6 @@ ___
 ### StringCallback <Score text="StringCallback" /> 
 
 Ƭ **StringCallback**: (`str`: `string`) => `void`
-
-#### Type declaration
-
-▸ (`str`): `void`
 
 返回String的回调
 
@@ -407,10 +379,6 @@ ___
 ### onAppearanceDataChanged <Score text="onAppearanceDataChanged" /> 
 
 Ƭ **onAppearanceDataChanged**: (`GUID`: `string`) => `void`
-
-#### Type declaration
-
-▸ (`GUID`): `void`
 
 角色身上GUID切换成功回调
 
