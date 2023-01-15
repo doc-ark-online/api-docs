@@ -350,9 +350,9 @@ ___
 
 ### transform <Score text="transform" /> 
 
-• `get` **transform**(): [`Transform`](Type.Transform.md)
+• `get` **transform**(): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
-返回当前物体transform <Badge type="tip" text="other" />
+返回当前物体transform 
 
 
 #### Returns
@@ -361,9 +361,9 @@ ___
 
 transform
 
-• `set` **transform**(`transform`): `void`
+• `set` **transform**(`transform`): `void` <Badge type="tip" text="other" />
 
-设置当前物体transform <Badge type="tip" text="other" />
+设置当前物体transform 
 
 
 #### Parameters
