@@ -26,19 +26,19 @@ Service
 
 | Type Aliases |
 | :-----|
-| **[BoolResponse](Service.Service.md#boolresponse)**: (`boolean` |: `boolean`) => `void` <br> ▸ (`success`): `void`|
-| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> ▸ (): `void`|
-| **[MGSEvent](Service.Service.md#mgsevent)**: (`string` |: `string`) => `void` <br> ▸ (`jsonData`): `void`|
-| **[MGSResponse](Service.Service.md#mgsresponse)**: (`boolean` |: `boolean`, `string` |: `string`) => `void` <br> ▸ (`isSuccess`, `jsonData`): `void`|
-| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`number`: `number`) => `void` <br> ▸ (`amount`): `void`|
-| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`number`: `number`, `string`: `string`, `string`: `string`, `number`: `number`, (`bReceived`: `boolean`) => `void`: (`bReceived`: `boolean`) => `void`) => `void` <br> ▸ (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`|
-| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`number`: `number`) => `void` <br> ▸ (`newState`): `void`|
-| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> ▸ (): `void`|
-| **[StringResponse](Service.Service.md#stringresponse)**: (`string` |: `string`) => `void` <br> ▸ (`dataString`): `void`|
+| **[BoolResponse](Service.Service.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调 |
+| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用 |
+| **[MGSResponse](Service.Service.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**:(`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
+| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中MW窗口显示模式切换的消息格式|
+| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中MW窗口刷新的消息格式|
+| **[StringResponse](Service.Service.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
 | **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`success`: `boolean`) => `void`<br> 下载角色形象的回调消息格式|
 | **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
-| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string` |: `string`) => `void` <br> 下载平台数据回调|
+| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void`<br> 下载平台数据回调|
 
 ## Type Aliases
 
@@ -61,7 +61,6 @@ ___
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
 
 收到MGS事件调用
-
 ___
 
 ### MGSResponse <Score text="MGSResponse" /> 
@@ -69,7 +68,6 @@ ___
 Ƭ **MGSResponse**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`
 
 收到233回复
-
 ___
 
 ### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
@@ -83,13 +81,11 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `amount` | `number` |  新的余额 |
-
 ___
 
 ### OnOrderDelivered <Score text="OnOrderDelivered" /> 
 
 Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
-
 
 服务端接收发货通知的消息格式
 
@@ -102,7 +98,6 @@ ___
 | `commodityId` | `string` |  商品Id |
 | `amount` | `number` |  数量 |
 | `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
-
 ___
 
 ### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
@@ -116,7 +111,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newState` | `number` |  新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
-
 ___
 
 ### OnViewRefreshed <Score text="OnViewRefreshed" /> 
@@ -124,13 +118,11 @@ ___
 Ƭ **OnViewRefreshed**: () => `void`
 
 233中MW窗口刷新的消息格式
-
 ___
 
 ### StringResponse <Score text="StringResponse" /> 
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
-
 
 返回string的回调
 ___
@@ -147,7 +139,6 @@ ___
 | :------ | :------ | :------ |
 | `failedReason` | `string` | 失败原因 |
 | `playerIds` | `number`[] | 组队玩家的playerId数组 |
-
 ___
 
 ### UploadDataResponse <Score text="UploadDataResponse" /> 
@@ -161,7 +152,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `success` | `boolean` |  上传是否成功 |
-
 ___
 
 ### VoidResponse <Score text="VoidResponse" /> 
@@ -169,7 +159,6 @@ ___
 Ƭ **VoidResponse**: () => `void`
 
 返回无参数的回调
-
 ___
 
 ### downloadCharacterDataStringCallback <Score text="downloadCharacterDataStringCallback" /> 
