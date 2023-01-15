@@ -18,8 +18,8 @@ Network
 
 | Type Aliases |
 | :-----|
-| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> ▸ (`result`, `content`, `responseCode`): `void`|
-| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> ▸ (`isSuccess`, `content`): `void`|
+| **[HttpResponse](Network.Network.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
+| **[TransactionType](Network.Network.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br>商城通信回调消息格式|
 
 | Functions |
 | :-----|
@@ -35,10 +35,6 @@ Network
 ### HttpResponse <Score text="HttpResponse" /> 
 
 Ƭ **HttpResponse**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void`
-
-#### Type declaration
-
-▸ (`result`, `content`, `responseCode`): `void`
 
 Http请求的回调消息格式
 
@@ -61,10 +57,6 @@ ___
 ### TransactionType <Score text="TransactionType" /> 
 
 Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
-
-#### Type declaration
-
-▸ (`isSuccess`, `content`): `void`
 
 商城通信回调消息格式
 
