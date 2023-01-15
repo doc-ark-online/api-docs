@@ -4,12 +4,6 @@
 
 对象池
 
-## Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
 ## Table of contents
 
 | Methods |
@@ -17,17 +11,6 @@
 | **[clear](Extension.ObjPool.md#clear)**(): `void` <br> 清除池中对象|
 | **[despawn](Extension.ObjPool.md#despawn)**(`T`): `void` <br> 归还一个对象|
 | **[spawn](Extension.ObjPool.md#spawn)**(): `T` <br> 生成一个对象|
-
-构造一个对象池
-
-**`Effect`**
-
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
 
 #### Parameters
 
@@ -45,7 +28,6 @@
 ▸ **clear**(): `void` <Badge type="tip" text="other" />
 
 清除池中对象
-
 
 
 ___
