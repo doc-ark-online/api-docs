@@ -42,10 +42,6 @@
 | **[update](Util.Util.TweenUtil.Tween.md#update)**(`number`, `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
 | **[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)**(`[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。|
 
-补间构造函数
-
-**`Effect`**
-
 
 #### Type parameters
 
