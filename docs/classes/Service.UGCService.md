@@ -62,7 +62,7 @@ ___
 
 ### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
-▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\>
+▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
 
 获取当前手机本地的UGC工程列表
 
@@ -71,7 +71,7 @@ ___
 
 1. 只在233内使用时生效
 2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
-[ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。 <Badge type="tip" text="other" />
+[ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
 
 :::
@@ -93,7 +93,7 @@ ___
 
 ### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
-▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\>
+▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
 
 获取当前玩家已发布的UGC游戏列表
 
@@ -101,7 +101,7 @@ ___
 ::: warning Precautions
 
 1. 只在233内使用时生效
-2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ] <Badge type="tip" text="other" />
+2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
@@ -138,7 +138,7 @@ ___
 
 ### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
-▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\>
+▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
 
 获取模板列表，可以分页方式查询
 
@@ -146,7 +146,7 @@ ___
 ::: warning Precautions
 
 1. 只在233内使用时生效
-2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ] <Badge type="tip" text="other" />
+2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖。
 
