@@ -97,10 +97,10 @@ UI
 | **[assetIDChangeIConUrlRequest](UI.UI.md#assetidchangeiconurlrequest)**(`string`[]): `Promise`<`void`\> <br> since:v0.20.0.0 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest|
 | **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest-1)**(`string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](UI.UI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
-| **[createUI](UI.UI.md#createui)**<extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |\>(`string`, () => `T`): extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> | <br> 创建UIPrefab|
+| **[createUI](UI.UI.md#createui)**<`T`\>(`UIPrefabName`, `panelClass`): `T` <br> 创建UIPrefab|
 | **[createUIByName](UI.UI.md#createuibyname)**(`string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
 | **[createUIByPath](UI.UI.md#createuibypath)**(`string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
-| **[createUIOnlyClass](UI.UI.md#createuionlyclass)**<extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |\>(() => `T`): extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> | <br> 创建空的UI|
+| **[createUIOnlyClass](UI.UI.md#createuionlyclass)**<`T`\>(`panelClass`): `T` <br> 创建空的UI|
 | **[endDragDrop](UI.UI.md#enddragdrop)**([`EventReply`](../classes/UI.EventReply.md)): `void` <br> 中断一个拖拽事件, 传入一个操作的事件|
 | **[findUIBehavior](UI.UI.md#finduibehavior)**([`Widget`](../classes/UI.Widget.md)): [`UIBehavior`](../classes/UI.UIBehavior.md) <br> 获取UI脚本|
 | **[getAbsoluteSize](UI.UI.md#getabsolutesize)**([`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回绝对空间中几何图形的大小|
