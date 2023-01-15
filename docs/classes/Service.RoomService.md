@@ -41,9 +41,9 @@ MGS以及玩家信息、数据、头像等相关API
 
 ### addFriend <Score text="addFriend" /> 
 
-▸ **addFriend**(`resp`, `friendOpenId`): `void`
+▸ **addFriend**(`resp`, `friendOpenId`): `void` <Badge type="tip" text="other" />
 
-向233发起addFriend并获得回调 <Badge type="tip" text="other" />
+向233发起addFriend并获得回调 
 
 
 ::: warning Precautions
@@ -64,9 +64,9 @@ ___
 
 ### createAndJoinRoom <Score text="createAndJoinRoom" /> 
 
-▸ **createAndJoinRoom**(`resp`, `roomId`, `roomName`, `roomLimit`): `void`
+▸ **createAndJoinRoom**(`resp`, `roomId`, `roomName`, `roomLimit`): `void` <Badge type="tip" text="other" />
 
-游戏方创建好房间后可通过调用createAndJoinRoom进行数据同步，也可通过MGS服务端进行数据同步 <Badge type="tip" text="other" />
+游戏方创建好房间后可通过调用createAndJoinRoom进行数据同步，也可通过MGS服务端进行数据同步
 
 
 ::: warning Precautions
@@ -236,9 +236,9 @@ ___
 
 ### isFriend <Score text="isFriend" /> 
 
-▸ **isFriend**(`resp`, `friendOpenId`): `void`
+▸ **isFriend**(`resp`, `friendOpenId`): `void` <Badge type="tip" text="other" />
 
-若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看 <Badge type="tip" text="other" />
+若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看 
 
 
 ::: warning Precautions
@@ -274,9 +274,9 @@ ___
 
 ### joinAudio <Score text="joinAudio" /> 
 
-▸ **joinAudio**(`resp`): `void`
+▸ **joinAudio**(`resp`): `void` <Badge type="tip" text="other" />
 
-游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音） <Badge type="tip" text="other" />
+游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）
 
 
 ::: warning Precautions
@@ -296,9 +296,9 @@ ___
 
 ### joinRoom <Score text="joinRoom" /> 
 
-▸ **joinRoom**(`resp`, `roomId`): `void`
+▸ **joinRoom**(`resp`, `roomId`): `void` <Badge type="tip" text="other" />
 
-游戏方在玩家加入某个房间后，需要通过调用joinRoom进行数据同步 <Badge type="tip" text="other" />
+游戏方在玩家加入某个房间后，需要通过调用joinRoom进行数据同步 
 
 
 ::: warning Precautions
@@ -319,9 +319,9 @@ ___
 
 ### leaveRoom <Score text="leaveRoom" /> 
 
-▸ **leaveRoom**(`resp`, `roomId`): `void`
+▸ **leaveRoom**(`resp`, `roomId`): `void` <Badge type="tip" text="other" />
 
-游戏方在玩家离开房间前，需要调用leaveRoom进行数据同步 <Badge type="tip" text="other" />
+游戏方在玩家离开房间前，需要调用leaveRoom进行数据同步 
 
 
 ::: warning Precautions
@@ -342,9 +342,9 @@ ___
 
 ### queryPlayerAction <Score text="queryPlayerAction" /> 
 
-▸ **queryPlayerAction**(`resp`): `void`
+▸ **queryPlayerAction**(`resp`): `void` <Badge type="tip" text="other" />
 
-向233发起queryPlayerAction并获得回调，查询玩家进入游戏时的操作方式 <Badge type="tip" text="other" />
+向233发起queryPlayerAction并获得回调，查询玩家进入游戏时的操作方式 
 
 
 ::: warning Precautions
@@ -431,9 +431,9 @@ ___
 
 ### reportLogInfo <Score text="reportLogInfo" /> 
 
-▸ **reportLogInfo**(`eventName`, `eventDesc`, `jsonData`): `void`
+▸ **reportLogInfo**(`eventName`, `eventDesc`, `jsonData`): `void` <Badge type="tip" text="other" />
 
-游戏方调用reportLogInfo接口上报运营所需的埋点数据 <Badge type="tip" text="other" />
+游戏方调用reportLogInfo接口上报运营所需的埋点数据  
 
 
 ::: warning Precautions
@@ -524,9 +524,9 @@ ___
 
 ### showExitGameDialog <Score text="showExitGameDialog" /> 
 
-▸ **showExitGameDialog**(`resp`): `void`
+▸ **showExitGameDialog**(`resp`): `void`<Badge type="tip" text="other" />
 
-游戏方可调用showExitGameDialog来显示退出游戏确认框 <Badge type="tip" text="other" />
+游戏方可调用showExitGameDialog来显示退出游戏确认框  
 
 
 ::: warning Precautions
@@ -546,9 +546,9 @@ ___
 
 ### showFloatingLayer <Score text="showFloatingLayer" /> 
 
-▸ **showFloatingLayer**(`resp`, `tab`): `void`
+▸ **showFloatingLayer**(`resp`, `tab`): `void` <Badge type="tip" text="other" />
 
-向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能 <Badge type="tip" text="other" />
+向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能 
 
 
 ::: warning Precautions
@@ -569,9 +569,9 @@ ___
 
 ### showUserProfile <Score text="showUserProfile" /> 
 
-▸ **showUserProfile**(`resp`, `openId`): `void`
+▸ **showUserProfile**(`resp`, `openId`): `void` <Badge type="tip" text="other" />
 
-若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗 <Badge type="tip" text="other" />
+若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗 
 
 
 ::: warning Precautions
