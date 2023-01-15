@@ -19,7 +19,7 @@ GameObject对象池
 | **[clear](Extension.GameObjPool.md#clear)**(`string`): `void` <br> 清除对象池中该GUID对应的所有对象|
 | **[despawn](Extension.GameObjPool.md#despawn)**(`GameObject`): `void` <br> 归还一个对象|
 | **[destroy](Extension.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
-| **[spawn](Extension.GameObjPool.md#spawn)**<extends `GameObject`<`T`\> |\>(`string`): extends `GameObject`<`T`\> | <br> 生成一个对象|
+| **[spawn](Extension.GameObjPool.md#spawn)**<`T`\>(`string`): `T` <br> 生成一个对象|
 | **[getInstance](Extension.GameObjPool.md#getinstance)**(): [`GameObjPool`](Extension.GameObjPool.md) <br> 获取对象池全局实例|
 
 ## Methods
