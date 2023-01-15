@@ -2,8 +2,6 @@ Network
 
 # Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
 
-暴露给用户使用的Http请求接口,用户可选的是网络身份(服务器,客户端)
-
 ## Table of contents
 
 | Enumerations |
