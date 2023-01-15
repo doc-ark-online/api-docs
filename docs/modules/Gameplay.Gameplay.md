@@ -151,18 +151,18 @@ Gameplay
 | :-----|
 | **[CameraShakeData](Gameplay.Gameplay.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
 | **[CameraSystemData](Gameplay.Gameplay.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Constructor](Gameplay.Gameplay.md#constructor)**<extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) |\>: (...`args`: `any`[]) => extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) | <br> | Name | Type ||
-| **[DecorationTuple](Gameplay.Gameplay.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
-| **[EmptyCallback](Gameplay.Gameplay.md#emptycallback)**: () => `void` <br> ▸ (): `void`|
-| **[LoadAppearanceDataAllCompletedCallback](Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)**: () => `void` <br> ▸ (): `void`|
-| **[OnMovementStateChanged](Gameplay.Gameplay.md#onmovementstatechanged)**: ([`MovementMode`](../enums/Gameplay.MovementMode.md) |: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> ▸ (`mode`): `void`|
-| **[OnRecvChatMessage](Gameplay.Gameplay.md#onrecvchatmessage)**: (`number` |: `number`, `string` |: `string`) => `void` <br> ▸ (`nCount`, `ChatContent`): `void`|
+| **[Constructor](Gameplay.Gameplay.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型 |
+| **[DecorationTuple](Gameplay.Gameplay.md#decorationtuple)**:  [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
+| **[EmptyCallback](Gameplay.Gameplay.md#emptycallback)**: () => `void` <br> 空的回调函数类型 |
+| **[LoadAppearanceDataAllCompletedCallback](Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
+| **[OnMovementStateChanged](Gameplay.Gameplay.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
+| **[OnRecvChatMessage](Gameplay.Gameplay.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
 | **[Oscillator](Gameplay.Gameplay.md#oscillator)**: `Object` <br> 震动数值|
-| **[SetAppearanceDataCallback](Gameplay.Gameplay.md#setappearancedatacallback)**: (`string` |: `string`) => `void` <br> ▸ (`APIName`): `void`|
-| **[StringCallback](Gameplay.Gameplay.md#stringcallback)**: (`string` |: `string`) => `void` <br> ▸ (`str`): `void`|
+| **[SetAppearanceDataCallback](Gameplay.Gameplay.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调 |
+| **[StringCallback](Gameplay.Gameplay.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 | **[VehicleGearData](Gameplay.Gameplay.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
 | **[VehicleWheelData](Gameplay.Gameplay.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
-| **[onAppearanceDataChanged](Gameplay.Gameplay.md#onappearancedatachanged)**: (`string` |: `string`) => `void` <br> ▸ (`GUID`): `void`|
+| **[onAppearanceDataChanged](Gameplay.Gameplay.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 | Functions |
 | :-----|
@@ -200,12 +200,6 @@ Gameplay
 Ƭ **CameraShakeData**: `Object`
 
 摄像机震动数据
-
-::: warning Precautions
-
-摄像机震动数据
-
-:::
 
 #### Type declaration
 
@@ -279,12 +273,6 @@ ___
 
 角色形象修改构造类型
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...args` | `any`[] |
-
 ___
 
 ### DecorationTuple <Score text="DecorationTuple" /> 
@@ -305,10 +293,6 @@ ___
 
 空的回调函数类型
 
-##### Returns
-
-`void`
-
 ___
 
 ### LoadAppearanceDataAllCompletedCallback <Score text="LoadAppearanceDataAllCompletedCallback" /> 
@@ -320,10 +304,6 @@ ___
 ▸ (): `void`
 
 角色编辑器数据加载完成后的回调
-
-##### Returns
-
-`void`
 
 ___
 
@@ -337,16 +317,6 @@ ___
 
 移动状态切换回调
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `mode` | [`MovementMode`](../enums/Gameplay.MovementMode.md) |
-
-##### Returns
-
-`void`
-
 ___
 
 ### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
@@ -359,17 +329,6 @@ ___
 
 接收聊天信息回调方法类型
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `nCount` | `number` |
-| `ChatContent` | `string` |
-
-##### Returns
-
-`void`
-
 ___
 
 ### Oscillator <Score text="Oscillator" /> 
@@ -377,12 +336,6 @@ ___
 Ƭ **Oscillator**: `Object`
 
 震动数值
-
-::: warning Precautions
-
-震动数值
-
-:::
 
 #### Type declaration
 
@@ -404,16 +357,6 @@ ___
 
 设置编辑数据完成的回调
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `APIName` | `string` |
-
-##### Returns
-
-`void`
-
 ___
 
 ### StringCallback <Score text="StringCallback" /> 
@@ -425,16 +368,6 @@ ___
 ▸ (`str`): `void`
 
 返回String的回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `str` | `string` |
-
-##### Returns
-
-`void`
 
 ___
 
@@ -481,15 +414,6 @@ ___
 
 角色身上GUID切换成功回调
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `GUID` | `string` |
-
-##### Returns
-
-`void`
 
 ## Functions
 
