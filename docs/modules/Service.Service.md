@@ -2,8 +2,6 @@ Service
 
 # Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
 
-Account Service
-
 ## Table of contents
 
 | Enumerations |
@@ -48,26 +46,12 @@ Account Service
 
 Ƭ **BoolResponse**: (`success`: `boolean`) => `void`
 
-#### Type declaration
-
-▸ (`success`): `void`
-
 返回bool的回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `success` | `boolean` |
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
 
 Ƭ **DownloadDataResponse**: () => `void`
-
-#### Type declaration
-
-▸ (): `void`
 
 下载角色形象的回调，无参数
 ___
@@ -76,45 +60,21 @@ ___
 
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
 
-#### Type declaration
-
-▸ (`jsonData`): `void`
-
 收到MGS事件调用
 
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `jsonData` | `string` |
 ___
 
 ### MGSResponse <Score text="MGSResponse" /> 
 
 Ƭ **MGSResponse**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`
 
-#### Type declaration
-
-▸ (`isSuccess`, `jsonData`): `void`
-
 收到233回复
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `isSuccess` | `boolean` |
-| `jsonData` | `string` |
 
 ___
 
 ### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
 
 Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
-
-#### Type declaration
-
-▸ (`amount`): `void`
 
 客户端接收余额更新的消息格式
 
@@ -130,9 +90,6 @@ ___
 
 Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
 
-#### Type declaration
-
-▸ (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
 
 服务端接收发货通知的消息格式
 
@@ -152,10 +109,6 @@ ___
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
 
-#### Type declaration
-
-▸ (`newState`): `void`
-
 233中MW窗口显示模式切换的消息格式
 
 ##### Parameters
@@ -170,10 +123,6 @@ ___
 
 Ƭ **OnViewRefreshed**: () => `void`
 
-#### Type declaration
-
-▸ (): `void`
-
 233中MW窗口刷新的消息格式
 
 ___
@@ -182,18 +131,8 @@ ___
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
 
-#### Type declaration
-
-▸ (`dataString`): `void`
 
 返回string的回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `dataString` | `string` |
-
 ___
 
 ### TeamMatchFailureInfo <Score text="TeamMatchFailureInfo" /> 
@@ -215,10 +154,6 @@ ___
 
 Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
 
-#### Type declaration
-
-▸ (`success`): `void`
-
 下载角色形象的回调消息格式
 
 ##### Parameters
@@ -233,10 +168,6 @@ ___
 
 Ƭ **VoidResponse**: () => `void`
 
-#### Type declaration
-
-▸ (): `void`
-
 返回无参数的回调
 
 ___
@@ -245,14 +176,4 @@ ___
 
 Ƭ **downloadCharacterDataStringCallback**: (`dataString`: `string`) => `void`
 
-#### Type declaration
-
-▸ (`dataString`): `void`
-
 下载平台数据回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `dataString` | `string` |
