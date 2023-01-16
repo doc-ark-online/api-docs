@@ -174,7 +174,7 @@ this.Anim.play();
 
 ### pause <Score text="pause" /> 
 
-▸ **pause**(): `boolean`
+▸ **pause**(): `boolean` <Badge type="tip" text="other" />
 
 暂停动画,不会触发onAnimFinished委托
 
@@ -185,7 +185,7 @@ this.Anim.play();
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 .......
-anim.pause(); <Badge type="tip" text="other" />
+anim.pause(); 
 ```
 
 #### Returns
@@ -198,7 +198,7 @@ ___
 
 ### play <Score text="play" /> 
 
-▸ **play**(): `boolean`
+▸ **play**(): `boolean` <Badge type="tip" text="other" />
 
 从动画资源的起点播放动画
 
@@ -207,7 +207,7 @@ ___
 使用示例:播放动画
 ```ts
 let anim = player.character.loadAnimation(animGUID);
-anim.play(); <Badge type="tip" text="other" />
+anim.play(); 
 ```
 
 #### Returns
@@ -220,7 +220,7 @@ ___
 
 ### resume <Score text="resume" /> 
 
-▸ **resume**(): `boolean`
+▸ **resume**(): `boolean` <Badge type="tip" text="other" />
 
 从当前位置继续动画播放
 
@@ -231,7 +231,7 @@ ___
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.resume(); <Badge type="tip" text="other" />
+anim.resume(); 
 ```
 
 #### Returns
@@ -244,7 +244,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-▸ **stop**(): `boolean`
+▸ **stop**(): `boolean` <Badge type="tip" text="other" />
 
 停止播放,不会触发onAnimFinished委托
 
@@ -255,7 +255,7 @@ ___
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.stop(); <Badge type="tip" text="other" />
+anim.stop(); 
 ```
 
 #### Returns
