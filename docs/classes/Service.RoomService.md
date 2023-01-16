@@ -592,7 +592,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`RoomService`](Service.RoomService.md)
+▸ `Static` **getInstance**(): [`RoomService`](Service.RoomService.md)  <Badge type="tip" text="other" />
 
 获取API实例进行调用
 
@@ -607,7 +607,7 @@ ___
 使用示例:获取实例并调用函数
 ```ts
 // 通过实例调用函数获取玩家昵称
-Service.RoomService.getInstance().getNickName(); <Badge type="tip" text="other" />
+Service.RoomService.getInstance().getNickName();
 ```
 
 #### Returns
