@@ -15,8 +15,6 @@
 | **[getLocalSize](UI.Geometry.md#getlocalsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取相对大小|
 | **[isUnderLocation](UI.Geometry.md#isunderlocation)**([`Vector2`](Type.Vector2.md)): `boolean` <br> 判断该Geometry 是否在AbsoluteCoordinate坐标下|
 
-默认构造
-
 ## Methods
 
 ### getAbsolutePosition <Score text="getAbsolutePosition" /> 
