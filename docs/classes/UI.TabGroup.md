@@ -22,8 +22,6 @@
 | **[select](UI.TabGroup.md#select)**(`number`, `boolean`): `boolean` <br> 设置当前的标签|
 | **[setSelectableChecker](UI.TabGroup.md#setselectablechecker)**((`index`: `number`) => `boolean`, `any`): `void` <br> 设置该标签是否可以切换的检测方法|
 
-构造
-
 #### Type parameters
 
 | Name | Type |
