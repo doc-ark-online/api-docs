@@ -12,8 +12,6 @@
 | **[getUserIndex](UI.KeyEvent.md#getuserindex)**(): `number` <br> 获取事件触发玩家index|
 | **[toInputEvent](UI.KeyEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent*|
 
-默认构造
-
 ## Methods
 
 ### getKey <Score text="getKey" /> 
