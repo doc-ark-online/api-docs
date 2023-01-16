@@ -81,7 +81,7 @@ ___
 
 ### update <Score text="update" /> 
 
-▸ **update**(`time?`, `preserve?`): `boolean`
+▸ **update**(`time?`, `preserve?`): `boolean` <Badge type="tip" text="other" />
 
 更新补间组
 
@@ -93,7 +93,7 @@ const group = new Extension.TweenUtil.Group()
 group.update()
 
 // 更新全局补间组
-Extension.TweenUtil.TWEEN.update() <Badge type="tip" text="other" />
+Extension.TweenUtil.TWEEN.update() 
 ```
 
 #### Parameters
