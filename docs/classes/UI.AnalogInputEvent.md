@@ -10,8 +10,6 @@
 | :-----|
 | **[toInputEvent](UI.AnalogInputEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent|
 
-默认构造
-
 ## Methods
 
 ### toInputEvent <Score text="toInputEvent" /> 
