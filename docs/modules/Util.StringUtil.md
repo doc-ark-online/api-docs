@@ -48,7 +48,7 @@ ___
 
 ### format <Score text="format" /> 
 
-▸ **format**(`str`, `...param`): `string`
+▸ **format**(`str`, `...param`): `string` <Badge type="tip" text="other" />
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
@@ -56,7 +56,7 @@ ___
 使用示例:格式化字符串用法
 ```ts
 // targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!"); <Badge type="tip" text="other" />
+let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!"); 
 ```
 
 #### Parameters
