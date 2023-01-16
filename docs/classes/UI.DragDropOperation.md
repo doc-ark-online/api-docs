@@ -16,7 +16,6 @@ UI 拖拽事件
 | **[tryGetDragDropPayLoad](UI.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](UI.DragDropPayLoad.md) <br> 获取传递的数据信息|
 | **[tryGetDragDropPayLoadAs](UI.DragDropOperation.md#trygetdragdroppayloadas)**<extends [`DragDropPayLoad`](UI.DragDropPayLoad.md)<`T`\> |\>(): extends [`DragDropPayLoad`](UI.DragDropPayLoad.md)<`T`\> | <br> 获取传递的数据信息|
 
-• `Private` **new DragDropOperation**()
 
 ## Methods
 
