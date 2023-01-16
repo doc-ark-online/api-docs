@@ -14,11 +14,6 @@
 | **[marin](UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.Margin.md) <br> 边缘缩进|
 | **[tintColor](UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.SlateColor.md) <br> 颜色|
 
-通过资源id构造对象
-
-**`Effect`**
-
-
 #### Parameters
 
 | Name | Type | Description |
