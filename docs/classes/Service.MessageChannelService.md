@@ -38,7 +38,7 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 ### registerAction <Score text="registerAction" /> 
 
-▸ **registerAction**(`action`, `caller`, `onCall`): `void`
+▸ **registerAction**(`action`, `caller`, `onCall`): `void` <Badge type="tip" text="other" />
 
 注册需要收到消息的action以及对应要调用的回调函数
 
@@ -54,7 +54,7 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 使用示例:通道注册action
 ```ts
 // 注册action:ts.test.myaction，对包含action的消息，调用OnCall回调
-Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall); <Badge type="tip" text="other" />
+Service.MessageChannelService.getInstance().registerAction("ts.test.myaction", this, OnCall); 
 ```
 
 #### Parameters
@@ -70,7 +70,7 @@ ___
 
 ### send <Score text="send" /> 
 
-▸ **send**(`message`): `void`
+▸ **send**(`message`): `void` <Badge type="tip" text="other" />
 
 发送消息到通道上
 
@@ -88,7 +88,7 @@ ___
 使用示例:通道广播消息
 ```ts
 // 发送message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"到通道上，所有注册了该消息中action的端才可以收到该消息
-Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}"); <Badge type="tip" text="other" />
+Service.MessageChannelService.getInstance().send("{\"action\":\"ts.test.myaction\",\"data\":{}}"); 
 ```
 
 #### Parameters
@@ -102,7 +102,7 @@ ___
 
 ### sendTo <Score text="sendTo" /> 
 
-▸ **sendTo**(`toWhom`, `message`): `void`
+▸ **sendTo**(`toWhom`, `message`): `void` <Badge type="tip" text="other" />
 
 发送消息给指定对象
 
@@ -118,7 +118,7 @@ ___
 使用示例:通道私发消息
 ```ts
 // 指定一个目标端toWhom:Client发送消息message:"{\"action\":\"ts.test.myaction\",\"data\":{}}"，对方无需提前注册就可以收到该消息
-Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceiver.Client, "{\"action\":\"ts.test.myaction\",\"data\":{}}"); <Badge type="tip" text="other" />
+Service.MessageChannelService.getInstance().sendTo(Service.MessageChannelReceiver.Client, "{\"action\":\"ts.test.myaction\",\"data\":{}}"); 
 ```
 
 #### Parameters
@@ -133,7 +133,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md)
+▸ `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md)  <Badge type="tip" text="other" />
 
 获取API实例进行调用
 
@@ -148,7 +148,7 @@ ___
 使用示例:通道发送消息
 ```ts
 // 通过实例调用函数发送消息
-Service.MessageChannelService.getInstance().send(message); <Badge type="tip" text="other" />
+Service.MessageChannelService.getInstance().send(message);
 ```
 
 #### Returns
