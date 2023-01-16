@@ -565,7 +565,7 @@ ___
 
 ### addNetworkDisconnectListener <Score text="addNetworkDisconnectListener" /> 
 
-▸ **addNetworkDisconnectListener**(`callback`): `void`
+▸ **addNetworkDisconnectListener**(`callback`): `void` <Badge type="tip" text="other" />
 
 添加网络断开连接时执行的回调函数
 
@@ -579,7 +579,7 @@ ___
 使用示例:调用方法
 ```ts
 Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.addNetworkDisconnectListener(this.testFunction); <Badge type="tip" text="other" />
+    player.addNetworkDisconnectListener(this.testFunction); 
 });
 public testFunction() {
 }
@@ -596,7 +596,7 @@ ___
 
 ### addNetworkReconnectListener <Score text="addNetworkReconnectListener" /> 
 
-▸ **addNetworkReconnectListener**(`callback`): `void`
+▸ **addNetworkReconnectListener**(`callback`): `void` <Badge type="tip" text="other" />
 
 添加网络断开连接后恢复网络时执行的回调函数
 
@@ -610,7 +610,7 @@ ___
 使用示例:调用方法
 ```ts
 Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.addNetworkReconnectListener(this.testFunction); <Badge type="tip" text="other" />
+    player.addNetworkReconnectListener(this.testFunction); 
 });
 public testFunction() {
 }
@@ -1364,7 +1364,7 @@ ___
 
 ### removeNetworkDisconnectListener <Score text="removeNetworkDisconnectListener" /> 
 
-▸ **removeNetworkDisconnectListener**(`callback`): `void`
+▸ **removeNetworkDisconnectListener**(`callback`): `void` <Badge type="tip" text="other" />
 
 移除网络断开连接时执行的回调函数
 
@@ -1372,7 +1372,7 @@ ___
 使用示例:调用方法
 ```ts
 Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.removeNetworkDisconnectListener(this.testFunction); <Badge type="tip" text="other" />
+    player.removeNetworkDisconnectListener(this.testFunction);
 });
 public testFunction() {
 }
@@ -1389,7 +1389,7 @@ ___
 
 ### removeNetworkReconnectListener <Score text="removeNetworkReconnectListener" /> 
 
-▸ **removeNetworkReconnectListener**(`callback`): `void`
+▸ **removeNetworkReconnectListener**(`callback`): `void` <Badge type="tip" text="other" />
 
 移除网络断开连接后恢复网络时执行的回调函数
 
@@ -1397,7 +1397,7 @@ ___
 使用示例:调用方法
 ```ts
 Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.removeNetworkReconnectListener(this.testFunction); <Badge type="tip" text="other" />
+    player.removeNetworkReconnectListener(this.testFunction); 
 });
 public testFunction() {
 }
