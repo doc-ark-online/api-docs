@@ -170,7 +170,7 @@ bool
 
 ### setBlockAllPlayer <Score text="setBlockAllPlayer" /> 
 
-▸ **setBlockAllPlayer**(`BlockAll`): `boolean`
+▸ **setBlockAllPlayer**(`BlockAll`): `boolean` <Badge type="tip" text="other" />
 
 让该禁行区阻挡所有玩家
 
@@ -178,7 +178,7 @@ bool
 
 使用示例:让该禁行区阻挡所有玩家
 ```ts
-BlockArea.setBlockAllPlayer() <Badge type="tip" text="other" />
+BlockArea.setBlockAllPlayer() 
 ```
 
 #### Parameters
@@ -196,7 +196,7 @@ bool
 
 ### setCurrentPlayerPassable <Score text="setCurrentPlayerPassable" /> 
 
-▸ **setCurrentPlayerPassable**(`Target`, `CanPass`): `void`
+▸ **setCurrentPlayerPassable**(`Target`, `CanPass`): `void` <Badge type="tip" text="other" />
 
 设置玩家通过该区域屏障权限
 
@@ -204,7 +204,7 @@ bool
 
 使用示例: 简单调用
 ```ts
-BlockArea.setCurrentPlayerPassable(player,true) <Badge type="tip" text="other" />
+BlockArea.setCurrentPlayerPassable(player,true) 
 ```
 
 #### Parameters
@@ -218,7 +218,7 @@ BlockArea.setCurrentPlayerPassable(player,true) <Badge type="tip" text="other" /
 
 ### setNonCharacterActorCanPass <Score text="setNonCharacterActorCanPass" /> 
 
-▸ **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void`
+▸ **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void` <Badge type="tip" text="other" />
 
 设置非角色Actor的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
 
@@ -226,7 +226,7 @@ BlockArea.setCurrentPlayerPassable(player,true) <Badge type="tip" text="other" /
 
 使用示例:传递GameObject和bool
 ```ts
-BlockArea.setNonCharacterActorCanPass(GameObject,true) <Badge type="tip" text="other" />
+BlockArea.setNonCharacterActorCanPass(GameObject,true) 
 ```
 
 #### Parameters
