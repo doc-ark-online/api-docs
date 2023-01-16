@@ -75,7 +75,7 @@ ___
 
 ### layer <Score text="layer" /> 
 
-• `get` **layer**(): `number`
+• `get` **layer**(): `number` <Badge type="tip" text="other" />
 
 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
@@ -83,7 +83,7 @@ ___
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
-Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer) <Badge type="tip" text="other" />
+Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer) 
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
@@ -103,7 +103,7 @@ Extension.UILayerError   //错误层 这个层级不可以使用，需要增加�
 
 Layer层级
 
-• `set` **layer**(`inLayer`): `void`
+• `set` **layer**(`inLayer`): `void` <Badge type="tip" text="other" />
 
 设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
@@ -111,7 +111,7 @@ Layer层级
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 ```ts
-this.layer = Extension.UILayerScene; <Badge type="tip" text="other" />
+this.layer = Extension.UILayerScene; 
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
