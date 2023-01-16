@@ -61,7 +61,7 @@ ___
 
 ### addExitListener <Score text="addExitListener" /> 
 
-▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加退出游戏时执行的回调函数
 
@@ -74,7 +74,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addExitListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addExitListener(this.testFunction); 
 public testFunction() {
 }
 // 移除监听
@@ -97,7 +97,7 @@ ___
 
 ### addFocusListener <Score text="addFocusListener" /> 
 
-▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加窗口聚焦时执行的回调函数
 
@@ -110,7 +110,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addFocusListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addFocusListener(this.testFunction); 
 public testFunction() {
 }
 // 移除监听
@@ -155,7 +155,7 @@ ___
 
 ### addOnPauseListener <Score text="addOnPauseListener" /> 
 
-▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加OnPause开始时执行的回调函数
 
@@ -169,7 +169,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnPauseListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addOnPauseListener(this.testFunction); 
 public testFunction() {
 }
 // 移除监听
@@ -192,7 +192,7 @@ ___
 
 ### addOnResumeListener <Score text="addOnResumeListener" /> 
 
-▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加OnPause结束时执行的回调函数
 
@@ -206,7 +206,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnResumeListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addOnResumeListener(this.testFunction); 
 public testFunction(leaveDuration: number) {
 }
 // 移除监听
@@ -299,7 +299,7 @@ ___
 
 ### addUnfocusedListener <Score text="addUnfocusedListener" /> 
 
-▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)  <Badge type="tip" text="other" />
 
 添加窗口失焦时执行的回调函数
 
@@ -312,7 +312,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addUnfocusedListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addUnfocusedListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
