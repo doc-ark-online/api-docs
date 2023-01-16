@@ -11,18 +11,6 @@
 | **[handled](UI.EventReply.md#handled)**(): [`EventReply`](UI.EventReply.md) <br> 事件已处理|
 | **[unHandled](UI.EventReply.md#unhandled)**(): [`EventReply`](UI.EventReply.md) <br> 事件未处理|
 
-默认构造
-
-**`Effect`**
-
-
-• `Private` **new EventReply**()
-
-UE的默认值构造
-
-**`Effect`**
-
-
 ## Accessors
 
 ### handled <Score text="handled" /> 
