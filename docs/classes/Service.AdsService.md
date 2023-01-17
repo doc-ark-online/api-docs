@@ -9,6 +9,9 @@
 ::: warning Precautions
 
 单例类，请使用getInstance获取对象
+目前仅支持233app运行游戏后播放广告，不支持在pc上运行PIE播放
+且需先在开发者后台->游戏服务里接入广告
+详情教程可参考 https://meta.feishu.cn/wiki/wikcny2aMGjAtoGVjzLC1pVjO7e
 
 :::
 
