@@ -1,6 +1,4 @@
-Service
-
-# Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
+# Service <Badge type="tip" text="Namespace" />
 
 ## Table of contents
 
