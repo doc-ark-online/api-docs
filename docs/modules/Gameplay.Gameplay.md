@@ -1,6 +1,4 @@
-Gameplay
-
-# Gameplay <Badge type="tip" text="Namespace" /> <Score text="Gameplay" />
+# Gameplay <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
