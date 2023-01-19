@@ -90,14 +90,14 @@ ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
-▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
+▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 通用Http请求
 
 
 使用示例:发送Http请求
 ```ts
-generalHttpRequest(Response,Url,Param,JsonContent) <Badge type="tip" text="other" />
+generalHttpRequest(Response,Url,Param,JsonContent) 
 ```
 
 #### Parameters
