@@ -1,6 +1,4 @@
-UI
-
-# UI <Badge type="tip" text="Namespace" /> <Score text="UI" />
+# UI <Badge type="tip" text="Namespace" /> 
 
 ## Table of contents
 
