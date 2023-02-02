@@ -8,7 +8,7 @@ import VPDocFooter from './VPDocFooter.vue'
 import VPLink from './VPLink.vue'
 import VPIconEdit from './icons/VPIconEdit.vue'
 import { pandora, usePandoraParams } from '../composables/pandora-view'
-
+// import VPFeadback from './VPFeadback.vue'
 const { theme, frontmatter } = useData()
 const pandoraParams = usePandoraParams()
 const route = useRoute()
@@ -38,6 +38,7 @@ provide('onContentUpdated', onContentUpdated)
     class="VPDoc"
     :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }"
   >
+    <!-- <VPFeadback /> -->
     <div class="container">
       <div v-if="hasAside" class="aside">
         <div class="aside-curtain" />
@@ -62,7 +63,6 @@ provide('onContentUpdated', onContentUpdated)
           </div>
         </div>
       </div>
-
       <div class="content">
         <div class="content-container">
           <slot name="doc-before" />

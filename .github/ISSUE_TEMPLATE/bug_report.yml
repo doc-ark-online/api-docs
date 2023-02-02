@@ -1,0 +1,39 @@
+name: "\U0001F41E Bug report"
+description: Create a report to help us improve docs
+labels: ['bug']
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 报错的页面地址
+      description: 请填入页面地址
+      placeholder: 请输入
+    validations:
+      required: true
+  - type: textarea
+    id: select-content
+    attributes:
+      label: 选中内容
+      description: 请填入对文档有疑惑的内容
+      placeholder: 请输入
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: 您对所选内容的反馈是？
+      multiple: false
+      options:
+        - 缺少信息 - 我想了解更多信息
+        - 不准确 - 与我实现的内容不一样
+        - 小错误 - 有错别字/语句不同/链接打不开
+        - 字太多 - 我想看图片/视频/代码实例
+    validations:
+    required: true
+  - type: textarea
+    id: other-content
+    attributes:
+      label: 其他
+      description: 感谢您的反馈，还有其他的补充说明么？
+      placeholder: 请输入
+    validations:
+      required: true
