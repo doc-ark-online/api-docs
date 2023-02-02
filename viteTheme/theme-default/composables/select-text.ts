@@ -1,9 +1,8 @@
 import { useTextSelection, useMousePressed } from '@vueuse/core'
-import { computed, watch } from 'vue'
+import { computed } from 'vue'
 
 export function useSelectText() {
   const { pressed } = useMousePressed()
-
   const state = useTextSelection()
 
   const isShow = computed(() => {
