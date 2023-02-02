@@ -19,6 +19,7 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: type
     attributes:
       label: 您对所选内容的反馈是？
       multiple: false
