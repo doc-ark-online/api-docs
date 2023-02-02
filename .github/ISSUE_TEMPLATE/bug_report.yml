@@ -29,7 +29,7 @@ body:
         - 小错误 - 有错别字/语句不同/链接打不开
         - 字太多 - 我想看图片/视频/代码实例
     validations:
-    required: true
+      required: true
   - type: textarea
     id: other-content
     attributes:
