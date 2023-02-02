@@ -1,6 +1,6 @@
 name: " documentation report"
 description: Create a report to help us improve docs
-labels: ['documentation']
+labels: ['documentation', 'bug']
 body:
   - type: input
     id: url
