@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "vitepress dev docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docker:build": "vitepress build docs",
