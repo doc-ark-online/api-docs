@@ -116,7 +116,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     editLink: {
       pattern:
         'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
-      text: '去 github 编辑'
+      text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
     docFooter: {
