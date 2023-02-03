@@ -14,7 +14,10 @@ const { page, frontmatter } = useData()
 const maxDepth = computed<number>(
   () => frontmatter.value.sidebarDepth || Infinity
 )
-const closeSideBar = inject('close-sidebar') as () => void
+const closeSideBar = () => {
+  window.getSelection()?.empty()
+  inject('close-sidebar') as () => void
+}
 </script>
 
 <template>
@@ -25,7 +28,11 @@ const closeSideBar = inject('close-sidebar') as () => void
     :href="item.link"
     @click="closeSideBar"
   >
-    <span v-html="item.text" class="link-text" :class="{ light: depth > 1 }"></span>
+    <span
+      v-html="item.text"
+      class="link-text"
+      :class="{ light: depth > 1 }"
+    ></span>
   </VPLink>
   <template
     v-if="'items' in item && depth < maxDepth"

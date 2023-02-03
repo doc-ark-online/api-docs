@@ -21,7 +21,11 @@ watchEffect(() => {
 
 const { page } = useData()
 watchEffect(() => {
-  if(props.items.some((item) => { return isActive(page.value.relativePath, item.link) })){
+  if (
+    props.items.some((item) => {
+      return isActive(page.value.relativePath, item.link)
+    })
+  ) {
     collapsed.value = false
   }
 })
@@ -105,11 +109,19 @@ function toggle() {
   fill: currentColor;
 }
 
-.icon.minus { opacity: 1; }
-.icon.plus  { opacity: 0; }
+.icon.minus {
+  opacity: 1;
+}
+.icon.plus {
+  opacity: 0;
+}
 
-.VPSidebarGroup.collapsed .icon.minus { opacity: 0; }
-.VPSidebarGroup.collapsed .icon.plus  { opacity: 1; }
+.VPSidebarGroup.collapsed .icon.minus {
+  opacity: 0;
+}
+.VPSidebarGroup.collapsed .icon.plus {
+  opacity: 1;
+}
 
 .items {
   overflow: hidden;
