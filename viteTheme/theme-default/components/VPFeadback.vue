@@ -14,7 +14,7 @@
   </Transition>
 </template>
 <script lang="ts" setup>
-import { computed, reactive, ref, watch } from 'vue'
+import { computed, onMounted, reactive, ref, watch } from 'vue'
 import { useEventListener } from '@vueuse/core'
 import VPIconEdit from './icons/VPIconEdit.vue'
 const xy = reactive({
@@ -29,35 +29,6 @@ const selectText = ref('')
 // 单击反馈的时候文案选区会消失。用来保留最后一次选中的文本
 const oldSelectText = ref('')
 const isShow = ref(false)
-
-useEventListener(window.document, 'selectionchange', () => {
-  const text = window.getSelection()?.toString() ?? ''
-  if (text.length === 0) {
-    selectText.value = text
-    isShow.value = false
-  }
-})
-
-useEventListener('mouseup', (event) => {
-  const text = window.getSelection()?.toString() ?? ''
-  // 处理单击其他地方的时候反馈按钮位置保持不动
-  if (isShow.value === false && text.length > 0) {
-    xy.x = event.x
-    xy.y = event.y
-  }
-
-  selectText.value = text
-  if (text.length > 0) {
-    isShow.value = true
-    showScrollTop.value = document.documentElement.scrollTop
-  } else {
-    isShow.value = false
-  }
-})
-
-useEventListener('scroll', (event) => {
-  scrollTop.value = document.documentElement.scrollTop
-})
 
 watch(selectText, (v) => {
   if (v) {
@@ -83,6 +54,37 @@ function tapGithub() {
     )}&url=${encodeURIComponent(window.location.href)}`
   )
 }
+
+onMounted(() => {
+  useEventListener(window.document, 'selectionchange', () => {
+    const text = window.getSelection()?.toString() ?? ''
+    if (text.length === 0) {
+      selectText.value = text
+      isShow.value = false
+    }
+  })
+
+  useEventListener('mouseup', (event) => {
+    const text = window.getSelection()?.toString() ?? ''
+    // 处理单击其他地方的时候反馈按钮位置保持不动
+    if (isShow.value === false && text.length > 0) {
+      xy.x = event.x
+      xy.y = event.y
+    }
+
+    selectText.value = text
+    if (text.length > 0) {
+      isShow.value = true
+      showScrollTop.value = document.documentElement.scrollTop
+    } else {
+      isShow.value = false
+    }
+  })
+
+  useEventListener('scroll', (event) => {
+    scrollTop.value = document.documentElement.scrollTop
+  })
+})
 </script>
 <style scoped>
 .feedback {
