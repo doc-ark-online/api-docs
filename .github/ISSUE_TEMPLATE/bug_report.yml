@@ -5,7 +5,7 @@ body:
   - type: input
     id: url
     attributes:
-      label: 报错的页面地址
+      label: 所属页面地址
       description: 请填入页面地址
       placeholder: 请输入
     validations:
@@ -21,7 +21,7 @@ body:
   - type: dropdown
     id: type
     attributes:
-      label: 您对所选内容的反馈是？
+      label: 请选择反馈的问题类型
       multiple: false
       options:
         - 缺少信息 - 我想了解更多信息
@@ -34,7 +34,7 @@ body:
   - type: textarea
     id: other-content
     attributes:
-      label: 其他
+      label: 补充说明
       description: 感谢您的反馈，还有其他的补充说明么？
       placeholder: 请输入
     validations:
