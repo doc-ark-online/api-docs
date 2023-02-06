@@ -30,7 +30,7 @@
 
 ### bind <Score text="bind" /> 
 
-▸ **bind**(`func`): `void` <Badge type="tip" text="other" />
+• **bind**(`func`): `void` <Badge type="tip" text="other" />
 
 绑定函数
 
@@ -46,7 +46,7 @@ ___
 
 ### execute <Score text="execute" /> 
 
-▸ **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
+• **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
 
 执行绑定函数
 
@@ -67,7 +67,7 @@ ___
 
 ### isBound <Score text="isBound" /> 
 
-▸ **isBound**(): `boolean` <Badge type="tip" text="other" />
+• **isBound**(): `boolean` <Badge type="tip" text="other" />
 
 是否绑定
 
@@ -82,7 +82,7 @@ ___
 
 ### unbind <Score text="unbind" /> 
 
-▸ **unbind**(): `void` <Badge type="tip" text="other" />
+• **unbind**(): `void` <Badge type="tip" text="other" />
 
 解绑函数
 

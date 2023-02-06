@@ -36,7 +36,7 @@
 
 ### play <Score text="play" /> 
 
-▸ **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` <Badge type="tip" text="other" />
 
 播放这个姿态对象, 并返回执行结果
 
@@ -60,7 +60,7 @@ ___
 
 ### playInternal <Score text="playInternal" /> 
 
-▸ `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
+• `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
 
 播放姿态的内部实现
 
@@ -75,7 +75,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-▸ **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` <Badge type="tip" text="other" />
 
 停止这个姿态对象, 并返回执行结果
 
@@ -99,7 +99,7 @@ ___
 
 ### stopInternal <Score text="stopInternal" /> 
 
-▸ **stopInternal**(): `boolean` <Badge type="tip" text="other" />
+• **stopInternal**(): `boolean` <Badge type="tip" text="other" />
 
 停止姿态的内部实现
 

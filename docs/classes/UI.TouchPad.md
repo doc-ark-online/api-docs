@@ -119,7 +119,7 @@
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
 
 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁
 

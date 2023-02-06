@@ -69,9 +69,9 @@
 
 ### color <Score text="color" /> 
 
-• `set` **color**(`inColor`): `void`
+• `set` **color**(`inColor`): `void` <Badge type="tip" text="other" />
 
-设置color picker的颜色 <Badge type="tip" text="other" />
+设置color picker的颜色
 
 
 #### Parameters
@@ -160,7 +160,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`ColorPick`](UI.ColorPick.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`ColorPick`](UI.ColorPick.md) <Badge type="tip" text="other" />
 
 创建 ColorPick 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

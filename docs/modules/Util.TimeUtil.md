@@ -13,14 +13,12 @@
 
 | Functions |
 | :-----|
-| **[clear](Util.TimeUtil.md#clear)**(): `void` <br> 清除所有|
 | **[clearDelayExecute](Util.TimeUtil.md#cleardelayexecute)**(`number`): `void` <br> 清除delayExecute|
 | **[clearInterval](Util.TimeUtil.md#clearinterval)**(`number`): `void` <br> 清除setInterval|
 | **[delayExecute](Util.TimeUtil.md#delayexecute)**(() => `void`, `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Util.TimeUtil.md#delaysecond)**(`number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待，不可取消|
 | **[delayTime](Util.TimeUtil.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](Util.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
-| **[getExecuteTime](Util.TimeUtil.md#getexecutetime)**(() => `void`): `number` <br> 获取一个方法的执行时间|
 | **[parseTime](Util.TimeUtil.md#parsetime)**(`Date`, `string`): `string` <br> 格式化时间戳|
 | **[setInterval](Util.TimeUtil.md#setinterval)**(() => `void`, `number`, () => `boolean`): `number` <br> 按一定时间间隔执行方法|
 | **[time](Util.TimeUtil.md#time)**(): `number` <br> 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
@@ -56,19 +54,9 @@ ___
 
 ## Functions
 
-### clear <Score text="clear" /> 
-
-▸ **clear**(): `void` <Badge type="tip" text="other" />
-
-清除所有
-
-
-
-___
-
 ### clearDelayExecute <Score text="clearDelayExecute" /> 
 
-▸ **clearDelayExecute**(`id`): `void` <Badge type="tip" text="other" />
+• **clearDelayExecute**(`id`): `void` <Badge type="tip" text="other" />
 
 清除delayExecute
 
@@ -84,7 +72,7 @@ ___
 
 ### clearInterval <Score text="clearInterval" /> 
 
-▸ **clearInterval**(`id`): `void` <Badge type="tip" text="other" />
+• **clearInterval**(`id`): `void` <Badge type="tip" text="other" />
 
 清除setInterval
 
@@ -100,7 +88,7 @@ ___
 
 ### delayExecute <Score text="delayExecute" /> 
 
-▸ **delayExecute**(`handler`, `frameNum?`): `number` <Badge type="tip" text="other" />
+• **delayExecute**(`handler`, `frameNum?`): `number` <Badge type="tip" text="other" />
 
 延迟一定帧数执行方法
 
@@ -122,7 +110,7 @@ ___
 
 ### delaySecond <Score text="delaySecond" /> 
 
-▸ **delaySecond**(`second`): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **delaySecond**(`second`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 延迟一定秒数,用于异步方法中间的等待，不可取消
 
@@ -143,7 +131,7 @@ ___
 
 ### delayTime <Score text="delayTime" /> 
 
-▸ **delayTime**(): `number` <Badge type="tip" text="other" />
+• **delayTime**(): `number` <Badge type="tip" text="other" />
 
 每一帧经过的时间 (单位：秒)
 
@@ -164,7 +152,7 @@ ___
 
 ### elapsedTime <Score text="elapsedTime" /> 
 
-▸ **elapsedTime**(): `number` <Badge type="tip" text="other" />
+• **elapsedTime**(): `number` <Badge type="tip" text="other" />
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
@@ -183,30 +171,9 @@ ___
 
 ___
 
-### getExecuteTime <Score text="getExecuteTime" /> 
-
-▸ **getExecuteTime**(`fn`): `number` <Badge type="tip" text="other" />
-
-获取一个方法的执行时间
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fn` | () => `void` |  方法 |
-
-#### Returns
-
-`number`
-
-时间(毫秒)
-
-___
-
 ### parseTime <Score text="parseTime" /> 
 
-▸ **parseTime**(`timeData`, `format?`): `string` <Badge type="tip" text="other" />
+• **parseTime**(`timeData`, `format?`): `string` <Badge type="tip" text="other" />
 
 格式化时间戳
 
@@ -228,7 +195,7 @@ ___
 
 ### setInterval <Score text="setInterval" /> 
 
-▸ **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` <Badge type="tip" text="other" />
+• **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` <Badge type="tip" text="other" />
 
 按一定时间间隔执行方法
 
@@ -251,7 +218,7 @@ ___
 
 ### time <Score text="time" /> 
 
-▸ **time**(): `number` <Badge type="tip" text="other" />
+• **time**(): `number` <Badge type="tip" text="other" />
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
 

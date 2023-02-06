@@ -206,7 +206,7 @@ Quaternion(0,0,0,1)
 
 ### clone <Score text="clone" /> 
 
-▸ **clone**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **clone**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 克隆当前四元数。
 
@@ -221,7 +221,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 判断当前四元数是否在误差范围内与指定向量相等。
 
@@ -243,7 +243,7 @@ ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-▸ **fromRotation**(`v`): `void` <Badge type="tip" text="other" />
+• **fromRotation**(`v`): `void` <Badge type="tip" text="other" />
 
 当前四元数读取一个旋转数据
 
@@ -259,7 +259,7 @@ ___
 
 ### getAxisX <Score text="getAxisX" /> 
 
-▸ **getAxisX**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisX**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回定义此四元数的坐标系 X 轴向量
 
@@ -286,7 +286,7 @@ ___
 
 ### getAxisY <Score text="getAxisY" /> 
 
-▸ **getAxisY**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisY**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回定义此四元数的坐标系 Y 轴向量
 
@@ -313,7 +313,7 @@ ___
 
 ### getAxisZ <Score text="getAxisZ" /> 
 
-▸ **getAxisZ**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisZ**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回定义此四元数的坐标系 Z 轴向量
 
@@ -340,7 +340,7 @@ ___
 
 ### getEuler <Score text="getEuler" /> 
 
-▸ **getEuler**(`outerZ?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getEuler**(`outerZ?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX
 
@@ -368,7 +368,7 @@ ___
 
 ### getEulerAngles <Score text="getEulerAngles" /> 
 
-▸ **getEulerAngles**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getEulerAngles**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回当前四元数转化的欧拉角（x-y-z）。
 
@@ -383,7 +383,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-▸ **normalize**(): `void` <Badge type="tip" text="other" />
+• **normalize**(): `void` <Badge type="tip" text="other" />
 
 将当前四元数归一化
 
@@ -393,7 +393,7 @@ ___
 
 ### set <Score text="set" /> 
 
-▸ **set**(`other`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **set**(`other`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 设置当前四元数使其与指定四元数相等。
 
@@ -410,7 +410,7 @@ ___
 
 `this`
 
-▸ **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 设置当前四元数指定元素值。
 
@@ -434,7 +434,7 @@ ___
 
 ### setEulerAngles <Score text="setEulerAngles" /> 
 
-▸ **setEulerAngles**(`euler`): `void` <Badge type="tip" text="other" />
+• **setEulerAngles**(`euler`): `void` <Badge type="tip" text="other" />
 
 设置欧拉角
 
@@ -450,7 +450,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
+• **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
 判断当前四元数是否与指定四元数相等。
 
@@ -471,7 +471,7 @@ ___
 
 ### toRotation <Score text="toRotation" /> 
 
-▸ **toRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• **toRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
 
 获取一个当前四元数的旋转数据
 
@@ -486,7 +486,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-▸ **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` <Badge type="tip" text="other" />
 
 输出为字符串
 
@@ -501,7 +501,7 @@ ___
 
 ### calculateW <Score text="calculateW" /> 
 
-▸ `Static` **calculateW**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **calculateW**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据 xyz 分量计算 w 分量，默认已归一化
 
@@ -529,7 +529,7 @@ ___
 
 ### conjugate <Score text="conjugate" /> 
 
-▸ `Static` **conjugate**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **conjugate**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 求共轭四元数，对单位四元数与求逆等价，但更高效
 
@@ -557,7 +557,7 @@ ___
 
 ### dot <Score text="dot" /> 
 
-▸ `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
 
 四元数点积（数量积）
 
@@ -579,7 +579,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 排除浮点数误差的四元数近似等价判断
 
@@ -602,7 +602,7 @@ ___
 
 ### fromAngleZ <Score text="fromAngleZ" /> 
 
-▸ `Static` **fromAngleZ**(`z`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAngleZ**(`z`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据 2D 角度（0, 0, z）计算四元数
 
@@ -630,7 +630,7 @@ ___
 
 ### fromAxes <Score text="fromAxes" /> 
 
-▸ `Static` **fromAxes**(`xAxis`, `yAxis`, `zAxis`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAxes**(`xAxis`, `yAxis`, `zAxis`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直
 
@@ -660,7 +660,7 @@ ___
 
 ### fromAxisAngle <Score text="fromAxisAngle" /> 
 
-▸ `Static` **fromAxisAngle**(`axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAxisAngle**(`axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据旋转轴和旋转弧度计算四元数
 
@@ -689,7 +689,7 @@ ___
 
 ### fromMatrix3x3 <Score text="fromMatrix" /> 
 
-▸ `Static` **fromMatrix3x3**(`m`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromMatrix3x3**(`m`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息
 
@@ -717,7 +717,7 @@ ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-▸ `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 读取旋转角数据创建或者写入一个四元数
 
@@ -745,7 +745,7 @@ ___
 
 ### fromViewUp <Score text="fromViewUp" /> 
 
-▸ `Static` **fromViewUp**(`view`, `up?`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromViewUp**(`view`, `up?`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 根据视口的前方向和上方向计算四元数
 
@@ -774,7 +774,7 @@ ___
 
 ### getAxis <Score text="getAxis" /> 
 
-▸ `Static` **getAxis**(`q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **getAxis**(`q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 获取四元数的旋转轴
 
@@ -802,7 +802,7 @@ ___
 
 ### getAxisAngle <Score text="getAxisAngle" /> 
 
-▸ `Static` **getAxisAngle**(`q`): `number` <Badge type="tip" text="other" />
+• `Static` **getAxisAngle**(`q`): `number` <Badge type="tip" text="other" />
 
 获取四元数的旋转弧度
 
@@ -823,7 +823,7 @@ ___
 
 ### invert <Score text="invert" /> 
 
-▸ `Static` **invert**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **invert**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 四元数求逆
 
@@ -851,7 +851,7 @@ ___
 
 ### lerp <Score text="lerp" /> 
 
-▸ `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 逐元素线性插值： A + t * (B - A)
 
@@ -881,7 +881,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 四元数乘法
 
@@ -910,7 +910,7 @@ ___
 
 ### multiplyVector <Score text="multiplyVector" /> 
 
-▸ `Static` **multiplyVector**(`a`, `q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **multiplyVector**(`a`, `q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 四元数乘以一个三维向量(通常用于向量通过四元数旋转)
 
@@ -939,7 +939,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-▸ `Static` **normalize**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **normalize**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 归一化四元数
 
@@ -967,7 +967,7 @@ ___
 
 ### rotateAround <Score text="rotateAround" /> 
 
-▸ `Static` **rotateAround**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateAround**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 绕世界空间下指定轴旋转四元数
 
@@ -997,7 +997,7 @@ ___
 
 ### rotateAroundLocal <Score text="rotateAroundLocal" /> 
 
-▸ `Static` **rotateAroundLocal**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateAroundLocal**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 绕本地空间下指定轴旋转四元数
 
@@ -1027,7 +1027,7 @@ ___
 
 ### rotateX <Score text="rotateX" /> 
 
-▸ `Static` **rotateX**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateX**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 绕 X 轴旋转指定四元数
 
@@ -1056,7 +1056,7 @@ ___
 
 ### rotateY <Score text="rotateY" /> 
 
-▸ `Static` **rotateY**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateY**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 绕 Y 轴旋转指定四元数
 
@@ -1085,7 +1085,7 @@ ___
 
 ### rotateZ <Score text="rotateZ" /> 
 
-▸ `Static` **rotateZ**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateZ**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 绕 Z 轴旋转指定四元数
 
@@ -1114,7 +1114,7 @@ ___
 
 ### rotationTo <Score text="rotationTo" /> 
 
-▸ `Static` **rotationTo**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotationTo**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 设置四元数为两向量a和b间的最短路径旋转，默认两向量都已归一化
 
@@ -1143,7 +1143,7 @@ ___
 
 ### slerp <Score text="slerp" /> 
 
-▸ `Static` **slerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **slerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 四元数球面插值
 
@@ -1173,7 +1173,7 @@ ___
 
 ### sqlerp <Score text="sqlerp" /> 
 
-▸ `Static` **sqlerp**(`a`, `b`, `c`, `d`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **sqlerp**(`a`, `b`, `c`, `d`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
 
 带两个控制点的四元数球面插值
 
@@ -1205,7 +1205,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
+• `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
 四元数等价判断
 
@@ -1227,7 +1227,7 @@ ___
 
 ### toMatrix3x3 <Score text="toMatrix" /> 
 
-▸ `Static` **toMatrix3x3**(`q`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **toMatrix3x3**(`q`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 根据四元数旋转信息计算矩阵
 

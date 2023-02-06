@@ -11,8 +11,8 @@ MobileEditor
 
 | Classes |
 | :-----|
-| [ConvertScreenResult](../classes/MobileEditor.ConvertScreenResult.md) <br> 屏幕坐标转换结果|
 | [EditorMode](../classes/MobileEditor.EditorMode.md) <br> 移动编辑器模式切换|
+| [Gizmo](../classes/MobileEditor.Gizmo.md) <br> Gizmo|
 
 | Functions |
 | :-----|
@@ -24,11 +24,12 @@ MobileEditor
 | **[beginActorTransformChange](MobileEditor.MobileEditor.md#beginactortransformchange)**(`Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](MobileEditor.MobileEditor.md#calculateactorequalscale)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
 | **[captureAvatar](MobileEditor.MobileEditor.md#captureavatar)**([`CharacterBase`](../classes/Gameplay.CharacterBase.md), [`Vector`](../classes/Type.Vector.md), [`Rotation`](../classes/Type.Rotation.md), [`Vector2`](../classes/Type.Vector2.md), `boolean`, `number`, `string`, (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
-| **[convertScreenLocationToWorldSpace](MobileEditor.MobileEditor.md#convertscreenlocationtoworldspace)**(`number`, `number`): [`ConvertScreenResult`](../classes/MobileEditor.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[convertScreenLocationToWorldSpace](MobileEditor.MobileEditor.md#convertscreenlocationtoworldspace)**(`number`, `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[endActorPropertiesChange](MobileEditor.MobileEditor.md#endactorpropertieschange)**(`Base`): `void` <br> 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](MobileEditor.MobileEditor.md#endactortransformchange)**(`Base`, `boolean`): `void` <br> 结束记录actor的transform|
 | **[getEditorPawnLocation](MobileEditor.MobileEditor.md#geteditorpawnlocation)**(): [`Vector`](../classes/Type.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
 | **[getEditorPawnRotation](MobileEditor.MobileEditor.md#geteditorpawnrotation)**(): [`Rotation`](../classes/Type.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
+| **[getGizmo](MobileEditor.MobileEditor.md#getgizmo)**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)**([`CharacterBase`](../classes/Gameplay.CharacterBase.md), [`Vector`](../classes/Type.Vector.md), [`Rotation`](../classes/Type.Rotation.md), [`Vector2`](../classes/Type.Vector2.md), `boolean`, `number`, `string`, (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
 | **[getOneFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 返回单指滑动的代理|
 | **[getPinchGestureDelegate](MobileEditor.MobileEditor.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 返回挤压手势的代理|
@@ -67,7 +68,7 @@ MobileEditor
 
 ### UGCEditor <Score text="UGCEditor" /> 
 
-▸ **UGCEditor**(`target`): `void`
+• **UGCEditor**(`target`): `void`
 
 UGC Editor使用的装饰器,避免数据被还原
 
@@ -85,7 +86,7 @@ ___
 
 ### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
 
-▸ **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="other" />
+• **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="other" />
 
 添加对编辑器人物的输入 - 只作用于编辑器人物
 
@@ -101,7 +102,7 @@ ___
 
 ### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
 
-▸ **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 异步对指定虚拟角色进行截取，截图保存在本地固定路径下
 
@@ -128,7 +129,7 @@ ___
 
 ### asyncSaveProject <Score text="asyncSaveProject" /> 
 
-▸ **asyncSaveProject**(): `Promise`<`boolean`\> <Badge type="tip" text="other" />
+• **asyncSaveProject**(): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 保存当前游戏项目
 
@@ -150,7 +151,7 @@ ___
 
 ### beginActorPropertiesChange <Score text="beginActorPropertiesChange" /> 
 
-▸ **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
+• **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
 
 开始记录撤销恢复的actor属性
 
@@ -166,7 +167,7 @@ ___
 
 ### beginActorTransformChange <Score text="beginActorTransformChange" /> 
 
-▸ **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="other" />
+• **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="other" />
 
 开始记录actor的transform属性
 
@@ -182,9 +183,10 @@ ___
 
 ### calculateActorEqualScale <Score text="calculateActorEqualScale" /> 
 
-▸ **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md)
+• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
 计算actor的等比缩放
+
 
 #### Parameters
 
@@ -197,11 +199,13 @@ ___
 
 [`Vector`](../classes/Type.Vector.md)
 
+计算后的缩放值
+
 ___
 
 ### captureAvatar <Score text="captureAvatar" /> 
 
-▸ **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
+• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
 
 同步对指定虚拟角色进行截取，截图保存在本地固定路径下
 
@@ -224,7 +228,7 @@ ___
 
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
 
-▸ **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/MobileEditor.ConvertScreenResult.md) <Badge type="tip" text="other" />
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
 将二维屏幕位置转换为世界空间三维位置和方向
 
@@ -238,7 +242,7 @@ ___
 
 #### Returns
 
-[`ConvertScreenResult`](../classes/MobileEditor.ConvertScreenResult.md)
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
 
 屏幕坐标转换结果
 
@@ -246,7 +250,7 @@ ___
 
 ### endActorPropertiesChange <Score text="endActorPropertiesChange" /> 
 
-▸ **endActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
+• **endActorPropertiesChange**(`target`): `void` <Badge type="tip" text="other" />
 
 结束记录actor属性的撤销恢复
 
@@ -262,7 +266,7 @@ ___
 
 ### endActorTransformChange <Score text="endActorTransformChange" /> 
 
-▸ **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="other" />
+• **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="other" />
 
 结束记录actor的transform
 
@@ -279,7 +283,7 @@ ___
 
 ### getEditorPawnLocation <Score text="getEditorPawnLocation" /> 
 
-▸ **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
+• **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
 
 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
 
@@ -294,7 +298,7 @@ ___
 
 ### getEditorPawnRotation <Score text="getEditorPawnRotation" /> 
 
-▸ **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md) <Badge type="tip" text="other" />
+• **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md) <Badge type="tip" text="other" />
 
 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
 
@@ -307,9 +311,24 @@ ___
 
 ___
 
+### getGizmo <Score text="getGizmo" /> 
+
+• **getGizmo**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <Badge type="tip" text="other" />
+
+获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+
+#### Returns
+
+[`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+返回编辑态的坐标轴
+
+___
+
 ### getHeadSculpture <Score text="getHeadSculpture" /> 
 
-▸ **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
+• **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="other" />
 
 对指定虚拟角色进行截取后上传到服务器
 
@@ -332,7 +351,7 @@ ___
 
 ### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
 
-▸ **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
 返回单指滑动的代理
 
@@ -347,7 +366,7 @@ ___
 
 ### getPinchGestureDelegate <Score text="getPinchGestureDelegate" /> 
 
-▸ **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="other" />
+• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="other" />
 
 返回挤压手势的代理
 
@@ -362,7 +381,7 @@ ___
 
 ### getSavedDir <Score text="getSavedDir" /> 
 
-▸ **getSavedDir**(): `string` <Badge type="tip" text="other" />
+• **getSavedDir**(): `string` <Badge type="tip" text="other" />
 
 获取截图的保存路径
 
@@ -377,7 +396,7 @@ ___
 
 ### getTapGestureDelegate <Score text="getTapGestureDelegate" /> 
 
-▸ **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
 获取点击事件的代理
 
@@ -392,7 +411,7 @@ ___
 
 ### getTouchBeganGestureDelegate <Score text="getTouchBeganGestureDelegate" /> 
 
-▸ **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
 有手指在屏幕按下了
 
@@ -407,7 +426,7 @@ ___
 
 ### getTouchData <Score text="getTouchData" /> 
 
-▸ **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[] <Badge type="tip" text="other" />
+• **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[] <Badge type="tip" text="other" />
 
 获取touch的数组
 
@@ -422,7 +441,7 @@ ___
 
 ### getTouchEndGestureDelegate <Score text="getTouchEndGestureDelegate" /> 
 
-▸ **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="other" />
+• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="other" />
 
 有手指抬起了
 
@@ -437,7 +456,7 @@ ___
 
 ### getTouchMoveGestureDelegate <Score text="getTouchMoveGestureDelegate" /> 
 
-▸ **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
 手指在屏幕滑动
 
@@ -452,7 +471,7 @@ ___
 
 ### getTwoFingerMoveGestureDelegate <Score text="getTwoFingerMoveGestureDelegate" /> 
 
-▸ **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
 
 返回双指滑动的代理
 
@@ -467,7 +486,7 @@ ___
 
 ### markActorRenderStateDirty <Score text="markActorRenderStateDirty" /> 
 
-▸ **markActorRenderStateDirty**(`target`): `void` <Badge type="tip" text="other" />
+• **markActorRenderStateDirty**(`target`): `void` <Badge type="tip" text="other" />
 
 标记Actor所有组件的渲染状态为脏
 
@@ -483,7 +502,7 @@ ___
 
 ### mobileReleaseGame <Score text="mobileReleaseGame" /> 
 
-▸ **mobileReleaseGame**(`InGameName`): `void` <Badge type="tip" text="other" />
+• **mobileReleaseGame**(`InGameName`): `void` <Badge type="tip" text="other" />
 
 移动端编辑器发布游戏
 
@@ -500,7 +519,7 @@ ___
 
 ### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
 
-▸ **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
+• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
 获取角色在世界中的位置，投射到屏幕上
 
@@ -522,7 +541,7 @@ ___
 
 ### recordingCharacterGif <Score text="recordingCharacterGif" /> 
 
-▸ **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="other" />
+• **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="other" />
 
 连续截图，生成GIF素材发送给服务器
 
@@ -551,7 +570,7 @@ ___
 
 ### redo <Score text="redo" /> 
 
-▸ **redo**(): `void` <Badge type="tip" text="other" />
+• **redo**(): `void` <Badge type="tip" text="other" />
 
 执行恢复操作
 
@@ -561,7 +580,7 @@ ___
 
 ### saveProject <Score text="saveProject" /> 
 
-▸ **saveProject**(): `void` <Badge type="tip" text="other" />
+• **saveProject**(): `void` <Badge type="tip" text="other" />
 
 保存当前游戏项目
 
@@ -578,7 +597,7 @@ ___
 
 ### screenShot <Score text="screenShot" /> 
 
-▸ **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void` <Badge type="tip" text="other" />
+• **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void` <Badge type="tip" text="other" />
 
 屏幕指定区域截图
 
@@ -598,7 +617,7 @@ ___
 
 ### screenShotExist <Score text="screenShotExist" /> 
 
-▸ **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="other" />
+• **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="other" />
 
 验证绝对路径下截图是否存在
 
@@ -619,7 +638,7 @@ ___
 
 ### sendShareId <Score text="sendShareId" /> 
 
-▸ **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="other" />
+• **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="other" />
 
 将角色数据ID连同角色截图一同发给MGS
 
@@ -643,7 +662,7 @@ ___
 
 ### setEditorCameraLocation <Score text="setEditorCameraLocation" /> 
 
-▸ **setEditorCameraLocation**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorCameraLocation**(`input`): `boolean` <Badge type="tip" text="other" />
 
 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
 
@@ -664,7 +683,7 @@ ___
 
 ### setEditorCameraRotation <Score text="setEditorCameraRotation" /> 
 
-▸ **setEditorCameraRotation**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorCameraRotation**(`input`): `boolean` <Badge type="tip" text="other" />
 
 添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
 
@@ -685,7 +704,7 @@ ___
 
 ### setEditorCameraTransform <Score text="setEditorCameraTransform" /> 
 
-▸ **setEditorCameraTransform**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorCameraTransform**(`input`): `boolean` <Badge type="tip" text="other" />
 
 设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
 
@@ -706,7 +725,7 @@ ___
 
 ### setEditorPawnLocation <Score text="setEditorPawnLocation" /> 
 
-▸ **setEditorPawnLocation**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorPawnLocation**(`input`): `boolean` <Badge type="tip" text="other" />
 
 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
 
@@ -727,7 +746,7 @@ ___
 
 ### setEditorPawnRotation <Score text="setEditorPawnRotation" /> 
 
-▸ **setEditorPawnRotation**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorPawnRotation**(`input`): `boolean` <Badge type="tip" text="other" />
 
 添加对编辑器人物的输入 - 只作用于编辑器人物
 
@@ -748,7 +767,7 @@ ___
 
 ### setEditorPawnTransform <Score text="setEditorPawnTransform" /> 
 
-▸ **setEditorPawnTransform**(`input`): `boolean` <Badge type="tip" text="other" />
+• **setEditorPawnTransform**(`input`): `boolean` <Badge type="tip" text="other" />
 
 设置编辑器人物的空间信息
 
@@ -769,7 +788,7 @@ ___
 
 ### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
 
-▸ **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
+• **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
 
 双指移动的时间- 必须大于这个时间才执行双指移动事件
 
@@ -785,7 +804,7 @@ ___
 
 ### setPinchAngleTolerance <Score text="setPinchAngleTolerance" /> 
 
-▸ **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="other" />
+• **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="other" />
 
 挤压手势的偏差角度
 
@@ -801,7 +820,7 @@ ___
 
 ### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 
 
-▸ **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
+• **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="other" />
 
 单指移动的时间- 必须大于这个时间才会开始执行单指移动
 
@@ -817,7 +836,7 @@ ___
 
 ### setSwipeTolerance <Score text="setSwipeTolerance" /> 
 
-▸ **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="other" />
+• **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="other" />
 
 双指移动的偏差量- 值越大误差则可以越大
 
@@ -833,7 +852,7 @@ ___
 
 ### setTapTime <Score text="setTapTime" /> 
 
-▸ **setTapTime**(`time`): `void` <Badge type="tip" text="other" />
+• **setTapTime**(`time`): `void` <Badge type="tip" text="other" />
 
 tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
 
@@ -849,7 +868,7 @@ ___
 
 ### undo <Score text="undo" /> 
 
-▸ **undo**(): `void` <Badge type="tip" text="other" />
+• **undo**(): `void` <Badge type="tip" text="other" />
 
 执行撤销操作
 
@@ -859,7 +878,7 @@ ___
 
 ### uploadScreenShot <Score text="uploadScreenShot" /> 
 
-▸ **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void` <Badge type="tip" text="other" />
+• **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void` <Badge type="tip" text="other" />
 
 上传角色头像或全身照到服务器后发送到MGS
 
@@ -883,7 +902,7 @@ ___
 
 ### uploadScreenShots <Score text="uploadScreenShots" /> 
 
-▸ **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="other" />
+• **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="other" />
 
 上传角色头像及全身照到服务器后发送到MGS
 

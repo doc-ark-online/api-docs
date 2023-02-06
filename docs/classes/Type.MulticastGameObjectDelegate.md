@@ -16,7 +16,7 @@
 
 ### add <Score text="add" /> 
 
-▸ **add**(`func`): `void` <Badge type="tip" text="other" />
+• **add**(`func`): `void` <Badge type="tip" text="other" />
 
 添加回调函数
 
@@ -32,7 +32,7 @@ ___
 
 ### broadcast <Score text="broadcast" /> 
 
-▸ **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
+• **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
 
 触发代理事件
 
@@ -48,7 +48,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
+• **remove**(`func`): `void` <Badge type="tip" text="other" />
 
 删除回调函数
 

@@ -72,7 +72,7 @@ ___
 
 ### getArkBalance <Score text="getArkBalance" /> 
 
-▸ **getArkBalance**(): `void` <Badge type="tip" text="other" />
+• **getArkBalance**(): `void` <Badge type="tip" text="other" />
 
 获取Ark币余额
 
@@ -88,7 +88,7 @@ ___
 
 ### placeOrder <Score text="placeOrder" /> 
 
-▸ **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
+• **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
 
 下单指定数量的指定商品
 
@@ -112,7 +112,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
 
 获取应用内购管理器全局实例
 

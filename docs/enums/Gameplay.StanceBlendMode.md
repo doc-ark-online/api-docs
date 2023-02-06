@@ -8,16 +8,15 @@
 
 | Enumeration Members |
 | :-----|
-| **[BlendLower](Gameplay.StanceBlendMode.md#blendlower)** = ``2`` <br> 只混合下半身|
-| **[BlendUpper](Gameplay.StanceBlendMode.md#blendupper)** = ``1`` <br> 只混合上半身|
-| **[None](Gameplay.StanceBlendMode.md#none)** = ``0`` <br> 不指定|
-| **[WholeBody](Gameplay.StanceBlendMode.md#wholebody)** = ``3`` <br> 全身混合|
+| **[BlendLower](Gameplay.StanceBlendMode.md#blendlower)** = ``1`` <br> 只混合下半身|
+| **[BlendUpper](Gameplay.StanceBlendMode.md#blendupper)** = ``0`` <br> 只混合上半身|
+| **[WholeBody](Gameplay.StanceBlendMode.md#wholebody)** = ``2`` <br> 全身混合|
 
 ## Enumeration Members
 
 ### BlendLower <Score text="BlendLower" /> 
 
-• **BlendLower** = ``2``
+• **BlendLower** = ``1``
 
 只混合下半身
 
@@ -25,22 +24,14 @@ ___
 
 ### BlendUpper <Score text="BlendUpper" /> 
 
-• **BlendUpper** = ``1``
+• **BlendUpper** = ``0``
 
 只混合上半身
 
 ___
 
-### None <Score text="None" /> 
-
-• **None** = ``0``
-
-不指定
-
-___
-
 ### WholeBody <Score text="WholeBody" /> 
 
-• **WholeBody** = ``3``
+• **WholeBody** = ``2``
 
 全身混合

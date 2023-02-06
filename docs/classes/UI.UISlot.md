@@ -202,13 +202,13 @@ ___
 
 ### zOrder <Score text="zOrder" /> 
 
-• `get` **zOrder**(): `number`
+• `get` **zOrder**(): `number` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-获取zOrder <Badge type="tip" text="other" />
+获取zOrder
 
 
 #### Returns
@@ -217,13 +217,13 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 zOrder
 
-• `set` **zOrder**(`InZOrder`): `void`
+• `set` **zOrder**(`InZOrder`): `void` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
 since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
 
-设置zOrder <Badge type="tip" text="other" />
+设置zOrder
 
 
 #### Parameters
@@ -237,7 +237,7 @@ since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取�
 
 ### equal <Score text="equal" /> 
 
-▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
+• **equal**(`that`): `boolean` <Badge type="tip" text="other" />
 
 **`Deprecated`**
 

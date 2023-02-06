@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Chinese](Type.LanguageType.md#chinese)** = ``0`` <br> **`Description`**|
-| **[English](Type.LanguageType.md#english)** = ``1`` <br> **`Description`**|
-| **[Portuguese](Type.LanguageType.md#portuguese)** = ``2`` <br> **`Description`**|
+| **[Chinese](Type.LanguageType.md#chinese)** = ``0`` <br> 中文|
+| **[English](Type.LanguageType.md#english)** = ``1`` <br> 英文|
+| **[Portuguese](Type.LanguageType.md#portuguese)** = ``2`` <br> 葡萄牙语|
 
 ## Enumeration Members
 

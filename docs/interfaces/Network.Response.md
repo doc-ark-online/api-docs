@@ -63,9 +63,9 @@ ___
 
 ### json <Score text="json" /> 
 
-▸ **json**<`T`\>(): `Promise`<`T`\>
+• **json**<`T`\>(): `Promise`<`T`\> <Badge type="tip" text="other" />
 
-数据返回json <Badge type="tip" text="other" />
+数据返回json
 
 
 #### Type parameters
@@ -84,7 +84,7 @@ ___
 
 ### text <Score text="text" /> 
 
-▸ **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 数据返回文本
 

@@ -54,11 +54,10 @@ ___
 
 ### getTouchVectorArray <Score text="getTouchVectorArray" /> 
 
-▸ **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
+• **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
 
 获取屏幕手指数的数组
 
-客户端生效
 
 #### Returns
 
@@ -70,9 +69,8 @@ ___
 
 ### setPlayerController <Score text="setPlayerController" /> 
 
-▸ **setPlayerController**(): `void` <Badge type="tip" text="other" />
+• **setPlayerController**(): `void` <Badge type="tip" text="other" />
 
 设置玩家控制器，使用前需调用一次
 
-客户端生效
 

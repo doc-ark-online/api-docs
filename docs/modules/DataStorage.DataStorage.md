@@ -23,7 +23,7 @@ DataStorage
 
 ### asyncGetCustomData <Score text="asyncGetCustomData" /> 
 
-▸ **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
+• **asyncGetCustomData**(`key`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
 异步获取自定义数据
 
@@ -44,7 +44,7 @@ ___
 
 ### asyncGetPlayerData <Score text="asyncGetPlayerData" /> 
 
-▸ **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
+• **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
 异步获取玩家数据
 
@@ -65,7 +65,7 @@ ___
 
 ### asyncRemoveCustomData <Score text="asyncRemoveCustomData" /> 
 
-▸ **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
+• **asyncRemoveCustomData**(`key`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步删除自定义数据
 
@@ -86,7 +86,7 @@ ___
 
 ### asyncRemovePlayerData <Score text="asyncRemovePlayerData" /> 
 
-▸ **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
+• **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步删除用户数据
 
@@ -107,7 +107,7 @@ ___
 
 ### asyncSetCustomData <Score text="asyncSetCustomData" /> 
 
-▸ **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
+• **asyncSetCustomData**(`key`, `value`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步设置自定义数据
 
@@ -129,7 +129,7 @@ ___
 
 ### asyncSetPlayerData <Score text="asyncSetPlayerData" /> 
 
-▸ **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
+• **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步设置自定义数据
 
@@ -157,7 +157,7 @@ ___
 
 ### setTemporaryStorage <Score text="setTemporaryStorage" /> 
 
-▸ **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
+• **setTemporaryStorage**(`isTemporary`): `void` <Badge type="tip" text="other" />
 
 设置数据存储环境是否是临时的
 
@@ -173,7 +173,7 @@ ___
 
 ### sizeOfData <Score text="sizeOfData" /> 
 
-▸ **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
+• **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
 
 返回data的当前大小。单位为bytes（字节）。
 

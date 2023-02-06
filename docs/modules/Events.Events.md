@@ -33,7 +33,7 @@ Events
 
 ### addClientListener <Score text="addClientListener" /> 
 
-▸ **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 服务器监听客户端发来的事件
 
@@ -61,7 +61,7 @@ ___
 
 ### addExitListener <Score text="addExitListener" /> 
 
-▸ **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+• **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加退出游戏时执行的回调函数
 
@@ -74,7 +74,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addExitListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addExitListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
@@ -97,7 +97,7 @@ ___
 
 ### addFocusListener <Score text="addFocusListener" /> 
 
-▸ **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+• **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加窗口聚焦时执行的回调函数
 
@@ -110,7 +110,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addFocusListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addFocusListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
@@ -133,7 +133,7 @@ ___
 
 ### addLocalListener <Score text="addLocalListener" /> 
 
-▸ **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 监听本地事件
 
@@ -155,7 +155,7 @@ ___
 
 ### addOnPauseListener <Score text="addOnPauseListener" /> 
 
-▸ **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+• **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加OnPause开始时执行的回调函数
 
@@ -169,7 +169,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnPauseListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addOnPauseListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
@@ -192,7 +192,7 @@ ___
 
 ### addOnResumeListener <Score text="addOnResumeListener" /> 
 
-▸ **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+• **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加OnPause结束时执行的回调函数
 
@@ -206,7 +206,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addOnResumeListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addOnResumeListener(this.testFunction);
 public testFunction(leaveDuration: number) {
 }
 // 移除监听
@@ -229,7 +229,7 @@ ___
 
 ### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
 
-▸ **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 监听玩家进入room事件
 
@@ -250,7 +250,7 @@ ___
 
 ### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
 
-▸ **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 监听玩家离开room事件
 
@@ -271,7 +271,7 @@ ___
 
 ### addServerListener <Score text="addServerListener" /> 
 
-▸ **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 客户端监听服务器事件
 
@@ -299,7 +299,7 @@ ___
 
 ### addUnfocusedListener <Score text="addUnfocusedListener" /> 
 
-▸ **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md)
+• **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 添加窗口失焦时执行的回调函数
 
@@ -312,7 +312,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let listener = Events.addUnfocusedListener(this.testFunction); <Badge type="tip" text="other" />
+let listener = Events.addUnfocusedListener(this.testFunction);
 public testFunction() {
 }
 // 移除监听
@@ -335,7 +335,7 @@ ___
 
 ### dispatchLocal <Score text="dispatchLocal" /> 
 
-▸ **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 发送本地事件
 
@@ -357,7 +357,7 @@ ___
 
 ### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
-▸ **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 服务器发送事件给所有客户端
 
@@ -385,7 +385,7 @@ ___
 
 ### dispatchToClient <Score text="dispatchToClient" /> 
 
-▸ **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 服务器发送事件给指定客户端
 
@@ -414,7 +414,7 @@ ___
 
 ### dispatchToServer <Score text="dispatchToServer" /> 
 
-▸ **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
 
 客户端发送事件给服务器
 

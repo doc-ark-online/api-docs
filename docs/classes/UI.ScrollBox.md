@@ -596,7 +596,7 @@ ___
 
 ### endInertialScrolling <Score text="endInertialScrolling" /> 
 
-▸ **endInertialScrolling**(): `void` <Badge type="tip" text="other" />
+• **endInertialScrolling**(): `void` <Badge type="tip" text="other" />
 
 立刻停止滚动
 
@@ -605,7 +605,7 @@ ___
 
 ### scrollToEnd <Score text="scrollToEnd" /> 
 
-▸ **scrollToEnd**(): `void` <Badge type="tip" text="other" />
+• **scrollToEnd**(): `void` <Badge type="tip" text="other" />
 
 滚动到底部
 
@@ -615,7 +615,7 @@ ___
 
 ### scrollToStart <Score text="scrollToStart" /> 
 
-▸ **scrollToStart**(): `void` <Badge type="tip" text="other" />
+• **scrollToStart**(): `void` <Badge type="tip" text="other" />
 
 滚动到开始位置
 
@@ -625,7 +625,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`ScrollBox`](UI.ScrollBox.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`ScrollBox`](UI.ScrollBox.md) <Badge type="tip" text="other" />
 
 创建 ScrollBox 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
 

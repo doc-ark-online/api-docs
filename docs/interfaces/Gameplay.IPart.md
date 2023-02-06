@@ -16,9 +16,7 @@
 
 ## Implemented by
 
-- [`HumanoidV1Face`](../classes/Gameplay.HumanoidV1Face.md)
-- [`HumanoidV1Hair`](../classes/Gameplay.HumanoidV1Hair.md)
-- [`HumanoidV1Trunk`](../classes/Gameplay.HumanoidV1Trunk.md)
+- [`HumanoidV1Part`](../classes/Gameplay.HumanoidV1Part.md)
 
 ## Table of contents
 
@@ -31,11 +29,11 @@
 
 ### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string` <Badge type="tip" text="other" />
+• **getMesh**(): `string` <Badge type="tip" text="other" />
 
 获取部位模型
 
-双端
+客户端服务端可调用
 
 #### Returns
 
@@ -47,7 +45,7 @@ ___
 
 ### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置部位模型
 
@@ -58,7 +56,7 @@ ___
 :::
 
 sync = false:客户端;
-sync = true:双端
+sync = true:客户端服务端可调用
 
 #### Parameters
 

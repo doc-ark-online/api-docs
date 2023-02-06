@@ -37,5 +37,6 @@ Type
 
 | Interfaces |
 | :-----|
+| [Class](../interfaces/Type.Class.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun<T>(c:`{new():T}`) 可以写成 fun<T>(c:Class<T>)|
 | [DelegateInterface](../interfaces/Type.DelegateInterface.md) <br> 委托接口|
 - [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md)

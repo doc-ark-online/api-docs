@@ -41,8 +41,8 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 | Type Aliases |
 | :-----|
-| **[EasingFunction](Util.TweenUtil.md#easingfunction)**: (`number` |: `number`) => `number` <br> ▸ (`amount`): `number`|
-| **[InterpolationFunction](Util.TweenUtil.md#interpolationfunction)**: (`number`[] |: `number`[], `number` |: `number`) => `number` <br> ▸ (`v`, `k`): `number`|
+| **[EasingFunction](Util.TweenUtil.md#easingfunction)**: (`number` |: `number`) => `number` <br> • (`amount`): `number`|
+| **[InterpolationFunction](Util.TweenUtil.md#interpolationfunction)**: (`number`[] |: `number`[], `number` |: `number`) => `number` <br> • (`v`, `k`): `number`|
 | **[UnknownProps](Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
 
 | Variables |
@@ -61,7 +61,7 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 #### Type declaration
 
-▸ (`amount`): `number`
+• (`amount`): `number`
 
 缓动函数的类型定义
 
@@ -83,7 +83,7 @@ ___
 
 #### Type declaration
 
-▸ (`v`, `k`): `number`
+• (`v`, `k`): `number`
 
 插值函数的类型定义
 
@@ -118,7 +118,7 @@ ___
 
 ### nextId <Score text="nextId" /> 
 
-▸ **nextId**(): `number` <Badge type="tip" text="other" />
+• **nextId**(): `number` <Badge type="tip" text="other" />
 
 获取下一个ID的全局方法
 

@@ -25,14 +25,14 @@
 
 ### setPlayerPassableForArea <Score text="setPlayerPassableForArea" /> 
 
-▸ `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void`
+• `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void` <Badge type="tip" text="other" />
 
 设置所有禁行区对某个玩家的通过权限
 
 
 使用示例:setPlayerPassableWithAllArea
 ```ts
-setPlayerPassableForArea(player,true,player.getPlayerID()) <Badge type="tip" text="other" />
+setPlayerPassableForArea(player,true,player.getPlayerID())
 ```
 
 #### Parameters

@@ -6,44 +6,66 @@
 
 | Functions |
 | :-----|
-| **[locText](Util.LanguageUtil.md#loctext)**(`string` |): `string` <br> 多语言标记|
-| **[useLocalizedLanguage](Util.LanguageUtil.md#uselocalizedlanguage)**([`LanguageType`](../enums/Type.LanguageType.md) |): `boolean` <br> 游戏语言设置|
+| **[getLocTextValue](Util.LanguageUtil.md#getloctextvalue)**(`string`): `string` <br> 根据key获取翻译内容|
+| **[locText](Util.LanguageUtil.md#loctext)**(`string`): `string` <br> 多语言标记|
+| **[useLocalizedLanguage](Util.LanguageUtil.md#uselocalizedlanguage)**([`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
 
 ## Functions
 
+### getLocTextValue <Score text="getLocTextValue" /> 
+
+• **getLocTextValue**(`textkey`): `string` <Badge type="tip" text="other" />
+
+根据key获取翻译内容
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `textkey` | `string` | 需要查找的翻译的key |
+
+#### Returns
+
+`string`
+
+返回Key对应的当前语言环境的翻译内容
+
+___
+
 ### locText <Score text="locText" /> 
 
-▸ **locText**(`textkey`): `string` <Badge type="tip" text="other" />
+• **locText**(`textkey`): `string` <Badge type="tip" text="other" />
 
 多语言标记
 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `textkey` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `textkey` | `string` | 用户多语言配置表收集的Key |
 
 #### Returns
 
 `string`
 
-返回此Key当前语言下对应的翻译，没有翻译则返回Key
+返回Key，此函数只用于做翻译文本收集标识。
 
 ___
 
 ### useLocalizedLanguage <Score text="useLocalizedLanguage" /> 
 
-▸ **useLocalizedLanguage**(`type`): `boolean` <Badge type="tip" text="other" />
+• **useLocalizedLanguage**(`type`): `boolean` <Badge type="tip" text="other" />
 
 游戏语言设置
 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `type` | [`LanguageType`](../enums/Type.LanguageType.md) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | [`LanguageType`](../enums/Type.LanguageType.md) | 切换游戏语言种类 |
 
 #### Returns
 

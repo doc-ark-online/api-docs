@@ -248,7 +248,7 @@ ___
 
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取旋转类型
 
@@ -268,7 +268,7 @@ ___
 
 ### getLinearLimitType <Score text="getLinearLimitType" /> 
 
-▸ **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取滑动类型
 
@@ -288,7 +288,7 @@ ___
 
 ### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-▸ **setAngularLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
+• **setAngularLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
 
 设置旋转类型
 
@@ -304,7 +304,7 @@ ___
 
 ### setLinearLimitType <Score text="setLinearLimitType" /> 
 
-▸ **setLinearLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
+• **setLinearLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
 
 设置滑动类型
 

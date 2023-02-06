@@ -12,6 +12,10 @@
 
 ## Table of contents
 
+| Accessors |
+| :-----|
+| **[size](Extension.ObjPool.md#size)**(): `number` <br> 获取对象池中空闲对象的数量|
+
 | Methods |
 | :-----|
 | **[clear](Extension.ObjPool.md#clear)**(): `void` <br> 清除池中对象|
@@ -38,11 +42,24 @@
 | `onDestroy` | (`obj`: `T`) => `void` |  销毁对象的回调 |
 | `initNum?` | `number` |  默认缓存对象数量 default: 2 |
 
+## Accessors
+
+### size <Score text="size" /> 
+
+• `get` **size**(): `number` <Badge type="tip" text="other" />
+
+获取对象池中空闲对象的数量
+
+
+#### Returns
+
+`number`
+
 ## Methods
 
 ### clear <Score text="clear" /> 
 
-▸ **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` <Badge type="tip" text="other" />
 
 清除池中对象
 
@@ -52,7 +69,7 @@ ___
 
 ### despawn <Score text="despawn" /> 
 
-▸ **despawn**(`obj`): `void` <Badge type="tip" text="other" />
+• **despawn**(`obj`): `void` <Badge type="tip" text="other" />
 
 归还一个对象
 
@@ -68,7 +85,7 @@ ___
 
 ### spawn <Score text="spawn" /> 
 
-▸ **spawn**(): `T` <Badge type="tip" text="other" />
+• **spawn**(): `T` <Badge type="tip" text="other" />
 
 生成一个对象
 

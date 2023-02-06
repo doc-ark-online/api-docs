@@ -76,7 +76,7 @@ UI的PanelWidget可以挂载子节点
 
 ### addChild <Score text="addChild" /> 
 
-▸ **addChild**(`child`): `void` <Badge type="tip" text="other" />
+• **addChild**(`child`): `void` <Badge type="tip" text="other" />
 
 添加子节点
 
@@ -91,7 +91,7 @@ UI的PanelWidget可以挂载子节点
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
-▸ **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
 通过相对路径查找节点
 
@@ -112,7 +112,7 @@ ___
 
 ### getChildAt <Score text="getChildAt" /> 
 
-▸ **getChildAt**(`index`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **getChildAt**(`index`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
 获取第几位子节点
 
@@ -133,7 +133,7 @@ ___
 
 ### getChildByName <Score text="getChildByName" /> 
 
-▸ **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="other" />
+• **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="other" />
 
 通过名字查找节点
 
@@ -160,7 +160,7 @@ ___
 
 ### getChildrenCount <Score text="getChildrenCount" /> 
 
-▸ **getChildrenCount**(): `number` <Badge type="tip" text="other" />
+• **getChildrenCount**(): `number` <Badge type="tip" text="other" />
 
 获取子节点数量
 
@@ -174,7 +174,7 @@ ___
 
 ### removeAllChildren <Score text="removeAllChildren" /> 
 
-▸ **removeAllChildren**(): `void` <Badge type="tip" text="other" />
+• **removeAllChildren**(): `void` <Badge type="tip" text="other" />
 
 清除所有子节点,会销毁UI无法再使用
 
@@ -184,7 +184,7 @@ ___
 
 ### removeChild <Score text="removeChild" /> 
 
-▸ **removeChild**(`child`): `void` <Badge type="tip" text="other" />
+• **removeChild**(`child`): `void` <Badge type="tip" text="other" />
 
 移除节点,会销毁UI无法在使用
 
@@ -200,7 +200,7 @@ ___
 
 ### removeChildAt <Score text="removeChildAt" /> 
 
-▸ **removeChildAt**(`index`): `void` <Badge type="tip" text="other" />
+• **removeChildAt**(`index`): `void` <Badge type="tip" text="other" />
 
 移除第几个节点,会销毁UI无法再使用
 

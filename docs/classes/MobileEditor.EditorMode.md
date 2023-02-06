@@ -24,6 +24,7 @@
 | **[gizmoActorRotation](MobileEditor.EditorMode.md#gizmoactorrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置坐标轴旋转|
 | **[isMobileEditor](MobileEditor.EditorMode.md#ismobileeditor)**(): `boolean` <br> 获取当前移动编辑器模式|
 | **[isPermanentMobileEditor](MobileEditor.EditorMode.md#ispermanentmobileeditor)**(): `boolean` <br> 获取初始化时候的状态|
+| **[mobileEditorGizmo](MobileEditor.EditorMode.md#mobileeditorgizmo)**(): [`Gizmo`](MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在非编辑态获取会返回null.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[selectedActor](MobileEditor.EditorMode.md#selectedactor)**(): `GameObject` <br> 获取当前选中的对象|
 
 | Methods |
@@ -165,6 +166,19 @@ ___
 
 ___
 
+### mobileEditorGizmo <Score text="mobileEditorGizmo" /> 
+
+• `get` **mobileEditorGizmo**(): [`Gizmo`](MobileEditor.Gizmo.md) <Badge type="tip" text="other" />
+
+获取编辑态的坐标轴,如果在非编辑态获取会返回null.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+
+#### Returns
+
+[`Gizmo`](MobileEditor.Gizmo.md)
+
+___
+
 ### selectedActor <Score text="selectedActor" /> 
 
 • `get` **selectedActor**(): `GameObject` <Badge type="tip" text="other" />
@@ -182,7 +196,7 @@ ___
 
 ### addEditorCharacterCameraFlexInput <Score text="addEditorCharacterCameraFlexInput" /> 
 
-▸ **addEditorCharacterCameraFlexInput**(`Scale`): `void` <Badge type="tip" text="other" />
+• **addEditorCharacterCameraFlexInput**(`Scale`): `void` <Badge type="tip" text="other" />
 
 设置移动编辑器Editor Mode下人物的位置输入,仅在Editor Mode模式下生效.
 
@@ -198,7 +212,7 @@ ___
 
 ### addEditorCharacterDeltaOffset <Score text="addEditorCharacterDeltaOffset" /> 
 
-▸ **addEditorCharacterDeltaOffset**(`Delta`, `Scale`): `void` <Badge type="tip" text="other" />
+• **addEditorCharacterDeltaOffset**(`Delta`, `Scale`): `void` <Badge type="tip" text="other" />
 
 设置移动编辑器Editor Mode下人物的位置输入,仅在Editor Mode模式下生效.Play Mode 使用gamePlay提供的接口
 
@@ -215,7 +229,7 @@ ___
 
 ### addEditorCharacterPitch <Score text="addEditorCharacterPitch" /> 
 
-▸ **addEditorCharacterPitch**(`Pitch`): `void` <Badge type="tip" text="other" />
+• **addEditorCharacterPitch**(`Pitch`): `void` <Badge type="tip" text="other" />
 
 设置移动编辑器Editor Mode下人物的Pitch值输入,仅在Editor Mode模式下生效. Play Mode 使用gamePlay提供的接口
 
@@ -231,7 +245,7 @@ ___
 
 ### addEditorCharacterYaw <Score text="addEditorCharacterYaw" /> 
 
-▸ **addEditorCharacterYaw**(`Yaw`): `void` <Badge type="tip" text="other" />
+• **addEditorCharacterYaw**(`Yaw`): `void` <Badge type="tip" text="other" />
 
 设置移动编辑器Editor Mode下人物的Yaw值输入,仅在Editor Mode模式下生效.Play Mode 使用gameplay提供的接口
 
@@ -247,7 +261,7 @@ ___
 
 ### attachActorToGizmo <Score text="attachActorToGizmo" /> 
 
-▸ **attachActorToGizmo**(`Actor`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
+• **attachActorToGizmo**(`Actor`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
 
 附加物体到坐标轴
 
@@ -264,7 +278,7 @@ ___
 
 ### beginActorTransformChange <Score text="beginActorTransformChange" /> 
 
-▸ **beginActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
+• **beginActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
 开始记录位置改变操作
 
@@ -280,7 +294,7 @@ ___
 
 ### beginAttachChange <Score text="beginAttachChange" /> 
 
-▸ **beginAttachChange**(`LastActor`, `NewActor`): `void` <Badge type="tip" text="other" />
+• **beginAttachChange**(`LastActor`, `NewActor`): `void` <Badge type="tip" text="other" />
 
 记录附加记录
 
@@ -297,7 +311,7 @@ ___
 
 ### beginCombineActorChange <Score text="beginCombineActorChange" /> 
 
-▸ **beginCombineActorChange**(): `void` <Badge type="tip" text="other" />
+• **beginCombineActorChange**(): `void` <Badge type="tip" text="other" />
 
 开始记录打组操作
 
@@ -307,7 +321,7 @@ ___
 
 ### beginDeleteActorChange <Score text="beginDeleteActorChange" /> 
 
-▸ **beginDeleteActorChange**(): `void` <Badge type="tip" text="other" />
+• **beginDeleteActorChange**(): `void` <Badge type="tip" text="other" />
 
 开始记录删除操作
 
@@ -317,7 +331,7 @@ ___
 
 ### beginMaterialsChange <Score text="beginMaterialsChange" /> 
 
-▸ **beginMaterialsChange**(`Actor`): `void` <Badge type="tip" text="other" />
+• **beginMaterialsChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
 开始记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉
 
@@ -333,7 +347,7 @@ ___
 
 ### beginMaterialsChangeMulti <Score text="beginMaterialsChangeMulti" /> 
 
-▸ **beginMaterialsChangeMulti**(`Array`): `void` <Badge type="tip" text="other" />
+• **beginMaterialsChangeMulti**(`Array`): `void` <Badge type="tip" text="other" />
 
 开始记录材质变换操作（支持记录多个StaticMesh）
 
@@ -349,7 +363,7 @@ ___
 
 ### beginMaterialsColorChange <Score text="beginMaterialsColorChange" /> 
 
-▸ **beginMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
+• **beginMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
 
 开始记录材质颜色变换操作
 
@@ -366,7 +380,7 @@ ___
 
 ### beginSpawnActorChange <Score text="beginSpawnActorChange" /> 
 
-▸ **beginSpawnActorChange**(): `void` <Badge type="tip" text="other" />
+• **beginSpawnActorChange**(): `void` <Badge type="tip" text="other" />
 
 开始记录创建操作
 
@@ -376,7 +390,7 @@ ___
 
 ### beginUncombinedActorChange <Score text="beginUncombinedActorChange" /> 
 
-▸ **beginUncombinedActorChange**(): `void` <Badge type="tip" text="other" />
+• **beginUncombinedActorChange**(): `void` <Badge type="tip" text="other" />
 
 开始记录解组操作
 
@@ -386,7 +400,7 @@ ___
 
 ### detachActorFormGizmo <Score text="detachActorFormGizmo" /> 
 
-▸ **detachActorFormGizmo**(`Actor`): `void` <Badge type="tip" text="other" />
+• **detachActorFormGizmo**(`Actor`): `void` <Badge type="tip" text="other" />
 
 移除物体到坐标轴
 
@@ -402,7 +416,7 @@ ___
 
 ### enableSelectActor <Score text="enableSelectActor" /> 
 
-▸ **enableSelectActor**(`IsEnable`): `void` <Badge type="tip" text="other" />
+• **enableSelectActor**(`IsEnable`): `void` <Badge type="tip" text="other" />
 
 设置是否可以选中物体
 
@@ -418,7 +432,7 @@ ___
 
 ### endActorTransformChange <Score text="endActorTransformChange" /> 
 
-▸ **endActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
+• **endActorTransformChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
 结束记录位置改变操作
 
@@ -434,7 +448,7 @@ ___
 
 ### endCombineActorChange <Score text="endCombineActorChange" /> 
 
-▸ **endCombineActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
+• **endCombineActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
 结束记录打组操作
 
@@ -450,7 +464,7 @@ ___
 
 ### endDeleteActorChange <Score text="endDeleteActorChange" /> 
 
-▸ **endDeleteActorChange**(): `void` <Badge type="tip" text="other" />
+• **endDeleteActorChange**(): `void` <Badge type="tip" text="other" />
 
 结束记录删除操作
 
@@ -460,7 +474,7 @@ ___
 
 ### endMaterialsChange <Score text="endMaterialsChange" /> 
 
-▸ **endMaterialsChange**(`Actor`, `MaterialID`): `void` <Badge type="tip" text="other" />
+• **endMaterialsChange**(`Actor`, `MaterialID`): `void` <Badge type="tip" text="other" />
 
 结束记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉
 
@@ -477,7 +491,7 @@ ___
 
 ### endMaterialsChangeMulti <Score text="endMaterialsChangeMulti" /> 
 
-▸ **endMaterialsChangeMulti**(`Array`, `MaterialID`): `void` <Badge type="tip" text="other" />
+• **endMaterialsChangeMulti**(`Array`, `MaterialID`): `void` <Badge type="tip" text="other" />
 
 结束记录材质变换操作（支持记录多个StaticMesh）
 
@@ -494,7 +508,7 @@ ___
 
 ### endMaterialsColorChange <Score text="endMaterialsColorChange" /> 
 
-▸ **endMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
+• **endMaterialsColorChange**(`Actor`, `Color`): `void` <Badge type="tip" text="other" />
 
 结束记录材质颜色变换操作
 
@@ -511,7 +525,7 @@ ___
 
 ### endMultiCombineActorChange <Score text="endMultiCombineActorChange" /> 
 
-▸ **endMultiCombineActorChange**(`Actor`, `Array`): `void` <Badge type="tip" text="other" />
+• **endMultiCombineActorChange**(`Actor`, `Array`): `void` <Badge type="tip" text="other" />
 
 结束记录多组合并打组操作
 
@@ -528,7 +542,7 @@ ___
 
 ### endSpawnActorChange <Score text="endSpawnActorChange" /> 
 
-▸ **endSpawnActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
+• **endSpawnActorChange**(`Actor`): `void` <Badge type="tip" text="other" />
 
 结束记录创建操作
 
@@ -544,7 +558,7 @@ ___
 
 ### endUncombinedActorChange <Score text="endUncombinedActorChange" /> 
 
-▸ **endUncombinedActorChange**(`Array`): `void` <Badge type="tip" text="other" />
+• **endUncombinedActorChange**(`Array`): `void` <Badge type="tip" text="other" />
 
 结束记录解组操作
 
@@ -560,7 +574,7 @@ ___
 
 ### focusToActors <Score text="focusToActors" /> 
 
-▸ **focusToActors**(`Actors`): `void` <Badge type="tip" text="other" />
+• **focusToActors**(`Actors`): `void` <Badge type="tip" text="other" />
 
 聚焦到物体
 
@@ -576,7 +590,7 @@ ___
 
 ### focusToGizmo <Score text="focusToGizmo" /> 
 
-▸ **focusToGizmo**(): `void` <Badge type="tip" text="other" />
+• **focusToGizmo**(): `void` <Badge type="tip" text="other" />
 
 聚焦到坐标轴
 
@@ -586,7 +600,7 @@ ___
 
 ### isRedoEmpty <Score text="isRedoEmpty" /> 
 
-▸ **isRedoEmpty**(): `boolean` <Badge type="tip" text="other" />
+• **isRedoEmpty**(): `boolean` <Badge type="tip" text="other" />
 
 是否可执行Redo操作true:表示当前没有可执行的步数，无法执行重做操作
 
@@ -601,7 +615,7 @@ ___
 
 ### isUndoEmpty <Score text="isUndoEmpty" /> 
 
-▸ **isUndoEmpty**(): `boolean` <Badge type="tip" text="other" />
+• **isUndoEmpty**(): `boolean` <Badge type="tip" text="other" />
 
 是否可执行Undo操作 true:表示当前没有可执行的步数，无法执行撤销操作
 
@@ -616,7 +630,7 @@ ___
 
 ### onAppendChange <Score text="onAppendChange" /> 
 
-▸ **onAppendChange**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onAppendChange**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 主要用于设置撤销恢复按钮的可用性，如果有的话，可以配合IsUndoEmpty 和 IsRedoEmpty 函数来判断当前是否可以执行撤销恢复操作
 
@@ -632,7 +646,7 @@ ___
 
 ### onAttachChanged <Score text="onAttachChanged" /> 
 
-▸ **onAttachChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onAttachChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 附加代理
 
@@ -648,7 +662,7 @@ ___
 
 ### onAttachRedoChanged <Score text="onAttachRedoChanged" /> 
 
-▸ **onAttachRedoChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onAttachRedoChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 附加代理
 
@@ -664,7 +678,7 @@ ___
 
 ### onDeleteActorRedo <Score text="onDeleteActorRedo" /> 
 
-▸ **onDeleteActorRedo**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onDeleteActorRedo**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 Redo删除操作代理，会返回被删除的ActorID 和 资源ID
 
@@ -680,7 +694,7 @@ ___
 
 ### onDeleteActorUndo <Score text="onDeleteActorUndo" /> 
 
-▸ **onDeleteActorUndo**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onDeleteActorUndo**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 撤销删除操作代理，会返回被删除的Actor
 
@@ -696,7 +710,7 @@ ___
 
 ### onGizmoVisibleChanged <Score text="onGizmoVisibleChanged" /> 
 
-▸ **onGizmoVisibleChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onGizmoVisibleChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 坐标轴隐藏显示代理
 
@@ -712,7 +726,7 @@ ___
 
 ### onSelectActor <Score text="onSelectActor" /> 
 
-▸ **onSelectActor**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **onSelectActor**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 选择物体代理
 
@@ -728,7 +742,7 @@ ___
 
 ### saveProject <Score text="saveProject" /> 
 
-▸ **saveProject**(): `void` <Badge type="tip" text="other" />
+• **saveProject**(): `void` <Badge type="tip" text="other" />
 
 保存当前场景
 
@@ -738,7 +752,7 @@ ___
 
 ### setAdsorbDistance <Score text="setAdsorbDistance" /> 
 
-▸ **setAdsorbDistance**(`InDistance`): `void` <Badge type="tip" text="other" />
+• **setAdsorbDistance**(`InDistance`): `void` <Badge type="tip" text="other" />
 
 设置吸附距离
 
@@ -754,7 +768,7 @@ ___
 
 ### setGizmoActorLocation <Score text="setGizmoActorLocation" /> 
 
-▸ **setGizmoActorLocation**(`NewLocation`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
+• **setGizmoActorLocation**(`NewLocation`, `IsRecordChange?`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴位置
 
@@ -771,7 +785,7 @@ ___
 
 ### setGizmoActorLocationAndRotation <Score text="setGizmoActorLocationAndRotation" /> 
 
-▸ **setGizmoActorLocationAndRotation**(`NewLocation`, `NewRotation`): `void` <Badge type="tip" text="other" />
+• **setGizmoActorLocationAndRotation**(`NewLocation`, `NewRotation`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴旋转和缩放
 
@@ -788,7 +802,7 @@ ___
 
 ### setGizmoAxisColor <Score text="setGizmoAxisColor" /> 
 
-▸ **setGizmoAxisColor**(`InAxis`, `InAxisColor`): `void` <Badge type="tip" text="other" />
+• **setGizmoAxisColor**(`InAxis`, `InAxisColor`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴颜色
 
@@ -805,7 +819,7 @@ ___
 
 ### setGizmoHighlightColor <Score text="setGizmoHighlightColor" /> 
 
-▸ **setGizmoHighlightColor**(`InHighlightColor`): `void` <Badge type="tip" text="other" />
+• **setGizmoHighlightColor**(`InHighlightColor`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴选中时的高亮颜色
 
@@ -821,7 +835,7 @@ ___
 
 ### setGizmoScaleOffset <Score text="setGizmoScaleOffset" /> 
 
-▸ **setGizmoScaleOffset**(`InOffset`): `void` <Badge type="tip" text="other" />
+• **setGizmoScaleOffset**(`InOffset`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴模型整体缩放倍数
 
@@ -837,7 +851,7 @@ ___
 
 ### setIsAdsorb <Score text="setIsAdsorb" /> 
 
-▸ **setIsAdsorb**(`InIsAdsorb`): `void` <Badge type="tip" text="other" />
+• **setIsAdsorb**(`InIsAdsorb`): `void` <Badge type="tip" text="other" />
 
 设置是否吸附
 
@@ -853,7 +867,7 @@ ___
 
 ### showGizmoActor <Score text="showGizmoActor" /> 
 
-▸ **showGizmoActor**(`showGizmoActor`): `void` <Badge type="tip" text="other" />
+• **showGizmoActor**(`showGizmoActor`): `void` <Badge type="tip" text="other" />
 
 设置坐标轴隐藏或者显示
 
@@ -869,7 +883,7 @@ ___
 
 ### switchGizmoMode <Score text="switchGizmoMode" /> 
 
-▸ **switchGizmoMode**(`GizmoMode`): `void` <Badge type="tip" text="other" />
+• **switchGizmoMode**(`GizmoMode`): `void` <Badge type="tip" text="other" />
 
 切换坐标轴模式
 
@@ -885,7 +899,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`EditorMode`](MobileEditor.EditorMode.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`EditorMode`](MobileEditor.EditorMode.md) <Badge type="tip" text="other" />
 
 获取editorMode的单例
 

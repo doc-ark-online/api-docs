@@ -339,7 +339,7 @@ ___
 
 ### clamp <Score text="clamp" /> 
 
-▸ **clamp**(`a`, `min`, `max`): `number` <Badge type="tip" text="other" />
+• **clamp**(`a`, `min`, `max`): `number` <Badge type="tip" text="other" />
 
 数值a在最小值和最大值之间，包括最小值和最大值
 
@@ -362,9 +362,9 @@ ___
 
 ### cos <Score text="cos" /> 
 
-▸ **cos**(`a`): `number`
+• **cos**(`a`): `number` <Badge type="tip" text="other" />
 
-计算cos值 <Badge type="tip" text="other" />
+计算cos值
 
 
 #### Parameters
@@ -383,7 +383,7 @@ ___
 
 ### degreesToRadians <Score text="degreesToRadians" /> 
 
-▸ **degreesToRadians**(`a`): `number` <Badge type="tip" text="other" />
+• **degreesToRadians**(`a`): `number` <Badge type="tip" text="other" />
 
 根据输入的度数返回弧度值
 
@@ -404,7 +404,7 @@ ___
 
 ### fmod <Score text="fmod" /> 
 
-▸ **fmod**(`x`, `y`): `number` <Badge type="tip" text="other" />
+• **fmod**(`x`, `y`): `number` <Badge type="tip" text="other" />
 
 返回 数值x 除以 数值y 的余数
 
@@ -426,7 +426,7 @@ ___
 
 ### lerp <Score text="lerp" /> 
 
-▸ **lerp**(`a`, `b`, `alpha`): `number` <Badge type="tip" text="other" />
+• **lerp**(`a`, `b`, `alpha`): `number` <Badge type="tip" text="other" />
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
 
@@ -455,7 +455,7 @@ ___
 
 ### radiansToDegrees <Score text="radiansToDegrees" /> 
 
-▸ **radiansToDegrees**(`a`): `number` <Badge type="tip" text="other" />
+• **radiansToDegrees**(`a`): `number` <Badge type="tip" text="other" />
 
 根据输入的弧度值返回度数
 
@@ -476,7 +476,7 @@ ___
 
 ### randomFloat <Score text="randomFloat" /> 
 
-▸ **randomFloat**(`min`, `max`): `number` <Badge type="tip" text="other" />
+• **randomFloat**(`min`, `max`): `number` <Badge type="tip" text="other" />
 
 获取随机范围内浮点数[包含min, 不包含max)
 
@@ -498,7 +498,7 @@ ___
 
 ### randomInt <Score text="randomInt" /> 
 
-▸ **randomInt**(`min`, `max`): `number` <Badge type="tip" text="other" />
+• **randomInt**(`min`, `max`): `number` <Badge type="tip" text="other" />
 
 获取随机范围内整数[包含min, 不包含max)
 
@@ -520,9 +520,9 @@ ___
 
 ### sin <Score text="sin" /> 
 
-▸ **sin**(`a`): `number`
+• **sin**(`a`): `number` <Badge type="tip" text="other" />
 
-计算sin值 <Badge type="tip" text="other" />
+计算sin值
 
 
 #### Parameters
@@ -541,9 +541,9 @@ ___
 
 ### tan <Score text="tan" /> 
 
-▸ **tan**(`a`): `number`
+• **tan**(`a`): `number` <Badge type="tip" text="other" />
 
-计算tan值 <Badge type="tip" text="other" />
+计算tan值
 
 
 #### Parameters

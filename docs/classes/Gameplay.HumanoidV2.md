@@ -54,7 +54,7 @@
 | **[getSkinColor](Gameplay.HumanoidV2.md#getskincolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置皮肤颜色|
 | **[getSkinTexture](Gameplay.HumanoidV2.md#getskintexture)**(): `string` <br> 获取皮肤贴图|
 | **[getSlotWorldPosition](Gameplay.HumanoidV2.md#getslotworldposition)**([`SlotType`](../enums/Gameplay.SlotType.md)): [`Vector`](Type.Vector.md) <br> 获取Slot世界坐标位置,V2物品预览的插槽使用|
-| **[getSomatotype](Gameplay.HumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <br> 获取当前的主Mesh|
+| **[getSomatotype](Gameplay.HumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <br> 获取当前体型类型|
 | **[setAppearanceData](Gameplay.HumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过GUID加载数据另存为角色数据|
 | **[setBodyTattooColor](Gameplay.HumanoidV2.md#setbodytattoocolor)**(`number`, [`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 身体纹身颜色|
 | **[setBodyTattooPositionX](Gameplay.HumanoidV2.md#setbodytattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 身体纹身位置左右偏移|
@@ -152,7 +152,7 @@ ___
 
 ### appearanceSync <Score text="appearanceSync" /> 
 
-▸ **appearanceSync**(): `void` <Badge type="tip" text="other" />
+• **appearanceSync**(): `void` <Badge type="tip" text="other" />
 
 把本地角色形象数据同步到多端
 
@@ -172,7 +172,7 @@ ___
 
 ### attach <Score text="attach" /> 
 
-▸ **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
+• **attach**(`gameObject`, `slotName`): `void` <Badge type="tip" text="other" />
 
 将物体附着到V2人物角色的指定插槽
 
@@ -200,19 +200,43 @@ ___
 
 ### changeSomatotype <Score text="changeSomatotype" /> 
 
-▸ **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 切换角色主Mesh
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+
+使用示例: 角色切换类型1.切换外观类型 appearanceType 设置对应的体型 SomatotypeV2 设置模型setWholeBody
+```ts
+let npc = Core.GameObject.find("FDB21CE8");
+npc.appearanceType =Gameplay.AppearanceType.HumanoidV2;
+;
+npc.appearance.changeSomatotype(Gameplay.SomatotypeV2.AnimeFemale, true);
+let Tappearance = npc.appearance as Gameplay.HumanoidV1;
+         setTimeout(() => {
+            if(Tappearance){
+               Tappearance.upperCloth.setMesh("60982",true);
+                 Tappearance.lowerCloth.setMesh("64554",true);
+                  Tappearance.gloves.setMesh("60991",true);
+                  Tappearance.frontHair.setMesh("62540",true);
+                 Tappearance.behindHair.setMesh("62786",true);
+                  Tappearance.shoe.setMesh("63297",true);
+                  Tappearance.head.setMesh("76618",true);
+             }
+        }, 1000);
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) |  主Mesh类型："None"不能作为参数 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `value` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) |  体型枚举; SomatotypeV2 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -223,7 +247,7 @@ ___
 
 ### clearAppearance <Score text="clearAppearance" /> 
 
-▸ **clearAppearance**(): `void` <Badge type="tip" text="other" />
+• **clearAppearance**(): `void` <Badge type="tip" text="other" />
 
 清空角色形象数据
 
@@ -238,7 +262,7 @@ ___
 
 ### detach <Score text="detach" /> 
 
-▸ **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
+• **detach**(`gameObject`): `void` <Badge type="tip" text="other" />
 
 V2的将物体从人物身上附着的物品预览插槽中分离
 
@@ -264,11 +288,10 @@ V2的将物体从人物身上附着的物品预览插槽中分离
 
 ### getBodyTattooColor <Score text="getBodyTattooColor" /> 
 
-▸ **getBodyTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBodyTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取纹身颜色
 
-客户端生效
 
 #### Parameters
 
@@ -290,11 +313,10 @@ ___
 
 ### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
 
-▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
 获取纹身位置左右偏移
 
-客户端生效
 
 #### Parameters
 
@@ -316,11 +338,10 @@ ___
 
 ### getBodyTattooPositionY <Score text="getBodyTattooPositionY" /> 
 
-▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
 获取身体纹身位置上下位置
 
-客户端生效
 
 #### Parameters
 
@@ -342,11 +363,10 @@ ___
 
 ### getBodyTattooRotation <Score text="getBodyTattooRotation" /> 
 
-▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
 获取纹身旋转值
 
-客户端生效
 
 #### Parameters
 
@@ -368,12 +388,16 @@ ___
 
 ### getBodyTattooType <Score text="getBodyTattooType" /> 
 
-▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
+• **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
 获取纹身贴图 GUID
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -395,11 +419,10 @@ ___
 
 ### getBodyTattooZoom <Score text="getBodyTattooZoom" /> 
 
-▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
 获取身体纹身位置缩放
 
-客户端生效
 
 #### Parameters
 
@@ -421,7 +444,7 @@ ___
 
 ### getGoods <Score text="getGoods" /> 
 
-▸ **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
+• **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
 通过插槽GUID加载数据
 
@@ -447,11 +470,10 @@ ___
 
 ### getSkinColor <Score text="getSkinColor" /> 
 
-▸ **getSkinColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getSkinColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 设置皮肤颜色
 
-客户端生效
 
 #### Returns
 
@@ -467,11 +489,10 @@ ___
 
 ### getSkinTexture <Score text="getSkinTexture" /> 
 
-▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
+• **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
 获取皮肤贴图
 
-客户端生效
 
 #### Returns
 
@@ -487,7 +508,7 @@ ___
 
 ### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
-▸ **getSlotWorldPosition**(`slotName`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getSlotWorldPosition**(`slotName`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 获取Slot世界坐标位置,V2物品预览的插槽使用
 
@@ -513,17 +534,17 @@ ___
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
-▸ **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
+• **getSomatotype**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <Badge type="tip" text="other" />
 
-获取当前的主Mesh
+获取当前体型类型
 
-双端
+客户端服务端可调用
 
 #### Returns
 
 [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md)
 
-主Mesh
+当前HunmaoidV2体型枚举SomatotypeV2值
 
 #### Implementation of
 
@@ -533,7 +554,7 @@ ___
 
 ### setAppearanceData <Score text="setAppearanceData" /> 
 
-▸ **setAppearanceData**(`GUIDArray`, `callback?`): `void` <Badge type="tip" text="other" />
+• **setAppearanceData**(`GUIDArray`, `callback?`): `void` <Badge type="tip" text="other" />
 
 通过GUID加载数据另存为角色数据
 
@@ -561,12 +582,16 @@ ___
 
 ### setBodyTattooColor <Score text="setBodyTattooColor" /> 
 
-▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -574,7 +599,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` |  纹身index |
 | `color` | [`LinearColor`](Type.LinearColor.md) |  颜色值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -585,12 +610,16 @@ ___
 
 ### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
 
-▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置左右偏移
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -598,7 +627,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 偏移值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -609,12 +638,16 @@ ___
 
 ### setBodyTattooPositionY <Score text="setBodyTattooPositionY" /> 
 
-▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置上下位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -622,7 +655,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 偏移值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -633,12 +666,16 @@ ___
 
 ### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
 
-▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹旋转
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -646,7 +683,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 旋转值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -657,12 +694,16 @@ ___
 
 ### setBodyTattooType <Score text="setBodyTattooType" /> 
 
-▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身种类
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -670,7 +711,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身index |
 | `GUID` | `string` | 类型贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -681,12 +722,16 @@ ___
 
 ### setBodyTattooZoom <Score text="setBodyTattooZoom" /> 
 
-▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置缩放
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -694,7 +739,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` |  缩放值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -704,19 +749,23 @@ sync = true:双端
 
 ### setSkinColor <Score text="setSkinColor" /> 
 
-▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置皮肤颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) |  颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -727,19 +776,23 @@ ___
 
 ### setSkinTexture <Score text="setSkinTexture" /> 
 
-▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置皮肤贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -750,7 +803,7 @@ ___
 
 ### setSlot <Score text="setSlot" /> 
 
-▸ **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setSlot**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 通过插槽GUID加载数据
 
@@ -761,7 +814,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | Slot GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -772,7 +825,7 @@ ___
 
 ### setSomatotype <Score text="setSomatotype" /> 
 
-▸ **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
+• **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
 
@@ -793,7 +846,7 @@ ___
 
 ### setSuit <Score text="setSuit" /> 
 
-▸ **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
+• **setSuit**(`somatotype`, `head`, `upperCloth`, `lowerCloth`, `gloves`, `shoe`, `frontHair`, `behindHair`): `void` <Badge type="tip" text="other" />
 
 加载一套角色数据
 

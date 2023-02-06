@@ -18,8 +18,8 @@ Network
 
 | Type Aliases |
 | :-----|
-| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> ▸ (`result`, `content`, `responseCode`): `void`|
-| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> ▸ (`isSuccess`, `content`): `void`|
+| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> • (`result`, `content`, `responseCode`): `void`|
+| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> • (`isSuccess`, `content`): `void`|
 
 | Functions |
 | :-----|
@@ -38,7 +38,7 @@ Network
 
 #### Type declaration
 
-▸ (`result`, `content`, `responseCode`): `void`
+• (`result`, `content`, `responseCode`): `void`
 
 Http请求的回调消息格式
 
@@ -68,7 +68,7 @@ ___
 
 #### Type declaration
 
-▸ (`isSuccess`, `content`): `void`
+• (`isSuccess`, `content`): `void`
 
 商城通信回调消息格式
 
@@ -87,7 +87,7 @@ ___
 
 ### fetch <Score text="fetch" /> 
 
-▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
+• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
 
 HTTP请求
 
@@ -109,14 +109,14 @@ ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
-▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean`
+• **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 通用Http请求
 
 
 使用示例:发送Http请求
 ```ts
-generalHttpRequest(Response,Url,Param,JsonContent) <Badge type="tip" text="other" />
+generalHttpRequest(Response,Url,Param,JsonContent)
 ```
 
 #### Parameters
@@ -139,7 +139,7 @@ ___
 
 ### getUrlParameter <Score text="getUrlParameter" /> 
 
-▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
+• **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
 
 获取url参数
 
@@ -161,7 +161,7 @@ ___
 
 ### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
-▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+• **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 Http请求接口
 
@@ -185,7 +185,7 @@ ___
 
 ### urlDecode <Score text="urlDecode" /> 
 
-▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
 
 url解码
 
@@ -206,7 +206,7 @@ ___
 
 ### urlEncode <Score text="urlEncode" /> 
 
-▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
 
 url转码
 

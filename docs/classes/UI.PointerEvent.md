@@ -148,7 +148,7 @@ ___
 
 ### isMouseButtonDown <Score text="isMouseButtonDown" /> 
 
-▸ **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="other" />
+• **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="other" />
 
 判断是不是鼠标按键事件
 
@@ -169,7 +169,7 @@ ___
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
+• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 
 转化为 InputEvent
 

@@ -36,7 +36,7 @@
 
 ### add <Score text="add" /> 
 
-▸ **add**(`func`): `void` <Badge type="tip" text="other" />
+• **add**(`func`): `void` <Badge type="tip" text="other" />
 
 绑定代理函数
 
@@ -56,7 +56,7 @@ ___
 
 ### broadcast <Score text="broadcast" /> 
 
-▸ **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
+• **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
 
 广播通知代理函数
 
@@ -76,7 +76,7 @@ ___
 
 ### clear <Score text="clear" /> 
 
-▸ **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` <Badge type="tip" text="other" />
 
 情况委托
 
@@ -86,7 +86,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-▸ **remove**(`func`): `void` <Badge type="tip" text="other" />
+• **remove**(`func`): `void` <Badge type="tip" text="other" />
 
 删除绑定代理函数
 

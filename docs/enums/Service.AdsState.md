@@ -12,6 +12,7 @@
 | **[Fail](Service.AdsState.md#fail)** = ``-1`` <br> 展示失败|
 | **[Reward](Service.AdsState.md#reward)** = ``4`` <br> 获得奖励|
 | **[Success](Service.AdsState.md#success)** = ``0`` <br> 开始展示|
+| **[Timeout](Service.AdsState.md#timeout)** = ``5`` <br> 播放广告超时|
 
 ## Enumeration Members
 
@@ -44,3 +45,11 @@ ___
 • **Success** = ``0``
 
 开始展示
+
+___
+
+### Timeout <Score text="Timeout" /> 
+
+• **Timeout** = ``5``
+
+播放广告超时

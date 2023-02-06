@@ -33,11 +33,10 @@
 
 ### getBodyTattooColor <Score text="getBodyTattooColor" /> 
 
-▸ **getBodyTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBodyTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取纹身颜色
 
-客户端生效
 
 #### Parameters
 
@@ -55,11 +54,10 @@ ___
 
 ### getBodyTattooPositionX <Score text="getBodyTattooPositionX" /> 
 
-▸ **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
 获取纹身位置左右偏移
 
-客户端生效
 
 #### Parameters
 
@@ -77,11 +75,10 @@ ___
 
 ### getBodyTattooPositionY <Score text="getBodyTattooPositionY" /> 
 
-▸ **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
 获取身体纹身位置上下位置
 
-客户端生效
 
 #### Parameters
 
@@ -99,11 +96,10 @@ ___
 
 ### getBodyTattooRotation <Score text="getBodyTattooRotation" /> 
 
-▸ **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
 获取纹身旋转值
 
-客户端生效
 
 #### Parameters
 
@@ -121,12 +117,11 @@ ___
 
 ### getBodyTattooType <Score text="getBodyTattooType" /> 
 
-▸ **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
+• **getBodyTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
 获取纹身贴图 GUID
 
-sync = false:客户端;
-sync = true:双端
+客户端有效
 
 #### Parameters
 
@@ -144,11 +139,10 @@ ___
 
 ### getBodyTattooZoom <Score text="getBodyTattooZoom" /> 
 
-▸ **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
+• **getBodyTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
 获取身体纹身位置缩放
 
-客户端生效
 
 #### Parameters
 
@@ -166,11 +160,11 @@ ___
 
 ### getSkinColor <Score text="getSkinColor" /> 
 
-▸ **getSkinColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getSkinColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 设置皮肤颜色
 
-客户端生效
+客户端有效
 
 #### Returns
 
@@ -182,11 +176,10 @@ ___
 
 ### getSkinTexture <Score text="getSkinTexture" /> 
 
-▸ **getSkinTexture**(): `string` <Badge type="tip" text="other" />
+• **getSkinTexture**(): `string` <Badge type="tip" text="other" />
 
 获取皮肤贴图
 
-客户端生效
 
 #### Returns
 
@@ -198,12 +191,16 @@ ___
 
 ### setBodyTattooColor <Score text="setBodyTattooColor" /> 
 
-▸ **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -211,19 +208,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` |  纹身index |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) |  颜色值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setBodyTattooPositionX <Score text="setBodyTattooPositionX" /> 
 
-▸ **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置左右偏移
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -231,19 +232,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 偏移值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setBodyTattooPositionY <Score text="setBodyTattooPositionY" /> 
 
-▸ **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置上下位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -251,19 +256,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 偏移值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setBodyTattooRotation <Score text="setBodyTattooRotation" /> 
 
-▸ **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹旋转
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -271,19 +280,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` | 旋转值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setBodyTattooType <Score text="setBodyTattooType" /> 
 
-▸ **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身种类
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -291,19 +304,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身index |
 | `GUID` | `string` | 类型贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setBodyTattooZoom <Score text="setBodyTattooZoom" /> 
 
-▸ **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBodyTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 身体纹身位置缩放
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -311,43 +328,51 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身Index |
 | `value` | `number` |  缩放值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setSkinColor <Score text="setSkinColor" /> 
 
-▸ **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setSkinColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置皮肤颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) |  颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setSkinTexture <Score text="setSkinTexture" /> 
 
-▸ **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setSkinTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置皮肤贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 

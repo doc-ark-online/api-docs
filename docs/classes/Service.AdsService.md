@@ -16,7 +16,7 @@
 
 | Methods |
 | :-----|
-| **[isActive](Service.AdsService.md#isactive)**([`AdsType`](../enums/Service.AdsType.md)): `boolean` <br> 广告是否激活|
+| **[isActive](Service.AdsService.md#isactive)**([`AdsType`](../enums/Service.AdsType.md)): `boolean` <br> 广告是否激活,PC和PIE上始终返回false|
 | **[isReady](Service.AdsService.md#isready)**([`AdsType`](../enums/Service.AdsType.md), (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
 | **[show](Service.AdsService.md#show)**([`AdsType`](../enums/Service.AdsType.md), (`state`: [`AdsState`](../enums/Service.AdsState.md)) => `void`): `void` <br> 展示广告|
 | **[getInstance](Service.AdsService.md#getinstance)**(): [`AdsService`](Service.AdsService.md) <br> 获取广告服务管理器全局实例|
@@ -25,9 +25,9 @@
 
 ### isActive <Score text="isActive" /> 
 
-▸ **isActive**(`adsType`): `boolean` <Badge type="tip" text="other" />
+• **isActive**(`adsType`): `boolean` <Badge type="tip" text="other" />
 
-广告是否激活
+广告是否激活,PC和PIE上始终返回false
 
 
 #### Parameters
@@ -46,7 +46,7 @@ ___
 
 ### isReady <Score text="isReady" /> 
 
-▸ **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
+• **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
 
 广告是否准备好
 
@@ -69,7 +69,7 @@ ___
 
 ### show <Score text="show" /> 
 
-▸ **show**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
+• **show**(`adsType`, `callback`): `void` <Badge type="tip" text="other" />
 
 展示广告
 
@@ -86,7 +86,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`AdsService`](Service.AdsService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`AdsService`](Service.AdsService.md) <Badge type="tip" text="other" />
 
 获取广告服务管理器全局实例
 

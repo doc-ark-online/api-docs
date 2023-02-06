@@ -34,7 +34,7 @@
 
 ### applySharedId <Score text="applySharedId" /> 
 
-▸ **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="other" />
+• **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="other" />
 
 应用分享Id的角色数据
 
@@ -53,7 +53,7 @@ ___
 
 ### createSharedId <Score text="createSharedId" /> 
 
-▸ **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
+• **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
 
 生成分享Id
 
@@ -71,7 +71,7 @@ ___
 
 ### dataShowToOther <Score text="dataShowToOther" /> 
 
-▸ **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="other" />
+• **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="other" />
 
 设置数据是否公开给其他用户
 
@@ -90,7 +90,7 @@ ___
 
 ### downloadData <Score text="downloadData" /> 
 
-▸ **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="other" />
+• **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="other" />
 
 下载角色形象并应用到当前角色身上
 
@@ -109,7 +109,7 @@ ___
 
 ### downloadDefaultDataString <Score text="downloadDefaultDataString" /> 
 
-▸ **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="other" />
+• **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="other" />
 
 下载默认角色数据
 
@@ -126,7 +126,7 @@ ___
 
 ### fillAvatar <Score text="fillAvatar" /> 
 
-▸ **fillAvatar**(`img`): `void` <Badge type="tip" text="other" />
+• **fillAvatar**(`img`): `void` <Badge type="tip" text="other" />
 
 将头像赋值到Image变量上
 
@@ -149,7 +149,7 @@ ___
 
 ### getNickName <Score text="getNickName" /> 
 
-▸ **getNickName**(): `string` <Badge type="tip" text="other" />
+• **getNickName**(): `string` <Badge type="tip" text="other" />
 
 获取玩家昵称
 
@@ -171,7 +171,7 @@ ___
 
 ### getOpenId <Score text="getOpenId" /> 
 
-▸ **getOpenId**(): `string` <Badge type="tip" text="other" />
+• **getOpenId**(): `string` <Badge type="tip" text="other" />
 
 获取OpenId
 
@@ -193,7 +193,7 @@ ___
 
 ### getUserData <Score text="getUserData" /> 
 
-▸ **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="other" />
+• **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="other" />
 
 获取用户存储在服务器上的角色形象数据
 
@@ -212,7 +212,7 @@ ___
 
 ### getUserId <Score text="getUserId" /> 
 
-▸ **getUserId**(): `string` <Badge type="tip" text="other" />
+• **getUserId**(): `string` <Badge type="tip" text="other" />
 
 获取平台的用户Id,可以用于getUserData接口
 
@@ -228,7 +228,7 @@ ___
 
 ### setUserData <Score text="setUserData" /> 
 
-▸ **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
+• **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
 
 将角色形象数据应用至角色
 
@@ -247,7 +247,7 @@ ___
 
 ### uploadData <Score text="uploadData" /> 
 
-▸ **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="other" />
+• **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="other" />
 
 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
@@ -267,7 +267,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`AccountService`](Service.AccountService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`AccountService`](Service.AccountService.md) <Badge type="tip" text="other" />
 
 获取用户账号信息管理器全局实例
 

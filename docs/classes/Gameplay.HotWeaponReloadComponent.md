@@ -118,7 +118,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
 是否有动画GUID
 

@@ -695,7 +695,7 @@ true:开启，false:关闭
 
 ### deFocus <Score text="deFocus" /> 
 
-▸ **deFocus**(): `void` <Badge type="tip" text="other" />
+• **deFocus**(): `void` <Badge type="tip" text="other" />
 
 设置输入框失焦状态，取消输入状态
 
@@ -704,7 +704,7 @@ true:开启，false:关闭
 
 ### focus <Score text="focus" /> 
 
-▸ **focus**(): `void` <Badge type="tip" text="other" />
+• **focus**(): `void` <Badge type="tip" text="other" />
 
 设置输入框聚焦状态，进入可输入状态
 
@@ -713,7 +713,7 @@ true:开启，false:关闭
 
 ### setContentColorByHex <Score text="setContentColorByHex" /> 
 
-▸ **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setContentColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置输入框的内容颜色 指定Hex的颜色文本设定颜色 #05050505
 
@@ -729,7 +729,7 @@ ___
 
 ### setContentColorDecimal <Score text="setContentColorDecimal" /> 
 
-▸ **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setContentColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置输入框的内容颜色 指定R、G、B、A设置颜色 0 ~255
 
@@ -748,7 +748,7 @@ ___
 
 ### setFontColorByHex <Score text="setFontColorByHex" /> 
 
-▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置文本颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -764,7 +764,7 @@ ___
 
 ### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
-▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置文本颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -783,7 +783,7 @@ ___
 
 ### setShadowColorByHex <Score text="setShadowColorByHex" /> 
 
-▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置阴影颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -799,7 +799,7 @@ ___
 
 ### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
-▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置阴影颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -818,7 +818,7 @@ ___
 
 ### setTextJustification <Score text="setTextJustification" /> 
 
-▸ **setTextJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
+• **setTextJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
 
 设置输入框的对齐方式
 
@@ -834,7 +834,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`InputBox`](UI.InputBox.md) <Badge type="tip" text="other" />
 
 创建 InputBox 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 
