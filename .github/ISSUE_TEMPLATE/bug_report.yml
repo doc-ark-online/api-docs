@@ -1,0 +1,41 @@
+name: " documentation report"
+description: Create a report to help us improve docs
+labels: ['documentation']
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 所属页面地址
+      description: 请填入页面地址
+      placeholder: 请输入
+    validations:
+      required: true
+  - type: textarea
+    id: select-content
+    attributes:
+      label: 选中内容
+      description: 请填入对文档有疑惑的内容
+      placeholder: 请输入
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 请选择反馈的问题类型
+      multiple: false
+      options:
+        - 缺少信息 - 我想了解更多信息
+        - 不准确 - 接口调不通/接口参数错误/接口返回和文档不一致
+        - 小错误 - 有错别字/语句不通/链接打不开
+        - 字太多 - 我想看图片/视频/代码实例
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: other-content
+    attributes:
+      label: 补充说明
+      description: 感谢您的反馈，还有其他的补充说明么？
+      placeholder: 请输入
+    validations:
+      required: false

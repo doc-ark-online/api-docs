@@ -44,7 +44,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ignoreDeadLinks: true,
   title: 'API',
   appearance: false,
-  description: '口袋方舟 编辑器的 Api 文档',
+  description: '口袋方舟编辑器的API文档',
   // base: "/api-docs/",
   outDir: '../dist',
   head: [
@@ -97,7 +97,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       // }
     ],
     socialLinks: [
-      { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' },
+      // { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' },
       {
         link: 'https://wenjuan.feishu.cn/m/cfm?t=sEJP3cVJZ3Ii-ewdc',
         icon: {
@@ -115,8 +115,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
-      text: '到 github 上进行修改'
+        'https://github.com/prodigytech-doc/api-docs/tree/release-021/docs/:path',
+      text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
     docFooter: {
