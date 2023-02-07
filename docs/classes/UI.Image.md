@@ -284,6 +284,12 @@ ___
 
 设置图片样式为本地图片文件
 
+::: warning Precautions
+
+该接口主要配合setImageByBlendMode和asyncExportBlendBrush来为移动编辑器服务的
+
+:::
+
 
 #### Parameters
 
