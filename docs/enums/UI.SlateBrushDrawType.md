@@ -28,6 +28,10 @@ ___
 • **Box** = ``1``
 
 绘制一个3x3长方体，其中边和中间根据边距拉伸
+<br>使用 [margin](https://api-docs.ark.online/classes/UI.Image.html#margin) 进行边距调整
+<br>示例gif
+<br><div align=center><img src="https://s3.bmp.ovh/imgs/2023/02/16/2e97f248ea6ea8ff.gif"></div>
+
 
 ___
 
