@@ -86,7 +86,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '021 版本',
-        items: [{ text: '020 版本', link: 'https://api-docs.ark.online/' }]
+        items: [{ text: '020 版本', link: 'https://api-docs-020.ark.online/' }]
       }
       // {
       //   text: '语言',
@@ -115,7 +115,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/release-021/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
