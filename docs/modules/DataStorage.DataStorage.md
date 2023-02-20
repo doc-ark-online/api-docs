@@ -1,5 +1,7 @@
 DataStorage
 
+# DataStorage <Badge type="tip" text="Namespace" /> <Score text="DataStorage" />
+
 在调用DataStorage相关接口时，每一个Key的对应值在后端数据服务器的读取和修改都有频率、间隔限制，主要表现在：  
 1. 【总频率限制】接口调用时至一分钟前的时间区间内，某个Key的对应值在后端数据服务器上被获取Get、改写Set、删除Remove的总次数不能超过 (60+游戏设定的最大人数×10)次，不管它是在哪个ds服务器被操作的；如果时间区间内超限，请求会失败，然后Set、Remove会返回 FREQUENCY_OVERRUN(操作失败：请求频率超限) 而Get会catch到error timeout。  
 2. 【改写间隔限制】对于某个Key的对应值，在后端数据服务器上进行了1次改写Set 或 删除Remove操作后，该Key的对应值将会被锁定6s，在这6s内将无法再被Set、remove，尝试将会返回 FREQUENCY_OVERRUN(操作失败：请求频率超限)，直到6s过去解锁后才可修改。 
@@ -11,8 +13,6 @@ DataStorage
 3. 对于玩家相关的信息，建议在ts层建立数据缓存，进行一定的数据托管；即通过ts脚本逻辑让DS服务器临时缓存玩家数据，只在初始化的时候进行get，在离线或其他必要时set，以减轻对后端数据服务器的压力，保证稳定性
 
 :::
-
-# DataStorage <Badge type="tip" text="Namespace" /> <Score text="DataStorage" />
 
 ## Table of contents
 
