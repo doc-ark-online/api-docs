@@ -2,9 +2,13 @@
 
 # MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 
+**`Groups`**
+
+SCRIPITING
+
 **`Instance`**
 
-支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
+支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码
 
 ::: warning Precautions
 
@@ -29,9 +33,9 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 | Methods |
 | :-----|
-| **[registerAction](Service.MessageChannelService.md#registeraction)**(`string`, `any`, (`data`: `string`) => `void`): `void` <br> 注册需要收到消息的action以及对应要调用的回调函数|
-| **[send](Service.MessageChannelService.md#send)**(`string`): `void` <br> 发送消息到通道上|
-| **[sendTo](Service.MessageChannelService.md#sendto)**([`MessageChannelReceiver`](../enums/Service.MessageChannelReceiver.md), `string`): `void` <br> 发送消息给指定对象|
+| **[registerAction](Service.MessageChannelService.md#registeraction)**(`string`, `any`, (`data`: `string`) => `void`): `void` <br> 注册需要收到消息的action以及对应要调用的回调函数，通道会识别包含该action的消息并调用对应的回调函数|
+| **[send](Service.MessageChannelService.md#send)**(`string`): `void` <br> 发送消息到通道上，将消息发送到通道，所有注册了该消息action的端才能收到该消息|
+| **[sendTo](Service.MessageChannelService.md#sendto)**([`MessageChannelReceiver`](../enums/Service.MessageChannelReceiver.md), `string`): `void` <br> 发送消息给指定对象，将消息发送给指定对象，对方无需提前注册|
 | **[getInstance](Service.MessageChannelService.md#getinstance)**(): [`MessageChannelService`](Service.MessageChannelService.md) <br> 获取API实例进行调用|
 
 ## Methods
@@ -40,9 +44,8 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 • **registerAction**(`action`, `caller`, `onCall`): `void` <Badge type="tip" text="other" />
 
-注册需要收到消息的action以及对应要调用的回调函数
+注册需要收到消息的action以及对应要调用的回调函数，通道会识别包含该action的消息并调用对应的回调函数
 
-通道会识别包含该action的消息并调用对应的回调函数
 
 ::: warning Precautions
 
@@ -72,9 +75,8 @@ ___
 
 • **send**(`message`): `void` <Badge type="tip" text="other" />
 
-发送消息到通道上
+发送消息到通道上，将消息发送到通道，所有注册了该消息action的端才能收到该消息
 
-将消息发送到通道，所有注册了该消息action的端才能收到该消息
 
 ::: warning Precautions
 
@@ -104,9 +106,8 @@ ___
 
 • **sendTo**(`toWhom`, `message`): `void` <Badge type="tip" text="other" />
 
-发送消息给指定对象
+发送消息给指定对象，将消息发送给指定对象，对方无需提前注册
 
-将消息发送给指定对象，对方无需提前注册
 
 ::: warning Precautions
 
@@ -137,7 +138,6 @@ ___
 
 获取API实例进行调用
 
-获取API实例进行调用
 
 ::: warning Precautions
 

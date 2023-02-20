@@ -4,6 +4,10 @@
 
 人形对象V2材质风格
 
+**`Groups`**
+
+AVATAR
+
 ## Implemented by
 
 - [`HumanoidV2`](../classes/Gameplay.HumanoidV2.md)
@@ -121,7 +125,6 @@ ___
 
 获取纹身贴图 GUID
 
-客户端有效
 
 #### Parameters
 
@@ -164,7 +167,6 @@ ___
 
 设置皮肤颜色
 
-客户端有效
 
 #### Returns
 

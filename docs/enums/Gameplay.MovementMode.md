@@ -4,6 +4,10 @@
 
 角色状态
 
+**`Groups`**
+
+AVATAR
+
 ## Table of contents
 
 | Enumeration Members |

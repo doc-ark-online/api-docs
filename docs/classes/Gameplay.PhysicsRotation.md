@@ -2,7 +2,30 @@
 
 # PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
+**`Groups`**
+
+PHYSICS
+
 物理旋转轴
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsRotation;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setAngularLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.angularLimit = new Type.Vector(100,100,100);
+test.angularVelocity = new Type.Vector(100,100,100);
+test.strength = 100;
+```
 
 ## Hierarchy
 
@@ -145,7 +168,6 @@ ___
 
 获取限制类型
 
-调用端
 
 #### Parameters
 
@@ -166,7 +188,6 @@ ___
 
 设置旋转类型
 
-调用端
 
 #### Parameters
 

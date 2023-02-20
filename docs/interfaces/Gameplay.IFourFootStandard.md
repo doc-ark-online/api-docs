@@ -4,6 +4,10 @@
 
 标准四足接口
 
+**`Groups`**
+
+AVATAR
+
 ## Implemented by
 
 - [`FourFootStandard`](../classes/Gameplay.FourFootStandard.md)

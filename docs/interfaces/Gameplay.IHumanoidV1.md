@@ -4,6 +4,10 @@
 
 人形对象V1接口
 
+**`Groups`**
+
+AVATAR
+
 ## Implemented by
 
 - [`HumanoidV1`](../classes/Gameplay.HumanoidV1.md)

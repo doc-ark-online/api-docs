@@ -9,7 +9,7 @@ Util
 | [AssetUtil](Util.AssetUtil.md) |
 | [InputUtil](Util.InputUtil.md) |
 | [LanguageUtil](Util.LanguageUtil.md) |
-| [LocaleUtil](Util.LocaleUtil.md) <br> 获取默认的语言和地区|
+| [LocaleUtil](Util.LocaleUtil.md) |
 | [MathUtil](Util.MathUtil.md) |
 | [NFTUtil](Util.NFTUtil.md) |
 | [StringUtil](Util.StringUtil.md) <br> 字符串工具|

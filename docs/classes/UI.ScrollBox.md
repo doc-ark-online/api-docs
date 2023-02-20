@@ -2,6 +2,10 @@
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
+**`Groups`**
+
+GUI
+
 滑动框
 
 ## Hierarchy
@@ -156,7 +160,12 @@ ___
 
 返回滚动条的默认位置(类型，非具体坐标)
 
+
+::: warning Precautions
+
 没有操作滚动条的情况下滚动条的默认位置
+
+:::
 
 #### Returns
 
@@ -168,7 +177,12 @@ ___
 
 设置滚动条的默认位置(类型，非具体坐标)
 
+
+::: warning Precautions
+
 没有操作滚动条的情况下滚动条的默认位置
+
+:::
 
 #### Parameters
 

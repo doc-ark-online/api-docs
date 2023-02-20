@@ -343,6 +343,10 @@ ___
 
 数值a在最小值和最大值之间，包括最小值和最大值
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -366,6 +370,10 @@ ___
 
 计算cos值
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -386,6 +394,10 @@ ___
 • **degreesToRadians**(`a`): `number` <Badge type="tip" text="other" />
 
 根据输入的度数返回弧度值
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters
@@ -408,6 +420,10 @@ ___
 
 返回 数值x 除以 数值y 的余数
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -429,6 +445,10 @@ ___
 • **lerp**(`a`, `b`, `alpha`): `number` <Badge type="tip" text="other" />
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
+
+**`Groups`**
+
+UTILITY
 
 
 ::: warning Precautions
@@ -459,6 +479,10 @@ ___
 
 根据输入的弧度值返回度数
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -479,6 +503,10 @@ ___
 • **randomFloat**(`min`, `max`): `number` <Badge type="tip" text="other" />
 
 获取随机范围内浮点数[包含min, 不包含max)
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters
@@ -502,6 +530,10 @@ ___
 
 获取随机范围内整数[包含min, 不包含max)
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -524,6 +556,10 @@ ___
 
 计算sin值
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -544,6 +580,10 @@ ___
 • **tan**(`a`): `number` <Badge type="tip" text="other" />
 
 计算tan值
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters

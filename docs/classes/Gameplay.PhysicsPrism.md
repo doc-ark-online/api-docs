@@ -2,7 +2,31 @@
 
 # PhysicsPrism <Badge type="tip" text="Class" /> <Score text="PhysicsPrism" />
 
+**`Groups`**
+
+PHYSICS
+
 物理棱柱组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsPrism;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setAxisXLinearType(Gameplay.LimitType.Free);
+test.linearLimit = 100;
+test.restitution = 100;
+test.linearVelocity = new Type.Vector(100,100,100);
+test.strength = 100;
+```
 
 ## Hierarchy
 

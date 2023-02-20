@@ -65,11 +65,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    algolia: {
-      appId: 'I2PHYUBLCN',
-      apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech'
-    },
+    // algolia: {
+    //   appId: 'I2PHYUBLCN',
+    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
+    //   indexName: 'api-docs_prodigytech'
+    // },
     siteTitle: 'API',
     nav: [
       {
@@ -85,8 +85,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forums.ark.online/#/'
       },
       {
-        text: '021 版本',
-        items: [{ text: '020 版本', link: 'https://api-docs-020.ark.online/' }]
+        text: '022 版本',
+        items: [
+          { text: '021 版本', link: 'https://api-docs-021.ark.online/' },
+          { text: '020 版本', link: 'https://api-docs-020.ark.online/' }
+        ]
       }
       // {
       //   text: '语言',

@@ -2,7 +2,24 @@
 
 # FourFootStandard <Badge type="tip" text="Class" /> <Score text="FourFootStandard" />
 
-标准四足体型
+四足外观形象对象,用于四足外观的设置.
+
+**`Groups`**
+
+AVATAR
+
+::: warning Precautions
+
+目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目使用非FourFootStandard(四足外观)时,需要切换类型到FourFootStandard形象.再获取FourFootStandard(let fourfootftandard = npc.getAppearance<Gameplay.FourFootStandard>())对象,进行形象更新.
+
+:::
+
+使用示例:(关于示例的描述、说明)
+```ts
+1.切换Character为FourFootStandard外观类型：npc.appearanceType = Gameplay.AppearanceType.FourFootStandard;
+2.获取对应的外观对象： let appearance = npc.getAppearance<Gameplay.FourFootStandard>();
+3.使用相关的换装能力：appearance.API()
+```
 
 ## Hierarchy
 

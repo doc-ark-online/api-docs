@@ -2,6 +2,10 @@
 
 # Group <Badge type="tip" text="Class" /> <Score text="Group" />
 
+**`Groups`**
+
+UTILITY
+
 补间组，用于同时控制多个补间对象
 
 ## Table of contents
@@ -89,11 +93,11 @@ ___
 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
 ```ts
 // 更新自定义补间组
-const group = new Extension.TweenUtil.Group()
+const group = new Util.TweenUtil.Group()
 group.update()
 
 // 更新全局补间组
-Extension.TweenUtil.TWEEN.update()
+Util.TweenUtil.TWEEN.update()
 ```
 
 #### Parameters

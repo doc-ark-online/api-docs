@@ -4,6 +4,10 @@
 
 人形对象V1头发接口
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - **`HumanoidV1Part`**

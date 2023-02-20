@@ -2,6 +2,10 @@
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 
+**`Groups`**
+
+UTILITY
+
 对象池
 
 ## Type parameters

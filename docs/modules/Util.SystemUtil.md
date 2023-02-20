@@ -52,6 +52,10 @@ ___
 
 获取当前环境
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -66,6 +70,10 @@ ___
 • **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取默认CPU画质等级
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -82,6 +90,10 @@ ___
 
 获取默认GPU画质等级
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -96,6 +108,10 @@ ___
 • **getEditorVersion**(): `string` <Badge type="tip" text="other" />
 
 获取编辑器版本号
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -112,6 +128,10 @@ ___
 
 获取完整编辑器版本号
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -126,6 +146,10 @@ ___
 • **getGameId**(): `string` <Badge type="tip" text="other" />
 
 获取当前游戏GameId
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -142,6 +166,10 @@ ___
 
 获取当前CPU画质等级
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -156,6 +184,10 @@ ___
 • **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取当前GPU画质等级
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -172,6 +204,10 @@ ___
 
 获取当前游戏版本
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -186,6 +222,10 @@ ___
 • **isClient**(): `boolean` <Badge type="tip" text="other" />
 
 是否客户端运行
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -202,6 +242,10 @@ ___
 
 判断当前是否是移动端
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Returns
 
@@ -216,6 +260,10 @@ ___
 • **isServer**(): `boolean` <Badge type="tip" text="other" />
 
 是否服务器运行
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Returns
@@ -232,6 +280,10 @@ ___
 
 设置当前CPU画质等级
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Parameters
 
@@ -247,6 +299,10 @@ ___
 • **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="other" />
 
 设置当前GPU画质等级
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Parameters

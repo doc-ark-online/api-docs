@@ -4,6 +4,10 @@
 
 人形对象V2部位
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - [`IPart`](Gameplay.IPart.md)

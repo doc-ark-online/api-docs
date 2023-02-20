@@ -2,6 +2,10 @@
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
+**`Groups`**
+
+UTILITY
+
 **`Instance`**
 
 音效管理器
@@ -41,7 +45,7 @@
 
 ### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
-• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
+• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" />
 
 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)
 
@@ -61,6 +65,8 @@ BGM音量
 • `set` **BGMVolumeScale**(`value`): `void`
 
 BGM音量
+
+**`Effect`**
 
 
 #### Parameters
@@ -89,7 +95,7 @@ ___
 
 `number`
 
-• `set` **volumeScale**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **volumeScale**(`value`): `void`
 
 音效的音量
 
@@ -98,6 +104,8 @@ ___
 取值范围0-1
 
 :::
+
+**`Effect`**
 
 
 #### Parameters

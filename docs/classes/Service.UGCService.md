@@ -2,6 +2,10 @@
 
 # UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
+**`Groups`**
+
+SCRIPITING
+
 **`Instance`**
 
 用户建造服务
@@ -78,7 +82,7 @@ ___
 
 使用示例: 模板信息包含如下字段:
 ```ts
-gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // mw的游戏id
+gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // 游戏id
 path: "data/data/local",
 parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
 ```

@@ -2,6 +2,10 @@
 
 # JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
+**`Groups`**
+
+GUI
+
 摇杆信息
 
 ## Table of contents

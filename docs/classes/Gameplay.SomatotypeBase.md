@@ -4,6 +4,10 @@
 
 体型基类
 
+**`Groups`**
+
+GAMEPLAY
+
 ## Hierarchy
 
 - **`SomatotypeBase`**
@@ -59,7 +63,6 @@ ___
 
 后处理开关
 
-客户端调用生效
 
 #### Parameters
 
@@ -78,7 +81,6 @@ ___
 
 描边开关
 
-调用调用生效
 
 #### Parameters
 
@@ -100,7 +102,6 @@ ___
 
 后处理描边开关
 
-调用端调用生效
 
 #### Parameters
 

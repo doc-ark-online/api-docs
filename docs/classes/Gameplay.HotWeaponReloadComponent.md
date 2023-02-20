@@ -2,7 +2,11 @@
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
-热武器换弹组件
+热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
+
+**`Groups`**
+
+GAMEPLAY
 
 ## Table of contents
 
@@ -73,6 +77,7 @@ ___
 
 设置动画 GUID
 
+调用端自动广播
 
 #### Parameters
 
@@ -100,6 +105,7 @@ ___
 
 设置换弹时间
 
+调用端自动广播
 
 ::: warning Precautions
 

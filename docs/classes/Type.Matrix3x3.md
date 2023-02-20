@@ -2,6 +2,10 @@
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 
+**`Groups`**
+
+DATA
+
 三维矩阵
 
 ::: warning Precautions
@@ -806,9 +810,11 @@ ___
 
 计算后的矩阵
 
-• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md)
 
 矩阵标量乘法
+
+**`Effect`**
 
 
 ::: warning Precautions

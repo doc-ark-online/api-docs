@@ -4,6 +4,10 @@
 
 人形对象V2部位
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - [`IPart`](Gameplay.IPart.md)
@@ -133,7 +137,6 @@ ___
 
 获取腮红贴图
 
-客户端有效
 
 #### Returns
 
@@ -179,7 +182,6 @@ ___
 
 获取表情
 
-客户端生效
 
 #### Returns
 
@@ -545,7 +547,6 @@ ___
 
 获取瞳孔旋转
 
-客户端有效
 
 #### Returns
 
@@ -728,7 +729,6 @@ ___
 
 设置表情
 
-客户端生效
 
 #### Parameters
 
@@ -1187,8 +1187,6 @@ ___
 
 设置瞳孔左右位置
 
-sync = false:客户端;
-sync = true:双端
 
 #### Parameters
 
@@ -1206,8 +1204,6 @@ ___
 
 设置瞳孔上下位置
 
-sync = false:客户端;
-sync = true:双端
 
 #### Parameters
 
@@ -1225,8 +1221,6 @@ ___
 
 设置瞳孔旋转
 
-sync = false:客户端;
-sync = true:双端
 
 #### Parameters
 

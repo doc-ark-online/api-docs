@@ -2,6 +2,10 @@
 
 # Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 
+**`Groups`**
+
+DATA
+
 由分量 (x,y,z,w) 组成的4D齐次向量
 
 ## Table of contents

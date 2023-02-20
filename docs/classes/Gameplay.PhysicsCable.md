@@ -2,7 +2,26 @@
 
 # PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 
+**`Groups`**
+
+PHYSICS
+
 物理绳组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsCable;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.maxLength = 10000;
+```
 
 ## Hierarchy
 
@@ -55,7 +74,7 @@
 
 设置禁用碰撞
 
-自动同步
+调用端自动广播
 
 #### Parameters
 
@@ -94,7 +113,7 @@
 
 设置绳子最大长度
 
-自动同步
+调用端自动广播
 
 #### Parameters
 

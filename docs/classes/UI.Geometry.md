@@ -2,6 +2,10 @@
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
+**`Groups`**
+
+GUI
+
 几何坐标信息
 
 ## Table of contents

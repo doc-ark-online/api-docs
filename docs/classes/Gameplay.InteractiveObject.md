@@ -1,28 +1,36 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsImpulse
+[Gameplay](../modules/Gameplay.Gameplay.md) / InteractiveObject
 
-# PhysicsImpulse <Badge type="tip" text="Class" /> <Score text="PhysicsImpulse" />
+# InteractiveObject <Badge type="tip" text="Class" /> <Score text="InteractiveObject" />
 
-冲量对象
+**`Groups`**
+
+GAMEPLAY
+
+交互物功能对象 V2
 
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`PhysicsImpulse`**
+  ↳ **`InteractiveObject`**
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onImpulseEnter](Gameplay.PhysicsImpulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 发生冲量碰撞后的回调函数|
+| **[onInteractiveEnded](Gameplay.InteractiveObject.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数|
+| **[onInteractiveStarted](Gameplay.InteractiveObject.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数|
+| **[onInteractiveTimeout](Gameplay.InteractiveObject.md#oninteractivetimeout)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互超时时执行绑定函数|
 
 | Accessors |
 | :-----|
-| **[enable](Gameplay.PhysicsImpulse.md#enable)**(): `boolean` <br> 获取是否启用冲量|
-| **[impulseForceType](Gameplay.PhysicsImpulse.md#impulseforcetype)**(): [`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md) <br> 获取当前冲量力类型|
-| **[impulseRadialForce](Gameplay.PhysicsImpulse.md#impulseradialforce)**(): `number` <br> 获取径向力的冲量值|
-| **[impulseType](Gameplay.PhysicsImpulse.md#impulsetype)**(): [`ImpulseType`](../enums/Gameplay.ImpulseType.md) <br> 获取冲量应用方式，绝对或相对|
-| **[impulseVector](Gameplay.PhysicsImpulse.md#impulsevector)**(): [`Vector`](Type.Vector.md) <br> 获取矢量力的冲量向量|
+| **[autoInteractMode](Gameplay.InteractiveObject.md#autointeractmode)**(): `boolean` <br> 是否自动激活|
+| **[endInteractiveLocation](Gameplay.InteractiveObject.md#endinteractivelocation)**(): [`Vector`](Type.Vector.md) <br> 结束交互的相对位置，退出交互后角色刷新在这里|
+| **[endInteractiveRotation](Gameplay.InteractiveObject.md#endinteractiverotation)**(): [`Rotation`](Type.Rotation.md) <br> 结束交互的相对旋转，退出交互后角色朝向|
+| **[interactiveSlot](Gameplay.InteractiveObject.md#interactiveslot)**(): [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) <br> 交互物插槽|
+| **[interactiveStance](Gameplay.InteractiveObject.md#interactivestance)**(): `string` <br> 交互动画姿态资源 id|
+| **[interactiveTrigger](Gameplay.InteractiveObject.md#interactivetrigger)**(): `string` <br> 交互物触发器 GUID|
+| **[maxInteractiveDuration](Gameplay.InteractiveObject.md#maxinteractiveduration)**(): `number` <br> 最大交互时间，超过该时间自动退出交互|
 
 
 ::: details 点击查看继承
@@ -43,7 +51,7 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -52,6 +60,11 @@
 
 | Methods |
 | :-----|
+| **[endInteract](Gameplay.InteractiveObject.md#endinteract)**([`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md), `string`): `boolean` <br> 结束交互|
+| **[getBoundTrigger](Gameplay.InteractiveObject.md#getboundtrigger)**(): ``null`` \| [`Trigger`](Gameplay.Trigger.md) <br> 获取绑定的触发器|
+| **[getInteractCharacter](Gameplay.InteractiveObject.md#getinteractcharacter)**(): [`CharacterBase`](Gameplay.CharacterBase.md) <br> 获取正在交互的角色|
+| **[getInteractiveStatus](Gameplay.InteractiveObject.md#getinteractivestatus)**(): `boolean` <br> 获取该交互物的交互状态|
+| **[startInteract](Gameplay.InteractiveObject.md#startinteract)**([`CharacterBase`](Gameplay.CharacterBase.md), [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md), `string`): `boolean` <br> 开始交互|
 
 
 ::: details 点击查看继承
@@ -61,7 +74,7 @@
 | **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
 | **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
@@ -105,95 +118,236 @@
 | **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
 ## Properties
 
-### onImpulseEnter <Score text="onImpulseEnter" /> 
+### onInteractiveEnded <Score text="onInteractiveEnded" /> 
 
-• **onImpulseEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
+• **onInteractiveEnded**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-发生冲量碰撞后的回调函数
+交互结束时执行绑定函数
+
+::: warning Precautions
+
+会自动广播，若是双端对象，则可以在任意客户端调用
+
+:::
+
+___
+
+### onInteractiveStarted <Score text="onInteractiveStarted" /> 
+
+• **onInteractiveStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+
+交互开始时执行绑定函数
+
+::: warning Precautions
+
+会自动广播，若是双端对象，则可以在任意客户端调用
+
+:::
+
+___
+
+### onInteractiveTimeout <Score text="onInteractiveTimeout" /> 
+
+• **onInteractiveTimeout**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+
+交互超时时执行绑定函数
+
+::: warning Precautions
+
+会自动广播，若是双端对象，则可以在任意客户端调用
+
+:::
 
 ## Accessors
 
-### enable <Score text="enable" /> 
+### autoInteractMode <Score text="autoInteractMode" /> 
 
-• `get` **enable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **autoInteractMode**(): `boolean`
 
-获取是否启用冲量
+是否自动激活
 
+**`Notes`**
+
+不自动激活的情况下，可以考虑监听自动生成的 Trigger （通过 getBoundTrigger() 获取）的事件
 
 #### Returns
 
 `boolean`
 
-是否启用冲量
+• `set` **autoInteractMode**(`value`): `void`
 
-• `set` **enable**(`impulseEnabled`): `void` <Badge type="tip" text="other" />
+是否自动激活
 
-设置是否启用冲量，禁用状态下，不会应用冲量到物体上
+**`Notes`**
 
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `impulseEnabled` | `boolean` |  是否启用冲量的应用，设置为 false 后依然会有碰撞事件，但不会应用冲量 |
-
-
-
-### impulseForceType <Score text="impulseForceType" /> 
-
-• `get` **impulseForceType**(): [`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md) <Badge type="tip" text="other" />
-
-获取当前冲量力类型
-
-
-#### Returns
-
-[`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md)
-
-冲量力类型
-
-• `set` **impulseForceType**(`impulseCollisionType`): `void` <Badge type="tip" text="other" />
-
-设置冲量力类型
-
+不自动激活的情况下，可以考虑监听自动生成的 Trigger （通过 getBoundTrigger() 获取）的事件
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `impulseCollisionType` | [`ImpulseForceType`](../enums/Gameplay.ImpulseForceType.md) |  冲量力类型 |
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
 
 
 ___
 
-### impulseRadialForce <Score text="impulseRadialForce" /> 
+### endInteractiveLocation <Score text="endInteractiveLocation" /> 
 
-• `get` **impulseRadialForce**(): `number` <Badge type="tip" text="other" />
+• `get` **endInteractiveLocation**(): [`Vector`](Type.Vector.md)
 
-获取径向力的冲量值
+结束交互的相对位置，退出交互后角色刷新在这里
 
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **endInteractiveLocation**(`value`): `void`
+
+结束交互的相对位置，退出交互后角色刷新在这里
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | [`Vector`](Type.Vector.md) |
+
+
+___
+
+### endInteractiveRotation <Score text="endInteractiveRotation" /> 
+
+• `get` **endInteractiveRotation**(): [`Rotation`](Type.Rotation.md)
+
+结束交互的相对旋转，退出交互后角色朝向
+
+#### Returns
+
+[`Rotation`](Type.Rotation.md)
+
+• `set` **endInteractiveRotation**(`value`): `void`
+
+结束交互的相对旋转，退出交互后角色朝向
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | [`Rotation`](Type.Rotation.md) |
+
+
+
+### interactiveSlot <Score text="interactiveSlot" /> 
+
+• `get` **interactiveSlot**(): [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md)
+
+交互物插槽
+
+#### Returns
+
+[`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md)
+
+• `set` **interactiveSlot**(`slot`): `void`
+
+交互物插槽
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `slot` | [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) |
+
+
+___
+
+### interactiveStance <Score text="interactiveStance" /> 
+
+• `get` **interactiveStance**(): `string`
+
+交互动画姿态资源 id
+
+#### Returns
+
+`string`
+
+• `set` **interactiveStance**(`assetGuid`): `void`
+
+交互动画姿态资源 id
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `assetGuid` | `string` |
+
+
+___
+
+### interactiveTrigger <Score text="interactiveTrigger" /> 
+
+• `get` **interactiveTrigger**(): `string`
+
+交互物触发器 GUID
+
+#### Returns
+
+`string`
+
+• `set` **interactiveTrigger**(`guid`): `void`
+
+交互物触发器 GUID
+
+::: warning Precautions
+
+此方法没有规避重复触发
+
+:::
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `guid` | `string` |
+
+
+
+### maxInteractiveDuration <Score text="maxInteractiveDuration" /> 
+
+• `get` **maxInteractiveDuration**(): `number`
+
+最大交互时间，超过该时间自动退出交互
+
+::: warning Precautions
+
+该值为0时不自动退出。单位 s
+
+:::
 
 #### Returns
 
 `number`
 
-径向力时的冲量值
+• `set` **maxInteractiveDuration**(`value`): `void`
 
-• `set` **impulseRadialForce**(`value`): `void` <Badge type="tip" text="other" />
+最大交互时间，超过该时间自动退出交互
 
-设置径向力的冲量值
+::: warning Precautions
 
+该值为0时不自动退出。单位 s
+
+:::
 
 #### Parameters
 
@@ -202,65 +356,100 @@ ___
 | `value` | `number` |
 
 
+
+## Methods
+
+### endInteract <Score text="endInteract" /> 
+
+• **endInteract**(`endLoc?`, `endRot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+
+结束交互
+
+调用端自动广播
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `endLoc?` | [`Vector`](Type.Vector.md) |  结束位置 default: 属性 endInteractiveLocation |
+| `endRot?` | [`Rotation`](Type.Rotation.md) |  结束旋转量 default: 属性 endInteractiveRotation |
+| `newStance?` | `string` |  新姿态，default: 以属性玩家开始交互前的姿态为准 |
+
+#### Returns
+
+`boolean`
+
+true 触发了结束交互逻辑
+
 ___
 
-### impulseType <Score text="impulseType" /> 
+### getBoundTrigger <Score text="getBoundTrigger" /> 
 
-• `get` **impulseType**(): [`ImpulseType`](../enums/Gameplay.ImpulseType.md) <Badge type="tip" text="other" />
+• **getBoundTrigger**(): ``null`` \| [`Trigger`](Gameplay.Trigger.md) <Badge type="tip" text="other" />
 
-获取冲量应用方式，绝对或相对
+获取绑定的触发器
 
 
 #### Returns
 
-[`ImpulseType`](../enums/Gameplay.ImpulseType.md)
+``null`` \| [`Trigger`](Gameplay.Trigger.md)
 
-当前冲量应用方式
+已绑定的 Box Trigger
 
-• `set` **impulseType**(`impulseType`): `void` <Badge type="tip" text="other" />
 
-设置冲量应用方式
+### getInteractCharacter <Score text="getInteractCharacter" /> 
+
+• **getInteractCharacter**(): [`CharacterBase`](Gameplay.CharacterBase.md) <Badge type="tip" text="other" />
+
+获取正在交互的角色
+
+
+#### Returns
+
+[`CharacterBase`](Gameplay.CharacterBase.md)
+
+true：为交互中
+
+___
+
+### getInteractiveStatus <Score text="getInteractiveStatus" /> 
+
+• **getInteractiveStatus**(): `boolean` <Badge type="tip" text="other" />
+
+获取该交互物的交互状态
+
+
+#### Returns
+
+`boolean`
+
+true：为交互中
+
+
+### startInteract <Score text="startInteract" /> 
+
+• **startInteract**(`newCharObj`, `newSlot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+
+开始交互
 
 ::: warning Precautions
 
-在编辑器中使用会自动更新箭头方向
+建议客户端调用
 
 :::
 
+调用端自动广播
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `impulseType` | [`ImpulseType`](../enums/Gameplay.ImpulseType.md) |  冲量应用方式 |
-
-
-___
-
-### impulseVector <Score text="impulseVector" /> 
-
-• `get` **impulseVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
-
-获取矢量力的冲量向量
-
+| `newCharObj` | [`CharacterBase`](Gameplay.CharacterBase.md) |  要交互的角色（可以是玩家，也可以是AI） |
+| `newSlot?` | [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
+| `newStance?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
 
 #### Returns
 
-[`Vector`](Type.Vector.md)
+`boolean`
 
-当前冲量类型
-
-• `set` **impulseVector**(`vec`): `void` <Badge type="tip" text="other" />
-
-设置矢量力的冲量向量
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vec` | [`Vector`](Type.Vector.md) |  冲量力向量 |
-
-
-
-## Methods
+是否成功交互

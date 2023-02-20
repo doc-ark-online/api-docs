@@ -2,6 +2,10 @@
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
+**`Groups`**
+
+GAMEPLAY
+
 角色控制
 
 ## Hierarchy
@@ -34,7 +38,7 @@
 | **[transform](Gameplay.Player.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.Player.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.Player.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.Player.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[visible](Gameplay.Player.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.Player.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.Player.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.Player.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -47,7 +51,7 @@
 | **[asyncGetScriptByName](Gameplay.Player.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.Player.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.Player.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.Player.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[clone](Gameplay.Player.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
 | **[deleteDestroyCallback](Gameplay.Player.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.Player.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.Player.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
@@ -99,12 +103,14 @@
 | **[setWorldRotation](Gameplay.Player.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[setWorldScale](Gameplay.Player.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.Player.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawnGameObject](Gameplay.Player.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawn](Gameplay.Player.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.Player.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.Player.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.Player.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.Player.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.Player.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawnGameObject](Gameplay.Player.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+| **[spawn](Gameplay.Player.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.Player.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.Player.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 
 ## Properties
 
@@ -462,7 +468,7 @@ ___
 
 **`Deprecated`**
 
-since:v0.20.0 reason:api重构 replacement:getVisibility()
+since:020 reason:api重构 replacement:getVisibility()
 
 获取当前物体是否显示
 
@@ -689,7 +695,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-• **clone**(`inReplicates?`): `GameObject` <Badge type="tip" text="other" />
+• **clone**(`spawnInfo?`): `GameObject` <Badge type="tip" text="other" />
 
 复制对象
 
@@ -698,7 +704,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inReplicates?` | `boolean` | 是否复制 default:true |
+| `spawnInfo?` | `boolean` \| [`SpawnInfo`](../interfaces/Type.SpawnInfo.md) | 是否复制 \| 构建物体的信息 default:true |
 
 #### Returns
 
@@ -1500,6 +1506,7 @@ ___
 
 设置当前角色对象膨胀时间速度说明：对象膨胀速度默认为1，当膨胀时间速度设置小于1时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值0.1。
 
+调用端自动广播
 
 #### Parameters
 
@@ -1678,12 +1685,43 @@ GUID对应的物体
 
 ___
 
-### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
+### asyncSpawn <Score text="asyncSpawn" /> 
 
-• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
+• `Static` **asyncSpawn**<`T`\>(`spawnInfo`): `Promise`<`T`\> <Badge type="tip" text="other" />
 
 异步构造一个 GameObject 资源不存在会先去下载资源再去创建
 
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `GameObject`<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `spawnInfo` | [`SpawnInfo`](../interfaces/Type.SpawnInfo.md) |  构建物体的信息 |
+
+#### Returns
+
+`Promise`<`T`\>
+
+构造的GameObject
+
+___
+
+### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
+
+• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
+
+异步构造一个 GameObject 资源不存在会先去下载资源再去创建
+
+
+**`Deprecated`**
+
+since:022 reason:接口废弃 replacement:asyncSpawn()
 
 #### Parameters
 
@@ -1691,6 +1729,7 @@ ___
 | :------ | :------ | :------ |
 | `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
+| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
 
 #### Returns
 
@@ -1784,12 +1823,43 @@ ___
 
 ___
 
-### spawnGameObject <Score text="spawnGameObject" /> 
+### spawn <Score text="spawn" /> 
 
-• `Static` **spawnGameObject**(`assetId`, `inReplicates?`): `GameObject` <Badge type="tip" text="other" />
+• `Static` **spawn**<`T`\>(`spawnInfo`): `T` <Badge type="tip" text="other" />
 
 构造一个 GameObject
 
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `GameObject`<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `spawnInfo` | [`SpawnInfo`](../interfaces/Type.SpawnInfo.md) |  构建物体的信息 |
+
+#### Returns
+
+`T`
+
+构造的GameObject
+
+___
+
+### spawnGameObject <Score text="spawnGameObject" /> 
+
+• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
+
+构造一个 GameObject
+
+
+**`Deprecated`**
+
+since:022 reason:接口废弃 replacement:spawn()
 
 #### Parameters
 
@@ -1797,6 +1867,7 @@ ___
 | :------ | :------ | :------ |
 | `assetId` | `string` | 资源的GUID |
 | `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
+| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
 
 #### Returns
 

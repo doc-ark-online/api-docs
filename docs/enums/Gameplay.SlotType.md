@@ -5,6 +5,10 @@
 人形角色插槽类型
  内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
 
+**`Groups`**
+
+AVATAR
+
 ## Table of contents
 
 | Enumeration Members |

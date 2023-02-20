@@ -2,6 +2,10 @@
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
+**`Groups`**
+
+DATA
+
 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
 
 ::: warning Precautions
@@ -593,7 +597,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `v` | [`Vector`](Type.Vector.md) | MWVector |
+| `v` | [`Vector`](Type.Vector.md) | Vector |
 | `outer?` | [`Rotation`](Type.Rotation.md) | 传入的Rotation对象 default:null |
 
 #### Returns

@@ -2,6 +2,10 @@
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
+**`Groups`**
+
+SOCIAL
+
 **`Instance`**
 
 用户账号信息管理相关服务
@@ -16,7 +20,9 @@
 
 | Methods |
 | :-----|
+| **[addFriend](Service.AccountService.md#addfriend)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`, `string`): `void` <br> 向233发起addFriend并获得回调|
 | **[applySharedId](Service.AccountService.md#applysharedid)**([`CharacterBase`](Gameplay.CharacterBase.md), `string`, [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 应用分享Id的角色数据|
+| **[checkVIP](Service.AccountService.md#checkvip)**(`string`, `string`, (`result`: `string`) => `void`): `void` <br> 发起checkVIP并获得回调，查询玩家的vip信息|
 | **[createSharedId](Service.AccountService.md#createsharedid)**([`CharacterBase`](Gameplay.CharacterBase.md), [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 生成分享Id|
 | **[dataShowToOther](Service.AccountService.md#datashowtoother)**(`number`, `boolean`, [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 设置数据是否公开给其他用户|
 | **[downloadData](Service.AccountService.md#downloaddata)**([`CharacterBase`](Gameplay.CharacterBase.md), [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `number`): `void` <br> 下载角色形象并应用到当前角色身上|
@@ -26,11 +32,37 @@
 | **[getOpenId](Service.AccountService.md#getopenid)**(): `string` <br> 获取OpenId|
 | **[getUserData](Service.AccountService.md#getuserdata)**(`string`, `number`, [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 获取用户存储在服务器上的角色形象数据|
 | **[getUserId](Service.AccountService.md#getuserid)**(): `string` <br> 获取平台的用户Id,可以用于getUserData接口|
+| **[getUserInfo](Service.AccountService.md#getuserinfo)**(`string`, `string`, (`nickname`: `string`, `gender`: `number`) => `void`): `void` <br> 发起getUserInfo并获得回调，查询玩家的昵称、性别|
+| **[isFriend](Service.AccountService.md#isfriend)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`): `void` <br> 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[setUserData](Service.AccountService.md#setuserdata)**([`CharacterBase`](Gameplay.CharacterBase.md), `string`, [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 将角色形象数据应用至角色|
 | **[uploadData](Service.AccountService.md#uploaddata)**([`CharacterBase`](Gameplay.CharacterBase.md), [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `number`, `number`): `void` <br> 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
 | **[getInstance](Service.AccountService.md#getinstance)**(): [`AccountService`](Service.AccountService.md) <br> 获取用户账号信息管理器全局实例|
 
 ## Methods
+
+### addFriend <Score text="addFriend" /> 
+
+• **addFriend**(`resp`, `friendOpenId`, `reason`): `void` <Badge type="tip" text="other" />
+
+向233发起addFriend并获得回调
+
+
+::: warning Precautions
+
+只在移动端由233拉起生效
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | 233的回调 |
+| `friendOpenId` | `string` | 要加的平台账号id |
+| `reason` | `string` | 申请理由 |
+
+
+___
 
 ### applySharedId <Score text="applySharedId" /> 
 
@@ -38,7 +70,6 @@
 
 应用分享Id的角色数据
 
-客户端调用
 
 #### Parameters
 
@@ -51,13 +82,30 @@
 
 ___
 
+### checkVIP <Score text="checkVIP" /> 
+
+• **checkVIP**(`userId`, `gameId`, `callback`): `void` <Badge type="tip" text="other" />
+
+发起checkVIP并获得回调，查询玩家的vip信息
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `userId` | `string` | 平台账号id(openId) |
+| `gameId` | `string` | GameId |
+| `callback` | (`result`: `string`) => `void` | 返回 result，玩家的vip是否正常 |
+
+
+___
+
 ### createSharedId <Score text="createSharedId" /> 
 
 • **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="other" />
 
 生成分享Id
 
-客户端调用
 
 #### Parameters
 
@@ -75,7 +123,6 @@ ___
 
 设置数据是否公开给其他用户
 
-客户端
 
 #### Parameters
 
@@ -94,7 +141,6 @@ ___
 
 下载角色形象并应用到当前角色身上
 
-客户端调用
 
 #### Parameters
 
@@ -113,7 +159,6 @@ ___
 
 下载默认角色数据
 
-客户端调用
 
 #### Parameters
 
@@ -130,7 +175,6 @@ ___
 
 将头像赋值到Image变量上
 
-客户端调用
 
 ::: warning Precautions
 
@@ -153,7 +197,6 @@ ___
 
 获取玩家昵称
 
-客户端调用
 
 ::: warning Precautions
 
@@ -175,7 +218,6 @@ ___
 
 获取OpenId
 
-客户端调用
 
 ::: warning Precautions
 
@@ -197,7 +239,6 @@ ___
 
 获取用户存储在服务器上的角色形象数据
 
-客户端调用
 
 #### Parameters
 
@@ -216,7 +257,6 @@ ___
 
 获取平台的用户Id,可以用于getUserData接口
 
-客户端调用
 
 #### Returns
 
@@ -226,13 +266,53 @@ ___
 
 ___
 
+### getUserInfo <Score text="getUserInfo" /> 
+
+• **getUserInfo**(`userId`, `gameId`, `callback`): `void` <Badge type="tip" text="other" />
+
+发起getUserInfo并获得回调，查询玩家的昵称、性别
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `userId` | `string` | 平台账号id(openId) |
+| `gameId` | `string` | GameId |
+| `callback` | (`nickname`: `string`, `gender`: `number`) => `void` | 返回 nickname(string) 和 gender(number) |
+
+
+___
+
+### isFriend <Score text="isFriend" /> 
+
+• **isFriend**(`resp`, `friendOpenId`): `void` <Badge type="tip" text="other" />
+
+若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看
+
+
+::: warning Precautions
+
+只在移动端由233拉起生效
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | 233的回调 |
+| `friendOpenId` | `string` | 要确定的平台账号id |
+
+
+___
+
 ### setUserData <Score text="setUserData" /> 
 
 • **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="other" />
 
 将角色形象数据应用至角色
 
-客户端调用
 
 #### Parameters
 
@@ -251,7 +331,6 @@ ___
 
 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
-客户端调用
 
 #### Parameters
 

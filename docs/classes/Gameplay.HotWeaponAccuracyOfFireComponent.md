@@ -2,7 +2,24 @@
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
-热武器射击精度组件
+热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度
+
+**`Groups`**
+
+GAMEPLAY
+
+使用示例: 如下示例展示热武器射击精度组件使用的基本流程
+```ts
+// 已有名为 hotWeapon 的热武器功能对象的示例
+
+hotWeapon.accuracyOfFireComponent.onCurrentDispersionChangedClient.add(() => {
+    // 客户端实际射击精度值发生变化时
+});
+// 修改参数
+hotWeapon.accuracyOfFireComponent.defaultDispersionHalfAngle = 3;
+// 验证参数修改效果
+hotWeapon.startFire();
+```ts
 
 ## Table of contents
 
@@ -53,7 +70,12 @@ Get子弹随机发散范围的默认半径
 
 Set子弹随机发散范围的默认半径
 
+
+::: warning Precautions
+
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -81,6 +103,7 @@ Get子弹随机发散范围半径的收缩速度
 
 Set子弹随机发散范围半径的收缩速度
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -114,6 +137,7 @@ Get子弹随机发散范围半径在每次射击后的扩张值
 
 Set子弹随机发散范围半径在每次射击后的扩张值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -147,6 +171,7 @@ Get子弹随机发散范围半径的扩张速度
 
 Set子弹随机发散范围半径的扩张速度
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -180,7 +205,12 @@ Get子弹随机发散范围的最大半径
 
 Set子弹随机发散范围的最大半径
 
+
+::: warning Precautions
+
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -208,6 +238,7 @@ Get子弹随机发散范围的最小半径
 
 Set子弹随机发散范围的最小半径
 
+调用端自动广播
 
 ::: warning Precautions
 

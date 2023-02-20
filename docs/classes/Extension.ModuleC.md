@@ -2,6 +2,10 @@
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
+**`Groups`**
+
+UTILITY
+
 客户端模块的基类
 
 ::: warning Precautions
@@ -15,7 +19,7 @@
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `S` | extends [`SubdataBase`](Extension.SubdataBase.md)<`any`\> |
+| `S` | extends [`Subdata`](Extension.Subdata.md) |
 
 ## Hierarchy
 
@@ -53,7 +57,7 @@
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `S` | extends [`SubdataBase`](Extension.SubdataBase.md)<`any`, `S`\> |
+| `S` | extends [`Subdata`](Extension.Subdata.md)<`S`\> |
 
 ## Accessors
 

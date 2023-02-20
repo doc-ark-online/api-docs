@@ -2,6 +2,10 @@
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
+**`Groups`**
+
+GUI
+
 字体信息
 
 ## Table of contents

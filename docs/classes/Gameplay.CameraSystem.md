@@ -2,7 +2,15 @@
 
 # CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 
-摄像机系统
+**`Groups`**
+
+GAMEPLAY
+
+摄像机系统，是依托于角色，作为角色的组件存在，在此组件下还有一个用来确定视口位置的摄像机组件
+             摄像机系统是摄像机基本属性以及功能效果扩展的管理者
+             基本属性包括这两个组件的位置旋转，投影模式、Fov、角度限制等
+             主要扩展的功能效果包含:弹簧臂收缩、跟随观察、锁定自瞄、遮挡透明、屏幕振荡等
+             更有不同预设模式的切换:第一人称、第三人称、俯视角等
 
 ::: warning Precautions
 
@@ -14,8 +22,8 @@
 
 | Properties |
 | :-----|
-| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> since:v0.21.0 reason:接口更改 replacement:fadeEffectEnable|
-| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 摄像机与角色之间的物体|
+| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> since:021 reason:接口更改 replacement:fadeEffectEnable|
+| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> since:021 reason:没有使用场景不暴露 replacement:|
 
 | Accessors |
 | :-----|
@@ -51,28 +59,28 @@
 | **[raiseCameraEnable](Gameplay.CameraSystem.md#raisecameraenable)**(): `boolean` <br> 获取是否开启抬高摄像机效果|
 | **[raiseCameraHeight](Gameplay.CameraSystem.md#raisecameraheight)**(): `number` <br> 获取摄像机抬高高度|
 | **[realEffectEnable](Gameplay.CameraSystem.md#realeffectenable)**(`boolean` |): `void` <br> 启用/禁用真实效果|
-| **[slotOffset](Gameplay.CameraSystem.md#slotoffset)**(): [`Vector`](Type.Vector.md) <br> since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform|
+| **[slotOffset](Gameplay.CameraSystem.md#slotoffset)**(): [`Vector`](Type.Vector.md) <br> since:019 reason:功能重合 replacement:cameraRelativeTransform|
 | **[targetArmLength](Gameplay.CameraSystem.md#targetarmlength)**(): `number` <br> 获取当前摄像机弹簧臂长度|
-| **[targetOffset](Gameplay.CameraSystem.md#targetoffset)**(): [`Vector`](Type.Vector.md) <br> since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform|
+| **[targetOffset](Gameplay.CameraSystem.md#targetoffset)**(): [`Vector`](Type.Vector.md) <br> since:019 reason:功能重合 replacement:cameraSystemTransform|
 | **[transform](Gameplay.CameraSystem.md#transform)**(): [`Transform`](Type.Transform.md) <br> 摄像机的transform|
 | **[usePawnControlRotation](Gameplay.CameraSystem.md#usepawncontrolrotation)**(): `boolean` <br> 获取当前是否使用控制器控制摄像机旋转|
 
 | Methods |
 | :-----|
 | **[applySettings](Gameplay.CameraSystem.md#applysettings)**([`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata)): `void` <br> 应用摄像机系统数据|
-| **[attachCameraToCharacterCapsuleSlot](Gameplay.CameraSystem.md#attachcameratocharactercapsuleslot)**(): `void` <br> 附加摄像机到角色的胶囊体插槽上|
+| **[attachCameraToCharacterCapsuleSlot](Gameplay.CameraSystem.md#attachcameratocharactercapsuleslot)**(): `void` <br> since:022 reason:接口重复 replacement:attachToGameObject|
 | **[attachCameraToCharacterMeshSlot](Gameplay.CameraSystem.md#attachcameratocharactermeshslot)**([`SlotType`](../enums/Gameplay.SlotType.md)): `void` <br> 附加摄像机到角色的模型插槽上|
 | **[attachToGameObject](Gameplay.CameraSystem.md#attachtogameobject)**(`GameObject`): `void` <br> 相机附加至目标物体|
 | **[cameraFocusing](Gameplay.CameraSystem.md#camerafocusing)**(`number`, [`Vector`](Type.Vector.md), `number`): `void` <br> 摄像机聚焦|
 | **[cameraLockTarget](Gameplay.CameraSystem.md#cameralocktarget)**(`GameObject`, `number`, `number`, `number`, `number`, [`Vector`](Type.Vector.md), `boolean`): `void` <br> 相机锁定目标(相比setCameraLockTarget多了更多复杂的设置)|
-| **[cancelCameraFollowTarget](Gameplay.CameraSystem.md#cancelcamerafollowtarget)**(): `void` <br> 取消跟随物体|
+| **[cancelCameraFollowTarget](Gameplay.CameraSystem.md#cancelcamerafollowtarget)**(): `void` <br> 取消跟随物体,跟随目标变为当前角色|
 | **[cancelCameraLockTarget](Gameplay.CameraSystem.md#cancelcameralocktarget)**(): `void` <br> 取消锁定物体|
 | **[getCurrentSettings](Gameplay.CameraSystem.md#getcurrentsettings)**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <br> 获取当前的摄像机系统数据|
 | **[getDefaultCameraShakeData](Gameplay.CameraSystem.md#getdefaultcamerashakedata)**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <br> 获取默认的摄像机震动数据|
 | **[moveByPath](Gameplay.CameraSystem.md#movebypath)**(`{ `location`: [`Vector`](Type.Vector.md) ; `rotation`: [`Vector`](Type.Vector.md) ; `time`: `number`  }`[], () => `void`): `void` <br> 镜头移动|
 | **[resetOverrideCameraRotation](Gameplay.CameraSystem.md#resetoverridecamerarotation)**(): `void` <br> 取消旋转覆盖|
 | **[screenShock](Gameplay.CameraSystem.md#screenshock)**(`number`, `number`, `number`): `void` <br> 震屏|
-| **[setCameraFollowTarget](Gameplay.CameraSystem.md#setcamerafollowtarget)**(`GameObject`): `void` <br> 相机跟随物体|
+| **[setCameraFollowTarget](Gameplay.CameraSystem.md#setcamerafollowtarget)**(`GameObject`): `void` <br> 相机跟随物体,每帧插值设置弹簧臂世界位置为目标物体位置|
 | **[setCameraLockTarget](Gameplay.CameraSystem.md#setcameralocktarget)**(`GameObject`): `void` <br> 相机锁定物体|
 | **[setOverrideCameraRotation](Gameplay.CameraSystem.md#setoverridecamerarotation)**([`Rotation`](Type.Rotation.md), `boolean`): `void` <br> 覆盖摄像机旋转，从控制器传入值处截断|
 | **[startCameraShake](Gameplay.CameraSystem.md#startcamerashake)**([`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata)): `void` <br> 开始摄像机震动|
@@ -87,7 +95,7 @@
 
 **`Deprecated`**
 
-since:v0.21.0 reason:接口更改 replacement:fadeEffectEnable
+since:021 reason:接口更改 replacement:fadeEffectEnable
 
 设置是否开启透明效果
 
@@ -96,6 +104,10 @@ ___
 ### occludeCameraActor <Score text="occludeCameraActor" /> 
 
 • **occludeCameraActor**: `any`
+
+**`Deprecated`**
+
+since:021 reason:没有使用场景不暴露 replacement:
 
 摄像机与角色之间的物体
 
@@ -113,7 +125,8 @@ ___
 
 • `set` **cameraCollisionEnable**(`bEnableCameraCollision`): `void`
 
-设置是否开启摄像机碰撞
+设置是否开启摄像机碰撞，开启后弹簧臂才会检测碰撞的物体并收缩至离挂载目标最近的碰撞物体处
+             注意:要增减检测距离必须通过修改弹簧臂长度(TargetArmLength)来实现，诸如直接修改弹簧臂位置的方式会导致偏移处不触发碰撞收缩
 
 #### Parameters
 
@@ -504,7 +517,7 @@ ___
 
 • `set` **fadeEffectEnable**(`bFadeEffectEnable`): `void`
 
-设置是否开启透明效果(同时开启遮挡检测)
+设置是否开启透明效果(会自动开启遮挡检测)，开启后当摄像机没有碰撞时，挂载物体跟摄像机之间的物体会变透明，离开后恢复
 
 #### Parameters
 
@@ -596,7 +609,8 @@ ___
 
 • `set` **followTargetInterpSpeed**(`newInterpSpeed`): `void`
 
-设置跟随目标时的插值速度
+设置跟随目标时的插值速度，默认15.0,值越大跟随速度越快
+             注意:设置为0时插值会失效，跟随无延时
 
 #### Parameters
 
@@ -688,7 +702,7 @@ ___
 
 • `set` **occlusionDetectionEnable**(`bEnableOcclusionDetection`): `void`
 
-设置是否开启遮挡检测
+设置是否开启遮挡检测(开启后对应的碰撞物体透明和遮挡描边才会生效)
 
 #### Parameters
 
@@ -841,7 +855,7 @@ ___
 
 **`Deprecated`**
 
-since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
+since:019 reason:功能重合 replacement:cameraRelativeTransform
 
 获取摄像机位置偏移
 
@@ -853,7 +867,7 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
 
 **`Deprecated`**
 
-since:v0.19.0.0 reason:功能重合 replacement:cameraRelativeTransform
+since:019 reason:功能重合 replacement:cameraRelativeTransform
 
 设置摄像机位置偏移
 
@@ -895,7 +909,7 @@ ___
 
 **`Deprecated`**
 
-since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform
+since:019 reason:功能重合 replacement:cameraSystemTransform
 
 获取挂点位置偏移
 
@@ -907,7 +921,7 @@ since:v0.19.0.0 reason:功能重合 replacement:cameraSystemTransform
 
 **`Deprecated`**
 
-since:v0.19.0.0 reason:功能重合 replacement:cameraSystemRelativeTransform
+since:019 reason:功能重合 replacement:cameraSystemRelativeTransform
 
 设置挂点位置偏移
 
@@ -974,6 +988,10 @@ ___
 ### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
 
 • **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
+
+**`Deprecated`**
+
+since:022 reason:接口重复 replacement:attachToGameObject
 
 附加摄像机到角色的胶囊体插槽上
 
@@ -1057,7 +1075,7 @@ ___
 
 • **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
 
-取消跟随物体
+取消跟随物体,跟随目标变为当前角色
 
 
 
@@ -1152,7 +1170,8 @@ ___
 
 • **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
 
-相机跟随物体
+相机跟随物体,每帧插值设置弹簧臂世界位置为目标物体位置
+             注意:实际上摄像机还附加在角色上,依旧会受角色行为影响
 
 
 #### Parameters
@@ -1241,5 +1260,5 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newCameraMode` | [`CameraMode`](../enums/Gameplay.CameraMode.md) | 新的摄像机模式 |
-| `enableRealEffect?` | `boolean` | 是否开启真实模拟效果 default:false |
+| `enableRealEffect?` | `boolean` | 是否开启真实模拟效果,开启后镜头会随角色动作进行晃动 default:false |
 

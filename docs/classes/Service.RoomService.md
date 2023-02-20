@@ -2,6 +2,10 @@
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
+**`Groups`**
+
+SOCIAL
+
 **`Instance`**
 
 MGS以及玩家信息、数据、头像等相关API
@@ -10,16 +14,14 @@ MGS以及玩家信息、数据、头像等相关API
 
 | Methods |
 | :-----|
-| **[addFriend](Service.RoomService.md#addfriend)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`): `void` <br> 向233发起addFriend并获得回调|
 | **[createAndJoinRoom](Service.RoomService.md#createandjoinroom)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`, `string`, `number`): `void` <br> 游戏方创建好房间后可通过调用createAndJoinRoom进行数据同步，也可通过MGS服务端进行数据同步|
 | **[destroySDK](Service.RoomService.md#destroysdk)**(): `void` <br> SDK提供销毁方法，在游戏退出后可以销毁SDK，释放相应的内存。下次再调用其他接口需要再次进行初始化操作|
 | **[dispatchMGSChatMessage](Service.RoomService.md#dispatchmgschatmessage)**(`string`): `void` <br> 分发MGS聊天消息|
 | **[getCurrentEnvironment](Service.RoomService.md#getcurrentenvironment)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse)): `void` <br> 获取当前的环境|
 | **[getMGSRoomId](Service.RoomService.md#getmgsroomid)**(): `string` <br> 获取MGS平台的RoomId|
-| **[getRoomId](Service.RoomService.md#getroomid)**(): `string` <br> 获取MW的RoomMgr分配的RoomId|
+| **[getRoomId](Service.RoomService.md#getroomid)**(): `string` <br> 获取游戏的RoomMgr分配的RoomId|
 | **[initAndLoginMGS](Service.RoomService.md#initandloginmgs)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`): `void` <br> 初始化MGS|
 | **[invokeMGSConfig](Service.RoomService.md#invokemgsconfig)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse)): `void` <br> 用于获取MGS相关配置信息的接口。该接口需要support|
-| **[isFriend](Service.RoomService.md#isfriend)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`): `void` <br> 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[isSupported](Service.RoomService.md#issupported)**(): `boolean` <br> 获取当前环境是否支持MGS功能|
 | **[joinAudio](Service.RoomService.md#joinaudio)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse)): `void` <br> 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
 | **[joinRoom](Service.RoomService.md#joinroom)**([`MGSResponse`](../modules/Service.Service.md#mgsresponse), `string`): `void` <br> 游戏方在玩家加入某个房间后，需要通过调用joinRoom进行数据同步|
@@ -38,29 +40,6 @@ MGS以及玩家信息、数据、头像等相关API
 | **[getInstance](Service.RoomService.md#getinstance)**(): [`RoomService`](Service.RoomService.md) <br> 获取API实例进行调用|
 
 ## Methods
-
-### addFriend <Score text="addFriend" /> 
-
-• **addFriend**(`resp`, `friendOpenId`): `void` <Badge type="tip" text="other" />
-
-向233发起addFriend并获得回调
-
-
-::: warning Precautions
-
-只在移动端由233拉起生效
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | 233的回调 |
-| `friendOpenId` | `string` | 要加的好友Id |
-
-
-___
 
 ### createAndJoinRoom <Score text="createAndJoinRoom" /> 
 
@@ -172,7 +151,7 @@ ___
 
 • **getRoomId**(): `string` <Badge type="tip" text="other" />
 
-获取MW的RoomMgr分配的RoomId
+获取游戏的RoomMgr分配的RoomId
 
 
 ::: warning Precautions
@@ -185,7 +164,7 @@ ___
 
 `string`
 
-MW的RoomMgr分配的RoomId
+游戏的RoomMgr分配的RoomId
 
 ___
 
@@ -230,29 +209,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | 233的回调 |
-
-
-___
-
-### isFriend <Score text="isFriend" /> 
-
-• **isFriend**(`resp`, `friendOpenId`): `void` <Badge type="tip" text="other" />
-
-若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看
-
-
-::: warning Precautions
-
-只在移动端由233拉起生效
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `resp` | [`MGSResponse`](../modules/Service.Service.md#mgsresponse) | 233的回调 |
-| `friendOpenId` | `string` | 要确定的好友的Id |
 
 
 ___
@@ -596,7 +552,6 @@ ___
 
 获取API实例进行调用
 
-获取API实例进行调用
 
 ::: warning Precautions
 

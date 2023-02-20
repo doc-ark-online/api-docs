@@ -4,6 +4,10 @@
 
 人形对象V2体型
 
+**`Groups`**
+
+AVATAR
+
 ## Implements
 
 - [`IHumanoidV2Shape`](../interfaces/Gameplay.IHumanoidV2Shape.md)
@@ -40,8 +44,10 @@
 | **[getEyesRotation](Gameplay.HumanoidV2Shape.md#geteyesrotation)**(): `number` <br> 获取眼睛角度|
 | **[getEyesWidth](Gameplay.HumanoidV2Shape.md#geteyeswidth)**(): `number` <br> 获取眼睛左右宽度|
 | **[getFaceWidth](Gameplay.HumanoidV2Shape.md#getfacewidth)**(): `number` <br> 调整头部整体宽度|
+| **[getFootScale](Gameplay.HumanoidV2Shape.md#getfootscale)**(): `number` <br> 获取脚掌大小|
 | **[getGroinThickness](Gameplay.HumanoidV2Shape.md#getgrointhickness)**(): `number` <br> 获取胯宽度前后|
 | **[getGroinWidth](Gameplay.HumanoidV2Shape.md#getgroinwidth)**(): `number` <br> 获取胯宽度左右|
+| **[getHandScale](Gameplay.HumanoidV2Shape.md#gethandscale)**(): `number` <br> 获取手掌大小|
 | **[getHeadScale](Gameplay.HumanoidV2Shape.md#getheadscale)**(): `number` <br> 获取角色头部大小|
 | **[getJawLength](Gameplay.HumanoidV2Shape.md#getjawlength)**(): `number` <br> 调整下巴长度|
 | **[getJawRange](Gameplay.HumanoidV2Shape.md#getjawrange)**(): `number` <br> 调整下巴前后移动|
@@ -121,8 +127,10 @@
 | **[setEyesRotation](Gameplay.HumanoidV2Shape.md#seteyesrotation)**(`number`, `boolean`): `void` <br> 设置眼睛角度|
 | **[setEyesWidth](Gameplay.HumanoidV2Shape.md#seteyeswidth)**(`number`, `boolean`): `void` <br> 设置眼睛左右宽度|
 | **[setFaceWidth](Gameplay.HumanoidV2Shape.md#setfacewidth)**(`number`, `boolean`): `void` <br> 调整头部整体宽度|
+| **[setFootScale](Gameplay.HumanoidV2Shape.md#setfootscale)**(`number`, `boolean`): `void` <br> 设置脚掌大小|
 | **[setGroinThickness](Gameplay.HumanoidV2Shape.md#setgrointhickness)**(`number`, `boolean`): `void` <br> 设置胯宽度前后|
 | **[setGroinWidth](Gameplay.HumanoidV2Shape.md#setgroinwidth)**(`number`, `boolean`): `void` <br> 设置胯宽度左右|
+| **[setHandScale](Gameplay.HumanoidV2Shape.md#sethandscale)**(`number`, `boolean`): `void` <br> 设置手掌大小|
 | **[setHeadScale](Gameplay.HumanoidV2Shape.md#setheadscale)**(`number`, `boolean`): `void` <br> 设置角色头部大小|
 | **[setJawLength](Gameplay.HumanoidV2Shape.md#setjawlength)**(`number`, `boolean`): `void` <br> 调整下巴长度|
 | **[setJawRange](Gameplay.HumanoidV2Shape.md#setjawrange)**(`number`, `boolean`): `void` <br> 调整下巴前后移动|
@@ -709,6 +717,21 @@ ___
 
 ___
 
+### getFootScale <Score text="getFootScale" /> 
+
+• **getFootScale**(): `number` <Badge type="tip" text="other" />
+
+获取脚掌大小
+
+
+#### Returns
+
+`number`
+
+值
+
+___
+
 ### getGroinThickness <Score text="getGroinThickness" /> 
 
 • **getGroinThickness**(): `number` <Badge type="tip" text="other" />
@@ -744,6 +767,21 @@ ___
 #### Implementation of
 
 [IHumanoidV2Shape](../interfaces/Gameplay.IHumanoidV2Shape.md).[getGroinWidth](../interfaces/Gameplay.IHumanoidV2Shape.md#getgroinwidth)
+
+___
+
+### getHandScale <Score text="getHandScale" /> 
+
+• **getHandScale**(): `number` <Badge type="tip" text="other" />
+
+获取手掌大小
+
+
+#### Returns
+
+`number`
+
+值
 
 ___
 
@@ -2467,6 +2505,23 @@ ___
 
 ___
 
+### setFootScale <Score text="setFootScale" /> 
+
+• **setFootScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+
+设置脚掌大小
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
+
+
+___
+
 ### setGroinThickness <Score text="setGroinThickness" /> 
 
 • **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
@@ -2521,13 +2576,29 @@ ___
 
 ___
 
+### setHandScale <Score text="setHandScale" /> 
+
+• **setHandScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+
+设置手掌大小
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | true 同步; false 不同步 |
+
+
+___
+
 ### setHeadScale <Score text="setHeadScale" /> 
 
 • **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
 设置角色头部大小
 
-当 sync = true 对象是单端对象，调用仅本地客户端有效调用
 
 ::: warning Precautions
 

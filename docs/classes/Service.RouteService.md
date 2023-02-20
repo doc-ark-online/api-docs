@@ -2,6 +2,10 @@
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
+**`Groups`**
+
+SOCIAL
+
 **`Instance`**
 
 游戏管理器
@@ -32,7 +36,7 @@
 | **[enterLocalGame](Service.RouteService.md#enterlocalgame)**(`string`, `string`, `string`): `void` <br> 跳转本地游戏(可编辑的UGC工程) ，同进程跳转|
 | **[enterNewGame](Service.RouteService.md#enternewgame)**(`string`, `string`): `void` <br> 跳转到新游戏，同进程跳转|
 | **[enterNewGameByTeam](Service.RouteService.md#enternewgamebyteam)**(`string`, `string`[], `Record`<`string`, `unknown`\>[]): `Promise`<`void`\> <br> 组队跳游戏，可以携带数据|
-| **[enterSquareGame](Service.RouteService.md#entersquaregame)**(`string`, `string`): `void` <br> 将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。|
+| **[enterSquareGame](Service.RouteService.md#entersquaregame)**(`string`, `string`): `void` <br> 将当前游戏进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。|
 | **[getGameCarryingData](Service.RouteService.md#getgamecarryingdata)**(): `Promise`<`string`\> <br> 获取拉起游戏时传入的数据|
 | **[getJumpFromMGSGameId](Service.RouteService.md#getjumpfrommgsgameid)**(): `Promise`<`string`\> <br> 获取游戏来源信息|
 | **[getTeamCarryingData](Service.RouteService.md#getteamcarryingdata)**(`string`): `Record`<`string`, `unknown`\> <br> 获取指定Team在组队跳转时带入游戏的数据|
@@ -179,7 +183,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  目标游戏的MWGameId，一般来说，这里会是模板游戏的gameId |
+| `targetGameId` | `string` |  目标游戏的GameId，一般来说，这里会是模板游戏的gameId |
 | `gamePath` | `string` |  本地游戏工程的路径 |
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
@@ -197,7 +201,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  要跳转的目标游戏ID，MWGameId |
+| `targetGameId` | `string` |  要跳转的目标游戏ID，GameId |
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
 
@@ -214,7 +218,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  要跳转的游戏的mwGameId |
+| `targetGameId` | `string` |  要跳转的游戏的GameId |
 | `teammatePlayerIds` | `string`[] |  队友的playerId数组 |
 | `carryingData?` | `Record`<`string`, `unknown`\>[] |  要带入新游戏的数据 default: undefined |
 
@@ -230,7 +234,7 @@ ___
 
 • **enterSquareGame**(`squareMgsGameId?`, `carryingData?`): `void` <Badge type="tip" text="other" />
 
-将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
+将当前游戏进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
 
 
 ::: warning Precautions

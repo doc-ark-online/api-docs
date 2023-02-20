@@ -2,6 +2,10 @@
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 
+**`Groups`**
+
+GUI
+
 UI颜色管理
 
 ## Table of contents

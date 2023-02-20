@@ -4,6 +4,10 @@
 
 面板类的基类，可用于控制一个界面
 
+**`Groups`**
+
+GUI
+
 ::: warning Precautions
 
 注意：如子类重写onAwake，onAdded方法，请调用super的对应方法
@@ -47,7 +51,7 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
+| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
 | **[hide](Extension.BaseView.md#hide)**(): `void` <br> 关闭全局唯一界面|
 | **[show](Extension.BaseView.md#show)**(`any`[]): `void` <br> 显示全局唯一界面|
 | **[create](Extension.BaseView.md#create)**<extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> |\>(): extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> | <br> 创建界面|
@@ -68,7 +72,7 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `viewClass` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  界面类 |
+| `viewClass` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  界面类 |
 
 #### Overrides
 

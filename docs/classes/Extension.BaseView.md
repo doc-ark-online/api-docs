@@ -2,6 +2,10 @@
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 
+**`Groups`**
+
+GUI
+
 界面类的基类
 
 ## Hierarchy
@@ -35,7 +39,7 @@
 
 | Methods |
 | :-----|
-| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
+| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
 | **[hide](Extension.BaseView.md#hide)**(): `void` <br> 关闭全局唯一界面|
 | **[show](Extension.BaseView.md#show)**(`any`[]): `void` <br> 显示全局唯一界面|
 | **[create](Extension.BaseView.md#create)**<extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> |\>(): extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> | <br> 创建界面|
@@ -50,6 +54,7 @@
 | **[detectDrag](UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 触发DragDrop事件的检测|
 | **[detectDragIfPressed](UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.PointerEvent.md), [`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 如果事件检测通过就触发DragDrop事件的回复|
 | **[newDragDrop](UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.DragPivot.md), [`Vector2`](Type.Vector2.md)): [`DragDropOperation`](UI.DragDropOperation.md) <br> 创建DragDrop事件|
+| **[remove](UI.UIBehavior.md#remove)**(): `void` <br> 移除UI对象|
 | **[setVisible](UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录|
 | **[clearBehavior](UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录|
@@ -106,7 +111,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `canvas` | [`Canvas`](UI.Canvas.md) |  当前组件 |
-| `getType` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  想要获取的类型 |
+| `getType` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  想要获取的类型 |
 
 #### Returns
 

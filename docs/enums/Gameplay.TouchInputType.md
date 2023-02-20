@@ -4,6 +4,10 @@
 
 触摸类型
 
+**`Groups`**
+
+INPUT
+
 ## Table of contents
 
 | Enumeration Members |

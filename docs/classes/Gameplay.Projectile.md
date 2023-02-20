@@ -4,6 +4,10 @@
 
 投掷物逻辑对象
 
+**`Groups`**
+
+GAMEPLAY
+
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
@@ -49,7 +53,7 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -72,7 +76,7 @@
 | **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
 | **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
@@ -116,12 +120,14 @@
 | **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -133,6 +139,16 @@
 
 当投掷物与其他物体开始接触重叠时执行绑定函数
 
+使用示例: 如下示例展示此委托的参数的含义和使用方法
+```ts
+projectile.onProjectileBeginOverlap.add((hitGameObject: Core.GameObject, otherBodyIndex: number, fromSweep: boolean, sweepResult: Gameplay.HitResult) => {
+    // hitGameObject: 投掷物击中的物体
+    // otherBodyIndex: 被击中的组件上的物理场景信息的下标，用于获取碰撞目标的物理场景信息
+    // fromSweep: 是否是通过 Sweep 扫描到的
+    // sweepResult: 碰撞详细信息
+})
+```ts
+
 ___
 
 ### onProjectileBounce <Score text="onProjectileBounce" /> 
@@ -140,6 +156,15 @@ ___
 • **onProjectileBounce**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`impactResult`: [`HitResult`](Gameplay.HitResult.md), `impactVelocity`: [`Vector`](Type.Vector.md), `bounceNum`: `number`) => `void`\>
 
 当投掷物发生弹跳时执行绑定函数
+
+使用示例: 如下示例展示此委托的参数的含义和使用方法
+```ts
+projectile.onProjectileBounce.add((impactResult: Gameplay.HitResult, impactVelocity: Type.Vector, bounceNum: number) => {
+    // impactResult: 当前弹跳的碰撞信息
+    // impactVelocity: 碰撞速度
+    // bounceNum: 当前弹跳为弹的第几次
+})
+```
 
 ___
 
@@ -149,6 +174,14 @@ ___
 
 当投掷物与其他物体结束接触重叠时执行绑定函数
 
+使用示例: 如下示例展示此委托的参数的含义和使用方法
+```ts
+projectile.onProjectileEndOverlap.add((hitGameObject: Core.GameObject, otherBodyIndex: number) => {
+    // hitGameObject: 投掷物击中的物体
+    // otherBodyIndex: 被击中的组件上的物理场景信息的下标，用于获取碰撞目标的物理场景信息
+})
+```ts
+
 ___
 
 ### onProjectileHit <Score text="onProjectileHit" /> 
@@ -156,6 +189,15 @@ ___
 • **onProjectileHit**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\>
 
 当投掷物发生碰撞时执行绑定函数
+
+使用示例: 如下示例展示此委托的参数的含义和使用方法
+```ts
+projectile.onProjectileHit.add((hitGameObject: Core.GameObject, normalImpulse: Type.Vector, hitResult: Gameplay.HitResult) => {
+    // hitGameObject: 投掷物击中的物体
+    // normalImpulse: 法向量
+    // hitResult: 碰撞详细信息
+})
+```
 
 ___
 
@@ -337,7 +379,7 @@ ___
 
 :::
 
-客户端调用自动同步至服务端
+调用端自动广播
 
 #### Parameters
 
@@ -358,6 +400,7 @@ ___
 
 子弹初始化,只有在客户端调用时会自动绑定当前角色
 
+调用端自动广播
 
 #### Parameters
 
@@ -385,9 +428,10 @@ ___
 
 :::
 
+调用端自动广播
 
 
-• **launch**(`fromLoc`, `toLoc`): `void` <Badge type="tip" text="other" />
+• **launch**(`fromLoc`, `toLoc`): `void`
 
 发射投掷物，将目前射程清零
 
@@ -399,6 +443,9 @@ ___
 
 :::
 
+**`Effect`**
+
+调用端自动广播
 
 #### Parameters
 
@@ -415,6 +462,7 @@ ___
 
 暂停投掷物
 
+调用端自动广播
 
 
 
@@ -424,4 +472,5 @@ ___
 
 唤醒投掷物
 
+调用端自动广播
 

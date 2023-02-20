@@ -2,7 +2,11 @@
 
 # BlockingArea <Badge type="tip" text="Class" /> <Score text="BlockingArea" />
 
-禁行区
+**`Groups`**
+
+GAMEPLAY
+
+禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立
 
 ::: warning Precautions
 
@@ -10,7 +14,7 @@
 
 :::
 
-使用示例:请尽量放置在场景中，不要动态生成，不支持重叠使用
+使用示例:请尽量放置在场景中，不推荐动态生成，不支持重叠使用
 ```ts
 // 不推荐动态生成，不支持重叠使用
 ```
@@ -46,7 +50,7 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -58,7 +62,7 @@
 | **[getCurrentPlayerPassable](Gameplay.BlockingArea.md#getcurrentplayerpassable)**(`number`): `boolean` <br> 获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值|
 | **[setBlockAllPlayer](Gameplay.BlockingArea.md#setblockallplayer)**(`boolean`): `boolean` <br> 让该禁行区阻挡所有玩家|
 | **[setCurrentPlayerPassable](Gameplay.BlockingArea.md#setcurrentplayerpassable)**(`number`, `boolean`): `void` <br> 设置玩家通过该区域屏障权限|
-| **[setNonCharacterActorCanPass](Gameplay.BlockingArea.md#setnoncharacteractorcanpass)**(`any`, `boolean`): `void` <br> 设置非角色Actor的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效|
+| **[setNonCharacterActorCanPass](Gameplay.BlockingArea.md#setnoncharacteractorcanpass)**(`any`, `boolean`): `void` <br> 设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效|
 
 
 ::: details 点击查看继承
@@ -68,7 +72,7 @@
 | **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
 | **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
@@ -112,12 +116,14 @@
 | **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -129,7 +135,6 @@
 
 获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数
 
-获取玩家是否能够通过该禁行区的回调对象
 
 使用示例:简单调用
 ```ts
@@ -151,7 +156,6 @@ bool
 
 获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值
 
-获取玩家是否能够通过该禁行区
 
 使用示例: 简单调用
 ```ts
@@ -177,7 +181,6 @@ bool
 
 让该禁行区阻挡所有玩家
 
-让该禁行区阻挡所有玩家
 
 使用示例:让该禁行区阻挡所有玩家
 ```ts
@@ -203,7 +206,6 @@ bool
 
 设置玩家通过该区域屏障权限
 
-设置玩家通过该区域屏障权限
 
 使用示例: 简单调用
 ```ts
@@ -223,9 +225,8 @@ BlockArea.setCurrentPlayerPassable(player,true)
 
 • **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void` <Badge type="tip" text="other" />
 
-设置非角色Actor的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
+设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
 
-设置非角色Actor的通过权限
 
 使用示例:传递GameObject和bool
 ```ts

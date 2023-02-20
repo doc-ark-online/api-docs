@@ -7,8 +7,7 @@
 | Functions |
 | :-----|
 | **[autoExecute](Extension.Decorator.md#autoexecute)**(`string`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[noReply](Extension.Decorator.md#noreply)**(`any`, `string`, `PropertyDescriptor`): `void` <br> 方法装饰器-无返回服务器网络方法，用于装饰模块服务端(继承ModuleS的类)中不需要给客户端返回值的net方法|
-| **[saveProperty](Extension.Decorator.md#saveproperty)**([`SubdataBase`](../classes/Extension.SubdataBase.md)<`any`\>, `string`): `void` <br> 属性装饰器-永久存储属性|
+| **[saveProperty](Extension.Decorator.md#saveproperty)**([`Subdata`](../classes/Extension.Subdata.md), `string`): `void` <br> SCRIPITING|
 
 ## Functions
 
@@ -18,13 +17,16 @@
 
 类装饰器-自动执行某个方法
 
+**`Groups`**
+
+SCRIPITING
+
 ::: warning Precautions
 
 调用发生在所有游戏脚本的生命周期之前
 
 :::
 
-双端生效
 
 #### Parameters
 
@@ -52,28 +54,13 @@
 
 ___
 
-### noReply <Score text="noReply" /> 
-
-• **noReply**(`target`, `funName`, `descriptor`): `void` <Badge type="tip" text="other" />
-
-方法装饰器-无返回服务器网络方法，用于装饰模块服务端(继承ModuleS的类)中不需要给客户端返回值的net方法
-
-服务端生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `any` |  类实例 |
-| `funName` | `string` |  方法名 |
-| `descriptor` | `PropertyDescriptor` |  属性描述 |
-
-
-___
-
 ### saveProperty <Score text="saveProperty" /> 
 
 • **saveProperty**(`target`, `propertyKey`): `void` <Badge type="tip" text="other" />
+
+**`Groups`**
+
+SCRIPITING
 
 属性装饰器-永久存储属性
 
@@ -83,12 +70,11 @@ ___
 
 :::
 
-双端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | [`SubdataBase`](../classes/Extension.SubdataBase.md)<`any`\> |  类实例 |
+| `target` | [`Subdata`](../classes/Extension.Subdata.md) |  类实例 |
 | `propertyKey` | `string` |  属性名 |
 

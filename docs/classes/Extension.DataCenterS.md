@@ -2,6 +2,10 @@
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
+**`Groups`**
+
+DATA
+
 服务端数据中心，管理所有玩家的数据
 
 ::: warning Precautions
@@ -19,7 +23,7 @@
 
 | Methods |
 | :-----|
-| **[getData](Extension.DataCenterS.md#getdata)**<extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |\>(`number` \, [`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> | <br> 获取玩家的子数据|
+| **[getData](Extension.DataCenterS.md#getdata)**<extends [`Subdata`](Extension.Subdata.md)<`T`\> |\>(`number` \, [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Subdata`](Extension.Subdata.md)<`T`\> | <br> 获取玩家的子数据|
 | **[getReadyPlayerIds](Extension.DataCenterS.md#getreadyplayerids)**(): `number`[] <br> 获取在线且数据就绪的所有玩家ID|
 | **[getInstance](Extension.DataCenterS.md#getinstance)**(): [`DataCenterS`](Extension.DataCenterS.md) <br> 获取服务端数据中心全局实例|
 
@@ -52,14 +56,14 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |
+| `T` | extends [`Subdata`](Extension.Subdata.md)<`T`\> |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `player` | `number` \| [`Player`](Gameplay.Player.md) |  玩家 |
-| `SubdataType` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  数据类 |
+| `SubdataType` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  数据类 |
 
 #### Returns
 

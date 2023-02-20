@@ -2,6 +2,10 @@
 
 # HotWeaponAimMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponAimMode" />
 
+**`Groups`**
+
+GAMEPLAY
+
 热武器瞄准模式
 
 ## Table of contents

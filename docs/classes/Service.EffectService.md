@@ -4,6 +4,10 @@
 
 **`Instance`**
 
+**`Groups`**
+
+UTILITY
+
 特效服务
 
 ## Table of contents
@@ -49,7 +53,7 @@ ___
 
 `Promise`<[`Particle`](Gameplay.Particle.md)\>
 
-Sound对象的gameObject
+Particle对象的gameObject
 
 ___
 
@@ -92,7 +96,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
-| `target` | `GameObject` |  目标GameObject \| 目标GameObject的GUID |
+| `target` | `GameObject` |  目标GameObject |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `offset?` | [`Vector`](Type.Vector.md) |  坐标偏移 default: Type.Vector.zero |
 | `rotation?` | [`Rotation`](Type.Rotation.md) |  旋转 default: Type.Rotation.zero |

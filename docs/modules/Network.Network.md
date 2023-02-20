@@ -24,7 +24,7 @@ Network
 | Functions |
 | :-----|
 | **[fetch](Network.Network.md#fetch)**(`string`, [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
-| **[generalHttpRequest](Network.Network.md#generalhttprequest)**([`HttpResponse`](Network.Network.md#httpresponse), [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `string`, `any`, [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
+| **[generalHttpRequest](Network.Network.md#generalhttprequest)**([`HttpResponse`](Network.Network.md#httpresponse), [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `string`, `any`, [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> GAMEPLAY|
 | **[getUrlParameter](Network.Network.md#geturlparameter)**(`string`, `string`): `string` <br> 获取url参数|
 | **[httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)**([`HttpResponse`](Network.Network.md#httpresponse), `string`, `string`, [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
 | **[urlDecode](Network.Network.md#urldecode)**(`string`): `string` <br> url解码|
@@ -41,6 +41,10 @@ Network
 • (`result`, `content`, `responseCode`): `void`
 
 Http请求的回调消息格式
+
+**`Groups`**
+
+GAMEPLAY
 
 ::: warning Precautions
 
@@ -72,6 +76,10 @@ ___
 
 商城通信回调消息格式
 
+**`Groups`**
+
+GAMEPLAY
+
 ##### Parameters
 
 | Name | Type | Description |
@@ -90,6 +98,10 @@ ___
 • **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
 
 HTTP请求
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Parameters
@@ -110,6 +122,10 @@ ___
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 • **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+
+**`Groups`**
+
+GAMEPLAY
 
 通用Http请求
 
@@ -143,6 +159,10 @@ ___
 
 获取url参数
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Parameters
 
@@ -164,6 +184,10 @@ ___
 • **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 Http请求接口
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Parameters
@@ -189,6 +213,10 @@ ___
 
 url解码
 
+**`Groups`**
+
+GAMEPLAY
+
 
 #### Parameters
 
@@ -209,6 +237,10 @@ ___
 • **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
 
 url转码
+
+**`Groups`**
+
+GAMEPLAY
 
 
 #### Parameters

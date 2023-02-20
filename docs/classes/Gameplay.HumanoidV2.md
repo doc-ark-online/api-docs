@@ -2,7 +2,24 @@
 
 # HumanoidV2 <Badge type="tip" text="Class" /> <Score text="HumanoidV2" />
 
-人形对象V2接口
+人形外观形象对象,用于高级人形外观的设置.
+
+**`Groups`**
+
+AVATAR
+
+::: warning Precautions
+
+目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目默认使用HumanoidV2形象时,可直接获取HumanoidV2(let humanoidV2 = npc.getAppearance<Gameplay.HumanoidV2>()) 进行形象的更新,若非HumanoidV2形象，需要切换类型到HumanoidV2形象.
+
+:::
+
+使用示例:(关于示例的描述、说明)
+```ts
+1.切换Character为HumanoidV2外观类型：character.appearanceType = Gameplay.AppearanceType.HumanoidV2;
+2.获取对应的外观对象： let appearance = npc.getAppearance<Gameplay.HumanoidV2>();
+3.使用相关的换装能力：appearance.API()
+```
 
 ## Hierarchy
 
@@ -41,7 +58,7 @@
 | :-----|
 | **[appearanceSync](Gameplay.HumanoidV2.md#appearancesync)**(): `void` <br> 把本地角色形象数据同步到多端|
 | **[attach](Gameplay.HumanoidV2.md#attach)**(`GameObject`, [`SlotType`](../enums/Gameplay.SlotType.md)): `void` <br> 将物体附着到V2人物角色的指定插槽|
-| **[changeSomatotype](Gameplay.HumanoidV2.md#changesomatotype)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md), `boolean`): `void` <br> 切换角色主Mesh|
+| **[changeSomatotype](Gameplay.HumanoidV2.md#changesomatotype)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md), `boolean`): `void` <br> 切换角色体型,举例：二次元美术风格中男女就有不同体型，表现就是相同服饰在男的体型上会大一些，在女的体型上会小一些。|
 | **[clearAppearance](Gameplay.HumanoidV2.md#clearappearance)**(): `void` <br> 清空角色形象数据|
 | **[detach](Gameplay.HumanoidV2.md#detach)**(`GameObject`): `void` <br> V2的将物体从人物身上附着的物品预览插槽中分离|
 | **[getBodyTattooColor](Gameplay.HumanoidV2.md#getbodytattoocolor)**(`number`): [`LinearColor`](Type.LinearColor.md) <br> 获取纹身颜色|
@@ -50,11 +67,12 @@
 | **[getBodyTattooRotation](Gameplay.HumanoidV2.md#getbodytattoorotation)**(`number`): `number` <br> 获取纹身旋转值|
 | **[getBodyTattooType](Gameplay.HumanoidV2.md#getbodytattootype)**(`number`): `string` <br> 获取纹身贴图 GUID|
 | **[getBodyTattooZoom](Gameplay.HumanoidV2.md#getbodytattoozoom)**(`number`): `number` <br> 获取身体纹身位置缩放|
-| **[getGoods](Gameplay.HumanoidV2.md#getgoods)**(`string`): [`string`, `string`][] <br> 通过插槽GUID加载数据|
+| **[getGoods](Gameplay.HumanoidV2.md#getgoods)**(`string`): [`string`, `string`][] <br> 工程内容下角色文件中的文件GUID 为参数，加载出文件中的插槽数据|
 | **[getSkinColor](Gameplay.HumanoidV2.md#getskincolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置皮肤颜色|
 | **[getSkinTexture](Gameplay.HumanoidV2.md#getskintexture)**(): `string` <br> 获取皮肤贴图|
 | **[getSlotWorldPosition](Gameplay.HumanoidV2.md#getslotworldposition)**([`SlotType`](../enums/Gameplay.SlotType.md)): [`Vector`](Type.Vector.md) <br> 获取Slot世界坐标位置,V2物品预览的插槽使用|
 | **[getSomatotype](Gameplay.HumanoidV2.md#getsomatotype)**(): [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) <br> 获取当前体型类型|
+| **[getVertexPosition](Gameplay.HumanoidV2.md#getvertexposition)**(`number`): [`Vector`](Type.Vector.md) <br> 通过头部模型顶点index实时获取顶点位置|
 | **[setAppearanceData](Gameplay.HumanoidV2.md#setappearancedata)**(`string`[], [`EmptyCallback`](../modules/Gameplay.Gameplay.md#emptycallback)): `void` <br> 通过GUID加载数据另存为角色数据|
 | **[setBodyTattooColor](Gameplay.HumanoidV2.md#setbodytattoocolor)**(`number`, [`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 身体纹身颜色|
 | **[setBodyTattooPositionX](Gameplay.HumanoidV2.md#setbodytattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 身体纹身位置左右偏移|
@@ -65,7 +83,7 @@
 | **[setSkinColor](Gameplay.HumanoidV2.md#setskincolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置皮肤颜色|
 | **[setSkinTexture](Gameplay.HumanoidV2.md#setskintexture)**(`string`, `boolean`): `void` <br> 设置皮肤贴图|
 | **[setSlot](Gameplay.HumanoidV2.md#setslot)**(`string`, `boolean`): `void` <br> 通过插槽GUID加载数据|
-| **[setSomatotype](Gameplay.HumanoidV2.md#setsomatotype)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md)): `void` <br> 设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)|
+| **[setSomatotype](Gameplay.HumanoidV2.md#setsomatotype)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md)): `void` <br> 设置一套默认外观形象，比如默认二次元女性，默认二次元男性等(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)|
 | **[setSuit](Gameplay.HumanoidV2.md#setsuit)**([`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md), `string`, `string`, `string`, `string`, `string`, `string`, `string`): `void` <br> 加载一套角色数据|
 
 
@@ -176,7 +194,6 @@ ___
 
 将物体附着到V2人物角色的指定插槽
 
-双端都可以使用
 
 ::: warning Precautions
 
@@ -202,7 +219,7 @@ ___
 
 • **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
-切换角色主Mesh
+切换角色体型,举例：二次元美术风格中男女就有不同体型，表现就是相同服饰在男的体型上会大一些，在女的体型上会小一些。
 
 ::: warning Precautions
 
@@ -251,7 +268,6 @@ ___
 
 清空角色形象数据
 
-双端
 
 
 #### Implementation of
@@ -266,7 +282,6 @@ ___
 
 V2的将物体从人物身上附着的物品预览插槽中分离
 
-双端
 
 ::: warning Precautions
 
@@ -446,21 +461,20 @@ ___
 
 • **getGoods**(`GUID`): [`string`, `string`][] <Badge type="tip" text="other" />
 
-通过插槽GUID加载数据
+工程内容下角色文件中的文件GUID 为参数，加载出文件中的插槽数据
 
-双端
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `GUID` | `string` | Slot GUID |
+| `GUID` | `string` | 本地角色文件 GUID |
 
 #### Returns
 
 [`string`, `string`][]
 
-插槽数据中物品GUID Slot数组
+插槽数据物品GUID Slot数组： Array<[本地资源库中的AssetId, 插槽名字]>
 
 #### Implementation of
 
@@ -512,7 +526,6 @@ ___
 
 获取Slot世界坐标位置,V2物品预览的插槽使用
 
-双端
 
 #### Parameters
 
@@ -538,7 +551,6 @@ ___
 
 获取当前体型类型
 
-客户端服务端可调用
 
 #### Returns
 
@@ -552,19 +564,50 @@ ___
 
 ___
 
+### getVertexPosition <Score text="getVertexPosition" /> 
+
+• **getVertexPosition**(`index`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+
+通过头部模型顶点index实时获取顶点位置
+             注意:目前顶点index只能从内部工程中查看
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 模型顶点index |
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+坐标位置
+
+___
+
 ### setAppearanceData <Score text="setAppearanceData" /> 
 
 • **setAppearanceData**(`GUIDArray`, `callback?`): `void` <Badge type="tip" text="other" />
 
 通过GUID加载数据另存为角色数据
 
-双端
 
 ::: warning Precautions
 
 客户端：如果角色GUID没有被预加载，则是异步的，需要再callback里再触发下一次加载 。双端：接口数据是叠加的；只有当前端生效，要同步到多端，请调用同步接口；使用前可以使用重置接口清空之前的数据
 
 :::
+
+使用示例:(角色加载角色数据)
+```ts
+let guidarray = new Array<string>()
+guidarray.add("角色文件guid1");
+guidarray.add("角色文件guid2")
+let appearance = character.getAppearance<Gameplay.HumanoidV2>();
+appearance.setAppearanceData(guidarray);
+character.syncAppearanceData();
+```
 
 #### Parameters
 
@@ -807,7 +850,6 @@ ___
 
 通过插槽GUID加载数据
 
-双端
 
 #### Parameters
 
@@ -827,9 +869,8 @@ ___
 
 • **setSomatotype**(`somatotype`): `void` <Badge type="tip" text="other" />
 
-设置形象(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
+设置一套默认外观形象，比如默认二次元女性，默认二次元男性等(如果没有预加载对应的GUID，则是异步的,监听onLoadAppearanceDataAllCompleted获取加载完成回调)
 
-客户端
 
 #### Parameters
 
@@ -857,18 +898,25 @@ ___
 
 :::
 
+使用示例:(角色加载各部位数据)
+```ts
+let appearance = character.getAppearance<Gameplay.HumanoidV2>();
+appearance.setSuit(SomatotypeV2.LowpolyAdultMale,"76618"，“59857”，“62790”，“63307”,"60117","62548","62785");
+character.syncAppearanceData();
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `somatotype` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) |  主Mesh类型："None"不能作为参数 |
-| `head` | `string` |  头部资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `upperCloth` | `string` |  上衣资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `lowerCloth` | `string` |  下衣资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `gloves` | `string` |  手套资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `shoe` | `string` |  鞋子资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `frontHair` | `string` |  前发资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `behindHair` | `string` |  后发资源的GUID(MWEditor左侧资源列表里面的GUID) |
+| `head` | `string` |  头部资源的GUID(Editor左侧资源列表里面的GUID) |
+| `upperCloth` | `string` |  上衣资源的GUID(Editor左侧资源列表里面的GUID) |
+| `lowerCloth` | `string` |  下衣资源的GUID(Editor左侧资源列表里面的GUID) |
+| `gloves` | `string` |  手套资源的GUID(Editor左侧资源列表里面的GUID) |
+| `shoe` | `string` |  鞋子资源的GUID(Editor左侧资源列表里面的GUID) |
+| `frontHair` | `string` |  前发资源的GUID(Editor左侧资源列表里面的GUID) |
+| `behindHair` | `string` |  后发资源的GUID(Editor左侧资源列表里面的GUID) |
 
 
 #### Implementation of

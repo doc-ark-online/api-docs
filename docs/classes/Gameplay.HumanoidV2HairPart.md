@@ -4,6 +4,10 @@
 
 人形对象V2前发部位接口
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - **`HumanoidV2HairPart`**
@@ -136,7 +140,6 @@ ___
 
 获取前发部位模型
 
-双端
 
 #### Returns
 

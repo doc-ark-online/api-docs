@@ -2,6 +2,10 @@
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
+**`Groups`**
+
+ANIMATIONS
+
 姿态
 
 ## Hierarchy
@@ -15,15 +19,14 @@
 | Methods |
 | :-----|
 | **[play](Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
-| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现|
+| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:play()|
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
-| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现|
+| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:stop()|
 
 构造函数
 
 **`Effect`**
 
-双端函数
 
 #### Parameters
 
@@ -40,7 +43,6 @@
 
 播放这个姿态对象, 并返回执行结果
 
-可选同步
 
 ::: warning Precautions
 
@@ -62,6 +64,10 @@ ___
 
 • `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
 
+**`Deprecated`**
+
+since:022 reason:不该暴露的接口 replacement:play()
+
 播放姿态的内部实现
 
 
@@ -79,7 +85,6 @@ ___
 
 停止这个姿态对象, 并返回执行结果
 
-可选同步
 
 ::: warning Precautions
 
@@ -100,6 +105,10 @@ ___
 ### stopInternal <Score text="stopInternal" /> 
 
 • **stopInternal**(): `boolean` <Badge type="tip" text="other" />
+
+**`Deprecated`**
+
+since:022 reason:不该暴露的接口 replacement:stop()
 
 停止姿态的内部实现
 

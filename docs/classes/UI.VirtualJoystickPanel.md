@@ -2,6 +2,10 @@
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 
+**`Groups`**
+
+GUI
+
 摇杆
 
 ## Hierarchy
@@ -58,7 +62,7 @@
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -71,7 +75,7 @@
 | :-----|
 | **[resetJoyStick](UI.VirtualJoystickPanel.md#resetjoystick)**(): `void` <br> 强制重置摇杆 - 例如在操控摇杆的时候隐藏其父类节点,这时候摇杆重新显示后无法成功重置|
 | **[setVisibility](UI.VirtualJoystickPanel.md#setvisibility)**([`SlateVisibility`](../enums/UI.SlateVisibility.md)): `void` <br> 设置可见性|
-| **[newObject](UI.VirtualJoystickPanel.md#newobject)**([`Widget`](UI.Widget.md), `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建 MWVirtualJoystickPanelDesigner 控件|
+| **[newObject](UI.VirtualJoystickPanel.md#newobject)**([`Widget`](UI.Widget.md), `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建 VirtualJoystickPanelDesigner 控件|
 | **[newObjectAndAdd](UI.VirtualJoystickPanel.md#newobjectandadd)**([`Canvas`](UI.Canvas.md), [`Widget`](UI.Widget.md), `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
 
 
@@ -81,6 +85,7 @@
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
 | **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
 
 
@@ -668,7 +673,7 @@ ___
 
 • `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
 
-创建 MWVirtualJoystickPanelDesigner 控件
+创建 VirtualJoystickPanelDesigner 控件
 
 
 #### Parameters

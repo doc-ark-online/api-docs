@@ -4,6 +4,10 @@
 
 人形对象V2头部位接口
 
+**`Groups`**
+
+AVATAR
+
 ## Implements
 
 - [`IHumanoidV2HeadPart`](../interfaces/Gameplay.IHumanoidV2HeadPart.md)
@@ -189,7 +193,6 @@ ___
 
 获取表情
 
-客户端生效
 
 #### Returns
 
@@ -915,7 +918,6 @@ ___
 
 设置表情
 
-客户端生效
 
 #### Parameters
 

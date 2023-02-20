@@ -2,6 +2,10 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
+**`Groups`**
+
+UTILITY
+
 GameObject对象池
 
 ::: warning Precautions

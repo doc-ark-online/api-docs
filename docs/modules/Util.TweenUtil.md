@@ -12,7 +12,7 @@
 var position = {x: 100, y: 0};
 
 // 如果你想将x坐标的值从100变成200，首先为位置创建一个补间(tween)
-var tween = new Extension.TweenUtil.Tween(position)
+var tween = new Util.TweenUtil.Tween(position)
 
 // 然后告诉 tween 我们想要在1000毫秒内以动画的形式移动 x 的位置
 tween.to({x: 200}, 1000)
@@ -23,12 +23,12 @@ tween.start()
 // 最后，想要成功的完成这种效果，你需要在主函数中调用TWEEN.update
 onUpdate() {
    // [...]
-   Extension.TweenUtil.TWEEN.update()
+   Util.TweenUtil.TWEEN.update()
    // [...]
 }
 
 // tween 可以链式调用！ 每个tween函数都会返回tween实例，所以你可以重写创建tween的代码：
-var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
+var tween = new Util.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 ```
 
 ## Table of contents
@@ -47,11 +47,11 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 | Variables |
 | :-----|
-| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
+| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> UTILITY|
 
 | Functions |
 | :-----|
-| **[nextId](Util.TweenUtil.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
+| **[nextId](Util.TweenUtil.md#nextid)**(): `number` <br> UTILITY|
 
 ## Type Aliases
 
@@ -64,6 +64,10 @@ var tween = new Extension.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 • (`amount`): `number`
 
 缓动函数的类型定义
+
+**`Groups`**
+
+UTILITY
 
 ##### Parameters
 
@@ -87,6 +91,10 @@ ___
 
 插值函数的类型定义
 
+**`Groups`**
+
+UTILITY
+
 ##### Parameters
 
 | Name | Type |
@@ -106,11 +114,19 @@ ___
 
 补间属性的定义，用户可以自由扩展
 
+**`Groups`**
+
+UTILITY
+
 ## Variables
 
 ### TWEEN <Score text="TWEEN" /> 
 
 • `Const` **TWEEN**: [`Group`](../classes/Util.Util.TweenUtil.Group.md)
+
+**`Groups`**
+
+UTILITY
 
 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
 
@@ -119,6 +135,10 @@ ___
 ### nextId <Score text="nextId" /> 
 
 • **nextId**(): `number` <Badge type="tip" text="other" />
+
+**`Groups`**
+
+UTILITY
 
 获取下一个ID的全局方法
 

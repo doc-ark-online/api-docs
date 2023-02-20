@@ -4,6 +4,10 @@
 
 人形对象V2形体修改
 
+**`Groups`**
+
+AVATAR
+
 ## Implemented by
 
 - [`HumanoidV2Shape`](../classes/Gameplay.HumanoidV2Shape.md)
@@ -633,7 +637,6 @@ ___
 
 获取角色头部大小
 
-客户端调用
 
 
 #### Returns
@@ -2091,7 +2094,6 @@ ___
 
 设置角色头部大小
 
-当 sync = true 对象是单端对象，调用仅本地客户端有效调用
 
 ::: warning Precautions
 

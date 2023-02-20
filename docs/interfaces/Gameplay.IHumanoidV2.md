@@ -4,6 +4,10 @@
 
 人形对象V2插槽和外形加载
 
+**`Groups`**
+
+AVATAR
+
 ## Implemented by
 
 - [`HumanoidV2`](../classes/Gameplay.HumanoidV2.md)
@@ -254,11 +258,11 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `somatotype` | [`SomatotypeV2`](../enums/Gameplay.SomatotypeV2.md) |  主Mesh类型："None"不能作为参数 |
-| `head` | `string` |  头部资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `upperCloth` | `string` |  上衣资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `lowerCloth` | `string` |  下衣资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `gloves` | `string` |  手套资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `shoe` | `string` |  鞋子资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `frontHair` | `string` |  前发资源的GUID(MWEditor左侧资源列表里面的GUID) |
-| `behindHair` | `string` |  后发资源的GUID(MWEditor左侧资源列表里面的GUID) |
+| `head` | `string` |  头部资源的GUID(Editor左侧资源列表里面的GUID) |
+| `upperCloth` | `string` |  上衣资源的GUID(Editor左侧资源列表里面的GUID) |
+| `lowerCloth` | `string` |  下衣资源的GUID(Editor左侧资源列表里面的GUID) |
+| `gloves` | `string` |  手套资源的GUID(Editor左侧资源列表里面的GUID) |
+| `shoe` | `string` |  鞋子资源的GUID(Editor左侧资源列表里面的GUID) |
+| `frontHair` | `string` |  前发资源的GUID(Editor左侧资源列表里面的GUID) |
+| `behindHair` | `string` |  后发资源的GUID(Editor左侧资源列表里面的GUID) |
 

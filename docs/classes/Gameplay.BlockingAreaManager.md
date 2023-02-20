@@ -2,6 +2,14 @@
 
 # BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
 
+**`Deprecated`**
+
+since:022 reason:删除 replacement:请直接使用函数setPlayerPassableForAllArea()
+
+**`Groups`**
+
+GAMEPLAY
+
 禁行区管理类,用于调用禁行区的全局方法
 
 ::: warning Precautions

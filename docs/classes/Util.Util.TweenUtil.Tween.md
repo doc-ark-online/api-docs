@@ -2,6 +2,10 @@
 
 # Tween<T\> <Badge type="tip" text="Class" /> <Score text="Tween<T\>" />
 
+**`Groups`**
+
+UTILITY
+
 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。
 你只需告诉它哪些属性要更改，当补间结束运行时它们应该具有哪些最终值，以及这需要多长时间，
 补间引擎将负责计算从起始点到结束点的值。
@@ -562,7 +566,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `properties` | [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops) |  目标状态 |
+| `properties` | [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops) |  目标状态，可以是一个数组: 例如 to([0,100,200], time) |
 | `duration?` | `number` |  完成补间需要的时间，单位：ms。 default: 1000 |
 
 #### Returns

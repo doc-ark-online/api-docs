@@ -4,6 +4,10 @@
 
 人形对象V2上衣部位接口
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - [`HumanoidV2ClothPart`](Gameplay.HumanoidV2ClothPart.md)

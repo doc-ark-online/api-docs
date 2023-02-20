@@ -2,6 +2,10 @@
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 
+**`Groups`**
+
+DATA
+
 由分量 (x,y,z) 组成的三维空间中的向量
 
 ## Table of contents

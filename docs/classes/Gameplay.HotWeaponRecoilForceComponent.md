@@ -2,7 +2,24 @@
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
-热武器 - 后坐力组件
+热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）
+
+**`Groups`**
+
+GAMEPLAY
+
+使用示例: 如下示例展示热武器后坐力组件使用的基本流程
+```ts
+// 已有名为 hotWeapon 的热武器功能对象的示例
+
+hotWeapon.recoilForceComponent.onStartRecoilForceServer.add(() => {
+    // 开始时应用后坐力效果时在服务端触发
+});
+// 修改参数
+hotWeapon.recoilForceComponent.minHorizontalJitter = 3;
+// 验证参数修改效果
+hotWeapon.startFire();
+```ts
 
 ## Table of contents
 
@@ -65,6 +82,7 @@ ___
 
 设置相机水平抖动最大值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -98,7 +116,12 @@ ___
 
 设置水平偏移最大值
 
+
+::: warning Precautions
+
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -126,6 +149,7 @@ ___
 
 设置相机垂直抖动最大值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -159,6 +183,7 @@ ___
 
 设置垂直偏移最大值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -192,6 +217,7 @@ ___
 
 设置相机水平抖动最小值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -225,7 +251,12 @@ ___
 
 设置水平偏移最小值
 
+
+::: warning Precautions
+
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 
@@ -253,6 +284,7 @@ ___
 
 设置相机垂直抖动最小值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -286,6 +318,7 @@ ___
 
 设置垂直偏移最小值
 
+调用端自动广播
 
 ::: warning Precautions
 

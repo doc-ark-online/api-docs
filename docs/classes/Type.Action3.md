@@ -2,6 +2,10 @@
 
 # Action3<T, S, P\> <Badge type="tip" text="Class" /> <Score text="Action3<T, S, P\>" />
 
+**`Groups`**
+
+SCRIPITING
+
 三个参数的代理
 
 ## Type parameters

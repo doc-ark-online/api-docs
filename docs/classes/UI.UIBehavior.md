@@ -2,6 +2,10 @@
 
 # UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
+**`Groups`**
+
+GUI
+
 UI的驱动脚本基类
 
 ## Hierarchy
@@ -28,6 +32,7 @@ UI的驱动脚本基类
 | **[detectDrag](UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 触发DragDrop事件的检测|
 | **[detectDragIfPressed](UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.PointerEvent.md), [`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 如果事件检测通过就触发DragDrop事件的回复|
 | **[newDragDrop](UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.DragPivot.md), [`Vector2`](Type.Vector2.md)): [`DragDropOperation`](UI.DragDropOperation.md) <br> 创建DragDrop事件|
+| **[remove](UI.UIBehavior.md#remove)**(): `void` <br> 移除UI对象|
 | **[setVisible](UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录|
 | **[clearBehavior](UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录|
@@ -286,6 +291,16 @@ ___
 [`DragDropOperation`](UI.DragDropOperation.md)
 
 返回触发的事件回复
+
+___
+
+### remove <Score text="remove" /> 
+
+• **remove**(): `void` <Badge type="tip" text="other" />
+
+移除UI对象
+
+
 
 ___
 

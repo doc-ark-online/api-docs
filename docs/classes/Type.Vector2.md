@@ -2,6 +2,10 @@
 
 # Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
+**`Groups`**
+
+DATA
+
 由分量 (x,y) 组成的二维空间中的向量
 
 ## Table of contents

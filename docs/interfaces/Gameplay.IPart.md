@@ -4,6 +4,10 @@
 
 部位基类
 
+**`Groups`**
+
+AVATAR
+
 ## Hierarchy
 
 - **`IPart`**
@@ -33,7 +37,6 @@
 
 获取部位模型
 
-客户端服务端可调用
 
 #### Returns
 
@@ -55,8 +58,6 @@ ___
 
 :::
 
-sync = false:客户端;
-sync = true:客户端服务端可调用
 
 #### Parameters
 

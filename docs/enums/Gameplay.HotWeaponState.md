@@ -2,6 +2,10 @@
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 
+**`Groups`**
+
+GAMEPLAY
+
 热武器状态
 
 ## Table of contents

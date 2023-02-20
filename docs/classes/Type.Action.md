@@ -2,6 +2,10 @@
 
 # Action <Badge type="tip" text="Class" /> <Score text="Action" />
 
+**`Groups`**
+
+SCRIPITING
+
 任意参数的代理
 
 ## Hierarchy

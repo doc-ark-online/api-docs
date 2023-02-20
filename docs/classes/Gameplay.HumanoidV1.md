@@ -2,7 +2,24 @@
 
 # HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
 
-人形对象V1接口
+人形外观形象对象,用于基础人形外观的设置.
+
+**`Groups`**
+
+AVATAR
+
+::: warning Precautions
+
+目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目使用非HumanoidV1(基础人形外观)时,需要切换类型到HumanoidV1形象.获取HumanoidV1(let humanoidV1 = npc.getAppearance<Gameplay.HumanoidV1>()),进行形象更新.
+
+:::
+
+使用示例:(关于示例的描述、说明)
+```ts
+1.切换Character为HumanoidV1外观类型：character.appearanceType = Gameplay.AppearanceType.HumanoidV1;
+2.获取对应的外观对象： let appearance = npc.getAppearance<Gameplay.HumanoidV1>();
+3.使用相关的换装能力：appearance.API()
+```
 
 ## Hierarchy
 
@@ -87,7 +104,6 @@ ___
 
 切换角色主Mesh
 
-sync = false:客户端,sync = true:双端
 
 使用示例: 角色切换类型1.切换外观类型 appearanceType.设置对应的体型SomatotypeV1 设置模型setWholeBody
 ```ts

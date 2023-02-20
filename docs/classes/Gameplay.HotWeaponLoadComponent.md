@@ -2,7 +2,11 @@
 
 # HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
-热武器上膛组件
+热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑
+
+**`Groups`**
+
+GAMEPLAY
 
 ## Table of contents
 
@@ -74,6 +78,7 @@ ___
 
 设置动画 GUID
 
+调用端自动广播
 
 #### Parameters
 
@@ -101,6 +106,7 @@ ___
 
 设置是否开启开火后自动上膛的功能
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -134,7 +140,12 @@ ___
 
 设置上膛时间
 
+
+::: warning Precautions
+
 装备热武器前仅服务器调用，装备后双端都可调用
+
+:::
 
 #### Parameters
 

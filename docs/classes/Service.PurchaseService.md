@@ -2,6 +2,10 @@
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
+**`Groups`**
+
+MONETIZATION
+
 **`Instance`**
 
 应用内购服务

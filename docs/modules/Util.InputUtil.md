@@ -31,6 +31,10 @@
 
 绑定按键
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -47,6 +51,10 @@ ___
 • **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <Badge type="tip" text="other" />
 
 将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Groups`**
+
+SCRIPITING
 
 
 #### Parameters
@@ -70,6 +78,10 @@ ___
 
 设置鼠标指针是否能与UI交互
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -86,12 +98,16 @@ ___
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否可切换 |
+| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
 
 
 ___
@@ -101,6 +117,10 @@ ___
 • **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="other" />
 
 获取鼠标指针是否能与UI交互
+
+**`Groups`**
+
+UTILITY
 
 
 #### Returns
@@ -117,6 +137,10 @@ ___
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
 
+**`Groups`**
+
+UTILITY
+
 
 #### Returns
 
@@ -131,6 +155,10 @@ ___
 • **isCursorLocked**(): `boolean` <Badge type="tip" text="other" />
 
 获取鼠标指针是否锁定
+
+**`Groups`**
+
+UTILITY
 
 
 #### Returns
@@ -147,6 +175,10 @@ ___
 
 获取鼠标指针是否可见
 
+**`Groups`**
+
+UTILITY
+
 
 #### Returns
 
@@ -161,6 +193,10 @@ ___
 • **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 键盘输入事件-点击
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters
@@ -184,6 +220,10 @@ ___
 
 键盘输入事件-按压
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -205,6 +245,10 @@ ___
 • **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
 
 键盘输入事件-抬起
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters
@@ -228,6 +272,10 @@ ___
 
 获取角色在世界中的位置，投射到屏幕上
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -250,6 +298,10 @@ ___
 
 设置鼠标指针是否锁定
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -265,6 +317,10 @@ ___
 • **setCursorVisible**(`isVisible`): `void` <Badge type="tip" text="other" />
 
 设置鼠标指针是否可见
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters
@@ -282,6 +338,10 @@ ___
 
 设置是否可以锁定鼠标
 
+**`Groups`**
+
+UTILITY
+
 
 #### Parameters
 
@@ -297,6 +357,10 @@ ___
 • **unbindButton**(`key`): `void` <Badge type="tip" text="other" />
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
+
+**`Groups`**
+
+UTILITY
 
 
 #### Parameters

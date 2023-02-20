@@ -2,7 +2,11 @@
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
-热武器开火组件
+热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
+
+**`Groups`**
+
+GAMEPLAY
 
 ## Table of contents
 
@@ -90,6 +94,7 @@ ___
 
 设置动画 GUID
 
+调用端自动广播
 
 #### Parameters
 
@@ -117,6 +122,7 @@ ___
 
 设置当前弹夹中子弹数量
 
+调用端自动广播
 
 #### Parameters
 
@@ -144,6 +150,7 @@ ___
 
 设置当前弹夹容量
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -177,6 +184,7 @@ ___
 
 设置开火间隙
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -225,6 +233,7 @@ ___
 
 设置一次开火发射的子弹数量
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -258,6 +267,7 @@ ___
 
 设置是否在屏幕中心开火
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -291,6 +301,7 @@ ___
 
 设置当前状态下isInFullAuto的值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -324,6 +335,7 @@ ___
 
 设置屏幕中心开火时的偏移
 
+调用端自动广播
 
 ::: warning Precautions
 

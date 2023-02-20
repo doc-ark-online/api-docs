@@ -2,6 +2,10 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
+**`Groups`**
+
+DATA
+
 客户端数据中心，里面存放着当前玩家的数据
 
 ::: warning Precautions
@@ -14,7 +18,7 @@
 
 | Methods |
 | :-----|
-| **[getData](Extension.DataCenterC.md#getdata)**<extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |\>([`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> | <br> 获取当前玩家的一个数据|
+| **[getData](Extension.DataCenterC.md#getdata)**<extends [`Subdata`](Extension.Subdata.md)<`T`\> |\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Subdata`](Extension.Subdata.md)<`T`\> | <br> 获取当前玩家的一个数据|
 | **[ready](Extension.DataCenterC.md#ready)**(): `Promise`<`void`\> <br> 判断数据是否就绪|
 | **[getInstance](Extension.DataCenterC.md#getinstance)**(): [`DataCenterC`](Extension.DataCenterC.md) <br> 获取客户端数据中心全局实例|
 
@@ -22,7 +26,7 @@
 
 ### getData <Score text="getData" /> 
 
-• **getData**<`T`\>(`DataOwnerClass`): `T` <Badge type="tip" text="other" />
+• **getData**<`T`\>(`SubdataType`): `T` <Badge type="tip" text="other" />
 
 获取当前玩家的一个数据
 
@@ -31,13 +35,13 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |
+| `T` | extends [`Subdata`](Extension.Subdata.md)<`T`\> |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `DataOwnerClass` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  数据类型 |
+| `SubdataType` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  数据类型 |
 
 #### Returns
 

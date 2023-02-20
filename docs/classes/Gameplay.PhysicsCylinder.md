@@ -2,7 +2,34 @@
 
 # PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
 
+**`Groups`**
+
+PHYSICS
+
 物理圆柱组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsCylinder;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setLinearLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.linearLimit = 100;
+test.restitution = 100;
+test.linearVelocity = 100;
+test.setAngularLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.angularLimit = new Type.Vector(100,100,100);
+test.angularVelocity = new Type.Vector(100,100,100);
+test.angularStrength = 100;
+```
 
 ## Hierarchy
 

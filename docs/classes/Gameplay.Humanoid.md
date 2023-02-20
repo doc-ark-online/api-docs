@@ -2,8 +2,23 @@
 
 # Humanoid <Badge type="tip" text="Class" /> <Score text="Humanoid" />
 
-Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通常被用户自己实现AI逻辑操作
-             可以将对应的逻辑对象拖入到场景中或调用spawnGameObject接口进行实例化
+**`Groups`**
+
+AVATAR
+
+**`Deprecated`**
+
+since:021 reason:功能迭代,请使用NPC对象 replacement:NPC
+
+在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象.
+             生成方式:可以通过将人形对象(Humanoid_V2)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject;
+
+::: warning Precautions
+
+该对象目前耦合了形象和角色对象.建议开发者更换新的非玩家对象(NPC)实现功能
+             后续人形对象(Humanoid)将不再为维护.
+
+:::
 
 ## Hierarchy
 
@@ -31,7 +46,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 | Accessors |
 | :-----|
-| **[serverCalculateEnable](Gameplay.Humanoid.md#servercalculateenable)**(`boolean`): `void` <br> 同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算|
+| **[serverCalculateEnable](Gameplay.Humanoid.md#servercalculateenable)**(`boolean`): `void` <br> 开/关 npc的功能,现包含(角色的网络同步，角色移动)未来可能会添加其他计算|
 | **[serverMovementEnable](Gameplay.Humanoid.md#servermovementenable)**(`boolean`): `void` <br> 开关角色的移动计算|
 
 
@@ -76,7 +91,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 | **[jumpEnable](Gameplay.CharacterBase.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
 | **[jumpMaxCount](Gameplay.CharacterBase.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
 | **[jumpingOutOfWaterEnable](Gameplay.CharacterBase.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
-| **[locallyVisible](Gameplay.CharacterBase.md#locallyvisible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[locallyVisible](Gameplay.CharacterBase.md#locallyvisible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[maxAcceleration](Gameplay.CharacterBase.md#maxacceleration)**(): `number` <br> 最大加速度|
 | **[maxFallingSpeed](Gameplay.CharacterBase.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
 | **[maxFlySpeed](Gameplay.CharacterBase.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
@@ -93,7 +108,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 | **[outOfWaterZ](Gameplay.CharacterBase.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
 | **[ragdollEnable](Gameplay.CharacterBase.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
 | **[rotateRate](Gameplay.CharacterBase.md#rotaterate)**(): `number` <br> 最大转向速度|
-| **[scale](Gameplay.CharacterBase.md#scale)**(): [`Vector`](Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步|
+| **[scale](Gameplay.CharacterBase.md#scale)**(): [`Vector`](Type.Vector.md) <br> since:021 reason:接口重复 replacement:worldScale|
 | **[separateBrakingFrictionEnable](Gameplay.CharacterBase.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
 | **[usedCapsuleCorrection](Gameplay.CharacterBase.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
 | **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
@@ -124,22 +139,23 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 | **[getSlotName](Gameplay.CharacterBase.md#getslotname)**([`SlotType`](../enums/Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称|
 | **[isPlayingAnimation](Gameplay.CharacterBase.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画|
 | **[jump](Gameplay.CharacterBase.md#jump)**(): `void` <br> 跳跃|
-| **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象|
-| **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,数据格式为："MW_Skeleton#112801#Glasses#0,0,0|0,-90,0|1,1,1",给移动角色编辑器提供的能力|
+| **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`string`, `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象，playAnimation是个快速实现功能的接口,可配置参数有限。loadAnimation可以返回动画,以进行更加精细的动画控制，获取到对象后需用户自己配置参数，手动调用play接口动画才会播放。|
+| **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`string`, [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,给移动角色编辑器提供的能力|
 | **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`string`): `void` <br> 通过GUID加载插槽跟角色编辑数据|
 | **[loadSlotAndEditorDataByPath](Gameplay.CharacterBase.md#loadslotandeditordatabypath)**(`string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
 | **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`string`, `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
 | **[lookAt](Gameplay.CharacterBase.md#lookat)**([`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
-| **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口是同步的|
-| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:v0.18 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.|
+| **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`string`, `number`, `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。|
+| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`string`, `number`, `number`): `void` <br> since:018 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.|
 | **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> |\>([`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> | <br> 设置外观修改功能|
 | **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**([`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
 | **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置是否被显示(本地生效)|
-| **[stopAnimation](Gameplay.CharacterBase.md#stopanimation)**(`string`): `void` <br> since:v0.18 reason:使用新接口 replacement:"Gameplay.Animation.stop"|
+| **[stopAnimation](Gameplay.CharacterBase.md#stopanimation)**(`string`): `void` <br> since:018 reason:使用新接口 replacement:"Gameplay.Animation.stop"|
 | **[stopStance](Gameplay.CharacterBase.md#stopstance)**(`boolean`): `void` <br> 停止任何正在播放的姿态|
 | **[swimmingDown](Gameplay.CharacterBase.md#swimmingdown)**(`number`): `void` <br> 水中下潜|
 | **[swimmingUp](Gameplay.CharacterBase.md#swimmingup)**(`number`): `void` <br> 水中上浮|
 | **[switchToFlying](Gameplay.CharacterBase.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
+| **[switchToSwimming](Gameplay.CharacterBase.md#switchtoswimming)**(): `void` <br> 切换为游泳状态|
 | **[switchToWalking](Gameplay.CharacterBase.md#switchtowalking)**(): `void` <br> 切换为行走状态|
 :::
 
@@ -152,13 +168,12 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 • `set` **serverCalculateEnable**(`enable`): `void` <Badge type="tip" text="other" />
 
-同时开/关角色的网络同步，角色移动等计算集合，未来可能会添加其他计算
+开/关 npc的功能,现包含(角色的网络同步，角色移动)未来可能会添加其他计算
 
-服务端和客户端都可调用,同步服务器，广播到多端
 
 ::: warning Precautions
 
-针对处于静默状态的ai调用用于降低暂时不必要的计算带来的性能消耗，如果ai角色需要参与到游戏中请开启
+如果场景中存在大量闲置NPC,暂时不会参与到游戏中，可使用设置flase节约一些额外的性能消耗，当NPC需要参与到游戏中时设置true开启对应的功能。
 
 :::
 
@@ -166,7 +181,7 @@ Humanoid拥有CharacterBase的所有功能，与Character不同的是，它通�
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
+| `enable` | `boolean` |  true 开启角色计算 flase 关闭角色计算 |
 
 
 ___
@@ -177,7 +192,7 @@ ___
 
 开关角色的移动计算
 
-服务端和客户端都可调用,同步服务器，广播到多端
+调用端自动广播
 
 ::: warning Precautions
 

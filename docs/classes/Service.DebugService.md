@@ -2,6 +2,10 @@
 
 # DebugService <Badge type="tip" text="Class" /> <Score text="DebugService" />
 
+**`Groups`**
+
+DEBUGGING
+
 **`Instance`**
 
 debug调试服务

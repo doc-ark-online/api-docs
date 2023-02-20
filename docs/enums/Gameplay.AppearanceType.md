@@ -4,6 +4,10 @@
 
 形象类型
 
+**`Groups`**
+
+AVATAR
+
 ## Table of contents
 
 | Enumeration Members |

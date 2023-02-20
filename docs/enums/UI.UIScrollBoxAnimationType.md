@@ -4,6 +4,10 @@
 
 滚动框动画类型
 
+**`Groups`**
+
+GUI
+
 ## Table of contents
 
 | Enumeration Members |

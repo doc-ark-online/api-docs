@@ -25,6 +25,10 @@
 
 添加游戏币接口
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -45,6 +49,10 @@ ___
 • **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 添加游戏币接口
+
+**`Groups`**
+
+MONETIZATION
 
 
 #### Parameters
@@ -69,6 +77,10 @@ ___
 
 添加游戏币接口
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -91,6 +103,10 @@ ___
 
 减少游戏币接口
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -111,6 +127,10 @@ ___
 • **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 减少游戏币接口
+
+**`Groups`**
+
+MONETIZATION
 
 
 #### Parameters
@@ -135,6 +155,10 @@ ___
 
 减少游戏币接口
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -157,6 +181,10 @@ ___
 
 查询账户的游戏币数量
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -175,6 +203,10 @@ ___
 • **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="other" />
 
 查询账户的游戏币数量
+
+**`Groups`**
+
+MONETIZATION
 
 
 #### Parameters
@@ -196,6 +228,10 @@ ___
 
 查询账户的游戏币数量
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
@@ -215,12 +251,16 @@ ___
 
 查询NFT接口
 
+**`Groups`**
+
+MONETIZATION
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回数据,不是200也会返回 |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回NFT 账户数据,不是200也会返回相关错误 |
 | `Account` | `string` | 账户 |
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |

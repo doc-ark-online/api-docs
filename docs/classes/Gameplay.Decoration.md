@@ -2,7 +2,11 @@
 
 # Decoration <Badge type="tip" text="Class" /> <Score text="Decoration" />
 
-挂件数据
+平台形象特有的挂件数据格式
+
+**`Groups`**
+
+AVATAR
 
 ## Table of contents
 
@@ -59,7 +63,6 @@ ___
 
 反序列化
 
-双端
 
 #### Parameters
 
@@ -76,7 +79,6 @@ ___
 
 比较是否是一个插槽数据
 
-双端
 
 #### Parameters
 
@@ -98,7 +100,6 @@ ___
 
 获取序列化String
 
-双端
 
 #### Returns
 

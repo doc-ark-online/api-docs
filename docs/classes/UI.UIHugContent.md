@@ -2,6 +2,10 @@
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
+**`Groups`**
+
+GUI
+
 容器自动布局大小适应规则
 
 ## Table of contents

@@ -2,7 +2,11 @@
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
-交互物功能对象，正重新改版，新交互物 InteractiveObject
+交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。
+
+**`Groups`**
+
+GAMEPLAY
 
 ## Hierarchy
 
@@ -14,8 +18,8 @@
 
 | Properties |
 | :-----|
-| **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> 激活交互时执行绑定函数|
-| **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> 退出交互时执行绑定函数|
+| **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> since:022 reason: API 注释命名优化 replacement: enterInteractiveState 返回的 promise|
+| **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> since:022 reason: API 注释命名优化 replacement: exitInteractiveState 返回的 promise|
 | **[serverSetShowDebugLog](Gameplay.Interactor.md#serversetshowdebuglog)**: `any` <br> 服务器设置显示debug日志|
 
 | Accessors |
@@ -40,7 +44,7 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:v0.20.0 reason:api重构 replacement:getVisibility()|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -50,8 +54,8 @@
 | Methods |
 | :-----|
 | **[convertStringToStanceGuid](Gameplay.Interactor.md#convertstringtostanceguid)**(`string`): `string` <br> 将姿态转换为GUID|
-| **[enterInteractiveState](Gameplay.Interactor.md#enterinteractivestate)**(`GameObject`): `Promise`<`boolean`\> <br> 激活交互|
-| **[exitInteractiveState](Gameplay.Interactor.md#exitinteractivestate)**([`Vector`](Type.Vector.md), `string`): `Promise`<`boolean`\> <br> 客户端请求退出交互|
+| **[enterInteractiveState](Gameplay.Interactor.md#enterinteractivestate)**(`GameObject`): `Promise`<`boolean`\> <br> 激活交互，将角色切换到特定姿态和位置，并绑定到交互物上|
+| **[exitInteractiveState](Gameplay.Interactor.md#exitinteractivestate)**([`Vector`](Type.Vector.md), `string`): `Promise`<`boolean`\> <br> 退出交互，恢复角色的绑定关系，姿态和位置|
 | **[getInteractiveState](Gameplay.Interactor.md#getinteractivestate)**(): `boolean` <br> 获取该交互物的交互状态|
 | **[interactiveCharacter](Gameplay.Interactor.md#interactivecharacter)**(): [`Character`](Gameplay.Character.md) <br> 获取和交互物发生交互的角色|
 
@@ -63,7 +67,7 @@
 | **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean`): `GameObject` <br> 复制对象|
+| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
 | **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
@@ -107,12 +111,14 @@
 | **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`): `GameObject` <br> 构造一个 GameObject|
+| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -122,7 +128,25 @@
 
 • **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
-激活交互时执行绑定函数
+**`Deprecated`**
+
+since:022 reason: API 注释命名优化 replacement: enterInteractiveState 返回的 promise
+
+（请不要使用此委托，绑定的回调会在调用交互时被重置，外部回调不会触发）激活交互时执行绑定函数
+
+::: warning Precautions
+
+不要使用此委托，直接使用激活函数返回的 Promise 可达到同样的效果
+
+:::
+
+使用示例: 如下示例展示此委托的参数意义和使用方法
+```ts
+interactor.onInteractorEnter.add((result: boolean) => {
+    // 参数 result: 激活交互成功时返回 true
+    // 激活交互完成时触发
+})
+```ts
 
 ___
 
@@ -130,7 +154,25 @@ ___
 
 • **onInteractorExit**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
-退出交互时执行绑定函数
+**`Deprecated`**
+
+since:022 reason: API 注释命名优化 replacement: exitInteractiveState 返回的 promise
+
+（请不要使用此委托，绑定的回调会在调用退出交互时被重置，外部回调不会触发）退出交互时执行绑定函数
+
+::: warning Precautions
+
+不要使用此委托，直接使用退出交互函数返回的 Promise 可达到同样的效果
+
+:::
+
+使用示例: 如下示例展示此委托的参数意义和使用方法
+```ts
+interactor.onInteractorExit.add((result: boolean) => {
+    // 参数 result: 退出交互成功时为 true
+    // 激活交互完成时触发
+})
+```
 
 ___
 
@@ -172,8 +214,23 @@ usage:是否显示debug日志
 
 • **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
-激活交互
+激活交互，将角色切换到特定姿态和位置，并绑定到交互物上
 
+调用端自动广播
+
+::: warning Precautions
+
+双端都可以调用，客户端调用会自动广播到服务端
+
+:::
+
+使用示例: 如下示例展示此方法使用方法和返回的 Promise 的参数意义
+```ts
+interactor.enterInteractiveState(Gameplay.getCurrentPlayer().character).then((result) => {
+    // 参数 result:  激活交互成功时为 true
+    // do something
+})
+```ts
 
 #### Parameters
 
@@ -193,8 +250,23 @@ ___
 
 • **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
-客户端请求退出交互
+退出交互，恢复角色的绑定关系，姿态和位置
 
+调用端自动广播
+
+使用示例: 如下示例展示此方法使用方法和返回的 Promise 的参数意义
+```ts
+interactor.exitInteractiveState(newLocation, "").then((result) => {
+    // 参数 result: 退出交互成功时为 true
+    // do something
+})
+```
+
+::: warning Precautions
+
+双端都可以调用，客户端调用会自动广播到服务端
+
+:::
 
 #### Parameters
 

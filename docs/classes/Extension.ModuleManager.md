@@ -2,6 +2,10 @@
 
 # ModuleManager <Badge type="tip" text="Class" /> <Score text="ModuleManager" />
 
+**`Groups`**
+
+UTILITY
+
 模块管理
 
 ::: warning Precautions
@@ -18,12 +22,12 @@
 
 | Methods |
 | :-----|
-| **[callExecut](Extension.ModuleManager.md#callexecut)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`Class`](../interfaces/Type.Class.md)<`T`\>, `number`, `any`[]): `any` <br> 调用一个模块的onExcut方法|
-| **[getModule](Extension.ModuleManager.md#getmodule)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
+| **[callExecut](Extension.ModuleManager.md#callexecut)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>, `number`, `any`[]): `any` <br> 调用一个模块的onExcut方法|
+| **[getModule](Extension.ModuleManager.md#getmodule)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
 | **[getUpdateTimeLog](Extension.ModuleManager.md#getupdatetimelog)**(): `string` <br> 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
 | **[ready](Extension.ModuleManager.md#ready)**(): `Promise`<`void`\> <br> 判断ModuleManager是否就绪的异步方法|
-| **[registerModule](Extension.ModuleManager.md#registermodule)**([`Class`](../interfaces/Type.Class.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\>, [`Class`](../interfaces/Type.Class.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>, [`Class`](../interfaces/Type.Class.md)<[`SubdataBase`](Extension.SubdataBase.md)<`any`\>\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 注册模块|
-| **[setClientFirstStartModule](Extension.ModuleManager.md#setclientfirststartmodule)**([`Class`](../interfaces/Type.Class.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 设置客户端第一个要启动的模块|
+| **[registerModule](Extension.ModuleManager.md#registermodule)**([`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\>, [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>, [`TypeName`](../interfaces/Type.TypeName.md)<[`Subdata`](Extension.Subdata.md)\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 注册模块|
+| **[setClientFirstStartModule](Extension.ModuleManager.md#setclientfirststartmodule)**([`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 设置客户端第一个要启动的模块|
 | **[getInstance](Extension.ModuleManager.md#getinstance)**(): [`ModuleManager`](Extension.ModuleManager.md) <br> 获取模块管理全局实例|
 
 ## Accessors
@@ -60,7 +64,7 @@ ModuleManager是否就绪
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ModuleClass` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  模块 |
+| `ModuleClass` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  模块 |
 | `type?` | `number` |  给onExcut方法传递的操作类型，需要各个模块自己定义 default: 0 |
 | `...params` | `any`[] |  给onExcut方法传递的参数，需要各个模块自己定义 |
 
@@ -89,7 +93,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ModuleClass` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  模块类型 |
+| `ModuleClass` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  模块类型 |
 
 #### Returns
 
@@ -137,7 +141,7 @@ ___
 
 ### registerModule <Score text="registerModule" /> 
 
-• **registerModule**(`ServerModule`, `ClientModule`, `ModuleDataClass?`): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="other" />
+• **registerModule**(`ServerModuleType`, `ClientModuleType`, `ModuleDataType?`): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="other" />
 
 注册模块
 
@@ -146,9 +150,9 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ServerModule` | [`Class`](../interfaces/Type.Class.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
-| `ClientModule` | [`Class`](../interfaces/Type.Class.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
-| `ModuleDataClass?` | [`Class`](../interfaces/Type.Class.md)<[`SubdataBase`](Extension.SubdataBase.md)<`any`\>\> |  模块的数据类型 default: null |
+| `ServerModuleType` | [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\> |  模块的服务端类型 |
+| `ClientModuleType` | [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\> |  模块的客户端类型 |
+| `ModuleDataType?` | [`TypeName`](../interfaces/Type.TypeName.md)<[`Subdata`](Extension.Subdata.md)\> |  模块的数据类型 default: null |
 
 #### Returns
 
@@ -169,7 +173,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ModuleClass` | [`Class`](../interfaces/Type.Class.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\> |  模块类 |
+| `ModuleClass` | [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\> |  模块类 |
 
 #### Returns
 

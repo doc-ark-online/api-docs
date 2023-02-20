@@ -2,7 +2,12 @@
 
 # FireDataInfoForMultiple <Badge type="tip" text="Class" /> <Score text="FireDataInfoForMultiple" />
 
-获取开火时生成投掷物的着弹点位置、飞行距离、打击面圆的前/上/右单位向量、打击面圆的最大半径
+热武器逻辑组件专用的临时类，
+ 用于在热武器多发开火模式下，获取开火时生成投掷物的着弹点位置、飞行距离、打击面圆的前/上/右单位向量、打击面圆的最大半径等预测结果
+
+**`Groups`**
+
+GAMEPLAY
 
 ## Table of contents
 

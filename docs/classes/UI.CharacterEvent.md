@@ -2,6 +2,10 @@
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
+**`Groups`**
+
+GUI
+
 角色输入事件
 
 ## Table of contents

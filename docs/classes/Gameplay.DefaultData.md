@@ -2,6 +2,10 @@
 
 # DefaultData <Badge type="tip" text="Class" /> <Score text="DefaultData" />
 
+**`Groups`**
+
+AVATAR
+
 角色数据类型
 
 ## Table of contents

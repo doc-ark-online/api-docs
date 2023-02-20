@@ -4,6 +4,10 @@
 
 开发给用户用的Http请求类型枚举
 
+**`Groups`**
+
+GAMEPLAY
+
 ## Table of contents
 
 | Enumeration Members |

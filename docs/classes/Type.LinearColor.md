@@ -2,6 +2,10 @@
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
+**`Groups`**
+
+DATA
+
 线性RGBA颜色
 
 ## Table of contents

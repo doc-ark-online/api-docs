@@ -2,6 +2,10 @@
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
+**`Groups`**
+
+GUI
+
 UI进度条
 
 ## Hierarchy
@@ -19,6 +23,7 @@ UI进度条
 | **[backgroundImageGuid](UI.ProgressBar.md#backgroundimageguid)**(): `string` <br> 获取背景图片id|
 | **[backgroundImageMargin](UI.ProgressBar.md#backgroundimagemargin)**(): [`Margin`](UI.Margin.md) <br> 获取进度条背景图片边距|
 | **[backgroundImageSize](UI.ProgressBar.md#backgroundimagesize)**(): [`Vector2`](Type.Vector2.md) <br> 获取背景图片大小|
+| **[barThickness](UI.ProgressBar.md#barthickness)**(): `number` <br> 获取进度条厚度|
 | **[currentValue](UI.ProgressBar.md#currentvalue)**(): `number` <br> 获取当前值|
 | **[fillImageColor](UI.ProgressBar.md#fillimagecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取填充图片颜色|
 | **[fillImageDrawType](UI.ProgressBar.md#fillimagedrawtype)**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <br> 获取填充图片绘制类型|
@@ -29,6 +34,7 @@ UI进度条
 | **[isRoundedToInt](UI.ProgressBar.md#isroundedtoint)**(): `boolean` <br> 获取当前数值是否取整|
 | **[onSliderValueChanged](UI.ProgressBar.md#onslidervaluechanged)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider值变化事件|
 | **[percent](UI.ProgressBar.md#percent)**(): `number` <br> 获取当前百分比|
+| **[slideMethod](UI.ProgressBar.md#slidemethod)**(): [`SlideMethod`](../enums/UI.SlideMethod.md) <br> 获取进度条的滑动方式|
 | **[sliderButtonPressDelegate](UI.ProgressBar.md#sliderbuttonpressdelegate)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider按下事件|
 | **[sliderButtonReleaseDelegate](UI.ProgressBar.md#sliderbuttonreleasedelegate)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider抬起事件|
 | **[sliderMaxValue](UI.ProgressBar.md#slidermaxvalue)**(): `number` <br> 获取拖动条最大值|
@@ -60,7 +66,7 @@ UI进度条
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -80,6 +86,7 @@ UI进度条
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
 | **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
 
 
@@ -218,6 +225,33 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | 图片大小 |
+
+
+___
+
+### barThickness <Score text="barThickness" /> 
+
+• `get` **barThickness**(): `number` <Badge type="tip" text="other" />
+
+获取进度条厚度
+
+
+#### Returns
+
+`number`
+
+厚度
+
+• `set` **barThickness**(`inputBarThickness`): `void` <Badge type="tip" text="other" />
+
+设置进度条厚度
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inputBarThickness` | `number` | 厚度 |
 
 
 
@@ -484,6 +518,31 @@ Slider值变化事件
 
 void
 
+
+### slideMethod <Score text="slideMethod" /> 
+
+• `get` **slideMethod**(): [`SlideMethod`](../enums/UI.SlideMethod.md) <Badge type="tip" text="other" />
+
+获取进度条的滑动方式
+
+
+#### Returns
+
+[`SlideMethod`](../enums/UI.SlideMethod.md)
+
+• `set` **slideMethod**(`inSlideMethod`): `void` <Badge type="tip" text="other" />
+
+设置进度条的滑动方式
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `inSlideMethod` | [`SlideMethod`](../enums/UI.SlideMethod.md) |
+
+
+___
 
 ### sliderButtonPressDelegate <Score text="sliderButtonPressDelegate" /> 
 

@@ -2,7 +2,22 @@
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
-热武器瞄准组件
+热武器瞄准组件，瞄准状态下持枪角色的视角会拉近
+
+**`Groups`**
+
+GAMEPLAY
+
+使用示例: 如下示例展示热武器瞄准组件组件使用的基本流程
+```ts
+// 已有名为 hotWeapon 的热武器功能对象的示例
+hotWeapon.aimEnable = true;
+hotWeapon.aimComponent.onAimStartServer.add(() => {
+    // 服务端开始瞄准时触发的回调
+});
+// 修改参数
+hotWeapon.aimComponent.aimingZoom = 3;
+```ts
 
 ## Table of contents
 
@@ -77,6 +92,7 @@ Get瞄准时的第一/第三人称模式
 
 Set瞄准时的第一/第三人称模式
 
+调用端自动广播
 
 #### Parameters
 
@@ -106,7 +122,7 @@ Get第一人称瞄准时的瞄准镜放大倍数
 
 当前第一人称瞄准时的瞄准镜放大倍数
 
-• `set` **aimingZoom**(`newAimingZoom`): `void` <Badge type="tip" text="other" />
+• `set` **aimingZoom**(`newAimingZoom`): `void`
 
 Set模拟瞄准时的瞄准镜放大倍数
 
@@ -116,6 +132,9 @@ Set模拟瞄准时的瞄准镜放大倍数
 
 :::
 
+**`Effect`**
+
+调用端自动广播
 
 #### Parameters
 
@@ -149,6 +168,7 @@ Set第三人称瞄准时的连接相机弹簧组件的长度
 
 :::
 
+调用端自动广播
 
 #### Parameters
 
@@ -182,6 +202,7 @@ Set第三人称常态下相机弹簧组件的默认长度
 
 :::
 
+调用端自动广播
 
 #### Parameters
 
@@ -209,6 +230,7 @@ Get模拟瞄准镜UI种类
 
 Set模拟瞄准镜UI种类
 
+调用端自动广播
 
 #### Parameters
 
@@ -239,6 +261,7 @@ ___
 - 切换准星UI
 - 修改子弹发射精度-上升到用户层，开发者自己在瞄准时设置默认精准度
 
+调用端自动广播
 
 #### Parameters
 

@@ -27,6 +27,10 @@ DataStorage
 
 异步获取自定义数据
 
+**`Groups`**
+
+DATA
+
 
 #### Parameters
 
@@ -47,6 +51,10 @@ ___
 • **asyncGetPlayerData**(`player`): `Promise`<`unknown`\> <Badge type="tip" text="other" />
 
 异步获取玩家数据
+
+**`Groups`**
+
+DATA
 
 
 #### Parameters
@@ -69,6 +77,10 @@ ___
 
 异步删除自定义数据
 
+**`Groups`**
+
+DATA
+
 
 #### Parameters
 
@@ -89,6 +101,10 @@ ___
 • **asyncRemovePlayerData**(`player`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步删除用户数据
+
+**`Groups`**
+
+DATA
 
 
 #### Parameters
@@ -111,6 +127,10 @@ ___
 
 异步设置自定义数据
 
+**`Groups`**
+
+DATA
+
 
 #### Parameters
 
@@ -132,6 +152,10 @@ ___
 • **asyncSetPlayerData**(`player`, `data`): `Promise`<[`DataStorageResultCode`](../enums/DataStorage.DataStorageResultCode.md)\> <Badge type="tip" text="other" />
 
 异步设置自定义数据
+
+**`Groups`**
+
+DATA
 
 
 ::: warning Precautions
@@ -161,6 +185,10 @@ ___
 
 设置数据存储环境是否是临时的
 
+**`Groups`**
+
+DATA
+
 
 #### Parameters
 
@@ -176,6 +204,10 @@ ___
 • **sizeOfData**(`data`): `number` <Badge type="tip" text="other" />
 
 返回data的当前大小。单位为bytes（字节）。
+
+**`Groups`**
+
+DATA
 
 
 #### Parameters

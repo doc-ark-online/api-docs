@@ -4,6 +4,10 @@
 
 图片画刷绘制模式
 
+**`Groups`**
+
+GUI
+
 ## Table of contents
 
 | Enumeration Members |
