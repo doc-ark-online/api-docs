@@ -90,7 +90,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '020 版本',
-        items: [{ text: '021 BETA', link: 'https://api-docs-021.ark.online/' }]
+        items: [{ text: '021 版本', link: 'https://api-docs.ark.online/' }]
       }
       // {
       //   text: '语言',
