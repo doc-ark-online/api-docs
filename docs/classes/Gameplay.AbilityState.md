@@ -139,7 +139,7 @@ true或false
 
 ### addControlAbility <Score text="addControlAbility" /> 
 
-▸ **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
+• **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
 添加释放状态的控制性
 
@@ -155,7 +155,7 @@ ___
 
 ### cancelControlAbility <Score text="cancelControlAbility" /> 
 
-▸ **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
+• **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
 
 取消释放状态的控制性
 
@@ -171,7 +171,7 @@ ___
 
 ### enableJump <Score text="enableJump" /> 
 
-▸ **enableJump**(): `boolean` <Badge type="tip" text="other" />
+• **enableJump**(): `boolean` <Badge type="tip" text="other" />
 
 获取对象是否可跳跃
 
@@ -186,7 +186,7 @@ ___
 
 ### enableMove <Score text="enableMove" /> 
 
-▸ **enableMove**(): `boolean` <Badge type="tip" text="other" />
+• **enableMove**(): `boolean` <Badge type="tip" text="other" />
 
 获取对象是否可移动
 
@@ -201,7 +201,7 @@ ___
 
 ### enableTurn <Score text="enableTurn" /> 
 
-▸ **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
+• **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
 
 获取对象是否可转向
 

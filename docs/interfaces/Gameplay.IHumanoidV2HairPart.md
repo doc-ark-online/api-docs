@@ -12,8 +12,7 @@
 
 ## Implemented by
 
-- [`HumanoidV2BehindHairPart`](../classes/Gameplay.HumanoidV2BehindHairPart.md)
-- [`HumanoidV2FrontHairPart`](../classes/Gameplay.HumanoidV2FrontHairPart.md)
+- [`HumanoidV2HairPart`](../classes/Gameplay.HumanoidV2HairPart.md)
 
 ## Table of contents
 
@@ -43,11 +42,10 @@
 
 ### getColor <Score text="getColor" /> 
 
-▸ **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取头发颜色
 
-客户端生效
 
 #### Returns
 
@@ -59,11 +57,10 @@ ___
 
 ### getGradientColor <Score text="getGradientColor" /> 
 
-▸ **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取头发渐变染色
 
-客户端生效
 
 #### Returns
 
@@ -75,11 +72,10 @@ ___
 
 ### getGradientIntensity <Score text="getGradientIntensity" /> 
 
-▸ **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
+• **getGradientIntensity**(): `number` <Badge type="tip" text="other" />
 
 获取头发渐变区域
 
-客户端生效
 
 #### Returns
 
@@ -91,11 +87,10 @@ ___
 
 ### getHighlightColor <Score text="getHighlightColor" /> 
 
-▸ **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取头发高光颜色
 
-客户端生效
 
 #### Returns
 
@@ -107,11 +102,10 @@ ___
 
 ### getHighlightMask <Score text="getHighlightMask" /> 
 
-▸ **getHighlightMask**(): `string` <Badge type="tip" text="other" />
+• **getHighlightMask**(): `string` <Badge type="tip" text="other" />
 
 获取头发高光形状
 
-客户端生效
 
 #### Returns
 
@@ -122,93 +116,107 @@ GUID
 
 ### setColor <Score text="setColor" /> 
 
-▸ **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头发颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setGradientColor <Score text="setGradientColor" /> 
 
-▸ **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGradientColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头发渐变染色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setGradientIntensity <Score text="setGradientIntensity" /> 
 
-▸ **setGradientIntensity**(`intensity`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGradientIntensity**(`intensity`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头发渐变区域
 
-sync = false:客户端;
-sync = true:双端
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `intensity` | `number` | 强度 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setHighlightColor <Score text="setHighlightColor" /> 
 
-▸ **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头发高光颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setHighlightMask <Score text="setHighlightMask" /> 
 
-▸ **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHighlightMask**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头发高光形状
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 

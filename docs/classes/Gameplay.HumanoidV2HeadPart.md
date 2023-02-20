@@ -17,6 +17,7 @@
 | **[getBlushTexture](Gameplay.HumanoidV2HeadPart.md#getblushtexture)**(): `string` <br> 获取腮红贴图|
 | **[getBrowColor](Gameplay.HumanoidV2HeadPart.md#getbrowcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取眉毛颜色|
 | **[getBrowTexture](Gameplay.HumanoidV2HeadPart.md#getbrowtexture)**(): `string` <br> 获取眉毛|
+| **[getExpression](Gameplay.HumanoidV2HeadPart.md#getexpression)**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <br> 获取表情|
 | **[getEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#geteyehighlightcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取眼睛高光颜色|
 | **[getEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#geteyehighlighttexture)**(): `string` <br> 获取眼睛高光形状|
 | **[getEyeShadowColor](Gameplay.HumanoidV2HeadPart.md#geteyeshadowcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取眼影颜色|
@@ -51,6 +52,7 @@
 | **[setBlushTexture](Gameplay.HumanoidV2HeadPart.md#setblushtexture)**(`string`, `boolean`): `void` <br> 设置腮红贴图|
 | **[setBrowColor](Gameplay.HumanoidV2HeadPart.md#setbrowcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眉毛颜色|
 | **[setBrowTexture](Gameplay.HumanoidV2HeadPart.md#setbrowtexture)**(`string`, `boolean`): `void` <br> 设置眉毛|
+| **[setExpression](Gameplay.HumanoidV2HeadPart.md#setexpression)**([`ExpressionType`](../enums/Gameplay.ExpressionType.md)): `void` <br> 设置表情|
 | **[setEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#seteyehighlightcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛高光颜色|
 | **[setEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#seteyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置眼睛高光形状|
 | **[setEyeShadowColor](Gameplay.HumanoidV2HeadPart.md#seteyeshadowcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眼影颜色|
@@ -86,11 +88,10 @@
 
 ### characterFaceShadow <Score text="characterFaceShadow" /> 
 
-▸ **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
+• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
 
 设置模型
 
-客户端
 
 #### Parameters
 
@@ -108,11 +109,10 @@ ___
 
 ### getBlushColor <Score text="getBlushColor" /> 
 
-▸ **getBlushColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBlushColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取腮红颜色
 
-客户端
 
 #### Returns
 
@@ -128,11 +128,10 @@ ___
 
 ### getBlushTexture <Score text="getBlushTexture" /> 
 
-▸ **getBlushTexture**(): `string` <Badge type="tip" text="other" />
+• **getBlushTexture**(): `string` <Badge type="tip" text="other" />
 
 获取腮红贴图
 
-客户端
 
 #### Returns
 
@@ -148,11 +147,10 @@ ___
 
 ### getBrowColor <Score text="getBrowColor" /> 
 
-▸ **getBrowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBrowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取眉毛颜色
 
-客户端
 
 #### Returns
 
@@ -168,11 +166,10 @@ ___
 
 ### getBrowTexture <Score text="getBrowTexture" /> 
 
-▸ **getBrowTexture**(): `string` <Badge type="tip" text="other" />
+• **getBrowTexture**(): `string` <Badge type="tip" text="other" />
 
 获取眉毛
 
-客户端
 
 #### Returns
 
@@ -186,13 +183,32 @@ GUID
 
 ___
 
+### getExpression <Score text="getExpression" /> 
+
+• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <Badge type="tip" text="other" />
+
+获取表情
+
+客户端生效
+
+#### Returns
+
+[`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+表情枚举值
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.IHumanoidV2HeadPart.md).[getExpression](../interfaces/Gameplay.IHumanoidV2HeadPart.md#getexpression)
+
+___
+
 ### getEyeHighlightColor <Score text="getEyeHighlightColor" /> 
 
-▸ **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取眼睛高光颜色
 
-客户端
 
 #### Returns
 
@@ -208,12 +224,10 @@ ___
 
 ### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
 
-▸ **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 获取眼睛高光形状
 
-sync = false:客户端;
-sync = true:双端
 
 #### Returns
 
@@ -229,11 +243,10 @@ ___
 
 ### getEyeShadowColor <Score text="getEyeShadowColor" /> 
 
-▸ **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取眼影颜色
 
-客户端
 
 #### Returns
 
@@ -249,11 +262,10 @@ ___
 
 ### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
 
-▸ **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
 
 获取眼影贴图
 
-客户端
 
 #### Returns
 
@@ -269,11 +281,10 @@ ___
 
 ### getEyeTexture <Score text="getEyeTexture" /> 
 
-▸ **getEyeTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeTexture**(): `string` <Badge type="tip" text="other" />
 
 获取眼睛贴图
 
-客户端
 
 #### Returns
 
@@ -289,11 +300,10 @@ ___
 
 ### getEyelashColor <Score text="getEyelashColor" /> 
 
-▸ **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取睫毛颜色
 
-客户端
 
 #### Returns
 
@@ -309,11 +319,10 @@ ___
 
 ### getEyelashTexture <Score text="getEyelashTexture" /> 
 
-▸ **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
 
 获取睫毛
 
-客户端
 
 #### Returns
 
@@ -329,11 +338,10 @@ ___
 
 ### getFacialTattooColor <Score text="getFacialTattooColor" /> 
 
-▸ **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取面部纹身颜色
 
-客户端
 
 #### Parameters
 
@@ -355,11 +363,10 @@ ___
 
 ### getFacialTattooPositionX <Score text="getFacialTattooPositionX" /> 
 
-▸ **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
 
 获取面部纹身左右位置
 
-客户端
 
 #### Parameters
 
@@ -381,11 +388,10 @@ ___
 
 ### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
 
-▸ **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
 
 获取面部纹身上下位置
 
-客户端
 
 #### Parameters
 
@@ -407,11 +413,10 @@ ___
 
 ### getFacialTattooRotation <Score text="getFacialTattooRotation" /> 
 
-▸ **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
 
 获取面部纹身旋转
 
-客户端
 
 #### Parameters
 
@@ -433,11 +438,10 @@ ___
 
 ### getFacialTattooType <Score text="getFacialTattooType" /> 
 
-▸ **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
+• **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
 
 获取面部纹身种类贴图
 
-客户端
 
 #### Parameters
 
@@ -459,11 +463,10 @@ ___
 
 ### getFacialTattooZoom <Score text="getFacialTattooZoom" /> 
 
-▸ **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
 
 获取面部纹身缩放
 
-客户端
 
 #### Parameters
 
@@ -485,11 +488,10 @@ ___
 
 ### getHeadPatternColor <Score text="getHeadPatternColor" /> 
 
-▸ **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取头部花纹颜色
 
-客户端
 
 #### Returns
 
@@ -501,11 +503,10 @@ ___
 
 ### getHeadPatternTexture <Score text="getHeadPatternTexture" /> 
 
-▸ **getHeadPatternTexture**(): `string` <Badge type="tip" text="other" />
+• **getHeadPatternTexture**(): `string` <Badge type="tip" text="other" />
 
 获取头部花纹贴图
 
-客户端
 
 #### Returns
 
@@ -517,11 +518,10 @@ ___
 
 ### getLeftEyeColor <Score text="getLeftEyeColor" /> 
 
-▸ **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取左眼睛颜色
 
-客户端
 
 #### Returns
 
@@ -537,11 +537,10 @@ ___
 
 ### getLipstickColor <Score text="getLipstickColor" /> 
 
-▸ **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取唇膏颜色
 
-客户端
 
 #### Returns
 
@@ -557,11 +556,10 @@ ___
 
 ### getLipstickTexture <Score text="getLipstickTexture" /> 
 
-▸ **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
+• **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
 
 获取唇膏贴图
 
-客户端
 
 #### Returns
 
@@ -577,11 +575,10 @@ ___
 
 ### getLowerEyeHighlightColor <Score text="getLowerEyeHighlightColor" /> 
 
-▸ **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取上高光颜色
 
-客户端
 
 #### Returns
 
@@ -597,11 +594,10 @@ ___
 
 ### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
 
-▸ **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 获取下高光种类
 
-客户端
 
 #### Returns
 
@@ -617,11 +613,10 @@ ___
 
 ### getMesh <Score text="getMesh" /> 
 
-▸ **getMesh**(): `string` <Badge type="tip" text="other" />
+• **getMesh**(): `string` <Badge type="tip" text="other" />
 
 获取头部模型
 
-双端
 
 #### Returns
 
@@ -637,11 +632,10 @@ ___
 
 ### getPupilColor <Score text="getPupilColor" /> 
 
-▸ **getPupilColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getPupilColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取眼睛瞳孔花纹颜色
 
-客户端
 
 #### Returns
 
@@ -657,11 +651,10 @@ ___
 
 ### getPupilPositionX <Score text="getPupilPositionX" /> 
 
-▸ **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
+• **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔左右位置
 
-客户端
 
 #### Returns
 
@@ -677,11 +670,10 @@ ___
 
 ### getPupilPositionY <Score text="getPupilPositionY" /> 
 
-▸ **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
+• **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔上下位置
 
-客户端
 
 #### Returns
 
@@ -697,11 +689,10 @@ ___
 
 ### getPupilRotate <Score text="getPupilRotate" /> 
 
-▸ **getPupilRotate**(): `number` <Badge type="tip" text="other" />
+• **getPupilRotate**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔旋转
 
-客户端
 
 #### Returns
 
@@ -717,11 +708,10 @@ ___
 
 ### getPupilScale <Score text="getPupilScale" /> 
 
-▸ **getPupilScale**(): `number` <Badge type="tip" text="other" />
+• **getPupilScale**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔大小缩放
 
-客户端
 
 #### Returns
 
@@ -737,11 +727,10 @@ ___
 
 ### getPupilTexture <Score text="getPupilTexture" /> 
 
-▸ **getPupilTexture**(): `string` <Badge type="tip" text="other" />
+• **getPupilTexture**(): `string` <Badge type="tip" text="other" />
 
 获取眼睛瞳孔花纹
 
-客户端
 
 #### Returns
 
@@ -757,11 +746,10 @@ ___
 
 ### getRightEyeColor <Score text="getRightEyeColor" /> 
 
-▸ **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取右眼睛颜色
 
-客户端
 
 #### Returns
 
@@ -777,11 +765,10 @@ ___
 
 ### getUpperEyeHighlightColor <Score text="getUpperEyeHighlightColor" /> 
 
-▸ **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取上高光颜色
 
-客户端
 
 #### Returns
 
@@ -797,11 +784,10 @@ ___
 
 ### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
 
-▸ **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
 
 获取上高光种类
 
-客户端
 
 #### Returns
 
@@ -817,19 +803,23 @@ ___
 
 ### setBlushColor <Score text="setBlushColor" /> 
 
-▸ **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置腮红颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -840,19 +830,23 @@ ___
 
 ### setBlushTexture <Score text="setBlushTexture" /> 
 
-▸ **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置腮红贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -863,19 +857,23 @@ ___
 
 ### setBrowColor <Score text="setBrowColor" /> 
 
-▸ **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -886,19 +884,23 @@ ___
 
 ### setBrowTexture <Score text="setBrowTexture" /> 
 
-▸ **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -907,21 +909,46 @@ sync = true:双端
 
 ___
 
+### setExpression <Score text="setExpression" /> 
+
+• **setExpression**(`type`): `void` <Badge type="tip" text="other" />
+
+设置表情
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | [`ExpressionType`](../enums/Gameplay.ExpressionType.md) | 表情枚举值 |
+
+
+#### Implementation of
+
+[IHumanoidV2HeadPart](../interfaces/Gameplay.IHumanoidV2HeadPart.md).[setExpression](../interfaces/Gameplay.IHumanoidV2HeadPart.md#setexpression)
+
+___
+
 ### setEyeHighlightColor <Score text="setEyeHighlightColor" /> 
 
-▸ **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛高光颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -932,19 +959,23 @@ ___
 
 ### setEyeHighlightTexture <Score text="setEyeHighlightTexture" /> 
 
-▸ **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛高光形状
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUIDUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -955,19 +986,23 @@ ___
 
 ### setEyeShadowColor <Score text="setEyeShadowColor" /> 
 
-▸ **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼影颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -978,19 +1013,23 @@ ___
 
 ### setEyeShadowTexture <Score text="setEyeShadowTexture" /> 
 
-▸ **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼影贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1001,19 +1040,23 @@ ___
 
 ### setEyeTexture <Score text="setEyeTexture" /> 
 
-▸ **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1024,19 +1067,23 @@ ___
 
 ### setEyelashColor <Score text="setEyelashColor" /> 
 
-▸ **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置睫毛颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1047,19 +1094,23 @@ ___
 
 ### setEyelashTexture <Score text="setEyelashTexture" /> 
 
-▸ **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置睫毛
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1070,12 +1121,16 @@ ___
 
 ### setFacialTattooColor <Score text="setFacialTattooColor" /> 
 
-▸ **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1083,7 +1138,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1094,12 +1149,16 @@ ___
 
 ### setFacialTattooPositionX <Score text="setFacialTattooPositionX" /> 
 
-▸ **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身左右位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1107,7 +1166,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1118,12 +1177,16 @@ ___
 
 ### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
 
-▸ **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身上下位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1131,7 +1194,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1142,12 +1205,16 @@ ___
 
 ### setFacialTattooRotation <Score text="setFacialTattooRotation" /> 
 
-▸ **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身旋转
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1155,7 +1222,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1166,12 +1233,16 @@ ___
 
 ### setFacialTattooType <Score text="setFacialTattooType" /> 
 
-▸ **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身种类贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1179,7 +1250,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1190,12 +1261,16 @@ ___
 
 ### setFacialTattooZoom <Score text="setFacialTattooZoom" /> 
 
-▸ **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置面部纹身缩放
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -1203,7 +1278,7 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 纹身索引 |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1214,57 +1289,69 @@ ___
 
 ### setHeadPatternColor <Score text="setHeadPatternColor" /> 
 
-▸ **setHeadPatternColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHeadPatternColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头部花纹颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setHeadPatternTexture <Score text="setHeadPatternTexture" /> 
 
-▸ **setHeadPatternTexture**(`textureGuid`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHeadPatternTexture**(`textureGuid`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头部花纹贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `textureGuid` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setLeftEyeColor <Score text="setLeftEyeColor" /> 
 
-▸ **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置左眼睛颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1275,19 +1362,23 @@ ___
 
 ### setLipstickColor <Score text="setLipstickColor" /> 
 
-▸ **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置唇膏颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1298,19 +1389,23 @@ ___
 
 ### setLipstickTexture <Score text="setLipstickTexture" /> 
 
-▸ **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置唇膏贴图
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1321,19 +1416,23 @@ ___
 
 ### setLowerEyeHighlightColor <Score text="setLowerEyeHighlightColor" /> 
 
-▸ **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置下高光颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1344,19 +1443,23 @@ ___
 
 ### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
 
-▸ **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置下高光种类
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` |  值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1367,7 +1470,7 @@ ___
 
 ### setMesh <Score text="setMesh" /> 
 
-▸ **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置头部模型
 
@@ -1377,15 +1480,19 @@ ___
 
 :::
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1396,19 +1503,23 @@ ___
 
 ### setPupilColor <Score text="setPupilColor" /> 
 
-▸ **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛瞳孔花纹颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1419,19 +1530,23 @@ ___
 
 ### setPupilPositionX <Score text="setPupilPositionX" /> 
 
-▸ **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔左右位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1442,19 +1557,23 @@ ___
 
 ### setPupilPositionY <Score text="setPupilPositionY" /> 
 
-▸ **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔上下位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1465,19 +1584,23 @@ ___
 
 ### setPupilRotate <Score text="setPupilRotate" /> 
 
-▸ **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔旋转
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1488,19 +1611,23 @@ ___
 
 ### setPupilScale <Score text="setPupilScale" /> 
 
-▸ **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔大小缩放
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1511,19 +1638,23 @@ ___
 
 ### setPupilTexture <Score text="setPupilTexture" /> 
 
-▸ **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛瞳孔花纹
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1534,19 +1665,23 @@ ___
 
 ### setRightEyeColor <Score text="setRightEyeColor" /> 
 
-▸ **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置右眼睛颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1557,19 +1692,23 @@ ___
 
 ### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
 
-▸ **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置上高光颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `color` | [`LinearColor`](Type.LinearColor.md) | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1580,19 +1719,23 @@ ___
 
 ### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
 
-▸ **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置上高光种类
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GUID` | `string` | GUID值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of

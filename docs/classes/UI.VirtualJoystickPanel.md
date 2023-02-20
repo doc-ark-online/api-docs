@@ -640,7 +640,7 @@ ___
 
 ### resetJoyStick <Score text="resetJoyStick" /> 
 
-▸ **resetJoyStick**(): `void` <Badge type="tip" text="other" />
+• **resetJoyStick**(): `void` <Badge type="tip" text="other" />
 
 强制重置摇杆 - 例如在操控摇杆的时候隐藏其父类节点,这时候摇杆重新显示后无法成功重置
 
@@ -650,7 +650,7 @@ ___
 
 ### setVisibility <Score text="setVisibility" /> 
 
-▸ **setVisibility**(`Visibility`): `void` <Badge type="tip" text="other" />
+• **setVisibility**(`Visibility`): `void` <Badge type="tip" text="other" />
 
 设置可见性
 
@@ -666,7 +666,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
 
 创建 MWVirtualJoystickPanelDesigner 控件
 
@@ -688,7 +688,7 @@ ___
 
 ### newObjectAndAdd <Score text="newObjectAndAdd" /> 
 
-▸ `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
+• `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
 
 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
 

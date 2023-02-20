@@ -141,7 +141,7 @@ ___
 
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-▸ **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取限制类型
 
@@ -162,7 +162,7 @@ ___
 
 ### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-▸ **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
+• **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
 
 设置旋转类型
 

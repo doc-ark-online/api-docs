@@ -675,7 +675,7 @@ ___
 
 ### isPressed <Score text="isPressed" /> 
 
-▸ **isPressed**(): `boolean` <Badge type="tip" text="other" />
+• **isPressed**(): `boolean` <Badge type="tip" text="other" />
 
 是否按下
 
@@ -690,7 +690,7 @@ ___
 
 ### setButtonDisableByFile <Score text="setButtonDisableByFile" /> 
 
-▸ **setButtonDisableByFile**(`absPath`): `void` <Badge type="tip" text="other" />
+• **setButtonDisableByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 设置不可用图片
 
@@ -706,7 +706,7 @@ ___
 
 ### setButtonNormalByFile <Score text="setButtonNormalByFile" /> 
 
-▸ **setButtonNormalByFile**(`absPath`): `void` <Badge type="tip" text="other" />
+• **setButtonNormalByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 设置正常图片
 
@@ -722,7 +722,7 @@ ___
 
 ### setButtonPressedByFile <Score text="setButtonPressedByFile" /> 
 
-▸ **setButtonPressedByFile**(`absPath`): `void` <Badge type="tip" text="other" />
+• **setButtonPressedByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 设置按下图片
 
@@ -738,7 +738,7 @@ ___
 
 ### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 
-▸ **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -754,7 +754,7 @@ ___
 
 ### setDisableImageColorDecimal <Score text="setDisableImageColorDecimal" /> 
 
-▸ **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置不可用颜色指定R、G、B、A设置颜色 0 ~255
 
@@ -773,7 +773,7 @@ ___
 
 ### setNormalImageColorByHex <Score text="setNormalImageColorByHex" /> 
 
-▸ **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置正常颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -789,7 +789,7 @@ ___
 
 ### setNormalImageColorDecimal <Score text="setNormalImageColorDecimal" /> 
 
-▸ **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置正常颜色 指定R、G、B、A设置颜色 0 ~255
 
@@ -808,7 +808,7 @@ ___
 
 ### setPressedImageColorByHex <Score text="setPressedImageColorByHex" /> 
 
-▸ **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置按下颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -824,7 +824,7 @@ ___
 
 ### setPressedImageColorDecimal <Score text="setPressedImageColorDecimal" /> 
 
-▸ **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置按下颜色指定R、G、B、A设置颜色 0 ~255
 
@@ -843,7 +843,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`Button`](UI.Button.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`Button`](UI.Button.md) <Badge type="tip" text="other" />
 
 创建Button控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

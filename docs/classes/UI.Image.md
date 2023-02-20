@@ -56,6 +56,7 @@ UI 图片
 | **[getImageAssetIconData](UI.Image.md#getimageasseticondata)**(): [`AssetIconData`](UI.AssetIconData.md) <br> 获取显示资源的ICON|
 | **[setImageByAssetIconData](UI.Image.md#setimagebyasseticondata)**([`AssetIconData`](UI.AssetIconData.md)): `void` <br> 设置显示资源的ICON|
 | **[setImageByBlendMode](UI.Image.md#setimagebyblendmode)**(`string`, `string`): `void` <br> 将两张图片融合叠加显示在图片组件上|
+| **[setImageByBlendModeWithGUID](UI.Image.md#setimagebyblendmodewithguid)**(`string`, `string`): `void` <br> 将两张图片融合叠加显示在图片组件上|
 | **[setImageByFile](UI.Image.md#setimagebyfile)**(`string`): `void` <br> 设置图片样式为本地图片文件|
 | **[setImageByURL](UI.Image.md#setimagebyurl)**(`string`): `void` <br> 设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接|
 | **[setImageColorByHex](UI.Image.md#setimagecolorbyhex)**(`string`): `void` <br> 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505|
@@ -213,7 +214,7 @@ ___
 
 ### asyncExportBlendBrush <Score text="asyncExportBlendBrush" /> 
 
-▸ **asyncExportBlendBrush**(): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **asyncExportBlendBrush**(): `Promise`<`string`\> <Badge type="tip" text="other" />
 
 将融合的图片导出为一张
 
@@ -233,7 +234,7 @@ ___
 
 ### getImageAssetIconData <Score text="getImageAssetIconData" /> 
 
-▸ **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md) <Badge type="tip" text="other" />
+• **getImageAssetIconData**(): [`AssetIconData`](UI.AssetIconData.md) <Badge type="tip" text="other" />
 
 获取显示资源的ICON
 
@@ -247,7 +248,7 @@ ___
 
 ### setImageByAssetIconData <Score text="setImageByAssetIconData" /> 
 
-▸ **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="other" />
+• **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="other" />
 
 设置显示资源的ICON
 
@@ -263,7 +264,7 @@ ___
 
 ### setImageByBlendMode <Score text="setImageByBlendMode" /> 
 
-▸ **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void` <Badge type="tip" text="other" />
+• **setImageByBlendMode**(`backgroundPic`, `foregroundPic`): `void` <Badge type="tip" text="other" />
 
 将两张图片融合叠加显示在图片组件上
 
@@ -278,9 +279,26 @@ ___
 
 ___
 
+### setImageByBlendModeWithGUID <Score text="setImageByBlendModeWithGUID" /> 
+
+• **setImageByBlendModeWithGUID**(`GUID`, `foregroundPic`): `void` <Badge type="tip" text="other" />
+
+将两张图片融合叠加显示在图片组件上
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 背景图片GUID |
+| `foregroundPic` | `string` | 前景图片绝对路径 |
+
+
+___
+
 ### setImageByFile <Score text="setImageByFile" /> 
 
-▸ **setImageByFile**(`absPath`): `void` <Badge type="tip" text="other" />
+• **setImageByFile**(`absPath`): `void` <Badge type="tip" text="other" />
 
 设置图片样式为本地图片文件
 
@@ -296,7 +314,7 @@ ___
 
 ### setImageByURL <Score text="setImageByURL" /> 
 
-▸ **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
+• **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
 
 设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接
 
@@ -313,7 +331,7 @@ ___
 
 ### setImageColorByHex <Score text="setImageColorByHex" /> 
 
-▸ **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -329,7 +347,7 @@ ___
 
 ### setImageColorDecimal <Score text="setImageColorDecimal" /> 
 
-▸ **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置图片颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -348,7 +366,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`Image`](UI.Image.md) <Badge type="tip" text="other" />
 
 创建 Image 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

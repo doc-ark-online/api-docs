@@ -9,6 +9,7 @@
 | Enumeration Members |
 | :-----|
 | **[All](Type.AssetType.md#all)** = ``0`` <br> All|
+| **[Character](Type.AssetType.md#character)** = ``7`` <br> Character|
 | **[Cloth](Type.AssetType.md#cloth)** = ``3`` <br> Cloth|
 | **[Prefab](Type.AssetType.md#prefab)** = ``6`` <br> Prefab|
 | **[SkeletalMesh](Type.AssetType.md#skeletalmesh)** = ``2`` <br> SkeletalMesh|
@@ -23,6 +24,14 @@
 • **All** = ``0``
 
 All
+
+___
+
+### Character <Score text="Character" /> 
+
+• **Character** = ``7``
+
+Character
 
 ___
 

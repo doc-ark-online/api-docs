@@ -29,6 +29,8 @@ UI进度条
 | **[isRoundedToInt](UI.ProgressBar.md#isroundedtoint)**(): `boolean` <br> 获取当前数值是否取整|
 | **[onSliderValueChanged](UI.ProgressBar.md#onslidervaluechanged)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider值变化事件|
 | **[percent](UI.ProgressBar.md#percent)**(): `number` <br> 获取当前百分比|
+| **[sliderButtonPressDelegate](UI.ProgressBar.md#sliderbuttonpressdelegate)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider按下事件|
+| **[sliderButtonReleaseDelegate](UI.ProgressBar.md#sliderbuttonreleasedelegate)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <br> Slider抬起事件|
 | **[sliderMaxValue](UI.ProgressBar.md#slidermaxvalue)**(): `number` <br> 获取拖动条最大值|
 | **[sliderMinValue](UI.ProgressBar.md#sliderminvalue)**(): `number` <br> 获取拖动条最小值|
 | **[thumbImageColor](UI.ProgressBar.md#thumbimagecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取滑块图片颜色|
@@ -483,6 +485,36 @@ Slider值变化事件
 void
 
 
+### sliderButtonPressDelegate <Score text="sliderButtonPressDelegate" /> 
+
+• `get` **sliderButtonPressDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="other" />
+
+Slider按下事件
+
+
+#### Returns
+
+[`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\>
+
+按下事件
+
+___
+
+### sliderButtonReleaseDelegate <Score text="sliderButtonReleaseDelegate" /> 
+
+• `get` **sliderButtonReleaseDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\> <Badge type="tip" text="other" />
+
+Slider抬起事件
+
+
+#### Returns
+
+[`MulticastDelegate`](Type.MulticastDelegate.md)<(`CurrentValue`: `number`) => `void`\>
+
+抬起事件
+
+___
+
 ### sliderMaxValue <Score text="sliderMaxValue" /> 
 
 • `get` **sliderMaxValue**(): `number` <Badge type="tip" text="other" />
@@ -680,7 +712,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`ProgressBar`](UI.ProgressBar.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`ProgressBar`](UI.ProgressBar.md) <Badge type="tip" text="other" />
 
 创建 ProgressBar 控件，当parent和inName与已有的对象相同时，旧的对象会被销毁
 

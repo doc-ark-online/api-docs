@@ -55,7 +55,7 @@ ___
 
 ### deserialize <Score text="deserialize" /> 
 
-▸ **deserialize**(`data`): `void` <Badge type="tip" text="other" />
+• **deserialize**(`data`): `void` <Badge type="tip" text="other" />
 
 反序列化
 
@@ -72,7 +72,7 @@ ___
 
 ### equal <Score text="equal" /> 
 
-▸ **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
+• **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
 
 比较是否是一个插槽数据
 
@@ -94,7 +94,7 @@ ___
 
 ### serialize <Score text="serialize" /> 
 
-▸ **serialize**(): `string` <Badge type="tip" text="other" />
+• **serialize**(): `string` <Badge type="tip" text="other" />
 
 获取序列化String
 

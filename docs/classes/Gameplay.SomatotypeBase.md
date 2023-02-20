@@ -8,6 +8,8 @@
 
 - **`SomatotypeBase`**
 
+  ↳ [`FourFootStandard`](Gameplay.FourFootStandard.md)
+
   ↳ [`HumanoidV1`](Gameplay.HumanoidV1.md)
 
   ↳ [`HumanoidV2`](Gameplay.HumanoidV2.md)
@@ -53,7 +55,7 @@ ___
 
 ### enablePostProcess <Score text="enablePostProcess" /> 
 
-▸ **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
+• **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
 
 后处理开关
 
@@ -72,7 +74,7 @@ ___
 
 ### setOutline <Score text="setOutline" /> 
 
-▸ **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
+• **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
 
 描边开关
 
@@ -94,7 +96,7 @@ ___
 
 ### setOutlineAdvance <Score text="setOutlineAdvance" /> 
 
-▸ **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
+• **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
 
 后处理描边开关
 

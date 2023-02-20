@@ -10,6 +10,11 @@
 | :-----|
 | **[assetID](UI.AssetIconData.md#assetid)**(): `string` <br> 获取资源ID|
 
+默认构造
+
+**`Effect`**
+
+
 ## Accessors
 
 ### assetID <Score text="assetID" /> 

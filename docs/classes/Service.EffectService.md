@@ -4,7 +4,7 @@
 
 **`Instance`**
 
-特效管理器
+特效服务
 
 ## Table of contents
 
@@ -16,7 +16,7 @@
 | **[playEffectOnGameObject](Service.EffectService.md#playeffectongameobject)**(`string`, `GameObject`, `number`, [`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md), [`Vector`](Type.Vector.md)): `number` <br> 在一个GameObject上播放特效|
 | **[playEffectOnPlayer](Service.EffectService.md#playeffectonplayer)**(`string`, [`Player`](Gameplay.Player.md) \, [`SlotType`](../enums/Gameplay.SlotType.md), `number`, [`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md), [`Vector`](Type.Vector.md)): `number` <br> 在一个角色的挂点上播放特效|
 | **[stopAllEffect](Service.EffectService.md#stopalleffect)**(): `void` <br> 停止所有特效|
-| **[stopEffect](Service.EffectService.md#stopeffect)**(`number`): `void` <br> 停止一个特效的播放|
+| **[stopEffect](Service.EffectService.md#stopeffect)**(`number`): `void` <br> 停止一个正在播放的特效|
 | **[stopEffectFromHost](Service.EffectService.md#stopeffectfromhost)**(`string`, `GameObject` \): `void` <br> 停止目标对象上所有资源Id的特效|
 | **[getInstance](Service.EffectService.md#getinstance)**(): [`EffectService`](Service.EffectService.md) <br> 获取特效管理器全局实例|
 
@@ -24,7 +24,7 @@
 
 ### clearAll <Score text="clearAll" /> 
 
-▸ **clearAll**(): `void` <Badge type="tip" text="other" />
+• **clearAll**(): `void` <Badge type="tip" text="other" />
 
 停止所有特效，并释放所有特效资源
 
@@ -34,11 +34,10 @@ ___
 
 ### getEffectGameObject <Score text="getEffectGameObject" /> 
 
-▸ **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
+• **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
 
 根据播放id获取一个特效对象
 
-客户端生效
 
 #### Parameters
 
@@ -56,7 +55,7 @@ ___
 
 ### playEffectAtLocation <Score text="playEffectAtLocation" /> 
 
-▸ **playEffectAtLocation**(`resId`, `location`, `loop?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
+• **playEffectAtLocation**(`source`, `location`, `loop?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 在指定位置播放特效
 
@@ -66,7 +65,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `resId` | `string` |  特效资源Id |
+| `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | `location` | [`Vector`](Type.Vector.md) |  世界坐标 |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `rotation?` | [`Rotation`](Type.Rotation.md) |  旋转 default: Type.Rotation.zero |
@@ -82,7 +81,7 @@ ___
 
 ### playEffectOnGameObject <Score text="playEffectOnGameObject" /> 
 
-▸ **playEffectOnGameObject**(`resId`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
+• **playEffectOnGameObject**(`source`, `target`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 在一个GameObject上播放特效
 
@@ -92,7 +91,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `resId` | `string` |  特效资源Id |
+| `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | `target` | `GameObject` |  目标GameObject \| 目标GameObject的GUID |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `offset?` | [`Vector`](Type.Vector.md) |  坐标偏移 default: Type.Vector.zero |
@@ -109,7 +108,7 @@ ___
 
 ### playEffectOnPlayer <Score text="playEffectOnPlayer" /> 
 
-▸ **playEffectOnPlayer**(`resId`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
+• **playEffectOnPlayer**(`source`, `target`, `slotType`, `loop?`, `offset?`, `rotation?`, `scale?`): `number` <Badge type="tip" text="other" />
 
 在一个角色的挂点上播放特效
 
@@ -119,7 +118,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `resId` | `string` |  特效资源Id |
+| `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | `target` | [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  玩家\|npc |
 | `slotType` | [`SlotType`](../enums/Gameplay.SlotType.md) |  挂点类型 |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
@@ -137,7 +136,7 @@ ___
 
 ### stopAllEffect <Score text="stopAllEffect" /> 
 
-▸ **stopAllEffect**(): `void` <Badge type="tip" text="other" />
+• **stopAllEffect**(): `void` <Badge type="tip" text="other" />
 
 停止所有特效
 
@@ -148,9 +147,9 @@ ___
 
 ### stopEffect <Score text="stopEffect" /> 
 
-▸ **stopEffect**(`playId`): `void` <Badge type="tip" text="other" />
+• **stopEffect**(`playId`): `void` <Badge type="tip" text="other" />
 
-停止一个特效的播放
+停止一个正在播放的特效
 
 调用端生效|服务端调用自动广播
 
@@ -165,7 +164,7 @@ ___
 
 ### stopEffectFromHost <Score text="stopEffectFromHost" /> 
 
-▸ **stopEffectFromHost**(`resId`, `target?`): `void` <Badge type="tip" text="other" />
+• **stopEffectFromHost**(`source`, `target?`): `void` <Badge type="tip" text="other" />
 
 停止目标对象上所有资源Id的特效
 
@@ -175,15 +174,15 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `resId` | `string` |  特效资源Id |
-| `target?` | `GameObject` \| [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  目标对象(Player或者GameObject) default: undefined |
+| `source` | `string` |  特效源，playEffect的第一个参数 |
+| `target?` | `GameObject` \| [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  目标对象(Player或者Humanoid或者GameObject) default: undefined |
 
 
 ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
 
 获取特效管理器全局实例
 

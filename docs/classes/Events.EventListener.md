@@ -30,7 +30,7 @@
 
 ### disconnect <Score text="disconnect" /> 
 
-▸ **disconnect**(): `void` <Badge type="tip" text="other" />
+• **disconnect**(): `void` <Badge type="tip" text="other" />
 
 卸载事件
 

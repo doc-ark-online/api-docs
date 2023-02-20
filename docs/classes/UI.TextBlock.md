@@ -14,6 +14,7 @@ UI文本
 
 | Accessors |
 | :-----|
+| **[autoAdjust](UI.TextBlock.md#autoadjust)**(): `boolean` <br> 获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)|
 | **[contentColor](UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置字体内容颜色|
 | **[fontColor](UI.TextBlock.md#fontcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取字体颜色|
 | **[fontLetterSpace](UI.TextBlock.md#fontletterspace)**(`number`): `void` <br> 设置字体间距|
@@ -87,6 +88,32 @@ UI文本
 
 
 ## Accessors
+
+### autoAdjust <Score text="autoAdjust" /> 
+
+• `get` **autoAdjust**(): `boolean` <Badge type="tip" text="other" />
+
+获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)
+
+
+#### Returns
+
+`boolean`
+
+字体是否自适应调整大小
+
+• `set` **autoAdjust**(`isAdjust`): `void` <Badge type="tip" text="other" />
+
+设置字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isAdjust` | `boolean` | 字体是否自适应调整大小 |
+
+
 
 ### contentColor <Score text="contentColor" /> 
 
@@ -608,7 +635,7 @@ ___
 
 ### setFontColorByHex <Score text="setFontColorByHex" /> 
 
-▸ **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -624,7 +651,7 @@ ___
 
 ### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
-▸ **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置字体颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -643,7 +670,7 @@ ___
 
 ### setOutlineColorByHex <Score text="setOutlineColorByHex" /> 
 
-▸ **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置当前的描边颜色，指定描边颜色设定颜色 #05050505
 
@@ -659,7 +686,7 @@ ___
 
 ### setOutlineColorDecimal <Score text="setOutlineColorDecimal" /> 
 
-▸ **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -678,7 +705,7 @@ ___
 
 ### setShadowColorByHex <Score text="setShadowColorByHex" /> 
 
-▸ **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
 
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505
 
@@ -694,7 +721,7 @@ ___
 
 ### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
-▸ **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
 
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255
 
@@ -713,7 +740,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="other" />
 
 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

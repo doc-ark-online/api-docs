@@ -17,6 +17,11 @@
 | **[layoutSpace](UI.UILayout.md#layoutspace)**: `number` <br> 排列间隔|
 | **[padding](UI.UILayout.md#padding)**: [`Margin`](UI.Margin.md) <br> 四边边距|
 
+构造函数，传入每一个值
+
+**`Effect`**
+
+
 #### Parameters
 
 | Name | Type | Description |
@@ -30,6 +35,11 @@
 | `InAutoWrap` | `boolean` | 是否网格模式 |
 
 • **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
+
+构造函数，传入每一个值
+
+**`Effect`**
+
 
 #### Parameters
 

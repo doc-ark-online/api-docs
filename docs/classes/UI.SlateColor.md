@@ -11,6 +11,10 @@ UI颜色管理
 | **[colorUseRule](UI.SlateColor.md#coloruserule)**: [`SlateColorStylingMode`](../enums/UI.SlateColorStylingMode.md) <br> 颜色规则|
 | **[specifiedColor](UI.SlateColor.md#specifiedcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 颜色|
 
+指定颜色进行构造
+
+**`Effect`**
+
 
 #### Parameters
 

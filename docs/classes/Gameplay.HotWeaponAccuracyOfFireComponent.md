@@ -226,7 +226,7 @@ Set子弹随机发散范围的最小半径
 
 ### bindOpenAccuracyOfFireComponentDelegates <Score text="bindOpenAccuracyOfFireComponentDelegates" /> 
 
-▸ **bindOpenAccuracyOfFireComponentDelegates**(): `void` <Badge type="tip" text="other" />
+• **bindOpenAccuracyOfFireComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
 客户端 绑定射击精度组件代理
 
@@ -236,7 +236,7 @@ ___
 
 ### getCurrentDispersionHalfAngle <Score text="getCurrentDispersionHalfAngle" /> 
 
-▸ **getCurrentDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
+• **getCurrentDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
 Get当前子弹随机发散范围半径实际值
 
@@ -251,7 +251,7 @@ ___
 
 ### getRandomShootDir <Score text="getRandomShootDir" /> 
 
-▸ **getRandomShootDir**(`ShootDirNoDispersion`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getRandomShootDir**(`ShootDirNoDispersion`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）
 
@@ -279,7 +279,7 @@ ___
 
 ### getTargetDispersionHalfAngle <Score text="getTargetDispersionHalfAngle" /> 
 
-▸ **getTargetDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
+• **getTargetDispersionHalfAngle**(): `number` <Badge type="tip" text="other" />
 
 Get目标子弹随机发散范围半径实际值
 

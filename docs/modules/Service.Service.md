@@ -1,4 +1,8 @@
-# Service <Badge type="tip" text="Namespace" />
+Service
+
+# Service <Badge type="tip" text="Namespace" /> <Score text="Service" />
+
+Account Service
 
 ## Table of contents
 
@@ -14,7 +18,7 @@
 | [AdsService](../classes/Service.AdsService.md) <br> 广告服务，支持激励/插屏类型|
 | [AnalyticsService](../classes/Service.AnalyticsService.md) <br> 分析服务|
 | [DebugService](../classes/Service.DebugService.md) <br> debug调试服务|
-| [EffectService](../classes/Service.EffectService.md) <br> 特效管理器|
+| [EffectService](../classes/Service.EffectService.md) <br> 特效服务|
 | [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、MW引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码|
 | [PurchaseService](../classes/Service.PurchaseService.md) <br> 应用内购服务|
 | [RoomService](../classes/Service.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API|
@@ -24,19 +28,19 @@
 
 | Type Aliases |
 | :-----|
-| **[BoolResponse](Service.Service.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调 |
-| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
-| **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用 |
-| **[MGSResponse](Service.Service.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
-| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
-| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中MW窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中MW窗口刷新的消息格式|
-| **[StringResponse](Service.Service.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[BoolResponse](Service.Service.md#boolresponse)**: (`boolean` |: `boolean`) => `void` <br> • (`success`): `void`|
+| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> • (): `void`|
+| **[MGSEvent](Service.Service.md#mgsevent)**: (`string` |: `string`) => `void` <br> • (`jsonData`): `void`|
+| **[MGSResponse](Service.Service.md#mgsresponse)**: (`boolean` |: `boolean`, `string` |: `string`) => `void` <br> • (`isSuccess`, `jsonData`): `void`|
+| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`number`: `number`) => `void` <br> • (`amount`): `void`|
+| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`number`: `number`, `string`: `string`, `string`: `string`, `number`: `number`, (`bReceived`: `boolean`) => `void`: (`bReceived`: `boolean`) => `void`) => `void` <br> • (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`|
+| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`number`: `number`) => `void` <br> • (`newState`): `void`|
+| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> • (): `void`|
+| **[StringResponse](Service.Service.md#stringresponse)**: (`string` |: `string`) => `void` <br> • (`dataString`): `void`|
 | **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`success`: `boolean`) => `void`<br> 下载角色形象的回调消息格式|
-| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
-| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void`<br> 下载平台数据回调|
+| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> • (`success`): `void`|
+| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> • (): `void`|
+| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string` |: `string`) => `void` <br> • (`dataString`): `void`|
 
 ## Type Aliases
 
@@ -44,33 +48,92 @@
 
 Ƭ **BoolResponse**: (`success`: `boolean`) => `void`
 
+#### Type declaration
+
+• (`success`): `void`
+
 返回bool的回调
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `success` | `boolean` |
+
+##### Returns
+
+`void`
+
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
 
 Ƭ **DownloadDataResponse**: () => `void`
 
+#### Type declaration
+
+• (): `void`
+
 下载角色形象的回调，无参数
+
+##### Returns
+
+`void`
+
 ___
 
 ### MGSEvent <Score text="MGSEvent" /> 
 
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
 
+#### Type declaration
+
+• (`jsonData`): `void`
+
 收到MGS事件调用
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `jsonData` | `string` |
+
+##### Returns
+
+`void`
+
 ___
 
 ### MGSResponse <Score text="MGSResponse" /> 
 
 Ƭ **MGSResponse**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void`
 
+#### Type declaration
+
+• (`isSuccess`, `jsonData`): `void`
+
 收到233回复
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `isSuccess` | `boolean` |
+| `jsonData` | `string` |
+
+##### Returns
+
+`void`
+
 ___
 
 ### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
 
 Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
+
+#### Type declaration
+
+• (`amount`): `void`
 
 客户端接收余额更新的消息格式
 
@@ -79,11 +142,20 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `amount` | `number` |  新的余额 |
+
+##### Returns
+
+`void`
+
 ___
 
 ### OnOrderDelivered <Score text="OnOrderDelivered" /> 
 
 Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
+
+#### Type declaration
+
+• (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
 
 服务端接收发货通知的消息格式
 
@@ -96,11 +168,20 @@ ___
 | `commodityId` | `string` |  商品Id |
 | `amount` | `number` |  数量 |
 | `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
+
+##### Returns
+
+`void`
+
 ___
 
 ### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
+
+#### Type declaration
+
+• (`newState`): `void`
 
 233中MW窗口显示模式切换的消息格式
 
@@ -109,20 +190,49 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newState` | `number` |  新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
+
+##### Returns
+
+`void`
+
 ___
 
 ### OnViewRefreshed <Score text="OnViewRefreshed" /> 
 
 Ƭ **OnViewRefreshed**: () => `void`
 
+#### Type declaration
+
+• (): `void`
+
 233中MW窗口刷新的消息格式
+
+##### Returns
+
+`void`
+
 ___
 
 ### StringResponse <Score text="StringResponse" /> 
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
 
+#### Type declaration
+
+• (`dataString`): `void`
+
 返回string的回调
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `dataString` | `string` |
+
+##### Returns
+
+`void`
+
 ___
 
 ### TeamMatchFailureInfo <Score text="TeamMatchFailureInfo" /> 
@@ -137,11 +247,16 @@ ___
 | :------ | :------ | :------ |
 | `failedReason` | `string` | 失败原因 |
 | `playerIds` | `number`[] | 组队玩家的playerId数组 |
+
 ___
 
 ### UploadDataResponse <Score text="UploadDataResponse" /> 
 
 Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
+
+#### Type declaration
+
+• (`success`): `void`
 
 下载角色形象的回调消息格式
 
@@ -150,17 +265,45 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `success` | `boolean` |  上传是否成功 |
+
+##### Returns
+
+`void`
+
 ___
 
 ### VoidResponse <Score text="VoidResponse" /> 
 
 Ƭ **VoidResponse**: () => `void`
 
+#### Type declaration
+
+• (): `void`
+
 返回无参数的回调
+
+##### Returns
+
+`void`
+
 ___
 
 ### downloadCharacterDataStringCallback <Score text="downloadCharacterDataStringCallback" /> 
 
 Ƭ **downloadCharacterDataStringCallback**: (`dataString`: `string`) => `void`
 
+#### Type declaration
+
+• (`dataString`): `void`
+
 下载平台数据回调
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `dataString` | `string` |
+
+##### Returns
+
+`void`

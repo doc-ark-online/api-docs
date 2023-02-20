@@ -269,7 +269,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
 
 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

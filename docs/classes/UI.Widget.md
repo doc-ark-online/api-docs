@@ -587,7 +587,7 @@ zorder
 
 ### destroyObject <Score text="destroyObject" /> 
 
-▸ **destroyObject**(): `void` <Badge type="tip" text="other" />
+• **destroyObject**(): `void` <Badge type="tip" text="other" />
 
 立刻移除并销毁 不可以在使用
 
@@ -597,7 +597,7 @@ ___
 
 ### equal <Score text="equal" /> 
 
-▸ **equal**(`that`): `boolean` <Badge type="tip" text="other" />
+• **equal**(`that`): `boolean` <Badge type="tip" text="other" />
 
 判断是不是同一个对象
 
@@ -618,7 +618,7 @@ ___
 
 ### invalidateLayoutAndVolatility <Score text="invalidateLayoutAndVolatility" /> 
 
-▸ **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="other" />
+• **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="other" />
 
 立刻触发重新渲染的和排布计算
 

@@ -179,11 +179,10 @@
 
 ### getBreastHorizontalPosition <Score text="getBreastHorizontalPosition" /> 
 
-▸ **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 调整胸部左右位置
 
-客户端
 
 #### Returns
 
@@ -199,11 +198,10 @@ ___
 
 ### getBreastLength <Score text="getBreastLength" /> 
 
-▸ **getBreastLength**(): `number` <Badge type="tip" text="other" />
+• **getBreastLength**(): `number` <Badge type="tip" text="other" />
 
 调整胸部长度
 
-客户端
 
 #### Returns
 
@@ -219,11 +217,10 @@ ___
 
 ### getBreastScale <Score text="getBreastScale" /> 
 
-▸ **getBreastScale**(): `number` <Badge type="tip" text="other" />
+• **getBreastScale**(): `number` <Badge type="tip" text="other" />
 
 调整胸部整体大小；
 
-客户端
 
 #### Returns
 
@@ -239,11 +236,10 @@ ___
 
 ### getBreastStretch <Score text="getBreastStretch" /> 
 
-▸ **getBreastStretch**(): `number` <Badge type="tip" text="other" />
+• **getBreastStretch**(): `number` <Badge type="tip" text="other" />
 
 获取胸部拉伸
 
-客户端
 
 #### Returns
 
@@ -259,11 +255,10 @@ ___
 
 ### getBreastVerticalPosition <Score text="getBreastVerticalPosition" /> 
 
-▸ **getBreastVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getBreastVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 调整胸部上下位置
 
-客户端
 
 #### Returns
 
@@ -279,11 +274,10 @@ ___
 
 ### getBrowGap <Score text="getBrowGap" /> 
 
-▸ **getBrowGap**(): `number` <Badge type="tip" text="other" />
+• **getBrowGap**(): `number` <Badge type="tip" text="other" />
 
 获取眉间距
 
-客户端
 
 #### Returns
 
@@ -299,11 +293,10 @@ ___
 
 ### getBrowHeight <Score text="getBrowHeight" /> 
 
-▸ **getBrowHeight**(): `number` <Badge type="tip" text="other" />
+• **getBrowHeight**(): `number` <Badge type="tip" text="other" />
 
 获取眉毛上下移动
 
-客户端
 
 #### Returns
 
@@ -319,11 +312,10 @@ ___
 
 ### getBrowInboardShape <Score text="getBrowInboardShape" /> 
 
-▸ **getBrowInboardShape**(): `number` <Badge type="tip" text="other" />
+• **getBrowInboardShape**(): `number` <Badge type="tip" text="other" />
 
 获取眉毛内侧角度
 
-客户端
 
 #### Returns
 
@@ -339,11 +331,10 @@ ___
 
 ### getBrowOutsideShape <Score text="getBrowOutsideShape" /> 
 
-▸ **getBrowOutsideShape**(): `number` <Badge type="tip" text="other" />
+• **getBrowOutsideShape**(): `number` <Badge type="tip" text="other" />
 
 获取眉毛外侧形状
 
-客户端
 
 #### Returns
 
@@ -359,11 +350,10 @@ ___
 
 ### getBrowRotation <Score text="getBrowRotation" /> 
 
-▸ **getBrowRotation**(): `number` <Badge type="tip" text="other" />
+• **getBrowRotation**(): `number` <Badge type="tip" text="other" />
 
 获取眉毛角度
 
-客户端
 
 #### Returns
 
@@ -379,11 +369,10 @@ ___
 
 ### getCanthusHorizontalPosition <Score text="getCanthusHorizontalPosition" /> 
 
-▸ **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 获取眼角左右移动
 
-客户端
 
 #### Returns
 
@@ -399,11 +388,10 @@ ___
 
 ### getCanthusVerticalPosition <Score text="getCanthusVerticalPosition" /> 
 
-▸ **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 获取外眼角上下移动
 
-客户端
 
 #### Returns
 
@@ -419,11 +407,10 @@ ___
 
 ### getCharacterHeight <Score text="getCharacterHeight" /> 
 
-▸ **getCharacterHeight**(): `number` <Badge type="tip" text="other" />
+• **getCharacterHeight**(): `number` <Badge type="tip" text="other" />
 
 获取角色身高
 
-客户端
 
 #### Returns
 
@@ -439,11 +426,10 @@ ___
 
 ### getCheekBoneRange <Score text="getCheekBoneRange" /> 
 
-▸ **getCheekBoneRange**(): `number` <Badge type="tip" text="other" />
+• **getCheekBoneRange**(): `number` <Badge type="tip" text="other" />
 
 获取颧骨前后移动
 
-客户端
 
 #### Returns
 
@@ -459,11 +445,10 @@ ___
 
 ### getCheekBoneWidth <Score text="getCheekBoneWidth" /> 
 
-▸ **getCheekBoneWidth**(): `number` <Badge type="tip" text="other" />
+• **getCheekBoneWidth**(): `number` <Badge type="tip" text="other" />
 
 获取颧骨横向宽度
 
-客户端
 
 #### Returns
 
@@ -479,11 +464,10 @@ ___
 
 ### getCheekHeight <Score text="getCheekHeight" /> 
 
-▸ **getCheekHeight**(): `number` <Badge type="tip" text="other" />
+• **getCheekHeight**(): `number` <Badge type="tip" text="other" />
 
 获取脸颊上下移动
 
-客户端
 
 #### Returns
 
@@ -499,11 +483,10 @@ ___
 
 ### getCheekRange <Score text="getCheekRange" /> 
 
-▸ **getCheekRange**(): `number` <Badge type="tip" text="other" />
+• **getCheekRange**(): `number` <Badge type="tip" text="other" />
 
 获取脸颊前后移动
 
-客户端
 
 #### Returns
 
@@ -519,11 +502,10 @@ ___
 
 ### getCheekWidth <Score text="getCheekWidth" /> 
 
-▸ **getCheekWidth**(): `number` <Badge type="tip" text="other" />
+• **getCheekWidth**(): `number` <Badge type="tip" text="other" />
 
 获取脸颊宽度
 
-客户端
 
 #### Returns
 
@@ -539,11 +521,10 @@ ___
 
 ### getEarRoll <Score text="getEarRoll" /> 
 
-▸ **getEarRoll**(): `number` <Badge type="tip" text="other" />
+• **getEarRoll**(): `number` <Badge type="tip" text="other" />
 
 调整耳朵左右旋转
 
-客户端
 
 #### Returns
 
@@ -559,11 +540,10 @@ ___
 
 ### getEarScale <Score text="getEarScale" /> 
 
-▸ **getEarScale**(): `number` <Badge type="tip" text="other" />
+• **getEarScale**(): `number` <Badge type="tip" text="other" />
 
 调整耳朵大小
 
-客户端
 
 #### Returns
 
@@ -579,11 +559,10 @@ ___
 
 ### getEarYaw <Score text="getEarYaw" /> 
 
-▸ **getEarYaw**(): `number` <Badge type="tip" text="other" />
+• **getEarYaw**(): `number` <Badge type="tip" text="other" />
 
 调整耳朵前后旋转
 
-客户端
 
 #### Returns
 
@@ -599,11 +578,10 @@ ___
 
 ### getEyesGap <Score text="getEyesGap" /> 
 
-▸ **getEyesGap**(): `number` <Badge type="tip" text="other" />
+• **getEyesGap**(): `number` <Badge type="tip" text="other" />
 
 获取眼睛间距
 
-客户端
 
 #### Returns
 
@@ -619,11 +597,10 @@ ___
 
 ### getEyesHeight <Score text="getEyesHeight" /> 
 
-▸ **getEyesHeight**(): `number` <Badge type="tip" text="other" />
+• **getEyesHeight**(): `number` <Badge type="tip" text="other" />
 
 获取眼睛上下移动
 
-客户端
 
 #### Returns
 
@@ -639,11 +616,10 @@ ___
 
 ### getEyesLength <Score text="getEyesLength" /> 
 
-▸ **getEyesLength**(): `number` <Badge type="tip" text="other" />
+• **getEyesLength**(): `number` <Badge type="tip" text="other" />
 
 眼睛长度
 
-客户端
 
 #### Returns
 
@@ -659,11 +635,10 @@ ___
 
 ### getEyesRange <Score text="getEyesRange" /> 
 
-▸ **getEyesRange**(): `number` <Badge type="tip" text="other" />
+• **getEyesRange**(): `number` <Badge type="tip" text="other" />
 
 获取眼睛前后移动
 
-客户端
 
 #### Returns
 
@@ -679,11 +654,10 @@ ___
 
 ### getEyesRotation <Score text="getEyesRotation" /> 
 
-▸ **getEyesRotation**(): `number` <Badge type="tip" text="other" />
+• **getEyesRotation**(): `number` <Badge type="tip" text="other" />
 
 获取眼睛角度
 
-客户端
 
 #### Returns
 
@@ -699,11 +673,10 @@ ___
 
 ### getEyesWidth <Score text="getEyesWidth" /> 
 
-▸ **getEyesWidth**(): `number` <Badge type="tip" text="other" />
+• **getEyesWidth**(): `number` <Badge type="tip" text="other" />
 
 获取眼睛左右宽度
 
-客户端
 
 #### Returns
 
@@ -719,11 +692,10 @@ ___
 
 ### getFaceWidth <Score text="getFaceWidth" /> 
 
-▸ **getFaceWidth**(): `number` <Badge type="tip" text="other" />
+• **getFaceWidth**(): `number` <Badge type="tip" text="other" />
 
 调整头部整体宽度
 
-客户端
 
 #### Returns
 
@@ -739,11 +711,10 @@ ___
 
 ### getGroinThickness <Score text="getGroinThickness" /> 
 
-▸ **getGroinThickness**(): `number` <Badge type="tip" text="other" />
+• **getGroinThickness**(): `number` <Badge type="tip" text="other" />
 
 获取胯宽度前后
 
-客户端
 
 #### Returns
 
@@ -759,11 +730,10 @@ ___
 
 ### getGroinWidth <Score text="getGroinWidth" /> 
 
-▸ **getGroinWidth**(): `number` <Badge type="tip" text="other" />
+• **getGroinWidth**(): `number` <Badge type="tip" text="other" />
 
 获取胯宽度左右
 
-客户端
 
 #### Returns
 
@@ -779,13 +749,10 @@ ___
 
 ### getHeadScale <Score text="getHeadScale" /> 
 
-▸ **getHeadScale**(): `number` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
+• **getHeadScale**(): `number` <Badge type="tip" text="other" />
 
 获取角色头部大小
 
-客户端调用
-
-客户端
 
 #### Returns
 
@@ -801,11 +768,10 @@ ___
 
 ### getJawLength <Score text="getJawLength" /> 
 
-▸ **getJawLength**(): `number` <Badge type="tip" text="other" />
+• **getJawLength**(): `number` <Badge type="tip" text="other" />
 
 调整下巴长度
 
-客户端
 
 #### Returns
 
@@ -821,11 +787,10 @@ ___
 
 ### getJawRange <Score text="getJawRange" /> 
 
-▸ **getJawRange**(): `number` <Badge type="tip" text="other" />
+• **getJawRange**(): `number` <Badge type="tip" text="other" />
 
 调整下巴前后移动
 
-客户端
 
 #### Returns
 
@@ -841,11 +806,10 @@ ___
 
 ### getJawSmooth <Score text="getJawSmooth" /> 
 
-▸ **getJawSmooth**(): `number` <Badge type="tip" text="other" />
+• **getJawSmooth**(): `number` <Badge type="tip" text="other" />
 
 调整下巴圆度
 
-客户端
 
 #### Returns
 
@@ -861,11 +825,10 @@ ___
 
 ### getJawVertexHeight <Score text="getJawVertexHeight" /> 
 
-▸ **getJawVertexHeight**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexHeight**(): `number` <Badge type="tip" text="other" />
 
 调整下巴尖上下移动
 
-客户端
 
 #### Returns
 
@@ -881,11 +844,10 @@ ___
 
 ### getJawVertexRange <Score text="getJawVertexRange" /> 
 
-▸ **getJawVertexRange**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexRange**(): `number` <Badge type="tip" text="other" />
 
 调整下巴尖前后移动
 
-客户端
 
 #### Returns
 
@@ -901,11 +863,10 @@ ___
 
 ### getJawVertexWidth <Score text="getJawVertexWidth" /> 
 
-▸ **getJawVertexWidth**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexWidth**(): `number` <Badge type="tip" text="other" />
 
 调整下巴尖宽度
 
-客户端
 
 #### Returns
 
@@ -921,11 +882,10 @@ ___
 
 ### getLowerArmsStretch <Score text="getLowerArmsStretch" /> 
 
-▸ **getLowerArmsStretch**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsStretch**(): `number` <Badge type="tip" text="other" />
 
 获取小臂的拉伸
 
-客户端
 
 #### Returns
 
@@ -941,11 +901,10 @@ ___
 
 ### getLowerArmsThickness <Score text="getLowerArmsThickness" /> 
 
-▸ **getLowerArmsThickness**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsThickness**(): `number` <Badge type="tip" text="other" />
 
 获取小臂前后方向的宽度
 
-客户端
 
 #### Returns
 
@@ -961,11 +920,10 @@ ___
 
 ### getLowerArmsWidth <Score text="getLowerArmsWidth" /> 
 
-▸ **getLowerArmsWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsWidth**(): `number` <Badge type="tip" text="other" />
 
 获取小臂左右方向的宽度
 
-客户端
 
 #### Returns
 
@@ -981,11 +939,10 @@ ___
 
 ### getLowerFaceRange <Score text="getLowerFaceRange" /> 
 
-▸ **getLowerFaceRange**(): `number` <Badge type="tip" text="other" />
+• **getLowerFaceRange**(): `number` <Badge type="tip" text="other" />
 
 获取下半脸前后
 
-客户端
 
 #### Returns
 
@@ -1001,11 +958,10 @@ ___
 
 ### getLowerFaceWidth <Score text="getLowerFaceWidth" /> 
 
-▸ **getLowerFaceWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerFaceWidth**(): `number` <Badge type="tip" text="other" />
 
 获取下半脸的宽度
 
-客户端
 
 #### Returns
 
@@ -1021,11 +977,10 @@ ___
 
 ### getLowerJawRange <Score text="getLowerJawRange" /> 
 
-▸ **getLowerJawRange**(): `number` <Badge type="tip" text="other" />
+• **getLowerJawRange**(): `number` <Badge type="tip" text="other" />
 
 调整下颚骨前后移动
 
-客户端
 
 #### Returns
 
@@ -1041,11 +996,10 @@ ___
 
 ### getLowerJawWidth <Score text="getLowerJawWidth" /> 
 
-▸ **getLowerJawWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerJawWidth**(): `number` <Badge type="tip" text="other" />
 
 调整下颚骨宽度
 
-客户端
 
 #### Returns
 
@@ -1061,11 +1015,10 @@ ___
 
 ### getLowerMouthThickness <Score text="getLowerMouthThickness" /> 
 
-▸ **getLowerMouthThickness**(): `number` <Badge type="tip" text="other" />
+• **getLowerMouthThickness**(): `number` <Badge type="tip" text="other" />
 
 获取下嘴唇薄厚
 
-客户端
 
 #### Returns
 
@@ -1081,11 +1034,10 @@ ___
 
 ### getLowerStretch <Score text="getLowerStretch" /> 
 
-▸ **getLowerStretch**(): `number` <Badge type="tip" text="other" />
+• **getLowerStretch**(): `number` <Badge type="tip" text="other" />
 
 调整耳朵下部拉伸
 
-客户端
 
 #### Returns
 
@@ -1101,11 +1053,10 @@ ___
 
 ### getMouthHeight <Score text="getMouthHeight" /> 
 
-▸ **getMouthHeight**(): `number` <Badge type="tip" text="other" />
+• **getMouthHeight**(): `number` <Badge type="tip" text="other" />
 
 获取嘴巴上下位置
 
-客户端
 
 #### Returns
 
@@ -1121,11 +1072,10 @@ ___
 
 ### getMouthRange <Score text="getMouthRange" /> 
 
-▸ **getMouthRange**(): `number` <Badge type="tip" text="other" />
+• **getMouthRange**(): `number` <Badge type="tip" text="other" />
 
 获取嘴巴前后移动
 
-客户端
 
 #### Returns
 
@@ -1141,11 +1091,10 @@ ___
 
 ### getMouthShape <Score text="getMouthShape" /> 
 
-▸ **getMouthShape**(): `number` <Badge type="tip" text="other" />
+• **getMouthShape**(): `number` <Badge type="tip" text="other" />
 
 调整嘴巴形状
 
-客户端
 
 #### Returns
 
@@ -1161,11 +1110,10 @@ ___
 
 ### getMouthWidth <Score text="getMouthWidth" /> 
 
-▸ **getMouthWidth**(): `number` <Badge type="tip" text="other" />
+• **getMouthWidth**(): `number` <Badge type="tip" text="other" />
 
 获取嘴巴宽度
 
-客户端
 
 #### Returns
 
@@ -1181,11 +1129,10 @@ ___
 
 ### getNeckStretch <Score text="getNeckStretch" /> 
 
-▸ **getNeckStretch**(): `number` <Badge type="tip" text="other" />
+• **getNeckStretch**(): `number` <Badge type="tip" text="other" />
 
 获取脖子拉伸
 
-客户端
 
 #### Returns
 
@@ -1201,11 +1148,10 @@ ___
 
 ### getNeckThickness <Score text="getNeckThickness" /> 
 
-▸ **getNeckThickness**(): `number` <Badge type="tip" text="other" />
+• **getNeckThickness**(): `number` <Badge type="tip" text="other" />
 
 获取脖子前后的宽度
 
-客户端
 
 #### Returns
 
@@ -1221,11 +1167,10 @@ ___
 
 ### getNeckWidth <Score text="getNeckWidth" /> 
 
-▸ **getNeckWidth**(): `number` <Badge type="tip" text="other" />
+• **getNeckWidth**(): `number` <Badge type="tip" text="other" />
 
 调整脖子的左右宽度
 
-客户端
 
 #### Returns
 
@@ -1241,11 +1186,10 @@ ___
 
 ### getNoseHeight <Score text="getNoseHeight" /> 
 
-▸ **getNoseHeight**(): `number` <Badge type="tip" text="other" />
+• **getNoseHeight**(): `number` <Badge type="tip" text="other" />
 
 获取鼻梁高度
 
-客户端
 
 #### Returns
 
@@ -1261,11 +1205,10 @@ ___
 
 ### getNoseProtrusion <Score text="getNoseProtrusion" /> 
 
-▸ **getNoseProtrusion**(): `number` <Badge type="tip" text="other" />
+• **getNoseProtrusion**(): `number` <Badge type="tip" text="other" />
 
 获取鼻尖长度
 
-客户端
 
 #### Returns
 
@@ -1281,11 +1224,10 @@ ___
 
 ### getNoseVerticalPosition <Score text="getNoseVerticalPosition" /> 
 
-▸ **getNoseVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getNoseVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 获取鼻子上下移动
 
-客户端
 
 #### Returns
 
@@ -1301,11 +1243,10 @@ ___
 
 ### getPupilHeight <Score text="getPupilHeight" /> 
 
-▸ **getPupilHeight**(): `number` <Badge type="tip" text="other" />
+• **getPupilHeight**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔高度
 
-客户端
 
 #### Returns
 
@@ -1321,11 +1262,10 @@ ___
 
 ### getPupilHorizontalPosition <Score text="getPupilHorizontalPosition" /> 
 
-▸ **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔左右位置
 
-客户端
 
 #### Returns
 
@@ -1341,11 +1281,10 @@ ___
 
 ### getPupilVerticalPosition <Score text="getPupilVerticalPosition" /> 
 
-▸ **getPupilVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getPupilVerticalPosition**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔上下位置
 
-客户端
 
 #### Returns
 
@@ -1361,11 +1300,10 @@ ___
 
 ### getPupilWidth <Score text="getPupilWidth" /> 
 
-▸ **getPupilWidth**(): `number` <Badge type="tip" text="other" />
+• **getPupilWidth**(): `number` <Badge type="tip" text="other" />
 
 获取瞳孔宽度
 
-客户端
 
 #### Returns
 
@@ -1381,11 +1319,10 @@ ___
 
 ### getRibThickness <Score text="getRibThickness" /> 
 
-▸ **getRibThickness**(): `number` <Badge type="tip" text="other" />
+• **getRibThickness**(): `number` <Badge type="tip" text="other" />
 
 获取肋骨的前后宽度
 
-客户端
 
 #### Returns
 
@@ -1401,11 +1338,10 @@ ___
 
 ### getRibWidth <Score text="getRibWidth" /> 
 
-▸ **getRibWidth**(): `number` <Badge type="tip" text="other" />
+• **getRibWidth**(): `number` <Badge type="tip" text="other" />
 
 获取肋骨的左右宽度
 
-客户端
 
 #### Returns
 
@@ -1421,11 +1357,10 @@ ___
 
 ### getShankScaleX <Score text="getShankScaleX" /> 
 
-▸ **getShankScaleX**(): `number` <Badge type="tip" text="other" />
+• **getShankScaleX**(): `number` <Badge type="tip" text="other" />
 
 获取小腿粗细左右
 
-客户端
 
 #### Returns
 
@@ -1441,11 +1376,10 @@ ___
 
 ### getShankScaleZ <Score text="getShankScaleZ" /> 
 
-▸ **getShankScaleZ**(): `number` <Badge type="tip" text="other" />
+• **getShankScaleZ**(): `number` <Badge type="tip" text="other" />
 
 获取小腿粗细前后
 
-客户端
 
 #### Returns
 
@@ -1461,11 +1395,10 @@ ___
 
 ### getShankStretch <Score text="getShankStretch" /> 
 
-▸ **getShankStretch**(): `number` <Badge type="tip" text="other" />
+• **getShankStretch**(): `number` <Badge type="tip" text="other" />
 
 获取小腿拉伸
 
-客户端
 
 #### Returns
 
@@ -1481,11 +1414,10 @@ ___
 
 ### getShoulderArmThickness <Score text="getShoulderArmThickness" /> 
 
-▸ **getShoulderArmThickness**(): `number` <Badge type="tip" text="other" />
+• **getShoulderArmThickness**(): `number` <Badge type="tip" text="other" />
 
 获取肩膀的前后宽度
 
-客户端
 
 #### Returns
 
@@ -1501,11 +1433,10 @@ ___
 
 ### getShoulderArmWidth <Score text="getShoulderArmWidth" /> 
 
-▸ **getShoulderArmWidth**(): `number` <Badge type="tip" text="other" />
+• **getShoulderArmWidth**(): `number` <Badge type="tip" text="other" />
 
 获取肩膀的左右宽度
 
-客户端
 
 #### Returns
 
@@ -1521,11 +1452,10 @@ ___
 
 ### getShoulderThickness <Score text="getShoulderThickness" /> 
 
-▸ **getShoulderThickness**(): `number` <Badge type="tip" text="other" />
+• **getShoulderThickness**(): `number` <Badge type="tip" text="other" />
 
 获取肩膀的前后宽度
 
-客户端
 
 #### Returns
 
@@ -1541,11 +1471,10 @@ ___
 
 ### getShoulderWidth <Score text="getShoulderWidth" /> 
 
-▸ **getShoulderWidth**(): `number` <Badge type="tip" text="other" />
+• **getShoulderWidth**(): `number` <Badge type="tip" text="other" />
 
 获取肩膀的宽度
 
-客户端
 
 #### Returns
 
@@ -1561,11 +1490,10 @@ ___
 
 ### getThighStretch <Score text="getThighStretch" /> 
 
-▸ **getThighStretch**(): `number` <Badge type="tip" text="other" />
+• **getThighStretch**(): `number` <Badge type="tip" text="other" />
 
 获取大腿拉伸
 
-客户端
 
 #### Returns
 
@@ -1581,11 +1509,10 @@ ___
 
 ### getThighThicknessX <Score text="getThighThicknessX" /> 
 
-▸ **getThighThicknessX**(): `number` <Badge type="tip" text="other" />
+• **getThighThicknessX**(): `number` <Badge type="tip" text="other" />
 
 获取大腿粗细左右
 
-客户端
 
 #### Returns
 
@@ -1601,11 +1528,10 @@ ___
 
 ### getThighThicknessZ <Score text="getThighThicknessZ" /> 
 
-▸ **getThighThicknessZ**(): `number` <Badge type="tip" text="other" />
+• **getThighThicknessZ**(): `number` <Badge type="tip" text="other" />
 
 获取大腿粗细前后
 
-客户端
 
 #### Returns
 
@@ -1621,11 +1547,10 @@ ___
 
 ### getUpperArmsStretch <Score text="getUpperArmsStretch" /> 
 
-▸ **getUpperArmsStretch**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsStretch**(): `number` <Badge type="tip" text="other" />
 
 获取大臂的拉伸
 
-客户端
 
 #### Returns
 
@@ -1641,11 +1566,10 @@ ___
 
 ### getUpperArmsThickness <Score text="getUpperArmsThickness" /> 
 
-▸ **getUpperArmsThickness**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsThickness**(): `number` <Badge type="tip" text="other" />
 
 获取大臂前后方向的宽度
 
-客户端
 
 #### Returns
 
@@ -1661,11 +1585,10 @@ ___
 
 ### getUpperArmsWidth <Score text="getUpperArmsWidth" /> 
 
-▸ **getUpperArmsWidth**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsWidth**(): `number` <Badge type="tip" text="other" />
 
 获取大臂左右方向的宽度
 
-客户端
 
 #### Returns
 
@@ -1681,11 +1604,10 @@ ___
 
 ### getUpperFaceRange <Score text="getUpperFaceRange" /> 
 
-▸ **getUpperFaceRange**(): `number` <Badge type="tip" text="other" />
+• **getUpperFaceRange**(): `number` <Badge type="tip" text="other" />
 
 调整上半脸前后移动
 
-客户端
 
 #### Returns
 
@@ -1701,11 +1623,10 @@ ___
 
 ### getUpperMouthThickness <Score text="getUpperMouthThickness" /> 
 
-▸ **getUpperMouthThickness**(): `number` <Badge type="tip" text="other" />
+• **getUpperMouthThickness**(): `number` <Badge type="tip" text="other" />
 
 获取上嘴唇薄厚
 
-客户端
 
 #### Returns
 
@@ -1721,11 +1642,10 @@ ___
 
 ### getUpperStretch <Score text="getUpperStretch" /> 
 
-▸ **getUpperStretch**(): `number` <Badge type="tip" text="other" />
+• **getUpperStretch**(): `number` <Badge type="tip" text="other" />
 
 调整耳朵上部拉伸
 
-客户端
 
 #### Returns
 
@@ -1741,11 +1661,10 @@ ___
 
 ### getWaistStretch <Score text="getWaistStretch" /> 
 
-▸ **getWaistStretch**(): `number` <Badge type="tip" text="other" />
+• **getWaistStretch**(): `number` <Badge type="tip" text="other" />
 
 获取腰部拉伸
 
-客户端
 
 #### Returns
 
@@ -1761,11 +1680,10 @@ ___
 
 ### getWaistThickness <Score text="getWaistThickness" /> 
 
-▸ **getWaistThickness**(): `number` <Badge type="tip" text="other" />
+• **getWaistThickness**(): `number` <Badge type="tip" text="other" />
 
 获取腰的前后宽度
 
-客户端
 
 #### Returns
 
@@ -1781,11 +1699,10 @@ ___
 
 ### getWaistWidth <Score text="getWaistWidth" /> 
 
-▸ **getWaistWidth**(): `number` <Badge type="tip" text="other" />
+• **getWaistWidth**(): `number` <Badge type="tip" text="other" />
 
 获取腰的左右宽度
 
-客户端
 
 #### Returns
 
@@ -1801,20 +1718,23 @@ ___
 
 ### setBreastHorizontalPosition <Score text="setBreastHorizontalPosition" /> 
 
-▸ **setBreastHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整胸部左右位置
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1825,20 +1745,23 @@ ___
 
 ### setBreastLength <Score text="setBreastLength" /> 
 
-▸ **setBreastLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整胸部长度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1849,20 +1772,23 @@ ___
 
 ### setBreastScale <Score text="setBreastScale" /> 
 
-▸ **setBreastScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整胸部整体大小；
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1873,20 +1799,23 @@ ___
 
 ### setBreastStretch <Score text="setBreastStretch" /> 
 
-▸ **setBreastStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置胸部拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1897,20 +1826,23 @@ ___
 
 ### setBreastVerticalPosition <Score text="setBreastVerticalPosition" /> 
 
-▸ **setBreastVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整胸部上下位置
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1921,20 +1853,23 @@ ___
 
 ### setBrowGap <Score text="setBrowGap" /> 
 
-▸ **setBrowGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉间距
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1945,20 +1880,23 @@ ___
 
 ### setBrowHeight <Score text="setBrowHeight" /> 
 
-▸ **setBrowHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1969,20 +1907,23 @@ ___
 
 ### setBrowInboardShape <Score text="setBrowInboardShape" /> 
 
-▸ **setBrowInboardShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowInboardShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛内侧角度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -1993,20 +1934,23 @@ ___
 
 ### setBrowOutsideShape <Score text="setBrowOutsideShape" /> 
 
-▸ **setBrowOutsideShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowOutsideShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛外侧形状
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2017,20 +1961,23 @@ ___
 
 ### setBrowRotation <Score text="setBrowRotation" /> 
 
-▸ **setBrowRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眉毛角度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2041,20 +1988,23 @@ ___
 
 ### setCanthusHorizontalPosition <Score text="setCanthusHorizontalPosition" /> 
 
-▸ **setCanthusHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCanthusHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼角左右移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2065,20 +2015,23 @@ ___
 
 ### setCanthusVerticalPosition <Score text="setCanthusVerticalPosition" /> 
 
-▸ **setCanthusVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCanthusVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置外眼角上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2089,19 +2042,23 @@ ___
 
 ### setCharacterHeight <Score text="setCharacterHeight" /> 
 
-▸ **setCharacterHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCharacterHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置角色身高
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2112,20 +2069,23 @@ ___
 
 ### setCheekBoneRange <Score text="setCheekBoneRange" /> 
 
-▸ **setCheekBoneRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekBoneRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置颧骨前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2136,20 +2096,23 @@ ___
 
 ### setCheekBoneWidth <Score text="setCheekBoneWidth" /> 
 
-▸ **setCheekBoneWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekBoneWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置颧骨横向宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2160,20 +2123,23 @@ ___
 
 ### setCheekHeight <Score text="setCheekHeight" /> 
 
-▸ **setCheekHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置脸颊上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2184,20 +2150,23 @@ ___
 
 ### setCheekRange <Score text="setCheekRange" /> 
 
-▸ **setCheekRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置脸颊前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2208,20 +2177,23 @@ ___
 
 ### setCheekWidth <Score text="setCheekWidth" /> 
 
-▸ **setCheekWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置脸颊宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2232,20 +2204,18 @@ ___
 
 ### setEarRoll <Score text="setEarRoll" /> 
 
-▸ **setEarRoll**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarRoll**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整耳朵左右旋转
  *
 
-sync = false:客户端;
-sync = true:双端
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2256,20 +2226,23 @@ ___
 
 ### setEarScale <Score text="setEarScale" /> 
 
-▸ **setEarScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整耳朵大小
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2280,20 +2253,23 @@ ___
 
 ### setEarYaw <Score text="setEarYaw" /> 
 
-▸ **setEarYaw**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarYaw**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整耳朵前后旋转
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2304,20 +2280,23 @@ ___
 
 ### setEyesGap <Score text="setEyesGap" /> 
 
-▸ **setEyesGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛间距
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2328,20 +2307,23 @@ ___
 
 ### setEyesHeight <Score text="setEyesHeight" /> 
 
-▸ **setEyesHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2352,20 +2334,23 @@ ___
 
 ### setEyesLength <Score text="setEyesLength" /> 
 
-▸ **setEyesLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 眼睛长度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2376,20 +2361,23 @@ ___
 
 ### setEyesRange <Score text="setEyesRange" /> 
 
-▸ **setEyesRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2400,20 +2388,23 @@ ___
 
 ### setEyesRotation <Score text="setEyesRotation" /> 
 
-▸ **setEyesRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛角度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2424,20 +2415,23 @@ ___
 
 ### setEyesWidth <Score text="setEyesWidth" /> 
 
-▸ **setEyesWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置眼睛左右宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2448,20 +2442,23 @@ ___
 
 ### setFaceWidth <Score text="setFaceWidth" /> 
 
-▸ **setFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整头部整体宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2472,20 +2469,23 @@ ___
 
 ### setGroinThickness <Score text="setGroinThickness" /> 
 
-▸ **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置胯宽度前后
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2496,20 +2496,23 @@ ___
 
 ### setGroinWidth <Score text="setGroinWidth" /> 
 
-▸ **setGroinWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGroinWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置胯宽度左右
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2520,23 +2523,25 @@ ___
 
 ### setHeadScale <Score text="setHeadScale" /> 
 
-▸ **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
+• **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
 
 设置角色头部大小
 
-sync = false:客户端;
-sync = true:双端调用
- *
+当 sync = true 对象是单端对象，调用仅本地客户端有效调用
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2547,20 +2552,23 @@ ___
 
 ### setJawLength <Score text="setJawLength" /> 
 
-▸ **setJawLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴长度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2571,20 +2579,23 @@ ___
 
 ### setJawRange <Score text="setJawRange" /> 
 
-▸ **setJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2595,20 +2606,23 @@ ___
 
 ### setJawSmooth <Score text="setJawSmooth" /> 
 
-▸ **setJawSmooth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawSmooth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴圆度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2619,20 +2633,23 @@ ___
 
 ### setJawVertexHeight <Score text="setJawVertexHeight" /> 
 
-▸ **setJawVertexHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴尖上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2643,20 +2660,23 @@ ___
 
 ### setJawVertexRange <Score text="setJawVertexRange" /> 
 
-▸ **setJawVertexRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴尖前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2667,20 +2687,23 @@ ___
 
 ### setJawVertexWidth <Score text="setJawVertexWidth" /> 
 
-▸ **setJawVertexWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下巴尖宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2691,20 +2714,23 @@ ___
 
 ### setLowerArmsStretch <Score text="setLowerArmsStretch" /> 
 
-▸ **setLowerArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小臂的拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2715,20 +2741,23 @@ ___
 
 ### setLowerArmsThickness <Score text="setLowerArmsThickness" /> 
 
-▸ **setLowerArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小臂前后方向的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2739,20 +2768,23 @@ ___
 
 ### setLowerArmsWidth <Score text="setLowerArmsWidth" /> 
 
-▸ **setLowerArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小臂左右方向的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2763,20 +2795,23 @@ ___
 
 ### setLowerFaceRange <Score text="setLowerFaceRange" /> 
 
-▸ **setLowerFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置下半脸前后
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2787,20 +2822,23 @@ ___
 
 ### setLowerFaceWidth <Score text="setLowerFaceWidth" /> 
 
-▸ **setLowerFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置下半脸的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2811,20 +2849,23 @@ ___
 
 ### setLowerJawRange <Score text="setLowerJawRange" /> 
 
-▸ **setLowerJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下颚骨前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2835,20 +2876,23 @@ ___
 
 ### setLowerJawWidth <Score text="setLowerJawWidth" /> 
 
-▸ **setLowerJawWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerJawWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整下颚骨宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2859,20 +2903,23 @@ ___
 
 ### setLowerMouthThickness <Score text="setLowerMouthThickness" /> 
 
-▸ **setLowerMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置下嘴唇薄厚
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2883,20 +2930,23 @@ ___
 
 ### setLowerStretch <Score text="setLowerStretch" /> 
 
-▸ **setLowerStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整耳朵下部拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2907,19 +2957,23 @@ ___
 
 ### setMouthHeight <Score text="setMouthHeight" /> 
 
-▸ **setMouthHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置嘴巴上下位置
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2930,20 +2984,23 @@ ___
 
 ### setMouthRange <Score text="setMouthRange" /> 
 
-▸ **setMouthRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置嘴巴前后移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2954,20 +3011,23 @@ ___
 
 ### setMouthShape <Score text="setMouthShape" /> 
 
-▸ **setMouthShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整嘴巴形状
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -2978,20 +3038,23 @@ ___
 
 ### setMouthWidth <Score text="setMouthWidth" /> 
 
-▸ **setMouthWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置嘴巴宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3002,20 +3065,23 @@ ___
 
 ### setNeckStretch <Score text="setNeckStretch" /> 
 
-▸ **setNeckStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置脖子拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3026,20 +3092,23 @@ ___
 
 ### setNeckThickness <Score text="setNeckThickness" /> 
 
-▸ **setNeckThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置脖子前后的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3050,20 +3119,23 @@ ___
 
 ### setNeckWidth <Score text="setNeckWidth" /> 
 
-▸ **setNeckWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整脖子的左右宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3074,20 +3146,23 @@ ___
 
 ### setNoseHeight <Score text="setNoseHeight" /> 
 
-▸ **setNoseHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置鼻梁高度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3098,20 +3173,23 @@ ___
 
 ### setNoseProtrusion <Score text="setNoseProtrusion" /> 
 
-▸ **setNoseProtrusion**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseProtrusion**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置鼻尖长度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3122,20 +3200,23 @@ ___
 
 ### setNoseVerticalPosition <Score text="setNoseVerticalPosition" /> 
 
-▸ **setNoseVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置鼻子上下移动
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3146,20 +3227,23 @@ ___
 
 ### setPupilHeight <Score text="setPupilHeight" /> 
 
-▸ **setPupilHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔高度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3170,20 +3254,23 @@ ___
 
 ### setPupilHorizontalPosition <Score text="setPupilHorizontalPosition" /> 
 
-▸ **setPupilHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔左右位置
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3194,20 +3281,23 @@ ___
 
 ### setPupilVerticalPosition <Score text="setPupilVerticalPosition" /> 
 
-▸ **setPupilVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔上下位置
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3218,20 +3308,23 @@ ___
 
 ### setPupilWidth <Score text="setPupilWidth" /> 
 
-▸ **setPupilWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置瞳孔宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3242,20 +3335,23 @@ ___
 
 ### setRibThickness <Score text="setRibThickness" /> 
 
-▸ **setRibThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRibThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肋骨的前后宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3266,20 +3362,23 @@ ___
 
 ### setRibWidth <Score text="setRibWidth" /> 
 
-▸ **setRibWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRibWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肋骨的左右宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3290,20 +3389,23 @@ ___
 
 ### setShankScaleX <Score text="setShankScaleX" /> 
 
-▸ **setShankScaleX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankScaleX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小腿粗细左右
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3314,20 +3416,23 @@ ___
 
 ### setShankScaleZ <Score text="setShankScaleZ" /> 
 
-▸ **setShankScaleZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankScaleZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小腿粗细前后
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3338,20 +3443,23 @@ ___
 
 ### setShankStretch <Score text="setShankStretch" /> 
 
-▸ **setShankStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置小腿拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3362,20 +3470,23 @@ ___
 
 ### setShoulderArmThickness <Score text="setShoulderArmThickness" /> 
 
-▸ **setShoulderArmThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderArmThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肩膀的前后宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3386,20 +3497,23 @@ ___
 
 ### setShoulderArmWidth <Score text="setShoulderArmWidth" /> 
 
-▸ **setShoulderArmWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderArmWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肩膀的左右宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3410,20 +3524,23 @@ ___
 
 ### setShoulderThickness <Score text="setShoulderThickness" /> 
 
-▸ **setShoulderThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肩膀的前后宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3434,20 +3551,23 @@ ___
 
 ### setShoulderWidth <Score text="setShoulderWidth" /> 
 
-▸ **setShoulderWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置肩膀的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3458,20 +3578,23 @@ ___
 
 ### setThighStretch <Score text="setThighStretch" /> 
 
-▸ **setThighStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大腿拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3482,20 +3605,23 @@ ___
 
 ### setThighThicknessX <Score text="setThighThicknessX" /> 
 
-▸ **setThighThicknessX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighThicknessX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大腿粗细左右
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3506,20 +3632,23 @@ ___
 
 ### setThighThicknessZ <Score text="setThighThicknessZ" /> 
 
-▸ **setThighThicknessZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighThicknessZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大腿粗细前后
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3530,20 +3659,24 @@ ___
 
 ### setUpperArmsStretch <Score text="setUpperArmsStretch" /> 
 
-▸ **setUpperArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大臂的拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+       *
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3554,20 +3687,23 @@ ___
 
 ### setUpperArmsThickness <Score text="setUpperArmsThickness" /> 
 
-▸ **setUpperArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大臂前后方向的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3578,20 +3714,23 @@ ___
 
 ### setUpperArmsWidth <Score text="setUpperArmsWidth" /> 
 
-▸ **setUpperArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置大臂左右方向的宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3602,19 +3741,23 @@ ___
 
 ### setUpperFaceRange <Score text="setUpperFaceRange" /> 
 
-▸ **setUpperFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整上半脸前后移动
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3625,20 +3768,23 @@ ___
 
 ### setUpperMouthThickness <Score text="setUpperMouthThickness" /> 
 
-▸ **setUpperMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置上嘴唇薄厚
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3649,20 +3795,23 @@ ___
 
 ### setUpperStretch <Score text="setUpperStretch" /> 
 
-▸ **setUpperStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 调整耳朵上部拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3673,20 +3822,23 @@ ___
 
 ### setWaistStretch <Score text="setWaistStretch" /> 
 
-▸ **setWaistStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置腰部拉伸
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3697,20 +3849,23 @@ ___
 
 ### setWaistThickness <Score text="setWaistThickness" /> 
 
-▸ **setWaistThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置腰的前后宽度
- *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of
@@ -3721,20 +3876,24 @@ ___
 
 ### setWaistWidth <Score text="setWaistWidth" /> 
 
-▸ **setWaistWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置腰的左右宽度
  *
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 值 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 #### Implementation of

@@ -10,11 +10,13 @@
 | :-----|
 | **[toInputEvent](UI.CharacterEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent|
 
+默认构造
+
 ## Methods
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-▸ **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
+• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
 
 转化为 InputEvent
 

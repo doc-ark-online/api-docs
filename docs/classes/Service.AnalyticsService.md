@@ -24,7 +24,7 @@
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
 
 分析服务全局实例
 
@@ -39,7 +39,7 @@ ___
 
 ### googleEventTracking <Score text="googleEventTracking" /> 
 
-▸ `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
+• `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
 
 埋点
 
@@ -56,7 +56,7 @@ ___
 
 ### googleInit <Score text="googleInit" /> 
 
-▸ `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
+• `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
 
 Initialize Google Analytics client
 

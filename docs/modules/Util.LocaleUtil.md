@@ -12,7 +12,7 @@
 
 ### getDefaultLocale <Score text="getDefaultLocale" /> 
 
-▸ **getDefaultLocale**(): `string` <Badge type="tip" text="other" />
+• **getDefaultLocale**(): `string` <Badge type="tip" text="other" />
 
 获取默认的语言和地区
 

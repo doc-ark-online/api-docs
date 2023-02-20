@@ -221,7 +221,7 @@ Set模拟瞄准镜UI种类
 
 ### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
 
-▸ **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
+• **bindOpenAimComponentDelegates**(): `void` <Badge type="tip" text="other" />
 
 绑定瞄准组件代理
 
@@ -231,7 +231,7 @@ ___
 
 ### enableAiming <Score text="enableAiming" /> 
 
-▸ **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
+• **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
 
 打开/关闭瞄准
 - 切换持枪姿态

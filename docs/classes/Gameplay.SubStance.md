@@ -65,9 +65,8 @@ this.stanceProxy.stop();
 ::: warning Precautions
 
 姿态的播放位置(上半身, 下半身, 全身), 无法对正常播放的姿态进行修改.
-如果这个姿态是通过预制姿态资源GUID创建的, 那么它的默认值为StanceBlendMode.None(临时 预计021删除这个值), 它会按照资源上的blendMode参数指定混合模式;
+如果这个姿态是通过预制姿态资源GUID创建的, 那么它的默认值会自动从资源上获取;
 如果是通过动画资源GUID创建的, 那么它的默认值为StanceBlendMode.WholeBody.
-不应该把动画资源GUID创建的姿态的混合模式置为StanceBlendMode.None(临时 预计021删除这个值), 因为动画资源没有blendMode参数. 虽然不会报错, 但它确实会创建出一个姿态, 而且看不到任何表现.
 
 :::
 

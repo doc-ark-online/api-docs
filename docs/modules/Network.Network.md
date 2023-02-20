@@ -1,4 +1,8 @@
-# Network <Badge type="tip" text="Namespace" /> 
+Network
+
+# Network <Badge type="tip" text="Namespace" /> <Score text="Network" />
+
+暴露给用户使用的Http请求接口,用户可选的是网络身份(服务器,客户端)
 
 ## Table of contents
 
@@ -14,8 +18,8 @@
 
 | Type Aliases |
 | :-----|
-| **[HttpResponse](Network.Network.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
-| **[TransactionType](Network.Network.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br>商城通信回调消息格式|
+| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> • (`result`, `content`, `responseCode`): `void`|
+| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> • (`isSuccess`, `content`): `void`|
 
 | Functions |
 | :-----|
@@ -31,6 +35,10 @@
 ### HttpResponse <Score text="HttpResponse" /> 
 
 Ƭ **HttpResponse**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void`
+
+#### Type declaration
+
+• (`result`, `content`, `responseCode`): `void`
 
 Http请求的回调消息格式
 
@@ -48,11 +56,19 @@ Http请求的回调消息格式
 | `content` | `string` |  消息内容 |
 | `responseCode` | `number` |  状态码 |
 
+##### Returns
+
+`void`
+
 ___
 
 ### TransactionType <Score text="TransactionType" /> 
 
 Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
+
+#### Type declaration
+
+• (`isSuccess`, `content`): `void`
 
 商城通信回调消息格式
 
@@ -63,12 +79,15 @@ ___
 | `isSuccess` | `boolean` |  通信结果 |
 | `content` | `string` |  消息内容 |
 
+##### Returns
+
+`void`
 
 ## Functions
 
 ### fetch <Score text="fetch" /> 
 
-▸ **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
+• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
 
 HTTP请求
 
@@ -90,14 +109,14 @@ ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
-▸ **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+• **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 通用Http请求
 
 
 使用示例:发送Http请求
 ```ts
-generalHttpRequest(Response,Url,Param,JsonContent) 
+generalHttpRequest(Response,Url,Param,JsonContent)
 ```
 
 #### Parameters
@@ -120,7 +139,7 @@ ___
 
 ### getUrlParameter <Score text="getUrlParameter" /> 
 
-▸ **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
+• **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
 
 获取url参数
 
@@ -142,7 +161,7 @@ ___
 
 ### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
-▸ **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+• **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
 
 Http请求接口
 
@@ -166,7 +185,7 @@ ___
 
 ### urlDecode <Score text="urlDecode" /> 
 
-▸ **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
 
 url解码
 
@@ -187,7 +206,7 @@ ___
 
 ### urlEncode <Score text="urlEncode" /> 
 
-▸ **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
 
 url转码
 

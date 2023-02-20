@@ -11,6 +11,11 @@
 | **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 位置|
 | **[size](UI.UITransform.md#size)**: [`Vector2`](Type.Vector2.md) <br> 大小|
 
+构造每一个值
+
+**`Effect`**
+
+
 #### Parameters
 
 | Name | Type | Description |
@@ -21,6 +26,11 @@
 | `h` | `number` | 大小 Size.H 高 |
 
 • **new UITransform**(`xy`, `wh`)
+
+通过点构造
+
+**`Effect`**
+
 
 #### Parameters
 

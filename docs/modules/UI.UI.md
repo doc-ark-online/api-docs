@@ -1,4 +1,6 @@
-# UI <Badge type="tip" text="Namespace" /> 
+UI
+
+# UI <Badge type="tip" text="Namespace" /> <Score text="UI" />
 
 ## Table of contents
 
@@ -70,6 +72,7 @@
 | [UIHugContent](../classes/UI.UIHugContent.md) <br> 容器自动布局大小适应规则|
 | [UILayout](../classes/UI.UILayout.md) <br> 容器自动布局规则|
 | [UIManager](../classes/UI.UIManager.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。|
+| [UIObject](../classes/UI.UIObject.md) <br> UI对象组件|
 | [UISlot](../classes/UI.UISlot.md) <br> UI插槽|
 | [UITransform](../classes/UI.UITransform.md) <br> 节点Transform|
 | [UserWidget](../classes/UI.UserWidget.md) <br> UI控件的集合,预制体UI|
@@ -95,10 +98,10 @@
 | **[assetIDChangeIConUrlRequest](UI.UI.md#assetidchangeiconurlrequest)**(`string`[]): `Promise`<`void`\> <br> since:v0.20.0.0 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest|
 | **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest-1)**(`string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](UI.UI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
-| **[createUI](UI.UI.md#createui)**<`T`\>(`UIPrefabName`, `panelClass`): `T` <br> 创建UIPrefab|
+| **[createUI](UI.UI.md#createui)**<extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |\>(`string`, () => `T`): extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> | <br> 创建UIPrefab|
 | **[createUIByName](UI.UI.md#createuibyname)**(`string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
 | **[createUIByPath](UI.UI.md#createuibypath)**(`string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
-| **[createUIOnlyClass](UI.UI.md#createuionlyclass)**<`T`\>(`panelClass`): `T` <br> 创建空的UI|
+| **[createUIOnlyClass](UI.UI.md#createuionlyclass)**<extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |\>(() => `T`): extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> | <br> 创建空的UI|
 | **[endDragDrop](UI.UI.md#enddragdrop)**([`EventReply`](../classes/UI.EventReply.md)): `void` <br> 中断一个拖拽事件, 传入一个操作的事件|
 | **[findUIBehavior](UI.UI.md#finduibehavior)**([`Widget`](../classes/UI.Widget.md)): [`UIBehavior`](../classes/UI.UIBehavior.md) <br> 获取UI脚本|
 | **[getAbsoluteSize](UI.UI.md#getabsolutesize)**([`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回绝对空间中几何图形的大小|
@@ -198,7 +201,7 @@ ___
 
 ### absoluteToLocal <Score text="absoluteToLocal" /> 
 
-▸ **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 转化绝对坐标到相对坐标
 
@@ -220,7 +223,7 @@ ___
 
 ### absoluteToViewport <Score text="absoluteToViewport" /> 
 
-▸ **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
+• **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
 
 将桌面空间中几何图形的绝对坐标转换为本地视口坐标
 
@@ -238,7 +241,7 @@ ___
 
 ### assetIDChangeIConUrlRequest <Score text="assetIDChangeIConUrlRequest" /> 
 
-▸ **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 **`Deprecated`**
 
@@ -263,7 +266,7 @@ ___
 
 ### assetIDChangeIconUrlRequest <Score text="assetIDChangeIconUrlRequest" /> 
 
-▸ **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="other" />
 
 异步请求资源的ICON信息
 
@@ -284,7 +287,7 @@ ___
 
 ### cancelDragDrop <Score text="cancelDragDrop" /> 
 
-▸ **cancelDragDrop**(): `void` <Badge type="tip" text="other" />
+• **cancelDragDrop**(): `void` <Badge type="tip" text="other" />
 
 中断所有的DragDrop
 
@@ -294,7 +297,7 @@ ___
 
 ### createUI <Score text="createUI" /> 
 
-▸ **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="other" />
+• **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="other" />
 
 创建UIPrefab
 
@@ -322,7 +325,7 @@ ___
 
 ### createUIByName <Score text="createUIByName" /> 
 
-▸ **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
+• **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
 
 创建UIPrefab
 
@@ -343,7 +346,7 @@ ___
 
 ### createUIByPath <Score text="createUIByPath" /> 
 
-▸ **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
+• **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="other" />
 
 创建UIPrefab
 
@@ -364,7 +367,7 @@ ___
 
 ### createUIOnlyClass <Score text="createUIOnlyClass" /> 
 
-▸ **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="other" />
+• **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="other" />
 
 创建空的UI
 
@@ -391,7 +394,7 @@ ___
 
 ### endDragDrop <Score text="endDragDrop" /> 
 
-▸ **endDragDrop**(`InReply`): `void` <Badge type="tip" text="other" />
+• **endDragDrop**(`InReply`): `void` <Badge type="tip" text="other" />
 
 中断一个拖拽事件, 传入一个操作的事件
 
@@ -407,7 +410,7 @@ ___
 
 ### findUIBehavior <Score text="findUIBehavior" /> 
 
-▸ **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md) <Badge type="tip" text="other" />
+• **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md) <Badge type="tip" text="other" />
 
 获取UI脚本
 
@@ -428,7 +431,7 @@ ___
 
 ### getAbsoluteSize <Score text="getAbsoluteSize" /> 
 
-▸ **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 返回绝对空间中几何图形的大小
 
@@ -449,7 +452,7 @@ ___
 
 ### getAssetIconDataByAssetID <Score text="getAssetIconDataByAssetID" /> 
 
-▸ **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="other" />
+• **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="other" />
 
 获取资源的ICON信息
 
@@ -470,7 +473,7 @@ ___
 
 ### getCurrentMousePosition <Score text="getCurrentMousePosition" /> 
 
-▸ **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 获取当前鼠标所在的绝对位置
 
@@ -485,7 +488,7 @@ ___
 
 ### getDragDroppingContent <Score text="getDragDroppingContent" /> 
 
-▸ **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <Badge type="tip" text="other" />
+• **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <Badge type="tip" text="other" />
 
 获取当前的DragDrop事件
 
@@ -500,7 +503,7 @@ ___
 
 ### getLastMousePosition <Score text="getLastMousePosition" /> 
 
-▸ **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 获取上一次鼠标所在的绝对位置
 
@@ -515,7 +518,7 @@ ___
 
 ### getLocalSize <Score text="getLocalSize" /> 
 
-▸ **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 返回局部空间中几何图形的大小
 
@@ -536,7 +539,7 @@ ___
 
 ### getLocalTopLeft <Score text="getLocalTopLeft" /> 
 
-▸ **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 返回局部空间中几何图形的局部顶部/左侧
 
@@ -557,7 +560,7 @@ ___
 
 ### getMousePositionOnPlatform <Score text="getMousePositionOnPlatform" /> 
 
-▸ **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
 
@@ -572,7 +575,7 @@ ___
 
 ### getMousePositionOnViewport <Score text="getMousePositionOnViewport" /> 
 
-▸ **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 获取平台的鼠标光标在视口控件的本地空间中的位置。
 
@@ -587,7 +590,7 @@ ___
 
 ### getPlayerScreenWidgetGeometry <Score text="getPlayerScreenWidgetGeometry" /> 
 
-▸ **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
+• **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
 
 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
 
@@ -608,7 +611,7 @@ ___
 
 ### getResolutionChanged <Score text="getResolutionChanged" /> 
 
-▸ **getResolutionChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
+• **getResolutionChanged**(`Delegate`): `void` <Badge type="tip" text="other" />
 
 分辨率改变时的回调
 
@@ -624,7 +627,7 @@ ___
 
 ### getViewportScale <Score text="getViewportScale" /> 
 
-▸ **getViewportScale**(): `number` <Badge type="tip" text="other" />
+• **getViewportScale**(): `number` <Badge type="tip" text="other" />
 
 获取应用于视口和所有小部件的当前DPI Scale。
 
@@ -639,7 +642,7 @@ ___
 
 ### getViewportSize <Score text="getViewportSize" /> 
 
-▸ **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 获取游戏视口的大小。
 
@@ -654,7 +657,7 @@ ___
 
 ### getViewportWidgetGeometry <Score text="getViewportWidgetGeometry" /> 
 
-▸ **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
+• **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="other" />
 
 获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
 
@@ -669,7 +672,7 @@ ___
 
 ### isDragDropping <Score text="isDragDropping" /> 
 
-▸ **isDragDropping**(): `boolean` <Badge type="tip" text="other" />
+• **isDragDropping**(): `boolean` <Badge type="tip" text="other" />
 
 判断当前是否有一个DragDrop事件
 
@@ -684,7 +687,7 @@ ___
 
 ### isUnderLocation <Score text="isUnderLocation" /> 
 
-▸ **isUnderLocation**(`geometry`, `absolutePosition`): `boolean` <Badge type="tip" text="other" />
+• **isUnderLocation**(`geometry`, `absolutePosition`): `boolean` <Badge type="tip" text="other" />
 
 判定给定坐标是否在geometry下
 
@@ -706,7 +709,7 @@ ___
 
 ### localToAbsolute <Score text="localToAbsolute" /> 
 
-▸ **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。
 
@@ -728,7 +731,7 @@ ___
 
 ### localToViewport <Score text="localToViewport" /> 
 
-▸ **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
+• **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="other" />
 
 将几何体的局部坐标转换为局部视口坐标。
 
@@ -747,7 +750,7 @@ ___
 
 ### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
 
-▸ **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="other" />
+• **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="other" />
 
 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
 
@@ -771,7 +774,7 @@ ___
 
 ### screenToViewport <Score text="screenToViewport" /> 
 
-▸ **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 将屏幕位置(以像素为单位)转换为视口控件的本地空间。
 
@@ -792,7 +795,7 @@ ___
 
 ### screenToWidgetAbsolute <Score text="screenToWidgetAbsolute" /> 
 
-▸ **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
 
@@ -814,7 +817,7 @@ ___
 
 ### screenToWidgetLocal <Score text="screenToWidgetLocal" /> 
 
-▸ **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
 
@@ -837,7 +840,7 @@ ___
 
 ### setFocusToGameViewport <Score text="setFocusToGameViewport" /> 
 
-▸ **setFocusToGameViewport**(): `void` <Badge type="tip" text="other" />
+• **setFocusToGameViewport**(): `void` <Badge type="tip" text="other" />
 
 设置关注游戏窗口
 
@@ -847,7 +850,7 @@ ___
 
 ### setInputModeGameAndUI <Score text="setInputModeGameAndUI" /> 
 
-▸ **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void` <Badge type="tip" text="other" />
+• **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void` <Badge type="tip" text="other" />
 
 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
 
@@ -865,7 +868,7 @@ ___
 
 ### setInputModeGameOnly <Score text="setInputModeGameOnly" /> 
 
-▸ **setInputModeGameOnly**(): `void` <Badge type="tip" text="other" />
+• **setInputModeGameOnly**(): `void` <Badge type="tip" text="other" />
 
 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入
 
@@ -875,7 +878,7 @@ ___
 
 ### setInputModeUIOnly <Score text="setInputModeUIOnly" /> 
 
-▸ **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void` <Badge type="tip" text="other" />
+• **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void` <Badge type="tip" text="other" />
 
 设置只允许UI响应用户输入的输入模式。
 
@@ -892,7 +895,7 @@ ___
 
 ### transformVectorAbsoluteToLocal <Score text="transformVectorAbsoluteToLocal" /> 
 
-▸ **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 转化绝对空间下矢量到局部空间下
 
@@ -914,7 +917,7 @@ ___
 
 ### transformVectorLocalToAbsolute <Score text="transformVectorLocalToAbsolute" /> 
 
-▸ **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
+• **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="other" />
 
 转化局部空间下矢量到绝对空间下
 

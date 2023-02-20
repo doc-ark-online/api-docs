@@ -12,10 +12,7 @@
 
 ## Implemented by
 
-- [`HumanoidV2GlovesPart`](../classes/Gameplay.HumanoidV2GlovesPart.md)
-- [`HumanoidV2LowerClothPart`](../classes/Gameplay.HumanoidV2LowerClothPart.md)
-- [`HumanoidV2ShoePart`](../classes/Gameplay.HumanoidV2ShoePart.md)
-- [`HumanoidV2UpperClothPart`](../classes/Gameplay.HumanoidV2UpperClothPart.md)
+- [`HumanoidV2ClothPart`](../classes/Gameplay.HumanoidV2ClothPart.md)
 
 ## Table of contents
 
@@ -56,11 +53,10 @@
 
 ### getAreaCount <Score text="getAreaCount" /> 
 
-▸ **getAreaCount**(): `number` <Badge type="tip" text="other" />
+• **getAreaCount**(): `number` <Badge type="tip" text="other" />
 
 获取衣服区域数量
 
-客户端生效
 
 #### Returns
 
@@ -72,11 +68,10 @@ ___
 
 ### getColor <Score text="getColor" /> 
 
-▸ **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取颜色
 
-客户端生效
 
 #### Parameters
 
@@ -94,11 +89,10 @@ ___
 
 ### getDesignAngle <Score text="getDesignAngle" /> 
 
-▸ **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
+• **getDesignAngle**(`index`): `number` <Badge type="tip" text="other" />
 
 获取图案方向
 
-客户端生效
 
 #### Parameters
 
@@ -116,11 +110,10 @@ ___
 
 ### getDesignColor <Score text="getDesignColor" /> 
 
-▸ **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取图案颜色
 
-客户端生效
 
 #### Parameters
 
@@ -138,11 +131,10 @@ ___
 
 ### getDesignTexture <Score text="getDesignTexture" /> 
 
-▸ **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
+• **getDesignTexture**(`index`): `string` <Badge type="tip" text="other" />
 
 获取衣服图案
 
-客户端生效
 
 #### Parameters
 
@@ -159,11 +151,10 @@ GUID
 
 ### getPatternAngle <Score text="getPatternAngle" /> 
 
-▸ **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
+• **getPatternAngle**(`index`): `number` <Badge type="tip" text="other" />
 
 获取花纹旋转
 
-客户端生效
 
 #### Parameters
 
@@ -181,11 +172,10 @@ ___
 
 ### getPatternColor <Score text="getPatternColor" /> 
 
-▸ **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取花纹颜色
 
-客户端生效
 
 #### Parameters
 
@@ -203,11 +193,10 @@ ___
 
 ### getPatternHeight <Score text="getPatternHeight" /> 
 
-▸ **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
+• **getPatternHeight**(`index`): `number` <Badge type="tip" text="other" />
 
 设置花纹纵向拉伸
 
-客户端生效
 
 #### Parameters
 
@@ -225,11 +214,10 @@ ___
 
 ### getPatternIntensity <Score text="getPatternIntensity" /> 
 
-▸ **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
+• **getPatternIntensity**(`index`): `number` <Badge type="tip" text="other" />
 
 获取花纹显示程度
 
-客户端生效
 
 #### Parameters
 
@@ -247,11 +235,10 @@ ___
 
 ### getPatternWidth <Score text="getPatternWidth" /> 
 
-▸ **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
+• **getPatternWidth**(`index`): `number` <Badge type="tip" text="other" />
 
 获取花纹横向拉伸
 
-客户端生效
 
 #### Parameters
 
@@ -269,11 +256,10 @@ ___
 
 ### getTexture <Score text="getTexture" /> 
 
-▸ **getTexture**(`index`): `string` <Badge type="tip" text="other" />
+• **getTexture**(`index`): `string` <Badge type="tip" text="other" />
 
 获取花纹
 
-客户端生效
 
 #### Parameters
 
@@ -291,12 +277,16 @@ ___
 
 ### setColor <Score text="setColor" /> 
 
-▸ **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -304,19 +294,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setDesignAngle <Score text="setDesignAngle" /> 
 
-▸ **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setDesignAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置图案方向
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -324,19 +318,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `value` | `number` | 角度 `{Min:0,Max:360}` |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setDesignColor <Score text="setDesignColor" /> 
 
-▸ **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setDesignColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置图案颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -344,19 +342,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setDesignTexture <Score text="setDesignTexture" /> 
 
-▸ **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setDesignTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置衣服图案
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -364,18 +366,22 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 
 ### setPatternAngle <Score text="setPatternAngle" /> 
 
-▸ **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPatternAngle**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹旋转
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -383,19 +389,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `value` | `number` | 角度 `{Min:0,Max:360}` |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setPatternColor <Score text="setPatternColor" /> 
 
-▸ **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPatternColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹颜色
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -403,19 +413,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setPatternHeight <Score text="setPatternHeight" /> 
 
-▸ **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPatternHeight**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹纵向拉伸
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -423,19 +437,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setPatternIntensity <Score text="setPatternIntensity" /> 
 
-▸ **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPatternIntensity**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹显示程度
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -443,19 +461,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `value` | `number` | 强度 `{Min:0,Max:1}` |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setPatternWidth <Score text="setPatternWidth" /> 
 
-▸ **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPatternWidth**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹横向拉伸
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -463,19 +485,23 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
 ___
 
 ### setTexture <Score text="setTexture" /> 
 
-▸ **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setTexture**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
 
 设置花纹
 
-sync = false:客户端;
-sync = true:双端
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
 
 #### Parameters
 
@@ -483,5 +509,5 @@ sync = true:双端
 | :------ | :------ | :------ |
 | `index` | `number` | 区域 |
 | `GUID` | `string` | 贴图GUID |
-| `sync` | `boolean` | true 同步; false 不同步 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 

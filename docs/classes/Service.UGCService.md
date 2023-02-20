@@ -26,7 +26,7 @@
 
 ### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
-▸ **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
+• **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
 
 以指定模板创建本地工程，并获取工程路径
 
@@ -62,7 +62,7 @@ ___
 
 ### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
-▸ **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
+• **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
 
 获取当前手机本地的UGC工程列表
 
@@ -93,7 +93,7 @@ ___
 
 ### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
-▸ **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
+• **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
 
 获取当前玩家已发布的UGC游戏列表
 
@@ -138,7 +138,7 @@ ___
 
 ### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
-▸ **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
+• **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
 
 获取模板列表，可以分页方式查询
 
@@ -185,7 +185,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
 
 获取用户建造管理器全局实例
 

@@ -14,7 +14,7 @@
 
 | Properties |
 | :-----|
-| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 设置是否开启透明效果|
+| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> since:v0.21.0 reason:接口更改 replacement:fadeEffectEnable|
 | **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 摄像机与角色之间的物体|
 
 | Accessors |
@@ -36,6 +36,7 @@
 | **[cameraUpLimitAngle](Gameplay.CameraSystem.md#camerauplimitangle)**(): `number` <br> 获取摄像机向上角度限制|
 | **[cameraWorldTransform](Gameplay.CameraSystem.md#cameraworldtransform)**(): [`Transform`](Type.Transform.md) <br> 获取当前摄像机世界Transform|
 | **[enableMovementCollisionDetection](Gameplay.CameraSystem.md#enablemovementcollisiondetection)**(): `boolean` <br> 获取是否开启运动碰撞检测,启用后大于最小增量的位置改变会使摄像机忽视碰撞,默认启用|
+| **[fadeEffectEnable](Gameplay.CameraSystem.md#fadeeffectenable)**(): `boolean` <br> 获取是否开启透明效果|
 | **[fadeEffectValue](Gameplay.CameraSystem.md#fadeeffectvalue)**(): `number` <br> 获取透明效果的透明度|
 | **[fixedCameraZAxis](Gameplay.CameraSystem.md#fixedcamerazaxis)**(): `boolean` <br> 获取是否固定摄像机Z轴|
 | **[followTargetEnable](Gameplay.CameraSystem.md#followtargetenable)**(): `boolean` <br> 获取是否开启跟随目标功能|
@@ -43,7 +44,7 @@
 | **[lockTargetOffset](Gameplay.CameraSystem.md#locktargetoffset)**(): [`Vector`](Type.Vector.md) <br> 获取锁定目标的偏移|
 | **[movementCollisionDuration](Gameplay.CameraSystem.md#movementcollisionduration)**(): `number` <br> 获取停止运动后运动碰撞的持续时间|
 | **[movementCollisionMinLocationDelta](Gameplay.CameraSystem.md#movementcollisionminlocationdelta)**(): `number` <br> 获取启用运动碰撞的最小位置增量|
-| **[occlusionDetectionEnable](Gameplay.CameraSystem.md#occlusiondetectionenable)**(): `boolean` <br> 获取是否开启透明效果|
+| **[occlusionDetectionEnable](Gameplay.CameraSystem.md#occlusiondetectionenable)**(): `boolean` <br> 获取是否开启遮挡检测|
 | **[orthoFarClipPlane](Gameplay.CameraSystem.md#orthofarclipplane)**(): `number` <br> 获取正交视图的远平面距离(以世界单位表示)|
 | **[orthoNearClipPlane](Gameplay.CameraSystem.md#orthonearclipplane)**(): `number` <br> 获取正交视图的近平面距离(以世界单位表示)|
 | **[orthoWidth](Gameplay.CameraSystem.md#orthowidth)**(): `number` <br> 获取正交宽度|
@@ -83,6 +84,10 @@
 ### enableFadeEffect <Score text="enableFadeEffect" /> 
 
 • **enableFadeEffect**: `boolean`
+
+**`Deprecated`**
+
+since:v0.21.0 reason:接口更改 replacement:fadeEffectEnable
 
 设置是否开启透明效果
 
@@ -487,6 +492,29 @@ ___
 
 ___
 
+### fadeEffectEnable <Score text="fadeEffectEnable" /> 
+
+• `get` **fadeEffectEnable**(): `boolean`
+
+获取是否开启透明效果
+
+#### Returns
+
+`boolean`
+
+• `set` **fadeEffectEnable**(`bFadeEffectEnable`): `void`
+
+设置是否开启透明效果(同时开启遮挡检测)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bFadeEffectEnable` | `boolean` |
+
+
+___
+
 ### fadeEffectValue <Score text="fadeEffectValue" /> 
 
 • `get` **fadeEffectValue**(): `number`
@@ -652,7 +680,7 @@ ___
 
 • `get` **occlusionDetectionEnable**(): `boolean`
 
-获取是否开启透明效果
+获取是否开启遮挡检测
 
 #### Returns
 
@@ -660,7 +688,7 @@ ___
 
 • `set` **occlusionDetectionEnable**(`bEnableOcclusionDetection`): `void`
 
-设置是否开启透明效果
+设置是否开启遮挡检测
 
 #### Parameters
 
@@ -929,7 +957,7 @@ ___
 
 ### applySettings <Score text="applySettings" /> 
 
-▸ **applySettings**(`CameraSetting`): `void` <Badge type="tip" text="other" />
+• **applySettings**(`CameraSetting`): `void` <Badge type="tip" text="other" />
 
 应用摄像机系统数据
 
@@ -945,7 +973,7 @@ ___
 
 ### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
 
-▸ **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
+• **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="other" />
 
 附加摄像机到角色的胶囊体插槽上
 
@@ -955,7 +983,7 @@ ___
 
 ### attachCameraToCharacterMeshSlot <Score text="attachCameraToCharacterMeshSlot" /> 
 
-▸ **attachCameraToCharacterMeshSlot**(`slot`): `void` <Badge type="tip" text="other" />
+• **attachCameraToCharacterMeshSlot**(`slot`): `void` <Badge type="tip" text="other" />
 
 附加摄像机到角色的模型插槽上
 
@@ -971,7 +999,7 @@ ___
 
 ### attachToGameObject <Score text="attachToGameObject" /> 
 
-▸ **attachToGameObject**(`target`): `void` <Badge type="tip" text="other" />
+• **attachToGameObject**(`target`): `void` <Badge type="tip" text="other" />
 
 相机附加至目标物体
 
@@ -987,7 +1015,7 @@ ___
 
 ### cameraFocusing <Score text="cameraFocusing" /> 
 
-▸ **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void` <Badge type="tip" text="other" />
+• **cameraFocusing**(`targetArmLength`, `targetOffset`, `timeInterval?`): `void` <Badge type="tip" text="other" />
 
 摄像机聚焦
 
@@ -1005,7 +1033,7 @@ ___
 
 ### cameraLockTarget <Score text="cameraLockTarget" /> 
 
-▸ **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void` <Badge type="tip" text="other" />
+• **cameraLockTarget**(`target`, `lockInterval?`, `lockSpeed?`, `lockRange?`, `lockDistance?`, `lockOffset?`, `bPause?`): `void` <Badge type="tip" text="other" />
 
 相机锁定目标(相比setCameraLockTarget多了更多复杂的设置)
 
@@ -1027,7 +1055,7 @@ ___
 
 ### cancelCameraFollowTarget <Score text="cancelCameraFollowTarget" /> 
 
-▸ **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
+• **cancelCameraFollowTarget**(): `void` <Badge type="tip" text="other" />
 
 取消跟随物体
 
@@ -1037,7 +1065,7 @@ ___
 
 ### cancelCameraLockTarget <Score text="cancelCameraLockTarget" /> 
 
-▸ **cancelCameraLockTarget**(): `void` <Badge type="tip" text="other" />
+• **cancelCameraLockTarget**(): `void` <Badge type="tip" text="other" />
 
 取消锁定物体
 
@@ -1047,7 +1075,7 @@ ___
 
 ### getCurrentSettings <Score text="getCurrentSettings" /> 
 
-▸ **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
+• **getCurrentSettings**(): [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) <Badge type="tip" text="other" />
 
 获取当前的摄像机系统数据
 
@@ -1062,7 +1090,7 @@ ___
 
 ### getDefaultCameraShakeData <Score text="getDefaultCameraShakeData" /> 
 
-▸ **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <Badge type="tip" text="other" />
+• **getDefaultCameraShakeData**(): [`CameraShakeData`](../modules/Gameplay.Gameplay.md#camerashakedata) <Badge type="tip" text="other" />
 
 获取默认的摄像机震动数据
 
@@ -1077,7 +1105,7 @@ ___
 
 ### moveByPath <Score text="moveByPath" /> 
 
-▸ **moveByPath**(`path`, `completeCallback`): `void` <Badge type="tip" text="other" />
+• **moveByPath**(`path`, `completeCallback`): `void` <Badge type="tip" text="other" />
 
 镜头移动
 
@@ -1094,7 +1122,7 @@ ___
 
 ### resetOverrideCameraRotation <Score text="resetOverrideCameraRotation" /> 
 
-▸ **resetOverrideCameraRotation**(): `void` <Badge type="tip" text="other" />
+• **resetOverrideCameraRotation**(): `void` <Badge type="tip" text="other" />
 
 取消旋转覆盖
 
@@ -1104,7 +1132,7 @@ ___
 
 ### screenShock <Score text="screenShock" /> 
 
-▸ **screenShock**(`maxRange?`, `decay?`, `speed?`): `void` <Badge type="tip" text="other" />
+• **screenShock**(`maxRange?`, `decay?`, `speed?`): `void` <Badge type="tip" text="other" />
 
 震屏
 
@@ -1122,7 +1150,7 @@ ___
 
 ### setCameraFollowTarget <Score text="setCameraFollowTarget" /> 
 
-▸ **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
+• **setCameraFollowTarget**(`target`): `void` <Badge type="tip" text="other" />
 
 相机跟随物体
 
@@ -1138,7 +1166,7 @@ ___
 
 ### setCameraLockTarget <Score text="setCameraLockTarget" /> 
 
-▸ **setCameraLockTarget**(`target`): `void` <Badge type="tip" text="other" />
+• **setCameraLockTarget**(`target`): `void` <Badge type="tip" text="other" />
 
 相机锁定物体
 
@@ -1154,7 +1182,7 @@ ___
 
 ### setOverrideCameraRotation <Score text="setOverrideCameraRotation" /> 
 
-▸ **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void` <Badge type="tip" text="other" />
+• **setOverrideCameraRotation**(`newOverrideRotation`, `clampByCameraModeRotationLimits?`): `void` <Badge type="tip" text="other" />
 
 覆盖摄像机旋转，从控制器传入值处截断
 
@@ -1171,7 +1199,7 @@ ___
 
 ### startCameraShake <Score text="startCameraShake" /> 
 
-▸ **startCameraShake**(`cameraShakeData`): `void` <Badge type="tip" text="other" />
+• **startCameraShake**(`cameraShakeData`): `void` <Badge type="tip" text="other" />
 
 开始摄像机震动
 
@@ -1193,7 +1221,7 @@ ___
 
 ### stopCameraShake <Score text="stopCameraShake" /> 
 
-▸ **stopCameraShake**(): `void` <Badge type="tip" text="other" />
+• **stopCameraShake**(): `void` <Badge type="tip" text="other" />
 
 停止摄像机震动
 
@@ -1203,7 +1231,7 @@ ___
 
 ### switchCameraMode <Score text="switchCameraMode" /> 
 
-▸ **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void` <Badge type="tip" text="other" />
+• **switchCameraMode**(`newCameraMode`, `enableRealEffect?`): `void` <Badge type="tip" text="other" />
 
 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)
 

@@ -342,7 +342,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-▸ **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
 
 是否有动画GUID
 
@@ -357,7 +357,7 @@ ___
 
 ### isFiring <Score text="isFiring" /> 
 
-▸ **isFiring**(): `boolean` <Badge type="tip" text="other" />
+• **isFiring**(): `boolean` <Badge type="tip" text="other" />
 
 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
 

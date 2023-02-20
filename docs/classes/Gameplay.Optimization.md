@@ -14,7 +14,7 @@
 
 ### enableOptimization <Score text="enableOptimization" /> 
 
-▸ `Static` **enableOptimization**(`isEnable`): `void` <Badge type="tip" text="other" />
+• `Static` **enableOptimization**(`isEnable`): `void` <Badge type="tip" text="other" />
 
 开启或关闭角色优化(角色裁剪、动画更新率降低等)
 

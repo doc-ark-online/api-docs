@@ -27,6 +27,7 @@ Gameplay.asyncGetCurrentPlayer().then((player) => {
 | **[loop](Gameplay.Animation.md#loop)**(): `number` <br> Auto模式表示循环播放次数，Custom模式表示是否循环  非1:是，1:否|
 | **[onAnimFinished](Gameplay.Animation.md#onanimfinished)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发)|
 | **[rate](Gameplay.Animation.md#rate)**(): `number` <br> 获取动画播放速率|
+| **[slot](Gameplay.Animation.md#slot)**(): [`AnimSlot`](../enums/Gameplay.AnimSlot.md) <br> 获取动画播放插槽|
 
 | Methods |
 | :-----|
@@ -170,11 +171,48 @@ this.Anim.play();
 | `animRate` | `number` |
 
 
+___
+
+### slot <Score text="slot" /> 
+
+• `get` **slot**(): [`AnimSlot`](../enums/Gameplay.AnimSlot.md)
+
+获取动画播放插槽
+
+使用示例:获取动画播放插槽
+```ts
+let anim = player.character.loadAnimation(animGUID);
+console.log(anim.slot);
+```
+
+#### Returns
+
+[`AnimSlot`](../enums/Gameplay.AnimSlot.md)
+
+• `set` **slot**(`animslot`): `void`
+
+设置动画播放插槽
+
+使用示例:动画播放插槽
+```ts
+// 让动画只在上半身播放
+let anim = player.character.loadAnimation(animGUID);
+anim.slot = Gameplay.AnimSlot.Upper;
+anim.play();
+```
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `animslot` | [`AnimSlot`](../enums/Gameplay.AnimSlot.md) |
+
+
 ## Methods
 
 ### pause <Score text="pause" /> 
 
-▸ **pause**(): `boolean` <Badge type="tip" text="other" />
+• **pause**(): `boolean` <Badge type="tip" text="other" />
 
 暂停动画,不会触发onAnimFinished委托
 
@@ -185,7 +223,7 @@ this.Anim.play();
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 .......
-anim.pause(); 
+anim.pause();
 ```
 
 #### Returns
@@ -198,7 +236,7 @@ ___
 
 ### play <Score text="play" /> 
 
-▸ **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` <Badge type="tip" text="other" />
 
 从动画资源的起点播放动画
 
@@ -207,7 +245,7 @@ ___
 使用示例:播放动画
 ```ts
 let anim = player.character.loadAnimation(animGUID);
-anim.play(); 
+anim.play();
 ```
 
 #### Returns
@@ -220,7 +258,7 @@ ___
 
 ### resume <Score text="resume" /> 
 
-▸ **resume**(): `boolean` <Badge type="tip" text="other" />
+• **resume**(): `boolean` <Badge type="tip" text="other" />
 
 从当前位置继续动画播放
 
@@ -231,7 +269,7 @@ ___
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.resume(); 
+anim.resume();
 ```
 
 #### Returns
@@ -244,7 +282,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-▸ **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` <Badge type="tip" text="other" />
 
 停止播放,不会触发onAnimFinished委托
 
@@ -255,7 +293,7 @@ ___
 let anim = player.character.loadAnimation(animGUID);
 anim.play();
 ...
-anim.stop(); 
+anim.stop();
 ```
 
 #### Returns

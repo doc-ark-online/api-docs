@@ -178,7 +178,7 @@ ___
 
 ### add <Score text="add" /> 
 
-▸ **add**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **add**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 矩阵逐元素相加。
 
@@ -199,7 +199,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-▸ **clone**(): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **clone**(): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 克隆当前矩阵。
 
@@ -214,7 +214,7 @@ ___
 
 ### determinant <Score text="determinant" /> 
 
-▸ **determinant**(): `number` <Badge type="tip" text="other" />
+• **determinant**(): `number` <Badge type="tip" text="other" />
 
 计算当前矩阵的行列式。
 
@@ -229,7 +229,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-▸ **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 判断当前矩阵是否在误差范围内与指定矩阵相等。
 
@@ -251,7 +251,7 @@ ___
 
 ### identity <Score text="identity" /> 
 
-▸ **identity**(): `void` <Badge type="tip" text="other" />
+• **identity**(): `void` <Badge type="tip" text="other" />
 
 将当前矩阵设为单位矩阵。
 
@@ -261,7 +261,7 @@ ___
 
 ### invert <Score text="invert" /> 
 
-▸ **invert**(): `void` <Badge type="tip" text="other" />
+• **invert**(): `void` <Badge type="tip" text="other" />
 
 将当前矩阵计算为其逆矩阵。注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。
 
@@ -271,7 +271,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-▸ **multiply**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **multiply**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 矩阵乘法。将当前矩阵左乘指定矩阵的结果赋值给当前矩阵。
 
@@ -288,7 +288,7 @@ ___
 
 this
 
-▸ **multiply**(`v`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **multiply**(`v`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 矩阵数乘。将当前矩阵与指定标量的数乘结果赋值给当前矩阵。
 
@@ -309,7 +309,7 @@ ___
 
 ### rotate <Score text="rotate" /> 
 
-▸ **rotate**(`rad`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **rotate**(`rad`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 将当前矩阵左乘旋转矩阵的结果赋值给当前矩阵，旋转矩阵由旋转轴和旋转角度给出。
 
@@ -330,7 +330,7 @@ ___
 
 ### scale <Score text="scale" /> 
 
-▸ **scale**(`vec`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **scale**(`vec`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 将当前矩阵左乘缩放矩阵的结果赋值给当前矩阵，缩放矩阵由各个轴的缩放给出。
 
@@ -351,7 +351,7 @@ ___
 
 ### set <Score text="set" /> 
 
-▸ **set**(`other`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **set**(`other`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 设置当前矩阵使其与指定矩阵相等。
 
@@ -368,7 +368,7 @@ ___
 
 this
 
-▸ **set**(`m00?`, `m01?`, `m02?`, `m10?`, `m11?`, `m12?`, `m20?`, `m21?`, `m22?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **set**(`m00?`, `m01?`, `m02?`, `m10?`, `m11?`, `m12?`, `m20?`, `m21?`, `m22?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 设置当前矩阵指定元素值。
 
@@ -397,7 +397,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-▸ **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
+• **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
 
 判断当前矩阵是否与指定矩阵相等。
 
@@ -418,7 +418,7 @@ ___
 
 ### subtract <Score text="subtract" /> 
 
-▸ **subtract**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• **subtract**(`mat`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 当前矩阵逐元素减去参数矩阵
 
@@ -439,7 +439,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-▸ **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` <Badge type="tip" text="other" />
 
 返回当前矩阵的字符串表示。
 
@@ -454,7 +454,7 @@ ___
 
 ### transpose <Score text="transpose" /> 
 
-▸ **transpose**(): `void` <Badge type="tip" text="other" />
+• **transpose**(): `void` <Badge type="tip" text="other" />
 
 将当前矩阵计算为其转置矩阵。
 
@@ -464,7 +464,7 @@ ___
 
 ### add <Score text="add" /> 
 
-▸ `Static` **add**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **add**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 逐元素矩阵加法
 
@@ -493,7 +493,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-▸ `Static` **clone**(`a`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **clone**(`a`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 获得指定矩阵的拷贝
 
@@ -514,7 +514,7 @@ ___
 
 ### determinant <Score text="determinant" /> 
 
-▸ `Static` **determinant**(`a`): `number` <Badge type="tip" text="other" />
+• `Static` **determinant**(`a`): `number` <Badge type="tip" text="other" />
 
 求目标矩阵行列式
 
@@ -535,7 +535,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-▸ `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
 
 排除浮点数误差的矩阵近似等价判断
 
@@ -558,7 +558,7 @@ ___
 
 ### fromMat4 <Score text="fromMat" /> 
 
-▸ `Static` **fromMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **fromMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 取四阶矩阵的前三阶
 
@@ -586,7 +586,7 @@ ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-▸ `Static` **fromRotation**(`rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **fromRotation**(`rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 计算旋转矩阵
 
@@ -614,7 +614,7 @@ ___
 
 ### fromScaling <Score text="fromScaling" /> 
 
-▸ `Static` **fromScaling**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **fromScaling**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 计算缩放矩阵
 
@@ -642,7 +642,7 @@ ___
 
 ### fromTranslation <Score text="fromTranslation" /> 
 
-▸ `Static` **fromTranslation**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **fromTranslation**(`v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 计算位移矩阵
 
@@ -670,7 +670,7 @@ ___
 
 ### fromViewUp <Score text="fromViewUp" /> 
 
-▸ `Static` **fromViewUp**(`view`, `up?`, `outer?`, `epsilon?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **fromViewUp**(`view`, `up?`, `outer?`, `epsilon?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 根据视口前方向和上方向计算矩阵
 
@@ -700,7 +700,7 @@ ___
 
 ### inverseTransposeMat4 <Score text="inverseTransposeMat" /> 
 
-▸ `Static` **inverseTransposeMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **inverseTransposeMat4**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 计算指定四阶矩阵的逆转置三维矩阵
 
@@ -728,7 +728,7 @@ ___
 
 ### invert <Score text="invert" /> 
 
-▸ `Static` **invert**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **invert**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 将目标矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。
 
@@ -756,7 +756,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 矩阵乘法
 
@@ -781,7 +781,7 @@ ___
 
 计算后的矩阵
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 取四阶矩阵的前三阶，与三维矩阵相乘
 
@@ -806,7 +806,7 @@ ___
 
 计算后的矩阵
 
-▸ `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 矩阵标量乘法
 
@@ -835,7 +835,7 @@ ___
 
 ### rotate <Score text="rotate" /> 
 
-▸ `Static` **rotate**(`a`, `rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **rotate**(`a`, `rad`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 在给定矩阵变换基础上加入新旋转变换
 
@@ -864,7 +864,7 @@ ___
 
 ### scale <Score text="scale" /> 
 
-▸ `Static` **scale**(`a`, `v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **scale**(`a`, `v`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 在给定矩阵变换基础上加入新缩放变换
 
@@ -893,7 +893,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-▸ `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
+• `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
 
 矩阵等价判断
 
@@ -915,7 +915,7 @@ ___
 
 ### subtract <Score text="subtract" /> 
 
-▸ `Static` **subtract**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **subtract**(`a`, `b`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 逐元素矩阵减法
 
@@ -944,7 +944,7 @@ ___
 
 ### transformVector <Score text="transformVector" /> 
 
-▸ `Static` **transformVector**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **transformVector**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 向量与三维矩阵乘法
 
@@ -973,7 +973,7 @@ ___
 
 ### transformVector2 <Score text="transformVector" /> 
 
-▸ `Static` **transformVector2**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `Static` **transformVector2**(`a`, `b`, `outer?`): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
 
 向量与三维矩阵乘法，默认向量第三位为 1。
 
@@ -1002,7 +1002,7 @@ ___
 
 ### transpose <Score text="transpose" /> 
 
-▸ `Static` **transpose**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **transpose**(`a`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
 
 将目标矩阵变为转置矩阵
 

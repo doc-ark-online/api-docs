@@ -13,6 +13,11 @@
 | **[right](UI.Margin.md#right)**: `number` <br> 右|
 | **[top](UI.Margin.md#top)**: `number` <br> 上|
 
+使用一个值初始化四个值的构造方法
+
+**`Effect`**
+
+
 #### Parameters
 
 | Name | Type | Description |

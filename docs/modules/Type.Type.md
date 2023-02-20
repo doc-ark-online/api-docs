@@ -1,4 +1,6 @@
-# Type <Badge type="tip" text="Namespace" /> 
+Type
+
+# Type <Badge type="tip" text="Namespace" /> <Score text="Type" />
 
 ## Table of contents
 
@@ -8,6 +10,7 @@
 | [CollisionStatus](../enums/Type.CollisionStatus.md) <br> 碰撞属性状态|
 | [GraphicsLevel](../enums/Type.GraphicsLevel.md) <br> 画质等级|
 | [Keys](../enums/Type.Keys.md) <br> 按键Key值|
+| [LanguageType](../enums/Type.LanguageType.md) <br> 游戏语言|
 | [NetStatus](../enums/Type.NetStatus.md) <br> 同步状态|
 | [PropertyStatus](../enums/Type.PropertyStatus.md) <br> 属性状态|
 | [RuntimePlatform](../enums/Type.RuntimePlatform.md) <br> 运行平台|
@@ -34,5 +37,6 @@
 
 | Interfaces |
 | :-----|
+| [Class](../interfaces/Type.Class.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 | [DelegateInterface](../interfaces/Type.DelegateInterface.md) <br> 委托接口|
-| [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md)|
+- [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md)

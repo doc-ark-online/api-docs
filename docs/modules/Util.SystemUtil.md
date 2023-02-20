@@ -48,7 +48,7 @@ ___
 
 ### getCurrentEnv <Score text="getCurrentEnv" /> 
 
-▸ **getCurrentEnv**(): `string` <Badge type="tip" text="other" />
+• **getCurrentEnv**(): `string` <Badge type="tip" text="other" />
 
 获取当前环境
 
@@ -63,7 +63,7 @@ ___
 
 ### getDefaultGraphicsCPULevel <Score text="getDefaultGraphicsCPULevel" /> 
 
-▸ **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
+• **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取默认CPU画质等级
 
@@ -78,7 +78,7 @@ ___
 
 ### getDefaultGraphicsGPULevel <Score text="getDefaultGraphicsGPULevel" /> 
 
-▸ **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
+• **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取默认GPU画质等级
 
@@ -93,7 +93,7 @@ ___
 
 ### getEditorVersion <Score text="getEditorVersion" /> 
 
-▸ **getEditorVersion**(): `string` <Badge type="tip" text="other" />
+• **getEditorVersion**(): `string` <Badge type="tip" text="other" />
 
 获取编辑器版本号
 
@@ -108,7 +108,7 @@ ___
 
 ### getFullEditorVersion <Score text="getFullEditorVersion" /> 
 
-▸ **getFullEditorVersion**(): `string` <Badge type="tip" text="other" />
+• **getFullEditorVersion**(): `string` <Badge type="tip" text="other" />
 
 获取完整编辑器版本号
 
@@ -123,7 +123,7 @@ ___
 
 ### getGameId <Score text="getGameId" /> 
 
-▸ **getGameId**(): `string` <Badge type="tip" text="other" />
+• **getGameId**(): `string` <Badge type="tip" text="other" />
 
 获取当前游戏GameId
 
@@ -138,7 +138,7 @@ ___
 
 ### getGraphicsCPULevel <Score text="getGraphicsCPULevel" /> 
 
-▸ **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
+• **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取当前CPU画质等级
 
@@ -153,7 +153,7 @@ ___
 
 ### getGraphicsGPULevel <Score text="getGraphicsGPULevel" /> 
 
-▸ **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
+• **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="other" />
 
 获取当前GPU画质等级
 
@@ -168,7 +168,7 @@ ___
 
 ### getVersion <Score text="getVersion" /> 
 
-▸ **getVersion**(): `string` <Badge type="tip" text="other" />
+• **getVersion**(): `string` <Badge type="tip" text="other" />
 
 获取当前游戏版本
 
@@ -183,7 +183,7 @@ ___
 
 ### isClient <Score text="isClient" /> 
 
-▸ **isClient**(): `boolean` <Badge type="tip" text="other" />
+• **isClient**(): `boolean` <Badge type="tip" text="other" />
 
 是否客户端运行
 
@@ -198,7 +198,7 @@ ___
 
 ### isMobile <Score text="isMobile" /> 
 
-▸ **isMobile**(): `boolean` <Badge type="tip" text="other" />
+• **isMobile**(): `boolean` <Badge type="tip" text="other" />
 
 判断当前是否是移动端
 
@@ -213,7 +213,7 @@ ___
 
 ### isServer <Score text="isServer" /> 
 
-▸ **isServer**(): `boolean` <Badge type="tip" text="other" />
+• **isServer**(): `boolean` <Badge type="tip" text="other" />
 
 是否服务器运行
 
@@ -228,7 +228,7 @@ ___
 
 ### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
 
-▸ **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="other" />
+• **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="other" />
 
 设置当前CPU画质等级
 
@@ -244,7 +244,7 @@ ___
 
 ### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
 
-▸ **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="other" />
+• **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="other" />
 
 设置当前GPU画质等级
 

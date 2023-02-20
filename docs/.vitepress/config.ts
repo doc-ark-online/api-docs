@@ -65,32 +65,28 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    algolia: {
-      appId: 'I2PHYUBLCN',
-      apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech'
-    },
+    // algolia: {
+    //   appId: 'I2PHYUBLCN',
+    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
+    //   indexName: 'api-docs_prodigytech'
+    // },
     siteTitle: 'API',
     nav: [
       {
-        text: '官网',
-        link: 'https://creator.ark.online'
-      },
-      {
-        text: '教程',
+        text: '官方教程',
         link: 'https://meta.feishu.cn/wiki/wikcnmY0MQweLdbnlywkJJiDucd'
       },
       {
         text: '产品手册',
-        link: 'https://meta.feishu.cn/wiki/wikcn99zEe9TVroSOhlIrTaLQnh'
+        link: 'https://meta.feishu.cn/wiki/wikcnmFHMSugP9ozHw5PAkcEwYd'
       },
       {
         text: '论坛',
-        link: 'https://forum.ark.online'
+        link: 'https://forums.ark.online/#/'
       },
       {
-        text: '020 版本',
-        items: [{ text: '021 BETA', link: 'https://api-docs-021.ark.online/' }]
+        text: '021 版本',
+        items: [{ text: '020 版本', link: 'https://api-docs.ark.online/' }]
       }
       // {
       //   text: '语言',
@@ -119,7 +115,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/release-021/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',

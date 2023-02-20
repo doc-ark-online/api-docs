@@ -111,7 +111,7 @@ ___
 
 ### clearAll <Score text="clearAll" /> 
 
-▸ **clearAll**(): `void` <Badge type="tip" text="other" />
+• **clearAll**(): `void` <Badge type="tip" text="other" />
 
 停止所有音效和BGM，并释放所有音效和BGM资源
 
@@ -121,11 +121,10 @@ ___
 
 ### get3DSoundGameObject <Score text="get" /> 
 
-▸ **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
+• **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
 
 根据播放id获取一个Sound
 
-客户端生效
 
 #### Parameters
 
@@ -143,7 +142,7 @@ ___
 
 ### play3DSound <Score text="play" /> 
 
-▸ **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number` <Badge type="tip" text="other" />
+• **play3DSound**(`resId`, `target`, `loopNum?`, `volume?`, `playParam?`): `number` <Badge type="tip" text="other" />
 
 在目标播放3D音效
 
@@ -157,7 +156,7 @@ ___
 | `target` | `string` \| `GameObject` \| [`Vector`](Type.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
 | `loopNum?` | `number` |  循环次数 default: 1 |
 | `volume?` | `number` |  音量 default: 1 |
-| `playParam?` | `any` |  播放参数: `{ innerRadius: 内部半径(默认值200), falloffDistance: 衰减距离(默认值600)，与内部半径是累加关系。(内部半径+衰减距离)是最终范围 }` default: `{}` |
+| `playParam?` | `any` |  播放参数: `{ innerRadius: 内部半径(默认值200), maxDistance: 衰减距离,不包含内部半径(默认值600) }` default: `{}` |
 
 #### Returns
 
@@ -169,7 +168,7 @@ ___
 
 ### playBGM <Score text="playBGM" /> 
 
-▸ **playBGM**(`resId`, `volume?`): `void` <Badge type="tip" text="other" />
+• **playBGM**(`resId`, `volume?`): `void` <Badge type="tip" text="other" />
 
 播放背景音乐
 
@@ -187,7 +186,7 @@ ___
 
 ### playSound <Score text="playSound" /> 
 
-▸ **playSound**(`resId`, `loopNum?`, `volume?`): `string` <Badge type="tip" text="other" />
+• **playSound**(`resId`, `loopNum?`, `volume?`): `string` <Badge type="tip" text="other" />
 
 根据资源Id播放声音
 
@@ -217,7 +216,7 @@ ___
 
 ### stop3DSound <Score text="stop" /> 
 
-▸ **stop3DSound**(`playId`): `void` <Badge type="tip" text="other" />
+• **stop3DSound**(`playId`): `void` <Badge type="tip" text="other" />
 
 停止3D声音
 
@@ -234,7 +233,7 @@ ___
 
 ### stopAll3DSound <Score text="stopAll" /> 
 
-▸ **stopAll3DSound**(): `void` <Badge type="tip" text="other" />
+• **stopAll3DSound**(): `void` <Badge type="tip" text="other" />
 
 停止一切3D声音
 
@@ -245,7 +244,7 @@ ___
 
 ### stopAllSound <Score text="stopAllSound" /> 
 
-▸ **stopAllSound**(): `void` <Badge type="tip" text="other" />
+• **stopAllSound**(): `void` <Badge type="tip" text="other" />
 
 停止除BGM以外的一切2D声音
 
@@ -256,7 +255,7 @@ ___
 
 ### stopBGM <Score text="stopBGM" /> 
 
-▸ **stopBGM**(): `void` <Badge type="tip" text="other" />
+• **stopBGM**(): `void` <Badge type="tip" text="other" />
 
 停止背景音乐
 
@@ -267,7 +266,7 @@ ___
 
 ### stopSound <Score text="stopSound" /> 
 
-▸ **stopSound**(`resId`): `void` <Badge type="tip" text="other" />
+• **stopSound**(`resId`): `void` <Badge type="tip" text="other" />
 
 根据资源Id停止声音
 
@@ -284,7 +283,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-▸ `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
 
 获取音效管理器全局实例
 

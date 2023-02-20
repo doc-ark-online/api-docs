@@ -172,7 +172,7 @@ ___
 
 ### getAxisXLinearType <Score text="getAxisXLinearType" /> 
 
-▸ **getAxisXLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisXLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取X轴滑动类型
 
@@ -187,7 +187,7 @@ ___
 
 ### getAxisYLinearType <Score text="getAxisYLinearType" /> 
 
-▸ **getAxisYLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisYLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取Y轴滑动类型
 
@@ -202,7 +202,7 @@ ___
 
 ### getAxisZLinearType <Score text="getAxisZLinearType" /> 
 
-▸ **getAxisZLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisZLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
 
 获取Z轴滑动类型
 
@@ -216,7 +216,7 @@ Z轴滑动类型
 
 ### setAxisXLinearType <Score text="setAxisXLinearType" /> 
 
-▸ **setAxisXLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisXLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 
 设置X轴滑动类型
 
@@ -232,7 +232,7 @@ ___
 
 ### setAxisYLinearType <Score text="setAxisYLinearType" /> 
 
-▸ **setAxisYLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisYLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 
 设置Y轴滑动类型
 
@@ -248,7 +248,7 @@ ___
 
 ### setAxisZLinearType <Score text="setAxisZLinearType" /> 
 
-▸ **setAxisZLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisZLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
 
 设置Z轴滑动类型
 

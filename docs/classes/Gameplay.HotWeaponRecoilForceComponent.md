@@ -304,7 +304,7 @@ ___
 
 ### getDeepJitter <Score text="getDeepJitter" /> 
 
-▸ **getDeepJitter**(): `number` <Badge type="tip" text="other" />
+• **getDeepJitter**(): `number` <Badge type="tip" text="other" />
 
 获取深度抖动值
 
@@ -319,7 +319,7 @@ ___
 
 ### getHorizontalJitter <Score text="getHorizontalJitter" /> 
 
-▸ **getHorizontalJitter**(): `number` <Badge type="tip" text="other" />
+• **getHorizontalJitter**(): `number` <Badge type="tip" text="other" />
 
 获取水平抖动值
 
@@ -334,7 +334,7 @@ ___
 
 ### getHorizontalOffset <Score text="getHorizontalOffset" /> 
 
-▸ **getHorizontalOffset**(): `number` <Badge type="tip" text="other" />
+• **getHorizontalOffset**(): `number` <Badge type="tip" text="other" />
 
 获取水平偏移值
 
@@ -349,7 +349,7 @@ ___
 
 ### getVerticalJitter <Score text="getVerticalJitter" /> 
 
-▸ **getVerticalJitter**(): `number` <Badge type="tip" text="other" />
+• **getVerticalJitter**(): `number` <Badge type="tip" text="other" />
 
 获取垂直抖动值
 
@@ -364,7 +364,7 @@ ___
 
 ### getVerticalOffset <Score text="getVerticalOffset" /> 
 
-▸ **getVerticalOffset**(): `number` <Badge type="tip" text="other" />
+• **getVerticalOffset**(): `number` <Badge type="tip" text="other" />
 
 获取垂直偏移值
 

@@ -45,7 +45,7 @@
 
 ### add <Score text="add" /> 
 
-▸ **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
+• **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
 
 添加一个监听方法(有重复过滤)
 
@@ -62,7 +62,7 @@ ___
 
 ### call <Score text="call" /> 
 
-▸ **call**(`...params`): `void` <Badge type="tip" text="other" />
+• **call**(`...params`): `void` <Badge type="tip" text="other" />
 
 执行
 
@@ -78,7 +78,7 @@ ___
 
 ### clear <Score text="clear" /> 
 
-▸ **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` <Badge type="tip" text="other" />
 
 清除所有监听
 
@@ -88,7 +88,7 @@ ___
 
 ### includes <Score text="includes" /> 
 
-▸ **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
+• **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
 
 判断是否包含某个监听方法
 
@@ -110,7 +110,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-▸ **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
+• **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
 
 移除一个监听方法
 

@@ -4,6 +4,12 @@
 
 UI的驱动脚本基类
 
+## Hierarchy
+
+- **`UIBehavior`**
+
+  ↳ [`BaseView`](Extension.BaseView.md)
+
 ## Table of contents
 
 | Accessors |
@@ -83,7 +89,7 @@ ___
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
-Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer) 
+Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
@@ -111,7 +117,7 @@ Layer层级
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 ```ts
-this.layer = Extension.UILayerScene; 
+this.layer = Extension.UILayerScene;
 // 内置定义好的层级
 [
 Extension.UILayerScene,  //场景层 zOrder开始于0
@@ -207,7 +213,7 @@ ___
 
 ### destroy <Score text="destroy" /> 
 
-▸ **destroy**(): `void` <Badge type="tip" text="other" />
+• **destroy**(): `void` <Badge type="tip" text="other" />
 
 销毁UI对象
 
@@ -217,7 +223,7 @@ ___
 
 ### detectDrag <Score text="detectDrag" /> 
 
-▸ **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
+• **detectDrag**(`dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 触发DragDrop事件的检测
 
@@ -238,7 +244,7 @@ ___
 
 ### detectDragIfPressed <Score text="detectDragIfPressed" /> 
 
-▸ **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
+• **detectDragIfPressed**(`inPointEvent`, `dragKey`): [`EventReply`](UI.EventReply.md) <Badge type="tip" text="other" />
 
 如果事件检测通过就触发DragDrop事件的回复
 
@@ -260,7 +266,7 @@ ___
 
 ### newDragDrop <Score text="newDragDrop" /> 
 
-▸ **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md) <Badge type="tip" text="other" />
+• **newDragDrop**(`inVisualWidget`, `inTag?`, `inPayLoad?`, `inPivot?`, `inOffset?`): [`DragDropOperation`](UI.DragDropOperation.md) <Badge type="tip" text="other" />
 
 创建DragDrop事件
 
@@ -285,7 +291,7 @@ ___
 
 ### setVisible <Score text="setVisible" /> 
 
-▸ **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="other" />
+• **setVisible**(`inVisible`, `...params`): `void` <Badge type="tip" text="other" />
 
 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数
 
@@ -302,7 +308,7 @@ ___
 
 ### addBehavior <Score text="addBehavior" /> 
 
-▸ `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="other" />
+• `Static` **addBehavior**(`key`, `value`): `void` <Badge type="tip" text="other" />
 
 添加一个全局的行为记录
 
@@ -319,7 +325,7 @@ ___
 
 ### clearBehavior <Score text="clearBehavior" /> 
 
-▸ `Static` **clearBehavior**(): `void` <Badge type="tip" text="other" />
+• `Static` **clearBehavior**(): `void` <Badge type="tip" text="other" />
 
 清空全局的行为记录
 
@@ -329,7 +335,7 @@ ___
 
 ### getBehavior <Score text="getBehavior" /> 
 
-▸ `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="other" />
+• `Static` **getBehavior**(`key`): `any` <Badge type="tip" text="other" />
 
 获取一个全局的行为记录
 
@@ -350,7 +356,7 @@ ___
 
 ### removeBehavior <Score text="removeBehavior" /> 
 
-▸ `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="other" />
+• `Static` **removeBehavior**(`key`): `void` <Badge type="tip" text="other" />
 
 移除一个全局的行为记录
 

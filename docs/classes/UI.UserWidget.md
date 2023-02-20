@@ -124,7 +124,7 @@ UI控件的集合,预制体UI
 
 ### addToViewport <Score text="addToViewport" /> 
 
-▸ **addToViewport**(`zOrder`): `void` <Badge type="tip" text="other" />
+• **addToViewport**(`zOrder`): `void` <Badge type="tip" text="other" />
 
 添加到屏幕上
 
@@ -139,7 +139,7 @@ UI控件的集合,预制体UI
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
-▸ **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
 
 通过相对路径查找节点
 
@@ -159,7 +159,7 @@ UI控件的集合,预制体UI
 
 ### removeRootContent <Score text="removeRootContent" /> 
 
-▸ **removeRootContent**(): `void` <Badge type="tip" text="other" />
+• **removeRootContent**(): `void` <Badge type="tip" text="other" />
 
 移除根Canvas,会销毁根Canvas，无法再次使用
 
@@ -169,7 +169,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-▸ `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
 
 创建 UserWidget 控件
 

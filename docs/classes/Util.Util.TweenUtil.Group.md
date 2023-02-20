@@ -18,7 +18,7 @@
 
 ### add <Score text="add" /> 
 
-▸ **add**(`tween`): `void` <Badge type="tip" text="other" />
+• **add**(`tween`): `void` <Badge type="tip" text="other" />
 
 将指定补间对象加入当前补间组
 
@@ -34,7 +34,7 @@ ___
 
 ### getAll <Score text="getAll" /> 
 
-▸ **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
+• **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
 
 获取当前补间组中所有补间对象
 
@@ -49,7 +49,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-▸ **remove**(`tween`): `void` <Badge type="tip" text="other" />
+• **remove**(`tween`): `void` <Badge type="tip" text="other" />
 
 将指定补间对象移出当前补间组并删除
 
@@ -65,7 +65,7 @@ ___
 
 ### removeAll <Score text="removeAll" /> 
 
-▸ **removeAll**(): `void` <Badge type="tip" text="other" />
+• **removeAll**(): `void` <Badge type="tip" text="other" />
 
 移除当前补间组中所有补间对象
 
@@ -81,7 +81,7 @@ ___
 
 ### update <Score text="update" /> 
 
-▸ **update**(`time?`, `preserve?`): `boolean` <Badge type="tip" text="other" />
+• **update**(`time?`, `preserve?`): `boolean` <Badge type="tip" text="other" />
 
 更新补间组
 
@@ -93,7 +93,7 @@ const group = new Extension.TweenUtil.Group()
 group.update()
 
 // 更新全局补间组
-Extension.TweenUtil.TWEEN.update() 
+Extension.TweenUtil.TWEEN.update()
 ```
 
 #### Parameters

@@ -108,7 +108,7 @@ Transform( Location(0, 0, 0), Rotation(0, 0, 0), Scale(1, 1, 1) )
 
 ### clone <Score text="clone" /> 
 
-▸ **clone**(): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
+• **clone**(): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
 克隆一个新的 Transform
 
@@ -123,7 +123,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-▸ **fromString**(`str`): `void` <Badge type="tip" text="other" />
+• **fromString**(`str`): `void` <Badge type="tip" text="other" />
 
 读取字符串数据
 
@@ -139,7 +139,7 @@ ___
 
 ### getForwardVector <Score text="getForwardVector" /> 
 
-▸ **getForwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getForwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回 Transform 的向前方向向量
 
@@ -154,7 +154,7 @@ ___
 
 ### getRightVector <Score text="getRightVector" /> 
 
-▸ **getRightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getRightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回 Transform 的向右方向向量
 
@@ -169,7 +169,7 @@ ___
 
 ### getUpVector <Score text="getUpVector" /> 
 
-▸ **getUpVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getUpVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 返回 Transform 的向上方向向量
 
@@ -184,7 +184,7 @@ ___
 
 ### inverseTransformDirection <Score text="inverseTransformDirection" /> 
 
-▸ **inverseTransformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **inverseTransformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 将世界方向转化为本地方向
 
@@ -205,7 +205,7 @@ ___
 
 ### inverseTransformLocation <Score text="inverseTransformLocation" /> 
 
-▸ **inverseTransformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **inverseTransformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 将世界坐标转化为本地坐标
 
@@ -226,7 +226,7 @@ ___
 
 ### lookAt <Score text="lookAt" /> 
 
-▸ **lookAt**(`target`): `void` <Badge type="tip" text="other" />
+• **lookAt**(`target`): `void` <Badge type="tip" text="other" />
 
 Transform面向目标方向
 
@@ -242,7 +242,7 @@ ___
 
 ### rotate <Score text="rotate" /> 
 
-▸ **rotate**(`axis`, `angle`): `void` <Badge type="tip" text="other" />
+• **rotate**(`axis`, `angle`): `void` <Badge type="tip" text="other" />
 
 Transform绕指定轴旋转
 
@@ -259,7 +259,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-▸ **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` <Badge type="tip" text="other" />
 
 输出为一个有格式的字符串
 
@@ -274,7 +274,7 @@ ___
 
 ### transformDirection <Score text="transformDirection" /> 
 
-▸ **transformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **transformDirection**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 将本地方向转化为世界方向
 
@@ -295,7 +295,7 @@ ___
 
 ### transformLocation <Score text="transformLocation" /> 
 
-▸ **transformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **transformLocation**(`location`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
 
 本地坐标转化为世界坐标
 
@@ -316,7 +316,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-▸ `Static` **fromString**(`str`, `outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
+• `Static` **fromString**(`str`, `outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
 
 读取字符串数据创建或者写入一个 Transform
 
