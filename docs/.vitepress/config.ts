@@ -65,11 +65,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    // algolia: {
-    //   appId: 'I2PHYUBLCN',
-    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
-    //   indexName: 'api-docs_prodigytech'
-    // },
+    algolia: {
+      appId: 'I2PHYUBLCN',
+      apiKey: '62ee775311415d26549e0e30fef5aa38',
+      indexName: 'api-docs_prodigytech'
+    },
     siteTitle: 'API',
     nav: [
       {
