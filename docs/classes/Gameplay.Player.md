@@ -957,7 +957,7 @@ ___
 
 ::: warning Precautions
 
-不可以作为玩家得唯一Id使用。如果需要使用唯一Id请查阅 [getUserSystemId](Gameplay.Player.md#getUserSystemId)
+不可以作为玩家得唯一Id使用。如果需要使用唯一Id请查阅 [getUserSystemId](https://api-docs.ark.online/classes/Gameplay.Player.html#getusersystemid)
 
 :::
 
