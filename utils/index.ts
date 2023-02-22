@@ -30,10 +30,8 @@ export function dealConfigSidebar() {
     const items: DefaultTheme.SidebarItem[] = []
     for (const key in json[typeObj]) {
       if (key === 'Modules Functions' || key === 'Modules Type Aliases') {
-        // console.log(key)
         continue
       }
-      console.log('xxx', key)
       const item = json[typeObj][key]
       items.push(
         ...item.map((item) => {
@@ -56,12 +54,6 @@ export function dealConfigSidebar() {
 
 /** 将目录从类型分类改为根据命名空间分类 */
 export function typeToNamespace(paths: string[]) {
-  interface Info {
-    fullName: string
-    link: string
-    name: string
-    namespace: string
-  }
   const targetObjArr = paths
     .map((p) => {
       const dirs = readdirSync(path.join(process.cwd(), `./docs/${p}`))
