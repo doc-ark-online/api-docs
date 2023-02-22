@@ -12,8 +12,8 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[Orthographic](Gameplay.CameraProjectionMode.md#orthographic)** = ``1`` <br> 摄像机镜头正交模式|
-| **[Perspective](Gameplay.CameraProjectionMode.md#perspective)** = ``0`` <br> 摄像机镜头透视模式|
+| **[Orthographic](Gameplay.CameraProjectionMode.md#orthographic)** = ``1`` <br> |
+| **[Perspective](Gameplay.CameraProjectionMode.md#perspective)** = ``0`` <br> |
 
 ## Enumeration Members
 

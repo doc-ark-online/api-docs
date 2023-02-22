@@ -12,10 +12,10 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[NoCollision](Gameplay.CollisionType.md#nocollision)** = ``0`` <br> 无碰撞|
-| **[PhysicsOnly](Gameplay.CollisionType.md#physicsonly)** = ``2`` <br> 仅物理|
-| **[QueryAndPhysics](Gameplay.CollisionType.md#queryandphysics)** = ``3`` <br> 物理和检测|
-| **[QueryOnly](Gameplay.CollisionType.md#queryonly)** = ``1`` <br> 仅检测|
+| **[NoCollision](Gameplay.CollisionType.md#nocollision)** = ``0`` <br> |
+| **[PhysicsOnly](Gameplay.CollisionType.md#physicsonly)** = ``2`` <br> |
+| **[QueryAndPhysics](Gameplay.CollisionType.md#queryandphysics)** = ``3`` <br> |
+| **[QueryOnly](Gameplay.CollisionType.md#queryonly)** = ``1`` <br> |
 
 ## Enumeration Members
 

@@ -27,7 +27,7 @@ GUI
 | **[disableImageGuid](UI.MaskButton.md#disableimageguid)**(): `string` <br> 获取禁用图片ID|
 | **[disableImageMargin](UI.MaskButton.md#disableimagemargin)**(): [`Margin`](UI.Margin.md) <br> 获取禁用图片边距|
 | **[disableImageSize](UI.MaskButton.md#disableimagesize)**(): [`Vector2`](Type.Vector2.md) <br> 获取禁用图片大小|
-| **[enableTransition](UI.MaskButton.md#enabletransition)**(`boolean`): `void` <br> 是否套用不同的按下方案|
+| **[enableTransition](UI.MaskButton.md#enabletransition)**(`inBoolean`: `boolean`): `void` <br> 是否套用不同的按下方案|
 | **[fanShapedRotated](UI.MaskButton.md#fanshapedrotated)**(): `number` <br> 获取扇形遮罩的旋转|
 | **[fanShapedRotatedCenter](UI.MaskButton.md#fanshapedrotatedcenter)**(): [`Vector2`](Type.Vector2.md) <br> 获取扇形遮罩的中心旋转点|
 | **[fanShapedValue](UI.MaskButton.md#fanshapedvalue)**(): `number` <br> 获取扇形遮罩的遮罩进度|
@@ -82,7 +82,6 @@ GUI
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -94,22 +93,22 @@ GUI
 | Methods |
 | :-----|
 | **[isPressed](UI.MaskButton.md#ispressed)**(): `boolean` <br> 是否按下|
-| **[setDisableImageColorByHex](UI.MaskButton.md#setdisableimagecolorbyhex)**(`string`): `void` <br> 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setDisableImageColorDecimal](UI.MaskButton.md#setdisableimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置禁用颜色指定R、G、B、A设置颜色 0 ~255|
-| **[setMaskImageColorByHex](UI.MaskButton.md#setmaskimagecolorbyhex)**(`string`): `void` <br> 设置遮罩图片颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setMaskImageColorDecimal](UI.MaskButton.md#setmaskimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置遮罩图片颜色指定R、G、B、A设置颜色 0 ~255|
-| **[setNormalImageColorByHex](UI.MaskButton.md#setnormalimagecolorbyhex)**(`string`): `void` <br> 设置普通图片颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setNormalImageColorDecimal](UI.MaskButton.md#setnormalimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置普通图片颜色 指定R、G、B、A设置颜色 0 ~255|
-| **[setPressedImageColorByHex](UI.MaskButton.md#setpressedimagecolorbyhex)**(`string`): `void` <br> 设置按压图片颜色指定Hex的颜色文本设定颜色 #05050505|
-| **[setPressedImageColorDecimal](UI.MaskButton.md#setpressedimagecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255|
-| **[newObject](UI.MaskButton.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`MaskButton`](UI.MaskButton.md) <br> 创建 Mask 控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
+| **[setDisableImageColorByHex](UI.MaskButton.md#setdisableimagecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505|
+| **[setDisableImageColorDecimal](UI.MaskButton.md#setdisableimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置禁用颜色指定R、G、B、A设置颜色 0 ~255|
+| **[setMaskImageColorByHex](UI.MaskButton.md#setmaskimagecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置遮罩图片颜色指定Hex的颜色文本设定颜色 #05050505|
+| **[setMaskImageColorDecimal](UI.MaskButton.md#setmaskimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置遮罩图片颜色指定R、G、B、A设置颜色 0 ~255|
+| **[setNormalImageColorByHex](UI.MaskButton.md#setnormalimagecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置普通图片颜色指定Hex的颜色文本设定颜色 #05050505|
+| **[setNormalImageColorDecimal](UI.MaskButton.md#setnormalimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置普通图片颜色 指定R、G、B、A设置颜色 0 ~255|
+| **[setPressedImageColorByHex](UI.MaskButton.md#setpressedimagecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置按压图片颜色指定Hex的颜色文本设定颜色 #05050505|
+| **[setPressedImageColorDecimal](UI.MaskButton.md#setpressedimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255|
+| **[newObject](UI.MaskButton.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md), `inName?`: `string`): [`MaskButton`](UI.MaskButton.md) <br> 创建 Mask 控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
@@ -119,7 +118,7 @@ GUI
 
 ### circleCenter <Score text="circleCenter" /> 
 
-• `get` **circleCenter**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **circleCenter**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取圆形遮罩的中心旋转点
 
@@ -130,7 +129,7 @@ GUI
 
 中心百分点
 
-• `set` **circleCenter**(`center`): `void` <Badge type="tip" text="other" />
+• `set` **circleCenter**(`center`): `void` <Badge type="tip" text="client" />
 
 设置圆形遮罩的中心旋转点
 
@@ -146,7 +145,7 @@ ___
 
 ### circleValue <Score text="circleValue" /> 
 
-• `get` **circleValue**(): `number` <Badge type="tip" text="other" />
+• `get` **circleValue**(): `number` <Badge type="tip" text="client" />
 
 获取圆形遮罩的遮挡百分值
 
@@ -157,7 +156,7 @@ ___
 
 进度值,0~1
 
-• `set` **circleValue**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **circleValue**(`value`): `void` <Badge type="tip" text="client" />
 
 设置圆形遮罩的遮挡百分值
 
@@ -173,7 +172,7 @@ ___
 
 ### clickMethod <Score text="clickMethod" /> 
 
-• `get` **clickMethod**(): [`ButtonClickMethod`](../enums/UI.ButtonClickMethod.md) <Badge type="tip" text="other" />
+• `get` **clickMethod**(): [`ButtonClickMethod`](../enums/UI.ButtonClickMethod.md) <Badge type="tip" text="client" />
 
 获取点击模式
 
@@ -184,7 +183,7 @@ ___
 
 点击模式
 
-• `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="other" />
+• `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="client" />
 
 设置点击模式
 
@@ -200,7 +199,7 @@ ___
 
 ### clickedDelegate <Score text="clickedDelegate" /> 
 
-• `get` **clickedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **clickedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 点击事件
 
@@ -214,7 +213,7 @@ ___
 
 ### disableImageColor <Score text="disableImageColor" /> 
 
-• `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **disableImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取禁用图片颜色
 
@@ -225,7 +224,7 @@ ___
 
 禁用图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **disableImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
+• `set` **disableImageColor**(`inColor`): `void` <Badge type="tip" text="client" />
 
 设置禁用图片颜色
 
@@ -241,7 +240,7 @@ ___
 
 ### disableImageDrawType <Score text="disableImageDrawType" /> 
 
-• `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
+• `get` **disableImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="client" />
 
 获取禁用图片绘制类型
 
@@ -252,7 +251,7 @@ ___
 
 禁用图片绘制类型
 
-• `set` **disableImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
+• `set` **disableImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="client" />
 
 设置禁用图片绘制类型
 
@@ -270,7 +269,7 @@ ___
 
 ### disableImageGuid <Score text="disableImageGuid" /> 
 
-• `get` **disableImageGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **disableImageGuid**(): `string` <Badge type="tip" text="client" />
 
 获取禁用图片ID
 
@@ -281,7 +280,7 @@ ___
 
 禁用图片ID
 
-• `set` **disableImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
+• `set` **disableImageGuid**(`inGuid`): `void` <Badge type="tip" text="client" />
 
 设置不可用图片ID
 
@@ -297,7 +296,7 @@ ___
 
 ### disableImageMargin <Score text="disableImageMargin" /> 
 
-• `get` **disableImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
+• `get` **disableImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="client" />
 
 获取禁用图片边距
 
@@ -308,7 +307,7 @@ ___
 
 禁用图片边距
 
-• `set` **disableImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
+• `set` **disableImageMargin**(`inMargin`): `void` <Badge type="tip" text="client" />
 
 设置禁用图片边距
 
@@ -324,7 +323,7 @@ ___
 
 ### disableImageSize <Score text="disableImageSize" /> 
 
-• `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **disableImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取禁用图片大小
 
@@ -335,7 +334,7 @@ ___
 
 禁用图片大小
 
-• `set` **disableImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **disableImageSize**(`inSize`): `void` <Badge type="tip" text="client" />
 
 设置禁用图片大小
 
@@ -350,7 +349,7 @@ ___
 
 ### enableTransition <Score text="enableTransition" /> 
 
-• `set` **enableTransition**(`inBoolean`): `void` <Badge type="tip" text="other" />
+• `set` **enableTransition**(`inBoolean`): `void` <Badge type="tip" text="client" />
 
 是否套用不同的按下方案
 
@@ -366,7 +365,7 @@ ___
 
 ### fanShapedRotated <Score text="fanShapedRotated" /> 
 
-• `get` **fanShapedRotated**(): `number` <Badge type="tip" text="other" />
+• `get` **fanShapedRotated**(): `number` <Badge type="tip" text="client" />
 
 获取扇形遮罩的旋转
 
@@ -377,7 +376,7 @@ ___
 
 旋转角度 0~1
 
-• `set` **fanShapedRotated**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **fanShapedRotated**(`value`): `void` <Badge type="tip" text="client" />
 
 设置扇形遮罩的旋转
 
@@ -393,7 +392,7 @@ ___
 
 ### fanShapedRotatedCenter <Score text="fanShapedRotatedCenter" /> 
 
-• `get` **fanShapedRotatedCenter**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **fanShapedRotatedCenter**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取扇形遮罩的中心旋转点
 
@@ -404,7 +403,7 @@ ___
 
 旋转中心百分点
 
-• `set` **fanShapedRotatedCenter**(`center`): `void` <Badge type="tip" text="other" />
+• `set` **fanShapedRotatedCenter**(`center`): `void` <Badge type="tip" text="client" />
 
 设置扇形遮罩的中心旋转点
 
@@ -420,7 +419,7 @@ ___
 
 ### fanShapedValue <Score text="fanShapedValue" /> 
 
-• `get` **fanShapedValue**(): `number` <Badge type="tip" text="other" />
+• `get` **fanShapedValue**(): `number` <Badge type="tip" text="client" />
 
 获取扇形遮罩的遮罩进度
 
@@ -431,7 +430,7 @@ ___
 
 进度值
 
-• `set` **fanShapedValue**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **fanShapedValue**(`value`): `void` <Badge type="tip" text="client" />
 
 设置扇形遮罩的遮罩进度
 
@@ -447,7 +446,7 @@ ___
 
 ### focusable <Score text="focusable" /> 
 
-• `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **focusable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否获取输入焦点
 
@@ -458,7 +457,7 @@ ___
 
 是否获取输入焦点
 
-• `set` **focusable**(`inFocus`): `void` <Badge type="tip" text="other" />
+• `set` **focusable**(`inFocus`): `void` <Badge type="tip" text="client" />
 
 设置是否获取输入焦点
 
@@ -473,7 +472,7 @@ ___
 
 ### hoveredDelegate <Score text="hoveredDelegate" /> 
 
-• `get` **hoveredDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **hoveredDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 悬浮事件
 
@@ -488,7 +487,7 @@ ___
 
 ### inverseOpacity <Score text="inverseOpacity" /> 
 
-• `get` **inverseOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **inverseOpacity**(): `number` <Badge type="tip" text="client" />
 
 获取反转透明度权重
 
@@ -499,7 +498,7 @@ ___
 
 权重
 
-• `set` **inverseOpacity**(`inverseOpacityWeight`): `void` <Badge type="tip" text="other" />
+• `set` **inverseOpacity**(`inverseOpacityWeight`): `void` <Badge type="tip" text="client" />
 
 反转透明度权重
 
@@ -514,7 +513,7 @@ ___
 
 ### isTransitionEnable <Score text="isTransitionEnable" /> 
 
-• `get` **isTransitionEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isTransitionEnable**(): `boolean` <Badge type="tip" text="client" />
 
 按钮是否启用过度模式,按下是否有效果
 
@@ -529,7 +528,7 @@ ___
 
 ### maskImageColor <Score text="maskImageColor" /> 
 
-• `get` **maskImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **maskImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取遮罩图片颜色
 
@@ -540,7 +539,7 @@ ___
 
 图片的颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **maskImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
+• `set` **maskImageColor**(`inColor`): `void` <Badge type="tip" text="client" />
 
 设置遮罩图片颜色
 
@@ -556,7 +555,7 @@ ___
 
 ### maskImageGuid <Score text="maskImageGuid" /> 
 
-• `get` **maskImageGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **maskImageGuid**(): `string` <Badge type="tip" text="client" />
 
 获取设置遮罩图片ID
 
@@ -567,7 +566,7 @@ ___
 
 遮罩图片ID
 
-• `set` **maskImageGuid**(`InGuid`): `void` <Badge type="tip" text="other" />
+• `set` **maskImageGuid**(`InGuid`): `void` <Badge type="tip" text="client" />
 
 设置遮罩图片ID
 
@@ -583,7 +582,7 @@ ___
 
 ### maskOpacity <Score text="maskOpacity" /> 
 
-• `get` **maskOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **maskOpacity**(): `number` <Badge type="tip" text="client" />
 
 获取遮挡处的底图的透明度
 
@@ -594,7 +593,7 @@ ___
 
 透明度
 
-• `set` **maskOpacity**(`o`): `void` <Badge type="tip" text="other" />
+• `set` **maskOpacity**(`o`): `void` <Badge type="tip" text="client" />
 
 设置遮挡处的底图的透明度
 
@@ -610,7 +609,7 @@ ___
 
 ### maskTextureOpacity <Score text="maskTextureOpacity" /> 
 
-• `get` **maskTextureOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **maskTextureOpacity**(): `number` <Badge type="tip" text="client" />
 
 获取遮挡处的遮挡图的透明度
 
@@ -621,7 +620,7 @@ ___
 
 透明度
 
-• `set` **maskTextureOpacity**(`o`): `void` <Badge type="tip" text="other" />
+• `set` **maskTextureOpacity**(`o`): `void` <Badge type="tip" text="client" />
 
 设置遮挡处的遮挡图的透明度
 
@@ -637,7 +636,7 @@ ___
 
 ### maskType <Score text="maskType" /> 
 
-• `get` **maskType**(): [`MaskButtonType`](../enums/UI.MaskButtonType.md) <Badge type="tip" text="other" />
+• `get` **maskType**(): [`MaskButtonType`](../enums/UI.MaskButtonType.md) <Badge type="tip" text="client" />
 
 获取遮罩裁剪类型
 
@@ -648,7 +647,7 @@ ___
 
 裁剪类型
 
-• `set` **maskType**(`inType`): `void` <Badge type="tip" text="other" />
+• `set` **maskType**(`inType`): `void` <Badge type="tip" text="client" />
 
 设置遮罩裁剪类型
 
@@ -663,7 +662,7 @@ ___
 
 ### normalImageColor <Score text="normalImageColor" /> 
 
-• `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **normalImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取普通图片颜色
 
@@ -674,7 +673,7 @@ ___
 
 普通图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **normalImageColor**(`inNormalColor`): `void` <Badge type="tip" text="other" />
+• `set` **normalImageColor**(`inNormalColor`): `void` <Badge type="tip" text="client" />
 
 设置普通图片颜色
 
@@ -690,7 +689,7 @@ ___
 
 ### normalImageDrawType <Score text="normalImageDrawType" /> 
 
-• `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
+• `get` **normalImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="client" />
 
 获取普通图片绘制类型
 
@@ -701,7 +700,7 @@ ___
 
 普通图片绘制类型
 
-• `set` **normalImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
+• `set` **normalImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="client" />
 
 设置普通图片绘制类型
 
@@ -717,7 +716,7 @@ ___
 
 ### normalImageGuid <Score text="normalImageGuid" /> 
 
-• `get` **normalImageGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **normalImageGuid**(): `string` <Badge type="tip" text="client" />
 
 获取普通图片ID
 
@@ -728,7 +727,7 @@ ___
 
 普通图片ID
 
-• `set` **normalImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
+• `set` **normalImageGuid**(`inGuid`): `void` <Badge type="tip" text="client" />
 
 设置普通图片ID
 
@@ -744,7 +743,7 @@ ___
 
 ### normalImageMargin <Score text="normalImageMargin" /> 
 
-• `get` **normalImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
+• `get` **normalImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="client" />
 
 获取普通图片边距
 
@@ -755,7 +754,7 @@ ___
 
 普通图片边距
 
-• `set` **normalImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
+• `set` **normalImageMargin**(`inMargin`): `void` <Badge type="tip" text="client" />
 
 设置普通图片边距
 
@@ -771,7 +770,7 @@ ___
 
 ### normalImageSize <Score text="normalImageSize" /> 
 
-• `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **normalImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取图片大小
 
@@ -782,7 +781,7 @@ ___
 
 普通图片大小
 
-• `set` **normalImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **normalImageSize**(`inSize`): `void` <Badge type="tip" text="client" />
 
 设置图片大小
 
@@ -797,7 +796,7 @@ ___
 
 ### pressedDelegate <Score text="pressedDelegate" /> 
 
-• `get` **pressedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **pressedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 按下事件
 
@@ -812,7 +811,7 @@ ___
 
 ### pressedImageColor <Score text="pressedImageColor" /> 
 
-• `get` **pressedImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **pressedImageColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取按压图片颜色
 
@@ -823,7 +822,7 @@ ___
 
 按压图片颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **pressedImageColor**(`inColor`): `void` <Badge type="tip" text="other" />
+• `set` **pressedImageColor**(`inColor`): `void` <Badge type="tip" text="client" />
 
 设置按压图片颜色
 
@@ -839,7 +838,7 @@ ___
 
 ### pressedImageDrawType <Score text="pressedImageDrawType" /> 
 
-• `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="other" />
+• `get` **pressedImageDrawType**(): [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <Badge type="tip" text="client" />
 
 获取按压图片绘制类型
 
@@ -850,7 +849,7 @@ ___
 
 按压图片绘制类型
 
-• `set` **pressedImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="other" />
+• `set` **pressedImageDrawType**(`inDrawType`): `void` <Badge type="tip" text="client" />
 
 设置按压图片绘制类型
 
@@ -866,7 +865,7 @@ ___
 
 ### pressedImageGuid <Score text="pressedImageGuid" /> 
 
-• `get` **pressedImageGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **pressedImageGuid**(): `string` <Badge type="tip" text="client" />
 
 获取按下图片ID
 
@@ -877,7 +876,7 @@ ___
 
 按下图片ID
 
-• `set` **pressedImageGuid**(`inGuid`): `void` <Badge type="tip" text="other" />
+• `set` **pressedImageGuid**(`inGuid`): `void` <Badge type="tip" text="client" />
 
 设置按下图片ID
 
@@ -893,7 +892,7 @@ ___
 
 ### pressedImageMargin <Score text="pressedImageMargin" /> 
 
-• `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="other" />
+• `get` **pressedImageMargin**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="client" />
 
 获取按压图片边距
 
@@ -904,7 +903,7 @@ ___
 
 按压图片边距
 
-• `set` **pressedImageMargin**(`inMargin`): `void` <Badge type="tip" text="other" />
+• `set` **pressedImageMargin**(`inMargin`): `void` <Badge type="tip" text="client" />
 
 设置按压图片边距
 
@@ -920,7 +919,7 @@ ___
 
 ### pressedImageSize <Score text="pressedImageSize" /> 
 
-• `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **pressedImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取按压图片大小
 
@@ -931,7 +930,7 @@ ___
 
 按压图片大小
 
-• `set` **pressedImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **pressedImageSize**(`inSize`): `void` <Badge type="tip" text="client" />
 
 设置按压图片大小
 
@@ -947,7 +946,7 @@ ___
 
 ### pressedMethod <Score text="pressedMethod" /> 
 
-• `get` **pressedMethod**(): [`ButtonPressMethod`](../enums/UI.ButtonPressMethod.md) <Badge type="tip" text="other" />
+• `get` **pressedMethod**(): [`ButtonPressMethod`](../enums/UI.ButtonPressMethod.md) <Badge type="tip" text="client" />
 
 获取按压模式
 
@@ -958,7 +957,7 @@ ___
 
 按压模式
 
-• `set` **pressedMethod**(`inPressedMethod`): `void` <Badge type="tip" text="other" />
+• `set` **pressedMethod**(`inPressedMethod`): `void` <Badge type="tip" text="client" />
 
 设置按压模式
 
@@ -974,7 +973,7 @@ ___
 
 ### releasedDelegate <Score text="releasedDelegate" /> 
 
-• `get` **releasedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **releasedDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 释放事件
 
@@ -988,7 +987,7 @@ ___
 
 ### roundBoxPercentOffset <Score text="roundBoxPercentOffset" /> 
 
-• `get` **roundBoxPercentOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **roundBoxPercentOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取矩形百分比大小边距偏移
 
@@ -999,7 +998,7 @@ ___
 
 矩形大小边距偏移的百分比占据，0~0.5
 
-• `set` **roundBoxPercentOffset**(`percent`): `void` <Badge type="tip" text="other" />
+• `set` **roundBoxPercentOffset**(`percent`): `void` <Badge type="tip" text="client" />
 
 设置矩形大小边距偏移
 
@@ -1089,7 +1088,7 @@ ___
 
 ### touchMethod <Score text="touchMethod" /> 
 
-• `get` **touchMethod**(): [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) <Badge type="tip" text="other" />
+• `get` **touchMethod**(): [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) <Badge type="tip" text="client" />
 
 获取触摸模式
 
@@ -1100,7 +1099,7 @@ ___
 
 触摸模式
 
-• `set` **touchMethod**(`inTouchMethod`): `void` <Badge type="tip" text="other" />
+• `set` **touchMethod**(`inTouchMethod`): `void` <Badge type="tip" text="client" />
 
 设置触摸模式
 
@@ -1115,7 +1114,7 @@ ___
 
 ### unHoveredDelegate <Score text="unHoveredDelegate" /> 
 
-• `get` **unHoveredDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **unHoveredDelegate**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 未悬浮事件
 
@@ -1130,7 +1129,7 @@ ___
 
 ### useMaskTextureOpacity <Score text="useMaskTextureOpacity" /> 
 
-• `get` **useMaskTextureOpacity**(): `boolean` <Badge type="tip" text="other" />
+• `get` **useMaskTextureOpacity**(): `boolean` <Badge type="tip" text="client" />
 
 获取遮罩轮廓是否裁剪底图
 
@@ -1141,7 +1140,7 @@ ___
 
 权重
 
-• `set` **useMaskTextureOpacity**(`inUseWeight`): `void` <Badge type="tip" text="other" />
+• `set` **useMaskTextureOpacity**(`inUseWeight`): `void` <Badge type="tip" text="client" />
 
 设置遮罩轮廓是否裁剪底图
 
@@ -1158,7 +1157,7 @@ ___
 
 ### isPressed <Score text="isPressed" /> 
 
-• **isPressed**(): `boolean` <Badge type="tip" text="other" />
+• **isPressed**(): `boolean` <Badge type="tip" text="client" />
 
 是否按下
 
@@ -1172,7 +1171,7 @@ ___
 
 ### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 
-• **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setDisableImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置不可用颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -1188,7 +1187,7 @@ ___
 
 ### setDisableImageColorDecimal <Score text="setDisableImageColorDecimal" /> 
 
-• **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setDisableImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置禁用颜色指定R、G、B、A设置颜色 0 ~255
 
@@ -1207,7 +1206,7 @@ ___
 
 ### setMaskImageColorByHex <Score text="setMaskImageColorByHex" /> 
 
-• **setMaskImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setMaskImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置遮罩图片颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -1223,7 +1222,7 @@ ___
 
 ### setMaskImageColorDecimal <Score text="setMaskImageColorDecimal" /> 
 
-• **setMaskImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setMaskImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置遮罩图片颜色指定R、G、B、A设置颜色 0 ~255
 
@@ -1242,7 +1241,7 @@ ___
 
 ### setNormalImageColorByHex <Score text="setNormalImageColorByHex" /> 
 
-• **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setNormalImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置普通图片颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -1258,7 +1257,7 @@ ___
 
 ### setNormalImageColorDecimal <Score text="setNormalImageColorDecimal" /> 
 
-• **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setNormalImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置普通图片颜色 指定R、G、B、A设置颜色 0 ~255
 
@@ -1277,7 +1276,7 @@ ___
 
 ### setPressedImageColorByHex <Score text="setPressedImageColorByHex" /> 
 
-• **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setPressedImageColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置按压图片颜色指定Hex的颜色文本设定颜色 #05050505
 
@@ -1293,7 +1292,7 @@ ___
 
 ### setPressedImageColorDecimal <Score text="setPressedImageColorDecimal" /> 
 
-• **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setPressedImageColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置按压图片颜色指定R、G、B、A设置颜色 0 ~255
 
@@ -1312,7 +1311,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`, `inName?`): [`MaskButton`](UI.MaskButton.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`MaskButton`](UI.MaskButton.md) <Badge type="tip" text="client" />
 
 创建 Mask 控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
 

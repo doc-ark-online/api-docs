@@ -12,8 +12,8 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Cylinder](Gameplay.WidgetGeometryMode.md#cylinder)** = ``1`` <br> 圆柱|
-| **[Plane](Gameplay.WidgetGeometryMode.md#plane)** = ``0`` <br> 平面|
+| **[Cylinder](Gameplay.WidgetGeometryMode.md#cylinder)** = ``1`` <br> |
+| **[Plane](Gameplay.WidgetGeometryMode.md#plane)** = ``0`` <br> |
 
 ## Enumeration Members
 

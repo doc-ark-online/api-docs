@@ -12,9 +12,9 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[RotationControl](Gameplay.CameraRotationMode.md#rotationcontrol)** = ``2`` <br> 旋转由输入控制|
-| **[RotationFixed](Gameplay.CameraRotationMode.md#rotationfixed)** = ``0`` <br> 旋转固定|
-| **[RotationFollow](Gameplay.CameraRotationMode.md#rotationfollow)** = ``1`` <br> 旋转跟随目标|
+| **[RotationControl](Gameplay.CameraRotationMode.md#rotationcontrol)** = ``2`` <br> |
+| **[RotationFixed](Gameplay.CameraRotationMode.md#rotationfixed)** = ``0`` <br> |
+| **[RotationFollow](Gameplay.CameraRotationMode.md#rotationfollow)** = ``1`` <br> |
 
 ## Enumeration Members
 

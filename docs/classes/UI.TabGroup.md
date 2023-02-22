@@ -22,9 +22,9 @@ GUI
 
 | Methods |
 | :-----|
-| **[init](UI.TabGroup.md#init)**((`btn`: `T`, `isSelect`: `boolean`) => `void`, (`index`: `number`) => `void`, `any`, `number`): `void` <br> 初始化|
-| **[select](UI.TabGroup.md#select)**(`number`, `boolean`): `boolean` <br> 设置当前的标签|
-| **[setSelectableChecker](UI.TabGroup.md#setselectablechecker)**((`index`: `number`) => `boolean`, `any`): `void` <br> 设置该标签是否可以切换的检测方法|
+| **[init](UI.TabGroup.md#init)**(`tabStyleHandle`: (`btn`: `T`, `isSelect`: `boolean`) => `void`, `selectCallBack`: (`index`: `number`) => `void`, `thisArg`: `any`, `defaultIndex?`: `number`): `void` <br> 初始化|
+| **[select](UI.TabGroup.md#select)**(`index`: `number`, `ignoreSame?`: `boolean`): `boolean` <br> 设置当前的标签|
+| **[setSelectableChecker](UI.TabGroup.md#setselectablechecker)**(`selectChecker`: (`index`: `number`) => `boolean`, `thisArg`: `any`): `void` <br> 设置该标签是否可以切换的检测方法|
 
 构造
 
@@ -44,7 +44,7 @@ GUI
 
 ### currentIndex <Score text="currentIndex" /> 
 
-• `get` **currentIndex**(): `number` <Badge type="tip" text="other" />
+• `get` **currentIndex**(): `number` <Badge type="tip" text="client" />
 
 当前选择的标签索引
 
@@ -59,7 +59,7 @@ GUI
 
 ### init <Score text="init" /> 
 
-• **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void` <Badge type="tip" text="other" />
+• **init**(`tabStyleHandle`, `selectCallBack`, `thisArg`, `defaultIndex?`): `void` <Badge type="tip" text="client" />
 
 初始化
 
@@ -78,7 +78,7 @@ ___
 
 ### select <Score text="select" /> 
 
-• **select**(`index`, `ignoreSame?`): `boolean` <Badge type="tip" text="other" />
+• **select**(`index`, `ignoreSame?`): `boolean` <Badge type="tip" text="client" />
 
 设置当前的标签
 
@@ -100,7 +100,7 @@ ___
 
 ### setSelectableChecker <Score text="setSelectableChecker" /> 
 
-• **setSelectableChecker**(`selectChecker`, `thisArg`): `void` <Badge type="tip" text="other" />
+• **setSelectableChecker**(`selectChecker`, `thisArg`): `void` <Badge type="tip" text="client" />
 
 设置该标签是否可以切换的检测方法
 

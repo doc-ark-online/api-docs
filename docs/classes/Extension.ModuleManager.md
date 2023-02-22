@@ -22,19 +22,19 @@ UTILITY
 
 | Methods |
 | :-----|
-| **[callExecut](Extension.ModuleManager.md#callexecut)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>, `number`, `any`[]): `any` <br> 调用一个模块的onExcut方法|
-| **[getModule](Extension.ModuleManager.md#getmodule)**<extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
+| **[callExecut](Extension.ModuleManager.md#callexecut)**<`T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>, `type?`: `number`, `...params`: `any`[]): `any` <br> 调用一个模块的onExcut方法|
+| **[getModule](Extension.ModuleManager.md#getmodule)**<`T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
 | **[getUpdateTimeLog](Extension.ModuleManager.md#getupdatetimelog)**(): `string` <br> 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
 | **[ready](Extension.ModuleManager.md#ready)**(): `Promise`<`void`\> <br> 判断ModuleManager是否就绪的异步方法|
-| **[registerModule](Extension.ModuleManager.md#registermodule)**([`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\>, [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>, [`TypeName`](../interfaces/Type.TypeName.md)<[`Subdata`](Extension.Subdata.md)\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 注册模块|
-| **[setClientFirstStartModule](Extension.ModuleManager.md#setclientfirststartmodule)**([`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 设置客户端第一个要启动的模块|
+| **[registerModule](Extension.ModuleManager.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleS`](Extension.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/Type.TypeName.md)<[`Subdata`](Extension.Subdata.md)\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 注册模块|
+| **[setClientFirstStartModule](Extension.ModuleManager.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<[`ModuleC`](Extension.ModuleC.md)<`any`, `any`\>\>): [`ModuleManager`](Extension.ModuleManager.md) <br> 设置客户端第一个要启动的模块|
 | **[getInstance](Extension.ModuleManager.md#getinstance)**(): [`ModuleManager`](Extension.ModuleManager.md) <br> 获取模块管理全局实例|
 
 ## Accessors
 
 ### isReady <Score text="isReady" /> 
 
-• `Private` `get` **isReady**(): `any` <Badge type="tip" text="other" />
+• `Private` `get` **isReady**(): `any` 
 
 判断ModuleManager是否就绪
 
@@ -49,7 +49,7 @@ ModuleManager是否就绪
 
 ### callExecut <Score text="callExecut" /> 
 
-• **callExecut**<`T`\>(`ModuleClass`, `type?`, `...params`): `any` <Badge type="tip" text="other" />
+• **callExecut**<`T`\>(`ModuleClass`, `type?`, `...params`): `any` 
 
 调用一个模块的onExcut方法
 
@@ -78,7 +78,7 @@ ___
 
 ### getModule <Score text="getModule" /> 
 
-• **getModule**<`T`\>(`ModuleClass`): `T` <Badge type="tip" text="other" />
+• **getModule**<`T`\>(`ModuleClass`): `T` 
 
 根据类型获取一个模块
 
@@ -105,7 +105,7 @@ ___
 
 ### getUpdateTimeLog <Score text="getUpdateTimeLog" /> 
 
-• **getUpdateTimeLog**(): `string` <Badge type="tip" text="other" />
+• **getUpdateTimeLog**(): `string` 
 
 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来
 
@@ -126,7 +126,7 @@ ___
 
 ### ready <Score text="ready" /> 
 
-• **ready**(): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **ready**(): `Promise`<`void`\> 
 
 判断ModuleManager是否就绪的异步方法
 
@@ -141,7 +141,7 @@ ___
 
 ### registerModule <Score text="registerModule" /> 
 
-• **registerModule**(`ServerModuleType`, `ClientModuleType`, `ModuleDataType?`): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="other" />
+• **registerModule**(`ServerModuleType`, `ClientModuleType`, `ModuleDataType?`): [`ModuleManager`](Extension.ModuleManager.md) 
 
 注册模块
 
@@ -164,7 +164,7 @@ ___
 
 ### setClientFirstStartModule <Score text="setClientFirstStartModule" /> 
 
-• **setClientFirstStartModule**(`ModuleClass`): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="other" />
+• **setClientFirstStartModule**(`ModuleClass`): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="client" />
 
 设置客户端第一个要启动的模块
 
@@ -185,7 +185,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`ModuleManager`](Extension.ModuleManager.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`ModuleManager`](Extension.ModuleManager.md) 
 
 获取模块管理全局实例
 

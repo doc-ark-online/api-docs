@@ -46,7 +46,6 @@ UI的PanelWidget可以挂载子节点
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -57,21 +56,21 @@ UI的PanelWidget可以挂载子节点
 
 | Methods |
 | :-----|
-| **[addChild](UI.PanelWidget.md#addchild)**([`Widget`](UI.Widget.md)): `void` <br> 添加子节点|
-| **[findChildByPath](UI.PanelWidget.md#findchildbypath)**(`string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
-| **[getChildAt](UI.PanelWidget.md#getchildat)**(`number`): [`Widget`](UI.Widget.md) <br> 获取第几位子节点|
-| **[getChildByName](UI.PanelWidget.md#getchildbyname)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>(`string`): extends [`Widget`](UI.Widget.md)<`T`\> | <br> 通过名字查找节点|
+| **[addChild](UI.PanelWidget.md#addchild)**(`child`: [`Widget`](UI.Widget.md)): `void` <br> 添加子节点|
+| **[findChildByPath](UI.PanelWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
+| **[getChildAt](UI.PanelWidget.md#getchildat)**(`index`: `number`): [`Widget`](UI.Widget.md) <br> 获取第几位子节点|
+| **[getChildByName](UI.PanelWidget.md#getchildbyname)**<`T`: extends [`Widget`](UI.Widget.md)<`T`\>\>(`name`: `string`): `T`: extends [`Widget`](UI.Widget.md)<`T`\> <br> 通过名字查找节点|
 | **[getChildrenCount](UI.PanelWidget.md#getchildrencount)**(): `number` <br> 获取子节点数量|
 | **[removeAllChildren](UI.PanelWidget.md#removeallchildren)**(): `void` <br> 清除所有子节点,会销毁UI无法再使用|
-| **[removeChild](UI.PanelWidget.md#removechild)**([`Widget`](UI.Widget.md)): `void` <br> 移除节点,会销毁UI无法在使用|
-| **[removeChildAt](UI.PanelWidget.md#removechildat)**(`number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
+| **[removeChild](UI.PanelWidget.md#removechild)**(`child`: [`Widget`](UI.Widget.md)): `void` <br> 移除节点,会销毁UI无法在使用|
+| **[removeChildAt](UI.PanelWidget.md#removechildat)**(`index`: `number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
@@ -83,7 +82,7 @@ UI的PanelWidget可以挂载子节点
 
 ### addChild <Score text="addChild" /> 
 
-• **addChild**(`child`): `void` <Badge type="tip" text="other" />
+• **addChild**(`child`): `void` <Badge type="tip" text="client" />
 
 添加子节点
 
@@ -98,7 +97,7 @@ UI的PanelWidget可以挂载子节点
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
-• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="client" />
 
 通过相对路径查找节点
 
@@ -119,7 +118,7 @@ ___
 
 ### getChildAt <Score text="getChildAt" /> 
 
-• **getChildAt**(`index`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **getChildAt**(`index`): [`Widget`](UI.Widget.md) <Badge type="tip" text="client" />
 
 获取第几位子节点
 
@@ -140,7 +139,7 @@ ___
 
 ### getChildByName <Score text="getChildByName" /> 
 
-• **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="other" />
+• **getChildByName**<`T`\>(`name`): `T` <Badge type="tip" text="client" />
 
 通过名字查找节点
 
@@ -167,7 +166,7 @@ ___
 
 ### getChildrenCount <Score text="getChildrenCount" /> 
 
-• **getChildrenCount**(): `number` <Badge type="tip" text="other" />
+• **getChildrenCount**(): `number` <Badge type="tip" text="client" />
 
 获取子节点数量
 
@@ -181,7 +180,7 @@ ___
 
 ### removeAllChildren <Score text="removeAllChildren" /> 
 
-• **removeAllChildren**(): `void` <Badge type="tip" text="other" />
+• **removeAllChildren**(): `void` <Badge type="tip" text="client" />
 
 清除所有子节点,会销毁UI无法再使用
 
@@ -191,7 +190,7 @@ ___
 
 ### removeChild <Score text="removeChild" /> 
 
-• **removeChild**(`child`): `void` <Badge type="tip" text="other" />
+• **removeChild**(`child`): `void` <Badge type="tip" text="client" />
 
 移除节点,会销毁UI无法在使用
 
@@ -207,7 +206,7 @@ ___
 
 ### removeChildAt <Score text="removeChildAt" /> 
 
-• **removeChildAt**(`index`): `void` <Badge type="tip" text="other" />
+• **removeChildAt**(`index`): `void` <Badge type="tip" text="client" />
 
 移除第几个节点,会销毁UI无法再使用
 

@@ -12,13 +12,13 @@ GUI
 
 | Properties |
 | :-----|
-| **[autoLayout](UI.UILayout.md#autolayout)**: `boolean` <br> 是否自动布局|
-| **[autoWrap](UI.UILayout.md#autowrap)**: `boolean` <br> 是否网格模式|
-| **[childCollation](UI.UILayout.md#childcollation)**: [`UIChildCollation`](UI.UIChildCollation.md) <br> 子项布局规则|
-| **[hugContent](UI.UILayout.md#hugcontent)**: [`UIHugContent`](UI.UIHugContent.md) <br> 容器布局适应规则|
-| **[layout](UI.UILayout.md#layout)**: [`UILayoutType`](../enums/UI.UILayoutType.md) <br> 自动布局规则|
-| **[layoutPacket](UI.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <br> 自动布局节点排列规则|
-| **[layoutSpace](UI.UILayout.md#layoutspace)**: `number` <br> 排列间隔|
+| **[autoLayout](UI.UILayout.md#autolayout)**: `boolean` <br> 四边边距|
+| **[autoWrap](UI.UILayout.md#autowrap)**: `boolean` <br> 四边边距|
+| **[childCollation](UI.UILayout.md#childcollation)**: [`UIChildCollation`](UI.UIChildCollation.md) <br> 四边边距|
+| **[hugContent](UI.UILayout.md#hugcontent)**: [`UIHugContent`](UI.UIHugContent.md) <br> 四边边距|
+| **[layout](UI.UILayout.md#layout)**: [`UILayoutType`](../enums/UI.UILayoutType.md) <br> 四边边距|
+| **[layoutPacket](UI.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <br> 四边边距|
+| **[layoutSpace](UI.UILayout.md#layoutspace)**: `number` <br> 四边边距|
 | **[padding](UI.UILayout.md#padding)**: [`Margin`](UI.Margin.md) <br> 四边边距|
 
 构造函数，传入每一个值

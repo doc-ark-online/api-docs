@@ -53,8 +53,8 @@ test.strength = 100;
 
 | Methods |
 | :-----|
-| **[getAngularLimitType](Gameplay.PhysicsRotation.md#getangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取限制类型|
-| **[setAngularLimitType](Gameplay.PhysicsRotation.md#setangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md), [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
+| **[getAngularLimitType](Gameplay.PhysicsRotation.md#getangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取限制类型|
+| **[setAngularLimitType](Gameplay.PhysicsRotation.md#setangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md), `rotationType`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
 
 
 ::: details 点击查看继承
@@ -164,7 +164,7 @@ ___
 
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取限制类型
 
@@ -184,7 +184,7 @@ ___
 
 ### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-• **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
+• **setAngularLimitType**(`Axis`, `rotationType`): `void` 
 
 设置旋转类型
 

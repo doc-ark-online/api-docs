@@ -12,10 +12,10 @@ SCRIPITING
 
 | Enumeration Members |
 | :-----|
-| **[Failure](Events.DispatchEventResult.md#failure)** = ``1`` <br> 失败|
-| **[FailureCountLimit](Events.DispatchEventResult.md#failurecountlimit)** = ``2`` <br> 失败次数限制|
-| **[FailureRateLimit](Events.DispatchEventResult.md#failureratelimit)** = ``3`` <br> 失败频率限制|
-| **[Success](Events.DispatchEventResult.md#success)** = ``0`` <br> 成功|
+| **[Failure](Events.DispatchEventResult.md#failure)** = ``1`` <br> |
+| **[FailureCountLimit](Events.DispatchEventResult.md#failurecountlimit)** = ``2`` <br> |
+| **[FailureRateLimit](Events.DispatchEventResult.md#failureratelimit)** = ``3`` <br> |
+| **[Success](Events.DispatchEventResult.md#success)** = ``0`` <br> |
 
 ## Enumeration Members
 

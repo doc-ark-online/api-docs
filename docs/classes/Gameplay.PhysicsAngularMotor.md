@@ -61,7 +61,7 @@ test.torqueStrength = 100;
 
 ### enable <Score text="enable" /> 
 
-• `get` **enable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **enable**(): `boolean` 
 
 获取激活状态
 
@@ -88,7 +88,7 @@ test.torqueStrength = 100;
 
 ### torque <Score text="torque" /> 
 
-• `get` **torque**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **torque**(): [`Vector`](Type.Vector.md) 
 
 获取旋转最大速度
 
@@ -116,7 +116,7 @@ ___
 
 ### torqueStrength <Score text="torqueStrength" /> 
 
-• `get` **torqueStrength**(): `number` <Badge type="tip" text="other" />
+• `get` **torqueStrength**(): `number` 
 
 获取加速度
 
@@ -127,7 +127,7 @@ ___
 
 加速度
 
-• `set` **torqueStrength**(`strength`): `void` <Badge type="tip" text="other" />
+• `set` **torqueStrength**(`strength`): `void` 
 
 设置加速度
 

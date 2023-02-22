@@ -12,9 +12,9 @@ DATA
 
 | Enumeration Members |
 | :-----|
-| **[FromParent](Type.PropertyStatus.md#fromparent)** = ``0`` <br> 跟随父节点|
-| **[Off](Type.PropertyStatus.md#off)** = ``2`` <br> 关|
-| **[On](Type.PropertyStatus.md#on)** = ``1`` <br> 开|
+| **[FromParent](Type.PropertyStatus.md#fromparent)** = ``0`` <br> |
+| **[Off](Type.PropertyStatus.md#off)** = ``2`` <br> |
+| **[On](Type.PropertyStatus.md#on)** = ``1`` <br> |
 
 ## Enumeration Members
 

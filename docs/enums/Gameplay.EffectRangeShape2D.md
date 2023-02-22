@@ -12,9 +12,9 @@ EFFECTS
 
 | Enumeration Members |
 | :-----|
-| **[Circle](Gameplay.EffectRangeShape2D.md#circle)** = ``1`` <br> 圆形|
-| **[CircularSector](Gameplay.EffectRangeShape2D.md#circularsector)** = ``2`` <br> 扇形|
-| **[Rectangle](Gameplay.EffectRangeShape2D.md#rectangle)** = ``0`` <br> 矩形|
+| **[Circle](Gameplay.EffectRangeShape2D.md#circle)** = ``1`` <br> |
+| **[CircularSector](Gameplay.EffectRangeShape2D.md#circularsector)** = ``2`` <br> |
+| **[Rectangle](Gameplay.EffectRangeShape2D.md#rectangle)** = ``0`` <br> |
 
 ## Enumeration Members
 

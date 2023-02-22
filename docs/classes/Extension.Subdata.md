@@ -12,7 +12,7 @@ DATA
 
 | Properties |
 | :-----|
-| **[onDataChange](Extension.Subdata.md#ondatachange)**: [`Action`](Type.Action.md) <br> 数据变化的委托|
+| **[onDataChange](Extension.Subdata.md#ondatachange)**: [`Action`](Type.Action.md) <br> 当前数据版本号，和version配合使用，可实现数据升级|
 
 | Accessors |
 | :-----|
@@ -21,10 +21,10 @@ DATA
 
 | Methods |
 | :-----|
-| **[getSavedProperty](Extension.Subdata.md#getsavedproperty)**<`T`\>(`string`): `T` <br> 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)|
+| **[getSavedProperty](Extension.Subdata.md#getsavedproperty)**<`T`\>(`propertyName`: `string`): `T` <br> 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)|
 | **[initDefaultData](Extension.Subdata.md#initdefaultdata)**(): `void` <br> 初始化默认数据，需要请复写|
 | **[onDataInit](Extension.Subdata.md#ondatainit)**(): `void` <br> 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级|
-| **[save](Extension.Subdata.md#save)**(`boolean`): [`Subdata`](Extension.Subdata.md) <br> 保存数据|
+| **[save](Extension.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](Extension.Subdata.md) <br> 保存数据|
 | **[syncToClient](Extension.Subdata.md#synctoclient)**(): [`Subdata`](Extension.Subdata.md) <br> 向客户端同步数据|
 
 ## Properties
@@ -74,7 +74,7 @@ ___
 
 ### getSavedProperty <Score text="getSavedProperty" /> 
 
-• `Protected` **getSavedProperty**<`T`\>(`propertyName`): `T` <Badge type="tip" text="other" />
+• `Protected` **getSavedProperty**<`T`\>(`propertyName`): `T` 
 
 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)
 
@@ -101,7 +101,7 @@ ___
 
 ### initDefaultData <Score text="initDefaultData" /> 
 
-• `Protected` **initDefaultData**(): `void` <Badge type="tip" text="other" />
+• `Protected` **initDefaultData**(): `void` 
 
 初始化默认数据，需要请复写
 
@@ -111,7 +111,7 @@ ___
 
 ### onDataInit <Score text="onDataInit" /> 
 
-• `Protected` **onDataInit**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onDataInit**(): `void` 
 
 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级
 
@@ -127,7 +127,7 @@ ___
 
 ### save <Score text="save" /> 
 
-• **save**(`syncToClient`): [`Subdata`](Extension.Subdata.md) <Badge type="tip" text="other" />
+• **save**(`syncToClient`): [`Subdata`](Extension.Subdata.md) <Badge type="tip" text="server" />
 
 保存数据
 
@@ -148,7 +148,7 @@ ___
 
 ### syncToClient <Score text="syncToClient" /> 
 
-• **syncToClient**(): [`Subdata`](Extension.Subdata.md) <Badge type="tip" text="other" />
+• **syncToClient**(): [`Subdata`](Extension.Subdata.md) <Badge type="tip" text="server" />
 
 向客户端同步数据
 

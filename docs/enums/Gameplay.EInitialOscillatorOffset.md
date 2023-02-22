@@ -12,8 +12,8 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[Random](Gameplay.EInitialOscillatorOffset.md#random)** = ``0`` <br> 随机值|
-| **[Zero](Gameplay.EInitialOscillatorOffset.md#zero)** = ``1`` <br> 零|
+| **[Random](Gameplay.EInitialOscillatorOffset.md#random)** = ``0`` <br> |
+| **[Zero](Gameplay.EInitialOscillatorOffset.md#zero)** = ``1`` <br> |
 
 ## Enumeration Members
 

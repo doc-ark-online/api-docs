@@ -40,25 +40,25 @@ AVATAR
 ::: details 点击查看继承
 | Properties |
 | :-----|
-| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边|
-| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理对象|
+| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 后处理开关|
+| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理开关|
 :::
 
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.FourFootStandard.md#changesomatotype)**([`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md), `boolean`): `void` <br> 切换角色体型|
+| **[changeSomatotype](Gameplay.FourFootStandard.md#changesomatotype)**(`value`: [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md), `sync`: `boolean`): `void` <br> 切换角色体型|
 | **[getSomatotype](Gameplay.FourFootStandard.md#getsomatotype)**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) <br> 获取当前的体型类型|
 | **[getWholeBody](Gameplay.FourFootStandard.md#getwholebody)**(): `string` <br> 获取全身模型|
-| **[setWholeBody](Gameplay.FourFootStandard.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置模型|
+| **[setWholeBody](Gameplay.FourFootStandard.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置模型|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.LinearColor.md), `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关|
-| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关|
+| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
+| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
+| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 :::
 
 
@@ -76,7 +76,7 @@ AVATAR
 
 ### changeSomatotype <Score text="changeSomatotype" /> 
 
-• **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **changeSomatotype**(`value`, `sync`): `void` 
 
 切换角色体型
 
@@ -117,7 +117,7 @@ let Tappearance = npc.appearance as Gameplay.FourFootStandard;
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
-• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) <Badge type="tip" text="other" />
+• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) 
 
 获取当前的体型类型
 
@@ -136,7 +136,7 @@ ___
 
 ### getWholeBody <Score text="getWholeBody" /> 
 
-• **getWholeBody**(): `string` <Badge type="tip" text="other" />
+• **getWholeBody**(): `string` 
 
 获取全身模型
 
@@ -154,7 +154,7 @@ ___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 
-• **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWholeBody**(`GUID`, `sync`): `void` 
 
 设置模型
 

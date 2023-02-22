@@ -12,8 +12,8 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[Cartoon](Gameplay.BasicStanceType.md#cartoon)** = ``"30274"`` <br> 二次元风格|
-| **[SakuraSchool1](Gameplay.BasicStanceType.md#sakuraschool1)** = ``"Default"`` <br> 樱校1|
+| **[Cartoon](Gameplay.BasicStanceType.md#cartoon)** = ``"30274"`` <br> |
+| **[SakuraSchool1](Gameplay.BasicStanceType.md#sakuraschool1)** = ``"Default"`` <br> |
 
 ## Enumeration Members
 

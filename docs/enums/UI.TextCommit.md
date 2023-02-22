@@ -12,10 +12,10 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Default](UI.TextCommit.md#default)** = ``0`` <br> 默认|
-| **[OnCleared](UI.TextCommit.md#oncleared)** = ``3`` <br> 清除时|
-| **[OnEnter](UI.TextCommit.md#onenter)** = ``1`` <br> 输入回车|
-| **[OnUserMovedFocus](UI.TextCommit.md#onusermovedfocus)** = ``2`` <br> 失去焦点|
+| **[Default](UI.TextCommit.md#default)** = ``0`` <br> |
+| **[OnCleared](UI.TextCommit.md#oncleared)** = ``3`` <br> |
+| **[OnEnter](UI.TextCommit.md#onenter)** = ``1`` <br> |
+| **[OnUserMovedFocus](UI.TextCommit.md#onusermovedfocus)** = ``2`` <br> |
 
 ## Enumeration Members
 

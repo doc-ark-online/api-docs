@@ -20,7 +20,7 @@ GUI
 
 | Accessors |
 | :-----|
-| **[holdBackTouch](Extension.BaseView.md#holdbacktouch)**(`boolean` |): `void` <br> 是否阻挡场景点击|
+| **[holdBackTouch](Extension.BaseView.md#holdbacktouch)**(`value`: `boolean`): `void` <br> 是否阻挡场景点击|
 | **[isShow](Extension.BaseView.md#isshow)**(): `boolean` <br> 判断界面是否处于显示状态|
 
 
@@ -28,7 +28,7 @@ GUI
 | Accessors |
 | :-----|
 | **[canUpdate](UI.UIBehavior.md#canupdate)**(): `boolean` <br> 是否能触发onUpdate函数|
-| **[fullScreen](UI.UIBehavior.md#fullscreen)**(`boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
+| **[fullScreen](UI.UIBehavior.md#fullscreen)**(`inFull`: `boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
 | **[layer](UI.UIBehavior.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，|
 | **[rootCanvas](UI.UIBehavior.md#rootcanvas)**(): [`Canvas`](UI.Canvas.md) <br> 获取UI的根Canvas节点|
 | **[uiObject](UI.UIBehavior.md#uiobject)**(): [`Widget`](UI.Widget.md) <br> 获取脚本挂载的UI对象|
@@ -39,27 +39,27 @@ GUI
 
 | Methods |
 | :-----|
-| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
+| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<`T`: extends [`Widget`](UI.Widget.md)<`T`\>\>(`canvas`: [`Canvas`](UI.Canvas.md), `getType`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`Widget`](UI.Widget.md)<`T`\>[] <br> 根据类型获取画布下子对象序列|
 | **[hide](Extension.BaseView.md#hide)**(): `void` <br> 关闭全局唯一界面|
-| **[show](Extension.BaseView.md#show)**(`any`[]): `void` <br> 显示全局唯一界面|
-| **[create](Extension.BaseView.md#create)**<extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> |\>(): extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> | <br> 创建界面|
+| **[show](Extension.BaseView.md#show)**(`...params`: `any`[]): `void` <br> 显示全局唯一界面|
+| **[create](Extension.BaseView.md#create)**<`T`: extends [`UIBehavior`](UI.UIBehavior.md)<`T`\>\>(): `T`: extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> <br> 创建界面|
 | **[hide](Extension.BaseView.md#hide-1)**(): `void` <br> 关闭全局唯一界面|
-| **[show](Extension.BaseView.md#show-1)**(`any`[]): `void` <br> 显示全局唯一界面|
+| **[show](Extension.BaseView.md#show-1)**(`...params`: `any`[]): `void` <br> 显示全局唯一界面|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroy](UI.UIBehavior.md#destroy)**(): `void` <br> 销毁UI对象|
-| **[detectDrag](UI.UIBehavior.md#detectdrag)**([`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 触发DragDrop事件的检测|
-| **[detectDragIfPressed](UI.UIBehavior.md#detectdragifpressed)**([`PointerEvent`](UI.PointerEvent.md), [`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 如果事件检测通过就触发DragDrop事件的回复|
-| **[newDragDrop](UI.UIBehavior.md#newdragdrop)**([`Widget`](UI.Widget.md), `string`, `any`, [`DragPivot`](../enums/UI.DragPivot.md), [`Vector2`](Type.Vector2.md)): [`DragDropOperation`](UI.DragDropOperation.md) <br> 创建DragDrop事件|
+| **[detectDrag](UI.UIBehavior.md#detectdrag)**(`dragKey`: [`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 触发DragDrop事件的检测|
+| **[detectDragIfPressed](UI.UIBehavior.md#detectdragifpressed)**(`inPointEvent`: [`PointerEvent`](UI.PointerEvent.md), `dragKey`: [`Keys`](../enums/Type.Keys.md)): [`EventReply`](UI.EventReply.md) <br> 如果事件检测通过就触发DragDrop事件的回复|
+| **[newDragDrop](UI.UIBehavior.md#newdragdrop)**(`inVisualWidget`: [`Widget`](UI.Widget.md), `inTag?`: `string`, `inPayLoad?`: `any`, `inPivot?`: [`DragPivot`](../enums/UI.DragPivot.md), `inOffset?`: [`Vector2`](Type.Vector2.md)): [`DragDropOperation`](UI.DragDropOperation.md) <br> 创建DragDrop事件|
 | **[remove](UI.UIBehavior.md#remove)**(): `void` <br> 移除UI对象|
-| **[setVisible](UI.UIBehavior.md#setvisible)**(`boolean` \, `any`[]): `void` <br> 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
-| **[addBehavior](UI.UIBehavior.md#addbehavior)**(`string`, `any`): `void` <br> 添加一个全局的行为记录|
+| **[setVisible](UI.UIBehavior.md#setvisible)**(`inVisible`: `boolean` \, `...params`: `any`[]): `void` <br> 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
+| **[addBehavior](UI.UIBehavior.md#addbehavior)**(`key`: `string`, `value`: `any`): `void` <br> 添加一个全局的行为记录|
 | **[clearBehavior](UI.UIBehavior.md#clearbehavior)**(): `void` <br> 清空全局的行为记录|
-| **[getBehavior](UI.UIBehavior.md#getbehavior)**(`string`): `any` <br> 获取一个全局的行为记录|
-| **[removeBehavior](UI.UIBehavior.md#removebehavior)**(`string`): `void` <br> 移除一个全局的行为记录|
+| **[getBehavior](UI.UIBehavior.md#getbehavior)**(`key`: `string`): `any` <br> 获取一个全局的行为记录|
+| **[removeBehavior](UI.UIBehavior.md#removebehavior)**(`key`: `string`): `void` <br> 移除一个全局的行为记录|
 :::
 
 
@@ -95,7 +95,7 @@ ___
 
 ### getCanvasChildren <Score text="getCanvasChildren" /> 
 
-• `Protected` **getCanvasChildren**<`T`\>(`canvas`, `getType`): `T`[] <Badge type="tip" text="other" />
+• `Protected` **getCanvasChildren**<`T`\>(`canvas`, `getType`): `T`[] <Badge type="tip" text="client" />
 
 根据类型获取画布下子对象序列
 
@@ -123,7 +123,7 @@ ___
 
 ### hide <Score text="hide" /> 
 
-• **hide**(): `void` <Badge type="tip" text="other" />
+• **hide**(): `void` <Badge type="tip" text="client" />
 
 关闭界面
 
@@ -132,7 +132,7 @@ ___
 
 ### show <Score text="show" /> 
 
-• **show**(`...params`): `void` <Badge type="tip" text="other" />
+• **show**(`...params`): `void` <Badge type="tip" text="client" />
 
 显示界面
 
@@ -147,7 +147,7 @@ ___
 
 ### create <Score text="create" /> 
 
-• `Static` **create**<`T`\>(): `T` <Badge type="tip" text="other" />
+• `Static` **create**<`T`\>(): `T` <Badge type="tip" text="client" />
 
 创建界面
 
@@ -167,7 +167,7 @@ ___
 
 ### hide <Score text="hide" /> 
 
-• `Static` **hide**(): `void` <Badge type="tip" text="other" />
+• `Static` **hide**(): `void` <Badge type="tip" text="client" />
 
 关闭全局唯一界面
 
@@ -176,7 +176,7 @@ ___
 
 ### show <Score text="show" /> 
 
-• `Static` **show**(`...params`): `void` <Badge type="tip" text="other" />
+• `Static` **show**(`...params`): `void` <Badge type="tip" text="client" />
 
 显示全局唯一界面
 

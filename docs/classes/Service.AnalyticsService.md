@@ -21,14 +21,14 @@ DEBUGGING
 | Methods |
 | :-----|
 | **[getInstance](Service.AnalyticsService.md#getinstance)**(): [`AnalyticsService`](Service.AnalyticsService.md) <br> 分析服务全局实例|
-| **[googleEventTracking](Service.AnalyticsService.md#googleeventtracking)**(`string`, `Object`): `void` <br> 埋点|
-| **[googleInit](Service.AnalyticsService.md#googleinit)**(`string`): `void` <br> Initialize Google Analytics client|
+| **[googleEventTracking](Service.AnalyticsService.md#googleeventtracking)**(`eventName`: `string`, `eventParams?`: `Object`): `void` <br> 埋点|
+| **[googleInit](Service.AnalyticsService.md#googleinit)**(`mId`: `string`): `void` <br> Initialize Google Analytics client|
 
 ## Methods
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`AnalyticsService`](Service.AnalyticsService.md) 
 
 分析服务全局实例
 
@@ -43,7 +43,7 @@ ___
 
 ### googleEventTracking <Score text="googleEventTracking" /> 
 
-• `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` <Badge type="tip" text="other" />
+• `Static` **googleEventTracking**(`eventName`, `eventParams?`): `void` 
 
 埋点
 
@@ -60,7 +60,7 @@ ___
 
 ### googleInit <Score text="googleInit" /> 
 
-• `Static` **googleInit**(`mId`): `void` <Badge type="tip" text="other" />
+• `Static` **googleInit**(`mId`): `void` 
 
 Initialize Google Analytics client
 

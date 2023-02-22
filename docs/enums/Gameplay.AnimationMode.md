@@ -12,8 +12,8 @@ ANIMATIONS
 
 | Enumeration Members |
 | :-----|
-| **[Auto](Gameplay.AnimationMode.md#auto)** = ``0`` <br> 自动，提供基础姿态|
-| **[Custom](Gameplay.AnimationMode.md#custom)** = ``1`` <br> 自定义模式，不提供姿态,自己控制动画切换|
+| **[Auto](Gameplay.AnimationMode.md#auto)** = ``0`` <br> |
+| **[Custom](Gameplay.AnimationMode.md#custom)** = ``1`` <br> |
 
 ## Enumeration Members
 

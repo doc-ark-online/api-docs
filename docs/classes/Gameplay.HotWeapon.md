@@ -27,7 +27,7 @@ hotWeapon.onEquippedServer.add((owner) => {
 })
 // 开始执行操作
 hotWeapon.startFire();
-```ts
+```
 
 ## Hierarchy
 
@@ -39,22 +39,22 @@ hotWeapon.startFire();
 
 | Properties |
 | :-----|
-| **[accuracyOfFireComponent](Gameplay.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md) <br> 射击精度功能|
-| **[aimComponent](Gameplay.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md) <br> 瞄准功能|
-| **[fireComponent](Gameplay.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md) <br> 射击功能|
-| **[loadComponent](Gameplay.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md) <br> 上膛功能|
-| **[onEquippedClient](Gameplay.HotWeapon.md#onequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 客户端装备时执行绑定函数|
-| **[onEquippedServer](Gameplay.HotWeapon.md#onequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
-| **[onUnequippedClient](Gameplay.HotWeapon.md#onunequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端卸载时执行绑定函数|
-| **[onUnequippedServer](Gameplay.HotWeapon.md#onunequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数|
-| **[recoilForceComponent](Gameplay.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md) <br> 后坐力功能|
-| **[reloadComponent](Gameplay.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md) <br> 换弹功能|
+| **[accuracyOfFireComponent](Gameplay.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md) <br> 是否开启了射击精度组件|
+| **[aimComponent](Gameplay.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md) <br> 是否开启了射击精度组件|
+| **[fireComponent](Gameplay.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md) <br> 是否开启了射击精度组件|
+| **[loadComponent](Gameplay.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md) <br> 是否开启了射击精度组件|
+| **[onEquippedClient](Gameplay.HotWeapon.md#onequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 是否开启了射击精度组件|
+| **[onEquippedServer](Gameplay.HotWeapon.md#onequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 是否开启了射击精度组件|
+| **[onUnequippedClient](Gameplay.HotWeapon.md#onunequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 是否开启了射击精度组件|
+| **[onUnequippedServer](Gameplay.HotWeapon.md#onunequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 是否开启了射击精度组件|
+| **[recoilForceComponent](Gameplay.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md) <br> 是否开启了射击精度组件|
+| **[reloadComponent](Gameplay.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md) <br> 是否开启了射击精度组件|
 
 | Accessors |
 | :-----|
-| **[accuracyOfFireEnable](Gameplay.HotWeapon.md#accuracyoffireenable)**(): `boolean` <br> **`Description`**|
+| **[accuracyOfFireEnable](Gameplay.HotWeapon.md#accuracyoffireenable)**(): `boolean` <br> 是否开启了射击精度组件|
 | **[aimEnable](Gameplay.HotWeapon.md#aimenable)**(): `boolean` <br> 是否开启了瞄准组件|
-| **[loadEnable](Gameplay.HotWeapon.md#loadenable)**(): `boolean` <br> **`Description`**|
+| **[loadEnable](Gameplay.HotWeapon.md#loadenable)**(): `boolean` <br> 是否开启了上膛组件|
 | **[recoilForceEnable](Gameplay.HotWeapon.md#recoilforceenable)**(): `boolean` <br> 是否开启了后坐力组件|
 | **[reloadEnable](Gameplay.HotWeapon.md#reloadenable)**(): `boolean` <br> 是否开启了换弹组件|
 
@@ -77,7 +77,6 @@ hotWeapon.startFire();
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -88,17 +87,17 @@ hotWeapon.startFire();
 | :-----|
 | **[breakLoad](Gameplay.HotWeapon.md#breakload)**(): `void` <br> 打断上膛|
 | **[breakReload](Gameplay.HotWeapon.md#breakreload)**(): `void` <br> 打断换弹|
-| **[cloneComponentsData](Gameplay.HotWeapon.md#clonecomponentsdata)**([`HotWeapon`](Gameplay.HotWeapon.md)): `void` <br> 从传入的热武器逻辑对象中拷贝所有组件数据|
-| **[equipment](Gameplay.HotWeapon.md#equipment)**([`Character`](Gameplay.Character.md), `string`): `void` <br> 装备热武器到目标角色的指定插槽位置|
+| **[cloneComponentsData](Gameplay.HotWeapon.md#clonecomponentsdata)**(`otherHotWeapon`: [`HotWeapon`](Gameplay.HotWeapon.md)): `void` <br> 从传入的热武器逻辑对象中拷贝所有组件数据|
+| **[equipment](Gameplay.HotWeapon.md#equipment)**(`character`: [`Character`](Gameplay.Character.md), `slotName`: `string`): `void` <br> 装备热武器到目标角色的指定插槽位置|
 | **[getBulletLocWhileSpawnOnScreenCenter](Gameplay.HotWeapon.md#getbulletlocwhilespawnonscreencenter)**(): [`Vector`](Type.Vector.md) <br> 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location|
 | **[getCurrentOwner](Gameplay.HotWeapon.md#getcurrentowner)**(): [`Character`](Gameplay.Character.md) <br> 获取当前热武器的所有者|
 | **[getCurrentState](Gameplay.HotWeapon.md#getcurrentstate)**(): [`HotWeaponState`](../enums/Gameplay.HotWeaponState.md) <br> 获取当前热武器状态|
-| **[getDefaultCrossHairSize](Gameplay.HotWeapon.md#getdefaultcrosshairsize)**(`number`): `number` <br> 传入Player和最大射程，获取默认准星大小|
-| **[getShootDirWithDispersion](Gameplay.HotWeapon.md#getshootdirwithdispersion)**([`Vector`](Type.Vector.md), `number`): [`Vector`](Type.Vector.md) <br> 非屏幕中心生成子弹模式下，获取子弹飞行方向|
-| **[getTransformForFire](Gameplay.HotWeapon.md#gettransformforfire)**(`number`): [`Transform`](Type.Transform.md) <br> 获取开火的Transform|
+| **[getDefaultCrossHairSize](Gameplay.HotWeapon.md#getdefaultcrosshairsize)**(`maxShootRange`: `number`): `number` <br> 传入Player和最大射程，获取默认准星大小|
+| **[getShootDirWithDispersion](Gameplay.HotWeapon.md#getshootdirwithdispersion)**(`StartLoc`: [`Vector`](Type.Vector.md), `ShootRange`: `number`): [`Vector`](Type.Vector.md) <br> 非屏幕中心生成子弹模式下，获取子弹飞行方向|
+| **[getTransformForFire](Gameplay.HotWeapon.md#gettransformforfire)**(`ShootRange`: `number`): [`Transform`](Type.Transform.md) <br> 获取开火的Transform|
 | **[load](Gameplay.HotWeapon.md#load)**(): `void` <br> 上膛|
-| **[reload](Gameplay.HotWeapon.md#reload)**(`number`): `void` <br> 换弹|
-| **[setCurrentFireModel](Gameplay.HotWeapon.md#setcurrentfiremodel)**([`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md)): `void` <br> 切换设置当前开火模式|
+| **[reload](Gameplay.HotWeapon.md#reload)**(`bulletSize`: `number`): `void` <br> 换弹|
+| **[setCurrentFireModel](Gameplay.HotWeapon.md#setcurrentfiremodel)**(`FireMode`: [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md)): `void` <br> 切换设置当前开火模式|
 | **[startFire](Gameplay.HotWeapon.md#startfire)**(): `void` <br> 开火|
 | **[stopFire](Gameplay.HotWeapon.md#stopfire)**(): `void` <br> 停止开火|
 | **[unequipHotWeapon](Gameplay.HotWeapon.md#unequiphotweapon)**(): `void` <br> 卸载热武器|
@@ -107,62 +106,60 @@ hotWeapon.startFire();
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
-| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
-| **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
-| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
-| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`name`: `string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`component`: `Component`, `isStatic?`: `boolean`): `boolean` <br> 附加组件|
+| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`obj`: `GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[clone](Gameplay.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): `GameObject` <br> 复制对象|
+| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
+| **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`component`: `string` \): `void` <br> 移除组件|
 | **[detachFromGameObject](Gameplay.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](Gameplay.GameObject.md#getbounds)**(`boolean`, [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
-| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
+| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](Type.Vector.md), `BoxExtentOuter`: [`Vector`](Type.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
+| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
-| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
-| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
-| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
-| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
-| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
-| **[getRightVector](Gameplay.GameObject.md#getrightvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
-| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.GameObject.md#getrightvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
 | **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
 | **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
-| **[getTransform](Gameplay.GameObject.md#gettransform)**([`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
-| **[getUpVector](Gameplay.GameObject.md#getupvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getTransform](Gameplay.GameObject.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.GameObject.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[getVisibility](Gameplay.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
-| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
-| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
-| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
 | **[isRunningClient](Gameplay.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](Gameplay.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
-| **[onReplicated](Gameplay.GameObject.md#onreplicated)**(`string`, `unknown`, `unknown`): `void` <br> 属性被同步事件 ClientOnly|
+| **[onReplicated](Gameplay.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
-| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**([`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
-| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**([`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
-| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
-| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
-| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
-| **[setTransform](Gameplay.GameObject.md#settransform)**([`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
-| **[setVisibility](Gameplay.GameObject.md#setvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
-| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
-| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
-| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
-| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
-| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
-| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
+| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
+| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**(`scale`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.GameObject.md#settransform)**(`transform`: [`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
+| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -250,7 +247,7 @@ ___
 
 ### accuracyOfFireEnable <Score text="accuracyOfFireEnable" /> 
 
-• `get` **accuracyOfFireEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **accuracyOfFireEnable**(): `boolean` 
 
 是否开启了射击精度组件
 
@@ -263,7 +260,7 @@ ___
 
 是否开启了射击精度组件
 
-• `set` **accuracyOfFireEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
+• `set` **accuracyOfFireEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启射击精度组件
 
@@ -285,7 +282,7 @@ ___
 
 ### aimEnable <Score text="aimEnable" /> 
 
-• `get` **aimEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **aimEnable**(): `boolean` 
 
 是否开启了瞄准组件
 
@@ -296,7 +293,7 @@ ___
 
 是否开启了瞄准组件
 
-• `set` **aimEnable**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **aimEnable**(`value`): `void` <Badge type="tip" text="server" />
 
 设置是否开启瞄准组件
 
@@ -317,7 +314,7 @@ ___
 
 ### loadEnable <Score text="loadEnable" /> 
 
-• `get` **loadEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **loadEnable**(): `boolean` 
 
 是否开启了上膛组件
 
@@ -330,7 +327,7 @@ ___
 
 是否开启了上膛组件
 
-• `set` **loadEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
+• `set` **loadEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启上膛组件
 
@@ -351,7 +348,7 @@ ___
 
 ### recoilForceEnable <Score text="recoilForceEnable" /> 
 
-• `get` **recoilForceEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **recoilForceEnable**(): `boolean` 
 
 是否开启了后坐力组件
 
@@ -362,7 +359,7 @@ ___
 
 是否开启了后坐力组件
 
-• `set` **recoilForceEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
+• `set` **recoilForceEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启后座力组件
 
@@ -383,7 +380,7 @@ ___
 
 ### reloadEnable <Score text="reloadEnable" /> 
 
-• `get` **reloadEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **reloadEnable**(): `boolean` 
 
 是否开启了换弹组件
 
@@ -394,7 +391,7 @@ ___
 
 是否开启了换弹组件
 
-• `set` **reloadEnable**(`isEnabled`): `void` <Badge type="tip" text="other" />
+• `set` **reloadEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启换弹组件
 
@@ -438,7 +435,7 @@ ___
 
 ### cloneComponentsData <Score text="cloneComponentsData" /> 
 
-• **cloneComponentsData**(`otherHotWeapon`): `void` <Badge type="tip" text="other" />
+• **cloneComponentsData**(`otherHotWeapon`): `void` <Badge type="tip" text="server" />
 
 从传入的热武器逻辑对象中拷贝所有组件数据
 
@@ -485,7 +482,7 @@ ___
 
 ### getBulletLocWhileSpawnOnScreenCenter <Score text="getBulletLocWhileSpawnOnScreenCenter" /> 
 
-• **getBulletLocWhileSpawnOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getBulletLocWhileSpawnOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="client" />
 
 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location
 
@@ -505,7 +502,7 @@ ___
 
 ### getCurrentOwner <Score text="getCurrentOwner" /> 
 
-• **getCurrentOwner**(): [`Character`](Gameplay.Character.md) <Badge type="tip" text="other" />
+• **getCurrentOwner**(): [`Character`](Gameplay.Character.md) 
 
 获取当前热武器的所有者
 
@@ -520,7 +517,7 @@ ___
 
 ### getCurrentState <Score text="getCurrentState" /> 
 
-• **getCurrentState**(): [`HotWeaponState`](../enums/Gameplay.HotWeaponState.md) <Badge type="tip" text="other" />
+• **getCurrentState**(): [`HotWeaponState`](../enums/Gameplay.HotWeaponState.md) 
 
 获取当前热武器状态
 
@@ -535,7 +532,7 @@ ___
 
 ### getDefaultCrossHairSize <Score text="getDefaultCrossHairSize" /> 
 
-• **getDefaultCrossHairSize**(`maxShootRange`): `number` <Badge type="tip" text="other" />
+• **getDefaultCrossHairSize**(`maxShootRange`): `number` <Badge type="tip" text="client" />
 
 传入Player和最大射程，获取默认准星大小
 
@@ -555,7 +552,7 @@ ___
 
 ### getShootDirWithDispersion <Score text="getShootDirWithDispersion" /> 
 
-• **getShootDirWithDispersion**(`StartLoc`, `ShootRange`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getShootDirWithDispersion**(`StartLoc`, `ShootRange`): [`Vector`](Type.Vector.md) <Badge type="tip" text="client" />
 
 非屏幕中心生成子弹模式下，获取子弹飞行方向
 
@@ -588,7 +585,7 @@ ___
 
 ### getTransformForFire <Score text="getTransformForFire" /> 
 
-• **getTransformForFire**(`ShootRange`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
+• **getTransformForFire**(`ShootRange`): [`Transform`](Type.Transform.md) <Badge type="tip" text="client" />
 
 获取开火的Transform
 
@@ -640,7 +637,7 @@ todo Need Completed
 
 ### setCurrentFireModel <Score text="setCurrentFireModel" /> 
 
-• **setCurrentFireModel**(`FireMode`): `void` <Badge type="tip" text="other" />
+• **setCurrentFireModel**(`FireMode`): `void` 
 
 切换设置当前开火模式
 

@@ -12,9 +12,9 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[X](Gameplay.AxisType.md#x)** = ``0`` <br> X轴|
-| **[Y](Gameplay.AxisType.md#y)** = ``1`` <br> Y轴|
-| **[Z](Gameplay.AxisType.md#z)** = ``2`` <br> Z轴|
+| **[X](Gameplay.AxisType.md#x)** = ``0`` <br> |
+| **[Y](Gameplay.AxisType.md#y)** = ``1`` <br> |
+| **[Z](Gameplay.AxisType.md#z)** = ``2`` <br> |
 
 ## Enumeration Members
 

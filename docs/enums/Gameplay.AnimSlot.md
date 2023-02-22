@@ -12,10 +12,10 @@ ANIMATIONS
 
 | Enumeration Members |
 | :-----|
-| **[Default](Gameplay.AnimSlot.md#default)** = ``0`` <br> 默认插槽|
-| **[FullyBody](Gameplay.AnimSlot.md#fullybody)** = ``3`` <br> 全身插槽|
-| **[Lower](Gameplay.AnimSlot.md#lower)** = ``2`` <br> 下半身插槽|
-| **[Upper](Gameplay.AnimSlot.md#upper)** = ``1`` <br> 上半身插槽|
+| **[Default](Gameplay.AnimSlot.md#default)** = ``0`` <br> |
+| **[FullyBody](Gameplay.AnimSlot.md#fullybody)** = ``3`` <br> |
+| **[Lower](Gameplay.AnimSlot.md#lower)** = ``2`` <br> |
+| **[Upper](Gameplay.AnimSlot.md#upper)** = ``1`` <br> |
 
 ## Enumeration Members
 

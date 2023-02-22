@@ -12,8 +12,8 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[Distance](Gameplay.ProjectileAccelerationEnableMode.md#distance)** = ``0`` <br> 到指定距离时启用加速度|
-| **[Time](Gameplay.ProjectileAccelerationEnableMode.md#time)** = ``1`` <br> 到指定时间时启用加速度|
+| **[Distance](Gameplay.ProjectileAccelerationEnableMode.md#distance)** = ``0`` <br> |
+| **[Time](Gameplay.ProjectileAccelerationEnableMode.md#time)** = ``1`` <br> |
 
 ## Enumeration Members
 

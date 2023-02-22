@@ -12,10 +12,10 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[CanJump](Gameplay.AbilityStateControlType.md#canjump)** = ``2`` <br> 可跳跃|
-| **[CanMove](Gameplay.AbilityStateControlType.md#canmove)** = ``1`` <br> 可移动|
-| **[CanTurn](Gameplay.AbilityStateControlType.md#canturn)** = ``4`` <br> 可转向|
-| **[None](Gameplay.AbilityStateControlType.md#none)** = ``0`` <br> 默认值|
+| **[CanJump](Gameplay.AbilityStateControlType.md#canjump)** = ``2`` <br> |
+| **[CanMove](Gameplay.AbilityStateControlType.md#canmove)** = ``1`` <br> |
+| **[CanTurn](Gameplay.AbilityStateControlType.md#canturn)** = ``4`` <br> |
+| **[None](Gameplay.AbilityStateControlType.md#none)** = ``0`` <br> |
 
 ## Enumeration Members
 

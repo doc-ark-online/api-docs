@@ -39,9 +39,7 @@ this.stanceProxy.stop();
 | Methods |
 | :-----|
 | **[play](Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
-| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:play()|
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
-| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:stop()|
 :::
 
 

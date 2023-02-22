@@ -27,13 +27,13 @@ GAMEPLAY
 
 | Methods |
 | :-----|
-| **[setPlayerPassableForArea](Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`MWActor`, `boolean`, `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限|
+| **[setPlayerPassableForArea](Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`Target`: `MWActor`, `CanPass`: `boolean`, `Guid`: `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限|
 
 ## Methods
 
 ### setPlayerPassableForArea <Score text="setPlayerPassableForArea" /> 
 
-• `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void` <Badge type="tip" text="other" />
+• `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void` 
 
 设置所有禁行区对某个玩家的通过权限
 

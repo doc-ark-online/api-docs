@@ -20,7 +20,7 @@ UTILITY
 
 | Properties |
 | :-----|
-| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)|
+| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> BGM音量|
 
 | Accessors |
 | :-----|
@@ -30,22 +30,22 @@ UTILITY
 | Methods |
 | :-----|
 | **[clearAll](Service.SoundService.md#clearall)**(): `void` <br> 停止所有音效和BGM，并释放所有音效和BGM资源|
-| **[get3DSoundGameObject](Service.SoundService.md#get3dsoundgameobject)**(`number`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <br> 根据播放id获取一个Sound|
-| **[play3DSound](Service.SoundService.md#play3dsound)**(`string`, `string` \, `number`, `number`, `any`): `number` <br> 在目标播放3D音效|
-| **[playBGM](Service.SoundService.md#playbgm)**(`string`, `number`): `void` <br> 播放背景音乐|
-| **[playSound](Service.SoundService.md#playsound)**(`string`, `number`, `number`): `string` <br> 根据资源Id播放声音|
-| **[stop3DSound](Service.SoundService.md#stop3dsound)**(`number`): `void` <br> 停止3D声音|
+| **[get3DSoundGameObject](Service.SoundService.md#get3dsoundgameobject)**(`playId`: `number`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <br> 根据播放id获取一个Sound|
+| **[play3DSound](Service.SoundService.md#play3dsound)**(`resId`: `string`, `target`: `string` \, `loopNum?`: `number`, `volume?`: `number`, `playParam?`: `any`): `number` <br> 在目标播放3D音效|
+| **[playBGM](Service.SoundService.md#playbgm)**(`resId`: `string`, `volume?`: `number`): `void` <br> 播放背景音乐|
+| **[playSound](Service.SoundService.md#playsound)**(`resId`: `string`, `loopNum?`: `number`, `volume?`: `number`): `string` <br> 根据资源Id播放声音|
+| **[stop3DSound](Service.SoundService.md#stop3dsound)**(`playId`: `number`): `void` <br> 停止3D声音|
 | **[stopAll3DSound](Service.SoundService.md#stopall3dsound)**(): `void` <br> 停止一切3D声音|
 | **[stopAllSound](Service.SoundService.md#stopallsound)**(): `void` <br> 停止除BGM以外的一切2D声音|
 | **[stopBGM](Service.SoundService.md#stopbgm)**(): `void` <br> 停止背景音乐|
-| **[stopSound](Service.SoundService.md#stopsound)**(`string`): `void` <br> 根据资源Id停止声音|
+| **[stopSound](Service.SoundService.md#stopsound)**(`resId`: `string`): `void` <br> 根据资源Id停止声音|
 | **[getInstance](Service.SoundService.md#getinstance)**(): [`SoundService`](Service.SoundService.md) <br> 获取音效管理器全局实例|
 
 ## Properties
 
 ### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
-• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <Badge type="tip" text="other" />
+• `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\>
 
 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)
 
@@ -53,7 +53,7 @@ UTILITY
 
 ### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
-• `get` **BGMVolumeScale**(): `number`
+• `get` **BGMVolumeScale**(): `number` <Badge type="tip" text="client" />
 
 BGM音量
 
@@ -62,11 +62,9 @@ BGM音量
 
 `number`
 
-• `set` **BGMVolumeScale**(`value`): `void`
+• `set` **BGMVolumeScale**(`value`): `void` <Badge type="tip" text="client" />
 
 BGM音量
-
-**`Effect`**
 
 
 #### Parameters
@@ -80,7 +78,7 @@ ___
 
 ### volumeScale <Score text="volumeScale" /> 
 
-• `get` **volumeScale**(): `number` <Badge type="tip" text="other" />
+• `get` **volumeScale**(): `number` <Badge type="tip" text="client" />
 
 音效的音量
 
@@ -119,7 +117,7 @@ ___
 
 ### clearAll <Score text="clearAll" /> 
 
-• **clearAll**(): `void` <Badge type="tip" text="other" />
+• **clearAll**(): `void` 
 
 停止所有音效和BGM，并释放所有音效和BGM资源
 
@@ -129,7 +127,7 @@ ___
 
 ### get3DSoundGameObject <Score text="get" /> 
 
-• **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="other" />
+• **get3DSoundGameObject**(`playId`): `Promise`<[`Sound`](Gameplay.Sound.md)\> <Badge type="tip" text="client" />
 
 根据播放id获取一个Sound
 
@@ -291,7 +289,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`SoundService`](Service.SoundService.md) 
 
 获取音效管理器全局实例
 

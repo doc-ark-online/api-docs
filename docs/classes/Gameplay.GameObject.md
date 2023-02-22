@@ -33,75 +33,72 @@ GameObject的基类
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> since:020 reason:api重构 replacement:getVisibility()|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
 
 | Methods |
 | :-----|
-| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
-| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
-| **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`Component`, `boolean`): `boolean` <br> 附加组件|
-| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`GameObject`): `void` <br> 将物体附着到指定物体上|
-| **[clone](Gameplay.GameObject.md#clone)**(`boolean` \): `GameObject` <br> 复制对象|
-| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**((...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
+| **[addDestroyCallback](Gameplay.GameObject.md#adddestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
+| **[asyncGetScriptByName](Gameplay.GameObject.md#asyncgetscriptbyname)**(`name`: `string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
+| **[attachComponent](Gameplay.GameObject.md#attachcomponent)**(`component`: `Component`, `isStatic?`: `boolean`): `boolean` <br> 附加组件|
+| **[attachToGameObject](Gameplay.GameObject.md#attachtogameobject)**(`obj`: `GameObject`): `void` <br> 将物体附着到指定物体上|
+| **[clone](Gameplay.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): `GameObject` <br> 复制对象|
+| **[deleteDestroyCallback](Gameplay.GameObject.md#deletedestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`string` \): `void` <br> 移除组件|
+| **[detachComponent](Gameplay.GameObject.md#detachcomponent)**(`component`: `string` \): `void` <br> 移除组件|
 | **[detachFromGameObject](Gameplay.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`boolean`, `boolean`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](Gameplay.GameObject.md#getbounds)**(`boolean`, [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
-| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
+| **[getBoundingBoxSize](Gameplay.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](Gameplay.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](Type.Vector.md), `BoxExtentOuter`: [`Vector`](Type.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGuid](Gameplay.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
+| **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
-| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
-| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
-| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
-| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
-| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
-| **[getRightVector](Gameplay.GameObject.md#getrightvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
-| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
+| **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
+| **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
+| **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
+| **[getRightVector](Gameplay.GameObject.md#getrightvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
 | **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
 | **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
-| **[getTransform](Gameplay.GameObject.md#gettransform)**([`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
-| **[getUpVector](Gameplay.GameObject.md#getupvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getTransform](Gameplay.GameObject.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
+| **[getUpVector](Gameplay.GameObject.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[getVisibility](Gameplay.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
-| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
-| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
-| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+| **[getWorldLocation](Gameplay.GameObject.md#getworldlocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
+| **[getWorldRotation](Gameplay.GameObject.md#getworldrotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
+| **[getWorldScale](Gameplay.GameObject.md#getworldscale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
 | **[isRunningClient](Gameplay.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](Gameplay.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
-| **[onReplicated](Gameplay.GameObject.md#onreplicated)**(`string`, `unknown`, `unknown`): `void` <br> 属性被同步事件 ClientOnly|
+| **[onReplicated](Gameplay.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
-| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
+| **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**([`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `boolean`): `void` <br> 设置碰撞状态|
-| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**([`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
-| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
-| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
-| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**([`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
-| **[setTransform](Gameplay.GameObject.md#settransform)**([`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
-| **[setVisibility](Gameplay.GameObject.md#setvisibility)**([`PropertyStatus`](../enums/Type.PropertyStatus.md), `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
-| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**([`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
-| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**([`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
-| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
-| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<extends `GameObject`<`T`\> |\>([`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<extends `GameObject`<`T`\> |\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[find](Gameplay.GameObject.md#find)**(`string`): `GameObject` <br> 通过GUID查找GameObject|
-| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
-| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
-| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`string`): `GameObject`[] <br> 通过名字查找物体|
-| **[spawn](Gameplay.GameObject.md#spawn)**<extends `GameObject`<`T`\> |\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): extends `GameObject`<`T`\> | <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`string`, `boolean`, [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
+| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
+| **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
+| **[setRelativeScale](Gameplay.GameObject.md#setrelativescale)**(`scale`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对缩放|
+| **[setTransform](Gameplay.GameObject.md#settransform)**(`transform`: [`Transform`](Type.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setVisibility](Gameplay.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[setWorldLocation](Gameplay.GameObject.md#setworldlocation)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](Gameplay.GameObject.md#setworldrotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置物体的世界旋转|
+| **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
+| **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
+| **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
+| **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
+| **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 
 ## Accessors
 
 ### forwardVector <Score text="forwardVector" /> 
 
-• `get` **forwardVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **forwardVector**(): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向前向量
 
@@ -116,7 +113,7 @@ ___
 
 ### guid <Score text="guid" /> 
 
-• `get` **guid**(): `string` <Badge type="tip" text="other" />
+• `get` **guid**(): `string` 
 
 获取对象的GUID（唯一标识一个对象的字符串）。
 
@@ -129,7 +126,7 @@ ___
 
 ### lockStatus <Score text="lockStatus" /> 
 
-• `get` **lockStatus**(): `boolean` <Badge type="tip" text="other" />
+• `get` **lockStatus**(): `boolean` 
 
 获取对象是否锁定
 
@@ -138,7 +135,7 @@ ___
 
 `boolean`
 
-• `set` **lockStatus**(`v`): `void` <Badge type="tip" text="other" />
+• `set` **lockStatus**(`v`): `void` 
 
 设置对象是否锁定
 
@@ -154,7 +151,7 @@ ___
 
 ### name <Score text="name" /> 
 
-• `get` **name**(): `string` <Badge type="tip" text="other" />
+• `get` **name**(): `string` 
 
 返回当前物体名称
 
@@ -165,7 +162,7 @@ ___
 
 名称
 
-• `set` **name**(`name`): `void` <Badge type="tip" text="other" />
+• `set` **name**(`name`): `void` 
 
 设置物体名称
 
@@ -181,7 +178,7 @@ ___
 
 ### netStatus <Score text="netStatus" /> 
 
-• `get` **netStatus**(): [`NetStatus`](../enums/Type.NetStatus.md) <Badge type="tip" text="other" />
+• `get` **netStatus**(): [`NetStatus`](../enums/Type.NetStatus.md) 
 
 获取当前物体同步状态
 
@@ -196,7 +193,7 @@ ___
 
 ### parent <Score text="parent" /> 
 
-• `get` **parent**(): `GameObject` <Badge type="tip" text="other" />
+• `get` **parent**(): `GameObject` 
 
 获取当前父物体
 
@@ -207,7 +204,7 @@ ___
 
 父物体
 
-• `set` **parent**(`newParent`): `void` <Badge type="tip" text="other" />
+• `set` **parent**(`newParent`): `void` 
 
 设置父物体
 
@@ -223,7 +220,7 @@ ___
 
 ### relativeLocation <Score text="relativeLocation" /> 
 
-• `get` **relativeLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **relativeLocation**(): [`Vector`](Type.Vector.md) 
 
 获取相对位置
 
@@ -234,7 +231,7 @@ ___
 
 位置坐标
 
-• `set` **relativeLocation**(`location`): `void` <Badge type="tip" text="other" />
+• `set` **relativeLocation**(`location`): `void` 
 
 设置相对位置
 
@@ -250,7 +247,7 @@ ___
 
 ### relativeRotation <Score text="relativeRotation" /> 
 
-• `get` **relativeRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• `get` **relativeRotation**(): [`Rotation`](Type.Rotation.md) 
 
 获取相对旋转
 
@@ -261,7 +258,7 @@ ___
 
 旋转角度
 
-• `set` **relativeRotation**(`rotation`): `void` <Badge type="tip" text="other" />
+• `set` **relativeRotation**(`rotation`): `void` 
 
 设置相对旋转
 
@@ -277,7 +274,7 @@ ___
 
 ### relativeScale <Score text="relativeScale" /> 
 
-• `get` **relativeScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **relativeScale**(): [`Vector`](Type.Vector.md) 
 
 获取相对缩放
 
@@ -288,7 +285,7 @@ ___
 
 相对缩放
 
-• `set` **relativeScale**(`scale`): `void` <Badge type="tip" text="other" />
+• `set` **relativeScale**(`scale`): `void` 
 
 设置相对缩放
 
@@ -304,7 +301,7 @@ ___
 
 ### rightVector <Score text="rightVector" /> 
 
-• `get` **rightVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **rightVector**(): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向右向量
 
@@ -319,7 +316,7 @@ ___
 
 ### staticStatus <Score text="staticStatus" /> 
 
-• `get` **staticStatus**(): `boolean` <Badge type="tip" text="other" />
+• `get` **staticStatus**(): `boolean` 
 
 获取对象是否静态
 
@@ -332,7 +329,7 @@ ___
 
 ### tag <Score text="tag" /> 
 
-• `get` **tag**(): `string` <Badge type="tip" text="other" />
+• `get` **tag**(): `string` 
 
 获取当前物体的Tag
 
@@ -343,7 +340,7 @@ ___
 
 Tag
 
-• `set` **tag**(`tag`): `void` <Badge type="tip" text="other" />
+• `set` **tag**(`tag`): `void` 
 
 设置当前物体的Tag
 
@@ -359,7 +356,7 @@ ___
 
 ### transform <Score text="transform" /> 
 
-• `get` **transform**(): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
+• `get` **transform**(): [`Transform`](Type.Transform.md) 
 
 返回当前物体transform
 
@@ -370,7 +367,7 @@ ___
 
 transform
 
-• `set` **transform**(`transform`): `void` <Badge type="tip" text="other" />
+• `set` **transform**(`transform`): `void` 
 
 设置当前物体transform
 
@@ -386,7 +383,7 @@ ___
 
 ### upVector <Score text="upVector" /> 
 
-• `get` **upVector**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **upVector**(): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向上向量
 
@@ -401,7 +398,7 @@ ___
 
 ### useUpdate <Score text="useUpdate" /> 
 
-• `get` **useUpdate**(): `boolean` <Badge type="tip" text="other" />
+• `get` **useUpdate**(): `boolean` 
 
 获取对象是否使用更新
 
@@ -410,7 +407,7 @@ ___
 
 `boolean`
 
-• `set` **useUpdate**(`v`): `void` <Badge type="tip" text="other" />
+• `set` **useUpdate**(`v`): `void` 
 
 设置对象是否使用更新
 
@@ -424,28 +421,9 @@ ___
 
 ___
 
-### visible <Score text="visible" /> 
-
-• `get` **visible**(): `boolean` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:020 reason:api重构 replacement:getVisibility()
-
-获取当前物体是否显示
-
-
-#### Returns
-
-`boolean`
-
-bool
-
-___
-
 ### worldLocation <Score text="worldLocation" /> 
 
-• `get` **worldLocation**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **worldLocation**(): [`Vector`](Type.Vector.md) 
 
 获取物体的世界坐标
 
@@ -454,7 +432,7 @@ ___
 
 [`Vector`](Type.Vector.md)
 
-• `set` **worldLocation**(`v`): `void` <Badge type="tip" text="other" />
+• `set` **worldLocation**(`v`): `void` 
 
 设置物体的世界坐标
 
@@ -470,7 +448,7 @@ ___
 
 ### worldRotation <Score text="worldRotation" /> 
 
-• `get` **worldRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• `get` **worldRotation**(): [`Rotation`](Type.Rotation.md) 
 
 获取物体的世界旋转
 
@@ -479,7 +457,7 @@ ___
 
 [`Rotation`](Type.Rotation.md)
 
-• `set` **worldRotation**(`rotation`): `void` <Badge type="tip" text="other" />
+• `set` **worldRotation**(`rotation`): `void` 
 
 设置物体的世界旋转
 
@@ -495,7 +473,7 @@ ___
 
 ### worldScale <Score text="worldScale" /> 
 
-• `get` **worldScale**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **worldScale**(): [`Vector`](Type.Vector.md) 
 
 获取物体的世界缩放
 
@@ -504,7 +482,7 @@ ___
 
 [`Vector`](Type.Vector.md)
 
-• `set` **worldScale**(`v`): `void` <Badge type="tip" text="other" />
+• `set` **worldScale**(`v`): `void` 
 
 设置物体的是世界缩放
 
@@ -520,7 +498,7 @@ ___
 
 ### addDestroyCallback <Score text="addDestroyCallback" /> 
 
-• **addDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
+• **addDestroyCallback**(`callback`): `void` 
 
 添加物体Destroy事件回调
 
@@ -536,7 +514,7 @@ ___
 
 ### asyncGetScriptByName <Score text="asyncGetScriptByName" /> 
 
-• **asyncGetScriptByName**(`name`): `Promise`<`Script`\> <Badge type="tip" text="other" />
+• **asyncGetScriptByName**(`name`): `Promise`<`Script`\> 
 
 异步获得当前物体下的指定脚本 客户端不维系父子关系
 
@@ -557,7 +535,7 @@ ___
 
 ### attachComponent <Score text="attachComponent" /> 
 
-• **attachComponent**(`component`, `isStatic?`): `boolean` <Badge type="tip" text="other" />
+• **attachComponent**(`component`, `isStatic?`): `boolean` 
 
 附加组件
 
@@ -579,7 +557,7 @@ ___
 
 ### attachToGameObject <Score text="attachToGameObject" /> 
 
-• **attachToGameObject**(`obj`): `void` <Badge type="tip" text="other" />
+• **attachToGameObject**(`obj`): `void` 
 
 将物体附着到指定物体上
 
@@ -595,7 +573,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-• **clone**(`spawnInfo?`): `GameObject` <Badge type="tip" text="other" />
+• **clone**(`spawnInfo?`): `GameObject` 
 
 复制对象
 
@@ -616,7 +594,7 @@ ___
 
 ### deleteDestroyCallback <Score text="deleteDestroyCallback" /> 
 
-• **deleteDestroyCallback**(`callback`): `void` <Badge type="tip" text="other" />
+• **deleteDestroyCallback**(`callback`): `void` 
 
 移除物体Destroy事件回调
 
@@ -632,7 +610,7 @@ ___
 
 ### destroy <Score text="destroy" /> 
 
-• **destroy**(): `void` <Badge type="tip" text="other" />
+• **destroy**(): `void` 
 
 删除对象
 
@@ -642,7 +620,7 @@ ___
 
 ### detachComponent <Score text="detachComponent" /> 
 
-• **detachComponent**(`component`): `void` <Badge type="tip" text="other" />
+• **detachComponent**(`component`): `void` 
 
 移除组件
 
@@ -658,7 +636,7 @@ ___
 
 ### detachFromGameObject <Score text="detachFromGameObject" /> 
 
-• **detachFromGameObject**(): `void` <Badge type="tip" text="other" />
+• **detachFromGameObject**(): `void` 
 
 将此物体与当前附着的物体分离
 
@@ -668,7 +646,7 @@ ___
 
 ### getBoundingBoxSize <Score text="getBoundingBoxSize" /> 
 
-• **getBoundingBoxSize**(`nonColliding?`, `includeFromChildActors?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getBoundingBoxSize**(`nonColliding?`, `includeFromChildActors?`, `outer?`): [`Vector`](Type.Vector.md) 
 
 获取物体包围盒大小
 
@@ -697,7 +675,7 @@ ___
 
 ### getBounds <Score text="getBounds" /> 
 
-• **getBounds**(`onlyCollidingComponents`, `OriginOuter`, `BoxExtentOuter`, `includeFromChildActors?`): `void` <Badge type="tip" text="other" />
+• **getBounds**(`onlyCollidingComponents`, `OriginOuter`, `BoxExtentOuter`, `includeFromChildActors?`): `void` 
 
 获取GameObject边界
 
@@ -716,7 +694,7 @@ ___
 
 ### getChildByGuid <Score text="getChildByGuid" /> 
 
-• **getChildByGuid**(`GUID`): `undefined` \| `GameObject` <Badge type="tip" text="other" />
+• **getChildByGuid**(`GUID`): `undefined` \| `GameObject` 
 
 根据GUID查找子物体
 
@@ -737,7 +715,7 @@ ___
 
 ### getChildByName <Score text="getChildByName" /> 
 
-• **getChildByName**(`name`): `undefined` \| `GameObject` <Badge type="tip" text="other" />
+• **getChildByName**(`name`): `undefined` \| `GameObject` 
 
 根据名称查找子物体
 
@@ -758,7 +736,7 @@ ___
 
 ### getChildren <Score text="getChildren" /> 
 
-• **getChildren**(): `undefined` \| `GameObject`[] <Badge type="tip" text="other" />
+• **getChildren**(): `undefined` \| `GameObject`[] 
 
 获取Children，客户端不维系父子关系。推荐使用Find替代
 
@@ -773,7 +751,7 @@ ___
 
 ### getChildrenBoxCenter <Score text="getChildrenBoxCenter" /> 
 
-• **getChildrenBoxCenter**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getChildrenBoxCenter**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])
 
@@ -800,7 +778,7 @@ ___
 
 ### getCollision <Score text="getCollision" /> 
 
-• **getCollision**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <Badge type="tip" text="other" />
+• **getCollision**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) 
 
 返回碰撞状态
 
@@ -815,7 +793,7 @@ ___
 
 ### getForwardVector <Score text="getForwardVector" /> 
 
-• **getForwardVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getForwardVector**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向前向量
 
@@ -842,7 +820,7 @@ ___
 
 ### getRelativeLocation <Score text="getRelativeLocation" /> 
 
-• **getRelativeLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getRelativeLocation**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取相对位置
 
@@ -869,7 +847,7 @@ ___
 
 ### getRelativeRotation <Score text="getRelativeRotation" /> 
 
-• **getRelativeRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• **getRelativeRotation**(`outer?`): [`Rotation`](Type.Rotation.md) 
 
 获取相对旋转
 
@@ -896,7 +874,7 @@ ___
 
 ### getRelativeScale <Score text="getRelativeScale" /> 
 
-• **getRelativeScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getRelativeScale**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取相对缩放
 
@@ -923,7 +901,7 @@ ___
 
 ### getRightVector <Score text="getRightVector" /> 
 
-• **getRightVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getRightVector**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向右向量
 
@@ -950,7 +928,7 @@ ___
 
 ### getScriptByGuid <Score text="getScriptByGuid" /> 
 
-• **getScriptByGuid**(`GUID`): `undefined` \| `Script` <Badge type="tip" text="other" />
+• **getScriptByGuid**(`GUID`): `undefined` \| `Script` 
 
 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
@@ -971,7 +949,7 @@ ___
 
 ### getScriptByName <Score text="getScriptByName" /> 
 
-• **getScriptByName**(`name`): `undefined` \| `Script` <Badge type="tip" text="other" />
+• **getScriptByName**(`name`): `undefined` \| `Script` 
 
 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
 
@@ -992,7 +970,7 @@ ___
 
 ### getScripts <Score text="getScripts" /> 
 
-• **getScripts**(): `undefined` \| `Script`[] <Badge type="tip" text="other" />
+• **getScripts**(): `undefined` \| `Script`[] 
 
 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
 
@@ -1007,7 +985,7 @@ ___
 
 ### getSourceAssetGuid <Score text="getSourceAssetGuid" /> 
 
-• **getSourceAssetGuid**(): `string` <Badge type="tip" text="other" />
+• **getSourceAssetGuid**(): `string` 
 
 获取当前物体使用资源的GUID
 
@@ -1022,7 +1000,7 @@ ___
 
 ### getTransform <Score text="getTransform" /> 
 
-• **getTransform**(`outer?`): [`Transform`](Type.Transform.md) <Badge type="tip" text="other" />
+• **getTransform**(`outer?`): [`Transform`](Type.Transform.md) 
 
 返回当前物体Transform
 
@@ -1049,7 +1027,7 @@ ___
 
 ### getUpVector <Score text="getUpVector" /> 
 
-• **getUpVector**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getUpVector**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取当前物体的向上向量
 
@@ -1070,7 +1048,7 @@ ___
 
 ### getVisibility <Score text="getVisibility" /> 
 
-• **getVisibility**(): `boolean` <Badge type="tip" text="other" />
+• **getVisibility**(): `boolean` 
 
 获取GameObject是否被显示
 
@@ -1085,7 +1063,7 @@ ___
 
 ### getWorldLocation <Score text="getWorldLocation" /> 
 
-• **getWorldLocation**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getWorldLocation**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取物体的世界坐标
 
@@ -1112,7 +1090,7 @@ ___
 
 ### getWorldRotation <Score text="getWorldRotation" /> 
 
-• **getWorldRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• **getWorldRotation**(`outer?`): [`Rotation`](Type.Rotation.md) 
 
 获取物体的世界旋转
 
@@ -1139,7 +1117,7 @@ ___
 
 ### getWorldScale <Score text="getWorldScale" /> 
 
-• **getWorldScale**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getWorldScale**(`outer?`): [`Vector`](Type.Vector.md) 
 
 获取物体的世界缩放
 
@@ -1166,7 +1144,7 @@ ___
 
 ### isRunningClient <Score text="isRunningClient" /> 
 
-• **isRunningClient**(): `boolean` <Badge type="tip" text="other" />
+• **isRunningClient**(): `boolean` 
 
 是否为客户端
 
@@ -1181,7 +1159,7 @@ ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onDestroy**(): `void` 
 
 周期函数 被销毁时调用
 
@@ -1191,7 +1169,7 @@ ___
 
 ### onReplicated <Score text="onReplicated" /> 
 
-• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` <Badge type="tip" text="other" />
+• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` 
 
 属性被同步事件 ClientOnly
 
@@ -1209,7 +1187,7 @@ ___
 
 ### onStart <Score text="onStart" /> 
 
-• `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onStart**(): `void` 
 
 周期函数 脚本开始执行时调用
 
@@ -1219,7 +1197,7 @@ ___
 
 ### onUpdate <Score text="onUpdate" /> 
 
-• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
+• `Protected` **onUpdate**(`dt`): `void` 
 
 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
 
@@ -1235,7 +1213,7 @@ ___
 
 ### ready <Score text="ready" /> 
 
-• **ready**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <Badge type="tip" text="other" />
+• **ready**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> 
 
 GameObject准备好后返回
 
@@ -1250,7 +1228,7 @@ ___
 
 ### setCollision <Score text="setCollision" /> 
 
-• **setCollision**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
+• **setCollision**(`status`, `propagateToChildren?`): `void` 
 
 设置碰撞状态
 
@@ -1273,7 +1251,7 @@ ___
 
 ### setLocationAndRotation <Score text="setLocationAndRotation" /> 
 
-• **setLocationAndRotation**(`location`, `rotation`): `void` <Badge type="tip" text="other" />
+• **setLocationAndRotation**(`location`, `rotation`): `void` 
 
 同时设置物体的世界位置与旋转
 
@@ -1290,7 +1268,7 @@ ___
 
 ### setRelativeLocation <Score text="setRelativeLocation" /> 
 
-• **setRelativeLocation**(`location`): `void` <Badge type="tip" text="other" />
+• **setRelativeLocation**(`location`): `void` 
 
 设置相对位置
 
@@ -1306,7 +1284,7 @@ ___
 
 ### setRelativeRotation <Score text="setRelativeRotation" /> 
 
-• **setRelativeRotation**(`rotation`): `void` <Badge type="tip" text="other" />
+• **setRelativeRotation**(`rotation`): `void` 
 
 设置相对旋转
 
@@ -1322,7 +1300,7 @@ ___
 
 ### setRelativeScale <Score text="setRelativeScale" /> 
 
-• **setRelativeScale**(`scale`): `void` <Badge type="tip" text="other" />
+• **setRelativeScale**(`scale`): `void` 
 
 设置相对缩放
 
@@ -1338,7 +1316,7 @@ ___
 
 ### setTransform <Score text="setTransform" /> 
 
-• **setTransform**(`transform`): `void` <Badge type="tip" text="other" />
+• **setTransform**(`transform`): `void` 
 
 设置当前物体transform
 
@@ -1354,7 +1332,7 @@ ___
 
 ### setVisibility <Score text="setVisibility" /> 
 
-• **setVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="other" />
+• **setVisibility**(`status`, `propagateToChildren?`): `void` 
 
 设置GameObject是否被显示
 
@@ -1371,7 +1349,7 @@ ___
 
 ### setWorldLocation <Score text="setWorldLocation" /> 
 
-• **setWorldLocation**(`v`): `void` <Badge type="tip" text="other" />
+• **setWorldLocation**(`v`): `void` 
 
 设置物体的世界坐标
 
@@ -1387,7 +1365,7 @@ ___
 
 ### setWorldRotation <Score text="setWorldRotation" /> 
 
-• **setWorldRotation**(`rotation`): `void` <Badge type="tip" text="other" />
+• **setWorldRotation**(`rotation`): `void` 
 
 设置物体的世界旋转
 
@@ -1403,7 +1381,7 @@ ___
 
 ### setWorldScale <Score text="setWorldScale" /> 
 
-• **setWorldScale**(`v`): `void` <Badge type="tip" text="other" />
+• **setWorldScale**(`v`): `void` 
 
 设置物体的世界缩放
 
@@ -1419,7 +1397,7 @@ ___
 
 ### asyncFind <Score text="asyncFind" /> 
 
-• `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
+• `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> 
 
 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
@@ -1441,7 +1419,7 @@ ___
 
 ### asyncSpawn <Score text="asyncSpawn" /> 
 
-• `Static` **asyncSpawn**<`T`\>(`spawnInfo`): `Promise`<`T`\> <Badge type="tip" text="other" />
+• `Static` **asyncSpawn**<`T`\>(`spawnInfo`): `Promise`<`T`\> 
 
 异步构造一个 GameObject 资源不存在会先去下载资源再去创建
 
@@ -1466,36 +1444,9 @@ ___
 
 ___
 
-### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
-
-• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
-
-异步构造一个 GameObject 资源不存在会先去下载资源再去创建
-
-
-**`Deprecated`**
-
-since:022 reason:接口废弃 replacement:asyncSpawn()
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`Promise`<`GameObject`\>
-
-构造的GameObject
-
-___
-
 ### find <Score text="find" /> 
 
-• `Static` **find**(`GUID`): `GameObject` <Badge type="tip" text="other" />
+• `Static` **find**(`GUID`): `GameObject` 
 
 通过GUID查找GameObject
 
@@ -1516,7 +1467,7 @@ ___
 
 ### findGameObjectByTag <Score text="findGameObjectByTag" /> 
 
-• `Static` **findGameObjectByTag**(`InTag`): `GameObject`[] <Badge type="tip" text="other" />
+• `Static` **findGameObjectByTag**(`InTag`): `GameObject`[] 
 
 通过自定义Tag获取GameObject
 
@@ -1537,7 +1488,7 @@ ___
 
 ### getGameObjectByName <Score text="getGameObjectByName" /> 
 
-• `Static` **getGameObjectByName**(`name`): `undefined` \| `GameObject` <Badge type="tip" text="other" />
+• `Static` **getGameObjectByName**(`name`): `undefined` \| `GameObject` 
 
 通过名字查找物体
 
@@ -1558,7 +1509,7 @@ ___
 
 ### getGameObjectsByName <Score text="getGameObjectsByName" /> 
 
-• `Static` **getGameObjectsByName**(`name`): `GameObject`[] <Badge type="tip" text="other" />
+• `Static` **getGameObjectsByName**(`name`): `GameObject`[] 
 
 通过名字查找物体
 
@@ -1579,7 +1530,7 @@ ___
 
 ### spawn <Score text="spawn" /> 
 
-• `Static` **spawn**<`T`\>(`spawnInfo`): `T` <Badge type="tip" text="other" />
+• `Static` **spawn**<`T`\>(`spawnInfo`): `T` 
 
 构造一个 GameObject
 
@@ -1603,28 +1554,3 @@ ___
 构造的GameObject
 
 ___
-
-### spawnGameObject <Score text="spawnGameObject" /> 
-
-• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
-
-构造一个 GameObject
-
-
-**`Deprecated`**
-
-since:022 reason:接口废弃 replacement:spawn()
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`GameObject`
-
-构造的GameObject

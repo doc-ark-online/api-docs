@@ -41,17 +41,17 @@ var tween = new Util.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 | Type Aliases |
 | :-----|
-| **[EasingFunction](Util.TweenUtil.md#easingfunction)**: (`number` |: `number`) => `number` <br> • (`amount`): `number`|
-| **[InterpolationFunction](Util.TweenUtil.md#interpolationfunction)**: (`number`[] |: `number`[], `number` |: `number`) => `number` <br> • (`v`, `k`): `number`|
-| **[UnknownProps](Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
+| **[EasingFunction](Util.TweenUtil.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
+| **[InterpolationFunction](Util.TweenUtil.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
+| **[UnknownProps](Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 获取下一个ID的全局方法|
 
 | Variables |
 | :-----|
-| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> UTILITY|
+| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 获取下一个ID的全局方法|
 
 | Functions |
 | :-----|
-| **[nextId](Util.TweenUtil.md#nextid)**(): `number` <br> UTILITY|
+| **[nextId](Util.TweenUtil.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
 
 ## Type Aliases
 
@@ -134,7 +134,7 @@ UTILITY
 
 ### nextId <Score text="nextId" /> 
 
-• **nextId**(): `number` <Badge type="tip" text="other" />
+• **nextId**(): `number` 
 
 **`Groups`**
 

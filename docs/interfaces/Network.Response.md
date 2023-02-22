@@ -12,11 +12,11 @@ HTTP响应信息的对象
 
 | Properties |
 | :-----|
-| **[headers](Network.Response.md#headers)**: `Map`<`string`, `string`\> <br> 响应头|
-| **[ok](Network.Response.md#ok)**: `boolean` <br> 是否成功（状态码是否为200）|
-| **[status](Network.Response.md#status)**: `number` <br> 响应状态码|
-| **[type](Network.Response.md#type)**: `string` <br> 响应类型|
-| **[url](Network.Response.md#url)**: `string` <br> 响应URL|
+| **[headers](Network.Response.md#headers)**: `Map`<`string`, `string`\> <br> 数据返回json|
+| **[ok](Network.Response.md#ok)**: `boolean` <br> 数据返回json|
+| **[status](Network.Response.md#status)**: `number` <br> 数据返回json|
+| **[type](Network.Response.md#type)**: `string` <br> 数据返回json|
+| **[url](Network.Response.md#url)**: `string` <br> 数据返回json|
 
 | Methods |
 | :-----|
@@ -67,7 +67,7 @@ ___
 
 ### json <Score text="json" /> 
 
-• **json**<`T`\>(): `Promise`<`T`\> <Badge type="tip" text="other" />
+• **json**<`T`\>(): `Promise`<`T`\> 
 
 数据返回json
 
@@ -88,7 +88,7 @@ ___
 
 ### text <Score text="text" /> 
 
-• **text**(): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **text**(): `Promise`<`string`\> 
 
 数据返回文本
 

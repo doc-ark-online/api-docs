@@ -12,8 +12,8 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[RadialForce](Gameplay.ImpulseForceType.md#radialforce)** = ``0`` <br> 径向力|
-| **[VectorForce](Gameplay.ImpulseForceType.md#vectorforce)** = ``1`` <br> 矢量力|
+| **[RadialForce](Gameplay.ImpulseForceType.md#radialforce)** = ``0`` <br> |
+| **[VectorForce](Gameplay.ImpulseForceType.md#vectorforce)** = ``1`` <br> |
 
 ## Enumeration Members
 

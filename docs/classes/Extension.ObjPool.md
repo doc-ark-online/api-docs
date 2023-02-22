@@ -23,7 +23,7 @@ UTILITY
 | Methods |
 | :-----|
 | **[clear](Extension.ObjPool.md#clear)**(): `void` <br> 清除池中对象|
-| **[despawn](Extension.ObjPool.md#despawn)**(`T`): `void` <br> 归还一个对象|
+| **[despawn](Extension.ObjPool.md#despawn)**(`obj`: `T`): `void` <br> 归还一个对象|
 | **[spawn](Extension.ObjPool.md#spawn)**(): `T` <br> 生成一个对象|
 
 构造一个对象池
@@ -50,7 +50,7 @@ UTILITY
 
 ### size <Score text="size" /> 
 
-• `get` **size**(): `number` <Badge type="tip" text="other" />
+• `get` **size**(): `number` 
 
 获取对象池中空闲对象的数量
 
@@ -63,7 +63,7 @@ UTILITY
 
 ### clear <Score text="clear" /> 
 
-• **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` 
 
 清除池中对象
 
@@ -73,7 +73,7 @@ ___
 
 ### despawn <Score text="despawn" /> 
 
-• **despawn**(`obj`): `void` <Badge type="tip" text="other" />
+• **despawn**(`obj`): `void` 
 
 归还一个对象
 
@@ -89,7 +89,7 @@ ___
 
 ### spawn <Score text="spawn" /> 
 
-• **spawn**(): `T` <Badge type="tip" text="other" />
+• **spawn**(): `T` 
 
 生成一个对象
 

@@ -12,8 +12,8 @@ GAMEPLAY
 
 | Properties |
 | :-----|
-| **[guid](Type.SpawnInfo.md#guid)**: `string` <br> 资源guid或物体guid|
-| **[inReplicates](Type.SpawnInfo.md#inreplicates)**: `boolean` <br> 是否同步|
+| **[guid](Type.SpawnInfo.md#guid)**: `string` <br> transform|
+| **[inReplicates](Type.SpawnInfo.md#inreplicates)**: `boolean` <br> transform|
 | **[transform](Type.SpawnInfo.md#transform)**: [`Transform`](../classes/Type.Transform.md) <br> transform|
 
 ## Properties

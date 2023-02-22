@@ -12,9 +12,9 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[Free](Gameplay.LimitType.md#free)** = ``0`` <br> 自由|
-| **[Limited](Gameplay.LimitType.md#limited)** = ``1`` <br> 限制|
-| **[Locked](Gameplay.LimitType.md#locked)** = ``2`` <br> 锁定|
+| **[Free](Gameplay.LimitType.md#free)** = ``0`` <br> |
+| **[Limited](Gameplay.LimitType.md#limited)** = ``1`` <br> |
+| **[Locked](Gameplay.LimitType.md#locked)** = ``2`` <br> |
 
 ## Enumeration Members
 

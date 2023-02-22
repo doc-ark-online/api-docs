@@ -162,53 +162,46 @@ Gameplay
 
 | Type Aliases |
 | :-----|
-| **[CameraShakeData](Gameplay.Gameplay.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
-| **[CameraSystemData](Gameplay.Gameplay.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Constructor](Gameplay.Gameplay.md#constructor)**<extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) |\>: (...`args`: `any`[]) => extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) | <br> | Name | Type ||
-| **[DecorationTuple](Gameplay.Gameplay.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
-| **[EmptyCallback](Gameplay.Gameplay.md#emptycallback)**: () => `void` <br> • (): `void`|
-| **[LoadAppearanceDataAllCompletedCallback](Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)**: () => `void` <br> • (): `void`|
-| **[OnMovementStateChanged](Gameplay.Gameplay.md#onmovementstatechanged)**: ([`MovementMode`](../enums/Gameplay.MovementMode.md) |: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> • (`mode`): `void`|
-| **[OnRecvChatMessage](Gameplay.Gameplay.md#onrecvchatmessage)**: (`number` |: `number`, `string` |: `string`) => `void` <br> • (`nCount`, `ChatContent`): `void`|
-| **[Oscillator](Gameplay.Gameplay.md#oscillator)**: `Object` <br> 震动数值|
-| **[SetAppearanceDataCallback](Gameplay.Gameplay.md#setappearancedatacallback)**: (`string` |: `string`) => `void` <br> • (`APIName`): `void`|
-| **[StringCallback](Gameplay.Gameplay.md#stringcallback)**: (`string` |: `string`) => `void` <br> • (`str`): `void`|
-| **[VehicleGearData](Gameplay.Gameplay.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
-| **[VehicleWheelData](Gameplay.Gameplay.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
-| **[onAppearanceDataChanged](Gameplay.Gameplay.md#onappearancedatachanged)**: (`string` |: `string`) => `void` <br> • (`GUID`): `void`|
+| **[CameraShakeData](Gameplay.Gameplay.md#camerashakedata)**: `Object` <br> 空的回调函数类型|
+| **[CameraSystemData](Gameplay.Gameplay.md#camerasystemdata)**: `Object` <br> 空的回调函数类型|
+| **[Constructor](Gameplay.Gameplay.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 空的回调函数类型|
+| **[DecorationTuple](Gameplay.Gameplay.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 空的回调函数类型|
+| **[EmptyCallback](Gameplay.Gameplay.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
+| **[LoadAppearanceDataAllCompletedCallback](Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
+| **[OnMovementStateChanged](Gameplay.Gameplay.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
+| **[OnRecvChatMessage](Gameplay.Gameplay.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
+| **[Oscillator](Gameplay.Gameplay.md#oscillator)**: `Object` <br> 设置编辑数据完成的回调|
+| **[SetAppearanceDataCallback](Gameplay.Gameplay.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
+| **[StringCallback](Gameplay.Gameplay.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
+| **[VehicleGearData](Gameplay.Gameplay.md#vehiclegeardata)**: `Object` <br> 角色身上GUID切换成功回调|
+| **[VehicleWheelData](Gameplay.Gameplay.md#vehiclewheeldata)**: `Object` <br> 角色身上GUID切换成功回调|
+| **[onAppearanceDataChanged](Gameplay.Gameplay.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 | Functions |
 | :-----|
-| **[addOutlineEffect](Gameplay.Gameplay.md#addoutlineeffect)**(`GameObject`, [`LinearColor`](../classes/Type.LinearColor.md), `number`, `number`, `number`, `boolean`, `boolean`): `void` <br> 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡|
-| **[angleCheck](Gameplay.Gameplay.md#anglecheck)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), `number`): `boolean` <br> 角度检查|
-| **[asyncFindPathToLocation](Gameplay.Gameplay.md#asyncfindpathtolocation)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md)[] <br> GAMEPLAY|
+| **[addOutlineEffect](Gameplay.Gameplay.md#addoutlineeffect)**(`obj`: `GameObject`, `OutlineColor?`: [`LinearColor`](../classes/Type.LinearColor.md), `OutlineWidth?`: `number`, `OutlineDepthOffset?`: `number`, `OutlineClampValue?`: `number`, `considerCameraPosition?`: `boolean`, `outlineSilhouetteOnly?`: `boolean`): `void` <br> 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡|
+| **[angleCheck](Gameplay.Gameplay.md#anglecheck)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `StartDirection`: [`Vector`](../classes/Type.Vector.md), `TargetLocation`: [`Vector`](../classes/Type.Vector.md), `Angle`: `number`): `boolean` <br> 角度检查|
+| **[asyncFindPathToLocation](Gameplay.Gameplay.md#asyncfindpathtolocation)**(`startPos`: [`Vector`](../classes/Type.Vector.md), `endPos`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
 | **[asyncGetCurrentPlayer](Gameplay.Gameplay.md#asyncgetcurrentplayer)**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步获取当前玩家|
-| **[asyncGetPlayer](Gameplay.Gameplay.md#asyncgetplayer)**(`number`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
-| **[boxOverlap](Gameplay.Gameplay.md#boxoverlap)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), `number`, `number`, `boolean`): `Core.GameObject`[] <br> GAMEPLAY|
-| **[boxOverlapInLevel](Gameplay.Gameplay.md#boxoverlapinlevel)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), `number`, `number`, `boolean`): `Core.GameObject`[] <br> since:022 reason: API 注释命名优化 replacement: boxOverlap|
-| **[clearMoveTo](Gameplay.Gameplay.md#clearmoveto)**([`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 导航停止|
-| **[cylinderOverlap](Gameplay.Gameplay.md#cylinderoverlap)**([`Vector`](../classes/Type.Vector.md), `number`, `number`, `boolean`): `Core.GameObject`[] <br> 圆柱范围检测|
+| **[asyncGetPlayer](Gameplay.Gameplay.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
+| **[boxOverlap](Gameplay.Gameplay.md#boxoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 矩形范围检测|
+| **[clearMoveTo](Gameplay.Gameplay.md#clearmoveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 导航停止|
+| **[cylinderOverlap](Gameplay.Gameplay.md#cylinderoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆柱范围检测|
 | **[getAllPlayers](Gameplay.Gameplay.md#getallplayers)**(): [`Player`](../classes/Gameplay.Player.md)[] <br> 当前所有Player|
-| **[getClickGameObjectByScene](Gameplay.Gameplay.md#getclickgameobjectbyscene)**(`number`, `number`, `number`, `boolean`, `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取点击屏幕位置的物体|
+| **[getClickGameObjectByScene](Gameplay.Gameplay.md#getclickgameobjectbyscene)**(`SceneX`: `number`, `SceneY`: `number`, `Distance`: `number`, `multiTrace`: `boolean`, `onRay`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取点击屏幕位置的物体|
 | **[getCurrentPlayer](Gameplay.Gameplay.md#getcurrentplayer)**(): [`Player`](../classes/Gameplay.Player.md) <br> 获取当前玩家|
-| **[getPlayer](Gameplay.Gameplay.md#getplayer)**(`number`): [`Player`](../classes/Gameplay.Player.md) <br> 获取玩家|
-| **[getShootDir](Gameplay.Gameplay.md#getshootdir)**([`Character`](../classes/Gameplay.Character.md), [`Vector`](../classes/Type.Vector.md), `number`): [`Vector`](../classes/Type.Vector.md) <br> 获取某位置指向屏幕中心瞄准位置的向量|
-| **[isDynamicVibration](Gameplay.Gameplay.md#isdynamicvibration)**(`boolean`): `void` <br> 振动开关|
-| **[lineTrace](Gameplay.Gameplay.md#linetrace)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), `boolean`, `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 射线检测|
-| **[moveTo](Gameplay.Gameplay.md#moveto)**([`CharacterBase`](../classes/Gameplay.CharacterBase.md), [`Vector`](../classes/Type.Vector.md), `number`, () => `void`, () => `void`): `void` <br> 寻路移动|
-| **[parabolicTrace](Gameplay.Gameplay.md#parabolictrace)**([`Vector`](../classes/Type.Vector.md), [`Vector`](../classes/Type.Vector.md), `number`, `number`, `number`, [`ObjectTypeQuery`](../enums/Gameplay.ObjectTypeQuery.md)[], `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md) <br> 抛物线检测|
-| **[playDynamicForceFeedbackStart](Gameplay.Gameplay.md#playdynamicforcefeedbackstart)**(`number`, `number`): `void` <br> since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法|
-| **[playDynamicForceFeedbackStop](Gameplay.Gameplay.md#playdynamicforcefeedbackstop)**(): `void` <br> since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法|
-| **[removeOutlineEffect](Gameplay.Gameplay.md#removeoutlineeffect)**(`GameObject`): `void` <br> 移除描边效果|
-| **[setGlobalAsyncTimeout](Gameplay.Gameplay.md#setglobalasynctimeout)**(`number`): `void` <br> 设置异步回调超时时间，单位毫秒，默认5000|
-| **[setGlobalTimeDilation](Gameplay.Gameplay.md#setglobaltimedilation)**(`number`): `void` <br> 设置世界整体膨胀时间速度|
-| **[setPlayerPassableForAllArea](Gameplay.Gameplay.md#setplayerpassableforallarea)**([`Character`](../classes/Gameplay.Character.md), `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
-| **[setStaticMeshColor](Gameplay.Gameplay.md#setstaticmeshcolor)**([`StaticMesh`](../classes/Gameplay.StaticMesh.md), [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> GAMEPLAY|
-| **[setStaticMeshMaterialColor](Gameplay.Gameplay.md#setstaticmeshmaterialcolor)**(`GameObject`, [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> since:022 reason: 废弃 replacement:setStaticMeshColor()|
-| **[spawnNewParticle](Gameplay.Gameplay.md#spawnnewparticle)**([`Particle`](../classes/Gameplay.Particle.md), [`Transform`](../classes/Type.Transform.md), `boolean`): `void` <br> since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法|
-| **[spawnNewSound](Gameplay.Gameplay.md#spawnnewsound)**([`Sound`](../classes/Gameplay.Sound.md), [`Vector`](../classes/Type.Vector.md)): `void` <br> since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法|
-| **[sphereOverlap](Gameplay.Gameplay.md#sphereoverlap)**([`Vector`](../classes/Type.Vector.md), `number`, `boolean`): `Core.GameObject`[] <br> 圆形范围检测|
-| **[vibrate](Gameplay.Gameplay.md#vibrate)**(`boolean`): `void` <br> GAMEPLAY|
+| **[getPlayer](Gameplay.Gameplay.md#getplayer)**(`playerId`: `number`): [`Player`](../classes/Gameplay.Player.md) <br> 获取玩家|
+| **[getShootDir](Gameplay.Gameplay.md#getshootdir)**(`character`: [`Character`](../classes/Gameplay.Character.md), `startLoc`: [`Vector`](../classes/Type.Vector.md), `distance?`: `number`): [`Vector`](../classes/Type.Vector.md) <br> 获取某位置指向屏幕中心瞄准位置的向量|
+| **[lineTrace](Gameplay.Gameplay.md#linetrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `multiTrace`: `boolean`, `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 射线检测|
+| **[moveTo](Gameplay.Gameplay.md#moveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `Location`: [`Vector`](../classes/Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
+| **[parabolicTrace](Gameplay.Gameplay.md#parabolictrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Direction`: [`Vector`](../classes/Type.Vector.md), `InitSpeed`: `number`, `Range`: `number`, `CapsuleRadius`: `number`, `IgnoreObjectTypes`: [`ObjectTypeQuery`](../enums/Gameplay.ObjectTypeQuery.md)[], `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md) <br> 抛物线检测|
+| **[removeOutlineEffect](Gameplay.Gameplay.md#removeoutlineeffect)**(`obj`: `GameObject`): `void` <br> 移除描边效果|
+| **[setGlobalAsyncTimeout](Gameplay.Gameplay.md#setglobalasynctimeout)**(`overtime`: `number`): `void` <br> 设置异步回调超时时间，单位毫秒，默认5000|
+| **[setGlobalTimeDilation](Gameplay.Gameplay.md#setglobaltimedilation)**(`Time`: `number`): `void` <br> 设置世界整体膨胀时间速度|
+| **[setPlayerPassableForAllArea](Gameplay.Gameplay.md#setplayerpassableforallarea)**(`character`: [`Character`](../classes/Gameplay.Character.md), `canPass`: `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
+| **[setStaticMeshColor](Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`StaticMesh`](../classes/Gameplay.StaticMesh.md), `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
+| **[sphereOverlap](Gameplay.Gameplay.md#sphereoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆形范围检测|
+| **[vibrate](Gameplay.Gameplay.md#vibrate)**(`enable`: `boolean`): `void` <br> 振动开关|
 
 ## Type Aliases
 
@@ -568,7 +561,7 @@ AVATAR
 
 ### addOutlineEffect <Score text="addOutlineEffect" /> 
 
-• **addOutlineEffect**(`obj`, `OutlineColor?`, `OutlineWidth?`, `OutlineDepthOffset?`, `OutlineClampValue?`, `considerCameraPosition?`, `outlineSilhouetteOnly?`): `void` <Badge type="tip" text="other" />
+• **addOutlineEffect**(`obj`, `OutlineColor?`, `OutlineWidth?`, `OutlineDepthOffset?`, `OutlineClampValue?`, `considerCameraPosition?`, `outlineSilhouetteOnly?`): `void` <Badge type="tip" text="client" />
 
 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡
 
@@ -594,7 +587,7 @@ ___
 
 ### angleCheck <Score text="angleCheck" /> 
 
-• **angleCheck**(`StartLocation`, `StartDirection`, `TargetLocation`, `Angle`): `boolean` <Badge type="tip" text="other" />
+• **angleCheck**(`StartLocation`, `StartDirection`, `TargetLocation`, `Angle`): `boolean` 
 
 角度检查
 
@@ -622,7 +615,7 @@ ___
 
 ### asyncFindPathToLocation <Score text="asyncFindPathToLocation" /> 
 
-• **asyncFindPathToLocation**(`startPos`, `endPos`): [`Vector`](../classes/Type.Vector.md)[] <Badge type="tip" text="other" />
+• **asyncFindPathToLocation**(`startPos`, `endPos`): [`Vector`](../classes/Type.Vector.md)[] 
 
 **`Groups`**
 
@@ -648,7 +641,7 @@ ___
 
 ### asyncGetCurrentPlayer <Score text="asyncGetCurrentPlayer" /> 
 
-• **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
+• **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> 
 
 异步获取当前玩家
 
@@ -667,7 +660,7 @@ ___
 
 ### asyncGetPlayer <Score text="asyncGetPlayer" /> 
 
-• **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="other" />
+• **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> 
 
 异步根据playerId获取Player
 
@@ -692,54 +685,13 @@ ___
 
 ### boxOverlap <Score text="boxOverlap" /> 
 
-• **boxOverlap**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
+• **boxOverlap**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] 
 
 **`Groups`**
 
 GAMEPLAY
 
 矩形范围检测
-
-
-使用示例: 如下示例展示使用矩形范围检测的基本流程
-```ts
-const goList = boxOverlap(new Type.Vector(0,0,0), new Type.Vector(1000,0,0), 10, 10, true);
-for (const item of goList) {
-    // item: 检测到的对象
-}
-```ts
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `StartLocation` | [`Vector`](../classes/Type.Vector.md) | 起始位置 |
-| `EndLocation` | [`Vector`](../classes/Type.Vector.md) | 结束位置 |
-| `Width` | `number` | 检测宽度 |
-| `Height` | `number` | 检测高度 |
-| `debug` | `boolean` | 是否可视化绘制 default:true |
-
-#### Returns
-
-`Core.GameObject`[]
-
-GameObject数组
-
-___
-
-### boxOverlapInLevel <Score text="boxOverlapInLevel" /> 
-
-• **boxOverlapInLevel**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: boxOverlap
-
-矩形范围检测
-
-**`Groups`**
-
-GAMEPLAY
 
 
 使用示例: 如下示例展示使用矩形范围检测的基本流程
@@ -770,7 +722,7 @@ ___
 
 ### clearMoveTo <Score text="clearMoveTo" /> 
 
-• **clearMoveTo**(`player`): `void` <Badge type="tip" text="other" />
+• **clearMoveTo**(`player`): `void` 
 
 导航停止
 
@@ -790,7 +742,7 @@ ___
 
 ### cylinderOverlap <Score text="cylinderOverlap" /> 
 
-• **cylinderOverlap**(`StartLocation`, `Radius`, `Height`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
+• **cylinderOverlap**(`StartLocation`, `Radius`, `Height`, `debug`): `Core.GameObject`[] 
 
 圆柱范围检测
 
@@ -818,7 +770,7 @@ ___
 
 ### getAllPlayers <Score text="getAllPlayers" /> 
 
-• **getAllPlayers**(): [`Player`](../classes/Gameplay.Player.md)[] <Badge type="tip" text="other" />
+• **getAllPlayers**(): [`Player`](../classes/Gameplay.Player.md)[] 
 
 当前所有Player
 
@@ -837,7 +789,7 @@ ___
 
 ### getClickGameObjectByScene <Score text="getClickGameObjectByScene" /> 
 
-• **getClickGameObjectByScene**(`SceneX`, `SceneY`, `Distance`, `multiTrace`, `onRay`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
+• **getClickGameObjectByScene**(`SceneX`, `SceneY`, `Distance`, `multiTrace`, `onRay`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="client" />
 
 获取点击屏幕位置的物体
 
@@ -866,7 +818,7 @@ ___
 
 ### getCurrentPlayer <Score text="getCurrentPlayer" /> 
 
-• **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
+• **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) 
 
 获取当前玩家
 
@@ -885,7 +837,7 @@ ___
 
 ### getPlayer <Score text="getPlayer" /> 
 
-• **getPlayer**(`playerId`): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="other" />
+• **getPlayer**(`playerId`): [`Player`](../classes/Gameplay.Player.md) 
 
 获取玩家
 
@@ -910,7 +862,7 @@ ___
 
 ### getShootDir <Score text="getShootDir" /> 
 
-• **getShootDir**(`character`, `startLoc`, `distance?`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="other" />
+• **getShootDir**(`character`, `startLoc`, `distance?`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
 
 获取某位置指向屏幕中心瞄准位置的向量
 
@@ -935,33 +887,9 @@ GAMEPLAY
 
 ___
 
-### isDynamicVibration <Score text="isDynamicVibration" /> 
-
-• **isDynamicVibration**(`value`): `void` <Badge type="tip" text="other" />
-
-振动开关
-
-**`Groups`**
-
-GAMEPLAY
-
-**`Deprecated`**
-
-since:022 reason: API规范修改 replacement: vibrate
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `boolean` | -true:开启震动，-false:关闭震动 |
-
-
-___
-
 ### lineTrace <Score text="lineTrace" /> 
 
-• **lineTrace**(`StartLocation`, `EndLocation`, `multiTrace`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="other" />
+• **lineTrace**(`StartLocation`, `EndLocation`, `multiTrace`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md)[] 
 
 射线检测
 
@@ -989,7 +917,7 @@ ___
 
 ### moveTo <Score text="moveTo" /> 
 
-• **moveTo**(`player`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` <Badge type="tip" text="other" />
+• **moveTo**(`player`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` 
 
 寻路移动
 
@@ -1013,7 +941,7 @@ ___
 
 ### parabolicTrace <Score text="parabolicTrace" /> 
 
-• **parabolicTrace**(`StartLocation`, `Direction`, `InitSpeed`, `Range`, `CapsuleRadius`, `IgnoreObjectTypes`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md) <Badge type="tip" text="other" />
+• **parabolicTrace**(`StartLocation`, `Direction`, `InitSpeed`, `Range`, `CapsuleRadius`, `IgnoreObjectTypes`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md) 
 
 抛物线检测
 
@@ -1042,52 +970,9 @@ HitResult
 
 ___
 
-### playDynamicForceFeedbackStart <Score text="playDynamicForceFeedbackStart" /> 
-
-• **playDynamicForceFeedbackStart**(`Intensity?`, `Duration?`): `void` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-**`Groups`**
-
-GAMEPLAY
-
-播放震动
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Intensity?` | `number` | 强度 default:1 |
-| `Duration?` | `number` | 周期 -1 是一直震动 default:-1 |
-
-
-___
-
-### playDynamicForceFeedbackStop <Score text="playDynamicForceFeedbackStop" /> 
-
-• **playDynamicForceFeedbackStop**(): `void` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-停止震动
-
-**`Groups`**
-
-GAMEPLAY
-
-
-
-___
-
 ### removeOutlineEffect <Score text="removeOutlineEffect" /> 
 
-• **removeOutlineEffect**(`obj`): `void` <Badge type="tip" text="other" />
+• **removeOutlineEffect**(`obj`): `void` <Badge type="tip" text="client" />
 
 移除描边效果
 
@@ -1107,7 +992,7 @@ ___
 
 ### setGlobalAsyncTimeout <Score text="setGlobalAsyncTimeout" /> 
 
-• **setGlobalAsyncTimeout**(`overtime`): `void` <Badge type="tip" text="other" />
+• **setGlobalAsyncTimeout**(`overtime`): `void` 
 
 设置异步回调超时时间，单位毫秒，默认5000
 
@@ -1154,7 +1039,7 @@ ___
 
 ### setPlayerPassableForAllArea <Score text="setPlayerPassableForAllArea" /> 
 
-• **setPlayerPassableForAllArea**(`character`, `canPass`): `void` <Badge type="tip" text="other" />
+• **setPlayerPassableForAllArea**(`character`, `canPass`): `void` <Badge type="tip" text="server" />
 
 设置某个玩家对所有禁行区的通过权限
 
@@ -1180,7 +1065,7 @@ ___
 
 ### setStaticMeshColor <Score text="setStaticMeshColor" /> 
 
-• **setStaticMeshColor**(`staticMesh`, `color`): `void` <Badge type="tip" text="other" />
+• **setStaticMeshColor**(`staticMesh`, `color`): `void` <Badge type="tip" text="client" />
 
 **`Groups`**
 
@@ -1199,85 +1084,9 @@ GAMEPLAY
 
 ___
 
-### setStaticMeshMaterialColor <Score text="setStaticMeshMaterialColor" /> 
-
-• **setStaticMeshMaterialColor**(`obj`, `color`): `void` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: 废弃 replacement:setStaticMeshColor()
-
-设置物体静态网格材质颜色
-
-**`Groups`**
-
-GAMEPLAY
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | `GameObject` | 静态网格 |
-| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
-
-
-___
-
-### spawnNewParticle <Score text="spawnNewParticle" /> 
-
-• **spawnNewParticle**(`template`, `trans`, `bloop?`): `void` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-动态生成特效
-
-**`Groups`**
-
-EFFECTS
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
-| `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
-| `bloop?` | `boolean` | 是否循环 default:false |
-
-
-___
-
-### spawnNewSound <Score text="spawnNewSound" /> 
-
-• **spawnNewSound**(`template`, `location`): `void` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-动态生成音效
-
-**`Groups`**
-
-SOUNDS
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `template` | [`Sound`](../classes/Gameplay.Sound.md) | 音效模板 |
-| `location` | [`Vector`](../classes/Type.Vector.md) | 位置 |
-
-
-___
-
 ### sphereOverlap <Score text="sphereOverlap" /> 
 
-• **sphereOverlap**(`StartLocation`, `Radius`, `debug`): `Core.GameObject`[] <Badge type="tip" text="other" />
+• **sphereOverlap**(`StartLocation`, `Radius`, `debug`): `Core.GameObject`[] 
 
 圆形范围检测
 
@@ -1304,7 +1113,7 @@ ___
 
 ### vibrate <Score text="vibrate" /> 
 
-• **vibrate**(`enable`): `void` <Badge type="tip" text="other" />
+• **vibrate**(`enable`): `void` <Badge type="tip" text="client" />
 
 **`Groups`**
 

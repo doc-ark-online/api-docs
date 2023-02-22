@@ -14,26 +14,26 @@ Events
 
 | Functions |
 | :-----|
-| **[addClientListener](Events.Events.md#addclientlistener)**(`string`, (`player`: [`Player`](../classes/Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 服务器监听客户端发来的事件|
-| **[addExitListener](Events.Events.md#addexitlistener)**(() => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加退出游戏时执行的回调函数|
-| **[addFocusListener](Events.Events.md#addfocuslistener)**(() => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数|
-| **[addLocalListener](Events.Events.md#addlocallistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听本地事件|
-| **[addOnPauseListener](Events.Events.md#addonpauselistener)**(() => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause开始时执行的回调函数|
-| **[addOnResumeListener](Events.Events.md#addonresumelistener)**((`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause结束时执行的回调函数|
-| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**((`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家进入room事件|
-| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**((`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家离开room事件|
-| **[addServerListener](Events.Events.md#addserverlistener)**(`string`, (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 客户端监听服务器事件|
-| **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(() => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
-| **[dispatchLocal](Events.Events.md#dispatchlocal)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
-| **[dispatchToAllClient](Events.Events.md#dispatchtoallclient)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
-| **[dispatchToClient](Events.Events.md#dispatchtoclient)**([`Player`](../classes/Gameplay.Player.md), `string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
-| **[dispatchToServer](Events.Events.md#dispatchtoserver)**(`string`, `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 客户端发送事件给服务器|
+| **[addClientListener](Events.Events.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](../classes/Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 服务器监听客户端发来的事件|
+| **[addExitListener](Events.Events.md#addexitlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加退出游戏时执行的回调函数|
+| **[addFocusListener](Events.Events.md#addfocuslistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数|
+| **[addLocalListener](Events.Events.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听本地事件|
+| **[addOnPauseListener](Events.Events.md#addonpauselistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause开始时执行的回调函数|
+| **[addOnResumeListener](Events.Events.md#addonresumelistener)**(`callback`: (`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause结束时执行的回调函数|
+| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**(`listener`: (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家进入room事件|
+| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**(`listener`: (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家离开room事件|
+| **[addServerListener](Events.Events.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 客户端监听服务器事件|
+| **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
+| **[dispatchLocal](Events.Events.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
+| **[dispatchToAllClient](Events.Events.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
+| **[dispatchToClient](Events.Events.md#dispatchtoclient)**(`player`: [`Player`](../classes/Gameplay.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
+| **[dispatchToServer](Events.Events.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 客户端发送事件给服务器|
 
 ## Functions
 
 ### addClientListener <Score text="addClientListener" /> 
 
-• **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="server" />
 
 服务器监听客户端发来的事件
 
@@ -65,7 +65,7 @@ ___
 
 ### addExitListener <Score text="addExitListener" /> 
 
-• **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加退出游戏时执行的回调函数
 
@@ -105,7 +105,7 @@ ___
 
 ### addFocusListener <Score text="addFocusListener" /> 
 
-• **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addFocusListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加窗口聚焦时执行的回调函数
 
@@ -145,7 +145,7 @@ ___
 
 ### addLocalListener <Score text="addLocalListener" /> 
 
-• **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addLocalListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 监听本地事件
 
@@ -171,7 +171,7 @@ ___
 
 ### addOnPauseListener <Score text="addOnPauseListener" /> 
 
-• **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加OnPause开始时执行的回调函数
 
@@ -212,7 +212,7 @@ ___
 
 ### addOnResumeListener <Score text="addOnResumeListener" /> 
 
-• **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addOnResumeListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加OnPause结束时执行的回调函数
 
@@ -253,7 +253,7 @@ ___
 
 ### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
 
-• **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 监听玩家进入room事件
 
@@ -278,7 +278,7 @@ ___
 
 ### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
 
-• **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 监听玩家离开room事件
 
@@ -303,7 +303,7 @@ ___
 
 ### addServerListener <Score text="addServerListener" /> 
 
-• **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 客户端监听服务器事件
 
@@ -335,7 +335,7 @@ ___
 
 ### addUnfocusedListener <Score text="addUnfocusedListener" /> 
 
-• **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="other" />
+• **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加窗口失焦时执行的回调函数
 
@@ -375,7 +375,7 @@ ___
 
 ### dispatchLocal <Score text="dispatchLocal" /> 
 
-• **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) 
 
 发送本地事件
 
@@ -401,7 +401,7 @@ ___
 
 ### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
-• **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给所有客户端
 
@@ -433,7 +433,7 @@ ___
 
 ### dispatchToClient <Score text="dispatchToClient" /> 
 
-• **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给指定客户端
 
@@ -466,7 +466,7 @@ ___
 
 ### dispatchToServer <Score text="dispatchToServer" /> 
 
-• **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="other" />
+• **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="client" />
 
 客户端发送事件给服务器
 

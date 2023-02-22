@@ -12,8 +12,8 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[BottomToTop](UI.UIVerticalCollation.md#bottomtotop)** = ``1`` <br> 从下到上排序|
-| **[TopToBottom](UI.UIVerticalCollation.md#toptobottom)** = ``0`` <br> 从上到下排序|
+| **[BottomToTop](UI.UIVerticalCollation.md#bottomtotop)** = ``1`` <br> |
+| **[TopToBottom](UI.UIVerticalCollation.md#toptobottom)** = ``0`` <br> |
 
 ## Enumeration Members
 

@@ -12,11 +12,11 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Bottom](UI.UIConstraintVertical.md#bottom)** = ``1`` <br> 下对齐|
-| **[Center](UI.UIConstraintVertical.md#center)** = ``3`` <br> 居中对齐|
-| **[Scale](UI.UIConstraintVertical.md#scale)** = ``4`` <br> 距离上下边距百分比固定|
-| **[Top](UI.UIConstraintVertical.md#top)** = ``0`` <br> 上对齐|
-| **[TopBottom](UI.UIConstraintVertical.md#topbottom)** = ``2`` <br> 距离上下边距固定|
+| **[Bottom](UI.UIConstraintVertical.md#bottom)** = ``1`` <br> |
+| **[Center](UI.UIConstraintVertical.md#center)** = ``3`` <br> |
+| **[Scale](UI.UIConstraintVertical.md#scale)** = ``4`` <br> |
+| **[Top](UI.UIConstraintVertical.md#top)** = ``0`` <br> |
+| **[TopBottom](UI.UIConstraintVertical.md#topbottom)** = ``2`` <br> |
 
 ## Enumeration Members
 

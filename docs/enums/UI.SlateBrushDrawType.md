@@ -12,10 +12,10 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Border](UI.SlateBrushDrawType.md#border)** = ``2`` <br> 在边平铺且中间为空的位置绘制3x3边框|
-| **[Box](UI.SlateBrushDrawType.md#box)** = ``1`` <br> 绘制一个3x3长方体，其中边和中间根据边距拉伸|
-| **[Image](UI.SlateBrushDrawType.md#image)** = ``3`` <br> 画一个图像|
-| **[NoDrawType](UI.SlateBrushDrawType.md#nodrawtype)** = ``0`` <br> 不绘制|
+| **[Border](UI.SlateBrushDrawType.md#border)** = ``2`` <br> |
+| **[Box](UI.SlateBrushDrawType.md#box)** = ``1`` <br> |
+| **[Image](UI.SlateBrushDrawType.md#image)** = ``3`` <br> |
+| **[NoDrawType](UI.SlateBrushDrawType.md#nodrawtype)** = ``0`` <br> |
 
 ## Enumeration Members
 

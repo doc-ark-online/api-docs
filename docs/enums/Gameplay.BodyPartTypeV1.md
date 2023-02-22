@@ -12,9 +12,9 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[Face](Gameplay.BodyPartTypeV1.md#face)** = ``1`` <br> 面部|
-| **[Hair](Gameplay.BodyPartTypeV1.md#hair)** = ``0`` <br> 头发|
-| **[Trunk](Gameplay.BodyPartTypeV1.md#trunk)** = ``2`` <br> 身体|
+| **[Face](Gameplay.BodyPartTypeV1.md#face)** = ``1`` <br> |
+| **[Hair](Gameplay.BodyPartTypeV1.md#hair)** = ``0`` <br> |
+| **[Trunk](Gameplay.BodyPartTypeV1.md#trunk)** = ``2`` <br> |
 
 ## Enumeration Members
 

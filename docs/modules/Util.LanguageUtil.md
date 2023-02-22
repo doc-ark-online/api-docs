@@ -6,15 +6,15 @@
 
 | Functions |
 | :-----|
-| **[getLocTextValue](Util.LanguageUtil.md#getloctextvalue)**(`string`): `string` <br> 根据key获取翻译内容|
-| **[locText](Util.LanguageUtil.md#loctext)**(`string`): `string` <br> 多语言标记|
-| **[useLocalizedLanguage](Util.LanguageUtil.md#uselocalizedlanguage)**([`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
+| **[getLocTextValue](Util.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string` <br> 根据key获取翻译内容|
+| **[locText](Util.LanguageUtil.md#loctext)**(`textkey`: `string`): `string` <br> 多语言标记|
+| **[useLocalizedLanguage](Util.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
 
 ## Functions
 
 ### getLocTextValue <Score text="getLocTextValue" /> 
 
-• **getLocTextValue**(`textkey`): `string` <Badge type="tip" text="other" />
+• **getLocTextValue**(`textkey`): `string` 
 
 根据key获取翻译内容
 
@@ -39,7 +39,7 @@ ___
 
 ### locText <Score text="locText" /> 
 
-• **locText**(`textkey`): `string` <Badge type="tip" text="other" />
+• **locText**(`textkey`): `string` 
 
 多语言标记
 
@@ -64,7 +64,7 @@ ___
 
 ### useLocalizedLanguage <Score text="useLocalizedLanguage" /> 
 
-• **useLocalizedLanguage**(`type`): `boolean` <Badge type="tip" text="other" />
+• **useLocalizedLanguage**(`type`): `boolean` 
 
 游戏语言设置
 

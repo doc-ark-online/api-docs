@@ -23,7 +23,7 @@ GUI
 
 | Methods |
 | :-----|
-| **[isMouseButtonDown](UI.PointerEvent.md#ismousebuttondown)**([`Keys`](../enums/Type.Keys.md)): `boolean` <br> 判断是不是鼠标按键事件|
+| **[isMouseButtonDown](UI.PointerEvent.md#ismousebuttondown)**(`MouseButton`: [`Keys`](../enums/Type.Keys.md)): `boolean` <br> 判断是不是鼠标按键事件|
 | **[toInputEvent](UI.PointerEvent.md#toinputevent)**(): [`InputEvent`](UI.InputEvent.md) <br> 转化为 InputEvent|
 
 默认构造
@@ -32,7 +32,7 @@ GUI
 
 ### effectingButton <Score text="effectingButton" /> 
 
-• `get` **effectingButton**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="other" />
+• `get` **effectingButton**(): [`KeyEvent`](UI.KeyEvent.md) <Badge type="tip" text="client" />
 
 获取响应的事件key
 
@@ -47,7 +47,7 @@ ___
 
 ### isTouchEvent <Score text="isTouchEvent" /> 
 
-• `get` **isTouchEvent**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isTouchEvent**(): `boolean` <Badge type="tip" text="client" />
 
 判断是不是触摸事件
 
@@ -62,7 +62,7 @@ ___
 
 ### lastScreenSpacePosition <Score text="lastScreenSpacePosition" /> 
 
-• `get` **lastScreenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **lastScreenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取该事件上一次的屏幕位置
 
@@ -77,7 +77,7 @@ ___
 
 ### mouseWheelDelta <Score text="mouseWheelDelta" /> 
 
-• `get` **mouseWheelDelta**(): `number` <Badge type="tip" text="other" />
+• `get` **mouseWheelDelta**(): `number` <Badge type="tip" text="client" />
 
 获取鼠标滚轮滑动的距离
 
@@ -92,7 +92,7 @@ ___
 
 ### pointerIndex <Score text="pointerIndex" /> 
 
-• `get` **pointerIndex**(): `number` <Badge type="tip" text="other" />
+• `get` **pointerIndex**(): `number` <Badge type="tip" text="client" />
 
 返回该事件的唯一标识index
 
@@ -107,7 +107,7 @@ ___
 
 ### screenSpacePosition <Score text="screenSpacePosition" /> 
 
-• `get` **screenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **screenSpacePosition**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取触发的屏幕位置
 
@@ -122,7 +122,7 @@ ___
 
 ### touchPadIndex <Score text="touchPadIndex" /> 
 
-• `get` **touchPadIndex**(): `number` <Badge type="tip" text="other" />
+• `get` **touchPadIndex**(): `number` <Badge type="tip" text="client" />
 
 获取触摸事件index
 
@@ -137,7 +137,7 @@ ___
 
 ### userIndex <Score text="userIndex" /> 
 
-• `get` **userIndex**(): `number` <Badge type="tip" text="other" />
+• `get` **userIndex**(): `number` <Badge type="tip" text="client" />
 
 获取事件触发玩家的index
 
@@ -152,7 +152,7 @@ ___
 
 ### isMouseButtonDown <Score text="isMouseButtonDown" /> 
 
-• **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="other" />
+• **isMouseButtonDown**(`MouseButton`): `boolean` <Badge type="tip" text="client" />
 
 判断是不是鼠标按键事件
 
@@ -173,7 +173,7 @@ ___
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
+• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="client" />
 
 转化为 InputEvent
 

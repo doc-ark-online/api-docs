@@ -12,8 +12,8 @@ GUI
 
 | Properties |
 | :-----|
-| **[disable](UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 禁用资源|
-| **[normal](UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 普通资源|
+| **[disable](UI.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 按压资源|
+| **[normal](UI.JoystickStyleDesigner.md#normal)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 按压资源|
 | **[touch](UI.JoystickStyleDesigner.md#touch)**: [`SlateBrushWithGuid`](UI.SlateBrushWithGuid.md) <br> 按压资源|
 
 指定内容构造对象

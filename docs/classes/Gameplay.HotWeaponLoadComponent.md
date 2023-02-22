@@ -12,10 +12,10 @@ GAMEPLAY
 
 | Properties |
 | :-----|
-| **[onEndLoadClient](Gameplay.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端上膛结束时执行绑定函数|
-| **[onEndLoadServer](Gameplay.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数|
-| **[onStartLoadClient](Gameplay.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始上膛时执行绑定函数|
-| **[onStartLoadServer](Gameplay.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数|
+| **[onEndLoadClient](Gameplay.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onEndLoadServer](Gameplay.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartLoadClient](Gameplay.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartLoadServer](Gameplay.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
 
 | Accessors |
 | :-----|
@@ -63,7 +63,7 @@ ___
 
 ### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **animationGuid**(): `string` 
 
 获取绑定的动画GUID
 
@@ -91,7 +91,7 @@ ___
 
 ### loadAfterFireEnable <Score text="loadAfterFireEnable" /> 
 
-• `get` **loadAfterFireEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **loadAfterFireEnable**(): `boolean` 
 
 获取是否开启开火后自动上膛的功能
 
@@ -125,7 +125,7 @@ ___
 
 ### loadDuration <Score text="loadDuration" /> 
 
-• `get` **loadDuration**(): `number` <Badge type="tip" text="other" />
+• `get` **loadDuration**(): `number` 
 
 获取上膛时间
 
@@ -136,7 +136,7 @@ ___
 
 上膛时间
 
-• `set` **loadDuration**(`time`): `void` <Badge type="tip" text="other" />
+• `set` **loadDuration**(`time`): `void` 
 
 设置上膛时间
 
@@ -158,7 +158,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` 
 
 是否有动画GUID
 

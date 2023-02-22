@@ -42,7 +42,6 @@ GUI
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -53,14 +52,14 @@ GUI
 
 | Methods |
 | :-----|
-| **[newObject](UI.TouchPad.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`TouchPad`](UI.TouchPad.md) <br> 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| **[newObject](UI.TouchPad.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md), `InName?`: `string`): [`TouchPad`](UI.TouchPad.md) <br> 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
@@ -70,7 +69,7 @@ GUI
 
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
-• `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否被鼠标控制，只作用于PC端
 
@@ -81,7 +80,7 @@ GUI
 
 是否被鼠标控制
 
-• `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="other" />
+• `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="client" />
 
 设置是否被鼠标控制，只作用于PC端
 
@@ -96,7 +95,7 @@ GUI
 
 ### inputScale <Score text="inputScale" /> 
 
-• `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取移动touchPad的delta的缩放值
 
@@ -107,7 +106,7 @@ GUI
 
 返回移动touchPad的delta的缩放值
 
-• `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="other" />
+• `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="client" />
 
 设置移动touchPad的delta的缩放值
 
@@ -124,7 +123,7 @@ GUI
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `InName?`): [`TouchPad`](UI.TouchPad.md) <Badge type="tip" text="client" />
 
 创建 TouchPad 控件,当parent和inName与已有的对象相同时，旧的对象会被销毁
 

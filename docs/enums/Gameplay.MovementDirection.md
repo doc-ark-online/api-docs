@@ -25,9 +25,9 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[AxisDirection](Gameplay.MovementDirection.md#axisdirection)** = ``0`` <br> 给定轴方向|
-| **[ControllerDirection](Gameplay.MovementDirection.md#controllerdirection)** = ``2`` <br> 控制器方向|
-| **[ViewDirection](Gameplay.MovementDirection.md#viewdirection)** = ``1`` <br> 视口方向|
+| **[AxisDirection](Gameplay.MovementDirection.md#axisdirection)** = ``0`` <br> |
+| **[ControllerDirection](Gameplay.MovementDirection.md#controllerdirection)** = ``2`` <br> |
+| **[ViewDirection](Gameplay.MovementDirection.md#viewdirection)** = ``1`` <br> |
 
 ## Enumeration Members
 

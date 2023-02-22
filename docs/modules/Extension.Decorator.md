@@ -6,14 +6,14 @@
 
 | Functions |
 | :-----|
-| **[autoExecute](Extension.Decorator.md#autoexecute)**(`string`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[saveProperty](Extension.Decorator.md#saveproperty)**([`Subdata`](../classes/Extension.Subdata.md), `string`): `void` <br> SCRIPITING|
+| **[autoExecute](Extension.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
+| **[saveProperty](Extension.Decorator.md#saveproperty)**(`target`: [`Subdata`](../classes/Extension.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
 
 ## Functions
 
 ### autoExecute <Score text="autoExecute" /> 
 
-• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` <Badge type="tip" text="other" />
+• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` 
 
 类装饰器-自动执行某个方法
 
@@ -56,7 +56,7 @@ ___
 
 ### saveProperty <Score text="saveProperty" /> 
 
-• **saveProperty**(`target`, `propertyKey`): `void` <Badge type="tip" text="other" />
+• **saveProperty**(`target`, `propertyKey`): `void` 
 
 **`Groups`**
 

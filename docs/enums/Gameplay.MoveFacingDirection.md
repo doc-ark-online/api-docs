@@ -12,9 +12,9 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[ControllerDirection](Gameplay.MoveFacingDirection.md#controllerdirection)** = ``2`` <br> 控制器方向|
-| **[FixedDirection](Gameplay.MoveFacingDirection.md#fixeddirection)** = ``1`` <br> 固定方向|
-| **[MovementDirection](Gameplay.MoveFacingDirection.md#movementdirection)** = ``0`` <br> 运动方向|
+| **[ControllerDirection](Gameplay.MoveFacingDirection.md#controllerdirection)** = ``2`` <br> |
+| **[FixedDirection](Gameplay.MoveFacingDirection.md#fixeddirection)** = ``1`` <br> |
+| **[MovementDirection](Gameplay.MoveFacingDirection.md#movementdirection)** = ``0`` <br> |
 
 ## Enumeration Members
 

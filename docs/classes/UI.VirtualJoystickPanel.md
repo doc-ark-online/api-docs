@@ -62,7 +62,6 @@ GUI
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -74,16 +73,16 @@ GUI
 | Methods |
 | :-----|
 | **[resetJoyStick](UI.VirtualJoystickPanel.md#resetjoystick)**(): `void` <br> 强制重置摇杆 - 例如在操控摇杆的时候隐藏其父类节点,这时候摇杆重新显示后无法成功重置|
-| **[setVisibility](UI.VirtualJoystickPanel.md#setvisibility)**([`SlateVisibility`](../enums/UI.SlateVisibility.md)): `void` <br> 设置可见性|
-| **[newObject](UI.VirtualJoystickPanel.md#newobject)**([`Widget`](UI.Widget.md), `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建 VirtualJoystickPanelDesigner 控件|
-| **[newObjectAndAdd](UI.VirtualJoystickPanel.md#newobjectandadd)**([`Canvas`](UI.Canvas.md), [`Widget`](UI.Widget.md), `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
+| **[setVisibility](UI.VirtualJoystickPanel.md#setvisibility)**(`Visibility`: [`SlateVisibility`](../enums/UI.SlateVisibility.md)): `void` <br> 设置可见性|
+| **[newObject](UI.VirtualJoystickPanel.md#newobject)**(`Outer?`: [`Widget`](UI.Widget.md), `InName?`: `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建 VirtualJoystickPanelDesigner 控件|
+| **[newObjectAndAdd](UI.VirtualJoystickPanel.md#newobjectandadd)**(`InCanvas?`: [`Canvas`](UI.Canvas.md), `Outer?`: [`Widget`](UI.Widget.md), `InName?`: `string`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <br> 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
@@ -93,7 +92,7 @@ GUI
 
 ### activeOpacity <Score text="activeOpacity" /> 
 
-• `get` **activeOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **activeOpacity**(): `number` <Badge type="tip" text="client" />
 
 返回激活时的透明度
 
@@ -104,7 +103,7 @@ GUI
 
 返回激活时的透明度
 
-• `set` **activeOpacity**(`Value`): `void` <Badge type="tip" text="other" />
+• `set` **activeOpacity**(`Value`): `void` <Badge type="tip" text="client" />
 
 设置激活时的透明度
 
@@ -119,7 +118,7 @@ GUI
 
 ### backgroundDisabledImageId <Score text="backgroundDisabledImageId" /> 
 
-• `get` **backgroundDisabledImageId**(): `string` <Badge type="tip" text="other" />
+• `get` **backgroundDisabledImageId**(): `string` <Badge type="tip" text="client" />
 
 返回背景图片禁用状态图片id
 
@@ -130,7 +129,7 @@ GUI
 
 返回背景图片禁用状态图片id
 
-• `set` **backgroundDisabledImageId**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **backgroundDisabledImageId**(`id`): `void` <Badge type="tip" text="client" />
 
 设置背景图片禁用状态图片id
 
@@ -146,7 +145,7 @@ ___
 
 ### backgroundImageDesigner <Score text="backgroundImageDesigner" /> 
 
-• `get` **backgroundImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="other" />
+• `get` **backgroundImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="client" />
 
 返回输入的背景贴图设置，包括 普通的 点击的  不启用的
 
@@ -157,7 +156,7 @@ ___
 
 返回输入的背景贴图设置，包括 普通的 点击的  不启用的
 
-• `set` **backgroundImageDesigner**(`inImage`): `void` <Badge type="tip" text="other" />
+• `set` **backgroundImageDesigner**(`inImage`): `void` <Badge type="tip" text="client" />
 
 设置输入的背景贴图设置，包括 普通的 点击的 不启用的
 
@@ -173,7 +172,7 @@ ___
 
 ### backgroundImageId <Score text="backgroundImageId" /> 
 
-• `get` **backgroundImageId**(): `string` <Badge type="tip" text="other" />
+• `get` **backgroundImageId**(): `string` <Badge type="tip" text="client" />
 
 返回中心图片普通状态图片id
 
@@ -184,7 +183,7 @@ ___
 
 返回中心图片普通状态图片id
 
-• `set` **backgroundImageId**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **backgroundImageId**(`id`): `void` <Badge type="tip" text="client" />
 
 设置背景图片普通状态图片id
 
@@ -200,7 +199,7 @@ ___
 
 ### backgroundImageSize <Score text="backgroundImageSize" /> 
 
-• `get` **backgroundImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **backgroundImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 摇杆背景图片大小
 
@@ -211,7 +210,7 @@ ___
 
 摇杆背景图片大小
 
-• `set` **backgroundImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **backgroundImageSize**(`inSize`): `void` <Badge type="tip" text="client" />
 
 摇杆背景图片大小
 
@@ -227,7 +226,7 @@ ___
 
 ### backgroundTouchImageId <Score text="backgroundTouchImageId" /> 
 
-• `get` **backgroundTouchImageId**(): `string` <Badge type="tip" text="other" />
+• `get` **backgroundTouchImageId**(): `string` <Badge type="tip" text="client" />
 
 返回背景图片按压状态图片id
 
@@ -238,7 +237,7 @@ ___
 
 返回背景图片按压状态图片id
 
-• `set` **backgroundTouchImageId**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **backgroundTouchImageId**(`id`): `void` <Badge type="tip" text="client" />
 
 设置背景图片按压状态图片id
 
@@ -253,7 +252,7 @@ ___
 
 ### center <Score text="center" /> 
 
-• `get` **center**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **center**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 返回输入的是摇杆中心位置，  不符合预期会返回默认值
 
@@ -264,7 +263,7 @@ ___
 
 回输入的是摇杆中心位置，  不符合预期会返回默认值
 
-• `set` **center**(`inValue`): `void` <Badge type="tip" text="other" />
+• `set` **center**(`inValue`): `void` <Badge type="tip" text="client" />
 
 设置输入的中心位置
 
@@ -280,7 +279,7 @@ ___
 
 ### centerDisableImageId <Score text="centerDisableImageId" /> 
 
-• `get` **centerDisableImageId**(): `string` <Badge type="tip" text="other" />
+• `get` **centerDisableImageId**(): `string` <Badge type="tip" text="client" />
 
 返回中心图片禁用状态图片id
 
@@ -291,7 +290,7 @@ ___
 
 返回中心图片禁用状态图片id
 
-• `set` **centerDisableImageId**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **centerDisableImageId**(`id`): `void` <Badge type="tip" text="client" />
 
 设置中心图片禁用状态图片id
 
@@ -307,7 +306,7 @@ ___
 
 ### centerImageDesigner <Score text="centerImageDesigner" /> 
 
-• `get` **centerImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="other" />
+• `get` **centerImageDesigner**(): [`JoystickStyleDesigner`](UI.JoystickStyleDesigner.md) <Badge type="tip" text="client" />
 
 返回输入的中心贴图设置，包括 普通的 点击的  不启用的
 
@@ -318,7 +317,7 @@ ___
 
 返回中心贴图设置
 
-• `set` **centerImageDesigner**(`inImage`): `void` <Badge type="tip" text="other" />
+• `set` **centerImageDesigner**(`inImage`): `void` <Badge type="tip" text="client" />
 
 设置输入的中心贴图设置，包括 普通的 点击的  不启用的
 
@@ -334,7 +333,7 @@ ___
 
 ### centerImageId <Score text="centerImageId" /> 
 
-• `get` **centerImageId**(): `string` <Badge type="tip" text="other" />
+• `get` **centerImageId**(): `string` <Badge type="tip" text="client" />
 
 返回中心图片普通状态图片id
 
@@ -345,7 +344,7 @@ ___
 
 返回中心图片普通状态图片id
 
-• `set` **centerImageId**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **centerImageId**(`id`): `void` <Badge type="tip" text="client" />
 
 设置中心图片普通状态图片id
 
@@ -361,7 +360,7 @@ ___
 
 ### centerImageSize <Score text="centerImageSize" /> 
 
-• `get` **centerImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **centerImageSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 摇杆按钮图片大小
 
@@ -372,7 +371,7 @@ ___
 
 摇杆按钮图片大小
 
-• `set` **centerImageSize**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **centerImageSize**(`inSize`): `void` <Badge type="tip" text="client" />
 
 摇杆按钮图片大小
 
@@ -388,7 +387,7 @@ ___
 
 ### centerTouchImage <Score text="centerTouchImage" /> 
 
-• `get` **centerTouchImage**(): `string` <Badge type="tip" text="other" />
+• `get` **centerTouchImage**(): `string` <Badge type="tip" text="client" />
 
 返回中心图片按压状态图片id
 
@@ -399,7 +398,7 @@ ___
 
 返回中心图片按压状态图片id
 
-• `set` **centerTouchImage**(`id`): `void` <Badge type="tip" text="other" />
+• `set` **centerTouchImage**(`id`): `void` <Badge type="tip" text="client" />
 
 置中心图片按压状态图片id
 
@@ -414,7 +413,7 @@ ___
 
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
-• `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否被鼠标控制，只作用于PC端
 
@@ -425,7 +424,7 @@ ___
 
 是否被鼠标控制
 
-• `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="other" />
+• `set` **controlByMouseEnable**(`controlByMouse`): `void` <Badge type="tip" text="client" />
 
 设置是否被鼠标控制，只作用于PC端
 
@@ -441,7 +440,7 @@ ___
 
 ### controlType <Score text="controlType" /> 
 
-• `get` **controlType**(): [`CameraControlType`](../enums/UI.CameraControlType.md) <Badge type="tip" text="other" />
+• `get` **controlType**(): [`CameraControlType`](../enums/UI.CameraControlType.md) <Badge type="tip" text="client" />
 
 返回输入的是摇杆类型，  不符合预期会返回默认值
 
@@ -452,7 +451,7 @@ ___
 
 返回输入的摇杆类型
 
-• `set` **controlType**(`NewControlType`): `void` <Badge type="tip" text="other" />
+• `set` **controlType**(`NewControlType`): `void` <Badge type="tip" text="client" />
 
 设置输入的摇杆类型，人物的移动和技能摇杆的移动类型
 
@@ -467,7 +466,7 @@ ___
 
 ### inActiveOpacity <Score text="inActiveOpacity" /> 
 
-• `get` **inActiveOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **inActiveOpacity**(): `number` <Badge type="tip" text="client" />
 
 返回未激活时的透明度
 
@@ -478,7 +477,7 @@ ___
 
 返回未激活时的透明度
 
-• `set` **inActiveOpacity**(`Value`): `void` <Badge type="tip" text="other" />
+• `set` **inActiveOpacity**(`Value`): `void` <Badge type="tip" text="client" />
 
 设置未激活时的透明度
 
@@ -494,7 +493,7 @@ ___
 
 ### inputScale <Score text="inputScale" /> 
 
-• `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **inputScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 返回输入的输入比例
 
@@ -505,7 +504,7 @@ ___
 
 返回输入的输入比例
 
-• `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="other" />
+• `set` **inputScale**(`inScale`): `void` <Badge type="tip" text="client" />
 
 设置输入的输入比例
 
@@ -520,7 +519,7 @@ ___
 
 ### isLocationFixed <Score text="isLocationFixed" /> 
 
-• `get` **isLocationFixed**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isLocationFixed**(): `boolean` <Badge type="tip" text="client" />
 
 拖动后，是否固定摇杆位置
 
@@ -531,7 +530,7 @@ ___
 
 boolean
 
-• `set` **isLocationFixed**(`enable`): `void` <Badge type="tip" text="other" />
+• `set` **isLocationFixed**(`enable`): `void` <Badge type="tip" text="client" />
 
 拖动后，是否固定摇杆位置
 
@@ -546,7 +545,7 @@ boolean
 
 ### onInputDir <Score text="onInputDir" /> 
 
-• `get` **onInputDir**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`vec`: [`Vector2`](Type.Vector2.md)) => `void`\> <Badge type="tip" text="other" />
+• `get` **onInputDir**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`vec`: [`Vector2`](Type.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
 
 输入移动事件
 
@@ -561,7 +560,7 @@ ___
 
 ### onJoyStickDown <Score text="onJoyStickDown" /> 
 
-• `get` **onJoyStickDown**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **onJoyStickDown**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 摇杆按下事件的代理
 
@@ -576,7 +575,7 @@ ___
 
 ### onJoyStickUp <Score text="onJoyStickUp" /> 
 
-• `get` **onJoyStickUp**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="other" />
+• `get` **onJoyStickUp**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 摇杆抬起事件的代理
 
@@ -590,7 +589,7 @@ ___
 
 ### timeUntilInactive <Score text="timeUntilInactive" /> 
 
-• `get` **timeUntilInactive**(): `number` <Badge type="tip" text="other" />
+• `get` **timeUntilInactive**(): `number` <Badge type="tip" text="client" />
 
 进入未激活状态的时间
 
@@ -601,7 +600,7 @@ ___
 
 进入未激活状态的时间，以秒为单位
 
-• `set` **timeUntilInactive**(`Value`): `void` <Badge type="tip" text="other" />
+• `set` **timeUntilInactive**(`Value`): `void` <Badge type="tip" text="client" />
 
 进入未激活状态的时间
 
@@ -617,7 +616,7 @@ ___
 
 ### timeUntilReset <Score text="timeUntilReset" /> 
 
-• `get` **timeUntilReset**(): `number` <Badge type="tip" text="other" />
+• `get` **timeUntilReset**(): `number` <Badge type="tip" text="client" />
 
 释放摇杆后的复位时间
 
@@ -628,7 +627,7 @@ ___
 
 复位时间  以秒为单位
 
-• `set` **timeUntilReset**(`Value`): `void` <Badge type="tip" text="other" />
+• `set` **timeUntilReset**(`Value`): `void` <Badge type="tip" text="client" />
 
 释放摇杆后的复位时间
 
@@ -645,7 +644,7 @@ ___
 
 ### resetJoyStick <Score text="resetJoyStick" /> 
 
-• **resetJoyStick**(): `void` <Badge type="tip" text="other" />
+• **resetJoyStick**(): `void` <Badge type="tip" text="client" />
 
 强制重置摇杆 - 例如在操控摇杆的时候隐藏其父类节点,这时候摇杆重新显示后无法成功重置
 
@@ -655,7 +654,7 @@ ___
 
 ### setVisibility <Score text="setVisibility" /> 
 
-• **setVisibility**(`Visibility`): `void` <Badge type="tip" text="other" />
+• **setVisibility**(`Visibility`): `void` <Badge type="tip" text="client" />
 
 设置可见性
 
@@ -671,7 +670,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="client" />
 
 创建 VirtualJoystickPanelDesigner 控件
 
@@ -693,7 +692,7 @@ ___
 
 ### newObjectAndAdd <Score text="newObjectAndAdd" /> 
 
-• `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="other" />
+• `Static` **newObjectAndAdd**(`InCanvas?`, `Outer?`, `InName?`): [`VirtualJoystickPanel`](UI.VirtualJoystickPanel.md) <Badge type="tip" text="client" />
 
 创建TouchPad控件 当Outer和InName与已有的对象相同时，旧的对象会被销毁
 

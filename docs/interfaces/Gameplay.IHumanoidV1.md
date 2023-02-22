@@ -16,16 +16,16 @@ AVATAR
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.IHumanoidV1.md#changesomatotype)**([`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md), `boolean`): `void` <br> 切换v1体型|
+| **[changeSomatotype](Gameplay.IHumanoidV1.md#changesomatotype)**(`value`: [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md), `sync`: `boolean`): `void` <br> 切换v1体型|
 | **[getSomatotype](Gameplay.IHumanoidV1.md#getsomatotype)**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) <br> 获取当前的体型类型|
 | **[getWholeBody](Gameplay.IHumanoidV1.md#getwholebody)**(): `string` <br> 获取全身模型|
-| **[setWholeBody](Gameplay.IHumanoidV1.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型|
+| **[setWholeBody](Gameplay.IHumanoidV1.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置全身模型|
 
 ## Methods
 
 ### changeSomatotype <Score text="changeSomatotype" /> 
 
-• **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **changeSomatotype**(`value`, `sync`): `void` 
 
 切换v1体型
 
@@ -48,7 +48,7 @@ ___
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
-• **getSomatotype**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) <Badge type="tip" text="other" />
+• **getSomatotype**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) 
 
 获取当前的体型类型
 
@@ -63,7 +63,7 @@ ___
 
 ### getWholeBody <Score text="getWholeBody" /> 
 
-• **getWholeBody**(): `string` <Badge type="tip" text="other" />
+• **getWholeBody**(): `string` 
 
 获取全身模型
 
@@ -78,7 +78,7 @@ ___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 
-• **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWholeBody**(`GUID`, `sync`): `void` 
 
 设置全身模型
 

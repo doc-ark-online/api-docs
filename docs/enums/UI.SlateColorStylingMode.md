@@ -12,10 +12,10 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[UseColorForeground](UI.SlateColorStylingMode.md#usecolorforeground)** = ``2`` <br> 使用部件的前景色。|
-| **[UseColorForegroundSubdued](UI.SlateColorStylingMode.md#usecolorforegroundsubdued)** = ``3`` <br> 使用部件的柔和颜色|
-| **[UseColorSpecified](UI.SlateColorStylingMode.md#usecolorspecified)** = ``0`` <br> 颜色值存储在此颜色中|
-| **[UseColorSpecifiedLink](UI.SlateColorStylingMode.md#usecolorspecifiedlink)** = ``1`` <br> 颜色值存储在链接的颜色中|
+| **[UseColorForeground](UI.SlateColorStylingMode.md#usecolorforeground)** = ``2`` <br> |
+| **[UseColorForegroundSubdued](UI.SlateColorStylingMode.md#usecolorforegroundsubdued)** = ``3`` <br> |
+| **[UseColorSpecified](UI.SlateColorStylingMode.md#usecolorspecified)** = ``0`` <br> |
+| **[UseColorSpecifiedLink](UI.SlateColorStylingMode.md#usecolorspecifiedlink)** = ``1`` <br> |
 
 ## Enumeration Members
 

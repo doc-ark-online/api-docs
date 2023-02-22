@@ -12,8 +12,8 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[PressOrSlide](UI.SlideMethod.md#pressorslide)** = ``0`` <br> 点击就立刻改变进度条的值|
-| **[Slide](UI.SlideMethod.md#slide)** = ``1`` <br> 点击并滑动才能改变进度条的值|
+| **[PressOrSlide](UI.SlideMethod.md#pressorslide)** = ``0`` <br> |
+| **[Slide](UI.SlideMethod.md#slide)** = ``1`` <br> |
 
 ## Enumeration Members
 

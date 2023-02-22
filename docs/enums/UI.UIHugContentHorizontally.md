@@ -12,8 +12,8 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[FixWidth](UI.UIHugContentHorizontally.md#fixwidth)** = ``0`` <br> 固定宽度|
-| **[HugContent](UI.UIHugContentHorizontally.md#hugcontent)** = ``1`` <br> 自适应宽度|
+| **[FixWidth](UI.UIHugContentHorizontally.md#fixwidth)** = ``0`` <br> |
+| **[HugContent](UI.UIHugContentHorizontally.md#hugcontent)** = ``1`` <br> |
 
 ## Enumeration Members
 

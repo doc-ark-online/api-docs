@@ -12,12 +12,12 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[Default](Gameplay.CameraMode.md#default)** = ``3`` <br> 默认|
-| **[FPSShootingAngle](Gameplay.CameraMode.md#fpsshootingangle)** = ``5`` <br> FPS射击视角|
-| **[FirstPerson](Gameplay.CameraMode.md#firstperson)** = ``0`` <br> 第一人称|
-| **[TPSOverShoulderAngle](Gameplay.CameraMode.md#tpsovershoulderangle)** = ``4`` <br> TPS过肩视角|
-| **[ThirdPerson](Gameplay.CameraMode.md#thirdperson)** = ``1`` <br> 第三人称|
-| **[TopDownAngle](Gameplay.CameraMode.md#topdownangle)** = ``2`` <br> 俯视角|
+| **[Default](Gameplay.CameraMode.md#default)** = ``3`` <br> |
+| **[FPSShootingAngle](Gameplay.CameraMode.md#fpsshootingangle)** = ``5`` <br> |
+| **[FirstPerson](Gameplay.CameraMode.md#firstperson)** = ``0`` <br> |
+| **[TPSOverShoulderAngle](Gameplay.CameraMode.md#tpsovershoulderangle)** = ``4`` <br> |
+| **[ThirdPerson](Gameplay.CameraMode.md#thirdperson)** = ``1`` <br> |
+| **[TopDownAngle](Gameplay.CameraMode.md#topdownangle)** = ``2`` <br> |
 
 ## Enumeration Members
 

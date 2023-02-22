@@ -12,9 +12,9 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Center](UI.TextJustify.md#center)** = ``1`` <br> 对齐中间的文本。|
-| **[Left](UI.TextJustify.md#left)** = ``0`` <br> 从逻辑上向左对齐文本。|
-| **[Right](UI.TextJustify.md#right)** = ``2`` <br> 在逻辑上向右对齐文本。|
+| **[Center](UI.TextJustify.md#center)** = ``1`` <br> |
+| **[Left](UI.TextJustify.md#left)** = ``0`` <br> |
+| **[Right](UI.TextJustify.md#right)** = ``2`` <br> |
 
 ## Enumeration Members
 

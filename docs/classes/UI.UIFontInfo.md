@@ -12,17 +12,17 @@ GUI
 
 | Properties |
 | :-----|
-| **[contentColor](UI.UIFontInfo.md#contentcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 内容颜色|
-| **[fontSize](UI.UIFontInfo.md#fontsize)**: `number` <br> 大小|
-| **[glyph](UI.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 字形|
-| **[letterSpacing](UI.UIFontInfo.md#letterspacing)**: `number` <br> 间距|
-| **[outLineColor](UI.UIFontInfo.md#outlinecolor)**: [`LinearColor`](Type.LinearColor.md) <br> 描边颜色|
-| **[outLineSize](UI.UIFontInfo.md#outlinesize)**: `number` <br> 描边大小|
-| **[shadowColor](UI.UIFontInfo.md#shadowcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 阴影颜色|
-| **[shadowOffset](UI.UIFontInfo.md#shadowoffset)**: [`Vector2`](Type.Vector2.md) <br> 阴影偏移|
-| **[strikethrough](UI.UIFontInfo.md#strikethrough)**: `boolean` <br> 删除线|
-| **[textAlign](UI.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/UI.TextJustify.md) <br> 对齐方式|
-| **[textVerticalAlign](UI.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <br> 垂直对齐方式|
+| **[contentColor](UI.UIFontInfo.md#contentcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 下划线|
+| **[fontSize](UI.UIFontInfo.md#fontsize)**: `number` <br> 下划线|
+| **[glyph](UI.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 下划线|
+| **[letterSpacing](UI.UIFontInfo.md#letterspacing)**: `number` <br> 下划线|
+| **[outLineColor](UI.UIFontInfo.md#outlinecolor)**: [`LinearColor`](Type.LinearColor.md) <br> 下划线|
+| **[outLineSize](UI.UIFontInfo.md#outlinesize)**: `number` <br> 下划线|
+| **[shadowColor](UI.UIFontInfo.md#shadowcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 下划线|
+| **[shadowOffset](UI.UIFontInfo.md#shadowoffset)**: [`Vector2`](Type.Vector2.md) <br> 下划线|
+| **[strikethrough](UI.UIFontInfo.md#strikethrough)**: `boolean` <br> 下划线|
+| **[textAlign](UI.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/UI.TextJustify.md) <br> 下划线|
+| **[textVerticalAlign](UI.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <br> 下划线|
 | **[underline](UI.UIFontInfo.md#underline)**: `boolean` <br> 下划线|
 
 ## Properties

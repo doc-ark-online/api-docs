@@ -28,17 +28,14 @@ GAMEPLAY
 
 | Methods |
 | :-----|
-| **[addControlAbility](Gameplay.AbilityState.md#addcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性|
-| **[cancelControlAbility](Gameplay.AbilityState.md#cancelcontrolability)**([`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性|
-| **[enableJump](Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> since:022 reason: API 注释命名优化 replacement: jumpEnable|
-| **[enableMove](Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> since:022 reason: API 注释命名优化 replacement: moveEnable|
-| **[enableTurn](Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <br> since:022 reason: API 注释命名优化 replacement: turnEnable|
+| **[addControlAbility](Gameplay.AbilityState.md#addcontrolability)**(`ControlType`: [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性|
+| **[cancelControlAbility](Gameplay.AbilityState.md#cancelcontrolability)**(`ControlType`: [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性|
 
 ## Accessors
 
 ### animation <Score text="animation" /> 
 
-• `get` **animation**(): `string` <Badge type="tip" text="other" />
+• `get` **animation**(): `string` 
 
 获取动画资源
 
@@ -49,7 +46,7 @@ GAMEPLAY
 
 资源GUID
 
-• `set` **animation**(`AnimGuid`): `void` <Badge type="tip" text="other" />
+• `set` **animation**(`AnimGuid`): `void` 
 
 设置动画资源
 
@@ -65,7 +62,7 @@ ___
 
 ### duration <Score text="duration" /> 
 
-• `get` **duration**(): `number` <Badge type="tip" text="other" />
+• `get` **duration**(): `number` 
 
 获取释放状态当前执行时间
 
@@ -80,7 +77,7 @@ ___
 
 ### executeTime <Score text="executeTime" /> 
 
-• `get` **executeTime**(): `number` <Badge type="tip" text="other" />
+• `get` **executeTime**(): `number` 
 
 获取释放状态可执行总时长时间
 
@@ -121,7 +118,7 @@ ___
 
 ### jumpEnable <Score text="jumpEnable" /> 
 
-• `get` **jumpEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **jumpEnable**(): `boolean` 
 
 获取对象是否可跳跃
 
@@ -136,7 +133,7 @@ ___
 
 ### loop <Score text="loop" /> 
 
-• `get` **loop**(): `boolean` <Badge type="tip" text="other" />
+• `get` **loop**(): `boolean` 
 
 获取释放状态是否可循环isLoop
 
@@ -147,7 +144,7 @@ ___
 
 true或false
 
-• `set` **loop**(`LoopState`): `void` <Badge type="tip" text="other" />
+• `set` **loop**(`LoopState`): `void` 
 
 设置释放状态是否循环
 
@@ -163,7 +160,7 @@ ___
 
 ### moveEnable <Score text="moveEnable" /> 
 
-• `get` **moveEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **moveEnable**(): `boolean` 
 
 获取对象是否可移动
 
@@ -178,7 +175,7 @@ ___
 
 ### turnEnable <Score text="turnEnable" /> 
 
-• `get` **turnEnable**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
+• `get` **turnEnable**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) 
 
 获取对象是否可转向
 
@@ -193,7 +190,7 @@ ___
 
 ### addControlAbility <Score text="addControlAbility" /> 
 
-• **addControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
+• **addControlAbility**(`ControlType`): `void` 
 
 添加释放状态的控制性
 
@@ -209,7 +206,7 @@ ___
 
 ### cancelControlAbility <Score text="cancelControlAbility" /> 
 
-• **cancelControlAbility**(`ControlType`): `void` <Badge type="tip" text="other" />
+• **cancelControlAbility**(`ControlType`): `void` 
 
 取消释放状态的控制性
 
@@ -222,58 +219,3 @@ ___
 
 
 ___
-
-### enableJump <Score text="enableJump" /> 
-
-• **enableJump**(): `boolean` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: jumpEnable
-
-获取对象是否可跳跃
-
-
-#### Returns
-
-`boolean`
-
-支持跳跃时返回 true，否则 false
-
-___
-
-### enableMove <Score text="enableMove" /> 
-
-• **enableMove**(): `boolean` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: moveEnable
-
-获取对象是否可移动
-
-
-#### Returns
-
-`boolean`
-
-支持移动时返回 true，否则 false
-
-___
-
-### enableTurn <Score text="enableTurn" /> 
-
-• **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason: API 注释命名优化 replacement: turnEnable
-
-获取对象是否可转向
-
-
-#### Returns
-
-[`MoveControlMode`](../enums/Gameplay.MoveControlMode.md)
-
-当前配置的移动模式

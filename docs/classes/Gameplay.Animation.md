@@ -222,7 +222,7 @@ anim.play();
 
 ### pause <Score text="pause" /> 
 
-• **pause**(): `boolean` <Badge type="tip" text="other" />
+• **pause**(): `boolean` 
 
 暂停动画,不会触发onAnimFinished委托
 
@@ -251,7 +251,7 @@ ___
 
 ### play <Score text="play" /> 
 
-• **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` 
 
 从动画资源的起点播放动画
 
@@ -278,7 +278,7 @@ ___
 
 ### resume <Score text="resume" /> 
 
-• **resume**(): `boolean` <Badge type="tip" text="other" />
+• **resume**(): `boolean` 
 
 从当前位置继续动画播放
 
@@ -307,7 +307,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` 
 
 停止播放,不会触发onAnimFinished委托
 

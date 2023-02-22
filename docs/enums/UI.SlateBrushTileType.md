@@ -12,10 +12,10 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[Both](UI.SlateBrushTileType.md#both)** = ``3`` <br> 水平垂直平铺|
-| **[Horizontal](UI.SlateBrushTileType.md#horizontal)** = ``1`` <br> 水平平铺|
-| **[NoTile](UI.SlateBrushTileType.md#notile)** = ``0`` <br> 拉伸|
-| **[Vertical](UI.SlateBrushTileType.md#vertical)** = ``2`` <br> 垂直平铺|
+| **[Both](UI.SlateBrushTileType.md#both)** = ``3`` <br> |
+| **[Horizontal](UI.SlateBrushTileType.md#horizontal)** = ``1`` <br> |
+| **[NoTile](UI.SlateBrushTileType.md#notile)** = ``0`` <br> |
+| **[Vertical](UI.SlateBrushTileType.md#vertical)** = ``2`` <br> |
 
 ## Enumeration Members
 

@@ -18,7 +18,7 @@ DATA
 
 | Methods |
 | :-----|
-| **[getData](Extension.DataCenterC.md#getdata)**<extends [`Subdata`](Extension.Subdata.md)<`T`\> |\>([`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): extends [`Subdata`](Extension.Subdata.md)<`T`\> | <br> 获取当前玩家的一个数据|
+| **[getData](Extension.DataCenterC.md#getdata)**<`T`: extends [`Subdata`](Extension.Subdata.md)<`T`\>\>(`SubdataType`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`Subdata`](Extension.Subdata.md)<`T`\> <br> 获取当前玩家的一个数据|
 | **[ready](Extension.DataCenterC.md#ready)**(): `Promise`<`void`\> <br> 判断数据是否就绪|
 | **[getInstance](Extension.DataCenterC.md#getinstance)**(): [`DataCenterC`](Extension.DataCenterC.md) <br> 获取客户端数据中心全局实例|
 
@@ -26,7 +26,7 @@ DATA
 
 ### getData <Score text="getData" /> 
 
-• **getData**<`T`\>(`SubdataType`): `T` <Badge type="tip" text="other" />
+• **getData**<`T`\>(`SubdataType`): `T` <Badge type="tip" text="client" />
 
 获取当前玩家的一个数据
 
@@ -53,7 +53,7 @@ ___
 
 ### ready <Score text="ready" /> 
 
-• **ready**(): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **ready**(): `Promise`<`void`\> <Badge type="tip" text="client" />
 
 判断数据是否就绪
 
@@ -68,7 +68,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`DataCenterC`](Extension.DataCenterC.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`DataCenterC`](Extension.DataCenterC.md) <Badge type="tip" text="client" />
 
 获取客户端数据中心全局实例
 

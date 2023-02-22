@@ -12,9 +12,9 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[OverheadUI](Gameplay.WidgetSpaceMode.md#overheadui)** = ``2`` <br> 头顶UI|
-| **[Screen](Gameplay.WidgetSpaceMode.md#screen)** = ``1`` <br> 屏幕空间|
-| **[World](Gameplay.WidgetSpaceMode.md#world)** = ``0`` <br> 世界空间|
+| **[OverheadUI](Gameplay.WidgetSpaceMode.md#overheadui)** = ``2`` <br> |
+| **[Screen](Gameplay.WidgetSpaceMode.md#screen)** = ``1`` <br> |
+| **[World](Gameplay.WidgetSpaceMode.md#world)** = ``0`` <br> |
 
 ## Enumeration Members
 

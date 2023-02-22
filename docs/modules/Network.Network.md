@@ -18,17 +18,17 @@ Network
 
 | Type Aliases |
 | :-----|
-| **[HttpResponse](Network.Network.md#httpresponse)**: (`boolean`: `boolean`, `string`: `string`, `number`: `number`) => `void` <br> • (`result`, `content`, `responseCode`): `void`|
-| **[TransactionType](Network.Network.md#transactiontype)**: (`boolean`: `boolean`, `string`: `string`) => `void` <br> • (`isSuccess`, `content`): `void`|
+| **[HttpResponse](Network.Network.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
+| **[TransactionType](Network.Network.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
 
 | Functions |
 | :-----|
-| **[fetch](Network.Network.md#fetch)**(`string`, [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
-| **[generalHttpRequest](Network.Network.md#generalhttprequest)**([`HttpResponse`](Network.Network.md#httpresponse), [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `string`, `any`, [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> GAMEPLAY|
-| **[getUrlParameter](Network.Network.md#geturlparameter)**(`string`, `string`): `string` <br> 获取url参数|
-| **[httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)**([`HttpResponse`](Network.Network.md#httpresponse), `string`, `string`, [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
-| **[urlDecode](Network.Network.md#urldecode)**(`string`): `string` <br> url解码|
-| **[urlEncode](Network.Network.md#urlencode)**(`string`): `string` <br> url转码|
+| **[fetch](Network.Network.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
+| **[generalHttpRequest](Network.Network.md#generalhttprequest)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
+| **[getUrlParameter](Network.Network.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
+| **[httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
+| **[urlDecode](Network.Network.md#urldecode)**(`str`: `string`): `string` <br> url解码|
+| **[urlEncode](Network.Network.md#urlencode)**(`str`: `string`): `string` <br> url转码|
 
 ## Type Aliases
 
@@ -95,7 +95,7 @@ GAMEPLAY
 
 ### fetch <Score text="fetch" /> 
 
-• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <Badge type="tip" text="other" />
+• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> 
 
 HTTP请求
 
@@ -121,7 +121,7 @@ ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
-• **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+• **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` 
 
 **`Groups`**
 
@@ -155,7 +155,7 @@ ___
 
 ### getUrlParameter <Score text="getUrlParameter" /> 
 
-• **getUrlParameter**(`url`, `parameterName`): `string` <Badge type="tip" text="other" />
+• **getUrlParameter**(`url`, `parameterName`): `string` 
 
 获取url参数
 
@@ -181,7 +181,7 @@ ___
 
 ### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
 
-• **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` <Badge type="tip" text="other" />
+• **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` 
 
 Http请求接口
 
@@ -209,7 +209,7 @@ ___
 
 ### urlDecode <Score text="urlDecode" /> 
 
-• **urlDecode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlDecode**(`str`): `string` 
 
 url解码
 
@@ -234,7 +234,7 @@ ___
 
 ### urlEncode <Score text="urlEncode" /> 
 
-• **urlEncode**(`str`): `string` <Badge type="tip" text="other" />
+• **urlEncode**(`str`): `string` 
 
 url转码
 

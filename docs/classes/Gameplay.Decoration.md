@@ -12,15 +12,15 @@ AVATAR
 
 | Properties |
 | :-----|
-| **[assetId](Gameplay.Decoration.md#assetid)**: `string` <br> 资源Id|
-| **[relativeTransform](Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Transform.md) <br> 相对ue slot Transform|
-| **[skeletonName](Gameplay.Decoration.md#skeletonname)**: `string` <br> 骨架名字|
-| **[slotName](Gameplay.Decoration.md#slotname)**: `string` <br> 插槽名|
+| **[assetId](Gameplay.Decoration.md#assetid)**: `string` <br> 反序列化|
+| **[relativeTransform](Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Transform.md) <br> 反序列化|
+| **[skeletonName](Gameplay.Decoration.md#skeletonname)**: `string` <br> 反序列化|
+| **[slotName](Gameplay.Decoration.md#slotname)**: `string` <br> 反序列化|
 
 | Methods |
 | :-----|
-| **[deserialize](Gameplay.Decoration.md#deserialize)**(`string`): `void` <br> 反序列化|
-| **[equal](Gameplay.Decoration.md#equal)**(`string`): `boolean` <br> 比较是否是一个插槽数据|
+| **[deserialize](Gameplay.Decoration.md#deserialize)**(`data`: `string`): `void` <br> 反序列化|
+| **[equal](Gameplay.Decoration.md#equal)**(`widgetString`: `string`): `boolean` <br> 比较是否是一个插槽数据|
 | **[serialize](Gameplay.Decoration.md#serialize)**(): `string` <br> 获取序列化String|
 
 ## Properties
@@ -59,7 +59,7 @@ ___
 
 ### deserialize <Score text="deserialize" /> 
 
-• **deserialize**(`data`): `void` <Badge type="tip" text="other" />
+• **deserialize**(`data`): `void` 
 
 反序列化
 
@@ -75,7 +75,7 @@ ___
 
 ### equal <Score text="equal" /> 
 
-• **equal**(`widgetString`): `boolean` <Badge type="tip" text="other" />
+• **equal**(`widgetString`): `boolean` 
 
 比较是否是一个插槽数据
 
@@ -96,7 +96,7 @@ ___
 
 ### serialize <Score text="serialize" /> 
 
-• **serialize**(): `string` <Badge type="tip" text="other" />
+• **serialize**(): `string` 
 
 获取序列化String
 

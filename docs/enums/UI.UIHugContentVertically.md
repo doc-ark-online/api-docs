@@ -12,8 +12,8 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[FixHeight](UI.UIHugContentVertically.md#fixheight)** = ``0`` <br> 固定高度|
-| **[HugContent](UI.UIHugContentVertically.md#hugcontent)** = ``1`` <br> 自适应高度|
+| **[FixHeight](UI.UIHugContentVertically.md#fixheight)** = ``0`` <br> |
+| **[HugContent](UI.UIHugContentVertically.md#hugcontent)** = ``1`` <br> |
 
 ## Enumeration Members
 

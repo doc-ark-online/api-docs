@@ -23,7 +23,7 @@ GUI
 
 ### assetID <Score text="assetID" /> 
 
-• `get` **assetID**(): `string` <Badge type="tip" text="other" />
+• `get` **assetID**(): `string` <Badge type="tip" text="client" />
 
 获取资源ID
 
@@ -34,7 +34,7 @@ GUI
 
 资源ID信息
 
-• `set` **assetID**(`v`): `void` <Badge type="tip" text="other" />
+• `set` **assetID**(`v`): `void` <Badge type="tip" text="client" />
 
 设置资源ID
 

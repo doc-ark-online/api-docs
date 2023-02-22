@@ -12,10 +12,10 @@ GAMEPLAY
 
 | Properties |
 | :-----|
-| **[onEndReloadClient](Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数|
-| **[onEndReloadServer](Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数|
-| **[onStartReloadClient](Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数|
-| **[onStartReloadServer](Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数|
+| **[onEndReloadClient](Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onEndReloadServer](Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartReloadClient](Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartReloadServer](Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
 
 | Accessors |
 | :-----|
@@ -62,7 +62,7 @@ ___
 
 ### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **animationGuid**(): `string` 
 
 获取绑定的动画GUID
 
@@ -90,7 +90,7 @@ ___
 
 ### reloadDuration <Score text="reloadDuration" /> 
 
-• `get` **reloadDuration**(): `number` <Badge type="tip" text="other" />
+• `get` **reloadDuration**(): `number` 
 
 获取换弹时间
 
@@ -124,7 +124,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` 
 
 是否有动画GUID
 

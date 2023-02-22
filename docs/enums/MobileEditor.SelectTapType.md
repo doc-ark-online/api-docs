@@ -12,9 +12,9 @@ SCRIPITING
 
 | Enumeration Members |
 | :-----|
-| **[Multi](MobileEditor.SelectTapType.md#multi)** = ``2`` <br> 多选|
-| **[None](MobileEditor.SelectTapType.md#none)** = ``0`` <br> 未选中|
-| **[Single](MobileEditor.SelectTapType.md#single)** = ``1`` <br> 单选|
+| **[Multi](MobileEditor.SelectTapType.md#multi)** = ``2`` <br> |
+| **[None](MobileEditor.SelectTapType.md#none)** = ``0`` <br> |
+| **[Single](MobileEditor.SelectTapType.md#single)** = ``1`` <br> |
 
 ## Enumeration Members
 

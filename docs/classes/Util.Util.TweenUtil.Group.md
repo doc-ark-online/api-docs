@@ -12,17 +12,17 @@ UTILITY
 
 | Methods |
 | :-----|
-| **[add](Util.Util.TweenUtil.Group.md#add)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
+| **[add](Util.Util.TweenUtil.Group.md#add)**(`tween`: [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
 | **[getAll](Util.Util.TweenUtil.Group.md#getall)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <br> 获取当前补间组中所有补间对象|
-| **[remove](Util.Util.TweenUtil.Group.md#remove)**([`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
+| **[remove](Util.Util.TweenUtil.Group.md#remove)**(`tween`: [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
 | **[removeAll](Util.Util.TweenUtil.Group.md#removeall)**(): `void` <br> 移除当前补间组中所有补间对象|
-| **[update](Util.Util.TweenUtil.Group.md#update)**(`number`, `boolean`): `boolean` <br> 更新补间组|
+| **[update](Util.Util.TweenUtil.Group.md#update)**(`time?`: `number`, `preserve?`: `boolean`): `boolean` <br> 更新补间组|
 
 ## Methods
 
 ### add <Score text="add" /> 
 
-• **add**(`tween`): `void` <Badge type="tip" text="other" />
+• **add**(`tween`): `void` 
 
 将指定补间对象加入当前补间组
 
@@ -38,7 +38,7 @@ ___
 
 ### getAll <Score text="getAll" /> 
 
-• **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] <Badge type="tip" text="other" />
+• **getAll**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<[`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops)\>[] 
 
 获取当前补间组中所有补间对象
 
@@ -53,7 +53,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`tween`): `void` <Badge type="tip" text="other" />
+• **remove**(`tween`): `void` 
 
 将指定补间对象移出当前补间组并删除
 
@@ -69,7 +69,7 @@ ___
 
 ### removeAll <Score text="removeAll" /> 
 
-• **removeAll**(): `void` <Badge type="tip" text="other" />
+• **removeAll**(): `void` 
 
 移除当前补间组中所有补间对象
 
@@ -85,7 +85,7 @@ ___
 
 ### update <Score text="update" /> 
 
-• **update**(`time?`, `preserve?`): `boolean` <Badge type="tip" text="other" />
+• **update**(`time?`, `preserve?`): `boolean` 
 
 更新补间组
 

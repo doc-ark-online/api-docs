@@ -12,7 +12,7 @@ GUI
 
 | Properties |
 | :-----|
-| **[horizontalCollation](UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md) <br> 水平适应规则|
+| **[horizontalCollation](UI.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/UI.UIHorizontalCollation.md) <br> 垂直适应规则|
 | **[verticalCollation](UI.UIChildCollation.md#verticalcollation)**: [`UIVerticalCollation`](../enums/UI.UIVerticalCollation.md) <br> 垂直适应规则|
 
 构造具体规则方法

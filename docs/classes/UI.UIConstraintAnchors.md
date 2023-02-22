@@ -12,7 +12,7 @@ GUI
 
 | Properties |
 | :-----|
-| **[constraintHorizontal](UI.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/UI.UIConstraintHorizontal.md) <br> 水平对齐规则|
+| **[constraintHorizontal](UI.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/UI.UIConstraintHorizontal.md) <br> 垂直对齐规则|
 | **[constraintVertical](UI.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/UI.UIConstraintVertical.md) <br> 垂直对齐规则|
 
 构造一个默认的

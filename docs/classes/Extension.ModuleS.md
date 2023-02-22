@@ -44,22 +44,22 @@ UTILITY
 
 | Methods |
 | :-----|
-| **[getPlayerData](Extension.ModuleS.md#getplayerdata)**(`number` \): `S` <br> 获取指定玩家的本模块DataOwner|
+| **[getPlayerData](Extension.ModuleS.md#getplayerdata)**(`player`: `number` \): `S` <br> 获取指定玩家的本模块DataOwner|
 | **[onAwake](Extension.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](Extension.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
-| **[onExecute](Extension.ModuleS.md#onexecute)**(`number`, `any`[]): `void` <br> 外部调用本模块的某个操作|
-| **[onPlayerEnterGame](Extension.ModuleS.md#onplayerentergame)**([`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)|
-| **[onPlayerJoined](Extension.ModuleS.md#onplayerjoined)**([`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)|
-| **[onPlayerLeft](Extension.ModuleS.md#onplayerleft)**([`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家离开房间|
+| **[onExecute](Extension.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
+| **[onPlayerEnterGame](Extension.ModuleS.md#onplayerentergame)**(`player`: [`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)|
+| **[onPlayerJoined](Extension.ModuleS.md#onplayerjoined)**(`player`: [`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)|
+| **[onPlayerLeft](Extension.ModuleS.md#onplayerleft)**(`player`: [`Player`](Gameplay.Player.md)): `void` <br> 生命周期方法-玩家离开房间|
 | **[onStart](Extension.ModuleS.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
-| **[onUpdate](Extension.ModuleS.md#onupdate)**(`number`): `void` <br> 生命周期方法-刷新模块调用|
+| **[onUpdate](Extension.ModuleS.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[getAllClient](Extension.NetObjectS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
-| **[getClient](Extension.NetObjectS.md#getclient)**(`number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
+| **[getClient](Extension.NetObjectS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
 :::
 
 
@@ -93,7 +93,7 @@ UTILITY
 
 ### getPlayerData <Score text="getPlayerData" /> 
 
-• `Protected` **getPlayerData**(`player`): `S` <Badge type="tip" text="other" />
+• `Protected` **getPlayerData**(`player`): `S` <Badge type="tip" text="server" />
 
 获取指定玩家的本模块DataOwner
 
@@ -114,7 +114,7 @@ ___
 
 ### onAwake <Score text="onAwake" /> 
 
-• `Protected` **onAwake**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onAwake**(): `void` <Badge type="tip" text="server" />
 
 生命周期方法-创建模块时调用
 
@@ -124,7 +124,7 @@ ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onDestroy**(): `void` <Badge type="tip" text="server" />
 
 生命周期方法-销毁模块调用
 
@@ -134,7 +134,7 @@ ___
 
 ### onExecute <Score text="onExecute" /> 
 
-• `Protected` **onExecute**(`type`, `...params`): `void` <Badge type="tip" text="other" />
+• `Protected` **onExecute**(`type`, `...params`): `void` <Badge type="tip" text="server" />
 
 外部调用本模块的某个操作
 
@@ -151,7 +151,7 @@ ___
 
 ### onPlayerEnterGame <Score text="onPlayerEnterGame" /> 
 
-• `Protected` **onPlayerEnterGame**(`player`): `void` <Badge type="tip" text="other" />
+• `Protected` **onPlayerEnterGame**(`player`): `void` <Badge type="tip" text="server" />
 
 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)
 
@@ -167,7 +167,7 @@ ___
 
 ### onPlayerJoined <Score text="onPlayerJoined" /> 
 
-• `Protected` **onPlayerJoined**(`player`): `void` <Badge type="tip" text="other" />
+• `Protected` **onPlayerJoined**(`player`): `void` <Badge type="tip" text="server" />
 
 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)
 
@@ -183,7 +183,7 @@ ___
 
 ### onPlayerLeft <Score text="onPlayerLeft" /> 
 
-• `Protected` **onPlayerLeft**(`player`): `void` <Badge type="tip" text="other" />
+• `Protected` **onPlayerLeft**(`player`): `void` <Badge type="tip" text="server" />
 
 生命周期方法-玩家离开房间
 
@@ -199,7 +199,7 @@ ___
 
 ### onStart <Score text="onStart" /> 
 
-• `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onStart**(): `void` <Badge type="tip" text="server" />
 
 生命周期方法-启动模块时调用
 
@@ -209,7 +209,7 @@ ___
 
 ### onUpdate <Score text="onUpdate" /> 
 
-• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
+• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="server" />
 
 生命周期方法-刷新模块调用
 

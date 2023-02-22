@@ -13,11 +13,11 @@ GAMEPLAY
 
 | Properties |
 | :-----|
-| **[forwardVecAgainstHitCircle](Gameplay.FireDataInfoForMultiple.md#forwardvecagainsthitcircle)**: [`Vector`](Type.Vector.md) <br> 击中点的前向向量|
-| **[hitLoc](Gameplay.FireDataInfoForMultiple.md#hitloc)**: [`Vector`](Type.Vector.md) <br> 击中点坐标|
-| **[radiusMax](Gameplay.FireDataInfoForMultiple.md#radiusmax)**: `number` <br> 打击面的最大半径|
-| **[rightVecAgainstHitCircle](Gameplay.FireDataInfoForMultiple.md#rightvecagainsthitcircle)**: [`Vector`](Type.Vector.md) <br> 击中点的向右向量|
-| **[shootDistance](Gameplay.FireDataInfoForMultiple.md#shootdistance)**: `number` <br> 射击的距离|
+| **[forwardVecAgainstHitCircle](Gameplay.FireDataInfoForMultiple.md#forwardvecagainsthitcircle)**: [`Vector`](Type.Vector.md) <br> 击中点的向上向量|
+| **[hitLoc](Gameplay.FireDataInfoForMultiple.md#hitloc)**: [`Vector`](Type.Vector.md) <br> 击中点的向上向量|
+| **[radiusMax](Gameplay.FireDataInfoForMultiple.md#radiusmax)**: `number` <br> 击中点的向上向量|
+| **[rightVecAgainstHitCircle](Gameplay.FireDataInfoForMultiple.md#rightvecagainsthitcircle)**: [`Vector`](Type.Vector.md) <br> 击中点的向上向量|
+| **[shootDistance](Gameplay.FireDataInfoForMultiple.md#shootdistance)**: `number` <br> 击中点的向上向量|
 | **[upVecAgainstHitCircle](Gameplay.FireDataInfoForMultiple.md#upvecagainsthitcircle)**: [`Vector`](Type.Vector.md) <br> 击中点的向上向量|
 
 ## Properties

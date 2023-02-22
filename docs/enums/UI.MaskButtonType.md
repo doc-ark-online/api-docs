@@ -12,9 +12,9 @@ GUI
 
 | Enumeration Members |
 | :-----|
-| **[MTCircle](UI.MaskButtonType.md#mtcircle)** = ``0`` <br> 圆形|
-| **[MTFanShaped](UI.MaskButtonType.md#mtfanshaped)** = ``1`` <br> 扇形|
-| **[MTRoundRect](UI.MaskButtonType.md#mtroundrect)** = ``2`` <br> 圆角|
+| **[MTCircle](UI.MaskButtonType.md#mtcircle)** = ``0`` <br> |
+| **[MTFanShaped](UI.MaskButtonType.md#mtfanshaped)** = ``1`` <br> |
+| **[MTRoundRect](UI.MaskButtonType.md#mtroundrect)** = ``2`` <br> |
 
 ## Enumeration Members
 

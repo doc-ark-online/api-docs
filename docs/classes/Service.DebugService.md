@@ -27,7 +27,7 @@ debug调试服务
 
 ### getHeapStatistics <Score text="getHeapStatistics" /> 
 
-• `Static` **getHeapStatistics**(): `HeapStatistics` <Badge type="tip" text="other" />
+• `Static` **getHeapStatistics**(): `HeapStatistics` 
 
 获取当前项目所有TS脚本内存占用
 
@@ -42,7 +42,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`DebugService`](Service.DebugService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`DebugService`](Service.DebugService.md) 
 
 获取debug调试服务全局实例
 

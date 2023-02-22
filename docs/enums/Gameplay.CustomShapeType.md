@@ -12,10 +12,10 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[Box](Gameplay.CustomShapeType.md#box)** = ``2`` <br> 盒形|
-| **[HorizontalCapsule](Gameplay.CustomShapeType.md#horizontalcapsule)** = ``1`` <br> 水平胶囊体|
-| **[Sphere](Gameplay.CustomShapeType.md#sphere)** = ``3`` <br> 球形|
-| **[VerticalCapsule](Gameplay.CustomShapeType.md#verticalcapsule)** = ``0`` <br> 竖直的胶囊体|
+| **[Box](Gameplay.CustomShapeType.md#box)** = ``2`` <br> |
+| **[HorizontalCapsule](Gameplay.CustomShapeType.md#horizontalcapsule)** = ``1`` <br> |
+| **[Sphere](Gameplay.CustomShapeType.md#sphere)** = ``3`` <br> |
+| **[VerticalCapsule](Gameplay.CustomShapeType.md#verticalcapsule)** = ``0`` <br> |
 
 ## Enumeration Members
 

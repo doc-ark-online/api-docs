@@ -12,9 +12,9 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[ContinuousFire](Gameplay.HotWeaponFireMode.md#continuousfire)** = ``1`` <br> 连发|
-| **[FullAutomationFire](Gameplay.HotWeaponFireMode.md#fullautomationfire)** = ``2`` <br> 全自动|
-| **[SingleFire](Gameplay.HotWeaponFireMode.md#singlefire)** = ``0`` <br> 单发|
+| **[ContinuousFire](Gameplay.HotWeaponFireMode.md#continuousfire)** = ``1`` <br> |
+| **[FullAutomationFire](Gameplay.HotWeaponFireMode.md#fullautomationfire)** = ``2`` <br> |
+| **[SingleFire](Gameplay.HotWeaponFireMode.md#singlefire)** = ``0`` <br> |
 
 ## Enumeration Members
 

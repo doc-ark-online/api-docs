@@ -12,11 +12,11 @@ MONETIZATION
 
 | Enumeration Members |
 | :-----|
-| **[Close](Service.AdsState.md#close)** = ``1`` <br> 用户关闭|
-| **[Fail](Service.AdsState.md#fail)** = ``-1`` <br> 展示失败|
-| **[Reward](Service.AdsState.md#reward)** = ``4`` <br> 获得奖励|
-| **[Success](Service.AdsState.md#success)** = ``0`` <br> 开始展示|
-| **[Timeout](Service.AdsState.md#timeout)** = ``5`` <br> 播放广告超时|
+| **[Close](Service.AdsState.md#close)** = ``1`` <br> |
+| **[Fail](Service.AdsState.md#fail)** = ``-1`` <br> |
+| **[Reward](Service.AdsState.md#reward)** = ``4`` <br> |
+| **[Success](Service.AdsState.md#success)** = ``0`` <br> |
+| **[Timeout](Service.AdsState.md#timeout)** = ``5`` <br> |
 
 ## Enumeration Members
 

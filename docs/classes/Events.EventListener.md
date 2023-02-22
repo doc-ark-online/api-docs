@@ -34,7 +34,7 @@ SCRIPITING
 
 ### disconnect <Score text="disconnect" /> 
 
-• **disconnect**(): `void` <Badge type="tip" text="other" />
+• **disconnect**(): `void` 
 
 卸载事件
 

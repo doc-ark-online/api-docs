@@ -21,7 +21,7 @@ UI文本
 | **[autoAdjust](UI.TextBlock.md#autoadjust)**(): `boolean` <br> 获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)|
 | **[contentColor](UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置字体内容颜色|
 | **[fontColor](UI.TextBlock.md#fontcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取字体颜色|
-| **[fontLetterSpace](UI.TextBlock.md#fontletterspace)**(`number`): `void` <br> 设置字体间距|
+| **[fontLetterSpace](UI.TextBlock.md#fontletterspace)**(`inLetterSpace`: `number`): `void` <br> 设置字体间距|
 | **[fontLitterSpace](UI.TextBlock.md#fontlitterspace)**(): `number` <br> 获取字体间距|
 | **[fontSize](UI.TextBlock.md#fontsize)**(): `number` <br> 获取字体大小|
 | **[glyph](UI.TextBlock.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 获取字体字形|
@@ -62,7 +62,6 @@ UI文本
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -73,20 +72,20 @@ UI文本
 
 | Methods |
 | :-----|
-| **[setFontColorByHex](UI.TextBlock.md#setfontcolorbyhex)**(`string`): `void` <br> 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505|
-| **[setFontColorDecimal](UI.TextBlock.md#setfontcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体颜色,指定R、G、B、A设置颜色 0 ~255|
-| **[setOutlineColorByHex](UI.TextBlock.md#setoutlinecolorbyhex)**(`string`): `void` <br> 设置当前的描边颜色，指定描边颜色设定颜色 #05050505|
-| **[setOutlineColorDecimal](UI.TextBlock.md#setoutlinecolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255|
-| **[setShadowColorByHex](UI.TextBlock.md#setshadowcolorbyhex)**(`string`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505|
-| **[setShadowColorDecimal](UI.TextBlock.md#setshadowcolordecimal)**(`number`, `number`, `number`, `number`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255|
-| **[newObject](UI.TextBlock.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`TextBlock`](UI.TextBlock.md) <br> 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| **[setFontColorByHex](UI.TextBlock.md#setfontcolorbyhex)**(`inHexString`: `string`): `void` <br> 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505|
+| **[setFontColorDecimal](UI.TextBlock.md#setfontcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置字体颜色,指定R、G、B、A设置颜色 0 ~255|
+| **[setOutlineColorByHex](UI.TextBlock.md#setoutlinecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置当前的描边颜色，指定描边颜色设定颜色 #05050505|
+| **[setOutlineColorDecimal](UI.TextBlock.md#setoutlinecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255|
+| **[setShadowColorByHex](UI.TextBlock.md#setshadowcolorbyhex)**(`inHexString`: `string`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505|
+| **[setShadowColorDecimal](UI.TextBlock.md#setshadowcolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255|
+| **[newObject](UI.TextBlock.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md), `inName?`: `string`): [`TextBlock`](UI.TextBlock.md) <br> 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
@@ -96,7 +95,7 @@ UI文本
 
 ### autoAdjust <Score text="autoAdjust" /> 
 
-• `get` **autoAdjust**(): `boolean` <Badge type="tip" text="other" />
+• `get` **autoAdjust**(): `boolean` <Badge type="tip" text="client" />
 
 获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)
 
@@ -107,7 +106,7 @@ UI文本
 
 字体是否自适应调整大小
 
-• `set` **autoAdjust**(`isAdjust`): `void` <Badge type="tip" text="other" />
+• `set` **autoAdjust**(`isAdjust`): `void` <Badge type="tip" text="client" />
 
 设置字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)
 
@@ -122,7 +121,7 @@ UI文本
 
 ### contentColor <Score text="contentColor" /> 
 
-• `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 设置字体内容颜色
 
@@ -133,7 +132,7 @@ UI文本
 
 字体内容颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="other" />
+• `set` **contentColor**(`inContentColor`): `void` <Badge type="tip" text="client" />
 
 设置字体内容颜色
 
@@ -148,7 +147,7 @@ UI文本
 
 ### fontColor <Score text="fontColor" /> 
 
-• `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **fontColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取字体颜色
 
@@ -159,7 +158,7 @@ UI文本
 
 字体颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="other" />
+• `set` **fontColor**(`inColor`): `void` <Badge type="tip" text="client" />
 
 设置字体颜色
 
@@ -175,7 +174,7 @@ ___
 
 ### fontLetterSpace <Score text="fontLetterSpace" /> 
 
-• `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="other" />
+• `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="client" />
 
 设置字体间距
 
@@ -191,7 +190,7 @@ ___
 
 ### fontLitterSpace <Score text="fontLitterSpace" /> 
 
-• `get` **fontLitterSpace**(): `number` <Badge type="tip" text="other" />
+• `get` **fontLitterSpace**(): `number` <Badge type="tip" text="client" />
 
 获取字体间距
 
@@ -206,7 +205,7 @@ ___
 
 ### fontSize <Score text="fontSize" /> 
 
-• `get` **fontSize**(): `number` <Badge type="tip" text="other" />
+• `get` **fontSize**(): `number` <Badge type="tip" text="client" />
 
 获取字体大小
 
@@ -217,7 +216,7 @@ ___
 
 返回字体的大小
 
-• `set` **fontSize**(`InSize`): `void` <Badge type="tip" text="other" />
+• `set` **fontSize**(`InSize`): `void` <Badge type="tip" text="client" />
 
 设置字体大小
 
@@ -233,7 +232,7 @@ ___
 
 ### glyph <Score text="glyph" /> 
 
-• `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="other" />
+• `get` **glyph**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <Badge type="tip" text="client" />
 
 获取字体字形
 
@@ -244,7 +243,7 @@ ___
 
 字体字形
 
-• `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="other" />
+• `set` **glyph**(`inGlyph`): `void` <Badge type="tip" text="client" />
 
 设置字体字形
 
@@ -259,7 +258,7 @@ ___
 
 ### lineHeightPercentage <Score text="lineHeightPercentage" /> 
 
-• `get` **lineHeightPercentage**(): `number` <Badge type="tip" text="other" />
+• `get` **lineHeightPercentage**(): `number` <Badge type="tip" text="client" />
 
 获取行高系数
 
@@ -270,7 +269,7 @@ ___
 
 行高系数
 
-• `set` **lineHeightPercentage**(`inValue`): `void` <Badge type="tip" text="other" />
+• `set` **lineHeightPercentage**(`inValue`): `void` <Badge type="tip" text="client" />
 
 设置行高系数
 
@@ -285,7 +284,7 @@ ___
 
 ### outlineColor <Score text="outlineColor" /> 
 
-• `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **outlineColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取字体描边颜色
 
@@ -296,7 +295,7 @@ ___
 
 字体描边颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="other" />
+• `set` **outlineColor**(`inOutlineColor`): `void` <Badge type="tip" text="client" />
 
 设置字体描边颜色
 
@@ -314,7 +313,7 @@ ___
 
 ### outlineSize <Score text="outlineSize" /> 
 
-• `get` **outlineSize**(): `number` <Badge type="tip" text="other" />
+• `get` **outlineSize**(): `number` <Badge type="tip" text="client" />
 
 获取字体描边宽度
 
@@ -325,7 +324,7 @@ ___
 
 字体描边宽度
 
-• `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="other" />
+• `set` **outlineSize**(`inOutlineSize`): `void` <Badge type="tip" text="client" />
 
 设置字体描边宽度
 
@@ -340,7 +339,7 @@ ___
 
 ### shadowColor <Score text="shadowColor" /> 
 
-• `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `get` **shadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 设置字体阴影颜色
 
@@ -351,7 +350,7 @@ ___
 
 阴影颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="other" />
+• `set` **shadowColor**(`inShadowColor`): `void` <Badge type="tip" text="client" />
 
 获取字体阴影颜色
 
@@ -367,7 +366,7 @@ ___
 
 ### shadowOffset <Score text="shadowOffset" /> 
 
-• `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **shadowOffset**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取字体阴影颜色
 
@@ -378,7 +377,7 @@ ___
 
 字体阴影颜色，Type.LinearColor类型，数据范围0~1
 
-• `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="other" />
+• `set` **shadowOffset**(`inOffset`): `void` <Badge type="tip" text="client" />
 
 设置字体阴影偏移
 
@@ -393,7 +392,7 @@ ___
 
 ### strikethroughEnable <Score text="strikethroughEnable" /> 
 
-• `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **strikethroughEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否开启字体删除线
 
@@ -404,7 +403,7 @@ ___
 
 是否开启字体删除线
 
-• `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="other" />
+• `set` **strikethroughEnable**(`inEnableStrikethrough`): `void` <Badge type="tip" text="client" />
 
 设置是否开启字体删除线
 
@@ -420,7 +419,7 @@ ___
 
 ### text <Score text="text" /> 
 
-• `get` **text**(): `string` <Badge type="tip" text="other" />
+• `get` **text**(): `string` <Badge type="tip" text="client" />
 
 获取当前的文本内容
 
@@ -431,7 +430,7 @@ ___
 
 返回当前的文本内容
 
-• `set` **text**(`inText`): `void` <Badge type="tip" text="other" />
+• `set` **text**(`inText`): `void` <Badge type="tip" text="client" />
 
 设置文本内容
 
@@ -447,7 +446,7 @@ ___
 
 ### textAlign <Score text="textAlign" /> 
 
-• `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
+• `get` **textAlign**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="client" />
 
 获取字体对齐方式
 
@@ -458,7 +457,7 @@ ___
 
 字体对齐方式
 
-• `set` **textAlign**(`inTextJustify`): `void` <Badge type="tip" text="other" />
+• `set` **textAlign**(`inTextJustify`): `void` <Badge type="tip" text="client" />
 
 设置字体对齐方式
 
@@ -490,7 +489,7 @@ ___
 
 ### textHorizontalLayout <Score text="textHorizontalLayout" /> 
 
-• `get` **textHorizontalLayout**(): [`UITextHorizontalLayout`](../enums/UI.UITextHorizontalLayout.md) <Badge type="tip" text="other" />
+• `get` **textHorizontalLayout**(): [`UITextHorizontalLayout`](../enums/UI.UITextHorizontalLayout.md) <Badge type="tip" text="client" />
 
 获取当前字体的水平显示方式
 
@@ -501,7 +500,7 @@ ___
 
 返回字体的水平显示方式
 
-• `set` **textHorizontalLayout**(`inTextHorizontalLayout`): `void` <Badge type="tip" text="other" />
+• `set` **textHorizontalLayout**(`inTextHorizontalLayout`): `void` <Badge type="tip" text="client" />
 
 设置字体的水平显示方式
 
@@ -517,7 +516,7 @@ ___
 
 ### textJustification <Score text="textJustification" /> 
 
-• `get` **textJustification**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="other" />
+• `get` **textJustification**(): [`TextJustify`](../enums/UI.TextJustify.md) <Badge type="tip" text="client" />
 
 获取字体的对齐方式
 
@@ -528,7 +527,7 @@ ___
 
 返回字体的对齐方式
 
-• `set` **textJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
+• `set` **textJustification**(`inTextJustification`): `void` <Badge type="tip" text="client" />
 
 设置字体的对齐方式
 
@@ -544,7 +543,7 @@ ___
 
 ### textSingleHeight <Score text="textSingleHeight" /> 
 
-• `get` **textSingleHeight**(): `number` <Badge type="tip" text="other" />
+• `get` **textSingleHeight**(): `number` <Badge type="tip" text="client" />
 
 获取文本单行高度(文本单行的高度，与组件大小无关，受字体属性影响)
 
@@ -559,7 +558,7 @@ ___
 
 ### textVerticalAlign <Score text="textVerticalAlign" /> 
 
-• `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
+• `get` **textVerticalAlign**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="client" />
 
 获取字体垂直对齐方式
 
@@ -570,7 +569,7 @@ ___
 
 字体垂直对齐方式
 
-• `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="other" />
+• `set` **textVerticalAlign**(`inTextVerticalJustify`): `void` <Badge type="tip" text="client" />
 
 设置字体垂直对齐方式
 
@@ -586,7 +585,7 @@ ___
 
 ### textVerticalJustification <Score text="textVerticalJustification" /> 
 
-• `get` **textVerticalJustification**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="other" />
+• `get` **textVerticalJustification**(): [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) <Badge type="tip" text="client" />
 
 获取字体的垂直对齐方式
 
@@ -597,7 +596,7 @@ ___
 
 返回字体的垂直对齐方式
 
-• `set` **textVerticalJustification**(`inTextJustification`): `void` <Badge type="tip" text="other" />
+• `set` **textVerticalJustification**(`inTextJustification`): `void` <Badge type="tip" text="client" />
 
 设置字体的垂直对齐方式
 
@@ -612,7 +611,7 @@ ___
 
 ### underlineEnable <Score text="underlineEnable" /> 
 
-• `get` **underlineEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **underlineEnable**(): `boolean` <Badge type="tip" text="client" />
 
 返回是否开启字体下划线
 
@@ -623,7 +622,7 @@ ___
 
 获取是否开启字体下划线
 
-• `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="other" />
+• `set` **underlineEnable**(`inEnableUnderline`): `void` <Badge type="tip" text="client" />
 
 设置是否开启字体下划线
 
@@ -640,7 +639,7 @@ ___
 
 ### setFontColorByHex <Score text="setFontColorByHex" /> 
 
-• **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setFontColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置字体颜色,指定Hex的颜色文本设定颜色 #05050505
 
@@ -656,7 +655,7 @@ ___
 
 ### setFontColorDecimal <Score text="setFontColorDecimal" /> 
 
-• **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setFontColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置字体颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -675,7 +674,7 @@ ___
 
 ### setOutlineColorByHex <Score text="setOutlineColorByHex" /> 
 
-• **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setOutlineColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置当前的描边颜色，指定描边颜色设定颜色 #05050505
 
@@ -691,7 +690,7 @@ ___
 
 ### setOutlineColorDecimal <Score text="setOutlineColorDecimal" /> 
 
-• **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setOutlineColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置当前的描边颜色,指定R、G、B、A设置颜色 0 ~255
 
@@ -710,7 +709,7 @@ ___
 
 ### setShadowColorByHex <Score text="setShadowColorByHex" /> 
 
-• **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="other" />
+• **setShadowColorByHex**(`inHexString`): `void` <Badge type="tip" text="client" />
 
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果,指定Hex的颜色文本设定颜色 #05050505
 
@@ -726,7 +725,7 @@ ___
 
 ### setShadowColorDecimal <Score text="setShadowColorDecimal" /> 
 
-• **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="other" />
+• **setShadowColorDecimal**(`R`, `G`, `B`, `A`): `void` <Badge type="tip" text="client" />
 
 设置字体的阴影颜色,Shadow Offset必须设值才能看到效果, 指定R、G、B、A设置颜色 0 ~255
 
@@ -745,7 +744,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`TextBlock`](UI.TextBlock.md) <Badge type="tip" text="client" />
 
 创建 TextBlock 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

@@ -26,14 +26,14 @@ MONETIZATION
 | Methods |
 | :-----|
 | **[getArkBalance](Service.PurchaseService.md#getarkbalance)**(): `void` <br> 获取Ark币余额|
-| **[placeOrder](Service.PurchaseService.md#placeorder)**(`string`, `number`, `[placeOrder](Service.PurchaseService.md#placeorder)Result`): `void` <br> 下单指定数量的指定商品|
+| **[placeOrder](Service.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](Service.PurchaseService.md#placeorder)Result`): `void` <br> 下单指定数量的指定商品|
 | **[getInstance](Service.PurchaseService.md#getinstance)**(): [`PurchaseService`](Service.PurchaseService.md) <br> 获取应用内购管理器全局实例|
 
 ## Accessors
 
 ### onArkBalanceUpdated <Score text="onArkBalanceUpdated" /> 
 
-• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <Badge type="tip" text="other" />
+• `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Service.Service.md#onarkbalanceupdated)\> <Badge type="tip" text="client" />
 
 获取Ark币余额更新的委托
 
@@ -54,7 +54,7 @@ ___
 
 ### onOrderDelivered <Score text="onOrderDelivered" /> 
 
-• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <Badge type="tip" text="other" />
+• `get` **onOrderDelivered**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Service.Service.md#onorderdelivered)\> <Badge type="tip" text="server" />
 
 获取订单发货的委托
 
@@ -76,7 +76,7 @@ ___
 
 ### getArkBalance <Score text="getArkBalance" /> 
 
-• **getArkBalance**(): `void` <Badge type="tip" text="other" />
+• **getArkBalance**(): `void` <Badge type="tip" text="client" />
 
 获取Ark币余额
 
@@ -92,7 +92,7 @@ ___
 
 ### placeOrder <Score text="placeOrder" /> 
 
-• **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="other" />
+• **placeOrder**(`commodityId`, `amount`, `placeOrderResult`): `void` <Badge type="tip" text="client" />
 
 下单指定数量的指定商品
 
@@ -116,7 +116,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`PurchaseService`](Service.PurchaseService.md) 
 
 获取应用内购管理器全局实例
 

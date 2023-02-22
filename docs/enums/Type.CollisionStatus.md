@@ -12,10 +12,10 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[FromParent](Type.CollisionStatus.md#fromparent)** = ``0`` <br> 跟随父节点|
-| **[Off](Type.CollisionStatus.md#off)** = ``2`` <br> 关|
-| **[On](Type.CollisionStatus.md#on)** = ``1`` <br> 开|
-| **[QueryOnly](Type.CollisionStatus.md#queryonly)** = ``3`` <br> 关|
+| **[FromParent](Type.CollisionStatus.md#fromparent)** = ``0`` <br> |
+| **[Off](Type.CollisionStatus.md#off)** = ``2`` <br> |
+| **[On](Type.CollisionStatus.md#on)** = ``1`` <br> |
+| **[QueryOnly](Type.CollisionStatus.md#queryonly)** = ``3`` <br> |
 
 ## Enumeration Members
 

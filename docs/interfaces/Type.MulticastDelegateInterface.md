@@ -25,15 +25,15 @@ SCRIPITING
 
 | Methods |
 | :-----|
-| **[add](Type.MulticastDelegateInterface.md#add)**(`T`): `void` <br> 绑定代理函数|
-| **[broadcast](Type.MulticastDelegateInterface.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数|
-| **[remove](Type.MulticastDelegateInterface.md#remove)**(`T`): `void` <br> 删除代理函数|
+| **[add](Type.MulticastDelegateInterface.md#add)**(`func`: `T`): `void` <br> 绑定代理函数|
+| **[broadcast](Type.MulticastDelegateInterface.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void` <br> 广播通知代理函数|
+| **[remove](Type.MulticastDelegateInterface.md#remove)**(`func`: `T`): `void` <br> 删除代理函数|
 
 ## Methods
 
 ### add <Score text="add" /> 
 
-• **add**(`func`): `void` <Badge type="tip" text="other" />
+• **add**(`func`): `void` 
 
 绑定代理函数
 
@@ -49,7 +49,7 @@ ___
 
 ### broadcast <Score text="broadcast" /> 
 
-• **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
+• **broadcast**(`...arg`): `void` 
 
 广播通知代理函数
 
@@ -65,7 +65,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`func`): `void` <Badge type="tip" text="other" />
+• **remove**(`func`): `void` 
 
 删除代理函数
 

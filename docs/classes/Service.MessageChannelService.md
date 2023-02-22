@@ -33,16 +33,16 @@ Service.MessageChannelService.getInstance().sendTo(toWhom, message);
 
 | Methods |
 | :-----|
-| **[registerAction](Service.MessageChannelService.md#registeraction)**(`string`, `any`, (`data`: `string`) => `void`): `void` <br> 注册需要收到消息的action以及对应要调用的回调函数，通道会识别包含该action的消息并调用对应的回调函数|
-| **[send](Service.MessageChannelService.md#send)**(`string`): `void` <br> 发送消息到通道上，将消息发送到通道，所有注册了该消息action的端才能收到该消息|
-| **[sendTo](Service.MessageChannelService.md#sendto)**([`MessageChannelReceiver`](../enums/Service.MessageChannelReceiver.md), `string`): `void` <br> 发送消息给指定对象，将消息发送给指定对象，对方无需提前注册|
+| **[registerAction](Service.MessageChannelService.md#registeraction)**(`action`: `string`, `caller`: `any`, `onCall`: (`data`: `string`) => `void`): `void` <br> 注册需要收到消息的action以及对应要调用的回调函数，通道会识别包含该action的消息并调用对应的回调函数|
+| **[send](Service.MessageChannelService.md#send)**(`message`: `string`): `void` <br> 发送消息到通道上，将消息发送到通道，所有注册了该消息action的端才能收到该消息|
+| **[sendTo](Service.MessageChannelService.md#sendto)**(`toWhom`: [`MessageChannelReceiver`](../enums/Service.MessageChannelReceiver.md), `message`: `string`): `void` <br> 发送消息给指定对象，将消息发送给指定对象，对方无需提前注册|
 | **[getInstance](Service.MessageChannelService.md#getinstance)**(): [`MessageChannelService`](Service.MessageChannelService.md) <br> 获取API实例进行调用|
 
 ## Methods
 
 ### registerAction <Score text="registerAction" /> 
 
-• **registerAction**(`action`, `caller`, `onCall`): `void` <Badge type="tip" text="other" />
+• **registerAction**(`action`, `caller`, `onCall`): `void` <Badge type="tip" text="client" />
 
 注册需要收到消息的action以及对应要调用的回调函数，通道会识别包含该action的消息并调用对应的回调函数
 
@@ -73,7 +73,7 @@ ___
 
 ### send <Score text="send" /> 
 
-• **send**(`message`): `void` <Badge type="tip" text="other" />
+• **send**(`message`): `void` <Badge type="tip" text="client" />
 
 发送消息到通道上，将消息发送到通道，所有注册了该消息action的端才能收到该消息
 
@@ -104,7 +104,7 @@ ___
 
 ### sendTo <Score text="sendTo" /> 
 
-• **sendTo**(`toWhom`, `message`): `void` <Badge type="tip" text="other" />
+• **sendTo**(`toWhom`, `message`): `void` <Badge type="tip" text="client" />
 
 发送消息给指定对象，将消息发送给指定对象，对方无需提前注册
 
@@ -134,7 +134,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`MessageChannelService`](Service.MessageChannelService.md) 
 
 获取API实例进行调用
 

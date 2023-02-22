@@ -12,10 +12,10 @@ INPUT
 
 | Properties |
 | :-----|
-| **[onTouch](Gameplay.TouchInput.md#ontouch)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 触摸事件|
-| **[onTouchBegin](Gameplay.TouchInput.md#ontouchbegin)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 触摸开始事件|
-| **[onTouchEnd](Gameplay.TouchInput.md#ontouchend)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 触摸结束事件|
-| **[onTouchMove](Gameplay.TouchInput.md#ontouchmove)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 触摸移动事件|
+| **[onTouch](Gameplay.TouchInput.md#ontouch)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 获取屏幕手指数的数组|
+| **[onTouchBegin](Gameplay.TouchInput.md#ontouchbegin)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 获取屏幕手指数的数组|
+| **[onTouchEnd](Gameplay.TouchInput.md#ontouchend)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 获取屏幕手指数的数组|
+| **[onTouchMove](Gameplay.TouchInput.md#ontouchmove)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`index`: `number`, `location`: [`Vector2`](Type.Vector2.md), `touchType`: [`TouchInputType`](../enums/Gameplay.TouchInputType.md)) => `void`\> <br> 获取屏幕手指数的数组|
 
 | Methods |
 | :-----|
@@ -58,7 +58,7 @@ ___
 
 ### getTouchVectorArray <Score text="getTouchVectorArray" /> 
 
-• **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="other" />
+• **getTouchVectorArray**(): [`Vector`](Type.Vector.md)[] <Badge type="tip" text="client" />
 
 获取屏幕手指数的数组
 
@@ -73,7 +73,7 @@ ___
 
 ### setPlayerController <Score text="setPlayerController" /> 
 
-• **setPlayerController**(): `void` <Badge type="tip" text="other" />
+• **setPlayerController**(): `void` <Badge type="tip" text="client" />
 
 设置玩家控制器，使用前需调用一次
 

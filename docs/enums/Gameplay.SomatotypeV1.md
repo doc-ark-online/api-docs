@@ -12,9 +12,9 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[HumanoidV1](Gameplay.SomatotypeV1.md#humanoidv1)** = ``0`` <br> 基础人形男|
-| **[HumanoidV1Eggy](Gameplay.SomatotypeV1.md#humanoidv1eggy)** = ``2`` <br> 基础人形蛋仔|
-| **[HumanoidV1Girl](Gameplay.SomatotypeV1.md#humanoidv1girl)** = ``1`` <br> 基础人形女|
+| **[HumanoidV1](Gameplay.SomatotypeV1.md#humanoidv1)** = ``0`` <br> |
+| **[HumanoidV1Eggy](Gameplay.SomatotypeV1.md#humanoidv1eggy)** = ``2`` <br> |
+| **[HumanoidV1Girl](Gameplay.SomatotypeV1.md#humanoidv1girl)** = ``1`` <br> |
 
 ## Enumeration Members
 

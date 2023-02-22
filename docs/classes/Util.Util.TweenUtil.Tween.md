@@ -20,9 +20,9 @@ UTILITY
 
 | Methods |
 | :-----|
-| **[chain](Util.Util.TweenUtil.Tween.md#chain)**([`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[]): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间|
-| **[delay](Util.Util.TweenUtil.Tween.md#delay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 延迟启动|
-| **[duration](Util.Util.TweenUtil.Tween.md#duration)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置完成补间需要的时间（周期）|
+| **[chain](Util.Util.TweenUtil.Tween.md#chain)**(`...tweens`: [`Tween`](Util.Util.TweenUtil.Tween.md)<`any`\>[]): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间|
+| **[delay](Util.Util.TweenUtil.Tween.md#delay)**(`amount?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 延迟启动|
+| **[duration](Util.Util.TweenUtil.Tween.md#duration)**(`d?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置完成补间需要的时间（周期）|
 | **[easing](Util.Util.TweenUtil.Tween.md#easing)**(`[easing](Util.Util.TweenUtil.Tween.md#easing)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置缓动函数|
 | **[end](Util.Util.TweenUtil.Tween.md#end)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 将当前补间置为目标状态|
 | **[getID](Util.Util.TweenUtil.Tween.md#getid)**(): `number` <br> 获取当前补间对象的ID|
@@ -30,20 +30,20 @@ UTILITY
 | **[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)**(`[interpolation](Util.Util.TweenUtil.Tween.md#interpolation)Function?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置插值函数|
 | **[isPaused](Util.Util.TweenUtil.Tween.md#ispaused)**(): `boolean` <br> 获取当前补间对象是否为暂停状态。|
 | **[isPlaying](Util.Util.TweenUtil.Tween.md#isplaying)**(): `boolean` <br> 获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。|
-| **[onComplete](Util.Util.TweenUtil.Tween.md#oncomplete)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入|
-| **[onRepeat](Util.Util.TweenUtil.Tween.md#onrepeat)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入|
-| **[onStart](Util.Util.TweenUtil.Tween.md#onstart)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 在补间开始之前触发，补间对象作为第一个参数传入|
-| **[onStop](Util.Util.TweenUtil.Tween.md#onstop)**((`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入|
-| **[onUpdate](Util.Util.TweenUtil.Tween.md#onupdate)**((`object`: `T`, `elapsed`: `number`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间更新时触发，补间对象作为第一个参数传入|
-| **[pause](Util.Util.TweenUtil.Tween.md#pause)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 暂停补间，可以指定暂停生效时间，默认为当前时间|
-| **[repeat](Util.Util.TweenUtil.Tween.md#repeat)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复次数, 补间的总次数将是重复参数加上一个初始补间|
-| **[repeatDelay](Util.Util.TweenUtil.Tween.md#repeatdelay)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复补间时的延迟启动时间|
-| **[resume](Util.Util.TweenUtil.Tween.md#resume)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 恢复补间，可以指定恢复生效时间，默认为当前时间|
-| **[start](Util.Util.TweenUtil.Tween.md#start)**(`number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 启动补间，可以指定启动生效时间，默认为当前时间|
+| **[onComplete](Util.Util.TweenUtil.Tween.md#oncomplete)**(`callback?`: (`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入|
+| **[onRepeat](Util.Util.TweenUtil.Tween.md#onrepeat)**(`callback?`: (`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入|
+| **[onStart](Util.Util.TweenUtil.Tween.md#onstart)**(`callback?`: (`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 在补间开始之前触发，补间对象作为第一个参数传入|
+| **[onStop](Util.Util.TweenUtil.Tween.md#onstop)**(`callback?`: (`object`: `T`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入|
+| **[onUpdate](Util.Util.TweenUtil.Tween.md#onupdate)**(`callback?`: (`object`: `T`, `elapsed`: `number`) => `void`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 每次补间更新时触发，补间对象作为第一个参数传入|
+| **[pause](Util.Util.TweenUtil.Tween.md#pause)**(`time?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 暂停补间，可以指定暂停生效时间，默认为当前时间|
+| **[repeat](Util.Util.TweenUtil.Tween.md#repeat)**(`times?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复次数, 补间的总次数将是重复参数加上一个初始补间|
+| **[repeatDelay](Util.Util.TweenUtil.Tween.md#repeatdelay)**(`amount?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置重复补间时的延迟启动时间|
+| **[resume](Util.Util.TweenUtil.Tween.md#resume)**(`time?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 恢复补间，可以指定恢复生效时间，默认为当前时间|
+| **[start](Util.Util.TweenUtil.Tween.md#start)**(`time?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 启动补间，可以指定启动生效时间，默认为当前时间|
 | **[stop](Util.Util.TweenUtil.Tween.md#stop)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出|
 | **[stopChainedTweens](Util.Util.TweenUtil.Tween.md#stopchainedtweens)**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 停止所有链接到当前补间的补间对象|
-| **[to](Util.Util.TweenUtil.Tween.md#to)**([`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops), `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间|
-| **[update](Util.Util.TweenUtil.Tween.md#update)**(`number`, `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
+| **[to](Util.Util.TweenUtil.Tween.md#to)**(`properties`: [`UnknownProps`](../modules/Util.TweenUtil.md#unknownprops), `duration?`: `number`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置补间的目标状态和完成补间需要的时间|
+| **[update](Util.Util.TweenUtil.Tween.md#update)**(`time?`: `number`, `autoStart?`: `boolean`): `boolean` <br> 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。|
 | **[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)**(`[yoyo](Util.Util.TweenUtil.Tween.md#yoyo)?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <br> 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。|
 
 补间构造函数
@@ -68,7 +68,7 @@ UTILITY
 
 ### chain <Score text="chain" /> 
 
-• **chain**(`...tweens`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **chain**(`...tweens`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 将（多个）补间对象链接到当前补间对象。在当前补间结束的时候立即启动链接的补间
 
@@ -102,7 +102,7 @@ ___
 
 ### delay <Score text="delay" /> 
 
-• **delay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **delay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 延迟启动
 
@@ -123,7 +123,7 @@ ___
 
 ### duration <Score text="duration" /> 
 
-• **duration**(`d?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **duration**(`d?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置完成补间需要的时间（周期）
 
@@ -144,7 +144,7 @@ ___
 
 ### easing <Score text="easing" /> 
 
-• **easing**(`easingFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **easing**(`easingFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置缓动函数
 
@@ -165,7 +165,7 @@ ___
 
 ### end <Score text="end" /> 
 
-• **end**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **end**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 将当前补间置为目标状态
 
@@ -180,7 +180,7 @@ ___
 
 ### getID <Score text="getID" /> 
 
-• **getID**(): `number` <Badge type="tip" text="other" />
+• **getID**(): `number` 
 
 获取当前补间对象的ID
 
@@ -195,7 +195,7 @@ ___
 
 ### group <Score text="group" /> 
 
-• **group**(`group?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **group**(`group?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置当前补间对象的分组
 
@@ -216,7 +216,7 @@ ___
 
 ### interpolation <Score text="interpolation" /> 
 
-• **interpolation**(`interpolationFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **interpolation**(`interpolationFunction?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置插值函数
 
@@ -237,7 +237,7 @@ ___
 
 ### isPaused <Score text="isPaused" /> 
 
-• **isPaused**(): `boolean` <Badge type="tip" text="other" />
+• **isPaused**(): `boolean` 
 
 获取当前补间对象是否为暂停状态。
 
@@ -252,7 +252,7 @@ ___
 
 ### isPlaying <Score text="isPlaying" /> 
 
-• **isPlaying**(): `boolean` <Badge type="tip" text="other" />
+• **isPlaying**(): `boolean` 
 
 获取当前补间对象是否在补间过程。没结束补间的情况下，即使暂停，也会返回true。
 
@@ -267,7 +267,7 @@ ___
 
 ### onComplete <Score text="onComplete" /> 
 
-• **onComplete**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **onComplete**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 当补间正常完成（即不停止）时触发，补间对象作为第一个参数传入
 
@@ -288,7 +288,7 @@ ___
 
 ### onRepeat <Score text="onRepeat" /> 
 
-• **onRepeat**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **onRepeat**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 每次补间完成并即将开始下一次重复时触发，补间对象作为第一个参数传入
 
@@ -309,7 +309,7 @@ ___
 
 ### onStart <Score text="onStart" /> 
 
-• **onStart**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **onStart**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 在补间开始之前触发，补间对象作为第一个参数传入
 
@@ -337,7 +337,7 @@ ___
 
 ### onStop <Score text="onStop" /> 
 
-• **onStop**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **onStop**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 当通过 stop() 显式停止补间时触发，补间对象作为第一个参数传入
 
@@ -365,7 +365,7 @@ ___
 
 ### onUpdate <Score text="onUpdate" /> 
 
-• **onUpdate**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **onUpdate**(`callback?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 每次补间更新时触发，补间对象作为第一个参数传入
 
@@ -392,7 +392,7 @@ ___
 
 ### pause <Score text="pause" /> 
 
-• **pause**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **pause**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 暂停补间，可以指定暂停生效时间，默认为当前时间
 
@@ -419,7 +419,7 @@ ___
 
 ### repeat <Score text="repeat" /> 
 
-• **repeat**(`times?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **repeat**(`times?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置重复次数, 补间的总次数将是重复参数加上一个初始补间
 
@@ -452,7 +452,7 @@ ___
 
 ### repeatDelay <Score text="repeatDelay" /> 
 
-• **repeatDelay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **repeatDelay**(`amount?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置重复补间时的延迟启动时间
 
@@ -473,7 +473,7 @@ ___
 
 ### resume <Score text="resume" /> 
 
-• **resume**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **resume**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 恢复补间，可以指定恢复生效时间，默认为当前时间
 
@@ -500,7 +500,7 @@ ___
 
 ### start <Score text="start" /> 
 
-• **start**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **start**(`time?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 启动补间，可以指定启动生效时间，默认为当前时间
 
@@ -527,7 +527,7 @@ ___
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **stop**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 停止补间，停止一个从未开始或已经停止的补间没有任何效果。 没有错误被抛出
 
@@ -542,7 +542,7 @@ ___
 
 ### stopChainedTweens <Score text="stopChainedTweens" /> 
 
-• **stopChainedTweens**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **stopChainedTweens**(): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 停止所有链接到当前补间的补间对象
 
@@ -557,7 +557,7 @@ ___
 
 ### to <Score text="to" /> 
 
-• **to**(`properties`, `duration?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **to**(`properties`, `duration?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置补间的目标状态和完成补间需要的时间
 
@@ -579,7 +579,7 @@ ___
 
 ### update <Score text="update" /> 
 
-• **update**(`time?`, `autoStart?`): `boolean` <Badge type="tip" text="other" />
+• **update**(`time?`, `autoStart?`): `boolean` 
 
 更新当前的补间。一般来说会由所属的补间组自动调用，无需手动调用。
 
@@ -601,7 +601,7 @@ ___
 
 ### yoyo <Score text="yoyo" /> 
 
-• **yoyo**(`yoyo?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> <Badge type="tip" text="other" />
+• **yoyo**(`yoyo?`): [`Tween`](Util.Util.TweenUtil.Tween.md)<`T`\> 
 
 设置往复（悠悠球效果）。这个功能只有在独自使用 repeat 时才有效果。
 启用后，补间的行为将像悠悠球一样，会在起始值和结束值之间往复，而不是从头开始重复。

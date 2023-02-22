@@ -18,7 +18,7 @@ UTILITY
 
 ### nextID <Score text="nextID" /> 
 
-• `Static` **nextID**(): `number` <Badge type="tip" text="other" />
+• `Static` **nextID**(): `number` 
 
 获取下一个ID
 

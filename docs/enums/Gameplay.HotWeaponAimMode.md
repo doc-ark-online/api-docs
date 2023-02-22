@@ -12,8 +12,8 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[FirstPerson](Gameplay.HotWeaponAimMode.md#firstperson)** = ``0`` <br> 第一人称|
-| **[ThirdPerson](Gameplay.HotWeaponAimMode.md#thirdperson)** = ``1`` <br> 第三人称|
+| **[FirstPerson](Gameplay.HotWeaponAimMode.md#firstperson)** = ``0`` <br> |
+| **[ThirdPerson](Gameplay.HotWeaponAimMode.md#thirdperson)** = ``1`` <br> |
 
 ## Enumeration Members
 

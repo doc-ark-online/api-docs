@@ -12,9 +12,9 @@ DATA
 
 | Enumeration Members |
 | :-----|
-| **[Client](Type.NetStatus.md#client)** = ``1`` <br> 客户端|
-| **[Server](Type.NetStatus.md#server)** = ``0`` <br> 服务端|
-| **[ServerAndClient](Type.NetStatus.md#serverandclient)** = ``2`` <br> 服务器创建，同步到客户端|
+| **[Client](Type.NetStatus.md#client)** = ``1`` <br> |
+| **[Server](Type.NetStatus.md#server)** = ``0`` <br> |
+| **[ServerAndClient](Type.NetStatus.md#serverandclient)** = ``2`` <br> |
 
 ## Enumeration Members
 

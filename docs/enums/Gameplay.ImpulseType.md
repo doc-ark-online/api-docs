@@ -12,8 +12,8 @@ PHYSICS
 
 | Enumeration Members |
 | :-----|
-| **[Absolute](Gameplay.ImpulseType.md#absolute)** = ``0`` <br> 绝对冲量，为冲量功能对象设定一个绝对方向的冲量值，|
-| **[Relative](Gameplay.ImpulseType.md#relative)** = ``1`` <br> 相对冲量，为冲量功能对象设定一个相对方向的冲量值，当被施力对象与冲量功能对象发生碰撞时，|
+| **[Absolute](Gameplay.ImpulseType.md#absolute)** = ``0`` <br> |
+| **[Relative](Gameplay.ImpulseType.md#relative)** = ``1`` <br> |
 
 ## Enumeration Members
 

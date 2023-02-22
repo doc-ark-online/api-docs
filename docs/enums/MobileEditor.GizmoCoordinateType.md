@@ -12,19 +12,19 @@ gizmo坐标轴类型
 
 | Enumeration Members |
 | :-----|
-| **[None](MobileEditor.GizmoCoordinateType.md#none)** = ``12`` <br> 当前未选中任何轴|
-| **[RotatorX](MobileEditor.GizmoCoordinateType.md#rotatorx)** = ``3`` <br> 旋转坐标轴的X轴|
-| **[RotatorY](MobileEditor.GizmoCoordinateType.md#rotatory)** = ``4`` <br> 旋转坐标轴的Y轴|
-| **[RotatorZ](MobileEditor.GizmoCoordinateType.md#rotatorz)** = ``5`` <br> 旋转坐标轴的Z轴|
-| **[ScaleX](MobileEditor.GizmoCoordinateType.md#scalex)** = ``6`` <br> 缩放坐标轴的X轴|
-| **[ScaleY](MobileEditor.GizmoCoordinateType.md#scaley)** = ``7`` <br> 缩放坐标轴的Y轴|
-| **[ScaleZ](MobileEditor.GizmoCoordinateType.md#scalez)** = ``8`` <br> 缩放坐标轴的Z轴|
-| **[TransformX](MobileEditor.GizmoCoordinateType.md#transformx)** = ``0`` <br> 移动坐标轴的X轴 box|
-| **[TransformXY](MobileEditor.GizmoCoordinateType.md#transformxy)** = ``9`` <br> 平移坐标轴的XY轴平面|
-| **[TransformXZ](MobileEditor.GizmoCoordinateType.md#transformxz)** = ``10`` <br> 平移坐标轴的XZ轴平面|
-| **[TransformY](MobileEditor.GizmoCoordinateType.md#transformy)** = ``1`` <br> 移动坐标轴的Y轴 box|
-| **[TransformYZ](MobileEditor.GizmoCoordinateType.md#transformyz)** = ``11`` <br> 平移坐标轴的YZ轴平面|
-| **[TransformZ](MobileEditor.GizmoCoordinateType.md#transformz)** = ``2`` <br> 移动坐标轴的Z轴 box|
+| **[None](MobileEditor.GizmoCoordinateType.md#none)** = ``12`` <br> |
+| **[RotatorX](MobileEditor.GizmoCoordinateType.md#rotatorx)** = ``3`` <br> |
+| **[RotatorY](MobileEditor.GizmoCoordinateType.md#rotatory)** = ``4`` <br> |
+| **[RotatorZ](MobileEditor.GizmoCoordinateType.md#rotatorz)** = ``5`` <br> |
+| **[ScaleX](MobileEditor.GizmoCoordinateType.md#scalex)** = ``6`` <br> |
+| **[ScaleY](MobileEditor.GizmoCoordinateType.md#scaley)** = ``7`` <br> |
+| **[ScaleZ](MobileEditor.GizmoCoordinateType.md#scalez)** = ``8`` <br> |
+| **[TransformX](MobileEditor.GizmoCoordinateType.md#transformx)** = ``0`` <br> |
+| **[TransformXY](MobileEditor.GizmoCoordinateType.md#transformxy)** = ``9`` <br> |
+| **[TransformXZ](MobileEditor.GizmoCoordinateType.md#transformxz)** = ``10`` <br> |
+| **[TransformY](MobileEditor.GizmoCoordinateType.md#transformy)** = ``1`` <br> |
+| **[TransformYZ](MobileEditor.GizmoCoordinateType.md#transformyz)** = ``11`` <br> |
+| **[TransformZ](MobileEditor.GizmoCoordinateType.md#transformz)** = ``2`` <br> |
 
 ## Enumeration Members
 

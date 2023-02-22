@@ -26,17 +26,17 @@ SCRIPITING
 
 | Methods |
 | :-----|
-| **[add](Type.Action.md#add)**(`Function`, `any`): `void` <br> 添加一个监听方法(有重复过滤)|
-| **[call](Type.Action.md#call)**(`any`): `void` <br> 执行|
+| **[add](Type.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `void` <br> 添加一个监听方法(有重复过滤)|
+| **[call](Type.Action.md#call)**(`...params`: `any`): `void` <br> 执行|
 | **[clear](Type.Action.md#clear)**(): `void` <br> 清除所有监听|
-| **[includes](Type.Action.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法|
-| **[remove](Type.Action.md#remove)**(`Function`, `any`): `void` <br> 移除一个监听方法|
+| **[includes](Type.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean` <br> 判断是否包含某个监听方法|
+| **[remove](Type.Action.md#remove)**(`fn`: `Function`, `thisArg`: `any`): `void` <br> 移除一个监听方法|
 
 ## Accessors
 
 ### count <Score text="count" /> 
 
-• `get` **count**(): `number` <Badge type="tip" text="other" />
+• `get` **count**(): `number` 
 
 监听方法的数量
 
@@ -49,7 +49,7 @@ SCRIPITING
 
 ### add <Score text="add" /> 
 
-• **add**(`fn`, `thisArg?`): `void` <Badge type="tip" text="other" />
+• **add**(`fn`, `thisArg?`): `void` 
 
 添加一个监听方法(有重复过滤)
 
@@ -66,7 +66,7 @@ ___
 
 ### call <Score text="call" /> 
 
-• **call**(`...params`): `void` <Badge type="tip" text="other" />
+• **call**(`...params`): `void` 
 
 执行
 
@@ -82,7 +82,7 @@ ___
 
 ### clear <Score text="clear" /> 
 
-• **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` 
 
 清除所有监听
 
@@ -92,7 +92,7 @@ ___
 
 ### includes <Score text="includes" /> 
 
-• **includes**(`fn`, `thisArg`): `boolean` <Badge type="tip" text="other" />
+• **includes**(`fn`, `thisArg`): `boolean` 
 
 判断是否包含某个监听方法
 
@@ -114,7 +114,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`fn`, `thisArg`): `void` <Badge type="tip" text="other" />
+• **remove**(`fn`, `thisArg`): `void` 
 
 移除一个监听方法
 

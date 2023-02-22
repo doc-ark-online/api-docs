@@ -19,9 +19,7 @@ ANIMATIONS
 | Methods |
 | :-----|
 | **[play](Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
-| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:play()|
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
-| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> since:022 reason:不该暴露的接口 replacement:stop()|
 
 构造函数
 
@@ -39,7 +37,7 @@ ANIMATIONS
 
 ### play <Score text="play" /> 
 
-• **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` 
 
 播放这个姿态对象, 并返回执行结果
 
@@ -60,28 +58,9 @@ ANIMATIONS
 
 ___
 
-### playInternal <Score text="playInternal" /> 
-
-• `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason:不该暴露的接口 replacement:play()
-
-播放姿态的内部实现
-
-
-#### Returns
-
-`boolean`
-
-是否执行成功
-
-___
-
 ### stop <Score text="stop" /> 
 
-• **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` 
 
 停止这个姿态对象, 并返回执行结果
 
@@ -101,20 +80,3 @@ ___
 是否执行成功
 
 ___
-
-### stopInternal <Score text="stopInternal" /> 
-
-• **stopInternal**(): `boolean` <Badge type="tip" text="other" />
-
-**`Deprecated`**
-
-since:022 reason:不该暴露的接口 replacement:stop()
-
-停止姿态的内部实现
-
-
-#### Returns
-
-`boolean`
-
-是否执行成功

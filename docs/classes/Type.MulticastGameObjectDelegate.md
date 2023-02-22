@@ -12,15 +12,15 @@ SCRIPITING
 
 | Methods |
 | :-----|
-| **[add](Type.MulticastGameObjectDelegate.md#add)**(`GameObjectDelegateFuncType`): `void` <br> 添加回调函数|
-| **[broadcast](Type.MulticastGameObjectDelegate.md#broadcast)**(`GameObject`): `void` <br> 触发代理事件|
-| **[remove](Type.MulticastGameObjectDelegate.md#remove)**(`GameObjectDelegateFuncType`): `void` <br> 删除回调函数|
+| **[add](Type.MulticastGameObjectDelegate.md#add)**(`func`: `GameObjectDelegateFuncType`): `void` <br> 添加回调函数|
+| **[broadcast](Type.MulticastGameObjectDelegate.md#broadcast)**(`obj`: `GameObject`): `void` <br> 触发代理事件|
+| **[remove](Type.MulticastGameObjectDelegate.md#remove)**(`func`: `GameObjectDelegateFuncType`): `void` <br> 删除回调函数|
 
 ## Methods
 
 ### add <Score text="add" /> 
 
-• **add**(`func`): `void` <Badge type="tip" text="other" />
+• **add**(`func`): `void` 
 
 添加回调函数
 
@@ -36,7 +36,7 @@ ___
 
 ### broadcast <Score text="broadcast" /> 
 
-• **broadcast**(`obj`): `void` <Badge type="tip" text="other" />
+• **broadcast**(`obj`): `void` 
 
 触发代理事件
 
@@ -52,7 +52,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`func`): `void` <Badge type="tip" text="other" />
+• **remove**(`func`): `void` 
 
 删除回调函数
 

@@ -12,8 +12,8 @@ GAMEPLAY
 
 | Enumeration Members |
 | :-----|
-| **[LocationFixed](Gameplay.CameraLocationMode.md#locationfixed)** = ``0`` <br> 位置固定|
-| **[LocationFollow](Gameplay.CameraLocationMode.md#locationfollow)** = ``1`` <br> 位置跟随目标|
+| **[LocationFixed](Gameplay.CameraLocationMode.md#locationfixed)** = ``0`` <br> |
+| **[LocationFollow](Gameplay.CameraLocationMode.md#locationfollow)** = ``1`` <br> |
 
 ## Enumeration Members
 

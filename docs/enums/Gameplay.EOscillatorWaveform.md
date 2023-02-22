@@ -12,8 +12,8 @@ AVATAR
 
 | Enumeration Members |
 | :-----|
-| **[PerlinNoise](Gameplay.EOscillatorWaveform.md#perlinnoise)** = ``1`` <br> Perlin噪声|
-| **[SineWave](Gameplay.EOscillatorWaveform.md#sinewave)** = ``0`` <br> 正弦波|
+| **[PerlinNoise](Gameplay.EOscillatorWaveform.md#perlinnoise)** = ``1`` <br> |
+| **[SineWave](Gameplay.EOscillatorWaveform.md#sinewave)** = ``0`` <br> |
 
 ## Enumeration Members
 
