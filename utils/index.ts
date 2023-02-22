@@ -26,6 +26,7 @@ interface GroupsConfig {
 export function dealConfigSidebar() {
   const json = readJSONSync(`./docs/configs/groups.json`) as GroupsConfig
   const arr: DefaultTheme.SidebarGroup[] = []
+  let num = 0
   for (const typeObj in json) {
     const items: DefaultTheme.SidebarItem[] = []
     for (const key in json[typeObj]) {
@@ -35,6 +36,7 @@ export function dealConfigSidebar() {
       const item = json[typeObj][key]
       items.push(
         ...item.map((item) => {
+          num += 1
           return {
             text: item.name,
             link: '/' + item.file_path
@@ -42,13 +44,20 @@ export function dealConfigSidebar() {
         })
       )
     }
-    arr.push({
-      text: typeObj,
-      collapsible: true,
-      collapsed: true,
-      items: items
-    })
+    if (items.length > 0) {
+      arr.push({
+        text: typeObj,
+        collapsible: true,
+        collapsed: true,
+        items: items
+      })
+    }
   }
+  console.log('数量', num)
+  arr.forEach((item) => {
+    item.items.sort((a, b) => a.text.localeCompare(b.text))
+  })
+  arr.sort((a, b) => (a.text ?? '').localeCompare(b.text ?? ''))
   return arr
 }
 
