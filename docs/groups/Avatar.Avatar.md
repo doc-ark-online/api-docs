@@ -66,10 +66,10 @@ Avatar
 | Modules Type Aliases |
 | :-----|
 | **[Constructor](../modules/Gameplay.Gameplay.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 空的回调函数类型|
-| **[DecorationTuple](../modules/Gameplay.Gameplay.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Gameplay.Decoration.md), `Core.GameObject`] <br> 空的回调函数类型|
+| **[DecorationTuple](../modules/Gameplay.Gameplay.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 空的回调函数类型|
 | **[EmptyCallback](../modules/Gameplay.Gameplay.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
 | **[LoadAppearanceDataAllCompletedCallback](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[OnMovementStateChanged](../modules/Gameplay.Gameplay.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
+| **[OnMovementStateChanged](../modules/Gameplay.Gameplay.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
 | **[SetAppearanceDataCallback](../modules/Gameplay.Gameplay.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
 | **[StringCallback](../modules/Gameplay.Gameplay.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 | **[onAppearanceDataChanged](../modules/Gameplay.Gameplay.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|

@@ -90,48 +90,48 @@ Gameplay
 
 | Modules Functions |
 | :-----|
-| **[addOutlineEffect](../modules/Gameplay.Gameplay.md#addoutlineeffect)**(`obj`: `GameObject`, `OutlineColor?`: [`LinearColor`](../classes/Type.Type.LinearColor.md), `OutlineWidth?`: `number`, `OutlineDepthOffset?`: `number`, `OutlineClampValue?`: `number`, `considerCameraPosition?`: `boolean`, `outlineSilhouetteOnly?`: `boolean`): `void` <br> 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡|
-| **[angleCheck](../modules/Gameplay.Gameplay.md#anglecheck)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `StartDirection`: [`Vector`](../classes/Type.Type.Vector.md), `TargetLocation`: [`Vector`](../classes/Type.Type.Vector.md), `Angle`: `number`): `boolean` <br> 角度检查|
-| **[asyncFindPathToLocation](../modules/Gameplay.Gameplay.md#asyncfindpathtolocation)**(`startPos`: [`Vector`](../classes/Type.Type.Vector.md), `endPos`: [`Vector`](../classes/Type.Type.Vector.md)): [`Vector`](../classes/Type.Type.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
-| **[asyncGetCurrentPlayer](../modules/Gameplay.Gameplay.md#asyncgetcurrentplayer)**(): `Promise`<[`Player`](../classes/Gameplay.Gameplay.Player.md)\> <br> 异步获取当前玩家|
-| **[asyncGetPlayer](../modules/Gameplay.Gameplay.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](../classes/Gameplay.Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
-| **[boxOverlap](../modules/Gameplay.Gameplay.md#boxoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 矩形范围检测|
-| **[clearMoveTo](../modules/Gameplay.Gameplay.md#clearmoveto)**(`player`: [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md)): `void` <br> 导航停止|
-| **[cylinderOverlap](../modules/Gameplay.Gameplay.md#cylinderoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `Radius`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆柱范围检测|
-| **[getAllPlayers](../modules/Gameplay.Gameplay.md#getallplayers)**(): [`Player`](../classes/Gameplay.Gameplay.Player.md)[] <br> 当前所有Player|
-| **[getClickGameObjectByScene](../modules/Gameplay.Gameplay.md#getclickgameobjectbyscene)**(`SceneX`: `number`, `SceneY`: `number`, `Distance`: `number`, `multiTrace`: `boolean`, `onRay`: `boolean`): [`HitResult`](../classes/Gameplay.Gameplay.HitResult.md)[] <br> 获取点击屏幕位置的物体|
-| **[getCurrentPlayer](../modules/Gameplay.Gameplay.md#getcurrentplayer)**(): [`Player`](../classes/Gameplay.Gameplay.Player.md) <br> 获取当前玩家|
-| **[getPlayer](../modules/Gameplay.Gameplay.md#getplayer)**(`playerId`: `number`): [`Player`](../classes/Gameplay.Gameplay.Player.md) <br> 获取玩家|
-| **[getShootDir](../modules/Gameplay.Gameplay.md#getshootdir)**(`character`: [`Character`](../classes/Gameplay.Gameplay.Character.md), `startLoc`: [`Vector`](../classes/Type.Type.Vector.md), `distance?`: `number`): [`Vector`](../classes/Type.Type.Vector.md) <br> 获取某位置指向屏幕中心瞄准位置的向量|
-| **[lineTrace](../modules/Gameplay.Gameplay.md#linetrace)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Type.Vector.md), `multiTrace`: `boolean`, `debug`: `boolean`): [`HitResult`](../classes/Gameplay.Gameplay.HitResult.md)[] <br> 射线检测|
-| **[moveTo](../modules/Gameplay.Gameplay.md#moveto)**(`player`: [`CharacterBase`](../classes/Gameplay.Gameplay.CharacterBase.md), `Location`: [`Vector`](../classes/Type.Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
-| **[parabolicTrace](../modules/Gameplay.Gameplay.md#parabolictrace)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `Direction`: [`Vector`](../classes/Type.Type.Vector.md), `InitSpeed`: `number`, `Range`: `number`, `CapsuleRadius`: `number`, `IgnoreObjectTypes`: [`ObjectTypeQuery`](../enums/Gameplay.Gameplay.ObjectTypeQuery.md)[], `debug`: `boolean`): [`HitResult`](../classes/Gameplay.Gameplay.HitResult.md) <br> 抛物线检测|
+| **[addOutlineEffect](../modules/Gameplay.Gameplay.md#addoutlineeffect)**(`obj`: `GameObject`, `OutlineColor?`: [`LinearColor`](../classes/Type.LinearColor.md), `OutlineWidth?`: `number`, `OutlineDepthOffset?`: `number`, `OutlineClampValue?`: `number`, `considerCameraPosition?`: `boolean`, `outlineSilhouetteOnly?`: `boolean`): `void` <br> 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡|
+| **[angleCheck](../modules/Gameplay.Gameplay.md#anglecheck)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `StartDirection`: [`Vector`](../classes/Type.Vector.md), `TargetLocation`: [`Vector`](../classes/Type.Vector.md), `Angle`: `number`): `boolean` <br> 角度检查|
+| **[asyncFindPathToLocation](../modules/Gameplay.Gameplay.md#asyncfindpathtolocation)**(`startPos`: [`Vector`](../classes/Type.Vector.md), `endPos`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
+| **[asyncGetCurrentPlayer](../modules/Gameplay.Gameplay.md#asyncgetcurrentplayer)**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步获取当前玩家|
+| **[asyncGetPlayer](../modules/Gameplay.Gameplay.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
+| **[boxOverlap](../modules/Gameplay.Gameplay.md#boxoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 矩形范围检测|
+| **[clearMoveTo](../modules/Gameplay.Gameplay.md#clearmoveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 导航停止|
+| **[cylinderOverlap](../modules/Gameplay.Gameplay.md#cylinderoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆柱范围检测|
+| **[getAllPlayers](../modules/Gameplay.Gameplay.md#getallplayers)**(): [`Player`](../classes/Gameplay.Player.md)[] <br> 当前所有Player|
+| **[getClickGameObjectByScene](../modules/Gameplay.Gameplay.md#getclickgameobjectbyscene)**(`SceneX`: `number`, `SceneY`: `number`, `Distance`: `number`, `multiTrace`: `boolean`, `onRay`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取点击屏幕位置的物体|
+| **[getCurrentPlayer](../modules/Gameplay.Gameplay.md#getcurrentplayer)**(): [`Player`](../classes/Gameplay.Player.md) <br> 获取当前玩家|
+| **[getPlayer](../modules/Gameplay.Gameplay.md#getplayer)**(`playerId`: `number`): [`Player`](../classes/Gameplay.Player.md) <br> 获取玩家|
+| **[getShootDir](../modules/Gameplay.Gameplay.md#getshootdir)**(`character`: [`Character`](../classes/Gameplay.Character.md), `startLoc`: [`Vector`](../classes/Type.Vector.md), `distance?`: `number`): [`Vector`](../classes/Type.Vector.md) <br> 获取某位置指向屏幕中心瞄准位置的向量|
+| **[lineTrace](../modules/Gameplay.Gameplay.md#linetrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `multiTrace`: `boolean`, `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 射线检测|
+| **[moveTo](../modules/Gameplay.Gameplay.md#moveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `Location`: [`Vector`](../classes/Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
+| **[parabolicTrace](../modules/Gameplay.Gameplay.md#parabolictrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Direction`: [`Vector`](../classes/Type.Vector.md), `InitSpeed`: `number`, `Range`: `number`, `CapsuleRadius`: `number`, `IgnoreObjectTypes`: [`ObjectTypeQuery`](../enums/Gameplay.ObjectTypeQuery.md)[], `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md) <br> 抛物线检测|
 | **[removeOutlineEffect](../modules/Gameplay.Gameplay.md#removeoutlineeffect)**(`obj`: `GameObject`): `void` <br> 移除描边效果|
 | **[setGlobalAsyncTimeout](../modules/Gameplay.Gameplay.md#setglobalasynctimeout)**(`overtime`: `number`): `void` <br> 设置异步回调超时时间，单位毫秒，默认5000|
 | **[setGlobalTimeDilation](../modules/Gameplay.Gameplay.md#setglobaltimedilation)**(`Time`: `number`): `void` <br> 设置世界整体膨胀时间速度|
-| **[setPlayerPassableForAllArea](../modules/Gameplay.Gameplay.md#setplayerpassableforallarea)**(`character`: [`Character`](../classes/Gameplay.Gameplay.Character.md), `canPass`: `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
-| **[setStaticMeshColor](../modules/Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`StaticMesh`](../classes/Gameplay.Gameplay.StaticMesh.md), `color`: [`LinearColor`](../classes/Type.Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
-| **[sphereOverlap](../modules/Gameplay.Gameplay.md#sphereoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Type.Vector.md), `Radius`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆形范围检测|
+| **[setPlayerPassableForAllArea](../modules/Gameplay.Gameplay.md#setplayerpassableforallarea)**(`character`: [`Character`](../classes/Gameplay.Character.md), `canPass`: `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
+| **[setStaticMeshColor](../modules/Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`StaticMesh`](../classes/Gameplay.StaticMesh.md), `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
+| **[sphereOverlap](../modules/Gameplay.Gameplay.md#sphereoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆形范围检测|
 | **[vibrate](../modules/Gameplay.Gameplay.md#vibrate)**(`enable`: `boolean`): `void` <br> 振动开关|
-| **[fetch](../modules/Network.Network.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Network.Response.md)\> <br> HTTP请求|
-| **[generalHttpRequest](../modules/Network.Network.md#generalhttprequest)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
+| **[fetch](../modules/Network.Network.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
+| **[generalHttpRequest](../modules/Network.Network.md#generalhttprequest)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
 | **[getUrlParameter](../modules/Network.Network.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
-| **[httpRequestTransmitData](../modules/Network.Network.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
+| **[httpRequestTransmitData](../modules/Network.Network.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
 | **[urlDecode](../modules/Network.Network.md#urldecode)**(`str`: `string`): `string` <br> url解码|
 | **[urlEncode](../modules/Network.Network.md#urlencode)**(`str`: `string`): `string` <br> url转码|
-| **[getCurrentEnv](../modules/Util.Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境|
-| **[getDefaultGraphicsCPULevel](../modules/Util.Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认CPU画质等级|
-| **[getDefaultGraphicsGPULevel](../modules/Util.Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取默认GPU画质等级|
-| **[getEditorVersion](../modules/Util.Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
-| **[getFullEditorVersion](../modules/Util.Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
-| **[getGameId](../modules/Util.Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
-| **[getGraphicsCPULevel](../modules/Util.Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前CPU画质等级|
-| **[getGraphicsGPULevel](../modules/Util.Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md) <br> 获取当前GPU画质等级|
-| **[getVersion](../modules/Util.Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本|
-| **[isClient](../modules/Util.Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行|
-| **[isMobile](../modules/Util.Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
-| **[isServer](../modules/Util.Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行|
-| **[setGraphicsCPULevel](../modules/Util.Util.SystemUtil.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](../modules/Util.Util.SystemUtil.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Type.Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
-| **[getViewportSize](../modules/Util.Util.WindowUtil.md#getviewportsize)**(): [`Vector2`](../classes/Type.Type.Vector2.md) <br> 获取当前游戏窗口尺寸|
+| **[getCurrentEnv](../modules/Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境|
+| **[getDefaultGraphicsCPULevel](../modules/Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取默认CPU画质等级|
+| **[getDefaultGraphicsGPULevel](../modules/Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取默认GPU画质等级|
+| **[getEditorVersion](../modules/Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
+| **[getFullEditorVersion](../modules/Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
+| **[getGameId](../modules/Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
+| **[getGraphicsCPULevel](../modules/Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取当前CPU画质等级|
+| **[getGraphicsGPULevel](../modules/Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取当前GPU画质等级|
+| **[getVersion](../modules/Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本|
+| **[isClient](../modules/Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行|
+| **[isMobile](../modules/Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
+| **[isServer](../modules/Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行|
+| **[setGraphicsCPULevel](../modules/Util.SystemUtil.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
+| **[setGraphicsGPULevel](../modules/Util.SystemUtil.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
+| **[getViewportSize](../modules/Util.WindowUtil.md#getviewportsize)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取当前游戏窗口尺寸|
 
