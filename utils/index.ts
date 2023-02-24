@@ -30,7 +30,9 @@ export function dealConfigSidebar() {
   for (const typeObj in json) {
     const items: DefaultTheme.SidebarItem[] = []
     for (const key in json[typeObj]) {
-      if (key === 'Modules Functions' || key === 'Modules Type Aliases') {
+      if (
+        ['Modules Functions', 'Modules Type Aliases', 'Enums'].includes(key)
+      ) {
         continue
       }
       const item = json[typeObj][key]
