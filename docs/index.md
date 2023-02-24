@@ -4,7 +4,7 @@ Enums
 
 | Name | Description | Group |
 | :-----| :-----| :-----|
-| **[Animation](../classes/Gameplay.Animation.md)** | 动画类 | [Animations](../groups/Animations.Animations.md) |
+| **[Animation](../classes/Gameplay.Animation.md#Animation)** | 动画类 | [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 动画类二级姿态 | [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 二级姿态| [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 姿态动画类 | [Animations](../groups/Animations.Animations.md) |
