@@ -7,3 +7,15 @@
 本文档的API按其所属的命名空间进行分组，可从左侧的侧栏中进行选择，也可进行API关键字搜索。要使用这些信息，应熟悉编辑器中的脚本基础理论和实战。
 
 部分页面提供了便于理解的示例代码，您可以进行学习或随意将其使用于任何目的。
+
+## A
+
+| Name | Description | Group |
+| :-----| :-----| :-----|
+| [Animation](../classes/Gameplay.Animation.md) | 动画类 | [Animations](../groups/Animations.Animations.md) |
+
+## S
+| Name | Description | Group |
+| :-----| :-----| :-----|
+| [Stance](../classes/Gameplay.Stance.md) | 姿态 | [Animations](../groups/Animations.Animations.md) |
+| [SubStance](../classes/Gameplay.SubStance.md) | 二级姿态 | [Animations](../groups/Animations.Animations.md) |
