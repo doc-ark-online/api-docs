@@ -1,18 +1,10 @@
-# 口袋方舟
-
-![口袋方舟|API](https://cdn.233xyx.com/1674951845106_545.png)
-
-本文档主要包含编辑器提供的脚本API详细信息，包括类、类型描述、枚举、函数、属性等，开发者可以使用它们尽情创建自己的游戏与功能。
-
-本文档的API按其所属的命名空间进行分组，可从左侧的侧栏中进行选择，也可进行API关键字搜索。要使用这些信息，应熟悉编辑器中的脚本基础理论和实战。
-
-部分页面提供了便于理解的示例代码，您可以进行学习或随意将其使用于任何目的。
+Enums
 
 ## A
 
 | Name | Description | Group |
 | :-----| :-----| :-----|
-| [Animation](../classes/Gameplay.Animation.md) | 动画类 | [Animations](../groups/Animations.Animations.md) |
+| **[Animation](../classes/Gameplay.Animation.md#Animation)** | 动画类 | [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 动画类二级姿态 | [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 二级姿态| [Animations](../groups/Animations.Animations.md) |
 | [Animation](../classes/Gameplay.Animation.md) | 姿态动画类 | [Animations](../groups/Animations.Animations.md) |
