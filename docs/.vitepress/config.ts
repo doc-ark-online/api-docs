@@ -3,11 +3,15 @@ import { dealConfigSidebar, dealItem } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
+  // {
+  //   text: 'Index',
+  //   collapsible: false,
+  //   // collapsed: false,
+  //   items: dealItem('groups')
+  // },
   {
     text: 'Index',
-    collapsible: false,
-    // collapsed: false,
-    items: dealItem('groups')
+    items: [{ text: 'Enums', link: '/index.md' }]
   },
   ...dealConfigSidebar()
 ]

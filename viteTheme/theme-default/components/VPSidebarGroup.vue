@@ -6,9 +6,11 @@ import { isActive } from '../support/utils.js'
 import VPIconPlusSquare from './icons/VPIconPlusSquare.vue'
 import VPIconMinusSquare from './icons/VPIconMinusSquare.vue'
 import VPSidebarLink from './VPSidebarLink.vue'
+import { normalizeLink } from '../support/utils.js'
 
 const props = defineProps<{
   text?: string
+  link?: string
   items: DefaultTheme.SidebarItem[]
   collapsible?: boolean
   collapsed?: boolean
@@ -35,20 +37,25 @@ function toggle() {
     collapsed.value = !collapsed.value
   }
 }
+function open() {
+  if (props.collapsible) {
+    collapsed.value = false
+  }
+}
 </script>
 
 <template>
   <section class="VPSidebarGroup" :class="{ collapsible, collapsed }">
-    <div
-      v-if="text"
-      class="title"
-      :role="collapsible ? 'button' : undefined"
-      @click="toggle"
-    >
-      <h2 v-html="text" class="title-text"></h2>
+    <div v-if="text" class="title" :role="collapsible ? 'button' : undefined">
+      <a
+        class="title-a"
+        :href="link ? normalizeLink(link) : undefined"
+        @click="open"
+        ><h2 v-html="text" class="title-text"></h2
+      ></a>
       <div class="action">
-        <VPIconMinusSquare class="icon minus" />
-        <VPIconPlusSquare class="icon plus" />
+        <VPIconMinusSquare @click="toggle" class="icon minus" />
+        <VPIconPlusSquare @click="toggle" class="icon plus" />
       </div>
     </div>
 
@@ -67,7 +74,9 @@ function toggle() {
   align-items: flex-start;
   z-index: 2;
 }
-
+.title-a {
+  flex: 1;
+}
 .title-text {
   padding-top: 6px;
   padding-bottom: 6px;

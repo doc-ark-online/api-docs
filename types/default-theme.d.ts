@@ -130,6 +130,7 @@ export namespace DefaultTheme {
   }
 
   export interface SidebarGroup {
+    link?: string
     text?: string
     items: SidebarItem[]
 

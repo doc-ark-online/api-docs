@@ -1,6 +1,6 @@
 import { readdirSync, readJSONSync } from 'fs-extra'
 import * as path from 'path'
-import { DefaultTheme } from 'vitepress'
+import { DefaultTheme } from '../viteTheme/shared'
 
 /**根据文件夹生成对应的子类 */
 export function dealItem(dir: string) {
@@ -51,6 +51,7 @@ export function dealConfigSidebar() {
         text: typeObj,
         collapsible: true,
         collapsed: true,
+        link: `/groups/${typeObj}.${typeObj}.md`,
         items: items
       })
     }
