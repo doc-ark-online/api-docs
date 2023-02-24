@@ -12,7 +12,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   {
     text: 'Index',
     items: [{ text: '介绍', link: '/index.md' }]
-    items: [{ text: '开始使用', link: '/start.md' }]
   },
   ...dealConfigSidebar()
 ]
