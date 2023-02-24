@@ -24,7 +24,7 @@ watchEffect(() => {
 const { page } = useData()
 watchEffect(() => {
   if (
-    props.items.some((item) => {
+    [...props.items, { link: props.link }].some((item) => {
       return isActive(page.value.relativePath, item.link)
     })
   ) {
@@ -51,7 +51,11 @@ function open() {
         class="title-a"
         :href="link ? normalizeLink(link) : undefined"
         @click="open"
-        ><h2 v-html="text" class="title-text"></h2
+        ><h2
+          v-html="text"
+          :class="{ active: isActive(page.relativePath, link) }"
+          class="title-text"
+        ></h2
       ></a>
       <div class="action">
         <VPIconMinusSquare @click="toggle" class="icon minus" />
@@ -73,6 +77,9 @@ function open() {
   justify-content: space-between;
   align-items: flex-start;
   z-index: 2;
+}
+.active {
+  color: var(--vp-c-brand) !important;
 }
 .title-a {
   flex: 1;
