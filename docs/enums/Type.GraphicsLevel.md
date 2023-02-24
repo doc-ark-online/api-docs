@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / GraphicsLevel
+[Scripiting](../groups/Scripiting.Scripiting.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 

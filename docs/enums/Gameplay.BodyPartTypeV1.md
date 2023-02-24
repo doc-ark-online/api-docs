@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / BodyPartTypeV1
+[Avatar](../groups/Avatar.Avatar.md) / BodyPartTypeV1
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 

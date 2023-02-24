@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIFontInfo
+[Gui](../groups/Gui.Gui.md) / GuiFontInfo
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 

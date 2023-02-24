@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsThruster
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsThruster
 
 # PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 

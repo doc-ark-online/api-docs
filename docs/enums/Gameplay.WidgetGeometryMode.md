@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetGeometryMode
+[Avatar](../groups/Avatar.Avatar.md) / WidgetGeometryMode
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 

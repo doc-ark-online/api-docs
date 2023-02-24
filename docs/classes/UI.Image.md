@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Image
+[Gui](../groups/Gui.Gui.md) / Image
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 

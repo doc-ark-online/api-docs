@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / WheeledVehicle4W
+[Avatar](../groups/Avatar.Avatar.md) / WheeledVehicle4W
 
 # WheeledVehicle4W <Badge type="tip" text="Class" /> <Score text="WheeledVehicle4W" />
 

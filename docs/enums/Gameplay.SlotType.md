@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SlotType
+[Avatar](../groups/Avatar.Avatar.md) / SlotType
 
 # SlotType <Badge type="tip" text="Enumeration" /> <Score text="SlotType" />
 

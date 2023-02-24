@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileAccelerationEnableMode
+[Avatar](../groups/Avatar.Avatar.md) / ProjectileAccelerationEnableMode
 
 # ProjectileAccelerationEnableMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileAccelerationEnableMode" />
 

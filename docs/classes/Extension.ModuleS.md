@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / ModuleS
+[Utility](../groups/Utility.Utility.md) / ModuleS
 
 # ModuleS<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleS<T, S\>" />
 

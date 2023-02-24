@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AbilityState
+[Avatar](../groups/Avatar.Avatar.md) / AbilityState
 
 # AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
@@ -218,4 +218,3 @@ ___
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 
-___

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsLinearMotor
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsLinearMotor
 
 # PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 

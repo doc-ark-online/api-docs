@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / ObjPool
+[Utility](../groups/Utility.Utility.md) / ObjPool
 
 # ObjPool<T\> <Badge type="tip" text="Class" /> <Score text="ObjPool<T\>" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponState
+[Avatar](../groups/Avatar.Avatar.md) / HotWeaponState
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 

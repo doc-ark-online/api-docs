@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Widget
+[Gui](../groups/Gui.Gui.md) / Widget
 
 # Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 

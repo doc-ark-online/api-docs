@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EInitialOscillatorOffset
+[Avatar](../groups/Avatar.Avatar.md) / EInitialOscillatorOffset
 
 # EInitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="EInitialOscillatorOffset" />
 

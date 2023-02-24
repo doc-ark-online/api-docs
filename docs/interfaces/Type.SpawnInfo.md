@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / SpawnInfo
+[Scripiting](../groups/Scripiting.Scripiting.md) / SpawnInfo
 
 # SpawnInfo <Badge type="tip" text="Interface" /> <Score text="SpawnInfo" />
 

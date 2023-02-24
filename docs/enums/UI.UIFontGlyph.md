@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIFontGlyph
+[Gui](../groups/Gui.Gui.md) / GuiFontGlyph
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 

@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / PurchaseService
+[Scripiting](../groups/Scripiting.Scripiting.md) / PurchaseScripiting
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / CustomShapeType
+[Avatar](../groups/Avatar.Avatar.md) / CustomShapeType
 
 # CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 

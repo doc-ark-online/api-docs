@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / RoomService
+[Scripiting](../groups/Scripiting.Scripiting.md) / RoomScripiting
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 

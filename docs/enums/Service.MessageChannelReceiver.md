@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / MessageChannelReceiver
+[Scripiting](../groups/Scripiting.Scripiting.md) / MessageChannelReceiver
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 

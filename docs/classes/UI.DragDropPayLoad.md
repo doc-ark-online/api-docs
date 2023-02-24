@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / DragDropPayLoad
+[Gui](../groups/Gui.Gui.md) / DragDropPayLoad
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 

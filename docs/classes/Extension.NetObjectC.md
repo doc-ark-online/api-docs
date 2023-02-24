@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / NetObjectC
+[Utility](../groups/Utility.Utility.md) / NetObjectC
 
 # NetObjectC<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectC<T\>" />
 

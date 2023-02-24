@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / NPC
+[Avatar](../groups/Avatar.Avatar.md) / NPC
 
 # NPC <Badge type="tip" text="Class" /> <Score text="NPC" />
 
@@ -23,6 +23,7 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 ::: details 点击查看继承
 | Properties |
 | :-----|
+| **[onLoadAppearanceDataAllCompleted](Gameplay.CharacterBase.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onMeshChanged](Gameplay.CharacterBase.md#onmeshchanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onMovementStateChanged](Gameplay.CharacterBase.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onSetAppearanceDataCompleted](Gameplay.CharacterBase.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
@@ -33,6 +34,7 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 
 | Accessors |
 | :-----|
+| **[serverCalculateEnable](Gameplay.NPC.md#servercalculateenable)**(`enable`: `boolean`): `void` <br> 开/关 npc的功能,现包含(角色的网络同步，角色移动)未来可能会添加其他计算|
 
 
 ::: details 点击查看继承
@@ -43,7 +45,6 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[airControlBoostVelocityThreshold](Gameplay.CharacterBase.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍|
 | **[animationMode](Gameplay.CharacterBase.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md) <br> 动画播放模式|
 | **[animationStance](Gameplay.CharacterBase.md#animationstance)**(): `string` <br> 动画姿态|
-| [appearance](Gameplay.CharacterBase.md#appearance) |
 | **[appearanceType](Gameplay.CharacterBase.md#appearancetype)**(): [`AppearanceType`](../enums/Gameplay.AppearanceType.md) <br> 形象类型|
 | **[baseShadowLocationOffset](Gameplay.CharacterBase.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移|
 | **[baseShadowMaxVisibleHeight](Gameplay.CharacterBase.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度|
@@ -76,19 +77,114 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[jumpEnable](Gameplay.CharacterBase.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
 | **[jumpMaxCount](Gameplay.CharacterBase.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
 | **[jumpingOutOfWaterEnable](Gameplay.CharacterBase.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
+| **[maxAcceleration](Gameplay.CharacterBase.md#maxacceleration)**(): `number` <br> 最大加速度|
+| **[maxFallingSpeed](Gameplay.CharacterBase.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
+| **[maxFlySpeed](Gameplay.CharacterBase.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
+| **[maxJumpHeight](Gameplay.CharacterBase.md#maxjumpheight)**(): `number` <br> 最大跳跃高度|
+| **[maxStepHeight](Gameplay.CharacterBase.md#maxstepheight)**(): `number` <br> 获取角色最大可跨越高度|
+| **[maxSwimSpeed](Gameplay.CharacterBase.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
+| **[maxWalkSpeed](Gameplay.CharacterBase.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
+| **[maxWalkSpeedCrouched](Gameplay.CharacterBase.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[moveEnable](Gameplay.CharacterBase.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
+| **[moveFacingDirection](Gameplay.CharacterBase.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
+| **[movementAxisDirection](Gameplay.CharacterBase.md#movementaxisdirection)**(): [`Vector`](Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
+| **[movementDirection](Gameplay.CharacterBase.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md) <br> 运动时依据的正方向|
+| **[movementState](Gameplay.CharacterBase.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.MovementMode.md) <br> 当前角色运动状态|
+| **[outOfWaterZ](Gameplay.CharacterBase.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
+| **[ragdollEnable](Gameplay.CharacterBase.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
+| **[rotateRate](Gameplay.CharacterBase.md#rotaterate)**(): `number` <br> 最大转向速度|
+| **[separateBrakingFrictionEnable](Gameplay.CharacterBase.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
+| **[usedCapsuleCorrection](Gameplay.CharacterBase.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
+| **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
+| **[walkableFloorAngle](Gameplay.CharacterBase.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度|
 :::
 
 
 | Methods |
 | :-----|
+| **[setServerMovementEnable](Gameplay.NPC.md#setservermovementenable)**(`value`: `boolean`): `void` <br> 开/关角色的移动计算|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
+| **[addImpulse](Gameplay.CharacterBase.md#addimpulse)**(`Vector`: [`Vector`](Type.Vector.md), `ignoreMass?`: `boolean`): `void` <br> 添加冲量|
+| **[addMoveInput](Gameplay.CharacterBase.md#addmoveinput)**(`direction`: [`Vector`](Type.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入|
+| **[appearanceReady](Gameplay.CharacterBase.md#appearanceready)**(): `Promise`<`void`\> <br> 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断|
+| **[attach](Gameplay.CharacterBase.md#attach)**(`gameObject`: `GameObject`, `slotName`: [`SlotType`](../enums/Gameplay.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽|
+| **[clearAppearance](Gameplay.CharacterBase.md#clearappearance)**(): `void` <br> 清空角色形象数据|
+| **[clearDecorations](Gameplay.CharacterBase.md#cleardecorations)**(): `void` <br> 清空所有挂件数据|
+| **[clearOneDecoration](Gameplay.CharacterBase.md#clearonedecoration)**(`GUID`: `string`): `void` <br> 删除一个挂件|
+| **[crouch](Gameplay.CharacterBase.md#crouch)**(`isCrouch`: `boolean`): `void` <br> 下蹲|
+| **[getAppearance](Gameplay.CharacterBase.md#getappearance)**<`T`: extends [`HumanoidV1`](Gameplay.HumanoidV1.md) \\>(): `T`: extends [`HumanoidV1`](Gameplay.HumanoidV1.md) \ <br> 设置外观修改功能|
+| **[getControlRotator](Gameplay.CharacterBase.md#getcontrolrotator)**(`Out?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取控制器的旋转|
+| **[getDecorations](Gameplay.CharacterBase.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的GUID|
+| **[getHeadUIWidget](Gameplay.CharacterBase.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.UIWidget.md) <br> 获取头顶UIWidget|
+| **[getSlotName](Gameplay.CharacterBase.md#getslotname)**(`slotType`: [`SlotType`](../enums/Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称|
+| **[isPlayingAnimation](Gameplay.CharacterBase.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画|
+| **[jump](Gameplay.CharacterBase.md#jump)**(): `void` <br> 跳跃|
+| **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`GUID`: `string`, `sync?`: `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象，playAnimation是个快速实现功能的接口,可配置参数有限。loadAnimation可以返回动画,以进行更加精细的动画控制，获取到对象后需用户自己配置参数，手动调用play接口动画才会播放。|
+| **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`decorationString`: `string`, `callback`: [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,给移动角色编辑器提供的能力|
+| **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`GUID`: `string`): `void` <br> 通过GUID加载插槽跟角色编辑数据|
+| **[loadSlotAndEditorDataByPath](Gameplay.CharacterBase.md#loadslotandeditordatabypath)**(`relativePath`: `string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
+| **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`GUID`: `string`, `sync?`: `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
+| **[lookAt](Gameplay.CharacterBase.md#lookat)**(`TargetPoint`: [`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
+| **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`GUID`: `string`, `loopCount?`: `number`, `rate?`: `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。|
+| **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<`T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\>\>(`clz`: [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): `T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> <br> 设置外观修改功能|
+| **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**(`ShapeType`: [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), `CollisionExtent`: [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
+| **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置是否被显示(本地生效)|
+| **[stopStance](Gameplay.CharacterBase.md#stopstance)**(`sync?`: `boolean`): `void` <br> 停止任何正在播放的姿态|
+| **[swimmingDown](Gameplay.CharacterBase.md#swimmingdown)**(`speed`: `number`): `void` <br> 水中下潜|
+| **[swimmingUp](Gameplay.CharacterBase.md#swimmingup)**(`speed`: `number`): `void` <br> 水中上浮|
+| **[switchToFlying](Gameplay.CharacterBase.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
+| **[switchToSwimming](Gameplay.CharacterBase.md#switchtoswimming)**(): `void` <br> 切换为游泳状态|
+| **[switchToWalking](Gameplay.CharacterBase.md#switchtowalking)**(): `void` <br> 切换为行走状态|
 :::
 
 
 ## Properties
 
 ## Accessors
+
+### serverCalculateEnable <Score text="serverCalculateEnable" /> 
+
+• `set` **serverCalculateEnable**(`enable`): `void` 
+
+开/关 npc的功能,现包含(角色的网络同步，角色移动)未来可能会添加其他计算
+
+
+::: warning Precautions
+
+如果场景中存在大量闲置NPC,暂时不会参与到游戏中，可使用设置flase节约一些额外的性能消耗，当NPC需要参与到游戏中时设置true开启对应的功能。
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enable` | `boolean` |  true 开启角色计算 flase 关闭角色计算 |
+
+
+
+## Methods
+
+### setServerMovementEnable <Score text="setServerMovementEnable" /> 
+
+• **setServerMovementEnable**(`value`): `void` 
+
+开/关角色的移动计算
+
+
+::: warning Precautions
+
+场景中有大量处于站立不需要移动的ai,设置false减少移动计算带来的性能消耗
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` |  true 开启角色移动计算 flase 关闭角色移动计算 |
+

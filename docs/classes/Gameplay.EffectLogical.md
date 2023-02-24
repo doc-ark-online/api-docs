@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EffectLogical
+[Avatar](../groups/Avatar.Avatar.md) / EffectLogical
 
 # EffectLogical <Badge type="tip" text="Class" /> <Score text="EffectLogical" />
 

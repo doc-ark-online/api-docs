@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeType
+[Avatar](../groups/Avatar.Avatar.md) / EffectRangeType
 
 # EffectRangeType <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeType" />
 

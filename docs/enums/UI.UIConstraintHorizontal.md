@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIConstraintHorizontal
+[Gui](../groups/Gui.Gui.md) / GuiConstraintHorizontal
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotator
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsRotator
 
 # PhysicsRotator <Badge type="tip" text="Class" /> <Score text="PhysicsRotator" />
 

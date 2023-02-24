@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCylinder
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsCylinder
 
 # PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
 

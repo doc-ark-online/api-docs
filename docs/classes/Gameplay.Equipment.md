@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Equipment
+[Avatar](../groups/Avatar.Avatar.md) / Equipment
 
 # Equipment <Badge type="tip" text="Class" /> <Score text="Equipment" />
 

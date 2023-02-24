@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / MaskButton
+[Gui](../groups/Gui.Gui.md) / MaskButton
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 

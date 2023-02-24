@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AnimationMode
+[Avatar](../groups/Avatar.Avatar.md) / AnimationMode
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 

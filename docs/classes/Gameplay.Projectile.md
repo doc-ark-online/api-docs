@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Projectile
+[Avatar](../groups/Avatar.Avatar.md) / Projectile
 
 # Projectile <Badge type="tip" text="Class" /> <Score text="Projectile" />
 

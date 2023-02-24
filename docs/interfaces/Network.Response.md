@@ -1,4 +1,4 @@
-[Network](../modules/Network.Network.md) / Response
+[Gameplay](../groups/Gameplay.Gameplay.md) / Response
 
 # Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 

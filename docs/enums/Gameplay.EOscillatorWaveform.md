@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EOscillatorWaveform
+[Avatar](../groups/Avatar.Avatar.md) / EOscillatorWaveform
 
 # EOscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="EOscillatorWaveform" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / FourFootStandard
+[Avatar](../groups/Avatar.Avatar.md) / FourFootStandard
 
 # FourFootStandard <Badge type="tip" text="Class" /> <Score text="FourFootStandard" />
 

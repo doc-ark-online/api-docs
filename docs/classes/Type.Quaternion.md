@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Quaternion
+[Scripiting](../groups/Scripiting.Scripiting.md) / Quaternion
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 

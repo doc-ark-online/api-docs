@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / AssetType
+[Scripiting](../groups/Scripiting.Scripiting.md) / AssetScripiting
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 

@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / BasePanel
+[Utility](../groups/Utility.Utility.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 

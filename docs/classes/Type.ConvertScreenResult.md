@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / ConvertScreenResult
+[Scripiting](../groups/Scripiting.Scripiting.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 

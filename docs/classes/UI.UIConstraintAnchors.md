@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIConstraintAnchors
+[Gui](../groups/Gui.Gui.md) / GuiConstraintAnchors
 
 # UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
 

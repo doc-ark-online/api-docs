@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeapon
+[Avatar](../groups/Avatar.Avatar.md) / HotWeapon
 
 # HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 

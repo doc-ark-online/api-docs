@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AbilityObject
+[Avatar](../groups/Avatar.Avatar.md) / AbilityObject
 
 # AbilityObject <Badge type="tip" text="Class" /> <Score text="AbilityObject" />
 

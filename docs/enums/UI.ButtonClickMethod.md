@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ButtonClickMethod
+[Gui](../groups/Gui.Gui.md) / ButtonClickMethod
 
 # ButtonClickMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonClickMethod" />
 

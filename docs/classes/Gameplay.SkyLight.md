@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SkyLight
+[Avatar](../groups/Avatar.Avatar.md) / SkyLight
 
 # SkyLight <Badge type="tip" text="Class" /> <Score text="SkyLight" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / TouchInput
+[Avatar](../groups/Avatar.Avatar.md) / TouchInput
 
 # TouchInput <Badge type="tip" text="Class" /> <Score text="TouchInput" />
 

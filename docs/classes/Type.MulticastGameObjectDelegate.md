@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / MulticastGameObjectDelegate
+[Scripiting](../groups/Scripiting.Scripiting.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape3D
+[Avatar](../groups/Avatar.Avatar.md) / EffectRangeShape3D
 
 # EffectRangeShape3D <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeShape3D" />
 

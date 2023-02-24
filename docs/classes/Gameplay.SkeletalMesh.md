@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SkeletalMesh
+[Avatar](../groups/Avatar.Avatar.md) / SkeletalMesh
 
 # SkeletalMesh <Badge type="tip" text="Class" /> <Score text="SkeletalMesh" />
 

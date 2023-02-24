@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UITextHorizontalLayout
+[Gui](../groups/Gui.Gui.md) / GuiTextHorizontalLayout
 
 # UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 

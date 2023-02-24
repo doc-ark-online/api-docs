@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Action
+[Scripiting](../groups/Scripiting.Scripiting.md) / Action
 
 # Action <Badge type="tip" text="Class" /> <Score text="Action" />
 

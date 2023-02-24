@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / Subdata
+[Utility](../groups/Utility.Utility.md) / Subdata
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 

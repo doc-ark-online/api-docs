@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / InteractiveObject
+[Avatar](../groups/Avatar.Avatar.md) / InteractiveObject
 
 # InteractiveObject <Badge type="tip" text="Class" /> <Score text="InteractiveObject" />
 

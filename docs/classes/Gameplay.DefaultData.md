@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / DefaultData
+[Avatar](../groups/Avatar.Avatar.md) / DefaultData
 
 # DefaultData <Badge type="tip" text="Class" /> <Score text="DefaultData" />
 

@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / PropertyStatus
+[Scripiting](../groups/Scripiting.Scripiting.md) / PropertyStatus
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 

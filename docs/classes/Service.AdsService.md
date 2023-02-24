@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / AdsService
+[Scripiting](../groups/Scripiting.Scripiting.md) / AdsScripiting
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 

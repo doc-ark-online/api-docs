@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UILayout
+[Gui](../groups/Gui.Gui.md) / GuiLayout
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 

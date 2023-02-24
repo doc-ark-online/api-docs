@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Keys
+[Scripiting](../groups/Scripiting.Scripiting.md) / Keys
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 

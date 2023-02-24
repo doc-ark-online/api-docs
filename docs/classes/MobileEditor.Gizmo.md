@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / Gizmo
+[Scripiting](../groups/Scripiting.Scripiting.md) / Gizmo
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 

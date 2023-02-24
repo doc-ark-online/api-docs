@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / LimitType
+[Avatar](../groups/Avatar.Avatar.md) / LimitType
 
 # LimitType <Badge type="tip" text="Enumeration" /> <Score text="LimitType" />
 

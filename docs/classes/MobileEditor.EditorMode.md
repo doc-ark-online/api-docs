@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / EditorMode
+[Scripiting](../groups/Scripiting.Scripiting.md) / EditorMode
 
 # EditorMode <Badge type="tip" text="Class" /> <Score text="EditorMode" />
 

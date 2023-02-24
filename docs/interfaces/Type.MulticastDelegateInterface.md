@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / MulticastDelegateInterface
+[Scripiting](../groups/Scripiting.Scripiting.md) / MulticastDelegateInterface
 
 # MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="MulticastDelegateInterface<T\>" />
 

@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / CollisionStatus
+[Scripiting](../groups/Scripiting.Scripiting.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 

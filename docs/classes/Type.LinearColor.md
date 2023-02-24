@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / LinearColor
+[Scripiting](../groups/Scripiting.Scripiting.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 

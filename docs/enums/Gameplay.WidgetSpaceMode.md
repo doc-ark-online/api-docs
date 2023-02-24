@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetSpaceMode
+[Avatar](../groups/Avatar.Avatar.md) / WidgetSpaceMode
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 

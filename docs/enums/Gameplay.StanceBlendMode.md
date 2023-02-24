@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / StanceBlendMode
+[Avatar](../groups/Avatar.Avatar.md) / StanceBlendMode
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 

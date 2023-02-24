@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / TouchPad
+[Gui](../groups/Gui.Gui.md) / TouchPad
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 

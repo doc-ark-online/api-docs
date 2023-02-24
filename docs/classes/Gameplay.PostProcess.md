@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PostProcess
+[Avatar](../groups/Avatar.Avatar.md) / PostProcess
 
 # PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 

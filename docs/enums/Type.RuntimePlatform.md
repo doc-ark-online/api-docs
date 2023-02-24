@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / RuntimePlatform
+[Scripiting](../groups/Scripiting.Scripiting.md) / RuntimePlatform
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 

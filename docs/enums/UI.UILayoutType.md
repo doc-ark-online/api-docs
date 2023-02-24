@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UILayoutType
+[Gui](../groups/Gui.Gui.md) / GuiLayoutType
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Anchor
+[Avatar](../groups/Avatar.Avatar.md) / Anchor
 
 # Anchor <Badge type="tip" text="Class" /> <Score text="Anchor" />
 

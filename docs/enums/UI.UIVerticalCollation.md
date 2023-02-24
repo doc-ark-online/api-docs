@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIVerticalCollation
+[Gui](../groups/Gui.Gui.md) / GuiVerticalCollation
 
 # UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 

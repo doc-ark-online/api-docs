@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / MoveControlMode
+[Avatar](../groups/Avatar.Avatar.md) / MoveControlMode
 
 # MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 

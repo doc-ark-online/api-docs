@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / SelectTapType
+[Scripiting](../groups/Scripiting.Scripiting.md) / SelectTapType
 
 # SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
 

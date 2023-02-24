@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Stance
+[Avatar](../groups/Avatar.Avatar.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
@@ -79,4 +79,3 @@ ___
 
 是否执行成功
 
-___

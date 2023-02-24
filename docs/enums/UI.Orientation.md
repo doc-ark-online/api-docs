@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Orientation
+[Gui](../groups/Gui.Gui.md) / Orientation
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SkyBox
+[Avatar](../groups/Avatar.Avatar.md) / SkyBox
 
 # SkyBox <Badge type="tip" text="Class" /> <Score text="SkyBox" />
 

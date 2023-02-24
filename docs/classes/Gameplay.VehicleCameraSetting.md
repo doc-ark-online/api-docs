@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / VehicleCameraSetting
+[Avatar](../groups/Avatar.Avatar.md) / VehicleCameraSetting
 
 # VehicleCameraSetting <Badge type="tip" text="Class" /> <Score text="VehicleCameraSetting" />
 

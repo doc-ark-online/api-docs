@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / DirectionalLight
+[Avatar](../groups/Avatar.Avatar.md) / DirectionalLight
 
 # DirectionalLight <Badge type="tip" text="Class" /> <Score text="DirectionalLight" />
 

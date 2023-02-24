@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IFourFootStandard
+[Avatar](../groups/Avatar.Avatar.md) / IFourFootStandard
 
 # IFourFootStandard <Badge type="tip" text="Interface" /> <Score text="IFourFootStandard" />
 

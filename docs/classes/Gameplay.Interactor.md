@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Interactor
+[Avatar](../groups/Avatar.Avatar.md) / Interactor
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
@@ -117,7 +117,7 @@ GAMEPLAY
 :::
 
 
-## Properties
+___
 
 ### serverSetShowDebugLog <Score text="serverSetShowDebugLog" /> 
 

@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / LanguageType
+[Scripiting](../groups/Scripiting.Scripiting.md) / LanguageScripiting
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 

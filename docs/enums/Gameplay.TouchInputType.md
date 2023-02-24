@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / TouchInputType
+[Avatar](../groups/Avatar.Avatar.md) / TouchInputType
 
 # TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
 

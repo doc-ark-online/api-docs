@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Optimization
+[Avatar](../groups/Avatar.Avatar.md) / Optimization
 
 # Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
 

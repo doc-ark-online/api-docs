@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Animation
+[Avatar](../groups/Avatar.Avatar.md) / Animation
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 

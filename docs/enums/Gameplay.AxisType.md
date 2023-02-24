@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AxisType
+[Avatar](../groups/Avatar.Avatar.md) / AxisType
 
 # AxisType <Badge type="tip" text="Enumeration" /> <Score text="AxisType" />
 

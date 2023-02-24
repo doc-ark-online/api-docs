@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AreaClass
+[Avatar](../groups/Avatar.Avatar.md) / AreaClass
 
 # AreaClass <Badge type="tip" text="Enumeration" /> <Score text="AreaClass" />
 

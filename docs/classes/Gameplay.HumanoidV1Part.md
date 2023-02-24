@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Part
+[Avatar](../groups/Avatar.Avatar.md) / HumanoidV1Part
 
 # HumanoidV1Part <Badge type="tip" text="Class" /> <Score text="HumanoidV1Part" />
 

@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / StaleButton
+[Gui](../groups/Gui.Gui.md) / StaleButton
 
 # StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 

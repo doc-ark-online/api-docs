@@ -1,4 +1,4 @@
-[Network](../modules/Network.Network.md) / HttpRequestType
+[Gameplay](../groups/Gameplay.Gameplay.md) / HttpRequestType
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 

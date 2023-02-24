@@ -1,4 +1,4 @@
-[Events](../modules/Events.Events.md) / DispatchEventResult
+[Scripiting](../groups/Scripiting.Scripiting.md) / DispatchEventResult
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / BasicStanceType
+[Avatar](../groups/Avatar.Avatar.md) / BasicStanceType
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 

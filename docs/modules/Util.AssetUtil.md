@@ -7,7 +7,7 @@
 | Functions |
 | :-----|
 | **[assetLoaded](Util.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| [loadAsset](Util.AssetUtil.md#loadasset) |
+| **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载|
 
 ## Functions
 
@@ -59,4 +59,3 @@ UTILITY
 
 下载失败将返回false
 
-___

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsConstraintBase
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsConstraintBase
 
 # PhysicsConstraintBase <Badge type="tip" text="Class" /> <Score text="PhysicsConstraintBase" />
 

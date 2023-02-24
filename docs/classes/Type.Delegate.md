@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Delegate
+[Scripiting](../groups/Scripiting.Scripiting.md) / Delegate
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / UIWidget
+[Avatar](../groups/Avatar.Avatar.md) / UIWidget
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
@@ -22,6 +22,7 @@ GUI
 | **[distanceScaleFactor](Gameplay.UIWidget.md#distancescalefactor)**(): `number` <br> 获取缩放距离系数|
 | **[drawSize](Gameplay.UIWidget.md#drawsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取实际渲染大小|
 | **[geometryMode](Gameplay.UIWidget.md#geometrymode)**(): [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md) <br> 获取几何体模式|
+| **[headUIMaxVisibleDistance](Gameplay.UIWidget.md#headuimaxvisibledistance)**(): `number` <br> 获取最大头顶UI可见距离|
 | **[hideByDistanceEnable](Gameplay.UIWidget.md#hidebydistanceenable)**(): `boolean` <br> 获取是否启用最大可见距离|
 | **[interaction](Gameplay.UIWidget.md#interaction)**(): `boolean` <br> 获取世界UI交互状态|
 | **[isEnemy](Gameplay.UIWidget.md#isenemy)**(): `boolean` <br> 获取是否作为敌方玩家，敌方玩家不显示头顶UI|
@@ -58,7 +59,7 @@ GUI
 
 | Methods |
 | :-----|
-| [getUI](Gameplay.UIWidget.md#getui) |
+| **[getTargetUIWidget](Gameplay.UIWidget.md#gettargetuiwidget)**(): [`UserWidget`](UI.UserWidget.md) <br> 获取UI对象资源|
 | **[refresh](Gameplay.UIWidget.md#refresh)**(): `void` <br> 请求重新绘制|
 | **[setTargetUIWidget](Gameplay.UIWidget.md#settargetuiwidget)**(`uiUserWidget`: [`UserWidget`](UI.UserWidget.md)): `void` <br> 设置UI，可以对当前的UI设置UI资源，UI资源可以从路径获取或直接取其他UI组件引用的资源|
 | **[setUIbyGUID](Gameplay.UIWidget.md#setuibyguid)**(`GUID`: `string`): `void` <br> 通过GUID设置UI|

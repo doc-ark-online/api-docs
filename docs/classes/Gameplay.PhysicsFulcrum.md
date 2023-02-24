@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsFulcrum
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsFulcrum
 
 # PhysicsFulcrum <Badge type="tip" text="Class" /> <Score text="PhysicsFulcrum" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeFourFootStandard
+[Avatar](../groups/Avatar.Avatar.md) / SomatotypeFourFootStandard
 
 # SomatotypeFourFootStandard <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeFourFootStandard" />
 

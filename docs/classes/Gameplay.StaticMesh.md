@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / StaticMesh
+[Avatar](../groups/Avatar.Avatar.md) / StaticMesh
 
 # StaticMesh <Badge type="tip" text="Class" /> <Score text="StaticMesh" />
 

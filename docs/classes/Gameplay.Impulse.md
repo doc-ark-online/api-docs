@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Impulse
+[Avatar](../groups/Avatar.Avatar.md) / Impulse
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 

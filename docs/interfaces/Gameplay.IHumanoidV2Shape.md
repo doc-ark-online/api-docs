@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2Shape
+[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2Shape
 
 # IHumanoidV2Shape <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2Shape" />
 

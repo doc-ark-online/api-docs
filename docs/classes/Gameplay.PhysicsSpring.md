@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsSpring
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsSpring
 
 # PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 

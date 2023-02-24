@@ -1497,11 +1497,6 @@
         "file_name": "Network.Network.md",
         "file_path": "modules/Network.Network.md",
         "name": "HttpResponse"
-      },
-      {
-        "file_name": "Network.Network.md",
-        "file_path": "modules/Network.Network.md",
-        "name": "TransactionType"
       }
     ],
     "Modules Functions": [
@@ -1814,6 +1809,11 @@
         "name": "assetLoaded"
       },
       {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "asyncDownloadAsset"
+      },
+      {
         "file_name": "Util.InputUtil.md",
         "file_path": "modules/Util.InputUtil.md",
         "name": "bindButton"
@@ -2016,11 +2016,6 @@
     ],
     "Modules Type Aliases": [
       {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "maskWordCheckResult"
-      },
-      {
         "file_name": "Util.TweenUtil.md",
         "file_path": "modules/Util.TweenUtil.md",
         "name": "EasingFunction"
@@ -2029,18 +2024,6 @@
         "file_name": "Util.TweenUtil.md",
         "file_path": "modules/Util.TweenUtil.md",
         "name": "InterpolationFunction"
-      },
-      {
-        "file_name": "Util.TweenUtil.md",
-        "file_path": "modules/Util.TweenUtil.md",
-        "name": "UnknownProps"
-      }
-    ],
-    "Modules Variables": [
-      {
-        "file_name": "Util.TweenUtil.md",
-        "file_path": "modules/Util.TweenUtil.md",
-        "name": "TWEEN"
       }
     ]
   },
@@ -2326,11 +2309,6 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "StringCallback"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "onAppearanceDataChanged"
       }
     ]
   },

@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / EffectService
+[Scripiting](../groups/Scripiting.Scripiting.md) / EffectScripiting
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 

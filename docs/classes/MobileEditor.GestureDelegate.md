@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / GestureDelegate
+[Scripiting](../groups/Scripiting.Scripiting.md) / GestureDelegate
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 

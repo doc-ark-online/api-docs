@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ButtonTouchMethod
+[Gui](../groups/Gui.Gui.md) / ButtonTouchMethod
 
 # ButtonTouchMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonTouchMethod" />
 

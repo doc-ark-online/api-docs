@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SmoothSync
+[Avatar](../groups/Avatar.Avatar.md) / SmoothSync
 
 # SmoothSync <Badge type="tip" text="Class" /> <Score text="SmoothSync" />
 

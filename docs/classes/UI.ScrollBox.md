@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ScrollBox
+[Gui](../groups/Gui.Gui.md) / ScrollBox
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 

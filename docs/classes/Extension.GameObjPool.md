@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / GameObjPool
+[Utility](../groups/Utility.Utility.md) / GameObjPool
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 

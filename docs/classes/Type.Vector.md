@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Vector
+[Scripiting](../groups/Scripiting.Scripiting.md) / Vector
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 

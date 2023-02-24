@@ -1,4 +1,4 @@
-[Network](../modules/Network.Network.md) / RequestInit
+[Gameplay](../groups/Gameplay.Gameplay.md) / RequestInit
 
 # RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
 

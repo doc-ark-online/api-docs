@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Geometry
+[Gui](../groups/Gui.Gui.md) / Geometry
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 

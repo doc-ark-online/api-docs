@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsStick
 
 # PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 

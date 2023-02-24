@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / SlateBrushTileType
+[Gui](../groups/Gui.Gui.md) / SlateBrushTileType
 
 # SlateBrushTileType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushTileType" />
 

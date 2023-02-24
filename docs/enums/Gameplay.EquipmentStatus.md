@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EquipmentStatus
+[Avatar](../groups/Avatar.Avatar.md) / EquipmentStatus
 
 # EquipmentStatus <Badge type="tip" text="Enumeration" /> <Score text="EquipmentStatus" />
 

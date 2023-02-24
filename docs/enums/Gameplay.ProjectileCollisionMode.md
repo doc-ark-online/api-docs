@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileCollisionMode
+[Avatar](../groups/Avatar.Avatar.md) / ProjectileCollisionMode
 
 # ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCable
+[Avatar](../groups/Avatar.Avatar.md) / PhysicsCable
 
 # PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 

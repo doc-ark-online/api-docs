@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / RouteService
+[Scripiting](../groups/Scripiting.Scripiting.md) / RouteScripiting
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 

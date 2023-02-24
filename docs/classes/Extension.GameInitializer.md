@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / GameInitializer
+[Utility](../groups/Utility.Utility.md) / GameInitializer
 
 # GameInitializer <Badge type="tip" text="Class" /> <Score text="GameInitializer" />
 

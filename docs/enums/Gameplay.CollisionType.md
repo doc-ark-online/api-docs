@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / CollisionType
+[Avatar](../groups/Avatar.Avatar.md) / CollisionType
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / CameraMode
+[Avatar](../groups/Avatar.Avatar.md) / CameraMode
 
 # CameraMode <Badge type="tip" text="Enumeration" /> <Score text="CameraMode" />
 

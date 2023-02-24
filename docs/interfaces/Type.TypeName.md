@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / TypeName
+[Scripiting](../groups/Scripiting.Scripiting.md) / ScripitingName
 
 # TypeName<T\> <Badge type="tip" text="Interface" /> <Score text="TypeName<T\>" />
 

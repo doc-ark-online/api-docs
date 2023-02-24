@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IPart
+[Avatar](../groups/Avatar.Avatar.md) / IPart
 
 # IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 

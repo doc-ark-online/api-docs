@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Player
+[Avatar](../groups/Avatar.Avatar.md) / Player
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
@@ -1799,4 +1799,3 @@ ___
 
 构造的GameObject
 
-___

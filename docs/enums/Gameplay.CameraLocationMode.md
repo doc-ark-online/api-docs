@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / CameraLocationMode
+[Avatar](../groups/Avatar.Avatar.md) / CameraLocationMode
 
 # CameraLocationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraLocationMode" />
 

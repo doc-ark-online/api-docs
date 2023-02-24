@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PointLight
+[Avatar](../groups/Avatar.Avatar.md) / PointLight
 
 # PointLight <Badge type="tip" text="Class" /> <Score text="PointLight" />
 

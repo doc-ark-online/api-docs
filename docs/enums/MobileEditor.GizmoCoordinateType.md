@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / GizmoCoordinateType
+[Scripiting](../groups/Scripiting.Scripiting.md) / GizmoCoordinateType
 
 # GizmoCoordinateType <Badge type="tip" text="Enumeration" /> <Score text="GizmoCoordinateType" />
 

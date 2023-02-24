@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / SlateColor
+[Gui](../groups/Gui.Gui.md) / SlateColor
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 

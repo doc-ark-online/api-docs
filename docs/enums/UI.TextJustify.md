@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / TextJustify
+[Gui](../groups/Gui.Gui.md) / TextJustify
 
 # TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
 

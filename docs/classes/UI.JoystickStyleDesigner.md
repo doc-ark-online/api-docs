@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / JoystickStyleDesigner
+[Gui](../groups/Gui.Gui.md) / JoystickStyleDesigner
 
 # JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 

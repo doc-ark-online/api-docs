@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SwimmingVolume
+[Avatar](../groups/Avatar.Avatar.md) / SwimmingVolume
 
 # SwimmingVolume <Badge type="tip" text="Class" /> <Score text="SwimmingVolume" />
 

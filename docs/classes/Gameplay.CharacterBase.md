@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / CharacterBase
+[Avatar](../groups/Avatar.Avatar.md) / CharacterBase
 
 # CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
@@ -29,6 +29,7 @@ AVATAR
 
 | Properties |
 | :-----|
+| **[onLoadAppearanceDataAllCompleted](Gameplay.CharacterBase.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onMeshChanged](Gameplay.CharacterBase.md#onmeshchanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onMovementStateChanged](Gameplay.CharacterBase.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 角色在空中时, 控制水平方向移动的灵活度|
 | **[onSetAppearanceDataCompleted](Gameplay.CharacterBase.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 角色在空中时, 控制水平方向移动的灵活度|
@@ -42,7 +43,6 @@ AVATAR
 | **[airControlBoostVelocityThreshold](Gameplay.CharacterBase.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍|
 | **[animationMode](Gameplay.CharacterBase.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md) <br> 动画播放模式|
 | **[animationStance](Gameplay.CharacterBase.md#animationstance)**(): `string` <br> 动画姿态|
-| [appearance](Gameplay.CharacterBase.md#appearance) |
 | **[appearanceType](Gameplay.CharacterBase.md#appearancetype)**(): [`AppearanceType`](../enums/Gameplay.AppearanceType.md) <br> 形象类型|
 | **[baseShadowLocationOffset](Gameplay.CharacterBase.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移|
 | **[baseShadowMaxVisibleHeight](Gameplay.CharacterBase.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度|
@@ -75,6 +75,26 @@ AVATAR
 | **[jumpEnable](Gameplay.CharacterBase.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
 | **[jumpMaxCount](Gameplay.CharacterBase.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
 | **[jumpingOutOfWaterEnable](Gameplay.CharacterBase.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
+| **[maxAcceleration](Gameplay.CharacterBase.md#maxacceleration)**(): `number` <br> 最大加速度|
+| **[maxFallingSpeed](Gameplay.CharacterBase.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
+| **[maxFlySpeed](Gameplay.CharacterBase.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
+| **[maxJumpHeight](Gameplay.CharacterBase.md#maxjumpheight)**(): `number` <br> 最大跳跃高度|
+| **[maxStepHeight](Gameplay.CharacterBase.md#maxstepheight)**(): `number` <br> 获取角色最大可跨越高度|
+| **[maxSwimSpeed](Gameplay.CharacterBase.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
+| **[maxWalkSpeed](Gameplay.CharacterBase.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
+| **[maxWalkSpeedCrouched](Gameplay.CharacterBase.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[moveEnable](Gameplay.CharacterBase.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
+| **[moveFacingDirection](Gameplay.CharacterBase.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
+| **[movementAxisDirection](Gameplay.CharacterBase.md#movementaxisdirection)**(): [`Vector`](Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
+| **[movementDirection](Gameplay.CharacterBase.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md) <br> 运动时依据的正方向|
+| **[movementState](Gameplay.CharacterBase.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.MovementMode.md) <br> 当前角色运动状态|
+| **[outOfWaterZ](Gameplay.CharacterBase.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
+| **[ragdollEnable](Gameplay.CharacterBase.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
+| **[rotateRate](Gameplay.CharacterBase.md#rotaterate)**(): `number` <br> 最大转向速度|
+| **[separateBrakingFrictionEnable](Gameplay.CharacterBase.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
+| **[usedCapsuleCorrection](Gameplay.CharacterBase.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
+| **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
+| **[walkableFloorAngle](Gameplay.CharacterBase.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度|
 
 
 ::: details 点击查看继承
@@ -103,6 +123,37 @@ AVATAR
 
 | Methods |
 | :-----|
+| **[addImpulse](Gameplay.CharacterBase.md#addimpulse)**(`Vector`: [`Vector`](Type.Vector.md), `ignoreMass?`: `boolean`): `void` <br> 添加冲量|
+| **[addMoveInput](Gameplay.CharacterBase.md#addmoveinput)**(`direction`: [`Vector`](Type.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入|
+| **[appearanceReady](Gameplay.CharacterBase.md#appearanceready)**(): `Promise`<`void`\> <br> 在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断|
+| **[attach](Gameplay.CharacterBase.md#attach)**(`gameObject`: `GameObject`, `slotName`: [`SlotType`](../enums/Gameplay.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽|
+| **[clearAppearance](Gameplay.CharacterBase.md#clearappearance)**(): `void` <br> 清空角色形象数据|
+| **[clearDecorations](Gameplay.CharacterBase.md#cleardecorations)**(): `void` <br> 清空所有挂件数据|
+| **[clearOneDecoration](Gameplay.CharacterBase.md#clearonedecoration)**(`GUID`: `string`): `void` <br> 删除一个挂件|
+| **[crouch](Gameplay.CharacterBase.md#crouch)**(`isCrouch`: `boolean`): `void` <br> 下蹲|
+| **[getAppearance](Gameplay.CharacterBase.md#getappearance)**<`T`: extends [`HumanoidV1`](Gameplay.HumanoidV1.md) \\>(): `T`: extends [`HumanoidV1`](Gameplay.HumanoidV1.md) \ <br> 设置外观修改功能|
+| **[getControlRotator](Gameplay.CharacterBase.md#getcontrolrotator)**(`Out?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取控制器的旋转|
+| **[getDecorations](Gameplay.CharacterBase.md#getdecorations)**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <br> 获取当前挂件实例化对象的GUID|
+| **[getHeadUIWidget](Gameplay.CharacterBase.md#getheaduiwidget)**(): [`UIWidget`](Gameplay.UIWidget.md) <br> 获取头顶UIWidget|
+| **[getSlotName](Gameplay.CharacterBase.md#getslotname)**(`slotType`: [`SlotType`](../enums/Gameplay.SlotType.md)): `string` <br> 获取对应插槽名称|
+| **[isPlayingAnimation](Gameplay.CharacterBase.md#isplayinganimation)**(): `boolean` <br> 是否正在播放动画|
+| **[jump](Gameplay.CharacterBase.md#jump)**(): `void` <br> 跳跃|
+| **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`GUID`: `string`, `sync?`: `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象，playAnimation是个快速实现功能的接口,可配置参数有限。loadAnimation可以返回动画,以进行更加精细的动画控制，获取到对象后需用户自己配置参数，手动调用play接口动画才会播放。|
+| **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`decorationString`: `string`, `callback`: [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,给移动角色编辑器提供的能力|
+| **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`GUID`: `string`): `void` <br> 通过GUID加载插槽跟角色编辑数据|
+| **[loadSlotAndEditorDataByPath](Gameplay.CharacterBase.md#loadslotandeditordatabypath)**(`relativePath`: `string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
+| **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`GUID`: `string`, `sync?`: `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
+| **[lookAt](Gameplay.CharacterBase.md#lookat)**(`TargetPoint`: [`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
+| **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`GUID`: `string`, `loopCount?`: `number`, `rate?`: `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。|
+| **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<`T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\>\>(`clz`: [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): `T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> <br> 设置外观修改功能|
+| **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**(`ShapeType`: [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), `CollisionExtent`: [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
+| **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置是否被显示(本地生效)|
+| **[stopStance](Gameplay.CharacterBase.md#stopstance)**(`sync?`: `boolean`): `void` <br> 停止任何正在播放的姿态|
+| **[swimmingDown](Gameplay.CharacterBase.md#swimmingdown)**(`speed`: `number`): `void` <br> 水中下潜|
+| **[swimmingUp](Gameplay.CharacterBase.md#swimmingup)**(`speed`: `number`): `void` <br> 水中上浮|
+| **[switchToFlying](Gameplay.CharacterBase.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
+| **[switchToSwimming](Gameplay.CharacterBase.md#switchtoswimming)**(): `void` <br> 切换为游泳状态|
+| **[switchToWalking](Gameplay.CharacterBase.md#switchtowalking)**(): `void` <br> 切换为行走状态|
 
 
 ::: details 点击查看继承
@@ -1279,18 +1330,1004 @@ ___
 | `value` | `boolean` |
 
 
+
+### maxAcceleration <Score text="maxAcceleration" /> 
+
+• `get` **maxAcceleration**(): `number`
+
+最大加速度
+
+#### Returns
+
+`number`
+
+• `set` **maxAcceleration**(`InMaxAcceleration`): `void`
+
+最大加速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxAcceleration` | `number` |
+
+
 ___
 
-### locallyVisible <Score text="locallyVisible" /> 
+### maxFallingSpeed <Score text="maxFallingSpeed" /> 
 
-• `get` **locallyVisible**(): `boolean`
+• `get` **maxFallingSpeed**(): `number`
 
-**`Deprecated`**
+最大下落速度
 
-since:020 reason:api重构 replacement:getVisibility()
+#### Returns
 
-是否可见(本地设置)
+`number`
+
+• `set` **maxFallingSpeed**(`speed`): `void`
+
+最大下落速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `speed` | `number` |
+
+
+___
+
+### maxFlySpeed <Score text="maxFlySpeed" /> 
+
+• `get` **maxFlySpeed**(): `number`
+
+最大飞行速度
+
+#### Returns
+
+`number`
+
+• `set` **maxFlySpeed**(`InMaxFlySpeed`): `void`
+
+最大飞行速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxFlySpeed` | `number` |
+
+
+___
+
+### maxJumpHeight <Score text="maxJumpHeight" /> 
+
+• `get` **maxJumpHeight**(): `number`
+
+最大跳跃高度
+
+#### Returns
+
+`number`
+
+• `set` **maxJumpHeight**(`InMaxJumpHeight`): `void`
+
+最大跳跃高度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxJumpHeight` | `number` |
+
+
+___
+
+### maxStepHeight <Score text="maxStepHeight" /> 
+
+• `get` **maxStepHeight**(): `number`
+
+获取角色最大可跨越高度
+
+#### Returns
+
+`number`
+
+• `set` **maxStepHeight**(`InMaxStepHeight`): `void`
+
+设置角色最大可跨越高度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxStepHeight` | `number` |
+
+
+___
+
+### maxSwimSpeed <Score text="maxSwimSpeed" /> 
+
+• `get` **maxSwimSpeed**(): `number`
+
+最大游泳速度
+
+#### Returns
+
+`number`
+
+• `set` **maxSwimSpeed**(`InMaxSwimSpeed`): `void`
+
+最大游泳速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxSwimSpeed` | `number` |
+
+
+___
+
+### maxWalkSpeed <Score text="maxWalkSpeed" /> 
+
+• `get` **maxWalkSpeed**(): `number`
+
+地面最大速度
+
+#### Returns
+
+`number`
+
+• `set` **maxWalkSpeed**(`InMaxWalkSpeed`): `void`
+
+地面最大速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMaxWalkSpeed` | `number` |
+
+
+___
+
+### maxWalkSpeedCrouched <Score text="maxWalkSpeedCrouched" /> 
+
+• `get` **maxWalkSpeedCrouched**(): `number`
+
+地面蹲伏行走时的最大移动速度
+
+#### Returns
+
+`number`
+
+• `set` **maxWalkSpeedCrouched**(`maxSpeed`): `void`
+
+地面蹲伏行走时的最大移动速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `maxSpeed` | `number` |
+
+
+___
+
+### moveEnable <Score text="moveEnable" /> 
+
+• `get` **moveEnable**(): `boolean`
+
+启用/禁用移动能力
 
 #### Returns
 
 `boolean`
+
+• `set` **moveEnable**(`value`): `void`
+
+启用/禁用移动能力
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### moveFacingDirection <Score text="moveFacingDirection" /> 
+
+• `get` **moveFacingDirection**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
+
+运动面朝方向
+
+#### Returns
+
+[`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md)
+
+• `set` **moveFacingDirection**(`InMoveFacingDirection`): `void`
+
+运动面朝方向
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMoveFacingDirection` | [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) |
+
+
+___
+
+### movementAxisDirection <Score text="movementAxisDirection" /> 
+
+• `get` **movementAxisDirection**(): [`Vector`](Type.Vector.md)
+
+运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **movementAxisDirection**(`InMovementAxisDirection`): `void`
+
+运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMovementAxisDirection` | [`Vector`](Type.Vector.md) |
+
+
+___
+
+### movementDirection <Score text="movementDirection" /> 
+
+• `get` **movementDirection**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md)
+
+运动时依据的正方向
+
+::: warning Precautions
+
+如果是控制器方向, 就以控制器坐标系为轴;
+如果是定轴方向，就以世界坐标系为轴;
+如果是视线方向, 就以相机坐标系为轴. 在玩家相机不存在Z轴旋转时, 控制器方向和视线方向效果一致, 人形对象的控制器方向和视线方向效果永远一致.
+
+:::
+
+#### Returns
+
+[`MovementDirection`](../enums/Gameplay.MovementDirection.md)
+
+• `set` **movementDirection**(`InMovementDirection`): `void`
+
+运动时依据的正方向
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InMovementDirection` | [`MovementDirection`](../enums/Gameplay.MovementDirection.md) |
+
+
+___
+
+### movementState <Score text="movementState" /> 
+
+• `get` **movementState**(): [`MovementMode`](../enums/Gameplay.MovementMode.md)
+
+当前角色运动状态
+
+#### Returns
+
+[`MovementMode`](../enums/Gameplay.MovementMode.md)
+
+
+### outOfWaterZ <Score text="outOfWaterZ" /> 
+
+• `get` **outOfWaterZ**(): `number`
+
+出水时Z轴方向上的速度
+
+#### Returns
+
+`number`
+
+• `set` **outOfWaterZ**(`value`): `void`
+
+出水时Z轴方向上的速度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+
+
+### ragdollEnable <Score text="ragdollEnable" /> 
+
+• `get` **ragdollEnable**(): `boolean`
+
+启用/禁用布娃娃状态
+
+#### Returns
+
+`boolean`
+
+• `set` **ragdollEnable**(`value`): `void`
+
+启用/禁用布娃娃状态
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+
+### rotateRate <Score text="rotateRate" /> 
+
+• `get` **rotateRate**(): `number`
+
+最大转向速度
+
+::: warning Precautions
+
+设置为负值时, 转向速度被视为无限大, 可以瞬间转向
+
+:::
+
+#### Returns
+
+`number`
+
+• `set` **rotateRate**(`InRotateRate`): `void`
+
+最大转向速度
+
+::: warning Precautions
+
+设置为负值时, 转向速度被视为无限大, 可以瞬间转向
+
+:::
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InRotateRate` | `number` |
+
+
+___
+
+### separateBrakingFrictionEnable <Score text="separateBrakingFrictionEnable" /> 
+
+• `get` **separateBrakingFrictionEnable**(): `boolean`
+
+使用单独制动摩擦
+
+#### Returns
+
+`boolean`
+
+• `set` **separateBrakingFrictionEnable**(`used`): `void`
+
+使用单独制动摩擦
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `used` | `boolean` |
+
+
+
+### usedCapsuleCorrection <Score text="usedCapsuleCorrection" /> 
+
+• `get` **usedCapsuleCorrection**(): `boolean`
+
+使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+
+#### Returns
+
+`boolean`
+
+• `set` **usedCapsuleCorrection**(`usedCapsuleCorrection`): `void`
+
+使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `usedCapsuleCorrection` | `boolean` |
+
+
+___
+
+### velocity <Score text="velocity" /> 
+
+• `get` **velocity**(): [`Vector`](Type.Vector.md)
+
+当前移动速度
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+___
+
+### walkableFloorAngle <Score text="walkableFloorAngle" /> 
+
+• `get` **walkableFloorAngle**(): `number`
+
+可行走的最大角度
+
+#### Returns
+
+`number`
+
+• `set` **walkableFloorAngle**(`InWalkableFloorAngle`): `void`
+
+可行走的最大角度
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InWalkableFloorAngle` | `number` |
+
+
+
+## Methods
+
+### addImpulse <Score text="addImpulse" /> 
+
+• **addImpulse**(`Vector`, `ignoreMass?`): `void` <Badge type="tip" text="server" />
+
+添加冲量
+
+
+::: warning Precautions
+
+质量固定为100, 受质量影响的算法为: 冲量按位除以质量
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Vector` | [`Vector`](Type.Vector.md) | 应用的冲量 |
+| `ignoreMass?` | `boolean` | 是否忽略质量对冲量的影响 default:false |
+
+
+___
+
+### addMoveInput <Score text="addMoveInput" /> 
+
+• **addMoveInput**(`direction`): `void` 
+
+沿着给定的方向向量添加移动输入
+
+
+::: warning Precautions
+
+效果受movementDirection属性影响
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `direction` | [`Vector`](Type.Vector.md) | 输入的方向 |
+
+
+___
+
+### appearanceReady <Score text="appearanceReady" /> 
+
+• **appearanceReady**(): `Promise`<`void`\> <Badge type="tip" text="client" />
+
+在外观数据准备好后返回并执行已绑定的函数，保证当前角色换装表现和数据是正确的。在设置角色外观形象之前，可以用做这个判断
+
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+
+### attach <Score text="attach" /> 
+
+• **attach**(`gameObject`, `slotName`): `void` 
+
+将物体附着到人物角色的指定插槽
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameObject` | `GameObject` | 物体 |
+| `slotName` | [`SlotType`](../enums/Gameplay.SlotType.md) | 插槽类型 |
+
+
+
+### clearAppearance <Score text="clearAppearance" /> 
+
+• **clearAppearance**(): `void` 
+
+清空角色形象数据
+
+
+
+___
+
+### clearDecorations <Score text="clearDecorations" /> 
+
+• **clearDecorations**(): `void` <Badge type="tip" text="client" />
+
+清空所有挂件数据
+
+
+
+___
+
+### clearOneDecoration <Score text="clearOneDecoration" /> 
+
+• **clearOneDecoration**(`GUID`): `void` <Badge type="tip" text="client" />
+
+删除一个挂件
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` |  实例化后的挂件对象GUID |
+
+
+
+### crouch <Score text="crouch" /> 
+
+• **crouch**(`isCrouch`): `void` 
+
+下蹲
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isCrouch` | `boolean` | 是否下蹲 |
+
+
+
+### getAppearance <Score text="getAppearance" /> 
+
+• **getAppearance**<`T`\>(): `T` 
+
+设置外观修改功能
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`HumanoidV1`](Gameplay.HumanoidV1.md) \| [`HumanoidV2`](Gameplay.HumanoidV2.md) \| [`FourFootStandard`](Gameplay.FourFootStandard.md) |
+
+#### Returns
+
+`T`
+
+外观修改对象
+
+
+### getControlRotator <Score text="getControlRotator" /> 
+
+• **getControlRotator**(`Out?`): [`Rotation`](Type.Rotation.md) 
+
+获取控制器的旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Out?` | [`Rotation`](Type.Rotation.md) | 获取控制器旋转 default:出参，可选参数 |
+
+#### Returns
+
+[`Rotation`](Type.Rotation.md)
+
+控制器的旋转
+
+___
+
+### getDecorations <Score text="getDecorations" /> 
+
+• **getDecorations**(): [`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[] <Badge type="tip" text="client" />
+
+获取当前挂件实例化对象的GUID
+
+
+#### Returns
+
+[`DecorationTuple`](../modules/Gameplay.Gameplay.md#decorationtuple)[]
+
+GUID数组
+
+
+### getHeadUIWidget <Score text="getHeadUIWidget" /> 
+
+• **getHeadUIWidget**(): [`UIWidget`](Gameplay.UIWidget.md) 
+
+获取头顶UIWidget
+
+
+#### Returns
+
+[`UIWidget`](Gameplay.UIWidget.md)
+
+头顶UIWidget对象
+
+
+### getSlotName <Score text="getSlotName" /> 
+
+• **getSlotName**(`slotType`): `string` 
+
+获取对应插槽名称
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `slotType` | [`SlotType`](../enums/Gameplay.SlotType.md) | 插槽类型 |
+
+#### Returns
+
+`string`
+
+插槽名称(string)
+
+
+### isPlayingAnimation <Score text="isPlayingAnimation" /> 
+
+• **isPlayingAnimation**(): `boolean` <Badge type="tip" text="client" />
+
+是否正在播放动画
+
+
+#### Returns
+
+`boolean`
+
+是否正在播放动画
+
+
+### jump <Score text="jump" /> 
+
+• **jump**(): `void` 
+
+跳跃
+
+
+
+___
+
+### loadAnimation <Score text="loadAnimation" /> 
+
+• **loadAnimation**(`GUID`, `sync?`): [`Animation`](Gameplay.Animation.md) 
+
+加载动画,获取到动画对象，playAnimation是个快速实现功能的接口,可配置参数有限。loadAnimation可以返回动画,以进行更加精细的动画控制，获取到对象后需用户自己配置参数，手动调用play接口动画才会播放。
+
+
+使用示例:加载并播放动画
+```ts
+let anim = player.character.loadAnimation(animGUID);
+anim.play();
+anim.rate = 0.5;
+anim.loop = 1;
+anim.onAnimFinished.add(()=>{
+      ..........
+})
+anim.play()
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 动画GUID |
+| `sync?` | `boolean` | Animation对象是否同步 default:true |
+
+#### Returns
+
+[`Animation`](Gameplay.Animation.md)
+
+Animation 对象
+
+___
+
+### loadDecoration <Score text="loadDecoration" /> 
+
+• **loadDecoration**(`decorationString`, `callback`): `void` <Badge type="tip" text="client" />
+
+加载挂件,给移动角色编辑器提供的能力
+
+::: warning Precautions
+
+数据格式为："骨架名字#112801#Glasses#0,0,0|0,-90,0|1,1,1"
+
+:::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `decorationString` | `string` |  一个挂件数据 |
+| `callback` | [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback) |  挂件对象的GUID |
+
+
+___
+
+### loadSlotAndEditorDataByGuid <Score text="loadSlotAndEditorDataByGuid" /> 
+
+• **loadSlotAndEditorDataByGuid**(`GUID`): `void` 
+
+通过GUID加载插槽跟角色编辑数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | Slot GUID |
+
+
+___
+
+### loadSlotAndEditorDataByPath <Score text="loadSlotAndEditorDataByPath" /> 
+
+• **loadSlotAndEditorDataByPath**(`relativePath`): `void` 
+
+通过路径加载插槽跟角色编辑数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `relativePath` | `string` | 相对路径 |
+
+
+___
+
+### loadStance <Score text="loadStance" /> 
+
+• **loadStance**(`GUID`, `sync?`): [`SubStance`](Gameplay.SubStance.md) 
+
+创建一个二级姿态对象并返回
+
+
+::: warning Precautions
+
+即使在服务器上调用loadStance(), 如果sync参数置为false, 也不会同步操作到客户端.
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` |  预制姿态资源GUID或动画资源GUID |
+| `sync?` | `boolean` |  对姿态对象的操作是否自动同步 default:true |
+
+#### Returns
+
+[`SubStance`](Gameplay.SubStance.md)
+
+二级姿态对象
+
+___
+
+### lookAt <Score text="lookAt" /> 
+
+• **lookAt**(`TargetPoint`): `void` 
+
+角色面朝目标点
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `TargetPoint` | [`Vector`](Type.Vector.md) | 目标点 |
+
+
+
+### playAnimation <Score text="playAnimation" /> 
+
+• **playAnimation**(`GUID`, `loopCount?`, `rate?`): [`Animation`](Gameplay.Animation.md) 
+
+播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。
+
+
+使用示例:播放动画
+```ts
+player.character.playAnimation(animGUID);
+....... or ......
+player.character.playAnimation(animGUID，100，2);
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 动画GUID |
+| `loopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
+| `rate?` | `number` | 播放速率，1表示正常速率 default:1 |
+
+#### Returns
+
+[`Animation`](Gameplay.Animation.md)
+
+Animation 对象
+
+
+### setAppearance <Score text="setAppearance" /> 
+
+• **setAppearance**<`T`\>(`clz`): `T` 
+
+设置外观修改功能
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `clz` | [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\> | 外观修改接口类类型 |
+
+#### Returns
+
+`T`
+
+外观修改对象
+
+
+### setCollisionShapeAndExtent <Score text="setCollisionShapeAndExtent" /> 
+
+• **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void` 
+
+设置不同形状不同大小的碰撞体
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ShapeType` | [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md) | 启用的碰撞形状 |
+| `CollisionExtent` | [`Vector`](Type.Vector.md) | 启用的碰撞形状 |
+
+
+___
+
+### setLocallyVisibility <Score text="setLocallyVisibility" /> 
+
+• **setLocallyVisibility**(`status`, `propagateToChildren?`): `void` <Badge type="tip" text="client" />
+
+设置是否被显示(本地生效)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `status` | [`PropertyStatus`](../enums/Type.PropertyStatus.md) | 状态 |
+| `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
+
+
+
+### stopStance <Score text="stopStance" /> 
+
+• **stopStance**(`sync?`): `void` 
+
+停止任何正在播放的姿态
+
+
+::: warning Precautions
+
+当你不想保存执行play()后的姿态对象时, 可以直接调用这个方法停止姿态. 对单端对象操作时需要把sync参数置为false.
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `sync?` | `boolean` |  是否自动同步 default:true |
+
+
+___
+
+### swimmingDown <Score text="swimmingDown" /> 
+
+• **swimmingDown**(`speed`): `void` 
+
+水中下潜
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `speed` | `number` | 下潜速度不能超过MaxSwimSpeed(游泳最大速度) |
+
+
+___
+
+### swimmingUp <Score text="swimmingUp" /> 
+
+• **swimmingUp**(`speed`): `void` 
+
+水中上浮
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `speed` | `number` | 上浮速度不能超过MaxSwimSpeed(游泳最大速度) |
+
+
+___
+
+### switchToFlying <Score text="switchToFlying" /> 
+
+• **switchToFlying**(): `void` 
+
+切换为飞行状态
+
+
+
+___
+
+### switchToSwimming <Score text="switchToSwimming" /> 
+
+• **switchToSwimming**(): `void` 
+
+切换为游泳状态
+
+
+::: warning Precautions
+
+仅在游泳区域中生效
+
+:::
+
+
+___
+
+### switchToWalking <Score text="switchToWalking" /> 
+
+• **switchToWalking**(): `void` 
+
+切换为行走状态
+
+

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Sound
+[Avatar](../groups/Avatar.Avatar.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
@@ -36,6 +36,14 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | **[audioAsset](Gameplay.Sound.md#audioasset)**(`assetGuid`: `string`): `void` <br> 设置音效|
 | **[autoPlay](Gameplay.Sound.md#autoplay)**(): `boolean` <br> 获取是否自动播放|
 | **[currentProgress](Gameplay.Sound.md#currentprogress)**(): `number` <br> 获取当前播放时长进度|
+| **[duration](Gameplay.Sound.md#duration)**(): `number` <br> 获取音效时长|
+| **[innerRadius](Gameplay.Sound.md#innerradius)**(): `number` <br> 获取音量内部半径|
+| **[loop](Gameplay.Sound.md#loop)**(): `boolean` <br> 获取是否循环播放|
+| **[outerRadius](Gameplay.Sound.md#outerradius)**(): `number` <br> 获取衰减距离|
+| **[playState](Gameplay.Sound.md#playstate)**(): `boolean` <br> 获取音效播放状态|
+| **[spatialization](Gameplay.Sound.md#spatialization)**(): `boolean` <br> 获取音效空间化|
+| **[uiSound](Gameplay.Sound.md#uisound)**(): `boolean` <br> 获取是否是UI音效|
+| **[volumeMultiplier](Gameplay.Sound.md#volumemultiplier)**(): `number` <br> 获取音量比例|
 
 
 ::: details 点击查看继承
@@ -64,6 +72,9 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 
 | Methods |
 | :-----|
+| **[pause](Gameplay.Sound.md#pause)**(): `void` <br> 暂停播放特效|
+| **[play](Gameplay.Sound.md#play)**(): `void` <br> 播放音效|
+| **[stop](Gameplay.Sound.md#stop)**(): `void` <br> 停止播放特效|
 
 
 ::: details 点击查看继承
@@ -221,21 +232,21 @@ ___
 
 ___
 
-### drawInnerBounds <Score text="drawInnerBounds" /> 
+### duration <Score text="duration" /> 
 
-• `get` **drawInnerBounds**(): `boolean`
+• `get` **duration**(): `number` 
 
-**`Deprecated`**
+获取音效时长
 
-since:022 reason: 删除接口 replacement:
-
-获取是否绘制Bounds辅助线
 
 #### Returns
 
-`boolean`
+`number`
 
-是否绘制
+音效时长(ms)
+
+
+### innerRadius <Score text="innerRadius" /> 
 
 • `get` **innerRadius**(): `number`
 
@@ -246,3 +257,180 @@ since:022 reason: 删除接口 replacement:
 `number`
 
 音量内部半径
+
+• `set` **innerRadius**(`innerRadius`): `void`
+
+设置音量内部半径
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `innerRadius` | `number` | 设置半径 |
+
+
+
+### loop <Score text="loop" /> 
+
+• `get` **loop**(): `boolean`
+
+获取是否循环播放
+
+#### Returns
+
+`boolean`
+
+是否循环
+
+• `set` **loop**(`Loop`): `void`
+
+设置循环播放
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Loop` | `boolean` | 设置是否开启循环 |
+
+
+
+### outerRadius <Score text="outerRadius" /> 
+
+• `get` **outerRadius**(): `number`
+
+获取衰减距离
+
+#### Returns
+
+`number`
+
+距离
+
+• `set` **outerRadius**(`outerRadius`): `void`
+
+设置外部半径（衰减距离）
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `outerRadius` | `number` | 距离 |
+
+
+
+### playState <Score text="playState" /> 
+
+• `get` **playState**(): `boolean` 
+
+获取音效播放状态
+
+
+#### Returns
+
+`boolean`
+
+是否正在播放
+
+
+### spatialization <Score text="spatialization" /> 
+
+• `get` **spatialization**(): `boolean`
+
+获取音效空间化
+
+#### Returns
+
+`boolean`
+
+是否开启音效空间化
+
+• `set` **spatialization**(`spatialization`): `void`
+
+设置音效空间化，若是，则开启空间传播衰减
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `spatialization` | `boolean` | 设置开启音效空间化 |
+
+
+
+### uiSound <Score text="uiSound" /> 
+
+• `get` **uiSound**(): `boolean` 
+
+获取是否是UI音效
+
+
+#### Returns
+
+`boolean`
+
+Vector XYZ 0-1
+
+• `set` **uiSound**(`uiSound`): `void` 
+
+设置是否是UI音效
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `uiSound` | `boolean` | 是否用于UI |
+
+
+
+### volumeMultiplier <Score text="volumeMultiplier" /> 
+
+• `get` **volumeMultiplier**(): `number`
+
+获取音量比例
+
+#### Returns
+
+`number`
+
+音量比例
+
+• `set` **volumeMultiplier**(`volumeMultiplier`): `void`
+
+设置音量比例
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `volumeMultiplier` | `number` | 音量比例 |
+
+
+
+## Methods
+
+### pause <Score text="pause" /> 
+
+• **pause**(): `void` 
+
+暂停播放特效
+
+
+
+___
+
+### play <Score text="play" /> 
+
+• **play**(): `void` 
+
+播放音效
+
+
+
+
+### stop <Score text="stop" /> 
+
+• **stop**(): `void` 
+
+停止播放特效
+
+

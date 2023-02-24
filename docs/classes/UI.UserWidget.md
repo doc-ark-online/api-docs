@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UserWidget
+[Gui](../groups/Gui.Gui.md) / UserWidget
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 

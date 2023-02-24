@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2FrontHairPart
+[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2FrontHairPart
 
 # HumanoidV2FrontHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2FrontHairPart" />
 

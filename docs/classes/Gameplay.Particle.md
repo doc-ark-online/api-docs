@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Particle
+[Avatar](../groups/Avatar.Avatar.md) / Particle
 
 # Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 

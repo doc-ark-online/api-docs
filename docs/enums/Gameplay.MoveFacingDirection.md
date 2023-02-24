@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / MoveFacingDirection
+[Avatar](../groups/Avatar.Avatar.md) / MoveFacingDirection
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 
