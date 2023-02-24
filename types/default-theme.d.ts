@@ -90,7 +90,8 @@ export namespace DefaultTheme {
   export type NavItemWithLink = {
     text: string
     link: string
-
+    /** 跳转的时候是否保留本地路径 */
+    path?: boolean
     /**
      * `activeMatch` is expected to be a regex string. We can't use actual
      * RegExp object here because it isn't serializable
