@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / PurchaseScripiting
+[Monetization](../groups/Monetization.Monetization.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsLinearMotor
+[Physics](../groups/Physics.Physics.md) / PhysicsLinearMotor
 
 # PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 

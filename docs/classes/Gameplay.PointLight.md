@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PointLight
+[Lighting](../groups/Lighting.Lighting.md) / PointLight
 
 # PointLight <Badge type="tip" text="Class" /> <Score text="PointLight" />
 

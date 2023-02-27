@@ -5,18 +5,18 @@ Scripiting
 ## Table of contents
 | Classes |
 | :-----|
-| [EventListener](../classes/Events.EventListener.md) <br> 事件监听器 |
-| [EditorMode](../classes/MobileEditor.EditorMode.md) <br> 移动编辑器模式切换 |
-| [GestureDelegate](../classes/MobileEditor.GestureDelegate.md) <br> 手势代理类 |
-| [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 |
-| [UGCService](../classes/Service.UGCService.md) <br> 用户建造服务 |
 | [Action](../classes/Type.Action.md) <br> 任意参数的代理 |
 | [Action1](../classes/Type.Action1.md) <br> 一个参数的代理 |
 | [Action2](../classes/Type.Action2.md) <br> 两个参数的代理 |
 | [Action3](../classes/Type.Action3.md) <br> 三个参数的代理 |
 | [Delegate](../classes/Type.Delegate.md) <br> 委托 |
+| [EditorMode](../classes/MobileEditor.EditorMode.md) <br> 移动编辑器模式切换 |
+| [EventListener](../classes/Events.EventListener.md) <br> 事件监听器 |
+| [GestureDelegate](../classes/MobileEditor.GestureDelegate.md) <br> 手势代理类 |
+| [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 |
 | [MulticastDelegate](../classes/Type.MulticastDelegate.md) <br> 多播委托接口 |
 | [MulticastGameObjectDelegate](../classes/Type.MulticastGameObjectDelegate.md) <br> 广播代理 |
+| [UGCService](../classes/Service.UGCService.md) <br> 用户建造服务 |
 
 
 | Enums |
@@ -24,8 +24,8 @@ Scripiting
 | [DispatchEventResult](../enums/Events.DispatchEventResult.md) <br> 事件发送的结果 |
 | [GizmoCoordinateType](../enums/MobileEditor.GizmoCoordinateType.md) <br> gizmo坐标轴类型 |
 | [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo类型 |
-| [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选 |
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方 |
+| [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选 |
 
 
 | Interfaces |
@@ -37,7 +37,9 @@ Scripiting
 
 | Modules Functions |
 | :-----|
+| **[UGCEditor](Scripiting.Scripiting.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
 | **[addClientListener](Scripiting.Scripiting.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](../classes/Gameplay.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 服务器监听客户端发来的事件|
+| **[addEditorPawnPanInputMovement](Scripiting.Scripiting.md#addeditorpawnpaninputmovement)**(`input`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 添加对编辑器人物的输入 - 只作用于编辑器人物|
 | **[addExitListener](Scripiting.Scripiting.md#addexitlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加退出游戏时执行的回调函数|
 | **[addFocusListener](Scripiting.Scripiting.md#addfocuslistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口聚焦时执行的回调函数|
 | **[addLocalListener](Scripiting.Scripiting.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听本地事件|
@@ -47,22 +49,20 @@ Scripiting
 | **[addPlayerLeftListener](Scripiting.Scripiting.md#addplayerleftlistener)**(`listener`: (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家离开room事件|
 | **[addServerListener](Scripiting.Scripiting.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 客户端监听服务器事件|
 | **[addUnfocusedListener](Scripiting.Scripiting.md#addunfocusedlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
-| **[dispatchLocal](Scripiting.Scripiting.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
-| **[dispatchToAllClient](Scripiting.Scripiting.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
-| **[dispatchToClient](Scripiting.Scripiting.md#dispatchtoclient)**(`player`: [`Player`](../classes/Gameplay.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
-| **[dispatchToServer](Scripiting.Scripiting.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 客户端发送事件给服务器|
-| **[autoExecute](Scripiting.Scripiting.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[saveProperty](Scripiting.Scripiting.md#saveproperty)**(`target`: [`Subdata`](../classes/Extension.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
-| **[UGCEditor](Scripiting.Scripiting.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
-| **[addEditorPawnPanInputMovement](Scripiting.Scripiting.md#addeditorpawnpaninputmovement)**(`input`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 添加对编辑器人物的输入 - 只作用于编辑器人物|
 | **[asyncCaptureAvatar](Scripiting.Scripiting.md#asynccaptureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
 | **[asyncGetResourceList](Scripiting.Scripiting.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <br> 获取资源列表|
 | **[asyncSaveProject](Scripiting.Scripiting.md#asyncsaveproject)**(): `Promise`<`boolean`\> <br> 保存当前游戏项目|
+| **[autoExecute](Scripiting.Scripiting.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
 | **[beginActorPropertiesChange](Scripiting.Scripiting.md#beginactorpropertieschange)**(`target`: `Base`): `void` <br> 开始记录撤销恢复的actor属性|
 | **[beginActorTransformChange](Scripiting.Scripiting.md#beginactortransformchange)**(`target`: `Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](Scripiting.Scripiting.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/Type.Vector.md), `deltaScale`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
 | **[captureAvatar](Scripiting.Scripiting.md#captureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
 | **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[dispatchLocal](Scripiting.Scripiting.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
+| **[dispatchToAllClient](Scripiting.Scripiting.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
+| **[dispatchToClient](Scripiting.Scripiting.md#dispatchtoclient)**(`player`: [`Player`](../classes/Gameplay.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
+| **[dispatchToServer](Scripiting.Scripiting.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 客户端发送事件给服务器|
 | **[endActorPropertiesChange](Scripiting.Scripiting.md#endactorpropertieschange)**(`target`: `Base`): `void` <br> 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](Scripiting.Scripiting.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <br> 结束记录actor的transform|
 | **[getEditorPawnLocation](Scripiting.Scripiting.md#geteditorpawnlocation)**(): [`Vector`](../classes/Type.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
@@ -84,6 +84,7 @@ Scripiting
 | **[recordingCharacterGif](Scripiting.Scripiting.md#recordingcharactergif)**(`Character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](Scripiting.Scripiting.md#redo)**(): `void` <br> 执行恢复操作|
 | **[saveProject](Scripiting.Scripiting.md#saveproject)**(): `void` <br> 保存当前游戏项目|
+| **[saveProperty](Scripiting.Scripiting.md#saveproperty)**(`target`: [`Subdata`](../classes/Extension.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
 | **[screenShot](Scripiting.Scripiting.md#screenshot)**(`Resolution`: [`Vector2`](../classes/Type.Vector2.md), `StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `Width`: `number`, `Height`: `number`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 屏幕指定区域截图|
 | **[screenShotExist](Scripiting.Scripiting.md#screenshotexist)**(`absPath`: `string`): `boolean` <br> 验证绝对路径下截图是否存在|
 | **[sendShareId](Scripiting.Scripiting.md#sendshareid)**(`absPath`: `string`, `shareId`: `string`, `bShowUuid`: `boolean`): `void` <br> 将角色数据ID连同角色截图一同发给MGS|
@@ -101,8 +102,26 @@ Scripiting
 | **[undo](Scripiting.Scripiting.md#undo)**(): `void` <br> 执行撤销操作|
 | **[uploadScreenShot](Scripiting.Scripiting.md#uploadscreenshot)**(`filePath`: `string`, `fileType`: `number`, `callbackURL?`: (`responseURL`: `string`) => `void`): `void` <br> 上传角色头像或全身照到服务器后发送到MGS|
 | **[uploadScreenShots](Scripiting.Scripiting.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <br> 上传角色头像及全身照到服务器后发送到MGS|
-| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 
+
+## Functions
+
+### UGCEditor <Score text="UGCEditor" /> 
+
+• **UGCEditor**(`target`): `void` <Badge type="tip" text="client" />
+
+UGC Editor使用的装饰器,避免数据被还原
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `any` |  目标 |
 
 ## Functions
 
@@ -135,6 +154,25 @@ SCRIPITING
 [`EventListener`](../classes/Events.EventListener.md)
 
 返回一个事件监听器
+___
+
+### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
+
+• **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="client" />
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
+
 ___
 
 ### addExitListener <Score text="addExitListener" /> 
@@ -438,6 +476,267 @@ listener.disconnect();
 返回一个事件监听器
 ___
 
+### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
+
+• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+异步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+生成的截图的本地绝对路径
+___
+
+### asyncGetResourceList <Score text="asyncGetResourceList" /> 
+
+• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+**`Groups`**
+
+SCRIPITING
+
+获取资源列表
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `classification` | `number` | 分类id |
+| `lastID` | `number` | 查询偏移量 |
+| `pageSize` | `number` | 每页查询大小 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+___
+
+### asyncSaveProject <Score text="asyncSaveProject" /> 
+
+• **asyncSaveProject**(): `Promise`<`boolean`\> 
+
+保存当前游戏项目
+
+**`Groups`**
+
+SCRIPITING
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+## Functions
+
+### autoExecute <Score text="autoExecute" /> 
+
+• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` 
+
+类装饰器-自动执行某个方法
+
+**`Groups`**
+
+SCRIPITING
+
+::: warning Precautions
+
+调用发生在所有游戏脚本的生命周期之前
+
+:::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fnName` | `string` |  要自动执行的方法名 |
+
+#### Returns
+
+`fn`
+
+装饰器方法体
+
+• (`target?`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target?` | `unknown` |
+
+##### Returns
+
+`void`
+___
+
+### beginActorPropertiesChange <Score text="beginActorPropertiesChange" /> 
+
+• **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="client" />
+
+开始记录撤销恢复的actor属性
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+___
+
+### beginActorTransformChange <Score text="beginActorTransformChange" /> 
+
+• **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="client" />
+
+开始记录actor的transform属性
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+___
+
+### calculateActorEqualScale <Score text="calculateActorEqualScale" /> 
+
+• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
+
+计算actor的等比缩放
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `currentScale` | [`Vector`](../classes/Type.Vector.md) | 当前缩放值 |
+| `deltaScale` | [`Vector`](../classes/Type.Vector.md) | 缩放值增量 |
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+计算后的缩放值
+___
+
+### captureAvatar <Score text="captureAvatar" /> 
+
+• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
+
+同步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+___
+
+### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+___
+
+### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+
+• **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Groups`**
+
+SCRIPITING
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenX` | `number` |  屏幕X轴坐标值 default: |
+| `screenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+___
+
 ### dispatchLocal <Score text="dispatchLocal" /> 
 
 • **dispatchLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) 
@@ -554,305 +853,6 @@ SCRIPITING
 
 [`DispatchEventResult`](../enums/Events.DispatchEventResult.md)
 
-## Functions
-
-### autoExecute <Score text="autoExecute" /> 
-
-• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` 
-
-类装饰器-自动执行某个方法
-
-**`Groups`**
-
-SCRIPITING
-
-::: warning Precautions
-
-调用发生在所有游戏脚本的生命周期之前
-
-:::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fnName` | `string` |  要自动执行的方法名 |
-
-#### Returns
-
-`fn`
-
-装饰器方法体
-
-• (`target?`): `void`
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `target?` | `unknown` |
-
-##### Returns
-
-`void`
-___
-
-### saveProperty <Score text="saveProperty" /> 
-
-• **saveProperty**(`target`, `propertyKey`): `void` 
-
-**`Groups`**
-
-SCRIPITING
-
-属性装饰器-永久存储属性
-
-::: warning Precautions
-
-用于设置数据类(继承Subdata的类)哪些属性是要永久存储的
-
-:::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Subdata`](../classes/Extension.Subdata.md) |  类实例 |
-| `propertyKey` | `string` |  属性名 |
-## Functions
-
-### UGCEditor <Score text="UGCEditor" /> 
-
-• **UGCEditor**(`target`): `void` <Badge type="tip" text="client" />
-
-UGC Editor使用的装饰器,避免数据被还原
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `any` |  目标 |
-
-___
-
-### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
-
-• **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="client" />
-
-添加对编辑器人物的输入 - 只作用于编辑器人物
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
-
-___
-
-### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
-
-• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-异步对指定虚拟角色进行截取，截图保存在本地固定路径下
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
-| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` |  视场; |
-| `fileName` | `string` |  文件名 |
-
-#### Returns
-
-`Promise`<`string`\>
-
-生成的截图的本地绝对路径
-___
-
-### asyncGetResourceList <Score text="asyncGetResourceList" /> 
-
-• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-**`Groups`**
-
-SCRIPITING
-
-获取资源列表
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `classification` | `number` | 分类id |
-| `lastID` | `number` | 查询偏移量 |
-| `pageSize` | `number` | 每页查询大小 |
-
-#### Returns
-
-`Promise`<`string`\>
-
-请求结果(Json字符串)
-___
-
-### asyncSaveProject <Score text="asyncSaveProject" /> 
-
-• **asyncSaveProject**(): `Promise`<`boolean`\> 
-
-保存当前游戏项目
-
-**`Groups`**
-
-SCRIPITING
-
-
-::: warning Precautions
-
-只在ListenServer模式下调用生效，在PIE模式下无法调用
-
-:::
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-保存成功或失败
-___
-
-### beginActorPropertiesChange <Score text="beginActorPropertiesChange" /> 
-
-• **beginActorPropertiesChange**(`target`): `void` <Badge type="tip" text="client" />
-
-开始记录撤销恢复的actor属性
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `Base` | 记录的对象 |
-
-___
-
-### beginActorTransformChange <Score text="beginActorTransformChange" /> 
-
-• **beginActorTransformChange**(`target`): `void` <Badge type="tip" text="client" />
-
-开始记录actor的transform属性
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `Base` | 记录的对象 |
-
-___
-
-### calculateActorEqualScale <Score text="calculateActorEqualScale" /> 
-
-• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
-
-计算actor的等比缩放
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `currentScale` | [`Vector`](../classes/Type.Vector.md) | 当前缩放值 |
-| `deltaScale` | [`Vector`](../classes/Type.Vector.md) | 缩放值增量 |
-
-#### Returns
-
-[`Vector`](../classes/Type.Vector.md)
-
-计算后的缩放值
-___
-
-### captureAvatar <Score text="captureAvatar" /> 
-
-• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
-
-同步对指定虚拟角色进行截取，截图保存在本地固定路径下
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
-| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
-| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
-| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
-| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
-| `fov` | `number` |  视场; |
-| `fileName` | `string` |  文件名 |
-| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
-
-___
-
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
-
-• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
-| `ScreenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
 ___
 
 ### endActorPropertiesChange <Score text="endActorPropertiesChange" /> 
@@ -1275,6 +1275,31 @@ SCRIPITING
 
 ___
 
+### saveProperty <Score text="saveProperty" /> 
+
+• **saveProperty**(`target`, `propertyKey`): `void` 
+
+**`Groups`**
+
+SCRIPITING
+
+属性装饰器-永久存储属性
+
+::: warning Precautions
+
+用于设置数据类(继承Subdata的类)哪些属性是要永久存储的
+
+:::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | [`Subdata`](../classes/Extension.Subdata.md) |  类实例 |
+| `propertyKey` | `string` |  属性名 |
+___
+
 ### screenShot <Score text="screenShot" /> 
 
 • **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void` <Badge type="tip" text="client" />
@@ -1653,28 +1678,3 @@ Playza定制接口
 | `portraitPath` | `string` | 头像照路径 |
 | `fullPicPath` | `string` | 全身照路径 |
 | `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
-___
-
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
-
-• **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Groups`**
-
-SCRIPITING
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `screenX` | `number` |  屏幕X轴坐标值 default: |
-| `screenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果

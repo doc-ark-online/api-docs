@@ -12,7 +12,7 @@ Animations
 
 | Enums |
 | :-----|
-| [AnimationMode](../enums/Gameplay.AnimationMode.md) <br> 动画模式 |
 | [AnimSlot](../enums/Gameplay.AnimSlot.md) <br> 动画插槽 |
+| [AnimationMode](../enums/Gameplay.AnimationMode.md) <br> 动画模式 |
 | [StanceBlendMode](../enums/Gameplay.StanceBlendMode.md) <br> 姿态混合模式 |
 

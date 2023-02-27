@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / GameInitializer
+[Gameplay](../groups/Gameplay.Gameplay.md) / GameInitializer
 
 # GameInitializer <Badge type="tip" text="Class" /> <Score text="GameInitializer" />
 

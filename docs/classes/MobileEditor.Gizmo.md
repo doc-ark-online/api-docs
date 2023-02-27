@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / Gizmo
+[Gameplay](../groups/Gameplay.Gameplay.md) / Gizmo
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 

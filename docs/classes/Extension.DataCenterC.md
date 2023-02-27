@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / DataCenterC
+[Data](../groups/Data.Data.md) / DataCenterC
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 

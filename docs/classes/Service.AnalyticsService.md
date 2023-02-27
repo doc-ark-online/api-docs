@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / AnalyticsScripiting
+[Debugging](../groups/Debugging.Debugging.md) / AnalyticsService
 
 # AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 

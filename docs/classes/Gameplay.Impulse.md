@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Impulse
+[Physics](../groups/Physics.Physics.md) / Impulse
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 

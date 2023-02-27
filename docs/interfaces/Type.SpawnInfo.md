@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / SpawnInfo
+[Gameplay](../groups/Gameplay.Gameplay.md) / SpawnInfo
 
 # SpawnInfo <Badge type="tip" text="Interface" /> <Score text="SpawnInfo" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PlayerStart
+[Gameplay](../groups/Gameplay.Gameplay.md) / PlayerStart
 
 # PlayerStart <Badge type="tip" text="Class" /> <Score text="PlayerStart" />
 

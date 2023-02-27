@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / CameraSystem
+[Gameplay](../groups/Gameplay.Gameplay.md) / CameraSystem
 
 # CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 

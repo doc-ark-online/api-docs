@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / GraphicsLevel
+[Settings](../groups/Settings.Settings.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / BlockingAreaManager
+[Gameplay](../groups/Gameplay.Gameplay.md) / BlockingAreaManager
 
 # BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
 

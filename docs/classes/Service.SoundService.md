@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / SoundScripiting
+[Utility](../groups/Utility.Utility.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 

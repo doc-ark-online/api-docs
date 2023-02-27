@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsConstraintBase
+[Physics](../groups/Physics.Physics.md) / PhysicsConstraintBase
 
 # PhysicsConstraintBase <Badge type="tip" text="Class" /> <Score text="PhysicsConstraintBase" />
 

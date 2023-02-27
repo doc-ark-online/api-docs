@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsThruster
+[Physics](../groups/Physics.Physics.md) / PhysicsThruster
 
 # PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 

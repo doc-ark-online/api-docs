@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / ConvertScreenResult
+[Gameplay](../groups/Gameplay.Gameplay.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 

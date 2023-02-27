@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / GuiSlot
+[Gui](../groups/Gui.Gui.md) / UISlot
 
 # UISlot <Badge type="tip" text="Class" /> <Score text="UISlot" />
 

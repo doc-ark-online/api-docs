@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Particle
+[Effects](../groups/Effects.Effects.md) / Particle
 
 # Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 

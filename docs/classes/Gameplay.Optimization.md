@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Optimization
+[Settings](../groups/Settings.Settings.md) / Optimization
 
 # Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
 

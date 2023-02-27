@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsFulcrum
+[Physics](../groups/Physics.Physics.md) / PhysicsFulcrum
 
 # PhysicsFulcrum <Badge type="tip" text="Class" /> <Score text="PhysicsFulcrum" />
 

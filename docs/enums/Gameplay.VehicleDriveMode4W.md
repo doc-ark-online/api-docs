@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / VehicleDriveMode4W
+[Gameplay](../groups/Gameplay.Gameplay.md) / VehicleDriveMode4W
 
 # VehicleDriveMode4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4W" />
 

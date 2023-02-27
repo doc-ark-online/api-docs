@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / FireDataInfoForMultiple
+[Gameplay](../groups/Gameplay.Gameplay.md) / FireDataInfoForMultiple
 
 # FireDataInfoForMultiple <Badge type="tip" text="Class" /> <Score text="FireDataInfoForMultiple" />
 

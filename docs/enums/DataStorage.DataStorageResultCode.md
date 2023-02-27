@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / DataResultCode
+[Data](../groups/Data.Data.md) / DataStorageResultCode
 
 # DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
 

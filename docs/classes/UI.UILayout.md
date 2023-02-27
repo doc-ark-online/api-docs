@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / GuiLayout
+[Gui](../groups/Gui.Gui.md) / UILayout
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Animation
+[Animations](../groups/Animations.Animations.md) / Animation
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PostProcess
+[Lighting](../groups/Lighting.Lighting.md) / PostProcess
 
 # PostProcess <Badge type="tip" text="Class" /> <Score text="PostProcess" />
 

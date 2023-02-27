@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Prefab
+[Gameplay](../groups/Gameplay.Gameplay.md) / Prefab
 
 # Prefab <Badge type="tip" text="Class" /> <Score text="Prefab" />
 

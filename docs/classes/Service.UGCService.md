@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / UGCScripiting
+[Scripiting](../groups/Scripiting.Scripiting.md) / UGCService
 
 # UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 

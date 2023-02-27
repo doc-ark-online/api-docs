@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AxisType
+[Physics](../groups/Physics.Physics.md) / AxisType
 
 # AxisType <Badge type="tip" text="Enumeration" /> <Score text="AxisType" />
 

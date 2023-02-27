@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / Vector2
+[Data](../groups/Data.Data.md) / Vector2
 
 # Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 

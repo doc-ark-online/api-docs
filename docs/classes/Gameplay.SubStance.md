@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / SubStance
+[Animations](../groups/Animations.Animations.md) / SubStance
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 

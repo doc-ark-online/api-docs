@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsStick
+[Physics](../groups/Physics.Physics.md) / PhysicsStick
 
 # PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 

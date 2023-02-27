@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / CameraRotationMode
+[Gameplay](../groups/Gameplay.Gameplay.md) / CameraRotationMode
 
 # CameraRotationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraRotationMode" />
 

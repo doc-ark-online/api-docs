@@ -12,11 +12,11 @@ Social
 
 | Modules Type Aliases |
 | :-----|
-| **[OnRecvChatMessage](Social.Social.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
 | **[BoolResponse](Social.Social.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
 | **[DownloadDataResponse](Social.Social.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[MGSEvent](Social.Social.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Social.Social.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnRecvChatMessage](Social.Social.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
 | **[OnViewLayoutSwitched](Social.Social.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Social.Social.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
 | **[StringResponse](Social.Social.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
@@ -26,32 +26,6 @@ Social
 | **[downloadCharacterDataStringCallback](Social.Social.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
 
 
-___
-
-### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
-
-Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
-
-#### Type declaration
-
-• (`nCount`, `ChatContent`): `void`
-
-接收聊天信息回调方法类型
-
-**`Groups`**
-
-SOCIAL
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `nCount` | `number` |
-| `ChatContent` | `string` |
-
-##### Returns
-
-`void`
 ## Type Aliases
 
 ### BoolResponse <Score text="BoolResponse" /> 
@@ -143,6 +117,32 @@ SOCIAL
 | :------ | :------ |
 | `isSuccess` | `boolean` |
 | `jsonData` | `string` |
+
+##### Returns
+
+`void`
+___
+
+### OnRecvChatMessage <Score text="OnRecvChatMessage" /> 
+
+Ƭ **OnRecvChatMessage**: (`nCount`: `number`, `ChatContent`: `string`) => `void`
+
+#### Type declaration
+
+• (`nCount`, `ChatContent`): `void`
+
+接收聊天信息回调方法类型
+
+**`Groups`**
+
+SOCIAL
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `nCount` | `number` |
+| `ChatContent` | `string` |
 
 ##### Returns
 

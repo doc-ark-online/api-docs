@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AttenuationDistanceModel
+[Sounds](../groups/Sounds.Sounds.md) / AttenuationDistanceModel
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 

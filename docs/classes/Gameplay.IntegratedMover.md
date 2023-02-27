@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IntegratedMover
+[Physics](../groups/Physics.Physics.md) / IntegratedMover
 
 # IntegratedMover <Badge type="tip" text="Class" /> <Score text="IntegratedMover" />
 

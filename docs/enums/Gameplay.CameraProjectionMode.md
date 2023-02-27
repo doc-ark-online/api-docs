@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / CameraProjectionMode
+[Gameplay](../groups/Gameplay.Gameplay.md) / CameraProjectionMode
 
 # CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
 

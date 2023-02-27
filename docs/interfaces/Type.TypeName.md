@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / ScripitingName
+[Scripiting](../groups/Scripiting.Scripiting.md) / TypeName
 
 # TypeName<T\> <Badge type="tip" text="Interface" /> <Score text="TypeName<T\>" />
 

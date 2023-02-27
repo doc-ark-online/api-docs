@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Trigger
+[Gameplay](../groups/Gameplay.Gameplay.md) / Trigger
 
 # Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 

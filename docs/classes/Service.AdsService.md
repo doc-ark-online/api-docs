@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / AdsScripiting
+[Monetization](../groups/Monetization.Monetization.md) / AdsService
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 

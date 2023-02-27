@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / LanguageScripiting
+[Settings](../groups/Settings.Settings.md) / LanguageType
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 

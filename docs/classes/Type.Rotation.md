@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / Rotation
+[Data](../groups/Data.Data.md) / Rotation
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 

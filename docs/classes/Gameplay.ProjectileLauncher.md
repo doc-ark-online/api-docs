@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / ProjectileLauncher
+[Gameplay](../groups/Gameplay.Gameplay.md) / ProjectileLauncher
 
 # ProjectileLauncher <Badge type="tip" text="Class" /> <Score text="ProjectileLauncher" />
 

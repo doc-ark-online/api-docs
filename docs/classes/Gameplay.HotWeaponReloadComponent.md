@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HotWeaponReloadComponent
+[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 

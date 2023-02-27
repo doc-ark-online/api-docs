@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AbilityState
+[Gameplay](../groups/Gameplay.Gameplay.md) / AbilityState
 
 # AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Sound
+[Sounds](../groups/Sounds.Sounds.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 

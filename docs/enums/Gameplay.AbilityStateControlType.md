@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AbilityStateControlType
+[Gameplay](../groups/Gameplay.Gameplay.md) / AbilityStateControlType
 
 # AbilityStateControlType <Badge type="tip" text="Enumeration" /> <Score text="AbilityStateControlType" />
 

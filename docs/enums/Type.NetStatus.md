@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / NetStatus
+[Data](../groups/Data.Data.md) / NetStatus
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 

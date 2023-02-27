@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HitResult
+[Gameplay](../groups/Gameplay.Gameplay.md) / HitResult
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 

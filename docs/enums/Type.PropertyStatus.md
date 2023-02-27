@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / PropertyStatus
+[Data](../groups/Data.Data.md) / PropertyStatus
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 

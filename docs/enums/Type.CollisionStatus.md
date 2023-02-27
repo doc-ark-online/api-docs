@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / CollisionStatus
+[Physics](../groups/Physics.Physics.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 

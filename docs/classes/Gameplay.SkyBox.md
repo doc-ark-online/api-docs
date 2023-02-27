@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / SkyBox
+[Lighting](../groups/Lighting.Lighting.md) / SkyBox
 
 # SkyBox <Badge type="tip" text="Class" /> <Score text="SkyBox" />
 

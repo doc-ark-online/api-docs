@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / PhysicsRotation
+[Physics](../groups/Physics.Physics.md) / PhysicsRotation
 
 # PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 

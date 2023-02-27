@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Union
+[Gameplay](../groups/Gameplay.Gameplay.md) / Union
 
 # Union <Badge type="tip" text="Class" /> <Score text="Union" />
 

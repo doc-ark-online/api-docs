@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Interactor
+[Gameplay](../groups/Gameplay.Gameplay.md) / Interactor
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AnimSlot
+[Animations](../groups/Animations.Animations.md) / AnimSlot
 
 # AnimSlot <Badge type="tip" text="Enumeration" /> <Score text="AnimSlot" />
 

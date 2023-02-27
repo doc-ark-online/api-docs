@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / MessageChannelScripiting
+[Scripiting](../groups/Scripiting.Scripiting.md) / MessageChannelService
 
 # MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 

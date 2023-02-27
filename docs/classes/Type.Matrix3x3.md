@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / Matrix3x3
+[Data](../groups/Data.Data.md) / Matrix3x3
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 

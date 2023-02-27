@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / NavModifierVolume
+[Gameplay](../groups/Gameplay.Gameplay.md) / NavModifierVolume
 
 # NavModifierVolume <Badge type="tip" text="Class" /> <Score text="NavModifierVolume" />
 

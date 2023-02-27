@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HotWeaponCrossHairType
+[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponCrossHairType
 
 # HotWeaponCrossHairType <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponCrossHairType" />
 

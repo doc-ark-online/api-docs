@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / UIWidget
+[Gui](../groups/Gui.Gui.md) / UIWidget
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 

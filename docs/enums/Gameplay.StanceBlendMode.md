@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / StanceBlendMode
+[Animations](../groups/Animations.Animations.md) / StanceBlendMode
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 

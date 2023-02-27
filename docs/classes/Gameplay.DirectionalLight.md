@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / DirectionalLight
+[Lighting](../groups/Lighting.Lighting.md) / DirectionalLight
 
 # DirectionalLight <Badge type="tip" text="Class" /> <Score text="DirectionalLight" />
 

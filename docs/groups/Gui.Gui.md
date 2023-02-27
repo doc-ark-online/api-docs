@@ -5,11 +5,10 @@ Gui
 ## Table of contents
 | Classes |
 | :-----|
-| [BasePanel](../classes/Extension.BasePanel.md) <br> 面板类的基类，可用于控制一个界面 |
-| [BaseView](../classes/Extension.BaseView.md) <br> 界面类的基类 |
-| [UIWidget](../classes/Gameplay.UIWidget.md) <br> 世界UI组件 |
 | [AnalogInputEvent](../classes/UI.AnalogInputEvent.md) <br> 轴输入事件 |
 | [AssetIconData](../classes/UI.AssetIconData.md) <br> 资源ICON信息 |
+| [BasePanel](../classes/Extension.BasePanel.md) <br> 面板类的基类，可用于控制一个界面 |
+| [BaseView](../classes/Extension.BaseView.md) <br> 界面类的基类 |
 | [Button](../classes/UI.Button.md) <br> 按钮,无默认text |
 | [Canvas](../classes/UI.Canvas.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能 |
 | [CharacterEvent](../classes/UI.CharacterEvent.md) <br> 角色输入事件 |
@@ -46,6 +45,7 @@ Gui
 | [UIObject](../classes/UI.UIObject.md) <br> UI对象组件 |
 | [UISlot](../classes/UI.UISlot.md) <br> UI插槽 |
 | [UITransform](../classes/UI.UITransform.md) <br> 节点Transform |
+| [UIWidget](../classes/Gameplay.UIWidget.md) <br> 世界UI组件 |
 | [UserWidget](../classes/UI.UserWidget.md) <br> UI控件的集合,预制体UI |
 | [UserWidgetPrefab](../classes/UI.UserWidgetPrefab.md) <br> ui预制体 |
 | [VirtualJoystickPanel](../classes/UI.VirtualJoystickPanel.md) <br> 摇杆 |
@@ -54,8 +54,6 @@ Gui
 
 | Enums |
 | :-----|
-| [WidgetGeometryMode](../enums/Gameplay.WidgetGeometryMode.md) <br> UI形状枚举 |
-| [WidgetSpaceMode](../enums/Gameplay.WidgetSpaceMode.md) <br> UI空间位置枚举 |
 | [ButtonClickMethod](../enums/UI.ButtonClickMethod.md) <br> 按钮点击响应规则 |
 | [ButtonPressMethod](../enums/UI.ButtonPressMethod.md) <br> 按钮按压响应规则 |
 | [ButtonTouchMethod](../enums/UI.ButtonTouchMethod.md) <br> 按钮触摸响应规则 |
@@ -86,6 +84,8 @@ Gui
 | [UIScrollBoxAnimationType](../enums/UI.UIScrollBoxAnimationType.md) <br> 滚动框动画类型 |
 | [UITextHorizontalLayout](../enums/UI.UITextHorizontalLayout.md) <br> 文本框规则显示规则限制 |
 | [UIVerticalCollation](../enums/UI.UIVerticalCollation.md) <br> 自动布局子项布局排序 - 垂直排序 |
+| [WidgetGeometryMode](../enums/Gameplay.WidgetGeometryMode.md) <br> UI形状枚举 |
+| [WidgetSpaceMode](../enums/Gameplay.WidgetSpaceMode.md) <br> UI空间位置枚举 |
 
 
 | Modules Functions |

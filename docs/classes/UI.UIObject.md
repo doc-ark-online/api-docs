@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / GuiObject
+[Gui](../groups/Gui.Gui.md) / UIObject
 
 # UIObject <Badge type="tip" text="Class" /> <Score text="UIObject" />
 

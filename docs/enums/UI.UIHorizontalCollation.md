@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / GuiHorizontalCollation
+[Gui](../groups/Gui.Gui.md) / UIHorizontalCollation
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 

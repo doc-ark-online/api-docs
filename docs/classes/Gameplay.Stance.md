@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Stance
+[Animations](../groups/Animations.Animations.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
