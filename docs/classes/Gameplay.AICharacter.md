@@ -2,21 +2,18 @@
 
 # AICharacter <Badge type="tip" text="Class" /> <Score text="AICharacter" />
 
-**`Groups`**
-
-AVATAR
-
-**`Deprecated`**
+::: danger Deprecated
 
 since:021 reason:功能迭代,请使用NPC对象 replacement:NPC
+
+:::
 
 在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象.
              生成方式:可以通过将人形对象(Humanoid)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject;
 
 ::: warning Precautions
 
-该对象目前耦合了形象和角色对象.建议开发者更换新的非玩家对象(NPC)实现功能
-             后续人形对象(Humanoid)将不再为维护.
+该对象目前耦合了形象和角色对象.建议开发者更换新的非玩家对象(NPC)实现功能后续人形对象(Humanoid)将不再为维护.
 
 :::
 
