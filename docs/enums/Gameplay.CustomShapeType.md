@@ -4,10 +4,6 @@
 
 碰撞体形状类型
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

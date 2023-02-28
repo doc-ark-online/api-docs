@@ -2,10 +2,6 @@
 
 # FocusEvent <Badge type="tip" text="Class" /> <Score text="FocusEvent" />
 
-**`Groups`**
-
-GUI
-
 焦点事件
 
 ## Table of contents

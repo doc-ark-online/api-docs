@@ -2,10 +2,6 @@
 
 # CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
-**`Groups`**
-
-AVATAR
-
 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动.
              形象设置上,角色目前可以选择 V1人形,V2人形,四足,自定义形象等.
              动画上,可以使用高度封装的姿态对象和直接播放动画.
@@ -43,6 +39,7 @@ AVATAR
 | **[airControlBoostVelocityThreshold](Gameplay.CharacterBase.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍|
 | **[animationMode](Gameplay.CharacterBase.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md) <br> 动画播放模式|
 | **[animationStance](Gameplay.CharacterBase.md#animationstance)**(): `string` <br> 动画姿态|
+| **[appearance](Gameplay.CharacterBase.md#appearance)**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md) <br> 当前外观修改对象|
 | **[appearanceType](Gameplay.CharacterBase.md#appearancetype)**(): [`AppearanceType`](../enums/Gameplay.AppearanceType.md) <br> 形象类型|
 | **[baseShadowLocationOffset](Gameplay.CharacterBase.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移|
 | **[baseShadowMaxVisibleHeight](Gameplay.CharacterBase.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度|
@@ -75,6 +72,7 @@ AVATAR
 | **[jumpEnable](Gameplay.CharacterBase.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
 | **[jumpMaxCount](Gameplay.CharacterBase.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
 | **[jumpingOutOfWaterEnable](Gameplay.CharacterBase.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
+| **[locallyVisible](Gameplay.CharacterBase.md#locallyvisible)**(): `boolean` <br> 是否可见(本地设置)|
 | **[maxAcceleration](Gameplay.CharacterBase.md#maxacceleration)**(): `number` <br> 最大加速度|
 | **[maxFallingSpeed](Gameplay.CharacterBase.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
 | **[maxFlySpeed](Gameplay.CharacterBase.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
@@ -91,6 +89,7 @@ AVATAR
 | **[outOfWaterZ](Gameplay.CharacterBase.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
 | **[ragdollEnable](Gameplay.CharacterBase.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
 | **[rotateRate](Gameplay.CharacterBase.md#rotaterate)**(): `number` <br> 最大转向速度|
+| **[scale](Gameplay.CharacterBase.md#scale)**(): [`Vector`](Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步|
 | **[separateBrakingFrictionEnable](Gameplay.CharacterBase.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
 | **[usedCapsuleCorrection](Gameplay.CharacterBase.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
 | **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
@@ -115,6 +114,7 @@ AVATAR
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -145,9 +145,11 @@ AVATAR
 | **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`GUID`: `string`, `sync?`: `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
 | **[lookAt](Gameplay.CharacterBase.md#lookat)**(`TargetPoint`: [`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
 | **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`GUID`: `string`, `loopCount?`: `number`, `rate?`: `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。|
+| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`AnimationGuid`: `string`, `AnimationLength?`: `number`, `LoopCount?`: `number`): `void` <br> 本地播放动画|
 | **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<`T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\>\>(`clz`: [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): `T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> <br> 设置外观修改功能|
 | **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**(`ShapeType`: [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), `CollisionExtent`: [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
 | **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置是否被显示(本地生效)|
+| **[stopAnimation](Gameplay.CharacterBase.md#stopanimation)**(`InAnimationGuid`: `string`): `void` <br> 停止播放动画|
 | **[stopStance](Gameplay.CharacterBase.md#stopstance)**(`sync?`: `boolean`): `void` <br> 停止任何正在播放的姿态|
 | **[swimmingDown](Gameplay.CharacterBase.md#swimmingdown)**(`speed`: `number`): `void` <br> 水中下潜|
 | **[swimmingUp](Gameplay.CharacterBase.md#swimmingup)**(`speed`: `number`): `void` <br> 水中上浮|
@@ -208,11 +210,13 @@ AVATAR
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -622,6 +626,24 @@ ___
 | :------ | :------ |
 | `StanceGUID` | `string` |
 
+
+___
+
+### appearance <Score text="appearance" /> 
+
+• `get` **appearance**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md)
+
+当前外观修改对象
+
+::: danger Deprecated
+
+since:021 reason: 提供更易用的方法 replacement: getAppearance<Gameplay.HumanoidV2|Gameplay.HumanoidV1|Gameplay.FourFootStandard>
+
+:::
+
+#### Returns
+
+[`SomatotypeBase`](Gameplay.SomatotypeBase.md)
 
 ___
 
@@ -1330,6 +1352,41 @@ ___
 | `value` | `boolean` |
 
 
+___
+
+### locallyVisible <Score text="locallyVisible" /> 
+
+• `get` **locallyVisible**(): `boolean`
+
+::: danger Deprecated
+
+since:020 reason:api重构 replacement:getVisibility()
+
+:::
+
+是否可见(本地设置)
+
+#### Returns
+
+`boolean`
+
+• `set` **locallyVisible**(`inIsVisible`): `void`
+
+::: danger Deprecated
+
+since:020 reason:api重构 replacement:setVisibilityLocally()
+
+:::
+
+是否可见(本地设置)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `inIsVisible` | `boolean` |
+
+
 
 ### maxAcceleration <Score text="maxAcceleration" /> 
 
@@ -1705,6 +1762,41 @@ ___
 
 ___
 
+### scale <Score text="scale" /> 
+
+• `get` **scale**(): [`Vector`](Type.Vector.md)
+
+::: danger Deprecated
+
+since:021 reason:接口重复 replacement:worldScale
+
+:::
+
+角色胶囊体的缩放, 自动同步
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **scale**(`InCharacterScale`): `void`
+
+::: danger Deprecated
+
+since:021 reason:接口重复 replacement:worldScale
+
+:::
+
+角色胶囊体的缩放, 自动同步
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `InCharacterScale` | [`Vector`](Type.Vector.md) |
+
+
+___
+
 ### separateBrakingFrictionEnable <Score text="separateBrakingFrictionEnable" /> 
 
 • `get` **separateBrakingFrictionEnable**(): `boolean`
@@ -1760,7 +1852,6 @@ ___
 
 [`Vector`](Type.Vector.md)
 
-___
 
 ### walkableFloorAngle <Score text="walkableFloorAngle" /> 
 
@@ -2184,6 +2275,30 @@ player.character.playAnimation(animGUID，100，2);
 
 Animation 对象
 
+___
+
+### playAnimationLocally <Score text="playAnimationLocally" /> 
+
+• **playAnimationLocally**(`AnimationGuid`, `AnimationLength?`, `LoopCount?`): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:018 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.
+
+:::
+
+本地播放动画
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `AnimationGuid` | `string` | 动画GUID |
+| `AnimationLength?` | `number` | 播放时长 default:0 |
+| `LoopCount?` | `number` | 循环播放次数, 范围0~2147483647, 设置为0时无限循环 default:1 |
+
+
 
 ### setAppearance <Score text="setAppearance" /> 
 
@@ -2243,6 +2358,28 @@ ___
 | `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
 
 
+
+### stopAnimation <Score text="stopAnimation" /> 
+
+• **stopAnimation**(`InAnimationGuid`): `void` <Badge type="tip" text="server" />
+
+::: danger Deprecated
+
+since:018 reason:使用新接口 replacement:"Gameplay.Animation.stop"
+
+:::
+
+停止播放动画
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAnimationGuid` | `string` | 停止播放的动画的GUID |
+
+
+___
 
 ### stopStance <Score text="stopStance" /> 
 

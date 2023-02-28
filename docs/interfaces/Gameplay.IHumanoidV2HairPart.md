@@ -4,10 +4,6 @@
 
 人形对象V2部位
 
-**`Groups`**
-
-AVATAR
-
 ## Hierarchy
 
 - [`IPart`](Gameplay.IPart.md)
@@ -123,10 +119,6 @@ GUID
 • **setColor**(`color`, `sync`): `void` 
 
 设置头发颜色
-
-**`Groups`**
-
-AVATAR
 
 ::: warning Precautions
 

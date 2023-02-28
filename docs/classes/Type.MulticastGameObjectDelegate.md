@@ -2,10 +2,6 @@
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 
-**`Groups`**
-
-SCRIPITING
-
 广播代理
 
 ## Table of contents

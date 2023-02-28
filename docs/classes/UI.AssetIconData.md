@@ -2,10 +2,6 @@
 
 # AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 
-**`Groups`**
-
-GUI
-
 资源ICON信息
 
 ## Table of contents

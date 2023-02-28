@@ -4,10 +4,6 @@
 
 V1角色体型
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

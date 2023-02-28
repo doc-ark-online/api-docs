@@ -2,10 +2,6 @@
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
-**`Groups`**
-
-DATA
-
 服务端数据中心，管理所有玩家的数据
 
 ::: warning Precautions

@@ -97,6 +97,7 @@ UI
 | :-----|
 | **[absoluteToLocal](UI.UI.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对坐标到相对坐标|
 | **[absoluteToViewport](UI.UI.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
+| **[assetIDChangeIConUrlRequest](UI.UI.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](UI.UI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
 | **[createUI](UI.UI.md#createui)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建UIPrefab|
@@ -206,10 +207,6 @@ ___
 
 转化绝对坐标到相对坐标
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -232,10 +229,6 @@ ___
 
 将桌面空间中几何图形的绝对坐标转换为本地视口坐标
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -248,15 +241,38 @@ GUI
 
 ___
 
+### assetIDChangeIConUrlRequest <Score text="assetIDChangeIConUrlRequest" /> 
+
+• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
+
+:::
+
+异步请求资源的ICON信息
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+___
+
 ### assetIDChangeIconUrlRequest <Score text="assetIDChangeIconUrlRequest" /> 
 
 • **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="client" />
 
 异步请求资源的ICON信息
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -279,10 +295,6 @@ ___
 
 中断所有的DragDrop
 
-**`Groups`**
-
-GUI
-
 
 
 ___
@@ -292,10 +304,6 @@ ___
 • **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="client" />
 
 创建UIPrefab
-
-**`Groups`**
-
-GUI
 
 
 #### Type parameters
@@ -325,10 +333,6 @@ ___
 
 创建UIPrefab
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -350,10 +354,6 @@ ___
 
 创建UIPrefab
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -374,10 +374,6 @@ ___
 • **createUIOnlyClass**<`T`\>(`panelClass`): `T` <Badge type="tip" text="client" />
 
 创建空的UI
-
-**`Groups`**
-
-GUI
 
 
 #### Type parameters
@@ -406,10 +402,6 @@ ___
 
 中断一个拖拽事件, 传入一个操作的事件
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -425,10 +417,6 @@ ___
 • **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md) <Badge type="tip" text="client" />
 
 获取UI脚本
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -451,10 +439,6 @@ ___
 
 返回绝对空间中几何图形的大小
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -475,10 +459,6 @@ ___
 • **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="client" />
 
 获取资源的ICON信息
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -501,10 +481,6 @@ ___
 
 获取当前鼠标所在的绝对位置
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -519,10 +495,6 @@ ___
 • **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <Badge type="tip" text="client" />
 
 获取当前的DragDrop事件
-
-**`Groups`**
-
-GUI
 
 
 #### Returns
@@ -539,10 +511,6 @@ ___
 
 获取上一次鼠标所在的绝对位置
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -557,10 +525,6 @@ ___
 • **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 返回局部空间中几何图形的大小
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -583,10 +547,6 @@ ___
 
 返回局部空间中几何图形的局部顶部/左侧
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -608,10 +568,6 @@ ___
 
 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -627,10 +583,6 @@ ___
 
 获取平台的鼠标光标在视口控件的本地空间中的位置。
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -645,10 +597,6 @@ ___
 • **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -671,10 +619,6 @@ ___
 
 分辨率改变时的回调
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -691,10 +635,6 @@ ___
 
 获取应用于视口和所有小部件的当前DPI Scale。
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -709,10 +649,6 @@ ___
 • **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取游戏视口的大小。
-
-**`Groups`**
-
-GUI
 
 
 #### Returns
@@ -729,10 +665,6 @@ ___
 
 获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -748,10 +680,6 @@ ___
 
 判断当前是否有一个DragDrop事件
 
-**`Groups`**
-
-GUI
-
 
 #### Returns
 
@@ -766,10 +694,6 @@ ___
 • **isUnderLocation**(`geometry`, `absolutePosition`): `boolean` <Badge type="tip" text="client" />
 
 判定给定坐标是否在geometry下
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -793,10 +717,6 @@ ___
 
 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -819,10 +739,6 @@ ___
 
 将几何体的局部坐标转换为局部视口坐标。
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -841,10 +757,6 @@ ___
 • **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="client" />
 
 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -870,10 +782,6 @@ ___
 
 将屏幕位置(以像素为单位)转换为视口控件的本地空间。
 
-**`Groups`**
-
-GUI
-
 
 #### Parameters
 
@@ -894,10 +802,6 @@ ___
 • **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -920,10 +824,6 @@ ___
 • **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -948,10 +848,6 @@ ___
 
 设置关注游戏窗口
 
-**`Groups`**
-
-GUI
-
 
 
 ___
@@ -961,10 +857,6 @@ ___
 • **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void` <Badge type="tip" text="client" />
 
 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -984,10 +876,6 @@ ___
 
 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入
 
-**`Groups`**
-
-GUI
-
 
 
 ___
@@ -997,10 +885,6 @@ ___
 • **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void` <Badge type="tip" text="client" />
 
 设置只允许UI响应用户输入的输入模式。
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -1018,10 +902,6 @@ ___
 • **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 转化绝对空间下矢量到局部空间下
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters
@@ -1044,10 +924,6 @@ ___
 • **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 转化局部空间下矢量到绝对空间下
-
-**`Groups`**
-
-GUI
 
 
 #### Parameters

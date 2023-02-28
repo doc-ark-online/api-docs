@@ -16,10 +16,6 @@
 
 获取当前游戏窗口尺寸
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 

@@ -4,10 +4,6 @@
 
 游戏语言
 
-**`Groups`**
-
-SETTINGS
-
 ## Table of contents
 
 | Enumeration Members |

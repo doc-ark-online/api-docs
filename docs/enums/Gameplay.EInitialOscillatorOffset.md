@@ -4,10 +4,6 @@
 
 定义如何开始(从零开始，或者从随机值开始)
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

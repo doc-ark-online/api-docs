@@ -2,10 +2,6 @@
 
 # DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 
-**`Groups`**
-
-GUI
-
 UI 拖拽事件
 
 ## Table of contents

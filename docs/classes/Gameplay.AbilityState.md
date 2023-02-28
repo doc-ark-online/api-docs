@@ -2,10 +2,6 @@
 
 # AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
-**`Groups`**
-
-GAMEPLAY
-
 能力状态，用于读取/配置能力对象的能力相关的属性
 
 ::: warning Precautions
@@ -30,6 +26,9 @@ GAMEPLAY
 | :-----|
 | **[addControlAbility](Gameplay.AbilityState.md#addcontrolability)**(`ControlType`: [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 添加释放状态的控制性|
 | **[cancelControlAbility](Gameplay.AbilityState.md#cancelcontrolability)**(`ControlType`: [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md)): `void` <br> 取消释放状态的控制性|
+| **[enableJump](Gameplay.AbilityState.md#enablejump)**(): `boolean` <br> 获取对象是否可跳跃|
+| **[enableMove](Gameplay.AbilityState.md#enablemove)**(): `boolean` <br> 获取对象是否可移动|
+| **[enableTurn](Gameplay.AbilityState.md#enableturn)**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) <br> 获取对象是否可转向|
 
 ## Accessors
 
@@ -218,3 +217,65 @@ ___
 | `ControlType` | [`AbilityStateControlType`](../enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 |
 
 
+___
+
+### enableJump <Score text="enableJump" /> 
+
+• **enableJump**(): `boolean` 
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: jumpEnable
+
+:::
+
+获取对象是否可跳跃
+
+
+#### Returns
+
+`boolean`
+
+支持跳跃时返回 true，否则 false
+
+___
+
+### enableMove <Score text="enableMove" /> 
+
+• **enableMove**(): `boolean` 
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: moveEnable
+
+:::
+
+获取对象是否可移动
+
+
+#### Returns
+
+`boolean`
+
+支持移动时返回 true，否则 false
+
+___
+
+### enableTurn <Score text="enableTurn" /> 
+
+• **enableTurn**(): [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) 
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: turnEnable
+
+:::
+
+获取对象是否可转向
+
+
+#### Returns
+
+[`MoveControlMode`](../enums/Gameplay.MoveControlMode.md)
+
+当前配置的移动模式

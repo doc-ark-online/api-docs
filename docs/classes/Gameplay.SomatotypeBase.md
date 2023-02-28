@@ -4,10 +4,6 @@
 
 体型基类
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Hierarchy
 
 - **`SomatotypeBase`**

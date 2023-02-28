@@ -2,10 +2,6 @@
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
-**`Groups`**
-
-SOCIAL
-
 **`Instance`**
 
 用户账号信息管理相关服务

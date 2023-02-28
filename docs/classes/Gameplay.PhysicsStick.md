@@ -2,10 +2,6 @@
 
 # PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 
-**`Groups`**
-
-PHYSICS
-
 物理杆组件
 
 ::: warning Precautions

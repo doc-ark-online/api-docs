@@ -2,10 +2,6 @@
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
-**`Groups`**
-
-GUI
-
 拖拽事件数据传递类
 
 ## Table of contents

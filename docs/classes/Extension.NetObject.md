@@ -2,10 +2,6 @@
 
 # NetObject <Badge type="tip" text="Class" /> <Score text="NetObject" />
 
-**`Groups`**
-
-UTILITY
-
 网络对象
 
 ## Hierarchy

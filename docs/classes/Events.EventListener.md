@@ -4,10 +4,6 @@
 
 事件监听器
 
-**`Groups`**
-
-SCRIPITING
-
 ## Table of contents
 
 | Accessors |

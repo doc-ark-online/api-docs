@@ -2,10 +2,6 @@
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 
-**`Groups`**
-
-GUI
-
 遮罩类型
 
 ## Table of contents

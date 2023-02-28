@@ -2,10 +2,6 @@
 
 # PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
 
-**`Groups`**
-
-PHYSICS
-
 物理圆柱组件
 
 ::: warning Precautions

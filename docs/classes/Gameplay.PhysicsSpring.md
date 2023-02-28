@@ -2,10 +2,6 @@
 
 # PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 
-**`Groups`**
-
-PHYSICS
-
 物理弹簧组件
 
 ::: warning Precautions

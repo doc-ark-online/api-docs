@@ -2,10 +2,6 @@
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
-**`Groups`**
-
-GUI
-
 容器自动布局子项排序规则
 
 ## Table of contents

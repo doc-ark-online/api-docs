@@ -2,10 +2,6 @@
 
 # GizmoCoordinateType <Badge type="tip" text="Enumeration" /> <Score text="GizmoCoordinateType" />
 
-**`Groups`**
-
-SCRIPITING
-
 gizmo坐标轴类型
 
 ## Table of contents

@@ -2,10 +2,6 @@
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-**`Groups`**
-
-GUI
-
 按钮,无默认text
 
 ## Hierarchy

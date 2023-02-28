@@ -2,10 +2,6 @@
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
-**`Groups`**
-
-GUI
-
 滑动框
 
 ## Hierarchy

@@ -2,10 +2,6 @@
 
 # NetObjectC<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectC<T\>" />
 
-**`Groups`**
-
-UTILITY
-
 客户端的网络对象
 
 ## Type parameters

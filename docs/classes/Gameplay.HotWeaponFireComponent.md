@@ -4,10 +4,6 @@
 
 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Properties |

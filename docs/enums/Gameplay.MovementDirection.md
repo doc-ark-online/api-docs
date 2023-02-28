@@ -17,10 +17,6 @@
                当运动时依据的实际轴向为世界前方向(Type.Vector.forward)时,实际运动方向为世界右方向(Type.Vector.right)
                当运动时依据的实际轴向为世界右方向(Type.Vector.right)时,实际运动方向为世界后方向(Type.Vector.back)
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

@@ -2,10 +2,6 @@
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 
-**`Groups`**
-
-DATA
-
 三维矩阵
 
 ::: warning Precautions

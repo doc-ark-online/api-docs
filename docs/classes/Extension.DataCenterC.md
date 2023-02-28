@@ -2,10 +2,6 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
-**`Groups`**
-
-DATA
-
 客户端数据中心，里面存放着当前玩家的数据
 
 ::: warning Precautions

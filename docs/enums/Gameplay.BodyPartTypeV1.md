@@ -4,10 +4,6 @@
 
 V1角色部位
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

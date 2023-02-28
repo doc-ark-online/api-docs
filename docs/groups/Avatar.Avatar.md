@@ -74,6 +74,9 @@ Avatar
 | **[StringCallback](Avatar.Avatar.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 
 
+## Modules Type Aliases
+
+
 ___
 
 ### Constructor <Score text="Constructor" /> 
@@ -92,10 +95,6 @@ ___
 
 角色形象修改构造类型
 
-**`Groups`**
-
-AVATAR
-
 ##### Parameters
 
 | Name | Type |
@@ -109,9 +108,6 @@ ___
 
 运行时态角色身上的挂件数据
 
-**`Groups`**
-
-AVATAR
 ___
 
 ### EmptyCallback <Score text="EmptyCallback" /> 
@@ -123,10 +119,6 @@ ___
 • (): `void`
 
 空的回调函数类型
-
-**`Groups`**
-
-AVATAR
 
 ##### Returns
 
@@ -143,10 +135,6 @@ ___
 
 角色编辑器数据加载完成后的回调
 
-**`Groups`**
-
-AVATAR
-
 ##### Returns
 
 `void`
@@ -161,10 +149,6 @@ ___
 • (`mode`): `void`
 
 移动状态切换回调
-
-**`Groups`**
-
-AVATAR
 
 ##### Parameters
 
@@ -187,10 +171,6 @@ ___
 
 设置编辑数据完成的回调
 
-**`Groups`**
-
-AVATAR
-
 ##### Parameters
 
 | Name | Type |
@@ -211,10 +191,6 @@ ___
 • (`str`): `void`
 
 返回String的回调
-
-**`Groups`**
-
-AVATAR
 
 ##### Parameters
 

@@ -2,10 +2,6 @@
 
 # PhysicsAngularMotor <Badge type="tip" text="Class" /> <Score text="PhysicsAngularMotor" />
 
-**`Groups`**
-
-PHYSICS
-
 物理力矩发动机
 
 ::: warning Precautions

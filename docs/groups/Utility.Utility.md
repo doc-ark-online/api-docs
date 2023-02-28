@@ -46,12 +46,15 @@ Utility
 | **[enableCursorLock](Utility.Utility.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
 | **[fmod](Utility.Utility.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
 | **[format](Utility.Utility.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[isAssetExist](Utility.Utility.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
+| **[isAssetLoaded](Utility.Utility.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[isCursorInteractiveWithUI](Utility.Utility.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
 | **[isCursorLockEnabled](Utility.Utility.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
 | **[isCursorLocked](Utility.Utility.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
 | **[isCursorVisible](Utility.Utility.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
 | **[isEmpty](Utility.Utility.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
 | **[lerp](Utility.Utility.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
+| **[loadAsset](Utility.Utility.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
 | **[maskWordCheck](Utility.Utility.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](Utility.Utility.md#maskwordcheck)Result`](Utility.Utility.md#maskwordcheckresult)\> <br> 屏蔽字检测|
 | **[nextId](Utility.Utility.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
 | **[onKeyDown](Utility.Utility.md#onkeydown)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-点击|
@@ -78,15 +81,14 @@ Utility
 | **[InterpolationFunction](Utility.Utility.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
 
 
-## Functions
+## Modules Functions
+
+
+___
 
 ### assetLoaded <Score text="assetLoaded" /> 
 
 • **assetLoaded**(`InAssetId`): `boolean` 
-
-**`Groups`**
-
-UTILITY
 
 资源是否加载
 
@@ -110,10 +112,6 @@ ___
 
 资源下载
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -126,17 +124,13 @@ UTILITY
 `Promise`<`boolean`\>
 
 下载失败将返回false
-## Functions
+___
 
 ### bindButton <Score text="bindButton" /> 
 
 • **bindButton**(`key`, `Widget`): `void` <Badge type="tip" text="client" />
 
 绑定按键
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -146,17 +140,13 @@ UTILITY
 | `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
 | `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
 
-## Functions
+___
 
 ### clamp <Score text="clamp" /> 
 
 • **clamp**(`a`, `min`, `max`): `number` 
 
 数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -172,17 +162,13 @@ UTILITY
 `number`
 
 计算结果
-## Functions
+___
 
 ### clearDelayExecute <Score text="clearDelayExecute" /> 
 
 • **clearDelayExecute**(`id`): `void` 
 
 清除delayExecute
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -199,10 +185,6 @@ ___
 
 清除setInterval
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -210,17 +192,13 @@ UTILITY
 | :------ | :------ | :------ |
 | `id` | `number` |  setInterval方法返回的ID |
 
-## Functions
+___
 
 ### clipboardCopy <Score text="clipboardCopy" /> 
 
 • **clipboardCopy**(`text`): `void` <Badge type="tip" text="client" />
 
 文本复制，将字符串复制到剪切板
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -237,10 +215,6 @@ ___
 
 文本粘贴，获取剪切板的文本
 
-**`Groups`**
-
-UTILITY
-
 
 #### Returns
 
@@ -254,10 +228,6 @@ ___
 • **cos**(`a`): `number` 
 
 计算cos值
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -279,10 +249,6 @@ ___
 
 根据输入的度数返回弧度值
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -302,10 +268,6 @@ ___
 • **delayExecute**(`handler`, `frameNum?`): `number` 
 
 延迟一定帧数执行方法
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -328,10 +290,6 @@ ___
 
 延迟一定秒数,用于异步方法中间的等待，不可取消
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -351,10 +309,6 @@ ___
 • **delayTime**(): `number` 
 
 每一帧经过的时间 (单位：秒)
-
-**`Groups`**
-
-UTILITY
 
 ::: warning Precautions
 
@@ -376,10 +330,6 @@ ___
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
-**`Groups`**
-
-UTILITY
-
 
 ::: warning Precautions
 
@@ -400,10 +350,6 @@ ___
 
 设置鼠标指针是否能与UI交互
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -419,10 +365,6 @@ ___
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -437,10 +379,6 @@ ___
 • **fmod**(`x`, `y`): `number` 
 
 返回 数值x 除以 数值y 的余数
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -463,10 +401,6 @@ ___
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
-**`Groups`**
-
-UTILITY
-
 
 使用示例:格式化字符串用法
 ```ts
@@ -488,15 +422,63 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 新的字符串
 ___
 
+### isAssetExist <Score text="isAssetExist" /> 
+
+• **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
+
+资源是否存在
+
+
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源GUID |
+
+#### Returns
+
+`boolean`
+
+不存在将返回false
+___
+
+### isAssetLoaded <Score text="isAssetLoaded" /> 
+
+• **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
+
+资源是否加载
+
+
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源GUID |
+
+#### Returns
+
+`boolean`
+
+未加载将返回false
+___
+
 ### isCursorInteractiveWithUI <Score text="isCursorInteractiveWithUI" /> 
 
 • **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="client" />
 
 获取鼠标指针是否能与UI交互
-
-**`Groups`**
-
-UTILITY
 
 
 #### Returns
@@ -512,10 +494,6 @@ ___
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
 
-**`Groups`**
-
-UTILITY
-
 
 #### Returns
 
@@ -529,10 +507,6 @@ ___
 • **isCursorLocked**(): `boolean` <Badge type="tip" text="client" />
 
 获取鼠标指针是否锁定
-
-**`Groups`**
-
-UTILITY
 
 
 #### Returns
@@ -548,10 +522,6 @@ ___
 
 获取鼠标指针是否可见
 
-**`Groups`**
-
-UTILITY
-
 
 #### Returns
 
@@ -565,10 +535,6 @@ ___
 • **isEmpty**(`str`): `boolean` 
 
 判断字符串是否为空(null或"")
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -589,10 +555,6 @@ ___
 • **lerp**(`a`, `b`, `alpha`): `number` 
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Groups`**
-
-UTILITY
 
 
 ::: warning Precautions
@@ -616,15 +578,36 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 计算结果
 ___
 
+### loadAsset <Score text="loadAsset" /> 
+
+• **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
+
+资源加载
+
+
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源GUID |
+
+#### Returns
+
+`boolean`
+
+___
+
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
 • **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -637,15 +620,11 @@ UTILITY
 
 `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
 
-## Functions
+___
 
 ### nextId <Score text="nextId" /> 
 
 • **nextId**(): `number` 
-
-**`Groups`**
-
-UTILITY
 
 获取下一个ID的全局方法
 
@@ -661,10 +640,6 @@ ___
 • **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 键盘输入事件-点击
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -687,10 +662,6 @@ ___
 
 键盘输入事件-按压
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -711,10 +682,6 @@ ___
 • **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 键盘输入事件-抬起
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -737,10 +704,6 @@ ___
 
 格式化时间戳
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -761,10 +724,6 @@ ___
 • **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 获取角色在世界中的位置，投射到屏幕上
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -787,10 +746,6 @@ ___
 
 根据输入的弧度值返回度数
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -810,10 +765,6 @@ ___
 • **randomFloat**(`min`, `max`): `number` 
 
 获取随机范围内浮点数[包含min, 不包含max)
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -836,10 +787,6 @@ ___
 
 获取随机范围内整数[包含min, 不包含max)
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -861,10 +808,6 @@ ___
 
 设置鼠标指针是否锁定
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -880,10 +823,6 @@ ___
 
 设置鼠标指针是否可见
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -898,10 +837,6 @@ ___
 • **setInterval**(`handler`, `timeout`, `exitJudge?`): `number` 
 
 按一定时间间隔执行方法
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -925,10 +860,6 @@ ___
 
 设置是否可以锁定鼠标
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -943,10 +874,6 @@ ___
 • **sin**(`a`): `number` 
 
 计算sin值
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -968,10 +895,6 @@ ___
 
 计算tan值
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -990,10 +913,6 @@ ___
 • **time**(): `number` 
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
-
-**`Groups`**
-
-UTILITY
 
 
 ::: warning Precautions
@@ -1014,17 +933,16 @@ ___
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-## Type Aliases
+## Modules Type Aliases
+
+
+___
 
 ### EasingFunction <Score text="EasingFunction" /> 
 
@@ -1035,10 +953,6 @@ UTILITY
 • (`amount`): `number`
 
 缓动函数的类型定义
-
-**`Groups`**
-
-UTILITY
 
 ##### Parameters
 
@@ -1060,10 +974,6 @@ ___
 • (`v`, `k`): `number`
 
 插值函数的类型定义
-
-**`Groups`**
-
-UTILITY
 
 ##### Parameters
 

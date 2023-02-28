@@ -2,10 +2,6 @@
 
 # Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
 
-**`Groups`**
-
-UTILITY
-
 序列工具类，主要用于获取连续的ID
 
 ## Table of contents
@@ -21,10 +17,6 @@ UTILITY
 • `Static` **nextID**(): `number` 
 
 获取下一个ID
-
-**`Groups`**
-
-UTILITY
 
 
 #### Returns

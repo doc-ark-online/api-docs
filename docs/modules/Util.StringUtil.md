@@ -26,10 +26,6 @@
 
 屏蔽字检测的结果
 
-**`Groups`**
-
-UTILITY
-
 #### Type declaration
 
 | Name | Type | Description |
@@ -44,10 +40,6 @@ UTILITY
 • **clipboardCopy**(`text`): `void` <Badge type="tip" text="client" />
 
 文本复制，将字符串复制到剪切板
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -65,10 +57,6 @@ ___
 
 文本粘贴，获取剪切板的文本
 
-**`Groups`**
-
-UTILITY
-
 
 #### Returns
 
@@ -83,10 +71,6 @@ ___
 • **format**(`str`, `...param`): `string` 
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
-
-**`Groups`**
-
-UTILITY
 
 
 使用示例:格式化字符串用法
@@ -116,10 +100,6 @@ ___
 
 判断字符串是否为空(null或"")
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -140,10 +120,6 @@ ___
 • **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters

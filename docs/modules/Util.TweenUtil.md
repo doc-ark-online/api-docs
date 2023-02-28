@@ -65,10 +65,6 @@ var tween = new Util.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 
 缓动函数的类型定义
 
-**`Groups`**
-
-UTILITY
-
 ##### Parameters
 
 | Name | Type |
@@ -91,10 +87,6 @@ ___
 
 插值函数的类型定义
 
-**`Groups`**
-
-UTILITY
-
 ##### Parameters
 
 | Name | Type |
@@ -114,19 +106,11 @@ ___
 
 补间属性的定义，用户可以自由扩展
 
-**`Groups`**
-
-UTILITY
-
 ## Variables
 
 ### TWEEN <Score text="TWEEN" /> 
 
 • `Const` **TWEEN**: [`Group`](../classes/Util.Util.TweenUtil.Group.md)
-
-**`Groups`**
-
-UTILITY
 
 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
 
@@ -135,10 +119,6 @@ UTILITY
 ### nextId <Score text="nextId" /> 
 
 • **nextId**(): `number` 
-
-**`Groups`**
-
-UTILITY
 
 获取下一个ID的全局方法
 

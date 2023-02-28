@@ -4,10 +4,6 @@
 
 振荡器波形
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

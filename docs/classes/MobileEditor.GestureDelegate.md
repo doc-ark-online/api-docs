@@ -2,10 +2,6 @@
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 
-**`Groups`**
-
-SCRIPITING
-
 手势代理类
 
 ## Table of contents

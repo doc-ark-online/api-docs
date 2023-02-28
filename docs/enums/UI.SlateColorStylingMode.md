@@ -4,10 +4,6 @@
 
 UI颜色应用模式
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

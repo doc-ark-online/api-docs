@@ -2,10 +2,6 @@
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
-**`Groups`**
-
-GUI
-
 可挂载叶子节点的根节点，以及提供各种自动布局功能
 
 ## Hierarchy

@@ -4,10 +4,6 @@
 
 效果范围类型
 
-**`Groups`**
-
-EFFECTS
-
 ## Table of contents
 
 | Enumeration Members |

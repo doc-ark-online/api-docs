@@ -17,10 +17,6 @@
 
 类装饰器-自动执行某个方法
 
-**`Groups`**
-
-SCRIPITING
-
 ::: warning Precautions
 
 调用发生在所有游戏脚本的生命周期之前
@@ -57,10 +53,6 @@ ___
 ### saveProperty <Score text="saveProperty" /> 
 
 • **saveProperty**(`target`, `propertyKey`): `void` 
-
-**`Groups`**
-
-SCRIPITING
 
 属性装饰器-永久存储属性
 

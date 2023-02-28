@@ -4,10 +4,6 @@
 
 摄像机旋转模式
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Enumeration Members |

@@ -4,10 +4,6 @@
 
 平台形象特有的挂件数据格式
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Properties |

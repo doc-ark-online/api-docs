@@ -4,10 +4,6 @@
 
 人形外观形象对象,用于基础人形外观的设置.
 
-**`Groups`**
-
-AVATAR
-
 ::: warning Precautions
 
 目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目使用非HumanoidV1(基础人形外观)时,需要切换类型到HumanoidV1形象.获取HumanoidV1(let humanoidV1 = npc.getAppearance<Gameplay.HumanoidV1>()),进行形象更新.

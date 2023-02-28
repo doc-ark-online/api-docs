@@ -2,10 +2,6 @@
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 
-**`Groups`**
-
-GAMEPLAY
-
 命中结果
 
 ## Table of contents

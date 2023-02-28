@@ -4,10 +4,6 @@
 
 GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择
 
-**`Groups`**
-
-UTILITY
-
 ## Table of contents
 
 | Enumeration Members |

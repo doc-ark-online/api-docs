@@ -4,10 +4,6 @@
 
 四足外观形象对象,用于四足外观的设置.
 
-**`Groups`**
-
-AVATAR
-
 ::: warning Precautions
 
 目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目使用非FourFootStandard(四足外观)时,需要切换类型到FourFootStandard形象.再获取FourFootStandard(let fourfootftandard = npc.getAppearance<Gameplay.FourFootStandard>())对象,进行形象更新.

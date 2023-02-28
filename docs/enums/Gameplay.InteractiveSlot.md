@@ -2,10 +2,6 @@
 
 # InteractiveSlot <Badge type="tip" text="Enumeration" /> <Score text="InteractiveSlot" />
 
-**`Groups`**
-
-GAMEPLAY
-
 交互物支持的插槽
 
 ## Table of contents

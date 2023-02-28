@@ -4,10 +4,6 @@
 
 **`Instance`**
 
-**`Groups`**
-
-MONETIZATION
-
 广告服务，支持激励/插屏类型
 
 ::: warning Precautions

@@ -4,10 +4,6 @@
 
 寻路区域屏障寻路计算类型
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Enumeration Members |

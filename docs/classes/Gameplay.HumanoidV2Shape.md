@@ -4,10 +4,6 @@
 
 人形对象V2体型
 
-**`Groups`**
-
-AVATAR
-
 ## Implements
 
 - [`IHumanoidV2Shape`](../interfaces/Gameplay.IHumanoidV2Shape.md)

@@ -4,10 +4,6 @@
 
 按钮点击响应规则
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

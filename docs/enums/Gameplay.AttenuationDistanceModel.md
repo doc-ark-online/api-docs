@@ -4,10 +4,6 @@
 
 音效衰减函数模型
 
-**`Groups`**
-
-SOUNDS
-
 ## Table of contents
 
 | Enumeration Members |

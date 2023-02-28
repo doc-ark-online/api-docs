@@ -2,10 +2,6 @@
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
-**`Groups`**
-
-ANIMATIONS
-
 动画类
 
 ::: warning Precautions

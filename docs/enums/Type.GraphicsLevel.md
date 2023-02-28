@@ -4,10 +4,6 @@
 
 画质等级
 
-**`Groups`**
-
-SETTINGS
-
 ## Table of contents
 
 | Enumeration Members |

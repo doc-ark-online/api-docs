@@ -2,10 +2,6 @@
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 
-**`Groups`**
-
-DATA
-
 数据控制类的基类
 
 ## Table of contents

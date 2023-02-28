@@ -2,10 +2,6 @@
 
 # Response <Badge type="tip" text="Interface" /> <Score text="Response" />
 
-**`Groups`**
-
-GAMEPLAY
-
 HTTP响应信息的对象
 
 ## Table of contents

@@ -4,10 +4,6 @@
 
 冲量力类型
 
-**`Groups`**
-
-PHYSICS
-
 ## Table of contents
 
 | Enumeration Members |

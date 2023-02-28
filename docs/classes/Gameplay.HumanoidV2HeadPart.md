@@ -4,10 +4,6 @@
 
 人形对象V2头部位接口
 
-**`Groups`**
-
-AVATAR
-
 ## Implements
 
 - [`IHumanoidV2HeadPart`](../interfaces/Gameplay.IHumanoidV2HeadPart.md)

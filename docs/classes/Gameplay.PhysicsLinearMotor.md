@@ -2,10 +2,6 @@
 
 # PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
-**`Groups`**
-
-PHYSICS
-
 物理线性发动机组件
 
 ::: warning Precautions

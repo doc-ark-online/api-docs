@@ -4,10 +4,6 @@
 
 拖拽的锚点
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

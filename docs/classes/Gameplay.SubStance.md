@@ -2,10 +2,6 @@
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
-**`Groups`**
-
-ANIMATIONS
-
 二级姿态
 
 使用示例: 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态.
@@ -39,7 +35,9 @@ this.stanceProxy.stop();
 | Methods |
 | :-----|
 | **[play](Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
+| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现|
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
+| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现|
 :::
 
 

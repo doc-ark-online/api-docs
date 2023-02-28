@@ -2,10 +2,6 @@
 
 # MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="MulticastDelegateInterface<T\>" />
 
-**`Groups`**
-
-SCRIPITING
-
 多播委托接口
 
 **`Effect`**

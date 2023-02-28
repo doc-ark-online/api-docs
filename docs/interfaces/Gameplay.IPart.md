@@ -4,10 +4,6 @@
 
 部位基类
 
-**`Groups`**
-
-AVATAR
-
 ## Hierarchy
 
 - **`IPart`**

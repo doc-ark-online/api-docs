@@ -2,10 +2,6 @@
 
 # UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
-**`Groups`**
-
-SCRIPITING
-
 **`Instance`**
 
 用户建造服务

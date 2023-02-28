@@ -2,10 +2,6 @@
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
-**`Groups`**
-
-SCRIPITING
-
 委托
 
 **`Effect`**

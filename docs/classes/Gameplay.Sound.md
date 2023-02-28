@@ -2,10 +2,6 @@
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
-**`Groups`**
-
-SOUNDS
-
 音效组件
 
 使用示例:常用接口示例
@@ -36,6 +32,7 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | **[audioAsset](Gameplay.Sound.md#audioasset)**(`assetGuid`: `string`): `void` <br> 设置音效|
 | **[autoPlay](Gameplay.Sound.md#autoplay)**(): `boolean` <br> 获取是否自动播放|
 | **[currentProgress](Gameplay.Sound.md#currentprogress)**(): `number` <br> 获取当前播放时长进度|
+| **[drawInnerBounds](Gameplay.Sound.md#drawinnerbounds)**(): `boolean` <br> 获取是否绘制Bounds辅助线|
 | **[duration](Gameplay.Sound.md#duration)**(): `number` <br> 获取音效时长|
 | **[innerRadius](Gameplay.Sound.md#innerradius)**(): `number` <br> 获取音量内部半径|
 | **[loop](Gameplay.Sound.md#loop)**(): `boolean` <br> 获取是否循环播放|
@@ -64,6 +61,7 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -72,8 +70,10 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 
 | Methods |
 | :-----|
+| **[getIsDrawInnerBounds](Gameplay.Sound.md#getisdrawinnerbounds)**(): `boolean` <br> 获取是否启用Bounds辅助线|
 | **[pause](Gameplay.Sound.md#pause)**(): `void` <br> 暂停播放特效|
 | **[play](Gameplay.Sound.md#play)**(): `void` <br> 播放音效|
+| **[setSoundSphere](Gameplay.Sound.md#setsoundsphere)**(`radius`: `number`, `volume`: `number`, `drawBoundLine`: `boolean`, `newFunction`: [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md)): `void` <br> 设置音效.复合函数|
 | **[stop](Gameplay.Sound.md#stop)**(): `void` <br> 停止播放特效|
 
 
@@ -129,11 +129,13 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -229,6 +231,43 @@ ___
 `number`
 
 播放时长进度
+
+___
+
+### drawInnerBounds <Score text="drawInnerBounds" /> 
+
+• `get` **drawInnerBounds**(): `boolean`
+
+::: danger Deprecated
+
+since:022 reason: 删除接口 replacement:
+
+:::
+
+获取是否绘制Bounds辅助线
+
+#### Returns
+
+`boolean`
+
+是否绘制
+
+• `set` **drawInnerBounds**(`drawInnerBounds`): `void`
+
+::: danger Deprecated
+
+since:022 reason: 删除接口 replacement:
+
+:::
+
+设置是否绘制Bounds辅助线
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `drawInnerBounds` | `boolean` | 是否绘制 |
+
 
 ___
 
@@ -408,6 +447,26 @@ Vector XYZ 0-1
 
 ## Methods
 
+### getIsDrawInnerBounds <Score text="getIsDrawInnerBounds" /> 
+
+• **getIsDrawInnerBounds**(): `boolean` 
+
+::: danger Deprecated
+
+since:022 reason: 删除接口 replacement:
+
+:::
+
+获取是否启用Bounds辅助线
+
+
+#### Returns
+
+`boolean`
+
+是否启用
+
+
 ### pause <Score text="pause" /> 
 
 • **pause**(): `void` 
@@ -424,6 +483,30 @@ ___
 
 播放音效
 
+
+
+
+### setSoundSphere <Score text="setSoundSphere" /> 
+
+• **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` 
+
+::: danger Deprecated
+
+since:022 reason: 删除接口 replacement:
+
+:::
+
+设置音效.复合函数
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `radius` | `number` | 半径 |
+| `volume` | `number` | 音量大小 |
+| `drawBoundLine` | `boolean` | 是否画辅助线 |
+| `newFunction` | [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) | 音效衰减类型 |
 
 
 

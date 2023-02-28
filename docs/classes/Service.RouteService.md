@@ -2,10 +2,6 @@
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
-**`Groups`**
-
-SOCIAL
-
 **`Instance`**
 
 游戏管理器

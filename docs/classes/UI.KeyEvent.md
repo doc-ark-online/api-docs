@@ -2,10 +2,6 @@
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
-**`Groups`**
-
-GUI
-
 按键事件
 
 ## Table of contents

@@ -2,10 +2,6 @@
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
-**`Groups`**
-
-DATA
-
 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
 
 ::: warning Precautions

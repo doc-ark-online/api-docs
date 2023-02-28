@@ -2,10 +2,6 @@
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
-**`Groups`**
-
-GUI
-
 世界UI组件
 
 ## Hierarchy
@@ -51,6 +47,7 @@ GUI
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -60,8 +57,10 @@ GUI
 | Methods |
 | :-----|
 | **[getTargetUIWidget](Gameplay.UIWidget.md#gettargetuiwidget)**(): [`UserWidget`](UI.UserWidget.md) <br> 获取UI对象资源|
+| **[getUI](Gameplay.UIWidget.md#getui)**(): [`UserWidget`](UI.UserWidget.md) <br> 获取UI对象资源|
 | **[refresh](Gameplay.UIWidget.md#refresh)**(): `void` <br> 请求重新绘制|
 | **[setTargetUIWidget](Gameplay.UIWidget.md#settargetuiwidget)**(`uiUserWidget`: [`UserWidget`](UI.UserWidget.md)): `void` <br> 设置UI，可以对当前的UI设置UI资源，UI资源可以从路径获取或直接取其他UI组件引用的资源|
+| **[setUI](Gameplay.UIWidget.md#setui)**(`GUID`: `string`): `void` <br> 通过GUID设置UI|
 | **[setUIbyGUID](Gameplay.UIWidget.md#setuibyguid)**(`GUID`: `string`): `void` <br> 通过GUID设置UI|
 
 
@@ -117,11 +116,13 @@ GUI
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -479,6 +480,26 @@ ___
 UI对象资源
 
 
+### getUI <Score text="getUI" /> 
+
+• **getUI**(): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason:命名修改 replacement:请使用getTargetUIWidget()
+
+:::
+
+获取UI对象资源
+
+
+#### Returns
+
+[`UserWidget`](UI.UserWidget.md)
+
+UI对象
+
+
 ### refresh <Score text="refresh" /> 
 
 • **refresh**(): `void` <Badge type="tip" text="client" />
@@ -502,6 +523,28 @@ UI对象资源
 | `uiUserWidget` | [`UserWidget`](UI.UserWidget.md) | UI资源对象 |
 
 
+
+### setUI <Score text="setUI" /> 
+
+• **setUI**(`GUID`): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason:命名修改 replacement:请使用setUIbyGUID()
+
+:::
+
+通过GUID设置UI
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | UI的GUID |
+
+
+___
 
 ### setUIbyGUID <Score text="setUIbyGUID" /> 
 

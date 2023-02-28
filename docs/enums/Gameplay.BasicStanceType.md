@@ -4,10 +4,6 @@
 
 基础姿态风格
 
-**`Groups`**
-
-AVATAR
-
 ## Table of contents
 
 | Enumeration Members |

@@ -4,10 +4,6 @@
 
 广告类型
 
-**`Groups`**
-
-MONETIZATION
-
 ## Table of contents
 
 | Enumeration Members |

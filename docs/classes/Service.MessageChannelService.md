@@ -2,10 +2,6 @@
 
 # MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 
-**`Groups`**
-
-SCRIPITING
-
 **`Instance`**
 
 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码

@@ -60,10 +60,6 @@ ___
 
 清除delayExecute
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -80,10 +76,6 @@ ___
 
 清除setInterval
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -99,10 +91,6 @@ ___
 • **delayExecute**(`handler`, `frameNum?`): `number` 
 
 延迟一定帧数执行方法
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -126,10 +114,6 @@ ___
 
 延迟一定秒数,用于异步方法中间的等待，不可取消
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -150,10 +134,6 @@ ___
 • **delayTime**(): `number` 
 
 每一帧经过的时间 (单位：秒)
-
-**`Groups`**
-
-UTILITY
 
 ::: warning Precautions
 
@@ -176,10 +156,6 @@ ___
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
-**`Groups`**
-
-UTILITY
-
 
 ::: warning Precautions
 
@@ -200,10 +176,6 @@ ___
 • **parseTime**(`timeData`, `format?`): `string` 
 
 格式化时间戳
-
-**`Groups`**
-
-UTILITY
 
 
 #### Parameters
@@ -227,10 +199,6 @@ ___
 
 按一定时间间隔执行方法
 
-**`Groups`**
-
-UTILITY
-
 
 #### Parameters
 
@@ -253,10 +221,6 @@ ___
 • **time**(): `number` 
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
-
-**`Groups`**
-
-UTILITY
 
 
 ::: warning Precautions

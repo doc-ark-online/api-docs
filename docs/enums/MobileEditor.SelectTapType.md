@@ -4,10 +4,6 @@
 
 UGC 选中的单选或者多选
 
-**`Groups`**
-
-SCRIPITING
-
 ## Table of contents
 
 | Enumeration Members |

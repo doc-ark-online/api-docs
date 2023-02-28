@@ -2,10 +2,6 @@
 
 # ModuleManager <Badge type="tip" text="Class" /> <Score text="ModuleManager" />
 
-**`Groups`**
-
-UTILITY
-
 模块管理
 
 ::: warning Precautions

@@ -4,10 +4,6 @@
 
 数据储存返回代码
 
-**`Groups`**
-
-DATA
-
 ## Table of contents
 
 | Enumeration Members |

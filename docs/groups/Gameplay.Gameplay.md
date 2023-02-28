@@ -85,6 +85,7 @@ Gameplay
 | **[asyncGetCurrentPlayer](Gameplay.Gameplay.md#asyncgetcurrentplayer)**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步获取当前玩家|
 | **[asyncGetPlayer](Gameplay.Gameplay.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
 | **[boxOverlap](Gameplay.Gameplay.md#boxoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 矩形范围检测|
+| **[boxOverlapInLevel](Gameplay.Gameplay.md#boxoverlapinlevel)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 矩形范围检测|
 | **[clearMoveTo](Gameplay.Gameplay.md#clearmoveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 导航停止|
 | **[cylinderOverlap](Gameplay.Gameplay.md#cylinderoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `Height`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆柱范围检测|
 | **[fetch](Gameplay.Gameplay.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
@@ -107,11 +108,14 @@ Gameplay
 | **[getViewportSize](Gameplay.Gameplay.md#getviewportsize)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取当前游戏窗口尺寸|
 | **[httpRequestTransmitData](Gameplay.Gameplay.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
 | **[isClient](Gameplay.Gameplay.md#isclient)**(): `boolean` <br> 是否客户端运行|
+| **[isDynamicVibration](Gameplay.Gameplay.md#isdynamicvibration)**(`value`: `boolean`): `void` <br> 振动开关|
 | **[isMobile](Gameplay.Gameplay.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
 | **[isServer](Gameplay.Gameplay.md#isserver)**(): `boolean` <br> 是否服务器运行|
 | **[lineTrace](Gameplay.Gameplay.md#linetrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `multiTrace`: `boolean`, `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 射线检测|
 | **[moveTo](Gameplay.Gameplay.md#moveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `Location`: [`Vector`](../classes/Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
 | **[parabolicTrace](Gameplay.Gameplay.md#parabolictrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Direction`: [`Vector`](../classes/Type.Vector.md), `InitSpeed`: `number`, `Range`: `number`, `CapsuleRadius`: `number`, `IgnoreObjectTypes`: [`ObjectTypeQuery`](../enums/Gameplay.ObjectTypeQuery.md)[], `debug`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md) <br> 抛物线检测|
+| **[playDynamicForceFeedbackStart](Gameplay.Gameplay.md#playdynamicforcefeedbackstart)**(`Intensity?`: `number`, `Duration?`: `number`): `void` <br> 播放震动|
+| **[playDynamicForceFeedbackStop](Gameplay.Gameplay.md#playdynamicforcefeedbackstop)**(): `void` <br> 停止震动|
 | **[removeOutlineEffect](Gameplay.Gameplay.md#removeoutlineeffect)**(`obj`: `GameObject`): `void` <br> 移除描边效果|
 | **[setGlobalAsyncTimeout](Gameplay.Gameplay.md#setglobalasynctimeout)**(`overtime`: `number`): `void` <br> 设置异步回调超时时间，单位毫秒，默认5000|
 | **[setGlobalTimeDilation](Gameplay.Gameplay.md#setglobaltimedilation)**(`Time`: `number`): `void` <br> 设置世界整体膨胀时间速度|
@@ -119,6 +123,7 @@ Gameplay
 | **[setGraphicsGPULevel](Gameplay.Gameplay.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
 | **[setPlayerPassableForAllArea](Gameplay.Gameplay.md#setplayerpassableforallarea)**(`character`: [`Character`](../classes/Gameplay.Character.md), `canPass`: `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
 | **[setStaticMeshColor](Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`StaticMesh`](../classes/Gameplay.StaticMesh.md), `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
+| **[setStaticMeshMaterialColor](Gameplay.Gameplay.md#setstaticmeshmaterialcolor)**(`obj`: `GameObject`, `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
 | **[sphereOverlap](Gameplay.Gameplay.md#sphereoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `debug`: `boolean`): `Core.GameObject`[] <br> 圆形范围检测|
 | **[urlDecode](Gameplay.Gameplay.md#urldecode)**(`str`: `string`): `string` <br> url解码|
 | **[urlEncode](Gameplay.Gameplay.md#urlencode)**(`str`: `string`): `string` <br> url转码|
@@ -135,17 +140,16 @@ Gameplay
 | **[VehicleWheelData](Gameplay.Gameplay.md#vehiclewheeldata)**: `Object` <br> 角色身上GUID切换成功回调|
 
 
-## Functions
+## Modules Functions
+
+
+___
 
 ### addOutlineEffect <Score text="addOutlineEffect" /> 
 
 • **addOutlineEffect**(`obj`, `OutlineColor?`, `OutlineWidth?`, `OutlineDepthOffset?`, `OutlineClampValue?`, `considerCameraPosition?`, `outlineSilhouetteOnly?`): `void` <Badge type="tip" text="client" />
 
 为目标物体添加描边效果,不需要后处理，描边效果会被其他物体遮挡
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -168,10 +172,6 @@ ___
 
 角度检查
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -192,10 +192,6 @@ ___
 ### asyncFindPathToLocation <Score text="asyncFindPathToLocation" /> 
 
 • **asyncFindPathToLocation**(`startPos`, `endPos`): [`Vector`](../classes/Type.Vector.md)[] 
-
-**`Groups`**
-
-GAMEPLAY
 
 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点
 
@@ -220,10 +216,6 @@ ___
 
 异步获取当前玩家
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -237,10 +229,6 @@ ___
 • **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> 
 
 异步根据playerId获取Player
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -260,9 +248,43 @@ ___
 
 • **boxOverlap**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] 
 
-**`Groups`**
+矩形范围检测
 
-GAMEPLAY
+
+使用示例: 如下示例展示使用矩形范围检测的基本流程
+```ts
+const goList = boxOverlap(new Type.Vector(0,0,0), new Type.Vector(1000,0,0), 10, 10, true);
+for (const item of goList) {
+    // item: 检测到的对象
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `StartLocation` | [`Vector`](../classes/Type.Vector.md) | 起始位置 |
+| `EndLocation` | [`Vector`](../classes/Type.Vector.md) | 结束位置 |
+| `Width` | `number` | 检测宽度 |
+| `Height` | `number` | 检测高度 |
+| `debug` | `boolean` | 是否可视化绘制 default:true |
+
+#### Returns
+
+`Core.GameObject`[]
+
+GameObject数组
+___
+
+### boxOverlapInLevel <Score text="boxOverlapInLevel" /> 
+
+• **boxOverlapInLevel**(`StartLocation`, `EndLocation`, `Width`, `Height`, `debug`): `Core.GameObject`[] 
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: boxOverlap
+
+:::
 
 矩形范围检测
 
@@ -298,10 +320,6 @@ ___
 
 导航停止
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -316,10 +334,6 @@ ___
 • **cylinderOverlap**(`StartLocation`, `Radius`, `Height`, `debug`): `Core.GameObject`[] 
 
 圆柱范围检测
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -336,17 +350,13 @@ GAMEPLAY
 `Core.GameObject`[]
 
 GameObject数组
-## Functions
+___
 
 ### fetch <Score text="fetch" /> 
 
 • **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> 
 
 HTTP请求
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -366,10 +376,6 @@ ___
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 • **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` 
-
-**`Groups`**
-
-GAMEPLAY
 
 通用Http请求
 
@@ -402,10 +408,6 @@ ___
 
 当前所有Player
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -419,10 +421,6 @@ ___
 • **getClickGameObjectByScene**(`SceneX`, `SceneY`, `Distance`, `multiTrace`, `onRay`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="client" />
 
 获取点击屏幕位置的物体
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -440,17 +438,13 @@ GAMEPLAY
 [`HitResult`](../classes/Gameplay.HitResult.md)[]
 
 点击位置的物体
-## Functions
+___
 
 ### getCurrentEnv <Score text="getCurrentEnv" /> 
 
 • **getCurrentEnv**(): `string` 
 
 获取当前环境
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -466,10 +460,6 @@ ___
 
 获取当前玩家
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -483,10 +473,6 @@ ___
 • **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="client" />
 
 获取默认CPU画质等级
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -502,10 +488,6 @@ ___
 
 获取默认GPU画质等级
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -519,10 +501,6 @@ ___
 • **getEditorVersion**(): `string` 
 
 获取编辑器版本号
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -538,10 +516,6 @@ ___
 
 获取完整编辑器版本号
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -555,10 +529,6 @@ ___
 • **getGameId**(): `string` 
 
 获取当前游戏GameId
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -574,10 +544,6 @@ ___
 
 获取当前CPU画质等级
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -592,10 +558,6 @@ ___
 
 获取当前GPU画质等级
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -609,10 +571,6 @@ ___
 • **getPlayer**(`playerId`): [`Player`](../classes/Gameplay.Player.md) 
 
 获取玩家
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -633,10 +591,6 @@ ___
 • **getShootDir**(`character`, `startLoc`, `distance?`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
 
 获取某位置指向屏幕中心瞄准位置的向量
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -660,10 +614,6 @@ ___
 
 获取url参数
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -685,27 +635,19 @@ ___
 
 获取当前游戏版本
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
 `string`
 
 当前游戏版本
-## Functions
+___
 
 ### getViewportSize <Score text="getViewportSize" /> 
 
 • **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取当前游戏窗口尺寸
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -719,10 +661,6 @@ ___
 • **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` 
 
 Http请求接口
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -747,10 +685,6 @@ ___
 
 是否客户端运行
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -759,15 +693,32 @@ GAMEPLAY
 是否客户端运行
 ___
 
+### isDynamicVibration <Score text="isDynamicVibration" /> 
+
+• **isDynamicVibration**(`value`): `void` <Badge type="tip" text="client" />
+
+振动开关
+
+::: danger Deprecated
+
+since:022 reason: API规范修改 replacement: vibrate
+
+:::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` | -true:开启震动，-false:关闭震动 |
+
+___
+
 ### isMobile <Score text="isMobile" /> 
 
 • **isMobile**(): `boolean` 
 
 判断当前是否是移动端
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Returns
@@ -783,10 +734,6 @@ ___
 
 是否服务器运行
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Returns
 
@@ -800,10 +747,6 @@ ___
 • **lineTrace**(`StartLocation`, `EndLocation`, `multiTrace`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md)[] 
 
 射线检测
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -828,10 +771,6 @@ ___
 
 寻路移动
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -850,10 +789,6 @@ ___
 • **parabolicTrace**(`StartLocation`, `Direction`, `InitSpeed`, `Range`, `CapsuleRadius`, `IgnoreObjectTypes`, `debug`): [`HitResult`](../classes/Gameplay.HitResult.md) 
 
 抛物线检测
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -875,15 +810,48 @@ GAMEPLAY
 HitResult
 ___
 
+### playDynamicForceFeedbackStart <Score text="playDynamicForceFeedbackStart" /> 
+
+• **playDynamicForceFeedbackStart**(`Intensity?`, `Duration?`): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+
+:::
+
+播放震动
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Intensity?` | `number` | 强度 default:1 |
+| `Duration?` | `number` | 周期 -1 是一直震动 default:-1 |
+
+___
+
+### playDynamicForceFeedbackStop <Score text="playDynamicForceFeedbackStop" /> 
+
+• **playDynamicForceFeedbackStop**(): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+
+:::
+
+停止震动
+
+
+___
+
 ### removeOutlineEffect <Score text="removeOutlineEffect" /> 
 
 • **removeOutlineEffect**(`obj`): `void` <Badge type="tip" text="client" />
 
 移除描边效果
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -900,10 +868,6 @@ ___
 
 设置异步回调超时时间，单位毫秒，默认5000
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -918,10 +882,6 @@ ___
 • **setGlobalTimeDilation**(`Time`): `void` <Badge type="tip" text="other" />
 
 设置世界整体膨胀时间速度
-
-**`Groups`**
-
-GAMEPLAY
 
 调用端自动广播
 
@@ -945,10 +905,6 @@ ___
 
 设置当前CPU画质等级
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -964,10 +920,6 @@ ___
 
 设置当前GPU画质等级
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -981,10 +933,6 @@ ___
 • **setPlayerPassableForAllArea**(`character`, `canPass`): `void` <Badge type="tip" text="server" />
 
 设置某个玩家对所有禁行区的通过权限
-
-**`Groups`**
-
-GAMEPLAY
 
 
 使用示例:设置某个玩家对所有禁行区的通过权限
@@ -1005,10 +953,6 @@ ___
 
 • **setStaticMeshColor**(`staticMesh`, `color`): `void` <Badge type="tip" text="client" />
 
-**`Groups`**
-
-GAMEPLAY
-
 设置物体静态网格材质颜色
 
 
@@ -1021,15 +965,33 @@ GAMEPLAY
 
 ___
 
+### setStaticMeshMaterialColor <Score text="setStaticMeshMaterialColor" /> 
+
+• **setStaticMeshMaterialColor**(`obj`, `color`): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason: 废弃 replacement:setStaticMeshColor()
+
+:::
+
+设置物体静态网格材质颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `obj` | `GameObject` | 静态网格 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+
+___
+
 ### sphereOverlap <Score text="sphereOverlap" /> 
 
 • **sphereOverlap**(`StartLocation`, `Radius`, `debug`): `Core.GameObject`[] 
 
 圆形范围检测
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -1053,10 +1015,6 @@ ___
 
 url解码
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -1077,10 +1035,6 @@ ___
 
 url转码
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -1098,10 +1052,6 @@ ___
 
 • **vibrate**(`enable`): `void` <Badge type="tip" text="client" />
 
-**`Groups`**
-
-GAMEPLAY
-
 振动开关
 
 
@@ -1110,17 +1060,16 @@ GAMEPLAY
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `enable` | `boolean` | -true:开启震动，-false:关闭震动 |
-## Type Aliases
+## Modules Type Aliases
+
+
+___
 
 ### CameraShakeData <Score text="CameraShakeData" /> 
 
 Ƭ **CameraShakeData**: `Object`
 
 摄像机震动数据
-
-**`Groups`**
-
-GAMEPLAY
 
 ::: warning Precautions
 
@@ -1146,10 +1095,6 @@ ___
 Ƭ **CameraSystemData**: `Object`
 
 摄像机属性数据
-
-**`Groups`**
-
-GAMEPLAY
 
 ::: warning Precautions
 
@@ -1184,7 +1129,7 @@ GAMEPLAY
 | `slotOffset?` | [`Vector`](../classes/Type.Vector.md) | 摄像机位置偏移 |
 | `targetArmLength?` | `number` | 距离调整 |
 | `targetOffset?` | [`Vector`](../classes/Type.Vector.md) | 挂点位置偏移 |
-## Type Aliases
+___
 
 ### HttpResponse <Score text="HttpResponse" /> 
 
@@ -1195,10 +1140,6 @@ GAMEPLAY
 • (`result`, `content`, `responseCode`): `void`
 
 Http请求的回调消息格式
-
-**`Groups`**
-
-GAMEPLAY
 
 ::: warning Precautions
 
@@ -1225,10 +1166,6 @@ ___
 
 震动数值
 
-**`Groups`**
-
-GAMEPLAY
-
 ::: warning Precautions
 
 震动数值
@@ -1250,10 +1187,6 @@ ___
 
 四轮载具挡位属性
 
-**`Groups`**
-
-GAMEPLAY
-
 #### Type declaration
 
 | Name | Type | Description |
@@ -1269,10 +1202,6 @@ ___
 Ƭ **VehicleWheelData**: `Object`
 
 四轮载具车轮属性
-
-**`Groups`**
-
-GAMEPLAY
 
 #### Type declaration
 

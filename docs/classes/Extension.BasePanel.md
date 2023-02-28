@@ -4,10 +4,6 @@
 
 面板类的基类，可用于控制一个界面
 
-**`Groups`**
-
-GUI
-
 ::: warning Precautions
 
 注意：如子类重写onAwake，onAdded方法，请调用super的对应方法

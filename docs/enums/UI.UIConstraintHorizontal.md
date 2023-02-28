@@ -4,10 +4,6 @@
 
 对齐策略水平规则
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

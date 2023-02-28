@@ -4,10 +4,6 @@
 
 装备状态
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Enumeration Members |

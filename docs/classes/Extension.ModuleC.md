@@ -2,10 +2,6 @@
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
-**`Groups`**
-
-UTILITY
-
 客户端模块的基类
 
 ::: warning Precautions

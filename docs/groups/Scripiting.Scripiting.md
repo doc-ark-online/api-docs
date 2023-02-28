@@ -104,17 +104,16 @@ Scripiting
 | **[uploadScreenShots](Scripiting.Scripiting.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <br> 上传角色头像及全身照到服务器后发送到MGS|
 
 
-## Functions
+## Modules Functions
+
+
+___
 
 ### UGCEditor <Score text="UGCEditor" /> 
 
 • **UGCEditor**(`target`): `void` <Badge type="tip" text="client" />
 
 UGC Editor使用的装饰器,避免数据被还原
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -123,17 +122,13 @@ SCRIPITING
 | :------ | :------ | :------ |
 | `target` | `any` |  目标 |
 
-## Functions
+___
 
 ### addClientListener <Score text="addClientListener" /> 
 
 • **addClientListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="server" />
 
 服务器监听客户端发来的事件
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -162,10 +157,6 @@ ___
 
 添加对编辑器人物的输入 - 只作用于编辑器人物
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -180,10 +171,6 @@ ___
 • **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加退出游戏时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -220,10 +207,6 @@ ___
 
 添加窗口聚焦时执行的回调函数
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -259,10 +242,6 @@ ___
 
 监听本地事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -283,10 +262,6 @@ ___
 • **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加OnPause开始时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -324,10 +299,6 @@ ___
 
 添加OnPause结束时执行的回调函数
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -364,10 +335,6 @@ ___
 
 监听玩家进入room事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -388,10 +355,6 @@ ___
 
 监听玩家离开room事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -411,10 +374,6 @@ ___
 • **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 客户端监听服务器事件
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -442,10 +401,6 @@ ___
 • **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加窗口失焦时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -482,10 +437,6 @@ ___
 
 异步对指定虚拟角色进行截取，截图保存在本地固定路径下
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -509,10 +460,6 @@ ___
 ### asyncGetResourceList <Score text="asyncGetResourceList" /> 
 
 • **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\> <Badge type="tip" text="client" />
-
-**`Groups`**
-
-SCRIPITING
 
 获取资源列表
 
@@ -538,10 +485,6 @@ ___
 
 保存当前游戏项目
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -554,17 +497,13 @@ SCRIPITING
 `Promise`<`boolean`\>
 
 保存成功或失败
-## Functions
+___
 
 ### autoExecute <Score text="autoExecute" /> 
 
 • **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` 
 
 类装饰器-自动执行某个方法
-
-**`Groups`**
-
-SCRIPITING
 
 ::: warning Precautions
 
@@ -604,10 +543,6 @@ ___
 
 开始记录撤销恢复的actor属性
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -623,10 +558,6 @@ ___
 
 开始记录actor的transform属性
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -641,10 +572,6 @@ ___
 • **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
 
 计算actor的等比缩放
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -666,10 +593,6 @@ ___
 • **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
 
 同步对指定虚拟角色进行截取，截图保存在本地固定路径下
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -693,10 +616,6 @@ ___
 
 将二维屏幕位置转换为世界空间三维位置和方向
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -717,10 +636,6 @@ ___
 • **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -743,10 +658,6 @@ ___
 
 发送本地事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -767,10 +678,6 @@ ___
 • **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给所有客户端
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -798,10 +705,6 @@ ___
 • **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给指定客户端
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -831,10 +734,6 @@ ___
 
 客户端发送事件给服务器
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -861,10 +760,6 @@ ___
 
 结束记录actor属性的撤销恢复
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -879,10 +774,6 @@ ___
 • **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="client" />
 
 结束记录actor的transform
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -900,10 +791,6 @@ ___
 
 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -917,10 +804,6 @@ ___
 • **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md) <Badge type="tip" text="client" />
 
 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Returns
@@ -936,10 +819,6 @@ ___
 
 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -953,10 +832,6 @@ ___
 • **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void` <Badge type="tip" text="client" />
 
 对指定虚拟角色进行截取后上传到服务器
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -980,10 +855,6 @@ ___
 
 获取单指滑动的代理
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -997,10 +868,6 @@ ___
 • **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <Badge type="tip" text="client" />
 
 获取挤压手势的代理
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Returns
@@ -1016,10 +883,6 @@ ___
 
 获取截图的保存路径
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -1033,10 +896,6 @@ ___
 • **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
 
 获取点击事件的代理
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Returns
@@ -1052,10 +911,6 @@ ___
 
 获取手指按下代理
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -1069,10 +924,6 @@ ___
 • **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[] <Badge type="tip" text="client" />
 
 获取touch的数组
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Returns
@@ -1088,10 +939,6 @@ ___
 
 获取手指抬起代理
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -1105,10 +952,6 @@ ___
 • **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
 
 获取手指滑动代理
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Returns
@@ -1124,10 +967,6 @@ ___
 
 获取双指滑动的代理
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Returns
 
@@ -1141,10 +980,6 @@ ___
 • **markActorRenderStateDirty**(`target`): `void` <Badge type="tip" text="client" />
 
 标记Actor所有组件的渲染状态为脏
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1160,10 +995,6 @@ ___
 • **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`boolean`\> 
 
 移动端编辑器发布游戏
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -1192,10 +1023,6 @@ ___
 
 获取角色在世界中的位置，投射到屏幕上
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1216,10 +1043,6 @@ ___
 • **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="client" />
 
 连续截图，生成GIF素材发送给服务器
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -1249,10 +1072,6 @@ ___
 
 执行恢复操作
 
-**`Groups`**
-
-SCRIPITING
-
 
 ___
 
@@ -1261,10 +1080,6 @@ ___
 • **saveProject**(): `void` 
 
 保存当前游戏项目
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -1278,10 +1093,6 @@ ___
 ### saveProperty <Score text="saveProperty" /> 
 
 • **saveProperty**(`target`, `propertyKey`): `void` 
-
-**`Groups`**
-
-SCRIPITING
 
 属性装饰器-永久存储属性
 
@@ -1306,10 +1117,6 @@ ___
 
 屏幕指定区域截图
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1328,10 +1135,6 @@ ___
 • **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="client" />
 
 验证绝对路径下截图是否存在
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1352,10 +1155,6 @@ ___
 • **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void` <Badge type="tip" text="client" />
 
 将角色数据ID连同角色截图一同发给MGS
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -1380,10 +1179,6 @@ ___
 
 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1403,10 +1198,6 @@ ___
 • **setEditorCameraRotation**(`input`): `boolean` <Badge type="tip" text="client" />
 
 添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1428,10 +1219,6 @@ ___
 
 设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1451,10 +1238,6 @@ ___
 • **setEditorPawnLocation**(`input`): `boolean` <Badge type="tip" text="client" />
 
 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1476,10 +1259,6 @@ ___
 
 添加对编辑器人物的输入 - 只作用于编辑器人物
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1499,10 +1278,6 @@ ___
 • **setEditorPawnTransform**(`input`): `boolean` <Badge type="tip" text="client" />
 
 设置编辑器人物的空间信息
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1524,10 +1299,6 @@ ___
 
 双指移动的时间- 必须大于这个时间才执行双指移动事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1542,10 +1313,6 @@ ___
 • **setPinchAngleTolerance**(`time`): `void` <Badge type="tip" text="client" />
 
 挤压手势的偏差角度
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1562,10 +1329,6 @@ ___
 
 单指移动的时间- 必须大于这个时间才会开始执行单指移动
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1580,10 +1343,6 @@ ___
 • **setSwipeTolerance**(`time`): `void` <Badge type="tip" text="client" />
 
 双指移动的偏差量- 值越大误差则可以越大
-
-**`Groups`**
-
-SCRIPITING
 
 
 #### Parameters
@@ -1600,10 +1359,6 @@ ___
 
 tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -1619,10 +1374,6 @@ ___
 
 执行撤销操作
 
-**`Groups`**
-
-SCRIPITING
-
 
 ___
 
@@ -1631,10 +1382,6 @@ ___
 • **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void` <Badge type="tip" text="client" />
 
 上传角色头像或全身照到服务器后发送到MGS
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -1658,10 +1405,6 @@ ___
 • **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="client" />
 
 上传角色头像及全身照到服务器后发送到MGS
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions

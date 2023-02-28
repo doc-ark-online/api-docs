@@ -2,10 +2,6 @@
 
 # RequestInit <Badge type="tip" text="Interface" /> <Score text="RequestInit" />
 
-**`Groups`**
-
-GAMEPLAY
-
 HTTP请求信息的对象
 
 ## Table of contents

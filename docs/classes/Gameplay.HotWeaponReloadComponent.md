@@ -4,10 +4,6 @@
 
 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Properties |

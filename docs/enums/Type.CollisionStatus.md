@@ -4,10 +4,6 @@
 
 碰撞属性状态
 
-**`Groups`**
-
-PHYSICS
-
 ## Table of contents
 
 | Enumeration Members |

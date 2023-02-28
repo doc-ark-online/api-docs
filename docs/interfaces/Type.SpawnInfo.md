@@ -2,10 +2,6 @@
 
 # SpawnInfo <Badge type="tip" text="Interface" /> <Score text="SpawnInfo" />
 
-**`Groups`**
-
-GAMEPLAY
-
 构建物体的信息
 
 ## Table of contents

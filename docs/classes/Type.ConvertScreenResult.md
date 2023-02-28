@@ -2,10 +2,6 @@
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
-**`Groups`**
-
-GAMEPLAY
-
 屏幕坐标转换结果
 
 ## Table of contents

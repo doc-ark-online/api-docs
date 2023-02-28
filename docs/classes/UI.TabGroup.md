@@ -2,10 +2,6 @@
 
 # TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
-**`Groups`**
-
-GUI
-
 选项卡组
 
 ## Type parameters

@@ -4,10 +4,6 @@
 
 Gizmo
 
-**`Groups`**
-
-GAMEPLAY
-
 **`Instance`**
 
 ## Table of contents

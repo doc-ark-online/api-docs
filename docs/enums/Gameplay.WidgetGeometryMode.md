@@ -4,10 +4,6 @@
 
 UI形状枚举
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

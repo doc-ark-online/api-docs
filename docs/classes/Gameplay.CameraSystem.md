@@ -2,10 +2,6 @@
 
 # CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 
-**`Groups`**
-
-GAMEPLAY
-
 摄像机系统，是依托于角色，作为角色的组件存在，在此组件下还有一个用来确定视口位置的摄像机组件
              摄像机系统是摄像机基本属性以及功能效果扩展的管理者
              基本属性包括这两个组件的位置旋转，投影模式、Fov、角度限制等
@@ -22,10 +18,12 @@ GAMEPLAY
 
 | Properties |
 | :-----|
-| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 获取摄像机向下角度限制|
+| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 获取是否开启摄像机碰撞|
+| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 获取是否开启摄像机碰撞|
 
 | Accessors |
 | :-----|
+| **[cameraCollisionEnable](Gameplay.CameraSystem.md#cameracollisionenable)**(): `boolean` <br> 获取是否开启摄像机碰撞|
 | **[cameraDownLimitAngle](Gameplay.CameraSystem.md#cameradownlimitangle)**(): `number` <br> 获取摄像机向下角度限制|
 | **[cameraFOV](Gameplay.CameraSystem.md#camerafov)**(): `number` <br> 获取当前摄像机FOV|
 | **[cameraFocusEnable](Gameplay.CameraSystem.md#camerafocusenable)**(): `boolean` <br> 获取是否开启摄像机聚焦|
@@ -57,13 +55,16 @@ GAMEPLAY
 | **[raiseCameraEnable](Gameplay.CameraSystem.md#raisecameraenable)**(): `boolean` <br> 获取是否开启抬高摄像机效果|
 | **[raiseCameraHeight](Gameplay.CameraSystem.md#raisecameraheight)**(): `number` <br> 获取摄像机抬高高度|
 | **[realEffectEnable](Gameplay.CameraSystem.md#realeffectenable)**(`value`: `boolean`): `void` <br> 启用/禁用真实效果|
+| **[slotOffset](Gameplay.CameraSystem.md#slotoffset)**(): [`Vector`](Type.Vector.md) <br> 获取摄像机位置偏移|
 | **[targetArmLength](Gameplay.CameraSystem.md#targetarmlength)**(): `number` <br> 获取当前摄像机弹簧臂长度|
+| **[targetOffset](Gameplay.CameraSystem.md#targetoffset)**(): [`Vector`](Type.Vector.md) <br> 获取挂点位置偏移|
 | **[transform](Gameplay.CameraSystem.md#transform)**(): [`Transform`](Type.Transform.md) <br> 摄像机的transform|
 | **[usePawnControlRotation](Gameplay.CameraSystem.md#usepawncontrolrotation)**(): `boolean` <br> 获取当前是否使用控制器控制摄像机旋转|
 
 | Methods |
 | :-----|
 | **[applySettings](Gameplay.CameraSystem.md#applysettings)**(`CameraSetting`: [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata)): `void` <br> 应用摄像机系统数据|
+| **[attachCameraToCharacterCapsuleSlot](Gameplay.CameraSystem.md#attachcameratocharactercapsuleslot)**(): `void` <br> 附加摄像机到角色的胶囊体插槽上|
 | **[attachCameraToCharacterMeshSlot](Gameplay.CameraSystem.md#attachcameratocharactermeshslot)**(`slot`: [`SlotType`](../enums/Gameplay.SlotType.md)): `void` <br> 附加摄像机到角色的模型插槽上|
 | **[attachToGameObject](Gameplay.CameraSystem.md#attachtogameobject)**(`target`: `GameObject`): `void` <br> 相机附加至目标物体|
 | **[cameraFocusing](Gameplay.CameraSystem.md#camerafocusing)**(`targetArmLength`: `number`, `targetOffset`: [`Vector`](Type.Vector.md), `timeInterval?`: `number`): `void` <br> 摄像机聚焦|
@@ -82,17 +83,57 @@ GAMEPLAY
 | **[stopCameraShake](Gameplay.CameraSystem.md#stopcamerashake)**(): `void` <br> 停止摄像机震动|
 | **[switchCameraMode](Gameplay.CameraSystem.md#switchcameramode)**(`newCameraMode`: [`CameraMode`](../enums/Gameplay.CameraMode.md), `enableRealEffect?`: `boolean`): `void` <br> 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)|
 
+## Properties
+
+### enableFadeEffect <Score text="enableFadeEffect" /> 
+
+• **enableFadeEffect**: `boolean`
+
+::: danger Deprecated
+
+since:021 reason:接口更改 replacement:fadeEffectEnable
+
+:::
+
+设置是否开启透明效果
+
 ___
 
 ### occludeCameraActor <Score text="occludeCameraActor" /> 
 
 • **occludeCameraActor**: `any`
 
-**`Deprecated`**
+::: danger Deprecated
 
 since:021 reason:没有使用场景不暴露 replacement:
 
+:::
+
 摄像机与角色之间的物体
+
+## Accessors
+
+### cameraCollisionEnable <Score text="cameraCollisionEnable" /> 
+
+• `get` **cameraCollisionEnable**(): `boolean`
+
+获取是否开启摄像机碰撞
+
+#### Returns
+
+`boolean`
+
+• `set` **cameraCollisionEnable**(`bEnableCameraCollision`): `void`
+
+设置是否开启摄像机碰撞，开启后弹簧臂才会检测碰撞的物体并收缩至离挂载目标最近的碰撞物体处
+             注意:要增减检测距离必须通过修改弹簧臂长度(TargetArmLength)来实现，诸如直接修改弹簧臂位置的方式会导致偏移处不触发碰撞收缩
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `bEnableCameraCollision` | `boolean` |
+
 
 ___
 
@@ -808,6 +849,41 @@ ___
 
 ___
 
+### slotOffset <Score text="slotOffset" /> 
+
+• `get` **slotOffset**(): [`Vector`](Type.Vector.md)
+
+::: danger Deprecated
+
+since:019 reason:功能重合 replacement:cameraRelativeTransform
+
+:::
+
+获取摄像机位置偏移
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **slotOffset**(`newSlotOffset`): `void`
+
+::: danger Deprecated
+
+since:019 reason:功能重合 replacement:cameraRelativeTransform
+
+:::
+
+设置摄像机位置偏移
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `newSlotOffset` | [`Vector`](Type.Vector.md) |
+
+
+___
+
 ### targetArmLength <Score text="targetArmLength" /> 
 
 • `get` **targetArmLength**(): `number`
@@ -827,6 +903,41 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `newTargetArmLength` | `number` |
+
+
+___
+
+### targetOffset <Score text="targetOffset" /> 
+
+• `get` **targetOffset**(): [`Vector`](Type.Vector.md)
+
+::: danger Deprecated
+
+since:019 reason:功能重合 replacement:cameraSystemTransform
+
+:::
+
+获取挂点位置偏移
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **targetOffset**(`newTargetOffset`): `void`
+
+::: danger Deprecated
+
+since:019 reason:功能重合 replacement:cameraSystemRelativeTransform
+
+:::
+
+设置挂点位置偏移
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `newTargetOffset` | [`Vector`](Type.Vector.md) |
 
 
 ___
@@ -878,6 +989,22 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `CameraSetting` | [`CameraSystemData`](../modules/Gameplay.Gameplay.md#camerasystemdata) | 摄像机系统数据 |
+
+
+___
+
+### attachCameraToCharacterCapsuleSlot <Score text="attachCameraToCharacterCapsuleSlot" /> 
+
+• **attachCameraToCharacterCapsuleSlot**(): `void` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+since:022 reason:接口重复 replacement:attachToGameObject
+
+:::
+
+附加摄像机到角色的胶囊体插槽上
+
 
 
 ___

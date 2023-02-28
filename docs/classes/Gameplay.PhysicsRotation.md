@@ -2,10 +2,6 @@
 
 # PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
-**`Groups`**
-
-PHYSICS
-
 物理旋转轴
 
 ::: warning Precautions

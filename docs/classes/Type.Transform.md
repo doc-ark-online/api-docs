@@ -2,10 +2,6 @@
 
 # Transform <Badge type="tip" text="Class" /> <Score text="Transform" />
 
-**`Groups`**
-
-DATA
-
 Transform 由缩放、旋转和平移组成
 
 ::: warning Precautions

@@ -2,10 +2,6 @@
 
 # Group <Badge type="tip" text="Class" /> <Score text="Group" />
 
-**`Groups`**
-
-UTILITY
-
 补间组，用于同时控制多个补间对象
 
 ## Table of contents

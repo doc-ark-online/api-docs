@@ -838,6 +838,11 @@
       {
         "file_name": "UI.UI.md",
         "file_path": "modules/UI.UI.md",
+        "name": "assetIDChangeIConUrlRequest"
+      },
+      {
+        "file_name": "UI.UI.md",
+        "file_path": "modules/UI.UI.md",
         "name": "assetIDChangeIconUrlRequest"
       },
       {
@@ -1533,6 +1538,11 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "boxOverlapInLevel"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "clearMoveTo"
       },
       {
@@ -1568,6 +1578,11 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "isDynamicVibration"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "lineTrace"
       },
       {
@@ -1579,6 +1594,16 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "parabolicTrace"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "playDynamicForceFeedbackStart"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "playDynamicForceFeedbackStop"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -1604,6 +1629,11 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "setStaticMeshColor"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "setStaticMeshMaterialColor"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -1812,6 +1842,21 @@
         "file_name": "Util.AssetUtil.md",
         "file_path": "modules/Util.AssetUtil.md",
         "name": "asyncDownloadAsset"
+      },
+      {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "isAssetExist"
+      },
+      {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "isAssetLoaded"
+      },
+      {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "loadAsset"
       },
       {
         "file_name": "Util.InputUtil.md",
@@ -2540,6 +2585,13 @@
         "file_path": "enums/Gameplay.EffectRangeType.md",
         "name": "EffectRangeType"
       }
+    ],
+    "Modules Functions": [
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "spawnNewParticle"
+      }
     ]
   },
   "Sounds": {
@@ -2560,6 +2612,13 @@
         "file_name": "Gameplay.AttenuationShape.md",
         "file_path": "enums/Gameplay.AttenuationShape.md",
         "name": "AttenuationShape"
+      }
+    ],
+    "Modules Functions": [
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "spawnNewSound"
       }
     ]
   },

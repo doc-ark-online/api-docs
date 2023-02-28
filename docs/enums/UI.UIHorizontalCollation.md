@@ -4,10 +4,6 @@
 
 自动布局子项布局排序 - 水平排序
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

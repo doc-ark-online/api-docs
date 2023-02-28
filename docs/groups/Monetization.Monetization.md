@@ -35,17 +35,16 @@ Monetization
 | **[OnOrderDelivered](Monetization.Monetization.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 
 
-## Functions
+## Modules Functions
+
+
+___
 
 ### addUserGameCoin <Score text="addUserGameCoin" /> 
 
 • **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void` <Badge type="tip" text="client" />
 
 添加游戏币接口
-
-**`Groups`**
-
-MONETIZATION
 
 
 #### Parameters
@@ -66,10 +65,6 @@ ___
 • **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 添加游戏币接口
-
-**`Groups`**
-
-MONETIZATION
 
 
 #### Parameters
@@ -93,10 +88,6 @@ ___
 
 添加游戏币接口
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -118,10 +109,6 @@ ___
 
 减少游戏币接口
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -141,10 +128,6 @@ ___
 • **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 减少游戏币接口
-
-**`Groups`**
-
-MONETIZATION
 
 
 #### Parameters
@@ -168,10 +151,6 @@ ___
 
 减少游戏币接口
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -193,10 +172,6 @@ ___
 
 查询账户的游戏币数量
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -214,10 +189,6 @@ ___
 • **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 查询账户的游戏币数量
-
-**`Groups`**
-
-MONETIZATION
 
 
 #### Parameters
@@ -238,10 +209,6 @@ ___
 
 查询账户的游戏币数量
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -260,10 +227,6 @@ ___
 
 查询NFT接口
 
-**`Groups`**
-
-MONETIZATION
-
 
 #### Parameters
 
@@ -274,6 +237,9 @@ MONETIZATION
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境 |
+## Modules Type Aliases
+
+
 ___
 
 ### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
@@ -285,10 +251,6 @@ ___
 • (`amount`): `void`
 
 客户端接收余额更新的消息格式
-
-**`Groups`**
-
-MONETIZATION
 
 ##### Parameters
 
@@ -310,10 +272,6 @@ ___
 • (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
 
 服务端接收发货通知的消息格式
-
-**`Groups`**
-
-MONETIZATION
 
 ##### Parameters
 

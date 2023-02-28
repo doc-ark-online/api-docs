@@ -4,10 +4,6 @@
 
 轴标记
 
-**`Groups`**
-
-PHYSICS
-
 ## Table of contents
 
 | Enumeration Members |

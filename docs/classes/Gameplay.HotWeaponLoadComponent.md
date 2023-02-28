@@ -4,10 +4,6 @@
 
 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Properties |

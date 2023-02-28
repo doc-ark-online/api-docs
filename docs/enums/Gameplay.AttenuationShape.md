@@ -4,10 +4,6 @@
 
 音效衰减形状
 
-**`Groups`**
-
-SOUNDS
-
 ## Table of contents
 
 | Enumeration Members |

@@ -4,10 +4,6 @@
 
 人形对象V2形体修改
 
-**`Groups`**
-
-AVATAR
-
 ## Implemented by
 
 - [`HumanoidV2Shape`](../classes/Gameplay.HumanoidV2Shape.md)

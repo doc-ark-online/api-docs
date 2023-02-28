@@ -14,7 +14,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     items: [
       { text: '介绍', link: '/index.md' },
       { text: '开始使用', link: '/start.md' },
-      { text: 'Enums', link: '/enums.md' }
+      { text: 'Enums', link: '/enums.md' },
+      { text: 'Interfaces', link: '/interfaces.md' },
+      { text: 'Classes', link: '/classes.md' }
     ]
   },
   ...dealConfigSidebar()

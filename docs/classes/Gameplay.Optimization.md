@@ -2,10 +2,6 @@
 
 # Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
 
-**`Groups`**
-
-SETTINGS
-
 控制一些优化项的开启关闭
 
 ## Table of contents

@@ -4,10 +4,6 @@
 
 自动布局容器垂直适应规则
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

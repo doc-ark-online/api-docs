@@ -4,10 +4,6 @@
 
 四轮载具车轮位置
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Enumeration Members |

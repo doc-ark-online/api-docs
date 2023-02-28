@@ -42,10 +42,6 @@ Network
 
 Http请求的回调消息格式
 
-**`Groups`**
-
-GAMEPLAY
-
 ::: warning Precautions
 
 无需主动销毁，生命周期由UObject管理
@@ -76,10 +72,6 @@ ___
 
 商城通信回调消息格式
 
-**`Groups`**
-
-GAMEPLAY
-
 ##### Parameters
 
 | Name | Type | Description |
@@ -98,10 +90,6 @@ GAMEPLAY
 • **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> 
 
 HTTP请求
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -122,10 +110,6 @@ ___
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
 
 • **generalHttpRequest**(`response`, `requestUrl`, `param`, `jsonContent`, `requestType`): `boolean` 
-
-**`Groups`**
-
-GAMEPLAY
 
 通用Http请求
 
@@ -159,10 +143,6 @@ ___
 
 获取url参数
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -184,10 +164,6 @@ ___
 • **httpRequestTransmitData**(`response`, `paramUrl`, `jsonContent`, `requestType`): `boolean` 
 
 Http请求接口
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters
@@ -213,10 +189,6 @@ ___
 
 url解码
 
-**`Groups`**
-
-GAMEPLAY
-
 
 #### Parameters
 
@@ -237,10 +209,6 @@ ___
 • **urlEncode**(`str`): `string` 
 
 url转码
-
-**`Groups`**
-
-GAMEPLAY
 
 
 #### Parameters

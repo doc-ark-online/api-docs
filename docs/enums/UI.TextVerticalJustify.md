@@ -4,10 +4,6 @@
 
 文本排列垂直对齐规则
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

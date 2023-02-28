@@ -2,10 +2,6 @@
 
 # DelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="DelegateInterface<T\>" />
 
-**`Groups`**
-
-SCRIPITING
-
 委托接口
 
 **`Effect`**

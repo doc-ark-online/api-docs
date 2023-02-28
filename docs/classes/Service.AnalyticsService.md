@@ -2,10 +2,6 @@
 
 # AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 
-**`Groups`**
-
-DEBUGGING
-
 **`Instance`**
 
 分析服务

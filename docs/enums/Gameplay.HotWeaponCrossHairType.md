@@ -2,10 +2,6 @@
 
 # HotWeaponCrossHairType <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponCrossHairType" />
 
-**`Groups`**
-
-GAMEPLAY
-
 热武器准心类型
 
 ## Table of contents

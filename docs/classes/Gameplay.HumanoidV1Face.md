@@ -4,10 +4,6 @@
 
 人形对象V1脸部接口
 
-**`Groups`**
-
-AVATAR
-
 ## Hierarchy
 
 - [`HumanoidV1Part`](Gameplay.HumanoidV1Part.md)

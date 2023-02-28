@@ -4,10 +4,6 @@
 
 资源类型
 
-**`Groups`**
-
-DATA
-
 ## Table of contents
 
 | Enumeration Members |

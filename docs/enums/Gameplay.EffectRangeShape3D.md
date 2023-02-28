@@ -4,10 +4,6 @@
 
 3D效果范围形状
 
-**`Groups`**
-
-EFFECTS
-
 ## Table of contents
 
 | Enumeration Members |

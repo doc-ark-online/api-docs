@@ -18,10 +18,6 @@
 
 根据key获取翻译内容
 
-**`Groups`**
-
-LOCALIZATION
-
 
 #### Parameters
 
@@ -43,10 +39,6 @@ ___
 
 多语言标记
 
-**`Groups`**
-
-LOCALIZATION
-
 
 #### Parameters
 
@@ -67,10 +59,6 @@ ___
 • **useLocalizedLanguage**(`type`): `boolean` 
 
 游戏语言设置
-
-**`Groups`**
-
-LOCALIZATION
 
 
 #### Parameters

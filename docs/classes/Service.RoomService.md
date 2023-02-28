@@ -2,10 +2,6 @@
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-**`Groups`**
-
-SOCIAL
-
 **`Instance`**
 
 MGS以及玩家信息、数据、头像等相关API

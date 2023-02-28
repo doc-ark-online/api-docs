@@ -4,10 +4,6 @@
 
 人形对象V2前发部位接口
 
-**`Groups`**
-
-AVATAR
-
 ## Hierarchy
 
 - [`HumanoidV2HairPart`](Gameplay.HumanoidV2HairPart.md)

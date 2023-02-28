@@ -2,10 +2,6 @@
 
 # PhysicsPrism <Badge type="tip" text="Class" /> <Score text="PhysicsPrism" />
 
-**`Groups`**
-
-PHYSICS
-
 物理棱柱组件
 
 ::: warning Precautions

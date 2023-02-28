@@ -2,10 +2,6 @@
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 
-**`Groups`**
-
-GUI
-
 进度条滑动的方式
 
 ## Table of contents

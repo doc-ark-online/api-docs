@@ -4,10 +4,6 @@
 
 冲量的应用方式
 
-**`Groups`**
-
-PHYSICS
-
 ## Table of contents
 
 | Enumeration Members |

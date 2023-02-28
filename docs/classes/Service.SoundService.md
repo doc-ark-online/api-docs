@@ -2,10 +2,6 @@
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-**`Groups`**
-
-UTILITY
-
 **`Instance`**
 
 音效管理器

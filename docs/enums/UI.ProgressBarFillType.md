@@ -4,10 +4,6 @@
 
 进度条填充规则
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

@@ -2,10 +2,6 @@
 
 # UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
-**`Groups`**
-
-GUI
-
 UI的驱动脚本基类
 
 ## Hierarchy

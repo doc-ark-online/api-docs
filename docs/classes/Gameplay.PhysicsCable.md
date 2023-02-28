@@ -2,10 +2,6 @@
 
 # PhysicsCable <Badge type="tip" text="Class" /> <Score text="PhysicsCable" />
 
-**`Groups`**
-
-PHYSICS
-
 物理绳组件
 
 ::: warning Precautions

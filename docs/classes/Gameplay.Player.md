@@ -2,10 +2,6 @@
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
-**`Groups`**
-
-GAMEPLAY
-
 角色控制
 
 ## Hierarchy
@@ -38,6 +34,7 @@ GAMEPLAY
 | **[transform](Gameplay.Player.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.Player.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.Player.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
+| **[visible](Gameplay.Player.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.Player.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.Player.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.Player.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -103,11 +100,13 @@ GAMEPLAY
 | **[setWorldScale](Gameplay.Player.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.Player.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.Player.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[asyncSpawnGameObject](Gameplay.Player.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.Player.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.Player.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.Player.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.Player.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.Player.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.Player.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
+| **[spawnGameObject](Gameplay.Player.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 
 ## Properties
 
@@ -456,6 +455,27 @@ ___
 | :------ | :------ |
 | `v` | `boolean` |
 
+
+___
+
+### visible <Score text="visible" /> 
+
+• `get` **visible**(): `boolean` 
+
+::: danger Deprecated
+
+since:020 reason:api重构 replacement:getVisibility()
+
+:::
+
+获取当前物体是否显示
+
+
+#### Returns
+
+`boolean`
+
+bool
 
 ___
 
@@ -1690,6 +1710,35 @@ ___
 
 ___
 
+### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
+
+• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
+
+异步构造一个 GameObject 资源不存在会先去下载资源再去创建
+
+
+::: danger Deprecated
+
+since:022 reason:接口废弃 replacement:asyncSpawn()
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
+| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
+
+#### Returns
+
+`Promise`<`GameObject`\>
+
+构造的GameObject
+
+___
+
 ### find <Score text="find" /> 
 
 • `Static` **find**(`GUID`): `GameObject` 
@@ -1799,3 +1848,31 @@ ___
 
 构造的GameObject
 
+___
+
+### spawnGameObject <Score text="spawnGameObject" /> 
+
+• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
+
+构造一个 GameObject
+
+
+::: danger Deprecated
+
+since:022 reason:接口废弃 replacement:spawn()
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetId` | `string` | 资源的GUID |
+| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
+| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
+
+#### Returns
+
+`GameObject`
+
+构造的GameObject

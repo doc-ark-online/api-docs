@@ -4,10 +4,6 @@
 
 人形对象V2材质风格
 
-**`Groups`**
-
-AVATAR
-
 ## Implemented by
 
 - [`HumanoidV2`](../classes/Gameplay.HumanoidV2.md)

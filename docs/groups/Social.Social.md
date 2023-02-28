@@ -26,7 +26,10 @@ Social
 | **[downloadCharacterDataStringCallback](Social.Social.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
 
 
-## Type Aliases
+## Modules Type Aliases
+
+
+___
 
 ### BoolResponse <Score text="BoolResponse" /> 
 
@@ -37,10 +40,6 @@ Social
 • (`success`): `void`
 
 返回bool的回调
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 
@@ -63,10 +62,6 @@ ___
 
 下载角色形象的回调，无参数
 
-**`Groups`**
-
-SOCIAL
-
 ##### Returns
 
 `void`
@@ -81,10 +76,6 @@ ___
 • (`jsonData`): `void`
 
 收到MGS事件调用
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 
@@ -106,10 +97,6 @@ ___
 • (`isSuccess`, `jsonData`): `void`
 
 收到233回复
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 
@@ -133,10 +120,6 @@ ___
 
 接收聊天信息回调方法类型
 
-**`Groups`**
-
-SOCIAL
-
 ##### Parameters
 
 | Name | Type |
@@ -159,10 +142,6 @@ ___
 
 233中窗口显示模式切换的消息格式
 
-**`Groups`**
-
-SOCIAL
-
 ##### Parameters
 
 | Name | Type | Description |
@@ -184,10 +163,6 @@ ___
 
 233中窗口刷新的消息格式
 
-**`Groups`**
-
-SOCIAL
-
 ##### Returns
 
 `void`
@@ -202,10 +177,6 @@ ___
 • (`dataString`): `void`
 
 返回string的回调
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 
@@ -224,10 +195,6 @@ ___
 
 组队跳游戏请求失败回调
 
-**`Groups`**
-
-SOCIAL
-
 #### Type declaration
 
 | Name | Type | Description |
@@ -245,10 +212,6 @@ ___
 • (`success`): `void`
 
 下载角色形象的回调消息格式
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 
@@ -271,10 +234,6 @@ ___
 
 返回无参数的回调
 
-**`Groups`**
-
-SOCIAL
-
 ##### Returns
 
 `void`
@@ -289,10 +248,6 @@ ___
 • (`dataString`): `void`
 
 下载平台数据回调
-
-**`Groups`**
-
-SOCIAL
 
 ##### Parameters
 

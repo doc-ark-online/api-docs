@@ -4,10 +4,6 @@
 
 投掷物轨迹绘制的显示风格
 
-**`Groups`**
-
-GAMEPLAY
-
 ## Table of contents
 
 | Enumeration Members |

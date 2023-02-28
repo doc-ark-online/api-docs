@@ -37,10 +37,6 @@ Events
 
 服务器监听客户端发来的事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -68,10 +64,6 @@ ___
 • **addExitListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加退出游戏时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -109,10 +101,6 @@ ___
 
 添加窗口聚焦时执行的回调函数
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -149,10 +137,6 @@ ___
 
 监听本地事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -174,10 +158,6 @@ ___
 • **addOnPauseListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加OnPause开始时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -216,10 +196,6 @@ ___
 
 添加OnPause结束时执行的回调函数
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -257,10 +233,6 @@ ___
 
 监听玩家进入room事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -282,10 +254,6 @@ ___
 
 监听玩家离开room事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -306,10 +274,6 @@ ___
 • **addServerListener**(`eventName`, `listener`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 客户端监听服务器事件
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -338,10 +302,6 @@ ___
 • **addUnfocusedListener**(`callback`): [`EventListener`](../classes/Events.EventListener.md) <Badge type="tip" text="client" />
 
 添加窗口失焦时执行的回调函数
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -379,10 +339,6 @@ ___
 
 发送本地事件
 
-**`Groups`**
-
-SCRIPITING
-
 
 #### Parameters
 
@@ -404,10 +360,6 @@ ___
 • **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给所有客户端
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions
@@ -437,10 +389,6 @@ ___
 
 服务器发送事件给指定客户端
 
-**`Groups`**
-
-SCRIPITING
-
 
 ::: warning Precautions
 
@@ -469,10 +417,6 @@ ___
 • **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <Badge type="tip" text="client" />
 
 客户端发送事件给服务器
-
-**`Groups`**
-
-SCRIPITING
 
 
 ::: warning Precautions

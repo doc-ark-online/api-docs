@@ -4,10 +4,6 @@
 
 天空球预设枚举
 
-**`Groups`**
-
-LIGHTING
-
 ## Table of contents
 
 | Enumeration Members |

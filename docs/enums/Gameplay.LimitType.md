@@ -4,10 +4,6 @@
 
 限制类型
 
-**`Groups`**
-
-PHYSICS
-
 ## Table of contents
 
 | Enumeration Members |

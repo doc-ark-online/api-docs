@@ -2,10 +2,6 @@
 
 # AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
 
-**`Groups`**
-
-GUI
-
 轴输入事件
 
 ## Table of contents

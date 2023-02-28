@@ -4,10 +4,6 @@
 
 相机控制模式
 
-**`Groups`**
-
-GUI
-
 ## Table of contents
 
 | Enumeration Members |

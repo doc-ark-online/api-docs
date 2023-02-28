@@ -11,17 +11,16 @@ Localization
 | **[useLocalizedLanguage](Localization.Localization.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
 
 
-## Functions
+## Modules Functions
+
+
+___
 
 ### getDefaultLocale <Score text="getDefaultLocale" /> 
 
 • **getDefaultLocale**(): `string` 
 
 获取默认的语言和地区
-
-**`Groups`**
-
-LOCALIZATION
 
 
 #### Returns
@@ -30,17 +29,13 @@ LOCALIZATION
 
 以IETF语言标签表示的字符串包含:ISO 639-1 两位字母语言码 (如, "zh");
 可选ISO 15924 四位字母脚本码 (如, "Hans");
-## Functions
+___
 
 ### getLocTextValue <Score text="getLocTextValue" /> 
 
 • **getLocTextValue**(`textkey`): `string` 
 
 根据key获取翻译内容
-
-**`Groups`**
-
-LOCALIZATION
 
 
 #### Parameters
@@ -62,10 +57,6 @@ ___
 
 多语言标记
 
-**`Groups`**
-
-LOCALIZATION
-
 
 #### Parameters
 
@@ -85,10 +76,6 @@ ___
 • **useLocalizedLanguage**(`type`): `boolean` 
 
 游戏语言设置
-
-**`Groups`**
-
-LOCALIZATION
 
 
 #### Parameters
