@@ -28,14 +28,14 @@
 
 ### 贡献代码
 
-当然，直接点击网页**编辑**按钮可以编辑当前网页，pull request 会在一个工作日内处理！
+直接点击网页**编辑**按钮可以编辑当前网页，pull request 会在一个工作日内处理！
 
 ![划线反馈](https://tc-cdn-forum.ark.online/forum/202302/27/113110nvzywxtc6rsrvz7g.gif)
 
 
 #### 添加描述
 
-fork 我们的的仓库后，直接搜索文档并在对应地方修改描述，其中超链接 markdown 语法如下：
+直接搜索要编辑的文档并在对应地方修改描述，其中超链接 markdown 语法如下：
 
 ``` markdown
 [超链接显示名](超链接地址 "超链接title")
