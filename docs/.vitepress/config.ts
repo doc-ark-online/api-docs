@@ -91,8 +91,16 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       {
         text: '021 版本',
         items: [
-          { text: '020 版本', link: 'https://api-docs-020.ark.online/' },
-          { text: '022 版本', link: 'https://api-docs-022.ark.online/' }
+          {
+            text: '022 版本',
+            link: 'https://api-docs-022.ark.online/',
+            path: true
+          },
+          {
+            text: '020 版本',
+            link: 'https://api-docs-020.ark.online/',
+            path: true
+          }
         ]
       }
       // {
