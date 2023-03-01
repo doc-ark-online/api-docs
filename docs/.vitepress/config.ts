@@ -82,7 +82,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '产品手册',
-        link: 'https://meta.feishu.cn/wiki/wikcnmFHMSugP9ozHw5PAkcEwYd'
+        link: 'https://meta.feishu.cn/wiki/wikcnTRMsvWdaJq2SOenbuHjXmf'
       },
       {
         text: '论坛',
