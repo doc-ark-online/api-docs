@@ -12,7 +12,6 @@
     "tscc": "tsc ./utils/index.ts && node ./utils/index.js",
     "prettier:fix": "prettier --write docs/** --ignore-path .gitignore"
   },
-  "license": "MIT",
   "devDependencies": {
     "@types/body-scroll-lock": "^3.1.0",
     "@types/fs-extra": "^11.0.1",
