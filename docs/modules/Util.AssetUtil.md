@@ -38,7 +38,14 @@ ___
 
 • **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
-资源是否存在
+资源是否存在与当前工程
+
+::: warning Precautions
+
+判断资源是否存在工程中,也可以直接打开工程生成的NewLevel文件查看资源的guid是否在文件中
+（拖入场景、优先加载这两个操作会向NewLevel添加对应资源的guid）
+
+:::
 
 
 #### Parameters

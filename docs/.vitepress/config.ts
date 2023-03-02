@@ -73,20 +73,35 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     siteTitle: 'API',
     nav: [
       {
-        text: '官方教程',
+        text: '官网',
+        link: 'https://creator.ark.online/'
+      },
+      {
+        text: '教程',
         link: 'https://meta.feishu.cn/wiki/wikcnmY0MQweLdbnlywkJJiDucd'
       },
       {
         text: '产品手册',
-        link: 'https://meta.feishu.cn/wiki/wikcnmFHMSugP9ozHw5PAkcEwYd'
+        link: 'https://meta.feishu.cn/wiki/wikcnTRMsvWdaJq2SOenbuHjXmf'
       },
       {
         text: '论坛',
-        link: 'https://forums.ark.online/#/'
+        link: 'https://forum.ark.online/'
       },
       {
         text: '021 版本',
-        items: [{ text: '020 版本', link: 'https://api-docs-020.ark.online/' }]
+        items: [
+          {
+            text: '022 版本',
+            link: 'https://api-docs-022.ark.online/',
+            path: true
+          },
+          {
+            text: '020 版本',
+            link: 'https://api-docs-020.ark.online/',
+            path: true
+          }
+        ]
       }
       // {
       //   text: '语言',

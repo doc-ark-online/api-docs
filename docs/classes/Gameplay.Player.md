@@ -61,7 +61,7 @@
 | **[getChildrenBoxCenter](Gameplay.Player.md#getchildrenboxcenter)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getCollision](Gameplay.Player.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.Player.md#getforwardvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
-| **[getPlayerID](Gameplay.Player.md#getplayerid)**(): `number` <br> 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。|
+| **[getPlayerID](Gameplay.Player.md#getplayerid)**(): `number` <br> 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息，不能作为唯一Id使用，需要使用唯一Id请查阅 [getUserSystemId](Gameplay.Player.md#getusersystemid)|
 | **[getRelativeLocation](Gameplay.Player.md#getrelativelocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.Player.md#getrelativerotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.Player.md#getrelativescale)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
@@ -73,7 +73,7 @@
 | **[getTeamId](Gameplay.Player.md#getteamid)**(): `string` <br> 获取玩家的TeamId|
 | **[getTransform](Gameplay.Player.md#gettransform)**([`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.Player.md#getupvector)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
-| **[getUserSystemId](Gameplay.Player.md#getusersystemid)**(): `string` <br> 获取用户系统的玩家Id|
+| **[getUserSystemId](Gameplay.Player.md#getusersystemid)**(): `string` <br> 获取用户系统的玩家Id，该Id可以作为玩家唯一Id使用。|
 | **[getVisibility](Gameplay.Player.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[getWorldLocation](Gameplay.Player.md#getworldlocation)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[getWorldRotation](Gameplay.Player.md#getworldrotation)**([`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
@@ -955,6 +955,11 @@ ___
 
 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。
 
+::: warning Precautions
+
+不可以作为玩家得唯一Id使用。如果需要使用唯一Id请查阅 [getUserSystemId](Gameplay.Player.md#getusersystemid)
+
+:::
 
 #### Returns
 
@@ -1215,7 +1220,7 @@ ___
 
 • **getUserSystemId**(): `string` <Badge type="tip" text="other" />
 
-获取用户系统的玩家Id
+获取用户系统的玩家Id，该Id可以作为玩家唯一Id使用。
 
 
 #### Returns
