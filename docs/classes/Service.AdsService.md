@@ -73,6 +73,12 @@ ___
 
 展示广告
 
+::: warning Precautions
+
+展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
+
+:::
+
 
 #### Parameters
 
