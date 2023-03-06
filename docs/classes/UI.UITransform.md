@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UITransform
+[Gui](../groups/Gui.Gui.md) / UITransform
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
@@ -8,7 +8,7 @@
 
 | Properties |
 | :-----|
-| **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 位置|
+| **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 大小|
 | **[size](UI.UITransform.md#size)**: [`Vector2`](Type.Vector2.md) <br> 大小|
 
 构造每一个值

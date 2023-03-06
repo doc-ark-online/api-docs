@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationDistanceModel
+[Sounds](../groups/Sounds.Sounds.md) / AttenuationDistanceModel
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 
@@ -8,10 +8,10 @@
 
 | Enumeration Members |
 | :-----|
-| **[Inverse](Gameplay.AttenuationDistanceModel.md#inverse)** = ``2`` <br> 倒数衰减|
-| **[Linear](Gameplay.AttenuationDistanceModel.md#linear)** = ``0`` <br> 线性衰减|
-| **[LogReverse](Gameplay.AttenuationDistanceModel.md#logreverse)** = ``3`` <br> 反指数衰减|
-| **[Logarithmic](Gameplay.AttenuationDistanceModel.md#logarithmic)** = ``1`` <br> 指数衰减|
+| **[Inverse](Gameplay.AttenuationDistanceModel.md#inverse)** = ``2`` <br> |
+| **[Linear](Gameplay.AttenuationDistanceModel.md#linear)** = ``0`` <br> |
+| **[LogReverse](Gameplay.AttenuationDistanceModel.md#logreverse)** = ``3`` <br> |
+| **[Logarithmic](Gameplay.AttenuationDistanceModel.md#logarithmic)** = ``1`` <br> |
 
 ## Enumeration Members
 

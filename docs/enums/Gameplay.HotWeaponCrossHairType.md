@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponCrossHairType
+[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponCrossHairType
 
 # HotWeaponCrossHairType <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponCrossHairType" />
 
@@ -8,10 +8,10 @@
 
 | Enumeration Members |
 | :-----|
-| **[FirstPersonCrossHair](Gameplay.HotWeaponCrossHairType.md#firstpersoncrosshair)** = ``3`` <br> 第一人称十字准心|
-| **[None](Gameplay.HotWeaponCrossHairType.md#none)** = ``0`` <br> 无准星|
-| **[ThirdPersonCrossHair](Gameplay.HotWeaponCrossHairType.md#thirdpersoncrosshair)** = ``1`` <br> 第三人称十字准心|
-| **[ThirdPersonDot](Gameplay.HotWeaponCrossHairType.md#thirdpersondot)** = ``2`` <br> 第三人称红点准心|
+| **[FirstPersonCrossHair](Gameplay.HotWeaponCrossHairType.md#firstpersoncrosshair)** = ``3`` <br> |
+| **[None](Gameplay.HotWeaponCrossHairType.md#none)** = ``0`` <br> |
+| **[ThirdPersonCrossHair](Gameplay.HotWeaponCrossHairType.md#thirdpersoncrosshair)** = ``1`` <br> |
+| **[ThirdPersonDot](Gameplay.HotWeaponCrossHairType.md#thirdpersondot)** = ``2`` <br> |
 
 ## Enumeration Members
 

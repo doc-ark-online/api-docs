@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / DataCenterS
+[Data](../groups/Data.Data.md) / DataCenterS
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
@@ -14,12 +14,12 @@
 
 | Properties |
 | :-----|
-| **[onPlayerJoined](Extension.DataCenterS.md#onplayerjoined)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
-| **[onPlayerLeft](Extension.DataCenterS.md#onplayerleft)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 玩家离开游戏的委托，可用作玩家最后的数据处理|
+| **[onPlayerJoined](Extension.DataCenterS.md#onplayerjoined)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 获取玩家的子数据|
+| **[onPlayerLeft](Extension.DataCenterS.md#onplayerleft)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 获取玩家的子数据|
 
 | Methods |
 | :-----|
-| **[getData](Extension.DataCenterS.md#getdata)**<extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |\>(`number` \, [`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> | <br> 获取玩家的子数据|
+| **[getData](Extension.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](Extension.Subdata.md)<`T`\>\>(`player`: `number` \, `SubdataType`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`Subdata`](Extension.Subdata.md)<`T`\> <br> 获取玩家的子数据|
 | **[getReadyPlayerIds](Extension.DataCenterS.md#getreadyplayerids)**(): `number`[] <br> 获取在线且数据就绪的所有玩家ID|
 | **[getInstance](Extension.DataCenterS.md#getinstance)**(): [`DataCenterS`](Extension.DataCenterS.md) <br> 获取服务端数据中心全局实例|
 
@@ -43,7 +43,7 @@ ___
 
 ### getData <Score text="getData" /> 
 
-• **getData**<`T`\>(`player`, `SubdataType`): `T` <Badge type="tip" text="other" />
+• **getData**<`T`\>(`player`, `SubdataType`): `T` <Badge type="tip" text="server" />
 
 获取玩家的子数据
 
@@ -52,14 +52,14 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`SubdataBase`](Extension.SubdataBase.md)<[`DataInfo`](Extension.DataInfo.md), `T`\> |
+| `T` | extends [`Subdata`](Extension.Subdata.md)<`T`\> |
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `player` | `number` \| [`Player`](Gameplay.Player.md) |  玩家 |
-| `SubdataType` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  数据类 |
+| `SubdataType` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  数据类 |
 
 #### Returns
 
@@ -71,7 +71,7 @@ ___
 
 ### getReadyPlayerIds <Score text="getReadyPlayerIds" /> 
 
-• **getReadyPlayerIds**(): `number`[] <Badge type="tip" text="other" />
+• **getReadyPlayerIds**(): `number`[] <Badge type="tip" text="server" />
 
 获取在线且数据就绪的所有玩家ID
 
@@ -86,7 +86,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`DataCenterS`](Extension.DataCenterS.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`DataCenterS`](Extension.DataCenterS.md) <Badge type="tip" text="server" />
 
 获取服务端数据中心全局实例
 

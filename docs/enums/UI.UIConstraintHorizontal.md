@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIConstraintHorizontal
+[Gui](../groups/Gui.Gui.md) / UIConstraintHorizontal
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[Center](UI.UIConstraintHorizontal.md#center)** = ``3`` <br> 居中对齐|
-| **[Left](UI.UIConstraintHorizontal.md#left)** = ``0`` <br> 左对齐|
-| **[LeftRight](UI.UIConstraintHorizontal.md#leftright)** = ``2`` <br> 距离左右边距固定|
-| **[Right](UI.UIConstraintHorizontal.md#right)** = ``1`` <br> 右对齐|
-| **[Scale](UI.UIConstraintHorizontal.md#scale)** = ``4`` <br> 距离左右百分比固定|
+| **[Center](UI.UIConstraintHorizontal.md#center)** = ``3`` <br> |
+| **[Left](UI.UIConstraintHorizontal.md#left)** = ``0`` <br> |
+| **[LeftRight](UI.UIConstraintHorizontal.md#leftright)** = ``2`` <br> |
+| **[Right](UI.UIConstraintHorizontal.md#right)** = ``1`` <br> |
+| **[Scale](UI.UIConstraintHorizontal.md#scale)** = ``4`` <br> |
 
 ## Enumeration Members
 

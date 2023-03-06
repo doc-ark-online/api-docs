@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetGeometryMode
+[Gui](../groups/Gui.Gui.md) / WidgetGeometryMode
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 
@@ -8,8 +8,8 @@ UI形状枚举
 
 | Enumeration Members |
 | :-----|
-| **[Cylinder](Gameplay.WidgetGeometryMode.md#cylinder)** = ``1`` <br> 圆柱|
-| **[Plane](Gameplay.WidgetGeometryMode.md#plane)** = ``0`` <br> 平面|
+| **[Cylinder](Gameplay.WidgetGeometryMode.md#cylinder)** = ``1`` <br> |
+| **[Plane](Gameplay.WidgetGeometryMode.md#plane)** = ``0`` <br> |
 
 ## Enumeration Members
 

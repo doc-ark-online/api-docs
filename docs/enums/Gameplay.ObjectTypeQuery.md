@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ObjectTypeQuery
+[Physics](../groups/Physics.Physics.md) / ObjectTypeQuery
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 
@@ -8,38 +8,38 @@
 
 | Enumeration Members |
 | :-----|
-| **[ObjectTypeQuery1](Gameplay.ObjectTypeQuery.md#objecttypequery1)** = ``0`` <br> 检测通道1|
-| **[ObjectTypeQuery10](Gameplay.ObjectTypeQuery.md#objecttypequery10)** = ``9`` <br> 检测通道10|
-| **[ObjectTypeQuery11](Gameplay.ObjectTypeQuery.md#objecttypequery11)** = ``10`` <br> 检测通道11|
-| **[ObjectTypeQuery12](Gameplay.ObjectTypeQuery.md#objecttypequery12)** = ``11`` <br> 检测通道12|
-| **[ObjectTypeQuery13](Gameplay.ObjectTypeQuery.md#objecttypequery13)** = ``12`` <br> 检测通道13|
-| **[ObjectTypeQuery14](Gameplay.ObjectTypeQuery.md#objecttypequery14)** = ``13`` <br> 检测通道14|
-| **[ObjectTypeQuery15](Gameplay.ObjectTypeQuery.md#objecttypequery15)** = ``14`` <br> 检测通道15|
-| **[ObjectTypeQuery16](Gameplay.ObjectTypeQuery.md#objecttypequery16)** = ``15`` <br> 检测通道16|
-| **[ObjectTypeQuery17](Gameplay.ObjectTypeQuery.md#objecttypequery17)** = ``16`` <br> 检测通道17|
-| **[ObjectTypeQuery18](Gameplay.ObjectTypeQuery.md#objecttypequery18)** = ``17`` <br> 检测通道18|
-| **[ObjectTypeQuery19](Gameplay.ObjectTypeQuery.md#objecttypequery19)** = ``18`` <br> 检测通道19|
-| **[ObjectTypeQuery2](Gameplay.ObjectTypeQuery.md#objecttypequery2)** = ``1`` <br> 检测通道2|
-| **[ObjectTypeQuery20](Gameplay.ObjectTypeQuery.md#objecttypequery20)** = ``19`` <br> 检测通道20|
-| **[ObjectTypeQuery21](Gameplay.ObjectTypeQuery.md#objecttypequery21)** = ``20`` <br> 检测通道21|
-| **[ObjectTypeQuery22](Gameplay.ObjectTypeQuery.md#objecttypequery22)** = ``21`` <br> 检测通道22|
-| **[ObjectTypeQuery23](Gameplay.ObjectTypeQuery.md#objecttypequery23)** = ``22`` <br> 检测通道23|
-| **[ObjectTypeQuery24](Gameplay.ObjectTypeQuery.md#objecttypequery24)** = ``23`` <br> 检测通道24|
-| **[ObjectTypeQuery25](Gameplay.ObjectTypeQuery.md#objecttypequery25)** = ``24`` <br> 检测通道25|
-| **[ObjectTypeQuery26](Gameplay.ObjectTypeQuery.md#objecttypequery26)** = ``25`` <br> 检测通道26|
-| **[ObjectTypeQuery27](Gameplay.ObjectTypeQuery.md#objecttypequery27)** = ``26`` <br> 检测通道27|
-| **[ObjectTypeQuery28](Gameplay.ObjectTypeQuery.md#objecttypequery28)** = ``27`` <br> 检测通道28|
-| **[ObjectTypeQuery29](Gameplay.ObjectTypeQuery.md#objecttypequery29)** = ``28`` <br> 检测通道29|
-| **[ObjectTypeQuery3](Gameplay.ObjectTypeQuery.md#objecttypequery3)** = ``2`` <br> 检测通道3|
-| **[ObjectTypeQuery30](Gameplay.ObjectTypeQuery.md#objecttypequery30)** = ``29`` <br> 检测通道30|
-| **[ObjectTypeQuery31](Gameplay.ObjectTypeQuery.md#objecttypequery31)** = ``30`` <br> 检测通道31|
-| **[ObjectTypeQuery32](Gameplay.ObjectTypeQuery.md#objecttypequery32)** = ``31`` <br> 检测通道32|
-| **[ObjectTypeQuery4](Gameplay.ObjectTypeQuery.md#objecttypequery4)** = ``3`` <br> 检测通道4|
-| **[ObjectTypeQuery5](Gameplay.ObjectTypeQuery.md#objecttypequery5)** = ``4`` <br> 检测通道5|
-| **[ObjectTypeQuery6](Gameplay.ObjectTypeQuery.md#objecttypequery6)** = ``5`` <br> 检测通道6|
-| **[ObjectTypeQuery7](Gameplay.ObjectTypeQuery.md#objecttypequery7)** = ``6`` <br> 检测通道7|
-| **[ObjectTypeQuery8](Gameplay.ObjectTypeQuery.md#objecttypequery8)** = ``7`` <br> 检测通道8|
-| **[ObjectTypeQuery9](Gameplay.ObjectTypeQuery.md#objecttypequery9)** = ``8`` <br> 检测通道9|
+| **[ObjectTypeQuery1](Gameplay.ObjectTypeQuery.md#objecttypequery1)** = ``0`` <br> |
+| **[ObjectTypeQuery10](Gameplay.ObjectTypeQuery.md#objecttypequery10)** = ``9`` <br> |
+| **[ObjectTypeQuery11](Gameplay.ObjectTypeQuery.md#objecttypequery11)** = ``10`` <br> |
+| **[ObjectTypeQuery12](Gameplay.ObjectTypeQuery.md#objecttypequery12)** = ``11`` <br> |
+| **[ObjectTypeQuery13](Gameplay.ObjectTypeQuery.md#objecttypequery13)** = ``12`` <br> |
+| **[ObjectTypeQuery14](Gameplay.ObjectTypeQuery.md#objecttypequery14)** = ``13`` <br> |
+| **[ObjectTypeQuery15](Gameplay.ObjectTypeQuery.md#objecttypequery15)** = ``14`` <br> |
+| **[ObjectTypeQuery16](Gameplay.ObjectTypeQuery.md#objecttypequery16)** = ``15`` <br> |
+| **[ObjectTypeQuery17](Gameplay.ObjectTypeQuery.md#objecttypequery17)** = ``16`` <br> |
+| **[ObjectTypeQuery18](Gameplay.ObjectTypeQuery.md#objecttypequery18)** = ``17`` <br> |
+| **[ObjectTypeQuery19](Gameplay.ObjectTypeQuery.md#objecttypequery19)** = ``18`` <br> |
+| **[ObjectTypeQuery2](Gameplay.ObjectTypeQuery.md#objecttypequery2)** = ``1`` <br> |
+| **[ObjectTypeQuery20](Gameplay.ObjectTypeQuery.md#objecttypequery20)** = ``19`` <br> |
+| **[ObjectTypeQuery21](Gameplay.ObjectTypeQuery.md#objecttypequery21)** = ``20`` <br> |
+| **[ObjectTypeQuery22](Gameplay.ObjectTypeQuery.md#objecttypequery22)** = ``21`` <br> |
+| **[ObjectTypeQuery23](Gameplay.ObjectTypeQuery.md#objecttypequery23)** = ``22`` <br> |
+| **[ObjectTypeQuery24](Gameplay.ObjectTypeQuery.md#objecttypequery24)** = ``23`` <br> |
+| **[ObjectTypeQuery25](Gameplay.ObjectTypeQuery.md#objecttypequery25)** = ``24`` <br> |
+| **[ObjectTypeQuery26](Gameplay.ObjectTypeQuery.md#objecttypequery26)** = ``25`` <br> |
+| **[ObjectTypeQuery27](Gameplay.ObjectTypeQuery.md#objecttypequery27)** = ``26`` <br> |
+| **[ObjectTypeQuery28](Gameplay.ObjectTypeQuery.md#objecttypequery28)** = ``27`` <br> |
+| **[ObjectTypeQuery29](Gameplay.ObjectTypeQuery.md#objecttypequery29)** = ``28`` <br> |
+| **[ObjectTypeQuery3](Gameplay.ObjectTypeQuery.md#objecttypequery3)** = ``2`` <br> |
+| **[ObjectTypeQuery30](Gameplay.ObjectTypeQuery.md#objecttypequery30)** = ``29`` <br> |
+| **[ObjectTypeQuery31](Gameplay.ObjectTypeQuery.md#objecttypequery31)** = ``30`` <br> |
+| **[ObjectTypeQuery32](Gameplay.ObjectTypeQuery.md#objecttypequery32)** = ``31`` <br> |
+| **[ObjectTypeQuery4](Gameplay.ObjectTypeQuery.md#objecttypequery4)** = ``3`` <br> |
+| **[ObjectTypeQuery5](Gameplay.ObjectTypeQuery.md#objecttypequery5)** = ``4`` <br> |
+| **[ObjectTypeQuery6](Gameplay.ObjectTypeQuery.md#objecttypequery6)** = ``5`` <br> |
+| **[ObjectTypeQuery7](Gameplay.ObjectTypeQuery.md#objecttypequery7)** = ``6`` <br> |
+| **[ObjectTypeQuery8](Gameplay.ObjectTypeQuery.md#objecttypequery8)** = ``7`` <br> |
+| **[ObjectTypeQuery9](Gameplay.ObjectTypeQuery.md#objecttypequery9)** = ``8`` <br> |
 
 ## Enumeration Members
 

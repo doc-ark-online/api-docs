@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / MoveControlMode
+[Avatar](../groups/Avatar.Avatar.md) / MoveControlMode
 
 # MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[FaceMode](Gameplay.MoveControlMode.md#facemode)** = ``2`` <br> 面向模式|
-| **[FixedMode](Gameplay.MoveControlMode.md#fixedmode)** = ``1`` <br> 固定模式|
-| **[FollowMode](Gameplay.MoveControlMode.md#followmode)** = ``3`` <br> 运动模式|
-| **[FreeMode](Gameplay.MoveControlMode.md#freemode)** = ``4`` <br> 自由模式|
-| **[null](Gameplay.MoveControlMode.md#null)** = ``0`` <br> 空|
+| **[FaceMode](Gameplay.MoveControlMode.md#facemode)** = ``2`` <br> |
+| **[FixedMode](Gameplay.MoveControlMode.md#fixedmode)** = ``1`` <br> |
+| **[FollowMode](Gameplay.MoveControlMode.md#followmode)** = ``3`` <br> |
+| **[FreeMode](Gameplay.MoveControlMode.md#freemode)** = ``4`` <br> |
+| **[null](Gameplay.MoveControlMode.md#null)** = ``0`` <br> |
 
 ## Enumeration Members
 

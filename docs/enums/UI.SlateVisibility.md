@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / SlateVisibility
+[Gui](../groups/Gui.Gui.md) / SlateVisibility
 
 # SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 
@@ -8,11 +8,11 @@ UI节点显示规则
 
 | Enumeration Members |
 | :-----|
-| **[Collapsed](UI.SlateVisibility.md#collapsed)** = ``1`` <br> 隐藏 并且不占用大小|
-| **[Hidden](UI.SlateVisibility.md#hidden)** = ``2`` <br> 隐藏 占用计算大小|
-| **[HitTestInvisible](UI.SlateVisibility.md#hittestinvisible)** = ``3`` <br> 可见 自身以及子节点不可响应事件|
-| **[SelfHitTestInvisible](UI.SlateVisibility.md#selfhittestinvisible)** = ``4`` <br> 可见 自身不可响应事件|
-| **[Visible](UI.SlateVisibility.md#visible)** = ``0`` <br> 可见|
+| **[Collapsed](UI.SlateVisibility.md#collapsed)** = ``1`` <br> |
+| **[Hidden](UI.SlateVisibility.md#hidden)** = ``2`` <br> |
+| **[HitTestInvisible](UI.SlateVisibility.md#hittestinvisible)** = ``3`` <br> |
+| **[SelfHitTestInvisible](UI.SlateVisibility.md#selfhittestinvisible)** = ``4`` <br> |
+| **[Visible](UI.SlateVisibility.md#visible)** = ``0`` <br> |
 
 ## Enumeration Members
 

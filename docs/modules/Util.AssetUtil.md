@@ -6,16 +6,38 @@
 
 | Functions |
 | :-----|
-| **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`string`): `Promise`<`boolean`\> <br> 资源下载|
-| **[isAssetExist](Util.AssetUtil.md#isassetexist)**(`string`): `boolean` <br> 资源是否存在|
-| **[isAssetLoaded](Util.AssetUtil.md#isassetloaded)**(`string`): `boolean` <br> 资源是否加载|
-| **[loadAsset](Util.AssetUtil.md#loadasset)**(`string`): `boolean` <br> 资源加载|
+| **[assetLoaded](Util.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
+| **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载|
+| **[isAssetExist](Util.AssetUtil.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
+| **[isAssetLoaded](Util.AssetUtil.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
+| **[loadAsset](Util.AssetUtil.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
 
 ## Functions
 
+### assetLoaded <Score text="assetLoaded" /> 
+
+• **assetLoaded**(`InAssetId`): `boolean` 
+
+资源是否加载
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetId` | `string` | 资源GUID |
+
+#### Returns
+
+`boolean`
+
+未加载将返回false
+
+___
+
 ### asyncDownloadAsset <Score text="asyncDownloadAsset" /> 
 
-• **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
+• **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> 
 
 资源下载
 
@@ -38,15 +60,14 @@ ___
 
 • **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
-资源是否存在与当前工程
+资源是否存在
 
-::: warning Precautions
 
-判断资源是否存在工程中,也可以直接打开工程生成的NewLevel文件查看资源的guid是否在文件中
-（拖入场景、优先加载这两个操作会向NewLevel添加对应资源的guid）
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
 
 :::
-
 
 #### Parameters
 
@@ -69,6 +90,12 @@ ___
 资源是否加载
 
 
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+
+:::
+
 #### Parameters
 
 | Name | Type | Description |
@@ -89,6 +116,12 @@ ___
 
 资源加载
 
+
+::: danger Deprecated
+
+since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
+
+:::
 
 #### Parameters
 

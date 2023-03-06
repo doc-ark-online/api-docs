@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Vector
+[Data](../groups/Data.Data.md) / Vector
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 
@@ -8,18 +8,18 @@
 
 | Properties |
 | :-----|
-| **[x](Type.Vector.md#x)**: `number` <br> X轴坐标|
-| **[y](Type.Vector.md#y)**: `number` <br> Y轴坐标|
-| **[z](Type.Vector.md#z)**: `number` <br> Z轴坐标|
+| **[x](Type.Vector.md#x)**: `number` <br> 计算向量的长度|
+| **[y](Type.Vector.md#y)**: `number` <br> 计算向量的长度|
+| **[z](Type.Vector.md#z)**: `number` <br> 计算向量的长度|
 
 | Accessors |
 | :-----|
 | **[length](Type.Vector.md#length)**(): `number` <br> 计算向量的长度|
-| **[magnitude](Type.Vector.md#magnitude)**([`Vector`](Type.Vector.md)): `number` <br> 求向量长度|
+| **[magnitude](Type.Vector.md#magnitude)**(`a`: [`Vector`](Type.Vector.md)): `number` <br> 求向量长度|
 | **[negative](Type.Vector.md#negative)**(): [`Vector`](Type.Vector.md) <br> 返回各个分量取反的新向量|
 | **[normalized](Type.Vector.md#normalized)**(): [`Vector`](Type.Vector.md) <br> 返回一个归一化的新向量, 不影响本向量|
 | **[sqrLength](Type.Vector.md#sqrlength)**(): `number` <br> 计算向量的长度平方|
-| **[sqrMagnitude](Type.Vector.md#sqrmagnitude)**([`Vector`](Type.Vector.md)): `number` <br> 求向量长度平方|
+| **[sqrMagnitude](Type.Vector.md#sqrmagnitude)**(`a`: [`Vector`](Type.Vector.md)): `number` <br> 求向量长度平方|
 | **[back](Type.Vector.md#back)**(): [`Vector`](Type.Vector.md) <br> Vector(-1, 0, 0)|
 | **[down](Type.Vector.md#down)**(): [`Vector`](Type.Vector.md) <br> Vector(0, 0, -1)|
 | **[forward](Type.Vector.md#forward)**(): [`Vector`](Type.Vector.md) <br> Vector(1, 0, 0)|
@@ -35,54 +35,54 @@
 
 | Methods |
 | :-----|
-| **[add](Type.Vector.md#add)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算ab两个向量相加|
-| **[clone](Type.Vector.md#clone)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获得指定向量的拷贝|
-| **[divide](Type.Vector.md#divide)**([`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量除以b|
-| **[equals](Type.Vector.md#equals)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
-| **[fromString](Type.Vector.md#fromstring)**(`string`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 通过一个字符串创建 Vector|
-| **[multiply](Type.Vector.md#multiply)**([`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量乘以b|
-| **[normalize](Type.Vector.md#normalize)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 归一化向量|
-| **[set](Type.Vector.md#set)**([`Vector`](Type.Vector.md), `number`, `number`, `number`): [`Vector`](Type.Vector.md) <br> 设置向量值|
-| **[strictEquals](Type.Vector.md#strictequals)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `boolean` <br> 向量等价判断|
-| **[subtract](Type.Vector.md#subtract)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a减去向量b|
+| **[add](Type.Vector.md#add)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算ab两个向量相加|
+| **[clone](Type.Vector.md#clone)**(`a`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获得指定向量的拷贝|
+| **[divide](Type.Vector.md#divide)**(`a`: [`Vector`](Type.Vector.md), `b`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量除以b|
+| **[equals](Type.Vector.md#equals)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
+| **[fromString](Type.Vector.md#fromstring)**(`str`: `string`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 通过一个字符串创建 Vector|
+| **[multiply](Type.Vector.md#multiply)**(`a`: [`Vector`](Type.Vector.md), `b`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量乘以b|
+| **[normalize](Type.Vector.md#normalize)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 归一化向量|
+| **[set](Type.Vector.md#set)**(`outer`: [`Vector`](Type.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](Type.Vector.md) <br> 设置向量值|
+| **[strictEquals](Type.Vector.md#strictequals)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `boolean` <br> 向量等价判断|
+| **[subtract](Type.Vector.md#subtract)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a减去向量b|
 | **[toRotation](Type.Vector.md#torotation)**(): [`Rotation`](Type.Rotation.md) <br> 转换为对应的Rotation|
 | **[toString](Type.Vector.md#tostring)**(): `string` <br> 输出为字符串|
-| **[add](Type.Vector.md#add-1)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算ab两个向量相加|
-| **[angle](Type.Vector.md#angle)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `number` <br> 求向量a与向量b在XY平面投影的夹角角度|
-| **[angle3D](Type.Vector.md#angle3d)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `number` <br> 求向量a与向量b的夹角角度|
-| **[ceil](Type.Vector.md#ceil)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量向上取整|
-| **[clamp](Type.Vector.md#clamp)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 设置当前向量的值，使其各个分量都处于指定的范围内|
-| **[clone](Type.Vector.md#clone-1)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获得指定向量的拷贝|
-| **[copy](Type.Vector.md#copy)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 复制目标向量|
-| **[cross](Type.Vector.md#cross)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 向量叉积 (向量积)|
-| **[distance](Type.Vector.md#distance)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `number` <br> 求两向量的欧氏距离|
-| **[divide](Type.Vector.md#divide-1)**([`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量除以b|
-| **[dot](Type.Vector.md#dot)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `number` <br> 向量点积 (数量积)|
-| **[equals](Type.Vector.md#equals-1)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
-| **[floor](Type.Vector.md#floor)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量向下取整|
-| **[fromString](Type.Vector.md#fromstring-1)**(`string`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 通过一个字符串创建 Vector|
-| **[invert](Type.Vector.md#invert)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 Infinity|
-| **[invertSafe](Type.Vector.md#invertsafe)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 0|
-| **[lerp](Type.Vector.md#lerp)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量线性插值： A + t * (B - A)|
-| **[magnitude](Type.Vector.md#magnitude-1)**([`Vector`](Type.Vector.md)): `number` <br> 求向量长度|
-| **[max](Type.Vector.md#max)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量最大值|
-| **[min](Type.Vector.md#min)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量最小值|
-| **[moveTowards](Type.Vector.md#movetowards)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 向目标向量移动|
-| **[multiply](Type.Vector.md#multiply-1)**([`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量乘以b|
-| **[negate](Type.Vector.md#negate)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 求向量a逐元素向量取负|
-| **[normalize](Type.Vector.md#normalize-1)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 归一化向量|
-| **[project](Type.Vector.md#project)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a在指定向量上的投影|
-| **[projectOnPlane](Type.Vector.md#projectonplane)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a在指定平面上的投影|
-| **[reflect](Type.Vector.md#reflect)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 求反射角|
-| **[rotateX](Type.Vector.md#rotatex)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 X 轴旋转向量指定弧度|
-| **[rotateY](Type.Vector.md#rotatey)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 Y 轴旋转向量指定弧度|
-| **[rotateZ](Type.Vector.md#rotatez)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), `number`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 Z 轴旋转向量指定弧度|
-| **[round](Type.Vector.md#round)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量四舍五入取整|
-| **[set](Type.Vector.md#set-1)**([`Vector`](Type.Vector.md), `number`, `number`, `number`): [`Vector`](Type.Vector.md) <br> 设置向量值|
-| **[sqrMagnitude](Type.Vector.md#sqrmagnitude-1)**([`Vector`](Type.Vector.md)): `number` <br> 求向量长度平方|
-| **[squaredDistance](Type.Vector.md#squareddistance)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `number` <br> 求两向量的欧氏距离平方|
-| **[strictEquals](Type.Vector.md#strictequals-1)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): `boolean` <br> 向量等价判断|
-| **[subtract](Type.Vector.md#subtract-1)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a减去向量b|
+| **[add](Type.Vector.md#add-1)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算ab两个向量相加|
+| **[angle](Type.Vector.md#angle)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `number` <br> 求向量a与向量b在XY平面投影的夹角角度|
+| **[angle3D](Type.Vector.md#angle3d)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `number` <br> 求向量a与向量b的夹角角度|
+| **[ceil](Type.Vector.md#ceil)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量向上取整|
+| **[clamp](Type.Vector.md#clamp)**(`value`: [`Vector`](Type.Vector.md), `minInclusive`: [`Vector`](Type.Vector.md), `maxInclusive`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 设置当前向量的值，使其各个分量都处于指定的范围内|
+| **[clone](Type.Vector.md#clone-1)**(`a`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获得指定向量的拷贝|
+| **[copy](Type.Vector.md#copy)**(`a`: [`Vector`](Type.Vector.md), `outer`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 复制目标向量|
+| **[cross](Type.Vector.md#cross)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 向量叉积 (向量积)|
+| **[distance](Type.Vector.md#distance)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `number` <br> 求两向量的欧氏距离|
+| **[divide](Type.Vector.md#divide-1)**(`a`: [`Vector`](Type.Vector.md), `b`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量除以b|
+| **[dot](Type.Vector.md#dot)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `number` <br> 向量点积 (数量积)|
+| **[equals](Type.Vector.md#equals-1)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
+| **[floor](Type.Vector.md#floor)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量向下取整|
+| **[fromString](Type.Vector.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 通过一个字符串创建 Vector|
+| **[invert](Type.Vector.md#invert)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 Infinity|
+| **[invertSafe](Type.Vector.md#invertsafe)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md), `epsilon?`: `number`): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 0|
+| **[lerp](Type.Vector.md#lerp)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `t`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量线性插值： A + t * (B - A)|
+| **[magnitude](Type.Vector.md#magnitude-1)**(`a`: [`Vector`](Type.Vector.md)): `number` <br> 求向量长度|
+| **[max](Type.Vector.md#max)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量最大值|
+| **[min](Type.Vector.md#min)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 逐元素向量最小值|
+| **[moveTowards](Type.Vector.md#movetowards)**(`current`: [`Vector`](Type.Vector.md), `target`: [`Vector`](Type.Vector.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 向目标向量移动|
+| **[multiply](Type.Vector.md#multiply-1)**(`a`: [`Vector`](Type.Vector.md), `b`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 遍历向量a的每个分量乘以b|
+| **[negate](Type.Vector.md#negate)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 求向量a逐元素向量取负|
+| **[normalize](Type.Vector.md#normalize-1)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 归一化向量|
+| **[project](Type.Vector.md#project)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a在指定向量上的投影|
+| **[projectOnPlane](Type.Vector.md#projectonplane)**(`a`: [`Vector`](Type.Vector.md), `n`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a在指定平面上的投影|
+| **[reflect](Type.Vector.md#reflect)**(`inDirection`: [`Vector`](Type.Vector.md), `inNormal`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 求反射角|
+| **[rotateX](Type.Vector.md#rotatex)**(`v`: [`Vector`](Type.Vector.md), `o`: [`Vector`](Type.Vector.md), `a`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 X 轴旋转向量指定弧度|
+| **[rotateY](Type.Vector.md#rotatey)**(`v`: [`Vector`](Type.Vector.md), `o`: [`Vector`](Type.Vector.md), `a`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 Y 轴旋转向量指定弧度|
+| **[rotateZ](Type.Vector.md#rotatez)**(`v`: [`Vector`](Type.Vector.md), `o`: [`Vector`](Type.Vector.md), `a`: `number`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 绕 Z 轴旋转向量指定弧度|
+| **[round](Type.Vector.md#round)**(`a`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 将向量a逐元素向量四舍五入取整|
+| **[set](Type.Vector.md#set-1)**(`outer`: [`Vector`](Type.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](Type.Vector.md) <br> 设置向量值|
+| **[sqrMagnitude](Type.Vector.md#sqrmagnitude-1)**(`a`: [`Vector`](Type.Vector.md)): `number` <br> 求向量长度平方|
+| **[squaredDistance](Type.Vector.md#squareddistance)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `number` <br> 求两向量的欧氏距离平方|
+| **[strictEquals](Type.Vector.md#strictequals-1)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md)): `boolean` <br> 向量等价判断|
+| **[subtract](Type.Vector.md#subtract-1)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 计算向量a减去向量b|
 
 用给定的 x, y 和 z 分量构建一个新的 Vector3
 
@@ -358,7 +358,7 @@ Vector(0, 0, 0)
 
 ### add <Score text="add" /> 
 
-• **add**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **add**(`v`): [`Vector`](Type.Vector.md) 
 
 加一个向量
 
@@ -379,7 +379,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-• **clone**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **clone**(): [`Vector`](Type.Vector.md) 
 
 克隆当前向量
 
@@ -394,7 +394,7 @@ ___
 
 ### divide <Score text="divide" /> 
 
-• **divide**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **divide**(`v`): [`Vector`](Type.Vector.md) 
 
 每个分量除以参数
 
@@ -411,7 +411,7 @@ ___
 
 修改后的自身对象
 
-• **divide**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **divide**(`v`): [`Vector`](Type.Vector.md) 
 
 除以一个向量
 
@@ -432,7 +432,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-• **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **equals**(`other`, `epsilon?`): `boolean` 
 
 判断当前向量是否在误差范围内与指定向量相等
 
@@ -460,7 +460,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-• **fromString**(`str`): `void` <Badge type="tip" text="other" />
+• **fromString**(`str`): `void` 
 
 读取字符串数据
 
@@ -476,7 +476,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-• **multiply**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **multiply**(`v`): [`Vector`](Type.Vector.md) 
 
 乘以一个向量
 
@@ -493,7 +493,7 @@ ___
 
 修改后的自身对象
 
-• **multiply**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **multiply**(`v`): [`Vector`](Type.Vector.md) 
 
 每个分量乘以参数
 
@@ -514,7 +514,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-• **normalize**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **normalize**(): [`Vector`](Type.Vector.md) 
 
 将当前向量归一化
 
@@ -529,7 +529,7 @@ ___
 
 ### set <Score text="set" /> 
 
-• **set**(`other`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **set**(`other`): [`Vector`](Type.Vector.md) 
 
 设置当前向量使其与指定向量相等
 
@@ -546,7 +546,7 @@ ___
 
 修改后的自身对象
 
-• **set**(`x?`, `y?`, `z?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **set**(`x?`, `y?`, `z?`): [`Vector`](Type.Vector.md) 
 
 设置当前向量的具体分量值
 
@@ -569,7 +569,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
+• **strictEquals**(`other`): `boolean` 
 
 判断当前向量是否与指定向量相等
 
@@ -596,7 +596,7 @@ ___
 
 ### subtract <Score text="subtract" /> 
 
-• **subtract**(`v`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **subtract**(`v`): [`Vector`](Type.Vector.md) 
 
 减去一个向量
 
@@ -617,7 +617,7 @@ ___
 
 ### toRotation <Score text="toRotation" /> 
 
-• **toRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• **toRotation**(): [`Rotation`](Type.Rotation.md) 
 
 转换为对应的Rotation
 
@@ -632,7 +632,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-• **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` 
 
 输出为字符串
 
@@ -647,7 +647,7 @@ ___
 
 ### add <Score text="add" /> 
 
-• `Static` **add**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **add**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算ab两个向量相加
 
@@ -676,7 +676,7 @@ ___
 
 ### angle <Score text="angle" /> 
 
-• `Static` **angle**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **angle**(`a`, `b`): `number` 
 
 求向量a与向量b在XY平面投影的夹角角度
 
@@ -698,7 +698,7 @@ ___
 
 ### angle3D <Score text="angle" /> 
 
-• `Static` **angle3D**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **angle3D**(`a`, `b`): `number` 
 
 求向量a与向量b的夹角角度
 
@@ -720,7 +720,7 @@ ___
 
 ### ceil <Score text="ceil" /> 
 
-• `Static` **ceil**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **ceil**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 将向量a逐元素向量向上取整
 
@@ -748,7 +748,7 @@ ___
 
 ### clamp <Score text="clamp" /> 
 
-• `Static` **clamp**(`value`, `minInclusive`, `maxInclusive`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **clamp**(`value`, `minInclusive`, `maxInclusive`): [`Vector`](Type.Vector.md) 
 
 设置当前向量的值，使其各个分量都处于指定的范围内
 
@@ -771,7 +771,7 @@ ___
 
 ### clone <Score text="clone" /> 
 
-• `Static` **clone**(`a`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **clone**(`a`): [`Vector`](Type.Vector.md) 
 
 获得指定向量的拷贝
 
@@ -792,7 +792,7 @@ ___
 
 ### copy <Score text="copy" /> 
 
-• `Static` **copy**(`a`, `outer`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **copy**(`a`, `outer`): [`Vector`](Type.Vector.md) 
 
 复制目标向量
 
@@ -820,7 +820,7 @@ ___
 
 ### cross <Score text="cross" /> 
 
-• `Static` **cross**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **cross**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 向量叉积 (向量积)
 
@@ -849,7 +849,7 @@ ___
 
 ### distance <Score text="distance" /> 
 
-• `Static` **distance**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **distance**(`a`, `b`): `number` 
 
 求两向量的欧氏距离
 
@@ -871,7 +871,7 @@ ___
 
 ### divide <Score text="divide" /> 
 
-• `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 遍历向量a的每个分量除以b
 
@@ -896,7 +896,7 @@ ___
 
 相除的结果 Vector 对象
 
-• `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算向量a除以向量b
 
@@ -925,7 +925,7 @@ ___
 
 ### dot <Score text="dot" /> 
 
-• `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **dot**(`a`, `b`): `number` 
 
 向量点积 (数量积)
 
@@ -947,7 +947,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` 
 
 排除浮点数误差的向量近似等价判断
 
@@ -970,7 +970,7 @@ ___
 
 ### floor <Score text="floor" /> 
 
-• `Static` **floor**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **floor**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 将向量a逐元素向量向下取整
 
@@ -998,7 +998,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-• `Static` **fromString**(`str`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **fromString**(`str`, `outer?`): [`Vector`](Type.Vector.md) 
 
 通过一个字符串创建 Vector
 
@@ -1026,7 +1026,7 @@ ___
 
 ### invert <Score text="invert" /> 
 
-• `Static` **invert**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **invert**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 将向量a逐元素向量取倒数，接近 0 时返回 Infinity
 
@@ -1054,7 +1054,7 @@ ___
 
 ### invertSafe <Score text="invertSafe" /> 
 
-• `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **invertSafe**(`a`, `outer?`, `epsilon?`): [`Vector`](Type.Vector.md) 
 
 将向量a逐元素向量取倒数，接近 0 时返回 0
 
@@ -1083,7 +1083,7 @@ ___
 
 ### lerp <Score text="lerp" /> 
 
-• `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Vector`](Type.Vector.md) 
 
 逐元素向量线性插值： A + t * (B - A)
 
@@ -1113,7 +1113,7 @@ ___
 
 ### magnitude <Score text="magnitude" /> 
 
-• `Static` **magnitude**(`a`): `number` <Badge type="tip" text="other" />
+• `Static` **magnitude**(`a`): `number` 
 
 求向量长度
 
@@ -1134,7 +1134,7 @@ ___
 
 ### max <Score text="max" /> 
 
-• `Static` **max**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **max**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 逐元素向量最大值
 
@@ -1163,7 +1163,7 @@ ___
 
 ### min <Score text="min" /> 
 
-• `Static` **min**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **min**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 逐元素向量最小值
 
@@ -1192,7 +1192,7 @@ ___
 
 ### moveTowards <Score text="moveTowards" /> 
 
-• `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **moveTowards**(`current`, `target`, `maxDistanceDelta`, `outer?`): [`Vector`](Type.Vector.md) 
 
 向目标向量移动
 
@@ -1222,7 +1222,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 遍历向量a的每个分量乘以b
 
@@ -1247,7 +1247,7 @@ ___
 
 相乘的结果 Vector 对象
 
-• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算向量a乘以向量b
 
@@ -1276,7 +1276,7 @@ ___
 
 ### negate <Score text="negate" /> 
 
-• `Static` **negate**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **negate**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 求向量a逐元素向量取负
 
@@ -1304,7 +1304,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-• `Static` **normalize**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **normalize**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 归一化向量
 
@@ -1332,7 +1332,7 @@ ___
 
 ### project <Score text="project" /> 
 
-• `Static` **project**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **project**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算向量a在指定向量上的投影
 
@@ -1361,7 +1361,7 @@ ___
 
 ### projectOnPlane <Score text="projectOnPlane" /> 
 
-• `Static` **projectOnPlane**(`a`, `n`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **projectOnPlane**(`a`, `n`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算向量a在指定平面上的投影
 
@@ -1390,7 +1390,7 @@ ___
 
 ### reflect <Score text="reflect" /> 
 
-• `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **reflect**(`inDirection`, `inNormal`, `outer?`): [`Vector`](Type.Vector.md) 
 
 求反射角
 
@@ -1419,7 +1419,7 @@ ___
 
 ### rotateX <Score text="rotateX" /> 
 
-• `Static` **rotateX**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **rotateX**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 绕 X 轴旋转向量指定弧度
 
@@ -1449,7 +1449,7 @@ ___
 
 ### rotateY <Score text="rotateY" /> 
 
-• `Static` **rotateY**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **rotateY**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 绕 Y 轴旋转向量指定弧度
 
@@ -1479,7 +1479,7 @@ ___
 
 ### rotateZ <Score text="rotateZ" /> 
 
-• `Static` **rotateZ**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **rotateZ**(`v`, `o`, `a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 绕 Z 轴旋转向量指定弧度
 
@@ -1509,7 +1509,7 @@ ___
 
 ### round <Score text="round" /> 
 
-• `Static` **round**(`a`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **round**(`a`, `outer?`): [`Vector`](Type.Vector.md) 
 
 将向量a逐元素向量四舍五入取整
 
@@ -1537,7 +1537,7 @@ ___
 
 ### set <Score text="set" /> 
 
-• `Static` **set**(`outer`, `x`, `y`, `z`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **set**(`outer`, `x`, `y`, `z`): [`Vector`](Type.Vector.md) 
 
 设置向量值
 
@@ -1561,7 +1561,7 @@ ___
 
 ### sqrMagnitude <Score text="sqrMagnitude" /> 
 
-• `Static` **sqrMagnitude**(`a`): `number` <Badge type="tip" text="other" />
+• `Static` **sqrMagnitude**(`a`): `number` 
 
 求向量长度平方
 
@@ -1582,7 +1582,7 @@ ___
 
 ### squaredDistance <Score text="squaredDistance" /> 
 
-• `Static` **squaredDistance**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **squaredDistance**(`a`, `b`): `number` 
 
 求两向量的欧氏距离平方
 
@@ -1604,7 +1604,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
+• `Static` **strictEquals**(`a`, `b`): `boolean` 
 
 向量等价判断
 
@@ -1626,7 +1626,7 @@ ___
 
 ### subtract <Score text="subtract" /> 
 
-• `Static` **subtract**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **subtract**(`a`, `b`, `outer?`): [`Vector`](Type.Vector.md) 
 
 计算向量a减去向量b
 

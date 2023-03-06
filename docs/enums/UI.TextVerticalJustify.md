@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / TextVerticalJustify
+[Gui](../groups/Gui.Gui.md) / TextVerticalJustify
 
 # TextVerticalJustify <Badge type="tip" text="Enumeration" /> <Score text="TextVerticalJustify" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Bottom](UI.TextVerticalJustify.md#bottom)** = ``2`` <br> 居下对齐|
-| **[Center](UI.TextVerticalJustify.md#center)** = ``1`` <br> 居中对齐|
-| **[Top](UI.TextVerticalJustify.md#top)** = ``0`` <br> 居上对齐|
+| **[Bottom](UI.TextVerticalJustify.md#bottom)** = ``2`` <br> |
+| **[Center](UI.TextVerticalJustify.md#center)** = ``1`` <br> |
+| **[Top](UI.TextVerticalJustify.md#top)** = ``0`` <br> |
 
 ## Enumeration Members
 

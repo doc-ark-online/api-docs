@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / EffectService
+[Utility](../groups/Utility.Utility.md) / EffectService
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
@@ -11,20 +11,20 @@
 | Methods |
 | :-----|
 | **[clearAll](Service.EffectService.md#clearall)**(): `void` <br> 停止所有特效，并释放所有特效资源|
-| **[getEffectGameObject](Service.EffectService.md#geteffectgameobject)**(`number`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <br> 根据播放id获取一个特效对象|
-| **[playEffectAtLocation](Service.EffectService.md#playeffectatlocation)**(`string`, [`Vector`](Type.Vector.md), `number`, [`Rotation`](Type.Rotation.md), [`Vector`](Type.Vector.md)): `number` <br> 在指定位置播放特效|
-| **[playEffectOnGameObject](Service.EffectService.md#playeffectongameobject)**(`string`, `GameObject`, `number`, [`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md), [`Vector`](Type.Vector.md)): `number` <br> 在一个GameObject上播放特效|
-| **[playEffectOnPlayer](Service.EffectService.md#playeffectonplayer)**(`string`, [`Player`](Gameplay.Player.md) \, [`SlotType`](../enums/Gameplay.SlotType.md), `number`, [`Vector`](Type.Vector.md), [`Rotation`](Type.Rotation.md), [`Vector`](Type.Vector.md)): `number` <br> 在一个角色的挂点上播放特效|
+| **[getEffectGameObject](Service.EffectService.md#geteffectgameobject)**(`playId`: `number`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <br> 根据播放id获取一个特效对象|
+| **[playEffectAtLocation](Service.EffectService.md#playeffectatlocation)**(`source`: `string`, `location`: [`Vector`](Type.Vector.md), `loop?`: `number`, `rotation?`: [`Rotation`](Type.Rotation.md), `scale?`: [`Vector`](Type.Vector.md)): `number` <br> 在指定位置播放特效|
+| **[playEffectOnGameObject](Service.EffectService.md#playeffectongameobject)**(`source`: `string`, `target`: `GameObject`, `loop?`: `number`, `offset?`: [`Vector`](Type.Vector.md), `rotation?`: [`Rotation`](Type.Rotation.md), `scale?`: [`Vector`](Type.Vector.md)): `number` <br> 在一个GameObject上播放特效|
+| **[playEffectOnPlayer](Service.EffectService.md#playeffectonplayer)**(`source`: `string`, `target`: [`Player`](Gameplay.Player.md) \, `slotType`: [`SlotType`](../enums/Gameplay.SlotType.md), `loop?`: `number`, `offset?`: [`Vector`](Type.Vector.md), `rotation?`: [`Rotation`](Type.Rotation.md), `scale?`: [`Vector`](Type.Vector.md)): `number` <br> 在一个角色的挂点上播放特效|
 | **[stopAllEffect](Service.EffectService.md#stopalleffect)**(): `void` <br> 停止所有特效|
-| **[stopEffect](Service.EffectService.md#stopeffect)**(`number`): `void` <br> 停止一个正在播放的特效|
-| **[stopEffectFromHost](Service.EffectService.md#stopeffectfromhost)**(`string`, `GameObject` \): `void` <br> 停止目标对象上所有资源Id的特效|
+| **[stopEffect](Service.EffectService.md#stopeffect)**(`playId`: `number`): `void` <br> 停止一个正在播放的特效|
+| **[stopEffectFromHost](Service.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target?`: `GameObject` \): `void` <br> 停止目标对象上所有资源Id的特效|
 | **[getInstance](Service.EffectService.md#getinstance)**(): [`EffectService`](Service.EffectService.md) <br> 获取特效管理器全局实例|
 
 ## Methods
 
 ### clearAll <Score text="clearAll" /> 
 
-• **clearAll**(): `void` <Badge type="tip" text="other" />
+• **clearAll**(): `void` 
 
 停止所有特效，并释放所有特效资源
 
@@ -34,7 +34,7 @@ ___
 
 ### getEffectGameObject <Score text="getEffectGameObject" /> 
 
-• **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="other" />
+• **getEffectGameObject**(`playId`): `Promise`<[`Particle`](Gameplay.Particle.md)\> <Badge type="tip" text="client" />
 
 根据播放id获取一个特效对象
 
@@ -49,7 +49,7 @@ ___
 
 `Promise`<[`Particle`](Gameplay.Particle.md)\>
 
-Sound对象的gameObject
+Particle对象的gameObject
 
 ___
 
@@ -92,7 +92,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
-| `target` | `GameObject` |  目标GameObject \| 目标GameObject的GUID |
+| `target` | `GameObject` |  目标GameObject |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `offset?` | [`Vector`](Type.Vector.md) |  坐标偏移 default: Type.Vector.zero |
 | `rotation?` | [`Rotation`](Type.Rotation.md) |  旋转 default: Type.Rotation.zero |
@@ -182,7 +182,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`EffectService`](Service.EffectService.md) 
 
 获取特效管理器全局实例
 

@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / AnalogInputEvent
+[Gui](../groups/Gui.Gui.md) / AnalogInputEvent
 
 # AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
 
@@ -16,7 +16,7 @@
 
 ### toInputEvent <Score text="toInputEvent" /> 
 
-• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="other" />
+• **toInputEvent**(): [`InputEvent`](UI.InputEvent.md) <Badge type="tip" text="client" />
 
 转化为 InputEvent
 

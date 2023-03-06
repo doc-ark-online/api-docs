@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EquipmentStatus
+[Gameplay](../groups/Gameplay.Gameplay.md) / EquipmentStatus
 
 # EquipmentStatus <Badge type="tip" text="Enumeration" /> <Score text="EquipmentStatus" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Equipped](Gameplay.EquipmentStatus.md#equipped)** = ``2`` <br> 已拿出装备|
-| **[NotPickedUp](Gameplay.EquipmentStatus.md#notpickedup)** = ``0`` <br> 未拾取装备|
-| **[PickedUp](Gameplay.EquipmentStatus.md#pickedup)** = ``1`` <br> 已拾取装备|
+| **[Equipped](Gameplay.EquipmentStatus.md#equipped)** = ``2`` <br> |
+| **[NotPickedUp](Gameplay.EquipmentStatus.md#notpickedup)** = ``0`` <br> |
+| **[PickedUp](Gameplay.EquipmentStatus.md#pickedup)** = ``1`` <br> |
 
 ## Enumeration Members
 

@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ScrollBarDefaultLocation
+[Gui](../groups/Gui.Gui.md) / ScrollBarDefaultLocation
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[BottomOrRight](UI.ScrollBarDefaultLocation.md#bottomorright)** = ``2`` <br> 默认底部/右侧|
-| **[Center](UI.ScrollBarDefaultLocation.md#center)** = ``1`` <br> 默认居中|
-| **[TopOrLeft](UI.ScrollBarDefaultLocation.md#toporleft)** = ``0`` <br> 默认顶部/左侧|
+| **[BottomOrRight](UI.ScrollBarDefaultLocation.md#bottomorright)** = ``2`` <br> |
+| **[Center](UI.ScrollBarDefaultLocation.md#center)** = ``1`` <br> |
+| **[TopOrLeft](UI.ScrollBarDefaultLocation.md#toporleft)** = ``0`` <br> |
 
 ## Enumeration Members
 

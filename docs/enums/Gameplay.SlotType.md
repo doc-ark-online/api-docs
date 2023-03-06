@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SlotType
+[Avatar](../groups/Avatar.Avatar.md) / SlotType
 
 # SlotType <Badge type="tip" text="Enumeration" /> <Score text="SlotType" />
 
@@ -9,36 +9,36 @@
 
 | Enumeration Members |
 | :-----|
-| **[BackOrnamental](Gameplay.SlotType.md#backornamental)** = ``12`` <br> 背部装饰|
-| **[Buttocks](Gameplay.SlotType.md#buttocks)** = ``19`` <br> 臀部|
-| **[ChatFrame](Gameplay.SlotType.md#chatframe)** = ``22`` <br> 聊天框|
-| **[Eyes](Gameplay.SlotType.md#eyes)** = ``5`` <br> 眼睛|
-| **[FaceOrnamental](Gameplay.SlotType.md#faceornamental)** = ``6`` <br> 面部装饰|
-| **[Glasses](Gameplay.SlotType.md#glasses)** = ``4`` <br> 眼镜|
-| **[Hair](Gameplay.SlotType.md#hair)** = ``0`` <br> 头发|
-| **[Head](Gameplay.SlotType.md#head)** = ``1`` <br> 脸部|
-| **[LeftBack](Gameplay.SlotType.md#leftback)** = ``13`` <br> 左背|
-| **[LeftCalf](Gameplay.SlotType.md#leftcalf)** = ``28`` <br> 左膝盖|
-| **[LeftFoot](Gameplay.SlotType.md#leftfoot)** = ``17`` <br> 左脚|
-| **[LeftGlove](Gameplay.SlotType.md#leftglove)** = ``10`` <br> 左手手套|
-| **[LeftHand](Gameplay.SlotType.md#lefthand)** = ``15`` <br> 左手|
-| **[LeftHead](Gameplay.SlotType.md#lefthead)** = ``2`` <br> 头部左侧|
-| **[LeftLowerArm](Gameplay.SlotType.md#leftlowerarm)** = ``24`` <br> 左手肘|
-| **[LeftShoulder](Gameplay.SlotType.md#leftshoulder)** = ``8`` <br> 左肩部|
-| **[LeftThigh](Gameplay.SlotType.md#leftthigh)** = ``26`` <br> 左大腿根|
-| **[Mouse](Gameplay.SlotType.md#mouse)** = ``7`` <br> 嘴部|
-| **[Nameplate](Gameplay.SlotType.md#nameplate)** = ``21`` <br> 头顶标题|
-| **[RightBack](Gameplay.SlotType.md#rightback)** = ``14`` <br> 右背|
-| **[RightCalf](Gameplay.SlotType.md#rightcalf)** = ``29`` <br> 右膝盖|
-| **[RightFoot](Gameplay.SlotType.md#rightfoot)** = ``18`` <br> 右脚|
-| **[RightGlove](Gameplay.SlotType.md#rightglove)** = ``11`` <br> 右手手套|
-| **[RightHand](Gameplay.SlotType.md#righthand)** = ``16`` <br> 右手|
-| **[RightHead](Gameplay.SlotType.md#righthead)** = ``3`` <br> 头部右侧|
-| **[RightLowerArm](Gameplay.SlotType.md#rightlowerarm)** = ``25`` <br> 右手肘|
-| **[RightShoulder](Gameplay.SlotType.md#rightshoulder)** = ``9`` <br> 右肩部|
-| **[RightThigh](Gameplay.SlotType.md#rightthigh)** = ``27`` <br> 右大腿根|
-| **[Rings](Gameplay.SlotType.md#rings)** = ``20`` <br> 头顶光圈|
-| **[Root](Gameplay.SlotType.md#root)** = ``23`` <br> 根节点|
+| **[BackOrnamental](Gameplay.SlotType.md#backornamental)** = ``12`` <br> |
+| **[Buttocks](Gameplay.SlotType.md#buttocks)** = ``19`` <br> |
+| **[ChatFrame](Gameplay.SlotType.md#chatframe)** = ``22`` <br> |
+| **[Eyes](Gameplay.SlotType.md#eyes)** = ``5`` <br> |
+| **[FaceOrnamental](Gameplay.SlotType.md#faceornamental)** = ``6`` <br> |
+| **[Glasses](Gameplay.SlotType.md#glasses)** = ``4`` <br> |
+| **[Hair](Gameplay.SlotType.md#hair)** = ``0`` <br> |
+| **[Head](Gameplay.SlotType.md#head)** = ``1`` <br> |
+| **[LeftBack](Gameplay.SlotType.md#leftback)** = ``13`` <br> |
+| **[LeftCalf](Gameplay.SlotType.md#leftcalf)** = ``28`` <br> |
+| **[LeftFoot](Gameplay.SlotType.md#leftfoot)** = ``17`` <br> |
+| **[LeftGlove](Gameplay.SlotType.md#leftglove)** = ``10`` <br> |
+| **[LeftHand](Gameplay.SlotType.md#lefthand)** = ``15`` <br> |
+| **[LeftHead](Gameplay.SlotType.md#lefthead)** = ``2`` <br> |
+| **[LeftLowerArm](Gameplay.SlotType.md#leftlowerarm)** = ``24`` <br> |
+| **[LeftShoulder](Gameplay.SlotType.md#leftshoulder)** = ``8`` <br> |
+| **[LeftThigh](Gameplay.SlotType.md#leftthigh)** = ``26`` <br> |
+| **[Mouse](Gameplay.SlotType.md#mouse)** = ``7`` <br> |
+| **[Nameplate](Gameplay.SlotType.md#nameplate)** = ``21`` <br> |
+| **[RightBack](Gameplay.SlotType.md#rightback)** = ``14`` <br> |
+| **[RightCalf](Gameplay.SlotType.md#rightcalf)** = ``29`` <br> |
+| **[RightFoot](Gameplay.SlotType.md#rightfoot)** = ``18`` <br> |
+| **[RightGlove](Gameplay.SlotType.md#rightglove)** = ``11`` <br> |
+| **[RightHand](Gameplay.SlotType.md#righthand)** = ``16`` <br> |
+| **[RightHead](Gameplay.SlotType.md#righthead)** = ``3`` <br> |
+| **[RightLowerArm](Gameplay.SlotType.md#rightlowerarm)** = ``25`` <br> |
+| **[RightShoulder](Gameplay.SlotType.md#rightshoulder)** = ``9`` <br> |
+| **[RightThigh](Gameplay.SlotType.md#rightthigh)** = ``27`` <br> |
+| **[Rings](Gameplay.SlotType.md#rings)** = ``20`` <br> |
+| **[Root](Gameplay.SlotType.md#root)** = ``23`` <br> |
 
 ## Enumeration Members
 

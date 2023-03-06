@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / GameObjPoolSourceType
+[Utility](../groups/Utility.Utility.md) / GameObjPoolSourceType
 
 # GameObjPoolSourceType <Badge type="tip" text="Enumeration" /> <Score text="GameObjPoolSourceType" />
 
@@ -8,9 +8,9 @@ GameObjPool对象池资源来源类型，不同类型的资源创建方式不一
 
 | Enumeration Members |
 | :-----|
-| **[Asset](Extension.GameObjPoolSourceType.md#asset)** = ``0`` <br> 资源库资源|
-| **[Prefab](Extension.GameObjPoolSourceType.md#prefab)** = ``2`` <br> 预制体|
-| **[Scene](Extension.GameObjPoolSourceType.md#scene)** = ``1`` <br> 场景对象|
+| **[Asset](Extension.GameObjPoolSourceType.md#asset)** = ``0`` <br> |
+| **[Prefab](Extension.GameObjPoolSourceType.md#prefab)** = ``2`` <br> |
+| **[Scene](Extension.GameObjPoolSourceType.md#scene)** = ``1`` <br> |
 
 ## Enumeration Members
 

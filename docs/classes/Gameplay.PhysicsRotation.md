@@ -1,8 +1,27 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsRotation
+[Physics](../groups/Physics.Physics.md) / PhysicsRotation
 
 # PhysicsRotation <Badge type="tip" text="Class" /> <Score text="PhysicsRotation" />
 
 物理旋转轴
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsRotation;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setAngularLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.angularLimit = new Type.Vector(100,100,100);
+test.angularVelocity = new Type.Vector(100,100,100);
+test.strength = 100;
+```
 
 ## Hierarchy
 
@@ -30,8 +49,8 @@
 
 | Methods |
 | :-----|
-| **[getAngularLimitType](Gameplay.PhysicsRotation.md#getangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取限制类型|
-| **[setAngularLimitType](Gameplay.PhysicsRotation.md#setangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md), [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
+| **[getAngularLimitType](Gameplay.PhysicsRotation.md#getangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取限制类型|
+| **[setAngularLimitType](Gameplay.PhysicsRotation.md#setangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md), `rotationType`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
 
 
 ::: details 点击查看继承
@@ -141,11 +160,10 @@ ___
 
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取限制类型
 
-调用端
 
 #### Parameters
 
@@ -162,11 +180,10 @@ ___
 
 ### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-• **setAngularLimitType**(`Axis`, `rotationType`): `void` <Badge type="tip" text="other" />
+• **setAngularLimitType**(`Axis`, `rotationType`): `void` 
 
 设置旋转类型
 
-调用端
 
 #### Parameters
 

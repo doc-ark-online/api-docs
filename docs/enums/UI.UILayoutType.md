@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UILayoutType
+[Gui](../groups/Gui.Gui.md) / UILayoutType
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[Horizontal](UI.UILayoutType.md#horizontal)** = ``0`` <br> 水平|
-| **[Vertical](UI.UILayoutType.md#vertical)** = ``1`` <br> 垂直|
+| **[Horizontal](UI.UILayoutType.md#horizontal)** = ``0`` <br> |
+| **[Vertical](UI.UILayoutType.md#vertical)** = ``1`` <br> |
 
 ## Enumeration Members
 

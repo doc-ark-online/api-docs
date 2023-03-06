@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / ConvertScreenResult
+[Gameplay](../groups/Gameplay.Gameplay.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
@@ -8,9 +8,9 @@
 
 | Properties |
 | :-----|
-| **[result](Type.ConvertScreenResult.md#result)**: `boolean` <br> 如果无法确定值，则返回  false。|
-| **[screenPosition](Type.ConvertScreenResult.md#screenposition)**: [`Vector2`](Type.Vector2.md) <br> 屏幕位置|
-| **[worldDirection](Type.ConvertScreenResult.md#worlddirection)**: [`Vector`](Type.Vector.md) <br> 世界方向|
+| **[result](Type.ConvertScreenResult.md#result)**: `boolean` <br> 世界坐标|
+| **[screenPosition](Type.ConvertScreenResult.md#screenposition)**: [`Vector2`](Type.Vector2.md) <br> 世界坐标|
+| **[worldDirection](Type.ConvertScreenResult.md#worlddirection)**: [`Vector`](Type.Vector.md) <br> 世界坐标|
 | **[worldLocation](Type.ConvertScreenResult.md#worldlocation)**: [`Vector`](Type.Vector.md) <br> 世界坐标|
 
 ## Properties

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SubStance
+[Animations](../groups/Animations.Animations.md) / SubStance
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
@@ -45,7 +45,6 @@ this.stanceProxy.stop();
 
 **`Effect`**
 
-双端函数
 
 #### Parameters
 

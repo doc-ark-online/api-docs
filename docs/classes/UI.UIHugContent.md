@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIHugContent
+[Gui](../groups/Gui.Gui.md) / UIHugContent
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
@@ -8,7 +8,7 @@
 
 | Properties |
 | :-----|
-| **[hugContentH](UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md) <br> 垂直适应规则|
+| **[hugContentH](UI.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/UI.UIHugContentVertically.md) <br> 水平适应规则|
 | **[hugContentW](UI.UIHugContent.md#hugcontentw)**: [`UIHugContentHorizontally`](../enums/UI.UIHugContentHorizontally.md) <br> 水平适应规则|
 
 构造具体规则方法

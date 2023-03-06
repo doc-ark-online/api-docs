@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIFontGlyph
+[Gui](../groups/Gui.Gui.md) / UIFontGlyph
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[Bold](UI.UIFontGlyph.md#bold)** = ``1`` <br> 粗体|
-| **[BoldItalics](UI.UIFontGlyph.md#bolditalics)** = ``4`` <br> 粗斜体|
-| **[Italics](UI.UIFontGlyph.md#italics)** = ``3`` <br> 斜体|
-| **[Light](UI.UIFontGlyph.md#light)** = ``2`` <br> 细体|
-| **[Normal](UI.UIFontGlyph.md#normal)** = ``0`` <br> 普通|
+| **[Bold](UI.UIFontGlyph.md#bold)** = ``1`` <br> |
+| **[BoldItalics](UI.UIFontGlyph.md#bolditalics)** = ``4`` <br> |
+| **[Italics](UI.UIFontGlyph.md#italics)** = ``3`` <br> |
+| **[Light](UI.UIFontGlyph.md#light)** = ``2`` <br> |
+| **[Normal](UI.UIFontGlyph.md#normal)** = ``0`` <br> |
 
 ## Enumeration Members
 

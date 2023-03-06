@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / DragDropPayLoad
+[Gui](../groups/Gui.Gui.md) / DragDropPayLoad
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
@@ -9,8 +9,8 @@
 | Properties |
 | :-----|
 | **[guidStr](UI.DragDropPayLoad.md#guidstr)**: `any` <br> GUID|
-| **[idStr](UI.DragDropPayLoad.md#idstr)**: `any` <br> id|
-| **[nameStr](UI.DragDropPayLoad.md#namestr)**: `any` <br> name|
+| **[idStr](UI.DragDropPayLoad.md#idstr)**: `any` <br> GUID|
+| **[nameStr](UI.DragDropPayLoad.md#namestr)**: `any` <br> GUID|
 
 | Accessors |
 | :-----|

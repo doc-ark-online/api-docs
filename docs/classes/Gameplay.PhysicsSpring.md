@@ -1,8 +1,27 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsSpring
+[Physics](../groups/Physics.Physics.md) / PhysicsSpring
 
 # PhysicsSpring <Badge type="tip" text="Class" /> <Score text="PhysicsSpring" />
 
 物理弹簧组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsSpring;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.isLengthLimited = true;
+test.maxStretchLength = 100;
+test.stiffness = 100;
+test.damping = 100;
+```
 
 ## Hierarchy
 

@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / AdsType
+[Monetization](../groups/Monetization.Monetization.md) / AdsType
 
 # AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[Interstitial](Service.AdsType.md#interstitial)** = ``"interstitial"`` <br> 插屏|
-| **[Reward](Service.AdsType.md#reward)** = ``"reward"`` <br> 激励|
+| **[Interstitial](Service.AdsType.md#interstitial)** = ``"interstitial"`` <br> |
+| **[Reward](Service.AdsType.md#reward)** = ``"reward"`` <br> |
 
 ## Enumeration Members
 

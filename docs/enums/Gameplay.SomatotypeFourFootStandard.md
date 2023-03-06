@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeFourFootStandard
+[Avatar](../groups/Avatar.Avatar.md) / SomatotypeFourFootStandard
 
 # SomatotypeFourFootStandard <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeFourFootStandard" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[Cat](Gameplay.SomatotypeFourFootStandard.md#cat)** = ``0`` <br> 猫|
-| **[Dog](Gameplay.SomatotypeFourFootStandard.md#dog)** = ``1`` <br> 狗|
-| **[Macaw](Gameplay.SomatotypeFourFootStandard.md#macaw)** = ``3`` <br> 金刚鹦鹉|
-| **[Pig](Gameplay.SomatotypeFourFootStandard.md#pig)** = ``2`` <br> 猪|
-| **[WesternDragon](Gameplay.SomatotypeFourFootStandard.md#westerndragon)** = ``4`` <br> 西方龙|
+| **[Cat](Gameplay.SomatotypeFourFootStandard.md#cat)** = ``0`` <br> |
+| **[Dog](Gameplay.SomatotypeFourFootStandard.md#dog)** = ``1`` <br> |
+| **[Macaw](Gameplay.SomatotypeFourFootStandard.md#macaw)** = ``3`` <br> |
+| **[Pig](Gameplay.SomatotypeFourFootStandard.md#pig)** = ``2`` <br> |
+| **[WesternDragon](Gameplay.SomatotypeFourFootStandard.md#westerndragon)** = ``4`` <br> |
 
 ## Enumeration Members
 

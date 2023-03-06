@@ -10,6 +10,7 @@ Account Service
 | :-----|
 | [AdsState](../enums/Service.AdsState.md) <br> 广告状态|
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型|
+| [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
 
 | Classes |
 | :-----|
@@ -18,6 +19,7 @@ Account Service
 | [AnalyticsService](../classes/Service.AnalyticsService.md) <br> 分析服务|
 | [DebugService](../classes/Service.DebugService.md) <br> debug调试服务|
 | [EffectService](../classes/Service.EffectService.md) <br> 特效服务|
+| [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码|
 | [PurchaseService](../classes/Service.PurchaseService.md) <br> 应用内购服务|
 | [RoomService](../classes/Service.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API|
 | [RouteService](../classes/Service.RouteService.md) <br> 游戏管理器|
@@ -26,19 +28,19 @@ Account Service
 
 | Type Aliases |
 | :-----|
-| **[BoolResponse](Service.Service.md#boolresponse)**: (`boolean` |: `boolean`) => `void` <br> • (`success`): `void`|
-| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> • (): `void`|
-| **[MGSEvent](Service.Service.md#mgsevent)**: (`string` |: `string`) => `void` <br> • (`jsonData`): `void`|
-| **[MGSResponse](Service.Service.md#mgsresponse)**: (`boolean` |: `boolean`, `string` |: `string`) => `void` <br> • (`isSuccess`, `jsonData`): `void`|
-| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`number`: `number`) => `void` <br> • (`amount`): `void`|
-| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`number`: `number`, `string`: `string`, `string`: `string`, `number`: `number`, (`bReceived`: `boolean`) => `void`: (`bReceived`: `boolean`) => `void`) => `void` <br> • (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`|
-| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`number`: `number`) => `void` <br> • (`newState`): `void`|
-| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> • (): `void`|
-| **[StringResponse](Service.Service.md#stringresponse)**: (`string` |: `string`) => `void` <br> • (`dataString`): `void`|
-| **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`boolean`: `boolean`) => `void` <br> • (`success`): `void`|
-| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> • (): `void`|
-| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`string` |: `string`) => `void` <br> • (`dataString`): `void`|
+| **[BoolResponse](Service.Service.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
+| **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
+| **[MGSResponse](Service.Service.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
+| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
+| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
+| **[StringResponse](Service.Service.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 下载角色形象的回调消息格式|
+| **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
+| **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
 
 ## Type Aliases
 
@@ -181,7 +183,7 @@ ___
 
 • (`newState`): `void`
 
-233中MW窗口显示模式切换的消息格式
+233中窗口显示模式切换的消息格式
 
 ##### Parameters
 
@@ -203,7 +205,7 @@ ___
 
 • (): `void`
 
-233中MW窗口刷新的消息格式
+233中窗口刷新的消息格式
 
 ##### Returns
 

@@ -8,15 +8,15 @@
 
 | Type Aliases |
 | :-----|
-| **[maskWordCheckResult](Util.StringUtil.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
+| **[maskWordCheckResult](Util.StringUtil.md#maskwordcheckresult)**: `Object` <br> 文本复制，将字符串复制到剪切板|
 
 | Functions |
 | :-----|
-| **[clipboardCopy](Util.StringUtil.md#clipboardcopy)**(`string`): `void` <br> 文本复制，将字符串复制到剪切板|
+| **[clipboardCopy](Util.StringUtil.md#clipboardcopy)**(`text`: `string`): `void` <br> 文本复制，将字符串复制到剪切板|
 | **[clipboardPaste](Util.StringUtil.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
-| **[format](Util.StringUtil.md#format)**(`string`, `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
-| **[isEmpty](Util.StringUtil.md#isempty)**(`string`): `boolean` <br> 判断字符串是否为空(null或"")|
-| **[maskWordCheck](Util.StringUtil.md#maskwordcheck)**(`string`): `Promise`<[`[maskWordCheck](Util.StringUtil.md#maskwordcheck)Result`](Util.StringUtil.md#maskwordcheckresult)\> <br> 屏蔽字检测|
+| **[format](Util.StringUtil.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[isEmpty](Util.StringUtil.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
+| **[maskWordCheck](Util.StringUtil.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](Util.StringUtil.md#maskwordcheck)Result`](Util.StringUtil.md#maskwordcheckresult)\> <br> 屏蔽字检测|
 
 ## Type Aliases
 
@@ -37,7 +37,7 @@
 
 ### clipboardCopy <Score text="clipboardCopy" /> 
 
-• **clipboardCopy**(`text`): `void` <Badge type="tip" text="other" />
+• **clipboardCopy**(`text`): `void` <Badge type="tip" text="client" />
 
 文本复制，将字符串复制到剪切板
 
@@ -53,7 +53,7 @@ ___
 
 ### clipboardPaste <Score text="clipboardPaste" /> 
 
-• **clipboardPaste**(): `string` <Badge type="tip" text="other" />
+• **clipboardPaste**(): `string` <Badge type="tip" text="client" />
 
 文本粘贴，获取剪切板的文本
 
@@ -68,7 +68,7 @@ ___
 
 ### format <Score text="format" /> 
 
-• **format**(`str`, `...param`): `string` <Badge type="tip" text="other" />
+• **format**(`str`, `...param`): `string` 
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
@@ -96,7 +96,7 @@ ___
 
 ### isEmpty <Score text="isEmpty" /> 
 
-• **isEmpty**(`str`): `boolean` <Badge type="tip" text="other" />
+• **isEmpty**(`str`): `boolean` 
 
 判断字符串是否为空(null或"")
 
@@ -117,7 +117,7 @@ ___
 
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> <Badge type="tip" text="other" />
+• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
 

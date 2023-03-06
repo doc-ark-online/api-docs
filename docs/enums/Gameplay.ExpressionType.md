@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ExpressionType
+[Avatar](../groups/Avatar.Avatar.md) / ExpressionType
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 
@@ -8,16 +8,16 @@
 
 | Enumeration Members |
 | :-----|
-| **[Anger](Gameplay.ExpressionType.md#anger)** = ``4`` <br> 生气|
-| **[Awkward](Gameplay.ExpressionType.md#awkward)** = ``5`` <br> 尴尬|
-| **[Cute](Gameplay.ExpressionType.md#cute)** = ``8`` <br> 可爱|
-| **[Default](Gameplay.ExpressionType.md#default)** = ``0`` <br> 默认表情|
-| **[Doubt](Gameplay.ExpressionType.md#doubt)** = ``9`` <br> 疑惑|
-| **[Happy](Gameplay.ExpressionType.md#happy)** = ``2`` <br> 开心|
-| **[Laugh](Gameplay.ExpressionType.md#laugh)** = ``6`` <br> 笑|
-| **[Mischievous](Gameplay.ExpressionType.md#mischievous)** = ``7`` <br> 调皮|
-| **[Sad](Gameplay.ExpressionType.md#sad)** = ``3`` <br> 伤心|
-| **[Smile](Gameplay.ExpressionType.md#smile)** = ``1`` <br> 微笑|
+| **[Anger](Gameplay.ExpressionType.md#anger)** = ``4`` <br> |
+| **[Awkward](Gameplay.ExpressionType.md#awkward)** = ``5`` <br> |
+| **[Cute](Gameplay.ExpressionType.md#cute)** = ``8`` <br> |
+| **[Default](Gameplay.ExpressionType.md#default)** = ``0`` <br> |
+| **[Doubt](Gameplay.ExpressionType.md#doubt)** = ``9`` <br> |
+| **[Happy](Gameplay.ExpressionType.md#happy)** = ``2`` <br> |
+| **[Laugh](Gameplay.ExpressionType.md#laugh)** = ``6`` <br> |
+| **[Mischievous](Gameplay.ExpressionType.md#mischievous)** = ``7`` <br> |
+| **[Sad](Gameplay.ExpressionType.md#sad)** = ``3`` <br> |
+| **[Smile](Gameplay.ExpressionType.md#smile)** = ``1`` <br> |
 
 ## Enumeration Members
 

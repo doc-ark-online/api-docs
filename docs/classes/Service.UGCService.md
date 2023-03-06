@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / UGCService
+[Scripiting](../groups/Scripiting.Scripiting.md) / UGCService
 
 # UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 
@@ -16,17 +16,17 @@
 
 | Methods |
 | :-----|
-| **[createNewLocalGameFromTemplate](Service.UGCService.md#createnewlocalgamefromtemplate)**(`Record`<`string`, `unknown`\>): `Promise`<`Record`<`string`, `unknown`\>\> <br> 以指定模板创建本地工程，并获取工程路径|
+| **[createNewLocalGameFromTemplate](Service.UGCService.md#createnewlocalgamefromtemplate)**(`targetTemplateData`: `Record`<`string`, `unknown`\>): `Promise`<`Record`<`string`, `unknown`\>\> <br> 以指定模板创建本地工程，并获取工程路径|
 | **[requestLocalUGCGameList](Service.UGCService.md#requestlocalugcgamelist)**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取当前手机本地的UGC工程列表|
-| **[requestPublishedUGCGameList](Service.UGCService.md#requestpublishedugcgamelist)**(`string`): `Promise`<`Record`<`string`, `unknown`\>\> <br> 获取当前玩家已发布的UGC游戏列表|
-| **[requestUGCTemplateList](Service.UGCService.md#requestugctemplatelist)**(`string`): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取模板列表，可以分页方式查询|
+| **[requestPublishedUGCGameList](Service.UGCService.md#requestpublishedugcgamelist)**(`lastId?`: `string`): `Promise`<`Record`<`string`, `unknown`\>\> <br> 获取当前玩家已发布的UGC游戏列表|
+| **[requestUGCTemplateList](Service.UGCService.md#requestugctemplatelist)**(`lastId?`: `string`): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取模板列表，可以分页方式查询|
 | **[getInstance](Service.UGCService.md#getinstance)**(): [`UGCService`](Service.UGCService.md) <br> 获取用户建造管理器全局实例|
 
 ## Methods
 
 ### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
-• **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
+• **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="client" />
 
 以指定模板创建本地工程，并获取工程路径
 
@@ -62,7 +62,7 @@ ___
 
 ### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
-• **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
+• **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="client" />
 
 获取当前手机本地的UGC工程列表
 
@@ -78,7 +78,7 @@ ___
 
 使用示例: 模板信息包含如下字段:
 ```ts
-gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // mw的游戏id
+gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // 游戏id
 path: "data/data/local",
 parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
 ```
@@ -93,7 +93,7 @@ ___
 
 ### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
-• **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="other" />
+• **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="client" />
 
 获取当前玩家已发布的UGC游戏列表
 
@@ -138,7 +138,7 @@ ___
 
 ### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
-• **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="other" />
+• **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="client" />
 
 获取模板列表，可以分页方式查询
 
@@ -185,7 +185,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`UGCService`](Service.UGCService.md) 
 
 获取用户建造管理器全局实例
 

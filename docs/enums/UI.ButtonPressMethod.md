@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ButtonPressMethod
+[Gui](../groups/Gui.Gui.md) / ButtonPressMethod
 
 # ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[ButtonPress](UI.ButtonPressMethod.md#buttonpress)** = ``1`` <br> 按下按钮后，单击将立即触发。|
-| **[ButtonRelease](UI.ButtonPressMethod.md#buttonrelease)** = ``2`` <br> 当焦点按钮上发生按钮释放时，始终会触发单击，|
-| **[DownAndUp](UI.ButtonPressMethod.md#downandup)** = ``0`` <br> 用户必须按下按钮，然后在按钮具有焦点时释放，以触发单击。|
+| **[ButtonPress](UI.ButtonPressMethod.md#buttonpress)** = ``1`` <br> |
+| **[ButtonRelease](UI.ButtonPressMethod.md#buttonrelease)** = ``2`` <br> |
+| **[DownAndUp](UI.ButtonPressMethod.md#downandup)** = ``0`` <br> |
 
 ## Enumeration Members
 

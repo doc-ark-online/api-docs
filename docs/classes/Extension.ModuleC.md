@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / ModuleC
+[Utility](../groups/Utility.Utility.md) / ModuleC
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
@@ -15,7 +15,7 @@
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `S` | extends [`SubdataBase`](Extension.SubdataBase.md)<`any`\> |
+| `S` | extends [`Subdata`](Extension.Subdata.md) |
 
 ## Hierarchy
 
@@ -43,17 +43,17 @@
 | :-----|
 | **[onAwake](Extension.ModuleC.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](Extension.ModuleC.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
-| **[onEnterScene](Extension.ModuleC.md#onenterscene)**(`number`): `void` <br> 生命周期方法-进入场景调用|
-| **[onExecute](Extension.ModuleC.md#onexecute)**(`number`, `any`[]): `void` <br> 外部调用本模块的某个操作|
+| **[onEnterScene](Extension.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void` <br> 生命周期方法-进入场景调用|
+| **[onExecute](Extension.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
 | **[onStart](Extension.ModuleC.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
-| **[onUpdate](Extension.ModuleC.md#onupdate)**(`number`): `void` <br> 生命周期方法-刷新模块调用|
+| **[onUpdate](Extension.ModuleC.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
 | `T` | `T` |
-| `S` | extends [`SubdataBase`](Extension.SubdataBase.md)<`any`, `S`\> |
+| `S` | extends [`Subdata`](Extension.Subdata.md)<`S`\> |
 
 ## Accessors
 
@@ -72,7 +72,7 @@ currentPlayer的模块数据
 
 ### onAwake <Score text="onAwake" /> 
 
-• `Protected` **onAwake**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onAwake**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-创建模块时调用
 
@@ -82,7 +82,7 @@ ___
 
 ### onDestroy <Score text="onDestroy" /> 
 
-• `Protected` **onDestroy**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onDestroy**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-销毁模块调用
 
@@ -92,7 +92,7 @@ ___
 
 ### onEnterScene <Score text="onEnterScene" /> 
 
-• `Protected` **onEnterScene**(`sceneType`): `void` <Badge type="tip" text="other" />
+• `Protected` **onEnterScene**(`sceneType`): `void` <Badge type="tip" text="client" />
 
 生命周期方法-进入场景调用
 
@@ -108,7 +108,7 @@ ___
 
 ### onExecute <Score text="onExecute" /> 
 
-• `Protected` **onExecute**(`type`, `...params`): `void` <Badge type="tip" text="other" />
+• `Protected` **onExecute**(`type`, `...params`): `void` <Badge type="tip" text="client" />
 
 外部调用本模块的某个操作
 
@@ -125,7 +125,7 @@ ___
 
 ### onStart <Score text="onStart" /> 
 
-• `Protected` **onStart**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onStart**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-启动模块时调用
 
@@ -135,7 +135,7 @@ ___
 
 ### onUpdate <Score text="onUpdate" /> 
 
-• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="other" />
+• `Protected` **onUpdate**(`dt`): `void` <Badge type="tip" text="client" />
 
 生命周期方法-刷新模块调用
 

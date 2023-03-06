@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / WidgetSpaceMode
+[Gui](../groups/Gui.Gui.md) / WidgetSpaceMode
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
@@ -8,9 +8,9 @@ UI空间位置枚举
 
 | Enumeration Members |
 | :-----|
-| **[OverheadUI](Gameplay.WidgetSpaceMode.md#overheadui)** = ``2`` <br> 头顶UI|
-| **[Screen](Gameplay.WidgetSpaceMode.md#screen)** = ``1`` <br> 屏幕空间|
-| **[World](Gameplay.WidgetSpaceMode.md#world)** = ``0`` <br> 世界空间|
+| **[OverheadUI](Gameplay.WidgetSpaceMode.md#overheadui)** = ``2`` <br> |
+| **[Screen](Gameplay.WidgetSpaceMode.md#screen)** = ``1`` <br> |
+| **[World](Gameplay.WidgetSpaceMode.md#world)** = ``0`` <br> |
 
 ## Enumeration Members
 

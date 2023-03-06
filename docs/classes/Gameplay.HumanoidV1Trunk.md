@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1Trunk
+[Avatar](../groups/Avatar.Avatar.md) / HumanoidV1Trunk
 
 # HumanoidV1Trunk <Badge type="tip" text="Class" /> <Score text="HumanoidV1Trunk" />
 
@@ -20,7 +20,7 @@
 | Methods |
 | :-----|
 | **[getMesh](Gameplay.HumanoidV1Part.md#getmesh)**(): `string` <br> 获取部位模型|
-| **[setMesh](Gameplay.HumanoidV1Part.md#setmesh)**(`string`, `boolean`): `void` <br> 设置衣服模型|
+| **[setMesh](Gameplay.HumanoidV1Part.md#setmesh)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置衣服模型|
 :::
 
 

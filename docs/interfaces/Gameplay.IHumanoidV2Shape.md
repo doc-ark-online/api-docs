@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IHumanoidV2Shape
+[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2Shape
 
 # IHumanoidV2Shape <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2Shape" />
 
@@ -93,93 +93,93 @@
 | **[getWaistStretch](Gameplay.IHumanoidV2Shape.md#getwaiststretch)**(): `number` <br> 获取腰部拉伸|
 | **[getWaistThickness](Gameplay.IHumanoidV2Shape.md#getwaistthickness)**(): `number` <br> 获取腰的前后宽度|
 | **[getWaistWidth](Gameplay.IHumanoidV2Shape.md#getwaistwidth)**(): `number` <br> 获取腰的左右宽度|
-| **[setBreastHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setbreasthorizontalposition)**(`number`, `boolean`): `void` <br> 调整胸部左右位置|
-| **[setBreastLength](Gameplay.IHumanoidV2Shape.md#setbreastlength)**(`number`, `boolean`): `void` <br> 调整胸部长度|
-| **[setBreastScale](Gameplay.IHumanoidV2Shape.md#setbreastscale)**(`number`, `boolean`): `void` <br> 调整胸部整体大小；|
-| **[setBreastStretch](Gameplay.IHumanoidV2Shape.md#setbreaststretch)**(`number`, `boolean`): `void` <br> 设置胸部拉伸|
-| **[setBreastVerticalPosition](Gameplay.IHumanoidV2Shape.md#setbreastverticalposition)**(`number`, `boolean`): `void` <br> 调整胸部上下位置|
-| **[setBrowGap](Gameplay.IHumanoidV2Shape.md#setbrowgap)**(`number`, `boolean`): `void` <br> 设置眉间距|
-| **[setBrowHeight](Gameplay.IHumanoidV2Shape.md#setbrowheight)**(`number`, `boolean`): `void` <br> 设置眉毛上下移动|
-| **[setBrowInboardShape](Gameplay.IHumanoidV2Shape.md#setbrowinboardshape)**(`number`, `boolean`): `void` <br> 设置眉毛内侧角度|
-| **[setBrowOutsideShape](Gameplay.IHumanoidV2Shape.md#setbrowoutsideshape)**(`number`, `boolean`): `void` <br> 设置眉毛外侧形状|
-| **[setBrowRotation](Gameplay.IHumanoidV2Shape.md#setbrowrotation)**(`number`, `boolean`): `void` <br> 设置眉毛角度|
-| **[setCanthusHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setcanthushorizontalposition)**(`number`, `boolean`): `void` <br> 设置眼角左右移动|
-| **[setCanthusVerticalPosition](Gameplay.IHumanoidV2Shape.md#setcanthusverticalposition)**(`number`, `boolean`): `void` <br> 设置外眼角上下移动|
-| **[setCharacterHeight](Gameplay.IHumanoidV2Shape.md#setcharacterheight)**(`number`, `boolean`): `void` <br> 设置角色身高|
-| **[setCheekBoneRange](Gameplay.IHumanoidV2Shape.md#setcheekbonerange)**(`number`, `boolean`): `void` <br> 设置颧骨前后移动|
-| **[setCheekBoneWidth](Gameplay.IHumanoidV2Shape.md#setcheekbonewidth)**(`number`, `boolean`): `void` <br> 设置颧骨横向宽度|
-| **[setCheekHeight](Gameplay.IHumanoidV2Shape.md#setcheekheight)**(`number`, `boolean`): `void` <br> 设置脸颊上下移动|
-| **[setCheekRange](Gameplay.IHumanoidV2Shape.md#setcheekrange)**(`number`, `boolean`): `void` <br> 设置脸颊前后移动|
-| **[setCheekWidth](Gameplay.IHumanoidV2Shape.md#setcheekwidth)**(`number`, `boolean`): `void` <br> 设置脸颊宽度|
-| **[setEarRoll](Gameplay.IHumanoidV2Shape.md#setearroll)**(`number`, `boolean`): `void` <br> 调整耳朵左右旋转|
-| **[setEarScale](Gameplay.IHumanoidV2Shape.md#setearscale)**(`number`, `boolean`): `void` <br> 调整耳朵大小|
-| **[setEarYaw](Gameplay.IHumanoidV2Shape.md#setearyaw)**(`number`, `boolean`): `void` <br> 调整耳朵前后旋转|
-| **[setEyesGap](Gameplay.IHumanoidV2Shape.md#seteyesgap)**(`number`, `boolean`): `void` <br> 设置眼睛间距|
-| **[setEyesHeight](Gameplay.IHumanoidV2Shape.md#seteyesheight)**(`number`, `boolean`): `void` <br> 设置眼睛上下移动|
-| **[setEyesLength](Gameplay.IHumanoidV2Shape.md#seteyeslength)**(`number`, `boolean`): `void` <br> 眼睛长度|
-| **[setEyesRange](Gameplay.IHumanoidV2Shape.md#seteyesrange)**(`number`, `boolean`): `void` <br> 设置眼睛前后移动|
-| **[setEyesRotation](Gameplay.IHumanoidV2Shape.md#seteyesrotation)**(`number`, `boolean`): `void` <br> 设置眼睛角度|
-| **[setEyesWidth](Gameplay.IHumanoidV2Shape.md#seteyeswidth)**(`number`, `boolean`): `void` <br> 设置眼睛左右宽度|
-| **[setFaceWidth](Gameplay.IHumanoidV2Shape.md#setfacewidth)**(`number`, `boolean`): `void` <br> 调整头部整体宽度|
-| **[setGroinThickness](Gameplay.IHumanoidV2Shape.md#setgrointhickness)**(`number`, `boolean`): `void` <br> 设置胯宽度前后|
-| **[setGroinWidth](Gameplay.IHumanoidV2Shape.md#setgroinwidth)**(`number`, `boolean`): `void` <br> 设置胯宽度左右|
-| **[setHeadScale](Gameplay.IHumanoidV2Shape.md#setheadscale)**(`number`, `boolean`): `void` <br> 设置角色头部大小|
-| **[setJawLength](Gameplay.IHumanoidV2Shape.md#setjawlength)**(`number`, `boolean`): `void` <br> 调整下巴长度|
-| **[setJawRange](Gameplay.IHumanoidV2Shape.md#setjawrange)**(`number`, `boolean`): `void` <br> 调整下巴前后移动|
-| **[setJawSmooth](Gameplay.IHumanoidV2Shape.md#setjawsmooth)**(`number`, `boolean`): `void` <br> 调整下巴圆度|
-| **[setJawVertexHeight](Gameplay.IHumanoidV2Shape.md#setjawvertexheight)**(`number`, `boolean`): `void` <br> 调整下巴尖上下移动|
-| **[setJawVertexRange](Gameplay.IHumanoidV2Shape.md#setjawvertexrange)**(`number`, `boolean`): `void` <br> 调整下巴尖前后移动|
-| **[setJawVertexWidth](Gameplay.IHumanoidV2Shape.md#setjawvertexwidth)**(`number`, `boolean`): `void` <br> 调整下巴尖宽度|
-| **[setLowerArmsStretch](Gameplay.IHumanoidV2Shape.md#setlowerarmsstretch)**(`number`, `boolean`): `void` <br> 设置小臂的拉伸|
-| **[setLowerArmsThickness](Gameplay.IHumanoidV2Shape.md#setlowerarmsthickness)**(`number`, `boolean`): `void` <br> 设置小臂前后方向的宽度|
-| **[setLowerArmsWidth](Gameplay.IHumanoidV2Shape.md#setlowerarmswidth)**(`number`, `boolean`): `void` <br> 设置小臂左右方向的宽度|
-| **[setLowerFaceRange](Gameplay.IHumanoidV2Shape.md#setlowerfacerange)**(`number`, `boolean`): `void` <br> 设置下半脸前后|
-| **[setLowerFaceWidth](Gameplay.IHumanoidV2Shape.md#setlowerfacewidth)**(`number`, `boolean`): `void` <br> 设置下半脸的宽度|
-| **[setLowerJawRange](Gameplay.IHumanoidV2Shape.md#setlowerjawrange)**(`number`, `boolean`): `void` <br> 调整下颚骨前后移动|
-| **[setLowerJawWidth](Gameplay.IHumanoidV2Shape.md#setlowerjawwidth)**(`number`, `boolean`): `void` <br> 调整下颚骨宽度|
-| **[setLowerMouthThickness](Gameplay.IHumanoidV2Shape.md#setlowermouththickness)**(`number`, `boolean`): `void` <br> 设置下嘴唇薄厚|
-| **[setLowerStretch](Gameplay.IHumanoidV2Shape.md#setlowerstretch)**(`number`, `boolean`): `void` <br> 调整耳朵下部拉伸|
-| **[setMouthHeight](Gameplay.IHumanoidV2Shape.md#setmouthheight)**(`number`, `boolean`): `void` <br> 设置嘴巴上下位置|
-| **[setMouthRange](Gameplay.IHumanoidV2Shape.md#setmouthrange)**(`number`, `boolean`): `void` <br> 设置嘴巴前后移动|
-| **[setMouthShape](Gameplay.IHumanoidV2Shape.md#setmouthshape)**(`number`, `boolean`): `void` <br> 调整嘴巴形状|
-| **[setMouthWidth](Gameplay.IHumanoidV2Shape.md#setmouthwidth)**(`number`, `boolean`): `void` <br> 设置嘴巴宽度|
-| **[setNeckStretch](Gameplay.IHumanoidV2Shape.md#setneckstretch)**(`number`, `boolean`): `void` <br> 设置脖子拉伸|
-| **[setNeckThickness](Gameplay.IHumanoidV2Shape.md#setneckthickness)**(`number`, `boolean`): `void` <br> 设置脖子前后的宽度|
-| **[setNeckWidth](Gameplay.IHumanoidV2Shape.md#setneckwidth)**(`number`, `boolean`): `void` <br> 调整脖子的左右宽度|
-| **[setNoseHeight](Gameplay.IHumanoidV2Shape.md#setnoseheight)**(`number`, `boolean`): `void` <br> 设置鼻梁高度|
-| **[setNoseProtrusion](Gameplay.IHumanoidV2Shape.md#setnoseprotrusion)**(`number`, `boolean`): `void` <br> 设置鼻尖长度|
-| **[setNoseVerticalPosition](Gameplay.IHumanoidV2Shape.md#setnoseverticalposition)**(`number`, `boolean`): `void` <br> 设置鼻子上下移动|
-| **[setPupilHeight](Gameplay.IHumanoidV2Shape.md#setpupilheight)**(`number`, `boolean`): `void` <br> 设置瞳孔高度|
-| **[setPupilHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setpupilhorizontalposition)**(`number`, `boolean`): `void` <br> 设置瞳孔左右位置|
-| **[setPupilVerticalPosition](Gameplay.IHumanoidV2Shape.md#setpupilverticalposition)**(`number`, `boolean`): `void` <br> 设置瞳孔上下位置|
-| **[setPupilWidth](Gameplay.IHumanoidV2Shape.md#setpupilwidth)**(`number`, `boolean`): `void` <br> 设置瞳孔宽度|
-| **[setRibThickness](Gameplay.IHumanoidV2Shape.md#setribthickness)**(`number`, `boolean`): `void` <br> 设置肋骨的前后宽度|
-| **[setRibWidth](Gameplay.IHumanoidV2Shape.md#setribwidth)**(`number`, `boolean`): `void` <br> 设置肋骨的左右宽度|
-| **[setShankScaleX](Gameplay.IHumanoidV2Shape.md#setshankscalex)**(`number`, `boolean`): `void` <br> 设置小腿粗细左右|
-| **[setShankScaleZ](Gameplay.IHumanoidV2Shape.md#setshankscalez)**(`number`, `boolean`): `void` <br> 设置小腿粗细前后|
-| **[setShankStretch](Gameplay.IHumanoidV2Shape.md#setshankstretch)**(`number`, `boolean`): `void` <br> 设置小腿拉伸|
-| **[setShoulderArmThickness](Gameplay.IHumanoidV2Shape.md#setshoulderarmthickness)**(`number`, `boolean`): `void` <br> 设置肩膀的前后宽度|
-| **[setShoulderArmWidth](Gameplay.IHumanoidV2Shape.md#setshoulderarmwidth)**(`number`, `boolean`): `void` <br> 设置肩膀的左右宽度|
-| **[setShoulderThickness](Gameplay.IHumanoidV2Shape.md#setshoulderthickness)**(`number`, `boolean`): `void` <br> 设置肩膀的前后宽度|
-| **[setShoulderWidth](Gameplay.IHumanoidV2Shape.md#setshoulderwidth)**(`number`, `boolean`): `void` <br> 设置肩膀的宽度|
-| **[setThighStretch](Gameplay.IHumanoidV2Shape.md#setthighstretch)**(`number`, `boolean`): `void` <br> 设置大腿拉伸|
-| **[setThighThicknessX](Gameplay.IHumanoidV2Shape.md#setthighthicknessx)**(`number`, `boolean`): `void` <br> 设置大腿粗细左右|
-| **[setThighThicknessZ](Gameplay.IHumanoidV2Shape.md#setthighthicknessz)**(`number`, `boolean`): `void` <br> 设置大腿粗细前后|
-| **[setUpperArmsStretch](Gameplay.IHumanoidV2Shape.md#setupperarmsstretch)**(`number`, `boolean`): `void` <br> 设置大臂的拉伸|
-| **[setUpperArmsThickness](Gameplay.IHumanoidV2Shape.md#setupperarmsthickness)**(`number`, `boolean`): `void` <br> 设置大臂前后方向的宽度|
-| **[setUpperArmsWidth](Gameplay.IHumanoidV2Shape.md#setupperarmswidth)**(`number`, `boolean`): `void` <br> 设置大臂左右方向的宽度|
-| **[setUpperFaceRange](Gameplay.IHumanoidV2Shape.md#setupperfacerange)**(`number`, `boolean`): `void` <br> 调整上半脸前后移动|
-| **[setUpperMouthThickness](Gameplay.IHumanoidV2Shape.md#setuppermouththickness)**(`number`, `boolean`): `void` <br> 设置上嘴唇薄厚|
-| **[setUpperStretch](Gameplay.IHumanoidV2Shape.md#setupperstretch)**(`number`, `boolean`): `void` <br> 调整耳朵上部拉伸|
-| **[setWaistStretch](Gameplay.IHumanoidV2Shape.md#setwaiststretch)**(`number`, `boolean`): `void` <br> 设置腰部拉伸|
-| **[setWaistThickness](Gameplay.IHumanoidV2Shape.md#setwaistthickness)**(`number`, `boolean`): `void` <br> 设置腰的前后宽度|
-| **[setWaistWidth](Gameplay.IHumanoidV2Shape.md#setwaistwidth)**(`number`, `boolean`): `void` <br> 设置腰的左右宽度|
+| **[setBreastHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setbreasthorizontalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整胸部左右位置|
+| **[setBreastLength](Gameplay.IHumanoidV2Shape.md#setbreastlength)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整胸部长度|
+| **[setBreastScale](Gameplay.IHumanoidV2Shape.md#setbreastscale)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整胸部整体大小；|
+| **[setBreastStretch](Gameplay.IHumanoidV2Shape.md#setbreaststretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置胸部拉伸|
+| **[setBreastVerticalPosition](Gameplay.IHumanoidV2Shape.md#setbreastverticalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整胸部上下位置|
+| **[setBrowGap](Gameplay.IHumanoidV2Shape.md#setbrowgap)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眉间距|
+| **[setBrowHeight](Gameplay.IHumanoidV2Shape.md#setbrowheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眉毛上下移动|
+| **[setBrowInboardShape](Gameplay.IHumanoidV2Shape.md#setbrowinboardshape)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眉毛内侧角度|
+| **[setBrowOutsideShape](Gameplay.IHumanoidV2Shape.md#setbrowoutsideshape)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眉毛外侧形状|
+| **[setBrowRotation](Gameplay.IHumanoidV2Shape.md#setbrowrotation)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眉毛角度|
+| **[setCanthusHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setcanthushorizontalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼角左右移动|
+| **[setCanthusVerticalPosition](Gameplay.IHumanoidV2Shape.md#setcanthusverticalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置外眼角上下移动|
+| **[setCharacterHeight](Gameplay.IHumanoidV2Shape.md#setcharacterheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置角色身高|
+| **[setCheekBoneRange](Gameplay.IHumanoidV2Shape.md#setcheekbonerange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置颧骨前后移动|
+| **[setCheekBoneWidth](Gameplay.IHumanoidV2Shape.md#setcheekbonewidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置颧骨横向宽度|
+| **[setCheekHeight](Gameplay.IHumanoidV2Shape.md#setcheekheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置脸颊上下移动|
+| **[setCheekRange](Gameplay.IHumanoidV2Shape.md#setcheekrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置脸颊前后移动|
+| **[setCheekWidth](Gameplay.IHumanoidV2Shape.md#setcheekwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置脸颊宽度|
+| **[setEarRoll](Gameplay.IHumanoidV2Shape.md#setearroll)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整耳朵左右旋转|
+| **[setEarScale](Gameplay.IHumanoidV2Shape.md#setearscale)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整耳朵大小|
+| **[setEarYaw](Gameplay.IHumanoidV2Shape.md#setearyaw)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整耳朵前后旋转|
+| **[setEyesGap](Gameplay.IHumanoidV2Shape.md#seteyesgap)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼睛间距|
+| **[setEyesHeight](Gameplay.IHumanoidV2Shape.md#seteyesheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼睛上下移动|
+| **[setEyesLength](Gameplay.IHumanoidV2Shape.md#seteyeslength)**(`value`: `number`, `sync`: `boolean`): `void` <br> 眼睛长度|
+| **[setEyesRange](Gameplay.IHumanoidV2Shape.md#seteyesrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼睛前后移动|
+| **[setEyesRotation](Gameplay.IHumanoidV2Shape.md#seteyesrotation)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼睛角度|
+| **[setEyesWidth](Gameplay.IHumanoidV2Shape.md#seteyeswidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置眼睛左右宽度|
+| **[setFaceWidth](Gameplay.IHumanoidV2Shape.md#setfacewidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整头部整体宽度|
+| **[setGroinThickness](Gameplay.IHumanoidV2Shape.md#setgrointhickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置胯宽度前后|
+| **[setGroinWidth](Gameplay.IHumanoidV2Shape.md#setgroinwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置胯宽度左右|
+| **[setHeadScale](Gameplay.IHumanoidV2Shape.md#setheadscale)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置角色头部大小|
+| **[setJawLength](Gameplay.IHumanoidV2Shape.md#setjawlength)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴长度|
+| **[setJawRange](Gameplay.IHumanoidV2Shape.md#setjawrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴前后移动|
+| **[setJawSmooth](Gameplay.IHumanoidV2Shape.md#setjawsmooth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴圆度|
+| **[setJawVertexHeight](Gameplay.IHumanoidV2Shape.md#setjawvertexheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴尖上下移动|
+| **[setJawVertexRange](Gameplay.IHumanoidV2Shape.md#setjawvertexrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴尖前后移动|
+| **[setJawVertexWidth](Gameplay.IHumanoidV2Shape.md#setjawvertexwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下巴尖宽度|
+| **[setLowerArmsStretch](Gameplay.IHumanoidV2Shape.md#setlowerarmsstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小臂的拉伸|
+| **[setLowerArmsThickness](Gameplay.IHumanoidV2Shape.md#setlowerarmsthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小臂前后方向的宽度|
+| **[setLowerArmsWidth](Gameplay.IHumanoidV2Shape.md#setlowerarmswidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小臂左右方向的宽度|
+| **[setLowerFaceRange](Gameplay.IHumanoidV2Shape.md#setlowerfacerange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置下半脸前后|
+| **[setLowerFaceWidth](Gameplay.IHumanoidV2Shape.md#setlowerfacewidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置下半脸的宽度|
+| **[setLowerJawRange](Gameplay.IHumanoidV2Shape.md#setlowerjawrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下颚骨前后移动|
+| **[setLowerJawWidth](Gameplay.IHumanoidV2Shape.md#setlowerjawwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整下颚骨宽度|
+| **[setLowerMouthThickness](Gameplay.IHumanoidV2Shape.md#setlowermouththickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置下嘴唇薄厚|
+| **[setLowerStretch](Gameplay.IHumanoidV2Shape.md#setlowerstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整耳朵下部拉伸|
+| **[setMouthHeight](Gameplay.IHumanoidV2Shape.md#setmouthheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置嘴巴上下位置|
+| **[setMouthRange](Gameplay.IHumanoidV2Shape.md#setmouthrange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置嘴巴前后移动|
+| **[setMouthShape](Gameplay.IHumanoidV2Shape.md#setmouthshape)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整嘴巴形状|
+| **[setMouthWidth](Gameplay.IHumanoidV2Shape.md#setmouthwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置嘴巴宽度|
+| **[setNeckStretch](Gameplay.IHumanoidV2Shape.md#setneckstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置脖子拉伸|
+| **[setNeckThickness](Gameplay.IHumanoidV2Shape.md#setneckthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置脖子前后的宽度|
+| **[setNeckWidth](Gameplay.IHumanoidV2Shape.md#setneckwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整脖子的左右宽度|
+| **[setNoseHeight](Gameplay.IHumanoidV2Shape.md#setnoseheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置鼻梁高度|
+| **[setNoseProtrusion](Gameplay.IHumanoidV2Shape.md#setnoseprotrusion)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置鼻尖长度|
+| **[setNoseVerticalPosition](Gameplay.IHumanoidV2Shape.md#setnoseverticalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置鼻子上下移动|
+| **[setPupilHeight](Gameplay.IHumanoidV2Shape.md#setpupilheight)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔高度|
+| **[setPupilHorizontalPosition](Gameplay.IHumanoidV2Shape.md#setpupilhorizontalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔左右位置|
+| **[setPupilVerticalPosition](Gameplay.IHumanoidV2Shape.md#setpupilverticalposition)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔上下位置|
+| **[setPupilWidth](Gameplay.IHumanoidV2Shape.md#setpupilwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔宽度|
+| **[setRibThickness](Gameplay.IHumanoidV2Shape.md#setribthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肋骨的前后宽度|
+| **[setRibWidth](Gameplay.IHumanoidV2Shape.md#setribwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肋骨的左右宽度|
+| **[setShankScaleX](Gameplay.IHumanoidV2Shape.md#setshankscalex)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小腿粗细左右|
+| **[setShankScaleZ](Gameplay.IHumanoidV2Shape.md#setshankscalez)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小腿粗细前后|
+| **[setShankStretch](Gameplay.IHumanoidV2Shape.md#setshankstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置小腿拉伸|
+| **[setShoulderArmThickness](Gameplay.IHumanoidV2Shape.md#setshoulderarmthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肩膀的前后宽度|
+| **[setShoulderArmWidth](Gameplay.IHumanoidV2Shape.md#setshoulderarmwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肩膀的左右宽度|
+| **[setShoulderThickness](Gameplay.IHumanoidV2Shape.md#setshoulderthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肩膀的前后宽度|
+| **[setShoulderWidth](Gameplay.IHumanoidV2Shape.md#setshoulderwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置肩膀的宽度|
+| **[setThighStretch](Gameplay.IHumanoidV2Shape.md#setthighstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大腿拉伸|
+| **[setThighThicknessX](Gameplay.IHumanoidV2Shape.md#setthighthicknessx)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大腿粗细左右|
+| **[setThighThicknessZ](Gameplay.IHumanoidV2Shape.md#setthighthicknessz)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大腿粗细前后|
+| **[setUpperArmsStretch](Gameplay.IHumanoidV2Shape.md#setupperarmsstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大臂的拉伸|
+| **[setUpperArmsThickness](Gameplay.IHumanoidV2Shape.md#setupperarmsthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大臂前后方向的宽度|
+| **[setUpperArmsWidth](Gameplay.IHumanoidV2Shape.md#setupperarmswidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置大臂左右方向的宽度|
+| **[setUpperFaceRange](Gameplay.IHumanoidV2Shape.md#setupperfacerange)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整上半脸前后移动|
+| **[setUpperMouthThickness](Gameplay.IHumanoidV2Shape.md#setuppermouththickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置上嘴唇薄厚|
+| **[setUpperStretch](Gameplay.IHumanoidV2Shape.md#setupperstretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 调整耳朵上部拉伸|
+| **[setWaistStretch](Gameplay.IHumanoidV2Shape.md#setwaiststretch)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置腰部拉伸|
+| **[setWaistThickness](Gameplay.IHumanoidV2Shape.md#setwaistthickness)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置腰的前后宽度|
+| **[setWaistWidth](Gameplay.IHumanoidV2Shape.md#setwaistwidth)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置腰的左右宽度|
 
 ## Methods
 
 ### getBreastHorizontalPosition <Score text="getBreastHorizontalPosition" /> 
 
-• **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="client" />
 
 调整胸部左右位置
 
@@ -194,7 +194,7 @@ ___
 
 ### getBreastLength <Score text="getBreastLength" /> 
 
-• **getBreastLength**(): `number` <Badge type="tip" text="other" />
+• **getBreastLength**(): `number` <Badge type="tip" text="client" />
 
 调整胸部长度
 
@@ -209,7 +209,7 @@ ___
 
 ### getBreastScale <Score text="getBreastScale" /> 
 
-• **getBreastScale**(): `number` <Badge type="tip" text="other" />
+• **getBreastScale**(): `number` <Badge type="tip" text="client" />
 
 调整胸部整体大小；
 
@@ -224,7 +224,7 @@ ___
 
 ### getBreastStretch <Score text="getBreastStretch" /> 
 
-• **getBreastStretch**(): `number` <Badge type="tip" text="other" />
+• **getBreastStretch**(): `number` <Badge type="tip" text="client" />
 
 获取胸部拉伸
 
@@ -239,7 +239,7 @@ ___
 
 ### getBreastVerticalPosition <Score text="getBreastVerticalPosition" /> 
 
-• **getBreastVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getBreastVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 调整胸部上下位置
 
@@ -254,7 +254,7 @@ ___
 
 ### getBrowGap <Score text="getBrowGap" /> 
 
-• **getBrowGap**(): `number` <Badge type="tip" text="other" />
+• **getBrowGap**(): `number` <Badge type="tip" text="client" />
 
 获取眉间距
 
@@ -269,7 +269,7 @@ ___
 
 ### getBrowHeight <Score text="getBrowHeight" /> 
 
-• **getBrowHeight**(): `number` <Badge type="tip" text="other" />
+• **getBrowHeight**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛上下移动
 
@@ -284,7 +284,7 @@ ___
 
 ### getBrowInboardShape <Score text="getBrowInboardShape" /> 
 
-• **getBrowInboardShape**(): `number` <Badge type="tip" text="other" />
+• **getBrowInboardShape**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛内侧角度
 
@@ -299,7 +299,7 @@ ___
 
 ### getBrowOutsideShape <Score text="getBrowOutsideShape" /> 
 
-• **getBrowOutsideShape**(): `number` <Badge type="tip" text="other" />
+• **getBrowOutsideShape**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛外侧形状
 
@@ -314,7 +314,7 @@ ___
 
 ### getBrowRotation <Score text="getBrowRotation" /> 
 
-• **getBrowRotation**(): `number` <Badge type="tip" text="other" />
+• **getBrowRotation**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛角度
 
@@ -329,7 +329,7 @@ ___
 
 ### getCanthusHorizontalPosition <Score text="getCanthusHorizontalPosition" /> 
 
-• **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取眼角左右移动
 
@@ -344,7 +344,7 @@ ___
 
 ### getCanthusVerticalPosition <Score text="getCanthusVerticalPosition" /> 
 
-• **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取外眼角上下移动
 
@@ -359,7 +359,7 @@ ___
 
 ### getCharacterHeight <Score text="getCharacterHeight" /> 
 
-• **getCharacterHeight**(): `number` <Badge type="tip" text="other" />
+• **getCharacterHeight**(): `number` <Badge type="tip" text="client" />
 
 获取角色身高
 
@@ -374,7 +374,7 @@ ___
 
 ### getCheekBoneRange <Score text="getCheekBoneRange" /> 
 
-• **getCheekBoneRange**(): `number` <Badge type="tip" text="other" />
+• **getCheekBoneRange**(): `number` <Badge type="tip" text="client" />
 
 获取颧骨前后移动
 
@@ -389,7 +389,7 @@ ___
 
 ### getCheekBoneWidth <Score text="getCheekBoneWidth" /> 
 
-• **getCheekBoneWidth**(): `number` <Badge type="tip" text="other" />
+• **getCheekBoneWidth**(): `number` <Badge type="tip" text="client" />
 
 获取颧骨横向宽度
 
@@ -404,7 +404,7 @@ ___
 
 ### getCheekHeight <Score text="getCheekHeight" /> 
 
-• **getCheekHeight**(): `number` <Badge type="tip" text="other" />
+• **getCheekHeight**(): `number` <Badge type="tip" text="client" />
 
 获取脸颊上下移动
 
@@ -419,7 +419,7 @@ ___
 
 ### getCheekRange <Score text="getCheekRange" /> 
 
-• **getCheekRange**(): `number` <Badge type="tip" text="other" />
+• **getCheekRange**(): `number` <Badge type="tip" text="client" />
 
 获取脸颊前后移动
 
@@ -434,7 +434,7 @@ ___
 
 ### getCheekWidth <Score text="getCheekWidth" /> 
 
-• **getCheekWidth**(): `number` <Badge type="tip" text="other" />
+• **getCheekWidth**(): `number` <Badge type="tip" text="client" />
 
 获取脸颊宽度
 
@@ -449,7 +449,7 @@ ___
 
 ### getEarRoll <Score text="getEarRoll" /> 
 
-• **getEarRoll**(): `number` <Badge type="tip" text="other" />
+• **getEarRoll**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵左右旋转
 
@@ -464,7 +464,7 @@ ___
 
 ### getEarScale <Score text="getEarScale" /> 
 
-• **getEarScale**(): `number` <Badge type="tip" text="other" />
+• **getEarScale**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵大小
 
@@ -479,7 +479,7 @@ ___
 
 ### getEarYaw <Score text="getEarYaw" /> 
 
-• **getEarYaw**(): `number` <Badge type="tip" text="other" />
+• **getEarYaw**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵前后旋转
 
@@ -494,7 +494,7 @@ ___
 
 ### getEyesGap <Score text="getEyesGap" /> 
 
-• **getEyesGap**(): `number` <Badge type="tip" text="other" />
+• **getEyesGap**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛间距
 
@@ -509,7 +509,7 @@ ___
 
 ### getEyesHeight <Score text="getEyesHeight" /> 
 
-• **getEyesHeight**(): `number` <Badge type="tip" text="other" />
+• **getEyesHeight**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛上下移动
 
@@ -524,7 +524,7 @@ ___
 
 ### getEyesLength <Score text="getEyesLength" /> 
 
-• **getEyesLength**(): `number` <Badge type="tip" text="other" />
+• **getEyesLength**(): `number` <Badge type="tip" text="client" />
 
 眼睛长度
 
@@ -539,7 +539,7 @@ ___
 
 ### getEyesRange <Score text="getEyesRange" /> 
 
-• **getEyesRange**(): `number` <Badge type="tip" text="other" />
+• **getEyesRange**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛前后移动
 
@@ -554,7 +554,7 @@ ___
 
 ### getEyesRotation <Score text="getEyesRotation" /> 
 
-• **getEyesRotation**(): `number` <Badge type="tip" text="other" />
+• **getEyesRotation**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛角度
 
@@ -569,7 +569,7 @@ ___
 
 ### getEyesWidth <Score text="getEyesWidth" /> 
 
-• **getEyesWidth**(): `number` <Badge type="tip" text="other" />
+• **getEyesWidth**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛左右宽度
 
@@ -584,7 +584,7 @@ ___
 
 ### getFaceWidth <Score text="getFaceWidth" /> 
 
-• **getFaceWidth**(): `number` <Badge type="tip" text="other" />
+• **getFaceWidth**(): `number` <Badge type="tip" text="client" />
 
 调整头部整体宽度
 
@@ -599,7 +599,7 @@ ___
 
 ### getGroinThickness <Score text="getGroinThickness" /> 
 
-• **getGroinThickness**(): `number` <Badge type="tip" text="other" />
+• **getGroinThickness**(): `number` <Badge type="tip" text="client" />
 
 获取胯宽度前后
 
@@ -614,7 +614,7 @@ ___
 
 ### getGroinWidth <Score text="getGroinWidth" /> 
 
-• **getGroinWidth**(): `number` <Badge type="tip" text="other" />
+• **getGroinWidth**(): `number` <Badge type="tip" text="client" />
 
 获取胯宽度左右
 
@@ -629,11 +629,12 @@ ___
 
 ### getHeadScale <Score text="getHeadScale" /> 
 
-• **getHeadScale**(): `number` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
+• **getHeadScale**(): `number` <Badge type="tip" text="client" />
 
 获取角色头部大小
 
-客户端调用
+**`Effect`**
+
 
 
 #### Returns
@@ -646,7 +647,7 @@ ___
 
 ### getJawLength <Score text="getJawLength" /> 
 
-• **getJawLength**(): `number` <Badge type="tip" text="other" />
+• **getJawLength**(): `number` <Badge type="tip" text="client" />
 
 调整下巴长度
 
@@ -661,7 +662,7 @@ ___
 
 ### getJawRange <Score text="getJawRange" /> 
 
-• **getJawRange**(): `number` <Badge type="tip" text="other" />
+• **getJawRange**(): `number` <Badge type="tip" text="client" />
 
 调整下巴前后移动
 
@@ -676,7 +677,7 @@ ___
 
 ### getJawSmooth <Score text="getJawSmooth" /> 
 
-• **getJawSmooth**(): `number` <Badge type="tip" text="other" />
+• **getJawSmooth**(): `number` <Badge type="tip" text="client" />
 
 调整下巴圆度
 
@@ -691,7 +692,7 @@ ___
 
 ### getJawVertexHeight <Score text="getJawVertexHeight" /> 
 
-• **getJawVertexHeight**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexHeight**(): `number` <Badge type="tip" text="client" />
 
 调整下巴尖上下移动
 
@@ -706,7 +707,7 @@ ___
 
 ### getJawVertexRange <Score text="getJawVertexRange" /> 
 
-• **getJawVertexRange**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexRange**(): `number` <Badge type="tip" text="client" />
 
 调整下巴尖前后移动
 
@@ -721,7 +722,7 @@ ___
 
 ### getJawVertexWidth <Score text="getJawVertexWidth" /> 
 
-• **getJawVertexWidth**(): `number` <Badge type="tip" text="other" />
+• **getJawVertexWidth**(): `number` <Badge type="tip" text="client" />
 
 调整下巴尖宽度
 
@@ -736,7 +737,7 @@ ___
 
 ### getLowerArmsStretch <Score text="getLowerArmsStretch" /> 
 
-• **getLowerArmsStretch**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsStretch**(): `number` <Badge type="tip" text="client" />
 
 获取小臂的拉伸
 
@@ -751,7 +752,7 @@ ___
 
 ### getLowerArmsThickness <Score text="getLowerArmsThickness" /> 
 
-• **getLowerArmsThickness**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsThickness**(): `number` <Badge type="tip" text="client" />
 
 获取小臂前后方向的宽度
 
@@ -766,7 +767,7 @@ ___
 
 ### getLowerArmsWidth <Score text="getLowerArmsWidth" /> 
 
-• **getLowerArmsWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerArmsWidth**(): `number` <Badge type="tip" text="client" />
 
 获取小臂左右方向的宽度
 
@@ -781,7 +782,7 @@ ___
 
 ### getLowerFaceRange <Score text="getLowerFaceRange" /> 
 
-• **getLowerFaceRange**(): `number` <Badge type="tip" text="other" />
+• **getLowerFaceRange**(): `number` <Badge type="tip" text="client" />
 
 获取下半脸前后
 
@@ -796,7 +797,7 @@ ___
 
 ### getLowerFaceWidth <Score text="getLowerFaceWidth" /> 
 
-• **getLowerFaceWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerFaceWidth**(): `number` <Badge type="tip" text="client" />
 
 获取下半脸的宽度
 
@@ -811,7 +812,7 @@ ___
 
 ### getLowerJawRange <Score text="getLowerJawRange" /> 
 
-• **getLowerJawRange**(): `number` <Badge type="tip" text="other" />
+• **getLowerJawRange**(): `number` <Badge type="tip" text="client" />
 
 调整下颚骨前后移动
 
@@ -826,7 +827,7 @@ ___
 
 ### getLowerJawWidth <Score text="getLowerJawWidth" /> 
 
-• **getLowerJawWidth**(): `number` <Badge type="tip" text="other" />
+• **getLowerJawWidth**(): `number` <Badge type="tip" text="client" />
 
 调整下颚骨宽度
 
@@ -841,7 +842,7 @@ ___
 
 ### getLowerMouthThickness <Score text="getLowerMouthThickness" /> 
 
-• **getLowerMouthThickness**(): `number` <Badge type="tip" text="other" />
+• **getLowerMouthThickness**(): `number` <Badge type="tip" text="client" />
 
 获取下嘴唇薄厚
 
@@ -856,7 +857,7 @@ ___
 
 ### getLowerStretch <Score text="getLowerStretch" /> 
 
-• **getLowerStretch**(): `number` <Badge type="tip" text="other" />
+• **getLowerStretch**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵下部拉伸
 
@@ -871,7 +872,7 @@ ___
 
 ### getMouthHeight <Score text="getMouthHeight" /> 
 
-• **getMouthHeight**(): `number` <Badge type="tip" text="other" />
+• **getMouthHeight**(): `number` <Badge type="tip" text="client" />
 
 获取嘴巴上下位置
 
@@ -886,7 +887,7 @@ ___
 
 ### getMouthRange <Score text="getMouthRange" /> 
 
-• **getMouthRange**(): `number` <Badge type="tip" text="other" />
+• **getMouthRange**(): `number` <Badge type="tip" text="client" />
 
 获取嘴巴前后移动
 
@@ -901,7 +902,7 @@ ___
 
 ### getMouthShape <Score text="getMouthShape" /> 
 
-• **getMouthShape**(): `number` <Badge type="tip" text="other" />
+• **getMouthShape**(): `number` <Badge type="tip" text="client" />
 
 调整嘴巴形状
 
@@ -916,7 +917,7 @@ ___
 
 ### getMouthWidth <Score text="getMouthWidth" /> 
 
-• **getMouthWidth**(): `number` <Badge type="tip" text="other" />
+• **getMouthWidth**(): `number` <Badge type="tip" text="client" />
 
 获取嘴巴宽度
 
@@ -931,7 +932,7 @@ ___
 
 ### getNeckStretch <Score text="getNeckStretch" /> 
 
-• **getNeckStretch**(): `number` <Badge type="tip" text="other" />
+• **getNeckStretch**(): `number` <Badge type="tip" text="client" />
 
 获取脖子拉伸
 
@@ -946,7 +947,7 @@ ___
 
 ### getNeckThickness <Score text="getNeckThickness" /> 
 
-• **getNeckThickness**(): `number` <Badge type="tip" text="other" />
+• **getNeckThickness**(): `number` <Badge type="tip" text="client" />
 
 获取脖子前后的宽度
 
@@ -961,7 +962,7 @@ ___
 
 ### getNeckWidth <Score text="getNeckWidth" /> 
 
-• **getNeckWidth**(): `number` <Badge type="tip" text="other" />
+• **getNeckWidth**(): `number` <Badge type="tip" text="client" />
 
 调整脖子的左右宽度
 
@@ -976,7 +977,7 @@ ___
 
 ### getNoseHeight <Score text="getNoseHeight" /> 
 
-• **getNoseHeight**(): `number` <Badge type="tip" text="other" />
+• **getNoseHeight**(): `number` <Badge type="tip" text="client" />
 
 获取鼻梁高度
 
@@ -991,7 +992,7 @@ ___
 
 ### getNoseProtrusion <Score text="getNoseProtrusion" /> 
 
-• **getNoseProtrusion**(): `number` <Badge type="tip" text="other" />
+• **getNoseProtrusion**(): `number` <Badge type="tip" text="client" />
 
 获取鼻尖长度
 
@@ -1006,7 +1007,7 @@ ___
 
 ### getNoseVerticalPosition <Score text="getNoseVerticalPosition" /> 
 
-• **getNoseVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getNoseVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取鼻子上下移动
 
@@ -1021,7 +1022,7 @@ ___
 
 ### getPupilHeight <Score text="getPupilHeight" /> 
 
-• **getPupilHeight**(): `number` <Badge type="tip" text="other" />
+• **getPupilHeight**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔高度
 
@@ -1036,7 +1037,7 @@ ___
 
 ### getPupilHorizontalPosition <Score text="getPupilHorizontalPosition" /> 
 
-• **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="other" />
+• **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔左右位置
 
@@ -1051,7 +1052,7 @@ ___
 
 ### getPupilVerticalPosition <Score text="getPupilVerticalPosition" /> 
 
-• **getPupilVerticalPosition**(): `number` <Badge type="tip" text="other" />
+• **getPupilVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔上下位置
 
@@ -1066,7 +1067,7 @@ ___
 
 ### getPupilWidth <Score text="getPupilWidth" /> 
 
-• **getPupilWidth**(): `number` <Badge type="tip" text="other" />
+• **getPupilWidth**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔宽度
 
@@ -1081,7 +1082,7 @@ ___
 
 ### getRibThickness <Score text="getRibThickness" /> 
 
-• **getRibThickness**(): `number` <Badge type="tip" text="other" />
+• **getRibThickness**(): `number` <Badge type="tip" text="client" />
 
 获取肋骨的前后宽度
 
@@ -1096,7 +1097,7 @@ ___
 
 ### getRibWidth <Score text="getRibWidth" /> 
 
-• **getRibWidth**(): `number` <Badge type="tip" text="other" />
+• **getRibWidth**(): `number` <Badge type="tip" text="client" />
 
 获取肋骨的左右宽度
 
@@ -1111,7 +1112,7 @@ ___
 
 ### getShankScaleX <Score text="getShankScaleX" /> 
 
-• **getShankScaleX**(): `number` <Badge type="tip" text="other" />
+• **getShankScaleX**(): `number` <Badge type="tip" text="client" />
 
 获取小腿粗细左右
 
@@ -1126,7 +1127,7 @@ ___
 
 ### getShankScaleZ <Score text="getShankScaleZ" /> 
 
-• **getShankScaleZ**(): `number` <Badge type="tip" text="other" />
+• **getShankScaleZ**(): `number` <Badge type="tip" text="client" />
 
 获取小腿粗细前后
 
@@ -1141,7 +1142,7 @@ ___
 
 ### getShankStretch <Score text="getShankStretch" /> 
 
-• **getShankStretch**(): `number` <Badge type="tip" text="other" />
+• **getShankStretch**(): `number` <Badge type="tip" text="client" />
 
 获取小腿拉伸
 
@@ -1156,7 +1157,7 @@ ___
 
 ### getShoulderArmThickness <Score text="getShoulderArmThickness" /> 
 
-• **getShoulderArmThickness**(): `number` <Badge type="tip" text="other" />
+• **getShoulderArmThickness**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的前后宽度
 
@@ -1171,7 +1172,7 @@ ___
 
 ### getShoulderArmWidth <Score text="getShoulderArmWidth" /> 
 
-• **getShoulderArmWidth**(): `number` <Badge type="tip" text="other" />
+• **getShoulderArmWidth**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的左右宽度
 
@@ -1186,7 +1187,7 @@ ___
 
 ### getShoulderThickness <Score text="getShoulderThickness" /> 
 
-• **getShoulderThickness**(): `number` <Badge type="tip" text="other" />
+• **getShoulderThickness**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的前后宽度
 
@@ -1201,7 +1202,7 @@ ___
 
 ### getShoulderWidth <Score text="getShoulderWidth" /> 
 
-• **getShoulderWidth**(): `number` <Badge type="tip" text="other" />
+• **getShoulderWidth**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的宽度
 
@@ -1216,7 +1217,7 @@ ___
 
 ### getThighStretch <Score text="getThighStretch" /> 
 
-• **getThighStretch**(): `number` <Badge type="tip" text="other" />
+• **getThighStretch**(): `number` <Badge type="tip" text="client" />
 
 获取大腿拉伸
 
@@ -1231,7 +1232,7 @@ ___
 
 ### getThighThicknessX <Score text="getThighThicknessX" /> 
 
-• **getThighThicknessX**(): `number` <Badge type="tip" text="other" />
+• **getThighThicknessX**(): `number` <Badge type="tip" text="client" />
 
 获取大腿粗细左右
 
@@ -1246,7 +1247,7 @@ ___
 
 ### getThighThicknessZ <Score text="getThighThicknessZ" /> 
 
-• **getThighThicknessZ**(): `number` <Badge type="tip" text="other" />
+• **getThighThicknessZ**(): `number` <Badge type="tip" text="client" />
 
 获取大腿粗细前后
 
@@ -1261,7 +1262,7 @@ ___
 
 ### getUpperArmsStretch <Score text="getUpperArmsStretch" /> 
 
-• **getUpperArmsStretch**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsStretch**(): `number` <Badge type="tip" text="client" />
 
 获取大臂的拉伸
 
@@ -1276,7 +1277,7 @@ ___
 
 ### getUpperArmsThickness <Score text="getUpperArmsThickness" /> 
 
-• **getUpperArmsThickness**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsThickness**(): `number` <Badge type="tip" text="client" />
 
 获取大臂前后方向的宽度
 
@@ -1291,7 +1292,7 @@ ___
 
 ### getUpperArmsWidth <Score text="getUpperArmsWidth" /> 
 
-• **getUpperArmsWidth**(): `number` <Badge type="tip" text="other" />
+• **getUpperArmsWidth**(): `number` <Badge type="tip" text="client" />
 
 获取大臂左右方向的宽度
 
@@ -1306,7 +1307,7 @@ ___
 
 ### getUpperFaceRange <Score text="getUpperFaceRange" /> 
 
-• **getUpperFaceRange**(): `number` <Badge type="tip" text="other" />
+• **getUpperFaceRange**(): `number` <Badge type="tip" text="client" />
 
 调整上半脸前后移动
 
@@ -1321,7 +1322,7 @@ ___
 
 ### getUpperMouthThickness <Score text="getUpperMouthThickness" /> 
 
-• **getUpperMouthThickness**(): `number` <Badge type="tip" text="other" />
+• **getUpperMouthThickness**(): `number` <Badge type="tip" text="client" />
 
 获取上嘴唇薄厚
 
@@ -1336,7 +1337,7 @@ ___
 
 ### getUpperStretch <Score text="getUpperStretch" /> 
 
-• **getUpperStretch**(): `number` <Badge type="tip" text="other" />
+• **getUpperStretch**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵上部拉伸
 
@@ -1351,7 +1352,7 @@ ___
 
 ### getWaistStretch <Score text="getWaistStretch" /> 
 
-• **getWaistStretch**(): `number` <Badge type="tip" text="other" />
+• **getWaistStretch**(): `number` <Badge type="tip" text="client" />
 
 获取腰部拉伸
 
@@ -1366,7 +1367,7 @@ ___
 
 ### getWaistThickness <Score text="getWaistThickness" /> 
 
-• **getWaistThickness**(): `number` <Badge type="tip" text="other" />
+• **getWaistThickness**(): `number` <Badge type="tip" text="client" />
 
 获取腰的前后宽度
 
@@ -1381,7 +1382,7 @@ ___
 
 ### getWaistWidth <Score text="getWaistWidth" /> 
 
-• **getWaistWidth**(): `number` <Badge type="tip" text="other" />
+• **getWaistWidth**(): `number` <Badge type="tip" text="client" />
 
 获取腰的左右宽度
 
@@ -1396,7 +1397,7 @@ ___
 
 ### setBreastHorizontalPosition <Score text="setBreastHorizontalPosition" /> 
 
-• **setBreastHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastHorizontalPosition**(`value`, `sync`): `void` 
 
 调整胸部左右位置
 
@@ -1419,7 +1420,7 @@ ___
 
 ### setBreastLength <Score text="setBreastLength" /> 
 
-• **setBreastLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastLength**(`value`, `sync`): `void` 
 
 调整胸部长度
 
@@ -1442,7 +1443,7 @@ ___
 
 ### setBreastScale <Score text="setBreastScale" /> 
 
-• **setBreastScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastScale**(`value`, `sync`): `void` 
 
 调整胸部整体大小；
 
@@ -1465,7 +1466,7 @@ ___
 
 ### setBreastStretch <Score text="setBreastStretch" /> 
 
-• **setBreastStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastStretch**(`value`, `sync`): `void` 
 
 设置胸部拉伸
 
@@ -1488,7 +1489,7 @@ ___
 
 ### setBreastVerticalPosition <Score text="setBreastVerticalPosition" /> 
 
-• **setBreastVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBreastVerticalPosition**(`value`, `sync`): `void` 
 
 调整胸部上下位置
 
@@ -1512,7 +1513,7 @@ ___
 
 ### setBrowGap <Score text="setBrowGap" /> 
 
-• **setBrowGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowGap**(`value`, `sync`): `void` 
 
 设置眉间距
 
@@ -1535,7 +1536,7 @@ ___
 
 ### setBrowHeight <Score text="setBrowHeight" /> 
 
-• **setBrowHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowHeight**(`value`, `sync`): `void` 
 
 设置眉毛上下移动
 
@@ -1558,7 +1559,7 @@ ___
 
 ### setBrowInboardShape <Score text="setBrowInboardShape" /> 
 
-• **setBrowInboardShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowInboardShape**(`value`, `sync`): `void` 
 
 设置眉毛内侧角度
 
@@ -1581,7 +1582,7 @@ ___
 
 ### setBrowOutsideShape <Score text="setBrowOutsideShape" /> 
 
-• **setBrowOutsideShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowOutsideShape**(`value`, `sync`): `void` 
 
 设置眉毛外侧形状
 
@@ -1604,7 +1605,7 @@ ___
 
 ### setBrowRotation <Score text="setBrowRotation" /> 
 
-• **setBrowRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowRotation**(`value`, `sync`): `void` 
 
 设置眉毛角度
 
@@ -1627,7 +1628,7 @@ ___
 
 ### setCanthusHorizontalPosition <Score text="setCanthusHorizontalPosition" /> 
 
-• **setCanthusHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCanthusHorizontalPosition**(`value`, `sync`): `void` 
 
 设置眼角左右移动
 
@@ -1650,7 +1651,7 @@ ___
 
 ### setCanthusVerticalPosition <Score text="setCanthusVerticalPosition" /> 
 
-• **setCanthusVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCanthusVerticalPosition**(`value`, `sync`): `void` 
 
 设置外眼角上下移动
 
@@ -1673,7 +1674,7 @@ ___
 
 ### setCharacterHeight <Score text="setCharacterHeight" /> 
 
-• **setCharacterHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCharacterHeight**(`value`, `sync`): `void` 
 
 设置角色身高
 
@@ -1696,7 +1697,7 @@ ___
 
 ### setCheekBoneRange <Score text="setCheekBoneRange" /> 
 
-• **setCheekBoneRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekBoneRange**(`value`, `sync`): `void` 
 
 设置颧骨前后移动
 
@@ -1719,7 +1720,7 @@ ___
 
 ### setCheekBoneWidth <Score text="setCheekBoneWidth" /> 
 
-• **setCheekBoneWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekBoneWidth**(`value`, `sync`): `void` 
 
 设置颧骨横向宽度
 
@@ -1742,7 +1743,7 @@ ___
 
 ### setCheekHeight <Score text="setCheekHeight" /> 
 
-• **setCheekHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekHeight**(`value`, `sync`): `void` 
 
 设置脸颊上下移动
 
@@ -1765,7 +1766,7 @@ ___
 
 ### setCheekRange <Score text="setCheekRange" /> 
 
-• **setCheekRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekRange**(`value`, `sync`): `void` 
 
 设置脸颊前后移动
 
@@ -1788,7 +1789,7 @@ ___
 
 ### setCheekWidth <Score text="setCheekWidth" /> 
 
-• **setCheekWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setCheekWidth**(`value`, `sync`): `void` 
 
 设置脸颊宽度
 
@@ -1811,7 +1812,7 @@ ___
 
 ### setEarRoll <Score text="setEarRoll" /> 
 
-• **setEarRoll**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarRoll**(`value`, `sync`): `void` 
 
 调整耳朵左右旋转
 
@@ -1834,7 +1835,7 @@ ___
 
 ### setEarScale <Score text="setEarScale" /> 
 
-• **setEarScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarScale**(`value`, `sync`): `void` 
 
 调整耳朵大小
 
@@ -1857,7 +1858,7 @@ ___
 
 ### setEarYaw <Score text="setEarYaw" /> 
 
-• **setEarYaw**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEarYaw**(`value`, `sync`): `void` 
 
 调整耳朵前后旋转
 
@@ -1880,7 +1881,7 @@ ___
 
 ### setEyesGap <Score text="setEyesGap" /> 
 
-• **setEyesGap**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesGap**(`value`, `sync`): `void` 
 
 设置眼睛间距
 
@@ -1903,7 +1904,7 @@ ___
 
 ### setEyesHeight <Score text="setEyesHeight" /> 
 
-• **setEyesHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesHeight**(`value`, `sync`): `void` 
 
 设置眼睛上下移动
 
@@ -1926,7 +1927,7 @@ ___
 
 ### setEyesLength <Score text="setEyesLength" /> 
 
-• **setEyesLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesLength**(`value`, `sync`): `void` 
 
 眼睛长度
 
@@ -1949,7 +1950,7 @@ ___
 
 ### setEyesRange <Score text="setEyesRange" /> 
 
-• **setEyesRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesRange**(`value`, `sync`): `void` 
 
 设置眼睛前后移动
 
@@ -1972,7 +1973,7 @@ ___
 
 ### setEyesRotation <Score text="setEyesRotation" /> 
 
-• **setEyesRotation**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesRotation**(`value`, `sync`): `void` 
 
 设置眼睛角度
 
@@ -1995,7 +1996,7 @@ ___
 
 ### setEyesWidth <Score text="setEyesWidth" /> 
 
-• **setEyesWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyesWidth**(`value`, `sync`): `void` 
 
 设置眼睛左右宽度
 
@@ -2018,7 +2019,7 @@ ___
 
 ### setFaceWidth <Score text="setFaceWidth" /> 
 
-• **setFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFaceWidth**(`value`, `sync`): `void` 
 
 调整头部整体宽度
 
@@ -2041,7 +2042,7 @@ ___
 
 ### setGroinThickness <Score text="setGroinThickness" /> 
 
-• **setGroinThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGroinThickness**(`value`, `sync`): `void` 
 
 设置胯宽度前后
 
@@ -2064,7 +2065,7 @@ ___
 
 ### setGroinWidth <Score text="setGroinWidth" /> 
 
-• **setGroinWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setGroinWidth**(`value`, `sync`): `void` 
 
 设置胯宽度左右
 
@@ -2087,11 +2088,10 @@ ___
 
 ### setHeadScale <Score text="setHeadScale" /> 
 
-• **setHeadScale**(`value`, `sync`): `void` <Badge type="tip" text="other" /> <Badge type="tip" text="other" />
+• **setHeadScale**(`value`, `sync`): `void`  
 
 设置角色头部大小
 
-当 sync = true 对象是单端对象，调用仅本地客户端有效调用
 
 ::: warning Precautions
 
@@ -2112,7 +2112,7 @@ ___
 
 ### setJawLength <Score text="setJawLength" /> 
 
-• **setJawLength**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawLength**(`value`, `sync`): `void` 
 
 调整下巴长度
 
@@ -2135,7 +2135,7 @@ ___
 
 ### setJawRange <Score text="setJawRange" /> 
 
-• **setJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawRange**(`value`, `sync`): `void` 
 
 调整下巴前后移动
 
@@ -2158,7 +2158,7 @@ ___
 
 ### setJawSmooth <Score text="setJawSmooth" /> 
 
-• **setJawSmooth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawSmooth**(`value`, `sync`): `void` 
 
 调整下巴圆度
 
@@ -2181,7 +2181,7 @@ ___
 
 ### setJawVertexHeight <Score text="setJawVertexHeight" /> 
 
-• **setJawVertexHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexHeight**(`value`, `sync`): `void` 
 
 调整下巴尖上下移动
 
@@ -2204,7 +2204,7 @@ ___
 
 ### setJawVertexRange <Score text="setJawVertexRange" /> 
 
-• **setJawVertexRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexRange**(`value`, `sync`): `void` 
 
 调整下巴尖前后移动
 
@@ -2227,7 +2227,7 @@ ___
 
 ### setJawVertexWidth <Score text="setJawVertexWidth" /> 
 
-• **setJawVertexWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setJawVertexWidth**(`value`, `sync`): `void` 
 
 调整下巴尖宽度
 
@@ -2250,7 +2250,7 @@ ___
 
 ### setLowerArmsStretch <Score text="setLowerArmsStretch" /> 
 
-• **setLowerArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsStretch**(`value`, `sync`): `void` 
 
 设置小臂的拉伸
 
@@ -2273,7 +2273,7 @@ ___
 
 ### setLowerArmsThickness <Score text="setLowerArmsThickness" /> 
 
-• **setLowerArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsThickness**(`value`, `sync`): `void` 
 
 设置小臂前后方向的宽度
 
@@ -2296,7 +2296,7 @@ ___
 
 ### setLowerArmsWidth <Score text="setLowerArmsWidth" /> 
 
-• **setLowerArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerArmsWidth**(`value`, `sync`): `void` 
 
 设置小臂左右方向的宽度
 
@@ -2319,7 +2319,7 @@ ___
 
 ### setLowerFaceRange <Score text="setLowerFaceRange" /> 
 
-• **setLowerFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerFaceRange**(`value`, `sync`): `void` 
 
 设置下半脸前后
 
@@ -2342,7 +2342,7 @@ ___
 
 ### setLowerFaceWidth <Score text="setLowerFaceWidth" /> 
 
-• **setLowerFaceWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerFaceWidth**(`value`, `sync`): `void` 
 
 设置下半脸的宽度
 
@@ -2365,7 +2365,7 @@ ___
 
 ### setLowerJawRange <Score text="setLowerJawRange" /> 
 
-• **setLowerJawRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerJawRange**(`value`, `sync`): `void` 
 
 调整下颚骨前后移动
 
@@ -2388,7 +2388,7 @@ ___
 
 ### setLowerJawWidth <Score text="setLowerJawWidth" /> 
 
-• **setLowerJawWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerJawWidth**(`value`, `sync`): `void` 
 
 调整下颚骨宽度
 
@@ -2411,7 +2411,7 @@ ___
 
 ### setLowerMouthThickness <Score text="setLowerMouthThickness" /> 
 
-• **setLowerMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerMouthThickness**(`value`, `sync`): `void` 
 
 设置下嘴唇薄厚
 
@@ -2434,7 +2434,7 @@ ___
 
 ### setLowerStretch <Score text="setLowerStretch" /> 
 
-• **setLowerStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerStretch**(`value`, `sync`): `void` 
 
 调整耳朵下部拉伸
 
@@ -2457,7 +2457,7 @@ ___
 
 ### setMouthHeight <Score text="setMouthHeight" /> 
 
-• **setMouthHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthHeight**(`value`, `sync`): `void` 
 
 设置嘴巴上下位置
 
@@ -2480,7 +2480,7 @@ ___
 
 ### setMouthRange <Score text="setMouthRange" /> 
 
-• **setMouthRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthRange**(`value`, `sync`): `void` 
 
 设置嘴巴前后移动
 
@@ -2503,7 +2503,7 @@ ___
 
 ### setMouthShape <Score text="setMouthShape" /> 
 
-• **setMouthShape**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthShape**(`value`, `sync`): `void` 
 
 调整嘴巴形状
 
@@ -2526,7 +2526,7 @@ ___
 
 ### setMouthWidth <Score text="setMouthWidth" /> 
 
-• **setMouthWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMouthWidth**(`value`, `sync`): `void` 
 
 设置嘴巴宽度
 
@@ -2549,7 +2549,7 @@ ___
 
 ### setNeckStretch <Score text="setNeckStretch" /> 
 
-• **setNeckStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckStretch**(`value`, `sync`): `void` 
 
 设置脖子拉伸
 
@@ -2572,7 +2572,7 @@ ___
 
 ### setNeckThickness <Score text="setNeckThickness" /> 
 
-• **setNeckThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckThickness**(`value`, `sync`): `void` 
 
 设置脖子前后的宽度
 
@@ -2595,7 +2595,7 @@ ___
 
 ### setNeckWidth <Score text="setNeckWidth" /> 
 
-• **setNeckWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNeckWidth**(`value`, `sync`): `void` 
 
 调整脖子的左右宽度
 
@@ -2618,7 +2618,7 @@ ___
 
 ### setNoseHeight <Score text="setNoseHeight" /> 
 
-• **setNoseHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseHeight**(`value`, `sync`): `void` 
 
 设置鼻梁高度
 
@@ -2641,7 +2641,7 @@ ___
 
 ### setNoseProtrusion <Score text="setNoseProtrusion" /> 
 
-• **setNoseProtrusion**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseProtrusion**(`value`, `sync`): `void` 
 
 设置鼻尖长度
 
@@ -2664,7 +2664,7 @@ ___
 
 ### setNoseVerticalPosition <Score text="setNoseVerticalPosition" /> 
 
-• **setNoseVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setNoseVerticalPosition**(`value`, `sync`): `void` 
 
 设置鼻子上下移动
 
@@ -2687,7 +2687,7 @@ ___
 
 ### setPupilHeight <Score text="setPupilHeight" /> 
 
-• **setPupilHeight**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilHeight**(`value`, `sync`): `void` 
 
 设置瞳孔高度
 
@@ -2710,7 +2710,7 @@ ___
 
 ### setPupilHorizontalPosition <Score text="setPupilHorizontalPosition" /> 
 
-• **setPupilHorizontalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilHorizontalPosition**(`value`, `sync`): `void` 
 
 设置瞳孔左右位置
 
@@ -2733,7 +2733,7 @@ ___
 
 ### setPupilVerticalPosition <Score text="setPupilVerticalPosition" /> 
 
-• **setPupilVerticalPosition**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilVerticalPosition**(`value`, `sync`): `void` 
 
 设置瞳孔上下位置
 
@@ -2756,7 +2756,7 @@ ___
 
 ### setPupilWidth <Score text="setPupilWidth" /> 
 
-• **setPupilWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilWidth**(`value`, `sync`): `void` 
 
 设置瞳孔宽度
 
@@ -2779,7 +2779,7 @@ ___
 
 ### setRibThickness <Score text="setRibThickness" /> 
 
-• **setRibThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRibThickness**(`value`, `sync`): `void` 
 
 设置肋骨的前后宽度
 
@@ -2802,7 +2802,7 @@ ___
 
 ### setRibWidth <Score text="setRibWidth" /> 
 
-• **setRibWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRibWidth**(`value`, `sync`): `void` 
 
 设置肋骨的左右宽度
 
@@ -2825,7 +2825,7 @@ ___
 
 ### setShankScaleX <Score text="setShankScaleX" /> 
 
-• **setShankScaleX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankScaleX**(`value`, `sync`): `void` 
 
 设置小腿粗细左右
 
@@ -2848,7 +2848,7 @@ ___
 
 ### setShankScaleZ <Score text="setShankScaleZ" /> 
 
-• **setShankScaleZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankScaleZ**(`value`, `sync`): `void` 
 
 设置小腿粗细前后
 
@@ -2871,7 +2871,7 @@ ___
 
 ### setShankStretch <Score text="setShankStretch" /> 
 
-• **setShankStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShankStretch**(`value`, `sync`): `void` 
 
 设置小腿拉伸
 
@@ -2894,7 +2894,7 @@ ___
 
 ### setShoulderArmThickness <Score text="setShoulderArmThickness" /> 
 
-• **setShoulderArmThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderArmThickness**(`value`, `sync`): `void` 
 
 设置肩膀的前后宽度
 
@@ -2917,7 +2917,7 @@ ___
 
 ### setShoulderArmWidth <Score text="setShoulderArmWidth" /> 
 
-• **setShoulderArmWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderArmWidth**(`value`, `sync`): `void` 
 
 设置肩膀的左右宽度
 
@@ -2940,7 +2940,7 @@ ___
 
 ### setShoulderThickness <Score text="setShoulderThickness" /> 
 
-• **setShoulderThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderThickness**(`value`, `sync`): `void` 
 
 设置肩膀的前后宽度
 
@@ -2963,7 +2963,7 @@ ___
 
 ### setShoulderWidth <Score text="setShoulderWidth" /> 
 
-• **setShoulderWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setShoulderWidth**(`value`, `sync`): `void` 
 
 设置肩膀的宽度
 
@@ -2986,7 +2986,7 @@ ___
 
 ### setThighStretch <Score text="setThighStretch" /> 
 
-• **setThighStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighStretch**(`value`, `sync`): `void` 
 
 设置大腿拉伸
 
@@ -3009,7 +3009,7 @@ ___
 
 ### setThighThicknessX <Score text="setThighThicknessX" /> 
 
-• **setThighThicknessX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighThicknessX**(`value`, `sync`): `void` 
 
 设置大腿粗细左右
 
@@ -3032,7 +3032,7 @@ ___
 
 ### setThighThicknessZ <Score text="setThighThicknessZ" /> 
 
-• **setThighThicknessZ**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setThighThicknessZ**(`value`, `sync`): `void` 
 
 设置大腿粗细前后
 
@@ -3055,7 +3055,7 @@ ___
 
 ### setUpperArmsStretch <Score text="setUpperArmsStretch" /> 
 
-• **setUpperArmsStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsStretch**(`value`, `sync`): `void` 
 
 设置大臂的拉伸
 
@@ -3078,7 +3078,7 @@ ___
 
 ### setUpperArmsThickness <Score text="setUpperArmsThickness" /> 
 
-• **setUpperArmsThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsThickness**(`value`, `sync`): `void` 
 
 设置大臂前后方向的宽度
 
@@ -3101,7 +3101,7 @@ ___
 
 ### setUpperArmsWidth <Score text="setUpperArmsWidth" /> 
 
-• **setUpperArmsWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperArmsWidth**(`value`, `sync`): `void` 
 
 设置大臂左右方向的宽度
 
@@ -3124,7 +3124,7 @@ ___
 
 ### setUpperFaceRange <Score text="setUpperFaceRange" /> 
 
-• **setUpperFaceRange**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperFaceRange**(`value`, `sync`): `void` 
 
 调整上半脸前后移动
 
@@ -3147,7 +3147,7 @@ ___
 
 ### setUpperMouthThickness <Score text="setUpperMouthThickness" /> 
 
-• **setUpperMouthThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperMouthThickness**(`value`, `sync`): `void` 
 
 设置上嘴唇薄厚
 
@@ -3170,7 +3170,7 @@ ___
 
 ### setUpperStretch <Score text="setUpperStretch" /> 
 
-• **setUpperStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperStretch**(`value`, `sync`): `void` 
 
 调整耳朵上部拉伸
 
@@ -3193,7 +3193,7 @@ ___
 
 ### setWaistStretch <Score text="setWaistStretch" /> 
 
-• **setWaistStretch**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistStretch**(`value`, `sync`): `void` 
 
 设置腰部拉伸
 
@@ -3216,7 +3216,7 @@ ___
 
 ### setWaistThickness <Score text="setWaistThickness" /> 
 
-• **setWaistThickness**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistThickness**(`value`, `sync`): `void` 
 
 设置腰的前后宽度
 
@@ -3239,7 +3239,7 @@ ___
 
 ### setWaistWidth <Score text="setWaistWidth" /> 
 
-• **setWaistWidth**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWaistWidth**(`value`, `sync`): `void` 
 
 设置腰的左右宽度
 

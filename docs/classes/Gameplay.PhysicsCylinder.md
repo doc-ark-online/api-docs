@@ -1,8 +1,31 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsCylinder
+[Physics](../groups/Physics.Physics.md) / PhysicsCylinder
 
 # PhysicsCylinder <Badge type="tip" text="Class" /> <Score text="PhysicsCylinder" />
 
 物理圆柱组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsCylinder;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setLinearLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.linearLimit = 100;
+test.restitution = 100;
+test.linearVelocity = 100;
+test.setAngularLimitType(Gameplay.AxisType.X, Gameplay.LimitType.Free);
+test.angularLimit = new Type.Vector(100,100,100);
+test.angularVelocity = new Type.Vector(100,100,100);
+test.angularStrength = 100;
+```
 
 ## Hierarchy
 
@@ -34,10 +57,10 @@
 
 | Methods |
 | :-----|
-| **[getAngularLimitType](Gameplay.PhysicsCylinder.md#getangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取旋转类型|
-| **[getLinearLimitType](Gameplay.PhysicsCylinder.md#getlinearlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取滑动类型|
-| **[setAngularLimitType](Gameplay.PhysicsCylinder.md#setangularlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md), [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
-| **[setLinearLimitType](Gameplay.PhysicsCylinder.md#setlinearlimittype)**([`AxisType`](../enums/Gameplay.AxisType.md), [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置滑动类型|
+| **[getAngularLimitType](Gameplay.PhysicsCylinder.md#getangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取旋转类型|
+| **[getLinearLimitType](Gameplay.PhysicsCylinder.md#getlinearlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md)): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取滑动类型|
+| **[setAngularLimitType](Gameplay.PhysicsCylinder.md#setangularlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md), `Type`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置旋转类型|
+| **[setLinearLimitType](Gameplay.PhysicsCylinder.md#setlinearlimittype)**(`Axis`: [`AxisType`](../enums/Gameplay.AxisType.md), `Type`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置滑动类型|
 
 
 ::: details 点击查看继承
@@ -248,7 +271,7 @@ ___
 
 ### getAngularLimitType <Score text="getAngularLimitType" /> 
 
-• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAngularLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取旋转类型
 
@@ -268,7 +291,7 @@ ___
 
 ### getLinearLimitType <Score text="getLinearLimitType" /> 
 
-• **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getLinearLimitType**(`Axis`): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取滑动类型
 
@@ -288,7 +311,7 @@ ___
 
 ### setAngularLimitType <Score text="setAngularLimitType" /> 
 
-• **setAngularLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
+• **setAngularLimitType**(`Axis`, `Type`): `void` 
 
 设置旋转类型
 
@@ -304,7 +327,7 @@ ___
 
 ### setLinearLimitType <Score text="setLinearLimitType" /> 
 
-• **setLinearLimitType**(`Axis`, `Type`): `void` <Badge type="tip" text="other" />
+• **setLinearLimitType**(`Axis`, `Type`): `void` 
 
 设置滑动类型
 

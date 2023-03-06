@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EInitialOscillatorOffset
+[Avatar](../groups/Avatar.Avatar.md) / EInitialOscillatorOffset
 
 # EInitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="EInitialOscillatorOffset" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[Random](Gameplay.EInitialOscillatorOffset.md#random)** = ``0`` <br> 随机值|
-| **[Zero](Gameplay.EInitialOscillatorOffset.md#zero)** = ``1`` <br> 零|
+| **[Random](Gameplay.EInitialOscillatorOffset.md#random)** = ``0`` <br> |
+| **[Zero](Gameplay.EInitialOscillatorOffset.md#zero)** = ``1`` <br> |
 
 ## Enumeration Members
 

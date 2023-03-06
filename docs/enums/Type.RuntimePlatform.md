@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / RuntimePlatform
+[Utility](../groups/Utility.Utility.md) / RuntimePlatform
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[Android](Type.RuntimePlatform.md#android)** = ``3`` <br> Mobile - Android|
-| **[Linux](Type.RuntimePlatform.md#linux)** = ``1`` <br> PC - Linux|
-| **[MacOS](Type.RuntimePlatform.md#macos)** = ``2`` <br> PC - MacOS|
-| **[Windows](Type.RuntimePlatform.md#windows)** = ``0`` <br> PC - Windows|
-| **[iOS](Type.RuntimePlatform.md#ios)** = ``4`` <br> Mobile - iOS|
+| **[Android](Type.RuntimePlatform.md#android)** = ``3`` <br> |
+| **[Linux](Type.RuntimePlatform.md#linux)** = ``1`` <br> |
+| **[MacOS](Type.RuntimePlatform.md#macos)** = ``2`` <br> |
+| **[Windows](Type.RuntimePlatform.md#windows)** = ``0`` <br> |
+| **[iOS](Type.RuntimePlatform.md#ios)** = ``4`` <br> |
 
 ## Enumeration Members
 

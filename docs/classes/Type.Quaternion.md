@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Quaternion
+[Data](../groups/Data.Data.md) / Quaternion
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 
@@ -8,11 +8,11 @@
 
 | Properties |
 | :-----|
-| **[w](Type.Quaternion.md#w)**: `number` <br> w 分量。|
-| **[x](Type.Quaternion.md#x)**: `number` <br> x 分量。|
-| **[y](Type.Quaternion.md#y)**: `number` <br> y 分量。|
-| **[z](Type.Quaternion.md#z)**: `number` <br> z 分量。|
-| **[halfToRad](Type.Quaternion.md#halftorad)**: `any` <br> 获取一个半弧度系数|
+| **[w](Type.Quaternion.md#w)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[x](Type.Quaternion.md#x)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[y](Type.Quaternion.md#y)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[z](Type.Quaternion.md#z)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[halfToRad](Type.Quaternion.md#halftorad)**: `any` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
 
 | Accessors |
 | :-----|
@@ -26,46 +26,46 @@
 | Methods |
 | :-----|
 | **[clone](Type.Quaternion.md#clone)**(): [`Quaternion`](Type.Quaternion.md) <br> 克隆当前四元数。|
-| **[equals](Type.Quaternion.md#equals)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断|
-| **[fromRotation](Type.Quaternion.md#fromrotation)**([`Rotation`](Type.Rotation.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数|
-| **[getAxisX](Type.Quaternion.md#getaxisx)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 X 轴向量|
-| **[getAxisY](Type.Quaternion.md#getaxisy)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 Y 轴向量|
-| **[getAxisZ](Type.Quaternion.md#getaxisz)**([`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 Z 轴向量|
-| **[getEuler](Type.Quaternion.md#geteuler)**(`boolean`, [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX|
+| **[equals](Type.Quaternion.md#equals)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断|
+| **[fromRotation](Type.Quaternion.md#fromrotation)**(`v`: [`Rotation`](Type.Rotation.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数|
+| **[getAxisX](Type.Quaternion.md#getaxisx)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 X 轴向量|
+| **[getAxisY](Type.Quaternion.md#getaxisy)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 Y 轴向量|
+| **[getAxisZ](Type.Quaternion.md#getaxisz)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 返回定义此四元数的坐标系 Z 轴向量|
+| **[getEuler](Type.Quaternion.md#geteuler)**(`outerZ?`: `boolean`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX|
 | **[getEulerAngles](Type.Quaternion.md#geteulerangles)**(): [`Vector`](Type.Vector.md) <br> 返回当前四元数转化的欧拉角（x-y-z）。|
-| **[normalize](Type.Quaternion.md#normalize)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 归一化四元数|
-| **[set](Type.Quaternion.md#set)**([`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 设置当前四元数使其与指定四元数相等。|
-| **[setEulerAngles](Type.Quaternion.md#seteulerangles)**([`Vector`](Type.Vector.md)): `void` <br> 设置欧拉角|
-| **[strictEquals](Type.Quaternion.md#strictequals)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): `boolean` <br> 四元数等价判断|
+| **[normalize](Type.Quaternion.md#normalize)**(`a`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 归一化四元数|
+| **[set](Type.Quaternion.md#set)**(`other`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 设置当前四元数使其与指定四元数相等。|
+| **[setEulerAngles](Type.Quaternion.md#seteulerangles)**(`euler`: [`Vector`](Type.Vector.md)): `void` <br> 设置欧拉角|
+| **[strictEquals](Type.Quaternion.md#strictequals)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md)): `boolean` <br> 四元数等价判断|
 | **[toRotation](Type.Quaternion.md#torotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取一个当前四元数的旋转数据|
 | **[toString](Type.Quaternion.md#tostring)**(): `string` <br> 输出为字符串|
-| **[calculateW](Type.Quaternion.md#calculatew)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据 xyz 分量计算 w 分量，默认已归一化|
-| **[conjugate](Type.Quaternion.md#conjugate)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 求共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[dot](Type.Quaternion.md#dot)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): `number` <br> 四元数点积（数量积）|
-| **[equals](Type.Quaternion.md#equals-1)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断|
-| **[fromAngleZ](Type.Quaternion.md#fromanglez)**(`number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据 2D 角度（0, 0, z）计算四元数|
-| **[fromAxes](Type.Quaternion.md#fromaxes)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直|
-| **[fromAxisAngle](Type.Quaternion.md#fromaxisangle)**([`Vector`](Type.Vector.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据旋转轴和旋转弧度计算四元数|
-| **[fromMatrix3x3](Type.Quaternion.md#frommatrix3x3)**([`Matrix3x3`](Type.Matrix3x3.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息|
-| **[fromRotation](Type.Quaternion.md#fromrotation-1)**([`Rotation`](Type.Rotation.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数|
-| **[fromViewUp](Type.Quaternion.md#fromviewup)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据视口的前方向和上方向计算四元数|
-| **[getAxis](Type.Quaternion.md#getaxis)**([`Quaternion`](Type.Quaternion.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取四元数的旋转轴|
-| **[getAxisAngle](Type.Quaternion.md#getaxisangle)**([`Quaternion`](Type.Quaternion.md)): `number` <br> 获取四元数的旋转弧度|
-| **[invert](Type.Quaternion.md#invert)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数求逆|
-| **[lerp](Type.Quaternion.md#lerp)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 逐元素线性插值： A + t * (B - A)|
-| **[multiply](Type.Quaternion.md#multiply)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数乘法|
-| **[multiplyVector](Type.Quaternion.md#multiplyvector)**([`Vector`](Type.Vector.md), [`Quaternion`](Type.Quaternion.md), [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 四元数乘以一个三维向量(通常用于向量通过四元数旋转)|
-| **[normalize](Type.Quaternion.md#normalize-1)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 归一化四元数|
-| **[rotateAround](Type.Quaternion.md#rotatearound)**([`Quaternion`](Type.Quaternion.md), [`Vector`](Type.Vector.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕世界空间下指定轴旋转四元数|
-| **[rotateAroundLocal](Type.Quaternion.md#rotatearoundlocal)**([`Quaternion`](Type.Quaternion.md), [`Vector`](Type.Vector.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕本地空间下指定轴旋转四元数|
-| **[rotateX](Type.Quaternion.md#rotatex)**([`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 X 轴旋转指定四元数|
-| **[rotateY](Type.Quaternion.md#rotatey)**([`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 Y 轴旋转指定四元数|
-| **[rotateZ](Type.Quaternion.md#rotatez)**([`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 Z 轴旋转指定四元数|
-| **[rotationTo](Type.Quaternion.md#rotationto)**([`Vector`](Type.Vector.md), [`Vector`](Type.Vector.md), [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 设置四元数为两向量a和b间的最短路径旋转，默认两向量都已归一化|
-| **[slerp](Type.Quaternion.md#slerp)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数球面插值|
-| **[sqlerp](Type.Quaternion.md#sqlerp)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md), `number`, [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 带两个控制点的四元数球面插值|
-| **[strictEquals](Type.Quaternion.md#strictequals-1)**([`Quaternion`](Type.Quaternion.md), [`Quaternion`](Type.Quaternion.md)): `boolean` <br> 四元数等价判断|
-| **[toMatrix3x3](Type.Quaternion.md#tomatrix3x3)**([`Quaternion`](Type.Quaternion.md), [`Matrix3x3`](Type.Matrix3x3.md)): [`Matrix3x3`](Type.Matrix3x3.md) <br> 根据四元数旋转信息计算矩阵|
+| **[calculateW](Type.Quaternion.md#calculatew)**(`a`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据 xyz 分量计算 w 分量，默认已归一化|
+| **[conjugate](Type.Quaternion.md#conjugate)**(`a`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 求共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[dot](Type.Quaternion.md#dot)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md)): `number` <br> 四元数点积（数量积）|
+| **[equals](Type.Quaternion.md#equals-1)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的四元数近似等价判断|
+| **[fromAngleZ](Type.Quaternion.md#fromanglez)**(`z`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据 2D 角度（0, 0, z）计算四元数|
+| **[fromAxes](Type.Quaternion.md#fromaxes)**(`xAxis`: [`Vector`](Type.Vector.md), `yAxis`: [`Vector`](Type.Vector.md), `zAxis`: [`Vector`](Type.Vector.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直|
+| **[fromAxisAngle](Type.Quaternion.md#fromaxisangle)**(`axis`: [`Vector`](Type.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据旋转轴和旋转弧度计算四元数|
+| **[fromMatrix3x3](Type.Quaternion.md#frommatrix3x3)**(`m`: [`Matrix3x3`](Type.Matrix3x3.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息|
+| **[fromRotation](Type.Quaternion.md#fromrotation-1)**(`v`: [`Rotation`](Type.Rotation.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 读取旋转角数据创建或者写入一个四元数|
+| **[fromViewUp](Type.Quaternion.md#fromviewup)**(`view`: [`Vector`](Type.Vector.md), `up?`: [`Vector`](Type.Vector.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 根据视口的前方向和上方向计算四元数|
+| **[getAxis](Type.Quaternion.md#getaxis)**(`q`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取四元数的旋转轴|
+| **[getAxisAngle](Type.Quaternion.md#getaxisangle)**(`q`: [`Quaternion`](Type.Quaternion.md)): `number` <br> 获取四元数的旋转弧度|
+| **[invert](Type.Quaternion.md#invert)**(`a`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数求逆|
+| **[lerp](Type.Quaternion.md#lerp)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 逐元素线性插值： A + t * (B - A)|
+| **[multiply](Type.Quaternion.md#multiply)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数乘法|
+| **[multiplyVector](Type.Quaternion.md#multiplyvector)**(`a`: [`Vector`](Type.Vector.md), `q`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 四元数乘以一个三维向量(通常用于向量通过四元数旋转)|
+| **[normalize](Type.Quaternion.md#normalize-1)**(`a`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 归一化四元数|
+| **[rotateAround](Type.Quaternion.md#rotatearound)**(`rot`: [`Quaternion`](Type.Quaternion.md), `axis`: [`Vector`](Type.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕世界空间下指定轴旋转四元数|
+| **[rotateAroundLocal](Type.Quaternion.md#rotatearoundlocal)**(`rot`: [`Quaternion`](Type.Quaternion.md), `axis`: [`Vector`](Type.Vector.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕本地空间下指定轴旋转四元数|
+| **[rotateX](Type.Quaternion.md#rotatex)**(`a`: [`Quaternion`](Type.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 X 轴旋转指定四元数|
+| **[rotateY](Type.Quaternion.md#rotatey)**(`a`: [`Quaternion`](Type.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 Y 轴旋转指定四元数|
+| **[rotateZ](Type.Quaternion.md#rotatez)**(`a`: [`Quaternion`](Type.Quaternion.md), `rad`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 绕 Z 轴旋转指定四元数|
+| **[rotationTo](Type.Quaternion.md#rotationto)**(`a`: [`Vector`](Type.Vector.md), `b`: [`Vector`](Type.Vector.md), `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 设置四元数为两向量a和b间的最短路径旋转，默认两向量都已归一化|
+| **[slerp](Type.Quaternion.md#slerp)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 四元数球面插值|
+| **[sqlerp](Type.Quaternion.md#sqlerp)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md), `c`: [`Quaternion`](Type.Quaternion.md), `d`: [`Quaternion`](Type.Quaternion.md), `t`: `number`, `outer?`: [`Quaternion`](Type.Quaternion.md)): [`Quaternion`](Type.Quaternion.md) <br> 带两个控制点的四元数球面插值|
+| **[strictEquals](Type.Quaternion.md#strictequals-1)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md)): `boolean` <br> 四元数等价判断|
+| **[toMatrix3x3](Type.Quaternion.md#tomatrix3x3)**(`q`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Matrix3x3`](Type.Matrix3x3.md)): [`Matrix3x3`](Type.Matrix3x3.md) <br> 根据四元数旋转信息计算矩阵|
 
 #### Parameters
 
@@ -206,7 +206,7 @@ Quaternion(0,0,0,1)
 
 ### clone <Score text="clone" /> 
 
-• **clone**(): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **clone**(): [`Quaternion`](Type.Quaternion.md) 
 
 克隆当前四元数。
 
@@ -221,7 +221,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-• **equals**(`other`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **equals**(`other`, `epsilon?`): `boolean` 
 
 判断当前四元数是否在误差范围内与指定向量相等。
 
@@ -243,7 +243,7 @@ ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-• **fromRotation**(`v`): `void` <Badge type="tip" text="other" />
+• **fromRotation**(`v`): `void` 
 
 当前四元数读取一个旋转数据
 
@@ -259,7 +259,7 @@ ___
 
 ### getAxisX <Score text="getAxisX" /> 
 
-• **getAxisX**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisX**(`outer?`): [`Vector`](Type.Vector.md) 
 
 返回定义此四元数的坐标系 X 轴向量
 
@@ -286,7 +286,7 @@ ___
 
 ### getAxisY <Score text="getAxisY" /> 
 
-• **getAxisY**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisY**(`outer?`): [`Vector`](Type.Vector.md) 
 
 返回定义此四元数的坐标系 Y 轴向量
 
@@ -313,7 +313,7 @@ ___
 
 ### getAxisZ <Score text="getAxisZ" /> 
 
-• **getAxisZ**(`outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getAxisZ**(`outer?`): [`Vector`](Type.Vector.md) 
 
 返回定义此四元数的坐标系 Z 轴向量
 
@@ -340,7 +340,7 @@ ___
 
 ### getEuler <Score text="getEuler" /> 
 
-• **getEuler**(`outerZ?`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getEuler**(`outerZ?`, `outer?`): [`Vector`](Type.Vector.md) 
 
 根据四元数计算欧拉角，返回角度 x, y 在 [-180, 180] 区间内, z 默认在 [-90, 90] 区间内，旋转顺序为 YZX
 
@@ -368,7 +368,7 @@ ___
 
 ### getEulerAngles <Score text="getEulerAngles" /> 
 
-• **getEulerAngles**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• **getEulerAngles**(): [`Vector`](Type.Vector.md) 
 
 返回当前四元数转化的欧拉角（x-y-z）。
 
@@ -383,7 +383,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-• **normalize**(): `void` <Badge type="tip" text="other" />
+• **normalize**(): `void` 
 
 将当前四元数归一化
 
@@ -393,7 +393,7 @@ ___
 
 ### set <Score text="set" /> 
 
-• **set**(`other`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **set**(`other`): [`Quaternion`](Type.Quaternion.md) 
 
 设置当前四元数使其与指定四元数相等。
 
@@ -410,7 +410,7 @@ ___
 
 `this`
 
-• **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• **set**(`x?`, `y?`, `z?`, `w?`): [`Quaternion`](Type.Quaternion.md) 
 
 设置当前四元数指定元素值。
 
@@ -434,7 +434,7 @@ ___
 
 ### setEulerAngles <Score text="setEulerAngles" /> 
 
-• **setEulerAngles**(`euler`): `void` <Badge type="tip" text="other" />
+• **setEulerAngles**(`euler`): `void` 
 
 设置欧拉角
 
@@ -450,7 +450,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
+• **strictEquals**(`other`): `boolean` 
 
 判断当前四元数是否与指定四元数相等。
 
@@ -471,7 +471,7 @@ ___
 
 ### toRotation <Score text="toRotation" /> 
 
-• **toRotation**(): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="other" />
+• **toRotation**(): [`Rotation`](Type.Rotation.md) 
 
 获取一个当前四元数的旋转数据
 
@@ -486,7 +486,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-• **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` 
 
 输出为字符串
 
@@ -501,7 +501,7 @@ ___
 
 ### calculateW <Score text="calculateW" /> 
 
-• `Static` **calculateW**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **calculateW**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据 xyz 分量计算 w 分量，默认已归一化
 
@@ -529,7 +529,7 @@ ___
 
 ### conjugate <Score text="conjugate" /> 
 
-• `Static` **conjugate**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **conjugate**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 求共轭四元数，对单位四元数与求逆等价，但更高效
 
@@ -557,7 +557,7 @@ ___
 
 ### dot <Score text="dot" /> 
 
-• `Static` **dot**(`a`, `b`): `number` <Badge type="tip" text="other" />
+• `Static` **dot**(`a`, `b`): `number` 
 
 四元数点积（数量积）
 
@@ -579,7 +579,7 @@ ___
 
 ### equals <Score text="equals" /> 
 
-• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• `Static` **equals**(`a`, `b`, `epsilon?`): `boolean` 
 
 排除浮点数误差的四元数近似等价判断
 
@@ -602,7 +602,7 @@ ___
 
 ### fromAngleZ <Score text="fromAngleZ" /> 
 
-• `Static` **fromAngleZ**(`z`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAngleZ**(`z`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据 2D 角度（0, 0, z）计算四元数
 
@@ -630,7 +630,7 @@ ___
 
 ### fromAxes <Score text="fromAxes" /> 
 
-• `Static` **fromAxes**(`xAxis`, `yAxis`, `zAxis`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAxes**(`xAxis`, `yAxis`, `zAxis`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据坐标轴朝向计算四元数，默认三向量都已归一化且相互垂直
 
@@ -660,7 +660,7 @@ ___
 
 ### fromAxisAngle <Score text="fromAxisAngle" /> 
 
-• `Static` **fromAxisAngle**(`axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromAxisAngle**(`axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据旋转轴和旋转弧度计算四元数
 
@@ -689,7 +689,7 @@ ___
 
 ### fromMatrix3x3 <Score text="fromMatrix" /> 
 
-• `Static` **fromMatrix3x3**(`m`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromMatrix3x3**(`m`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据三维矩阵信息计算四元数，默认输入矩阵不含有缩放信息
 
@@ -717,7 +717,7 @@ ___
 
 ### fromRotation <Score text="fromRotation" /> 
 
-• `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromRotation**(`v`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 读取旋转角数据创建或者写入一个四元数
 
@@ -745,7 +745,7 @@ ___
 
 ### fromViewUp <Score text="fromViewUp" /> 
 
-• `Static` **fromViewUp**(`view`, `up?`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **fromViewUp**(`view`, `up?`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 根据视口的前方向和上方向计算四元数
 
@@ -774,7 +774,7 @@ ___
 
 ### getAxis <Score text="getAxis" /> 
 
-• `Static` **getAxis**(`q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **getAxis**(`q`, `outer?`): [`Vector`](Type.Vector.md) 
 
 获取四元数的旋转轴
 
@@ -802,7 +802,7 @@ ___
 
 ### getAxisAngle <Score text="getAxisAngle" /> 
 
-• `Static` **getAxisAngle**(`q`): `number` <Badge type="tip" text="other" />
+• `Static` **getAxisAngle**(`q`): `number` 
 
 获取四元数的旋转弧度
 
@@ -823,7 +823,7 @@ ___
 
 ### invert <Score text="invert" /> 
 
-• `Static` **invert**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **invert**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 四元数求逆
 
@@ -851,7 +851,7 @@ ___
 
 ### lerp <Score text="lerp" /> 
 
-• `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **lerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 逐元素线性插值： A + t * (B - A)
 
@@ -881,7 +881,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-• `Static` **multiply**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 四元数乘法
 
@@ -910,7 +910,7 @@ ___
 
 ### multiplyVector <Score text="multiplyVector" /> 
 
-• `Static` **multiplyVector**(`a`, `q`, `outer?`): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `Static` **multiplyVector**(`a`, `q`, `outer?`): [`Vector`](Type.Vector.md) 
 
 四元数乘以一个三维向量(通常用于向量通过四元数旋转)
 
@@ -939,7 +939,7 @@ ___
 
 ### normalize <Score text="normalize" /> 
 
-• `Static` **normalize**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **normalize**(`a`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 归一化四元数
 
@@ -967,7 +967,7 @@ ___
 
 ### rotateAround <Score text="rotateAround" /> 
 
-• `Static` **rotateAround**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateAround**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 绕世界空间下指定轴旋转四元数
 
@@ -997,7 +997,7 @@ ___
 
 ### rotateAroundLocal <Score text="rotateAroundLocal" /> 
 
-• `Static` **rotateAroundLocal**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateAroundLocal**(`rot`, `axis`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 绕本地空间下指定轴旋转四元数
 
@@ -1027,7 +1027,7 @@ ___
 
 ### rotateX <Score text="rotateX" /> 
 
-• `Static` **rotateX**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateX**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 绕 X 轴旋转指定四元数
 
@@ -1056,7 +1056,7 @@ ___
 
 ### rotateY <Score text="rotateY" /> 
 
-• `Static` **rotateY**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateY**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 绕 Y 轴旋转指定四元数
 
@@ -1085,7 +1085,7 @@ ___
 
 ### rotateZ <Score text="rotateZ" /> 
 
-• `Static` **rotateZ**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotateZ**(`a`, `rad`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 绕 Z 轴旋转指定四元数
 
@@ -1114,7 +1114,7 @@ ___
 
 ### rotationTo <Score text="rotationTo" /> 
 
-• `Static` **rotationTo**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **rotationTo**(`a`, `b`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 设置四元数为两向量a和b间的最短路径旋转，默认两向量都已归一化
 
@@ -1143,7 +1143,7 @@ ___
 
 ### slerp <Score text="slerp" /> 
 
-• `Static` **slerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **slerp**(`a`, `b`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 四元数球面插值
 
@@ -1173,7 +1173,7 @@ ___
 
 ### sqlerp <Score text="sqlerp" /> 
 
-• `Static` **sqlerp**(`a`, `b`, `c`, `d`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) <Badge type="tip" text="other" />
+• `Static` **sqlerp**(`a`, `b`, `c`, `d`, `t`, `outer?`): [`Quaternion`](Type.Quaternion.md) 
 
 带两个控制点的四元数球面插值
 
@@ -1205,7 +1205,7 @@ ___
 
 ### strictEquals <Score text="strictEquals" /> 
 
-• `Static` **strictEquals**(`a`, `b`): `boolean` <Badge type="tip" text="other" />
+• `Static` **strictEquals**(`a`, `b`): `boolean` 
 
 四元数等价判断
 
@@ -1227,7 +1227,7 @@ ___
 
 ### toMatrix3x3 <Score text="toMatrix" /> 
 
-• `Static` **toMatrix3x3**(`q`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) <Badge type="tip" text="other" />
+• `Static` **toMatrix3x3**(`q`, `outer?`): [`Matrix3x3`](Type.Matrix3x3.md) 
 
 根据四元数旋转信息计算矩阵
 

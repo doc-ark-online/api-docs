@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIHorizontalCollation
+[Gui](../groups/Gui.Gui.md) / UIHorizontalCollation
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[LeftToRight](UI.UIHorizontalCollation.md#lefttoright)** = ``0`` <br> 从左到右排序|
-| **[RightToLeft](UI.UIHorizontalCollation.md#righttoleft)** = ``1`` <br> 从右到左排序|
+| **[LeftToRight](UI.UIHorizontalCollation.md#lefttoright)** = ``0`` <br> |
+| **[RightToLeft](UI.UIHorizontalCollation.md#righttoleft)** = ``1`` <br> |
 
 ## Enumeration Members
 

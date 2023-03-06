@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Orientation
+[Gui](../groups/Gui.Gui.md) / Orientation
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[OrientHorizontal](UI.Orientation.md#orienthorizontal)** = ``0`` <br> 水平|
-| **[OrientVertical](UI.Orientation.md#orientvertical)** = ``1`` <br> 垂直|
+| **[OrientHorizontal](UI.Orientation.md#orienthorizontal)** = ``0`` <br> |
+| **[OrientVertical](UI.Orientation.md#orientvertical)** = ``1`` <br> |
 
 ## Enumeration Members
 

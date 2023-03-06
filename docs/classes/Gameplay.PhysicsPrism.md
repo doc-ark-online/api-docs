@@ -1,8 +1,28 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsPrism
+[Physics](../groups/Physics.Physics.md) / PhysicsPrism
 
 # PhysicsPrism <Badge type="tip" text="Class" /> <Score text="PhysicsPrism" />
 
 物理棱柱组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsPrism;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+//参数设置
+test.enable = true / false;
+test.setAxisXLinearType(Gameplay.LimitType.Free);
+test.linearLimit = 100;
+test.restitution = 100;
+test.linearVelocity = new Type.Vector(100,100,100);
+test.strength = 100;
+```
 
 ## Hierarchy
 
@@ -34,9 +54,9 @@
 | **[getAxisXLinearType](Gameplay.PhysicsPrism.md#getaxisxlineartype)**(): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取X轴滑动类型|
 | **[getAxisYLinearType](Gameplay.PhysicsPrism.md#getaxisylineartype)**(): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取Y轴滑动类型|
 | **[getAxisZLinearType](Gameplay.PhysicsPrism.md#getaxiszlineartype)**(): [`LimitType`](../enums/Gameplay.LimitType.md) <br> 获取Z轴滑动类型|
-| **[setAxisXLinearType](Gameplay.PhysicsPrism.md#setaxisxlineartype)**([`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置X轴滑动类型|
-| **[setAxisYLinearType](Gameplay.PhysicsPrism.md#setaxisylineartype)**([`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置Y轴滑动类型|
-| **[setAxisZLinearType](Gameplay.PhysicsPrism.md#setaxiszlineartype)**([`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置Z轴滑动类型|
+| **[setAxisXLinearType](Gameplay.PhysicsPrism.md#setaxisxlineartype)**(`LimitType`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置X轴滑动类型|
+| **[setAxisYLinearType](Gameplay.PhysicsPrism.md#setaxisylineartype)**(`LimitType`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置Y轴滑动类型|
+| **[setAxisZLinearType](Gameplay.PhysicsPrism.md#setaxiszlineartype)**(`LimitType`: [`LimitType`](../enums/Gameplay.LimitType.md)): `void` <br> 设置Z轴滑动类型|
 
 
 ::: details 点击查看继承
@@ -172,7 +192,7 @@ ___
 
 ### getAxisXLinearType <Score text="getAxisXLinearType" /> 
 
-• **getAxisXLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisXLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取X轴滑动类型
 
@@ -187,7 +207,7 @@ ___
 
 ### getAxisYLinearType <Score text="getAxisYLinearType" /> 
 
-• **getAxisYLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisYLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取Y轴滑动类型
 
@@ -202,7 +222,7 @@ ___
 
 ### getAxisZLinearType <Score text="getAxisZLinearType" /> 
 
-• **getAxisZLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) <Badge type="tip" text="other" />
+• **getAxisZLinearType**(): [`LimitType`](../enums/Gameplay.LimitType.md) 
 
 获取Z轴滑动类型
 
@@ -216,7 +236,7 @@ Z轴滑动类型
 
 ### setAxisXLinearType <Score text="setAxisXLinearType" /> 
 
-• **setAxisXLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisXLinearType**(`LimitType`): `void` 
 
 设置X轴滑动类型
 
@@ -232,7 +252,7 @@ ___
 
 ### setAxisYLinearType <Score text="setAxisYLinearType" /> 
 
-• **setAxisYLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisYLinearType**(`LimitType`): `void` 
 
 设置Y轴滑动类型
 
@@ -248,7 +268,7 @@ ___
 
 ### setAxisZLinearType <Score text="setAxisZLinearType" /> 
 
-• **setAxisZLinearType**(`LimitType`): `void` <Badge type="tip" text="other" />
+• **setAxisZLinearType**(`LimitType`): `void` 
 
 设置Z轴滑动类型
 

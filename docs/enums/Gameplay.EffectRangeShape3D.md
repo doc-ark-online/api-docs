@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeShape3D
+[Effects](../groups/Effects.Effects.md) / EffectRangeShape3D
 
 # EffectRangeShape3D <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeShape3D" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Cube](Gameplay.EffectRangeShape3D.md#cube)** = ``0`` <br> 盒体|
-| **[CylindricalSector](Gameplay.EffectRangeShape3D.md#cylindricalsector)** = ``2`` <br> 扇形体|
-| **[Sphere](Gameplay.EffectRangeShape3D.md#sphere)** = ``1`` <br> 球体|
+| **[Cube](Gameplay.EffectRangeShape3D.md#cube)** = ``0`` <br> |
+| **[CylindricalSector](Gameplay.EffectRangeShape3D.md#cylindricalsector)** = ``2`` <br> |
+| **[Sphere](Gameplay.EffectRangeShape3D.md#sphere)** = ``1`` <br> |
 
 ## Enumeration Members
 

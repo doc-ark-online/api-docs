@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV2HeadPart
+[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2HeadPart
 
 # HumanoidV2HeadPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2HeadPart" />
 
@@ -12,7 +12,7 @@
 
 | Methods |
 | :-----|
-| **[characterFaceShadow](Gameplay.HumanoidV2HeadPart.md#characterfaceshadow)**([`Rotation`](Type.Rotation.md), `number`): `void` <br> 设置模型|
+| **[characterFaceShadow](Gameplay.HumanoidV2HeadPart.md#characterfaceshadow)**(`directLightRotator`: [`Rotation`](Type.Rotation.md), `traceDistance`: `number`): `void` <br> 设置模型|
 | **[getBlushColor](Gameplay.HumanoidV2HeadPart.md#getblushcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取腮红颜色|
 | **[getBlushTexture](Gameplay.HumanoidV2HeadPart.md#getblushtexture)**(): `string` <br> 获取腮红贴图|
 | **[getBrowColor](Gameplay.HumanoidV2HeadPart.md#getbrowcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取眉毛颜色|
@@ -25,12 +25,12 @@
 | **[getEyeTexture](Gameplay.HumanoidV2HeadPart.md#geteyetexture)**(): `string` <br> 获取眼睛贴图|
 | **[getEyelashColor](Gameplay.HumanoidV2HeadPart.md#geteyelashcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取睫毛颜色|
 | **[getEyelashTexture](Gameplay.HumanoidV2HeadPart.md#geteyelashtexture)**(): `string` <br> 获取睫毛|
-| **[getFacialTattooColor](Gameplay.HumanoidV2HeadPart.md#getfacialtattoocolor)**(`number`): [`LinearColor`](Type.LinearColor.md) <br> 获取面部纹身颜色|
-| **[getFacialTattooPositionX](Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositionx)**(`number`): `number` <br> 获取面部纹身左右位置|
-| **[getFacialTattooPositionY](Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositiony)**(`number`): `number` <br> 获取面部纹身上下位置|
-| **[getFacialTattooRotation](Gameplay.HumanoidV2HeadPart.md#getfacialtattoorotation)**(`number`): `number` <br> 获取面部纹身旋转|
-| **[getFacialTattooType](Gameplay.HumanoidV2HeadPart.md#getfacialtattootype)**(`number`): `string` <br> 获取面部纹身种类贴图|
-| **[getFacialTattooZoom](Gameplay.HumanoidV2HeadPart.md#getfacialtattoozoom)**(`number`): `number` <br> 获取面部纹身缩放|
+| **[getFacialTattooColor](Gameplay.HumanoidV2HeadPart.md#getfacialtattoocolor)**(`index`: `number`): [`LinearColor`](Type.LinearColor.md) <br> 获取面部纹身颜色|
+| **[getFacialTattooPositionX](Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositionx)**(`index`: `number`): `number` <br> 获取面部纹身左右位置|
+| **[getFacialTattooPositionY](Gameplay.HumanoidV2HeadPart.md#getfacialtattoopositiony)**(`index`: `number`): `number` <br> 获取面部纹身上下位置|
+| **[getFacialTattooRotation](Gameplay.HumanoidV2HeadPart.md#getfacialtattoorotation)**(`index`: `number`): `number` <br> 获取面部纹身旋转|
+| **[getFacialTattooType](Gameplay.HumanoidV2HeadPart.md#getfacialtattootype)**(`index`: `number`): `string` <br> 获取面部纹身种类贴图|
+| **[getFacialTattooZoom](Gameplay.HumanoidV2HeadPart.md#getfacialtattoozoom)**(`index`: `number`): `number` <br> 获取面部纹身缩放|
 | **[getHeadPatternColor](Gameplay.HumanoidV2HeadPart.md#getheadpatterncolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取头部花纹颜色|
 | **[getHeadPatternTexture](Gameplay.HumanoidV2HeadPart.md#getheadpatterntexture)**(): `string` <br> 获取头部花纹贴图|
 | **[getLeftEyeColor](Gameplay.HumanoidV2HeadPart.md#getlefteyecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取左眼睛颜色|
@@ -48,47 +48,47 @@
 | **[getRightEyeColor](Gameplay.HumanoidV2HeadPart.md#getrighteyecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取右眼睛颜色|
 | **[getUpperEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#getuppereyehighlightcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取上高光颜色|
 | **[getUpperEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#getuppereyehighlighttexture)**(): `string` <br> 获取上高光种类|
-| **[setBlushColor](Gameplay.HumanoidV2HeadPart.md#setblushcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置腮红颜色|
-| **[setBlushTexture](Gameplay.HumanoidV2HeadPart.md#setblushtexture)**(`string`, `boolean`): `void` <br> 设置腮红贴图|
-| **[setBrowColor](Gameplay.HumanoidV2HeadPart.md#setbrowcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眉毛颜色|
-| **[setBrowTexture](Gameplay.HumanoidV2HeadPart.md#setbrowtexture)**(`string`, `boolean`): `void` <br> 设置眉毛|
-| **[setExpression](Gameplay.HumanoidV2HeadPart.md#setexpression)**([`ExpressionType`](../enums/Gameplay.ExpressionType.md)): `void` <br> 设置表情|
-| **[setEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#seteyehighlightcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛高光颜色|
-| **[setEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#seteyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置眼睛高光形状|
-| **[setEyeShadowColor](Gameplay.HumanoidV2HeadPart.md#seteyeshadowcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眼影颜色|
-| **[setEyeShadowTexture](Gameplay.HumanoidV2HeadPart.md#seteyeshadowtexture)**(`string`, `boolean`): `void` <br> 设置眼影贴图|
-| **[setEyeTexture](Gameplay.HumanoidV2HeadPart.md#seteyetexture)**(`string`, `boolean`): `void` <br> 设置眼睛贴图|
-| **[setEyelashColor](Gameplay.HumanoidV2HeadPart.md#seteyelashcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置睫毛颜色|
-| **[setEyelashTexture](Gameplay.HumanoidV2HeadPart.md#seteyelashtexture)**(`string`, `boolean`): `void` <br> 设置睫毛|
-| **[setFacialTattooColor](Gameplay.HumanoidV2HeadPart.md#setfacialtattoocolor)**(`number`, [`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置面部纹身颜色|
-| **[setFacialTattooPositionX](Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositionx)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身左右位置|
-| **[setFacialTattooPositionY](Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositiony)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身上下位置|
-| **[setFacialTattooRotation](Gameplay.HumanoidV2HeadPart.md#setfacialtattoorotation)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身旋转|
-| **[setFacialTattooType](Gameplay.HumanoidV2HeadPart.md#setfacialtattootype)**(`number`, `string`, `boolean`): `void` <br> 设置面部纹身种类贴图|
-| **[setFacialTattooZoom](Gameplay.HumanoidV2HeadPart.md#setfacialtattoozoom)**(`number`, `number`, `boolean`): `void` <br> 设置面部纹身缩放|
-| **[setHeadPatternColor](Gameplay.HumanoidV2HeadPart.md#setheadpatterncolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置头部花纹颜色|
-| **[setHeadPatternTexture](Gameplay.HumanoidV2HeadPart.md#setheadpatterntexture)**(`string`, `boolean`): `void` <br> 设置头部花纹贴图|
-| **[setLeftEyeColor](Gameplay.HumanoidV2HeadPart.md#setlefteyecolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置左眼睛颜色|
-| **[setLipstickColor](Gameplay.HumanoidV2HeadPart.md#setlipstickcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置唇膏颜色|
-| **[setLipstickTexture](Gameplay.HumanoidV2HeadPart.md#setlipsticktexture)**(`string`, `boolean`): `void` <br> 设置唇膏贴图|
-| **[setLowerEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#setlowereyehighlightcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置下高光颜色|
-| **[setLowerEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#setlowereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置下高光种类|
-| **[setMesh](Gameplay.HumanoidV2HeadPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置头部模型|
-| **[setPupilColor](Gameplay.HumanoidV2HeadPart.md#setpupilcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置眼睛瞳孔花纹颜色|
-| **[setPupilPositionX](Gameplay.HumanoidV2HeadPart.md#setpupilpositionx)**(`number`, `boolean`): `void` <br> 设置瞳孔左右位置|
-| **[setPupilPositionY](Gameplay.HumanoidV2HeadPart.md#setpupilpositiony)**(`number`, `boolean`): `void` <br> 设置瞳孔上下位置|
-| **[setPupilRotate](Gameplay.HumanoidV2HeadPart.md#setpupilrotate)**(`number`, `boolean`): `void` <br> 设置瞳孔旋转|
-| **[setPupilScale](Gameplay.HumanoidV2HeadPart.md#setpupilscale)**(`number`, `boolean`): `void` <br> 设置瞳孔大小缩放|
-| **[setPupilTexture](Gameplay.HumanoidV2HeadPart.md#setpupiltexture)**(`string`, `boolean`): `void` <br> 设置眼睛瞳孔花纹|
-| **[setRightEyeColor](Gameplay.HumanoidV2HeadPart.md#setrighteyecolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置右眼睛颜色|
-| **[setUpperEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#setuppereyehighlightcolor)**([`LinearColor`](Type.LinearColor.md), `boolean`): `void` <br> 设置上高光颜色|
-| **[setUpperEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#setuppereyehighlighttexture)**(`string`, `boolean`): `void` <br> 设置上高光种类|
+| **[setBlushColor](Gameplay.HumanoidV2HeadPart.md#setblushcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置腮红颜色|
+| **[setBlushTexture](Gameplay.HumanoidV2HeadPart.md#setblushtexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置腮红贴图|
+| **[setBrowColor](Gameplay.HumanoidV2HeadPart.md#setbrowcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置眉毛颜色|
+| **[setBrowTexture](Gameplay.HumanoidV2HeadPart.md#setbrowtexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置眉毛|
+| **[setExpression](Gameplay.HumanoidV2HeadPart.md#setexpression)**(`type`: [`ExpressionType`](../enums/Gameplay.ExpressionType.md)): `void` <br> 设置表情|
+| **[setEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#seteyehighlightcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置眼睛高光颜色|
+| **[setEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#seteyehighlighttexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置眼睛高光形状|
+| **[setEyeShadowColor](Gameplay.HumanoidV2HeadPart.md#seteyeshadowcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置眼影颜色|
+| **[setEyeShadowTexture](Gameplay.HumanoidV2HeadPart.md#seteyeshadowtexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置眼影贴图|
+| **[setEyeTexture](Gameplay.HumanoidV2HeadPart.md#seteyetexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置眼睛贴图|
+| **[setEyelashColor](Gameplay.HumanoidV2HeadPart.md#seteyelashcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置睫毛颜色|
+| **[setEyelashTexture](Gameplay.HumanoidV2HeadPart.md#seteyelashtexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置睫毛|
+| **[setFacialTattooColor](Gameplay.HumanoidV2HeadPart.md#setfacialtattoocolor)**(`index`: `number`, `color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置面部纹身颜色|
+| **[setFacialTattooPositionX](Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositionx)**(`index`: `number`, `value`: `number`, `sync`: `boolean`): `void` <br> 设置面部纹身左右位置|
+| **[setFacialTattooPositionY](Gameplay.HumanoidV2HeadPart.md#setfacialtattoopositiony)**(`index`: `number`, `value`: `number`, `sync`: `boolean`): `void` <br> 设置面部纹身上下位置|
+| **[setFacialTattooRotation](Gameplay.HumanoidV2HeadPart.md#setfacialtattoorotation)**(`index`: `number`, `value`: `number`, `sync`: `boolean`): `void` <br> 设置面部纹身旋转|
+| **[setFacialTattooType](Gameplay.HumanoidV2HeadPart.md#setfacialtattootype)**(`index`: `number`, `GUID`: `string`, `sync`: `boolean`): `void` <br> 设置面部纹身种类贴图|
+| **[setFacialTattooZoom](Gameplay.HumanoidV2HeadPart.md#setfacialtattoozoom)**(`index`: `number`, `value`: `number`, `sync`: `boolean`): `void` <br> 设置面部纹身缩放|
+| **[setHeadPatternColor](Gameplay.HumanoidV2HeadPart.md#setheadpatterncolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置头部花纹颜色|
+| **[setHeadPatternTexture](Gameplay.HumanoidV2HeadPart.md#setheadpatterntexture)**(`textureGuid`: `string`, `sync`: `boolean`): `void` <br> 设置头部花纹贴图|
+| **[setLeftEyeColor](Gameplay.HumanoidV2HeadPart.md#setlefteyecolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置左眼睛颜色|
+| **[setLipstickColor](Gameplay.HumanoidV2HeadPart.md#setlipstickcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置唇膏颜色|
+| **[setLipstickTexture](Gameplay.HumanoidV2HeadPart.md#setlipsticktexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置唇膏贴图|
+| **[setLowerEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#setlowereyehighlightcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置下高光颜色|
+| **[setLowerEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#setlowereyehighlighttexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置下高光种类|
+| **[setMesh](Gameplay.HumanoidV2HeadPart.md#setmesh)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置头部模型|
+| **[setPupilColor](Gameplay.HumanoidV2HeadPart.md#setpupilcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置眼睛瞳孔花纹颜色|
+| **[setPupilPositionX](Gameplay.HumanoidV2HeadPart.md#setpupilpositionx)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔左右位置|
+| **[setPupilPositionY](Gameplay.HumanoidV2HeadPart.md#setpupilpositiony)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔上下位置|
+| **[setPupilRotate](Gameplay.HumanoidV2HeadPart.md#setpupilrotate)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔旋转|
+| **[setPupilScale](Gameplay.HumanoidV2HeadPart.md#setpupilscale)**(`value`: `number`, `sync`: `boolean`): `void` <br> 设置瞳孔大小缩放|
+| **[setPupilTexture](Gameplay.HumanoidV2HeadPart.md#setpupiltexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置眼睛瞳孔花纹|
+| **[setRightEyeColor](Gameplay.HumanoidV2HeadPart.md#setrighteyecolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置右眼睛颜色|
+| **[setUpperEyeHighlightColor](Gameplay.HumanoidV2HeadPart.md#setuppereyehighlightcolor)**(`color`: [`LinearColor`](Type.LinearColor.md), `sync`: `boolean`): `void` <br> 设置上高光颜色|
+| **[setUpperEyeHighlightTexture](Gameplay.HumanoidV2HeadPart.md#setuppereyehighlighttexture)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置上高光种类|
 
 ## Methods
 
 ### characterFaceShadow <Score text="characterFaceShadow" /> 
 
-• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="other" />
+• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="client" />
 
 设置模型
 
@@ -109,7 +109,7 @@ ___
 
 ### getBlushColor <Score text="getBlushColor" /> 
 
-• **getBlushColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBlushColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取腮红颜色
 
@@ -128,7 +128,7 @@ ___
 
 ### getBlushTexture <Score text="getBlushTexture" /> 
 
-• **getBlushTexture**(): `string` <Badge type="tip" text="other" />
+• **getBlushTexture**(): `string` <Badge type="tip" text="client" />
 
 获取腮红贴图
 
@@ -147,7 +147,7 @@ ___
 
 ### getBrowColor <Score text="getBrowColor" /> 
 
-• **getBrowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getBrowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眉毛颜色
 
@@ -166,7 +166,7 @@ ___
 
 ### getBrowTexture <Score text="getBrowTexture" /> 
 
-• **getBrowTexture**(): `string` <Badge type="tip" text="other" />
+• **getBrowTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眉毛
 
@@ -185,11 +185,10 @@ ___
 
 ### getExpression <Score text="getExpression" /> 
 
-• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <Badge type="tip" text="other" />
+• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <Badge type="tip" text="client" />
 
 获取表情
 
-客户端生效
 
 #### Returns
 
@@ -205,7 +204,7 @@ ___
 
 ### getEyeHighlightColor <Score text="getEyeHighlightColor" /> 
 
-• **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眼睛高光颜色
 
@@ -224,7 +223,7 @@ ___
 
 ### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
 
-• **getEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeHighlightTexture**(): `string` 
 
 获取眼睛高光形状
 
@@ -243,7 +242,7 @@ ___
 
 ### getEyeShadowColor <Score text="getEyeShadowColor" /> 
 
-• **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyeShadowColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眼影颜色
 
@@ -262,7 +261,7 @@ ___
 
 ### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
 
-• **getEyeShadowTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeShadowTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眼影贴图
 
@@ -281,7 +280,7 @@ ___
 
 ### getEyeTexture <Score text="getEyeTexture" /> 
 
-• **getEyeTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyeTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眼睛贴图
 
@@ -300,7 +299,7 @@ ___
 
 ### getEyelashColor <Score text="getEyelashColor" /> 
 
-• **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getEyelashColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取睫毛颜色
 
@@ -319,7 +318,7 @@ ___
 
 ### getEyelashTexture <Score text="getEyelashTexture" /> 
 
-• **getEyelashTexture**(): `string` <Badge type="tip" text="other" />
+• **getEyelashTexture**(): `string` <Badge type="tip" text="client" />
 
 获取睫毛
 
@@ -338,7 +337,7 @@ ___
 
 ### getFacialTattooColor <Score text="getFacialTattooColor" /> 
 
-• **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getFacialTattooColor**(`index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取面部纹身颜色
 
@@ -363,7 +362,7 @@ ___
 
 ### getFacialTattooPositionX <Score text="getFacialTattooPositionX" /> 
 
-• **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="client" />
 
 获取面部纹身左右位置
 
@@ -388,7 +387,7 @@ ___
 
 ### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
 
-• **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="client" />
 
 获取面部纹身上下位置
 
@@ -413,7 +412,7 @@ ___
 
 ### getFacialTattooRotation <Score text="getFacialTattooRotation" /> 
 
-• **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="client" />
 
 获取面部纹身旋转
 
@@ -438,7 +437,7 @@ ___
 
 ### getFacialTattooType <Score text="getFacialTattooType" /> 
 
-• **getFacialTattooType**(`index`): `string` <Badge type="tip" text="other" />
+• **getFacialTattooType**(`index`): `string` <Badge type="tip" text="client" />
 
 获取面部纹身种类贴图
 
@@ -463,7 +462,7 @@ ___
 
 ### getFacialTattooZoom <Score text="getFacialTattooZoom" /> 
 
-• **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="other" />
+• **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="client" />
 
 获取面部纹身缩放
 
@@ -488,7 +487,7 @@ ___
 
 ### getHeadPatternColor <Score text="getHeadPatternColor" /> 
 
-• **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getHeadPatternColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取头部花纹颜色
 
@@ -503,7 +502,7 @@ ___
 
 ### getHeadPatternTexture <Score text="getHeadPatternTexture" /> 
 
-• **getHeadPatternTexture**(): `string` <Badge type="tip" text="other" />
+• **getHeadPatternTexture**(): `string` <Badge type="tip" text="client" />
 
 获取头部花纹贴图
 
@@ -518,7 +517,7 @@ ___
 
 ### getLeftEyeColor <Score text="getLeftEyeColor" /> 
 
-• **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLeftEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取左眼睛颜色
 
@@ -537,7 +536,7 @@ ___
 
 ### getLipstickColor <Score text="getLipstickColor" /> 
 
-• **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLipstickColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取唇膏颜色
 
@@ -556,7 +555,7 @@ ___
 
 ### getLipstickTexture <Score text="getLipstickTexture" /> 
 
-• **getLipstickTexture**(): `string` <Badge type="tip" text="other" />
+• **getLipstickTexture**(): `string` <Badge type="tip" text="client" />
 
 获取唇膏贴图
 
@@ -575,7 +574,7 @@ ___
 
 ### getLowerEyeHighlightColor <Score text="getLowerEyeHighlightColor" /> 
 
-• **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getLowerEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取上高光颜色
 
@@ -594,7 +593,7 @@ ___
 
 ### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
 
-• **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
 
 获取下高光种类
 
@@ -613,7 +612,7 @@ ___
 
 ### getMesh <Score text="getMesh" /> 
 
-• **getMesh**(): `string` <Badge type="tip" text="other" />
+• **getMesh**(): `string` 
 
 获取头部模型
 
@@ -632,7 +631,7 @@ ___
 
 ### getPupilColor <Score text="getPupilColor" /> 
 
-• **getPupilColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getPupilColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眼睛瞳孔花纹颜色
 
@@ -651,7 +650,7 @@ ___
 
 ### getPupilPositionX <Score text="getPupilPositionX" /> 
 
-• **getPupilPositionX**(): `number` <Badge type="tip" text="other" />
+• **getPupilPositionX**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔左右位置
 
@@ -670,7 +669,7 @@ ___
 
 ### getPupilPositionY <Score text="getPupilPositionY" /> 
 
-• **getPupilPositionY**(): `number` <Badge type="tip" text="other" />
+• **getPupilPositionY**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔上下位置
 
@@ -689,7 +688,7 @@ ___
 
 ### getPupilRotate <Score text="getPupilRotate" /> 
 
-• **getPupilRotate**(): `number` <Badge type="tip" text="other" />
+• **getPupilRotate**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔旋转
 
@@ -708,7 +707,7 @@ ___
 
 ### getPupilScale <Score text="getPupilScale" /> 
 
-• **getPupilScale**(): `number` <Badge type="tip" text="other" />
+• **getPupilScale**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔大小缩放
 
@@ -727,7 +726,7 @@ ___
 
 ### getPupilTexture <Score text="getPupilTexture" /> 
 
-• **getPupilTexture**(): `string` <Badge type="tip" text="other" />
+• **getPupilTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眼睛瞳孔花纹
 
@@ -746,7 +745,7 @@ ___
 
 ### getRightEyeColor <Score text="getRightEyeColor" /> 
 
-• **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getRightEyeColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取右眼睛颜色
 
@@ -765,7 +764,7 @@ ___
 
 ### getUpperEyeHighlightColor <Score text="getUpperEyeHighlightColor" /> 
 
-• **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **getUpperEyeHighlightColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取上高光颜色
 
@@ -784,7 +783,7 @@ ___
 
 ### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
 
-• **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="other" />
+• **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
 
 获取上高光种类
 
@@ -803,7 +802,7 @@ ___
 
 ### setBlushColor <Score text="setBlushColor" /> 
 
-• **setBlushColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBlushColor**(`color`, `sync`): `void` 
 
 设置腮红颜色
 
@@ -830,7 +829,7 @@ ___
 
 ### setBlushTexture <Score text="setBlushTexture" /> 
 
-• **setBlushTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBlushTexture**(`GUID`, `sync`): `void` 
 
 设置腮红贴图
 
@@ -857,7 +856,7 @@ ___
 
 ### setBrowColor <Score text="setBrowColor" /> 
 
-• **setBrowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowColor**(`color`, `sync`): `void` 
 
 设置眉毛颜色
 
@@ -884,7 +883,7 @@ ___
 
 ### setBrowTexture <Score text="setBrowTexture" /> 
 
-• **setBrowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setBrowTexture**(`GUID`, `sync`): `void` 
 
 设置眉毛
 
@@ -911,11 +910,10 @@ ___
 
 ### setExpression <Score text="setExpression" /> 
 
-• **setExpression**(`type`): `void` <Badge type="tip" text="other" />
+• **setExpression**(`type`): `void` <Badge type="tip" text="client" />
 
 设置表情
 
-客户端生效
 
 #### Parameters
 
@@ -932,7 +930,7 @@ ___
 
 ### setEyeHighlightColor <Score text="setEyeHighlightColor" /> 
 
-• **setEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeHighlightColor**(`color`, `sync`): `void` 
 
 设置眼睛高光颜色
 
@@ -959,7 +957,7 @@ ___
 
 ### setEyeHighlightTexture <Score text="setEyeHighlightTexture" /> 
 
-• **setEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeHighlightTexture**(`GUID`, `sync`): `void` 
 
 设置眼睛高光形状
 
@@ -986,7 +984,7 @@ ___
 
 ### setEyeShadowColor <Score text="setEyeShadowColor" /> 
 
-• **setEyeShadowColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeShadowColor**(`color`, `sync`): `void` 
 
 设置眼影颜色
 
@@ -1013,7 +1011,7 @@ ___
 
 ### setEyeShadowTexture <Score text="setEyeShadowTexture" /> 
 
-• **setEyeShadowTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeShadowTexture**(`GUID`, `sync`): `void` 
 
 设置眼影贴图
 
@@ -1040,7 +1038,7 @@ ___
 
 ### setEyeTexture <Score text="setEyeTexture" /> 
 
-• **setEyeTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyeTexture**(`GUID`, `sync`): `void` 
 
 设置眼睛贴图
 
@@ -1067,7 +1065,7 @@ ___
 
 ### setEyelashColor <Score text="setEyelashColor" /> 
 
-• **setEyelashColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyelashColor**(`color`, `sync`): `void` 
 
 设置睫毛颜色
 
@@ -1094,7 +1092,7 @@ ___
 
 ### setEyelashTexture <Score text="setEyelashTexture" /> 
 
-• **setEyelashTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setEyelashTexture**(`GUID`, `sync`): `void` 
 
 设置睫毛
 
@@ -1121,7 +1119,7 @@ ___
 
 ### setFacialTattooColor <Score text="setFacialTattooColor" /> 
 
-• **setFacialTattooColor**(`index`, `color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooColor**(`index`, `color`, `sync`): `void` 
 
 设置面部纹身颜色
 
@@ -1149,7 +1147,7 @@ ___
 
 ### setFacialTattooPositionX <Score text="setFacialTattooPositionX" /> 
 
-• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void` 
 
 设置面部纹身左右位置
 
@@ -1177,7 +1175,7 @@ ___
 
 ### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
 
-• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void` 
 
 设置面部纹身上下位置
 
@@ -1205,7 +1203,7 @@ ___
 
 ### setFacialTattooRotation <Score text="setFacialTattooRotation" /> 
 
-• **setFacialTattooRotation**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooRotation**(`index`, `value`, `sync`): `void` 
 
 设置面部纹身旋转
 
@@ -1233,7 +1231,7 @@ ___
 
 ### setFacialTattooType <Score text="setFacialTattooType" /> 
 
-• **setFacialTattooType**(`index`, `GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooType**(`index`, `GUID`, `sync`): `void` 
 
 设置面部纹身种类贴图
 
@@ -1261,7 +1259,7 @@ ___
 
 ### setFacialTattooZoom <Score text="setFacialTattooZoom" /> 
 
-• **setFacialTattooZoom**(`index`, `value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setFacialTattooZoom**(`index`, `value`, `sync`): `void` 
 
 设置面部纹身缩放
 
@@ -1289,7 +1287,7 @@ ___
 
 ### setHeadPatternColor <Score text="setHeadPatternColor" /> 
 
-• **setHeadPatternColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHeadPatternColor**(`color`, `sync`): `void` 
 
 设置头部花纹颜色
 
@@ -1312,7 +1310,7 @@ ___
 
 ### setHeadPatternTexture <Score text="setHeadPatternTexture" /> 
 
-• **setHeadPatternTexture**(`textureGuid`, `sync`): `void` <Badge type="tip" text="other" />
+• **setHeadPatternTexture**(`textureGuid`, `sync`): `void` 
 
 设置头部花纹贴图
 
@@ -1335,7 +1333,7 @@ ___
 
 ### setLeftEyeColor <Score text="setLeftEyeColor" /> 
 
-• **setLeftEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLeftEyeColor**(`color`, `sync`): `void` 
 
 设置左眼睛颜色
 
@@ -1362,7 +1360,7 @@ ___
 
 ### setLipstickColor <Score text="setLipstickColor" /> 
 
-• **setLipstickColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLipstickColor**(`color`, `sync`): `void` 
 
 设置唇膏颜色
 
@@ -1389,7 +1387,7 @@ ___
 
 ### setLipstickTexture <Score text="setLipstickTexture" /> 
 
-• **setLipstickTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLipstickTexture**(`GUID`, `sync`): `void` 
 
 设置唇膏贴图
 
@@ -1416,7 +1414,7 @@ ___
 
 ### setLowerEyeHighlightColor <Score text="setLowerEyeHighlightColor" /> 
 
-• **setLowerEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerEyeHighlightColor**(`color`, `sync`): `void` 
 
 设置下高光颜色
 
@@ -1443,7 +1441,7 @@ ___
 
 ### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
 
-• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void` 
 
 设置下高光种类
 
@@ -1470,7 +1468,7 @@ ___
 
 ### setMesh <Score text="setMesh" /> 
 
-• **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMesh**(`GUID`, `sync`): `void` 
 
 设置头部模型
 
@@ -1503,7 +1501,7 @@ ___
 
 ### setPupilColor <Score text="setPupilColor" /> 
 
-• **setPupilColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilColor**(`color`, `sync`): `void` 
 
 设置眼睛瞳孔花纹颜色
 
@@ -1530,7 +1528,7 @@ ___
 
 ### setPupilPositionX <Score text="setPupilPositionX" /> 
 
-• **setPupilPositionX**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilPositionX**(`value`, `sync`): `void` 
 
 设置瞳孔左右位置
 
@@ -1557,7 +1555,7 @@ ___
 
 ### setPupilPositionY <Score text="setPupilPositionY" /> 
 
-• **setPupilPositionY**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilPositionY**(`value`, `sync`): `void` 
 
 设置瞳孔上下位置
 
@@ -1584,7 +1582,7 @@ ___
 
 ### setPupilRotate <Score text="setPupilRotate" /> 
 
-• **setPupilRotate**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilRotate**(`value`, `sync`): `void` 
 
 设置瞳孔旋转
 
@@ -1611,7 +1609,7 @@ ___
 
 ### setPupilScale <Score text="setPupilScale" /> 
 
-• **setPupilScale**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilScale**(`value`, `sync`): `void` 
 
 设置瞳孔大小缩放
 
@@ -1638,7 +1636,7 @@ ___
 
 ### setPupilTexture <Score text="setPupilTexture" /> 
 
-• **setPupilTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setPupilTexture**(`GUID`, `sync`): `void` 
 
 设置眼睛瞳孔花纹
 
@@ -1665,7 +1663,7 @@ ___
 
 ### setRightEyeColor <Score text="setRightEyeColor" /> 
 
-• **setRightEyeColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setRightEyeColor**(`color`, `sync`): `void` 
 
 设置右眼睛颜色
 
@@ -1692,7 +1690,7 @@ ___
 
 ### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
 
-• **setUpperEyeHighlightColor**(`color`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperEyeHighlightColor**(`color`, `sync`): `void` 
 
 设置上高光颜色
 
@@ -1719,7 +1717,7 @@ ___
 
 ### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
 
-• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void` 
 
 设置上高光种类
 

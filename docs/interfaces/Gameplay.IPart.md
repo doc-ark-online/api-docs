@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IPart
+[Avatar](../groups/Avatar.Avatar.md) / IPart
 
 # IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 
@@ -23,17 +23,16 @@
 | Methods |
 | :-----|
 | **[getMesh](Gameplay.IPart.md#getmesh)**(): `string` <br> 获取部位模型|
-| **[setMesh](Gameplay.IPart.md#setmesh)**(`string`, `boolean`): `void` <br> 设置部位模型|
+| **[setMesh](Gameplay.IPart.md#setmesh)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置部位模型|
 
 ## Methods
 
 ### getMesh <Score text="getMesh" /> 
 
-• **getMesh**(): `string` <Badge type="tip" text="other" />
+• **getMesh**(): `string` 
 
 获取部位模型
 
-客户端服务端可调用
 
 #### Returns
 
@@ -45,7 +44,7 @@ ___
 
 ### setMesh <Score text="setMesh" /> 
 
-• **setMesh**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setMesh**(`GUID`, `sync`): `void` 
 
 设置部位模型
 
@@ -55,8 +54,6 @@ ___
 
 :::
 
-sync = false:客户端;
-sync = true:客户端服务端可调用
 
 #### Parameters
 

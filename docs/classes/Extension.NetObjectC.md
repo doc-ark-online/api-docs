@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / NetObjectC
+[Utility](../groups/Utility.Utility.md) / NetObjectC
 
 # NetObjectC<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectC<T\>" />
 
@@ -36,7 +36,7 @@
 
 ### currentPlayer <Score text="currentPlayer" /> 
 
-• `Protected` `get` **currentPlayer**(): [`Player`](Gameplay.Player.md) <Badge type="tip" text="other" />
+• `Protected` `get` **currentPlayer**(): [`Player`](Gameplay.Player.md) <Badge type="tip" text="client" />
 
 获取当前玩家
 
@@ -51,11 +51,10 @@ ___
 
 ### currentPlayerId <Score text="currentPlayerId" /> 
 
-• `Protected` `get` **currentPlayerId**(): `number` <Badge type="tip" text="other" />
+• `Protected` `get` **currentPlayerId**(): `number` <Badge type="tip" text="client" />
 
 获取当前玩家ID
 
-客户端端生效
 
 #### Returns
 
@@ -67,7 +66,7 @@ ___
 
 ### server <Score text="server" /> 
 
-• `Protected` `get` **server**(): `T` <Badge type="tip" text="other" />
+• `Protected` `get` **server**(): `T` <Badge type="tip" text="client" />
 
 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法
 

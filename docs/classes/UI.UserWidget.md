@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UserWidget
+[Gui](../groups/Gui.Gui.md) / UserWidget
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
@@ -40,7 +40,7 @@ UI控件的集合,预制体UI
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -51,18 +51,19 @@ UI控件的集合,预制体UI
 
 | Methods |
 | :-----|
-| **[addToViewport](UI.UserWidget.md#addtoviewport)**(`number`): `void` <br> 添加到屏幕上|
-| **[findChildByPath](UI.UserWidget.md#findchildbypath)**(`string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
+| **[addToViewport](UI.UserWidget.md#addtoviewport)**(`zOrder`: `number`): `void` <br> 添加到屏幕上|
+| **[findChildByPath](UI.UserWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
 | **[removeRootContent](UI.UserWidget.md#removerootcontent)**(): `void` <br> 移除根Canvas,会销毁根Canvas，无法再次使用|
-| **[newObject](UI.UserWidget.md#newobject)**([`Canvas`](UI.Canvas.md)): [`UserWidget`](UI.UserWidget.md) <br> 创建 UserWidget 控件|
+| **[newObject](UI.UserWidget.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md)): [`UserWidget`](UI.UserWidget.md) <br> 创建 UserWidget 控件|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
 
 
@@ -70,7 +71,7 @@ UI控件的集合,预制体UI
 
 ### focusable <Score text="focusable" /> 
 
-• `get` **focusable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **focusable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否响应键盘焦点事件
 
@@ -81,7 +82,7 @@ UI控件的集合,预制体UI
 
 返回相应键盘的焦点事件
 
-• `set` **focusable**(`isFocus`): `void` <Badge type="tip" text="other" />
+• `set` **focusable**(`isFocus`): `void` <Badge type="tip" text="client" />
 
 设置是否响应键盘焦点事件
 
@@ -96,7 +97,7 @@ UI控件的集合,预制体UI
 
 ### rootContent <Score text="rootContent" /> 
 
-• `get` **rootContent**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
+• `get` **rootContent**(): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="client" />
 
 获取根Canvas
 
@@ -107,7 +108,7 @@ UI控件的集合,预制体UI
 
 返回根Canvas
 
-• `set` **rootContent**(`content`): `void` <Badge type="tip" text="other" />
+• `set` **rootContent**(`content`): `void` <Badge type="tip" text="client" />
 
 设置UI的根Canvas
 
@@ -124,7 +125,7 @@ UI控件的集合,预制体UI
 
 ### addToViewport <Score text="addToViewport" /> 
 
-• **addToViewport**(`zOrder`): `void` <Badge type="tip" text="other" />
+• **addToViewport**(`zOrder`): `void` <Badge type="tip" text="client" />
 
 添加到屏幕上
 
@@ -139,7 +140,7 @@ UI控件的集合,预制体UI
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
-• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• **findChildByPath**(`inPath`): [`Widget`](UI.Widget.md) <Badge type="tip" text="client" />
 
 通过相对路径查找节点
 
@@ -159,7 +160,7 @@ UI控件的集合,预制体UI
 
 ### removeRootContent <Score text="removeRootContent" /> 
 
-• **removeRootContent**(): `void` <Badge type="tip" text="other" />
+• **removeRootContent**(): `void` <Badge type="tip" text="client" />
 
 移除根Canvas,会销毁根Canvas，无法再次使用
 
@@ -169,7 +170,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`): [`UserWidget`](UI.UserWidget.md) <Badge type="tip" text="client" />
 
 创建 UserWidget 控件
 

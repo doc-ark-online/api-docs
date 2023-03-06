@@ -1,4 +1,4 @@
-[Network](../modules/Network.Network.md) / HttpRequestType
+[Gameplay](../groups/Gameplay.Gameplay.md) / HttpRequestType
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[Get](Network.HttpRequestType.md#get)** = ``0`` <br> Get请求|
-| **[Post](Network.HttpRequestType.md#post)** = ``1`` <br> Post请求|
+| **[Get](Network.HttpRequestType.md#get)** = ``0`` <br> |
+| **[Post](Network.HttpRequestType.md#post)** = ``1`` <br> |
 
 ## Enumeration Members
 

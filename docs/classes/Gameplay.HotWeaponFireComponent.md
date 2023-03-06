@@ -1,18 +1,18 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponFireComponent
+[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponFireComponent
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
-热武器开火组件
+热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onEndContinuousFireServer](Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数|
-| **[onEndFireClient](Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数|
-| **[onEndFireServer](Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数|
-| **[onStartFireClient](Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数|
-| **[onStartFireServer](Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数|
+| **[onEndContinuousFireServer](Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 绑定的动画GUID|
+| **[onEndFireClient](Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 绑定的动画GUID|
+| **[onEndFireServer](Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 绑定的动画GUID|
+| **[onStartFireClient](Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 绑定的动画GUID|
+| **[onStartFireServer](Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 绑定的动画GUID|
 
 | Accessors |
 | :-----|
@@ -75,7 +75,7 @@ ___
 
 ### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **animationGuid**(): `string` 
 
 绑定的动画GUID
 
@@ -90,6 +90,7 @@ ___
 
 设置动画 GUID
 
+调用端自动广播
 
 #### Parameters
 
@@ -102,7 +103,7 @@ ___
 
 ### currentBulletSize <Score text="currentBulletSize" /> 
 
-• `get` **currentBulletSize**(): `number` <Badge type="tip" text="other" />
+• `get` **currentBulletSize**(): `number` 
 
 获取当前弹夹中子弹数量
 
@@ -117,6 +118,7 @@ ___
 
 设置当前弹夹中子弹数量
 
+调用端自动广播
 
 #### Parameters
 
@@ -129,7 +131,7 @@ ___
 
 ### currentClipSize <Score text="currentClipSize" /> 
 
-• `get` **currentClipSize**(): `number` <Badge type="tip" text="other" />
+• `get` **currentClipSize**(): `number` 
 
 获取当前弹夹容量
 
@@ -144,6 +146,7 @@ ___
 
 设置当前弹夹容量
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -162,7 +165,7 @@ ___
 
 ### currentFireInterval <Score text="currentFireInterval" /> 
 
-• `get` **currentFireInterval**(): `number` <Badge type="tip" text="other" />
+• `get` **currentFireInterval**(): `number` 
 
 获取开火间隙
 
@@ -177,6 +180,7 @@ ___
 
 设置开火间隙
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -195,7 +199,7 @@ ___
 
 ### currentFireModel <Score text="currentFireModel" /> 
 
-• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) <Badge type="tip" text="other" />
+• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) 
 
 获取当前的开火模式
 
@@ -210,7 +214,7 @@ ___
 
 ### currentMultipleShot <Score text="currentMultipleShot" /> 
 
-• `get` **currentMultipleShot**(): `number` <Badge type="tip" text="other" />
+• `get` **currentMultipleShot**(): `number` 
 
 获取一次开火发射的子弹数量
 
@@ -225,6 +229,7 @@ ___
 
 设置一次开火发射的子弹数量
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -243,7 +248,7 @@ ___
 
 ### isFireOnScreenCenter <Score text="isFireOnScreenCenter" /> 
 
-• `get` **isFireOnScreenCenter**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isFireOnScreenCenter**(): `boolean` 
 
 获取是否在屏幕中心开火
 
@@ -258,6 +263,7 @@ ___
 
 设置是否在屏幕中心开火
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -276,7 +282,7 @@ ___
 
 ### isFullAutoMode <Score text="isFullAutoMode" /> 
 
-• `get` **isFullAutoMode**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isFullAutoMode**(): `boolean` 
 
 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹
 
@@ -291,6 +297,7 @@ ___
 
 设置当前状态下isInFullAuto的值
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -309,7 +316,7 @@ ___
 
 ### offsetOfFireOnScreenCenter <Score text="offsetOfFireOnScreenCenter" /> 
 
-• `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) 
 
 获取屏幕中心开火时的偏移
 
@@ -324,6 +331,7 @@ ___
 
 设置屏幕中心开火时的偏移
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -342,7 +350,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` 
 
 是否有动画GUID
 
@@ -357,7 +365,7 @@ ___
 
 ### isFiring <Score text="isFiring" /> 
 
-• **isFiring**(): `boolean` <Badge type="tip" text="other" />
+• **isFiring**(): `boolean` 
 
 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹
 

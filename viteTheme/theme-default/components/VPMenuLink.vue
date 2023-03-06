@@ -2,22 +2,34 @@
 import { useData } from 'vitepress'
 import { isActive } from '../support/utils.js'
 import VPLink from './VPLink.vue'
+import VPPathLink from './VPPathLink.vue'
 
 defineProps<{
   item: any
 }>()
-
 const { page } = useData()
 </script>
 
 <template>
-  <div class="VPMenuLink">
-    <VPLink 
-      :class="{ active: isActive(page.relativePath, item.activeMatch || item.link) }"
+  <div v-if="!item.path" class="VPMenuLink">
+    <VPLink
+      :class="{
+        active: isActive(page.relativePath, item.activeMatch || item.link)
+      }"
       :href="item.link"
     >
       {{ item.text }}
     </VPLink>
+  </div>
+  <div v-else>
+    <VPPathLink
+      :href="item.link"
+      :class="{
+        active: isActive(page.relativePath, item.activeMatch || item.link)
+      }"
+    >
+      {{ item.text }}
+    </VPPathLink>
   </div>
 </template>
 

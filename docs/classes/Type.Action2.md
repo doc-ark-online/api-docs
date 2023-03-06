@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Action2
+[Scripiting](../groups/Scripiting.Scripiting.md) / Action2
 
 # Action2<T, S\> <Badge type="tip" text="Class" /> <Score text="Action2<T, S\>" />
 
@@ -37,11 +37,11 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[add](Type.Action.md#add)**(`Function`, `any`): `void` <br> 添加一个监听方法(有重复过滤)|
-| **[call](Type.Action.md#call)**(`any`): `void` <br> 执行|
+| **[add](Type.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `void` <br> 添加一个监听方法(有重复过滤)|
+| **[call](Type.Action.md#call)**(`...params`: `any`): `void` <br> 执行|
 | **[clear](Type.Action.md#clear)**(): `void` <br> 清除所有监听|
-| **[includes](Type.Action.md#includes)**(`Function`, `any`): `boolean` <br> 判断是否包含某个监听方法|
-| **[remove](Type.Action.md#remove)**(`Function`, `any`): `void` <br> 移除一个监听方法|
+| **[includes](Type.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean` <br> 判断是否包含某个监听方法|
+| **[remove](Type.Action.md#remove)**(`fn`: `Function`, `thisArg`: `any`): `void` <br> 移除一个监听方法|
 :::
 
 

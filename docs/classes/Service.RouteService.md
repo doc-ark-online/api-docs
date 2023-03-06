@@ -1,4 +1,4 @@
-[Service](../modules/Service.Service.md) / RouteService
+[Social](../groups/Social.Social.md) / RouteService
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
@@ -16,8 +16,8 @@
 
 | Properties |
 | :-----|
-| **[onReceiveTeamData](Service.RouteService.md#onreceiveteamdata)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\> <br> 收到队伍数据时会触发的委托|
-| **[onTeamMatchFailure](Service.RouteService.md#onteammatchfailure)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\> <br> 组队请求失败时会触发的委托|
+| **[onReceiveTeamData](Service.RouteService.md#onreceiveteamdata)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\> <br> 获取角色展示/编辑游戏的显示模式切换的委托|
+| **[onTeamMatchFailure](Service.RouteService.md#onteammatchfailure)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\> <br> 获取角色展示/编辑游戏的显示模式切换的委托|
 
 | Accessors |
 | :-----|
@@ -26,23 +26,23 @@
 
 | Methods |
 | :-----|
-| **[addJumpGameCallback](Service.RouteService.md#addjumpgamecallback)**((`jumpFromGameId`: `string`, `carryingData`: `string`) => `void`): `void` <br> 注册游戏跳转的回调，当跨进程从其他游戏跳转到当前游戏时触发。可以被动获取来源游戏Id和携带的数据|
-| **[clearTeamCarryingData](Service.RouteService.md#clearteamcarryingdata)**(`string`): `void` <br> 删除指定Team在组队跳转时带入游戏的数据|
-| **[enterDressUpGame](Service.RouteService.md#enterdressupgame)**(`string`): `void` <br> 退出当前游戏进程，回到主线程的角色编辑游戏。|
-| **[enterLocalGame](Service.RouteService.md#enterlocalgame)**(`string`, `string`, `string`): `void` <br> 跳转本地游戏(可编辑的UGC工程) ，同进程跳转|
-| **[enterNewGame](Service.RouteService.md#enternewgame)**(`string`, `string`): `void` <br> 跳转到新游戏，同进程跳转|
-| **[enterNewGameByTeam](Service.RouteService.md#enternewgamebyteam)**(`string`, `string`[], `Record`<`string`, `unknown`\>[]): `Promise`<`void`\> <br> 组队跳游戏，可以携带数据|
-| **[enterSquareGame](Service.RouteService.md#entersquaregame)**(`string`, `string`): `void` <br> 将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。|
+| **[addJumpGameCallback](Service.RouteService.md#addjumpgamecallback)**(`callback`: (`jumpFromGameId`: `string`, `carryingData`: `string`) => `void`): `void` <br> 注册游戏跳转的回调，当跨进程从其他游戏跳转到当前游戏时触发。可以被动获取来源游戏Id和携带的数据|
+| **[clearTeamCarryingData](Service.RouteService.md#clearteamcarryingdata)**(`teamId`: `string`): `void` <br> 删除指定Team在组队跳转时带入游戏的数据|
+| **[enterDressUpGame](Service.RouteService.md#enterdressupgame)**(`carryingData?`: `string`): `void` <br> 退出当前游戏进程，回到主线程的角色编辑游戏。|
+| **[enterLocalGame](Service.RouteService.md#enterlocalgame)**(`targetGameId`: `string`, `gamePath`: `string`, `carryingData?`: `string`): `void` <br> 跳转本地游戏(可编辑的UGC工程) ，同进程跳转|
+| **[enterNewGame](Service.RouteService.md#enternewgame)**(`targetGameId`: `string`, `carryingData?`: `string`): `void` <br> 跳转到新游戏，同进程跳转|
+| **[enterNewGameByTeam](Service.RouteService.md#enternewgamebyteam)**(`targetGameId`: `string`, `teammatePlayerIds`: `string`[], `carryingData?`: `Record`<`string`, `unknown`\>[]): `Promise`<`void`\> <br> 组队跳游戏，可以携带数据|
+| **[enterSquareGame](Service.RouteService.md#entersquaregame)**(`squareMgsGameId?`: `string`, `carryingData?`: `string`): `void` <br> 将当前游戏进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。|
 | **[getGameCarryingData](Service.RouteService.md#getgamecarryingdata)**(): `Promise`<`string`\> <br> 获取拉起游戏时传入的数据|
 | **[getJumpFromMGSGameId](Service.RouteService.md#getjumpfrommgsgameid)**(): `Promise`<`string`\> <br> 获取游戏来源信息|
-| **[getTeamCarryingData](Service.RouteService.md#getteamcarryingdata)**(`string`): `Record`<`string`, `unknown`\> <br> 获取指定Team在组队跳转时带入游戏的数据|
+| **[getTeamCarryingData](Service.RouteService.md#getteamcarryingdata)**(`teamId`: `string`): `Record`<`string`, `unknown`\> <br> 获取指定Team在组队跳转时带入游戏的数据|
 | **[isInDressUpGame](Service.RouteService.md#isindressupgame)**(): `boolean` <br> 判断当前游戏是不是角色展示/编辑游戏|
 | **[notifyCharacterLoaded](Service.RouteService.md#notifycharacterloaded)**(): `void` <br> 通知233/Playza角色形象加载完毕|
-| **[notifyGameLoadingState](Service.RouteService.md#notifygameloadingstate)**(`number`): `void` <br> 通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)|
-| **[requestGameId](Service.RouteService.md#requestgameid)**(`string`): `Promise`<`string`\> <br> 用内容库MGSGameId来换取gameId|
-| **[requestMGSGameId](Service.RouteService.md#requestmgsgameid)**(`string`): `Promise`<`string`\> <br> 用gameId来换取内容库MGSGameId|
+| **[notifyGameLoadingState](Service.RouteService.md#notifygameloadingstate)**(`newState`: `number`): `void` <br> 通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)|
+| **[requestGameId](Service.RouteService.md#requestgameid)**(`targetMgsGameId`: `string`): `Promise`<`string`\> <br> 用内容库MGSGameId来换取gameId|
+| **[requestMGSGameId](Service.RouteService.md#requestmgsgameid)**(`targetGameId`: `string`): `Promise`<`string`\> <br> 用gameId来换取内容库MGSGameId|
 | **[requestRefreshView](Service.RouteService.md#requestrefreshview)**(): `void` <br> TS请求233刷新View|
-| **[requestSwitchViewLayout](Service.RouteService.md#requestswitchviewlayout)**(`number`): `void` <br> 切换角色展示/编辑游戏的显示模式。|
+| **[requestSwitchViewLayout](Service.RouteService.md#requestswitchviewlayout)**(`newState`: `number`): `void` <br> 切换角色展示/编辑游戏的显示模式。|
 | **[getGameId](Service.RouteService.md#getgameid)**(): `string` <br> 获取游戏Id|
 | **[getGameVersion](Service.RouteService.md#getgameversion)**(): `string` <br> 获取游戏版本|
 | **[getInstance](Service.RouteService.md#getinstance)**(): [`RouteService`](Service.RouteService.md) <br> 获取游戏管理器全局实例|
@@ -68,7 +68,7 @@ ___
 
 ### onViewLayoutSwitched <Score text="onViewLayoutSwitched" /> 
 
-• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\> <Badge type="tip" text="other" />
+• `get` **onViewLayoutSwitched**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewLayoutSwitched`](../modules/Service.Service.md#onviewlayoutswitched)\> <Badge type="tip" text="client" />
 
 获取角色展示/编辑游戏的显示模式切换的委托
 
@@ -89,7 +89,7 @@ ___
 
 ### onViewRefreshed <Score text="onViewRefreshed" /> 
 
-• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\> <Badge type="tip" text="other" />
+• `get` **onViewRefreshed**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<[`OnViewRefreshed`](../modules/Service.Service.md#onviewrefreshed)\> <Badge type="tip" text="client" />
 
 注册View刷新的委托
 
@@ -110,7 +110,7 @@ View刷新的委托
 
 ### addJumpGameCallback <Score text="addJumpGameCallback" /> 
 
-• **addJumpGameCallback**(`callback`): `void` <Badge type="tip" text="other" />
+• **addJumpGameCallback**(`callback`): `void` <Badge type="tip" text="client" />
 
 注册游戏跳转的回调，当跨进程从其他游戏跳转到当前游戏时触发。可以被动获取来源游戏Id和携带的数据
 
@@ -126,7 +126,7 @@ ___
 
 ### clearTeamCarryingData <Score text="clearTeamCarryingData" /> 
 
-• **clearTeamCarryingData**(`teamId`): `void` <Badge type="tip" text="other" />
+• **clearTeamCarryingData**(`teamId`): `void` <Badge type="tip" text="server" />
 
 删除指定Team在组队跳转时带入游戏的数据
 
@@ -142,7 +142,7 @@ ___
 
 ### enterDressUpGame <Score text="enterDressUpGame" /> 
 
-• **enterDressUpGame**(`carryingData?`): `void` <Badge type="tip" text="other" />
+• **enterDressUpGame**(`carryingData?`): `void` <Badge type="tip" text="client" />
 
 退出当前游戏进程，回到主线程的角色编辑游戏。
 
@@ -164,7 +164,7 @@ ___
 
 ### enterLocalGame <Score text="enterLocalGame" /> 
 
-• **enterLocalGame**(`targetGameId`, `gamePath`, `carryingData?`): `void` <Badge type="tip" text="other" />
+• **enterLocalGame**(`targetGameId`, `gamePath`, `carryingData?`): `void` <Badge type="tip" text="client" />
 
 跳转本地游戏(可编辑的UGC工程) ，同进程跳转
 
@@ -179,7 +179,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  目标游戏的MWGameId，一般来说，这里会是模板游戏的gameId |
+| `targetGameId` | `string` |  目标游戏的GameId，一般来说，这里会是模板游戏的gameId |
 | `gamePath` | `string` |  本地游戏工程的路径 |
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
@@ -188,7 +188,7 @@ ___
 
 ### enterNewGame <Score text="enterNewGame" /> 
 
-• **enterNewGame**(`targetGameId`, `carryingData?`): `void` <Badge type="tip" text="other" />
+• **enterNewGame**(`targetGameId`, `carryingData?`): `void` <Badge type="tip" text="client" />
 
 跳转到新游戏，同进程跳转
 
@@ -197,7 +197,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  要跳转的目标游戏ID，MWGameId |
+| `targetGameId` | `string` |  要跳转的目标游戏ID，GameId |
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
 
@@ -205,7 +205,7 @@ ___
 
 ### enterNewGameByTeam <Score text="enterNewGameByTeam" /> 
 
-• **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\> <Badge type="tip" text="other" />
+• **enterNewGameByTeam**(`targetGameId`, `teammatePlayerIds`, `carryingData?`): `Promise`<`void`\> <Badge type="tip" text="server" />
 
 组队跳游戏，可以携带数据
 
@@ -214,7 +214,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetGameId` | `string` |  要跳转的游戏的mwGameId |
+| `targetGameId` | `string` |  要跳转的游戏的GameId |
 | `teammatePlayerIds` | `string`[] |  队友的playerId数组 |
 | `carryingData?` | `Record`<`string`, `unknown`\>[] |  要带入新游戏的数据 default: undefined |
 
@@ -228,9 +228,9 @@ ___
 
 ### enterSquareGame <Score text="enterSquareGame" /> 
 
-• **enterSquareGame**(`squareMgsGameId?`, `carryingData?`): `void` <Badge type="tip" text="other" />
+• **enterSquareGame**(`squareMgsGameId?`, `carryingData?`): `void` <Badge type="tip" text="client" />
 
-将当前MW进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
+将当前游戏进程恢复小窗，拉起新进程进入广场游戏。与默认的跳游戏模式不同。
 
 
 ::: warning Precautions
@@ -251,7 +251,7 @@ ___
 
 ### getGameCarryingData <Score text="getGameCarryingData" /> 
 
-• **getGameCarryingData**(): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **getGameCarryingData**(): `Promise`<`string`\> <Badge type="tip" text="client" />
 
 获取拉起游戏时传入的数据
 
@@ -272,7 +272,7 @@ ___
 
 ### getJumpFromMGSGameId <Score text="getJumpFromMGSGameId" /> 
 
-• **getJumpFromMGSGameId**(): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **getJumpFromMGSGameId**(): `Promise`<`string`\> <Badge type="tip" text="client" />
 
 获取游戏来源信息
 
@@ -287,7 +287,7 @@ ___
 
 ### getTeamCarryingData <Score text="getTeamCarryingData" /> 
 
-• **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\> <Badge type="tip" text="other" />
+• **getTeamCarryingData**(`teamId`): `Record`<`string`, `unknown`\> <Badge type="tip" text="server" />
 
 获取指定Team在组队跳转时带入游戏的数据
 
@@ -308,7 +308,7 @@ ___
 
 ### isInDressUpGame <Score text="isInDressUpGame" /> 
 
-• **isInDressUpGame**(): `boolean` <Badge type="tip" text="other" />
+• **isInDressUpGame**(): `boolean` <Badge type="tip" text="client" />
 
 判断当前游戏是不是角色展示/编辑游戏
 
@@ -329,7 +329,7 @@ ___
 
 ### notifyCharacterLoaded <Score text="notifyCharacterLoaded" /> 
 
-• **notifyCharacterLoaded**(): `void` <Badge type="tip" text="other" />
+• **notifyCharacterLoaded**(): `void` <Badge type="tip" text="client" />
 
 通知233/Playza角色形象加载完毕
 
@@ -345,7 +345,7 @@ ___
 
 ### notifyGameLoadingState <Score text="notifyGameLoadingState" /> 
 
-• **notifyGameLoadingState**(`newState`): `void` <Badge type="tip" text="other" />
+• **notifyGameLoadingState**(`newState`): `void` <Badge type="tip" text="client" />
 
 通知233/Playza当前TS游戏加载状态(收到这个协议，233停止下载，清除Temp文件)
 
@@ -367,7 +367,7 @@ ___
 
 ### requestGameId <Score text="requestGameId" /> 
 
-• **requestGameId**(`targetMgsGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **requestGameId**(`targetMgsGameId`): `Promise`<`string`\> 
 
 用内容库MGSGameId来换取gameId
 
@@ -388,7 +388,7 @@ ___
 
 ### requestMGSGameId <Score text="requestMGSGameId" /> 
 
-• **requestMGSGameId**(`targetGameId`): `Promise`<`string`\> <Badge type="tip" text="other" />
+• **requestMGSGameId**(`targetGameId`): `Promise`<`string`\> 
 
 用gameId来换取内容库MGSGameId
 
@@ -409,7 +409,7 @@ ___
 
 ### requestRefreshView <Score text="requestRefreshView" /> 
 
-• **requestRefreshView**(): `void` <Badge type="tip" text="other" />
+• **requestRefreshView**(): `void` <Badge type="tip" text="client" />
 
 TS请求233刷新View
 
@@ -425,7 +425,7 @@ ___
 
 ### requestSwitchViewLayout <Score text="requestSwitchViewLayout" /> 
 
-• **requestSwitchViewLayout**(`newState`): `void` <Badge type="tip" text="other" />
+• **requestSwitchViewLayout**(`newState`): `void` <Badge type="tip" text="client" />
 
 切换角色展示/编辑游戏的显示模式。
 
@@ -447,7 +447,7 @@ ___
 
 ### getGameId <Score text="getGameId" /> 
 
-• `Static` **getGameId**(): `string` <Badge type="tip" text="other" />
+• `Static` **getGameId**(): `string` <Badge type="tip" text="client" />
 
 获取游戏Id
 
@@ -468,7 +468,7 @@ ___
 
 ### getGameVersion <Score text="getGameVersion" /> 
 
-• `Static` **getGameVersion**(): `string` <Badge type="tip" text="other" />
+• `Static` **getGameVersion**(): `string` <Badge type="tip" text="client" />
 
 获取游戏版本
 
@@ -489,7 +489,7 @@ ___
 
 ### getInstance <Score text="getInstance" /> 
 
-• `Static` **getInstance**(): [`RouteService`](Service.RouteService.md) <Badge type="tip" text="other" />
+• `Static` **getInstance**(): [`RouteService`](Service.RouteService.md) 
 
 获取游戏管理器全局实例
 
@@ -504,7 +504,7 @@ ___
 
 ### getMGSGameId <Score text="getMGSGameId" /> 
 
-• `Static` **getMGSGameId**(): `string` <Badge type="tip" text="other" />
+• `Static` **getMGSGameId**(): `string` <Badge type="tip" text="client" />
 
 获取短游戏ID
 

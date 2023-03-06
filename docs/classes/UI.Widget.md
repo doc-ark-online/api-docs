@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Widget
+[Gui](../groups/Gui.Gui.md) / Widget
 
 # Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 
@@ -8,13 +8,13 @@
 
 - **`Widget`**
 
-  ↳ [`Button`](UI.Button.md)
-
   ↳ [`ColorPick`](UI.ColorPick.md)
 
   ↳ [`Image`](UI.Image.md)
 
   ↳ [`InputBox`](UI.InputBox.md)
+
+  ↳ [`MaskButton`](UI.MaskButton.md)
 
   ↳ [`PanelWidget`](UI.PanelWidget.md)
 
@@ -51,7 +51,7 @@
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息|
+| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -61,14 +61,15 @@
 | Methods |
 | :-----|
 | **[destroyObject](UI.Widget.md#destroyobject)**(): `void` <br> 立刻移除并销毁 不可以在使用|
-| **[equal](UI.Widget.md#equal)**([`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
+| **[equal](UI.Widget.md#equal)**(`that`: [`Widget`](UI.Widget.md)): `boolean` <br> 判断是不是同一个对象|
 | **[invalidateLayoutAndVolatility](UI.Widget.md#invalidatelayoutandvolatility)**(): `void` <br> 立刻触发重新渲染的和排布计算|
+| **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 
 ## Accessors
 
 ### autoSizeEnable <Score text="autoSizeEnable" /> 
 
-• `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **autoSizeEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否自动设置大小
 
@@ -79,7 +80,7 @@
 
 是否自动设置大小
 
-• `set` **autoSizeEnable**(`autoSize`): `void` <Badge type="tip" text="other" />
+• `set` **autoSizeEnable**(`autoSize`): `void` <Badge type="tip" text="client" />
 
 设置是否自动设置大小
 
@@ -95,7 +96,7 @@ ___
 
 ### cachedGeometry <Score text="cachedGeometry" /> 
 
-• `get` **cachedGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
+• `get` **cachedGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取上一次的GetTickSpaceGeometry
 
@@ -110,7 +111,7 @@ ___
 
 ### constraints <Score text="constraints" /> 
 
-• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <Badge type="tip" text="other" />
+• `get` **constraints**(): `Readonly`<[`UIConstraintAnchors`](UI.UIConstraintAnchors.md)\> <Badge type="tip" text="client" />
 
 获取控件的布局
 
@@ -121,7 +122,7 @@ ___
 
 控件的布局
 
-• `set` **constraints**(`ininconstraints`): `void` <Badge type="tip" text="other" />
+• `set` **constraints**(`ininconstraints`): `void` <Badge type="tip" text="client" />
 
 设置控件的布局
 
@@ -137,7 +138,7 @@ ___
 
 ### desiredSize <Score text="desiredSize" /> 
 
-• `get` **desiredSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **desiredSize**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取期望大小
 
@@ -152,7 +153,7 @@ ___
 
 ### enable <Score text="enable" /> 
 
-• `get` **enable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **enable**(): `boolean` <Badge type="tip" text="client" />
 
 是否可用
 
@@ -163,7 +164,7 @@ ___
 
 boolean
 
-• `set` **enable**(`isEnable`): `void` <Badge type="tip" text="other" />
+• `set` **enable**(`isEnable`): `void` <Badge type="tip" text="client" />
 
 设置可用性
 
@@ -181,7 +182,7 @@ ___
 
 ### guid <Score text="guid" /> 
 
-• `get` **guid**(): `string` <Badge type="tip" text="other" />
+• `get` **guid**(): `string` <Badge type="tip" text="client" />
 
 获取控件GUID
 
@@ -196,7 +197,7 @@ ___
 
 ### isHovered <Score text="isHovered" /> 
 
-• `get` **isHovered**(): `boolean` <Badge type="tip" text="other" />
+• `get` **isHovered**(): `boolean` <Badge type="tip" text="client" />
 
 是否是hovered
 
@@ -211,7 +212,7 @@ ___
 
 ### name <Score text="name" /> 
 
-• `get` **name**(): `string` <Badge type="tip" text="other" />
+• `get` **name**(): `string` <Badge type="tip" text="client" />
 
 获取名字
 
@@ -222,7 +223,7 @@ ___
 
 返回名字
 
-• `set` **name**(`name`): `void` <Badge type="tip" text="other" />
+• `set` **name**(`name`): `void` <Badge type="tip" text="client" />
 
 设定名字
 
@@ -238,7 +239,7 @@ ___
 
 ### paintSpaceGeometry <Score text="paintSpaceGeometry" /> 
 
-• `get` **paintSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
+• `get` **paintSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取最后一次用于渲染Widget的几何信息
 
@@ -253,7 +254,7 @@ ___
 
 ### parent <Score text="parent" /> 
 
-• `get` **parent**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="other" />
+• `get` **parent**(): [`Widget`](UI.Widget.md) <Badge type="tip" text="client" />
 
 获取父节点
 
@@ -268,7 +269,7 @@ ___
 
 ### position <Score text="position" /> 
 
-• `get` **position**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <Badge type="tip" text="other" />
+• `get` **position**(): `Readonly`<[`Vector2`](Type.Vector2.md)\> <Badge type="tip" text="client" />
 
 获取控件的位置
 
@@ -279,7 +280,7 @@ ___
 
 控件的位置
 
-• `set` **position**(`inFigmaPosition`): `void` <Badge type="tip" text="other" />
+• `set` **position**(`inFigmaPosition`): `void` <Badge type="tip" text="client" />
 
 设置控件的位置
 
@@ -295,7 +296,7 @@ ___
 
 ### renderOpacity <Score text="renderOpacity" /> 
 
-• `get` **renderOpacity**(): `number` <Badge type="tip" text="other" />
+• `get` **renderOpacity**(): `number` <Badge type="tip" text="client" />
 
 获取渲染透明度
 
@@ -306,7 +307,7 @@ ___
 
 返回渲染透明度
 
-• `set` **renderOpacity**(`InOpacity`): `void` <Badge type="tip" text="other" />
+• `set` **renderOpacity**(`InOpacity`): `void` <Badge type="tip" text="client" />
 
 设置渲染透明度 0 ~ 1
 
@@ -322,7 +323,7 @@ ___
 
 ### renderScale <Score text="renderScale" /> 
 
-• `get` **renderScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **renderScale**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取渲染缩放
 
@@ -333,7 +334,7 @@ ___
 
 返回渲染缩放
 
-• `set` **renderScale**(`scale`): `void` <Badge type="tip" text="other" />
+• `set` **renderScale**(`scale`): `void` <Badge type="tip" text="client" />
 
 设置渲染缩放
 
@@ -349,7 +350,7 @@ ___
 
 ### renderShear <Score text="renderShear" /> 
 
-• `get` **renderShear**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **renderShear**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取渲染错切形变
 
@@ -360,7 +361,7 @@ ___
 
 返回渲染错切形变
 
-• `set` **renderShear**(`shear`): `void` <Badge type="tip" text="other" />
+• `set` **renderShear**(`shear`): `void` <Badge type="tip" text="client" />
 
 设置渲染错切形变
 
@@ -376,7 +377,7 @@ ___
 
 ### renderTransformAngle <Score text="renderTransformAngle" /> 
 
-• `get` **renderTransformAngle**(): `number` <Badge type="tip" text="other" />
+• `get` **renderTransformAngle**(): `number` <Badge type="tip" text="client" />
 
 获取渲染的角度
 
@@ -387,7 +388,7 @@ ___
 
 返回渲染角度
 
-• `set` **renderTransformAngle**(`o`): `void` <Badge type="tip" text="other" />
+• `set` **renderTransformAngle**(`o`): `void` <Badge type="tip" text="client" />
 
 设置渲染的角度
 
@@ -403,7 +404,7 @@ ___
 
 ### renderTransformPivot <Score text="renderTransformPivot" /> 
 
-• `get` **renderTransformPivot**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **renderTransformPivot**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取渲染锚点
 
@@ -414,7 +415,7 @@ ___
 
 返回渲染锚点
 
-• `set` **renderTransformPivot**(`Pivot`): `void` <Badge type="tip" text="other" />
+• `set` **renderTransformPivot**(`Pivot`): `void` <Badge type="tip" text="client" />
 
 设置渲染锚点
 
@@ -430,7 +431,7 @@ ___
 
 ### size <Score text="size" /> 
 
-• `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="other" />
+• `get` **size**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取大小
 
@@ -441,7 +442,7 @@ ___
 
 FVector2D
 
-• `set` **size**(`inSize`): `void` <Badge type="tip" text="other" />
+• `set` **size**(`inSize`): `void` <Badge type="tip" text="client" />
 
 设置控件的大小
 
@@ -457,11 +458,13 @@ ___
 
 ### slot <Score text="slot" /> 
 
-• `get` **slot**(): [`UISlot`](UI.UISlot.md) <Badge type="tip" text="other" />
+• `get` **slot**(): [`UISlot`](UI.UISlot.md) <Badge type="tip" text="client" />
 
-**`Deprecated`**
+::: danger Deprecated
 
-since:v0.20.0.0 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
+
+:::
 
 获取插槽
 
@@ -476,7 +479,7 @@ ___
 
 ### tickSpaceGeometry <Score text="tickSpaceGeometry" /> 
 
-• `get` **tickSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="other" />
+• `get` **tickSpaceGeometry**(): [`Geometry`](UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取最后一次用于驱动Widget Tick的几何信息
 
@@ -491,7 +494,7 @@ ___
 
 ### transform <Score text="transform" /> 
 
-• `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="other" />
+• `get` **transform**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <Badge type="tip" text="client" />
 
 得到控件的大小和位置
 
@@ -502,7 +505,7 @@ ___
 
 控件的大小和位置
 
-• `set` **transform**(`inTransform`): `void` <Badge type="tip" text="other" />
+• `set` **transform**(`inTransform`): `void` <Badge type="tip" text="client" />
 
 设置控件的大小和位置
 
@@ -518,7 +521,7 @@ ___
 
 ### visibility <Score text="visibility" /> 
 
-• `get` **visibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="other" />
+• `get` **visibility**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <Badge type="tip" text="client" />
 
 获取可见性
 
@@ -529,7 +532,7 @@ ___
 
 返回可见性
 
-• `set` **visibility**(`Visibility`): `void` <Badge type="tip" text="other" />
+• `set` **visibility**(`Visibility`): `void` <Badge type="tip" text="client" />
 
 设置可见性
 
@@ -545,7 +548,7 @@ ___
 
 ### visible <Score text="visible" /> 
 
-• `get` **visible**(): `boolean` <Badge type="tip" text="other" />
+• `get` **visible**(): `boolean` <Badge type="tip" text="client" />
 
 是否可见
 
@@ -560,7 +563,7 @@ ___
 
 ### zOrder <Score text="zOrder" /> 
 
-• `get` **zOrder**(): `number` <Badge type="tip" text="other" />
+• `get` **zOrder**(): `number` <Badge type="tip" text="client" />
 
 获取zorder
 
@@ -571,7 +574,7 @@ ___
 
 zorder
 
-• `set` **zOrder**(`InZOrder`): `void` <Badge type="tip" text="other" />
+• `set` **zOrder**(`InZOrder`): `void` <Badge type="tip" text="client" />
 
 设置zoder
 
@@ -587,7 +590,7 @@ zorder
 
 ### destroyObject <Score text="destroyObject" /> 
 
-• **destroyObject**(): `void` <Badge type="tip" text="other" />
+• **destroyObject**(): `void` <Badge type="tip" text="client" />
 
 立刻移除并销毁 不可以在使用
 
@@ -597,7 +600,7 @@ ___
 
 ### equal <Score text="equal" /> 
 
-• **equal**(`that`): `boolean` <Badge type="tip" text="other" />
+• **equal**(`that`): `boolean` <Badge type="tip" text="client" />
 
 判断是不是同一个对象
 
@@ -618,8 +621,18 @@ ___
 
 ### invalidateLayoutAndVolatility <Score text="invalidateLayoutAndVolatility" /> 
 
-• **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="other" />
+• **invalidateLayoutAndVolatility**(): `void` <Badge type="tip" text="client" />
 
 立刻触发重新渲染的和排布计算
+
+
+
+___
+
+### removeObject <Score text="removeObject" /> 
+
+• **removeObject**(): `void` <Badge type="tip" text="client" />
+
+立刻移除并添加到根节点 可以再使用
 
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Animation
+[Animations](../groups/Animations.Animations.md) / Animation
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
@@ -6,7 +6,7 @@
 
 ::: warning Precautions
 
-请不要直接使用new创建
+请不要直接使用new创建，playAnimation是个快速实现功能的接口,可配置参数有限，loadAnimation可以返回动画,以进行更加精细的动画控制
 
 :::
 
@@ -118,6 +118,12 @@ ___
 
 动画结束回调(在动画不被中断且正常播放完成情况下仅客户端触发)
 
+::: warning Precautions
+
+性能限制，服务器不播放动画，请在客户端使用该委托。有几种情况下不会触发该委托 1 调用pause方法 2 调用stop方法 3 该动画正在播放，调用play接口或者调用playAnimation接口
+
+:::
+
 使用示例:动画播放结束后执行逻辑
 ```ts
 anim.onAnimFinished.add(()=>{
@@ -212,11 +218,16 @@ anim.play();
 
 ### pause <Score text="pause" /> 
 
-• **pause**(): `boolean` <Badge type="tip" text="other" />
+• **pause**(): `boolean` 
 
 暂停动画,不会触发onAnimFinished委托
 
-与角色创建方式绑定
+
+::: warning Precautions
+
+生效范围与角色创建方式绑定
+
+:::
 
 使用示例:暂停动画
 ```ts
@@ -236,11 +247,16 @@ ___
 
 ### play <Score text="play" /> 
 
-• **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` 
 
 从动画资源的起点播放动画
 
-与角色创建方式绑定
+
+::: warning Precautions
+
+生效范围与角色创建方式绑定
+
+:::
 
 使用示例:播放动画
 ```ts
@@ -258,11 +274,16 @@ ___
 
 ### resume <Score text="resume" /> 
 
-• **resume**(): `boolean` <Badge type="tip" text="other" />
+• **resume**(): `boolean` 
 
 从当前位置继续动画播放
 
-与角色创建方式绑定
+
+::: warning Precautions
+
+生效范围与角色创建方式绑定
+
+:::
 
 使用示例:恢复播放
 ```ts
@@ -282,11 +303,16 @@ ___
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` 
 
 停止播放,不会触发onAnimFinished委托
 
-与角色创建方式绑定
+
+::: warning Precautions
+
+生效范围与角色创建方式绑定
+
+:::
 
 使用示例:暂停播放
 ```ts

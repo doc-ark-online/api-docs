@@ -1,8 +1,21 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HumanoidV1
+[Avatar](../groups/Avatar.Avatar.md) / HumanoidV1
 
 # HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
 
-人形对象V1接口
+人形外观形象对象,用于基础人形外观的设置.
+
+::: warning Precautions
+
+目前玩家角色对象,NPC 默认使用HumanoidV2(高级人形形象).当项目使用非HumanoidV1(基础人形外观)时,需要切换类型到HumanoidV1形象.获取HumanoidV1(let humanoidV1 = npc.getAppearance<Gameplay.HumanoidV1>()),进行形象更新.
+
+:::
+
+使用示例:(关于示例的描述、说明)
+```ts
+1.切换Character为HumanoidV1外观类型：character.appearanceType = Gameplay.AppearanceType.HumanoidV1;
+2.获取对应的外观对象： let appearance = npc.getAppearance<Gameplay.HumanoidV1>();
+3.使用相关的换装能力：appearance.API()
+```
 
 ## Hierarchy
 
@@ -18,33 +31,33 @@
 
 | Properties |
 | :-----|
-| **[face](Gameplay.HumanoidV1.md#face)**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md) <br> 脸部|
-| **[hair](Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md) <br> 头发|
-| **[trunk](Gameplay.HumanoidV1.md#trunk)**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md) <br> 身体|
+| **[face](Gameplay.HumanoidV1.md#face)**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md) <br> 切换角色主Mesh|
+| **[hair](Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md) <br> 切换角色主Mesh|
+| **[trunk](Gameplay.HumanoidV1.md#trunk)**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md) <br> 切换角色主Mesh|
 
 
 ::: details 点击查看继承
 | Properties |
 | :-----|
-| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边|
-| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理对象|
+| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 后处理开关|
+| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理开关|
 :::
 
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.HumanoidV1.md#changesomatotype)**([`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md), `boolean`): `void` <br> 切换角色主Mesh|
+| **[changeSomatotype](Gameplay.HumanoidV1.md#changesomatotype)**(`value`: [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md), `sync`: `boolean`): `void` <br> 切换角色主Mesh|
 | **[getSomatotype](Gameplay.HumanoidV1.md#getsomatotype)**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) <br> 获取当前的主Mesh|
 | **[getWholeBody](Gameplay.HumanoidV1.md#getwholebody)**(): `string` <br> 获取全身模型|
-| **[setWholeBody](Gameplay.HumanoidV1.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型|
+| **[setWholeBody](Gameplay.HumanoidV1.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置全身模型|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.LinearColor.md), `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关|
-| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关|
+| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
+| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
+| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 :::
 
 
@@ -83,11 +96,10 @@ ___
 
 ### changeSomatotype <Score text="changeSomatotype" /> 
 
-• **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **changeSomatotype**(`value`, `sync`): `void` 
 
 切换角色主Mesh
 
-sync = false:客户端,sync = true:双端
 
 使用示例: 角色切换类型1.切换外观类型 appearanceType.设置对应的体型SomatotypeV1 设置模型setWholeBody
 ```ts
@@ -119,7 +131,7 @@ let Tappearance = npc.appearance as Gameplay.HumanoidV1;
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
-• **getSomatotype**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) <Badge type="tip" text="other" />
+• **getSomatotype**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) 
 
 获取当前的主Mesh
 
@@ -138,7 +150,7 @@ ___
 
 ### getWholeBody <Score text="getWholeBody" /> 
 
-• **getWholeBody**(): `string` <Badge type="tip" text="other" />
+• **getWholeBody**(): `string` 
 
 获取全身模型
 
@@ -156,7 +168,7 @@ ___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 
-• **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWholeBody**(`GUID`, `sync`): `void` 
 
 设置全身模型
 

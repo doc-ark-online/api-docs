@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / TouchInputType
+[Input](../groups/Input.Input.md) / TouchInputType
 
 # TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[TouchBegin](Gameplay.TouchInputType.md#touchbegin)** = ``0`` <br> 触摸开始|
-| **[TouchEnd](Gameplay.TouchInputType.md#touchend)** = ``2`` <br> 触摸结束|
-| **[TouchMove](Gameplay.TouchInputType.md#touchmove)** = ``1`` <br> 触摸移动|
+| **[TouchBegin](Gameplay.TouchInputType.md#touchbegin)** = ``0`` <br> |
+| **[TouchEnd](Gameplay.TouchInputType.md#touchend)** = ``2`` <br> |
+| **[TouchMove](Gameplay.TouchInputType.md#touchmove)** = ``1`` <br> |
 
 ## Enumeration Members
 

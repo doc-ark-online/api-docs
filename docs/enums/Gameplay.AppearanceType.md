@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AppearanceType
+[Avatar](../groups/Avatar.Avatar.md) / AppearanceType
 
 # AppearanceType <Badge type="tip" text="Enumeration" /> <Score text="AppearanceType" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[FourFootStandard](Gameplay.AppearanceType.md#fourfootstandard)** = ``2`` <br> 多足类型|
-| **[HumanoidV1](Gameplay.AppearanceType.md#humanoidv1)** = ``0`` <br> 基础人形|
-| **[HumanoidV2](Gameplay.AppearanceType.md#humanoidv2)** = ``1`` <br> 高级人形|
+| **[FourFootStandard](Gameplay.AppearanceType.md#fourfootstandard)** = ``2`` <br> |
+| **[HumanoidV1](Gameplay.AppearanceType.md#humanoidv1)** = ``0`` <br> |
+| **[HumanoidV2](Gameplay.AppearanceType.md#humanoidv2)** = ``1`` <br> |
 
 ## Enumeration Members
 

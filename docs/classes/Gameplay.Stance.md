@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / Stance
+[Animations](../groups/Animations.Animations.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
@@ -23,7 +23,6 @@
 
 **`Effect`**
 
-双端函数
 
 #### Parameters
 
@@ -36,11 +35,10 @@
 
 ### play <Score text="play" /> 
 
-• **play**(): `boolean` <Badge type="tip" text="other" />
+• **play**(): `boolean` 
 
 播放这个姿态对象, 并返回执行结果
 
-可选同步
 
 ::: warning Precautions
 
@@ -60,7 +58,13 @@ ___
 
 ### playInternal <Score text="playInternal" /> 
 
-• `Protected` **playInternal**(): `boolean` <Badge type="tip" text="other" />
+• `Protected` **playInternal**(): `boolean` 
+
+::: danger Deprecated
+
+since:022 reason:不该暴露的接口 replacement:play()
+
+:::
 
 播放姿态的内部实现
 
@@ -75,11 +79,10 @@ ___
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): `boolean` <Badge type="tip" text="other" />
+• **stop**(): `boolean` 
 
 停止这个姿态对象, 并返回执行结果
 
-可选同步
 
 ::: warning Precautions
 
@@ -99,7 +102,13 @@ ___
 
 ### stopInternal <Score text="stopInternal" /> 
 
-• **stopInternal**(): `boolean` <Badge type="tip" text="other" />
+• **stopInternal**(): `boolean` 
+
+::: danger Deprecated
+
+since:022 reason:不该暴露的接口 replacement:stop()
+
+:::
 
 停止姿态的内部实现
 

@@ -8,8 +8,9 @@ const props = defineProps<{
   href?: string
   noIcon?: boolean
 }>()
-
-const isExternal = computed(() => props.href && EXTERNAL_URL_RE.test(props.href))
+const isExternal = computed(
+  () => props.href && EXTERNAL_URL_RE.test(props.href)
+)
 </script>
 
 <template>

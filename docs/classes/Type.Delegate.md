@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / Delegate
+[Scripiting](../groups/Scripiting.Scripiting.md) / Delegate
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
@@ -21,8 +21,8 @@
 
 | Methods |
 | :-----|
-| **[bind](Type.Delegate.md#bind)**(`T`): `void` <br> 绑定函数|
-| **[execute](Type.Delegate.md#execute)**(`Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数|
+| **[bind](Type.Delegate.md#bind)**(`func`: `T`): `void` <br> 绑定函数|
+| **[execute](Type.Delegate.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数|
 | **[isBound](Type.Delegate.md#isbound)**(): `boolean` <br> 是否绑定|
 | **[unbind](Type.Delegate.md#unbind)**(): `void` <br> 解绑函数|
 
@@ -36,7 +36,7 @@
 
 ### bind <Score text="bind" /> 
 
-• **bind**(`func`): `void` <Badge type="tip" text="other" />
+• **bind**(`func`): `void` 
 
 绑定函数
 
@@ -56,7 +56,7 @@ ___
 
 ### execute <Score text="execute" /> 
 
-• **execute**(`...arg`): `ReturnType`<`T`\> <Badge type="tip" text="other" />
+• **execute**(`...arg`): `ReturnType`<`T`\> 
 
 执行绑定函数
 
@@ -81,7 +81,7 @@ ___
 
 ### isBound <Score text="isBound" /> 
 
-• **isBound**(): `boolean` <Badge type="tip" text="other" />
+• **isBound**(): `boolean` 
 
 是否绑定
 
@@ -100,7 +100,7 @@ ___
 
 ### unbind <Score text="unbind" /> 
 
-• **unbind**(): `void` <Badge type="tip" text="other" />
+• **unbind**(): `void` 
 
 解绑函数
 

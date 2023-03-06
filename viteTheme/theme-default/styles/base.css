@@ -15,6 +15,7 @@ html.dark {
 }
 
 body {
+  overflow-y: scroll;
   margin: 0;
   width: 100%;
   min-width: 320px;

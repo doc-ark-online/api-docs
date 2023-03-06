@@ -1,4 +1,4 @@
-[Util](../modules/Util.Util.md) / [TweenUtil](../modules/Util.TweenUtil.md) / Sequence
+[Utility](../groups/Utility.Utility.md) / [TweenUtility](../groups/Utility.TweenUtility.md) / Sequence
 
 # Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
 
@@ -14,7 +14,7 @@
 
 ### nextID <Score text="nextID" /> 
 
-• `Static` **nextID**(): `number` <Badge type="tip" text="other" />
+• `Static` **nextID**(): `number` 
 
 获取下一个ID
 

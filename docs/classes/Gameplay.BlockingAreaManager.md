@@ -1,6 +1,12 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / BlockingAreaManager
+[Gameplay](../groups/Gameplay.Gameplay.md) / BlockingAreaManager
 
 # BlockingAreaManager <Badge type="tip" text="Class" /> <Score text="BlockingAreaManager" />
+
+::: danger Deprecated
+
+since:022 reason:删除 replacement:请直接使用函数setPlayerPassableForAllArea()
+
+:::
 
 禁行区管理类,用于调用禁行区的全局方法
 
@@ -19,13 +25,13 @@
 
 | Methods |
 | :-----|
-| **[setPlayerPassableForArea](Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`MWActor`, `boolean`, `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限|
+| **[setPlayerPassableForArea](Gameplay.BlockingAreaManager.md#setplayerpassableforarea)**(`Target`: `MWActor`, `CanPass`: `boolean`, `Guid`: `number`): `void` <br> 设置所有禁行区对某个玩家的通过权限|
 
 ## Methods
 
 ### setPlayerPassableForArea <Score text="setPlayerPassableForArea" /> 
 
-• `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void` <Badge type="tip" text="other" />
+• `Static` **setPlayerPassableForArea**(`Target`, `CanPass`, `Guid`): `void` 
 
 设置所有禁行区对某个玩家的通过权限
 

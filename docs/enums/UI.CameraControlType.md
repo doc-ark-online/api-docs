@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / CameraControlType
+[Gui](../groups/Gui.Gui.md) / CameraControlType
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[CameraType](UI.CameraControlType.md#cameratype)** = ``2`` <br> 相机  控制|
-| **[MoveType](UI.CameraControlType.md#movetype)** = ``1`` <br> 移动 控制|
-| **[None](UI.CameraControlType.md#none)** = ``0`` <br> 无控制类型|
+| **[CameraType](UI.CameraControlType.md#cameratype)** = ``2`` <br> |
+| **[MoveType](UI.CameraControlType.md#movetype)** = ``1`` <br> |
+| **[None](UI.CameraControlType.md#none)** = ``0`` <br> |
 
 ## Enumeration Members
 

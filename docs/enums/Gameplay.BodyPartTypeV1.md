@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / BodyPartTypeV1
+[Avatar](../groups/Avatar.Avatar.md) / BodyPartTypeV1
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 
@@ -8,9 +8,9 @@ V1角色部位
 
 | Enumeration Members |
 | :-----|
-| **[Face](Gameplay.BodyPartTypeV1.md#face)** = ``1`` <br> 面部|
-| **[Hair](Gameplay.BodyPartTypeV1.md#hair)** = ``0`` <br> 头发|
-| **[Trunk](Gameplay.BodyPartTypeV1.md#trunk)** = ``2`` <br> 身体|
+| **[Face](Gameplay.BodyPartTypeV1.md#face)** = ``1`` <br> |
+| **[Hair](Gameplay.BodyPartTypeV1.md#hair)** = ``0`` <br> |
+| **[Trunk](Gameplay.BodyPartTypeV1.md#trunk)** = ``2`` <br> |
 
 ## Enumeration Members
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / AttenuationShape
+[Sounds](../groups/Sounds.Sounds.md) / AttenuationShape
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Box](Gameplay.AttenuationShape.md#box)** = ``2`` <br> 盒体|
-| **[Capsule](Gameplay.AttenuationShape.md#capsule)** = ``1`` <br> 胶囊体|
-| **[Sphere](Gameplay.AttenuationShape.md#sphere)** = ``0`` <br> 球体|
+| **[Box](Gameplay.AttenuationShape.md#box)** = ``2`` <br> |
+| **[Capsule](Gameplay.AttenuationShape.md#capsule)** = ``1`` <br> |
+| **[Sphere](Gameplay.AttenuationShape.md#sphere)** = ``0`` <br> |
 
 ## Enumeration Members
 

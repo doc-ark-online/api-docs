@@ -1,43 +1,25 @@
 import type { DefaultTheme } from '../../viteTheme/shared'
-import { typeToNamespace, pathToSideBar } from '../../utils'
+import { dealConfigSidebar, dealItem } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
+  // {
+  //   text: 'Index',
+  //   collapsible: false,
+  //   // collapsed: false,
+  //   items: dealItem('groups')
+  // },
   {
     text: 'Index',
-    collapsible: false,
-    // collapsed: false,
     items: [
-      { text: 'Events', link: '/modules/Events.Events' },
-      { text: 'Extension', link: '/modules/Extension.Extension' },
-      { text: 'Gameplay', link: '/modules/Gameplay.Gameplay' },
-      { text: 'MobileEditor', link: '/modules/MobileEditor.MobileEditor' },
-      { text: ' Service', link: '/modules/Service.Service' },
-      { text: 'Type', link: '/modules/Type.Type' },
-      { text: 'UI', link: '/modules/UI.UI' },
-      { text: 'Util', link: '/modules/Util.Util' },
-      { text: 'DataStorage', link: '/modules/DataStorage.DataStorage' },
-      { text: 'Network', link: '/modules/Network.Network' }
+      { text: '介绍', link: '/index.md' },
+      { text: '开始使用', link: '/start.md' },
+      { text: 'Enums', link: '/enums.md' },
+      { text: 'Interfaces', link: '/interfaces.md' },
+      { text: 'Classes', link: '/classes.md' }
     ]
   },
-  ...typeToNamespace(['classes', 'enums', 'interfaces']),
-  {
-    text: 'Util',
-    collapsible: true,
-    collapsed: true,
-    items: [
-      { text: 'AssetUtil', link: '/modules/Util.AssetUtil.md' },
-      { text: 'InputUtil', link: '/modules/Util.InputUtil.md' },
-      { text: 'LocaleUtil', link: '/modules/Util.LocaleUtil.md' },
-      { text: 'MathUtil', link: '/modules/Util.MathUtil.md' },
-      { text: 'NFTUtil', link: '/modules/Util.NFTUtil.md' },
-      { text: 'StringUtil', link: '/modules/Util.StringUtil.md' },
-      { text: 'SystemUtil', link: '/modules/Util.SystemUtil.md' },
-      { text: 'TimeUtil', link: '/modules/Util.TimeUtil.md' },
-      { text: 'TweenUtil', link: '/modules/Util.TweenUtil.md' },
-      { text: 'WindowUtil', link: '/modules/Util.WindowUtil.md' }
-    ]
-  }
+  ...dealConfigSidebar()
 ]
 
 export default defineConfigWithTheme<DefaultTheme.Config>({
@@ -65,11 +47,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    algolia: {
-      appId: 'I2PHYUBLCN',
-      apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech'
-    },
+    // algolia: {
+    //   appId: 'I2PHYUBLCN',
+    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
+    //   indexName: 'api-docs_prodigytech'
+    // },
     siteTitle: 'API',
     nav: [
       {
@@ -89,11 +71,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '021 版本',
+        text: '022 版本',
         items: [
           {
-            text: '022 版本',
-            link: 'https://api-docs-022.ark.online/',
+            text: '021 版本',
+            link: 'https://api-docs.ark.online/',
             path: true
           },
           {

@@ -1,8 +1,23 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsLinearMotor
+[Physics](../groups/Physics.Physics.md) / PhysicsLinearMotor
 
 # PhysicsLinearMotor <Badge type="tip" text="Class" /> <Score text="PhysicsLinearMotor" />
 
 物理线性发动机组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsLinearMotor;
+test.constraintTarget1 = obj1.GUID;
+test.enable = true / false;
+test.maxVelocity = new Type.Vector(100,100,100);
+test.strength = 100;
+```
 
 ## Hierarchy
 
@@ -55,7 +70,7 @@
 
 设置激活状态
 
-自动同步
+调用端自动广播
 
 #### Parameters
 
@@ -81,7 +96,7 @@
 
 设置最大速度
 
-自动同步
+调用端自动广播
 
 #### Parameters
 
@@ -107,7 +122,7 @@
 
 设置加速度
 
-自动同步
+调用端自动广播
 
 #### Parameters
 

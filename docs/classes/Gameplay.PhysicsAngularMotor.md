@@ -1,8 +1,24 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsAngularMotor
+[Physics](../groups/Physics.Physics.md) / PhysicsAngularMotor
 
 # PhysicsAngularMotor <Badge type="tip" text="Class" /> <Score text="PhysicsAngularMotor" />
 
 物理力矩发动机
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsAngularMotor;
+test.constraintTarget1 = obj.GUID
+//参数设置
+test.enable = true / false;
+test.torque = new Type.Vector(1000,1000,1000);
+test.torqueStrength = 100;
+```
 
 ## Hierarchy
 
@@ -41,7 +57,7 @@
 
 ### enable <Score text="enable" /> 
 
-• `get` **enable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **enable**(): `boolean` 
 
 获取激活状态
 
@@ -56,7 +72,7 @@
 
 设置激活状态
 
-自动同步
+调用端自动广播
 
 #### Parameters
 
@@ -68,7 +84,7 @@
 
 ### torque <Score text="torque" /> 
 
-• `get` **torque**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="other" />
+• `get` **torque**(): [`Vector`](Type.Vector.md) 
 
 获取旋转最大速度
 
@@ -83,7 +99,7 @@
 
 设置旋转最大速度
 
-自动同步
+调用端自动广播
 
 #### Parameters
 
@@ -96,7 +112,7 @@ ___
 
 ### torqueStrength <Score text="torqueStrength" /> 
 
-• `get` **torqueStrength**(): `number` <Badge type="tip" text="other" />
+• `get` **torqueStrength**(): `number` 
 
 获取加速度
 
@@ -107,7 +123,7 @@ ___
 
 加速度
 
-• `set` **torqueStrength**(`strength`): `void` <Badge type="tip" text="other" />
+• `set` **torqueStrength**(`strength`): `void` 
 
 设置加速度
 

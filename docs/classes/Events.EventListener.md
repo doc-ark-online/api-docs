@@ -1,4 +1,4 @@
-[Events](../modules/Events.Events.md) / EventListener
+[Scripiting](../groups/Scripiting.Scripiting.md) / EventListener
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
@@ -30,7 +30,7 @@
 
 ### disconnect <Score text="disconnect" /> 
 
-• **disconnect**(): `void` <Badge type="tip" text="other" />
+• **disconnect**(): `void` 
 
 卸载事件
 

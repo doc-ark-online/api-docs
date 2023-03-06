@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / EffectRangeType
+[Effects](../groups/Effects.Effects.md) / EffectRangeType
 
 # EffectRangeType <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeType" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[ThreeD](Gameplay.EffectRangeType.md#threed)** = ``1`` <br> 3D形状|
-| **[TwoD](Gameplay.EffectRangeType.md#twod)** = ``0`` <br> 2D形状|
+| **[ThreeD](Gameplay.EffectRangeType.md#threed)** = ``1`` <br> |
+| **[TwoD](Gameplay.EffectRangeType.md#twod)** = ``0`` <br> |
 
 ## Enumeration Members
 

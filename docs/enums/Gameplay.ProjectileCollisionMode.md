@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileCollisionMode
+[Gameplay](../groups/Gameplay.Gameplay.md) / ProjectileCollisionMode
 
 # ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[Bounce](Gameplay.ProjectileCollisionMode.md#bounce)** = ``1`` <br> 弹跳|
-| **[Pierce](Gameplay.ProjectileCollisionMode.md#pierce)** = ``0`` <br> 穿透|
+| **[Bounce](Gameplay.ProjectileCollisionMode.md#bounce)** = ``1`` <br> |
+| **[Pierce](Gameplay.ProjectileCollisionMode.md#pierce)** = ``0`` <br> |
 
 ## Enumeration Members
 

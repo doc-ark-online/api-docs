@@ -1,17 +1,17 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / HotWeaponReloadComponent
+[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
-热武器换弹组件
+热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onEndReloadClient](Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数|
-| **[onEndReloadServer](Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数|
-| **[onStartReloadClient](Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数|
-| **[onStartReloadServer](Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数|
+| **[onEndReloadClient](Gameplay.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onEndReloadServer](Gameplay.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartReloadClient](Gameplay.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
+| **[onStartReloadServer](Gameplay.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取绑定的动画GUID|
 
 | Accessors |
 | :-----|
@@ -58,7 +58,7 @@ ___
 
 ### animationGuid <Score text="animationGuid" /> 
 
-• `get` **animationGuid**(): `string` <Badge type="tip" text="other" />
+• `get` **animationGuid**(): `string` 
 
 获取绑定的动画GUID
 
@@ -73,6 +73,7 @@ ___
 
 设置动画 GUID
 
+调用端自动广播
 
 #### Parameters
 
@@ -85,7 +86,7 @@ ___
 
 ### reloadDuration <Score text="reloadDuration" /> 
 
-• `get` **reloadDuration**(): `number` <Badge type="tip" text="other" />
+• `get` **reloadDuration**(): `number` 
 
 获取换弹时间
 
@@ -100,6 +101,7 @@ ___
 
 设置换弹时间
 
+调用端自动广播
 
 ::: warning Precautions
 
@@ -118,7 +120,7 @@ ___
 
 ### hadAnimationGuid <Score text="hadAnimationGuid" /> 
 
-• **hadAnimationGuid**(): `boolean` <Badge type="tip" text="other" />
+• **hadAnimationGuid**(): `boolean` 
 
 是否有动画GUID
 

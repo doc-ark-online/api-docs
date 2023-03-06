@@ -6,15 +6,14 @@
 
 | Functions |
 | :-----|
-| **[autoExecute](Extension.Decorator.md#autoexecute)**(`string`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[noReply](Extension.Decorator.md#noreply)**(`any`, `string`, `PropertyDescriptor`): `void` <br> 方法装饰器-无返回服务器网络方法，用于装饰模块服务端(继承ModuleS的类)中不需要给客户端返回值的net方法|
-| **[saveProperty](Extension.Decorator.md#saveproperty)**([`SubdataBase`](../classes/Extension.SubdataBase.md)<`any`\>, `string`): `void` <br> 属性装饰器-永久存储属性|
+| **[autoExecute](Extension.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
+| **[saveProperty](Extension.Decorator.md#saveproperty)**(`target`: [`Subdata`](../classes/Extension.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
 
 ## Functions
 
 ### autoExecute <Score text="autoExecute" /> 
 
-• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` <Badge type="tip" text="other" />
+• **autoExecute**(`fnName`): (`target?`: `unknown`) => `void` 
 
 类装饰器-自动执行某个方法
 
@@ -24,7 +23,6 @@
 
 :::
 
-双端生效
 
 #### Parameters
 
@@ -52,28 +50,9 @@
 
 ___
 
-### noReply <Score text="noReply" /> 
-
-• **noReply**(`target`, `funName`, `descriptor`): `void` <Badge type="tip" text="other" />
-
-方法装饰器-无返回服务器网络方法，用于装饰模块服务端(继承ModuleS的类)中不需要给客户端返回值的net方法
-
-服务端生效
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `any` |  类实例 |
-| `funName` | `string` |  方法名 |
-| `descriptor` | `PropertyDescriptor` |  属性描述 |
-
-
-___
-
 ### saveProperty <Score text="saveProperty" /> 
 
-• **saveProperty**(`target`, `propertyKey`): `void` <Badge type="tip" text="other" />
+• **saveProperty**(`target`, `propertyKey`): `void` 
 
 属性装饰器-永久存储属性
 
@@ -83,12 +62,11 @@ ___
 
 :::
 
-双端生效
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | [`SubdataBase`](../classes/Extension.SubdataBase.md)<`any`\> |  类实例 |
+| `target` | [`Subdata`](../classes/Extension.Subdata.md) |  类实例 |
 | `propertyKey` | `string` |  属性名 |
 

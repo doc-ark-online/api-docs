@@ -1,4 +1,4 @@
-[Network](../modules/Network.Network.md) / HttpRequestURL
+[Gameplay](../groups/Gameplay.Gameplay.md) / HttpRequestURL
 
 # HttpRequestURL <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestURL" />
 
@@ -8,18 +8,18 @@
 
 | Enumeration Members |
 | :-----|
-| **[CobblestoneService](Network.HttpRequestURL.md#cobblestoneservice)** = ``0`` <br> http://test1010-api.meta-verse.co|
-| **[Developers](Network.HttpRequestURL.md#developers)** = ``3`` <br> http://test-dev-account.meta-verse.co|
-| **[Games](Network.HttpRequestURL.md#games)** = ``5`` <br> http://test-game.meta-verse.co|
-| **[Gateway](Network.HttpRequestURL.md#gateway)** = ``2`` <br> http://test1010-api.meta-verse.co|
-| **[Login](Network.HttpRequestURL.md#login)** = ``8`` <br> http://dev-developer-api.233leyuan.com|
-| **[MGS](Network.HttpRequestURL.md#mgs)** = ``6`` <br> http://dev-internal-api.233lyly.com|
-| **[Packages](Network.HttpRequestURL.md#packages)** = ``9`` <br> http://dev-api.meta-verse.co|
-| **[Pandora](Network.HttpRequestURL.md#pandora)** = ``10`` <br> https://mw-push.233bigdata.cn/cDEwMDAx/log_main|
-| **[Register](Network.HttpRequestURL.md#register)** = ``7`` <br> http://test-app-dev-admin.233nan.cn|
-| **[Resource](Network.HttpRequestURL.md#resource)** = ``1`` <br> http://test-resources.meta-verse.co|
-| **[Tasks](Network.HttpRequestURL.md#tasks)** = ``4`` <br> http://test-tasks.meta-verse.co|
-| **[Translation](Network.HttpRequestURL.md#translation)** = ``11`` <br> test1010-api.meta-verse.co/internalRouter|
+| **[CobblestoneService](Network.HttpRequestURL.md#cobblestoneservice)** = ``0`` <br> |
+| **[Developers](Network.HttpRequestURL.md#developers)** = ``3`` <br> |
+| **[Games](Network.HttpRequestURL.md#games)** = ``5`` <br> |
+| **[Gateway](Network.HttpRequestURL.md#gateway)** = ``2`` <br> |
+| **[Login](Network.HttpRequestURL.md#login)** = ``8`` <br> |
+| **[MGS](Network.HttpRequestURL.md#mgs)** = ``6`` <br> |
+| **[Packages](Network.HttpRequestURL.md#packages)** = ``9`` <br> |
+| **[Pandora](Network.HttpRequestURL.md#pandora)** = ``10`` <br> |
+| **[Register](Network.HttpRequestURL.md#register)** = ``7`` <br> |
+| **[Resource](Network.HttpRequestURL.md#resource)** = ``1`` <br> |
+| **[Tasks](Network.HttpRequestURL.md#tasks)** = ``4`` <br> |
+| **[Translation](Network.HttpRequestURL.md#translation)** = ``11`` <br> |
 
 ## Enumeration Members
 

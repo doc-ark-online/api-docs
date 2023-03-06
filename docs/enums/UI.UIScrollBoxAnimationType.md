@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UIScrollBoxAnimationType
+[Gui](../groups/Gui.Gui.md) / UIScrollBoxAnimationType
 
 # UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[ElasticAnimation](UI.UIScrollBoxAnimationType.md#elasticanimation)** = ``0`` <br> 弹性运动|
-| **[Limit](UI.UIScrollBoxAnimationType.md#limit)** = ``2`` <br> 限制|
-| **[NoneLimit](UI.UIScrollBoxAnimationType.md#nonelimit)** = ``1`` <br> 不做限制|
+| **[ElasticAnimation](UI.UIScrollBoxAnimationType.md#elasticanimation)** = ``0`` <br> |
+| **[Limit](UI.UIScrollBoxAnimationType.md#limit)** = ``2`` <br> |
+| **[NoneLimit](UI.UIScrollBoxAnimationType.md#nonelimit)** = ``1`` <br> |
 
 ## Enumeration Members
 

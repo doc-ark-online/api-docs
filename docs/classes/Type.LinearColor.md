@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / LinearColor
+[Data](../groups/Data.Data.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
@@ -22,20 +22,20 @@
 
 | Methods |
 | :-----|
-| **[addition](Type.LinearColor.md#addition)**([`LinearColor`](Type.LinearColor.md), [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相加|
-| **[division](Type.LinearColor.md#division)**([`LinearColor`](Type.LinearColor.md), [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相除|
-| **[equality](Type.LinearColor.md#equality)**([`LinearColor`](Type.LinearColor.md), `number`): `boolean` <br> 判断两个颜色值是否相等|
-| **[fromString](Type.LinearColor.md#fromstring)**(`string`): [`LinearColor`](Type.LinearColor.md) <br> 用数据生成一个新的对象|
-| **[inequality](Type.LinearColor.md#inequality)**([`LinearColor`](Type.LinearColor.md), `number`): `boolean` <br> 判断两个颜色值是否不相等|
-| **[multiply](Type.LinearColor.md#multiply)**([`LinearColor`](Type.LinearColor.md), [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相乘|
-| **[subtraction](Type.LinearColor.md#subtraction)**([`LinearColor`](Type.LinearColor.md), [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相减|
+| **[addition](Type.LinearColor.md#addition)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相加|
+| **[division](Type.LinearColor.md#division)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相除|
+| **[equality](Type.LinearColor.md#equality)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `epsilon?`: `number`): `boolean` <br> 判断两个颜色值是否相等|
+| **[fromString](Type.LinearColor.md#fromstring)**(`jsonStr`: `string`): [`LinearColor`](Type.LinearColor.md) <br> 用数据生成一个新的对象|
+| **[inequality](Type.LinearColor.md#inequality)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `epsilon?`: `number`): `boolean` <br> 判断两个颜色值是否不相等|
+| **[multiply](Type.LinearColor.md#multiply)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相乘|
+| **[subtraction](Type.LinearColor.md#subtraction)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相减|
 | **[toString](Type.LinearColor.md#tostring)**(): `string` <br> 以字符串的形式输出对象属性|
-| **[colorHexToLinearColor](Type.LinearColor.md#colorhextolinearcolor)**(`string`, [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将 HexColor 转化为 LinearColor|
-| **[colorHsvToLinearColor](Type.LinearColor.md#colorhsvtolinearcolor)**(`number`, `number`, `number`, [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将 HsvColor 转化为 LinearColor|
-| **[colorToLinearColor](Type.LinearColor.md#colortolinearcolor)**(`number`, `number`, `number`, `number`, [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 转换 Color|
-| **[fromString](Type.LinearColor.md#fromstring-1)**(`string`): [`LinearColor`](Type.LinearColor.md) <br> 用数据生成一个新的对象|
-| **[makeFromHSV](Type.LinearColor.md#makefromhsv)**(`number`, `number`, `number`, [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将字节色调饱和度亮度转换为 LinearColor|
-| **[random](Type.LinearColor.md#random)**([`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色|
+| **[colorHexToLinearColor](Type.LinearColor.md#colorhextolinearcolor)**(`inColorHex`: `string`, `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将 HexColor 转化为 LinearColor|
+| **[colorHsvToLinearColor](Type.LinearColor.md#colorhsvtolinearcolor)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将 HsvColor 转化为 LinearColor|
+| **[colorToLinearColor](Type.LinearColor.md#colortolinearcolor)**(`r`: `number`, `g`: `number`, `b`: `number`, `a?`: `number`, `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 转换 Color|
+| **[fromString](Type.LinearColor.md#fromstring-1)**(`jsonStr`: `string`): [`LinearColor`](Type.LinearColor.md) <br> 用数据生成一个新的对象|
+| **[makeFromHSV](Type.LinearColor.md#makefromhsv)**(`h`: `number`, `s`: `number`, `v`: `number`, `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 将字节色调饱和度亮度转换为 LinearColor|
+| **[random](Type.LinearColor.md#random)**(`outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色|
 
 用给定的 r, g, b 值构建一个新的 Color
 
@@ -284,7 +284,7 @@ ___
 
 ### addition <Score text="addition" /> 
 
-• **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **addition**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 颜色值相加
 
@@ -312,7 +312,7 @@ ___
 
 ### division <Score text="division" /> 
 
-• **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **division**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 颜色值相除
 
@@ -340,7 +340,7 @@ ___
 
 ### equality <Score text="equality" /> 
 
-• **equality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **equality**(`linearColorB`, `epsilon?`): `boolean` 
 
 判断两个颜色值是否相等
 
@@ -368,7 +368,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-• **fromString**(`str`): `void` <Badge type="tip" text="other" />
+• **fromString**(`str`): `void` 
 
 用数据填充对象
 
@@ -384,7 +384,7 @@ ___
 
 ### inequality <Score text="inequality" /> 
 
-• **inequality**(`linearColorB`, `epsilon?`): `boolean` <Badge type="tip" text="other" />
+• **inequality**(`linearColorB`, `epsilon?`): `boolean` 
 
 判断两个颜色值是否不相等
 
@@ -412,7 +412,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-• **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **multiply**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 颜色值相乘
 
@@ -440,7 +440,7 @@ ___
 
 ### subtraction <Score text="subtraction" /> 
 
-• **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• **subtraction**(`linearColorB`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 颜色值相减
 
@@ -468,7 +468,7 @@ ___
 
 ### toString <Score text="toString" /> 
 
-• **toString**(): `string` <Badge type="tip" text="other" />
+• **toString**(): `string` 
 
 以字符串的形式输出对象属性
 
@@ -483,7 +483,7 @@ ___
 
 ### colorHexToLinearColor <Score text="colorHexToLinearColor" /> 
 
-• `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **colorHexToLinearColor**(`inColorHex`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 将 HexColor 转化为 LinearColor
 
@@ -511,7 +511,7 @@ ___
 
 ### colorHsvToLinearColor <Score text="colorHsvToLinearColor" /> 
 
-• `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **colorHsvToLinearColor**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 将 HsvColor 转化为 LinearColor
 
@@ -541,7 +541,7 @@ ___
 
 ### colorToLinearColor <Score text="colorToLinearColor" /> 
 
-• `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **colorToLinearColor**(`r`, `g`, `b`, `a?`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 转换 Color
 
@@ -566,7 +566,7 @@ ___
 
 ### fromString <Score text="fromString" /> 
 
-• `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **fromString**(`jsonStr`): [`LinearColor`](Type.LinearColor.md) 
 
 用数据生成一个新的对象
 
@@ -587,7 +587,7 @@ ___
 
 ### makeFromHSV <Score text="makeFromHSV" /> 
 
-• `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **makeFromHSV**(`h`, `s`, `v`, `outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 将字节色调饱和度亮度转换为 LinearColor
 
@@ -617,7 +617,7 @@ ___
 
 ### random <Score text="random" /> 
 
-• `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+• `Static` **random**(`outer?`): [`LinearColor`](Type.LinearColor.md) 
 
 返回具有随机 RGB 值和 Alpha 为 1.0 的新颜色
 

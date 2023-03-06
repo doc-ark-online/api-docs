@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / IFourFootStandard
+[Avatar](../groups/Avatar.Avatar.md) / IFourFootStandard
 
 # IFourFootStandard <Badge type="tip" text="Interface" /> <Score text="IFourFootStandard" />
 
@@ -12,16 +12,16 @@
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.IFourFootStandard.md#changesomatotype)**([`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md), `boolean`): `void` <br> 切换体型|
+| **[changeSomatotype](Gameplay.IFourFootStandard.md#changesomatotype)**(`value`: [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md), `sync`: `boolean`): `void` <br> 切换体型|
 | **[getSomatotype](Gameplay.IFourFootStandard.md#getsomatotype)**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) <br> 获取当前的体型类型|
 | **[getWholeBody](Gameplay.IFourFootStandard.md#getwholebody)**(): `string` <br> 获取全身模型|
-| **[setWholeBody](Gameplay.IFourFootStandard.md#setwholebody)**(`string`, `boolean`): `void` <br> 设置全身模型|
+| **[setWholeBody](Gameplay.IFourFootStandard.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置全身模型|
 
 ## Methods
 
 ### changeSomatotype <Score text="changeSomatotype" /> 
 
-• **changeSomatotype**(`value`, `sync`): `void` <Badge type="tip" text="other" />
+• **changeSomatotype**(`value`, `sync`): `void` 
 
 切换体型
 
@@ -44,7 +44,7 @@ ___
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
-• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) <Badge type="tip" text="other" />
+• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) 
 
 获取当前的体型类型
 
@@ -59,7 +59,7 @@ ___
 
 ### getWholeBody <Score text="getWholeBody" /> 
 
-• **getWholeBody**(): `string` <Badge type="tip" text="other" />
+• **getWholeBody**(): `string` 
 
 获取全身模型
 
@@ -74,7 +74,7 @@ ___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 
-• **setWholeBody**(`GUID`, `sync`): `void` <Badge type="tip" text="other" />
+• **setWholeBody**(`GUID`, `sync`): `void` 
 
 设置全身模型
 

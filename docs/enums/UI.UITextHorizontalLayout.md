@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UITextHorizontalLayout
+[Gui](../groups/Gui.Gui.md) / UITextHorizontalLayout
 
 # UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[AutoWarpText](UI.UITextHorizontalLayout.md#autowarptext)** = ``0`` <br> 自动换行|
-| **[Clipping](UI.UITextHorizontalLayout.md#clipping)** = ``1`` <br> 裁剪|
-| **[NoClipping](UI.UITextHorizontalLayout.md#noclipping)** = ``2`` <br> 不裁剪|
+| **[AutoWarpText](UI.UITextHorizontalLayout.md#autowarptext)** = ``0`` <br> |
+| **[Clipping](UI.UITextHorizontalLayout.md#clipping)** = ``1`` <br> |
+| **[NoClipping](UI.UITextHorizontalLayout.md#noclipping)** = ``2`` <br> |
 
 ## Enumeration Members
 

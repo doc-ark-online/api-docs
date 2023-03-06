@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / MovementMode
+[Avatar](../groups/Avatar.Avatar.md) / MovementMode
 
 # MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Fly](Gameplay.MovementMode.md#fly)** = ``2`` <br> 飞行|
-| **[Swim](Gameplay.MovementMode.md#swim)** = ``1`` <br> 游泳|
-| **[Walk](Gameplay.MovementMode.md#walk)** = ``0`` <br> 行走|
+| **[Fly](Gameplay.MovementMode.md#fly)** = ``2`` <br> |
+| **[Swim](Gameplay.MovementMode.md#swim)** = ``1`` <br> |
+| **[Walk](Gameplay.MovementMode.md#walk)** = ``0`` <br> |
 
 ## Enumeration Members
 

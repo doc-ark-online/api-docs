@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / Canvas
+[Gui](../groups/Gui.Gui.md) / Canvas
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
@@ -32,20 +32,20 @@
 
 | Methods |
 | :-----|
-| **[newObject](UI.Canvas.md#newobject)**([`Canvas`](UI.Canvas.md), `string`): [`Canvas`](UI.Canvas.md) <br> 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
+| **[newObject](UI.Canvas.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md), `inName?`: `string`): [`Canvas`](UI.Canvas.md) <br> 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[addChild](UI.PanelWidget.md#addchild)**([`Widget`](UI.Widget.md)): `void` <br> 添加子节点|
-| **[findChildByPath](UI.PanelWidget.md#findchildbypath)**(`string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
-| **[getChildAt](UI.PanelWidget.md#getchildat)**(`number`): [`Widget`](UI.Widget.md) <br> 获取第几位子节点|
-| **[getChildByName](UI.PanelWidget.md#getchildbyname)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>(`string`): extends [`Widget`](UI.Widget.md)<`T`\> | <br> 通过名字查找节点|
+| **[addChild](UI.PanelWidget.md#addchild)**(`child`: [`Widget`](UI.Widget.md)): `void` <br> 添加子节点|
+| **[findChildByPath](UI.PanelWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](UI.Widget.md) <br> 通过相对路径查找节点|
+| **[getChildAt](UI.PanelWidget.md#getchildat)**(`index`: `number`): [`Widget`](UI.Widget.md) <br> 获取第几位子节点|
+| **[getChildByName](UI.PanelWidget.md#getchildbyname)**<`T`: extends [`Widget`](UI.Widget.md)<`T`\>\>(`name`: `string`): `T`: extends [`Widget`](UI.Widget.md)<`T`\> <br> 通过名字查找节点|
 | **[getChildrenCount](UI.PanelWidget.md#getchildrencount)**(): `number` <br> 获取子节点数量|
 | **[removeAllChildren](UI.PanelWidget.md#removeallchildren)**(): `void` <br> 清除所有子节点,会销毁UI无法再使用|
-| **[removeChild](UI.PanelWidget.md#removechild)**([`Widget`](UI.Widget.md)): `void` <br> 移除节点,会销毁UI无法在使用|
-| **[removeChildAt](UI.PanelWidget.md#removechildat)**(`number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
+| **[removeChild](UI.PanelWidget.md#removechild)**(`child`: [`Widget`](UI.Widget.md)): `void` <br> 移除节点,会销毁UI无法在使用|
+| **[removeChildAt](UI.PanelWidget.md#removechildat)**(`index`: `number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
 :::
 
 
@@ -53,7 +53,7 @@
 
 ### autoLayoutContainerRule <Score text="autoLayoutContainerRule" /> 
 
-• `get` **autoLayoutContainerRule**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <Badge type="tip" text="other" />
+• `get` **autoLayoutContainerRule**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <Badge type="tip" text="client" />
 
 获取自动布局规则(Figma布局)
 
@@ -64,7 +64,7 @@
 
 自动布局规则
 
-• `set` **autoLayoutContainerRule**(`inRule`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutContainerRule**(`inRule`): `void` <Badge type="tip" text="client" />
 
 设置自动布局规则(Figma布局)
 
@@ -80,7 +80,7 @@ ___
 
 ### autoLayoutEnable <Score text="autoLayoutEnable" /> 
 
-• `get` **autoLayoutEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **autoLayoutEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否时自动布局
 
@@ -91,7 +91,7 @@ ___
 
 是否自动布局
 
-• `set` **autoLayoutEnable**(`inAutoLayout`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutEnable**(`inAutoLayout`): `void` <Badge type="tip" text="client" />
 
 设置是否自动布局
 
@@ -107,7 +107,7 @@ ___
 
 ### autoLayoutHugContent <Score text="autoLayoutHugContent" /> 
 
-• `get` **autoLayoutHugContent**(): [`UIHugContent`](UI.UIHugContent.md) <Badge type="tip" text="other" />
+• `get` **autoLayoutHugContent**(): [`UIHugContent`](UI.UIHugContent.md) <Badge type="tip" text="client" />
 
 获取宽高随内容大小还是固定大小
 
@@ -118,7 +118,7 @@ ___
 
 宽高大小规则
 
-• `set` **autoLayoutHugContent**(`inRule`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutHugContent**(`inRule`): `void` <Badge type="tip" text="client" />
 
 设置宽高随内容大小还是固定大小
 
@@ -134,7 +134,7 @@ ___
 
 ### autoLayoutPacketRule <Score text="autoLayoutPacketRule" /> 
 
-• `get` **autoLayoutPacketRule**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <Badge type="tip" text="other" />
+• `get` **autoLayoutPacketRule**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <Badge type="tip" text="client" />
 
 获取自动排版规则
 
@@ -145,7 +145,7 @@ ___
 
 自动排版规则
 
-• `set` **autoLayoutPacketRule**(`inRule`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutPacketRule**(`inRule`): `void` <Badge type="tip" text="client" />
 
 设置自动排版规则
 
@@ -161,7 +161,7 @@ ___
 
 ### autoLayoutPadding <Score text="autoLayoutPadding" /> 
 
-• `get` **autoLayoutPadding**(): `Readonly`<[`Margin`](UI.Margin.md)\> <Badge type="tip" text="other" />
+• `get` **autoLayoutPadding**(): `Readonly`<[`Margin`](UI.Margin.md)\> <Badge type="tip" text="client" />
 
 获取边缘间距
 
@@ -172,7 +172,7 @@ ___
 
 获取填充
 
-• `set` **autoLayoutPadding**(`inPadding`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutPadding**(`inPadding`): `void` <Badge type="tip" text="client" />
 
 设置边缘间距
 
@@ -188,7 +188,7 @@ ___
 
 ### autoLayoutRule <Score text="autoLayoutRule" /> 
 
-• `get` **autoLayoutRule**(): [`UILayout`](UI.UILayout.md) <Badge type="tip" text="other" />
+• `get` **autoLayoutRule**(): [`UILayout`](UI.UILayout.md) <Badge type="tip" text="client" />
 
 获取完整的布局规则
 
@@ -199,7 +199,7 @@ ___
 
 布局规则
 
-• `set` **autoLayoutRule**(`layout`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutRule**(`layout`): `void` <Badge type="tip" text="client" />
 
 设置完整的布局规则
 
@@ -215,7 +215,7 @@ ___
 
 ### autoLayoutSpacing <Score text="autoLayoutSpacing" /> 
 
-• `get` **autoLayoutSpacing**(): `number` <Badge type="tip" text="other" />
+• `get` **autoLayoutSpacing**(): `number` <Badge type="tip" text="client" />
 
 获取自动布局间隔
 
@@ -226,7 +226,7 @@ ___
 
 自动布局间隔
 
-• `set` **autoLayoutSpacing**(`inSpaceInItem`): `void` <Badge type="tip" text="other" />
+• `set` **autoLayoutSpacing**(`inSpaceInItem`): `void` <Badge type="tip" text="client" />
 
 设置自动布局间隔
 
@@ -241,7 +241,7 @@ ___
 
 ### clipEnable <Score text="clipEnable" /> 
 
-• `get` **clipEnable**(): `boolean` <Badge type="tip" text="other" />
+• `get` **clipEnable**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否裁剪
 
@@ -252,7 +252,7 @@ ___
 
 是否裁剪
 
-• `set` **clipEnable**(`clip`): `void` <Badge type="tip" text="other" />
+• `set` **clipEnable**(`clip`): `void` <Badge type="tip" text="client" />
 
 设置是否裁剪
 
@@ -269,7 +269,7 @@ ___
 
 ### newObject <Score text="newObject" /> 
 
-• `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="other" />
+• `Static` **newObject**(`parent?`, `inName?`): [`Canvas`](UI.Canvas.md) <Badge type="tip" text="client" />
 
 创建Canvas控件 当parent和inName与已有的对象相同时，旧的对象会被销毁
 

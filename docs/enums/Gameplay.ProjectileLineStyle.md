@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ProjectileLineStyle
+[Gameplay](../groups/Gameplay.Gameplay.md) / ProjectileLineStyle
 
 # ProjectileLineStyle <Badge type="tip" text="Enumeration" /> <Score text="ProjectileLineStyle" />
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Dot](Gameplay.ProjectileLineStyle.md#dot)** = ``0`` <br> 点绘制|
-| **[Line](Gameplay.ProjectileLineStyle.md#line)** = ``1`` <br> 线绘制|
-| **[Segment](Gameplay.ProjectileLineStyle.md#segment)** = ``2`` <br> 段绘制|
+| **[Dot](Gameplay.ProjectileLineStyle.md#dot)** = ``0`` <br> |
+| **[Line](Gameplay.ProjectileLineStyle.md#line)** = ``1`` <br> |
+| **[Segment](Gameplay.ProjectileLineStyle.md#segment)** = ``2`` <br> |
 
 ## Enumeration Members
 

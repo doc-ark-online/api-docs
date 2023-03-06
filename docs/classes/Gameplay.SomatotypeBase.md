@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeBase
+[Gameplay](../groups/Gameplay.Gameplay.md) / SomatotypeBase
 
 # SomatotypeBase <Badge type="tip" text="Class" /> <Score text="SomatotypeBase" />
 
@@ -18,14 +18,14 @@
 
 | Properties |
 | :-----|
-| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边|
-| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理对象|
+| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 后处理开关|
+| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理开关|
 
 | Methods |
 | :-----|
-| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`boolean`, [`LinearColor`](Type.LinearColor.md), `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`boolean`): `boolean` <br> 描边开关|
-| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`boolean`, `number`): `void` <br> 后处理描边开关|
+| **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
+| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
+| **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 
 构造函数
 
@@ -55,11 +55,10 @@ ___
 
 ### enablePostProcess <Score text="enablePostProcess" /> 
 
-• **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="other" />
+• **enablePostProcess**(`usedPostProcess`, `newOutlineColor`, `newOutlineWidth`): `void` <Badge type="tip" text="client" />
 
 后处理开关
 
-客户端调用生效
 
 #### Parameters
 
@@ -74,11 +73,10 @@ ___
 
 ### setOutline <Score text="setOutline" /> 
 
-• **setOutline**(`usedOutline`): `boolean` <Badge type="tip" text="other" />
+• **setOutline**(`usedOutline`): `boolean` 
 
 描边开关
 
-调用调用生效
 
 #### Parameters
 
@@ -96,11 +94,10 @@ ___
 
 ### setOutlineAdvance <Score text="setOutlineAdvance" /> 
 
-• **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` <Badge type="tip" text="other" />
+• **setOutlineAdvance**(`newEnableOutline`, `newOutlineColorIndex`): `void` 
 
 后处理描边开关
 
-调用端调用生效
 
 #### Parameters
 

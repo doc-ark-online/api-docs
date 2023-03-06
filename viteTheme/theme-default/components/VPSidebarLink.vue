@@ -9,7 +9,6 @@ withDefaults(
   defineProps<{ item: DefaultTheme.SidebarItem; depth?: number }>(),
   { depth: 1 }
 )
-
 const { page, frontmatter } = useData()
 const maxDepth = computed<number>(
   () => frontmatter.value.sidebarDepth || Infinity

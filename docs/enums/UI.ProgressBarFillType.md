@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / ProgressBarFillType
+[Gui](../groups/Gui.Gui.md) / ProgressBarFillType
 
 # ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[BottomToTop](UI.ProgressBarFillType.md#bottomtotop)** = ``4`` <br> 从下到上|
-| **[FillFromCenter](UI.ProgressBarFillType.md#fillfromcenter)** = ``2`` <br> 从中心开始|
-| **[LeftToRight](UI.ProgressBarFillType.md#lefttoright)** = ``0`` <br> 从左到右|
-| **[RightToLeft](UI.ProgressBarFillType.md#righttoleft)** = ``1`` <br> 从右到左|
-| **[TopToBottom](UI.ProgressBarFillType.md#toptobottom)** = ``3`` <br> 从上到下|
+| **[BottomToTop](UI.ProgressBarFillType.md#bottomtotop)** = ``4`` <br> |
+| **[FillFromCenter](UI.ProgressBarFillType.md#fillfromcenter)** = ``2`` <br> |
+| **[LeftToRight](UI.ProgressBarFillType.md#lefttoright)** = ``0`` <br> |
+| **[RightToLeft](UI.ProgressBarFillType.md#righttoleft)** = ``1`` <br> |
+| **[TopToBottom](UI.ProgressBarFillType.md#toptobottom)** = ``3`` <br> |
 
 ## Enumeration Members
 

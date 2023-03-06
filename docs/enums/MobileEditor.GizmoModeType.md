@@ -1,4 +1,4 @@
-[MobileEditor](../modules/MobileEditor.MobileEditor.md) / GizmoModeType
+[Scripiting](../groups/Scripiting.Scripiting.md) / GizmoModeType
 
 # GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
 
@@ -8,9 +8,9 @@ gizmo类型
 
 | Enumeration Members |
 | :-----|
-| **[Location](MobileEditor.GizmoModeType.md#location)** = ``0`` <br> 位置|
-| **[Rotation](MobileEditor.GizmoModeType.md#rotation)** = ``1`` <br> 旋转|
-| **[Scale](MobileEditor.GizmoModeType.md#scale)** = ``2`` <br> 大小|
+| **[Location](MobileEditor.GizmoModeType.md#location)** = ``0`` <br> |
+| **[Rotation](MobileEditor.GizmoModeType.md#rotation)** = ``1`` <br> |
+| **[Scale](MobileEditor.GizmoModeType.md#scale)** = ``2`` <br> |
 
 ## Enumeration Members
 

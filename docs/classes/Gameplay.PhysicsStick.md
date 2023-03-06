@@ -1,8 +1,21 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / PhysicsStick
+[Physics](../groups/Physics.Physics.md) / PhysicsStick
 
 # PhysicsStick <Badge type="tip" text="Class" /> <Score text="PhysicsStick" />
 
 物理杆组件
+
+::: warning Precautions
+
+服务器设置，双端自动同步
+
+:::
+
+使用示例:(动态生成)
+```ts
+let test = Core.GameObject.spawnGameObject(GUID) as Gameplay.PhysicsStick;
+test.constraintTarget1 = obj1.GUID;
+test.constraintTarget2 = obj2.GUID;
+```
 
 ## Hierarchy
 

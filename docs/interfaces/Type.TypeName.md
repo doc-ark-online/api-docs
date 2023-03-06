@@ -1,6 +1,6 @@
-[Type](../modules/Type.Type.md) / Class
+[Scripiting](../groups/Scripiting.Scripiting.md) / TypeName
 
-# Class<T\> <Badge type="tip" text="Interface" /> <Score text="Class<T\>" />
+# TypeName<T\> <Badge type="tip" text="Interface" /> <Score text="TypeName<T\>" />
 
 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)
 

@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / SomatotypeV2
+[Avatar](../groups/Avatar.Avatar.md) / SomatotypeV2
 
 # SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
 
@@ -8,13 +8,13 @@
 
 | Enumeration Members |
 | :-----|
-| **[AnimeFemale](Gameplay.SomatotypeV2.md#animefemale)** = ``2`` <br> 二次元成年女性|
-| **[AnimeMale](Gameplay.SomatotypeV2.md#animemale)** = ``1`` <br> 二次元成年男性|
-| **[LowpolyAdultFemale](Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` <br> Lowpoly成年女性|
-| **[LowpolyAdultMale](Gameplay.SomatotypeV2.md#lowpolyadultmale)** = ``3`` <br> Lowpoly成年男性|
-| **[None](Gameplay.SomatotypeV2.md#none)** = ``0`` <br> 空骨骼模型，默认二次元女骨架|
-| **[RealisticAdultFemale](Gameplay.SomatotypeV2.md#realisticadultfemale)** = ``6`` <br> 写实成年女性|
-| **[RealisticAdultMale](Gameplay.SomatotypeV2.md#realisticadultmale)** = ``5`` <br> 写实成年男性|
+| **[AnimeFemale](Gameplay.SomatotypeV2.md#animefemale)** = ``2`` <br> |
+| **[AnimeMale](Gameplay.SomatotypeV2.md#animemale)** = ``1`` <br> |
+| **[LowpolyAdultFemale](Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` <br> |
+| **[LowpolyAdultMale](Gameplay.SomatotypeV2.md#lowpolyadultmale)** = ``3`` <br> |
+| **[None](Gameplay.SomatotypeV2.md#none)** = ``0`` <br> |
+| **[RealisticAdultFemale](Gameplay.SomatotypeV2.md#realisticadultfemale)** = ``6`` <br> |
+| **[RealisticAdultMale](Gameplay.SomatotypeV2.md#realisticadultmale)** = ``5`` <br> |
 
 ## Enumeration Members
 

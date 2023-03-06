@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / ImpulseForceType
+[Physics](../groups/Physics.Physics.md) / ImpulseForceType
 
 # ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 
@@ -8,8 +8,8 @@
 
 | Enumeration Members |
 | :-----|
-| **[RadialForce](Gameplay.ImpulseForceType.md#radialforce)** = ``0`` <br> 径向力|
-| **[VectorForce](Gameplay.ImpulseForceType.md#vectorforce)** = ``1`` <br> 矢量力|
+| **[RadialForce](Gameplay.ImpulseForceType.md#radialforce)** = ``0`` <br> |
+| **[VectorForce](Gameplay.ImpulseForceType.md#vectorforce)** = ``1`` <br> |
 
 ## Enumeration Members
 
@@ -18,6 +18,7 @@
 • **RadialForce** = ``0``
 
 径向力
+碰撞体为球形，沿反射方向施加的力
 
 ___
 
@@ -26,3 +27,4 @@ ___
 • **VectorForce** = ``1``
 
 矢量力
+碰撞体为盒形，沿给定方向施加的力

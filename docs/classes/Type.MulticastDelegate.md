@@ -1,4 +1,4 @@
-[Type](../modules/Type.Type.md) / MulticastDelegate
+[Scripiting](../groups/Scripiting.Scripiting.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
@@ -21,10 +21,10 @@
 
 | Methods |
 | :-----|
-| **[add](Type.MulticastDelegate.md#add)**(`T`): `void` <br> 绑定代理函数|
-| **[broadcast](Type.MulticastDelegate.md#broadcast)**(`Parameters`<`T`\>): `void` <br> 广播通知代理函数|
+| **[add](Type.MulticastDelegate.md#add)**(`func`: `T`): `void` <br> 绑定代理函数|
+| **[broadcast](Type.MulticastDelegate.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void` <br> 广播通知代理函数|
 | **[clear](Type.MulticastDelegate.md#clear)**(): `void` <br> 情况委托|
-| **[remove](Type.MulticastDelegate.md#remove)**(`T`): `void` <br> 删除绑定代理函数|
+| **[remove](Type.MulticastDelegate.md#remove)**(`func`: `T`): `void` <br> 删除绑定代理函数|
 
 #### Type parameters
 
@@ -36,7 +36,7 @@
 
 ### add <Score text="add" /> 
 
-• **add**(`func`): `void` <Badge type="tip" text="other" />
+• **add**(`func`): `void` 
 
 绑定代理函数
 
@@ -56,7 +56,7 @@ ___
 
 ### broadcast <Score text="broadcast" /> 
 
-• **broadcast**(`...arg`): `void` <Badge type="tip" text="other" />
+• **broadcast**(`...arg`): `void` 
 
 广播通知代理函数
 
@@ -76,7 +76,7 @@ ___
 
 ### clear <Score text="clear" /> 
 
-• **clear**(): `void` <Badge type="tip" text="other" />
+• **clear**(): `void` 
 
 情况委托
 
@@ -86,7 +86,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`func`): `void` <Badge type="tip" text="other" />
+• **remove**(`func`): `void` 
 
 删除绑定代理函数
 

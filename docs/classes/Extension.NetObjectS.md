@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / NetObjectS
+[Utility](../groups/Utility.Utility.md) / NetObjectS
 
 # NetObjectS<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectS<T\>" />
 
@@ -28,7 +28,7 @@
 | Methods |
 | :-----|
 | **[getAllClient](Extension.NetObjectS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
-| **[getClient](Extension.NetObjectS.md#getclient)**(`number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
+| **[getClient](Extension.NetObjectS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
 
 #### Type parameters
 
@@ -40,7 +40,7 @@
 
 ### currentPlayer <Score text="currentPlayer" /> 
 
-• `Protected` `get` **currentPlayer**(): [`Player`](Gameplay.Player.md) <Badge type="tip" text="other" />
+• `Protected` `get` **currentPlayer**(): [`Player`](Gameplay.Player.md) <Badge type="tip" text="server" />
 
 调用服务器方法的玩家
 
@@ -59,7 +59,7 @@ ___
 
 ### currentPlayerId <Score text="currentPlayerId" /> 
 
-• `Protected` `get` **currentPlayerId**(): `number` <Badge type="tip" text="other" />
+• `Protected` `get` **currentPlayerId**(): `number` <Badge type="tip" text="server" />
 
 获取调用服务器方法的玩家ID
 
@@ -78,7 +78,7 @@ ___
 
 ### getAllClient <Score text="getAllClient" /> 
 
-• `Protected` **getAllClient**(): `T` <Badge type="tip" text="other" />
+• `Protected` **getAllClient**(): `T` <Badge type="tip" text="server" />
 
 获取"全部客户端"调用对象
 
@@ -93,7 +93,7 @@ ___
 
 ### getClient <Score text="getClient" /> 
 
-• `Protected` **getClient**(`player`): `T` <Badge type="tip" text="other" />
+• `Protected` **getClient**(`player`): `T` <Badge type="tip" text="server" />
 
 根据玩家获取"单客户端"调用对象
 

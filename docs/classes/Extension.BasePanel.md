@@ -1,4 +1,4 @@
-[Extension](../modules/Extension.Extension.md) / BasePanel
+[Gui](../groups/Gui.Gui.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
@@ -33,7 +33,7 @@
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[holdBackTouch](Extension.BaseView.md#holdbacktouch)**(`boolean` |): `void` <br> 是否阻挡场景点击|
+| **[holdBackTouch](Extension.BaseView.md#holdbacktouch)**(`value`: `boolean`): `void` <br> 是否阻挡场景点击|
 | **[isShow](Extension.BaseView.md#isshow)**(): `boolean` <br> 判断界面是否处于显示状态|
 :::
 
@@ -47,12 +47,12 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<extends [`Widget`](UI.Widget.md)<`T`\> |\>([`Canvas`](UI.Canvas.md), [`Class`](../interfaces/Type.Class.md)<`T`\>): extends [`Widget`](UI.Widget.md)<`T`\> |[] <br> 根据类型获取画布下子对象序列|
+| **[getCanvasChildren](Extension.BaseView.md#getcanvaschildren)**<`T`: extends [`Widget`](UI.Widget.md)<`T`\>\>(`canvas`: [`Canvas`](UI.Canvas.md), `getType`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`Widget`](UI.Widget.md)<`T`\>[] <br> 根据类型获取画布下子对象序列|
 | **[hide](Extension.BaseView.md#hide)**(): `void` <br> 关闭全局唯一界面|
-| **[show](Extension.BaseView.md#show)**(`any`[]): `void` <br> 显示全局唯一界面|
-| **[create](Extension.BaseView.md#create)**<extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> |\>(): extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> | <br> 创建界面|
+| **[show](Extension.BaseView.md#show)**(`...params`: `any`[]): `void` <br> 显示全局唯一界面|
+| **[create](Extension.BaseView.md#create)**<`T`: extends [`UIBehavior`](UI.UIBehavior.md)<`T`\>\>(): `T`: extends [`UIBehavior`](UI.UIBehavior.md)<`T`\> <br> 创建界面|
 | **[hide](Extension.BaseView.md#hide-1)**(): `void` <br> 关闭全局唯一界面|
-| **[show](Extension.BaseView.md#show-1)**(`any`[]): `void` <br> 显示全局唯一界面|
+| **[show](Extension.BaseView.md#show-1)**(`...params`: `any`[]): `void` <br> 显示全局唯一界面|
 :::
 
 
@@ -68,7 +68,7 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `viewClass` | [`Class`](../interfaces/Type.Class.md)<`T`\> |  界面类 |
+| `viewClass` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  界面类 |
 
 #### Overrides
 
@@ -113,7 +113,7 @@
 
 ### onAdded <Score text="onAdded" /> 
 
-• `Protected` **onAdded**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onAdded**(): `void` <Badge type="tip" text="client" />
 
 生命周期-被添加到父节点时候触发，可能会多次调用
 
@@ -123,7 +123,7 @@ ___
 
 ### onAwake <Score text="onAwake" /> 
 
-• `Protected` **onAwake**(): `void` <Badge type="tip" text="other" />
+• `Protected` **onAwake**(): `void` <Badge type="tip" text="client" />
 
 生命周期方法-构建面板自动触发，只会调用一次
 

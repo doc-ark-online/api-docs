@@ -1,4 +1,4 @@
-[UI](../modules/UI.UI.md) / UILayoutPacket
+[Gui](../groups/Gui.Gui.md) / UILayoutPacket
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 
@@ -8,15 +8,15 @@
 
 | Enumeration Members |
 | :-----|
-| **[CenterBottom](UI.UILayoutPacket.md#centerbottom)** = ``8`` <br> 中下对齐|
-| **[CenterCenter](UI.UILayoutPacket.md#centercenter)** = ``7`` <br> 中中对齐|
-| **[CenterTop](UI.UILayoutPacket.md#centertop)** = ``6`` <br> 中上对齐|
-| **[LeftBottom](UI.UILayoutPacket.md#leftbottom)** = ``2`` <br> 左下对齐|
-| **[LeftCenter](UI.UILayoutPacket.md#leftcenter)** = ``1`` <br> 左中对齐|
-| **[LeftTop](UI.UILayoutPacket.md#lefttop)** = ``0`` <br> 左上对齐|
-| **[RightBottom](UI.UILayoutPacket.md#rightbottom)** = ``5`` <br> 右下对齐|
-| **[RightCenter](UI.UILayoutPacket.md#rightcenter)** = ``4`` <br> 右中对齐|
-| **[RightTop](UI.UILayoutPacket.md#righttop)** = ``3`` <br> 右上对齐|
+| **[CenterBottom](UI.UILayoutPacket.md#centerbottom)** = ``8`` <br> |
+| **[CenterCenter](UI.UILayoutPacket.md#centercenter)** = ``7`` <br> |
+| **[CenterTop](UI.UILayoutPacket.md#centertop)** = ``6`` <br> |
+| **[LeftBottom](UI.UILayoutPacket.md#leftbottom)** = ``2`` <br> |
+| **[LeftCenter](UI.UILayoutPacket.md#leftcenter)** = ``1`` <br> |
+| **[LeftTop](UI.UILayoutPacket.md#lefttop)** = ``0`` <br> |
+| **[RightBottom](UI.UILayoutPacket.md#rightbottom)** = ``5`` <br> |
+| **[RightCenter](UI.UILayoutPacket.md#rightcenter)** = ``4`` <br> |
+| **[RightTop](UI.UILayoutPacket.md#righttop)** = ``3`` <br> |
 
 ## Enumeration Members
 

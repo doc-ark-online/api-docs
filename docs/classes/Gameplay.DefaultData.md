@@ -1,4 +1,4 @@
-[Gameplay](../modules/Gameplay.Gameplay.md) / DefaultData
+[Avatar](../groups/Avatar.Avatar.md) / DefaultData
 
 # DefaultData <Badge type="tip" text="Class" /> <Score text="DefaultData" />
 
@@ -8,9 +8,9 @@
 
 | Properties |
 | :-----|
-| **[default4FootEditorDataJson](Gameplay.DefaultData.md#default4footeditordatajson)**: `string` <br> 四足默认值|
-| **[defaultV1EditorDataJson](Gameplay.DefaultData.md#defaultv1editordatajson)**: `string` <br> V1默认值|
-| **[defaultV2EditorDataJson](Gameplay.DefaultData.md#defaultv2editordatajson)**: `string` <br> |
+| **[default4FootEditorDataJson](Gameplay.DefaultData.md#default4footeditordatajson)**: `string` <br> V2默认值|
+| **[defaultV1EditorDataJson](Gameplay.DefaultData.md#defaultv1editordatajson)**: `string` <br> V2默认值|
+| **[defaultV2EditorDataJson](Gameplay.DefaultData.md#defaultv2editordatajson)**: `string` <br> V2默认值|
 
 ## Properties
 
