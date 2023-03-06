@@ -8,6 +8,7 @@ MobileEditor
 | :-----|
 | [GizmoCoordinateType](../enums/MobileEditor.GizmoCoordinateType.md) <br> gizmo坐标轴类型|
 | [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo类型|
+| [ReleaseStatus](../enums/MobileEditor.ReleaseStatus.md) <br> UGC 发布的状态|
 | [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选|
 
 | Classes |
@@ -44,7 +45,7 @@ MobileEditor
 | **[getTouchMoveGestureDelegate](MobileEditor.MobileEditor.md#gettouchmovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取手指滑动代理|
 | **[getTwoFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取双指滑动的代理|
 | **[markActorRenderStateDirty](MobileEditor.MobileEditor.md#markactorrenderstatedirty)**(`target`: `Base`): `void` <br> 标记Actor所有组件的渲染状态为脏|
-| **[mobileReleaseGame](MobileEditor.MobileEditor.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<`boolean`\> <br> 移动端编辑器发布游戏|
+| **[mobileReleaseGame](MobileEditor.MobileEditor.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\> <br> 移动端编辑器发布游戏|
 | **[projectWorldLocationToWidgetPosition](MobileEditor.MobileEditor.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](../classes/Type.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
 | **[recordingCharacterGif](MobileEditor.MobileEditor.md#recordingcharactergif)**(`Character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](MobileEditor.MobileEditor.md#redo)**(): `void` <br> 执行恢复操作|
@@ -525,7 +526,7 @@ ___
 
 ### mobileReleaseGame <Score text="mobileReleaseGame" /> 
 
-• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`boolean`\> 
+• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\> 
 
 移动端编辑器发布游戏
 
@@ -545,7 +546,7 @@ ___
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\>
 
 保存成功或失败
 

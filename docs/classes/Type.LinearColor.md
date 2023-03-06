@@ -23,6 +23,7 @@
 | Methods |
 | :-----|
 | **[addition](Type.LinearColor.md#addition)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相加|
+| **[clone](Type.LinearColor.md#clone)**(): [`LinearColor`](Type.LinearColor.md) <br> 克隆当前线性颜色|
 | **[division](Type.LinearColor.md#division)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `outer?`: [`LinearColor`](Type.LinearColor.md)): [`LinearColor`](Type.LinearColor.md) <br> 颜色值相除|
 | **[equality](Type.LinearColor.md#equality)**(`linearColorB`: [`LinearColor`](Type.LinearColor.md), `epsilon?`: `number`): `boolean` <br> 判断两个颜色值是否相等|
 | **[fromString](Type.LinearColor.md#fromstring)**(`jsonStr`: `string`): [`LinearColor`](Type.LinearColor.md) <br> 用数据生成一个新的对象|
@@ -307,6 +308,21 @@ ___
 [`LinearColor`](Type.LinearColor.md)
 
 如果 outer 不为空, 返回 outer, 否则返回一个新的 LinearColor 对象
+
+___
+
+### clone <Score text="clone" /> 
+
+• **clone**(): [`LinearColor`](Type.LinearColor.md) 
+
+克隆当前线性颜色
+
+
+#### Returns
+
+[`LinearColor`](Type.LinearColor.md)
+
+返回一个新的线性颜色
 
 ___
 

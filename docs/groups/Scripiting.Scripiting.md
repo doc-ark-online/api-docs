@@ -25,6 +25,7 @@ Scripiting
 | [GizmoCoordinateType](../enums/MobileEditor.GizmoCoordinateType.md) <br> gizmo坐标轴类型 |
 | [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo类型 |
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方 |
+| [ReleaseStatus](../enums/MobileEditor.ReleaseStatus.md) <br> UGC 发布的状态 |
 | [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选 |
 
 
@@ -57,8 +58,8 @@ Scripiting
 | **[beginActorTransformChange](Scripiting.Scripiting.md#beginactortransformchange)**(`target`: `Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](Scripiting.Scripiting.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/Type.Vector.md), `deltaScale`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
 | **[captureAvatar](Scripiting.Scripiting.md#captureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
-| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[dispatchLocal](Scripiting.Scripiting.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
 | **[dispatchToAllClient](Scripiting.Scripiting.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
 | **[dispatchToClient](Scripiting.Scripiting.md#dispatchtoclient)**(`player`: [`Player`](../classes/Gameplay.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
@@ -79,7 +80,7 @@ Scripiting
 | **[getTouchMoveGestureDelegate](Scripiting.Scripiting.md#gettouchmovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取手指滑动代理|
 | **[getTwoFingerMoveGestureDelegate](Scripiting.Scripiting.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取双指滑动的代理|
 | **[markActorRenderStateDirty](Scripiting.Scripiting.md#markactorrenderstatedirty)**(`target`: `Base`): `void` <br> 标记Actor所有组件的渲染状态为脏|
-| **[mobileReleaseGame](Scripiting.Scripiting.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<`boolean`\> <br> 移动端编辑器发布游戏|
+| **[mobileReleaseGame](Scripiting.Scripiting.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\> <br> 移动端编辑器发布游戏|
 | **[projectWorldLocationToWidgetPosition](Scripiting.Scripiting.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](../classes/Type.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
 | **[recordingCharacterGif](Scripiting.Scripiting.md#recordingcharactergif)**(`Character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](Scripiting.Scripiting.md#redo)**(): `void` <br> 执行恢复操作|
@@ -612,27 +613,6 @@ ___
 
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
 
-• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
-| `ScreenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
-___
-
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
-
 • **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 将二维屏幕位置转换为世界空间三维位置和方向
@@ -644,6 +624,27 @@ ___
 | :------ | :------ | :------ |
 | `screenX` | `number` |  屏幕X轴坐标值 default: |
 | `screenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+___
+
+### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
 
 #### Returns
 
@@ -992,7 +993,7 @@ ___
 
 ### mobileReleaseGame <Score text="mobileReleaseGame" /> 
 
-• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`boolean`\> 
+• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\> 
 
 移动端编辑器发布游戏
 
@@ -1012,7 +1013,7 @@ ___
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\>
 
 保存成功或失败
 ___

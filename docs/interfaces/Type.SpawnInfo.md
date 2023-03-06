@@ -9,7 +9,7 @@
 | Properties |
 | :-----|
 | **[guid](Type.SpawnInfo.md#guid)**: `string` <br> transform|
-| **[inReplicates](Type.SpawnInfo.md#inreplicates)**: `boolean` <br> transform|
+| **[replicates](Type.SpawnInfo.md#replicates)**: `boolean` <br> transform|
 | **[transform](Type.SpawnInfo.md#transform)**: [`Transform`](../classes/Type.Transform.md) <br> transform|
 
 ## Properties
@@ -22,9 +22,9 @@
 
 ___
 
-### inReplicates <Score text="inReplicates" /> 
+### replicates <Score text="replicates" /> 
 
-• `Optional` **inReplicates**: `boolean`
+• `Optional` **replicates**: `boolean`
 
 是否同步
 

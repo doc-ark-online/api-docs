@@ -143,6 +143,7 @@ Enums
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ReleaseStatus](enums/MobileEditor.ReleaseStatus.md) | UGC 发布的状态 | [Scripiting](groups/Scripiting.Scripiting.md) |
 | [RuntimePlatform](enums/Type.RuntimePlatform.md) | 运行平台 | [Utility](groups/Utility.Utility.md) |
 
 
