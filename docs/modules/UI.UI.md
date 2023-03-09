@@ -251,7 +251,8 @@ since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
 
 :::
 
-异步请求资源的ICON信息
+异步请求资源的ICON(预览图)信息
+
 
 
 #### Parameters
@@ -272,7 +273,7 @@ ___
 
 • **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="client" />
 
-异步请求资源的ICON信息
+异步请求资源的ICON(预览图)信息
 
 
 #### Parameters
@@ -458,7 +459,7 @@ ___
 
 • **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="client" />
 
-获取资源的ICON信息
+获取资源的ICON（预览图）信息
 
 
 #### Parameters

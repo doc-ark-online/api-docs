@@ -251,7 +251,7 @@ ___
 
 • **setImageByAssetIconData**(`data`): `void` <Badge type="tip" text="client" />
 
-设置显示资源的ICON
+设置显示资源的ICON（预览图）
 
 
 #### Parameters
