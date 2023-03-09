@@ -9,6 +9,13 @@
   dependencies:
     "@algolia/autocomplete-shared" "1.7.2"
 
+"@algolia/autocomplete-core@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmmirror.com/@algolia/autocomplete-core/-/autocomplete-core-1.8.2.tgz#8d758c8652742e2761450d2b615a841fca24e10e"
+  integrity sha512-mTeshsyFhAqw/ebqNsQpMtbnjr+qVOSKXArEj4K0d7sqc8It1XD0gkASwecm9mF/jlOQ4Z9RNg1HbdA8JPdRwQ==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.8.2"
+
 "@algolia/autocomplete-preset-algolia@1.7.2":
   version "1.7.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.7.2.tgz#9cd4f64b3d64399657ee2dc2b7e0a939e0713a26"
@@ -16,10 +23,22 @@
   dependencies:
     "@algolia/autocomplete-shared" "1.7.2"
 
+"@algolia/autocomplete-preset-algolia@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmmirror.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.8.2.tgz#706e87f94c5f198c0e90502b97af09adeeddcc79"
+  integrity sha512-J0oTx4me6ZM9kIKPuL3lyU3aB8DEvpVvR6xWmHVROx5rOYJGQcZsdG4ozxwcOyiiu3qxMkIbzntnV1S1VWD8yA==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.8.2"
+
 "@algolia/autocomplete-shared@1.7.2":
   version "1.7.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/autocomplete-shared/-/autocomplete-shared-1.7.2.tgz#daa23280e78d3b42ae9564d12470ae034db51a89"
   integrity sha512-QCckjiC7xXHIUaIL3ektBtjJ0w7tTA3iqKcAE/Hjn1lZ5omp7i3Y4e09rAr9ZybqirL7AbxCLLq0Ra5DDPKeug==
+
+"@algolia/autocomplete-shared@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmmirror.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.8.2.tgz#e6972df5c6935a241f16e4909aa82902338e029d"
+  integrity sha512-b6Z/X4MczChMcfhk6kfRmBzPgjoPzuS9KGR4AFsiLulLNRAAqhP+xZTKtMnZGhLuc61I20d5WqlId02AZvcO6g==
 
 "@algolia/cache-browser-local-storage@4.14.2":
   version "4.14.2"
@@ -32,6 +51,11 @@
   version "4.14.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/cache-common/-/cache-common-4.14.2.tgz#b946b6103c922f0c06006fb6929163ed2c67d598"
   integrity sha512-SbvAlG9VqNanCErr44q6lEKD2qoK4XtFNx9Qn8FK26ePCI8I9yU7pYB+eM/cZdS9SzQCRJBbHUumVr4bsQ4uxg==
+
+"@algolia/cache-common@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/cache-common/-/cache-common-4.15.0.tgz#a198098c4b8fa6ef661879ec22d2a2d1ad77d2bb"
+  integrity sha512-Me3PbI4QurAM+3D+htIE0l1xt6+bl/18SG6Wc7bPQEZAtN7DTGz22HqhKNyLF2lR/cOfpaH7umXZlZEhIHf7gQ==
 
 "@algolia/cache-in-memory@4.14.2":
   version "4.14.2"
@@ -67,6 +91,14 @@
     "@algolia/requester-common" "4.14.2"
     "@algolia/transporter" "4.14.2"
 
+"@algolia/client-common@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/client-common/-/client-common-4.15.0.tgz#27dd9441aedf481736696d519e55ea8e2f5a4432"
+  integrity sha512-PlsJMObZuYw4JlG5EhYv1PHDOv7n5mD5PzqFyoNfSOYaEPRZepa3W579ya29yOu3FZ0VGMNJmB7Q5v/+/fwvIw==
+  dependencies:
+    "@algolia/requester-common" "4.15.0"
+    "@algolia/transporter" "4.15.0"
+
 "@algolia/client-personalization@4.14.2":
   version "4.14.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/client-personalization/-/client-personalization-4.14.2.tgz#656bbb6157a3dd1a4be7de65e457fda136c404ec"
@@ -85,10 +117,24 @@
     "@algolia/requester-common" "4.14.2"
     "@algolia/transporter" "4.14.2"
 
+"@algolia/client-search@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/client-search/-/client-search-4.15.0.tgz#2d849faae7943fcc983ac923eac767666a9e6a9a"
+  integrity sha512-dTwZD4u53WdmexnMcoO2Qd/+YCP3ESXKOtD2MryQ1a9dHwB2Y3Qob0kyS1PG82idwM3enbznvscI9Sf4o9PUWQ==
+  dependencies:
+    "@algolia/client-common" "4.15.0"
+    "@algolia/requester-common" "4.15.0"
+    "@algolia/transporter" "4.15.0"
+
 "@algolia/logger-common@4.14.2":
   version "4.14.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/logger-common/-/logger-common-4.14.2.tgz#b74b3a92431f92665519d95942c246793ec390ee"
   integrity sha512-/JGlYvdV++IcMHBnVFsqEisTiOeEr6cUJtpjz8zc0A9c31JrtLm318Njc72p14Pnkw3A/5lHHh+QxpJ6WFTmsA==
+
+"@algolia/logger-common@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/logger-common/-/logger-common-4.15.0.tgz#a2cf3d3abbdd00594006164302600ba46d75059f"
+  integrity sha512-D8OFwn/HpvQz66goIcjxOKsYBMuxiruxJ3cA/bnc0EiDvSA2P2z6bNQWgS5gbstuTZIJmbhr+53NyOxFkmMNAA==
 
 "@algolia/logger-console@4.14.2":
   version "4.14.2"
@@ -109,6 +155,11 @@
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/requester-common/-/requester-common-4.14.2.tgz#bc4e9e5ee16c953c0ecacbfb334a33c30c28b1a1"
   integrity sha512-73YQsBOKa5fvVV3My7iZHu1sUqmjjfs9TteFWwPwDmnad7T0VTCopttcsM3OjLxZFtBnX61Xxl2T2gmG2O4ehg==
 
+"@algolia/requester-common@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/requester-common/-/requester-common-4.15.0.tgz#c68ad3dccc1de71b5be9b08a07e2baf58ec49d82"
+  integrity sha512-w0UUzxElbo4hrKg4QP/jiXDNbIJuAthxdlkos9nS8KAPK2XI3R9BlUjLz/ZVs4F9TDGI0mhjrNHhZ12KXcoyhg==
+
 "@algolia/requester-node-http@4.14.2":
   version "4.14.2"
   resolved "https://repo.huaweicloud.com/repository/npm/@algolia/requester-node-http/-/requester-node-http-4.14.2.tgz#7c1223a1785decaab1def64c83dade6bea45e115"
@@ -125,6 +176,15 @@
     "@algolia/logger-common" "4.14.2"
     "@algolia/requester-common" "4.14.2"
 
+"@algolia/transporter@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.npmmirror.com/@algolia/transporter/-/transporter-4.15.0.tgz#c65c512206c66aadc2897337220ae5454001967e"
+  integrity sha512-JoWR+ixG3EmA0UPntQFN/FV5TasYcYu93d5+oKzHFeZ6Z7rtW5Im9iy/Oh/ggk1AAN5fTdqKewtbBpdaYDbKsQ==
+  dependencies:
+    "@algolia/cache-common" "4.15.0"
+    "@algolia/logger-common" "4.15.0"
+    "@algolia/requester-common" "4.15.0"
+
 "@babel/parser@^7.16.4":
   version "7.20.5"
   resolved "https://repo.huaweicloud.com/repository/npm/@babel/parser/-/parser-7.20.5.tgz#7f3c7335fe417665d929f34ae5dceae4c04015e8"
@@ -134,6 +194,11 @@
   version "3.3.0"
   resolved "https://repo.huaweicloud.com/repository/npm/@docsearch/css/-/css-3.3.0.tgz#d698e48302d12240d7c2f7452ccb2d2239a8cd80"
   integrity sha512-rODCdDtGyudLj+Va8b6w6Y85KE85bXRsps/R4Yjwt5vueXKXZQKYw0aA9knxLBT6a/bI/GMrAcmCR75KYOM6hg==
+
+"@docsearch/css@3.3.3":
+  version "3.3.3"
+  resolved "https://registry.npmmirror.com/@docsearch/css/-/css-3.3.3.tgz#f9346c9e24602218341f51b8ba91eb9109add434"
+  integrity sha512-6SCwI7P8ao+se1TUsdZ7B4XzL+gqeQZnBc+2EONZlcVa0dVrk0NjETxozFKgMv0eEGH8QzP1fkN+A1rH61l4eg==
 
 "@docsearch/js@^3.3.0":
   version "3.3.0"
@@ -269,6 +334,18 @@
   integrity sha512-Inh0OoFVzO2PLvrUF8RZhY9NVDdg9DJHQ5YlvXhrGtQxSPzy2smS3TWzLAi+zlHSJNHSvi+1zYayLen2lGxjdA==
   dependencies:
     tslib "^2.0.1"
+
+"@metaapp/docsearch-react@^3.3.4":
+  version "3.3.4"
+  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-3.3.4.tgz#6543c9cbfc895f624dd9128eceac985c89cdd780"
+  integrity sha512-NDt3ZvpJeovVzKS2pFzN4VIwX6JlUtBZauQ+W5n2xWowPwfoYkS6V4Ebprj0QA1EB5MFmiqhS9yPK1AtsdLSOA==
+  dependencies:
+    "@algolia/autocomplete-core" "1.8.2"
+    "@algolia/autocomplete-preset-algolia" "1.8.2"
+    "@docsearch/css" "3.3.3"
+    algoliasearch "^4.0.0"
+  optionalDependencies:
+    "@algolia/client-search" "^4.15.0"
 
 "@types/body-scroll-lock@^3.1.0":
   version "3.1.0"
