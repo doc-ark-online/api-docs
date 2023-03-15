@@ -86,7 +86,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '021 版本',
-        items: [{ text: '020 版本', link: 'https://api-docs-020.ark.online/' }]
+        items: [{ text: '主版本', link: 'https://api-docs.ark.online/' }]
       }
       // {
       //   text: '语言',
