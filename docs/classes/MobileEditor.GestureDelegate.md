@@ -8,12 +8,12 @@
 
 | Properties |
 | :-----|
-| **[oneFingerMoveGestureDelegate](MobileEditor.GestureDelegate.md#onefingermovegesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`location`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 双指滑动代理|
-| **[pinchGestureDelegate](MobileEditor.GestureDelegate.md#pinchgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 双指滑动代理|
-| **[tapGestureDelegate](MobileEditor.GestureDelegate.md#tapgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 双指滑动代理|
-| **[touchBeganGestureDelegate](MobileEditor.GestureDelegate.md#touchbegangesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 双指滑动代理|
-| **[touchEndGestureDelegate](MobileEditor.GestureDelegate.md#touchendgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <br> 双指滑动代理|
-| **[touchMoveGestureDelegate](MobileEditor.GestureDelegate.md#touchmovegesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 双指滑动代理|
+| **[oneFingerMoveGestureDelegate](MobileEditor.GestureDelegate.md#onefingermovegesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`location`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 单指滑动代理|
+| **[pinchGestureDelegate](MobileEditor.GestureDelegate.md#pinchgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 挤压手势代理|
+| **[tapGestureDelegate](MobileEditor.GestureDelegate.md#tapgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 点击事件代理|
+| **[touchBeganGestureDelegate](MobileEditor.GestureDelegate.md#touchbegangesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 手指按下代理|
+| **[touchEndGestureDelegate](MobileEditor.GestureDelegate.md#touchendgesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <br> 手指抬起代理|
+| **[touchMoveGestureDelegate](MobileEditor.GestureDelegate.md#touchmovegesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 手指滑动代理|
 | **[twoFingerMoveGestureDelegate](MobileEditor.GestureDelegate.md#twofingermovegesturedelegate)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`location`: [`Vector2`](Type.Vector2.md)) => `void`\> <br> 双指滑动代理|
 
 ## Properties

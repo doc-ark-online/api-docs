@@ -84,14 +84,14 @@ UI
 
 | Variables |
 | :-----|
-| **[UILayerBottom](UI.UI.md#uilayerbottom)**: ``1`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerDialog](UI.UI.md#uilayerdialog)**: ``5`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerError](UI.UI.md#uilayererror)**: ``7`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerMiddle](UI.UI.md#uilayermiddle)**: ``2`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerOwn](UI.UI.md#uilayerown)**: ``3`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerScene](UI.UI.md#uilayerscene)**: ``0`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerSystem](UI.UI.md#uilayersystem)**: ``6`` <br> 转化绝对坐标到相对坐标|
-| **[UILayerTop](UI.UI.md#uilayertop)**: ``4`` <br> 转化绝对坐标到相对坐标|
+| **[UILayerBottom](UI.UI.md#uilayerbottom)**: ``1`` <br> 底层 zOrder开始于100000|
+| **[UILayerDialog](UI.UI.md#uilayerdialog)**: ``5`` <br> 对话 zOrder开始于500000|
+| **[UILayerError](UI.UI.md#uilayererror)**: ``7`` <br> 错误 这个层级不可以使用，需要增加层级可以使用addUILayerMap zOrder开始于700000|
+| **[UILayerMiddle](UI.UI.md#uilayermiddle)**: ``2`` <br> 中层 zOrder开始于200000|
+| **[UILayerOwn](UI.UI.md#uilayerown)**: ``3`` <br> 独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000|
+| **[UILayerScene](UI.UI.md#uilayerscene)**: ``0`` <br> 场景 zOrder开始于0|
+| **[UILayerSystem](UI.UI.md#uilayersystem)**: ``6`` <br> 系统 zOrder开始于600000|
+| **[UILayerTop](UI.UI.md#uilayertop)**: ``4`` <br> 顶层 zOrder开始于400000|
 
 | Functions |
 | :-----|
@@ -221,6 +221,66 @@ ___
 
 相对坐标
 
+• **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对坐标到相对坐标
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+相对坐标
+
+• **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对坐标到相对坐标
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+相对坐标
+
+• **absoluteToLocal**(`geometry`, `absolutePosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对坐标到相对坐标
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+相对坐标
+
 ___
 
 ### absoluteToViewport <Score text="absoluteToViewport" /> 
@@ -228,6 +288,54 @@ ___
 • **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void` <Badge type="tip" text="client" />
 
 将桌面空间中几何图形的绝对坐标转换为本地视口坐标
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absoluteDesktopPosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对桌面坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个小部件到视口空间相同的位置 |
+
+
+• **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将桌面空间中几何图形的绝对坐标转换为本地视口坐标
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absoluteDesktopPosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对桌面坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个小部件到视口空间相同的位置 |
+
+
+• **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将桌面空间中几何图形的绝对坐标转换为本地视口坐标
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absoluteDesktopPosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对桌面坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个小部件到视口空间相同的位置 |
+
+
+• **absoluteToViewport**(`absoluteDesktopPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将桌面空间中几何图形的绝对坐标转换为本地视口坐标
+
+**`Effect`**
 
 
 #### Parameters
@@ -251,8 +359,82 @@ since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
 
 :::
 
-异步请求资源的ICON(预览图)信息
+异步请求资源的ICON信息
 
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\>
+
+::: danger Deprecated
+
+since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
+
+:::
+
+异步请求资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\>
+
+::: danger Deprecated
+
+since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
+
+:::
+
+异步请求资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\>
+
+::: danger Deprecated
+
+since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
+
+:::
+
+异步请求资源的ICON信息
+
+**`Effect`**
 
 
 #### Parameters
@@ -273,7 +455,64 @@ ___
 
 • **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="client" />
 
-异步请求资源的ICON(预览图)信息
+异步请求资源的ICON信息
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\>
+
+异步请求资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\>
+
+异步请求资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assets` | `string`[] | 指定资源的id数组 |
+
+#### Returns
+
+`Promise`<`void`\>
+
+异步回调
+
+• **assetIDChangeIconUrlRequest**(`assets`): `Promise`<`void`\>
+
+异步请求资源的ICON信息
+
+**`Effect`**
 
 
 #### Parameters
@@ -298,6 +537,30 @@ ___
 
 
 
+• **cancelDragDrop**(): `void`
+
+中断所有的DragDrop
+
+**`Effect`**
+
+
+
+• **cancelDragDrop**(): `void`
+
+中断所有的DragDrop
+
+**`Effect`**
+
+
+
+• **cancelDragDrop**(): `void`
+
+中断所有的DragDrop
+
+**`Effect`**
+
+
+
 ___
 
 ### createUI <Score text="createUI" /> 
@@ -305,6 +568,84 @@ ___
 • **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T` <Badge type="tip" text="client" />
 
 创建UIPrefab
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
+| `panelClass` | () => `T` | 继承至UI身上脚本的派生类 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
+• **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T`
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
+| `panelClass` | () => `T` | 继承至UI身上脚本的派生类 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
+• **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T`
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
+| `panelClass` | () => `T` | 继承至UI身上脚本的派生类 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
+• **createUI**<`T`\>(`UIPrefabName`, `panelClass`): `T`
+
+创建UIPrefab
+
+**`Effect`**
 
 
 #### Type parameters
@@ -347,6 +688,63 @@ ___
 
 对应的UI
 
+• **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
+• **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
+• **createUIByName**(`UIPrefabName`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPrefabName` | `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
 ___
 
 ### createUIByPath <Score text="createUIByPath" /> 
@@ -354,6 +752,63 @@ ___
 • **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md) <Badge type="tip" text="client" />
 
 创建UIPrefab
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPath` | `string` | 创建UI 的完整路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
+• **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPath` | `string` | 创建UI 的完整路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
+• **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UIPath` | `string` | 创建UI 的完整路径 |
+
+#### Returns
+
+[`UserWidget`](../classes/UI.UserWidget.md)
+
+对应的UI
+
+• **createUIByPath**(`UIPath`): [`UserWidget`](../classes/UI.UserWidget.md)
+
+创建UIPrefab
+
+**`Effect`**
 
 
 #### Parameters
@@ -395,6 +850,81 @@ ___
 
 对应的UI
 
+• **createUIOnlyClass**<`T`\>(`panelClass`): `T`
+
+创建空的UI
+
+**`Effect`**
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `panelClass` | () => `T` | 指定UI控件身上的行为脚本 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
+• **createUIOnlyClass**<`T`\>(`panelClass`): `T`
+
+创建空的UI
+
+**`Effect`**
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `panelClass` | () => `T` | 指定UI控件身上的行为脚本 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
+• **createUIOnlyClass**<`T`\>(`panelClass`): `T`
+
+创建空的UI
+
+**`Effect`**
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `panelClass` | () => `T` | 指定UI控件身上的行为脚本 |
+
+#### Returns
+
+`T`
+
+对应的UI
+
 ___
 
 ### endDragDrop <Score text="endDragDrop" /> 
@@ -411,6 +941,48 @@ ___
 | `InReply` | [`EventReply`](../classes/UI.EventReply.md) | 事件 |
 
 
+• **endDragDrop**(`InReply`): `void`
+
+中断一个拖拽事件, 传入一个操作的事件
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InReply` | [`EventReply`](../classes/UI.EventReply.md) | 事件 |
+
+
+• **endDragDrop**(`InReply`): `void`
+
+中断一个拖拽事件, 传入一个操作的事件
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InReply` | [`EventReply`](../classes/UI.EventReply.md) | 事件 |
+
+
+• **endDragDrop**(`InReply`): `void`
+
+中断一个拖拽事件, 传入一个操作的事件
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InReply` | [`EventReply`](../classes/UI.EventReply.md) | 事件 |
+
+
 ___
 
 ### findUIBehavior <Score text="findUIBehavior" /> 
@@ -418,6 +990,63 @@ ___
 • **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md) <Badge type="tip" text="client" />
 
 获取UI脚本
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UI` | [`Widget`](../classes/UI.Widget.md) | UI控件 |
+
+#### Returns
+
+[`UIBehavior`](../classes/UI.UIBehavior.md)
+
+UI绑定的脚本
+
+• **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md)
+
+获取UI脚本
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UI` | [`Widget`](../classes/UI.Widget.md) | UI控件 |
+
+#### Returns
+
+[`UIBehavior`](../classes/UI.UIBehavior.md)
+
+UI绑定的脚本
+
+• **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md)
+
+获取UI脚本
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UI` | [`Widget`](../classes/UI.Widget.md) | UI控件 |
+
+#### Returns
+
+[`UIBehavior`](../classes/UI.UIBehavior.md)
+
+UI绑定的脚本
+
+• **findUIBehavior**(`UI`): [`UIBehavior`](../classes/UI.UIBehavior.md)
+
+获取UI脚本
+
+**`Effect`**
 
 
 #### Parameters
@@ -453,13 +1082,127 @@ ___
 
 返回Size
 
+• **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回绝对空间中几何图形的大小
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
+• **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回绝对空间中几何图形的大小
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
+• **getAbsoluteSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回绝对空间中几何图形的大小
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
 ___
 
 ### getAssetIconDataByAssetID <Score text="getAssetIconDataByAssetID" /> 
 
 • **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md) <Badge type="tip" text="client" />
 
-获取资源的ICON（预览图）信息
+获取资源的ICON信息
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `asset` | `string` | 指定资源的id |
+
+#### Returns
+
+[`AssetIconData`](../classes/UI.AssetIconData.md)
+
+资源的ICON信息
+
+• **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md)
+
+获取资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `asset` | `string` | 指定资源的id |
+
+#### Returns
+
+[`AssetIconData`](../classes/UI.AssetIconData.md)
+
+资源的ICON信息
+
+• **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md)
+
+获取资源的ICON信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `asset` | `string` | 指定资源的id |
+
+#### Returns
+
+[`AssetIconData`](../classes/UI.AssetIconData.md)
+
+资源的ICON信息
+
+• **getAssetIconDataByAssetID**(`asset`): [`AssetIconData`](../classes/UI.AssetIconData.md)
+
+获取资源的ICON信息
+
+**`Effect`**
 
 
 #### Parameters
@@ -489,6 +1232,45 @@ ___
 
 绝对位置
 
+• **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取当前鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
+• **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取当前鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
+• **getCurrentMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取当前鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
 ___
 
 ### getDragDroppingContent <Score text="getDragDroppingContent" /> 
@@ -496,6 +1278,45 @@ ___
 • **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <Badge type="tip" text="client" />
 
 获取当前的DragDrop事件
+
+
+#### Returns
+
+[`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+返回当前的DragDrop事件
+
+• **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+获取当前的DragDrop事件
+
+**`Effect`**
+
+
+#### Returns
+
+[`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+返回当前的DragDrop事件
+
+• **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+获取当前的DragDrop事件
+
+**`Effect`**
+
+
+#### Returns
+
+[`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+返回当前的DragDrop事件
+
+• **getDragDroppingContent**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md)
+
+获取当前的DragDrop事件
+
+**`Effect`**
 
 
 #### Returns
@@ -519,6 +1340,45 @@ ___
 
 绝对位置
 
+• **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取上一次鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
+• **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取上一次鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
+• **getLastMousePosition**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取上一次鼠标所在的绝对位置
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对位置
+
 ___
 
 ### getLocalSize <Score text="getLocalSize" /> 
@@ -526,6 +1386,63 @@ ___
 • **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 返回局部空间中几何图形的大小
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
+• **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的大小
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
+• **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的大小
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回Size
+
+• **getLocalSize**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的大小
+
+**`Effect`**
 
 
 #### Parameters
@@ -561,6 +1478,63 @@ ___
 
 返回LeftTop
 
+• **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的局部顶部/左侧
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回LeftTop
+
+• **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的局部顶部/左侧
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回LeftTop
+
+• **getLocalTopLeft**(`geometry`): [`Vector2`](../classes/Type.Vector2.md)
+
+返回局部空间中几何图形的局部顶部/左侧
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回LeftTop
+
 ___
 
 ### getMousePositionOnPlatform <Score text="getMousePositionOnPlatform" /> 
@@ -568,6 +1542,45 @@ ___
 • **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+• **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+• **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+• **getMousePositionOnPlatform**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。
+
+**`Effect`**
 
 
 #### Returns
@@ -591,6 +1604,45 @@ ___
 
 返回平台的鼠标光标在视口控件的本地空间中的位置。
 
+• **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标在视口控件的本地空间中的位置。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标在视口控件的本地空间中的位置。
+
+• **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标在视口控件的本地空间中的位置。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标在视口控件的本地空间中的位置。
+
+• **getMousePositionOnViewport**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取平台的鼠标光标在视口控件的本地空间中的位置。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回平台的鼠标光标在视口控件的本地空间中的位置。
+
 ___
 
 ### getPlayerScreenWidgetGeometry <Score text="getPlayerScreenWidgetGeometry" /> 
@@ -598,6 +1650,63 @@ ___
 • **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getPlayerScreenWidgetGeometry**(`player`): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
 
 
 #### Parameters
@@ -628,6 +1737,48 @@ ___
 | `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | 传入回调函数 |
 
 
+• **getResolutionChanged**(`Delegate`): `void`
+
+分辨率改变时的回调
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | 传入回调函数 |
+
+
+• **getResolutionChanged**(`Delegate`): `void`
+
+分辨率改变时的回调
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | 传入回调函数 |
+
+
+• **getResolutionChanged**(`Delegate`): `void`
+
+分辨率改变时的回调
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\> | 传入回调函数 |
+
+
 ___
 
 ### getViewportScale <Score text="getViewportScale" /> 
@@ -635,6 +1786,45 @@ ___
 • **getViewportScale**(): `number` <Badge type="tip" text="client" />
 
 获取应用于视口和所有小部件的当前DPI Scale。
+
+
+#### Returns
+
+`number`
+
+返回应用于视口和所有小部件的当前DPI Scale。
+
+• **getViewportScale**(): `number`
+
+获取应用于视口和所有小部件的当前DPI Scale。
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+返回应用于视口和所有小部件的当前DPI Scale。
+
+• **getViewportScale**(): `number`
+
+获取应用于视口和所有小部件的当前DPI Scale。
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+返回应用于视口和所有小部件的当前DPI Scale。
+
+• **getViewportScale**(): `number`
+
+获取应用于视口和所有小部件的当前DPI Scale。
+
+**`Effect`**
 
 
 #### Returns
@@ -658,6 +1848,45 @@ ___
 
 返回游戏视口的大小。
 
+• **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取游戏视口的大小。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回游戏视口的大小。
+
+• **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取游戏视口的大小。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回游戏视口的大小。
+
+• **getViewportSize**(): [`Vector2`](../classes/Type.Vector2.md)
+
+获取游戏视口的大小。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+返回游戏视口的大小。
+
 ___
 
 ### getViewportWidgetGeometry <Score text="getViewportWidgetGeometry" /> 
@@ -665,6 +1894,45 @@ ___
 • **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md) <Badge type="tip" text="client" />
 
 获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
+
+
+#### Returns
+
+[`Geometry`](../classes/UI.Geometry.md)
+
+返回所有控件的控件的几何形状
+
+• **getViewportWidgetGeometry**(): [`Geometry`](../classes/UI.Geometry.md)
+
+获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。
+
+**`Effect`**
 
 
 #### Returns
@@ -688,6 +1956,45 @@ ___
 
 boolean
 
+• **isDragDropping**(): `boolean`
+
+判断当前是否有一个DragDrop事件
+
+**`Effect`**
+
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• **isDragDropping**(): `boolean`
+
+判断当前是否有一个DragDrop事件
+
+**`Effect`**
+
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• **isDragDropping**(): `boolean`
+
+判断当前是否有一个DragDrop事件
+
+**`Effect`**
+
+
+#### Returns
+
+`boolean`
+
+boolean
+
 ___
 
 ### isUnderLocation <Score text="isUnderLocation" /> 
@@ -695,6 +2002,66 @@ ___
 • **isUnderLocation**(`geometry`, `absolutePosition`): `boolean` <Badge type="tip" text="client" />
 
 判定给定坐标是否在geometry下
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+`boolean`
+
+坐标是否在geometry下
+
+• **isUnderLocation**(`geometry`, `absolutePosition`): `boolean`
+
+判定给定坐标是否在geometry下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+`boolean`
+
+坐标是否在geometry下
+
+• **isUnderLocation**(`geometry`, `absolutePosition`): `boolean`
+
+判定给定坐标是否在geometry下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absolutePosition` | [`Vector2`](../classes/Type.Vector2.md) | 绝对坐标 |
+
+#### Returns
+
+`boolean`
+
+坐标是否在geometry下
+
+• **isUnderLocation**(`geometry`, `absolutePosition`): `boolean`
+
+判定给定坐标是否在geometry下
+
+**`Effect`**
 
 
 #### Parameters
@@ -732,6 +2099,66 @@ ___
 
 绝对坐标
 
+• **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 相对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对坐标
+
+• **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 相对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对坐标
+
+• **localToAbsolute**(`geometry`, `localPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 相对坐标 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对坐标
+
 ___
 
 ### localToViewport <Score text="localToViewport" /> 
@@ -751,6 +2178,57 @@ ___
 | `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个控件到视口空间相同的位置 |
 
 
+• **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将几何体的局部坐标转换为局部视口坐标。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 局部坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标。 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个控件到视口空间相同的位置 |
+
+
+• **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将几何体的局部坐标转换为局部视口坐标。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 局部坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标。 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个控件到视口空间相同的位置 |
+
+
+• **localToViewport**(`geometry`, `localPosition`, `outPixelPosition`, `outViewportPosition`): `void`
+
+将几何体的局部坐标转换为局部视口坐标。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localPosition` | [`Vector2`](../classes/Type.Vector2.md) | 局部坐标 |
+| `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标。 |
+| `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个控件到视口空间相同的位置 |
+
+
 ___
 
 ### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
@@ -758,6 +2236,72 @@ ___
 • **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="client" />
 
 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) | 要投射的世界位置 |
+| `outScreenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 在视口的位置 |
+| `isPlayerViewportRelative` | `boolean` | 是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean`
+
+获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) | 要投射的世界位置 |
+| `outScreenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 在视口的位置 |
+| `isPlayerViewportRelative` | `boolean` | 是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean`
+
+获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) | 要投射的世界位置 |
+| `outScreenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 在视口的位置 |
+| `isPlayerViewportRelative` | `boolean` | 是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean`
+
+获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
+
+**`Effect`**
 
 
 #### Parameters
@@ -796,6 +2340,63 @@ ___
 
 本地位置
 
+• **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为视口控件的本地空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+本地位置
+
+• **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为视口控件的本地空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+本地位置
+
+• **screenToViewport**(`screenPosition`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为视口控件的本地空间。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+本地位置
+
 ___
 
 ### screenToWidgetAbsolute <Score text="screenToWidgetAbsolute" /> 
@@ -803,6 +2404,66 @@ ___
 • **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default:false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对桌面程序坐标
+
+• **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default:false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对桌面程序坐标
+
+• **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default:false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对桌面程序坐标
+
+• **screenToWidgetAbsolute**(`screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
 
 
 #### Parameters
@@ -841,6 +2502,69 @@ ___
 
 控件的本地位置
 
+• **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 集合体 |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default: false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+控件的本地位置
+
+• **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 集合体 |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default: false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+控件的本地位置
+
+• **screenToWidgetLocal**(`geometry`, `screenPosition`, `isIncludeWindowPosition?`): [`Vector2`](../classes/Type.Vector2.md)
+
+将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 集合体 |
+| `screenPosition` | [`Vector2`](../classes/Type.Vector2.md) | 屏幕位置 |
+| `isIncludeWindowPosition?` | `boolean` | 是否移除游戏窗口位置(在窗口模式下有用) default: false |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+控件的本地位置
+
 ___
 
 ### setFocusToGameViewport <Score text="setFocusToGameViewport" /> 
@@ -848,6 +2572,30 @@ ___
 • **setFocusToGameViewport**(): `void` <Badge type="tip" text="client" />
 
 设置关注游戏窗口
+
+
+
+• **setFocusToGameViewport**(): `void`
+
+设置关注游戏窗口
+
+**`Effect`**
+
+
+
+• **setFocusToGameViewport**(): `void`
+
+设置关注游戏窗口
+
+**`Effect`**
+
+
+
+• **setFocusToGameViewport**(): `void`
+
+设置关注游戏窗口
+
+**`Effect`**
 
 
 
@@ -869,6 +2617,54 @@ ___
 | `hideCursorDuringCapture?` | `boolean` | 是否隐藏光标 default:true |
 
 
+• **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void`
+
+设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+| `hideCursorDuringCapture?` | `boolean` | 是否隐藏光标 default:true |
+
+
+• **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void`
+
+设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+| `hideCursorDuringCapture?` | `boolean` | 是否隐藏光标 default:true |
+
+
+• **setInputModeGameAndUI**(`InWidgetToFocus?`, `InMouseLockMode?`, `hideCursorDuringCapture?`): `void`
+
+设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+| `hideCursorDuringCapture?` | `boolean` | 是否隐藏光标 default:true |
+
+
 ___
 
 ### setInputModeGameOnly <Score text="setInputModeGameOnly" /> 
@@ -879,6 +2675,30 @@ ___
 
 
 
+• **setInputModeGameOnly**(): `void`
+
+设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入
+
+**`Effect`**
+
+
+
+• **setInputModeGameOnly**(): `void`
+
+设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入
+
+**`Effect`**
+
+
+
+• **setInputModeGameOnly**(): `void`
+
+设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入
+
+**`Effect`**
+
+
+
 ___
 
 ### setInputModeUIOnly <Score text="setInputModeUIOnly" /> 
@@ -886,6 +2706,51 @@ ___
 • **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void` <Badge type="tip" text="client" />
 
 设置只允许UI响应用户输入的输入模式。
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+
+
+• **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void`
+
+设置只允许UI响应用户输入的输入模式。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+
+
+• **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void`
+
+设置只允许UI响应用户输入的输入模式。
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InWidgetToFocus?` | [`Widget`](../classes/UI.Widget.md) | 响应输入模式的widget default:null |
+| `InMouseLockMode?` | [`MouseLockMode`](../enums/UI.MouseLockMode.md) | 鼠标锁定的输入模式 default:UIType.MouseLockMode.DoNotLock |
+
+
+• **setInputModeUIOnly**(`InWidgetToFocus?`, `InMouseLockMode?`): `void`
+
+设置只允许UI响应用户输入的输入模式。
+
+**`Effect`**
 
 
 #### Parameters
@@ -918,6 +2783,66 @@ ___
 
 局部空间下矢量
 
+• **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对空间下矢量到局部空间下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absoluteVector` | [`Vector2`](../classes/Type.Vector2.md) | 绝对空间矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+局部空间下矢量
+
+• **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对空间下矢量到局部空间下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absoluteVector` | [`Vector2`](../classes/Type.Vector2.md) | 绝对空间矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+局部空间下矢量
+
+• **transformVectorAbsoluteToLocal**(`geometry`, `absoluteVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化绝对空间下矢量到局部空间下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `absoluteVector` | [`Vector2`](../classes/Type.Vector2.md) | 绝对空间矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+局部空间下矢量
+
 ___
 
 ### transformVectorLocalToAbsolute <Score text="transformVectorLocalToAbsolute" /> 
@@ -925,6 +2850,66 @@ ___
 • **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md) <Badge type="tip" text="client" />
 
 转化局部空间下矢量到绝对空间下
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localVector` | [`Vector2`](../classes/Type.Vector2.md) | 局部空间下矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对空间矢量
+
+• **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化局部空间下矢量到绝对空间下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localVector` | [`Vector2`](../classes/Type.Vector2.md) | 局部空间下矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对空间矢量
+
+• **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化局部空间下矢量到绝对空间下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `geometry` | [`Geometry`](../classes/UI.Geometry.md) | 几何体 |
+| `localVector` | [`Vector2`](../classes/Type.Vector2.md) | 局部空间下矢量 |
+
+#### Returns
+
+[`Vector2`](../classes/Type.Vector2.md)
+
+绝对空间矢量
+
+• **transformVectorLocalToAbsolute**(`geometry`, `localVector`): [`Vector2`](../classes/Type.Vector2.md)
+
+转化局部空间下矢量到绝对空间下
+
+**`Effect`**
 
 
 #### Parameters

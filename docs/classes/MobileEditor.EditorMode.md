@@ -16,7 +16,7 @@
 
 | Properties |
 | :-----|
-| **[onMobileEditorStateChanged](MobileEditor.EditorMode.md#onmobileeditorstatechanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\> <br> 获取坐标轴Actor|
+| **[onMobileEditorStateChanged](MobileEditor.EditorMode.md#onmobileeditorstatechanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\> <br> 代理通知状态改变|
 
 | Accessors |
 | :-----|

@@ -22,9 +22,9 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 
 | Properties |
 | :-----|
-| **[onSoundFinished](Gameplay.Sound.md#onsoundfinished)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取音效的衰减方式|
-| **[onSoundPaused](Gameplay.Sound.md#onsoundpaused)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取音效的衰减方式|
-| **[onSoundStarted](Gameplay.Sound.md#onsoundstarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取音效的衰减方式|
+| **[onSoundFinished](Gameplay.Sound.md#onsoundfinished)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 声音结束事件|
+| **[onSoundPaused](Gameplay.Sound.md#onsoundpaused)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 声音暂停事件|
+| **[onSoundStarted](Gameplay.Sound.md#onsoundstarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 声音开始事件|
 
 | Accessors |
 | :-----|

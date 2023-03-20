@@ -14,9 +14,9 @@
 
 | Properties |
 | :-----|
-| **[onProjectileDestroy](Gameplay.ProjectileLauncher.md#onprojectiledestroy)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 加速度值，正值加速，负值减速|
-| **[onProjectileHit](Gameplay.ProjectileLauncher.md#onprojectilehit)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 加速度值，正值加速，负值减速|
-| **[onProjectileSpawned](Gameplay.ProjectileLauncher.md#onprojectilespawned)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\> <br> 加速度值，正值加速，负值减速|
+| **[onProjectileDestroy](Gameplay.ProjectileLauncher.md#onprojectiledestroy)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 投掷物被销毁时触发绑定函数|
+| **[onProjectileHit](Gameplay.ProjectileLauncher.md#onprojectilehit)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`hitActor`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 投掷物击中物体时触发绑定函数|
+| **[onProjectileSpawned](Gameplay.ProjectileLauncher.md#onprojectilespawned)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`spawnedInstance`: `GameObject`) => `void`\> <br> 投掷物生成实例时触发绑定函数，此回调触发时实例还没有开始移动，建议将此函数作为临时附着网格体或特效时使用|
 
 | Accessors |
 | :-----|

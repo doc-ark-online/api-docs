@@ -20,8 +20,8 @@ since:018 reason:有新类可用，后期如果出问题不会维护 replacement
 
 | Properties |
 | :-----|
-| **[onRotationStart](Gameplay.PhysicsRotator.md#onrotationstart)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取最大可旋转角度|
-| **[onRotationStop](Gameplay.PhysicsRotator.md#onrotationstop)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取最大可旋转角度|
+| **[onRotationStart](Gameplay.PhysicsRotator.md#onrotationstart)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 旋转轴开始事件|
+| **[onRotationStop](Gameplay.PhysicsRotator.md#onrotationstop)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 旋转轴停止事件|
 
 | Accessors |
 | :-----|

@@ -8,8 +8,8 @@
 
 | Properties |
 | :-----|
-| **[x](Type.Vector2.md#x)**: `number` <br> 计算向量的长度|
-| **[y](Type.Vector2.md#y)**: `number` <br> 计算向量的长度|
+| **[x](Type.Vector2.md#x)**: `number` <br> 向量的 x 分量|
+| **[y](Type.Vector2.md#y)**: `number` <br> 向量的 y 分量|
 
 | Accessors |
 | :-----|

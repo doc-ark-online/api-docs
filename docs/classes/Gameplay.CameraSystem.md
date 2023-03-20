@@ -18,8 +18,8 @@
 
 | Properties |
 | :-----|
-| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 获取是否开启摄像机碰撞|
-| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 获取是否开启摄像机碰撞|
+| **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 设置是否开启透明效果|
+| **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 摄像机与角色之间的物体|
 
 | Accessors |
 | :-----|

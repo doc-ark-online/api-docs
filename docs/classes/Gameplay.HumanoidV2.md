@@ -32,21 +32,21 @@
 
 | Properties |
 | :-----|
-| **[behindHair](Gameplay.HumanoidV2.md#behindhair)**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md) <br> 把本地角色形象数据同步到多端|
-| **[frontHair](Gameplay.HumanoidV2.md#fronthair)**: [`HumanoidV2FrontHairPart`](Gameplay.HumanoidV2FrontHairPart.md) <br> 把本地角色形象数据同步到多端|
-| **[gloves](Gameplay.HumanoidV2.md#gloves)**: [`HumanoidV2GlovesPart`](Gameplay.HumanoidV2GlovesPart.md) <br> 把本地角色形象数据同步到多端|
-| **[head](Gameplay.HumanoidV2.md#head)**: [`HumanoidV2HeadPart`](Gameplay.HumanoidV2HeadPart.md) <br> 把本地角色形象数据同步到多端|
-| **[lowerCloth](Gameplay.HumanoidV2.md#lowercloth)**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md) <br> 把本地角色形象数据同步到多端|
-| **[shape](Gameplay.HumanoidV2.md#shape)**: [`HumanoidV2Shape`](Gameplay.HumanoidV2Shape.md) <br> 把本地角色形象数据同步到多端|
-| **[shoe](Gameplay.HumanoidV2.md#shoe)**: [`HumanoidV2ShoePart`](Gameplay.HumanoidV2ShoePart.md) <br> 把本地角色形象数据同步到多端|
-| **[upperCloth](Gameplay.HumanoidV2.md#uppercloth)**: [`HumanoidV2UpperClothPart`](Gameplay.HumanoidV2UpperClothPart.md) <br> 把本地角色形象数据同步到多端|
+| **[behindHair](Gameplay.HumanoidV2.md#behindhair)**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md) <br> 前发|
+| **[frontHair](Gameplay.HumanoidV2.md#fronthair)**: [`HumanoidV2FrontHairPart`](Gameplay.HumanoidV2FrontHairPart.md) <br> 前发|
+| **[gloves](Gameplay.HumanoidV2.md#gloves)**: [`HumanoidV2GlovesPart`](Gameplay.HumanoidV2GlovesPart.md) <br> 手套|
+| **[head](Gameplay.HumanoidV2.md#head)**: [`HumanoidV2HeadPart`](Gameplay.HumanoidV2HeadPart.md) <br> 头|
+| **[lowerCloth](Gameplay.HumanoidV2.md#lowercloth)**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md) <br> 体型|
+| **[shape](Gameplay.HumanoidV2.md#shape)**: [`HumanoidV2Shape`](Gameplay.HumanoidV2Shape.md) <br> 体型|
+| **[shoe](Gameplay.HumanoidV2.md#shoe)**: [`HumanoidV2ShoePart`](Gameplay.HumanoidV2ShoePart.md) <br> 鞋子|
+| **[upperCloth](Gameplay.HumanoidV2.md#uppercloth)**: [`HumanoidV2UpperClothPart`](Gameplay.HumanoidV2UpperClothPart.md) <br> 上衣|
 
 
 ::: details 点击查看继承
 | Properties |
 | :-----|
-| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 后处理开关|
-| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理开关|
+| **[enableOutline](Gameplay.SomatotypeBase.md#enableoutline)**: `boolean` <br> 是否启动遮挡时角色描边|
+| **[postProcessObj](Gameplay.SomatotypeBase.md#postprocessobj)**: [`PostProcess`](Gameplay.PostProcess.md) <br> 后处理对象|
 :::
 
 

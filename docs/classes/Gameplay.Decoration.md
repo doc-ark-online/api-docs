@@ -8,10 +8,10 @@
 
 | Properties |
 | :-----|
-| **[assetId](Gameplay.Decoration.md#assetid)**: `string` <br> 反序列化|
-| **[relativeTransform](Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Transform.md) <br> 反序列化|
-| **[skeletonName](Gameplay.Decoration.md#skeletonname)**: `string` <br> 反序列化|
-| **[slotName](Gameplay.Decoration.md#slotname)**: `string` <br> 反序列化|
+| **[assetId](Gameplay.Decoration.md#assetid)**: `string` <br> 资源Id|
+| **[relativeTransform](Gameplay.Decoration.md#relativetransform)**: [`Transform`](Type.Transform.md) <br> 相对ue slot Transform|
+| **[skeletonName](Gameplay.Decoration.md#skeletonname)**: `string` <br> 骨架名字|
+| **[slotName](Gameplay.Decoration.md#slotname)**: `string` <br> 插槽名|
 
 | Methods |
 | :-----|

@@ -14,7 +14,7 @@
 
 | Properties |
 | :-----|
-| **[character](Gameplay.Player.md#character)**: [`Character`](Gameplay.Character.md) <br> 获取当前角色对象膨胀时间速度|
+| **[character](Gameplay.Player.md#character)**: [`Character`](Gameplay.Character.md) <br> 玩家控制的角色|
 
 | Accessors |
 | :-----|

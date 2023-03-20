@@ -23,10 +23,10 @@ Equipment.getCurrentOwner()  // 获取装备拥有者
 
 | Properties |
 | :-----|
-| **[onDiscardEquipment](Gameplay.Equipment.md#ondiscardequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 自动持有装备|
-| **[onHoldEquipment](Gameplay.Equipment.md#onholdequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 自动持有装备|
-| **[onPickupEquipment](Gameplay.Equipment.md#onpickupequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 自动持有装备|
-| **[onUnholdEquipment](Gameplay.Equipment.md#onunholdequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 自动持有装备|
+| **[onDiscardEquipment](Gameplay.Equipment.md#ondiscardequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 丢弃装备事件|
+| **[onHoldEquipment](Gameplay.Equipment.md#onholdequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 持有装备事件|
+| **[onPickupEquipment](Gameplay.Equipment.md#onpickupequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 拾取装备事件|
+| **[onUnholdEquipment](Gameplay.Equipment.md#onunholdequipment)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`EquipOwner`: `$Nullable`<`MWActor`\>) => `void`\> <br> 收起装备事件|
 
 | Accessors |
 | :-----|

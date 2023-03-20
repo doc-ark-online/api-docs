@@ -8,7 +8,7 @@
 
 | Properties |
 | :-----|
-| **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 大小|
+| **[position](UI.UITransform.md#position)**: [`Vector2`](Type.Vector2.md) <br> 位置|
 | **[size](UI.UITransform.md#size)**: [`Vector2`](Type.Vector2.md) <br> 大小|
 
 构造每一个值

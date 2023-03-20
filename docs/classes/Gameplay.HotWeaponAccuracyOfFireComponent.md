@@ -21,7 +21,7 @@ hotWeapon.startFire();
 
 | Properties |
 | :-----|
-| **[onCurrentDispersionChangedClient](Gameplay.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchangedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> Get子弹随机发散范围的默认半径|
+| **[onCurrentDispersionChangedClient](Gameplay.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchangedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端实际射击精度值发生变化时执行绑定函数|
 
 | Accessors |
 | :-----|

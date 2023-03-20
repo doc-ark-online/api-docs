@@ -8,10 +8,10 @@
 
 | Properties |
 | :-----|
-| **[drawAs](UI.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <br> 颜色|
-| **[guid](UI.SlateBrushWithGuid.md#guid)**: `string` <br> 颜色|
-| **[imageSize](UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Vector2.md) <br> 颜色|
-| **[marin](UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.Margin.md) <br> 颜色|
+| **[drawAs](UI.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/UI.SlateBrushDrawType.md) <br> 绘制模式|
+| **[guid](UI.SlateBrushWithGuid.md#guid)**: `string` <br> 资源ID|
+| **[imageSize](UI.SlateBrushWithGuid.md#imagesize)**: [`Vector2`](Type.Vector2.md) <br> 资源大小|
+| **[marin](UI.SlateBrushWithGuid.md#marin)**: [`Margin`](UI.Margin.md) <br> 边缘缩进|
 | **[tintColor](UI.SlateBrushWithGuid.md#tintcolor)**: [`SlateColor`](UI.SlateColor.md) <br> 颜色|
 
 通过资源id构造对象

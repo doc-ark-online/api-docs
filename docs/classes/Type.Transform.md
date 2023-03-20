@@ -14,9 +14,9 @@ Transform 由缩放、旋转和平移组成
 
 | Properties |
 | :-----|
-| **[location](Type.Transform.md#location)**: [`Vector`](Type.Vector.md) <br> 获取一个单位 Transform|
-| **[rotation](Type.Transform.md#rotation)**: [`Rotation`](Type.Rotation.md) <br> 获取一个单位 Transform|
-| **[scale](Type.Transform.md#scale)**: [`Vector`](Type.Vector.md) <br> 获取一个单位 Transform|
+| **[location](Type.Transform.md#location)**: [`Vector`](Type.Vector.md) <br> 坐标信息|
+| **[rotation](Type.Transform.md#rotation)**: [`Rotation`](Type.Rotation.md) <br> 旋转信息|
+| **[scale](Type.Transform.md#scale)**: [`Vector`](Type.Vector.md) <br> 缩放信息|
 
 | Accessors |
 | :-----|

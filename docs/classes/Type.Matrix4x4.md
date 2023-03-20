@@ -14,22 +14,22 @@
 
 | Properties |
 | :-----|
-| **[m00](Type.Matrix4x4.md#m00)**: `number` <br> 获得一个默认矩阵|
-| **[m01](Type.Matrix4x4.md#m01)**: `number` <br> 获得一个默认矩阵|
-| **[m02](Type.Matrix4x4.md#m02)**: `number` <br> 获得一个默认矩阵|
-| **[m03](Type.Matrix4x4.md#m03)**: `number` <br> 获得一个默认矩阵|
-| **[m10](Type.Matrix4x4.md#m10)**: `number` <br> 获得一个默认矩阵|
-| **[m11](Type.Matrix4x4.md#m11)**: `number` <br> 获得一个默认矩阵|
-| **[m12](Type.Matrix4x4.md#m12)**: `number` <br> 获得一个默认矩阵|
-| **[m13](Type.Matrix4x4.md#m13)**: `number` <br> 获得一个默认矩阵|
-| **[m20](Type.Matrix4x4.md#m20)**: `number` <br> 获得一个默认矩阵|
-| **[m21](Type.Matrix4x4.md#m21)**: `number` <br> 获得一个默认矩阵|
-| **[m22](Type.Matrix4x4.md#m22)**: `number` <br> 获得一个默认矩阵|
-| **[m23](Type.Matrix4x4.md#m23)**: `number` <br> 获得一个默认矩阵|
-| **[m30](Type.Matrix4x4.md#m30)**: `number` <br> 获得一个默认矩阵|
-| **[m31](Type.Matrix4x4.md#m31)**: `number` <br> 获得一个默认矩阵|
-| **[m32](Type.Matrix4x4.md#m32)**: `number` <br> 获得一个默认矩阵|
-| **[m33](Type.Matrix4x4.md#m33)**: `number` <br> 获得一个默认矩阵|
+| **[m00](Type.Matrix4x4.md#m00)**: `number` <br> 矩阵第 0 列第 0 行的元素。|
+| **[m01](Type.Matrix4x4.md#m01)**: `number` <br> 矩阵第 0 列第 1 行的元素。|
+| **[m02](Type.Matrix4x4.md#m02)**: `number` <br> 矩阵第 0 列第 2 行的元素。|
+| **[m03](Type.Matrix4x4.md#m03)**: `number` <br> 矩阵第 0 列第 3 行的元素。|
+| **[m10](Type.Matrix4x4.md#m10)**: `number` <br> 矩阵第 1 列第 0 行的元素。|
+| **[m11](Type.Matrix4x4.md#m11)**: `number` <br> 矩阵第 1 列第 1 行的元素。|
+| **[m12](Type.Matrix4x4.md#m12)**: `number` <br> 矩阵第 1 列第 2 行的元素。|
+| **[m13](Type.Matrix4x4.md#m13)**: `number` <br> 矩阵第 1 列第 3 行的元素。|
+| **[m20](Type.Matrix4x4.md#m20)**: `number` <br> 矩阵第 2 列第 0 行的元素。|
+| **[m21](Type.Matrix4x4.md#m21)**: `number` <br> 矩阵第 2 列第 1 行的元素。|
+| **[m22](Type.Matrix4x4.md#m22)**: `number` <br> 矩阵第 2 列第 2 行的元素。|
+| **[m23](Type.Matrix4x4.md#m23)**: `number` <br> 矩阵第 2 列第 3 行的元素。|
+| **[m30](Type.Matrix4x4.md#m30)**: `number` <br> 矩阵第 3 列第 0 行的元素。|
+| **[m31](Type.Matrix4x4.md#m31)**: `number` <br> 矩阵第 3 列第 1 行的元素。|
+| **[m32](Type.Matrix4x4.md#m32)**: `number` <br> 矩阵第 3 列第 2 行的元素。|
+| **[m33](Type.Matrix4x4.md#m33)**: `number` <br> 矩阵第 3 列第 3 行的元素。|
 
 | Accessors |
 | :-----|

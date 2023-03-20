@@ -14,11 +14,11 @@
 
 | Properties |
 | :-----|
-| **[onProjectileBeginOverlap](Gameplay.Projectile.md#onprojectilebeginoverlap)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`, `fromSweep`: `boolean`, `sweepResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 包围盒高度|
-| **[onProjectileBounce](Gameplay.Projectile.md#onprojectilebounce)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`impactResult`: [`HitResult`](Gameplay.HitResult.md), `impactVelocity`: [`Vector`](Type.Vector.md), `bounceNum`: `number`) => `void`\> <br> 包围盒高度|
-| **[onProjectileEndOverlap](Gameplay.Projectile.md#onprojectileendoverlap)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`) => `void`\> <br> 包围盒高度|
-| **[onProjectileHit](Gameplay.Projectile.md#onprojectilehit)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 包围盒高度|
-| **[onProjectileInterrupt](Gameplay.Projectile.md#onprojectileinterrupt)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 包围盒高度|
+| **[onProjectileBeginOverlap](Gameplay.Projectile.md#onprojectilebeginoverlap)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`, `fromSweep`: `boolean`, `sweepResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 当投掷物与其他物体开始接触重叠时执行绑定函数|
+| **[onProjectileBounce](Gameplay.Projectile.md#onprojectilebounce)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`impactResult`: [`HitResult`](Gameplay.HitResult.md), `impactVelocity`: [`Vector`](Type.Vector.md), `bounceNum`: `number`) => `void`\> <br> 当投掷物发生弹跳时执行绑定函数|
+| **[onProjectileEndOverlap](Gameplay.Projectile.md#onprojectileendoverlap)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `otherBodyIndex`: `number`) => `void`\> <br> 当投掷物与其他物体结束接触重叠时执行绑定函数|
+| **[onProjectileHit](Gameplay.Projectile.md#onprojectilehit)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`hitGameObject`: `GameObject`, `normalImpulse`: [`Vector`](Type.Vector.md), `hitResult`: [`HitResult`](Gameplay.HitResult.md)) => `void`\> <br> 当投掷物发生碰撞时执行绑定函数|
+| **[onProjectileInterrupt](Gameplay.Projectile.md#onprojectileinterrupt)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 当投掷物自动终止时执行绑定函数|
 
 | Accessors |
 | :-----|

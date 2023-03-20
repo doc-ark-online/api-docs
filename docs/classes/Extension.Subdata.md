@@ -8,7 +8,7 @@
 
 | Properties |
 | :-----|
-| **[onDataChange](Extension.Subdata.md#ondatachange)**: [`Action`](Type.Action.md) <br> 当前数据版本号，和version配合使用，可实现数据升级|
+| **[onDataChange](Extension.Subdata.md#ondatachange)**: [`Action`](Type.Action.md) <br> 数据变化的委托|
 
 | Accessors |
 | :-----|

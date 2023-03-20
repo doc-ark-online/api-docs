@@ -4,7 +4,7 @@
 
 **`Instance`**
 
-MGS以及玩家信息、数据等相关API
+MGS以及玩家信息、数据、头像等相关API
 
 ## Table of contents
 

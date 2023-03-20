@@ -35,16 +35,16 @@ hotWeapon.startFire();
 
 | Properties |
 | :-----|
-| **[accuracyOfFireComponent](Gameplay.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md) <br> 是否开启了射击精度组件|
-| **[aimComponent](Gameplay.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md) <br> 是否开启了射击精度组件|
-| **[fireComponent](Gameplay.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md) <br> 是否开启了射击精度组件|
-| **[loadComponent](Gameplay.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md) <br> 是否开启了射击精度组件|
-| **[onEquippedClient](Gameplay.HotWeapon.md#onequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 是否开启了射击精度组件|
-| **[onEquippedServer](Gameplay.HotWeapon.md#onequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 是否开启了射击精度组件|
-| **[onUnequippedClient](Gameplay.HotWeapon.md#onunequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 是否开启了射击精度组件|
-| **[onUnequippedServer](Gameplay.HotWeapon.md#onunequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 是否开启了射击精度组件|
-| **[recoilForceComponent](Gameplay.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md) <br> 是否开启了射击精度组件|
-| **[reloadComponent](Gameplay.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md) <br> 是否开启了射击精度组件|
+| **[accuracyOfFireComponent](Gameplay.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](Gameplay.HotWeaponAccuracyOfFireComponent.md) <br> 射击精度功能|
+| **[aimComponent](Gameplay.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](Gameplay.HotWeaponAimComponent.md) <br> 瞄准功能|
+| **[fireComponent](Gameplay.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](Gameplay.HotWeaponFireComponent.md) <br> 射击功能|
+| **[loadComponent](Gameplay.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](Gameplay.HotWeaponLoadComponent.md) <br> 上膛功能|
+| **[onEquippedClient](Gameplay.HotWeapon.md#onequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 客户端装备时执行绑定函数|
+| **[onEquippedServer](Gameplay.HotWeapon.md#onequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
+| **[onUnequippedClient](Gameplay.HotWeapon.md#onunequippedclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端卸载时执行绑定函数|
+| **[onUnequippedServer](Gameplay.HotWeapon.md#onunequippedserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数|
+| **[recoilForceComponent](Gameplay.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](Gameplay.HotWeaponRecoilForceComponent.md) <br> 后坐力功能|
+| **[reloadComponent](Gameplay.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](Gameplay.HotWeaponReloadComponent.md) <br> 换弹功能|
 
 | Accessors |
 | :-----|

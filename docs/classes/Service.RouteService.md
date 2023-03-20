@@ -16,8 +16,8 @@
 
 | Properties |
 | :-----|
-| **[onReceiveTeamData](Service.RouteService.md#onreceiveteamdata)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\> <br> 获取角色展示/编辑游戏的显示模式切换的委托|
-| **[onTeamMatchFailure](Service.RouteService.md#onteammatchfailure)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\> <br> 获取角色展示/编辑游戏的显示模式切换的委托|
+| **[onReceiveTeamData](Service.RouteService.md#onreceiveteamdata)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\> <br> 收到队伍数据时会触发的委托|
+| **[onTeamMatchFailure](Service.RouteService.md#onteammatchfailure)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`failureInfo`: [`TeamMatchFailureInfo`](../modules/Service.Service.md#teammatchfailureinfo)) => `void`\> <br> 组队请求失败时会触发的委托|
 
 | Accessors |
 | :-----|

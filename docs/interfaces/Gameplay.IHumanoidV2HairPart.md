@@ -53,6 +53,43 @@
 
 颜色
 
+• **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取头发颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getGradientColor <Score text="getGradientColor" /> 
@@ -60,6 +97,43 @@ ___
 • **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取头发渐变染色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取头发渐变染色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发渐变染色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getGradientColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发渐变染色
+
+**`Effect`**
 
 
 #### Returns
@@ -83,6 +157,43 @@ ___
 
 强度
 
+• **getGradientIntensity**(): `number` <Badge type="tip" text="client" />
+
+获取头发渐变区域
+
+
+#### Returns
+
+`number`
+
+强度
+
+• **getGradientIntensity**(): `number`
+
+获取头发渐变区域
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+强度
+
+• **getGradientIntensity**(): `number`
+
+获取头发渐变区域
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+强度
+
 ___
 
 ### getHighlightColor <Score text="getHighlightColor" /> 
@@ -90,6 +201,43 @@ ___
 • **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取头发高光颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取头发高光颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取头发高光颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -113,6 +261,43 @@ ___
 
 GUID
 
+• **getHighlightMask**(): `string` <Badge type="tip" text="client" />
+
+获取头发高光形状
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getHighlightMask**(): `string`
+
+获取头发高光形状
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getHighlightMask**(): `string`
+
+获取头发高光形状
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 
 ### setColor <Score text="setColor" /> 
 
@@ -125,6 +310,69 @@ GUID
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setColor**(`color`, `sync`): `void`
+
+设置头发颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setColor**(`color`, `sync`): `void`
+
+设置头发颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setColor**(`color`, `sync`): `void`
+
+设置头发颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -158,6 +406,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setGradientColor**(`color`, `sync`): `void`
+
+设置头发渐变染色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setGradientColor**(`color`, `sync`): `void`
+
+设置头发渐变染色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setGradientColor**(`color`, `sync`): `void`
+
+设置头发渐变染色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setGradientIntensity <Score text="setGradientIntensity" /> 
@@ -165,6 +476,49 @@ ___
 • **setGradientIntensity**(`intensity`, `sync`): `void` 
 
 设置头发渐变区域
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `intensity` | `number` | 强度 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setGradientIntensity**(`intensity`, `sync`): `void` 
+
+设置头发渐变区域
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `intensity` | `number` | 强度 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setGradientIntensity**(`intensity`, `sync`): `void`
+
+设置头发渐变区域
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `intensity` | `number` | 强度 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setGradientIntensity**(`intensity`, `sync`): `void`
+
+设置头发渐变区域
+
+**`Effect`**
 
 
 #### Parameters
@@ -198,6 +552,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setHighlightColor**(`color`, `sync`): `void`
+
+设置头发高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setHighlightColor**(`color`, `sync`): `void`
+
+设置头发高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setHighlightColor**(`color`, `sync`): `void`
+
+设置头发高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setHighlightMask <Score text="setHighlightMask" /> 
@@ -211,6 +628,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setHighlightMask**(`GUID`, `sync`): `void`
+
+设置头发高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setHighlightMask**(`GUID`, `sync`): `void`
+
+设置头发高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setHighlightMask**(`GUID`, `sync`): `void`
+
+设置头发高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters

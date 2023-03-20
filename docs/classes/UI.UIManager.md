@@ -17,10 +17,10 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 | Properties |
 | :-----|
-| **[allPanels](UI.UIManager.md#allpanels)**: [`UIBehavior`](UI.UIBehavior.md)[] <br> 全局所有UI的根canvas|
-| **[createPanelMap](UI.UIManager.md#createpanelmap)**: `Map`<`string`, [`UIBehavior`](UI.UIBehavior.md)[]\> <br> 全局所有UI的根canvas|
-| **[logUIInfo](UI.UIManager.md#loguiinfo)**: `boolean` <br> 全局所有UI的根canvas|
-| **[uniquePanel](UI.UIManager.md#uniquepanel)**: [`UIBehavior`](UI.UIBehavior.md) <br> 全局所有UI的根canvas|
+| **[allPanels](UI.UIManager.md#allpanels)**: [`UIBehavior`](UI.UIBehavior.md)[] <br> 所有创建过的Panel|
+| **[createPanelMap](UI.UIManager.md#createpanelmap)**: `Map`<`string`, [`UIBehavior`](UI.UIBehavior.md)[]\> <br> 所有创建过的管理好的 panels|
+| **[logUIInfo](UI.UIManager.md#loguiinfo)**: `boolean` <br> 是否dump GameUI Log 信息|
+| **[uniquePanel](UI.UIManager.md#uniquepanel)**: [`UIBehavior`](UI.UIBehavior.md) <br> 独占Panel|
 
 | Accessors |
 | :-----|

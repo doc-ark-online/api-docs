@@ -8,10 +8,10 @@
 
 | Properties |
 | :-----|
-| **[w](Type.Vector4.md#w)**: `number` <br> 计算向量长度 (模)|
-| **[x](Type.Vector4.md#x)**: `number` <br> 计算向量长度 (模)|
-| **[y](Type.Vector4.md#y)**: `number` <br> 计算向量长度 (模)|
-| **[z](Type.Vector4.md#z)**: `number` <br> 计算向量长度 (模)|
+| **[w](Type.Vector4.md#w)**: `number` <br> w 分量|
+| **[x](Type.Vector4.md#x)**: `number` <br> x 分量|
+| **[y](Type.Vector4.md#y)**: `number` <br> y 分量|
+| **[z](Type.Vector4.md#z)**: `number` <br> z 分量|
 
 | Accessors |
 | :-----|

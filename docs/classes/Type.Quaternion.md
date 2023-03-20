@@ -8,11 +8,11 @@
 
 | Properties |
 | :-----|
-| **[w](Type.Quaternion.md#w)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[x](Type.Quaternion.md#x)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[y](Type.Quaternion.md#y)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[z](Type.Quaternion.md#z)**: `number` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
-| **[halfToRad](Type.Quaternion.md#halftorad)**: `any` <br> 返回当前四元数的共轭四元数，对单位四元数与求逆等价，但更高效|
+| **[w](Type.Quaternion.md#w)**: `number` <br> w 分量。|
+| **[x](Type.Quaternion.md#x)**: `number` <br> x 分量。|
+| **[y](Type.Quaternion.md#y)**: `number` <br> y 分量。|
+| **[z](Type.Quaternion.md#z)**: `number` <br> z 分量。|
+| **[halfToRad](Type.Quaternion.md#halftorad)**: `any` <br> 获取一个半弧度系数|
 
 | Accessors |
 | :-----|

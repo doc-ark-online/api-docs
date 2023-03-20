@@ -14,9 +14,9 @@
 
 | Properties |
 | :-----|
-| **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> 将姿态转换为GUID|
-| **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> 将姿态转换为GUID|
-| **[serverSetShowDebugLog](Gameplay.Interactor.md#serversetshowdebuglog)**: `any` <br> 将姿态转换为GUID|
+| **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用交互时被重置，外部回调不会触发）激活交互时执行绑定函数|
+| **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用退出交互时被重置，外部回调不会触发）退出交互时执行绑定函数|
+| **[serverSetShowDebugLog](Gameplay.Interactor.md#serversetshowdebuglog)**: `any` <br> 服务器设置显示debug日志|
 
 | Accessors |
 | :-----|

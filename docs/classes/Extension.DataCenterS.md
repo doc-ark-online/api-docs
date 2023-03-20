@@ -14,8 +14,8 @@
 
 | Properties |
 | :-----|
-| **[onPlayerJoined](Extension.DataCenterS.md#onplayerjoined)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 获取玩家的子数据|
-| **[onPlayerLeft](Extension.DataCenterS.md#onplayerleft)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 获取玩家的子数据|
+| **[onPlayerJoined](Extension.DataCenterS.md#onplayerjoined)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
+| **[onPlayerLeft](Extension.DataCenterS.md#onplayerleft)**: [`Action1`](Type.Action1.md)<[`Player`](Gameplay.Player.md)\> <br> 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 | Methods |
 | :-----|

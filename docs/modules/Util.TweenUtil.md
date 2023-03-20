@@ -43,11 +43,11 @@ var tween = new Util.TweenUtil.Tween(position).to({x: 200}, 1000).start()
 | :-----|
 | **[EasingFunction](Util.TweenUtil.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
 | **[InterpolationFunction](Util.TweenUtil.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
-| **[UnknownProps](Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 获取下一个ID的全局方法|
+| **[UnknownProps](Util.TweenUtil.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
 
 | Variables |
 | :-----|
-| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 获取下一个ID的全局方法|
+| **[TWEEN](Util.TweenUtil.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
 
 | Functions |
 | :-----|

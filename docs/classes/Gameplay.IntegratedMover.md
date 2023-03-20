@@ -14,16 +14,16 @@
 
 | Properties |
 | :-----|
-| **[onLinearEnable](Gameplay.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onLinearReturn](Gameplay.IntegratedMover.md#onlinearreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onLinearStart](Gameplay.IntegratedMover.md#onlinearstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onRotationEnable](Gameplay.IntegratedMover.md#onrotationenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onRotationReturn](Gameplay.IntegratedMover.md#onrotationreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onRotationStart](Gameplay.IntegratedMover.md#onrotationstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onScaleEnable](Gameplay.IntegratedMover.md#onscaleenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onScaleReturn](Gameplay.IntegratedMover.md#onscalereturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onScaleStart](Gameplay.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
-| **[onSwingEnable](Gameplay.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 获取约束对象(兼容旧项目)|
+| **[onLinearEnable](Gameplay.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
+| **[onLinearReturn](Gameplay.IntegratedMover.md#onlinearreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onLinearStart](Gameplay.IntegratedMover.md#onlinearstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onRotationEnable](Gameplay.IntegratedMover.md#onrotationenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
+| **[onRotationReturn](Gameplay.IntegratedMover.md#onrotationreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onRotationStart](Gameplay.IntegratedMover.md#onrotationstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onScaleEnable](Gameplay.IntegratedMover.md#onscaleenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
+| **[onScaleReturn](Gameplay.IntegratedMover.md#onscalereturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onScaleStart](Gameplay.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
+| **[onSwingEnable](Gameplay.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 摆动：延迟启动回调|
 
 | Accessors |
 | :-----|

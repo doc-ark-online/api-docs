@@ -19,10 +19,10 @@ hotWeapon.aimComponent.aimingZoom = 3;
 
 | Properties |
 | :-----|
-| **[onAimEndClient](Gameplay.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> Get瞄准时的第一/第三人称模式|
-| **[onAimEndServer](Gameplay.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> Get瞄准时的第一/第三人称模式|
-| **[onAimStartClient](Gameplay.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> Get瞄准时的第一/第三人称模式|
-| **[onAimStartServer](Gameplay.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> Get瞄准时的第一/第三人称模式|
+| **[onAimEndClient](Gameplay.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端结束瞄准代理|
+| **[onAimEndServer](Gameplay.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端结束瞄准代理|
+| **[onAimStartClient](Gameplay.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始瞄准代理|
+| **[onAimStartServer](Gameplay.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理|
 
 | Accessors |
 | :-----|

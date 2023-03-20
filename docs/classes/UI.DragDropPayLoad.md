@@ -9,8 +9,8 @@
 | Properties |
 | :-----|
 | **[guidStr](UI.DragDropPayLoad.md#guidstr)**: `any` <br> GUID|
-| **[idStr](UI.DragDropPayLoad.md#idstr)**: `any` <br> GUID|
-| **[nameStr](UI.DragDropPayLoad.md#namestr)**: `any` <br> GUID|
+| **[idStr](UI.DragDropPayLoad.md#idstr)**: `any` <br> id|
+| **[nameStr](UI.DragDropPayLoad.md#namestr)**: `any` <br> name|
 
 | Accessors |
 | :-----|

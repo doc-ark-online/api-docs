@@ -20,7 +20,7 @@ Social
 | **[OnViewLayoutSwitched](Social.Social.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Social.Social.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
 | **[StringResponse](Social.Social.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
-| **[TeamMatchFailureInfo](Social.Social.md#teammatchfailureinfo)**: `Object` <br> 下载角色形象的回调消息格式|
+| **[TeamMatchFailureInfo](Social.Social.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
 | **[UploadDataResponse](Social.Social.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
 | **[VoidResponse](Social.Social.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
 | **[downloadCharacterDataStringCallback](Social.Social.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|

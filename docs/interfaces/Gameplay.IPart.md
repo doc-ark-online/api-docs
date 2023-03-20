@@ -40,6 +40,43 @@
 
 模型GUID
 
+• **getMesh**(): `string` 
+
+获取部位模型
+
+
+#### Returns
+
+`string`
+
+模型GUID
+
+• **getMesh**(): `string`
+
+获取部位模型
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+模型GUID
+
+• **getMesh**(): `string`
+
+获取部位模型
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+模型GUID
+
 ___
 
 ### setMesh <Score text="setMesh" /> 
@@ -53,6 +90,69 @@ ___
 如果模型GUID没有预加载，则v2本地设置时异步的
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 模型GUID |
+| `sync` | `boolean` | true 同步; false 不同步 |
+
+
+• **setMesh**(`GUID`, `sync`): `void`
+
+设置部位模型
+
+::: warning Precautions
+
+如果模型GUID没有预加载，则v2本地设置时异步的
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 模型GUID |
+| `sync` | `boolean` | true 同步; false 不同步 |
+
+
+• **setMesh**(`GUID`, `sync`): `void`
+
+设置部位模型
+
+::: warning Precautions
+
+如果模型GUID没有预加载，则v2本地设置时异步的
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 模型GUID |
+| `sync` | `boolean` | true 同步; false 不同步 |
+
+
+• **setMesh**(`GUID`, `sync`): `void`
+
+设置部位模型
+
+::: warning Precautions
+
+如果模型GUID没有预加载，则v2本地设置时异步的
+
+:::
+
+**`Effect`**
 
 
 #### Parameters

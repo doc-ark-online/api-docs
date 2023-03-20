@@ -110,6 +110,49 @@
 | `traceDistance` | `number` | 检测距离 default:默认检测距离 |
 
 
+• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void` <Badge type="tip" text="client" />
+
+设置模型
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `directLightRotator` | [`Rotation`](../classes/Type.Rotation.md) | 平行光方向 |
+| `traceDistance` | `number` | 检测距离 default:默认检测距离 |
+
+
+• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void`
+
+设置模型
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `directLightRotator` | [`Rotation`](../classes/Type.Rotation.md) | 平行光方向 |
+| `traceDistance` | `number` | 检测距离 default:默认检测距离 |
+
+
+• **characterFaceShadow**(`directLightRotator`, `traceDistance`): `void`
+
+设置模型
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `directLightRotator` | [`Rotation`](../classes/Type.Rotation.md) | 平行光方向 |
+| `traceDistance` | `number` | 检测距离 default:默认检测距离 |
+
+
 ___
 
 ### getBlushColor <Score text="getBlushColor" /> 
@@ -117,6 +160,43 @@ ___
 • **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取腮红颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取腮红颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取腮红颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBlushColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取腮红颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -140,6 +220,43 @@ ___
 
 GUID
 
+• **getBlushTexture**(): `string` <Badge type="tip" text="client" />
+
+获取腮红贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getBlushTexture**(): `string`
+
+获取腮红贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getBlushTexture**(): `string`
+
+获取腮红贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 ___
 
 ### getBrowColor <Score text="getBrowColor" /> 
@@ -147,6 +264,43 @@ ___
 • **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眉毛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取眉毛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眉毛颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getBrowColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眉毛颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -170,6 +324,43 @@ ___
 
 GUID
 
+• **getBrowTexture**(): `string` <Badge type="tip" text="client" />
+
+获取眉毛
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getBrowTexture**(): `string`
+
+获取眉毛
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getBrowTexture**(): `string`
+
+获取眉毛
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 ___
 
 ### getExpression <Score text="getExpression" /> 
@@ -177,6 +368,43 @@ ___
 • **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <Badge type="tip" text="client" />
 
 获取表情
+
+
+#### Returns
+
+[`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+表情枚举值
+
+• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md) <Badge type="tip" text="client" />
+
+获取表情
+
+
+#### Returns
+
+[`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+表情枚举值
+
+• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+获取表情
+
+**`Effect`**
+
+
+#### Returns
+
+[`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+表情枚举值
+
+• **getExpression**(): [`ExpressionType`](../enums/Gameplay.ExpressionType.md)
+
+获取表情
+
+**`Effect`**
 
 
 #### Returns
@@ -200,6 +428,43 @@ ___
 
 颜色
 
+• **getEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取眼睛高光颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼睛高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼睛高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getEyeHighlightTexture <Score text="getEyeHighlightTexture" /> 
@@ -207,6 +472,43 @@ ___
 • **getEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眼睛高光形状
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
+
+获取眼睛高光形状
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeHighlightTexture**(): `string`
+
+获取眼睛高光形状
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeHighlightTexture**(): `string`
+
+获取眼睛高光形状
+
+**`Effect`**
 
 
 #### Returns
@@ -230,6 +532,43 @@ ___
 
 颜色
 
+• **getEyeShadowColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取眼影颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyeShadowColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼影颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyeShadowColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼影颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getEyeShadowTexture <Score text="getEyeShadowTexture" /> 
@@ -237,6 +576,43 @@ ___
 • **getEyeShadowTexture**(): `string` <Badge type="tip" text="client" />
 
 获取眼影贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeShadowTexture**(): `string` <Badge type="tip" text="client" />
+
+获取眼影贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeShadowTexture**(): `string`
+
+获取眼影贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeShadowTexture**(): `string`
+
+获取眼影贴图
+
+**`Effect`**
 
 
 #### Returns
@@ -260,6 +636,43 @@ ___
 
 GUID
 
+• **getEyeTexture**(): `string` <Badge type="tip" text="client" />
+
+获取眼睛贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeTexture**(): `string`
+
+获取眼睛贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyeTexture**(): `string`
+
+获取眼睛贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 ___
 
 ### getEyelashColor <Score text="getEyelashColor" /> 
@@ -267,6 +680,43 @@ ___
 • **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取睫毛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取睫毛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取睫毛颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getEyelashColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取睫毛颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -290,6 +740,43 @@ ___
 
 GUID
 
+• **getEyelashTexture**(): `string` <Badge type="tip" text="client" />
+
+获取睫毛
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyelashTexture**(): `string`
+
+获取睫毛
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getEyelashTexture**(): `string`
+
+获取睫毛
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 ___
 
 ### getFacialTattooColor <Score text="getFacialTattooColor" /> 
@@ -297,6 +784,61 @@ ___
 • **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取面部纹身颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取面部纹身颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取面部纹身颜色
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getFacialTattooColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取面部纹身颜色
+
+**`Effect`**
 
 
 #### Parameters
@@ -332,6 +874,61 @@ ___
 
 值
 
+• **getFacialTattooPositionX**(`index`): `number` <Badge type="tip" text="client" />
+
+获取面部纹身左右位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooPositionX**(`index`): `number`
+
+获取面部纹身左右位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooPositionX**(`index`): `number`
+
+获取面部纹身左右位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
 ___
 
 ### getFacialTattooPositionY <Score text="getFacialTattooPositionY" /> 
@@ -339,6 +936,61 @@ ___
 • **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="client" />
 
 获取面部纹身上下位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooPositionY**(`index`): `number` <Badge type="tip" text="client" />
+
+获取面部纹身上下位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooPositionY**(`index`): `number`
+
+获取面部纹身上下位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooPositionY**(`index`): `number`
+
+获取面部纹身上下位置
+
+**`Effect`**
 
 
 #### Parameters
@@ -374,6 +1026,61 @@ ___
 
 值
 
+• **getFacialTattooRotation**(`index`): `number` <Badge type="tip" text="client" />
+
+获取面部纹身旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooRotation**(`index`): `number`
+
+获取面部纹身旋转
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooRotation**(`index`): `number`
+
+获取面部纹身旋转
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
 ___
 
 ### getFacialTattooType <Score text="getFacialTattooType" /> 
@@ -381,6 +1088,61 @@ ___
 • **getFacialTattooType**(`index`): `string` <Badge type="tip" text="client" />
 
 获取面部纹身种类贴图
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getFacialTattooType**(`index`): `string` <Badge type="tip" text="client" />
+
+获取面部纹身种类贴图
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getFacialTattooType**(`index`): `string`
+
+获取面部纹身种类贴图
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getFacialTattooType**(`index`): `string`
+
+获取面部纹身种类贴图
+
+**`Effect`**
 
 
 #### Parameters
@@ -416,6 +1178,61 @@ ___
 
 值
 
+• **getFacialTattooZoom**(`index`): `number` <Badge type="tip" text="client" />
+
+获取面部纹身缩放
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooZoom**(`index`): `number`
+
+获取面部纹身缩放
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
+• **getFacialTattooZoom**(`index`): `number`
+
+获取面部纹身缩放
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+
+#### Returns
+
+`number`
+
+值
+
 ___
 
 ### getLeftEyeColor <Score text="getLeftEyeColor" /> 
@@ -423,6 +1240,43 @@ ___
 • **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取左眼睛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取左眼睛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取左眼睛颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLeftEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取左眼睛颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -446,6 +1300,43 @@ ___
 
 颜色
 
+• **getLipstickColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取唇膏颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLipstickColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取唇膏颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLipstickColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取唇膏颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getLipstickTexture <Score text="getLipstickTexture" /> 
@@ -453,6 +1344,43 @@ ___
 • **getLipstickTexture**(): `string` <Badge type="tip" text="client" />
 
 获取唇膏贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getLipstickTexture**(): `string` <Badge type="tip" text="client" />
+
+获取唇膏贴图
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getLipstickTexture**(): `string`
+
+获取唇膏贴图
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getLipstickTexture**(): `string`
+
+获取唇膏贴图
+
+**`Effect`**
 
 
 #### Returns
@@ -476,6 +1404,43 @@ ___
 
 颜色
 
+• **getLowerEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取上高光颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLowerEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取上高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getLowerEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取上高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getLowerEyeHighlightTexture <Score text="getLowerEyeHighlightTexture" /> 
@@ -491,12 +1456,86 @@ ___
 
 下高光GUID
 
+• **getLowerEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
+
+获取下高光种类
+
+
+#### Returns
+
+`string`
+
+下高光GUID
+
+• **getLowerEyeHighlightTexture**(): `string`
+
+获取下高光种类
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+下高光GUID
+
+• **getLowerEyeHighlightTexture**(): `string`
+
+获取下高光种类
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+下高光GUID
+
 
 ### getPupilColor <Score text="getPupilColor" /> 
 
 • **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取眼睛瞳孔花纹颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取眼睛瞳孔花纹颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼睛瞳孔花纹颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getPupilColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取眼睛瞳孔花纹颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -520,6 +1559,43 @@ ___
 
 左右位置值
 
+• **getPupilPositionX**(): `number` <Badge type="tip" text="client" />
+
+获取瞳孔左右位置
+
+
+#### Returns
+
+`number`
+
+左右位置值
+
+• **getPupilPositionX**(): `number`
+
+获取瞳孔左右位置
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+左右位置值
+
+• **getPupilPositionX**(): `number`
+
+获取瞳孔左右位置
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+左右位置值
+
 ___
 
 ### getPupilPositionY <Score text="getPupilPositionY" /> 
@@ -527,6 +1603,43 @@ ___
 • **getPupilPositionY**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔上下位置
+
+
+#### Returns
+
+`number`
+
+上下位置值
+
+• **getPupilPositionY**(): `number` <Badge type="tip" text="client" />
+
+获取瞳孔上下位置
+
+
+#### Returns
+
+`number`
+
+上下位置值
+
+• **getPupilPositionY**(): `number`
+
+获取瞳孔上下位置
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+上下位置值
+
+• **getPupilPositionY**(): `number`
+
+获取瞳孔上下位置
+
+**`Effect`**
 
 
 #### Returns
@@ -550,6 +1663,43 @@ ___
 
 瞳孔旋转值
 
+• **getPupilRotate**(): `number` <Badge type="tip" text="client" />
+
+获取瞳孔旋转
+
+
+#### Returns
+
+`number`
+
+瞳孔旋转值
+
+• **getPupilRotate**(): `number`
+
+获取瞳孔旋转
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+瞳孔旋转值
+
+• **getPupilRotate**(): `number`
+
+获取瞳孔旋转
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+瞳孔旋转值
+
 ___
 
 ### getPupilScale <Score text="getPupilScale" /> 
@@ -557,6 +1707,43 @@ ___
 • **getPupilScale**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔大小缩放
+
+
+#### Returns
+
+`number`
+
+大小缩放值
+
+• **getPupilScale**(): `number` <Badge type="tip" text="client" />
+
+获取瞳孔大小缩放
+
+
+#### Returns
+
+`number`
+
+大小缩放值
+
+• **getPupilScale**(): `number`
+
+获取瞳孔大小缩放
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+大小缩放值
+
+• **getPupilScale**(): `number`
+
+获取瞳孔大小缩放
+
+**`Effect`**
 
 
 #### Returns
@@ -580,6 +1767,43 @@ ___
 
 GUID
 
+• **getPupilTexture**(): `string` <Badge type="tip" text="client" />
+
+获取眼睛瞳孔花纹
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getPupilTexture**(): `string`
+
+获取眼睛瞳孔花纹
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getPupilTexture**(): `string`
+
+获取眼睛瞳孔花纹
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
 ___
 
 ### getRightEyeColor <Score text="getRightEyeColor" /> 
@@ -587,6 +1811,43 @@ ___
 • **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取右眼睛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取右眼睛颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取右眼睛颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getRightEyeColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取右眼睛颜色
+
+**`Effect`**
 
 
 #### Returns
@@ -610,6 +1871,43 @@ ___
 
 颜色
 
+• **getUpperEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取上高光颜色
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getUpperEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取上高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getUpperEyeHighlightColor**(): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取上高光颜色
+
+**`Effect`**
+
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getUpperEyeHighlightTexture <Score text="getUpperEyeHighlightTexture" /> 
@@ -617,6 +1915,43 @@ ___
 • **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
 
 获取上高光种类
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getUpperEyeHighlightTexture**(): `string` <Badge type="tip" text="client" />
+
+获取上高光种类
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getUpperEyeHighlightTexture**(): `string`
+
+获取上高光种类
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getUpperEyeHighlightTexture**(): `string`
+
+获取上高光种类
+
+**`Effect`**
 
 
 #### Returns
@@ -638,6 +1973,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBlushColor**(`color`, `sync`): `void`
+
+设置腮红颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBlushColor**(`color`, `sync`): `void`
+
+设置腮红颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBlushColor**(`color`, `sync`): `void`
+
+设置腮红颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -671,6 +2069,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setBlushTexture**(`GUID`, `sync`): `void`
+
+设置腮红贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBlushTexture**(`GUID`, `sync`): `void`
+
+设置腮红贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBlushTexture**(`GUID`, `sync`): `void`
+
+设置腮红贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setBrowColor <Score text="setBrowColor" /> 
@@ -684,6 +2145,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBrowColor**(`color`, `sync`): `void`
+
+设置眉毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBrowColor**(`color`, `sync`): `void`
+
+设置眉毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBrowColor**(`color`, `sync`): `void`
+
+设置眉毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -717,6 +2241,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setBrowTexture**(`GUID`, `sync`): `void`
+
+设置眉毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBrowTexture**(`GUID`, `sync`): `void`
+
+设置眉毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setBrowTexture**(`GUID`, `sync`): `void`
+
+设置眉毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setExpression <Score text="setExpression" /> 
@@ -724,6 +2311,46 @@ ___
 • **setExpression**(`type`): `void` <Badge type="tip" text="client" />
 
 设置表情
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | [`ExpressionType`](../enums/Gameplay.ExpressionType.md) | 表情枚举值 |
+
+
+• **setExpression**(`type`): `void` <Badge type="tip" text="client" />
+
+设置表情
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | [`ExpressionType`](../enums/Gameplay.ExpressionType.md) | 表情枚举值 |
+
+
+• **setExpression**(`type`): `void`
+
+设置表情
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | [`ExpressionType`](../enums/Gameplay.ExpressionType.md) | 表情枚举值 |
+
+
+• **setExpression**(`type`): `void`
+
+设置表情
+
+**`Effect`**
 
 
 #### Parameters
@@ -746,6 +2373,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeHighlightColor**(`color`, `sync`): `void`
+
+设置眼睛高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeHighlightColor**(`color`, `sync`): `void`
+
+设置眼睛高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeHighlightColor**(`color`, `sync`): `void`
+
+设置眼睛高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -779,6 +2469,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置眼睛高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置眼睛高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置眼睛高光形状
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setEyeShadowColor <Score text="setEyeShadowColor" /> 
@@ -792,6 +2545,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeShadowColor**(`color`, `sync`): `void`
+
+设置眼影颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeShadowColor**(`color`, `sync`): `void`
+
+设置眼影颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeShadowColor**(`color`, `sync`): `void`
+
+设置眼影颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -825,6 +2641,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setEyeShadowTexture**(`GUID`, `sync`): `void`
+
+设置眼影贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeShadowTexture**(`GUID`, `sync`): `void`
+
+设置眼影贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeShadowTexture**(`GUID`, `sync`): `void`
+
+设置眼影贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setEyeTexture <Score text="setEyeTexture" /> 
@@ -838,6 +2717,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeTexture**(`GUID`, `sync`): `void`
+
+设置眼睛贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeTexture**(`GUID`, `sync`): `void`
+
+设置眼睛贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyeTexture**(`GUID`, `sync`): `void`
+
+设置眼睛贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -871,6 +2813,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setEyelashColor**(`color`, `sync`): `void`
+
+设置睫毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyelashColor**(`color`, `sync`): `void`
+
+设置睫毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyelashColor**(`color`, `sync`): `void`
+
+设置睫毛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setEyelashTexture <Score text="setEyelashTexture" /> 
@@ -894,6 +2899,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setEyelashTexture**(`GUID`, `sync`): `void`
+
+设置睫毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyelashTexture**(`GUID`, `sync`): `void`
+
+设置睫毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setEyelashTexture**(`GUID`, `sync`): `void`
+
+设置睫毛
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setFacialTattooColor <Score text="setFacialTattooColor" /> 
@@ -907,6 +2975,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooColor**(`index`, `color`, `sync`): `void`
+
+设置面部纹身颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooColor**(`index`, `color`, `sync`): `void`
+
+设置面部纹身颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooColor**(`index`, `color`, `sync`): `void`
+
+设置面部纹身颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -942,6 +3076,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void`
+
+设置面部纹身左右位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void`
+
+设置面部纹身左右位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooPositionX**(`index`, `value`, `sync`): `void`
+
+设置面部纹身左右位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setFacialTattooPositionY <Score text="setFacialTattooPositionY" /> 
@@ -955,6 +3155,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void`
+
+设置面部纹身上下位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void`
+
+设置面部纹身上下位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooPositionY**(`index`, `value`, `sync`): `void`
+
+设置面部纹身上下位置
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -990,6 +3256,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setFacialTattooRotation**(`index`, `value`, `sync`): `void`
+
+设置面部纹身旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooRotation**(`index`, `value`, `sync`): `void`
+
+设置面部纹身旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooRotation**(`index`, `value`, `sync`): `void`
+
+设置面部纹身旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setFacialTattooType <Score text="setFacialTattooType" /> 
@@ -1003,6 +3335,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooType**(`index`, `GUID`, `sync`): `void`
+
+设置面部纹身种类贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooType**(`index`, `GUID`, `sync`): `void`
+
+设置面部纹身种类贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 * |
+
+
+• **setFacialTattooType**(`index`, `GUID`, `sync`): `void`
+
+设置面部纹身种类贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -1038,6 +3436,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setFacialTattooZoom**(`index`, `value`, `sync`): `void`
+
+设置面部纹身缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooZoom**(`index`, `value`, `sync`): `void`
+
+设置面部纹身缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setFacialTattooZoom**(`index`, `value`, `sync`): `void`
+
+设置面部纹身缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 纹身索引 |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setLeftEyeColor <Score text="setLeftEyeColor" /> 
@@ -1051,6 +3515,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLeftEyeColor**(`color`, `sync`): `void`
+
+设置左眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLeftEyeColor**(`color`, `sync`): `void`
+
+设置左眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLeftEyeColor**(`color`, `sync`): `void`
+
+设置左眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -1084,6 +3611,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setLipstickColor**(`color`, `sync`): `void`
+
+设置唇膏颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLipstickColor**(`color`, `sync`): `void`
+
+设置唇膏颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLipstickColor**(`color`, `sync`): `void`
+
+设置唇膏颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setLipstickTexture <Score text="setLipstickTexture" /> 
@@ -1097,6 +3687,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLipstickTexture**(`GUID`, `sync`): `void`
+
+设置唇膏贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLipstickTexture**(`GUID`, `sync`): `void`
+
+设置唇膏贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLipstickTexture**(`GUID`, `sync`): `void`
+
+设置唇膏贴图
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -1130,6 +3783,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setLowerEyeHighlightColor**(`color`, `sync`): `void`
+
+设置下高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLowerEyeHighlightColor**(`color`, `sync`): `void`
+
+设置下高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLowerEyeHighlightColor**(`color`, `sync`): `void`
+
+设置下高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setLowerEyeHighlightTexture <Score text="setLowerEyeHighlightTexture" /> 
@@ -1143,6 +3859,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` |  值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置下高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` |  值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置下高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` |  值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setLowerEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置下高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -1175,6 +3954,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPupilColor**(`color`, `sync`): `void`
+
+设置眼睛瞳孔花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilColor**(`color`, `sync`): `void`
+
+设置眼睛瞳孔花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilColor**(`color`, `sync`): `void`
+
+设置眼睛瞳孔花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setPupilPositionX <Score text="setPupilPositionX" /> 
@@ -1182,6 +4024,49 @@ ___
 • **setPupilPositionX**(`value`, `sync`): `void` 
 
 设置瞳孔左右位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilPositionX**(`value`, `sync`): `void` 
+
+设置瞳孔左右位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilPositionX**(`value`, `sync`): `void`
+
+设置瞳孔左右位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilPositionX**(`value`, `sync`): `void`
+
+设置瞳孔左右位置
+
+**`Effect`**
 
 
 #### Parameters
@@ -1209,6 +4094,49 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPupilPositionY**(`value`, `sync`): `void` 
+
+设置瞳孔上下位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilPositionY**(`value`, `sync`): `void`
+
+设置瞳孔上下位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilPositionY**(`value`, `sync`): `void`
+
+设置瞳孔上下位置
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setPupilRotate <Score text="setPupilRotate" /> 
@@ -1216,6 +4144,49 @@ ___
 • **setPupilRotate**(`value`, `sync`): `void` 
 
 设置瞳孔旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilRotate**(`value`, `sync`): `void` 
+
+设置瞳孔旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilRotate**(`value`, `sync`): `void`
+
+设置瞳孔旋转
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilRotate**(`value`, `sync`): `void`
+
+设置瞳孔旋转
+
+**`Effect`**
 
 
 #### Parameters
@@ -1249,6 +4220,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPupilScale**(`value`, `sync`): `void`
+
+设置瞳孔大小缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilScale**(`value`, `sync`): `void`
+
+设置瞳孔大小缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilScale**(`value`, `sync`): `void`
+
+设置瞳孔大小缩放
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setPupilTexture <Score text="setPupilTexture" /> 
@@ -1262,6 +4296,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilTexture**(`GUID`, `sync`): `void`
+
+设置眼睛瞳孔花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilTexture**(`GUID`, `sync`): `void`
+
+设置眼睛瞳孔花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPupilTexture**(`GUID`, `sync`): `void`
+
+设置眼睛瞳孔花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -1295,6 +4392,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setRightEyeColor**(`color`, `sync`): `void`
+
+设置右眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setRightEyeColor**(`color`, `sync`): `void`
+
+设置右眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setRightEyeColor**(`color`, `sync`): `void`
+
+设置右眼睛颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setUpperEyeHighlightColor <Score text="setUpperEyeHighlightColor" /> 
@@ -1318,6 +4478,69 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setUpperEyeHighlightColor**(`color`, `sync`): `void`
+
+设置上高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setUpperEyeHighlightColor**(`color`, `sync`): `void`
+
+设置上高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setUpperEyeHighlightColor**(`color`, `sync`): `void`
+
+设置上高光颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setUpperEyeHighlightTexture <Score text="setUpperEyeHighlightTexture" /> 
@@ -1331,6 +4554,69 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | GUID值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置上高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | GUID值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置上高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GUID` | `string` | GUID值 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setUpperEyeHighlightTexture**(`GUID`, `sync`): `void`
+
+设置上高光种类
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters

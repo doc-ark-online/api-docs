@@ -14,9 +14,9 @@
 
 | Properties |
 | :-----|
-| **[onInteractiveEnded](Gameplay.InteractiveObject.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 是否自动激活|
-| **[onInteractiveStarted](Gameplay.InteractiveObject.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 是否自动激活|
-| **[onInteractiveTimeout](Gameplay.InteractiveObject.md#oninteractivetimeout)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 是否自动激活|
+| **[onInteractiveEnded](Gameplay.InteractiveObject.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数|
+| **[onInteractiveStarted](Gameplay.InteractiveObject.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数|
+| **[onInteractiveTimeout](Gameplay.InteractiveObject.md#oninteractivetimeout)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互超时时执行绑定函数|
 
 | Accessors |
 | :-----|

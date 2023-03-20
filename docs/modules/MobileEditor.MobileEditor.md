@@ -84,6 +84,48 @@ UGC Editor使用的装饰器,避免数据被还原
 | `target` | `any` |  目标 |
 
 
+• **UGCEditor**(`target`): `void`
+
+UGC Editor使用的装饰器,避免数据被还原
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `any` |  目标 |
+
+
+• **UGCEditor**(`target`): `void`
+
+UGC Editor使用的装饰器,避免数据被还原
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `any` |  目标 |
+
+
+• **UGCEditor**(`target`): `void`
+
+UGC Editor使用的装饰器,避免数据被还原
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `any` |  目标 |
+
+
 ___
 
 ### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
@@ -100,6 +142,48 @@ ___
 | `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
 
 
+• **addEditorPawnPanInputMovement**(`input`): `void`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
+
+
+• **addEditorPawnPanInputMovement**(`input`): `void`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
+
+
+• **addEditorPawnPanInputMovement**(`input`): `void`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
+
+
 ___
 
 ### asyncCaptureAvatar <Score text="asyncCaptureAvatar" /> 
@@ -107,6 +191,81 @@ ___
 • **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\> <Badge type="tip" text="client" />
 
 异步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+生成的截图的本地绝对路径
+
+• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\>
+
+异步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+生成的截图的本地绝对路径
+
+• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\>
+
+异步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+生成的截图的本地绝对路径
+
+• **asyncCaptureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`): `Promise`<`string`\>
+
+异步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
 
 
 #### Parameters
@@ -150,6 +309,69 @@ ___
 
 请求结果(Json字符串)
 
+• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\>
+
+获取资源列表
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `classification` | `number` | 分类id |
+| `lastID` | `number` | 查询偏移量 |
+| `pageSize` | `number` | 每页查询大小 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+
+• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\>
+
+获取资源列表
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `classification` | `number` | 分类id |
+| `lastID` | `number` | 查询偏移量 |
+| `pageSize` | `number` | 每页查询大小 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+
+• **asyncGetResourceList**(`classification`, `lastID`, `pageSize`): `Promise`<`string`\>
+
+获取资源列表
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `classification` | `number` | 分类id |
+| `lastID` | `number` | 查询偏移量 |
+| `pageSize` | `number` | 每页查询大小 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+
 ___
 
 ### asyncSaveProject <Score text="asyncSaveProject" /> 
@@ -157,6 +379,63 @@ ___
 • **asyncSaveProject**(): `Promise`<`boolean`\> 
 
 保存当前游戏项目
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+
+• **asyncSaveProject**(): `Promise`<`boolean`\>
+
+保存当前游戏项目
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+
+• **asyncSaveProject**(): `Promise`<`boolean`\>
+
+保存当前游戏项目
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+
+• **asyncSaveProject**(): `Promise`<`boolean`\>
+
+保存当前游戏项目
+
+**`Effect`**
 
 
 ::: warning Precautions
@@ -187,6 +466,48 @@ ___
 | `target` | `Base` | 记录的对象 |
 
 
+• **beginActorPropertiesChange**(`target`): `void`
+
+开始记录撤销恢复的actor属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **beginActorPropertiesChange**(`target`): `void`
+
+开始记录撤销恢复的actor属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **beginActorPropertiesChange**(`target`): `void`
+
+开始记录撤销恢复的actor属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
 ___
 
 ### beginActorTransformChange <Score text="beginActorTransformChange" /> 
@@ -203,6 +524,48 @@ ___
 | `target` | `Base` | 记录的对象 |
 
 
+• **beginActorTransformChange**(`target`): `void`
+
+开始记录actor的transform属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **beginActorTransformChange**(`target`): `void`
+
+开始记录actor的transform属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **beginActorTransformChange**(`target`): `void`
+
+开始记录actor的transform属性
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
 ___
 
 ### calculateActorEqualScale <Score text="calculateActorEqualScale" /> 
@@ -210,6 +573,66 @@ ___
 • **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
 
 计算actor的等比缩放
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `currentScale` | [`Vector`](../classes/Type.Vector.md) | 当前缩放值 |
+| `deltaScale` | [`Vector`](../classes/Type.Vector.md) | 缩放值增量 |
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+计算后的缩放值
+
+• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md)
+
+计算actor的等比缩放
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `currentScale` | [`Vector`](../classes/Type.Vector.md) | 当前缩放值 |
+| `deltaScale` | [`Vector`](../classes/Type.Vector.md) | 缩放值增量 |
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+计算后的缩放值
+
+• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md)
+
+计算actor的等比缩放
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `currentScale` | [`Vector`](../classes/Type.Vector.md) | 当前缩放值 |
+| `deltaScale` | [`Vector`](../classes/Type.Vector.md) | 缩放值增量 |
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+计算后的缩放值
+
+• **calculateActorEqualScale**(`currentScale`, `deltaScale`): [`Vector`](../classes/Type.Vector.md)
+
+计算actor的等比缩放
+
+**`Effect`**
 
 
 #### Parameters
@@ -248,6 +671,69 @@ ___
 | `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
 
 
+• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+同步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+同步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **captureAvatar**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+同步对指定虚拟角色进行截取，截图保存在本地固定路径下
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
 ___
 
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
@@ -255,6 +741,66 @@ ___
 • **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 将二维屏幕位置转换为世界空间三维位置和方向
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+**`Effect`**
 
 
 #### Parameters
@@ -286,6 +832,48 @@ ___
 | `target` | `Base` | 记录的对象 |
 
 
+• **endActorPropertiesChange**(`target`): `void`
+
+结束记录actor属性的撤销恢复
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **endActorPropertiesChange**(`target`): `void`
+
+结束记录actor属性的撤销恢复
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
+• **endActorPropertiesChange**(`target`): `void`
+
+结束记录actor属性的撤销恢复
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+
+
 ___
 
 ### endActorTransformChange <Score text="endActorTransformChange" /> 
@@ -293,6 +881,51 @@ ___
 • **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void` <Badge type="tip" text="client" />
 
 结束记录actor的transform
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+| `bIsGizmoActor?` | `boolean` | 是否是gizmo actor default:false |
+
+
+• **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void`
+
+结束记录actor的transform
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+| `bIsGizmoActor?` | `boolean` | 是否是gizmo actor default:false |
+
+
+• **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void`
+
+结束记录actor的transform
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 记录的对象 |
+| `bIsGizmoActor?` | `boolean` | 是否是gizmo actor default:false |
+
+
+• **endActorTransformChange**(`target`, `bIsGizmoActor?`): `void`
+
+结束记录actor的transform
+
+**`Effect`**
 
 
 #### Parameters
@@ -318,6 +951,45 @@ ___
 
 Vector 返回的位置
 
+• **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md)
+
+返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+Vector 返回的位置
+
+• **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md)
+
+返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+Vector 返回的位置
+
+• **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md)
+
+返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)
+
+Vector 返回的位置
+
 ___
 
 ### getEditorPawnRotation <Score text="getEditorPawnRotation" /> 
@@ -333,6 +1005,45 @@ ___
 
 返回旋转的角度
 
+• **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md)
+
+返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Rotation`](../classes/Type.Rotation.md)
+
+返回旋转的角度
+
+• **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md)
+
+返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Rotation`](../classes/Type.Rotation.md)
+
+返回旋转的角度
+
+• **getEditorPawnRotation**(): [`Rotation`](../classes/Type.Rotation.md)
+
+返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Returns
+
+[`Rotation`](../classes/Type.Rotation.md)
+
+返回旋转的角度
+
 ___
 
 ### getGizmo <Score text="getGizmo" /> 
@@ -340,6 +1051,45 @@ ___
 • **getGizmo**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <Badge type="tip" text="client" />
 
 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+
+#### Returns
+
+[`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+返回编辑态的坐标轴
+
+• **getGizmo**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+**`Effect`**
+
+
+#### Returns
+
+[`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+返回编辑态的坐标轴
+
+• **getGizmo**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+**`Effect`**
+
+
+#### Returns
+
+[`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+返回编辑态的坐标轴
+
+• **getGizmo**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md)
+
+获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空
+
+**`Effect`**
 
 
 #### Returns
@@ -371,6 +1121,69 @@ ___
 | `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
 
 
+• **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+对指定虚拟角色进行截取后上传到服务器
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+对指定虚拟角色进行截取后上传到服务器
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **getHeadSculpture**(`character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `fileName`, `callback`): `void`
+
+对指定虚拟角色进行截取后上传到服务器
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  视场; |
+| `fileName` | `string` |  文件名 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
 ___
 
 ### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
@@ -378,6 +1191,45 @@ ___
 • **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
 
 获取单指滑动的代理
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回单指滑动的代理
+
+• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取单指滑动的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回单指滑动的代理
+
+• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取单指滑动的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回单指滑动的代理
+
+• **getOneFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取单指滑动的代理
+
+**`Effect`**
 
 
 #### Returns
@@ -401,6 +1253,45 @@ ___
 
 返回挤压手势的代理
 
+• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+获取挤压手势的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+返回挤压手势的代理
+
+• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+获取挤压手势的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+返回挤压手势的代理
+
+• **getPinchGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+获取挤压手势的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\>
+
+返回挤压手势的代理
+
 ___
 
 ### getSavedDir <Score text="getSavedDir" /> 
@@ -408,6 +1299,45 @@ ___
 • **getSavedDir**(): `string` <Badge type="tip" text="client" />
 
 获取截图的保存路径
+
+
+#### Returns
+
+`string`
+
+保存路径的绝对路径
+
+• **getSavedDir**(): `string`
+
+获取截图的保存路径
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+保存路径的绝对路径
+
+• **getSavedDir**(): `string`
+
+获取截图的保存路径
+
+**`Effect`**
+
+
+#### Returns
+
+`string`
+
+保存路径的绝对路径
+
+• **getSavedDir**(): `string`
+
+获取截图的保存路径
+
+**`Effect`**
 
 
 #### Returns
@@ -431,6 +1361,45 @@ ___
 
 返回的代理
 
+• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取点击事件的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回的代理
+
+• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取点击事件的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回的代理
+
+• **getTapGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取点击事件的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`SelectType`: [`SelectTapType`](../enums/MobileEditor.SelectTapType.md), `location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回的代理
+
 ___
 
 ### getTouchBeganGestureDelegate <Score text="getTouchBeganGestureDelegate" /> 
@@ -438,6 +1407,45 @@ ___
 • **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <Badge type="tip" text="client" />
 
 获取手指按下代理
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指按下时的代理
+
+• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指按下代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指按下时的代理
+
+• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指按下代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指按下时的代理
+
+• **getTouchBeganGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指按下代理
+
+**`Effect`**
 
 
 #### Returns
@@ -461,6 +1469,45 @@ ___
 
 返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况
 
+• **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[]
+
+获取touch的数组
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)[]
+
+返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况
+
+• **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[]
+
+获取touch的数组
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)[]
+
+返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况
+
+• **getTouchData**(): [`Vector`](../classes/Type.Vector.md)[]
+
+获取touch的数组
+
+**`Effect`**
+
+
+#### Returns
+
+[`Vector`](../classes/Type.Vector.md)[]
+
+返回一个10维数组Vector, x,y点击的位置,z代表点击的状态 只会出现0,1的情况
+
 ___
 
 ### getTouchEndGestureDelegate <Score text="getTouchEndGestureDelegate" /> 
@@ -468,6 +1515,45 @@ ___
 • **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\> <Badge type="tip" text="client" />
 
 获取手指抬起代理
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+返回抬起手指时候的代理
+
+• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+获取手指抬起代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+返回抬起手指时候的代理
+
+• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+获取手指抬起代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+返回抬起手指时候的代理
+
+• **getTouchEndGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`) => `void`\>
+
+获取手指抬起代理
+
+**`Effect`**
 
 
 #### Returns
@@ -491,6 +1577,45 @@ ___
 
 返回手指滑动的代理
 
+• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指滑动代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指滑动的代理
+
+• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指滑动代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指滑动的代理
+
+• **getTouchMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取手指滑动代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`FingerIndex`: `number`, `Position`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回手指滑动的代理
+
 ___
 
 ### getTwoFingerMoveGestureDelegate <Score text="getTwoFingerMoveGestureDelegate" /> 
@@ -506,6 +1631,45 @@ ___
 
 返回双指滑动的代理
 
+• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取双指滑动的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回双指滑动的代理
+
+• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取双指滑动的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回双指滑动的代理
+
+• **getTwoFingerMoveGestureDelegate**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+获取双指滑动的代理
+
+**`Effect`**
+
+
+#### Returns
+
+[`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\>
+
+返回双指滑动的代理
+
 ___
 
 ### markActorRenderStateDirty <Score text="markActorRenderStateDirty" /> 
@@ -513,6 +1677,48 @@ ___
 • **markActorRenderStateDirty**(`target`): `void` <Badge type="tip" text="client" />
 
 标记Actor所有组件的渲染状态为脏
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 标记的对象 |
+
+
+• **markActorRenderStateDirty**(`target`): `void`
+
+标记Actor所有组件的渲染状态为脏
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 标记的对象 |
+
+
+• **markActorRenderStateDirty**(`target`): `void`
+
+标记Actor所有组件的渲染状态为脏
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Base` | 标记的对象 |
+
+
+• **markActorRenderStateDirty**(`target`): `void`
+
+标记Actor所有组件的渲染状态为脏
+
+**`Effect`**
 
 
 #### Parameters
@@ -550,6 +1756,84 @@ ___
 
 保存成功或失败
 
+• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`boolean`\>
+
+移动端编辑器发布游戏
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InGameName` | `string` | 游戏名称 |
+| `InExtraData?` | `string` | 游戏扩展数据 default:"" |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+
+• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\>
+
+移动端编辑器发布游戏
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InGameName` | `string` | 游戏名称 |
+| `InExtraData?` | `string` | 游戏扩展数据 default:"" |
+
+#### Returns
+
+`Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\>
+
+保存成功或失败
+
+• **mobileReleaseGame**(`InGameName`, `InExtraData?`): `Promise`<`boolean`\>
+
+移动端编辑器发布游戏
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InGameName` | `string` | 游戏名称 |
+| `InExtraData?` | `string` | 游戏扩展数据 default:"" |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+保存成功或失败
+
 ___
 
 ### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
@@ -557,6 +1841,66 @@ ___
 • **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 获取角色在世界中的位置，投射到屏幕上
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
+| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
+
+• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+获取角色在世界中的位置，投射到屏幕上
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
+| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
+
+• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+获取角色在世界中的位置，投射到屏幕上
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
+| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
+
+• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+获取角色在世界中的位置，投射到屏幕上
+
+**`Effect`**
 
 
 #### Parameters
@@ -601,6 +1945,87 @@ Playza定制接口
 | `recordingTime` | `number` |  截取持续时长 |
 
 
+• **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void`
+
+连续截图，生成GIF素材发送给服务器
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  镜头FOV值 |
+| `picNum` | `number` |  截取图像张数 |
+| `recordingTime` | `number` |  截取持续时长 |
+
+
+• **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void`
+
+连续截图，生成GIF素材发送给服务器
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  镜头FOV值 |
+| `picNum` | `number` |  截取图像张数 |
+| `recordingTime` | `number` |  截取持续时长 |
+
+
+• **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void`
+
+连续截图，生成GIF素材发送给服务器
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
+| `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
+| `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
+| `bShowOnly` | `boolean` |  true时只截取角色，背景Alpha值置为0 |
+| `fov` | `number` |  镜头FOV值 |
+| `picNum` | `number` |  截取图像张数 |
+| `recordingTime` | `number` |  截取持续时长 |
+
+
 ___
 
 ### redo <Score text="redo" /> 
@@ -611,6 +2036,30 @@ ___
 
 
 
+• **redo**(): `void`
+
+执行恢复操作
+
+**`Effect`**
+
+
+
+• **redo**(): `void`
+
+执行恢复操作
+
+**`Effect`**
+
+
+
+• **redo**(): `void`
+
+执行恢复操作
+
+**`Effect`**
+
+
+
 ___
 
 ### saveProject <Score text="saveProject" /> 
@@ -618,6 +2067,48 @@ ___
 • **saveProject**(): `void` 
 
 保存当前游戏项目
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+
+• **saveProject**(): `void`
+
+保存当前游戏项目
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+
+• **saveProject**(): `void`
+
+保存当前游戏项目
+
+**`Effect`**
+
+
+::: warning Precautions
+
+只在ListenServer模式下调用生效，在PIE模式下无法调用
+
+:::
+
+
+• **saveProject**(): `void`
+
+保存当前游戏项目
+
+**`Effect`**
 
 
 ::: warning Precautions
@@ -647,6 +2138,60 @@ ___
 | `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
 
 
+• **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void`
+
+屏幕指定区域截图
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Resolution` | [`Vector2`](../classes/Type.Vector2.md) | 分辨率 |
+| `StartPoint` | [`Vector2`](../classes/Type.Vector2.md) | 截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
+| `Width` | `number` | 截图区域的宽度 |
+| `Height` | `number` | 截图区域的高度 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void`
+
+屏幕指定区域截图
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Resolution` | [`Vector2`](../classes/Type.Vector2.md) | 分辨率 |
+| `StartPoint` | [`Vector2`](../classes/Type.Vector2.md) | 截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
+| `Width` | `number` | 截图区域的宽度 |
+| `Height` | `number` | 截图区域的高度 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
+• **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void`
+
+屏幕指定区域截图
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Resolution` | [`Vector2`](../classes/Type.Vector2.md) | 分辨率 |
+| `StartPoint` | [`Vector2`](../classes/Type.Vector2.md) | 截图区域的左上角起始点(屏幕左上角即为(0,0)点) |
+| `Width` | `number` | 截图区域的宽度 |
+| `Height` | `number` | 截图区域的高度 |
+| `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
+
+
 ___
 
 ### screenShotExist <Score text="screenShotExist" /> 
@@ -654,6 +2199,63 @@ ___
 • **screenShotExist**(`absPath`): `boolean` <Badge type="tip" text="client" />
 
 验证绝对路径下截图是否存在
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  图片的绝对路径 |
+
+#### Returns
+
+`boolean`
+
+该文件是否存在
+
+• **screenShotExist**(`absPath`): `boolean`
+
+验证绝对路径下截图是否存在
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  图片的绝对路径 |
+
+#### Returns
+
+`boolean`
+
+该文件是否存在
+
+• **screenShotExist**(`absPath`): `boolean`
+
+验证绝对路径下截图是否存在
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  图片的绝对路径 |
+
+#### Returns
+
+`boolean`
+
+该文件是否存在
+
+• **screenShotExist**(`absPath`): `boolean`
+
+验证绝对路径下截图是否存在
+
+**`Effect`**
 
 
 #### Parameters
@@ -692,6 +2294,72 @@ Playza定制接口
 | `bShowUuid` | `boolean` |  是否在显示账户的Uuid |
 
 
+• **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void`
+
+将角色数据ID连同角色截图一同发给MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  分享截图的绝对路径 |
+| `shareId` | `string` |  分享的角色数据id,可为空 |
+| `bShowUuid` | `boolean` |  是否在显示账户的Uuid |
+
+
+• **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void`
+
+将角色数据ID连同角色截图一同发给MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  分享截图的绝对路径 |
+| `shareId` | `string` |  分享的角色数据id,可为空 |
+| `bShowUuid` | `boolean` |  是否在显示账户的Uuid |
+
+
+• **sendShareId**(`absPath`, `shareId`, `bShowUuid`): `void`
+
+将角色数据ID连同角色截图一同发给MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `absPath` | `string` |  分享截图的绝对路径 |
+| `shareId` | `string` |  分享的角色数据id,可为空 |
+| `bShowUuid` | `boolean` |  是否在显示账户的Uuid |
+
+
 ___
 
 ### setEditorCameraLocation <Score text="setEditorCameraLocation" /> 
@@ -699,6 +2367,63 @@ ___
 • **setEditorCameraLocation**(`input`): `boolean` <Badge type="tip" text="client" />
 
 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
 
 
 #### Parameters
@@ -734,6 +2459,63 @@ ___
 
 bool 是否设置成功
 
+• **setEditorCameraRotation**(`input`): `boolean`
+
+添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
+• **setEditorCameraRotation**(`input`): `boolean`
+
+添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
+• **setEditorCameraRotation**(`input`): `boolean`
+
+添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
 ___
 
 ### setEditorCameraTransform <Score text="setEditorCameraTransform" /> 
@@ -741,6 +2523,63 @@ ___
 • **setEditorCameraTransform**(`input`): `boolean` <Badge type="tip" text="client" />
 
 设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器摄像机会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraTransform**(`input`): `boolean`
+
+设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器摄像机会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraTransform**(`input`): `boolean`
+
+设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器摄像机会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorCameraTransform**(`input`): `boolean`
+
+设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
+
+**`Effect`**
 
 
 #### Parameters
@@ -776,6 +2615,63 @@ ___
 
 返回是否设置成功 - 场景中无编辑器人物时会失败
 
+• **setEditorPawnLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorPawnLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorPawnLocation**(`input`): `boolean`
+
+设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Vector`](../classes/Type.Vector.md) | 编辑器人物会被设置到的位置 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
 ___
 
 ### setEditorPawnRotation <Score text="setEditorPawnRotation" /> 
@@ -783,6 +2679,63 @@ ___
 • **setEditorPawnRotation**(`input`): `boolean` <Badge type="tip" text="client" />
 
 添加对编辑器人物的输入 - 只作用于编辑器人物
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
+• **setEditorPawnRotation**(`input`): `boolean`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
+• **setEditorPawnRotation**(`input`): `boolean`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Rotation`](../classes/Type.Rotation.md) | 输入值 |
+
+#### Returns
+
+`boolean`
+
+bool 是否设置成功
+
+• **setEditorPawnRotation**(`input`): `boolean`
+
+添加对编辑器人物的输入 - 只作用于编辑器人物
+
+**`Effect`**
 
 
 #### Parameters
@@ -818,6 +2771,63 @@ ___
 
 返回是否设置成功 - 场景中无编辑器人物时会失败
 
+• **setEditorPawnTransform**(`input`): `boolean`
+
+设置编辑器人物的空间信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器人物会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorPawnTransform**(`input`): `boolean`
+
+设置编辑器人物的空间信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器人物会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
+• **setEditorPawnTransform**(`input`): `boolean`
+
+设置编辑器人物的空间信息
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | [`Transform`](../classes/Type.Transform.md) | 编辑器人物会被设置到的位置旋转缩放 |
+
+#### Returns
+
+`boolean`
+
+返回是否设置成功 - 场景中无编辑器人物时会失败
+
 ___
 
 ### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
@@ -825,6 +2835,48 @@ ___
 • **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
 
 双指移动的时间- 必须大于这个时间才执行双指移动事件
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  双指移动限定的时间 |
+
+
+• **setMultiSwipeTime**(`time`): `void`
+
+双指移动的时间- 必须大于这个时间才执行双指移动事件
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  双指移动限定的时间 |
+
+
+• **setMultiSwipeTime**(`time`): `void`
+
+双指移动的时间- 必须大于这个时间才执行双指移动事件
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  双指移动限定的时间 |
+
+
+• **setMultiSwipeTime**(`time`): `void`
+
+双指移动的时间- 必须大于这个时间才执行双指移动事件
+
+**`Effect`**
 
 
 #### Parameters
@@ -850,6 +2902,48 @@ ___
 | `time` | `number` |  偏差角度 |
 
 
+• **setPinchAngleTolerance**(`time`): `void`
+
+挤压手势的偏差角度
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差角度 |
+
+
+• **setPinchAngleTolerance**(`time`): `void`
+
+挤压手势的偏差角度
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差角度 |
+
+
+• **setPinchAngleTolerance**(`time`): `void`
+
+挤压手势的偏差角度
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差角度 |
+
+
 ___
 
 ### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 
@@ -857,6 +2951,48 @@ ___
 • **setSingleSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
 
 单指移动的时间- 必须大于这个时间才会开始执行单指移动
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  单指移动的限定时间 |
+
+
+• **setSingleSwipeTime**(`time`): `void`
+
+单指移动的时间- 必须大于这个时间才会开始执行单指移动
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  单指移动的限定时间 |
+
+
+• **setSingleSwipeTime**(`time`): `void`
+
+单指移动的时间- 必须大于这个时间才会开始执行单指移动
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  单指移动的限定时间 |
+
+
+• **setSingleSwipeTime**(`time`): `void`
+
+单指移动的时间- 必须大于这个时间才会开始执行单指移动
+
+**`Effect`**
 
 
 #### Parameters
@@ -882,6 +3018,48 @@ ___
 | `time` | `number` |  偏差值 |
 
 
+• **setSwipeTolerance**(`time`): `void`
+
+双指移动的偏差量- 值越大误差则可以越大
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差值 |
+
+
+• **setSwipeTolerance**(`time`): `void`
+
+双指移动的偏差量- 值越大误差则可以越大
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差值 |
+
+
+• **setSwipeTolerance**(`time`): `void`
+
+双指移动的偏差量- 值越大误差则可以越大
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  偏差值 |
+
+
 ___
 
 ### setTapTime <Score text="setTapTime" /> 
@@ -898,6 +3076,48 @@ tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间
 | `time` | `number` |  tap限定的时间 |
 
 
+• **setTapTime**(`time`): `void`
+
+tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  tap限定的时间 |
+
+
+• **setTapTime**(`time`): `void`
+
+tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  tap限定的时间 |
+
+
+• **setTapTime**(`time`): `void`
+
+tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `time` | `number` |  tap限定的时间 |
+
+
 ___
 
 ### undo <Score text="undo" /> 
@@ -905,6 +3125,30 @@ ___
 • **undo**(): `void` <Badge type="tip" text="client" />
 
 执行撤销操作
+
+
+
+• **undo**(): `void`
+
+执行撤销操作
+
+**`Effect`**
+
+
+
+• **undo**(): `void`
+
+执行撤销操作
+
+**`Effect`**
+
+
+
+• **undo**(): `void`
+
+执行撤销操作
+
+**`Effect`**
 
 
 
@@ -932,6 +3176,72 @@ Playza定制接口
 | `callbackURL?` | (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
 
 
+• **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void`
+
+上传角色头像或全身照到服务器后发送到MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `filePath` | `string` | 图片路径 |
+| `fileType` | `number` | 图片类型 default:0-全身照,1-男性头像 2-女性头像 |
+| `callbackURL?` | (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
+• **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void`
+
+上传角色头像或全身照到服务器后发送到MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `filePath` | `string` | 图片路径 |
+| `fileType` | `number` | 图片类型 default:0-全身照,1-男性头像 2-女性头像 |
+| `callbackURL?` | (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
+• **uploadScreenShot**(`filePath`, `fileType`, `callbackURL?`): `void`
+
+上传角色头像或全身照到服务器后发送到MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `filePath` | `string` | 图片路径 |
+| `fileType` | `number` | 图片类型 default:0-全身照,1-男性头像 2-女性头像 |
+| `callbackURL?` | (`responseURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
 ___
 
 ### uploadScreenShots <Score text="uploadScreenShots" /> 
@@ -939,6 +3249,75 @@ ___
 • **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void` <Badge type="tip" text="client" />
 
 上传角色头像及全身照到服务器后发送到MGS
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gender` | `number` | 角色性别，1-男 2-女 0-未知 |
+| `portraitPath` | `string` | 头像照路径 |
+| `fullPicPath` | `string` | 全身照路径 |
+| `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
+• **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void`
+
+上传角色头像及全身照到服务器后发送到MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gender` | `number` | 角色性别，1-男 2-女 0-未知 |
+| `portraitPath` | `string` | 头像照路径 |
+| `fullPicPath` | `string` | 全身照路径 |
+| `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
+• **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void`
+
+上传角色头像及全身照到服务器后发送到MGS
+
+**`Effect`**
+
+
+::: warning Precautions
+
+Playza定制接口
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gender` | `number` | 角色性别，1-男 2-女 0-未知 |
+| `portraitPath` | `string` | 头像照路径 |
+| `fullPicPath` | `string` | 全身照路径 |
+| `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+
+
+• **uploadScreenShots**(`gender`, `portraitPath`, `fullPicPath`, `callbackURL?`): `void`
+
+上传角色头像及全身照到服务器后发送到MGS
+
+**`Effect`**
 
 
 ::: warning Precautions

@@ -14,8 +14,8 @@
 
 | Properties |
 | :-----|
-| **[brushMargin](UI.ScrollBox.md#brushmargin)**: `any` <br> 设置允许滚动超过滚动框大小|
-| **[tempUEMargin](UI.ScrollBox.md#tempuemargin)**: `any` <br> 设置允许滚动超过滚动框大小|
+| **[brushMargin](UI.ScrollBox.md#brushmargin)**: `any` <br> 临时变量|
+| **[tempUEMargin](UI.ScrollBox.md#tempuemargin)**: `any` <br> 临时变量|
 
 | Accessors |
 | :-----|

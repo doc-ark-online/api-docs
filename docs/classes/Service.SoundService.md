@@ -16,7 +16,7 @@
 
 | Properties |
 | :-----|
-| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> BGM音量|
+| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)|
 
 | Accessors |
 | :-----|

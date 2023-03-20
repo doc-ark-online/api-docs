@@ -29,8 +29,8 @@ tri.onLeave.add((obj: Core.GameObject) => {
 
 | Properties |
 | :-----|
-| **[onEnter](Gameplay.Trigger.md#onenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 判断当前触发器区域是否为盒体|
-| **[onLeave](Gameplay.Trigger.md#onleave)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 判断当前触发器区域是否为盒体|
+| **[onEnter](Gameplay.Trigger.md#onenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 进入触发器事件|
+| **[onLeave](Gameplay.Trigger.md#onleave)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 离开触发器事件|
 
 | Accessors |
 | :-----|

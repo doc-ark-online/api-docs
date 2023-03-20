@@ -45,3 +45,69 @@ since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请�
 | `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
 | `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
 | `bloop?` | `boolean` | 是否循环 default:false |
+
+
+• **spawnNewParticle**(`template`, `trans`, `bloop?`): `void`
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+
+:::
+
+动态生成特效
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
+| `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
+| `bloop?` | `boolean` | 是否循环 default:false |
+
+
+• **spawnNewParticle**(`template`, `trans`, `bloop?`): `void`
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+
+:::
+
+动态生成特效
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
+| `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
+| `bloop?` | `boolean` | 是否循环 default:false |
+
+
+• **spawnNewParticle**(`template`, `trans`, `bloop?`): `void`
+
+::: danger Deprecated
+
+since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+
+:::
+
+动态生成特效
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
+| `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
+| `bloop?` | `boolean` | 是否循环 default:false |

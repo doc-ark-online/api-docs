@@ -21,11 +21,11 @@
 
 | Properties |
 | :-----|
-| **[onAbilityStateChanged](Gameplay.AbilityObject.md#onabilitystatechanged)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 获取能力状态|
-| **[onAbilityStateEnter](Gameplay.AbilityObject.md#onabilitystateenter)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 获取能力状态|
-| **[onAbilityStateExit](Gameplay.AbilityObject.md#onabilitystateexit)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 获取能力状态|
-| **[onAbilityStatePause](Gameplay.AbilityObject.md#onabilitystatepause)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 获取能力状态|
-| **[onAbilityStateResume](Gameplay.AbilityObject.md#onabilitystateresume)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 获取能力状态|
+| **[onAbilityStateChanged](Gameplay.AbilityObject.md#onabilitystatechanged)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态改变时发送事件|
+| **[onAbilityStateEnter](Gameplay.AbilityObject.md#onabilitystateenter)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态进入时发送事件|
+| **[onAbilityStateExit](Gameplay.AbilityObject.md#onabilitystateexit)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态退出时发送事件|
+| **[onAbilityStatePause](Gameplay.AbilityObject.md#onabilitystatepause)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态暂停时发送事件|
+| **[onAbilityStateResume](Gameplay.AbilityObject.md#onabilitystateresume)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态继续时发送事件|
 
 | Accessors |
 | :-----|

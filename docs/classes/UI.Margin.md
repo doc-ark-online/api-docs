@@ -8,9 +8,9 @@
 
 | Properties |
 | :-----|
-| **[bottom](UI.Margin.md#bottom)**: `number` <br> 上|
-| **[left](UI.Margin.md#left)**: `number` <br> 上|
-| **[right](UI.Margin.md#right)**: `number` <br> 上|
+| **[bottom](UI.Margin.md#bottom)**: `number` <br> 下|
+| **[left](UI.Margin.md#left)**: `number` <br> 左|
+| **[right](UI.Margin.md#right)**: `number` <br> 右|
 | **[top](UI.Margin.md#top)**: `number` <br> 上|
 
 使用一个值初始化四个值的构造方法

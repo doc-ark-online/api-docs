@@ -14,7 +14,7 @@
 
 | Properties |
 | :-----|
-| **[onImpulseEnter](Gameplay.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 获取是否启用冲量|
+| **[onImpulseEnter](Gameplay.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 发生冲量碰撞后的回调函数|
 
 | Accessors |
 | :-----|

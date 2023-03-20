@@ -65,8 +65,8 @@ Avatar
 
 | Modules Type Aliases |
 | :-----|
-| **[Constructor](Avatar.Avatar.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 空的回调函数类型|
-| **[DecorationTuple](Avatar.Avatar.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 空的回调函数类型|
+| **[Constructor](Avatar.Avatar.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型|
+| **[DecorationTuple](Avatar.Avatar.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
 | **[EmptyCallback](Avatar.Avatar.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
 | **[LoadAppearanceDataAllCompletedCallback](Avatar.Avatar.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
 | **[OnMovementStateChanged](Avatar.Avatar.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|

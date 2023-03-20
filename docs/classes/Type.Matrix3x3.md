@@ -14,15 +14,15 @@
 
 | Properties |
 | :-----|
-| **[m00](Type.Matrix3x3.md#m00)**: `number` <br> 获得一个默认矩阵|
-| **[m01](Type.Matrix3x3.md#m01)**: `number` <br> 获得一个默认矩阵|
-| **[m02](Type.Matrix3x3.md#m02)**: `number` <br> 获得一个默认矩阵|
-| **[m10](Type.Matrix3x3.md#m10)**: `number` <br> 获得一个默认矩阵|
-| **[m11](Type.Matrix3x3.md#m11)**: `number` <br> 获得一个默认矩阵|
-| **[m12](Type.Matrix3x3.md#m12)**: `number` <br> 获得一个默认矩阵|
-| **[m20](Type.Matrix3x3.md#m20)**: `number` <br> 获得一个默认矩阵|
-| **[m21](Type.Matrix3x3.md#m21)**: `number` <br> 获得一个默认矩阵|
-| **[m22](Type.Matrix3x3.md#m22)**: `number` <br> 获得一个默认矩阵|
+| **[m00](Type.Matrix3x3.md#m00)**: `number` <br> 矩阵第 0 列第 0 行的元素。|
+| **[m01](Type.Matrix3x3.md#m01)**: `number` <br> 矩阵第 0 列第 1 行的元素。|
+| **[m02](Type.Matrix3x3.md#m02)**: `number` <br> 矩阵第 0 列第 2 行的元素。|
+| **[m10](Type.Matrix3x3.md#m10)**: `number` <br> 矩阵第 1 列第 0 行的元素。|
+| **[m11](Type.Matrix3x3.md#m11)**: `number` <br> 矩阵第 1 列第 1 行的元素。|
+| **[m12](Type.Matrix3x3.md#m12)**: `number` <br> 矩阵第 1 列第 2 行的元素。|
+| **[m20](Type.Matrix3x3.md#m20)**: `number` <br> 矩阵第 2 列第 0 行的元素。|
+| **[m21](Type.Matrix3x3.md#m21)**: `number` <br> 矩阵第 2 列第 1 行的元素。|
+| **[m22](Type.Matrix3x3.md#m22)**: `number` <br> 矩阵第 2 列第 2 行的元素。|
 
 | Accessors |
 | :-----|

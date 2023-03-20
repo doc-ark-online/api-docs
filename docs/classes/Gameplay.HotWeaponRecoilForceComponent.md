@@ -21,8 +21,8 @@ hotWeapon.startFire();
 
 | Properties |
 | :-----|
-| **[onStartRecoilForceClient](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取相机水平抖动最大值|
-| **[onStartRecoilForceServer](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 获取相机水平抖动最大值|
+| **[onStartRecoilForceClient](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播|
+| **[onStartRecoilForceServer](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播|
 
 | Accessors |
 | :-----|

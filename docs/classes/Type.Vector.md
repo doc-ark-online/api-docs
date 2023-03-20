@@ -8,9 +8,9 @@
 
 | Properties |
 | :-----|
-| **[x](Type.Vector.md#x)**: `number` <br> 计算向量的长度|
-| **[y](Type.Vector.md#y)**: `number` <br> 计算向量的长度|
-| **[z](Type.Vector.md#z)**: `number` <br> 计算向量的长度|
+| **[x](Type.Vector.md#x)**: `number` <br> X轴坐标|
+| **[y](Type.Vector.md#y)**: `number` <br> Y轴坐标|
+| **[z](Type.Vector.md#z)**: `number` <br> Z轴坐标|
 
 | Accessors |
 | :-----|

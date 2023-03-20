@@ -64,6 +64,43 @@
 
 区域数量
 
+• **getAreaCount**(): `number` 
+
+获取衣服区域数量
+
+
+#### Returns
+
+`number`
+
+区域数量
+
+• **getAreaCount**(): `number`
+
+获取衣服区域数量
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+区域数量
+
+• **getAreaCount**(): `number`
+
+获取衣服区域数量
+
+**`Effect`**
+
+
+#### Returns
+
+`number`
+
+区域数量
+
 ___
 
 ### getColor <Score text="getColor" /> 
@@ -71,6 +108,61 @@ ___
 • **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) 
 
 获取颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `areaIndex` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md) 
+
+获取颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `areaIndex` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取颜色
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `areaIndex` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getColor**(`areaIndex`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取颜色
+
+**`Effect`**
 
 
 #### Parameters
@@ -106,6 +198,61 @@ ___
 
 方向值
 
+• **getDesignAngle**(`index`): `number` <Badge type="tip" text="client" />
+
+获取图案方向
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+方向值
+
+• **getDesignAngle**(`index`): `number`
+
+获取图案方向
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+方向值
+
+• **getDesignAngle**(`index`): `number`
+
+获取图案方向
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+方向值
+
 ___
 
 ### getDesignColor <Score text="getDesignColor" /> 
@@ -113,6 +260,61 @@ ___
 • **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
 
 获取图案颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取图案颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取图案颜色
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getDesignColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取图案颜色
+
+**`Effect`**
 
 
 #### Parameters
@@ -148,12 +350,122 @@ ___
 
 GUID
 
+• **getDesignTexture**(`index`): `string` <Badge type="tip" text="client" />
+
+获取衣服图案
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getDesignTexture**(`index`): `string`
+
+获取衣服图案
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getDesignTexture**(`index`): `string`
+
+获取衣服图案
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
 
 ### getPatternAngle <Score text="getPatternAngle" /> 
 
 • **getPatternAngle**(`index`): `number` <Badge type="tip" text="client" />
 
 获取花纹旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+旋转值
+
+• **getPatternAngle**(`index`): `number` <Badge type="tip" text="client" />
+
+获取花纹旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+旋转值
+
+• **getPatternAngle**(`index`): `number`
+
+获取花纹旋转
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+旋转值
+
+• **getPatternAngle**(`index`): `number`
+
+获取花纹旋转
+
+**`Effect`**
 
 
 #### Parameters
@@ -189,6 +501,61 @@ ___
 
 颜色
 
+• **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取花纹颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取花纹颜色
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
+• **getPatternColor**(`index`): [`LinearColor`](../classes/Type.LinearColor.md)
+
+获取花纹颜色
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+[`LinearColor`](../classes/Type.LinearColor.md)
+
+颜色
+
 ___
 
 ### getPatternHeight <Score text="getPatternHeight" /> 
@@ -196,6 +563,61 @@ ___
 • **getPatternHeight**(`index`): `number` <Badge type="tip" text="client" />
 
 设置花纹纵向拉伸
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
+• **getPatternHeight**(`index`): `number` <Badge type="tip" text="client" />
+
+设置花纹纵向拉伸
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
+• **getPatternHeight**(`index`): `number`
+
+设置花纹纵向拉伸
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
+• **getPatternHeight**(`index`): `number`
+
+设置花纹纵向拉伸
+
+**`Effect`**
 
 
 #### Parameters
@@ -231,6 +653,61 @@ ___
 
 显示程度
 
+• **getPatternIntensity**(`index`): `number` <Badge type="tip" text="client" />
+
+获取花纹显示程度
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+显示程度
+
+• **getPatternIntensity**(`index`): `number`
+
+获取花纹显示程度
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+显示程度
+
+• **getPatternIntensity**(`index`): `number`
+
+获取花纹显示程度
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+显示程度
+
 ___
 
 ### getPatternWidth <Score text="getPatternWidth" /> 
@@ -252,6 +729,61 @@ ___
 
 拉伸值
 
+• **getPatternWidth**(`index`): `number` <Badge type="tip" text="client" />
+
+获取花纹横向拉伸
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
+• **getPatternWidth**(`index`): `number`
+
+获取花纹横向拉伸
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
+• **getPatternWidth**(`index`): `number`
+
+获取花纹横向拉伸
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`number`
+
+拉伸值
+
 ___
 
 ### getTexture <Score text="getTexture" /> 
@@ -259,6 +791,61 @@ ___
 • **getTexture**(`index`): `string` 
 
 获取花纹
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getTexture**(`index`): `string` 
+
+获取花纹
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getTexture**(`index`): `string`
+
+获取花纹
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+
+#### Returns
+
+`string`
+
+GUID
+
+• **getTexture**(`index`): `string`
+
+获取花纹
+
+**`Effect`**
 
 
 #### Parameters
@@ -297,6 +884,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setColor**(`index`, `color`, `sync`): `void`
+
+设置颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setColor**(`index`, `color`, `sync`): `void`
+
+设置颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setColor**(`index`, `color`, `sync`): `void`
+
+设置颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setDesignAngle <Score text="setDesignAngle" /> 
@@ -310,6 +963,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignAngle**(`index`, `value`, `sync`): `void`
+
+设置图案方向
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignAngle**(`index`, `value`, `sync`): `void`
+
+设置图案方向
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignAngle**(`index`, `value`, `sync`): `void`
+
+设置图案方向
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -345,6 +1064,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setDesignColor**(`index`, `color`, `sync`): `void`
+
+设置图案颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignColor**(`index`, `color`, `sync`): `void`
+
+设置图案颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignColor**(`index`, `color`, `sync`): `void`
+
+设置图案颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setDesignTexture <Score text="setDesignTexture" /> 
@@ -369,6 +1154,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setDesignTexture**(`index`, `GUID`, `sync`): `void`
+
+设置衣服图案
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignTexture**(`index`, `GUID`, `sync`): `void`
+
+设置衣服图案
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setDesignTexture**(`index`, `GUID`, `sync`): `void`
+
+设置衣服图案
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 
 ### setPatternAngle <Score text="setPatternAngle" /> 
 
@@ -381,6 +1232,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternAngle**(`index`, `value`, `sync`): `void`
+
+设置花纹旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternAngle**(`index`, `value`, `sync`): `void`
+
+设置花纹旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 角度 `{Min:0,Max:360}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternAngle**(`index`, `value`, `sync`): `void`
+
+设置花纹旋转
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -416,6 +1333,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPatternColor**(`index`, `color`, `sync`): `void`
+
+设置花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternColor**(`index`, `color`, `sync`): `void`
+
+设置花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternColor**(`index`, `color`, `sync`): `void`
+
+设置花纹颜色
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setPatternHeight <Score text="setPatternHeight" /> 
@@ -429,6 +1412,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternHeight**(`index`, `value`, `sync`): `void`
+
+设置花纹纵向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternHeight**(`index`, `value`, `sync`): `void`
+
+设置花纹纵向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternHeight**(`index`, `value`, `sync`): `void`
+
+设置花纹纵向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters
@@ -464,6 +1513,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPatternIntensity**(`index`, `value`, `sync`): `void`
+
+设置花纹显示程度
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 强度 `{Min:0,Max:1}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternIntensity**(`index`, `value`, `sync`): `void`
+
+设置花纹显示程度
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 强度 `{Min:0,Max:1}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternIntensity**(`index`, `value`, `sync`): `void`
+
+设置花纹显示程度
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 强度 `{Min:0,Max:1}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setPatternWidth <Score text="setPatternWidth" /> 
@@ -488,6 +1603,72 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+• **setPatternWidth**(`index`, `value`, `sync`): `void`
+
+设置花纹横向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternWidth**(`index`, `value`, `sync`): `void`
+
+设置花纹横向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setPatternWidth**(`index`, `value`, `sync`): `void`
+
+设置花纹横向拉伸
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `value` | `number` | 拉伸比例 `{Min:0.01,Max:100}` |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
 ___
 
 ### setTexture <Score text="setTexture" /> 
@@ -501,6 +1682,72 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setTexture**(`index`, `GUID`, `sync`): `void`
+
+设置花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setTexture**(`index`, `GUID`, `sync`): `void`
+
+设置花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `index` | `number` | 区域 |
+| `GUID` | `string` | 贴图GUID |
+| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
+
+
+• **setTexture**(`index`, `GUID`, `sync`): `void`
+
+设置花纹
+
+::: warning Precautions
+
+当 sync = true 对象是单端对象，调用仅本地客户端有效
+
+:::
+
+**`Effect`**
 
 
 #### Parameters

@@ -14,9 +14,9 @@
 
 | Properties |
 | :-----|
-| **[x](Type.Rotation.md#x)**: `number` <br> 获取一个空旋转的角度 (0, 0, 0)|
-| **[y](Type.Rotation.md#y)**: `number` <br> 获取一个空旋转的角度 (0, 0, 0)|
-| **[z](Type.Rotation.md#z)**: `number` <br> 获取一个空旋转的角度 (0, 0, 0)|
+| **[x](Type.Rotation.md#x)**: `number` <br> 旋转的 x 分量|
+| **[y](Type.Rotation.md#y)**: `number` <br> 旋转的 y 分量|
+| **[z](Type.Rotation.md#z)**: `number` <br> 旋转的 z 分量|
 
 | Accessors |
 | :-----|
