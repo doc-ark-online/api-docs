@@ -190,43 +190,6 @@
 
 值
 
-• **getBreastHorizontalPosition**(): `number` <Badge type="tip" text="client" />
-
-调整胸部左右位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastHorizontalPosition**(): `number`
-
-调整胸部左右位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastHorizontalPosition**(): `number`
-
-调整胸部左右位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getBreastLength <Score text="getBreastLength" /> 
@@ -234,43 +197,6 @@ ___
 • **getBreastLength**(): `number` <Badge type="tip" text="client" />
 
 调整胸部长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastLength**(): `number` <Badge type="tip" text="client" />
-
-调整胸部长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastLength**(): `number`
-
-调整胸部长度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastLength**(): `number`
-
-调整胸部长度
-
-**`Effect`**
 
 
 #### Returns
@@ -294,43 +220,6 @@ ___
 
 值
 
-• **getBreastScale**(): `number` <Badge type="tip" text="client" />
-
-调整胸部整体大小；
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastScale**(): `number`
-
-调整胸部整体大小；
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastScale**(): `number`
-
-调整胸部整体大小；
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getBreastStretch <Score text="getBreastStretch" /> 
@@ -338,43 +227,6 @@ ___
 • **getBreastStretch**(): `number` <Badge type="tip" text="client" />
 
 获取胸部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastStretch**(): `number` <Badge type="tip" text="client" />
-
-获取胸部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastStretch**(): `number`
-
-获取胸部拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastStretch**(): `number`
-
-获取胸部拉伸
-
-**`Effect`**
 
 
 #### Returns
@@ -398,43 +250,6 @@ ___
 
 值
 
-• **getBreastVerticalPosition**(): `number` <Badge type="tip" text="client" />
-
-调整胸部上下位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastVerticalPosition**(): `number`
-
-调整胸部上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBreastVerticalPosition**(): `number`
-
-调整胸部上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getBrowGap <Score text="getBrowGap" /> 
@@ -442,43 +257,6 @@ ___
 • **getBrowGap**(): `number` <Badge type="tip" text="client" />
 
 获取眉间距
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowGap**(): `number` <Badge type="tip" text="client" />
-
-获取眉间距
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowGap**(): `number`
-
-获取眉间距
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowGap**(): `number`
-
-获取眉间距
-
-**`Effect`**
 
 
 #### Returns
@@ -502,43 +280,6 @@ ___
 
 值
 
-• **getBrowHeight**(): `number` <Badge type="tip" text="client" />
-
-获取眉毛上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowHeight**(): `number`
-
-获取眉毛上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowHeight**(): `number`
-
-获取眉毛上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getBrowInboardShape <Score text="getBrowInboardShape" /> 
@@ -546,43 +287,6 @@ ___
 • **getBrowInboardShape**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛内侧角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowInboardShape**(): `number` <Badge type="tip" text="client" />
-
-获取眉毛内侧角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowInboardShape**(): `number`
-
-获取眉毛内侧角度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowInboardShape**(): `number`
-
-获取眉毛内侧角度
-
-**`Effect`**
 
 
 #### Returns
@@ -606,43 +310,6 @@ ___
 
 值
 
-• **getBrowOutsideShape**(): `number` <Badge type="tip" text="client" />
-
-获取眉毛外侧形状
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowOutsideShape**(): `number`
-
-获取眉毛外侧形状
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowOutsideShape**(): `number`
-
-获取眉毛外侧形状
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getBrowRotation <Score text="getBrowRotation" /> 
@@ -650,43 +317,6 @@ ___
 • **getBrowRotation**(): `number` <Badge type="tip" text="client" />
 
 获取眉毛角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowRotation**(): `number` <Badge type="tip" text="client" />
-
-获取眉毛角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowRotation**(): `number`
-
-获取眉毛角度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getBrowRotation**(): `number`
-
-获取眉毛角度
-
-**`Effect`**
 
 
 #### Returns
@@ -710,43 +340,6 @@ ___
 
 值
 
-• **getCanthusHorizontalPosition**(): `number` <Badge type="tip" text="client" />
-
-获取眼角左右移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCanthusHorizontalPosition**(): `number`
-
-获取眼角左右移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCanthusHorizontalPosition**(): `number`
-
-获取眼角左右移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getCanthusVerticalPosition <Score text="getCanthusVerticalPosition" /> 
@@ -754,43 +347,6 @@ ___
 • **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取外眼角上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCanthusVerticalPosition**(): `number` <Badge type="tip" text="client" />
-
-获取外眼角上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCanthusVerticalPosition**(): `number`
-
-获取外眼角上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCanthusVerticalPosition**(): `number`
-
-获取外眼角上下移动
-
-**`Effect`**
 
 
 #### Returns
@@ -814,43 +370,6 @@ ___
 
 值
 
-• **getCharacterHeight**(): `number` <Badge type="tip" text="client" />
-
-获取角色身高
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCharacterHeight**(): `number`
-
-获取角色身高
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCharacterHeight**(): `number`
-
-获取角色身高
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getCheekBoneRange <Score text="getCheekBoneRange" /> 
@@ -858,43 +377,6 @@ ___
 • **getCheekBoneRange**(): `number` <Badge type="tip" text="client" />
 
 获取颧骨前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekBoneRange**(): `number` <Badge type="tip" text="client" />
-
-获取颧骨前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekBoneRange**(): `number`
-
-获取颧骨前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekBoneRange**(): `number`
-
-获取颧骨前后移动
-
-**`Effect`**
 
 
 #### Returns
@@ -918,43 +400,6 @@ ___
 
 值
 
-• **getCheekBoneWidth**(): `number` <Badge type="tip" text="client" />
-
-获取颧骨横向宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekBoneWidth**(): `number`
-
-获取颧骨横向宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekBoneWidth**(): `number`
-
-获取颧骨横向宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getCheekHeight <Score text="getCheekHeight" /> 
@@ -962,43 +407,6 @@ ___
 • **getCheekHeight**(): `number` <Badge type="tip" text="client" />
 
 获取脸颊上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekHeight**(): `number` <Badge type="tip" text="client" />
-
-获取脸颊上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekHeight**(): `number`
-
-获取脸颊上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekHeight**(): `number`
-
-获取脸颊上下移动
-
-**`Effect`**
 
 
 #### Returns
@@ -1022,43 +430,6 @@ ___
 
 值
 
-• **getCheekRange**(): `number` <Badge type="tip" text="client" />
-
-获取脸颊前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekRange**(): `number`
-
-获取脸颊前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekRange**(): `number`
-
-获取脸颊前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getCheekWidth <Score text="getCheekWidth" /> 
@@ -1066,43 +437,6 @@ ___
 • **getCheekWidth**(): `number` <Badge type="tip" text="client" />
 
 获取脸颊宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekWidth**(): `number` <Badge type="tip" text="client" />
-
-获取脸颊宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekWidth**(): `number`
-
-获取脸颊宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getCheekWidth**(): `number`
-
-获取脸颊宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -1126,43 +460,6 @@ ___
 
 值
 
-• **getEarRoll**(): `number` <Badge type="tip" text="client" />
-
-调整耳朵左右旋转
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarRoll**(): `number`
-
-调整耳朵左右旋转
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarRoll**(): `number`
-
-调整耳朵左右旋转
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getEarScale <Score text="getEarScale" /> 
@@ -1170,43 +467,6 @@ ___
 • **getEarScale**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵大小
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarScale**(): `number` <Badge type="tip" text="client" />
-
-调整耳朵大小
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarScale**(): `number`
-
-调整耳朵大小
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarScale**(): `number`
-
-调整耳朵大小
-
-**`Effect`**
 
 
 #### Returns
@@ -1230,43 +490,6 @@ ___
 
 值
 
-• **getEarYaw**(): `number` <Badge type="tip" text="client" />
-
-调整耳朵前后旋转
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarYaw**(): `number`
-
-调整耳朵前后旋转
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEarYaw**(): `number`
-
-调整耳朵前后旋转
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getEyesGap <Score text="getEyesGap" /> 
@@ -1274,43 +497,6 @@ ___
 • **getEyesGap**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛间距
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesGap**(): `number` <Badge type="tip" text="client" />
-
-获取眼睛间距
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesGap**(): `number`
-
-获取眼睛间距
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesGap**(): `number`
-
-获取眼睛间距
-
-**`Effect`**
 
 
 #### Returns
@@ -1334,43 +520,6 @@ ___
 
 值
 
-• **getEyesHeight**(): `number` <Badge type="tip" text="client" />
-
-获取眼睛上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesHeight**(): `number`
-
-获取眼睛上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesHeight**(): `number`
-
-获取眼睛上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getEyesLength <Score text="getEyesLength" /> 
@@ -1378,43 +527,6 @@ ___
 • **getEyesLength**(): `number` <Badge type="tip" text="client" />
 
 眼睛长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesLength**(): `number` <Badge type="tip" text="client" />
-
-眼睛长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesLength**(): `number`
-
-眼睛长度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesLength**(): `number`
-
-眼睛长度
-
-**`Effect`**
 
 
 #### Returns
@@ -1438,43 +550,6 @@ ___
 
 值
 
-• **getEyesRange**(): `number` <Badge type="tip" text="client" />
-
-获取眼睛前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesRange**(): `number`
-
-获取眼睛前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesRange**(): `number`
-
-获取眼睛前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getEyesRotation <Score text="getEyesRotation" /> 
@@ -1482,43 +557,6 @@ ___
 • **getEyesRotation**(): `number` <Badge type="tip" text="client" />
 
 获取眼睛角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesRotation**(): `number` <Badge type="tip" text="client" />
-
-获取眼睛角度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesRotation**(): `number`
-
-获取眼睛角度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesRotation**(): `number`
-
-获取眼睛角度
-
-**`Effect`**
 
 
 #### Returns
@@ -1542,43 +580,6 @@ ___
 
 值
 
-• **getEyesWidth**(): `number` <Badge type="tip" text="client" />
-
-获取眼睛左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesWidth**(): `number`
-
-获取眼睛左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getEyesWidth**(): `number`
-
-获取眼睛左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getFaceWidth <Score text="getFaceWidth" /> 
@@ -1586,43 +587,6 @@ ___
 • **getFaceWidth**(): `number` <Badge type="tip" text="client" />
 
 调整头部整体宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getFaceWidth**(): `number` <Badge type="tip" text="client" />
-
-调整头部整体宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getFaceWidth**(): `number`
-
-调整头部整体宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getFaceWidth**(): `number`
-
-调整头部整体宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -1646,43 +610,6 @@ ___
 
 值
 
-• **getGroinThickness**(): `number` <Badge type="tip" text="client" />
-
-获取胯宽度前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getGroinThickness**(): `number`
-
-获取胯宽度前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getGroinThickness**(): `number`
-
-获取胯宽度前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getGroinWidth <Score text="getGroinWidth" /> 
@@ -1690,43 +617,6 @@ ___
 • **getGroinWidth**(): `number` <Badge type="tip" text="client" />
 
 获取胯宽度左右
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getGroinWidth**(): `number` <Badge type="tip" text="client" />
-
-获取胯宽度左右
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getGroinWidth**(): `number`
-
-获取胯宽度左右
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getGroinWidth**(): `number`
-
-获取胯宽度左右
-
-**`Effect`**
 
 
 #### Returns
@@ -1753,54 +643,6 @@ ___
 
 值
 
-• **getHeadScale**(): `number`
-
-获取角色头部大小
-
-**`Effect`**
-
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getHeadScale**(): `number`
-
-获取角色头部大小
-
-**`Effect`**
-
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getHeadScale**(): `number`
-
-获取角色头部大小
-
-**`Effect`**
-
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getJawLength <Score text="getJawLength" /> 
@@ -1808,43 +650,6 @@ ___
 • **getJawLength**(): `number` <Badge type="tip" text="client" />
 
 调整下巴长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawLength**(): `number` <Badge type="tip" text="client" />
-
-调整下巴长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawLength**(): `number`
-
-调整下巴长度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawLength**(): `number`
-
-调整下巴长度
-
-**`Effect`**
 
 
 #### Returns
@@ -1868,43 +673,6 @@ ___
 
 值
 
-• **getJawRange**(): `number` <Badge type="tip" text="client" />
-
-调整下巴前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawRange**(): `number`
-
-调整下巴前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawRange**(): `number`
-
-调整下巴前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getJawSmooth <Score text="getJawSmooth" /> 
@@ -1912,43 +680,6 @@ ___
 • **getJawSmooth**(): `number` <Badge type="tip" text="client" />
 
 调整下巴圆度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawSmooth**(): `number` <Badge type="tip" text="client" />
-
-调整下巴圆度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawSmooth**(): `number`
-
-调整下巴圆度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawSmooth**(): `number`
-
-调整下巴圆度
-
-**`Effect`**
 
 
 #### Returns
@@ -1972,43 +703,6 @@ ___
 
 值
 
-• **getJawVertexHeight**(): `number` <Badge type="tip" text="client" />
-
-调整下巴尖上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexHeight**(): `number`
-
-调整下巴尖上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexHeight**(): `number`
-
-调整下巴尖上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getJawVertexRange <Score text="getJawVertexRange" /> 
@@ -2016,43 +710,6 @@ ___
 • **getJawVertexRange**(): `number` <Badge type="tip" text="client" />
 
 调整下巴尖前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexRange**(): `number` <Badge type="tip" text="client" />
-
-调整下巴尖前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexRange**(): `number`
-
-调整下巴尖前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexRange**(): `number`
-
-调整下巴尖前后移动
-
-**`Effect`**
 
 
 #### Returns
@@ -2076,43 +733,6 @@ ___
 
 值
 
-• **getJawVertexWidth**(): `number` <Badge type="tip" text="client" />
-
-调整下巴尖宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexWidth**(): `number`
-
-调整下巴尖宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getJawVertexWidth**(): `number`
-
-调整下巴尖宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getLowerArmsStretch <Score text="getLowerArmsStretch" /> 
@@ -2120,43 +740,6 @@ ___
 • **getLowerArmsStretch**(): `number` <Badge type="tip" text="client" />
 
 获取小臂的拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsStretch**(): `number` <Badge type="tip" text="client" />
-
-获取小臂的拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsStretch**(): `number`
-
-获取小臂的拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsStretch**(): `number`
-
-获取小臂的拉伸
-
-**`Effect`**
 
 
 #### Returns
@@ -2180,43 +763,6 @@ ___
 
 值
 
-• **getLowerArmsThickness**(): `number` <Badge type="tip" text="client" />
-
-获取小臂前后方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsThickness**(): `number`
-
-获取小臂前后方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsThickness**(): `number`
-
-获取小臂前后方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getLowerArmsWidth <Score text="getLowerArmsWidth" /> 
@@ -2224,43 +770,6 @@ ___
 • **getLowerArmsWidth**(): `number` <Badge type="tip" text="client" />
 
 获取小臂左右方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsWidth**(): `number` <Badge type="tip" text="client" />
-
-获取小臂左右方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsWidth**(): `number`
-
-获取小臂左右方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerArmsWidth**(): `number`
-
-获取小臂左右方向的宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -2284,43 +793,6 @@ ___
 
 值
 
-• **getLowerFaceRange**(): `number` <Badge type="tip" text="client" />
-
-获取下半脸前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerFaceRange**(): `number`
-
-获取下半脸前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerFaceRange**(): `number`
-
-获取下半脸前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getLowerFaceWidth <Score text="getLowerFaceWidth" /> 
@@ -2328,43 +800,6 @@ ___
 • **getLowerFaceWidth**(): `number` <Badge type="tip" text="client" />
 
 获取下半脸的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerFaceWidth**(): `number` <Badge type="tip" text="client" />
-
-获取下半脸的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerFaceWidth**(): `number`
-
-获取下半脸的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerFaceWidth**(): `number`
-
-获取下半脸的宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -2388,43 +823,6 @@ ___
 
 值
 
-• **getLowerJawRange**(): `number` <Badge type="tip" text="client" />
-
-调整下颚骨前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerJawRange**(): `number`
-
-调整下颚骨前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerJawRange**(): `number`
-
-调整下颚骨前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getLowerJawWidth <Score text="getLowerJawWidth" /> 
@@ -2432,43 +830,6 @@ ___
 • **getLowerJawWidth**(): `number` <Badge type="tip" text="client" />
 
 调整下颚骨宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerJawWidth**(): `number` <Badge type="tip" text="client" />
-
-调整下颚骨宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerJawWidth**(): `number`
-
-调整下颚骨宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerJawWidth**(): `number`
-
-调整下颚骨宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -2492,43 +853,6 @@ ___
 
 值
 
-• **getLowerMouthThickness**(): `number` <Badge type="tip" text="client" />
-
-获取下嘴唇薄厚
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerMouthThickness**(): `number`
-
-获取下嘴唇薄厚
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerMouthThickness**(): `number`
-
-获取下嘴唇薄厚
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getLowerStretch <Score text="getLowerStretch" /> 
@@ -2536,43 +860,6 @@ ___
 • **getLowerStretch**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵下部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerStretch**(): `number` <Badge type="tip" text="client" />
-
-调整耳朵下部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerStretch**(): `number`
-
-调整耳朵下部拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getLowerStretch**(): `number`
-
-调整耳朵下部拉伸
-
-**`Effect`**
 
 
 #### Returns
@@ -2596,43 +883,6 @@ ___
 
 值
 
-• **getMouthHeight**(): `number` <Badge type="tip" text="client" />
-
-获取嘴巴上下位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthHeight**(): `number`
-
-获取嘴巴上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthHeight**(): `number`
-
-获取嘴巴上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getMouthRange <Score text="getMouthRange" /> 
@@ -2640,43 +890,6 @@ ___
 • **getMouthRange**(): `number` <Badge type="tip" text="client" />
 
 获取嘴巴前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthRange**(): `number` <Badge type="tip" text="client" />
-
-获取嘴巴前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthRange**(): `number`
-
-获取嘴巴前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthRange**(): `number`
-
-获取嘴巴前后移动
-
-**`Effect`**
 
 
 #### Returns
@@ -2700,43 +913,6 @@ ___
 
 值
 
-• **getMouthShape**(): `number` <Badge type="tip" text="client" />
-
-调整嘴巴形状
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthShape**(): `number`
-
-调整嘴巴形状
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthShape**(): `number`
-
-调整嘴巴形状
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getMouthWidth <Score text="getMouthWidth" /> 
@@ -2744,43 +920,6 @@ ___
 • **getMouthWidth**(): `number` <Badge type="tip" text="client" />
 
 获取嘴巴宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthWidth**(): `number` <Badge type="tip" text="client" />
-
-获取嘴巴宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthWidth**(): `number`
-
-获取嘴巴宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getMouthWidth**(): `number`
-
-获取嘴巴宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -2804,43 +943,6 @@ ___
 
 值
 
-• **getNeckStretch**(): `number` <Badge type="tip" text="client" />
-
-获取脖子拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckStretch**(): `number`
-
-获取脖子拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckStretch**(): `number`
-
-获取脖子拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getNeckThickness <Score text="getNeckThickness" /> 
@@ -2848,43 +950,6 @@ ___
 • **getNeckThickness**(): `number` <Badge type="tip" text="client" />
 
 获取脖子前后的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckThickness**(): `number` <Badge type="tip" text="client" />
-
-获取脖子前后的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckThickness**(): `number`
-
-获取脖子前后的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckThickness**(): `number`
-
-获取脖子前后的宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -2908,43 +973,6 @@ ___
 
 值
 
-• **getNeckWidth**(): `number` <Badge type="tip" text="client" />
-
-调整脖子的左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckWidth**(): `number`
-
-调整脖子的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNeckWidth**(): `number`
-
-调整脖子的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getNoseHeight <Score text="getNoseHeight" /> 
@@ -2952,43 +980,6 @@ ___
 • **getNoseHeight**(): `number` <Badge type="tip" text="client" />
 
 获取鼻梁高度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseHeight**(): `number` <Badge type="tip" text="client" />
-
-获取鼻梁高度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseHeight**(): `number`
-
-获取鼻梁高度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseHeight**(): `number`
-
-获取鼻梁高度
-
-**`Effect`**
 
 
 #### Returns
@@ -3012,43 +1003,6 @@ ___
 
 值
 
-• **getNoseProtrusion**(): `number` <Badge type="tip" text="client" />
-
-获取鼻尖长度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseProtrusion**(): `number`
-
-获取鼻尖长度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseProtrusion**(): `number`
-
-获取鼻尖长度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getNoseVerticalPosition <Score text="getNoseVerticalPosition" /> 
@@ -3056,43 +1010,6 @@ ___
 • **getNoseVerticalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取鼻子上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseVerticalPosition**(): `number` <Badge type="tip" text="client" />
-
-获取鼻子上下移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseVerticalPosition**(): `number`
-
-获取鼻子上下移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getNoseVerticalPosition**(): `number`
-
-获取鼻子上下移动
-
-**`Effect`**
 
 
 #### Returns
@@ -3116,43 +1033,6 @@ ___
 
 值
 
-• **getPupilHeight**(): `number` <Badge type="tip" text="client" />
-
-获取瞳孔高度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilHeight**(): `number`
-
-获取瞳孔高度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilHeight**(): `number`
-
-获取瞳孔高度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getPupilHorizontalPosition <Score text="getPupilHorizontalPosition" /> 
@@ -3160,43 +1040,6 @@ ___
 • **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔左右位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilHorizontalPosition**(): `number` <Badge type="tip" text="client" />
-
-获取瞳孔左右位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilHorizontalPosition**(): `number`
-
-获取瞳孔左右位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilHorizontalPosition**(): `number`
-
-获取瞳孔左右位置
-
-**`Effect`**
 
 
 #### Returns
@@ -3220,43 +1063,6 @@ ___
 
 值
 
-• **getPupilVerticalPosition**(): `number` <Badge type="tip" text="client" />
-
-获取瞳孔上下位置
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilVerticalPosition**(): `number`
-
-获取瞳孔上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilVerticalPosition**(): `number`
-
-获取瞳孔上下位置
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getPupilWidth <Score text="getPupilWidth" /> 
@@ -3264,43 +1070,6 @@ ___
 • **getPupilWidth**(): `number` <Badge type="tip" text="client" />
 
 获取瞳孔宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilWidth**(): `number` <Badge type="tip" text="client" />
-
-获取瞳孔宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilWidth**(): `number`
-
-获取瞳孔宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getPupilWidth**(): `number`
-
-获取瞳孔宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -3324,43 +1093,6 @@ ___
 
 值
 
-• **getRibThickness**(): `number` <Badge type="tip" text="client" />
-
-获取肋骨的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getRibThickness**(): `number`
-
-获取肋骨的前后宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getRibThickness**(): `number`
-
-获取肋骨的前后宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getRibWidth <Score text="getRibWidth" /> 
@@ -3368,43 +1100,6 @@ ___
 • **getRibWidth**(): `number` <Badge type="tip" text="client" />
 
 获取肋骨的左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getRibWidth**(): `number` <Badge type="tip" text="client" />
-
-获取肋骨的左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getRibWidth**(): `number`
-
-获取肋骨的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getRibWidth**(): `number`
-
-获取肋骨的左右宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -3428,43 +1123,6 @@ ___
 
 值
 
-• **getShankScaleX**(): `number` <Badge type="tip" text="client" />
-
-获取小腿粗细左右
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankScaleX**(): `number`
-
-获取小腿粗细左右
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankScaleX**(): `number`
-
-获取小腿粗细左右
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getShankScaleZ <Score text="getShankScaleZ" /> 
@@ -3472,43 +1130,6 @@ ___
 • **getShankScaleZ**(): `number` <Badge type="tip" text="client" />
 
 获取小腿粗细前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankScaleZ**(): `number` <Badge type="tip" text="client" />
-
-获取小腿粗细前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankScaleZ**(): `number`
-
-获取小腿粗细前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankScaleZ**(): `number`
-
-获取小腿粗细前后
-
-**`Effect`**
 
 
 #### Returns
@@ -3532,43 +1153,6 @@ ___
 
 值
 
-• **getShankStretch**(): `number` <Badge type="tip" text="client" />
-
-获取小腿拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankStretch**(): `number`
-
-获取小腿拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShankStretch**(): `number`
-
-获取小腿拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getShoulderArmThickness <Score text="getShoulderArmThickness" /> 
@@ -3576,43 +1160,6 @@ ___
 • **getShoulderArmThickness**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderArmThickness**(): `number` <Badge type="tip" text="client" />
-
-获取肩膀的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderArmThickness**(): `number`
-
-获取肩膀的前后宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderArmThickness**(): `number`
-
-获取肩膀的前后宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -3636,43 +1183,6 @@ ___
 
 值
 
-• **getShoulderArmWidth**(): `number` <Badge type="tip" text="client" />
-
-获取肩膀的左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderArmWidth**(): `number`
-
-获取肩膀的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderArmWidth**(): `number`
-
-获取肩膀的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getShoulderThickness <Score text="getShoulderThickness" /> 
@@ -3680,43 +1190,6 @@ ___
 • **getShoulderThickness**(): `number` <Badge type="tip" text="client" />
 
 获取肩膀的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderThickness**(): `number` <Badge type="tip" text="client" />
-
-获取肩膀的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderThickness**(): `number`
-
-获取肩膀的前后宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderThickness**(): `number`
-
-获取肩膀的前后宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -3740,43 +1213,6 @@ ___
 
 值
 
-• **getShoulderWidth**(): `number` <Badge type="tip" text="client" />
-
-获取肩膀的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderWidth**(): `number`
-
-获取肩膀的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getShoulderWidth**(): `number`
-
-获取肩膀的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getThighStretch <Score text="getThighStretch" /> 
@@ -3784,43 +1220,6 @@ ___
 • **getThighStretch**(): `number` <Badge type="tip" text="client" />
 
 获取大腿拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighStretch**(): `number` <Badge type="tip" text="client" />
-
-获取大腿拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighStretch**(): `number`
-
-获取大腿拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighStretch**(): `number`
-
-获取大腿拉伸
-
-**`Effect`**
 
 
 #### Returns
@@ -3844,43 +1243,6 @@ ___
 
 值
 
-• **getThighThicknessX**(): `number` <Badge type="tip" text="client" />
-
-获取大腿粗细左右
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighThicknessX**(): `number`
-
-获取大腿粗细左右
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighThicknessX**(): `number`
-
-获取大腿粗细左右
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getThighThicknessZ <Score text="getThighThicknessZ" /> 
@@ -3888,43 +1250,6 @@ ___
 • **getThighThicknessZ**(): `number` <Badge type="tip" text="client" />
 
 获取大腿粗细前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighThicknessZ**(): `number` <Badge type="tip" text="client" />
-
-获取大腿粗细前后
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighThicknessZ**(): `number`
-
-获取大腿粗细前后
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getThighThicknessZ**(): `number`
-
-获取大腿粗细前后
-
-**`Effect`**
 
 
 #### Returns
@@ -3948,43 +1273,6 @@ ___
 
 值
 
-• **getUpperArmsStretch**(): `number` <Badge type="tip" text="client" />
-
-获取大臂的拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsStretch**(): `number`
-
-获取大臂的拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsStretch**(): `number`
-
-获取大臂的拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getUpperArmsThickness <Score text="getUpperArmsThickness" /> 
@@ -3992,43 +1280,6 @@ ___
 • **getUpperArmsThickness**(): `number` <Badge type="tip" text="client" />
 
 获取大臂前后方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsThickness**(): `number` <Badge type="tip" text="client" />
-
-获取大臂前后方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsThickness**(): `number`
-
-获取大臂前后方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsThickness**(): `number`
-
-获取大臂前后方向的宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -4052,43 +1303,6 @@ ___
 
 值
 
-• **getUpperArmsWidth**(): `number` <Badge type="tip" text="client" />
-
-获取大臂左右方向的宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsWidth**(): `number`
-
-获取大臂左右方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperArmsWidth**(): `number`
-
-获取大臂左右方向的宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getUpperFaceRange <Score text="getUpperFaceRange" /> 
@@ -4096,43 +1310,6 @@ ___
 • **getUpperFaceRange**(): `number` <Badge type="tip" text="client" />
 
 调整上半脸前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperFaceRange**(): `number` <Badge type="tip" text="client" />
-
-调整上半脸前后移动
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperFaceRange**(): `number`
-
-调整上半脸前后移动
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperFaceRange**(): `number`
-
-调整上半脸前后移动
-
-**`Effect`**
 
 
 #### Returns
@@ -4156,43 +1333,6 @@ ___
 
 值
 
-• **getUpperMouthThickness**(): `number` <Badge type="tip" text="client" />
-
-获取上嘴唇薄厚
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperMouthThickness**(): `number`
-
-获取上嘴唇薄厚
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperMouthThickness**(): `number`
-
-获取上嘴唇薄厚
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getUpperStretch <Score text="getUpperStretch" /> 
@@ -4200,43 +1340,6 @@ ___
 • **getUpperStretch**(): `number` <Badge type="tip" text="client" />
 
 调整耳朵上部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperStretch**(): `number` <Badge type="tip" text="client" />
-
-调整耳朵上部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperStretch**(): `number`
-
-调整耳朵上部拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getUpperStretch**(): `number`
-
-调整耳朵上部拉伸
-
-**`Effect`**
 
 
 #### Returns
@@ -4260,43 +1363,6 @@ ___
 
 值
 
-• **getWaistStretch**(): `number` <Badge type="tip" text="client" />
-
-获取腰部拉伸
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistStretch**(): `number`
-
-获取腰部拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistStretch**(): `number`
-
-获取腰部拉伸
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### getWaistThickness <Score text="getWaistThickness" /> 
@@ -4304,43 +1370,6 @@ ___
 • **getWaistThickness**(): `number` <Badge type="tip" text="client" />
 
 获取腰的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistThickness**(): `number` <Badge type="tip" text="client" />
-
-获取腰的前后宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistThickness**(): `number`
-
-获取腰的前后宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistThickness**(): `number`
-
-获取腰的前后宽度
-
-**`Effect`**
 
 
 #### Returns
@@ -4364,43 +1393,6 @@ ___
 
 值
 
-• **getWaistWidth**(): `number` <Badge type="tip" text="client" />
-
-获取腰的左右宽度
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistWidth**(): `number`
-
-获取腰的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
-• **getWaistWidth**(): `number`
-
-获取腰的左右宽度
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-值
-
 ___
 
 ### setBreastHorizontalPosition <Score text="setBreastHorizontalPosition" /> 
@@ -4414,69 +1406,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastHorizontalPosition**(`value`, `sync`): `void`
-
-调整胸部左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastHorizontalPosition**(`value`, `sync`): `void`
-
-调整胸部左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastHorizontalPosition**(`value`, `sync`): `void`
-
-调整胸部左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -4510,69 +1439,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setBreastLength**(`value`, `sync`): `void`
-
-调整胸部长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastLength**(`value`, `sync`): `void`
-
-调整胸部长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastLength**(`value`, `sync`): `void`
-
-调整胸部长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setBreastScale <Score text="setBreastScale" /> 
@@ -4596,69 +1462,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setBreastScale**(`value`, `sync`): `void`
-
-调整胸部整体大小；
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastScale**(`value`, `sync`): `void`
-
-调整胸部整体大小；
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastScale**(`value`, `sync`): `void`
-
-调整胸部整体大小；
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setBreastStretch <Score text="setBreastStretch" /> 
@@ -4672,69 +1475,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastStretch**(`value`, `sync`): `void`
-
-设置胸部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastStretch**(`value`, `sync`): `void`
-
-设置胸部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastStretch**(`value`, `sync`): `void`
-
-设置胸部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -4769,72 +1509,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setBreastVerticalPosition**(`value`, `sync`): `void`
-
-调整胸部上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
- *
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastVerticalPosition**(`value`, `sync`): `void`
-
-调整胸部上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
- *
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBreastVerticalPosition**(`value`, `sync`): `void`
-
-调整胸部上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
- *
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setBrowGap <Score text="setBrowGap" /> 
@@ -4848,69 +1522,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowGap**(`value`, `sync`): `void`
-
-设置眉间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowGap**(`value`, `sync`): `void`
-
-设置眉间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowGap**(`value`, `sync`): `void`
-
-设置眉间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -4944,69 +1555,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setBrowHeight**(`value`, `sync`): `void`
-
-设置眉毛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowHeight**(`value`, `sync`): `void`
-
-设置眉毛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowHeight**(`value`, `sync`): `void`
-
-设置眉毛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setBrowInboardShape <Score text="setBrowInboardShape" /> 
@@ -5020,69 +1568,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowInboardShape**(`value`, `sync`): `void`
-
-设置眉毛内侧角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowInboardShape**(`value`, `sync`): `void`
-
-设置眉毛内侧角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowInboardShape**(`value`, `sync`): `void`
-
-设置眉毛内侧角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5116,69 +1601,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setBrowOutsideShape**(`value`, `sync`): `void`
-
-设置眉毛外侧形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowOutsideShape**(`value`, `sync`): `void`
-
-设置眉毛外侧形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowOutsideShape**(`value`, `sync`): `void`
-
-设置眉毛外侧形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setBrowRotation <Score text="setBrowRotation" /> 
@@ -5192,69 +1614,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowRotation**(`value`, `sync`): `void`
-
-设置眉毛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowRotation**(`value`, `sync`): `void`
-
-设置眉毛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setBrowRotation**(`value`, `sync`): `void`
-
-设置眉毛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5288,69 +1647,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setCanthusHorizontalPosition**(`value`, `sync`): `void`
-
-设置眼角左右移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCanthusHorizontalPosition**(`value`, `sync`): `void`
-
-设置眼角左右移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCanthusHorizontalPosition**(`value`, `sync`): `void`
-
-设置眼角左右移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setCanthusVerticalPosition <Score text="setCanthusVerticalPosition" /> 
@@ -5364,69 +1660,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCanthusVerticalPosition**(`value`, `sync`): `void`
-
-设置外眼角上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCanthusVerticalPosition**(`value`, `sync`): `void`
-
-设置外眼角上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCanthusVerticalPosition**(`value`, `sync`): `void`
-
-设置外眼角上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5460,69 +1693,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setCharacterHeight**(`value`, `sync`): `void`
-
-设置角色身高
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCharacterHeight**(`value`, `sync`): `void`
-
-设置角色身高
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCharacterHeight**(`value`, `sync`): `void`
-
-设置角色身高
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setCheekBoneRange <Score text="setCheekBoneRange" /> 
@@ -5536,69 +1706,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekBoneRange**(`value`, `sync`): `void`
-
-设置颧骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekBoneRange**(`value`, `sync`): `void`
-
-设置颧骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekBoneRange**(`value`, `sync`): `void`
-
-设置颧骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5632,69 +1739,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setCheekBoneWidth**(`value`, `sync`): `void`
-
-设置颧骨横向宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekBoneWidth**(`value`, `sync`): `void`
-
-设置颧骨横向宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekBoneWidth**(`value`, `sync`): `void`
-
-设置颧骨横向宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setCheekHeight <Score text="setCheekHeight" /> 
@@ -5708,69 +1752,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekHeight**(`value`, `sync`): `void`
-
-设置脸颊上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekHeight**(`value`, `sync`): `void`
-
-设置脸颊上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekHeight**(`value`, `sync`): `void`
-
-设置脸颊上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5804,69 +1785,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setCheekRange**(`value`, `sync`): `void`
-
-设置脸颊前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekRange**(`value`, `sync`): `void`
-
-设置脸颊前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekRange**(`value`, `sync`): `void`
-
-设置脸颊前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setCheekWidth <Score text="setCheekWidth" /> 
@@ -5880,69 +1798,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekWidth**(`value`, `sync`): `void`
-
-设置脸颊宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekWidth**(`value`, `sync`): `void`
-
-设置脸颊宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setCheekWidth**(`value`, `sync`): `void`
-
-设置脸颊宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -5976,69 +1831,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setEarRoll**(`value`, `sync`): `void`
-
-调整耳朵左右旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarRoll**(`value`, `sync`): `void`
-
-调整耳朵左右旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarRoll**(`value`, `sync`): `void`
-
-调整耳朵左右旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setEarScale <Score text="setEarScale" /> 
@@ -6052,69 +1844,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarScale**(`value`, `sync`): `void`
-
-调整耳朵大小
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarScale**(`value`, `sync`): `void`
-
-调整耳朵大小
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarScale**(`value`, `sync`): `void`
-
-调整耳朵大小
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -6148,69 +1877,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setEarYaw**(`value`, `sync`): `void`
-
-调整耳朵前后旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarYaw**(`value`, `sync`): `void`
-
-调整耳朵前后旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEarYaw**(`value`, `sync`): `void`
-
-调整耳朵前后旋转
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setEyesGap <Score text="setEyesGap" /> 
@@ -6224,69 +1890,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesGap**(`value`, `sync`): `void`
-
-设置眼睛间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesGap**(`value`, `sync`): `void`
-
-设置眼睛间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesGap**(`value`, `sync`): `void`
-
-设置眼睛间距
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -6320,69 +1923,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setEyesHeight**(`value`, `sync`): `void`
-
-设置眼睛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesHeight**(`value`, `sync`): `void`
-
-设置眼睛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesHeight**(`value`, `sync`): `void`
-
-设置眼睛上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setEyesLength <Score text="setEyesLength" /> 
@@ -6396,69 +1936,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesLength**(`value`, `sync`): `void`
-
-眼睛长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesLength**(`value`, `sync`): `void`
-
-眼睛长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesLength**(`value`, `sync`): `void`
-
-眼睛长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -6492,69 +1969,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setEyesRange**(`value`, `sync`): `void`
-
-设置眼睛前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesRange**(`value`, `sync`): `void`
-
-设置眼睛前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesRange**(`value`, `sync`): `void`
-
-设置眼睛前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setEyesRotation <Score text="setEyesRotation" /> 
@@ -6568,69 +1982,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesRotation**(`value`, `sync`): `void`
-
-设置眼睛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesRotation**(`value`, `sync`): `void`
-
-设置眼睛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesRotation**(`value`, `sync`): `void`
-
-设置眼睛角度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -6664,69 +2015,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setEyesWidth**(`value`, `sync`): `void`
-
-设置眼睛左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesWidth**(`value`, `sync`): `void`
-
-设置眼睛左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setEyesWidth**(`value`, `sync`): `void`
-
-设置眼睛左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setFaceWidth <Score text="setFaceWidth" /> 
@@ -6740,69 +2028,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setFaceWidth**(`value`, `sync`): `void`
-
-调整头部整体宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setFaceWidth**(`value`, `sync`): `void`
-
-调整头部整体宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setFaceWidth**(`value`, `sync`): `void`
-
-调整头部整体宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -6836,69 +2061,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setGroinThickness**(`value`, `sync`): `void`
-
-设置胯宽度前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setGroinThickness**(`value`, `sync`): `void`
-
-设置胯宽度前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setGroinThickness**(`value`, `sync`): `void`
-
-设置胯宽度前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setGroinWidth <Score text="setGroinWidth" /> 
@@ -6912,69 +2074,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setGroinWidth**(`value`, `sync`): `void`
-
-设置胯宽度左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setGroinWidth**(`value`, `sync`): `void`
-
-设置胯宽度左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setGroinWidth**(`value`, `sync`): `void`
-
-设置胯宽度左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7009,78 +2108,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setHeadScale**(`value`, `sync`): `void`
-
-设置角色头部大小
-
-**`Effect`**
-
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setHeadScale**(`value`, `sync`): `void`
-
-设置角色头部大小
-
-**`Effect`**
-
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setHeadScale**(`value`, `sync`): `void`
-
-设置角色头部大小
-
-**`Effect`**
-
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setJawLength <Score text="setJawLength" /> 
@@ -7094,69 +2121,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawLength**(`value`, `sync`): `void`
-
-调整下巴长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawLength**(`value`, `sync`): `void`
-
-调整下巴长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawLength**(`value`, `sync`): `void`
-
-调整下巴长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7190,69 +2154,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setJawRange**(`value`, `sync`): `void`
-
-调整下巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawRange**(`value`, `sync`): `void`
-
-调整下巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawRange**(`value`, `sync`): `void`
-
-调整下巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setJawSmooth <Score text="setJawSmooth" /> 
@@ -7266,69 +2167,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawSmooth**(`value`, `sync`): `void`
-
-调整下巴圆度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawSmooth**(`value`, `sync`): `void`
-
-调整下巴圆度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawSmooth**(`value`, `sync`): `void`
-
-调整下巴圆度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7362,69 +2200,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setJawVertexHeight**(`value`, `sync`): `void`
-
-调整下巴尖上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexHeight**(`value`, `sync`): `void`
-
-调整下巴尖上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexHeight**(`value`, `sync`): `void`
-
-调整下巴尖上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setJawVertexRange <Score text="setJawVertexRange" /> 
@@ -7438,69 +2213,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexRange**(`value`, `sync`): `void`
-
-调整下巴尖前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexRange**(`value`, `sync`): `void`
-
-调整下巴尖前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexRange**(`value`, `sync`): `void`
-
-调整下巴尖前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7534,69 +2246,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setJawVertexWidth**(`value`, `sync`): `void`
-
-调整下巴尖宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexWidth**(`value`, `sync`): `void`
-
-调整下巴尖宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setJawVertexWidth**(`value`, `sync`): `void`
-
-调整下巴尖宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setLowerArmsStretch <Score text="setLowerArmsStretch" /> 
@@ -7610,69 +2259,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsStretch**(`value`, `sync`): `void`
-
-设置小臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsStretch**(`value`, `sync`): `void`
-
-设置小臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsStretch**(`value`, `sync`): `void`
-
-设置小臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7706,69 +2292,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setLowerArmsThickness**(`value`, `sync`): `void`
-
-设置小臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsThickness**(`value`, `sync`): `void`
-
-设置小臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsThickness**(`value`, `sync`): `void`
-
-设置小臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setLowerArmsWidth <Score text="setLowerArmsWidth" /> 
@@ -7782,69 +2305,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsWidth**(`value`, `sync`): `void`
-
-设置小臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsWidth**(`value`, `sync`): `void`
-
-设置小臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerArmsWidth**(`value`, `sync`): `void`
-
-设置小臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -7878,69 +2338,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setLowerFaceRange**(`value`, `sync`): `void`
-
-设置下半脸前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerFaceRange**(`value`, `sync`): `void`
-
-设置下半脸前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerFaceRange**(`value`, `sync`): `void`
-
-设置下半脸前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setLowerFaceWidth <Score text="setLowerFaceWidth" /> 
@@ -7954,69 +2351,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerFaceWidth**(`value`, `sync`): `void`
-
-设置下半脸的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerFaceWidth**(`value`, `sync`): `void`
-
-设置下半脸的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerFaceWidth**(`value`, `sync`): `void`
-
-设置下半脸的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8050,69 +2384,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setLowerJawRange**(`value`, `sync`): `void`
-
-调整下颚骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerJawRange**(`value`, `sync`): `void`
-
-调整下颚骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerJawRange**(`value`, `sync`): `void`
-
-调整下颚骨前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setLowerJawWidth <Score text="setLowerJawWidth" /> 
@@ -8126,69 +2397,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerJawWidth**(`value`, `sync`): `void`
-
-调整下颚骨宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerJawWidth**(`value`, `sync`): `void`
-
-调整下颚骨宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerJawWidth**(`value`, `sync`): `void`
-
-调整下颚骨宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8222,69 +2430,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setLowerMouthThickness**(`value`, `sync`): `void`
-
-设置下嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerMouthThickness**(`value`, `sync`): `void`
-
-设置下嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerMouthThickness**(`value`, `sync`): `void`
-
-设置下嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setLowerStretch <Score text="setLowerStretch" /> 
@@ -8298,69 +2443,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerStretch**(`value`, `sync`): `void`
-
-调整耳朵下部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerStretch**(`value`, `sync`): `void`
-
-调整耳朵下部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setLowerStretch**(`value`, `sync`): `void`
-
-调整耳朵下部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8394,69 +2476,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setMouthHeight**(`value`, `sync`): `void`
-
-设置嘴巴上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthHeight**(`value`, `sync`): `void`
-
-设置嘴巴上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthHeight**(`value`, `sync`): `void`
-
-设置嘴巴上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setMouthRange <Score text="setMouthRange" /> 
@@ -8470,69 +2489,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthRange**(`value`, `sync`): `void`
-
-设置嘴巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthRange**(`value`, `sync`): `void`
-
-设置嘴巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthRange**(`value`, `sync`): `void`
-
-设置嘴巴前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8566,69 +2522,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setMouthShape**(`value`, `sync`): `void`
-
-调整嘴巴形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthShape**(`value`, `sync`): `void`
-
-调整嘴巴形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthShape**(`value`, `sync`): `void`
-
-调整嘴巴形状
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setMouthWidth <Score text="setMouthWidth" /> 
@@ -8642,69 +2535,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthWidth**(`value`, `sync`): `void`
-
-设置嘴巴宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthWidth**(`value`, `sync`): `void`
-
-设置嘴巴宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setMouthWidth**(`value`, `sync`): `void`
-
-设置嘴巴宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8738,69 +2568,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setNeckStretch**(`value`, `sync`): `void`
-
-设置脖子拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckStretch**(`value`, `sync`): `void`
-
-设置脖子拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckStretch**(`value`, `sync`): `void`
-
-设置脖子拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setNeckThickness <Score text="setNeckThickness" /> 
@@ -8814,69 +2581,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckThickness**(`value`, `sync`): `void`
-
-设置脖子前后的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckThickness**(`value`, `sync`): `void`
-
-设置脖子前后的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckThickness**(`value`, `sync`): `void`
-
-设置脖子前后的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -8910,69 +2614,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setNeckWidth**(`value`, `sync`): `void`
-
-调整脖子的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckWidth**(`value`, `sync`): `void`
-
-调整脖子的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNeckWidth**(`value`, `sync`): `void`
-
-调整脖子的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setNoseHeight <Score text="setNoseHeight" /> 
@@ -8986,69 +2627,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseHeight**(`value`, `sync`): `void`
-
-设置鼻梁高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseHeight**(`value`, `sync`): `void`
-
-设置鼻梁高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseHeight**(`value`, `sync`): `void`
-
-设置鼻梁高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9082,69 +2660,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setNoseProtrusion**(`value`, `sync`): `void`
-
-设置鼻尖长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseProtrusion**(`value`, `sync`): `void`
-
-设置鼻尖长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseProtrusion**(`value`, `sync`): `void`
-
-设置鼻尖长度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setNoseVerticalPosition <Score text="setNoseVerticalPosition" /> 
@@ -9158,69 +2673,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseVerticalPosition**(`value`, `sync`): `void`
-
-设置鼻子上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseVerticalPosition**(`value`, `sync`): `void`
-
-设置鼻子上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setNoseVerticalPosition**(`value`, `sync`): `void`
-
-设置鼻子上下移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9254,69 +2706,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setPupilHeight**(`value`, `sync`): `void`
-
-设置瞳孔高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilHeight**(`value`, `sync`): `void`
-
-设置瞳孔高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilHeight**(`value`, `sync`): `void`
-
-设置瞳孔高度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setPupilHorizontalPosition <Score text="setPupilHorizontalPosition" /> 
@@ -9330,69 +2719,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilHorizontalPosition**(`value`, `sync`): `void`
-
-设置瞳孔左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilHorizontalPosition**(`value`, `sync`): `void`
-
-设置瞳孔左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilHorizontalPosition**(`value`, `sync`): `void`
-
-设置瞳孔左右位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9426,69 +2752,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setPupilVerticalPosition**(`value`, `sync`): `void`
-
-设置瞳孔上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilVerticalPosition**(`value`, `sync`): `void`
-
-设置瞳孔上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilVerticalPosition**(`value`, `sync`): `void`
-
-设置瞳孔上下位置
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setPupilWidth <Score text="setPupilWidth" /> 
@@ -9502,69 +2765,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilWidth**(`value`, `sync`): `void`
-
-设置瞳孔宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilWidth**(`value`, `sync`): `void`
-
-设置瞳孔宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setPupilWidth**(`value`, `sync`): `void`
-
-设置瞳孔宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9598,69 +2798,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setRibThickness**(`value`, `sync`): `void`
-
-设置肋骨的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setRibThickness**(`value`, `sync`): `void`
-
-设置肋骨的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setRibThickness**(`value`, `sync`): `void`
-
-设置肋骨的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setRibWidth <Score text="setRibWidth" /> 
@@ -9674,69 +2811,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setRibWidth**(`value`, `sync`): `void`
-
-设置肋骨的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setRibWidth**(`value`, `sync`): `void`
-
-设置肋骨的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setRibWidth**(`value`, `sync`): `void`
-
-设置肋骨的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9770,69 +2844,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setShankScaleX**(`value`, `sync`): `void`
-
-设置小腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankScaleX**(`value`, `sync`): `void`
-
-设置小腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankScaleX**(`value`, `sync`): `void`
-
-设置小腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setShankScaleZ <Score text="setShankScaleZ" /> 
@@ -9846,69 +2857,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankScaleZ**(`value`, `sync`): `void`
-
-设置小腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankScaleZ**(`value`, `sync`): `void`
-
-设置小腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankScaleZ**(`value`, `sync`): `void`
-
-设置小腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -9942,69 +2890,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setShankStretch**(`value`, `sync`): `void`
-
-设置小腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankStretch**(`value`, `sync`): `void`
-
-设置小腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShankStretch**(`value`, `sync`): `void`
-
-设置小腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setShoulderArmThickness <Score text="setShoulderArmThickness" /> 
@@ -10018,69 +2903,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderArmThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderArmThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderArmThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10114,69 +2936,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setShoulderArmWidth**(`value`, `sync`): `void`
-
-设置肩膀的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderArmWidth**(`value`, `sync`): `void`
-
-设置肩膀的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderArmWidth**(`value`, `sync`): `void`
-
-设置肩膀的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setShoulderThickness <Score text="setShoulderThickness" /> 
@@ -10190,69 +2949,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderThickness**(`value`, `sync`): `void`
-
-设置肩膀的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10286,69 +2982,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setShoulderWidth**(`value`, `sync`): `void`
-
-设置肩膀的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderWidth**(`value`, `sync`): `void`
-
-设置肩膀的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setShoulderWidth**(`value`, `sync`): `void`
-
-设置肩膀的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setThighStretch <Score text="setThighStretch" /> 
@@ -10362,69 +2995,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighStretch**(`value`, `sync`): `void`
-
-设置大腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighStretch**(`value`, `sync`): `void`
-
-设置大腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighStretch**(`value`, `sync`): `void`
-
-设置大腿拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10458,69 +3028,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setThighThicknessX**(`value`, `sync`): `void`
-
-设置大腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighThicknessX**(`value`, `sync`): `void`
-
-设置大腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighThicknessX**(`value`, `sync`): `void`
-
-设置大腿粗细左右
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setThighThicknessZ <Score text="setThighThicknessZ" /> 
@@ -10534,69 +3041,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighThicknessZ**(`value`, `sync`): `void`
-
-设置大腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighThicknessZ**(`value`, `sync`): `void`
-
-设置大腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setThighThicknessZ**(`value`, `sync`): `void`
-
-设置大腿粗细前后
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10630,69 +3074,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setUpperArmsStretch**(`value`, `sync`): `void`
-
-设置大臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsStretch**(`value`, `sync`): `void`
-
-设置大臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsStretch**(`value`, `sync`): `void`
-
-设置大臂的拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setUpperArmsThickness <Score text="setUpperArmsThickness" /> 
@@ -10706,69 +3087,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsThickness**(`value`, `sync`): `void`
-
-设置大臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsThickness**(`value`, `sync`): `void`
-
-设置大臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsThickness**(`value`, `sync`): `void`
-
-设置大臂前后方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10802,69 +3120,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setUpperArmsWidth**(`value`, `sync`): `void`
-
-设置大臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsWidth**(`value`, `sync`): `void`
-
-设置大臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperArmsWidth**(`value`, `sync`): `void`
-
-设置大臂左右方向的宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setUpperFaceRange <Score text="setUpperFaceRange" /> 
@@ -10878,69 +3133,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperFaceRange**(`value`, `sync`): `void`
-
-调整上半脸前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperFaceRange**(`value`, `sync`): `void`
-
-调整上半脸前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperFaceRange**(`value`, `sync`): `void`
-
-调整上半脸前后移动
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -10974,69 +3166,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setUpperMouthThickness**(`value`, `sync`): `void`
-
-设置上嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperMouthThickness**(`value`, `sync`): `void`
-
-设置上嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperMouthThickness**(`value`, `sync`): `void`
-
-设置上嘴唇薄厚
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setUpperStretch <Score text="setUpperStretch" /> 
@@ -11050,69 +3179,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperStretch**(`value`, `sync`): `void`
-
-调整耳朵上部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperStretch**(`value`, `sync`): `void`
-
-调整耳朵上部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setUpperStretch**(`value`, `sync`): `void`
-
-调整耳朵上部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters
@@ -11146,69 +3212,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setWaistStretch**(`value`, `sync`): `void`
-
-设置腰部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistStretch**(`value`, `sync`): `void`
-
-设置腰部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistStretch**(`value`, `sync`): `void`
-
-设置腰部拉伸
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setWaistThickness <Score text="setWaistThickness" /> 
@@ -11232,69 +3235,6 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **setWaistThickness**(`value`, `sync`): `void`
-
-设置腰的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistThickness**(`value`, `sync`): `void`
-
-设置腰的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistThickness**(`value`, `sync`): `void`
-
-设置腰的前后宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### setWaistWidth <Score text="setWaistWidth" /> 
@@ -11308,69 +3248,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistWidth**(`value`, `sync`): `void`
-
-设置腰的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistWidth**(`value`, `sync`): `void`
-
-设置腰的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 值 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWaistWidth**(`value`, `sync`): `void`
-
-设置腰的左右宽度
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters

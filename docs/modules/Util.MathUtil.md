@@ -358,69 +358,6 @@ ___
 
 计算结果
 
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
 ___
 
 ### cos <Score text="cos" /> 
@@ -428,63 +365,6 @@ ___
 • **cos**(`a`): `number` 
 
 计算cos值
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
 
 
 #### Parameters
@@ -520,63 +400,6 @@ ___
 
 弧度值
 
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
 ___
 
 ### fmod <Score text="fmod" /> 
@@ -584,66 +407,6 @@ ___
 • **fmod**(`x`, `y`): `number` 
 
 返回 数值x 除以 数值y 的余数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
 
 
 #### Parameters
@@ -688,87 +451,6 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 计算结果
 
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
 ___
 
 ### radiansToDegrees <Score text="radiansToDegrees" /> 
@@ -790,63 +472,6 @@ ___
 
 度数
 
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
 ___
 
 ### randomFloat <Score text="randomFloat" /> 
@@ -854,66 +479,6 @@ ___
 • **randomFloat**(`min`, `max`): `number` 
 
 获取随机范围内浮点数[包含min, 不包含max)
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
 
 
 #### Parameters
@@ -951,66 +516,6 @@ ___
 
 随机范围内的整数
 
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
 ___
 
 ### sin <Score text="sin" /> 
@@ -1032,63 +537,6 @@ ___
 
 sin值
 
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
 ___
 
 ### tan <Score text="tan" /> 
@@ -1096,63 +544,6 @@ ___
 • **tan**(`a`): `number` 
 
 计算tan值
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
 
 
 #### Parameters

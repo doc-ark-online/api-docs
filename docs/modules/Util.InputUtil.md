@@ -40,51 +40,6 @@
 | `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
 
 
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
 ___
 
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
@@ -92,66 +47,6 @@ ___
 • **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
 
 将二维屏幕位置转换为世界空间三维位置和方向
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `screenX` | `number` |  屏幕X轴坐标值 default: |
-| `screenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
-
-• **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `screenX` | `number` |  屏幕X轴坐标值 default: |
-| `screenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
-
-• **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `screenX` | `number` |  屏幕X轴坐标值 default: |
-| `screenY` | `number` |  屏幕Y轴坐标值 |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
-
-• **convertScreenLocationToWorldSpace**(`screenX`, `screenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-将二维屏幕位置转换为世界空间三维位置和方向
-
-**`Effect`**
 
 
 #### Parameters
@@ -183,48 +78,6 @@ ___
 | `canInteract` | `boolean` | 可交互 |
 
 
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
-
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
-
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
-
 ___
 
 ### enableCursorLock <Score text="enableCursorLock" /> 
@@ -232,48 +85,6 @@ ___
 • **enableCursorLock**(`isEnableMouseLock`): `void` <Badge type="tip" text="client" />
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
 
 
 #### Parameters
@@ -298,45 +109,6 @@ ___
 
 是否能与UI交互
 
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
-
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
-
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
-
 ___
 
 ### isCursorLockEnabled <Score text="isCursorLockEnabled" /> 
@@ -344,45 +116,6 @@ ___
 • **isCursorLockEnabled**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
 
 
 #### Returns
@@ -406,45 +139,6 @@ ___
 
 是否锁定
 
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
-
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
-
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
-
 ___
 
 ### isCursorVisible <Score text="isCursorVisible" /> 
@@ -460,45 +154,6 @@ ___
 
 是否可见
 
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
 ___
 
 ### onKeyDown <Score text="onKeyDown" /> 
@@ -506,66 +161,6 @@ ___
 • **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 键盘输入事件-点击
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
 
 
 #### Parameters
@@ -603,66 +198,6 @@ ___
 
 返回一个事件监听器
 
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
 ___
 
 ### onKeyUp <Score text="onKeyUp" /> 
@@ -670,66 +205,6 @@ ___
 • **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 键盘输入事件-抬起
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
 
 
 #### Parameters
@@ -767,66 +242,6 @@ ___
 
 屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
 
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
 ___
 
 ### setCursorLocked <Score text="setCursorLocked" /> 
@@ -834,48 +249,6 @@ ___
 • **setCursorLocked**(`isLock`): `void` <Badge type="tip" text="client" />
 
 设置鼠标指针是否锁定
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
 
 
 #### Parameters
@@ -901,48 +274,6 @@ ___
 | `isVisible` | `boolean` | 是否可见 |
 
 
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
 ___
 
 ### setMouseLockable <Score text="setMouseLockable" /> 
@@ -959,48 +290,6 @@ ___
 | `can` | `boolean` | 是否可以锁定鼠标 |
 
 
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
-
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
-
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
-
 ___
 
 ### unbindButton <Score text="unbindButton" /> 
@@ -1008,48 +297,6 @@ ___
 • **unbindButton**(`key`): `void` <Badge type="tip" text="client" />
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
 
 
 #### Parameters

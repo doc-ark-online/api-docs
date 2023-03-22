@@ -10,7 +10,7 @@ HTTP请求信息的对象
 | :-----|
 | **[body](Network.RequestInit.md#body)**: `string` <br> HTTP请求体|
 | **[headers](Network.RequestInit.md#headers)**: `Object` <br> HTTP请求头|
-| **[method](Network.RequestInit.md#method)**: ``"GET"`` \| ``"POST"`` \| ``"PUT"`` <br> HTTP请求类型|
+| **[method](Network.RequestInit.md#method)**: ``"POST"`` \| ``"PUT"`` \| ``"GET"`` <br> HTTP请求类型|
 
 ## Properties
 
@@ -19,12 +19,6 @@ HTTP请求信息的对象
 • `Optional` **body**: `string`
 
 HTTP请求体
-
-zip/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:16
-
-zip1/1e483ed442af11d1e91b2a1437a59429771b89fce086489276f5d8750636d57f/Typing/Network/index.d.ts:16
-
-zip1/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:16
 
 ___
 
@@ -38,22 +32,10 @@ HTTP请求头
 
 ▪ [key: `string`]: `string`
 
-zip/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:12
-
-zip1/1e483ed442af11d1e91b2a1437a59429771b89fce086489276f5d8750636d57f/Typing/Network/index.d.ts:12
-
-zip1/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:12
-
 ___
 
 ### method <Score text="method" /> 
 
-• `Optional` **method**: ``"GET"`` \| ``"POST"`` \| ``"PUT"``
+• `Optional` **method**: ``"POST"`` \| ``"PUT"`` \| ``"GET"``
 
 HTTP请求类型
-
-zip/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:10
-
-zip1/1e483ed442af11d1e91b2a1437a59429771b89fce086489276f5d8750636d57f/Typing/Network/index.d.ts:10
-
-zip1/def097e0e17f205d1e61fe2446cd4e9dab4e33f4a15189218e874471f346ff44/Typing/Network/index.d.ts:10

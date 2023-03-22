@@ -41,46 +41,6 @@
 | `func` | `T` |  绑定的函数 default |
 
 
-• **add**(`func`): `void` 
-
-绑定代理函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default |
-
-
-• **add**(`func`): `void`
-
-绑定代理函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default |
-
-
-• **add**(`func`): `void`
-
-绑定代理函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default |
-
-
 ___
 
 ### broadcast <Score text="broadcast" /> 
@@ -97,46 +57,6 @@ ___
 | `...arg` | `Parameters`<`T`\> |  参数 |
 
 
-• **broadcast**(`...arg`): `void` 
-
-广播通知代理函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  参数 |
-
-
-• **broadcast**(`...arg`): `void`
-
-广播通知代理函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  参数 |
-
-
-• **broadcast**(`...arg`): `void`
-
-广播通知代理函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  参数 |
-
-
 ___
 
 ### remove <Score text="remove" /> 
@@ -144,46 +64,6 @@ ___
 • **remove**(`func`): `void` 
 
 删除代理函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  删除绑定的函数 default |
-
-
-• **remove**(`func`): `void` 
-
-删除代理函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  删除绑定的函数 default |
-
-
-• **remove**(`func`): `void`
-
-删除代理函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  删除绑定的函数 default |
-
-
-• **remove**(`func`): `void`
-
-删除代理函数
-
-**`Effect`**
 
 
 #### Parameters

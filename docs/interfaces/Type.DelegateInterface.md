@@ -42,46 +42,6 @@
 | `func` | `T` |  绑定的函数 default: |
 
 
-• **bind**(`func`): `void` 
-
-绑定函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default: |
-
-
-• **bind**(`func`): `void`
-
-绑定函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default: |
-
-
-• **bind**(`func`): `void`
-
-绑定函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default: |
-
-
 ___
 
 ### execute <Score text="execute" /> 
@@ -89,61 +49,6 @@ ___
 • **execute**(`...arg`): `ReturnType`<`T`\> 
 
 执行绑定函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  执行参数 |
-
-#### Returns
-
-`ReturnType`<`T`\>
-
-执行参数类型
-
-• **execute**(`...arg`): `ReturnType`<`T`\> 
-
-执行绑定函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  执行参数 |
-
-#### Returns
-
-`ReturnType`<`T`\>
-
-执行参数类型
-
-• **execute**(`...arg`): `ReturnType`<`T`\>
-
-执行绑定函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...arg` | `Parameters`<`T`\> |  执行参数 |
-
-#### Returns
-
-`ReturnType`<`T`\>
-
-执行参数类型
-
-• **execute**(`...arg`): `ReturnType`<`T`\>
-
-执行绑定函数
-
-**`Effect`**
 
 
 #### Parameters
@@ -173,43 +78,6 @@ ___
 
 是否绑定
 
-• **isBound**(): `boolean` 
-
-是否绑定
-
-
-#### Returns
-
-`boolean`
-
-是否绑定
-
-• **isBound**(): `boolean`
-
-是否绑定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否绑定
-
-• **isBound**(): `boolean`
-
-是否绑定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否绑定
-
 ___
 
 ### unbind <Score text="unbind" /> 
@@ -217,27 +85,5 @@ ___
 • **unbind**(): `void` 
 
 解绑函数
-
-
-
-• **unbind**(): `void` 
-
-解绑函数
-
-
-
-• **unbind**(): `void`
-
-解绑函数
-
-**`Effect`**
-
-
-
-• **unbind**(): `void`
-
-解绑函数
-
-**`Effect`**
 
 

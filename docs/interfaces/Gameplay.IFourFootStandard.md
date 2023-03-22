@@ -40,69 +40,6 @@
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
-• **changeSomatotype**(`value`, `sync`): `void`
-
-切换体型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) |  体型枚举 SomatotypeFourFootStandard |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **changeSomatotype**(`value`, `sync`): `void`
-
-切换体型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) |  体型枚举 SomatotypeFourFootStandard |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **changeSomatotype**(`value`, `sync`): `void`
-
-切换体型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) |  体型枚举 SomatotypeFourFootStandard |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
 ___
 
 ### getSomatotype <Score text="getSomatotype" /> 
@@ -110,43 +47,6 @@ ___
 • **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) 
 
 获取当前的体型类型
-
-
-#### Returns
-
-[`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md)
-
-体型类型 SomatotypeFourFootStandard
-
-• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) 
-
-获取当前的体型类型
-
-
-#### Returns
-
-[`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md)
-
-体型类型 SomatotypeFourFootStandard
-
-• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md)
-
-获取当前的体型类型
-
-**`Effect`**
-
-
-#### Returns
-
-[`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md)
-
-体型类型 SomatotypeFourFootStandard
-
-• **getSomatotype**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md)
-
-获取当前的体型类型
-
-**`Effect`**
 
 
 #### Returns
@@ -170,43 +70,6 @@ ___
 
 模型GUID
 
-• **getWholeBody**(): `string` 
-
-获取全身模型
-
-
-#### Returns
-
-`string`
-
-模型GUID
-
-• **getWholeBody**(): `string`
-
-获取全身模型
-
-**`Effect`**
-
-
-#### Returns
-
-`string`
-
-模型GUID
-
-• **getWholeBody**(): `string`
-
-获取全身模型
-
-**`Effect`**
-
-
-#### Returns
-
-`string`
-
-模型GUID
-
 ___
 
 ### setWholeBody <Score text="setWholeBody" /> 
@@ -220,69 +83,6 @@ ___
 当 sync = true 对象是单端对象，调用仅本地客户端有效
 
 :::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWholeBody**(`GUID`, `sync`): `void`
-
-设置全身模型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWholeBody**(`GUID`, `sync`): `void`
-
-设置全身模型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` | 模型GUID |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-• **setWholeBody**(`GUID`, `sync`): `void`
-
-设置全身模型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-**`Effect`**
 
 
 #### Parameters

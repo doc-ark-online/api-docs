@@ -38,63 +38,6 @@
 | `TimeOut` | `number` | 最大延迟时间 |
 
 
-• **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **addUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
 ___
 
 ### addUserGameCoinWithEnv <Score text="addUserGameCoinWithEnv" /> 
@@ -102,69 +45,6 @@ ___
 • **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 添加游戏币接口
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **addUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-添加游戏币接口
-
-**`Effect`**
 
 
 #### Parameters
@@ -203,66 +83,6 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 
 
-• **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID,不会再自动获取游戏ID,以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID,不会再自动获取游戏ID,以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **addUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-添加游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID,不会再自动获取游戏ID,以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
 ___
 
 ### decreaseUserGameCoin <Score text="decreaseUserGameCoin" /> 
@@ -284,63 +104,6 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 
 
-• **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **decreaseUserGameCoin**(`Delegate`, `Token`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
 ___
 
 ### decreaseUserGameCoinWithEnv <Score text="decreaseUserGameCoinWithEnv" /> 
@@ -348,69 +111,6 @@ ___
 • **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 减少游戏币接口
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账户 |
-| `CoinNum` | `number` | 数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境,只要不为空那么一定会以写入的环境为主(不为online 其余皆为test) |
-
-
-• **decreaseUserGameCoinWithEnv**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`, `Env`): `void`
-
-减少游戏币接口
-
-**`Effect`**
 
 
 #### Parameters
@@ -449,66 +149,6 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 
 
-• **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **decreaseUserGameCoinWithGameID**(`Delegate`, `Token`, `GameId`, `UserAccount`, `CoinNum`, `Note`, `TimeOut`): `void`
-
-减少游戏币接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 反馈添加是否成功的代理 |
-| `Token` | `string` | Token字符串 |
-| `GameId` | `string` | 自定义游戏ID 不会再自动获取游戏ID 以传入的为准 |
-| `UserAccount` | `string` | 用户账号 |
-| `CoinNum` | `number` | 游戏币数量 |
-| `Note` | `string` | 注释 |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
 ___
 
 ### queryUserGameCoin <Score text="queryUserGameCoin" /> 
@@ -516,57 +156,6 @@ ___
 • **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void` <Badge type="tip" text="client" />
 
 查询账户的游戏币数量
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **queryUserGameCoin**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
 
 
 #### Parameters
@@ -599,60 +188,6 @@ ___
 | `Env` | `string` | 环境 |
 
 
-• **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 签名 |
-| `GameId` | `string` | 游戏Id |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
-• **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 签名 |
-| `GameId` | `string` | 游戏Id |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
-• **queryUserGameCoinWithEnv**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 签名 |
-| `GameId` | `string` | 游戏Id |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
 ___
 
 ### queryUserGameCoinWithGameID <Score text="queryUserGameCoinWithGameID" /> 
@@ -672,57 +207,6 @@ ___
 | `TimeOut` | `number` | 最大延迟时间 |
 
 
-• **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账号 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账号 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
-• **queryUserGameCoinWithGameID**(`Delegate`, `Account`, `GameId`, `TimeOut`): `void`
-
-查询账户的游戏币数量
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回游戏币数量的代理 |
-| `Account` | `string` | 用户账号 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-
-
 ___
 
 ### queryUserNFT <Score text="queryUserNFT" /> 
@@ -730,60 +214,6 @@ ___
 • **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void` <Badge type="tip" text="client" />
 
 查询NFT接口
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回NFT 账户数据,不是200也会返回相关错误 |
-| `Account` | `string` | 账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
-• **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询NFT接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回NFT 账户数据,不是200也会返回相关错误 |
-| `Account` | `string` | 账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
-• **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询NFT接口
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回NFT 账户数据,不是200也会返回相关错误 |
-| `Account` | `string` | 账户 |
-| `GameId` | `string` | 游戏ID |
-| `TimeOut` | `number` | 最大延迟时间 |
-| `Env` | `string` | 环境 |
-
-
-• **queryUserNFT**(`Delegate`, `Account`, `GameId`, `TimeOut`, `Env`): `void`
-
-查询NFT接口
-
-**`Effect`**
 
 
 #### Parameters

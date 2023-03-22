@@ -104,63 +104,6 @@ ___
 `boolean`
 
 未加载将返回false
-
-• **assetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-• **assetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-• **assetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
 ___
 
 ### asyncDownloadAsset <Score text="asyncDownloadAsset" /> 
@@ -181,63 +124,6 @@ ___
 `Promise`<`boolean`\>
 
 下载失败将返回false
-
-• **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\>
-
-资源下载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-下载失败将返回false
-
-• **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\>
-
-资源下载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-下载失败将返回false
-
-• **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\>
-
-资源下载
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-下载失败将返回false
 ___
 
 ### bindButton <Score text="bindButton" /> 
@@ -245,51 +131,6 @@ ___
 • **bindButton**(`key`, `Widget`): `void` <Badge type="tip" text="client" />
 
 绑定按键
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
-
-
-• **bindButton**(`key`, `Widget`): `void`
-
-绑定按键
-
-**`Effect`**
 
 
 #### Parameters
@@ -321,69 +162,6 @@ ___
 `number`
 
 计算结果
-
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **clamp**(`a`, `min`, `max`): `number`
-
-数值a在最小值和最大值之间，包括最小值和最大值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
 ___
 
 ### clearDelayExecute <Score text="clearDelayExecute" /> 
@@ -391,48 +169,6 @@ ___
 • **clearDelayExecute**(`id`): `void` 
 
 清除delayExecute
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  delayExecute方法返回的ID |
-
-
-• **clearDelayExecute**(`id`): `void`
-
-清除delayExecute
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  delayExecute方法返回的ID |
-
-
-• **clearDelayExecute**(`id`): `void`
-
-清除delayExecute
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  delayExecute方法返回的ID |
-
-
-• **clearDelayExecute**(`id`): `void`
-
-清除delayExecute
-
-**`Effect`**
 
 
 #### Parameters
@@ -456,48 +192,6 @@ ___
 | :------ | :------ | :------ |
 | `id` | `number` |  setInterval方法返回的ID |
 
-
-• **clearInterval**(`id`): `void`
-
-清除setInterval
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  setInterval方法返回的ID |
-
-
-• **clearInterval**(`id`): `void`
-
-清除setInterval
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  setInterval方法返回的ID |
-
-
-• **clearInterval**(`id`): `void`
-
-清除setInterval
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  setInterval方法返回的ID |
-
 ___
 
 ### clipboardCopy <Score text="clipboardCopy" /> 
@@ -513,48 +207,6 @@ ___
 | :------ | :------ | :------ |
 | `text` | `string` | 复制到剪切板的文本 |
 
-
-• **clipboardCopy**(`text`): `void`
-
-文本复制，将字符串复制到剪切板
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` | 复制到剪切板的文本 |
-
-
-• **clipboardCopy**(`text`): `void`
-
-文本复制，将字符串复制到剪切板
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` | 复制到剪切板的文本 |
-
-
-• **clipboardCopy**(`text`): `void`
-
-文本复制，将字符串复制到剪切板
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` | 复制到剪切板的文本 |
-
 ___
 
 ### clipboardPaste <Score text="clipboardPaste" /> 
@@ -562,45 +214,6 @@ ___
 • **clipboardPaste**(): `string` <Badge type="tip" text="client" />
 
 文本粘贴，获取剪切板的文本
-
-
-#### Returns
-
-`string`
-
-剪切板的文本
-
-• **clipboardPaste**(): `string`
-
-文本粘贴，获取剪切板的文本
-
-**`Effect`**
-
-
-#### Returns
-
-`string`
-
-剪切板的文本
-
-• **clipboardPaste**(): `string`
-
-文本粘贴，获取剪切板的文本
-
-**`Effect`**
-
-
-#### Returns
-
-`string`
-
-剪切板的文本
-
-• **clipboardPaste**(): `string`
-
-文本粘贴，获取剪切板的文本
-
-**`Effect`**
 
 
 #### Returns
@@ -628,63 +241,6 @@ ___
 `number`
 
 cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
-• **cos**(`a`): `number`
-
-计算cos值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
 ___
 
 ### degreesToRadians <Score text="degreesToRadians" /> 
@@ -692,63 +248,6 @@ ___
 • **degreesToRadians**(`a`): `number` 
 
 根据输入的度数返回弧度值
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
-• **degreesToRadians**(`a`): `number`
-
-根据输入的度数返回弧度值
-
-**`Effect`**
 
 
 #### Parameters
@@ -783,66 +282,6 @@ ___
 `number`
 
 用于停止的ID
-
-• **delayExecute**(`handler`, `frameNum?`): `number`
-
-延迟一定帧数执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  执行的方法 |
-| `frameNum?` | `number` |  要延迟的帧数 default: 1 |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
-• **delayExecute**(`handler`, `frameNum?`): `number`
-
-延迟一定帧数执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  执行的方法 |
-| `frameNum?` | `number` |  要延迟的帧数 default: 1 |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
-• **delayExecute**(`handler`, `frameNum?`): `number`
-
-延迟一定帧数执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  执行的方法 |
-| `frameNum?` | `number` |  要延迟的帧数 default: 1 |
-
-#### Returns
-
-`number`
-
-用于停止的ID
 ___
 
 ### delaySecond <Score text="delaySecond" /> 
@@ -850,63 +289,6 @@ ___
 • **delaySecond**(`second`): `Promise`<`void`\> 
 
 延迟一定秒数,用于异步方法中间的等待，不可取消
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `second` | `number` |  时间(单位：秒) |
-
-#### Returns
-
-`Promise`<`void`\>
-
-Promise
-
-• **delaySecond**(`second`): `Promise`<`void`\>
-
-延迟一定秒数,用于异步方法中间的等待，不可取消
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `second` | `number` |  时间(单位：秒) |
-
-#### Returns
-
-`Promise`<`void`\>
-
-Promise
-
-• **delaySecond**(`second`): `Promise`<`void`\>
-
-延迟一定秒数,用于异步方法中间的等待，不可取消
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `second` | `number` |  时间(单位：秒) |
-
-#### Returns
-
-`Promise`<`void`\>
-
-Promise
-
-• **delaySecond**(`second`): `Promise`<`void`\>
-
-延迟一定秒数,用于异步方法中间的等待，不可取消
-
-**`Effect`**
 
 
 #### Parameters
@@ -940,63 +322,6 @@ ___
 `number`
 
 number（单位：秒）
-
-• **delayTime**(): `number`
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
-
-• **delayTime**(): `number`
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
-
-• **delayTime**(): `number`
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-**`Effect`**
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
 ___
 
 ### elapsedTime <Score text="elapsedTime" /> 
@@ -1004,63 +329,6 @@ ___
 • **elapsedTime**(): `number` 
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
-
-
-::: warning Precautions
-
-在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
-
-:::
-
-#### Returns
-
-`number`
-
-自游戏运行后所经过的总时长。
-
-• **elapsedTime**(): `number`
-
-返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
-
-**`Effect`**
-
-
-::: warning Precautions
-
-在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
-
-:::
-
-#### Returns
-
-`number`
-
-自游戏运行后所经过的总时长。
-
-• **elapsedTime**(): `number`
-
-返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
-
-**`Effect`**
-
-
-::: warning Precautions
-
-在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
-
-:::
-
-#### Returns
-
-`number`
-
-自游戏运行后所经过的总时长。
-
-• **elapsedTime**(): `number`
-
-返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
-
-**`Effect`**
 
 
 ::: warning Precautions
@@ -1089,48 +357,6 @@ ___
 | :------ | :------ | :------ |
 | `canInteract` | `boolean` | 可交互 |
 
-
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
-
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
-
-• **enableCursorInteractWithUI**(`canInteract`): `void`
-
-设置鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `canInteract` | `boolean` | 可交互 |
-
 ___
 
 ### enableCursorLock <Score text="enableCursorLock" /> 
@@ -1138,48 +364,6 @@ ___
 • **enableCursorLock**(`isEnableMouseLock`): `void` <Badge type="tip" text="client" />
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnableMouseLock` | `boolean` | 是否开始shift键功能,此函数不会直接设置鼠标状态 |
-
-
-• **enableCursorLock**(`isEnableMouseLock`): `void`
-
-设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
-
-**`Effect`**
 
 
 #### Parameters
@@ -1209,66 +393,6 @@ ___
 `number`
 
 数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
-• **fmod**(`x`, `y`): `number`
-
-返回 数值x 除以 数值y 的余数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
 ___
 
 ### format <Score text="format" /> 
@@ -1276,84 +400,6 @@ ___
 • **format**(`str`, `...param`): `string` 
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
-
-
-使用示例:格式化字符串用法
-```ts
-// targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要处理的字符串 |
-| `...param` | `any`[] |  替换序列 |
-
-#### Returns
-
-`string`
-
-新的字符串
-
-• **format**(`str`, `...param`): `string`
-
-将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
-
-**`Effect`**
-
-
-使用示例:格式化字符串用法
-```ts
-// targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要处理的字符串 |
-| `...param` | `any`[] |  替换序列 |
-
-#### Returns
-
-`string`
-
-新的字符串
-
-• **format**(`str`, `...param`): `string`
-
-将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
-
-**`Effect`**
-
-
-使用示例:格式化字符串用法
-```ts
-// targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要处理的字符串 |
-| `...param` | `any`[] |  替换序列 |
-
-#### Returns
-
-`string`
-
-新的字符串
-
-• **format**(`str`, `...param`): `string`
-
-将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
-
-**`Effect`**
 
 
 使用示例:格式化字符串用法
@@ -1400,81 +446,6 @@ since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoad
 `boolean`
 
 不存在将返回false
-
-• **isAssetExist**(`InAssetId`): `boolean`
-
-资源是否存在
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
-
-• **isAssetExist**(`InAssetId`): `boolean`
-
-资源是否存在
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
-
-• **isAssetExist**(`InAssetId`): `boolean`
-
-资源是否存在
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
 ___
 
 ### isAssetLoaded <Score text="isAssetLoaded" /> 
@@ -1482,81 +453,6 @@ ___
 • **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
 
 资源是否加载
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-• **isAssetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-• **isAssetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-• **isAssetLoaded**(`InAssetId`): `boolean`
-
-资源是否加载
-
-**`Effect`**
 
 
 ::: danger Deprecated
@@ -1590,45 +486,6 @@ ___
 `boolean`
 
 是否能与UI交互
-
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
-
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
-
-• **isCursorInteractiveWithUI**(): `boolean`
-
-获取鼠标指针是否能与UI交互
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否能与UI交互
 ___
 
 ### isCursorLockEnabled <Score text="isCursorLockEnabled" /> 
@@ -1636,45 +493,6 @@ ___
 • **isCursorLockEnabled**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可切换
-
-• **isCursorLockEnabled**(): `boolean`
-
-获取是否允许通过快捷方式切换鼠标的使用组合模式
-
-**`Effect`**
 
 
 #### Returns
@@ -1696,45 +514,6 @@ ___
 `boolean`
 
 是否锁定
-
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
-
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
-
-• **isCursorLocked**(): `boolean`
-
-获取鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否锁定
 ___
 
 ### isCursorVisible <Score text="isCursorVisible" /> 
@@ -1742,45 +521,6 @@ ___
 • **isCursorVisible**(): `boolean` <Badge type="tip" text="client" />
 
 获取鼠标指针是否可见
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Returns
-
-`boolean`
-
-是否可见
-
-• **isCursorVisible**(): `boolean`
-
-获取鼠标指针是否可见
-
-**`Effect`**
 
 
 #### Returns
@@ -1808,63 +548,6 @@ ___
 `boolean`
 
 结果
-
-• **isEmpty**(`str`): `boolean`
-
-判断字符串是否为空(null或"")
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要判断的字符串 |
-
-#### Returns
-
-`boolean`
-
-结果
-
-• **isEmpty**(`str`): `boolean`
-
-判断字符串是否为空(null或"")
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要判断的字符串 |
-
-#### Returns
-
-`boolean`
-
-结果
-
-• **isEmpty**(`str`): `boolean`
-
-判断字符串是否为空(null或"")
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要判断的字符串 |
-
-#### Returns
-
-`boolean`
-
-结果
 ___
 
 ### lerp <Score text="lerp" /> 
@@ -1872,87 +555,6 @@ ___
 • **lerp**(`a`, `b`, `alpha`): `number` 
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
-
-
-::: warning Precautions
-
-alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
-• **lerp**(`a`, `b`, `alpha`): `number`
-
-基于 alpha 在 数值a 和 数值b 之间线性插值
-
-**`Effect`**
 
 
 ::: warning Precautions
@@ -1999,81 +601,6 @@ since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDown
 
 `boolean`
 
-未加载成功将返回false
-
-• **loadAsset**(`InAssetId`): `boolean`
-
-资源加载
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载成功将返回false
-
-• **loadAsset**(`InAssetId`): `boolean`
-
-资源加载
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载成功将返回false
-
-• **loadAsset**(`InAssetId`): `boolean`
-
-资源加载
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
 ___
 
 ### maskWordCheck <Score text="maskWordCheck" /> 
@@ -2081,63 +608,6 @@ ___
 • **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` |  要检测的文本 |
-
-#### Returns
-
-`Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-检测结果回调
-
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-屏蔽字检测
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` |  要检测的文本 |
-
-#### Returns
-
-`Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-检测结果回调
-
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-屏蔽字检测
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` |  要检测的文本 |
-
-#### Returns
-
-`Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-检测结果回调
-
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
-
-屏蔽字检测
-
-**`Effect`**
 
 
 #### Parameters
@@ -2184,66 +654,6 @@ ___
 [`EventListener`](../classes/Events.EventListener.md)
 
 返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyDown**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-点击
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
 ___
 
 ### onKeyPress <Score text="onKeyPress" /> 
@@ -2251,66 +661,6 @@ ___
 • **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md) 
 
 键盘输入事件-按压
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyPress**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-按压
-
-**`Effect`**
 
 
 #### Parameters
@@ -2346,66 +696,6 @@ ___
 [`EventListener`](../classes/Events.EventListener.md)
 
 返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-• **onKeyUp**(`Key`, `listener`): [`EventListener`](../classes/Events.EventListener.md)
-
-键盘输入事件-抬起
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Key` | [`Keys`](../enums/Type.Keys.md) | 按键值 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
 ___
 
 ### parseTime <Score text="parseTime" /> 
@@ -2413,66 +703,6 @@ ___
 • **parseTime**(`timeData`, `format?`): `string` 
 
 格式化时间戳
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeData` | `Date` | 标准时间, 时间戳等 |
-| `format?` | `string` | 日期字符造串 default:outer |
-
-#### Returns
-
-`string`
-
-格式化后时间字符串
-
-• **parseTime**(`timeData`, `format?`): `string`
-
-格式化时间戳
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeData` | `Date` | 标准时间, 时间戳等 |
-| `format?` | `string` | 日期字符造串 default:outer |
-
-#### Returns
-
-`string`
-
-格式化后时间字符串
-
-• **parseTime**(`timeData`, `format?`): `string`
-
-格式化时间戳
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeData` | `Date` | 标准时间, 时间戳等 |
-| `format?` | `string` | 日期字符造串 default:outer |
-
-#### Returns
-
-`string`
-
-格式化后时间字符串
-
-• **parseTime**(`timeData`, `format?`): `string`
-
-格式化时间戳
-
-**`Effect`**
 
 
 #### Parameters
@@ -2508,66 +738,6 @@ ___
 [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
 
 屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
-
-• **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-获取角色在世界中的位置，投射到屏幕上
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldLocation` | [`Vector`](../classes/Type.Vector.md) |  世界坐标 |
-| `playerViewportRelative?` | `boolean` |  这是否应该相对于播放器视口子区域（在分割屏幕中使用播放器附加的小部件或纵横比受限时有用）default:false |
-
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果，无WorldDirection，为默认值Type.Vector.ZERO
 ___
 
 ### radiansToDegrees <Score text="radiansToDegrees" /> 
@@ -2588,63 +758,6 @@ ___
 `number`
 
 度数
-
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
-• **radiansToDegrees**(`a`): `number`
-
-根据输入的弧度值返回度数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
 ___
 
 ### randomFloat <Score text="randomFloat" /> 
@@ -2652,66 +765,6 @@ ___
 • **randomFloat**(`min`, `max`): `number` 
 
 获取随机范围内浮点数[包含min, 不包含max)
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
-• **randomFloat**(`min`, `max`): `number`
-
-获取随机范围内浮点数[包含min, 不包含max)
-
-**`Effect`**
 
 
 #### Parameters
@@ -2747,66 +800,6 @@ ___
 `number`
 
 随机范围内的整数
-
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
-• **randomInt**(`min`, `max`): `number`
-
-获取随机范围内整数[包含min, 不包含max)
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
 ___
 
 ### setCursorLocked <Score text="setCursorLocked" /> 
@@ -2822,48 +815,6 @@ ___
 | :------ | :------ | :------ |
 | `isLock` | `boolean` | 是否锁定 |
 
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
-
-• **setCursorLocked**(`isLock`): `void`
-
-设置鼠标指针是否锁定
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isLock` | `boolean` | 是否锁定 |
-
 ___
 
 ### setCursorVisible <Score text="setCursorVisible" /> 
@@ -2871,48 +822,6 @@ ___
 • **setCursorVisible**(`isVisible`): `void` <Badge type="tip" text="client" />
 
 设置鼠标指针是否可见
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isVisible` | `boolean` | 是否可见 |
-
-
-• **setCursorVisible**(`isVisible`): `void`
-
-设置鼠标指针是否可见
-
-**`Effect`**
 
 
 #### Parameters
@@ -2943,69 +852,6 @@ ___
 `number`
 
 用于停止的ID
-
-• **setInterval**(`handler`, `timeout`, `exitJudge?`): `number`
-
-按一定时间间隔执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  要执行的方法 |
-| `timeout` | `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` | () => `boolean` |  退出的判断方法 返回true停止 default: null |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
-• **setInterval**(`handler`, `timeout`, `exitJudge?`): `number`
-
-按一定时间间隔执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  要执行的方法 |
-| `timeout` | `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` | () => `boolean` |  退出的判断方法 返回true停止 default: null |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
-• **setInterval**(`handler`, `timeout`, `exitJudge?`): `number`
-
-按一定时间间隔执行方法
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  要执行的方法 |
-| `timeout` | `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` | () => `boolean` |  退出的判断方法 返回true停止 default: null |
-
-#### Returns
-
-`number`
-
-用于停止的ID
 ___
 
 ### setMouseLockable <Score text="setMouseLockable" /> 
@@ -3021,48 +867,6 @@ ___
 | :------ | :------ | :------ |
 | `can` | `boolean` | 是否可以锁定鼠标 |
 
-
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
-
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
-
-• **setMouseLockable**(`can`): `void`
-
-设置是否可以锁定鼠标
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `can` | `boolean` | 是否可以锁定鼠标 |
-
 ___
 
 ### sin <Score text="sin" /> 
@@ -3070,63 +874,6 @@ ___
 • **sin**(`a`): `number` 
 
 计算sin值
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
-• **sin**(`a`): `number`
-
-计算sin值
-
-**`Effect`**
 
 
 #### Parameters
@@ -3159,63 +906,6 @@ ___
 
 `number`
 
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
-tan值
-
-• **tan**(`a`): `number`
-
-计算tan值
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
-
-#### Returns
-
-`number`
-
 ___
 
 ### time <Score text="time" /> 
@@ -3235,63 +925,6 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 `number`
 
-（UNIX 纪元）开始所经过的秒数。
-
-• **time**(): `number`
-
-返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
-
-**`Effect`**
-
-
-::: warning Precautions
-
-UNIX 纪元的开始日期为 1970 年 1 月 1 日。
-
-:::
-
-#### Returns
-
-`number`
-
-（UNIX 纪元）开始所经过的秒数。
-
-• **time**(): `number`
-
-返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
-
-**`Effect`**
-
-
-::: warning Precautions
-
-UNIX 纪元的开始日期为 1970 年 1 月 1 日。
-
-:::
-
-#### Returns
-
-`number`
-
-（UNIX 纪元）开始所经过的秒数。
-
-• **time**(): `number`
-
-返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
-
-**`Effect`**
-
-
-::: warning Precautions
-
-UNIX 纪元的开始日期为 1970 年 1 月 1 日。
-
-:::
-
-#### Returns
-
-`number`
-
 ___
 
 ### unbindButton <Score text="unbindButton" /> 
@@ -3299,48 +932,6 @@ ___
 • **unbindButton**(`key`): `void` <Badge type="tip" text="client" />
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-
-
-• **unbindButton**(`key`): `void`
-
-此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
-
-**`Effect`**
 
 
 #### Parameters
