@@ -156,7 +156,7 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 
 ::: warning Precautions
 
-如果场景中存在大量闲置NPC,暂时不会参与到游戏中，可使用设置flase节约一些额外的性能消耗，当NPC需要参与到游戏中时设置true开启对应的功能。
+如果场景中存在大量闲置NPC,暂时不会参与到游戏中，可使用设置false节约一些额外的性能消耗，当NPC需要参与到游戏中时设置true开启对应的功能。
 
 :::
 
@@ -164,7 +164,7 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `enable` | `boolean` |  true 开启角色计算 flase 关闭角色计算 |
+| `enable` | `boolean` |  true 开启角色计算 false 关闭角色计算 |
 
 
 
@@ -187,5 +187,5 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` |  true 开启角色移动计算 flase 关闭角色移动计算 |
+| `value` | `boolean` |  true 开启角色移动计算 false 关闭角色移动计算 |
 
