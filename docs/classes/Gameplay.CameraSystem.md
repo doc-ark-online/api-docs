@@ -18,6 +18,7 @@
 
 | Properties |
 | :-----|
+| **[currentCameraMode](Gameplay.CameraSystem.md#currentcameramode)**: [`CameraMode`](../enums/Gameplay.CameraMode.md) <br> 当前摄像机模式|
 | **[enableFadeEffect](Gameplay.CameraSystem.md#enablefadeeffect)**: `boolean` <br> 设置是否开启透明效果|
 | **[occludeCameraActor](Gameplay.CameraSystem.md#occludecameraactor)**: `any` <br> 摄像机与角色之间的物体|
 
@@ -84,6 +85,14 @@
 | **[switchCameraMode](Gameplay.CameraSystem.md#switchcameramode)**(`newCameraMode`: [`CameraMode`](../enums/Gameplay.CameraMode.md), `enableRealEffect?`: `boolean`): `void` <br> 切换摄像机模式(第一人称、第三人称、俯视角、过肩视角...)|
 
 ## Properties
+
+### currentCameraMode <Score text="currentCameraMode" /> 
+
+• **currentCameraMode**: [`CameraMode`](../enums/Gameplay.CameraMode.md)
+
+当前摄像机模式
+
+___
 
 ### enableFadeEffect <Score text="enableFadeEffect" /> 
 

@@ -5,17 +5,10 @@ Scripiting
 ## Table of contents
 | Classes |
 | :-----|
-| [Action](../classes/Type.Action.md) <br> 任意参数的代理 |
-| [Action1](../classes/Type.Action1.md) <br> 一个参数的代理 |
-| [Action2](../classes/Type.Action2.md) <br> 两个参数的代理 |
-| [Action3](../classes/Type.Action3.md) <br> 三个参数的代理 |
-| [Delegate](../classes/Type.Delegate.md) <br> 委托 |
 | [EditorMode](../classes/MobileEditor.EditorMode.md) <br> 移动编辑器模式切换 |
 | [EventListener](../classes/Events.EventListener.md) <br> 事件监听器 |
 | [GestureDelegate](../classes/MobileEditor.GestureDelegate.md) <br> 手势代理类 |
 | [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 |
-| [MulticastDelegate](../classes/Type.MulticastDelegate.md) <br> 多播委托接口 |
-| [MulticastGameObjectDelegate](../classes/Type.MulticastGameObjectDelegate.md) <br> 广播代理 |
 | [UGCService](../classes/Service.UGCService.md) <br> 用户建造服务 |
 
 
@@ -23,17 +16,11 @@ Scripiting
 | :-----|
 | [DispatchEventResult](../enums/Events.DispatchEventResult.md) <br> 事件发送的结果 |
 | [GizmoCoordinateType](../enums/MobileEditor.GizmoCoordinateType.md) <br> gizmo坐标轴类型 |
-| [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo类型 |
+| [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo模式 |
+| [GizmoSpaceType](../enums/MobileEditor.GizmoSpaceType.md) <br> gizmo空间 |
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方 |
 | [ReleaseStatus](../enums/MobileEditor.ReleaseStatus.md) <br> UGC 发布的状态 |
 | [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选 |
-
-
-| Interfaces |
-| :-----|
-| [DelegateInterface](../interfaces/Type.DelegateInterface.md) <br> 委托接口 |
-| [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md) <br> 多播委托接口 |
-| [TypeName](../interfaces/Type.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:{new():T}) 可以写成 fun`<T>`(c:Class`<T>`) |
 
 
 | Modules Functions |
@@ -58,8 +45,9 @@ Scripiting
 | **[beginActorTransformChange](Scripiting.Scripiting.md#beginactortransformchange)**(`target`: `Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](Scripiting.Scripiting.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/Type.Vector.md), `deltaScale`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
 | **[captureAvatar](Scripiting.Scripiting.md#captureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
-| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[clearUselessLocalMaterials](Scripiting.Scripiting.md#clearuselesslocalmaterials)**(`IgnoreMatGuids?`: `string`[]): `void` <br> 清除项目中没有引用的本地材质资源|
 | **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[convertScreenLocationToWorldSpace](Scripiting.Scripiting.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[dispatchLocal](Scripiting.Scripiting.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
 | **[dispatchToAllClient](Scripiting.Scripiting.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
 | **[dispatchToClient](Scripiting.Scripiting.md#dispatchtoclient)**(`player`: [`Player`](../classes/Gameplay.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
@@ -70,6 +58,7 @@ Scripiting
 | **[getEditorPawnRotation](Scripiting.Scripiting.md#geteditorpawnrotation)**(): [`Rotation`](../classes/Type.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
 | **[getGizmo](Scripiting.Scripiting.md#getgizmo)**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](Scripiting.Scripiting.md#getheadsculpture)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
+| **[getLocalMaterialsCount](Scripiting.Scripiting.md#getlocalmaterialscount)**(): `number` <br> 获取创建的本地材质数量|
 | **[getOneFingerMoveGestureDelegate](Scripiting.Scripiting.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取单指滑动的代理|
 | **[getPinchGestureDelegate](Scripiting.Scripiting.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 获取挤压手势的代理|
 | **[getSavedDir](Scripiting.Scripiting.md#getsaveddir)**(): `string` <br> 获取截图的保存路径|
@@ -611,25 +600,25 @@ ___
 
 ___
 
-### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+### clearUselessLocalMaterials <Score text="clearUselessLocalMaterials" /> 
 
-• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
+• **clearUselessLocalMaterials**(`IgnoreMatGuids?`): `void` 
 
-将二维屏幕位置转换为世界空间三维位置和方向
+清除项目中没有引用的本地材质资源
 
+
+::: warning Precautions
+
+只在MobileEditor模式下调用生效
+
+:::
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
-| `ScreenY` | `number` |  屏幕Y轴坐标值 |
+| `IgnoreMatGuids?` | `string`[] | 清除时即使未使用也不清除的材质资源Guid default:[] |
 
-#### Returns
-
-[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
-
-屏幕坐标转换结果
 ___
 
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
@@ -645,6 +634,27 @@ ___
 | :------ | :------ | :------ |
 | `screenX` | `number` |  屏幕X轴坐标值 default: |
 | `screenY` | `number` |  屏幕Y轴坐标值 |
+
+#### Returns
+
+[`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
+
+屏幕坐标转换结果
+___
+
+### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
+
+• **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
+
+将二维屏幕位置转换为世界空间三维位置和方向
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ScreenX` | `number` |  屏幕X轴坐标值 default: |
+| `ScreenY` | `number` |  屏幕Y轴坐标值 |
 
 #### Returns
 
@@ -848,6 +858,26 @@ ___
 | `fileName` | `string` |  文件名 |
 | `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
 
+___
+
+### getLocalMaterialsCount <Score text="getLocalMaterialsCount" /> 
+
+• **getLocalMaterialsCount**(): `number` 
+
+获取创建的本地材质数量
+
+
+::: warning Precautions
+
+只在MobileEditor模式下调用生效
+
+:::
+
+#### Returns
+
+`number`
+
+本地材质数量
 ___
 
 ### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 

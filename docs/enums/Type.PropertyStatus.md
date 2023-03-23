@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / PropertyStatus
+[Datatype](../groups/Datatype.Datatype.md) / PropertyStatus
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 

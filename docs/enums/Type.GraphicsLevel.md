@@ -1,4 +1,4 @@
-[Settings](../groups/Settings.Settings.md) / GraphicsLevel
+[Datatype](../groups/Datatype.Datatype.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 

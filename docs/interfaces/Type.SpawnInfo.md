@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / SpawnInfo
+[Datatype](../groups/Datatype.Datatype.md) / SpawnInfo
 
 # SpawnInfo <Badge type="tip" text="Interface" /> <Score text="SpawnInfo" />
 

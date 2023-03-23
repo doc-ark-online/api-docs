@@ -8,13 +8,13 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [AbilityStateControlType](enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [AdsState](enums/Service.AdsState.md) | 广告状态 | [Monetization](groups/Monetization.Monetization.md) |
+| [AdsState](enums/Service.AdsState.md) | 广告状态，调用show方法的时候可能返回的广告状态 | [Monetization](groups/Monetization.Monetization.md) |
 | [AdsType](enums/Service.AdsType.md) | 广告类型 | [Monetization](groups/Monetization.Monetization.md) |
 | [AnimSlot](enums/Gameplay.AnimSlot.md) | 动画插槽 | [Animations](groups/Animations.Animations.md) |
 | [AnimationMode](enums/Gameplay.AnimationMode.md) | 动画模式 | [Animations](groups/Animations.Animations.md) |
 | [AppearanceType](enums/Gameplay.AppearanceType.md) | 形象类型 | [Avatar](groups/Avatar.Avatar.md) |
 | [AreaClass](enums/Gameplay.AreaClass.md) | 寻路区域屏障寻路计算类型 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [AssetType](enums/Type.AssetType.md) | 资源类型 | [Data](groups/Data.Data.md) |
+| [AssetType](enums/Type.AssetType.md) | 资源类型 | [Datatype](groups/Datatype.Datatype.md) |
 | [AttenuationDistanceModel](enums/Gameplay.AttenuationDistanceModel.md) | 音效衰减函数模型 | [Sounds](groups/Sounds.Sounds.md) |
 | [AttenuationShape](enums/Gameplay.AttenuationShape.md) | 音效衰减形状 | [Sounds](groups/Sounds.Sounds.md) |
 | [AxisType](enums/Gameplay.AxisType.md) | 轴标记 | [Physics](groups/Physics.Physics.md) |
@@ -38,7 +38,7 @@ Enums
 | [CameraMode](enums/Gameplay.CameraMode.md) | 摄像机模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [CameraProjectionMode](enums/Gameplay.CameraProjectionMode.md) | 摄像机镜头模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [CameraRotationMode](enums/Gameplay.CameraRotationMode.md) | 摄像机旋转模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [CollisionStatus](enums/Type.CollisionStatus.md) | 碰撞属性状态 | [Physics](groups/Physics.Physics.md) |
+| [CollisionStatus](enums/Type.CollisionStatus.md) | 碰撞属性状态 | [Datatype](groups/Datatype.Datatype.md) |
 | [CollisionType](enums/Gameplay.CollisionType.md) | 碰撞类型 | [Physics](groups/Physics.Physics.md) |
 | [CustomShapeType](enums/Gameplay.CustomShapeType.md) | 碰撞体形状类型 | [Avatar](groups/Avatar.Avatar.md) |
 
@@ -56,9 +56,9 @@ Enums
 | :-----| :-----| :-----|
 | [EInitialOscillatorOffset](enums/Gameplay.EInitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [Avatar](groups/Avatar.Avatar.md) |
 | [EOscillatorWaveform](enums/Gameplay.EOscillatorWaveform.md) | 振荡器波形 | [Avatar](groups/Avatar.Avatar.md) |
-| [EffectRangeShape2D](enums/Gameplay.EffectRangeShape2D.md) | 效果范围形状 | [Effects](groups/Effects.Effects.md) |
-| [EffectRangeShape3D](enums/Gameplay.EffectRangeShape3D.md) | 3D效果范围形状 | [Effects](groups/Effects.Effects.md) |
-| [EffectRangeType](enums/Gameplay.EffectRangeType.md) | 效果范围类型 | [Effects](groups/Effects.Effects.md) |
+| [EffectRangeShape2D](enums/Gameplay.EffectRangeShape2D.md) | 效果范围形状 | [Others](groups/Others.Others.md) |
+| [EffectRangeShape3D](enums/Gameplay.EffectRangeShape3D.md) | 3D效果范围形状 | [Others](groups/Others.Others.md) |
+| [EffectRangeType](enums/Gameplay.EffectRangeType.md) | 效果范围类型 | [Others](groups/Others.Others.md) |
 | [EquipmentStatus](enums/Gameplay.EquipmentStatus.md) | 装备状态 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ExpressionType](enums/Gameplay.ExpressionType.md) | 表情类型 | [Avatar](groups/Avatar.Avatar.md) |
 
@@ -68,8 +68,9 @@ Enums
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/Extension.GameObjPoolSourceType.md) | GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [Utility](groups/Utility.Utility.md) |
 | [GizmoCoordinateType](enums/MobileEditor.GizmoCoordinateType.md) | gizmo坐标轴类型 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [GizmoModeType](enums/MobileEditor.GizmoModeType.md) | gizmo类型 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [GraphicsLevel](enums/Type.GraphicsLevel.md) | 画质等级 | [Settings](groups/Settings.Settings.md) |
+| [GizmoModeType](enums/MobileEditor.GizmoModeType.md) | gizmo模式 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [GizmoSpaceType](enums/MobileEditor.GizmoSpaceType.md) | gizmo空间 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [GraphicsLevel](enums/Type.GraphicsLevel.md) | 画质等级 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## H
@@ -95,13 +96,13 @@ Enums
 ## K
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [Keys](enums/Type.Keys.md) | 按键Key值 | [Data](groups/Data.Data.md) |
+| [Keys](enums/Type.Keys.md) | 按键Key值 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## L
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [LanguageType](enums/Type.LanguageType.md) | 游戏语言 | [Settings](groups/Settings.Settings.md) |
+| [LanguageType](enums/Type.LanguageType.md) | 游戏语言 | [Datatype](groups/Datatype.Datatype.md) |
 | [LimitType](enums/Gameplay.LimitType.md) | 限制类型 | [Physics](groups/Physics.Physics.md) |
 
 
@@ -120,7 +121,7 @@ Enums
 ## N
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [NetStatus](enums/Type.NetStatus.md) | 同步状态 | [Data](groups/Data.Data.md) |
+| [NetStatus](enums/Type.NetStatus.md) | 同步状态 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## O
@@ -137,14 +138,14 @@ Enums
 | [ProjectileAccelerationEnableMode](enums/Gameplay.ProjectileAccelerationEnableMode.md) | 投掷物加速启用模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProjectileCollisionMode](enums/Gameplay.ProjectileCollisionMode.md) | 投掷物碰撞反馈模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProjectileLineStyle](enums/Gameplay.ProjectileLineStyle.md) | 投掷物轨迹绘制的显示风格 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [PropertyStatus](enums/Type.PropertyStatus.md) | 属性状态 | [Data](groups/Data.Data.md) |
+| [PropertyStatus](enums/Type.PropertyStatus.md) | 属性状态 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ReleaseStatus](enums/MobileEditor.ReleaseStatus.md) | UGC 发布的状态 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [RuntimePlatform](enums/Type.RuntimePlatform.md) | 运行平台 | [Utility](groups/Utility.Utility.md) |
+| [RuntimePlatform](enums/Type.RuntimePlatform.md) | 运行平台 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## S

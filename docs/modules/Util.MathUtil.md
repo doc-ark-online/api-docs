@@ -6,7 +6,7 @@
 
 | Variables |
 | :-----|
-| **[D2R](Util.MathUtil.md#d2r)**: `number` <br> 角度转换弧度参数|
+| **[D2R](Util.MathUtil.md#d2r)**: `number` <br> 角度转换弧度参数（Math.PI/180）|
 | **[DBL\_DECIMAL\_DIG](Util.MathUtil.md#dbl_decimal_dig)**: ``17`` <br> 序列化/反序列化浮点值所要求的十进制精度 (double)|
 | **[DBL\_DIG](Util.MathUtil.md#dbl_dig)**: ``15`` <br> 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (double)|
 | **[DBL\_EPSILON](Util.MathUtil.md#dbl_epsilon)**: ``2.220446049250313e-16`` <br> 1 和大于 1 的最小浮点数之间的差值。(double)|
@@ -44,7 +44,7 @@
 
 | Functions |
 | :-----|
-| **[clamp](Util.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 数值a在最小值和最大值之间，包括最小值和最大值|
+| **[clamp](Util.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
 | **[cos](Util.MathUtil.md#cos)**(`a`: `number`): `number` <br> 计算cos值|
 | **[degreesToRadians](Util.MathUtil.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
 | **[fmod](Util.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
@@ -61,7 +61,7 @@
 
 • `Const` **D2R**: `number`
 
-角度转换弧度参数
+角度转换弧度参数（Math.PI/180）
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 • **clamp**(`a`, `min`, `max`): `number` 
 
-数值a在最小值和最大值之间，包括最小值和最大值
+将传入的数值a限制在min与max范围内，超出部分自动舍弃
 
 
 #### Parameters

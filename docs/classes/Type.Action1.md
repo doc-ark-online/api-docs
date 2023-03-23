@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / Action1
+[Datatype](../groups/Datatype.Datatype.md) / Action1
 
 # Action1<T\> <Badge type="tip" text="Class" /> <Score text="Action1<T\>" />
 

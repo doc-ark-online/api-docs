@@ -24,6 +24,7 @@ UI的输入框
 | **[glyph](UI.InputBox.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 获取字体字形|
 | **[hintString](UI.InputBox.md#hintstring)**(): `string` <br> 获取提示文本内容|
 | **[inputTextLimit](UI.InputBox.md#inputtextlimit)**(): [`InputTextLimit`](../enums/UI.InputTextLimit.md) <br> 获取输入框的输入格式|
+| **[isRichText](UI.InputBox.md#isrichtext)**(): `boolean` <br> 获取是否为富文本|
 | **[onTextChanged](UI.InputBox.md#ontextchanged)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`) => `void`\> <br> 文本改变事件|
 | **[onTextCommitted](UI.InputBox.md#ontextcommitted)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Text`: `string`, `CommitMethod`: [`TextCommit`](../enums/UI.TextCommit.md)) => `void`\> <br> 文本提交事件|
 | **[outlineColor](UI.InputBox.md#outlinecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置字体描边颜色|
@@ -336,6 +337,32 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `inLimit` | [`InputTextLimit`](../enums/UI.InputTextLimit.md) | 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 |
+
+
+
+### isRichText <Score text="isRichText" /> 
+
+• `get` **isRichText**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否为富文本
+
+
+#### Returns
+
+`boolean`
+
+是否为富文本
+
+• `set` **isRichText**(`isRichText`): `void` <Badge type="tip" text="client" />
+
+设置是否为富文本
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `isRichText` | `boolean` |
 
 
 

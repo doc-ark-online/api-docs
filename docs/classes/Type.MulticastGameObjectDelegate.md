@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / MulticastGameObjectDelegate
+[Datatype](../groups/Datatype.Datatype.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 

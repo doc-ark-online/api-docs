@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / Transform
+[Datatype](../groups/Datatype.Datatype.md) / Transform
 
 # Transform <Badge type="tip" text="Class" /> <Score text="Transform" />
 

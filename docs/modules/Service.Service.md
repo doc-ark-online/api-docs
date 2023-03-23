@@ -8,7 +8,7 @@ Account Service
 
 | Enumerations |
 | :-----|
-| [AdsState](../enums/Service.AdsState.md) <br> 广告状态|
+| [AdsState](../enums/Service.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态|
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型|
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
 

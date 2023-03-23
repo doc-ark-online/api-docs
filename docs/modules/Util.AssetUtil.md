@@ -7,7 +7,7 @@
 | Functions |
 | :-----|
 | **[assetLoaded](Util.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载|
+| **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
 | **[isAssetExist](Util.AssetUtil.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
 | **[isAssetLoaded](Util.AssetUtil.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[loadAsset](Util.AssetUtil.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
@@ -39,8 +39,15 @@ ___
 
 • **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> 
 
-资源下载
+资源下载并加载
 
+
+使用示例:调用方法
+```ts
+AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
+    // result为true是资源加载成功;
+});
+```
 
 #### Parameters
 

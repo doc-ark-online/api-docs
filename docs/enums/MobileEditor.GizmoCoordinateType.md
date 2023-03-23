@@ -8,25 +8,26 @@ gizmo坐标轴类型
 
 | Enumeration Members |
 | :-----|
-| **[None](MobileEditor.GizmoCoordinateType.md#none)** = ``12`` <br> |
+| **[None](MobileEditor.GizmoCoordinateType.md#none)** = ``13`` <br> |
 | **[RotatorX](MobileEditor.GizmoCoordinateType.md#rotatorx)** = ``3`` <br> |
 | **[RotatorY](MobileEditor.GizmoCoordinateType.md#rotatory)** = ``4`` <br> |
 | **[RotatorZ](MobileEditor.GizmoCoordinateType.md#rotatorz)** = ``5`` <br> |
+| **[ScaleAll](MobileEditor.GizmoCoordinateType.md#scaleall)** = ``9`` <br> |
 | **[ScaleX](MobileEditor.GizmoCoordinateType.md#scalex)** = ``6`` <br> |
 | **[ScaleY](MobileEditor.GizmoCoordinateType.md#scaley)** = ``7`` <br> |
 | **[ScaleZ](MobileEditor.GizmoCoordinateType.md#scalez)** = ``8`` <br> |
 | **[TransformX](MobileEditor.GizmoCoordinateType.md#transformx)** = ``0`` <br> |
-| **[TransformXY](MobileEditor.GizmoCoordinateType.md#transformxy)** = ``9`` <br> |
-| **[TransformXZ](MobileEditor.GizmoCoordinateType.md#transformxz)** = ``10`` <br> |
+| **[TransformXY](MobileEditor.GizmoCoordinateType.md#transformxy)** = ``10`` <br> |
+| **[TransformXZ](MobileEditor.GizmoCoordinateType.md#transformxz)** = ``11`` <br> |
 | **[TransformY](MobileEditor.GizmoCoordinateType.md#transformy)** = ``1`` <br> |
-| **[TransformYZ](MobileEditor.GizmoCoordinateType.md#transformyz)** = ``11`` <br> |
+| **[TransformYZ](MobileEditor.GizmoCoordinateType.md#transformyz)** = ``12`` <br> |
 | **[TransformZ](MobileEditor.GizmoCoordinateType.md#transformz)** = ``2`` <br> |
 
 ## Enumeration Members
 
 ### None <Score text="None" /> 
 
-• **None** = ``12``
+• **None** = ``13``
 
 当前未选中任何轴
 
@@ -53,6 +54,14 @@ ___
 • **RotatorZ** = ``5``
 
 旋转坐标轴的Z轴
+
+___
+
+### ScaleAll <Score text="ScaleAll" /> 
+
+• **ScaleAll** = ``9``
+
+缩放坐标轴的整体轴
 
 ___
 
@@ -90,7 +99,7 @@ ___
 
 ### TransformXY <Score text="TransformXY" /> 
 
-• **TransformXY** = ``9``
+• **TransformXY** = ``10``
 
 平移坐标轴的XY轴平面
 
@@ -98,7 +107,7 @@ ___
 
 ### TransformXZ <Score text="TransformXZ" /> 
 
-• **TransformXZ** = ``10``
+• **TransformXZ** = ``11``
 
 平移坐标轴的XZ轴平面
 
@@ -114,7 +123,7 @@ ___
 
 ### TransformYZ <Score text="TransformYZ" /> 
 
-• **TransformYZ** = ``11``
+• **TransformYZ** = ``12``
 
 平移坐标轴的YZ轴平面
 

@@ -6,7 +6,7 @@
 
 | Variables |
 | :-----|
-| **[currentPlatform](Util.SystemUtil.md#currentplatform)**: `string` <br> 判定当前程序的运行平台|
+| **[currentPlatform](Util.SystemUtil.md#currentplatform)**: `string` <br> 判定当前程序的运行平台,返回值参考Type.RuntimePlatform|
 | **[isPIE](Util.SystemUtil.md#ispie)**: `boolean` <br> 判定当前程序的运行环境是否为PIE|
 
 | Functions |
@@ -32,8 +32,15 @@
 
 • `Const` **currentPlatform**: `string` 
 
-判定当前程序的运行平台
+判定当前程序的运行平台,返回值参考Type.RuntimePlatform
 
+
+使用示例:调用方法
+```ts
+const currentPlatform = SystemUtil.currentPlatform;
+console.log(`currentPlatform: ${currentPlatform}`);
+// Windows
+```
 
 ___
 
@@ -53,11 +60,18 @@ ___
 获取当前环境
 
 
+使用示例:调用方法
+```ts
+const currentEnv = SystemUtil.getCurrentEnv();
+console.log(`currentEnv: ${currentEnv}`);
+// Online
+```
+
 #### Returns
 
 `string`
 
-当前环境
+当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza)
 
 ___
 

@@ -20,6 +20,7 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | Properties |
 | :-----|
 | **[onLoadAppearanceDataAllCompleted](Gameplay.CharacterBase.md#onloadappearancedataallcompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadAppearanceDataAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loadappearancedataallcompletedcallback)\> <br> 加载完角色形象数据后的回调|
+| **[onLoadDecorationsAllCompleted](Gameplay.CharacterBase.md#onloaddecorationsallcompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`LoadDecorationsAllCompletedCallback`](../modules/Gameplay.Gameplay.md#loaddecorationsallcompletedcallback)\> <br> 加载完角色形象数据后的回调|
 | **[onMeshChanged](Gameplay.CharacterBase.md#onmeshchanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`onAppearanceDataChanged`](../modules/Gameplay.Gameplay.md#onappearancedatachanged)\> <br> 角色模型切换成功广播|
 | **[onMovementStateChanged](Gameplay.CharacterBase.md#onmovementstatechanged)**: [`OnMovementStateChanged`](../modules/Gameplay.Gameplay.md#onmovementstatechanged) <br> 移动状态切换时的回调|
 | **[onSetAppearanceDataCompleted](Gameplay.CharacterBase.md#onsetappearancedatacompleted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<[`SetAppearanceDataCallback`](../modules/Gameplay.Gameplay.md#setappearancedatacallback)\> <br> 设置一个角色编辑API成功后的回调|
@@ -187,5 +188,5 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` |  true 开启角色移动计算 false 关闭角色移动计算 |
+| `value` | `boolean` |  true 开启角色移动计算 flase 关闭角色移动计算 |
 

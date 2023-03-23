@@ -14,6 +14,7 @@
 | **[letterSpacing](UI.UIFontInfo.md#letterspacing)**: `number` <br> 间距|
 | **[outLineColor](UI.UIFontInfo.md#outlinecolor)**: [`LinearColor`](Type.LinearColor.md) <br> 描边颜色|
 | **[outLineSize](UI.UIFontInfo.md#outlinesize)**: `number` <br> 描边大小|
+| **[richText](UI.UIFontInfo.md#richtext)**: `boolean` <br> 富文本|
 | **[shadowColor](UI.UIFontInfo.md#shadowcolor)**: [`LinearColor`](Type.LinearColor.md) <br> 阴影颜色|
 | **[shadowOffset](UI.UIFontInfo.md#shadowoffset)**: [`Vector2`](Type.Vector2.md) <br> 阴影偏移|
 | **[strikethrough](UI.UIFontInfo.md#strikethrough)**: `boolean` <br> 删除线|
@@ -68,6 +69,14 @@ ___
 • **outLineSize**: `number`
 
 描边大小
+
+___
+
+### richText <Score text="richText" /> 
+
+• **richText**: `boolean`
+
+富文本
 
 ___
 

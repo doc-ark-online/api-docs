@@ -1,4 +1,4 @@
-[Settings](../groups/Settings.Settings.md) / LanguageType
+[Datatype](../groups/Datatype.Datatype.md) / LanguageType
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 
