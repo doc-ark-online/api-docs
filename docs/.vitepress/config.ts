@@ -47,11 +47,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    // algolia: {
-    //   appId: 'I2PHYUBLCN',
-    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
-    //   indexName: 'api-docs_prodigytech'
-    // },
+    algolia: {
+      appId: 'I2PHYUBLCN',
+      apiKey: '62ee775311415d26549e0e30fef5aa38',
+      indexName: 'api-docs_prodigytech'
+    },
     siteTitle: 'API',
     nav: [
       {
@@ -117,7 +117,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/release-023/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
