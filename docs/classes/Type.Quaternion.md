@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / Quaternion
+[Datatype](../groups/Datatype.Datatype.md) / Quaternion
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 
@@ -67,22 +67,24 @@
 | **[strictEquals](Type.Quaternion.md#strictequals-1)**(`a`: [`Quaternion`](Type.Quaternion.md), `b`: [`Quaternion`](Type.Quaternion.md)): `boolean` <br> 四元数等价判断|
 | **[toMatrix3x3](Type.Quaternion.md#tomatrix3x3)**(`q`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Matrix3x3`](Type.Matrix3x3.md)): [`Matrix3x3`](Type.Matrix3x3.md) <br> 根据四元数旋转信息计算矩阵|
 
+• **new Quaternion**(`v`)
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `v` | [`Quaternion`](Type.Quaternion.md) | 四元素 |
 
-• **new Quaternion**(`x?`, `y?`, `z?`, `w?`)
+• **new Quaternion**(`x`, `y`, `z`, `w`)
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `x?` | `number` | x分量 default:0 |
-| `y?` | `number` | y分量 default:0 |
-| `z?` | `number` | z分量 default:0 |
-| `w?` | `number` | w分量 default:1 |
+| `x` | `number` | x分量 default:0 |
+| `y` | `number` | y分量 default:0 |
+| `z` | `number` | z分量 default:0 |
+| `w` | `number` | w分量 default:1 |
 
 ## Properties
 

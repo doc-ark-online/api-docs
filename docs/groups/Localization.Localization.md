@@ -23,6 +23,13 @@ ___
 获取默认的语言和地区
 
 
+使用示例:调用方法
+```ts
+const locale = LocaleUtil.getDefaultLocale();
+console.log(`locale: ${locale}`);
+// zh-CN
+```
+
 #### Returns
 
 `string`

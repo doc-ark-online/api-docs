@@ -66,13 +66,14 @@
 | **[getRelativeRotation](Gameplay.Player.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.Player.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
 | **[getRightVector](Gameplay.Player.md#getrightvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
-| **[getScriptByGuid](Gameplay.Player.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScriptByName](Gameplay.Player.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScripts](Gameplay.Player.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByGuid](Gameplay.Player.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](Gameplay.Player.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](Gameplay.Player.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getSourceAssetGuid](Gameplay.Player.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[getTeamId](Gameplay.Player.md#getteamid)**(): `string` <br> 获取玩家的TeamId|
 | **[getTransform](Gameplay.Player.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.Player.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
+| **[getUserId](Gameplay.Player.md#getuserid)**(): `string` <br> 获取用户的平台Id，该Id可以作为玩家唯一Id使用。|
 | **[getUserSystemId](Gameplay.Player.md#getusersystemid)**(): `string` <br> 获取用户系统的玩家Id|
 | **[getVisibility](Gameplay.Player.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[getWorldLocation](Gameplay.Player.md#getworldlocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
@@ -766,10 +767,16 @@ ___
 
 ### getAccount <Score text="getAccount" /> 
 
-• **getAccount**(): `string` <Badge type="tip" text="client" />
+• **getAccount**(): `string` <Badge type="tip" text="other" />
 
 获取玩家账户
 
+
+::: danger Deprecated
+
+since:023 reason:功能废弃 replacement:getUserId
+
+:::
 
 #### Returns
 
@@ -959,6 +966,12 @@ ___
 
 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。
 
+::: danger Deprecated
+
+since:023 reason:功能废弃 replacement:getUserId
+
+:::
+
 
 #### Returns
 
@@ -1084,7 +1097,7 @@ ___
 
 • **getScriptByGuid**(`GUID`): `undefined` \| `Script` 
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本
 
 
 #### Parameters
@@ -1105,7 +1118,7 @@ ___
 
 • **getScriptByName**(`name`): `undefined` \| `Script` 
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本
 
 
 #### Parameters
@@ -1126,7 +1139,7 @@ ___
 
 • **getScripts**(): `undefined` \| `Script`[] 
 
-获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的所有脚本
 
 
 #### Returns
@@ -1215,11 +1228,32 @@ Vector
 
 ___
 
+### getUserId <Score text="getUserId" /> 
+
+• **getUserId**(): `string` 
+
+获取用户的平台Id，该Id可以作为玩家唯一Id使用。
+
+
+#### Returns
+
+`string`
+
+用户平台Id
+
+___
+
 ### getUserSystemId <Score text="getUserSystemId" /> 
 
 • **getUserSystemId**(): `string` 
 
 获取用户系统的玩家Id
+
+::: danger Deprecated
+
+since:023 reason:命名不规范 replacement:AccountService.getInstance().getOpenId()
+
+:::
 
 
 #### Returns
@@ -1690,6 +1724,15 @@ ___
 异步构造一个 GameObject 资源不存在会先去下载资源再去创建
 
 
+使用示例:调用方法
+```ts
+let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.StaticMesh>({
+ guid: "7669",
+ replicates: true,
+ transform: new Transform()
+});
+```
+
 #### Type parameters
 
 | Name | Type |
@@ -1829,6 +1872,15 @@ ___
 
 构造一个 GameObject
 
+
+使用示例:调用方法
+```ts
+let obj = Gameplay.GameObject.spawn<Gameplay.StaticMesh>({
+ guid: "7669",
+ replicates: true,
+ transform: new Transform()
+});
+```
 
 #### Type parameters
 

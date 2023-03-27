@@ -7,7 +7,8 @@ MobileEditor
 | Enumerations |
 | :-----|
 | [GizmoCoordinateType](../enums/MobileEditor.GizmoCoordinateType.md) <br> gizmo坐标轴类型|
-| [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo类型|
+| [GizmoModeType](../enums/MobileEditor.GizmoModeType.md) <br> gizmo模式|
+| [GizmoSpaceType](../enums/MobileEditor.GizmoSpaceType.md) <br> gizmo空间|
 | [ReleaseStatus](../enums/MobileEditor.ReleaseStatus.md) <br> UGC 发布的状态|
 | [SelectTapType](../enums/MobileEditor.SelectTapType.md) <br> UGC 选中的单选或者多选|
 
@@ -21,6 +22,9 @@ MobileEditor
 | :-----|
 | **[UGCEditor](MobileEditor.MobileEditor.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
 | **[addEditorPawnPanInputMovement](MobileEditor.MobileEditor.md#addeditorpawnpaninputmovement)**(`input`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 添加对编辑器人物的输入 - 只作用于编辑器人物|
+| **[addLikeContent](MobileEditor.MobileEditor.md#addlikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 点赞内容|
+| **[addMessage](MobileEditor.MobileEditor.md#addmessage)**(`UGCID`: `string`, `Content`: `string`): `void` <br> 添加留言|
+| **[addReplyMessage](MobileEditor.MobileEditor.md#addreplymessage)**(`UGCID`: `string`, `CommentID`: `string`, `Content`: `string`): `void` <br> 添加回复的消息|
 | **[asyncCaptureAvatar](MobileEditor.MobileEditor.md#asynccaptureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
 | **[asyncGetResourceList](MobileEditor.MobileEditor.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <br> 获取资源列表|
 | **[asyncSaveProject](MobileEditor.MobileEditor.md#asyncsaveproject)**(): `Promise`<`boolean`\> <br> 保存当前游戏项目|
@@ -28,13 +32,17 @@ MobileEditor
 | **[beginActorTransformChange](MobileEditor.MobileEditor.md#beginactortransformchange)**(`target`: `Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](MobileEditor.MobileEditor.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/Type.Vector.md), `deltaScale`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
 | **[captureAvatar](MobileEditor.MobileEditor.md#captureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[clearUselessLocalMaterials](MobileEditor.MobileEditor.md#clearuselesslocalmaterials)**(`IgnoreMatGuids?`: `string`[]): `void` <br> 清除项目中没有引用的本地材质资源|
 | **[convertScreenLocationToWorldSpace](MobileEditor.MobileEditor.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
+| **[deleteLikeContent](MobileEditor.MobileEditor.md#deletelikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 取消点赞内容|
+| **[deleteMessage](MobileEditor.MobileEditor.md#deletemessage)**(`UGCID`: `string`, `CommentID`: `string`): `void` <br> 删除留言板数据|
 | **[endActorPropertiesChange](MobileEditor.MobileEditor.md#endactorpropertieschange)**(`target`: `Base`): `void` <br> 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](MobileEditor.MobileEditor.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <br> 结束记录actor的transform|
 | **[getEditorPawnLocation](MobileEditor.MobileEditor.md#geteditorpawnlocation)**(): [`Vector`](../classes/Type.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
 | **[getEditorPawnRotation](MobileEditor.MobileEditor.md#geteditorpawnrotation)**(): [`Rotation`](../classes/Type.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
 | **[getGizmo](MobileEditor.MobileEditor.md#getgizmo)**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
+| **[getLocalMaterialsCount](MobileEditor.MobileEditor.md#getlocalmaterialscount)**(): `number` <br> 获取创建的本地材质数量|
 | **[getOneFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取单指滑动的代理|
 | **[getPinchGestureDelegate](MobileEditor.MobileEditor.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 获取挤压手势的代理|
 | **[getSavedDir](MobileEditor.MobileEditor.md#getsaveddir)**(): `string` <br> 获取截图的保存路径|
@@ -47,9 +55,14 @@ MobileEditor
 | **[markActorRenderStateDirty](MobileEditor.MobileEditor.md#markactorrenderstatedirty)**(`target`: `Base`): `void` <br> 标记Actor所有组件的渲染状态为脏|
 | **[mobileReleaseGame](MobileEditor.MobileEditor.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<[`ReleaseStatus`](../enums/MobileEditor.ReleaseStatus.md)\> <br> 移动端编辑器发布游戏|
 | **[projectWorldLocationToWidgetPosition](MobileEditor.MobileEditor.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](../classes/Type.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
+| **[queryGameOwnerShip](MobileEditor.MobileEditor.md#querygameownership)**(`UGCID`: `string`): `Promise`<`boolean`\> <br> 是否是自己发布的游戏|
+| **[queryMessageBoard](MobileEditor.MobileEditor.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
+| **[queryReplyMessage](MobileEditor.MobileEditor.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
+| **[queryViewRecord](MobileEditor.MobileEditor.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
 | **[recordingCharacterGif](MobileEditor.MobileEditor.md#recordingcharactergif)**(`Character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](MobileEditor.MobileEditor.md#redo)**(): `void` <br> 执行恢复操作|
 | **[saveProject](MobileEditor.MobileEditor.md#saveproject)**(): `void` <br> 保存当前游戏项目|
+| **[saveViewRecord](MobileEditor.MobileEditor.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
 | **[screenShot](MobileEditor.MobileEditor.md#screenshot)**(`Resolution`: [`Vector2`](../classes/Type.Vector2.md), `StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `Width`: `number`, `Height`: `number`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 屏幕指定区域截图|
 | **[screenShotExist](MobileEditor.MobileEditor.md#screenshotexist)**(`absPath`: `string`): `boolean` <br> 验证绝对路径下截图是否存在|
 | **[sendShareId](MobileEditor.MobileEditor.md#sendshareid)**(`absPath`: `string`, `shareId`: `string`, `bShowUuid`: `boolean`): `void` <br> 将角色数据ID连同角色截图一同发给MGS|
@@ -98,6 +111,59 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `input` | [`Vector2`](../classes/Type.Vector2.md) | 输入值 |
+
+
+___
+
+### addLikeContent <Score text="addLikeContent" /> 
+
+• **addLikeContent**(`UGCID`, `contentId`, `contentType`): `void` <Badge type="tip" text="client" />
+
+点赞内容
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` |  UGC唯一标识 |
+| `contentId` | `string` | 内容ID |
+| `contentType` | `number` | 内容类型:1游戏; 2用户; 3樱校; 4ugc |
+
+
+___
+
+### addMessage <Score text="addMessage" /> 
+
+• **addMessage**(`UGCID`, `Content`): `void` <Badge type="tip" text="client" />
+
+添加留言
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` | UGC唯一标识 |
+| `Content` | `string` | 留言的内容 |
+
+
+___
+
+### addReplyMessage <Score text="addReplyMessage" /> 
+
+• **addReplyMessage**(`UGCID`, `CommentID`, `Content`): `void` <Badge type="tip" text="client" />
+
+添加回复的消息
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` | UGC唯一标识 |
+| `CommentID` | `string` | 需要回复的会话ID |
+| `Content` | `string` | 回复的内容 |
 
 
 ___
@@ -250,6 +316,28 @@ ___
 
 ___
 
+### clearUselessLocalMaterials <Score text="clearUselessLocalMaterials" /> 
+
+• **clearUselessLocalMaterials**(`IgnoreMatGuids?`): `void` 
+
+清除项目中没有引用的本地材质资源
+
+
+::: warning Precautions
+
+只在MobileEditor模式下调用生效
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `IgnoreMatGuids?` | `string`[] | 清除时即使未使用也不清除的材质资源Guid default:[] |
+
+
+___
+
 ### convertScreenLocationToWorldSpace <Score text="convertScreenLocationToWorldSpace" /> 
 
 • **convertScreenLocationToWorldSpace**(`ScreenX`, `ScreenY`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) 
@@ -269,6 +357,41 @@ ___
 [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md)
 
 屏幕坐标转换结果
+
+___
+
+### deleteLikeContent <Score text="deleteLikeContent" /> 
+
+• **deleteLikeContent**(`UGCID`, `contentId`, `contentType`): `void` <Badge type="tip" text="client" />
+
+取消点赞内容
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` |  UGC唯一标识 |
+| `contentId` | `string` | 内容ID |
+| `contentType` | `number` | 内容类型:1游戏; 2用户; 3樱校; 4ugc |
+
+
+___
+
+### deleteMessage <Score text="deleteMessage" /> 
+
+• **deleteMessage**(`UGCID`, `CommentID`): `void` <Badge type="tip" text="client" />
+
+删除留言板数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` | UGC唯一标识 |
+| `CommentID` | `string` | 需要删除的留言ID |
+
 
 ___
 
@@ -370,6 +493,27 @@ ___
 | `fileName` | `string` |  文件名 |
 | `callback` | (`dataString`: `string`) => `void` |  获取本地截图路径 default:null |
 
+
+___
+
+### getLocalMaterialsCount <Score text="getLocalMaterialsCount" /> 
+
+• **getLocalMaterialsCount**(): `number` 
+
+获取创建的本地材质数量
+
+
+::: warning Precautions
+
+只在MobileEditor模式下调用生效
+
+:::
+
+#### Returns
+
+`number`
+
+本地材质数量
 
 ___
 
@@ -574,6 +718,85 @@ ___
 
 ___
 
+### queryGameOwnerShip <Score text="queryGameOwnerShip" /> 
+
+• **queryGameOwnerShip**(`UGCID`): `Promise`<`boolean`\> <Badge type="tip" text="client" />
+
+是否是自己发布的游戏
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` | UGC唯一标识 |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+是否是自己发布的游戏
+
+___
+
+### queryMessageBoard <Score text="queryMessageBoard" /> 
+
+• **queryMessageBoard**(`Delegate`, `UGCID`, `PageNum`, `PageSize`): `void` <Badge type="tip" text="client" />
+
+查询留言板数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 代理返回留言板json数据 |
+| `UGCID` | `string` | UGC唯一标识 |
+| `PageNum` | `number` | 查询的页面数量 |
+| `PageSize` | `number` | 查询的页面大小 |
+
+
+___
+
+### queryReplyMessage <Score text="queryReplyMessage" /> 
+
+• **queryReplyMessage**(`Delegate`, `UGCID`, `CommentID`, `PageNum`, `PageSize`): `void` <Badge type="tip" text="client" />
+
+查询回复的数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回http返回的json |
+| `UGCID` | `string` | UGC唯一标识 |
+| `CommentID` | `string` | 需要查询的会话ID |
+| `PageNum` | `number` | 需要查询的页面数量 |
+| `PageSize` | `number` | 需要查询的页面大小 |
+
+
+___
+
+### queryViewRecord <Score text="queryViewRecord" /> 
+
+• **queryViewRecord**(`Delegate`, `UGCID`, `PageNum`, `PageSize`): `void` <Badge type="tip" text="client" />
+
+查询浏览的记录
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回浏览记录的json |
+| `UGCID` | `string` | UGC唯一标识 |
+| `PageNum` | `number` | 查询的页面数量 |
+| `PageSize` | `number` | 查询的页面大小 |
+
+
+___
+
 ### recordingCharacterGif <Score text="recordingCharacterGif" /> 
 
 • **recordingCharacterGif**(`Character`, `relativeLocation`, `relativeRotation`, `resolution`, `bShowOnly`, `fov`, `picNum`, `recordingTime`): `void` <Badge type="tip" text="client" />
@@ -625,6 +848,22 @@ ___
 只在ListenServer模式下调用生效，在PIE模式下无法调用
 
 :::
+
+
+___
+
+### saveViewRecord <Score text="saveViewRecord" /> 
+
+• **saveViewRecord**(`UGCID`): `void` <Badge type="tip" text="client" />
+
+保存留言
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `UGCID` | `string` | UGC唯一标识 |
 
 
 ___

@@ -1,4 +1,4 @@
-[Effects](../groups/Effects.Effects.md) / EffectRangeType
+[Others](../groups/Others.Others.md) / EffectRangeType
 
 # EffectRangeType <Badge type="tip" text="Enumeration" /> <Score text="EffectRangeType" />
 

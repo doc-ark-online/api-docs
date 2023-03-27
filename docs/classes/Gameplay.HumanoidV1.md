@@ -98,6 +98,12 @@ ___
 
 • **changeSomatotype**(`value`, `sync`): `void` 
 
+::: danger Deprecated
+
+since: 023 reason: 不再使用 replacement: 无
+
+:::
+
 切换角色主Mesh
 
 

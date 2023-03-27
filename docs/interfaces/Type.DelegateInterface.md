@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / DelegateInterface
+[Datatype](../groups/Datatype.Datatype.md) / DelegateInterface
 
 # DelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="DelegateInterface<T\>" />
 

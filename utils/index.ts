@@ -1,6 +1,7 @@
 import { readdirSync, readJSONSync } from 'fs-extra'
 import * as path from 'path'
 import { DefaultTheme } from '../viteTheme/shared'
+import { globSync } from 'glob'
 
 /**根据文件夹生成对应的子类 */
 export function dealItem(dir: string) {
@@ -26,7 +27,6 @@ interface GroupsConfig {
 export function dealConfigSidebar() {
   const json = readJSONSync(`./docs/configs/groups.json`) as GroupsConfig
   const arr: DefaultTheme.SidebarGroup[] = []
-  let num = 0
   for (const typeObj in json) {
     const items: DefaultTheme.SidebarItem[] = []
     for (const key in json[typeObj]) {
@@ -38,13 +38,28 @@ export function dealConfigSidebar() {
       const item = json[typeObj][key]
       items.push(
         ...item.map((item) => {
-          num += 1
           return {
             text: item.name,
             link: '/' + item.file_path
           }
         })
       )
+      if (typeObj === 'Others') {
+        // items.push()
+        const files = globSync('docs/modules/Util.*.md', {
+          withFileTypes: true,
+          ignore: 'docs/modules/Util.Util.md'
+        })
+        items.push(
+          ...files.map((item) => {
+            return {
+              text: item.name.split('.')[1],
+              link: `/modules/${item.name}`
+            }
+          })
+        )
+        console.log(items)
+      }
     }
     if (items.length > 0) {
       arr.push({
@@ -56,7 +71,6 @@ export function dealConfigSidebar() {
       })
     }
   }
-  console.log('数量', num)
   arr.forEach((item) => {
     item.items.sort((a, b) => a.text.localeCompare(b.text))
   })

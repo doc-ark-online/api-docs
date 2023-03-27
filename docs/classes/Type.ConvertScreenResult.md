@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / ConvertScreenResult
+[Datatype](../groups/Datatype.Datatype.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 

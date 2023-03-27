@@ -18,6 +18,11 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 
 ## Table of contents
 
+| Properties |
+| :-----|
+| **[onEnter](Gameplay.StaticMesh.md#onenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 进入StaticMesh事件|
+| **[onLeave](Gameplay.StaticMesh.md#onleave)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 离开StaticMesh事件|
+
 | Accessors |
 | :-----|
 | **[angularDamping](Gameplay.StaticMesh.md#angulardamping)**(): `number` <br> 角阻尼|
@@ -66,6 +71,7 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | :-----|
 | **[createMaterialInstance](Gameplay.StaticMesh.md#creatematerialinstance)**(`Index`: `number`): `void` <br> 创建材质实例|
 | **[getMaterialColor](Gameplay.StaticMesh.md#getmaterialcolor)**(`Index`: `number`): [`LinearColor`](Type.LinearColor.md) <br> 获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败|
+| **[getMaterialInstance](Gameplay.StaticMesh.md#getmaterialinstance)**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] <br> 返回当前拥有的材质实例|
 | **[resetMaterial](Gameplay.StaticMesh.md#resetmaterial)**(): `void` <br> 还原物体材质|
 | **[setCullDistance](Gameplay.StaticMesh.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setMaterial](Gameplay.StaticMesh.md#setmaterial)**(`MaterialGUID`: `string`): `void` <br> 设置物体材质|
@@ -98,9 +104,9 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
 | **[getRightVector](Gameplay.GameObject.md#getrightvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
-| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[getTransform](Gameplay.GameObject.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.GameObject.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
@@ -135,6 +141,22 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
+
+## Properties
+
+### onEnter <Score text="onEnter" /> 
+
+• **onEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
+
+进入StaticMesh事件
+
+___
+
+### onLeave <Score text="onLeave" /> 
+
+• **onLeave**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
+
+离开StaticMesh事件
 
 ## Accessors
 
@@ -498,10 +520,16 @@ ___
 
 ### getMaterialColor <Score text="getMaterialColor" /> 
 
-• **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) 
+• **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
 
 获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败
 
+
+::: danger Deprecated
+
+since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数获取
+
+:::
 
 #### Parameters
 
@@ -514,6 +542,21 @@ ___
 [`LinearColor`](Type.LinearColor.md)
 
 获取的颜色
+
+___
+
+### getMaterialInstance <Score text="getMaterialInstance" /> 
+
+• **getMaterialInstance**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] 
+
+返回当前拥有的材质实例
+
+
+#### Returns
+
+[`MaterialInstance`](Gameplay.MaterialInstance.md)[]
+
+材质实例数组
 
 
 ### resetMaterial <Score text="resetMaterial" /> 
@@ -560,10 +603,31 @@ ___
 | `MaterialGUID` | `string` |  材质ID default: |
 
 
-• **setMaterial**(`MaterialGUID`, `Transparency`, `isTransparent`): `void` 
+• **setMaterial**(`MaterialGUID`, `index`): `void` 
 
 设置物体材质
 
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `MaterialGUID` | `string` |  材质ID |
+| `index` | `number` |  材质下标 |
+
+
+• **setMaterial**(`MaterialGUID`, `Transparency`, `isTransparent`): `void`
+
+设置物体材质
+
+**`Effect`**
+
+
+::: danger Deprecated
+
+since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
+
+:::
 
 #### Parameters
 
@@ -578,10 +642,16 @@ ___
 
 ### setMaterialColor <Score text="setMaterialColor" /> 
 
-• **setMaterialColor**(`Index`, `InColor`): `void` 
+• **setMaterialColor**(`Index`, `InColor`): `void` <Badge type="tip" text="other" />
 
 设置材质颜色
 
+
+::: danger Deprecated
+
+since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
+
+:::
 
 #### Parameters
 

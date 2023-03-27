@@ -17,6 +17,7 @@
 | Properties |
 | :-----|
 | **[onMobileEditorStateChanged](MobileEditor.EditorMode.md#onmobileeditorstatechanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\> <br> 代理通知状态改变|
+| **[playerHasJoined](MobileEditor.EditorMode.md#playerhasjoined)**: `boolean` <br> 记录游戏初始化完成|
 
 | Accessors |
 | :-----|
@@ -56,6 +57,8 @@
 | **[endUncombinedActorChange](MobileEditor.EditorMode.md#enduncombinedactorchange)**(`Array`: `GameObject`[]): `void` <br> 结束记录解组操作|
 | **[focusToActors](MobileEditor.EditorMode.md#focustoactors)**(`Actors`: [`GameObject`]): `void` <br> 聚焦到物体|
 | **[focusToGizmo](MobileEditor.EditorMode.md#focustogizmo)**(): `void` <br> 聚焦到坐标轴|
+| **[getGizmoMode](MobileEditor.EditorMode.md#getgizmomode)**(): [`GizmoModeType`](../enums/MobileEditor.GizmoModeType.md) <br> 获取坐标轴模式|
+| **[getGizmoSpace](MobileEditor.EditorMode.md#getgizmospace)**(): [`GizmoSpaceType`](../enums/MobileEditor.GizmoSpaceType.md) <br> 获取坐标轴空间|
 | **[isRedoEmpty](MobileEditor.EditorMode.md#isredoempty)**(): `boolean` <br> 是否可执行Redo操作true:表示当前没有可执行的步数，无法执行重做操作|
 | **[isUndoEmpty](MobileEditor.EditorMode.md#isundoempty)**(): `boolean` <br> 是否可执行Undo操作 true:表示当前没有可执行的步数，无法执行撤销操作|
 | **[onAppendChange](MobileEditor.EditorMode.md#onappendchange)**(`Delegate`: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>): `void` <br> 主要用于设置撤销恢复按钮的可用性，如果有的话，可以配合IsUndoEmpty 和 IsRedoEmpty 函数来判断当前是否可以执行撤销恢复操作|
@@ -66,15 +69,14 @@
 | **[onGizmoVisibleChanged](MobileEditor.EditorMode.md#ongizmovisiblechanged)**(`Delegate`: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsVisible`: `boolean`) => `void`\>): `void` <br> 坐标轴隐藏显示代理|
 | **[onSelectActor](MobileEditor.EditorMode.md#onselectactor)**(`Delegate`: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`Content`: `GameObject`, `IsGizmoActor`: `boolean`, `IsBlock`: `boolean`) => `void`\>): `void` <br> 选择物体代理|
 | **[saveProject](MobileEditor.EditorMode.md#saveproject)**(): `void` <br> 保存当前场景|
-| **[setAdsorbDistance](MobileEditor.EditorMode.md#setadsorbdistance)**(`InDistance`: `number`): `void` <br> 设置吸附距离|
 | **[setGizmoActorLocation](MobileEditor.EditorMode.md#setgizmoactorlocation)**(`NewLocation`: [`Vector`](Type.Vector.md), `IsRecordChange?`: `boolean`): `void` <br> 设置坐标轴位置|
 | **[setGizmoActorLocationAndRotation](MobileEditor.EditorMode.md#setgizmoactorlocationandrotation)**(`NewLocation`: [`Vector`](Type.Vector.md), `NewRotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置坐标轴旋转和缩放|
 | **[setGizmoAxisColor](MobileEditor.EditorMode.md#setgizmoaxiscolor)**(`InAxis`: `string`, `InAxisColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置坐标轴颜色|
 | **[setGizmoHighlightColor](MobileEditor.EditorMode.md#setgizmohighlightcolor)**(`InHighlightColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置坐标轴选中时的高亮颜色|
 | **[setGizmoScaleOffset](MobileEditor.EditorMode.md#setgizmoscaleoffset)**(`InOffset`: `number`): `void` <br> 设置坐标轴模型整体缩放倍数|
-| **[setIsAdsorb](MobileEditor.EditorMode.md#setisadsorb)**(`InIsAdsorb`: `boolean`): `void` <br> 设置是否吸附|
 | **[showGizmoActor](MobileEditor.EditorMode.md#showgizmoactor)**(`[showGizmoActor](MobileEditor.EditorMode.md#showgizmoactor)`): `void` <br> 设置坐标轴隐藏或者显示|
 | **[switchGizmoMode](MobileEditor.EditorMode.md#switchgizmomode)**(`GizmoMode`: [`GizmoModeType`](../enums/MobileEditor.GizmoModeType.md)): `void` <br> 切换坐标轴模式|
+| **[switchGizmoSpace](MobileEditor.EditorMode.md#switchgizmospace)**(`GizmoSpace`: [`GizmoSpaceType`](../enums/MobileEditor.GizmoSpaceType.md)): `void` <br> 切换坐标轴空间|
 | **[getInstance](MobileEditor.EditorMode.md#getinstance)**(): [`EditorMode`](MobileEditor.EditorMode.md) <br> 获取editorMode的单例|
 
 ## Properties
@@ -84,6 +86,14 @@
 • **onMobileEditorStateChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`IsMobileEditor`: `boolean`) => `void`\>
 
 代理通知状态改变
+
+___
+
+### playerHasJoined <Score text="playerHasJoined" /> 
+
+• **playerHasJoined**: `boolean`
+
+记录游戏初始化完成
 
 ## Accessors
 
@@ -616,6 +626,36 @@ ___
 
 ___
 
+### getGizmoMode <Score text="getGizmoMode" /> 
+
+• **getGizmoMode**(): [`GizmoModeType`](../enums/MobileEditor.GizmoModeType.md) <Badge type="tip" text="client" />
+
+获取坐标轴模式
+
+
+#### Returns
+
+[`GizmoModeType`](../enums/MobileEditor.GizmoModeType.md)
+
+返回坐标轴模式
+
+___
+
+### getGizmoSpace <Score text="getGizmoSpace" /> 
+
+• **getGizmoSpace**(): [`GizmoSpaceType`](../enums/MobileEditor.GizmoSpaceType.md) <Badge type="tip" text="client" />
+
+获取坐标轴空间
+
+
+#### Returns
+
+[`GizmoSpaceType`](../enums/MobileEditor.GizmoSpaceType.md)
+
+返回坐标轴空间
+
+___
+
 ### isRedoEmpty <Score text="isRedoEmpty" /> 
 
 • **isRedoEmpty**(): `boolean` <Badge type="tip" text="client" />
@@ -780,28 +820,6 @@ ___
 
 ___
 
-### setAdsorbDistance <Score text="setAdsorbDistance" /> 
-
-• **setAdsorbDistance**(`InDistance`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
-
-:::
-
-设置吸附距离
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InDistance` | `number` |  吸附距离 |
-
-
-___
-
 ### setGizmoActorLocation <Score text="setGizmoActorLocation" /> 
 
 • **setGizmoActorLocation**(`NewLocation`, `IsRecordChange?`): `void` <Badge type="tip" text="client" />
@@ -915,28 +933,6 @@ since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()�
 
 ___
 
-### setIsAdsorb <Score text="setIsAdsorb" /> 
-
-• **setIsAdsorb**(`InIsAdsorb`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
-
-:::
-
-设置是否吸附
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InIsAdsorb` | `boolean` |  是否吸附 |
-
-
-___
-
 ### showGizmoActor <Score text="showGizmoActor" /> 
 
 • **showGizmoActor**(`showGizmoActor`): `void` <Badge type="tip" text="client" />
@@ -977,6 +973,22 @@ since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()�
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `GizmoMode` | [`GizmoModeType`](../enums/MobileEditor.GizmoModeType.md) | 模式 |
+
+
+___
+
+### switchGizmoSpace <Score text="switchGizmoSpace" /> 
+
+• **switchGizmoSpace**(`GizmoSpace`): `void` <Badge type="tip" text="client" />
+
+切换坐标轴空间
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `GizmoSpace` | [`GizmoSpaceType`](../enums/MobileEditor.GizmoSpaceType.md) | 空间 |
 
 
 ___

@@ -11,7 +11,7 @@ Monetization
 
 | Enums |
 | :-----|
-| [AdsState](../enums/Service.AdsState.md) <br> 广告状态 |
+| [AdsState](../enums/Service.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态 |
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型 |
 
 
@@ -27,12 +27,6 @@ Monetization
 | **[queryUserGameCoinWithEnv](Monetization.Monetization.md#queryusergamecoinwithenv)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`, `Env`: `string`): `void` <br> 查询账户的游戏币数量|
 | **[queryUserGameCoinWithGameID](Monetization.Monetization.md#queryusergamecoinwithgameid)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`): `void` <br> 查询账户的游戏币数量|
 | **[queryUserNFT](Monetization.Monetization.md#queryusernft)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`, `Env`: `string`): `void` <br> 查询NFT接口|
-
-
-| Modules Type Aliases |
-| :-----|
-| **[OnArkBalanceUpdated](Monetization.Monetization.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnOrderDelivered](Monetization.Monetization.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 
 
 ## Modules Functions
@@ -237,52 +231,3 @@ ___
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境 |
-## Modules Type Aliases
-
-
-___
-
-### OnArkBalanceUpdated <Score text="OnArkBalanceUpdated" /> 
-
-Ƭ **OnArkBalanceUpdated**: (`amount`: `number`) => `void`
-
-#### Type declaration
-
-• (`amount`): `void`
-
-客户端接收余额更新的消息格式
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `amount` | `number` |  新的余额 |
-
-##### Returns
-
-`void`
-___
-
-### OnOrderDelivered <Score text="OnOrderDelivered" /> 
-
-Ƭ **OnOrderDelivered**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
-
-#### Type declaration
-
-• (`playerId`, `orderId`, `commodityId`, `amount`, `confirmOrder`): `void`
-
-服务端接收发货通知的消息格式
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playerId` | `number` |  下单的玩家playerId |
-| `orderId` | `string` |  订单Id |
-| `commodityId` | `string` |  商品Id |
-| `amount` | `number` |  数量 |
-| `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
-
-##### Returns
-
-`void`

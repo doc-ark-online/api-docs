@@ -90,17 +90,17 @@ ___
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
-Extension.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
+UI.UIManager.Instance.show(UIBehavior,UIBehavior.layer)
 // 内置定义好的层级
 [
-Extension.UILayerScene,  //场景层 zOrder开始于0
-Extension.UILayerBottom, //底层 zOrder开始于100000
-Extension.UILayerMiddle, //中层 zOrder开始于200000
-Extension.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
-Extension.UILayerTop     //顶层 zOrder开始于400000
-Extension.UILayerDialog  //对话层 zOrder开始于500000
-Extension.UILayerSystem  //系统层 zOrder开始于600000
-Extension.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用Extension.UIManager.Instance.addUILayerMap zOrder开始于700000
+UI.UILayerScene,  //场景层 zOrder开始于0
+UI.UILayerBottom, //底层 zOrder开始于100000
+UI.UILayerMiddle, //中层 zOrder开始于200000
+UI.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
+UI.UILayerTop     //顶层 zOrder开始于400000
+UI.UILayerDialog  //对话层 zOrder开始于500000
+UI.UILayerSystem  //系统层 zOrder开始于600000
+UI.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UI.UIManager.Instance.addUILayerMap zOrder开始于700000
 ]
 ```
 
@@ -118,17 +118,17 @@ Layer层级
 
 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
 ```ts
-this.layer = Extension.UILayerScene;
+this.layer = UI.UILayerScene;
 // 内置定义好的层级
 [
-Extension.UILayerScene,  //场景层 zOrder开始于0
-Extension.UILayerBottom, //底层 zOrder开始于100000
-Extension.UILayerMiddle, //中层 zOrder开始于200000
-Extension.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
-Extension.UILayerTop     //顶层 zOrder开始于400000
-Extension.UILayerDialog  //对话层 zOrder开始于500000
-Extension.UILayerSystem  //系统层 zOrder开始于600000
-Extension.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用Extension.UIManager.Instance.addUILayerMap zOrder开始于700000
+UI.UILayerScene,  //场景层 zOrder开始于0
+UI.UILayerBottom, //底层 zOrder开始于100000
+UI.UILayerMiddle, //中层 zOrder开始于200000
+UI.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOrder开始于300000
+UI.UILayerTop     //顶层 zOrder开始于400000
+UI.UILayerDialog  //对话层 zOrder开始于500000
+UI.UILayerSystem  //系统层 zOrder开始于600000
+UI.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UI.UIManager.Instance.addUILayerMap zOrder开始于700000
 ]
 ```
 

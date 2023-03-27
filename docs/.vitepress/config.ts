@@ -47,11 +47,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   ],
   themeConfig: {
     logo: '/logo.png',
-    algolia: {
-      appId: 'I2PHYUBLCN',
-      apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech'
-    },
+    // algolia: {
+    //   appId: 'I2PHYUBLCN',
+    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
+    //   indexName: 'api-docs_prodigytech'
+    // },
     siteTitle: 'API',
     nav: [
       {
@@ -71,8 +71,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '022 版本',
+        text: '023 版本',
         items: [
+          {
+            text: '022 版本',
+            link: 'https://api-docs-022.ark.online/',
+            path: true
+          },
           {
             text: '021 版本',
             link: 'https://api-docs-021.ark.online/',
@@ -112,7 +117,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/release-023/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',

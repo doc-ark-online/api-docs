@@ -8,7 +8,7 @@
 
 | Variables |
 | :-----|
-| **[onEnterFrame](Util.TimeUtil.md#onenterframe)**: [`Action1`](../classes/Type.Action1.md)<`number`\> <br> 进入帧事件时执行绑定函数(参数deltaTime)|
+| **[onEnterFrame](Util.TimeUtil.md#onenterframe)**: [`Action1`](../classes/Type.Action1.md)<`number`\> <br> 帧刷新事件(参数deltaTime)|
 | **[traceFrameTime](Util.TimeUtil.md#traceframetime)**: `boolean` <br> 是否输出每帧的执行时间|
 
 | Functions |
@@ -16,7 +16,7 @@
 | **[clearDelayExecute](Util.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void` <br> 清除delayExecute|
 | **[clearInterval](Util.TimeUtil.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
 | **[delayExecute](Util.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
-| **[delaySecond](Util.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待，不可取消|
+| **[delaySecond](Util.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
 | **[delayTime](Util.TimeUtil.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](Util.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[parseTime](Util.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
@@ -29,11 +29,11 @@
 
 • `Const` **onEnterFrame**: [`Action1`](../classes/Type.Action1.md)<`number`\>
 
-进入帧事件时执行绑定函数(参数deltaTime)
+帧刷新事件(参数deltaTime)
 
 ::: warning Precautions
 
-每次update时自动执行所有绑定的函数
+每次update自动执行所绑定的方法
 
 :::
 
@@ -112,8 +112,18 @@ ___
 
 • **delaySecond**(`second`): `Promise`<`void`\> 
 
-延迟一定秒数,用于异步方法中间的等待，不可取消
+延迟一定秒数,用于异步方法中间的等待
 
+
+使用示例:延迟处理
+```ts
+async test(): Promise<void> {
+     console.log("Do something 1");
+     await delaySecond(0.5);
+//延迟0.5秒
+     console.log("Do something 2");
+}
+```
 
 #### Parameters
 
@@ -132,6 +142,12 @@ ___
 ### delayTime <Score text="delayTime" /> 
 
 • **delayTime**(): `number` 
+
+::: danger Deprecated
+
+since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
+
+:::
 
 每一帧经过的时间 (单位：秒)
 
@@ -162,6 +178,14 @@ ___
 在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
 
 :::
+
+使用示例:获取并显示游戏运行的总时长
+```ts
+function test(){
+     const elapsedTime = TimeUtil.elapsedTime;
+     console.log(`The game ran for ${elapsedTime} seconds`);
+}
+```
 
 #### Returns
 
@@ -228,6 +252,13 @@ ___
 UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
+
+使用示例:获取并显示时间戳
+```ts
+function test(){
+     const time = TimeUtil.time;
+     console.log(`time stamp:${time}`);
+}
 
 #### Returns
 

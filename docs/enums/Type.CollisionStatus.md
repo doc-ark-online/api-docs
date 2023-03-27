@@ -1,4 +1,4 @@
-[Physics](../groups/Physics.Physics.md) / CollisionStatus
+[Datatype](../groups/Datatype.Datatype.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 

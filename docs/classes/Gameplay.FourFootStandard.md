@@ -74,6 +74,12 @@
 
 • **changeSomatotype**(`value`, `sync`): `void` 
 
+::: danger Deprecated
+
+since: 023 reason: 不在使用 replacement: 无
+
+:::
+
 切换角色体型
 
 ::: warning Precautions

@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / RuntimePlatform
+[Datatype](../groups/Datatype.Datatype.md) / RuntimePlatform
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 

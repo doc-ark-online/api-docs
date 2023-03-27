@@ -23,15 +23,14 @@ Utility
 | Enums |
 | :-----|
 | [GameObjPoolSourceType](../enums/Extension.GameObjPoolSourceType.md) <br> GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 |
-| [RuntimePlatform](../enums/Type.RuntimePlatform.md) <br> 运行平台 |
 
 
 | Modules Functions |
 | :-----|
 | **[assetLoaded](Utility.Utility.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| **[asyncDownloadAsset](Utility.Utility.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载|
+| **[asyncDownloadAsset](Utility.Utility.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
 | **[bindButton](Utility.Utility.md#bindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md), `Widget`: [`Button`](../classes/UI.Button.md) \): `void` <br> 绑定按键|
-| **[clamp](Utility.Utility.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 数值a在最小值和最大值之间，包括最小值和最大值|
+| **[clamp](Utility.Utility.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
 | **[clearDelayExecute](Utility.Utility.md#cleardelayexecute)**(`id`: `number`): `void` <br> 清除delayExecute|
 | **[clearInterval](Utility.Utility.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
 | **[clipboardCopy](Utility.Utility.md#clipboardcopy)**(`text`: `string`): `void` <br> 文本复制，将字符串复制到剪切板|
@@ -39,7 +38,7 @@ Utility
 | **[cos](Utility.Utility.md#cos)**(`a`: `number`): `number` <br> 计算cos值|
 | **[degreesToRadians](Utility.Utility.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
 | **[delayExecute](Utility.Utility.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
-| **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待，不可取消|
+| **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
 | **[delayTime](Utility.Utility.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](Utility.Utility.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[enableCursorInteractWithUI](Utility.Utility.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
@@ -75,12 +74,6 @@ Utility
 | **[unbindButton](Utility.Utility.md#unbindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md)): `void` <br> 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键|
 
 
-| Modules Type Aliases |
-| :-----|
-| **[EasingFunction](Utility.Utility.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
-| **[InterpolationFunction](Utility.Utility.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
-
-
 ## Modules Functions
 
 
@@ -110,8 +103,15 @@ ___
 
 • **asyncDownloadAsset**(`InAssetId`): `Promise`<`boolean`\> 
 
-资源下载
+资源下载并加载
 
+
+使用示例:调用方法
+```ts
+AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
+    // result为true是资源加载成功;
+});
+```
 
 #### Parameters
 
@@ -146,7 +146,7 @@ ___
 
 • **clamp**(`a`, `min`, `max`): `number` 
 
-数值a在最小值和最大值之间，包括最小值和最大值
+将传入的数值a限制在min与max范围内，超出部分自动舍弃
 
 
 #### Parameters
@@ -288,8 +288,18 @@ ___
 
 • **delaySecond**(`second`): `Promise`<`void`\> 
 
-延迟一定秒数,用于异步方法中间的等待，不可取消
+延迟一定秒数,用于异步方法中间的等待
 
+
+使用示例:延迟处理
+```ts
+async test(): Promise<void> {
+     console.log("Do something 1");
+     await delaySecond(0.5);
+//延迟0.5秒
+     console.log("Do something 2");
+}
+```
 
 #### Parameters
 
@@ -307,6 +317,12 @@ ___
 ### delayTime <Score text="delayTime" /> 
 
 • **delayTime**(): `number` 
+
+::: danger Deprecated
+
+since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
+
+:::
 
 每一帧经过的时间 (单位：秒)
 
@@ -336,6 +352,14 @@ ___
 在 MetaWorld Editor 中，该数值是从每次开始运行起计算，而非从打开 Editor 场景起计算。
 
 :::
+
+使用示例:获取并显示游戏运行的总时长
+```ts
+function test(){
+     const elapsedTime = TimeUtil.elapsedTime;
+     console.log(`The game ran for ${elapsedTime} seconds`);
+}
+```
 
 #### Returns
 
@@ -921,6 +945,13 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
 
+使用示例:获取并显示时间戳
+```ts
+function test(){
+     const time = TimeUtil.time;
+     console.log(`time stamp:${time}`);
+}
+
 #### Returns
 
 `number`
@@ -939,49 +970,3 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
-## Modules Type Aliases
-
-
-___
-
-### EasingFunction <Score text="EasingFunction" /> 
-
-Ƭ **EasingFunction**: (`amount`: `number`) => `number`
-
-#### Type declaration
-
-• (`amount`): `number`
-
-缓动函数的类型定义
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `amount` | `number` |
-
-##### Returns
-
-`number`
-___
-
-### InterpolationFunction <Score text="InterpolationFunction" /> 
-
-Ƭ **InterpolationFunction**: (`v`: `number`[], `k`: `number`) => `number`
-
-#### Type declaration
-
-• (`v`, `k`): `number`
-
-插值函数的类型定义
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `v` | `number`[] |
-| `k` | `number` |
-
-##### Returns
-
-`number`

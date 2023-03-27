@@ -57,9 +57,9 @@ GameObject的基类
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.GameObject.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
 | **[getRightVector](Gameplay.GameObject.md#getrightvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
-| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代|
-| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代|
+| **[getScriptByGuid](Gameplay.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](Gameplay.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](Gameplay.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getSourceAssetGuid](Gameplay.GameObject.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[getTransform](Gameplay.GameObject.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.GameObject.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
@@ -950,7 +950,7 @@ ___
 
 • **getScriptByGuid**(`GUID`): `undefined` \| `Script` 
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本
 
 
 #### Parameters
@@ -971,7 +971,7 @@ ___
 
 • **getScriptByName**(`name`): `undefined` \| `Script` 
 
-获得当前物体下的指定脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的指定脚本
 
 
 #### Parameters
@@ -992,7 +992,7 @@ ___
 
 • **getScripts**(): `undefined` \| `Script`[] 
 
-获得当前物体下的所有脚本 客户端不维系父子关系 推荐使用Find替代
+获得当前物体下的所有脚本
 
 
 #### Returns
@@ -1444,6 +1444,15 @@ ___
 异步构造一个 GameObject 资源不存在会先去下载资源再去创建
 
 
+使用示例:调用方法
+```ts
+let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.StaticMesh>({
+ guid: "7669",
+ replicates: true,
+ transform: new Transform()
+});
+```
+
 #### Type parameters
 
 | Name | Type |
@@ -1583,6 +1592,15 @@ ___
 
 构造一个 GameObject
 
+
+使用示例:调用方法
+```ts
+let obj = Gameplay.GameObject.spawn<Gameplay.StaticMesh>({
+ guid: "7669",
+ replicates: true,
+ transform: new Transform()
+});
+```
 
 #### Type parameters
 

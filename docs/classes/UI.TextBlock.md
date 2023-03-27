@@ -21,6 +21,7 @@ UI文本
 | **[fontLitterSpace](UI.TextBlock.md#fontlitterspace)**(): `number` <br> 获取字体间距|
 | **[fontSize](UI.TextBlock.md#fontsize)**(): `number` <br> 获取字体大小|
 | **[glyph](UI.TextBlock.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 获取字体字形|
+| **[isRichText](UI.TextBlock.md#isrichtext)**(): `boolean` <br> 获取是否为富文本|
 | **[lineHeightPercentage](UI.TextBlock.md#lineheightpercentage)**(): `number` <br> 获取行高系数|
 | **[outlineColor](UI.TextBlock.md#outlinecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取字体描边颜色|
 | **[outlineSize](UI.TextBlock.md#outlinesize)**(): `number` <br> 获取字体描边宽度|
@@ -252,6 +253,33 @@ ___
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) |  字形 |
 
 
+
+### isRichText <Score text="isRichText" /> 
+
+• `get` **isRichText**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否为富文本
+
+
+#### Returns
+
+`boolean`
+
+是否为富文本
+
+• `set` **isRichText**(`isRichText`): `void` <Badge type="tip" text="client" />
+
+设置富文本
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `isRichText` | `boolean` |
+
+
+___
 
 ### lineHeightPercentage <Score text="lineHeightPercentage" /> 
 
