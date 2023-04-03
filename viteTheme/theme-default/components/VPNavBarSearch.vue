@@ -76,7 +76,9 @@ function load() {
               stroke-linejoin="round"
             />
           </svg>
-          <span class="DocSearch-Button-Placeholder">{{ theme.algolia?.buttonText || 'Search' }}</span>
+          <span class="DocSearch-Button-Placeholder">{{
+            theme.algolia?.buttonText || 'Search'
+          }}</span>
         </span>
         <span class="DocSearch-Button-Keys">
           <kbd class="DocSearch-Button-Key"></kbd>
@@ -117,6 +119,7 @@ function load() {
   --docsearch-key-shadow: none;
   --docsearch-modal-background: var(--vp-c-bg-soft);
   --docsearch-footer-background: var(--vp-c-bg);
+  --docsearch-modal-width: 720px;
 }
 
 .dark .DocSearch {
