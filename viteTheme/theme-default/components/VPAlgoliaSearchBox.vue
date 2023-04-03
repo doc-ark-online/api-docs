@@ -2,6 +2,7 @@
 import type { DefaultTheme } from 'vitepress/theme'
 // import docsearch from '@docsearch/js'
 import { docsearch } from '@metaapp/docsearch-react'
+import '@metaapp/docsearch-react/style/modal.css'
 import { onMounted } from 'vue'
 import { useRouter, useRoute, useData } from 'vitepress'
 
@@ -62,7 +63,6 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
         })
       })
     }
-
     // // @ts-expect-error vue-tsc thinks this should return Vue JSX but it returns the required React one
     // hitComponent({ hit, children }) {
     //   return {
@@ -80,13 +80,17 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
 }
 
 function getRelativePath(absoluteUrl: string) {
-  const { pathname, hash } = new URL(absoluteUrl)
-  return (
-    pathname.replace(
-      /\.html$/,
-      site.value.cleanUrls === 'disabled' ? '.html' : ''
-    ) + hash
-  )
+  const { pathname, hash, origin } = new URL(absoluteUrl)
+  if (origin === window.origin) {
+    return (
+      pathname.replace(
+        /\.html$/,
+        site.value.cleanUrls === 'disabled' ? '.html' : ''
+      ) + hash
+    )
+  } else {
+    return absoluteUrl
+  }
 }
 </script>
 
