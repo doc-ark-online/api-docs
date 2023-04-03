@@ -335,10 +335,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@metaapp/docsearch-react@^4.3.6":
-  version "4.3.6"
-  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.6.tgz#ad76dfbd1b9363305382111df43e45696a3f0fbf"
-  integrity sha512-gH9UDlRqDZtqr00kBK+hv7ko/UMnEPrQ0kPU08uRexjOJ09Wa6vTNoO4DKLXlQTugVEFqrnsTz0/r8myhnJJYQ==
+"@metaapp/docsearch-react@^4.3.9":
+  version "4.3.9"
+  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.9.tgz#7b22c0ba5b4daa4f75156bc9e079ccec867cccb2"
+  integrity sha512-znbqqbrGSy4d5+bPdCKDvpIerRbexoqL3q20LMG8KFWwds2bg+sZH0UbK5gUiD/Y+cPATdfA2um4OpINktHjvw==
   dependencies:
     "@algolia/autocomplete-core" "1.8.2"
     "@algolia/autocomplete-preset-algolia" "1.8.2"

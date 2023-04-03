@@ -75,7 +75,6 @@ function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
     //   }
     // }
   })
-
   docsearch$(options)
 }
 
