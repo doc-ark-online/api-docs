@@ -50,7 +50,22 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     algolia: {
       appId: 'I2PHYUBLCN',
       apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech'
+      indexName: 'api-docs_prodigytech',
+      project: {
+        active: 'api-docs',
+        arr: [
+          {
+            key: 'api-docs',
+            facetFilters: ['tags:api-docs'],
+            name: 'API文档'
+          },
+          {
+            key: 'product-docs',
+            facetFilters: ['tags:product-docs'],
+            name: '产品手册'
+          }
+        ]
+      }
     },
     siteTitle: 'API',
     nav: [

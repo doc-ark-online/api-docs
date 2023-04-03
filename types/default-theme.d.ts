@@ -255,6 +255,7 @@ export namespace DefaultTheme {
     disableUserPersonalization?: boolean
     initialQuery?: string
     buttonText?: string
+    project: any
   }
 
   // carbon ads ----------------------------------------------------------------
