@@ -6,7 +6,7 @@
       "tags": ["product-docs"]
     },
     {
-      "url": "https://api-docs.ark.online/(.?)",
+      "url": "https://api-docs.ark.online/",
       "tags": ["api-docs"]
     }
   ],
