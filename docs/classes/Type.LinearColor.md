@@ -44,9 +44,9 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `r` | `number` | r 取值0~1，含0,1 |
-| `g` | `number` | g 取值0~1，含0,1 |
-| `b` | `number` | b 取值0~1，含0,1 |
+| `r` | `number` | r |
+| `g` | `number` | g |
+| `b` | `number` | b |
 
 • **new LinearColor**(`r`, `g`, `b`, `a`)
 
@@ -56,10 +56,10 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `r` | `number` | r 取值0~1，含0,1 |
-| `g` | `number` | g 取值0~1，含0,1 |
-| `b` | `number` | b 取值0~1，含0,1 |
-| `a` | `number` | a 取值0~1，1为不透明，含0,1 |
+| `r` | `number` | r |
+| `g` | `number` | g |
+| `b` | `number` | b |
+| `a` | `number` | a |
 
 • **new LinearColor**(`v`)
 
