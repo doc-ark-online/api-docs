@@ -29,12 +29,6 @@
 
 **调试模块**
 
-## [Effects](../groups/Effects.Effects.md)
-
-**特效模块**
-
-包含特效管理、控制等主要功能
-
 ## [Gameplay](../groups/Gameplay.Gameplay.md)
 
 **游戏性模块**

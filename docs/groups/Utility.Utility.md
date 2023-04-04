@@ -74,6 +74,11 @@ Utility
 | **[unbindButton](Utility.Utility.md#unbindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md)): `void` <br> 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键|
 
 
+| Modules Variables |
+| :-----|
+| **[TWEEN](Utility.Utility.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
+
+
 ## Modules Functions
 
 
@@ -629,7 +634,7 @@ ___
 
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
+• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](../modules/Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
 
@@ -642,7 +647,7 @@ ___
 
 #### Returns
 
-`Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
+`Promise`<[`maskWordCheckResult`](../modules/Util.StringUtil.md#maskwordcheckresult)\>
 
 ___
 
@@ -970,3 +975,13 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
+## Modules Variables
+
+
+## Variables
+
+### TWEEN <Score text="TWEEN" /> 
+
+• `Const` **TWEEN**: [`Group`](../classes/Util.Util.TweenUtil.Group.md)
+
+全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组

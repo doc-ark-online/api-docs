@@ -71,11 +71,15 @@ Datatype
 | **[StringCallback](Datatype.Datatype.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 | **[StringResponse](Datatype.Datatype.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
 | **[TeamMatchFailureInfo](Datatype.Datatype.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
+| **[TransactionType](Datatype.Datatype.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
+| **[UnknownProps](Datatype.Datatype.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
 | **[UploadDataResponse](Datatype.Datatype.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
 | **[VehicleGearData](Datatype.Datatype.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
 | **[VehicleWheelData](Datatype.Datatype.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
 | **[VoidResponse](Datatype.Datatype.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
 | **[downloadCharacterDataStringCallback](Datatype.Datatype.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
+| **[maskWordCheckResult](Datatype.Datatype.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
+| **[onAppearanceDataChanged](Datatype.Datatype.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 
 ## Modules Type Aliases
@@ -605,6 +609,36 @@ ___
 | `playerIds` | `number`[] | 组队玩家的playerId数组 |
 ___
 
+### TransactionType <Score text="TransactionType" /> 
+
+Ƭ **TransactionType**: (`isSuccess`: `boolean`, `content`: `string`) => `void`
+
+#### Type declaration
+
+• (`isSuccess`, `content`): `void`
+
+商城通信回调消息格式
+
+##### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isSuccess` | `boolean` |  通信结果 |
+| `content` | `string` |  消息内容 |
+
+##### Returns
+
+`void`
+___
+
+### UnknownProps <Score text="UnknownProps" /> 
+
+Ƭ **UnknownProps**: `Record`<`string`, `any`\>
+
+补间属性的定义，用户可以自由扩展
+
+___
+
 ### UploadDataResponse <Score text="UploadDataResponse" /> 
 
 Ƭ **UploadDataResponse**: (`success`: `boolean`) => `void`
@@ -689,3 +723,39 @@ ___
 | `dataString` | `string` |
 
 ##### Returns
+
+___
+
+### maskWordCheckResult <Score text="maskWordCheckResult" /> 
+
+Ƭ **maskWordCheckResult**: `Object`
+
+屏蔽字检测的结果
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hits` | `string`[] | 命中的文本，如果通过检测则为空 |
+| `result` | `boolean` | 是否通过，true - 通过、false - 不通过 |
+___
+
+### onAppearanceDataChanged <Score text="onAppearanceDataChanged" /> 
+
+Ƭ **onAppearanceDataChanged**: (`GUID`: `string`) => `void`
+
+#### Type declaration
+
+• (`GUID`): `void`
+
+角色身上GUID切换成功回调
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `GUID` | `string` |
+
+##### Returns
+
+`void`
