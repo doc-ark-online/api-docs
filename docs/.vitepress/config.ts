@@ -66,7 +66,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           // }
         ]
       },
-      searchPage: 'http://127.0.0.1:54/#/search'
+      searchPage: 'https://search.ark.online/#/search'
     },
     siteTitle: 'API',
     nav: [
