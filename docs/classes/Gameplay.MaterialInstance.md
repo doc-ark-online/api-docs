@@ -176,3 +176,16 @@ ___
 | `parameterName` | `string` |  参数名称 |
 | `value` | [`LinearColor`](Type.LinearColor.md) |  参数值 |
 
+```ts
+// 从023开始,我们设置材质的颜色,是这么处理的
+// 1. 先通过guid获取到需要改颜色的游戏物体
+Gameplay.GameObject.asyncFind("需改颜色模型的guid").then(go => {
+    // 2. 将go的“游戏物体”类型 转换为 “静态模型”类型 后，赋值给sm
+    let sm = go as Gameplay.StaticMesh
+    // 3. 获取到sm的材质示例
+    // getMaterialInstance()[0]这里我是去获取对象的第一个材质实例
+    // 4. MWMainColor是设置主颜色相关的参数名
+    // new Type.LinearColor(1, 0, 0)，r=1,g=0,b=0 为正红色  
+    sm.getMaterialInstance()[0].setVectorParameterValue("MW_MlainColor", new Type.LinearColor(1, 0, 0))
+})
+```
