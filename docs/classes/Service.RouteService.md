@@ -201,6 +201,15 @@ ___
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
 
+```ts
+// 更多游戏跳游戏的实例请前往论坛看帖子 https://forum.ark.online/forum.php?mod=viewthread&tid=1145
+// 这个gameid可以在这里获取： 创作者中心→我的游戏→游戏名下方一个p_开头的就是gameid，点旁边的复制就可以复制过来
+// 这里的 P_3f70afbebabd09d8488d0c1d5c125611b8c7f1ac 是游戏《只因哥大战小黑子》的gameid
+// 跳游戏的话，默认会跳往 现行的、目前处在上线状态的、过了审的那个版本
+// 没有过审的话，将无法跳进去哦
+Service.RouteService.getInstance().enterNewGame("P_3f70afbebabd09d8488d0c1d5c125611b8c7f1ac");
+```
+
 ___
 
 ### enterNewGameByTeam <Score text="enterNewGameByTeam" /> 
