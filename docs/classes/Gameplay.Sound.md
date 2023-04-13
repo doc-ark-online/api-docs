@@ -8,8 +8,6 @@
 ```ts
 Sound.uiSound        // UI音效不受场景因素影响，不受游戏暂停影响
 Sound.spatialization // 音效空间化，为真则开启空间传播衰减
-Sound.innerRadius    // 内径，此范围内不受空间传播衰减影响
-Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuationDistanceModel衰减
 ```
 
 ## Hierarchy
@@ -29,17 +27,29 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | Accessors |
 | :-----|
 | **[attenuationDistanceModel](Gameplay.Sound.md#attenuationdistancemodel)**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <br> 获取音效的衰减方式|
+| **[attenuationShape](Gameplay.Sound.md#attenuationshape)**(): [`AttenuationShape`](../enums/Gameplay.AttenuationShape.md) <br> 获取音效的形状|
 | **[audioAsset](Gameplay.Sound.md#audioasset)**(`assetGuid`: `string`): `void` <br> 设置音效|
 | **[autoPlay](Gameplay.Sound.md#autoplay)**(): `boolean` <br> 获取是否自动播放|
 | **[currentProgress](Gameplay.Sound.md#currentprogress)**(): `number` <br> 获取当前播放时长进度|
 | **[drawInnerBounds](Gameplay.Sound.md#drawinnerbounds)**(): `boolean` <br> 获取是否绘制Bounds辅助线|
 | **[duration](Gameplay.Sound.md#duration)**(): `number` <br> 获取音效时长|
+| **[fallOffDistance](Gameplay.Sound.md#falloffdistance)**(): `number` <br> 获取衰减距离|
+| **[falloffDistance](Gameplay.Sound.md#falloffdistance-1)**(): `number` <br> 获取衰减距离|
 | **[innerRadius](Gameplay.Sound.md#innerradius)**(): `number` <br> 获取音量内部半径|
+| **[isAutoPlay](Gameplay.Sound.md#isautoplay)**(): `boolean` <br> 获取是否自动播放|
+| **[isLoop](Gameplay.Sound.md#isloop)**(): `boolean` <br> 获取是否循环播放|
+| **[isSpatialization](Gameplay.Sound.md#isspatialization)**(): `boolean` <br> 获取音效空间化|
+| **[isUISound](Gameplay.Sound.md#isuisound)**(): `boolean` <br> 获取是否是UI音效|
 | **[loop](Gameplay.Sound.md#loop)**(): `boolean` <br> 获取是否循环播放|
 | **[outerRadius](Gameplay.Sound.md#outerradius)**(): `number` <br> 获取衰减距离|
-| **[playState](Gameplay.Sound.md#playstate)**(): `boolean` <br> 获取音效播放状态|
+| **[playState](Gameplay.Sound.md#playstate)**(): [`AudioPlayState`](../enums/Gameplay.AudioPlayState.md) <br> 获取音效播放状态|
+| **[shapeExtents](Gameplay.Sound.md#shapeextents)**(): [`Vector`](Type.Vector.md) <br> 获取音效形状范围|
+| **[soundDistance](Gameplay.Sound.md#sounddistance)**(): [`Vector`](Type.Vector.md) <br> 获取音效范围|
 | **[spatialization](Gameplay.Sound.md#spatialization)**(): `boolean` <br> 获取音效空间化|
+| **[timePosition](Gameplay.Sound.md#timeposition)**(): `number` <br> 获取当前已播放时长|
+| **[timelength](Gameplay.Sound.md#timelength)**(): `number` <br> 获取音效时长|
 | **[uiSound](Gameplay.Sound.md#uisound)**(): `boolean` <br> 获取是否是UI音效|
+| **[volume](Gameplay.Sound.md#volume)**(): `number` <br> 获取音量比例|
 | **[volumeMultiplier](Gameplay.Sound.md#volumemultiplier)**(): `number` <br> 获取音量比例|
 
 
@@ -71,8 +81,9 @@ Sound.outerRadius    // 外径，由内径外边界至外径范围内随attenuat
 | Methods |
 | :-----|
 | **[getIsDrawInnerBounds](Gameplay.Sound.md#getisdrawinnerbounds)**(): `boolean` <br> 获取是否启用Bounds辅助线|
-| **[pause](Gameplay.Sound.md#pause)**(): `void` <br> 暂停播放特效|
-| **[play](Gameplay.Sound.md#play)**(): `void` <br> 播放音效|
+| **[pause](Gameplay.Sound.md#pause)**(`bPause?`: `boolean`): `void` <br> 暂停播放特效|
+| **[play](Gameplay.Sound.md#play)**(`starttime?`: `number`, `OnSuccess?`: () => `void`): `void` <br> 播放音效|
+| **[setAudioAssetByGuid](Gameplay.Sound.md#setaudioassetbyguid)**(`assetGUID`: `string`): `void` <br> 通过GUID设置音效|
 | **[setSoundSphere](Gameplay.Sound.md#setsoundsphere)**(`radius`: `number`, `volume`: `number`, `drawBoundLine`: `boolean`, `newFunction`: [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md)): `void` <br> 设置音效.复合函数|
 | **[stop](Gameplay.Sound.md#stop)**(): `void` <br> 停止播放特效|
 
@@ -167,7 +178,7 @@ ___
 
 ### attenuationDistanceModel <Score text="attenuationDistanceModel" /> 
 
-• `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) 
+• `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <Badge type="tip" text="client" />
 
 获取音效的衰减方式
 
@@ -178,11 +189,58 @@ ___
 
 衰减方式
 
+• `set` **attenuationDistanceModel**(`model`): `void` <Badge type="tip" text="other" />
+
+设置音效的衰减方式
+
+param model usage:衰减方式
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `model` | [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) |
+
+
+___
+
+### attenuationShape <Score text="attenuationShape" /> 
+
+• `get` **attenuationShape**(): [`AttenuationShape`](../enums/Gameplay.AttenuationShape.md) <Badge type="tip" text="client" />
+
+获取音效的形状
+
+
+#### Returns
+
+[`AttenuationShape`](../enums/Gameplay.AttenuationShape.md)
+
+形状
+
+• `set` **attenuationShape**(`shape`): `void` <Badge type="tip" text="other" />
+
+设置音效的形状
+
+param model usage:形状
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `shape` | [`AttenuationShape`](../enums/Gameplay.AttenuationShape.md) |
+
+
 ___
 
 ### audioAsset <Score text="audioAsset" /> 
 
 • `set` **audioAsset**(`assetGuid`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:setAudioAssetByGuid()
+
+:::
 
 设置音效
 
@@ -199,6 +257,12 @@ ___
 
 • `get` **autoPlay**(): `boolean`
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isAutoPlay
+
+:::
+
 获取是否自动播放
 
 #### Returns
@@ -208,6 +272,12 @@ ___
 是否自动播放
 
 • `set` **autoPlay**(`autoPlay`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isAutoPlay
+
+:::
 
 设置是否自动播放
 
@@ -223,6 +293,12 @@ ___
 ### currentProgress <Score text="currentProgress" /> 
 
 • `get` **currentProgress**(): `number`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
+
+:::
 
 获取当前播放时长进度
 
@@ -240,7 +316,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: 删除接口 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
 
 :::
 
@@ -256,7 +332,7 @@ since:022 reason: 删除接口 replacement:
 
 ::: danger Deprecated
 
-since:022 reason: 删除接口 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
 
 :::
 
@@ -273,7 +349,13 @@ ___
 
 ### duration <Score text="duration" /> 
 
-• `get` **duration**(): `number` 
+• `get` **duration**(): `number` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:timelength
+
+:::
 
 获取音效时长
 
@@ -284,10 +366,80 @@ ___
 
 音效时长(ms)
 
+___
+
+### fallOffDistance <Score text="fallOffDistance" /> 
+
+• `get` **fallOffDistance**(): `number`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
+
+:::
+
+获取衰减距离
+
+#### Returns
+
+`number`
+
+距离
+
+• `set` **fallOffDistance**(`fallOffDistance`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
+
+:::
+
+设置衰减距离
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fallOffDistance` | `number` | 距离 |
+
+
+___
+
+### falloffDistance <Score text="falloffDistance" /> 
+
+• `get` **falloffDistance**(): `number` <Badge type="tip" text="client" />
+
+获取衰减距离
+
+
+#### Returns
+
+`number`
+
+距离
+
+• `set` **falloffDistance**(`fallOffDistance`): `void` <Badge type="tip" text="client" />
+
+设置衰减距离
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fallOffDistance` | `number` | 距离 |
+
+
 
 ### innerRadius <Score text="innerRadius" /> 
 
 • `get` **innerRadius**(): `number`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:soundDistance
+
+:::
 
 获取音量内部半径
 
@@ -299,6 +451,12 @@ ___
 
 • `set` **innerRadius**(`innerRadius`): `void`
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:soundDistance
+
+:::
+
 设置音量内部半径
 
 #### Parameters
@@ -308,10 +466,124 @@ ___
 | `innerRadius` | `number` | 设置半径 |
 
 
+___
+
+### isAutoPlay <Score text="isAutoPlay" /> 
+
+• `get` **isAutoPlay**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否自动播放
+
+
+#### Returns
+
+`boolean`
+
+是否自动播放
+
+• `set` **isAutoPlay**(`isAutoPlay`): `void` <Badge type="tip" text="client" />
+
+设置是否自动播放
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isAutoPlay` | `boolean` | 是否自动播放 |
+
+
+___
+
+### isLoop <Score text="isLoop" /> 
+
+• `get` **isLoop**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否循环播放
+
+
+#### Returns
+
+`boolean`
+
+是否循环
+
+• `set` **isLoop**(`Loop`): `void` <Badge type="tip" text="client" />
+
+设置循环播放
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Loop` | `boolean` | 设置是否开启循环 |
+
+
+___
+
+### isSpatialization <Score text="isSpatialization" /> 
+
+• `get` **isSpatialization**(): `boolean` <Badge type="tip" text="client" />
+
+获取音效空间化
+
+
+#### Returns
+
+`boolean`
+
+是否开启音效空间化
+
+• `set` **isSpatialization**(`spatialization`): `void` <Badge type="tip" text="client" />
+
+设置音效空间化，若是，则开启空间传播衰减
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `spatialization` | `boolean` | 设置开启音效空间化 |
+
+
+___
+
+### isUISound <Score text="isUISound" /> 
+
+• `get` **isUISound**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否是UI音效
+
+
+#### Returns
+
+`boolean`
+
+boolean
+
+• `set` **isUISound**(`isUISound`): `void` <Badge type="tip" text="client" />
+
+设置是否是UI音效，注意：UI音效不依赖游戏逻辑
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isUISound` | `boolean` | 是否用于UI |
+
+
 
 ### loop <Score text="loop" /> 
 
 • `get` **loop**(): `boolean`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isLoop
+
+:::
 
 获取是否循环播放
 
@@ -322,6 +594,12 @@ ___
 是否循环
 
 • `set` **loop**(`Loop`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isLoop
+
+:::
 
 设置循环播放
 
@@ -337,6 +615,12 @@ ___
 
 • `get` **outerRadius**(): `number`
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:fallOffDistance
+
+:::
+
 获取衰减距离
 
 #### Returns
@@ -347,7 +631,13 @@ ___
 
 • `set` **outerRadius**(`outerRadius`): `void`
 
-设置外部半径（衰减距离）
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:fallOffDistance
+
+:::
+
+设置衰减距离
 
 #### Parameters
 
@@ -359,21 +649,95 @@ ___
 
 ### playState <Score text="playState" /> 
 
-• `get` **playState**(): `boolean` 
+• `get` **playState**(): [`AudioPlayState`](../enums/Gameplay.AudioPlayState.md) <Badge type="tip" text="client" />
 
 获取音效播放状态
 
 
 #### Returns
 
-`boolean`
+[`AudioPlayState`](../enums/Gameplay.AudioPlayState.md)
 
 是否正在播放
 
 
+### shapeExtents <Score text="shapeExtents" /> 
+
+• `get` **shapeExtents**(): [`Vector`](Type.Vector.md) <Badge type="tip" text="client" />
+
+获取音效形状范围
+
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+音效范围
+
+• `set` **shapeExtents**(`ShapeExtents`): `void` <Badge type="tip" text="client" />
+
+设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。
+球体 X是球体半径，Y和Z未使用
+胶囊 X是半高，Y是半径，Z未使用
+长方体 X、Y和Z是长方体的尺寸
+圆锥体 X是圆锥体半径，Y是圆锥体角度，Z是圆锥体衰减角度
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `ShapeExtents` | [`Vector`](Type.Vector.md) | 设置形状范围 |
+
+
+___
+
+### soundDistance <Score text="soundDistance" /> 
+
+• `get` **soundDistance**(): [`Vector`](Type.Vector.md)
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:ShapeExtents
+
+:::
+
+获取音效范围
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+音效范围
+
+• `set` **soundDistance**(`soundDistance`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:ShapeExtents
+
+:::
+
+设置音效范围
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `soundDistance` | [`Vector`](Type.Vector.md) | 设置半径 |
+
+
+___
+
 ### spatialization <Score text="spatialization" /> 
 
 • `get` **spatialization**(): `boolean`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isSpatialization
+
+:::
 
 获取音效空间化
 
@@ -385,6 +749,12 @@ ___
 
 • `set` **spatialization**(`spatialization`): `void`
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isSpatialization
+
+:::
+
 设置音效空间化，若是，则开启空间传播衰减
 
 #### Parameters
@@ -395,9 +765,44 @@ ___
 
 
 
+### timePosition <Score text="timePosition" /> 
+
+• `get` **timePosition**(): `number` <Badge type="tip" text="client" />
+
+获取当前已播放时长
+
+
+#### Returns
+
+`number`
+
+已播放时长
+
+___
+
+### timelength <Score text="timelength" /> 
+
+• `get` **timelength**(): `number` <Badge type="tip" text="client" />
+
+获取音效时长
+
+
+#### Returns
+
+`number`
+
+音效时长(ms)
+
+
 ### uiSound <Score text="uiSound" /> 
 
-• `get` **uiSound**(): `boolean` 
+• `get` **uiSound**(): `boolean` <Badge type="tip" text="client" />
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isUISound
+
+:::
 
 获取是否是UI音效
 
@@ -408,9 +813,17 @@ ___
 
 Vector XYZ 0-1
 
-• `set` **uiSound**(`uiSound`): `void` 
+• `set` **uiSound**(`uiSound`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isUISound
+
+:::
 
 设置是否是UI音效
+
+**`Effect`**
 
 
 #### Parameters
@@ -421,9 +834,42 @@ Vector XYZ 0-1
 
 
 
+### volume <Score text="volume" /> 
+
+• `get` **volume**(): `number` <Badge type="tip" text="client" />
+
+获取音量比例
+
+
+#### Returns
+
+`number`
+
+音量比例
+
+• `set` **volume**(`volume`): `void` <Badge type="tip" text="client" />
+
+设置音量 0~1
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `volume` | `number` | 音量比例 |
+
+
+___
+
 ### volumeMultiplier <Score text="volumeMultiplier" /> 
 
 • `get` **volumeMultiplier**(): `number`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:volume
+
+:::
 
 获取音量比例
 
@@ -434,6 +880,12 @@ Vector XYZ 0-1
 音量比例
 
 • `set` **volumeMultiplier**(`volumeMultiplier`): `void`
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:volume
+
+:::
 
 设置音量比例
 
@@ -449,11 +901,11 @@ Vector XYZ 0-1
 
 ### getIsDrawInnerBounds <Score text="getIsDrawInnerBounds" /> 
 
-• **getIsDrawInnerBounds**(): `boolean` 
+• **getIsDrawInnerBounds**(): `boolean` <Badge type="tip" text="client" />
 
 ::: danger Deprecated
 
-since:022 reason: 删除接口 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
 
 :::
 
@@ -469,30 +921,58 @@ since:022 reason: 删除接口 replacement:
 
 ### pause <Score text="pause" /> 
 
-• **pause**(): `void` 
+• **pause**(`bPause?`): `void` <Badge type="tip" text="client" />
 
 暂停播放特效
 
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bPause?` | `boolean` | 设置暂停状态 default:true |
 
 
 ___
 
 ### play <Score text="play" /> 
 
-• **play**(): `void` 
+• **play**(`starttime?`, `OnSuccess?`): `void` <Badge type="tip" text="client" />
 
 播放音效
 
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `starttime?` | `number` | 设置起始播放时间 default:0 |
+| `OnSuccess?` | () => `void` | 播放完成后回调 default: null |
+
+
+
+### setAudioAssetByGuid <Score text="setAudioAssetByGuid" /> 
+
+• **setAudioAssetByGuid**(`assetGUID`): `void` <Badge type="tip" text="client" />
+
+通过GUID设置音效
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `assetGUID` | `string` | 音效资源ID |
 
 
 
 ### setSoundSphere <Score text="setSoundSphere" /> 
 
-• **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` 
+• **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` <Badge type="tip" text="client" />
 
 ::: danger Deprecated
 
-since:022 reason: 删除接口 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
 
 :::
 
@@ -512,7 +992,7 @@ since:022 reason: 删除接口 replacement:
 
 ### stop <Score text="stop" /> 
 
-• **stop**(): `void` 
+• **stop**(): `void` <Badge type="tip" text="client" />
 
 停止播放特效
 

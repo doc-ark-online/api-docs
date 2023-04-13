@@ -11,6 +11,7 @@ Datatype
 | [Action3](../classes/Type.Action3.md) <br> 三个参数的代理 |
 | [ConvertScreenResult](../classes/Type.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
 | [Delegate](../classes/Type.Delegate.md) <br> 委托 |
+| [HitResult](../classes/Gameplay.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
 | [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色 |
 | [Matrix3x3](../classes/Type.Matrix3x3.md) <br> 三维矩阵 |
 | [Matrix4x4](../classes/Type.Matrix4x4.md) <br> 四维矩阵 |
@@ -724,6 +725,7 @@ ___
 
 ##### Returns
 
+`void`
 ___
 
 ### maskWordCheckResult <Score text="maskWordCheckResult" /> 

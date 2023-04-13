@@ -11,6 +11,7 @@ Account Service
 | [AdsState](../enums/Service.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态|
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型|
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
+| [consumeKeyStatus](../enums/Service.consumeKeyStatus.md) <br> 大会员扣除钥匙订单返回状态信息|
 
 | Classes |
 | :-----|
@@ -33,6 +34,7 @@ Account Service
 | **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Service.Service.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnKeyConsume](Service.Service.md#onkeyconsume)**: (`player`: [`Player`](../classes/Gameplay.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 大会员钥匙扣除服务端接收发货通知的消息格式|
 | **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 | **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
@@ -41,6 +43,7 @@ Account Service
 | **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
 | **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
 | **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
+| **[keyUsageInfo](Service.Service.md#keyusageinfo)**: `Object` <br> 大会员消费钥匙订单。orderId：订单ID，boxId：宝箱ID，number：购买宝箱数量，shipTime：发货时间，毫秒级时间戳|
 
 ## Type Aliases
 
@@ -142,6 +145,32 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `amount` | `number` |  新的余额 |
+
+##### Returns
+
+`void`
+
+___
+
+### OnKeyConsume <Score text="OnKeyConsume" /> 
+
+Ƭ **OnKeyConsume**: (`player`: [`Player`](../classes/Gameplay.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
+
+#### Type declaration
+
+• (`player`, `orderId`, `boxId`, `amount`, `confirmOrder`): `void`
+
+大会员钥匙扣除服务端接收发货通知的消息格式
+
+##### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) |  下单的玩家Player |
+| `orderId` | `string` |  订单Id |
+| `boxId` | `string` |  宝箱Id |
+| `amount` | `number` |  数量 |
+| `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
 
 ##### Returns
 
@@ -307,3 +336,20 @@ ___
 ##### Returns
 
 `void`
+
+___
+
+### keyUsageInfo <Score text="keyUsageInfo" /> 
+
+Ƭ **keyUsageInfo**: `Object`
+
+大会员消费钥匙订单。orderId：订单ID，boxId：宝箱ID，number：购买宝箱数量，shipTime：发货时间，毫秒级时间戳
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `boxId` | `string` |
+| `consumeTime` | `number` |
+| `number` | `number` |
+| `orderId` | `string` |

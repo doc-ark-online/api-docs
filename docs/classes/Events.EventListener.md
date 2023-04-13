@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / EventListener
+[Scripting](../groups/Scripting.Scripting.md) / EventListener
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 

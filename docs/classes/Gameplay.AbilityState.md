@@ -2,6 +2,12 @@
 
 # AbilityState <Badge type="tip" text="Class" /> <Score text="AbilityState" />
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: Gameplay模块优化方案 replacement: 无
+
+:::
+
 能力状态，用于读取/配置能力对象的能力相关的属性
 
 ::: warning Precautions
@@ -225,7 +231,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: jumpEnable
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: jumpEnable
 
 :::
 
@@ -246,7 +252,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: moveEnable
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: moveEnable
 
 :::
 
@@ -267,7 +273,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: turnEnable
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: turnEnable
 
 :::
 

@@ -62,7 +62,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:不该暴露的接口 replacement:play()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:不该暴露的接口 replacement:play()
 
 :::
 
@@ -106,7 +106,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:不该暴露的接口 replacement:stop()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:不该暴露的接口 replacement:stop()
 
 :::
 

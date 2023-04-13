@@ -12,14 +12,11 @@ Transform 由缩放、旋转和平移组成
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[location](Type.Transform.md#location)**: [`Vector`](Type.Vector.md) <br> 坐标信息|
-| **[rotation](Type.Transform.md#rotation)**: [`Rotation`](Type.Rotation.md) <br> 旋转信息|
-| **[scale](Type.Transform.md#scale)**: [`Vector`](Type.Vector.md) <br> 缩放信息|
-
 | Accessors |
 | :-----|
+| **[location](Type.Transform.md#location)**(): [`Vector`](Type.Vector.md) <br> 坐标信息|
+| **[rotation](Type.Transform.md#rotation)**(): [`Rotation`](Type.Rotation.md) <br> 旋转信息|
+| **[scale](Type.Transform.md#scale)**(): [`Vector`](Type.Vector.md) <br> 缩放信息|
 | **[identity](Type.Transform.md#identity)**(): [`Transform`](Type.Transform.md) <br> 获取一个单位 Transform|
 
 | Methods |
@@ -62,31 +59,76 @@ Transform 由缩放、旋转和平移组成
 | :------ | :------ | :------ |
 | `newTransform` | [`Transform`](Type.Transform.md) | Transform 对象 |
 
-## Properties
+## Accessors
 
 ### location <Score text="location" /> 
 
-• **location**: [`Vector`](Type.Vector.md)
+• `get` **location**(): [`Vector`](Type.Vector.md)
 
 坐标信息
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **location**(`v`): `void`
+
+坐标信息
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Vector.md) |
+
 
 ___
 
 ### rotation <Score text="rotation" /> 
 
-• **rotation**: [`Rotation`](Type.Rotation.md)
+• `get` **rotation**(): [`Rotation`](Type.Rotation.md)
 
 旋转信息
+
+#### Returns
+
+[`Rotation`](Type.Rotation.md)
+
+• `set` **rotation**(`v`): `void`
+
+旋转信息
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Rotation`](Type.Rotation.md) |
+
 
 ___
 
 ### scale <Score text="scale" /> 
 
-• **scale**: [`Vector`](Type.Vector.md)
+• `get` **scale**(): [`Vector`](Type.Vector.md)
 
 缩放信息
 
-## Accessors
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **scale**(`v`): `void`
+
+缩放信息
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](Type.Vector.md) |
+
+
+___
 
 ### identity <Score text="identity" /> 
 

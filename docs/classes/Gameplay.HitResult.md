@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / HitResult
+[Datatype](../groups/Datatype.Datatype.md) / HitResult
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 

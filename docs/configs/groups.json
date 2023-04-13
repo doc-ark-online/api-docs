@@ -491,6 +491,11 @@
         "name": "LinearColor"
       },
       {
+        "file_name": "Gameplay.HitResult.md",
+        "file_path": "classes/Gameplay.HitResult.md",
+        "name": "HitResult"
+      },
+      {
         "file_name": "Type.Action3.md",
         "file_path": "classes/Type.Action3.md",
         "name": "Action3"
@@ -573,18 +578,6 @@
     ]
   },
   "Gameplay": {
-    "Interfaces": [
-      {
-        "file_name": "Network.Response.md",
-        "file_path": "interfaces/Network.Response.md",
-        "name": "Response"
-      },
-      {
-        "file_name": "Network.RequestInit.md",
-        "file_path": "interfaces/Network.RequestInit.md",
-        "name": "RequestInit"
-      }
-    ],
     "Modules Functions": [
       {
         "file_name": "Network.Network.md",
@@ -654,12 +647,22 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "clearFollow"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "clearMoveTo"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "cylinderOverlap"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "follow"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -842,6 +845,18 @@
         "name": "getViewportSize"
       }
     ],
+    "Modules Type Aliases": [
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "VehicleGearDataNew"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "VehicleWheelDataNew"
+      }
+    ],
     "Enums": [
       {
         "file_name": "Network.HttpRequestType.md",
@@ -852,6 +867,11 @@
         "file_name": "Gameplay.CameraLocationMode.md",
         "file_path": "enums/Gameplay.CameraLocationMode.md",
         "name": "CameraLocationMode"
+      },
+      {
+        "file_name": "Gameplay.VehicleDriveMode4WNew.md",
+        "file_path": "enums/Gameplay.VehicleDriveMode4WNew.md",
+        "name": "VehicleDriveMode4WNew"
       },
       {
         "file_name": "Gameplay.InteractiveSlot.md",
@@ -867,11 +887,6 @@
         "file_name": "Gameplay.HotWeaponFireMode.md",
         "file_path": "enums/Gameplay.HotWeaponFireMode.md",
         "name": "HotWeaponFireMode"
-      },
-      {
-        "file_name": "Gameplay.EquipmentStatus.md",
-        "file_path": "enums/Gameplay.EquipmentStatus.md",
-        "name": "EquipmentStatus"
       },
       {
         "file_name": "Gameplay.AbilityStateControlType.md",
@@ -892,6 +907,11 @@
         "file_name": "Gameplay.ProjectileAccelerationEnableMode.md",
         "file_path": "enums/Gameplay.ProjectileAccelerationEnableMode.md",
         "name": "ProjectileAccelerationEnableMode"
+      },
+      {
+        "file_name": "Gameplay.VehicleWheelPosition4WNew.md",
+        "file_path": "enums/Gameplay.VehicleWheelPosition4WNew.md",
+        "name": "VehicleWheelPosition4WNew"
       },
       {
         "file_name": "Gameplay.VehicleDriveMode4W.md",
@@ -946,11 +966,6 @@
         "name": "PlayerStart"
       },
       {
-        "file_name": "Gameplay.Equipment.md",
-        "file_path": "classes/Gameplay.Equipment.md",
-        "name": "Equipment"
-      },
-      {
         "file_name": "Gameplay.CameraSystem.md",
         "file_path": "classes/Gameplay.CameraSystem.md",
         "name": "CameraSystem"
@@ -976,6 +991,11 @@
         "name": "AbilityObject"
       },
       {
+        "file_name": "Gameplay.Mesh.md",
+        "file_path": "classes/Gameplay.Mesh.md",
+        "name": "Mesh"
+      },
+      {
         "file_name": "Gameplay.Projectile.md",
         "file_path": "classes/Gameplay.Projectile.md",
         "name": "Projectile"
@@ -996,11 +1016,6 @@
         "name": "HotWeaponRecoilForceComponent"
       },
       {
-        "file_name": "Gameplay.HitResult.md",
-        "file_path": "classes/Gameplay.HitResult.md",
-        "name": "HitResult"
-      },
-      {
         "file_name": "Gameplay.HotWeaponLoadComponent.md",
         "file_path": "classes/Gameplay.HotWeaponLoadComponent.md",
         "name": "HotWeaponLoadComponent"
@@ -1011,24 +1026,14 @@
         "name": "AbilityState"
       },
       {
-        "file_name": "Gameplay.BlockingArea.md",
-        "file_path": "classes/Gameplay.BlockingArea.md",
-        "name": "BlockingArea"
-      },
-      {
-        "file_name": "Gameplay.Prefab.md",
-        "file_path": "classes/Gameplay.Prefab.md",
-        "name": "Prefab"
-      },
-      {
-        "file_name": "Gameplay.SmoothSync.md",
-        "file_path": "classes/Gameplay.SmoothSync.md",
-        "name": "SmoothSync"
-      },
-      {
         "file_name": "Gameplay.InteractiveObject.md",
         "file_path": "classes/Gameplay.InteractiveObject.md",
         "name": "InteractiveObject"
+      },
+      {
+        "file_name": "Gameplay.AdvancedVehicle.md",
+        "file_path": "classes/Gameplay.AdvancedVehicle.md",
+        "name": "AdvancedVehicle"
       },
       {
         "file_name": "MobileEditor.Gizmo.md",
@@ -1041,11 +1046,6 @@
         "name": "HotWeapon"
       },
       {
-        "file_name": "Gameplay.Anchor.md",
-        "file_path": "classes/Gameplay.Anchor.md",
-        "name": "Anchor"
-      },
-      {
         "file_name": "Gameplay.StaticMesh.md",
         "file_path": "classes/Gameplay.StaticMesh.md",
         "name": "StaticMesh"
@@ -1054,16 +1054,6 @@
         "file_name": "Gameplay.MaterialInstance.md",
         "file_path": "classes/Gameplay.MaterialInstance.md",
         "name": "MaterialInstance"
-      },
-      {
-        "file_name": "Gameplay.Union.md",
-        "file_path": "classes/Gameplay.Union.md",
-        "name": "Union"
-      },
-      {
-        "file_name": "Gameplay.InstanceStaticMesh.md",
-        "file_path": "classes/Gameplay.InstanceStaticMesh.md",
-        "name": "InstanceStaticMesh"
       },
       {
         "file_name": "Gameplay.SomatotypeBase.md",
@@ -1086,16 +1076,6 @@
         "name": "Player"
       },
       {
-        "file_name": "Gameplay.EffectLogical.md",
-        "file_path": "classes/Gameplay.EffectLogical.md",
-        "name": "EffectLogical"
-      },
-      {
-        "file_name": "Gameplay.BlockingAreaManager.md",
-        "file_path": "classes/Gameplay.BlockingAreaManager.md",
-        "name": "BlockingAreaManager"
-      },
-      {
         "file_name": "Gameplay.NavModifierVolume.md",
         "file_path": "classes/Gameplay.NavModifierVolume.md",
         "name": "NavModifierVolume"
@@ -1109,11 +1089,6 @@
         "file_name": "Gameplay.HotWeaponAccuracyOfFireComponent.md",
         "file_path": "classes/Gameplay.HotWeaponAccuracyOfFireComponent.md",
         "name": "HotWeaponAccuracyOfFireComponent"
-      },
-      {
-        "file_name": "Gameplay.SkeletalMesh.md",
-        "file_path": "classes/Gameplay.SkeletalMesh.md",
-        "name": "SkeletalMesh"
       },
       {
         "file_name": "Gameplay.SwimmingVolume.md",
@@ -1134,6 +1109,11 @@
         "file_name": "Gameplay.HotWeaponReloadComponent.md",
         "file_path": "classes/Gameplay.HotWeaponReloadComponent.md",
         "name": "HotWeaponReloadComponent"
+      },
+      {
+        "file_name": "Gameplay.BlockingVolume.md",
+        "file_path": "classes/Gameplay.BlockingVolume.md",
+        "name": "BlockingVolume"
       },
       {
         "file_name": "Gameplay.FireDataInfoForMultiple.md",
@@ -1205,29 +1185,7 @@
         "name": "saveViewRecord"
       }
     ],
-    "Enums": [
-      {
-        "file_name": "Gameplay.EffectRangeShape3D.md",
-        "file_path": "enums/Gameplay.EffectRangeShape3D.md",
-        "name": "EffectRangeShape3D"
-      },
-      {
-        "file_name": "Gameplay.EffectRangeShape2D.md",
-        "file_path": "enums/Gameplay.EffectRangeShape2D.md",
-        "name": "EffectRangeShape2D"
-      },
-      {
-        "file_name": "Gameplay.EffectRangeType.md",
-        "file_path": "enums/Gameplay.EffectRangeType.md",
-        "name": "EffectRangeType"
-      }
-    ],
     "Classes": [
-      {
-        "file_name": "Gameplay.Particle.md",
-        "file_path": "classes/Gameplay.Particle.md",
-        "name": "Particle"
-      },
       {
         "file_name": "Gameplay.Sound.md",
         "file_path": "classes/Gameplay.Sound.md",
@@ -1461,6 +1419,21 @@
         "file_name": "Util.StringUtil.md",
         "file_path": "modules/Util.StringUtil.md",
         "name": "maskWordCheck"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "drawGameObjectSelectionBox"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "getGameObjectBySelectionBox"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "setGlobalOutlineParams"
       }
     ],
     "Modules Variables": [
@@ -1545,7 +1518,7 @@
       }
     ]
   },
-  "Scripiting": {
+  "Scripting": {
     "Modules Functions": [
       {
         "file_name": "Util.InputUtil.md",
@@ -1620,6 +1593,11 @@
       {
         "file_name": "MobileEditor.MobileEditor.md",
         "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "getCurrentProjectPath"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
         "name": "getEditorPawnLocation"
       },
       {
@@ -1641,6 +1619,11 @@
         "file_name": "MobileEditor.MobileEditor.md",
         "file_path": "modules/MobileEditor.MobileEditor.md",
         "name": "getLocalMaterialsCount"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "getObjectWithGuid"
       },
       {
         "file_name": "MobileEditor.MobileEditor.md",
@@ -1771,6 +1754,11 @@
         "file_name": "MobileEditor.MobileEditor.md",
         "file_path": "modules/MobileEditor.MobileEditor.md",
         "name": "setPinchAngleTolerance"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "setScriptObjectData"
       },
       {
         "file_name": "MobileEditor.MobileEditor.md",
@@ -2051,6 +2039,18 @@
     ]
   },
   "Monetization": {
+    "Modules Type Aliases": [
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
+        "name": "OnKeyConsume"
+      },
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
+        "name": "keyUsageInfo"
+      }
+    ],
     "Modules Functions": [
       {
         "file_name": "Util.NFTUtil.md",
@@ -2113,6 +2113,11 @@
         "file_name": "Service.AdsType.md",
         "file_path": "enums/Service.AdsType.md",
         "name": "AdsType"
+      },
+      {
+        "file_name": "Service.consumeKeyStatus.md",
+        "file_path": "enums/Service.consumeKeyStatus.md",
+        "name": "consumeKeyStatus"
       }
     ],
     "Classes": [
@@ -2125,6 +2130,27 @@
         "file_name": "Service.AdsService.md",
         "file_path": "classes/Service.AdsService.md",
         "name": "AdsService"
+      }
+    ]
+  },
+  "Settings": {
+    "Modules Functions": [
+      {
+        "file_name": "Setting.RoomSettings.md",
+        "file_path": "modules/Setting.RoomSettings.md",
+        "name": "enableJoiningMidgame"
+      },
+      {
+        "file_name": "Setting.RoomSettings.md",
+        "file_path": "modules/Setting.RoomSettings.md",
+        "name": "isJoiningMidgameEnabled"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "Gameplay.Optimization.md",
+        "file_path": "classes/Gameplay.Optimization.md",
+        "name": "Optimization"
       }
     ]
   },
@@ -2765,16 +2791,6 @@
         "name": "ImpulseForceType"
       },
       {
-        "file_name": "Gameplay.LimitType.md",
-        "file_path": "enums/Gameplay.LimitType.md",
-        "name": "LimitType"
-      },
-      {
-        "file_name": "Gameplay.AxisType.md",
-        "file_path": "enums/Gameplay.AxisType.md",
-        "name": "AxisType"
-      },
-      {
         "file_name": "Gameplay.ImpulseType.md",
         "file_path": "enums/Gameplay.ImpulseType.md",
         "name": "ImpulseType"
@@ -2786,21 +2802,6 @@
       }
     ],
     "Classes": [
-      {
-        "file_name": "Gameplay.PhysicsCable.md",
-        "file_path": "classes/Gameplay.PhysicsCable.md",
-        "name": "PhysicsCable"
-      },
-      {
-        "file_name": "Gameplay.PhysicsLinearMotor.md",
-        "file_path": "classes/Gameplay.PhysicsLinearMotor.md",
-        "name": "PhysicsLinearMotor"
-      },
-      {
-        "file_name": "Gameplay.PhysicsConstraintBase.md",
-        "file_path": "classes/Gameplay.PhysicsConstraintBase.md",
-        "name": "PhysicsConstraintBase"
-      },
       {
         "file_name": "Gameplay.PhysicsFulcrum.md",
         "file_path": "classes/Gameplay.PhysicsFulcrum.md",
@@ -2817,44 +2818,9 @@
         "name": "Impulse"
       },
       {
-        "file_name": "Gameplay.PhysicsRotator.md",
-        "file_path": "classes/Gameplay.PhysicsRotator.md",
-        "name": "PhysicsRotator"
-      },
-      {
-        "file_name": "Gameplay.PhysicsRotation.md",
-        "file_path": "classes/Gameplay.PhysicsRotation.md",
-        "name": "PhysicsRotation"
-      },
-      {
-        "file_name": "Gameplay.PhysicsPrism.md",
-        "file_path": "classes/Gameplay.PhysicsPrism.md",
-        "name": "PhysicsPrism"
-      },
-      {
-        "file_name": "Gameplay.PhysicsAngularMotor.md",
-        "file_path": "classes/Gameplay.PhysicsAngularMotor.md",
-        "name": "PhysicsAngularMotor"
-      },
-      {
         "file_name": "Gameplay.IntegratedMover.md",
         "file_path": "classes/Gameplay.IntegratedMover.md",
         "name": "IntegratedMover"
-      },
-      {
-        "file_name": "Gameplay.PhysicsStick.md",
-        "file_path": "classes/Gameplay.PhysicsStick.md",
-        "name": "PhysicsStick"
-      },
-      {
-        "file_name": "Gameplay.PhysicsCylinder.md",
-        "file_path": "classes/Gameplay.PhysicsCylinder.md",
-        "name": "PhysicsCylinder"
-      },
-      {
-        "file_name": "Gameplay.PhysicsSpring.md",
-        "file_path": "classes/Gameplay.PhysicsSpring.md",
-        "name": "PhysicsSpring"
       }
     ]
   },
@@ -2864,6 +2830,11 @@
         "file_name": "Gameplay.SkyPreset.md",
         "file_path": "enums/Gameplay.SkyPreset.md",
         "name": "SkyPreset"
+      },
+      {
+        "file_name": "Gameplay.FogPreset.md",
+        "file_path": "enums/Gameplay.FogPreset.md",
+        "name": "FogPreset"
       }
     ],
     "Classes": [
@@ -2888,6 +2859,11 @@
         "name": "PointLight"
       },
       {
+        "file_name": "Gameplay.ExponentialHeightFog.md",
+        "file_path": "classes/Gameplay.ExponentialHeightFog.md",
+        "name": "ExponentialHeightFog"
+      },
+      {
         "file_name": "Gameplay.DirectionalLight.md",
         "file_path": "classes/Gameplay.DirectionalLight.md",
         "name": "DirectionalLight"
@@ -2905,6 +2881,11 @@
         "file_name": "Gameplay.AttenuationShape.md",
         "file_path": "enums/Gameplay.AttenuationShape.md",
         "name": "AttenuationShape"
+      },
+      {
+        "file_name": "Gameplay.AudioPlayState.md",
+        "file_path": "enums/Gameplay.AudioPlayState.md",
+        "name": "AudioPlayState"
       }
     ]
   },
@@ -2957,12 +2938,12 @@
       }
     ]
   },
-  "Settings": {
+  "Effects": {
     "Classes": [
       {
-        "file_name": "Gameplay.Optimization.md",
-        "file_path": "classes/Gameplay.Optimization.md",
-        "name": "Optimization"
+        "file_name": "Gameplay.Particle.md",
+        "file_path": "classes/Gameplay.Particle.md",
+        "name": "Particle"
       }
     ]
   }

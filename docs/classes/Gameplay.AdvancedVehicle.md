@@ -1,38 +1,38 @@
-[Physics](../groups/Physics.Physics.md) / PhysicsRotator
+[Gameplay](../groups/Gameplay.Gameplay.md) / AdvancedVehicle
 
-# PhysicsRotator <Badge type="tip" text="Class" /> <Score text="PhysicsRotator" />
+# AdvancedVehicle <Badge type="tip" text="Class" /> <Score text="AdvancedVehicle" />
 
-::: danger Deprecated
+四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。
 
-since:018 reason:有新类可用，后期如果出问题不会维护 replacement:This Class is deprecated. Please use PhysicsRotation instead.
+::: warning Precautions
+
+注意事项
+1. 在未设置有效的Driver之前，载具不会进行物理模拟，可能会遇到悬空等现象。
+2. 载具由setDriver时指定的玩家客户端控制。如果想设置载具位置，仅在服务器端设置位置是无效的，需要主控端一起修改。
+3. 应注意同一客户端同时控制的载具数量，数量过大会影响载具的同步。建议在5个以内。
 
 :::
-
-旋转轴
 
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`PhysicsRotator`**
+  ↳ **`AdvancedVehicle`**
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onRotationStart](Gameplay.PhysicsRotator.md#onrotationstart)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 旋转轴开始事件|
-| **[onRotationStop](Gameplay.PhysicsRotator.md#onrotationstop)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 旋转轴停止事件|
-
 | Accessors |
 | :-----|
-| **[limitAngle](Gameplay.PhysicsRotator.md#limitangle)**(): `number` <br> 获取最大可旋转角度|
-| **[limitEnable](Gameplay.PhysicsRotator.md#limitenable)**(): `boolean` <br> 获取是否开启约束旋转角度|
-| **[limitType](Gameplay.PhysicsRotator.md#limittype)**(): [`AxisType`](../enums/Gameplay.AxisType.md) <br> 获取旋转轴限制类型|
-| **[maxRotationalAngularVelocity](Gameplay.PhysicsRotator.md#maxrotationalangularvelocity)**(): `number` <br> 最大旋转角速度Get|
-| **[physicsEnable](Gameplay.PhysicsRotator.md#physicsenable)**(): `boolean` <br> 获取是否启用物理旋转|
-| **[recoveryStrength](Gameplay.PhysicsRotator.md#recoverystrength)**(): `number` <br> 获取回复强度|
-| **[rotationalAngularAcceleration](Gameplay.PhysicsRotator.md#rotationalangularacceleration)**(): `number` <br> 旋转角加速度Get|
-| **[rotationalAngularVelocity](Gameplay.PhysicsRotator.md#rotationalangularvelocity)**(): `number` <br> 旋转角速度Get|
+| **[brakingTorque](Gameplay.AdvancedVehicle.md#brakingtorque)**(): `number` <br> 获取制动力矩。单位：牛*米（N*m）|
+| **[currentGearLevel](Gameplay.AdvancedVehicle.md#currentgearlevel)**(): `number` <br> 获取当前档位级别|
+| **[driveMode](Gameplay.AdvancedVehicle.md#drivemode)**(): [`VehicleDriveMode4WNew`](../enums/Gameplay.VehicleDriveMode4WNew.md) <br> 获取载具驱动模式|
+| **[friction](Gameplay.AdvancedVehicle.md#friction)**(): `number` <br> 获取载具摩擦力系数|
+| **[handbrakeInputEnable](Gameplay.AdvancedVehicle.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void` <br> 手刹。|
+| **[mass](Gameplay.AdvancedVehicle.md#mass)**(): `number` <br> 获取载具质量。单位：千克（kg）|
+| **[maxEngineRPM](Gameplay.AdvancedVehicle.md#maxenginerpm)**(): `number` <br> 获取最大发动机转速。单位：转/分（r/min）|
+| **[maxGearLevel](Gameplay.AdvancedVehicle.md#maxgearlevel)**(): `number` <br> 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
+| **[velocity](Gameplay.AdvancedVehicle.md#velocity)**(): `number` <br> 获取当前行驶速度。单位：米/秒（m/s）|
+| **[wheelNum](Gameplay.AdvancedVehicle.md#wheelnum)**(): `number` <br> 获取车轮数量|
 
 
 ::: details 点击查看继承
@@ -62,11 +62,17 @@ since:018 reason:有新类可用，后期如果出问题不会维护 replacement
 
 | Methods |
 | :-----|
-| **[getConstraintTargetGUID](Gameplay.PhysicsRotator.md#getconstrainttargetguid)**(): `string` <br> 获取约束对象GUID|
-| **[reverse](Gameplay.PhysicsRotator.md#reverse)**(): `void` <br> 激活旋转轴非物理旋转，此时会触发OnRotationRun代理|
-| **[setConstraintTargetByGUID](Gameplay.PhysicsRotator.md#setconstrainttargetbyguid)**(`value`: `string`): `void` <br> 设置约束对象GUID|
-| **[start](Gameplay.PhysicsRotator.md#start)**(): `void` <br> Running|
-| **[stop](Gameplay.PhysicsRotator.md#stop)**(): `void` <br> 停止旋转轴非物理旋转，此时会触发OnRotationStop代理|
+| **[gearDown](Gameplay.AdvancedVehicle.md#geardown)**(): `void` <br> 降档，立即切换。|
+| **[gearUp](Gameplay.AdvancedVehicle.md#gearup)**(): `void` <br> 升档，立即切换。|
+| **[getGearRatio](Gameplay.AdvancedVehicle.md#getgearratio)**(`gearLevel`: `number`): [`VehicleGearDataNew`](../modules/Gameplay.Gameplay.md#vehiclegeardatanew) <br> 获取指定档位属性|
+| **[getWheelMaxSteerAngle](Gameplay.AdvancedVehicle.md#getwheelmaxsteerangle)**(`wheelId`: `number`): `number` <br> 获取车轮最大转向角度。单位：度（°）|
+| **[getWheelModel](Gameplay.AdvancedVehicle.md#getwheelmodel)**(`wheelId`: `number`): `string` <br> 获取轮胎绑定对象|
+| **[getWheelRadius](Gameplay.AdvancedVehicle.md#getwheelradius)**(`wheelId`: `number`): `number` <br> 获取车轮半径。单位：厘米（cm）|
+| **[setCullDistance](Gameplay.AdvancedVehicle.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
+| **[setDriver](Gameplay.AdvancedVehicle.md#setdriver)**(`inDriver`: [`Player`](Gameplay.Player.md)): `void` <br> 设置载具驾驶员。只有驾驶员才可以操作载具|
+| **[setSimulatePhysics](Gameplay.AdvancedVehicle.md#setsimulatephysics)**(`shouldSimulate`: `boolean`): `void` <br> 设置四轮载具是否开启物理模拟计算，需要在客户端调用。|
+| **[setSteeringInput](Gameplay.AdvancedVehicle.md#setsteeringinput)**(`newInput`: `number`): `void` <br> 控制载具左/右转向。|
+| **[setThrottleInput](Gameplay.AdvancedVehicle.md#setthrottleinput)**(`newInput`: `number`): `void` <br> 控制载具前进/后退。|
 
 
 ::: details 点击查看继承
@@ -131,282 +137,469 @@ since:018 reason:有新类可用，后期如果出问题不会维护 replacement
 :::
 
 
-## Properties
-
-### onRotationStart <Score text="onRotationStart" /> 
-
-• **onRotationStart**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-旋转轴开始事件
-
-___
-
-### onRotationStop <Score text="onRotationStop" /> 
-
-• **onRotationStop**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
-
-旋转轴停止事件
-
 ## Accessors
 
-### limitAngle <Score text="limitAngle" /> 
+### brakingTorque <Score text="brakingTorque" /> 
 
-• `get` **limitAngle**(): `number`
+• `get` **brakingTorque**(): `number` 
 
-获取最大可旋转角度
+获取制动力矩。单位：牛*米（N*m）
+
 
 #### Returns
 
 `number`
 
-最大可旋转角度
+当前制动力矩
 
-• `set` **limitAngle**(`value`): `void`
+___
 
-设置最大可旋转角度
+### currentGearLevel <Score text="currentGearLevel" /> 
+
+• `get` **currentGearLevel**(): `number` 
+
+获取当前档位级别
+
+
+#### Returns
+
+`number`
+
+当前档位级别
+
+• `set` **currentGearLevel**(`level`): `void` <Badge type="tip" text="client" />
+
+设置载具档位(直接变换档位到某一档)。
+
+
+::: warning Precautions
+
+1. 注意输入参数的取值范围。
+2. 设置与当前车速不匹配的档位，会自动调整到匹配的档位。如当前车速适应1档，直接设置3档，会逐级（3-2-1）降到1档。
+
+:::
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `number` | 最大可旋转角度 |
+| `level` | `number` |  档位 Min = -1(倒车)， Max = 设定的最大档位 |
 
 
 ___
 
-### limitEnable <Score text="limitEnable" /> 
+### driveMode <Score text="driveMode" /> 
 
-• `get` **limitEnable**(): `boolean`
+• `get` **driveMode**(): [`VehicleDriveMode4WNew`](../enums/Gameplay.VehicleDriveMode4WNew.md) 
 
-获取是否开启约束旋转角度
+获取载具驱动模式
+
 
 #### Returns
 
-`boolean`
+[`VehicleDriveMode4WNew`](../enums/Gameplay.VehicleDriveMode4WNew.md)
 
-是否开启约束旋转角度
+载具驱动模式
 
-• `set` **limitEnable**(`value`): `void`
 
-设置是否开启约束旋转角度
+### friction <Score text="friction" /> 
+
+• `get` **friction**(): `number` 
+
+获取载具摩擦力系数
+
+
+#### Returns
+
+`number`
+
+载具摩擦力系数
+
+
+### handbrakeInputEnable <Score text="handbrakeInputEnable" /> 
+
+• `set` **handbrakeInputEnable**(`useHandbrake`): `void` <Badge type="tip" text="client" />
+
+手刹。
+
+
+::: warning Precautions
+
+输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
+
+:::
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` | 是否开启约束旋转角度 |
+| `useHandbrake` | `boolean` |  是否进行手刹，true-进行制动, false-取消制动。 |
+
+
+
+### mass <Score text="mass" /> 
+
+• `get` **mass**(): `number` 
+
+获取载具质量。单位：千克（kg）
+
+
+#### Returns
+
+`number`
+
+载具质量
+
+• `set` **mass**(`mass`): `void` <Badge type="tip" text="client" />
+
+设置载具质量。单位：千克（kg）
+
+
+::: warning Precautions
+
+1. 注意输入参数的取值范围。设置较小的质量，会出现载具抖动等非预期表现。
+2. 运行时设置质量，会重新初始化载具，清除任何运行状态。如载具在行驶，设置质量后会停在原地。
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `mass` | `number` |  新的质量 |
 
 
 ___
 
-### limitType <Score text="limitType" /> 
+### maxEngineRPM <Score text="maxEngineRPM" /> 
 
-• `get` **limitType**(): [`AxisType`](../enums/Gameplay.AxisType.md) 
+• `get` **maxEngineRPM**(): `number` 
 
-获取旋转轴限制类型
-
-
-#### Returns
-
-[`AxisType`](../enums/Gameplay.AxisType.md)
-
-旋转轴限制类型
-
-• `set` **limitType**(`value`): `void` 
-
-设置旋转轴限制类型
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`AxisType`](../enums/Gameplay.AxisType.md) | 旋转轴限制类型 |
-
-
-
-### maxRotationalAngularVelocity <Score text="maxRotationalAngularVelocity" /> 
-
-• `get` **maxRotationalAngularVelocity**(): `number` 
-
-最大旋转角速度Get
+获取最大发动机转速。单位：转/分（r/min）
 
 
 #### Returns
 
 `number`
 
-最大旋转角速度
-
-• `set` **maxRotationalAngularVelocity**(`value`): `void` 
-
-最大旋转角速度Set
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 最大旋转角速度 |
-
-
-
-### physicsEnable <Score text="physicsEnable" /> 
-
-• `get` **physicsEnable**(): `boolean`
-
-获取是否启用物理旋转
-
-#### Returns
-
-`boolean`
-
-是否启用物理旋转
-
-• `set` **physicsEnable**(`value`): `void`
-
-设置是否启用物理旋转
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `boolean` | 是否启用物理旋转 |
-
+载具发动机转速
 
 ___
 
-### recoveryStrength <Score text="recoveryStrength" /> 
+### maxGearLevel <Score text="maxGearLevel" /> 
 
-• `get` **recoveryStrength**(): `number`
+• `get` **maxGearLevel**(): `number` 
 
-获取回复强度
+获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。
 
-#### Returns
+::: warning Precautions
 
-`number`
+最大可切换到的档位。如获取当前档位，请使用getCurrentGearLevel
 
-回复强度
-
-• `set` **recoveryStrength**(`value`): `void`
-
-设置回复强度
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 回复强度 |
-
-
-
-### rotationalAngularAcceleration <Score text="rotationalAngularAcceleration" /> 
-
-• `get` **rotationalAngularAcceleration**(): `number` 
-
-旋转角加速度Get
+:::
 
 
 #### Returns
 
 `number`
 
-角加速度
-
-• `set` **rotationalAngularAcceleration**(`value`): `void` 
-
-旋转角加速度Set
+最大档位级别
 
 
-#### Parameters
+### velocity <Score text="velocity" /> 
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 角加速度 |
+• `get` **velocity**(): `number` 
 
-
-___
-
-### rotationalAngularVelocity <Score text="rotationalAngularVelocity" /> 
-
-• `get` **rotationalAngularVelocity**(): `number` 
-
-旋转角速度Get
+获取当前行驶速度。单位：米/秒（m/s）
 
 
 #### Returns
 
 `number`
 
-角速度
-
-• `set` **rotationalAngularVelocity**(`value`): `void` 
-
-旋转角速度Set
+当前行驶速度
 
 
-#### Parameters
+### wheelNum <Score text="wheelNum" /> 
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 角速度 |
+• `get` **wheelNum**(): `number` 
 
+获取车轮数量
+
+
+#### Returns
+
+`number`
+
+车轮数量
 
 
 ## Methods
 
-### getConstraintTargetGUID <Score text="getConstraintTargetGUID" /> 
+### gearDown <Score text="gearDown" /> 
 
-• **getConstraintTargetGUID**(): `string` 
+• **gearDown**(): `void` <Badge type="tip" text="client" />
 
-获取约束对象GUID
+降档，立即切换。
 
+
+
+___
+
+### gearUp <Score text="gearUp" /> 
+
+• **gearUp**(): `void` <Badge type="tip" text="client" />
+
+升档，立即切换。
+
+
+
+
+### getGearRatio <Score text="getGearRatio" /> 
+
+• **getGearRatio**(`gearLevel`): [`VehicleGearDataNew`](../modules/Gameplay.Gameplay.md#vehiclegeardatanew) 
+
+获取指定档位属性
+
+
+::: warning Precautions
+
+注意输入参数的取值范围
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gearLevel` | `number` |  指定档位级别 |
+
+#### Returns
+
+[`VehicleGearDataNew`](../modules/Gameplay.Gameplay.md#vehiclegeardatanew)
+
+指定档位属性
+
+
+### getWheelMaxSteerAngle <Score text="getWheelMaxSteerAngle" /> 
+
+• **getWheelMaxSteerAngle**(`wheelId`): `number` 
+
+获取车轮最大转向角度。单位：度（°）
+
+
+::: warning Precautions
+
+注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `wheelId` | `number` |  根据序号指定车轮 |
+
+#### Returns
+
+`number`
+
+指定车轮最大转向角度
+
+___
+
+### getWheelModel <Score text="getWheelModel" /> 
+
+• **getWheelModel**(`wheelId`): `string` 
+
+获取轮胎绑定对象
+
+
+::: warning Precautions
+
+注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `wheelId` | `number` |  根据序号指定车轮 |
 
 #### Returns
 
 `string`
 
-对象GUID
+指定轮胎绑定对象GUID
+
+___
+
+### getWheelRadius <Score text="getWheelRadius" /> 
+
+• **getWheelRadius**(`wheelId`): `number` 
+
+获取车轮半径。单位：厘米（cm）
 
 
-### reverse <Score text="reverse" /> 
+::: warning Precautions
 
-• **reverse**(): `void` 
+注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
 
-激活旋转轴非物理旋转，此时会触发OnRotationRun代理
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `wheelId` | `number` |  根据序号指定车轮 |
+
+#### Returns
+
+`number`
+
+指定车轮半径
 
 
+### setCullDistance <Score text="setCullDistance" /> 
+
+• **setCullDistance**(`inCullDistance`): `void` <Badge type="tip" text="client" />
+
+与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)
 
 
-### setConstraintTargetByGUID <Score text="setConstraintTargetByGUID" /> 
+::: warning Precautions
 
-• **setConstraintTargetByGUID**(`value`): `void` 
+最终的裁剪距离会和画质等级有关
 
-设置约束对象GUID
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `inCullDistance` | `number` | 裁剪距离 |
+
+
+___
+
+### setDriver <Score text="setDriver" /> 
+
+• **setDriver**(`inDriver`): `void` <Badge type="tip" text="client" />
+
+设置载具驾驶员。只有驾驶员才可以操作载具
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `string` | 对象GUID |
+| `inDriver` | [`Player`](Gameplay.Player.md) |  驾驶员的Player |
 
 
 
-### start <Score text="start" /> 
+### setSimulatePhysics <Score text="setSimulatePhysics" /> 
 
-• **start**(): `void` 
+• **setSimulatePhysics**(`shouldSimulate`): `void` <Badge type="tip" text="client" />
 
-Running
+设置四轮载具是否开启物理模拟计算，需要在客户端调用。
 
+
+::: warning Precautions
+
+四轮载具只在setDriver()成功后才会进行物理模拟，此时关闭物理模拟将无法继续驱动载具移动。
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `shouldSimulate` | `boolean` |  是否启用物理模拟。true-启用，false-不启用 |
 
 
 ___
 
-### stop <Score text="stop" /> 
+### setSteeringInput <Score text="setSteeringInput" /> 
 
-• **stop**(): `void` 
+• **setSteeringInput**(`newInput`): `void` <Badge type="tip" text="client" />
 
-停止旋转轴非物理旋转，此时会触发OnRotationStop代理
+控制载具左/右转向。
 
+
+::: warning Precautions
+
+1. 注意输入参数的取值范围。输入100和1没有区别。
+2. 输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
+
+:::
+
+使用示例: 用按钮和摇杆控制载具
+```ts
+   // 通过按钮控制载具油门
+   this.btn_forward.onPressed.add(() => {
+       vehicle.setThrottleInput(1);
+   })
+
+   this.btn_forward.onReleased.add(() => {
+       vehicle.setThrottleInput(0);
+   })
+
+   // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
+   this.joystick.onInputDir.add((vec: Type.Vector2) => {
+       // 控制油门
+       vehicle.setThrottleInput(vec.y);
+       // 控制转向
+       vehicle.setSteeringInput(vec.x);
+   })
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newInput` | `number` |  转向幅度，取值范围[-1,1]，大于0时右转，小于0则左转。 |
+
+
+___
+
+### setThrottleInput <Score text="setThrottleInput" /> 
+
+• **setThrottleInput**(`newInput`): `void` <Badge type="tip" text="client" />
+
+控制载具前进/后退。
+
+
+::: warning Precautions
+
+1. 注意输入参数的取值范围。输入100和1没有区别。
+2. 输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
+
+:::
+
+使用示例: 用按钮和摇杆控制载具
+```ts
+   // 通过按钮控制载具油门
+   this.btn_forward.onPressed.add(() => {
+       vehicle.setThrottleInput(1);
+   })
+
+   this.btn_forward.onReleased.add(() => {
+       vehicle.setThrottleInput(0);
+   })
+
+   // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
+   this.joystick.onInputDir.add((vec: Type.Vector2) => {
+       // 控制油门
+       vehicle.setThrottleInput(vec.y);
+       // 控制转向
+       vehicle.setSteeringInput(vec.x);
+   })
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newInput` | `number` |  油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。 |
 

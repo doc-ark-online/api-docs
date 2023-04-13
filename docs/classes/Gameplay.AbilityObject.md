@@ -2,6 +2,12 @@
 
 # AbilityObject <Badge type="tip" text="Class" /> <Score text="AbilityObject" />
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: Gameplay模块优化方案 replacement: 无
+
+:::
+
 能力对象，提供角色按指定一系列的能力序列进行动画自动切换的功能。
  能力即为角色执行某一个包含一系列状态变更的动作，由一个动画为主体，并在动画播放过程实时控制角色的是否可移动，可跳跃，可转向等状态。
 

@@ -36,6 +36,8 @@ Gizmo
 | **[rotatorYSurfaceColor](MobileEditor.Gizmo.md#rotatorysurfacecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取y轴旋转面的颜色|
 | **[rotatorZSurfaceColor](MobileEditor.Gizmo.md#rotatorzsurfacecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取z轴旋转面的颜色|
 | **[scaleGizmoAxisLength](MobileEditor.Gizmo.md#scalegizmoaxislength)**(): `number` <br> 获取缩放轴长度|
+| **[scaleGizmoBoundary](MobileEditor.Gizmo.md#scalegizmoboundary)**(`boundary`: `number`): `void` <br> 设置gizmo缩放时候的边界,在缩放到达这个数值的时候会直接设置到目标数值|
+| **[scaleGizmoStepNumber](MobileEditor.Gizmo.md#scalegizmostepnumber)**(`stepNumber`: `number`): `void` <br> 设置gizmo到目标的帧数,具体计算方式为 (1/当前帧delta)/stepNumber|
 | **[scaleSnapGridSize](MobileEditor.Gizmo.md#scalesnapgridsize)**(): `number` <br> 获取缩放网格大小|
 
 | Methods |
@@ -592,6 +594,38 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `length` | `number` |  长度 |
+
+
+___
+
+### scaleGizmoBoundary <Score text="scaleGizmoBoundary" /> 
+
+• `set` **scaleGizmoBoundary**(`boundary`): `void` <Badge type="tip" text="client" />
+
+设置gizmo缩放时候的边界,在缩放到达这个数值的时候会直接设置到目标数值
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `boundary` | `number` |  边界 |
+
+
+___
+
+### scaleGizmoStepNumber <Score text="scaleGizmoStepNumber" /> 
+
+• `set` **scaleGizmoStepNumber**(`stepNumber`): `void` <Badge type="tip" text="client" />
+
+设置gizmo到目标的帧数,具体计算方式为 (1/当前帧delta)/stepNumber
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `stepNumber` | `number` |  设置到目标缩放值的数值 |
 
 
 ___

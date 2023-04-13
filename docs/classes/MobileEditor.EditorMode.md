@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / EditorMode
+[Scripting](../groups/Scripting.Scripting.md) / EditorMode
 
 # EditorMode <Badge type="tip" text="Class" /> <Score text="EditorMode" />
 
@@ -39,19 +39,20 @@
 | **[beginAttachChange](MobileEditor.EditorMode.md#beginattachchange)**(`LastActor`: `GameObject`, `NewActor`: `GameObject`): `void` <br> 记录附加记录|
 | **[beginCombineActorChange](MobileEditor.EditorMode.md#begincombineactorchange)**(): `void` <br> 开始记录打组操作|
 | **[beginDeleteActorChange](MobileEditor.EditorMode.md#begindeleteactorchange)**(): `void` <br> 开始记录删除操作|
-| **[beginMaterialsChange](MobileEditor.EditorMode.md#beginmaterialschange)**(`Actor`: [`StaticMesh`](Gameplay.StaticMesh.md)): `void` <br> 开始记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉|
-| **[beginMaterialsChangeMulti](MobileEditor.EditorMode.md#beginmaterialschangemulti)**(`Array`: [`StaticMesh`](Gameplay.StaticMesh.md)[]): `void` <br> 开始记录材质变换操作（支持记录多个StaticMesh）|
-| **[beginMaterialsColorChange](MobileEditor.EditorMode.md#beginmaterialscolorchange)**(`Actor`: [`StaticMesh`](Gameplay.StaticMesh.md), `Color`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 开始记录材质颜色变换操作|
+| **[beginMaterialsChange](MobileEditor.EditorMode.md#beginmaterialschange)**(`Actor`: [`Mesh`](Gameplay.Mesh.md)): `void` <br> 开始记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉|
+| **[beginMaterialsChangeMulti](MobileEditor.EditorMode.md#beginmaterialschangemulti)**(`Array`: [`Mesh`](Gameplay.Mesh.md)[]): `void` <br> 开始记录材质变换操作（支持记录多个StaticMesh）|
+| **[beginMaterialsColorChange](MobileEditor.EditorMode.md#beginmaterialscolorchange)**(`Actor`: [`Mesh`](Gameplay.Mesh.md), `Color`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 开始记录材质颜色变换操作|
 | **[beginSpawnActorChange](MobileEditor.EditorMode.md#beginspawnactorchange)**(): `void` <br> 开始记录创建操作|
 | **[beginUncombinedActorChange](MobileEditor.EditorMode.md#beginuncombinedactorchange)**(): `void` <br> 开始记录解组操作|
+| **[changeLevelGameObjectToStatic](MobileEditor.EditorMode.md#changelevelgameobjecttostatic)**(`isStatic?`: `boolean`, `ignores?`: `string`[]): `void` <br> 修改场景中的物体为静态/非静态|
 | **[detachActorFormGizmo](MobileEditor.EditorMode.md#detachactorformgizmo)**(`Actor`: `GameObject`): `void` <br> 移除物体到坐标轴|
 | **[enableSelectActor](MobileEditor.EditorMode.md#enableselectactor)**(`IsEnable`: `boolean`): `void` <br> 设置是否可以选中物体|
 | **[endActorTransformChange](MobileEditor.EditorMode.md#endactortransformchange)**(`Actor`: `GameObject`): `void` <br> 结束记录位置改变操作|
 | **[endCombineActorChange](MobileEditor.EditorMode.md#endcombineactorchange)**(`Actor`: `GameObject`): `void` <br> 结束记录打组操作|
 | **[endDeleteActorChange](MobileEditor.EditorMode.md#enddeleteactorchange)**(): `void` <br> 结束记录删除操作|
-| **[endMaterialsChange](MobileEditor.EditorMode.md#endmaterialschange)**(`Actor`: [`StaticMesh`](Gameplay.StaticMesh.md), `MaterialID`: `string`): `void` <br> 结束记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉|
-| **[endMaterialsChangeMulti](MobileEditor.EditorMode.md#endmaterialschangemulti)**(`Array`: [`StaticMesh`](Gameplay.StaticMesh.md)[], `MaterialID`: `string`): `void` <br> 结束记录材质变换操作（支持记录多个StaticMesh）|
-| **[endMaterialsColorChange](MobileEditor.EditorMode.md#endmaterialscolorchange)**(`Actor`: [`StaticMesh`](Gameplay.StaticMesh.md), `Color`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 结束记录材质颜色变换操作|
+| **[endMaterialsChange](MobileEditor.EditorMode.md#endmaterialschange)**(`Actor`: [`Mesh`](Gameplay.Mesh.md), `MaterialID`: `string`): `void` <br> 结束记录材质变换操作(仅支持记录单个StaticMesh)，新工程更新后接口可废弃删掉|
+| **[endMaterialsChangeMulti](MobileEditor.EditorMode.md#endmaterialschangemulti)**(`Array`: [`Mesh`](Gameplay.Mesh.md)[], `MaterialID`: `string`): `void` <br> 结束记录材质变换操作（支持记录多个StaticMesh）|
+| **[endMaterialsColorChange](MobileEditor.EditorMode.md#endmaterialscolorchange)**(`Actor`: [`Mesh`](Gameplay.Mesh.md), `Color`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 结束记录材质颜色变换操作|
 | **[endMultiCombineActorChange](MobileEditor.EditorMode.md#endmulticombineactorchange)**(`Actor`: `GameObject`, `Array`: `GameObject`[]): `void` <br> 结束记录多组合并打组操作|
 | **[endSpawnActorChange](MobileEditor.EditorMode.md#endspawnactorchange)**(`Actor`: `GameObject`): `void` <br> 结束记录创建操作|
 | **[endUncombinedActorChange](MobileEditor.EditorMode.md#enduncombinedactorchange)**(`Array`: `GameObject`[]): `void` <br> 结束记录解组操作|
@@ -118,7 +119,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -281,7 +282,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -362,7 +363,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.StaticMesh.md) | 记录材质属性改变的actor |
+| `Actor` | [`Mesh`](Gameplay.Mesh.md) | 记录材质属性改变的actor |
 
 
 ___
@@ -378,7 +379,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Array` | [`StaticMesh`](Gameplay.StaticMesh.md)[] |  多个对象 |
+| `Array` | [`Mesh`](Gameplay.Mesh.md)[] |  多个对象 |
 
 
 ___
@@ -394,7 +395,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.StaticMesh.md) | 记录的对象 |
+| `Actor` | [`Mesh`](Gameplay.Mesh.md) | 记录的对象 |
 | `Color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 
 
@@ -420,13 +421,30 @@ ___
 
 ___
 
+### changeLevelGameObjectToStatic <Score text="changeLevelGameObjectToStatic" /> 
+
+• **changeLevelGameObjectToStatic**(`isStatic?`, `ignores?`): `void` <Badge type="tip" text="client" />
+
+修改场景中的物体为静态/非静态
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `isStatic?` | `boolean` |  true为静态，false为非静态 default:true |
+| `ignores?` | `string`[] |  设置忽略物体,物体guid数组 default:[] |
+
+
+___
+
 ### detachActorFormGizmo <Score text="detachActorFormGizmo" /> 
 
 • **detachActorFormGizmo**(`Actor`): `void` <Badge type="tip" text="client" />
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -511,7 +529,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.StaticMesh.md) | 记录材质属性的actor |
+| `Actor` | [`Mesh`](Gameplay.Mesh.md) | 记录材质属性的actor |
 | `MaterialID` | `string` | 材质ID |
 
 
@@ -528,7 +546,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Array` | [`StaticMesh`](Gameplay.StaticMesh.md)[] | 操作的对象数组 |
+| `Array` | [`Mesh`](Gameplay.Mesh.md)[] | 操作的对象数组 |
 | `MaterialID` | `string` | 材质ID |
 
 
@@ -545,7 +563,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Actor` | [`StaticMesh`](Gameplay.StaticMesh.md) | 记录的actor |
+| `Actor` | [`Mesh`](Gameplay.Mesh.md) | 记录的actor |
 | `Color` | [`LinearColor`](Type.LinearColor.md) | 颜色 |
 
 
@@ -708,7 +726,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -778,7 +796,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -826,7 +844,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -849,7 +867,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -872,7 +890,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -895,7 +913,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -917,7 +935,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -939,7 +957,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 
@@ -961,7 +979,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:更换接口到gizmo replacement:使用MobileEditor.getGizmo()获取
 
 :::
 

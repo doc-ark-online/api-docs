@@ -2,7 +2,7 @@
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
-交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。
+交互物功能对象 V2
 
 ## Hierarchy
 
@@ -10,16 +10,21 @@
 
   ↳ **`Interactor`**
 
+  ↳↳ [`InteractiveObject`](Gameplay.InteractiveObject.md)
+
 ## Table of contents
 
 | Properties |
 | :-----|
+| **[onInteractiveEnded](Gameplay.Interactor.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数|
+| **[onInteractiveStarted](Gameplay.Interactor.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数|
 | **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用交互时被重置，外部回调不会触发）激活交互时执行绑定函数|
 | **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用退出交互时被重置，外部回调不会触发）退出交互时执行绑定函数|
-| **[serverSetShowDebugLog](Gameplay.Interactor.md#serversetshowdebuglog)**: `any` <br> 服务器设置显示debug日志|
 
 | Accessors |
 | :-----|
+| **[interactiveSlot](Gameplay.Interactor.md#interactiveslot)**(): [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) <br> 交互物插槽|
+| **[interactiveStance](Gameplay.Interactor.md#interactivestance)**(): `string` <br> 交互动画姿态资源 id|
 
 
 ::: details 点击查看继承
@@ -49,11 +54,14 @@
 
 | Methods |
 | :-----|
-| **[convertStringToStanceGuid](Gameplay.Interactor.md#convertstringtostanceguid)**(`stance`: `string`): `string` <br> 将姿态转换为GUID|
+| **[endInteract](Gameplay.Interactor.md#endinteract)**(`endLoc?`: [`Vector`](Type.Vector.md), `endRot?`: [`Rotation`](Type.Rotation.md), `newStance?`: `string`): `boolean` <br> 结束交互|
 | **[enterInteractiveState](Gameplay.Interactor.md#enterinteractivestate)**(`characterObj`: `GameObject`): `Promise`<`boolean`\> <br> 激活交互，将角色切换到特定姿态和位置，并绑定到交互物上|
 | **[exitInteractiveState](Gameplay.Interactor.md#exitinteractivestate)**(`Location`: [`Vector`](Type.Vector.md), `stance?`: `string`): `Promise`<`boolean`\> <br> 退出交互，恢复角色的绑定关系，姿态和位置|
+| **[getInteractCharacter](Gameplay.Interactor.md#getinteractcharacter)**(): [`CharacterBase`](Gameplay.CharacterBase.md) <br> 获取正在交互的角色|
 | **[getInteractiveState](Gameplay.Interactor.md#getinteractivestate)**(): `boolean` <br> 获取该交互物的交互状态|
+| **[getInteractiveStatus](Gameplay.Interactor.md#getinteractivestatus)**(): `boolean` <br> 获取该交互物的交互状态|
 | **[interactiveCharacter](Gameplay.Interactor.md#interactivecharacter)**(): [`Character`](Gameplay.Character.md) <br> 获取和交互物发生交互的角色|
+| **[startInteract](Gameplay.Interactor.md#startinteract)**(`newCharObj`: [`CharacterBase`](Gameplay.CharacterBase.md), `newSlot?`: [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md), `newStance?`: `string`): `boolean` <br> 开始交互|
 
 
 ::: details 点击查看继承
@@ -120,13 +128,41 @@
 
 ## Properties
 
+### onInteractiveEnded <Score text="onInteractiveEnded" /> 
+
+• **onInteractiveEnded**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+
+交互结束时执行绑定函数
+
+::: warning Precautions
+
+会自动广播，若是双端对象，则可以在任意客户端调用
+
+:::
+
+___
+
+### onInteractiveStarted <Score text="onInteractiveStarted" /> 
+
+• **onInteractiveStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+
+交互开始时执行绑定函数
+
+::: warning Precautions
+
+会自动广播，若是双端对象，则可以在任意客户端调用
+
+:::
+
+___
+
 ### onInteractorEnter <Score text="onInteractorEnter" /> 
 
 • **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: enterInteractiveState 返回的 promise
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: enterInteractiveState 返回的 promise
 
 :::
 
@@ -154,7 +190,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: exitInteractiveState 返回的 promise
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: exitInteractiveState 返回的 promise
 
 :::
 
@@ -174,45 +210,88 @@ interactor.onInteractorExit.add((result: boolean) => {
 })
 ```
 
-___
-
-### serverSetShowDebugLog <Score text="serverSetShowDebugLog" /> 
-
-• `Private` **serverSetShowDebugLog**: `any`
-
-服务器设置显示debug日志
-
-**`Param`**
-
-usage:是否显示debug日志
-
 ## Accessors
 
-## Methods
+### interactiveSlot <Score text="interactiveSlot" /> 
 
-### convertStringToStanceGuid <Score text="convertStringToStanceGuid" /> 
+• `get` **interactiveSlot**(): [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md)
 
-• **convertStringToStanceGuid**(`stance`): `string` 
+交互物插槽
 
-将姿态转换为GUID
+#### Returns
 
+[`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md)
+
+• `set` **interactiveSlot**(`slot`): `void`
+
+交互物插槽
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `stance` | `string` |  姿态 default: |
+| Name | Type |
+| :------ | :------ |
+| `slot` | [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) |
+
+
+___
+
+### interactiveStance <Score text="interactiveStance" /> 
+
+• `get` **interactiveStance**(): `string`
+
+交互动画姿态资源 id
 
 #### Returns
 
 `string`
 
-姿态对应的GUID
+• `set` **interactiveStance**(`assetGuid`): `void`
 
+交互动画姿态资源 id
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `assetGuid` | `string` |
+
+
+
+## Methods
+
+### endInteract <Score text="endInteract" /> 
+
+• **endInteract**(`endLoc?`, `endRot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+
+结束交互
+
+调用端自动广播
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `endLoc?` | [`Vector`](Type.Vector.md) |  结束位置 default: 玩家开始交互前的坐标为准 |
+| `endRot?` | [`Rotation`](Type.Rotation.md) |  结束旋转量 default: 玩家开始交互前的旋转为准，如果玩家开始前的姿态是倾斜的，内部不会纠正 |
+| `newStance?` | `string` |  新姿态，default: 以属性玩家开始交互前的姿态为准 |
+
+#### Returns
+
+`boolean`
+
+true 触发了结束交互逻辑
+
+___
 
 ### enterInteractiveState <Score text="enterInteractiveState" /> 
 
 • **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: startInteract (请注意，如果需要换为此接口，结束接口也务必更换为 endInteract)
+
+:::
 
 激活交互，将角色切换到特定姿态和位置，并绑定到交互物上
 
@@ -250,6 +329,12 @@ ___
 
 • **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: endInteract (请注意，如果需要换为此接口，开始接口也务必更换)
+
+:::
+
 退出交互，恢复角色的绑定关系，姿态和位置
 
 调用端自动广播
@@ -282,9 +367,30 @@ interactor.exitInteractiveState(newLocation, "").then((result) => {
 将返回是否退出激活成功的 Promise
 
 
+### getInteractCharacter <Score text="getInteractCharacter" /> 
+
+• **getInteractCharacter**(): [`CharacterBase`](Gameplay.CharacterBase.md) 
+
+获取正在交互的角色
+
+
+#### Returns
+
+[`CharacterBase`](Gameplay.CharacterBase.md)
+
+true：为交互中
+
+___
+
 ### getInteractiveState <Score text="getInteractiveState" /> 
 
 • **getInteractiveState**(): `boolean` 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: getInteractiveStatus
+
+:::
 
 获取该交互物的交互状态
 
@@ -295,10 +401,31 @@ interactor.exitInteractiveState(newLocation, "").then((result) => {
 
 true: 为交互中
 
+___
+
+### getInteractiveStatus <Score text="getInteractiveStatus" /> 
+
+• **getInteractiveStatus**(): `boolean` 
+
+获取该交互物的交互状态
+
+
+#### Returns
+
+`boolean`
+
+true：为交互中
+
 
 ### interactiveCharacter <Score text="interactiveCharacter" /> 
 
 • **interactiveCharacter**(): [`Character`](Gameplay.Character.md) 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement:
+
+:::
 
 获取和交互物发生交互的角色
 
@@ -312,3 +439,32 @@ true: 为交互中
 [`Character`](Gameplay.Character.md)
 
 和交互物发生交互的角色，可能为空
+
+
+### startInteract <Score text="startInteract" /> 
+
+• **startInteract**(`newCharObj`, `newSlot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+
+开始交互
+
+::: warning Precautions
+
+建议客户端调用
+
+:::
+
+调用端自动广播
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newCharObj` | [`CharacterBase`](Gameplay.CharacterBase.md) |  要交互的角色（可以是玩家，也可以是AI） |
+| `newSlot?` | [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
+| `newStance?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
+
+#### Returns
+
+`boolean`
+
+是否成功交互

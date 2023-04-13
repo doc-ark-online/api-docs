@@ -30,13 +30,6 @@ Interfaces
 | [MulticastDelegateInterface](interfaces/Type.MulticastDelegateInterface.md) | 多播委托接口 | [Datatype](groups/Datatype.Datatype.md) |
 
 
-## R
-| Name | Description | Groups |
-| :-----| :-----| :-----|
-| [RequestInit](interfaces/Network.RequestInit.md) | HTTP请求信息的对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [Response](interfaces/Network.Response.md) | HTTP响应信息的对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
-
-
 ## S
 | Name | Description | Groups |
 | :-----| :-----| :-----|

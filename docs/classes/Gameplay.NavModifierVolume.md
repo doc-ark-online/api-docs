@@ -2,7 +2,7 @@
 
 # NavModifierVolume <Badge type="tip" text="Class" /> <Score text="NavModifierVolume" />
 
-提供基础寻路数据
+寻路动态修饰区
 
 ## Hierarchy
 

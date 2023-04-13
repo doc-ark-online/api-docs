@@ -17,7 +17,7 @@ Enums
 | [AssetType](enums/Type.AssetType.md) | 资源类型 | [Datatype](groups/Datatype.Datatype.md) |
 | [AttenuationDistanceModel](enums/Gameplay.AttenuationDistanceModel.md) | 音效衰减函数模型 | [Sounds](groups/Sounds.Sounds.md) |
 | [AttenuationShape](enums/Gameplay.AttenuationShape.md) | 音效衰减形状 | [Sounds](groups/Sounds.Sounds.md) |
-| [AxisType](enums/Gameplay.AxisType.md) | 轴标记 | [Physics](groups/Physics.Physics.md) |
+| [AudioPlayState](enums/Gameplay.AudioPlayState.md) | 音效播放状态 | [Sounds](groups/Sounds.Sounds.md) |
 
 
 ## B
@@ -47,7 +47,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [DataStorageResultCode](enums/DataStorage.DataStorageResultCode.md) | 数据储存返回代码 | [Data](groups/Data.Data.md) |
-| [DispatchEventResult](enums/Events.DispatchEventResult.md) | 事件发送的结果 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [DispatchEventResult](enums/Events.DispatchEventResult.md) | 事件发送的结果 | [Scripting](groups/Scripting.Scripting.md) |
 | [DragPivot](enums/UI.DragPivot.md) | 拖拽的锚点 | [Gui](groups/Gui.Gui.md) |
 
 
@@ -56,20 +56,22 @@ Enums
 | :-----| :-----| :-----|
 | [EInitialOscillatorOffset](enums/Gameplay.EInitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [Avatar](groups/Avatar.Avatar.md) |
 | [EOscillatorWaveform](enums/Gameplay.EOscillatorWaveform.md) | 振荡器波形 | [Avatar](groups/Avatar.Avatar.md) |
-| [EffectRangeShape2D](enums/Gameplay.EffectRangeShape2D.md) | 效果范围形状 | [Others](groups/Others.Others.md) |
-| [EffectRangeShape3D](enums/Gameplay.EffectRangeShape3D.md) | 3D效果范围形状 | [Others](groups/Others.Others.md) |
-| [EffectRangeType](enums/Gameplay.EffectRangeType.md) | 效果范围类型 | [Others](groups/Others.Others.md) |
-| [EquipmentStatus](enums/Gameplay.EquipmentStatus.md) | 装备状态 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ExpressionType](enums/Gameplay.ExpressionType.md) | 表情类型 | [Avatar](groups/Avatar.Avatar.md) |
+
+
+## F
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [FogPreset](enums/Gameplay.FogPreset.md) | 环境雾预设枚举 | [Lighting](groups/Lighting.Lighting.md) |
 
 
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/Extension.GameObjPoolSourceType.md) | GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [Utility](groups/Utility.Utility.md) |
-| [GizmoCoordinateType](enums/MobileEditor.GizmoCoordinateType.md) | gizmo坐标轴类型 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [GizmoModeType](enums/MobileEditor.GizmoModeType.md) | gizmo模式 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [GizmoSpaceType](enums/MobileEditor.GizmoSpaceType.md) | gizmo空间 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [GizmoCoordinateType](enums/MobileEditor.GizmoCoordinateType.md) | gizmo坐标轴类型 | [Scripting](groups/Scripting.Scripting.md) |
+| [GizmoModeType](enums/MobileEditor.GizmoModeType.md) | gizmo模式 | [Scripting](groups/Scripting.Scripting.md) |
+| [GizmoSpaceType](enums/MobileEditor.GizmoSpaceType.md) | gizmo空间 | [Scripting](groups/Scripting.Scripting.md) |
 | [GraphicsLevel](enums/Type.GraphicsLevel.md) | 画质等级 | [Datatype](groups/Datatype.Datatype.md) |
 
 
@@ -103,14 +105,13 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageType](enums/Type.LanguageType.md) | 游戏语言 | [Datatype](groups/Datatype.Datatype.md) |
-| [LimitType](enums/Gameplay.LimitType.md) | 限制类型 | [Physics](groups/Physics.Physics.md) |
 
 
 ## M
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [MaskButtonType](enums/UI.MaskButtonType.md) | 遮罩类型 | [Gui](groups/Gui.Gui.md) |
-| [MessageChannelReceiver](enums/Service.MessageChannelReceiver.md) | 枚举各个通道的使用与接收方 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [MessageChannelReceiver](enums/Service.MessageChannelReceiver.md) | 枚举各个通道的使用与接收方 | [Scripting](groups/Scripting.Scripting.md) |
 | [MouseLockMode](enums/UI.MouseLockMode.md) | 鼠标锁定模式 | [Gui](groups/Gui.Gui.md) |
 | [MoveControlMode](enums/Gameplay.MoveControlMode.md) | 移动控制模式 | [Avatar](groups/Avatar.Avatar.md) |
 | [MoveFacingDirection](enums/Gameplay.MoveFacingDirection.md) | 运动时面朝方向 | [Avatar](groups/Avatar.Avatar.md) |
@@ -144,7 +145,7 @@ Enums
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ReleaseStatus](enums/MobileEditor.ReleaseStatus.md) | UGC 发布的状态 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [ReleaseStatus](enums/MobileEditor.ReleaseStatus.md) | UGC 发布的状态 | [Scripting](groups/Scripting.Scripting.md) |
 | [RuntimePlatform](enums/Type.RuntimePlatform.md) | 运行平台 | [Datatype](groups/Datatype.Datatype.md) |
 
 
@@ -152,7 +153,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScrollBarDefaultLocation](enums/UI.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [Gui](groups/Gui.Gui.md) |
-| [SelectTapType](enums/MobileEditor.SelectTapType.md) | UGC 选中的单选或者多选 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [SelectTapType](enums/MobileEditor.SelectTapType.md) | UGC 选中的单选或者多选 | [Scripting](groups/Scripting.Scripting.md) |
 | [SkyPreset](enums/Gameplay.SkyPreset.md) | 天空球预设枚举 | [Lighting](groups/Lighting.Lighting.md) |
 | [SlateBrushDrawType](enums/UI.SlateBrushDrawType.md) | 图片画刷绘制模式 | [Gui](groups/Gui.Gui.md) |
 | [SlateBrushTileType](enums/UI.SlateBrushTileType.md) | 图片画刷填充模式 | [Gui](groups/Gui.Gui.md) |
@@ -195,7 +196,9 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [VehicleDriveMode4W](enums/Gameplay.VehicleDriveMode4W.md) | 四轮载具驱动模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [VehicleDriveMode4WNew](enums/Gameplay.VehicleDriveMode4WNew.md) | 四轮载具驱动模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [VehicleWheelPosition4W](enums/Gameplay.VehicleWheelPosition4W.md) | 四轮载具车轮位置 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [VehicleWheelPosition4WNew](enums/Gameplay.VehicleWheelPosition4WNew.md) | 四轮载具车轮位置 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
 
 ## W
@@ -203,4 +206,10 @@ Enums
 | :-----| :-----| :-----|
 | [WidgetGeometryMode](enums/Gameplay.WidgetGeometryMode.md) | UI形状枚举 | [Gui](groups/Gui.Gui.md) |
 | [WidgetSpaceMode](enums/Gameplay.WidgetSpaceMode.md) | UI空间位置枚举 | [Gui](groups/Gui.Gui.md) |
+
+
+## c
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [consumeKeyStatus](enums/Service.consumeKeyStatus.md) | 大会员扣除钥匙订单返回状态信息 | [Monetization](groups/Monetization.Monetization.md) |
 

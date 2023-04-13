@@ -12,6 +12,7 @@ Util
 | [LocaleUtil](Util.LocaleUtil.md) |
 | [MathUtil](Util.MathUtil.md) |
 | [NFTUtil](Util.NFTUtil.md) |
+| [SelectionUtil](Util.SelectionUtil.md) |
 | [StringUtil](Util.StringUtil.md) <br> 字符串工具|
 | [SystemUtil](Util.SystemUtil.md) |
 | [TimeUtil](Util.TimeUtil.md) <br> 时间工具|

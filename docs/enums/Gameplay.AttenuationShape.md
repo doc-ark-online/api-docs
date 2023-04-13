@@ -10,6 +10,7 @@
 | :-----|
 | **[Box](Gameplay.AttenuationShape.md#box)** = ``2`` <br> |
 | **[Capsule](Gameplay.AttenuationShape.md#capsule)** = ``1`` <br> |
+| **[Cone](Gameplay.AttenuationShape.md#cone)** = ``3`` <br> |
 | **[Sphere](Gameplay.AttenuationShape.md#sphere)** = ``0`` <br> |
 
 ## Enumeration Members
@@ -27,6 +28,14 @@ ___
 • **Capsule** = ``1``
 
 胶囊体
+
+___
+
+### Cone <Score text="Cone" /> 
+
+• **Cone** = ``3``
+
+锥体
 
 ___
 

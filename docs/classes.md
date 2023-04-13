@@ -16,9 +16,9 @@ Classes
 | [Action2](classes/Type.Action2.md) | 两个参数的代理 | [Datatype](groups/Datatype.Datatype.md) |
 | [Action3](classes/Type.Action3.md) | 三个参数的代理 | [Datatype](groups/Datatype.Datatype.md) |
 | [AdsService](classes/Service.AdsService.md) | 广告服务，支持激励/插屏类型 | [Monetization](groups/Monetization.Monetization.md) |
+| [AdvancedVehicle](classes/Gameplay.AdvancedVehicle.md) | 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [AnalogInputEvent](classes/UI.AnalogInputEvent.md) | 轴输入事件 | [Gui](groups/Gui.Gui.md) |
 | [AnalyticsService](classes/Service.AnalyticsService.md) | 分析服务 | [Debugging](groups/Debugging.Debugging.md) |
-| [Anchor](classes/Gameplay.Anchor.md) | 空锚点，用于位置标识，打组使用时可做作为根节点，可以对一组物体整体进行位移、旋转、缩放。动态生成无实际使用意义，不推荐。 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Animation](classes/Gameplay.Animation.md) | 动画类 | [Animations](groups/Animations.Animations.md) |
 | [AssetIconData](classes/UI.AssetIconData.md) | 资源ICON信息 | [Gui](groups/Gui.Gui.md) |
 
@@ -28,8 +28,7 @@ Classes
 | :-----| :-----| :-----|
 | [BasePanel](classes/Extension.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [Gui](groups/Gui.Gui.md) |
 | [BaseView](classes/Extension.BaseView.md) | 界面类的基类 | [Gui](groups/Gui.Gui.md) |
-| [BlockingArea](classes/Gameplay.BlockingArea.md) | 禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [BlockingAreaManager](classes/Gameplay.BlockingAreaManager.md) | 禁行区管理类,用于调用禁行区的全局方法 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [BlockingVolume](classes/Gameplay.BlockingVolume.md) | 禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Button](classes/UI.Button.md) | 按钮,无默认text | [Gui](groups/Gui.Gui.md) |
 
 
@@ -62,12 +61,11 @@ Classes
 ## E
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [EditorMode](classes/MobileEditor.EditorMode.md) | 移动编辑器模式切换 | [Scripiting](groups/Scripiting.Scripiting.md) |
-| [EffectLogical](classes/Gameplay.EffectLogical.md) | 区域效果是一个可以播放特效并带有范围判定的一个对象。开发者可以自定义范围的形状，然后获取该范围内的角色。该对象在游戏开放中常用于释放带变化范围判定的特效技能，例如蓄力重击和蔓延伤害技能 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [EditorMode](classes/MobileEditor.EditorMode.md) | 移动编辑器模式切换 | [Scripting](groups/Scripting.Scripting.md) |
 | [EffectService](classes/Service.EffectService.md) | 特效服务 | [Utility](groups/Utility.Utility.md) |
-| [Equipment](classes/Gameplay.Equipment.md) | 装备对象，无自带模型，有三种状态判定（无装备，有装备收起状态，有装备持有状态），动态生成需自行配置各状态的动作姿态及绑定插槽。 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [EventListener](classes/Events.EventListener.md) | 事件监听器 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [EventListener](classes/Events.EventListener.md) | 事件监听器 | [Scripting](groups/Scripting.Scripting.md) |
 | [EventReply](classes/UI.EventReply.md) | 事件回复 | [Gui](groups/Gui.Gui.md) |
+| [ExponentialHeightFog](classes/Gameplay.ExponentialHeightFog.md) | 环境雾 | [Lighting](groups/Lighting.Lighting.md) |
 
 
 ## F
@@ -85,7 +83,7 @@ Classes
 | [GameObjPool](classes/Extension.GameObjPool.md) | GameObject对象池 | [Utility](groups/Utility.Utility.md) |
 | [GameObject](classes/Gameplay.GameObject.md) | GameObject的基类 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Geometry](classes/UI.Geometry.md) | 几何坐标信息 | [Gui](groups/Gui.Gui.md) |
-| [GestureDelegate](classes/MobileEditor.GestureDelegate.md) | 手势代理类 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [GestureDelegate](classes/MobileEditor.GestureDelegate.md) | 手势代理类 | [Scripting](groups/Scripting.Scripting.md) |
 | [Gizmo](classes/MobileEditor.Gizmo.md) | Gizmo | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Group](classes/Util.Util.TweenUtil.Group.md) | 补间组，用于同时控制多个补间对象 | [Utility](groups/Utility.Utility.md) |
 
@@ -93,7 +91,7 @@ Classes
 ## H
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [HitResult](classes/Gameplay.HitResult.md) | 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [HitResult](classes/Gameplay.HitResult.md) | 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 | [Datatype](groups/Datatype.Datatype.md) |
 | [HotWeapon](classes/Gameplay.HotWeapon.md) | 热武器功能对象，提供对发射类武器常用的射击，上膛，换弹，后坐力，瞄准和射击精度控制等功能的封装。 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [HotWeaponAccuracyOfFireComponent](classes/Gameplay.HotWeaponAccuracyOfFireComponent.md) | 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [HotWeaponAimComponent](classes/Gameplay.HotWeaponAimComponent.md) | 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近 | [Gameplay](groups/Gameplay.Gameplay.md) |
@@ -127,10 +125,9 @@ Classes
 | [Impulse](classes/Gameplay.Impulse.md) | 冲量对象 | [Physics](groups/Physics.Physics.md) |
 | [InputBox](classes/UI.InputBox.md) | UI的输入框 | [Gui](groups/Gui.Gui.md) |
 | [InputEvent](classes/UI.InputEvent.md) | 输入事件 | [Gui](groups/Gui.Gui.md) |
-| [InstanceStaticMesh](classes/Gameplay.InstanceStaticMesh.md) | InstanceStaticMesh | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [IntegratedMover](classes/Gameplay.IntegratedMover.md) | 运动器组件 | [Physics](groups/Physics.Physics.md) |
-| [InteractiveObject](classes/Gameplay.InteractiveObject.md) | 交互物功能对象 V2 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [Interactor](classes/Gameplay.Interactor.md) | 交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [InteractiveObject](classes/Gameplay.InteractiveObject.md) | 交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [Interactor](classes/Gameplay.Interactor.md) | 交互物功能对象 V2 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
 
 ## J
@@ -159,7 +156,8 @@ Classes
 | [MaterialInstance](classes/Gameplay.MaterialInstance.md) | 材质实例类 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Matrix3x3](classes/Type.Matrix3x3.md) | 三维矩阵 | [Datatype](groups/Datatype.Datatype.md) |
 | [Matrix4x4](classes/Type.Matrix4x4.md) | 四维矩阵 | [Datatype](groups/Datatype.Datatype.md) |
-| [MessageChannelService](classes/Service.MessageChannelService.md) | 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [Mesh](classes/Gameplay.Mesh.md) | StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [MessageChannelService](classes/Service.MessageChannelService.md) | 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 | [Scripting](groups/Scripting.Scripting.md) |
 | [ModuleC](classes/Extension.ModuleC.md) | 客户端模块的基类 | [Utility](groups/Utility.Utility.md) |
 | [ModuleManager](classes/Extension.ModuleManager.md) | 模块管理 | [Utility](groups/Utility.Utility.md) |
 | [ModuleS](classes/Extension.ModuleS.md) | 服务端模块的基类 | [Utility](groups/Utility.Utility.md) |
@@ -171,7 +169,7 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [NPC](classes/Gameplay.NPC.md) | NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject("NPC") as NPC; | [Avatar](groups/Avatar.Avatar.md) |
-| [NavModifierVolume](classes/Gameplay.NavModifierVolume.md) | 提供基础寻路数据 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [NavModifierVolume](classes/Gameplay.NavModifierVolume.md) | 寻路动态修饰区 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [NetObject](classes/Extension.NetObject.md) | 网络对象 | [Utility](groups/Utility.Utility.md) |
 | [NetObjectC](classes/Extension.NetObjectC.md) | 客户端的网络对象 | [Utility](groups/Utility.Utility.md) |
 | [NetObjectS](classes/Extension.NetObjectS.md) | 服务端的网络对象 | [Utility](groups/Utility.Utility.md) |
@@ -188,25 +186,14 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [PanelWidget](classes/UI.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [Gui](groups/Gui.Gui.md) |
-| [Particle](classes/Gameplay.Particle.md) | 特效对象 | [Others](groups/Others.Others.md) |
-| [PhysicsAngularMotor](classes/Gameplay.PhysicsAngularMotor.md) | 物理力矩发动机 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsCable](classes/Gameplay.PhysicsCable.md) | 物理绳组件 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsConstraintBase](classes/Gameplay.PhysicsConstraintBase.md) | 物理约束基类对象 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsCylinder](classes/Gameplay.PhysicsCylinder.md) | 物理圆柱组件 | [Physics](groups/Physics.Physics.md) |
+| [Particle](classes/Gameplay.Particle.md) | 特效对象,通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。如需精确控制特效的播放与停止，请使用play()和stop()。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。 | [Effects](groups/Effects.Effects.md) |
 | [PhysicsFulcrum](classes/Gameplay.PhysicsFulcrum.md) | 物理支撑点组件 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsLinearMotor](classes/Gameplay.PhysicsLinearMotor.md) | 物理线性发动机组件 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsPrism](classes/Gameplay.PhysicsPrism.md) | 物理棱柱组件 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsRotation](classes/Gameplay.PhysicsRotation.md) | 物理旋转轴 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsRotator](classes/Gameplay.PhysicsRotator.md) | 旋转轴 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsSpring](classes/Gameplay.PhysicsSpring.md) | 物理弹簧组件 | [Physics](groups/Physics.Physics.md) |
-| [PhysicsStick](classes/Gameplay.PhysicsStick.md) | 物理杆组件 | [Physics](groups/Physics.Physics.md) |
 | [PhysicsThruster](classes/Gameplay.PhysicsThruster.md) | 推进器 | [Physics](groups/Physics.Physics.md) |
 | [Player](classes/Gameplay.Player.md) | 角色控制 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [PlayerStart](classes/Gameplay.PlayerStart.md) | 玩家起始 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [PointLight](classes/Gameplay.PointLight.md) | 点光源 | [Lighting](groups/Lighting.Lighting.md) |
 | [PointerEvent](classes/UI.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [Gui](groups/Gui.Gui.md) |
 | [PostProcess](classes/Gameplay.PostProcess.md) | 后处理对象 | [Lighting](groups/Lighting.Lighting.md) |
-| [Prefab](classes/Gameplay.Prefab.md) | 预制体 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProgressBar](classes/UI.ProgressBar.md) | UI进度条 | [Gui](groups/Gui.Gui.md) |
 | [Projectile](classes/Gameplay.Projectile.md) | 投掷物逻辑对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProjectileInst](classes/Gameplay.ProjectileInst.md) | 投掷物 v2 实例 | [Gameplay](groups/Gameplay.Gameplay.md) |
@@ -233,12 +220,10 @@ Classes
 | :-----| :-----| :-----|
 | [ScrollBox](classes/UI.ScrollBox.md) | 滑动框 | [Gui](groups/Gui.Gui.md) |
 | [Sequence](classes/Util.Util.TweenUtil.Sequence.md) | 序列工具类，主要用于获取连续的ID | [Utility](groups/Utility.Utility.md) |
-| [SkeletalMesh](classes/Gameplay.SkeletalMesh.md) | 骨骼模型逻辑对象。用于对骨骼模型进行操作。 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [SkyBox](classes/Gameplay.SkyBox.md) | 天空球 | [Lighting](groups/Lighting.Lighting.md) |
 | [SkyLight](classes/Gameplay.SkyLight.md) | 环境光 | [Lighting](groups/Lighting.Lighting.md) |
 | [SlateBrushWithGuid](classes/UI.SlateBrushWithGuid.md) | 贴图信息 | [Gui](groups/Gui.Gui.md) |
 | [SlateColor](classes/UI.SlateColor.md) | UI颜色管理 | [Gui](groups/Gui.Gui.md) |
-| [SmoothSync](classes/Gameplay.SmoothSync.md) | 平滑组件 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [SomatotypeBase](classes/Gameplay.SomatotypeBase.md) | 体型基类 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Sound](classes/Gameplay.Sound.md) | 音效组件 | [Others](groups/Others.Others.md) |
 | [SoundService](classes/Service.SoundService.md) | 音效管理器 | [Utility](groups/Utility.Utility.md) |
@@ -265,7 +250,7 @@ Classes
 ## U
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [UGCService](classes/Service.UGCService.md) | 用户建造服务 | [Scripiting](groups/Scripiting.Scripiting.md) |
+| [UGCService](classes/Service.UGCService.md) | 用户建造服务 | [Scripting](groups/Scripting.Scripting.md) |
 | [UIBehavior](classes/UI.UIBehavior.md) | UI的驱动脚本基类 | [Gui](groups/Gui.Gui.md) |
 | [UIChildCollation](classes/UI.UIChildCollation.md) | 容器自动布局子项排序规则 | [Gui](groups/Gui.Gui.md) |
 | [UIConstraintAnchors](classes/UI.UIConstraintAnchors.md) | 节点对齐规则 | [Gui](groups/Gui.Gui.md) |
@@ -277,7 +262,6 @@ Classes
 | [UISlot](classes/UI.UISlot.md) | UI插槽 | [Gui](groups/Gui.Gui.md) |
 | [UITransform](classes/UI.UITransform.md) | 节点Transform | [Gui](groups/Gui.Gui.md) |
 | [UIWidget](classes/Gameplay.UIWidget.md) | 世界UI组件 | [Gui](groups/Gui.Gui.md) |
-| [Union](classes/Gameplay.Union.md) | 合并对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [UserWidget](classes/UI.UserWidget.md) | UI控件的集合,预制体UI | [Gui](groups/Gui.Gui.md) |
 | [UserWidgetPrefab](classes/UI.UserWidgetPrefab.md) | ui预制体 | [Gui](groups/Gui.Gui.md) |
 

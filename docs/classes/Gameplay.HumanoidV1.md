@@ -100,7 +100,7 @@ ___
 
 ::: danger Deprecated
 
-since: 023 reason: 不再使用 replacement: 无
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 023 reason: 不再使用 replacement: 无
 
 :::
 

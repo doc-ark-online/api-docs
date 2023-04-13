@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / GizmoSpaceType
+[Scripting](../groups/Scripting.Scripting.md) / GizmoSpaceType
 
 # GizmoSpaceType <Badge type="tip" text="Enumeration" /> <Score text="GizmoSpaceType" />
 

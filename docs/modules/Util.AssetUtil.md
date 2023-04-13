@@ -72,7 +72,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
 
 :::
 
@@ -99,7 +99,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
 
 :::
 
@@ -126,7 +126,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
 
 :::
 

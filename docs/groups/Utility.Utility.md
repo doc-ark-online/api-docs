@@ -40,11 +40,13 @@ Utility
 | **[delayExecute](Utility.Utility.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
 | **[delayTime](Utility.Utility.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
+| **[drawGameObjectSelectionBox](Utility.Utility.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `Color`: [`LinearColor`](../classes/Type.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
 | **[elapsedTime](Utility.Utility.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[enableCursorInteractWithUI](Utility.Utility.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
 | **[enableCursorLock](Utility.Utility.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
 | **[fmod](Utility.Utility.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
 | **[format](Utility.Utility.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[getGameObjectBySelectionBox](Utility.Utility.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取框选屏幕位置的物体|
 | **[isAssetExist](Utility.Utility.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
 | **[isAssetLoaded](Utility.Utility.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[isCursorInteractiveWithUI](Utility.Utility.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
@@ -66,6 +68,7 @@ Utility
 | **[randomInt](Utility.Utility.md#randomint)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内整数[包含min, 不包含max)|
 | **[setCursorLocked](Utility.Utility.md#setcursorlocked)**(`isLock`: `boolean`): `void` <br> 设置鼠标指针是否锁定|
 | **[setCursorVisible](Utility.Utility.md#setcursorvisible)**(`isVisible`: `boolean`): `void` <br> 设置鼠标指针是否可见|
+| **[setGlobalOutlineParams](Utility.Utility.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void` <br> 设置全局描边参数|
 | **[setInterval](Utility.Utility.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
 | **[setMouseLockable](Utility.Utility.md#setmouselockable)**(`can`: `boolean`): `void` <br> 设置是否可以锁定鼠标|
 | **[sin](Utility.Utility.md#sin)**(`a`: `number`): `number` <br> 计算sin值|
@@ -325,7 +328,7 @@ ___
 
 ::: danger Deprecated
 
-since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
 
 :::
 
@@ -343,6 +346,24 @@ since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
 `number`
 
 number（单位：秒）
+___
+
+### drawGameObjectSelectionBox <Score text="drawGameObjectSelectionBox" /> 
+
+• **drawGameObjectSelectionBox**(`StartPoint`, `EndPoint`, `Color`, `DurationTime?`): `void` <Badge type="tip" text="client" />
+
+绘制物体选择框
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `StartPoint` | [`Vector2`](../classes/Type.Vector2.md) | 鼠标开始位置 |
+| `EndPoint` | [`Vector2`](../classes/Type.Vector2.md) | 鼠标结束位置 |
+| `Color` | [`LinearColor`](../classes/Type.LinearColor.md) | 选择框颜色 |
+| `DurationTime?` | `number` | 显示时间 default:0.1 |
+
 ___
 
 ### elapsedTime <Score text="elapsedTime" /> 
@@ -451,6 +472,29 @@ let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
 新的字符串
 ___
 
+### getGameObjectBySelectionBox <Score text="getGameObjectBySelectionBox" /> 
+
+• **getGameObjectBySelectionBox**(`StartPoint`, `EndPoint`, `IsIncludeNonCollidingObjects?`, `IsUseObjectsBoundingBox?`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <Badge type="tip" text="client" />
+
+获取框选屏幕位置的物体
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `StartPoint` | [`Vector2`](../classes/Type.Vector2.md) | 鼠标开始位置 |
+| `EndPoint` | [`Vector2`](../classes/Type.Vector2.md) | 鼠标结束位置 |
+| `IsIncludeNonCollidingObjects?` | `boolean` | 是否包含物体非碰撞组件 default:false |
+| `IsUseObjectsBoundingBox?` | `boolean` | 是否使用物体包围盒 default:false |
+
+#### Returns
+
+[`HitResult`](../classes/Gameplay.HitResult.md)[]
+
+框选的物体
+___
+
 ### isAssetExist <Score text="isAssetExist" /> 
 
 • **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
@@ -460,7 +504,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
 
 :::
 
@@ -486,7 +530,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
 
 :::
 
@@ -616,7 +660,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
 
 :::
 
@@ -634,7 +678,7 @@ ___
 
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
-• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](../modules/Util.StringUtil.md#maskwordcheckresult)\> 
+• **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
 
@@ -647,7 +691,7 @@ ___
 
 #### Returns
 
-`Promise`<[`maskWordCheckResult`](../modules/Util.StringUtil.md#maskwordcheckresult)\>
+`Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\>
 
 ___
 
@@ -859,6 +903,24 @@ ___
 | :------ | :------ | :------ |
 | `isVisible` | `boolean` | 是否可见 |
 
+___
+
+### setGlobalOutlineParams <Score text="setGlobalOutlineParams" /> 
+
+• **setGlobalOutlineParams**(`Width?`, `CoveredAlpha?`, `CoveredEdgeAlpha?`, `NotCoveredAlpha?`, `NotCoveredEdgeAlpha?`): `void` <Badge type="tip" text="client" />
+
+设置全局描边参数
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Width?` | `number` | 描边宽度（0 ~ 4） default:2 |
+| `CoveredAlpha?` | `number` | 被遮挡部分高亮透明度（0 ~ 1） default:0 |
+| `CoveredEdgeAlpha?` | `number` | 被遮挡部分描边透明度（0 ~ 1） default:1 |
+| `NotCoveredAlpha?` | `number` | 未被遮挡部分高亮透明度（0 ~ 1） default:0 |
+| `NotCoveredEdgeAlpha?` | `number` | 未被遮挡部分描边透明度（0 ~ 1） default:1 |
 ___
 
 ### setInterval <Score text="setInterval" /> 

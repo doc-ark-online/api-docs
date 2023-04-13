@@ -1,19 +1,29 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / Union
+[Lighting](../groups/Lighting.Lighting.md) / ExponentialHeightFog
 
-# Union <Badge type="tip" text="Class" /> <Score text="Union" />
+# ExponentialHeightFog <Badge type="tip" text="Class" /> <Score text="ExponentialHeightFog" />
 
-合并对象
+环境雾
 
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`Union`**
+  ↳ **`ExponentialHeightFog`**
 
 ## Table of contents
 
 | Accessors |
 | :-----|
+| **[directionalInscatteringColor](Gameplay.ExponentialHeightFog.md#directionalinscatteringcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.|
+| **[directionalInscatteringExponent](Gameplay.ExponentialHeightFog.md#directionalinscatteringexponent)**(): `number` <br> 太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.|
+| **[directionalInscatteringStartDistance](Gameplay.ExponentialHeightFog.md#directionalinscatteringstartdistance)**(): `number` <br> 太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.|
+| **[fogDensity](Gameplay.ExponentialHeightFog.md#fogdensity)**(): `number` <br> 获取雾密度|
+| **[fogEnable](Gameplay.ExponentialHeightFog.md#fogenable)**(): `boolean` <br> 获取是否启用环境雾|
+| **[fogHeight](Gameplay.ExponentialHeightFog.md#fogheight)**(): `number` <br> 获取雾高度|
+| **[fogHeightFalloff](Gameplay.ExponentialHeightFog.md#fogheightfalloff)**(): `number` <br> 获取雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)|
+| **[fogInscatteringColor](Gameplay.ExponentialHeightFog.md#foginscatteringcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取雾散射颜色|
+| **[fogMaxOpacity](Gameplay.ExponentialHeightFog.md#fogmaxopacity)**(): `number` <br> 获取雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)|
+| **[startDistance](Gameplay.ExponentialHeightFog.md#startdistance)**(): `number` <br> 获取雾起始距离(到摄像机的距离)|
 
 
 ::: details 点击查看继承
@@ -43,6 +53,7 @@
 
 | Methods |
 | :-----|
+| **[setPresetByIndex](Gameplay.ExponentialHeightFog.md#setpresetbyindex)**(`presetIndex`: [`FogPreset`](../enums/Gameplay.FogPreset.md)): `void` <br> 设置环境雾预设|
 
 
 ::: details 点击查看继承
@@ -109,4 +120,286 @@
 
 ## Accessors
 
+### directionalInscatteringColor <Score text="directionalInscatteringColor" /> 
+
+• `get` **directionalInscatteringColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
+
+太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.
+
+
+#### Returns
+
+[`LinearColor`](Type.LinearColor.md)
+
+太阳光散射颜色
+
+• `set` **directionalInscatteringColor**(`value`): `void` <Badge type="tip" text="client" />
+
+太阳光散射颜色,控制定向散射的颜色,该颜色用于近似太阳光的散射.
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](Type.LinearColor.md) | 太阳光散射颜色 |
+
+
+___
+
+### directionalInscatteringExponent <Score text="directionalInscatteringExponent" /> 
+
+• `get` **directionalInscatteringExponent**(): `number` <Badge type="tip" text="client" />
+
+太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.
+
+
+#### Returns
+
+`number`
+
+太阳光散射指数
+
+• `set` **directionalInscatteringExponent**(`value`): `void` <Badge type="tip" text="client" />
+
+太阳光散射指数,控制定向散射锥的大小,该圆锥用于近似来自太阳光的散射.
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 太阳光散射指数 |
+
+
+___
+
+### directionalInscatteringStartDistance <Score text="directionalInscatteringStartDistance" /> 
+
+• `get` **directionalInscatteringStartDistance**(): `number` <Badge type="tip" text="client" />
+
+太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.
+
+
+#### Returns
+
+`number`
+
+太阳光散射初始距离
+
+• `set` **directionalInscatteringStartDistance**(`value`): `void` <Badge type="tip" text="client" />
+
+太阳光散射初始距离,控制与定向散射查看器的起始距离,定向散射用于近似太阳光的散射.
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 太阳光散射初始距离 |
+
+
+___
+
+### fogDensity <Score text="fogDensity" /> 
+
+• `get` **fogDensity**(): `number` <Badge type="tip" text="client" />
+
+获取雾密度
+
+
+#### Returns
+
+`number`
+
+雾密度
+
+• `set` **fogDensity**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾密度
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 雾密度 |
+
+
+___
+
+### fogEnable <Score text="fogEnable" /> 
+
+• `get` **fogEnable**(): `boolean` <Badge type="tip" text="client" />
+
+获取是否启用环境雾
+
+
+#### Returns
+
+`boolean`
+
+是否启用
+
+• `set` **fogEnable**(`value`): `void` <Badge type="tip" text="client" />
+
+设置是否启用环境雾
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` | 是否启用 |
+
+
+___
+
+### fogHeight <Score text="fogHeight" /> 
+
+• `get` **fogHeight**(): `number` <Badge type="tip" text="client" />
+
+获取雾高度
+
+
+#### Returns
+
+`number`
+
+雾高度
+
+• `set` **fogHeight**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾高度
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 雾高度 |
+
+
+___
+
+### fogHeightFalloff <Score text="fogHeightFalloff" /> 
+
+• `get` **fogHeightFalloff**(): `number` <Badge type="tip" text="client" />
+
+获取雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)
+
+
+#### Returns
+
+`number`
+
+雾衰弱高度
+
+• `set` **fogHeightFalloff**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾衰弱高度(控制密度如何随着高度的降低而增加.值越小,可见过渡越大.)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 雾衰弱高度 |
+
+
+___
+
+### fogInscatteringColor <Score text="fogInscatteringColor" /> 
+
+• `get` **fogInscatteringColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
+
+获取雾散射颜色
+
+
+#### Returns
+
+[`LinearColor`](Type.LinearColor.md)
+
+雾散射颜色
+
+• `set` **fogInscatteringColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾散射颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](Type.LinearColor.md) | 雾散射颜色 |
+
+
+___
+
+### fogMaxOpacity <Score text="fogMaxOpacity" /> 
+
+• `get` **fogMaxOpacity**(): `number` <Badge type="tip" text="client" />
+
+获取雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)
+
+
+#### Returns
+
+`number`
+
+雾最大透明度
+
+• `set` **fogMaxOpacity**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾最大透明度(值为1表示雾可以在远处变得完全不透明并完全替换场景颜色,值为0表示根本不会考虑雾颜色.)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 雾最大透明度 |
+
+
+
+### startDistance <Score text="startDistance" /> 
+
+• `get` **startDistance**(): `number` <Badge type="tip" text="client" />
+
+获取雾起始距离(到摄像机的距离)
+
+
+#### Returns
+
+`number`
+
+雾起始距离
+
+• `set` **startDistance**(`value`): `void` <Badge type="tip" text="client" />
+
+设置雾起始距离(到摄像机的距离)
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 雾起始距离 |
+
+
+
 ## Methods
+
+### setPresetByIndex <Score text="setPresetByIndex" /> 
+
+• **setPresetByIndex**(`presetIndex`): `void` <Badge type="tip" text="client" />
+
+设置环境雾预设
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `presetIndex` | [`FogPreset`](../enums/Gameplay.FogPreset.md) |  预设枚举索引 |
+

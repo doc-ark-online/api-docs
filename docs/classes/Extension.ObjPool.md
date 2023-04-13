@@ -37,9 +37,10 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `createObj` | () => `T` |  创建新对象的回调 |
-| `onReset` | (`obj`: `T`) => `void` |  重置对象的回调 |
-| `onDestroy` | (`obj`: `T`) => `void` |  销毁对象的回调 |
+| `onCreateObj` | () => `T` |  创建新对象的回调 |
+| `onReset?` | (`obj`: `T`) => `void` |  重置对象的回调 default: null |
+| `onDestroy?` | (`obj`: `T`) => `void` |  销毁对象的回调 default: null |
+| `onDespawn?` | (`obj`: `T`) => `void` |  归还对象的回调 default: null |
 | `initNum?` | `number` |  默认缓存对象数量 default: 2 |
 
 ## Accessors

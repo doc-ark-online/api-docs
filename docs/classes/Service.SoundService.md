@@ -158,7 +158,7 @@ ___
 | `target` | `string` \| `GameObject` \| [`Vector`](Type.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
 | `loopNum?` | `number` |  循环次数 default: 1 |
 | `volume?` | `number` |  音量 default: 1 |
-| `playParam?` | `any` |  播放参数: `{ innerRadius: 内部半径(默认值200), maxDistance: 衰减距离,不包含内部半径(默认值600) }` default: `{}` |
+| `playParam?` | `any` |  播放参数: `{ innerRadius: 内部半径(默认值200), falloffDistance: 衰减距离,不包含内部半径(默认值600) }` default: `{}` |
 
 #### Returns
 

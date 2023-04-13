@@ -14,6 +14,11 @@
 
 | Accessors |
 | :-----|
+| **[attenuationExponent](Gameplay.PointLight.md#attenuationexponent)**(): `number` <br> 获取光照衰减指数|
+| **[attenuationRadius](Gameplay.PointLight.md#attenuationradius)**(): `number` <br> 获取光照衰减半径|
+| **[color](Gameplay.PointLight.md#color)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取光照颜色|
+| **[intensity](Gameplay.PointLight.md#intensity)**(): `number` <br> 获取光照强度|
+| **[shadowEnable](Gameplay.PointLight.md#shadowenable)**(): `boolean` <br> 获取光照是否投射阴影|
 
 
 ::: details 点击查看继承
@@ -108,5 +113,147 @@
 
 
 ## Accessors
+
+### attenuationExponent <Score text="attenuationExponent" /> 
+
+• `get` **attenuationExponent**(): `number` <Badge type="tip" text="other" />
+
+获取光照衰减指数
+
+客户端生效
+
+#### Returns
+
+`number`
+
+光照衰减指数
+
+• `set` **attenuationExponent**(`value`): `void` <Badge type="tip" text="other" />
+
+设置光照衰减指数
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 光照衰减指数 |
+
+
+___
+
+### attenuationRadius <Score text="attenuationRadius" /> 
+
+• `get` **attenuationRadius**(): `number` <Badge type="tip" text="other" />
+
+获取光照衰减半径
+
+客户端生效
+
+#### Returns
+
+`number`
+
+光照衰减半径
+
+• `set` **attenuationRadius**(`value`): `void` <Badge type="tip" text="other" />
+
+设置光照衰减半径
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 光照衰减半径 |
+
+
+___
+
+### color <Score text="color" /> 
+
+• `get` **color**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+
+获取光照颜色
+
+客户端生效
+
+#### Returns
+
+[`LinearColor`](Type.LinearColor.md)
+
+光照颜色值
+
+• `set` **color**(`value`): `void` <Badge type="tip" text="other" />
+
+设置光照颜色
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](Type.LinearColor.md) | 光照颜色值 |
+
+
+
+### intensity <Score text="intensity" /> 
+
+• `get` **intensity**(): `number` <Badge type="tip" text="other" />
+
+获取光照强度
+
+客户端生效
+
+#### Returns
+
+`number`
+
+光照强度值
+
+• `set` **intensity**(`value`): `void` <Badge type="tip" text="other" />
+
+设置光照强度
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` | 光照强度值 |
+
+
+
+### shadowEnable <Score text="shadowEnable" /> 
+
+• `get` **shadowEnable**(): `boolean` <Badge type="tip" text="other" />
+
+获取光照是否投射阴影
+
+客户端生效
+
+#### Returns
+
+`boolean`
+
+光照投射阴影布尔值
+
+• `set` **shadowEnable**(`value`): `void` <Badge type="tip" text="other" />
+
+设置光照是否投射阴影
+
+客户端生效
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` | 光照投射阴影布尔值 |
+
+
 
 ## Methods

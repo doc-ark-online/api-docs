@@ -38,11 +38,13 @@ MobileEditor
 | **[deleteMessage](MobileEditor.MobileEditor.md#deletemessage)**(`UGCID`: `string`, `CommentID`: `string`): `void` <br> 删除留言板数据|
 | **[endActorPropertiesChange](MobileEditor.MobileEditor.md#endactorpropertieschange)**(`target`: `Base`): `void` <br> 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](MobileEditor.MobileEditor.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <br> 结束记录actor的transform|
+| **[getCurrentProjectPath](MobileEditor.MobileEditor.md#getcurrentprojectpath)**(): `string` <br> 获取当前工程的路径|
 | **[getEditorPawnLocation](MobileEditor.MobileEditor.md#geteditorpawnlocation)**(): [`Vector`](../classes/Type.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
 | **[getEditorPawnRotation](MobileEditor.MobileEditor.md#geteditorpawnrotation)**(): [`Rotation`](../classes/Type.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
 | **[getGizmo](MobileEditor.MobileEditor.md#getgizmo)**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
 | **[getLocalMaterialsCount](MobileEditor.MobileEditor.md#getlocalmaterialscount)**(): `number` <br> 获取创建的本地材质数量|
+| **[getObjectWithGuid](MobileEditor.MobileEditor.md#getobjectwithguid)**(`guid`: `string`): `Core.Script` <br> 查找需要在ugc编辑器中调用的gameobject, 第一次查找会触发onstart 和 反序列化 之后不再触发,避免数据还原需要加上类装饰器ugcEditor|
 | **[getOneFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取单指滑动的代理|
 | **[getPinchGestureDelegate](MobileEditor.MobileEditor.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 获取挤压手势的代理|
 | **[getSavedDir](MobileEditor.MobileEditor.md#getsaveddir)**(): `string` <br> 获取截图的保存路径|
@@ -74,6 +76,7 @@ MobileEditor
 | **[setEditorPawnTransform](MobileEditor.MobileEditor.md#seteditorpawntransform)**(`input`: [`Transform`](../classes/Type.Transform.md)): `boolean` <br> 设置编辑器人物的空间信息|
 | **[setMultiSwipeTime](MobileEditor.MobileEditor.md#setmultiswipetime)**(`time`: `number`): `void` <br> 双指移动的时间- 必须大于这个时间才执行双指移动事件|
 | **[setPinchAngleTolerance](MobileEditor.MobileEditor.md#setpinchangletolerance)**(`time`: `number`): `void` <br> 挤压手势的偏差角度|
+| **[setScriptObjectData](MobileEditor.MobileEditor.md#setscriptobjectdata)**(`target`: `Script`, `key`: `string`, `data`: `string` \): `boolean` <br> 设置脚本内容,不会验证是否有对应变量|
 | **[setSingleSwipeTime](MobileEditor.MobileEditor.md#setsingleswipetime)**(`time`: `number`): `void` <br> 单指移动的时间- 必须大于这个时间才会开始执行单指移动|
 | **[setSwipeTolerance](MobileEditor.MobileEditor.md#setswipetolerance)**(`time`: `number`): `void` <br> 双指移动的偏差量- 值越大误差则可以越大|
 | **[setTapTime](MobileEditor.MobileEditor.md#settaptime)**(`time`: `number`): `void` <br> tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move|
@@ -428,6 +431,21 @@ ___
 
 ___
 
+### getCurrentProjectPath <Score text="getCurrentProjectPath" /> 
+
+• **getCurrentProjectPath**(): `string` 
+
+获取当前工程的路径
+
+
+#### Returns
+
+`string`
+
+返回当前工程的路径
+
+___
+
 ### getEditorPawnLocation <Score text="getEditorPawnLocation" /> 
 
 • **getEditorPawnLocation**(): [`Vector`](../classes/Type.Vector.md) <Badge type="tip" text="client" />
@@ -514,6 +532,27 @@ ___
 `number`
 
 本地材质数量
+
+___
+
+### getObjectWithGuid <Score text="getObjectWithGuid" /> 
+
+• **getObjectWithGuid**(`guid`): `Core.Script` <Badge type="tip" text="client" />
+
+查找需要在ugc编辑器中调用的gameobject, 第一次查找会触发onstart 和 反序列化 之后不再触发,避免数据还原需要加上类装饰器ugcEditor
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `guid` | `string` | 查找的对象id |
+
+#### Returns
+
+`Core.Script`
+
+返回查找的对象,可能为空
 
 ___
 
@@ -1088,6 +1127,29 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  偏差角度 |
 
+
+___
+
+### setScriptObjectData <Score text="setScriptObjectData" /> 
+
+• **setScriptObjectData**(`target`, `key`, `data`): `boolean` <Badge type="tip" text="client" />
+
+设置脚本内容,不会验证是否有对应变量
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `target` | `Script` | 设置对象 |
+| `key` | `string` | 键值 |
+| `data` | `string` \| `number` \| `boolean` | 数据 |
+
+#### Returns
+
+`boolean`
+
+是否设置成功
 
 ___
 

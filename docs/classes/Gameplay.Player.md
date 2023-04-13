@@ -465,7 +465,7 @@ ___
 
 ::: danger Deprecated
 
-since:020 reason:api重构 replacement:getVisibility()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
 
 :::
 
@@ -774,7 +774,7 @@ ___
 
 ::: danger Deprecated
 
-since:023 reason:功能废弃 replacement:getUserId
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
 
 :::
 
@@ -968,7 +968,7 @@ ___
 
 ::: danger Deprecated
 
-since:023 reason:功能废弃 replacement:getUserId
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
 
 :::
 
@@ -1251,7 +1251,7 @@ ___
 
 ::: danger Deprecated
 
-since:023 reason:命名不规范 replacement:AccountService.getInstance().getOpenId()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:命名不规范 replacement:AccountService.getInstance().getOpenId()
 
 :::
 
@@ -1726,7 +1726,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.StaticMesh>({
+let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.Mesh>({
  guid: "7669",
  replicates: true,
  transform: new Transform()
@@ -1762,7 +1762,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃 replacement:asyncSpawn()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:asyncSpawn()
 
 :::
 
@@ -1875,7 +1875,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let obj = Gameplay.GameObject.spawn<Gameplay.StaticMesh>({
+let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
  guid: "7669",
  replicates: true,
  transform: new Transform()
@@ -1911,7 +1911,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃 replacement:spawn()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:spawn()
 
 :::
 

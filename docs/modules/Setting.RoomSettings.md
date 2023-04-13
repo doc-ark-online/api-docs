@@ -1,23 +1,15 @@
-Settings
+[Setting](Setting.Setting.md) / RoomSettings
 
-# Settings <Badge type="tip" text="Groups" /> <Score text="Settings" />
+# RoomSettings <Badge type="tip" text="Namespace" /> <Score text="RoomSettings" />
 
 ## Table of contents
-| Classes |
+
+| Functions |
 | :-----|
-| [Optimization](../classes/Gameplay.Optimization.md) <br> 控制一些优化项的开启关闭 |
+| **[enableJoiningMidgame](Setting.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void` <br> 设置中途加入开关|
+| **[isJoiningMidgameEnabled](Setting.RoomSettings.md#isjoiningmidgameenabled)**(): `boolean` <br> 获取是否开启中途加入|
 
-
-| Modules Functions |
-| :-----|
-| **[enableJoiningMidgame](Settings.Settings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void` <br> 设置中途加入开关|
-| **[isJoiningMidgameEnabled](Settings.Settings.md#isjoiningmidgameenabled)**(): `boolean` <br> 获取是否开启中途加入|
-
-
-## Modules Functions
-
-
-___
+## Functions
 
 ### enableJoiningMidgame <Score text="enableJoiningMidgame" /> 
 
@@ -32,6 +24,7 @@ ___
 | :------ | :------ | :------ |
 | `isEnable` | `boolean` | -true:开启中途加入 -false:关闭中途加入 |
 
+
 ___
 
 ### isJoiningMidgameEnabled <Score text="isJoiningMidgameEnabled" /> 
@@ -44,3 +37,5 @@ ___
 #### Returns
 
 `boolean`
+
+true:开启中途加入 false:关闭中途加入

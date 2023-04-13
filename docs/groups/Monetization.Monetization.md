@@ -13,6 +13,7 @@ Monetization
 | :-----|
 | [AdsState](../enums/Service.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态 |
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型 |
+| [consumeKeyStatus](../enums/Service.consumeKeyStatus.md) <br> 大会员扣除钥匙订单返回状态信息 |
 
 
 | Modules Functions |
@@ -27,6 +28,12 @@ Monetization
 | **[queryUserGameCoinWithEnv](Monetization.Monetization.md#queryusergamecoinwithenv)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`, `Env`: `string`): `void` <br> 查询账户的游戏币数量|
 | **[queryUserGameCoinWithGameID](Monetization.Monetization.md#queryusergamecoinwithgameid)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`): `void` <br> 查询账户的游戏币数量|
 | **[queryUserNFT](Monetization.Monetization.md#queryusernft)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `Account`: `string`, `GameId`: `string`, `TimeOut`: `number`, `Env`: `string`): `void` <br> 查询NFT接口|
+
+
+| Modules Type Aliases |
+| :-----|
+| **[OnKeyConsume](Monetization.Monetization.md#onkeyconsume)**: (`player`: [`Player`](../classes/Gameplay.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 大会员钥匙扣除服务端接收发货通知的消息格式|
+| **[keyUsageInfo](Monetization.Monetization.md#keyusageinfo)**: `Object` <br> 大会员消费钥匙订单。orderId：订单ID，boxId：宝箱ID，number：购买宝箱数量，shipTime：发货时间，毫秒级时间戳|
 
 
 ## Modules Functions
@@ -231,3 +238,46 @@ ___
 | `GameId` | `string` | 游戏ID |
 | `TimeOut` | `number` | 最大延迟时间 |
 | `Env` | `string` | 环境 |
+## Modules Type Aliases
+
+
+___
+
+### OnKeyConsume <Score text="OnKeyConsume" /> 
+
+Ƭ **OnKeyConsume**: (`player`: [`Player`](../classes/Gameplay.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void`
+
+#### Type declaration
+
+• (`player`, `orderId`, `boxId`, `amount`, `confirmOrder`): `void`
+
+大会员钥匙扣除服务端接收发货通知的消息格式
+
+##### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`Player`](../classes/Gameplay.Player.md) |  下单的玩家Player |
+| `orderId` | `string` |  订单Id |
+| `boxId` | `string` |  宝箱Id |
+| `amount` | `number` |  数量 |
+| `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
+
+##### Returns
+
+`void`
+___
+
+### keyUsageInfo <Score text="keyUsageInfo" /> 
+
+Ƭ **keyUsageInfo**: `Object`
+
+大会员消费钥匙订单。orderId：订单ID，boxId：宝箱ID，number：购买宝箱数量，shipTime：发货时间，毫秒级时间戳
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `boxId` | `string` |
+| `consumeTime` | `number` |
+| `number` | `number` |

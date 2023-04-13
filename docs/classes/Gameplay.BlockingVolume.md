@@ -1,25 +1,31 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / SkeletalMesh
+[Gameplay](../groups/Gameplay.Gameplay.md) / BlockingVolume
 
-# SkeletalMesh <Badge type="tip" text="Class" /> <Score text="SkeletalMesh" />
+# BlockingVolume <Badge type="tip" text="Class" /> <Score text="BlockingVolume" />
 
-骨骼模型逻辑对象。用于对骨骼模型进行操作。
+禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立
 
 ::: warning Precautions
 
-不适用于角色
+该对象由服务器生成同步到客户端
 
 :::
+
+使用示例:请尽量放置在场景中，不推荐动态生成，不支持重叠使用
+```ts
+// 不推荐动态生成，不支持重叠使用
+```
 
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`SkeletalMesh`**
+  ↳ **`BlockingVolume`**
 
 ## Table of contents
 
 | Accessors |
 | :-----|
+| **[playerStateResponse](Gameplay.BlockingVolume.md#playerstateresponse)**(): `unknown` <br> 获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数|
 
 
 ::: details 点击查看继承
@@ -49,6 +55,10 @@
 
 | Methods |
 | :-----|
+| **[getCurrentPlayerPassable](Gameplay.BlockingVolume.md#getcurrentplayerpassable)**(`Target`: `number`): `boolean` <br> 获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值|
+| **[setBlockAllPlayer](Gameplay.BlockingVolume.md#setblockallplayer)**(`BlockAll`: `boolean`): `boolean` <br> 让该禁行区阻挡所有玩家|
+| **[setCurrentPlayerPassable](Gameplay.BlockingVolume.md#setcurrentplayerpassable)**(`Target`: `number`, `CanPass`: `boolean`): `void` <br> 设置玩家通过该区域屏障权限|
+| **[setNonCharacterActorCanPass](Gameplay.BlockingVolume.md#setnoncharacteractorcanpass)**(`targetActor`: `any`, `canPass`: `boolean`): `void` <br> 设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效|
 
 
 ::: details 点击查看继承
@@ -115,4 +125,114 @@
 
 ## Accessors
 
+### playerStateResponse <Score text="playerStateResponse" /> 
+
+• `get` **playerStateResponse**(): `unknown` 
+
+获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数
+
+
+使用示例:简单调用
+```ts
+BlockArea.getPlayerStateResponse()
+```
+
+#### Returns
+
+`unknown`
+
+bool
+
+
 ## Methods
+
+### getCurrentPlayerPassable <Score text="getCurrentPlayerPassable" /> 
+
+• **getCurrentPlayerPassable**(`Target`): `boolean` 
+
+获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值
+
+
+使用示例: 简单调用
+```ts
+BlockArea.getPlayerCanPass(player.getPlayerID())
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Target` | `number` | GUID |
+
+#### Returns
+
+`boolean`
+
+bool
+
+
+### setBlockAllPlayer <Score text="setBlockAllPlayer" /> 
+
+• **setBlockAllPlayer**(`BlockAll`): `boolean` 
+
+让该禁行区阻挡所有玩家
+
+
+使用示例:让该禁行区阻挡所有玩家
+```ts
+BlockArea.setBlockAllPlayer()
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `BlockAll` | `boolean` | 设置是否开启阻挡所有玩家 |
+
+#### Returns
+
+`boolean`
+
+bool
+
+
+### setCurrentPlayerPassable <Score text="setCurrentPlayerPassable" /> 
+
+• **setCurrentPlayerPassable**(`Target`, `CanPass`): `void` 
+
+设置玩家通过该区域屏障权限
+
+
+使用示例: 简单调用
+```ts
+BlockArea.setCurrentPlayerPassable(player,true)
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Target` | `number` | GUID |
+| `CanPass` | `boolean` | 是否通过 |
+
+
+
+### setNonCharacterActorCanPass <Score text="setNonCharacterActorCanPass" /> 
+
+• **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void` 
+
+设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
+
+
+使用示例:传递GameObject和bool
+```ts
+BlockArea.setNonCharacterActorCanPass(GameObject,true)
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `targetActor` | `any` | 目标Actor |
+| `canPass` | `boolean` | 是否通过 |
+

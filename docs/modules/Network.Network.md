@@ -11,11 +11,6 @@ Network
 | [HttpRequestType](../enums/Network.HttpRequestType.md) <br> 开发给用户用的Http请求类型枚举|
 | [HttpRequestURL](../enums/Network.HttpRequestURL.md) <br> 开发给用户用的URL枚举，需要与C++层的枚举对应|
 
-| Interfaces |
-| :-----|
-| [RequestInit](../interfaces/Network.RequestInit.md) <br> HTTP请求信息的对象|
-| [Response](../interfaces/Network.Response.md) <br> HTTP响应信息的对象|
-
 | Type Aliases |
 | :-----|
 | **[HttpResponse](Network.Network.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
@@ -23,7 +18,7 @@ Network
 
 | Functions |
 | :-----|
-| **[fetch](Network.Network.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
+| **[fetch](Network.Network.md#fetch)**(`url`: `string`, `init?`: `RequestInit`): `Promise`<`Response`\> <br> HTTP请求|
 | **[generalHttpRequest](Network.Network.md#generalhttprequest)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
 | **[getUrlParameter](Network.Network.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
 | **[httpRequestTransmitData](Network.Network.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
@@ -87,7 +82,7 @@ ___
 
 ### fetch <Score text="fetch" /> 
 
-• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> 
+• **fetch**(`url`, `init?`): `Promise`<`Response`\> 
 
 HTTP请求
 
@@ -97,11 +92,11 @@ HTTP请求
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `url` | `string` | url |
-| `init?` | [`RequestInit`](../interfaces/Network.RequestInit.md) | 请求信息 default:请求信息 |
+| `init?` | `RequestInit` | 请求信息 default:请求信息 |
 
 #### Returns
 
-`Promise`<[`Response`](../interfaces/Network.Response.md)\>
+`Promise`<`Response`\>
 
 响应信息
 

@@ -1,4 +1,4 @@
-[Scripiting](../groups/Scripiting.Scripiting.md) / ReleaseStatus
+[Scripting](../groups/Scripting.Scripting.md) / ReleaseStatus
 
 # ReleaseStatus <Badge type="tip" text="Enumeration" /> <Score text="ReleaseStatus" />
 

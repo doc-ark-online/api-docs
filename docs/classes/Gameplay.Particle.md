@@ -1,8 +1,21 @@
-[Others](../groups/Others.Others.md) / Particle
+[Effects](../groups/Effects.Effects.md) / Particle
 
 # Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 
-特效对象
+特效对象,通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。如需精确控制特效的播放与停止，请使用play()和stop()。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。
+
+使用示例: 动态创建特效
+```ts
+// 按ID加载资源
+Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
+       if (success) {
+           // 下载完毕创建特效
+           Core.GameObject.asyncSpawnGameObject(AssetID).then((particle: Core.GameObject) => {
+               // 播放特效
+               particle.play();
+           });
+       });
+```
 
 ## Hierarchy
 
@@ -12,12 +25,17 @@
 
 ## Table of contents
 
+| Properties |
+| :-----|
+| **[onFinished](Gameplay.Particle.md#onfinished)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 特效播放完毕事件|
+
 | Accessors |
 | :-----|
-| **[color](Gameplay.Particle.md#color)**(`EffectColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置特效颜色|
-| **[loop](Gameplay.Particle.md#loop)**(): `boolean` <br> 获取特效是否是循环|
-| **[loopCount](Gameplay.Particle.md#loopcount)**(): `number` <br> 获取特效循环次数|
-| **[particleLength](Gameplay.Particle.md#particlelength)**(): `number` <br> 获取特效时长|
+| **[color](Gameplay.Particle.md#color)**(`effectColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置特效颜色，不再生效|
+| **[loop](Gameplay.Particle.md#loop)**(): `boolean` <br> 获取特效是否是循环，不再生效|
+| **[loopCount](Gameplay.Particle.md#loopcount)**(): `number` <br> 获取特效循环次数，不再生效|
+| **[particleLength](Gameplay.Particle.md#particlelength)**(): `number` <br> 获取特效时长(ms)|
+| **[timeLength](Gameplay.Particle.md#timelength)**(): `number` <br> 获取特效时长(ms)|
 
 
 ::: details 点击查看继承
@@ -47,9 +65,16 @@
 
 | Methods |
 | :-----|
+| **[forceStop](Gameplay.Particle.md#forcestop)**(): `void` <br> 强制停止特效，所有粒子全部销毁|
 | **[play](Gameplay.Particle.md#play)**(`OnSuccess?`: () => `void`): `void` <br> 播放特效|
+| **[setColor](Gameplay.Particle.md#setcolor)**(`parameterName`: `string`, `value`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置特效颜色参数值|
+| **[setColorRandom](Gameplay.Particle.md#setcolorrandom)**(`parameterName`: `string`, `valueMax`: [`LinearColor`](Type.LinearColor.md), `valueMin`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置特效颜色参数随机|
 | **[setCullDistance](Gameplay.Particle.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
-| **[stop](Gameplay.Particle.md#stop)**(): `void` <br> 停止特效|
+| **[setFloat](Gameplay.Particle.md#setfloat)**(`parameterName`: `string`, `value`: `number`): `void` <br> 设置特效标量参数值|
+| **[setFloatRandom](Gameplay.Particle.md#setfloatrandom)**(`parameterName`: `string`, `valueMax`: `number`, `valueMin`: `number`): `void` <br> 设置特效标量参数随机|
+| **[setVector](Gameplay.Particle.md#setvector)**(`parameterName`: `string`, `value`: [`Vector`](Type.Vector.md)): `void` <br> 设置特效向量参数值|
+| **[setVectorRandom](Gameplay.Particle.md#setvectorrandom)**(`parameterName`: `string`, `valueMax`: [`Vector`](Type.Vector.md), `valueMin`: [`Vector`](Type.Vector.md)): `void` <br> 设置特效向量参数范围随机，在一定范围内取向量的随机值|
+| **[stop](Gameplay.Particle.md#stop)**(): `void` <br> 停止特效，不影响已经生成的粒子|
 
 
 ::: details 点击查看继承
@@ -114,29 +139,48 @@
 :::
 
 
+## Properties
+
+### onFinished <Score text="onFinished" /> 
+
+• **onFinished**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
+
+特效播放完毕事件
+
 ## Accessors
 
 ### color <Score text="color" /> 
 
-• `set` **color**(`EffectColor`): `void` <Badge type="tip" text="client" />
+• `set` **color**(`effectColor`): `void`
 
-设置特效颜色
+设置特效颜色，不再生效
 
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement: 请使用setColor
+
+:::
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `EffectColor` | [`LinearColor`](Type.LinearColor.md) | 特效颜色（当前并不能保证与设置颜色一致） |
+| Name | Type |
+| :------ | :------ |
+| `effectColor` | [`LinearColor`](Type.LinearColor.md) |
 
 
 
 ### loop <Score text="loop" /> 
 
-• `get` **loop**(): `boolean` <Badge type="tip" text="client" />
+• `get` **loop**(): `boolean` <Badge type="tip" text="other" />
 
-获取特效是否是循环
+获取特效是否是循环，不再生效
 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
+
+:::
 
 #### Returns
 
@@ -144,10 +188,16 @@
 
 是否循环
 
-• `set` **loop**(`NewLoop`): `void` <Badge type="tip" text="client" />
+• `set` **loop**(`NewLoop`): `void` <Badge type="tip" text="other" />
 
-设置特效循环
+设置特效循环，不再生效
 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:不再生效
+
+:::
 
 #### Parameters
 
@@ -160,10 +210,16 @@ ___
 
 ### loopCount <Score text="loopCount" /> 
 
-• `get` **loopCount**(): `number` <Badge type="tip" text="client" />
+• `get` **loopCount**(): `number` <Badge type="tip" text="other" />
 
-获取特效循环次数
+获取特效循环次数，不再生效
 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
+
+:::
 
 #### Returns
 
@@ -171,10 +227,16 @@ ___
 
 循环的次数
 
-• `set` **loopCount**(`NewLoopCount`): `void` <Badge type="tip" text="client" />
+• `set` **loopCount**(`NewLoopCount`): `void` <Badge type="tip" text="other" />
 
-设置特效循环次数
+设置特效循环次数，不再生效
 
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
+
+:::
 
 #### Parameters
 
@@ -186,19 +248,51 @@ ___
 
 ### particleLength <Score text="particleLength" /> 
 
-• `get` **particleLength**(): `number` <Badge type="tip" text="client" />
+• `get` **particleLength**(): `number` <Badge type="tip" text="other" />
 
-获取特效时长
+获取特效时长(ms)
+
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement: timeLength
+
+:::
+
+#### Returns
+
+`number`
+
+
+### timeLength <Score text="timeLength" /> 
+
+• `get` **timeLength**(): `number` <Badge type="tip" text="client" />
+
+获取特效时长(ms)
 
 
 #### Returns
 
 `number`
 
--1：未获取到值
+特效实际播放时长
 
 
 ## Methods
+
+### forceStop <Score text="forceStop" /> 
+
+• **forceStop**(): `void` <Badge type="tip" text="client" />
+
+强制停止特效，所有粒子全部销毁
+
+
+使用示例: 简单调用
+```ts
+Particle.forceStop()
+```
+
+
 
 ### play <Score text="play" /> 
 
@@ -207,6 +301,11 @@ ___
 播放特效
 
 
+使用示例: 简单调用
+```ts
+Particle.play()
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -214,6 +313,53 @@ ___
 | `OnSuccess?` | () => `void` | 特效播放完成后回调 default: null |
 
 
+
+### setColor <Score text="setColor" /> 
+
+• **setColor**(`parameterName`, `value`): `void` <Badge type="tip" text="client" />
+
+设置特效颜色参数值
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"Color"的参数为纯红色 *Type.LinearColor各参数分别代表红、绿、蓝和透明度
+Particle.setColor("Color", new Type.LinearColor(1,0,0,1))
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `value` | [`LinearColor`](Type.LinearColor.md) | 颜色变量 |
+
+
+___
+
+### setColorRandom <Score text="setColorRandom" /> 
+
+• **setColorRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+
+设置特效颜色参数随机
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"Color"的参数从纯白色至纯黑色随机取值 *Type.LinearColor各参数分别代表红、绿、蓝和透明度
+Particle.setColorRandom("Color", new Type.LinearColor(1,1,1,1),new Type.LinearColor(0,0,0,0))
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `valueMax` | [`LinearColor`](Type.LinearColor.md) | 颜色变量最大值 |
+| `valueMin` | [`LinearColor`](Type.LinearColor.md) | 颜色变量最小值 |
+
+
+___
 
 ### setCullDistance <Score text="setCullDistance" /> 
 
@@ -235,11 +381,115 @@ ___
 | `inCullDistance` | `number` | 裁剪距离 |
 
 
+___
+
+### setFloat <Score text="setFloat" /> 
+
+• **setFloat**(`parameterName`, `value`): `void` <Badge type="tip" text="client" />
+
+设置特效标量参数值
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"LifeTime"的参数的值为10
+Particle.setFloat("LifeTime", 10)
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `value` | `number` | 标量值 |
+
+
+___
+
+### setFloatRandom <Score text="setFloatRandom" /> 
+
+• **setFloatRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+
+设置特效标量参数随机
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"LifeTime"的参数的值在10~100之间随机取值
+Particle.setFloatRandom("LifeTime", 100, 10)
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `valueMax` | `number` | 标量最大值 |
+| `valueMin` | `number` | 标量最小值 |
+
+
+
+### setVector <Score text="setVector" /> 
+
+• **setVector**(`parameterName`, `value`): `void` <Badge type="tip" text="client" />
+
+设置特效向量参数值
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"Speed"的参数的Z轴方向的值为50
+Particle.setVector("Speed", new Type.Vector(0,0,50))
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `value` | [`Vector`](Type.Vector.md) | 向量值 |
+
+
+___
+
+### setVectorRandom <Score text="setVectorRandom" /> 
+
+• **setVectorRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+
+设置特效向量参数范围随机，在一定范围内取向量的随机值
+
+
+使用示例: 简单调用
+```ts
+// 设置Key值为"Speed"的参数的X方向在-50到50之间随机取值
+Particle.setVectorRandom("Speed", new Type.Vector(50,0,0)，new Type.Vector(-50,0,0))
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `parameterName` | `string` | 参数名 |
+| `valueMax` | [`Vector`](Type.Vector.md) | 向量最大值 |
+| `valueMin` | [`Vector`](Type.Vector.md) | 向量最小值 |
+
+
 
 ### stop <Score text="stop" /> 
 
 • **stop**(): `void` <Badge type="tip" text="client" />
 
-停止特效
+::: danger Deprecated
 
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 接口功能替换 replacement: forceStop
+
+:::
+
+停止特效，不影响已经生成的粒子
+
+
+使用示例: 简单调用
+```ts
+Particle.stop()
+```
 

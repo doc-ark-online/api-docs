@@ -426,7 +426,7 @@ ___
 
 ::: danger Deprecated
 
-since:020 reason:api重构 replacement:getVisibility()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
 
 :::
 
@@ -1446,7 +1446,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.StaticMesh>({
+let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.Mesh>({
  guid: "7669",
  replicates: true,
  transform: new Transform()
@@ -1482,7 +1482,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃 replacement:asyncSpawn()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:asyncSpawn()
 
 :::
 
@@ -1595,7 +1595,7 @@ ___
 
 使用示例:调用方法
 ```ts
-let obj = Gameplay.GameObject.spawn<Gameplay.StaticMesh>({
+let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
  guid: "7669",
  replicates: true,
  transform: new Transform()
@@ -1631,7 +1631,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃 replacement:spawn()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:spawn()
 
 :::
 

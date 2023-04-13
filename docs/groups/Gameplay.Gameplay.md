@@ -7,17 +7,13 @@ Gameplay
 | :-----|
 | [AbilityObject](../classes/Gameplay.AbilityObject.md) <br> 能力对象，提供角色按指定一系列的能力序列进行动画自动切换的功能。 |
 | [AbilityState](../classes/Gameplay.AbilityState.md) <br> 能力状态，用于读取/配置能力对象的能力相关的属性 |
-| [Anchor](../classes/Gameplay.Anchor.md) <br> 空锚点，用于位置标识，打组使用时可做作为根节点，可以对一组物体整体进行位移、旋转、缩放。动态生成无实际使用意义，不推荐。 |
-| [BlockingArea](../classes/Gameplay.BlockingArea.md) <br> 禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立 |
-| [BlockingAreaManager](../classes/Gameplay.BlockingAreaManager.md) <br> 禁行区管理类,用于调用禁行区的全局方法 |
+| [AdvancedVehicle](../classes/Gameplay.AdvancedVehicle.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 |
+| [BlockingVolume](../classes/Gameplay.BlockingVolume.md) <br> 禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立 |
 | [CameraSystem](../classes/Gameplay.CameraSystem.md) <br> 摄像机系统，是依托于角色，作为角色的组件存在，在此组件下还有一个用来确定视口位置的摄像机组件 |
-| [EffectLogical](../classes/Gameplay.EffectLogical.md) <br> 区域效果是一个可以播放特效并带有范围判定的一个对象。开发者可以自定义范围的形状，然后获取该范围内的角色。该对象在游戏开放中常用于释放带变化范围判定的特效技能，例如蓄力重击和蔓延伤害技能 |
-| [Equipment](../classes/Gameplay.Equipment.md) <br> 装备对象，无自带模型，有三种状态判定（无装备，有装备收起状态，有装备持有状态），动态生成需自行配置各状态的动作姿态及绑定插槽。 |
 | [FireDataInfoForMultiple](../classes/Gameplay.FireDataInfoForMultiple.md) <br> 热武器逻辑组件专用的临时类， |
 | [GameInitializer](../classes/Extension.GameInitializer.md) <br> 游戏初始化 |
 | [GameObject](../classes/Gameplay.GameObject.md) <br> GameObject的基类 |
 | [Gizmo](../classes/MobileEditor.Gizmo.md) <br> Gizmo |
-| [HitResult](../classes/Gameplay.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
 | [HotWeapon](../classes/Gameplay.HotWeapon.md) <br> 热武器功能对象，提供对发射类武器常用的射击，上膛，换弹，后坐力，瞄准和射击精度控制等功能的封装。 |
 | [HotWeaponAccuracyOfFireComponent](../classes/Gameplay.HotWeaponAccuracyOfFireComponent.md) <br> 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 |
 | [HotWeaponAimComponent](../classes/Gameplay.HotWeaponAimComponent.md) <br> 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近 |
@@ -25,24 +21,20 @@ Gameplay
 | [HotWeaponLoadComponent](../classes/Gameplay.HotWeaponLoadComponent.md) <br> 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑 |
 | [HotWeaponRecoilForceComponent](../classes/Gameplay.HotWeaponRecoilForceComponent.md) <br> 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复） |
 | [HotWeaponReloadComponent](../classes/Gameplay.HotWeaponReloadComponent.md) <br> 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑 |
-| [InstanceStaticMesh](../classes/Gameplay.InstanceStaticMesh.md) <br> InstanceStaticMesh |
-| [InteractiveObject](../classes/Gameplay.InteractiveObject.md) <br> 交互物功能对象 V2 |
-| [Interactor](../classes/Gameplay.Interactor.md) <br> 交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。 |
+| [InteractiveObject](../classes/Gameplay.InteractiveObject.md) <br> 交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。 |
+| [Interactor](../classes/Gameplay.Interactor.md) <br> 交互物功能对象 V2 |
 | [MaterialInstance](../classes/Gameplay.MaterialInstance.md) <br> 材质实例类 |
-| [NavModifierVolume](../classes/Gameplay.NavModifierVolume.md) <br> 提供基础寻路数据 |
+| [Mesh](../classes/Gameplay.Mesh.md) <br> StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口 |
+| [NavModifierVolume](../classes/Gameplay.NavModifierVolume.md) <br> 寻路动态修饰区 |
 | [Player](../classes/Gameplay.Player.md) <br> 角色控制 |
 | [PlayerStart](../classes/Gameplay.PlayerStart.md) <br> 玩家起始 |
-| [Prefab](../classes/Gameplay.Prefab.md) <br> 预制体 |
 | [Projectile](../classes/Gameplay.Projectile.md) <br> 投掷物逻辑对象 |
 | [ProjectileInst](../classes/Gameplay.ProjectileInst.md) <br> 投掷物 v2 实例 |
 | [ProjectileLauncher](../classes/Gameplay.ProjectileLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 |
-| [SkeletalMesh](../classes/Gameplay.SkeletalMesh.md) <br> 骨骼模型逻辑对象。用于对骨骼模型进行操作。 |
-| [SmoothSync](../classes/Gameplay.SmoothSync.md) <br> 平滑组件 |
 | [SomatotypeBase](../classes/Gameplay.SomatotypeBase.md) <br> 体型基类 |
 | [StaticMesh](../classes/Gameplay.StaticMesh.md) <br> StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口 |
 | [SwimmingVolume](../classes/Gameplay.SwimmingVolume.md) <br> 游泳区域 |
 | [Trigger](../classes/Gameplay.Trigger.md) <br> 触发器，对进入/离开触发器范围的事件进行响应 |
-| [Union](../classes/Gameplay.Union.md) <br> 合并对象 |
 | [VehicleCameraSetting](../classes/Gameplay.VehicleCameraSetting.md) <br> 载具摄像机，对应编辑器对象管理器中载具下挂载的摄像机对象 |
 | [WheeledVehicle4W](../classes/Gameplay.WheeledVehicle4W.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 |
 
@@ -55,7 +47,6 @@ Gameplay
 | [CameraMode](../enums/Gameplay.CameraMode.md) <br> 摄像机模式 |
 | [CameraProjectionMode](../enums/Gameplay.CameraProjectionMode.md) <br> 摄像机镜头模式 |
 | [CameraRotationMode](../enums/Gameplay.CameraRotationMode.md) <br> 摄像机旋转模式 |
-| [EquipmentStatus](../enums/Gameplay.EquipmentStatus.md) <br> 装备状态 |
 | [HotWeaponAimMode](../enums/Gameplay.HotWeaponAimMode.md) <br> 热武器瞄准模式 |
 | [HotWeaponCrossHairType](../enums/Gameplay.HotWeaponCrossHairType.md) <br> 热武器准心类型 |
 | [HotWeaponFireMode](../enums/Gameplay.HotWeaponFireMode.md) <br> 热武器开火模式 |
@@ -67,13 +58,9 @@ Gameplay
 | [ProjectileCollisionMode](../enums/Gameplay.ProjectileCollisionMode.md) <br> 投掷物碰撞反馈模式 |
 | [ProjectileLineStyle](../enums/Gameplay.ProjectileLineStyle.md) <br> 投掷物轨迹绘制的显示风格 |
 | [VehicleDriveMode4W](../enums/Gameplay.VehicleDriveMode4W.md) <br> 四轮载具驱动模式 |
+| [VehicleDriveMode4WNew](../enums/Gameplay.VehicleDriveMode4WNew.md) <br> 四轮载具驱动模式 |
 | [VehicleWheelPosition4W](../enums/Gameplay.VehicleWheelPosition4W.md) <br> 四轮载具车轮位置 |
-
-
-| Interfaces |
-| :-----|
-| [RequestInit](../interfaces/Network.RequestInit.md) <br> HTTP请求信息的对象 |
-| [Response](../interfaces/Network.Response.md) <br> HTTP响应信息的对象 |
+| [VehicleWheelPosition4WNew](../enums/Gameplay.VehicleWheelPosition4WNew.md) <br> 四轮载具车轮位置 |
 
 
 | Modules Functions |
@@ -85,10 +72,12 @@ Gameplay
 | **[asyncGetPlayer](Gameplay.Gameplay.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <br> 异步根据playerId获取Player|
 | **[boxOverlap](Gameplay.Gameplay.md#boxoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `IgnoreByKind?`: `boolean`, `Source?`: `GameObject`): `Core.GameObject`[] <br> 矩形范围检测|
 | **[boxOverlapInLevel](Gameplay.Gameplay.md#boxoverlapinlevel)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `Width`: `number`, `Height`: `number`, `debug`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `IgnoreByKind?`: `boolean`, `Source?`: `GameObject`): `Core.GameObject`[] <br> 矩形范围检测|
-| **[clearMoveTo](Gameplay.Gameplay.md#clearmoveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 导航停止|
+| **[clearFollow](Gameplay.Gameplay.md#clearfollow)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md)): `void` <br> 停止跟随|
+| **[clearMoveTo](Gameplay.Gameplay.md#clearmoveto)**(`Obj`: `GameObject`): `void` <br> 导航停止|
 | **[cylinderOverlap](Gameplay.Gameplay.md#cylinderoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `Height`: `number`, `debug`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `IgnoreByKind?`: `boolean`, `Source?`: `GameObject`): `Core.GameObject`[] <br> 圆柱范围检测|
-| **[fetch](Gameplay.Gameplay.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/Network.RequestInit.md)): `Promise`<[`Response`](../interfaces/Network.Response.md)\> <br> HTTP请求|
-| **[generalHttpRequest](Gameplay.Gameplay.md#generalhttprequest)**(`response`: [`HttpResponse`](../modules/Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
+| **[fetch](Gameplay.Gameplay.md#fetch)**(`url`: `string`, `init?`: `RequestInit`): `Promise`<`Response`\> <br> HTTP请求|
+| **[follow](Gameplay.Gameplay.md#follow)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `targetplayer`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
+| **[generalHttpRequest](Gameplay.Gameplay.md#generalhttprequest)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/Network.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> 通用Http请求|
 | **[getAllPlayers](Gameplay.Gameplay.md#getallplayers)**(): [`Player`](../classes/Gameplay.Player.md)[] <br> 当前所有Player|
 | **[getClickGameObjectByScene](Gameplay.Gameplay.md#getclickgameobjectbyscene)**(`SceneX`: `number`, `SceneY`: `number`, `Distance`: `number`, `multiTrace`: `boolean`, `onRay`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取点击屏幕位置的物体|
 | **[getCurrentEnv](Gameplay.Gameplay.md#getcurrentenv)**(): `string` <br> 获取当前环境|
@@ -107,13 +96,13 @@ Gameplay
 | **[getUrlParameter](Gameplay.Gameplay.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
 | **[getVersion](Gameplay.Gameplay.md#getversion)**(): `string` <br> 获取当前游戏版本|
 | **[getViewportSize](Gameplay.Gameplay.md#getviewportsize)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取屏幕的分辨率大小（不跟随屏幕缩放变化）。|
-| **[httpRequestTransmitData](Gameplay.Gameplay.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](../modules/Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
+| **[httpRequestTransmitData](Gameplay.Gameplay.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Network.Network.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/Network.HttpRequestType.md)): `boolean` <br> Http请求接口|
 | **[isClient](Gameplay.Gameplay.md#isclient)**(): `boolean` <br> 是否客户端运行|
 | **[isDynamicVibration](Gameplay.Gameplay.md#isdynamicvibration)**(`value`: `boolean`): `void` <br> 振动开关|
 | **[isMobile](Gameplay.Gameplay.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
 | **[isServer](Gameplay.Gameplay.md#isserver)**(): `boolean` <br> 是否服务器运行|
 | **[lineTrace](Gameplay.Gameplay.md#linetrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `EndLocation`: [`Vector`](../classes/Type.Vector.md), `multiTrace?`: `boolean`, `debug?`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `IgnoreByKind?`: `boolean`, `Source?`: `GameObject`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 射线检测|
-| **[moveTo](Gameplay.Gameplay.md#moveto)**(`player`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `Location`: [`Vector`](../classes/Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
+| **[moveTo](Gameplay.Gameplay.md#moveto)**(`Obj`: `GameObject`, `Location`: [`Vector`](../classes/Type.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
 | **[parabolicTrace](Gameplay.Gameplay.md#parabolictrace)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Direction`: [`Vector`](../classes/Type.Vector.md), `InitSpeed`: `number`, `Range`: `number`, `CapsuleRadius`: `number`, `IgnoreObjectTypes`: [`ObjectTypeQuery`](../enums/Gameplay.ObjectTypeQuery.md)[], `debug?`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `Source?`: `GameObject`): [`HitResult`](../classes/Gameplay.HitResult.md) <br> 抛物线检测|
 | **[playDynamicForceFeedbackStart](Gameplay.Gameplay.md#playdynamicforcefeedbackstart)**(`Intensity?`: `number`, `Duration?`: `number`): `void` <br> 播放震动|
 | **[playDynamicForceFeedbackStop](Gameplay.Gameplay.md#playdynamicforcefeedbackstop)**(): `void` <br> 停止震动|
@@ -123,12 +112,18 @@ Gameplay
 | **[setGraphicsCPULevel](Gameplay.Gameplay.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
 | **[setGraphicsGPULevel](Gameplay.Gameplay.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
 | **[setPlayerPassableForAllArea](Gameplay.Gameplay.md#setplayerpassableforallarea)**(`character`: [`Character`](../classes/Gameplay.Character.md), `canPass`: `boolean`): `void` <br> 设置某个玩家对所有禁行区的通过权限|
-| **[setStaticMeshColor](Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`StaticMesh`](../classes/Gameplay.StaticMesh.md), `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
+| **[setStaticMeshColor](Gameplay.Gameplay.md#setstaticmeshcolor)**(`staticMesh`: [`Mesh`](../classes/Gameplay.Mesh.md), `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
 | **[setStaticMeshMaterialColor](Gameplay.Gameplay.md#setstaticmeshmaterialcolor)**(`obj`: `GameObject`, `color`: [`LinearColor`](../classes/Type.LinearColor.md)): `void` <br> 设置物体静态网格材质颜色|
 | **[sphereOverlap](Gameplay.Gameplay.md#sphereoverlap)**(`StartLocation`: [`Vector`](../classes/Type.Vector.md), `Radius`: `number`, `debug`: `boolean`, `IgnoreObjectsGuid?`: `string`[], `IgnoreByKind?`: `boolean`, `Source?`: `GameObject`): `Core.GameObject`[] <br> 圆形范围检测|
 | **[urlDecode](Gameplay.Gameplay.md#urldecode)**(`str`: `string`): `string` <br> url解码|
 | **[urlEncode](Gameplay.Gameplay.md#urlencode)**(`str`: `string`): `string` <br> url转码|
 | **[vibrate](Gameplay.Gameplay.md#vibrate)**(`enable`: `boolean`): `void` <br> 振动开关|
+
+
+| Modules Type Aliases |
+| :-----|
+| **[VehicleGearDataNew](Gameplay.Gameplay.md#vehiclegeardatanew)**: `Object` <br> 四轮载具挡位属性|
+| **[VehicleWheelDataNew](Gameplay.Gameplay.md#vehiclewheeldatanew)**: `Object` <br> 四轮载具车轮属性|
 
 
 ## Modules Functions
@@ -213,7 +208,7 @@ ___
 
 ### asyncGetCurrentPlayer <Score text="asyncGetCurrentPlayer" /> 
 
-• **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> 
+• **asyncGetCurrentPlayer**(): `Promise`<[`Player`](../classes/Gameplay.Player.md)\> <Badge type="tip" text="client" />
 
 异步获取当前玩家
 
@@ -286,7 +281,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: boxOverlap
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: boxOverlap
 
 :::
 
@@ -321,9 +316,24 @@ for (const item of goList) {
 GameObject数组
 ___
 
+### clearFollow <Score text="clearFollow" /> 
+
+• **clearFollow**(`player`): `void` 
+
+停止跟随
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) | 角色 |
+
+___
+
 ### clearMoveTo <Score text="clearMoveTo" /> 
 
-• **clearMoveTo**(`player`): `void` 
+• **clearMoveTo**(`Obj`): `void` 
 
 导航停止
 
@@ -332,7 +342,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `player` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) | 角色对象 |
+| `Obj` | `GameObject` | 移动对象(建议使用角色、非玩家对象NPC、四轮载具对象进行moveTo()功能) |
 
 ___
 
@@ -364,7 +374,7 @@ ___
 
 ### fetch <Score text="fetch" /> 
 
-• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/Network.Response.md)\> 
+• **fetch**(`url`, `init?`): `Promise`<`Response`\> 
 
 HTTP请求
 
@@ -374,13 +384,32 @@ HTTP请求
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `url` | `string` | url |
-| `init?` | [`RequestInit`](../interfaces/Network.RequestInit.md) | 请求信息 default:请求信息 |
+| `init?` | `RequestInit` | 请求信息 default:请求信息 |
 
 #### Returns
 
-`Promise`<[`Response`](../interfaces/Network.Response.md)\>
+`Promise`<`Response`\>
 
 响应信息
+___
+
+### follow <Score text="follow" /> 
+
+• **follow**(`player`, `targetplayer`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` 
+
+跟随目标
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) | 跟随玩家 |
+| `targetplayer` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) | 被跟随玩家 |
+| `Radius?` | `number` | 距目标半径 default:0 |
+| `OnSuccess?` | () => `void` | 成功回调 default:null |
+| `OnFail?` | () => `void` | 失败回调 default:null |
+
 ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
@@ -399,7 +428,7 @@ generalHttpRequest(Response,Url,Param,JsonContent)
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `response` | [`HttpResponse`](../modules/Network.Network.md#httpresponse) | OnHttpResponse |
+| `response` | [`HttpResponse`](Network.Network.md#httpresponse) | OnHttpResponse |
 | `requestUrl` | [`HttpRequestURL`](../enums/Network.HttpRequestURL.md) | EHttpRequestURL |
 | `param` | `string` | string |
 | `jsonContent` | `any` | any |
@@ -432,7 +461,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 命名修改 replacement: getGameObjectByScenePosition
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 命名修改 replacement: getGameObjectByScenePosition
 
 :::
 
@@ -479,7 +508,7 @@ ___
 
 ### getCurrentPlayer <Score text="getCurrentPlayer" /> 
 
-• **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) 
+• **getCurrentPlayer**(): [`Player`](../classes/Gameplay.Player.md) <Badge type="tip" text="client" />
 
 获取当前玩家
 
@@ -639,7 +668,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: 删除接口 replacement: getSightBeadLocation()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement: getSightBeadLocation()
 
 :::
 
@@ -741,7 +770,7 @@ Http请求接口
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `response` | [`HttpResponse`](../modules/Network.Network.md#httpresponse) |  请求的回调 |
+| `response` | [`HttpResponse`](Network.Network.md#httpresponse) |  请求的回调 |
 | `paramUrl` | `string` |  请求的参数和值 |
 | `jsonContent` | `string` |  请求数据内容，json格式 |
 | `requestType` | [`HttpRequestType`](../enums/Network.HttpRequestType.md) |  请求类型。HttpRequestType枚举值 |
@@ -775,7 +804,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API规范修改 replacement: vibrate
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API规范修改 replacement: vibrate
 
 :::
 
@@ -844,7 +873,7 @@ ___
 
 ### moveTo <Score text="moveTo" /> 
 
-• **moveTo**(`player`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` 
+• **moveTo**(`Obj`, `Location`, `Radius?`, `OnSuccess?`, `OnFail?`): `void` 
 
 寻路移动
 
@@ -853,7 +882,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `player` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) | 移动角色 |
+| `Obj` | `GameObject` | 移动对象(建议使用角色、非玩家对象NPC、四轮载具对象进行moveTo()功能) |
 | `Location` | [`Vector`](../classes/Type.Vector.md) | 目标位置 |
 | `Radius?` | `number` | 距目标半径 default:0 |
 | `OnSuccess?` | () => `void` | 成功回调 default:null |
@@ -895,7 +924,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
 
 :::
 
@@ -917,7 +946,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
 
 :::
 
@@ -1045,7 +1074,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `staticMesh` | [`StaticMesh`](../classes/Gameplay.StaticMesh.md) | 静态网格 |
+| `staticMesh` | [`Mesh`](../classes/Gameplay.Mesh.md) | 静态网格 |
 | `color` | [`LinearColor`](../classes/Type.LinearColor.md) | 颜色 |
 
 ___
@@ -1056,7 +1085,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason: 废弃 replacement:setStaticMeshColor()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 废弃 replacement:setStaticMeshColor()
 
 :::
 
@@ -1148,3 +1177,37 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `enable` | `boolean` | -true:开启震动，-false:关闭震动 |
+## Modules Type Aliases
+
+
+___
+
+### VehicleGearDataNew <Score text="VehicleGearDataNew" /> 
+
+Ƭ **VehicleGearDataNew**: `Object`
+
+四轮载具挡位属性
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gearDownRatio` | `number` | 下齿比值 |
+| `gearLevel` | `number` | 挡位级别 |
+| `gearRatio` | `number` | 齿比值 |
+| `gearUpRatio` | `number` | 上齿比值 |
+___
+
+### VehicleWheelDataNew <Score text="VehicleWheelDataNew" /> 
+
+Ƭ **VehicleWheelDataNew**: `Object`
+
+四轮载具车轮属性
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `wheelAngle` | `number` | 车轮最大转向角度 |
+| `wheelModel` | `string` | 车轮绑定对象ID |
+| `wheelRadius` | `number` | 车轮半径 |

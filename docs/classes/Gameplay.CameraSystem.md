@@ -100,7 +100,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:接口更改 replacement:fadeEffectEnable
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:接口更改 replacement:fadeEffectEnable
 
 :::
 
@@ -114,7 +114,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:没有使用场景不暴露 replacement:
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:没有使用场景不暴露 replacement:
 
 :::
 
@@ -864,7 +864,7 @@ ___
 
 ::: danger Deprecated
 
-since:019 reason:功能重合 replacement:cameraRelativeTransform
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:019 reason:功能重合 replacement:cameraRelativeTransform
 
 :::
 
@@ -878,7 +878,7 @@ since:019 reason:功能重合 replacement:cameraRelativeTransform
 
 ::: danger Deprecated
 
-since:019 reason:功能重合 replacement:cameraRelativeTransform
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:019 reason:功能重合 replacement:cameraRelativeTransform
 
 :::
 
@@ -922,7 +922,7 @@ ___
 
 ::: danger Deprecated
 
-since:019 reason:功能重合 replacement:cameraSystemTransform
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:019 reason:功能重合 replacement:cameraSystemTransform
 
 :::
 
@@ -936,7 +936,7 @@ since:019 reason:功能重合 replacement:cameraSystemTransform
 
 ::: danger Deprecated
 
-since:019 reason:功能重合 replacement:cameraSystemRelativeTransform
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:019 reason:功能重合 replacement:cameraSystemRelativeTransform
 
 :::
 
@@ -1008,7 +1008,7 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口重复 replacement:attachToGameObject
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口重复 replacement:attachToGameObject
 
 :::
 

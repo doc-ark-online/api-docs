@@ -4,7 +4,7 @@
 
 ::: danger Deprecated
 
-since:021 reason:功能迭代,请使用NPC对象 replacement:NPC
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:功能迭代,请使用NPC对象 replacement:NPC
 
 :::
 

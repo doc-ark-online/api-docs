@@ -609,7 +609,7 @@ ___
 
 ::: danger Deprecated
 
-since: 023 reason:使用新接口 replacement: loadStance()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 023 reason:使用新接口 replacement: loadStance()
 
 :::
 
@@ -652,7 +652,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason: 提供更易用的方法 replacement: getAppearance<Gameplay.HumanoidV2|Gameplay.HumanoidV1|Gameplay.FourFootStandard>
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason: 提供更易用的方法 replacement: getAppearance<Gameplay.HumanoidV2|Gameplay.HumanoidV1|Gameplay.FourFootStandard>
 
 :::
 
@@ -1375,7 +1375,7 @@ ___
 
 ::: danger Deprecated
 
-since:020 reason:api重构 replacement:getVisibility()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
 
 :::
 
@@ -1389,7 +1389,7 @@ since:020 reason:api重构 replacement:getVisibility()
 
 ::: danger Deprecated
 
-since:020 reason:api重构 replacement:setVisibilityLocally()
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:setVisibilityLocally()
 
 :::
 
@@ -1783,7 +1783,7 @@ ___
 
 ::: danger Deprecated
 
-since:021 reason:接口重复 replacement:worldScale
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:接口重复 replacement:worldScale
 
 :::
 
@@ -1797,7 +1797,7 @@ since:021 reason:接口重复 replacement:worldScale
 
 ::: danger Deprecated
 
-since:021 reason:接口重复 replacement:worldScale
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:021 reason:接口重复 replacement:worldScale
 
 :::
 
@@ -2298,7 +2298,7 @@ ___
 
 ::: danger Deprecated
 
-since:018 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:018 reason:有新接口，后期旧接口如果出问题不会维护 replacement:This method is deprecated. Please use loadAnimation(GUID,false) instead.
 
 :::
 
@@ -2380,7 +2380,7 @@ ___
 
 ::: danger Deprecated
 
-since:018 reason:使用新接口 replacement:"Gameplay.Animation.stop"
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:018 reason:使用新接口 replacement:"Gameplay.Animation.stop"
 
 :::
 

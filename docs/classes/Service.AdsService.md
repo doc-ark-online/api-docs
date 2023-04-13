@@ -22,8 +22,8 @@
 | :-----|
 | **[isActive](Service.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md)): `boolean` <br> 广告是否激活,PC上始终返回false|
 | **[isReady](Service.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
-| **[show](Service.AdsService.md#show)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`state`: [`AdsState`](../enums/Service.AdsState.md)) => `void`): `void` <br> 展示广告|
-| **[showAd](Service.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <br> 展示广告,会自动调用isReady,如果广告正在播放中不会有任何响应。|
+| **[show](Service.AdsService.md#show)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`state`: [`AdsState`](../enums/Service.AdsState.md)) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
+| **[showAd](Service.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 | **[getInstance](Service.AdsService.md#getinstance)**(): [`AdsService`](Service.AdsService.md) <br> 获取广告服务管理器全局实例|
 
 ## Accessors
@@ -105,11 +105,11 @@ ___
 
 ::: danger Deprecated
 
-since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:showAd
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason:接口废弃 replacement:showAd()
 
 :::
 
-展示广告
+展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
 
 
 #### Parameters
@@ -126,7 +126,7 @@ ___
 
 • **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
-展示广告,会自动调用isReady,如果广告正在播放中不会有任何响应。
+展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
 
 
 #### Parameters

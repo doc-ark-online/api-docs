@@ -1,15 +1,12 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / WheeledVehicle4W
+[Gameplay](../groups/Gameplay.Gameplay.md) / Mesh
 
-# WheeledVehicle4W <Badge type="tip" text="Class" /> <Score text="WheeledVehicle4W" />
+# Mesh <Badge type="tip" text="Class" /> <Score text="Mesh" />
 
-四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。
+StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口
 
 ::: warning Precautions
 
-注意事项
-1. 在未设置有效的Driver之前，载具不会进行物理模拟，可能会遇到悬空等现象。
-2. 载具由setDriver时指定的玩家客户端控制。如果想设置载具位置，仅在服务器端设置位置是无效的，需要主控端一起修改。
-3. 应注意同一客户端同时控制的载具数量，数量过大会影响载具的同步。建议在5个以内。
+物理相关接口目前版本不支持证多端同步
 
 :::
 
@@ -17,22 +14,36 @@
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`WheeledVehicle4W`**
+  ↳ **`Mesh`**
+
+  ↳↳ [`StaticMesh`](Gameplay.StaticMesh.md)
 
 ## Table of contents
 
+| Properties |
+| :-----|
+| **[onEnter](Gameplay.Mesh.md#onenter)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 进入StaticMesh事件|
+| **[onLeave](Gameplay.Mesh.md#onleave)**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md) <br> 离开StaticMesh事件|
+
 | Accessors |
 | :-----|
-| **[brakingTorque](Gameplay.WheeledVehicle4W.md#brakingtorque)**(): `number` <br> 获取制动力矩。单位：牛*米（N*m）|
-| **[currentGearLevel](Gameplay.WheeledVehicle4W.md#currentgearlevel)**(): `number` <br> 获取当前档位级别|
-| **[driveMode](Gameplay.WheeledVehicle4W.md#drivemode)**(): [`VehicleDriveMode4W`](../enums/Gameplay.VehicleDriveMode4W.md) <br> 获取载具驱动模式|
-| **[friction](Gameplay.WheeledVehicle4W.md#friction)**(): `number` <br> 获取载具摩擦力系数|
-| **[handbrakeInputEnable](Gameplay.WheeledVehicle4W.md#handbrakeinputenable)**(`useHandbrake`: `boolean`): `void` <br> 手刹。|
-| **[mass](Gameplay.WheeledVehicle4W.md#mass)**(): `number` <br> 获取载具质量。单位：千克（kg）|
-| **[maxEngineRPM](Gameplay.WheeledVehicle4W.md#maxenginerpm)**(): `number` <br> 获取最大发动机转速。单位：转/分（r/min）|
-| **[maxGearLevel](Gameplay.WheeledVehicle4W.md#maxgearlevel)**(): `number` <br> 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
-| **[velocity](Gameplay.WheeledVehicle4W.md#velocity)**(): `number` <br> 获取当前行驶速度。单位：米/秒（m/s）|
-| **[wheelNum](Gameplay.WheeledVehicle4W.md#wheelnum)**(): `number` <br> 获取车轮数量|
+| **[angularDamping](Gameplay.Mesh.md#angulardamping)**(): `number` <br> 角阻尼|
+| **[applyImpulseOnDamage](Gameplay.Mesh.md#applyimpulseondamage)**(): `boolean` <br> 在伤害上应用冲量|
+| **[friction](Gameplay.Mesh.md#friction)**(): `number` <br> 获取摩擦力大小|
+| **[gravityEnable](Gameplay.Mesh.md#gravityenable)**(): `boolean` <br> 获取是否启用重力|
+| **[ignoreRadialForce](Gameplay.Mesh.md#ignoreradialforce)**(): `boolean` <br> 获取是否忽视径向力|
+| **[ignoreRadialImpulse](Gameplay.Mesh.md#ignoreradialimpulse)**(): `boolean` <br> 获取是否忽视径向冲量|
+| **[isSimulatingPhysics](Gameplay.Mesh.md#issimulatingphysics)**(): `boolean` <br> 获取是否模拟物理|
+| **[linerDamping](Gameplay.Mesh.md#linerdamping)**(): `number` <br> 获取线性阻尼|
+| **[lockPositionX](Gameplay.Mesh.md#lockpositionx)**(): `boolean` <br> 获取是否约束位置X|
+| **[lockPositionY](Gameplay.Mesh.md#lockpositiony)**(): `boolean` <br> 获取是否约束位置Y|
+| **[lockPositionZ](Gameplay.Mesh.md#lockpositionz)**(): `boolean` <br> 获取是否约束位置Z|
+| **[lockRotationX](Gameplay.Mesh.md#lockrotationx)**(): `boolean` <br> 获取是否约束旋转X|
+| **[lockRotationY](Gameplay.Mesh.md#lockrotationy)**(): `boolean` <br> 获取是否约束旋转Y|
+| **[lockRotationZ](Gameplay.Mesh.md#lockrotationz)**(): `boolean` <br> 获取是否约束旋转Z|
+| **[massEnable](Gameplay.Mesh.md#massenable)**(): `boolean` <br> 获取是否使用质量|
+| **[massInKg](Gameplay.Mesh.md#massinkg)**(): `number` <br> 获取质量大小|
+| **[restitution](Gameplay.Mesh.md#restitution)**(): `number` <br> 获取弹力大小|
 
 
 ::: details 点击查看继承
@@ -62,19 +73,15 @@
 
 | Methods |
 | :-----|
-| **[gearDown](Gameplay.WheeledVehicle4W.md#geardown)**(): `void` <br> 降档，立即切换。|
-| **[gearUp](Gameplay.WheeledVehicle4W.md#gearup)**(): `void` <br> 升档，立即切换。|
-| **[getGearRatio](Gameplay.WheeledVehicle4W.md#getgearratio)**(`gearLevel`: `number`): [`VehicleGearData`](../modules/Gameplay.Gameplay.md#vehiclegeardata) <br> 获取指定档位属性|
-| **[getWheelData](Gameplay.WheeledVehicle4W.md#getwheeldata)**(`wheelId`: `number`): [`VehicleWheelData`](../modules/Gameplay.Gameplay.md#vehiclewheeldata) <br> 获取车轮属性|
-| **[getWheelMaxSteerAngle](Gameplay.WheeledVehicle4W.md#getwheelmaxsteerangle)**(`wheelId`: `number`): `number` <br> 获取车轮最大转向角度。单位：度（°）|
-| **[getWheelPosition](Gameplay.WheeledVehicle4W.md#getwheelposition)**(`wheelId`: `number`): [`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md) <br> 获取车轮位置，前轮或者后轮|
-| **[getWheelRadius](Gameplay.WheeledVehicle4W.md#getwheelradius)**(`wheelId`: `number`): `number` <br> 获取车轮半径。单位：厘米（cm）|
-| **[setCullDistance](Gameplay.WheeledVehicle4W.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
-| **[setDriver](Gameplay.WheeledVehicle4W.md#setdriver)**(`inDriver`: [`Player`](Gameplay.Player.md)): `void` <br> 设置载具驾驶员。只有驾驶员才可以操作载具|
-| **[setSimulatePhysics](Gameplay.WheeledVehicle4W.md#setsimulatephysics)**(`shouldSimulate`: `boolean`): `void` <br> 设置四轮载具是否开启物理模拟计算，需要在客户端调用。|
-| **[setSteeringInput](Gameplay.WheeledVehicle4W.md#setsteeringinput)**(`newInput`: `number`): `void` <br> 控制载具左/右转向。|
-| **[setThrottleInput](Gameplay.WheeledVehicle4W.md#setthrottleinput)**(`newInput`: `number`): `void` <br> 控制载具前进/后退。|
-| **[switchCamera](Gameplay.WheeledVehicle4W.md#switchcamera)**(`useVehicleCamera`: `boolean`): `void` <br> 在载具和角色之间切换摄像机。|
+| **[createMaterialInstance](Gameplay.Mesh.md#creatematerialinstance)**(`Index`: `number`): `void` <br> 创建材质实例|
+| **[getMaterialColor](Gameplay.Mesh.md#getmaterialcolor)**(`Index`: `number`): [`LinearColor`](Type.LinearColor.md) <br> 获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败|
+| **[getMaterialInstance](Gameplay.Mesh.md#getmaterialinstance)**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] <br> 返回当前拥有的材质实例|
+| **[resetMaterial](Gameplay.Mesh.md#resetmaterial)**(): `void` <br> 还原物体材质|
+| **[setCullDistance](Gameplay.Mesh.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
+| **[setMaterial](Gameplay.Mesh.md#setmaterial)**(`MaterialGUID`: `string`): `void` <br> 设置物体材质|
+| **[setMaterialColor](Gameplay.Mesh.md#setmaterialcolor)**(`Index`: `number`, `InColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置材质颜色|
+| **[setOutlineAndColor](Gameplay.Mesh.md#setoutlineandcolor)**(`Enable`: `boolean`, `ColorIndex`: `number`): `void` <br> 设置对象描边及描边颜色，需要场景中存在后处理对象。|
+| **[setStaticMeshAsset](Gameplay.Mesh.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void` <br> 设置静态网格资源|
 
 
 ::: details 点击查看继承
@@ -139,355 +146,475 @@
 :::
 
 
-## Accessors
+## Properties
 
-### brakingTorque <Score text="brakingTorque" /> 
+### onEnter <Score text="onEnter" /> 
 
-• `get` **brakingTorque**(): `number` 
+• **onEnter**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
-获取制动力矩。单位：牛*米（N*m）
-
-
-#### Returns
-
-`number`
-
-当前制动力矩
+进入StaticMesh事件
 
 ___
 
-### currentGearLevel <Score text="currentGearLevel" /> 
+### onLeave <Score text="onLeave" /> 
 
-• `get` **currentGearLevel**(): `number` 
+• **onLeave**: [`MulticastGameObjectDelegate`](Type.MulticastGameObjectDelegate.md)
 
-获取当前档位级别
+离开StaticMesh事件
 
+## Accessors
+
+### angularDamping <Score text="angularDamping" /> 
+
+• `get` **angularDamping**(): `number`
+
+角阻尼
 
 #### Returns
 
 `number`
 
-当前档位级别
+• `set` **angularDamping**(`value`): `void`
 
-• `set` **currentGearLevel**(`level`): `void` <Badge type="tip" text="client" />
-
-设置载具档位(直接变换档位到某一档)。
-
-
-::: warning Precautions
-
-1. 注意输入参数的取值范围。
-2. 设置与当前车速不匹配的档位，会自动调整到匹配的档位。如当前车速适应1档，直接设置3档，会逐级（3-2-1）降到1档。
-
-:::
+设置角阻尼，不建议使用，可能导致模拟异常
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `level` | `number` |  档位 Min = -1(倒车)， Max = 设定的最大档位 |
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
 
 
 ___
 
-### driveMode <Score text="driveMode" /> 
+### applyImpulseOnDamage <Score text="applyImpulseOnDamage" /> 
 
-• `get` **driveMode**(): [`VehicleDriveMode4W`](../enums/Gameplay.VehicleDriveMode4W.md) 
+• `get` **applyImpulseOnDamage**(): `boolean`
 
-获取载具驱动模式
-
+在伤害上应用冲量
 
 #### Returns
 
-[`VehicleDriveMode4W`](../enums/Gameplay.VehicleDriveMode4W.md)
+`boolean`
 
-载具驱动模式
+• `set` **applyImpulseOnDamage**(`value`): `void`
+
+在伤害上应用冲量
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
 
 
 ### friction <Score text="friction" /> 
 
-• `get` **friction**(): `number` 
+• `get` **friction**(): `number`
 
-获取载具摩擦力系数
-
-
-#### Returns
-
-`number`
-
-载具摩擦力系数
-
-
-### handbrakeInputEnable <Score text="handbrakeInputEnable" /> 
-
-• `set` **handbrakeInputEnable**(`useHandbrake`): `void` <Badge type="tip" text="client" />
-
-手刹。
-
-
-::: warning Precautions
-
-输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `useHandbrake` | `boolean` |  是否进行手刹，true-进行制动, false-取消制动。 |
-
-
-
-### mass <Score text="mass" /> 
-
-• `get` **mass**(): `number` 
-
-获取载具质量。单位：千克（kg）
-
+获取摩擦力大小
 
 #### Returns
 
 `number`
 
-载具质量
+• `set` **friction**(`value`): `void`
 
-• `set` **mass**(`mass`): `void` <Badge type="tip" text="server" />
-
-设置载具质量。单位：千克（kg）
-
-
-::: warning Precautions
-
-1. 注意输入参数的取值范围。设置较小的质量，会出现载具抖动等非预期表现。
-2. 运行时设置质量，会重新初始化载具，清除任何运行状态。如载具在行驶，设置质量后会停在原地。
-
-:::
+设置摩擦力大小，不建议使用，可能导致模拟异常
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `mass` | `number` |  新的质量 |
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
 
 
 ___
 
-### maxEngineRPM <Score text="maxEngineRPM" /> 
+### gravityEnable <Score text="gravityEnable" /> 
 
-• `get` **maxEngineRPM**(): `number` 
+• `get` **gravityEnable**(): `boolean`
 
-获取最大发动机转速。单位：转/分（r/min）
-
+获取是否启用重力
 
 #### Returns
 
-`number`
+`boolean`
 
-载具发动机转速
+• `set` **gravityEnable**(`value`): `void`
+
+设置是否启用重力，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+
+### ignoreRadialForce <Score text="ignoreRadialForce" /> 
+
+• `get` **ignoreRadialForce**(): `boolean`
+
+获取是否忽视径向力
+
+#### Returns
+
+`boolean`
+
+• `set` **ignoreRadialForce**(`value`): `void`
+
+设置是否忽视径向力，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
 
 ___
 
-### maxGearLevel <Score text="maxGearLevel" /> 
+### ignoreRadialImpulse <Score text="ignoreRadialImpulse" /> 
 
-• `get` **maxGearLevel**(): `number` 
+• `get` **ignoreRadialImpulse**(): `boolean`
 
-获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。
+获取是否忽视径向冲量
 
-::: warning Precautions
+#### Returns
 
-最大可切换到的档位。如获取当前档位，请使用getCurrentGearLevel
+`boolean`
 
-:::
+• `set` **ignoreRadialImpulse**(`value`): `void`
 
+设置忽视径向冲量，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### isSimulatingPhysics <Score text="isSimulatingPhysics" /> 
+
+• `get` **isSimulatingPhysics**(): `boolean`
+
+获取是否模拟物理
+
+#### Returns
+
+`boolean`
+
+• `set` **isSimulatingPhysics**(`value`): `void`
+
+设置模拟物理状态，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### linerDamping <Score text="linerDamping" /> 
+
+• `get` **linerDamping**(): `number`
+
+获取线性阻尼
 
 #### Returns
 
 `number`
 
-最大档位级别
+• `set` **linerDamping**(`value`): `void`
+
+设置线性阻尼，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
 
 
-### velocity <Score text="velocity" /> 
+___
 
-• `get` **velocity**(): `number` 
+### lockPositionX <Score text="lockPositionX" /> 
 
-获取当前行驶速度。单位：米/秒（m/s）
+• `get` **lockPositionX**(): `boolean`
 
+获取是否约束位置X
+
+#### Returns
+
+`boolean`
+
+• `set` **lockPositionX**(`value`): `void`
+
+设置是否约束位置X，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### lockPositionY <Score text="lockPositionY" /> 
+
+• `get` **lockPositionY**(): `boolean`
+
+获取是否约束位置Y
+
+#### Returns
+
+`boolean`
+
+• `set` **lockPositionY**(`value`): `void`
+
+设置是否约束位置Y，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### lockPositionZ <Score text="lockPositionZ" /> 
+
+• `get` **lockPositionZ**(): `boolean`
+
+获取是否约束位置Z
+
+#### Returns
+
+`boolean`
+
+• `set` **lockPositionZ**(`value`): `void`
+
+设置是否约束位置Z，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### lockRotationX <Score text="lockRotationX" /> 
+
+• `get` **lockRotationX**(): `boolean`
+
+获取是否约束旋转X
+
+#### Returns
+
+`boolean`
+
+• `set` **lockRotationX**(`value`): `void`
+
+设置是否约束旋转X，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### lockRotationY <Score text="lockRotationY" /> 
+
+• `get` **lockRotationY**(): `boolean`
+
+获取是否约束旋转Y
+
+#### Returns
+
+`boolean`
+
+• `set` **lockRotationY**(`value`): `void`
+
+设置是否约束旋转Y，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### lockRotationZ <Score text="lockRotationZ" /> 
+
+• `get` **lockRotationZ**(): `boolean`
+
+获取是否约束旋转Z
+
+#### Returns
+
+`boolean`
+
+• `set` **lockRotationZ**(`value`): `void`
+
+设置是否约束旋转Z，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+
+### massEnable <Score text="massEnable" /> 
+
+• `get` **massEnable**(): `boolean`
+
+获取是否使用质量
+
+#### Returns
+
+`boolean`
+
+• `set` **massEnable**(`value`): `void`
+
+设置是否启用质量，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+
+___
+
+### massInKg <Score text="massInKg" /> 
+
+• `get` **massInKg**(): `number`
+
+获取质量大小
 
 #### Returns
 
 `number`
 
-当前行驶速度
+• `set` **massInKg**(`value`): `void`
+
+设置质量大小，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
 
 
-### wheelNum <Score text="wheelNum" /> 
 
-• `get` **wheelNum**(): `number` 
+### restitution <Score text="restitution" /> 
 
-获取车轮数量
+• `get` **restitution**(): `number`
 
+获取弹力大小
 
 #### Returns
 
 `number`
 
-车轮数量
+• `set` **restitution**(`value`): `void`
+
+设置弹力大小，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
 
 
 ## Methods
 
-### gearDown <Score text="gearDown" /> 
+### createMaterialInstance <Score text="createMaterialInstance" /> 
 
-• **gearDown**(): `void` <Badge type="tip" text="client" />
+• **createMaterialInstance**(`Index`): `void` 
 
-降档，立即切换。
+创建材质实例
 
 
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Index` | `number` | 第几个材质 |
+
+
+
+### getMaterialColor <Score text="getMaterialColor" /> 
+
+• **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
+
+获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败
+
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数获取
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Index` | `number` | 第几个材质 |
+
+#### Returns
+
+[`LinearColor`](Type.LinearColor.md)
+
+获取的颜色
 
 ___
 
-### gearUp <Score text="gearUp" /> 
+### getMaterialInstance <Score text="getMaterialInstance" /> 
 
-• **gearUp**(): `void` <Badge type="tip" text="client" />
+• **getMaterialInstance**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] 
 
-升档，立即切换。
+返回当前拥有的材质实例
 
-
-
-
-### getGearRatio <Score text="getGearRatio" /> 
-
-• **getGearRatio**(`gearLevel`): [`VehicleGearData`](../modules/Gameplay.Gameplay.md#vehiclegeardata) 
-
-获取指定档位属性
-
-
-::: warning Precautions
-
-注意输入参数的取值范围
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `gearLevel` | `number` |  指定档位级别 |
 
 #### Returns
 
-[`VehicleGearData`](../modules/Gameplay.Gameplay.md#vehiclegeardata)
+[`MaterialInstance`](Gameplay.MaterialInstance.md)[]
 
-指定档位属性
-
-
-### getWheelData <Score text="getWheelData" /> 
-
-• **getWheelData**(`wheelId`): [`VehicleWheelData`](../modules/Gameplay.Gameplay.md#vehiclewheeldata) 
-
-获取车轮属性
+材质实例数组
 
 
-::: warning Precautions
+### resetMaterial <Score text="resetMaterial" /> 
 
-注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
+• **resetMaterial**(): `void` 
 
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `wheelId` | `number` |  根据序号指定车轮 |
-
-#### Returns
-
-[`VehicleWheelData`](../modules/Gameplay.Gameplay.md#vehiclewheeldata)
-
-指定车轮属性
-
-___
-
-### getWheelMaxSteerAngle <Score text="getWheelMaxSteerAngle" /> 
-
-• **getWheelMaxSteerAngle**(`wheelId`): `number` 
-
-获取车轮最大转向角度。单位：度（°）
+还原物体材质
 
 
-::: warning Precautions
-
-注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `wheelId` | `number` |  根据序号指定车轮 |
-
-#### Returns
-
-`number`
-
-指定车轮最大转向角度
-
-___
-
-### getWheelPosition <Score text="getWheelPosition" /> 
-
-• **getWheelPosition**(`wheelId`): [`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md) 
-
-获取车轮位置，前轮或者后轮
-
-
-::: warning Precautions
-
-注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `wheelId` | `number` |  根据序号指定车轮 |
-
-#### Returns
-
-[`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md)
-
-指定车轮位置
-
-___
-
-### getWheelRadius <Score text="getWheelRadius" /> 
-
-• **getWheelRadius**(`wheelId`): `number` 
-
-获取车轮半径。单位：厘米（cm）
-
-
-::: warning Precautions
-
-注意输入参数的取值范围。当前为四轮载具，[0, 1, 2, 3]分别对应[左前, 右前, 左后, 右后]。
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `wheelId` | `number` |  根据序号指定车轮 |
-
-#### Returns
-
-`number`
-
-指定车轮半径
 
 
 ### setCullDistance <Score text="setCullDistance" /> 
@@ -510,33 +637,44 @@ ___
 | `inCullDistance` | `number` | 裁剪距离 |
 
 
-___
 
-### setDriver <Score text="setDriver" /> 
+### setMaterial <Score text="setMaterial" /> 
 
-• **setDriver**(`inDriver`): `void` <Badge type="tip" text="client" />
+• **setMaterial**(`MaterialGUID`): `void` 
 
-设置载具驾驶员。只有驾驶员才可以操作载具
+设置物体材质
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inDriver` | [`Player`](Gameplay.Player.md) |  驾驶员的Player |
+| `MaterialGUID` | `string` |  材质ID default: |
 
 
+• **setMaterial**(`MaterialGUID`, `index`): `void` 
 
-### setSimulatePhysics <Score text="setSimulatePhysics" /> 
-
-• **setSimulatePhysics**(`shouldSimulate`): `void` <Badge type="tip" text="client" />
-
-设置四轮载具是否开启物理模拟计算，需要在客户端调用。
+设置物体材质
 
 
-::: warning Precautions
+#### Parameters
 
-四轮载具只在setDriver()成功后才会进行物理模拟，此时关闭物理模拟将无法继续驱动载具移动。
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `MaterialGUID` | `string` |  材质ID |
+| `index` | `number` |  材质下标 |
+
+
+• **setMaterial**(`MaterialGUID`, `Transparency`, `isTransparent`): `void`
+
+设置物体材质
+
+**`Effect`**
+
+
+::: danger Deprecated
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
 
 :::
 
@@ -544,106 +682,62 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `shouldSimulate` | `boolean` |  是否启用物理模拟。true-启用，false-不启用 |
+| `MaterialGUID` | `string` |  材质ID |
+| `Transparency` | `number` |  透明度 default: 0.8 |
+| `isTransparent` | `boolean` |  是否透明 default: false |
 
 
 ___
 
-### setSteeringInput <Score text="setSteeringInput" /> 
+### setMaterialColor <Score text="setMaterialColor" /> 
 
-• **setSteeringInput**(`newInput`): `void` <Badge type="tip" text="client" />
+• **setMaterialColor**(`Index`, `InColor`): `void` <Badge type="tip" text="other" />
 
-控制载具左/右转向。
+设置材质颜色
 
 
-::: warning Precautions
+::: danger Deprecated
 
-1. 注意输入参数的取值范围。输入100和1没有区别。
-2. 输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
 
 :::
-
-使用示例: 用按钮和摇杆控制载具
-```ts
-   // 通过按钮控制载具油门
-   this.btn_forward.onPressed.add(() => {
-       vehicle.setThrottleInput(1);
-   })
-
-   this.btn_forward.onReleased.add(() => {
-       vehicle.setThrottleInput(0);
-   })
-
-   // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
-   this.joystick.onInputDir.add((vec: Type.Vector2) => {
-       // 控制油门
-       vehicle.setThrottleInput(vec.y);
-       // 控制转向
-       vehicle.setSteeringInput(vec.x);
-   })
-```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `newInput` | `number` |  转向幅度，取值范围[-1,1]，大于0时右转，小于0则左转。 |
+| `Index` | `number` | 第几个材质 |
+| `InColor` | [`LinearColor`](Type.LinearColor.md) | 要赋值的颜色 |
 
 
 ___
 
-### setThrottleInput <Score text="setThrottleInput" /> 
+### setOutlineAndColor <Score text="setOutlineAndColor" /> 
 
-• **setThrottleInput**(`newInput`): `void` <Badge type="tip" text="client" />
+• **setOutlineAndColor**(`Enable`, `ColorIndex`): `void` 
 
-控制载具前进/后退。
-
-
-::: warning Precautions
-
-1. 注意输入参数的取值范围。输入100和1没有区别。
-2. 输入值发生变化时，调用一次即可。输入值会保持，不需要持续调用。
-
-:::
-
-使用示例: 用按钮和摇杆控制载具
-```ts
-   // 通过按钮控制载具油门
-   this.btn_forward.onPressed.add(() => {
-       vehicle.setThrottleInput(1);
-   })
-
-   this.btn_forward.onReleased.add(() => {
-       vehicle.setThrottleInput(0);
-   })
-
-   // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
-   this.joystick.onInputDir.add((vec: Type.Vector2) => {
-       // 控制油门
-       vehicle.setThrottleInput(vec.y);
-       // 控制转向
-       vehicle.setSteeringInput(vec.x);
-   })
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newInput` | `number` |  油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。 |
-
-
-
-### switchCamera <Score text="switchCamera" /> 
-
-• **switchCamera**(`useVehicleCamera`): `void` <Badge type="tip" text="client" />
-
-在载具和角色之间切换摄像机。
+设置对象描边及描边颜色，需要场景中存在后处理对象。
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `useVehicleCamera` | `boolean` |  是否使用载具的摄像机 |
+| `Enable` | `boolean` |  是否开启描边 default: |
+| `ColorIndex` | `number` |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default: |
+
+
+
+### setStaticMeshAsset <Score text="setStaticMeshAsset" /> 
+
+• **setStaticMeshAsset**(`InAssetGuid`): `void` 
+
+设置静态网格资源
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `InAssetGuid` | `string` |  资源GUID default: |
 

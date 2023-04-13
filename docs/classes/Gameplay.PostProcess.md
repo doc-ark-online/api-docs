@@ -34,6 +34,10 @@
 | **[lUTTextureAssetByGuid](Gameplay.PostProcess.md#luttextureassetbyguid)**(): `string` <br> 获取LUT贴图资源GUID|
 | **[motionBlur](Gameplay.PostProcess.md#motionblur)**(): `number` <br> 获取动态模糊|
 | **[occlusionBlend](Gameplay.PostProcess.md#occlusionblend)**(): `number` <br> 获取被遮挡融合比例|
+| **[outlineCoveredAlpha](Gameplay.PostProcess.md#outlinecoveredalpha)**(): `number` <br> 获取被遮挡部分高亮透明度|
+| **[outlineCoveredEdgeAlpha](Gameplay.PostProcess.md#outlinecoverededgealpha)**(): `number` <br> 获取被遮挡部分描边透明度|
+| **[outlineNotCoveredAlpha](Gameplay.PostProcess.md#outlinenotcoveredalpha)**(): `number` <br> 获取未被遮挡部分高亮透明度|
+| **[outlineNotCoveredEdgeAlpha](Gameplay.PostProcess.md#outlinenotcoverededgealpha)**(): `number` <br> 获取未被遮挡部分描边透明度|
 | **[outlineWidth](Gameplay.PostProcess.md#outlinewidth)**(): `number` <br> 获取描边宽度|
 | **[toneBlackClip](Gameplay.PostProcess.md#toneblackclip)**(): `number` <br> 获取色调映射暗部裁剪|
 | **[toneCurveAmount](Gameplay.PostProcess.md#tonecurveamount)**(): `number` <br> 获取当前色调映射|
@@ -673,6 +677,114 @@ ___
 
 ___
 
+### outlineCoveredAlpha <Score text="outlineCoveredAlpha" /> 
+
+• `get` **outlineCoveredAlpha**(): `number` 
+
+获取被遮挡部分高亮透明度
+
+
+#### Returns
+
+`number`
+
+获取值
+
+• `set` **outlineCoveredAlpha**(`Value`): `void` 
+
+设置被遮挡部分高亮透明度（0 ~ 1）
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Value` | `number` | 设置值 |
+
+
+___
+
+### outlineCoveredEdgeAlpha <Score text="outlineCoveredEdgeAlpha" /> 
+
+• `get` **outlineCoveredEdgeAlpha**(): `number` 
+
+获取被遮挡部分描边透明度
+
+
+#### Returns
+
+`number`
+
+获取值
+
+• `set` **outlineCoveredEdgeAlpha**(`Value`): `void` 
+
+设置被遮挡部分描边透明度（0 ~ 1）
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Value` | `number` | 设置值 |
+
+
+___
+
+### outlineNotCoveredAlpha <Score text="outlineNotCoveredAlpha" /> 
+
+• `get` **outlineNotCoveredAlpha**(): `number` 
+
+获取未被遮挡部分高亮透明度
+
+
+#### Returns
+
+`number`
+
+获取值
+
+• `set` **outlineNotCoveredAlpha**(`Value`): `void` 
+
+设置未被遮挡部分高亮透明度（0 ~ 1）
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Value` | `number` | 设置值 |
+
+
+___
+
+### outlineNotCoveredEdgeAlpha <Score text="outlineNotCoveredEdgeAlpha" /> 
+
+• `get` **outlineNotCoveredEdgeAlpha**(): `number` 
+
+获取未被遮挡部分描边透明度
+
+
+#### Returns
+
+`number`
+
+获取值
+
+• `set` **outlineNotCoveredEdgeAlpha**(`Value`): `void` 
+
+设置未被遮挡部分描边透明度（0 ~ 1）
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Value` | `number` | 设置值 |
+
+
+___
+
 ### outlineWidth <Score text="outlineWidth" /> 
 
 • `get` **outlineWidth**(): `number` 
@@ -688,7 +800,7 @@ ___
 
 • `set` **outlineWidth**(`Value`): `void` 
 
-设置描边宽度 （0 ~ 4）
+设置描边宽度（0 ~ 4）
 
 
 #### Parameters
