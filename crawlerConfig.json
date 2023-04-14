@@ -32,5 +32,6 @@
   "custom_settings": {
     "attributesForFaceting": ["tags"]
   },
+  "stop_urls": ["/$"],
   "js_render": true
 }
