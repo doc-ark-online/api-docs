@@ -8,6 +8,10 @@
     {
       "url": "https://api-docs.ark.online/",
       "tags": ["api-docs"]
+    },
+    {
+      "url": "https://learning.ark.online/",
+      "tags": ["learning-docs"]
     }
   ],
   "rateLimit": 8,
