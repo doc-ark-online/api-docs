@@ -27,7 +27,7 @@ async function loadPandora() {
       browser_version: browser?.version,
       os_type: browser?.os,
       docs_type: 'api',
-      api_version: '023'
+      api_version: '024'
     } as any,
     {
       appkey: 'cDEwMTE2',
