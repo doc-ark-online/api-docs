@@ -8,6 +8,10 @@
     {
       "url": "https://api-docs.ark.online/",
       "tags": ["api-docs"]
+    },
+    {
+      "url": "https://learning.ark.online/",
+      "tags": ["learning-docs"]
     }
   ],
   "rateLimit": 8,
@@ -32,5 +36,6 @@
   "custom_settings": {
     "attributesForFaceting": ["tags"]
   },
+  "stop_urls": ["/$"],
   "js_render": true
 }
