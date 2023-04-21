@@ -256,6 +256,7 @@ export namespace DefaultTheme {
     initialQuery?: string
     buttonText?: string
     project: any
+    searchPage: string
   }
 
   // carbon ads ----------------------------------------------------------------

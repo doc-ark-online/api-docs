@@ -9,11 +9,14 @@ const { hasSidebar } = useSidebar()
 
 <template>
   <div class="VPNavBarTitle" :class="{ 'has-sidebar': hasSidebar }">
-    <a class="title" :href="site.base">
+    <!-- <a class="title" :href="site.base"> -->
+    <a class="title" href="https://search.ark.online/">
       <slot name="nav-bar-title-before" />
       <VPImage class="logo" :image="theme.logo" />
       <template v-if="theme.siteTitle">{{ theme.siteTitle }}</template>
-      <template v-else-if="theme.siteTitle === undefined">{{ site.title }}</template>
+      <template v-else-if="theme.siteTitle === undefined">{{
+        site.title
+      }}</template>
       <slot name="nav-bar-title-after" />
     </a>
   </div>

@@ -76,11 +76,11 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       {
         text: '教程',
-        link: 'https://meta.feishu.cn/wiki/wikcnmY0MQweLdbnlywkJJiDucd'
+        link: 'https://learning.ark.online/'
       },
       {
         text: '产品手册',
-        link: 'https://meta.feishu.cn/wiki/wikcnTRMsvWdaJq2SOenbuHjXmf'
+        link: 'https://docs.ark.online/'
       },
       {
         text: '论坛',
