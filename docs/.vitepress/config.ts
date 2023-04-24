@@ -76,7 +76,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     siteTitle: 'API',
     nav: [
       {
-        text: '官网',
+        text: '创作者',
         link: 'https://creator.ark.online/'
       },
       {
