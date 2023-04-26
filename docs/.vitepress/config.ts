@@ -1,4 +1,4 @@
-import type { DefaultTheme } from '../../viteTheme/shared'
+import type { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
 import { dealConfigSidebar, dealItem } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
@@ -46,6 +46,10 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     ]
   ],
   themeConfig: {
+    pandora: {
+      type: 'api',
+      version: '024'
+    },
     logo: '/logo.png',
     algolia: {
       appId: 'I2PHYUBLCN',
