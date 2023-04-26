@@ -862,10 +862,10 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
-metaapp-pandora-sdk@^4.1.2:
-  version "4.1.2"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-4.1.2.tgz#7ce0763f004b3feb2f7945e5957c29c36f83a831"
-  integrity sha512-NTFJMSRENIxvgoV5NsCZmRPgsZ8aQzhgGoUFOzBigrX9z2NfDWzncj9jnDtrEqCzat9EaWRoIMnV3SX3NM/paQ==
+metaapp-pandora-sdk@^5.0.2:
+  version "5.0.2"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-5.0.2.tgz#127b23567e31262d9ac0edcdde0a6d8c62724b17"
+  integrity sha512-BFNtpruuU0/kZwSXnDstuI/Zo9EXM1tG8wL+WDap+Z6t+vLqzQwgU4h4RwrMjIUWeTke1MDG+6C7DqmlWxCtxg==
   dependencies:
     "@fingerprintjs/fingerprintjs" "^3.0.1"
     axios "^0.24.0"
@@ -873,21 +873,10 @@ metaapp-pandora-sdk@^4.1.2:
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-pandora-sdk@^4.1.3:
-  version "4.1.3"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-4.1.3.tgz#eba6de7c7f7d880cd3ffb2c3be33b1780ab0c0a6"
-  integrity sha512-IC1orDr0din+2zcZpBChkOZvj+wtOEwSHkK0tcrLat0nWDRXQpLoLMAk+YqBxrsZjMG4ah+04g095O5qnuZiOg==
-  dependencies:
-    "@fingerprintjs/fingerprintjs" "^3.0.1"
-    axios "^0.24.0"
-    core-js "3"
-    promise-polyfill "^8.2.0"
-    whatwg-fetch "^3.5.0"
-
-metaapp-prodigytech-doc-theme@1.0.20:
-  version "1.0.20"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.0.20.tgz#2803c80ed1007e70a1b2ebf08360d628d20a7e8e"
-  integrity sha512-BhArwepN0ehox59vCpMKDZ13InuEon+BeZPNdov/byDzMtC4DnsVqGDhPISOCmZh6gZ2bQNlmDnfIaOmahGCVA==
+metaapp-prodigytech-doc-theme@1.0.30:
+  version "1.0.30"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.0.30.tgz#64452baf0b626737a9f4fdbe76e80d75a30170b8"
+  integrity sha512-uxWNkYI4xTb3vjKqaCAfBumL4oxGQFcy2Gs+xxH1WAVjpPcteye5ECrYR7a7rPc0Wnq356sO8+BnSt2rpWl/rw==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
@@ -897,7 +886,7 @@ metaapp-prodigytech-doc-theme@1.0.20:
     "@vueuse/core" "^9.8.2"
     body-scroll-lock "4.0.0-beta.0"
     detect-browser "^5.3.0"
-    metaapp-pandora-sdk "^4.1.3"
+    metaapp-pandora-sdk "^5.0.2"
     shiki "^0.12.1"
     vite "^4.0.2"
     vue "^3.2.45"
