@@ -77,6 +77,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       },
       searchPage: 'https://search.ark.online/#/search'
     },
+    feedback: 'https://github.com/api-doc/learning-docs/',
     siteTitle: 'API',
     nav: [
       {
