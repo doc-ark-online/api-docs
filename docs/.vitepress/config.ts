@@ -127,7 +127,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     socialLinks: [
       // { link: 'https://github.com/prodigytech-doc/api-docs', icon: 'github' },
       {
-        link: 'https://wenjuan.feishu.cn/m/cfm?t=sEJP3cVJZ3Ii-ewdc',
+        link: 'https://github.com/prodigytech-doc/api-docs/issues',
         icon: {
           svg: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="20" height="20" rx="10" fill="#676D77"/>
