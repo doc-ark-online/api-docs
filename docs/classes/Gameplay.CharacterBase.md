@@ -2346,7 +2346,12 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 • **setCollisionShapeAndExtent**(`ShapeType`, `CollisionExtent`): `void` 
 
 设置不同形状不同大小的碰撞体
-
+调用setCollisionShapeAndExtent之前需要将调用对象的usedCapsuleCorrection设置为false，因为碰撞体的大小受限于usedCapsuleCorrection的值，usedCapsuleCorrection为true时表示碰撞体大小随着角色大小改变而改变，usedCapsuleCorrection为false时表示碰撞体大小以用户设置的大小为准。
+建议在类似于UIDefault.ts这类C端脚本的onStart()方法里获取当前Character，然后this.Character.usedCapsuleCorrection = false;方便后续的调整。
+```ts
+// 这样就可以设置一个和默认的差不多大小的胶囊体
+this.Character.setCollisionShapeAndExtent(Gameplay.CustomShapeType.VerticalCapsule, new Vector(30, 30, 90));
+```
 
 #### Parameters
 
