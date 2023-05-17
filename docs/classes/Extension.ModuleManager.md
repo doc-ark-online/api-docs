@@ -18,7 +18,6 @@
 
 | Methods |
 | :-----|
-| **[callExecut](Extension.ModuleManager.md#callexecut)**<`T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>, `type?`: `number`, `...params`: `any`[]): `any` <br> 调用一个模块的onExcut方法|
 | **[callExecute](Extension.ModuleManager.md#callexecute)**<`T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>, `type?`: `number`, `...params`: `any`[]): `any` <br> 调用一个模块的onExcut方法|
 | **[getModule](Extension.ModuleManager.md#getmodule)**<`T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/Type.TypeName.md)<`T`\>): `T`: extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
 | **[getUpdateTimeLog](Extension.ModuleManager.md#getupdatetimelog)**(): `string` <br> 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
@@ -43,41 +42,6 @@
 ModuleManager是否就绪
 
 ## Methods
-
-### callExecut <Score text="callExecut" /> 
-
-• **callExecut**<`T`\>(`moduleClass`, `type?`, `...params`): `any` <Badge type="tip" text="other" />
-
-调用一个模块的onExcut方法
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason:接口废弃 replacement:callExecute()
-
-:::
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`ModuleS`](Extension.ModuleS.md)<`any`, `any`\> \| [`ModuleC`](Extension.ModuleC.md)<`any`, `any`\> |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `moduleClass` | [`TypeName`](../interfaces/Type.TypeName.md)<`T`\> |  模块 |
-| `type?` | `number` |  给onExcut方法传递的操作类型，需要各个模块自己定义 default: 0 |
-| `...params` | `any`[] |  给onExcut方法传递的参数，需要各个模块自己定义 |
-
-#### Returns
-
-`any`
-
-onExcut方法return的结果
-
-___
 
 ### callExecute <Score text="callExecute" /> 
 

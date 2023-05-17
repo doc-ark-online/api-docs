@@ -20,8 +20,6 @@ Others
 | **[queryReplyMessage](Others.Others.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
 | **[queryViewRecord](Others.Others.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
 | **[saveViewRecord](Others.Others.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
-| **[spawnNewParticle](Others.Others.md#spawnnewparticle)**(`template`: [`Particle`](../classes/Gameplay.Particle.md), `trans`: [`Transform`](../classes/Type.Transform.md), `bloop?`: `boolean`): `void` <br> 动态生成特效|
-| **[spawnNewSound](Others.Others.md#spawnnewsound)**(`template`: [`Sound`](../classes/Gameplay.Sound.md), `location`: [`Vector`](../classes/Type.Vector.md)): `void` <br> 动态生成音效|
 
 
 ## Modules Functions
@@ -199,48 +197,3 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `UGCID` | `string` | UGC唯一标识 |
-
-___
-
-### spawnNewParticle <Score text="spawnNewParticle" /> 
-
-• **spawnNewParticle**(`template`, `trans`, `bloop?`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-:::
-
-动态生成特效
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `template` | [`Particle`](../classes/Gameplay.Particle.md) | 特效模板 |
-| `trans` | [`Transform`](../classes/Type.Transform.md) | 生成位置 |
-| `bloop?` | `boolean` | 是否循环 default:false |
-
-___
-
-### spawnNewSound <Score text="spawnNewSound" /> 
-
-• **spawnNewSound**(`template`, `location`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: 暂不对外开放，请勿使用此方法
-
-:::
-
-动态生成音效
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `template` | [`Sound`](../classes/Gameplay.Sound.md) | 音效模板 |
-| `location` | [`Vector`](../classes/Type.Vector.md) | 位置 |

@@ -41,8 +41,6 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[airControlBoostMultiplier](Gameplay.CharacterBase.md#aircontrolboostmultiplier)**(): `number` <br> 当角色空中水平移动速率比airControlBoostVelocityThreshold小时, 对airControl效果加倍的倍数|
 | **[airControlBoostVelocityThreshold](Gameplay.CharacterBase.md#aircontrolboostvelocitythreshold)**(): `number` <br> 下落控制提升速率阈值, 当角色在空中时水平移动速率小于此值, 就会依照airControlBoostMultiplier的值对airControl效果进行加倍|
 | **[animationMode](Gameplay.CharacterBase.md#animationmode)**(): [`AnimationMode`](../enums/Gameplay.AnimationMode.md) <br> 动画播放模式|
-| **[animationStance](Gameplay.CharacterBase.md#animationstance)**(): `string` <br> 动画姿态|
-| **[appearance](Gameplay.CharacterBase.md#appearance)**(): [`SomatotypeBase`](Gameplay.SomatotypeBase.md) <br> 当前外观修改对象|
 | **[appearanceType](Gameplay.CharacterBase.md#appearancetype)**(): [`AppearanceType`](../enums/Gameplay.AppearanceType.md) <br> 形象类型|
 | **[baseShadowLocationOffset](Gameplay.CharacterBase.md#baseshadowlocationoffset)**(): [`Vector2`](Type.Vector2.md) <br> 模拟阴影相对于角色脚底中心的位置偏移|
 | **[baseShadowMaxVisibleHeight](Gameplay.CharacterBase.md#baseshadowmaxvisibleheight)**(): `number` <br> 模拟阴影可见的最大离地高度|
@@ -75,7 +73,6 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[jumpEnable](Gameplay.CharacterBase.md#jumpenable)**(): `boolean` <br> 启用/禁用跳跃能力|
 | **[jumpMaxCount](Gameplay.CharacterBase.md#jumpmaxcount)**(): `number` <br> 最大可跳跃次数|
 | **[jumpingOutOfWaterEnable](Gameplay.CharacterBase.md#jumpingoutofwaterenable)**(): `boolean` <br> 是否可以跳出水面|
-| **[locallyVisible](Gameplay.CharacterBase.md#locallyvisible)**(): `boolean` <br> 是否可见(本地设置)|
 | **[maxAcceleration](Gameplay.CharacterBase.md#maxacceleration)**(): `number` <br> 最大加速度|
 | **[maxFallingSpeed](Gameplay.CharacterBase.md#maxfallingspeed)**(): `number` <br> 最大下落速度|
 | **[maxFlySpeed](Gameplay.CharacterBase.md#maxflyspeed)**(): `number` <br> 最大飞行速度|
@@ -90,9 +87,9 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[movementDirection](Gameplay.CharacterBase.md#movementdirection)**(): [`MovementDirection`](../enums/Gameplay.MovementDirection.md) <br> 运动时依据的正方向|
 | **[movementState](Gameplay.CharacterBase.md#movementstate)**(): [`MovementMode`](../enums/Gameplay.MovementMode.md) <br> 当前角色运动状态|
 | **[outOfWaterZ](Gameplay.CharacterBase.md#outofwaterz)**(): `number` <br> 出水时Z轴方向上的速度|
+| **[physicsEnabled](Gameplay.CharacterBase.md#physicsenabled)**(): `boolean` <br> 获取角色物理状态|
 | **[ragdollEnable](Gameplay.CharacterBase.md#ragdollenable)**(): `boolean` <br> 启用/禁用布娃娃状态|
 | **[rotateRate](Gameplay.CharacterBase.md#rotaterate)**(): `number` <br> 最大转向速度|
-| **[scale](Gameplay.CharacterBase.md#scale)**(): [`Vector`](Type.Vector.md) <br> 角色胶囊体的缩放, 自动同步|
 | **[separateBrakingFrictionEnable](Gameplay.CharacterBase.md#separatebrakingfrictionenable)**(): `boolean` <br> 使用单独制动摩擦|
 | **[usedCapsuleCorrection](Gameplay.CharacterBase.md#usedcapsulecorrection)**(): `boolean` <br> 使用胶囊体修正 true代表应用角色编辑中的数据自动计算胶囊体大小。false代表应用"capsuleHalfHeight"和"capsuleRadius"设置胶囊体的大小。|
 | **[velocity](Gameplay.CharacterBase.md#velocity)**(): [`Vector`](Type.Vector.md) <br> 当前移动速度|
@@ -125,16 +122,12 @@ NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对�
 | **[jump](Gameplay.CharacterBase.md#jump)**(): `void` <br> 跳跃|
 | **[loadAnimation](Gameplay.CharacterBase.md#loadanimation)**(`GUID`: `string`, `sync?`: `boolean`): [`Animation`](Gameplay.Animation.md) <br> 加载动画,获取到动画对象，playAnimation是个快速实现功能的接口,可配置参数有限。loadAnimation可以返回动画,以进行更加精细的动画控制，获取到对象后需用户自己配置参数，手动调用play接口动画才会播放。|
 | **[loadDecoration](Gameplay.CharacterBase.md#loaddecoration)**(`decorationString`: `string`, `callback`: [`StringCallback`](../modules/Gameplay.Gameplay.md#stringcallback)): `void` <br> 加载挂件,给移动角色编辑器提供的能力|
-| **[loadSlotAndEditorDataByGuid](Gameplay.CharacterBase.md#loadslotandeditordatabyguid)**(`GUID`: `string`): `void` <br> 通过GUID加载插槽跟角色编辑数据|
-| **[loadSlotAndEditorDataByPath](Gameplay.CharacterBase.md#loadslotandeditordatabypath)**(`relativePath`: `string`): `void` <br> 通过路径加载插槽跟角色编辑数据|
 | **[loadStance](Gameplay.CharacterBase.md#loadstance)**(`GUID`: `string`, `sync?`: `boolean`): [`SubStance`](Gameplay.SubStance.md) <br> 创建一个二级姿态对象并返回|
 | **[lookAt](Gameplay.CharacterBase.md#lookat)**(`TargetPoint`: [`Vector`](Type.Vector.md)): `void` <br> 角色面朝目标点|
 | **[playAnimation](Gameplay.CharacterBase.md#playanimation)**(`GUID`: `string`, `loopCount?`: `number`, `rate?`: `number`): [`Animation`](Gameplay.Animation.md) <br> 播放动画,同时获取到动画对象,Animation对象接口默认是同步的，playanimation是个快速实现功能的接口,可配置参数有限，loadanimation 可以返回动画,以进行更加精细的动画控制。|
-| **[playAnimationLocally](Gameplay.CharacterBase.md#playanimationlocally)**(`AnimationGuid`: `string`, `AnimationLength?`: `number`, `LoopCount?`: `number`): `void` <br> 本地播放动画|
 | **[setAppearance](Gameplay.CharacterBase.md#setappearance)**<`T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\>\>(`clz`: [`Constructor`](../modules/Gameplay.Gameplay.md#constructor)<`T`\>): `T`: extends [`SomatotypeBase`](Gameplay.SomatotypeBase.md)<`T`\> <br> 设置外观修改功能|
 | **[setCollisionShapeAndExtent](Gameplay.CharacterBase.md#setcollisionshapeandextent)**(`ShapeType`: [`CustomShapeType`](../enums/Gameplay.CustomShapeType.md), `CollisionExtent`: [`Vector`](Type.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
 | **[setLocallyVisibility](Gameplay.CharacterBase.md#setlocallyvisibility)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置是否被显示(本地生效)|
-| **[stopAnimation](Gameplay.CharacterBase.md#stopanimation)**(`InAnimationGuid`: `string`): `void` <br> 停止播放动画|
 | **[stopStance](Gameplay.CharacterBase.md#stopstance)**(`sync?`: `boolean`): `void` <br> 停止任何正在播放的姿态|
 | **[swimmingDown](Gameplay.CharacterBase.md#swimmingdown)**(`speed`: `number`): `void` <br> 水中下潜|
 | **[swimmingUp](Gameplay.CharacterBase.md#swimmingup)**(`speed`: `number`): `void` <br> 水中上浮|

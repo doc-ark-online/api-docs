@@ -16,17 +16,17 @@
 
 | Methods |
 | :-----|
-| **[createNewLocalGameFromTemplate](Service.UGCService.md#createnewlocalgamefromtemplate)**(`targetTemplateData`: `Record`<`string`, `unknown`\>): `Promise`<`Record`<`string`, `unknown`\>\> <br> 以指定模板创建本地工程，并获取工程路径|
-| **[requestLocalUGCGameList](Service.UGCService.md#requestlocalugcgamelist)**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取当前手机本地的UGC工程列表|
-| **[requestPublishedUGCGameList](Service.UGCService.md#requestpublishedugcgamelist)**(`lastId?`: `string`): `Promise`<`Record`<`string`, `unknown`\>\> <br> 获取当前玩家已发布的UGC游戏列表|
-| **[requestUGCTemplateList](Service.UGCService.md#requestugctemplatelist)**(`lastId?`: `string`): `Promise`<`Record`<`string`, `unknown`\>[]\> <br> 获取模板列表，可以分页方式查询|
+| **[createNewLocalGameFromTemplate](Service.UGCService.md#createnewlocalgamefromtemplate)**(`targetTemplateData`: [`UGCTemplateInfo`](../modules/Service.Service.md#ugctemplateinfo)): `Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)\> <br> 以指定模板创建本地工程，并获取工程路径|
+| **[requestLocalUGCGameList](Service.UGCService.md#requestlocalugcgamelist)**(): `Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)[]\> <br> 获取当前手机本地的UGC工程列表|
+| **[requestPublishedUGCGameList](Service.UGCService.md#requestpublishedugcgamelist)**(`lastId?`: `string`): `Promise`<[`PublishedUGCGameInfo`](../modules/Service.Service.md#publishedugcgameinfo)\> <br> 获取当前玩家已发布的UGC游戏列表|
+| **[requestUGCTemplateList](Service.UGCService.md#requestugctemplatelist)**(`lastId?`: `string`): `Promise`<[`UGCTemplateInfo`](../modules/Service.Service.md#ugctemplateinfo)[]\> <br> 获取模板列表，可以分页方式查询|
 | **[getInstance](Service.UGCService.md#getinstance)**(): [`UGCService`](Service.UGCService.md) <br> 获取用户建造管理器全局实例|
 
 ## Methods
 
 ### createNewLocalGameFromTemplate <Score text="createNewLocalGameFromTemplate" /> 
 
-• **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="client" />
+• **createNewLocalGameFromTemplate**(`targetTemplateData`): `Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)\> <Badge type="tip" text="client" />
 
 以指定模板创建本地工程，并获取工程路径
 
@@ -40,21 +40,24 @@
 
 :::
 
-使用示例: 模板信息包含如下字段:
+使用示例: UGC工程信息包含如下字段:
+```json
+{
+     "gameId": "", // 新创建的工程该值为空
+     "path": "data/data/local",
+     "parentId": "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
+}
 ```ts
-path: "data/data/local",
-parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
-```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `targetTemplateData` | `Record`<`string`, `unknown`\> |  想要创建的模板游戏信息 |
+| `targetTemplateData` | [`UGCTemplateInfo`](../modules/Service.Service.md#ugctemplateinfo) |  想要创建的模板游戏信息 |
 
 #### Returns
 
-`Promise`<`Record`<`string`, `unknown`\>\>
+`Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)\>
 
 复制好的本地工程信息
 
@@ -62,38 +65,42 @@ ___
 
 ### requestLocalUGCGameList <Score text="requestLocalUGCGameList" /> 
 
-• **requestLocalUGCGameList**(): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="client" />
+• **requestLocalUGCGameList**(): `Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)[]\> <Badge type="tip" text="client" />
 
 获取当前手机本地的UGC工程列表
 
 
 ::: warning Precautions
 
-1. 只在233内使用时生效
-2. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
+1. 本地工程目录列表, 只有发布过的工程才会在返回数据中
+2. 加了过滤器, gameId=null, 或者 path=null, 都不返回
+3. 只在233内使用时生效
+4. 与[ requestUGCTemplateList ][ requestPublishedUGCGameList ]
 [ requestLocalUGCGameList ][ requestCreateNewLocalGameFromTemplate ]互斥。
 在上一次调用收到回调前交叉调用或者重复调用，只有最后一次调用能产生回调，之前的被覆盖
 
 :::
 
-使用示例: 模板信息包含如下字段:
-```ts
-gameId: "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // 游戏id
-path: "data/data/local",
-parentId: "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
+使用示例: UGC工程信息包含如下字段:
+```json
+{
+     "gameId": "T_33567fc94226c80922af3faf366fe4d1093f6a3c", // 游戏id
+     "path": "data/data/local",
+     "parentId": "1564654", // 父模板id，当编辑本地工程时，需要用该id而非gameId。
+}
 ```
 
 #### Returns
 
-`Promise`<`Record`<`string`, `unknown`\>[]\>
+`Promise`<[`LocalUGCGameInfo`](../modules/Service.Service.md#localugcgameinfo)[]\>
 
-当前手机本地的UGC工程列表。只列出来发布过的游戏，未发布过的工程用不到
+当前手机本地的UGC工程列表。
 
 ___
 
 ### requestPublishedUGCGameList <Score text="requestPublishedUGCGameList" /> 
 
-• **requestPublishedUGCGameList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>\> <Badge type="tip" text="client" />
+• **requestPublishedUGCGameList**(`lastId?`): `Promise`<[`PublishedUGCGameInfo`](../modules/Service.Service.md#publishedugcgameinfo)\> <Badge type="tip" text="client" />
 
 获取当前玩家已发布的UGC游戏列表
 
@@ -107,8 +114,8 @@ ___
 
 :::
 
-使用示例: 模板信息包含如下字段:
-```ts
+使用示例: UGC游戏列表信息包含如下字段:
+```json
 "end": true,
 "games": [
     {
@@ -120,7 +127,7 @@ ___
         "likeIt": false
     }
 ]
-```
+```ts
 
 #### Parameters
 
@@ -130,7 +137,7 @@ ___
 
 #### Returns
 
-`Promise`<`Record`<`string`, `unknown`\>\>
+`Promise`<[`PublishedUGCGameInfo`](../modules/Service.Service.md#publishedugcgameinfo)\>
 
 玩家已发布的UGC游戏列表，两个字段：end-表示是否最后一页；games-游戏信息数组
 
@@ -138,7 +145,7 @@ ___
 
 ### requestUGCTemplateList <Score text="requestUGCTemplateList" /> 
 
-• **requestUGCTemplateList**(`lastId?`): `Promise`<`Record`<`string`, `unknown`\>[]\> <Badge type="tip" text="client" />
+• **requestUGCTemplateList**(`lastId?`): `Promise`<[`UGCTemplateInfo`](../modules/Service.Service.md#ugctemplateinfo)[]\> <Badge type="tip" text="client" />
 
 获取模板列表，可以分页方式查询
 
@@ -153,7 +160,7 @@ ___
 :::
 
 使用示例: 模板信息包含如下字段:
-```ts
+```json
 {
     "id": 1001579,// 分页用的id
     "gid": "680244",
@@ -177,7 +184,7 @@ ___
 
 #### Returns
 
-`Promise`<`Record`<`string`, `unknown`\>[]\>
+`Promise`<[`UGCTemplateInfo`](../modules/Service.Service.md#ugctemplateinfo)[]\>
 
 模板列表，数组形式。
 

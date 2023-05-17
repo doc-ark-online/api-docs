@@ -122,6 +122,25 @@ ___
 屏蔽字检测
 
 
+::: warning Precautions
+
+接口中遇到异常情况会返回reject，使用该接口需要用catch处理这种异常情况
+
+:::
+
+使用示例:屏蔽字检测错误处理
+```ts
+try {
+  let result = await Util.StringUtil.maskWordCheck("自杀之王");
+  if (!result.result) {
+    console.log("屏蔽字检测不通过");
+    console.log("命中的文本：" + result.hits);
+  }
+} catch (e) {
+  console.log("屏蔽字检测失败");
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |

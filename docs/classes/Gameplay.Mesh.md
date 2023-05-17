@@ -16,7 +16,7 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 
   ↳ **`Mesh`**
 
-  ↳↳ [`StaticMesh`](Gameplay.StaticMesh.md)
+  ↳↳ [`StaticMesh`](Gameplay.Gameplay.StaticMesh.md)
 
 ## Table of contents
 
@@ -64,7 +64,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -74,12 +73,9 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | Methods |
 | :-----|
 | **[createMaterialInstance](Gameplay.Mesh.md#creatematerialinstance)**(`Index`: `number`): `void` <br> 创建材质实例|
-| **[getMaterialColor](Gameplay.Mesh.md#getmaterialcolor)**(`Index`: `number`): [`LinearColor`](Type.LinearColor.md) <br> 获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败|
 | **[getMaterialInstance](Gameplay.Mesh.md#getmaterialinstance)**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] <br> 返回当前拥有的材质实例|
 | **[resetMaterial](Gameplay.Mesh.md#resetmaterial)**(): `void` <br> 还原物体材质|
 | **[setCullDistance](Gameplay.Mesh.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
-| **[setMaterial](Gameplay.Mesh.md#setmaterial)**(`MaterialGUID`: `string`): `void` <br> 设置物体材质|
-| **[setMaterialColor](Gameplay.Mesh.md#setmaterialcolor)**(`Index`: `number`, `InColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置材质颜色|
 | **[setOutlineAndColor](Gameplay.Mesh.md#setoutlineandcolor)**(`Enable`: `boolean`, `ColorIndex`: `number`): `void` <br> 设置对象描边及描边颜色，需要场景中存在后处理对象。|
 | **[setStaticMeshAsset](Gameplay.Mesh.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void` <br> 设置静态网格资源|
 
@@ -136,13 +132,11 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -312,7 +306,7 @@ ___
 
 • `set` **isSimulatingPhysics**(`value`): `void`
 
-设置模拟物理状态，不建议使用，可能导致模拟异常
+设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用
 
 #### Parameters
 
@@ -567,33 +561,6 @@ ___
 
 
 
-### getMaterialColor <Score text="getMaterialColor" /> 
-
-• **getMaterialColor**(`Index`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="other" />
-
-获取材质颜色,暂时注释材质颜色问题后续有待解决,当前版本获取会失败
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数获取
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Index` | `number` | 第几个材质 |
-
-#### Returns
-
-[`LinearColor`](Type.LinearColor.md)
-
-获取的颜色
-
-___
-
 ### getMaterialInstance <Score text="getMaterialInstance" /> 
 
 • **getMaterialInstance**(): [`MaterialInstance`](Gameplay.MaterialInstance.md)[] 
@@ -637,80 +604,6 @@ ___
 | `inCullDistance` | `number` | 裁剪距离 |
 
 
-
-### setMaterial <Score text="setMaterial" /> 
-
-• **setMaterial**(`MaterialGUID`): `void` 
-
-设置物体材质
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `MaterialGUID` | `string` |  材质ID default: |
-
-
-• **setMaterial**(`MaterialGUID`, `index`): `void` 
-
-设置物体材质
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `MaterialGUID` | `string` |  材质ID |
-| `index` | `number` |  材质下标 |
-
-
-• **setMaterial**(`MaterialGUID`, `Transparency`, `isTransparent`): `void`
-
-设置物体材质
-
-**`Effect`**
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `MaterialGUID` | `string` |  材质ID |
-| `Transparency` | `number` |  透明度 default: 0.8 |
-| `isTransparent` | `boolean` |  是否透明 default: false |
-
-
-___
-
-### setMaterialColor <Score text="setMaterialColor" /> 
-
-• **setMaterialColor**(`Index`, `InColor`): `void` <Badge type="tip" text="other" />
-
-设置材质颜色
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:getMaterialInstance()获取到具体的材质实例通过材质参数设置
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Index` | `number` | 第几个材质 |
-| `InColor` | [`LinearColor`](Type.LinearColor.md) | 要赋值的颜色 |
-
-
-___
 
 ### setOutlineAndColor <Score text="setOutlineAndColor" /> 
 

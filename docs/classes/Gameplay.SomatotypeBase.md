@@ -24,7 +24,6 @@
 | Methods |
 | :-----|
 | **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
 | **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 
 构造函数
@@ -68,33 +67,6 @@ ___
 | `newOutlineColor` | [`LinearColor`](Type.LinearColor.md) | Outline颜色 |
 | `newOutlineWidth` | `number` | Outline宽度 |
 
-
-___
-
-### setOutline <Score text="setOutline" /> 
-
-• **setOutline**(`usedOutline`): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason:接口更改 replacement:addOutlineEffect
-
-:::
-
-描边开关
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `usedOutline` | `boolean` | 是否使用描边功能 |
-
-#### Returns
-
-`boolean`
-
-是否成功
 
 ___
 

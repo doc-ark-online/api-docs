@@ -29,7 +29,6 @@ GameObject的基类
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -85,13 +84,11 @@ GameObject的基类
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 
 ## Accessors
 
@@ -417,27 +414,6 @@ ___
 | :------ | :------ |
 | `v` | `boolean` |
 
-
-___
-
-### visible <Score text="visible" /> 
-
-• `get` **visible**(): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
-
-:::
-
-获取当前物体是否显示
-
-
-#### Returns
-
-`boolean`
-
-bool
 
 ___
 
@@ -1473,35 +1449,6 @@ let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.Mesh>({
 
 ___
 
-### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
-
-• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
-
-异步构造一个 GameObject 资源不存在会先去下载资源再去创建
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:asyncSpawn()
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`Promise`<`GameObject`\>
-
-构造的GameObject
-
-___
-
 ### find <Score text="find" /> 
 
 • `Static` **find**(`GUID`): `GameObject` 
@@ -1620,31 +1567,3 @@ let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
 
 构造的GameObject
 
-___
-
-### spawnGameObject <Score text="spawnGameObject" /> 
-
-• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
-
-构造一个 GameObject
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:spawn()
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`GameObject`
-
-构造的GameObject

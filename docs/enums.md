@@ -7,7 +7,6 @@ Enums
 ## A
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [AbilityStateControlType](enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [AdsState](enums/Service.AdsState.md) | 广告状态，调用show方法的时候可能返回的广告状态 | [Monetization](groups/Monetization.Monetization.md) |
 | [AdsType](enums/Service.AdsType.md) | 广告类型 | [Monetization](groups/Monetization.Monetization.md) |
 | [AnimSlot](enums/Gameplay.AnimSlot.md) | 动画插槽 | [Animations](groups/Animations.Animations.md) |
@@ -185,8 +184,8 @@ Enums
 | [UIHorizontalCollation](enums/UI.UIHorizontalCollation.md) | 自动布局子项布局排序 - 水平排序 | [Gui](groups/Gui.Gui.md) |
 | [UIHugContentHorizontally](enums/UI.UIHugContentHorizontally.md) | 自动布局容器水平适应规则 | [Gui](groups/Gui.Gui.md) |
 | [UIHugContentVertically](enums/UI.UIHugContentVertically.md) | 自动布局容器垂直适应规则 | [Gui](groups/Gui.Gui.md) |
-| [UILayoutPacket](enums/UI.UILayoutPacket.md) | 自动布局节点排列规则 | [Gui](groups/Gui.Gui.md) |
-| [UILayoutType](enums/UI.UILayoutType.md) | 自动布局排版规则 | [Gui](groups/Gui.Gui.md) |
+| [UILayoutPacket](enums/UI.UILayoutPacket.md) | 自动布局排版规则-排列规则 | [Gui](groups/Gui.Gui.md) |
+| [UILayoutType](enums/UI.UILayoutType.md) | 自动布局排版规则-容器类型 | [Gui](groups/Gui.Gui.md) |
 | [UIScrollBoxAnimationType](enums/UI.UIScrollBoxAnimationType.md) | 滚动框动画类型 | [Gui](groups/Gui.Gui.md) |
 | [UITextHorizontalLayout](enums/UI.UITextHorizontalLayout.md) | 文本框规则显示规则限制 | [Gui](groups/Gui.Gui.md) |
 | [UIVerticalCollation](enums/UI.UIVerticalCollation.md) | 自动布局子项布局排序 - 垂直排序 | [Gui](groups/Gui.Gui.md) |

@@ -34,7 +34,6 @@
 | **[transform](Gameplay.Player.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.Player.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.Player.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.Player.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.Player.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.Player.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.Player.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -52,7 +51,6 @@
 | **[destroy](Gameplay.Player.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.Player.md#detachcomponent)**(`component`: `string` \): `void` <br> 移除组件|
 | **[detachFromGameObject](Gameplay.Player.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getAccount](Gameplay.Player.md#getaccount)**(): `string` <br> 获取玩家账户|
 | **[getBoundingBoxSize](Gameplay.Player.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](Gameplay.Player.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](Type.Vector.md), `BoxExtentOuter`: [`Vector`](Type.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](Gameplay.Player.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
@@ -61,7 +59,6 @@
 | **[getChildrenBoxCenter](Gameplay.Player.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getCollision](Gameplay.Player.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.Player.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
-| **[getPlayerID](Gameplay.Player.md#getplayerid)**(): `number` <br> 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。|
 | **[getRelativeLocation](Gameplay.Player.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.Player.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.Player.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
@@ -74,7 +71,6 @@
 | **[getTransform](Gameplay.Player.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.Player.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[getUserId](Gameplay.Player.md#getuserid)**(): `string` <br> 获取用户的平台Id，该Id可以作为玩家唯一Id使用。|
-| **[getUserSystemId](Gameplay.Player.md#getusersystemid)**(): `string` <br> 获取用户系统的玩家Id|
 | **[getVisibility](Gameplay.Player.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[getWorldLocation](Gameplay.Player.md#getworldlocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[getWorldRotation](Gameplay.Player.md#getworldrotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
@@ -101,13 +97,11 @@
 | **[setWorldScale](Gameplay.Player.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.Player.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.Player.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.Player.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.Player.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.Player.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.Player.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.Player.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.Player.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.Player.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.Player.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 
 ## Properties
 
@@ -459,27 +453,6 @@ ___
 
 ___
 
-### visible <Score text="visible" /> 
-
-• `get` **visible**(): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
-
-:::
-
-获取当前物体是否显示
-
-
-#### Returns
-
-`boolean`
-
-bool
-
-___
-
 ### worldLocation <Score text="worldLocation" /> 
 
 • `get` **worldLocation**(): [`Vector`](Type.Vector.md) 
@@ -765,27 +738,6 @@ ___
 
 ___
 
-### getAccount <Score text="getAccount" /> 
-
-• **getAccount**(): `string` <Badge type="tip" text="other" />
-
-获取玩家账户
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
-
-:::
-
-#### Returns
-
-`string`
-
-玩家账户
-
-___
-
 ### getBoundingBoxSize <Score text="getBoundingBoxSize" /> 
 
 • **getBoundingBoxSize**(`nonColliding?`, `includeFromChildActors?`, `outer?`): [`Vector`](Type.Vector.md) 
@@ -957,31 +909,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 Vector
-
-___
-
-### getPlayerID <Score text="getPlayerID" /> 
-
-• **getPlayerID**(): `number` 
-
-获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
-
-:::
-
-
-#### Returns
-
-`number`
-
-当前游戏内的玩家Id
-
-#### Overrides
-
-Core.IPlayer.getPlayerID
 
 ___
 
@@ -1240,27 +1167,6 @@ ___
 `string`
 
 用户平台Id
-
-___
-
-### getUserSystemId <Score text="getUserSystemId" /> 
-
-• **getUserSystemId**(): `string` 
-
-获取用户系统的玩家Id
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:命名不规范 replacement:AccountService.getInstance().getOpenId()
-
-:::
-
-
-#### Returns
-
-`string`
-
-用户系统的玩家Id，可以用于查询用户信息。
 
 ___
 
@@ -1753,35 +1659,6 @@ let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.Mesh>({
 
 ___
 
-### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
-
-• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
-
-异步构造一个 GameObject 资源不存在会先去下载资源再去创建
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:asyncSpawn()
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`Promise`<`GameObject`\>
-
-构造的GameObject
-
-___
-
 ### find <Score text="find" /> 
 
 • `Static` **find**(`GUID`): `GameObject` 
@@ -1900,31 +1777,3 @@ let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
 
 构造的GameObject
 
-___
-
-### spawnGameObject <Score text="spawnGameObject" /> 
-
-• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
-
-构造一个 GameObject
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:spawn()
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`GameObject`
-
-构造的GameObject
