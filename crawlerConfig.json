@@ -23,7 +23,7 @@
         "default_value": "Documentation"
       },
       "lvl1": ".content h1",
-      "lvl2": ".content h2:not([id=\"hierarchy\"]):not([id=\"table-of-contents\"]):not([id=\"properties\"]):not([id=\"accessors\"]):not([id=\"methods\"])",
+      "lvl2": ".content h2",
       "lvl3": ".content h3",
       "content": ".content p, .content li"
     }
@@ -33,11 +33,7 @@
     ".next-and-prev-link",
     "h2#table-of-contents",
     "table",
-    "h2#hierarchy",
-    "h2#accessors",
-    "h2#character",
-    "h2#methods",
-    "h2#properties"
+    ".content nav"
   ],
   "custom_settings": {
     "attributesForFaceting": ["tags", "type"]
