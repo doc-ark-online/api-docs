@@ -34,7 +34,7 @@
     ".table-of-contents"
   ],
   "custom_settings": {
-    "attributesForFaceting": ["tags"]
+    "attributesForFaceting": ["tags", "type"]
   },
   "stop_urls": ["/$"],
   "js_render": true
