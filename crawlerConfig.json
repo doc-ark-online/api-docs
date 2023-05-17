@@ -31,7 +31,12 @@
   "selectors_exclude": [
     ".page-footer",
     ".next-and-prev-link",
-    ".table-of-contents"
+    "#table-of-contents",
+    "#hierarchy",
+    "table",
+    "#accessors",
+    "#character",
+    "#properties"
   ],
   "custom_settings": {
     "attributesForFaceting": ["tags", "type"]
