@@ -6,10 +6,6 @@
       "tags": ["product-docs"]
     },
     {
-      "url": "https://api-docs.ark.online/",
-      "tags": ["api-docs"]
-    },
-    {
       "url": "https://learning.ark.online/",
       "tags": ["learning-docs"]
     }
@@ -36,7 +32,7 @@
     ".content nav"
   ],
   "custom_settings": {
-    "attributesForFaceting": ["tags", "type"]
+    "attributesForFaceting": ["tags"]
   },
   "stop_urls": ["/$"],
   "js_render": true
