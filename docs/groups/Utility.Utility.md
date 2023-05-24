@@ -242,7 +242,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `a` | `number` | 待机算的数值a |
+| `a` | `number` | 待计算的数值a |
 
 #### Returns
 
