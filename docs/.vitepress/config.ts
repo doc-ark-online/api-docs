@@ -72,6 +72,10 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
             key: 'learning-docs',
             facetFilters: ['tags:learning-docs'],
             name: '教程文档'
+          },
+          {
+            name: '论坛',
+            url: 'https://forum.ark.online/'
           }
         ]
       },
