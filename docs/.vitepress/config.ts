@@ -75,7 +75,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           },
           {
             name: '论坛',
-            url: 'https://forum.ark.online/'
+            url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
           }
         ]
       },

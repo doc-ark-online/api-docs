@@ -445,10 +445,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@metaapp/docsearch-react@^4.3.17":
-  version "4.3.17"
-  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.17.tgz#1f085b72d2cc033d67d0a135df8d877e92cb8c9d"
-  integrity sha512-/Q06GUepdskWKlx6LgHw3eATR8qijGrO2LyBsQak6+ICVspV+FOviayxf7ZX1aUI3KcWLc5ntog6saZHWzfsvw==
+"@metaapp/docsearch-react@^4.3.19":
+  version "4.3.19"
+  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.19.tgz#72f61325cd3a9e6968fa55f45a2aab46f8ff9df9"
+  integrity sha512-oHvP7Tj2gDLwa45JBrJZVk9ad88FnImw2qfQIlEPLtd84q+6AGFGObPXuTrPQ4X8FoMmcOV15QzZng68+LqM2A==
   dependencies:
     "@algolia/autocomplete-core" "1.8.2"
     "@algolia/autocomplete-preset-algolia" "1.8.2"
@@ -880,14 +880,14 @@ metaapp-pandora-sdk@^5.0.2:
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-prodigytech-doc-theme@^1.1.12:
-  version "1.1.12"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.1.12.tgz#c0d5b2d86a675150498275c0e6e1221545758176"
-  integrity sha512-XV/8IUSl6zheV9hoJYiYIUVzUZSWu70At4IVJ05478t436X7ZITkhPkUPDmosqApzo02WX56yS00s00ourRSNw==
+metaapp-prodigytech-doc-theme@^1.1.14:
+  version "1.1.14"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.1.14.tgz#d5aa463fba52dcb99cb26bd3402c5a12a552c85d"
+  integrity sha512-SThnwWlTPwsQq9bOnYYztu2M3v3oXpq5+ow47dbgwuLD/96UEa27pkTiy4U9N0g5XoDj+WCoRZlYMTl6D/T6OQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
-    "@metaapp/docsearch-react" "^4.3.17"
+    "@metaapp/docsearch-react" "^4.3.19"
     "@vitejs/plugin-vue" "^4.0.0"
     "@vue/devtools-api" "^6.4.5"
     "@vueuse/core" "^9.8.2"
