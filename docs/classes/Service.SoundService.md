@@ -16,7 +16,7 @@
 
 | Properties |
 | :-----|
-| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)|
+| **[onPlaySoundComplete](Service.SoundService.md#onplaysoundcomplete)**: [`Action1`](Type.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(只支持3D音效，可通过播放id判断是哪个音效播放完成)|
 
 | Accessors |
 | :-----|
@@ -43,7 +43,36 @@
 
 • `Readonly` **onPlaySoundComplete**: [`Action1`](Type.Action1.md)<`string` \| `number`\>
 
-播放声音完成的委托(2D声音是string代表resId, 3D声音是playId代表播放id)
+播放声音完成的委托(只支持3D音效，可通过播放id判断是哪个音效播放完成)
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const boomSoundAssetId = "13896";
+        const fireAssetId = "4330";
+        //在玩家当前坐标处播放爆炸音效
+        const playId = SoundService.getInstance().play3DSound(boomSoundAssetId, player.character.worldLocation);
+        //音效播放完成回调
+        SoundService.getInstance().onPlaySoundComplete.add((resId) => {
+            if (resId == playId) {
+                //如果是3D爆炸音效播放完成，在玩家头顶播放火焰特效
+                EffectService.getInstance().playEffectOnPlayer(fireAssetId, player, Gameplay.SlotType.Head, 1);
+            }
+        })
+
+    }
+
+}
+```
 
 ## Accessors
 
@@ -118,6 +147,32 @@ ___
 停止所有音效和BGM，并释放所有音效和BGM资源
 
 
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会听到多个音效，按下F键会停止所有音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const boomSoundAssetId = "13896";
+        const boom2SoundAssetId = "13910";
+        const boom3SoundAssetId = "13997";
+        SoundService.getInstance().play3DSound(boomSoundAssetId, player.character.worldLocation, 0);
+        SoundService.getInstance().play3DSound(boom2SoundAssetId, player.character.worldLocation, 0);
+        SoundService.getInstance().play3DSound(boom3SoundAssetId, player.character.worldLocation, 0);
+        InputUtil.onKeyDown(Keys.F, () => {
+            SoundService.getInstance().clearAll();
+        })
+    }
+
+}
+```
+
 
 ___
 
@@ -127,6 +182,34 @@ ___
 
 根据播放id获取一个Sound
 
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const bgmSoundAssetId = "12721";
+        const cubeId = "7669";
+        Core.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        })
+        let playId = SoundService.getInstance().play3DSound(bgmSoundAssetId, new Type.Vector(0, 0, 0), 0);
+        InputUtil.onKeyDown(Keys.F, () => {
+            SoundService.getInstance().get3DSoundGameObject(playId).then(obj => {
+                obj.worldLocation = player.character.worldLocation;
+            })
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -149,6 +232,37 @@ ___
 在目标播放3D音效
 
 调用端生效|服务端调用自动广播
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const bgmSoundAssetId = "12721";
+        const cubeId = "7669";
+        Core.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        })
+        let isPlay = false;
+        let playId = 0;
+        InputUtil.onKeyDown(Keys.F, () => {
+            if (isPlay) {
+                SoundService.getInstance().stop3DSound(playId);
+            } else {
+                playId = SoundService.getInstance().play3DSound(bgmSoundAssetId, new Type.Vector(0, 0, 0), 0);
+            }
+            isPlay = !isPlay;
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -176,6 +290,24 @@ ___
 
 调用端生效|服务端调用自动广播
 
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const bgmSoundAssetId = "12721";
+        SoundService.getInstance().playBGM(bgmSoundAssetId, 1);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -199,6 +331,27 @@ ___
 不可叠加
 
 :::
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const boomSoundAssetId = "13896";
+        InputUtil.onKeyDown(Keys.F, () => {
+            SoundService.getInstance().playSound(boomSoundAssetId);
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -224,6 +377,37 @@ ___
 
 调用端生效|服务端调用自动广播
 
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const bgmSoundAssetId = "12721";
+        const cubeId = "7669";
+        Core.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        })
+        let isPlay = false;
+        let playId = 0;
+        InputUtil.onKeyDown(Keys.F, () => {
+            if (isPlay) {
+                SoundService.getInstance().stop3DSound(playId);
+            } else {
+                playId = SoundService.getInstance().play3DSound(bgmSoundAssetId, new Type.Vector(0, 0, 0), 0);
+            }
+            isPlay = !isPlay;
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -241,6 +425,35 @@ ___
 
 调用端生效|服务端调用自动广播
 
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，按下F键会停止所有3D音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const bgmSoundAssetId = "12721";
+        const cubeId = "7669";
+        for (let i = 0;
+i < 10;
+i++) {
+            Core.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+                obj.worldLocation = new Type.Vector(i * 300, 0, 0);
+                SoundService.getInstance().play3DSound(bgmSoundAssetId, obj, 0);
+            })
+        }
+        setTimeout(() => {
+            SoundService.getInstance().stopAll3DSound();
+        }, 10000);
+    }
+
+}
+```
+
 
 ___
 
@@ -251,6 +464,36 @@ ___
 停止除BGM以外的一切2D声音
 
 调用端生效|服务端调用自动广播
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const boomSoundAssetId = "13896";
+        const boomSoundAssetId2 = "20479";
+        let isPlay = false;
+        InputUtil.onKeyDown(Keys.F, () => {
+            if (isPlay) {
+                SoundService.getInstance().stopAllSound();
+                isPlay = false;
+            } else {
+                SoundService.getInstance().playSound(boomSoundAssetId, 0);
+                SoundService.getInstance().playSound(boomSoundAssetId2, 0);
+                isPlay = true;
+            }
+        })
+    }
+
+}
+```
 
 
 ___
@@ -263,6 +506,32 @@ ___
 
 调用端生效|服务端调用自动广播
 
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const bgmSoundAssetId = "12721";
+        let isPlay = false;
+        InputUtil.onKeyDown(Keys.F, () => {
+            if (isPlay) {
+                SoundService.getInstance().stopBGM();
+            } else {
+                SoundService.getInstance().playBGM(bgmSoundAssetId, 1);
+            }
+            isPlay = !isPlay;
+        })
+    }
+
+}
+```
+
 
 ___
 
@@ -273,6 +542,34 @@ ___
 根据资源Id停止声音
 
 调用端生效|服务端调用自动广播
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
+```ts
+@Core.Class
+export default class SoundExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Gameplay.asyncGetCurrentPlayer();
+        const boomSoundAssetId = "13896";
+        let isPlay = false;
+        InputUtil.onKeyDown(Keys.F, () => {
+            if (isPlay) {
+                SoundService.getInstance().stopSound(boomSoundAssetId);
+                isPlay = false;
+            } else {
+                SoundService.getInstance().playSound(boomSoundAssetId, 0);
+                isPlay = true;
+            }
+        })
+    }
+
+}
+```
 
 #### Parameters
 

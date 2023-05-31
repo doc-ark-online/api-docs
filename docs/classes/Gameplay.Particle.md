@@ -4,17 +4,42 @@
 
 特效对象,通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。如需精确控制特效的播放与停止，请使用play()和stop()。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。
 
-使用示例: 动态创建特效
+使用示例:创建一个名为"ParticleExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到粒子特效炸裂的效果.代码如下:
 ```ts
-// 按ID加载资源
-Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
-       if (success) {
-           // 下载完毕创建特效
-           Core.GameObject.asyncSpawnGameObject(AssetID).then((particle: Core.GameObject) => {
-               // 播放特效
-               particle.play();
-           });
-       });
+@Core.Class
+export default class ParticleExample extends Core.Script {
+
+    private readonly particle = {
+        assetID: "145884",
+        object: null as Gameplay.Particle,
+    };
+
+    protected onStart(): void {
+        this.createParticle();
+    }
+
+    @Core.Function(Core.Client)
+    public async createParticle(): Promise<void> {
+        const success = await Util.AssetUtil.asyncDownloadAsset(this.particle.assetID);
+            if (success) {
+                // 下载完毕创建特效
+                this.particle.object = await Core.GameObject.asyncSpawnGameObject(this.particle.assetID) as Gameplay.Particle;
+
+                // 设置特效transform
+                const transform = new Type.Transform(new Type.Vector(500, 0, 0), new Type.Rotation(0, 0, 0), new Type.Vector(1, 1, 1));
+                this.particle.object.setTransform(transform);
+
+                // 播放特效
+                this.particle.object.play();
+                // 设置特效参数Life标量值
+                this.particle.object.setFloat("LifeTime", 10);
+                // 设置特效参数Speed向量值
+                this.particle.object.setVector("Speed", new Type.Vector(0,0,150));
+                // 设置特效参数Color颜色值
+                this.particle.object.setColor("Color", new Type.LinearColor(1,0,0,1));
+            }
+    }
+}
 ```
 
 ## Hierarchy
@@ -31,10 +56,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 
 | Accessors |
 | :-----|
-| **[color](Gameplay.Particle.md#color)**(`effectColor`: [`LinearColor`](Type.LinearColor.md)): `void` <br> 设置特效颜色，不再生效|
-| **[loop](Gameplay.Particle.md#loop)**(): `boolean` <br> 获取特效是否是循环，不再生效|
-| **[loopCount](Gameplay.Particle.md#loopcount)**(): `number` <br> 获取特效循环次数，不再生效|
-| **[particleLength](Gameplay.Particle.md#particlelength)**(): `number` <br> 获取特效时长(ms)|
 | **[timeLength](Gameplay.Particle.md#timelength)**(): `number` <br> 获取特效时长(ms)|
 
 
@@ -56,7 +77,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -74,7 +94,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | **[setFloatRandom](Gameplay.Particle.md#setfloatrandom)**(`parameterName`: `string`, `valueMax`: `number`, `valueMin`: `number`): `void` <br> 设置特效标量参数随机|
 | **[setVector](Gameplay.Particle.md#setvector)**(`parameterName`: `string`, `value`: [`Vector`](Type.Vector.md)): `void` <br> 设置特效向量参数值|
 | **[setVectorRandom](Gameplay.Particle.md#setvectorrandom)**(`parameterName`: `string`, `valueMax`: [`Vector`](Type.Vector.md), `valueMin`: [`Vector`](Type.Vector.md)): `void` <br> 设置特效向量参数范围随机，在一定范围内取向量的随机值|
-| **[stop](Gameplay.Particle.md#stop)**(): `void` <br> 停止特效，不影响已经生成的粒子|
 
 
 ::: details 点击查看继承
@@ -129,13 +148,11 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -148,121 +165,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 特效播放完毕事件
 
 ## Accessors
-
-### color <Score text="color" /> 
-
-• `set` **color**(`effectColor`): `void`
-
-设置特效颜色，不再生效
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement: 请使用setColor
-
-:::
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `effectColor` | [`LinearColor`](Type.LinearColor.md) |
-
-
-
-### loop <Score text="loop" /> 
-
-• `get` **loop**(): `boolean` <Badge type="tip" text="other" />
-
-获取特效是否是循环，不再生效
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
-
-:::
-
-#### Returns
-
-`boolean`
-
-是否循环
-
-• `set` **loop**(`NewLoop`): `void` <Badge type="tip" text="other" />
-
-设置特效循环，不再生效
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:不再生效
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewLoop` | `boolean` | 是否循环 |
-
-
-___
-
-### loopCount <Score text="loopCount" /> 
-
-• `get` **loopCount**(): `number` <Badge type="tip" text="other" />
-
-获取特效循环次数，不再生效
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
-
-:::
-
-#### Returns
-
-`number`
-
-循环的次数
-
-• `set` **loopCount**(`NewLoopCount`): `void` <Badge type="tip" text="other" />
-
-设置特效循环次数，不再生效
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement:
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewLoopCount` | `number` | 循环的次数 |
-
-
-
-### particleLength <Score text="particleLength" /> 
-
-• `get` **particleLength**(): `number` <Badge type="tip" text="other" />
-
-获取特效时长(ms)
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 删除接口 replacement: timeLength
-
-:::
-
-#### Returns
-
-`number`
-
 
 ### timeLength <Score text="timeLength" /> 
 
@@ -287,11 +189,6 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 强制停止特效，所有粒子全部销毁
 
 
-使用示例: 简单调用
-```ts
-Particle.forceStop()
-```
-
 
 
 ### play <Score text="play" /> 
@@ -300,11 +197,6 @@ Particle.forceStop()
 
 播放特效
 
-
-使用示例: 简单调用
-```ts
-Particle.play()
-```
 
 #### Parameters
 
@@ -320,12 +212,6 @@ Particle.play()
 
 设置特效颜色参数值
 
-
-使用示例: 简单调用
-```ts
-// 设置Key值为"Color"的参数为纯红色 *Type.LinearColor各参数分别代表红、绿、蓝和透明度
-Particle.setColor("Color", new Type.LinearColor(1,0,0,1))
-```
 
 #### Parameters
 
@@ -343,12 +229,6 @@ ___
 
 设置特效颜色参数随机
 
-
-使用示例: 简单调用
-```ts
-// 设置Key值为"Color"的参数从纯白色至纯黑色随机取值 *Type.LinearColor各参数分别代表红、绿、蓝和透明度
-Particle.setColorRandom("Color", new Type.LinearColor(1,1,1,1),new Type.LinearColor(0,0,0,0))
-```
 
 #### Parameters
 
@@ -390,12 +270,6 @@ ___
 设置特效标量参数值
 
 
-使用示例: 简单调用
-```ts
-// 设置Key值为"LifeTime"的参数的值为10
-Particle.setFloat("LifeTime", 10)
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -412,12 +286,6 @@ ___
 
 设置特效标量参数随机
 
-
-使用示例: 简单调用
-```ts
-// 设置Key值为"LifeTime"的参数的值在10~100之间随机取值
-Particle.setFloatRandom("LifeTime", 100, 10)
-```
 
 #### Parameters
 
@@ -436,12 +304,6 @@ Particle.setFloatRandom("LifeTime", 100, 10)
 设置特效向量参数值
 
 
-使用示例: 简单调用
-```ts
-// 设置Key值为"Speed"的参数的Z轴方向的值为50
-Particle.setVector("Speed", new Type.Vector(0,0,50))
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -459,12 +321,6 @@ ___
 设置特效向量参数范围随机，在一定范围内取向量的随机值
 
 
-使用示例: 简单调用
-```ts
-// 设置Key值为"Speed"的参数的X方向在-50到50之间随机取值
-Particle.setVectorRandom("Speed", new Type.Vector(50,0,0)，new Type.Vector(-50,0,0))
-```
-
 #### Parameters
 
 | Name | Type | Description |
@@ -472,24 +328,4 @@ Particle.setVectorRandom("Speed", new Type.Vector(50,0,0)，new Type.Vector(-50,
 | `parameterName` | `string` | 参数名 |
 | `valueMax` | [`Vector`](Type.Vector.md) | 向量最大值 |
 | `valueMin` | [`Vector`](Type.Vector.md) | 向量最小值 |
-
-
-
-### stop <Score text="stop" /> 
-
-• **stop**(): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 024 reason: 接口功能替换 replacement: forceStop
-
-:::
-
-停止特效，不影响已经生成的粒子
-
-
-使用示例: 简单调用
-```ts
-Particle.stop()
-```
 

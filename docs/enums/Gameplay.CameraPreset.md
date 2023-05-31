@@ -1,6 +1,6 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / CameraMode
+[Gameplay](../groups/Gameplay.Gameplay.md) / CameraPreset
 
-# CameraMode <Badge type="tip" text="Enumeration" /> <Score text="CameraMode" />
+# CameraPreset <Badge type="tip" text="Enumeration" /> <Score text="CameraPreset" />
 
 摄像机模式
 
@@ -8,12 +8,12 @@
 
 | Enumeration Members |
 | :-----|
-| **[Default](Gameplay.CameraMode.md#default)** = ``3`` <br> |
-| **[FPSShootingAngle](Gameplay.CameraMode.md#fpsshootingangle)** = ``5`` <br> |
-| **[FirstPerson](Gameplay.CameraMode.md#firstperson)** = ``0`` <br> |
-| **[TPSOverShoulderAngle](Gameplay.CameraMode.md#tpsovershoulderangle)** = ``4`` <br> |
-| **[ThirdPerson](Gameplay.CameraMode.md#thirdperson)** = ``1`` <br> |
-| **[TopDownAngle](Gameplay.CameraMode.md#topdownangle)** = ``2`` <br> |
+| **[Default](Gameplay.CameraPreset.md#default)** = ``3`` <br> |
+| **[FPSShootingAngle](Gameplay.CameraPreset.md#fpsshootingangle)** = ``5`` <br> |
+| **[FirstPerson](Gameplay.CameraPreset.md#firstperson)** = ``0`` <br> |
+| **[TPSOverShoulderAngle](Gameplay.CameraPreset.md#tpsovershoulderangle)** = ``4`` <br> |
+| **[ThirdPerson](Gameplay.CameraPreset.md#thirdperson)** = ``1`` <br> |
+| **[TopDownAngle](Gameplay.CameraPreset.md#topdownangle)** = ``2`` <br> |
 
 ## Enumeration Members
 

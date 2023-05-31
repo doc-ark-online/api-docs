@@ -344,6 +344,24 @@ ___
 将传入的数值a限制在min与max范围内，超出部分自动舍弃
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let clamp = MathUtil.clamp(20, 0, 10);
+        console.log(`clamp: ${clamp}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -367,6 +385,25 @@ ___
 计算cos值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的cos值
+    private async test(): Promise<void> {
+        let cos = MathUtil.cos(Math.PI);
+        console.log(`cos: ${cos}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -388,6 +425,25 @@ ___
 根据输入的度数返回弧度值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let degree = 180;
+        let radians = MathUtil.degreesToRadians(degree);
+        console.log(`degreesToRadians: ${radians}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -408,6 +464,24 @@ ___
 
 返回 数值x 除以 数值y 的余数
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let fmod = MathUtil.fmod(20, 3);
+        console.log(`fmod: ${fmod}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -437,6 +511,24 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 :::
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的中间值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let lerp = MathUtil.lerp(1, 10, 0.5);
+        console.log(`lerp: ${lerp}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -460,6 +552,25 @@ ___
 根据输入的弧度值返回度数
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let radian = Math.PI;
+        let degrees = MathUtil.radiansToDegrees(radian);
+        console.log(`radiansToDegrees: ${degrees}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -480,6 +591,24 @@ ___
 
 获取随机范围内浮点数[包含min, 不包含max)
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let randomFloat = MathUtil.randomFloat(1, 10);
+        console.log(`randomFloat: ${randomFloat}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -503,6 +632,24 @@ ___
 获取随机范围内整数[包含min, 不包含max)
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let randomInt = MathUtil.randomInt(1, 10);
+        console.log(`randomInt: ${randomInt}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -525,6 +672,25 @@ ___
 计算sin值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的sin值
+    private async test(): Promise<void> {
+        let sin = MathUtil.sin(Math.PI / 2);
+        console.log(`sin: ${sin}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -545,6 +711,25 @@ ___
 
 计算tan值
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的tan值
+    private async test(): Promise<void> {
+        let tan = MathUtil.tan(Math.PI / 4);
+        console.log(`tan: ${tan}`);
+    }
+
+}
+```
 
 #### Parameters
 

@@ -12,6 +12,7 @@
 | **[Box](UI.SlateBrushDrawType.md#box)** = ``1`` <br> |
 | **[Image](UI.SlateBrushDrawType.md#image)** = ``3`` <br> |
 | **[NoDrawType](UI.SlateBrushDrawType.md#nodrawtype)** = ``0`` <br> |
+| **[PixcelBox](UI.SlateBrushDrawType.md#pixcelbox)** = ``4`` <br> |
 
 ## Enumeration Members
 
@@ -44,3 +45,11 @@ ___
 • **NoDrawType** = ``0``
 
 不绘制
+
+___
+
+### PixcelBox <Score text="PixcelBox" /> 
+
+• **PixcelBox** = ``4``
+
+像素大小边距的Box

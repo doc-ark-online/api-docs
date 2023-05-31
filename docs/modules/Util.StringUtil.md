@@ -42,6 +42,23 @@
 文本复制，将字符串复制到剪切板
 
 
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        StringUtil.clipboardCopy("hello world!");
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -58,6 +75,24 @@ ___
 文本粘贴，获取剪切板的文本
 
 
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let text = StringUtil.clipboardPaste();
+        console.log("clipboardPaste", text);
+    }
+
+}
+```
+
 #### Returns
 
 `string`
@@ -73,10 +108,22 @@ ___
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
 
-使用示例:格式化字符串用法
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world!
 ```ts
-// targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let targetString = StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+        console.log(targetString);
+    }
+
+}
 ```
 
 #### Parameters
@@ -101,6 +148,24 @@ ___
 判断字符串是否为空(null或"")
 
 
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let isEmpty1 = StringUtil.isEmpty("hello world!");
+        console.log("isEmpty1: " + isEmpty1);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -121,6 +186,37 @@ ___
 
 屏蔽字检测
 
+
+::: warning Precautions
+
+接口中遇到异常情况会返回reject，使用该接口需要用catch处理这种异常情况
+
+:::
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        StringUtil.maskWordCheck("自杀之王").then(result => {
+            if (!result.result) {
+                console.log("屏蔽字检测不通过");
+                console.log("命中的文本：" + result.hits);
+            }
+        }).catch(error => {
+            console.log("屏蔽字检测出错");
+            console.log(error);
+        });
+    }
+
+}
+```
 
 #### Parameters
 

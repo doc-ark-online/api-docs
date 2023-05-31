@@ -18,8 +18,7 @@ UI的输入框
 | **[contentColor](UI.InputBox.md#contentcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置字体内容颜色|
 | **[errorText](UI.InputBox.md#errortext)**(): `string` <br> 获取设置错误提示|
 | **[fontColor](UI.InputBox.md#fontcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取当前的字体的颜色|
-| **[fontLetterSpace](UI.InputBox.md#fontletterspace)**(`inLetterSpace`: `number`): `void` <br> 设置字体间距|
-| **[fontLitterSpace](UI.InputBox.md#fontlitterspace)**(): `number` <br> 获取体间距|
+| **[fontLetterSpace](UI.InputBox.md#fontletterspace)**(): `number` <br> 获取体间距|
 | **[fontSize](UI.InputBox.md#fontsize)**(): `number` <br> 获取字体大小|
 | **[glyph](UI.InputBox.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 获取字体字形|
 | **[hintString](UI.InputBox.md#hintstring)**(): `string` <br> 获取提示文本内容|
@@ -62,7 +61,6 @@ UI的输入框
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -205,6 +203,17 @@ ___
 
 ### fontLetterSpace <Score text="fontLetterSpace" /> 
 
+• `get` **fontLetterSpace**(): `number` <Badge type="tip" text="client" />
+
+获取体间距
+
+
+#### Returns
+
+`number`
+
+字体间距
+
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="client" />
 
 设置字体间距
@@ -216,21 +225,6 @@ ___
 | :------ | :------ | :------ |
 | `inLetterSpace` | `number` | 字体间距 |
 
-
-___
-
-### fontLitterSpace <Score text="fontLitterSpace" /> 
-
-• `get` **fontLitterSpace**(): `number` <Badge type="tip" text="client" />
-
-获取体间距
-
-
-#### Returns
-
-`number`
-
-字体间距
 
 ___
 

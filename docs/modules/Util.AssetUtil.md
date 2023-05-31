@@ -8,9 +8,6 @@
 | :-----|
 | **[assetLoaded](Util.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[asyncDownloadAsset](Util.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
-| **[isAssetExist](Util.AssetUtil.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
-| **[isAssetLoaded](Util.AssetUtil.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| **[loadAsset](Util.AssetUtil.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
 
 ## Functions
 
@@ -20,6 +17,29 @@
 
 资源是否加载
 
+
+使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
+```ts
+@Core.Class
+export default class AssetExample extends Core.Script {
+
+    protected onStart(): void {
+        const cubeAssetId = "7711";
+        if (AssetUtil.assetLoaded(cubeAssetId)) {
+            console.log("AssetExample: Cube asset is already loaded.");
+            let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        } else {
+            console.log("AssetExample: Cube asset is not loaded, downloading...");
+            AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
+                let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+                obj.worldLocation = new Type.Vector(0, 0, 0);
+            });
+        }
+    }
+
+}
+```
 
 #### Parameters
 
@@ -42,11 +62,27 @@ ___
 资源下载并加载
 
 
-使用示例:调用方法
+使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
 ```ts
-AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
-    // result为true是资源加载成功;
-});
+@Core.Class
+export default class AssetExample extends Core.Script {
+
+    protected onStart(): void {
+        const cubeAssetId = "7711";
+        if (AssetUtil.assetLoaded(cubeAssetId)) {
+            console.log("AssetExample: Cube asset is already loaded.");
+            let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        } else {
+            console.log("AssetExample: Cube asset is not loaded, downloading...");
+            AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
+                let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+                obj.worldLocation = new Type.Vector(0, 0, 0);
+            });
+        }
+    }
+
+}
 ```
 
 #### Parameters
@@ -61,83 +97,3 @@ AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
 
 下载失败将返回false
 
-___
-
-### isAssetExist <Score text="isAssetExist" /> 
-
-• **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否存在
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
-
-___
-
-### isAssetLoaded <Score text="isAssetLoaded" /> 
-
-• **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-
-___
-
-### loadAsset <Score text="loadAsset" /> 
-
-• **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载成功将返回false

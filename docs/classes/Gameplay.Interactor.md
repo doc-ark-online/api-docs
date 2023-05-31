@@ -4,22 +4,52 @@
 
 交互物功能对象 V2
 
+使用示例:创建一个名为"InteractorSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,在本地资源库中搜索4175动画资源,拖入对象管理器中的优先加载目录。运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+ @Core.Class
+export default class InteractorSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 开始交互回调
+        interObj.onInteractiveStarted.add(() => {
+            console.log("onInteractiveStarted")
+            console.log("onInteractiveStarted ", interObj.getInteractCharacter())
+            console.log("onInteractiveStarted ", interObj.getInteractiveStatus())
+        })
+        interObj.interactiveSlot = Gameplay.InteractiveSlot.Buns;
+        interObj.interactiveStance = "4175";
+
+        // 结束交互回调
+        interObj.onInteractiveEnded.add(() => {
+            console.log("onInteractiveEnded")
+        })
+        if (SystemUtil.isClient()) {
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                interObj.startInteract(Gameplay.getCurrentPlayer().character, Gameplay.InteractiveSlot.Buns, "4175");
+            })
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                // 不传退出交互时会自动回到交互前的坐标和旋转
+                interObj.endInteract();
+            })
+        }
+    }
+}
+```ts
+
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
   ↳ **`Interactor`**
 
-  ↳↳ [`InteractiveObject`](Gameplay.InteractiveObject.md)
+  ↳↳ [`InteractiveObject`](Gameplay.Gameplay.InteractiveObject.md)
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onInteractiveEnded](Gameplay.Interactor.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数|
-| **[onInteractiveStarted](Gameplay.Interactor.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数|
-| **[onInteractorEnter](Gameplay.Interactor.md#oninteractorenter)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用交互时被重置，外部回调不会触发）激活交互时执行绑定函数|
-| **[onInteractorExit](Gameplay.Interactor.md#oninteractorexit)**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\> <br> （请不要使用此委托，绑定的回调会在调用退出交互时被重置，外部回调不会触发）退出交互时执行绑定函数|
+| **[onInteractiveEnded](Gameplay.Interactor.md#oninteractiveended)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数。通常与 endInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
+| **[onInteractiveStarted](Gameplay.Interactor.md#oninteractivestarted)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
 
 | Accessors |
 | :-----|
@@ -45,7 +75,6 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -54,14 +83,10 @@
 
 | Methods |
 | :-----|
-| **[endInteract](Gameplay.Interactor.md#endinteract)**(`endLoc?`: [`Vector`](Type.Vector.md), `endRot?`: [`Rotation`](Type.Rotation.md), `newStance?`: `string`): `boolean` <br> 结束交互|
-| **[enterInteractiveState](Gameplay.Interactor.md#enterinteractivestate)**(`characterObj`: `GameObject`): `Promise`<`boolean`\> <br> 激活交互，将角色切换到特定姿态和位置，并绑定到交互物上|
-| **[exitInteractiveState](Gameplay.Interactor.md#exitinteractivestate)**(`Location`: [`Vector`](Type.Vector.md), `stance?`: `string`): `Promise`<`boolean`\> <br> 退出交互，恢复角色的绑定关系，姿态和位置|
-| **[getInteractCharacter](Gameplay.Interactor.md#getinteractcharacter)**(): [`CharacterBase`](Gameplay.CharacterBase.md) <br> 获取正在交互的角色|
-| **[getInteractiveState](Gameplay.Interactor.md#getinteractivestate)**(): `boolean` <br> 获取该交互物的交互状态|
+| **[endInteract](Gameplay.Interactor.md#endinteract)**(`endLoc?`: [`Vector`](Type.Vector.md), `endRot?`: [`Rotation`](Type.Rotation.md), `newStance?`: `string`): `boolean` <br> 结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
+| **[getInteractCharacter](Gameplay.Interactor.md#getinteractcharacter)**(): [`Character`](Gameplay.Character.md) <br> 获取正在交互的角色|
 | **[getInteractiveStatus](Gameplay.Interactor.md#getinteractivestatus)**(): `boolean` <br> 获取该交互物的交互状态|
-| **[interactiveCharacter](Gameplay.Interactor.md#interactivecharacter)**(): [`Character`](Gameplay.Character.md) <br> 获取和交互物发生交互的角色|
-| **[startInteract](Gameplay.Interactor.md#startinteract)**(`newCharObj`: [`CharacterBase`](Gameplay.CharacterBase.md), `newSlot?`: [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md), `newStance?`: `string`): `boolean` <br> 开始交互|
+| **[startInteract](Gameplay.Interactor.md#startinteract)**(`newCharObj`: [`Character`](Gameplay.Character.md), `newSlot?`: [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md), `newStance?`: `string`): `boolean` <br> 开始交互|
 
 
 ::: details 点击查看继承
@@ -116,13 +141,11 @@
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -132,7 +155,7 @@
 
 • **onInteractiveEnded**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-交互结束时执行绑定函数
+交互结束时执行绑定函数。通常与 endInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
 
 ::: warning Precautions
 
@@ -146,69 +169,13 @@ ___
 
 • **onInteractiveStarted**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-交互开始时执行绑定函数
+交互开始时执行绑定函数。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
 
 ::: warning Precautions
 
 会自动广播，若是双端对象，则可以在任意客户端调用
 
 :::
-
-___
-
-### onInteractorEnter <Score text="onInteractorEnter" /> 
-
-• **onInteractorEnter**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: enterInteractiveState 返回的 promise
-
-:::
-
-（请不要使用此委托，绑定的回调会在调用交互时被重置，外部回调不会触发）激活交互时执行绑定函数
-
-::: warning Precautions
-
-不要使用此委托，直接使用激活函数返回的 Promise 可达到同样的效果
-
-:::
-
-使用示例: 如下示例展示此委托的参数意义和使用方法
-```ts
-interactor.onInteractorEnter.add((result: boolean) => {
-    // 参数 result: 激活交互成功时返回 true
-    // 激活交互完成时触发
-})
-```
-
-___
-
-### onInteractorExit <Score text="onInteractorExit" /> 
-
-• **onInteractorExit**: [`Delegate`](Type.Delegate.md)<(`result`: `boolean`) => `void`\>
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: API 注释命名优化 replacement: exitInteractiveState 返回的 promise
-
-:::
-
-（请不要使用此委托，绑定的回调会在调用退出交互时被重置，外部回调不会触发）退出交互时执行绑定函数
-
-::: warning Precautions
-
-不要使用此委托，直接使用退出交互函数返回的 Promise 可达到同样的效果
-
-:::
-
-使用示例: 如下示例展示此委托的参数意义和使用方法
-```ts
-interactor.onInteractorExit.add((result: boolean) => {
-    // 参数 result: 退出交互成功时为 true
-    // 激活交互完成时触发
-})
-```
 
 ## Accessors
 
@@ -225,6 +192,19 @@ interactor.onInteractorExit.add((result: boolean) => {
 • `set` **interactiveSlot**(`slot`): `void`
 
 交互物插槽
+
+使用示例:创建一个名为"InteractorInterSlotSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+@Core.Class
+export default class InteractorInterSlotSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 设置交互的默认交互插槽
+        interObj.interactiveSlot = Gameplay.InteractiveSlot.Buns;
+        // 省略开始交互代码
+    }
+}
+```
 
 #### Parameters
 
@@ -249,6 +229,19 @@ ___
 
 交互动画姿态资源 id
 
+使用示例:创建一个名为"InteractorInterStanceSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+@Core.Class
+export default class InteractorInterStanceSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 设置交互的默认交互姿态
+        interObj.interactiveStance = "4175";
+        // 省略开始交互代码
+    }
+}
+```ts
+
 #### Parameters
 
 | Name | Type |
@@ -263,7 +256,7 @@ ___
 
 • **endInteract**(`endLoc?`, `endRot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
 
-结束交互
+结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
 
 调用端自动广播
 
@@ -281,125 +274,34 @@ ___
 
 true 触发了结束交互逻辑
 
-___
-
-### enterInteractiveState <Score text="enterInteractiveState" /> 
-
-• **enterInteractiveState**(`characterObj`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: startInteract (请注意，如果需要换为此接口，结束接口也务必更换为 endInteract)
-
-:::
-
-激活交互，将角色切换到特定姿态和位置，并绑定到交互物上
-
-调用端自动广播
-
-::: warning Precautions
-
-双端都可以调用，客户端调用会自动广播到服务端
-
-:::
-
-使用示例: 如下示例展示此方法使用方法和返回的 Promise 的参数意义
-```ts
-interactor.enterInteractiveState(Gameplay.getCurrentPlayer().character).then((result) => {
-    // 参数 result:  激活交互成功时为 true
-    // do something
-})
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `characterObj` | `GameObject` |  激活交互的角色 default: |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-将返回是否激活成功的 Promise
-
-___
-
-### exitInteractiveState <Score text="exitInteractiveState" /> 
-
-• **exitInteractiveState**(`Location`, `stance?`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: endInteract (请注意，如果需要换为此接口，开始接口也务必更换)
-
-:::
-
-退出交互，恢复角色的绑定关系，姿态和位置
-
-调用端自动广播
-
-使用示例: 如下示例展示此方法使用方法和返回的 Promise 的参数意义
-```ts
-interactor.exitInteractiveState(newLocation, "").then((result) => {
-    // 参数 result: 退出交互成功时为 true
-    // do something
-})
-```
-
-::: warning Precautions
-
-双端都可以调用，客户端调用会自动广播到服务端
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Location` | [`Vector`](Type.Vector.md) |  退出交互的位置 |
-| `stance?` | `string` |  退出交互物的姿态 default: undefined |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-将返回是否退出激活成功的 Promise
-
 
 ### getInteractCharacter <Score text="getInteractCharacter" /> 
 
-• **getInteractCharacter**(): [`CharacterBase`](Gameplay.CharacterBase.md) 
+• **getInteractCharacter**(): [`Character`](Gameplay.Character.md) 
 
 获取正在交互的角色
 
 
+使用示例:创建一个名为"InteractorGetInteractCharacterSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+@Core.Class
+export default class InteractorGetInteractCharacterSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 开始交互回调
+        interObj.onInteractiveStarted.add(() => {
+            console.log(`onInteractiveStarted status: ${interObj.getInteractCharacter()}`)
+        })
+        // 省略开始交互代码
+    }
+}
+```
+
 #### Returns
 
-[`CharacterBase`](Gameplay.CharacterBase.md)
+[`Character`](Gameplay.Character.md)
 
 true：为交互中
-
-___
-
-### getInteractiveState <Score text="getInteractiveState" /> 
-
-• **getInteractiveState**(): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement: getInteractiveStatus
-
-:::
-
-获取该交互物的交互状态
-
-
-#### Returns
-
-`boolean`
-
-true: 为交互中
 
 ___
 
@@ -410,35 +312,26 @@ ___
 获取该交互物的交互状态
 
 
+使用示例:创建一个名为"InteractorGetInterStatusSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+@Core.Class
+export default class InteractorGetInterStatusSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 开始交互回调
+        interObj.onInteractiveStarted.add(() => {
+            console.log(`onInteractiveStarted status: $`{interObj.getInteractiveStatus()}``);
+        })
+        // 省略开始交互代码
+    }
+}
+```ts
+
 #### Returns
 
 `boolean`
 
 true：为交互中
-
-
-### interactiveCharacter <Score text="interactiveCharacter" /> 
-
-• **interactiveCharacter**(): [`Character`](Gameplay.Character.md) 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 交互物 v1 v2 兼容 replacement:
-
-:::
-
-获取和交互物发生交互的角色
-
-**`Precautious`**
-
-不能代替 interactiveState 使用，RPC 传递过程中无法保证此参数更新的准确及时
-
-
-#### Returns
-
-[`Character`](Gameplay.Character.md)
-
-和交互物发生交互的角色，可能为空
 
 
 ### startInteract <Score text="startInteract" /> 
@@ -455,11 +348,38 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 
 调用端自动广播
 
+使用示例:创建一个名为"InteractorStartEndSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```typescript
+@Core.Class
+export default class InteractorStartEndSample extends Core.Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Gameplay.Interactor;
+        // 开始交互回调
+        interObj.onInteractiveStarted.add(() => {
+            console.log("onInteractiveStarted")
+        })
+        // 结束交互回调
+        interObj.onInteractiveEnded.add(() => {
+            console.log("onInteractiveEnded")
+        })
+        if (SystemUtil.isClient()) {
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                interObj.startInteract(Gameplay.getCurrentPlayer().character, Gameplay.InteractiveSlot.Buns, "4175");
+            })
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                // 不传退出交互时会自动回到交互前的坐标和旋转
+                interObj.endInteract();
+            })
+        }
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `newCharObj` | [`CharacterBase`](Gameplay.CharacterBase.md) |  要交互的角色（可以是玩家，也可以是AI） |
+| `newCharObj` | [`Character`](Gameplay.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
 | `newSlot?` | [`InteractiveSlot`](../enums/Gameplay.InteractiveSlot.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
 | `newStance?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
 

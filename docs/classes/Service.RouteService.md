@@ -115,6 +115,25 @@ View刷新的委托
 注册游戏跳转的回调，当跨进程从其他游戏跳转到当前游戏时触发。可以被动获取来源游戏Id和携带的数据
 
 
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，当从其他游戏跳转到当前游戏时，会在角色名称处显示跳转游戏的gameId和携带的数据
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        RouteService.getInstance().addJumpGameCallback((id: string, data: string) => {
+            player.character.characterName = "JumpGame :" + data + "from " + id;
+        })
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -152,6 +171,23 @@ ___
 只在233内使用时生效
 
 :::
+
+使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后会自动跳转到角色编辑游戏。
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        await TimeUtil.delaySecond(10);
+        RouteService.getInstance().enterDressUpGame();
+    }
+}
+```
 
 #### Parameters
 
@@ -193,6 +229,31 @@ ___
 跳转到新游戏，同进程跳转
 
 
+使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后会自动跳转到枪战模拟器游戏。
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        await TimeUtil.delaySecond(10);
+        // 枪战模拟器 的 GameID 可以替换为其他游戏的 GameID
+        let gameID = "P_6adb9a35ebb73f5a037bebb830a0019f83438d5c";
+
+        let data = { name: "haha", attrArr: [] };
+        data.name = "测试跳转";
+        data.attrArr = [50, 100, 150, 200];
+        let dataStr = JSON.stringify(data);
+        // 调用enterNewGame接口，传入gameID来进行跳转
+        RouteService.getInstance().enterNewGame(gameID, dataStr);
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -200,14 +261,7 @@ ___
 | `targetGameId` | `string` |  要跳转的目标游戏ID，GameId |
 | `carryingData?` | `string` |  跳游戏携带的数据 default: undefined |
 
-```ts
-// 更多游戏跳游戏的实例请前往论坛看帖子 https://forum.ark.online/forum.php?mod=viewthread&tid=1145
-// 这个gameid可以在这里获取： 创作者中心→我的游戏→游戏名下方一个p_开头的就是gameid，点旁边的复制就可以复制过来
-// 这里的 P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40 是游戏《只因哥大战小黑子》的gameid
-// 跳游戏的话，默认会跳往 现行的、目前处在上线状态的、过了审的那个版本
-// 没有过审的话，将无法跳进去哦
-Service.RouteService.getInstance().enterNewGame("P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40");
-```
+
 ___
 
 ### enterNewGameByTeam <Score text="enterNewGameByTeam" /> 
@@ -245,6 +299,23 @@ ___
 只在233内使用时生效
 
 :::
+
+使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后进入广场游戏。
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        await TimeUtil.delaySecond(10);
+        RouteService.getInstance().enterSquareGame();
+    }
+}
+```
 
 #### Parameters
 
@@ -465,6 +536,23 @@ ___
 
 :::
 
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示GameId，PC环境为空
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        player.character.characterName = "gameId:" + RouteService.getGameId();
+    }
+}
+```
+
 #### Returns
 
 `string`
@@ -485,6 +573,23 @@ ___
 只在由233拉起生效
 
 :::
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示游戏版本，PC环境为空
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        player.character.characterName = "游戏版本:" + RouteService.getGameVersion();
+    }
+}
+```
 
 #### Returns
 
@@ -521,6 +626,23 @@ ___
 只在由233拉起生效
 
 :::
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示短游戏ID，PC环境为空
+```ts
+@Core.Class
+export default class RouteExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        player.character.characterName = "短游戏ID:" + RouteService.getMGSGameId();
+    }
+}
+```
 
 #### Returns
 

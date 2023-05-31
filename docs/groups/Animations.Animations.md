@@ -6,8 +6,9 @@ Animations
 | Classes |
 | :-----|
 | [Animation](../classes/Gameplay.Animation.md) <br> 动画类 |
-| [Stance](../classes/Gameplay.Stance.md) <br> 姿态 |
-| [SubStance](../classes/Gameplay.SubStance.md) <br> 二级姿态 |
+| [BasicStance](../classes/Gameplay.BasicStance.md) <br> 基础姿态 |
+| [IStanceBase](../classes/Gameplay.IStanceBase.md) <br> 姿态 |
+| [Stance](../classes/Gameplay.Stance.md) <br> 二级姿态 |
 
 
 | Enums |

@@ -31,8 +31,8 @@ UI
 | [UIHorizontalCollation](../enums/UI.UIHorizontalCollation.md) <br> 自动布局子项布局排序 - 水平排序|
 | [UIHugContentHorizontally](../enums/UI.UIHugContentHorizontally.md) <br> 自动布局容器水平适应规则|
 | [UIHugContentVertically](../enums/UI.UIHugContentVertically.md) <br> 自动布局容器垂直适应规则|
-| [UILayoutPacket](../enums/UI.UILayoutPacket.md) <br> 自动布局节点排列规则|
-| [UILayoutType](../enums/UI.UILayoutType.md) <br> 自动布局排版规则|
+| [UILayoutPacket](../enums/UI.UILayoutPacket.md) <br> 自动布局排版规则-排列规则|
+| [UILayoutType](../enums/UI.UILayoutType.md) <br> 自动布局排版规则-容器类型|
 | [UIScrollBoxAnimationType](../enums/UI.UIScrollBoxAnimationType.md) <br> 滚动框动画类型|
 | [UITextHorizontalLayout](../enums/UI.UITextHorizontalLayout.md) <br> 文本框规则显示规则限制|
 | [UIVerticalCollation](../enums/UI.UIVerticalCollation.md) <br> 自动布局子项布局排序 - 垂直排序|
@@ -75,7 +75,7 @@ UI
 | [UILayout](../classes/UI.UILayout.md) <br> 容器自动布局规则|
 | [UIManager](../classes/UI.UIManager.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。|
 | [UIObject](../classes/UI.UIObject.md) <br> UI对象组件|
-| [UISlot](../classes/UI.UISlot.md) <br> UI插槽|
+| [UISlot](../classes/UI.UI.UISlot.md) |
 | [UITransform](../classes/UI.UITransform.md) <br> 节点Transform|
 | [UserWidget](../classes/UI.UserWidget.md) <br> UI控件的集合,预制体UI|
 | [UserWidgetPrefab](../classes/UI.UserWidgetPrefab.md) <br> ui预制体|
@@ -97,7 +97,6 @@ UI
 | :-----|
 | **[absoluteToLocal](UI.UI.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对坐标到相对坐标|
 | **[absoluteToViewport](UI.UI.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
-| **[assetIDChangeIConUrlRequest](UI.UI.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](UI.UI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
 | **[createUI](UI.UI.md#createui)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建UIPrefab|
@@ -238,33 +237,6 @@ ___
 | `outPixelPosition` | [`Vector2`](../classes/Type.Vector2.md) | 可用于线的轨迹和其他用途，你需要在视口分辨率单位的空间坐标 |
 | `outViewportPosition` | [`Vector2`](../classes/Type.Vector2.md) | 如果你想添加另一个小部件到视口空间相同的位置 |
 
-
-___
-
-### assetIDChangeIConUrlRequest <Score text="assetIDChangeIConUrlRequest" /> 
-
-• **assetIDChangeIConUrlRequest**(`assets`): `Promise`<`void`\> <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:接口调整 replacement: 使用 assetIDChangeIconUrlRequest
-
-:::
-
-异步请求资源的ICON信息
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assets` | `string`[] | 指定资源的id数组 |
-
-#### Returns
-
-`Promise`<`void`\>
-
-异步回调
 
 ___
 

@@ -4,6 +4,30 @@
 
 冲量对象
 
+使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中冲量对象的子级,将冲量对象相对缩放改为（5.00,5.00,0.50）,放置在合适的位置,可以在与冲量对象重叠区域放置一个Cube,Cube大小缩放与冲量对象相同.打开脚本,输入以下代码保存,运行游戏,你将在场景中看到人物在Cube上蹦床的效果,代码如下:
+（示例代码中impulseId = "1602E908"中的1602E908替换方式为右键冲量对象，复制对象ID。更换为你的冲量对象ID即可）
+```typescript
+@Core.Class
+export default class ImpulseSample extends Core.Script {
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        // 先设置为 false，玩家进入范围后再设置为 true，会有玩家突然凭空被弹开的效果
+        impulse.enable = true;
+        // 绝对冲量应用时会先清空物体自身速度，相对冲量会将冲量和物体当前速度叠加
+        impulse.impulseType = Gameplay.ImpulseType.Absolute;
+        // 只有为矢量力的情况下，impulseVector 属性才有意义
+        impulse.impulseForceType = Gameplay.ImpulseForceType.VectorForce;
+        // 设置为自定义的带方向的冲量值
+        impulse.impulseVector = new Type.Vector(0, 0, 2000);
+        impulse.onImpulseEnter.add(()=>{
+             console.log("Impulse onImpulseEnter")
+        })
+    }
+}
+```ts
+
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
@@ -43,7 +67,6 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -106,13 +129,11 @@
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -124,11 +145,19 @@
 
 发生冲量碰撞后的回调函数
 
-使用示例:(回调使用)
-```ts
-onImpulseEnter.add(()=>{
-doSomething...
-})
+使用示例:创建一个名为"ImpulseOnEnterSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
+```typescript
+@Core.Class
+export default class ImpulseOnEnterSample extends Core.Script {
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        impulse.onImpulseEnter.add(()=>{
+             console.log("Impulse onImpulseEnter")
+        })
+    }
+}
 ```
 
 ## Accessors
@@ -151,6 +180,20 @@ doSomething...
 设置是否启用冲量，禁用状态下，不会应用冲量到物体上
 
 调用端自动广播
+
+使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
+```typescript
+@Core.Class
+export default class ImpulseSample extends Core.Script {
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        // 先设置为 false，玩家进入范围后再设置为 true，会有玩家突然凭空被弹开的效果
+        impulse.enable = true;
+    }
+}
+```ts
 
 #### Parameters
 
@@ -175,7 +218,7 @@ doSomething...
 
 • `set` **impulseForceType**(`impulseCollisionType`): `void` <Badge type="tip" text="other" />
 
-设置冲量力类型
+设置冲量力类型。使用示例详见属性 impulseRadialForce 和 impulseVector 中示例代码。
 
 调用端自动广播
 
@@ -206,6 +249,22 @@ ___
 设置径向力的冲量值
 
 调用端自动广播
+
+使用示例:创建一个名为"ImpulseRadialForceSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被飞的距离相比默认情况时有变化，代码如下:
+```typescript
+@Core.Class
+export default class ImpulseRadialForceSample extends Core.Script {
+    // 场景中冲量对象的 id
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        // 只有为径向力的情况下，impulseRadialForce 属性才有意义
+        impulse.impulseForceType = Gameplay.ImpulseForceType.RadialForce;
+        impulse.impulseRadialForce = 500;
+    }
+}
+```
 
 #### Parameters
 
@@ -241,6 +300,21 @@ ___
 
 调用端自动广播
 
+使用示例:创建一个名为"ImpulseTypeSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
+```ts
+@Core.Class
+export default class ImpulseTypeSample extends Core.Script {
+    // 场景中冲量对象的 id
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        // 绝对冲量应用时会先清空物体自身速度，相对冲量会将冲量和物体当前速度叠加
+        impulse.impulseType = Gameplay.ImpulseType.Absolute;
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -268,6 +342,23 @@ ___
 设置矢量力的冲量向量
 
 调用端自动广播
+
+使用示例:创建一个名为"ImpulseVectorSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
+```typescript
+@Core.Class
+export default class ImpulseVectorSample extends Core.Script {
+    // 场景中冲量对象的 id
+    impulseId = "1602E908";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        const impulse = (await Core.GameObject.asyncFind(this.impulseId)) as Gameplay.Impulse;
+        // 只有为矢量力的情况下，impulseVector 属性才有意义
+        impulse.impulseForceType = Gameplay.ImpulseForceType.VectorForce;
+        // 设置为自定义的带方向的冲量值
+        impulse.impulseVector = new Type.Vector(0, 0, 2000);
+    }
+}
+```ts
 
 #### Parameters
 

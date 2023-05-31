@@ -23,11 +23,23 @@ ___
 获取默认的语言和地区
 
 
-使用示例:调用方法
+使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
 ```ts
-const locale = LocaleUtil.getDefaultLocale();
-console.log(`locale: ${locale}`);
+@Core.Class
+export default class LocaleExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const locale = LocaleUtil.getDefaultLocale();
+        console.log(`locale: ${locale}`);
 // zh-CN
+    }
+
+}
 ```
 
 #### Returns

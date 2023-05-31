@@ -31,6 +31,7 @@ Account Service
 | :-----|
 | **[BoolResponse](Service.Service.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
 | **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[LocalUGCGameInfo](Service.Service.md#localugcgameinfo)**: `Object` <br> 本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。|
 | **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Service.Service.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
@@ -38,8 +39,10 @@ Account Service
 | **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 | **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
+| **[PublishedUGCGameInfo](Service.Service.md#publishedugcgameinfo)**: `Object` <br> 发布成功的UGC消费态游戏信息|
 | **[StringResponse](Service.Service.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
 | **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
+| **[UGCTemplateInfo](Service.Service.md#ugctemplateinfo)**: `Object` <br> UGC模板信息|
 | **[UploadDataResponse](Service.Service.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
 | **[VoidResponse](Service.Service.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
 | **[downloadCharacterDataStringCallback](Service.Service.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
@@ -82,6 +85,22 @@ ___
 ##### Returns
 
 `void`
+
+___
+
+### LocalUGCGameInfo <Score text="LocalUGCGameInfo" /> 
+
+Ƭ **LocalUGCGameInfo**: `Object`
+
+本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameId` | `string` | UGC消费态游戏的MW侧gameId，"U_xxx" 格式 |
+| `parentId` | `string` | 父模板游戏的内容库gameId |
+| `path` | `string` | 本地工程路径，不需要做拼接，直接传给其他接口即可 |
 
 ___
 
@@ -242,6 +261,21 @@ ___
 
 ___
 
+### PublishedUGCGameInfo <Score text="PublishedUGCGameInfo" /> 
+
+Ƭ **PublishedUGCGameInfo**: `Object`
+
+发布成功的UGC消费态游戏信息
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `end` | `boolean` | 接口data为空/网络请求失败时，end会返回true |
+| `games` | [`{ `banner`: `string` ; `id`: `string` ; `likeIt`: `boolean` ; `loveQuantity`: `number` ; `packageName`: `string` ; `ugcGameName`: `string`  }`] | 接口data为空/网络请求失败时，games会返回空列表 |
+
+___
+
 ### StringResponse <Score text="StringResponse" /> 
 
 Ƭ **StringResponse**: (`dataString`: `string`) => `void`
@@ -276,6 +310,29 @@ ___
 | :------ | :------ | :------ |
 | `failedReason` | `string` | 失败原因 |
 | `playerIds` | `number`[] | 组队玩家的playerId数组 |
+
+___
+
+### UGCTemplateInfo <Score text="UGCTemplateInfo" /> 
+
+Ƭ **UGCTemplateInfo**: `Object`
+
+UGC模板信息
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fileUrl` | `{ `assetDataListUrl`: `string` ; `zipUrl`: `string`  }` | 下载链接 |
+| `fileUrl.assetDataListUrl` | `string` | 模板assetDataList文件下载链接 |
+| `fileUrl.zipUrl` | `string` | 模板工程下载链接 |
+| `gameIdentity` | `string` | MW侧gameId |
+| `gid` | `string` | 内容库gameId |
+| `icon` | `string` | 模板Icon下载链接 |
+| `id` | `number` | 分页用的id |
+| `name` | `string` | 模板名称 |
+| `packageName` | `string` | 模板包名 |
+| `version` | `string` | 模板版本号 |
 
 ___
 

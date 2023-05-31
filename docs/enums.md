@@ -7,7 +7,6 @@ Enums
 ## A
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [AbilityStateControlType](enums/Gameplay.AbilityStateControlType.md) | 技能状态控制枚举 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [AdsState](enums/Service.AdsState.md) | 广告状态，调用show方法的时候可能返回的广告状态 | [Monetization](groups/Monetization.Monetization.md) |
 | [AdsType](enums/Service.AdsType.md) | 广告类型 | [Monetization](groups/Monetization.Monetization.md) |
 | [AnimSlot](enums/Gameplay.AnimSlot.md) | 动画插槽 | [Animations](groups/Animations.Animations.md) |
@@ -35,9 +34,11 @@ Enums
 | :-----| :-----| :-----|
 | [CameraControlType](enums/UI.CameraControlType.md) | 相机控制模式 | [Gui](groups/Gui.Gui.md) |
 | [CameraLocationMode](enums/Gameplay.CameraLocationMode.md) | 摄像机位置模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [CameraMode](enums/Gameplay.CameraMode.md) | 摄像机模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [CameraPreset](enums/Gameplay.CameraPreset.md) | 摄像机模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [CameraProjectionMode](enums/Gameplay.CameraProjectionMode.md) | 摄像机镜头模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [CameraRotationMode](enums/Gameplay.CameraRotationMode.md) | 摄像机旋转模式 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [CharacterTemplate](enums/Gameplay.CharacterTemplate.md) | 角色体型 | [Avatar](groups/Avatar.Avatar.md) |
+| [CharacterType](enums/Gameplay.CharacterType.md) | 形象类型 | [Avatar](groups/Avatar.Avatar.md) |
 | [CollisionStatus](enums/Type.CollisionStatus.md) | 碰撞属性状态 | [Datatype](groups/Datatype.Datatype.md) |
 | [CollisionType](enums/Gameplay.CollisionType.md) | 碰撞类型 | [Physics](groups/Physics.Physics.md) |
 | [CustomShapeType](enums/Gameplay.CustomShapeType.md) | 碰撞体形状类型 | [Avatar](groups/Avatar.Avatar.md) |
@@ -54,8 +55,6 @@ Enums
 ## E
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [EInitialOscillatorOffset](enums/Gameplay.EInitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [Avatar](groups/Avatar.Avatar.md) |
-| [EOscillatorWaveform](enums/Gameplay.EOscillatorWaveform.md) | 振荡器波形 | [Avatar](groups/Avatar.Avatar.md) |
 | [ExpressionType](enums/Gameplay.ExpressionType.md) | 表情类型 | [Avatar](groups/Avatar.Avatar.md) |
 
 
@@ -91,6 +90,7 @@ Enums
 | :-----| :-----| :-----|
 | [ImpulseForceType](enums/Gameplay.ImpulseForceType.md) | 冲量力类型 | [Physics](groups/Physics.Physics.md) |
 | [ImpulseType](enums/Gameplay.ImpulseType.md) | 冲量的应用方式 | [Physics](groups/Physics.Physics.md) |
+| [InitialOscillatorOffset](enums/Gameplay.InitialOscillatorOffset.md) | 定义如何开始(从零开始，或者从随机值开始) | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [InputTextLimit](enums/UI.InputTextLimit.md) | 输入框限制 | [Gui](groups/Gui.Gui.md) |
 | [InteractiveSlot](enums/Gameplay.InteractiveSlot.md) | 交互物支持的插槽 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
@@ -116,7 +116,7 @@ Enums
 | [MoveControlMode](enums/Gameplay.MoveControlMode.md) | 移动控制模式 | [Avatar](groups/Avatar.Avatar.md) |
 | [MoveFacingDirection](enums/Gameplay.MoveFacingDirection.md) | 运动时面朝方向 | [Avatar](groups/Avatar.Avatar.md) |
 | [MovementDirection](enums/Gameplay.MovementDirection.md) | 运动时依据的正方向 | [Avatar](groups/Avatar.Avatar.md) |
-| [MovementMode](enums/Gameplay.MovementMode.md) | 角色状态 | [Avatar](groups/Avatar.Avatar.md) |
+| [MovementType](enums/Gameplay.MovementType.md) | 角色状态 | [Avatar](groups/Avatar.Avatar.md) |
 
 
 ## N
@@ -130,6 +130,7 @@ Enums
 | :-----| :-----| :-----|
 | [ObjectTypeQuery](enums/Gameplay.ObjectTypeQuery.md) | 碰撞检测通道 | [Physics](groups/Physics.Physics.md) |
 | [Orientation](enums/UI.Orientation.md) | 滚动框类型 | [Gui](groups/Gui.Gui.md) |
+| [OscillatorWaveform](enums/Gameplay.OscillatorWaveform.md) | 振荡器波形 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
 
 ## P
@@ -161,10 +162,10 @@ Enums
 | [SlateVisibility](enums/UI.SlateVisibility.md) | UI节点显示规则 | [Gui](groups/Gui.Gui.md) |
 | [SlideMethod](enums/UI.SlideMethod.md) | 进度条滑动的方式 | [Gui](groups/Gui.Gui.md) |
 | [SlotType](enums/Gameplay.SlotType.md) | 人形角色插槽类型 | [Avatar](groups/Avatar.Avatar.md) |
-| [SomatotypeFourFootStandard](enums/Gameplay.SomatotypeFourFootStandard.md) | 四足体型 | [Avatar](groups/Avatar.Avatar.md) |
 | [SomatotypeV1](enums/Gameplay.SomatotypeV1.md) | V1角色体型 | [Avatar](groups/Avatar.Avatar.md) |
 | [SomatotypeV2](enums/Gameplay.SomatotypeV2.md) | 角色体型 | [Avatar](groups/Avatar.Avatar.md) |
 | [StanceBlendMode](enums/Gameplay.StanceBlendMode.md) | 姿态混合模式 | [Animations](groups/Animations.Animations.md) |
+| [SwitchCameraBlendFunction](enums/Gameplay.SwitchCameraBlendFunction.md) | 切换摄像机时运用的混合函数 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
 
 ## T
@@ -185,8 +186,8 @@ Enums
 | [UIHorizontalCollation](enums/UI.UIHorizontalCollation.md) | 自动布局子项布局排序 - 水平排序 | [Gui](groups/Gui.Gui.md) |
 | [UIHugContentHorizontally](enums/UI.UIHugContentHorizontally.md) | 自动布局容器水平适应规则 | [Gui](groups/Gui.Gui.md) |
 | [UIHugContentVertically](enums/UI.UIHugContentVertically.md) | 自动布局容器垂直适应规则 | [Gui](groups/Gui.Gui.md) |
-| [UILayoutPacket](enums/UI.UILayoutPacket.md) | 自动布局节点排列规则 | [Gui](groups/Gui.Gui.md) |
-| [UILayoutType](enums/UI.UILayoutType.md) | 自动布局排版规则 | [Gui](groups/Gui.Gui.md) |
+| [UILayoutPacket](enums/UI.UILayoutPacket.md) | 自动布局排版规则-排列规则 | [Gui](groups/Gui.Gui.md) |
+| [UILayoutType](enums/UI.UILayoutType.md) | 自动布局排版规则-容器类型 | [Gui](groups/Gui.Gui.md) |
 | [UIScrollBoxAnimationType](enums/UI.UIScrollBoxAnimationType.md) | 滚动框动画类型 | [Gui](groups/Gui.Gui.md) |
 | [UITextHorizontalLayout](enums/UI.UITextHorizontalLayout.md) | 文本框规则显示规则限制 | [Gui](groups/Gui.Gui.md) |
 | [UIVerticalCollation](enums/UI.UIVerticalCollation.md) | 自动布局子项布局排序 - 垂直排序 | [Gui](groups/Gui.Gui.md) |

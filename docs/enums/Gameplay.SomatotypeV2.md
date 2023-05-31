@@ -10,6 +10,8 @@
 | :-----|
 | **[AnimeFemale](Gameplay.SomatotypeV2.md#animefemale)** = ``2`` <br> |
 | **[AnimeMale](Gameplay.SomatotypeV2.md#animemale)** = ``1`` <br> |
+| **[CartoonyFemale](Gameplay.SomatotypeV2.md#cartoonyfemale)** = ``8`` <br> |
+| **[CartoonyMale](Gameplay.SomatotypeV2.md#cartoonymale)** = ``7`` <br> |
 | **[LowpolyAdultFemale](Gameplay.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` <br> |
 | **[LowpolyAdultMale](Gameplay.SomatotypeV2.md#lowpolyadultmale)** = ``3`` <br> |
 | **[None](Gameplay.SomatotypeV2.md#none)** = ``0`` <br> |
@@ -31,6 +33,22 @@ ___
 • **AnimeMale** = ``1``
 
 二次元成年男性
+
+___
+
+### CartoonyFemale <Score text="CartoonyFemale" /> 
+
+• **CartoonyFemale** = ``8``
+
+美卡女性
+
+___
+
+### CartoonyMale <Score text="CartoonyMale" /> 
+
+• **CartoonyMale** = ``7``
+
+美卡男性
 
 ___
 

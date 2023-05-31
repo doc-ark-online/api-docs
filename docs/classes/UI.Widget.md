@@ -51,7 +51,6 @@
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -453,27 +452,6 @@ FVector2D
 | :------ | :------ | :------ |
 | `inSize` | [`Vector2`](Type.Vector2.md) | 输入大小 |
 
-
-___
-
-### slot <Score text="slot" /> 
-
-• `get` **slot**(): [`UISlot`](UI.UISlot.md) <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:底层方案修改 replacement:直接使用控件获取设置相关信息
-
-:::
-
-获取插槽
-
-
-#### Returns
-
-[`UISlot`](UI.UISlot.md)
-
-返回插槽
 
 ___
 

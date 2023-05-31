@@ -2,7 +2,7 @@
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
-自动布局排版规则
+自动布局排版规则-容器类型
 
 ## Table of contents
 

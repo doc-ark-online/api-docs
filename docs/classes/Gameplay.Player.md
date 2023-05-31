@@ -14,45 +14,51 @@
 
 | Properties |
 | :-----|
-| **[character](Gameplay.Player.md#character)**: [`Character`](Gameplay.Character.md) <br> 玩家控制的角色|
+| **[onPawnChanged](Gameplay.Player.md#onpawnchanged)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`pawn`: [`Pawn`](Gameplay.Pawn.md)) => `void`\> <br> 控制对象变化委托|
+| **[onPlayerDisconnected](Gameplay.Player.md#onplayerdisconnected)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> <br> 玩家断线委托|
+| **[onPlayerJoined](Gameplay.Player.md#onplayerjoined)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> <br> 玩家加入委托|
+| **[onPlayerLeft](Gameplay.Player.md#onplayerleft)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> <br> 玩家离开委托|
+| **[onPlayerReconnected](Gameplay.Player.md#onplayerreconnected)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> <br> 玩家重连委托|
 
 | Accessors |
 | :-----|
-| **[customTimeDilation](Gameplay.Player.md#customtimedilation)**(): `number` <br> 获取当前角色对象膨胀时间速度|
+| **[character](Gameplay.Player.md#character)**(): [`Character`](Gameplay.Character.md) <br> 控制角色|
 | **[forwardVector](Gameplay.Player.md#forwardvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[guid](Gameplay.Player.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
+| **[instanceId](Gameplay.Player.md#instanceid)**(): `number` <br> 用户实例ID|
 | **[lockStatus](Gameplay.Player.md#lockstatus)**(): `boolean` <br> 获取对象是否锁定|
 | **[name](Gameplay.Player.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](Gameplay.Player.md#netstatus)**(): [`NetStatus`](../enums/Type.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](Gameplay.Player.md#parent)**(): `GameObject` <br> 获取当前父物体|
+| **[ping](Gameplay.Player.md#ping)**(): `number` <br> 网络延迟|
 | **[relativeLocation](Gameplay.Player.md#relativelocation)**(): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[relativeRotation](Gameplay.Player.md#relativerotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[relativeScale](Gameplay.Player.md#relativescale)**(): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
 | **[rightVector](Gameplay.Player.md#rightvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向右向量|
 | **[staticStatus](Gameplay.Player.md#staticstatus)**(): `boolean` <br> 获取对象是否静态|
 | **[tag](Gameplay.Player.md#tag)**(): `string` <br> 获取当前物体的Tag|
+| **[teamId](Gameplay.Player.md#teamid)**(): `string` <br> 队伍ID|
 | **[transform](Gameplay.Player.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.Player.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.Player.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.Player.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
+| **[userId](Gameplay.Player.md#userid)**(): `string` <br> 平台用户ID|
 | **[worldLocation](Gameplay.Player.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.Player.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.Player.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
+| **[localPlayer](Gameplay.Player.md#localplayer)**(): [`Player`](Gameplay.Player.md) <br> 本地玩家|
 
 | Methods |
 | :-----|
 | **[addDestroyCallback](Gameplay.Player.md#adddestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 添加物体Destroy事件回调|
-| **[addNetworkDisconnectListener](Gameplay.Player.md#addnetworkdisconnectlistener)**(`callback`: () => `void`): `void` <br> 添加网络断开连接时执行的回调函数|
-| **[addNetworkReconnectListener](Gameplay.Player.md#addnetworkreconnectlistener)**(`callback`: () => `void`): `void` <br> 添加网络断开连接后恢复网络时执行的回调函数|
 | **[asyncGetScriptByName](Gameplay.Player.md#asyncgetscriptbyname)**(`name`: `string`): `Promise`<`Script`\> <br> 异步获得当前物体下的指定脚本 客户端不维系父子关系|
 | **[attachComponent](Gameplay.Player.md#attachcomponent)**(`component`: `Component`, `isStatic?`: `boolean`): `boolean` <br> 附加组件|
 | **[attachToGameObject](Gameplay.Player.md#attachtogameobject)**(`obj`: `GameObject`): `void` <br> 将物体附着到指定物体上|
 | **[clone](Gameplay.Player.md#clone)**(`spawnInfo?`: `boolean` \): `GameObject` <br> 复制对象|
+| **[control](Gameplay.Player.md#control)**(`pawn`: [`Pawn`](Gameplay.Pawn.md)): `boolean` <br> 控制一个Pawn对象|
 | **[deleteDestroyCallback](Gameplay.Player.md#deletedestroycallback)**(`callback`: (...`arg`: `unknown`[]) => `void`): `void` <br> 移除物体Destroy事件回调|
 | **[destroy](Gameplay.Player.md#destroy)**(): `void` <br> 删除对象|
 | **[detachComponent](Gameplay.Player.md#detachcomponent)**(`component`: `string` \): `void` <br> 移除组件|
 | **[detachFromGameObject](Gameplay.Player.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getAccount](Gameplay.Player.md#getaccount)**(): `string` <br> 获取玩家账户|
 | **[getBoundingBoxSize](Gameplay.Player.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](Gameplay.Player.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](Type.Vector.md), `BoxExtentOuter`: [`Vector`](Type.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](Gameplay.Player.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| `GameObject` <br> 根据GUID查找子物体|
@@ -61,7 +67,6 @@
 | **[getChildrenBoxCenter](Gameplay.Player.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getCollision](Gameplay.Player.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.Player.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
-| **[getPlayerID](Gameplay.Player.md#getplayerid)**(): `number` <br> 获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。|
 | **[getRelativeLocation](Gameplay.Player.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.Player.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
 | **[getRelativeScale](Gameplay.Player.md#getrelativescale)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对缩放|
@@ -70,11 +75,8 @@
 | **[getScriptByName](Gameplay.Player.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
 | **[getScripts](Gameplay.Player.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getSourceAssetGuid](Gameplay.Player.md#getsourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
-| **[getTeamId](Gameplay.Player.md#getteamid)**(): `string` <br> 获取玩家的TeamId|
 | **[getTransform](Gameplay.Player.md#gettransform)**(`outer?`: [`Transform`](Type.Transform.md)): [`Transform`](Type.Transform.md) <br> 返回当前物体Transform|
 | **[getUpVector](Gameplay.Player.md#getupvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
-| **[getUserId](Gameplay.Player.md#getuserid)**(): `string` <br> 获取用户的平台Id，该Id可以作为玩家唯一Id使用。|
-| **[getUserSystemId](Gameplay.Player.md#getusersystemid)**(): `string` <br> 获取用户系统的玩家Id|
 | **[getVisibility](Gameplay.Player.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[getWorldLocation](Gameplay.Player.md#getworldlocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[getWorldRotation](Gameplay.Player.md#getworldrotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
@@ -84,12 +86,8 @@
 | **[onReplicated](Gameplay.Player.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](Gameplay.Player.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.Player.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[ping](Gameplay.Player.md#ping)**(): `number` <br> 当前Player的Ping值(-1时表示获取失败)|
 | **[ready](Gameplay.Player.md#ready)**(): `Promise`<[`Player`](Gameplay.Player.md)\> <br> GameObject准备好后返回|
-| **[removeNetworkDisconnectListener](Gameplay.Player.md#removenetworkdisconnectlistener)**(`callback`: () => `void`): `void` <br> 移除网络断开连接时执行的回调函数|
-| **[removeNetworkReconnectListener](Gameplay.Player.md#removenetworkreconnectlistener)**(`callback`: () => `void`): `void` <br> 移除网络断开连接后恢复网络时执行的回调函数|
 | **[setCollision](Gameplay.Player.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
-| **[setCustomTimeDilation](Gameplay.Player.md#setcustomtimedilation)**(`Time`: `number`): `void` <br> 设置当前角色对象膨胀时间速度说明：对象膨胀速度默认为1，当膨胀时间速度设置小于1时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值0.1。|
 | **[setLocationAndRotation](Gameplay.Player.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.Player.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.Player.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -101,36 +99,326 @@
 | **[setWorldScale](Gameplay.Player.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.Player.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.Player.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.Player.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.Player.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.Player.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
+| **[getAllPlayers](Gameplay.Player.md#getallplayers)**(): [`Player`](Gameplay.Player.md)[] <br> 获取当前所有玩家|
+| **[getControllerRotation](Gameplay.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取控制器的旋转|
 | **[getGameObjectByName](Gameplay.Player.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.Player.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
+| **[getPlayer](Gameplay.Player.md#getplayer)**(`uniqueId`: `string` \): [`Player`](Gameplay.Player.md) <br> 获取玩家|
+| **[setControllerRotation](Gameplay.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 覆写控制器的旋转|
 | **[spawn](Gameplay.Player.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.Player.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.Player.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
+| **[spawnDefaultCharacter](Gameplay.Player.md#spawndefaultcharacter)**(): [`Character`](Gameplay.Character.md) <br> 创建默认角色|
 
 ## Properties
 
-### character <Score text="character" /> 
+### onPawnChanged <Score text="onPawnChanged" /> 
 
-• **character**: [`Character`](Gameplay.Character.md)
+• `Readonly` **onPawnChanged**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`pawn`: [`Pawn`](Gameplay.Pawn.md)) => `void`\> 
 
-玩家控制的角色
+控制对象变化委托
+
+
+::: warning Precautions
+
+当玩家控制的角色发生变化时执行绑定函数
+
+:::
+
+使用示例: 创建默认角色并控制，触发控制对象变化委托并打印新对象的名字
+```ts
+@Core.Class
+export default class PlayerDelegateExample01 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【创建角色并控制】事件监听器
+            Events.addClientListener("SpawnCharacterAndControl", (player) => {
+                let newPawn = Player.spawnDefaultCharacter();
+                player.controlPawn(newPawn);
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：打印新控制的pawn的名字。
+            myself.onPawnChanged.add((pawn) => {
+                console.log("New Pawn Name: " + pawn.pawnName);
+            });
+            // 添加一个按键方法：按下键盘“1”，向服务端发送事件【创建角色并控制】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("SpawnCharacterAndControl");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onPlayerDisconnected <Score text="onPlayerDisconnected" /> 
+
+▪ `Static` `Readonly` **onPlayerDisconnected**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> 
+
+玩家断线委托
+
+
+::: warning Precautions
+
+当玩家掉线时执行绑定函数。该委托双端触发机制不同。在客户端只被本地玩家掉线事件触发，触发时机为掉线的瞬间。在服务端被任意玩家掉线事件触发，触发时机为5秒内未收到客户端玩家消息即为掉线。
+
+:::
+
+使用示例:给玩家加入，玩家退出，玩家断线和玩家重连委托中绑定函数打印玩家ID和行为。
+```ts
+@Core.Class
+export default class PlayerDelegateExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 给【玩家加入】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " joined the Game");
+            });
+            // 给【玩家离开】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerLeft.add((player) => {
+                console.log("Player " + player.userId + " Left the Game");
+            });
+            // 给【玩家断线】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerDisconnected.add(() => {
+                console.log("Player " + player.userId + " is disconnected");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerReconnected.add(() => {
+                console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给【玩家断线】委托添加一个函数：打印玩家断线消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 断线");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家重连消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 重连");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onPlayerJoined <Score text="onPlayerJoined" /> 
+
+▪ `Static` `Readonly` **onPlayerJoined**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> 
+
+玩家加入委托
+
+
+::: warning Precautions
+
+当玩家加入游戏时执行绑定函数
+
+:::
+
+使用示例:给玩家加入，玩家退出，玩家断线和玩家重连委托中绑定函数打印玩家ID和行为。
+```ts
+@Core.Class
+export default class PlayerDelegateExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 给【玩家加入】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " joined the Game");
+            });
+            // 给【玩家离开】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerLeft.add((player) => {
+                console.log("Player " + player.userId + " Left the Game");
+            });
+            // 给【玩家断线】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerDisconnected.add(() => {
+                console.log("Player " + player.userId + " is disconnected");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerReconnected.add(() => {
+                console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给【玩家断线】委托添加一个函数：打印玩家断线消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 断线");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家重连消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 重连");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onPlayerLeft <Score text="onPlayerLeft" /> 
+
+▪ `Static` `Readonly` **onPlayerLeft**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> 
+
+玩家离开委托
+
+
+::: warning Precautions
+
+当玩家离开游戏时执行绑定函数
+
+:::
+
+使用示例:给玩家加入，玩家退出，玩家断线和玩家重连委托中绑定函数打印玩家ID和行为。
+```ts
+@Core.Class
+export default class PlayerDelegateExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 给【玩家加入】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " joined the Game");
+            });
+            // 给【玩家离开】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerLeft.add((player) => {
+                console.log("Player " + player.userId + " Left the Game");
+            });
+            // 给【玩家断线】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerDisconnected.add(() => {
+                console.log("Player " + player.userId + " is disconnected");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerReconnected.add(() => {
+                console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给【玩家断线】委托添加一个函数：打印玩家断线消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 断线");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家重连消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 重连");
+            });
+        }
+    }
+}
+```
+
+___
+
+### onPlayerReconnected <Score text="onPlayerReconnected" /> 
+
+▪ `Static` `Readonly` **onPlayerReconnected**: [`MulticastDelegate`](Type.MulticastDelegate.md)<(`player`: [`Player`](Gameplay.Player.md)) => `void`\> 
+
+玩家重连委托
+
+
+::: warning Precautions
+
+当玩家重连时执行绑定函数
+
+:::
+
+使用示例:给玩家加入，玩家退出，玩家断线和玩家重连委托中绑定函数打印玩家ID和行为。
+```ts
+@Core.Class
+export default class PlayerDelegateExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 给【玩家加入】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " joined the Game");
+            });
+            // 给【玩家离开】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerLeft.add((player) => {
+                console.log("Player " + player.userId + " Left the Game");
+            });
+            // 给【玩家断线】委托添加一个函数：打印玩家加入游戏消息
+            Player.onPlayerDisconnected.add(() => {
+                console.log("Player " + player.userId + " is disconnected");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家离开游戏消息
+            Player.onPlayerReconnected.add(() => {
+                console.log("Player " + player.userId + " is reconnected");
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给【玩家断线】委托添加一个函数：打印玩家断线消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 断线");
+            });
+            // 给【玩家重连】委托添加一个函数：打印玩家重连消息
+            Player.onPlayerJoined.add((player) => {
+                console.log("Player " + player.userId + " 重连");
+            });
+        }
+    }
+}
+```
 
 ## Accessors
 
-### customTimeDilation <Score text="customTimeDilation" /> 
+### character <Score text="character" /> 
 
-• `get` **customTimeDilation**(): `number` 
+• `get` **character**(): [`Character`](Gameplay.Character.md) 
 
-获取当前角色对象膨胀时间速度
+控制角色
 
+
+::: warning Precautions
+
+玩家控制的角色，属于Pawn对象的一种。在玩家切换控制角色时, 客户端上无法立即获取到最新值。其余情况下，只要获取到玩家就可以同时获取到加载完成的控制角色。
+
+:::
+
+使用示例: 获取当前客户端玩家并打印玩家角色的guid和名字
+```ts
+@Core.Class
+export default class PlayerPropertyExample01 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家控制的character对象的guid和名字
+            console.log("My character: " + myself.character.guid + " " + myself.character.pawnName);
+        }
+    }
+}
+```
 
 #### Returns
 
-`number`
-
-膨胀时间速度
+[`Character`](Gameplay.Character.md)
 
 ___
 
@@ -159,6 +447,48 @@ ___
 #### Returns
 
 `string`
+
+___
+
+### instanceId <Score text="instanceId" /> 
+
+• `get` **instanceId**(): `number` 
+
+用户实例ID
+
+
+::: warning Precautions
+
+玩家的用户实例ID。该值是多端同步的，在同一个游戏实例内可以作为玩家唯一ID使用。
+
+:::
+
+使用示例: 获取当前客户端玩家并打印玩家的基础属性
+```ts
+@Core.Class
+export default class PlayerPropertyExample03 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家的平台用户ID
+            console.log("My userId: " + myself.userId);
+            // 打印本地玩家游戏内的实例ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的队伍ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的网络延迟
+            console.log("My ping: " + myself.ping);
+        }
+    }
+}
+```
+
+#### Returns
+
+`number`
 
 ___
 
@@ -253,6 +583,48 @@ ___
 | :------ | :------ |
 | `newParent` | `GameObject` |
 
+
+___
+
+### ping <Score text="ping" /> 
+
+• `get` **ping**(): `number` 
+
+网络延迟
+
+
+::: warning Precautions
+
+玩家客户端的网络延迟。以毫秒为单位；-1时表示获取失败。
+
+:::
+
+使用示例: 获取当前客户端玩家并打印玩家的基础属性
+```ts
+@Core.Class
+export default class PlayerPropertyExample05 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家的平台用户ID
+            console.log("My userId: " + myself.userId);
+            // 打印本地玩家游戏内的实例ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的队伍ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的网络延迟
+            console.log("My ping: " + myself.ping);
+        }
+    }
+}
+```
+
+#### Returns
+
+`number`
 
 ___
 
@@ -392,6 +764,48 @@ Tag
 
 ___
 
+### teamId <Score text="teamId" /> 
+
+• `get` **teamId**(): `string` 
+
+队伍ID
+
+
+::: warning Precautions
+
+玩家的队伍ID（通过游戏跳转自动形成）。如玩家不在任何队伍中则该值为空。
+
+:::
+
+使用示例: 获取当前客户端玩家并打印玩家的基础属性
+```ts
+@Core.Class
+export default class PlayerPropertyExample04 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家的平台用户ID
+            console.log("My userId: " + myself.userId);
+            // 打印本地玩家游戏内的实例ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的队伍ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的网络延迟
+            console.log("My ping: " + myself.ping);
+        }
+    }
+}
+```
+
+#### Returns
+
+`string`
+
+___
+
 ### transform <Score text="transform" /> 
 
 • `get` **transform**(): [`Transform`](Type.Transform.md) 
@@ -459,24 +873,45 @@ ___
 
 ___
 
-### visible <Score text="visible" /> 
+### userId <Score text="userId" /> 
 
-• `get` **visible**(): `boolean` 
+• `get` **userId**(): `string` 
 
-::: danger Deprecated
+平台用户ID
 
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:020 reason:api重构 replacement:getVisibility()
+
+::: warning Precautions
+
+玩家的平台用户ID。该值是多端同步的，可以作为玩家唯一ID使用。玩家对象准备好后需等待一段时间该值才能准备好。
 
 :::
 
-获取当前物体是否显示
-
+使用示例: 获取当前客户端玩家并打印玩家的基础属性
+```ts
+@Core.Class
+export default class PlayerPropertyExample02 extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家的平台用户ID
+            console.log("My userId: " + myself.userId);
+            // 打印本地玩家游戏内的实例ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的队伍ID
+            console.log("My instanceId: " + myself.instanceId);
+            // 打印本地玩家的网络延迟
+            console.log("My ping: " + myself.ping);
+        }
+    }
+}
+```
 
 #### Returns
 
-`boolean`
-
-bool
+`string`
 
 ___
 
@@ -553,6 +988,42 @@ ___
 | `v` | [`Vector`](Type.Vector.md) |
 
 
+___
+
+### localPlayer <Score text="localPlayer" /> 
+
+• `Static` `get` **localPlayer**(): [`Player`](Gameplay.Player.md) <Badge type="tip" text="client" />
+
+本地玩家
+
+
+::: warning Precautions
+
+当前客户端对应的玩家。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
+
+:::
+
+使用示例:获取当前客户端的玩家并打印GUID和名字
+```ts
+@Core.Class
+export default class PlayerLocalExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印本地玩家控制的character对象的guid和名字
+            console.log("My character: " + myself.character.guid + " " + myself.character.pawnName);
+        }
+    }
+}
+```
+
+#### Returns
+
+[`Player`](Gameplay.Player.md)
+
 ## Methods
 
 ### addDestroyCallback <Score text="addDestroyCallback" /> 
@@ -567,68 +1038,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `callback` | (...`arg`: `unknown`[]) => `void` | 回调事件 |
-
-
-___
-
-### addNetworkDisconnectListener <Score text="addNetworkDisconnectListener" /> 
-
-• **addNetworkDisconnectListener**(`callback`): `void` <Badge type="tip" text="client" />
-
-添加网络断开连接时执行的回调函数
-
-
-::: warning Precautions
-
-如果需要删除回调函数，请不要使用Lambda表达式，只对当前player生效
-
-:::
-
-使用示例:调用方法
-```ts
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.addNetworkDisconnectListener(this.testFunction);
-});
-public testFunction() {
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | () => `void` | 需要触发的回调函数 |
-
-
-___
-
-### addNetworkReconnectListener <Score text="addNetworkReconnectListener" /> 
-
-• **addNetworkReconnectListener**(`callback`): `void` <Badge type="tip" text="client" />
-
-添加网络断开连接后恢复网络时执行的回调函数
-
-
-::: warning Precautions
-
-如果需要删除回调函数，请不要使用Lambda表达式，只对当前player生效
-
-:::
-
-使用示例:调用方法
-```ts
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.addNetworkReconnectListener(this.testFunction);
-});
-public testFunction() {
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | () => `void` | 需要触发的回调函数 |
 
 
 ___
@@ -713,6 +1122,64 @@ ___
 
 ___
 
+### control <Score text="control" /> 
+
+• **control**(`pawn`): `boolean` <Badge type="tip" text="server" />
+
+控制一个Pawn对象
+
+
+::: warning Precautions
+
+在服务端上立即更新控制对象。客户端由于网络延迟会有时间差。只能控制当前没有被玩家控制的角色。对其他玩家控制的角色使用该接口不会生效。返回本次控制的结果。
+
+:::
+
+使用示例: 操纵pawn示例
+```ts
+@Core.Class
+export default class NewScript extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【创建角色并控制】事件监听器
+            Events.addClientListener("SpawnCharacterAndControl", (player) => {
+                let newPawn = Player.spawnDefaultCharacter();
+                player.controlPawn(newPawn);
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：打印新控制的pawn的名字。
+            myself.onPawnChanged.add((pawn) => {
+                console.log("New Pawn Name: " + pawn.pawnName);
+            });
+            // 添加一个按键方法：按下键盘“1”，向服务端发送事件【创建角色并控制】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("SpawnCharacterAndControl");
+            });
+        }
+    }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `pawn` | [`Pawn`](Gameplay.Pawn.md) | 目标控制对象 |
+
+#### Returns
+
+`boolean`
+
+操纵结果
+
+___
+
 ### deleteDestroyCallback <Score text="deleteDestroyCallback" /> 
 
 • **deleteDestroyCallback**(`callback`): `void` 
@@ -762,27 +1229,6 @@ ___
 将此物体与当前附着的物体分离
 
 
-
-___
-
-### getAccount <Score text="getAccount" /> 
-
-• **getAccount**(): `string` <Badge type="tip" text="other" />
-
-获取玩家账户
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
-
-:::
-
-#### Returns
-
-`string`
-
-玩家账户
 
 ___
 
@@ -957,31 +1403,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 Vector
-
-___
-
-### getPlayerID <Score text="getPlayerID" /> 
-
-• **getPlayerID**(): `number` 
-
-获取当前游戏内的玩家Id，用于和其它玩家区分。不能用于查询用户信息。
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:功能废弃 replacement:getUserId
-
-:::
-
-
-#### Returns
-
-`number`
-
-当前游戏内的玩家Id
-
-#### Overrides
-
-Core.IPlayer.getPlayerID
 
 ___
 
@@ -1165,21 +1586,6 @@ ___
 
 ___
 
-### getTeamId <Score text="getTeamId" /> 
-
-• **getTeamId**(): `string` 
-
-获取玩家的TeamId
-
-
-#### Returns
-
-`string`
-
-玩家的TeamId，如不在队伍中，则为空
-
-___
-
 ### getTransform <Score text="getTransform" /> 
 
 • **getTransform**(`outer?`): [`Transform`](Type.Transform.md) 
@@ -1225,42 +1631,6 @@ ___
 [`Vector`](Type.Vector.md)
 
 Vector
-
-___
-
-### getUserId <Score text="getUserId" /> 
-
-• **getUserId**(): `string` 
-
-获取用户的平台Id，该Id可以作为玩家唯一Id使用。
-
-
-#### Returns
-
-`string`
-
-用户平台Id
-
-___
-
-### getUserSystemId <Score text="getUserSystemId" /> 
-
-• **getUserSystemId**(): `string` 
-
-获取用户系统的玩家Id
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:命名不规范 replacement:AccountService.getInstance().getOpenId()
-
-:::
-
-
-#### Returns
-
-`string`
-
-用户系统的玩家Id，可以用于查询用户信息。
 
 ___
 
@@ -1429,21 +1799,6 @@ ___
 
 ___
 
-### ping <Score text="ping" /> 
-
-• **ping**(): `number` 
-
-当前Player的Ping值(-1时表示获取失败)
-
-
-#### Returns
-
-`number`
-
-以毫秒为单位
-
-___
-
 ### ready <Score text="ready" /> 
 
 • **ready**(): `Promise`<[`Player`](Gameplay.Player.md)\> 
@@ -1456,56 +1811,6 @@ GameObject准备好后返回
 `Promise`<[`Player`](Gameplay.Player.md)\>
 
 准备好的对象
-
-___
-
-### removeNetworkDisconnectListener <Score text="removeNetworkDisconnectListener" /> 
-
-• **removeNetworkDisconnectListener**(`callback`): `void` <Badge type="tip" text="client" />
-
-移除网络断开连接时执行的回调函数
-
-
-使用示例:调用方法
-```ts
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.removeNetworkDisconnectListener(this.testFunction);
-});
-public testFunction() {
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | () => `void` | 不需要触发的回调函数 |
-
-
-___
-
-### removeNetworkReconnectListener <Score text="removeNetworkReconnectListener" /> 
-
-• **removeNetworkReconnectListener**(`callback`): `void` <Badge type="tip" text="client" />
-
-移除网络断开连接后恢复网络时执行的回调函数
-
-
-使用示例:调用方法
-```ts
-Gameplay.asyncGetCurrentPlayer().then((player) => {
-    player.removeNetworkReconnectListener(this.testFunction);
-});
-public testFunction() {
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | () => `void` | 不需要触发的回调函数 |
-
 
 ___
 
@@ -1528,23 +1833,6 @@ ___
 | :------ | :------ | :------ |
 | `status` | [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) |  碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
 | `propagateToChildren?` | `boolean` |  是否传递给子节点 default: false |
-
-
-___
-
-### setCustomTimeDilation <Score text="setCustomTimeDilation" /> 
-
-• **setCustomTimeDilation**(`Time`): `void` <Badge type="tip" text="other" />
-
-设置当前角色对象膨胀时间速度说明：对象膨胀速度默认为1，当膨胀时间速度设置小于1时，对象的运行时间会比正常世界的运行时间减慢，膨胀时间速度最小值0.1。
-
-调用端自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Time` | `number` |  膨胀倍数 |
 
 
 ___
@@ -1753,35 +2041,6 @@ let obj = await Gameplay.GameObject.asyncSpawn<Gameplay.Mesh>({
 
 ___
 
-### asyncSpawnGameObject <Score text="asyncSpawnGameObject" /> 
-
-• `Static` **asyncSpawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `Promise`<`GameObject`\> <Badge type="tip" text="other" />
-
-异步构造一个 GameObject 资源不存在会先去下载资源再去创建
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:asyncSpawn()
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
-
-#### Returns
-
-`Promise`<`GameObject`\>
-
-构造的GameObject
-
-___
-
 ### find <Score text="find" /> 
 
 • `Static` **find**(`GUID`): `GameObject` 
@@ -1821,6 +2080,110 @@ ___
 `GameObject`[]
 
 Array`<GameObject>`
+
+___
+
+### getAllPlayers <Score text="getAllPlayers" /> 
+
+• `Static` **getAllPlayers**(): [`Player`](Gameplay.Player.md)[] 
+
+获取当前所有玩家
+
+
+使用示例:客户端发送事件通知服务端打印全体玩家的ID并标注自己
+```ts
+@Core.Class
+export default class PlayerGetAllExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【打印游戏内全部玩家信息】事件监听器
+            Events.addClientListener("PrintPlayersInfo", (player) => {
+                // 遍历Players数组，打印他们的userId，遇到发起事件客户端时提示This is me
+                Player.getAllPlayers().forEach((value, index) => {
+                    if(player == value) {
+                        console.log(index + " Player " + player.userId + "This is me");
+                    } else {
+                        console.log(index + " Player " + player.userId);
+                    }
+                });
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 添加一个按键方法：按下键盘“1”，向服务端发送事件【打印游戏内全部玩家信息】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("PrintPlayersInfo");
+            });
+        }
+    }
+}
+```
+
+#### Returns
+
+[`Player`](Gameplay.Player.md)[]
+
+全体玩家对象数组
+
+___
+
+### getControllerRotation <Score text="getControllerRotation" /> 
+
+• `Static` **getControllerRotation**(`outer?`): [`Rotation`](Type.Rotation.md) <Badge type="tip" text="client" />
+
+获取控制器的旋转
+
+
+::: warning Precautions
+
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
+
+使用示例:向服务端发送事件创建默认角色并控制它
+```ts
+@Core.Class
+export default class PlayerSpawnCharacter extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【创建角色并控制】事件监听器
+            Events.addClientListener("SpawnCharacterAndControl", (player) => {
+                let newPawn = Player.spawnDefaultCharacter();
+                player.controlPawn(newPawn);
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：打印新控制的pawn的名字。
+            myself.onPawnChanged.add((pawn) => {
+                console.log("New Pawn Name: " + pawn.pawnName);
+            });
+            // 添加一个按键方法：按下键盘“3”，向服务端发送事件【创建角色并控制】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("SpawnCharacterAndControl");
+            });
+        }
+    }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `outer?` | [`Rotation`](Type.Rotation.md) | 接收旋转的变量 default:undefined |
+
+#### Returns
+
+[`Rotation`](Type.Rotation.md)
+
+当前控制器输入的旋转
 
 ___
 
@@ -1866,6 +2229,108 @@ ___
 
 ___
 
+### getPlayer <Score text="getPlayer" /> 
+
+• `Static` **getPlayer**(`uniqueId`): [`Player`](Gameplay.Player.md) 
+
+获取玩家
+
+
+::: warning Precautions
+
+根据ID获取玩家。ID可以是instanceId或userId。
+
+:::
+
+使用示例:通过getPlayer接口获取玩家并打印玩家信息
+```ts
+@Core.Class
+export default class PlayerGetExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 添加一个按键方法：按下键盘“1”，使用getPlayer函数通过userId或instanceId获取玩家对象并打印名字
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                // 获取当前客户端的玩家(自己)并打印userId和instanceId
+                let myself = Player.localPlayer;
+                console.log("My userId: " + myself.userId);
+                console.log("My instanceId: " + myself.instanceId);
+                // 通过userId获取玩家(自己)并打印userId和instanceId
+                let myself_2 = Player.getPlayer(myself.userId);
+                console.log("My userId: " + myself_2.userId);
+                console.log("My instanceId: " + myself_2.instanceId);
+                // 通过instanceId获取玩家(自己)并打印userId和instanceId
+                let myself_3 = Player.getPlayer(myself.instanceId);
+                console.log("My userId: " + myself_3.userId);
+                console.log("My instanceId: " + myself_3.instanceId);
+            });
+        }
+    }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `uniqueId` | `string` \| `number` | 用户ID或者玩家实例ID |
+
+#### Returns
+
+[`Player`](Gameplay.Player.md)
+
+玩家对象
+
+___
+
+### setControllerRotation <Score text="setControllerRotation" /> 
+
+• `Static` **setControllerRotation**(`newRotation`): `void` <Badge type="tip" text="client" />
+
+覆写控制器的旋转
+
+
+使用示例:向服务端发送事件创建默认角色并控制它
+```ts
+@Core.Class
+export default class PlayerSpawnCharacter extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【创建角色并控制】事件监听器
+            Events.addClientListener("SpawnCharacterAndControl", (player) => {
+                let newPawn = Player.spawnDefaultCharacter();
+                player.controlPawn(newPawn);
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：打印新控制的pawn的名字。
+            myself.onPawnChanged.add((pawn) => {
+                console.log("New Pawn Name: " + pawn.pawnName);
+            });
+            // 添加一个按键方法：按下键盘“2”，向服务端发送事件【创建角色并控制】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("SpawnCharacterAndControl");
+            });
+        }
+    }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newRotation` | [`Rotation`](Type.Rotation.md) | 新旋转值 |
+
+
+___
+
 ### spawn <Score text="spawn" /> 
 
 • `Static` **spawn**<`T`\>(`spawnInfo`): `T` 
@@ -1902,29 +2367,53 @@ let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
 
 ___
 
-### spawnGameObject <Score text="spawnGameObject" /> 
+### spawnDefaultCharacter <Score text="spawnDefaultCharacter" /> 
 
-• `Static` **spawnGameObject**(`assetId`, `inReplicates?`, `transform?`): `GameObject` <Badge type="tip" text="other" />
+• `Static` **spawnDefaultCharacter**(): [`Character`](Gameplay.Character.md) 
 
-构造一个 GameObject
+创建默认角色
 
 
-::: danger Deprecated
+::: warning Precautions
 
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃 replacement:spawn()
+默认角色属性由编辑器玩家对象的属性面板决定。
 
 :::
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` | 资源的GUID |
-| `inReplicates?` | `boolean` | 是否同步 default:默认服务端同步 |
-| `transform?` | [`Transform`](Type.Transform.md) | 是否设置transform default:默认零点 |
+使用示例:向服务端发送事件创建默认角色并控制它
+```ts
+@Core.Class
+export default class PlayerSpawnCharacter extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数/
+    protected onStart(): void {
+        // 下列代码仅在服务端执行
+        if(SystemUtil.isServer()) {
+            // 在服务端添加一个【创建角色并控制】事件监听器
+            Events.addClientListener("SpawnCharacterAndControl", (player) => {
+                let newPawn = Player.spawnDefaultCharacter();
+                player.controlPawn(newPawn);
+            });
+        }
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 给本地玩家的【玩家控制对象变化】委托添加一个函数：打印新控制的pawn的名字。
+            myself.onPawnChanged.add((pawn) => {
+                console.log("New Pawn Name: " + pawn.pawnName);
+            });
+            // 添加一个按键方法：按下键盘“1”，向服务端发送事件【创建角色并控制】
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                Events.dispatchToServer("SpawnCharacterAndControl");
+            });
+        }
+    }
+}
+```
 
 #### Returns
 
-`GameObject`
+[`Character`](Gameplay.Character.md)
 
-构造的GameObject
+角色对象
+

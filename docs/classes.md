@@ -7,9 +7,6 @@ Classes
 ## A
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [AICharacter](classes/Gameplay.AICharacter.md) | 在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象. | [Avatar](groups/Avatar.Avatar.md) |
-| [AbilityObject](classes/Gameplay.AbilityObject.md) | 能力对象，提供角色按指定一系列的能力序列进行动画自动切换的功能。 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [AbilityState](classes/Gameplay.AbilityState.md) | 能力状态，用于读取/配置能力对象的能力相关的属性 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [AccountService](classes/Service.AccountService.md) | 用户账号信息管理相关服务 | [Social](groups/Social.Social.md) |
 | [Action](classes/Type.Action.md) | 任意参数的代理 | [Datatype](groups/Datatype.Datatype.md) |
 | [Action1](classes/Type.Action1.md) | 一个参数的代理 | [Datatype](groups/Datatype.Datatype.md) |
@@ -21,6 +18,7 @@ Classes
 | [AnalyticsService](classes/Service.AnalyticsService.md) | 分析服务 | [Debugging](groups/Debugging.Debugging.md) |
 | [Animation](classes/Gameplay.Animation.md) | 动画类 | [Animations](groups/Animations.Animations.md) |
 | [AssetIconData](classes/UI.AssetIconData.md) | 资源ICON信息 | [Gui](groups/Gui.Gui.md) |
+| [AttachmentArray](classes/Gameplay.AttachmentArray.md) | 单个插槽对应的挂件物体数组 | [Avatar](groups/Avatar.Avatar.md) |
 
 
 ## B
@@ -28,6 +26,7 @@ Classes
 | :-----| :-----| :-----|
 | [BasePanel](classes/Extension.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [Gui](groups/Gui.Gui.md) |
 | [BaseView](classes/Extension.BaseView.md) | 界面类的基类 | [Gui](groups/Gui.Gui.md) |
+| [BasicStance](classes/Gameplay.BasicStance.md) | 基础姿态 | [Animations](groups/Animations.Animations.md) |
 | [BlockingVolume](classes/Gameplay.BlockingVolume.md) | 禁行区，用于控制个角色是否可以进出此区域，默认阻挡，角色可站立 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Button](classes/UI.Button.md) | 按钮,无默认text | [Gui](groups/Gui.Gui.md) |
 
@@ -35,10 +34,9 @@ Classes
 ## C
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [CameraSystem](classes/Gameplay.CameraSystem.md) | 摄像机系统，是依托于角色，作为角色的组件存在，在此组件下还有一个用来确定视口位置的摄像机组件 | [Gameplay](groups/Gameplay.Gameplay.md) |
+| [Camera](classes/Gameplay.Camera.md) | 摄像机 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Canvas](classes/UI.Canvas.md) | 可挂载叶子节点的根节点，以及提供各种自动布局功能 | [Gui](groups/Gui.Gui.md) |
-| [Character](classes/Gameplay.Character.md) | 在CharacterBase上派生的玩家操控对象,该对象是玩家加入游戏之后,在服务器上根据配置生成,并同步到客户端的. | [Avatar](groups/Avatar.Avatar.md) |
-| [CharacterBase](classes/Gameplay.CharacterBase.md) | 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动. | [Avatar](groups/Avatar.Avatar.md) |
+| [Character](classes/Gameplay.Character.md) | 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动. | [Avatar](groups/Avatar.Avatar.md) |
 | [CharacterEvent](classes/UI.CharacterEvent.md) | 角色输入事件 | [Gui](groups/Gui.Gui.md) |
 | [ColorPick](classes/UI.ColorPick.md) | 颜色选择器 | [Gui](groups/Gui.Gui.md) |
 | [ConvertScreenResult](classes/Type.ConvertScreenResult.md) | 屏幕坐标转换结果 | [Datatype](groups/Datatype.Datatype.md) |
@@ -50,8 +48,6 @@ Classes
 | [DataCenterC](classes/Extension.DataCenterC.md) | 客户端数据中心，里面存放着当前玩家的数据 | [Data](groups/Data.Data.md) |
 | [DataCenterS](classes/Extension.DataCenterS.md) | 服务端数据中心，管理所有玩家的数据 | [Data](groups/Data.Data.md) |
 | [DebugService](classes/Service.DebugService.md) | debug调试服务 | [Debugging](groups/Debugging.Debugging.md) |
-| [Decoration](classes/Gameplay.Decoration.md) | 平台形象特有的挂件数据格式 | [Avatar](groups/Avatar.Avatar.md) |
-| [DefaultData](classes/Gameplay.DefaultData.md) | 角色数据类型 | [Avatar](groups/Avatar.Avatar.md) |
 | [Delegate](classes/Type.Delegate.md) | 委托 | [Datatype](groups/Datatype.Datatype.md) |
 | [DirectionalLight](classes/Gameplay.DirectionalLight.md) | 平行光 | [Lighting](groups/Lighting.Lighting.md) |
 | [DragDropOperation](classes/UI.DragDropOperation.md) | UI 拖拽事件 | [Gui](groups/Gui.Gui.md) |
@@ -73,7 +69,6 @@ Classes
 | :-----| :-----| :-----|
 | [FireDataInfoForMultiple](classes/Gameplay.FireDataInfoForMultiple.md) | 热武器逻辑组件专用的临时类， | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [FocusEvent](classes/UI.FocusEvent.md) | 焦点事件 | [Gui](groups/Gui.Gui.md) |
-| [FourFootStandard](classes/Gameplay.FourFootStandard.md) | 四足外观形象对象,用于四足外观的设置. | [Avatar](groups/Avatar.Avatar.md) |
 
 
 ## G
@@ -99,34 +94,17 @@ Classes
 | [HotWeaponLoadComponent](classes/Gameplay.HotWeaponLoadComponent.md) | 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [HotWeaponRecoilForceComponent](classes/Gameplay.HotWeaponRecoilForceComponent.md) | 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复） | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [HotWeaponReloadComponent](classes/Gameplay.HotWeaponReloadComponent.md) | 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [Humanoid](classes/Gameplay.Humanoid.md) | 在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象. | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV1](classes/Gameplay.HumanoidV1.md) | 人形外观形象对象,用于基础人形外观的设置. | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV1Face](classes/Gameplay.HumanoidV1Face.md) | 人形对象V1脸部接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV1Hair](classes/Gameplay.HumanoidV1Hair.md) | 人形对象V1头发接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV1Part](classes/Gameplay.HumanoidV1Part.md) | 人形对象V1头发接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV1Trunk](classes/Gameplay.HumanoidV1Trunk.md) | 人形对象V1身体接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2](classes/Gameplay.HumanoidV2.md) | 人形外观形象对象,用于高级人形外观的设置. | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2BehindHairPart](classes/Gameplay.HumanoidV2BehindHairPart.md) | 人形对象V2后发部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2ClothPart](classes/Gameplay.HumanoidV2ClothPart.md) | 人形对象V2上衣部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2FrontHairPart](classes/Gameplay.HumanoidV2FrontHairPart.md) | 人形对象V2前发部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2GlovesPart](classes/Gameplay.HumanoidV2GlovesPart.md) | 人形对象V2手套部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2HairPart](classes/Gameplay.HumanoidV2HairPart.md) | 人形对象V2前发部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2HeadPart](classes/Gameplay.HumanoidV2HeadPart.md) | 人形对象V2头部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2LowerClothPart](classes/Gameplay.HumanoidV2LowerClothPart.md) | 人形对象V2下衣部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2Shape](classes/Gameplay.HumanoidV2Shape.md) | 人形对象V2体型 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2ShoePart](classes/Gameplay.HumanoidV2ShoePart.md) | 人形对象V2鞋子部位接口 | [Avatar](groups/Avatar.Avatar.md) |
-| [HumanoidV2UpperClothPart](classes/Gameplay.HumanoidV2UpperClothPart.md) | 人形对象V2上衣部位接口 | [Avatar](groups/Avatar.Avatar.md) |
 
 
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [IStanceBase](classes/Gameplay.IStanceBase.md) | 姿态 | [Animations](groups/Animations.Animations.md) |
 | [Image](classes/UI.Image.md) | UI 图片 | [Gui](groups/Gui.Gui.md) |
 | [Impulse](classes/Gameplay.Impulse.md) | 冲量对象 | [Physics](groups/Physics.Physics.md) |
 | [InputBox](classes/UI.InputBox.md) | UI的输入框 | [Gui](groups/Gui.Gui.md) |
 | [InputEvent](classes/UI.InputEvent.md) | 输入事件 | [Gui](groups/Gui.Gui.md) |
 | [IntegratedMover](classes/Gameplay.IntegratedMover.md) | 运动器组件 | [Physics](groups/Physics.Physics.md) |
-| [InteractiveObject](classes/Gameplay.InteractiveObject.md) | 交互物功能对象，提供角色与场景中物体的交互功能，交互即将角色切换到特定姿态、位置并绑定到交互物上的过程。此对象常用于场景中椅子，沙发，器材等位置。 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Interactor](classes/Gameplay.Interactor.md) | 交互物功能对象 V2 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
 
@@ -145,7 +123,7 @@ Classes
 ## L
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [LinearColor](classes/Type.LinearColor.md) | 线性RGBA颜色 | [Datatype](groups/Datatype.Datatype.md) |
+| [LinearColor](classes/Type.LinearColor.md) | 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 | [Datatype](groups/Datatype.Datatype.md) |
 
 
 ## M
@@ -168,7 +146,6 @@ Classes
 ## N
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [NPC](classes/Gameplay.NPC.md) | NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject("NPC") as NPC; | [Avatar](groups/Avatar.Avatar.md) |
 | [NavModifierVolume](classes/Gameplay.NavModifierVolume.md) | 寻路动态修饰区 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [NetObject](classes/Extension.NetObject.md) | 网络对象 | [Utility](groups/Utility.Utility.md) |
 | [NetObjectC](classes/Extension.NetObjectC.md) | 客户端的网络对象 | [Utility](groups/Utility.Utility.md) |
@@ -187,15 +164,14 @@ Classes
 | :-----| :-----| :-----|
 | [PanelWidget](classes/UI.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [Gui](groups/Gui.Gui.md) |
 | [Particle](classes/Gameplay.Particle.md) | 特效对象,通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。如需精确控制特效的播放与停止，请使用play()和stop()。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。 | [Effects](groups/Effects.Effects.md) |
+| [Pawn](classes/Gameplay.Pawn.md) | 可以被玩家和AI控制的对象的基类 | [Avatar](groups/Avatar.Avatar.md) |
 | [PhysicsFulcrum](classes/Gameplay.PhysicsFulcrum.md) | 物理支撑点组件 | [Physics](groups/Physics.Physics.md) |
 | [PhysicsThruster](classes/Gameplay.PhysicsThruster.md) | 推进器 | [Physics](groups/Physics.Physics.md) |
 | [Player](classes/Gameplay.Player.md) | 角色控制 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [PlayerStart](classes/Gameplay.PlayerStart.md) | 玩家起始 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [PointLight](classes/Gameplay.PointLight.md) | 点光源 | [Lighting](groups/Lighting.Lighting.md) |
 | [PointerEvent](classes/UI.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [Gui](groups/Gui.Gui.md) |
 | [PostProcess](classes/Gameplay.PostProcess.md) | 后处理对象 | [Lighting](groups/Lighting.Lighting.md) |
 | [ProgressBar](classes/UI.ProgressBar.md) | UI进度条 | [Gui](groups/Gui.Gui.md) |
-| [Projectile](classes/Gameplay.Projectile.md) | 投掷物逻辑对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProjectileInst](classes/Gameplay.ProjectileInst.md) | 投掷物 v2 实例 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [ProjectileLauncher](classes/Gameplay.ProjectileLauncher.md) | 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [PurchaseService](classes/Service.PurchaseService.md) | 应用内购服务 | [Monetization](groups/Monetization.Monetization.md) |
@@ -224,13 +200,12 @@ Classes
 | [SkyLight](classes/Gameplay.SkyLight.md) | 环境光 | [Lighting](groups/Lighting.Lighting.md) |
 | [SlateBrushWithGuid](classes/UI.SlateBrushWithGuid.md) | 贴图信息 | [Gui](groups/Gui.Gui.md) |
 | [SlateColor](classes/UI.SlateColor.md) | UI颜色管理 | [Gui](groups/Gui.Gui.md) |
-| [SomatotypeBase](classes/Gameplay.SomatotypeBase.md) | 体型基类 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [Sound](classes/Gameplay.Sound.md) | 音效组件 | [Others](groups/Others.Others.md) |
 | [SoundService](classes/Service.SoundService.md) | 音效管理器 | [Utility](groups/Utility.Utility.md) |
+| [SpringArm](classes/Gameplay.SpringArm.md) | 弹簧臂 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [StaleButton](classes/UI.StaleButton.md) | 按钮 | [Gui](groups/Gui.Gui.md) |
-| [Stance](classes/Gameplay.Stance.md) | 姿态 | [Animations](groups/Animations.Animations.md) |
-| [StaticMesh](classes/Gameplay.StaticMesh.md) | StaticMeshActor相关接口主为要物理参数设置接口与材质参数设置接口 | [Gameplay](groups/Gameplay.Gameplay.md) |
-| [SubStance](classes/Gameplay.SubStance.md) | 二级姿态 | [Animations](groups/Animations.Animations.md) |
+| [Stance](classes/Gameplay.Stance.md) | 二级姿态 | [Animations](groups/Animations.Animations.md) |
+| [StyleConfig](classes/Gameplay.StyleConfig.md) | 人形外观配置类 | [Avatar](groups/Avatar.Avatar.md) |
 | [Subdata](classes/Extension.Subdata.md) | 数据控制类的基类 | [Data](groups/Data.Data.md) |
 | [SwimmingVolume](classes/Gameplay.SwimmingVolume.md) | 游泳区域 | [Gameplay](groups/Gameplay.Gameplay.md) |
 
@@ -259,7 +234,6 @@ Classes
 | [UILayout](classes/UI.UILayout.md) | 容器自动布局规则 | [Gui](groups/Gui.Gui.md) |
 | [UIManager](classes/UI.UIManager.md) | UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 | [Gui](groups/Gui.Gui.md) |
 | [UIObject](classes/UI.UIObject.md) | UI对象组件 | [Gui](groups/Gui.Gui.md) |
-| [UISlot](classes/UI.UISlot.md) | UI插槽 | [Gui](groups/Gui.Gui.md) |
 | [UITransform](classes/UI.UITransform.md) | 节点Transform | [Gui](groups/Gui.Gui.md) |
 | [UIWidget](classes/Gameplay.UIWidget.md) | 世界UI组件 | [Gui](groups/Gui.Gui.md) |
 | [UserWidget](classes/UI.UserWidget.md) | UI控件的集合,预制体UI | [Gui](groups/Gui.Gui.md) |
@@ -272,7 +246,6 @@ Classes
 | [Vector](classes/Type.Vector.md) | 由分量 (x,y,z) 组成的三维空间中的向量 | [Datatype](groups/Datatype.Datatype.md) |
 | [Vector2](classes/Type.Vector2.md) | 由分量 (x,y) 组成的二维空间中的向量 | [Datatype](groups/Datatype.Datatype.md) |
 | [Vector4](classes/Type.Vector4.md) | 由分量 (x,y,z,w) 组成的4D齐次向量 | [Datatype](groups/Datatype.Datatype.md) |
-| [VehicleCameraSetting](classes/Gameplay.VehicleCameraSetting.md) | 载具摄像机，对应编辑器对象管理器中载具下挂载的摄像机对象 | [Gameplay](groups/Gameplay.Gameplay.md) |
 | [VirtualJoystickPanel](classes/UI.VirtualJoystickPanel.md) | 摇杆 | [Gui](groups/Gui.Gui.md) |
 
 

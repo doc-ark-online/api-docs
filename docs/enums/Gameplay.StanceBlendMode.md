@@ -4,6 +4,10 @@
 
 姿态混合模式
 
+使用示例:
+```ts
+```
+
 ## Table of contents
 
 | Enumeration Members |

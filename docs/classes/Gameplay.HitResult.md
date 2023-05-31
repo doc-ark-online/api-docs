@@ -4,12 +4,27 @@
 
 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。
 
-使用示例:调用方法
+使用示例:创建一个名为"HitResultExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,并在场景中创建一个模型放置在200, 10, 0的位置，运行游戏,你将在日志中看到射线检测到的HitResult信息数组.代码如下:
 ```ts
 const result = Gameplay.lineTrace(new Vector(100), new Vector(1000), true, true);
-result.forEach(element => {
-    console.log(`命中GameObject的名字: ${element.gameObject.name}`);
-});
+@Core.Class
+export default class HitResultExample extends Core.Script {
+
+    protected onStart(): void {
+        if (this.isRunningClient()) {
+            let startLocation = new Vector(100, 10, 100);
+// 开始位置
+            let endLocation = new Vector(1000, 10, 100);
+// 结束位置
+            const result = Gameplay.lineTrace(startLocation, endLocation, true, true);
+// 返回的HitResult数组
+            result.forEach(element => {
+                console.log(`命中GameObject的名字: ${element.gameObject.name}`);
+// 通过HitResult访问返回值gameObject的名字
+            });
+        }
+    }
+}
 ```
 
 ## Table of contents

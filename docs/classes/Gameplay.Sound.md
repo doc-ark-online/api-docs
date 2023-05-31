@@ -28,29 +28,16 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | :-----|
 | **[attenuationDistanceModel](Gameplay.Sound.md#attenuationdistancemodel)**(): [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) <br> 获取音效的衰减方式|
 | **[attenuationShape](Gameplay.Sound.md#attenuationshape)**(): [`AttenuationShape`](../enums/Gameplay.AttenuationShape.md) <br> 获取音效的形状|
-| **[audioAsset](Gameplay.Sound.md#audioasset)**(`assetGuid`: `string`): `void` <br> 设置音效|
-| **[autoPlay](Gameplay.Sound.md#autoplay)**(): `boolean` <br> 获取是否自动播放|
-| **[currentProgress](Gameplay.Sound.md#currentprogress)**(): `number` <br> 获取当前播放时长进度|
-| **[drawInnerBounds](Gameplay.Sound.md#drawinnerbounds)**(): `boolean` <br> 获取是否绘制Bounds辅助线|
-| **[duration](Gameplay.Sound.md#duration)**(): `number` <br> 获取音效时长|
-| **[fallOffDistance](Gameplay.Sound.md#falloffdistance)**(): `number` <br> 获取衰减距离|
 | **[falloffDistance](Gameplay.Sound.md#falloffdistance-1)**(): `number` <br> 获取衰减距离|
-| **[innerRadius](Gameplay.Sound.md#innerradius)**(): `number` <br> 获取音量内部半径|
 | **[isAutoPlay](Gameplay.Sound.md#isautoplay)**(): `boolean` <br> 获取是否自动播放|
 | **[isLoop](Gameplay.Sound.md#isloop)**(): `boolean` <br> 获取是否循环播放|
 | **[isSpatialization](Gameplay.Sound.md#isspatialization)**(): `boolean` <br> 获取音效空间化|
 | **[isUISound](Gameplay.Sound.md#isuisound)**(): `boolean` <br> 获取是否是UI音效|
-| **[loop](Gameplay.Sound.md#loop)**(): `boolean` <br> 获取是否循环播放|
-| **[outerRadius](Gameplay.Sound.md#outerradius)**(): `number` <br> 获取衰减距离|
 | **[playState](Gameplay.Sound.md#playstate)**(): [`AudioPlayState`](../enums/Gameplay.AudioPlayState.md) <br> 获取音效播放状态|
 | **[shapeExtents](Gameplay.Sound.md#shapeextents)**(): [`Vector`](Type.Vector.md) <br> 获取音效形状范围|
-| **[soundDistance](Gameplay.Sound.md#sounddistance)**(): [`Vector`](Type.Vector.md) <br> 获取音效范围|
-| **[spatialization](Gameplay.Sound.md#spatialization)**(): `boolean` <br> 获取音效空间化|
 | **[timePosition](Gameplay.Sound.md#timeposition)**(): `number` <br> 获取当前已播放时长|
 | **[timelength](Gameplay.Sound.md#timelength)**(): `number` <br> 获取音效时长|
-| **[uiSound](Gameplay.Sound.md#uisound)**(): `boolean` <br> 获取是否是UI音效|
 | **[volume](Gameplay.Sound.md#volume)**(): `number` <br> 获取音量比例|
-| **[volumeMultiplier](Gameplay.Sound.md#volumemultiplier)**(): `number` <br> 获取音量比例|
 
 
 ::: details 点击查看继承
@@ -71,7 +58,6 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -80,11 +66,9 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 
 | Methods |
 | :-----|
-| **[getIsDrawInnerBounds](Gameplay.Sound.md#getisdrawinnerbounds)**(): `boolean` <br> 获取是否启用Bounds辅助线|
 | **[pause](Gameplay.Sound.md#pause)**(`bPause?`: `boolean`): `void` <br> 暂停播放特效|
 | **[play](Gameplay.Sound.md#play)**(`starttime?`: `number`, `OnSuccess?`: () => `void`): `void` <br> 播放音效|
 | **[setAudioAssetByGuid](Gameplay.Sound.md#setaudioassetbyguid)**(`assetGUID`: `string`): `void` <br> 通过GUID设置音效|
-| **[setSoundSphere](Gameplay.Sound.md#setsoundsphere)**(`radius`: `number`, `volume`: `number`, `drawBoundLine`: `boolean`, `newFunction`: [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md)): `void` <br> 设置音效.复合函数|
 | **[stop](Gameplay.Sound.md#stop)**(): `void` <br> 停止播放特效|
 
 
@@ -140,13 +124,11 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -232,179 +214,6 @@ param model usage:形状
 
 ___
 
-### audioAsset <Score text="audioAsset" /> 
-
-• `set` **audioAsset**(`assetGuid`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:setAudioAssetByGuid()
-
-:::
-
-设置音效
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `assetGuid` | `string` |
-
-
-___
-
-### autoPlay <Score text="autoPlay" /> 
-
-• `get` **autoPlay**(): `boolean`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isAutoPlay
-
-:::
-
-获取是否自动播放
-
-#### Returns
-
-`boolean`
-
-是否自动播放
-
-• `set` **autoPlay**(`autoPlay`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isAutoPlay
-
-:::
-
-设置是否自动播放
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `autoPlay` | `boolean` | 是否自动播放 |
-
-
-___
-
-### currentProgress <Score text="currentProgress" /> 
-
-• `get` **currentProgress**(): `number`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
-
-:::
-
-获取当前播放时长进度
-
-#### Returns
-
-`number`
-
-播放时长进度
-
-___
-
-### drawInnerBounds <Score text="drawInnerBounds" /> 
-
-• `get` **drawInnerBounds**(): `boolean`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
-
-:::
-
-获取是否绘制Bounds辅助线
-
-#### Returns
-
-`boolean`
-
-是否绘制
-
-• `set` **drawInnerBounds**(`drawInnerBounds`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
-
-:::
-
-设置是否绘制Bounds辅助线
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `drawInnerBounds` | `boolean` | 是否绘制 |
-
-
-___
-
-### duration <Score text="duration" /> 
-
-• `get` **duration**(): `number` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:timelength
-
-:::
-
-获取音效时长
-
-
-#### Returns
-
-`number`
-
-音效时长(ms)
-
-___
-
-### fallOffDistance <Score text="fallOffDistance" /> 
-
-• `get` **fallOffDistance**(): `number`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
-
-:::
-
-获取衰减距离
-
-#### Returns
-
-`number`
-
-距离
-
-• `set` **fallOffDistance**(`fallOffDistance`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:falloffDistance
-
-:::
-
-设置衰减距离
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fallOffDistance` | `number` | 距离 |
-
-
-___
-
 ### falloffDistance <Score text="falloffDistance" /> 
 
 • `get` **falloffDistance**(): `number` <Badge type="tip" text="client" />
@@ -430,43 +239,6 @@ ___
 | `fallOffDistance` | `number` | 距离 |
 
 
-
-### innerRadius <Score text="innerRadius" /> 
-
-• `get` **innerRadius**(): `number`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:soundDistance
-
-:::
-
-获取音量内部半径
-
-#### Returns
-
-`number`
-
-音量内部半径
-
-• `set` **innerRadius**(`innerRadius`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:soundDistance
-
-:::
-
-设置音量内部半径
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `innerRadius` | `number` | 设置半径 |
-
-
-___
 
 ### isAutoPlay <Score text="isAutoPlay" /> 
 
@@ -575,78 +347,6 @@ boolean
 
 
 
-### loop <Score text="loop" /> 
-
-• `get` **loop**(): `boolean`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isLoop
-
-:::
-
-获取是否循环播放
-
-#### Returns
-
-`boolean`
-
-是否循环
-
-• `set` **loop**(`Loop`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isLoop
-
-:::
-
-设置循环播放
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Loop` | `boolean` | 设置是否开启循环 |
-
-
-
-### outerRadius <Score text="outerRadius" /> 
-
-• `get` **outerRadius**(): `number`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:fallOffDistance
-
-:::
-
-获取衰减距离
-
-#### Returns
-
-`number`
-
-距离
-
-• `set` **outerRadius**(`outerRadius`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:fallOffDistance
-
-:::
-
-设置衰减距离
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outerRadius` | `number` | 距离 |
-
-
-
 ### playState <Score text="playState" /> 
 
 • `get` **playState**(): [`AudioPlayState`](../enums/Gameplay.AudioPlayState.md) <Badge type="tip" text="client" />
@@ -690,80 +390,6 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 | `ShapeExtents` | [`Vector`](Type.Vector.md) | 设置形状范围 |
 
 
-___
-
-### soundDistance <Score text="soundDistance" /> 
-
-• `get` **soundDistance**(): [`Vector`](Type.Vector.md)
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:ShapeExtents
-
-:::
-
-获取音效范围
-
-#### Returns
-
-[`Vector`](Type.Vector.md)
-
-音效范围
-
-• `set` **soundDistance**(`soundDistance`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:ShapeExtents
-
-:::
-
-设置音效范围
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `soundDistance` | [`Vector`](Type.Vector.md) | 设置半径 |
-
-
-___
-
-### spatialization <Score text="spatialization" /> 
-
-• `get` **spatialization**(): `boolean`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isSpatialization
-
-:::
-
-获取音效空间化
-
-#### Returns
-
-`boolean`
-
-是否开启音效空间化
-
-• `set` **spatialization**(`spatialization`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isSpatialization
-
-:::
-
-设置音效空间化，若是，则开启空间传播衰减
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `spatialization` | `boolean` | 设置开启音效空间化 |
-
-
 
 ### timePosition <Score text="timePosition" /> 
 
@@ -794,46 +420,6 @@ ___
 音效时长(ms)
 
 
-### uiSound <Score text="uiSound" /> 
-
-• `get` **uiSound**(): `boolean` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isUISound
-
-:::
-
-获取是否是UI音效
-
-
-#### Returns
-
-`boolean`
-
-Vector XYZ 0-1
-
-• `set` **uiSound**(`uiSound`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:isUISound
-
-:::
-
-设置是否是UI音效
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `uiSound` | `boolean` | 是否用于UI |
-
-
-
 ### volume <Score text="volume" /> 
 
 • `get` **volume**(): `number` <Badge type="tip" text="client" />
@@ -859,65 +445,8 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 | `volume` | `number` | 音量比例 |
 
 
-___
-
-### volumeMultiplier <Score text="volumeMultiplier" /> 
-
-• `get` **volumeMultiplier**(): `number`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:volume
-
-:::
-
-获取音量比例
-
-#### Returns
-
-`number`
-
-音量比例
-
-• `set` **volumeMultiplier**(`volumeMultiplier`): `void`
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: 删除接口 replacement:volume
-
-:::
-
-设置音量比例
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `volumeMultiplier` | `number` | 音量比例 |
-
-
 
 ## Methods
-
-### getIsDrawInnerBounds <Score text="getIsDrawInnerBounds" /> 
-
-• **getIsDrawInnerBounds**(): `boolean` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
-
-:::
-
-获取是否启用Bounds辅助线
-
-
-#### Returns
-
-`boolean`
-
-是否启用
-
 
 ### pause <Score text="pause" /> 
 
@@ -963,30 +492,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `assetGUID` | `string` | 音效资源ID |
-
-
-
-### setSoundSphere <Score text="setSoundSphere" /> 
-
-• **setSoundSphere**(`radius`, `volume`, `drawBoundLine`, `newFunction`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason: 删除接口 replacement:
-
-:::
-
-设置音效.复合函数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `radius` | `number` | 半径 |
-| `volume` | `number` | 音量大小 |
-| `drawBoundLine` | `boolean` | 是否画辅助线 |
-| `newFunction` | [`AttenuationDistanceModel`](../enums/Gameplay.AttenuationDistanceModel.md) | 音效衰减类型 |
 
 
 

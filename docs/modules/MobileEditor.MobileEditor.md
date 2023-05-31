@@ -18,6 +18,10 @@ MobileEditor
 | [GestureDelegate](../classes/MobileEditor.GestureDelegate.md) <br> 手势代理类|
 | [Gizmo](../classes/MobileEditor.Gizmo.md) <br> Gizmo|
 
+| Type Aliases |
+| :-----|
+| **[ReleaseGameData](MobileEditor.MobileEditor.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
+
 | Functions |
 | :-----|
 | **[UGCEditor](MobileEditor.MobileEditor.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
@@ -25,13 +29,15 @@ MobileEditor
 | **[addLikeContent](MobileEditor.MobileEditor.md#addlikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 点赞内容|
 | **[addMessage](MobileEditor.MobileEditor.md#addmessage)**(`UGCID`: `string`, `Content`: `string`): `void` <br> 添加留言|
 | **[addReplyMessage](MobileEditor.MobileEditor.md#addreplymessage)**(`UGCID`: `string`, `CommentID`: `string`, `Content`: `string`): `void` <br> 添加回复的消息|
-| **[asyncCaptureAvatar](MobileEditor.MobileEditor.md#asynccaptureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[asyncCaptureAvatar](MobileEditor.MobileEditor.md#asynccaptureavatar)**(`character`: [`Character`](../classes/Gameplay.Character.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[asyncGetQualityGameList](MobileEditor.MobileEditor.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\> <br> 获取优质作品列表|
+| **[asyncGetReleaseGameData](MobileEditor.MobileEditor.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <br> 通过指定的消费态游戏ID和版本号获取已发布的游戏数据|
 | **[asyncGetResourceList](MobileEditor.MobileEditor.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <br> 获取资源列表|
 | **[asyncSaveProject](MobileEditor.MobileEditor.md#asyncsaveproject)**(): `Promise`<`boolean`\> <br> 保存当前游戏项目|
 | **[beginActorPropertiesChange](MobileEditor.MobileEditor.md#beginactorpropertieschange)**(`target`: `Base`): `void` <br> 开始记录撤销恢复的actor属性|
 | **[beginActorTransformChange](MobileEditor.MobileEditor.md#beginactortransformchange)**(`target`: `Base`): `void` <br> 开始记录actor的transform属性|
 | **[calculateActorEqualScale](MobileEditor.MobileEditor.md#calculateactorequalscale)**(`currentScale`: [`Vector`](../classes/Type.Vector.md), `deltaScale`: [`Vector`](../classes/Type.Vector.md)): [`Vector`](../classes/Type.Vector.md) <br> 计算actor的等比缩放|
-| **[captureAvatar](MobileEditor.MobileEditor.md#captureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[captureAvatar](MobileEditor.MobileEditor.md#captureavatar)**(`character`: [`Character`](../classes/Gameplay.Character.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 同步对指定虚拟角色进行截取，截图保存在本地固定路径下|
 | **[clearUselessLocalMaterials](MobileEditor.MobileEditor.md#clearuselesslocalmaterials)**(`IgnoreMatGuids?`: `string`[]): `void` <br> 清除项目中没有引用的本地材质资源|
 | **[convertScreenLocationToWorldSpace](MobileEditor.MobileEditor.md#convertscreenlocationtoworldspace)**(`ScreenX`: `number`, `ScreenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[deleteLikeContent](MobileEditor.MobileEditor.md#deletelikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 取消点赞内容|
@@ -42,7 +48,7 @@ MobileEditor
 | **[getEditorPawnLocation](MobileEditor.MobileEditor.md#geteditorpawnlocation)**(): [`Vector`](../classes/Type.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
 | **[getEditorPawnRotation](MobileEditor.MobileEditor.md#geteditorpawnrotation)**(): [`Rotation`](../classes/Type.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
 | **[getGizmo](MobileEditor.MobileEditor.md#getgizmo)**(): [`Gizmo`](../classes/MobileEditor.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
-| **[getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
+| **[getHeadSculpture](MobileEditor.MobileEditor.md#getheadsculpture)**(`character`: [`Character`](../classes/Gameplay.Character.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
 | **[getLocalMaterialsCount](MobileEditor.MobileEditor.md#getlocalmaterialscount)**(): `number` <br> 获取创建的本地材质数量|
 | **[getObjectWithGuid](MobileEditor.MobileEditor.md#getobjectwithguid)**(`guid`: `string`): `Core.Script` <br> 查找需要在ugc编辑器中调用的gameobject, 第一次查找会触发onstart 和 反序列化 之后不再触发,避免数据还原需要加上类装饰器ugcEditor|
 | **[getOneFingerMoveGestureDelegate](MobileEditor.MobileEditor.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/Type.Vector2.md)) => `void`\> <br> 获取单指滑动的代理|
@@ -61,7 +67,7 @@ MobileEditor
 | **[queryMessageBoard](MobileEditor.MobileEditor.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
 | **[queryReplyMessage](MobileEditor.MobileEditor.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
 | **[queryViewRecord](MobileEditor.MobileEditor.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
-| **[recordingCharacterGif](MobileEditor.MobileEditor.md#recordingcharactergif)**(`Character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
+| **[recordingCharacterGif](MobileEditor.MobileEditor.md#recordingcharactergif)**(`Character`: [`Character`](../classes/Gameplay.Character.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](MobileEditor.MobileEditor.md#redo)**(): `void` <br> 执行恢复操作|
 | **[saveProject](MobileEditor.MobileEditor.md#saveproject)**(): `void` <br> 保存当前游戏项目|
 | **[saveViewRecord](MobileEditor.MobileEditor.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
@@ -83,6 +89,21 @@ MobileEditor
 | **[undo](MobileEditor.MobileEditor.md#undo)**(): `void` <br> 执行撤销操作|
 | **[uploadScreenShot](MobileEditor.MobileEditor.md#uploadscreenshot)**(`filePath`: `string`, `fileType`: `number`, `callbackURL?`: (`responseURL`: `string`) => `void`): `void` <br> 上传角色头像或全身照到服务器后发送到MGS|
 | **[uploadScreenShots](MobileEditor.MobileEditor.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <br> 上传角色头像及全身照到服务器后发送到MGS|
+
+## Type Aliases
+
+### ReleaseGameData <Score text="ReleaseGameData" /> 
+
+Ƭ **ReleaseGameData**: `Object`
+
+已发布的游戏数据，用于继承服务器数据。
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameCover` | `string` | 已发布的游戏封面路径（存放于'项目目录/Pictures'下） |
+| `gameName` | `string` | 已发布的游戏名称 |
 
 ## Functions
 
@@ -182,7 +203,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `character` | [`Character`](../classes/Gameplay.Character.md) |  指定截取GIF的Character |
 | `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
 | `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
 | `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
@@ -195,6 +216,50 @@ ___
 `Promise`<`string`\>
 
 生成的截图的本地绝对路径
+
+___
+
+### asyncGetQualityGameList <Score text="asyncGetQualityGameList" /> 
+
+• **asyncGetQualityGameList**(`resourceId`, `pageIndex`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+获取优质作品列表
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `resourceId` | `number` | T台Id |
+| `pageIndex` | `number` | 分页索引 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+
+___
+
+### asyncGetReleaseGameData <Score text="asyncGetReleaseGameData" /> 
+
+• **asyncGetReleaseGameData**(`gameId`, `version?`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <Badge type="tip" text="client" />
+
+通过指定的消费态游戏ID和版本号获取已发布的游戏数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameId` | `string` | 消费态游戏Id |
+| `version?` | `string` | 消费态游戏版本号 default:" " |
+
+#### Returns
+
+`Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\>
+
+请求结果(结构体对象：`{游戏名称：gameName, 游戏封面路径：gameCover}`)
 
 ___
 
@@ -307,7 +372,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `character` | [`Character`](../classes/Gameplay.Character.md) |  指定截取GIF的Character |
 | `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
 | `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0); |
 | `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
@@ -502,7 +567,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `character` | [`Character`](../classes/Gameplay.Character.md) |  指定截取GIF的Character |
 | `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 |
 | `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 |
 | `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |
@@ -716,7 +781,7 @@ ___
 
 ::: warning Precautions
 
-只在ListenServer模式下调用生效，在PIE模式下无法调用
+只在ListenServer模式下调用生效，在PIE模式下无法调用,发布游戏会自动保存一次工程
 
 :::
 
@@ -853,7 +918,7 @@ Playza定制接口
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Character` | [`CharacterBase`](../classes/Gameplay.CharacterBase.md) |  指定截取GIF的Character |
+| `Character` | [`Character`](../classes/Gameplay.Character.md) |  指定截取GIF的Character |
 | `relativeLocation` | [`Vector`](../classes/Type.Vector.md) |  镜头相对位置 ScreenShot()中默认为Vector(35, 0, 50) |
 | `relativeRotation` | [`Rotation`](../classes/Type.Rotation.md) |  镜头相对旋转 ScreenShot()中默认为Rotation(0, 180, 0) |
 | `resolution` | [`Vector2`](../classes/Type.Vector2.md) |  截图尺寸 |

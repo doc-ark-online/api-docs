@@ -23,7 +23,7 @@ Type
 | [Action3](../classes/Type.Action3.md) <br> 三个参数的代理|
 | [ConvertScreenResult](../classes/Type.ConvertScreenResult.md) <br> 屏幕坐标转换结果|
 | [Delegate](../classes/Type.Delegate.md) <br> 委托|
-| [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色|
+| [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0|
 | [Matrix3x3](../classes/Type.Matrix3x3.md) <br> 三维矩阵|
 | [Matrix4x4](../classes/Type.Matrix4x4.md) <br> 四维矩阵|
 | [MulticastDelegate](../classes/Type.MulticastDelegate.md) <br> 多播委托接口|

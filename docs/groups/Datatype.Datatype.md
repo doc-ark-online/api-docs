@@ -12,7 +12,7 @@ Datatype
 | [ConvertScreenResult](../classes/Type.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
 | [Delegate](../classes/Type.Delegate.md) <br> 委托 |
 | [HitResult](../classes/Gameplay.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
-| [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色 |
+| [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 |
 | [Matrix3x3](../classes/Type.Matrix3x3.md) <br> 三维矩阵 |
 | [Matrix4x4](../classes/Type.Matrix4x4.md) <br> 四维矩阵 |
 | [MulticastDelegate](../classes/Type.MulticastDelegate.md) <br> 多播委托接口 |
@@ -48,10 +48,7 @@ Datatype
 | Modules Type Aliases |
 | :-----|
 | **[BoolResponse](Datatype.Datatype.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
-| **[CameraShakeData](Datatype.Datatype.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
-| **[CameraSystemData](Datatype.Datatype.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
 | **[Constructor](Datatype.Datatype.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型|
-| **[DecorationTuple](Datatype.Datatype.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
 | **[DownloadDataResponse](Datatype.Datatype.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[EasingFunction](Datatype.Datatype.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
 | **[EmptyCallback](Datatype.Datatype.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
@@ -62,12 +59,13 @@ Datatype
 | **[MGSEvent](Datatype.Datatype.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Datatype.Datatype.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](Datatype.Datatype.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
+| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/Gameplay.MovementType.md)) => `void` <br> 移动状态切换委托|
 | **[OnOrderDelivered](Datatype.Datatype.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 | **[OnRecvChatMessage](Datatype.Datatype.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
+| **[OnStyleCompleted](Datatype.Datatype.md#onstylecompleted)**: (`character`: [`Character`](../classes/Gameplay.Character.md)) => `void` <br> 外观加载完成委托|
 | **[OnViewLayoutSwitched](Datatype.Datatype.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Datatype.Datatype.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
-| **[Oscillator](Datatype.Datatype.md#oscillator)**: `Object` <br> 震动数值|
+| **[ReleaseGameData](Datatype.Datatype.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
 | **[SetAppearanceDataCallback](Datatype.Datatype.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
 | **[StringCallback](Datatype.Datatype.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 | **[StringResponse](Datatype.Datatype.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
@@ -109,72 +107,6 @@ ___
 `void`
 ___
 
-### CameraShakeData <Score text="CameraShakeData" /> 
-
-Ƭ **CameraShakeData**: `Object`
-
-摄像机震动数据
-
-::: warning Precautions
-
-摄像机震动数据
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fovOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | FOV振荡 |
-| `locXOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置X轴振荡 |
-| `locYOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置Y轴振荡 |
-| `locZOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置Z轴振荡 |
-| `rotPitchOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Pitch轴振荡 |
-| `rotRollOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Roll轴振荡 |
-| `rotYawOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Yaw轴振荡 |
-___
-
-### CameraSystemData <Score text="CameraSystemData" /> 
-
-Ƭ **CameraSystemData**: `Object`
-
-摄像机属性数据
-
-::: warning Precautions
-
-主要给载具摄像机使用
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `cameraDownLimitAngle?` | `number` | 向下限制角度 |
-| `cameraFOV?` | `number` | 视场 |
-| `cameraLocationLagSpeed?` | `number` | 摄像机位置延迟速度 |
-| `cameraLocationMode?` | [`CameraLocationMode`](../enums/Gameplay.CameraLocationMode.md) | 摄像机位置模式 |
-| `cameraProjectionMode?` | [`CameraProjectionMode`](../enums/Gameplay.CameraProjectionMode.md) | 投影模式 |
-| `cameraRelativeTransform?` | [`Transform`](../classes/Type.Transform.md) | 摄像机相对Transform |
-| `cameraRotationLagSpeed?` | `number` | 摄像机旋转延迟速度 |
-| `cameraRotationMode?` | [`CameraRotationMode`](../enums/Gameplay.CameraRotationMode.md) | 摄像机朝向模式 |
-| `cameraUpLimitAngle?` | `number` | 向上限制角度 |
-| `cameraWorldTransform?` | [`Transform`](../classes/Type.Transform.md) | 摄像机世界Transform |
-| `enableCameraCollision?` | `boolean` | 是否有摄像机碰撞 |
-| `enableCameraLocationLag?` | `boolean` | 开启摄像机位置延迟 |
-| `enableCameraRotationLag?` | `boolean` | 开启摄像机旋转延迟 |
-| `enableFadeEffect?` | `boolean` | 是否开启物体透明 |
-| `enableRaiseCamera?` | `boolean` | 开启碰撞抬高 |
-| `fadeEffectValue?` | `number` | 物体透明度 |
-| `orthoFarClipPlane?` | `number` | 正交视图远平面距离 |
-| `orthoNearClipPlane?` | `number` | 正交视图近平面距离 |
-| `orthoWidth?` | `number` | 正交宽度 |
-| `raiseCameraHeight?` | `number` | 抬高高度 |
-| `slotOffset?` | [`Vector`](../classes/Type.Vector.md) | 摄像机位置偏移 |
-| `targetArmLength?` | `number` | 距离调整 |
-| `targetOffset?` | [`Vector`](../classes/Type.Vector.md) | 挂点位置偏移 |
-___
-
 ### Constructor <Score text="Constructor" /> 
 
 Ƭ **Constructor**<`T`\>: (...`args`: `any`[]) => `T`
@@ -183,7 +115,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) |
+| `T` | extends [`SomatotypeBase`](../classes/Gameplay.Gameplay.SomatotypeBase.md) |
 
 #### Type declaration
 
@@ -196,14 +128,6 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `...args` | `any`[] |
-___
-
-### DecorationTuple <Score text="DecorationTuple" /> 
-
-Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`]
-
-运行时态角色身上的挂件数据
-
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
@@ -410,19 +334,19 @@ ___
 
 ### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
 
-Ƭ **OnMovementStateChanged**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void`
+Ƭ **OnMovementStateChanged**: (`mode`: [`MovementType`](../enums/Gameplay.MovementType.md)) => `void`
 
 #### Type declaration
 
 • (`mode`): `void`
 
-移动状态切换回调
+移动状态切换委托
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `mode` | [`MovementMode`](../enums/Gameplay.MovementMode.md) |
+| `mode` | [`MovementType`](../enums/Gameplay.MovementType.md) |
 
 ##### Returns
 
@@ -476,6 +400,33 @@ ___
 `void`
 ___
 
+### OnStyleCompleted <Score text="OnStyleCompleted" /> 
+
+Ƭ **OnStyleCompleted**: (`character`: [`Character`](../classes/Gameplay.Character.md)) => `void`
+
+#### Type declaration
+
+• (`character`): `void`
+
+外观加载完成委托
+
+::: warning Precautions
+
+当角色外观加载完成时执行绑定函数
+
+:::
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `character` | [`Character`](../classes/Gameplay.Character.md) |
+
+##### Returns
+
+`void`
+___
+
 ### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
 
 Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
@@ -512,25 +463,18 @@ ___
 `void`
 ___
 
-### Oscillator <Score text="Oscillator" /> 
+### ReleaseGameData <Score text="ReleaseGameData" /> 
 
-Ƭ **Oscillator**: `Object`
+Ƭ **ReleaseGameData**: `Object`
 
-震动数值
-
-::: warning Precautions
-
-震动数值
-
-:::
+已发布的游戏数据，用于继承服务器数据。
 
 #### Type declaration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `amplitude?` | `number` | 正弦振荡的幅度 |
-| `frequency?` | `number` | 正弦振荡的频率 |
-| `waveform?` | [`EOscillatorWaveform`](../enums/Gameplay.EOscillatorWaveform.md) | 用于振荡的波形类型 |
+| `gameCover` | `string` | 已发布的游戏封面路径（存放于'项目目录/Pictures'下） |
+| `gameName` | `string` | 已发布的游戏名称 |
 ___
 
 ### SetAppearanceDataCallback <Score text="SetAppearanceDataCallback" /> 

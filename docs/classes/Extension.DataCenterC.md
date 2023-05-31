@@ -10,6 +10,44 @@
 
 :::
 
+使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
+```ts
+@Core.Class
+export default class DataCenterCExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        this.traceLevel();
+    }
+
+    //等待玩家数据准备好并输出玩家数据的等级
+    public async traceLevel(): Promise<void> {
+        if (SystemUtil.isClient()) {
+            //等待玩家数据准备好
+            await DataCenterC.getInstance().ready();
+            console.log("玩家数据就绪");
+            let playerData = DataCenterC.getInstance().getData(PlayerModuleData);
+            console.log("玩家等级：", playerData.getlevel());
+        }
+    }
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+}
+```
+
 ## Table of contents
 
 | Methods |
@@ -26,6 +64,43 @@
 
 获取当前玩家的一个数据
 
+
+使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息
+```ts
+@Core.Class
+export default class DataCenterCExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        this.traceLevel();
+    }
+
+    //等待玩家数据准备好并输出玩家数据的等级
+    public async traceLevel(): Promise<void> {
+        if (SystemUtil.isClient()) {
+            //等待玩家数据准备好
+            await DataCenterC.getInstance().ready();
+            let playerData = DataCenterC.getInstance().getData(PlayerModuleData);
+            console.log("玩家等级：", playerData.getlevel());
+        }
+    }
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+}
+```
 
 #### Type parameters
 
@@ -53,6 +128,44 @@ ___
 
 判断数据是否就绪
 
+
+使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
+```ts
+@Core.Class
+export default class DataCenterCExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        this.traceLevel();
+    }
+
+    //等待玩家数据准备好并输出玩家数据的等级
+    public async traceLevel(): Promise<void> {
+        if (SystemUtil.isClient()) {
+            //等待玩家数据准备好
+            await DataCenterC.getInstance().ready();
+            console.log("玩家数据就绪");
+            let playerData = DataCenterC.getInstance().getData(PlayerModuleData);
+            console.log("玩家等级：", playerData.getlevel());
+        }
+    }
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+}
+```
 
 #### Returns
 

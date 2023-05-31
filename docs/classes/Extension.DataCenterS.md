@@ -10,6 +10,63 @@
 
 :::
 
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键）
+```ts
+@Core.Class
+export default class DataCenterSExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        if (SystemUtil.isServer()) {
+            DataCenterS.getInstance().onPlayerJoined.add(this.onPlayerJoin, this);
+            DataCenterS.getInstance().onPlayerLeft.add(this.onPlayerLeave, this);
+        }
+    }
+
+    //玩家加入且数据就绪
+    private onPlayerJoin(player: Gameplay.Player): void {
+        let playerData = DataCenterS.getInstance().getData(player, PlayerModuleData);
+        console.log("玩家加入，当前玩家等级为：", playerData.getlevel());
+        console.log("显示当前所有玩家的等级：");
+        const playerIds = DataCenterS.getInstance().getReadyPlayerIds();
+        playerIds.forEach(playerId => {
+            let playerData = DataCenterS.getInstance().getData(playerId, PlayerModuleData);
+            console.log("玩家playerId为：" + playerId, "的等级：", playerData.getlevel());
+        });
+    }
+
+    //玩家离开
+    private onPlayerLeave(player: Gameplay.Player): void {
+        let playerData = DataCenterS.getInstance().getData(player, PlayerModuleData);
+        playerData.levelUp();
+        console.log("玩家离开，等级提升为：", playerData.getlevel());
+    }
+
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+
+    //玩家升级
+    public levelUp(): void {
+        this.level++;
+        //保存数据
+        this.save(false);
+    }
+}
+```
+
 ## Table of contents
 
 | Properties |
@@ -48,6 +105,46 @@ ___
 获取玩家的子数据
 
 
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
+```ts
+@Core.Class
+export default class DataCenterSExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        this.traceLevel();
+    }
+
+    //服务端等待玩家加入游戏并且输出玩家数据的等级
+    public async traceLevel(): Promise<void> {
+        if (SystemUtil.isServer()) {
+            Events.addPlayerJoinedListener(player => {
+                //延迟一帧执行，等待玩家数据加载完成
+                setTimeout(() => {
+                    let playerData = DataCenterS.getInstance().getData(player, PlayerModuleData);
+                    console.log("玩家等级：", playerData.getlevel());
+                }, 0);
+            })
+        }
+    }
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+}
+```
+
 #### Type parameters
 
 | Name | Type |
@@ -75,6 +172,49 @@ ___
 
 获取在线且数据就绪的所有玩家ID
 
+
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
+```ts
+@Core.Class
+export default class DataCenterSExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        if (SystemUtil.isClient()) {
+            InputUtil.onKeyDown(Keys.F, () => {
+                this.traceAllLevel();
+            })
+        }
+    }
+
+    //测试输出所有数据就绪的玩家的等级
+    @Core.Function(Core.Server)
+    public traceAllLevel(): void {
+        if (SystemUtil.isServer()) {
+            const playerIds = DataCenterS.getInstance().getReadyPlayerIds();
+            playerIds.forEach(playerId => {
+                let playerData = DataCenterS.getInstance().getData(playerId, PlayerModuleData);
+                console.log("玩家playerId为：" + playerId, "的等级：", playerData.getlevel());
+            });
+        }
+    }
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number = 0;
+
+    public getlevel(): number {
+        return this.level;
+    }
+}
+```
 
 #### Returns
 

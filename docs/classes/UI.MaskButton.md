@@ -29,7 +29,7 @@
 | **[fanShapedValue](UI.MaskButton.md#fanshapedvalue)**(): `number` <br> 获取扇形遮罩的遮罩进度|
 | **[focusable](UI.MaskButton.md#focusable)**(): `boolean` <br> 获取是否获取输入焦点|
 | **[hoveredDelegate](UI.MaskButton.md#hovereddelegate)**(): [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 悬浮事件|
-| **[inverseOpacity](UI.MaskButton.md#inverseopacity)**(): `number` <br> 获取反转透明度权重|
+| **[inverseOpacity](UI.MaskButton.md#inverseopacity)**(): `boolean` <br> 获取反转透明度权重|
 | **[isTransitionEnable](UI.MaskButton.md#istransitionenable)**(): `boolean` <br> 按钮是否启用过度模式,按下是否有效果|
 | **[maskImageColor](UI.MaskButton.md#maskimagecolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取遮罩图片颜色|
 | **[maskImageGuid](UI.MaskButton.md#maskimageguid)**(): `string` <br> 获取设置遮罩图片ID|
@@ -78,7 +78,6 @@
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -484,14 +483,14 @@ ___
 
 ### inverseOpacity <Score text="inverseOpacity" /> 
 
-• `get` **inverseOpacity**(): `number` <Badge type="tip" text="client" />
+• `get` **inverseOpacity**(): `boolean` <Badge type="tip" text="client" />
 
 获取反转透明度权重
 
 
 #### Returns
 
-`number`
+`boolean`
 
 权重
 
@@ -504,7 +503,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inverseOpacityWeight` | `number` | 权重 |
+| `inverseOpacityWeight` | `boolean` | 权重 |
 
 
 

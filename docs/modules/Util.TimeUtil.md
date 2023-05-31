@@ -17,7 +17,6 @@
 | **[clearInterval](Util.TimeUtil.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
 | **[delayExecute](Util.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Util.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[delayTime](Util.TimeUtil.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](Util.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[parseTime](Util.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
 | **[setInterval](Util.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
@@ -37,11 +36,25 @@
 
 :::
 
-使用示例:绑定函数
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每帧输出dt
 ```ts
-onEnterFrame.add((dt : number) =>{
-     console.log("dt:" + dt);
-});
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        TimeUtil.onEnterFrame.add(this.onEnterFrame, this);
+    }
+
+    private onEnterFrame(dt: number): void {
+        console.log("dt", dt);
+    }
+
+}
 ```
 
 ___
@@ -61,6 +74,28 @@ ___
 清除delayExecute
 
 
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let id = TimeUtil.delayExecute(() => {
+            //延迟600帧执行 pie环境大概10s
+            console.log("delay 600execute");
+        }, 600)
+        TimeUtil.clearDelayExecute(id);
+//清除延迟执行
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -77,6 +112,36 @@ ___
 清除setInterval
 
 
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let isInterval = false;
+        let id = 0;
+        let ineterval = TimeUtil.setInterval(() => {
+            console.log(id);
+            id++;
+            if (id > 5) {
+                isInterval = true;
+            }
+        }, 2, () => {
+            return isInterval;
+        })
+        InputUtil.onKeyDown(Keys.F, () => {
+            TimeUtil.clearInterval(ineterval);
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -92,6 +157,25 @@ ___
 
 延迟一定帧数执行方法
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        TimeUtil.delayExecute(() => {
+            //延迟600帧执行 pie环境大概10s
+            console.log("delay 600execute");
+        }, 600)
+    }
+}
+```
 
 #### Parameters
 
@@ -115,13 +199,22 @@ ___
 延迟一定秒数,用于异步方法中间的等待
 
 
-使用示例:延迟处理
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
 ```ts
-async test(): Promise<void> {
-     console.log("Do something 1");
-     await delaySecond(0.5);
-//延迟0.5秒
-     console.log("Do something 2");
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        TimeUtil.delaySecond(5).then(() => {
+            console.log("5 seconds later");
+        })
+    }
+
 }
 ```
 
@@ -139,33 +232,6 @@ Promise
 
 ___
 
-### delayTime <Score text="delayTime" /> 
-
-• **delayTime**(): `number` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
-
-:::
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
-
-___
-
 ### elapsedTime <Score text="elapsedTime" /> 
 
 • **elapsedTime**(): `number` 
@@ -179,11 +245,23 @@ ___
 
 :::
 
-使用示例:获取并显示游戏运行的总时长
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长
 ```ts
-function test(){
-     const elapsedTime = TimeUtil.elapsedTime;
-     console.log(`The game ran for ${elapsedTime} seconds`);
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        InputUtil.onKeyDown(Keys.F, () => {
+            const elapsedTime = TimeUtil.elapsedTime();
+            console.log(`The game ran for ${elapsedTime} seconds`);
+        });
+    }
+
 }
 ```
 
@@ -201,6 +279,24 @@ ___
 
 格式化时间戳
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+       this.test();
+    }
+
+    private async test(): Promise<void> {
+       if (!SystemUtil.isClient()) return;
+       const time = TimeUtil.parseTime(new Date());
+       console.log(`time:${time}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -223,6 +319,33 @@ ___
 
 按一定时间间隔执行方法
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let isInterval = false;
+        let id = 0;
+        TimeUtil.setInterval(() => {
+            console.log(id);
+            id++;
+            if (id > 5) {
+                isInterval = true;
+            }
+        }, 2, () => {
+            return isInterval;
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -253,12 +376,23 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
 
-使用示例:获取并显示时间戳
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳
 ```ts
-function test(){
-     const time = TimeUtil.time;
-     console.log(`time stamp:${time}`);
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        const time = TimeUtil.time();
+        console.log(`time stamp:${time}`);
+    }
+
 }
+```
 
 #### Returns
 

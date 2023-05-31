@@ -39,7 +39,6 @@ Utility
 | **[degreesToRadians](Utility.Utility.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
 | **[delayExecute](Utility.Utility.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[delayTime](Utility.Utility.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[drawGameObjectSelectionBox](Utility.Utility.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `Color`: [`LinearColor`](../classes/Type.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
 | **[elapsedTime](Utility.Utility.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[enableCursorInteractWithUI](Utility.Utility.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
@@ -47,15 +46,12 @@ Utility
 | **[fmod](Utility.Utility.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
 | **[format](Utility.Utility.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
 | **[getGameObjectBySelectionBox](Utility.Utility.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取框选屏幕位置的物体|
-| **[isAssetExist](Utility.Utility.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
-| **[isAssetLoaded](Utility.Utility.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[isCursorInteractiveWithUI](Utility.Utility.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
 | **[isCursorLockEnabled](Utility.Utility.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
 | **[isCursorLocked](Utility.Utility.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
 | **[isCursorVisible](Utility.Utility.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
 | **[isEmpty](Utility.Utility.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
 | **[lerp](Utility.Utility.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[loadAsset](Utility.Utility.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
 | **[maskWordCheck](Utility.Utility.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](Utility.Utility.md#maskwordcheck)Result`](Utility.Utility.md#maskwordcheckresult)\> <br> 屏蔽字检测|
 | **[nextId](Utility.Utility.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
 | **[onKeyDown](Utility.Utility.md#onkeydown)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-点击|
@@ -94,6 +90,29 @@ ___
 资源是否加载
 
 
+使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
+```ts
+@Core.Class
+export default class AssetExample extends Core.Script {
+
+    protected onStart(): void {
+        const cubeAssetId = "7711";
+        if (AssetUtil.assetLoaded(cubeAssetId)) {
+            console.log("AssetExample: Cube asset is already loaded.");
+            let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        } else {
+            console.log("AssetExample: Cube asset is not loaded, downloading...");
+            AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
+                let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+                obj.worldLocation = new Type.Vector(0, 0, 0);
+            });
+        }
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -114,11 +133,27 @@ ___
 资源下载并加载
 
 
-使用示例:调用方法
+使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
 ```ts
-AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
-    // result为true是资源加载成功;
-});
+@Core.Class
+export default class AssetExample extends Core.Script {
+
+    protected onStart(): void {
+        const cubeAssetId = "7711";
+        if (AssetUtil.assetLoaded(cubeAssetId)) {
+            console.log("AssetExample: Cube asset is already loaded.");
+            let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+            obj.worldLocation = new Type.Vector(0, 0, 0);
+        } else {
+            console.log("AssetExample: Cube asset is not loaded, downloading...");
+            AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
+                let obj = Core.GameObject.spawn({ guid: cubeAssetId });
+                obj.worldLocation = new Type.Vector(0, 0, 0);
+            });
+        }
+    }
+
+}
 ```
 
 #### Parameters
@@ -141,6 +176,63 @@ ___
 绑定按键
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.bindButton(Keys.SpaceBar, btn.button);
+        setTimeout(() => {
+            InputUtil.unbindButton(Keys.SpaceBar);
+        }, 5000);
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -156,6 +248,24 @@ ___
 
 将传入的数值a限制在min与max范围内，超出部分自动舍弃
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let clamp = MathUtil.clamp(20, 0, 10);
+        console.log(`clamp: ${clamp}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -179,6 +289,28 @@ ___
 清除delayExecute
 
 
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let id = TimeUtil.delayExecute(() => {
+            //延迟600帧执行 pie环境大概10s
+            console.log("delay 600execute");
+        }, 600)
+        TimeUtil.clearDelayExecute(id);
+//清除延迟执行
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -193,6 +325,36 @@ ___
 
 清除setInterval
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let isInterval = false;
+        let id = 0;
+        let ineterval = TimeUtil.setInterval(() => {
+            console.log(id);
+            id++;
+            if (id > 5) {
+                isInterval = true;
+            }
+        }, 2, () => {
+            return isInterval;
+        })
+        InputUtil.onKeyDown(Keys.F, () => {
+            TimeUtil.clearInterval(ineterval);
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -209,6 +371,23 @@ ___
 文本复制，将字符串复制到剪切板
 
 
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        StringUtil.clipboardCopy("hello world!");
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -224,6 +403,24 @@ ___
 文本粘贴，获取剪切板的文本
 
 
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let text = StringUtil.clipboardPaste();
+        console.log("clipboardPaste", text);
+    }
+
+}
+```
+
 #### Returns
 
 `string`
@@ -238,11 +435,30 @@ ___
 计算cos值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的cos值
+    private async test(): Promise<void> {
+        let cos = MathUtil.cos(Math.PI);
+        console.log(`cos: ${cos}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
+| `a` | `number` | 待机算的数值a |
 
 #### Returns
 
@@ -257,6 +473,25 @@ ___
 
 根据输入的度数返回弧度值
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let degree = 180;
+        let radians = MathUtil.degreesToRadians(degree);
+        console.log(`degreesToRadians: ${radians}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -277,6 +512,25 @@ ___
 
 延迟一定帧数执行方法
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        TimeUtil.delayExecute(() => {
+            //延迟600帧执行 pie环境大概10s
+            console.log("delay 600execute");
+        }, 600)
+    }
+}
+```
 
 #### Parameters
 
@@ -299,13 +553,22 @@ ___
 延迟一定秒数,用于异步方法中间的等待
 
 
-使用示例:延迟处理
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
 ```ts
-async test(): Promise<void> {
-     console.log("Do something 1");
-     await delaySecond(0.5);
-//延迟0.5秒
-     console.log("Do something 2");
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        TimeUtil.delaySecond(5).then(() => {
+            console.log("5 seconds later");
+        })
+    }
+
 }
 ```
 
@@ -322,38 +585,51 @@ async test(): Promise<void> {
 Promise
 ___
 
-### delayTime <Score text="delayTime" /> 
-
-• **delayTime**(): `number` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
-
-:::
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
-___
-
 ### drawGameObjectSelectionBox <Score text="drawGameObjectSelectionBox" /> 
 
 • **drawGameObjectSelectionBox**(`StartPoint`, `EndPoint`, `Color`, `DurationTime?`): `void` <Badge type="tip" text="client" />
 
 绘制物体选择框
 
+
+使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
+```ts
+@Core.Class
+export default class SelectionExample extends Core.Script {
+
+    touchIndexesStart: Map<number, Vector2> = new Map<number, Vector2>();
+    selectedGoes: Array<Gameplay.HitResult> = [];
+    touch: Gameplay.TouchInput;
+
+    async onStart() {
+        this.touch = new Gameplay.TouchInput();
+        await Gameplay.asyncGetCurrentPlayer();
+        this.touch.onTouch.add((index, location, type) => {
+            console.log("ontouch", index, location, type);
+            if (type == Gameplay.TouchInputType.TouchBegin) {
+                this.onTouchBegin(index, location);
+            }
+            else if (type == Gameplay.TouchInputType.TouchMove) {
+                this.onTouchMove(index, location);
+            }
+        })
+        this.touch.setPlayerController();
+    }
+
+    // 开始触摸屏幕，记录初始位置
+    onTouchBegin(index: number, location: Vector2) {
+        this.touchIndexesStart.set(index, location);
+    }
+
+    // 触摸移动, 绘制选择框
+    onTouchMove(index: number, location: Vector2) {
+        let start = this.touchIndexesStart.get(index);
+        if (!start) { return;
+}
+        SelectionUtil.drawGameObjectSelectionBox(start, location, Type.LinearColor.red, 0.03);
+    }
+}
+```
 
 #### Parameters
 
@@ -379,11 +655,23 @@ ___
 
 :::
 
-使用示例:获取并显示游戏运行的总时长
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长
 ```ts
-function test(){
-     const elapsedTime = TimeUtil.elapsedTime;
-     console.log(`The game ran for ${elapsedTime} seconds`);
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        InputUtil.onKeyDown(Keys.F, () => {
+            const elapsedTime = TimeUtil.elapsedTime();
+            console.log(`The game ran for ${elapsedTime} seconds`);
+        });
+    }
+
 }
 ```
 
@@ -401,6 +689,26 @@ ___
 设置鼠标指针是否能与UI交互
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改鼠标是否可与屏幕UI交互
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -416,6 +724,26 @@ ___
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改shift是否可控制光标显示
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -430,6 +758,24 @@ ___
 
 返回 数值x 除以 数值y 的余数
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let fmod = MathUtil.fmod(20, 3);
+        console.log(`fmod: ${fmod}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -452,10 +798,22 @@ ___
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
 
-使用示例:格式化字符串用法
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world!
 ```ts
-// targetString = "hello world!";
-let targetString = Util.StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let targetString = StringUtil.format("{0} {1}{2}", "hello", "world", "!");
+        console.log(targetString);
+    }
+
+}
 ```
 
 #### Parameters
@@ -479,6 +837,81 @@ ___
 获取框选屏幕位置的物体
 
 
+使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
+```ts
+@Core.Class
+export default class SelectionExample extends Core.Script {
+
+    touchIndexesStart: Map<number, Vector2> = new Map<number, Vector2>();
+    selectedGoes: Array<Gameplay.HitResult> = [];
+    touch: Gameplay.TouchInput;
+
+    async onStart() {
+        this.creatObjs();
+        this.touch = new Gameplay.TouchInput();
+        await Gameplay.asyncGetCurrentPlayer();
+        this.touch.onTouch.add((index, location, type) => {
+            console.log("ontouch", index, location, type);
+            if (type == Gameplay.TouchInputType.TouchBegin) {
+                this.onTouchBegin(index, location);
+            } else if (type == Gameplay.TouchInputType.TouchMove) {
+                this.onTouchMove(index, location);
+            } else if (type == Gameplay.TouchInputType.TouchEnd) {
+                this.onTouchEnd(index, location);
+            }
+        })
+        this.touch.setPlayerController();
+    }
+
+    //在场景中随机生成一些物体，用于框选
+    private creatObjs() {
+        const cubeAssetId = "7669";
+        for (let i = 0;
+i < 50;
+i++) {
+            Core.GameObject.asyncSpawn({ guid: cubeAssetId }).then(obj => {
+                obj.worldLocation = new Type.Vector(MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500), MathUtil.randomInt(-500, 500));
+            })
+        }
+    }
+
+    // 开始触摸屏幕，记录初始位置
+    private onTouchBegin(index: number, location: Vector2) {
+        this.touchIndexesStart.set(index, location);
+    }
+
+    // 触摸移动, 绘制选择框
+    private onTouchMove(index: number, location: Vector2) {
+        let start = this.touchIndexesStart.get(index);
+        if (!start) { return;
+}
+        SelectionUtil.drawGameObjectSelectionBox(start, location, Type.LinearColor.red, 0.03);
+    }
+
+    // 触摸结束，框选对象
+    private onTouchEnd(index: number, location: Vector2) {
+        let start = this.touchIndexesStart.get(index);
+        if (!start) { return;
+}
+        // 取消上一次框选对象的描边
+        this.selectedGoes.forEach(result => {
+            let mesh = result.gameObject as Gameplay.Mesh;
+            mesh.setOutlineAndColor(false, 1);
+        })
+        // 框选对象
+        this.selectedGoes = SelectionUtil.getGameObjectBySelectionBox(start, location, false, false).filter(result => (result.gameObject instanceof Gameplay.StaticMesh));
+        // 未框选对象添加描边
+        this.selectedGoes.forEach(result => {
+            let mesh = result.gameObject as Gameplay.Mesh;
+            mesh.setOutlineAndColor(true, 1);
+            //Gameplay.addOutlineEffect(result.gameObject, Type.LinearColor.red, 1, 0, 1, false, false);
+        })
+        SelectionUtil.setGlobalOutlineParams(4, 0, 0, 0, 1);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -495,64 +928,32 @@ ___
 框选的物体
 ___
 
-### isAssetExist <Score text="isAssetExist" /> 
-
-• **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否存在
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
-___
-
-### isAssetLoaded <Score text="isAssetLoaded" /> 
-
-• **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-___
-
 ### isCursorInteractiveWithUI <Score text="isCursorInteractiveWithUI" /> 
 
 • **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="client" />
 
 获取鼠标指针是否能与UI交互
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改鼠标是否可与屏幕UI交互
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+        })
+    }
+
+}
+```
 
 #### Returns
 
@@ -568,6 +969,26 @@ ___
 获取是否允许通过快捷方式切换鼠标的使用组合模式
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改shift是否可控制光标显示
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+        })
+    }
+
+}
+```
+
 #### Returns
 
 `boolean`
@@ -581,6 +1002,26 @@ ___
 
 获取鼠标指针是否锁定
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，锁定/解锁鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+        })
+    }
+
+}
+```
 
 #### Returns
 
@@ -596,6 +1037,26 @@ ___
 获取鼠标指针是否可见
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，显示/隐藏鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+        })
+    }
+
+}
+```
+
 #### Returns
 
 `boolean`
@@ -609,6 +1070,24 @@ ___
 
 判断字符串是否为空(null或"")
 
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let isEmpty1 = StringUtil.isEmpty("hello world!");
+        console.log("isEmpty1: " + isEmpty1);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -636,6 +1115,24 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 :::
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的中间值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let lerp = MathUtil.lerp(1, 10, 0.5);
+        console.log(`lerp: ${lerp}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -651,37 +1148,43 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 计算结果
 ___
 
-### loadAsset <Score text="loadAsset" /> 
-
-• **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-___
-
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
 • **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
 
+
+::: warning Precautions
+
+接口中遇到异常情况会返回reject，使用该接口需要用catch处理这种异常情况
+
+:::
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过
+```ts
+@Core.Class
+export default class StringExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        StringUtil.maskWordCheck("自杀之王").then(result => {
+            if (!result.result) {
+                console.log("屏蔽字检测不通过");
+                console.log("命中的文本：" + result.hits);
+            }
+        }).catch(error => {
+            console.log("屏蔽字检测出错");
+            console.log(error);
+        });
+    }
+
+}
+```
 
 #### Parameters
 
@@ -715,6 +1218,25 @@ ___
 键盘输入事件-点击
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyDown(Keys.F, () => {
+            console.log("F key pressed");
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -735,6 +1257,25 @@ ___
 
 键盘输入事件-按压
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyPress(Keys.F, () => {
+            console.log("F key up");
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -757,6 +1298,25 @@ ___
 键盘输入事件-抬起
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyUp(Keys.F, () => {
+            console.log("F key up");
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -777,6 +1337,24 @@ ___
 
 格式化时间戳
 
+
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+       this.test();
+    }
+
+    private async test(): Promise<void> {
+       if (!SystemUtil.isClient()) return;
+       const time = TimeUtil.parseTime(new Date());
+       console.log(`time:${time}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -799,6 +1377,66 @@ ___
 获取角色在世界中的位置，投射到屏幕上
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.onKeyDown(Keys.F, async () => {
+            let playerPos = (await Gameplay.asyncGetCurrentPlayer()).character.worldLocation;
+            let result = InputUtil.projectWorldLocationToWidgetPosition(playerPos);
+            if (result) {
+                btn.button.position = result.screenPosition;
+            }
+        })
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -820,6 +1458,25 @@ ___
 根据输入的弧度值返回度数
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let radian = Math.PI;
+        let degrees = MathUtil.radiansToDegrees(radian);
+        console.log(`radiansToDegrees: ${degrees}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -839,6 +1496,24 @@ ___
 
 获取随机范围内浮点数[包含min, 不包含max)
 
+
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let randomFloat = MathUtil.randomFloat(1, 10);
+        console.log(`randomFloat: ${randomFloat}`);
+    }
+
+}
+```
 
 #### Parameters
 
@@ -861,6 +1536,24 @@ ___
 获取随机范围内整数[包含min, 不包含max)
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let randomInt = MathUtil.randomInt(1, 10);
+        console.log(`randomInt: ${randomInt}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -882,6 +1575,26 @@ ___
 设置鼠标指针是否锁定
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，锁定/解锁鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -896,6 +1609,26 @@ ___
 
 设置鼠标指针是否可见
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，显示/隐藏鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -930,6 +1663,33 @@ ___
 按一定时间间隔执行方法
 
 
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
+```ts
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        let isInterval = false;
+        let id = 0;
+        TimeUtil.setInterval(() => {
+            console.log(id);
+            id++;
+            if (id > 5) {
+                isInterval = true;
+            }
+        }, 2, () => {
+            return isInterval;
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -952,6 +1712,30 @@ ___
 设置是否可以锁定鼠标
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以通过shift锁定鼠标，按下G键，不可以通过shift锁定鼠标
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，可以通过shift锁定鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setMouseLockable(true);
+        })
+        //按下G键，不可以通过shift锁定鼠标
+        InputUtil.onKeyDown(Keys.G, () => {
+            InputUtil.setMouseLockable(false);
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -967,11 +1751,30 @@ ___
 计算sin值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的sin值
+    private async test(): Promise<void> {
+        let sin = MathUtil.sin(Math.PI / 2);
+        console.log(`sin: ${sin}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
+| `a` | `number` | 待机算的数值a |
 
 #### Returns
 
@@ -987,11 +1790,30 @@ ___
 计算tan值
 
 
+使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
+```ts
+@Core.Class
+export default class MathExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    //输出弧度制的tan值
+    private async test(): Promise<void> {
+        let tan = MathUtil.tan(Math.PI / 4);
+        console.log(`tan: ${tan}`);
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
+| `a` | `number` | 待机算的数值a |
 
 #### Returns
 
@@ -1012,12 +1834,23 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
 
-使用示例:获取并显示时间戳
+使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳
 ```ts
-function test(){
-     const time = TimeUtil.time;
-     console.log(`time stamp:${time}`);
+@Core.Class
+export default class TimeExample extends Core.Script {
+
+    protected onStart(): void {
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        if (!SystemUtil.isClient()) return;
+        const time = TimeUtil.time();
+        console.log(`time stamp:${time}`);
+    }
+
 }
+```
 
 #### Returns
 
@@ -1031,6 +1864,63 @@ ___
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.bindButton(Keys.SpaceBar, btn.button);
+        setTimeout(() => {
+            InputUtil.unbindButton(Keys.SpaceBar);
+        }, 5000);
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
 
 #### Parameters
 

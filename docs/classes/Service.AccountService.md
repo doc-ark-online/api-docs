@@ -17,12 +17,11 @@
 | Methods |
 | :-----|
 | **[addFriend](Service.AccountService.md#addfriend)**(`resp`: [`MGSResponse`](../modules/Service.Service.md#mgsresponse), `friendOpenId`: `string`, `reason`: `string`): `void` <br> 向233发起addFriend并获得回调|
-| **[applySharedId](Service.AccountService.md#applysharedid)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 应用分享Id的角色数据|
+| **[applySharedId](Service.AccountService.md#applysharedid)**(`character`: [`Character`](Gameplay.Character.md), `id`: `string`, `callback`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 应用分享Id的角色数据|
 | **[checkVIP](Service.AccountService.md#checkvip)**(`userId`: `string`, `gameId`: `string`, `callback`: (`result`: `string`) => `void`): `void` <br> 发起checkVIP并获得回调，查询玩家的vip信息|
-| **[createSharedId](Service.AccountService.md#createsharedid)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `callback`: [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 生成分享Id|
+| **[createSharedId](Service.AccountService.md#createsharedid)**(`character`: [`Character`](Gameplay.Character.md), `callback`: [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 生成分享Id|
 | **[dataShowToOther](Service.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 设置数据是否公开给其他用户|
-| **[downloadData](Service.AccountService.md#downloaddata)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `index?`: `number`): `void` <br> 下载角色形象并应用到当前角色身上|
-| **[downloadDefaultDataString](Service.AccountService.md#downloaddefaultdatastring)**(`callback`: [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 下载默认角色数据|
+| **[downloadData](Service.AccountService.md#downloaddata)**(`character`: [`Character`](Gameplay.Character.md), `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `index?`: `number`): `void` <br> 下载角色形象并应用到当前角色身上|
 | **[fillAvatar](Service.AccountService.md#fillavatar)**(`img`: [`Image`](UI.Image.md)): `void` <br> 将头像赋值到Image变量上|
 | **[getNickName](Service.AccountService.md#getnickname)**(): `string` <br> 获取玩家昵称|
 | **[getOpenId](Service.AccountService.md#getopenid)**(): `string` <br> 获取OpenId|
@@ -30,8 +29,8 @@
 | **[getUserId](Service.AccountService.md#getuserid)**(): `string` <br> 获取平台的用户Id,可以用于getUserData接口|
 | **[getUserInfo](Service.AccountService.md#getuserinfo)**(`userId`: `string`, `gameId`: `string`, `callback`: (`nickname`: `string`, `gender`: `number`) => `void`): `void` <br> 发起getUserInfo并获得回调，查询玩家的昵称、性别|
 | **[isFriend](Service.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Service.Service.md#mgsresponse), `friendOpenId`: `string`): `void` <br> 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
-| **[setUserData](Service.AccountService.md#setuserdata)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 将角色形象数据应用至角色|
-| **[uploadData](Service.AccountService.md#uploaddata)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `index?`: `number`, `openStatus?`: `number`): `void` <br> 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
+| **[setUserData](Service.AccountService.md#setuserdata)**(`character`: [`Character`](Gameplay.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 将角色形象数据应用至角色|
+| **[uploadData](Service.AccountService.md#uploaddata)**(`character`: [`Character`](Gameplay.Character.md), `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `index?`: `number`, `openStatus?`: `number`): `void` <br> 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
 | **[getInstance](Service.AccountService.md#getinstance)**(): [`AccountService`](Service.AccountService.md) <br> 获取用户账号信息管理器全局实例|
 
 ## Methods
@@ -71,7 +70,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 分享换装数据的角色 |
+| `character` | [`Character`](Gameplay.Character.md) | 分享换装数据的角色 |
 | `id` | `string` | 分享Id |
 | `callback` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) |  回调参数，true:应用成功；false:应用失败 |
 
@@ -107,7 +106,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 分享换装数据的角色 |
+| `character` | [`Character`](Gameplay.Character.md) | 分享换装数据的角色 |
 | `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) |  回调参数，返回生成的Id |
 
 
@@ -142,25 +141,9 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 要应用换装数据的角色 |
+| `character` | [`Character`](Gameplay.Character.md) | 要应用换装数据的角色 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
-
-
-___
-
-### downloadDefaultDataString <Score text="downloadDefaultDataString" /> 
-
-• **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="client" />
-
-下载默认角色数据
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | 回调 |
 
 
 ___
@@ -177,6 +160,50 @@ ___
 只在由233拉起生效
 
 :::
+
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像,PC环境下为白图
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let imgUI = new ImageUI();
+        AccountService.getInstance().fillAvatar(imgUI.image);
+    }
+
+}
+
+class ImageUI {
+    public image: UI.Image;
+
+    constructor() {
+        this.creatUI();
+    }
+
+    private creatUI() {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.image = UI.Image.newObject(rootCanvas);
+        this.image.position = new Type.Vector2(1700, 310);
+        this.image.size = new Type.Vector2(150, 50);
+        this.image.visibility = UI.SlateVisibility.Visible;
+    }
+}
+```
 
 #### Parameters
 
@@ -200,6 +227,24 @@ ___
 
 :::
 
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的昵称,PC环境下为空
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let name = AccountService.getInstance().getNickName();
+        console.log("获取玩家昵称", name);
+    }
+
+}
+```
+
 #### Returns
 
 `string`
@@ -221,6 +266,24 @@ ___
 
 :::
 
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的OpenId，PC环境下为空
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let openId = AccountService.getInstance().getOpenId();
+        console.log("获取用户的OpenId：", openId);
+    }
+
+}
+```
+
 #### Returns
 
 `string`
@@ -235,6 +298,31 @@ ___
 
 获取用户存储在服务器上的角色形象数据
 
+
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        let npc = (await Core.GameObject.asyncSpawn({ guid: "NPC" })) as Gameplay.NPC;
+        npc.worldLocation = new Type.Vector(0, 0, 200);
+        AccountService.getInstance().getUserData(player.getUserId(), 0, async str => {
+            await TimeUtil.delaySecond(5);
+            AccountService.getInstance().setUserData(npc, str, isSuccess => {
+                player.character.characterName = isSuccess ? "成功" : "失败";
+            })
+        });
+    }
+
+}
+```
 
 #### Parameters
 
@@ -253,6 +341,24 @@ ___
 
 获取平台的用户Id,可以用于getUserData接口
 
+
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的UserId
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let userId = AccountService.getInstance().getUserId();
+        console.log("获取平台的用户Id", userId);
+    }
+
+}
+```
 
 #### Returns
 
@@ -310,11 +416,36 @@ ___
 将角色形象数据应用至角色
 
 
+使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
+```ts
+@Core.Class
+export default class AccountExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        let npc = (await Core.GameObject.asyncSpawn({ guid: "NPC" })) as Gameplay.NPC;
+        npc.worldLocation = new Type.Vector(0, 0, 200);
+        AccountService.getInstance().getUserData(player.getUserId(), 0, async str => {
+            await TimeUtil.delaySecond(5);
+            AccountService.getInstance().setUserData(npc, str, isSuccess => {
+                player.character.characterName = isSuccess ? "成功" : "失败";
+            })
+        });
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) |  用于换装的角色 |
+| `character` | [`Character`](Gameplay.Character.md) |  用于换装的角色 |
 | `dataString` | `string` |  返回的数据 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) | 设置是否成功的回调 default:无回调 |
 
@@ -332,7 +463,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 要上传换装数据的角色 |
+| `character` | [`Character`](Gameplay.Character.md) | 要上传换装数据的角色 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
 | `openStatus?` | `number` | 开发状态 default:1,默认是开放状态 |

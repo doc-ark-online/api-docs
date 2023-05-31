@@ -135,6 +135,18 @@ ___
 
 :::
 
+使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
+```ts
+@Core.Class
+export default class RoomExample extends Core.Script {
+
+    protected onStart(): void {
+        console.log("获取MGS平台的RoomId", RoomService.getInstance().getMGSRoomId());
+    }
+
+}
+```
+
 #### Returns
 
 `string`
@@ -155,6 +167,18 @@ ___
 只在由233拉起生效
 
 :::
+
+使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
+```ts
+@Core.Class
+export default class RoomExample extends Core.Script {
+
+    protected onStart(): void {
+        console.log("获取当前游戏的RoomMgr分配的RoomId", RoomService.getInstance().getRoomId());
+    }
+
+}
+```
 
 #### Returns
 
@@ -215,6 +239,18 @@ ___
 
 获取当前环境是否支持MGS功能
 
+
+使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
+```ts
+@Core.Class
+export default class RoomExample extends Core.Script {
+
+    protected onStart(): void {
+        console.log("当前环境是否支持MGS功能:", RoomService.getInstance().isSupported());
+    }
+
+}
+```
 
 #### Returns
 

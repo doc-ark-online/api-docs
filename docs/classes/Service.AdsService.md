@@ -22,7 +22,6 @@
 | :-----|
 | **[isActive](Service.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md)): `boolean` <br> 广告是否激活,PC上始终返回false|
 | **[isReady](Service.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
-| **[show](Service.AdsService.md#show)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`state`: [`AdsState`](../enums/Service.AdsState.md)) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 | **[showAd](Service.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/Service.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 | **[getInstance](Service.AdsService.md#getinstance)**(): [`AdsService`](Service.AdsService.md) <br> 获取广告服务管理器全局实例|
 
@@ -99,35 +98,50 @@ ___
 
 ___
 
-### show <Score text="show" /> 
-
-• **show**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason:接口废弃 replacement:showAd()
-
-:::
-
-展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/Service.AdsType.md) |  广告类型 |
-| `callback` | (`state`: [`AdsState`](../enums/Service.AdsState.md)) => `void` |  广告播放结果回调 |
-
-
-___
-
 ### showAd <Score text="showAd" /> 
 
 • **showAd**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
 
+
+使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果
+```ts
+@Core.Class
+export default class AdsExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        await TimeUtil.delaySecond(10);
+        this.playAd(AdsType.Reward);
+    }
+
+    //播放广告
+    private async playAd(type: AdsType): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        if (!AdsService.getInstance().isActive(type)) {
+            player.character.characterName = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
+            return;
+        }
+        AdsService.getInstance().isReady(type, (isReady) => {
+            if (!isReady) {
+                player.character.characterName = type == AdsType.Reward ? "激励广告未准备好" : "插屏广告未准备好";
+                return;
+            }
+            AdsService.getInstance().showAd(type, async (isSuccess) => {
+                if (isSuccess) player.character.characterName = type == AdsType.Reward ? "激励广告播放成功" : "插屏广告播放成功";
+                await TimeUtil.delaySecond(10);
+                type == AdsType.Reward ? this.playAd(AdsType.Interstitial) : this.playAd(AdsType.Reward);
+            });
+        })
+    }
+
+}
+```
 
 #### Parameters
 

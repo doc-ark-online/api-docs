@@ -4,33 +4,46 @@
 
 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近
 
-使用示例: 如下示例展示热武器瞄准组件组件使用的基本流程
+使用示例: 创建一个名为"HotWeaponAimSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器的启用了瞄准组件并设置参数，添加委托的效果,代码如下:
 ```ts
-// 已有名为 hotWeapon 的热武器功能对象的示例
-hotWeapon.aimEnable = true;
-hotWeapon.aimComponent.onAimStartServer.add(() => {
-    // 服务端开始瞄准时触发的回调
-});
-// 修改参数
-hotWeapon.aimComponent.aimingZoom = 3;
+@Core.Class
+export default class HotWeaponAimSample1 extends Core.Script {
+    protected onStart(): void {
+        // 构造
+        const hotWeapon = this.gameObject as Gameplay.HotWeapon;
+
+        if (SystemUtil.isServer()) {
+            hotWeapon.aimEnable = true;
+            hotWeapon.aimComponent.aimMode = Gameplay.HotWeaponAimMode.ThirdPerson;
+            hotWeapon.aimComponent.scopeTypeIndex = Gameplay.HotWeaponCrossHairType.ThirdPersonCrossHair;
+            hotWeapon.aimComponent.aimingZoom = 16;
+            hotWeapon.aimComponent.cameraOffsetDistanceInThirdPersonMode = 300;
+            hotWeapon.aimComponent.onAimStartServer.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onAimEndServer.add(() => { console.log("aimComponent.onAimEndClient") });
+        } else if (SystemUtil.isClient()) {
+            hotWeapon.aimComponent.onAimStartClient.add(() => { console.log("aimComponent.onAimStartClient") });
+            hotWeapon.aimComponent.onAimEndClient.add(() => { console.log("aimComponent.onAimEndClient") });
+        }
+    }
+}
 ```
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onAimEndClient](Gameplay.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端结束瞄准代理|
-| **[onAimEndServer](Gameplay.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端结束瞄准代理|
-| **[onAimStartClient](Gameplay.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始瞄准代理|
-| **[onAimStartServer](Gameplay.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理|
+| **[onAimEndClient](Gameplay.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onAimEndServer](Gameplay.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onAimStartClient](Gameplay.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onAimStartServer](Gameplay.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[aimMode](Gameplay.HotWeaponAimComponent.md#aimmode)**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <br> Get瞄准时的第一/第三人称模式|
-| **[aimingZoom](Gameplay.HotWeaponAimComponent.md#aimingzoom)**(): `number` <br> Get第一人称瞄准时的瞄准镜放大倍数|
-| **[cameraOffsetDistanceInThirdPersonMode](Gameplay.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number` <br> Get第三人称瞄准时的连接相机弹簧组件的长度|
-| **[defaultCameraSpringArmLength](Gameplay.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number` <br> Get第三人称常态下相机弹簧组件的默认长度|
-| **[scopeTypeIndex](Gameplay.HotWeaponAimComponent.md#scopetypeindex)**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <br> Get模拟瞄准镜UI种类|
+| **[aimMode](Gameplay.HotWeaponAimComponent.md#aimmode)**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) <br> Get瞄准时的第一/第三人称模式。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[aimingZoom](Gameplay.HotWeaponAimComponent.md#aimingzoom)**(): `number` <br> Get第一人称瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[cameraOffsetDistanceInThirdPersonMode](Gameplay.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number` <br> Get第三人称瞄准时的连接相机弹簧组件的长度。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[defaultCameraSpringArmLength](Gameplay.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number` <br> Get第三人称常态下相机弹簧组件的默认长度。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[scopeTypeIndex](Gameplay.HotWeaponAimComponent.md#scopetypeindex)**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) <br> Get模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Methods |
 | :-----|
@@ -43,7 +56,7 @@ hotWeapon.aimComponent.aimingZoom = 3;
 
 • **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端结束瞄准代理
+客户端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
@@ -51,7 +64,7 @@ ___
 
 • **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器端结束瞄准代理
+服务器端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
@@ -59,7 +72,7 @@ ___
 
 • **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端开始瞄准代理
+客户端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
@@ -67,7 +80,7 @@ ___
 
 • **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器端开始瞄准代理
+服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ## Accessors
 
@@ -75,7 +88,7 @@ ___
 
 • `get` **aimMode**(): [`HotWeaponAimMode`](../enums/Gameplay.HotWeaponAimMode.md) 
 
-Get瞄准时的第一/第三人称模式
+Get瞄准时的第一/第三人称模式。使用示例见类 HotWeaponAimComponent 使用示例
 
 
 #### Returns
@@ -86,7 +99,7 @@ Get瞄准时的第一/第三人称模式
 
 • `set` **aimMode**(`NewAimMode`): `void` <Badge type="tip" text="other" />
 
-Set瞄准时的第一/第三人称模式
+Set瞄准时的第一/第三人称模式。使用示例见类 HotWeaponAimComponent 使用示例
 
 调用端自动广播
 
@@ -103,7 +116,7 @@ ___
 
 • `get` **aimingZoom**(): `number` 
 
-Get第一人称瞄准时的瞄准镜放大倍数
+Get第一人称瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例
 
 ::: warning Precautions
 
@@ -120,7 +133,7 @@ Get第一人称瞄准时的瞄准镜放大倍数
 
 • `set` **aimingZoom**(`newAimingZoom`): `void`
 
-Set模拟瞄准时的瞄准镜放大倍数
+Set模拟瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例
 
 ::: warning Precautions
 
@@ -145,7 +158,7 @@ ___
 
 • `get` **cameraOffsetDistanceInThirdPersonMode**(): `number` 
 
-Get第三人称瞄准时的连接相机弹簧组件的长度
+Get第三人称瞄准时的连接相机弹簧组件的长度。使用示例见类 HotWeaponAimComponent 使用示例
 
 
 #### Returns
@@ -156,7 +169,7 @@ Get第三人称瞄准时的连接相机弹簧组件的长度
 
 • `set` **cameraOffsetDistanceInThirdPersonMode**(`NewCameraOffsetDistance`): `void` <Badge type="tip" text="other" />
 
-Set第三人称瞄准时的连接相机弹簧组件的长度
+Set第三人称瞄准时的连接相机弹簧组件的长度。使用示例见类 HotWeaponAimComponent 使用示例
 
 ::: warning Precautions
 
@@ -179,7 +192,7 @@ ___
 
 • `get` **defaultCameraSpringArmLength**(): `number` 
 
-Get第三人称常态下相机弹簧组件的默认长度
+Get第三人称常态下相机弹簧组件的默认长度。使用示例见类 HotWeaponAimComponent 使用示例
 
 
 #### Returns
@@ -190,7 +203,7 @@ Get第三人称常态下相机弹簧组件的默认长度
 
 • `set` **defaultCameraSpringArmLength**(`NewCameraArmLength`): `void` <Badge type="tip" text="other" />
 
-Set第三人称常态下相机弹簧组件的默认长度
+Set第三人称常态下相机弹簧组件的默认长度。使用示例见类 HotWeaponAimComponent 使用示例
 
 ::: warning Precautions
 
@@ -213,7 +226,7 @@ ___
 
 • `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/Gameplay.HotWeaponCrossHairType.md) 
 
-Get模拟瞄准镜UI种类
+Get模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例
 
 
 #### Returns
@@ -224,7 +237,7 @@ Get模拟瞄准镜UI种类
 
 • `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void` <Badge type="tip" text="other" />
 
-Set模拟瞄准镜UI种类
+Set模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例
 
 调用端自动广播
 

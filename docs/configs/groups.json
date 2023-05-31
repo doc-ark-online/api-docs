@@ -1,252 +1,4 @@
 {
-  "Avatar": {
-    "Interfaces": [
-      {
-        "file_name": "Gameplay.IHumanoidV2Shape.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2Shape.md",
-        "name": "IHumanoidV2Shape"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV2.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2.md",
-        "name": "IHumanoidV2"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV1.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV1.md",
-        "name": "IHumanoidV1"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV2ClothPart.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2ClothPart.md",
-        "name": "IHumanoidV2ClothPart"
-      },
-      {
-        "file_name": "Gameplay.IPart.md",
-        "file_path": "interfaces/Gameplay.IPart.md",
-        "name": "IPart"
-      },
-      {
-        "file_name": "Gameplay.IFourFootStandard.md",
-        "file_path": "interfaces/Gameplay.IFourFootStandard.md",
-        "name": "IFourFootStandard"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV2HairPart.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2HairPart.md",
-        "name": "IHumanoidV2HairPart"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV2MaterialStyle.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2MaterialStyle.md",
-        "name": "IHumanoidV2MaterialStyle"
-      },
-      {
-        "file_name": "Gameplay.IHumanoidV2HeadPart.md",
-        "file_path": "interfaces/Gameplay.IHumanoidV2HeadPart.md",
-        "name": "IHumanoidV2HeadPart"
-      }
-    ],
-    "Enums": [
-      {
-        "file_name": "Gameplay.SlotType.md",
-        "file_path": "enums/Gameplay.SlotType.md",
-        "name": "SlotType"
-      },
-      {
-        "file_name": "Gameplay.MoveControlMode.md",
-        "file_path": "enums/Gameplay.MoveControlMode.md",
-        "name": "MoveControlMode"
-      },
-      {
-        "file_name": "Gameplay.MovementDirection.md",
-        "file_path": "enums/Gameplay.MovementDirection.md",
-        "name": "MovementDirection"
-      },
-      {
-        "file_name": "Gameplay.MovementMode.md",
-        "file_path": "enums/Gameplay.MovementMode.md",
-        "name": "MovementMode"
-      },
-      {
-        "file_name": "Gameplay.AppearanceType.md",
-        "file_path": "enums/Gameplay.AppearanceType.md",
-        "name": "AppearanceType"
-      },
-      {
-        "file_name": "Gameplay.SomatotypeV2.md",
-        "file_path": "enums/Gameplay.SomatotypeV2.md",
-        "name": "SomatotypeV2"
-      },
-      {
-        "file_name": "Gameplay.BodyPartTypeV1.md",
-        "file_path": "enums/Gameplay.BodyPartTypeV1.md",
-        "name": "BodyPartTypeV1"
-      },
-      {
-        "file_name": "Gameplay.BasicStanceType.md",
-        "file_path": "enums/Gameplay.BasicStanceType.md",
-        "name": "BasicStanceType"
-      },
-      {
-        "file_name": "Gameplay.SomatotypeFourFootStandard.md",
-        "file_path": "enums/Gameplay.SomatotypeFourFootStandard.md",
-        "name": "SomatotypeFourFootStandard"
-      },
-      {
-        "file_name": "Gameplay.SomatotypeV1.md",
-        "file_path": "enums/Gameplay.SomatotypeV1.md",
-        "name": "SomatotypeV1"
-      },
-      {
-        "file_name": "Gameplay.CustomShapeType.md",
-        "file_path": "enums/Gameplay.CustomShapeType.md",
-        "name": "CustomShapeType"
-      },
-      {
-        "file_name": "Gameplay.EInitialOscillatorOffset.md",
-        "file_path": "enums/Gameplay.EInitialOscillatorOffset.md",
-        "name": "EInitialOscillatorOffset"
-      },
-      {
-        "file_name": "Gameplay.EOscillatorWaveform.md",
-        "file_path": "enums/Gameplay.EOscillatorWaveform.md",
-        "name": "EOscillatorWaveform"
-      },
-      {
-        "file_name": "Gameplay.ExpressionType.md",
-        "file_path": "enums/Gameplay.ExpressionType.md",
-        "name": "ExpressionType"
-      },
-      {
-        "file_name": "Gameplay.MoveFacingDirection.md",
-        "file_path": "enums/Gameplay.MoveFacingDirection.md",
-        "name": "MoveFacingDirection"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "Gameplay.NPC.md",
-        "file_path": "classes/Gameplay.NPC.md",
-        "name": "NPC"
-      },
-      {
-        "file_name": "Gameplay.CharacterBase.md",
-        "file_path": "classes/Gameplay.CharacterBase.md",
-        "name": "CharacterBase"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2Shape.md",
-        "file_path": "classes/Gameplay.HumanoidV2Shape.md",
-        "name": "HumanoidV2Shape"
-      },
-      {
-        "file_name": "Gameplay.Decoration.md",
-        "file_path": "classes/Gameplay.Decoration.md",
-        "name": "Decoration"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV1Trunk.md",
-        "file_path": "classes/Gameplay.HumanoidV1Trunk.md",
-        "name": "HumanoidV1Trunk"
-      },
-      {
-        "file_name": "Gameplay.Character.md",
-        "file_path": "classes/Gameplay.Character.md",
-        "name": "Character"
-      },
-      {
-        "file_name": "Gameplay.FourFootStandard.md",
-        "file_path": "classes/Gameplay.FourFootStandard.md",
-        "name": "FourFootStandard"
-      },
-      {
-        "file_name": "Gameplay.DefaultData.md",
-        "file_path": "classes/Gameplay.DefaultData.md",
-        "name": "DefaultData"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2HairPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2HairPart.md",
-        "name": "HumanoidV2HairPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV1Face.md",
-        "file_path": "classes/Gameplay.HumanoidV1Face.md",
-        "name": "HumanoidV1Face"
-      },
-      {
-        "file_name": "Gameplay.Humanoid.md",
-        "file_path": "classes/Gameplay.Humanoid.md",
-        "name": "Humanoid"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2GlovesPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2GlovesPart.md",
-        "name": "HumanoidV2GlovesPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV1Part.md",
-        "file_path": "classes/Gameplay.HumanoidV1Part.md",
-        "name": "HumanoidV1Part"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2ClothPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2ClothPart.md",
-        "name": "HumanoidV2ClothPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2ShoePart.md",
-        "file_path": "classes/Gameplay.HumanoidV2ShoePart.md",
-        "name": "HumanoidV2ShoePart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2.md",
-        "file_path": "classes/Gameplay.HumanoidV2.md",
-        "name": "HumanoidV2"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2FrontHairPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2FrontHairPart.md",
-        "name": "HumanoidV2FrontHairPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2UpperClothPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2UpperClothPart.md",
-        "name": "HumanoidV2UpperClothPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2BehindHairPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2BehindHairPart.md",
-        "name": "HumanoidV2BehindHairPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV1.md",
-        "file_path": "classes/Gameplay.HumanoidV1.md",
-        "name": "HumanoidV1"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2HeadPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2HeadPart.md",
-        "name": "HumanoidV2HeadPart"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV2LowerClothPart.md",
-        "file_path": "classes/Gameplay.HumanoidV2LowerClothPart.md",
-        "name": "HumanoidV2LowerClothPart"
-      },
-      {
-        "file_name": "Gameplay.AICharacter.md",
-        "file_path": "classes/Gameplay.AICharacter.md",
-        "name": "AICharacter"
-      },
-      {
-        "file_name": "Gameplay.HumanoidV1Hair.md",
-        "file_path": "classes/Gameplay.HumanoidV1Hair.md",
-        "name": "HumanoidV1Hair"
-      }
-    ]
-  },
   "Datatype": {
     "Interfaces": [
       {
@@ -284,22 +36,7 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "CameraShakeData"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "CameraSystemData"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "Constructor"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "DecorationTuple"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -329,7 +66,7 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "Oscillator"
+        "name": "OnStyleCompleted"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -355,6 +92,11 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "onAppearanceDataChanged"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "ReleaseGameData"
       },
       {
         "file_name": "Service.Service.md",
@@ -578,6 +320,13 @@
     ]
   },
   "Gameplay": {
+    "Interfaces": [
+      {
+        "file_name": "Gameplay.ShakeData.md",
+        "file_path": "interfaces/Gameplay.ShakeData.md",
+        "name": "ShakeData"
+      }
+    ],
     "Modules Functions": [
       {
         "file_name": "Network.Network.md",
@@ -627,22 +376,7 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "asyncGetCurrentPlayer"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "asyncGetPlayer"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "boxOverlap"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "boxOverlapInLevel"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -667,42 +401,12 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "getAllPlayers"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "getClickGameObjectByScene"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "getCurrentPlayer"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "getGameObjectByScenePosition"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "getPlayer"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "getShootDir"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "getSightBeadLocation"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "isDynamicVibration"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -718,16 +422,6 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "parabolicTrace"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "playDynamicForceFeedbackStart"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "playDynamicForceFeedbackStop"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -753,11 +447,6 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "setStaticMeshColor"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "setStaticMeshMaterialColor"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -889,14 +578,14 @@
         "name": "HotWeaponFireMode"
       },
       {
-        "file_name": "Gameplay.AbilityStateControlType.md",
-        "file_path": "enums/Gameplay.AbilityStateControlType.md",
-        "name": "AbilityStateControlType"
-      },
-      {
         "file_name": "Gameplay.CameraProjectionMode.md",
         "file_path": "enums/Gameplay.CameraProjectionMode.md",
         "name": "CameraProjectionMode"
+      },
+      {
+        "file_name": "Gameplay.InitialOscillatorOffset.md",
+        "file_path": "enums/Gameplay.InitialOscillatorOffset.md",
+        "name": "InitialOscillatorOffset"
       },
       {
         "file_name": "Gameplay.HotWeaponAimMode.md",
@@ -922,6 +611,11 @@
         "file_name": "Gameplay.ProjectileLineStyle.md",
         "file_path": "enums/Gameplay.ProjectileLineStyle.md",
         "name": "ProjectileLineStyle"
+      },
+      {
+        "file_name": "Gameplay.SwitchCameraBlendFunction.md",
+        "file_path": "enums/Gameplay.SwitchCameraBlendFunction.md",
+        "name": "SwitchCameraBlendFunction"
       },
       {
         "file_name": "Gameplay.HotWeaponState.md",
@@ -954,22 +648,17 @@
         "name": "CameraRotationMode"
       },
       {
-        "file_name": "Gameplay.CameraMode.md",
-        "file_path": "enums/Gameplay.CameraMode.md",
-        "name": "CameraMode"
+        "file_name": "Gameplay.OscillatorWaveform.md",
+        "file_path": "enums/Gameplay.OscillatorWaveform.md",
+        "name": "OscillatorWaveform"
+      },
+      {
+        "file_name": "Gameplay.CameraPreset.md",
+        "file_path": "enums/Gameplay.CameraPreset.md",
+        "name": "CameraPreset"
       }
     ],
     "Classes": [
-      {
-        "file_name": "Gameplay.PlayerStart.md",
-        "file_path": "classes/Gameplay.PlayerStart.md",
-        "name": "PlayerStart"
-      },
-      {
-        "file_name": "Gameplay.CameraSystem.md",
-        "file_path": "classes/Gameplay.CameraSystem.md",
-        "name": "CameraSystem"
-      },
       {
         "file_name": "Gameplay.HotWeaponAimComponent.md",
         "file_path": "classes/Gameplay.HotWeaponAimComponent.md",
@@ -986,19 +675,14 @@
         "name": "HotWeaponFireComponent"
       },
       {
-        "file_name": "Gameplay.AbilityObject.md",
-        "file_path": "classes/Gameplay.AbilityObject.md",
-        "name": "AbilityObject"
+        "file_name": "Gameplay.SpringArm.md",
+        "file_path": "classes/Gameplay.SpringArm.md",
+        "name": "SpringArm"
       },
       {
         "file_name": "Gameplay.Mesh.md",
         "file_path": "classes/Gameplay.Mesh.md",
         "name": "Mesh"
-      },
-      {
-        "file_name": "Gameplay.Projectile.md",
-        "file_path": "classes/Gameplay.Projectile.md",
-        "name": "Projectile"
       },
       {
         "file_name": "Extension.GameInitializer.md",
@@ -1021,16 +705,6 @@
         "name": "HotWeaponLoadComponent"
       },
       {
-        "file_name": "Gameplay.AbilityState.md",
-        "file_path": "classes/Gameplay.AbilityState.md",
-        "name": "AbilityState"
-      },
-      {
-        "file_name": "Gameplay.InteractiveObject.md",
-        "file_path": "classes/Gameplay.InteractiveObject.md",
-        "name": "InteractiveObject"
-      },
-      {
         "file_name": "Gameplay.AdvancedVehicle.md",
         "file_path": "classes/Gameplay.AdvancedVehicle.md",
         "name": "AdvancedVehicle"
@@ -1046,19 +720,14 @@
         "name": "HotWeapon"
       },
       {
-        "file_name": "Gameplay.StaticMesh.md",
-        "file_path": "classes/Gameplay.StaticMesh.md",
-        "name": "StaticMesh"
-      },
-      {
         "file_name": "Gameplay.MaterialInstance.md",
         "file_path": "classes/Gameplay.MaterialInstance.md",
         "name": "MaterialInstance"
       },
       {
-        "file_name": "Gameplay.SomatotypeBase.md",
-        "file_path": "classes/Gameplay.SomatotypeBase.md",
-        "name": "SomatotypeBase"
+        "file_name": "Gameplay.Camera.md",
+        "file_path": "classes/Gameplay.Camera.md",
+        "name": "Camera"
       },
       {
         "file_name": "Gameplay.Trigger.md",
@@ -1079,11 +748,6 @@
         "file_name": "Gameplay.NavModifierVolume.md",
         "file_path": "classes/Gameplay.NavModifierVolume.md",
         "name": "NavModifierVolume"
-      },
-      {
-        "file_name": "Gameplay.VehicleCameraSetting.md",
-        "file_path": "classes/Gameplay.VehicleCameraSetting.md",
-        "name": "VehicleCameraSetting"
       },
       {
         "file_name": "Gameplay.HotWeaponAccuracyOfFireComponent.md",
@@ -1119,77 +783,6 @@
         "file_name": "Gameplay.FireDataInfoForMultiple.md",
         "file_path": "classes/Gameplay.FireDataInfoForMultiple.md",
         "name": "FireDataInfoForMultiple"
-      }
-    ]
-  },
-  "Others": {
-    "Modules Functions": [
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "spawnNewParticle"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "spawnNewSound"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "addLikeContent"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "addMessage"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "addReplyMessage"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "deleteLikeContent"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "deleteMessage"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "queryGameOwnerShip"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "queryMessageBoard"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "queryReplyMessage"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "queryViewRecord"
-      },
-      {
-        "file_name": "MobileEditor.MobileEditor.md",
-        "file_path": "modules/MobileEditor.MobileEditor.md",
-        "name": "saveViewRecord"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "Gameplay.Sound.md",
-        "file_path": "classes/Gameplay.Sound.md",
-        "name": "Sound"
       }
     ]
   },
@@ -1281,21 +874,6 @@
         "name": "asyncDownloadAsset"
       },
       {
-        "file_name": "Util.AssetUtil.md",
-        "file_path": "modules/Util.AssetUtil.md",
-        "name": "isAssetExist"
-      },
-      {
-        "file_name": "Util.AssetUtil.md",
-        "file_path": "modules/Util.AssetUtil.md",
-        "name": "isAssetLoaded"
-      },
-      {
-        "file_name": "Util.AssetUtil.md",
-        "file_path": "modules/Util.AssetUtil.md",
-        "name": "loadAsset"
-      },
-      {
         "file_name": "Util.TweenUtil.md",
         "file_path": "modules/Util.TweenUtil.md",
         "name": "nextId"
@@ -1369,11 +947,6 @@
         "file_name": "Util.TimeUtil.md",
         "file_path": "modules/Util.TimeUtil.md",
         "name": "delaySecond"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "delayTime"
       },
       {
         "file_name": "Util.TimeUtil.md",
@@ -1539,6 +1112,16 @@
         "file_name": "MobileEditor.MobileEditor.md",
         "file_path": "modules/MobileEditor.MobileEditor.md",
         "name": "asyncCaptureAvatar"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "asyncGetQualityGameList"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "asyncGetReleaseGameData"
       },
       {
         "file_name": "MobileEditor.MobileEditor.md",
@@ -1823,16 +1406,6 @@
       {
         "file_name": "Events.Events.md",
         "file_path": "modules/Events.Events.md",
-        "name": "addPlayerJoinedListener"
-      },
-      {
-        "file_name": "Events.Events.md",
-        "file_path": "modules/Events.Events.md",
-        "name": "addPlayerLeftListener"
-      },
-      {
-        "file_name": "Events.Events.md",
-        "file_path": "modules/Events.Events.md",
         "name": "addServerListener"
       },
       {
@@ -1869,6 +1442,23 @@
         "file_name": "Extension.Decorator.md",
         "file_path": "modules/Extension.Decorator.md",
         "name": "saveProperty"
+      }
+    ],
+    "Modules Type Aliases": [
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
+        "name": "LocalUGCGameInfo"
+      },
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
+        "name": "PublishedUGCGameInfo"
+      },
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
+        "name": "UGCTemplateInfo"
       }
     ],
     "Enums": [
@@ -1933,6 +1523,67 @@
         "file_name": "MobileEditor.EditorMode.md",
         "file_path": "classes/MobileEditor.EditorMode.md",
         "name": "EditorMode"
+      }
+    ]
+  },
+  "Others": {
+    "Modules Functions": [
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "addLikeContent"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "addMessage"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "addReplyMessage"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "deleteLikeContent"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "deleteMessage"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "queryGameOwnerShip"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "queryMessageBoard"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "queryReplyMessage"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "queryViewRecord"
+      },
+      {
+        "file_name": "MobileEditor.MobileEditor.md",
+        "file_path": "modules/MobileEditor.MobileEditor.md",
+        "name": "saveViewRecord"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "Gameplay.Sound.md",
+        "file_path": "classes/Gameplay.Sound.md",
+        "name": "Sound"
       }
     ]
   },
@@ -2165,11 +1816,6 @@
         "file_name": "UI.UI.md",
         "file_path": "modules/UI.UI.md",
         "name": "absoluteToViewport"
-      },
-      {
-        "file_name": "UI.UI.md",
-        "file_path": "modules/UI.UI.md",
-        "name": "assetIDChangeIConUrlRequest"
       },
       {
         "file_name": "UI.UI.md",
@@ -2706,11 +2352,6 @@
         "name": "UIChildCollation"
       },
       {
-        "file_name": "UI.UISlot.md",
-        "file_path": "classes/UI.UISlot.md",
-        "name": "UISlot"
-      },
-      {
         "file_name": "UI.ColorPick.md",
         "file_path": "classes/UI.ColorPick.md",
         "name": "ColorPick"
@@ -2742,6 +2383,102 @@
       }
     ]
   },
+  "Avatar": {
+    "Enums": [
+      {
+        "file_name": "Gameplay.SlotType.md",
+        "file_path": "enums/Gameplay.SlotType.md",
+        "name": "SlotType"
+      },
+      {
+        "file_name": "Gameplay.MoveControlMode.md",
+        "file_path": "enums/Gameplay.MoveControlMode.md",
+        "name": "MoveControlMode"
+      },
+      {
+        "file_name": "Gameplay.CharacterType.md",
+        "file_path": "enums/Gameplay.CharacterType.md",
+        "name": "CharacterType"
+      },
+      {
+        "file_name": "Gameplay.MovementDirection.md",
+        "file_path": "enums/Gameplay.MovementDirection.md",
+        "name": "MovementDirection"
+      },
+      {
+        "file_name": "Gameplay.AppearanceType.md",
+        "file_path": "enums/Gameplay.AppearanceType.md",
+        "name": "AppearanceType"
+      },
+      {
+        "file_name": "Gameplay.MovementType.md",
+        "file_path": "enums/Gameplay.MovementType.md",
+        "name": "MovementType"
+      },
+      {
+        "file_name": "Gameplay.SomatotypeV2.md",
+        "file_path": "enums/Gameplay.SomatotypeV2.md",
+        "name": "SomatotypeV2"
+      },
+      {
+        "file_name": "Gameplay.BodyPartTypeV1.md",
+        "file_path": "enums/Gameplay.BodyPartTypeV1.md",
+        "name": "BodyPartTypeV1"
+      },
+      {
+        "file_name": "Gameplay.CharacterTemplate.md",
+        "file_path": "enums/Gameplay.CharacterTemplate.md",
+        "name": "CharacterTemplate"
+      },
+      {
+        "file_name": "Gameplay.BasicStanceType.md",
+        "file_path": "enums/Gameplay.BasicStanceType.md",
+        "name": "BasicStanceType"
+      },
+      {
+        "file_name": "Gameplay.SomatotypeV1.md",
+        "file_path": "enums/Gameplay.SomatotypeV1.md",
+        "name": "SomatotypeV1"
+      },
+      {
+        "file_name": "Gameplay.CustomShapeType.md",
+        "file_path": "enums/Gameplay.CustomShapeType.md",
+        "name": "CustomShapeType"
+      },
+      {
+        "file_name": "Gameplay.ExpressionType.md",
+        "file_path": "enums/Gameplay.ExpressionType.md",
+        "name": "ExpressionType"
+      },
+      {
+        "file_name": "Gameplay.MoveFacingDirection.md",
+        "file_path": "enums/Gameplay.MoveFacingDirection.md",
+        "name": "MoveFacingDirection"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "Gameplay.Pawn.md",
+        "file_path": "classes/Gameplay.Pawn.md",
+        "name": "Pawn"
+      },
+      {
+        "file_name": "Gameplay.Character.md",
+        "file_path": "classes/Gameplay.Character.md",
+        "name": "Character"
+      },
+      {
+        "file_name": "Gameplay.StyleConfig.md",
+        "file_path": "classes/Gameplay.StyleConfig.md",
+        "name": "StyleConfig"
+      },
+      {
+        "file_name": "Gameplay.AttachmentArray.md",
+        "file_path": "classes/Gameplay.AttachmentArray.md",
+        "name": "AttachmentArray"
+      }
+    ]
+  },
   "Animations": {
     "Enums": [
       {
@@ -2762,14 +2499,19 @@
     ],
     "Classes": [
       {
-        "file_name": "Gameplay.SubStance.md",
-        "file_path": "classes/Gameplay.SubStance.md",
-        "name": "SubStance"
+        "file_name": "Gameplay.IStanceBase.md",
+        "file_path": "classes/Gameplay.IStanceBase.md",
+        "name": "IStanceBase"
       },
       {
         "file_name": "Gameplay.Animation.md",
         "file_path": "classes/Gameplay.Animation.md",
         "name": "Animation"
+      },
+      {
+        "file_name": "Gameplay.BasicStance.md",
+        "file_path": "classes/Gameplay.BasicStance.md",
+        "name": "BasicStance"
       },
       {
         "file_name": "Gameplay.Stance.md",

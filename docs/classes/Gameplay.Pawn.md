@@ -1,44 +1,23 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / AbilityObject
+[Avatar](../groups/Avatar.Avatar.md) / Pawn
 
-# AbilityObject <Badge type="tip" text="Class" /> <Score text="AbilityObject" />
+# Pawn <Badge type="tip" text="Class" /> <Score text="Pawn" />
 
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:024 reason: Gameplay模块优化方案 replacement: 无
-
-:::
-
-能力对象，提供角色按指定一系列的能力序列进行动画自动切换的功能。
- 能力即为角色执行某一个包含一系列状态变更的动作，由一个动画为主体，并在动画播放过程实时控制角色的是否可移动，可跳跃，可转向等状态。
-
-::: warning Precautions
-
-服务端运行，客户端的属性等无法保证实时更新，请在服务端获取相关的参数
-
-:::
+可以被玩家和AI控制的对象的基类
 
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
 
-  ↳ **`AbilityObject`**
+  ↳ **`Pawn`**
+
+  ↳↳ [`Character`](Gameplay.Character.md)
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onAbilityStateChanged](Gameplay.AbilityObject.md#onabilitystatechanged)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态改变时发送事件|
-| **[onAbilityStateEnter](Gameplay.AbilityObject.md#onabilitystateenter)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态进入时发送事件|
-| **[onAbilityStateExit](Gameplay.AbilityObject.md#onabilitystateexit)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态退出时发送事件|
-| **[onAbilityStatePause](Gameplay.AbilityObject.md#onabilitystatepause)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态暂停时发送事件|
-| **[onAbilityStateResume](Gameplay.AbilityObject.md#onabilitystateresume)**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\> <br> 技能状态继续时发送事件|
-
 | Accessors |
 | :-----|
-| **[currentAbilityState](Gameplay.AbilityObject.md#currentabilitystate)**(): [`AbilityState`](Gameplay.AbilityState.md) <br> 获取能力状态|
-| **[currentAbilityStateIndex](Gameplay.AbilityObject.md#currentabilitystateindex)**(): `number` <br> 获取当前能力状态索引值|
-| **[duration](Gameplay.AbilityObject.md#duration)**(): `number` <br> 获取能力对象执行时间|
-| **[isAbilityReady](Gameplay.AbilityObject.md#isabilityready)**(): `boolean` <br> 是否进入Ready状态|
+| **[customTimeDilation](Gameplay.Pawn.md#customtimedilation)**(): `number` <br> 膨胀时间速度|
+| **[player](Gameplay.Pawn.md#player)**(): [`Player`](Gameplay.Player.md) <br> 玩家对象|
 
 
 ::: details 点击查看继承
@@ -59,7 +38,6 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -68,16 +46,8 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 
 | Methods |
 | :-----|
-| **[activate](Gameplay.AbilityObject.md#activate)**(): `void` <br> 激活能力|
-| **[addAbilityState](Gameplay.AbilityObject.md#addabilitystate)**(`animAssetGUID`: `string`, `duration?`: `number`, `isLoop?`: `boolean`, `canMove?`: `boolean`, `canJump?`: `boolean`, `moveControl?`: [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md)): `number` <br> 添加能力状态|
-| **[bindPlayer](Gameplay.AbilityObject.md#bindplayer)**(`player`: [`Player`](Gameplay.Player.md)): `boolean` <br> 绑定玩家，特指使用该能力对象的玩家|
-| **[deactivate](Gameplay.AbilityObject.md#deactivate)**(): `void` <br> 失活能力|
-| **[getAbilityStateByIndex](Gameplay.AbilityObject.md#getabilitystatebyindex)**(`Index`: `number`): [`AbilityState`](Gameplay.AbilityState.md) <br> 根据索引获取能力状态|
-| **[getAllAbilityState](Gameplay.AbilityObject.md#getallabilitystate)**(): [`AbilityState`](Gameplay.AbilityState.md)[] <br> 获取所有能力状态|
-| **[pause](Gameplay.AbilityObject.md#pause)**(): `void` <br> 暂停能力|
-| **[removeAbilityState](Gameplay.AbilityObject.md#removeabilitystate)**(`Index`: `number`): `boolean` <br> 删除添加状态|
-| **[resume](Gameplay.AbilityObject.md#resume)**(): `void` <br> 唤醒能力|
-| **[switchTo](Gameplay.AbilityObject.md#switchto)**(`StateIndex`: `number`): `void` <br> 跳转能力释放阶段|
+| **[setOutline](Gameplay.Pawn.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](Type.LinearColor.md), `width?`: `number`, `depthOffset?`: `number`, `clampValue?`: `number`, `cameraPosition?`: `boolean`, `silhouetteOnly?`: `boolean`): `void` <br> 添加描边效果|
+| **[setPostProcessOutline](Gameplay.Pawn.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](Type.LinearColor.md), `width?`: `number`): `void` <br> 添加后处理描边|
 
 
 ::: details 点击查看继承
@@ -132,293 +102,192 @@ info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
-## Properties
-
-### onAbilityStateChanged <Score text="onAbilityStateChanged" /> 
-
-• **onAbilityStateChanged**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-技能状态改变时发送事件
-
-___
-
-### onAbilityStateEnter <Score text="onAbilityStateEnter" /> 
-
-• **onAbilityStateEnter**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-技能状态进入时发送事件
-
-___
-
-### onAbilityStateExit <Score text="onAbilityStateExit" /> 
-
-• **onAbilityStateExit**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-技能状态退出时发送事件
-
-___
-
-### onAbilityStatePause <Score text="onAbilityStatePause" /> 
-
-• **onAbilityStatePause**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-技能状态暂停时发送事件
-
-___
-
-### onAbilityStateResume <Score text="onAbilityStateResume" /> 
-
-• **onAbilityStateResume**: [`DelegateInterface`](../interfaces/Type.DelegateInterface.md)<(`StateIndex`: `number`, `AbilityState`: [`AbilityState`](Gameplay.AbilityState.md)) => `void`\>
-
-技能状态继续时发送事件
-
 ## Accessors
 
-### currentAbilityState <Score text="currentAbilityState" /> 
+### customTimeDilation <Score text="customTimeDilation" /> 
 
-• `get` **currentAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md) 
+• `get` **customTimeDilation**(): `number` 
 
-获取能力状态
+膨胀时间速度
 
 
-#### Returns
+::: warning Precautions
 
-[`AbilityState`](Gameplay.AbilityState.md)
+Pawn对象的膨胀时间速度，修改后自身时间流速是该值乘世界时间流速。默认值是1。
 
-获取能力状态
+:::
 
-___
-
-### currentAbilityStateIndex <Score text="currentAbilityStateIndex" /> 
-
-• `get` **currentAbilityStateIndex**(): `number` <Badge type="tip" text="other" />
-
-获取当前能力状态索引值
-
-调用端自动广播
-
-#### Returns
-
-`number`
-
-索引
-
-___
-
-### duration <Score text="duration" /> 
-
-• `get` **duration**(): `number` 
-
-获取能力对象执行时间
-
+使用示例:修改玩家的时间膨胀速度为原来的0.5倍后跳跃
+```ts
+@Core.Class
+export default class PawnTimeDilationExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+         // 下列代码仅在客户端执行
+         if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 添加一个按键方法：按下键盘“1”，将玩家的时间膨胀速度修改为原来的0.5，并跳跃
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myself.pawn.customTimeDilation = 0.5;
+                console.log("My pawn customTimeDilation: " + myself.pawn.customTimeDilation);
+                // 使玩家Pawn作为角色进行跳跃
+                (myself.pawn as Character).jump();
+            });
+        }
+    }
+}
+```
 
 #### Returns
 
 `number`
 
-获取能力对象执行时间
+
+### player <Score text="player" /> 
+
+• `get` **player**(): [`Player`](Gameplay.Player.md) 
+
+玩家对象
 
 
-### isAbilityReady <Score text="isAbilityReady" /> 
+::: warning Precautions
 
-• `get` **isAbilityReady**(): `boolean` <Badge type="tip" text="server" />
+控制当前Pawn对象的玩家，只读。
 
-是否进入Ready状态
+:::
 
+使用示例:通过player获取玩家并打印userId和instanceId
+```ts
+@Core.Class
+export default class PawnPlayerExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+         // 下列代码仅在客户端执行
+         if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 打印玩家(自己)userId和instanceId并对比
+            console.log("My userId: " + myself.userId);
+            console.log("My instanceId: " + myself.instanceId);
+            // 通过owner获取玩家(自己)并打印userId和instanceId并对比
+            let myPawn = myself.pawn as Character;
+            myPawn.animationMode = AnimationMode.Custom
+            let myself_2 = myPawn.player;
+            console.log("My userId: " + myself_2.userId);
+            console.log("My instanceId: " + myself_2.instanceId);
+        }
+    }
+}
+```
 
 #### Returns
 
-`boolean`
-
-true或false
+[`Player`](Gameplay.Player.md)
 
 
 ## Methods
 
-### activate <Score text="activate" /> 
+### setOutline <Score text="setOutline" /> 
 
-• **activate**(): `void` <Badge type="tip" text="other" />
+• **setOutline**(`enabled`, `color?`, `width?`, `depthOffset?`, `clampValue?`, `cameraPosition?`, `silhouetteOnly?`): `void` <Badge type="tip" text="client" />
 
-激活能力
-
-调用端自动广播
+添加描边效果
 
 
-___
+::: warning Precautions
 
-### addAbilityState <Score text="addAbilityState" /> 
+为Pawn对象添加描边效果，描边效果会被其他物体遮挡。
 
-• **addAbilityState**(`animAssetGUID`, `duration?`, `isLoop?`, `canMove?`, `canJump?`, `moveControl?`): `number` <Badge type="tip" text="other" />
+:::
 
-添加能力状态
-
-调用端自动广播
-
-使用示例: 如下示例展示此方法的参数的含义和使用方法
+使用示例:给本地玩家添加红色描边
 ```ts
-const abilityObj = Core.GameObject.find("");
-abilityObj.addAbilityState("<动画资源 id>", 0.4, false, false, false, Gameplay.MoveControlMode.null);
+@Core.Class
+export default class PawnOutlineExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+         // 下列代码仅在客户端执行
+         if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 添加一个按键方法：按下键盘“1”，给玩家Pawn添加描边（会被遮挡）
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myself.pawn.setOutline(true, Type.LinearColor.red, 1);
+            });
+            // 添加一个按键方法：按下键盘“2”，给玩家Pawn移除描边
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                myself.pawn.setOutline(false);
+            });
+        }
+    }
+}
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `animAssetGUID` | `string` |  动画资源 ，项目未引用过的资源导入会失败 |
-| `duration?` | `number` |  持续时间 default: 0.033 |
-| `isLoop?` | `boolean` |  是否循环 default: false |
-| `canMove?` | `boolean` |  可移动 default: false |
-| `canJump?` | `boolean` |  可跳跃 default: false |
-| `moveControl?` | [`MoveControlMode`](../enums/Gameplay.MoveControlMode.md) |  移动控制模式 default: Gameplay.MoveControlMode.null |
+| `enabled` | `boolean` | 是否开启描边 |
+| `color?` | [`LinearColor`](Type.LinearColor.md) | 描边颜色 default:Type.LinearColor.black |
+| `width?` | `number` | 描边宽度 default:2 |
+| `depthOffset?` | `number` | 描边深度偏移 default:0 |
+| `clampValue?` | `number` | 描边范围 default:0.93 |
+| `cameraPosition?` | `boolean` | 是否考虑相机位置 default:false |
+| `silhouetteOnly?` | `boolean` | 是否仅轮廓描边 default:true |
 
-#### Returns
-
-`number`
-
-服务端调用成功则返回当前技能索引，否则返回-1
-
-
-### bindPlayer <Score text="bindPlayer" /> 
-
-• **bindPlayer**(`player`): `boolean` <Badge type="tip" text="other" />
-
-绑定玩家，特指使用该能力对象的玩家
-
-::: warning Precautions
-
-单端调用即可，不需要重复调用。
-
-:::
-
-调用端自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](Gameplay.Player.md) |  需要使用技能的角色 |
-
-#### Returns
-
-`boolean`
-
-当有对内部玩家进行赋值时，返回 true
-
-
-### deactivate <Score text="deactivate" /> 
-
-• **deactivate**(): `void` <Badge type="tip" text="other" />
-
-失活能力
-
-调用端自动广播
-
-
-
-### getAbilityStateByIndex <Score text="getAbilityStateByIndex" /> 
-
-• **getAbilityStateByIndex**(`Index`): [`AbilityState`](Gameplay.AbilityState.md) 
-
-根据索引获取能力状态
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Index` | `number` | 能力状态序号 |
-
-#### Returns
-
-[`AbilityState`](Gameplay.AbilityState.md)
-
-根据索引获取能力状态
 
 ___
 
-### getAllAbilityState <Score text="getAllAbilityState" /> 
+### setPostProcessOutline <Score text="setPostProcessOutline" /> 
 
-• **getAllAbilityState**(): [`AbilityState`](Gameplay.AbilityState.md)[] 
+• **setPostProcessOutline**(`enabled`, `color?`, `width?`): `void` <Badge type="tip" text="client" />
 
-获取所有能力状态
+添加后处理描边
 
-
-#### Returns
-
-[`AbilityState`](Gameplay.AbilityState.md)[]
-
-能力状态数组
-
-
-### pause <Score text="pause" /> 
-
-• **pause**(): `void` <Badge type="tip" text="other" />
-
-暂停能力
-
-调用端自动广播
-
-
-
-### removeAbilityState <Score text="removeAbilityState" /> 
-
-• **removeAbilityState**(`Index`): `boolean` <Badge type="tip" text="other" />
-
-删除添加状态
-
-调用端自动广播
 
 ::: warning Precautions
 
-激活状态、未初始化状态、状态个数超过最大值调用失败
+为Pawn对象添加高级描边效果，描边效果不会被其他物体遮挡。
 
 :::
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Index` | `number` | 状态序号 |
-
-#### Returns
-
-`boolean`
-
-成功返回true，失败返回false
-
-___
-
-### resume <Score text="resume" /> 
-
-• **resume**(): `void` <Badge type="tip" text="other" />
-
-唤醒能力
-
-调用端自动广播
-
-
-
-### switchTo <Score text="switchTo" /> 
-
-• **switchTo**(`StateIndex`): `void` <Badge type="tip" text="other" />
-
-跳转能力释放阶段
-
-调用端自动广播
+使用示例:给本地玩家添加后处理红色描边
+```ts
+@Core.Class
+export default class PawnPostProcessOutlineExample extends Core.Script {
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+         // 下列代码仅在客户端执行
+         if(SystemUtil.isClient()) {
+            // 获取当前客户端的玩家(自己)
+            let myself = Player.localPlayer;
+            // 添加一个按键方法：按下键盘“1”，给玩家Pawn添加后处理描边（无视遮挡）
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myself.pawn.setPostProcessOutline(true, Type.LinearColor.red, 1);
+            });
+            // 添加一个按键方法：按下键盘“2”，给玩家Pawn移除后处理描边
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                myself.pawn.setPostProcessOutline(false);
+            });
+        }
+    }
+}
+```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `StateIndex` | `number` | 能力释放阶段序号 |
+| `enabled` | `boolean` | 是否开启描边 |
+| `color?` | [`LinearColor`](Type.LinearColor.md) | 描边颜色 default:Type.LinearColor.red |
+| `width?` | `number` | 描边宽度 default:1 |
 

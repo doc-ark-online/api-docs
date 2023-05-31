@@ -4,6 +4,10 @@
 
 形象类型
 
+使用示例:
+```ts
+```
+
 ## Table of contents
 
 | Enumeration Members |

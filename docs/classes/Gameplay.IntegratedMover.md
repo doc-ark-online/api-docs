@@ -4,6 +4,79 @@
 
 运动器组件
 
+使用示例:创建一个名为"IMExample1"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别以开启和不开启平滑运动的方式做重复线性运动.代码如下:
+```ts
+@Core.Class
+export default class IMExample1 extends Core.Script {
+
+    // 声明变量
+    Obj1;
+    Obj2;
+    IM1;
+    IM2;
+
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+      if (Util.SystemUtil.isClient()) {
+          // 创建一个长方体
+          this.Obj1 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+          // 设置起始位置
+          this.Obj1.setWorldLocation(new Type.Vector(300.0, -100.0, 300.0));
+          // 设置起始缩放
+          this.Obj1.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+
+          // 创建一个运动器，并将运动器挂载到长方体上
+          this.IM1 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+          this.IM1.attachToGameObject(this.Obj1);
+
+          // 测试启用状态
+          console.log("Enable status: " + this.IM1.enable);
+          this.IM1.enable = true;
+          console.log("New enable status: " + this.IM1.enable);
+
+          // 添加一个线性运动
+          this.IM1.linearSpeed = new Type.Vector(0.0, 100.0, 0.0);
+          this.IM1.linearRepeat = true;
+          this.IM1.linearRepeatTime = 2.0;
+          this.IM1.linearRepeatDelay = 0.0;
+          this.IM1.linearReturnDelay = 0.0;
+
+          // 用同样的方式创建第二个长方体与第二个运动器
+          this.Obj2 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+          this.Obj2.setWorldLocation(new Type.Vector(300.0, -100.0, 150.0));
+          this.Obj2.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+          this.IM2 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+          this.IM2.attachToGameObject(this.Obj2);
+          this.IM2.enable = true;
+
+          // 给第二个运动器开启平滑运动
+          console.log("Smooth status: " + this.IM2.smooth);
+          this.IM2.smooth = true;
+          console.log("New smooth status: " + this.IM2.smooth);
+
+          // 添加一个同样的线性运动
+          this.IM2.linearSpeed = new Type.Vector(0.0, 100.0, 0.0);
+          this.IM2.linearRepeat = true;
+          this.IM2.linearRepeatTime = 2.0;
+          this.IM2.linearRepeatDelay = 0.0;
+          this.IM2.linearReturnDelay = 0.0;
+      }
+  }
+
+   // 周期函数 每帧执行
+   // 此函数执行需要将this.useUpdate赋值为true
+   // @param dt 当前帧与上一帧的延迟 / 秒
+   protected onUpdate(dt: number): void {
+
+   }
+
+   // 脚本被销毁时最后一帧执行完调用此函数
+   protected onDestroy(): void {
+
+   }
+}
+```
+
 ## Hierarchy
 
 - [`GameObject`](Gameplay.GameObject.md)
@@ -14,42 +87,41 @@
 
 | Properties |
 | :-----|
-| **[onLinearEnable](Gameplay.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
-| **[onLinearReturn](Gameplay.IntegratedMover.md#onlinearreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onLinearStart](Gameplay.IntegratedMover.md#onlinearstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onRotationEnable](Gameplay.IntegratedMover.md#onrotationenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
-| **[onRotationReturn](Gameplay.IntegratedMover.md#onrotationreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onRotationStart](Gameplay.IntegratedMover.md#onrotationstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onScaleEnable](Gameplay.IntegratedMover.md#onscaleenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件|
-| **[onScaleReturn](Gameplay.IntegratedMover.md#onscalereturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onScaleStart](Gameplay.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件|
-| **[onSwingEnable](Gameplay.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 摆动：延迟启动回调|
+| **[onLinearEnable](Gameplay.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| **[onLinearReturn](Gameplay.IntegratedMover.md#onlinearreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| **[onLinearStart](Gameplay.IntegratedMover.md#onlinearstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码|
+| **[onRotationEnable](Gameplay.IntegratedMover.md#onrotationenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| **[onRotationReturn](Gameplay.IntegratedMover.md#onrotationreturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| **[onRotationStart](Gameplay.IntegratedMover.md#onrotationstart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码|
+| **[onScaleEnable](Gameplay.IntegratedMover.md#onscaleenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| **[onScaleReturn](Gameplay.IntegratedMover.md#onscalereturn)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| **[onScaleStart](Gameplay.IntegratedMover.md#onscalestart)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码|
+| **[onSwingEnable](Gameplay.IntegratedMover.md#onswingenable)**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\> <br> 摆动：延迟启动回调，使用示例详见swingSpeed的getter中的示例代码|
 
 | Accessors |
 | :-----|
-| **[constraintTarget1](Gameplay.IntegratedMover.md#constrainttarget1)**(): `string` <br> 获取约束对象(兼容旧项目)|
 | **[enable](Gameplay.IntegratedMover.md#enable)**(): `boolean` <br> 获取启用状态|
-| **[linearDelayStartTime](Gameplay.IntegratedMover.md#lineardelaystarttime)**(): `number` <br> 获取延时启动平移运行时间|
-| **[linearRepeat](Gameplay.IntegratedMover.md#linearrepeat)**(): `boolean` <br> 获取平移重复运动状态|
-| **[linearRepeatDelay](Gameplay.IntegratedMover.md#linearrepeatdelay)**(): `number` <br> 获取平移到达后停顿时间|
-| **[linearRepeatTime](Gameplay.IntegratedMover.md#linearrepeattime)**(): `number` <br> 获取平移单程运动时间|
-| **[linearReturnDelay](Gameplay.IntegratedMover.md#linearreturndelay)**(): `number` <br> 获取平移返程后停顿时间|
+| **[linearDelayStartTime](Gameplay.IntegratedMover.md#lineardelaystarttime)**(): `number` <br> 获取延时启动平移运行时间，使用示例详见linearSpeed的getter中的示例代码|
+| **[linearRepeat](Gameplay.IntegratedMover.md#linearrepeat)**(): `boolean` <br> 获取平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码|
+| **[linearRepeatDelay](Gameplay.IntegratedMover.md#linearrepeatdelay)**(): `number` <br> 获取平移到达后停顿时间，使用示例详见linearSpeed的getter中的示例代码|
+| **[linearRepeatTime](Gameplay.IntegratedMover.md#linearrepeattime)**(): `number` <br> 获取平移单程运动时间，使用示例详见linearSpeed的getter中的示例代码|
+| **[linearReturnDelay](Gameplay.IntegratedMover.md#linearreturndelay)**(): `number` <br> 获取平移返程后停顿时间，使用示例详见linearSpeed的getter中的示例代码|
 | **[linearSpeed](Gameplay.IntegratedMover.md#linearspeed)**(): [`Vector`](Type.Vector.md) <br> 获取平移速度大小|
-| **[rotationDelayStartTime](Gameplay.IntegratedMover.md#rotationdelaystarttime)**(): `number` <br> 获取延时启动旋转运行时间|
-| **[rotationRepeat](Gameplay.IntegratedMover.md#rotationrepeat)**(): `boolean` <br> 获取旋转重复运动状态|
-| **[rotationRepeatDelay](Gameplay.IntegratedMover.md#rotationrepeatdelay)**(): `number` <br> 获取旋转到达后停顿时间|
-| **[rotationRepeatTime](Gameplay.IntegratedMover.md#rotationrepeattime)**(): `number` <br> 获取旋转单程运动时间|
-| **[rotationReturnDelay](Gameplay.IntegratedMover.md#rotationreturndelay)**(): `number` <br> 获取旋转返程后停顿时间|
+| **[rotationDelayStartTime](Gameplay.IntegratedMover.md#rotationdelaystarttime)**(): `number` <br> 获取延时启动旋转运行时间，使用示例详见rotationSpeed的getter中的示例代码|
+| **[rotationRepeat](Gameplay.IntegratedMover.md#rotationrepeat)**(): `boolean` <br> 获取旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码|
+| **[rotationRepeatDelay](Gameplay.IntegratedMover.md#rotationrepeatdelay)**(): `number` <br> 获取旋转到达后停顿时间，使用示例详见rotationSpeed的getter中的示例代码|
+| **[rotationRepeatTime](Gameplay.IntegratedMover.md#rotationrepeattime)**(): `number` <br> 获取旋转单程运动时间，使用示例详见rotationSpeed的getter中的示例代码|
+| **[rotationReturnDelay](Gameplay.IntegratedMover.md#rotationreturndelay)**(): `number` <br> 获取旋转返程后停顿时间，使用示例详见rotationSpeed的getter中的示例代码|
 | **[rotationSpeed](Gameplay.IntegratedMover.md#rotationspeed)**(): [`Vector`](Type.Vector.md) <br> 获取旋转速度大小|
-| **[scaleDelayStartTime](Gameplay.IntegratedMover.md#scaledelaystarttime)**(): `number` <br> 获取延时启动缩放运行时间|
-| **[scaleRepeat](Gameplay.IntegratedMover.md#scalerepeat)**(): `boolean` <br> 获取缩放重复运动状态|
-| **[scaleRepeatDelay](Gameplay.IntegratedMover.md#scalerepeatdelay)**(): `number` <br> 获取缩放到达后停顿时间|
-| **[scaleRepeatTime](Gameplay.IntegratedMover.md#scalerepeattime)**(): `number` <br> 获取缩放单程运动时间|
-| **[scaleReturnDelay](Gameplay.IntegratedMover.md#scalereturndelay)**(): `number` <br> 获取缩放返程后停顿时间|
+| **[scaleDelayStartTime](Gameplay.IntegratedMover.md#scaledelaystarttime)**(): `number` <br> 获取延时启动缩放运行时间，使用示例详见scaleSpeed的getter中的示例代码|
+| **[scaleRepeat](Gameplay.IntegratedMover.md#scalerepeat)**(): `boolean` <br> 获取缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码|
+| **[scaleRepeatDelay](Gameplay.IntegratedMover.md#scalerepeatdelay)**(): `number` <br> 获取缩放到达后停顿时间，使用示例详见scaleSpeed的getter中的示例代码|
+| **[scaleRepeatTime](Gameplay.IntegratedMover.md#scalerepeattime)**(): `number` <br> 获取缩放单程运动时间，使用示例详见scaleSpeed的getter中的示例代码|
+| **[scaleReturnDelay](Gameplay.IntegratedMover.md#scalereturndelay)**(): `number` <br> 获取缩放返程后停顿时间，使用示例详见scaleSpeed的getter中的示例代码|
 | **[scaleSpeed](Gameplay.IntegratedMover.md#scalespeed)**(): [`Vector`](Type.Vector.md) <br> 获取缩放速度大小|
 | **[smooth](Gameplay.IntegratedMover.md#smooth)**(): `boolean` <br> 获取平滑状态|
-| **[swingAngle](Gameplay.IntegratedMover.md#swingangle)**(): `number` <br> 获取摆动最大角度|
-| **[swingDelayStartTime](Gameplay.IntegratedMover.md#swingdelaystarttime)**(): `number` <br> 获取延时启动摆动运行时间|
+| **[swingAngle](Gameplay.IntegratedMover.md#swingangle)**(): `number` <br> 获取摆动最大角度，使用示例详见swingSpeed的getter中的示例代码|
+| **[swingDelayStartTime](Gameplay.IntegratedMover.md#swingdelaystarttime)**(): `number` <br> 获取延时启动摆动运行时间，使用示例详见swingSpeed的getter中的示例代码|
 | **[swingSpeed](Gameplay.IntegratedMover.md#swingspeed)**(): [`Vector`](Type.Vector.md) <br> 获取摆动运动速度|
 
 
@@ -71,7 +143,6 @@
 | **[transform](Gameplay.GameObject.md#transform)**(): [`Transform`](Type.Transform.md) <br> 返回当前物体transform|
 | **[upVector](Gameplay.GameObject.md#upvector)**(): [`Vector`](Type.Vector.md) <br> 获取当前物体的向上向量|
 | **[useUpdate](Gameplay.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
-| **[visible](Gameplay.GameObject.md#visible)**(): `boolean` <br> 获取当前物体是否显示|
 | **[worldLocation](Gameplay.GameObject.md#worldlocation)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界坐标|
 | **[worldRotation](Gameplay.GameObject.md#worldrotation)**(): [`Rotation`](Type.Rotation.md) <br> 获取物体的世界旋转|
 | **[worldScale](Gameplay.GameObject.md#worldscale)**(): [`Vector`](Type.Vector.md) <br> 获取物体的世界缩放|
@@ -80,7 +151,7 @@
 
 | Methods |
 | :-----|
-| **[moverReset](Gameplay.IntegratedMover.md#moverreset)**(`OnReset?`: () => `void`): `void` <br> 将运动器状态重置，运动对象同时回到初始位置|
+| **[moverReset](Gameplay.IntegratedMover.md#moverreset)**(`OnReset?`: () => `void`): `void` <br> 将运动器状态重置，运动对象同时回到初始位置，使用示例详见linearSpeed、rotationSpeed等getter中的示例代码|
 
 
 ::: details 点击查看继承
@@ -135,13 +206,11 @@
 | **[setWorldScale](Gameplay.GameObject.md#setworldscale)**(`v`: [`Vector`](Type.Vector.md)): `void` <br> 设置物体的世界缩放|
 | **[asyncFind](Gameplay.GameObject.md#asyncfind)**(`GUID`: `string`): `Promise`<`GameObject`\> <br> 通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
 | **[asyncSpawn](Gameplay.GameObject.md#asyncspawn)**<`T`: extends `GameObject`<`T`\>\>(`spawnInfo`: [`SpawnInfo`](../interfaces/Type.SpawnInfo.md)): `Promise`<`T`: extends `GameObject`<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[asyncSpawnGameObject](Gameplay.GameObject.md#asyncspawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `Promise`<`GameObject`\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[find](Gameplay.GameObject.md#find)**(`GUID`: `string`): `GameObject` <br> 通过GUID查找GameObject|
 | **[findGameObjectByTag](Gameplay.GameObject.md#findgameobjectbytag)**(`InTag`: `string`): `GameObject`[] <br> 通过自定义Tag获取GameObject|
 | **[getGameObjectByName](Gameplay.GameObject.md#getgameobjectbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 通过名字查找物体|
 | **[getGameObjectsByName](Gameplay.GameObject.md#getgameobjectsbyname)**(`name`: `string`): `GameObject`[] <br> 通过名字查找物体|
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
-| **[spawnGameObject](Gameplay.GameObject.md#spawngameobject)**(`assetId`: `string`, `inReplicates?`: `boolean`, `transform?`: [`Transform`](Type.Transform.md)): `GameObject` <br> 构造一个 GameObject|
 :::
 
 
@@ -151,7 +220,7 @@
 
 • **onLinearEnable**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
+平移运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
 
 ___
 
@@ -159,7 +228,7 @@ ___
 
 • **onLinearReturn**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
+平移运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
 
 ___
 
@@ -167,7 +236,7 @@ ___
 
 • **onLinearStart**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
+平移运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见linearSpeed的getter中的示例代码
 
 ___
 
@@ -175,7 +244,7 @@ ___
 
 • **onRotationEnable**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
+旋转运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
 
 ___
 
@@ -183,7 +252,7 @@ ___
 
 • **onRotationReturn**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
+旋转运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
 
 ___
 
@@ -191,7 +260,7 @@ ___
 
 • **onRotationStart**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
+旋转运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见rotationSpeed的getter中的示例代码
 
 ___
 
@@ -199,7 +268,7 @@ ___
 
 • **onScaleEnable**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件
+缩放运动首次延迟启动时回调，延迟启动时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
 
 ___
 
@@ -207,7 +276,7 @@ ___
 
 • **onScaleReturn**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件
+缩放运动到达终点停顿时回调，到达后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
 
 ___
 
@@ -215,7 +284,7 @@ ___
 
 • **onScaleStart**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件
+缩放运动返回起点停顿时回调，到返程后停顿时间为0时表现不启用，无法获得回调事件，使用示例详见scaleSpeed的getter中的示例代码
 
 ___
 
@@ -223,32 +292,9 @@ ___
 
 • **onSwingEnable**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
 
-摆动：延迟启动回调
+摆动：延迟启动回调，使用示例详见swingSpeed的getter中的示例代码
 
 ## Accessors
-
-### constraintTarget1 <Score text="constraintTarget" /> 
-
-• `get` **constraintTarget1**(): `string`
-
-获取约束对象(兼容旧项目)
-
-#### Returns
-
-`string`
-
-• `set` **constraintTarget1**(`GUID`): `void`
-
-设置约束对象(兼容旧项目，若有必要请使用attachToGameObject)
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` | 约束对象的GUID |
-
-
-___
 
 ### enable <Score text="enable" /> 
 
@@ -278,7 +324,7 @@ ___
 
 • `get` **linearDelayStartTime**(): `number`
 
-获取延时启动平移运行时间
+获取延时启动平移运行时间，使用示例详见linearSpeed的getter中的示例代码
 
 #### Returns
 
@@ -288,7 +334,7 @@ ___
 
 • `set` **linearDelayStartTime**(`newDelay`): `void`
 
-设置延时启动平移运动时间
+设置延时启动平移运动时间，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -303,7 +349,7 @@ ___
 
 • `get` **linearRepeat**(): `boolean`
 
-获取平移重复运动状态
+获取平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码
 
 #### Returns
 
@@ -313,7 +359,7 @@ ___
 
 • `set` **linearRepeat**(`newRepeat`): `void`
 
-设置平移重复运动状态
+设置平移重复运动状态，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -328,7 +374,7 @@ ___
 
 • `get` **linearRepeatDelay**(): `number`
 
-获取平移到达后停顿时间
+获取平移到达后停顿时间，使用示例详见linearSpeed的getter中的示例代码
 
 #### Returns
 
@@ -338,7 +384,7 @@ ___
 
 • `set` **linearRepeatDelay**(`newDelay`): `void`
 
-设置平移到达后停顿时间，该属性需要重复运动状态为true时才会生效
+设置平移到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -353,7 +399,7 @@ ___
 
 • `get` **linearRepeatTime**(): `number`
 
-获取平移单程运动时间
+获取平移单程运动时间，使用示例详见linearSpeed的getter中的示例代码
 
 #### Returns
 
@@ -363,7 +409,7 @@ ___
 
 • `set` **linearRepeatTime**(`newTime`): `void`
 
-设置平移单程运动时间，该属性需要重复运动状态为true时才会生效
+设置平移单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -378,7 +424,7 @@ ___
 
 • `get` **linearReturnDelay**(): `number`
 
-获取平移返程后停顿时间
+获取平移返程后停顿时间，使用示例详见linearSpeed的getter中的示例代码
 
 #### Returns
 
@@ -388,7 +434,7 @@ ___
 
 • `set` **linearReturnDelay**(`newDelay`): `void`
 
-设置平移返程后停顿时间，该属性需要重复运动状态为true时才会生效
+设置平移返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -407,6 +453,95 @@ ___
 
 获取平移速度大小
 
+使用示例:创建一个名为"IMExample2"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的非重复线性运动，以及有无起点终点停顿的重复线性运动.代码如下:
+```ts
+@Core.Class
+export default class IMExample2 extends Core.Script {
+
+    // 声明变量
+    Obj1;
+    Obj2;
+    IM1;
+    IM2;
+
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        if (Util.SystemUtil.isClient()) {
+            // 创建长方体1和长方体2
+            this.Obj1 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            this.Obj2 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            // 设置起始位置
+            this.Obj1.setWorldLocation(new Type.Vector(300.0, 0.0, 300.0));
+            this.Obj2.setWorldLocation(new Type.Vector(300.0, 0.0, 150.0));
+            // 设置起始缩放
+            this.Obj1.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+            this.Obj2.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+
+            // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
+            this.IM1 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM1.attachToGameObject(this.Obj1);
+            this.IM1.enable = true;
+
+            this.IM2 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM2.attachToGameObject(this.Obj2);
+            this.IM2.enable = true;
+
+            // 运动器1和2都设置同样的运动速度，运动器2设置延迟五秒启动
+            this.IM1.linearSpeed = new Type.Vector(0.0, 100.0, 0.0);
+            this.IM1.linearRepeat = false;
+            this.IM1.linearDelayStartTime = 0.0;
+
+            this.IM2.linearSpeed = new Type.Vector(0.0, 100.0, 0.0);
+            this.IM2.linearRepeat = false;
+            this.IM2.linearDelayStartTime = 5.0;
+            // 运动器2绑定延迟启动回调
+            this.IM2.onLinearEnable.add(() => {
+                console.log("IM2 enabled with a delay");
+            })
+
+            // 等待十秒后，将长方体1和2归位，重新设置运动器1和2，让它们变成重复运动模式，且运动器2在起点和终点设置两秒延迟
+            setTimeout(() => {
+                this.IM1.moverReset();
+                this.IM2.moverReset();
+
+                this.IM1.linearRepeat = true;
+                this.IM1.linearRepeatTime = 2.0;
+                this.IM1.linearDelayStartTime = 0.0;
+                this.IM1.linearRepeatDelay = 0.0;
+                this.IM1.linearReturnDelay = 0.0;
+
+                this.IM2.linearRepeat = true;
+                this.IM2.linearRepeatTime = 2.0;
+                this.IM2.linearDelayStartTime = 0.0;
+                this.IM2.linearRepeatDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onLinearReturn.add(() => {
+                    console.log("IM2 paused at end point");
+                })
+                this.IM2.linearReturnDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onLinearStart.add(() => {
+                    console.log("IM2 paused at start point");
+                })
+            }, 10000);
+        }
+    }
+
+    //
+    // 周期函数 每帧执行
+    // 此函数执行需要将this.useUpdate赋值为true
+    // @param dt 当前帧与上一帧的延迟 / 秒
+    protected onUpdate(dt: number): void {
+
+    }
+
+    // 脚本被销毁时最后一帧执行完调用此函数
+    protected onDestroy(): void {
+
+    }
+}
+```
+
 #### Returns
 
 [`Vector`](Type.Vector.md)
@@ -415,7 +550,7 @@ ___
 
 • `set` **linearSpeed**(`newSpeed`): `void`
 
-设置平移速度大小
+设置平移速度大小，使用示例详见linearSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -429,7 +564,7 @@ ___
 
 • `get` **rotationDelayStartTime**(): `number`
 
-获取延时启动旋转运行时间
+获取延时启动旋转运行时间，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Returns
 
@@ -439,7 +574,7 @@ ___
 
 • `set` **rotationDelayStartTime**(`newDelay`): `void`
 
-设置延时启动旋转运动时间
+设置延时启动旋转运动时间，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -454,7 +589,7 @@ ___
 
 • `get` **rotationRepeat**(): `boolean`
 
-获取旋转重复运动状态
+获取旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Returns
 
@@ -464,7 +599,7 @@ ___
 
 • `set` **rotationRepeat**(`newRepeat`): `void`
 
-设置旋转重复运动状态
+设置旋转重复运动状态，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -479,7 +614,7 @@ ___
 
 • `get` **rotationRepeatDelay**(): `number`
 
-获取旋转到达后停顿时间
+获取旋转到达后停顿时间，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Returns
 
@@ -489,7 +624,7 @@ ___
 
 • `set` **rotationRepeatDelay**(`newDelay`): `void`
 
-设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效
+设置旋转到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -504,7 +639,7 @@ ___
 
 • `get` **rotationRepeatTime**(): `number`
 
-获取旋转单程运动时间
+获取旋转单程运动时间，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Returns
 
@@ -514,7 +649,7 @@ ___
 
 • `set` **rotationRepeatTime**(`newTime`): `void`
 
-设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效
+设置旋转单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -529,7 +664,7 @@ ___
 
 • `get` **rotationReturnDelay**(): `number`
 
-获取旋转返程后停顿时间
+获取旋转返程后停顿时间，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Returns
 
@@ -539,7 +674,7 @@ ___
 
 • `set` **rotationReturnDelay**(`newDelay`): `void`
 
-设置旋转返程后停顿时间，该属性需要重复运动状态为true时才会生效
+设置旋转返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -556,6 +691,95 @@ ___
 
 获取旋转速度大小
 
+使用示例:创建一个名为"IMExample3"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的非重复旋转，以及有无起点终点停顿的重复旋转.代码如下:
+```ts
+@Core.Class
+export default class IMExample3 extends Core.Script {
+
+    // 声明变量
+    Obj1;
+    Obj2;
+    IM1;
+    IM2;
+
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        if (Util.SystemUtil.isClient()) {
+            // 创建长方体1和长方体2
+            this.Obj1 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            this.Obj2 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            // 设置起始位置
+            this.Obj1.setWorldLocation(new Type.Vector(300.0, 200.0, 200.0));
+            this.Obj2.setWorldLocation(new Type.Vector(300.0, -200.0, 200.0));
+            // 设置起始缩放
+            this.Obj1.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+            this.Obj2.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+
+            // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
+            this.IM1 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM1.attachToGameObject(this.Obj1);
+            this.IM1.enable = true;
+
+            this.IM2 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM2.attachToGameObject(this.Obj2);
+            this.IM2.enable = true;
+
+            // 运动器1和2都设置同样的旋转速度，运动器2设置延迟五秒启动
+            this.IM1.rotationSpeed = new Type.Vector(90.0, 0.0, 0.0);
+            this.IM1.rotationRepeat = false;
+            this.IM1.rotationDelayStartTime = 0.0;
+
+            this.IM2.rotationSpeed = new Type.Vector(90.0, 0.0, 0.0);
+            this.IM2.rotationRepeat = false;
+            this.IM2.rotationDelayStartTime = 5.0;
+            // 运动器2绑定延迟启动回调
+            this.IM2.onRotationEnable.add(() => {
+                console.log("IM2 enabled with a delay");
+            })
+
+            // 等待十秒后，将长方体1和2归位，重新设置运动器1和2，让它们变成重复运动模式，且运动器2在起点和终点设置两秒延迟
+            setTimeout(() => {
+                this.IM1.moverReset();
+                this.IM2.moverReset();
+
+                this.IM1.rotationRepeat = true;
+                this.IM1.rotationRepeatTime = 2.0;
+                this.IM1.rotationDelayStartTime = 0.0;
+                this.IM1.rotationRepeatDelay = 0.0;
+                this.IM1.rotationReturnDelay = 0.0;
+
+                this.IM2.rotationRepeat = true;
+                this.IM2.rotationRepeatTime = 2.0;
+                this.IM2.rotationDelayStartTime = 0.0;
+                this.IM2.rotationRepeatDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onRotationReturn.add(() => {
+                    console.log("IM2 paused at end point");
+                })
+                this.IM2.rotationReturnDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onRotationStart.add(() => {
+                    console.log("IM2 paused at start point");
+                })
+            }, 10000);
+        }
+    }
+
+    //
+    // 周期函数 每帧执行
+    // 此函数执行需要将this.useUpdate赋值为true
+    // @param dt 当前帧与上一帧的延迟 / 秒
+    protected onUpdate(dt: number): void {
+
+    }
+
+    // 脚本被销毁时最后一帧执行完调用此函数
+    protected onDestroy(): void {
+
+    }
+}
+```
+
 #### Returns
 
 [`Vector`](Type.Vector.md)
@@ -564,7 +788,7 @@ ___
 
 • `set` **rotationSpeed**(`newSpeed`): `void`
 
-设置旋转速度大小
+设置旋转速度大小，使用示例详见rotationSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -579,7 +803,7 @@ ___
 
 • `get` **scaleDelayStartTime**(): `number`
 
-获取延时启动缩放运行时间
+获取延时启动缩放运行时间，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Returns
 
@@ -589,7 +813,7 @@ ___
 
 • `set` **scaleDelayStartTime**(`newDelay`): `void`
 
-设置延时启动缩放运动时间
+设置延时启动缩放运动时间，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -604,7 +828,7 @@ ___
 
 • `get` **scaleRepeat**(): `boolean`
 
-获取缩放重复运动状态
+获取缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Returns
 
@@ -614,7 +838,7 @@ ___
 
 • `set` **scaleRepeat**(`newRepeat`): `void`
 
-设置缩放重复运动状态
+设置缩放重复运动状态，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -629,7 +853,7 @@ ___
 
 • `get` **scaleRepeatDelay**(): `number`
 
-获取缩放到达后停顿时间
+获取缩放到达后停顿时间，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Returns
 
@@ -639,7 +863,7 @@ ___
 
 • `set` **scaleRepeatDelay**(`newDelay`): `void`
 
-设置缩放到达后停顿时间，该属性需要重复运动状态为true时才会生效
+设置缩放到达后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -654,7 +878,7 @@ ___
 
 • `get` **scaleRepeatTime**(): `number`
 
-获取缩放单程运动时间
+获取缩放单程运动时间，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Returns
 
@@ -664,7 +888,7 @@ ___
 
 • `set` **scaleRepeatTime**(`newTime`): `void`
 
-设置缩放单程运动时间，该属性需要重复运动状态为true时才会生效
+设置缩放单程运动时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -679,7 +903,7 @@ ___
 
 • `get` **scaleReturnDelay**(): `number`
 
-获取缩放返程后停顿时间
+获取缩放返程后停顿时间，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Returns
 
@@ -689,7 +913,7 @@ ___
 
 • `set` **scaleReturnDelay**(`newDelay`): `void`
 
-设置缩放返程后停顿时间，该属性需要重复运动状态为true时才会生效
+设置缩放返程后停顿时间，该属性需要重复运动状态为true时才会生效，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -706,6 +930,95 @@ ___
 
 获取缩放速度大小
 
+使用示例:创建一个名为"IMExample4"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个正方体,分别演示有无延迟启动的非重复缩放，以及有无起点终点停顿的重复缩放.代码如下:
+```ts
+@Core.Class
+export default class IMExample4 extends Core.Script {
+
+    // 声明变量
+    Obj1;
+    Obj2;
+    IM1;
+    IM2;
+
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        if (Util.SystemUtil.isClient()) {
+            // 创建长方体1和长方体2
+            this.Obj1 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            this.Obj2 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            // 设置起始位置
+            this.Obj1.setWorldLocation(new Type.Vector(300.0, 200.0, 200.0));
+            this.Obj2.setWorldLocation(new Type.Vector(300.0, -200.0, 200.0));
+            // 设置起始缩放
+            this.Obj1.setWorldScale(new Type.Vector(1.0, 1.0, 1.0));
+            this.Obj2.setWorldScale(new Type.Vector(1.0, 1.0, 1.0));
+
+            // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
+            this.IM1 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM1.attachToGameObject(this.Obj1);
+            this.IM1.enable = true;
+
+            this.IM2 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM2.attachToGameObject(this.Obj2);
+            this.IM2.enable = true;
+
+            // 运动器1和2都设置同样的缩放速度，运动器2设置延迟五秒启动
+            this.IM1.scaleSpeed = new Type.Vector(-0.1, -0.1, -0.1);
+            this.IM1.scaleRepeat = false;
+            this.IM1.scaleDelayStartTime = 0.0;
+
+            this.IM2.scaleSpeed = new Type.Vector(-0.1, -0.1, -0.1);
+            this.IM2.scaleRepeat = false;
+            this.IM2.scaleDelayStartTime = 5.0;
+            // 运动器2绑定延迟启动回调
+            this.IM2.onScaleEnable.add(() => {
+                console.log("IM2 enabled with a delay");
+            })
+
+            // 等待十秒后，将长方体1和2归位，重新设置运动器1和2，让它们变成重复运动模式，且运动器2在起点和终点设置两秒延迟
+            setTimeout(() => {
+                this.IM1.moverReset();
+                this.IM2.moverReset();
+
+                this.IM1.scaleRepeat = true;
+                this.IM1.scaleRepeatTime = 2.0;
+                this.IM1.scaleDelayStartTime = 0.0;
+                this.IM1.scaleRepeatDelay = 0.0;
+                this.IM1.scaleReturnDelay = 0.0;
+
+                this.IM2.scaleRepeat = true;
+                this.IM2.scaleRepeatTime = 2.0;
+                this.IM2.scaleDelayStartTime = 0.0;
+                this.IM2.scaleRepeatDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onScaleReturn.add(() => {
+                    console.log("IM2 paused at end point");
+                })
+                this.IM2.scaleReturnDelay = 2.0;
+                // 运动器2绑定终点停顿回调
+                this.IM2.onScaleStart.add(() => {
+                    console.log("IM2 paused at start point");
+                })
+            }, 10000);
+        }
+    }
+
+    //
+    // 周期函数 每帧执行
+    // 此函数执行需要将this.useUpdate赋值为true
+    // @param dt 当前帧与上一帧的延迟 / 秒
+    protected onUpdate(dt: number): void {
+
+    }
+
+    // 脚本被销毁时最后一帧执行完调用此函数
+    protected onDestroy(): void {
+
+    }
+}
+```
+
 #### Returns
 
 [`Vector`](Type.Vector.md)
@@ -714,7 +1027,7 @@ ___
 
 • `set` **scaleSpeed**(`newSpeed`): `void`
 
-设置缩放速度大小
+设置缩放速度大小，使用示例详见scaleSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -739,7 +1052,7 @@ ___
 
 • `set` **smooth**(`newSmooth`): `void`
 
-设置平滑状态
+设置平滑状态，启用后运动速度会由慢逐渐加快，直到最大值
 
 #### Parameters
 
@@ -753,7 +1066,7 @@ ___
 
 • `get` **swingAngle**(): `number`
 
-获取摆动最大角度
+获取摆动最大角度，使用示例详见swingSpeed的getter中的示例代码
 
 #### Returns
 
@@ -763,7 +1076,7 @@ ___
 
 • `set` **swingAngle**(`newAngle`): `void`
 
-设置摆动最大角度
+设置摆动最大角度，使用示例详见swingSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -778,7 +1091,7 @@ ___
 
 • `get` **swingDelayStartTime**(): `number`
 
-获取延时启动摆动运行时间
+获取延时启动摆动运行时间，使用示例详见swingSpeed的getter中的示例代码
 
 #### Returns
 
@@ -788,7 +1101,7 @@ ___
 
 • `set` **swingDelayStartTime**(`newDelay`): `void`
 
-设置延时启动摆动运动时间
+设置延时启动摆动运动时间，使用示例详见swingSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -805,6 +1118,69 @@ ___
 
 获取摆动运动速度
 
+使用示例:创建一个名为"IMExample5"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到两个长方体,分别演示有无延迟启动的单摆运动.代码如下:
+```ts
+@Core.Class
+export default class IMExample5 extends Core.Script {
+
+    // 声明变量
+    Obj1;
+    Obj2;
+    IM1;
+    IM2;
+
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected async onStart(): Promise<void> {
+        if (Util.SystemUtil.isClient()) {
+            // 创建长方体1和长方体2
+            this.Obj1 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            this.Obj2 = await Gameplay.GameObject.asyncSpawn({guid: "7669"}) as Core.GameObject;
+            // 设置起始位置
+            this.Obj1.setWorldLocation(new Type.Vector(300.0, 200.0, 200.0));
+            this.Obj2.setWorldLocation(new Type.Vector(300.0, -200.0, 200.0));
+            // 设置起始缩放
+            this.Obj1.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+            this.Obj2.setWorldScale(new Type.Vector(0.5, 2.0, 0.5));
+
+            // 创建运动器1和运动器2，并将运动器挂载到对应长方体上
+            this.IM1 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM1.attachToGameObject(this.Obj1);
+            this.IM1.enable = true;
+
+            this.IM2 = await Gameplay.GameObject.asyncSpawn({guid: "PhysicsSports"}) as Gameplay.IntegratedMover;
+            this.IM2.attachToGameObject(this.Obj2);
+            this.IM2.enable = true;
+
+            // 运动器1和2都设置同样的单摆速度和角度，运动器2设置延迟五秒启动
+            this.IM1.swingSpeed = new Type.Vector(1.0, 0.0, 0.0);
+            this.IM1.swingAngle = 90.0;
+            this.IM1.swingDelayStartTime = 0.0;
+
+            this.IM2.swingSpeed = new Type.Vector(1.0, 0.0, 0.0);
+            this.IM2.swingAngle = 90.0;
+            this.IM2.swingDelayStartTime = 5.0;
+            // 运动器2绑定延迟启动回调
+            this.IM2.onSwingEnable.add(() => {
+                console.log("IM2 enabled with a delay");
+            })
+        }
+    }
+
+    //
+    // 周期函数 每帧执行
+    // 此函数执行需要将this.useUpdate赋值为true
+    // @param dt 当前帧与上一帧的延迟 / 秒
+    protected onUpdate(dt: number): void {
+
+    }
+
+    // 脚本被销毁时最后一帧执行完调用此函数
+    protected onDestroy(): void {
+
+    }
+}
+```
+
 #### Returns
 
 [`Vector`](Type.Vector.md)
@@ -813,7 +1189,7 @@ ___
 
 • `set` **swingSpeed**(`newSpeed`): `void`
 
-设置摆动运动速度
+设置摆动运动速度，使用示例详见swingSpeed的getter中的示例代码
 
 #### Parameters
 
@@ -829,7 +1205,7 @@ ___
 
 • **moverReset**(`OnReset?`): `void` 
 
-将运动器状态重置，运动对象同时回到初始位置
+将运动器状态重置，运动对象同时回到初始位置，使用示例详见linearSpeed、rotationSpeed等getter中的示例代码
 
 
 #### Parameters

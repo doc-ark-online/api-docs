@@ -177,6 +177,25 @@ ___
 
 :::
 
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+```ts
+@Core.Class
+export default class PurchaseExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        await TimeUtil.delaySecond(5);
+        let arkCount = PurchaseService.getInstance().getArkBalance();
+        player.character.characterName = "ArkCount: " + arkCount;
+    }
+}
+`
+
 
 ___
 
@@ -192,6 +211,25 @@ ___
 暂未考虑单机模式，只在支持大会员的233/Playza/口袋方舟内使用时生效
 
 :::
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
+```
+@Core.Class
+export default class PurchaseExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        PurchaseService.getInstance().getUserKeyNumber(keyNumber => {
+            player.character.characterName = "当前用户剩余钥匙数量：", keyNumber.toString();
+        })
+    }
+}
+```ts
 
 #### Parameters
 
@@ -217,6 +255,25 @@ ___
 
 :::
 
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
+```
+@Core.Class
+export default class PurchaseExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        PurchaseService.getInstance().isPremiumMember(isSupport => {
+            player.character.characterName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
+        })
+    }
+}
+```ts
+
 #### Parameters
 
 | Name | Type | Description |
@@ -239,16 +296,24 @@ ___
 
 :::
 
-使用示例:接口使用方式
-```ts
-Service.PurchaseService.getInstance().isPremiumMemberSupported((result: boolean) => {
-  if (result) {
-    console.log("支持大会员");
-  } else {
-    console.log("不支持大会员");
-  }
-});
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
 ```
+@Core.Class
+export default class PurchaseExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let player = await Gameplay.asyncGetCurrentPlayer();
+        PurchaseService.getInstance().isPremiumMemberSupported(isSupport => {
+            player.character.characterName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
+        })
+    }
+}
+```ts
 
 #### Parameters
 
@@ -265,6 +330,23 @@ ___
 
 跳转会员充值页面
 
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
+```
+@Core.Class
+export default class PurchaseExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        await TimeUtil.delaySecond(10);
+        PurchaseService.getInstance().openPremiumMemberPurchasePage();
+    }
+}
+```ts
 
 
 ___

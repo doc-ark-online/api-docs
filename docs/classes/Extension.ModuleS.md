@@ -10,6 +10,79 @@
 
 :::
 
+使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息
+```ts
+@Core.Class
+export default class ModuleSExample extends Core.Script {
+
+    protected onStart(): void {
+        ModuleManager.getInstance().registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+    }
+
+}
+
+class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
+    protected onStart(): void {
+        InputUtil.onKeyDown(Keys.F, () => {
+            this.server.net_LevelUp();
+        })
+    }
+}
+class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
+
+    protected onAwake(): void {
+        console.log("-----------服务端-player模块创建模块-----------");
+    }
+
+    protected onStart(): void {
+        console.log("-----------服务端-player模块开始-----------");
+    }
+
+    protected onPlayerEnterGame(player: Gameplay.Player): void {
+        console.log("-----------服务端-player模块玩家进入游戏-----------");
+    }
+
+    protected onPlayerJoined(player: Gameplay.Player): void {
+        console.log("-----------服务端-player模块玩家加入-----------");
+    }
+
+    protected onPlayerLeft(player: Gameplay.Player): void {
+        console.log("-----------服务端-player模块玩家离开-----------");
+    }
+
+    protected onUpdate(dt: number): void {
+        //每帧调用 dt为两帧之间的时间差
+        // console.log("-----------服务端-player模块更新-----------"+dt);
+    }
+
+    //玩家升级
+    public net_LevelUp(): void {
+        //调用该函数的客户端玩家数据
+        let playerData = this.currentData;
+        playerData.levelUp();
+        console.log("玩家等级：", playerData.getlevel());
+    }
+}
+class PlayerModuleData extends Subdata {
+    @Decorator.saveProperty
+    private level: number;
+
+    protected initDefaultData(): void {
+        this.level = 0;
+    }
+
+    public getlevel(): number {
+        return this.level;
+    }
+
+    public levelUp(): void {
+        this.level++;
+        //保存数据
+        this.save(true);
+    }
+}
+```
+
 ## Type parameters
 
 | Name | Type |

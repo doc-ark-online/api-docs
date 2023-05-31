@@ -4,6 +4,10 @@
 
 动画插槽
 
+使用示例:
+```ts
+```
+
 ## Table of contents
 
 | Enumeration Members |

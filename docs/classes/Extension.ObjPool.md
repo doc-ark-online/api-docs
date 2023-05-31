@@ -4,6 +4,82 @@
 
 对象池
 
+使用示例:创建一个名为ObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会在玩家当前位置按照对象池中已有方块生成一个方块并在5秒后进行回收坐标回归到原点,频繁按F客户端日志会提示对象池中没有对象，按G键会销毁所有处于回收状态方块
+```ts
+@Core.Class
+export default class ObjPoolExample extends Core.Script {
+
+    private objPool: ObjPool<Cube>;
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        const cubeAssetId = "7669";
+        AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
+            //初始化一个5个对象的对象池
+            this.objPool = new ObjPool<Cube>(
+                this.onCubeCreate,
+                this.onCubeReset,
+                this.onCubeDestroy,
+                this.onCubeDespawn,
+                5
+            );
+            InputUtil.onKeyDown(Keys.F, () => {
+                let size = this.objPool.size;
+                if (size <= 0) {
+                    console.log("对象池中没有对象");
+                    return;
+                }
+                let cube = this.objPool.spawn();
+                setTimeout(() => {
+                    //5秒后回收该方块
+                    this.objPool.despawn(cube);
+                    cube.obj.worldLocation = new Type.Vector(0, 0, 0);
+                }, 5000);
+            });
+            InputUtil.onKeyDown(Keys.G, () => {
+                this.objPool.clear();
+//将对象池中的已回收对象全部销毁
+            })
+        });
+    }
+
+    //创建了新对象的回调
+    private onCubeCreate(): Cube {
+        let cube = new Cube();
+        cube.obj.setCollision(Type.CollisionStatus.Off);
+        cube.obj.worldLocation = new Type.Vector(0, 0, 0);
+        return cube;
+    }
+
+    //重置对象的回调
+    private onCubeReset(cube: Cube): void {
+        let playerPos = Gameplay.getCurrentPlayer().character.worldLocation;
+        cube.obj.worldLocation = playerPos;
+    }
+
+    //销毁对象的回调
+    private onCubeDestroy(cube: Cube): void {
+        cube.obj.destroy();
+        cube.obj = null;
+    }
+
+    //归还对象的回调
+    private onCubeDespawn(cube: Cube): void {
+
+    }
+
+}
+
+class Cube {
+
+    public obj: Core.GameObject = null;
+
+    constructor() {
+        this.obj = Core.GameObject.spawn({ guid: "7669" });
+    }
+}
+```
+
 ## Type parameters
 
 | Name |

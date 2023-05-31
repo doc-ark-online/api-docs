@@ -4,31 +4,60 @@
 
 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
 
+使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下:
+```ts
+@Core.Class
+export default class HotWeaponFireSample1 extends Core.Script {
+    protected onStart(): void {
+        // 构造
+        const hotWeapon = this.gameObject as Gameplay.HotWeapon;
+
+        if (SystemUtil.isServer()) {
+            hotWeapon.fireComponent.isFireOnScreenCenter = false;
+            hotWeapon.fireComponent.currentClipSize = 50;
+            hotWeapon.fireComponent.currentFireInterval = 0;
+            hotWeapon.fireComponent.currentMultipleShot = 3;
+            hotWeapon.fireComponent.isFireOnScreenCenter = false;
+            hotWeapon.fireComponent.isFullAutoMode = false;
+            hotWeapon.fireComponent.offsetOfFireOnScreenCenter = new Type.Vector(100, 30, 0);
+            // 设置参数
+            hotWeapon.fireComponent.animationGuid = "80484";
+            hotWeapon.fireComponent.onStartFireServer.add(() => { console.log("fireComponent.onStartFireClient") });
+            hotWeapon.fireComponent.onEndFireServer.add(() => { console.log("fireComponent.onEndFireClient") });
+            hotWeapon.fireComponent.onEndContinuousFireServer.add(() => { console.log("fireComponent.onEndFireClient") });
+        } else if (SystemUtil.isClient()) {
+            hotWeapon.fireComponent.onStartFireClient.add(() => { console.log("fireComponent.onStartFireClient") });
+            hotWeapon.fireComponent.onEndFireClient.add(() => { console.log("fireComponent.onEndFireClient") });
+        }
+    }
+}
+```
+
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onEndContinuousFireServer](Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数|
-| **[onEndFireClient](Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数|
-| **[onEndFireServer](Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数|
-| **[onStartFireClient](Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数|
-| **[onStartFireServer](Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数|
+| **[onEndContinuousFireServer](Gameplay.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndFireClient](Gameplay.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndFireServer](Gameplay.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onStartFireClient](Gameplay.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onStartFireServer](Gameplay.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[animationGuid](Gameplay.HotWeaponFireComponent.md#animationguid)**(): `string` <br> 绑定的动画GUID|
-| **[currentBulletSize](Gameplay.HotWeaponFireComponent.md#currentbulletsize)**(): `number` <br> 获取当前弹夹中子弹数量|
-| **[currentClipSize](Gameplay.HotWeaponFireComponent.md#currentclipsize)**(): `number` <br> 获取当前弹夹容量|
-| **[currentFireInterval](Gameplay.HotWeaponFireComponent.md#currentfireinterval)**(): `number` <br> 获取开火间隙|
+| **[animationGuid](Gameplay.HotWeaponFireComponent.md#animationguid)**(): `string` <br> 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[currentBulletSize](Gameplay.HotWeaponFireComponent.md#currentbulletsize)**(): `number` <br> 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[currentClipSize](Gameplay.HotWeaponFireComponent.md#currentclipsize)**(): `number` <br> 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[currentFireInterval](Gameplay.HotWeaponFireComponent.md#currentfireinterval)**(): `number` <br> 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[currentFireModel](Gameplay.HotWeaponFireComponent.md#currentfiremodel)**(): [`HotWeaponFireMode`](../enums/Gameplay.HotWeaponFireMode.md) <br> 获取当前的开火模式|
-| **[currentMultipleShot](Gameplay.HotWeaponFireComponent.md#currentmultipleshot)**(): `number` <br> 获取一次开火发射的子弹数量|
-| **[isFireOnScreenCenter](Gameplay.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火|
-| **[isFullAutoMode](Gameplay.HotWeaponFireComponent.md#isfullautomode)**(): `boolean` <br> 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹|
-| **[offsetOfFireOnScreenCenter](Gameplay.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](Type.Vector.md) <br> 获取屏幕中心开火时的偏移|
+| **[currentMultipleShot](Gameplay.HotWeaponFireComponent.md#currentmultipleshot)**(): `number` <br> 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[isFireOnScreenCenter](Gameplay.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[isFullAutoMode](Gameplay.HotWeaponFireComponent.md#isfullautomode)**(): `boolean` <br> 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[offsetOfFireOnScreenCenter](Gameplay.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](Type.Vector.md) <br> 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
 
 | Methods |
 | :-----|
-| **[hadAnimationGuid](Gameplay.HotWeaponFireComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
+| **[hadAnimationGuid](Gameplay.HotWeaponFireComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[isFiring](Gameplay.HotWeaponFireComponent.md#isfiring)**(): `boolean` <br> 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹|
 
 ## Properties
@@ -37,7 +66,7 @@
 
 • **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器完成一次连发射击周期时执行绑定函数
+服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ___
 
@@ -45,7 +74,7 @@ ___
 
 • **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端停止开火时执行绑定函数
+客户端停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ___
 
@@ -53,7 +82,7 @@ ___
 
 • **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器停止开火时执行绑定函数
+服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ___
 
@@ -61,7 +90,7 @@ ___
 
 • **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端开始开火时执行绑定函数
+客户端开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ___
 
@@ -69,7 +98,7 @@ ___
 
 • **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器开始开火时执行绑定函数
+服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ## Accessors
 
@@ -77,7 +106,7 @@ ___
 
 • `get` **animationGuid**(): `string` 
 
-绑定的动画GUID
+绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -88,7 +117,7 @@ ___
 
 • `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
 
-设置动画 GUID
+设置动画 GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -105,7 +134,7 @@ ___
 
 • `get` **currentBulletSize**(): `number` 
 
-获取当前弹夹中子弹数量
+获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -116,7 +145,7 @@ ___
 
 • `set` **currentBulletSize**(`value`): `void` <Badge type="tip" text="other" />
 
-设置当前弹夹中子弹数量
+设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -133,7 +162,7 @@ ___
 
 • `get` **currentClipSize**(): `number` 
 
-获取当前弹夹容量
+获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -144,7 +173,7 @@ ___
 
 • `set` **currentClipSize**(`value`): `void` <Badge type="tip" text="other" />
 
-设置当前弹夹容量
+设置当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -167,7 +196,7 @@ ___
 
 • `get` **currentFireInterval**(): `number` 
 
-获取开火间隙
+获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -178,7 +207,7 @@ ___
 
 • `set` **currentFireInterval**(`interval`): `void` <Badge type="tip" text="other" />
 
-设置开火间隙
+设置开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -216,7 +245,7 @@ ___
 
 • `get` **currentMultipleShot**(): `number` 
 
-获取一次开火发射的子弹数量
+获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -227,7 +256,7 @@ ___
 
 • `set` **currentMultipleShot**(`count`): `void` <Badge type="tip" text="other" />
 
-设置一次开火发射的子弹数量
+设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -250,7 +279,7 @@ ___
 
 • `get` **isFireOnScreenCenter**(): `boolean` 
 
-获取是否在屏幕中心开火
+获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -261,7 +290,7 @@ ___
 
 • `set` **isFireOnScreenCenter**(`value`): `void` <Badge type="tip" text="other" />
 
-设置是否在屏幕中心开火
+设置是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -284,7 +313,7 @@ ___
 
 • `get` **isFullAutoMode**(): `boolean` 
 
-获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹
+获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -295,7 +324,7 @@ ___
 
 • `set` **isFullAutoMode**(`isInFullAuto`): `void` <Badge type="tip" text="other" />
 
-设置当前状态下isInFullAuto的值
+设置当前状态下isInFullAuto的值。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -318,7 +347,7 @@ ___
 
 • `get` **offsetOfFireOnScreenCenter**(): [`Vector`](Type.Vector.md) 
 
-获取屏幕中心开火时的偏移
+获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
@@ -329,7 +358,7 @@ ___
 
 • `set` **offsetOfFireOnScreenCenter**(`offset`): `void` <Badge type="tip" text="other" />
 
-设置屏幕中心开火时的偏移
+设置屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
@@ -352,7 +381,7 @@ ___
 
 • **hadAnimationGuid**(): `boolean` 
 
-是否有动画GUID
+是否有动画GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns

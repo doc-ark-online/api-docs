@@ -14,11 +14,11 @@
 
 | Accessors |
 | :-----|
-| **[autoLayoutContainerRule](UI.Canvas.md#autolayoutcontainerrule)**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <br> 获取自动布局规则(Figma布局)|
+| **[autoLayoutContainerRule](UI.Canvas.md#autolayoutcontainerrule)**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <br> 获取自动布局排版规则-容器类型|
 | **[autoLayoutEnable](UI.Canvas.md#autolayoutenable)**(): `boolean` <br> 获取是否时自动布局|
 | **[autoLayoutHugContent](UI.Canvas.md#autolayouthugcontent)**(): [`UIHugContent`](UI.UIHugContent.md) <br> 获取宽高随内容大小还是固定大小|
-| **[autoLayoutPacketRule](UI.Canvas.md#autolayoutpacketrule)**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <br> 获取自动排版规则|
-| **[autoLayoutPadding](UI.Canvas.md#autolayoutpadding)**(): `Readonly`<[`Margin`](UI.Margin.md)\> <br> 获取边缘间距|
+| **[autoLayoutPacketRule](UI.Canvas.md#autolayoutpacketrule)**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <br> 获取自动布局排版规则-排列规则|
+| **[autoLayoutPadding](UI.Canvas.md#autolayoutpadding)**(): [`Margin`](UI.Margin.md) <br> 获取边缘间距|
 | **[autoLayoutRule](UI.Canvas.md#autolayoutrule)**(): [`UILayout`](UI.UILayout.md) <br> 获取完整的布局规则|
 | **[autoLayoutSpacing](UI.Canvas.md#autolayoutspacing)**(): `number` <br> 获取自动布局间隔|
 | **[clipEnable](UI.Canvas.md#clipenable)**(): `boolean` <br> 获取是否裁剪|
@@ -55,25 +55,25 @@
 
 • `get` **autoLayoutContainerRule**(): [`UILayoutType`](../enums/UI.UILayoutType.md) <Badge type="tip" text="client" />
 
-获取自动布局规则(Figma布局)
+获取自动布局排版规则-容器类型
 
 
 #### Returns
 
 [`UILayoutType`](../enums/UI.UILayoutType.md)
 
-自动布局规则
+自动布局排版规则-容器类型
 
 • `set` **autoLayoutContainerRule**(`inRule`): `void` <Badge type="tip" text="client" />
 
-设置自动布局规则(Figma布局)
+设置自动布局排版规则-容器类型
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inRule` | [`UILayoutType`](../enums/UI.UILayoutType.md) | 自动布局规则 |
+| `inRule` | [`UILayoutType`](../enums/UI.UILayoutType.md) | 自动布局排版规则-容器类型 |
 
 
 ___
@@ -136,39 +136,39 @@ ___
 
 • `get` **autoLayoutPacketRule**(): [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) <Badge type="tip" text="client" />
 
-获取自动排版规则
+获取自动布局排版规则-排列规则
 
 
 #### Returns
 
 [`UILayoutPacket`](../enums/UI.UILayoutPacket.md)
 
-自动排版规则
+自动布局排版规则-排列规则
 
 • `set` **autoLayoutPacketRule**(`inRule`): `void` <Badge type="tip" text="client" />
 
-设置自动排版规则
+设置自动布局排版规则-排列规则
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `inRule` | [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) | 自动排版规则 |
+| `inRule` | [`UILayoutPacket`](../enums/UI.UILayoutPacket.md) | 自动布局排版规则-排列规则 |
 
 
 ___
 
 ### autoLayoutPadding <Score text="autoLayoutPadding" /> 
 
-• `get` **autoLayoutPadding**(): `Readonly`<[`Margin`](UI.Margin.md)\> <Badge type="tip" text="client" />
+• `get` **autoLayoutPadding**(): [`Margin`](UI.Margin.md) <Badge type="tip" text="client" />
 
 获取边缘间距
 
 
 #### Returns
 
-`Readonly`<[`Margin`](UI.Margin.md)\>
+[`Margin`](UI.Margin.md)
 
 获取填充
 

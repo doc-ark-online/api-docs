@@ -20,8 +20,6 @@ Events
 | **[addLocalListener](Events.Events.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听本地事件|
 | **[addOnPauseListener](Events.Events.md#addonpauselistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause开始时执行的回调函数|
 | **[addOnResumeListener](Events.Events.md#addonresumelistener)**(`callback`: (`leaveDuration`: `number`) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加OnPause结束时执行的回调函数|
-| **[addPlayerJoinedListener](Events.Events.md#addplayerjoinedlistener)**(`listener`: (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家进入room事件|
-| **[addPlayerLeftListener](Events.Events.md#addplayerleftlistener)**(`listener`: (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 监听玩家离开room事件|
 | **[addServerListener](Events.Events.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 客户端监听服务器事件|
 | **[addUnfocusedListener](Events.Events.md#addunfocusedlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
 | **[dispatchLocal](Events.Events.md#dispatchlocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/Events.DispatchEventResult.md) <br> 发送本地事件|
@@ -218,48 +216,6 @@ listener.disconnect();
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `callback` | (`leaveDuration`: `number`) => `void` | 需要触发的回调函数，leaveDuration指OnPause持续时长 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-___
-
-### addPlayerJoinedListener <Score text="addPlayerJoinedListener" /> 
-
-• **addPlayerJoinedListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) 
-
-监听玩家进入room事件
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void` | 监听回调 |
-
-#### Returns
-
-[`EventListener`](../classes/Events.EventListener.md)
-
-返回一个事件监听器
-
-___
-
-### addPlayerLeftListener <Score text="addPlayerLeftListener" /> 
-
-• **addPlayerLeftListener**(`listener`): [`EventListener`](../classes/Events.EventListener.md) 
-
-监听玩家离开room事件
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `listener` | (`player`: [`Player`](../classes/Gameplay.Player.md)) => `void` | 监听回调 |
 
 #### Returns
 

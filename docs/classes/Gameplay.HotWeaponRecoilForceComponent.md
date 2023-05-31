@@ -4,44 +4,58 @@
 
 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）
 
-使用示例: 如下示例展示热武器后坐力组件使用的基本流程
+使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下:
 ```ts
-// 已有名为 hotWeapon 的热武器功能对象的示例
+@Core.Class
+export default class HotWeaponRecoilForceSample1 extends Core.Script {
+    protected onStart(): void {
+        // 构造
+        const hotWeapon = this.gameObject as Gameplay.HotWeapon;
 
-hotWeapon.recoilForceComponent.onStartRecoilForceServer.add(() => {
-    // 开始时应用后坐力效果时在服务端触发
-});
-// 修改参数
-hotWeapon.recoilForceComponent.minHorizontalJitter = 3;
-// 验证参数修改效果
-hotWeapon.startFire();
+        if (SystemUtil.isServer()) {
+            hotWeapon.recoilForceEnable = true;
+            hotWeapon.recoilForceComponent.minHorizontalOffset = 1
+            hotWeapon.recoilForceComponent.maxHorizontalOffset = 1
+            hotWeapon.recoilForceComponent.minVerticalOffset = 1
+            hotWeapon.recoilForceComponent.maxVerticalOffset = 1
+            hotWeapon.recoilForceComponent.minHorizontalJitter = 1;
+            hotWeapon.recoilForceComponent.maxHorizontalJitter = 1;
+            hotWeapon.recoilForceComponent.minVerticalJitter = 1;
+            hotWeapon.recoilForceComponent.maxVerticalJitter = 1;
+
+            hotWeapon.recoilForceComponent.onStartRecoilForceServer.add(() => { console.log("recoilForceComponent.onStartRecoilForceClient") });
+        } else if (SystemUtil.isClient()) {
+            hotWeapon.recoilForceComponent.onStartRecoilForceClient.add(() => { console.log("recoilForceComponent.onStartRecoilForceClient") });
+        }
+    }
+}
 ```
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onStartRecoilForceClient](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播|
-| **[onStartRecoilForceServer](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播|
+| **[onStartRecoilForceClient](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[onStartRecoilForceServer](Gameplay.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[maxHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值|
-| **[maxHorizontalOffset](Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值|
-| **[maxVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值|
-| **[maxVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值|
-| **[minHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值|
-| **[minHorizontalOffset](Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值|
-| **[minVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值|
-| **[minVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值|
+| **[maxHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxHorizontalOffset](Gameplay.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minHorizontalOffset](Gameplay.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
 | Methods |
 | :-----|
-| **[getDeepJitter](Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值|
-| **[getHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值|
+| **[getDeepJitter](Gameplay.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值。使用示例见方法 getHorizontalOffset 使用示例|
+| **[getHorizontalJitter](Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值。使用示例见方法 getHorizontalOffset 使用示例|
 | **[getHorizontalOffset](Gameplay.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number` <br> 获取水平偏移值|
-| **[getVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值|
-| **[getVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值|
+| **[getVerticalJitter](Gameplay.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值。使用示例见方法 getHorizontalOffset 使用示例|
+| **[getVerticalOffset](Gameplay.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值。使用示例见方法 getHorizontalOffset 使用示例|
 
 ## Properties
 
@@ -49,7 +63,7 @@ hotWeapon.startFire();
 
 • **onStartRecoilForceClient**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端后坐力开始广播
+客户端后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 ___
 
@@ -57,7 +71,7 @@ ___
 
 • **onStartRecoilForceServer**: [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\>
 
-服务器后坐力开始广播
+服务器后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 ## Accessors
 
@@ -65,7 +79,7 @@ ___
 
 • `get` **maxHorizontalJitter**(): `number` 
 
-获取相机水平抖动最大值
+获取相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -76,7 +90,7 @@ ___
 
 • `set` **maxHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
-设置相机水平抖动最大值
+设置相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -99,7 +113,7 @@ ___
 
 • `get` **maxHorizontalOffset**(): `number` 
 
-获取水平偏移最大值
+获取水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -110,7 +124,7 @@ ___
 
 • `set` **maxHorizontalOffset**(`value`): `void` 
 
-设置水平偏移最大值
+设置水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 ::: warning Precautions
@@ -132,7 +146,7 @@ ___
 
 • `get` **maxVerticalJitter**(): `number` 
 
-获取相机垂直抖动最大值
+获取相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -143,7 +157,7 @@ ___
 
 • `set` **maxVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
-设置相机垂直抖动最大值
+设置相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -166,7 +180,7 @@ ___
 
 • `get` **maxVerticalOffset**(): `number` 
 
-获取垂直偏移最大值
+获取垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -177,7 +191,7 @@ ___
 
 • `set` **maxVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
-设置垂直偏移最大值
+设置垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -200,7 +214,7 @@ ___
 
 • `get` **minHorizontalJitter**(): `number` 
 
-获取相机水平抖动最小值
+获取相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -211,7 +225,7 @@ ___
 
 • `set` **minHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
-设置相机水平抖动最小值
+设置相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -234,7 +248,7 @@ ___
 
 • `get` **minHorizontalOffset**(): `number` 
 
-获取水平偏移最小值
+获取水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -245,7 +259,7 @@ ___
 
 • `set` **minHorizontalOffset**(`value`): `void` 
 
-设置水平偏移最小值
+设置水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 ::: warning Precautions
@@ -267,7 +281,7 @@ ___
 
 • `get` **minVerticalJitter**(): `number` 
 
-获取相机垂直抖动最小值
+获取相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -278,7 +292,7 @@ ___
 
 • `set` **minVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
 
-设置相机垂直抖动最小值
+设置相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -301,7 +315,7 @@ ___
 
 • `get` **minVerticalOffset**(): `number` 
 
-获取垂直偏移最小值
+获取垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
@@ -312,7 +326,7 @@ ___
 
 • `set` **minVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
 
-设置垂直偏移最小值
+设置垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 调用端自动广播
 
@@ -335,7 +349,7 @@ ___
 
 • **getDeepJitter**(): `number` 
 
-获取深度抖动值
+获取深度抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
 
 #### Returns
@@ -350,7 +364,7 @@ ___
 
 • **getHorizontalJitter**(): `number` 
 
-获取水平抖动值
+获取水平抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
 
 #### Returns
@@ -368,6 +382,23 @@ ___
 获取水平偏移值
 
 
+使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下:
+```ts
+@Core.Class
+export default class HotWeaponRecoilForceSample2 extends Core.Script {
+    protected onStart(): void {
+        // 构造
+        const hotWeapon = this.gameObject as Gameplay.HotWeapon;
+
+        const horizontalOffset = hotWeapon.recoilForceComponent.getHorizontalOffset();
+        const verticalOffset = hotWeapon.recoilForceComponent.getVerticalOffset();
+        const horizontalJitter = hotWeapon.recoilForceComponent.getHorizontalJitter();
+        const verticalJitter = hotWeapon.recoilForceComponent.getVerticalJitter();
+        const deepJitter = hotWeapon.recoilForceComponent.getDeepJitter();
+    }
+}
+```
+
 #### Returns
 
 `number`
@@ -380,7 +411,7 @@ ___
 
 • **getVerticalJitter**(): `number` 
 
-获取垂直抖动值
+获取垂直抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
 
 #### Returns
@@ -395,7 +426,7 @@ ___
 
 • **getVerticalOffset**(): `number` 
 
-获取垂直偏移值
+获取垂直偏移值。使用示例见方法 getHorizontalOffset 使用示例
 
 
 #### Returns

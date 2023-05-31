@@ -24,7 +24,7 @@
 
 | Methods |
 | :-----|
-| **[add](Type.Rotation.md#add)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 旋转量a加上旋转量b|
+| **[add](Type.Rotation.md#add)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 旋转量a加上旋转量b|
 | **[clone](Type.Rotation.md#clone)**(): [`Rotation`](Type.Rotation.md) <br> 克隆当前旋转量|
 | **[equals](Type.Rotation.md#equals)**(`other`: [`Rotation`](Type.Rotation.md), `epsilon?`: `number`): `boolean` <br> 判断当前角度是否在误差范围内与指定向量相等。|
 | **[fromQuaternion](Type.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 转换Quaternion为Rotation|
@@ -32,21 +32,21 @@
 | **[fromVector](Type.Rotation.md#fromvector)**(`v`: [`Vector`](Type.Vector.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 转换Vector为Rotation|
 | **[getForce](Type.Rotation.md#getforce)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取此旋转后的方向向量|
 | **[getInverse](Type.Rotation.md#getinverse)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 返回一个新的反向旋转。|
-| **[multiply](Type.Rotation.md#multiply)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
+| **[multiply](Type.Rotation.md#multiply)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
 | **[rotateVector](Type.Rotation.md#rotatevector)**(`v`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 当前角度旋转一个向量|
 | **[set](Type.Rotation.md#set)**(`v`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量设置为新的旋转量|
 | **[strictEquals](Type.Rotation.md#strictequals)**(`other`: [`Rotation`](Type.Rotation.md)): `boolean` <br> 判断当前角度是否与指定向量相等。|
-| **[subtract](Type.Rotation.md#subtract)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
+| **[subtract](Type.Rotation.md#subtract)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
 | **[toQuaternion](Type.Rotation.md#toquaternion)**(): [`Quaternion`](Type.Quaternion.md) <br> 当前Rotation输出为四元数|
 | **[toString](Type.Rotation.md#tostring)**(): `string` <br> 当前Rotation输出为字符串|
-| **[add](Type.Rotation.md#add-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 旋转量a加上旋转量b|
+| **[add](Type.Rotation.md#add-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 旋转量a加上旋转量b|
 | **[copy](Type.Rotation.md#copy)**(`a`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 复制目标旋转|
 | **[fromQuaternion](Type.Rotation.md#fromquaternion-1)**(`v`: [`Quaternion`](Type.Quaternion.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 转换Quaternion为Rotation|
 | **[fromString](Type.Rotation.md#fromstring-1)**(`v`: `string`, `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 转换字符串数据为Rotation|
 | **[fromVector](Type.Rotation.md#fromvector-1)**(`v`: [`Vector`](Type.Vector.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 转换Vector为Rotation|
 | **[lerp](Type.Rotation.md#lerp)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `alpha`: `number`): [`Rotation`](Type.Rotation.md) <br> 对两个旋转量进行插值|
-| **[multiply](Type.Rotation.md#multiply-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
-| **[subtract](Type.Rotation.md#subtract-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
+| **[multiply](Type.Rotation.md#multiply-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
+| **[subtract](Type.Rotation.md#subtract-1)**(`a`: [`Rotation`](Type.Rotation.md), `b`: [`Rotation`](Type.Rotation.md), `outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 当前旋转量减去一个旋转量|
 
 构建一个新的 Rotation。值为(0, 0, 0)
 
@@ -465,7 +465,7 @@ ___
 
 ### add <Score text="add" /> 
 
-• `Static` **add**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) 
+• `Static` **add**(`a`, `b`, `outer?`): [`Rotation`](Type.Rotation.md) 
 
 旋转量a加上旋转量b
 
@@ -482,7 +482,7 @@ outer 不能为 null/undefined
 | :------ | :------ | :------ |
 | `a` | [`Rotation`](Type.Rotation.md) | 旋转量a |
 | `b` | [`Rotation`](Type.Rotation.md) | 旋转量b |
-| `outer` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量,即旋转相加的结果 |
+| `outer?` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量,即旋转相加的结果 default:null |
 
 #### Returns
 
@@ -629,7 +629,7 @@ ___
 
 ### multiply <Score text="multiply" /> 
 
-• `Static` **multiply**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) 
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Rotation`](Type.Rotation.md) 
 
 当前旋转量减去一个旋转量
 
@@ -646,7 +646,7 @@ outer 不能为 null/undefined
 | :------ | :------ | :------ |
 | `a` | [`Rotation`](Type.Rotation.md) | 旋转量a |
 | `b` | [`Rotation`](Type.Rotation.md) | 旋转量b |
-| `outer` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量变量 |
+| `outer?` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 
@@ -658,7 +658,7 @@ ___
 
 ### subtract <Score text="subtract" /> 
 
-• `Static` **subtract**(`a`, `b`, `outer`): [`Rotation`](Type.Rotation.md) 
+• `Static` **subtract**(`a`, `b`, `outer?`): [`Rotation`](Type.Rotation.md) 
 
 当前旋转量减去一个旋转量
 
@@ -675,7 +675,7 @@ outer 不能为 null/undefined
 | :------ | :------ | :------ |
 | `a` | [`Rotation`](Type.Rotation.md) | 旋转量a |
 | `b` | [`Rotation`](Type.Rotation.md) | 旋转量b |
-| `outer` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量变量 |
+| `outer?` | [`Rotation`](Type.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 

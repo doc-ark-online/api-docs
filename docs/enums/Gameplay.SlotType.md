@@ -3,7 +3,7 @@
 # SlotType <Badge type="tip" text="Enumeration" /> <Score text="SlotType" />
 
 人形角色插槽类型
- 内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
+内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
 
 ## Table of contents
 
@@ -14,6 +14,7 @@
 | **[ChatFrame](Gameplay.SlotType.md#chatframe)** = ``22`` <br> |
 | **[Eyes](Gameplay.SlotType.md#eyes)** = ``5`` <br> |
 | **[FaceOrnamental](Gameplay.SlotType.md#faceornamental)** = ``6`` <br> |
+| **[FirstpersonCamera](Gameplay.SlotType.md#firstpersoncamera)** = ``30`` <br> |
 | **[Glasses](Gameplay.SlotType.md#glasses)** = ``4`` <br> |
 | **[Hair](Gameplay.SlotType.md#hair)** = ``0`` <br> |
 | **[Head](Gameplay.SlotType.md#head)** = ``1`` <br> |
@@ -79,6 +80,14 @@ ___
 • **FaceOrnamental** = ``6``
 
 面部装饰
+
+___
+
+### FirstpersonCamera <Score text="FirstpersonCamera" /> 
+
+• **FirstpersonCamera** = ``30``
+
+第一人称摄像机
 
 ___
 

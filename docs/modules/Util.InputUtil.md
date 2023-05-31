@@ -32,6 +32,63 @@
 绑定按键
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.bindButton(Keys.SpaceBar, btn.button);
+        setTimeout(() => {
+            InputUtil.unbindButton(Keys.SpaceBar);
+        }, 5000);
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -48,6 +105,29 @@ ___
 
 将二维屏幕位置转换为世界空间三维位置和方向
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyDown(Keys.F, () => {
+            const result = InputUtil.convertScreenLocationToWorldSpace(960, 540);
+            const startLoc = result.worldLocation;
+            const dir = result.worldDirection;
+            const endLoc = Type.Vector.add(startLoc, dir.multiply(1000));
+            Gameplay.lineTrace(startLoc, endLoc, true, true);
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -71,6 +151,26 @@ ___
 设置鼠标指针是否能与UI交互
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改鼠标是否可与屏幕UI交互
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -86,6 +186,26 @@ ___
 
 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改shift是否可控制光标显示
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -103,6 +223,26 @@ ___
 获取鼠标指针是否能与UI交互
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改鼠标是否可与屏幕UI交互
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorInteractWithUI(!InputUtil.isCursorInteractiveWithUI());
+        })
+    }
+
+}
+```
+
 #### Returns
 
 `boolean`
@@ -117,6 +257,26 @@ ___
 
 获取是否允许通过快捷方式切换鼠标的使用组合模式
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，修改shift是否可控制光标显示
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.enableCursorLock(!InputUtil.isCursorLockEnabled());
+        })
+    }
+
+}
+```
 
 #### Returns
 
@@ -133,6 +293,26 @@ ___
 获取鼠标指针是否锁定
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，锁定/解锁鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+        })
+    }
+
+}
+```
+
 #### Returns
 
 `boolean`
@@ -148,6 +328,26 @@ ___
 获取鼠标指针是否可见
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，显示/隐藏鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+        })
+    }
+
+}
+```
+
 #### Returns
 
 `boolean`
@@ -162,6 +362,25 @@ ___
 
 键盘输入事件-点击
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyDown(Keys.F, () => {
+            console.log("F key pressed");
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -185,6 +404,25 @@ ___
 键盘输入事件-按压
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyPress(Keys.F, () => {
+            console.log("F key up");
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -206,6 +444,25 @@ ___
 
 键盘输入事件-抬起
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        InputUtil.onKeyUp(Keys.F, () => {
+            console.log("F key up");
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -229,6 +486,66 @@ ___
 获取角色在世界中的位置，投射到屏幕上
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.onKeyDown(Keys.F, async () => {
+            let playerPos = (await Gameplay.asyncGetCurrentPlayer()).character.worldLocation;
+            let result = InputUtil.projectWorldLocationToWidgetPosition(playerPos);
+            if (result) {
+                btn.button.position = result.screenPosition;
+            }
+        })
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -251,6 +568,26 @@ ___
 设置鼠标指针是否锁定
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，锁定/解锁鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorLocked(!InputUtil.isCursorLocked());
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -266,6 +603,26 @@ ___
 
 设置鼠标指针是否可见
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，显示/隐藏鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setCursorVisible(!InputUtil.isCursorVisible());
+        })
+    }
+
+}
+```
 
 #### Parameters
 
@@ -283,6 +640,30 @@ ___
 设置是否可以锁定鼠标
 
 
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以通过shift锁定鼠标，按下G键，不可以通过shift锁定鼠标
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        //按下F键，可以通过shift锁定鼠标
+        InputUtil.onKeyDown(Keys.F, () => {
+            InputUtil.setMouseLockable(true);
+        })
+        //按下G键，不可以通过shift锁定鼠标
+        InputUtil.onKeyDown(Keys.G, () => {
+            InputUtil.setMouseLockable(false);
+        })
+    }
+
+}
+```
+
 #### Parameters
 
 | Name | Type | Description |
@@ -298,6 +679,63 @@ ___
 
 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键
 
+
+使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
+```ts
+@Core.Class
+export default class InputExample extends Core.Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        let btn = new ButtonUI();
+        InputUtil.bindButton(Keys.SpaceBar, btn.button);
+        setTimeout(() => {
+            InputUtil.unbindButton(Keys.SpaceBar);
+        }, 5000);
+    }
+
+}
+
+class ButtonUI {
+    public button: UI.StaleButton;
+
+    constructor(fun: Function = null) {
+        this.creatUI(fun);
+    }
+
+    private creatUI(fun: Function = null) {
+        // 创建一个UI对象
+        let ui = UI.UserWidget.newObject();
+        // 将UI添加到屏幕上
+        ui.addToViewport(1);
+        // 创建一个画布组件
+        let rootCanvas = UI.Canvas.newObject();
+        rootCanvas.size = new Type.Vector2(1920, 1080);
+        rootCanvas.position = Type.Vector2.zero;
+        // 将Ui的根画布设置为rootCanvas
+        ui.rootContent = rootCanvas;
+        // 创建一个按钮
+        this.button = UI.StaleButton.newObject(rootCanvas);
+        this.button.position = new Type.Vector2(1700, 310);
+        this.button.size = new Type.Vector2(150, 50);
+        this.button.text = "按下变红";
+        this.button.transitionEnable = true;
+        this.button.pressedImagColor = Type.LinearColor.red;
+        this.button.visibility = UI.SlateVisibility.Visible;
+
+        this.button.onClicked.add(() => {
+            if (fun) {
+                fun();
+            }
+        })
+
+    }
+}
+```
 
 #### Parameters
 
