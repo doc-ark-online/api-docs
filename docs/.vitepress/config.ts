@@ -48,7 +48,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   themeConfig: {
     pandora: {
       type: 'api',
-      version: '024'
+      version: '027'
     },
     logo: '/logo.png',
     algolia: {
@@ -101,8 +101,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '024 版本',
+        text: '027 版本',
         items: [
+          {
+            text: '024 版本',
+            link: 'https://api-docs-023.ark.online/',
+            path: true
+          },
           {
             text: '023 版本',
             link: 'https://api-docs-023.ark.online/',
@@ -111,11 +116,6 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           {
             text: '022 版本',
             link: 'https://api-docs-022.ark.online/',
-            path: true
-          },
-          {
-            text: '021 版本',
-            link: 'https://api-docs-021.ark.online/',
             path: true
           }
         ]
@@ -147,7 +147,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/release-027/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
