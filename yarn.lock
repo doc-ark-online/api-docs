@@ -870,9 +870,9 @@ metaapp-pandora-sdk@^5.0.2:
     whatwg-fetch "^3.5.0"
 
 metaapp-prodigytech-doc-theme@^1.1.15:
-  version "1.1.17"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.1.17.tgz#e39f4c9e723ac2eb6dae2e8b6856084e75b02f2a"
-  integrity sha512-6RNb5fWGQzJKWq1WfQXmsF+opNLqlQQAaY+A0dDCbYzYYMlPelIysRdPm3sw+SBO8AEXTTIYx+josw1YoJ/Puw==
+  version "1.1.18"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.1.18.tgz#2413fba3246190e6f379a72080715957b2867cd2"
+  integrity sha512-9/QxWD7cpgNrB0Er847cKmxDiB2wbc3Qxgkl0kTu6UW4vjIVKkEOT1wvsVZOtTZw9/F+93MchNXJ85tCF5edeQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
