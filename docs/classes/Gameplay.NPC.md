@@ -2,7 +2,13 @@
 
 # NPC <Badge type="tip" text="Class" /> <Score text="NPC" />
 
-NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject("NPC") as NPC;
+NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:
+```ts
+Gameplay.GameObject.asyncSpawn({
+    guid: "NPC", transform: new Transform(new Type.Vector(100, 100, 100),
+         Type.Rotation.zero, Type.Vector.one), replicates: true
+})
+```
 
 ## Hierarchy
 
