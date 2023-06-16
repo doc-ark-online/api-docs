@@ -1,0 +1,28 @@
+[Gameplay](../groups/Core.Gameplay.md) / ProjectileCollisionMode
+
+# ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
+
+投掷物碰撞反馈模式
+
+## Table of contents
+
+| Enumeration Members |
+| :-----|
+| **[Bounce](mw.ProjectileCollisionMode.md#bounce)** = ``1`` <br> |
+| **[Pierce](mw.ProjectileCollisionMode.md#pierce)** = ``0`` <br> |
+
+## Enumeration Members
+
+### Bounce <Score text="Bounce" /> 
+
+• **Bounce** = ``1``
+
+弹跳
+
+___
+
+### Pierce <Score text="Pierce" /> 
+
+• **Pierce** = ``0``
+
+穿透

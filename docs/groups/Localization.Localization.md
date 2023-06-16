@@ -8,7 +8,7 @@ Localization
 | **[getDefaultLocale](Localization.Localization.md#getdefaultlocale)**(): `string` <br> 获取默认的语言和地区|
 | **[getLocTextValue](Localization.Localization.md#getloctextvalue)**(`textkey`: `string`): `string` <br> 根据key获取翻译内容|
 | **[locText](Localization.Localization.md#loctext)**(`textkey`: `string`): `string` <br> 多语言标记|
-| **[useLocalizedLanguage](Localization.Localization.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
+| **[useLocalizedLanguage](Localization.Localization.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean` <br> 游戏语言设置|
 
 
 ## Modules Functions
@@ -26,7 +26,7 @@ ___
 使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
 ```ts
 @Core.Class
-export default class LocaleExample extends Core.Script {
+export default class LocaleExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -101,7 +101,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `type` | [`LanguageType`](../enums/Type.LanguageType.md) | 切换游戏语言种类 |
+| `type` | [`LanguageType`](../enums/mw.LanguageType.md) | 切换游戏语言种类 |
 
 #### Returns
 

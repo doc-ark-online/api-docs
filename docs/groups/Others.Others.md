@@ -5,7 +5,7 @@ Others
 ## Table of contents
 | Classes |
 | :-----|
-| [Sound](../classes/Gameplay.Sound.md) <br> 音效组件 |
+| [Sound](../classes/mw.Sound.md) <br> 音效组件 |
 
 
 | Modules Functions |
@@ -16,9 +16,9 @@ Others
 | **[deleteLikeContent](Others.Others.md#deletelikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 取消点赞内容|
 | **[deleteMessage](Others.Others.md#deletemessage)**(`UGCID`: `string`, `CommentID`: `string`): `void` <br> 删除留言板数据|
 | **[queryGameOwnerShip](Others.Others.md#querygameownership)**(`UGCID`: `string`): `Promise`<`boolean`\> <br> 是否是自己发布的游戏|
-| **[queryMessageBoard](Others.Others.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
-| **[queryReplyMessage](Others.Others.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
-| **[queryViewRecord](Others.Others.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
+| **[queryMessageBoard](Others.Others.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
+| **[queryReplyMessage](Others.Others.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
+| **[queryViewRecord](Others.Others.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
 | **[saveViewRecord](Others.Others.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
 
 
@@ -141,7 +141,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 代理返回留言板json数据 |
+| `Delegate` | [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 代理返回留言板json数据 |
 | `UGCID` | `string` | UGC唯一标识 |
 | `PageNum` | `number` | 查询的页面数量 |
 | `PageSize` | `number` | 查询的页面大小 |
@@ -159,7 +159,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回http返回的json |
+| `Delegate` | [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回http返回的json |
 | `UGCID` | `string` | UGC唯一标识 |
 | `CommentID` | `string` | 需要查询的会话ID |
 | `PageNum` | `number` | 需要查询的页面数量 |
@@ -178,7 +178,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Delegate` | [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回浏览记录的json |
+| `Delegate` | [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Content`: `string`) => `void`\> | 返回浏览记录的json |
 | `UGCID` | `string` | UGC唯一标识 |
 | `PageNum` | `number` | 查询的页面数量 |
 | `PageSize` | `number` | 查询的页面大小 |

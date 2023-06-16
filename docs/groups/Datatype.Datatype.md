@@ -5,64 +5,68 @@ Datatype
 ## Table of contents
 | Classes |
 | :-----|
-| [Action](../classes/Type.Action.md) <br> 任意参数的代理 |
-| [Action1](../classes/Type.Action1.md) <br> 一个参数的代理 |
-| [Action2](../classes/Type.Action2.md) <br> 两个参数的代理 |
-| [Action3](../classes/Type.Action3.md) <br> 三个参数的代理 |
-| [ConvertScreenResult](../classes/Type.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
-| [Delegate](../classes/Type.Delegate.md) <br> 委托 |
-| [HitResult](../classes/Gameplay.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
-| [LinearColor](../classes/Type.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 |
-| [Matrix3x3](../classes/Type.Matrix3x3.md) <br> 三维矩阵 |
-| [Matrix4x4](../classes/Type.Matrix4x4.md) <br> 四维矩阵 |
-| [MulticastDelegate](../classes/Type.MulticastDelegate.md) <br> 多播委托接口 |
-| [MulticastGameObjectDelegate](../classes/Type.MulticastGameObjectDelegate.md) <br> 广播代理 |
-| [Quaternion](../classes/Type.Quaternion.md) <br> 四元数 |
-| [Rotation](../classes/Type.Rotation.md) <br> 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 |
-| [Transform](../classes/Type.Transform.md) <br> Transform 由缩放、旋转和平移组成 |
-| [Vector](../classes/Type.Vector.md) <br> 由分量 (x,y,z) 组成的三维空间中的向量 |
-| [Vector2](../classes/Type.Vector2.md) <br> 由分量 (x,y) 组成的二维空间中的向量 |
-| [Vector4](../classes/Type.Vector4.md) <br> 由分量 (x,y,z,w) 组成的4D齐次向量 |
+| [Action](../classes/mw.Action.md) <br> 任意参数的代理 |
+| [Action1](../classes/mw.Action1.md) <br> 一个参数的代理 |
+| [Action2](../classes/mw.Action2.md) <br> 两个参数的代理 |
+| [Action3](../classes/mw.Action3.md) <br> 三个参数的代理 |
+| [ConvertScreenResult](../classes/mw.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
+| [Delegate](../classes/mw.Delegate.md) <br> 委托 |
+| [HitResult](../classes/mw.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
+| [LinearColor](../classes/mw.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 |
+| [Matrix3x3](../classes/mw.Matrix3x3.md) <br> 三维矩阵 |
+| [Matrix4x4](../classes/mw.Matrix4x4.md) <br> 四维矩阵 |
+| [MulticastDelegate](../classes/mw.MulticastDelegate.md) <br> 多播委托接口 |
+| [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md) <br> 广播代理 |
+| [Quaternion](../classes/mw.Quaternion.md) <br> 四元数 |
+| [Rotation](../classes/mw.Rotation.md) <br> 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 |
+| [Transform](../classes/mw.Transform.md) <br> Transform 由缩放、旋转和平移组成 |
+| [Vector](../classes/mw.Vector.md) <br> 由分量 (x,y,z) 组成的三维空间中的向量 |
+| [Vector2](../classes/mw.Vector2.md) <br> 由分量 (x,y) 组成的二维空间中的向量 |
+| [Vector4](../classes/mw.Vector4.md) <br> 由分量 (x,y,z,w) 组成的4D齐次向量 |
 
 
 | Enums |
 | :-----|
-| [AssetType](../enums/Type.AssetType.md) <br> 资源类型 |
-| [CollisionStatus](../enums/Type.CollisionStatus.md) <br> 碰撞属性状态 |
-| [GraphicsLevel](../enums/Type.GraphicsLevel.md) <br> 画质等级 |
-| [Keys](../enums/Type.Keys.md) <br> 按键Key值 |
-| [LanguageType](../enums/Type.LanguageType.md) <br> 游戏语言 |
-| [NetStatus](../enums/Type.NetStatus.md) <br> 同步状态 |
-| [PropertyStatus](../enums/Type.PropertyStatus.md) <br> 属性状态 |
-| [RuntimePlatform](../enums/Type.RuntimePlatform.md) <br> 运行平台 |
+| [AssetType](../enums/mw.AssetType.md) <br> 资源类型 |
+| [CollisionStatus](../enums/mw.CollisionStatus.md) <br> 碰撞属性状态 |
+| [GraphicsLevel](../enums/mw.GraphicsLevel.md) <br> 画质等级 |
+| [Keys](../enums/mw.Keys.md) <br> 按键Key值 |
+| [LanguageType](../enums/mw.LanguageType.md) <br> 游戏语言 |
+| [MessageState](../enums/mw.MessageState.md) <br> 发送消息的状态 |
+| [MessageType](../enums/mw.MessageType.md) <br> 发送消息的类型 |
+| [NetStatus](../enums/mw.NetStatus.md) <br> 同步状态 |
+| [PropertyStatus](../enums/mw.PropertyStatus.md) <br> 属性状态 |
+| [RuntimePlatform](../enums/mw.RuntimePlatform.md) <br> 运行平台 |
 
 
 | Interfaces |
 | :-----|
-| [DelegateInterface](../interfaces/Type.DelegateInterface.md) <br> 委托接口 |
-| [MulticastDelegateInterface](../interfaces/Type.MulticastDelegateInterface.md) <br> 多播委托接口 |
-| [SpawnInfo](../interfaces/Type.SpawnInfo.md) <br> 构建物体的信息 |
-| [TypeName](../interfaces/Type.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:{new():T}) 可以写成 fun`<T>`(c:Class`<T>`) |
+| [DelegateInterface](../interfaces/mw.DelegateInterface.md) <br> 委托接口 |
+| [GameObjectInfo](../interfaces/mw.GameObjectInfo.md) <br> 构建物体的信息 |
+| [MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md) <br> 多播委托接口 |
+| [TypeName](../interfaces/mw.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:{new():T}) 可以写成 fun`<T>`(c:Class`<T>`) |
 
 
 | Modules Type Aliases |
 | :-----|
 | **[BoolResponse](Datatype.Datatype.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
-| **[Constructor](Datatype.Datatype.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型|
+| **[BroadcastMessageResult](Datatype.Datatype.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
+| **[DecorationTuple](Datatype.Datatype.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
 | **[DownloadDataResponse](Datatype.Datatype.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[EasingFunction](Datatype.Datatype.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
 | **[EmptyCallback](Datatype.Datatype.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
 | **[HttpResponse](Datatype.Datatype.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
 | **[InterpolationFunction](Datatype.Datatype.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
 | **[LoadAppearanceDataAllCompletedCallback](Datatype.Datatype.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](Datatype.Datatype.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Gameplay.Gameplay.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
+| **[LoadDecorationsAllCompletedCallback](Datatype.Datatype.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
 | **[MGSEvent](Datatype.Datatype.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Datatype.Datatype.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](Datatype.Datatype.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/Gameplay.MovementType.md)) => `void` <br> 移动状态切换委托|
+| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void` <br> 移动状态切换委托|
 | **[OnOrderDelivered](Datatype.Datatype.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 | **[OnRecvChatMessage](Datatype.Datatype.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
-| **[OnStyleCompleted](Datatype.Datatype.md#onstylecompleted)**: (`character`: [`Character`](../classes/Gameplay.Character.md)) => `void` <br> 外观加载完成委托|
+| **[OnStyleCompleted](Datatype.Datatype.md#onstylecompleted)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
+| **[OnStyleItemsChanged](Datatype.Datatype.md#onstyleitemschanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
 | **[OnViewLayoutSwitched](Datatype.Datatype.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Datatype.Datatype.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
 | **[ReleaseGameData](Datatype.Datatype.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
@@ -107,27 +111,29 @@ ___
 `void`
 ___
 
-### Constructor <Score text="Constructor" /> 
+### BroadcastMessageResult <Score text="BroadcastMessageResult" /> 
 
-Ƭ **Constructor**<`T`\>: (...`args`: `any`[]) => `T`
+Ƭ **BroadcastMessageResult**: `Object`
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`SomatotypeBase`](../classes/Gameplay.Gameplay.SomatotypeBase.md) |
+发送消息的结果
 
 #### Type declaration
 
-• (`...args`)
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `code` | [`MessageState`](../enums/mw.MessageState.md) | 发送消息的状态 |
+| `message` | `string` | 详细信息 |
+___
 
-角色形象修改构造类型
+### DecorationTuple <Score text="DecorationTuple" /> 
 
-##### Parameters
+Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)]
 
-| Name | Type |
-| :------ | :------ |
-| `...args` | `any`[] |
+运行时态角色身上的挂件数据
+
+**`Deprecated`**
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 027 reason:功能改变 replacement: 使用style.advance.slotAndAttachment属性相关功能替换
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
@@ -249,7 +255,7 @@ ___
 
 ### LoadDecorationsAllCompletedCallback <Score text="LoadDecorationsAllCompletedCallback" /> 
 
-Ƭ **LoadDecorationsAllCompletedCallback**: (`data`: [`DecorationTuple`](Gameplay.Gameplay.md#decorationtuple)[]) => `void`
+Ƭ **LoadDecorationsAllCompletedCallback**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void`
 
 #### Type declaration
 
@@ -261,7 +267,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `data` | [`DecorationTuple`](Gameplay.Gameplay.md#decorationtuple)[] |
+| `data` | [`DecorationTuple`](Core.mw.md#decorationtuple)[] |
 
 ##### Returns
 
@@ -334,7 +340,7 @@ ___
 
 ### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
 
-Ƭ **OnMovementStateChanged**: (`mode`: [`MovementType`](../enums/Gameplay.MovementType.md)) => `void`
+Ƭ **OnMovementStateChanged**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void`
 
 #### Type declaration
 
@@ -346,7 +352,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `mode` | [`MovementType`](../enums/Gameplay.MovementType.md) |
+| `mode` | [`MovementType`](../enums/mw.MovementType.md) |
 
 ##### Returns
 
@@ -402,7 +408,7 @@ ___
 
 ### OnStyleCompleted <Score text="OnStyleCompleted" /> 
 
-Ƭ **OnStyleCompleted**: (`character`: [`Character`](../classes/Gameplay.Character.md)) => `void`
+Ƭ **OnStyleCompleted**: (`character`: [`Character`](../classes/mw.Character.md)) => `void`
 
 #### Type declaration
 
@@ -420,7 +426,30 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `character` | [`Character`](../classes/Gameplay.Character.md) |
+| `character` | [`Character`](../classes/mw.Character.md) |
+
+##### Returns
+
+`void`
+___
+
+### OnStyleItemsChanged <Score text="OnStyleItemsChanged" /> 
+
+Ƭ **OnStyleItemsChanged**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
+
+#### Type declaration
+
+• (`operationCode`, `index`, `value`): `void`
+
+外观加载细节变化委托
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `operationCode` | `number` |
+| `index` | `number` |
+| `value` | `unknown` |
 
 ##### Returns
 
@@ -632,7 +661,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `wheelAngle` | `number` | 车轮最大转向角度 |
-| `wheelPosition` | [`VehicleWheelPosition4W`](../enums/Gameplay.VehicleWheelPosition4W.md) | 车轮位置 |
+| `wheelPosition` | [`VehicleWheelPosition4W`](../enums/mw.VehicleWheelPosition4W.md) | 车轮位置 |
 | `wheelRadius` | `number` | 车轮半径 |
 ___
 
