@@ -16,7 +16,6 @@
 | Methods |
 | :-----|
 | **[getTouchVectorArray](mw.TouchInput.md#gettouchvectorarray)**(): [`Vector`](mw.Vector.md)[] <br> 获取屏幕手指数的数组|
-| **[setPlayerController](mw.TouchInput.md#setplayercontroller)**(): `void` <br> 设置玩家控制器，使用前需调用一次|
 
 ## Properties
 
@@ -64,13 +63,3 @@ ___
 [`Vector`](mw.Vector.md)[]
 
 当前Touch数组
-
-___
-
-### setPlayerController <Score text="setPlayerController" /> 
-
-• **setPlayerController**(): `void` <Badge type="tip" text="client" />
-
-设置玩家控制器，使用前需调用一次
-
-

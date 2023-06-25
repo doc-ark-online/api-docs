@@ -1,4 +1,4 @@
-[Debugging](../groups/Core.Debugging.md) / AnalyticsService
+[Utility](../groups/Core.Utility.md) / AnalyticsService
 
 # AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 
@@ -16,26 +16,10 @@
 
 | Methods |
 | :-----|
-| **[getInstance](mw.AnalyticsService.md#getinstance)**(): [`AnalyticsService`](mw.AnalyticsService.md) <br> 分析服务全局实例|
 | **[googleEventTracking](mw.AnalyticsService.md#googleeventtracking)**(`eventName`: `string`, `eventParams?`: `Object`): `void` <br> 埋点|
 | **[googleInit](mw.AnalyticsService.md#googleinit)**(`mId`: `string`): `void` <br> Initialize Google Analytics client|
 
 ## Methods
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**(): [`AnalyticsService`](mw.AnalyticsService.md) 
-
-分析服务全局实例
-
-
-#### Returns
-
-[`AnalyticsService`](mw.AnalyticsService.md)
-
-分析服务全局实例
-
-___
 
 ### googleEventTracking <Score text="googleEventTracking" /> 
 

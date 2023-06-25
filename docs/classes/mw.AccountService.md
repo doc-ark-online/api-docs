@@ -31,13 +31,12 @@
 | **[isFriend](mw.AccountService.md#isfriend)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `friendOpenId`: `string`): `void` <br> 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看|
 | **[setUserData](mw.AccountService.md#setuserdata)**(`character`: [`Character`](mw.Character.md), `dataString`: `string`, `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse)): `void` <br> 将角色形象数据应用至角色|
 | **[uploadData](mw.AccountService.md#uploaddata)**(`character`: [`Character`](mw.Character.md), `callback?`: [`BoolResponse`](../modules/Core.mw.md#boolresponse) \, `index?`: `number`, `openStatus?`: `number`): `void` <br> 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe|
-| **[getInstance](mw.AccountService.md#getinstance)**(): [`AccountService`](mw.AccountService.md) <br> 获取用户账号信息管理器全局实例|
 
 ## Methods
 
 ### addFriend <Score text="addFriend" /> 
 
-• **addFriend**(`resp`, `friendOpenId`, `reason`): `void` 
+• `Static` **addFriend**(`resp`, `friendOpenId`, `reason`): `void` 
 
 向233发起addFriend并获得回调
 
@@ -61,7 +60,7 @@ ___
 
 ### applySharedId <Score text="applySharedId" /> 
 
-• **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="client" />
+• `Static` **applySharedId**(`character`, `id`, `callback`): `void` <Badge type="tip" text="client" />
 
 应用分享Id的角色数据
 
@@ -79,7 +78,7 @@ ___
 
 ### checkVIP <Score text="checkVIP" /> 
 
-• **checkVIP**(`userId`, `gameId`, `callback`): `void` 
+• `Static` **checkVIP**(`userId`, `gameId`, `callback`): `void` 
 
 发起checkVIP并获得回调，查询玩家的vip信息
 
@@ -97,7 +96,7 @@ ___
 
 ### createSharedId <Score text="createSharedId" /> 
 
-• **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="client" />
+• `Static` **createSharedId**(`character`, `callback`): `void` <Badge type="tip" text="client" />
 
 生成分享Id
 
@@ -114,7 +113,7 @@ ___
 
 ### dataShowToOther <Score text="dataShowToOther" /> 
 
-• **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="client" />
+• `Static` **dataShowToOther**(`index`, `isOpen`, `callback?`): `void` <Badge type="tip" text="client" />
 
 设置数据是否公开给其他用户
 
@@ -132,7 +131,7 @@ ___
 
 ### downloadData <Score text="downloadData" /> 
 
-• **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="client" />
+• `Static` **downloadData**(`character`, `callback?`, `index?`): `void` <Badge type="tip" text="client" />
 
 下载角色形象并应用到当前角色身上
 
@@ -150,7 +149,7 @@ ___
 
 ### fillAvatar <Score text="fillAvatar" /> 
 
-• **fillAvatar**(`img`): `void` <Badge type="tip" text="client" />
+• `Static` **fillAvatar**(`img`): `void` <Badge type="tip" text="client" />
 
 将头像赋值到Image变量上
 
@@ -173,7 +172,7 @@ export default class AccountExample extends Script {
 
     private async test(): Promise<void> {
         let imgUI = new ImageUI();
-        AccountService.getInstance().fillAvatar(imgUI.image);
+        AccountService.fillAvatar(imgUI.image);
     }
 
 }
@@ -216,7 +215,7 @@ ___
 
 ### getNickName <Score text="getNickName" /> 
 
-• **getNickName**(): `string` <Badge type="tip" text="client" />
+• `Static` **getNickName**(): `string` <Badge type="tip" text="client" />
 
 获取玩家昵称
 
@@ -238,7 +237,7 @@ export default class AccountExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let name = AccountService.getInstance().getNickName();
+        let name = AccountService.getNickName();
         console.log("获取玩家昵称", name);
     }
 
@@ -255,7 +254,7 @@ ___
 
 ### getOpenId <Score text="getOpenId" /> 
 
-• **getOpenId**(): `string` <Badge type="tip" text="client" />
+• `Static` **getOpenId**(): `string` <Badge type="tip" text="client" />
 
 获取OpenId
 
@@ -277,7 +276,7 @@ export default class AccountExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let openId = AccountService.getInstance().getOpenId();
+        let openId = AccountService.getOpenId();
         console.log("获取用户的OpenId：", openId);
     }
 
@@ -294,7 +293,7 @@ ___
 
 ### getUserData <Score text="getUserData" /> 
 
-• **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="client" />
+• `Static` **getUserData**(`userId`, `index`, `callback`): `void` <Badge type="tip" text="client" />
 
 获取用户存储在服务器上的角色形象数据
 
@@ -313,9 +312,9 @@ export default class AccountExample extends Script {
         let player = await asyncGetCurrentPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldLocation = new Vector(0, 0, 200);
-        AccountService.getInstance().getUserData(player.getUserId(), 0, async str => {
+        AccountService.getUserData(player.getUserId(), 0, async str => {
             await TimeUtil.delaySecond(5);
-            AccountService.getInstance().setUserData(npc, str, isSuccess => {
+            AccountService.setUserData(npc, str, isSuccess => {
                 player.character.characterName = isSuccess ? "成功" : "失败";
             })
         });
@@ -337,7 +336,7 @@ ___
 
 ### getUserId <Score text="getUserId" /> 
 
-• **getUserId**(): `string` <Badge type="tip" text="client" />
+• `Static` **getUserId**(): `string` <Badge type="tip" text="client" />
 
 获取平台的用户Id,可以用于getUserData接口
 
@@ -353,7 +352,7 @@ export default class AccountExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let userId = AccountService.getInstance().getUserId();
+        let userId = AccountService.getUserId();
         console.log("获取平台的用户Id", userId);
     }
 
@@ -370,7 +369,7 @@ ___
 
 ### getUserInfo <Score text="getUserInfo" /> 
 
-• **getUserInfo**(`userId`, `gameId`, `callback`): `void` 
+• `Static` **getUserInfo**(`userId`, `gameId`, `callback`): `void` 
 
 发起getUserInfo并获得回调，查询玩家的昵称、性别
 
@@ -388,7 +387,7 @@ ___
 
 ### isFriend <Score text="isFriend" /> 
 
-• **isFriend**(`resp`, `friendOpenId`): `void` 
+• `Static` **isFriend**(`resp`, `friendOpenId`): `void` 
 
 若需要检测玩家是否好友关系，可通过调用isFriend接口进行查看
 
@@ -411,7 +410,7 @@ ___
 
 ### setUserData <Score text="setUserData" /> 
 
-• **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="client" />
+• `Static` **setUserData**(`character`, `dataString`, `callback?`): `void` <Badge type="tip" text="client" />
 
 将角色形象数据应用至角色
 
@@ -430,9 +429,9 @@ export default class AccountExample extends Script {
         let player = await asyncGetCurrentPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
         npc.worldLocation = new Vector(0, 0, 200);
-        AccountService.getInstance().getUserData(player.getUserId(), 0, async str => {
+        AccountService.getUserData(player.getUserId(), 0, async str => {
             await TimeUtil.delaySecond(5);
-            AccountService.getInstance().setUserData(npc, str, isSuccess => {
+            AccountService.setUserData(npc, str, isSuccess => {
                 player.character.characterName = isSuccess ? "成功" : "失败";
             })
         });
@@ -454,7 +453,7 @@ ___
 
 ### uploadData <Score text="uploadData" /> 
 
-• **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="client" />
+• `Static` **uploadData**(`character`, `callback?`, `index?`, `openStatus?`): `void` <Badge type="tip" text="client" />
 
 上传角色形象资源到服务器  Character， Hair, UpperCloth, LowerCloth, Gloves, Shoe
 
@@ -468,18 +467,3 @@ ___
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
 | `openStatus?` | `number` | 开发状态 default:1,默认是开放状态 |
 
-
-___
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**(): [`AccountService`](mw.AccountService.md) 
-
-获取用户账号信息管理器全局实例
-
-
-#### Returns
-
-[`AccountService`](mw.AccountService.md)
-
-用户账号信息管理器全局实例

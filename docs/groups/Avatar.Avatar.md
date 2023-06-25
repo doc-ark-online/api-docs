@@ -5,10 +5,10 @@ Avatar
 ## Table of contents
 | Classes |
 | :-----|
-| [AttachmentArray](../classes/mw.AttachmentArray.md) <br> 单个插槽对应的挂件物体数组 |
 | [Character](../classes/mw.Character.md) <br> 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动. |
+| [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 单个插槽对应的挂件物体数组 |
+| [CharacterDescription](../classes/mw.CharacterDescription.md) <br> 人形外观配置类 |
 | [Pawn](../classes/mw.Pawn.md) <br> 可以被玩家和AI控制的对象的基类 |
-| [StyleConfig](../classes/mw.StyleConfig.md) <br> 人形外观配置类 |
 
 
 | Enums |

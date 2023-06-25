@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / Geometry
+[Ui](../groups/Core.Ui.md) / Geometry
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 

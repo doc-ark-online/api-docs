@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / Canvas
+[Ui](../groups/Core.Ui.md) / Canvas
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 

@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / VirtualJoystickPanel
+[Ui](../groups/Core.Ui.md) / VirtualJoystickPanel
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 

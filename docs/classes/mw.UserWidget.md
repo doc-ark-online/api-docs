@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UserWidget
+[Ui](../groups/Core.Ui.md) / UserWidget
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 

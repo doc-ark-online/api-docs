@@ -1,4 +1,4 @@
-[Utility](../groups/Core.Utility.md) / SoundService
+[Sound](../groups/Core.Sound.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
@@ -26,7 +26,7 @@
 | Methods |
 | :-----|
 | **[get3DSound](mw.SoundService.md#get3dsound)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\> <br> 根据播放id获取一个3DSound|
-| **[play3DSound](mw.SoundService.md#play3dsound-1)**(`assetId`: `string`, `target`: `string` \, `loopCount`: `number`, `volume`: `number`, `params?`: `Object`): `number` <br> 在目标播放3D音效|
+| **[play3DSound](mw.SoundService.md#play3dsound-1)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number` <br> 在目标播放3D音效|
 | **[playBGM](mw.SoundService.md#playbgm-1)**(`assetId`: `string`, `volume?`: `number`): `void` <br> 播放背景音乐|
 | **[playSound](mw.SoundService.md#playsound-1)**(`assetId`: `string`, `loopCount?`: `number`, `volume?`: `number`): `string` <br> 根据资源Id播放声音|
 | **[stop3DSound](mw.SoundService.md#stop3dsound-1)**(`playId`: `number`): `void` <br> 停止3D声音|
@@ -166,7 +166,7 @@ ___
 
 ### play3DSound <Score text="play" /> 
 
-• `Static` **play3DSound**(`assetId`, `target`, `loopCount`, `volume`, `params?`): `number` <Badge type="tip" text="other" />
+• `Static` **play3DSound**(`assetId`, `target`, `loopCount?`, `volume?`, `params?`): `number` <Badge type="tip" text="other" />
 
 在目标播放3D音效
 
@@ -209,8 +209,8 @@ export default class SoundExample extends Script {
 | :------ | :------ | :------ |
 | `assetId` | `string` |  资源Id |
 | `target` | `string` \| [`Vector`](mw.Vector.md) \| [`GameObject`](mw.GameObject.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
-| `loopCount` | `number` |  循环次数 default: 1 |
-| `volume` | `number` |  音量 default: 1 |
+| `loopCount?` | `number` |  循环次数 default: 1 |
+| `volume?` | `number` |  音量 default: 1 |
 | `params?` | `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
 | `params.falloffDistance?` | `number` | - |
 | `params.radius?` | `number` | - |

@@ -1,6 +1,6 @@
-[Avatar](../groups/Core.Avatar.md) / StyleConfig
+[Avatar](../groups/Core.Avatar.md) / CharacterDescription
 
-# StyleConfig <Badge type="tip" text="Class" /> <Score text="StyleConfig" />
+# CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
 
 人形外观配置类
 
@@ -8,8 +8,8 @@
 
 | Properties |
 | :-----|
-| **[advance](mw.StyleConfig.md#advance)**: `Object` <br> 高级人形对象外观配置类 与 base 互斥|
-| **[base](mw.StyleConfig.md#base)**: `Object` <br> 基础人形对象外观配置类 与 advance 互斥|
+| **[advance](mw.CharacterDescription.md#advance)**: `Object` <br> 高级人形对象外观配置类 与 base 互斥|
+| **[base](mw.CharacterDescription.md#base)**: `Object` <br> 基础人形对象外观配置类 与 advance 互斥|
 
 ## Properties
 
@@ -52,25 +52,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
@@ -153,9 +153,9 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 | `clothing.upperCloth?` | `{ `part?`: `ArrayLike`<{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `style?`: `string`  } | **`Description`** 上装 |
 | `clothing.upperCloth.part?` | `ArrayLike`<`{ `color?`: { `areaColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 调整区域 |
 | `clothing.upperCloth.style?` | `string` | **`Description`** 上装样式 |
-| `hair?` | `{ `backHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  }`` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  } ; `frontHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  }` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  }  } | **`Description`** 发型 |
-| `hair.backHair?` | `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 后发 |
-| `hair.backHair.accessories?` | `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string`  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
+| `hair?` | `{ `backHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  } ; `frontHair?`: `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: ``{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }`` ; `pattern?`: ``{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }``  }\> ; `color?`: ``{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }`` ; `highlight?`: ``{ `highlightStyle?`: `string`  }`` ; `style?`: `string`  }  } | **`Description`** 发型 |
+| `hair.backHair?` | `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 后发 |
+| `hair.backHair.accessories?` | `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
 | `hair.backHair.color?` | `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
 | `hair.backHair.color.color?` | `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
 | `hair.backHair.color.gradientArea?` | `number` | **`Description`** 渐变区域 |
@@ -163,8 +163,8 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 | `hair.backHair.highlight?` | `{ `highlightStyle?`: `string`  }` | **`Description`** 高光 |
 | `hair.backHair.highlight.highlightStyle?` | `string` | **`Description`** 高光样式 |
 | `hair.backHair.style?` | `string` | **`Description`** 样式 |
-| `hair.frontHair?` | `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string`  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 前发 |
-| `hair.frontHair.accessories?` | `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string`  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
+| `hair.frontHair?` | `{ `accessories?`: `ArrayLike`<{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> ; `color?`: `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `highlight?`: `{ `highlightStyle?`: `string`  }` ; `style?`: `string`  } | **`Description`** 前发 |
+| `hair.frontHair.accessories?` | `ArrayLike`<`{ `color?`: { `accessoryColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` ; `design?`: `{ `designColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `designRotation?`: `number` ; `designScale?`: `number` ; `designStyle?`: `string`  }` ; `pattern?`: `{ `patternColor?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `patternHorizontalScale?`: `number` ; `patternRotation?`: `number` ; `patternStyle?`: `string` ; `patternVerticalScale?`: `number` ; `patternVisibility?`: `number`  }`  }\> | **`Description`** 头饰 |
 | `hair.frontHair.color?` | `{ `color?`: `string` \| [`LinearColor`](mw.LinearColor.md) ; `gradientArea?`: `number` ; `gradientColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 颜色 |
 | `hair.frontHair.color.color?` | `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 颜色 |
 | `hair.frontHair.color.gradientArea?` | `number` | **`Description`** 渐变区域 |
@@ -172,15 +172,15 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 | `hair.frontHair.highlight?` | `{ `highlightStyle?`: `string`  }` | **`Description`** 高光 |
 | `hair.frontHair.highlight.highlightStyle?` | `string` | **`Description`** 高光样式 |
 | `hair.frontHair.style?` | `string` | **`Description`** 样式 |
-| `headFeatures?` | `{ `ears?`: { `earFrontalRotation?`: `number` ; `earHorizontalRotation?`: `number` ; `earLowerScale?`: `number` ; `earOverallScale?`: `number` ; `earUpperScale?`: `number`  }` ; `expressions?`: `{ `changeExpression?`: `number`  }` ; `eyebrows?`: `{ `eyebrowBridgeFrontalShift?`: `number` ; `eyebrowFrontalShift?`: `number` ; `eyebrowHorizontalShift?`: `number` ; `eyebrowInnerVerticalShift?`: `number` ; `eyebrowOuterVerticalShift?`: `number` ; `eyebrowOverallRotation?`: `number` ; `eyebrowVerticalShift?`: `number`  }` ; `eyes?`: `{ `eyeCorners?`: { `innerEyeCornerHorizontalShift?`: `number` ; `outerEyeCornerVerticalShift?`: `number`  }` ; `overall?`: `{ `eyeFrontalShift?`: `number` ; `eyeHorizontalScale?`: `number` ; `eyeHorizontalShift?`: `number` ; `eyeOverallRotation?`: `number` ; `eyeVerticalScale?`: `number` ; `eyeVerticalShift?`: `number`  }` ; `pupils?`: `{ `pupilHorizontalScale?`: `number` ; `pupilHorizontalShift?`: `number` ; `pupilVerticalScale?`: `number` ; `pupilVerticalShift?`: `number`  }`  } ; `faceShape?`: `{ `cheek?`: { `cheekFrontalShift?`: `number` ; `cheekHorizontalScale?`: `number` ; `cheekVerticalShift?`: `number`  }` ; `cheekbone?`: `{ `cheekboneFrontalShift?`: `number` ; `cheekboneHorizontalScale?`: `number`  }` ; `chin?`: `{ `chinFrontalShift?`: `number` ; `chinTipFrontalShift?`: `number` ; `chinTipHorizontalScale?`: `number` ; `chinTipVerticalShift?`: `number`  }` ; `jawline?`: `{ `jawFrontalShift?`: `number` ; `jawHorizontalScale?`: `number` ; `jawlineRoundness?`: `number` ; `jawlineVerticalShift?`: `number`  }` ; `overall?`: `{ `faceHorizontalScale?`: `number` ; `lowerFaceFrontalShift?`: `number` ; `lowerFaceHorizontalScale?`: `number` ; `upperFaceFrontalShift?`: `number` ; `upperFaceOverallScale?`: `number` ; `upperFaceVerticalShift?`: `number`  }`  } ; `head?`: `{ `headHorizontalScale?`: `number` ; `headOverallScale?`: `number` ; `style?`: `string`  }` ; `mouth?`: `{ `lips?`: { `lowerLipThickness?`: `number` ; `upperLipThickness?`: `number`  }` ; `mouthCorners?`: `{ `mouthCornerFrontalShift?`: `number` ; `mouthCornerVerticalShift?`: `number`  }` ; `overall?`: `{ `mouthFrontalShift?`: `number` ; `mouthHorizontalScale?`: `number` ; `mouthVerticalShift?`: `number`  }`  } ; `nose?`: `{ `noseBridge?`: { `noseBridgeFrontalShift?`: `number` ; `noseBridgeHorizontalScale?`: `number`  }` ; `noseTip?`: `{ `noseTipVerticalShift?`: `number`  }` ; `nostrils?`: `{ `nostrilForntalShift?`: `number` ; `nostrilHorizontalScale?`: `number` ; `nostrilVerticalShift?`: `number`  }` ; `overall?`: `{ `noseOverallFrontalShift?`: `number` ; `noseOverallVerticalShift?`: `number`  }`  }  } | **`Description`** 头部相关 |
+| `headFeatures?` | `{ `ears?`: { `earFrontalRotation?`: `number` ; `earHorizontalRotation?`: `number` ; `earLowerScale?`: `number` ; `earOverallScale?`: `number` ; `earUpperScale?`: `number`  }` ; `expressions?`: `{ `changeExpression?`: [`ExpressionType`](../enums/mw.ExpressionType.md)  }` ; `eyebrows?`: `{ `eyebrowBridgeFrontalShift?`: `number` ; `eyebrowFrontalShift?`: `number` ; `eyebrowHorizontalShift?`: `number` ; `eyebrowInnerVerticalShift?`: `number` ; `eyebrowOuterVerticalShift?`: `number` ; `eyebrowOverallRotation?`: `number` ; `eyebrowVerticalShift?`: `number`  }` ; `eyes?`: `{ `eyeCorners?`: { `innerEyeCornerHorizontalShift?`: `number` ; `outerEyeCornerVerticalShift?`: `number`  }` ; `overall?`: `{ `eyeFrontalShift?`: `number` ; `eyeHorizontalScale?`: `number` ; `eyeHorizontalShift?`: `number` ; `eyeOverallRotation?`: `number` ; `eyeVerticalScale?`: `number` ; `eyeVerticalShift?`: `number`  }` ; `pupils?`: `{ `pupilHorizontalScale?`: `number` ; `pupilHorizontalShift?`: `number` ; `pupilVerticalScale?`: `number` ; `pupilVerticalShift?`: `number`  }`  } ; `faceShape?`: `{ `cheek?`: { `cheekFrontalShift?`: `number` ; `cheekHorizontalScale?`: `number` ; `cheekVerticalShift?`: `number`  }` ; `cheekbone?`: `{ `cheekboneFrontalShift?`: `number` ; `cheekboneHorizontalScale?`: `number`  }` ; `chin?`: `{ `chinFrontalShift?`: `number` ; `chinTipFrontalShift?`: `number` ; `chinTipHorizontalScale?`: `number` ; `chinTipVerticalShift?`: `number`  }` ; `jawline?`: `{ `jawFrontalShift?`: `number` ; `jawHorizontalScale?`: `number` ; `jawlineRoundness?`: `number` ; `jawlineVerticalShift?`: `number`  }` ; `overall?`: `{ `faceHorizontalScale?`: `number` ; `lowerFaceFrontalShift?`: `number` ; `lowerFaceHorizontalScale?`: `number` ; `upperFaceFrontalShift?`: `number` ; `upperFaceOverallScale?`: `number` ; `upperFaceVerticalShift?`: `number`  }`  } ; `head?`: `{ `headHorizontalScale?`: `number` ; `headOverallScale?`: `number` ; `style?`: `string`  }` ; `mouth?`: `{ `lips?`: { `lowerLipThickness?`: `number` ; `upperLipThickness?`: `number`  }` ; `mouthCorners?`: `{ `mouthCornerFrontalShift?`: `number` ; `mouthCornerVerticalShift?`: `number`  }` ; `overall?`: `{ `mouthFrontalShift?`: `number` ; `mouthHorizontalScale?`: `number` ; `mouthVerticalShift?`: `number`  }`  } ; `nose?`: `{ `noseBridge?`: { `noseBridgeFrontalShift?`: `number` ; `noseBridgeHorizontalScale?`: `number`  }` ; `noseTip?`: `{ `noseTipVerticalShift?`: `number`  }` ; `nostrils?`: `{ `nostrilForntalShift?`: `number` ; `nostrilHorizontalScale?`: `number` ; `nostrilVerticalShift?`: `number`  }` ; `overall?`: `{ `noseOverallFrontalShift?`: `number` ; `noseOverallVerticalShift?`: `number`  }`  }  } | **`Description`** 头部相关 |
 | `headFeatures.ears?` | `{ `earFrontalRotation?`: `number` ; `earHorizontalRotation?`: `number` ; `earLowerScale?`: `number` ; `earOverallScale?`: `number` ; `earUpperScale?`: `number`  }` | **`Description`** 耳朵 |
 | `headFeatures.ears.earFrontalRotation?` | `number` | **`Description`** 耳朵前后旋转 |
 | `headFeatures.ears.earHorizontalRotation?` | `number` | **`Description`** 耳朵左右旋转 |
 | `headFeatures.ears.earLowerScale?` | `number` | **`Description`** 耳朵下部缩放 |
 | `headFeatures.ears.earOverallScale?` | `number` | **`Description`** 耳朵整体缩放 |
 | `headFeatures.ears.earUpperScale?` | `number` | **`Description`** 耳朵上部缩放 |
-| `headFeatures.expressions?` | `{ `changeExpression?`: `number`  }` | **`Description`** 表情 |
-| `headFeatures.expressions.changeExpression?` | `number` | **`Description`** 切换表情 |
+| `headFeatures.expressions?` | `{ `changeExpression?`: [`ExpressionType`](../enums/mw.ExpressionType.md)  }` | **`Description`** 表情 |
+| `headFeatures.expressions.changeExpression?` | [`ExpressionType`](../enums/mw.ExpressionType.md) | **`Description`** 切换表情 |
 | `headFeatures.eyebrows?` | `{ `eyebrowBridgeFrontalShift?`: `number` ; `eyebrowFrontalShift?`: `number` ; `eyebrowHorizontalShift?`: `number` ; `eyebrowInnerVerticalShift?`: `number` ; `eyebrowOuterVerticalShift?`: `number` ; `eyebrowOverallRotation?`: `number` ; `eyebrowVerticalShift?`: `number`  }` | **`Description`** 眉毛 |
 | `headFeatures.eyebrows.eyebrowBridgeFrontalShift?` | `number` | **`Description`** 眉间前后移动 |
 | `headFeatures.eyebrows.eyebrowFrontalShift?` | `number` | **`Description`** 眉毛前后移动 |
@@ -298,8 +298,8 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 | `makeup.lipstick.lipstickStyle?` | `string` | **`Description`** 口红样式 |
 | `makeup.skinTone?` | `{ `skinColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 肤色 |
 | `makeup.skinTone.skinColor?` | `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
-| `slotAndAttachment?` | `{ `slot`: `ArrayLike`<{ `attachment?`: [`AttachmentArray`](mw.AttachmentArray.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\>  } | 插槽和物品 |
-| `slotAndAttachment.slot` | `ArrayLike`<`{ `attachment?`: [`AttachmentArray`](mw.AttachmentArray.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\> | **`Description`** 插槽数据 |
+| `slotAndDecoration?` | `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\>  } | 插槽和物品 |
+| `slotAndDecoration.slot` | `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\> | **`Description`** 插槽数据 |
 
 ___
 
@@ -342,25 +342,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观

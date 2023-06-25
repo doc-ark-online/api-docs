@@ -15,13 +15,13 @@ export default class HotWeaponLoadSample1 extends Script {
         if (SystemUtil.isServer()) {
             hotWeapon.loadEnable = true;
             hotWeapon.loadComponent.loadDuration = 1
-            hotWeapon.loadComponent.loadAfterFireEnable = true;
-            hotWeapon.loadComponent.animationGuid = "4172";
-            hotWeapon.loadComponent.onStartLoadServer.add(() => { console.log("loadComponent.onStartLoadClient") });
-            hotWeapon.loadComponent.onEndLoadServer.add(() => { console.log("loadComponent.onEndLoadClient") });
+            hotWeapon.loadComponent.loadAfterFireEnabled = true;
+            hotWeapon.loadComponent.animationAssetId = "4172";
+            hotWeapon.loadComponent.onStartLoad.add(() => { console.log("loadComponent.onStartLoad Server") });
+            hotWeapon.loadComponent.onEndLoad.add(() => { console.log("loadComponent.onEndLoad Server") });
         } else if (SystemUtil.isClient()) {
-            hotWeapon.loadComponent.onStartLoadClient.add(() => { console.log("loadComponent.onStartLoadClient") });
-            hotWeapon.loadComponent.onEndLoadClient.add(() => { console.log("loadComponent.onEndLoadClient") });
+            hotWeapon.loadComponent.onStartLoad.add(() => { console.log("loadComponent.onStartLoad Client") });
+            hotWeapon.loadComponent.onEndLoad.add(() => { console.log("loadComponent.onEndLoad Client") });
         }
     }
 }
@@ -31,58 +31,39 @@ export default class HotWeaponLoadSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndLoadClient](mw.HotWeaponLoadComponent.md#onendloadclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[onEndLoadServer](mw.HotWeaponLoadComponent.md#onendloadserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[onStartLoadClient](mw.HotWeaponLoadComponent.md#onstartloadclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[onStartLoadServer](mw.HotWeaponLoadComponent.md#onstartloadserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[animationGuid](mw.HotWeaponLoadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[loadAfterFireEnable](mw.HotWeaponLoadComponent.md#loadafterfireenable)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
 | **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例|
 
 | Methods |
 | :-----|
-| **[hadAnimationGuid](mw.HotWeaponLoadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
 
 ## Properties
 
-### onEndLoadClient <Score text="onEndLoadClient" /> 
+### onEndLoad <Score text="onEndLoad" /> 
 
-• **onEndLoadClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-客户端上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
-
-___
-
-### onEndLoadServer <Score text="onEndLoadServer" /> 
-
-• **onEndLoadServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndLoad**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
 
 ___
 
-### onStartLoadClient <Score text="onStartLoadClient" /> 
+### onStartLoad <Score text="onStartLoad" /> 
 
-• **onStartLoadClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-客户端开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
-
-___
-
-### onStartLoadServer <Score text="onStartLoadServer" /> 
-
-• **onStartLoadServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartLoad**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
 
 ## Accessors
 
-### animationGuid <Score text="animationGuid" /> 
+### animationAssetId <Score text="animationAssetId" /> 
 
-• `get` **animationGuid**(): `string` 
+• `get` **animationAssetId**(): `string` 
 
 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -93,7 +74,7 @@ ___
 
 绑定的动画GUID
 
-• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
+• `set` **animationAssetId**(`GUID`): `void` <Badge type="tip" text="other" />
 
 设置动画 GUID。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -108,9 +89,9 @@ ___
 
 ___
 
-### loadAfterFireEnable <Score text="loadAfterFireEnable" /> 
+### loadAfterFireEnabled <Score text="loadAfterFireEnabled" /> 
 
-• `get` **loadAfterFireEnable**(): `boolean` 
+• `get` **loadAfterFireEnabled**(): `boolean` 
 
 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -121,7 +102,7 @@ ___
 
 是否开启开火后自动上膛的功能
 
-• `set` **loadAfterFireEnable**(`enable`): `void` <Badge type="tip" text="other" />
+• `set` **loadAfterFireEnabled**(`enable`): `void` <Badge type="tip" text="other" />
 
 设置是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -174,16 +155,3 @@ ___
 
 
 ## Methods
-
-### hadAnimationGuid <Score text="hadAnimationGuid" /> 
-
-• **hadAnimationGuid**(): `boolean` 
-
-是否有动画GUID
-
-
-#### Returns
-
-`boolean`
-
-是否有动画GUID

@@ -5,14 +5,8 @@ Scripting
 ## Table of contents
 | Classes |
 | :-----|
-| [EditorMode](../classes/mw.EditorMode.md) <br> 移动编辑器模式切换 |
 | [Event](../classes/mw.Event.md) <br> 事件 |
 | [EventListener](../classes/mw.EventListener.md) <br> 事件监听器 |
-| [GestureDelegate](../classes/mw.GestureDelegate.md) <br> 手势代理类 |
-| [MessageChannelService](../classes/mw.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码 |
-| [SystemUtil](../classes/Core.mw.SystemUtil.SystemUtil.md) <br> 系统设置 |
-| [UGCService](../classes/mw.UGCService.md) <br> 用户建造服务 |
-| [WindowUtil](../classes/mw.WindowUtil.md) <br> 窗口设置 |
 
 
 | Enums |
@@ -28,8 +22,6 @@ Scripting
 
 | Modules Functions |
 | :-----|
-| **[UGCEditor](Scripting.Scripting.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
-| **[addEditorPawnPanInputMovement](Scripting.Scripting.md#addeditorpawnpaninputmovement)**(`input`: [`Vector2`](../classes/mw.Vector2.md)): `void` <br> 添加对编辑器人物的输入 - 只作用于编辑器人物|
 | **[asyncCaptureAvatar](Scripting.Scripting.md#asynccaptureavatar)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
 | **[asyncGetQualityGameList](Scripting.Scripting.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\> <br> 获取优质作品列表|
 | **[asyncGetReleaseGameData](Scripting.Scripting.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`): `Promise`<[`ReleaseGameData`](Core.mw.md#releasegamedata)\> <br> 通过指定的消费态游戏ID和版本号获取已发布的游戏数据|
@@ -45,12 +37,9 @@ Scripting
 | **[endActorPropertiesChange](Scripting.Scripting.md#endactorpropertieschange)**(`target`: `Base`): `void` <br> 结束记录actor属性的撤销恢复|
 | **[endActorTransformChange](Scripting.Scripting.md#endactortransformchange)**(`target`: `Base`, `bIsGizmoActor?`: `boolean`): `void` <br> 结束记录actor的transform|
 | **[getCurrentProjectPath](Scripting.Scripting.md#getcurrentprojectpath)**(): `string` <br> 获取当前工程的路径|
-| **[getEditorPawnLocation](Scripting.Scripting.md#geteditorpawnlocation)**(): [`Vector`](../classes/mw.Vector.md) <br> 返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物|
-| **[getEditorPawnRotation](Scripting.Scripting.md#geteditorpawnrotation)**(): [`Rotation`](../classes/mw.Rotation.md) <br> 返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物|
 | **[getGizmo](Scripting.Scripting.md#getgizmo)**(): [`Gizmo`](../classes/mw.Gizmo.md) <br> 获取编辑态的坐标轴,如果在运行态获取会返回空.刚进入游戏初始化主编辑UI时还未创建会返回空|
 | **[getHeadSculpture](Scripting.Scripting.md#getheadsculpture)**(`character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 对指定虚拟角色进行截取后上传到服务器|
 | **[getLocalMaterialsCount](Scripting.Scripting.md#getlocalmaterialscount)**(): `number` <br> 获取创建的本地材质数量|
-| **[getObjectWithGuid](Scripting.Scripting.md#getobjectwithguid)**(`guid`: `string`): `Script` <br> 查找需要在ugc编辑器中调用的gameobject, 第一次查找会触发onstart 和 反序列化 之后不再触发,避免数据还原需要加上类装饰器ugcEditor|
 | **[getOneFingerMoveGestureDelegate](Scripting.Scripting.md#getonefingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <br> 获取单指滑动的代理|
 | **[getPinchGestureDelegate](Scripting.Scripting.md#getpinchgesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`Distance`: `number`) => `void`\> <br> 获取挤压手势的代理|
 | **[getSavedDir](Scripting.Scripting.md#getsaveddir)**(): `string` <br> 获取截图的保存路径|
@@ -62,23 +51,16 @@ Scripting
 | **[getTwoFingerMoveGestureDelegate](Scripting.Scripting.md#gettwofingermovegesturedelegate)**(): [`MulticastDelegate`](../classes/mw.MulticastDelegate.md)<(`location`: [`Vector2`](../classes/mw.Vector2.md)) => `void`\> <br> 获取双指滑动的代理|
 | **[markActorRenderStateDirty](Scripting.Scripting.md#markactorrenderstatedirty)**(`target`: `Base`): `void` <br> 标记Actor所有组件的渲染状态为脏|
 | **[mobileReleaseGame](Scripting.Scripting.md#mobilereleasegame)**(`InGameName`: `string`, `InExtraData?`: `string`): `Promise`<[`ReleaseStatus`](../enums/mw.ReleaseStatus.md)\> <br> 移动端编辑器发布游戏|
+| **[persistence](Scripting.Scripting.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`) => `void` <br> 属性装饰器-持久化存储属性|
 | **[projectWorldLocationToWidgetPosition](Scripting.Scripting.md#projectworldlocationtowidgetposition)**(`player`: [`Player`](../classes/mw.Player.md), `worldLocation`: [`Vector`](../classes/mw.Vector.md), `outScreenPosition`: [`Vector2`](../classes/mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <br> 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
 | **[recordingCharacterGif](Scripting.Scripting.md#recordingcharactergif)**(`Character`: [`Character`](../classes/mw.Character.md), `relativeLocation`: [`Vector`](../classes/mw.Vector.md), `relativeRotation`: [`Rotation`](../classes/mw.Rotation.md), `resolution`: [`Vector2`](../classes/mw.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `picNum`: `number`, `recordingTime`: `number`): `void` <br> 连续截图，生成GIF素材发送给服务器|
 | **[redo](Scripting.Scripting.md#redo)**(): `void` <br> 执行恢复操作|
 | **[saveProject](Scripting.Scripting.md#saveproject)**(): `void` <br> 保存当前游戏项目|
-| **[saveProperty](Scripting.Scripting.md#saveproperty)**(`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
 | **[screenShot](Scripting.Scripting.md#screenshot)**(`Resolution`: [`Vector2`](../classes/mw.Vector2.md), `StartPoint`: [`Vector2`](../classes/mw.Vector2.md), `Width`: `number`, `Height`: `number`, `callback`: (`dataString`: `string`) => `void`): `void` <br> 屏幕指定区域截图|
 | **[screenShotExist](Scripting.Scripting.md#screenshotexist)**(`absPath`: `string`): `boolean` <br> 验证绝对路径下截图是否存在|
 | **[sendShareId](Scripting.Scripting.md#sendshareid)**(`absPath`: `string`, `shareId`: `string`, `bShowUuid`: `boolean`): `void` <br> 将角色数据ID连同角色截图一同发给MGS|
-| **[setEditorCameraLocation](Scripting.Scripting.md#seteditorcameralocation)**(`input`: [`Vector`](../classes/mw.Vector.md)): `boolean` <br> 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body|
-| **[setEditorCameraRotation](Scripting.Scripting.md#seteditorcamerarotation)**(`input`: [`Rotation`](../classes/mw.Rotation.md)): `boolean` <br> 添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body|
-| **[setEditorCameraTransform](Scripting.Scripting.md#seteditorcameratransform)**(`input`: [`Transform`](../classes/mw.Transform.md)): `boolean` <br> 设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body|
-| **[setEditorPawnLocation](Scripting.Scripting.md#seteditorpawnlocation)**(`input`: [`Vector`](../classes/mw.Vector.md)): `boolean` <br> 设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体|
-| **[setEditorPawnRotation](Scripting.Scripting.md#seteditorpawnrotation)**(`input`: [`Rotation`](../classes/mw.Rotation.md)): `boolean` <br> 添加对编辑器人物的输入 - 只作用于编辑器人物|
-| **[setEditorPawnTransform](Scripting.Scripting.md#seteditorpawntransform)**(`input`: [`Transform`](../classes/mw.Transform.md)): `boolean` <br> 设置编辑器人物的空间信息|
 | **[setMultiSwipeTime](Scripting.Scripting.md#setmultiswipetime)**(`time`: `number`): `void` <br> 双指移动的时间- 必须大于这个时间才执行双指移动事件|
 | **[setPinchAngleTolerance](Scripting.Scripting.md#setpinchangletolerance)**(`time`: `number`): `void` <br> 挤压手势的偏差角度|
-| **[setScriptObjectData](Scripting.Scripting.md#setscriptobjectdata)**(`target`: `Script`, `key`: `string`, `data`: `string` \): `boolean` <br> 设置脚本内容,不会验证是否有对应变量|
 | **[setSingleSwipeTime](Scripting.Scripting.md#setsingleswipetime)**(`time`: `number`): `void` <br> 单指移动的时间- 必须大于这个时间才会开始执行单指移动|
 | **[setSwipeTolerance](Scripting.Scripting.md#setswipetolerance)**(`time`: `number`): `void` <br> 双指移动的偏差量- 值越大误差则可以越大|
 | **[setTapTime](Scripting.Scripting.md#settaptime)**(`time`: `number`): `void` <br> tap点击的时间间隔- 如果在这个时间以内算tap，大于这个时间则是move|
@@ -96,36 +78,6 @@ Scripting
 
 ## Modules Functions
 
-
-___
-
-### UGCEditor <Score text="UGCEditor" /> 
-
-• **UGCEditor**(`target`): `void` <Badge type="tip" text="client" />
-
-UGC Editor使用的装饰器,避免数据被还原
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `any` |  目标 |
-
-___
-
-### addEditorPawnPanInputMovement <Score text="addEditorPawnPanInputMovement" /> 
-
-• **addEditorPawnPanInputMovement**(`input`): `void` <Badge type="tip" text="client" />
-
-添加对编辑器人物的输入 - 只作用于编辑器人物
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Vector2`](../classes/mw.Vector2.md) | 输入值 |
 
 ___
 
@@ -437,34 +389,6 @@ ___
 返回当前工程的路径
 ___
 
-### getEditorPawnLocation <Score text="getEditorPawnLocation" /> 
-
-• **getEditorPawnLocation**(): [`Vector`](../classes/mw.Vector.md) <Badge type="tip" text="client" />
-
-返回编辑器人物摄像机和人物位置(为同一个) - 只作用于编辑器人物
-
-
-#### Returns
-
-[`Vector`](../classes/mw.Vector.md)
-
-Vector 返回的位置
-___
-
-### getEditorPawnRotation <Score text="getEditorPawnRotation" /> 
-
-• **getEditorPawnRotation**(): [`Rotation`](../classes/mw.Rotation.md) <Badge type="tip" text="client" />
-
-返回编辑器人物摄像机和人物旋转(为同一个,x,y, z 对应Pitch , Yaw, Roll) - 只作用于编辑器人物
-
-
-#### Returns
-
-[`Rotation`](../classes/mw.Rotation.md)
-
-返回旋转的角度
-___
-
 ### getGizmo <Score text="getGizmo" /> 
 
 • **getGizmo**(): [`Gizmo`](../classes/mw.Gizmo.md) <Badge type="tip" text="client" />
@@ -519,26 +443,6 @@ ___
 `number`
 
 本地材质数量
-___
-
-### getObjectWithGuid <Score text="getObjectWithGuid" /> 
-
-• **getObjectWithGuid**(`guid`): `Script` <Badge type="tip" text="client" />
-
-查找需要在ugc编辑器中调用的gameobject, 第一次查找会触发onstart 和 反序列化 之后不再触发,避免数据还原需要加上类装饰器ugcEditor
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` | 查找的对象id |
-
-#### Returns
-
-`Script`
-
-返回查找的对象,可能为空
 ___
 
 ### getOneFingerMoveGestureDelegate <Score text="getOneFingerMoveGestureDelegate" /> 
@@ -709,6 +613,44 @@ ___
 保存成功或失败
 ___
 
+### persistence <Score text="persistence" /> 
+
+• **persistence**(`name?`): (`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`) => `void` 
+
+属性装饰器-持久化存储属性
+
+::: warning Precautions
+
+用于设置数据类(继承Subdata的类)哪些属性是要永久存储的
+
+:::
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name?` | `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
+
+#### Returns
+
+`fn`
+
+装饰器方法体
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | [`Subdata`](../classes/mw.Subdata.md) |
+| `propertyKey` | `string` |
+
+##### Returns
+
+___
+
 ### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
 
 • **projectWorldLocationToWidgetPosition**(`player`, `worldLocation`, `outScreenPosition`, `isPlayerViewportRelative`): `boolean` <Badge type="tip" text="client" />
@@ -804,27 +746,6 @@ ___
 
 ___
 
-### saveProperty <Score text="saveProperty" /> 
-
-• **saveProperty**(`target`, `propertyKey`): `void` 
-
-属性装饰器-永久存储属性
-
-::: warning Precautions
-
-用于设置数据类(继承Subdata的类)哪些属性是要永久存储的
-
-:::
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | [`Subdata`](../classes/mw.Subdata.md) |  类实例 |
-| `propertyKey` | `string` |  属性名 |
-___
-
 ### screenShot <Score text="screenShot" /> 
 
 • **screenShot**(`Resolution`, `StartPoint`, `Width`, `Height`, `callback`): `void` <Badge type="tip" text="client" />
@@ -887,126 +808,6 @@ Playza定制接口
 
 ___
 
-### setEditorCameraLocation <Score text="setEditorCameraLocation" /> 
-
-• **setEditorCameraLocation**(`input`): `boolean` <Badge type="tip" text="client" />
-
-设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Vector`](../classes/mw.Vector.md) | 编辑器人物会被设置到的位置 |
-
-#### Returns
-
-`boolean`
-
-返回是否设置成功 - 场景中无编辑器人物时会失败
-___
-
-### setEditorCameraRotation <Score text="setEditorCameraRotation" /> 
-
-• **setEditorCameraRotation**(`input`): `boolean` <Badge type="tip" text="client" />
-
-添加对编辑器摄像机的输入 - 只作用于编辑器 - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Rotation`](../classes/mw.Rotation.md) | 输入值 |
-
-#### Returns
-
-`boolean`
-
-bool 是否设置成功
-___
-
-### setEditorCameraTransform <Score text="setEditorCameraTransform" /> 
-
-• **setEditorCameraTransform**(`input`): `boolean` <Badge type="tip" text="client" />
-
-设置编辑器摄像机的空间信息  - 目前编辑器人物和相机是一体的,设置摄像机和人物效果都相同 因为并无实体的人物body
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Transform`](../classes/mw.Transform.md) | 编辑器摄像机会被设置到的位置旋转缩放 |
-
-#### Returns
-
-`boolean`
-
-返回是否设置成功 - 场景中无编辑器人物时会失败
-___
-
-### setEditorPawnLocation <Score text="setEditorPawnLocation" /> 
-
-• **setEditorPawnLocation**(`input`): `boolean` <Badge type="tip" text="client" />
-
-设置编辑器人物的位置,瞬移不会扫描途中可碰撞物体
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Vector`](../classes/mw.Vector.md) | 编辑器人物会被设置到的位置 |
-
-#### Returns
-
-`boolean`
-
-返回是否设置成功 - 场景中无编辑器人物时会失败
-___
-
-### setEditorPawnRotation <Score text="setEditorPawnRotation" /> 
-
-• **setEditorPawnRotation**(`input`): `boolean` <Badge type="tip" text="client" />
-
-添加对编辑器人物的输入 - 只作用于编辑器人物
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Rotation`](../classes/mw.Rotation.md) | 输入值 |
-
-#### Returns
-
-`boolean`
-
-bool 是否设置成功
-___
-
-### setEditorPawnTransform <Score text="setEditorPawnTransform" /> 
-
-• **setEditorPawnTransform**(`input`): `boolean` <Badge type="tip" text="client" />
-
-设置编辑器人物的空间信息
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `input` | [`Transform`](../classes/mw.Transform.md) | 编辑器人物会被设置到的位置旋转缩放 |
-
-#### Returns
-
-`boolean`
-
-返回是否设置成功 - 场景中无编辑器人物时会失败
-___
-
 ### setMultiSwipeTime <Score text="setMultiSwipeTime" /> 
 
 • **setMultiSwipeTime**(`time`): `void` <Badge type="tip" text="client" />
@@ -1035,28 +836,6 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  偏差角度 |
 
-___
-
-### setScriptObjectData <Score text="setScriptObjectData" /> 
-
-• **setScriptObjectData**(`target`, `key`, `data`): `boolean` <Badge type="tip" text="client" />
-
-设置脚本内容,不会验证是否有对应变量
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `target` | `Script` | 设置对象 |
-| `key` | `string` | 键值 |
-| `data` | `string` \| `number` \| `boolean` | 数据 |
-
-#### Returns
-
-`boolean`
-
-是否设置成功
 ___
 
 ### setSingleSwipeTime <Score text="setSingleSwipeTime" /> 

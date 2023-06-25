@@ -7,7 +7,7 @@
 | Functions |
 | :-----|
 | **[autoExecute](mw.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[saveProperty](mw.Decorator.md#saveproperty)**(`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`): `void` <br> 属性装饰器-永久存储属性|
+| **[persistence](mw.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`) => `void` <br> 属性装饰器-持久化存储属性|
 
 ## Functions
 
@@ -50,11 +50,11 @@
 
 ___
 
-### saveProperty <Score text="saveProperty" /> 
+### persistence <Score text="persistence" /> 
 
-• **saveProperty**(`target`, `propertyKey`): `void` 
+• **persistence**(`name?`): (`target`: [`Subdata`](../classes/mw.Subdata.md), `propertyKey`: `string`) => `void` 
 
-属性装饰器-永久存储属性
+属性装饰器-持久化存储属性
 
 ::: warning Precautions
 
@@ -67,6 +67,23 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | [`Subdata`](../classes/mw.Subdata.md) |  类实例 |
-| `propertyKey` | `string` |  属性名 |
+| `name?` | `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
 
+#### Returns
+
+`fn`
+
+装饰器方法体
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | [`Subdata`](../classes/mw.Subdata.md) |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`

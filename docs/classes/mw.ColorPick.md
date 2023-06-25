@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / ColorPick
+[Ui](../groups/Core.Ui.md) / ColorPick
 
 # ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 

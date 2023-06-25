@@ -655,13 +655,11 @@ ___
 
 :::
 
-使用示例:待补充
-```ts
-```
-
 #### Returns
 
 `Promise`<[`Player`](mw.Player.md)\>
+
+返回本地玩家
 
 ___
 

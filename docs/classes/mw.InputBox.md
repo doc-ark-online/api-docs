@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / InputBox
+[Ui](../groups/Core.Ui.md) / InputBox
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 

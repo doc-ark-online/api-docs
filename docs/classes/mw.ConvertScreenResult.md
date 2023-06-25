@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / ConvertScreenResult
+[Type](../groups/Core.Type.md) / ConvertScreenResult
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 

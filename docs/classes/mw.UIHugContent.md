@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UIHugContent
+[Ui](../groups/Core.Ui.md) / UIHugContent
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 

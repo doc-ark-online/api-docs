@@ -32,10 +32,8 @@ export default class HotWeaponAimSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onAimEndClient](mw.HotWeaponAimComponent.md#onaimendclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[onAimEndServer](mw.HotWeaponAimComponent.md#onaimendserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[onAimStartClient](mw.HotWeaponAimComponent.md#onaimstartclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[onAimStartServer](mw.HotWeaponAimComponent.md#onaimstartserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onAimEnd](mw.HotWeaponAimComponent.md#onaimend)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onAimStart](mw.HotWeaponAimComponent.md#onaimstart)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -43,42 +41,25 @@ export default class HotWeaponAimSample1 extends Script {
 | **[aimingZoom](mw.HotWeaponAimComponent.md#aimingzoom)**(): `number` <br> Get第一人称瞄准时的瞄准镜放大倍数。使用示例见类 HotWeaponAimComponent 使用示例|
 | **[cameraOffsetDistanceInThirdPersonMode](mw.HotWeaponAimComponent.md#cameraoffsetdistanceinthirdpersonmode)**(): `number` <br> Get第三人称瞄准时的连接相机弹簧组件的长度。使用示例见类 HotWeaponAimComponent 使用示例|
 | **[defaultCameraSpringArmLength](mw.HotWeaponAimComponent.md#defaultcameraspringarmlength)**(): `number` <br> Get第三人称常态下相机弹簧组件的默认长度。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[scopeTypeIndex](mw.HotWeaponAimComponent.md#scopetypeindex)**(): [`HotWeaponCrossHairType`](../enums/mw.HotWeaponCrossHairType.md) <br> Get模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Methods |
 | :-----|
 | **[bindOpenAimComponentDelegates](mw.HotWeaponAimComponent.md#bindopenaimcomponentdelegates)**(): `void` <br> 绑定瞄准组件代理|
-| **[enableAiming](mw.HotWeaponAimComponent.md#enableaiming)**(`NewAimState`: `boolean`): `void` <br> 打开/关闭瞄准|
+| **[enableAiming](mw.HotWeaponAimComponent.md#enableaiming)**(`enabled`: `boolean`): `void` <br> 打开/关闭瞄准|
 
 ## Properties
 
-### onAimEndClient <Score text="onAimEndClient" /> 
+### onAimEnd <Score text="onAimEnd" /> 
 
-• **onAimEndClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimEnd**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
-
-___
-
-### onAimEndServer <Score text="onAimEndServer" /> 
-
-• **onAimEndServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-服务器端结束瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
+服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
-### onAimStartClient <Score text="onAimStartClient" /> 
+### onAimStart <Score text="onAimStart" /> 
 
-• **onAimStartClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-客户端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
-
-___
-
-### onAimStartServer <Score text="onAimStartServer" /> 
-
-• **onAimStartServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onAimStart**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
@@ -220,34 +201,6 @@ Set第三人称常态下相机弹簧组件的默认长度。使用示例见类 H
 | `NewCameraArmLength` | `number` |  新设置的连接相机弹簧组件的默认长度 default: |
 
 
-___
-
-### scopeTypeIndex <Score text="scopeTypeIndex" /> 
-
-• `get` **scopeTypeIndex**(): [`HotWeaponCrossHairType`](../enums/mw.HotWeaponCrossHairType.md) 
-
-Get模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例
-
-
-#### Returns
-
-[`HotWeaponCrossHairType`](../enums/mw.HotWeaponCrossHairType.md)
-
-当前瞄准镜UI种类
-
-• `set` **scopeTypeIndex**(`NewScopeTypeIndex`): `void` <Badge type="tip" text="other" />
-
-Set模拟瞄准镜UI种类。使用示例见类 HotWeaponAimComponent 使用示例
-
-调用端自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewScopeTypeIndex` | [`HotWeaponCrossHairType`](../enums/mw.HotWeaponCrossHairType.md) |  新的瞄准镜UI种类 default: |
-
-
 ## Methods
 
 ### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
@@ -262,7 +215,7 @@ ___
 
 ### enableAiming <Score text="enableAiming" /> 
 
-• **enableAiming**(`NewAimState`): `void` <Badge type="tip" text="other" />
+• **enableAiming**(`enabled`): `void` <Badge type="tip" text="other" />
 
 打开/关闭瞄准
 - 切换持枪姿态
@@ -276,5 +229,5 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `NewAimState` | `boolean` |  是否开启瞄准功能 default: |
+| `enabled` | `boolean` |  是否开启瞄准功能 default: |
 

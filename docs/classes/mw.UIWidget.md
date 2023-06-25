@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UIWidget
+[Ui](../groups/Core.Ui.md) / UIWidget
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
@@ -20,8 +20,6 @@
 | Properties |
 | :-----|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
-| **[scriptNumberPropPathMap](mw.GameObject.md#scriptnumberproppathmap)**: `any` <br> |
-| **[scriptPropPathNumberMap](mw.GameObject.md#scriptproppathnumbermap)**: `any` <br> |
 :::
 
 

@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / AssetType
+[Type](../groups/Core.Type.md) / AssetType
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 

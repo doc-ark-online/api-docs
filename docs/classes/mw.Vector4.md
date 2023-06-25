@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / Vector4
+[Type](../groups/Core.Type.md) / Vector4
 
 # Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 

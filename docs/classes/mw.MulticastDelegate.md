@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / MulticastDelegate
+[Type](../groups/Core.Type.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 

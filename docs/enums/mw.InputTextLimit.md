@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / InputTextLimit
+[Ui](../groups/Core.Ui.md) / InputTextLimit
 
 # InputTextLimit <Badge type="tip" text="Enumeration" /> <Score text="InputTextLimit" />
 

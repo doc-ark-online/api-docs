@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / Rotation
+[Type](../groups/Core.Type.md) / Rotation
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 

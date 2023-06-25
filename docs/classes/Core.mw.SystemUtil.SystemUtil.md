@@ -1,4 +1,4 @@
-[mw](../groups/Scripting.mw.md) / SystemUtil
+[mw](../groups/Utility.mw.md) / SystemUtil
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 

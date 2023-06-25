@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UILayoutPacket
+[Ui](../groups/Core.Ui.md) / UILayoutPacket
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 

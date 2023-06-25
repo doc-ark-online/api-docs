@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / ProgressBar
+[Ui](../groups/Core.Ui.md) / ProgressBar
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 

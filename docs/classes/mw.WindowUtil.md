@@ -1,4 +1,4 @@
-[Scripting](../groups/Core.Scripting.md) / WindowUtil
+[Utility](../groups/Core.Utility.md) / WindowUtil
 
 # WindowUtil <Badge type="tip" text="Class" /> <Score text="WindowUtil" />
 

@@ -1,4 +1,4 @@
-[Utility](../groups/Core.Utility.md) / EffectService
+[Effects](../groups/Core.Effects.md) / EffectService
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
@@ -85,7 +85,7 @@ export default class EffectExample extends Script {
 | :------ | :------ | :------ |
 | `assetId` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | `position` | [`Vector`](mw.Vector.md) |  世界坐标 |
-| `params?` | `Object` |  播放参数，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，0为无限，默认0），rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
+| `params?` | `Object` |  播放参数，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，默认0，设置此字段将忽略loopCount），rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
 | `params.duration?` | `number` | - |
 | `params.loopCount?` | `number` | - |
 | `params.rotation?` | [`Rotation`](mw.Rotation.md) | - |
@@ -128,7 +128,7 @@ export default class EffectExample extends Script {
 | :------ | :------ | :------ |
 | `assetId` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
 | `target` | [`GameObject`](mw.GameObject.md) |  目标GameObject |
-| `params?` | `Object` |  播放参数，slotType-挂点类型(默认null)，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，0为无限，默认0），position-坐标偏移(默认Vector.zero)，rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
+| `params?` | `Object` |  播放参数，slotType-挂点类型(默认null)，loopCount-循环次数(默认1)，duration-播放时长（单位:秒，默认0，设置此字段将忽略loopCount），position-坐标偏移(默认Vector.zero)，rotation-旋转偏移(默认Rotation.zero)，scale-缩放(Vector.one) default: undefined |
 | `params.duration?` | `number` | - |
 | `params.loopCount?` | `number` | - |
 | `params.position?` | [`Vector`](mw.Vector.md) | - |

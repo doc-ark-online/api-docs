@@ -52,7 +52,7 @@ export default class HotWeaponAofSample1 extends Script {
 | :-----|
 | **[bindOpenAccuracyOfFireComponentDelegates](mw.HotWeaponAccuracyOfFireComponent.md#bindopenaccuracyoffirecomponentdelegates)**(): `void` <br> 客户端 绑定射击精度组件代理|
 | **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number` <br> Get当前子弹随机发散范围半径实际值|
-| **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`ShootDirNoDispersion`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
+| **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
 | **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number` <br> Get目标子弹随机发散范围半径实际值|
 
 ## Properties
@@ -294,7 +294,7 @@ ___
 
 ### getRandomShootDir <Score text="getRandomShootDir" /> 
 
-• **getRandomShootDir**(`ShootDirNoDispersion`): [`Vector`](mw.Vector.md) 
+• **getRandomShootDir**(`shootDir`): [`Vector`](mw.Vector.md) 
 
 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）
 
@@ -310,7 +310,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `ShootDirNoDispersion` | [`Vector`](mw.Vector.md) |  未发生偏移的最初子弹飞行方向 default: |
+| `shootDir` | [`Vector`](mw.Vector.md) |  未发生偏移的最初子弹飞行方向 default: |
 
 #### Returns
 

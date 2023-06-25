@@ -17,9 +17,9 @@
 
 | Properties |
 | :-----|
+| **[onDescriptionChanged](mw.Character.md#ondescriptionchanged)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionChanged`](../modules/Core.mw.md#ondescriptionchanged)\> <br> 外观加载细节变化委托|
+| **[onDescriptionCompleted](mw.Character.md#ondescriptioncompleted)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionCompleted`](../modules/Core.mw.md#ondescriptioncompleted)\> <br> 外观加载完成委托|
 | **[onMovementStateChanged](mw.Character.md#onmovementstatechanged)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnMovementStateChanged`](../modules/Core.mw.md#onmovementstatechanged)\> <br> 移动状态切换时的回调|
-| **[onStyleCompleted](mw.Character.md#onstylecompleted)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnStyleCompleted`](../modules/Core.mw.md#onstylecompleted)\> <br> 外观加载完成委托|
-| **[onStyleItemsChanged](mw.Character.md#onstyleitemschanged)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnStyleItemsChanged`](../modules/Core.mw.md#onstyleitemschanged)\> <br> 外观加载细节变化委托|
 
 
 ::: details 点击查看继承
@@ -47,8 +47,9 @@
 | **[complexMovementEnabled](mw.Character.md#complexmovementenabled)**(): `boolean` <br> 是否启用复杂移动策略|
 | **[crouchEnabled](mw.Character.md#crouchenabled)**(): `boolean` <br> 启用下蹲能力|
 | **[crouchedHeight](mw.Character.md#crouchedheight)**(): `number` <br> 下蹲时碰撞盒高度|
-| **[currentBasicStance](mw.Character.md#currentbasicstance)**(): [`BasicStance`](mw.BasicStance.md) <br> 当前正在播放的基础姿态|
-| **[currentStance](mw.Character.md#currentstance)**(): [`Stance`](mw.Stance.md) <br> 当前正在播放的二级姿态|
+| **[currentStance](mw.Character.md#currentstance)**(): [`Stance`](mw.Stance.md) <br> 当前正在播放的基础姿态|
+| **[currentSubStance](mw.Character.md#currentsubstance)**(): [`SubStance`](mw.SubStance.md) <br> 当前正在播放的二级姿态|
+| **[description](mw.Character.md#description)**(): [`CharacterDescription`](mw.CharacterDescription.md) <br> 角色外观|
 | **[displayName](mw.Character.md#displayname)**(): `string` <br> 角色名称|
 | **[driftControl](mw.Character.md#driftcontrol)**(): `number` <br> 空中灵活度|
 | **[forceUpdateMovement](mw.Character.md#forceupdatemovement)**(`value`: `boolean`): `void` <br> 强制更新移动|
@@ -59,6 +60,7 @@
 | **[headUIVisibleRange](mw.Character.md#headuivisiblerange)**(): `number` <br> 头顶UI可见距离|
 | **[horizontalBrakingDecelerationFalling](mw.Character.md#horizontalbrakingdecelerationfalling)**(): `number` <br> 下落制动速率|
 | **[isCrouching](mw.Character.md#iscrouching)**(): `boolean` <br> 是否正在蹲下|
+| **[isDescriptionReady](mw.Character.md#isdescriptionready)**(): `boolean` <br> 角色外观准备状态|
 | **[isJumping](mw.Character.md#isjumping)**(): `boolean` <br> 正在跳跃|
 | **[isMoving](mw.Character.md#ismoving)**(): `boolean` <br> 正在移动|
 | **[jumpEnabled](mw.Character.md#jumpenabled)**(): `boolean` <br> 启用跳跃能力|
@@ -71,6 +73,7 @@
 | **[maxSwimSpeed](mw.Character.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
 | **[maxWalkSpeed](mw.Character.md#maxwalkspeed)**(): `number` <br> 最大行走速度|
 | **[maxWalkSpeedCrouched](mw.Character.md#maxwalkspeedcrouched)**(): `number` <br> 最大蹲伏行走速度|
+| **[meshOffset](mw.Character.md#meshoffset)**(): [`Vector`](mw.Vector.md) <br> 获取mesh相对角色坐标点的偏移|
 | **[moveFacingDirection](mw.Character.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md) <br> 运动面朝方向|
 | **[movementAxisDirection](mw.Character.md#movementaxisdirection)**(): [`Vector`](mw.Vector.md) <br> 运动时依据的轴方向|
 | **[movementDirection](mw.Character.md#movementdirection)**(): [`MovementDirection`](../enums/mw.MovementDirection.md) <br> 运动正方向|
@@ -82,8 +85,6 @@
 | **[ragdollEnabled](mw.Character.md#ragdollenabled)**(): `boolean` <br> 启用布娃娃|
 | **[rotateRate](mw.Character.md#rotaterate)**(): `number` <br> 最大转向速度|
 | **[serverCalculateEnable](mw.Character.md#servercalculateenable)**(`enable`: `boolean`): `void` <br> 开/关NPC的功能,现包含(角色的网络同步，角色移动)未来可能会添加其他计算|
-| **[style](mw.Character.md#style)**(): [`StyleConfig`](mw.StyleConfig.md) <br> 角色外观|
-| **[styleReady](mw.Character.md#styleready)**(): `boolean` <br> 角色外观准备状态|
 | **[velocity](mw.Character.md#velocity)**(): [`Vector`](mw.Vector.md) <br> 当前移动速度|
 | **[walkableFloorAngle](mw.Character.md#walkablefloorangle)**(): `number` <br> 可行走的最大角度|
 
@@ -101,27 +102,27 @@
 | **[addImpulse](mw.Character.md#addimpulse)**(`Vector`: [`Vector`](mw.Vector.md), `ignoreMass?`: `boolean`): `void` <br> 添加冲量|
 | **[addMovement](mw.Character.md#addmovement)**(`direction`: [`Vector`](mw.Vector.md)): `void` <br> 沿着给定的方向向量添加移动输入|
 | **[attachToSlot](mw.Character.md#attachtoslot)**(`gameObject`: [`GameObject`](mw.GameObject.md), `slotName`: [`SlotType`](../enums/mw.SlotType.md)): `void` <br> 将物体附着到人物角色的指定插槽|
-| **[clearStyle](mw.Character.md#clearstyle)**(`appearance?`: `boolean`, `slotAndItem?`: `boolean`): `void` <br> 清空外观数据|
+| **[clearDescription](mw.Character.md#cleardescription)**(`appearance?`: `boolean`, `slotAndDecoration?`: `boolean`): `void` <br> 清空外观数据|
 | **[crouch](mw.Character.md#crouch)**(`isCrouch`: `boolean`): `void` <br> 下蹲|
 | **[detachAllFromSlot](mw.Character.md#detachallfromslot)**(`param?`: `Object`): `void` <br> 将角色插槽附着的对象全部分离|
 | **[detachFromSlot](mw.Character.md#detachfromslot)**(`gameObject`: [`GameObject`](mw.GameObject.md)): `void` <br> 将物体从插槽中分离|
+| **[getDescription](mw.Character.md#getdescription)**(): [`CharacterDescription`](mw.CharacterDescription.md) <br> 获取外观数据|
 | **[getSlotWorldPosition](mw.Character.md#getslotworldposition)**(`slotName`: [`SlotType`](../enums/mw.SlotType.md)): [`Vector`](mw.Vector.md) <br> 获取角色插槽的世界坐标|
-| **[getStyleData](mw.Character.md#getstyledata)**(): [`StyleConfig`](mw.StyleConfig.md) <br> 获取外观数据|
 | **[getVertexPosition](mw.Character.md#getvertexposition)**(`index`: `number`): [`Vector`](mw.Vector.md) <br> 通过头部模型顶点index实时获取顶点位置|
 | **[jump](mw.Character.md#jump)**(): `void` <br> 跳跃|
 | **[loadAnimation](mw.Character.md#loadanimation)**(`assetId`: `string`): [`Animation`](mw.Animation.md) <br> 加载动画|
-| **[loadBasicStance](mw.Character.md#loadbasicstance)**(`assetId`: `string`): [`BasicStance`](mw.BasicStance.md) <br> 加载基础姿态|
-| **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md) <br> 加载姿态|
+| **[loadStance](mw.Character.md#loadstance)**(`assetId`: `string`): [`Stance`](mw.Stance.md) <br> 加载基础姿态|
+| **[loadSubStance](mw.Character.md#loadsubstance)**(`assetId`: `string`): [`SubStance`](mw.SubStance.md) <br> 加载姿态|
 | **[lookAt](mw.Character.md#lookat)**(`target`: [`Vector`](mw.Vector.md)): `void` <br> 角色面朝目标点|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void` <br> 设置不同形状不同大小的碰撞体|
+| **[setDescription](mw.Character.md#setdescription)**(`data`: `string` \): `void` <br> 设置外观数据|
 | **[setServerMovementEnable](mw.Character.md#setservermovementenable)**(`value`: `boolean`): `void` <br> 开/关NPC的移动计算|
-| **[setStyle](mw.Character.md#setstyle)**(`data`: `string` \): `void` <br> 设置外观数据|
 | **[swimDown](mw.Character.md#swimdown)**(`speed`: `number`): `void` <br> 水中下潜|
 | **[swimUp](mw.Character.md#swimup)**(`speed`: `number`): `void` <br> 水中上浮|
 | **[switchToFlying](mw.Character.md#switchtoflying)**(): `void` <br> 切换为飞行状态|
 | **[switchToSwimming](mw.Character.md#switchtoswimming)**(): `void` <br> 切换为游泳状态|
 | **[switchToWalking](mw.Character.md#switchtowalking)**(): `void` <br> 切换为行走状态|
-| **[syncStyle](mw.Character.md#syncstyle)**(): `void` <br> 同步外观数据|
+| **[syncDescription](mw.Character.md#syncdescription)**(): `void` <br> 同步外观数据|
 
 
 ::: details 点击查看继承
@@ -131,6 +132,98 @@
 | **[setPostProcessOutline](mw.Pawn.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void` <br> 添加后处理描边|
 :::
 
+
+### onDescriptionChanged <Score text="onDescriptionChanged" /> 
+
+• **onDescriptionChanged**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionChanged`](../modules/Core.mw.md#ondescriptionchanged)\>
+
+外观加载细节变化委托
+
+___
+
+### onDescriptionCompleted <Score text="onDescriptionCompleted" /> 
+
+• **onDescriptionCompleted**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionCompleted`](../modules/Core.mw.md#ondescriptioncompleted)\> 
+
+外观加载完成委托
+
+
+::: warning Precautions
+
+当角色对象外观加载完成时执行绑定函数
+
+:::
+
+使用示例:创建一个名为"Example_Character_onStyleCompleted"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
+```ts
+@Core.Class
+export default class Example_Character_onStyleCompleted extends Script {
+// 预加载使用到的资源
+@Core.Property()
+preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.styleReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onStyleCompleted.add(() => {
+                // 播放换装完成特效
+                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                // 获取角色默认外观风格
+                if(defaultStyle == null) {
+                    defaultStyle = myCharacter.getStyleData();
+                }
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 修改角色style头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 修改角色style体型:身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 修改角色style化妆:腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 修改角色style头发:前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Type.Keys.Three, () => {
+                myCharacter.syncStyle();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Type.Keys.Four, () => {
+                myCharacter.clearStyle();
+            });
+        }
+    }
+}
+```
+
+___
 
 ### onMovementStateChanged <Score text="onMovementStateChanged" /> 
 
@@ -211,98 +304,6 @@ preloadAssets = "23060,86749";
     }
 }
 ```
-
-___
-
-### onStyleCompleted <Score text="onStyleCompleted" /> 
-
-• **onStyleCompleted**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnStyleCompleted`](../modules/Core.mw.md#onstylecompleted)\> 
-
-外观加载完成委托
-
-
-::: warning Precautions
-
-当角色对象外观加载完成时执行绑定函数
-
-:::
-
-使用示例:创建一个名为"Example_Character_onStyleCompleted"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
-```ts
-@Core.Class
-export default class Example_Character_onStyleCompleted extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端玩家
-            let myPlayer = Player.localPlayer;
-            // 获取玩家控制角色
-            let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            let defaultStyle = null;
-            // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
-                // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-                // 获取角色默认外观风格
-                if(defaultStyle == null) {
-                    defaultStyle = myCharacter.getStyleData();
-                }
-            });
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
-                    // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
-                    // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
-                    // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
-                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
-                }
-            });
-            // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
-            });
-            // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
-            });
-        }
-    }
-}
-```
-
-___
-
-### onStyleItemsChanged <Score text="onStyleItemsChanged" /> 
-
-• **onStyleItemsChanged**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnStyleItemsChanged`](../modules/Core.mw.md#onstyleitemschanged)\>
-
-外观加载细节变化委托
 
 ## Accessors
 
@@ -446,7 +447,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 0;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:键盘“1”，角色切换为飞行
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.switchToFlying();
@@ -530,7 +531,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 0;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:键盘“1”，角色切换为飞行
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.switchToFlying();
@@ -630,7 +631,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -736,7 +737,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -844,9 +845,9 @@ export default class Example_Character_BrakingDecelerationWalking extends Script
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -906,9 +907,9 @@ export default class Example_Character_BrakingDecelerationWalking extends Script
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -992,7 +993,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -1098,7 +1099,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -1474,25 +1475,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
@@ -2070,9 +2071,9 @@ preloadAssets = "54834,36851";
 
 ___
 
-### currentBasicStance <Score text="currentBasicStance" /> 
+### currentStance <Score text="currentStance" /> 
 
-• `get` **currentBasicStance**(): [`BasicStance`](mw.BasicStance.md)
+• `get` **currentStance**(): [`Stance`](mw.Stance.md)
 
 当前正在播放的基础姿态
 
@@ -2092,10 +2093,10 @@ preloadAssets = "39317,30274";
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadBasicStance("39317");
+            let animeManStance = myCharacter.loadStance("39317");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadBasicStance("30274");
+            let animeWomanStance = myCharacter.loadStance("30274");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -2123,13 +2124,13 @@ preloadAssets = "39317,30274";
 
 #### Returns
 
-[`BasicStance`](mw.BasicStance.md)
+[`Stance`](mw.Stance.md)
 
 ___
 
-### currentStance <Score text="currentStance" /> 
+### currentSubStance <Score text="currentSubStance" /> 
 
-• `get` **currentStance**(): [`Stance`](mw.Stance.md)
+• `get` **currentSubStance**(): [`SubStance`](mw.SubStance.md)
 
 当前正在播放的二级姿态
 
@@ -2149,11 +2150,11 @@ preloadAssets = "94261,14520";
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载仅上半身瞄准姿态
-            let aimStance = myCharacter.loadStance("94261");
+            let aimStance = myCharacter.loadSubStance("94261");
             aimStance.blendMode = StanceBlendMode.BlendUpper;
             console.log("aimStance assetId " + aimStance.assetId);
             // 给角色加载仅下半身踢腿姿态
-            let kickStance = myCharacter.loadStance("14520");
+            let kickStance = myCharacter.loadSubStance("14520");
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
@@ -2177,7 +2178,93 @@ preloadAssets = "94261,14520";
 
 #### Returns
 
-[`Stance`](mw.Stance.md)
+[`SubStance`](mw.SubStance.md)
+
+___
+
+### description <Score text="description" /> 
+
+• `get` **description**(): [`CharacterDescription`](mw.CharacterDescription.md) 
+
+角色外观
+
+
+::: warning Precautions
+
+当前角色持有的外观数据，数据保存的是引用。
+
+:::
+
+使用示例:创建一个名为"Example_Character_Style"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
+```ts
+@Core.Class
+export default class Example_Character_Style extends Script {
+// 预加载使用到的资源
+@Core.Property()
+preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.styleReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onStyleCompleted.add(() => {
+                // 播放换装完成特效
+                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                // 获取角色默认外观风格
+                defaultStyle = myCharacter.getStyleData();
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 修改角色style头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 修改角色style体型:身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 修改角色style化妆:腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 修改角色style头发:前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Type.Keys.Three, () => {
+                myCharacter.syncStyle();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Type.Keys.Four, () => {
+                myCharacter.clearStyle();
+            });
+        }
+    }
+}
+```
+
+#### Returns
+
+[`CharacterDescription`](mw.CharacterDescription.md)
 
 ___
 
@@ -2277,10 +2364,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Character_AirControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
+使用示例:创建一个名为"Example_Character_DriftControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_AirControl extends Script {
+export default class Example_Character_DriftControl extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2292,13 +2379,13 @@ export default class Example_Character_AirControl extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -2326,10 +2413,10 @@ export default class Example_Character_AirControl extends Script {
 
 :::
 
-使用示例:创建一个名为"Example_Character_AirControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
+使用示例:创建一个名为"Example_Character_DriftControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_AirControl extends Script {
+export default class Example_Character_DriftControl extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2341,13 +2428,13 @@ export default class Example_Character_AirControl extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -2470,13 +2557,13 @@ export default class Example_Character_GravityScale extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -2519,13 +2606,13 @@ export default class Example_Character_GravityScale extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -2584,9 +2671,9 @@ export default class Example_Character_GroundFriction extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -2646,9 +2733,9 @@ export default class Example_Character_GroundFriction extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -2691,10 +2778,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Character_SeparateBrakingFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
+使用示例:创建一个名为"Example_Character_GroundFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_SeparateBrakingFrictionEnabled extends Script {
+export default class Example_Character_GroundFrictionEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2715,9 +2802,9 @@ export default class Example_Character_SeparateBrakingFrictionEnabled extends Sc
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -2753,10 +2840,10 @@ export default class Example_Character_SeparateBrakingFrictionEnabled extends Sc
 
 :::
 
-使用示例:创建一个名为"Example_Character_SeparateBrakingFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
+使用示例:创建一个名为"Example_Character_GroundFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_SeparateBrakingFrictionEnabled extends Script {
+export default class Example_Character_GroundFrictionEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2777,9 +2864,9 @@ export default class Example_Character_SeparateBrakingFrictionEnabled extends Sc
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -2868,10 +2955,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Character_BrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
+使用示例:创建一个名为"Example_Character_HorizontalBrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_BrakingDecelerationFalling extends Script {
+export default class Example_Character_HorizontalBrakingDecelerationFalling extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2883,13 +2970,13 @@ export default class Example_Character_BrakingDecelerationFalling extends Script
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -2917,10 +3004,10 @@ export default class Example_Character_BrakingDecelerationFalling extends Script
 
 :::
 
-使用示例:创建一个名为"Example_Character_BrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
+使用示例:创建一个名为"Example_Character_HorizontalBrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_BrakingDecelerationFalling extends Script {
+export default class Example_Character_HorizontalBrakingDecelerationFalling extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2932,13 +3019,13 @@ export default class Example_Character_BrakingDecelerationFalling extends Script
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -3012,6 +3099,92 @@ preloadAssets = "54834,36851";
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.crouchEnabled = !myCharacter.crouchEnabled;
                 console.log("当前角色是否能下蹲 " + myCharacter.crouchEnabled);
+            });
+        }
+    }
+}
+```
+
+#### Returns
+
+`boolean`
+
+___
+
+### isDescriptionReady <Score text="isDescriptionReady" /> 
+
+• `get` **isDescriptionReady**(): `boolean` <Badge type="tip" text="client" />
+
+角色外观准备状态
+
+
+::: warning Precautions
+
+当前角色外观是否准备完毕。true表示准备完毕，false表示未准备好。
+
+:::
+
+使用示例:创建一个名为"Example_Character_StyleReady"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
+```ts
+@Core.Class
+export default class Example_Character_StyleReady extends Script {
+// 预加载使用到的资源
+@Core.Property()
+preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.styleReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onStyleCompleted.add(() => {
+                // 播放换装完成特效
+                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                // 获取角色默认外观风格
+                defaultStyle = myCharacter.getStyleData();
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 修改角色style头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 修改角色style体型:身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 修改角色style化妆:腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 修改角色style头发:前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Type.Keys.Three, () => {
+                myCharacter.syncStyle();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Type.Keys.Four, () => {
+                myCharacter.clearStyle();
             });
         }
     }
@@ -3111,9 +3284,9 @@ export default class Example_Character_IsMoving extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -3375,9 +3548,9 @@ export default class Example_Character_MaxAcceleration extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -3437,9 +3610,9 @@ export default class Example_Character_MaxAcceleration extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -3497,13 +3670,13 @@ export default class Example_Character_MaxFallingSpeed extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -3546,13 +3719,13 @@ export default class Example_Character_MaxFallingSpeed extends Script {
             // 最大下落速度为1024
             myCharacter.maxFallingSpeed = 1024;
             // 下落制动速率为10
-            myCharacter.brakingDecelerationFalling = 10;
+            myCharacter.horizontalBrakingDecelerationFalling = 10;
             // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.airControl = 0.1;
-            // 下落速度小于阈值时【airControl】乘10
-            myCharacter.airControlBoostMultiplier = 10;
+            myCharacter.driftControl = 0.1;
+            // 下落速度小于阈值时【driftControl】乘10
+            myCharacter.driftControlBoostMultiplier = 10;
             // 下落速度阈值100
-            myCharacter.airControlBoostVelocityThreshold = 100;
+            myCharacter.driftControlBoostVelocityThreshold = 100;
             // 10倍重力
             myCharacter.gravityScale = 10;
             // 添加一个按键方法:按下键盘“1”，角色设置跳跃高度为1000后跳跃。
@@ -3607,7 +3780,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 0;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换为飞行
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.switchToFlying();
@@ -3691,7 +3864,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 0;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换为飞行
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.switchToFlying();
@@ -4043,7 +4216,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -4149,7 +4322,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -4257,9 +4430,9 @@ export default class Example_Character_MaxWalkSpeed extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -4319,9 +4492,9 @@ export default class Example_Character_MaxWalkSpeed extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -4474,6 +4647,33 @@ preloadAssets = "54834,36851";
 | Name | Type |
 | :------ | :------ |
 | `maxSpeed` | `number` |
+
+
+___
+
+### meshOffset <Score text="meshOffset" /> 
+
+• `get` **meshOffset**(): [`Vector`](mw.Vector.md) 
+
+获取mesh相对角色坐标点的偏移
+
+
+#### Returns
+
+[`Vector`](mw.Vector.md)
+
+mesh相对角色坐标点的偏移
+
+• `set` **meshOffset**(`offset`): `void` 
+
+设置mesh相对角色坐标点的偏移
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `offset` | [`Vector`](mw.Vector.md) |
 
 
 ___
@@ -4707,11 +4907,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Character_MovementDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘2，切换角色的运动时依据的正方向.你将在场景中看到角色不同运动时依据正方向的效果并在控制台看到打印的当前角色的运动轴和依据的正方向.代码如下:
-使用示例:创建一个名为"Example_Character_MoveFacingDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色的运动面朝方向.你将在场景中看到角色不同运动面朝方向的效果并在控制台看到打印的当前角色的运动轴和面朝方向.代码如下:
+使用示例:创建一个名为"Example_Character_MovementDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，切换角色的运动时依据的正方向.你将在场景中看到角色不同运动时依据正方向的效果并在控制台看到打印的当前角色的运动轴和依据的正方向.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_MoveFacingDirection extends Script {
+export default class Example_Character_MovementDirection extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -4760,10 +4959,10 @@ export default class Example_Character_MoveFacingDirection extends Script {
 
 :::
 
-使用示例:创建一个名为"Example_Character_MoveFacingDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色的运动面朝方向.你将在场景中看到角色不同运动面朝方向的效果并在控制台看到打印的当前角色的运动轴和面朝方向.代码如下:
+使用示例:创建一个名为"Example_Character_MovementDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，切换角色的运动时依据的正方向.你将在场景中看到角色不同运动时依据正方向的效果并在控制台看到打印的当前角色的运动轴和依据的正方向.代码如下:
 ```ts
 @Core.Class
-export default class Example_Character_MoveFacingDirection extends Script {
+export default class Example_Character_MovementDirection extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -5014,7 +5213,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -5120,7 +5319,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -5441,9 +5640,9 @@ export default class Example_Character_IsMoving extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -5503,9 +5702,9 @@ export default class Example_Character_IsMoving extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -5557,178 +5756,6 @@ ___
 
 ___
 
-### style <Score text="style" /> 
-
-• `get` **style**(): [`StyleConfig`](mw.StyleConfig.md) 
-
-角色外观
-
-
-::: warning Precautions
-
-当前角色持有的外观数据，数据保存的是引用。
-
-:::
-
-使用示例:创建一个名为"Example_Character_Style"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
-```ts
-@Core.Class
-export default class Example_Character_Style extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端玩家
-            let myPlayer = Player.localPlayer;
-            // 获取玩家控制角色
-            let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            let defaultStyle = null;
-            // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
-                // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-                // 获取角色默认外观风格
-                defaultStyle = myCharacter.getStyleData();
-            });
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
-                    // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
-                    // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
-                    // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
-                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
-                }
-            });
-            // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
-            });
-            // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
-            });
-        }
-    }
-}
-```
-
-#### Returns
-
-[`StyleConfig`](mw.StyleConfig.md)
-
-___
-
-### styleReady <Score text="styleReady" /> 
-
-• `get` **styleReady**(): `boolean` <Badge type="tip" text="client" />
-
-角色外观准备状态
-
-
-::: warning Precautions
-
-当前角色外观是否准备完毕。true表示准备完毕，false表示未准备好。
-
-:::
-
-使用示例:创建一个名为"Example_Character_StyleReady"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色换装完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
-```ts
-@Core.Class
-export default class Example_Character_StyleReady extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端玩家
-            let myPlayer = Player.localPlayer;
-            // 获取玩家控制角色
-            let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            let defaultStyle = null;
-            // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
-                // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-                // 获取角色默认外观风格
-                defaultStyle = myCharacter.getStyleData();
-            });
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
-                    // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
-                    // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
-                    // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
-                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
-                }
-            });
-            // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
-            });
-            // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
-            });
-        }
-    }
-}
-```
-
-#### Returns
-
-`boolean`
-
-___
-
 ### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): [`Vector`](mw.Vector.md) 
@@ -5766,9 +5793,9 @@ export default class Example_Character_Velocity extends Script {
             // 设置角色摩擦力参数
             myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
             myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，切换角色摩擦力的来源
+            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.separateBrakingFrictionEnabled = !myCharacter.separateBrakingFrictionEnabled;
+                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
             });
         }
     }
@@ -6160,9 +6187,9 @@ preloadAssets = "27704,29052,111662,122953,26168";
 
 ___
 
-### clearStyle <Score text="clearStyle" /> 
+### clearDescription <Score text="clearDescription" /> 
 
-• **clearStyle**(`appearance?`, `slotAndItem?`): `void` 
+• **clearDescription**(`appearance?`, `slotAndDecoration?`): `void` 
 
 清空外观数据
 
@@ -6206,25 +6233,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
@@ -6245,7 +6272,7 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `appearance?` | `boolean` | 是否清空形象数据 default:true |
-| `slotAndItem?` | `boolean` | 是否清空插槽和物品数据 default:true |
+| `slotAndDecoration?` | `boolean` | 是否清空插槽和物品数据 default:true |
 
 
 ___
@@ -6395,7 +6422,7 @@ preloadAssets = "27704,29052,111662,122953,26168";
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `param?` | `Object` | 插槽信息 default:undefined |
+| `param?` | `Object` | 插槽数据 default:null |
 | `param.isDestroy?` | `boolean` | - |
 | `param.slotName?` | [`SlotType`](../enums/mw.SlotType.md) | - |
 
@@ -6491,6 +6518,94 @@ preloadAssets = "27704,29052,111662,122953,26168";
 
 ___
 
+### getDescription <Score text="getDescription" /> 
+
+• **getDescription**(): [`CharacterDescription`](mw.CharacterDescription.md) 
+
+获取外观数据
+
+
+::: warning Precautions
+
+该接口获取角色当前外观数据的拷贝
+
+:::
+
+使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
+```ts
+@Core.Class
+export default class CharacterStyleExample extends Script {
+// 预加载使用到的资源
+@Core.Property()
+preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
+    // 当脚本被实例后，会在第一帧更新前调用此函数
+    protected onStart(): void {
+        // 下列代码仅在客户端执行
+        if(SystemUtil.isClient()) {
+            // 获取当前客户端玩家
+            let myPlayer = Player.localPlayer;
+            // 获取玩家控制角色
+            let myCharacter = myPlayer.character;
+            // 如果玩家外观准备完成挥手，反之摊手
+            if(myCharacter.styleReady) {
+                let animation = myCharacter.loadAnimation("35391");
+                animation.play();
+            } else {
+                let animation = myCharacter.loadAnimation("14521");
+                animation.play();
+            }
+            let defaultStyle = null;
+            // 给【角色换装完成】委托添加函数
+            myCharacter.onStyleCompleted.add(() => {
+                // 播放换装完成特效
+                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                // 获取角色默认外观风格
+                defaultStyle = myCharacter.getStyleData();
+            });
+            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
+            InputUtil.onKeyDown(Type.Keys.One, () => {
+                myCharacter.setDescription(defaultStyle);
+            });
+            // 添加一个按键方法:按下键盘“2”，修改角色外观
+            InputUtil.onKeyDown(Type.Keys.Two, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    // 修改角色style头部:头大小为1.5倍
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
+                    // 修改角色style体型:身高为1.2倍
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
+                    // 修改角色style化妆:腮红为75674
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
+                    // 修改角色style头发:前发为57731，后发为63910
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                }
+            });
+            // 添加一个按键方法:按下键盘“3”，同步角色外观
+            InputUtil.onKeyDown(Type.Keys.Three, () => {
+                myCharacter.syncStyle();
+            });
+            // 添加一个按键方法:按下键盘“4”，清空角色外观
+            InputUtil.onKeyDown(Type.Keys.Four, () => {
+                myCharacter.clearStyle();
+            });
+        }
+    }
+}
+```
+
+#### Returns
+
+[`CharacterDescription`](mw.CharacterDescription.md)
+
+角色外观数据的拷贝
+
+___
+
 ### getSlotWorldPosition <Score text="getSlotWorldPosition" /> 
 
 • **getSlotWorldPosition**(`slotName`): [`Vector`](mw.Vector.md) 
@@ -6582,94 +6697,6 @@ preloadAssets = "27704,29052,111662,122953,26168";
 [`Vector`](mw.Vector.md)
 
 坐标位置
-
-___
-
-### getStyleData <Score text="getStyleData" /> 
-
-• **getStyleData**(): [`StyleConfig`](mw.StyleConfig.md) 
-
-获取外观数据
-
-
-::: warning Precautions
-
-该接口获取角色当前外观数据的拷贝
-
-:::
-
-使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
-```ts
-@Core.Class
-export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端玩家
-            let myPlayer = Player.localPlayer;
-            // 获取玩家控制角色
-            let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            let defaultStyle = null;
-            // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
-                // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-                // 获取角色默认外观风格
-                defaultStyle = myCharacter.getStyleData();
-            });
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
-                    // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
-                    // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
-                    // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
-                    // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
-                }
-            });
-            // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
-            });
-            // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
-            });
-        }
-    }
-}
-```
-
-#### Returns
-
-[`StyleConfig`](mw.StyleConfig.md)
-
-角色外观数据的拷贝
 
 ___
 
@@ -6887,16 +6914,16 @@ preloadAssets = "14700,20380";
 
 ___
 
-### loadBasicStance <Score text="loadBasicStance" /> 
+### loadStance <Score text="loadStance" /> 
 
-• **loadBasicStance**(`assetId`): [`BasicStance`](mw.BasicStance.md) 
+• **loadStance**(`assetId`): [`Stance`](mw.Stance.md) 
 
 加载基础姿态
 
 
 ::: warning Precautions
 
-loadBasicStance会将给定的基础姿态加载到角色上，返回一个可播放的BasicStance。
+loadStance会将给定的基础姿态加载到角色上，返回一个可播放的BasicStance。
 
 :::
 
@@ -6916,10 +6943,10 @@ preloadAssets = "39317,30274";
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载一个二次元男性基础姿态
-            let animeManStance = myCharacter.loadBasicStance("39317");
+            let animeManStance = myCharacter.loadStance("39317");
             console.log("animeManStance assetId " + animeManStance.assetId);
             // 给角色加载一个二次元女性基础姿态（默认）,关闭瞄准偏移
-            let animeWomanStance = myCharacter.loadBasicStance("30274");
+            let animeWomanStance = myCharacter.loadStance("30274");
             animeWomanStance.aimOffsetEnabled = false;
             console.log("animeWomanStance assetId " + animeWomanStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放二次元男性基础姿态和二次元女性基础姿态
@@ -6953,22 +6980,22 @@ preloadAssets = "39317,30274";
 
 #### Returns
 
-[`BasicStance`](mw.BasicStance.md)
+[`Stance`](mw.Stance.md)
 
 基础姿态对象
 
 ___
 
-### loadStance <Score text="loadStance" /> 
+### loadSubStance <Score text="loadSubStance" /> 
 
-• **loadStance**(`assetId`): [`Stance`](mw.Stance.md) 
+• **loadSubStance**(`assetId`): [`SubStance`](mw.SubStance.md) 
 
 加载姿态
 
 
 ::: warning Precautions
 
-loadStance会将给定的姿态加载到角色上，返回一个可播放的Stance。Stance可以分上下半身播放。
+loadSubStance会将给定的姿态加载到角色上，返回一个可播放的Stance。Stance可以分上下半身播放。
 
 :::
 
@@ -6988,11 +7015,11 @@ preloadAssets = "94261,14520";
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 给角色加载仅上半身瞄准姿态
-            let aimStance = myCharacter.loadStance("94261");
+            let aimStance = myCharacter.loadSubStance("94261");
             aimStance.blendMode = StanceBlendMode.BlendUpper;
             console.log("aimStance assetId " + aimStance.assetId);
             // 给角色加载仅下半身踢腿姿态
-            let kickStance = myCharacter.loadStance("14520");
+            let kickStance = myCharacter.loadSubStance("14520");
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
@@ -7022,7 +7049,7 @@ preloadAssets = "94261,14520";
 
 #### Returns
 
-[`Stance`](mw.Stance.md)
+[`SubStance`](mw.SubStance.md)
 
 二级姿态对象
 
@@ -7190,38 +7217,16 @@ preloadAssets = "36851";
 
 ___
 
-### setServerMovementEnable <Score text="setServerMovementEnable" /> 
+### setDescription <Score text="setDescription" /> 
 
-• **setServerMovementEnable**(`value`): `void` 
-
-开/关NPC的移动计算
-
-
-::: warning Precautions
-
-(仅适用于反序列化的角色)场景中有大量处于站立不需要移动的ai,设置false减少移动计算带来的性能消耗
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `boolean` |  true 开启角色移动计算 flase 关闭角色移动计算 |
-
-
-___
-
-### setStyle <Score text="setStyle" /> 
-
-• **setStyle**(`data`): `void` 
+• **setDescription**(`data`): `void` 
 
 设置外观数据
 
 
 ::: warning Precautions
 
-setStyle设置角色的外观，可以传入StyleConfig对象 / 角色外观文件的数组 / 挂件数据文件的guid。
+setStyle设置角色的外观，可以传入CharacterDescription对象 / 角色外观文件的数组 / 挂件数据文件的guid。
 
 :::
 
@@ -7258,25 +7263,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
@@ -7296,7 +7301,29 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `data` | `string` \| `string`[] \| [`StyleConfig`](mw.StyleConfig.md) | 外观数据 |
+| `data` | `string` \| `string`[] \| [`CharacterDescription`](mw.CharacterDescription.md) | 外观数据 |
+
+
+___
+
+### setServerMovementEnable <Score text="setServerMovementEnable" /> 
+
+• **setServerMovementEnable**(`value`): `void` 
+
+开/关NPC的移动计算
+
+
+::: warning Precautions
+
+(仅适用于反序列化的角色)场景中有大量处于站立不需要移动的ai,设置false减少移动计算带来的性能消耗
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `boolean` |  true 开启角色移动计算 flase 关闭角色移动计算 |
 
 
 ___
@@ -7343,7 +7370,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -7456,7 +7483,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -7554,7 +7581,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 0;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:键盘“1”，角色切换为飞行
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 myCharacter.switchToFlying();
@@ -7648,7 +7675,7 @@ preloadAssets = "53011,20307";
             boostAnimation.loop = 10;
             let isBoost = false
             // 加载上升姿态
-            let boostStance = myCharacter.loadStance("20307");
+            let boostStance = myCharacter.loadSubStance("20307");
             // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
             InputUtil.onKeyDown(Type.Keys.One, () => {
                 if(flag) {
@@ -7790,9 +7817,9 @@ preloadAssets = "23060,86749";
 
 ___
 
-### syncStyle <Score text="syncStyle" /> 
+### syncDescription <Score text="syncDescription" /> 
 
-• **syncStyle**(): `void` <Badge type="tip" text="client" />
+• **syncDescription**(): `void` <Badge type="tip" text="client" />
 
 同步外观数据
 
@@ -7836,25 +7863,25 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
-                    myCharacter.style.advance.headFeatures.head.headOverallScale = 1.5;
+                    myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
                     // 修改角色style体型:身高为1.2倍
-                    myCharacter.style.advance.bodyFeatures.body.height = 1.2;
+                    myCharacter.description.advance.bodyFeatures.body.height = 1.2;
                     // 修改角色style化妆:腮红为75674
-                    myCharacter.style.advance.makeup.blush.blushStyle = "75674";
+                    myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.style.advance.hair.frontHair.style = "57731";
-                    myCharacter.style.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.style = "57731";
+                    myCharacter.description.advance.hair.backHair.style = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.style.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.style.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.style.advance.clothing.gloves.style = "60384";
-                    myCharacter.style.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
+                    myCharacter.description.advance.clothing.gloves.style = "60384";
+                    myCharacter.description.advance.clothing.shoes.style = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观

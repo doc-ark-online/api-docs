@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / Quaternion
+[Type](../groups/Core.Type.md) / Quaternion
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 

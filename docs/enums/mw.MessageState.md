@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / MessageState
+[Type](../groups/Core.Type.md) / MessageState
 
 # MessageState <Badge type="tip" text="Enumeration" /> <Score text="MessageState" />
 

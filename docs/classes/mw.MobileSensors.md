@@ -15,7 +15,6 @@
 
 | Methods |
 | :-----|
-| **[setPlayerController](mw.MobileSensors.md#setplayercontroller)**(): `void` <br> 设置玩家控制器，使用前需调用一次|
 
 ## Properties
 
@@ -50,11 +49,3 @@ ___
 倾斜
 
 ## Methods
-
-### setPlayerController <Score text="setPlayerController" /> 
-
-• **setPlayerController**(): `void` <Badge type="tip" text="client" />
-
-设置玩家控制器，使用前需调用一次
-
-

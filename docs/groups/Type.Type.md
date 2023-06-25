@@ -1,6 +1,6 @@
-Datatype
+Type
 
-# Datatype <Badge type="tip" text="Groups" /> <Score text="Datatype" />
+# Type <Badge type="tip" text="Groups" /> <Score text="Type" />
 
 ## Table of contents
 | Classes |
@@ -11,6 +11,7 @@ Datatype
 | [Action3](../classes/mw.Action3.md) <br> 三个参数的代理 |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
 | [Delegate](../classes/mw.Delegate.md) <br> 委托 |
+| [Gizmo](../classes/mw.Gizmo.md) <br> Gizmo |
 | [HitResult](../classes/mw.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
 | [LinearColor](../classes/mw.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 |
 | [Matrix3x3](../classes/mw.Matrix3x3.md) <br> 三维矩阵 |
@@ -49,40 +50,37 @@ Datatype
 
 | Modules Type Aliases |
 | :-----|
-| **[BoolResponse](Datatype.Datatype.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
-| **[BroadcastMessageResult](Datatype.Datatype.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
-| **[DecorationTuple](Datatype.Datatype.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
-| **[DownloadDataResponse](Datatype.Datatype.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
-| **[EasingFunction](Datatype.Datatype.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
-| **[EmptyCallback](Datatype.Datatype.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
-| **[HttpResponse](Datatype.Datatype.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
-| **[InterpolationFunction](Datatype.Datatype.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
-| **[LoadAppearanceDataAllCompletedCallback](Datatype.Datatype.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](Datatype.Datatype.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
-| **[MGSEvent](Datatype.Datatype.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
-| **[MGSResponse](Datatype.Datatype.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
-| **[OnArkBalanceUpdated](Datatype.Datatype.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void` <br> 移动状态切换委托|
-| **[OnOrderDelivered](Datatype.Datatype.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
-| **[OnRecvChatMessage](Datatype.Datatype.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
-| **[OnStyleCompleted](Datatype.Datatype.md#onstylecompleted)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
-| **[OnStyleItemsChanged](Datatype.Datatype.md#onstyleitemschanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
-| **[OnViewLayoutSwitched](Datatype.Datatype.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](Datatype.Datatype.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
-| **[ReleaseGameData](Datatype.Datatype.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
-| **[SetAppearanceDataCallback](Datatype.Datatype.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
-| **[StringCallback](Datatype.Datatype.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
-| **[StringResponse](Datatype.Datatype.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
-| **[TeamMatchFailureInfo](Datatype.Datatype.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[TransactionType](Datatype.Datatype.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
-| **[UnknownProps](Datatype.Datatype.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
-| **[UploadDataResponse](Datatype.Datatype.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
-| **[VehicleGearData](Datatype.Datatype.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
-| **[VehicleWheelData](Datatype.Datatype.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
-| **[VoidResponse](Datatype.Datatype.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
-| **[downloadCharacterDataStringCallback](Datatype.Datatype.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
-| **[maskWordCheckResult](Datatype.Datatype.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
-| **[onAppearanceDataChanged](Datatype.Datatype.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
+| **[BoolResponse](Type.Type.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
+| **[BroadcastMessageResult](Type.Type.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
+| **[DecorationTuple](Type.Type.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
+| **[DownloadDataResponse](Type.Type.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[EmptyCallback](Type.Type.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
+| **[HttpResponse](Type.Type.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
+| **[LoadAppearanceDataAllCompletedCallback](Type.Type.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
+| **[LoadDecorationsAllCompletedCallback](Type.Type.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
+| **[MGSEvent](Type.Type.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
+| **[MGSResponse](Type.Type.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnArkBalanceUpdated](Type.Type.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnDescriptionChanged](Type.Type.md#ondescriptionchanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
+| **[OnDescriptionCompleted](Type.Type.md#ondescriptioncompleted)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
+| **[OnMovementStateChanged](Type.Type.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void` <br> 移动状态切换委托|
+| **[OnOrderDelivered](Type.Type.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
+| **[OnRecvChatMessage](Type.Type.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
+| **[OnViewLayoutSwitched](Type.Type.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
+| **[OnViewRefreshed](Type.Type.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
+| **[ReleaseGameData](Type.Type.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
+| **[SetAppearanceDataCallback](Type.Type.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
+| **[StringCallback](Type.Type.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
+| **[StringResponse](Type.Type.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[TeamMatchFailureInfo](Type.Type.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
+| **[TransactionType](Type.Type.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
+| **[UploadDataResponse](Type.Type.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[VehicleGearData](Type.Type.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
+| **[VehicleWheelData](Type.Type.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
+| **[VoidResponse](Type.Type.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
+| **[downloadCharacterDataStringCallback](Type.Type.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
+| **[maskWordCheckResult](Type.Type.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
+| **[onAppearanceDataChanged](Type.Type.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 
 ## Modules Type Aliases
@@ -151,27 +149,6 @@ ___
 `void`
 ___
 
-### EasingFunction <Score text="EasingFunction" /> 
-
-Ƭ **EasingFunction**: (`amount`: `number`) => `number`
-
-#### Type declaration
-
-• (`amount`): `number`
-
-缓动函数的类型定义
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `amount` | `number` |
-
-##### Returns
-
-`number`
-___
-
 ### EmptyCallback <Score text="EmptyCallback" /> 
 
 Ƭ **EmptyCallback**: () => `void`
@@ -214,28 +191,6 @@ Http请求的回调消息格式
 ##### Returns
 
 `void`
-___
-
-### InterpolationFunction <Score text="InterpolationFunction" /> 
-
-Ƭ **InterpolationFunction**: (`v`: `number`[], `k`: `number`) => `number`
-
-#### Type declaration
-
-• (`v`, `k`): `number`
-
-插值函数的类型定义
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `v` | `number`[] |
-| `k` | `number` |
-
-##### Returns
-
-`number`
 ___
 
 ### LoadAppearanceDataAllCompletedCallback <Score text="LoadAppearanceDataAllCompletedCallback" /> 
@@ -338,6 +293,56 @@ ___
 `void`
 ___
 
+### OnDescriptionChanged <Score text="OnDescriptionChanged" /> 
+
+Ƭ **OnDescriptionChanged**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
+
+#### Type declaration
+
+• (`operationCode`, `index`, `value`): `void`
+
+外观加载细节变化委托
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `operationCode` | `number` |
+| `index` | `number` |
+| `value` | `unknown` |
+
+##### Returns
+
+`void`
+___
+
+### OnDescriptionCompleted <Score text="OnDescriptionCompleted" /> 
+
+Ƭ **OnDescriptionCompleted**: (`character`: [`Character`](../classes/mw.Character.md)) => `void`
+
+#### Type declaration
+
+• (`character`): `void`
+
+外观加载完成委托
+
+::: warning Precautions
+
+当角色外观加载完成时执行绑定函数
+
+:::
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `character` | [`Character`](../classes/mw.Character.md) |
+
+##### Returns
+
+`void`
+___
+
 ### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
 
 Ƭ **OnMovementStateChanged**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void`
@@ -400,56 +405,6 @@ ___
 | :------ | :------ |
 | `nCount` | `number` |
 | `ChatContent` | `string` |
-
-##### Returns
-
-`void`
-___
-
-### OnStyleCompleted <Score text="OnStyleCompleted" /> 
-
-Ƭ **OnStyleCompleted**: (`character`: [`Character`](../classes/mw.Character.md)) => `void`
-
-#### Type declaration
-
-• (`character`): `void`
-
-外观加载完成委托
-
-::: warning Precautions
-
-当角色外观加载完成时执行绑定函数
-
-:::
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `character` | [`Character`](../classes/mw.Character.md) |
-
-##### Returns
-
-`void`
-___
-
-### OnStyleItemsChanged <Score text="OnStyleItemsChanged" /> 
-
-Ƭ **OnStyleItemsChanged**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
-
-#### Type declaration
-
-• (`operationCode`, `index`, `value`): `void`
-
-外观加载细节变化委托
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `operationCode` | `number` |
-| `index` | `number` |
-| `value` | `unknown` |
 
 ##### Returns
 
@@ -603,14 +558,6 @@ ___
 ##### Returns
 
 `void`
-___
-
-### UnknownProps <Score text="UnknownProps" /> 
-
-Ƭ **UnknownProps**: `Record`<`string`, `any`\>
-
-补间属性的定义，用户可以自由扩展
-
 ___
 
 ### UploadDataResponse <Score text="UploadDataResponse" /> 

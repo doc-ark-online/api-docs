@@ -4,12 +4,6 @@
 
 GameObject对象池
 
-::: warning Precautions
-
-单例类，请使用getInstance获取对象
-
-:::
-
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 ```ts
 @Core.Class
@@ -22,11 +16,11 @@ export default class GameObjPoolExample extends Script {
     //通过对象池动态创建一个方块
     public createCube(): void {
         const cubeAssetId = "7669";
-        GameObjPool.getInstance().asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
+        GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
             obj.worldLocation = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
-                GameObjPool.getInstance().despawn(obj);
+                GameObjPool.despawn(obj);
             }, 5000);
         });
     }
@@ -37,20 +31,28 @@ export default class GameObjPoolExample extends Script {
 
 | Methods |
 | :-----|
+| **[destroy](mw.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
 | **[asyncSpawn](mw.GameObjPool.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mw.GameObjPoolSourceType.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步生成一个对象|
 | **[clear](mw.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mw.GameObjPoolSourceType.md)): `void` <br> 清除对象池中该GUID对应的所有对象|
 | **[clearAll](mw.GameObjPool.md#clearall)**(): `void` <br> 清除对象池里的所有对象|
 | **[despawn](mw.GameObjPool.md#despawn)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 归还一个对象|
-| **[destroy](mw.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
-| **[find](mw.GameObjPool.md#find)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 找一个对象|
 | **[spawn](mw.GameObjPool.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mw.GameObjPoolSourceType.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 生成一个对象|
-| **[getInstance](mw.GameObjPool.md#getinstance)**(): [`GameObjPool`](mw.GameObjPool.md) <br> 获取对象池全局实例|
 
 ## Methods
 
+### destroy <Score text="destroy" /> 
+
+• **destroy**(): `void` 
+
+销毁对象池全局实例
+
+
+
+___
+
 ### asyncSpawn <Score text="asyncSpawn" /> 
 
-• **asyncSpawn**<`T`\>(`guid`, `type?`): `Promise`<`T`\> 
+• `Static` **asyncSpawn**<`T`\>(`guid`, `type?`): `Promise`<`T`\> 
 
 异步生成一个对象
 
@@ -73,7 +75,7 @@ export default class GameObjPoolExample extends Script {
     //通过对象池动态创建一个方块
     public createCube(): void {
         const cubeAssetId = "7669";
-        GameObjPool.getInstance().asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
+        GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
             obj.worldLocation = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
@@ -107,7 +109,7 @@ ___
 
 ### clear <Score text="clear" /> 
 
-• **clear**(`guid`, `type?`): `void` 
+• `Static` **clear**(`guid`, `type?`): `void` 
 
 清除对象池中该GUID对应的所有对象
 
@@ -130,16 +132,16 @@ export default class GameObjPoolExample extends Script {
         for (let i = 0;
 i < 10;
 i++) {
-            GameObjPool.getInstance().asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
+            GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
-                GameObjPool.getInstance().despawn(obj);
+                GameObjPool.despawn(obj);
 //回收该对象但不隐藏
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 obj.setVisibility(Type.PropertyStatus.On);
             });
         }
         setTimeout(() => {
-            GameObjPool.getInstance().clear(cubeAssetId);
+            GameObjPool.clear(cubeAssetId);
 //将对象池中通过cubeAssetId创建的并且已回收的对象销毁
         }, 5000);
     }
@@ -158,7 +160,7 @@ ___
 
 ### clearAll <Score text="clearAll" /> 
 
-• **clearAll**(): `void` 
+• `Static` **clearAll**(): `void` 
 
 清除对象池里的所有对象
 
@@ -182,11 +184,11 @@ export default class GameObjPoolExample extends Script {
         for (let i = 0;
 i < 10;
 i++) {
-            GameObjPool.getInstance().asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
+            GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 if (i <= 5) return;
 //只回收前5个方块
-                GameObjPool.getInstance().despawn(obj);
+                GameObjPool.despawn(obj);
 //回收该对象但不隐藏
                 obj.worldLocation = new Vector(i * 300, 0, 0);
                 obj.setVisibility(Type.PropertyStatus.On);
@@ -196,18 +198,18 @@ i++) {
         for (let i = 0;
 i < 10;
 i++) {
-            GameObjPool.getInstance().asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
+            GameObjPool.asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
                 obj.worldLocation = new Vector(i * 300, 300, 0);
                 if (i <= 5) return;
 //只回收前5个球体
-                GameObjPool.getInstance().despawn(obj);
+                GameObjPool.despawn(obj);
 //回收该对象但不隐藏
                 obj.worldLocation = new Vector(i * 300, 300, 0);
                 obj.setVisibility(Type.PropertyStatus.On);
             });
         }
         setTimeout(() => {
-            GameObjPool.getInstance().clearAll();
+            GameObjPool.clearAll();
 //将对象池中所有已回收的对象销毁
         }, 5000);
     }
@@ -219,7 +221,7 @@ ___
 
 ### despawn <Score text="despawn" /> 
 
-• **despawn**(`obj`): `void` 
+• `Static` **despawn**(`obj`): `void` 
 
 归还一个对象
 
@@ -236,11 +238,11 @@ export default class GameObjPoolExample extends Script {
     //通过对象池动态创建一个方块
     public createCube(): void {
         const cubeAssetId = "7669";
-        GameObjPool.getInstance().asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
+        GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
             obj.worldLocation = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
-                GameObjPool.getInstance().despawn(obj);
+                GameObjPool.despawn(obj);
             }, 5000);
         });
     }
@@ -256,40 +258,9 @@ export default class GameObjPoolExample extends Script {
 
 ___
 
-### destroy <Score text="destroy" /> 
-
-• **destroy**(): `void` 
-
-销毁对象池全局实例
-
-
-
-___
-
-### find <Score text="find" /> 
-
-• **find**(`name`): [`GameObject`](mw.GameObject.md) 
-
-找一个对象
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` |  对象名 |
-
-#### Returns
-
-[`GameObject`](mw.GameObject.md)
-
-对象
-
-___
-
 ### spawn <Score text="spawn" /> 
 
-• **spawn**<`T`\>(`guid`, `type?`): `T` 
+• `Static` **spawn**<`T`\>(`guid`, `type?`): `T` 
 
 生成一个对象
 
@@ -338,18 +309,3 @@ export default class GameObjPoolExample extends Script {
 `T`
 
 生成的对象
-
-___
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**(): [`GameObjPool`](mw.GameObjPool.md) 
-
-获取对象池全局实例
-
-
-#### Returns
-
-[`GameObjPool`](mw.GameObjPool.md)
-
-对象池全局实例

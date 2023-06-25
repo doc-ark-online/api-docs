@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / BasePanel
+[Ui](../groups/Core.Ui.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 

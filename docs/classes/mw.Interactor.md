@@ -56,15 +56,13 @@ export default class InteractorSample extends Script {
 | Properties |
 | :-----|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
-| **[scriptNumberPropPathMap](mw.GameObject.md#scriptnumberproppathmap)**: `any` <br> |
-| **[scriptPropPathNumberMap](mw.GameObject.md#scriptproppathnumbermap)**: `any` <br> |
 :::
 
 
 | Accessors |
 | :-----|
-| **[slot](mw.Interactor.md#slot)**(): [`InteractiveSlot`](../enums/mw.InteractiveSlot.md) <br> 交互物插槽|
-| **[stance](mw.Interactor.md#stance)**(): `string` <br> 交互动画姿态资源 id|
+| **[animationId](mw.Interactor.md#animationid)**(): `string` <br> 交互动画资源 id|
+| **[slot](mw.Interactor.md#slot)**(): [`SlotType`](../enums/mw.SlotType.md) <br> 交互物插槽|
 | **[status](mw.Interactor.md#status)**(): `boolean` <br> 该交互物的交互状态|
 
 
@@ -88,9 +86,9 @@ export default class InteractorSample extends Script {
 
 | Methods |
 | :-----|
-| **[end](mw.Interactor.md#end)**(`[end](mw.Interactor.md#end)Loc?`, `[end](mw.Interactor.md#end)Rot?`, `newStance?`: `string`): `boolean` <br> 结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
+| **[end](mw.Interactor.md#end)**(`position?`: [`Vector`](mw.Vector.md), `rotation?`: [`Rotation`](mw.Rotation.md), `animationId?`: `string`): `boolean` <br> 结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
 | **[getCurrentCharacter](mw.Interactor.md#getcurrentcharacter)**(): [`Character`](mw.Character.md) <br> 获取正在交互的角色|
-| **[start](mw.Interactor.md#start)**(`newCharObj`: [`Character`](mw.Character.md), `newSlot?`: [`InteractiveSlot`](../enums/mw.InteractiveSlot.md), `newStance?`: `string`): `boolean` <br> 开始交互|
+| **[start](mw.Interactor.md#start)**(`character`: [`Character`](mw.Character.md), `slot?`: [`SlotType`](../enums/mw.SlotType.md), `animationId?`: `string`): `boolean` <br> 开始交互|
 
 
 ::: details 点击查看继承
@@ -162,17 +160,39 @@ ___
 :::
 
 ## Accessors
+
+### animationId <Score text="animationId" /> 
+
+• `get` **animationId**(): `string`
+
+交互动画资源 id
+
+#### Returns
+
+`string`
+
+• `set` **animationId**(`assetGuid`): `void`
+
+交互动画资源 id
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `assetGuid` | `string` |
+
+
 ___
 
 ### slot <Score text="slot" /> 
 
-• `get` **slot**(): [`InteractiveSlot`](../enums/mw.InteractiveSlot.md)
+• `get` **slot**(): [`SlotType`](../enums/mw.SlotType.md)
 
 交互物插槽
 
 #### Returns
 
-[`InteractiveSlot`](../enums/mw.InteractiveSlot.md)
+[`SlotType`](../enums/mw.SlotType.md)
 
 • `set` **slot**(`value`): `void`
 
@@ -182,30 +202,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`InteractiveSlot`](../enums/mw.InteractiveSlot.md) |
-
-
-___
-
-### stance <Score text="stance" /> 
-
-• `get` **stance**(): `string`
-
-交互动画姿态资源 id
-
-#### Returns
-
-`string`
-
-• `set` **stance**(`assetGuid`): `void`
-
-交互动画姿态资源 id
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `assetGuid` | `string` |
+| `value` | [`SlotType`](../enums/mw.SlotType.md) |
 
 
 ___
@@ -226,7 +223,7 @@ ___
 
 ### end <Score text="end" /> 
 
-• **end**(`endLoc?`, `endRot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+• **end**(`position?`, `rotation?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
 
 结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
 
@@ -236,9 +233,9 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `endLoc?` | [`Vector`](mw.Vector.md) |  结束位置 default: 玩家开始交互前的坐标为准 |
-| `endRot?` | [`Rotation`](mw.Rotation.md) |  结束旋转量 default: 玩家开始交互前的旋转为准，如果玩家开始前的姿态是倾斜的，内部不会纠正 |
-| `newStance?` | `string` |  新姿态，default: 以属性玩家开始交互前的姿态为准 |
+| `position?` | [`Vector`](mw.Vector.md) |  结束位置 default: 玩家开始交互前的坐标为准 |
+| `rotation?` | [`Rotation`](mw.Rotation.md) |  结束旋转量 default: 玩家开始交互前的旋转为准，如果玩家开始前的姿态是倾斜的，内部不会纠正 |
+| `animationId?` | `string` |  新姿态，default: 以属性玩家开始交互前的姿态为准 |
 
 #### Returns
 
@@ -280,7 +277,7 @@ ___
 
 ### start <Score text="start" /> 
 
-• **start**(`newCharObj`, `newSlot?`, `newStance?`): `boolean` <Badge type="tip" text="other" />
+• **start**(`character`, `slot?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
 
 开始交互
 
@@ -323,9 +320,9 @@ export default class InteractorStartEndSample extends Script {
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `newCharObj` | [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
-| `newSlot?` | [`InteractiveSlot`](../enums/mw.InteractiveSlot.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
-| `newStance?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
+| `character` | [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
+| `slot?` | [`SlotType`](../enums/mw.SlotType.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
+| `animationId?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
 
 #### Returns
 

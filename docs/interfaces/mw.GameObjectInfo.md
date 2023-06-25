@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / GameObjectInfo
+[Type](../groups/Core.Type.md) / GameObjectInfo
 
 # GameObjectInfo <Badge type="tip" text="Interface" /> <Score text="GameObjectInfo" />
 

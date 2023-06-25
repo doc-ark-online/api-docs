@@ -163,10 +163,8 @@ export default class HotWeaponSample1 extends Script {
 | **[aimComponent](mw.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](mw.HotWeaponAimComponent.md) <br> 瞄准功能。使用示例见类 HotWeaponAimComponent|
 | **[fireComponent](mw.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](mw.HotWeaponFireComponent.md) <br> 射击功能。使用示例见类 HotWeaponFireComponent|
 | **[loadComponent](mw.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](mw.HotWeaponLoadComponent.md) <br> 上膛功能。使用示例见类 HotWeaponLoadComponent|
-| **[onEquippedClient](mw.HotWeapon.md#onequippedclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 客户端装备时执行绑定函数。使用示例见属性 onEquippedServer|
-| **[onEquippedServer](mw.HotWeapon.md#onequippedserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
-| **[onUnequippedClient](mw.HotWeapon.md#onunequippedclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端卸载时执行绑定函数。使用示例见属性 onEquippedServer|
-| **[onUnequippedServer](mw.HotWeapon.md#onunequippedserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数。使用示例见属性 onEquippedServer|
+| **[onEquipped](mw.HotWeapon.md#onequipped)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
+| **[onUnequipped](mw.HotWeapon.md#onunequipped)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
 | **[recoilForceComponent](mw.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md) <br> 后坐力功能。使用示例见类 HotWeaponRecoilForceComponent|
 | **[reloadComponent](mw.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](mw.HotWeaponReloadComponent.md) <br> 换弹功能。使用示例见类 HotWeaponReloadComponent|
 
@@ -175,18 +173,16 @@ export default class HotWeaponSample1 extends Script {
 | Properties |
 | :-----|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
-| **[scriptNumberPropPathMap](mw.GameObject.md#scriptnumberproppathmap)**: `any` <br> |
-| **[scriptPropPathNumberMap](mw.GameObject.md#scriptproppathnumbermap)**: `any` <br> |
 :::
 
 
 | Accessors |
 | :-----|
-| **[accuracyOfFireEnable](mw.HotWeapon.md#accuracyoffireenable)**(): `boolean` <br> 是否开启了射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例|
-| **[aimEnable](mw.HotWeapon.md#aimenable)**(): `boolean` <br> 是否开启了瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例|
-| **[loadEnable](mw.HotWeapon.md#loadenable)**(): `boolean` <br> 是否开启了上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例|
-| **[recoilForceEnable](mw.HotWeapon.md#recoilforceenable)**(): `boolean` <br> 是否开启了后坐力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例|
-| **[reloadEnable](mw.HotWeapon.md#reloadenable)**(): `boolean` <br> 是否开启了换弹组件。启用/关闭换弹组件示例代码见类 HotWeaponReloadComponent 使用示例|
+| **[accuracyOfFireEnabled](mw.HotWeapon.md#accuracyoffireenabled)**(): `boolean` <br> 是否开启了射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| **[aimEnabled](mw.HotWeapon.md#aimenabled)**(): `boolean` <br> 是否开启了瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例|
+| **[loadEnabled](mw.HotWeapon.md#loadenabled)**(): `boolean` <br> 是否开启了上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例|
+| **[recoilForceEnabled](mw.HotWeapon.md#recoilforceenabled)**(): `boolean` <br> 是否开启了后坐力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例|
+| **[reloadEnabled](mw.HotWeapon.md#reloadenabled)**(): `boolean` <br> 是否开启了换弹组件。启用/关闭换弹组件示例代码见类 HotWeaponReloadComponent 使用示例|
 
 
 ::: details 点击查看继承
@@ -212,19 +208,18 @@ export default class HotWeaponSample1 extends Script {
 | **[breakLoad](mw.HotWeapon.md#breakload)**(): `void` <br> 打断上膛。使用示例见方法 reload 使用示例|
 | **[breakReload](mw.HotWeapon.md#breakreload)**(): `void` <br> 打断换弹。使用示例见方法 reload 使用示例|
 | **[cloneComponentsData](mw.HotWeapon.md#clonecomponentsdata)**(`otherHotWeapon`: [`HotWeapon`](mw.HotWeapon.md)): `void` <br> 从传入的热武器逻辑对象中拷贝所有组件数据|
-| **[equipment](mw.HotWeapon.md#equipment)**(`character`: [`Character`](mw.Character.md), `slotName`: `string`): `void` <br> 装备热武器到目标角色的指定插槽位置|
+| **[equip](mw.HotWeapon.md#equip)**(`character`: [`Character`](mw.Character.md), `slotName`: [`SlotType`](../enums/mw.SlotType.md)): `void` <br> 装备热武器到目标角色的指定插槽位置|
 | **[getBulletLocWhileSpawnOnScreenCenter](mw.HotWeapon.md#getbulletlocwhilespawnonscreencenter)**(): [`Vector`](mw.Vector.md) <br> 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location|
 | **[getCurrentOwner](mw.HotWeapon.md#getcurrentowner)**(): [`Character`](mw.Character.md) <br> 获取当前热武器的所有者|
 | **[getCurrentState](mw.HotWeapon.md#getcurrentstate)**(): [`HotWeaponState`](../enums/mw.HotWeaponState.md) <br> 获取当前热武器状态|
 | **[getDefaultCrossHairSize](mw.HotWeapon.md#getdefaultcrosshairsize)**(`maxShootRange`: `number`): `number` <br> 传入Player和最大射程，获取默认准星大小|
 | **[getShootDirWithDispersion](mw.HotWeapon.md#getshootdirwithdispersion)**(`StartLoc`: [`Vector`](mw.Vector.md), `ShootRange`: `number`): [`Vector`](mw.Vector.md) <br> 非屏幕中心生成子弹模式下，获取子弹飞行方向|
-| **[getTransformForFire](mw.HotWeapon.md#gettransformforfire)**(`ShootRange`: `number`): [`Transform`](mw.Transform.md) <br> 获取开火的Transform|
 | **[load](mw.HotWeapon.md#load)**(): `void` <br> 上膛|
 | **[reload](mw.HotWeapon.md#reload)**(`bulletSize`: `number`): `void` <br> 换弹|
 | **[setCurrentFireModel](mw.HotWeapon.md#setcurrentfiremodel)**(`FireMode`: [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)): `void` <br> 切换设置当前开火模式|
 | **[startFire](mw.HotWeapon.md#startfire)**(): `void` <br> 开火|
 | **[stopFire](mw.HotWeapon.md#stopfire)**(): `void` <br> 停止开火。使用示例见方法 startFire 使用示例|
-| **[unequipHotWeapon](mw.HotWeapon.md#unequiphotweapon)**(): `void` <br> 卸载热武器。使用示例见方法 equipment|
+| **[unequip](mw.HotWeapon.md#unequip)**(): `void` <br> 卸载热武器。使用示例见方法 equipment|
 
 
 ::: details 点击查看继承
@@ -301,17 +296,9 @@ ___
 
 ___
 
-### onEquippedClient <Score text="onEquippedClient" /> 
+### onEquipped <Score text="onEquipped" /> 
 
-• **onEquippedClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
-
-客户端装备时执行绑定函数。使用示例见属性 onEquippedServer
-
-___
-
-### onEquippedServer <Score text="onEquippedServer" /> 
-
-• **onEquippedServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
+• **onEquipped**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
 
 服务器装备时执行绑定函数
 
@@ -324,11 +311,11 @@ export default class HotWeaponSample2 extends Script {
         const hotWeapon = this.gameObject as HotWeapon;
 
         if (SystemUtil.isServer()) {
-            hotWeapon.onEquippedServer.add((owner) => { console.log("热武器装备好了后会在服务器端触发回调") });
-            hotWeapon.onUnequippedServer.add(() => { console.log("onUnequippedServer") });
+            hotWeapon.onEquipped.add((owner) => { console.log("热武器装备好了后会在服务器端触发回调") });
+            hotWeapon.onUnequipped.add(() => { console.log("onUnequippedServer") });
         } else if (SystemUtil.isClient()) {
-            hotWeapon.onEquippedClient.add(() => { console.log("onEquippedClient") });
-            hotWeapon.onUnequippedClient.add(() => { console.log("onUnequippedClient") });
+            hotWeapon.onEquipped.add(() => { console.log("onEquipped Client") });
+            hotWeapon.onUnequipped.add(() => { console.log("onUnequipped Client") });
         }
     }
 }
@@ -336,19 +323,11 @@ export default class HotWeaponSample2 extends Script {
 
 ___
 
-### onUnequippedClient <Score text="onUnequippedClient" /> 
+### onUnequipped <Score text="onUnequipped" /> 
 
-• **onUnequippedClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onUnequipped**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端卸载时执行绑定函数。使用示例见属性 onEquippedServer
-
-___
-
-### onUnequippedServer <Score text="onUnequippedServer" /> 
-
-• **onUnequippedServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-服务器卸载时执行绑定函数。使用示例见属性 onEquippedServer
+服务器卸载时执行绑定函数。使用示例见属性 onEquipped
 
 ___
 
@@ -368,9 +347,9 @@ ___
 
 ## Accessors
 
-### accuracyOfFireEnable <Score text="accuracyOfFireEnable" /> 
+### accuracyOfFireEnabled <Score text="accuracyOfFireEnabled" /> 
 
-• `get` **accuracyOfFireEnable**(): `boolean` 
+• `get` **accuracyOfFireEnabled**(): `boolean` 
 
 是否开启了射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例
 
@@ -381,7 +360,7 @@ ___
 
 是否开启了射击精度组件
 
-• `set` **accuracyOfFireEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
+• `set` **accuracyOfFireEnabled**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例
 
@@ -401,9 +380,9 @@ ___
 
 ___
 
-### aimEnable <Score text="aimEnable" /> 
+### aimEnabled <Score text="aimEnabled" /> 
 
-• `get` **aimEnable**(): `boolean` 
+• `get` **aimEnabled**(): `boolean` 
 
 是否开启了瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例
 
@@ -414,7 +393,7 @@ ___
 
 是否开启了瞄准组件
 
-• `set` **aimEnable**(`value`): `void` <Badge type="tip" text="server" />
+• `set` **aimEnabled**(`value`): `void` <Badge type="tip" text="server" />
 
 设置是否开启瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例
 
@@ -434,9 +413,9 @@ ___
 
 ___
 
-### loadEnable <Score text="loadEnable" /> 
+### loadEnabled <Score text="loadEnabled" /> 
 
-• `get` **loadEnable**(): `boolean` 
+• `get` **loadEnabled**(): `boolean` 
 
 是否开启了上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例
 
@@ -447,7 +426,7 @@ ___
 
 是否开启了上膛组件
 
-• `set` **loadEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
+• `set` **loadEnabled**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例
 
@@ -467,9 +446,9 @@ ___
 
 ___
 
-### recoilForceEnable <Score text="recoilForceEnable" /> 
+### recoilForceEnabled <Score text="recoilForceEnabled" /> 
 
-• `get` **recoilForceEnable**(): `boolean` 
+• `get` **recoilForceEnabled**(): `boolean` 
 
 是否开启了后坐力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -480,7 +459,7 @@ ___
 
 是否开启了后坐力组件
 
-• `set` **recoilForceEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
+• `set` **recoilForceEnabled**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启后座力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -500,9 +479,9 @@ ___
 
 ___
 
-### reloadEnable <Score text="reloadEnable" /> 
+### reloadEnabled <Score text="reloadEnabled" /> 
 
-• `get` **reloadEnable**(): `boolean` 
+• `get` **reloadEnabled**(): `boolean` 
 
 是否开启了换弹组件。启用/关闭换弹组件示例代码见类 HotWeaponReloadComponent 使用示例
 
@@ -513,7 +492,7 @@ ___
 
 是否开启了换弹组件
 
-• `set` **reloadEnable**(`isEnabled`): `void` <Badge type="tip" text="server" />
+• `set` **reloadEnabled**(`isEnabled`): `void` <Badge type="tip" text="server" />
 
 设置是否开启换弹组件。启用/关闭后坐力组件示例代码见类 HotWeaponReloadComponent 使用示例
 
@@ -579,9 +558,9 @@ ___
 
 ___
 
-### equipment <Score text="equipment" /> 
+### equip <Score text="equip" /> 
 
-• **equipment**(`character`, `slotName`): `void` <Badge type="tip" text="other" />
+• **equip**(`character`, `slotName`): `void` <Badge type="tip" text="other" />
 
 装备热武器到目标角色的指定插槽位置
 
@@ -625,7 +604,7 @@ export default class HotWeaponSample7 extends Script {
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `character` | [`Character`](mw.Character.md) |  该武器的装备对象 default: |
-| `slotName` | `string` |  要装备的插槽名称 default: |
+| `slotName` | [`SlotType`](../enums/mw.SlotType.md) |  要装备的插槽名称 default: |
 
 
 ___
@@ -791,49 +770,6 @@ ___
 
 ___
 
-### getTransformForFire <Score text="getTransformForFire" /> 
-
-• **getTransformForFire**(`ShootRange`): [`Transform`](mw.Transform.md) <Badge type="tip" text="client" />
-
-获取开火的Transform
-
-
-::: warning Precautions
-
-todo Need Completed
-
-:::
-
-使用示例: 创建一个名为"HotWeaponSample4"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
-```ts
-@Core.Class
-export default class HotWeaponSample4 extends Script {
-    protected onStart(): void {
-        // 构造
-        const hotWeapon = this.gameObject as HotWeapon;
-        if (SystemUtil.isClient()) {
-            // 传入射程，得到开火的Transform
-            const fireTarget = hotWeapon.getTransformForFire(1000)
-            // 省略：依据开火的Transform信息，自行发射子弹
-        }
-    }
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ShootRange` | `number` |  最大射程 default: |
-
-#### Returns
-
-[`Transform`](mw.Transform.md)
-
-生成子弹的Transform
-
-___
-
 ### load <Score text="load" /> 
 
 • **load**(): `void` <Badge type="tip" text="other" />
@@ -969,9 +905,9 @@ ___
 
 ___
 
-### unequipHotWeapon <Score text="unequipHotWeapon" /> 
+### unequip <Score text="unequip" /> 
 
-• **unequipHotWeapon**(): `void` <Badge type="tip" text="other" />
+• **unequip**(): `void` <Badge type="tip" text="other" />
 
 卸载热武器。使用示例见方法 equipment
 

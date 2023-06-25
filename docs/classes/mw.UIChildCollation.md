@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UIChildCollation
+[Ui](../groups/Core.Ui.md) / UIChildCollation
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 

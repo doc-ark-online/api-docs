@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UIBehavior
+[Ui](../groups/Core.Ui.md) / UIBehavior
 
 # UIBehavior <Badge type="tip" text="Class" /> <Score text="UIBehavior" />
 
@@ -7,10 +7,6 @@ UI的驱动脚本基类
 ## Hierarchy
 
 - **`UIBehavior`**
-
-  ↳ [`IItemView`](../interfaces/mw.IItemView.md)
-
-  ↳ [`IPanelView`](../interfaces/mw.IPanelView.md)
 
   ↳ [`BaseView`](mw.BaseView.md)
 

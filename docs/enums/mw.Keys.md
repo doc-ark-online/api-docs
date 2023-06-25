@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / Keys
+[Type](../groups/Core.Type.md) / Keys
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 

@@ -92,7 +92,7 @@ class PlayerModuleData extends Subdata {
 
 ## Hierarchy
 
-- [`NetObjectS`](mw.NetObjectS.md)<`T`\>
+- `NetObjectS`<`T`\>
 
   ↳ **`ModuleS`**
 
@@ -104,17 +104,9 @@ class PlayerModuleData extends Subdata {
 | :-----|
 | **[currentData](mw.ModuleS.md#currentdata)**(): `S` <br> 调用服务器方法的玩家的DataOwner|
 
-
-::: details 点击查看继承
-| Accessors |
-| :-----|
-| **[currentPlayer](mw.NetObjectS.md#currentplayer)**(): [`Player`](mw.Player.md) <br> 调用服务器方法的玩家|
-| **[currentUserId](mw.NetObjectS.md#currentuserid)**(): `string` <br> 获取调用服务器方法的玩家userId|
-:::
-
-
 | Methods |
 | :-----|
+| **[getPlayerData](mw.ModuleS.md#getplayerdata)**(`player`: `string` \): `S` <br> 获取指定玩家的本模块数据|
 | **[onAwake](mw.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](mw.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
 | **[onExecute](mw.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
@@ -123,15 +115,6 @@ class PlayerModuleData extends Subdata {
 | **[onPlayerLeft](mw.ModuleS.md#onplayerleft)**(`player`: [`Player`](mw.Player.md)): `void` <br> 生命周期方法-玩家离开房间|
 | **[onStart](mw.ModuleS.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
 | **[onUpdate](mw.ModuleS.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
-
-
-::: details 点击查看继承
-| Methods |
-| :-----|
-| **[getAllClient](mw.NetObjectS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
-| **[getClient](mw.NetObjectS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
-:::
-
 
 ### currentData <Score text="currentData" /> 
 
@@ -149,8 +132,27 @@ class PlayerModuleData extends Subdata {
 
 `S`
 
-
 ## Methods
+
+### getPlayerData <Score text="getPlayerData" /> 
+
+• `Protected` **getPlayerData**(`player`): `S` <Badge type="tip" text="server" />
+
+获取指定玩家的本模块数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | `string` \| `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家userId\|目标玩家instanceId |
+
+#### Returns
+
+`S`
+
+数据
+
 ___
 
 ### onAwake <Score text="onAwake" /> 

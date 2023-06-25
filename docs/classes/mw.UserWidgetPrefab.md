@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UserWidgetPrefab
+[Ui](../groups/Core.Ui.md) / UserWidgetPrefab
 
 # UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 

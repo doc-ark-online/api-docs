@@ -1,6 +1,6 @@
-[Avatar](../groups/Core.Avatar.md) / AttachmentArray
+[Avatar](../groups/Core.Avatar.md) / CharacterDecoration
 
-# AttachmentArray <Badge type="tip" text="Class" /> <Score text="AttachmentArray" />
+# CharacterDecoration <Badge type="tip" text="Class" /> <Score text="CharacterDecoration" />
 
 单个插槽对应的挂件物体数组
 
@@ -8,7 +8,7 @@
 
 - `Array`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\>
 
-  ↳ **`AttachmentArray`**
+  ↳ **`CharacterDecoration`**
 
 ## Table of contents
 
@@ -17,13 +17,13 @@
 
 | Methods |
 | :-----|
-| **[add](mw.AttachmentArray.md#add)**(`val`: `Object`): `void` <br> 向当前外观插槽中添加一个挂件|
-| **[clear](mw.AttachmentArray.md#clear)**(`isDestroy?`: `boolean`): `void` <br> 清空当前外观插槽的所有挂件|
-| **[delete](mw.AttachmentArray.md#delete)**(`attachmentGameObject`: [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void` <br> 从当前插槽中删除一个挂件|
+| **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string` \, `attachmentOffset?`: [`Transform`](mw.Transform.md)): `void` <br> 向当前外观插槽中添加一个挂件|
+| **[clear](mw.CharacterDecoration.md#clear)**(`isDestroy?`: `boolean`): `void` <br> 清空当前外观插槽的所有挂件|
+| **[delete](mw.CharacterDecoration.md#delete)**(`attachmentGameObject`: [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void` <br> 从当前插槽中删除一个挂件|
 
 ### add <Score text="add" /> 
 
-• **add**(`val`): `void` 
+• **add**(`decoration`, `attachmentOffset?`): `void` 
 
 向当前外观插槽中添加一个挂件
 
@@ -65,27 +65,27 @@ preloadAssets = "14521,35391,161245,60858";
             let defaultStyle = myCharacter.getStyleData();
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
                 }
             });
             // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
             InputUtil.onKeyDown(Type.Keys.Three, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
                     }
                 }
             });
             // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
             InputUtil.onKeyDown(Type.Keys.Four, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
                 }
             });
         }
@@ -97,10 +97,8 @@ preloadAssets = "14521,35391,161245,60858";
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `val` | `Object` | 挂件 |
-| `val.attachmentAssetId` | `string` | - |
-| `val.attachmentGameObject?` | [`GameObject`](mw.GameObject.md) | - |
-| `val.attachmentOffset?` | [`Transform`](mw.Transform.md) | - |
+| `decoration` | `string` \| [`GameObject`](mw.GameObject.md) | 挂件 |
+| `attachmentOffset?` | [`Transform`](mw.Transform.md) | 挂件transform信息 default:null |
 
 
 ___
@@ -143,27 +141,27 @@ preloadAssets = "14521,35391,161245,60858";
             let defaultStyle = myCharacter.getStyleData();
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
                 }
             });
             // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
             InputUtil.onKeyDown(Type.Keys.Three, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
                     }
                 }
             });
             // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
             InputUtil.onKeyDown(Type.Keys.Four, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV4) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
                 }
             });
         }
@@ -175,7 +173,7 @@ preloadAssets = "14521,35391,161245,60858";
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `isDestroy?` | `boolean` | 是否删除 default:false |
+| `isDestroy?` | `boolean` | 是否销毁 default:false |
 
 
 ___
@@ -218,27 +216,27 @@ preloadAssets = "14521,35391,161245,60858";
             let defaultStyle = myCharacter.getStyleData();
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
             InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setStyle(defaultStyle);
+                myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
             InputUtil.onKeyDown(Type.Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
                 }
             });
             // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
             InputUtil.onKeyDown(Type.Keys.Three, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
                     }
                 }
             });
             // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
             InputUtil.onKeyDown(Type.Keys.Four, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV3) {
-                    myCharacter.style.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
                 }
             });
         }
@@ -251,5 +249,5 @@ preloadAssets = "14521,35391,161245,60858";
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `attachmentGameObject` | [`GameObject`](mw.GameObject.md) | 挂件 |
-| `isDestroy?` | `boolean` | 是否删除 default:false |
+| `isDestroy?` | `boolean` | 是否销毁 default:false |
 

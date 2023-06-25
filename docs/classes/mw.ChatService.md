@@ -11,13 +11,12 @@
 | Methods |
 | :-----|
 | **[asyncBroadcastMessage](mw.ChatService.md#asyncbroadcastmessage)**(`type`: [`MessageType`](../enums/mw.MessageType.md), `content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <br> 发送富文本消息到聊天窗口中。|
-| **[getInstance](mw.ChatService.md#getinstance)**(): [`ChatService`](mw.ChatService.md) <br> 获取API实例进行调用|
 
 ## Methods
 
 ### asyncBroadcastMessage <Score text="asyncBroadcastMessage" /> 
 
-• **asyncBroadcastMessage**(`type`, `content`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />
+• `Static` **asyncBroadcastMessage**(`type`, `content`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />
 
 发送富文本消息到聊天窗口中。
 禁止在回调中调用该接口。限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。需要用到富文本格式，富文本全部功能请查看产品手册。
@@ -57,24 +56,3 @@
 `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\>
 
 发送消息的结果
-
-___
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**(): [`ChatService`](mw.ChatService.md) 
-
-获取API实例进行调用
-
-
-::: warning Precautions
-
-只在由233拉起生效
-
-:::
-
-#### Returns
-
-[`ChatService`](mw.ChatService.md)
-
-返回API实例用以调用相关功能函数

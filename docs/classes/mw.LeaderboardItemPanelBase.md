@@ -8,7 +8,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`IItemView`](../interfaces/mw.IItemView.md) |
+| `T` | extends `IItemView` |
 
 ## Hierarchy
 

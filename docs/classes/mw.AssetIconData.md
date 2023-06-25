@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / AssetIconData
+[Ui](../groups/Core.Ui.md) / AssetIconData
 
 # AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 

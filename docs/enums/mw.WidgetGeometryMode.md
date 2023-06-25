@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / WidgetGeometryMode
+[Ui](../groups/Core.Ui.md) / WidgetGeometryMode
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 

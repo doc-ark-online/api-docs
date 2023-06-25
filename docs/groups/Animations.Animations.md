@@ -6,9 +6,9 @@ Animations
 | Classes |
 | :-----|
 | [Animation](../classes/mw.Animation.md) <br> 动画类 |
-| [BasicStance](../classes/mw.BasicStance.md) <br> 基础姿态 |
-| [IStanceBase](../classes/mw.IStanceBase.md) <br> 姿态 |
-| [Stance](../classes/mw.Stance.md) <br> 二级姿态 |
+| [Stance](../classes/mw.Stance.md) <br> 基础姿态 |
+| [StanceBase](../classes/mw.StanceBase.md) <br> 姿态 |
+| [SubStance](../classes/mw.SubStance.md) <br> 二级姿态 |
 
 
 | Enums |

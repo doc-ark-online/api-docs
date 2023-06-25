@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / LanguageType
+[Type](../groups/Core.Type.md) / LanguageType
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 

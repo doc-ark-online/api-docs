@@ -8,7 +8,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`IPanelView`](../interfaces/mw.IPanelView.md) |
+| `T` | extends `IPanelView` |
 
 ## Hierarchy
 
@@ -37,7 +37,7 @@
 | Methods |
 | :-----|
 | **[addField](mw.LeaderboardMainPaneBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPaneBase`](mw.LeaderboardMainPaneBase.md)<`T`\> <br> 添加一个字段|
-| **[creatItem](mw.LeaderboardMainPaneBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<[`IItemView`](../interfaces/mw.IItemView.md)\> <br> 创建用于显示一条排行信息的item子UI|
+| **[creatItem](mw.LeaderboardMainPaneBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<`IItemView`\> <br> 创建用于显示一条排行信息的item子UI|
 | **[onHide](mw.LeaderboardMainPaneBase.md#onhide)**(): `void` <br> 当UI隐藏调用|
 | **[onSelfFieldSet](mw.LeaderboardMainPaneBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置自己的字段内容后调用，需要请复写|
 | **[onShow](mw.LeaderboardMainPaneBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Core.mw.md#leaderboardplayerdata)[]): `void` <br> 当UI显示调用|
@@ -90,14 +90,14 @@ ___
 
 ### creatItem <Score text="creatItem" /> 
 
-• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<[`IItemView`](../interfaces/mw.IItemView.md)\> <Badge type="tip" text="client" />
+• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<`IItemView`\> <Badge type="tip" text="client" />
 
 创建用于显示一条排行信息的item子UI
 
 
 #### Returns
 
-[`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<[`IItemView`](../interfaces/mw.IItemView.md)\>
+[`LeaderboardItemPanelBase`](mw.LeaderboardItemPanelBase.md)<`IItemView`\>
 
 一条排行信息的item子UI
 

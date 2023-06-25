@@ -18,11 +18,11 @@ export default class HotWeaponReloadSample1 extends Script {
             hotWeapon.reloadComponent.reloadDuration = 2;
             hotWeapon.reloadComponent.animationGuid = "4171";
 
-            hotWeapon.reloadComponent.onStartReloadServer.add(() => { console.log("reloadComponent.onStartReloadClient") });
-            hotWeapon.reloadComponent.onEndReloadServer.add(() => { console.log("reloadComponent.onEndReloadClient") });
+            hotWeapon.reloadComponent.onStartReload.add(() => { console.log("reloadComponent.onStartReload Server") });
+            hotWeapon.reloadComponent.onEndReload.add(() => { console.log("reloadComponent.onEndReload Server") });
         } else if (SystemUtil.isClient()) {
-            hotWeapon.reloadComponent.onStartReloadClient.add(() => { console.log("reloadComponent.onStartReloadClient") });
-            hotWeapon.reloadComponent.onEndReloadClient.add(() => { console.log("reloadComponent.onEndReloadClient") });
+            hotWeapon.reloadComponent.onStartReload.add(() => { console.log("reloadComponent.onStartReload Client") });
+            hotWeapon.reloadComponent.onEndReload.add(() => { console.log("reloadComponent.onEndReload Client") });
         }
     }
 }
@@ -32,57 +32,38 @@ export default class HotWeaponReloadSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndReloadClient](mw.HotWeaponReloadComponent.md#onendreloadclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
-| **[onEndReloadServer](mw.HotWeaponReloadComponent.md#onendreloadserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
-| **[onStartReloadClient](mw.HotWeaponReloadComponent.md#onstartreloadclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> [客户端] 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
-| **[onStartReloadServer](mw.HotWeaponReloadComponent.md#onstartreloadserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> [服务端] 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
+| **[onEndReload](mw.HotWeaponReloadComponent.md#onendreload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
+| **[onStartReload](mw.HotWeaponReloadComponent.md#onstartreload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[animationGuid](mw.HotWeaponReloadComponent.md#animationguid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponReloadComponent 使用示例|
+| **[animationAssetId](mw.HotWeaponReloadComponent.md#animationassetid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponReloadComponent 使用示例|
 | **[reloadDuration](mw.HotWeaponReloadComponent.md#reloadduration)**(): `number` <br> 获取换弹时间。使用示例见类 HotWeaponReloadComponent 使用示例|
 
 | Methods |
 | :-----|
-| **[hadAnimationGuid](mw.HotWeaponReloadComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID|
 
 ## Properties
 
-### onEndReloadClient <Score text="onEndReloadClient" /> 
+### onEndReload <Score text="onEndReload" /> 
 
-• **onEndReloadClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndReload**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
-[客户端] 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
-
-___
-
-### onEndReloadServer <Score text="onEndReloadServer" /> 
-
-• **onEndReloadServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-[服务端] 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
+结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
 
 ___
 
-### onStartReloadClient <Score text="onStartReloadClient" /> 
+### onStartReload <Score text="onStartReload" /> 
 
-• **onStartReloadClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartReload**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
-[客户端] 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
-
-___
-
-### onStartReloadServer <Score text="onStartReloadServer" /> 
-
-• **onStartReloadServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-[服务端] 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
+开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
 
 ## Accessors
 
-### animationGuid <Score text="animationGuid" /> 
+### animationAssetId <Score text="animationAssetId" /> 
 
-• `get` **animationGuid**(): `string` 
+• `get` **animationAssetId**(): `string` 
 
 获取绑定的动画GUID。使用示例见类 HotWeaponReloadComponent 使用示例
 
@@ -93,7 +74,7 @@ ___
 
 绑定的动画GUID
 
-• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
+• `set` **animationAssetId**(`GUID`): `void` <Badge type="tip" text="other" />
 
 设置动画 GUID。使用示例见类 HotWeaponReloadComponent 使用示例
 
@@ -141,16 +122,3 @@ ___
 
 
 ## Methods
-
-### hadAnimationGuid <Score text="hadAnimationGuid" /> 
-
-• **hadAnimationGuid**(): `boolean` 
-
-是否有动画GUID
-
-
-#### Returns
-
-`boolean`
-
-是否有动画GUID

@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / MulticastGameObjectDelegate
+[Type](../groups/Core.Type.md) / MulticastGameObjectDelegate
 
 # MulticastGameObjectDelegate <Badge type="tip" text="Class" /> <Score text="MulticastGameObjectDelegate" />
 

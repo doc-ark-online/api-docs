@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / TextCommit
+[Ui](../groups/Core.Ui.md) / TextCommit
 
 # TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 

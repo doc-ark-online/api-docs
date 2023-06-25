@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / TabGroup
+[Ui](../groups/Core.Ui.md) / TabGroup
 
 # TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 

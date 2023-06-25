@@ -97,7 +97,7 @@ class PlayerModuleData extends Subdata {
 
 ## Hierarchy
 
-- [`NetObjectC`](mw.NetObjectC.md)<`T`\>
+- `NetObjectC`<`T`\>
 
   ↳ **`ModuleC`**
 
@@ -108,16 +108,6 @@ class PlayerModuleData extends Subdata {
 | Accessors |
 | :-----|
 | **[data](mw.ModuleC.md#data)**(): `S` <br> currentPlayer的模块数据|
-
-
-::: details 点击查看继承
-| Accessors |
-| :-----|
-| **[currentPlayer](mw.NetObjectC.md#currentplayer)**(): [`Player`](mw.Player.md) <br> 获取当前玩家|
-| **[currentUserId](mw.NetObjectC.md#currentuserid)**(): `string` <br> 获取当前玩家userId|
-| **[server](mw.NetObjectC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
-:::
-
 
 | Methods |
 | :-----|
@@ -137,7 +127,6 @@ currentPlayer的模块数据
 #### Returns
 
 `S`
-
 
 ## Methods
 

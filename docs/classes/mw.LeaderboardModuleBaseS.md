@@ -40,6 +40,7 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
+| **[getPlayerData](mw.ModuleS.md#getplayerdata)**(`player`: `string` \): `S` <br> 获取指定玩家的本模块数据|
 | **[onAwake](mw.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](mw.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
 | **[onExecute](mw.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|

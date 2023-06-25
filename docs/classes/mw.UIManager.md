@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / UIManager
+[Ui](../groups/Core.Ui.md) / UIManager
 
 # UIManager <Badge type="tip" text="Class" /> <Score text="UIManager" />
 

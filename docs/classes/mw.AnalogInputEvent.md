@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / AnalogInputEvent
+[Ui](../groups/Core.Ui.md) / AnalogInputEvent
 
 # AnalogInputEvent <Badge type="tip" text="Class" /> <Score text="AnalogInputEvent" />
 

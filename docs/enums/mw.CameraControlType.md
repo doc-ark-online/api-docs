@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / CameraControlType
+[Ui](../groups/Core.Ui.md) / CameraControlType
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 

@@ -38,26 +38,22 @@ export default class HotWeaponFireSample1 extends Script {
 | Properties |
 | :-----|
 | **[onEndContinuousFireServer](mw.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onEndFireClient](mw.HotWeaponFireComponent.md#onendfireclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onEndFireServer](mw.HotWeaponFireComponent.md#onendfireserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onStartFireClient](mw.HotWeaponFireComponent.md#onstartfireclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onStartFireServer](mw.HotWeaponFireComponent.md#onstartfireserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndFire](mw.HotWeaponFireComponent.md#onendfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onStartFire](mw.HotWeaponFireComponent.md#onstartfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 
 | Accessors |
 | :-----|
-| **[animationGuid](mw.HotWeaponFireComponent.md#animationguid)**(): `string` <br> 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[currentBulletSize](mw.HotWeaponFireComponent.md#currentbulletsize)**(): `number` <br> 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[currentClipSize](mw.HotWeaponFireComponent.md#currentclipsize)**(): `number` <br> 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[currentFireInterval](mw.HotWeaponFireComponent.md#currentfireinterval)**(): `number` <br> 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[currentFireModel](mw.HotWeaponFireComponent.md#currentfiremodel)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) <br> 获取当前的开火模式|
-| **[currentMultipleShot](mw.HotWeaponFireComponent.md#currentmultipleshot)**(): `number` <br> 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[animationAssetId](mw.HotWeaponFireComponent.md#animationassetid)**(): `string` <br> 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[clipSize](mw.HotWeaponFireComponent.md#clipsize)**(): `number` <br> 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[currentBullet](mw.HotWeaponFireComponent.md#currentbullet)**(): `number` <br> 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[fireInterval](mw.HotWeaponFireComponent.md#fireinterval)**(): `number` <br> 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[fireModel](mw.HotWeaponFireComponent.md#firemodel)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) <br> 获取当前的开火模式|
 | **[isFireOnScreenCenter](mw.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[isFullAutoMode](mw.HotWeaponFireComponent.md#isfullautomode)**(): `boolean` <br> 获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[multipleShot](mw.HotWeaponFireComponent.md#multipleshot)**(): `number` <br> 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[offsetOfFireOnScreenCenter](mw.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](mw.Vector.md) <br> 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
 
 | Methods |
 | :-----|
-| **[hadAnimationGuid](mw.HotWeaponFireComponent.md#hadanimationguid)**(): `boolean` <br> 是否有动画GUID。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[isFiring](mw.HotWeaponFireComponent.md#isfiring)**(): `boolean` <br> 获取当前状态下bFiring的值，一般用于处理全自动开火模式下的自动换弹|
 
 ## Properties
@@ -70,41 +66,25 @@ export default class HotWeaponFireSample1 extends Script {
 
 ___
 
-### onEndFireClient <Score text="onEndFireClient" /> 
+### onEndFire <Score text="onEndFire" /> 
 
-• **onEndFireClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-客户端停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
-
-___
-
-### onEndFireServer <Score text="onEndFireServer" /> 
-
-• **onEndFireServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ___
 
-### onStartFireClient <Score text="onStartFireClient" /> 
+### onStartFire <Score text="onStartFire" /> 
 
-• **onStartFireClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-客户端开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
-
-___
-
-### onStartFireServer <Score text="onStartFireServer" /> 
-
-• **onStartFireServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
 ## Accessors
 
-### animationGuid <Score text="animationGuid" /> 
+### animationAssetId <Score text="animationAssetId" /> 
 
-• `get` **animationGuid**(): `string` 
+• `get` **animationAssetId**(): `string` 
 
 绑定的动画GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -115,7 +95,7 @@ ___
 
 绑定的动画 GUID
 
-• `set` **animationGuid**(`GUID`): `void` <Badge type="tip" text="other" />
+• `set` **animationAssetId**(`GUID`): `void` <Badge type="tip" text="other" />
 
 设置动画 GUID。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -130,37 +110,9 @@ ___
 
 ___
 
-### currentBulletSize <Score text="currentBulletSize" /> 
+### clipSize <Score text="clipSize" /> 
 
-• `get` **currentBulletSize**(): `number` 
-
-获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
-
-
-#### Returns
-
-`number`
-
-当前弹夹中子弹数量
-
-• `set` **currentBulletSize**(`value`): `void` <Badge type="tip" text="other" />
-
-设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
-
-调用端自动广播
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  新弹夹中子弹数量 |
-
-
-___
-
-### currentClipSize <Score text="currentClipSize" /> 
-
-• `get` **currentClipSize**(): `number` 
+• `get` **clipSize**(): `number` 
 
 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -171,7 +123,7 @@ ___
 
 当前弹夹容量
 
-• `set` **currentClipSize**(`value`): `void` <Badge type="tip" text="other" />
+• `set` **clipSize**(`value`): `void` <Badge type="tip" text="other" />
 
 设置当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -192,9 +144,37 @@ ___
 
 ___
 
-### currentFireInterval <Score text="currentFireInterval" /> 
+### currentBullet <Score text="currentBullet" /> 
 
-• `get` **currentFireInterval**(): `number` 
+• `get` **currentBullet**(): `number` 
+
+获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
+
+
+#### Returns
+
+`number`
+
+当前弹夹中子弹数量
+
+• `set` **currentBullet**(`value`): `void` <Badge type="tip" text="other" />
+
+设置当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
+
+调用端自动广播
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新弹夹中子弹数量 |
+
+
+___
+
+### fireInterval <Score text="fireInterval" /> 
+
+• `get` **fireInterval**(): `number` 
 
 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -205,7 +185,7 @@ ___
 
 开火间隙
 
-• `set` **currentFireInterval**(`interval`): `void` <Badge type="tip" text="other" />
+• `set` **fireInterval**(`interval`): `void` <Badge type="tip" text="other" />
 
 设置开火间隙。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -226,9 +206,9 @@ ___
 
 ___
 
-### currentFireModel <Score text="currentFireModel" /> 
+### fireModel <Score text="fireModel" /> 
 
-• `get` **currentFireModel**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) 
+• `get` **fireModel**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) 
 
 获取当前的开火模式
 
@@ -238,40 +218,6 @@ ___
 [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)
 
 当前的开火模式
-
-___
-
-### currentMultipleShot <Score text="currentMultipleShot" /> 
-
-• `get` **currentMultipleShot**(): `number` 
-
-获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
-
-
-#### Returns
-
-`number`
-
-一次开火发射的子弹数量
-
-• `set` **currentMultipleShot**(`count`): `void` <Badge type="tip" text="other" />
-
-设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
-
-调用端自动广播
-
-::: warning Precautions
-
-装备热武器前仅服务器调用，装备后双端都可调用
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `count` | `number` |  一次开火发射的子弹数量 |
-
 
 ___
 
@@ -309,28 +255,28 @@ ___
 
 ___
 
-### isFullAutoMode <Score text="isFullAutoMode" /> 
+### multipleShot <Score text="multipleShot" /> 
 
-• `get` **isFullAutoMode**(): `boolean` 
+• `get` **multipleShot**(): `number` 
 
-获取当前状态下 isInFullAuto 的值，一般用于处理全自动开火模式下的自动换弹。使用示例见类 HotWeaponFireComponent 使用示例
+获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 
 #### Returns
 
-`boolean`
+`number`
 
-当前状态下 isInFullAuto
+一次开火发射的子弹数量
 
-• `set` **isFullAutoMode**(`isInFullAuto`): `void` <Badge type="tip" text="other" />
+• `set` **multipleShot**(`count`): `void` <Badge type="tip" text="other" />
 
-设置当前状态下isInFullAuto的值。使用示例见类 HotWeaponFireComponent 使用示例
+设置一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例
 
 调用端自动广播
 
 ::: warning Precautions
 
-一般用于处理全自动开火模式下的自动换弹
+装备热武器前仅服务器调用，装备后双端都可调用
 
 :::
 
@@ -338,7 +284,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `isInFullAuto` | `boolean` |  当前状态下isInFullAuto的值 |
+| `count` | `number` |  一次开火发射的子弹数量 |
 
 
 ___
@@ -376,21 +322,6 @@ ___
 
 
 ## Methods
-
-### hadAnimationGuid <Score text="hadAnimationGuid" /> 
-
-• **hadAnimationGuid**(): `boolean` 
-
-是否有动画GUID。使用示例见类 HotWeaponFireComponent 使用示例
-
-
-#### Returns
-
-`boolean`
-
-是否有动画GUID
-
-___
 
 ### isFiring <Score text="isFiring" /> 
 

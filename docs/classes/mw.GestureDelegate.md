@@ -1,4 +1,4 @@
-[Scripting](../groups/Core.Scripting.md) / GestureDelegate
+[Input](../groups/Core.Input.md) / GestureDelegate
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 

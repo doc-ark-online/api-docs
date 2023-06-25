@@ -1,4 +1,4 @@
-[Others](../groups/Core.Others.md) / Sound
+[Sound](../groups/Core.Sound.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
@@ -68,8 +68,6 @@ export default class SoundExample extends Script {
 | Properties |
 | :-----|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
-| **[scriptNumberPropPathMap](mw.GameObject.md#scriptnumberproppathmap)**: `any` <br> |
-| **[scriptPropPathNumberMap](mw.GameObject.md#scriptproppathnumbermap)**: `any` <br> |
 :::
 
 

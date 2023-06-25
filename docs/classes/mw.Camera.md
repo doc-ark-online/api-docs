@@ -22,8 +22,6 @@
 | Properties |
 | :-----|
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
-| **[scriptNumberPropPathMap](mw.GameObject.md#scriptnumberproppathmap)**: `any` <br> |
-| **[scriptPropPathNumberMap](mw.GameObject.md#scriptproppathnumbermap)**: `any` <br> |
 :::
 
 
@@ -1856,7 +1854,7 @@ export default class CameraExample extends Script {
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `target` | [`GameObject`](mw.GameObject.md) | 目标物体 |
-| `val?` | `Object` | 参数列表 default: lockInterval: 0, lockSpeed: 1.3, lockRange: 100, lockDistance: 1000, lockOffset: Vector.zero, bPause: true, bRotateCameraByYaw: true |
+| `val?` | `Object` | lockInterval,lockSpeed,lockRange,lockDistance,lockOffset,bPause参数集合。 default:null |
 | `val.bPause?` | `boolean` | - |
 | `val.bRotateCameraByPitch?` | `boolean` | - |
 | `val.bRotateCameraByYaw?` | `boolean` | - |

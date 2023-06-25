@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / BaseView
+[Ui](../groups/Core.Ui.md) / BaseView
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 

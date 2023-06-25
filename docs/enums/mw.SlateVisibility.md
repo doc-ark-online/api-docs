@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / SlateVisibility
+[Ui](../groups/Core.Ui.md) / SlateVisibility
 
 # SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 

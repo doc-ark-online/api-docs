@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / PointerEvent
+[Ui](../groups/Core.Ui.md) / PointerEvent
 
 # PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 

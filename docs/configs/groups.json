@@ -1,5 +1,5 @@
 {
-  "Datatype": {
+  "Type": {
     "Interfaces": [
       {
         "file_name": "mw.DelegateInterface.md",
@@ -23,21 +23,6 @@
       }
     ],
     "Modules Type Aliases": [
-      {
-        "file_name": "mw.TweenUtil.md",
-        "file_path": "modules/mw.TweenUtil.md",
-        "name": "EasingFunction"
-      },
-      {
-        "file_name": "mw.TweenUtil.md",
-        "file_path": "modules/mw.TweenUtil.md",
-        "name": "InterpolationFunction"
-      },
-      {
-        "file_name": "mw.TweenUtil.md",
-        "file_path": "modules/mw.TweenUtil.md",
-        "name": "UnknownProps"
-      },
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
@@ -96,6 +81,16 @@
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
+        "name": "OnDescriptionChanged"
+      },
+      {
+        "file_name": "Core.mw.md",
+        "file_path": "modules/Core.mw.md",
+        "name": "OnDescriptionCompleted"
+      },
+      {
+        "file_name": "Core.mw.md",
+        "file_path": "modules/Core.mw.md",
         "name": "OnMovementStateChanged"
       },
       {
@@ -107,16 +102,6 @@
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
         "name": "OnRecvChatMessage"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "OnStyleCompleted"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "OnStyleItemsChanged"
       },
       {
         "file_name": "Core.mw.md",
@@ -328,6 +313,11 @@
         "name": "Vector2"
       },
       {
+        "file_name": "mw.Gizmo.md",
+        "file_path": "classes/mw.Gizmo.md",
+        "name": "Gizmo"
+      },
+      {
         "file_name": "mw.HitResult.md",
         "file_path": "classes/mw.HitResult.md",
         "name": "HitResult"
@@ -508,11 +498,6 @@
         "name": "HotWeaponAimMode"
       },
       {
-        "file_name": "mw.HotWeaponCrossHairType.md",
-        "file_path": "enums/mw.HotWeaponCrossHairType.md",
-        "name": "HotWeaponCrossHairType"
-      },
-      {
         "file_name": "mw.OscillatorWaveform.md",
         "file_path": "enums/mw.OscillatorWaveform.md",
         "name": "OscillatorWaveform"
@@ -563,11 +548,6 @@
         "name": "ProjectileAccelerationEnableMode"
       },
       {
-        "file_name": "mw.InteractiveSlot.md",
-        "file_path": "enums/mw.InteractiveSlot.md",
-        "name": "InteractiveSlot"
-      },
-      {
         "file_name": "mw.CameraProjectionMode.md",
         "file_path": "enums/mw.CameraProjectionMode.md",
         "name": "CameraProjectionMode"
@@ -613,11 +593,6 @@
         "file_name": "mw.HotWeaponReloadComponent.md",
         "file_path": "classes/mw.HotWeaponReloadComponent.md",
         "name": "HotWeaponReloadComponent"
-      },
-      {
-        "file_name": "mw.FireDataInfoForMultiple.md",
-        "file_path": "classes/mw.FireDataInfoForMultiple.md",
-        "name": "FireDataInfoForMultiple"
       },
       {
         "file_name": "mw.Player.md",
@@ -705,11 +680,6 @@
         "name": "HotWeaponFireComponent"
       },
       {
-        "file_name": "mw.GameInitializer.md",
-        "file_path": "classes/mw.GameInitializer.md",
-        "name": "GameInitializer"
-      },
-      {
         "file_name": "mw.SwimmingVolume.md",
         "file_path": "classes/mw.SwimmingVolume.md",
         "name": "SwimmingVolume"
@@ -720,11 +690,6 @@
         "name": "SpringArm"
       },
       {
-        "file_name": "mw.Gizmo.md",
-        "file_path": "classes/mw.Gizmo.md",
-        "name": "Gizmo"
-      },
-      {
         "file_name": "mw.BlockingVolume.md",
         "file_path": "classes/mw.BlockingVolume.md",
         "name": "BlockingVolume"
@@ -732,31 +697,14 @@
     ]
   },
   "Utility": {
-    "Interfaces": [
+    "Modules Type Aliases": [
       {
-        "file_name": "mw.IPanelView.md",
-        "file_path": "interfaces/mw.IPanelView.md",
-        "name": "IPanelView"
-      },
-      {
-        "file_name": "mw.IItemView.md",
-        "file_path": "interfaces/mw.IItemView.md",
-        "name": "IItemView"
-      }
-    ],
-    "Modules Variables": [
-      {
-        "file_name": "mw.TweenUtil.md",
-        "file_path": "modules/mw.TweenUtil.md",
-        "name": "TWEEN"
+        "file_name": "Core.mw.md",
+        "file_path": "modules/Core.mw.md",
+        "name": "LeaderboardPlayerData"
       }
     ],
     "Modules Functions": [
-      {
-        "file_name": "mw.TweenUtil.md",
-        "file_path": "modules/mw.TweenUtil.md",
-        "name": "nextId"
-      },
       {
         "file_name": "mw.MathUtil.md",
         "file_path": "modules/mw.MathUtil.md",
@@ -898,13 +846,6 @@
         "name": "setGlobalOutlineParams"
       }
     ],
-    "Modules Type Aliases": [
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "LeaderboardPlayerData"
-      }
-    ],
     "Enums": [
       {
         "file_name": "mw.GameObjPoolSourceType.md",
@@ -914,14 +855,9 @@
     ],
     "Classes": [
       {
-        "file_name": "mw.InputUtil.md",
-        "file_path": "classes/mw.InputUtil.md",
-        "name": "InputUtil"
-      },
-      {
-        "file_name": "Core.mw.TweenUtil.Group.md",
-        "file_path": "classes/Core.mw.TweenUtil.Group.md",
-        "name": "Group"
+        "file_name": "Core.mw.SystemUtil.SystemUtil.md",
+        "file_path": "classes/Core.mw.SystemUtil.SystemUtil.md",
+        "name": "SystemUtil"
       },
       {
         "file_name": "mw.ModuleManager.md",
@@ -944,19 +880,9 @@
         "name": "ModuleS"
       },
       {
-        "file_name": "Core.mw.TweenUtil.Tween.md",
-        "file_path": "classes/Core.mw.TweenUtil.Tween.md",
-        "name": "Tween"
-      },
-      {
-        "file_name": "mw.NetObject.md",
-        "file_path": "classes/mw.NetObject.md",
-        "name": "NetObject"
-      },
-      {
-        "file_name": "mw.EffectService.md",
-        "file_path": "classes/mw.EffectService.md",
-        "name": "EffectService"
+        "file_name": "mw.AnalyticsService.md",
+        "file_path": "classes/mw.AnalyticsService.md",
+        "name": "AnalyticsService"
       },
       {
         "file_name": "mw.LeaderboardModuleBaseS.md",
@@ -969,11 +895,6 @@
         "name": "LeaderboardModule"
       },
       {
-        "file_name": "mw.NetObjectS.md",
-        "file_path": "classes/mw.NetObjectS.md",
-        "name": "NetObjectS"
-      },
-      {
         "file_name": "mw.ObjPool.md",
         "file_path": "classes/mw.ObjPool.md",
         "name": "ObjPool"
@@ -982,16 +903,6 @@
         "file_name": "mw.LeaderboardItemPanelBase.md",
         "file_path": "classes/mw.LeaderboardItemPanelBase.md",
         "name": "LeaderboardItemPanelBase"
-      },
-      {
-        "file_name": "mw.SoundService.md",
-        "file_path": "classes/mw.SoundService.md",
-        "name": "SoundService"
-      },
-      {
-        "file_name": "mw.NetObjectC.md",
-        "file_path": "classes/mw.NetObjectC.md",
-        "name": "NetObjectC"
       },
       {
         "file_name": "mw.ModuleC.md",
@@ -1004,9 +915,9 @@
         "name": "GameObjPool"
       },
       {
-        "file_name": "Core.mw.TweenUtil.Sequence.md",
-        "file_path": "classes/Core.mw.TweenUtil.Sequence.md",
-        "name": "Sequence"
+        "file_name": "mw.WindowUtil.md",
+        "file_path": "classes/mw.WindowUtil.md",
+        "name": "WindowUtil"
       }
     ]
   },
@@ -1029,16 +940,6 @@
       }
     ],
     "Modules Functions": [
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "UGCEditor"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "addEditorPawnPanInputMovement"
-      },
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
@@ -1112,16 +1013,6 @@
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
-        "name": "getEditorPawnLocation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "getEditorPawnRotation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
         "name": "getGizmo"
       },
       {
@@ -1133,11 +1024,6 @@
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
         "name": "getLocalMaterialsCount"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "getObjectWithGuid"
       },
       {
         "file_name": "Core.mw.md",
@@ -1232,47 +1118,12 @@
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
-        "name": "setEditorCameraLocation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setEditorCameraRotation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setEditorCameraTransform"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setEditorPawnLocation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setEditorPawnRotation"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setEditorPawnTransform"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
         "name": "setMultiSwipeTime"
       },
       {
         "file_name": "Core.mw.md",
         "file_path": "modules/Core.mw.md",
         "name": "setPinchAngleTolerance"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setScriptObjectData"
       },
       {
         "file_name": "Core.mw.md",
@@ -1312,7 +1163,7 @@
       {
         "file_name": "mw.Decorator.md",
         "file_path": "modules/mw.Decorator.md",
-        "name": "saveProperty"
+        "name": "persistence"
       }
     ],
     "Enums": [
@@ -1354,16 +1205,6 @@
     ],
     "Classes": [
       {
-        "file_name": "mw.MessageChannelService.md",
-        "file_path": "classes/mw.MessageChannelService.md",
-        "name": "MessageChannelService"
-      },
-      {
-        "file_name": "Core.mw.SystemUtil.SystemUtil.md",
-        "file_path": "classes/Core.mw.SystemUtil.SystemUtil.md",
-        "name": "SystemUtil"
-      },
-      {
         "file_name": "mw.EventListener.md",
         "file_path": "classes/mw.EventListener.md",
         "name": "EventListener"
@@ -1372,26 +1213,6 @@
         "file_name": "mw.Event.md",
         "file_path": "classes/mw.Event.md",
         "name": "Event"
-      },
-      {
-        "file_name": "mw.EditorMode.md",
-        "file_path": "classes/mw.EditorMode.md",
-        "name": "EditorMode"
-      },
-      {
-        "file_name": "mw.UGCService.md",
-        "file_path": "classes/mw.UGCService.md",
-        "name": "UGCService"
-      },
-      {
-        "file_name": "mw.GestureDelegate.md",
-        "file_path": "classes/mw.GestureDelegate.md",
-        "name": "GestureDelegate"
-      },
-      {
-        "file_name": "mw.WindowUtil.md",
-        "file_path": "classes/mw.WindowUtil.md",
-        "name": "WindowUtil"
       }
     ]
   },
@@ -1490,7 +1311,7 @@
       }
     ]
   },
-  "Gui": {
+  "Ui": {
     "Modules Functions": [
       {
         "file_name": "Core.mw.md",
@@ -2063,130 +1884,6 @@
       }
     ]
   },
-  "Others": {
-    "Modules Functions": [
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "addLikeContent"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "addMessage"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "addReplyMessage"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "deleteLikeContent"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "deleteMessage"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "queryGameOwnerShip"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "queryMessageBoard"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "queryReplyMessage"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "queryViewRecord"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "saveViewRecord"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "mw.Sound.md",
-        "file_path": "classes/mw.Sound.md",
-        "name": "Sound"
-      }
-    ]
-  },
-  "Data": {
-    "Modules Functions": [
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "asyncGetData"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "asyncGetOtherGameData"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "asyncRemoveData"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "asyncSetData"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "asyncSetOtherGameData"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "getDataSize"
-      },
-      {
-        "file_name": "Core.mw.md",
-        "file_path": "modules/Core.mw.md",
-        "name": "setTemporaryStorage"
-      }
-    ],
-    "Enums": [
-      {
-        "file_name": "mw.DataStorageResultCode.md",
-        "file_path": "enums/mw.DataStorageResultCode.md",
-        "name": "DataStorageResultCode"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "mw.Subdata.md",
-        "file_path": "classes/mw.Subdata.md",
-        "name": "Subdata"
-      },
-      {
-        "file_name": "mw.DataCenterC.md",
-        "file_path": "classes/mw.DataCenterC.md",
-        "name": "DataCenterC"
-      },
-      {
-        "file_name": "mw.DataCenterS.md",
-        "file_path": "classes/mw.DataCenterS.md",
-        "name": "DataCenterS"
-      }
-    ]
-  },
   "Localization": {
     "Modules Functions": [
       {
@@ -2417,19 +2114,19 @@
     ],
     "Classes": [
       {
-        "file_name": "mw.StyleConfig.md",
-        "file_path": "classes/mw.StyleConfig.md",
-        "name": "StyleConfig"
-      },
-      {
         "file_name": "mw.Character.md",
         "file_path": "classes/mw.Character.md",
         "name": "Character"
       },
       {
-        "file_name": "mw.AttachmentArray.md",
-        "file_path": "classes/mw.AttachmentArray.md",
-        "name": "AttachmentArray"
+        "file_name": "mw.CharacterDescription.md",
+        "file_path": "classes/mw.CharacterDescription.md",
+        "name": "CharacterDescription"
+      },
+      {
+        "file_name": "mw.CharacterDecoration.md",
+        "file_path": "classes/mw.CharacterDecoration.md",
+        "name": "CharacterDecoration"
       },
       {
         "file_name": "mw.Pawn.md",
@@ -2458,19 +2155,19 @@
     ],
     "Classes": [
       {
-        "file_name": "mw.BasicStance.md",
-        "file_path": "classes/mw.BasicStance.md",
-        "name": "BasicStance"
+        "file_name": "mw.SubStance.md",
+        "file_path": "classes/mw.SubStance.md",
+        "name": "SubStance"
+      },
+      {
+        "file_name": "mw.StanceBase.md",
+        "file_path": "classes/mw.StanceBase.md",
+        "name": "StanceBase"
       },
       {
         "file_name": "mw.Animation.md",
         "file_path": "classes/mw.Animation.md",
         "name": "Animation"
-      },
-      {
-        "file_name": "mw.IStanceBase.md",
-        "file_path": "classes/mw.IStanceBase.md",
-        "name": "IStanceBase"
       },
       {
         "file_name": "mw.Stance.md",
@@ -2492,11 +2189,6 @@
         "file_name": "mw.RoomSettings.md",
         "file_path": "classes/mw.RoomSettings.md",
         "name": "RoomSettings"
-      },
-      {
-        "file_name": "mw.Optimization.md",
-        "file_path": "classes/mw.Optimization.md",
-        "name": "Optimization"
       },
       {
         "file_name": "mw.EnvironmentSettings.md",
@@ -2525,6 +2217,11 @@
     ],
     "Classes": [
       {
+        "file_name": "mw.InputUtil.md",
+        "file_path": "classes/mw.InputUtil.md",
+        "name": "InputUtil"
+      },
+      {
         "file_name": "mw.MobileSensors.md",
         "file_path": "classes/mw.MobileSensors.md",
         "name": "MobileSensors"
@@ -2533,6 +2230,42 @@
         "file_name": "mw.TouchInput.md",
         "file_path": "classes/mw.TouchInput.md",
         "name": "TouchInput"
+      },
+      {
+        "file_name": "mw.GestureDelegate.md",
+        "file_path": "classes/mw.GestureDelegate.md",
+        "name": "GestureDelegate"
+      }
+    ]
+  },
+  "Data": {
+    "Enums": [
+      {
+        "file_name": "mw.DataStorageResultCode.md",
+        "file_path": "enums/mw.DataStorageResultCode.md",
+        "name": "DataStorageResultCode"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "mw.Subdata.md",
+        "file_path": "classes/mw.Subdata.md",
+        "name": "Subdata"
+      },
+      {
+        "file_name": "mw.DataCenterC.md",
+        "file_path": "classes/mw.DataCenterC.md",
+        "name": "DataCenterC"
+      },
+      {
+        "file_name": "mw.DataCenterS.md",
+        "file_path": "classes/mw.DataCenterS.md",
+        "name": "DataCenterS"
+      },
+      {
+        "file_name": "mw.DataStorage.md",
+        "file_path": "classes/mw.DataStorage.md",
+        "name": "DataStorage"
       }
     ]
   },
@@ -2560,26 +2293,40 @@
       }
     ]
   },
-  "Debugging": {
-    "Classes": [
-      {
-        "file_name": "mw.AnalyticsService.md",
-        "file_path": "classes/mw.AnalyticsService.md",
-        "name": "AnalyticsService"
-      },
-      {
-        "file_name": "mw.DebugService.md",
-        "file_path": "classes/mw.DebugService.md",
-        "name": "DebugService"
-      }
-    ]
-  },
   "Effects": {
     "Classes": [
+      {
+        "file_name": "mw.EffectService.md",
+        "file_path": "classes/mw.EffectService.md",
+        "name": "EffectService"
+      },
       {
         "file_name": "mw.Effect.md",
         "file_path": "classes/mw.Effect.md",
         "name": "Effect"
+      }
+    ]
+  },
+  "Sound": {
+    "Classes": [
+      {
+        "file_name": "mw.Sound.md",
+        "file_path": "classes/mw.Sound.md",
+        "name": "Sound"
+      },
+      {
+        "file_name": "mw.SoundService.md",
+        "file_path": "classes/mw.SoundService.md",
+        "name": "SoundService"
+      }
+    ]
+  },
+  "Debugging": {
+    "Classes": [
+      {
+        "file_name": "mw.DebugService.md",
+        "file_path": "classes/mw.DebugService.md",
+        "name": "DebugService"
       }
     ]
   }

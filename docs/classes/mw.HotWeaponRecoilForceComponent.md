@@ -22,11 +22,8 @@ export default class HotWeaponRecoilForceSample1 extends Script {
             hotWeapon.recoilForceComponent.maxHorizontalJitter = 1;
             hotWeapon.recoilForceComponent.minVerticalJitter = 1;
             hotWeapon.recoilForceComponent.maxVerticalJitter = 1;
-
-            hotWeapon.recoilForceComponent.onStartRecoilForceServer.add(() => { console.log("recoilForceComponent.onStartRecoilForceClient") });
-        } else if (SystemUtil.isClient()) {
-            hotWeapon.recoilForceComponent.onStartRecoilForceClient.add(() => { console.log("recoilForceComponent.onStartRecoilForceClient") });
         }
+        hotWeapon.recoilForceComponent.onStartRecoilForce.add(() => { console.log("recoilForceComponent.onStartRecoilForce") });
     }
 }
 ```
@@ -35,8 +32,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onStartRecoilForceClient](mw.HotWeaponRecoilForceComponent.md#onstartrecoilforceclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[onStartRecoilForceServer](mw.HotWeaponRecoilForceComponent.md#onstartrecoilforceserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[onStartRecoilForce](mw.HotWeaponRecoilForceComponent.md#onstartrecoilforce)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -59,19 +55,11 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ## Properties
 
-### onStartRecoilForceClient <Score text="onStartRecoilForceClient" /> 
+### onStartRecoilForce <Score text="onStartRecoilForce" /> 
 
-• **onStartRecoilForceClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartRecoilForce**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
-客户端后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
-
-___
-
-### onStartRecoilForceServer <Score text="onStartRecoilForceServer" /> 
-
-• **onStartRecoilForceServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
-
-服务器后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
+后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 ## Accessors
 

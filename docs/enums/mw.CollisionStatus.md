@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / CollisionStatus
+[Type](../groups/Core.Type.md) / CollisionStatus
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 

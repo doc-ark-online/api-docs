@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / Action3
+[Type](../groups/Core.Type.md) / Action3
 
 # Action3<T, S, P\> <Badge type="tip" text="Class" /> <Score text="Action3<T, S, P\>" />
 

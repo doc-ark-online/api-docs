@@ -1,4 +1,4 @@
-[Gui](../groups/Core.Gui.md) / DragPivot
+[Ui](../groups/Core.Ui.md) / DragPivot
 
 # DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
 

@@ -1,4 +1,4 @@
-[Datatype](../groups/Core.Datatype.md) / HitResult
+[Type](../groups/Core.Type.md) / HitResult
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 

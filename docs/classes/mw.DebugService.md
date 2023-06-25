@@ -17,7 +17,6 @@ debug调试服务
 | Methods |
 | :-----|
 | **[getHeapStatistics](mw.DebugService.md#getheapstatistics)**(): `HeapStatistics` <br> 获取当前项目所有TS脚本内存占用|
-| **[getInstance](mw.DebugService.md#getinstance)**(): [`DebugService`](mw.DebugService.md) <br> 获取debug调试服务全局实例|
 
 ## Methods
 
@@ -52,18 +51,3 @@ export default class DebugExample extends Script {
 `HeapStatistics`
 
 HeapStatistics 内存数据
-
-___
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**(): [`DebugService`](mw.DebugService.md) 
-
-获取debug调试服务全局实例
-
-
-#### Returns
-
-[`DebugService`](mw.DebugService.md)
-
-debug调试服务全局实例
