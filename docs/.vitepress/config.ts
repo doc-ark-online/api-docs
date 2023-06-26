@@ -51,36 +51,36 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       version: '024'
     },
     logo: '/logo.png',
-    algolia: {
-      appId: 'I2PHYUBLCN',
-      apiKey: '62ee775311415d26549e0e30fef5aa38',
-      indexName: 'api-docs_prodigytech',
-      project: {
-        active: 'api-docs',
-        arr: [
-          {
-            key: 'api-docs',
-            facetFilters: ['tags:api-docs'],
-            name: 'API文档'
-          },
-          {
-            key: 'product-docs',
-            facetFilters: ['tags:product-docs'],
-            name: '产品手册'
-          },
-          {
-            key: 'learning-docs',
-            facetFilters: ['tags:learning-docs'],
-            name: '教程文档'
-          },
-          {
-            name: '论坛',
-            url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
-          }
-        ]
-      },
-      searchPage: 'https://search.ark.online/#/search'
-    },
+    // algolia: {
+    //   appId: 'I2PHYUBLCN',
+    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
+    //   indexName: 'api-docs_prodigytech',
+    //   project: {
+    //     active: 'api-docs',
+    //     arr: [
+    //       {
+    //         key: 'api-docs',
+    //         facetFilters: ['tags:api-docs'],
+    //         name: 'API文档'
+    //       },
+    //       {
+    //         key: 'product-docs',
+    //         facetFilters: ['tags:product-docs'],
+    //         name: '产品手册'
+    //       },
+    //       {
+    //         key: 'learning-docs',
+    //         facetFilters: ['tags:learning-docs'],
+    //         name: '教程文档'
+    //       },
+    //       {
+    //         name: '论坛',
+    //         url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
+    //       }
+    //     ]
+    //   },
+    //   searchPage: 'https://search.ark.online/#/search'
+    // },
     feedback: 'https://github.com/prodigytech-doc/api-docs/',
     siteTitle: 'API',
     nav: [
@@ -147,7 +147,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/release-024/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
