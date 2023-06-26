@@ -3,3 +3,5 @@ cache
 dist
 
 .temp
+.env
+updateVersion.mjs
