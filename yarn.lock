@@ -445,15 +445,17 @@
   dependencies:
     tslib "^2.0.1"
 
-"@metaapp/docsearch-react@^4.3.10":
-  version "4.3.10"
-  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.10.tgz#f8e74455d7572f19c24a8cdffc776026e309c37c"
-  integrity sha512-MQHiX1VlkUifoRHhi9BvapI5XBF80OgLp8zURsFQzVWvjIhdIyMc02k06v1J/jbLVt/fC614meaOz9bqBLt+2A==
+"@metaapp/docsearch-react@^4.3.19":
+  version "4.3.19"
+  resolved "https://api-web-registry.metaapp.cn/@metaapp%2fdocsearch-react/-/docsearch-react-4.3.19.tgz#72f61325cd3a9e6968fa55f45a2aab46f8ff9df9"
+  integrity sha512-oHvP7Tj2gDLwa45JBrJZVk9ad88FnImw2qfQIlEPLtd84q+6AGFGObPXuTrPQ4X8FoMmcOV15QzZng68+LqM2A==
   dependencies:
     "@algolia/autocomplete-core" "1.8.2"
     "@algolia/autocomplete-preset-algolia" "1.8.2"
     "@docsearch/css" "3.3.3"
     algoliasearch "^4.0.0"
+    metaapp-lib-release "^2.0.18"
+    metaapp-simple-pandora-sdk "^1.0.13"
   optionalDependencies:
     "@algolia/client-search" "^4.15.0"
 
@@ -862,6 +864,11 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
+metaapp-lib-release@^2.0.18:
+  version "2.0.18"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-lib-release/-/metaapp-lib-release-2.0.18.tgz#faa06907167856425626a94f4e37c2d1d9cc3277"
+  integrity sha512-IPPxkLp9PUNuvVackjlzePr0m7+mYwrWlTQXonCuueXV4lHbmSEhLzLIP7zs4hEmC9UFsvM4UwRFbaQwu6abqQ==
+
 metaapp-pandora-sdk@^5.0.2:
   version "5.0.2"
   resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-5.0.2.tgz#127b23567e31262d9ac0edcdde0a6d8c62724b17"
@@ -873,14 +880,14 @@ metaapp-pandora-sdk@^5.0.2:
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-prodigytech-doc-theme@^1.1.3:
-  version "1.1.3"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.1.3.tgz#e63a538d051bbbccaac78db10c34c4a4c711955d"
-  integrity sha512-3bfbyf7Q50PSbH/o3AngRCcEKqR2Ww+k3/B1jdEq9/+Xrdcli0UReNOoZxaFGEHjW6d7LcsiwVSdANWWk6b/wg==
+metaapp-prodigytech-doc-theme@^1.1.20:
+  version "1.2.0"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.2.0.tgz#b0ad2a758c67d7ad308d320f730d03d6de96415b"
+  integrity sha512-gMrB4DFRw5jM8HjolcblwABTN6bVRZYg1mG2YFR5vtCpiQPE6MIMR4jj3U8+s7dqYvBk+yR6HWlkHs6bAxD5Eg==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
-    "@metaapp/docsearch-react" "^4.3.10"
+    "@metaapp/docsearch-react" "^4.3.19"
     "@vitejs/plugin-vue" "^4.0.0"
     "@vue/devtools-api" "^6.4.5"
     "@vueuse/core" "^9.8.2"
@@ -891,6 +898,11 @@ metaapp-prodigytech-doc-theme@^1.1.3:
     viewerjs "^1.11.3"
     vite "^4.0.2"
     vue "^3.2.45"
+
+metaapp-simple-pandora-sdk@^1.0.13:
+  version "1.0.14"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-simple-pandora-sdk/-/metaapp-simple-pandora-sdk-1.0.14.tgz#e3afcf467afcebd3623bb205e816a9c6aa87b068"
+  integrity sha512-E0cAjhdtc1ioJsFM7cJPk4InTL2tNtDTWorbLmLMStkuQiSBocKQxH4dUGrVQonZReLnFk1QgpGbfItryWPv5w==
 
 minimatch@^7.4.1:
   version "7.4.3"

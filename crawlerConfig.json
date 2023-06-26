@@ -6,10 +6,6 @@
       "tags": ["product-docs"]
     },
     {
-      "url": "https://api-docs.ark.online/",
-      "tags": ["api-docs"]
-    },
-    {
       "url": "https://learning.ark.online/",
       "tags": ["learning-docs"]
     }
@@ -31,15 +27,12 @@
   "selectors_exclude": [
     ".page-footer",
     ".next-and-prev-link",
-    "#table-of-contents",
-    "#hierarchy",
+    "h2#table-of-contents",
     "table",
-    "#accessors",
-    "#character",
-    "#properties"
+    ".content nav"
   ],
   "custom_settings": {
-    "attributesForFaceting": ["tags", "type"]
+    "attributesForFaceting": ["tags"]
   },
   "stop_urls": ["/$"],
   "js_render": true
