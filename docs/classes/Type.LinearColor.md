@@ -2,7 +2,7 @@
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
-线性RGBA颜色
+线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0
 
 ## Table of contents
 
@@ -44,9 +44,9 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `r` | `number` | r |
-| `g` | `number` | g |
-| `b` | `number` | b |
+| `r` | `number` | r 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `g` | `number` | g 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `b` | `number` | b 颜色值的有效范围是 0.0 <= value <= 1.0 |
 
 • **new LinearColor**(`r`, `g`, `b`, `a`)
 
@@ -56,10 +56,10 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `r` | `number` | r |
-| `g` | `number` | g |
-| `b` | `number` | b |
-| `a` | `number` | a |
+| `r` | `number` | r 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `g` | `number` | g 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `b` | `number` | b 颜色值的有效范围是 0.0 <= value <= 1.0 |
+| `a` | `number` | a 颜色值的有效范围是 0.0 <= value <= 1.0 |
 
 • **new LinearColor**(`v`)
 

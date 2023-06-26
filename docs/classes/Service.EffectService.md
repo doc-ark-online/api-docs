@@ -119,7 +119,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `source` | `string` |  特效源，可以是资源GUID，也可以是场景对象的节点路径(xxx/xxx的形式，最少有一层路径，不能放在根节点) |
-| `target` | [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  玩家\|npc |
+| `target` | [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) |  玩家\|npc |
 | `slotType` | [`SlotType`](../enums/Gameplay.SlotType.md) |  挂点类型 |
 | `loop?` | `number` |  循环方式(0为无限, 正数为循环次数，负数为循环时间(单位:秒)) default: 1 |
 | `offset?` | [`Vector`](Type.Vector.md) |  坐标偏移 default: Type.Vector.zero |
@@ -175,7 +175,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `source` | `string` |  特效源，playEffect的第一个参数 |
-| `target?` | `GameObject` \| [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Humanoid.md) |  目标对象(Player或者Humanoid或者GameObject) default: undefined |
+| `target?` | `GameObject` \| [`Player`](Gameplay.Player.md) \| [`Humanoid`](Gameplay.Gameplay.Humanoid.md) |  目标对象(Player或者Humanoid或者GameObject) default: undefined |
 
 
 ___

@@ -43,7 +43,6 @@
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.FourFootStandard.md#changesomatotype)**(`value`: [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md), `sync`: `boolean`): `void` <br> 切换角色体型|
 | **[getSomatotype](Gameplay.FourFootStandard.md#getsomatotype)**(): [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) <br> 获取当前的体型类型|
 | **[getWholeBody](Gameplay.FourFootStandard.md#getwholebody)**(): `string` <br> 获取全身模型|
 | **[setWholeBody](Gameplay.FourFootStandard.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置模型|
@@ -53,7 +52,6 @@
 | Methods |
 | :-----|
 | **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
 | **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 :::
 
@@ -69,53 +67,6 @@
 ## Properties
 
 ## Methods
-
-### changeSomatotype <Score text="changeSomatotype" /> 
-
-• **changeSomatotype**(`value`, `sync`): `void` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 023 reason: 不在使用 replacement: 无
-
-:::
-
-切换角色体型
-
-::: warning Precautions
-
-当 sync = true 对象是单端对象，调用仅本地客户端有效
-
-:::
-
-
-使用示例: 角色切换类型1.切换外观类型 appearanceType.设置对应的体型SomatotypeFourFootStandard 设置模型setWholeBody
-```ts
-let npc = Core.GameObject.find("FDB21CE8");
-npc.appearanceType = Gameplay.AppearanceType.FourFootStandard;
-npc.appearance.changeSomatotype(Gameplay.SomatotypeFourFootStandard.Cat, true);
-let Tappearance = npc.appearance as Gameplay.FourFootStandard;
-         setTimeout(() => {
-            if(Tappearance){
-               Tappearance.setWholeBody("127060",true);
-               console.error(npc.collisionExtent);
-
-             }
-        }, 1000);
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`SomatotypeFourFootStandard`](../enums/Gameplay.SomatotypeFourFootStandard.md) |  体型参数 SomatotypeFourFootStandard |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-#### Implementation of
-
-[IFourFootStandard](../interfaces/Gameplay.IFourFootStandard.md).[changeSomatotype](../interfaces/Gameplay.IFourFootStandard.md#changesomatotype)
-
 
 ### getSomatotype <Score text="getSomatotype" /> 
 

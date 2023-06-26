@@ -17,7 +17,6 @@
 | **[clearInterval](Util.TimeUtil.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
 | **[delayExecute](Util.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Util.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[delayTime](Util.TimeUtil.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](Util.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[parseTime](Util.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
 | **[setInterval](Util.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
@@ -136,33 +135,6 @@ async test(): Promise<void> {
 `Promise`<`void`\>
 
 Promise
-
-___
-
-### delayTime <Score text="delayTime" /> 
-
-• **delayTime**(): `number` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
-
-:::
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
 
 ___
 

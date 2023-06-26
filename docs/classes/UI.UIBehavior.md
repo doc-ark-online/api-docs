@@ -280,7 +280,7 @@ ___
 | `inTag?` | `string` | 标签文本 default:"" |
 | `inPayLoad?` | `any` | 拖拽事件数据信息 default:null |
 | `inPivot?` | [`DragPivot`](../enums/UI.DragPivot.md) | 拖拽显示UI的锚点 default:UIType.DragPivot.TopLeft |
-| `inOffset?` | [`Vector2`](Type.Vector2.md) | 拖拽显示UI相对于锚点的偏移 default:vector2(0,0) |
+| `inOffset?` | [`Vector2`](Type.Vector2.md) | 拖拽显示UI相对于锚点的偏移的百分比 default:vector2(0,0) |
 
 #### Returns
 

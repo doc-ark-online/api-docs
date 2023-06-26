@@ -39,7 +39,6 @@ Utility
 | **[degreesToRadians](Utility.Utility.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
 | **[delayExecute](Utility.Utility.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[delayTime](Utility.Utility.md#delaytime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[drawGameObjectSelectionBox](Utility.Utility.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `Color`: [`LinearColor`](../classes/Type.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
 | **[elapsedTime](Utility.Utility.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[enableCursorInteractWithUI](Utility.Utility.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
@@ -47,15 +46,12 @@ Utility
 | **[fmod](Utility.Utility.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
 | **[format](Utility.Utility.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
 | **[getGameObjectBySelectionBox](Utility.Utility.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取框选屏幕位置的物体|
-| **[isAssetExist](Utility.Utility.md#isassetexist)**(`InAssetId`: `string`): `boolean` <br> 资源是否存在|
-| **[isAssetLoaded](Utility.Utility.md#isassetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
 | **[isCursorInteractiveWithUI](Utility.Utility.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
 | **[isCursorLockEnabled](Utility.Utility.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
 | **[isCursorLocked](Utility.Utility.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
 | **[isCursorVisible](Utility.Utility.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
 | **[isEmpty](Utility.Utility.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
 | **[lerp](Utility.Utility.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[loadAsset](Utility.Utility.md#loadasset)**(`InAssetId`: `string`): `boolean` <br> 资源加载|
 | **[maskWordCheck](Utility.Utility.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](Utility.Utility.md#maskwordcheck)Result`](Utility.Utility.md#maskwordcheckresult)\> <br> 屏蔽字检测|
 | **[nextId](Utility.Utility.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
 | **[onKeyDown](Utility.Utility.md#onkeydown)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-点击|
@@ -322,32 +318,6 @@ async test(): Promise<void> {
 Promise
 ___
 
-### delayTime <Score text="delayTime" /> 
-
-• **delayTime**(): `number` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:023 reason:接口废弃,预计v0.25.0移除该接口 replacement:
-
-:::
-
-每一帧经过的时间 (单位：秒)
-
-::: warning Precautions
-
-调用这个函数之前两次Update函数调用之间的间隔时间
-
-:::
-
-
-#### Returns
-
-`number`
-
-number（单位：秒）
-___
-
 ### drawGameObjectSelectionBox <Score text="drawGameObjectSelectionBox" /> 
 
 • **drawGameObjectSelectionBox**(`StartPoint`, `EndPoint`, `Color`, `DurationTime?`): `void` <Badge type="tip" text="client" />
@@ -495,58 +465,6 @@ ___
 框选的物体
 ___
 
-### isAssetExist <Score text="isAssetExist" /> 
-
-• **isAssetExist**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否存在
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-不存在将返回false
-___
-
-### isAssetLoaded <Score text="isAssetLoaded" /> 
-
-• **isAssetLoaded**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源是否加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:assetLoaded
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
-___
-
 ### isCursorInteractiveWithUI <Score text="isCursorInteractiveWithUI" /> 
 
 • **isCursorInteractiveWithUI**(): `boolean` <Badge type="tip" text="client" />
@@ -651,37 +569,31 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 计算结果
 ___
 
-### loadAsset <Score text="loadAsset" /> 
-
-• **loadAsset**(`InAssetId`): `boolean` <Badge type="tip" text="other" />
-
-资源加载
-
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:接口废弃,预计v0.24.0移除该接口 replacement:asyncDownloadAsset
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-___
-
 ### maskWordCheck <Score text="maskWordCheck" /> 
 
 • **maskWordCheck**(`text`): `Promise`<[`maskWordCheckResult`](Util.StringUtil.md#maskwordcheckresult)\> 
 
 屏蔽字检测
 
+
+::: warning Precautions
+
+接口中遇到异常情况会返回reject，使用该接口需要用catch处理这种异常情况
+
+:::
+
+使用示例:屏蔽字检测错误处理
+```ts
+try {
+  let result = await Util.StringUtil.maskWordCheck("自杀之王");
+  if (!result.result) {
+    console.log("屏蔽字检测不通过");
+    console.log("命中的文本：" + result.hits);
+  }
+} catch (e) {
+  console.log("屏蔽字检测失败");
+}
+```
 
 #### Parameters
 

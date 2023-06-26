@@ -15,10 +15,9 @@ UI文本
 | Accessors |
 | :-----|
 | **[autoAdjust](UI.TextBlock.md#autoadjust)**(): `boolean` <br> 获取字体是否自适应调整大小:boolean(为True时，文本内容字体大小将自动改变，尽可能大的充满整个文本框，而文本框大小不会变化)|
-| **[contentColor](UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 设置字体内容颜色|
+| **[contentColor](UI.TextBlock.md#contentcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取字体内容颜色|
 | **[fontColor](UI.TextBlock.md#fontcolor)**(): [`LinearColor`](Type.LinearColor.md) <br> 获取字体颜色|
-| **[fontLetterSpace](UI.TextBlock.md#fontletterspace)**(`inLetterSpace`: `number`): `void` <br> 设置字体间距|
-| **[fontLitterSpace](UI.TextBlock.md#fontlitterspace)**(): `number` <br> 获取字体间距|
+| **[fontLetterSpace](UI.TextBlock.md#fontletterspace)**(): `number` <br> 获取字体间距|
 | **[fontSize](UI.TextBlock.md#fontsize)**(): `number` <br> 获取字体大小|
 | **[glyph](UI.TextBlock.md#glyph)**(): [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) <br> 获取字体字形|
 | **[isRichText](UI.TextBlock.md#isrichtext)**(): `boolean` <br> 获取是否为富文本|
@@ -59,7 +58,6 @@ UI文本
 | **[renderTransformAngle](UI.Widget.md#rendertransformangle)**(): `number` <br> 获取渲染的角度|
 | **[renderTransformPivot](UI.Widget.md#rendertransformpivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取渲染锚点|
 | **[size](UI.Widget.md#size)**(): [`Vector2`](Type.Vector2.md) <br> 获取大小|
-| **[slot](UI.Widget.md#slot)**(): [`UISlot`](UI.UISlot.md) <br> 获取插槽|
 | **[tickSpaceGeometry](UI.Widget.md#tickspacegeometry)**(): [`Geometry`](UI.Geometry.md) <br> 获取最后一次用于驱动Widget Tick的几何信息|
 | **[transform](UI.Widget.md#transform)**(): `Readonly`<[`UITransform`](UI.UITransform.md)\> <br> 得到控件的大小和位置|
 | **[visibility](UI.Widget.md#visibility)**(): [`SlateVisibility`](../enums/UI.SlateVisibility.md) <br> 获取可见性|
@@ -121,7 +119,7 @@ UI文本
 
 • `get` **contentColor**(): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
 
-设置字体内容颜色
+获取字体内容颜色
 
 
 #### Returns
@@ -172,6 +170,17 @@ ___
 
 ### fontLetterSpace <Score text="fontLetterSpace" /> 
 
+• `get` **fontLetterSpace**(): `number` <Badge type="tip" text="client" />
+
+获取字体间距
+
+
+#### Returns
+
+`number`
+
+返回字体间距
+
 • `set` **fontLetterSpace**(`inLetterSpace`): `void` <Badge type="tip" text="client" />
 
 设置字体间距
@@ -183,21 +192,6 @@ ___
 | :------ | :------ | :------ |
 | `inLetterSpace` | `number` | 字体间距 |
 
-
-___
-
-### fontLitterSpace <Score text="fontLitterSpace" /> 
-
-• `get` **fontLitterSpace**(): `number` <Badge type="tip" text="client" />
-
-获取字体间距
-
-
-#### Returns
-
-`number`
-
-返回字体间距
 
 ___
 

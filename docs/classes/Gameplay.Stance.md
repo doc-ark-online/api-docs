@@ -15,9 +15,7 @@
 | Methods |
 | :-----|
 | **[play](Gameplay.Stance.md#play)**(): `boolean` <br> 播放这个姿态对象, 并返回执行结果|
-| **[playInternal](Gameplay.Stance.md#playinternal)**(): `boolean` <br> 播放姿态的内部实现|
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
-| **[stopInternal](Gameplay.Stance.md#stopinternal)**(): `boolean` <br> 停止姿态的内部实现|
 
 构造函数
 
@@ -56,27 +54,6 @@
 
 ___
 
-### playInternal <Score text="playInternal" /> 
-
-• `Protected` **playInternal**(): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:不该暴露的接口 replacement:play()
-
-:::
-
-播放姿态的内部实现
-
-
-#### Returns
-
-`boolean`
-
-是否执行成功
-
-___
-
 ### stop <Score text="stop" /> 
 
 • **stop**(): `boolean` 
@@ -98,23 +75,3 @@ ___
 
 是否执行成功
 
-___
-
-### stopInternal <Score text="stopInternal" /> 
-
-• **stopInternal**(): `boolean` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:022 reason:不该暴露的接口 replacement:stop()
-
-:::
-
-停止姿态的内部实现
-
-
-#### Returns
-
-`boolean`
-
-是否执行成功

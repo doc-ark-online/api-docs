@@ -46,7 +46,6 @@
 
 | Methods |
 | :-----|
-| **[changeSomatotype](Gameplay.HumanoidV1.md#changesomatotype)**(`value`: [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md), `sync`: `boolean`): `void` <br> 切换角色主Mesh|
 | **[getSomatotype](Gameplay.HumanoidV1.md#getsomatotype)**(): [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) <br> 获取当前的主Mesh|
 | **[getWholeBody](Gameplay.HumanoidV1.md#getwholebody)**(): `string` <br> 获取全身模型|
 | **[setWholeBody](Gameplay.HumanoidV1.md#setwholebody)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置全身模型|
@@ -56,7 +55,6 @@
 | Methods |
 | :-----|
 | **[enablePostProcess](Gameplay.SomatotypeBase.md#enablepostprocess)**(`usedPostProcess`: `boolean`, `newOutlineColor`: [`LinearColor`](Type.LinearColor.md), `newOutlineWidth`: `number`): `void` <br> 后处理开关|
-| **[setOutline](Gameplay.SomatotypeBase.md#setoutline)**(`usedOutline`: `boolean`): `boolean` <br> 描边开关|
 | **[setOutlineAdvance](Gameplay.SomatotypeBase.md#setoutlineadvance)**(`newEnableOutline`: `boolean`, `newOutlineColorIndex`: `number`): `void` <br> 后处理描边开关|
 :::
 
@@ -93,47 +91,6 @@ ___
 身体
 
 ## Methods
-
-### changeSomatotype <Score text="changeSomatotype" /> 
-
-• **changeSomatotype**(`value`, `sync`): `void` 
-
-::: danger Deprecated
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 023 reason: 不再使用 replacement: 无
-
-:::
-
-切换角色主Mesh
-
-
-使用示例: 角色切换类型1.切换外观类型 appearanceType.设置对应的体型SomatotypeV1 设置模型setWholeBody
-```ts
-let npc = Core.GameObject.find("FDB21CE8");
-npc.appearanceType =Gameplay.AppearanceType.HumanoidV1;
-;
-npc.appearance.changeSomatotype(Gameplay.SomatotypeV1.HumanoidV1, true);
-let Tappearance = npc.appearance as Gameplay.HumanoidV1;
-         setTimeout(() => {
-            if(Tappearance){
-               Tappearance.setWholeBody("137075",true);
-
-             }
-        }, 1000);
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`SomatotypeV1`](../enums/Gameplay.SomatotypeV1.md) |  HumanoidV1 的体型，使用枚举SomatotypeV1 |
-| `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
-
-
-#### Implementation of
-
-[IHumanoidV1](../interfaces/Gameplay.IHumanoidV1.md).[changeSomatotype](../interfaces/Gameplay.IHumanoidV1.md#changesomatotype)
-
 
 ### getSomatotype <Score text="getSomatotype" /> 
 

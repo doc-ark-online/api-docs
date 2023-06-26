@@ -18,6 +18,10 @@ MobileEditor
 | [GestureDelegate](../classes/MobileEditor.GestureDelegate.md) <br> 手势代理类|
 | [Gizmo](../classes/MobileEditor.Gizmo.md) <br> Gizmo|
 
+| Type Aliases |
+| :-----|
+| **[ReleaseGameData](MobileEditor.MobileEditor.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
+
 | Functions |
 | :-----|
 | **[UGCEditor](MobileEditor.MobileEditor.md#ugceditor)**(`target`: `any`): `void` <br> UGC Editor使用的装饰器,避免数据被还原|
@@ -26,6 +30,8 @@ MobileEditor
 | **[addMessage](MobileEditor.MobileEditor.md#addmessage)**(`UGCID`: `string`, `Content`: `string`): `void` <br> 添加留言|
 | **[addReplyMessage](MobileEditor.MobileEditor.md#addreplymessage)**(`UGCID`: `string`, `CommentID`: `string`, `Content`: `string`): `void` <br> 添加回复的消息|
 | **[asyncCaptureAvatar](MobileEditor.MobileEditor.md#asynccaptureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[asyncGetQualityGameList](MobileEditor.MobileEditor.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\> <br> 获取优质作品列表|
+| **[asyncGetReleaseGameData](MobileEditor.MobileEditor.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <br> 通过指定的消费态游戏ID和版本号获取已发布的游戏数据|
 | **[asyncGetResourceList](MobileEditor.MobileEditor.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <br> 获取资源列表|
 | **[asyncSaveProject](MobileEditor.MobileEditor.md#asyncsaveproject)**(): `Promise`<`boolean`\> <br> 保存当前游戏项目|
 | **[beginActorPropertiesChange](MobileEditor.MobileEditor.md#beginactorpropertieschange)**(`target`: `Base`): `void` <br> 开始记录撤销恢复的actor属性|
@@ -83,6 +89,21 @@ MobileEditor
 | **[undo](MobileEditor.MobileEditor.md#undo)**(): `void` <br> 执行撤销操作|
 | **[uploadScreenShot](MobileEditor.MobileEditor.md#uploadscreenshot)**(`filePath`: `string`, `fileType`: `number`, `callbackURL?`: (`responseURL`: `string`) => `void`): `void` <br> 上传角色头像或全身照到服务器后发送到MGS|
 | **[uploadScreenShots](MobileEditor.MobileEditor.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <br> 上传角色头像及全身照到服务器后发送到MGS|
+
+## Type Aliases
+
+### ReleaseGameData <Score text="ReleaseGameData" /> 
+
+Ƭ **ReleaseGameData**: `Object`
+
+已发布的游戏数据，用于继承服务器数据。
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameCover` | `string` | 已发布的游戏封面路径（存放于'项目目录/Pictures'下） |
+| `gameName` | `string` | 已发布的游戏名称 |
 
 ## Functions
 
@@ -195,6 +216,50 @@ ___
 `Promise`<`string`\>
 
 生成的截图的本地绝对路径
+
+___
+
+### asyncGetQualityGameList <Score text="asyncGetQualityGameList" /> 
+
+• **asyncGetQualityGameList**(`resourceId`, `pageIndex`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+获取优质作品列表
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `resourceId` | `number` | T台Id |
+| `pageIndex` | `number` | 分页索引 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+
+___
+
+### asyncGetReleaseGameData <Score text="asyncGetReleaseGameData" /> 
+
+• **asyncGetReleaseGameData**(`gameId`, `version?`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <Badge type="tip" text="client" />
+
+通过指定的消费态游戏ID和版本号获取已发布的游戏数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameId` | `string` | 消费态游戏Id |
+| `version?` | `string` | 消费态游戏版本号 default:" " |
+
+#### Returns
+
+`Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\>
+
+请求结果(结构体对象：`{游戏名称：gameName, 游戏封面路径：gameCover}`)
 
 ___
 
@@ -716,7 +781,7 @@ ___
 
 ::: warning Precautions
 
-只在ListenServer模式下调用生效，在PIE模式下无法调用
+只在ListenServer模式下调用生效，在PIE模式下无法调用,发布游戏会自动保存一次工程
 
 :::
 

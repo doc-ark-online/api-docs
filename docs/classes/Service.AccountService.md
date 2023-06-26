@@ -22,7 +22,6 @@
 | **[createSharedId](Service.AccountService.md#createsharedid)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `callback`: [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 生成分享Id|
 | **[dataShowToOther](Service.AccountService.md#datashowtoother)**(`index`: `number`, `isOpen`: `boolean`, `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse)): `void` <br> 设置数据是否公开给其他用户|
 | **[downloadData](Service.AccountService.md#downloaddata)**(`character`: [`CharacterBase`](Gameplay.CharacterBase.md), `callback?`: [`BoolResponse`](../modules/Service.Service.md#boolresponse) \, `index?`: `number`): `void` <br> 下载角色形象并应用到当前角色身上|
-| **[downloadDefaultDataString](Service.AccountService.md#downloaddefaultdatastring)**(`callback`: [`StringResponse`](../modules/Service.Service.md#stringresponse)): `void` <br> 下载默认角色数据|
 | **[fillAvatar](Service.AccountService.md#fillavatar)**(`img`: [`Image`](UI.Image.md)): `void` <br> 将头像赋值到Image变量上|
 | **[getNickName](Service.AccountService.md#getnickname)**(): `string` <br> 获取玩家昵称|
 | **[getOpenId](Service.AccountService.md#getopenid)**(): `string` <br> 获取OpenId|
@@ -145,22 +144,6 @@ ___
 | `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 要应用换装数据的角色 |
 | `callback?` | [`BoolResponse`](../modules/Service.Service.md#boolresponse) \| [`VoidResponse`](../modules/Service.Service.md#voidresponse) | 设置是否成功的回调 default:默认没有回调 |
 | `index?` | `number` | 角色位(0-5) default:0,主角资源位 |
-
-
-___
-
-### downloadDefaultDataString <Score text="downloadDefaultDataString" /> 
-
-• **downloadDefaultDataString**(`callback`): `void` <Badge type="tip" text="client" />
-
-下载默认角色数据
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `callback` | [`StringResponse`](../modules/Service.Service.md#stringresponse) | 回调 |
 
 
 ___

@@ -5,13 +5,11 @@ Avatar
 ## Table of contents
 | Classes |
 | :-----|
-| [AICharacter](../classes/Gameplay.AICharacter.md) <br> 在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象. |
 | [Character](../classes/Gameplay.Character.md) <br> 在CharacterBase上派生的玩家操控对象,该对象是玩家加入游戏之后,在服务器上根据配置生成,并同步到客户端的. |
 | [CharacterBase](../classes/Gameplay.CharacterBase.md) <br> 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动. |
 | [Decoration](../classes/Gameplay.Decoration.md) <br> 平台形象特有的挂件数据格式 |
 | [DefaultData](../classes/Gameplay.DefaultData.md) <br> 角色数据类型 |
 | [FourFootStandard](../classes/Gameplay.FourFootStandard.md) <br> 四足外观形象对象,用于四足外观的设置. |
-| [Humanoid](../classes/Gameplay.Humanoid.md) <br> 在CharacterBase上派生的人形非玩家对象,限定了形象是人形,该对象通常被用户用于实现拥有自主功能的角色对象. |
 | [HumanoidV1](../classes/Gameplay.HumanoidV1.md) <br> 人形外观形象对象,用于基础人形外观的设置. |
 | [HumanoidV1Face](../classes/Gameplay.HumanoidV1Face.md) <br> 人形对象V1脸部接口 |
 | [HumanoidV1Hair](../classes/Gameplay.HumanoidV1Hair.md) <br> 人形对象V1头发接口 |

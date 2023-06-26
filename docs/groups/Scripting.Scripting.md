@@ -38,6 +38,8 @@ Scripting
 | **[addServerListener](Scripting.Scripting.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 客户端监听服务器事件|
 | **[addUnfocusedListener](Scripting.Scripting.md#addunfocusedlistener)**(`callback`: () => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 添加窗口失焦时执行的回调函数|
 | **[asyncCaptureAvatar](Scripting.Scripting.md#asynccaptureavatar)**(`character`: [`CharacterBase`](../classes/Gameplay.CharacterBase.md), `relativeLocation`: [`Vector`](../classes/Type.Vector.md), `relativeRotation`: [`Rotation`](../classes/Type.Rotation.md), `resolution`: [`Vector2`](../classes/Type.Vector2.md), `bShowOnly`: `boolean`, `fov`: `number`, `fileName`: `string`): `Promise`<`string`\> <br> 异步对指定虚拟角色进行截取，截图保存在本地固定路径下|
+| **[asyncGetQualityGameList](Scripting.Scripting.md#asyncgetqualitygamelist)**(`resourceId`: `number`, `pageIndex`: `number`): `Promise`<`string`\> <br> 获取优质作品列表|
+| **[asyncGetReleaseGameData](Scripting.Scripting.md#asyncgetreleasegamedata)**(`gameId`: `string`, `version?`: `string`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <br> 通过指定的消费态游戏ID和版本号获取已发布的游戏数据|
 | **[asyncGetResourceList](Scripting.Scripting.md#asyncgetresourcelist)**(`classification`: `number`, `lastID`: `number`, `pageSize`: `number`): `Promise`<`string`\> <br> 获取资源列表|
 | **[asyncSaveProject](Scripting.Scripting.md#asyncsaveproject)**(): `Promise`<`boolean`\> <br> 保存当前游戏项目|
 | **[autoExecute](Scripting.Scripting.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
@@ -95,6 +97,13 @@ Scripting
 | **[undo](Scripting.Scripting.md#undo)**(): `void` <br> 执行撤销操作|
 | **[uploadScreenShot](Scripting.Scripting.md#uploadscreenshot)**(`filePath`: `string`, `fileType`: `number`, `callbackURL?`: (`responseURL`: `string`) => `void`): `void` <br> 上传角色头像或全身照到服务器后发送到MGS|
 | **[uploadScreenShots](Scripting.Scripting.md#uploadscreenshots)**(`gender`: `number`, `portraitPath`: `string`, `fullPicPath`: `string`, `callbackURL?`: (`porURL`: `string`, `bodyURL`: `string`) => `void`): `void` <br> 上传角色头像及全身照到服务器后发送到MGS|
+
+
+| Modules Type Aliases |
+| :-----|
+| **[LocalUGCGameInfo](Scripting.Scripting.md#localugcgameinfo)**: `Object` <br> 本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。|
+| **[PublishedUGCGameInfo](Scripting.Scripting.md#publishedugcgameinfo)**: `Object` <br> 发布成功的UGC消费态游戏信息|
+| **[UGCTemplateInfo](Scripting.Scripting.md#ugctemplateinfo)**: `Object` <br> UGC模板信息|
 
 
 ## Modules Functions
@@ -448,6 +457,48 @@ ___
 `Promise`<`string`\>
 
 生成的截图的本地绝对路径
+___
+
+### asyncGetQualityGameList <Score text="asyncGetQualityGameList" /> 
+
+• **asyncGetQualityGameList**(`resourceId`, `pageIndex`): `Promise`<`string`\> <Badge type="tip" text="client" />
+
+获取优质作品列表
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `resourceId` | `number` | T台Id |
+| `pageIndex` | `number` | 分页索引 |
+
+#### Returns
+
+`Promise`<`string`\>
+
+请求结果(Json字符串)
+___
+
+### asyncGetReleaseGameData <Score text="asyncGetReleaseGameData" /> 
+
+• **asyncGetReleaseGameData**(`gameId`, `version?`): `Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\> <Badge type="tip" text="client" />
+
+通过指定的消费态游戏ID和版本号获取已发布的游戏数据
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameId` | `string` | 消费态游戏Id |
+| `version?` | `string` | 消费态游戏版本号 default:" " |
+
+#### Returns
+
+`Promise`<[`ReleaseGameData`](MobileEditor.MobileEditor.md#releasegamedata)\>
+
+请求结果(结构体对象：`{游戏名称：gameName, 游戏封面路径：gameCover}`)
 ___
 
 ### asyncGetResourceList <Score text="asyncGetResourceList" /> 
@@ -1067,7 +1118,7 @@ ___
 
 ::: warning Precautions
 
-只在ListenServer模式下调用生效，在PIE模式下无法调用
+只在ListenServer模式下调用生效，在PIE模式下无法调用,发布游戏会自动保存一次工程
 
 :::
 
@@ -1511,3 +1562,57 @@ Playza定制接口
 | `portraitPath` | `string` | 头像照路径 |
 | `fullPicPath` | `string` | 全身照路径 |
 | `callbackURL?` | (`porURL`: `string`, `bodyURL`: `string`) => `void` | 获取上传后在服务器中的URL default:null，可选参数 |
+## Modules Type Aliases
+
+
+___
+
+### LocalUGCGameInfo <Score text="LocalUGCGameInfo" /> 
+
+Ƭ **LocalUGCGameInfo**: `Object`
+
+本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `gameId` | `string` | UGC消费态游戏的MW侧gameId，"U_xxx" 格式 |
+| `parentId` | `string` | 父模板游戏的内容库gameId |
+| `path` | `string` | 本地工程路径，不需要做拼接，直接传给其他接口即可 |
+___
+
+### PublishedUGCGameInfo <Score text="PublishedUGCGameInfo" /> 
+
+Ƭ **PublishedUGCGameInfo**: `Object`
+
+发布成功的UGC消费态游戏信息
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `end` | `boolean` | 接口data为空/网络请求失败时，end会返回true |
+| `games` | [`{ `banner`: `string` ; `id`: `string` ; `likeIt`: `boolean` ; `loveQuantity`: `number` ; `packageName`: `string` ; `ugcGameName`: `string`  }`] | 接口data为空/网络请求失败时，games会返回空列表 |
+___
+
+### UGCTemplateInfo <Score text="UGCTemplateInfo" /> 
+
+Ƭ **UGCTemplateInfo**: `Object`
+
+UGC模板信息
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fileUrl` | `{ `assetDataListUrl`: `string` ; `zipUrl`: `string`  }` | 下载链接 |
+| `fileUrl.assetDataListUrl` | `string` | 模板assetDataList文件下载链接 |
+| `fileUrl.zipUrl` | `string` | 模板工程下载链接 |
+| `gameIdentity` | `string` | MW侧gameId |
+| `gid` | `string` | 内容库gameId |
+| `icon` | `string` | 模板Icon下载链接 |
+| `id` | `number` | 分页用的id |
+| `name` | `string` | 模板名称 |
+| `packageName` | `string` | 模板包名 |
+| `version` | `string` | 模板版本号 |
