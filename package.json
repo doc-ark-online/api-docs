@@ -30,6 +30,6 @@
     "detect-browser": "^5.3.0",
     "fs-extra": "^11.1.0",
     "metaapp-pandora-sdk": "^4.1.2",
-    "metaapp-prodigytech-doc-theme": "^1.2.0"
+    "metaapp-prodigytech-doc-theme": "^1.2.1"
   }
 }
