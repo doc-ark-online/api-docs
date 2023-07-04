@@ -1104,12 +1104,6 @@ ___
 
 重力倍率
 
-::: warning Precautions
-
-范围0~10, 过大和过小的值都会被限制
-
-:::
-
 #### Returns
 
 `number`
@@ -1117,6 +1111,12 @@ ___
 • `set` **gravityScale**(`newGravityScale`): `void`
 
 重力倍率
+
+::: warning Precautions
+
+范围0~10, 过大和过小的值都会被限制
+
+:::
 
 #### Parameters
 
