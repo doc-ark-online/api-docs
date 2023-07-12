@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / GraphicsLevel
+[TYPE](../groups/Core.TYPE.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 

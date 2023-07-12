@@ -1,4 +1,4 @@
-[Lighting](../groups/Core.Lighting.md) / PostProcessConfig
+[LIGHTING](../groups/Core.LIGHTING.md) / PostProcessConfig
 
 # PostProcessConfig <Badge type="tip" text="Class" /> <Score text="PostProcessConfig" />
 

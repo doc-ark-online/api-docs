@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / AdvancedVehicle
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / AdvancedVehicle
 
 # AdvancedVehicle <Badge type="tip" text="Class" /> <Score text="AdvancedVehicle" />
 
@@ -24,11 +24,11 @@ enum VehicleEvents {
     outOfVehicle_local = "outOfVehicle_local",
 }
 
-@Core.Class
+@Class
 export default class VehicleSample extends Script {
 
     // 该属性暴露在属性面板中，可以方便的进行调整。
-    @Core.Property({ displayName: "载具生成位置", hideInEditor: false })
+    @Property({ displayName: "载具生成位置", hideInEditor: false })
     private vehicleSpawnLoc: Vector = new Vector(100, 100, 200);
 
     // 当前控制的载具。
@@ -41,7 +41,7 @@ export default class VehicleSample extends Script {
     private trigger: Trigger = null;
 
     // 当前绑定的按钮事件handle，用于下车时解除绑定。
-    private controlEventsHandle: EventListener[] = [];
+    private controlEventsHandle: mw.EventListener[] = [];
 
     // 当脚本被实例后，会在第一帧更新前调用此函数。
     protected onStart(): void {
@@ -52,36 +52,32 @@ export default class VehicleSample extends Script {
 
     // 绑定载具创建的事件
     private bindCreationEvents(): void {
-        if (Util.SystemUtil.isServer()) {
-            addClientListener(VehicleEvents.createVehicle_C2S, async (player: Player) => {
+        if (SystemUtil.isServer()) {
+            mw.Event.addClientListener(VehicleEvents.createVehicle_C2S, async (player: Player) => {
                 // 创建载具。
-                const spanwInfo_vehicle: SpawnInfo = {
+                this.vehicle = await mw.GameObject.asyncSpawn<mw.AdvancedVehicle> ({
                     guid: "Vehicle4W",
                     replicates: true,
                     transform: new Transform(this.vehicleSpawnLoc, new Rotation(0, 0, 0), new Vector(1)),
-                }
-                this.vehicle = await GameObject.asyncSpawn(spanwInfo_vehicle) as AdvancedVehicle;
+                })
 
                 // 创建触发器。
-                const spanwInfo_trigger: SpawnInfo = {
+                this.trigger = await mw.GameObject.asyncSpawn<mw.Trigger> ({
                     guid: "Trigger",
                     replicates: true,
-                }
-                this.trigger = await GameObject.asyncSpawn(spanwInfo_trigger) as Trigger;
+                })
 
                 // 创建交互物。
-                const spanwInfo_interactor: SpawnInfo = {
+                this.interactor = await mw.GameObject.asyncSpawn<mw.Interactor>({
                     guid: "Interactor",
                     replicates: true,
-                }
-                this.interactor = await GameObject.asyncSpawn(spanwInfo_interactor) as Interactor;
+                })
 
                 // 创建一个Box，作为车身。
-                const spanwInfo_mesh: SpawnInfo = {
+                const vehicleMesh = await mw.GameObject.asyncSpawn<mw.Model>({
                     guid: "7669",
                     replicates: true,
-                }
-                const vehicleMesh = await GameObject.asyncSpawn(spanwInfo_mesh) as Mesh;
+                })
 
                 // 设置父子级关系。
                 this.interactor.attachToGameObject(this.vehicle);
@@ -89,25 +85,25 @@ export default class VehicleSample extends Script {
                 vehicleMesh.attachToGameObject(this.vehicle);
 
                 // 调整相对位置，使得玩家上车时刚好坐在Box上，下车时在触发器旁边。
-                this.interactor.relativeLocation = new Vector(0, 0, 150);
-                this.trigger.relativeLocation = new Vector(0, -100, 0);
-                vehicleMesh.relativeLocation = new Vector(0, 0, 50);
+                this.interactor.localTransform.position = new mw.Vector(0, 0, 150);
+                this.trigger.localTransform.position = new mw.Vector(0, -100, 0);
+                vehicleMesh.localTransform.position= new mw.Vector(0, 0, 50);
 
                 // 通知发起请求的客户端，载具已经创建完成。因为我们只通知了发起请求的客户端，所以每个客户端只能驾驶自己请求创建的载具。
-                dispatchToClient(player, VehicleEvents.createVehicle_S2C, [
+                mw.Event.dispatchEventToClient(player, VehicleEvents.createVehicle_S2C, [
                     this.vehicle.guid,
                     this.trigger.guid,
                     this.interactor.guid,
                 ])
             })
         } else {
-            InputUtil.onKeyDown(Type.Keys.Q, () => {
+            InputUtil.onKeyDown(Keys.Q, () => {
                 // 通过RPC调用，在服务器上动态生成载具以及触发器，交互物。
-                dispatchToServer(VehicleEvents.createVehicle_C2S);
+                mw.Event.dispatchEventToServer(VehicleEvents.createVehicle_C2S);
             })
 
             // 客户端监听服务器生成完毕的消息，绑定触发器的事件，实现上下车功能。
-            addServerListener(VehicleEvents.createVehicle_S2C, async (info: string[]) => {
+            mw.Event.addServerListener(VehicleEvents.createVehicle_S2C, async (info: string[]) => {
                 const [vehicleGUID, triggerGUID, interactorGUID] = info;
                 console.log(`vehicleGUID = [${vehicleGUID}], triggerGUID = [${triggerGUID}], interactorGUID = [${interactorGUID}]`);
 
@@ -125,11 +121,11 @@ export default class VehicleSample extends Script {
         // 通过触发器自动上车
         this.trigger.onEnter.add(async (chara: Character) => {
             // 判断是否是玩家角色触碰的触发器，且是当前玩家。
-            if (chara && chara.player == await asyncGetCurrentPlayer()) {
+            if (chara && chara.player == await mw.Player.asyncGetLocalPlayer()) {
                 // 关闭角色碰撞，避免与载具发生相互作用。
                 chara.collisionEnable = false;
                 // 激活交互物，让角色坐在车上。
-                this.interactor.startInteract(chara, InteractiveSlot.Buns, "14015");
+                this.interactor.start(chara, mw.SlotType.Buttocks, "14015");
                 // 设置载具的驾驶员，此时开始模拟物理，可以驾驶。
                 this.vehicle.owner = chara.player;
                 // 调整一些参数。
@@ -140,12 +136,12 @@ export default class VehicleSample extends Script {
         })
 
         // 监听下车事件。
-        addLocalListener(VehicleEvents.outOfVehicle_local, async () => {
-            const player = await asyncGetCurrentPlayer();
+        mw.Event.addLocalListener(VehicleEvents.outOfVehicle_local, async () => {
+            const player = await Player.asyncGetLocalPlayer();
             // 设置下车位置在触发器左边。
-            const outOfVehicleLoc = this.trigger.worldLocation.add(new Vector(0, -100, 50));
+            const outOfVehicleLoc = this.trigger.worldTransform.position.add(new Vector(0, -100, 50));
             // 结束交互，角色下车。
-            this.interactor.endInteract(outOfVehicleLoc);
+            this.interactor.end(outOfVehicleLoc);
             // 开启角色碰撞，避免掉下地面和其它碰撞不正确的问题。
             player.character.collisionEnable = true;
             // 清空载具驾驶员，此时依然会模拟物理，但无法继续控制。
@@ -160,53 +156,53 @@ export default class VehicleSample extends Script {
         this.clearControlEvents();
 
         //按下UP键，载具加油前进；
-        const handle_up_1 = InputUtil.onKeyDown(Type.Keys.W, () => {
+        const handle_up_1 = InputUtil.onKeyDown(Keys.W, () => {
             this.vehicle.throttleInput = 1;
         });
-        const handle_up_0 = InputUtil.onKeyUp(Type.Keys.W, () => {
+        const handle_up_0 = InputUtil.onKeyUp(Keys.W, () => {
             this.vehicle.throttleInput = 0;
         });
         this.controlEventsHandle.push(handle_up_1, handle_up_0);
 
         //按下Down键，载具减速后退；
-        const handle_down_1 = InputUtil.onKeyDown(Type.Keys.S, () => {
+        const handle_down_1 = InputUtil.onKeyDown(Keys.S, () => {
             this.vehicle.throttleInput = -1;
         });
-        const handle_down_0 = InputUtil.onKeyUp(Type.Keys.S, () => {
+        const handle_down_0 = InputUtil.onKeyUp(Keys.S, () => {
             this.vehicle.throttleInput = 0;
         });
         this.controlEventsHandle.push(handle_down_1, handle_down_0);
 
         //按下LEFT键，载具左转；
-        const handle_left_1 = InputUtil.onKeyDown(Type.Keys.A, () => {
+        const handle_left_1 = InputUtil.onKeyDown(Keys.A, () => {
             this.vehicle.steeringInput = -1;
         });
-        const handle_left_0 = InputUtil.onKeyUp(Type.Keys.A, () => {
+        const handle_left_0 = InputUtil.onKeyUp(Keys.A, () => {
             this.vehicle.steeringInput = 0;
         });
         this.controlEventsHandle.push(handle_left_1, handle_left_0);
 
         //按下RIGHT键，载具右转；
-        const handle_right_1 = InputUtil.onKeyDown(Type.Keys.D, () => {
+        const handle_right_1 = InputUtil.onKeyDown(Keys.D, () => {
             this.vehicle.steeringInput = 1;
         });
-        const handle_right_0 = InputUtil.onKeyUp(Type.Keys.D, () => {
+        const handle_right_0 = InputUtil.onKeyUp(Keys.D, () => {
             this.vehicle.steeringInput = 0;
         });
         this.controlEventsHandle.push(handle_right_1, handle_right_0);
 
         //按下SpaceBar键，载具刹车；
-        const handle_spaceBar_1 = InputUtil.onKeyDown(Type.Keys.SpaceBar, () => {
+        const handle_spaceBar_1 = InputUtil.onKeyDown(Keys.SpaceBar, () => {
             this.vehicle.handbrakeInputEnable = true;
         });
-        const handle_spaceBar_0 = InputUtil.onKeyUp(Type.Keys.SpaceBar, () => {
+        const handle_spaceBar_0 = InputUtil.onKeyUp(Keys.SpaceBar, () => {
             this.vehicle.handbrakeInputEnable = false;
         });
         this.controlEventsHandle.push(handle_spaceBar_1, handle_spaceBar_0);
 
         //按下F键，下车。
-        const handle_f = InputUtil.onKeyDown(Type.Keys.F, () => {
-            dispatchLocal(VehicleEvents.outOfVehicle_local);
+        const handle_f = InputUtil.onKeyDown(Keys.F, () => {
+            mw.Event.dispatchEventToLocal(VehicleEvents.outOfVehicle_local);
         });
         this.controlEventsHandle.push(handle_f);
     }
@@ -302,7 +298,6 @@ export default class VehicleSample extends Script {
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -316,15 +311,12 @@ export default class VehicleSample extends Script {
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -332,7 +324,7 @@ export default class VehicleSample extends Script {
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -585,7 +577,7 @@ ___
    })
 
    // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
-   this.joystick.onInputDir.add((vec: Vector2) => {
+   this.joystick.onInputDir.add((vec: mw.Vector2) => {
        // 控制油门
        vehicle.setThrottleInput(vec.y);
        // 控制转向
@@ -632,7 +624,7 @@ ___
    })
 
    // 通过摇杆控制载具，摇杆会同时提供两个轴向(x, y)的输入
-   this.joystick.onInputDir.add((vec: Vector2) => {
+   this.joystick.onInputDir.add((vec: mw.Vector2) => {
        // 控制油门
        vehicle.throttleInput = vec.y;
        // 控制转向

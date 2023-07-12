@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / MaterialInstance
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / MaterialInstance
 
 # MaterialInstance <Badge type="tip" text="Class" /> <Score text="MaterialInstance" />
 
@@ -6,10 +6,10 @@
 
 使用示例:创建一个名为"MaterialExample"的脚本,把脚本挂载到一个模型对象下,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到动态设置材质的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class MaterialExample extends Script {
     protected onStart(): void {
-        if (this.gameObject instanceof Mesh){
+        if (this.gameObject instanceof mw.Model){
             // 获取当前Mesh上的材质
             const mis = this.gameObject.getMaterialInstance();
             mis.forEach(mi => {

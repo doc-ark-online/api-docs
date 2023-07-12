@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / TouchPad
+[UI](../groups/Core.UI.md) / TouchPad
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 

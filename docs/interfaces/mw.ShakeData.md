@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / ShakeData
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ShakeData
 
 # ShakeData <Badge type="tip" text="Interface" /> <Score text="ShakeData" />
 

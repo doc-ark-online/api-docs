@@ -1,4 +1,4 @@
-[Animations](../groups/Core.Animations.md) / StanceBase
+[ANIMATIONS](../groups/Core.ANIMATIONS.md) / StanceBase
 
 # StanceBase <Badge type="tip" text="Class" /> <Score text="StanceBase" />
 

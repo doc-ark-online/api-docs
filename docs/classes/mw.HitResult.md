@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / HitResult
+[TYPE](../groups/Core.TYPE.md) / HitResult
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 
@@ -6,21 +6,21 @@
 
 使用示例:创建一个名为"HitResultExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,并在场景中创建一个模型放置在200, 10, 0的位置，运行游戏,你将在日志中看到射线检测到的HitResult信息数组.代码如下:
 ```ts
-const result = lineTrace(new Vector(100), new Vector(1000), true, true);
-@Core.Class
+const result = QueryUtil.lineTrace(new Vector(100), new Vector(1000), true, true);
+@Class
 export default class HitResultExample extends Script {
 
     protected onStart(): void {
         if (this.isRunningClient()) {
+            // 开始位置
             let startLocation = new Vector(100, 10, 100);
-// 开始位置
+            // 结束位置
             let endLocation = new Vector(1000, 10, 100);
-// 结束位置
-            const result = lineTrace(startLocation, endLocation, true, true);
-// 返回的HitResult数组
+            // 返回的HitResult数组
+            const result = QueryUtil.lineTrace(startLocation, endLocation, true, true);
             result.forEach(element => {
+                // 通过HitResult访问返回值gameObject的名字
                 console.log(`命中GameObject的名字: ${element.gameObject.name}`);
-// 通过HitResult访问返回值gameObject的名字
             });
         }
     }

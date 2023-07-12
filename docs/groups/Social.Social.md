@@ -1,6 +1,6 @@
-Social
+SOCIAL
 
-# Social <Badge type="tip" text="Groups" /> <Score text="Social" />
+# SOCIAL <Badge type="tip" text="Groups" /> <Score text="SOCIAL" />
 
 ## Table of contents
 | Classes |

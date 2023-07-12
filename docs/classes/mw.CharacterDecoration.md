@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / CharacterDecoration
+[AVATAR](../groups/Core.AVATAR.md) / CharacterDecoration
 
 # CharacterDecoration <Badge type="tip" text="Class" /> <Score text="CharacterDecoration" />
 
@@ -34,13 +34,10 @@
 
 :::
 
-使用示例:提供按键方法，给角色插槽添加，删除，清空挂件
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Add"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Core.Class
-export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,60858";
+@Class
+export default class Example_CharacterDecoration_Add extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -49,43 +46,25 @@ preloadAssets = "14521,35391,161245,60858";
             let myPlayer = Player.localPlayer;
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            // 给【外观加载完成】委托添加函数，
-            myCharacter.onStyleCompleted.add(() => {
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-            });
-            // 获取角色默认外观风格
-            let defaultStyle = myCharacter.getStyleData();
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setDescription(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法:按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件
+            InputUtil.onKeyDown(Keys.One, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.add("60858", new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1)));
                 }
             });
-            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法:按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.delete(ring, true);
                     }
                 }
             });
-            // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件
+            InputUtil.onKeyDown(Keys.Three, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.clear(true);
                 }
             });
         }
@@ -110,13 +89,10 @@ ___
 清空当前外观插槽的所有挂件
 
 
-使用示例:提供按键方法，给角色插槽添加，删除，清空挂件
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Clear"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Core.Class
-export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,60858";
+@Class
+export default class Example_CharacterDecoration_Clear extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -125,43 +101,25 @@ preloadAssets = "14521,35391,161245,60858";
             let myPlayer = Player.localPlayer;
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            // 给【外观加载完成】委托添加函数，
-            myCharacter.onStyleCompleted.add(() => {
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-            });
-            // 获取角色默认外观风格
-            let defaultStyle = myCharacter.getStyleData();
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setDescription(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法:按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件
+            InputUtil.onKeyDown(Keys.One, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.add("60858", new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1)));
                 }
             });
-            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法:按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.delete(ring, true);
                     }
                 }
             });
-            // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV4) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件
+            InputUtil.onKeyDown(Keys.Three, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.clear(true);
                 }
             });
         }
@@ -185,13 +143,10 @@ ___
 从当前插槽中删除一个挂件
 
 
-使用示例:提供按键方法，给角色插槽添加，删除，清空挂件
+使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Delete"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Core.Class
-export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,60858";
+@Class
+export default class Example_CharacterDecoration_Delete extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -200,43 +155,25 @@ preloadAssets = "14521,35391,161245,60858";
             let myPlayer = Player.localPlayer;
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
-            // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
-                let animation = myCharacter.loadAnimation("35391");
-                animation.play();
-            } else {
-                let animation = myCharacter.loadAnimation("14521");
-                animation.play();
-            }
-            // 给【外观加载完成】委托添加函数，
-            myCharacter.onStyleCompleted.add(() => {
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
-            });
-            // 获取角色默认外观风格
-            let defaultStyle = myCharacter.getStyleData();
-            // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                myCharacter.setDescription(defaultStyle);
-            });
-            // 添加一个按键方法:按下键盘“2”，给角色插槽【头顶光圈】添加1个挂件60858
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法:按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件
+            InputUtil.onKeyDown(Keys.One, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.add({attachmentAssetId: "60858", attachmentOffset: new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1))});
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.add("60858", new Transform(new Vector(0, 0, MathUtil.randomInt(0, 100)), Rotation.zero, Vector.one.multiply(0.1)));
                 }
             });
-            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的第一个挂件
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法:按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
-                    let ring = myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment[0].attachmentGameObject;
+                    let ring = myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration[0].attachmentGameObject;
                     if(ring) {
-                        myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.delete(ring);
+                        myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.delete(ring, true);
                     }
                 }
             });
-            // 添加一个按键方法:按下键盘“4”，删除角色插槽【头顶光圈】的所有挂件
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                if(myCharacter.characterType == CharacterType.HumanoidV3) {
-                    myCharacter.description.advance.slotAndAttachment.slot[SlotType.Rings].attachment.clear();
+            // 添加一个按键方法:按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件
+            InputUtil.onKeyDown(Keys.Three, () => {
+                if(myCharacter.characterType == CharacterType.HumanoidV2) {
+                    myCharacter.description.advance.slotAndDecoration.slot[HumanoidType.Rings].decoration.clear(true);
                 }
             });
         }

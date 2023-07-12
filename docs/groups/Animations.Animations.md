@@ -1,11 +1,11 @@
-Animations
+ANIMATIONS
 
-# Animations <Badge type="tip" text="Groups" /> <Score text="Animations" />
+# ANIMATIONS <Badge type="tip" text="Groups" /> <Score text="ANIMATIONS" />
 
 ## Table of contents
 | Classes |
 | :-----|
-| [Animation](../classes/mw.Animation.md) <br> 动画类 |
+| [Animation](../classes/mw.Animation.md) <br> 动画类(测试信息!!!) |
 | [Stance](../classes/mw.Stance.md) <br> 基础姿态 |
 | [StanceBase](../classes/mw.StanceBase.md) <br> 姿态 |
 | [SubStance](../classes/mw.SubStance.md) <br> 二级姿态 |

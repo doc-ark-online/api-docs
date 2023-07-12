@@ -1,4 +1,4 @@
-[Animations](../groups/Core.Animations.md) / AnimationMode
+[ANIMATIONS](../groups/Core.ANIMATIONS.md) / AnimationMode
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 

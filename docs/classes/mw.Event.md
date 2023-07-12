@@ -1,4 +1,4 @@
-[Scripting](../groups/Core.Scripting.md) / Event
+[SCRIPTING](../groups/Core.SCRIPTING.md) / Event
 
 # Event <Badge type="tip" text="Class" /> <Score text="Event" />
 

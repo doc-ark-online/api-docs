@@ -1,6 +1,6 @@
-Settings
+SETTINGS
 
-# Settings <Badge type="tip" text="Groups" /> <Score text="Settings" />
+# SETTINGS <Badge type="tip" text="Groups" /> <Score text="SETTINGS" />
 
 ## Table of contents
 | Classes |
@@ -9,6 +9,7 @@ Settings
 | [EnvironmentSettings](../classes/mw.EnvironmentSettings.md) <br> 环境设置 |
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md) <br> 图片画质设置 |
 | [RoomSettings](../classes/mw.RoomSettings.md) <br> 房间设置 |
+| [ScriptingSettings](../classes/mw.ScriptingSettings.md) <br> 全局的脚本配置信息 |
 
 
 | Enums |

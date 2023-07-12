@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HttpRequestURL
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HttpRequestURL
 
 # HttpRequestURL <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestURL" />
 

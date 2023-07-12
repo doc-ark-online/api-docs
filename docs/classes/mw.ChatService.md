@@ -1,4 +1,4 @@
-[Social](../groups/Core.Social.md) / ChatService
+[SOCIAL](../groups/Core.SOCIAL.md) / ChatService
 
 # ChatService <Badge type="tip" text="Class" /> <Score text="ChatService" />
 
@@ -24,23 +24,23 @@
 
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示富文本字体的效果。代码如下：
 ```ts
-@Core.Class
+@Class
  export default class messageExample extends Script {
 
      protected onStart(): void {
           this.Mgs();
      }
 
-     @Core.Function(Core.Server)
+     @mw.RemoteFunction(mw.Server)
      public Mgs(){
-         let type: MessageType.Room;
+         let type: mw.MessageType.Room;
          // content内容可以是富文本格式文字。
          // 富文本可使文本实现不同字号、不同颜色等多种效果。
          // <b>以粗体显示文本。eg:We are <b>not</b> amused. =>not字体为粗体
          // <color=#ff0000ff>或<color=#red>根据参数值#rrggbbaa设置文本的颜色，分别表示颜色的红、绿、蓝和 Alpha（透明度）值，大小写都能识别.eg:We are <color=#red>colorfully</color> amused. =>colorfully字体为红色。
          // <u>以下划线显示文本。eg:We are <u>not</u> amused. =>not字体存在下划线。
          let content = "<b><color=#ff0000ff>系统提示：</color></b>恭喜玩家<b><u><color=#yellow>起个名字好难</color> </u></b>！在<u><color=#red>萌宠转转转</color></u>活动中获得活泼可爱的<u><color=#black>萌兔宝宝</color> </u> ！";
-         ChatService.getInstance().asyncBroadcastMessage(type,content);
+         ChatService.asyncBroadcastMessage(type,content);
       }
  }
 

@@ -1,4 +1,4 @@
-[Physics](../groups/Core.Physics.md) / TriggerShapeType
+[PHYSICS](../groups/Core.PHYSICS.md) / TriggerShapeType
 
 # TriggerShapeType <Badge type="tip" text="Enumeration" /> <Score text="TriggerShapeType" />
 

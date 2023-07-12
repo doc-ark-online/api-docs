@@ -1,4 +1,4 @@
-[Social](../groups/Core.Social.md) / RouteService
+[SOCIAL](../groups/Core.SOCIAL.md) / RouteService
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
@@ -115,8 +115,8 @@ View刷新的委托
 
 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，当从其他游戏跳转到当前游戏时，会在角色名称处显示跳转游戏的gameId和携带的数据
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -124,7 +124,7 @@ export default class RouteExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         RouteService.addJumpGameCallback((id: string, data: string) => {
             player.character.characterName = "JumpGame :" + data + "from " + id;
         })
@@ -172,8 +172,8 @@ ___
 
 使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后会自动跳转到角色编辑游戏。
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -234,7 +234,7 @@ ___
 // 这里的 P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40 是游戏《只因哥大战小黑子》的gameid
 // 跳游戏的话，默认会跳往 现行的、目前处在上线状态的、过了审的那个版本
 // 没有过审的话，将无法跳进去哦
-RouteService.enterNewGame("P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40");
+mw.RouteService.enterNewGame("P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40");
 ```
 
 #### Parameters
@@ -285,8 +285,8 @@ ___
 
 使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后进入广场游戏。
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -346,8 +346,8 @@ ___
 
 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示GameId，PC环境为空
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -355,7 +355,7 @@ export default class RouteExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "gameId:" + RouteService.getGameId();
     }
 }
@@ -384,8 +384,8 @@ ___
 
 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示游戏版本，PC环境为空
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -393,7 +393,7 @@ export default class RouteExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "游戏版本:" + RouteService.getGameVersion();
     }
 }
@@ -437,8 +437,8 @@ ___
 
 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示短游戏ID，PC环境为空
 ```ts
-@Core.Class
-export default class RouteExample extends Script {
+@Core.Component
+export default class RouteExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -446,7 +446,7 @@ export default class RouteExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         player.character.characterName = "短游戏ID:" + RouteService.getMGSGameId();
     }
 }

@@ -1,4 +1,4 @@
-[Lighting](../groups/Core.Lighting.md) / SkyPreset
+[LIGHTING](../groups/Core.LIGHTING.md) / SkyPreset
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 

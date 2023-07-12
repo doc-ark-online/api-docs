@@ -1,4 +1,4 @@
-[Animations](../groups/Core.Animations.md) / SubStance
+[ANIMATIONS](../groups/Core.ANIMATIONS.md) / SubStance
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
@@ -8,7 +8,7 @@
 ```ts
 this.stanceProxy = this.character.loadSubStance("49096", true);
 // 修改姿态的混合模式为全身
-this.stanceProxy.blendMode = StanceBlendMode.WholeBody;
+this.stanceProxy.blendMode = mw.StanceBlendMode.WholeBody;
 // 播放这个姿态
 this.stanceProxy.play();
 // 当你想停止它时, 可以执行下面的代码
@@ -39,13 +39,10 @@ this.stanceProxy.stop();
 
 资源GUID
 
-使用示例:给角色加载一个上半身拳击姿态和一个下半身踢腿姿态，修改姿态对象的属性并提供按键方法控制播放和停止。
+使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_AssetId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Core.Class
-export default class CharacterStanceExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "94261,14520";
+@Class
+export default class Example_SubStance_AssetId extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -63,17 +60,17 @@ preloadAssets = "94261,14520";
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                if(myCharacter.currentStance == aimStance) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(myCharacter.currentSubStance == aimStance) {
                     kickStance.play();
                 } else {
                     aimStance.play();
                 }
             });
             // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.currentStance) {
-                    myCharacter.currentStance.stop();
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.currentSubStance) {
+                    myCharacter.currentSubStance.stop();
                 }
             });
         }
@@ -102,13 +99,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个上半身拳击姿态和一个下半身踢腿姿态，修改姿态对象的属性并提供按键方法控制播放和停止。
+使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Core.Class
-export default class CharacterStanceExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "94261,14520";
+@Class
+export default class Example_SubStance_BlendMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -126,17 +120,17 @@ preloadAssets = "94261,14520";
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                if(myCharacter.currentStance == aimStance) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(myCharacter.currentSubStance == aimStance) {
                     kickStance.play();
                 } else {
                     aimStance.play();
                 }
             });
             // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.currentStance) {
-                    myCharacter.currentStance.stop();
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.currentSubStance) {
+                    myCharacter.currentSubStance.stop();
                 }
             });
         }
@@ -161,13 +155,10 @@ preloadAssets = "94261,14520";
 
 :::
 
-使用示例:给角色加载一个上半身拳击姿态和一个下半身踢腿姿态，修改姿态对象的属性并提供按键方法控制播放和停止。
+使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Core.Class
-export default class CharacterStanceExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "94261,14520";
+@Class
+export default class Example_SubStance_BlendMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -185,17 +176,17 @@ preloadAssets = "94261,14520";
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                if(myCharacter.currentStance == aimStance) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(myCharacter.currentSubStance == aimStance) {
                     kickStance.play();
                 } else {
                     aimStance.play();
                 }
             });
             // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.currentStance) {
-                    myCharacter.currentStance.stop();
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.currentSubStance) {
+                    myCharacter.currentSubStance.stop();
                 }
             });
         }
@@ -225,13 +216,10 @@ preloadAssets = "94261,14520";
 
 :::
 
-使用示例:给角色加载一个上半身拳击姿态和一个下半身踢腿姿态，修改姿态对象的属性并提供按键方法控制播放和停止。
+使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Core.Class
-export default class CharacterStanceExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "94261,14520";
+@Class
+export default class Example_SubStance_Play extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -249,17 +237,17 @@ preloadAssets = "94261,14520";
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                if(myCharacter.currentStance == aimStance) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(myCharacter.currentSubStance == aimStance) {
                     kickStance.play();
                 } else {
                     aimStance.play();
                 }
             });
             // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.currentStance) {
-                    myCharacter.currentStance.stop();
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.currentSubStance) {
+                    myCharacter.currentSubStance.stop();
                 }
             });
         }
@@ -271,7 +259,7 @@ preloadAssets = "94261,14520";
 
 `boolean`
 
-播放结果
+播放结果，当未进行资源加载时，会返回false，但内部会进行资源异步加载，并在完成后播放。
 
 ___
 
@@ -288,13 +276,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个上半身拳击姿态和一个下半身踢腿姿态，修改姿态对象的属性并提供按键方法控制播放和停止。
+使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Core.Class
-export default class CharacterStanceExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "94261,14520";
+@Class
+export default class Example_SubStance_Stop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -312,17 +297,17 @@ preloadAssets = "94261,14520";
             kickStance.blendMode = StanceBlendMode.BlendLower;
             console.log("kickStance assetId " + kickStance.assetId);
             // 添加一个按键方法:按下键盘“1”，切换播放瞄准姿态和踢腿姿态
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                if(myCharacter.currentStance == aimStance) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                if(myCharacter.currentSubStance == aimStance) {
                     kickStance.play();
                 } else {
                     aimStance.play();
                 }
             });
             // 添加一个按键方法:按下键盘“2”，停止播放姿态
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                if(myCharacter.currentStance) {
-                    myCharacter.currentStance.stop();
+            InputUtil.onKeyDown(Keys.Two, () => {
+                if(myCharacter.currentSubStance) {
+                    myCharacter.currentSubStance.stop();
                 }
             });
         }

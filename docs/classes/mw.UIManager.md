@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / UIManager
+[UI](../groups/Core.UI.md) / UIManager
 
 # UIManager <Badge type="tip" text="Class" /> <Score text="UIManager" />
 
@@ -17,10 +17,10 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 | Properties |
 | :-----|
-| **[allPanels](mw.UIManager.md#allpanels)**: [`UIBehavior`](mw.UIBehavior.md)[] <br> 所有创建过的Panel|
-| **[createPanelMap](mw.UIManager.md#createpanelmap)**: `Map`<`string`, [`UIBehavior`](mw.UIBehavior.md)[]\> <br> 所有创建过的管理好的 panels|
+| **[allPanels](mw.UIManager.md#allpanels)**: [`UIScript`](mw.UIScript.md)[] <br> 所有创建过的Panel|
+| **[createPanelMap](mw.UIManager.md#createpanelmap)**: `Map`<`string`, [`UIScript`](mw.UIScript.md)[]\> <br> 所有创建过的管理好的 panels|
 | **[logUIInfo](mw.UIManager.md#loguiinfo)**: `boolean` <br> 是否dump GameUI Log 信息|
-| **[uniquePanel](mw.UIManager.md#uniquepanel)**: [`UIBehavior`](mw.UIBehavior.md) <br> 独占Panel|
+| **[uniquePanel](mw.UIManager.md#uniquepanel)**: [`UIScript`](mw.UIScript.md) <br> 独占Panel|
 
 | Accessors |
 | :-----|
@@ -31,27 +31,27 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 | Methods |
 | :-----|
 | **[addUILayerMap](mw.UIManager.md#adduilayermap)**(`layer`: `number`, `startZOrder`: `number`): `void` <br> 添加UI的管理层|
-| **[create](mw.UIManager.md#create)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> <br> 创建一个界面|
+| **[create](mw.UIManager.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <br> 创建一个界面|
 | **[destroy](mw.UIManager.md#destroy)**(): `void` <br> 销毁该单列，也会销毁所有的UI,需要重新创建才能管理UI|
-| **[destroyUI](mw.UIManager.md#destroyui)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`): `void` <br> 销毁一个界面,相当于DestroyObject|
+| **[destroyUI](mw.UIManager.md#destroyui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`): `void` <br> 销毁一个界面,相当于DestroyObject|
 | **[dumpUIData](mw.UIManager.md#dumpuidata)**(): `void` <br> 打印所有管理到的UI信息|
-| **[getAllUI](mw.UIManager.md#getallui)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>[] <br> 根据界面类获取界面的所有对象|
-| **[getUI](mw.UIManager.md#getui)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`, `bNeedNew?`: `boolean`): `T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> <br> 根据界面类获取界面的对象|
-| **[getUILayer](mw.UIManager.md#getuilayer)**(`panel`: [`UIBehavior`](mw.UIBehavior.md)): `number` <br> 获取一个UI的层级|
-| **[hide](mw.UIManager.md#hide)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> <br> 隐藏一个界面，只是隐藏界面设置为Collapsed|
-| **[hideUI](mw.UIManager.md#hideui)**(`panel`: [`UIBehavior`](mw.UIBehavior.md)): `boolean` <br> 移除一个显示的界面,只是隐藏界面设置为Collapsed|
+| **[getAllUI](mw.UIManager.md#getallui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>[] <br> 根据界面类获取界面的所有对象|
+| **[getUI](mw.UIManager.md#getui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`, `bNeedNew?`: `boolean`): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <br> 根据界面类获取界面的对象|
+| **[getUILayer](mw.UIManager.md#getuilayer)**(`panel`: [`UIScript`](mw.UIScript.md)): `number` <br> 获取一个UI的层级|
+| **[hide](mw.UIManager.md#hide)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <br> 隐藏一个界面，只是隐藏界面设置为Collapsed|
+| **[hideUI](mw.UIManager.md#hideui)**(`panel`: [`UIScript`](mw.UIScript.md)): `boolean` <br> 移除一个显示的界面,只是隐藏界面设置为Collapsed|
 | **[init](mw.UIManager.md#init)**(): `void` <br> 初始化UIManger|
-| **[isShown](mw.UIManager.md#isshown)**(`panel`: [`UIBehavior`](mw.UIBehavior.md)): `boolean` <br> 判断界面是否处于显示状态,需要位于层类显示并且是可见的|
+| **[isShown](mw.UIManager.md#isshown)**(`panel`: [`UIScript`](mw.UIScript.md)): `boolean` <br> 判断界面是否处于显示状态,需要位于层类显示并且是可见的|
 | **[setAllMiddleAndBottomPanelVisible](mw.UIManager.md#setallmiddleandbottompanelvisible)**(`value`: `boolean`): `void` <br> 设置Middle和Bottom层所有Panel的可见性|
-| **[show](mw.UIManager.md#show)**<`T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\>\>(`PanelClass`: () => `T`, `...params`: `any`[]): `T`: extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> <br> 显示一个界面，会把界面添加到界面上，从原有父节点移除|
-| **[showUI](mw.UIManager.md#showui)**(`panel`: [`UIBehavior`](mw.UIBehavior.md), `layer?`: `number`, `...params`: `any`[]): [`UIBehavior`](mw.UIBehavior.md) <br> 显示一个界面,会把界面添加到界面上，从原有父节点移除|
+| **[show](mw.UIManager.md#show)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`, `...params`: `any`[]): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\> <br> 显示一个界面，会把界面添加到界面上，从原有父节点移除|
+| **[showUI](mw.UIManager.md#showui)**(`panel`: [`UIScript`](mw.UIScript.md), `layer?`: `number`, `...params`: `any`[]): [`UIScript`](mw.UIScript.md) <br> 显示一个界面,会把界面添加到界面上，从原有父节点移除|
 | **[getInstance](mw.UIManager.md#getinstance)**<`T`: extends [`UIManager`](mw.UIManager.md)<`T`\>\>(`ManagerClass`: () => `T`): `T`: extends [`UIManager`](mw.UIManager.md)<`T`\> <br> 获取UIManager子类ManagerClass单例，如果是第一次调用会创建一个ManagerClass的单例供全局使用|
 
 ## Properties
 
 ### allPanels <Score text="allPanels" /> 
 
-• `Protected` **allPanels**: [`UIBehavior`](mw.UIBehavior.md)[]
+• `Protected` **allPanels**: [`UIScript`](mw.UIScript.md)[]
 
 所有创建过的Panel
 
@@ -59,7 +59,7 @@ ___
 
 ### createPanelMap <Score text="createPanelMap" /> 
 
-• `Protected` **createPanelMap**: `Map`<`string`, [`UIBehavior`](mw.UIBehavior.md)[]\>
+• `Protected` **createPanelMap**: `Map`<`string`, [`UIScript`](mw.UIScript.md)[]\>
 
 所有创建过的管理好的 panels
 
@@ -75,7 +75,7 @@ ___
 
 ### uniquePanel <Score text="uniquePanel" /> 
 
-• `Protected` **uniquePanel**: [`UIBehavior`](mw.UIBehavior.md)
+• `Protected` **uniquePanel**: [`UIScript`](mw.UIScript.md)
 
 独占Panel
 
@@ -166,7 +166,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -203,7 +203,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -235,7 +235,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -262,7 +262,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -290,7 +290,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `panel` | [`UIBehavior`](mw.UIBehavior.md) | GameUI |
+| `panel` | [`UIScript`](mw.UIScript.md) | GameUI |
 
 #### Returns
 
@@ -311,7 +311,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -338,7 +338,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `panel` | [`UIBehavior`](mw.UIBehavior.md) | 界面 |
+| `panel` | [`UIScript`](mw.UIScript.md) | 界面 |
 
 #### Returns
 
@@ -370,7 +370,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `panel` | [`UIBehavior`](mw.UIBehavior.md) | 界面 |
+| `panel` | [`UIScript`](mw.UIScript.md) | 界面 |
 
 #### Returns
 
@@ -407,7 +407,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`UIBehavior`](mw.UIBehavior.md)<`T`\> |
+| `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
 
 #### Parameters
 
@@ -426,7 +426,7 @@ ___
 
 ### showUI <Score text="showUI" /> 
 
-• **showUI**(`panel`, `layer?`, `...params`): [`UIBehavior`](mw.UIBehavior.md) <Badge type="tip" text="client" />
+• **showUI**(`panel`, `layer?`, `...params`): [`UIScript`](mw.UIScript.md) <Badge type="tip" text="client" />
 
 显示一个界面,会把界面添加到界面上，从原有父节点移除
 
@@ -435,13 +435,13 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `panel` | [`UIBehavior`](mw.UIBehavior.md) | 界面 |
+| `panel` | [`UIScript`](mw.UIScript.md) | 界面 |
 | `layer?` | `number` | 图层 default:UILayer.UILayerMiddle |
 | `...params` | `any`[] | 显示参数(这个参数可以传递给界面的onShow方法) |
 
 #### Returns
 
-[`UIBehavior`](mw.UIBehavior.md)
+[`UIScript`](mw.UIScript.md)
 
 显示的界面
 

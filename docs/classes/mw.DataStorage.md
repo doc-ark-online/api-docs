@@ -1,4 +1,4 @@
-[Data](../groups/Core.Data.md) / DataStorage
+[DATA](../groups/Core.DATA.md) / DataStorage
 
 # DataStorage <Badge type="tip" text="Class" /> <Score text="DataStorage" />
 
@@ -129,7 +129,7 @@ ___
 
 ### getDataSize <Score text="getDataSize" /> 
 
-• `Static` **getDataSize**(`data`): `number` <Badge type="tip" text="server" />
+• `Static` **getDataSize**(`data`): `number` 
 
 返回data的当前大小。单位为bytes（字节）。
 

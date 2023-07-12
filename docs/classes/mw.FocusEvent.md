@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / FocusEvent
+[UI](../groups/Core.UI.md) / FocusEvent
 
 # FocusEvent <Badge type="tip" text="Class" /> <Score text="FocusEvent" />
 

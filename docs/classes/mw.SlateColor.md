@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / SlateColor
+[UI](../groups/Core.UI.md) / SlateColor
 
 # SlateColor <Badge type="tip" text="Class" /> <Score text="SlateColor" />
 

@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / Button
+[UI](../groups/Core.UI.md) / Button
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 

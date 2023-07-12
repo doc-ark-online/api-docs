@@ -1,4 +1,4 @@
-[Sound](../groups/Core.Sound.md) / SoundService
+[SOUND](../groups/Core.SOUND.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
@@ -124,8 +124,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -133,13 +133,13 @@ export default class SoundExample extends Script {
     }
 
     private async test(): Promise<void> {
-        const player = await asyncGetCurrentPlayer();
+        const player = await mw.asyncGetCurrentPlayer();
         const bgmSoundAssetId = "12721";
         const cubeId = "7669";
-        GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
-            obj.worldLocation = new Vector(0, 0, 0);
+        mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new mw.Vector(0, 0, 0);
         })
-        let playId = SoundService.play3DSound(bgmSoundAssetId, new Vector(0, 0, 0), 0);
+        let playId = SoundService.play3DSound(bgmSoundAssetId, new mw.Vector(0, 0, 0), 0);
         InputUtil.onKeyDown(Keys.F, () => {
             SoundService.get3DSound(playId).then(obj => {
                 obj.worldLocation = player.character.worldLocation;
@@ -174,8 +174,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -185,8 +185,8 @@ export default class SoundExample extends Script {
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "7669";
-        GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
-            obj.worldLocation = new Vector(0, 0, 0);
+        mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new mw.Vector(0, 0, 0);
         })
         let isPlay = false;
         let playId = 0;
@@ -194,7 +194,7 @@ export default class SoundExample extends Script {
             if (isPlay) {
                 SoundService.stop3DSound(playId);
             } else {
-                playId = SoundService.play3DSound(bgmSoundAssetId, new Vector(0, 0, 0), 0);
+                playId = SoundService.play3DSound(bgmSoundAssetId, new mw.Vector(0, 0, 0), 0);
             }
             isPlay = !isPlay;
         })
@@ -208,7 +208,7 @@ export default class SoundExample extends Script {
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `assetId` | `string` |  资源Id |
-| `target` | `string` \| [`Vector`](mw.Vector.md) \| [`GameObject`](mw.GameObject.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
+| `target` | `string` \| [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
 | `loopCount?` | `number` |  循环次数 default: 1 |
 | `volume?` | `number` |  音量 default: 1 |
 | `params?` | `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
@@ -233,8 +233,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -275,8 +275,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -284,7 +284,7 @@ export default class SoundExample extends Script {
     }
 
     private async test(): Promise<void> {
-        const player = await asyncGetCurrentPlayer();
+        const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         InputUtil.onKeyDown(Keys.F, () => {
             SoundService.playSound(boomSoundAssetId);
@@ -320,8 +320,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -331,8 +331,8 @@ export default class SoundExample extends Script {
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
         const cubeId = "7669";
-        GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
-            obj.worldLocation = new Vector(0, 0, 0);
+        mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+            obj.worldLocation = new mw.Vector(0, 0, 0);
         })
         let isPlay = false;
         let playId = 0;
@@ -340,7 +340,7 @@ export default class SoundExample extends Script {
             if (isPlay) {
                 SoundService.stop3DSound(playId);
             } else {
-                playId = SoundService.play3DSound(bgmSoundAssetId, new Vector(0, 0, 0), 0);
+                playId = SoundService.play3DSound(bgmSoundAssetId, new mw.Vector(0, 0, 0), 0);
             }
             isPlay = !isPlay;
         })
@@ -368,8 +368,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -382,8 +382,8 @@ export default class SoundExample extends Script {
         for (let i = 0;
 i < 10;
 i++) {
-            GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
-                obj.worldLocation = new Vector(i * 300, 0, 0);
+            mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
+                obj.worldLocation = new mw.Vector(i * 300, 0, 0);
                 SoundService.play3DSound(bgmSoundAssetId, obj, 0);
             })
         }
@@ -408,8 +408,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -417,7 +417,7 @@ export default class SoundExample extends Script {
     }
 
     private async test(): Promise<void> {
-        const player = await asyncGetCurrentPlayer();
+        const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         const boomSoundAssetId2 = "20479";
         let isPlay = false;
@@ -449,8 +449,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -486,8 +486,8 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
 ```ts
-@Core.Class
-export default class SoundExample extends Script {
+@Core.Component
+export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -495,7 +495,7 @@ export default class SoundExample extends Script {
     }
 
     private async test(): Promise<void> {
-        const player = await asyncGetCurrentPlayer();
+        const player = await mw.asyncGetCurrentPlayer();
         const boomSoundAssetId = "13896";
         let isPlay = false;
         InputUtil.onKeyDown(Keys.F, () => {

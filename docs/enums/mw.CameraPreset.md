@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / CameraPreset
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraPreset
 
 # CameraPreset <Badge type="tip" text="Enumeration" /> <Score text="CameraPreset" />
 

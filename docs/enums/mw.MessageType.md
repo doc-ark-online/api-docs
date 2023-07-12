@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / MessageType
+[TYPE](../groups/Core.TYPE.md) / MessageType
 
 # MessageType <Badge type="tip" text="Enumeration" /> <Score text="MessageType" />
 

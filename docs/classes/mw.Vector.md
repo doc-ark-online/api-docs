@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / Vector
+[TYPE](../groups/Core.TYPE.md) / Vector
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 
@@ -448,7 +448,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `other` | [`Vector`](mw.Vector.md) | 指定的向量 |
-| `epsilon?` | `number` | 最小误差数 default:MathUtil.EPSILON |
+| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
 
@@ -1071,7 +1071,7 @@ ___
 | :------ | :------ | :------ |
 | `a` | [`Vector`](mw.Vector.md) | 向量a |
 | `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-| `epsilon?` | `number` | 最小误差数 default:MathUtil.EPSILON |
+| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
 

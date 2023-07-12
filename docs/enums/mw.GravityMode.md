@@ -1,4 +1,4 @@
-[Settings](../groups/Core.Settings.md) / GravityMode
+[SETTINGS](../groups/Core.SETTINGS.md) / GravityMode
 
 # GravityMode <Badge type="tip" text="Enumeration" /> <Score text="GravityMode" />
 

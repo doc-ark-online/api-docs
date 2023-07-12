@@ -1,6 +1,6 @@
-Debugging
+DEBUGGING
 
-# Debugging <Badge type="tip" text="Groups" /> <Score text="Debugging" />
+# DEBUGGING <Badge type="tip" text="Groups" /> <Score text="DEBUGGING" />
 
 ## Table of contents
 | Classes |

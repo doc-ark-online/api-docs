@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / PanelWidget
+[UI](../groups/Core.UI.md) / PanelWidget
 
 # PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
 

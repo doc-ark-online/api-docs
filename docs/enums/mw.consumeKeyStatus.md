@@ -1,4 +1,4 @@
-[Monetization](../groups/Core.Monetization.md) / consumeKeyStatus
+[MONETIZATION](../groups/Core.MONETIZATION.md) / consumeKeyStatus
 
 # consumeKeyStatus <Badge type="tip" text="Enumeration" /> <Score text="consumeKeyStatus" />
 

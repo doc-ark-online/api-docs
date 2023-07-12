@@ -1,6 +1,6 @@
-Lighting
+LIGHTING
 
-# Lighting <Badge type="tip" text="Groups" /> <Score text="Lighting" />
+# LIGHTING <Badge type="tip" text="Groups" /> <Score text="LIGHTING" />
 
 ## Table of contents
 | Classes |

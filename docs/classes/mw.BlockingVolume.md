@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / BlockingVolume
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / BlockingVolume
 
 # BlockingVolume <Badge type="tip" text="Class" /> <Score text="BlockingVolume" />
 
@@ -13,7 +13,7 @@
 使用示例:请尽量放置在场景中，通过动态查找获取。不推荐动态生成，不支持重叠使用。
 创建一个名为"BlockingVolExample"的脚本,放置在对象栏中,打开脚本,输入以下代码，替换GUID保存,运行游戏,你将可以通过该GUID对应的禁行区.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class BlockingVolExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected async onStart(): Promise<void> {
@@ -21,16 +21,16 @@ export default class BlockingVolExample extends Script {
         let player =  asyncGetCurrentPlayer()[0];
         // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
         let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
-        if(Util.SystemUtil.isClient())
+        if(SystemUtil.isClient())
         {
-            InputUtil.onKeyDown(Type.Keys.F1,()=>{
+            mw.InputUtil.onKeyDown(Keys.F1,()=>{
                 // F1键 通知服务器执行事件 参数传入当前玩家
-                dispatchToServer(`AddPlayerPassable`,player);
+                mw.Event.dispatchEventToServer(`AddPlayerPassable`,player);
             })
         }
-        if(Util.SystemUtil.isServer()){
+        if(SystemUtil.isServer()){
             // 侦听客户端通知
-            addClientListener(`AddPlayerPassable`,(player : Player)=>{
+            mw.Event.addClientListener(`AddPlayerPassable`,(player : Player)=>{
             // 玩家角色添加通行许可
             blockingVolume.addPassableTarget(player.character);
             })
@@ -99,7 +99,6 @@ export default class BlockingVolExample extends Script {
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -113,15 +112,12 @@ export default class BlockingVolExample extends Script {
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -129,7 +125,7 @@ export default class BlockingVolExample extends Script {
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -151,16 +147,16 @@ export default class BlockingVolExample extends Script {
  let player =  asyncGetCurrentPlayer()[0];
  // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
  let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
- if(Util.SystemUtil.isClient())
+ if(SystemUtil.isClient())
  {
-     InputUtil.onKeyDown(Type.Keys.F1,()=>{
+     InputUtil.onKeyDown(Keys.F1,()=>{
          // F1键 通知服务器执行事件 参数传入当前玩家
-         dispatchToServer(`AddPlayerPassable`,player);
+         mw.Event.dispatchEventToServer(`AddPlayerPassable`,player);
      })
  }
- if(Util.SystemUtil.isServer()){
+ if(SystemUtil.isServer()){
      // 侦听客户端通知
-     addClientListener(`AddPlayerPassable`,(player : Player)=>{
+     mw.Event.addClientListener(`AddPlayerPassable`,(player : Player)=>{
      // 玩家角色添加通行许可
      blockingVolume.addPassableTarget(player.character);
      })
@@ -188,16 +184,16 @@ ___
 ```ts
   // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
  let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
- if(Util.SystemUtil.isClient())
+ if(SystemUtil.isClient())
  {
-     InputUtil.onKeyDown(Type.Keys.F4,()=>{
+     InputUtil.onKeyDown(Keys.F4,()=>{
          // F4键 通知服务器执行事件
-         dispatchToServer(`Clear`);
+         mw.Event.dispatchEventToServer(`Clear`);
      })
  }
- if(Util.SystemUtil.isServer()){
+ if(SystemUtil.isServer()){
      // 侦听客户端通知
-     addClientListener(`Clear`,()=>{
+     mw.Event.addClientListener(`Clear`,()=>{
      // 重置该禁行区通行许可
      blockingVolume.clear();
      })
@@ -220,7 +216,7 @@ ___
  let player =  asyncGetCurrentPlayer()[0];
  // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
  let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
- InputUtil.onKeyDown(Type.Keys.F3,()=>{
+ InputUtil.onKeyDown(Keys.F3,()=>{
      // F3键 获取玩家角色的通行权限
      blockingVolume.getTargetPassable(player.character);
  })
@@ -254,16 +250,16 @@ ___
  let player =  asyncGetCurrentPlayer()[0];
  // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
  let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
- if(Util.SystemUtil.isClient())
+ if(SystemUtil.isClient())
  {
-     InputUtil.onKeyDown(Type.Keys.F2,()=>{
+     InputUtil.onKeyDown(Keys.F2,()=>{
          // F2键 通知服务器执行事件 参数传入当前玩家
-         dispatchToServer(`RemovePlayerPassable`,player);
+         mw.Event.dispatchEventToServer(`RemovePlayerPassable`,player);
      })
  }
- if(Util.SystemUtil.isServer()){
+ if(SystemUtil.isServer()){
      // 侦听客户端通知
-     addClientListener(`RemovePlayerPassable`,(player : Player)=>{
+     mw.Event.addClientListener(`RemovePlayerPassable`,(player : Player)=>{
      // 玩家角色移除通行许可
      blockingVolume.removePassableTarget(player.character);
      })
@@ -291,16 +287,16 @@ ___
 ```ts
  // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
  let blockingVolume = await GameObject.asyncFind(`GUID`) as BlockingVolume;
- if(Util.SystemUtil.isClient())
+ if(SystemUtil.isClient())
  {
-     InputUtil.onKeyDown(Type.Keys.F5,()=>{
+     InputUtil.onKeyDown(Keys.F5,()=>{
          // F5键 通知服务器执行事件
-         dispatchToServer(`UnblockAll`);
+         mw.Event.dispatchEventToServer(`UnblockAll`);
      })
  }
- if(Util.SystemUtil.isServer()){
+ if(SystemUtil.isServer()){
      // 侦听客户端通知
-     addClientListener(`UnblockAll`,()=>{
+     mw.Event.addClientListener(`UnblockAll`,()=>{
      // 该禁行区开放通行
      blockingVolume.unblockAll();
      })

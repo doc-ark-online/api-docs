@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeaponFireComponent
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponFireComponent
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponFireSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -47,7 +47,7 @@ export default class HotWeaponFireSample1 extends Script {
 | **[clipSize](mw.HotWeaponFireComponent.md#clipsize)**(): `number` <br> 获取当前弹夹容量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[currentBullet](mw.HotWeaponFireComponent.md#currentbullet)**(): `number` <br> 获取当前弹夹中子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[fireInterval](mw.HotWeaponFireComponent.md#fireinterval)**(): `number` <br> 获取开火间隙。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[fireModel](mw.HotWeaponFireComponent.md#firemodel)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) <br> 获取当前的开火模式|
+| **[fireMode](mw.HotWeaponFireComponent.md#firemode)**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) <br> 获取当前的开火模式|
 | **[isFireOnScreenCenter](mw.HotWeaponFireComponent.md#isfireonscreencenter)**(): `boolean` <br> 获取是否在屏幕中心开火。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[multipleShot](mw.HotWeaponFireComponent.md#multipleshot)**(): `number` <br> 获取一次开火发射的子弹数量。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[offsetOfFireOnScreenCenter](mw.HotWeaponFireComponent.md#offsetoffireonscreencenter)**(): [`Vector`](mw.Vector.md) <br> 获取屏幕中心开火时的偏移。使用示例见类 HotWeaponFireComponent 使用示例|
@@ -206,9 +206,9 @@ ___
 
 ___
 
-### fireModel <Score text="fireModel" /> 
+### fireMode <Score text="fireMode" /> 
 
-• `get` **fireModel**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) 
+• `get` **fireMode**(): [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) 
 
 获取当前的开火模式
 

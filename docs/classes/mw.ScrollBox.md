@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / ScrollBox
+[UI](../groups/Core.UI.md) / ScrollBox
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 

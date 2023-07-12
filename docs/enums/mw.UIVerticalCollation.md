@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / UIVerticalCollation
+[UI](../groups/Core.UI.md) / UIVerticalCollation
 
 # UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 

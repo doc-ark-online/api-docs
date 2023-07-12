@@ -1,4 +1,4 @@
-[Sound](../groups/Core.Sound.md) / Sound
+[SOUND](../groups/Core.SOUND.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为"SoundExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以听到音效的声音.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class SoundExample extends Script {
 
     private readonly sound = {
@@ -18,12 +18,14 @@ export default class SoundExample extends Script {
         this.createSound();
     }
 
-    @Core.Function(Core.Client)
+    @mw.RemoteFunction(mw.Client)
     public async createSound(): Promise<void> {
         const success = await AssetUtil.asyncDownloadAsset(this.sound.assetID);
             if (success) {
                 // 下载完毕创建音效
-                this.sound.object = await GameObject.asyncSpawnGameObject(this.sound.assetID) as Sound;
+                this.sound.object = await GameObject.asyncSpawn<mw.Sound>({
+                   guid:this.sound.assetID
+                });
 
                 // 设置音效transform
                 const transform = new Transform(new Vector(500, 0, 0), new Rotation(0, 0, 0), new Vector(1, 1, 1));
@@ -35,7 +37,7 @@ export default class SoundExample extends Script {
                 // 设置UI音效形状为球形
                 this.sound.object.attenuationShape = AttenuationShape.Sphere;
                 // 设置音效范围100
-                this.sound.object.shapeExtents = Vector(100,0,0);
+                this.sound.object.shapeExtents = new Vector(100,0,0);
                 // 设置音效衰减距离为200
                 this.sound.object.falloffDistance = 200;
                 // 设置音效音量
@@ -59,9 +61,9 @@ export default class SoundExample extends Script {
 
 | Properties |
 | :-----|
-| **[onSoundFinished](mw.Sound.md#onsoundfinished)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音结束事件|
-| **[onSoundPaused](mw.Sound.md#onsoundpaused)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音暂停事件|
-| **[onSoundStarted](mw.Sound.md#onsoundstarted)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音开始事件|
+| **[onSoundFinish](mw.Sound.md#onsoundfinish)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音结束事件|
+| **[onSoundPause](mw.Sound.md#onsoundpause)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音暂停事件|
+| **[onSoundStarte](mw.Sound.md#onsoundstarte)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音开始事件|
 
 
 ::: details 点击查看继承
@@ -120,7 +122,6 @@ export default class SoundExample extends Script {
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -134,15 +135,12 @@ export default class SoundExample extends Script {
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -150,29 +148,29 @@ export default class SoundExample extends Script {
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
-### onSoundFinished <Score text="onSoundFinished" /> 
+### onSoundFinish <Score text="onSoundFinish" /> 
 
-• **onSoundFinished**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onSoundFinish**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
 声音结束事件
 
 ___
 
-### onSoundPaused <Score text="onSoundPaused" /> 
+### onSoundPause <Score text="onSoundPause" /> 
 
-• **onSoundPaused**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onSoundPause**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
 声音暂停事件
 
 ___
 
-### onSoundStarted <Score text="onSoundStarted" /> 
+### onSoundStarte <Score text="onSoundStarte" /> 
 
-• **onSoundStarted**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onSoundStarte**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
 声音开始事件
 

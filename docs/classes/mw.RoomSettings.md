@@ -1,4 +1,4 @@
-[Settings](../groups/Core.Settings.md) / RoomSettings
+[SETTINGS](../groups/Core.SETTINGS.md) / RoomSettings
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
@@ -6,14 +6,14 @@
 
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
 ```ts
-@Core.Class
+@Class
 export default class ClassExample extends Script {
 
     protected onStart(): void {
          this.RoomSettings();
     }
 
-    @Core.Function(Core.Server)
+    @mw.RemoteFunction(mw.Server)
     public RoomSettings(){
         //设置玩家是否可以中途加入游戏
         RoomSettings.enableJoiningMidgame(true);

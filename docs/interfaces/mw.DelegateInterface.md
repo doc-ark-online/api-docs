@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / DelegateInterface
+[TYPE](../groups/Core.TYPE.md) / DelegateInterface
 
 # DelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="DelegateInterface<T\>" />
 
@@ -11,7 +11,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| `T` | extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype) |
 
 ## Implemented by
 
@@ -21,10 +21,10 @@
 
 | Methods |
 | :-----|
-| **[bind](mw.DelegateInterface.md#bind)**(`func`: `T`): `void` <br> 绑定函数|
-| **[execute](mw.DelegateInterface.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数|
-| **[isBound](mw.DelegateInterface.md#isbound)**(): `boolean` <br> 是否绑定|
-| **[unbind](mw.DelegateInterface.md#unbind)**(): `void` <br> 解绑函数|
+| **[bind](mw.DelegateInterface.md#bind)**(`func`: `T`): `void` <br> 绑定代理事件|
+| **[execute](mw.DelegateInterface.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\> <br> 触发代理事件|
+| **[isBound](mw.DelegateInterface.md#isbound)**(): `boolean` <br> 是否绑定代理事件|
+| **[unbind](mw.DelegateInterface.md#unbind)**(): `void` <br> 解绑事件|
 
 ## Methods
 
@@ -32,14 +32,14 @@
 
 • **bind**(`func`): `void` 
 
-绑定函数
+绑定代理事件
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default: |
+| `func` | `T` |  绑定的事件函数default: |
 
 
 ___
@@ -48,7 +48,7 @@ ___
 
 • **execute**(`...arg`): `ReturnType`<`T`\> 
 
-执行绑定函数
+触发代理事件
 
 
 #### Parameters
@@ -61,7 +61,7 @@ ___
 
 `ReturnType`<`T`\>
 
-执行参数类型
+执行返回值
 
 ___
 
@@ -69,14 +69,14 @@ ___
 
 • **isBound**(): `boolean` 
 
-是否绑定
+是否绑定代理事件
 
 
 #### Returns
 
 `boolean`
 
-是否绑定
+是否绑定代理事件
 
 ___
 
@@ -84,6 +84,6 @@ ___
 
 • **unbind**(): `void` 
 
-解绑函数
+解绑事件
 
 

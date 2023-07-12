@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / NetStatus
+[TYPE](../groups/Core.TYPE.md) / NetStatus
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 

@@ -1,6 +1,6 @@
-Type
+TYPE
 
-# Type <Badge type="tip" text="Groups" /> <Score text="Type" />
+# TYPE <Badge type="tip" text="Groups" /> <Score text="TYPE" />
 
 ## Table of contents
 | Classes |
@@ -11,7 +11,6 @@ Type
 | [Action3](../classes/mw.Action3.md) <br> 三个参数的代理 |
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md) <br> 屏幕坐标转换结果 |
 | [Delegate](../classes/mw.Delegate.md) <br> 委托 |
-| [Gizmo](../classes/mw.Gizmo.md) <br> Gizmo |
 | [HitResult](../classes/mw.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 |
 | [LinearColor](../classes/mw.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 |
 | [Matrix3x3](../classes/mw.Matrix3x3.md) <br> 三维矩阵 |
@@ -50,37 +49,40 @@ Type
 
 | Modules Type Aliases |
 | :-----|
-| **[BoolResponse](Type.Type.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
-| **[BroadcastMessageResult](Type.Type.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
-| **[DecorationTuple](Type.Type.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
-| **[DownloadDataResponse](Type.Type.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
-| **[EmptyCallback](Type.Type.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
-| **[HttpResponse](Type.Type.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
-| **[LoadAppearanceDataAllCompletedCallback](Type.Type.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](Type.Type.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
-| **[MGSEvent](Type.Type.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
-| **[MGSResponse](Type.Type.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
-| **[OnArkBalanceUpdated](Type.Type.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnDescriptionChanged](Type.Type.md#ondescriptionchanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
-| **[OnDescriptionCompleted](Type.Type.md#ondescriptioncompleted)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
-| **[OnMovementStateChanged](Type.Type.md#onmovementstatechanged)**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void` <br> 移动状态切换委托|
-| **[OnOrderDelivered](Type.Type.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
-| **[OnRecvChatMessage](Type.Type.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
-| **[OnViewLayoutSwitched](Type.Type.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](Type.Type.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
-| **[ReleaseGameData](Type.Type.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
-| **[SetAppearanceDataCallback](Type.Type.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
-| **[StringCallback](Type.Type.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
-| **[StringResponse](Type.Type.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
-| **[TeamMatchFailureInfo](Type.Type.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[TransactionType](Type.Type.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
-| **[UploadDataResponse](Type.Type.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
-| **[VehicleGearData](Type.Type.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
-| **[VehicleWheelData](Type.Type.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
-| **[VoidResponse](Type.Type.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
-| **[downloadCharacterDataStringCallback](Type.Type.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
-| **[maskWordCheckResult](Type.Type.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
-| **[onAppearanceDataChanged](Type.Type.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
+| **[BoolResponse](TYPE.TYPE.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
+| **[BroadcastMessageResult](TYPE.TYPE.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
+| **[DecorationTuple](TYPE.TYPE.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
+| **[DelegateFuncType](TYPE.TYPE.md#delegatefunctype)**: (...`arg`: `unknown`[]) => `unknown` <br> 代理回调函数签名|
+| **[DownloadDataResponse](TYPE.TYPE.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[EmptyCallback](TYPE.TYPE.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
+| **[HttpResponse](TYPE.TYPE.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
+| **[LoadAppearanceDataAllCompletedCallback](TYPE.TYPE.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
+| **[LoadDecorationsAllCompletedCallback](TYPE.TYPE.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
+| **[MGSEvent](TYPE.TYPE.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
+| **[MGSResponse](TYPE.TYPE.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnArkBalanceUpdated](TYPE.TYPE.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnDescriptionChanged](TYPE.TYPE.md#ondescriptionchanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
+| **[OnDescriptionComplete](TYPE.TYPE.md#ondescriptioncomplete)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
+| **[OnMovementModeChange](TYPE.TYPE.md#onmovementmodechange)**: (`mode`: [`MovementMode`](../enums/mw.MovementMode.md)) => `void` <br> 移动状态切换委托|
+| **[OnOrderDelivered](TYPE.TYPE.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
+| **[OnRecvChatMessage](TYPE.TYPE.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
+| **[OnViewLayoutSwitched](TYPE.TYPE.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
+| **[OnViewRefreshed](TYPE.TYPE.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
+| **[SetAppearanceDataCallback](TYPE.TYPE.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
+| **[StringCallback](TYPE.TYPE.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
+| **[StringResponse](TYPE.TYPE.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[TeamMatchFailureInfo](TYPE.TYPE.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
+| **[TransactionType](TYPE.TYPE.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
+| **[TweenEasingFunction](TYPE.TYPE.md#tweeneasingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
+| **[TweenInterpolationFunction](TYPE.TYPE.md#tweeninterpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
+| **[TweenUnknownProps](TYPE.TYPE.md#tweenunknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
+| **[UploadDataResponse](TYPE.TYPE.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[VehicleGearData](TYPE.TYPE.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
+| **[VehicleWheelData](TYPE.TYPE.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
+| **[VoidResponse](TYPE.TYPE.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
+| **[downloadCharacterDataStringCallback](TYPE.TYPE.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
+| **[maskWordCheckResult](TYPE.TYPE.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
+| **[onAppearanceDataChanged](TYPE.TYPE.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 
 ## Modules Type Aliases
@@ -132,6 +134,28 @@ ___
 **`Deprecated`**
 
 info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 027 reason:功能改变 replacement: 使用style.advance.slotAndAttachment属性相关功能替换
+___
+
+### DelegateFuncType <Score text="DelegateFuncType" /> 
+
+Ƭ **DelegateFuncType**: (...`arg`: `unknown`[]) => `unknown` <Badge type="tip" text="other" />
+
+#### Type declaration
+
+• (`...arg`): `unknown`
+
+代理回调函数签名
+
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...arg` | `unknown`[] |
+
+##### Returns
+
+`unknown`
 ___
 
 ### DownloadDataResponse <Score text="DownloadDataResponse" /> 
@@ -316,9 +340,9 @@ ___
 `void`
 ___
 
-### OnDescriptionCompleted <Score text="OnDescriptionCompleted" /> 
+### OnDescriptionComplete <Score text="OnDescriptionComplete" /> 
 
-Ƭ **OnDescriptionCompleted**: (`character`: [`Character`](../classes/mw.Character.md)) => `void`
+Ƭ **OnDescriptionComplete**: (`character`: [`Character`](../classes/mw.Character.md)) => `void`
 
 #### Type declaration
 
@@ -343,9 +367,9 @@ ___
 `void`
 ___
 
-### OnMovementStateChanged <Score text="OnMovementStateChanged" /> 
+### OnMovementModeChange <Score text="OnMovementModeChange" /> 
 
-Ƭ **OnMovementStateChanged**: (`mode`: [`MovementType`](../enums/mw.MovementType.md)) => `void`
+Ƭ **OnMovementModeChange**: (`mode`: [`MovementMode`](../enums/mw.MovementMode.md)) => `void`
 
 #### Type declaration
 
@@ -357,7 +381,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `mode` | [`MovementType`](../enums/mw.MovementType.md) |
+| `mode` | [`MovementMode`](../enums/mw.MovementMode.md) |
 
 ##### Returns
 
@@ -445,20 +469,6 @@ ___
 ##### Returns
 
 `void`
-___
-
-### ReleaseGameData <Score text="ReleaseGameData" /> 
-
-Ƭ **ReleaseGameData**: `Object`
-
-已发布的游戏数据，用于继承服务器数据。
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `gameCover` | `string` | 已发布的游戏封面路径（存放于'项目目录/Pictures'下） |
-| `gameName` | `string` | 已发布的游戏名称 |
 ___
 
 ### SetAppearanceDataCallback <Score text="SetAppearanceDataCallback" /> 
@@ -558,6 +568,57 @@ ___
 ##### Returns
 
 `void`
+___
+
+### TweenEasingFunction <Score text="TweenEasingFunction" /> 
+
+Ƭ **TweenEasingFunction**: (`amount`: `number`) => `number`
+
+#### Type declaration
+
+• (`amount`): `number`
+
+缓动函数的类型定义
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `amount` | `number` |
+
+##### Returns
+
+`number`
+___
+
+### TweenInterpolationFunction <Score text="TweenInterpolationFunction" /> 
+
+Ƭ **TweenInterpolationFunction**: (`v`: `number`[], `k`: `number`) => `number`
+
+#### Type declaration
+
+• (`v`, `k`): `number`
+
+插值函数的类型定义
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `number`[] |
+| `k` | `number` |
+
+##### Returns
+
+`number`
+___
+
+### TweenUnknownProps <Score text="TweenUnknownProps" /> 
+
+Ƭ **TweenUnknownProps**: `Record`<`string`, `any`\>
+
+补间属性的定义，用户可以自由扩展
+
 ___
 
 ### UploadDataResponse <Score text="UploadDataResponse" /> 

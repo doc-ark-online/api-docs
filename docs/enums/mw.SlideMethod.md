@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / SlideMethod
+[UI](../groups/Core.UI.md) / SlideMethod
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 

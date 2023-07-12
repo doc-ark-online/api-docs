@@ -1,6 +1,6 @@
-Gameplay
+GAMEPLAY
 
-# Gameplay <Badge type="tip" text="Groups" /> <Score text="Gameplay" />
+# GAMEPLAY <Badge type="tip" text="Groups" /> <Score text="GAMEPLAY" />
 
 ## Table of contents
 | Classes |
@@ -20,9 +20,12 @@ Gameplay
 | [MaterialInstance](../classes/mw.MaterialInstance.md) <br> 材质实例类 |
 | [Model](../classes/mw.Model.md) <br> 接口主要为物理参数设置接口与材质参数设置接口 |
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区 |
+| [NavigationUtil](../classes/mw.NavigationUtil.md) <br> 路径查询。 |
 | [Player](../classes/mw.Player.md) <br> 角色控制 |
 | [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物 v2 实例 |
 | [ProjectileLauncher](../classes/mw.ProjectileLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 |
+| [QueryUtil](../classes/mw.QueryUtil.md) <br> 射线检测范围 |
+| [ScreenUtil](../classes/mw.ScreenUtil.md) <br> 屏幕视口设置相关的接口 |
 | [SpringArm](../classes/mw.SpringArm.md) <br> 弹簧臂 |
 | [SwimmingVolume](../classes/mw.SwimmingVolume.md) <br> 游泳区域 |
 | [Trigger](../classes/mw.Trigger.md) <br> 触发器，对进入/离开触发器范围的事件进行响应 |
@@ -60,143 +63,27 @@ Gameplay
 
 | Modules Functions |
 | :-----|
-| **[angleCheck](Gameplay.Gameplay.md#anglecheck)**(`StartLocation`: [`Vector`](../classes/mw.Vector.md), `StartDirection`: [`Vector`](../classes/mw.Vector.md), `TargetLocation`: [`Vector`](../classes/mw.Vector.md), `Angle`: `number`): `boolean` <br> 判断终点位置是否处于起点位置在某一方向的一定角度内|
-| **[boxOverlap](Gameplay.Gameplay.md#boxoverlap)**(`boxCenter`: [`Vector`](../classes/mw.Vector.md), `boxExtent`: [`Vector`](../classes/mw.Vector.md), `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](../classes/mw.GameObject.md)): [`GameObject`](../classes/mw.GameObject.md)[] <br> 矩形范围检测|
-| **[capsuleOverlap](Gameplay.Gameplay.md#capsuleoverlap)**(`capsuleCenter`: [`Vector`](../classes/mw.Vector.md), `capsuleRadius`: `number`, `halfHeight`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](../classes/mw.GameObject.md)): [`GameObject`](../classes/mw.GameObject.md)[] <br> 胶囊体范围检测|
-| **[fetch](Gameplay.Gameplay.md#fetch)**(`url`: `string`, `init?`: `RequestInit`): `Promise`<`Response`\> <br> HTTP请求|
-| **[findPath](Gameplay.Gameplay.md#findpath)**(`startPos`: [`Vector`](../classes/mw.Vector.md), `endPos`: [`Vector`](../classes/mw.Vector.md)): [`Vector`](../classes/mw.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
-| **[generalHttpRequest](Gameplay.Gameplay.md#generalhttprequest)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/mw.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean` <br> 通用Http请求|
-| **[getCurrentEnv](Gameplay.Gameplay.md#getcurrentenv)**(): `string` <br> 获取当前环境|
-| **[getEditorVersion](Gameplay.Gameplay.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
-| **[getFullEditorVersion](Gameplay.Gameplay.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
-| **[getGameId](Gameplay.Gameplay.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
-| **[getGameObjectByScreenPosition](Gameplay.Gameplay.md#getgameobjectbyscreenposition)**(`SceneX`: `number`, `SceneY`: `number`, `Distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](../classes/mw.HitResult.md)[] <br> 获取视口相应位置的物体|
-| **[getSightBeadLocation](Gameplay.Gameplay.md#getsightbeadlocation)**(): [`Vector`](../classes/mw.Vector.md) <br> 获取相机中心点所瞄准的世界位置|
-| **[getUrlParameter](Gameplay.Gameplay.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
-| **[getVersion](Gameplay.Gameplay.md#getversion)**(): `string` <br> 获取当前游戏版本|
-| **[httpRequestTransmitData](Gameplay.Gameplay.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean` <br> Http请求接口|
-| **[isClient](Gameplay.Gameplay.md#isclient)**(): `boolean` <br> 是否客户端运行|
-| **[isMobile](Gameplay.Gameplay.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
-| **[isServer](Gameplay.Gameplay.md#isserver)**(): `boolean` <br> 是否服务器运行|
-| **[lineTrace](Gameplay.Gameplay.md#linetrace)**(`start`: [`Vector`](../classes/mw.Vector.md), `end`: [`Vector`](../classes/mw.Vector.md), `multiTrace?`: `boolean`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `traceSkeletonOnly?`: `boolean`, `source?`: [`GameObject`](../classes/mw.GameObject.md)): [`HitResult`](../classes/mw.HitResult.md)[] <br> 射线检测|
-| **[sphereOverlap](Gameplay.Gameplay.md#sphereoverlap)**(`sphereCenter`: [`Vector`](../classes/mw.Vector.md), `sphereRadius`: `number`, `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](../classes/mw.GameObject.md)): [`GameObject`](../classes/mw.GameObject.md)[] <br> 球形范围检测|
-| **[urlDecode](Gameplay.Gameplay.md#urldecode)**(`str`: `string`): `string` <br> url解码|
-| **[urlEncode](Gameplay.Gameplay.md#urlencode)**(`str`: `string`): `string` <br> url转码|
-| **[vibrate](Gameplay.Gameplay.md#vibrate)**(`enable`: `boolean`): `void` <br> 振动开关|
+| **[fetch](GAMEPLAY.GAMEPLAY.md#fetch)**(`url`: `string`, `init?`: `RequestInit`): `Promise`<`Response`\> <br> HTTP请求|
+| **[generalHttpRequest](GAMEPLAY.GAMEPLAY.md#generalhttprequest)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `requestUrl`: [`HttpRequestURL`](../enums/mw.HttpRequestURL.md), `param`: `string`, `jsonContent`: `any`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean` <br> 通用Http请求|
+| **[getUrlParameter](GAMEPLAY.GAMEPLAY.md#geturlparameter)**(`url`: `string`, `parameterName`: `string`): `string` <br> 获取url参数|
+| **[httpRequestTransmitData](GAMEPLAY.GAMEPLAY.md#httprequesttransmitdata)**(`response`: [`HttpResponse`](Core.mw.md#httpresponse), `paramUrl`: `string`, `jsonContent`: `string`, `requestType`: [`HttpRequestType`](../enums/mw.HttpRequestType.md)): `boolean` <br> Http请求接口|
+| **[urlDecode](GAMEPLAY.GAMEPLAY.md#urldecode)**(`str`: `string`): `string` <br> url解码|
+| **[urlEncode](GAMEPLAY.GAMEPLAY.md#urlencode)**(`str`: `string`): `string` <br> url转码|
+| **[vibrate](GAMEPLAY.GAMEPLAY.md#vibrate)**(`enable`: `boolean`): `void` <br> 振动开关|
 
 
 | Modules Type Aliases |
 | :-----|
-| **[CameraShakeData](Gameplay.Gameplay.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
-| **[CameraSystemData](Gameplay.Gameplay.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Oscillator](Gameplay.Gameplay.md#oscillator)**: `Object` <br> 震动数值|
-| **[VehicleGearDataNew](Gameplay.Gameplay.md#vehiclegeardatanew)**: `Object` <br> 四轮载具挡位属性|
-| **[VehicleWheelDataNew](Gameplay.Gameplay.md#vehiclewheeldatanew)**: `Object` <br> 四轮载具车轮属性|
+| **[CameraShakeData](GAMEPLAY.GAMEPLAY.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
+| **[CameraSystemData](GAMEPLAY.GAMEPLAY.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
+| **[Oscillator](GAMEPLAY.GAMEPLAY.md#oscillator)**: `Object` <br> 震动数值|
+| **[VehicleGearDataNew](GAMEPLAY.GAMEPLAY.md#vehiclegeardatanew)**: `Object` <br> 四轮载具挡位属性|
+| **[VehicleWheelDataNew](GAMEPLAY.GAMEPLAY.md#vehiclewheeldatanew)**: `Object` <br> 四轮载具车轮属性|
 
 
 ## Modules Functions
 
 
-___
-
-### angleCheck <Score text="angleCheck" /> 
-
-• **angleCheck**(`StartLocation`, `StartDirection`, `TargetLocation`, `Angle`): `boolean` 
-
-判断终点位置是否处于起点位置在某一方向的一定角度内
-
-
-使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20）
-```ts
-if(angleCheck(new Vector(0,0,0), new Vector(1,0,0), new Vector(100,20,20), 60)) {
-// 在范围内
-}
-else {
-// 不在范围内
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `StartLocation` | [`Vector`](../classes/mw.Vector.md) | 起始位置 |
-| `StartDirection` | [`Vector`](../classes/mw.Vector.md) | 起始方向 |
-| `TargetLocation` | [`Vector`](../classes/mw.Vector.md) | 目标位置 |
-| `Angle` | `number` | 检测角度 |
-
-#### Returns
-
-`boolean`
-
-true，在角度范围内
-___
-
-### boxOverlap <Score text="boxOverlap" /> 
-
-• **boxOverlap**(`boxCenter`, `boxExtent`, `drawDebug?`, `objectsToIgnore?`, `ignoreByType?`, `source?`): [`GameObject`](../classes/mw.GameObject.md)[] 
-
-矩形范围检测
-
-
-使用示例: 如下示例展示使用矩形范围检测的基本流程
-```ts
-const goList = boxOverlap(new Vector(0,0,0), new Vector(1000,0,0), 10, 10, true);
-for (const item of goList) {
-    // item: 检测到的对象
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `boxCenter` | [`Vector`](../classes/mw.Vector.md) | 矩形中心位置 |
-| `boxExtent` | [`Vector`](../classes/mw.Vector.md) | 结束位置 |
-| `drawDebug?` | `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` | `string`[] | 屏蔽对象的GUID数组 default:[] |
-| `ignoreByType?` | `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
-| `source?` | [`GameObject`](../classes/mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
-
-#### Returns
-
-[`GameObject`](../classes/mw.GameObject.md)[]
-
-GameObject数组
-___
-
-### capsuleOverlap <Score text="capsuleOverlap" /> 
-
-• **capsuleOverlap**(`capsuleCenter`, `capsuleRadius`, `halfHeight`, `drawDebug?`, `objectsToIgnore?`, `ignoreByType?`, `source?`): [`GameObject`](../classes/mw.GameObject.md)[] 
-
-胶囊体范围检测
-
-
-使用示例: 如下示例展示使用圆柱范围检测的基本流程
-```ts
-const ResultList = capsuleOverlap(new Vector(0,0,0), 100, false, [], false, gameObject);
-for (const item of ResultList) {
-    // item: 检测到的对象
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `capsuleCenter` | [`Vector`](../classes/mw.Vector.md) | 胶囊体中心位置 |
-| `capsuleRadius` | `number` | 胶囊体半径 |
-| `halfHeight` | `number` | 胶囊体半高 |
-| `drawDebug?` | `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` | `string`[] | 屏蔽对象的GUID数组 default:[] |
-| `ignoreByType?` | `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
-| `source?` | [`GameObject`](../classes/mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
-
-#### Returns
-
-[`GameObject`](../classes/mw.GameObject.md)[]
-
-GameObject数组
 ___
 
 ### fetch <Score text="fetch" /> 
@@ -218,47 +105,6 @@ HTTP请求
 `Promise`<`Response`\>
 
 响应信息
-___
-
-### findPath <Score text="findPath" /> 
-
-• **findPath**(`startPos`, `endPos`): [`Vector`](../classes/mw.Vector.md)[] 
-
-查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点
-
-
-使用示例: 创建一个名为"findPath"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将会在编辑器日志窗口中看到打印（注：此接口需要配合寻路区域使用，即statPos和endPos都需要在寻路区域内）
-```ts
-@Core.Class
-export default class findPath extends Script {
-
-    protected onStart(): void {
-        let startPos = new Vector(-100,-100,0);
-        let endPos = new Vector(0,0,0);
-        console.log(NavigationUtil.findPath(startPos,endPos));
-    }
-
-    protected onUpdate(dt: number): void {
-
-    }
-
-    protected onDestroy(): void {
-
-    }
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `startPos` | [`Vector`](../classes/mw.Vector.md) | 起点 |
-| `endPos` | [`Vector`](../classes/mw.Vector.md) | 终点 |
-
-#### Returns
-
-[`Vector`](../classes/mw.Vector.md)[]
-
 ___
 
 ### generalHttpRequest <Score text="generalHttpRequest" /> 
@@ -290,165 +136,6 @@ generalHttpRequest(Response,Url,Param,JsonContent)
 bool
 ___
 
-### getCurrentEnv <Score text="getCurrentEnv" /> 
-
-• **getCurrentEnv**(): `string` 
-
-获取当前环境
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        console.log("当前环境", SystemUtil.getCurrentEnv())
-    }
-
-}
-```
-
-#### Returns
-
-`string`
-
-当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza)
-___
-
-### getEditorVersion <Score text="getEditorVersion" /> 
-
-• **getEditorVersion**(): `string` 
-
-获取编辑器版本号
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        console.log("当前编辑器版本号", SystemUtil.getEditorVersion())
-    }
-
-}
-```
-
-#### Returns
-
-`string`
-
-当前编辑器版本号
-___
-
-### getFullEditorVersion <Score text="getFullEditorVersion" /> 
-
-• **getFullEditorVersion**(): `string` 
-
-获取完整编辑器版本号
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        console.log("当前完整编辑器版本号", SystemUtil.getFullEditorVersion())
-    }
-
-}
-```
-
-#### Returns
-
-`string`
-
-当前完整编辑器版本号
-___
-
-### getGameId <Score text="getGameId" /> 
-
-• **getGameId**(): `string` 
-
-获取当前游戏GameId
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        if (!SystemUtil.isClient()) return;
-        const gameId = SystemUtil.getGameId();
-        console.log(`gameId: ${gameId}`);
-    }
-
-}
-```
-
-#### Returns
-
-`string`
-
-当前游戏GameId
-___
-
-### getGameObjectByScreenPosition <Score text="getGameObjectByScreenPosition" /> 
-
-• **getGameObjectByScreenPosition**(`SceneX`, `SceneY`, `Distance?`, `multiTrace?`, `onRay?`): [`HitResult`](../classes/mw.HitResult.md)[] <Badge type="tip" text="client" />
-
-获取视口相应位置的物体
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `SceneX` | `number` | 视口坐标X |
-| `SceneY` | `number` | 视口坐标Y |
-| `Distance?` | `number` | 检测距离 default:100000 |
-| `multiTrace?` | `boolean` | 是否获取多个GameObject default:false |
-| `onRay?` | `boolean` | 是否开启射线显示效果 default:false |
-
-#### Returns
-
-[`HitResult`](../classes/mw.HitResult.md)[]
-
-点击位置的物体
-___
-
-### getSightBeadLocation <Score text="getSightBeadLocation" /> 
-
-• **getSightBeadLocation**(): [`Vector`](../classes/mw.Vector.md) <Badge type="tip" text="client" />
-
-获取相机中心点所瞄准的世界位置
-
-
-#### Returns
-
-[`Vector`](../classes/mw.Vector.md)
-
-___
-
 ### getUrlParameter <Score text="getUrlParameter" /> 
 
 • **getUrlParameter**(`url`, `parameterName`): `string` 
@@ -468,38 +155,6 @@ ___
 `string`
 
 参数值
-___
-
-### getVersion <Score text="getVersion" /> 
-
-• **getVersion**(): `string` 
-
-获取当前游戏版本
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        if (!SystemUtil.isClient()) return;
-        const version = SystemUtil.getVersion();
-        console.log(`version: ${version}`);
-    }
-
-}
-```
-
-#### Returns
-
-`string`
-
-当前游戏版本
 ___
 
 ### httpRequestTransmitData <Score text="httpRequestTransmitData" /> 
@@ -523,170 +178,6 @@ Http请求接口
 `boolean`
 
 请求是否发送成功
-___
-
-### isClient <Score text="isClient" /> 
-
-• **isClient**(): `boolean` 
-
-是否客户端运行
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        if (SystemUtil.isClient()) {
-            console.log("当前是客户端");
-        } else if (SystemUtil.isServer()) {
-            console.log("当前是服务端");
-        }
-    }
-
-}
-```
-
-#### Returns
-
-`boolean`
-
-是否客户端运行
-___
-
-### isMobile <Score text="isMobile" /> 
-
-• **isMobile**(): `boolean` 
-
-判断当前是否是移动端
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        console.log("当前是否是移动端", SystemUtil.isMobile())
-    }
-
-}
-```
-
-#### Returns
-
-`boolean`
-
-是否是移动端
-___
-
-### isServer <Score text="isServer" /> 
-
-• **isServer**(): `boolean` 
-
-是否服务器运行
-
-
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
-```ts
-@Core.Class
-export default class SystemExample extends Script {
-
-    protected onStart(): void {
-        this.test();
-    }
-
-    private async test(): Promise<void> {
-        if (SystemUtil.isClient()) {
-            console.log("当前是客户端");
-        } else if (SystemUtil.isServer()) {
-            console.log("当前是服务端");
-        }
-    }
-
-}
-```
-
-#### Returns
-
-`boolean`
-
-___
-
-### lineTrace <Score text="lineTrace" /> 
-
-• **lineTrace**(`start`, `end`, `multiTrace?`, `drawDebug?`, `objectsToIgnore?`, `ignoreByType?`, `traceSkeletonOnly?`, `source?`): [`HitResult`](../classes/mw.HitResult.md)[] 
-
-射线检测
-
-
-使用示例: 如下示例展示使用射线检测的基本流程
-```ts
-const ResultList = lineTrace(new Vector(0,0,0), new Vector(300,0,0), true, false, [], false, gameObject, false);
-for (const item of ResultList) {
-    // item: 检测到的对象
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `start` | [`Vector`](../classes/mw.Vector.md) | 起始位置 |
-| `end` | [`Vector`](../classes/mw.Vector.md) | 结束位置 |
-| `multiTrace?` | `boolean` | 是否穿透检测 default:false |
-| `drawDebug?` | `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` | `string`[] | 屏蔽对象guid数组 default:[] |
-| `ignoreByType?` | `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
-| `traceSkeletonOnly?` | `boolean` | 是否进行具体部位的检测 default:false |
-| `source?` | [`GameObject`](../classes/mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
-
-#### Returns
-
-[`HitResult`](../classes/mw.HitResult.md)[]
-
-HitResult数组
-___
-
-### sphereOverlap <Score text="sphereOverlap" /> 
-
-• **sphereOverlap**(`sphereCenter`, `sphereRadius`, `drawDebug?`, `objectsToIgnore?`, `ignoreByType?`, `source?`): [`GameObject`](../classes/mw.GameObject.md)[] 
-
-球形范围检测
-
-
-使用示例: 如下示例展示使用球形范围检测的基本流程
-```ts
-const ResultList = sphereOverlap(new Vector(0,0,0), 100, false, [], false, gameObject);
-for (const item of ResultList) {
-    // item: 检测到的对象
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `sphereCenter` | [`Vector`](../classes/mw.Vector.md) | 球体中心位置 |
-| `sphereRadius` | `number` | 球体半径 |
-| `drawDebug?` | `boolean` | 是否可视化绘制 default:false |
-| `objectsToIgnore?` | `string`[] | 屏蔽对象的GUID数组 default:[] |
-| `ignoreByType?` | `boolean` | 是否按传入对象的类型进行屏蔽 default:false |
-| `source?` | [`GameObject`](../classes/mw.GameObject.md) | 发起检测的对象（检测源不参与检测） default:null |
-
-#### Returns
-
-[`GameObject`](../classes/mw.GameObject.md)[]
-
 ___
 
 ### urlDecode <Score text="urlDecode" /> 

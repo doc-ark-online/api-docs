@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / Camera
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Camera
 
 # Camera <Badge type="tip" text="Class" /> <Score text="Camera" />
 
@@ -14,7 +14,7 @@
 
 | Properties |
 | :-----|
-| **[onSwitchCompleted](mw.Camera.md#onswitchcompleted)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 切换摄像机完成的回调|
+| **[onSwitchComplete](mw.Camera.md#onswitchcomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 切换摄像机完成的回调|
 | **[springArm](mw.Camera.md#springarm)**: [`SpringArm`](mw.SpringArm.md) <br> 弹簧臂|
 
 
@@ -63,7 +63,7 @@
 | Methods |
 | :-----|
 | **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void` <br> 相机锁定目标|
-| **[lookAt](mw.Camera.md#lookat)**(`target`: [`Vector`](mw.Vector.md) \): `void` <br> 摄像机朝向目标|
+| **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md) \): `void` <br> 摄像机朝向目标|
 | **[unlock](mw.Camera.md#unlock)**(): `void` <br> 取消锁定目标|
 | **[shake](mw.Camera.md#shake)**(`[shake](mw.Camera.md#shake)Data`, `duration?`: `number`): `void` <br> 开始摄像机抖动|
 | **[stopShake](mw.Camera.md#stopshake)**(): `void` <br> 停止摄像机抖动|
@@ -78,7 +78,6 @@
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -92,15 +91,12 @@
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -108,13 +104,13 @@
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
-### onSwitchCompleted <Score text="onSwitchCompleted" /> 
+### onSwitchComplete <Score text="onSwitchComplete" /> 
 
-• **onSwitchCompleted**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+• **onSwitchComplete**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 切换摄像机完成的回调
 
@@ -125,9 +121,9 @@
 
 :::
 
-使用示例:在场景中随机创建5个摄像机，提供按键方法切换摄像机。
+使用示例:创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class CameraExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -141,23 +137,23 @@ export default class CameraExample extends Script {
             for (let i = 0;
 i < 5;
 i++) {
-                let camera = GameObject.spawn({guid: "Camera"}) as Camera;
-                camera.worldLocation = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
-                camera.worldRotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-180, 180));
+                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+                camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
+                camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
-                camera.onSwitchCompleted.bind(() => {
+                camera.onSwitchComplete.add(() => {
                     console.log("当前摄像机序号 " + i);
                     curCameraIndex = i;
-                })
+                });
             }
-            // 添加一个按键方法:按下键盘“1”，切换摄像机
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，切换摄像机
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, newCamera);
+                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
             });
-            // 添加一个按键方法:按下键盘“2”，切换回默认摄像机
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
+            InputUtil.onKeyDown(Keys.Two, () => {
                 console.log("Switch Default Camera");
                 Camera.switch(myCamera);
             });
@@ -181,13 +177,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Camera_SpringArm"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞，按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测。你可以看到禁用这些属性产生的不同的效果.代码如下:
+使用示例:将使用到的资源:"26950"拖入优先加载栏创建一个名为"Example_Camera_SpringArm"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成10根柱子用作触发摄像机弹簧杆碰撞，按下键盘“1”，启用/禁用摄像机弹簧杆碰撞，按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测。你可以看到禁用这些属性产生的不同的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_SpringArm extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "26950";
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         if(SystemUtil.isServer()) {
@@ -195,22 +188,20 @@ preloadAssets = "26950";
             for (let i = 0;
 i < 10;
 i++) {
-                GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 20), Rotation.zero, Vector.one)});
+                GameObject.spawn({guid: "26950", transform: new Transform(new Vector(100, i * 100, 0), Rotation.zero, Vector.one)});
             }
         }
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 摄像机y轴偏移-200
-            myCamera.offset = new Vector(0, -200, 0);
-            // 添加一个按键方法:按下键盘“1”，启用/禁用摄像机弹簧杆碰撞
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，启用/禁用摄像机弹簧杆碰撞
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.springArm.collisionEnabled = !myCamera.springArm.collisionEnabled;
                 console.log("摄像机弹簧臂的碰撞 " + myCamera.springArm.collisionEnabled);
             });
-            // 添加一个按键方法:按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，启用/禁用摄像机弹簧杆移动碰撞检测
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.springArm.movementCollisionDetectionEnabled = !myCamera.springArm.movementCollisionDetectionEnabled;
                 console.log("摄像机弹簧臂移动碰撞检测 " + myCamera.springArm.movementCollisionDetectionEnabled);
             });
@@ -234,10 +225,10 @@ i++) {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_DownAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_DownAngleLimit extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -248,35 +239,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 16;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -298,10 +288,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_DownAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_DownAngleLimit extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -312,35 +302,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 17;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -369,10 +358,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_FixedElevation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -383,35 +372,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 18;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -433,10 +421,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_FixedElevation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，固定摄像机高度后跳跃.你将在场景中看到角色跳跃时摄像机跟随角色高度的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_FixedElevation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -447,35 +435,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 19;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -506,7 +493,7 @@ FOV，也就是透视模式下的水平视野角度，FOV越大，可见的视�
 
 使用示例: 创建一个名为"Example_Camera_FOV"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“2”，增大摄像机FOV,按住键盘“3”，减少摄像机FOV.你将在场景中看到摄像机FOV变化的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_FOV extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -532,7 +519,7 @@ export default class Example_Camera_FOV extends Script {
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
             // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
@@ -540,11 +527,11 @@ export default class Example_Camera_FOV extends Script {
                 }, 1000);
             });
             // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Two, () => {
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
             // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Three, () => {
+            InputUtil.onKeyPress(Keys.Three, () => {
                 myCamera.fov -= 1;
             });
         }
@@ -569,7 +556,7 @@ FOV，也就是透视模式下的水平视野角度，FOV越大，可见的视�
 
 使用示例: 创建一个名为"Example_Camera_FOV"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按住键盘“2”，增大摄像机FOV,按住键盘“3”，减少摄像机FOV.你将在场景中看到摄像机FOV变化的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_FOV extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -595,7 +582,7 @@ export default class Example_Camera_FOV extends Script {
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
             // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
@@ -603,11 +590,11 @@ export default class Example_Camera_FOV extends Script {
                 }, 1000);
             });
             // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Two, () => {
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
             // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Three, () => {
+            InputUtil.onKeyPress(Keys.Three, () => {
                 myCamera.fov -= 1;
             });
         }
@@ -637,10 +624,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_MaxLagDistance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置最大位置延迟距离为200,你将在场景中看到摄像机位置延迟后摄像机最远只延迟200cm的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_MaxLagDistance extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -651,35 +638,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 6;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -701,10 +687,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_MaxLagDistance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置最大位置延迟距离为200,你将在场景中看到摄像机位置延迟后摄像机最远只延迟200cm的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_MaxLagDistance extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -715,35 +701,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 7;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -774,7 +759,7 @@ ___
 
 使用示例: 创建一个名为"Example_Camera_PositionLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到摄像机位置延迟的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_PositionLagEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -786,35 +771,34 @@ export default class Example_Camera_PositionLagEnabled extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 2;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -838,7 +822,7 @@ export default class Example_Camera_PositionLagEnabled extends Script {
 
 使用示例: 创建一个名为"Example_Camera_PositionLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到摄像机位置延迟的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_PositionLagEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -850,35 +834,34 @@ export default class Example_Camera_PositionLagEnabled extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 2;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -907,10 +890,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_PositionLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置位置延迟恢复速度为1,你将在场景中看到摄像机位置延迟后摄像机缓慢恢复位置的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_PositionLagSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -921,35 +904,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 4;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -971,10 +953,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_PositionLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启位置延迟后设置位置延迟恢复速度为1,你将在场景中看到摄像机位置延迟后摄像机缓慢恢复位置的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_PositionLagSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -985,35 +967,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 5;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1044,7 +1025,7 @@ ___
 
 使用示例: 创建一个名为"Example_Camera_PositionMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“2”，切换摄像机的位置模式.你将在场景中看到摄像机不同位置模式的效果并在控制台看到打印的摄像机当前位置模式.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_PositionMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1061,18 +1042,18 @@ export default class Example_Camera_PositionMode extends Script {
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.preset = (preset + 1) % 6;
                 console.log("当前角色相机预设 " + CameraPreset[preset]);
                 preset++;
             });
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
                 console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 myCamera.rotationMode = (myCamera.rotationMode + 1) % 3;
                 console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             });
@@ -1098,7 +1079,7 @@ export default class Example_Camera_PositionMode extends Script {
 
 使用示例: 创建一个名为"Example_Camera_PositionMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“2”，切换摄像机的位置模式.你将在场景中看到摄像机不同位置模式的效果并在控制台看到打印的摄像机当前位置模式.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_PositionMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1115,18 +1096,18 @@ export default class Example_Camera_PositionMode extends Script {
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.preset = (preset + 1) % 6;
                 console.log("当前角色相机预设 " + CameraPreset[preset]);
                 preset++;
             });
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
                 console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 myCamera.rotationMode = (myCamera.rotationMode + 1) % 3;
                 console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             });
@@ -1158,7 +1139,7 @@ ___
 
 使用示例: 创建一个名为"Example_Camera_Preset"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换摄像机预设.你将在场景中看到摄像机不同预设的效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_Preset extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1175,18 +1156,18 @@ export default class Example_Camera_Preset extends Script {
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.preset = (preset + 1) % 6;
                 console.log("当前角色相机预设 " + CameraPreset[preset]);
                 preset++;
             });
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
                 console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 myCamera.rotationMode = (myCamera.rotationMode + 1) % 3;
                 console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             });
@@ -1217,10 +1198,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_RotationLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class RotationLagEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1231,35 +1212,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 8;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1281,10 +1261,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_RotationLagEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class RotationLagEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1295,35 +1275,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 9;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1352,10 +1331,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_RotationLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_RotationLagSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1366,35 +1345,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 10;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1416,10 +1394,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_RotationLagSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏开启摄像机旋转延迟,你将在场景中看到摄像机旋转时延迟的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_RotationLagSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1430,35 +1408,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 11;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1489,7 +1466,7 @@ ___
 
 使用示例: 创建一个名为"Example_Camera_RotationMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“3”，切换摄像机的旋转模式.你将在场景中看到摄像机不同旋转模式的效果并在控制台看到打印的摄像机当前旋转模式.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_RotationMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1506,18 +1483,18 @@ export default class Example_Camera_RotationMode extends Script {
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.preset = (preset + 1) % 6;
                 console.log("当前角色相机预设 " + CameraPreset[preset]);
                 preset++;
             });
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
                 console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 myCamera.rotationMode = (myCamera.rotationMode + 1) % 3;
                 console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             });
@@ -1543,7 +1520,7 @@ export default class Example_Camera_RotationMode extends Script {
 
 使用示例: 创建一个名为"Example_Camera_RotationMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏按下键盘“3”，切换摄像机的旋转模式.你将在场景中看到摄像机不同旋转模式的效果并在控制台看到打印的摄像机当前旋转模式.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Camera_RotationMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -1560,18 +1537,18 @@ export default class Example_Camera_RotationMode extends Script {
             console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             let preset = 0;
             // 添加一个按键方法：按下键盘“1”，切换摄像机预设
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.preset = (preset + 1) % 6;
                 console.log("当前角色相机预设 " + CameraPreset[preset]);
                 preset++;
             });
             // 添加一个按键方法：按下键盘“2”，切换摄像机的位置模式
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 myCamera.positionMode = (myCamera.positionMode + 1) % 2;
                 console.log("当前角色摄像机的位置模式 " + CameraLocationMode[myCamera.positionMode]);
             });
             // 添加一个按键方法：按下键盘“3”，切换摄像机的旋转模式
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 myCamera.rotationMode = (myCamera.rotationMode + 1) % 3;
                 console.log("当前角色摄像机的旋转模式 " + CameraRotationMode[myCamera.rotationMode]);
             });
@@ -1602,10 +1579,10 @@ ___
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_UpAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_UpAngleLimit extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1616,35 +1593,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 14;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1666,10 +1642,10 @@ export default class CameraExample extends Script {
 
 :::
 
-使用示例: 获取当前摄像机，开启摄像机旋转延迟和位置延迟并设置相关参数，设置摄像机位置偏移，设置摄像机角度限制。提供按键方法固定摄像机高度和调整摄像机FOV，查看效果。
+使用示例: 创建一个名为"Example_Camera_UpAngleLimit"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,置摄像机角度限制,上抬最大角度为30，下旋最大角度为10.你将在场景中看到摄像机旋转受限的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_UpAngleLimit extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1680,35 +1656,34 @@ export default class CameraExample extends Script {
             let myCharacter = myPlayer.character;
             // 获取当前摄像机
             let myCamera = Camera.currentCamera;
-            // 开启摄像机旋转延迟和位置延迟并设置相关参数
+            // 开启摄像机位置延迟
             myCamera.positionLagEnabled = true;
+            // 位置延迟恢复速度1
+            myCamera.positionLagSpeed = 1;
+            // 最大位置延迟距离200
+            myCamera.maxLagDistance = 200;
+            // 开启摄像机旋转延迟
             myCamera.rotationLagEnabled = true;
-            myCamera.positionLagSpeed = 10;
-// 位置延迟恢复速度10
-            myCamera.maxLagDistance = 60;
-// 最大位置延迟距离60
-            myCamera.rotationLagSpeed = 20;
-// 旋转延迟恢复速度10
-            // 设置摄像机位置偏移（0，0，100）抬高摄像机
-            myCamera.offset = new Vector(0, 0, 100);
+            // 旋转延迟恢复速度2
+            myCamera.rotationLagSpeed = 2;
             // 设置摄像机角度限制
             myCamera.upAngleLimit = 30
             myCamera.downAngleLimit = 10;
-            // 添加一个按键方法:按下键盘“1”，固定摄像机高度后跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，固定摄像机高度后跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCamera.fixedElevation = true;
                 myCharacter.jump();
                 setTimeout(() => {
                     myCamera.fixedElevation = false;
-                }, 50);
+                }, 1000);
             });
-            // 添加一个按键方法:按住键盘“UP”，增大摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Up, () => {
+            // 添加一个按键方法：按住键盘“2”，增大摄像机FOV
+            InputUtil.onKeyPress(Keys.Two, () => {
                 myCamera.fov += 1;
             });
-            // 添加一个按键方法:按住键盘“Down”，减少摄像机FOV
-            InputUtil.onKeyPress(Type.Keys.Down, () => {
-                myCamera.fov -= 15;
+            // 添加一个按键方法：按住键盘“3”，减少摄像机FOV
+            InputUtil.onKeyPress(Keys.Three, () => {
+                myCamera.fov -= 1;
             });
         }
     }
@@ -1737,10 +1712,10 @@ ___
 
 :::
 
-使用示例:在场景中随机创建5个摄像机，提供按键方法切换摄像机。
+使用示例:创建一个名为"Example_Camera_CurrentCamera"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_CurrentCamera extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1753,23 +1728,23 @@ export default class CameraExample extends Script {
             for (let i = 0;
 i < 5;
 i++) {
-                let camera = GameObject.spawn({guid: "Camera"}) as Camera;
-                camera.worldLocation = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
-                camera.worldRotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-180, 180));
+                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+                camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
+                camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
-                camera.onSwitchCompleted.bind(() => {
+                camera.onSwitchComplete.add(() => {
                     console.log("当前摄像机序号 " + i);
                     curCameraIndex = i;
-                })
+                });
             }
-            // 添加一个按键方法:按下键盘“1”，切换摄像机
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，切换摄像机
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, newCamera);
+                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
             });
-            // 添加一个按键方法:按下键盘“2”，切换回默认摄像机
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
+            InputUtil.onKeyDown(Keys.Two, () => {
                 console.log("Switch Default Camera");
                 Camera.switch(myCamera);
             });
@@ -1798,10 +1773,10 @@ ___
 
 :::
 
-使用示例:创建一个敌方角色作为锁定目标，敌方角色四处移动追踪玩家角色，提供按键方法锁定和解锁敌方角色以及看向角色，查看不同的效果。
+使用示例:创建一个名为"Example_Camera_Lock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_Lock extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1813,34 +1788,31 @@ export default class CameraExample extends Script {
             // 创建一个敌方角色作为锁定目标
             let enemy = Player.spawnDefaultCharacter();
             enemy.switchToFlying()
-            enemy.worldLocation = new Vector(1000, 500, 130);
+            enemy.worldTransform.position = new Vector(1000, 500, 130);
             // 敌方角色追踪玩家角色
             TimeUtil.setInterval(() => {
-                let distance = Vector.subtract(enemy.worldLocation, myCharacter.worldLocation);
+                let distance = Vector.subtract(myCharacter.worldTransform.position, enemy.worldTransform.position);
                 if(distance.length < 200) {
-                    if(enemy.worldLocation.z < 300) {
-                        enemy.addMovement(new Vector(0, 0, 5));
-                    }
+                    enemy.addMovement(new Vector(0, 0, 5));
                 } else {
                     let dir = distance.normalized;
-                    enemy.worldRotation = dir.toRotation();
-                    dir.z += MathUtil.randomFloat(0, 2);
-                    enemy.addMovement(dir.multiply(10));
+                    enemy.addMovement(dir);
+                    enemy.worldTransform.rotation = distance.toRotation();
                 }
             }, 0.02)
-            // 添加一个按键方法:按下键盘“1”，锁定敌方角色
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，锁定敌方角色
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.error("Start Lock");
                 let myCamera = Camera.currentCamera;
-                myCamera.lock(enemy, 0, 0, 100, 1000, new Vector(0, 0, 80), true);
+                myCamera.lock(enemy, {lockInterval:0, lockSpeed: 0, lockRange: 500, lockDistance: 5000, lockOffset: new Vector(0, 0, 80), bPause: true});
             });
-            // 添加一个按键方法:按下键盘“2”,手动取消锁定:当bPause参数true时，需要手动取消锁定才能结束锁定流程
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”,手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程
+            InputUtil.onKeyDown(Keys.Two, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.unlock();
             });
-            // 添加一个按键方法:按下键盘“3”,角色看向目标（无追踪效果）
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法：按下键盘“3”,角色看向目标（无追踪效果）
+            InputUtil.onKeyDown(Keys.Three, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.lookAt(enemy);
             });
@@ -1874,10 +1846,10 @@ ___
 摄像机朝向目标
 
 
-使用示例:创建一个敌方角色作为锁定目标，敌方角色四处移动追踪玩家角色，提供按键方法锁定和解锁敌方角色以及看向角色，查看不同的效果。
+使用示例:创建一个名为"Example_Camera_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_LookAt extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1889,34 +1861,31 @@ export default class CameraExample extends Script {
             // 创建一个敌方角色作为锁定目标
             let enemy = Player.spawnDefaultCharacter();
             enemy.switchToFlying()
-            enemy.worldLocation = new Vector(1000, 500, 130);
+            enemy.worldTransform.position = new Vector(1000, 500, 130);
             // 敌方角色追踪玩家角色
             TimeUtil.setInterval(() => {
-                let distance = Vector.subtract(enemy.worldLocation, myCharacter.worldLocation);
+                let distance = Vector.subtract(myCharacter.worldTransform.position, enemy.worldTransform.position);
                 if(distance.length < 200) {
-                    if(enemy.worldLocation.z < 300) {
-                        enemy.addMovement(new Vector(0, 0, 5));
-                    }
+                    enemy.addMovement(new Vector(0, 0, 5));
                 } else {
                     let dir = distance.normalized;
-                    enemy.worldRotation = dir.toRotation();
-                    dir.z += MathUtil.randomFloat(0, 2);
-                    enemy.addMovement(dir.multiply(10));
+                    enemy.addMovement(dir);
+                    enemy.worldTransform.rotation = distance.toRotation();
                 }
             }, 0.02)
-            // 添加一个按键方法:按下键盘“1”，锁定敌方角色
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，锁定敌方角色
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.error("Start Lock");
                 let myCamera = Camera.currentCamera;
-                myCamera.lock(enemy, 0, 0, 100, 1000, new Vector(0, 0, 80), true);
+                myCamera.lock(enemy, {lockInterval:0, lockSpeed: 0, lockRange: 500, lockDistance: 5000, lockOffset: new Vector(0, 0, 80), bPause: true});
             });
-            // 添加一个按键方法:按下键盘“2”,手动取消锁定:当bPause参数true时，需要手动取消锁定才能结束锁定流程
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”,手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程
+            InputUtil.onKeyDown(Keys.Two, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.unlock();
             });
-            // 添加一个按键方法:按下键盘“5”,角色看向目标（无追踪效果）
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法：按下键盘“3”,角色看向目标（无追踪效果）
+            InputUtil.onKeyDown(Keys.Three, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.lookAt(enemy);
             });
@@ -1929,7 +1898,7 @@ export default class CameraExample extends Script {
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `target` | [`Vector`](mw.Vector.md) \| [`GameObject`](mw.GameObject.md) | 目标 |
+| `target` | [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) | 目标 |
 
 
 ___
@@ -1941,10 +1910,10 @@ ___
 取消锁定目标
 
 
-使用示例:创建一个敌方角色作为锁定目标，敌方角色四处移动追踪玩家角色，提供按键方法锁定和解锁敌方角色以及看向角色，查看不同的效果。
+使用示例:创建一个名为"Example_Camera_Unlock"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,创建一个敌方角色作为锁定目标.敌方角色会持续追踪玩家角色。按下键盘“1”，锁定敌方角色.按下键盘“2”，手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程.按下键盘“3”，角色摄像机朝向目标（无追踪效果）.你将在场景中看到锁定切换时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_Unlock extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1956,34 +1925,31 @@ export default class CameraExample extends Script {
             // 创建一个敌方角色作为锁定目标
             let enemy = Player.spawnDefaultCharacter();
             enemy.switchToFlying()
-            enemy.worldLocation = new Vector(1000, 500, 130);
+            enemy.worldTransform.position = new Vector(1000, 500, 130);
             // 敌方角色追踪玩家角色
             TimeUtil.setInterval(() => {
-                let distance = Vector.subtract(enemy.worldLocation, myCharacter.worldLocation);
+                let distance = Vector.subtract(myCharacter.worldTransform.position, enemy.worldTransform.position);
                 if(distance.length < 200) {
-                    if(enemy.worldLocation.z < 300) {
-                        enemy.addMovement(new Vector(0, 0, 5));
-                    }
+                    enemy.addMovement(new Vector(0, 0, 5));
                 } else {
                     let dir = distance.normalized;
-                    enemy.worldRotation = dir.toRotation();
-                    dir.z += MathUtil.randomFloat(0, 2);
-                    enemy.addMovement(dir.multiply(10));
+                    enemy.addMovement(dir);
+                    enemy.worldTransform.rotation = distance.toRotation();
                 }
             }, 0.02)
-            // 添加一个按键方法:按下键盘“1”，锁定敌方角色
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，锁定敌方角色
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.error("Start Lock");
                 let myCamera = Camera.currentCamera;
-                myCamera.lock(enemy, 0, 0, 100, 1000, new Vector(0, 0, 80), true);
+                myCamera.lock(enemy, {lockInterval:0, lockSpeed: 0, lockRange: 500, lockDistance: 5000, lockOffset: new Vector(0, 0, 80), bPause: true});
             });
-            // 添加一个按键方法:按下键盘“2”,手动取消锁定:当bPause参数true时，需要手动取消锁定才能结束锁定流程
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”,手动取消锁定：当bPause参数true时，需要手动取消锁定才能结束锁定流程
+            InputUtil.onKeyDown(Keys.Two, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.unlock();
             });
-            // 添加一个按键方法:按下键盘“4”,角色看向目标（无追踪效果）
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            // 添加一个按键方法：按下键盘“3”,角色看向目标（无追踪效果）
+            InputUtil.onKeyDown(Keys.Three, () => {
                 let myCamera = Camera.currentCamera;
                 myCamera.lookAt(enemy);
             });
@@ -2002,21 +1968,21 @@ ___
 开始摄像机抖动
 
 
-使用示例:提供按键方法开始和停止摄像机抖动
+使用示例:创建一个名为"Example_Camera_Shake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_Shake extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
             // 添加一个按键方法:按下键盘“1”，抖动相机5秒
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Start Shake ");
                 Camera.shake({positionYAmplitude: 1, positionYFrequency: 0.5, positionZAmplitude: 1, positionZFrequency: 1}, 5);
             });
             // 添加一个按键方法:按下键盘“2”，停止相机抖动
-            InputUtil.onKeyUp(Type.Keys.Two, () => {
+            InputUtil.onKeyUp(Keys.Two, () => {
                 console.log("Stop Shake ");
                 Camera.stopShake();
             });
@@ -2042,21 +2008,21 @@ ___
 停止摄像机抖动
 
 
-使用示例:提供按键方法开始和停止摄像机抖动
+使用示例:创建一个名为"Example_Camera_StopShake"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，抖动相机5秒.按下键盘“2”，停止相机抖动.你将在场景中看到摄像机镜头抖动时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_StopShake extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
             // 添加一个按键方法:按下键盘“1”，抖动相机5秒
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Start Shake ");
                 Camera.shake({positionYAmplitude: 1, positionYFrequency: 0.5, positionZAmplitude: 1, positionZFrequency: 1}, 5);
             });
-            // 添加一个按键方法:按下键盘“3”，停止相机抖动
-            InputUtil.onKeyUp(Type.Keys.Two, () => {
+            // 添加一个按键方法:按下键盘“2”，停止相机抖动
+            InputUtil.onKeyUp(Keys.Two, () => {
                 console.log("Stop Shake ");
                 Camera.stopShake();
             });
@@ -2075,10 +2041,10 @@ ___
 切换摄像机
 
 
-使用示例:在场景中随机创建5个摄像机，提供按键方法切换摄像机。
+使用示例:创建一个名为"Example_Camera_Switch"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在场景中随机创建5个摄像机.按下键盘“1”，切换摄像机.按下键盘“2”，切换回默认摄像机.你将在场景中看到摄像机切换时的效果.代码如下:
 ```ts
-@Core.Class
-export default class CameraExample extends Script {
+@Class
+export default class Example_Camera_Switch extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -2091,23 +2057,23 @@ export default class CameraExample extends Script {
             for (let i = 0;
 i < 5;
 i++) {
-                let camera = GameObject.spawn({guid: "Camera"}) as Camera;
-                camera.worldLocation = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
-                camera.worldRotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-180, 180));
+                let camera = GameObject.spawn({guid: "PlacedCamera"}) as Camera;
+                camera.worldTransform.position = new Vector(MathUtil.randomInt(-1000, 1000), MathUtil.randomInt(-1000, 1000),MathUtil.randomInt(0, 1000));
+                camera.worldTransform.rotation = new Rotation(MathUtil.randomInt(-90, 90), MathUtil.randomInt(-30, 30),MathUtil.randomInt(-150, 150));
                 cameraArray.push(camera);
-                camera.onSwitchCompleted.bind(() => {
+                camera.onSwitchComplete.add(() => {
                     console.log("当前摄像机序号 " + i);
                     curCameraIndex = i;
-                })
+                });
             }
-            // 添加一个按键方法:按下键盘“1”，切换摄像机
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，切换摄像机
+            InputUtil.onKeyDown(Keys.One, () => {
                 console.log("Switch Camera");
                 let newCamera = (curCameraIndex + 1) % 5;
-                Camera.switch(cameraArray[newCamera], 5, newCamera);
+                Camera.switch(cameraArray[newCamera], 5, SwitchCameraBlendFunction.Linear);
             });
-            // 添加一个按键方法:按下键盘“2”，切换回默认摄像机
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，切换回默认摄像机
+            InputUtil.onKeyDown(Keys.Two, () => {
                 console.log("Switch Default Camera");
                 Camera.switch(myCamera);
             });

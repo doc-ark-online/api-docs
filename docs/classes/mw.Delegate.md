@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / Delegate
+[TYPE](../groups/Core.TYPE.md) / Delegate
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
@@ -11,7 +11,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| `T` | extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype) |
 
 ## Implements
 
@@ -21,16 +21,16 @@
 
 | Methods |
 | :-----|
-| **[bind](mw.Delegate.md#bind)**(`func`: `T`): `void` <br> 绑定函数|
-| **[execute](mw.Delegate.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定函数|
-| **[isBound](mw.Delegate.md#isbound)**(): `boolean` <br> 是否绑定|
-| **[unbind](mw.Delegate.md#unbind)**(): `void` <br> 解绑函数|
+| **[bind](mw.Delegate.md#bind)**(`func`: `T`): `void` <br> 绑定事件|
+| **[execute](mw.Delegate.md#execute)**(`...arg`: `Parameters`<`T`\>): `ReturnType`<`T`\> <br> 执行绑定事件|
+| **[isBound](mw.Delegate.md#isbound)**(): `boolean` <br> 是否绑定事件|
+| **[unbind](mw.Delegate.md#unbind)**(): `void` <br> 解绑事件|
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| `T` | extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype) |
 
 ## Methods
 
@@ -38,7 +38,7 @@
 
 • **bind**(`func`): `void` 
 
-绑定函数
+绑定事件
 
 
 #### Parameters
@@ -58,7 +58,7 @@ ___
 
 • **execute**(`...arg`): `ReturnType`<`T`\> 
 
-执行绑定函数
+执行绑定事件
 
 
 #### Parameters
@@ -83,14 +83,14 @@ ___
 
 • **isBound**(): `boolean` 
 
-是否绑定
+是否绑定事件
 
 
 #### Returns
 
 `boolean`
 
-是否绑定
+是否绑定事件
 
 #### Implementation of
 
@@ -102,7 +102,7 @@ ___
 
 • **unbind**(): `void` 
 
-解绑函数
+解绑事件
 
 
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / CharacterTemplate
+[AVATAR](../groups/Core.AVATAR.md) / CharacterTemplate
 
 # CharacterTemplate <Badge type="tip" text="Enumeration" /> <Score text="CharacterTemplate" />
 

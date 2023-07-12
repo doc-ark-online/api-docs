@@ -1,4 +1,4 @@
-[Effects](../groups/Core.Effects.md) / EffectService
+[EFFECTS](../groups/Core.EFFECTS.md) / EffectService
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
@@ -27,17 +27,17 @@
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后获取该特效对象并移动到(200, 0, 200)位置
 ```ts
-@Core.Class
+@Class
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        const playId = EffectService.playAtPosition(fireAssetId, new Vector(0, 0, 200), { loopCount: 0});
+        const playId = EffectService.playAtPosition(fireAssetId, new mw.Vector(0, 0, 200), { loopCount: 0});
         // 5秒后移动该特效到(200, 0, 200)位置
         TimeUtil.delaySecond(5).then(() => {
             EffectService.getEffectById(playId).then((effect) => {
-                effect.worldLocation = new Vector(200, 0, 200);
+                effect.worldLocation = new mw.Vector(200, 0, 200);
             });
         });
     }
@@ -68,13 +68,13 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在坐标(0, 0, 200)处播放一个火焰特效
 ```ts
-@Core.Class
+@Class
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        const playId = EffectService.playAtPosition(fireAssetId, new Vector(0, 0, 200), { loopCount: 0});
+        const playId = EffectService.playAtPosition(fireAssetId, new mw.Vector(0, 0, 200), { loopCount: 0});
     }
 }
 ```
@@ -109,13 +109,13 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在所有玩家的身上播放一个火焰特效
 ```ts
-@Core.Class
+@Class
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        getAllPlayers().forEach((player) => {
+        mw.getAllPlayers().forEach((player) => {
             const playId = EffectService.playOnGameObject(fireAssetId, player.character, { loopCount: 0});
         })
     }
@@ -134,7 +134,7 @@ export default class EffectExample extends Script {
 | `params.position?` | [`Vector`](mw.Vector.md) | - |
 | `params.rotation?` | [`Rotation`](mw.Rotation.md) | - |
 | `params.scale?` | [`Vector`](mw.Vector.md) | - |
-| `params.slotType?` | [`SlotType`](../enums/mw.SlotType.md) | - |
+| `params.slotType?` | [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) | - |
 
 #### Returns
 
@@ -154,13 +154,13 @@ ___
 
 使用示例: 创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后停止特效
 ```ts
-@Core.Class
+@Class
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        const playId = EffectService.playAtPosition(fireAssetId, new Vector(0, 0, 200), { loopCount: 0});
+        const playId = EffectService.playAtPosition(fireAssetId, new mw.Vector(0, 0, 200), { loopCount: 0});
         // 5秒后停止特效
         TimeUtil.delaySecond(5).then(() => {
             EffectService.stop(playId);
@@ -188,15 +188,15 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放三个火焰特效，5秒后停止所有特效
 ```ts
-@Core.Class
+@Class
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        const playId1 = EffectService.playAtPosition(fireAssetId, new Vector(0, 0, 200), { loopCount: 0});
-        const playId2 = EffectService.playAtPosition(fireAssetId, new Vector(200, 0, 200), { loopCount: 0});
-        const playId3 = EffectService.playAtPosition(fireAssetId, new Vector(400, 0, 200), { loopCount: 0});
+        const playId1 = EffectService.playAtPosition(fireAssetId, new mw.Vector(0, 0, 200), { loopCount: 0});
+        const playId2 = EffectService.playAtPosition(fireAssetId, new mw.Vector(200, 0, 200), { loopCount: 0});
+        const playId3 = EffectService.playAtPosition(fireAssetId, new mw.Vector(400, 0, 200), { loopCount: 0});
         // 5秒后停止所有特效
         TimeUtil.delaySecond(5).then(() => {
             EffectService.stopAll();

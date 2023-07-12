@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / OscillatorWaveform
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / OscillatorWaveform
 
 # OscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="OscillatorWaveform" />
 

@@ -1,6 +1,6 @@
-Physics
+PHYSICS
 
-# Physics <Badge type="tip" text="Groups" /> <Score text="Physics" />
+# PHYSICS <Badge type="tip" text="Groups" /> <Score text="PHYSICS" />
 
 ## Table of contents
 | Classes |

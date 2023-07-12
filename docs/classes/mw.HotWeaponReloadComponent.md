@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeaponReloadComponent
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用了换弹组件，设置参数，添加委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponReloadSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -14,9 +14,9 @@ export default class HotWeaponReloadSample1 extends Script {
 
         if (SystemUtil.isServer()) {
 
-            hotWeapon.reloadEnable = true;
+            hotWeapon.reloadEnabled = true;
             hotWeapon.reloadComponent.reloadDuration = 2;
-            hotWeapon.reloadComponent.animationGuid = "4171";
+            hotWeapon.reloadComponent.animationAssetId = "4171";
 
             hotWeapon.reloadComponent.onStartReload.add(() => { console.log("reloadComponent.onStartReload Server") });
             hotWeapon.reloadComponent.onEndReload.add(() => { console.log("reloadComponent.onEndReload Server") });

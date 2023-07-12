@@ -1,4 +1,4 @@
-[Utility](../groups/Core.Utility.md) / AnalyticsService
+[UTILITY](../groups/Core.UTILITY.md) / AnalyticsService
 
 # AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 

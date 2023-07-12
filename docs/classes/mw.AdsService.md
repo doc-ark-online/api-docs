@@ -1,4 +1,4 @@
-[Monetization](../groups/Core.Monetization.md) / AdsService
+[MONETIZATION](../groups/Core.MONETIZATION.md) / AdsService
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
@@ -19,7 +19,7 @@
 | Methods |
 | :-----|
 | **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean` <br> 广告是否激活,PC上始终返回false|
-| **[sReady](mw.AdsService.md#sready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
+| **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
 | **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 
 ## Accessors
@@ -72,9 +72,9 @@ true:该类型广告已激活，false:该类型广告未激活
 
 ___
 
-### sReady <Score text="sReady" /> 
+### isReady <Score text="isReady" /> 
 
-• `Static` **sReady**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
+• `Static` **isReady**(`adsType`, `callback`): `void` <Badge type="tip" text="client" />
 
 广告是否准备好
 
@@ -104,8 +104,8 @@ ___
 
 使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果
 ```ts
-@Core.Class
-export default class AdsExample extends Script {
+@Core.Component
+export default class AdsExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -119,7 +119,7 @@ export default class AdsExample extends Script {
 
     //播放广告
     private async playAd(type: AdsType): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         if (!AdsService.isActive(type)) {
             player.character.characterName = type == AdsType.Reward ? "激励广告未激活" : "插屏广告未激活";
             return;

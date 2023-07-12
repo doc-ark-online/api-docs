@@ -1,4 +1,4 @@
-[Lighting](../groups/Core.Lighting.md) / PostProcessPreset
+[LIGHTING](../groups/Core.LIGHTING.md) / PostProcessPreset
 
 # PostProcessPreset <Badge type="tip" text="Enumeration" /> <Score text="PostProcessPreset" />
 

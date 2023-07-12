@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / SwitchCameraBlendFunction
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SwitchCameraBlendFunction
 
 # SwitchCameraBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="SwitchCameraBlendFunction" />
 

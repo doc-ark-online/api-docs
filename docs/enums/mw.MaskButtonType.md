@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / MaskButtonType
+[UI](../groups/Core.UI.md) / MaskButtonType
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 

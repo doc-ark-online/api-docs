@@ -1,4 +1,4 @@
-[Sounds](../groups/Core.Sounds.md) / AttenuationShape
+[SOUNDS](../groups/Core.SOUNDS.md) / AttenuationShape
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 

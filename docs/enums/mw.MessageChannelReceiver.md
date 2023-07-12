@@ -1,4 +1,4 @@
-[Scripting](../groups/Core.Scripting.md) / MessageChannelReceiver
+[SCRIPTING](../groups/Core.SCRIPTING.md) / MessageChannelReceiver
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 

@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / ProgressBarFillType
+[UI](../groups/Core.UI.md) / ProgressBarFillType
 
 # ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
 

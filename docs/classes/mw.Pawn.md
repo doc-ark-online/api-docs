@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / Pawn
+[AVATAR](../groups/Core.AVATAR.md) / Pawn
 
 # Pawn <Badge type="tip" text="Class" /> <Score text="Pawn" />
 
@@ -63,7 +63,6 @@
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -77,15 +76,12 @@
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -93,7 +89,7 @@
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -114,7 +110,7 @@ Pawn对象的膨胀时间速度，修改后自身时间流速是该值乘世界�
 
 使用示例:创建一个名为"Example_Pawn_CustomTimeDilation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中修改玩家的时间膨胀速度为原来的0.5倍后看到跳跃的延迟效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Pawn_CustomTimeDilation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -122,8 +118,8 @@ export default class Example_Pawn_CustomTimeDilation extends Script {
          if(SystemUtil.isClient()) {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
-            // 添加一个按键方法:按下键盘“1”，将玩家的时间膨胀速度修改为原来的0.5，并跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，将玩家的时间膨胀速度修改为原来的0.5倍，并跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myPlayer.character.customTimeDilation = 0.5;
                 console.log("My pawn customTimeDilation: " + myPlayer.character.customTimeDilation);
                 // 使玩家角色进行跳跃
@@ -151,7 +147,7 @@ Pawn对象的膨胀时间速度，修改后自身时间流速是该值乘世界�
 
 使用示例:创建一个名为"Example_Pawn_CustomTimeDilation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中修改玩家的时间膨胀速度为原来的0.5倍后看到跳跃的延迟效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Pawn_CustomTimeDilation extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -159,8 +155,8 @@ export default class Example_Pawn_CustomTimeDilation extends Script {
          if(SystemUtil.isClient()) {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
-            // 添加一个按键方法:按下键盘“1”，将玩家的时间膨胀速度修改为原来的0.5，并跳跃
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，将玩家的时间膨胀速度修改为原来的0.5倍，并跳跃
+            InputUtil.onKeyDown(Keys.One, () => {
                 myPlayer.character.customTimeDilation = 0.5;
                 console.log("My pawn customTimeDilation: " + myPlayer.character.customTimeDilation);
                 // 使玩家角色进行跳跃
@@ -195,7 +191,7 @@ ___
 
 使用示例:创建一个名为"Example_Pawn_Player"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏通过player获取玩家,你将在控制台中看到打印的userId和instanceId.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Pawn_Player extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -237,13 +233,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Pawn_Outline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“1”可以给本地玩家添加或移除可被立方体遮挡的红色描边效果.代码如下:
+使用示例:将使用到的资源:“7669”拖入优先加载栏。创建一个名为"Example_Pawn_Outline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“1”可以给本地玩家添加或移除可被立方体遮挡的红色描边效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Pawn_Outline extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "7669";
     // 声明变量
     flag: boolean;
     flag_advance: boolean;
@@ -255,15 +248,15 @@ preloadAssets = "7669";
         // 下列代码仅在服务端执行
         if(SystemUtil.isServer()) {
             // 创建一个立方体
-            let cube = GameObject.spawn({guid: "7669", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))});
-            cube.setCollision(Type.CollisionStatus.Off);
+            let cube = GameObject.spawn({guid: "7669", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
+            cube.setCollision(CollisionStatus.Off);
         }
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
-            // 添加一个按键方法:按下键盘“1”，给玩家Pawn添加或移除普通描边（会被遮挡）
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，给玩家Pawn添加或移除普通描边（会被遮挡）
+            InputUtil.onKeyDown(Keys.One, () => {
                 if(this.flag) {
                     myPlayer.character.setOutline(false);
                 } else {
@@ -271,8 +264,8 @@ preloadAssets = "7669";
                 }
                 this.flag = !this.flag;
             });
-            // 添加一个按键方法:按下键盘“2”，给玩家Pawn添加或移除后处理描边（不会被遮挡）
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，给玩家Pawn添加或移除后处理描边（不会被遮挡）
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(this.flag_advance) {
                     myPlayer.character.setPostProcessOutline(false);
                 } else {
@@ -309,13 +302,10 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Pawn_PostProcessOutline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“2”可以给本地玩家添加或移除不被立方体遮挡的红色描边效果.代码如下:
+使用示例:将使用到的资源:“7669”拖入优先加载栏。创建一个名为"Example_Pawn_PostProcessOutline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“2”可以给本地玩家添加或移除不被立方体遮挡的红色描边效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class Example_Pawn_PostProcessOutline extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "7669";
     // 声明变量
     flag: boolean;
     flag_advance: boolean;
@@ -327,15 +317,15 @@ preloadAssets = "7669";
         // 下列代码仅在服务端执行
         if(SystemUtil.isServer()) {
             // 创建一个立方体
-            let cube = GameObject.spawn({guid: "7669", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))});
-            cube.setCollision(Type.CollisionStatus.Off);
+            let cube = GameObject.spawn({guid: "7669", transform: new Transform(new Vector(200, 0, 0), Rotation.zero, new Vector(1, 1, 2))}) as Model;
+            cube.setCollision(CollisionStatus.Off);
         }
         // 下列代码仅在客户端执行
         if(SystemUtil.isClient()) {
             // 获取当前客户端的玩家(自己)
             let myPlayer = Player.localPlayer;
-            // 添加一个按键方法:按下键盘“1”，给玩家Pawn添加或移除普通描边（会被遮挡）
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            // 添加一个按键方法：按下键盘“1”，给玩家Pawn添加或移除普通描边（会被遮挡）
+            InputUtil.onKeyDown(Keys.One, () => {
                 if(this.flag) {
                     myPlayer.character.setOutline(false);
                 } else {
@@ -343,8 +333,8 @@ preloadAssets = "7669";
                 }
                 this.flag = !this.flag;
             });
-            // 添加一个按键方法:按下键盘“2”，给玩家Pawn添加或移除后处理描边（不会被遮挡）
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            // 添加一个按键方法：按下键盘“2”，给玩家Pawn添加或移除后处理描边（不会被遮挡）
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(this.flag_advance) {
                     myPlayer.character.setPostProcessOutline(false);
                 } else {

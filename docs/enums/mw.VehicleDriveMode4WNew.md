@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / VehicleDriveMode4WNew
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / VehicleDriveMode4WNew
 
 # VehicleDriveMode4WNew <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4WNew" />
 

@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / MulticastDelegate
+[TYPE](../groups/Core.TYPE.md) / MulticastDelegate
 
 # MulticastDelegate<T\> <Badge type="tip" text="Class" /> <Score text="MulticastDelegate<T\>" />
 
@@ -11,7 +11,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| `T` | extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype) |
 
 ## Implements
 
@@ -21,16 +21,16 @@
 
 | Methods |
 | :-----|
-| **[add](mw.MulticastDelegate.md#add)**(`func`: `T`): `void` <br> 绑定代理函数|
-| **[broadcast](mw.MulticastDelegate.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void` <br> 广播通知代理函数|
-| **[clear](mw.MulticastDelegate.md#clear)**(): `void` <br> 情况委托|
-| **[remove](mw.MulticastDelegate.md#remove)**(`func`: `T`): `void` <br> 删除绑定代理函数|
+| **[add](mw.MulticastDelegate.md#add)**(`func`: `T`): `void` <br> 添加代理事件|
+| **[broadcast](mw.MulticastDelegate.md#broadcast)**(`...arg`: `Parameters`<`T`\>): `void` <br> 触发代理事件|
+| **[clear](mw.MulticastDelegate.md#clear)**(): `void` <br> 清空代理事件（危险操作，请注意您所清空的是哪些代理事件）|
+| **[remove](mw.MulticastDelegate.md#remove)**(`func`: `T`): `void` <br> 删除代理事件|
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends (...`arg`: `unknown`[]) => `unknown` |
+| `T` | extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype) |
 
 ## Methods
 
@@ -38,14 +38,14 @@
 
 • **add**(`func`): `void` 
 
-绑定代理函数
+添加代理事件
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `func` | `T` |  绑定的函数 default |
+| `func` | `T` |  事件回调函数 default |
 
 
 #### Implementation of
@@ -58,7 +58,7 @@ ___
 
 • **broadcast**(`...arg`): `void` 
 
-广播通知代理函数
+触发代理事件
 
 
 #### Parameters
@@ -78,9 +78,13 @@ ___
 
 • **clear**(): `void` 
 
-情况委托
+清空代理事件（危险操作，请注意您所清空的是哪些代理事件）
 
 
+
+#### Implementation of
+
+[MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md).[clear](../interfaces/mw.MulticastDelegateInterface.md#clear)
 
 ___
 
@@ -88,14 +92,14 @@ ___
 
 • **remove**(`func`): `void` 
 
-删除绑定代理函数
+删除代理事件
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `func` | `T` |  删除绑定的函数 default |
+| `func` | `T` |  删除绑定的事件 default |
 
 
 #### Implementation of

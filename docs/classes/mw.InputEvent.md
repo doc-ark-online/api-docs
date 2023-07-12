@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / InputEvent
+[UI](../groups/Core.UI.md) / InputEvent
 
 # InputEvent <Badge type="tip" text="Class" /> <Score text="InputEvent" />
 

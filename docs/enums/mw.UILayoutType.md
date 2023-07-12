@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / UILayoutType
+[UI](../groups/Core.UI.md) / UILayoutType
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 

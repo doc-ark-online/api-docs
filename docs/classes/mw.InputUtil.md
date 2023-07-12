@@ -1,4 +1,4 @@
-[Input](../groups/Core.Input.md) / InputUtil
+[INPUT](../groups/Core.INPUT.md) / InputUtil
 
 # InputUtil <Badge type="tip" text="Class" /> <Score text="InputUtil" />
 
@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为"InputExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,点击键盘1键及屏幕，你将看到Input相关效果.代码如下:
 ```ts
-@Core.Class
+@Class
 export default class InputExample extends Script {
     protected onStart(): void {
         InputUtil.onKeyDown(Keys.One, () => {
@@ -38,7 +38,7 @@ export default class InputExample extends Script {
 
 | Methods |
 | :-----|
-| **[bindButton](mw.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/mw.Keys.md), `Widget`: [`Button`](mw.Button.md) \): `void` <br> 绑定按键|
+| **[bindButton](mw.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/mw.Keys.md), `Widget`: [`StaleButton`](mw.StaleButton.md) \): `void` <br> 绑定按键|
 | **[convertScreenLocationToWorldSpace](mw.InputUtil.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](mw.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[enableCursorInteractWithUI](mw.InputUtil.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
 | **[enableCursorLock](mw.InputUtil.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
@@ -70,8 +70,8 @@ export default class InputExample extends Script {
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -89,7 +89,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: StaleButton;
+    public button: mw.StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -97,23 +97,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = UserWidget.newObject();
+        let ui = mw.UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = Canvas.newObject();
-        rootCanvas.size = new Vector2(1920, 1080);
-        rootCanvas.position = Vector2.zero;
+        let rootCanvas = mw.Canvas.newObject();
+        rootCanvas.size = new mw.Vector2(1920, 1080);
+        rootCanvas.position = mw.Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = StaleButton.newObject(rootCanvas);
-        this.button.position = new Vector2(1700, 310);
-        this.button.size = new Vector2(150, 50);
+        this.button = mw.StaleButton.newObject(rootCanvas);
+        this.button.position = new mw.Vector2(1700, 310);
+        this.button.size = new mw.Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = LinearColor.red;
-        this.button.visibility = SlateVisibility.Visible;
+        this.button.pressedImagColor = mw.LinearColor.red;
+        this.button.visibility = mw.SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {
@@ -130,7 +130,7 @@ class ButtonUI {
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/mw.Keys.md) | 按键 |
-| `Widget` | [`Button`](mw.Button.md) \| [`StaleButton`](mw.StaleButton.md) | 绑定的button |
+| `Widget` | [`StaleButton`](mw.StaleButton.md) \| [`Button`](mw.Button.md) | 绑定的button |
 
 
 ___
@@ -144,8 +144,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -157,8 +157,8 @@ export default class InputExample extends Script {
             const result = InputUtil.convertScreenLocationToWorldSpace(960, 540);
             const startLoc = result.worldLocation;
             const dir = result.worldDirection;
-            const endLoc = Vector.add(startLoc, dir.multiply(1000));
-            lineTrace(startLoc, endLoc, true, true);
+            const endLoc = mw.Vector.add(startLoc, dir.multiply(1000));
+            mw.lineTrace(startLoc, endLoc, true, true);
         })
     }
 
@@ -189,8 +189,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -225,8 +225,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -261,8 +261,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -296,8 +296,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -331,8 +331,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -366,8 +366,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -401,8 +401,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -442,8 +442,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -483,8 +483,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -608,8 +608,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -619,7 +619,7 @@ export default class InputExample extends Script {
     private async test(): Promise<void> {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
-            let playerPos = (await asyncGetCurrentPlayer()).character.worldLocation;
+            let playerPos = (await mw.asyncGetCurrentPlayer()).character.worldLocation;
             let result = InputUtil.projectWorldLocationToWidgetPosition(playerPos);
             if (result) {
                 btn.button.position = result.screenPosition;
@@ -630,7 +630,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: StaleButton;
+    public button: mw.StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -638,23 +638,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = UserWidget.newObject();
+        let ui = mw.UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = Canvas.newObject();
-        rootCanvas.size = new Vector2(1920, 1080);
-        rootCanvas.position = Vector2.zero;
+        let rootCanvas = mw.Canvas.newObject();
+        rootCanvas.size = new mw.Vector2(1920, 1080);
+        rootCanvas.position = mw.Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = StaleButton.newObject(rootCanvas);
-        this.button.position = new Vector2(1700, 310);
-        this.button.size = new Vector2(150, 50);
+        this.button = mw.StaleButton.newObject(rootCanvas);
+        this.button.position = new mw.Vector2(1700, 310);
+        this.button.size = new mw.Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = LinearColor.red;
-        this.button.visibility = SlateVisibility.Visible;
+        this.button.pressedImagColor = mw.LinearColor.red;
+        this.button.visibility = mw.SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {
@@ -690,8 +690,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -726,8 +726,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -762,8 +762,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以通过shift锁定鼠标，按下G键，不可以通过shift锁定鼠标
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -802,8 +802,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
 ```ts
-@Core.Class
-export default class InputExample extends Script {
+@Core.Component
+export default class InputExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -821,7 +821,7 @@ export default class InputExample extends Script {
 }
 
 class ButtonUI {
-    public button: StaleButton;
+    public button: mw.StaleButton;
 
     constructor(fun: Function = null) {
         this.creatUI(fun);
@@ -829,23 +829,23 @@ class ButtonUI {
 
     private creatUI(fun: Function = null) {
         // 创建一个UI对象
-        let ui = UserWidget.newObject();
+        let ui = mw.UserWidget.newObject();
         // 将UI添加到屏幕上
         ui.addToViewport(1);
         // 创建一个画布组件
-        let rootCanvas = Canvas.newObject();
-        rootCanvas.size = new Vector2(1920, 1080);
-        rootCanvas.position = Vector2.zero;
+        let rootCanvas = mw.Canvas.newObject();
+        rootCanvas.size = new mw.Vector2(1920, 1080);
+        rootCanvas.position = mw.Vector2.zero;
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.button = StaleButton.newObject(rootCanvas);
-        this.button.position = new Vector2(1700, 310);
-        this.button.size = new Vector2(150, 50);
+        this.button = mw.StaleButton.newObject(rootCanvas);
+        this.button.position = new mw.Vector2(1700, 310);
+        this.button.size = new mw.Vector2(150, 50);
         this.button.text = "按下变红";
         this.button.transitionEnable = true;
-        this.button.pressedImagColor = LinearColor.red;
-        this.button.visibility = SlateVisibility.Visible;
+        this.button.pressedImagColor = mw.LinearColor.red;
+        this.button.visibility = mw.SlateVisibility.Visible;
 
         this.button.onClicked.add(() => {
             if (fun) {

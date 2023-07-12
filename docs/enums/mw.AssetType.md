@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / AssetType
+[TYPE](../groups/Core.TYPE.md) / AssetType
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 
@@ -11,6 +11,7 @@
 | **[All](mw.AssetType.md#all)** = ``0`` <br> |
 | **[Character](mw.AssetType.md#character)** = ``7`` <br> |
 | **[Cloth](mw.AssetType.md#cloth)** = ``3`` <br> |
+| **[ParticleSystem](mw.AssetType.md#particlesystem)** = ``8`` <br> |
 | **[Prefab](mw.AssetType.md#prefab)** = ``6`` <br> |
 | **[SkeletalMesh](mw.AssetType.md#skeletalmesh)** = ``2`` <br> |
 | **[SoundWave](mw.AssetType.md#soundwave)** = ``4`` <br> |
@@ -40,6 +41,14 @@ ___
 • **Cloth** = ``3``
 
 Cloth
+
+___
+
+### ParticleSystem <Score text="ParticleSystem" /> 
+
+• **ParticleSystem** = ``8``
+
+ParticleSystem
 
 ___
 

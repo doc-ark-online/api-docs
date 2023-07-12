@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / MouseLockMode
+[UI](../groups/Core.UI.md) / MouseLockMode
 
 # MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
 

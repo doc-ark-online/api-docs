@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / TextBlock
+[UI](../groups/Core.UI.md) / TextBlock
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 

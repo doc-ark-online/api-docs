@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / CharacterDescription
+[AVATAR](../groups/Core.AVATAR.md) / CharacterDescription
 
 # CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
 
@@ -21,11 +21,8 @@
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 ```ts
-@Core.Class
+@Class
 export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -35,7 +32,7 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
+            if(myCharacter.isDescriptionReady) {
                 let animation = myCharacter.loadAnimation("35391");
                 animation.play();
             } else {
@@ -44,18 +41,18 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             }
             let defaultStyle = null;
             // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
+            myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                EffectService.playOnGameObject("161245", myCharacter, HumanoidType.Root);
                 // 获取角色默认外观风格
-                defaultStyle = myCharacter.getStyleData();
+                defaultStyle = myCharacter.getDescription();
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
                     myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
@@ -64,22 +61,22 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
                     // 修改角色style化妆:腮红为75674
                     myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.description.advance.hair.frontHair.style = "57731";
-                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.description = "57731";
+                    myCharacter.description.advance.hair.backHair.description = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.description.advance.clothing.gloves.style = "60384";
-                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.description = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.description = "58700";
+                    myCharacter.description.advance.clothing.gloves.description = "60384";
+                    myCharacter.description.advance.clothing.shoes.description = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
+            InputUtil.onKeyDown(Keys.Three, () => {
+                myCharacter.syncDescription();
             });
             // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
+            InputUtil.onKeyDown(Keys.Four, () => {
+                myCharacter.clearDescription();
             });
         }
     }
@@ -311,11 +308,8 @@ ___
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 ```ts
-@Core.Class
+@Class
 export default class CharacterStyleExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183";
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -325,7 +319,7 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             // 获取玩家控制角色
             let myCharacter = myPlayer.character;
             // 如果玩家外观准备完成挥手，反之摊手
-            if(myCharacter.styleReady) {
+            if(myCharacter.isDescriptionReady) {
                 let animation = myCharacter.loadAnimation("35391");
                 animation.play();
             } else {
@@ -334,18 +328,18 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
             }
             let defaultStyle = null;
             // 给【角色换装完成】委托添加函数
-            myCharacter.onStyleCompleted.add(() => {
+            myCharacter.onDescriptionComplete.add(() => {
                 // 播放换装完成特效
-                EffectService.getInstance().playEffectOnPlayer("161245", myCharacter, SlotType.Root);
+                EffectService.playOnGameObject("161245", myCharacter, HumanoidType.Root);
                 // 获取角色默认外观风格
-                defaultStyle = myCharacter.getStyleData();
+                defaultStyle = myCharacter.getDescription();
             });
             // 添加一个按键方法:按下键盘“1”，重置为默认角色外观
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 myCharacter.setDescription(defaultStyle);
             });
             // 添加一个按键方法:按下键盘“2”，修改角色外观
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     // 修改角色style头部:头大小为1.5倍
                     myCharacter.description.advance.headFeatures.head.headOverallScale = 1.5;
@@ -354,22 +348,22 @@ preloadAssets = "14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,13
                     // 修改角色style化妆:腮红为75674
                     myCharacter.description.advance.makeup.blush.blushStyle = "75674";
                     // 修改角色style头发:前发为57731，后发为63910
-                    myCharacter.description.advance.hair.frontHair.style = "57731";
-                    myCharacter.description.advance.hair.backHair.style = "63910";
+                    myCharacter.description.advance.hair.frontHair.description = "57731";
+                    myCharacter.description.advance.hair.backHair.description = "63910";
                     // 修改角色style:上衣为58694，下衣为58700，手套为60384，鞋子为58696
-                    myCharacter.description.advance.clothing.upperCloth.style = "58694";
-                    myCharacter.description.advance.clothing.lowerCloth.style = "58700";
-                    myCharacter.description.advance.clothing.gloves.style = "60384";
-                    myCharacter.description.advance.clothing.shoes.style = "58696";
+                    myCharacter.description.advance.clothing.upperCloth.description = "58694";
+                    myCharacter.description.advance.clothing.lowerCloth.description = "58700";
+                    myCharacter.description.advance.clothing.gloves.description = "60384";
+                    myCharacter.description.advance.clothing.shoes.description = "58696";
                 }
             });
             // 添加一个按键方法:按下键盘“3”，同步角色外观
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
-                myCharacter.syncStyle();
+            InputUtil.onKeyDown(Keys.Three, () => {
+                myCharacter.syncDescription();
             });
             // 添加一个按键方法:按下键盘“4”，清空角色外观
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
-                myCharacter.clearStyle();
+            InputUtil.onKeyDown(Keys.Four, () => {
+                myCharacter.clearDescription();
             });
         }
     }

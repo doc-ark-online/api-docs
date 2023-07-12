@@ -1,8 +1,8 @@
-[Animations](../groups/Core.Animations.md) / Animation
+[ANIMATIONS](../groups/Core.ANIMATIONS.md) / Animation
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
-动画类
+动画类(测试信息!!!)
 
 ::: warning Precautions
 
@@ -12,7 +12,7 @@
 
 使用示例:创建方式
 ```ts
-asyncGetCurrentPlayer().then((player) => {
+mw.asyncGetCurrentPlayer().then((player) => {
   let Anim = player.character.playAnimation(animGUID);
   Anim = player.character.loadAnimation(animGUID);
 });
@@ -25,7 +25,7 @@ asyncGetCurrentPlayer().then((player) => {
 | **[isPlaying](mw.Animation.md#isplaying)**(): `boolean` <br> 是否播放|
 | **[length](mw.Animation.md#length)**(): `number` <br> 动画长度|
 | **[loop](mw.Animation.md#loop)**(): `number` <br> 循环次数|
-| **[onAnimFinished](mw.Animation.md#onanimfinished)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 播放结束委托|
+| **[onFinish](mw.Animation.md#onfinish)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 播放结束委托|
 | **[slot](mw.Animation.md#slot)**(): [`AnimSlot`](../enums/mw.AnimSlot.md) <br> 获取动画播放插槽|
 | **[speed](mw.Animation.md#speed)**(): `number` <br> 播放速率|
 
@@ -51,13 +51,10 @@ asyncGetCurrentPlayer().then((player) => {
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_IsPlaying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_IsPlaying extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -70,35 +67,35 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“9”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-    }
+        }
     }
 }
 ```
@@ -121,13 +118,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Length extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -140,31 +134,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“4”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -192,13 +186,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Loop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -211,31 +202,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“5”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -259,13 +250,10 @@ preloadAssets = "14700,20380";
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Loop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -278,31 +266,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“6”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -320,9 +308,9 @@ preloadAssets = "14700,20380";
 
 ___
 
-### onAnimFinished <Score text="onAnimFinished" /> 
+### onFinish <Score text="onFinish" /> 
 
-• `get` **onAnimFinished**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+• `get` **onFinish**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
 播放结束委托
 
@@ -333,13 +321,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_OnFinish"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_OnFinish extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -352,31 +337,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“9”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -415,7 +400,7 @@ console.log(anim.slot);
 ```ts
 // 让动画只在上半身播放
 let anim = player.character.loadAnimation(animGUID);
-anim.slot = AnimSlot.Upper;
+anim.slot = mw.AnimSlot.Upper;
 anim.play();
 ```
 
@@ -442,13 +427,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Speed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -461,31 +443,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“8”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -510,13 +492,10 @@ preloadAssets = "14700,20380";
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Speed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -529,31 +508,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“7”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -580,17 +559,14 @@ preloadAssets = "14700,20380";
 
 ::: warning Precautions
 
-不会触发onAnimFinished委托。生效范围与角色创建方式绑定。
+不会触发onFinish委托。生效范围与角色创建方式绑定。
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Pause"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Pause extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -603,31 +579,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“11”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -657,13 +633,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Play extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -676,31 +649,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“10”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -730,13 +703,10 @@ ___
 
 :::
 
-使用示例:给角色加载一个舞蹈动画，修改动画对象的属性并在动画完成委托绑定一个函数播放完成特效。提供按键方法控制播放，暂停，继续和停止。
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Resume"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Resume extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -749,31 +719,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
-            // 添加一个按键方法:按下键盘“12”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            // 添加一个按键方法:按下键盘“4”，停止播放
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
@@ -803,13 +773,10 @@ ___
 
 :::
 
-使用示例:暂停播放
+使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Core.Class
-export default class AnimationExample extends Script {
-// 预加载使用到的资源
-@Core.Property()
-preloadAssets = "14700,20380";
+@Class
+export default class Example_Animation_Stop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -822,31 +789,31 @@ preloadAssets = "14700,20380";
             let danceAnimation = myCharacter.loadAnimation("14700");
             // 动画的属性
             console.log("动画时长 " + danceAnimation.length);
+            // 循环播放10次
             danceAnimation.loop = 10;
-// 循环播放1000次
-            danceAnimation.rate = 2;
-// 2倍速
+            // 2倍播放速度
+            danceAnimation.speed = 2;
             // 给【动画完成】委托添加函数，播放一个升级特效
-            danceAnimation.onAnimFinished.add(() => {
-                EffectService.playEffectOnPlayer("20380", myCharacter, SlotType.Root);
+            danceAnimation.onFinish.add(() => {
+                EffectService.playOnGameObject("20380", myCharacter, {slotType: HumanoidType.Root});
             });
             // 添加一个按键方法:按下键盘“1”，开始播放
-            InputUtil.onKeyDown(Type.Keys.One, () => {
+            InputUtil.onKeyDown(Keys.One, () => {
                 danceAnimation.play();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“2”，暂停播放
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 danceAnimation.pause();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“3”，继续播放
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 danceAnimation.resume();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });
             // 添加一个按键方法:按下键盘“4”，停止播放
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            InputUtil.onKeyDown(Keys.Four, () => {
                 danceAnimation.stop();
                 console.log("动画播放 " + danceAnimation.isPlaying);
             });

@@ -1,4 +1,4 @@
-[Monetization](../groups/Core.Monetization.md) / PurchaseService
+[MONETIZATION](../groups/Core.MONETIZATION.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
@@ -138,31 +138,31 @@ ___
 if (Util.SystemUtil.isServer()) {
      console.log("监听发货");
      //发货监听
-     PurchaseService.onPremiumMemberOrderDelivered.add((
-          playerController: Player,
+     mw.PurchaseService.onPremiumMemberOrderDelivered.add((
+          playerController: mw.Player,
           orderId: string,
           boxId: string,
           amount: number,
           confirmOrder: (bReceived: boolean) => void
      ) => {
-          dispatchToClient(playerController, SHIP_ORDER, orderId, boxId, amount);
+          mw.dispatchToClient(playerController, SHIP_ORDER, orderId, boxId, amount);
           //确认收货
           confirmOrder(true);
      });
 }
 
 // 扣除钥匙
-PurchaseService.consumeKey("1000", 1, 1, (status : consumeKeyStatus) => {
+mw.PurchaseService.consumeKey("1000", 1, 1, (status : mw.consumeKeyStatus) => {
      console.log("consumeKey status : " + status);
-     if (status == consumeKeyStatus.Success) {
+     if (status == mw.consumeKeyStatus.Success) {
           console.log("下单成功");
-     } else if (status == consumeKeyStatus.PremiumMemberNotSupported) {
+     } else if (status == mw.consumeKeyStatus.PremiumMemberNotSupported) {
           console.log("不支持大会员");
-     } else if (status == consumeKeyStatus.NotPremiumMember) {
+     } else if (status == mw.consumeKeyStatus.NotPremiumMember) {
           console.log("不是大会员");
-     } else if (status == consumeKeyStatus.InsufficientKeys) {
+     } else if (status == mw.consumeKeyStatus.InsufficientKeys) {
           console.log("钥匙不足");
-     } else if (status == consumeKeyStatus.Error) {
+     } else if (status == mw.consumeKeyStatus.Error) {
           console.log("扣除失败");
      }
 });
@@ -189,7 +189,7 @@ ___
 
 使用示例:将代码片段放入脚本中即可
 ```ts
-PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : number, bills : keyUsageInfo[]) => {
+mw.PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : number, bills : mw.keyUsageInfo[]) => {
     console.log("bill len : " + bills.length);
     for(let bill of bills)
     {
@@ -227,8 +227,8 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
 ```ts
-@Core.Class
-export default class PurchaseExample extends Script {
+@Core.Component
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -236,7 +236,7 @@ export default class PurchaseExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         await TimeUtil.delaySecond(5);
         let arkCount = PurchaseService.getArkBalance();
         player.character.characterName = "ArkCount: " + arkCount;
@@ -262,8 +262,8 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
 ```
-@Core.Class
-export default class PurchaseExample extends Script {
+@Core.Component
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -271,7 +271,7 @@ export default class PurchaseExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         PurchaseService.getUserKeyNumber(keyNumber => {
             player.character.characterName = "当前用户剩余钥匙数量：", keyNumber.toString();
         })
@@ -305,8 +305,8 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
 ```
-@Core.Class
-export default class PurchaseExample extends Script {
+@Core.Component
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -314,7 +314,7 @@ export default class PurchaseExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         PurchaseService.isPremiumMember(isSupport => {
             player.character.characterName = isSupport ? "当前玩家是大会员" : "当前玩家不是大会员";
         })
@@ -346,8 +346,8 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
 ```
-@Core.Class
-export default class PurchaseExample extends Script {
+@Core.Component
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -355,7 +355,7 @@ export default class PurchaseExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await mw.asyncGetCurrentPlayer();
         PurchaseService.isPremiumMemberSupported(isSupport => {
             player.character.characterName = isSupport ? "当前app支持大会员功能" : "当前app不支持大会员功能";
         })
@@ -381,8 +381,8 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
 ```
-@Core.Class
-export default class PurchaseExample extends Script {
+@Core.Component
+export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;

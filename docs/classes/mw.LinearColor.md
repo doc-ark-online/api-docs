@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / LinearColor
+[TYPE](../groups/Core.TYPE.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
@@ -372,7 +372,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `linearColorB` | [`LinearColor`](mw.LinearColor.md) | 对比的颜色B |
-| `epsilon?` | `number` | 最小误差数 default:MathUtil.EPSILON |
+| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
 
@@ -416,7 +416,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `linearColorB` | [`LinearColor`](mw.LinearColor.md) | 对比的颜色B |
-| `epsilon?` | `number` | 最小误差数 default:MathUtil.EPSILON |
+| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
 

@@ -1,4 +1,4 @@
-[Settings](../groups/Core.Settings.md) / GraphicsSettings
+[SETTINGS](../groups/Core.SETTINGS.md) / GraphicsSettings
 
 # GraphicsSettings <Badge type="tip" text="Class" /> <Score text="GraphicsSettings" />
 
@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
 ```ts
-@Core.Class
+@Class
 export default class ClassExample extends Script {
 
    protected onStart(): void {
@@ -15,8 +15,8 @@ export default class ClassExample extends Script {
 
    public RoomSettings(){
        //设置CPU和GPU的画质等级
-       let cpu = GraphicsLevel.Low1;
-       let gpu = GraphicsLevel.Low2;
+       let cpu = mw.GraphicsLevel.Low1;
+       let gpu = mw.GraphicsLevel.Low2;
        GraphicsSettings.setGraphicsCPULevel(cpu);
        GraphicsSettings.setGraphicsGPULevel(gpu);
 

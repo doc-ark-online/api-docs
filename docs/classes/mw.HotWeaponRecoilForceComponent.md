@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeaponRecoilForceComponent
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponRecoilForceComponent
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponRecoilForceSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -32,7 +32,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onStartRecoilForce](mw.HotWeaponRecoilForceComponent.md#onstartrecoilforce)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -55,9 +55,9 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ## Properties
 
-### onStartRecoilForce <Score text="onStartRecoilForce" /> 
+### onStartRecoil <Score text="onStartRecoil" /> 
 
-• **onStartRecoilForce**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartRecoil**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -372,11 +372,11 @@ ___
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下:
 ```ts
-@Core.Class
-export default class HotWeaponRecoilForceSample2 extends Script {
+@Core.Component
+export default class HotWeaponRecoilForceSample2 extends mw.Script {
     protected onStart(): void {
         // 构造
-        const hotWeapon = this.gameObject as HotWeapon;
+        const hotWeapon = this.gameObject as mw.HotWeapon;
 
         const horizontalOffset = hotWeapon.recoilForceComponent.getHorizontalOffset();
         const verticalOffset = hotWeapon.recoilForceComponent.getVerticalOffset();

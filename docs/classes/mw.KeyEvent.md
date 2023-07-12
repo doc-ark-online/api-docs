@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / KeyEvent
+[UI](../groups/Core.UI.md) / KeyEvent
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 

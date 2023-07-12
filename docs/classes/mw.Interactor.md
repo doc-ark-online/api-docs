@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / Interactor
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Interactor
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
@@ -6,30 +6,30 @@
 
 使用示例:创建一个名为"InteractorSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,在本地资源库中搜索4175动画资源,拖入对象管理器中的优先加载目录。运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
 ```ts
- @Core.Class
+ @Class
 export default class InteractorSample extends Script {
     protected async onStart(): Promise<void> {
         const interObj = this.gameObject as Interactor;
         // 开始交互回调
-        interObj.onInteractiveStarted.add(() => {
-            console.log("onInteractiveStarted")
-            console.log("onInteractiveStarted ", interObj.getInteractCharacter())
-            console.log("onInteractiveStarted ", interObj.getInteractiveStatus())
+        interObj.onEnter.add(() => {
+            console.log("onEnter")
+            console.log("onEnter ", interObj.getCurrentCharacter())
+            console.log("onEnter ", interObj.occupied)
         })
-        interObj.interactiveSlot = InteractiveSlot.Buns;
-        interObj.interactiveStance = "4175";
+        interObj.slot = HumanoidSlotType.Buttocks;
+        interObj.animationId = "4175";
 
         // 结束交互回调
-        interObj.onInteractiveEnded.add(() => {
-            console.log("onInteractiveEnded")
+        interObj.onLeave.add(() => {
+            console.log("onLeave")
         })
         if (SystemUtil.isClient()) {
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                interObj.startInteract(Gameplay.getCurrentPlayer().character, InteractiveSlot.Buns, "4175");
+            InputUtil.onKeyDown(Keys.One, () => {
+                interObj.enter(getCurrentPlayer().character, HumanoidSlotType.Buttocks, "4175");
             })
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 // 不传退出交互时会自动回到交互前的坐标和旋转
-                interObj.endInteract();
+                interObj.leave();
             })
         }
     }
@@ -42,14 +42,12 @@ export default class InteractorSample extends Script {
 
   ↳ **`Interactor`**
 
-  ↳↳ [`InteractiveObject`](Core.mw.InteractiveObject.md)
-
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onEnded](mw.Interactor.md#onended)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数。通常与 endInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
-| **[onStarted](mw.Interactor.md#onstarted)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
+| **[onEnter](mw.Interactor.md#onenter)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 交互开始时执行绑定函数。通常与 enter 成对使用，使用示例详见方法 enter 中示例代码。|
+| **[onLeave](mw.Interactor.md#onleave)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 交互结束时执行绑定函数。通常与 leave 成对使用，使用示例详见方法 leave 中示例代码。|
 
 
 ::: details 点击查看继承
@@ -62,8 +60,8 @@ export default class InteractorSample extends Script {
 | Accessors |
 | :-----|
 | **[animationId](mw.Interactor.md#animationid)**(): `string` <br> 交互动画资源 id|
-| **[slot](mw.Interactor.md#slot)**(): [`SlotType`](../enums/mw.SlotType.md) <br> 交互物插槽|
-| **[status](mw.Interactor.md#status)**(): `boolean` <br> 该交互物的交互状态|
+| **[occupied](mw.Interactor.md#occupied)**(): `boolean` <br> 该交互物的交互状态|
+| **[slot](mw.Interactor.md#slot)**(): [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) <br> 交互物插槽|
 
 
 ::: details 点击查看继承
@@ -86,9 +84,9 @@ export default class InteractorSample extends Script {
 
 | Methods |
 | :-----|
-| **[end](mw.Interactor.md#end)**(`position?`: [`Vector`](mw.Vector.md), `rotation?`: [`Rotation`](mw.Rotation.md), `animationId?`: `string`): `boolean` <br> 结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。|
+| **[enter](mw.Interactor.md#enter)**(`character`: [`Character`](mw.Character.md), `slot?`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md), `animationId?`: `string`): `boolean` <br> 开始交互|
 | **[getCurrentCharacter](mw.Interactor.md#getcurrentcharacter)**(): [`Character`](mw.Character.md) <br> 获取正在交互的角色|
-| **[start](mw.Interactor.md#start)**(`character`: [`Character`](mw.Character.md), `slot?`: [`SlotType`](../enums/mw.SlotType.md), `animationId?`: `string`): `boolean` <br> 开始交互|
+| **[leave](mw.Interactor.md#leave)**(`position?`: [`Vector`](mw.Vector.md), `rotation?`: [`Rotation`](mw.Rotation.md), `animationId?`: `string`): `boolean` <br> 结束交互。通常与 enter 成对使用，使用示例详见方法 enter 中示例代码。|
 
 
 ::: details 点击查看继承
@@ -99,7 +97,6 @@ export default class InteractorSample extends Script {
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -113,15 +110,12 @@ export default class InteractorSample extends Script {
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -129,15 +123,15 @@ export default class InteractorSample extends Script {
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
-### onEnded <Score text="onEnded" /> 
+### onEnter <Score text="onEnter" /> 
 
-• **onEnded**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onEnter**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-交互结束时执行绑定函数。通常与 endInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
+交互开始时执行绑定函数。通常与 enter 成对使用，使用示例详见方法 enter 中示例代码。
 
 ::: warning Precautions
 
@@ -147,11 +141,11 @@ export default class InteractorSample extends Script {
 
 ___
 
-### onStarted <Score text="onStarted" /> 
+### onLeave <Score text="onLeave" /> 
 
-• **onStarted**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onLeave**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
-交互开始时执行绑定函数。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
+交互结束时执行绑定函数。通常与 leave 成对使用，使用示例详见方法 leave 中示例代码。
 
 ::: warning Precautions
 
@@ -184,15 +178,27 @@ ___
 
 ___
 
+### occupied <Score text="occupied" /> 
+
+• `get` **occupied**(): `boolean`
+
+该交互物的交互状态
+
+#### Returns
+
+`boolean`
+
+___
+
 ### slot <Score text="slot" /> 
 
-• `get` **slot**(): [`SlotType`](../enums/mw.SlotType.md)
+• `get` **slot**(): [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)
 
 交互物插槽
 
 #### Returns
 
-[`SlotType`](../enums/mw.SlotType.md)
+[`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)
 
 • `set` **slot**(`value`): `void`
 
@@ -202,30 +208,99 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `value` | [`SlotType`](../enums/mw.SlotType.md) |
+| `value` | [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |
 
-
-___
-
-### status <Score text="status" /> 
-
-• `get` **status**(): `boolean`
-
-该交互物的交互状态
-
-#### Returns
-
-`boolean`
 
 
 ## Methods
 ___
 
-### end <Score text="end" /> 
+### enter <Score text="enter" /> 
 
-• **end**(`position?`, `rotation?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
+• **enter**(`character`, `slot?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
 
-结束交互。通常与 startInteract 成对使用，使用示例详见方法 startInteract 中示例代码。
+开始交互
+
+调用端自动广播
+
+使用示例:创建一个名为"InteractorStartEndSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```ts
+@Class
+export default class InteractorStartEndSample extends Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Interactor;
+        // 开始交互回调
+        interObj.onEnter.add(() => {
+            console.log("onEnter")
+        })
+        // 结束交互回调
+        interObj.onLeave.add(() => {
+            console.log("onLeave")
+        })
+        if (SystemUtil.isClient()) {
+            InputUtil.onKeyDown(Keys.One, () => {
+                interObj.enter(getCurrentPlayer().character, HumanoidSlotType.Buttocks, "4175");
+            })
+            InputUtil.onKeyDown(Keys.Two, () => {
+                // 不传退出交互时会自动回到交互前的坐标和旋转
+                interObj.leave();
+            })
+        }
+    }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `character` | [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
+| `slot?` | [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  交互插槽，不传默认以属性 slot 为准 default: 属性 slot |
+| `animationId?` | `string` |  交互姿态，不传默认以属性 animationId 为准 default: 属性 animationId |
+
+#### Returns
+
+`boolean`
+
+是否成功交互
+
+___
+
+### getCurrentCharacter <Score text="getCurrentCharacter" /> 
+
+• **getCurrentCharacter**(): [`Character`](mw.Character.md) 
+
+获取正在交互的角色
+
+
+使用示例:创建一个名为"InteractorGetInteractCharacterSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+```ts
+@Class
+export default class InteractorGetInteractCharacterSample extends Script {
+    protected async onStart(): Promise<void> {
+        const interObj = this.gameObject as Interactor;
+        // 开始交互回调
+        interObj.onEnter.add(() => {
+            console.log(`onEnter status: ${interObj.getCurrentCharacter()}`)
+        })
+        // 省略开始交互代码
+    }
+}
+```
+
+#### Returns
+
+[`Character`](mw.Character.md)
+
+true：为交互中
+
+___
+
+### leave <Score text="leave" /> 
+
+• **leave**(`position?`, `rotation?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
+
+结束交互。通常与 enter 成对使用，使用示例详见方法 enter 中示例代码。
 
 调用端自动广播
 
@@ -242,90 +317,3 @@ ___
 `boolean`
 
 true 触发了结束交互逻辑
-
-___
-
-### getCurrentCharacter <Score text="getCurrentCharacter" /> 
-
-• **getCurrentCharacter**(): [`Character`](mw.Character.md) 
-
-获取正在交互的角色
-
-
-使用示例:创建一个名为"InteractorGetInteractCharacterSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
-```ts
-@Core.Class
-export default class InteractorGetInteractCharacterSample extends Script {
-    protected async onStart(): Promise<void> {
-        const interObj = this.gameObject as Interactor;
-        // 开始交互回调
-        interObj.onInteractiveStarted.add(() => {
-            console.log(`onInteractiveStarted status: ${interObj.getInteractCharacter()}`)
-        })
-        // 省略开始交互代码
-    }
-}
-```
-
-#### Returns
-
-[`Character`](mw.Character.md)
-
-true：为交互中
-
-___
-
-### start <Score text="start" /> 
-
-• **start**(`character`, `slot?`, `animationId?`): `boolean` <Badge type="tip" text="other" />
-
-开始交互
-
-::: warning Precautions
-
-建议客户端调用
-
-:::
-
-调用端自动广播
-
-使用示例:创建一个名为"InteractorStartEndSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
-```ts
-@Core.Class
-export default class InteractorStartEndSample extends Script {
-    protected async onStart(): Promise<void> {
-        const interObj = this.gameObject as Interactor;
-        // 开始交互回调
-        interObj.onInteractiveStarted.add(() => {
-            console.log("onInteractiveStarted")
-        })
-        // 结束交互回调
-        interObj.onInteractiveEnded.add(() => {
-            console.log("onInteractiveEnded")
-        })
-        if (SystemUtil.isClient()) {
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                interObj.startInteract(Gameplay.getCurrentPlayer().character, InteractiveSlot.Buns, "4175");
-            })
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
-                // 不传退出交互时会自动回到交互前的坐标和旋转
-                interObj.endInteract();
-            })
-        }
-    }
-}
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`Character`](mw.Character.md) |  要交互的角色（可以是玩家，也可以是AI） |
-| `slot?` | [`SlotType`](../enums/mw.SlotType.md) |  交互插槽，不传默认以属性 interactiveSlot 为准 default: 属性 interactiveSlot |
-| `animationId?` | `string` |  交互姿态，不传默认以属性 interactiveStance 为准 default: 属性 interactiveStance |
-
-#### Returns
-
-`boolean`
-
-是否成功交互

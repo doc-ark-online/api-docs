@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / DragDropOperation
+[UI](../groups/Core.UI.md) / DragDropOperation
 
 # DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 

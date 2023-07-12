@@ -1,4 +1,4 @@
-[Ui](../groups/Core.Ui.md) / ButtonPressMethod
+[UI](../groups/Core.UI.md) / ButtonPressMethod
 
 # ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
 

@@ -1,4 +1,4 @@
-[Physics](../groups/Core.Physics.md) / MotionAxis
+[PHYSICS](../groups/Core.PHYSICS.md) / MotionAxis
 
 # MotionAxis <Badge type="tip" text="Enumeration" /> <Score text="MotionAxis" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / MoveFacingDirection
+[AVATAR](../groups/Core.AVATAR.md) / MoveFacingDirection
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 

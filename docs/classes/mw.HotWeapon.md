@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeapon
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeapon
 
 # HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 
@@ -12,7 +12,7 @@
 
 使用示例: 创建一个名为"HotWeaponSample1"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,在本地资源库中搜索80484、4172、4171动画资源,拖入对象管理器中的优先加载目录。运行游戏,按键1、2、3、4你将在场景中看到一个热武器设置参数，添加委托，绑定按键，以及人物换弹的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -27,7 +27,7 @@ export default class HotWeaponSample1 extends Script {
             hotWeapon.fireComponent.offsetOfFireOnScreenCenter = new Vector(100, 30, 0);
             // 设置参数
             hotWeapon.fireComponent.animationGuid = "80484";
-            hotWeapon.setCurrentFireModel(Gameplay.HotWeaponFireMode.SingleFire);
+            hotWeapon.setCurrentFireModel(HotWeaponFireMode.SingleFire);
 
             hotWeapon.aimEnable = true;
             // 切换瞄准时的 第一/第三 人称
@@ -89,7 +89,7 @@ export default class HotWeaponSample1 extends Script {
             hotWeapon.aimComponent.onAimStartServer.add(() => { console.log("aimComponent.onAimStartClient") });
             hotWeapon.aimComponent.onAimEndServer.add(() => { console.log("aimComponent.onAimEndClient") });
 
-            addClientListener("weaponEquipment", (player) => {
+            mw.Event.addClientListener("weaponEquipment", (player) => {
                 // 目前装备方法只能在服务端调用
                 hotWeapon.equipment(player.character, "Right_Hand");
             });
@@ -114,11 +114,11 @@ export default class HotWeaponSample1 extends Script {
             hotWeapon.aimComponent.onAimEndClient.add(() => { console.log("aimComponent.onAimEndClient") });
 
             // 装备
-            InputUtil.onKeyDown(Type.Keys.One, () => {
-                dispatchToServer("weaponEquipment");
+            InputUtil.onKeyDown(Keys.One, () => {
+                mw.Event.dispatchEventToServer("weaponEquipment");
             });
 
-            InputUtil.onKeyDown(Type.Keys.Two, () => {
+            InputUtil.onKeyDown(Keys.Two, () => {
                 // 开始执行操作
                 if (hotWeapon.getCurrentState() == HotWeaponState.Firing) {
                     hotWeapon.stopFire();
@@ -127,7 +127,7 @@ export default class HotWeaponSample1 extends Script {
                 }
             });
 
-            InputUtil.onKeyDown(Type.Keys.Three, () => {
+            InputUtil.onKeyDown(Keys.Three, () => {
                 // 开始执行操作
                 if (hotWeapon.getCurrentState() == HotWeaponState.Reloading) {
                     hotWeapon.breakReload();
@@ -136,7 +136,7 @@ export default class HotWeaponSample1 extends Script {
                 }
             });
 
-            InputUtil.onKeyDown(Type.Keys.Four, () => {
+            InputUtil.onKeyDown(Keys.Four, () => {
                 // 开始执行操作
                 if (hotWeapon.getCurrentState() == HotWeaponState.Loading) {
                     hotWeapon.breakLoad();
@@ -163,8 +163,8 @@ export default class HotWeaponSample1 extends Script {
 | **[aimComponent](mw.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](mw.HotWeaponAimComponent.md) <br> 瞄准功能。使用示例见类 HotWeaponAimComponent|
 | **[fireComponent](mw.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](mw.HotWeaponFireComponent.md) <br> 射击功能。使用示例见类 HotWeaponFireComponent|
 | **[loadComponent](mw.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](mw.HotWeaponLoadComponent.md) <br> 上膛功能。使用示例见类 HotWeaponLoadComponent|
-| **[onEquipped](mw.HotWeapon.md#onequipped)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
-| **[onUnequipped](mw.HotWeapon.md#onunequipped)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
+| **[onEquip](mw.HotWeapon.md#onequip)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\> <br> 服务器装备时执行绑定函数|
+| **[onUnequip](mw.HotWeapon.md#onunequip)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
 | **[recoilForceComponent](mw.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md) <br> 后坐力功能。使用示例见类 HotWeaponRecoilForceComponent|
 | **[reloadComponent](mw.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](mw.HotWeaponReloadComponent.md) <br> 换弹功能。使用示例见类 HotWeaponReloadComponent|
 
@@ -208,7 +208,7 @@ export default class HotWeaponSample1 extends Script {
 | **[breakLoad](mw.HotWeapon.md#breakload)**(): `void` <br> 打断上膛。使用示例见方法 reload 使用示例|
 | **[breakReload](mw.HotWeapon.md#breakreload)**(): `void` <br> 打断换弹。使用示例见方法 reload 使用示例|
 | **[cloneComponentsData](mw.HotWeapon.md#clonecomponentsdata)**(`otherHotWeapon`: [`HotWeapon`](mw.HotWeapon.md)): `void` <br> 从传入的热武器逻辑对象中拷贝所有组件数据|
-| **[equip](mw.HotWeapon.md#equip)**(`character`: [`Character`](mw.Character.md), `slotName`: [`SlotType`](../enums/mw.SlotType.md)): `void` <br> 装备热武器到目标角色的指定插槽位置|
+| **[equip](mw.HotWeapon.md#equip)**(`character`: [`Character`](mw.Character.md), `slotName`: [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md)): `void` <br> 装备热武器到目标角色的指定插槽位置|
 | **[getBulletLocWhileSpawnOnScreenCenter](mw.HotWeapon.md#getbulletlocwhilespawnonscreencenter)**(): [`Vector`](mw.Vector.md) <br> 使用屏幕中心生成子弹投掷物模式时，获取子弹投掷物生成的location|
 | **[getCurrentOwner](mw.HotWeapon.md#getcurrentowner)**(): [`Character`](mw.Character.md) <br> 获取当前热武器的所有者|
 | **[getCurrentState](mw.HotWeapon.md#getcurrentstate)**(): [`HotWeaponState`](../enums/mw.HotWeaponState.md) <br> 获取当前热武器状态|
@@ -230,7 +230,6 @@ export default class HotWeaponSample1 extends Script {
 | **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[follow](mw.GameObject.md#follow)**(`Target`: [`GameObject`](mw.GameObject.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
 | **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
 | **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
 | **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
@@ -244,15 +243,12 @@ export default class HotWeaponSample1 extends Script {
 | **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[navigateTo](mw.GameObject.md#navigateto)**(`Location`: [`Vector`](mw.Vector.md), `Radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 向目标点进行寻路移动|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[stopFollow](mw.GameObject.md#stopfollow)**(): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.GameObject.md#stopnavigateto)**(): `void` <br> 停止向目标点寻路移动|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);|
+| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
 | **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
 | **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
@@ -260,7 +256,7 @@ export default class HotWeaponSample1 extends Script {
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`[spawn](mw.GameObject.md#spawn)Info`): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -296,15 +292,15 @@ ___
 
 ___
 
-### onEquipped <Score text="onEquipped" /> 
+### onEquip <Score text="onEquip" /> 
 
-• **onEquipped**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
+• **onEquip**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>
 
 服务器装备时执行绑定函数
 
 使用示例: 创建一个名为"HotWeaponSample2"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器添加装备委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample2 extends Script {
     protected onStart(): void {
         // 构造
@@ -323,9 +319,9 @@ export default class HotWeaponSample2 extends Script {
 
 ___
 
-### onUnequipped <Score text="onUnequipped" /> 
+### onUnequip <Score text="onUnequip" /> 
 
-• **onUnequipped**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onUnequip**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器卸载时执行绑定函数。使用示例见属性 onEquipped
 
@@ -577,21 +573,21 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample7"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器装备到角色的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample7 extends Script {
     protected onStart(): void {
        const hotWeapon = this.gameObject as HotWeapon;
        if (SystemUtil.isServer()) {
-           addClientListener("weaponEquipment", (player) => {
+           mw.Event.addClientListener("weaponEquipment", (player) => {
                // 目前装备方法只能在服务端调用
                hotWeapon.equipment(player.character, "Right_Hand");
            });
        } else if (SystemUtil.isClient()) {
            // 装备
-           InputUtil.onKeyDown(Type.Keys.One, () => {
-               dispatchToServer("weaponEquipment");
+           InputUtil.onKeyDown(Keys.One, () => {
+               mw.Event.dispatchEventToServer("weaponEquipment");
            });
-           InputUtil.onKeyDown(Type.Keys.Two, () => {
+           InputUtil.onKeyDown(Keys.Two, () => {
                hotWeapon.unequipHotWeapon();
            });
        }
@@ -604,7 +600,7 @@ export default class HotWeaponSample7 extends Script {
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `character` | [`Character`](mw.Character.md) |  该武器的装备对象 default: |
-| `slotName` | [`SlotType`](../enums/mw.SlotType.md) |  要装备的插槽名称 default: |
+| `slotName` | [`HumanoidSlotType`](../enums/mw.HumanoidSlotType.md) |  要装备的插槽名称 default: |
 
 
 ___
@@ -624,7 +620,7 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample5"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample5 extends Script {
     protected onStart(): void {
         // 构造
@@ -654,7 +650,7 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample6"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample6 extends Script {
     protected onStart(): void {
         // 构造
@@ -681,7 +677,7 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample11"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个获取热武器状态的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample11 extends Script {
     protected onStart(): void {
        const hotWeapon = this.gameObject as HotWeapon;
@@ -708,11 +704,11 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample3"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到热武器调用当前方法的效果,代码如下:
 ```ts
-@Core.Class
-export default class HotWeaponSample3 extends Script {
+@Core.Component
+export default class HotWeaponSample3 extends mw.Script {
     protected onStart(): void {
         // 构造
-        const hotWeapon = this.gameObject as HotWeapon;
+        const hotWeapon = this.gameObject as mw.HotWeapon;
         if (SystemUtil.isClient()) {
             // 传入射程，得到准心扩散大小
             const crossHairSize = hotWeapon.getDefaultCrossHairSize(1000)
@@ -780,13 +776,13 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample10"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器上膛、停止上膛的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample10 extends Script {
     protected onStart(): void {
        const hotWeapon = this.gameObject as HotWeapon;
        if (SystemUtil.isClient()) {
            // 热武器需要先装备上，见方法 equipment
-           InputUtil.onKeyDown(Type.Keys.Two, () => {
+           InputUtil.onKeyDown(Keys.Two, () => {
                // 开始执行操作
                if (hotWeapon.getCurrentState() == HotWeaponState.Loading) {
                    hotWeapon.breakLoad();
@@ -812,13 +808,13 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample9"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器换弹，中止换弹的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample9 extends Script {
     protected onStart(): void {
        const hotWeapon = this.gameObject as HotWeapon;
        if (SystemUtil.isClient()) {
            // 热武器需要先装备上，见方法 equipment
-           InputUtil.onKeyDown(Type.Keys.Two, () => {
+           InputUtil.onKeyDown(Keys.Two, () => {
                // 开始执行操作
                if (hotWeapon.getCurrentState() == HotWeaponState.Reloading) {
                    hotWeapon.breakReload();
@@ -872,13 +868,13 @@ ___
 
 使用示例: 创建一个名为"HotWeaponSample8"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开火，停止开火的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponSample8 extends Script {
     protected onStart(): void {
        const hotWeapon = this.gameObject as HotWeapon;
        if (SystemUtil.isClient()) {
            // 热武器需要先装备上，见方法 equipment
-           InputUtil.onKeyDown(Type.Keys.Two, () => {
+           InputUtil.onKeyDown(Keys.Two, () => {
                // 开始执行操作
                if (hotWeapon.getCurrentState() == HotWeaponState.Firing) {
                    hotWeapon.stopFire();

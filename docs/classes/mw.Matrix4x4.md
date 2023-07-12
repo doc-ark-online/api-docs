@@ -1,4 +1,4 @@
-[Type](../groups/Core.Type.md) / Matrix4x4
+[TYPE](../groups/Core.TYPE.md) / Matrix4x4
 
 # Matrix4x4 <Badge type="tip" text="Class" /> <Score text="Matrix4x4" />
 
@@ -305,7 +305,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `other` | [`Matrix4x4`](mw.Matrix4x4.md) | 比对的矩阵 |
-| `epsilon?` | `number` | 误差值 default:MathUtil.EPSILON |
+| `epsilon?` | `number` | 误差值 default:mw.MathUtil.EPSILON |
 
 #### Returns
 

@@ -1,4 +1,4 @@
-[Social](../groups/Core.Social.md) / AccountService
+[SOCIAL](../groups/Core.SOCIAL.md) / AccountService
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
@@ -162,7 +162,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像,PC环境下为白图
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -178,7 +178,7 @@ export default class AccountExample extends Script {
 }
 
 class ImageUI {
-    public image: Image;
+    public image: mw.Image;
 
     constructor() {
         this.creatUI();
@@ -196,7 +196,7 @@ class ImageUI {
         // 将Ui的根画布设置为rootCanvas
         ui.rootContent = rootCanvas;
         // 创建一个按钮
-        this.image = Image.newObject(rootCanvas);
+        this.image = mw.Image.newObject(rootCanvas);
         this.image.position = new Vector2(1700, 310);
         this.image.size = new Vector2(150, 50);
         this.image.visibility = SlateVisibility.Visible;
@@ -228,7 +228,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的昵称,PC环境下为空
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -267,7 +267,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的OpenId，PC环境下为空
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -279,7 +279,6 @@ export default class AccountExample extends Script {
         let openId = AccountService.getOpenId();
         console.log("获取用户的OpenId：", openId);
     }
-
 }
 ```
 
@@ -300,7 +299,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -309,17 +308,16 @@ export default class AccountExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
-        npc.worldLocation = new Vector(0, 0, 200);
-        AccountService.getUserData(player.getUserId(), 0, async str => {
+        npc.worldTransform.position = new Vector(0, 0, 200);
+        AccountService.getUserData(player.userId, 0, async str => {
             await TimeUtil.delaySecond(5);
             AccountService.setUserData(npc, str, isSuccess => {
-                player.character.characterName = isSuccess ? "成功" : "失败";
+                player.character.name = isSuccess ? "成功" : "失败";
             })
         });
     }
-
 }
 ```
 
@@ -343,7 +341,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的UserId
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -355,7 +353,6 @@ export default class AccountExample extends Script {
         let userId = AccountService.getUserId();
         console.log("获取平台的用户Id", userId);
     }
-
 }
 ```
 
@@ -417,7 +414,7 @@ ___
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
 ```ts
-@Core.Class
+@Class
 export default class AccountExample extends Script {
 
     protected onStart(): void {
@@ -426,17 +423,16 @@ export default class AccountExample extends Script {
     }
 
     private async test(): Promise<void> {
-        let player = await asyncGetCurrentPlayer();
+        let player = await Player.asyncGetLocalPlayer();
         let npc = (await GameObject.asyncSpawn({ guid: "NPC" })) as Character;
-        npc.worldLocation = new Vector(0, 0, 200);
-        AccountService.getUserData(player.getUserId(), 0, async str => {
+        npc.worldTransform.position = new Vector(0, 0, 200);
+        AccountService.getUserData(player.userId, 0, async str => {
             await TimeUtil.delaySecond(5);
             AccountService.setUserData(npc, str, isSuccess => {
-                player.character.characterName = isSuccess ? "成功" : "失败";
+                player.character.name = isSuccess ? "成功" : "失败";
             })
         });
     }
-
 }
 ```
 

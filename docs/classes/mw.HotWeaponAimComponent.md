@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeaponAimComponent
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAimComponent
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponAimSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器的启用了瞄准组件并设置参数，添加委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponAimSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -32,8 +32,8 @@ export default class HotWeaponAimSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onAimEnd](mw.HotWeaponAimComponent.md#onaimend)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[onAimStart](mw.HotWeaponAimComponent.md#onaimstart)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onStartAim](mw.HotWeaponAimComponent.md#onstartaim)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -49,17 +49,17 @@ export default class HotWeaponAimSample1 extends Script {
 
 ## Properties
 
-### onAimEnd <Score text="onAimEnd" /> 
+### onEndAim <Score text="onEndAim" /> 
 
-• **onAimEnd**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndAim**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
 ___
 
-### onAimStart <Score text="onAimStart" /> 
+### onStartAim <Score text="onStartAim" /> 
 
-• **onAimStart**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartAim**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 

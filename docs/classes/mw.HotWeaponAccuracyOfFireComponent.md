@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / HotWeaponAccuracyOfFireComponent
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAccuracyOfFireComponent
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
 ```ts
-@Core.Class
+@Class
 export default class HotWeaponAofSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -37,7 +37,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onCurrentDispersionChangedClient](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchangedclient)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| **[onCurrentDispersionChange](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchange)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -57,9 +57,9 @@ export default class HotWeaponAofSample1 extends Script {
 
 ## Properties
 
-### onCurrentDispersionChangedClient <Score text="onCurrentDispersionChangedClient" /> 
+### onCurrentDispersionChange <Score text="onCurrentDispersionChange" /> 
 
-• **onCurrentDispersionChangedClient**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onCurrentDispersionChange**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Core.Avatar.md) / BodyPartTypeV1
+[AVATAR](../groups/Core.AVATAR.md) / BodyPartTypeV1
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 

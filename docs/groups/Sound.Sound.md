@@ -1,6 +1,6 @@
-Sound
+SOUND
 
-# Sound <Badge type="tip" text="Groups" /> <Score text="Sound" />
+# SOUND <Badge type="tip" text="Groups" /> <Score text="SOUND" />
 
 ## Table of contents
 | Classes |

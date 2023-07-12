@@ -1,4 +1,4 @@
-[Gameplay](../groups/Core.Gameplay.md) / InitialOscillatorOffset
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / InitialOscillatorOffset
 
 # InitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="InitialOscillatorOffset" />
 
