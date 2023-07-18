@@ -30,7 +30,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   // base: "/api-docs/",
   outDir: '../dist',
   head: [
-    ['link', { rel: 'icon', href: '/favicon_kd.ico' }],
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/tab-logo.png'
+      }
+    ],
     [
       'script',
       {},
@@ -50,7 +56,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       type: 'api',
       version: '025'
     },
-    logo: '/logo.png',
+    logo: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/kd-logo-black.svg',
     algolia: {
       appId: 'I2PHYUBLCN',
       apiKey: '62ee775311415d26549e0e30fef5aa38',
