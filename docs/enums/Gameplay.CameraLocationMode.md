@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / CameraLocationMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraLocationMode
 
 # CameraLocationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraLocationMode" />
 

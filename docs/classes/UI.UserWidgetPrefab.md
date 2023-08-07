@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UserWidgetPrefab
+[GUI](../groups/GUI.GUI.md) / UserWidgetPrefab
 
 # UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
@@ -37,7 +37,5 @@ ui预制体
 | **[newObject](UI.UserWidget.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md)): [`UserWidget`](UI.UserWidget.md) <br> 创建 UserWidget 控件|
 :::
 
-
-## Accessors
 
 ## Methods

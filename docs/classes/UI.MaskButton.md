@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / MaskButton
+[GUI](../groups/GUI.GUI.md) / MaskButton
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 
@@ -110,8 +110,6 @@
 :::
 
 
-## Accessors
-
 ### circleCenter <Score text="circleCenter" /> 
 
 • `get` **circleCenter**(): [`Vector2`](Type.Vector2.md) <Badge type="tip" text="client" />
@@ -206,6 +204,7 @@ ___
 
 返回事件的代理
 
+___
 
 ### disableImageColor <Score text="disableImageColor" /> 
 
@@ -342,6 +341,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
 
+___
 
 ### enableTransition <Score text="enableTransition" /> 
 
@@ -465,6 +465,7 @@ ___
 | `inFocus` | `boolean` | 是否获取输入焦点 |
 
 
+___
 
 ### hoveredDelegate <Score text="hoveredDelegate" /> 
 
@@ -506,6 +507,7 @@ ___
 | `inverseOpacityWeight` | `boolean` | 权重 |
 
 
+___
 
 ### isTransitionEnable <Score text="isTransitionEnable" /> 
 
@@ -655,6 +657,7 @@ ___
 | `inType` | [`MaskButtonType`](../enums/UI.MaskButtonType.md) | 裁剪类型 |
 
 
+___
 
 ### normalImageColor <Score text="normalImageColor" /> 
 
@@ -789,6 +792,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
 
+___
 
 ### pressedDelegate <Score text="pressedDelegate" /> 
 
@@ -980,6 +984,7 @@ ___
 
 返回事件的代理
 
+___
 
 ### roundBoxPercentOffset <Score text="roundBoxPercentOffset" /> 
 
@@ -1081,6 +1086,7 @@ ___
 | `v` | `number` | 圆角调节大小 |
 
 
+___
 
 ### touchMethod <Score text="touchMethod" /> 
 
@@ -1107,6 +1113,7 @@ ___
 | `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) | Touch模式选择 |
 
 
+___
 
 ### unHoveredDelegate <Score text="unHoveredDelegate" /> 
 
@@ -1150,6 +1157,7 @@ ___
 
 
 ## Methods
+___
 
 ### isPressed <Score text="isPressed" /> 
 
@@ -1164,6 +1172,7 @@ ___
 
 返回按钮是否按下
 
+___
 
 ### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 

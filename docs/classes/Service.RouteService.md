@@ -1,4 +1,4 @@
-[Social](../groups/Social.Social.md) / RouteService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / RouteService
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
@@ -192,6 +192,16 @@ ___
 
 跳转到新游戏，同进程跳转
 
+
+使用示例: 跳转到新游戏
+```ts
+// 更多游戏跳游戏的实例请前往论坛看帖子 https://forum.ark.online/forum.php?mod=viewthread&tid=1145
+// 这个gameid可以在这里获取： 创作者中心→我的游戏→游戏名下方一个p_开头的就是gameid，点旁边的复制就可以复制过来
+// 这里的 P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40 是游戏《只因哥大战小黑子》的gameid
+// 跳游戏的话，默认会跳往 现行的、目前处在上线状态的、过了审的那个版本
+// 没有过审的话，将无法跳进去哦
+Service.RouteService.getInstance().enterNewGame("P_21def1ac9e0a4e73500d90bb2b5d53bfd1d9cf40");
+```
 
 #### Parameters
 

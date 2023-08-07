@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / BasicStanceType
+[AVATAR](../groups/AVATAR.AVATAR.md) / BasicStanceType
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 

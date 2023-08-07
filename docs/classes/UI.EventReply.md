@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / EventReply
+[GUI](../groups/GUI.GUI.md) / EventReply
 
 # EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 

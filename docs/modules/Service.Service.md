@@ -11,6 +11,8 @@ Account Service
 | [AdsState](../enums/Service.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态|
 | [AdsType](../enums/Service.AdsType.md) <br> 广告类型|
 | [MessageChannelReceiver](../enums/Service.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方|
+| [MessageState](../enums/Service.MessageState.md) <br> 发送消息的状态|
+| [MessageType](../enums/Service.MessageType.md) <br> 发送消息的类型|
 | [consumeKeyStatus](../enums/Service.consumeKeyStatus.md) <br> 大会员扣除钥匙订单返回状态信息|
 
 | Classes |
@@ -18,6 +20,7 @@ Account Service
 | [AccountService](../classes/Service.AccountService.md) <br> 用户账号信息管理相关服务|
 | [AdsService](../classes/Service.AdsService.md) <br> 广告服务，支持激励/插屏类型|
 | [AnalyticsService](../classes/Service.AnalyticsService.md) <br> 分析服务|
+| [ChatService](../classes/Service.ChatService.md) <br> 是一个用于实现聊天功能的类，它可以管理用户之间的交流并提供相关的服务。|
 | [DebugService](../classes/Service.DebugService.md) <br> debug调试服务|
 | [EffectService](../classes/Service.EffectService.md) <br> 特效服务|
 | [MessageChannelService](../classes/Service.MessageChannelService.md) <br> 支持各端的通信，233、引擎、Web和游戏项目可以互相直接进行业务上的消息传递，无需修改引擎代码|
@@ -30,6 +33,7 @@ Account Service
 | Type Aliases |
 | :-----|
 | **[BoolResponse](Service.Service.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
+| **[BroadcastMessageResult](Service.Service.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
 | **[DownloadDataResponse](Service.Service.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[LocalUGCGameInfo](Service.Service.md#localugcgameinfo)**: `Object` <br> 本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。|
 | **[MGSEvent](Service.Service.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
@@ -69,6 +73,21 @@ Account Service
 ##### Returns
 
 `void`
+
+___
+
+### BroadcastMessageResult <Score text="BroadcastMessageResult" /> 
+
+Ƭ **BroadcastMessageResult**: `Object`
+
+发送消息的结果
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `code` | [`MessageState`](../enums/Service.MessageState.md) | 发送消息的状态 |
+| `message` | `string` | 详细信息 |
 
 ___
 

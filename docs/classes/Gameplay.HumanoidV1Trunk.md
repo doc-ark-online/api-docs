@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV1Trunk
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV1Trunk
 
 # HumanoidV1Trunk <Badge type="tip" text="Class" /> <Score text="HumanoidV1Trunk" />
 
@@ -23,5 +23,3 @@
 | **[setMesh](Gameplay.HumanoidV1Part.md#setmesh)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置衣服模型|
 :::
 
-
-## Methods

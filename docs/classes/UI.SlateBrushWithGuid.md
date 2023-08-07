@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / SlateBrushWithGuid
+[GUI](../groups/GUI.GUI.md) / SlateBrushWithGuid
 
 # SlateBrushWithGuid <Badge type="tip" text="Class" /> <Score text="SlateBrushWithGuid" />
 

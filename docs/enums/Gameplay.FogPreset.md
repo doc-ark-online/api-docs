@@ -1,4 +1,4 @@
-[Lighting](../groups/Lighting.Lighting.md) / FogPreset
+[LIGHTING](../groups/LIGHTING.LIGHTING.md) / FogPreset
 
 # FogPreset <Badge type="tip" text="Enumeration" /> <Score text="FogPreset" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / EOscillatorWaveform
+[AVATAR](../groups/AVATAR.AVATAR.md) / EOscillatorWaveform
 
 # EOscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="EOscillatorWaveform" />
 

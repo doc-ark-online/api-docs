@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / ProjectileLineStyle
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileLineStyle
 
 # ProjectileLineStyle <Badge type="tip" text="Enumeration" /> <Score text="ProjectileLineStyle" />
 

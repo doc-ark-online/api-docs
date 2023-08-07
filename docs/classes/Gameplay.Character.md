@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / Character
+[AVATAR](../groups/AVATAR.AVATAR.md) / Character
 
 # Character <Badge type="tip" text="Class" /> <Score text="Character" />
 
@@ -42,6 +42,7 @@
 
 | Accessors |
 | :-----|
+| **[cameraSystem](Gameplay.Character.md#camerasystem)**(): [`CameraSystem`](Gameplay.CameraSystem.md) <br> 获得摄像机系统|
 | **[onSkill1Triggered](Gameplay.Character.md#onskill1triggered)**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 技能1触发时调用委托|
 | **[onSkill2Triggered](Gameplay.Character.md#onskill2triggered)**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 技能2触发时调用委托|
 | **[onSkill3Triggered](Gameplay.Character.md#onskill3triggered)**(): [`MulticastDelegateInterface`](../interfaces/Type.MulticastDelegateInterface.md)<() => `void`\> <br> 技能3触发时调用委托|
@@ -96,6 +97,7 @@
 | **[maxSwimSpeed](Gameplay.CharacterBase.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
 | **[maxWalkSpeed](Gameplay.CharacterBase.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
 | **[maxWalkSpeedCrouched](Gameplay.CharacterBase.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[meshOffset](Gameplay.CharacterBase.md#meshoffset)**(): [`Vector`](Type.Vector.md) <br> 获取mesh相对角色坐标点的偏移|
 | **[moveEnable](Gameplay.CharacterBase.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
 | **[moveFacingDirection](Gameplay.CharacterBase.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
 | **[movementAxisDirection](Gameplay.CharacterBase.md#movementaxisdirection)**(): [`Vector`](Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
@@ -151,9 +153,20 @@
 :::
 
 
-## Properties
-
 ## Accessors
+___
+
+### cameraSystem <Score text="cameraSystem" /> 
+
+• `get` **cameraSystem**(): [`CameraSystem`](Gameplay.CameraSystem.md)
+
+获得摄像机系统
+
+#### Returns
+
+[`CameraSystem`](Gameplay.CameraSystem.md)
+
+___
 
 ### onSkill1Triggered <Score text="onSkill" /> 
 

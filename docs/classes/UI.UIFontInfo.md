@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIFontInfo
+[GUI](../groups/GUI.GUI.md) / UIFontInfo
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 

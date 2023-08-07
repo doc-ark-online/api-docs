@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / LinearColor
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / LinearColor
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 

@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponAccuracyOfFireComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponAccuracyOfFireComponent
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 

@@ -1,4 +1,4 @@
-[Scripting](../groups/Scripting.Scripting.md) / ReleaseStatus
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / ReleaseStatus
 
 # ReleaseStatus <Badge type="tip" text="Enumeration" /> <Score text="ReleaseStatus" />
 

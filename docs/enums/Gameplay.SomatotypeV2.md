@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / SomatotypeV2
+[AVATAR](../groups/AVATAR.AVATAR.md) / SomatotypeV2
 
 # SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
 

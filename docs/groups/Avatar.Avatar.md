@@ -1,6 +1,6 @@
-Avatar
+AVATAR
 
-# Avatar <Badge type="tip" text="Groups" /> <Score text="Avatar" />
+# AVATAR <Badge type="tip" text="Groups" /> <Score text="AVATAR" />
 
 ## Table of contents
 | Classes |

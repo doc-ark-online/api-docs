@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / SlateBrushDrawType
+[GUI](../groups/GUI.GUI.md) / SlateBrushDrawType
 
 # SlateBrushDrawType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushDrawType" />
 

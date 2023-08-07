@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / DelegateInterface
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / DelegateInterface
 
 # DelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="DelegateInterface<T\>" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / IPart
 
 # IPart <Badge type="tip" text="Interface" /> <Score text="IPart" />
 

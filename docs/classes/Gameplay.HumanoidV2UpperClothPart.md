@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2UpperClothPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV2UpperClothPart
 
 # HumanoidV2UpperClothPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2UpperClothPart" />
 
@@ -47,8 +47,6 @@
 :::
 
 
-## Methods
-
 ### getUpperClothClothColor <Score text="getUpperClothClothColor" /> 
 
 • **getUpperClothClothColor**(`areaIndex`): [`LinearColor`](Type.LinearColor.md) <Badge type="tip" text="client" />
@@ -68,6 +66,7 @@
 
 颜色
 
+___
 
 ### setUpperClothClothColor <Score text="setUpperClothClothColor" /> 
 

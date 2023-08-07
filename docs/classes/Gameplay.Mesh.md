@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / Mesh
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Mesh
 
 # Mesh <Badge type="tip" text="Class" /> <Score text="Mesh" />
 
@@ -98,7 +98,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -120,7 +119,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -139,8 +137,6 @@ StaticMeshActor相关接口主为要物理参数设置接口与材质参数设�
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
-
-## Properties
 
 ### onEnter <Score text="onEnter" /> 
 
@@ -202,6 +198,7 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### friction <Score text="friction" /> 
 
@@ -247,6 +244,7 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### ignoreRadialForce <Score text="ignoreRadialForce" /> 
 
@@ -476,6 +474,7 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### massEnable <Score text="massEnable" /> 
 
@@ -521,6 +520,7 @@ ___
 | `value` | `number` |
 
 
+___
 
 ### restitution <Score text="restitution" /> 
 
@@ -545,6 +545,7 @@ ___
 
 
 ## Methods
+___
 
 ### createMaterialInstance <Score text="createMaterialInstance" /> 
 
@@ -560,6 +561,7 @@ ___
 | `Index` | `number` | 第几个材质 |
 
 
+___
 
 ### getMaterialInstance <Score text="getMaterialInstance" /> 
 
@@ -574,6 +576,7 @@ ___
 
 材质实例数组
 
+___
 
 ### resetMaterial <Score text="resetMaterial" /> 
 
@@ -583,6 +586,7 @@ ___
 
 
 
+___
 
 ### setCullDistance <Score text="setCullDistance" /> 
 
@@ -604,6 +608,7 @@ ___
 | `inCullDistance` | `number` | 裁剪距离 |
 
 
+___
 
 ### setOutlineAndColor <Score text="setOutlineAndColor" /> 
 
@@ -620,6 +625,7 @@ ___
 | `ColorIndex` | `number` |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default: |
 
 
+___
 
 ### setStaticMeshAsset <Score text="setStaticMeshAsset" /> 
 

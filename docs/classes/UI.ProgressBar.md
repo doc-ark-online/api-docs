@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / ProgressBar
+[GUI](../groups/GUI.GUI.md) / ProgressBar
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
@@ -84,8 +84,6 @@ UI进度条
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
 
-
-## Accessors
 
 ### backgroundImageColor <Score text="backgroundImageColor" /> 
 
@@ -249,6 +247,7 @@ ___
 | `inputBarThickness` | `number` | 厚度 |
 
 
+___
 
 ### currentValue <Score text="currentValue" /> 
 
@@ -277,6 +276,7 @@ ___
 
 void
 
+___
 
 ### fillImageColor <Score text="fillImageColor" /> 
 
@@ -443,6 +443,7 @@ ___
 
 void
 
+___
 
 ### isRoundedToInt <Score text="isRoundedToInt" /> 
 
@@ -471,6 +472,7 @@ void
 
 void
 
+___
 
 ### onSliderValueChanged <Score text="onSliderValueChanged" /> 
 
@@ -485,6 +487,7 @@ Slider值变化事件
 
 变化事件
 
+___
 
 ### percent <Score text="percent" /> 
 
@@ -513,6 +516,7 @@ Slider值变化事件
 
 void
 
+___
 
 ### slideMethod <Score text="slideMethod" /> 
 
@@ -764,6 +768,7 @@ ___
 
 
 ## Methods
+___
 
 ### newObject <Score text="newObject" /> 
 

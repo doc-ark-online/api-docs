@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / ExpressionType
+[AVATAR](../groups/AVATAR.AVATAR.md) / ExpressionType
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 

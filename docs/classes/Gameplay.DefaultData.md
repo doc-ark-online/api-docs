@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / DefaultData
+[AVATAR](../groups/AVATAR.AVATAR.md) / DefaultData
 
 # DefaultData <Badge type="tip" text="Class" /> <Score text="DefaultData" />
 

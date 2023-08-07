@@ -1,46 +1,19 @@
-Settings
+SETTINGS
 
-# Settings <Badge type="tip" text="Groups" /> <Score text="Settings" />
+# SETTINGS <Badge type="tip" text="Groups" /> <Score text="SETTINGS" />
 
 ## Table of contents
 | Classes |
 | :-----|
+| [AvatarSettings](../classes/Settings.AvatarSettings.md) <br> 控制一些优化项的开启关闭 |
+| [EnvironmentSettings](../classes/Settings.EnvironmentSettings.md) <br> 环境设置 |
+| [GraphicsSettings](../classes/Settings.GraphicsSettings.md) <br> 图片画质设置 |
 | [Optimization](../classes/Gameplay.Optimization.md) <br> 控制一些优化项的开启关闭 |
+| [RoomSettings](../classes/Setting.RoomSettings.md) <br> 房间设置 |
+| [RoomSettings](../classes/Settings.RoomSettings.md) <br> 房间设置 |
 
 
-| Modules Functions |
+| Enums |
 | :-----|
-| **[enableJoiningMidgame](Settings.Settings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void` <br> 设置中途加入开关|
-| **[isJoiningMidgameEnabled](Settings.Settings.md#isjoiningmidgameenabled)**(): `boolean` <br> 获取是否开启中途加入|
+| [GravityMode](../enums/Settings.GravityMode.md) <br> 重力模式 |
 
-
-## Modules Functions
-
-
-___
-
-### enableJoiningMidgame <Score text="enableJoiningMidgame" /> 
-
-• **enableJoiningMidgame**(`isEnable`): `void` <Badge type="tip" text="server" />
-
-设置中途加入开关
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnable` | `boolean` | -true:开启中途加入 -false:关闭中途加入 |
-
-___
-
-### isJoiningMidgameEnabled <Score text="isJoiningMidgameEnabled" /> 
-
-• **isJoiningMidgameEnabled**(): `boolean` <Badge type="tip" text="server" />
-
-获取是否开启中途加入
-
-
-#### Returns
-
-`boolean`

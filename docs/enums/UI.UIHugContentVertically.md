@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIHugContentVertically
+[GUI](../groups/GUI.GUI.md) / UIHugContentVertically
 
 # UIHugContentVertically <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentVertically" />
 

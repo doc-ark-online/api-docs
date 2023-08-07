@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2MaterialStyle
+[AVATAR](../groups/AVATAR.AVATAR.md) / IHumanoidV2MaterialStyle
 
 # IHumanoidV2MaterialStyle <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2MaterialStyle" />
 

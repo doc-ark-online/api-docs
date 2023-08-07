@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / Image
+[GUI](../groups/GUI.GUI.md) / Image
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
@@ -57,7 +57,6 @@ UI 图片
 | **[setImageByBlendMode](UI.Image.md#setimagebyblendmode)**(`backgroundPic`: `string`, `foregroundPic`: `string`): `void` <br> 将两张图片融合叠加显示在图片组件上|
 | **[setImageByBlendModeWithGUID](UI.Image.md#setimagebyblendmodewithguid)**(`GUID`: `string`, `foregroundPic`: `string`): `void` <br> 将两张图片融合叠加显示在图片组件上|
 | **[setImageByFile](UI.Image.md#setimagebyfile)**(`absPath`: `string`): `void` <br> 设置图片样式为本地图片文件|
-| **[setImageByURL](UI.Image.md#setimagebyurl)**(`inURL`: `string`): `void` <br> 设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接|
 | **[setImageColorByHex](UI.Image.md#setimagecolorbyhex)**(`inHexString`: `string`): `void` <br> 设置图片颜色,指定Hex的颜色文本设定颜色 #05050505|
 | **[setImageColorDecimal](UI.Image.md#setimagecolordecimal)**(`R`: `number`, `G`: `number`, `B`: `number`, `A`: `number`): `void` <br> 设置图片颜色,指定R、G、B、A设置颜色 0 ~255|
 | **[newObject](UI.Image.md#newobject)**(`parent?`: [`Canvas`](UI.Canvas.md), `inName?`: `string`): [`Image`](UI.Image.md) <br> 创建 Image 控件 当parent和inName与已有的对象相同时，旧的对象会被销毁|
@@ -72,8 +71,6 @@ UI 图片
 | **[removeObject](UI.Widget.md#removeobject)**(): `void` <br> 立刻移除并添加到根节点 可以再使用|
 :::
 
-
-## Accessors
 
 ### imageColor <Score text="imageColor" /> 
 
@@ -183,6 +180,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | size |
 
 
+___
 
 ### margin <Score text="margin" /> 
 
@@ -231,6 +229,7 @@ ___
 
 导出的图片的本地路径
 
+___
 
 ### getImageAssetIconData <Score text="getImageAssetIconData" /> 
 
@@ -245,6 +244,7 @@ ___
 
 资源的ICON信息
 
+___
 
 ### setImageByAssetIconData <Score text="setImageByAssetIconData" /> 
 
@@ -314,23 +314,6 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `absPath` | `string` | 图片绝对路径 |
-
-
-___
-
-### setImageByURL <Score text="setImageByURL" /> 
-
-• **setImageByURL**(`inURL`): `void` <Badge type="tip" text="other" />
-
-设置图片样式，只允许使用包含 "meta-verse.co/Content" 路径的图片链接
-
-只在客户端调用生效,下载图片需要时间，失败时暂无回调
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inURL` | `string` | 图片链接 |
 
 
 ___

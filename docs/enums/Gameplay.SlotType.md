@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / SlotType
+[AVATAR](../groups/AVATAR.AVATAR.md) / SlotType
 
 # SlotType <Badge type="tip" text="Enumeration" /> <Score text="SlotType" />
 

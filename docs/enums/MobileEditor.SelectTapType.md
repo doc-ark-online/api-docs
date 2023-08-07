@@ -1,4 +1,4 @@
-[Scripting](../groups/Scripting.Scripting.md) / SelectTapType
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / SelectTapType
 
 # SelectTapType <Badge type="tip" text="Enumeration" /> <Score text="SelectTapType" />
 

@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / Action3
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / Action3
 
 # Action3<T, S, P\> <Badge type="tip" text="Class" /> <Score text="Action3<T, S, P\>" />
 
@@ -45,15 +45,5 @@
 | **[remove](Type.Action.md#remove)**(`fn`: `Function`, `thisArg`: `any`): `void` <br> 移除一个监听方法|
 :::
 
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-| `S` |
-| `P` |
-
-## Accessors
 
 ## Methods

@@ -12,19 +12,13 @@
 | Functions |
 | :-----|
 | **[getCurrentEnv](Util.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境|
-| **[getDefaultGraphicsCPULevel](Util.SystemUtil.md#getdefaultgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取默认CPU画质等级|
-| **[getDefaultGraphicsGPULevel](Util.SystemUtil.md#getdefaultgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取默认GPU画质等级|
 | **[getEditorVersion](Util.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
 | **[getFullEditorVersion](Util.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
 | **[getGameId](Util.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
-| **[getGraphicsCPULevel](Util.SystemUtil.md#getgraphicscpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取当前CPU画质等级|
-| **[getGraphicsGPULevel](Util.SystemUtil.md#getgraphicsgpulevel)**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <br> 获取当前GPU画质等级|
 | **[getVersion](Util.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本|
 | **[isClient](Util.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行|
 | **[isMobile](Util.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
 | **[isServer](Util.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行|
-| **[setGraphicsCPULevel](Util.SystemUtil.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](Util.SystemUtil.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/Type.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
 
 ## Variables
 
@@ -75,36 +69,6 @@ console.log(`currentEnv: ${currentEnv}`);
 
 ___
 
-### getDefaultGraphicsCPULevel <Score text="getDefaultGraphicsCPULevel" /> 
-
-• **getDefaultGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取默认CPU画质等级
-
-
-#### Returns
-
-[`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
-
-默认画质等级
-
-___
-
-### getDefaultGraphicsGPULevel <Score text="getDefaultGraphicsGPULevel" /> 
-
-• **getDefaultGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取默认GPU画质等级
-
-
-#### Returns
-
-[`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
-
-默认画质等级
-
-___
-
 ### getEditorVersion <Score text="getEditorVersion" /> 
 
 • **getEditorVersion**(): `string` 
@@ -147,36 +111,6 @@ ___
 `string`
 
 当前游戏GameId
-
-___
-
-### getGraphicsCPULevel <Score text="getGraphicsCPULevel" /> 
-
-• **getGraphicsCPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取当前CPU画质等级
-
-
-#### Returns
-
-[`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
-
-画质等级
-
-___
-
-### getGraphicsGPULevel <Score text="getGraphicsGPULevel" /> 
-
-• **getGraphicsGPULevel**(): [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) <Badge type="tip" text="client" />
-
-获取当前GPU画质等级
-
-
-#### Returns
-
-[`GraphicsLevel`](../enums/Type.GraphicsLevel.md)
-
-画质等级
 
 ___
 
@@ -237,35 +171,3 @@ ___
 `boolean`
 
 是否服务器运行
-
-___
-
-### setGraphicsCPULevel <Score text="setGraphicsCPULevel" /> 
-
-• **setGraphicsCPULevel**(`CPULevel`): `void` <Badge type="tip" text="client" />
-
-设置当前CPU画质等级
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `CPULevel` | [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) | CPU画质等级 |
-
-
-___
-
-### setGraphicsGPULevel <Score text="setGraphicsGPULevel" /> 
-
-• **setGraphicsGPULevel**(`GPULevel`): `void` <Badge type="tip" text="client" />
-
-设置当前GPU画质等级
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GPULevel` | [`GraphicsLevel`](../enums/Type.GraphicsLevel.md) | GPU画质等级 |
-

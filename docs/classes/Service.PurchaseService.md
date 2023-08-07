@@ -1,4 +1,4 @@
-[Monetization](../groups/Monetization.Monetization.md) / PurchaseService
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / PurchaseService
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
@@ -134,13 +134,48 @@ ___
 
 :::
 
+使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
+```ts
+if (Util.SystemUtil.isServer()) {
+     console.log("监听发货");
+     //发货监听
+     Service.PurchaseService.getInstance().onPremiumMemberOrderDelivered.add((
+          playerController: Gameplay.Player,
+          orderId: string,
+          boxId: string,
+          amount: number,
+          confirmOrder: (bReceived: boolean) => void
+     ) => {
+          Events.dispatchToClient(playerController, SHIP_ORDER, orderId, boxId, amount);
+          //确认收货
+          confirmOrder(true);
+     });
+}
+
+// 扣除钥匙
+Service.PurchaseService.getInstance().consumeKey("1000", 1, 1, (status : Service.consumeKeyStatus) => {
+     console.log("consumeKey status : " + status);
+     if (status == Service.consumeKeyStatus.Success) {
+          console.log("下单成功");
+     } else if (status == Service.consumeKeyStatus.PremiumMemberNotSupported) {
+          console.log("不支持大会员");
+     } else if (status == Service.consumeKeyStatus.NotPremiumMember) {
+          console.log("不是大会员");
+     } else if (status == Service.consumeKeyStatus.InsufficientKeys) {
+          console.log("钥匙不足");
+     } else if (status == Service.consumeKeyStatus.Error) {
+          console.log("扣除失败");
+     }
+});
+```
+
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `boxId` | `string` | 宝箱ID，代表一种福利 |
+| `boxId` | `string` | 宝箱ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 |
 | `number` | `number` | 领取的宝箱数量 default: 1 |
-| `keyType` | `number` | 钥匙类型 default: 1 |
+| `keyType` | `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
 | `placeOrderResult` | (`status`: [`consumeKeyStatus`](../enums/Service.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
 
 
@@ -152,6 +187,20 @@ ___
 
 分页查询大会员使用钥匙的历史记录
 
+
+使用示例:将代码片段放入脚本中即可
+```ts
+Service.PurchaseService.getInstance().findKeyUsageHistory(1, 100, (total : number, currentPage : number, bills : Service.keyUsageInfo[]) => {
+    console.log("bill len : " + bills.length);
+    for(let bill of bills)
+    {
+        console.log("bill orderId : " + bill.orderId);
+        console.log("bill boxId : " + bill.boxId);
+        console.log("bill number : " + bill.numbe);
+        console.log("bill consumeTime : " + bill.consumeTime);
+    }
+});
+```
 
 #### Parameters
 

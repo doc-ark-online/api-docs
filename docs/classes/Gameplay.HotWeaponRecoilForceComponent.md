@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponRecoilForceComponent
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponRecoilForceComponent
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 

@@ -1,6 +1,6 @@
-Datatype
+DATATYPE
 
-# Datatype <Badge type="tip" text="Groups" /> <Score text="Datatype" />
+# DATATYPE <Badge type="tip" text="Groups" /> <Score text="DATATYPE" />
 
 ## Table of contents
 | Classes |
@@ -32,6 +32,8 @@ Datatype
 | [GraphicsLevel](../enums/Type.GraphicsLevel.md) <br> 画质等级 |
 | [Keys](../enums/Type.Keys.md) <br> 按键Key值 |
 | [LanguageType](../enums/Type.LanguageType.md) <br> 游戏语言 |
+| [MessageState](../enums/Service.MessageState.md) <br> 发送消息的状态 |
+| [MessageType](../enums/Service.MessageType.md) <br> 发送消息的类型 |
 | [NetStatus](../enums/Type.NetStatus.md) <br> 同步状态 |
 | [PropertyStatus](../enums/Type.PropertyStatus.md) <br> 属性状态 |
 | [RuntimePlatform](../enums/Type.RuntimePlatform.md) <br> 运行平台 |
@@ -47,39 +49,41 @@ Datatype
 
 | Modules Type Aliases |
 | :-----|
-| **[BoolResponse](Datatype.Datatype.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
-| **[CameraSystemData](Datatype.Datatype.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Constructor](Datatype.Datatype.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型|
-| **[DecorationTuple](Datatype.Datatype.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
-| **[DownloadDataResponse](Datatype.Datatype.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
-| **[EasingFunction](Datatype.Datatype.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
-| **[EmptyCallback](Datatype.Datatype.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
-| **[HttpResponse](Datatype.Datatype.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
-| **[InterpolationFunction](Datatype.Datatype.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
-| **[LoadAppearanceDataAllCompletedCallback](Datatype.Datatype.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](Datatype.Datatype.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Gameplay.Gameplay.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
-| **[MGSEvent](Datatype.Datatype.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
-| **[MGSResponse](Datatype.Datatype.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
-| **[OnArkBalanceUpdated](Datatype.Datatype.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnMovementStateChanged](Datatype.Datatype.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
-| **[OnOrderDelivered](Datatype.Datatype.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
-| **[OnRecvChatMessage](Datatype.Datatype.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
-| **[OnViewLayoutSwitched](Datatype.Datatype.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](Datatype.Datatype.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
-| **[ReleaseGameData](Datatype.Datatype.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
-| **[SetAppearanceDataCallback](Datatype.Datatype.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
-| **[StringCallback](Datatype.Datatype.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
-| **[StringResponse](Datatype.Datatype.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
-| **[TeamMatchFailureInfo](Datatype.Datatype.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
-| **[TransactionType](Datatype.Datatype.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
-| **[UnknownProps](Datatype.Datatype.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
-| **[UploadDataResponse](Datatype.Datatype.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
-| **[VehicleGearData](Datatype.Datatype.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
-| **[VehicleWheelData](Datatype.Datatype.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
-| **[VoidResponse](Datatype.Datatype.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
-| **[downloadCharacterDataStringCallback](Datatype.Datatype.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
-| **[maskWordCheckResult](Datatype.Datatype.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
-| **[onAppearanceDataChanged](Datatype.Datatype.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
+| **[BoolResponse](DATATYPE.DATATYPE.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
+| **[BroadcastMessageResult](DATATYPE.DATATYPE.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
+| **[CameraShakeData](DATATYPE.DATATYPE.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
+| **[CameraSystemData](DATATYPE.DATATYPE.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
+| **[DecorationTuple](DATATYPE.DATATYPE.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Gameplay.Decoration.md), `Core.GameObject`] <br> 运行时态角色身上的挂件数据|
+| **[DownloadDataResponse](DATATYPE.DATATYPE.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
+| **[EasingFunction](DATATYPE.DATATYPE.md#easingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
+| **[EmptyCallback](DATATYPE.DATATYPE.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
+| **[HttpResponse](DATATYPE.DATATYPE.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
+| **[InterpolationFunction](DATATYPE.DATATYPE.md#interpolationfunction)**: (`v`: `number`[], `k`: `number`) => `number` <br> 插值函数的类型定义|
+| **[LoadAppearanceDataAllCompletedCallback](DATATYPE.DATATYPE.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
+| **[LoadDecorationsAllCompletedCallback](DATATYPE.DATATYPE.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Gameplay.Gameplay.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
+| **[MGSEvent](DATATYPE.DATATYPE.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
+| **[MGSResponse](DATATYPE.DATATYPE.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
+| **[OnArkBalanceUpdated](DATATYPE.DATATYPE.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
+| **[OnMovementStateChanged](DATATYPE.DATATYPE.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
+| **[OnOrderDelivered](DATATYPE.DATATYPE.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
+| **[OnRecvChatMessage](DATATYPE.DATATYPE.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
+| **[OnViewLayoutSwitched](DATATYPE.DATATYPE.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
+| **[OnViewRefreshed](DATATYPE.DATATYPE.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
+| **[Oscillator](DATATYPE.DATATYPE.md#oscillator)**: `Object` <br> 震动数值|
+| **[ReleaseGameData](DATATYPE.DATATYPE.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
+| **[SetAppearanceDataCallback](DATATYPE.DATATYPE.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
+| **[StringCallback](DATATYPE.DATATYPE.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
+| **[StringResponse](DATATYPE.DATATYPE.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[TeamMatchFailureInfo](DATATYPE.DATATYPE.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
+| **[TransactionType](DATATYPE.DATATYPE.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
+| **[UnknownProps](DATATYPE.DATATYPE.md#unknownprops)**: `Record`<`string`, `any`\> <br> 补间属性的定义，用户可以自由扩展|
+| **[UploadDataResponse](DATATYPE.DATATYPE.md#uploaddataresponse)**: (`success`: `boolean`) => `void` <br> 下载角色形象的回调消息格式|
+| **[VehicleGearData](DATATYPE.DATATYPE.md#vehiclegeardata)**: `Object` <br> 四轮载具挡位属性|
+| **[VehicleWheelData](DATATYPE.DATATYPE.md#vehiclewheeldata)**: `Object` <br> 四轮载具车轮属性|
+| **[VoidResponse](DATATYPE.DATATYPE.md#voidresponse)**: () => `void` <br> 返回无参数的回调|
+| **[downloadCharacterDataStringCallback](DATATYPE.DATATYPE.md#downloadcharacterdatastringcallback)**: (`dataString`: `string`) => `void` <br> 下载平台数据回调|
+| **[maskWordCheckResult](DATATYPE.DATATYPE.md#maskwordcheckresult)**: `Object` <br> 屏蔽字检测的结果|
+| **[onAppearanceDataChanged](DATATYPE.DATATYPE.md#onappearancedatachanged)**: (`GUID`: `string`) => `void` <br> 角色身上GUID切换成功回调|
 
 
 ## Modules Type Aliases
@@ -106,6 +110,49 @@ ___
 ##### Returns
 
 `void`
+___
+
+### BroadcastMessageResult <Score text="BroadcastMessageResult" /> 
+
+Ƭ **BroadcastMessageResult**: `Object`
+
+发送消息的结果
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `code` | [`MessageState`](../enums/Service.MessageState.md) | 发送消息的状态 |
+| `message` | `string` | 详细信息 |
+___
+
+### CameraShakeData <Score text="CameraShakeData" /> 
+
+Ƭ **CameraShakeData**: `Object`
+
+**`Deprecated`**
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:025 reason:接口废弃 replacement:
+
+摄像机震动数据
+
+::: warning Precautions
+
+摄像机震动数据
+
+:::
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `fovOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | FOV振荡 |
+| `locXOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置X轴振荡 |
+| `locYOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置Y轴振荡 |
+| `locZOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 位置Z轴振荡 |
+| `rotPitchOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Pitch轴振荡 |
+| `rotRollOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Roll轴振荡 |
+| `rotYawOscillation?` | [`Oscillator`](Gameplay.Gameplay.md#oscillator) | 旋转Yaw轴振荡 |
 ___
 
 ### CameraSystemData <Score text="CameraSystemData" /> 
@@ -147,29 +194,6 @@ ___
 | `slotOffset?` | [`Vector`](../classes/Type.Vector.md) | 摄像机位置偏移 |
 | `targetArmLength?` | `number` | 距离调整 |
 | `targetOffset?` | [`Vector`](../classes/Type.Vector.md) | 挂点位置偏移 |
-___
-
-### Constructor <Score text="Constructor" /> 
-
-Ƭ **Constructor**<`T`\>: (...`args`: `any`[]) => `T`
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`SomatotypeBase`](../classes/Gameplay.SomatotypeBase.md) |
-
-#### Type declaration
-
-• (`...args`)
-
-角色形象修改构造类型
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...args` | `any`[] |
 ___
 
 ### DecorationTuple <Score text="DecorationTuple" /> 
@@ -484,6 +508,31 @@ ___
 ##### Returns
 
 `void`
+___
+
+### Oscillator <Score text="Oscillator" /> 
+
+Ƭ **Oscillator**: `Object`
+
+**`Deprecated`**
+
+info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:025 reason:接口废弃 replacement:
+
+震动数值
+
+::: warning Precautions
+
+震动数值
+
+:::
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `amplitude?` | `number` | 正弦振荡的幅度 |
+| `frequency?` | `number` | 正弦振荡的频率 |
+| `waveform?` | [`EOscillatorWaveform`](../enums/Gameplay.EOscillatorWaveform.md) | 用于振荡的波形类型 |
 ___
 
 ### ReleaseGameData <Score text="ReleaseGameData" /> 

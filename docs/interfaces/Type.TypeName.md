@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / TypeName
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / TypeName
 
 # TypeName<T\> <Badge type="tip" text="Interface" /> <Score text="TypeName<T\>" />
 

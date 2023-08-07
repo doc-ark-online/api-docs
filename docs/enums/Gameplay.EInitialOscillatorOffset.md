@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / EInitialOscillatorOffset
+[AVATAR](../groups/AVATAR.AVATAR.md) / EInitialOscillatorOffset
 
 # EInitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="EInitialOscillatorOffset" />
 

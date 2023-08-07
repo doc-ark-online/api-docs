@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / MulticastDelegateInterface
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / MulticastDelegateInterface
 
 # MulticastDelegateInterface<T\> <Badge type="tip" text="Interface" /> <Score text="MulticastDelegateInterface<T\>" />
 

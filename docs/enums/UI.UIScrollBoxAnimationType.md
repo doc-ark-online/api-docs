@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIScrollBoxAnimationType
+[GUI](../groups/GUI.GUI.md) / UIScrollBoxAnimationType
 
 # UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 

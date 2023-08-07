@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / WidgetSpaceMode
+[GUI](../groups/GUI.GUI.md) / WidgetSpaceMode
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
