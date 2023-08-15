@@ -1,5 +1,5 @@
 import type { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
-import { dealConfigSidebar, dealItem } from '../../utils'
+import { dealConfigSidebar } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
