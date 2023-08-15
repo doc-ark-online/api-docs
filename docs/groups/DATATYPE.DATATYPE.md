@@ -67,8 +67,6 @@ DATATYPE
 | **[OnMovementStateChanged](DATATYPE.DATATYPE.md#onmovementstatechanged)**: (`mode`: [`MovementMode`](../enums/Gameplay.MovementMode.md)) => `void` <br> 移动状态切换回调|
 | **[OnOrderDelivered](DATATYPE.DATATYPE.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
 | **[OnRecvChatMessage](DATATYPE.DATATYPE.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
-| **[OnViewLayoutSwitched](DATATYPE.DATATYPE.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](DATATYPE.DATATYPE.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
 | **[Oscillator](DATATYPE.DATATYPE.md#oscillator)**: `Object` <br> 震动数值|
 | **[ReleaseGameData](DATATYPE.DATATYPE.md#releasegamedata)**: `Object` <br> 已发布的游戏数据，用于继承服务器数据。|
 | **[SetAppearanceDataCallback](DATATYPE.DATATYPE.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
@@ -468,42 +466,6 @@ ___
 | :------ | :------ |
 | `nCount` | `number` |
 | `ChatContent` | `string` |
-
-##### Returns
-
-`void`
-___
-
-### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
-
-Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
-
-#### Type declaration
-
-• (`newState`): `void`
-
-233中窗口显示模式切换的消息格式
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newState` | `number` |  新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
-
-##### Returns
-
-`void`
-___
-
-### OnViewRefreshed <Score text="OnViewRefreshed" /> 
-
-Ƭ **OnViewRefreshed**: () => `void`
-
-#### Type declaration
-
-• (): `void`
-
-233中窗口刷新的消息格式
 
 ##### Returns
 

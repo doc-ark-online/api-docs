@@ -733,16 +733,6 @@
       {
         "file_name": "Service.Service.md",
         "file_path": "modules/Service.Service.md",
-        "name": "OnViewLayoutSwitched"
-      },
-      {
-        "file_name": "Service.Service.md",
-        "file_path": "modules/Service.Service.md",
-        "name": "OnViewRefreshed"
-      },
-      {
-        "file_name": "Service.Service.md",
-        "file_path": "modules/Service.Service.md",
         "name": "StringResponse"
       },
       {

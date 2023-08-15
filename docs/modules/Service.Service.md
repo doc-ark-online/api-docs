@@ -41,8 +41,6 @@ Account Service
 | **[OnArkBalanceUpdated](Service.Service.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
 | **[OnKeyConsume](Service.Service.md#onkeyconsume)**: (`player`: [`Player`](../classes/Gameplay.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 大会员钥匙扣除服务端接收发货通知的消息格式|
 | **[OnOrderDelivered](Service.Service.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
-| **[OnViewLayoutSwitched](Service.Service.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
-| **[OnViewRefreshed](Service.Service.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
 | **[PublishedUGCGameInfo](Service.Service.md#publishedugcgameinfo)**: `Object` <br> 发布成功的UGC消费态游戏信息|
 | **[StringResponse](Service.Service.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
 | **[TeamMatchFailureInfo](Service.Service.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
@@ -235,44 +233,6 @@ ___
 | `commodityId` | `string` |  商品Id |
 | `amount` | `number` |  数量 |
 | `confirmOrder` | (`bReceived`: `boolean`) => `void` |  是否收到货的回调，会发给订单服务器。如果回调false，服务器会认定未收到货，下次玩家进入游戏，还会收到该通知 |
-
-##### Returns
-
-`void`
-
-___
-
-### OnViewLayoutSwitched <Score text="OnViewLayoutSwitched" /> 
-
-Ƭ **OnViewLayoutSwitched**: (`newState`: `number`) => `void`
-
-#### Type declaration
-
-• (`newState`): `void`
-
-233中窗口显示模式切换的消息格式
-
-##### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newState` | `number` |  新的窗口模式。1 为“角色展示模式”，2 为“角色编辑模式” |
-
-##### Returns
-
-`void`
-
-___
-
-### OnViewRefreshed <Score text="OnViewRefreshed" /> 
-
-Ƭ **OnViewRefreshed**: () => `void`
-
-#### Type declaration
-
-• (): `void`
-
-233中窗口刷新的消息格式
 
 ##### Returns
 
