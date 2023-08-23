@@ -1,6 +1,6 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / NavigationUtil
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Navigation
 
-# NavigationUtil <Badge type="tip" text="Class" /> <Score text="NavigationUtil" />
+# Navigation <Badge type="tip" text="Class" /> <Score text="Navigation" />
 
 路径查询。
 
@@ -8,11 +8,11 @@
 
 | Methods |
 | :-----|
-| **[findPath](mw.NavigationUtil.md#findpath)**(`startPos`: [`Vector`](mw.Vector.md), `endPos`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
-| **[follow](mw.NavigationUtil.md#follow)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `target`: [`GameObject`](mw.GameObject.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
-| **[navigateTo](mw.NavigationUtil.md#navigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `position`: [`Vector`](mw.Vector.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
-| **[stopFollow](mw.NavigationUtil.md#stopfollow)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void` <br> 停止跟随|
-| **[stopNavigateTo](mw.NavigationUtil.md#stopnavigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void` <br> 导航停止|
+| **[findPath](mw.Navigation.md#findpath)**(`startPos`: [`Vector`](mw.Vector.md), `endPos`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)[] <br> 查找起点与终点之间的最短移动路径，并以数组的方式返回主要路径点|
+| **[follow](mw.Navigation.md#follow)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `target`: [`GameObject`](mw.GameObject.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 跟随目标|
+| **[navigateTo](mw.Navigation.md#navigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md), `position`: [`Vector`](mw.Vector.md), `radius?`: `number`, `OnSuccess?`: () => `void`, `OnFail?`: () => `void`): `void` <br> 寻路移动|
+| **[stopFollow](mw.Navigation.md#stopfollow)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void` <br> 停止跟随|
+| **[stopNavigateTo](mw.Navigation.md#stopnavigateto)**(`relatedObject`: [`GameObject`](mw.GameObject.md)): `void` <br> 导航停止|
 
 ## Methods
 
@@ -30,7 +30,7 @@ export default class findPath extends Script {
     protected onStart(): void {
         let startPos = new Vector(-100,-100,0);
         let endPos = new Vector(0,0,0);
-        console.log(NavigationUtil.findPath(startPos,endPos));
+        console.log(Navigation.findPath(startPos,endPos));
     }
 }
 ```

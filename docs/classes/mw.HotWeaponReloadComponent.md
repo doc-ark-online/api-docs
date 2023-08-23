@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用了换弹组件，设置参数，添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponReloadSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -39,9 +39,6 @@ export default class HotWeaponReloadSample1 extends Script {
 | :-----|
 | **[animationAssetId](mw.HotWeaponReloadComponent.md#animationassetid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponReloadComponent 使用示例|
 | **[reloadDuration](mw.HotWeaponReloadComponent.md#reloadduration)**(): `number` <br> 获取换弹时间。使用示例见类 HotWeaponReloadComponent 使用示例|
-
-| Methods |
-| :-----|
 
 ## Properties
 
@@ -120,5 +117,3 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  新换弹时间 |
 
-
-## Methods

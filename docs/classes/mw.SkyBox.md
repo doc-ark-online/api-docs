@@ -25,51 +25,47 @@
 
 | Accessors |
 | :-----|
+| **[cloudColor](mw.SkyBox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取云颜色|
 | **[cloudDensity](mw.SkyBox.md#clouddensity)**(): `number` <br> 获取云密度|
-| **[cloudEnable](mw.SkyBox.md#cloudenable)**(): `boolean` <br> 获取是否开启云|
 | **[cloudOpacity](mw.SkyBox.md#cloudopacity)**(): `number` <br> 获取云的透明度|
 | **[cloudSpeed](mw.SkyBox.md#cloudspeed)**(): `number` <br> 获取云速度|
-| **[cloudTextureAssetByID](mw.SkyBox.md#cloudtextureassetbyid)**(`value`: `string`): `void` <br> 设置云贴图资源ID|
-| **[cloudTint](mw.SkyBox.md#cloudtint)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取云颜色|
-| **[moonEnable](mw.SkyBox.md#moonenable)**(): `boolean` <br> 获取是否开启月亮|
+| **[cloudTextureID](mw.SkyBox.md#cloudtextureid)**(`value`: `string`): `void` <br> 设置云贴图资源ID|
+| **[cloudVisible](mw.SkyBox.md#cloudvisible)**(): `boolean` <br> 获取是否开启云|
+| **[moonColor](mw.SkyBox.md#mooncolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取月亮颜色|
 | **[moonIntensity](mw.SkyBox.md#moonintensity)**(): `number` <br> 获取月亮亮度|
 | **[moonSize](mw.SkyBox.md#moonsize)**(): `number` <br> 获取月亮大小|
-| **[moonTextureAssetByID](mw.SkyBox.md#moontextureassetbyid)**(`value`: `string`): `void` <br> 设置月亮贴图资源ID|
-| **[moonTint](mw.SkyBox.md#moontint)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取月亮颜色|
-| **[skyDomeBotTint](mw.SkyBox.md#skydomebottint)**(): [`LinearColor`](mw.LinearColor.md) <br> 天空下层颜色|
-| **[skyDomeGradientEnable](mw.SkyBox.md#skydomegradientenable)**(): `boolean` <br> 获取是否开启渐变效果|
+| **[moonTextureID](mw.SkyBox.md#moontextureid)**(`value`: `string`): `void` <br> 设置月亮贴图资源ID|
+| **[moonVisible](mw.SkyBox.md#moonvisible)**(): `boolean` <br> 获取是否开启月亮|
+| **[preset](mw.SkyBox.md#preset)**(): `number` <br> 获取预设|
+| **[skyDomeBaseColor](mw.SkyBox.md#skydomebasecolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取天空球颜色|
+| **[skyDomeBottomColor](mw.SkyBox.md#skydomebottomcolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 天空下层颜色|
+| **[skyDomeGradientEnabled](mw.SkyBox.md#skydomegradientenabled)**(): `boolean` <br> 获取是否开启渐变效果|
 | **[skyDomeHorizontalFallOff](mw.SkyBox.md#skydomehorizontalfalloff)**(): `number` <br> 获取地平线渐出值|
-| **[skyDomeHorizontalTint](mw.SkyBox.md#skydomehorizontaltint)**(): [`LinearColor`](mw.LinearColor.md) <br> 天空中层颜色|
 | **[skyDomeIntensity](mw.SkyBox.md#skydomeintensity)**(): `number` <br> 获取天空球亮度|
-| **[skyDomeTextureAssetByID](mw.SkyBox.md#skydometextureassetbyid)**(`value`: `string`): `void` <br> 设置天空球贴图|
-| **[skyDomeTint](mw.SkyBox.md#skydometint)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取天空球颜色|
-| **[skyDomeTopTint](mw.SkyBox.md#skydometoptint)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取天空顶层颜色|
-| **[skyPreset](mw.SkyBox.md#skypreset)**(): `number` <br> 获取预设|
-| **[starEnable](mw.SkyBox.md#starenable)**(): `boolean` <br> 获取是否开启星星|
+| **[skyDomeMiddleColor](mw.SkyBox.md#skydomemiddlecolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 天空中层颜色|
+| **[skyDomeTextureID](mw.SkyBox.md#skydometextureid)**(`value`: `string`): `void` <br> 设置天空球贴图|
+| **[skyDomeTopColor](mw.SkyBox.md#skydometopcolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取天空顶层颜色|
+| **[starDensity](mw.SkyBox.md#stardensity)**(): `number` <br> 获取星星密度|
 | **[starIntensity](mw.SkyBox.md#starintensity)**(): `number` <br> 获取星星亮度|
-| **[starTextureAssetByID](mw.SkyBox.md#startextureassetbyid)**(`value`: `string`): `void` <br> 设置星星贴图资源ID|
-| **[starTiling](mw.SkyBox.md#startiling)**(): `number` <br> 获取星星密度|
-| **[sunEnable](mw.SkyBox.md#sunenable)**(): `boolean` <br> 获取是否开启太阳|
+| **[starTextureID](mw.SkyBox.md#startextureid)**(`value`: `string`): `void` <br> 设置星星贴图资源ID|
+| **[starVisible](mw.SkyBox.md#starvisible)**(): `boolean` <br> 获取是否开启星星|
+| **[sunColor](mw.SkyBox.md#suncolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取太阳颜色|
 | **[sunIntensity](mw.SkyBox.md#sunintensity)**(): `number` <br> 获取太阳光亮度|
 | **[sunSize](mw.SkyBox.md#sunsize)**(): `number` <br> 获取太阳大小|
-| **[sunTextureAssetByID](mw.SkyBox.md#suntextureassetbyid)**(`value`: `string`): `void` <br> 设置太阳贴图资源ID|
-| **[sunTint](mw.SkyBox.md#suntint)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取太阳颜色|
+| **[sunTextureID](mw.SkyBox.md#suntextureid)**(`value`: `string`): `void` <br> 设置太阳贴图资源ID|
+| **[sunVisible](mw.SkyBox.md#sunvisible)**(): `boolean` <br> 获取是否开启太阳|
 
 
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[guid](mw.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
-| **[isLocked](mw.GameObject.md#islocked)**(): `boolean` <br> 获取对象是否锁定|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[isStatic](mw.GameObject.md#isstatic)**(): `boolean` <br> 获取对象是否静态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地transform|
 | **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[sourceAssetGuid](mw.GameObject.md#sourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
-| **[useUpdate](mw.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界transform|
 :::
 
@@ -84,41 +80,66 @@
 | Methods |
 | :-----|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> GameObject准备好后返回|
-| **[attachToGameObject](mw.GameObject.md#attachtogameobject)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 将物体附着到指定物体上|
-| **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): `undefined` \| [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
-| **[getChildrenBoxCenter](mw.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScriptByGuid](mw.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
 ## Accessors
+
+### cloudColor <Score text="cloudColor" /> 
+
+• `get` **cloudColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+获取云颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+云颜色
+
+• `set` **cloudColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置云颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](mw.LinearColor.md) | 云颜色 |
+
+
+___
 
 ### cloudDensity <Score text="cloudDensity" /> 
 
@@ -143,33 +164,6 @@
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `value` | `number` | 云密度(0~1) |
-
-
-___
-
-### cloudEnable <Score text="cloudEnable" /> 
-
-• `get` **cloudEnable**(): `boolean` <Badge type="tip" text="client" />
-
-获取是否开启云
-
-
-#### Returns
-
-`boolean`
-
-是否开启云
-
-• `set` **cloudEnable**(`value`): `void` <Badge type="tip" text="client" />
-
-设置是否开启云
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `boolean` | 是否开启云 |
 
 
 ___
@@ -228,9 +222,9 @@ ___
 
 ___
 
-### cloudTextureAssetByID <Score text="cloudTextureAssetByID" /> 
+### cloudTextureID <Score text="cloudTextureID" /> 
 
-• `set` **cloudTextureAssetByID**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **cloudTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 设置云贴图资源ID
 
@@ -244,56 +238,56 @@ ___
 
 ___
 
-### cloudTint <Score text="cloudTint" /> 
+### cloudVisible <Score text="cloudVisible" /> 
 
-• `get` **cloudTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **cloudVisible**(): `boolean` <Badge type="tip" text="client" />
 
-获取云颜色
-
-
-#### Returns
-
-[`LinearColor`](mw.LinearColor.md)
-
-云颜色
-
-• `set` **cloudTint**(`value`): `void` <Badge type="tip" text="client" />
-
-设置云颜色
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`LinearColor`](mw.LinearColor.md) | 云颜色 |
-
-
-___
-
-### moonEnable <Score text="moonEnable" /> 
-
-• `get` **moonEnable**(): `boolean` <Badge type="tip" text="client" />
-
-获取是否开启月亮
+获取是否开启云
 
 
 #### Returns
 
 `boolean`
 
-是否开启月亮
+是否开启云
 
-• `set` **moonEnable**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **cloudVisible**(`value`): `void` <Badge type="tip" text="client" />
 
-设置是否开启月亮
+设置是否开启云
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` | 是否开启月亮 |
+| `value` | `boolean` | 是否开启云 |
+
+
+___
+
+### moonColor <Score text="moonColor" /> 
+
+• `get` **moonColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+获取月亮颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+月亮颜色
+
+• `set` **moonColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置月亮颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](mw.LinearColor.md) | 月亮颜色 |
 
 
 ___
@@ -352,9 +346,9 @@ ___
 
 ___
 
-### moonTextureAssetByID <Score text="moonTextureAssetByID" /> 
+### moonTextureID <Score text="moonTextureID" /> 
 
-• `set` **moonTextureAssetByID**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **moonTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 设置月亮贴图资源ID
 
@@ -368,36 +362,90 @@ ___
 
 ___
 
-### moonTint <Score text="moonTint" /> 
+### moonVisible <Score text="moonVisible" /> 
 
-• `get` **moonTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **moonVisible**(): `boolean` <Badge type="tip" text="client" />
 
-获取月亮颜色
+获取是否开启月亮
 
 
 #### Returns
 
-[`LinearColor`](mw.LinearColor.md)
+`boolean`
 
-月亮颜色
+是否开启月亮
 
-• `set` **moonTint**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **moonVisible**(`value`): `void` <Badge type="tip" text="client" />
 
-设置月亮颜色
+设置是否开启月亮
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | [`LinearColor`](mw.LinearColor.md) | 月亮颜色 |
+| `value` | `boolean` | 是否开启月亮 |
 
 
 ___
 
-### skyDomeBotTint <Score text="skyDomeBotTint" /> 
+### preset <Score text="preset" /> 
 
-• `get` **skyDomeBotTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **preset**(): `number` <Badge type="tip" text="client" />
+
+获取预设
+
+
+#### Returns
+
+`number`
+
+返回预设
+
+• `set` **preset**(`NewPreset`): `void` <Badge type="tip" text="client" />
+
+设置预设
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `NewPreset` | [`SkyPreset`](../enums/mw.SkyPreset.md) | 预设枚举 |
+
+
+___
+
+### skyDomeBaseColor <Score text="skyDomeBaseColor" /> 
+
+• `get` **skyDomeBaseColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+获取天空球颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+天空球颜色
+
+• `set` **skyDomeBaseColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置天空球颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](mw.LinearColor.md) | 天空球颜色值 |
+
+
+___
+
+### skyDomeBottomColor <Score text="skyDomeBottomColor" /> 
+
+• `get` **skyDomeBottomColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
 
 天空下层颜色
 
@@ -408,7 +456,7 @@ ___
 
 天空下层颜色
 
-• `set` **skyDomeBotTint**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **skyDomeBottomColor**(`value`): `void` <Badge type="tip" text="client" />
 
 设置天空下层颜色
 
@@ -422,9 +470,9 @@ ___
 
 ___
 
-### skyDomeGradientEnable <Score text="skyDomeGradientEnable" /> 
+### skyDomeGradientEnabled <Score text="skyDomeGradientEnabled" /> 
 
-• `get` **skyDomeGradientEnable**(): `boolean` <Badge type="tip" text="client" />
+• `get` **skyDomeGradientEnabled**(): `boolean` <Badge type="tip" text="client" />
 
 获取是否开启渐变效果
 
@@ -435,7 +483,7 @@ ___
 
 是否开启渐变效果
 
-• `set` **skyDomeGradientEnable**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **skyDomeGradientEnabled**(`value`): `void` <Badge type="tip" text="client" />
 
 设置是否开启渐变效果
 
@@ -476,33 +524,6 @@ ___
 
 ___
 
-### skyDomeHorizontalTint <Score text="skyDomeHorizontalTint" /> 
-
-• `get` **skyDomeHorizontalTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
-
-天空中层颜色
-
-
-#### Returns
-
-[`LinearColor`](mw.LinearColor.md)
-
-天空中层颜色
-
-• `set` **skyDomeHorizontalTint**(`value`): `void` <Badge type="tip" text="client" />
-
-设置天空中层颜色
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`LinearColor`](mw.LinearColor.md) | 天空中层颜色值 |
-
-
-___
-
 ### skyDomeIntensity <Score text="skyDomeIntensity" /> 
 
 • `get` **skyDomeIntensity**(): `number` <Badge type="tip" text="client" />
@@ -530,9 +551,36 @@ ___
 
 ___
 
-### skyDomeTextureAssetByID <Score text="skyDomeTextureAssetByID" /> 
+### skyDomeMiddleColor <Score text="skyDomeMiddleColor" /> 
 
-• `set` **skyDomeTextureAssetByID**(`value`): `void` <Badge type="tip" text="client" />
+• `get` **skyDomeMiddleColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+天空中层颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+天空中层颜色
+
+• `set` **skyDomeMiddleColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置天空中层颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](mw.LinearColor.md) | 天空中层颜色值 |
+
+
+___
+
+### skyDomeTextureID <Score text="skyDomeTextureID" /> 
+
+• `set` **skyDomeTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 设置天空球贴图
 
@@ -546,36 +594,9 @@ ___
 
 ___
 
-### skyDomeTint <Score text="skyDomeTint" /> 
+### skyDomeTopColor <Score text="skyDomeTopColor" /> 
 
-• `get` **skyDomeTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
-
-获取天空球颜色
-
-
-#### Returns
-
-[`LinearColor`](mw.LinearColor.md)
-
-天空球颜色
-
-• `set` **skyDomeTint**(`value`): `void` <Badge type="tip" text="client" />
-
-设置天空球颜色
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`LinearColor`](mw.LinearColor.md) | 天空球颜色值 |
-
-
-___
-
-### skyDomeTopTint <Score text="skyDomeTopTint" /> 
-
-• `get` **skyDomeTopTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **skyDomeTopColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
 
 获取天空顶层颜色
 
@@ -586,7 +607,7 @@ ___
 
 天空顶层颜色
 
-• `set` **skyDomeTopTint**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **skyDomeTopColor**(`value`): `void` <Badge type="tip" text="client" />
 
 设置天空顶层颜色
 
@@ -600,56 +621,29 @@ ___
 
 ___
 
-### skyPreset <Score text="skyPreset" /> 
+### starDensity <Score text="starDensity" /> 
 
-• `get` **skyPreset**(): `number` <Badge type="tip" text="client" />
+• `get` **starDensity**(): `number` <Badge type="tip" text="client" />
 
-获取预设
+获取星星密度
 
 
 #### Returns
 
 `number`
 
-返回预设
+星星密度
 
-• `set` **skyPreset**(`NewPreset`): `void` <Badge type="tip" text="client" />
+• `set` **starDensity**(`value`): `void` <Badge type="tip" text="client" />
 
-设置预设
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `NewPreset` | [`SkyPreset`](../enums/mw.SkyPreset.md) | 预设枚举 |
-
-
-___
-
-### starEnable <Score text="starEnable" /> 
-
-• `get` **starEnable**(): `boolean` <Badge type="tip" text="client" />
-
-获取是否开启星星
-
-
-#### Returns
-
-`boolean`
-
-是否开启星星
-
-• `set` **starEnable**(`value`): `void` <Badge type="tip" text="client" />
-
-设置是否开启星星
+设置星星密度
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` | 是否开启星星 |
+| `value` | `number` | 星星密度(0~100) |
 
 
 ___
@@ -681,9 +675,9 @@ ___
 
 ___
 
-### starTextureAssetByID <Score text="starTextureAssetByID" /> 
+### starTextureID <Score text="starTextureID" /> 
 
-• `set` **starTextureAssetByID**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **starTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 设置星星贴图资源ID
 
@@ -697,56 +691,56 @@ ___
 
 ___
 
-### starTiling <Score text="starTiling" /> 
+### starVisible <Score text="starVisible" /> 
 
-• `get` **starTiling**(): `number` <Badge type="tip" text="client" />
+• `get` **starVisible**(): `boolean` <Badge type="tip" text="client" />
 
-获取星星密度
-
-
-#### Returns
-
-`number`
-
-星星密度
-
-• `set` **starTiling**(`value`): `void` <Badge type="tip" text="client" />
-
-设置星星密度
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` | 星星密度(0~100) |
-
-
-___
-
-### sunEnable <Score text="sunEnable" /> 
-
-• `get` **sunEnable**(): `boolean` <Badge type="tip" text="client" />
-
-获取是否开启太阳
+获取是否开启星星
 
 
 #### Returns
 
 `boolean`
 
-是否开启太阳
+是否开启星星
 
-• `set` **sunEnable**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **starVisible**(`value`): `void` <Badge type="tip" text="client" />
 
-设置是否开启太阳
+设置是否开启星星
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | `boolean` | 是否开启太阳 |
+| `value` | `boolean` | 是否开启星星 |
+
+
+___
+
+### sunColor <Score text="sunColor" /> 
+
+• `get` **sunColor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+获取太阳颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+太阳颜色
+
+• `set` **sunColor**(`value`): `void` <Badge type="tip" text="client" />
+
+设置太阳颜色
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | [`LinearColor`](mw.LinearColor.md) | 太阳颜色 |
 
 
 ___
@@ -805,9 +799,9 @@ ___
 
 ___
 
-### sunTextureAssetByID <Score text="sunTextureAssetByID" /> 
+### sunTextureID <Score text="sunTextureID" /> 
 
-• `set` **sunTextureAssetByID**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **sunTextureID**(`value`): `void` <Badge type="tip" text="client" />
 
 设置太阳贴图资源ID
 
@@ -821,29 +815,29 @@ ___
 
 ___
 
-### sunTint <Score text="sunTint" /> 
+### sunVisible <Score text="sunVisible" /> 
 
-• `get` **sunTint**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+• `get` **sunVisible**(): `boolean` <Badge type="tip" text="client" />
 
-获取太阳颜色
+获取是否开启太阳
 
 
 #### Returns
 
-[`LinearColor`](mw.LinearColor.md)
+`boolean`
 
-太阳颜色
+是否开启太阳
 
-• `set` **sunTint**(`value`): `void` <Badge type="tip" text="client" />
+• `set` **sunVisible**(`value`): `void` <Badge type="tip" text="client" />
 
-设置太阳颜色
+设置是否开启太阳
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `value` | [`LinearColor`](mw.LinearColor.md) | 太阳颜色 |
+| `value` | `boolean` | 是否开启太阳 |
 
 
 

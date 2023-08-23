@@ -12,3 +12,8 @@ DATA
 | :-----|
 | [DataStorageResultCode](../enums/mw.DataStorageResultCode.md) <br> 数据储存返回代码 |
 
+
+| Interfaces |
+| :-----|
+| [DataStorageResult](../interfaces/mw.DataStorageResult.md) <br> 数据储存返回值 |
+

@@ -10,18 +10,11 @@
 
 :::
 
-使用示例:创建方式
-```ts
-mw.asyncGetCurrentPlayer().then((player) => {
-  let Anim = player.character.playAnimation(animGUID);
-  Anim = player.character.loadAnimation(animGUID);
-});
-```
-
 ## Table of contents
 
 | Accessors |
 | :-----|
+| **[assetId](mw.Animation.md#assetid)**(): `string` <br> 获取动画资源ID|
 | **[isPlaying](mw.Animation.md#isplaying)**(): `boolean` <br> 是否播放|
 | **[length](mw.Animation.md#length)**(): `number` <br> 动画长度|
 | **[loop](mw.Animation.md#loop)**(): `number` <br> 循环次数|
@@ -38,6 +31,19 @@ mw.asyncGetCurrentPlayer().then((player) => {
 
 ## Accessors
 
+### assetId <Score text="assetId" /> 
+
+• `get` **assetId**(): `string` 
+
+获取动画资源ID
+
+
+#### Returns
+
+`string`
+
+___
+
 ### isPlaying <Score text="isPlaying" /> 
 
 • `get` **isPlaying**(): `boolean` 
@@ -53,7 +59,7 @@ mw.asyncGetCurrentPlayer().then((player) => {
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_IsPlaying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_IsPlaying extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -120,7 +126,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Length extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -188,7 +194,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Loop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -252,7 +258,7 @@ export default class Example_Animation_Loop extends Script {
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Loop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -323,7 +329,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_OnFinish"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_OnFinish extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -429,7 +435,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Speed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -494,7 +500,7 @@ export default class Example_Animation_Speed extends Script {
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Speed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -565,7 +571,7 @@ export default class Example_Animation_Speed extends Script {
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Pause"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Pause extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -635,7 +641,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Play extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -705,7 +711,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Resume"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Resume extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -775,7 +781,7 @@ ___
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_Animation_Stop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {

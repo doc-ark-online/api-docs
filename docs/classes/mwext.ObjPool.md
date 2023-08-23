@@ -6,14 +6,14 @@
 
 使用示例:创建一个名为ObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会在玩家当前位置按照对象池中已有方块生成一个方块并在5秒后进行回收坐标回归到原点,频繁按F客户端日志会提示对象池中没有对象，按G键会销毁所有处于回收状态方块
 ```ts
-@Class
+@Component
 export default class ObjPoolExample extends Script {
 
     private objPool: ObjPool<Cube>;
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
             //初始化一个5个对象的对象池
             this.objPool = new ObjPool<Cube>(
@@ -33,7 +33,7 @@ export default class ObjPoolExample extends Script {
                 setTimeout(() => {
                     //5秒后回收该方块
                     this.objPool.despawn(cube);
-                    cube.obj.worldLocation = new mw.Vector(0, 0, 0);
+                    cube.obj.worldTransform.position = new Vector(0, 0, 0);
                 }, 5000);
             });
             InputUtil.onKeyDown(Keys.G, () => {
@@ -47,14 +47,14 @@ export default class ObjPoolExample extends Script {
     private onCubeCreate(): Cube {
         let cube = new Cube();
         cube.obj.setCollision(CollisionStatus.Off);
-        cube.obj.worldLocation = new mw.Vector(0, 0, 0);
+        cube.obj.worldTransform.position = new Vector(0, 0, 0);
         return cube;
     }
 
     //重置对象的回调
     private onCubeReset(cube: Cube): void {
-        let playerPos = mw.getCurrentPlayer().character.worldLocation;
-        cube.obj.worldLocation = playerPos;
+        let playerPos = mw.getCurrentPlayer().character.worldTransform.position;
+        cube.obj.worldTransform.position = playerPos;
     }
 
     //销毁对象的回调
@@ -75,7 +75,7 @@ class Cube {
     public obj: mw.GameObject = null;
 
     constructor() {
-        this.obj = mw.GameObject.spawn({ guid: "7669" });
+        this.obj = mw.GameObject.spawn("197386");
     }
 }
 ```

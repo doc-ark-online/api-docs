@@ -6,17 +6,17 @@
 
 ::: warning Precautions
 
-所有的客户端模块都必须继承这个类，才能被ModuleManager管理
+所有的客户端模块都必须继承这个类，才能被ModuleService管理
 
 :::
 
 使用示例:创建一个名为ModuleCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会输出player模块每个生命周期执行的日志，按下F键你将在客户端以及服务端日志中看到玩家等级的信息
 ```ts
-@Class
+@Component
 export default class ModuleCExample extends Script {
 
     protected onStart(): void {
-        ModuleManager.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        ModuleService.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
     }
 
 }
@@ -69,7 +69,7 @@ class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
     }
 }
 class PlayerModuleData extends Subdata {
-    @Decorator.saveProperty
+    @Decorator.persistence()
     private level: number;
 
     protected initDefaultData(): void {
@@ -97,17 +97,18 @@ class PlayerModuleData extends Subdata {
 
 ## Hierarchy
 
-- `NetObjectC`<`T`\>
+- **`ModuleC`**
 
-  ↳ **`ModuleC`**
-
-  ↳↳ [`LeaderboardModuleBaseC`](mwext.LeaderboardModuleBaseC.md)
+  ↳ [`LeaderboardModuleBaseC`](mwext.LeaderboardModuleBaseC.md)
 
 ## Table of contents
 
 | Accessors |
 | :-----|
-| **[data](mwext.ModuleC.md#data)**(): `S` <br> currentPlayer的模块数据|
+| **[data](mwext.ModuleC.md#data)**(): `S` <br> 本地玩家的模块数据|
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <br> 获取当前玩家|
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <br> 获取当前玩家ID|
+| **[server](mwext.ModuleC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
 
 | Methods |
 | :-----|
@@ -118,15 +119,63 @@ class PlayerModuleData extends Subdata {
 | **[onStart](mwext.ModuleC.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
 | **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `S` | extends [`Subdata`](mwext.Subdata.md)<`S`\> |
+
+## Accessors
+
 ### data <Score text="data" /> 
 
 • `Protected` `get` **data**(): `S`
 
-currentPlayer的模块数据
+本地玩家的模块数据
 
 #### Returns
 
 `S`
+
+___
+
+### localPlayer <Score text="localPlayer" /> 
+
+• `Protected` `get` **localPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />
+
+获取当前玩家
+
+
+#### Returns
+
+[`Player`](mw.Player.md)
+
+___
+
+### localPlayerId <Score text="localPlayerId" /> 
+
+• `Protected` `get` **localPlayerId**(): `number` <Badge type="tip" text="client" />
+
+获取当前玩家ID
+
+
+#### Returns
+
+`number`
+
+___
+
+### server <Score text="server" /> 
+
+• `Protected` `get` **server**(): `T` <Badge type="tip" text="client" />
+
+和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法
+
+
+#### Returns
+
+`T`
 
 ## Methods
 

@@ -7,5 +7,5 @@ SOUNDS
 | :-----|
 | [AttenuationDistanceModel](../enums/mw.AttenuationDistanceModel.md) <br> 音效衰减函数模型 |
 | [AttenuationShape](../enums/mw.AttenuationShape.md) <br> 音效衰减形状 |
-| [AudioPlayState](../enums/mw.AudioPlayState.md) <br> 音效播放状态 |
+| [SoundPlayState](../enums/mw.SoundPlayState.md) <br> 音效播放状态 |
 

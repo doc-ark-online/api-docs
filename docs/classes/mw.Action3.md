@@ -38,11 +38,11 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
-| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `void` <br> 添加一个监听方法(有重复过滤)|
+| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number` <br> 添加一个监听方法(有重复过滤)|
 | **[call](mw.Action.md#call)**(`...params`: `any`): `void` <br> 执行|
 | **[clear](mw.Action.md#clear)**(): `void` <br> 清除所有监听|
 | **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean` <br> 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `Function`, `thisArg`: `any`): `void` <br> 移除一个监听方法|
+| **[remove](mw.Action.md#remove)**(`fn`: `number` \, `thisArg?`: `any`): `void` <br> 移除一个监听方法|
 :::
 
 

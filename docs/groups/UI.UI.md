@@ -40,9 +40,9 @@ UI
 | [UIFontInfo](../classes/mw.UIFontInfo.md) <br> 字体信息 |
 | [UIHugContent](../classes/mw.UIHugContent.md) <br> 容器自动布局大小适应规则 |
 | [UILayout](../classes/mw.UILayout.md) <br> 容器自动布局规则 |
-| [UIManager](../classes/mw.UIManager.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 |
 | [UIObject](../classes/mw.UIObject.md) <br> UI对象组件 |
 | [UIScript](../classes/mw.UIScript.md) <br> UI的驱动脚本基类 |
+| [UIService](../classes/mw.UIService.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 |
 | [UITransform](../classes/mw.UITransform.md) <br> 节点Transform |
 | [UIWidget](../classes/mw.UIWidget.md) <br> 世界UI组件 |
 | [UserWidget](../classes/mw.UserWidget.md) <br> UI控件的集合,预制体UI |
@@ -91,7 +91,7 @@ UI
 | :-----|
 | **[absoluteToLocal](UI.UI.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `absolutePosition`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <br> 转化绝对坐标到相对坐标|
 | **[absoluteToViewport](UI.UI.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/mw.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/mw.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/mw.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
-| **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
+| **[assetIDChangeIconUrlRequest](UI.UI.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](UI.UI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
 | **[createUI](UI.UI.md#createui)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <br> 创建UIPrefab|
 | **[createUIByName](UI.UI.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <br> 创建UIPrefab|
@@ -126,6 +126,11 @@ UI
 | **[setInputModeUIOnly](UI.UI.md#setinputmodeuionly)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md)): `void` <br> 设置只允许UI响应用户输入的输入模式。|
 | **[transformVectorAbsoluteToLocal](UI.UI.md#transformvectorabsolutetolocal)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `absoluteVector`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <br> 转化绝对空间下矢量到局部空间下|
 | **[transformVectorLocalToAbsolute](UI.UI.md#transformvectorlocaltoabsolute)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `localVector`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <br> 转化局部空间下矢量到绝对空间下|
+
+
+| Modules Type Aliases |
+| :-----|
+| **[TabGroupOnClickedProps](UI.UI.md#tabgrouponclickedprops)**: `Object` <br> 选项卡组-点击事件type|
 
 
 ## Modules Functions
@@ -783,3 +788,13 @@ ___
 [`Vector2`](../classes/mw.Vector2.md)
 
 绝对空间矢量
+## Modules Type Aliases
+
+
+___
+
+### TabGroupOnClickedProps <Score text="TabGroupOnClickedProps" /> 
+
+Ƭ **TabGroupOnClickedProps**: `Object`
+
+选项卡组-点击事件type

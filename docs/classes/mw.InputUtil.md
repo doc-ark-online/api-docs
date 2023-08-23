@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为"InputExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,点击键盘1键及屏幕，你将看到Input相关效果.代码如下:
 ```ts
-@Class
+@Component
 export default class InputExample extends Script {
     protected onStart(): void {
         InputUtil.onKeyDown(Keys.One, () => {
@@ -53,7 +53,7 @@ export default class InputExample extends Script {
 | **[onTouchBegin](mw.InputUtil.md#ontouchbegin)**(`listener`: (`index`: `number`, `location`: [`Vector2`](mw.Vector2.md), `touchType`: [`TouchInputType`](../enums/mw.TouchInputType.md)) => `void`): [`EventListener`](mw.EventListener.md) <br> 触摸开始事件|
 | **[onTouchEnd](mw.InputUtil.md#ontouchend)**(`listener`: (`index`: `number`, `location`: [`Vector2`](mw.Vector2.md), `touchType`: [`TouchInputType`](../enums/mw.TouchInputType.md)) => `void`): [`EventListener`](mw.EventListener.md) <br> 触摸结束事件|
 | **[onTouchMove](mw.InputUtil.md#ontouchmove)**(`listener`: (`index`: `number`, `location`: [`Vector2`](mw.Vector2.md), `touchType`: [`TouchInputType`](../enums/mw.TouchInputType.md)) => `void`): [`EventListener`](mw.EventListener.md) <br> 触摸移动事件|
-| **[projectWorldLocationToWidgetPosition](mw.InputUtil.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](mw.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](mw.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
+| **[projectWorldPositionToWidgetPosition](mw.InputUtil.md#projectworldpositiontowidgetposition)**(`worldLocation`: [`Vector`](mw.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](mw.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
 | **[setCursorLocked](mw.InputUtil.md#setcursorlocked)**(`isLock`: `boolean`): `void` <br> 设置鼠标指针是否锁定|
 | **[setCursorVisible](mw.InputUtil.md#setcursorvisible)**(`isVisible`: `boolean`): `void` <br> 设置鼠标指针是否可见|
 | **[setMouseLockable](mw.InputUtil.md#setmouselockable)**(`can`: `boolean`): `void` <br> 设置是否可以锁定鼠标|
@@ -70,8 +70,8 @@ export default class InputExample extends Script {
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -144,8 +144,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以在屏幕中心位置发出一条射线，射线方向为屏幕中心位置指向屏幕外1000米处
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -155,10 +155,10 @@ export default class InputExample extends mw.Script {
     private async test(): Promise<void> {
         InputUtil.onKeyDown(Keys.F, () => {
             const result = InputUtil.convertScreenLocationToWorldSpace(960, 540);
-            const startLoc = result.worldLocation;
+            const startLoc = result.worldPosition;
             const dir = result.worldDirection;
-            const endLoc = mw.Vector.add(startLoc, dir.multiply(1000));
-            mw.lineTrace(startLoc, endLoc, true, true);
+            const endLoc = Vector.add(startLoc, dir.multiply(1000));
+            mw.QueryUtil.lineTrace(startLoc, endLoc, true, true);
         })
     }
 
@@ -189,8 +189,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -225,8 +225,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -261,8 +261,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可与屏幕UI交互，不可交互时，点击跳跃按钮无效
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -296,8 +296,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换shift键是否可以控制光标显示
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -331,8 +331,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -366,8 +366,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -401,8 +401,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按下的情况
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -442,8 +442,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被按压的情况
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -455,7 +455,6 @@ export default class InputExample extends mw.Script {
             console.log("F key up");
         })
     }
-
 }
 ```
 
@@ -483,8 +482,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出F键是否被抬起的情况
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -599,17 +598,17 @@ ___
 
 ___
 
-### projectWorldLocationToWidgetPosition <Score text="projectWorldLocationToWidgetPosition" /> 
+### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 
 
-• `Static` **projectWorldLocationToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](mw.ConvertScreenResult.md) 
+• `Static` **projectWorldPositionToWidgetPosition**(`worldLocation`, `playerViewportRelative?`): [`ConvertScreenResult`](mw.ConvertScreenResult.md) 
 
 获取角色在世界中的位置，投射到屏幕上
 
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以将按钮移动到玩家所在位置
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -620,7 +619,7 @@ export default class InputExample extends mw.Script {
         let btn = new ButtonUI();
         InputUtil.onKeyDown(Keys.F, async () => {
             let playerPos = (await mw.asyncGetCurrentPlayer()).character.worldLocation;
-            let result = InputUtil.projectWorldLocationToWidgetPosition(playerPos);
+            let result = InputUtil.projectWorldPositionToWidgetPosition(playerPos);
             if (result) {
                 btn.button.position = result.screenPosition;
             }
@@ -690,8 +689,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否锁定，锁定后鼠标不可出到游戏窗口外
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -726,8 +725,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以切换鼠标是否可见
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -762,8 +761,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键，可以通过shift锁定鼠标，按下G键，不可以通过shift锁定鼠标
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
@@ -802,8 +801,8 @@ ___
 
 使用示例:创建一个名为InputExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下空格键，可以看到按钮变红，5秒后空格键解绑
 ```ts
-@Core.Component
-export default class InputExample extends mw.Script {
+@Component
+export default class InputExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;

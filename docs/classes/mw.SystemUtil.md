@@ -13,9 +13,9 @@
 
 | Accessors |
 | :-----|
-| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 退出委托|
-| **[onPaused](mw.SystemUtil.md#onpaused)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 暂停委托|
-| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <br> 重新返回委托|
+| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 添加退出游戏时执行的回调函数|
+| **[onPause](mw.SystemUtil.md#onpause)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 添加OnPause开始时执行的回调函数|
+| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <br> 添加OnPause结束时执行的回调函数|
 
 | Methods |
 | :-----|
@@ -39,7 +39,7 @@
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -66,37 +66,66 @@ ___
 
 ### onExit <Score text="onExit" /> 
 
-• `Static` `get` **onExit**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• `Static` `get` **onExit**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
-退出委托
+添加退出游戏时执行的回调函数
+
+
+::: warning Precautions
+
+只在233悬浮球退出和PIE关闭窗口时生效。悬浮球退出会计时5s，5s后会强制杀进程.
+
+:::
 
 #### Returns
 
 [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+
+返回一个事件监听器
 
 ___
 
-### onPaused <Score text="onPaused" /> 
+### onPause <Score text="onPause" /> 
 
-• `Static` `get` **onPaused**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• `Static` `get` **onPause**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
 
-暂停委托
+添加OnPause开始时执行的回调函数
+
+
+::: warning Precautions
+
+只在Android和IOS生效。触发时机有切入后台、息屏和播广告。
+             部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
+
+:::
 
 #### Returns
 
 [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+
+返回一个事件监听器
 
 ___
 
 ### onResume <Score text="onResume" /> 
 
-• `Static` `get` **onResume**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\>
+• `Static` `get` **onResume**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <Badge type="tip" text="client" />
 
-重新返回委托
+添加OnPause结束时执行的回调函数
+
+
+::: warning Precautions
+
+只在Android和IOS生效。触发时机有切入后台、息屏和播广告后回到游戏。
+             部分机型切入后台不会暂停游戏所以不会触发该回调或暂停时间很短，可以通过游戏背景音乐是否持续播放来判断。
+
+:::
 
 #### Returns
 
 [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\>
+
+返回一个事件监听器
 
 ## Methods
 
@@ -109,7 +138,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -140,7 +169,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -171,7 +200,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -202,7 +231,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -235,7 +264,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -268,7 +297,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -303,7 +332,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {
@@ -334,7 +363,7 @@ ___
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 ```ts
-@Class
+@Component
 export default class SystemExample extends Script {
 
     protected onStart(): void {

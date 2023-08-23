@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponAimSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器的启用了瞄准组件并设置参数，添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponAimSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -44,7 +44,6 @@ export default class HotWeaponAimSample1 extends Script {
 
 | Methods |
 | :-----|
-| **[bindOpenAimComponentDelegates](mw.HotWeaponAimComponent.md#bindopenaimcomponentdelegates)**(): `void` <br> 绑定瞄准组件代理|
 | **[enableAiming](mw.HotWeaponAimComponent.md#enableaiming)**(`enabled`: `boolean`): `void` <br> 打开/关闭瞄准|
 
 ## Properties
@@ -202,16 +201,6 @@ Set第三人称常态下相机弹簧组件的默认长度。使用示例见类 H
 
 
 ## Methods
-
-### bindOpenAimComponentDelegates <Score text="bindOpenAimComponentDelegates" /> 
-
-• **bindOpenAimComponentDelegates**(): `void` 
-
-绑定瞄准组件代理
-
-
-
-___
 
 ### enableAiming <Score text="enableAiming" /> 
 

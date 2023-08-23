@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponLoadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启上膛组件并设置参数，添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponLoadSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -39,9 +39,6 @@ export default class HotWeaponLoadSample1 extends Script {
 | **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
 | **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
 | **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例|
-
-| Methods |
-| :-----|
 
 ## Properties
 
@@ -153,5 +150,3 @@ ___
 | :------ | :------ | :------ |
 | `time` | `number` |  上膛时间 |
 
-
-## Methods

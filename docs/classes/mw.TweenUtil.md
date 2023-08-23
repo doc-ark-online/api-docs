@@ -8,7 +8,7 @@
 
 使用示例: 创建一个名为TweenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下G键，会在场景中随机生成一个导弹并按照设定轨迹飞往目的地。
 ```ts
-@Class
+@Component
 export default class TweenExample extends Script {
 
     protected async onStart(): Promise<void> {
@@ -42,7 +42,7 @@ class DaoDanScript {
         // 使用对象池来创建预制体，并设置预制体的位置
         const bombAssetId = "44948";
         const fireAssetId = "13404";
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         this.prefab = await GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset);
         this.prefab.setVisibility(PropertyStatus.Off, false);
         GameObject.asyncSpawn({ guid: bombAssetId }).then(obj => {

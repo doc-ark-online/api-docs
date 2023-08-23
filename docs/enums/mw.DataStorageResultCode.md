@@ -8,23 +8,16 @@
 
 | Enumeration Members |
 | :-----|
-| **[ExceededSizeLimit](mw.DataStorageResultCode.md#exceededsizelimit)** = ``2`` <br> |
 | **[Failure](mw.DataStorageResultCode.md#failure)** = ``400`` <br> |
+| **[GameIdError](mw.DataStorageResultCode.md#gameiderror)** = ``1011`` <br> |
 | **[KeyValueError](mw.DataStorageResultCode.md#keyvalueerror)** = ``1010`` <br> |
-| **[OnlyServerCall](mw.DataStorageResultCode.md#onlyservercall)** = ``3`` <br> |
+| **[OnlyServerCall](mw.DataStorageResultCode.md#onlyservercall)** = ``402`` <br> |
 | **[RequestIntervalTooClose](mw.DataStorageResultCode.md#requestintervaltooclose)** = ``423`` <br> |
 | **[RequestTooFrequent](mw.DataStorageResultCode.md#requesttoofrequent)** = ``424`` <br> |
 | **[Success](mw.DataStorageResultCode.md#success)** = ``200`` <br> |
+| **[TimeOut](mw.DataStorageResultCode.md#timeout)** = ``408`` <br> |
 
 ## Enumeration Members
-
-### ExceededSizeLimit <Score text="ExceededSizeLimit" /> 
-
-• **ExceededSizeLimit** = ``2``
-
-调用失败：key或者Value大小过大
-
-___
 
 ### Failure <Score text="Failure" /> 
 
@@ -34,17 +27,25 @@ ___
 
 ___
 
+### GameIdError <Score text="GameIdError" /> 
+
+• **GameIdError** = ``1011``
+
+gameId格式错误
+
+___
+
 ### KeyValueError <Score text="KeyValueError" /> 
 
 • **KeyValueError** = ``1010``
 
-key或者Value格式错误
+key或者value格式错误，key大小不能大于50字节，value大小不能大于64kb
 
 ___
 
 ### OnlyServerCall <Score text="OnlyServerCall" /> 
 
-• **OnlyServerCall** = ``3``
+• **OnlyServerCall** = ``402``
 
 非法调用 只可服务器端调用
 
@@ -71,3 +72,11 @@ ___
 • **Success** = ``200``
 
 操作成功
+
+___
+
+### TimeOut <Score text="TimeOut" /> 
+
+• **TimeOut** = ``408``
+
+请求超时未回调

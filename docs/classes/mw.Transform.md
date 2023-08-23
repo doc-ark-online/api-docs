@@ -27,12 +27,12 @@ Transform 由缩放、旋转和平移组成
 | **[getRightVector](mw.Transform.md#getrightvector)**(): [`Vector`](mw.Vector.md) <br> 返回 Transform 的向右方向向量|
 | **[getUpVector](mw.Transform.md#getupvector)**(): [`Vector`](mw.Vector.md) <br> 返回 Transform 的向上方向向量|
 | **[inverseTransformDirection](mw.Transform.md#inversetransformdirection)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将世界方向转化为本地方向|
-| **[inverseTransformLocation](mw.Transform.md#inversetransformlocation)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将世界坐标转化为本地坐标|
+| **[inverseTransformPosition](mw.Transform.md#inversetransformposition)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将世界坐标转化为本地坐标|
 | **[lookAt](mw.Transform.md#lookat)**(`target`: [`Vector`](mw.Vector.md)): `void` <br> Transform面向目标方向|
 | **[rotate](mw.Transform.md#rotate)**(`axis`: [`Vector`](mw.Vector.md), `angle`: `number`): `void` <br> Transform绕指定轴旋转|
 | **[toString](mw.Transform.md#tostring)**(): `string` <br> 输出为一个有格式的字符串|
 | **[transformDirection](mw.Transform.md#transformdirection)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将本地方向转化为世界方向|
-| **[transformLocation](mw.Transform.md#transformlocation)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 本地坐标转化为世界坐标|
+| **[transformPosition](mw.Transform.md#transformposition)**(`location`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 本地坐标转化为世界坐标|
 | **[fromString](mw.Transform.md#fromstring-1)**(`str`: `string`, `outer?`: [`Transform`](mw.Transform.md)): [`Transform`](mw.Transform.md) <br> 读取字符串数据创建或者写入一个 Transform|
 
 返回一个新的 Transform
@@ -245,9 +245,9 @@ ___
 
 ___
 
-### inverseTransformLocation <Score text="inverseTransformLocation" /> 
+### inverseTransformPosition <Score text="inverseTransformPosition" /> 
 
-• **inverseTransformLocation**(`location`): [`Vector`](mw.Vector.md) 
+• **inverseTransformPosition**(`location`): [`Vector`](mw.Vector.md) 
 
 将世界坐标转化为本地坐标
 
@@ -335,9 +335,9 @@ ___
 
 ___
 
-### transformLocation <Score text="transformLocation" /> 
+### transformPosition <Score text="transformPosition" /> 
 
-• **transformLocation**(`location`): [`Vector`](mw.Vector.md) 
+• **transformPosition**(`location`): [`Vector`](mw.Vector.md) 
 
 本地坐标转化为世界坐标
 

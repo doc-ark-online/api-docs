@@ -42,24 +42,25 @@
 | **[mass](mw.WheeledVehicle4W.md#mass)**(): `number` <br> 获取载具质量。单位：千克（kg）|
 | **[maxEngineRPM](mw.WheeledVehicle4W.md#maxenginerpm)**(): `number` <br> 获取最大发动机转速。单位：转/分（r/min）|
 | **[maxGearLevel](mw.WheeledVehicle4W.md#maxgearlevel)**(): `number` <br> 获取最大档位级别。如返回值为4，则表示有[-1, 0, 1, 2, 3, 4]这些档位。|
+| **[relativeLocation](mw.WheeledVehicle4W.md#relativelocation)**(): [`Vector`](mw.Vector.md) <br> 获取相对位置|
+| **[relativeRotation](mw.WheeledVehicle4W.md#relativerotation)**(): [`Rotation`](mw.Rotation.md) <br> 获取相对旋转|
+| **[transform](mw.WheeledVehicle4W.md#transform)**(): [`Transform`](mw.Transform.md) <br> 返回当前物体transform|
 | **[velocity](mw.WheeledVehicle4W.md#velocity)**(): `number` <br> 获取当前行驶速度。单位：米/秒（m/s）|
 | **[wheelNum](mw.WheeledVehicle4W.md#wheelnum)**(): `number` <br> 获取车轮数量|
+| **[worldLocation](mw.WheeledVehicle4W.md#worldlocation)**(): [`Vector`](mw.Vector.md) <br> 获取物体的世界坐标|
+| **[worldRotation](mw.WheeledVehicle4W.md#worldrotation)**(): [`Rotation`](mw.Rotation.md) <br> 获取物体的世界旋转|
 
 
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[guid](mw.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
-| **[isLocked](mw.GameObject.md#islocked)**(): `boolean` <br> 获取对象是否锁定|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[isStatic](mw.GameObject.md#isstatic)**(): `boolean` <br> 获取对象是否静态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地transform|
 | **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[sourceAssetGuid](mw.GameObject.md#sourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
-| **[useUpdate](mw.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界transform|
 :::
 
@@ -75,9 +76,15 @@
 | **[getWheelRadius](mw.WheeledVehicle4W.md#getwheelradius)**(`wheelId`: `number`): `number` <br> 获取车轮半径。单位：厘米（cm）|
 | **[setCullDistance](mw.WheeledVehicle4W.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setDriver](mw.WheeledVehicle4W.md#setdriver)**(`inDriver`: [`Player`](mw.Player.md)): `void` <br> 设置载具驾驶员。只有驾驶员才可以操作载具|
+| **[setLocationAndRotation](mw.WheeledVehicle4W.md#setlocationandrotation)**(`location`: [`Vector`](mw.Vector.md), `rotation`: [`Rotation`](mw.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
+| **[setRelativeLocation](mw.WheeledVehicle4W.md#setrelativelocation)**(`location`: [`Vector`](mw.Vector.md)): `void` <br> 设置相对位置|
+| **[setRelativeRotation](mw.WheeledVehicle4W.md#setrelativerotation)**(`rotation`: [`Rotation`](mw.Rotation.md)): `void` <br> 设置相对旋转|
 | **[setSimulatePhysics](mw.WheeledVehicle4W.md#setsimulatephysics)**(`shouldSimulate`: `boolean`): `void` <br> 设置四轮载具是否开启物理模拟计算，需要在客户端调用。|
 | **[setSteeringInput](mw.WheeledVehicle4W.md#setsteeringinput)**(`newInput`: `number`): `void` <br> 控制载具左/右转向。|
 | **[setThrottleInput](mw.WheeledVehicle4W.md#setthrottleinput)**(`newInput`: `number`): `void` <br> 控制载具前进/后退。|
+| **[setTransform](mw.WheeledVehicle4W.md#settransform)**(`transform`: [`Transform`](mw.Transform.md)): `void` <br> 设置当前物体transform|
+| **[setWorldLocation](mw.WheeledVehicle4W.md#setworldlocation)**(`v`: [`Vector`](mw.Vector.md)): `void` <br> 设置物体的世界坐标|
+| **[setWorldRotation](mw.WheeledVehicle4W.md#setworldrotation)**(`rotation`: [`Rotation`](mw.Rotation.md)): `void` <br> 设置物体的世界旋转|
 | **[switchCamera](mw.WheeledVehicle4W.md#switchcamera)**(`useVehicleCamera`: `boolean`): `void` <br> 在载具和角色之间切换摄像机。|
 
 
@@ -85,37 +92,35 @@
 | Methods |
 | :-----|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> GameObject准备好后返回|
-| **[attachToGameObject](mw.GameObject.md#attachtogameobject)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 将物体附着到指定物体上|
-| **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): `undefined` \| [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
-| **[getChildrenBoxCenter](mw.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScriptByGuid](mw.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -292,6 +297,87 @@ ___
 
 ___
 
+### relativeLocation <Score text="relativeLocation" /> 
+
+• `get` **relativeLocation**(): [`Vector`](mw.Vector.md) 
+
+获取相对位置
+
+
+#### Returns
+
+[`Vector`](mw.Vector.md)
+
+位置坐标
+
+• `set` **relativeLocation**(`location`): `void` 
+
+设置相对位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](mw.Vector.md) | 位置 |
+
+
+___
+
+### relativeRotation <Score text="relativeRotation" /> 
+
+• `get` **relativeRotation**(): [`Rotation`](mw.Rotation.md) 
+
+获取相对旋转
+
+
+#### Returns
+
+[`Rotation`](mw.Rotation.md)
+
+旋转角度
+
+• `set` **relativeRotation**(`rotation`): `void` 
+
+设置相对旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](mw.Rotation.md) | 旋转 |
+
+
+___
+
+### transform <Score text="transform" /> 
+
+• `get` **transform**(): [`Transform`](mw.Transform.md) 
+
+返回当前物体transform
+
+
+#### Returns
+
+[`Transform`](mw.Transform.md)
+
+transform
+
+• `set` **transform**(`transform`): `void` 
+
+设置当前物体transform
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](mw.Transform.md) | 要设置的transform |
+
+
+___
+
 ### velocity <Score text="velocity" /> 
 
 • `get` **velocity**(): `number` 
@@ -319,6 +405,56 @@ ___
 `number`
 
 车轮数量
+
+___
+
+### worldLocation <Score text="worldLocation" /> 
+
+• `get` **worldLocation**(): [`Vector`](mw.Vector.md) 
+
+获取物体的世界坐标
+
+
+#### Returns
+
+[`Vector`](mw.Vector.md)
+
+• `set` **worldLocation**(`v`): `void` 
+
+设置物体的世界坐标
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | [`Vector`](mw.Vector.md) |
+
+
+___
+
+### worldRotation <Score text="worldRotation" /> 
+
+• `get` **worldRotation**(): [`Rotation`](mw.Rotation.md) 
+
+获取物体的世界旋转
+
+
+#### Returns
+
+[`Rotation`](mw.Rotation.md)
+
+• `set` **worldRotation**(`rotation`): `void` 
+
+设置物体的世界旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](mw.Rotation.md) | 要设置的世界旋转 |
+
 
 
 ## Methods
@@ -517,6 +653,55 @@ ___
 
 ___
 
+### setLocationAndRotation <Score text="setLocationAndRotation" /> 
+
+• **setLocationAndRotation**(`location`, `rotation`): `void` 
+
+同时设置物体的世界位置与旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](mw.Vector.md) | 世界位置 |
+| `rotation` | [`Rotation`](mw.Rotation.md) | 世界旋转 |
+
+
+___
+
+### setRelativeLocation <Score text="setRelativeLocation" /> 
+
+• **setRelativeLocation**(`location`): `void` 
+
+设置相对位置
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `location` | [`Vector`](mw.Vector.md) | 位置 |
+
+
+___
+
+### setRelativeRotation <Score text="setRelativeRotation" /> 
+
+• **setRelativeRotation**(`rotation`): `void` 
+
+设置相对旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](mw.Rotation.md) | 旋转 |
+
+
+___
+
 ### setSimulatePhysics <Score text="setSimulatePhysics" /> 
 
 • **setSimulatePhysics**(`shouldSimulate`): `void` <Badge type="tip" text="client" />
@@ -621,6 +806,54 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `newInput` | `number` |  油门大小，取值范围[-1,1]，大于0时加速，小于0则减速。 |
+
+
+___
+
+### setTransform <Score text="setTransform" /> 
+
+• **setTransform**(`transform`): `void` 
+
+设置当前物体transform
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `transform` | [`Transform`](mw.Transform.md) | transform |
+
+
+___
+
+### setWorldLocation <Score text="setWorldLocation" /> 
+
+• **setWorldLocation**(`v`): `void` 
+
+设置物体的世界坐标
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `v` | [`Vector`](mw.Vector.md) |  要设置的世界坐标 |
+
+
+___
+
+### setWorldRotation <Score text="setWorldRotation" /> 
+
+• **setWorldRotation**(`rotation`): `void` 
+
+设置物体的世界旋转
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `rotation` | [`Rotation`](mw.Rotation.md) | 要设置的世界旋转 |
 
 
 ___

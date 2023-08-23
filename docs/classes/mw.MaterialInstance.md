@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为"MaterialExample"的脚本,把脚本挂载到一个模型对象下,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到动态设置材质的效果.代码如下:
 ```ts
-@Class
+@Component
 export default class MaterialExample extends Script {
     protected onStart(): void {
         if (this.gameObject instanceof mw.Model){

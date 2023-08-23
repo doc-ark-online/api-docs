@@ -6,7 +6,7 @@
 
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
 ```ts
-@Class
+@Component
 export default class DataCenterCExample extends Script {
 
     protected onStart(): void {
@@ -53,7 +53,7 @@ class PlayerModuleData extends Subdata {
 
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息
 ```ts
-@Class
+@Component
 export default class DataCenterCExample extends Script {
 
     protected onStart(): void {

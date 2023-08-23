@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponAofSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -50,7 +50,6 @@ export default class HotWeaponAofSample1 extends Script {
 
 | Methods |
 | :-----|
-| **[bindOpenAccuracyOfFireComponentDelegates](mw.HotWeaponAccuracyOfFireComponent.md#bindopenaccuracyoffirecomponentdelegates)**(): `void` <br> 客户端 绑定射击精度组件代理|
 | **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number` <br> Get当前子弹随机发散范围半径实际值|
 | **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
 | **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number` <br> Get目标子弹随机发散范围半径实际值|
@@ -266,16 +265,6 @@ Set子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccurac
 
 
 ## Methods
-
-### bindOpenAccuracyOfFireComponentDelegates <Score text="bindOpenAccuracyOfFireComponentDelegates" /> 
-
-• **bindOpenAccuracyOfFireComponentDelegates**(): `void` 
-
-客户端 绑定射击精度组件代理
-
-
-
-___
 
 ### getCurrentDispersionHalfAngle <Score text="getCurrentDispersionHalfAngle" /> 
 

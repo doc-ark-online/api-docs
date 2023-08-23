@@ -6,8 +6,8 @@
 
 使用示例:创建一个名为"EffectExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到粒子特效炸裂的效果.代码如下:
 ```ts
-@Core.Component
-export default class EffectExample extends mw.Script {
+@Component
+export default class EffectExample extends Script {
 
     private readonly effect = {
         assetID: "145884",
@@ -18,16 +18,16 @@ export default class EffectExample extends mw.Script {
         this.createEffect();
     }
 
-    @Core.RemoteFunction(Core.Client)
+    @RemoteFunction(Client)
     public async createEffect(): Promise<void> {
         const success = await mw.AssetUtil.asyncDownloadAsset(this.effect.assetID);
             if (success) {
                 // 下载完毕创建特效
-                this.effect.object = await mw.GameObject.asyncSpawnGameObject(this.effect.assetID) as mw.Effect;
+                this.effect.object = await mw.GameObject.asyncSpawn(this.effect.assetID) as mw.Effect;
 
                 // 设置特效transform
                 const transform = new mw.Transform(new mw.Vector(500, 0, 0), new mw.Rotation(0, 0, 0), new mw.Vector(1, 1, 1));
-                this.effect.object.setTransform(transform);
+                this.effect.object.localTransform = transform;
 
                 // 播放特效
                 this.effect.object.play();
@@ -64,24 +64,22 @@ export default class EffectExample extends mw.Script {
 
 | Accessors |
 | :-----|
+| **[loop](mw.Effect.md#loop)**(): `boolean` <br> 获取特效是否是循环，不再生效|
+| **[loopCount](mw.Effect.md#loopcount)**(): `number` <br> 获取特效循环次数，不再生效|
+| **[maskcolor](mw.Effect.md#maskcolor)**(): [`LinearColor`](mw.LinearColor.md) <br> 获取特效遮罩颜色|
 | **[timeLength](mw.Effect.md#timelength)**(): `number` <br> 获取特效时长(ms)|
-| **[translucentSortPriority](mw.Effect.md#translucentsortpriority)**(): `number` <br> 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
 
 
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[guid](mw.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
-| **[isLocked](mw.GameObject.md#islocked)**(): `boolean` <br> 获取对象是否锁定|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[isStatic](mw.GameObject.md#isstatic)**(): `boolean` <br> 获取对象是否静态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地transform|
 | **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[sourceAssetGuid](mw.GameObject.md#sourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
-| **[useUpdate](mw.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界transform|
 :::
 
@@ -89,51 +87,50 @@ export default class EffectExample extends mw.Script {
 | Methods |
 | :-----|
 | **[forceStop](mw.Effect.md#forcestop)**(): `void` <br> 强制停止特效，所有粒子全部销毁|
-| **[play](mw.Effect.md#play)**(`OnSuccess?`: () => `void`): `void` <br> 播放特效|
+| **[play](mw.Effect.md#play)**(`onSuccess?`: () => `void`): `void` <br> 播放特效|
 | **[setColor](mw.Effect.md#setcolor)**(`parameterName`: `string`, `value`: [`LinearColor`](mw.LinearColor.md)): `void` <br> 设置特效颜色参数值|
-| **[setColorRandom](mw.Effect.md#setcolorrandom)**(`parameterName`: `string`, `valueMax`: [`LinearColor`](mw.LinearColor.md), `valueMin`: [`LinearColor`](mw.LinearColor.md)): `void` <br> 设置特效颜色参数随机|
+| **[setColorRandom](mw.Effect.md#setcolorrandom)**(`parameterName`: `string`, `maxValue`: [`LinearColor`](mw.LinearColor.md), `minValue`: [`LinearColor`](mw.LinearColor.md)): `void` <br> 设置特效颜色参数随机|
 | **[setCullDistance](mw.Effect.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
 | **[setFloat](mw.Effect.md#setfloat)**(`parameterName`: `string`, `value`: `number`): `void` <br> 设置特效标量参数值|
-| **[setFloatRandom](mw.Effect.md#setfloatrandom)**(`parameterName`: `string`, `valueMax`: `number`, `valueMin`: `number`): `void` <br> 设置特效标量参数随机|
+| **[setFloatRandom](mw.Effect.md#setfloatrandom)**(`parameterName`: `string`, `maxValue`: `number`, `minValue`: `number`): `void` <br> 设置特效标量参数随机|
 | **[setVector](mw.Effect.md#setvector)**(`parameterName`: `string`, `value`: [`Vector`](mw.Vector.md)): `void` <br> 设置特效向量参数值|
-| **[setVectorRandom](mw.Effect.md#setvectorrandom)**(`parameterName`: `string`, `valueMax`: [`Vector`](mw.Vector.md), `valueMin`: [`Vector`](mw.Vector.md)): `void` <br> 设置特效向量参数范围随机，在一定范围内取向量的随机值|
+| **[setVectorRandom](mw.Effect.md#setvectorrandom)**(`parameterName`: `string`, `maxValue`: [`Vector`](mw.Vector.md), `minValue`: [`Vector`](mw.Vector.md)): `void` <br> 设置特效向量参数范围随机，在一定范围内取向量的随机值|
+| **[stop](mw.Effect.md#stop)**(): `void` <br> 停止特效，不影响已经生成的粒子|
 
 
 ::: details 点击查看继承
 | Methods |
 | :-----|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> GameObject准备好后返回|
-| **[attachToGameObject](mw.GameObject.md#attachtogameobject)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 将物体附着到指定物体上|
-| **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): `undefined` \| [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
-| **[getChildrenBoxCenter](mw.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScriptByGuid](mw.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
@@ -144,6 +141,87 @@ export default class EffectExample extends mw.Script {
 特效播放完毕事件
 
 ## Accessors
+___
+
+### loop <Score text="loop" /> 
+
+• `get` **loop**(): `boolean` <Badge type="tip" text="client" />
+
+获取特效是否是循环，不再生效
+
+
+#### Returns
+
+`boolean`
+
+是否循环
+
+• `set` **loop**(`NewLoop`): `void` <Badge type="tip" text="client" />
+
+设置特效循环，不再生效
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `NewLoop` | `boolean` | 是否循环 |
+
+
+___
+
+### loopCount <Score text="loopCount" /> 
+
+• `get` **loopCount**(): `number` <Badge type="tip" text="client" />
+
+获取特效循环次数，不再生效
+
+
+#### Returns
+
+`number`
+
+循环的次数
+
+• `set` **loopCount**(`NewLoopCount`): `void` <Badge type="tip" text="client" />
+
+设置特效循环次数，不再生效
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `NewLoopCount` | `number` | 循环的次数 |
+
+
+___
+
+### maskcolor <Score text="maskcolor" /> 
+
+• `get` **maskcolor**(): [`LinearColor`](mw.LinearColor.md) <Badge type="tip" text="client" />
+
+获取特效遮罩颜色
+
+
+#### Returns
+
+[`LinearColor`](mw.LinearColor.md)
+
+特效当前遮罩颜色
+
+• `set` **maskcolor**(`effectColor`): `void` <Badge type="tip" text="client" />
+
+设置特效遮罩颜色
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `effectColor` | [`LinearColor`](mw.LinearColor.md) |
+
+
 ___
 
 ### timeLength <Score text="timeLength" /> 
@@ -158,43 +236,6 @@ ___
 `number`
 
 特效实际播放时长
-
-___
-
-### translucentSortPriority <Score text="translucentSortPriority" /> 
-
-• `get` **translucentSortPriority**(): `number` <Badge type="tip" text="client" />
-
-获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
-
-
-::: warning Precautions
-
-请在客户端调用
-
-:::
-
-#### Returns
-
-`number`
-
-• `set` **translucentSortPriority**(`value`): `void` <Badge type="tip" text="client" />
-
-设置渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
-
-
-::: warning Precautions
-
-请在客户端调用
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  新的渲染层级，值范围为 [0, 31] |
-
 
 
 ## Methods
@@ -212,7 +253,7 @@ ___
 
 ### play <Score text="play" /> 
 
-• **play**(`OnSuccess?`): `void` <Badge type="tip" text="client" />
+• **play**(`onSuccess?`): `void` <Badge type="tip" text="client" />
 
 播放特效
 
@@ -221,7 +262,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `OnSuccess?` | () => `void` | 特效播放完成后回调 default: null |
+| `onSuccess?` | () => `void` | 特效播放完成后回调 default: null |
 
 
 ___
@@ -245,7 +286,7 @@ ___
 
 ### setColorRandom <Score text="setColorRandom" /> 
 
-• **setColorRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+• **setColorRandom**(`parameterName`, `maxValue`, `minValue`): `void` <Badge type="tip" text="client" />
 
 设置特效颜色参数随机
 
@@ -255,8 +296,8 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `parameterName` | `string` | 参数名 |
-| `valueMax` | [`LinearColor`](mw.LinearColor.md) | 颜色变量最大值 |
-| `valueMin` | [`LinearColor`](mw.LinearColor.md) | 颜色变量最小值 |
+| `maxValue` | [`LinearColor`](mw.LinearColor.md) | 颜色变量最大值 |
+| `minValue` | [`LinearColor`](mw.LinearColor.md) | 颜色变量最小值 |
 
 
 ___
@@ -302,7 +343,7 @@ ___
 
 ### setFloatRandom <Score text="setFloatRandom" /> 
 
-• **setFloatRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+• **setFloatRandom**(`parameterName`, `maxValue`, `minValue`): `void` <Badge type="tip" text="client" />
 
 设置特效标量参数随机
 
@@ -312,8 +353,8 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `parameterName` | `string` | 参数名 |
-| `valueMax` | `number` | 标量最大值 |
-| `valueMin` | `number` | 标量最小值 |
+| `maxValue` | `number` | 标量最大值 |
+| `minValue` | `number` | 标量最小值 |
 
 
 ___
@@ -337,7 +378,7 @@ ___
 
 ### setVectorRandom <Score text="setVectorRandom" /> 
 
-• **setVectorRandom**(`parameterName`, `valueMax`, `valueMin`): `void` <Badge type="tip" text="client" />
+• **setVectorRandom**(`parameterName`, `maxValue`, `minValue`): `void` <Badge type="tip" text="client" />
 
 设置特效向量参数范围随机，在一定范围内取向量的随机值
 
@@ -347,6 +388,16 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `parameterName` | `string` | 参数名 |
-| `valueMax` | [`Vector`](mw.Vector.md) | 向量最大值 |
-| `valueMin` | [`Vector`](mw.Vector.md) | 向量最小值 |
+| `maxValue` | [`Vector`](mw.Vector.md) | 向量最大值 |
+| `minValue` | [`Vector`](mw.Vector.md) | 向量最小值 |
+
+
+___
+
+### stop <Score text="stop" /> 
+
+• **stop**(): `void` <Badge type="tip" text="client" />
+
+停止特效，不影响已经生成的粒子
+
 

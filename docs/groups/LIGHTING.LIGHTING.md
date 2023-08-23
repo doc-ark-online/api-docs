@@ -5,13 +5,13 @@ LIGHTING
 ## Table of contents
 | Classes |
 | :-----|
-| [DirectionalLight](../classes/mw.DirectionalLight.md) <br> 平行光 |
-| [ExponentialHeightFog](../classes/mw.ExponentialHeightFog.md) <br> 环境雾 |
+| [Fog](../classes/mw.Fog.md) <br> 环境雾 |
+| [Lighting](../classes/mw.Lighting.md) <br> 光照 |
 | [PointLight](../classes/mw.PointLight.md) <br> 点光源 |
-| [PostProcess](../classes/mw.PostProcess.md) <br> 后处理对象 |
+| [PostProcess](../classes/mw.PostProcess.md) <br> 后处理 |
 | [PostProcessConfig](../classes/mw.PostProcessConfig.md) <br> 后处理对象属性配置 |
+| [PostProcessObject](../classes/mw.PostProcessObject.md) <br> 后处理对象 |
 | [SkyBox](../classes/mw.SkyBox.md) <br> 天空球 |
-| [SkyLight](../classes/mw.SkyLight.md) <br> 环境光 |
 
 
 | Enums |

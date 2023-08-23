@@ -36,7 +36,7 @@
 
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Add"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Class
+@Component
 export default class Example_CharacterDecoration_Add extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -91,7 +91,7 @@ ___
 
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Clear"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Class
+@Component
 export default class Example_CharacterDecoration_Clear extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -145,7 +145,7 @@ ___
 
 使用示例:将使用到的资源:"60858"拖入优先加载栏。创建一个名为"Example_CharacterDecoration_Delete"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，给角色插槽【头顶光圈】添加1个挂件。按下键盘“2”，删除角色插槽【头顶光圈】的第一个挂件。按下键盘“3”，删除角色插槽【头顶光圈】的所有挂件。代码如下:
 ```ts
-@Class
+@Component
 export default class Example_CharacterDecoration_Delete extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {

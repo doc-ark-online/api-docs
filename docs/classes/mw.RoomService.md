@@ -15,6 +15,7 @@ MGS以及玩家信息、数据、头像等相关API
 | **[getRoomId](mw.RoomService.md#getroomid)**(): `string` <br> 获取游戏的RoomMgr分配的RoomId|
 | **[isSupported](mw.RoomService.md#issupported)**(): `boolean` <br> 获取当前环境是否支持MGS功能|
 | **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void` <br> 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
+| **[kick](mw.RoomService.md#kick)**(`player`: `number` \, `message?`: `string`): `void` <br> 将某一玩家踢下线|
 | **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void` <br> 注册聊天回调|
 | **[reportLogInfo](mw.RoomService.md#reportloginfo)**(`eventName`: `string`, `eventDesc`: `string`, `jsonData`: `string`): `void` <br> 游戏方调用reportLogInfo接口上报运营所需的埋点数据|
 | **[requestSaveImage](mw.RoomService.md#requestsaveimage)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void` <br> 向233发起imageModify并获得回调|
@@ -22,7 +23,7 @@ MGS以及玩家信息、数据、头像等相关API
 | **[requestShareScreenShot](mw.RoomService.md#requestsharescreenshot)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `mgsData`: `string`): `void` <br> 向233发起shareScreenshot并获得回调|
 | **[showExitGameDialog](mw.RoomService.md#showexitgamedialog)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void` <br> 游戏方可调用showExitGameDialog来显示退出游戏确认框|
 | **[showFloatingLayer](mw.RoomService.md#showfloatinglayer)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `tab`: `number`): `void` <br> 向233发起showFloatingLayer来展开悬浮层的内容，可展开聊天/好友功能|
-| **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `openId`: `string`): `void` <br> 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
+| **[showUserProfile](mw.RoomService.md#showuserprofile)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse), `userId`: `string`): `void` <br> 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗|
 
 ## Methods
 
@@ -63,7 +64,7 @@ ___
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
 ```ts
-@Core.Component
+@Component
 export default class RoomExample extends mw.Script {
 
     protected onStart(): void {
@@ -96,7 +97,7 @@ ___
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
 ```ts
-@Core.Component
+@Component
 export default class RoomExample extends mw.Script {
 
     protected onStart(): void {
@@ -123,7 +124,7 @@ ___
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
 ```ts
-@Core.Component
+@Component
 export default class RoomExample extends mw.Script {
 
     protected onStart(): void {
@@ -159,6 +160,50 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `resp` | [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
+
+
+___
+
+### kick <Score text="kick" /> 
+
+• `Static` **kick**(`player`, `message?`): `void` <Badge type="tip" text="other" />
+
+将某一玩家踢下线
+
+服务端调用
+
+使用示例:
+```ts
+@Component
+export default class NewScript extends Script {
+
+    protected onStart(): void {
+        if(SystemUtil.isServer()) {
+            Player.spawnDefaultCharacter();
+        }
+
+       let player =  mw.Player.asyncGetLocalPlayer()[0];
+
+        if(SystemUtil.isClient()) {
+           mw.InputUtil.onKeyDown(Keys.G,()=>{
+             mw.Event.dispatchToServer(`AddPlayerPassable`,player);
+           })
+        }
+       if(SystemUtil.isServer()) {
+           mw.Event.addClientListener(`AddPlayerPassable`,(player : Player)=>{
+              RoomService.kick(player);
+           })
+        }
+   }
+}
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | `number` \| [`Player`](mw.Player.md) | 踢下线的Player |
+| `message?` | `string` | usage：踢出玩家时触发退出UI弹出的信息 |
 
 
 ___
@@ -325,7 +370,7 @@ ___
 
 ### showUserProfile <Score text="showUserProfile" /> 
 
-• `Static` **showUserProfile**(`resp`, `openId`): `void` 
+• `Static` **showUserProfile**(`resp`, `userId`): `void` 
 
 若需要查看233玩家的资料信息,可通过调用showUserProfile进行查看,SDK会弹出资料卡片弹窗
 
@@ -341,5 +386,5 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `resp` | [`MGSResponse`](../modules/Core.mw.md#mgsresponse) | 233的回调 |
-| `openId` | `string` | 要显示的用户的openId |
+| `userId` | `string` | 要显示的用户的userId |
 

@@ -41,7 +41,7 @@ this.stanceProxy.stop();
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_AssetId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_SubStance_AssetId extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -101,7 +101,7 @@ ___
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_SubStance_BlendMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -157,7 +157,7 @@ export default class Example_SubStance_BlendMode extends Script {
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_SubStance_BlendMode extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -218,7 +218,7 @@ export default class Example_SubStance_BlendMode extends Script {
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_SubStance_Play extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -278,7 +278,7 @@ ___
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 ```ts
-@Class
+@Component
 export default class Example_SubStance_Stop extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {

@@ -22,11 +22,11 @@
 
 | Methods |
 | :-----|
-| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `void` <br> 添加一个监听方法(有重复过滤)|
+| **[add](mw.Action.md#add)**(`fn`: `Function`, `thisArg?`: `any`): `number` <br> 添加一个监听方法(有重复过滤)|
 | **[call](mw.Action.md#call)**(`...params`: `any`): `void` <br> 执行|
 | **[clear](mw.Action.md#clear)**(): `void` <br> 清除所有监听|
 | **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean` <br> 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `Function`, `thisArg`: `any`): `void` <br> 移除一个监听方法|
+| **[remove](mw.Action.md#remove)**(`fn`: `number` \, `thisArg?`: `any`): `void` <br> 移除一个监听方法|
 
 ## Accessors
 
@@ -45,7 +45,7 @@
 
 ### add <Score text="add" /> 
 
-• **add**(`fn`, `thisArg?`): `void` 
+• **add**(`fn`, `thisArg?`): `number` 
 
 添加一个监听方法(有重复过滤)
 
@@ -57,6 +57,11 @@
 | `fn` | `Function` |  方法 |
 | `thisArg?` | `any` |  域 default: undefined |
 
+#### Returns
+
+`number`
+
+本次监听的唯一标识，可用于remove。如果返回-1，则说明这个方法之前添加过，不会重复添加
 
 ___
 
@@ -110,7 +115,7 @@ ___
 
 ### remove <Score text="remove" /> 
 
-• **remove**(`fn`, `thisArg`): `void` 
+• **remove**(`fn`, `thisArg?`): `void` 
 
 移除一个监听方法
 
@@ -119,6 +124,6 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `fn` | `Function` |  方法 |
-| `thisArg` | `any` |  域 |
+| `fn` | `number` \| `Function` |  方法\|监听唯一标识 |
+| `thisArg?` | `any` |  域，fn为number时不用写 default: undefined |
 

@@ -12,11 +12,9 @@ Enums
 | [AnimSlot](enums/mw.AnimSlot.md) | 动画插槽 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [AnimationMode](enums/mw.AnimationMode.md) | 动画模式 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [AppearanceType](enums/mw.AppearanceType.md) | 形象类型 | [AVATAR](groups/AVATAR.AVATAR.md) |
-| [AreaClass](enums/mw.AreaClass.md) | 寻路区域屏障寻路计算类型 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [AssetType](enums/mw.AssetType.md) | 资源类型 | [TYPE](groups/TYPE.TYPE.md) |
 | [AttenuationDistanceModel](enums/mw.AttenuationDistanceModel.md) | 音效衰减函数模型 | [SOUNDS](groups/SOUNDS.SOUNDS.md) |
 | [AttenuationShape](enums/mw.AttenuationShape.md) | 音效衰减形状 | [SOUNDS](groups/SOUNDS.SOUNDS.md) |
-| [AudioPlayState](enums/mw.AudioPlayState.md) | 音效播放状态 | [SOUNDS](groups/SOUNDS.SOUNDS.md) |
 
 
 ## B
@@ -33,10 +31,11 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [CameraControlType](enums/mw.CameraControlType.md) | 相机控制模式 | [UI](groups/UI.UI.md) |
-| [CameraLocationMode](enums/mw.CameraLocationMode.md) | 摄像机位置模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [CameraPositionMode](enums/mw.CameraPositionMode.md) | 摄像机位置模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [CameraPreset](enums/mw.CameraPreset.md) | 摄像机模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [CameraProjectionMode](enums/mw.CameraProjectionMode.md) | 摄像机镜头模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [CameraRotationMode](enums/mw.CameraRotationMode.md) | 摄像机旋转模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [CameraSwitchBlendFunction](enums/mw.CameraSwitchBlendFunction.md) | 切换摄像机时运用的混合函数 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [CharacterTemplate](enums/mw.CharacterTemplate.md) | 角色体型 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterType](enums/mw.CharacterType.md) | 形象类型 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CollisionStatus](enums/mw.CollisionStatus.md) | 碰撞属性状态 | [TYPE](groups/TYPE.TYPE.md) |
@@ -122,6 +121,7 @@ Enums
 ## N
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [NavModifierType](enums/mw.NavModifierType.md) | 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [NetStatus](enums/mw.NetStatus.md) | 同步状态 | [TYPE](groups/TYPE.TYPE.md) |
 
 
@@ -138,9 +138,7 @@ Enums
 | :-----| :-----| :-----|
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [ProgressBarFillType](enums/mw.ProgressBarFillType.md) | 进度条填充规则 | [UI](groups/UI.UI.md) |
-| [ProjectileAccelerationEnableMode](enums/mw.ProjectileAccelerationEnableMode.md) | 投掷物加速启用模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [ProjectileCollisionMode](enums/mw.ProjectileCollisionMode.md) | 投掷物碰撞反馈模式 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [ProjectileLineStyle](enums/mw.ProjectileLineStyle.md) | 投掷物轨迹绘制的显示风格 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ProjectileMovementStatus](enums/mw.ProjectileMovementStatus.md) | 投掷物移动状态 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PropertyStatus](enums/mw.PropertyStatus.md) | 属性状态 | [TYPE](groups/TYPE.TYPE.md) |
 
 
@@ -162,8 +160,8 @@ Enums
 | [SlideMethod](enums/mw.SlideMethod.md) | 进度条滑动的方式 | [UI](groups/UI.UI.md) |
 | [SomatotypeV1](enums/mw.SomatotypeV1.md) | V1角色体型 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [SomatotypeV2](enums/mw.SomatotypeV2.md) | 角色体型 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [SoundPlayState](enums/mw.SoundPlayState.md) | 音效播放状态 | [SOUNDS](groups/SOUNDS.SOUNDS.md) |
 | [StanceBlendMode](enums/mw.StanceBlendMode.md) | 姿态混合模式 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
-| [SwitchCameraBlendFunction](enums/mw.SwitchCameraBlendFunction.md) | 切换摄像机时运用的混合函数 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## T

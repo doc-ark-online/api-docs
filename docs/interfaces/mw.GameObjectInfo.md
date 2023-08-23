@@ -8,19 +8,10 @@
 
 | Properties |
 | :-----|
-| **[guid](mw.GameObjectInfo.md#guid)**: `string` <br> 资源guid或物体guid|
 | **[replicates](mw.GameObjectInfo.md#replicates)**: `boolean` <br> 是否同步|
 | **[transform](mw.GameObjectInfo.md#transform)**: [`Transform`](../classes/mw.Transform.md) <br> transform|
 
 ## Properties
-
-### guid <Score text="guid" /> 
-
-• `Optional` **guid**: `string`
-
-资源guid或物体guid
-
-___
 
 ### replicates <Score text="replicates" /> 
 

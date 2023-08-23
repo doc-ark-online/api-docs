@@ -8,6 +8,10 @@ UI的驱动脚本基类
 
 - **`UIScript`**
 
+  ↳ [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)
+
+  ↳ [`ILeaderboardPanelView`](../interfaces/mwext.ILeaderboardPanelView.md)
+
   ↳ [`BaseView`](mwext.BaseView.md)
 
 ## Table of contents
@@ -16,7 +20,7 @@ UI的驱动脚本基类
 | :-----|
 | **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean` <br> 是否能触发onUpdate函数|
 | **[fullScreen](mw.UIScript.md#fullscreen)**(`inFull`: `boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
-| **[layer](mw.UIScript.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，|
+| **[layer](mw.UIScript.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，|
 | **[rootCanvas](mw.UIScript.md#rootcanvas)**(): [`Canvas`](mw.Canvas.md) <br> 获取UI的根Canvas节点|
 | **[uiObject](mw.UIScript.md#uiobject)**(): [`Widget`](mw.Widget.md) <br> 获取脚本挂载的UI对象|
 | **[uiWidgetBase](mw.UIScript.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md) <br> 转化UIObject 为指定UserWidget对象|
@@ -84,13 +88,13 @@ ___
 
 • `get` **layer**(): `number` <Badge type="tip" text="client" />
 
-获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
+获取UI的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
 
 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
 ```ts
-mw.UIManager.Instance.show(UIScript,UIScript.layer)
+UIService.show(UIScript,UIScript.layer)
 // 内置定义好的层级
 [
 mw.UILayerScene,  //场景层 zOrder开始于0
@@ -100,7 +104,7 @@ mw.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOr
 mw.UILayerTop     //顶层 zOrder开始于400000
 mw.UILayerDialog  //对话层 zOrder开始于500000
 mw.UILayerSystem  //系统层 zOrder开始于600000
-mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UI.UIManager.Instance.addUILayerMap zOrder开始于700000
+mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UIService.addUILayerMap zOrder开始于700000
 ]
 ```
 
@@ -112,7 +116,7 @@ Layer层级
 
 • `set` **layer**(`inLayer`): `void` <Badge type="tip" text="client" />
 
-设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，
+设置UI的所在的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，
 会根据Layer层级动态设置zOrder，每一次调用都会重新计算当前layer的新zOrder，确保UI位于当前层级的顶端
 
 
@@ -128,7 +132,7 @@ mw.UILayerOwn     //独享层(调用此层会自动隐藏Bottom和Middle层) zOr
 mw.UILayerTop     //顶层 zOrder开始于400000
 mw.UILayerDialog  //对话层 zOrder开始于500000
 mw.UILayerSystem  //系统层 zOrder开始于600000
-mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UI.UIManager.Instance.addUILayerMap zOrder开始于700000
+mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UIService.addUILayerMap zOrder开始于700000
 ]
 ```
 

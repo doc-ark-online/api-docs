@@ -23,7 +23,7 @@
 
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
 ```ts
-@Class
+@Component
 export default class SelectionExample extends Script {
 
     touchIndexesStart: Map<number, Vector2> = new Map<number, Vector2>();
@@ -81,7 +81,7 @@ ___
 
 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
 ```ts
-@Class
+@Component
 export default class SelectionExample extends Script {
 
     touchIndexesStart: Map<number, Vector2> = new Map<number, Vector2>();
@@ -107,7 +107,7 @@ export default class SelectionExample extends Script {
 
     //在场景中随机生成一些物体，用于框选
     private creatObjs() {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         for (let i = 0;
 i < 50;
 i++) {

@@ -8,8 +8,8 @@
 
 | Methods |
 | :-----|
-| **[asyncGetData](mw.DataStorage.md#asyncgetdata)**(`key`: `string`): `Promise`<`any`\> <br> 异步获取自定义数据|
-| **[asyncGetOtherGameData](mw.DataStorage.md#asyncgetothergamedata)**(`gameId`: `string`, `key`: `string`): `Promise`<`any`\> <br> 异步获取其他游戏保存的数据|
+| **[asyncGetData](mw.DataStorage.md#asyncgetdata)**(`key`: `string`): `Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\> <br> 异步获取自定义数据|
+| **[asyncGetOtherGameData](mw.DataStorage.md#asyncgetothergamedata)**(`gameId`: `string`, `key`: `string`): `Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\> <br> 异步获取其他游戏保存的数据|
 | **[asyncRemoveData](mw.DataStorage.md#asyncremovedata)**(`key`: `string`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步删除自定义数据|
 | **[asyncSetData](mw.DataStorage.md#asyncsetdata)**(`key`: `string`, `value`: `any`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
 | **[asyncSetOtherGameData](mw.DataStorage.md#asyncsetothergamedata)**(`gameId`: `string`, `key`: `string`, `value`: `any`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步设置其他游戏保存的数据|
@@ -20,7 +20,7 @@
 
 ### asyncGetData <Score text="asyncGetData" /> 
 
-• `Static` **asyncGetData**(`key`): `Promise`<`any`\> <Badge type="tip" text="server" />
+• `Static` **asyncGetData**(`key`): `Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\> <Badge type="tip" text="server" />
 
 异步获取自定义数据
 
@@ -33,7 +33,7 @@
 
 #### Returns
 
-`Promise`<`any`\>
+`Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\>
 
 之前保存的自定义数据
 
@@ -41,7 +41,7 @@ ___
 
 ### asyncGetOtherGameData <Score text="asyncGetOtherGameData" /> 
 
-• `Static` **asyncGetOtherGameData**(`gameId`, `key`): `Promise`<`any`\> <Badge type="tip" text="server" />
+• `Static` **asyncGetOtherGameData**(`gameId`, `key`): `Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\> <Badge type="tip" text="server" />
 
 异步获取其他游戏保存的数据
 
@@ -55,7 +55,7 @@ ___
 
 #### Returns
 
-`Promise`<`any`\>
+`Promise`<[`DataStorageResult`](../interfaces/mw.DataStorageResult.md)\>
 
 其他游戏保存的数据
 

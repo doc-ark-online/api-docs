@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponRecoilForceSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -372,7 +372,7 @@ ___
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下:
 ```ts
-@Core.Component
+@Component
 export default class HotWeaponRecoilForceSample2 extends mw.Script {
     protected onStart(): void {
         // 构造

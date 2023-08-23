@@ -1,18 +1,18 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / ModuleManager
+[EXTENSION](../groups/Extension.EXTENSION.md) / ModuleService
 
-# ModuleManager <Badge type="tip" text="Class" /> <Score text="ModuleManager" />
+# ModuleService <Badge type="tip" text="Class" /> <Score text="ModuleService" />
 
 模块管理
 
 使用示例:创建一个名为ModuleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会先输出hud模块开始的日志，再输出player模块开始的日志，按下F键和G键你在客户端日志都会看到player模块的信息
 ```ts
-@Class
+@Component
 export default class ModuleExample extends Script {
 
     protected onStart(): void {
-        ModuleManager.setClientFirstStartModule(HudModuleC);
-        ModuleManager.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
-        ModuleManager.registerModule(HudModuleS, HudModuleC, HudModuleData);
+        ModuleService.setClientFirstStartModule(HudModuleC);
+        ModuleService.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        ModuleService.registerModule(HudModuleS, HudModuleC, HudModuleData);
     }
 
 }
@@ -40,7 +40,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
     }
 
     //通过callExecute调用
-    private traceHudExecute(testNum: number, testPos: mw.Vector, testString: string): void {
+    private traceHudExecute(testNum: number, testPos: Vector, testString: string): void {
         console.log("-----------客户端-hud模块被调用-----------");
         console.log("testNum:" + testNum);
         console.log("testPos:" + testPos.x, testPos.y, testPos.z);
@@ -48,7 +48,7 @@ class HudModuleC extends ModuleC<HudModuleS, HudModuleData>{
     }
 
     //直接调用
-    public traceHud(testNum: number, testPos: mw.Vector, testString: string): void {
+    public traceHud(testNum: number, testPos: Vector, testString: string): void {
         console.log("-----------客户端-hud模块被调用-----------");
         console.log("testNum:" + testNum);
         console.log("testPos:" + testPos.x, testPos.y, testPos.z);
@@ -70,11 +70,11 @@ class PlayerModuleC extends ModuleC<PlayerModuleS, PlayerModuleData>{
         console.log("-----------客户端-player模块开始-----------");
         InputUtil.onKeyDown(Keys.F, () => {
             let playerData = this.data;
-            ModuleManager.callExecute(HudModuleC, 1, playerData.getLevel(), playerData.getPos(), playerData.getName());
+            ModuleService.callExecute(HudModuleC, 1, playerData.getLevel(), playerData.getPos(), playerData.getName());
         })
         InputUtil.onKeyDown(Keys.G, () => {
             let playerData = this.data;
-            let hudModuleC = ModuleManager.getModule(HudModuleC);
+            let hudModuleC = ModuleService.getModule(HudModuleC);
             hudModuleC.traceHud(playerData.getLevel(), playerData.getPos(), playerData.getName());
         })
     }
@@ -83,18 +83,18 @@ class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
 
 }
 class PlayerModuleData extends Subdata {
-    @Decorator.saveProperty
+    @Decorator.persistence()
     private level: number = 1;
-    @Decorator.saveProperty
-    private pos: mw.Vector = new mw.Vector(0, 0, 0);
-    @Decorator.saveProperty
+    @Decorator.persistence()
+    private pos: Vector = new Vector(0, 0, 0);
+    @Decorator.persistence()
     private name: string = "test";
 
     public getLevel(): number {
         return this.level;
     }
 
-    public getPos(): mw.Vector {
+    public getPos(): Vector {
         return this.pos;
     }
 
@@ -108,12 +108,12 @@ class PlayerModuleData extends Subdata {
 
 | Methods |
 | :-----|
-| **[callExecute](mwext.ModuleManager.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>, `type?`: `number`, `...params`: `any`[]): `any` <br> 调用一个模块的onExecute方法|
-| **[getModule](mwext.ModuleManager.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
-| **[getUpdateTimeLog](mwext.ModuleManager.md#getupdatetimelog)**(): `string` <br> 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
-| **[ready](mwext.ModuleManager.md#ready)**(): `Promise`<`void`\> <br> 判断ModuleManager是否就绪的异步方法|
-| **[registerModule](mwext.ModuleManager.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\>): [`ModuleManager`](mwext.ModuleManager.md) <br> 注册模块|
-| **[setClientFirstStartModule](mwext.ModuleManager.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleManager`](mwext.ModuleManager.md) <br> 设置客户端第一个要启动的模块|
+| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>, `type?`: `number`, `...params`: `any`[]): `any` <br> 调用一个模块的onExecute方法|
+| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \ <br> 根据类型获取一个模块|
+| **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string` <br> 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
+| **[ready](mwext.ModuleService.md#ready)**(): `Promise`<`void`\> <br> 注册的模块是否就绪|
+| **[registerModule](mwext.ModuleService.md#registermodule)**(`ServerModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>\>, `ClientModuleType`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `ModuleDataType?`: [`TypeName`](../interfaces/mw.TypeName.md)<[`Subdata`](mwext.Subdata.md)\>): [`ModuleService`](mwext.ModuleService.md) <br> 注册模块|
+| **[setClientFirstStartModule](mwext.ModuleService.md#setclientfirststartmodule)**(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<[`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): [`ModuleService`](mwext.ModuleService.md) <br> 设置客户端第一个要启动的模块|
 
 ## Methods
 
@@ -182,7 +182,7 @@ ___
 
 ::: warning Precautions
 
-本方法只有开启ModuleManager的debug才会生效，此方法有性能消耗，只用作性能分析，正式版本不要使用
+本方法只有开启ModuleService的debug才会生效，此方法有性能消耗，只用作性能分析，正式版本不要使用
 
 :::
 
@@ -198,7 +198,13 @@ ___
 
 • `Static` **ready**(): `Promise`<`void`\> 
 
-判断ModuleManager是否就绪的异步方法
+注册的模块是否就绪
+
+::: warning Precautions
+
+只有在onStart生命周期注册的模块才会有效，而且不能是异步等待后注册的模块
+
+:::
 
 
 #### Returns
@@ -211,7 +217,7 @@ ___
 
 ### registerModule <Score text="registerModule" /> 
 
-• `Static` **registerModule**(`ServerModuleType`, `ClientModuleType`, `ModuleDataType?`): [`ModuleManager`](mwext.ModuleManager.md) 
+• `Static` **registerModule**(`ServerModuleType`, `ClientModuleType`, `ModuleDataType?`): [`ModuleService`](mwext.ModuleService.md) 
 
 注册模块
 
@@ -226,15 +232,15 @@ ___
 
 #### Returns
 
-[`ModuleManager`](mwext.ModuleManager.md)
+[`ModuleService`](mwext.ModuleService.md)
 
-ModuleManager自身，可用作链式调用
+ModuleService自身，可用作链式调用
 
 ___
 
 ### setClientFirstStartModule <Score text="setClientFirstStartModule" /> 
 
-• `Static` **setClientFirstStartModule**(`ModuleClass`): [`ModuleManager`](mwext.ModuleManager.md) <Badge type="tip" text="client" />
+• `Static` **setClientFirstStartModule**(`ModuleClass`): [`ModuleService`](mwext.ModuleService.md) <Badge type="tip" text="client" />
 
 设置客户端第一个要启动的模块
 
@@ -247,6 +253,6 @@ ___
 
 #### Returns
 
-[`ModuleManager`](mwext.ModuleManager.md)
+[`ModuleService`](mwext.ModuleService.md)
 
-ModuleManager自身，可用作链式调用
+ModuleService自身，可用作链式调用

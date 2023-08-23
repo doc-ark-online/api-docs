@@ -53,7 +53,6 @@ Classes
 | [DataStorage](classes/mw.DataStorage.md) | 数据存储 | [DATA](groups/DATA.DATA.md) |
 | [DebugService](classes/mw.DebugService.md) | debug调试服务 | [DEBUGGING](groups/DEBUGGING.DEBUGGING.md) |
 | [Delegate](classes/mw.Delegate.md) | 委托 | [TYPE](groups/TYPE.TYPE.md) |
-| [DirectionalLight](classes/mw.DirectionalLight.md) | 平行光 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [DragDropOperation](classes/mw.DragDropOperation.md) | UI 拖拽事件 | [UI](groups/UI.UI.md) |
 | [DragDropPayLoad](classes/mw.DragDropPayLoad.md) | 拖拽事件数据传递类 | [UI](groups/UI.UI.md) |
 
@@ -67,13 +66,13 @@ Classes
 | [Event](classes/mw.Event.md) | 事件 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [EventListener](classes/mw.EventListener.md) | 事件监听器 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [EventReply](classes/mw.EventReply.md) | 事件回复 | [UI](groups/UI.UI.md) |
-| [ExponentialHeightFog](classes/mw.ExponentialHeightFog.md) | 环境雾 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 
 
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [FocusEvent](classes/mw.FocusEvent.md) | 焦点事件 | [UI](groups/UI.UI.md) |
+| [Fog](classes/mw.Fog.md) | 环境雾 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 
 
 ## G
@@ -131,6 +130,7 @@ Classes
 | [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [Lighting](classes/mw.Lighting.md) | 光照 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [LinearColor](classes/mw.LinearColor.md) | 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0 | [TYPE](groups/TYPE.TYPE.md) |
 | [LocaleUtil](classes/mw.LocaleUtil.md) | 地区本地化工具类 | [LOCALIZATION](groups/LOCALIZATION.LOCALIZATION.md) |
 
@@ -146,8 +146,8 @@ Classes
 | [Matrix4x4](classes/mw.Matrix4x4.md) | 四维矩阵 | [TYPE](groups/TYPE.TYPE.md) |
 | [Model](classes/mw.Model.md) | 接口主要为物理参数设置接口与材质参数设置接口 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [ModuleC](classes/mwext.ModuleC.md) | 客户端模块的基类 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
-| [ModuleManager](classes/mwext.ModuleManager.md) | 模块管理 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [ModuleS](classes/mwext.ModuleS.md) | 服务端模块的基类 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ModuleService](classes/mwext.ModuleService.md) | 模块管理 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [MulticastDelegate](classes/mw.MulticastDelegate.md) | 多播委托接口 | [TYPE](groups/TYPE.TYPE.md) |
 | [MulticastGameObjectDelegate](classes/mw.MulticastGameObjectDelegate.md) | 广播代理 | [TYPE](groups/TYPE.TYPE.md) |
 
@@ -157,13 +157,14 @@ Classes
 | :-----| :-----| :-----|
 | [NFTUtil](classes/mw.NFTUtil.md) | NFT资产交易系统。 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
 | [NavModifierVolume](classes/mw.NavModifierVolume.md) | 寻路动态修饰区 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [NavigationUtil](classes/mw.NavigationUtil.md) | 路径查询。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Navigation](classes/mw.Navigation.md) | 路径查询。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## O
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ObjPool](classes/mwext.ObjPool.md) | 对象池 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ObjectLauncher](classes/mw.ObjectLauncher.md) | 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## P
@@ -176,11 +177,12 @@ Classes
 | [Player](classes/mw.Player.md) | 角色控制 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PointLight](classes/mw.PointLight.md) | 点光源 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [UI](groups/UI.UI.md) |
-| [PostProcess](classes/mw.PostProcess.md) | 后处理对象 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
+| [PostProcess](classes/mw.PostProcess.md) | 后处理 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
+| [PostProcessObject](classes/mw.PostProcessObject.md) | 后处理对象 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [ProgressBar](classes/mw.ProgressBar.md) | UI进度条 | [UI](groups/UI.UI.md) |
-| [ProjectileInst](classes/mw.ProjectileInst.md) | 投掷物 v2 实例 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [ProjectileLauncher](classes/mw.ProjectileLauncher.md) | 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ProjectileInst](classes/mw.ProjectileInst.md) | 投掷物发射器专用实例对象 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ProjectileMovement](classes/mw.ProjectileMovement.md) | 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PurchaseService](classes/mw.PurchaseService.md) | 应用内购服务 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
 
 
@@ -208,7 +210,7 @@ Classes
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [UI](groups/UI.UI.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 选择物体时，描边绘制相关功能 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [SkyBox](classes/mw.SkyBox.md) | 天空球 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
-| [SkyLight](classes/mw.SkyLight.md) | 环境光 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
+| [Skybox-1](classes/mw.Skybox-1.md) |  | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [SlateBrushWithGuid](classes/mw.SlateBrushWithGuid.md) | 贴图信息 | [UI](groups/UI.UI.md) |
 | [SlateColor](classes/mw.SlateColor.md) | UI颜色管理 | [UI](groups/UI.UI.md) |
 | [Sound](classes/mw.Sound.md) | 音效组件 | [SOUND](groups/SOUND.SOUND.md) |
@@ -247,9 +249,9 @@ Classes
 | [UIFontInfo](classes/mw.UIFontInfo.md) | 字体信息 | [UI](groups/UI.UI.md) |
 | [UIHugContent](classes/mw.UIHugContent.md) | 容器自动布局大小适应规则 | [UI](groups/UI.UI.md) |
 | [UILayout](classes/mw.UILayout.md) | 容器自动布局规则 | [UI](groups/UI.UI.md) |
-| [UIManager](classes/mw.UIManager.md) | UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 | [UI](groups/UI.UI.md) |
 | [UIObject](classes/mw.UIObject.md) | UI对象组件 | [UI](groups/UI.UI.md) |
 | [UIScript](classes/mw.UIScript.md) | UI的驱动脚本基类 | [UI](groups/UI.UI.md) |
+| [UIService](classes/mw.UIService.md) | UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 | [UI](groups/UI.UI.md) |
 | [UITransform](classes/mw.UITransform.md) | 节点Transform | [UI](groups/UI.UI.md) |
 | [UIWidget](classes/mw.UIWidget.md) | 世界UI组件 | [UI](groups/UI.UI.md) |
 | [UserWidget](classes/mw.UserWidget.md) | UI控件的集合,预制体UI | [UI](groups/UI.UI.md) |

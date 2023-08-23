@@ -9,7 +9,7 @@
 
 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
 ```ts
-@Class
+@Component
 export default class ClassExample extends Script {
 
     protected onStart(): void {
@@ -32,7 +32,7 @@ export default class ClassExample extends Script {
 | :-----|
 | **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number` <br> 获取当前重力大小|
 | **[getGravityMode](mw.EnvironmentSettings.md#getgravitymode)**(): [`GravityMode`](../enums/mw.GravityMode.md) <br> 获取当前重力模式|
-| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`time`: `number`): `void` <br> 设置世界整体膨胀时间速度|
+| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void` <br> 设置世界整体膨胀时间速度|
 
 ## Methods
 
@@ -68,7 +68,7 @@ ___
 
 ### setGlobalTimeDilation <Score text="setGlobalTimeDilation" /> 
 
-• `Static` **setGlobalTimeDilation**(`time`): `void` <Badge type="tip" text="other" />
+• `Static` **setGlobalTimeDilation**(`timeDilation`): `void` <Badge type="tip" text="other" />
 
 设置世界整体膨胀时间速度
 
@@ -84,5 +84,5 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `time` | `number` | 膨胀时间速度 |
+| `timeDilation` | `number` | 膨胀时间速度 |
 

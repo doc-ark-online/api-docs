@@ -2,31 +2,38 @@ mw
 
 # mw <Badge type="tip" text="Namespace" /> <Score text="mw" />
 
+在调用DataStorage相关接口时，每一个Key的对应值在后端数据服务器的读取和修改都有频率、间隔限制，主要表现在：
+1. 【总频率限制】接口调用时至一分钟前的时间区间内，某个Key的对应值在后端数据服务器上被获取Get、改写Set、删除Remove的总次数不能超过 (60+游戏设定的最大人数×10)次，不管它是在哪个ds服务器被操作的；如果时间区间内超限，请求会失败，然后Set、Remove会返回 FREQUENCY_OVERRUN(操作失败：请求频率超限) 而Get会catch到error timeout。
+2. 【改写间隔限制】对于某个Key的对应值，在后端数据服务器上进行了1次改写Set 或 删除Remove操作后，该Key的对应值将会被锁定6s，在这6s内将无法再被Set、remove，尝试将会返回 FREQUENCY_OVERRUN(操作失败：请求频率超限)，直到6s过去解锁后才可修改。
+::: warning Precautions
+1. 这些限制是后端数据服务器层面针对单个Key来的，每个Key之间的限制互相独立，和DS服务器无关。
+2. Player相关的接口其实也算是一个Key，只不过是和玩家信息强相关的Key，也会受到上述限制；建议用 asyncSetCustomData(属性名+玩家id+其他描述, 要存的值) 代替asyncSetPlayerData(玩家, 要存的值) 来分存玩家相关的需要经常存取数据，以免堵塞。
+3. 对于玩家相关的信息，建议在ts层建立数据缓存，进行一定的数据托管；即通过ts脚本逻辑让DS服务器临时缓存玩家数据，只在初始化的时候进行get，在离线或其他必要时set，以减轻对后端数据服务器的压力，保证稳定性
+:::
+
 ## Table of contents
 
 | Enumerations |
 | :-----|
-| [AbilityStateControlType](../enums/Core.mw.AbilityStateControlType.md) |
 | [AdsState](../enums/mw.AdsState.md) <br> 广告状态，调用show方法的时候可能返回的广告状态|
 | [AdsType](../enums/mw.AdsType.md) <br> 广告类型|
 | [AnimSlot](../enums/mw.AnimSlot.md) <br> 动画插槽|
 | [AnimationMode](../enums/mw.AnimationMode.md) <br> 动画模式|
 | [AppearanceType](../enums/mw.AppearanceType.md) <br> 形象类型|
-| [AreaClass](../enums/mw.AreaClass.md) <br> 寻路区域屏障寻路计算类型|
 | [AssetType](../enums/mw.AssetType.md) <br> 资源类型|
 | [AttenuationDistanceModel](../enums/mw.AttenuationDistanceModel.md) <br> 音效衰减函数模型|
 | [AttenuationShape](../enums/mw.AttenuationShape.md) <br> 音效衰减形状|
-| [AudioPlayState](../enums/mw.AudioPlayState.md) <br> 音效播放状态|
 | [BasicStanceType](../enums/mw.BasicStanceType.md) <br> 基础姿态风格|
 | [BodyPartTypeV1](../enums/mw.BodyPartTypeV1.md) <br> V1角色部位|
 | [ButtonClickMethod](../enums/mw.ButtonClickMethod.md) <br> 按钮点击响应规则|
 | [ButtonPressMethod](../enums/mw.ButtonPressMethod.md) <br> 按钮按压响应规则|
 | [ButtonTouchMethod](../enums/mw.ButtonTouchMethod.md) <br> 按钮触摸响应规则|
 | [CameraControlType](../enums/mw.CameraControlType.md) <br> 相机控制模式|
-| [CameraLocationMode](../enums/mw.CameraLocationMode.md) <br> 摄像机位置模式|
+| [CameraPositionMode](../enums/mw.CameraPositionMode.md) <br> 摄像机位置模式|
 | [CameraPreset](../enums/mw.CameraPreset.md) <br> 摄像机模式|
 | [CameraProjectionMode](../enums/mw.CameraProjectionMode.md) <br> 摄像机镜头模式|
 | [CameraRotationMode](../enums/mw.CameraRotationMode.md) <br> 摄像机旋转模式|
+| [CameraSwitchBlendFunction](../enums/mw.CameraSwitchBlendFunction.md) <br> 切换摄像机时运用的混合函数|
 | [CharacterTemplate](../enums/mw.CharacterTemplate.md) <br> 角色体型|
 | [CharacterType](../enums/mw.CharacterType.md) <br> 形象类型|
 | [CollisionStatus](../enums/mw.CollisionStatus.md) <br> 碰撞属性状态|
@@ -39,8 +46,8 @@ mw
 | [FogPreset](../enums/mw.FogPreset.md) <br> 环境雾预设枚举|
 | [GraphicsLevel](../enums/mw.GraphicsLevel.md) <br> 画质等级|
 | [GravityMode](../enums/mw.GravityMode.md) <br> 重力模式|
+| [HideInEditorState](../enums/mw.HideInEditorState.md) |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md) <br> 热武器瞄准模式|
-| [HotWeaponCrossHairType](../enums/Core.mw.HotWeaponCrossHairType.md) |
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md) <br> 热武器开火模式|
 | [HotWeaponState](../enums/mw.HotWeaponState.md) <br> 热武器状态|
 | [HttpRequestType](../enums/mw.HttpRequestType.md) <br> 开发给用户用的Http请求类型枚举|
@@ -50,7 +57,6 @@ mw
 | [ImpulseType](../enums/mw.ImpulseType.md) <br> 冲量的应用方式|
 | [InitialOscillatorOffset](../enums/mw.InitialOscillatorOffset.md) <br> 定义如何开始(从零开始，或者从随机值开始)|
 | [InputTextLimit](../enums/mw.InputTextLimit.md) <br> 输入框限制|
-| [InteractiveSlot](../enums/Core.mw.InteractiveSlot.md) |
 | [Keys](../enums/mw.Keys.md) <br> 按键Key值|
 | [LanguageType](../enums/mw.LanguageType.md) <br> 游戏语言|
 | [MaskButtonType](../enums/mw.MaskButtonType.md) <br> 遮罩类型|
@@ -63,15 +69,14 @@ mw
 | [MoveFacingDirection](../enums/mw.MoveFacingDirection.md) <br> 运动时面朝方向|
 | [MovementDirection](../enums/mw.MovementDirection.md) <br> 运动时依据的正方向|
 | [MovementMode](../enums/mw.MovementMode.md) <br> 角色状态|
+| [NavModifierType](../enums/mw.NavModifierType.md) <br> 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果|
 | [NetStatus](../enums/mw.NetStatus.md) <br> 同步状态|
 | [ObjectTypeQuery](../enums/mw.ObjectTypeQuery.md) <br> 碰撞检测通道|
 | [Orientation](../enums/mw.Orientation.md) <br> 滚动框类型|
 | [OscillatorWaveform](../enums/mw.OscillatorWaveform.md) <br> 振荡器波形|
 | [PostProcessPreset](../enums/mw.PostProcessPreset.md) <br> 后处理预设枚举|
 | [ProgressBarFillType](../enums/mw.ProgressBarFillType.md) <br> 进度条填充规则|
-| [ProjectileAccelerationEnableMode](../enums/mw.ProjectileAccelerationEnableMode.md) <br> 投掷物加速启用模式|
-| [ProjectileCollisionMode](../enums/mw.ProjectileCollisionMode.md) <br> 投掷物碰撞反馈模式|
-| [ProjectileLineStyle](../enums/mw.ProjectileLineStyle.md) <br> 投掷物轨迹绘制的显示风格|
+| [ProjectileMovementStatus](../enums/mw.ProjectileMovementStatus.md) <br> 投掷物移动状态|
 | [PropertyStatus](../enums/mw.PropertyStatus.md) <br> 属性状态|
 | [RuntimePlatform](../enums/mw.RuntimePlatform.md) <br> 运行平台|
 | [ScrollBarDefaultLocation](../enums/mw.ScrollBarDefaultLocation.md) <br> 滚动条默认位置|
@@ -83,8 +88,8 @@ mw
 | [SlideMethod](../enums/mw.SlideMethod.md) <br> 进度条滑动的方式|
 | [SomatotypeV1](../enums/mw.SomatotypeV1.md) <br> V1角色体型|
 | [SomatotypeV2](../enums/mw.SomatotypeV2.md) <br> 角色体型|
+| [SoundPlayState](../enums/mw.SoundPlayState.md) <br> 音效播放状态|
 | [StanceBlendMode](../enums/mw.StanceBlendMode.md) <br> 姿态混合模式|
-| [SwitchCameraBlendFunction](../enums/mw.SwitchCameraBlendFunction.md) <br> 切换摄像机时运用的混合函数|
 | [TextCommit](../enums/mw.TextCommit.md) <br> 输入提交模式|
 | [TextJustify](../enums/mw.TextJustify.md) <br> 文本排列对齐规则|
 | [TextVerticalJustify](../enums/mw.TextVerticalJustify.md) <br> 文本排列垂直对齐规则|
@@ -111,8 +116,6 @@ mw
 
 | Classes |
 | :-----|
-| [AbilityObject](../classes/Core.mw.AbilityObject.md) |
-| [AbilityState](../classes/Core.mw.AbilityState.md) |
 | [AccountService](../classes/mw.AccountService.md) <br> 用户账号信息管理相关服务|
 | [Action](../classes/mw.Action.md) <br> 任意参数的代理|
 | [Action1](../classes/mw.Action1.md) <br> 一个参数的代理|
@@ -126,13 +129,9 @@ mw
 | [AssetIconData](../classes/mw.AssetIconData.md) <br> 资源ICON信息|
 | [AssetUtil](../classes/mw.AssetUtil.md) <br> 资源工具类|
 | [AvatarSettings](../classes/mw.AvatarSettings.md) <br> 控制一些优化项的开启关闭|
-| [BlockingArea](../classes/Core.mw.BlockingArea.md) |
-| [BlockingAreaManager](../classes/Core.mw.BlockingAreaManager.md) |
 | [BlockingVolume](../classes/mw.BlockingVolume.md) <br> 禁行区，用于控制个角色是否可以进出此区域，角色可站立，默认阻挡|
 | [Button](../classes/mw.Button.md) <br> 按钮,无默认text|
 | [Camera](../classes/mw.Camera.md) <br> 摄像机|
-| [CameraShake](../classes/Core.mw.CameraShake.md) |
-| [CameraSystem](../classes/Core.mw.CameraSystem.md) |
 | [Canvas](../classes/mw.Canvas.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能|
 | [Character](../classes/mw.Character.md) <br> 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动.|
 | [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 单个插槽对应的挂件物体数组|
@@ -143,9 +142,7 @@ mw
 | [ConvertScreenResult](../classes/mw.ConvertScreenResult.md) <br> 屏幕坐标转换结果|
 | [DataStorage](../classes/mw.DataStorage.md) <br> 数据存储|
 | [DebugService](../classes/mw.DebugService.md) <br> debug调试服务|
-| [Decoration](../classes/Core.mw.Decoration.md) |
 | [Delegate](../classes/mw.Delegate.md) <br> 委托|
-| [DirectionalLight](../classes/mw.DirectionalLight.md) <br> 平行光|
 | [DragDropOperation](../classes/mw.DragDropOperation.md) <br> UI 拖拽事件|
 | [DragDropPayLoad](../classes/mw.DragDropPayLoad.md) <br> 拖拽事件数据传递类|
 | [Effect](../classes/mw.Effect.md) <br> 特效对象,通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。如需精确控制特效的播放与停止，请使用play()和stop()。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。|
@@ -154,9 +151,8 @@ mw
 | [Event](../classes/mw.Event.md) <br> 事件|
 | [EventListener](../classes/mw.EventListener.md) <br> 事件监听器|
 | [EventReply](../classes/mw.EventReply.md) <br> 事件回复|
-| [ExponentialHeightFog](../classes/mw.ExponentialHeightFog.md) <br> 环境雾|
 | [FocusEvent](../classes/mw.FocusEvent.md) <br> 焦点事件|
-| [FourFootStandard](../classes/Core.mw.FourFootStandard.md) |
+| [Fog](../classes/mw.Fog.md) <br> 环境雾|
 | [GameObject](../classes/mw.GameObject.md) <br> GameObject的基类|
 | [Geometry](../classes/mw.Geometry.md) <br> 几何坐标信息|
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md) <br> 图片画质设置|
@@ -168,22 +164,6 @@ mw
 | [HotWeaponLoadComponent](../classes/mw.HotWeaponLoadComponent.md) <br> 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑|
 | [HotWeaponRecoilForceComponent](../classes/mw.HotWeaponRecoilForceComponent.md) <br> 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）|
 | [HotWeaponReloadComponent](../classes/mw.HotWeaponReloadComponent.md) <br> 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑|
-| [HumanoidV1](../classes/Core.mw.HumanoidV1.md) |
-| [HumanoidV1Face](../classes/Core.mw.HumanoidV1Face.md) |
-| [HumanoidV1Hair](../classes/Core.mw.HumanoidV1Hair.md) |
-| [HumanoidV1Part](../classes/Core.mw.HumanoidV1Part.md) |
-| [HumanoidV1Trunk](../classes/Core.mw.HumanoidV1Trunk.md) |
-| [HumanoidV2](../classes/Core.mw.HumanoidV2.md) |
-| [HumanoidV2BehindHairPart](../classes/Core.mw.HumanoidV2BehindHairPart.md) |
-| [HumanoidV2ClothPart](../classes/Core.mw.HumanoidV2ClothPart.md) |
-| [HumanoidV2FrontHairPart](../classes/Core.mw.HumanoidV2FrontHairPart.md) |
-| [HumanoidV2GlovesPart](../classes/Core.mw.HumanoidV2GlovesPart.md) |
-| [HumanoidV2HairPart](../classes/Core.mw.HumanoidV2HairPart.md) |
-| [HumanoidV2HeadPart](../classes/Core.mw.HumanoidV2HeadPart.md) |
-| [HumanoidV2LowerClothPart](../classes/Core.mw.HumanoidV2LowerClothPart.md) |
-| [HumanoidV2Shape](../classes/Core.mw.HumanoidV2Shape.md) |
-| [HumanoidV2ShoePart](../classes/Core.mw.HumanoidV2ShoePart.md) |
-| [HumanoidV2UpperClothPart](../classes/Core.mw.HumanoidV2UpperClothPart.md) |
 | [Image](../classes/mw.Image.md) <br> UI 图片|
 | [Impulse](../classes/mw.Impulse.md) <br> 冲量对象|
 | [InputBox](../classes/mw.InputBox.md) <br> UI的输入框|
@@ -194,6 +174,7 @@ mw
 | [JoystickStyleDesigner](../classes/mw.JoystickStyleDesigner.md) <br> 摇杆信息|
 | [KeyEvent](../classes/mw.KeyEvent.md) <br> 按键事件|
 | [LanguageUtil](../classes/mw.LanguageUtil.md) <br> 多语言工具类|
+| [Lighting](../classes/mw.Lighting.md) <br> 光照|
 | [LinearColor](../classes/mw.LinearColor.md) <br> 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0|
 | [LocaleUtil](../classes/mw.LocaleUtil.md) <br> 地区本地化工具类|
 | [Margin](../classes/mw.Margin.md) <br> 基础的边距，提供4个方向的数值修改|
@@ -202,27 +183,27 @@ mw
 | [MathUtil](../classes/mw.MathUtil.md) <br> 数学库工具类|
 | [Matrix3x3](../classes/mw.Matrix3x3.md) <br> 三维矩阵|
 | [Matrix4x4](../classes/mw.Matrix4x4.md) <br> 四维矩阵|
-| [Mesh](../classes/Core.mw.Mesh.md) |
 | [Model](../classes/mw.Model.md) <br> 接口主要为物理参数设置接口与材质参数设置接口|
 | [MulticastDelegate](../classes/mw.MulticastDelegate.md) <br> 多播委托接口|
 | [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md) <br> 广播代理|
 | [NFTUtil](../classes/mw.NFTUtil.md) <br> NFT资产交易系统。|
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区|
-| [NavigationUtil](../classes/mw.NavigationUtil.md) <br> 路径查询。|
+| [Navigation](../classes/mw.Navigation.md) <br> 路径查询。|
+| [ObjectLauncher](../classes/mw.ObjectLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主|
 | [PanelWidget](../classes/mw.PanelWidget.md) <br> UI的PanelWidget可以挂载子节点|
 | [Pawn](../classes/mw.Pawn.md) <br> 可以被玩家和AI控制的对象的基类|
 | [PhysicsFulcrum](../classes/mw.PhysicsFulcrum.md) <br> 物理支撑点组件|
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器|
 | [Player](../classes/mw.Player.md) <br> 角色控制|
-| [PlayerStart](../classes/Core.mw.PlayerStart.md) |
+| [PlayerState](../classes/mw.PlayerState.md) <br> PlayerState基类|
 | [PointLight](../classes/mw.PointLight.md) <br> 点光源|
 | [PointerEvent](../classes/mw.PointerEvent.md) <br> 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类|
-| [PostProcess](../classes/mw.PostProcess.md) <br> 后处理对象|
+| [PostProcess](../classes/mw.PostProcess.md) <br> 后处理|
 | [PostProcessConfig](../classes/mw.PostProcessConfig.md) <br> 后处理对象属性配置|
+| [PostProcessObject](../classes/mw.PostProcessObject.md) <br> 后处理对象|
 | [ProgressBar](../classes/mw.ProgressBar.md) <br> UI进度条|
-| [Projectile](../classes/Core.mw.Projectile.md) |
-| [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物 v2 实例|
-| [ProjectileLauncher](../classes/mw.ProjectileLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主|
+| [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物发射器专用实例对象|
+| [ProjectileMovement](../classes/mw.ProjectileMovement.md) <br> 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步|
 | [PurchaseService](../classes/mw.PurchaseService.md) <br> 应用内购服务|
 | [Quaternion](../classes/mw.Quaternion.md) <br> 四元数|
 | [QueryUtil](../classes/mw.QueryUtil.md) <br> 射线检测范围|
@@ -235,17 +216,15 @@ mw
 | [ScrollBox](../classes/mw.ScrollBox.md) <br> 滑动框|
 | [SelectionUtil](../classes/mw.SelectionUtil.md) <br> 选择物体时，描边绘制相关功能|
 | [SkyBox](../classes/mw.SkyBox.md) <br> 天空球|
-| [SkyLight](../classes/mw.SkyLight.md) <br> 环境光|
+| [Skybox](../classes/mw.Skybox-1.md) <br> 天空球|
 | [SlateBrushWithGuid](../classes/mw.SlateBrushWithGuid.md) <br> 贴图信息|
 | [SlateColor](../classes/mw.SlateColor.md) <br> UI颜色管理|
-| [SomatotypeBase](../classes/Core.mw.SomatotypeBase.md) |
 | [Sound](../classes/mw.Sound.md) <br> 音效组件|
 | [SoundService](../classes/mw.SoundService.md) <br> 音效管理器|
 | [SpringArm](../classes/mw.SpringArm.md) <br> 弹簧臂|
 | [StaleButton](../classes/mw.StaleButton.md) <br> 按钮|
 | [Stance](../classes/mw.Stance.md) <br> 基础姿态|
 | [StanceBase](../classes/mw.StanceBase.md) <br> 姿态|
-| [StaticMesh](../classes/Core.mw.StaticMesh.md) |
 | [StringUtil](../classes/mw.StringUtil.md) <br> 字符串工具|
 | [SubStance](../classes/mw.SubStance.md) <br> 二级姿态|
 | [SwimmingVolume](../classes/mw.SwimmingVolume.md) <br> 游泳区域|
@@ -265,10 +244,9 @@ mw
 | [UIFontInfo](../classes/mw.UIFontInfo.md) <br> 字体信息|
 | [UIHugContent](../classes/mw.UIHugContent.md) <br> 容器自动布局大小适应规则|
 | [UILayout](../classes/mw.UILayout.md) <br> 容器自动布局规则|
-| [UIManager](../classes/mw.UIManager.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。|
 | [UIObject](../classes/mw.UIObject.md) <br> UI对象组件|
 | [UIScript](../classes/mw.UIScript.md) <br> UI的驱动脚本基类|
-| [UISlot](../classes/Core.mw.UISlot.md) |
+| [UIService](../classes/mw.UIService.md) <br> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。|
 | [UITransform](../classes/mw.UITransform.md) <br> 节点Transform|
 | [UIWidget](../classes/mw.UIWidget.md) <br> 世界UI组件|
 | [UserWidget](../classes/mw.UserWidget.md) <br> UI控件的集合,预制体UI|
@@ -276,7 +254,6 @@ mw
 | [Vector](../classes/mw.Vector.md) <br> 由分量 (x,y,z) 组成的三维空间中的向量|
 | [Vector2](../classes/mw.Vector2.md) <br> 由分量 (x,y) 组成的二维空间中的向量|
 | [Vector4](../classes/mw.Vector4.md) <br> 由分量 (x,y,z,w) 组成的4D齐次向量|
-| [VehicleCameraSetting](../classes/Core.mw.VehicleCameraSetting.md) |
 | [VirtualJoystickPanel](../classes/mw.VirtualJoystickPanel.md) <br> 摇杆|
 | [WheeledVehicle4W](../classes/mw.WheeledVehicle4W.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。|
 | [Widget](../classes/mw.Widget.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能|
@@ -284,40 +261,29 @@ mw
 
 | Interfaces |
 | :-----|
+| [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md) <br> 抖动数据|
+| [DataStorageResult](../interfaces/mw.DataStorageResult.md) <br> 数据储存返回值|
 | [DelegateInterface](../interfaces/mw.DelegateInterface.md) <br> 委托接口|
 | [GameObjectInfo](../interfaces/mw.GameObjectInfo.md) <br> 构建物体的信息|
-| [IFourFootStandard](../interfaces/Core.mw.IFourFootStandard.md) |
-| [IHumanoidV1](../interfaces/Core.mw.IHumanoidV1.md) |
-| [IHumanoidV2](../interfaces/Core.mw.IHumanoidV2.md) |
-| [IHumanoidV2ClothPart](../interfaces/Core.mw.IHumanoidV2ClothPart.md) |
-| [IHumanoidV2HairPart](../interfaces/Core.mw.IHumanoidV2HairPart.md) |
-| [IHumanoidV2HeadPart](../interfaces/Core.mw.IHumanoidV2HeadPart.md) |
-| [IHumanoidV2MaterialStyle](../interfaces/Core.mw.IHumanoidV2MaterialStyle.md) |
-| [IHumanoidV2Shape](../interfaces/Core.mw.IHumanoidV2Shape.md) |
-| [IPart](../interfaces/Core.mw.IPart.md) |
 | [MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md) <br> 多播委托接口|
-| [ShakeData](../interfaces/mw.ShakeData.md) <br> 抖动数据|
+| [ProjectileMovementConfig](../interfaces/mw.ProjectileMovementConfig.md) <br> 投掷物配置类型|
 | [TypeName](../interfaces/mw.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 
 | Type Aliases |
 | :-----|
 | **[BoolResponse](Core.mw.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
 | **[BroadcastMessageResult](Core.mw.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
-| **[CameraShakeData](Core.mw.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
-| **[CameraSystemData](Core.mw.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Constructor](Core.mw.md#constructor)**<`T`\>: (...`args`: `any`[]) => `T` <br> 角色形象修改构造类型|
-| **[DecorationTuple](Core.mw.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
+| **[ChatEvent](Core.mw.md#chatevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[DelegateFuncType](Core.mw.md#delegatefunctype)**: (...`arg`: `unknown`[]) => `unknown` <br> 代理回调函数签名|
 | **[DownloadDataResponse](Core.mw.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[EmptyCallback](Core.mw.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
 | **[HttpResponse](Core.mw.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
 | **[LoadAppearanceDataAllCompletedCallback](Core.mw.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](Core.mw.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
 | **[LocalUGCGameInfo](Core.mw.md#localugcgameinfo)**: `Object` <br> 本地工程信息。如果该工程发布过UGC消费态的游戏，那gameId不为空。|
 | **[MGSEvent](Core.mw.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](Core.mw.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](Core.mw.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnDescriptionChanged](Core.mw.md#ondescriptionchanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
+| **[OnDescriptionChange](Core.mw.md#ondescriptionchange)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
 | **[OnDescriptionComplete](Core.mw.md#ondescriptioncomplete)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
 | **[OnKeyConsume](Core.mw.md#onkeyconsume)**: (`player`: [`Player`](../classes/mw.Player.md), `orderId`: `string`, `boxId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 大会员钥匙扣除服务端接收发货通知的消息格式|
 | **[OnMovementModeChange](Core.mw.md#onmovementmodechange)**: (`mode`: [`MovementMode`](../enums/mw.MovementMode.md)) => `void` <br> 移动状态切换委托|
@@ -325,11 +291,11 @@ mw
 | **[OnRecvChatMessage](Core.mw.md#onrecvchatmessage)**: (`nCount`: `number`, `ChatContent`: `string`) => `void` <br> 接收聊天信息回调方法类型|
 | **[OnViewLayoutSwitched](Core.mw.md#onviewlayoutswitched)**: (`newState`: `number`) => `void` <br> 233中窗口显示模式切换的消息格式|
 | **[OnViewRefreshed](Core.mw.md#onviewrefreshed)**: () => `void` <br> 233中窗口刷新的消息格式|
-| **[Oscillator](Core.mw.md#oscillator)**: `Object` <br> 震动数值|
 | **[PublishedUGCGameInfo](Core.mw.md#publishedugcgameinfo)**: `Object` <br> 发布成功的UGC消费态游戏信息|
 | **[SetAppearanceDataCallback](Core.mw.md#setappearancedatacallback)**: (`APIName`: `string`) => `void` <br> 设置编辑数据完成的回调|
 | **[StringCallback](Core.mw.md#stringcallback)**: (`str`: `string`) => `void` <br> 返回String的回调|
 | **[StringResponse](Core.mw.md#stringresponse)**: (`dataString`: `string`) => `void` <br> 返回string的回调|
+| **[TabGroupOnClickedProps](Core.mw.md#tabgrouponclickedprops)**: `Object` <br> 选项卡组-点击事件type|
 | **[TeamMatchFailureInfo](Core.mw.md#teammatchfailureinfo)**: `Object` <br> 组队跳游戏请求失败回调|
 | **[TransactionType](Core.mw.md#transactiontype)**: (`isSuccess`: `boolean`, `content`: `string`) => `void` <br> 商城通信回调消息格式|
 | **[TweenEasingFunction](Core.mw.md#tweeneasingfunction)**: (`amount`: `number`) => `number` <br> 缓动函数的类型定义|
@@ -362,7 +328,7 @@ mw
 | :-----|
 | **[absoluteToLocal](Core.mw.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `absolutePosition`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <br> 转化绝对坐标到相对坐标|
 | **[absoluteToViewport](Core.mw.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/mw.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/mw.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/mw.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
-| **[assetIDChangeIconUrlRequest](Core.mw.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
+| **[assetIDChangeIconUrlRequest](Core.mw.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
 | **[cancelDragDrop](Core.mw.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
 | **[createUI](Core.mw.md#createui)**<`T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIScript`](../classes/mw.UIScript.md)<`T`\> <br> 创建UIPrefab|
 | **[createUIByName](Core.mw.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/mw.UserWidget.md) <br> 创建UIPrefab|
@@ -444,111 +410,25 @@ ___
 
 ___
 
-### CameraShakeData <Score text="CameraShakeData" /> 
+### ChatEvent <Score text="ChatEvent" /> 
 
-Ƭ **CameraShakeData**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-摄像机震动数据
-
-::: warning Precautions
-
-摄像机震动数据
-
-:::
+Ƭ **ChatEvent**: (`jsonData`: `string`) => `void`
 
 #### Type declaration
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fovOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | FOV振荡 |
-| `locXOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置X轴振荡 |
-| `locYOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置Y轴振荡 |
-| `locZOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置Z轴振荡 |
-| `rotPitchOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Pitch轴振荡 |
-| `rotRollOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Roll轴振荡 |
-| `rotYawOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Yaw轴振荡 |
+• (`jsonData`): `void`
 
-___
-
-### CameraSystemData <Score text="CameraSystemData" /> 
-
-Ƭ **CameraSystemData**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-摄像机属性数据
-
-::: warning Precautions
-
-主要给载具摄像机使用
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `cameraDownLimitAngle?` | `number` | **`Description`** 向下限制角度 |
-| `cameraFOV?` | `number` | **`Description`** 视场 |
-| `cameraLocationLagSpeed?` | `number` | **`Description`** 摄像机位置延迟速度 |
-| `cameraLocationMode?` | [`CameraLocationMode`](../enums/mw.CameraLocationMode.md) | **`Description`** 摄像机位置模式 |
-| `cameraProjectionMode?` | [`CameraProjectionMode`](../enums/mw.CameraProjectionMode.md) | **`Description`** 投影模式 |
-| `cameraRelativeTransform?` | [`Transform`](../classes/mw.Transform.md) | **`Description`** 摄像机相对Transform |
-| `cameraRotationLagSpeed?` | `number` | **`Description`** 摄像机旋转延迟速度 |
-| `cameraRotationMode?` | [`CameraRotationMode`](../enums/mw.CameraRotationMode.md) | **`Description`** 摄像机朝向模式 |
-| `cameraUpLimitAngle?` | `number` | **`Description`** 向上限制角度 |
-| `cameraWorldTransform?` | [`Transform`](../classes/mw.Transform.md) | **`Description`** 摄像机世界Transform |
-| `enableCameraCollision?` | `boolean` | **`Description`** 是否有摄像机碰撞 |
-| `enableCameraLocationLag?` | `boolean` | **`Description`** 开启摄像机位置延迟 |
-| `enableCameraRotationLag?` | `boolean` | **`Description`** 开启摄像机旋转延迟 |
-| `enableFadeEffect?` | `boolean` | **`Description`** 是否开启物体透明 |
-| `enableRaiseCamera?` | `boolean` | **`Description`** 开启碰撞抬高 |
-| `fadeEffectValue?` | `number` | **`Description`** 物体透明度 |
-| `orthoFarClipPlane?` | `number` | **`Description`** 正交视图远平面距离 |
-| `orthoNearClipPlane?` | `number` | **`Description`** 正交视图近平面距离 |
-| `orthoWidth?` | `number` | **`Description`** 正交宽度 |
-| `raiseCameraHeight?` | `number` | **`Description`** 抬高高度 |
-| `slotOffset?` | [`Vector`](../classes/mw.Vector.md) | **`Description`** 摄像机位置偏移 |
-| `targetArmLength?` | `number` | **`Description`** 距离调整 |
-| `targetOffset?` | [`Vector`](../classes/mw.Vector.md) | **`Description`** 挂点位置偏移 |
-
-___
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`SomatotypeBase`](../classes/Core.mw.SomatotypeBase.md) |
-
-#### Type declaration
-
-• (`...args`)
-
-角色形象修改构造类型
+收到MGS事件调用
 
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...args` | `any`[] |
+| `jsonData` | `string` |
 
-___
+##### Returns
 
-### DecorationTuple <Score text="DecorationTuple" /> 
-
-Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)]
-
-运行时态角色身上的挂件数据
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 027 reason:功能改变 replacement: 使用style.advance.slotAndAttachment属性相关功能替换
+`void`
 
 ___
 
@@ -653,28 +533,6 @@ ___
 
 ___
 
-### LoadDecorationsAllCompletedCallback <Score text="LoadDecorationsAllCompletedCallback" /> 
-
-Ƭ **LoadDecorationsAllCompletedCallback**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void`
-
-#### Type declaration
-
-• (`data`): `void`
-
-移动角色编辑器挂件加载完成后的回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | [`DecorationTuple`](Core.mw.md#decorationtuple)[] |
-
-##### Returns
-
-`void`
-
-___
-
 ### LocalUGCGameInfo <Score text="LocalUGCGameInfo" /> 
 
 Ƭ **LocalUGCGameInfo**: `Object`
@@ -758,9 +616,9 @@ ___
 
 ___
 
-### OnDescriptionChanged <Score text="OnDescriptionChanged" /> 
+### OnDescriptionChange <Score text="OnDescriptionChange" /> 
 
-Ƭ **OnDescriptionChanged**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
+Ƭ **OnDescriptionChange**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
 
 #### Type declaration
 
@@ -945,32 +803,6 @@ ___
 
 ___
 
-### Oscillator <Score text="Oscillator" /> 
-
-Ƭ **Oscillator**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-震动数值
-
-::: warning Precautions
-
-震动数值
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `amplitude?` | `number` | 正弦振荡的幅度 |
-| `frequency?` | `number` | 正弦振荡的频率 |
-| `waveform?` | [`OscillatorWaveform`](../enums/mw.OscillatorWaveform.md) | 用于振荡的波形类型 |
-
-___
-
 ### PublishedUGCGameInfo <Score text="PublishedUGCGameInfo" /> 
 
 Ƭ **PublishedUGCGameInfo**: `Object`
@@ -1049,6 +881,14 @@ ___
 ##### Returns
 
 `void`
+
+___
+
+### TabGroupOnClickedProps <Score text="TabGroupOnClickedProps" /> 
+
+Ƭ **TabGroupOnClickedProps**: `Object`
+
+选项卡组-点击事件type
 
 ___
 

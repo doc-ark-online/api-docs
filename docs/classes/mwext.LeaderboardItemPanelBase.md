@@ -8,7 +8,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `IItemView` |
+| `T` | extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md) |
 
 ## Hierarchy
 
@@ -44,6 +44,27 @@
 | **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <br> 生命周期方法-构建面板自动触发，只会调用一次|
 :::
 
+
+构造方法
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)<`T`\> |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `viewClass` | [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
+
+#### Overrides
+
+[BasePanel](mwext.BasePanel.md).[constructor](mwext.BasePanel.md#constructor)
+
+## Accessors
+___
 
 ### playerId <Score text="playerId" /> 
 

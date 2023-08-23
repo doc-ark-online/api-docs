@@ -8,7 +8,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Object` |
+| `T` | extends [`TabGroupOnClickedProps`](../modules/Core.mw.md#tabgrouponclickedprops) |
 
 ## Table of contents
 
@@ -28,7 +28,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `Object` |
+| `T` | extends [`TabGroupOnClickedProps`](../modules/Core.mw.md#tabgrouponclickedprops) |
 
 #### Parameters
 

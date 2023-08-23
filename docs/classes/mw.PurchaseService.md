@@ -135,7 +135,7 @@ ___
 
 使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
 ```ts
-if (Util.SystemUtil.isServer()) {
+if (SystemUtil.isServer()) {
      console.log("监听发货");
      //发货监听
      mw.PurchaseService.onPremiumMemberOrderDelivered.add((
@@ -145,7 +145,7 @@ if (Util.SystemUtil.isServer()) {
           amount: number,
           confirmOrder: (bReceived: boolean) => void
      ) => {
-          mw.dispatchToClient(playerController, SHIP_ORDER, orderId, boxId, amount);
+          mw.Event.dispatchToClient(playerController, orderId, boxId, amount);
           //确认收货
           confirmOrder(true);
      });
@@ -195,7 +195,7 @@ mw.PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : nu
     {
         console.log("bill orderId : " + bill.orderId);
         console.log("bill boxId : " + bill.boxId);
-        console.log("bill number : " + bill.numbe);
+        console.log("bill number : " + bill.number);
         console.log("bill consumeTime : " + bill.consumeTime);
     }
 });
@@ -227,7 +227,7 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
 ```ts
-@Core.Component
+@Component
 export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
@@ -236,10 +236,10 @@ export default class PurchaseExample extends mw.Script {
     }
 
     private async test(): Promise<void> {
-        let player = await mw.asyncGetCurrentPlayer();
+        let player = await  mw.Player.localPlayer;
         await TimeUtil.delaySecond(5);
         let arkCount = PurchaseService.getArkBalance();
-        player.character.characterName = "ArkCount: " + arkCount;
+        player.character.name = "ArkCount: " + arkCount;
     }
 }
 `
@@ -262,7 +262,7 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
 ```
-@Core.Component
+@Component
 export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
@@ -305,7 +305,7 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
 ```
-@Core.Component
+@Component
 export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
@@ -346,7 +346,7 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
 ```
-@Core.Component
+@Component
 export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {
@@ -381,7 +381,7 @@ ___
 
 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
 ```
-@Core.Component
+@Component
 export default class PurchaseExample extends mw.Script {
 
     protected onStart(): void {

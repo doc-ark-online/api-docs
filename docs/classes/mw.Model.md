@@ -12,7 +12,7 @@
 
 使用示例:创建一个名为"MeshExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以通过F1键，在场景中动态生成模型并模拟物理.代码如下:
 ```ts
-@Class
+@Component
 export default class MeshExample extends Script {
     //当脚本被实例后，会在第一帧更新前调用此函数
     protected async onStart(): Promise<void> {
@@ -26,7 +26,7 @@ export default class MeshExample extends Script {
         if(SystemUtil.isServer()){
             mw.Event.addClientListener("SpawnMesh",()=>{
                 let box = GameObject.spawn({
-                guid:"7669",
+                guid:"197386",
                 transform:new Transform(new Vector(500,0,100),new Rotation(0,0,0),new Vector(1,1,1)),
                 replicates:true
                 }) as Model;
@@ -54,14 +54,12 @@ export default class MeshExample extends Script {
 
   ↳ **`Model`**
 
-  ↳↳ [`Mesh`](Core.mw.Mesh.md)
-
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onEnter](mw.Model.md#onenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) <br> 进入StaticMesh事件|
-| **[onLeave](mw.Model.md#onleave)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) <br> 离开StaticMesh事件|
+| **[onTouch](mw.Model.md#ontouch)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) <br> 进入StaticMesh事件|
+| **[onTouchEnd](mw.Model.md#ontouchend)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) <br> 离开StaticMesh事件|
 
 
 ::: details 点击查看继承
@@ -74,12 +72,8 @@ export default class MeshExample extends Script {
 | Accessors |
 | :-----|
 | **[angularDamping](mw.Model.md#angulardamping)**(): `number` <br> 角阻尼|
-| **[applyImpulseOnDamage](mw.Model.md#applyimpulseondamage)**(): `boolean` <br> 在伤害上应用冲量|
 | **[friction](mw.Model.md#friction)**(): `number` <br> 获取摩擦力大小|
-| **[gravityEnable](mw.Model.md#gravityenable)**(): `boolean` <br> 获取是否启用重力|
-| **[ignoreRadialForce](mw.Model.md#ignoreradialforce)**(): `boolean` <br> 获取是否忽视径向力|
-| **[ignoreRadialImpulse](mw.Model.md#ignoreradialimpulse)**(): `boolean` <br> 获取是否忽视径向冲量|
-| **[isSimulatingPhysics](mw.Model.md#issimulatingphysics)**(): `boolean` <br> 获取是否模拟物理|
+| **[gravityEnabled](mw.Model.md#gravityenabled)**(): `boolean` <br> 获取是否启用重力|
 | **[linerDamping](mw.Model.md#linerdamping)**(): `number` <br> 获取线性阻尼|
 | **[lockPositionX](mw.Model.md#lockpositionx)**(): `boolean` <br> 获取是否约束位置X|
 | **[lockPositionY](mw.Model.md#lockpositiony)**(): `boolean` <br> 获取是否约束位置Y|
@@ -87,25 +81,22 @@ export default class MeshExample extends Script {
 | **[lockRotationX](mw.Model.md#lockrotationx)**(): `boolean` <br> 获取是否约束旋转X|
 | **[lockRotationY](mw.Model.md#lockrotationy)**(): `boolean` <br> 获取是否约束旋转Y|
 | **[lockRotationZ](mw.Model.md#lockrotationz)**(): `boolean` <br> 获取是否约束旋转Z|
-| **[massEnable](mw.Model.md#massenable)**(): `boolean` <br> 获取是否使用质量|
-| **[massInKg](mw.Model.md#massinkg)**(): `number` <br> 获取质量大小|
+| **[mass](mw.Model.md#mass)**(): `number` <br> 获取质量大小|
+| **[massEnabled](mw.Model.md#massenabled)**(): `boolean` <br> 获取是否使用质量|
+| **[physicsEnabled](mw.Model.md#physicsenabled)**(): `boolean` <br> 获取是否模拟物理|
 | **[restitution](mw.Model.md#restitution)**(): `number` <br> 获取弹力大小|
 
 
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[guid](mw.GameObject.md#guid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
-| **[isLocked](mw.GameObject.md#islocked)**(): `boolean` <br> 获取对象是否锁定|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[isStatic](mw.GameObject.md#isstatic)**(): `boolean` <br> 获取对象是否静态|
 | **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地transform|
 | **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[sourceAssetGuid](mw.GameObject.md#sourceassetguid)**(): `string` <br> 获取当前物体使用资源的GUID|
 | **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
-| **[useUpdate](mw.GameObject.md#useupdate)**(): `boolean` <br> 获取对象是否使用更新|
 | **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界transform|
 :::
 
@@ -116,7 +107,9 @@ export default class MeshExample extends Script {
 | **[getMaterialInstance](mw.Model.md#getmaterialinstance)**(): [`MaterialInstance`](mw.MaterialInstance.md)[] <br> 返回当前拥有的材质实例|
 | **[resetMaterial](mw.Model.md#resetmaterial)**(): `void` <br> 还原物体材质|
 | **[setCullDistance](mw.Model.md#setculldistance)**(`inCullDistance`: `number`): `void` <br> 与玩家之间超出此距离的对象将被剪裁，最终的裁剪距离会和画质等级有关；修改此属性≤0时，裁剪距离会根据对象尺寸自动调整(自动启用CullDistanceVolume功能)|
-| **[setOutlineAndColor](mw.Model.md#setoutlineandcolor)**(`Enable`: `boolean`, `ColorIndex`: `number`): `void` <br> 设置对象描边及描边颜色，需要场景中存在后处理对象。|
+| **[setMaterial](mw.Model.md#setmaterial)**(`MaterialGUID`: `string`): `void` <br> 设置物体材质|
+| **[setOutline](mw.Model.md#setoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void` <br> 设置对象描边及描边颜色，需要场景中存在后处理对象。|
+| **[setPostProcessOutline](mw.Model.md#setpostprocessoutline)**(`enabled`: `boolean`, `color?`: [`LinearColor`](mw.LinearColor.md), `width?`: `number`): `void` <br> 设置对象描边及描边颜色。|
 | **[setStaticMeshAsset](mw.Model.md#setstaticmeshasset)**(`InAssetGuid`: `string`): `void` <br> 设置静态网格资源|
 
 
@@ -124,51 +117,49 @@ export default class MeshExample extends Script {
 | Methods |
 | :-----|
 | **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> GameObject准备好后返回|
-| **[attachToGameObject](mw.GameObject.md#attachtogameobject)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 将物体附着到指定物体上|
-| **[clone](mw.GameObject.md#clone)**(`spawnInfo?`: `boolean` \): [`GameObject`](mw.GameObject.md) <br> 复制对象|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[detachFromGameObject](mw.GameObject.md#detachfromgameobject)**(): `void` <br> 将此物体与当前附着的物体分离|
-| **[getBoundingBoxSize](mw.GameObject.md#getboundingboxsize)**(`nonColliding?`: `boolean`, `includeFromChildActors?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `OriginOuter`: [`Vector`](mw.Vector.md), `BoxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChildActors?`: `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGuid](mw.GameObject.md#getchildbyguid)**(`GUID`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取GameObject边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): `undefined` \| [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
-| **[getChildrenBoxCenter](mw.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScriptByGuid](mw.GameObject.md#getscriptbyguid)**(`GUID`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `undefined` \| `Script` <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): `undefined` \| `Script`[] <br> 获得当前物体下的所有脚本|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `Script` <br> 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
 | **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
 | **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
 | **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
 | **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[asyncFindGameObjectByGuid](mw.GameObject.md#asyncfindgameobjectbyguid)**(`guid`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`spawnInfo`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[findGameObjectByGuid](mw.GameObject.md#findgameobjectbyguid)**(`guid`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): `undefined` \| [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
 | **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `position?`: [`Vector`](mw.Vector.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
 :::
 
 
-### onEnter <Score text="onEnter" /> 
+### onTouch <Score text="onTouch" /> 
 
-• **onEnter**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+• **onTouch**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
 
 进入StaticMesh事件
 
 ___
 
-### onLeave <Score text="onLeave" /> 
+### onTouchEnd <Score text="onTouchEnd" /> 
 
-• **onLeave**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
+• **onTouchEnd**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)
 
 离开StaticMesh事件
 
@@ -197,29 +188,6 @@ ___
 
 ___
 
-### applyImpulseOnDamage <Score text="applyImpulseOnDamage" /> 
-
-• `get` **applyImpulseOnDamage**(): `boolean`
-
-在伤害上应用冲量
-
-#### Returns
-
-`boolean`
-
-• `set` **applyImpulseOnDamage**(`value`): `void`
-
-在伤害上应用冲量
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `boolean` |
-
-
-___
-
 ### friction <Score text="friction" /> 
 
 • `get` **friction**(): `number`
@@ -243,9 +211,9 @@ ___
 
 ___
 
-### gravityEnable <Score text="gravityEnable" /> 
+### gravityEnabled <Score text="gravityEnabled" /> 
 
-• `get` **gravityEnable**(): `boolean`
+• `get` **gravityEnabled**(): `boolean`
 
 获取是否启用重力
 
@@ -253,78 +221,9 @@ ___
 
 `boolean`
 
-• `set` **gravityEnable**(`value`): `void`
+• `set` **gravityEnabled**(`value`): `void`
 
 设置是否启用重力，不建议使用，可能导致模拟异常
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `boolean` |
-
-
-___
-
-### ignoreRadialForce <Score text="ignoreRadialForce" /> 
-
-• `get` **ignoreRadialForce**(): `boolean`
-
-获取是否忽视径向力
-
-#### Returns
-
-`boolean`
-
-• `set` **ignoreRadialForce**(`value`): `void`
-
-设置是否忽视径向力，不建议使用，可能导致模拟异常
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `boolean` |
-
-
-___
-
-### ignoreRadialImpulse <Score text="ignoreRadialImpulse" /> 
-
-• `get` **ignoreRadialImpulse**(): `boolean`
-
-获取是否忽视径向冲量
-
-#### Returns
-
-`boolean`
-
-• `set` **ignoreRadialImpulse**(`value`): `void`
-
-设置忽视径向冲量，不建议使用，可能导致模拟异常
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `boolean` |
-
-
-___
-
-### isSimulatingPhysics <Score text="isSimulatingPhysics" /> 
-
-• `get` **isSimulatingPhysics**(): `boolean`
-
-获取是否模拟物理
-
-#### Returns
-
-`boolean`
-
-• `set` **isSimulatingPhysics**(`value`): `void`
-
-设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用
 
 #### Parameters
 
@@ -496,9 +395,32 @@ ___
 
 ___
 
-### massEnable <Score text="massEnable" /> 
+### mass <Score text="mass" /> 
 
-• `get` **massEnable**(): `boolean`
+• `get` **mass**(): `number`
+
+获取质量大小
+
+#### Returns
+
+`number`
+
+• `set` **mass**(`value`): `void`
+
+设置质量大小，不建议使用，可能导致模拟异常
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+
+
+___
+
+### massEnabled <Score text="massEnabled" /> 
+
+• `get` **massEnabled**(): `boolean`
 
 获取是否使用质量
 
@@ -506,7 +428,7 @@ ___
 
 `boolean`
 
-• `set` **massEnable**(`value`): `void`
+• `set` **massEnabled**(`value`): `void`
 
 设置是否启用质量，不建议使用，可能导致模拟异常
 
@@ -519,25 +441,25 @@ ___
 
 ___
 
-### massInKg <Score text="massInKg" /> 
+### physicsEnabled <Score text="physicsEnabled" /> 
 
-• `get` **massInKg**(): `number`
+• `get` **physicsEnabled**(): `boolean`
 
-获取质量大小
+获取是否模拟物理
 
 #### Returns
 
-`number`
+`boolean`
 
-• `set` **massInKg**(`value`): `void`
+• `set` **physicsEnabled**(`value`): `void`
 
-设置质量大小，不建议使用，可能导致模拟异常
+设置模拟物理状态，动态设置物理模拟时可能会出现异常情况，请谨慎使用
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `value` | `number` |
+| `value` | `boolean` |
 
 
 ___
@@ -630,9 +552,38 @@ ___
 
 ___
 
-### setOutlineAndColor <Score text="setOutlineAndColor" /> 
+### setMaterial <Score text="setMaterial" /> 
 
-• **setOutlineAndColor**(`Enable`, `ColorIndex`): `void` 
+• **setMaterial**(`MaterialGUID`): `void` 
+
+设置物体材质
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `MaterialGUID` | `string` |  材质ID default: |
+
+
+• **setMaterial**(`MaterialGUID`, `index`): `void` 
+
+设置物体材质
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `MaterialGUID` | `string` |  材质ID |
+| `index` | `number` |  材质下标 |
+
+
+___
+
+### setOutline <Score text="setOutline" /> 
+
+• **setOutline**(`enabled`, `color?`, `width?`): `void` 
 
 设置对象描边及描边颜色，需要场景中存在后处理对象。
 
@@ -641,8 +592,27 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Enable` | `boolean` |  是否开启描边 default: |
-| `ColorIndex` | `number` |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default: |
+| `enabled` | `boolean` |  是否开启描边 default: |
+| `color?` | [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
+| `width?` | `number` |  设置描边宽度 default:2 |
+
+
+___
+
+### setPostProcessOutline <Score text="setPostProcessOutline" /> 
+
+• **setPostProcessOutline**(`enabled`, `color?`, `width?`): `void` 
+
+设置对象描边及描边颜色。
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `enabled` | `boolean` |  是否开启描边 default: |
+| `color?` | [`LinearColor`](mw.LinearColor.md) |  设置描边颜色，与后处理中颜色Index对应，-1为无颜色 default:mw.LinearColor.black |
+| `width?` | `number` |  设置描边宽度 default:2 |
 
 
 ___

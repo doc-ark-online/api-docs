@@ -1,6 +1,6 @@
-[SOUNDS](../groups/Core.SOUNDS.md) / AudioPlayState
+[SOUNDS](../groups/Core.SOUNDS.md) / SoundPlayState
 
-# AudioPlayState <Badge type="tip" text="Enumeration" /> <Score text="AudioPlayState" />
+# SoundPlayState <Badge type="tip" text="Enumeration" /> <Score text="SoundPlayState" />
 
 音效播放状态
 
@@ -8,9 +8,9 @@
 
 | Enumeration Members |
 | :-----|
-| **[Paused](mw.AudioPlayState.md#paused)** = ``2`` <br> |
-| **[Playing](mw.AudioPlayState.md#playing)** = ``0`` <br> |
-| **[Stopped](mw.AudioPlayState.md#stopped)** = ``1`` <br> |
+| **[Paused](mw.SoundPlayState.md#paused)** = ``2`` <br> |
+| **[Playing](mw.SoundPlayState.md#playing)** = ``0`` <br> |
+| **[Stopped](mw.SoundPlayState.md#stopped)** = ``1`` <br> |
 
 ## Enumeration Members
 

@@ -8,11 +8,11 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`LeaderboardModuleBaseS`](mwext.LeaderboardModuleBaseS.md)<`any`\> |
+| `T` | extends [`LeaderboardModuleTypeS`](../modules/Extension.mwext.md#leaderboardmoduletypes) |
 
 ## Hierarchy
 
-- [`ModuleC`](mwext.ModuleC.md)<`T`, ``null``\>
+- [`ModuleC`](mwext.ModuleC.md)<`T`, `any`\>
 
   ↳ **`LeaderboardModuleBaseC`**
 
@@ -25,7 +25,10 @@
 ::: details 点击查看继承
 | Accessors |
 | :-----|
-| **[data](mwext.ModuleC.md#data)**(): `S` <br> currentPlayer的模块数据|
+| **[data](mwext.ModuleC.md#data)**(): `S` <br> 本地玩家的模块数据|
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <br> 获取当前玩家|
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <br> 获取当前玩家ID|
+| **[server](mwext.ModuleC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
 :::
 
 

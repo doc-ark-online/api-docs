@@ -20,12 +20,14 @@ GAMEPLAY
 | [MaterialInstance](../classes/mw.MaterialInstance.md) <br> 材质实例类 |
 | [Model](../classes/mw.Model.md) <br> 接口主要为物理参数设置接口与材质参数设置接口 |
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区 |
-| [NavigationUtil](../classes/mw.NavigationUtil.md) <br> 路径查询。 |
+| [Navigation](../classes/mw.Navigation.md) <br> 路径查询。 |
+| [ObjectLauncher](../classes/mw.ObjectLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 |
 | [Player](../classes/mw.Player.md) <br> 角色控制 |
-| [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物 v2 实例 |
-| [ProjectileLauncher](../classes/mw.ProjectileLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 |
+| [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物发射器专用实例对象 |
+| [ProjectileMovement](../classes/mw.ProjectileMovement.md) <br> 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 |
 | [QueryUtil](../classes/mw.QueryUtil.md) <br> 射线检测范围 |
 | [ScreenUtil](../classes/mw.ScreenUtil.md) <br> 屏幕视口设置相关的接口 |
+| [Skybox](../classes/mw.Skybox-1.md) |
 | [SpringArm](../classes/mw.SpringArm.md) <br> 弹簧臂 |
 | [SwimmingVolume](../classes/mw.SwimmingVolume.md) <br> 游泳区域 |
 | [Trigger](../classes/mw.Trigger.md) <br> 触发器，对进入/离开触发器范围的事件进行响应 |
@@ -34,22 +36,20 @@ GAMEPLAY
 
 | Enums |
 | :-----|
-| [AreaClass](../enums/mw.AreaClass.md) <br> 寻路区域屏障寻路计算类型 |
-| [CameraLocationMode](../enums/mw.CameraLocationMode.md) <br> 摄像机位置模式 |
+| [CameraPositionMode](../enums/mw.CameraPositionMode.md) <br> 摄像机位置模式 |
 | [CameraPreset](../enums/mw.CameraPreset.md) <br> 摄像机模式 |
 | [CameraProjectionMode](../enums/mw.CameraProjectionMode.md) <br> 摄像机镜头模式 |
 | [CameraRotationMode](../enums/mw.CameraRotationMode.md) <br> 摄像机旋转模式 |
+| [CameraSwitchBlendFunction](../enums/mw.CameraSwitchBlendFunction.md) <br> 切换摄像机时运用的混合函数 |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md) <br> 热武器瞄准模式 |
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md) <br> 热武器开火模式 |
 | [HotWeaponState](../enums/mw.HotWeaponState.md) <br> 热武器状态 |
 | [HttpRequestType](../enums/mw.HttpRequestType.md) <br> 开发给用户用的Http请求类型枚举 |
 | [HttpRequestURL](../enums/mw.HttpRequestURL.md) <br> 开发给用户用的URL枚举，需要与C++层的枚举对应 |
 | [InitialOscillatorOffset](../enums/mw.InitialOscillatorOffset.md) <br> 定义如何开始(从零开始，或者从随机值开始) |
+| [NavModifierType](../enums/mw.NavModifierType.md) <br> 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果 |
 | [OscillatorWaveform](../enums/mw.OscillatorWaveform.md) <br> 振荡器波形 |
-| [ProjectileAccelerationEnableMode](../enums/mw.ProjectileAccelerationEnableMode.md) <br> 投掷物加速启用模式 |
-| [ProjectileCollisionMode](../enums/mw.ProjectileCollisionMode.md) <br> 投掷物碰撞反馈模式 |
-| [ProjectileLineStyle](../enums/mw.ProjectileLineStyle.md) <br> 投掷物轨迹绘制的显示风格 |
-| [SwitchCameraBlendFunction](../enums/mw.SwitchCameraBlendFunction.md) <br> 切换摄像机时运用的混合函数 |
+| [ProjectileMovementStatus](../enums/mw.ProjectileMovementStatus.md) <br> 投掷物移动状态 |
 | [VehicleDriveMode4W](../enums/mw.VehicleDriveMode4W.md) <br> 四轮载具驱动模式 |
 | [VehicleDriveMode4WNew](../enums/mw.VehicleDriveMode4WNew.md) <br> 四轮载具驱动模式 |
 | [VehicleWheelPosition4W](../enums/mw.VehicleWheelPosition4W.md) <br> 四轮载具车轮位置 |
@@ -58,7 +58,8 @@ GAMEPLAY
 
 | Interfaces |
 | :-----|
-| [ShakeData](../interfaces/mw.ShakeData.md) <br> 抖动数据 |
+| [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md) <br> 抖动数据 |
+| [ProjectileMovementConfig](../interfaces/mw.ProjectileMovementConfig.md) <br> 投掷物配置类型 |
 
 
 | Modules Functions |
@@ -74,9 +75,6 @@ GAMEPLAY
 
 | Modules Type Aliases |
 | :-----|
-| **[CameraShakeData](GAMEPLAY.GAMEPLAY.md#camerashakedata)**: `Object` <br> 摄像机震动数据|
-| **[CameraSystemData](GAMEPLAY.GAMEPLAY.md#camerasystemdata)**: `Object` <br> 摄像机属性数据|
-| **[Oscillator](GAMEPLAY.GAMEPLAY.md#oscillator)**: `Object` <br> 震动数值|
 | **[VehicleGearDataNew](GAMEPLAY.GAMEPLAY.md#vehiclegeardatanew)**: `Object` <br> 四轮载具挡位属性|
 | **[VehicleWheelDataNew](GAMEPLAY.GAMEPLAY.md#vehiclewheeldatanew)**: `Object` <br> 四轮载具车轮属性|
 
@@ -235,105 +233,6 @@ ___
 ## Modules Type Aliases
 
 
-___
-
-### CameraShakeData <Score text="CameraShakeData" /> 
-
-Ƭ **CameraShakeData**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-摄像机震动数据
-
-::: warning Precautions
-
-摄像机震动数据
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fovOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | FOV振荡 |
-| `locXOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置X轴振荡 |
-| `locYOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置Y轴振荡 |
-| `locZOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 位置Z轴振荡 |
-| `rotPitchOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Pitch轴振荡 |
-| `rotRollOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Roll轴振荡 |
-| `rotYawOscillation?` | [`Oscillator`](Core.mw.md#oscillator) | 旋转Yaw轴振荡 |
-___
-
-### CameraSystemData <Score text="CameraSystemData" /> 
-
-Ƭ **CameraSystemData**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-摄像机属性数据
-
-::: warning Precautions
-
-主要给载具摄像机使用
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `cameraDownLimitAngle?` | `number` | **`Description`** 向下限制角度 |
-| `cameraFOV?` | `number` | **`Description`** 视场 |
-| `cameraLocationLagSpeed?` | `number` | **`Description`** 摄像机位置延迟速度 |
-| `cameraLocationMode?` | [`CameraLocationMode`](../enums/mw.CameraLocationMode.md) | **`Description`** 摄像机位置模式 |
-| `cameraProjectionMode?` | [`CameraProjectionMode`](../enums/mw.CameraProjectionMode.md) | **`Description`** 投影模式 |
-| `cameraRelativeTransform?` | [`Transform`](../classes/mw.Transform.md) | **`Description`** 摄像机相对Transform |
-| `cameraRotationLagSpeed?` | `number` | **`Description`** 摄像机旋转延迟速度 |
-| `cameraRotationMode?` | [`CameraRotationMode`](../enums/mw.CameraRotationMode.md) | **`Description`** 摄像机朝向模式 |
-| `cameraUpLimitAngle?` | `number` | **`Description`** 向上限制角度 |
-| `cameraWorldTransform?` | [`Transform`](../classes/mw.Transform.md) | **`Description`** 摄像机世界Transform |
-| `enableCameraCollision?` | `boolean` | **`Description`** 是否有摄像机碰撞 |
-| `enableCameraLocationLag?` | `boolean` | **`Description`** 开启摄像机位置延迟 |
-| `enableCameraRotationLag?` | `boolean` | **`Description`** 开启摄像机旋转延迟 |
-| `enableFadeEffect?` | `boolean` | **`Description`** 是否开启物体透明 |
-| `enableRaiseCamera?` | `boolean` | **`Description`** 开启碰撞抬高 |
-| `fadeEffectValue?` | `number` | **`Description`** 物体透明度 |
-| `orthoFarClipPlane?` | `number` | **`Description`** 正交视图远平面距离 |
-| `orthoNearClipPlane?` | `number` | **`Description`** 正交视图近平面距离 |
-| `orthoWidth?` | `number` | **`Description`** 正交宽度 |
-| `raiseCameraHeight?` | `number` | **`Description`** 抬高高度 |
-| `slotOffset?` | [`Vector`](../classes/mw.Vector.md) | **`Description`** 摄像机位置偏移 |
-| `targetArmLength?` | `number` | **`Description`** 距离调整 |
-| `targetOffset?` | [`Vector`](../classes/mw.Vector.md) | **`Description`** 挂点位置偏移 |
-___
-
-### Oscillator <Score text="Oscillator" /> 
-
-Ƭ **Oscillator**: `Object`
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since:027 reason:API重构 replacement:
-
-震动数值
-
-::: warning Precautions
-
-震动数值
-
-:::
-
-#### Type declaration
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `amplitude?` | `number` | 正弦振荡的幅度 |
-| `frequency?` | `number` | 正弦振荡的频率 |
-| `waveform?` | [`OscillatorWaveform`](../enums/mw.OscillatorWaveform.md) | 用于振荡的波形类型 |
 ___
 
 ### VehicleGearDataNew <Score text="VehicleGearDataNew" /> 

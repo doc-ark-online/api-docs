@@ -23,6 +23,12 @@ UTILITY
 | [GameObjPoolSourceType](../enums/mwext.GameObjPoolSourceType.md) <br> GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 |
 
 
+| Interfaces |
+| :-----|
+| [ILeaderboardItemView](../interfaces/mwext.ILeaderboardItemView.md) <br> 一条数据的View接口 |
+| [ILeaderboardPanelView](../interfaces/mwext.ILeaderboardPanelView.md) <br> 主面板View接口 |
+
+
 | Modules Type Aliases |
 | :-----|
 | **[LeaderboardPlayerData](UTILITY.UTILITY.md#leaderboardplayerdata)**: `Object` <br> 排行榜玩家数据类型|

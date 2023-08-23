@@ -51,17 +51,15 @@ TYPE
 | :-----|
 | **[BoolResponse](TYPE.TYPE.md#boolresponse)**: (`success`: `boolean`) => `void` <br> 返回bool的回调|
 | **[BroadcastMessageResult](TYPE.TYPE.md#broadcastmessageresult)**: `Object` <br> 发送消息的结果|
-| **[DecorationTuple](TYPE.TYPE.md#decorationtuple)**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)] <br> 运行时态角色身上的挂件数据|
 | **[DelegateFuncType](TYPE.TYPE.md#delegatefunctype)**: (...`arg`: `unknown`[]) => `unknown` <br> 代理回调函数签名|
 | **[DownloadDataResponse](TYPE.TYPE.md#downloaddataresponse)**: () => `void` <br> 下载角色形象的回调，无参数|
 | **[EmptyCallback](TYPE.TYPE.md#emptycallback)**: () => `void` <br> 空的回调函数类型|
 | **[HttpResponse](TYPE.TYPE.md#httpresponse)**: (`result`: `boolean`, `content`: `string`, `responseCode`: `number`) => `void` <br> Http请求的回调消息格式|
 | **[LoadAppearanceDataAllCompletedCallback](TYPE.TYPE.md#loadappearancedataallcompletedcallback)**: () => `void` <br> 角色编辑器数据加载完成后的回调|
-| **[LoadDecorationsAllCompletedCallback](TYPE.TYPE.md#loaddecorationsallcompletedcallback)**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void` <br> 移动角色编辑器挂件加载完成后的回调|
 | **[MGSEvent](TYPE.TYPE.md#mgsevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
 | **[MGSResponse](TYPE.TYPE.md#mgsresponse)**: (`isSuccess`: `boolean`, `jsonData`: `string`) => `void` <br> 收到233回复|
 | **[OnArkBalanceUpdated](TYPE.TYPE.md#onarkbalanceupdated)**: (`amount`: `number`) => `void` <br> 客户端接收余额更新的消息格式|
-| **[OnDescriptionChanged](TYPE.TYPE.md#ondescriptionchanged)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
+| **[OnDescriptionChange](TYPE.TYPE.md#ondescriptionchange)**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void` <br> 外观加载细节变化委托|
 | **[OnDescriptionComplete](TYPE.TYPE.md#ondescriptioncomplete)**: (`character`: [`Character`](../classes/mw.Character.md)) => `void` <br> 外观加载完成委托|
 | **[OnMovementModeChange](TYPE.TYPE.md#onmovementmodechange)**: (`mode`: [`MovementMode`](../enums/mw.MovementMode.md)) => `void` <br> 移动状态切换委托|
 | **[OnOrderDelivered](TYPE.TYPE.md#onorderdelivered)**: (`playerId`: `number`, `orderId`: `string`, `commodityId`: `string`, `amount`: `number`, `confirmOrder`: (`bReceived`: `boolean`) => `void`) => `void` <br> 服务端接收发货通知的消息格式|
@@ -123,17 +121,6 @@ ___
 | :------ | :------ | :------ |
 | `code` | [`MessageState`](../enums/mw.MessageState.md) | 发送消息的状态 |
 | `message` | `string` | 详细信息 |
-___
-
-### DecorationTuple <Score text="DecorationTuple" /> 
-
-Ƭ **DecorationTuple**: [`string`, [`Decoration`](../classes/Core.mw.Decoration.md), [`GameObject`](../classes/mw.GameObject.md)]
-
-运行时态角色身上的挂件数据
-
-**`Deprecated`**
-
-info:该接口已废弃，在该接口被删除前会仍保持可用，请尽快使用替换方案以免出现问题 since: 027 reason:功能改变 replacement: 使用style.advance.slotAndAttachment属性相关功能替换
 ___
 
 ### DelegateFuncType <Score text="DelegateFuncType" /> 
@@ -232,27 +219,6 @@ ___
 `void`
 ___
 
-### LoadDecorationsAllCompletedCallback <Score text="LoadDecorationsAllCompletedCallback" /> 
-
-Ƭ **LoadDecorationsAllCompletedCallback**: (`data`: [`DecorationTuple`](Core.mw.md#decorationtuple)[]) => `void`
-
-#### Type declaration
-
-• (`data`): `void`
-
-移动角色编辑器挂件加载完成后的回调
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | [`DecorationTuple`](Core.mw.md#decorationtuple)[] |
-
-##### Returns
-
-`void`
-___
-
 ### MGSEvent <Score text="MGSEvent" /> 
 
 Ƭ **MGSEvent**: (`jsonData`: `string`) => `void`
@@ -317,9 +283,9 @@ ___
 `void`
 ___
 
-### OnDescriptionChanged <Score text="OnDescriptionChanged" /> 
+### OnDescriptionChange <Score text="OnDescriptionChange" /> 
 
-Ƭ **OnDescriptionChanged**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
+Ƭ **OnDescriptionChange**: (`operationCode`: `number`, `index`: `number`, `value`: `unknown`) => `void`
 
 #### Type declaration
 

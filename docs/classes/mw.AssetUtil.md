@@ -22,7 +22,7 @@
 
 使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
 ```ts
-@Class
+@Component
 export default class AssetExample extends Script {
 
     protected onStart(): void {
@@ -65,7 +65,7 @@ ___
 
 使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
 ```ts
-@Class
+@Component
 export default class AssetExample extends Script {
 
     protected onStart(): void {

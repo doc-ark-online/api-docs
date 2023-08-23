@@ -25,16 +25,39 @@ mwext
 | [LeaderboardModuleBaseC](../classes/mwext.LeaderboardModuleBaseC.md) <br> 排行榜模块-客户端|
 | [LeaderboardModuleBaseS](../classes/mwext.LeaderboardModuleBaseS.md) <br> 排行榜模块-服务端|
 | [ModuleC](../classes/mwext.ModuleC.md) <br> 客户端模块的基类|
-| [ModuleManager](../classes/mwext.ModuleManager.md) <br> 模块管理|
 | [ModuleS](../classes/mwext.ModuleS.md) <br> 服务端模块的基类|
+| [ModuleService](../classes/mwext.ModuleService.md) <br> 模块管理|
 | [ObjPool](../classes/mwext.ObjPool.md) <br> 对象池|
 | [Subdata](../classes/mwext.Subdata.md) <br> 数据控制类的基类|
 
+| Interfaces |
+| :-----|
+| [ILeaderboardItemView](../interfaces/mwext.ILeaderboardItemView.md) <br> 一条数据的View接口|
+| [ILeaderboardPanelView](../interfaces/mwext.ILeaderboardPanelView.md) <br> 主面板View接口|
+
 | Type Aliases |
 | :-----|
+| **[LeaderboardModuleTypeC](Extension.mwext.md#leaderboardmoduletypec)**: [`LeaderboardModuleBaseC`](../classes/mwext.LeaderboardModuleBaseC.md)<`any`\> <br> 排行榜模块-客户端type|
+| **[LeaderboardModuleTypeS](Extension.mwext.md#leaderboardmoduletypes)**: [`LeaderboardModuleBaseS`](../classes/mwext.LeaderboardModuleBaseS.md)<`any`\> <br> 排行榜模块-服务端type|
 | **[LeaderboardPlayerData](Extension.mwext.md#leaderboardplayerdata)**: `Object` <br> 排行榜玩家数据类型|
 
 ## Type Aliases
+
+### LeaderboardModuleTypeC <Score text="LeaderboardModuleTypeC" /> 
+
+Ƭ **LeaderboardModuleTypeC**: [`LeaderboardModuleBaseC`](../classes/mwext.LeaderboardModuleBaseC.md)<`any`\>
+
+排行榜模块-客户端type
+
+___
+
+### LeaderboardModuleTypeS <Score text="LeaderboardModuleTypeS" /> 
+
+Ƭ **LeaderboardModuleTypeS**: [`LeaderboardModuleBaseS`](../classes/mwext.LeaderboardModuleBaseS.md)<`any`\>
+
+排行榜模块-服务端type
+
+___
 
 ### LeaderboardPlayerData <Score text="LeaderboardPlayerData" /> 
 

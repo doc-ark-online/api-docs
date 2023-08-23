@@ -21,7 +21,7 @@
 
 使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
 ```ts
-@Class
+@Component
 export default class LocaleExample extends Script {
 
     protected onStart(): void {

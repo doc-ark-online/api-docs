@@ -16,26 +16,60 @@
 
 | Properties |
 | :-----|
+| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)|
 
 | Accessors |
 | :-----|
 | **[BGMVolumeScale](mw.SoundService.md#bgmvolumescale)**(): `number` <br> BGM音量|
-| **[BGMVolumeScale](mw.SoundService.md#bgmvolumescale-1)**(): `number` <br> BGM音量|
-| **[volumeScale](mw.SoundService.md#volumescale-1)**(): `number` <br> 音效的音量|
+| **[volumeScale](mw.SoundService.md#volumescale)**(): `number` <br> 音效的音量|
 
 | Methods |
 | :-----|
-| **[get3DSound](mw.SoundService.md#get3dsound)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\> <br> 根据播放id获取一个3DSound|
-| **[play3DSound](mw.SoundService.md#play3dsound-1)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number` <br> 在目标播放3D音效|
-| **[playBGM](mw.SoundService.md#playbgm-1)**(`assetId`: `string`, `volume?`: `number`): `void` <br> 播放背景音乐|
-| **[playSound](mw.SoundService.md#playsound-1)**(`assetId`: `string`, `loopCount?`: `number`, `volume?`: `number`): `string` <br> 根据资源Id播放声音|
-| **[stop3DSound](mw.SoundService.md#stop3dsound-1)**(`playId`: `number`): `void` <br> 停止3D声音|
-| **[stopAll3DSound](mw.SoundService.md#stopall3dsound-1)**(): `void` <br> 停止一切3D声音|
-| **[stopAllSound](mw.SoundService.md#stopallsound-1)**(): `void` <br> 停止除BGM以外的一切2D声音|
-| **[stopBGM](mw.SoundService.md#stopbgm-1)**(): `void` <br> 停止背景音乐|
-| **[stopSound](mw.SoundService.md#stopsound-1)**(`assetId`: `string`): `void` <br> 根据资源Id停止声音|
+| **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\> <br> 根据播放id获取一个3DSound|
+| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number` <br> 在目标播放3D音效|
+| **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void` <br> 播放背景音乐|
+| **[playSound](mw.SoundService.md#playsound)**(`assetId`: `string`, `loopCount?`: `number`, `volume?`: `number`): `string` <br> 根据资源Id播放声音|
+| **[stop3DSound](mw.SoundService.md#stop3dsound)**(`playId`: `number`): `void` <br> 停止3D声音|
+| **[stopAll3DSound](mw.SoundService.md#stopall3dsound)**(): `void` <br> 停止一切3D声音|
+| **[stopAllSound](mw.SoundService.md#stopallsound)**(): `void` <br> 停止除BGM以外的一切2D声音|
+| **[stopBGM](mw.SoundService.md#stopbgm)**(): `void` <br> 停止背景音乐|
+| **[stopSound](mw.SoundService.md#stopsound)**(`assetId`: `string`): `void` <br> 根据资源Id停止声音|
 
 ## Properties
+
+### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
+
+▪ `Static` `Readonly` **onPlaySoundComplete**: [`Action1`](mw.Action1.md)<`string` \| `number`\>
+
+播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)
+
+使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效
+```ts
+@Component
+export default class SoundExample extends Script {
+
+    protected onStart(): void {
+        if (!SystemUtil.isClient()) return;
+        this.test();
+    }
+
+    private async test(): Promise<void> {
+        const player = await Player.asyncGetLocalPlayer();
+        const boomSoundAssetId = "13896";
+        //在玩家当前坐标处播放爆炸音效
+        const playId = SoundService.play3DSound(boomSoundAssetId, player.character.worldLocation);
+        //音效播放完成回调
+        SoundService.onPlaySoundComplete.add((resId) => {
+            if (resId == playId) {
+                //打印声音播放完成
+                console.log("Play sound complete.")
+            }
+        });
+    }
+}
+```
+
+## Accessors
 
 ### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
@@ -115,16 +149,16 @@ ___
 
 ## Methods
 
-### get3DSound <Score text="get" /> 
+### get3DSoundById <Score text="get" /> 
 
-• `Static` **get3DSound**(`playId`): `Promise`<[`Sound`](mw.Sound.md)\> <Badge type="tip" text="client" />
+• `Static` **get3DSoundById**(`playId`): `Promise`<[`Sound`](mw.Sound.md)\> <Badge type="tip" text="client" />
 
 根据播放id获取一个3DSound
 
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -135,13 +169,13 @@ export default class SoundExample extends mw.Script {
     private async test(): Promise<void> {
         const player = await mw.asyncGetCurrentPlayer();
         const bgmSoundAssetId = "12721";
-        const cubeId = "7669";
+        const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
             obj.worldLocation = new mw.Vector(0, 0, 0);
         })
         let playId = SoundService.play3DSound(bgmSoundAssetId, new mw.Vector(0, 0, 0), 0);
         InputUtil.onKeyDown(Keys.F, () => {
-            SoundService.get3DSound(playId).then(obj => {
+            SoundService.get3DSoundById(playId).then(obj => {
                 obj.worldLocation = player.character.worldLocation;
             })
         })
@@ -174,7 +208,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -184,7 +218,7 @@ export default class SoundExample extends mw.Script {
 
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
-        const cubeId = "7669";
+        const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
             obj.worldLocation = new mw.Vector(0, 0, 0);
         })
@@ -233,7 +267,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -275,7 +309,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -320,7 +354,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -330,7 +364,7 @@ export default class SoundExample extends mw.Script {
 
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
-        const cubeId = "7669";
+        const cubeId = "197386";
         mw.GameObject.asyncSpawn({ guid: cubeId }).then(obj => {
             obj.worldLocation = new mw.Vector(0, 0, 0);
         })
@@ -368,7 +402,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -378,7 +412,7 @@ export default class SoundExample extends mw.Script {
 
     private async test(): Promise<void> {
         const bgmSoundAssetId = "12721";
-        const cubeId = "7669";
+        const cubeId = "197386";
         for (let i = 0;
 i < 10;
 i++) {
@@ -408,7 +442,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -449,7 +483,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {
@@ -486,7 +520,7 @@ ___
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
 ```ts
-@Core.Component
+@Component
 export default class SoundExample extends mw.Script {
 
     protected onStart(): void {

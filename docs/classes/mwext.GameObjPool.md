@@ -6,7 +6,7 @@ GameObject对象池
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends mw.Script {
 
     protected onStart(): void {
@@ -15,9 +15,9 @@ export default class GameObjPoolExample extends mw.Script {
 
     //通过对象池动态创建一个方块
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
-            obj.worldLocation = new mw.Vector(0, 0, 0);
+            obj.worldTransform.position = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
                 GameObjPool.despawn(obj);
@@ -65,7 +65,7 @@ ___
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends Script {
 
     protected onStart(): void {
@@ -74,9 +74,9 @@ export default class GameObjPoolExample extends Script {
 
     //通过对象池动态创建一个方块
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
-            obj.worldLocation = new mw.Vector(0, 0, 0);
+            obj.worldTransform.position = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
                 GameObjPool.despawn(obj);
@@ -116,7 +116,7 @@ ___
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends Script {
 
     protected onStart(): void {
@@ -127,16 +127,16 @@ export default class GameObjPoolExample extends Script {
 
     //通过对象池动态创建多个方块
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         //创建10个方块 且位置不重叠
         for (let i = 0;
 i < 10;
 i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
-                obj.worldLocation = new mw.Vector(i * 300, 0, 0);
+                obj.worldLocation = new Vector(i * 300, 0, 0);
                 //回收该对象但不隐藏
                 GameObjPool.despawn(obj);
-                obj.worldLocation = new mw.Vector(i * 300, 0, 0);
+                obj.worldLocation = new Vector(i * 300, 0, 0);
                 obj.setVisibility(PropertyStatus.On);
             });
         }
@@ -167,7 +167,7 @@ ___
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends Script {
 
     protected onStart(): void {
@@ -178,19 +178,19 @@ export default class GameObjPoolExample extends Script {
 
     //通过对象池动态创建多个不同物体并销毁
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         const cubeAssetId2 = "7675";
         //创建10个方块 且位置不重叠
         for (let i = 0;
 i < 10;
 i++) {
             GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
-                obj.worldLocation = new mw.Vector(i * 300, 0, 0);
+                obj.worldLocation = new Vector(i * 300, 0, 0);
                 //只回收前5个方块
                 if (i <= 5) return;
                 //回收该对象但不隐藏
                 GameObjPool.despawn(obj);
-                obj.worldLocation = new mw.Vector(i * 300, 0, 0);
+                obj.worldLocation = new Vector(i * 300, 0, 0);
                 obj.setVisibility(PropertyStatus.On);
             });
         }
@@ -199,12 +199,12 @@ i++) {
 i < 10;
 i++) {
             GameObjPool.asyncSpawn(cubeAssetId2, GameObjPoolSourceType.Asset).then(obj => {
-                obj.worldLocation = new mw.Vector(i * 300, 300, 0);
+                obj.worldLocation = new Vector(i * 300, 300, 0);
                 //只回收前5个球体
                 if (i <= 5) return;
                 //回收该对象但不隐藏
                 GameObjPool.despawn(obj);
-                obj.worldLocation = new mw.Vector(i * 300, 300, 0);
+                obj.worldLocation = new Vector(i * 300, 300, 0);
                 obj.setVisibility(PropertyStatus.On);
             });
         }
@@ -228,7 +228,7 @@ ___
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends Script {
 
     protected onStart(): void {
@@ -237,9 +237,9 @@ export default class GameObjPoolExample extends Script {
 
     //通过对象池动态创建一个方块
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         GameObjPool.asyncSpawn(cubeAssetId, GameObjPoolSourceType.Asset).then(obj => {
-            obj.worldLocation = new mw.Vector(0, 0, 0);
+            obj.worldTransform.position = new Vector(0, 0, 0);
             setTimeout(() => {
                 //5秒后回收该方块
                 GameObjPool.despawn(obj);
@@ -273,7 +273,7 @@ ___
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块
 ```ts
-@Class
+@Component
 export default class GameObjPoolExample extends Script {
 
     protected onStart(): void {
@@ -282,10 +282,10 @@ export default class GameObjPoolExample extends Script {
 
     //通过对象池动态创建一个方块
     public createCube(): void {
-        const cubeAssetId = "7669";
+        const cubeAssetId = "197386";
         AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
             let obj = GameObjPool.spawn(cubeAssetId);
-            obj.worldLocation = new mw.Vector(0, 0, 0);
+            obj.worldTransform.position = new Vector(0, 0, 0);
         });
     }
 }

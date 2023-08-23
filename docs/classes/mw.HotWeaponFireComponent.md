@@ -6,7 +6,7 @@
 
 使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下:
 ```ts
-@Class
+@Component
 export default class HotWeaponFireSample1 extends Script {
     protected onStart(): void {
         // 构造
@@ -37,7 +37,7 @@ export default class HotWeaponFireSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndContinuousFireServer](mw.HotWeaponFireComponent.md#onendcontinuousfireserver)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndContinuousFire](mw.HotWeaponFireComponent.md#onendcontinuousfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[onEndFire](mw.HotWeaponFireComponent.md#onendfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 | **[onStartFire](mw.HotWeaponFireComponent.md#onstartfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 
@@ -58,9 +58,9 @@ export default class HotWeaponFireSample1 extends Script {
 
 ## Properties
 
-### onEndContinuousFireServer <Score text="onEndContinuousFireServer" /> 
+### onEndContinuousFire <Score text="onEndContinuousFire" /> 
 
-• **onEndContinuousFireServer**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndContinuousFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
 
 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -218,6 +218,24 @@ ___
 [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md)
 
 当前的开火模式
+
+• `set` **fireMode**(`newFireMode`): `void` 
+
+切换设置当前开火模式
+
+
+::: warning Precautions
+
+装备前只能在服务器调用，装备后可在客户端调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newFireMode` | [`HotWeaponFireMode`](../enums/mw.HotWeaponFireMode.md) |  新的热武器开火模式 |
+
 
 ___
 

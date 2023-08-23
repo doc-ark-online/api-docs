@@ -8,11 +8,11 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends [`LeaderboardModuleBaseC`](mwext.LeaderboardModuleBaseC.md)<`any`\> |
+| `T` | extends [`LeaderboardModuleTypeC`](../modules/Extension.mwext.md#leaderboardmoduletypec) |
 
 ## Hierarchy
 
-- [`ModuleS`](mwext.ModuleS.md)<`T`, ``null``\>
+- [`ModuleS`](mwext.ModuleS.md)<`T`, `any`\>
 
   ↳ **`LeaderboardModuleBaseS`**
 
@@ -26,6 +26,8 @@
 | Accessors |
 | :-----|
 | **[currentData](mwext.ModuleS.md#currentdata)**(): `S` <br> 调用服务器方法的玩家的DataOwner|
+| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): [`Player`](mw.Player.md) <br> 调用服务器方法的玩家|
+| **[currentPlayerId](mwext.ModuleS.md#currentplayerid)**(): `number` <br> 获取调用服务器方法的玩家ID|
 :::
 
 
@@ -40,6 +42,8 @@
 ::: details 点击查看继承
 | Methods |
 | :-----|
+| **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
 | **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S` <br> 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](mwext.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|

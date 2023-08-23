@@ -21,7 +21,7 @@
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 ```ts
-@Class
+@Component
 export default class CharacterStyleExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
@@ -308,7 +308,7 @@ ___
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 ```ts
-@Class
+@Component
 export default class CharacterStyleExample extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {

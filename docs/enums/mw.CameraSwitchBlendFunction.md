@@ -1,6 +1,6 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / SwitchCameraBlendFunction
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / CameraSwitchBlendFunction
 
-# SwitchCameraBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="SwitchCameraBlendFunction" />
+# CameraSwitchBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="CameraSwitchBlendFunction" />
 
 切换摄像机时运用的混合函数
 
@@ -8,11 +8,11 @@
 
 | Enumeration Members |
 | :-----|
-| **[Cubic](mw.SwitchCameraBlendFunction.md#cubic)** = ``1`` <br> |
-| **[EaseIn](mw.SwitchCameraBlendFunction.md#easein)** = ``2`` <br> |
-| **[EaseInOut](mw.SwitchCameraBlendFunction.md#easeinout)** = ``4`` <br> |
-| **[EaseOut](mw.SwitchCameraBlendFunction.md#easeout)** = ``3`` <br> |
-| **[Linear](mw.SwitchCameraBlendFunction.md#linear)** = ``0`` <br> |
+| **[Cubic](mw.CameraSwitchBlendFunction.md#cubic)** = ``1`` <br> |
+| **[EaseIn](mw.CameraSwitchBlendFunction.md#easein)** = ``2`` <br> |
+| **[EaseInOut](mw.CameraSwitchBlendFunction.md#easeinout)** = ``4`` <br> |
+| **[EaseOut](mw.CameraSwitchBlendFunction.md#easeout)** = ``3`` <br> |
+| **[Linear](mw.CameraSwitchBlendFunction.md#linear)** = ``0`` <br> |
 
 ## Enumeration Members
 

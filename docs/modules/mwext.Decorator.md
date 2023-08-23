@@ -9,7 +9,8 @@ Decorator
 | Functions |
 | :-----|
 | **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void` <br> 属性装饰器-持久化存储属性|
+| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <br> 方法注解-被注解的net方法不需要回复客户端|
+| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void` <br> 属性注解-持久化存储属性|
 
 ## Functions
 
@@ -52,11 +53,40 @@ Decorator
 
 ___
 
+### noReply <Score text="noReply" /> 
+
+• **noReply**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <Badge type="tip" text="server" />
+
+方法注解-被注解的net方法不需要回复客户端
+
+
+#### Returns
+
+`fn`
+
+注解方法
+
+• (`target`, `fnName`, `descriptor`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\> |
+| `fnName` | `string` |
+| `descriptor` | `PropertyDescriptor` |
+
+##### Returns
+
+`void`
+
+___
+
 ### persistence <Score text="persistence" /> 
 
 • **persistence**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void` 
 
-属性装饰器-持久化存储属性
+属性注解-持久化存储属性
 
 ::: warning Precautions
 
@@ -75,7 +105,7 @@ ___
 
 `fn`
 
-装饰器方法体
+注解方法
 
 • (`target`, `propertyKey`): `void`
 

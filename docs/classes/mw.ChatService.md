@@ -10,7 +10,8 @@
 
 | Methods |
 | :-----|
-| **[asyncBroadcastMessage](mw.ChatService.md#asyncbroadcastmessage)**(`type`: [`MessageType`](../enums/mw.MessageType.md), `content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <br> 发送富文本消息到聊天窗口中。|
+| **[asyncBroadcastMessage](mw.ChatService.md#asyncbroadcastmessage)**(`type`: [`MessageType`](../enums/mw.MessageType.md), `content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <br> 发送富文本消息到聊天窗口中，禁止回调中调用该接口。|
+| **[asyncSendMessage](mw.ChatService.md#asyncsendmessage)**(`content`: `string`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <br> 发送快捷语消息，自动携带发送者名称。与聊天框中输入语言一致。不支持富文本。|
 
 ## Methods
 
@@ -18,13 +19,13 @@
 
 • `Static` **asyncBroadcastMessage**(`type`, `content`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="server" />
 
-发送富文本消息到聊天窗口中。
-禁止在回调中调用该接口。限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。需要用到富文本格式，富文本全部功能请查看产品手册。
+发送富文本消息到聊天窗口中，禁止回调中调用该接口。
+限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
 
 
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示富文本字体的效果。代码如下：
 ```ts
-@Class
+@Component
  export default class messageExample extends Script {
 
      protected onStart(): void {
@@ -49,6 +50,38 @@
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `type` | [`MessageType`](../enums/mw.MessageType.md) | 发送消息类型 |
+| `content` | `string` | 消息内容 |
+
+#### Returns
+
+`Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\>
+
+发送消息的结果
+
+___
+
+### asyncSendMessage <Score text="asyncSendMessage" /> 
+
+• `Static` **asyncSendMessage**(`content`): `Promise`<[`BroadcastMessageResult`](../modules/Core.mw.md#broadcastmessageresult)\> <Badge type="tip" text="client" />
+
+发送快捷语消息，自动携带发送者名称。与聊天框中输入语言一致。不支持富文本。
+
+
+使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"MetaWorld is funny"的效果。代码如下：
+```
+@Component
+ export default class messageExample extends Script {
+
+     protected onStart(): void {
+          let content = "MetaWorld is funny";
+          RoomService.getInstance().asyncBroadcastMessage(content);
+     }
+ }
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `content` | `string` | 消息内容 |
 
 #### Returns

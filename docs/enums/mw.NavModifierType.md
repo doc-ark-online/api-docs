@@ -1,17 +1,17 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / AreaClass
+[GAMEPLAY](../groups/Core.GAMEPLAY.md) / NavModifierType
 
-# AreaClass <Badge type="tip" text="Enumeration" /> <Score text="AreaClass" />
+# NavModifierType <Badge type="tip" text="Enumeration" /> <Score text="NavModifierType" />
 
-寻路区域屏障寻路计算类型
+寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果
 
 ## Table of contents
 
 | Enumeration Members |
 | :-----|
-| **[Default](mw.AreaClass.md#default)** = ``1`` <br> |
-| **[LowHeight](mw.AreaClass.md#lowheight)** = ``2`` <br> |
-| **[Null](mw.AreaClass.md#null)** = ``0`` <br> |
-| **[Obstacle](mw.AreaClass.md#obstacle)** = ``3`` <br> |
+| **[Default](mw.NavModifierType.md#default)** = ``1`` <br> |
+| **[LowHeight](mw.NavModifierType.md#lowheight)** = ``2`` <br> |
+| **[Null](mw.NavModifierType.md#null)** = ``0`` <br> |
+| **[Obstacle](mw.NavModifierType.md#obstacle)** = ``3`` <br> |
 
 ## Enumeration Members
 

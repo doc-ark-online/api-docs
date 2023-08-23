@@ -4,9 +4,16 @@ Interfaces
 # Interfaces <Badge type="tip" text="Groups" /> <Score text="Interfaces" />
 
 
+## C
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [CameraShakeInfo](interfaces/mw.CameraShakeInfo.md) | 抖动数据 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+
+
 ## D
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [DataStorageResult](interfaces/mw.DataStorageResult.md) | 数据储存返回值 | [DATA](groups/DATA.DATA.md) |
 | [DelegateInterface](interfaces/mw.DelegateInterface.md) | 委托接口 | [TYPE](groups/TYPE.TYPE.md) |
 
 
@@ -16,16 +23,23 @@ Interfaces
 | [GameObjectInfo](interfaces/mw.GameObjectInfo.md) | 构建物体的信息 | [TYPE](groups/TYPE.TYPE.md) |
 
 
+## I
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 一条数据的View接口 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 主面板View接口 | [UTILITY](groups/UTILITY.UTILITY.md) |
+
+
 ## M
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [MulticastDelegateInterface](interfaces/mw.MulticastDelegateInterface.md) | 多播委托接口 | [TYPE](groups/TYPE.TYPE.md) |
 
 
-## S
+## P
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ShakeData](interfaces/mw.ShakeData.md) | 抖动数据 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ProjectileMovementConfig](interfaces/mw.ProjectileMovementConfig.md) | 投掷物配置类型 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## T

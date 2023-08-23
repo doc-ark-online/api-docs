@@ -6,17 +6,17 @@
 
 ::: warning Precautions
 
-所有的服务端模块都必须继承这个类，才能被ModuleManager管理
+所有的服务端模块都必须继承这个类，才能被ModuleService管理
 
 :::
 
 使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息
 ```ts
-@Class
+@Component
 export default class ModuleSExample extends Script {
 
     protected onStart(): void {
-        ModuleManager.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
+        ModuleService.registerModule(PlayerModuleS, PlayerModuleC, PlayerModuleData);
     }
 
 }
@@ -38,15 +38,15 @@ class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
         console.log("-----------服务端-player模块开始-----------");
     }
 
-    protected onPlayerEnterGame(player: mw.Player): void {
+    protected onPlayerEnterGame(player: Player): void {
         console.log("-----------服务端-player模块玩家进入游戏-----------");
     }
 
-    protected onPlayerJoined(player: mw.Player): void {
+    protected onPlayerJoined(player: Player): void {
         console.log("-----------服务端-player模块玩家加入-----------");
     }
 
-    protected onPlayerLeft(player: mw.Player): void {
+    protected onPlayerLeft(player: Player): void {
         console.log("-----------服务端-player模块玩家离开-----------");
     }
 
@@ -64,7 +64,7 @@ class PlayerModuleS extends ModuleS<PlayerModuleC, PlayerModuleData>{
     }
 }
 class PlayerModuleData extends Subdata {
-    @Decorator.saveProperty
+    @Decorator.persistence()
     private level: number;
 
     protected initDefaultData(): void {
@@ -92,20 +92,22 @@ class PlayerModuleData extends Subdata {
 
 ## Hierarchy
 
-- `NetObjectS`<`T`\>
+- **`ModuleS`**
 
-  ↳ **`ModuleS`**
-
-  ↳↳ [`LeaderboardModuleBaseS`](mwext.LeaderboardModuleBaseS.md)
+  ↳ [`LeaderboardModuleBaseS`](mwext.LeaderboardModuleBaseS.md)
 
 ## Table of contents
 
 | Accessors |
 | :-----|
 | **[currentData](mwext.ModuleS.md#currentdata)**(): `S` <br> 调用服务器方法的玩家的DataOwner|
+| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): [`Player`](mw.Player.md) <br> 调用服务器方法的玩家|
+| **[currentPlayerId](mwext.ModuleS.md#currentplayerid)**(): `number` <br> 获取调用服务器方法的玩家ID|
 
 | Methods |
 | :-----|
+| **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
 | **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S` <br> 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
 | **[onDestroy](mwext.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
@@ -115,6 +117,15 @@ class PlayerModuleData extends Subdata {
 | **[onPlayerLeft](mwext.ModuleS.md#onplayerleft)**(`player`: [`Player`](mw.Player.md)): `void` <br> 生命周期方法-玩家离开房间|
 | **[onStart](mwext.ModuleS.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
 | **[onUpdate](mwext.ModuleS.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `S` | extends [`Subdata`](mwext.Subdata.md)<`S`\> |
+
+## Accessors
 
 ### currentData <Score text="currentData" /> 
 
@@ -132,7 +143,81 @@ class PlayerModuleData extends Subdata {
 
 `S`
 
+___
+
+### currentPlayer <Score text="currentPlayer" /> 
+
+• `get` **currentPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="server" />
+
+调用服务器方法的玩家
+
+::: warning Precautions
+
+只能在服务端的rpc方法(net_开头的方法)里使用，方法执行完以后会被清除，不要在其他地方用，不要异步使用
+
+:::
+
+
+#### Returns
+
+[`Player`](mw.Player.md)
+
+___
+
+### currentPlayerId <Score text="currentPlayerId" /> 
+
+• `get` **currentPlayerId**(): `number` <Badge type="tip" text="server" />
+
+获取调用服务器方法的玩家ID
+
+::: warning Precautions
+
+只能在服务端的rpc方法(net_开头的方法)里使用，方法执行完以后会被清除，不要在其他地方用，不要异步使用
+
+:::
+
+
+#### Returns
+
+`number`
+
 ## Methods
+
+### getAllClient <Score text="getAllClient" /> 
+
+• **getAllClient**(): `T` <Badge type="tip" text="server" />
+
+获取"全部客户端"调用对象
+
+
+#### Returns
+
+`T`
+
+"全部客户端"调用对象
+
+___
+
+### getClient <Score text="getClient" /> 
+
+• **getClient**(`player`): `T` <Badge type="tip" text="server" />
+
+根据玩家获取"单客户端"调用对象
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `player` | `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家id |
+
+#### Returns
+
+`T`
+
+"单客户端"调用对象
+
+___
 
 ### getPlayerData <Score text="getPlayerData" /> 
 

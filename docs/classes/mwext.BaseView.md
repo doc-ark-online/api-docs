@@ -25,7 +25,7 @@
 | :-----|
 | **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean` <br> 是否能触发onUpdate函数|
 | **[fullScreen](mw.UIScript.md#fullscreen)**(`inFull`: `boolean`): `void` <br> 设置随父节点全屏适配,会验证父节点大小以保证跟随父节点的大小|
-| **[layer](mw.UIScript.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIManager显示UI时，|
+| **[layer](mw.UIScript.md#layer)**(): `number` <br> 获取UI的Layer层级,显示可能会影响到zOrder,使用UIService显示UI时，|
 | **[rootCanvas](mw.UIScript.md#rootcanvas)**(): [`Canvas`](mw.Canvas.md) <br> 获取UI的根Canvas节点|
 | **[uiObject](mw.UIScript.md#uiobject)**(): [`Widget`](mw.Widget.md) <br> 获取脚本挂载的UI对象|
 | **[uiWidgetBase](mw.UIScript.md#uiwidgetbase)**(): [`UserWidget`](mw.UserWidget.md) <br> 转化UIObject 为指定UserWidget对象|

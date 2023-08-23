@@ -8,7 +8,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `T` | extends `IPanelView` |
+| `T` | extends [`ILeaderboardPanelView`](../interfaces/mwext.ILeaderboardPanelView.md) |
 
 ## Hierarchy
 
@@ -37,7 +37,7 @@
 | Methods |
 | :-----|
 | **[addField](mwext.LeaderboardMainPaneBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 添加一个字段|
-| **[creatItem](mwext.LeaderboardMainPaneBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`IItemView`\> <br> 创建用于显示一条排行信息的item子UI|
+| **[creatItem](mwext.LeaderboardMainPaneBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <br> 创建用于显示一条排行信息的item子UI|
 | **[onHide](mwext.LeaderboardMainPaneBase.md#onhide)**(): `void` <br> 当UI隐藏调用|
 | **[onSelfFieldSet](mwext.LeaderboardMainPaneBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置自己的字段内容后调用，需要请复写|
 | **[onShow](mwext.LeaderboardMainPaneBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <br> 当UI显示调用|
@@ -90,14 +90,14 @@ ___
 
 ### creatItem <Score text="creatItem" /> 
 
-• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`IItemView`\> <Badge type="tip" text="client" />
+• `Protected` `Abstract` **creatItem**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <Badge type="tip" text="client" />
 
 创建用于显示一条排行信息的item子UI
 
 
 #### Returns
 
-[`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`IItemView`\>
+[`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\>
 
 一条排行信息的item子UI
 

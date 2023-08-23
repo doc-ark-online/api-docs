@@ -15,6 +15,7 @@
 | **[playOnGameObject](mw.EffectService.md#playongameobject)**(`assetId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `params?`: `Object`): `number` <br> 在一个GameObject上播放特效|
 | **[stop](mw.EffectService.md#stop)**(`playId`: `number`): `void` <br> 停止一个正在播放的特效|
 | **[stopAll](mw.EffectService.md#stopall)**(): `void` <br> 停止所有特效|
+| **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md) \): `void` <br> 停止目标对象上所有资源Id的特效|
 
 ## Methods
 
@@ -27,17 +28,17 @@
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后获取该特效对象并移动到(200, 0, 200)位置
 ```ts
-@Class
+@Component
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        const playId = EffectService.playAtPosition(fireAssetId, new mw.Vector(0, 0, 200), { loopCount: 0});
+        const playId = EffectService.playAtPosition(fireAssetId, new Vector(0, 0, 200), { loopCount: 0});
         // 5秒后移动该特效到(200, 0, 200)位置
         TimeUtil.delaySecond(5).then(() => {
             EffectService.getEffectById(playId).then((effect) => {
-                effect.worldLocation = new mw.Vector(200, 0, 200);
+                effect.worldTransform.position = new Vector(200, 0, 200);
             });
         });
     }
@@ -68,7 +69,7 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在坐标(0, 0, 200)处播放一个火焰特效
 ```ts
-@Class
+@Component
 export default class EffectExample extends Script {
 
     protected onStart(): void {
@@ -109,13 +110,13 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在所有玩家的身上播放一个火焰特效
 ```ts
-@Class
+@Component
 export default class EffectExample extends Script {
 
     protected onStart(): void {
         if (!SystemUtil.isClient()) return;
         const fireAssetId = "4330";
-        mw.getAllPlayers().forEach((player) => {
+        mw.Player.getAllPlayers().forEach((player) => {
             const playId = EffectService.playOnGameObject(fireAssetId, player.character, { loopCount: 0});
         })
     }
@@ -154,7 +155,7 @@ ___
 
 使用示例: 创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放一个火焰特效，5秒后停止特效
 ```ts
-@Class
+@Component
 export default class EffectExample extends Script {
 
     protected onStart(): void {
@@ -188,7 +189,7 @@ ___
 
 使用示例:创建一个名为EffectExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在场景中播放三个火焰特效，5秒后停止所有特效
 ```ts
-@Class
+@Component
 export default class EffectExample extends Script {
 
     protected onStart(): void {
@@ -204,4 +205,22 @@ export default class EffectExample extends Script {
     }
 }
 ```
+
+
+___
+
+### stopEffectFromHost <Score text="stopEffectFromHost" /> 
+
+• `Static` **stopEffectFromHost**(`source`, `target`): `void` <Badge type="tip" text="other" />
+
+停止目标对象上所有资源Id的特效
+
+调用端生效|服务端调用自动广播
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `source` | `string` |  特效源，playEffect的第一个参数 |
+| `target` | [`Player`](mw.Player.md) \| [`GameObject`](mw.GameObject.md) |  目标对象(Player或NPC或GameObject) |
 

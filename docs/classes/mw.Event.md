@@ -11,11 +11,11 @@
 | **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 服务器监听客户端发来的事件|
 | **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 添加本地事件的监听，添加成功可以使用dispatchEventToxxx方法执行添加的事件。|
 | **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 客户端监听服务器事件|
-| **[dispatchEventToAllClient](mw.Event.md#dispatcheventtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
-| **[dispatchEventToClient](mw.Event.md#dispatcheventtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
-| **[dispatchEventToLocal](mw.Event.md#dispatcheventtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 执行已添加的本地事件，通常与addxxxListener成对出现。|
-| **[dispatchEventToServer](mw.Event.md#dispatcheventtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 客户端发送事件给服务器|
-| **[removeListener](mw.Event.md#removelistener)**(`event`: `string` \): `void` <br> 移除事件监听器|
+| **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
+| **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
+| **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 执行已添加的本地事件，通常与addxxxListener成对出现。|
+| **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 客户端发送事件给服务器|
+| **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void` <br> 移除事件监听器|
 
 ## Methods
 
@@ -97,9 +97,9 @@ ___
 
 ___
 
-### dispatchEventToAllClient <Score text="dispatchEventToAllClient" /> 
+### dispatchToAllClient <Score text="dispatchToAllClient" /> 
 
-• `Static` **dispatchEventToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
+• `Static` **dispatchToAllClient**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给所有客户端
 
@@ -125,9 +125,9 @@ ___
 
 ___
 
-### dispatchEventToClient <Score text="dispatchEventToClient" /> 
+### dispatchToClient <Score text="dispatchToClient" /> 
 
-• `Static` **dispatchEventToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
+• `Static` **dispatchToClient**(`player`, `eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="server" />
 
 服务器发送事件给指定客户端
 
@@ -154,9 +154,9 @@ ___
 
 ___
 
-### dispatchEventToLocal <Score text="dispatchEventToLocal" /> 
+### dispatchToLocal <Score text="dispatchToLocal" /> 
 
-• `Static` **dispatchEventToLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) 
+• `Static` **dispatchToLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) 
 
 执行已添加的本地事件，通常与addxxxListener成对出现。
 
@@ -176,9 +176,9 @@ ___
 
 ___
 
-### dispatchEventToServer <Score text="dispatchEventToServer" /> 
+### dispatchToServer <Score text="dispatchToServer" /> 
 
-• `Static` **dispatchEventToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />
+• `Static` **dispatchToServer**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <Badge type="tip" text="client" />
 
 客户端发送事件给服务器
 
@@ -215,5 +215,5 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `event` | `string` \| [`EventListener`](mw.EventListener.md) | 监听器 |
+| `event` | [`EventListener`](mw.EventListener.md) | 监听器 |
 

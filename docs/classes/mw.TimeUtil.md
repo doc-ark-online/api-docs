@@ -17,6 +17,7 @@
 | **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
 | **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
 | **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
+| **[deltatime](mw.TimeUtil.md#deltatime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
 | **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
 | **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
 | **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
@@ -38,7 +39,7 @@
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每帧输出dt
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -76,7 +77,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -114,7 +115,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -160,7 +161,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -201,7 +202,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -232,6 +233,27 @@ Promise
 
 ___
 
+### deltatime <Score text="deltatime" /> 
+
+• `Static` **deltatime**(): `number` 
+
+每一帧经过的时间 (单位：秒)
+
+::: warning Precautions
+
+调用这个函数之前两次Update函数调用之间的间隔时间
+
+:::
+
+
+#### Returns
+
+`number`
+
+number（单位：秒）
+
+___
+
 ### elapsedTime <Score text="elapsedTime" /> 
 
 • `Static` **elapsedTime**(): `number` 
@@ -247,7 +269,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -282,7 +304,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -322,7 +344,7 @@ ___
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {
@@ -378,7 +400,7 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳
 ```ts
-@Class
+@Component
 export default class TimeExample extends Script {
 
     protected onStart(): void {

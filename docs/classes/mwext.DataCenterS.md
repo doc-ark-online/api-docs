@@ -6,13 +6,13 @@
 
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键）
 ```ts
-@Class
+@Component
 export default class DataCenterSExample extends Script {
 
     protected onStart(): void {
         if (SystemUtil.isServer()) {
-            DataCenterS.onPlayerJoined.add(this.onPlayerJoin, this);
-            DataCenterS.onPlayerLeft.add(this.onPlayerLeave, this);
+            DataCenterS.onPlayerJoin.add(this.onPlayerJoin, this);
+            DataCenterS.onPlayerLeave.add(this.onPlayerLeave, this);
         }
     }
 
@@ -58,8 +58,8 @@ class PlayerModuleData extends Subdata {
 
 | Properties |
 | :-----|
-| **[onPlayerJoined](mwext.DataCenterS.md#onplayerjoined)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
-| **[onPlayerLeft](mwext.DataCenterS.md#onplayerleft)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家离开游戏的委托，可用作玩家最后的数据处理|
+| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
+| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 | Methods |
 | :-----|
@@ -68,17 +68,17 @@ class PlayerModuleData extends Subdata {
 
 ## Properties
 
-### onPlayerJoined <Score text="onPlayerJoined" /> 
+### onPlayerJoin <Score text="onPlayerJoin" /> 
 
-▪ `Static` `Readonly` **onPlayerJoined**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
+▪ `Static` `Readonly` **onPlayerJoin**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
 
 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的
 
 ___
 
-### onPlayerLeft <Score text="onPlayerLeft" /> 
+### onPlayerLeave <Score text="onPlayerLeave" /> 
 
-▪ `Static` `Readonly` **onPlayerLeft**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
+▪ `Static` `Readonly` **onPlayerLeave**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>
 
 玩家离开游戏的委托，可用作玩家最后的数据处理
 
@@ -93,12 +93,12 @@ ___
 
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
 ```ts
-@Class
+@Component
 export default class DataCenterSExample extends Script {
 
  protected onStart(): void {
      if (SystemUtil.isServer()) {
-         DataCenterS.onPlayerJoined.add((player)=>{
+         DataCenterS.onPlayerJoin.add((player)=>{
              let playerData = DataCenterS.getData(player, PlayerModuleData);
              console.log("玩家等级：", playerData.getlevel());
          });
@@ -146,7 +146,7 @@ ___
 
 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
 ```ts
-@Class
+@Component
 export default class DataCenterSExample extends Script {
 
     protected onStart(): void {
