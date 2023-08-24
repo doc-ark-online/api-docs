@@ -1,4 +1,4 @@
-[UI](../groups/Extension.UI.md) / BasePanel
+[EXTENSION](../groups/Extension.EXTENSION.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
@@ -24,7 +24,7 @@
 
   ↳↳ [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)
 
-  ↳↳ [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)
+  ↳↳ [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)
 
 ## Table of contents
 

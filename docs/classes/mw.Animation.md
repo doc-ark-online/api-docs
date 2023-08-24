@@ -2,7 +2,7 @@
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
-动画类(测试信息!!!)
+动画类。可以控制动画的播放暂停结束；获取动画的资源ID，动画长度，播放速率等信息。
 
 ::: warning Precautions
 

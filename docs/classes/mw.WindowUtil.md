@@ -2,7 +2,7 @@
 
 # WindowUtil <Badge type="tip" text="Class" /> <Score text="WindowUtil" />
 
-窗口设置
+窗口设置。可设置窗口聚焦失焦时触发某种行为，获取分辨率等功能。
 
 使用示例:创建一个名为WindowExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在控制台打印出屏幕的分辨率大小。
 ```ts

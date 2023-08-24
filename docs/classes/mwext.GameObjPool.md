@@ -2,7 +2,7 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-GameObject对象池
+用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
 ```ts
@@ -263,12 +263,6 @@ ___
 • `Static` **spawn**<`T`\>(`guid`, `type?`): `T` 
 
 生成一个对象
-
-::: warning Precautions
-
-注意如果是资源库中的资源，需要把原始资源预加载
-
-:::
 
 
 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块

@@ -7,7 +7,6 @@ PHYSICS
 | :-----|
 | [Impulse](../classes/mw.Impulse.md) <br> 冲量对象 |
 | [IntegratedMover](../classes/mw.IntegratedMover.md) <br> 运动器组件 |
-| [PhysicsFulcrum](../classes/mw.PhysicsFulcrum.md) <br> 物理支撑点组件 |
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器 |
 
 

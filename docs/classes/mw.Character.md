@@ -2,10 +2,7 @@
 
 # Character <Badge type="tip" text="Class" /> <Score text="Character" />
 
-角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动.
-形象设置上,角色目前可以选择 V1人形,V2人形,四足,自定义形象等.
-动画上,可以使用高度封装的姿态对象和直接播放动画.
-移动功能上,支持对角色的基础移动属性进行查询和更改,比如移动速度,转向速度,移动控制模式等,还提供了地面移动,空中移动,水中移动的模式切换.
+Character是一个特殊的受控制对象，代表场景中玩家角色和非玩家角色。Character具备移动能力，可以在场景中行走、跑动、跳跃、飞行和游泳。此外Character带有骨架，可播放使用骨架的高级动画或者姿态。Character还可以通过CharacterDescription去设置自身外观形象。
 
 ## Hierarchy
 
@@ -19,7 +16,7 @@
 | :-----|
 | **[onDescriptionChange](mw.Character.md#ondescriptionchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionChange`](../modules/Core.mw.md#ondescriptionchange)\> <br> 外观加载细节变化委托|
 | **[onDescriptionComplete](mw.Character.md#ondescriptioncomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionComplete`](../modules/Core.mw.md#ondescriptioncomplete)\> <br> 外观加载完成委托|
-| **[onMovementModeChange](mw.Character.md#onmovementmodechange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnMovementModeChange`](../modules/Core.mw.md#onmovementmodechange)\> <br> 移动状态切换时的回调|
+| **[onMovementModeChange](mw.Character.md#onmovementmodechange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnMovementModeChange`](../modules/Core.mw.md#onmovementmodechange)\> <br> 移动模式切换时的回调|
 
 
 ::: details 点击查看继承
@@ -299,7 +296,7 @@ ___
 
 • **onMovementModeChange**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnMovementModeChange`](../modules/Core.mw.md#onmovementmodechange)\> 
 
-移动状态切换时的回调
+移动模式切换时的回调
 
 
 ::: warning Precautions

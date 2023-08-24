@@ -37,7 +37,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onCurrentDispersionChange](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchange)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| **[onCurrentDispersionChange](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchange)**: `MulticastDelegateInterface`<() => `void`\> <br> 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -58,7 +58,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 ### onCurrentDispersionChange <Score text="onCurrentDispersionChange" /> 
 
-• **onCurrentDispersionChange**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onCurrentDispersionChange**: `MulticastDelegateInterface`<() => `void`\>
 
 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
 

@@ -2,15 +2,7 @@
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
-**`Instance`**
-
 用户账号信息管理相关服务
-
-::: warning Precautions
-
-单例类，请使用getInstance获取对象
-
-:::
 
 ## Table of contents
 

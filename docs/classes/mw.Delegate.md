@@ -15,7 +15,7 @@
 
 ## Implements
 
-- [`DelegateInterface`](../interfaces/mw.DelegateInterface.md)<`T`\>
+- `DelegateInterface`<`T`\>
 
 ## Table of contents
 
@@ -50,7 +50,7 @@
 
 #### Implementation of
 
-[DelegateInterface](../interfaces/mw.DelegateInterface.md).[bind](../interfaces/mw.DelegateInterface.md#bind)
+DelegateInterface.bind
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Implementation of
 
-[DelegateInterface](../interfaces/mw.DelegateInterface.md).[execute](../interfaces/mw.DelegateInterface.md#execute)
+DelegateInterface.execute
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Implementation of
 
-[DelegateInterface](../interfaces/mw.DelegateInterface.md).[isBound](../interfaces/mw.DelegateInterface.md#isbound)
+DelegateInterface.isBound
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Implementation of
 
-[DelegateInterface](../interfaces/mw.DelegateInterface.md).[unbind](../interfaces/mw.DelegateInterface.md#unbind)
+DelegateInterface.unbind

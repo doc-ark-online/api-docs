@@ -2,7 +2,7 @@
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
-GameObject的基类
+pawn、camera、hotweapon、sound等都继承自GameObject，GameObject为基类。提供复制删除物体，查找获取物体、子物体、脚本等功能。
 
 使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下:
 ```ts
@@ -53,10 +53,6 @@ export default class GameObjectExample extends Script {
 
   ↳↳ [`Effect`](mw.Effect.md)
 
-  ↳↳ [`PostProcessObject`](mw.PostProcessObject.md)
-
-  ↳↳ [`SkyBox`](mw.SkyBox.md)
-
   ↳↳ [`Sound`](mw.Sound.md)
 
   ↳↳ [`SwimmingVolume`](mw.SwimmingVolume.md)
@@ -65,8 +61,6 @@ export default class GameObjectExample extends Script {
 
   ↳↳ [`UIWidget`](mw.UIWidget.md)
 
-  ↳↳ [`WheeledVehicle4W`](mw.WheeledVehicle4W.md)
-
   ↳↳ [`HotWeapon`](mw.HotWeapon.md)
 
   ↳↳ [`Interactor`](mw.Interactor.md)
@@ -74,8 +68,6 @@ export default class GameObjectExample extends Script {
   ↳↳ [`PointLight`](mw.PointLight.md)
 
   ↳↳ [`NavModifierVolume`](mw.NavModifierVolume.md)
-
-  ↳↳ [`PhysicsFulcrum`](mw.PhysicsFulcrum.md)
 
   ↳↳ [`Impulse`](mw.Impulse.md)
 
@@ -93,51 +85,46 @@ export default class GameObjectExample extends Script {
 
 | Properties |
 | :-----|
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体Destroy事件回调|
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体销毁后事件回调|
 
 | Accessors |
 | :-----|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取对象的GUID（唯一标识一个对象的字符串）。|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取物体的唯一标识（唯一标识一个对象的字符串）。|
 | **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地transform|
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地变换|
 | **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
 | **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
 | **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的Tag|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界transform|
+| **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界变换|
 
 | Methods |
 | :-----|
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> GameObject准备好后返回|
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 物体准备好后返回|
 | **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
 | **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
 | **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取GameObject边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据GUID查找子物体|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取物体边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据gameObjectId查找子物体|
 | **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
 | **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取Children|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取子物体|
 | **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
 | **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): `Script` <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): `Script` <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): `Script`[] <br> 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取GameObject是否被显示|
-| **[isRunningClient](mw.GameObject.md#isrunningclient)**(): `boolean` <br> 是否为客户端|
-| **[onDestroy](mw.GameObject.md#ondestroy)**(): `void` <br> 周期函数 被销毁时调用|
-| **[onReplicated](mw.GameObject.md#onreplicated)**(`path`: `string`, `value`: `unknown`, `oldVal`: `unknown`): `void` <br> 属性被同步事件 ClientOnly|
-| **[onStart](mw.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
-| **[onUpdate](mw.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置GameObject是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[] <br> 获得当前物体下的所有脚本|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取物体是否被显示|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置物体是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
 | **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个 GameObject 资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过guid查找GameObject|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过gameObjectId查找物体|
 | **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
 | **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义tag获取GameObject|
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义标签获取物体|
 | **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个 GameObject|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个物体|
 
 ## Properties
 
@@ -145,7 +132,7 @@ export default class GameObjectExample extends Script {
 
 • **onDestroyDelegate**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> 
 
-物体Destroy事件回调
+物体销毁后事件回调
 
 
 ## Accessors
@@ -154,7 +141,7 @@ export default class GameObjectExample extends Script {
 
 • `get` **gameObjectId**(): `string` 
 
-获取对象的GUID（唯一标识一个对象的字符串）。
+获取物体的唯一标识（唯一标识一个对象的字符串）。
 
 
 #### Returns
@@ -180,7 +167,7 @@ ___
 
 • `get` **localTransform**(): [`Transform`](mw.Transform.md) 
 
-当前物体本地transform
+当前物体本地变换
 
 
 #### Returns
@@ -189,7 +176,7 @@ ___
 
 • `set` **localTransform**(`transform`): `void` 
 
-当前物体本地transform
+当前物体本地变换
 
 
 #### Parameters
@@ -214,10 +201,6 @@ ___
 
 名称
 
-#### Overrides
-
-mw.Base.name
-
 • `set` **name**(`name`): `void` 
 
 设置物体名称
@@ -229,10 +212,6 @@ mw.Base.name
 | :------ | :------ | :------ |
 | `name` | `string` | 需要设置的名称 |
 
-
-#### Overrides
-
-mw.Base.name
 
 ___
 
@@ -282,7 +261,7 @@ ___
 
 • `get` **tag**(): `string` 
 
-获取当前物体的Tag
+获取当前物体的标签
 
 
 #### Returns
@@ -293,7 +272,7 @@ Tag
 
 • `set` **tag**(`tag`): `void` 
 
-设置当前物体的Tag
+设置当前物体的标签
 
 
 #### Parameters
@@ -309,7 +288,7 @@ ___
 
 • `get` **worldTransform**(): [`Transform`](mw.Transform.md) 
 
-当前物体世界transform
+当前物体世界变换
 
 
 #### Returns
@@ -318,7 +297,7 @@ ___
 
 • `set` **worldTransform**(`transform`): `void` 
 
-当前物体世界transform
+当前物体世界变换
 
 
 #### Parameters
@@ -334,7 +313,7 @@ ___
 
 • **asyncReady**(): `Promise`<[`GameObject`](mw.GameObject.md)\> 
 
-GameObject准备好后返回
+物体准备好后返回
 
 
 #### Returns
@@ -409,7 +388,7 @@ ___
 
 • **getBounds**(`onlyCollidingComponents`, `originOuter`, `boxExtentOuter`, `includeFromChild?`): `void` 
 
-获取GameObject边界
+获取物体边界
 
 
 #### Parameters
@@ -417,8 +396,8 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `onlyCollidingComponents` | `boolean` | 是否只包含有碰撞的组件。 |
-| `originOuter` | [`Vector`](mw.Vector.md) | 传出参数，设置为GameObject的中心点坐标。 |
-| `boxExtentOuter` | [`Vector`](mw.Vector.md) | 传出参数，设置为GameObject尺寸的一半。 |
+| `originOuter` | [`Vector`](mw.Vector.md) | 传出参数，设置为物体的中心点坐标。 |
+| `boxExtentOuter` | [`Vector`](mw.Vector.md) | 传出参数，设置为物体尺寸的一半。 |
 | `includeFromChild?` | `boolean` | 是否递归包含子物体 default:undefined |
 
 
@@ -428,14 +407,14 @@ ___
 
 • **getChildByGameObjectId**(`gameObjectId`): [`GameObject`](mw.GameObject.md) 
 
-根据GUID查找子物体
+根据gameObjectId查找子物体
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `gameObjectId` | `string` | GUID |
+| `gameObjectId` | `string` | gameObjectId |
 
 #### Returns
 
@@ -491,7 +470,7 @@ ___
 
 • **getChildren**(): [`GameObject`](mw.GameObject.md)[] 
 
-获取Children
+获取子物体
 
 
 #### Returns
@@ -552,7 +531,7 @@ ___
 
 ### getScript <Score text="getScript" /> 
 
-• **getScript**(`id`): `Script` 
+• **getScript**(`id`): [`Script`](mw.Script.md) 
 
 获得当前物体下的指定脚本
 
@@ -565,7 +544,7 @@ ___
 
 #### Returns
 
-`Script`
+[`Script`](mw.Script.md)
 
 Script
 
@@ -573,7 +552,7 @@ ___
 
 ### getScriptByName <Score text="getScriptByName" /> 
 
-• **getScriptByName**(`name`): `Script` 
+• **getScriptByName**(`name`): [`Script`](mw.Script.md) 
 
 获得当前物体下的指定脚本
 
@@ -586,7 +565,7 @@ ___
 
 #### Returns
 
-`Script`
+[`Script`](mw.Script.md)
 
 Script
 
@@ -594,14 +573,14 @@ ___
 
 ### getScripts <Score text="getScripts" /> 
 
-• **getScripts**(): `Script`[] 
+• **getScripts**(): [`Script`](mw.Script.md)[] 
 
 获得当前物体下的所有脚本
 
 
 #### Returns
 
-`Script`[]
+[`Script`](mw.Script.md)[]
 
 Array`<Script>`
 
@@ -611,7 +590,7 @@ ___
 
 • **getVisibility**(): `boolean` 
 
-获取GameObject是否被显示
+获取物体是否被显示
 
 
 #### Returns
@@ -622,80 +601,11 @@ bool
 
 ___
 
-### isRunningClient <Score text="isRunningClient" /> 
-
-• **isRunningClient**(): `boolean` 
-
-是否为客户端
-
-
-#### Returns
-
-`boolean`
-
-true为客户端
-
-___
-
-### onDestroy <Score text="onDestroy" /> 
-
-• `Protected` **onDestroy**(): `void` 
-
-周期函数 被销毁时调用
-
-
-
-___
-
-### onReplicated <Score text="onReplicated" /> 
-
-• `Protected` **onReplicated**(`path`, `value`, `oldVal`): `void` 
-
-属性被同步事件 ClientOnly
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `path` | `string` | 属性路径 |
-| `value` | `unknown` | 属性值 |
-| `oldVal` | `unknown` | 同步前的值 |
-
-
-___
-
-### onStart <Score text="onStart" /> 
-
-• `Protected` **onStart**(): `void` 
-
-周期函数 脚本开始执行时调用
-
-
-
-___
-
-### onUpdate <Score text="onUpdate" /> 
-
-• `Protected` **onUpdate**(`dt`): `void` 
-
-周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `dt` | `number` | 与上一帧的延迟 单位:秒 |
-
-
-___
-
 ### setVisibility <Score text="setVisibility" /> 
 
 • **setVisibility**(`status`, `propagateToChildren?`): `void` 
 
-设置GameObject是否被显示
+设置物体是否被显示
 
 
 #### Parameters
@@ -712,7 +622,7 @@ ___
 
 • `Static` **asyncFindGameObjectById**(`gameObjectId`): `Promise`<[`GameObject`](mw.GameObject.md)\> 
 
-通过guid异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings..setGlobalAsyncOverTime(1000 * 10);
+通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);
 ` 来设置
 
 
@@ -720,13 +630,13 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `gameObjectId` | `string` | 物体的guid |
+| `gameObjectId` | `string` | 物体的gameObjectId |
 
 #### Returns
 
 `Promise`<[`GameObject`](mw.GameObject.md)\>
 
-guid对应的物体
+gameObjectId对应的物体
 
 ___
 
@@ -755,7 +665,7 @@ ___
 
 • `Static` **asyncSpawn**<`T`\>(`assetId`, `gameObjectInfo?`): `Promise`<`T`\> 
 
-异步构造一个 GameObject 资源不存在会先去下载资源再去创建
+异步构造一个物体，资源不存在会先去下载资源再去创建
 
 
 使用示例:调用方法
@@ -784,7 +694,7 @@ let obj = await mw.GameObject.asyncSpawn<mw.Mesh>({
 
 `Promise`<`T`\>
 
-构造的GameObject
+构造的物体
 
 ___
 
@@ -792,20 +702,20 @@ ___
 
 • `Static` **findGameObjectById**(`gameObjectId`): [`GameObject`](mw.GameObject.md) 
 
-通过guid查找GameObject
+通过gameObjectId查找物体
 
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `gameObjectId` | `string` | 物体的guid |
+| `gameObjectId` | `string` | 物体的gameObjectId |
 
 #### Returns
 
 [`GameObject`](mw.GameObject.md)
 
-guid对应的物体
+gameObjectId对应的物体
 
 ___
 
@@ -855,7 +765,7 @@ ___
 
 • `Static` **findGameObjectsByTag**(`tag`): [`GameObject`](mw.GameObject.md)[] 
 
-通过自定义tag获取GameObject
+通过自定义标签获取物体
 
 
 #### Parameters
@@ -897,7 +807,7 @@ ___
 
 • `Static` **spawn**<`T`\>(`assetId`, `gameObjectInfo?`): `T` 
 
-构造一个 GameObject
+构造一个物体
 
 
 使用示例:调用方法
@@ -925,4 +835,4 @@ let obj = mw.GameObject.spawn<mw.Mesh>("197386", {
 
 `T`
 
-构造的GameObject
+构造的物体

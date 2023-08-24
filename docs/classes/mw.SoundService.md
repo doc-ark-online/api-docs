@@ -2,15 +2,7 @@
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-**`Instance`**
-
 音效管理器
-
-::: warning Precautions
-
-单例类，请使用getInstance获取对象
-
-:::
 
 ## Table of contents
 

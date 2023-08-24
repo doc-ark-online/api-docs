@@ -7,8 +7,6 @@ UI
 | :-----|
 | [AnalogInputEvent](../classes/mw.AnalogInputEvent.md) <br> 轴输入事件 |
 | [AssetIconData](../classes/mw.AssetIconData.md) <br> 资源ICON信息 |
-| [BasePanel](../classes/mwext.BasePanel.md) <br> 面板类的基类，可用于控制一个界面 |
-| [BaseView](../classes/mwext.BaseView.md) <br> 界面类的基类 |
 | [Button](../classes/mw.Button.md) <br> 按钮,无默认text |
 | [Canvas](../classes/mw.Canvas.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能 |
 | [CharacterEvent](../classes/mw.CharacterEvent.md) <br> 角色输入事件 |
@@ -16,7 +14,6 @@ UI
 | [DragDropOperation](../classes/mw.DragDropOperation.md) <br> UI 拖拽事件 |
 | [DragDropPayLoad](../classes/mw.DragDropPayLoad.md) <br> 拖拽事件数据传递类 |
 | [EventReply](../classes/mw.EventReply.md) <br> 事件回复 |
-| [FocusEvent](../classes/mw.FocusEvent.md) <br> 焦点事件 |
 | [Geometry](../classes/mw.Geometry.md) <br> 几何坐标信息 |
 | [Image](../classes/mw.Image.md) <br> UI 图片 |
 | [InputBox](../classes/mw.InputBox.md) <br> UI的输入框 |

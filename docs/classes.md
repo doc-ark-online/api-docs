@@ -15,8 +15,7 @@ Classes
 | [AdsService](classes/mw.AdsService.md) | 广告服务，支持激励/插屏类型 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
 | [AdvancedVehicle](classes/mw.AdvancedVehicle.md) | 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [AnalogInputEvent](classes/mw.AnalogInputEvent.md) | 轴输入事件 | [UI](groups/UI.UI.md) |
-| [AnalyticsService](classes/mw.AnalyticsService.md) | 分析服务 | [UTILITY](groups/UTILITY.UTILITY.md) |
-| [Animation](classes/mw.Animation.md) | 动画类(测试信息!!!) | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
+| [Animation](classes/mw.Animation.md) | 动画类。可以控制动画的播放暂停结束；获取动画的资源ID，动画长度，播放速率等信息。 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [AssetIconData](classes/mw.AssetIconData.md) | 资源ICON信息 | [UI](groups/UI.UI.md) |
 | [AssetUtil](classes/mw.AssetUtil.md) | 资源工具类 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [AvatarSettings](classes/mw.AvatarSettings.md) | 控制一些优化项的开启关闭 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
@@ -25,8 +24,8 @@ Classes
 ## B
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [UI](groups/UI.UI.md) |
-| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [UI](groups/UI.UI.md) |
+| [BasePanel](classes/mwext.BasePanel.md) | 面板类的基类，可用于控制一个界面 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [BaseView](classes/mwext.BaseView.md) | 界面类的基类 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [BlockingVolume](classes/mw.BlockingVolume.md) | 禁行区，用于控制个角色是否可以进出此区域，角色可站立，默认阻挡 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Button](classes/mw.Button.md) | 按钮,无默认text | [UI](groups/UI.UI.md) |
 
@@ -36,7 +35,7 @@ Classes
 | :-----| :-----| :-----|
 | [Camera](classes/mw.Camera.md) | 摄像机 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Canvas](classes/mw.Canvas.md) | 可挂载叶子节点的根节点，以及提供各种自动布局功能 | [UI](groups/UI.UI.md) |
-| [Character](classes/mw.Character.md) | 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动. | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [Character](classes/mw.Character.md) | Character是一个特殊的受控制对象，代表场景中玩家角色和非玩家角色。Character具备移动能力，可以在场景中行走、跑动、跳跃、飞行和游泳。此外Character带有骨架，可播放使用骨架的高级动画或者姿态。Character还可以通过CharacterDescription去设置自身外观形象。 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterDecoration](classes/mw.CharacterDecoration.md) | 单个插槽对应的挂件物体数组 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterDescription](classes/mw.CharacterDescription.md) | 人形外观配置类 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [CharacterEvent](classes/mw.CharacterEvent.md) | 角色输入事件 | [UI](groups/UI.UI.md) |
@@ -71,15 +70,14 @@ Classes
 ## F
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [FocusEvent](classes/mw.FocusEvent.md) | 焦点事件 | [UI](groups/UI.UI.md) |
 | [Fog](classes/mw.Fog.md) | 环境雾 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 
 
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjPool](classes/mwext.GameObjPool.md) | GameObject对象池 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
-| [GameObject](classes/mw.GameObject.md) | GameObject的基类 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [GameObjPool](classes/mwext.GameObjPool.md) | 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [GameObject](classes/mw.GameObject.md) | pawn、camera、hotweapon、sound等都继承自GameObject，GameObject为基类。提供复制删除物体，查找获取物体、子物体、脚本等功能。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Geometry](classes/mw.Geometry.md) | 几何坐标信息 | [UI](groups/UI.UI.md) |
 | [GraphicsSettings](classes/mw.GraphicsSettings.md) | 图片画质设置 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 
@@ -126,7 +124,7 @@ Classes
 | :-----| :-----| :-----|
 | [LanguageUtil](classes/mw.LanguageUtil.md) | 多语言工具类 | [LOCALIZATION](groups/LOCALIZATION.LOCALIZATION.md) |
 | [LeaderboardItemPanelBase](classes/mwext.LeaderboardItemPanelBase.md) | 排行榜主界面中的子UI，用来显示一条记录 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
-| [LeaderboardMainPaneBase](classes/mwext.LeaderboardMainPaneBase.md) | 排行榜主界面 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [LeaderboardMainPanelBase](classes/mwext.LeaderboardMainPanelBase.md) | 排行榜主界面 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [LeaderboardModule](classes/mwext.LeaderboardModule.md) | 编辑器内置排行榜 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [LeaderboardModuleBaseC](classes/mwext.LeaderboardModuleBaseC.md) | 排行榜模块-客户端 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [LeaderboardModuleBaseS](classes/mwext.LeaderboardModuleBaseS.md) | 排行榜模块-服务端 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
@@ -155,7 +153,6 @@ Classes
 ## N
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [NFTUtil](classes/mw.NFTUtil.md) | NFT资产交易系统。 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
 | [NavModifierVolume](classes/mw.NavModifierVolume.md) | 寻路动态修饰区 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Navigation](classes/mw.Navigation.md) | 路径查询。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
@@ -163,7 +160,7 @@ Classes
 ## O
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ObjPool](classes/mwext.ObjPool.md) | 对象池 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ObjPool](classes/mwext.ObjPool.md) | 通用对象池，可用于各种类型对象的复用 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [ObjectLauncher](classes/mw.ObjectLauncher.md) | 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
@@ -171,15 +168,13 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [PanelWidget](classes/mw.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [UI](groups/UI.UI.md) |
-| [Pawn](classes/mw.Pawn.md) | 可以被玩家和AI控制的对象的基类 | [AVATAR](groups/AVATAR.AVATAR.md) |
-| [PhysicsFulcrum](classes/mw.PhysicsFulcrum.md) | 物理支撑点组件 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
+| [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
 | [Player](classes/mw.Player.md) | 角色控制 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PointLight](classes/mw.PointLight.md) | 点光源 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [UI](groups/UI.UI.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
-| [PostProcessObject](classes/mw.PostProcessObject.md) | 后处理对象 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [ProgressBar](classes/mw.ProgressBar.md) | UI进度条 | [UI](groups/UI.UI.md) |
 | [ProjectileInst](classes/mw.ProjectileInst.md) | 投掷物发射器专用实例对象 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [ProjectileMovement](classes/mw.ProjectileMovement.md) | 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
@@ -190,13 +185,13 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [Quaternion](classes/mw.Quaternion.md) | 四元数 | [TYPE](groups/TYPE.TYPE.md) |
-| [QueryUtil](classes/mw.QueryUtil.md) | 射线检测范围 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [QueryUtil](classes/mw.QueryUtil.md) | 射线检测范围 | [UTILITY](groups/UTILITY.UTILITY.md) |
 
 
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
+| [RoomService](classes/mw.RoomService.md) | MGS以及玩家信息、数据、头像等相关API。 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
 | [RoomSettings](classes/mw.RoomSettings.md) | 房间设置 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 | [Rotation](classes/mw.Rotation.md) | 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 | [TYPE](groups/TYPE.TYPE.md) |
 | [RouteService](classes/mw.RouteService.md) | 游戏管理器 | [SOCIAL](groups/SOCIAL.SOCIAL.md) |
@@ -206,24 +201,23 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScreenUtil](classes/mw.ScreenUtil.md) | 屏幕视口设置相关的接口 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Script](classes/mw.Script.md) | 脚本管理 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [ScriptingSettings](classes/mw.ScriptingSettings.md) | 全局的脚本配置信息 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 | [ScrollBox](classes/mw.ScrollBox.md) | 滑动框 | [UI](groups/UI.UI.md) |
 | [SelectionUtil](classes/mw.SelectionUtil.md) | 选择物体时，描边绘制相关功能 | [UTILITY](groups/UTILITY.UTILITY.md) |
-| [SkyBox](classes/mw.SkyBox.md) | 天空球 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
-| [Skybox-1](classes/mw.Skybox-1.md) |  | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Skybox](classes/mw.Skybox.md) | 天空盒 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [SlateBrushWithGuid](classes/mw.SlateBrushWithGuid.md) | 贴图信息 | [UI](groups/UI.UI.md) |
 | [SlateColor](classes/mw.SlateColor.md) | UI颜色管理 | [UI](groups/UI.UI.md) |
 | [Sound](classes/mw.Sound.md) | 音效组件 | [SOUND](groups/SOUND.SOUND.md) |
 | [SoundService](classes/mw.SoundService.md) | 音效管理器 | [SOUND](groups/SOUND.SOUND.md) |
 | [SpringArm](classes/mw.SpringArm.md) | 弹簧臂 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [StaleButton](classes/mw.StaleButton.md) | 按钮 | [UI](groups/UI.UI.md) |
-| [Stance](classes/mw.Stance.md) | 基础姿态 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
-| [StanceBase](classes/mw.StanceBase.md) | 姿态 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
+| [Stance](classes/mw.Stance.md) | 基础姿态的控制，提供播放停止姿态，获取ID等功能. | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [StringUtil](classes/mw.StringUtil.md) | 字符串工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [SubStance](classes/mw.SubStance.md) | 二级姿态 | [ANIMATIONS](groups/ANIMATIONS.ANIMATIONS.md) |
 | [Subdata](classes/mwext.Subdata.md) | 数据控制类的基类 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [SwimmingVolume](classes/mw.SwimmingVolume.md) | 游泳区域 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [SystemUtil](classes/mw.SystemUtil.md) | 系统设置 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [SystemUtil](classes/mw.SystemUtil.md) | 状态信息获取或设置。判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息 | [UTILITY](groups/UTILITY.UTILITY.md) |
 
 
 ## T
@@ -232,10 +226,10 @@ Classes
 | [TabGroup](classes/mw.TabGroup.md) | 选项卡组 | [UI](groups/UI.UI.md) |
 | [TextBlock](classes/mw.TextBlock.md) | UI文本 | [UI](groups/UI.UI.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
-| [TouchInput](classes/mw.TouchInput.md) | 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开) | [INPUT](groups/INPUT.INPUT.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [UI](groups/UI.UI.md) |
 | [Transform](classes/mw.Transform.md) | Transform 由缩放、旋转和平移组成 | [TYPE](groups/TYPE.TYPE.md) |
 | [Trigger](classes/mw.Trigger.md) | 触发器，对进入/离开触发器范围的事件进行响应 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Tween](classes/mw.Tween.md) | 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [TweenGroup](classes/mw.TweenGroup.md) | 补间组，用于同时控制多个补间对象 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [TweenSequence](classes/mw.TweenSequence.md) | 序列工具类，主要用于获取连续的ID | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [TweenUtil](classes/mw.TweenUtil.md) | 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 | [UTILITY](groups/UTILITY.UTILITY.md) |
@@ -270,7 +264,6 @@ Classes
 ## W
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [WheeledVehicle4W](classes/mw.WheeledVehicle4W.md) | 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Widget](classes/mw.Widget.md) | 可挂载叶子节点的根节点，以及提供各种自动布局功能 | [UI](groups/UI.UI.md) |
-| [WindowUtil](classes/mw.WindowUtil.md) | 窗口设置 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [WindowUtil](classes/mw.WindowUtil.md) | 窗口设置。可设置窗口聚焦失焦时触发某种行为，获取分辨率等功能。 | [UTILITY](groups/UTILITY.UTILITY.md) |
 

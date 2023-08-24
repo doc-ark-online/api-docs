@@ -8,9 +8,9 @@
 
 | Methods |
 | :-----|
-| **[add](mw.TweenGroup.md#add)**(`tween`: `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
-| **[getAll](mw.TweenGroup.md#getall)**(): `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[] <br> 获取当前补间组中所有补间对象|
-| **[remove](mw.TweenGroup.md#remove)**(`tween`: `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
+| **[add](mw.TweenGroup.md#add)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void` <br> 将指定补间对象加入当前补间组|
+| **[getAll](mw.TweenGroup.md#getall)**(): [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[] <br> 获取当前补间组中所有补间对象|
+| **[remove](mw.TweenGroup.md#remove)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void` <br> 将指定补间对象移出当前补间组并删除|
 | **[removeAll](mw.TweenGroup.md#removeall)**(): `void` <br> 移除当前补间组中所有补间对象|
 | **[update](mw.TweenGroup.md#update)**(`time?`: `number`, `preserve?`: `boolean`): `boolean` <br> 更新补间组|
 
@@ -27,21 +27,21 @@
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tween` | `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\> |  要添加的补间对象 |
+| `tween` | [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\> |  要添加的补间对象 |
 
 
 ___
 
 ### getAll <Score text="getAll" /> 
 
-• **getAll**(): `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[] 
+• **getAll**(): [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[] 
 
 获取当前补间组中所有补间对象
 
 
 #### Returns
 
-`Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[]
+[`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>[]
 
 补间对象数组
 
@@ -58,7 +58,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tween` | `Tween`<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\> |  要移出并删除的补间对象 |
+| `tween` | [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\> |  要移出并删除的补间对象 |
 
 
 ___

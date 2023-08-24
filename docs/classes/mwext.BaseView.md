@@ -1,4 +1,4 @@
-[UI](../groups/Extension.UI.md) / BaseView
+[EXTENSION](../groups/Extension.EXTENSION.md) / BaseView
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 

@@ -80,7 +80,7 @@ mw
 | [PropertyStatus](../enums/mw.PropertyStatus.md) <br> 属性状态|
 | [RuntimePlatform](../enums/mw.RuntimePlatform.md) <br> 运行平台|
 | [ScrollBarDefaultLocation](../enums/mw.ScrollBarDefaultLocation.md) <br> 滚动条默认位置|
-| [SkyPreset](../enums/mw.SkyPreset.md) <br> 天空球预设枚举|
+| [SkyPreset](../enums/mw.SkyPreset.md) <br> 天空盒预设枚举|
 | [SlateBrushDrawType](../enums/mw.SlateBrushDrawType.md) <br> 图片画刷绘制模式|
 | [SlateBrushTileType](../enums/mw.SlateBrushTileType.md) <br> 图片画刷填充模式|
 | [SlateColorStylingMode](../enums/mw.SlateColorStylingMode.md) <br> UI颜色应用模式|
@@ -124,8 +124,7 @@ mw
 | [AdsService](../classes/mw.AdsService.md) <br> 广告服务，支持激励/插屏类型|
 | [AdvancedVehicle](../classes/mw.AdvancedVehicle.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。|
 | [AnalogInputEvent](../classes/mw.AnalogInputEvent.md) <br> 轴输入事件|
-| [AnalyticsService](../classes/mw.AnalyticsService.md) <br> 分析服务|
-| [Animation](../classes/mw.Animation.md) <br> 动画类(测试信息!!!)|
+| [Animation](../classes/mw.Animation.md) <br> 动画类。可以控制动画的播放暂停结束；获取动画的资源ID，动画长度，播放速率等信息。|
 | [AssetIconData](../classes/mw.AssetIconData.md) <br> 资源ICON信息|
 | [AssetUtil](../classes/mw.AssetUtil.md) <br> 资源工具类|
 | [AvatarSettings](../classes/mw.AvatarSettings.md) <br> 控制一些优化项的开启关闭|
@@ -133,7 +132,7 @@ mw
 | [Button](../classes/mw.Button.md) <br> 按钮,无默认text|
 | [Camera](../classes/mw.Camera.md) <br> 摄像机|
 | [Canvas](../classes/mw.Canvas.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能|
-| [Character](../classes/mw.Character.md) <br> 角色基类,派生自GameObject,在GameObject的基础上提供对角色的高级封装,是玩家角色跟非玩家角色的基类,该对象是基类,无法使用构造函数创建此对象.主要功能分三大块:形象设置,动画,移动.|
+| [Character](../classes/mw.Character.md) <br> Character是一个特殊的受控制对象，代表场景中玩家角色和非玩家角色。Character具备移动能力，可以在场景中行走、跑动、跳跃、飞行和游泳。此外Character带有骨架，可播放使用骨架的高级动画或者姿态。Character还可以通过CharacterDescription去设置自身外观形象。|
 | [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 单个插槽对应的挂件物体数组|
 | [CharacterDescription](../classes/mw.CharacterDescription.md) <br> 人形外观配置类|
 | [CharacterEvent](../classes/mw.CharacterEvent.md) <br> 角色输入事件|
@@ -151,9 +150,8 @@ mw
 | [Event](../classes/mw.Event.md) <br> 事件|
 | [EventListener](../classes/mw.EventListener.md) <br> 事件监听器|
 | [EventReply](../classes/mw.EventReply.md) <br> 事件回复|
-| [FocusEvent](../classes/mw.FocusEvent.md) <br> 焦点事件|
 | [Fog](../classes/mw.Fog.md) <br> 环境雾|
-| [GameObject](../classes/mw.GameObject.md) <br> GameObject的基类|
+| [GameObject](../classes/mw.GameObject.md) <br> pawn、camera、hotweapon、sound等都继承自GameObject，GameObject为基类。提供复制删除物体，查找获取物体、子物体、脚本等功能。|
 | [Geometry](../classes/mw.Geometry.md) <br> 几何坐标信息|
 | [GraphicsSettings](../classes/mw.GraphicsSettings.md) <br> 图片画质设置|
 | [HitResult](../classes/mw.HitResult.md) <br> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。|
@@ -186,13 +184,11 @@ mw
 | [Model](../classes/mw.Model.md) <br> 接口主要为物理参数设置接口与材质参数设置接口|
 | [MulticastDelegate](../classes/mw.MulticastDelegate.md) <br> 多播委托接口|
 | [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md) <br> 广播代理|
-| [NFTUtil](../classes/mw.NFTUtil.md) <br> NFT资产交易系统。|
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区|
 | [Navigation](../classes/mw.Navigation.md) <br> 路径查询。|
 | [ObjectLauncher](../classes/mw.ObjectLauncher.md) <br> 投掷物发射器，作为发射终端，维护投掷物发射相关的参数，发射的投掷物只在客户端存在，且以主控端的事件为主|
 | [PanelWidget](../classes/mw.PanelWidget.md) <br> UI的PanelWidget可以挂载子节点|
-| [Pawn](../classes/mw.Pawn.md) <br> 可以被玩家和AI控制的对象的基类|
-| [PhysicsFulcrum](../classes/mw.PhysicsFulcrum.md) <br> 物理支撑点组件|
+| [Pawn](../classes/mw.Pawn.md) <br> Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象|
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器|
 | [Player](../classes/mw.Player.md) <br> 角色控制|
 | [PlayerState](../classes/mw.PlayerState.md) <br> PlayerState基类|
@@ -200,42 +196,40 @@ mw
 | [PointerEvent](../classes/mw.PointerEvent.md) <br> 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类|
 | [PostProcess](../classes/mw.PostProcess.md) <br> 后处理|
 | [PostProcessConfig](../classes/mw.PostProcessConfig.md) <br> 后处理对象属性配置|
-| [PostProcessObject](../classes/mw.PostProcessObject.md) <br> 后处理对象|
 | [ProgressBar](../classes/mw.ProgressBar.md) <br> UI进度条|
 | [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物发射器专用实例对象|
 | [ProjectileMovement](../classes/mw.ProjectileMovement.md) <br> 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步|
 | [PurchaseService](../classes/mw.PurchaseService.md) <br> 应用内购服务|
 | [Quaternion](../classes/mw.Quaternion.md) <br> 四元数|
 | [QueryUtil](../classes/mw.QueryUtil.md) <br> 射线检测范围|
-| [RoomService](../classes/mw.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API|
+| [RoomService](../classes/mw.RoomService.md) <br> MGS以及玩家信息、数据、头像等相关API。|
 | [RoomSettings](../classes/mw.RoomSettings.md) <br> 房间设置|
 | [Rotation](../classes/mw.Rotation.md) <br> 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。|
 | [RouteService](../classes/mw.RouteService.md) <br> 游戏管理器|
 | [ScreenUtil](../classes/mw.ScreenUtil.md) <br> 屏幕视口设置相关的接口|
+| [Script](../classes/mw.Script.md) <br> 脚本管理|
 | [ScriptingSettings](../classes/mw.ScriptingSettings.md) <br> 全局的脚本配置信息|
 | [ScrollBox](../classes/mw.ScrollBox.md) <br> 滑动框|
 | [SelectionUtil](../classes/mw.SelectionUtil.md) <br> 选择物体时，描边绘制相关功能|
-| [SkyBox](../classes/mw.SkyBox.md) <br> 天空球|
-| [Skybox](../classes/mw.Skybox-1.md) <br> 天空球|
+| [Skybox](../classes/mw.Skybox.md) <br> 天空盒|
 | [SlateBrushWithGuid](../classes/mw.SlateBrushWithGuid.md) <br> 贴图信息|
 | [SlateColor](../classes/mw.SlateColor.md) <br> UI颜色管理|
 | [Sound](../classes/mw.Sound.md) <br> 音效组件|
 | [SoundService](../classes/mw.SoundService.md) <br> 音效管理器|
 | [SpringArm](../classes/mw.SpringArm.md) <br> 弹簧臂|
 | [StaleButton](../classes/mw.StaleButton.md) <br> 按钮|
-| [Stance](../classes/mw.Stance.md) <br> 基础姿态|
-| [StanceBase](../classes/mw.StanceBase.md) <br> 姿态|
+| [Stance](../classes/mw.Stance.md) <br> 基础姿态的控制，提供播放停止姿态，获取ID等功能.|
 | [StringUtil](../classes/mw.StringUtil.md) <br> 字符串工具|
 | [SubStance](../classes/mw.SubStance.md) <br> 二级姿态|
 | [SwimmingVolume](../classes/mw.SwimmingVolume.md) <br> 游泳区域|
-| [SystemUtil](../classes/mw.SystemUtil.md) <br> 系统设置|
+| [SystemUtil](../classes/mw.SystemUtil.md) <br> 状态信息获取或设置。判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息|
 | [TabGroup](../classes/mw.TabGroup.md) <br> 选项卡组|
 | [TextBlock](../classes/mw.TextBlock.md) <br> UI文本|
 | [TimeUtil](../classes/mw.TimeUtil.md) <br> 时间工具|
-| [TouchInput](../classes/mw.TouchInput.md) <br> 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开)|
 | [TouchPad](../classes/mw.TouchPad.md) <br> 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md) <br> Transform 由缩放、旋转和平移组成|
 | [Trigger](../classes/mw.Trigger.md) <br> 触发器，对进入/离开触发器范围的事件进行响应|
+| [Tween](../classes/mw.Tween.md) <br> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。|
 | [TweenGroup](../classes/mw.TweenGroup.md) <br> 补间组，用于同时控制多个补间对象|
 | [TweenSequence](../classes/mw.TweenSequence.md) <br> 序列工具类，主要用于获取连续的ID|
 | [TweenUtil](../classes/mw.TweenUtil.md) <br> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。|
@@ -255,17 +249,14 @@ mw
 | [Vector2](../classes/mw.Vector2.md) <br> 由分量 (x,y) 组成的二维空间中的向量|
 | [Vector4](../classes/mw.Vector4.md) <br> 由分量 (x,y,z,w) 组成的4D齐次向量|
 | [VirtualJoystickPanel](../classes/mw.VirtualJoystickPanel.md) <br> 摇杆|
-| [WheeledVehicle4W](../classes/mw.WheeledVehicle4W.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。|
 | [Widget](../classes/mw.Widget.md) <br> 可挂载叶子节点的根节点，以及提供各种自动布局功能|
-| [WindowUtil](../classes/mw.WindowUtil.md) <br> 窗口设置|
+| [WindowUtil](../classes/mw.WindowUtil.md) <br> 窗口设置。可设置窗口聚焦失焦时触发某种行为，获取分辨率等功能。|
 
 | Interfaces |
 | :-----|
 | [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md) <br> 抖动数据|
 | [DataStorageResult](../interfaces/mw.DataStorageResult.md) <br> 数据储存返回值|
-| [DelegateInterface](../interfaces/mw.DelegateInterface.md) <br> 委托接口|
 | [GameObjectInfo](../interfaces/mw.GameObjectInfo.md) <br> 构建物体的信息|
-| [MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md) <br> 多播委托接口|
 | [ProjectileMovementConfig](../interfaces/mw.ProjectileMovementConfig.md) <br> 投掷物配置类型|
 | [TypeName](../interfaces/mw.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 
@@ -315,6 +306,9 @@ mw
 
 | Variables |
 | :-----|
+| **[Client](Core.mw.md#client)**: `FunctionOption` <br> 客户端|
+| **[Multicast](Core.mw.md#multicast)**: `FunctionOption` <br> 多播|
+| **[Server](Core.mw.md#server)**: `FunctionOption` <br> 服务端|
 | **[UILayerBottom](Core.mw.md#uilayerbottom)**: ``1`` <br> 底层 zOrder开始于100000|
 | **[UILayerDialog](Core.mw.md#uilayerdialog)**: ``5`` <br> 对话 zOrder开始于500000|
 | **[UILayerError](Core.mw.md#uilayererror)**: ``7`` <br> 错误 这个层级不可以使用，需要增加层级可以使用addUILayerMap zOrder开始于700000|
@@ -326,6 +320,9 @@ mw
 
 | Functions |
 | :-----|
+| **[Property](Core.mw.md#property)**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` <br> 属性支持同步|
+| **[RemoteFunction](Core.mw.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void` <br> 函数支持Rpc调用|
+| **[Serializable](Core.mw.md#serializable)**<`T`: extends `ConstructorType`\>(`type`: `T`): `T`: extends `ConstructorType` <br> 类型支持属性同步|
 | **[absoluteToLocal](Core.mw.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/mw.Geometry.md), `absolutePosition`: [`Vector2`](../classes/mw.Vector2.md)): [`Vector2`](../classes/mw.Vector2.md) <br> 转化绝对坐标到相对坐标|
 | **[absoluteToViewport](Core.mw.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/mw.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/mw.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/mw.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
 | **[assetIDChangeIconUrlRequest](Core.mw.md#assetidchangeiconurlrequest)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
@@ -1186,6 +1183,33 @@ ___
 
 ## Variables
 
+### Client <Score text="Client" /> 
+
+• `Const` **Client**: `FunctionOption` 
+
+客户端
+
+
+___
+
+### Multicast <Score text="Multicast" /> 
+
+• `Const` **Multicast**: `FunctionOption` 
+
+多播
+
+
+___
+
+### Server <Score text="Server" /> 
+
+• `Const` **Server**: `FunctionOption` 
+
+服务端
+
+
+___
+
 ### UILayerBottom <Score text="UILayerBottom" /> 
 
 • `Const` **UILayerBottom**: ``1``
@@ -1249,6 +1273,101 @@ ___
 顶层 zOrder开始于400000
 
 ## Functions
+
+### Property <Score text="Property" /> 
+
+• **Property**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+
+属性支持同步
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `option?` | `IPropertyOptions` | 配置 default:配置 |
+
+#### Returns
+
+`fn`
+
+自定义属性
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `unknown` |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`
+
+___
+
+### RemoteFunction <Score text="RemoteFunction" /> 
+
+• **RemoteFunction**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+
+函数支持Rpc调用
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...options` | `FunctionOption`[] | Rpc调用方式 |
+
+#### Returns
+
+`fn`
+
+自定义函数
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `unknown` |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`
+
+___
+
+### Serializable <Score text="Serializable" /> 
+
+• **Serializable**<`T`\>(`type`): `T` 
+
+类型支持属性同步
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `ConstructorType` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `T` | 自定义类 |
+
+#### Returns
+
+`T`
+
+自定义类
+
+___
 
 ### absoluteToLocal <Score text="absoluteToLocal" /> 
 

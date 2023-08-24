@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / QueryUtil
+[UTILITY](../groups/Core.UTILITY.md) / QueryUtil
 
 # QueryUtil <Badge type="tip" text="Class" /> <Score text="QueryUtil" />
 

@@ -37,9 +37,9 @@ export default class HotWeaponFireSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndContinuousFire](mw.HotWeaponFireComponent.md#onendcontinuousfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onEndFire](mw.HotWeaponFireComponent.md#onendfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
-| **[onStartFire](mw.HotWeaponFireComponent.md#onstartfire)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndContinuousFire](mw.HotWeaponFireComponent.md#onendcontinuousfire)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onEndFire](mw.HotWeaponFireComponent.md#onendfire)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
+| **[onStartFire](mw.HotWeaponFireComponent.md#onstartfire)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -60,7 +60,7 @@ export default class HotWeaponFireSample1 extends Script {
 
 ### onEndContinuousFire <Score text="onEndContinuousFire" /> 
 
-• **onEndContinuousFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndContinuousFire**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器完成一次连发射击周期时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -68,7 +68,7 @@ ___
 
 ### onEndFire <Score text="onEndFire" /> 
 
-• **onEndFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndFire**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器停止开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 
@@ -76,7 +76,7 @@ ___
 
 ### onStartFire <Score text="onStartFire" /> 
 
-• **onStartFire**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartFire**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器开始开火时执行绑定函数。使用示例见类 HotWeaponFireComponent 使用示例
 

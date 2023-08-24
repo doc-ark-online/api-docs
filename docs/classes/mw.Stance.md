@@ -2,11 +2,11 @@
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
-基础姿态
+基础姿态的控制，提供播放停止姿态，获取ID等功能.
 
 ## Hierarchy
 
-- [`StanceBase`](mw.StanceBase.md)
+- `StanceBase`
 
   ↳ **`Stance`**
 

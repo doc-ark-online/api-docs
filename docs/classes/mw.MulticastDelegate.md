@@ -15,7 +15,7 @@
 
 ## Implements
 
-- [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<`T`\>
+- `MulticastDelegateInterface`<`T`\>
 
 ## Table of contents
 
@@ -50,7 +50,7 @@
 
 #### Implementation of
 
-[MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md).[add](../interfaces/mw.MulticastDelegateInterface.md#add)
+MulticastDelegateInterface.add
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Implementation of
 
-[MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md).[broadcast](../interfaces/mw.MulticastDelegateInterface.md#broadcast)
+MulticastDelegateInterface.broadcast
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Implementation of
 
-[MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md).[clear](../interfaces/mw.MulticastDelegateInterface.md#clear)
+MulticastDelegateInterface.clear
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Implementation of
 
-[MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md).[remove](../interfaces/mw.MulticastDelegateInterface.md#remove)
+MulticastDelegateInterface.remove

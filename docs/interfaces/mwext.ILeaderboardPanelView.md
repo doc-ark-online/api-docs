@@ -1,8 +1,8 @@
-[UTILITY](../groups/Extension.UTILITY.md) / ILeaderboardPanelView
+[EXTENSION](../groups/Extension.EXTENSION.md) / ILeaderboardPanelView
 
 # ILeaderboardPanelView <Badge type="tip" text="Interface" /> <Score text="ILeaderboardPanelView" />
 
-主面板View接口
+排行榜面板的UI结构接口
 
 ## Hierarchy
 

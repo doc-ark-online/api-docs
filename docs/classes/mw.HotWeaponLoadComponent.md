@@ -31,8 +31,8 @@ export default class HotWeaponLoadSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -44,7 +44,7 @@ export default class HotWeaponLoadSample1 extends Script {
 
 ### onEndLoad <Score text="onEndLoad" /> 
 
-• **onEndLoad**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndLoad**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -52,7 +52,7 @@ ___
 
 ### onStartLoad <Score text="onStartLoad" /> 
 
-• **onStartLoad**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartLoad**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例
 

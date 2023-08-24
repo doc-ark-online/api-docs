@@ -2,8 +2,6 @@
 
 # EffectService <Badge type="tip" text="Class" /> <Score text="EffectService" />
 
-**`Instance`**
-
 特效服务
 
 ## Table of contents
@@ -11,7 +9,7 @@
 | Methods |
 | :-----|
 | **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\> <br> 根据播放id获取一个特效对象|
-| **[playAtPosition](mw.EffectService.md#playatposition)**(`assetId`: `string`, `position`: [`Vector`](mw.Vector.md), `params?`: `Object`): `number` <br> 在一个GameObject上播放特效|
+| **[playAtPosition](mw.EffectService.md#playatposition)**(`assetId`: `string`, `position`: [`Vector`](mw.Vector.md), `params?`: `Object`): `number` <br> 在一个位置播放特效|
 | **[playOnGameObject](mw.EffectService.md#playongameobject)**(`assetId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `params?`: `Object`): `number` <br> 在一个GameObject上播放特效|
 | **[stop](mw.EffectService.md#stop)**(`playId`: `number`): `void` <br> 停止一个正在播放的特效|
 | **[stopAll](mw.EffectService.md#stopall)**(): `void` <br> 停止所有特效|
@@ -63,7 +61,7 @@ ___
 
 • `Static` **playAtPosition**(`assetId`, `position`, `params?`): `number` <Badge type="tip" text="other" />
 
-在一个GameObject上播放特效
+在一个位置播放特效
 
 调用端生效|服务端调用自动广播
 

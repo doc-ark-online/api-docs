@@ -2,14 +2,14 @@
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 
-系统设置
+状态信息获取或设置。判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息
 
 ## Table of contents
 
 | Properties |
 | :-----|
 | **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md) <br> 判定当前程序的运行平台,返回值参考Type.RuntimePlatform|
-| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean` <br> 判定当前程序的运行环境是否为PIE|
+| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean` <br> 判断当前是否是编辑器运行模式|
 
 | Accessors |
 | :-----|
@@ -59,7 +59,7 @@ ___
 
 ▪ `Static` **isPIE**: `boolean` 
 
-判定当前程序的运行环境是否为PIE
+判断当前是否是编辑器运行模式
 
 
 ## Accessors

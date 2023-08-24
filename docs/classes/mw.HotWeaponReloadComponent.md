@@ -32,8 +32,8 @@ export default class HotWeaponReloadSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndReload](mw.HotWeaponReloadComponent.md#onendreload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
-| **[onStartReload](mw.HotWeaponReloadComponent.md#onstartreload)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
+| **[onEndReload](mw.HotWeaponReloadComponent.md#onendreload)**: `MulticastDelegateInterface`<() => `void`\> <br> 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
+| **[onStartReload](mw.HotWeaponReloadComponent.md#onstartreload)**: `MulticastDelegateInterface`<() => `void`\> <br> 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -44,7 +44,7 @@ export default class HotWeaponReloadSample1 extends Script {
 
 ### onEndReload <Score text="onEndReload" /> 
 
-• **onEndReload**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndReload**: `MulticastDelegateInterface`<() => `void`\>
 
 结束换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
 
@@ -52,7 +52,7 @@ ___
 
 ### onStartReload <Score text="onStartReload" /> 
 
-• **onStartReload**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartReload**: `MulticastDelegateInterface`<() => `void`\>
 
 开始换弹时执行绑定函数。使用示例见类 HotWeaponReloadComponent 使用示例
 

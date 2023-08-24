@@ -2,9 +2,8 @@
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-**`Instance`**
-
-MGS以及玩家信息、数据、头像等相关API
+MGS以及玩家信息、数据、头像等相关API。
+MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，如发布游戏后的左上角聊天、好友相关信息服务。
 
 ## Table of contents
 

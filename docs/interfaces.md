@@ -14,7 +14,6 @@ Interfaces
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [DataStorageResult](interfaces/mw.DataStorageResult.md) | 数据储存返回值 | [DATA](groups/DATA.DATA.md) |
-| [DelegateInterface](interfaces/mw.DelegateInterface.md) | 委托接口 | [TYPE](groups/TYPE.TYPE.md) |
 
 
 ## G
@@ -26,14 +25,8 @@ Interfaces
 ## I
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 一条数据的View接口 | [UTILITY](groups/UTILITY.UTILITY.md) |
-| [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 主面板View接口 | [UTILITY](groups/UTILITY.UTILITY.md) |
-
-
-## M
-| Name | Description | Groups |
-| :-----| :-----| :-----|
-| [MulticastDelegateInterface](interfaces/mw.MulticastDelegateInterface.md) | 多播委托接口 | [TYPE](groups/TYPE.TYPE.md) |
+| [ILeaderboardItemView](interfaces/mwext.ILeaderboardItemView.md) | 排行榜面板一条数据的UI结构接口 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [ILeaderboardPanelView](interfaces/mwext.ILeaderboardPanelView.md) | 排行榜面板的UI结构接口 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 
 
 ## P

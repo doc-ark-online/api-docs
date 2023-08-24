@@ -10,7 +10,7 @@ mwext
 
 | Enumerations |
 | :-----|
-| [GameObjPoolSourceType](../enums/mwext.GameObjPoolSourceType.md) <br> GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择|
+| [GameObjPoolSourceType](../enums/mwext.GameObjPoolSourceType.md) <br> GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择|
 
 | Classes |
 | :-----|
@@ -18,22 +18,22 @@ mwext
 | [BaseView](../classes/mwext.BaseView.md) <br> 界面类的基类|
 | [DataCenterC](../classes/mwext.DataCenterC.md) <br> 客户端数据中心，里面存放着当前玩家的数据|
 | [DataCenterS](../classes/mwext.DataCenterS.md) <br> 服务端数据中心，管理所有玩家的数据|
-| [GameObjPool](../classes/mwext.GameObjPool.md) <br> GameObject对象池|
+| [GameObjPool](../classes/mwext.GameObjPool.md) <br> 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存|
 | [LeaderboardItemPanelBase](../classes/mwext.LeaderboardItemPanelBase.md) <br> 排行榜主界面中的子UI，用来显示一条记录|
-| [LeaderboardMainPaneBase](../classes/mwext.LeaderboardMainPaneBase.md) <br> 排行榜主界面|
+| [LeaderboardMainPanelBase](../classes/mwext.LeaderboardMainPanelBase.md) <br> 排行榜主界面|
 | [LeaderboardModule](../classes/mwext.LeaderboardModule.md) <br> 编辑器内置排行榜|
 | [LeaderboardModuleBaseC](../classes/mwext.LeaderboardModuleBaseC.md) <br> 排行榜模块-客户端|
 | [LeaderboardModuleBaseS](../classes/mwext.LeaderboardModuleBaseS.md) <br> 排行榜模块-服务端|
 | [ModuleC](../classes/mwext.ModuleC.md) <br> 客户端模块的基类|
 | [ModuleS](../classes/mwext.ModuleS.md) <br> 服务端模块的基类|
 | [ModuleService](../classes/mwext.ModuleService.md) <br> 模块管理|
-| [ObjPool](../classes/mwext.ObjPool.md) <br> 对象池|
+| [ObjPool](../classes/mwext.ObjPool.md) <br> 通用对象池，可用于各种类型对象的复用|
 | [Subdata](../classes/mwext.Subdata.md) <br> 数据控制类的基类|
 
 | Interfaces |
 | :-----|
-| [ILeaderboardItemView](../interfaces/mwext.ILeaderboardItemView.md) <br> 一条数据的View接口|
-| [ILeaderboardPanelView](../interfaces/mwext.ILeaderboardPanelView.md) <br> 主面板View接口|
+| [ILeaderboardItemView](../interfaces/mwext.ILeaderboardItemView.md) <br> 排行榜面板一条数据的UI结构接口|
+| [ILeaderboardPanelView](../interfaces/mwext.ILeaderboardPanelView.md) <br> 排行榜面板的UI结构接口|
 
 | Type Aliases |
 | :-----|

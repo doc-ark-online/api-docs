@@ -1,6 +1,6 @@
-[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardMainPaneBase
+[EXTENSION](../groups/Extension.EXTENSION.md) / LeaderboardMainPanelBase
 
-# LeaderboardMainPaneBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPaneBase<T\>" />
+# LeaderboardMainPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPanelBase<T\>" />
 
 排行榜主界面
 
@@ -14,13 +14,13 @@
 
 - [`BasePanel`](mwext.BasePanel.md)<`T`\>
 
-  ↳ **`LeaderboardMainPaneBase`**
+  ↳ **`LeaderboardMainPanelBase`**
 
 ## Table of contents
 
 | Properties |
 | :-----|
-| **[onClose](mwext.LeaderboardMainPaneBase.md#onclose)**: [`Action`](mw.Action.md) <br> 当关闭的时候调用的事件|
+| **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md) <br> 当关闭的时候调用的事件|
 
 | Accessors |
 | :-----|
@@ -36,15 +36,15 @@
 
 | Methods |
 | :-----|
-| **[addField](mwext.LeaderboardMainPaneBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 添加一个字段|
-| **[creatItem](mwext.LeaderboardMainPaneBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <br> 创建用于显示一条排行信息的item子UI|
-| **[onHide](mwext.LeaderboardMainPaneBase.md#onhide)**(): `void` <br> 当UI隐藏调用|
-| **[onSelfFieldSet](mwext.LeaderboardMainPaneBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置自己的字段内容后调用，需要请复写|
-| **[onShow](mwext.LeaderboardMainPaneBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <br> 当UI显示调用|
-| **[setSortFields](mwext.LeaderboardMainPaneBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 设置排序字段ID，可以设置多字段排序，只支持从大到小排序|
-| **[setSortMethod](mwext.LeaderboardMainPaneBase.md#setsortmethod)**(`fn`: (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 设置排序的方法|
-| **[setStyle](mwext.LeaderboardMainPaneBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 设置排行榜样式|
-| **[showRankField](mwext.LeaderboardMainPaneBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <br> 显示"名次"字段，默认不显示，调用这个方法后才会显示|
+| **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 添加一个字段|
+| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <br> 创建用于显示一条排行信息的item子UI|
+| **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void` <br> 当UI隐藏调用|
+| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置自己的字段内容后调用，需要请复写|
+| **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <br> 当UI显示调用|
+| **[setSortFields](mwext.LeaderboardMainPanelBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排序字段ID，可以设置多字段排序，只支持从大到小排序|
+| **[setSortMethod](mwext.LeaderboardMainPanelBase.md#setsortmethod)**(`fn`: (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排序的方法|
+| **[setStyle](mwext.LeaderboardMainPanelBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排行榜样式|
+| **[showRankField](mwext.LeaderboardMainPanelBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 显示"名次"字段，默认不显示，调用这个方法后才会显示|
 
 
 ::: details 点击查看继承
@@ -67,7 +67,7 @@
 
 ### addField <Score text="addField" /> 
 
-• **addField**(`fieldId`, `fieldName`, `valueStyle?`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <Badge type="tip" text="client" />
+• **addField**(`fieldId`, `fieldName`, `valueStyle?`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
 添加一个字段
 
@@ -82,7 +82,7 @@
 
 #### Returns
 
-[`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\>
+[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
 
 返回自己，可用于链式调用
 
@@ -163,7 +163,7 @@ ___
 
 ### setSortFields <Score text="setSortFields" /> 
 
-• **setSortFields**(`...fieldIds`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <Badge type="tip" text="client" />
+• **setSortFields**(`...fieldIds`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
 设置排序字段ID，可以设置多字段排序，只支持从大到小排序
 
@@ -176,7 +176,7 @@ ___
 
 #### Returns
 
-[`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\>
+[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
 
 返回自己，可用于链式调用
 
@@ -184,7 +184,7 @@ ___
 
 ### setSortMethod <Score text="setSortMethod" /> 
 
-• **setSortMethod**(`fn`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <Badge type="tip" text="client" />
+• **setSortMethod**(`fn`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
 设置排序的方法
 
@@ -197,7 +197,7 @@ ___
 
 #### Returns
 
-[`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\>
+[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
 
 返回自己，可用于链式调用
 
@@ -205,7 +205,7 @@ ___
 
 ### setStyle <Score text="setStyle" /> 
 
-• **setStyle**(`title`, `fieldsAutoLayout`, `showPlayerNum`, `itemSpacing`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <Badge type="tip" text="client" />
+• **setStyle**(`title`, `fieldsAutoLayout`, `showPlayerNum`, `itemSpacing`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
 设置排行榜样式
 
@@ -221,7 +221,7 @@ ___
 
 #### Returns
 
-[`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\>
+[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
 
 返回自己，可用于链式调用
 
@@ -229,7 +229,7 @@ ___
 
 ### showRankField <Score text="showRankField" /> 
 
-• **showRankField**(`fieldName`, `valueStyle?`, `notListed?`): [`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\> <Badge type="tip" text="client" />
+• **showRankField**(`fieldName`, `valueStyle?`, `notListed?`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
 显示"名次"字段，默认不显示，调用这个方法后才会显示
 
@@ -244,6 +244,6 @@ ___
 
 #### Returns
 
-[`LeaderboardMainPaneBase`](mwext.LeaderboardMainPaneBase.md)<`T`\>
+[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
 
 返回自己，可用于链式调用

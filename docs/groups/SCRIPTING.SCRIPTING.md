@@ -7,12 +7,20 @@ SCRIPTING
 | :-----|
 | [Event](../classes/mw.Event.md) <br> 事件 |
 | [EventListener](../classes/mw.EventListener.md) <br> 事件监听器 |
+| [Script](../classes/mw.Script.md) <br> 脚本管理 |
 
 
 | Enums |
 | :-----|
 | [DispatchEventResult](../enums/mw.DispatchEventResult.md) <br> 事件发送的结果 |
 | [MessageChannelReceiver](../enums/mw.MessageChannelReceiver.md) <br> 枚举各个通道的使用与接收方 |
+
+
+| Modules Functions |
+| :-----|
+| **[Property](SCRIPTING.SCRIPTING.md#property)**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` <br> 属性支持同步|
+| **[RemoteFunction](SCRIPTING.SCRIPTING.md#remotefunction)**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void` <br> 函数支持Rpc调用|
+| **[Serializable](SCRIPTING.SCRIPTING.md#serializable)**<`T`: extends `ConstructorType`\>(`type`: `T`): `T`: extends `ConstructorType` <br> 类型支持属性同步|
 
 
 | Modules Type Aliases |
@@ -22,6 +30,108 @@ SCRIPTING
 | **[UGCTemplateInfo](SCRIPTING.SCRIPTING.md#ugctemplateinfo)**: `Object` <br> UGC模板信息|
 
 
+| Modules Variables |
+| :-----|
+| **[Client](SCRIPTING.SCRIPTING.md#client)**: `FunctionOption` <br> 客户端|
+| **[Multicast](SCRIPTING.SCRIPTING.md#multicast)**: `FunctionOption` <br> 多播|
+| **[Server](SCRIPTING.SCRIPTING.md#server)**: `FunctionOption` <br> 服务端|
+
+
+## Modules Functions
+
+
+___
+
+### Property <Score text="Property" /> 
+
+• **Property**(`option?`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+
+属性支持同步
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `option?` | `IPropertyOptions` | 配置 default:配置 |
+
+#### Returns
+
+`fn`
+
+自定义属性
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `unknown` |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`
+___
+
+### RemoteFunction <Score text="RemoteFunction" /> 
+
+• **RemoteFunction**(`...options`): (`target`: `unknown`, `propertyKey`: `string`) => `void` 
+
+函数支持Rpc调用
+
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...options` | `FunctionOption`[] | Rpc调用方式 |
+
+#### Returns
+
+`fn`
+
+自定义函数
+
+• (`target`, `propertyKey`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `target` | `unknown` |
+| `propertyKey` | `string` |
+
+##### Returns
+
+`void`
+___
+
+### Serializable <Score text="Serializable" /> 
+
+• **Serializable**<`T`\>(`type`): `T` 
+
+类型支持属性同步
+
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends `ConstructorType` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `type` | `T` | 自定义类 |
+
+#### Returns
+
+`T`
+
+自定义类
 ## Modules Type Aliases
 
 
@@ -76,3 +186,29 @@ UGC模板信息
 | `name` | `string` | 模板名称 |
 | `packageName` | `string` | 模板包名 |
 | `version` | `string` | 模板版本号 |
+## Modules Variables
+
+
+## Variables
+
+### Client <Score text="Client" /> 
+
+• `Const` **Client**: `FunctionOption` 
+
+客户端
+
+___
+
+### Multicast <Score text="Multicast" /> 
+
+• `Const` **Multicast**: `FunctionOption` 
+
+多播
+
+___
+
+### Server <Score text="Server" /> 
+
+• `Const` **Server**: `FunctionOption` 
+
+服务端

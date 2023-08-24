@@ -32,8 +32,8 @@ export default class HotWeaponAimSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
-| **[onStartAim](mw.HotWeaponAimComponent.md#onstartaim)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
+| **[onStartAim](mw.HotWeaponAimComponent.md#onstartaim)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -50,7 +50,7 @@ export default class HotWeaponAimSample1 extends Script {
 
 ### onEndAim <Score text="onEndAim" /> 
 
-• **onEndAim**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onEndAim**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 
@@ -58,7 +58,7 @@ ___
 
 ### onStartAim <Score text="onStartAim" /> 
 
-• **onStartAim**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartAim**: `MulticastDelegateInterface`<() => `void`\>
 
 服务器端开始瞄准代理。使用示例见类 HotWeaponAimComponent 使用示例
 

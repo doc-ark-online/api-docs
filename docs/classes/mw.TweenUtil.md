@@ -156,3 +156,35 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
 ```
 
 ## Table of contents
+
+| Properties |
+| :-----|
+| **[TWEEN](mw.TweenUtil.md#tween)**: [`TweenGroup`](mw.TweenGroup.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
+| **[nextId](mw.TweenUtil.md#nextid)**: () => `number` <br> 获取下一个ID的全局方法|
+
+## Properties
+
+### TWEEN <Score text="TWEEN" /> 
+
+▪ `Static` **TWEEN**: [`TweenGroup`](mw.TweenGroup.md)
+
+全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组
+
+___
+
+### nextId <Score text="nextId" /> 
+
+▪ `Static` **nextId**: () => `number` <Badge type="tip" text="other" />
+
+#### Type declaration
+
+• (): `number`
+
+获取下一个ID的全局方法
+
+
+##### Returns
+
+`number`
+
+下一个ID

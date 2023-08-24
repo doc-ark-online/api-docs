@@ -6,12 +6,6 @@
 
 debug调试服务
 
-::: warning Precautions
-
-单例类，请使用instance获取对象
-
-:::
-
 ## Table of contents
 
 | Methods |

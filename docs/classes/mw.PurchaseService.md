@@ -2,15 +2,7 @@
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
-**`Instance`**
-
 应用内购服务
-
-::: warning Precautions
-
-单例类，请使用instance获取对象
-
-:::
 
 ## Table of contents
 
@@ -340,7 +332,7 @@ ___
 
 ::: warning Precautions
 
-暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步）
+暂未考虑单机模式，第一次结果会通过异步回调的方式返回（构造时自动请求），后续会通过缓存直接执行回调函数（同步）。老版本的233乐园可能出现无回调的情况，需要自行判断超时
 
 :::
 

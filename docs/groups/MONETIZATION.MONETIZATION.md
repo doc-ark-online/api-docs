@@ -6,7 +6,6 @@ MONETIZATION
 | Classes |
 | :-----|
 | [AdsService](../classes/mw.AdsService.md) <br> 广告服务，支持激励/插屏类型 |
-| [NFTUtil](../classes/mw.NFTUtil.md) <br> NFT资产交易系统。 |
 | [PurchaseService](../classes/mw.PurchaseService.md) <br> 应用内购服务 |
 
 

@@ -4,6 +4,47 @@
 
 任意参数的代理
 
+使用示例:创建一个名为ActionExample的脚本，放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”将看到代理被调用的效果,按下键盘“2”会看到代理被移除的效果，代码如下：
+```ts
+@Component
+export default class ActionExample extends Script {
+    private readonly action:Action = new Action;
+    private readonly action1:Action1<number> = new Action1();
+    private readonly action2:Action2<number, string> = new Action2();
+
+    protected onStart(): void {
+        // 添加Action的监听
+        this.action.add(() => {
+            console.log("action");
+        });
+        // 添加Action1的监听
+        this.action1.add(this.onAction1, this);
+        // 添加Action2的监听
+        this.action2.add(this.onAction2, this);
+
+        // 按下键盘的1键触发各个Action
+        InputUtil.onKeyDown(Keys.One, () => {
+            this.action.call();
+            this.action1.call(1);
+            this.action2.call(1, "testString");
+        });
+        // 按下键盘的2键移除各个Action的监听，移除后再触发不会执行
+        InputUtil.onKeyDown(Keys.Two, () => {
+            this.action1.remove(this.onAction1, this);
+            this.action2.remove(this.onAction2, this);
+        });
+    }
+    // Action1的监听函数
+    private onAction1(a: number) {
+        console.log("onAction1", a);
+    }
+    // Action2的监听函数
+    private onAction2(a: number, b: string) {
+        console.log("onAction2", a, b);
+    }
+}
+```
+
 ## Hierarchy
 
 - **`Action`**

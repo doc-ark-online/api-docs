@@ -41,9 +41,7 @@ TYPE
 
 | Interfaces |
 | :-----|
-| [DelegateInterface](../interfaces/mw.DelegateInterface.md) <br> 委托接口 |
 | [GameObjectInfo](../interfaces/mw.GameObjectInfo.md) <br> 构建物体的信息 |
-| [MulticastDelegateInterface](../interfaces/mw.MulticastDelegateInterface.md) <br> 多播委托接口 |
 | [TypeName](../interfaces/mw.TypeName.md) <br> 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:{new():T}) 可以写成 fun`<T>`(c:Class`<T>`) |
 
 

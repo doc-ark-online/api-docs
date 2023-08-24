@@ -32,7 +32,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 | Properties |
 | :-----|
-| **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: `MulticastDelegateInterface`<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
 | Accessors |
 | :-----|
@@ -57,7 +57,7 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ### onStartRecoil <Score text="onStartRecoil" /> 
 
-• **onStartRecoil**: [`MulticastDelegateInterface`](../interfaces/mw.MulticastDelegateInterface.md)<() => `void`\>
+• **onStartRecoil**: `MulticastDelegateInterface`<() => `void`\>
 
 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 

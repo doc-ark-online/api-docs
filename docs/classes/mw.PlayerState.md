@@ -48,7 +48,7 @@ PlayerState基类
 
 ## Hierarchy
 
-- `Script`
+- [`Script`](mw.Script.md)
 
   ↳ **`PlayerState`**
 
@@ -56,11 +56,27 @@ PlayerState基类
 
 | Accessors |
 | :-----|
-| **[gameObject](mw.PlayerState.md#gameobject)**(): [`GameObject`](mw.GameObject.md) <br> |
+
+
+::: details 点击查看继承
+| Accessors |
+| :-----|
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md) <br> 脚本对应的GameObject|
+| **[name](mw.Script.md#name)**(): `string` <br> |
+:::
+
 
 | Methods |
 | :-----|
-| **[destroy](mw.PlayerState.md#destroy)**(): `void` <br> |
+
+
+::: details 点击查看继承
+| Methods |
+| :-----|
+| **[destroy](mw.Script.md#destroy)**(): `void` <br> |
+| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> <br> |
+:::
+
 
 #### Parameters
 
@@ -70,42 +86,8 @@ PlayerState基类
 
 #### Overrides
 
-mw.Script.constructor
+[Script](mw.Script.md).[constructor](mw.Script.md#constructor)
 
 ## Accessors
 
-### gameObject <Score text="gameObject" /> 
-
-• `get` **gameObject**(): [`GameObject`](mw.GameObject.md)
-
-#### Returns
-
-[`GameObject`](mw.GameObject.md)
-
-#### Overrides
-
-mw.Script.gameObject
-
-• `set` **gameObject**(`gameObject`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `gameObject` | [`GameObject`](mw.GameObject.md) |
-
-
-#### Overrides
-
-mw.Script.gameObject
-
 ## Methods
-
-### destroy <Score text="destroy" /> 
-
-• **destroy**(): `void`
-
-
-#### Overrides
-
-mw.Script.destroy

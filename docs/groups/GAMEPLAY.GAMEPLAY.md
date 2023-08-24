@@ -8,7 +8,7 @@ GAMEPLAY
 | [AdvancedVehicle](../classes/mw.AdvancedVehicle.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 |
 | [BlockingVolume](../classes/mw.BlockingVolume.md) <br> 禁行区，用于控制个角色是否可以进出此区域，角色可站立，默认阻挡 |
 | [Camera](../classes/mw.Camera.md) <br> 摄像机 |
-| [GameObject](../classes/mw.GameObject.md) <br> GameObject的基类 |
+| [GameObject](../classes/mw.GameObject.md) <br> pawn、camera、hotweapon、sound等都继承自GameObject，GameObject为基类。提供复制删除物体，查找获取物体、子物体、脚本等功能。 |
 | [HotWeapon](../classes/mw.HotWeapon.md) <br> 热武器功能对象，提供对发射类武器常用的射击，上膛，换弹，后坐力，瞄准和射击精度控制等功能的封装。 |
 | [HotWeaponAccuracyOfFireComponent](../classes/mw.HotWeaponAccuracyOfFireComponent.md) <br> 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 |
 | [HotWeaponAimComponent](../classes/mw.HotWeaponAimComponent.md) <br> 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近 |
@@ -25,13 +25,10 @@ GAMEPLAY
 | [Player](../classes/mw.Player.md) <br> 角色控制 |
 | [ProjectileInst](../classes/mw.ProjectileInst.md) <br> 投掷物发射器专用实例对象 |
 | [ProjectileMovement](../classes/mw.ProjectileMovement.md) <br> 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 |
-| [QueryUtil](../classes/mw.QueryUtil.md) <br> 射线检测范围 |
 | [ScreenUtil](../classes/mw.ScreenUtil.md) <br> 屏幕视口设置相关的接口 |
-| [Skybox](../classes/mw.Skybox-1.md) |
 | [SpringArm](../classes/mw.SpringArm.md) <br> 弹簧臂 |
 | [SwimmingVolume](../classes/mw.SwimmingVolume.md) <br> 游泳区域 |
 | [Trigger](../classes/mw.Trigger.md) <br> 触发器，对进入/离开触发器范围的事件进行响应 |
-| [WheeledVehicle4W](../classes/mw.WheeledVehicle4W.md) <br> 四轮载具逻辑对象。基于物理模拟的四轮载具，具有载具常见的参数，质量，档位，驱动方式等。 |
 
 
 | Enums |

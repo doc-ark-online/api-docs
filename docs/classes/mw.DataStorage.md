@@ -13,7 +13,7 @@
 | **[asyncRemoveData](mw.DataStorage.md#asyncremovedata)**(`key`: `string`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步删除自定义数据|
 | **[asyncSetData](mw.DataStorage.md#asyncsetdata)**(`key`: `string`, `value`: `any`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步设置自定义数据|
 | **[asyncSetOtherGameData](mw.DataStorage.md#asyncsetothergamedata)**(`gameId`: `string`, `key`: `string`, `value`: `any`): `Promise`<[`DataStorageResultCode`](../enums/mw.DataStorageResultCode.md)\> <br> 异步设置其他游戏保存的数据|
-| **[getDataSize](mw.DataStorage.md#getdatasize)**(`data`: `any`): `number` <br> 返回data的当前大小。单位为bytes（字节）。|
+| **[getDataSize](mw.DataStorage.md#getdatasize)**(`data`: `any`): `number` <br> 返回data的当前大小。单位为byte（字节）。|
 | **[setTemporaryStorage](mw.DataStorage.md#settemporarystorage)**(`isTemporary`: `boolean`): `void` <br> 设置数据存储环境是否是临时的|
 
 ## Methods
@@ -131,7 +131,7 @@ ___
 
 • `Static` **getDataSize**(`data`): `number` 
 
-返回data的当前大小。单位为bytes（字节）。
+返回data的当前大小。单位为byte（字节）。
 
 
 #### Parameters

@@ -4,20 +4,9 @@
 
 二级姿态
 
-使用示例: 在角色初始化完成后, 可以执行下面的代码, 让所有客户端的角色全身播放一个持枪的姿态.
-```ts
-this.stanceProxy = this.character.loadSubStance("49096", true);
-// 修改姿态的混合模式为全身
-this.stanceProxy.blendMode = mw.StanceBlendMode.WholeBody;
-// 播放这个姿态
-this.stanceProxy.play();
-// 当你想停止它时, 可以执行下面的代码
-this.stanceProxy.stop();
-```
-
 ## Hierarchy
 
-- [`StanceBase`](mw.StanceBase.md)
+- `StanceBase`
 
   ↳ **`SubStance`**
 

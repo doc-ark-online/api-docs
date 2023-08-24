@@ -66,7 +66,7 @@ Enums
 ## G
 | Name | Description | Groups |
 | :-----| :-----| :-----|
-| [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
 | [GraphicsLevel](enums/mw.GraphicsLevel.md) | 画质等级 | [TYPE](groups/TYPE.TYPE.md) |
 | [GravityMode](enums/mw.GravityMode.md) | 重力模式 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 
@@ -152,7 +152,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScrollBarDefaultLocation](enums/mw.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [UI](groups/UI.UI.md) |
-| [SkyPreset](enums/mw.SkyPreset.md) | 天空球预设枚举 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
+| [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [UI](groups/UI.UI.md) |
 | [SlateBrushTileType](enums/mw.SlateBrushTileType.md) | 图片画刷填充模式 | [UI](groups/UI.UI.md) |
 | [SlateColorStylingMode](enums/mw.SlateColorStylingMode.md) | UI颜色应用模式 | [UI](groups/UI.UI.md) |

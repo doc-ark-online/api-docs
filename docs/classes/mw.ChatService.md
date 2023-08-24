@@ -2,8 +2,6 @@
 
 # ChatService <Badge type="tip" text="Class" /> <Score text="ChatService" />
 
-**`Instance`**
-
 是一个用于实现聊天功能的类，它可以管理用户之间的交流并提供相关的服务。
 
 ## Table of contents

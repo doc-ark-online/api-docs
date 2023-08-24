@@ -1,8 +1,8 @@
-[UTILITY](../groups/Extension.UTILITY.md) / ILeaderboardItemView
+[EXTENSION](../groups/Extension.EXTENSION.md) / ILeaderboardItemView
 
 # ILeaderboardItemView <Badge type="tip" text="Interface" /> <Score text="ILeaderboardItemView" />
 
-一条数据的View接口
+排行榜面板一条数据的UI结构接口
 
 ## Hierarchy
 
