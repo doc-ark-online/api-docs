@@ -35,7 +35,7 @@
 
 包含寻路、冲量、触发器、热武器等常用逻辑对象
 
-## [Gui](../groups/Gui.Gui.md)
+## [UI](../groups/Gui.Gui.md)
 
 **游戏UI**
 
@@ -61,7 +61,7 @@
 
 **物理**
 
-## [Scripiting](../groups/Scripiting.Scripiting.md)
+## [Scripting](../groups/Scripiting.Scripiting.md)
 
 **脚本**
 
