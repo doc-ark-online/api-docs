@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / TouchPad
+[GUI](../groups/GUI.GUI.md) / TouchPad
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
@@ -61,8 +61,6 @@
 :::
 
 
-## Accessors
-
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
 • `get` **controlByMouseEnable**(): `boolean` <Badge type="tip" text="client" />
@@ -88,6 +86,7 @@
 | `controlByMouse` | `boolean` |  是否被鼠标控制 |
 
 
+___
 
 ### inputScale <Score text="inputScale" /> 
 
@@ -116,6 +115,7 @@
 
 
 ## Methods
+___
 
 ### newObject <Score text="newObject" /> 
 

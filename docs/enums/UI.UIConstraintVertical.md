@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIConstraintVertical
+[GUI](../groups/GUI.GUI.md) / UIConstraintVertical
 
 # UIConstraintVertical <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintVertical" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / AppearanceType
+[AVATAR](../groups/AVATAR.AVATAR.md) / AppearanceType
 
 # AppearanceType <Badge type="tip" text="Enumeration" /> <Score text="AppearanceType" />
 

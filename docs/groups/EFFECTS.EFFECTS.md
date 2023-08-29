@@ -1,6 +1,6 @@
-Effects
+EFFECTS
 
-# Effects <Badge type="tip" text="Groups" /> <Score text="Effects" />
+# EFFECTS <Badge type="tip" text="Groups" /> <Score text="EFFECTS" />
 
 ## Table of contents
 | Classes |

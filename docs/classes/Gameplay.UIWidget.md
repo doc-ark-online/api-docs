@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIWidget
+[GUI](../groups/GUI.GUI.md) / UIWidget
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
@@ -14,11 +14,9 @@
 
 | Accessors |
 | :-----|
-| **[cylinderArcAngle](Gameplay.UIWidget.md#cylinderarcangle)**(): `number` <br> 获取圆柱体弧形角度|
 | **[distanceScaleFactor](Gameplay.UIWidget.md#distancescalefactor)**(): `number` <br> 获取缩放距离系数|
 | **[drawSize](Gameplay.UIWidget.md#drawsize)**(): [`Vector2`](Type.Vector2.md) <br> 获取实际渲染大小|
 | **[extraParam](Gameplay.UIWidget.md#extraparam)**(): `string` <br> 获取扩展参数|
-| **[geometryMode](Gameplay.UIWidget.md#geometrymode)**(): [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md) <br> 获取几何体模式|
 | **[headUIMaxVisibleDistance](Gameplay.UIWidget.md#headuimaxvisibledistance)**(): `number` <br> 获取最大头顶UI可见距离|
 | **[hideByDistanceEnable](Gameplay.UIWidget.md#hidebydistanceenable)**(): `boolean` <br> 获取是否启用最大可见距离|
 | **[interaction](Gameplay.UIWidget.md#interaction)**(): `boolean` <br> 获取世界UI交互状态|
@@ -27,6 +25,7 @@
 | **[pivot](Gameplay.UIWidget.md#pivot)**(): [`Vector2`](Type.Vector2.md) <br> 获取锚点位置|
 | **[scaledByDistanceEnable](Gameplay.UIWidget.md#scaledbydistanceenable)**(): `boolean` <br> 获取是否开启近大远小|
 | **[selfOcclusion](Gameplay.UIWidget.md#selfocclusion)**(): `boolean` <br> 获取是否可被自己遮挡|
+| **[translucentSortPriority](Gameplay.UIWidget.md#translucentsortpriority)**(): `number` <br> 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
 | **[widgetSpace](Gameplay.UIWidget.md#widgetspace)**(): [`WidgetSpaceMode`](../enums/Gameplay.WidgetSpaceMode.md) <br> 获取显示方式|
 
 
@@ -80,7 +79,6 @@
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -102,7 +100,6 @@
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -121,33 +118,6 @@
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
-
-## Accessors
-
-### cylinderArcAngle <Score text="cylinderArcAngle" /> 
-
-• `get` **cylinderArcAngle**(): `number`
-
-获取圆柱体弧形角度
-
-#### Returns
-
-`number`
-
-角度
-
-• `set` **cylinderArcAngle**(`inCylinderArcAngle`): `void`
-
-设置圆柱体弧形角度
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inCylinderArcAngle` | `number` | 角度 |
-
-
-___
 
 ### distanceScaleFactor <Score text="distanceScaleFactor" /> 
 
@@ -222,30 +192,7 @@ ___
 | `Value` | `string` | 扩展参数 |
 
 
-
-### geometryMode <Score text="geometryMode" /> 
-
-• `get` **geometryMode**(): [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md)
-
-获取几何体模式
-
-#### Returns
-
-[`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md)
-
-几何体模式枚举
-
-• `set` **geometryMode**(`inGeometryMode`): `void`
-
-设置几何体模式
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inGeometryMode` | [`WidgetGeometryMode`](../enums/Gameplay.WidgetGeometryMode.md) | 几何体模式枚举 |
-
-
+___
 
 ### headUIMaxVisibleDistance <Score text="headUIMaxVisibleDistance" /> 
 
@@ -363,6 +310,7 @@ ___
 | `Value` | `boolean` | 布尔值 |
 
 
+___
 
 ### occlusionEnable <Score text="occlusionEnable" /> 
 
@@ -387,6 +335,7 @@ true：可被遮挡
 | `Value` | `boolean` | 布尔值 |
 
 
+___
 
 ### pivot <Score text="pivot" /> 
 
@@ -411,6 +360,7 @@ true：可被遮挡
 | `position` | [`Vector2`](Type.Vector2.md) | 位置信息 |
 
 
+___
 
 ### scaledByDistanceEnable <Score text="scaledByDistanceEnable" /> 
 
@@ -460,6 +410,44 @@ ___
 | `Value` | `boolean` | 布尔值 |
 
 
+___
+
+### translucentSortPriority <Score text="translucentSortPriority" /> 
+
+• `get` **translucentSortPriority**(): `number` <Badge type="tip" text="client" />
+
+获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
+
+
+::: warning Precautions
+
+请在客户端调用
+
+:::
+
+#### Returns
+
+`number`
+
+• `set` **translucentSortPriority**(`value`): `void` <Badge type="tip" text="client" />
+
+设置渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
+
+
+::: warning Precautions
+
+请在客户端调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新的渲染层级，值范围为 [0, 31] |
+
+
+___
 
 ### widgetSpace <Score text="widgetSpace" /> 
 
@@ -486,6 +474,7 @@ ___
 
 
 ## Methods
+___
 
 ### getTargetUIWidget <Score text="getTargetUIWidget" /> 
 
@@ -500,6 +489,7 @@ ___
 
 UI对象资源
 
+___
 
 ### refresh <Score text="refresh" /> 
 
@@ -509,6 +499,7 @@ UI对象资源
 
 
 
+___
 
 ### setTargetUIWidget <Score text="setTargetUIWidget" /> 
 
@@ -524,6 +515,7 @@ UI对象资源
 | `uiUserWidget` | [`UserWidget`](UI.UserWidget.md) | UI资源对象 |
 
 
+___
 
 ### setUIbyGUID <Score text="setUIbyGUID" /> 
 

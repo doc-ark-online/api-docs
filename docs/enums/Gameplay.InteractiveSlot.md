@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / InteractiveSlot
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / InteractiveSlot
 
 # InteractiveSlot <Badge type="tip" text="Enumeration" /> <Score text="InteractiveSlot" />
 

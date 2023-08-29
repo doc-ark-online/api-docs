@@ -1,4 +1,4 @@
-[Physics](../groups/Physics.Physics.md) / IntegratedMover
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / IntegratedMover
 
 # IntegratedMover <Badge type="tip" text="Class" /> <Score text="IntegratedMover" />
 
@@ -27,7 +27,6 @@
 
 | Accessors |
 | :-----|
-| **[constraintTarget1](Gameplay.IntegratedMover.md#constrainttarget1)**(): `string` <br> 获取约束对象(兼容旧项目)|
 | **[enable](Gameplay.IntegratedMover.md#enable)**(): `boolean` <br> 获取启用状态|
 | **[linearDelayStartTime](Gameplay.IntegratedMover.md#lineardelaystarttime)**(): `number` <br> 获取延时启动平移运行时间|
 | **[linearRepeat](Gameplay.IntegratedMover.md#linearrepeat)**(): `boolean` <br> 获取平移重复运动状态|
@@ -35,6 +34,7 @@
 | **[linearRepeatTime](Gameplay.IntegratedMover.md#linearrepeattime)**(): `number` <br> 获取平移单程运动时间|
 | **[linearReturnDelay](Gameplay.IntegratedMover.md#linearreturndelay)**(): `number` <br> 获取平移返程后停顿时间|
 | **[linearSpeed](Gameplay.IntegratedMover.md#linearspeed)**(): [`Vector`](Type.Vector.md) <br> 获取平移速度大小|
+| **[motionCoordinate](Gameplay.IntegratedMover.md#motioncoordinate)**(): [`MotionAxis`](../enums/Gameplay.MotionAxis.md) <br> 获取运动坐标系|
 | **[rotationDelayStartTime](Gameplay.IntegratedMover.md#rotationdelaystarttime)**(): `number` <br> 获取延时启动旋转运行时间|
 | **[rotationRepeat](Gameplay.IntegratedMover.md#rotationrepeat)**(): `boolean` <br> 获取旋转重复运动状态|
 | **[rotationRepeatDelay](Gameplay.IntegratedMover.md#rotationrepeatdelay)**(): `number` <br> 获取旋转到达后停顿时间|
@@ -100,7 +100,6 @@
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -122,7 +121,6 @@
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -141,8 +139,6 @@
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
-
-## Properties
 
 ### onLinearEnable <Score text="onLinearEnable" /> 
 
@@ -224,29 +220,6 @@ ___
 
 ## Accessors
 
-### constraintTarget1 <Score text="constraintTarget" /> 
-
-• `get` **constraintTarget1**(): `string`
-
-获取约束对象(兼容旧项目)
-
-#### Returns
-
-`string`
-
-• `set` **constraintTarget1**(`GUID`): `void`
-
-设置约束对象(兼容旧项目，若有必要请使用attachToGameObject)
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` | 约束对象的GUID |
-
-
-___
-
 ### enable <Score text="enable" /> 
 
 • `get` **enable**(): `boolean`
@@ -270,6 +243,7 @@ ___
 | `newEnable` | `boolean` | 启用状态 |
 
 
+___
 
 ### linearDelayStartTime <Score text="linearDelayStartTime" /> 
 
@@ -421,6 +395,32 @@ ___
 | `newSpeed` | [`Vector`](Type.Vector.md) | 平移速度大小 |
 
 
+___
+
+### motionCoordinate <Score text="motionCoordinate" /> 
+
+• `get` **motionCoordinate**(): [`MotionAxis`](../enums/Gameplay.MotionAxis.md)
+
+获取运动坐标系
+
+#### Returns
+
+[`MotionAxis`](../enums/Gameplay.MotionAxis.md)
+
+运动坐标系
+
+• `set` **motionCoordinate**(`newMotionCoordinate`): `void`
+
+设置运动坐标系
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `newMotionCoordinate` | [`MotionAxis`](../enums/Gameplay.MotionAxis.md) | 运动坐标系 |
+
+
+___
 
 ### rotationDelayStartTime <Score text="rotationDelayStartTime" /> 
 
@@ -745,6 +745,7 @@ ___
 | `newSmooth` | `boolean` | 平滑状态 |
 
 
+___
 
 ### swingAngle <Score text="swingAngle" /> 
 
@@ -821,6 +822,7 @@ ___
 
 
 ## Methods
+___
 
 ### moverReset <Score text="moverReset" /> 
 

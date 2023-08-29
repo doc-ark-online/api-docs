@@ -1,6 +1,6 @@
-Utility
+UTILITY
 
-# Utility <Badge type="tip" text="Groups" /> <Score text="Utility" />
+# UTILITY <Badge type="tip" text="Groups" /> <Score text="UTILITY" />
 
 ## Table of contents
 | Classes |
@@ -8,6 +8,11 @@ Utility
 | [EffectService](../classes/Service.EffectService.md) <br> 特效服务 |
 | [GameObjPool](../classes/Extension.GameObjPool.md) <br> GameObject对象池 |
 | [Group](../classes/Util.Util.TweenUtil.Group.md) <br> 补间组，用于同时控制多个补间对象 |
+| [LeaderboardItemPanelBase](../classes/Extension.LeaderboardItemPanelBase.md) <br> 排行榜主界面中的子UI，用来显示一条记录 |
+| [LeaderboardMainPaneBase](../classes/Extension.LeaderboardMainPaneBase.md) <br> 排行榜主界面 |
+| [LeaderboardModule](../classes/Extension.LeaderboardModule.md) <br> 编辑器内置排行榜 |
+| [LeaderboardModuleBaseC](../classes/Extension.LeaderboardModuleBaseC.md) <br> 排行榜模块-客户端 |
+| [LeaderboardModuleBaseS](../classes/Extension.LeaderboardModuleBaseS.md) <br> 排行榜模块-服务端 |
 | [ModuleC](../classes/Extension.ModuleC.md) <br> 客户端模块的基类 |
 | [ModuleManager](../classes/Extension.ModuleManager.md) <br> 模块管理 |
 | [ModuleS](../classes/Extension.ModuleS.md) <br> 服务端模块的基类 |
@@ -25,57 +30,68 @@ Utility
 | [GameObjPoolSourceType](../enums/Extension.GameObjPoolSourceType.md) <br> GameObjPool对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 |
 
 
+| Interfaces |
+| :-----|
+| [IItemView](../interfaces/Extension.IItemView.md) <br> 一条数据的View接口 |
+| [IPanelView](../interfaces/Extension.IPanelView.md) <br> 主面板View接口 |
+
+
 | Modules Functions |
 | :-----|
-| **[assetLoaded](Utility.Utility.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| **[asyncDownloadAsset](Utility.Utility.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
-| **[bindButton](Utility.Utility.md#bindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md), `Widget`: [`Button`](../classes/UI.Button.md) \): `void` <br> 绑定按键|
-| **[clamp](Utility.Utility.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
-| **[clearDelayExecute](Utility.Utility.md#cleardelayexecute)**(`id`: `number`): `void` <br> 清除delayExecute|
-| **[clearInterval](Utility.Utility.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
-| **[clipboardCopy](Utility.Utility.md#clipboardcopy)**(`text`: `string`): `void` <br> 文本复制，将字符串复制到剪切板|
-| **[clipboardPaste](Utility.Utility.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
-| **[cos](Utility.Utility.md#cos)**(`a`: `number`): `number` <br> 计算cos值|
-| **[degreesToRadians](Utility.Utility.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
-| **[delayExecute](Utility.Utility.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
-| **[delaySecond](Utility.Utility.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[drawGameObjectSelectionBox](Utility.Utility.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `Color`: [`LinearColor`](../classes/Type.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
-| **[elapsedTime](Utility.Utility.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
-| **[enableCursorInteractWithUI](Utility.Utility.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
-| **[enableCursorLock](Utility.Utility.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
-| **[fmod](Utility.Utility.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
-| **[format](Utility.Utility.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
-| **[getGameObjectBySelectionBox](Utility.Utility.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取框选屏幕位置的物体|
-| **[isCursorInteractiveWithUI](Utility.Utility.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
-| **[isCursorLockEnabled](Utility.Utility.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
-| **[isCursorLocked](Utility.Utility.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
-| **[isCursorVisible](Utility.Utility.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
-| **[isEmpty](Utility.Utility.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
-| **[lerp](Utility.Utility.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[maskWordCheck](Utility.Utility.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](Utility.Utility.md#maskwordcheck)Result`](Utility.Utility.md#maskwordcheckresult)\> <br> 屏蔽字检测|
-| **[nextId](Utility.Utility.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
-| **[onKeyDown](Utility.Utility.md#onkeydown)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-点击|
-| **[onKeyPress](Utility.Utility.md#onkeypress)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-按压|
-| **[onKeyUp](Utility.Utility.md#onkeyup)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-抬起|
-| **[parseTime](Utility.Utility.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
-| **[projectWorldLocationToWidgetPosition](Utility.Utility.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](../classes/Type.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
-| **[radiansToDegrees](Utility.Utility.md#radianstodegrees)**(`a`: `number`): `number` <br> 根据输入的弧度值返回度数|
-| **[randomFloat](Utility.Utility.md#randomfloat)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内浮点数[包含min, 不包含max)|
-| **[randomInt](Utility.Utility.md#randomint)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内整数[包含min, 不包含max)|
-| **[setCursorLocked](Utility.Utility.md#setcursorlocked)**(`isLock`: `boolean`): `void` <br> 设置鼠标指针是否锁定|
-| **[setCursorVisible](Utility.Utility.md#setcursorvisible)**(`isVisible`: `boolean`): `void` <br> 设置鼠标指针是否可见|
-| **[setGlobalOutlineParams](Utility.Utility.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void` <br> 设置全局描边参数|
-| **[setInterval](Utility.Utility.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
-| **[setMouseLockable](Utility.Utility.md#setmouselockable)**(`can`: `boolean`): `void` <br> 设置是否可以锁定鼠标|
-| **[sin](Utility.Utility.md#sin)**(`a`: `number`): `number` <br> 计算sin值|
-| **[tan](Utility.Utility.md#tan)**(`a`: `number`): `number` <br> 计算tan值|
-| **[time](Utility.Utility.md#time)**(): `number` <br> 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
-| **[unbindButton](Utility.Utility.md#unbindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md)): `void` <br> 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键|
+| **[assetLoaded](UTILITY.UTILITY.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
+| **[asyncDownloadAsset](UTILITY.UTILITY.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
+| **[bindButton](UTILITY.UTILITY.md#bindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md), `Widget`: [`StaleButton`](../classes/UI.StaleButton.md) \): `void` <br> 绑定按键|
+| **[clamp](UTILITY.UTILITY.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
+| **[clearDelayExecute](UTILITY.UTILITY.md#cleardelayexecute)**(`id`: `number`): `void` <br> 清除delayExecute|
+| **[clearInterval](UTILITY.UTILITY.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
+| **[clipboardCopy](UTILITY.UTILITY.md#clipboardcopy)**(`text`: `string`): `void` <br> 文本复制，将字符串复制到剪切板|
+| **[clipboardPaste](UTILITY.UTILITY.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
+| **[cos](UTILITY.UTILITY.md#cos)**(`a`: `number`): `number` <br> 计算cos值|
+| **[degreesToRadians](UTILITY.UTILITY.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
+| **[delayExecute](UTILITY.UTILITY.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
+| **[delaySecond](UTILITY.UTILITY.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
+| **[drawGameObjectSelectionBox](UTILITY.UTILITY.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `Color`: [`LinearColor`](../classes/Type.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
+| **[elapsedTime](UTILITY.UTILITY.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
+| **[enableCursorInteractWithUI](UTILITY.UTILITY.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
+| **[enableCursorLock](UTILITY.UTILITY.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
+| **[fmod](UTILITY.UTILITY.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
+| **[format](UTILITY.UTILITY.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[getGameObjectBySelectionBox](UTILITY.UTILITY.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](../classes/Type.Vector2.md), `EndPoint`: [`Vector2`](../classes/Type.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](../classes/Gameplay.HitResult.md)[] <br> 获取框选屏幕位置的物体|
+| **[isCursorInteractiveWithUI](UTILITY.UTILITY.md#iscursorinteractivewithui)**(): `boolean` <br> 获取鼠标指针是否能与UI交互|
+| **[isCursorLockEnabled](UTILITY.UTILITY.md#iscursorlockenabled)**(): `boolean` <br> 获取是否允许通过快捷方式切换鼠标的使用组合模式|
+| **[isCursorLocked](UTILITY.UTILITY.md#iscursorlocked)**(): `boolean` <br> 获取鼠标指针是否锁定|
+| **[isCursorVisible](UTILITY.UTILITY.md#iscursorvisible)**(): `boolean` <br> 获取鼠标指针是否可见|
+| **[isEmpty](UTILITY.UTILITY.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
+| **[lerp](UTILITY.UTILITY.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
+| **[maskWordCheck](UTILITY.UTILITY.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](UTILITY.UTILITY.md#maskwordcheck)Result`](UTILITY.UTILITY.md#maskwordcheckresult)\> <br> 屏蔽字检测|
+| **[nextId](UTILITY.UTILITY.md#nextid)**(): `number` <br> 获取下一个ID的全局方法|
+| **[onKeyDown](UTILITY.UTILITY.md#onkeydown)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-点击|
+| **[onKeyPress](UTILITY.UTILITY.md#onkeypress)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-按压|
+| **[onKeyUp](UTILITY.UTILITY.md#onkeyup)**(`Key`: [`Keys`](../enums/Type.Keys.md), `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](../classes/Events.EventListener.md) <br> 键盘输入事件-抬起|
+| **[parseTime](UTILITY.UTILITY.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
+| **[projectWorldLocationToWidgetPosition](UTILITY.UTILITY.md#projectworldlocationtowidgetposition)**(`worldLocation`: [`Vector`](../classes/Type.Vector.md), `playerViewportRelative?`: `boolean`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 获取角色在世界中的位置，投射到屏幕上|
+| **[radiansToDegrees](UTILITY.UTILITY.md#radianstodegrees)**(`a`: `number`): `number` <br> 根据输入的弧度值返回度数|
+| **[randomFloat](UTILITY.UTILITY.md#randomfloat)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内浮点数[包含min, 不包含max)|
+| **[randomInt](UTILITY.UTILITY.md#randomint)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内整数[包含min, 不包含max)|
+| **[setCursorLocked](UTILITY.UTILITY.md#setcursorlocked)**(`isLock`: `boolean`): `void` <br> 设置鼠标指针是否锁定|
+| **[setCursorVisible](UTILITY.UTILITY.md#setcursorvisible)**(`isVisible`: `boolean`): `void` <br> 设置鼠标指针是否可见|
+| **[setGlobalOutlineParams](UTILITY.UTILITY.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void` <br> 设置全局描边参数|
+| **[setInterval](UTILITY.UTILITY.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
+| **[setMouseLockable](UTILITY.UTILITY.md#setmouselockable)**(`can`: `boolean`): `void` <br> 设置是否可以锁定鼠标|
+| **[sin](UTILITY.UTILITY.md#sin)**(`a`: `number`): `number` <br> 计算sin值|
+| **[tan](UTILITY.UTILITY.md#tan)**(`a`: `number`): `number` <br> 计算tan值|
+| **[time](UTILITY.UTILITY.md#time)**(): `number` <br> 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
+| **[unbindButton](UTILITY.UTILITY.md#unbindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md)): `void` <br> 此操作只会解绑动态绑定的按键无法解除editor下绑定的按键|
+
+
+| Modules Type Aliases |
+| :-----|
+| **[LeaderboardPlayerData](UTILITY.UTILITY.md#leaderboardplayerdata)**: `Object` <br> 排行榜玩家数据类型|
 
 
 | Modules Variables |
 | :-----|
-| **[TWEEN](Utility.Utility.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
+| **[TWEEN](UTILITY.UTILITY.md#tween)**: [`Group`](../classes/Util.Util.TweenUtil.Group.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
 
 
 ## Modules Functions
@@ -127,7 +143,6 @@ AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
 
 `Promise`<`boolean`\>
 
-下载失败将返回false
 ___
 
 ### bindButton <Score text="bindButton" /> 
@@ -142,7 +157,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
+| `Widget` | [`StaleButton`](../classes/UI.StaleButton.md) \| [`Button`](../classes/UI.Button.md) | 绑定的button |
 
 ___
 
@@ -949,6 +964,22 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 解除绑定的按键 |
+## Modules Type Aliases
+
+
+___
+
+### LeaderboardPlayerData <Score text="LeaderboardPlayerData" /> 
+
+Ƭ **LeaderboardPlayerData**: `Object`
+
+排行榜玩家数据类型
+
+#### Type declaration
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `data` | `{ `[fieldId: number]`: `number` \| `string`;  }` | 玩家数据，是一个key-value的结构 |
 ## Modules Variables
 
 

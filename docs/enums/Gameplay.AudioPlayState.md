@@ -1,4 +1,4 @@
-[Sounds](../groups/Sounds.Sounds.md) / AudioPlayState
+[SOUNDS](../groups/SOUNDS.SOUNDS.md) / AudioPlayState
 
 # AudioPlayState <Badge type="tip" text="Enumeration" /> <Score text="AudioPlayState" />
 

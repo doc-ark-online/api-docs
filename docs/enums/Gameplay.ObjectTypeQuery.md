@@ -1,4 +1,4 @@
-[Physics](../groups/Physics.Physics.md) / ObjectTypeQuery
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ObjectTypeQuery
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 

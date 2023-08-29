@@ -1,4 +1,4 @@
-[Debugging](../groups/Debugging.Debugging.md) / AnalyticsService
+[DEBUGGING](../groups/DEBUGGING.DEBUGGING.md) / AnalyticsService
 
 # AnalyticsService <Badge type="tip" text="Class" /> <Score text="AnalyticsService" />
 

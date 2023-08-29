@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / Margin
+[GUI](../groups/GUI.GUI.md) / Margin
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 

@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / MoveControlMode
+[AVATAR](../groups/AVATAR.AVATAR.md) / MoveControlMode
 
 # MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 

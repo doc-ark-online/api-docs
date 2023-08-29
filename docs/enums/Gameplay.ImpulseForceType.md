@@ -1,4 +1,4 @@
-[Physics](../groups/Physics.Physics.md) / ImpulseForceType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / ImpulseForceType
 
 # ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 

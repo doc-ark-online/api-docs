@@ -57,4 +57,3 @@ AssetUtil.asyncDownloadAsset("7669").then((result: boolean) => {
 `Promise`<`boolean`\>
 
 下载失败将返回false
-

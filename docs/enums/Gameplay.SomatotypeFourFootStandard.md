@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / SomatotypeFourFootStandard
+[AVATAR](../groups/AVATAR.AVATAR.md) / SomatotypeFourFootStandard
 
 # SomatotypeFourFootStandard <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeFourFootStandard" />
 

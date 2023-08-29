@@ -1,6 +1,6 @@
-Others
+OTHERS
 
-# Others <Badge type="tip" text="Groups" /> <Score text="Others" />
+# OTHERS <Badge type="tip" text="Groups" /> <Score text="OTHERS" />
 
 ## Table of contents
 | Classes |
@@ -10,16 +10,16 @@ Others
 
 | Modules Functions |
 | :-----|
-| **[addLikeContent](Others.Others.md#addlikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 点赞内容|
-| **[addMessage](Others.Others.md#addmessage)**(`UGCID`: `string`, `Content`: `string`): `void` <br> 添加留言|
-| **[addReplyMessage](Others.Others.md#addreplymessage)**(`UGCID`: `string`, `CommentID`: `string`, `Content`: `string`): `void` <br> 添加回复的消息|
-| **[deleteLikeContent](Others.Others.md#deletelikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 取消点赞内容|
-| **[deleteMessage](Others.Others.md#deletemessage)**(`UGCID`: `string`, `CommentID`: `string`): `void` <br> 删除留言板数据|
-| **[queryGameOwnerShip](Others.Others.md#querygameownership)**(`UGCID`: `string`): `Promise`<`boolean`\> <br> 是否是自己发布的游戏|
-| **[queryMessageBoard](Others.Others.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
-| **[queryReplyMessage](Others.Others.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
-| **[queryViewRecord](Others.Others.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
-| **[saveViewRecord](Others.Others.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
+| **[addLikeContent](OTHERS.OTHERS.md#addlikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 点赞内容|
+| **[addMessage](OTHERS.OTHERS.md#addmessage)**(`UGCID`: `string`, `Content`: `string`): `void` <br> 添加留言|
+| **[addReplyMessage](OTHERS.OTHERS.md#addreplymessage)**(`UGCID`: `string`, `CommentID`: `string`, `Content`: `string`): `void` <br> 添加回复的消息|
+| **[deleteLikeContent](OTHERS.OTHERS.md#deletelikecontent)**(`UGCID`: `string`, `contentId`: `string`, `contentType`: `number`): `void` <br> 取消点赞内容|
+| **[deleteMessage](OTHERS.OTHERS.md#deletemessage)**(`UGCID`: `string`, `CommentID`: `string`): `void` <br> 删除留言板数据|
+| **[queryGameOwnerShip](OTHERS.OTHERS.md#querygameownership)**(`UGCID`: `string`): `Promise`<`boolean`\> <br> 是否是自己发布的游戏|
+| **[queryMessageBoard](OTHERS.OTHERS.md#querymessageboard)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询留言板数据|
+| **[queryReplyMessage](OTHERS.OTHERS.md#queryreplymessage)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `CommentID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询回复的数据|
+| **[queryViewRecord](OTHERS.OTHERS.md#queryviewrecord)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`Content`: `string`) => `void`\>, `UGCID`: `string`, `PageNum`: `number`, `PageSize`: `number`): `void` <br> 查询浏览的记录|
+| **[saveViewRecord](OTHERS.OTHERS.md#saveviewrecord)**(`UGCID`: `string`): `void` <br> 保存留言|
 
 
 ## Modules Functions

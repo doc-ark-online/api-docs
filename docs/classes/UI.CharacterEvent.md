@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / CharacterEvent
+[GUI](../groups/GUI.GUI.md) / CharacterEvent
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 

@@ -1,14 +1,8 @@
-[Avatar](../groups/Avatar.Avatar.md) / NPC
+[AVATAR](../groups/AVATAR.AVATAR.md) / NPC
 
 # NPC <Badge type="tip" text="Class" /> <Score text="NPC" />
 
-NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:
-```ts
-Gameplay.GameObject.asyncSpawn({
-    guid: "NPC", transform: new Transform(new Type.Vector(100, 100, 100),
-         Type.Rotation.zero, Type.Vector.one), replicates: true
-})
-```
+NPC 是在CharacterBase上派生的非玩家对象,不限定形象的角色对象,该对象通常被用户用于实现拥有自主功能的角色对象.生成方式:可以通过将非玩家对象(NPC)放置在场景中,由场景反序列化生成对象,也可以通过代码动态生成:Core.GameObject.spawnGameObject("NPC") as NPC;
 
 ## Hierarchy
 
@@ -87,6 +81,7 @@ Gameplay.GameObject.asyncSpawn({
 | **[maxSwimSpeed](Gameplay.CharacterBase.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
 | **[maxWalkSpeed](Gameplay.CharacterBase.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
 | **[maxWalkSpeedCrouched](Gameplay.CharacterBase.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[meshOffset](Gameplay.CharacterBase.md#meshoffset)**(): [`Vector`](Type.Vector.md) <br> 获取mesh相对角色坐标点的偏移|
 | **[moveEnable](Gameplay.CharacterBase.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
 | **[moveFacingDirection](Gameplay.CharacterBase.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
 | **[movementAxisDirection](Gameplay.CharacterBase.md#movementaxisdirection)**(): [`Vector`](Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
@@ -143,9 +138,8 @@ Gameplay.GameObject.asyncSpawn({
 :::
 
 
-## Properties
-
 ## Accessors
+___
 
 ### serverCalculateEnable <Score text="serverCalculateEnable" /> 
 
@@ -169,6 +163,7 @@ Gameplay.GameObject.asyncSpawn({
 
 
 ## Methods
+___
 
 ### setServerMovementEnable <Score text="setServerMovementEnable" /> 
 

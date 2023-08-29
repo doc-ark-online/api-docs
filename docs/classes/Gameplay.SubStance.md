@@ -1,4 +1,4 @@
-[Animations](../groups/Animations.Animations.md) / SubStance
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / SubStance
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
@@ -38,20 +38,6 @@ this.stanceProxy.stop();
 | **[stop](Gameplay.Stance.md#stop)**(): `boolean` <br> 停止这个姿态对象, 并返回执行结果|
 :::
 
-
-构造函数
-
-**`Effect`**
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 角色 |
-| `sync` | `boolean` | 是否自动同步 |
-
-## Accessors
 
 ### blendMode <Score text="blendMode" /> 
 

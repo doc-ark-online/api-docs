@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / MovementDirection
+[AVATAR](../groups/AVATAR.AVATAR.md) / MovementDirection
 
 # MovementDirection <Badge type="tip" text="Enumeration" /> <Score text="MovementDirection" />
 

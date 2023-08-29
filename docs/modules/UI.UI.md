@@ -288,7 +288,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `UIPrefabName` | `string` | 指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
+| `UIPrefabName` | `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径,为空的话等于createUIOnlyClass |
 | `panelClass` | () => `T` | 继承至UI身上脚本的派生类 |
 
 #### Returns

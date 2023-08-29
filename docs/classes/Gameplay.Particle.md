@@ -1,4 +1,4 @@
-[Effects](../groups/Effects.Effects.md) / Particle
+[EFFECTS](../groups/EFFECTS.EFFECTS.md) / Particle
 
 # Particle <Badge type="tip" text="Class" /> <Score text="Particle" />
 
@@ -32,6 +32,7 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | Accessors |
 | :-----|
 | **[timeLength](Gameplay.Particle.md#timelength)**(): `number` <br> 获取特效时长(ms)|
+| **[translucentSortPriority](Gameplay.Particle.md#translucentsortpriority)**(): `number` <br> 获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方|
 
 
 ::: details 点击查看继承
@@ -89,7 +90,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -111,7 +111,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -131,8 +130,6 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 :::
 
 
-## Properties
-
 ### onFinished <Score text="onFinished" /> 
 
 • **onFinished**: [`MulticastDelegate`](Type.MulticastDelegate.md)<() => `void`\>
@@ -140,6 +137,7 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 特效播放完毕事件
 
 ## Accessors
+___
 
 ### timeLength <Score text="timeLength" /> 
 
@@ -154,8 +152,46 @@ Util.AssetUtil.asyncDownloadAsset(AssetID).then((success: boolean) => {
 
 特效实际播放时长
 
+___
+
+### translucentSortPriority <Score text="translucentSortPriority" /> 
+
+• `get` **translucentSortPriority**(): `number` <Badge type="tip" text="client" />
+
+获取渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
+
+
+::: warning Precautions
+
+请在客户端调用
+
+:::
+
+#### Returns
+
+`number`
+
+• `set` **translucentSortPriority**(`value`): `void` <Badge type="tip" text="client" />
+
+设置渲染层级，较高渲染层级的对象会优先显示在离视线较近的地方
+
+
+::: warning Precautions
+
+请在客户端调用
+
+:::
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `number` |  新的渲染层级，值范围为 [0, 31] |
+
+
 
 ## Methods
+___
 
 ### forceStop <Score text="forceStop" /> 
 
@@ -170,6 +206,7 @@ Particle.forceStop()
 ```
 
 
+___
 
 ### play <Score text="play" /> 
 
@@ -190,6 +227,7 @@ Particle.play()
 | `OnSuccess?` | () => `void` | 特效播放完成后回调 default: null |
 
 
+___
 
 ### setColor <Score text="setColor" /> 
 
@@ -305,6 +343,7 @@ Particle.setFloatRandom("LifeTime", 100, 10)
 | `valueMin` | `number` | 标量最小值 |
 
 
+___
 
 ### setVector <Score text="setVector" /> 
 

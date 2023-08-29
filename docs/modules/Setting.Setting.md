@@ -4,6 +4,6 @@ Setting
 
 ## Table of contents
 
-| Namespaces |
+| Classes |
 | :-----|
-- [RoomSettings](Setting.RoomSettings.md)
+- [RoomSettings](../classes/Setting.RoomSettings.md)

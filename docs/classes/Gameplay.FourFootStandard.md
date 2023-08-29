@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / FourFootStandard
+[AVATAR](../groups/AVATAR.AVATAR.md) / FourFootStandard
 
 # FourFootStandard <Badge type="tip" text="Class" /> <Score text="FourFootStandard" />
 
@@ -56,17 +56,8 @@
 :::
 
 
-构造函数
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 角色 |
-
-## Properties
-
 ## Methods
+___
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
@@ -104,6 +95,7 @@ ___
 
 [IFourFootStandard](../interfaces/Gameplay.IFourFootStandard.md).[getWholeBody](../interfaces/Gameplay.IFourFootStandard.md#getwholebody)
 
+___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 

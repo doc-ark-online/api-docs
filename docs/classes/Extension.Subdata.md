@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / Subdata
+[DATA](../groups/DATA.DATA.md) / Subdata
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 

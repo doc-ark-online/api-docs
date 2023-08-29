@@ -1,6 +1,6 @@
-Physics
+PHYSICS
 
-# Physics <Badge type="tip" text="Groups" /> <Score text="Physics" />
+# PHYSICS <Badge type="tip" text="Groups" /> <Score text="PHYSICS" />
 
 ## Table of contents
 | Classes |
@@ -16,5 +16,6 @@ Physics
 | [CollisionType](../enums/Gameplay.CollisionType.md) <br> 碰撞类型 |
 | [ImpulseForceType](../enums/Gameplay.ImpulseForceType.md) <br> 冲量力类型 |
 | [ImpulseType](../enums/Gameplay.ImpulseType.md) <br> 冲量的应用方式 |
+| [MotionAxis](../enums/Gameplay.MotionAxis.md) <br> 运动坐标系 |
 | [ObjectTypeQuery](../enums/Gameplay.ObjectTypeQuery.md) <br> 碰撞检测通道 |
 

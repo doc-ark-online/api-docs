@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / Canvas
+[GUI](../groups/GUI.GUI.md) / Canvas
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
@@ -48,8 +48,6 @@
 | **[removeChildAt](UI.PanelWidget.md#removechildat)**(`index`: `number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
 :::
 
-
-## Accessors
 
 ### autoLayoutContainerRule <Score text="autoLayoutContainerRule" /> 
 
@@ -238,6 +236,7 @@ ___
 | `inSpaceInItem` | `number` | 自动布局间隔 |
 
 
+___
 
 ### clipEnable <Score text="clipEnable" /> 
 
@@ -266,6 +265,7 @@ ___
 
 
 ## Methods
+___
 
 ### newObject <Score text="newObject" /> 
 

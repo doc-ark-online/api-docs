@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / VirtualJoystickPanel
+[GUI](../groups/GUI.GUI.md) / VirtualJoystickPanel
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 
@@ -84,8 +84,6 @@
 :::
 
 
-## Accessors
-
 ### activeOpacity <Score text="activeOpacity" /> 
 
 • `get` **activeOpacity**(): `number` <Badge type="tip" text="client" />
@@ -111,6 +109,7 @@
 | `Value` | `number` | 透明度 |
 
 
+___
 
 ### backgroundDisabledImageId <Score text="backgroundDisabledImageId" /> 
 
@@ -245,6 +244,7 @@ ___
 | `id` | `string` | 资源id |
 
 
+___
 
 ### center <Score text="center" /> 
 
@@ -406,6 +406,7 @@ ___
 | `id` | `string` | 资源id |
 
 
+___
 
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
 
@@ -459,6 +460,7 @@ ___
 | `NewControlType` | [`CameraControlType`](../enums/UI.CameraControlType.md) | 摇杆类型 |
 
 
+___
 
 ### inActiveOpacity <Score text="inActiveOpacity" /> 
 
@@ -512,6 +514,7 @@ ___
 | `inScale` | [`Vector2`](Type.Vector2.md) | 新的输入比例 |
 
 
+___
 
 ### isLocationFixed <Score text="isLocationFixed" /> 
 
@@ -538,6 +541,7 @@ boolean
 | `enable` | `boolean` | 是否固定摇杆位置 |
 
 
+___
 
 ### onInputDir <Score text="onInputDir" /> 
 
@@ -582,6 +586,7 @@ ___
 
 抬起摇杆事件的代理
 
+___
 
 ### timeUntilInactive <Score text="timeUntilInactive" /> 
 
@@ -637,6 +642,7 @@ ___
 
 
 ## Methods
+___
 
 ### resetJoyStick <Score text="resetJoyStick" /> 
 

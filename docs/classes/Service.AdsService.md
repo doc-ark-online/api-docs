@@ -1,4 +1,4 @@
-[Monetization](../groups/Monetization.Monetization.md) / AdsService
+[MONETIZATION](../groups/MONETIZATION.MONETIZATION.md) / AdsService
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 

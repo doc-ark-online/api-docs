@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / Action
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / Action
 
 # Action <Badge type="tip" text="Class" /> <Score text="Action" />
 

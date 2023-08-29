@@ -1,5 +1,5 @@
 import type { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
-import { dealConfigSidebar, dealItem } from '../../utils'
+import { dealConfigSidebar } from '../../utils'
 import { defineConfigWithTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = [
@@ -91,12 +91,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     siteTitle: 'API',
     nav: [
       {
-        text: '官网',
+        text: '创作者',
         link: 'https://creator.ark.online/'
-      },
-      {
-        text: '论坛',
-        link: 'https://forum.ark.online/'
       },
       {
         text: '教程',
@@ -107,8 +103,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://docs.ark.online/'
       },
       {
-        text: '创作者',
-        link: 'https://portal.ark.online/'
+        text: '论坛',
+        link: 'https://forum.ark.online/'
       },
       {
         text: '025 版本',

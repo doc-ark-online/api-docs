@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / NetObjectC
+[UTILITY](../groups/UTILITY.UTILITY.md) / NetObjectC
 
 # NetObjectC<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectC<T\>" />
 
@@ -25,14 +25,6 @@
 | **[currentPlayer](Extension.NetObjectC.md#currentplayer)**(): [`Player`](Gameplay.Player.md) <br> 获取当前玩家|
 | **[currentPlayerId](Extension.NetObjectC.md#currentplayerid)**(): `number` <br> 获取当前玩家ID|
 | **[server](Extension.NetObjectC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-## Accessors
 
 ### currentPlayer <Score text="currentPlayer" /> 
 

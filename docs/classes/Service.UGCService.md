@@ -1,4 +1,4 @@
-[Scripting](../groups/Scripting.Scripting.md) / UGCService
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / UGCService
 
 # UGCService <Badge type="tip" text="Class" /> <Score text="UGCService" />
 

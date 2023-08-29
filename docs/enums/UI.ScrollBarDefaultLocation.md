@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / ScrollBarDefaultLocation
+[GUI](../groups/GUI.GUI.md) / ScrollBarDefaultLocation
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 

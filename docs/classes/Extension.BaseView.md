@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / BaseView
+[GUI](../groups/GUI.GUI.md) / BaseView
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 
@@ -59,8 +59,6 @@
 :::
 
 
-## Accessors
-
 ### holdBackTouch <Score text="holdBackTouch" /> 
 
 • `Protected` `set` **holdBackTouch**(`value`): `void`
@@ -88,6 +86,7 @@ ___
 
 
 ## Methods
+___
 
 ### getCanvasChildren <Score text="getCanvasChildren" /> 
 
@@ -125,6 +124,7 @@ ___
 
 
 
+___
 
 ### show <Score text="show" /> 
 
@@ -140,6 +140,7 @@ ___
 | `...params` | `any`[] |  参数序列,参数会传到界面的onShow生命周期方法中 |
 
 
+___
 
 ### create <Score text="create" /> 
 
@@ -160,6 +161,7 @@ ___
 
 界面对象
 
+___
 
 ### hide <Score text="hide" /> 
 
@@ -169,6 +171,7 @@ ___
 
 
 
+___
 
 ### show <Score text="show" /> 
 

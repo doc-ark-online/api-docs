@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / TextBlock
+[GUI](../groups/GUI.GUI.md) / TextBlock
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
@@ -87,8 +87,6 @@ UI文本
 :::
 
 
-## Accessors
-
 ### autoAdjust <Score text="autoAdjust" /> 
 
 • `get` **autoAdjust**(): `boolean` <Badge type="tip" text="client" />
@@ -114,6 +112,7 @@ UI文本
 | `isAdjust` | `boolean` | 字体是否自适应调整大小 |
 
 
+___
 
 ### contentColor <Score text="contentColor" /> 
 
@@ -140,6 +139,7 @@ UI文本
 | `inContentColor` | [`LinearColor`](Type.LinearColor.md) |  内容颜色，Type.LinearColor类型，数据范围0~1 |
 
 
+___
 
 ### fontColor <Score text="fontColor" /> 
 
@@ -247,6 +247,7 @@ ___
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) |  字形 |
 
 
+___
 
 ### isRichText <Score text="isRichText" /> 
 
@@ -300,6 +301,7 @@ ___
 | `inValue` | `number` | 系数 |
 
 
+___
 
 ### outlineColor <Score text="outlineColor" /> 
 
@@ -355,6 +357,7 @@ ___
 | `inOutlineSize` | `number` | 设置的大小 |
 
 
+___
 
 ### shadowColor <Score text="shadowColor" /> 
 
@@ -408,6 +411,7 @@ ___
 | `inOffset` | [`Vector2`](Type.Vector2.md) | 阴影偏移量 |
 
 
+___
 
 ### strikethroughEnable <Score text="strikethroughEnable" /> 
 
@@ -627,6 +631,7 @@ ___
 | `inTextJustification` | [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) | 垂直对齐方式 |
 
 
+___
 
 ### underlineEnable <Score text="underlineEnable" /> 
 
@@ -655,6 +660,7 @@ ___
 
 
 ## Methods
+___
 
 ### setFontColorByHex <Score text="setFontColorByHex" /> 
 

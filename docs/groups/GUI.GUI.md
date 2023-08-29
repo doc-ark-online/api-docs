@@ -1,6 +1,6 @@
-Gui
+GUI
 
-# Gui <Badge type="tip" text="Groups" /> <Score text="Gui" />
+# GUI <Badge type="tip" text="Groups" /> <Score text="GUI" />
 
 ## Table of contents
 | Classes |
@@ -89,44 +89,44 @@ Gui
 
 | Modules Functions |
 | :-----|
-| **[absoluteToLocal](Gui.Gui.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对坐标到相对坐标|
-| **[absoluteToViewport](Gui.Gui.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
-| **[assetIDChangeIconUrlRequest](Gui.Gui.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
-| **[cancelDragDrop](Gui.Gui.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
-| **[createUI](Gui.Gui.md#createui)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建UIPrefab|
-| **[createUIByName](Gui.Gui.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
-| **[createUIByPath](Gui.Gui.md#createuibypath)**(`UIPath`: `string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
-| **[createUIOnlyClass](Gui.Gui.md#createuionlyclass)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建空的UI|
-| **[endDragDrop](Gui.Gui.md#enddragdrop)**(`InReply`: [`EventReply`](../classes/UI.EventReply.md)): `void` <br> 中断一个拖拽事件, 传入一个操作的事件|
-| **[findUIBehavior](Gui.Gui.md#finduibehavior)**(`UI`: [`Widget`](../classes/UI.Widget.md)): [`UIBehavior`](../classes/UI.UIBehavior.md) <br> 获取UI脚本|
-| **[getAbsoluteSize](Gui.Gui.md#getabsolutesize)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回绝对空间中几何图形的大小|
-| **[getAssetIconDataByAssetID](Gui.Gui.md#getasseticondatabyassetid)**(`asset`: `string`): [`AssetIconData`](../classes/UI.AssetIconData.md) <br> 获取资源的ICON信息|
-| **[getCurrentMousePosition](Gui.Gui.md#getcurrentmouseposition)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取当前鼠标所在的绝对位置|
-| **[getDragDroppingContent](Gui.Gui.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <br> 获取当前的DragDrop事件|
-| **[getLastMousePosition](Gui.Gui.md#getlastmouseposition)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取上一次鼠标所在的绝对位置|
-| **[getLocalSize](Gui.Gui.md#getlocalsize)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回局部空间中几何图形的大小|
-| **[getLocalTopLeft](Gui.Gui.md#getlocaltopleft)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回局部空间中几何图形的局部顶部/左侧|
-| **[getMousePositionOnPlatform](Gui.Gui.md#getmousepositiononplatform)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。|
-| **[getMousePositionOnViewport](Gui.Gui.md#getmousepositiononviewport)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取平台的鼠标光标在视口控件的本地空间中的位置。|
-| **[getPlayerScreenWidgetGeometry](Gui.Gui.md#getplayerscreenwidgetgeometry)**(`player`: [`Player`](../classes/Gameplay.Player.md)): [`Geometry`](../classes/UI.Geometry.md) <br> 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
-| **[getResolutionChanged](Gui.Gui.md#getresolutionchanged)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\>): `void` <br> 分辨率改变时的回调|
-| **[getViewportScale](Gui.Gui.md#getviewportscale)**(): `number` <br> 获取应用于视口和所有小部件的当前DPI Scale。|
-| **[getViewportSize](Gui.Gui.md#getviewportsize)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取游戏视口的大小。|
-| **[getViewportWidgetGeometry](Gui.Gui.md#getviewportwidgetgeometry)**(): [`Geometry`](../classes/UI.Geometry.md) <br> 获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
-| **[isDragDropping](Gui.Gui.md#isdragdropping)**(): `boolean` <br> 判断当前是否有一个DragDrop事件|
-| **[isUnderLocation](Gui.Gui.md#isunderlocation)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): `boolean` <br> 判定给定坐标是否在geometry下|
-| **[localToAbsolute](Gui.Gui.md#localtoabsolute)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localPosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。|
-| **[localToViewport](Gui.Gui.md#localtoviewport)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将几何体的局部坐标转换为局部视口坐标。|
-| **[projectWorldLocationToWidgetPosition](Gui.Gui.md#projectworldlocationtowidgetposition)**(`player`: [`Player`](../classes/Gameplay.Player.md), `worldLocation`: [`Vector`](../classes/Type.Vector.md), `outScreenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <br> 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
-| **[screenToViewport](Gui.Gui.md#screentoviewport)**(`screenPosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(以像素为单位)转换为视口控件的本地空间。|
-| **[screenToWidgetAbsolute](Gui.Gui.md#screentowidgetabsolute)**(`screenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
-| **[screenToWidgetLocal](Gui.Gui.md#screentowidgetlocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `screenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
-| **[setFocusToGameViewport](Gui.Gui.md#setfocustogameviewport)**(): `void` <br> 设置关注游戏窗口|
-| **[setInputModeGameAndUI](Gui.Gui.md#setinputmodegameandui)**(`InWidgetToFocus?`: [`Widget`](../classes/UI.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/UI.MouseLockMode.md), `hideCursorDuringCapture?`: `boolean`): `void` <br> 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会|
-| **[setInputModeGameOnly](Gui.Gui.md#setinputmodegameonly)**(): `void` <br> 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入|
-| **[setInputModeUIOnly](Gui.Gui.md#setinputmodeuionly)**(`InWidgetToFocus?`: [`Widget`](../classes/UI.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/UI.MouseLockMode.md)): `void` <br> 设置只允许UI响应用户输入的输入模式。|
-| **[transformVectorAbsoluteToLocal](Gui.Gui.md#transformvectorabsolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absoluteVector`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对空间下矢量到局部空间下|
-| **[transformVectorLocalToAbsolute](Gui.Gui.md#transformvectorlocaltoabsolute)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localVector`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化局部空间下矢量到绝对空间下|
+| **[absoluteToLocal](GUI.GUI.md#absolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对坐标到相对坐标|
+| **[absoluteToViewport](GUI.GUI.md#absolutetoviewport)**(`absoluteDesktopPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将桌面空间中几何图形的绝对坐标转换为本地视口坐标|
+| **[assetIDChangeIconUrlRequest](GUI.GUI.md#assetidchangeiconurlrequest-1)**(`assets`: `string`[]): `Promise`<`void`\> <br> 异步请求资源的ICON信息|
+| **[cancelDragDrop](GUI.GUI.md#canceldragdrop)**(): `void` <br> 中断所有的DragDrop|
+| **[createUI](GUI.GUI.md#createui)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`UIPrefabName`: `string`, `panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建UIPrefab|
+| **[createUIByName](GUI.GUI.md#createuibyname)**(`UIPrefabName`: `string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
+| **[createUIByPath](GUI.GUI.md#createuibypath)**(`UIPath`: `string`): [`UserWidget`](../classes/UI.UserWidget.md) <br> 创建UIPrefab|
+| **[createUIOnlyClass](GUI.GUI.md#createuionlyclass)**<`T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\>\>(`panelClass`: () => `T`): `T`: extends [`UIBehavior`](../classes/UI.UIBehavior.md)<`T`\> <br> 创建空的UI|
+| **[endDragDrop](GUI.GUI.md#enddragdrop)**(`InReply`: [`EventReply`](../classes/UI.EventReply.md)): `void` <br> 中断一个拖拽事件, 传入一个操作的事件|
+| **[findUIBehavior](GUI.GUI.md#finduibehavior)**(`UI`: [`Widget`](../classes/UI.Widget.md)): [`UIBehavior`](../classes/UI.UIBehavior.md) <br> 获取UI脚本|
+| **[getAbsoluteSize](GUI.GUI.md#getabsolutesize)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回绝对空间中几何图形的大小|
+| **[getAssetIconDataByAssetID](GUI.GUI.md#getasseticondatabyassetid)**(`asset`: `string`): [`AssetIconData`](../classes/UI.AssetIconData.md) <br> 获取资源的ICON信息|
+| **[getCurrentMousePosition](GUI.GUI.md#getcurrentmouseposition)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取当前鼠标所在的绝对位置|
+| **[getDragDroppingContent](GUI.GUI.md#getdragdroppingcontent)**(): [`DragDropOperation`](../classes/UI.DragDropOperation.md) <br> 获取当前的DragDrop事件|
+| **[getLastMousePosition](GUI.GUI.md#getlastmouseposition)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取上一次鼠标所在的绝对位置|
+| **[getLocalSize](GUI.GUI.md#getlocalsize)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回局部空间中几何图形的大小|
+| **[getLocalTopLeft](GUI.GUI.md#getlocaltopleft)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 返回局部空间中几何图形的局部顶部/左侧|
+| **[getMousePositionOnPlatform](GUI.GUI.md#getmousepositiononplatform)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取平台的鼠标光标位置。这是鼠标的绝对桌面位置。|
+| **[getMousePositionOnViewport](GUI.GUI.md#getmousepositiononviewport)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取平台的鼠标光标在视口控件的本地空间中的位置。|
+| **[getPlayerScreenWidgetGeometry](GUI.GUI.md#getplayerscreenwidgetgeometry)**(`player`: [`Player`](../classes/Gameplay.Player.md)): [`Geometry`](../classes/UI.Geometry.md) <br> 获取包含添加到“player screen”的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
+| **[getResolutionChanged](GUI.GUI.md#getresolutionchanged)**(`Delegate`: [`MulticastDelegate`](../classes/Type.MulticastDelegate.md)<(`x`: `number`, `y`: `number`) => `void`\>): `void` <br> 分辨率改变时的回调|
+| **[getViewportScale](GUI.GUI.md#getviewportscale)**(): `number` <br> 获取应用于视口和所有小部件的当前DPI Scale。|
+| **[getViewportSize](GUI.GUI.md#getviewportsize)**(): [`Vector2`](../classes/Type.Vector2.md) <br> 获取游戏视口的大小。|
+| **[getViewportWidgetGeometry](GUI.GUI.md#getviewportwidgetgeometry)**(): [`Geometry`](../classes/UI.Geometry.md) <br> 获取包含添加到“视口”中的所有控件的控件的几何形状。你可以使用这个几何图形在绝对和本地空间的控件之间转换控件。|
+| **[isDragDropping](GUI.GUI.md#isdragdropping)**(): `boolean` <br> 判断当前是否有一个DragDrop事件|
+| **[isUnderLocation](GUI.GUI.md#isunderlocation)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absolutePosition`: [`Vector2`](../classes/Type.Vector2.md)): `boolean` <br> 判定给定坐标是否在geometry下|
+| **[localToAbsolute](GUI.GUI.md#localtoabsolute)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localPosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 将局部坐标转换为绝对坐标,绝对坐标可以是桌面空间，也可以是窗口空间，这取决于小部件层次结构的根所在的空间。|
+| **[localToViewport](GUI.GUI.md#localtoviewport)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localPosition`: [`Vector2`](../classes/Type.Vector2.md), `outPixelPosition`: [`Vector2`](../classes/Type.Vector2.md), `outViewportPosition`: [`Vector2`](../classes/Type.Vector2.md)): `void` <br> 将几何体的局部坐标转换为局部视口坐标。|
+| **[projectWorldLocationToWidgetPosition](GUI.GUI.md#projectworldlocationtowidgetposition)**(`player`: [`Player`](../classes/Gameplay.Player.md), `worldLocation`: [`Vector`](../classes/Type.Vector.md), `outScreenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <br> 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
+| **[screenToViewport](GUI.GUI.md#screentoviewport)**(`screenPosition`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(以像素为单位)转换为视口控件的本地空间。|
+| **[screenToWidgetAbsolute](GUI.GUI.md#screentowidgetabsolute)**(`screenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(像素)转换为绝对桌面程序坐标。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
+| **[screenToWidgetLocal](GUI.GUI.md#screentowidgetlocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `screenPosition`: [`Vector2`](../classes/Type.Vector2.md), `isIncludeWindowPosition?`: `boolean`): [`Vector2`](../classes/Type.Vector2.md) <br> 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
+| **[setFocusToGameViewport](GUI.GUI.md#setfocustogameviewport)**(): `void` <br> 设置关注游戏窗口|
+| **[setInputModeGameAndUI](GUI.GUI.md#setinputmodegameandui)**(`InWidgetToFocus?`: [`Widget`](../classes/UI.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/UI.MouseLockMode.md), `hideCursorDuringCapture?`: `boolean`): `void` <br> 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会|
+| **[setInputModeGameOnly](GUI.GUI.md#setinputmodegameonly)**(): `void` <br> 设置一个输入模式，只允许玩家输入/玩家控制器响应用户输入|
+| **[setInputModeUIOnly](GUI.GUI.md#setinputmodeuionly)**(`InWidgetToFocus?`: [`Widget`](../classes/UI.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/UI.MouseLockMode.md)): `void` <br> 设置只允许UI响应用户输入的输入模式。|
+| **[transformVectorAbsoluteToLocal](GUI.GUI.md#transformvectorabsolutetolocal)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `absoluteVector`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化绝对空间下矢量到局部空间下|
+| **[transformVectorLocalToAbsolute](GUI.GUI.md#transformvectorlocaltoabsolute)**(`geometry`: [`Geometry`](../classes/UI.Geometry.md), `localVector`: [`Vector2`](../classes/Type.Vector2.md)): [`Vector2`](../classes/Type.Vector2.md) <br> 转化局部空间下矢量到绝对空间下|
 
 
 ## Modules Functions
@@ -218,7 +218,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `UIPrefabName` | `string` | 指定UI自定义控件的名字,为空的话等于createUIOnlyClass |
+| `UIPrefabName` | `string` | 指定UI自定义控件的相对于工程的路径或则相对于UI目录的路径,为空的话等于createUIOnlyClass |
 | `panelClass` | () => `T` | 继承至UI身上脚本的派生类 |
 
 #### Returns

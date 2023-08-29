@@ -1,6 +1,6 @@
-Sounds
+SOUNDS
 
-# Sounds <Badge type="tip" text="Groups" /> <Score text="Sounds" />
+# SOUNDS <Badge type="tip" text="Groups" /> <Score text="SOUNDS" />
 
 ## Table of contents
 | Enums |

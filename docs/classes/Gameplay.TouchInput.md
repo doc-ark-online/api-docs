@@ -1,4 +1,4 @@
-[Input](../groups/Input.Input.md) / TouchInput
+[INPUT](../groups/INPUT.INPUT.md) / TouchInput
 
 # TouchInput <Badge type="tip" text="Class" /> <Score text="TouchInput" />
 

@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UITransform
+[GUI](../groups/GUI.GUI.md) / UITransform
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 

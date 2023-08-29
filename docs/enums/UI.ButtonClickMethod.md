@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / ButtonClickMethod
+[GUI](../groups/GUI.GUI.md) / ButtonClickMethod
 
 # ButtonClickMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonClickMethod" />
 

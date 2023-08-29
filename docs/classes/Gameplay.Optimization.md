@@ -1,4 +1,4 @@
-[Settings](../groups/Settings.Settings.md) / Optimization
+[SETTINGS](../groups/SETTINGS.SETTINGS.md) / Optimization
 
 # Optimization <Badge type="tip" text="Class" /> <Score text="Optimization" />
 
@@ -8,20 +8,5 @@
 
 | Methods |
 | :-----|
-| **[enableOptimization](Gameplay.Optimization.md#enableoptimization)**(`isEnable`: `boolean`): `void` <br> 开启或关闭角色优化(角色裁剪、动画更新率降低等)|
 
 ## Methods
-
-### enableOptimization <Score text="enableOptimization" /> 
-
-• `Static` **enableOptimization**(`isEnable`): `void` <Badge type="tip" text="client" />
-
-开启或关闭角色优化(角色裁剪、动画更新率降低等)
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnable` | `boolean` | 是否开启或关闭角色优化 |
-

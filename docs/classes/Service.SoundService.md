@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / SoundService
+[UTILITY](../groups/UTILITY.UTILITY.md) / SoundService
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 

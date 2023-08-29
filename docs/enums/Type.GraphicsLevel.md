@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / GraphicsLevel
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / GraphicsLevel
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 

@@ -1,4 +1,4 @@
-[Social](../groups/Social.Social.md) / AccountService
+[SOCIAL](../groups/SOCIAL.SOCIAL.md) / AccountService
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 

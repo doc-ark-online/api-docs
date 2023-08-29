@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV2
 
 # HumanoidV2 <Badge type="tip" text="Class" /> <Score text="HumanoidV2" />
 
@@ -32,11 +32,11 @@
 
 | Properties |
 | :-----|
-| **[behindHair](Gameplay.HumanoidV2.md#behindhair)**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md) <br> 前发|
+| **[behindHair](Gameplay.HumanoidV2.md#behindhair)**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md) <br> 后发|
 | **[frontHair](Gameplay.HumanoidV2.md#fronthair)**: [`HumanoidV2FrontHairPart`](Gameplay.HumanoidV2FrontHairPart.md) <br> 前发|
 | **[gloves](Gameplay.HumanoidV2.md#gloves)**: [`HumanoidV2GlovesPart`](Gameplay.HumanoidV2GlovesPart.md) <br> 手套|
 | **[head](Gameplay.HumanoidV2.md#head)**: [`HumanoidV2HeadPart`](Gameplay.HumanoidV2HeadPart.md) <br> 头|
-| **[lowerCloth](Gameplay.HumanoidV2.md#lowercloth)**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md) <br> 体型|
+| **[lowerCloth](Gameplay.HumanoidV2.md#lowercloth)**: [`HumanoidV2LowerClothPart`](Gameplay.HumanoidV2LowerClothPart.md) <br> 下衣|
 | **[shape](Gameplay.HumanoidV2.md#shape)**: [`HumanoidV2Shape`](Gameplay.HumanoidV2Shape.md) <br> 体型|
 | **[shoe](Gameplay.HumanoidV2.md#shoe)**: [`HumanoidV2ShoePart`](Gameplay.HumanoidV2ShoePart.md) <br> 鞋子|
 | **[upperCloth](Gameplay.HumanoidV2.md#uppercloth)**: [`HumanoidV2UpperClothPart`](Gameplay.HumanoidV2UpperClothPart.md) <br> 上衣|
@@ -91,22 +91,13 @@
 :::
 
 
-构造函数
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 角色 |
-
-## Properties
-
 ### behindHair <Score text="behindHair" /> 
 
 • **behindHair**: [`HumanoidV2BehindHairPart`](Gameplay.HumanoidV2BehindHairPart.md)
 
 后发
 
+___
 
 ### frontHair <Score text="frontHair" /> 
 
@@ -138,6 +129,7 @@ ___
 
 下衣
 
+___
 
 ### shape <Score text="shape" /> 
 
@@ -295,6 +287,7 @@ V2的将物体从人物身上附着的物品预览插槽中分离
 
 [IHumanoidV2](../interfaces/Gameplay.IHumanoidV2.md).[detach](../interfaces/Gameplay.IHumanoidV2.md#detach)
 
+___
 
 ### getBodyTattooColor <Score text="getBodyTattooColor" /> 
 
@@ -784,6 +777,7 @@ ___
 
 [IHumanoidV2MaterialStyle](../interfaces/Gameplay.IHumanoidV2MaterialStyle.md).[setBodyTattooZoom](../interfaces/Gameplay.IHumanoidV2MaterialStyle.md#setbodytattoozoom)
 
+___
 
 ### setSkinColor <Score text="setSkinColor" /> 
 

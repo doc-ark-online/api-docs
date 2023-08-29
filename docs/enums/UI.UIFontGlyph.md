@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UIFontGlyph
+[GUI](../groups/GUI.GUI.md) / UIFontGlyph
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 

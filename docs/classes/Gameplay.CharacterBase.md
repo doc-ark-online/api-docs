@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / CharacterBase
+[AVATAR](../groups/AVATAR.AVATAR.md) / CharacterBase
 
 # CharacterBase <Badge type="tip" text="Class" /> <Score text="CharacterBase" />
 
@@ -79,6 +79,7 @@
 | **[maxSwimSpeed](Gameplay.CharacterBase.md#maxswimspeed)**(): `number` <br> 最大游泳速度|
 | **[maxWalkSpeed](Gameplay.CharacterBase.md#maxwalkspeed)**(): `number` <br> 地面最大速度|
 | **[maxWalkSpeedCrouched](Gameplay.CharacterBase.md#maxwalkspeedcrouched)**(): `number` <br> 地面蹲伏行走时的最大移动速度|
+| **[meshOffset](Gameplay.CharacterBase.md#meshoffset)**(): [`Vector`](Type.Vector.md) <br> 获取mesh相对角色坐标点的偏移|
 | **[moveEnable](Gameplay.CharacterBase.md#moveenable)**(): `boolean` <br> 启用/禁用移动能力|
 | **[moveFacingDirection](Gameplay.CharacterBase.md#movefacingdirection)**(): [`MoveFacingDirection`](../enums/Gameplay.MoveFacingDirection.md) <br> 运动面朝方向|
 | **[movementAxisDirection](Gameplay.CharacterBase.md#movementaxisdirection)**(): [`Vector`](Type.Vector.md) <br> 运动时依据的轴方向, 只有当前的MovementDirection为AxisDirection时有效|
@@ -169,7 +170,6 @@
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -191,7 +191,6 @@
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -210,8 +209,6 @@
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
-
-## Properties
 
 ### onLoadAppearanceDataAllCompleted <Score text="onLoadAppearanceDataAllCompleted" /> 
 
@@ -1097,18 +1094,11 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### gravityScale <Score text="gravityScale" /> 
 
 • `get` **gravityScale**(): `number`
-
-重力倍率
-
-#### Returns
-
-`number`
-
-• `set` **gravityScale**(`newGravityScale`): `void`
 
 重力倍率
 
@@ -1117,6 +1107,14 @@ ___
 范围0~10, 过大和过小的值都会被限制
 
 :::
+
+#### Returns
+
+`number`
+
+• `set` **gravityScale**(`newGravityScale`): `void`
+
+重力倍率
 
 #### Parameters
 
@@ -1148,6 +1146,7 @@ ___
 | `inGroundFriction` | `number` |
 
 
+___
 
 ### headUIVisible <Score text="headUIVisible" /> 
 
@@ -1298,6 +1297,7 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### maxAcceleration <Score text="maxAcceleration" /> 
 
@@ -1483,6 +1483,31 @@ ___
 
 ___
 
+### meshOffset <Score text="meshOffset" /> 
+
+• `get` **meshOffset**(): [`Vector`](Type.Vector.md) 
+
+获取mesh相对角色坐标点的偏移
+
+
+#### Returns
+
+[`Vector`](Type.Vector.md)
+
+• `set` **meshOffset**(`offset`): `void` 
+
+设置mesh相对角色坐标点的偏移
+
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `offset` | [`Vector`](Type.Vector.md) |
+
+
+___
+
 ### moveEnable <Score text="moveEnable" /> 
 
 • `get` **moveEnable**(): `boolean`
@@ -1593,6 +1618,7 @@ ___
 
 [`MovementMode`](../enums/Gameplay.MovementMode.md)
 
+___
 
 ### outOfWaterZ <Score text="outOfWaterZ" /> 
 
@@ -1615,6 +1641,7 @@ ___
 | `value` | `number` |
 
 
+___
 
 ### physicsEnabled <Score text="physicsEnabled" /> 
 
@@ -1660,6 +1687,7 @@ ___
 | `value` | `boolean` |
 
 
+___
 
 ### rotateRate <Score text="rotateRate" /> 
 
@@ -1717,6 +1745,7 @@ ___
 | `used` | `boolean` |
 
 
+___
 
 ### usedCapsuleCorrection <Score text="usedCapsuleCorrection" /> 
 
@@ -1776,6 +1805,7 @@ ___
 
 
 ## Methods
+___
 
 ### addImpulse <Score text="addImpulse" /> 
 
@@ -1835,6 +1865,7 @@ ___
 
 异步回调
 
+___
 
 ### attach <Score text="attach" /> 
 
@@ -1851,6 +1882,7 @@ ___
 | `slotName` | [`SlotType`](../enums/Gameplay.SlotType.md) | 插槽类型 |
 
 
+___
 
 ### clearAppearance <Score text="clearAppearance" /> 
 
@@ -1886,6 +1918,7 @@ ___
 | `GUID` | `string` |  实例化后的挂件对象GUID |
 
 
+___
 
 ### crouch <Score text="crouch" /> 
 
@@ -1901,6 +1934,7 @@ ___
 | `isCrouch` | `boolean` | 是否下蹲 |
 
 
+___
 
 ### getAppearance <Score text="getAppearance" /> 
 
@@ -1921,6 +1955,7 @@ ___
 
 外观修改对象
 
+___
 
 ### getControlRotator <Score text="getControlRotator" /> 
 
@@ -1956,6 +1991,7 @@ ___
 
 GUID数组
 
+___
 
 ### getHeadUIWidget <Score text="getHeadUIWidget" /> 
 
@@ -1970,6 +2006,7 @@ GUID数组
 
 头顶UIWidget对象
 
+___
 
 ### getSlotName <Score text="getSlotName" /> 
 
@@ -1990,6 +2027,7 @@ GUID数组
 
 插槽名称(string)
 
+___
 
 ### isPlayingAnimation <Score text="isPlayingAnimation" /> 
 
@@ -2004,6 +2042,7 @@ GUID数组
 
 是否正在播放动画
 
+___
 
 ### jump <Score text="jump" /> 
 
@@ -2114,6 +2153,7 @@ ___
 | `TargetPoint` | [`Vector`](Type.Vector.md) | 目标点 |
 
 
+___
 
 ### playAnimation <Score text="playAnimation" /> 
 
@@ -2143,6 +2183,7 @@ player.character.playAnimation(animGUID，100，2);
 
 Animation 对象
 
+___
 
 ### setAppearance <Score text="setAppearance" /> 
 
@@ -2169,6 +2210,7 @@ Animation 对象
 
 外观修改对象
 
+___
 
 ### setCollisionShapeAndExtent <Score text="setCollisionShapeAndExtent" /> 
 
@@ -2176,6 +2218,20 @@ Animation 对象
 
 设置不同形状不同大小的碰撞体
 
+
+使用示例:创建一个名为"NewScript"的脚本，放置在对象栏中，打开脚本，输入一下代码保存，运行游戏，你将看到日志窗口输出对应的数值,代码如下:
+```ts
+@Core.Class
+export default class NewScript extends Core.Script {
+ protected onStart(): void {
+    Gameplay.asyncGetCurrentPlayer().then((player) => {
+    player.character.usedCapsuleCorrection = false;
+    player.character.setCollisionShapeAndExtent(Gameplay.CustomShapeType.VerticalCapsule, new Type.Vector(100, 100, 100));
+    console.log(player.character.collisionExtent);
+ });
+}
+}
+```
 
 #### Parameters
 
@@ -2202,6 +2258,7 @@ ___
 | `propagateToChildren?` | `boolean` |  是否设置子物体 default:true |
 
 
+___
 
 ### stopStance <Score text="stopStance" /> 
 

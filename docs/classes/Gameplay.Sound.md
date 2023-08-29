@@ -1,4 +1,4 @@
-[Others](../groups/Others.Others.md) / Sound
+[OTHERS](../groups/OTHERS.OTHERS.md) / Sound
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
@@ -90,7 +90,6 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -112,7 +111,6 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -131,8 +129,6 @@ Sound.spatialization // 音效空间化，为真则开启空间传播衰减
 | **[spawn](Gameplay.GameObject.md#spawn)**<`T`: extends `GameObject`<`T`\>\>(`[spawn](Gameplay.GameObject.md#spawn)Info`): `T`: extends `GameObject`<`T`\> <br> 构造一个 GameObject|
 :::
 
-
-## Properties
 
 ### onSoundFinished <Score text="onSoundFinished" /> 
 
@@ -239,6 +235,7 @@ ___
 | `fallOffDistance` | `number` | 距离 |
 
 
+___
 
 ### isAutoPlay <Score text="isAutoPlay" /> 
 
@@ -346,6 +343,7 @@ boolean
 | `isUISound` | `boolean` | 是否用于UI |
 
 
+___
 
 ### playState <Score text="playState" /> 
 
@@ -360,6 +358,7 @@ boolean
 
 是否正在播放
 
+___
 
 ### shapeExtents <Score text="shapeExtents" /> 
 
@@ -390,6 +389,7 @@ boolean
 | `ShapeExtents` | [`Vector`](Type.Vector.md) | 设置形状范围 |
 
 
+___
 
 ### timePosition <Score text="timePosition" /> 
 
@@ -419,6 +419,7 @@ ___
 
 音效时长(ms)
 
+___
 
 ### volume <Score text="volume" /> 
 
@@ -447,6 +448,7 @@ ___
 
 
 ## Methods
+___
 
 ### pause <Score text="pause" /> 
 
@@ -479,6 +481,7 @@ ___
 | `OnSuccess?` | () => `void` | 播放完成后回调 default: null |
 
 
+___
 
 ### setAudioAssetByGuid <Score text="setAudioAssetByGuid" /> 
 
@@ -494,6 +497,7 @@ ___
 | `assetGUID` | `string` | 音效资源ID |
 
 
+___
 
 ### stop <Score text="stop" /> 
 
