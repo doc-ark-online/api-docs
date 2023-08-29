@@ -30,7 +30,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   // base: "/api-docs/",
   outDir: '../dist',
   head: [
-    ['link', { rel: 'icon', href: '/favicon_kd.ico' }],
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/tab-logo.png'
+      }
+    ],
     [
       'script',
       {},
@@ -50,43 +56,47 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       type: 'api',
       version: '025'
     },
-    logo: '/logo.png',
-    // algolia: {
-    //   appId: 'I2PHYUBLCN',
-    //   apiKey: '62ee775311415d26549e0e30fef5aa38',
-    //   indexName: 'api-docs_prodigytech',
-    //   project: {
-    //     active: 'api-docs',
-    //     arr: [
-    //       {
-    //         key: 'api-docs',
-    //         facetFilters: ['tags:api-docs'],
-    //         name: 'API文档'
-    //       },
-    //       {
-    //         key: 'product-docs',
-    //         facetFilters: ['tags:product-docs'],
-    //         name: '产品手册'
-    //       },
-    //       {
-    //         key: 'learning-docs',
-    //         facetFilters: ['tags:learning-docs'],
-    //         name: '教程文档'
-    //       },
-    //       {
-    //         name: '论坛',
-    //         url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
-    //       }
-    //     ]
-    //   },
-    //   searchPage: 'https://search.ark.online/#/search'
-    // },
+    logo: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/kd-logo-black.svg',
+    algolia: {
+      appId: 'I2PHYUBLCN',
+      apiKey: '62ee775311415d26549e0e30fef5aa38',
+      indexName: 'api-docs_prodigytech',
+      project: {
+        active: 'api-docs',
+        arr: [
+          {
+            key: 'api-docs',
+            facetFilters: ['tags:api-docs'],
+            name: 'API文档'
+          },
+          {
+            key: 'product-docs',
+            facetFilters: ['tags:product-docs'],
+            name: '产品手册'
+          },
+          {
+            key: 'learning-docs',
+            facetFilters: ['tags:learning-docs'],
+            name: '教程文档'
+          },
+          {
+            name: '论坛',
+            url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
+          }
+        ]
+      },
+      searchPage: 'https://search.ark.online/#/search'
+    },
     feedback: 'https://github.com/prodigytech-doc/api-docs/',
     siteTitle: 'API',
     nav: [
       {
-        text: '创作者',
+        text: '官网',
         link: 'https://creator.ark.online/'
+      },
+      {
+        text: '论坛',
+        link: 'https://forum.ark.online/'
       },
       {
         text: '教程',
@@ -97,8 +107,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://docs.ark.online/'
       },
       {
-        text: '论坛',
-        link: 'https://forum.ark.online/'
+        text: '创作者',
+        link: 'https://portal.ark.online/'
       },
       {
         text: '025 版本',

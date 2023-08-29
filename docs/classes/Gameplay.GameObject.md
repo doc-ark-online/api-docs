@@ -1395,7 +1395,7 @@ ___
 
 • `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> 
 
-通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
+通过GUID异步查找GameObject,默认是十秒,可以通过 `Gameplay.setGlobalAsyncTimeout(1000 * 10);
 ` 来设置
 
 
