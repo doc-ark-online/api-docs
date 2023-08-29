@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / UserWidget
+[GUI](../groups/GUI.GUI.md) / UserWidget
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
@@ -66,8 +66,6 @@ UI控件的集合,预制体UI
 :::
 
 
-## Accessors
-
 ### focusable <Score text="focusable" /> 
 
 • `get` **focusable**(): `boolean` <Badge type="tip" text="client" />
@@ -93,6 +91,7 @@ UI控件的集合,预制体UI
 | `isFocus` | `boolean` | 是否相应 |
 
 
+___
 
 ### rootContent <Score text="rootContent" /> 
 
@@ -136,6 +135,7 @@ UI控件的集合,预制体UI
 | `zOrder` | `number` | 添加到屏幕的层级关系 |
 
 
+___
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
@@ -156,6 +156,7 @@ UI控件的集合,预制体UI
 
 返回查找节点结果
 
+___
 
 ### removeRootContent <Score text="removeRootContent" /> 
 

@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / BasePanel
+[GUI](../groups/GUI.GUI.md) / BasePanel
 
 # BasePanel<T\> <Badge type="tip" text="Class" /> <Score text="BasePanel<T\>" />
 
@@ -21,6 +21,10 @@
 - [`BaseView`](Extension.BaseView.md)
 
   ↳ **`BasePanel`**
+
+  ↳↳ [`LeaderboardItemPanelBase`](Extension.LeaderboardItemPanelBase.md)
+
+  ↳↳ [`LeaderboardMainPaneBase`](Extension.LeaderboardMainPaneBase.md)
 
 ## Table of contents
 
@@ -75,6 +79,7 @@
 [BaseView](Extension.BaseView.md).[constructor](Extension.BaseView.md#constructor)
 
 ## Accessors
+___
 
 ### size <Score text="size" /> 
 
@@ -97,6 +102,7 @@
 | `value` | [`Vector2`](Type.Vector2.md) |
 
 
+___
 
 ### view <Score text="view" /> 
 
@@ -110,6 +116,7 @@
 
 
 ## Methods
+___
 
 ### onAdded <Score text="onAdded" /> 
 

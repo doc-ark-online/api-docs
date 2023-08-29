@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2BehindHairPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV2BehindHairPart
 
 # HumanoidV2BehindHairPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2BehindHairPart" />
 
@@ -56,5 +56,3 @@
 | **[setMesh](Gameplay.HumanoidV2HairPart.md#setmesh)**(`GUID`: `string`, `sync`: `boolean`): `void` <br> 设置前发部位模型|
 :::
 
-
-## Methods

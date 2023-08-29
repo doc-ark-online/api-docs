@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / Gizmo
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / Gizmo
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 

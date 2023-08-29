@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / Button
+[GUI](../groups/GUI.GUI.md) / Button
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
@@ -76,8 +76,6 @@
 :::
 
 
-## Accessors
-
 ### clickMethod <Score text="clickMethod" /> 
 
 • `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="client" />
@@ -92,6 +90,7 @@
 | `inClickMethod` | [`ButtonClickMethod`](../enums/UI.ButtonClickMethod.md) | 点击模式选择 |
 
 
+___
 
 ### disableImageColor <Score text="disableImageColor" /> 
 
@@ -226,6 +225,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
 
+___
 
 ### focusable <Score text="focusable" /> 
 
@@ -252,6 +252,7 @@ ___
 | `inFocus` | `boolean` | 是否获取输入焦点 |
 
 
+___
 
 ### normalImageColor <Score text="normalImageColor" /> 
 
@@ -461,6 +462,7 @@ ___
 
 返回事件的代理
 
+___
 
 ### pressedImageColor <Score text="pressedImageColor" /> 
 
@@ -611,6 +613,7 @@ ___
 | `inPressedMethod` | [`ButtonPressMethod`](../enums/UI.ButtonPressMethod.md) | Press模式选择 |
 
 
+___
 
 ### touchMethod <Score text="touchMethod" /> 
 
@@ -626,6 +629,7 @@ ___
 | `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) | Touch模式选择 |
 
 
+___
 
 ### transitionEnable <Score text="transitionEnable" /> 
 
@@ -654,6 +658,7 @@ ___
 
 
 ## Methods
+___
 
 ### isPressed <Score text="isPressed" /> 
 
@@ -668,6 +673,7 @@ ___
 
 返回按钮是否按下
 
+___
 
 ### setButtonDisableByFile <Score text="setButtonDisableByFile" /> 
 

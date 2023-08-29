@@ -1,8 +1,41 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / MaterialInstance
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / MaterialInstance
 
 # MaterialInstance <Badge type="tip" text="Class" /> <Score text="MaterialInstance" />
 
 材质实例类
+
+使用示例:创建一个名为"MaterialExample"的脚本,把脚本挂载到一个模型对象下,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到动态设置材质的效果.代码如下:
+```ts
+@Core.Class
+export default class MaterialExample extends Core.Script {
+    protected onStart(): void {
+        if (this.gameObject instanceof Gameplay.Mesh){
+            // 获取当前Mesh上的材质
+            const mis = this.gameObject.getMaterialInstance();
+            mis.forEach(mi => {
+            // 获取当前材质的浮点参数
+                let aspns = mi.getAllScalarParameterName();
+                aspns.forEach(aspn => {
+                    // 设置当前材质的浮点参数
+                    mi.setScalarParameterValue(aspn, 1);
+                });
+                // 获取当前材质的颜色参数
+                let avpns = mi.getAllVectorParameterName();
+                avpns.forEach(avpn => {
+                    // 设置当前材质的颜色参数
+                    mi.setVectorParameterValue(avpn, Type.LinearColor.red);
+                });
+                // 获取当前材质的贴图参数
+                let atpns = mi.getAllTextureParameterName();
+                atpns.forEach(atpn => {
+                    // 设置当前材质的贴图参数，确保设置的资源被加载了
+                    mi.setTextureParameterValue(atpn, "26512");
+                });
+            });
+        }
+    }
+}
+```
 
 ## Table of contents
 

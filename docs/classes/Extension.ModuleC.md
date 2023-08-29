@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / ModuleC
+[UTILITY](../groups/UTILITY.UTILITY.md) / ModuleC
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
@@ -22,6 +22,8 @@
 - [`NetObjectC`](Extension.NetObjectC.md)<`T`\>
 
   ↳ **`ModuleC`**
+
+  ↳↳ [`LeaderboardModuleBaseC`](Extension.LeaderboardModuleBaseC.md)
 
 ## Table of contents
 
@@ -47,15 +49,6 @@
 | **[onExecute](Extension.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
 | **[onStart](Extension.ModuleC.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
 | **[onUpdate](Extension.ModuleC.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `S` | extends [`Subdata`](Extension.Subdata.md)<`S`\> |
-
-## Accessors
 
 ### data <Score text="data" /> 
 

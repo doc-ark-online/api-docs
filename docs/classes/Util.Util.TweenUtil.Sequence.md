@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / Sequence
+[UTILITY](../groups/UTILITY.UTILITY.md) / Sequence
 
 # Sequence <Badge type="tip" text="Class" /> <Score text="Sequence" />
 

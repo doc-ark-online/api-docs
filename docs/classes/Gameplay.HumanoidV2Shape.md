@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2Shape
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV2Shape
 
 # HumanoidV2Shape <Badge type="tip" text="Class" /> <Score text="HumanoidV2Shape" />
 

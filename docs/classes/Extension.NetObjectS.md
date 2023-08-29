@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / NetObjectS
+[UTILITY](../groups/UTILITY.UTILITY.md) / NetObjectS
 
 # NetObjectS<T\> <Badge type="tip" text="Class" /> <Score text="NetObjectS<T\>" />
 
@@ -29,14 +29,6 @@
 | :-----|
 | **[getAllClient](Extension.NetObjectS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
 | **[getClient](Extension.NetObjectS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-## Accessors
 
 ### currentPlayer <Score text="currentPlayer" /> 
 

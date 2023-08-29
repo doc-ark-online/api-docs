@@ -1,5 +1,5 @@
 {
-  "Avatar": {
+  "AVATAR": {
     "Interfaces": [
       {
         "file_name": "Gameplay.IHumanoidV2Shape.md",
@@ -237,7 +237,356 @@
       }
     ]
   },
-  "Datatype": {
+  "UTILITY": {
+    "Interfaces": [
+      {
+        "file_name": "Extension.IItemView.md",
+        "file_path": "interfaces/Extension.IItemView.md",
+        "name": "IItemView"
+      },
+      {
+        "file_name": "Extension.IPanelView.md",
+        "file_path": "interfaces/Extension.IPanelView.md",
+        "name": "IPanelView"
+      }
+    ],
+    "Modules Functions": [
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "bindButton"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "enableCursorInteractWithUI"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "enableCursorLock"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "isCursorInteractiveWithUI"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "isCursorLockEnabled"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "isCursorLocked"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "isCursorVisible"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "onKeyDown"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "onKeyPress"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "onKeyUp"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "projectWorldLocationToWidgetPosition"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "setCursorLocked"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "setCursorVisible"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "setMouseLockable"
+      },
+      {
+        "file_name": "Util.InputUtil.md",
+        "file_path": "modules/Util.InputUtil.md",
+        "name": "unbindButton"
+      },
+      {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "assetLoaded"
+      },
+      {
+        "file_name": "Util.AssetUtil.md",
+        "file_path": "modules/Util.AssetUtil.md",
+        "name": "asyncDownloadAsset"
+      },
+      {
+        "file_name": "Util.TweenUtil.md",
+        "file_path": "modules/Util.TweenUtil.md",
+        "name": "nextId"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "clamp"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "cos"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "degreesToRadians"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "fmod"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "lerp"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "radiansToDegrees"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "randomFloat"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "randomInt"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "sin"
+      },
+      {
+        "file_name": "Util.MathUtil.md",
+        "file_path": "modules/Util.MathUtil.md",
+        "name": "tan"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "clearDelayExecute"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "clearInterval"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "delayExecute"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "delaySecond"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "elapsedTime"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "parseTime"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "setInterval"
+      },
+      {
+        "file_name": "Util.TimeUtil.md",
+        "file_path": "modules/Util.TimeUtil.md",
+        "name": "time"
+      },
+      {
+        "file_name": "Util.StringUtil.md",
+        "file_path": "modules/Util.StringUtil.md",
+        "name": "clipboardCopy"
+      },
+      {
+        "file_name": "Util.StringUtil.md",
+        "file_path": "modules/Util.StringUtil.md",
+        "name": "clipboardPaste"
+      },
+      {
+        "file_name": "Util.StringUtil.md",
+        "file_path": "modules/Util.StringUtil.md",
+        "name": "format"
+      },
+      {
+        "file_name": "Util.StringUtil.md",
+        "file_path": "modules/Util.StringUtil.md",
+        "name": "isEmpty"
+      },
+      {
+        "file_name": "Util.StringUtil.md",
+        "file_path": "modules/Util.StringUtil.md",
+        "name": "maskWordCheck"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "drawGameObjectSelectionBox"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "getGameObjectBySelectionBox"
+      },
+      {
+        "file_name": "Util.SelectionUtil.md",
+        "file_path": "modules/Util.SelectionUtil.md",
+        "name": "setGlobalOutlineParams"
+      }
+    ],
+    "Modules Type Aliases": [
+      {
+        "file_name": "Extension.Extension.md",
+        "file_path": "modules/Extension.Extension.md",
+        "name": "LeaderboardPlayerData"
+      }
+    ],
+    "Modules Variables": [
+      {
+        "file_name": "Util.TweenUtil.md",
+        "file_path": "modules/Util.TweenUtil.md",
+        "name": "TWEEN"
+      }
+    ],
+    "Enums": [
+      {
+        "file_name": "Extension.GameObjPoolSourceType.md",
+        "file_path": "enums/Extension.GameObjPoolSourceType.md",
+        "name": "GameObjPoolSourceType"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "Extension.ModuleManager.md",
+        "file_path": "classes/Extension.ModuleManager.md",
+        "name": "ModuleManager"
+      },
+      {
+        "file_name": "Util.Util.TweenUtil.Tween.md",
+        "file_path": "classes/Util.Util.TweenUtil.Tween.md",
+        "name": "Tween"
+      },
+      {
+        "file_name": "Util.Util.TweenUtil.Sequence.md",
+        "file_path": "classes/Util.Util.TweenUtil.Sequence.md",
+        "name": "Sequence"
+      },
+      {
+        "file_name": "Extension.LeaderboardModuleBaseC.md",
+        "file_path": "classes/Extension.LeaderboardModuleBaseC.md",
+        "name": "LeaderboardModuleBaseC"
+      },
+      {
+        "file_name": "Extension.ModuleS.md",
+        "file_path": "classes/Extension.ModuleS.md",
+        "name": "ModuleS"
+      },
+      {
+        "file_name": "Extension.NetObjectS.md",
+        "file_path": "classes/Extension.NetObjectS.md",
+        "name": "NetObjectS"
+      },
+      {
+        "file_name": "Util.Util.TweenUtil.Group.md",
+        "file_path": "classes/Util.Util.TweenUtil.Group.md",
+        "name": "Group"
+      },
+      {
+        "file_name": "Extension.GameObjPool.md",
+        "file_path": "classes/Extension.GameObjPool.md",
+        "name": "GameObjPool"
+      },
+      {
+        "file_name": "Service.SoundService.md",
+        "file_path": "classes/Service.SoundService.md",
+        "name": "SoundService"
+      },
+      {
+        "file_name": "Extension.NetObjectC.md",
+        "file_path": "classes/Extension.NetObjectC.md",
+        "name": "NetObjectC"
+      },
+      {
+        "file_name": "Extension.LeaderboardItemPanelBase.md",
+        "file_path": "classes/Extension.LeaderboardItemPanelBase.md",
+        "name": "LeaderboardItemPanelBase"
+      },
+      {
+        "file_name": "Extension.LeaderboardModuleBaseS.md",
+        "file_path": "classes/Extension.LeaderboardModuleBaseS.md",
+        "name": "LeaderboardModuleBaseS"
+      },
+      {
+        "file_name": "Extension.ModuleC.md",
+        "file_path": "classes/Extension.ModuleC.md",
+        "name": "ModuleC"
+      },
+      {
+        "file_name": "Service.EffectService.md",
+        "file_path": "classes/Service.EffectService.md",
+        "name": "EffectService"
+      },
+      {
+        "file_name": "Extension.LeaderboardModule.md",
+        "file_path": "classes/Extension.LeaderboardModule.md",
+        "name": "LeaderboardModule"
+      },
+      {
+        "file_name": "Extension.LeaderboardMainPaneBase.md",
+        "file_path": "classes/Extension.LeaderboardMainPaneBase.md",
+        "name": "LeaderboardMainPaneBase"
+      },
+      {
+        "file_name": "Extension.NetObject.md",
+        "file_path": "classes/Extension.NetObject.md",
+        "name": "NetObject"
+      },
+      {
+        "file_name": "Extension.ObjPool.md",
+        "file_path": "classes/Extension.ObjPool.md",
+        "name": "ObjPool"
+      }
+    ]
+  },
+  "DATATYPE": {
     "Interfaces": [
       {
         "file_name": "Type.TypeName.md",
@@ -274,12 +623,12 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "CameraSystemData"
+        "name": "CameraShakeData"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "Constructor"
+        "name": "CameraSystemData"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -310,6 +659,11 @@
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
         "name": "OnRecvChatMessage"
+      },
+      {
+        "file_name": "Gameplay.Gameplay.md",
+        "file_path": "modules/Gameplay.Gameplay.md",
+        "name": "Oscillator"
       },
       {
         "file_name": "Gameplay.Gameplay.md",
@@ -349,6 +703,11 @@
       {
         "file_name": "Service.Service.md",
         "file_path": "modules/Service.Service.md",
+        "name": "BroadcastMessageResult"
+      },
+      {
+        "file_name": "Service.Service.md",
+        "file_path": "modules/Service.Service.md",
         "name": "DownloadDataResponse"
       },
       {
@@ -370,16 +729,6 @@
         "file_name": "Service.Service.md",
         "file_path": "modules/Service.Service.md",
         "name": "OnOrderDelivered"
-      },
-      {
-        "file_name": "Service.Service.md",
-        "file_path": "modules/Service.Service.md",
-        "name": "OnViewLayoutSwitched"
-      },
-      {
-        "file_name": "Service.Service.md",
-        "file_path": "modules/Service.Service.md",
-        "name": "OnViewRefreshed"
       },
       {
         "file_name": "Service.Service.md",
@@ -454,6 +803,11 @@
         "name": "GraphicsLevel"
       },
       {
+        "file_name": "Service.MessageType.md",
+        "file_path": "enums/Service.MessageType.md",
+        "name": "MessageType"
+      },
+      {
         "file_name": "Type.NetStatus.md",
         "file_path": "enums/Type.NetStatus.md",
         "name": "NetStatus"
@@ -467,6 +821,11 @@
         "file_name": "Type.CollisionStatus.md",
         "file_path": "enums/Type.CollisionStatus.md",
         "name": "CollisionStatus"
+      },
+      {
+        "file_name": "Service.MessageState.md",
+        "file_path": "enums/Service.MessageState.md",
+        "name": "MessageState"
       }
     ],
     "Classes": [
@@ -562,7 +921,7 @@
       }
     ]
   },
-  "Gameplay": {
+  "GAMEPLAY": {
     "Modules Functions": [
       {
         "file_name": "Network.Network.md",
@@ -702,11 +1061,6 @@
       {
         "file_name": "Gameplay.Gameplay.md",
         "file_path": "modules/Gameplay.Gameplay.md",
-        "name": "setPlayerPassableForAllArea"
-      },
-      {
-        "file_name": "Gameplay.Gameplay.md",
-        "file_path": "modules/Gameplay.Gameplay.md",
         "name": "setStaticMeshColor"
       },
       {
@@ -727,16 +1081,6 @@
       {
         "file_name": "Util.SystemUtil.md",
         "file_path": "modules/Util.SystemUtil.md",
-        "name": "getDefaultGraphicsCPULevel"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
-        "name": "getDefaultGraphicsGPULevel"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
         "name": "getEditorVersion"
       },
       {
@@ -748,16 +1092,6 @@
         "file_name": "Util.SystemUtil.md",
         "file_path": "modules/Util.SystemUtil.md",
         "name": "getGameId"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
-        "name": "getGraphicsCPULevel"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
-        "name": "getGraphicsGPULevel"
       },
       {
         "file_name": "Util.SystemUtil.md",
@@ -778,16 +1112,6 @@
         "file_name": "Util.SystemUtil.md",
         "file_path": "modules/Util.SystemUtil.md",
         "name": "isServer"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
-        "name": "setGraphicsCPULevel"
-      },
-      {
-        "file_name": "Util.SystemUtil.md",
-        "file_path": "modules/Util.SystemUtil.md",
-        "name": "setGraphicsGPULevel"
       },
       {
         "file_name": "Util.WindowUtil.md",
@@ -1042,312 +1366,7 @@
       }
     ]
   },
-  "Utility": {
-    "Modules Functions": [
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "bindButton"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "enableCursorInteractWithUI"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "enableCursorLock"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "isCursorInteractiveWithUI"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "isCursorLockEnabled"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "isCursorLocked"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "isCursorVisible"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "onKeyDown"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "onKeyPress"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "onKeyUp"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "projectWorldLocationToWidgetPosition"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "setCursorLocked"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "setCursorVisible"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "setMouseLockable"
-      },
-      {
-        "file_name": "Util.InputUtil.md",
-        "file_path": "modules/Util.InputUtil.md",
-        "name": "unbindButton"
-      },
-      {
-        "file_name": "Util.AssetUtil.md",
-        "file_path": "modules/Util.AssetUtil.md",
-        "name": "assetLoaded"
-      },
-      {
-        "file_name": "Util.AssetUtil.md",
-        "file_path": "modules/Util.AssetUtil.md",
-        "name": "asyncDownloadAsset"
-      },
-      {
-        "file_name": "Util.TweenUtil.md",
-        "file_path": "modules/Util.TweenUtil.md",
-        "name": "nextId"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "clamp"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "cos"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "degreesToRadians"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "fmod"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "lerp"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "radiansToDegrees"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "randomFloat"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "randomInt"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "sin"
-      },
-      {
-        "file_name": "Util.MathUtil.md",
-        "file_path": "modules/Util.MathUtil.md",
-        "name": "tan"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "clearDelayExecute"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "clearInterval"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "delayExecute"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "delaySecond"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "elapsedTime"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "parseTime"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "setInterval"
-      },
-      {
-        "file_name": "Util.TimeUtil.md",
-        "file_path": "modules/Util.TimeUtil.md",
-        "name": "time"
-      },
-      {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "clipboardCopy"
-      },
-      {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "clipboardPaste"
-      },
-      {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "format"
-      },
-      {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "isEmpty"
-      },
-      {
-        "file_name": "Util.StringUtil.md",
-        "file_path": "modules/Util.StringUtil.md",
-        "name": "maskWordCheck"
-      },
-      {
-        "file_name": "Util.SelectionUtil.md",
-        "file_path": "modules/Util.SelectionUtil.md",
-        "name": "drawGameObjectSelectionBox"
-      },
-      {
-        "file_name": "Util.SelectionUtil.md",
-        "file_path": "modules/Util.SelectionUtil.md",
-        "name": "getGameObjectBySelectionBox"
-      },
-      {
-        "file_name": "Util.SelectionUtil.md",
-        "file_path": "modules/Util.SelectionUtil.md",
-        "name": "setGlobalOutlineParams"
-      }
-    ],
-    "Modules Variables": [
-      {
-        "file_name": "Util.TweenUtil.md",
-        "file_path": "modules/Util.TweenUtil.md",
-        "name": "TWEEN"
-      }
-    ],
-    "Enums": [
-      {
-        "file_name": "Extension.GameObjPoolSourceType.md",
-        "file_path": "enums/Extension.GameObjPoolSourceType.md",
-        "name": "GameObjPoolSourceType"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "Extension.ModuleManager.md",
-        "file_path": "classes/Extension.ModuleManager.md",
-        "name": "ModuleManager"
-      },
-      {
-        "file_name": "Util.Util.TweenUtil.Tween.md",
-        "file_path": "classes/Util.Util.TweenUtil.Tween.md",
-        "name": "Tween"
-      },
-      {
-        "file_name": "Util.Util.TweenUtil.Sequence.md",
-        "file_path": "classes/Util.Util.TweenUtil.Sequence.md",
-        "name": "Sequence"
-      },
-      {
-        "file_name": "Extension.ModuleS.md",
-        "file_path": "classes/Extension.ModuleS.md",
-        "name": "ModuleS"
-      },
-      {
-        "file_name": "Extension.NetObjectS.md",
-        "file_path": "classes/Extension.NetObjectS.md",
-        "name": "NetObjectS"
-      },
-      {
-        "file_name": "Util.Util.TweenUtil.Group.md",
-        "file_path": "classes/Util.Util.TweenUtil.Group.md",
-        "name": "Group"
-      },
-      {
-        "file_name": "Extension.GameObjPool.md",
-        "file_path": "classes/Extension.GameObjPool.md",
-        "name": "GameObjPool"
-      },
-      {
-        "file_name": "Service.SoundService.md",
-        "file_path": "classes/Service.SoundService.md",
-        "name": "SoundService"
-      },
-      {
-        "file_name": "Extension.NetObjectC.md",
-        "file_path": "classes/Extension.NetObjectC.md",
-        "name": "NetObjectC"
-      },
-      {
-        "file_name": "Extension.ModuleC.md",
-        "file_path": "classes/Extension.ModuleC.md",
-        "name": "ModuleC"
-      },
-      {
-        "file_name": "Service.EffectService.md",
-        "file_path": "classes/Service.EffectService.md",
-        "name": "EffectService"
-      },
-      {
-        "file_name": "Extension.NetObject.md",
-        "file_path": "classes/Extension.NetObject.md",
-        "name": "NetObject"
-      },
-      {
-        "file_name": "Extension.ObjPool.md",
-        "file_path": "classes/Extension.ObjPool.md",
-        "name": "ObjPool"
-      }
-    ]
-  },
-  "Scripting": {
+  "SCRIPTING": {
     "Modules Functions": [
       {
         "file_name": "Util.InputUtil.md",
@@ -1792,7 +1811,7 @@
       }
     ]
   },
-  "Others": {
+  "OTHERS": {
     "Modules Functions": [
       {
         "file_name": "MobileEditor.MobileEditor.md",
@@ -1853,7 +1872,7 @@
       }
     ]
   },
-  "Localization": {
+  "LOCALIZATION": {
     "Modules Functions": [
       {
         "file_name": "Util.LocaleUtil.md",
@@ -1877,7 +1896,7 @@
       }
     ]
   },
-  "Data": {
+  "DATA": {
     "Modules Functions": [
       {
         "file_name": "DataStorage.DataStorage.md",
@@ -1955,7 +1974,7 @@
       }
     ]
   },
-  "Monetization": {
+  "MONETIZATION": {
     "Modules Type Aliases": [
       {
         "file_name": "Service.Service.md",
@@ -2050,28 +2069,7 @@
       }
     ]
   },
-  "Settings": {
-    "Modules Functions": [
-      {
-        "file_name": "Setting.RoomSettings.md",
-        "file_path": "modules/Setting.RoomSettings.md",
-        "name": "enableJoiningMidgame"
-      },
-      {
-        "file_name": "Setting.RoomSettings.md",
-        "file_path": "modules/Setting.RoomSettings.md",
-        "name": "isJoiningMidgameEnabled"
-      }
-    ],
-    "Classes": [
-      {
-        "file_name": "Gameplay.Optimization.md",
-        "file_path": "classes/Gameplay.Optimization.md",
-        "name": "Optimization"
-      }
-    ]
-  },
-  "Gui": {
+  "GUI": {
     "Modules Functions": [
       {
         "file_name": "UI.UI.md",
@@ -2649,7 +2647,7 @@
       }
     ]
   },
-  "Animations": {
+  "ANIMATIONS": {
     "Enums": [
       {
         "file_name": "Gameplay.AnimSlot.md",
@@ -2685,7 +2683,7 @@
       }
     ]
   },
-  "Physics": {
+  "PHYSICS": {
     "Enums": [
       {
         "file_name": "Gameplay.CollisionType.md",
@@ -2706,6 +2704,11 @@
         "file_name": "Gameplay.ObjectTypeQuery.md",
         "file_path": "enums/Gameplay.ObjectTypeQuery.md",
         "name": "ObjectTypeQuery"
+      },
+      {
+        "file_name": "Gameplay.MotionAxis.md",
+        "file_path": "enums/Gameplay.MotionAxis.md",
+        "name": "MotionAxis"
       }
     ],
     "Classes": [
@@ -2731,7 +2734,7 @@
       }
     ]
   },
-  "Lighting": {
+  "LIGHTING": {
     "Enums": [
       {
         "file_name": "Gameplay.SkyPreset.md",
@@ -2742,9 +2745,19 @@
         "file_name": "Gameplay.FogPreset.md",
         "file_path": "enums/Gameplay.FogPreset.md",
         "name": "FogPreset"
+      },
+      {
+        "file_name": "Gameplay.PostProcessPreset.md",
+        "file_path": "enums/Gameplay.PostProcessPreset.md",
+        "name": "PostProcessPreset"
       }
     ],
     "Classes": [
+      {
+        "file_name": "Gameplay.PostProcessConfig.md",
+        "file_path": "classes/Gameplay.PostProcessConfig.md",
+        "name": "PostProcessConfig"
+      },
       {
         "file_name": "Gameplay.PostProcess.md",
         "file_path": "classes/Gameplay.PostProcess.md",
@@ -2777,7 +2790,7 @@
       }
     ]
   },
-  "Sounds": {
+  "SOUNDS": {
     "Enums": [
       {
         "file_name": "Gameplay.AttenuationDistanceModel.md",
@@ -2796,7 +2809,7 @@
       }
     ]
   },
-  "Input": {
+  "INPUT": {
     "Enums": [
       {
         "file_name": "Gameplay.TouchInputType.md",
@@ -2806,18 +2819,69 @@
     ],
     "Classes": [
       {
+        "file_name": "Gameplay.MobileSensors.md",
+        "file_path": "classes/Gameplay.MobileSensors.md",
+        "name": "MobileSensors"
+      },
+      {
         "file_name": "Gameplay.TouchInput.md",
         "file_path": "classes/Gameplay.TouchInput.md",
         "name": "TouchInput"
       }
     ]
   },
-  "Social": {
+  "SETTINGS": {
+    "Enums": [
+      {
+        "file_name": "Settings.GravityMode.md",
+        "file_path": "enums/Settings.GravityMode.md",
+        "name": "GravityMode"
+      }
+    ],
+    "Classes": [
+      {
+        "file_name": "Settings.GraphicsSettings.md",
+        "file_path": "classes/Settings.GraphicsSettings.md",
+        "name": "GraphicsSettings"
+      },
+      {
+        "file_name": "Settings.EnvironmentSettings.md",
+        "file_path": "classes/Settings.EnvironmentSettings.md",
+        "name": "EnvironmentSettings"
+      },
+      {
+        "file_name": "Gameplay.Optimization.md",
+        "file_path": "classes/Gameplay.Optimization.md",
+        "name": "Optimization"
+      },
+      {
+        "file_name": "Settings.AvatarSettings.md",
+        "file_path": "classes/Settings.AvatarSettings.md",
+        "name": "AvatarSettings"
+      },
+      {
+        "file_name": "Setting.RoomSettings.md",
+        "file_path": "classes/Setting.RoomSettings.md",
+        "name": "RoomSettings"
+      },
+      {
+        "file_name": "Settings.RoomSettings.md",
+        "file_path": "classes/Settings.RoomSettings.md",
+        "name": "RoomSettings"
+      }
+    ]
+  },
+  "SOCIAL": {
     "Classes": [
       {
         "file_name": "Service.RouteService.md",
         "file_path": "classes/Service.RouteService.md",
         "name": "RouteService"
+      },
+      {
+        "file_name": "Service.ChatService.md",
+        "file_path": "classes/Service.ChatService.md",
+        "name": "ChatService"
       },
       {
         "file_name": "Service.AccountService.md",
@@ -2831,7 +2895,7 @@
       }
     ]
   },
-  "Debugging": {
+  "DEBUGGING": {
     "Classes": [
       {
         "file_name": "Service.DebugService.md",
@@ -2845,7 +2909,7 @@
       }
     ]
   },
-  "Effects": {
+  "EFFECTS": {
     "Classes": [
       {
         "file_name": "Gameplay.Particle.md",

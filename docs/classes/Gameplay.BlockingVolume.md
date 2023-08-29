@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / BlockingVolume
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / BlockingVolume
 
 # BlockingVolume <Badge type="tip" text="Class" /> <Score text="BlockingVolume" />
 
@@ -21,11 +21,12 @@
 
   ↳ **`BlockingVolume`**
 
+  ↳↳ [`BlockingArea`](Gameplay.Gameplay.BlockingArea.md)
+
 ## Table of contents
 
 | Accessors |
 | :-----|
-| **[playerStateResponse](Gameplay.BlockingVolume.md#playerstateresponse)**(): `unknown` <br> 获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数|
 
 
 ::: details 点击查看继承
@@ -54,10 +55,11 @@
 
 | Methods |
 | :-----|
-| **[getCurrentPlayerPassable](Gameplay.BlockingVolume.md#getcurrentplayerpassable)**(`Target`: `number`): `boolean` <br> 获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值|
-| **[setBlockAllPlayer](Gameplay.BlockingVolume.md#setblockallplayer)**(`BlockAll`: `boolean`): `boolean` <br> 让该禁行区阻挡所有玩家|
-| **[setCurrentPlayerPassable](Gameplay.BlockingVolume.md#setcurrentplayerpassable)**(`Target`: `number`, `CanPass`: `boolean`): `void` <br> 设置玩家通过该区域屏障权限|
-| **[setNonCharacterActorCanPass](Gameplay.BlockingVolume.md#setnoncharacteractorcanpass)**(`targetActor`: `any`, `canPass`: `boolean`): `void` <br> 设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效|
+| **[addPassableTarget](Gameplay.BlockingVolume.md#addpassabletarget)**(`Target`: `GameObject`): `void` <br> 为目标添加通过该区域的权限|
+| **[clear](Gameplay.BlockingVolume.md#clear)**(): `void` <br> 重置禁行区|
+| **[getTargetPassable](Gameplay.BlockingVolume.md#gettargetpassable)**(`Target`: `GameObject`): `boolean` <br> 获得目标通过该区域的权限|
+| **[removePassableTarget](Gameplay.BlockingVolume.md#removepassabletarget)**(`Target`: `GameObject`): `void` <br> 移除目标通过该区域的权限|
+| **[unblockAll](Gameplay.BlockingVolume.md#unblockall)**(): `void` <br> 开放禁行区|
 
 
 ::: details 点击查看继承
@@ -78,7 +80,6 @@
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -100,7 +101,6 @@
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -120,46 +120,64 @@
 :::
 
 
-## Accessors
-
-### playerStateResponse <Score text="playerStateResponse" /> 
-
-• `get` **playerStateResponse**(): `unknown` 
-
-获取玩家是否拥有通过该区域屏障权限的响应回调,结果将赋值到传入的参数
-
-
-使用示例:简单调用
-```ts
-BlockArea.getPlayerStateResponse()
-```
-
-#### Returns
-
-`unknown`
-
-bool
-
-
 ## Methods
+___
 
-### getCurrentPlayerPassable <Score text="getCurrentPlayerPassable" /> 
+### addPassableTarget <Score text="addPassableTarget" /> 
 
-• **getCurrentPlayerPassable**(`Target`): `boolean` 
+• **addPassableTarget**(`Target`): `void` <Badge type="tip" text="other" />
 
-获取玩家是否拥有通过该区域屏障权限,结果需要监听getPlayerStateResponse()的返回值
+为目标添加通过该区域的权限
 
+调用端自动广播
 
-使用示例: 简单调用
+使用示例: 针对此禁行区为其他GameObject添加通行许可
 ```ts
-BlockArea.getPlayerCanPass(player.getPlayerID())
+BlockingVolume.addPassableTarget(Target)
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `Target` | `number` | GUID |
+| `Target` | `GameObject` | GameObject |
+
+
+___
+
+### clear <Score text="clear" /> 
+
+• **clear**(): `void` <Badge type="tip" text="other" />
+
+重置禁行区
+
+调用端自动广播
+
+使用示例: 重置该禁行区发布的所有通行许可
+```ts
+BlockingVolume.clear()
+```
+
+
+___
+
+### getTargetPassable <Score text="getTargetPassable" /> 
+
+• **getTargetPassable**(`Target`): `boolean` 
+
+获得目标通过该区域的权限
+
+
+使用示例: 获取此禁行区对某GameObject的通行许可
+```ts
+BlockingVolume.getTargetPassable(Target)
+```
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `Target` | `GameObject` | GameObject |
 
 #### Returns
 
@@ -167,69 +185,40 @@ BlockArea.getPlayerCanPass(player.getPlayerID())
 
 bool
 
+___
 
-### setBlockAllPlayer <Score text="setBlockAllPlayer" /> 
+### removePassableTarget <Score text="removePassableTarget" /> 
 
-• **setBlockAllPlayer**(`BlockAll`): `boolean` 
+• **removePassableTarget**(`Target`): `void` <Badge type="tip" text="other" />
 
-让该禁行区阻挡所有玩家
+移除目标通过该区域的权限
 
+调用端自动广播
 
-使用示例:让该禁行区阻挡所有玩家
+使用示例: 针对此禁行区为其他GameObject移除通行许可
 ```ts
-BlockArea.setBlockAllPlayer()
+BlockingVolume.removePassableTarget(Target)
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `BlockAll` | `boolean` | 设置是否开启阻挡所有玩家 |
-
-#### Returns
-
-`boolean`
-
-bool
+| `Target` | `GameObject` | GameObject |
 
 
-### setCurrentPlayerPassable <Score text="setCurrentPlayerPassable" /> 
+___
 
-• **setCurrentPlayerPassable**(`Target`, `CanPass`): `void` 
+### unblockAll <Score text="unblockAll" /> 
 
-设置玩家通过该区域屏障权限
+• **unblockAll**(): `void` <Badge type="tip" text="other" />
 
+开放禁行区
 
-使用示例: 简单调用
+调用端自动广播
+
+使用示例: 开放该禁行区
 ```ts
-BlockArea.setCurrentPlayerPassable(player,true)
+BlockArea.releaseAll()
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Target` | `number` | GUID |
-| `CanPass` | `boolean` | 是否通过 |
-
-
-
-### setNonCharacterActorCanPass <Score text="setNonCharacterActorCanPass" /> 
-
-• **setNonCharacterActorCanPass**(`targetActor`, `canPass`): `void` 
-
-设置非角色Actor(如载具)的通过权限,是针对目标这一类Actor生效,而非单个对象.注意,这个接口对角色无效
-
-
-使用示例:传递GameObject和bool
-```ts
-BlockArea.setNonCharacterActorCanPass(GameObject,true)
-```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `targetActor` | `any` | 目标Actor |
-| `canPass` | `boolean` | 是否通过 |
 

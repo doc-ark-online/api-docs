@@ -1,14 +1,14 @@
-Localization
+LOCALIZATION
 
-# Localization <Badge type="tip" text="Groups" /> <Score text="Localization" />
+# LOCALIZATION <Badge type="tip" text="Groups" /> <Score text="LOCALIZATION" />
 
 ## Table of contents
 | Modules Functions |
 | :-----|
-| **[getDefaultLocale](Localization.Localization.md#getdefaultlocale)**(): `string` <br> 获取默认的语言和地区|
-| **[getLocTextValue](Localization.Localization.md#getloctextvalue)**(`textkey`: `string`): `string` <br> 根据key获取翻译内容|
-| **[locText](Localization.Localization.md#loctext)**(`textkey`: `string`): `string` <br> 多语言标记|
-| **[useLocalizedLanguage](Localization.Localization.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
+| **[getDefaultLocale](LOCALIZATION.LOCALIZATION.md#getdefaultlocale)**(): `string` <br> 获取默认的语言和地区|
+| **[getLocTextValue](LOCALIZATION.LOCALIZATION.md#getloctextvalue)**(`textkey`: `string`): `string` <br> 根据key获取翻译内容|
+| **[locText](LOCALIZATION.LOCALIZATION.md#loctext)**(`textkey`: `string`): `string` <br> 多语言标记|
+| **[useLocalizedLanguage](LOCALIZATION.LOCALIZATION.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/Type.LanguageType.md)): `boolean` <br> 游戏语言设置|
 
 
 ## Modules Functions

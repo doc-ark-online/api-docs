@@ -6,7 +6,7 @@
 
 | Functions |
 | :-----|
-| **[bindButton](Util.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md), `Widget`: [`Button`](../classes/UI.Button.md) \): `void` <br> 绑定按键|
+| **[bindButton](Util.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/Type.Keys.md), `Widget`: [`StaleButton`](../classes/UI.StaleButton.md) \): `void` <br> 绑定按键|
 | **[convertScreenLocationToWorldSpace](Util.InputUtil.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](../classes/Type.ConvertScreenResult.md) <br> 将二维屏幕位置转换为世界空间三维位置和方向|
 | **[enableCursorInteractWithUI](Util.InputUtil.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void` <br> 设置鼠标指针是否能与UI交互|
 | **[enableCursorLock](Util.InputUtil.md#enablecursorlock)**(`isEnableMouseLock`: `boolean`): `void` <br> 设置是开启光标锁功能，开启后可以按shift键切换光标是否显示。|
@@ -37,7 +37,7 @@
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `key` | [`Keys`](../enums/Type.Keys.md) | 按键 |
-| `Widget` | [`Button`](../classes/UI.Button.md) \| [`StaleButton`](../classes/UI.StaleButton.md) | 绑定的button |
+| `Widget` | [`StaleButton`](../classes/UI.StaleButton.md) \| [`Button`](../classes/UI.Button.md) | 绑定的button |
 
 
 ___

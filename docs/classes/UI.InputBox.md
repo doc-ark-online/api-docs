@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / InputBox
+[GUI](../groups/GUI.GUI.md) / InputBox
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
@@ -93,8 +93,6 @@ UI的输入框
 :::
 
 
-## Accessors
-
 ### autoWrap <Score text="autoWrap" /> 
 
 • `get` **autoWrap**(): `boolean` <Badge type="tip" text="client" />
@@ -120,6 +118,7 @@ UI的输入框
 | `inAutoWrap` | `boolean` | 是否自动换行 |
 
 
+___
 
 ### contentColor <Score text="contentColor" /> 
 
@@ -146,6 +145,7 @@ UI的输入框
 | `inContentColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
 
+___
 
 ### errorText <Score text="errorText" /> 
 
@@ -280,6 +280,7 @@ ___
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) | 设置的字体字形 |
 
 
+___
 
 ### hintString <Score text="hintString" /> 
 
@@ -333,6 +334,7 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 | `inLimit` | [`InputTextLimit`](../enums/UI.InputTextLimit.md) | 无限制,限制为整数,限制为小数,限制为数字和字母,限制为密码 |
 
 
+___
 
 ### isRichText <Score text="isRichText" /> 
 
@@ -359,6 +361,7 @@ InputTextLimit `{ 无限制,限制为整数,限制为小数,限制为数字和�
 | `isRichText` | `boolean` |
 
 
+___
 
 ### onTextChanged <Score text="onTextChanged" /> 
 
@@ -442,6 +445,7 @@ ___
 | `inOutlineSize` | `number` | 宽度 |
 
 
+___
 
 ### readOnlyEnable <Score text="readOnlyEnable" /> 
 
@@ -468,6 +472,7 @@ ___
 | `inValue` | `boolean` | 可读性 |
 
 
+___
 
 ### shadowColor <Score text="shadowColor" /> 
 
@@ -521,6 +526,7 @@ ___
 | `inOffset` | [`Vector2`](Type.Vector2.md) | 偏移 |
 
 
+___
 
 ### strikethroughEnable <Score text="strikethroughEnable" /> 
 
@@ -686,6 +692,7 @@ ___
 | `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) | 对齐方式 |
 
 
+___
 
 ### underlineEnable <Score text="underlineEnable" /> 
 
@@ -723,6 +730,7 @@ true:开启，false:关闭
 
 
 
+___
 
 ### focus <Score text="focus" /> 
 
@@ -732,6 +740,7 @@ true:开启，false:关闭
 
 
 
+___
 
 ### setContentColorByHex <Score text="setContentColorByHex" /> 
 

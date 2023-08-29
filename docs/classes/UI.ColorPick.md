@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / ColorPick
+[GUI](../groups/GUI.GUI.md) / ColorPick
 
 # ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
@@ -65,8 +65,6 @@
 :::
 
 
-## Accessors
-
 ### color <Score text="color" /> 
 
 • `set` **color**(`inColor`): `void` <Badge type="tip" text="client" />
@@ -81,6 +79,7 @@
 | `inColor` | [`LinearColor`](Type.LinearColor.md) | 输入的颜色，Type.LinearColor类型，数据范围0~1 |
 
 
+___
 
 ### imageGuid <Score text="imageGuid" /> 
 
@@ -96,6 +95,7 @@
 | `inGuid` | `string` |
 
 
+___
 
 ### onColorChangeFinished <Score text="onColorChangeFinished" /> 
 
@@ -157,6 +157,7 @@ ___
 
 
 ## Methods
+___
 
 ### newObject <Score text="newObject" /> 
 

@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / GameObjPool
+[UTILITY](../groups/UTILITY.UTILITY.md) / GameObjPool
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 

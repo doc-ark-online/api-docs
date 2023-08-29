@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / ModuleS
+[UTILITY](../groups/UTILITY.UTILITY.md) / ModuleS
 
 # ModuleS<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleS<T, S\>" />
 
@@ -22,6 +22,8 @@
 - [`NetObjectS`](Extension.NetObjectS.md)<`T`\>
 
   ↳ **`ModuleS`**
+
+  ↳↳ [`LeaderboardModuleBaseS`](Extension.LeaderboardModuleBaseS.md)
 
 ## Table of contents
 
@@ -59,15 +61,6 @@
 :::
 
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `T` |
-| `S` | extends [`Subdata`](Extension.Subdata.md)<`S`\> |
-
-## Accessors
-
 ### currentData <Score text="currentData" /> 
 
 • `Protected` `get` **currentData**(): `S`
@@ -86,6 +79,7 @@
 
 
 ## Methods
+___
 
 ### getPlayerData <Score text="getPlayerData" /> 
 

@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / ProjectileCollisionMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / ProjectileCollisionMode
 
 # ProjectileCollisionMode <Badge type="tip" text="Enumeration" /> <Score text="ProjectileCollisionMode" />
 

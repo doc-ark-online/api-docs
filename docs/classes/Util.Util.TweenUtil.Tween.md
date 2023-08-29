@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / Tween
+[UTILITY](../groups/UTILITY.UTILITY.md) / Tween
 
 # Tween<T\> <Badge type="tip" text="Class" /> <Score text="Tween<T\>" />
 

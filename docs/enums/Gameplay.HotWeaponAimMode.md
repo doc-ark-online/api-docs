@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / HotWeaponAimMode
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / HotWeaponAimMode
 
 # HotWeaponAimMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponAimMode" />
 

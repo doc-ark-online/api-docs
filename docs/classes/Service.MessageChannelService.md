@@ -1,4 +1,4 @@
-[Scripting](../groups/Scripting.Scripting.md) / MessageChannelService
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / MessageChannelService
 
 # MessageChannelService <Badge type="tip" text="Class" /> <Score text="MessageChannelService" />
 

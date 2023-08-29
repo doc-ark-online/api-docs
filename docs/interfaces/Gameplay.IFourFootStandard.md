@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IFourFootStandard
+[AVATAR](../groups/AVATAR.AVATAR.md) / IFourFootStandard
 
 # IFourFootStandard <Badge type="tip" text="Interface" /> <Score text="IFourFootStandard" />
 

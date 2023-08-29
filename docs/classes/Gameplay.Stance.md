@@ -1,4 +1,4 @@
-[Animations](../groups/Animations.Animations.md) / Stance
+[ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md) / Stance
 
 # Stance <Badge type="tip" text="Class" /> <Score text="Stance" />
 
@@ -74,4 +74,3 @@ ___
 `boolean`
 
 是否执行成功
-

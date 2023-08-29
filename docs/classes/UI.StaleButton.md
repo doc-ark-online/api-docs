@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / StaleButton
+[GUI](../groups/GUI.GUI.md) / StaleButton
 
 # StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 
@@ -107,8 +107,6 @@
 :::
 
 
-## Accessors
-
 ### clickMethod <Score text="clickMethod" /> 
 
 • `set` **clickMethod**(`inClickMethod`): `void` <Badge type="tip" text="client" />
@@ -125,6 +123,7 @@
 
 点击模式选择
 
+___
 
 ### contentColor <Score text="contentColor" /> 
 
@@ -151,6 +150,7 @@
 | `inContentColor` | [`LinearColor`](Type.LinearColor.md) | 颜色，Type.LinearColor类型，数据范围0~1 |
 
 
+___
 
 ### disableImageColor <Score text="disableImageColor" /> 
 
@@ -285,6 +285,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | 大小 |
 
 
+___
 
 ### focusable <Score text="focusable" /> 
 
@@ -419,6 +420,7 @@ ___
 | `inGlyph` | [`UIFontGlyph`](../enums/UI.UIFontGlyph.md) | 字体字形的类型 |
 
 
+___
 
 ### normalImageColor <Score text="normalImageColor" /> 
 
@@ -683,6 +685,7 @@ ___
 | `inOutlineSize` | `number` | 设置的大小 |
 
 
+___
 
 ### pressMethod <Score text="pressMethod" /> 
 
@@ -833,6 +836,7 @@ ___
 | `inSize` | [`Vector2`](Type.Vector2.md) | size |
 
 
+___
 
 ### shadowColor <Score text="shadowColor" /> 
 
@@ -886,6 +890,7 @@ ___
 | `inOffset` | [`Vector2`](Type.Vector2.md) | 阴影偏移量 |
 
 
+___
 
 ### strikethroughEnable <Score text="strikethroughEnable" /> 
 
@@ -995,6 +1000,7 @@ ___
 | `inTextVerticalJustify` | [`TextVerticalJustify`](../enums/UI.TextVerticalJustify.md) | 对齐方式 |
 
 
+___
 
 ### touchMethod <Score text="touchMethod" /> 
 
@@ -1010,6 +1016,7 @@ ___
 | `inTouchMethod` | [`ButtonTouchMethod`](../enums/UI.ButtonTouchMethod.md) | Touch模式选择 |
 
 
+___
 
 ### transitionEnable <Score text="transitionEnable" /> 
 
@@ -1065,6 +1072,7 @@ ___
 
 
 ## Methods
+___
 
 ### isPressed <Score text="isPressed" /> 
 
@@ -1079,6 +1087,7 @@ ___
 
 返回按钮是否按下
 
+___
 
 ### setDisableImageColorByHex <Score text="setDisableImageColorByHex" /> 
 

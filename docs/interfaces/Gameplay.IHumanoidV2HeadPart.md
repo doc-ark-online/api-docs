@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2HeadPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / IHumanoidV2HeadPart
 
 # IHumanoidV2HeadPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HeadPart" />
 
@@ -491,6 +491,7 @@ ___
 
 下高光GUID
 
+___
 
 ### getPupilColor <Score text="getPupilColor" /> 
 
@@ -1153,6 +1154,7 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+___
 
 ### setPupilColor <Score text="setPupilColor" /> 
 

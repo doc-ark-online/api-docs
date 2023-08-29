@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / Matrix3x3
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / Matrix3x3
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 

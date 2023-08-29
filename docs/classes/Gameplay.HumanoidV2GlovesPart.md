@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV2GlovesPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV2GlovesPart
 
 # HumanoidV2GlovesPart <Badge type="tip" text="Class" /> <Score text="HumanoidV2GlovesPart" />
 
@@ -44,5 +44,3 @@
 | **[setTexture](Gameplay.HumanoidV2ClothPart.md#settexture)**(`index`: `number`, `guid`: `string`, `sync`: `boolean`): `void` <br> 设置花纹|
 :::
 
-
-## Methods

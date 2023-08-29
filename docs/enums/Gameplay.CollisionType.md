@@ -1,4 +1,4 @@
-[Physics](../groups/Physics.Physics.md) / CollisionType
+[PHYSICS](../groups/PHYSICS.PHYSICS.md) / CollisionType
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 

@@ -1,6 +1,6 @@
-Animations
+ANIMATIONS
 
-# Animations <Badge type="tip" text="Groups" /> <Score text="Animations" />
+# ANIMATIONS <Badge type="tip" text="Groups" /> <Score text="ANIMATIONS" />
 
 ## Table of contents
 | Classes |

@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / VehicleWheelPosition4W
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / VehicleWheelPosition4W
 
 # VehicleWheelPosition4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4W" />
 

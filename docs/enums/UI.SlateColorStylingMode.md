@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / SlateColorStylingMode
+[GUI](../groups/GUI.GUI.md) / SlateColorStylingMode
 
 # SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 

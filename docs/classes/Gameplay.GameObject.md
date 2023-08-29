@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / GameObject
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / GameObject
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
@@ -50,7 +50,6 @@ GameObject的基类
 | **[getChildByName](Gameplay.GameObject.md#getchildbyname)**(`name`: `string`): `undefined` \| `GameObject` <br> 根据名称查找子物体|
 | **[getChildren](Gameplay.GameObject.md#getchildren)**(): `undefined` \| `GameObject`[] <br> 获取Children，客户端不维系父子关系。推荐使用Find替代|
 | **[getChildrenBoxCenter](Gameplay.GameObject.md#getchildrenboxcenter)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getCollision](Gameplay.GameObject.md#getcollision)**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) <br> 返回碰撞状态|
 | **[getForwardVector](Gameplay.GameObject.md#getforwardvector)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取当前物体的向前向量|
 | **[getRelativeLocation](Gameplay.GameObject.md#getrelativelocation)**(`outer?`: [`Vector`](Type.Vector.md)): [`Vector`](Type.Vector.md) <br> 获取相对位置|
 | **[getRelativeRotation](Gameplay.GameObject.md#getrelativerotation)**(`outer?`: [`Rotation`](Type.Rotation.md)): [`Rotation`](Type.Rotation.md) <br> 获取相对旋转|
@@ -72,7 +71,6 @@ GameObject的基类
 | **[onStart](Gameplay.GameObject.md#onstart)**(): `void` <br> 周期函数 脚本开始执行时调用|
 | **[onUpdate](Gameplay.GameObject.md#onupdate)**(`dt`: `number`): `void` <br> 周期函数 useUpdate 设置为 true 后,每帧被执行,设置为false,不会执行|
 | **[ready](Gameplay.GameObject.md#ready)**(): `Promise`<[`GameObject`](Gameplay.GameObject.md)\> <br> GameObject准备好后返回|
-| **[setCollision](Gameplay.GameObject.md#setcollision)**(`status`: [`PropertyStatus`](../enums/Type.PropertyStatus.md) \, `propagateToChildren?`: `boolean`): `void` <br> 设置碰撞状态|
 | **[setLocationAndRotation](Gameplay.GameObject.md#setlocationandrotation)**(`location`: [`Vector`](Type.Vector.md), `rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 同时设置物体的世界位置与旋转|
 | **[setRelativeLocation](Gameplay.GameObject.md#setrelativelocation)**(`location`: [`Vector`](Type.Vector.md)): `void` <br> 设置相对位置|
 | **[setRelativeRotation](Gameplay.GameObject.md#setrelativerotation)**(`rotation`: [`Rotation`](Type.Rotation.md)): `void` <br> 设置相对旋转|
@@ -772,21 +770,6 @@ Type.Vector
 
 ___
 
-### getCollision <Score text="getCollision" /> 
-
-• **getCollision**(): [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) 
-
-返回碰撞状态
-
-
-#### Returns
-
-[`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md)
-
-碰撞状态
-
-___
-
 ### getForwardVector <Score text="getForwardVector" /> 
 
 • **getForwardVector**(`outer?`): [`Vector`](Type.Vector.md) 
@@ -1222,29 +1205,6 @@ GameObject准备好后返回
 
 ___
 
-### setCollision <Score text="setCollision" /> 
-
-• **setCollision**(`status`, `propagateToChildren?`): `void` 
-
-设置碰撞状态
-
-
-::: warning Precautions
-
-建议双端物体设置碰撞，单端物体设置碰撞可能会导致拉扯的情况
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `status` | [`PropertyStatus`](../enums/Type.PropertyStatus.md) \| [`CollisionStatus`](../enums/Type.CollisionStatus.md) |  碰撞状态（Type.CollisionStatus 或者 Type.PropertyStatus） |
-| `propagateToChildren?` | `boolean` |  是否传递给子节点 default: false |
-
-
-___
-
 ### setLocationAndRotation <Score text="setLocationAndRotation" /> 
 
 • **setLocationAndRotation**(`location`, `rotation`): `void` 
@@ -1395,7 +1355,7 @@ ___
 
 • `Static` **asyncFind**(`GUID`): `Promise`<`GameObject`\> 
 
-通过GUID异步查找GameObject,默认是十秒,可以通过 `Gameplay.setGlobalAsyncTimeout(1000 * 10);
+通过GUID异步查找GameObject,默认是五秒,可以通过 `core.setGlobalAsyncOverTime(5000);
 ` 来设置
 
 
@@ -1566,4 +1526,3 @@ let obj = Gameplay.GameObject.spawn<Gameplay.Mesh>({
 `T`
 
 构造的GameObject
-

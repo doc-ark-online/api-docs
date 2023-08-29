@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2HairPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / IHumanoidV2HairPart
 
 # IHumanoidV2HairPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2HairPart" />
 
@@ -382,6 +382,7 @@ ___
 
 GUID
 
+___
 
 ### setColor <Score text="setColor" /> 
 

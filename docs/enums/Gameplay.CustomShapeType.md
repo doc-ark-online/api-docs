@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / CustomShapeType
+[AVATAR](../groups/AVATAR.AVATAR.md) / CustomShapeType
 
 # CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 

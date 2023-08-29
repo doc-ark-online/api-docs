@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / HumanoidV1
+[AVATAR](../groups/AVATAR.AVATAR.md) / HumanoidV1
 
 # HumanoidV1 <Badge type="tip" text="Class" /> <Score text="HumanoidV1" />
 
@@ -32,7 +32,7 @@
 | Properties |
 | :-----|
 | **[face](Gameplay.HumanoidV1.md#face)**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md) <br> 脸部|
-| **[hair](Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md) <br> 身体|
+| **[hair](Gameplay.HumanoidV1.md#hair)**: [`HumanoidV1Hair`](Gameplay.HumanoidV1Hair.md) <br> 头发|
 | **[trunk](Gameplay.HumanoidV1.md#trunk)**: [`HumanoidV1Trunk`](Gameplay.HumanoidV1Trunk.md) <br> 身体|
 
 
@@ -59,16 +59,6 @@
 :::
 
 
-构造函数
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `character` | [`CharacterBase`](Gameplay.CharacterBase.md) | 角色 |
-
-## Properties
-
 ### face <Score text="face" /> 
 
 • **face**: [`HumanoidV1Face`](Gameplay.HumanoidV1Face.md)
@@ -83,6 +73,7 @@ ___
 
 头发
 
+___
 
 ### trunk <Score text="trunk" /> 
 
@@ -91,6 +82,7 @@ ___
 身体
 
 ## Methods
+___
 
 ### getSomatotype <Score text="getSomatotype" /> 
 
@@ -128,6 +120,7 @@ ___
 
 [IHumanoidV1](../interfaces/Gameplay.IHumanoidV1.md).[getWholeBody](../interfaces/Gameplay.IHumanoidV1.md#getwholebody)
 
+___
 
 ### setWholeBody <Score text="setWholeBody" /> 
 

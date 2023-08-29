@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / PanelWidget
+[GUI](../groups/GUI.GUI.md) / PanelWidget
 
 # PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
 
@@ -72,8 +72,6 @@ UI的PanelWidget可以挂载子节点
 :::
 
 
-## Accessors
-
 ## Methods
 
 ### addChild <Score text="addChild" /> 
@@ -90,6 +88,7 @@ UI的PanelWidget可以挂载子节点
 | `child` | [`Widget`](UI.Widget.md) | 子控件 |
 
 
+___
 
 ### findChildByPath <Score text="findChildByPath" /> 
 
@@ -173,6 +172,7 @@ ___
 
 子节点数量
 
+___
 
 ### removeAllChildren <Score text="removeAllChildren" /> 
 

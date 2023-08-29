@@ -1,4 +1,4 @@
-[Avatar](../groups/Avatar.Avatar.md) / IHumanoidV2ClothPart
+[AVATAR](../groups/AVATAR.AVATAR.md) / IHumanoidV2ClothPart
 
 # IHumanoidV2ClothPart <Badge type="tip" text="Interface" /> <Score text="IHumanoidV2ClothPart" />
 
@@ -148,6 +148,7 @@ ___
 
 GUID
 
+___
 
 ### getPatternAngle <Score text="getPatternAngle" /> 
 
@@ -369,6 +370,7 @@ ___
 | `sync` | `boolean` | sync = false:本地客户端有效; sync = true :调用时同步到服务端，广播给所有客户端 |
 
 
+___
 
 ### setPatternAngle <Score text="setPatternAngle" /> 
 

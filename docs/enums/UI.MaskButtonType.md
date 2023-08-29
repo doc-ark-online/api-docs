@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / MaskButtonType
+[GUI](../groups/GUI.GUI.md) / MaskButtonType
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 

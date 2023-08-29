@@ -1,4 +1,4 @@
-[Data](../groups/Data.Data.md) / DataCenterS
+[DATA](../groups/DATA.DATA.md) / DataCenterS
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 

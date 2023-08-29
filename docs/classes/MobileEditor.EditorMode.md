@@ -1,4 +1,4 @@
-[Scripting](../groups/Scripting.Scripting.md) / EditorMode
+[SCRIPTING](../groups/SCRIPTING.SCRIPTING.md) / EditorMode
 
 # EditorMode <Badge type="tip" text="Class" /> <Score text="EditorMode" />
 

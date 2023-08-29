@@ -1,4 +1,4 @@
-[Utility](../groups/Utility.Utility.md) / ModuleManager
+[UTILITY](../groups/UTILITY.UTILITY.md) / ModuleManager
 
 # ModuleManager <Badge type="tip" text="Class" /> <Score text="ModuleManager" />
 

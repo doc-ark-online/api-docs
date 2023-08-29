@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / CameraSystem
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / CameraSystem
 
 # CameraSystem <Badge type="tip" text="Class" /> <Score text="CameraSystem" />
 

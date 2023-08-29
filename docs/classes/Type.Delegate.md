@@ -1,4 +1,4 @@
-[Datatype](../groups/Datatype.Datatype.md) / Delegate
+[DATATYPE](../groups/DATATYPE.DATATYPE.md) / Delegate
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 

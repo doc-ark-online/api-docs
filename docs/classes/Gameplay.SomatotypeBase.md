@@ -1,4 +1,4 @@
-[Gameplay](../groups/Gameplay.Gameplay.md) / SomatotypeBase
+[GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md) / SomatotypeBase
 
 # SomatotypeBase <Badge type="tip" text="Class" /> <Score text="SomatotypeBase" />
 

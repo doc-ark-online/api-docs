@@ -1,4 +1,4 @@
-[Gui](../groups/Gui.Gui.md) / ScrollBox
+[GUI](../groups/GUI.GUI.md) / ScrollBox
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
@@ -71,8 +71,6 @@
 | **[removeChildAt](UI.PanelWidget.md#removechildat)**(`index`: `number`): `void` <br> 移除第几个节点,会销毁UI无法再使用|
 :::
 
-
-## Properties
 
 ### brushMargin <Score text="brushMargin" /> 
 
@@ -149,6 +147,7 @@ ___
 
 动画类型
 
+___
 
 ### defaultLocation <Score text="defaultLocation" /> 
 
@@ -187,6 +186,7 @@ ___
 | `NewDefaultLocation` | [`ScrollBarDefaultLocation`](../enums/UI.ScrollBarDefaultLocation.md) | 滚动条默认位置(类型，非具体坐标) |
 
 
+___
 
 ### elasticMultiplier <Score text="elasticMultiplier" /> 
 
@@ -215,6 +215,7 @@ ___
 
 弹性系数
 
+___
 
 ### isScrollBarAlwaysShown <Score text="isScrollBarAlwaysShown" /> 
 
@@ -229,6 +230,7 @@ ___
 
 是否一直显示滚动条
 
+___
 
 ### onScrollEnd <Score text="onScrollEnd" /> 
 
@@ -287,6 +289,7 @@ ___
 
 滚动方向
 
+___
 
 ### scrollAxisBrushDrawType <Score text="scrollAxisBrushDrawType" /> 
 
@@ -557,6 +560,7 @@ ___
 
 阴影显示
 
+___
 
 ### smoothScrollingEnable <Score text="smoothScrollingEnable" /> 
 
@@ -603,6 +607,7 @@ ___
 
 
 ## Methods
+___
 
 ### endInertialScrolling <Score text="endInertialScrolling" /> 
 
@@ -612,6 +617,7 @@ ___
 
 
 
+___
 
 ### scrollToEnd <Score text="scrollToEnd" /> 
 
