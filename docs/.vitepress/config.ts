@@ -54,7 +54,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
   themeConfig: {
     pandora: {
       type: 'api',
-      version: '025'
+      version: '026'
     },
     logo: 'https://wstatic-01-ali.233leyuan.com/xyc/metaverse-docs/kd-logo-black.svg',
     algolia: {
@@ -111,8 +111,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://portal.ark.online/'
       },
       {
-        text: '025 版本',
+        text: '026 版本',
         items: [
+          {
+            text: '025 版本',
+            link: 'https://api-docs-025.ark.online/',
+            path: true
+          },
           {
             text: '024 版本',
             link: 'https://api-docs-024.ark.online/',
@@ -121,11 +126,6 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           {
             text: '023 版本',
             link: 'https://api-docs-023.ark.online/',
-            path: true
-          },
-          {
-            text: '022 版本',
-            link: 'https://api-docs-022.ark.online/',
             path: true
           }
         ]
