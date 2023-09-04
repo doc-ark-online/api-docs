@@ -1153,9 +1153,9 @@ vite@^4.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress@^1.0.0-alpha.32:
+vitepress@1.0.0-alpha.32:
   version "1.0.0-alpha.32"
-  resolved "https://repo.huaweicloud.com/repository/npm/vitepress/-/vitepress-1.0.0-alpha.32.tgz#0e650b901c90b01f119e39c137fa23175d5a70da"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-alpha.32.tgz#0e650b901c90b01f119e39c137fa23175d5a70da"
   integrity sha512-Q45N1cLdRr8MAu/+wAKKow7CNQD4sNBlSNsW1UxYfkvSgwPN/dlEmpEkQl/uOpE3C1kv3jvvEJVY0RAIaJFWYQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
