@@ -9,55 +9,51 @@
 
 部分页面提供了便于理解的示例代码，您可以进行学习或随意将其使用于任何目的。
 
-## [Animations](../groups/Animations.Animations.md)
+## [ANIMATIONS](../groups/ANIMATIONS.ANIMATIONS.md)
 
 **动画模块**
 
 包含动画加载、播放、控制等相关API（待梳理）
 
-## [Avatar](../groups/Avatar.Avatar.md)
+## [AVATAR](../groups/AVATAR.AVATAR.md)
 
 **角色模块（待梳理）**
 
-## [Data](../groups/Data.Data.md)
+## [DATA](../groups/DATA.DATA.md)
 
 **数据模块**
 
 包含数据存取、数据管理等功能
 
-## [Debugging](../groups/Debugging.Debugging.md)
+## [DEBUGGING](../groups/DEBUGGING.DEBUGGING.md)
 
 **调试模块**
 
-## [Gameplay](../groups/Gameplay.Gameplay.md)
+## [GAMEPLAY](../groups/GAMEPLAY.GAMEPLAY.md)
 
 **游戏性模块**
 
 包含寻路、冲量、触发器、热武器等常用逻辑对象
 
-## [Gui](../groups/Gui.Gui.md)
+## [GUI](../groups/GUI.GUI.md)
 
 **游戏UI**
 
 包含常用Button、Image等对象的使用
 
-## [Lighting](../groups/Lighting.Lighting.md)
+## [LIGHTING](../groups/LIGHTING.LIGHTING.md)
 
 **光照环境**
 
 包含天空盒、平行光、环境等对象的控制管理
 
-## [Localization](../groups/Localization.Localization.md)
-
-**本地化**
-
-## [Monetization](../groups/Monetization.Monetization.md)
+## [MONETIZATION](../groups/MONETIZATION.MONETIZATION.md)
 
 **商业化**
 
 包含广告、支付等功能
 
-## [Physics](../groups/Physics.Physics.md)
+## [PHYSICS](../groups/PHYSICS.PHYSICS.md)
 
 **物理**
 
@@ -65,20 +61,16 @@
 
 **脚本**
 
-## [Settings](../groups/Settings.Settings.md)
+## [SETTINGS](../groups/SETTINGS.SETTINGS.md)
 
 **全局设置**
 
 包含重力等相关设置
 
-## [Social](../groups/Social.Social.md)
+## [SOCIAL](../groups/SOCIAL.SOCIAL.md)
 
 **社交**
 
-## [Sounds](../groups/Sounds.Sounds.md)
-
-**音效**
-
-## [Utility](../groups/Utility.Utility.md)
+## [UTILITY](../groups/UTILITY.UTILITY.md)
 
 **工具类**
