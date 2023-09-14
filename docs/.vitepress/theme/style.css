@@ -1,0 +1,75 @@
+* {
+  font-family: Consolas;
+}
+:root {
+  --vp-c-indigo: #17191c;
+  --vp-code-block-bg: #f6f6f7;
+}
+.dark {
+  --vp-code-block-bg: var(--vp-c-black);
+}
+
+.vp-doc .custom-block {
+  padding: 10px 16px;
+}
+.vp-doc .custom-block p {
+  margin: 0;
+}
+
+.vp-doc h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.vp-doc .content-big {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.vp-doc p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.warning p:not(.custom-block-title) {
+  font-size: 18px;
+}
+
+.warning p.custom-block-title {
+  font-size: 18px;
+}
+
+.vp-doc table td {
+  font-size: 18px;
+}
+.vp-doc table th p {
+  margin: 0;
+}
+
+.title-text {
+  font-size: 16px !important;
+}
+
+.vp-doc h4 {
+  font-size: 18px;
+}
+
+.github-light {
+  font-family: var(--vp-font-family-mono);
+}
+.github-light code {
+  font-family: var(--vp-font-family-mono);
+}
+.github-light code span {
+  font-family: var(--vp-font-family-mono);
+}
+
+.vp-doc th {
+  font-size: 18px;
+}
