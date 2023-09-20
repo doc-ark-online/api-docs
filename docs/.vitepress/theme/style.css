@@ -8,7 +8,13 @@
 .dark {
   --vp-code-block-bg: var(--vp-c-black);
 }
-
+.vp-doc th,
+.vp-doc td {
+  padding: 10px 14px;
+}
+.vp-doc th {
+  font-weight: 400;
+}
 .vp-doc .custom-block {
   padding: 10px 16px;
 }
@@ -36,15 +42,21 @@
   font-weight: 400;
   line-height: 24px;
 }
+.nested li a {
+  font-size: 16px;
+}
 
 .warning p:not(.custom-block-title) {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .warning p.custom-block-title {
   font-size: 18px;
 }
-
+.vp-doc table {
+  /* padding: 10p */
+  margin: 20px 0 10px 0;
+}
 .vp-doc table td {
   font-size: 18px;
 }
@@ -53,7 +65,7 @@
 }
 
 .title-text {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 .vp-doc h4 {
@@ -70,6 +82,6 @@
   font-family: var(--vp-font-family-mono);
 }
 
-.vp-doc th {
+/* .vp-doc th {
   font-size: 18px;
-}
+} */
