@@ -2,19 +2,20 @@
 
 # CharacterType <Badge type="tip" text="Enumeration" /> <Score text="CharacterType" />
 
-形象类型
+<p class="content-big"> 形象类型 </p>
 
-使用示例:
+<p style="font-size: 14px;"> 使用示例: </p>
+
 ```ts
 ```
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[FourFootStandard](mw.CharacterType.md#fourfootstandard)** = ``2`` <br> |
-| **[HumanoidV1](mw.CharacterType.md#humanoidv1)** = ``0`` <br> |
-| **[HumanoidV2](mw.CharacterType.md#humanoidv2)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[FourFootStandard](mw.CharacterType.md#fourfootstandard)** = ``2``  |
+| :----- |
+| **[HumanoidV1](mw.CharacterType.md#humanoidv1)** = ``0`` |
+| **[HumanoidV2](mw.CharacterType.md#humanoidv2)** = ``1`` |
 
 ## Enumeration Members
 

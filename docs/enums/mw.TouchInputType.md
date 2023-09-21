@@ -2,15 +2,15 @@
 
 # TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
 
-触摸类型
+<p class="content-big"> 触摸类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[TouchBegin](mw.TouchInputType.md#touchbegin)** = ``0`` <br> |
-| **[TouchEnd](mw.TouchInputType.md#touchend)** = ``2`` <br> |
-| **[TouchMove](mw.TouchInputType.md#touchmove)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[TouchBegin](mw.TouchInputType.md#touchbegin)** = ``0``  |
+| :----- |
+| **[TouchEnd](mw.TouchInputType.md#touchend)** = ``2`` |
+| **[TouchMove](mw.TouchInputType.md#touchmove)** = ``1`` |
 
 ## Enumeration Members
 

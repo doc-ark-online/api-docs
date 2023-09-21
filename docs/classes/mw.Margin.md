@@ -2,27 +2,33 @@
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
-基础的边距，提供4个方向的数值修改
+<p class="content-big"> 基础的边距，提供4个方向的数值修改 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new Margin**(`In`: `number`)  |
 | :-----|
-| **[bottom](mw.Margin.md#bottom)**: `number` <br> 下|
-| **[left](mw.Margin.md#left)**: `number` <br> 左|
-| **[right](mw.Margin.md#right)**: `number` <br> 右|
-| **[top](mw.Margin.md#top)**: `number` <br> 上|
+| 对每个值赋值的构造方法|
+
+### Properties <Score text="Properties" /> 
+| **[bottom](mw.Margin.md#bottom)**: `number`  |
+| :-----|
+| 下|
+| **[left](mw.Margin.md#left)**: `number`  |
+| 左|
+| **[right](mw.Margin.md#right)**: `number`  |
+| 右|
+| **[top](mw.Margin.md#top)**: `number`  |
+| 上|
 
 使用一个值初始化四个值的构造方法
-
-**`Effect`**
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `In` | `number` | 初始化值 |
+| `In` `number` | 初始化值 |
+| :------ | :------ |
 
 • **new Margin**(`InLeft`, `InTop`, `InRight`, `InBottom`)
 
@@ -30,12 +36,11 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLeft` | `number` | 左值 |
-| `InTop` | `number` | 上值 |
-| `InRight` | `number` | 右值 |
-| `InBottom` | `number` | 下值 |
+| `InLeft` `number` | 左值 |
+| :------ | :------ |
+| `InTop` `number` | 上值 |
+| `InRight` `number` | 右值 |
+| `InBottom` `number` | 下值 |
 
 ## Properties
 

@@ -2,31 +2,50 @@
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 
-状态信息获取或设置。判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息
+<p class="content-big"> 状态信息获取工具 </p>
+
+<p class="content-big"> 判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md) <br> 判定当前程序的运行平台,返回值参考Type.RuntimePlatform|
-| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean` <br> 判断当前是否是编辑器运行模式|
+### Constructors <Score text="Constructors" /> 
+| **new SystemUtil**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md)  |
 | :-----|
-| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 添加退出游戏时执行的回调函数|
-| **[onPause](mw.SystemUtil.md#onpause)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 添加OnPause开始时执行的回调函数|
-| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <br> 添加OnPause结束时执行的回调函数|
+| 判定当前程序的运行平台,返回值参考Type.RuntimePlatform|
+| **[isPIE](mw.SystemUtil.md#ispie)**: `boolean`  |
+| 判断当前是否是编辑器运行模式|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[onExit](mw.SystemUtil.md#onexit)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
-| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string` <br> 获取当前环境|
-| **[getEditorVersion](mw.SystemUtil.md#geteditorversion)**(): `string` <br> 获取编辑器版本号|
-| **[getFullEditorVersion](mw.SystemUtil.md#getfulleditorversion)**(): `string` <br> 获取完整编辑器版本号|
-| **[getGameId](mw.SystemUtil.md#getgameid)**(): `string` <br> 获取当前游戏GameId|
-| **[getVersion](mw.SystemUtil.md#getversion)**(): `string` <br> 获取当前游戏版本|
-| **[isClient](mw.SystemUtil.md#isclient)**(): `boolean` <br> 是否客户端运行|
-| **[isMobile](mw.SystemUtil.md#ismobile)**(): `boolean` <br> 判断当前是否是移动端|
-| **[isServer](mw.SystemUtil.md#isserver)**(): `boolean` <br> 是否服务器运行|
+| 添加退出游戏时执行的回调函数|
+| **[onPause](mw.SystemUtil.md#onpause)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| 添加OnPause开始时执行的回调函数|
+| **[onResume](mw.SystemUtil.md#onresume)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\>  |
+| 添加OnPause结束时执行的回调函数|
+
+### Methods <Score text="Methods" /> 
+| **[getCurrentEnv](mw.SystemUtil.md#getcurrentenv)**(): `string`  |
+| :-----|
+| 获取当前环境|
+| **[getEditorVersion](mw.SystemUtil.md#geteditorversion)**(): `string`  |
+| 获取编辑器版本号|
+| **[getFullEditorVersion](mw.SystemUtil.md#getfulleditorversion)**(): `string`  |
+| 获取完整编辑器版本号|
+| **[getGameId](mw.SystemUtil.md#getgameid)**(): `string`  |
+| 获取当前游戏GameId|
+| **[getVersion](mw.SystemUtil.md#getversion)**(): `string`  |
+| 获取当前游戏版本|
+| **[isClient](mw.SystemUtil.md#isclient)**(): `boolean`  |
+| 是否客户端运行|
+| **[isMobile](mw.SystemUtil.md#ismobile)**(): `boolean`  |
+| 判断当前是否是移动端|
+| **[isServer](mw.SystemUtil.md#isserver)**(): `boolean`  |
+| 是否服务器运行|
 
 ## Properties
 
@@ -37,7 +56,8 @@
 判定当前程序的运行平台,返回值参考Type.RuntimePlatform
 
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -66,7 +86,17 @@ ___
 
 ### onExit <Score text="onExit" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onExit**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 添加退出游戏时执行的回调函数
 
@@ -79,15 +109,28 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回一个事件监听器 |
+| :------ | :------ |
 
-返回一个事件监听器
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### onPause <Score text="onPause" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onPause**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 添加OnPause开始时执行的回调函数
 
@@ -101,15 +144,28 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> | 返回一个事件监听器 |
+| :------ | :------ |
 
-返回一个事件监听器
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### onResume <Score text="onResume" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onResume**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 添加OnPause结束时执行的回调函数
 
@@ -123,9 +179,12 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\>
+</td>
+</tr></tbody>
+</table>
 
-返回一个事件监听器
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`leaveDuration`: `any`) => `void`\> | 返回一个事件监听器 |
+| :------ | :------ |
 
 ## Methods
 
@@ -135,8 +194,14 @@ ___
 
 获取当前环境
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台
+| `string` | 当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza) |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -152,12 +217,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-当前环境,返回值包含(Dev/Test/Meta/Pre/Online/dev-oversea/test-oversea/pre-oversea/online-oversea/tc-sa-saopaulo-playza)
-
 ___
 
 ### getEditorVersion <Score text="getEditorVersion" /> 
@@ -166,8 +225,14 @@ ___
 
 获取编辑器版本号
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台
+| `string` | 当前编辑器版本号 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -183,12 +248,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-当前编辑器版本号
-
 ___
 
 ### getFullEditorVersion <Score text="getFullEditorVersion" /> 
@@ -197,8 +256,14 @@ ___
 
 获取完整编辑器版本号
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台
+| `string` | 当前完整编辑器版本号 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -214,12 +279,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-当前完整编辑器版本号
-
 ___
 
 ### getGameId <Score text="getGameId" /> 
@@ -228,8 +287,14 @@ ___
 
 获取当前游戏GameId
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId
+| `string` | 当前游戏GameId |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -247,12 +312,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-当前游戏GameId
-
 ___
 
 ### getVersion <Score text="getVersion" /> 
@@ -261,8 +320,14 @@ ___
 
 获取当前游戏版本
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本
+| `string` | 当前游戏版本 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -280,12 +345,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-当前游戏版本
-
 ___
 
 ### isClient <Score text="isClient" /> 
@@ -294,8 +353,14 @@ ___
 
 是否客户端运行
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
+| `boolean` | 是否客户端运行 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -315,12 +380,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`boolean`
-
-是否客户端运行
-
 ___
 
 ### isMobile <Score text="isMobile" /> 
@@ -329,8 +388,14 @@ ___
 
 判断当前是否是移动端
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台
+| `boolean` | 是否是移动端 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -346,12 +411,6 @@ export default class SystemExample extends Script {
 }
 ```
 
-#### Returns
-
-`boolean`
-
-是否是移动端
-
 ___
 
 ### isServer <Score text="isServer" /> 
@@ -360,8 +419,14 @@ ___
 
 是否服务器运行
 
+#### Returns
 
-使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
+| `boolean` | 是否服务器运行 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台 </p>
+
 ```ts
 @Component
 export default class SystemExample extends Script {
@@ -380,9 +445,3 @@ export default class SystemExample extends Script {
 
 }
 ```
-
-#### Returns
-
-`boolean`
-
-是否服务器运行

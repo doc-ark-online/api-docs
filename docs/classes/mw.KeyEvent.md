@@ -2,15 +2,23 @@
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
-按键事件
+<p class="content-big"> 按键事件 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new KeyEvent**()  |
 | :-----|
-| **[getKey](mw.KeyEvent.md#getkey)**(): [`KeyEvent`](mw.KeyEvent.md) <br> 获取按下的键|
-| **[getUserIndex](mw.KeyEvent.md#getuserindex)**(): `number` <br> 获取事件触发玩家index|
-| **[toInputEvent](mw.KeyEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md) <br> 转化为 InputEvent*|
+| 默认构造|
+
+### Methods <Score text="Methods" /> 
+| **[getKey](mw.KeyEvent.md#getkey)**(): [`KeyEvent`](mw.KeyEvent.md)  |
+| :-----|
+| 获取按下的键|
+| **[getUserIndex](mw.KeyEvent.md#getuserindex)**(): `number`  |
+| 获取事件触发玩家index|
+| **[toInputEvent](mw.KeyEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
+| 转化为 InputEvent*|
 
 默认构造
 
@@ -22,12 +30,11 @@
 
 获取按下的键
 
-
 #### Returns
 
-[`KeyEvent`](mw.KeyEvent.md)
+| [`KeyEvent`](mw.KeyEvent.md) | 返回按下的键 |
+| :------ | :------ |
 
-返回按下的键
 
 ___
 
@@ -37,12 +44,11 @@ ___
 
 获取事件触发玩家index
 
-
 #### Returns
 
-`number`
+| `number` | 返回事件触发玩家index |
+| :------ | :------ |
 
-返回事件触发玩家index
 
 ___
 
@@ -52,9 +58,8 @@ ___
 
 转化为 InputEvent*
 
-
 #### Returns
 
-[`InputEvent`](mw.InputEvent.md)
+| [`InputEvent`](mw.InputEvent.md) | 返回转化后 InputEvent |
+| :------ | :------ |
 
-返回转化后 InputEvent

@@ -2,44 +2,44 @@
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 
-碰撞检测通道
+<p class="content-big"> 碰撞检测通道 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ObjectTypeQuery1](mw.ObjectTypeQuery.md#objecttypequery1)** = ``0`` <br> |
-| **[ObjectTypeQuery10](mw.ObjectTypeQuery.md#objecttypequery10)** = ``9`` <br> |
-| **[ObjectTypeQuery11](mw.ObjectTypeQuery.md#objecttypequery11)** = ``10`` <br> |
-| **[ObjectTypeQuery12](mw.ObjectTypeQuery.md#objecttypequery12)** = ``11`` <br> |
-| **[ObjectTypeQuery13](mw.ObjectTypeQuery.md#objecttypequery13)** = ``12`` <br> |
-| **[ObjectTypeQuery14](mw.ObjectTypeQuery.md#objecttypequery14)** = ``13`` <br> |
-| **[ObjectTypeQuery15](mw.ObjectTypeQuery.md#objecttypequery15)** = ``14`` <br> |
-| **[ObjectTypeQuery16](mw.ObjectTypeQuery.md#objecttypequery16)** = ``15`` <br> |
-| **[ObjectTypeQuery17](mw.ObjectTypeQuery.md#objecttypequery17)** = ``16`` <br> |
-| **[ObjectTypeQuery18](mw.ObjectTypeQuery.md#objecttypequery18)** = ``17`` <br> |
-| **[ObjectTypeQuery19](mw.ObjectTypeQuery.md#objecttypequery19)** = ``18`` <br> |
-| **[ObjectTypeQuery2](mw.ObjectTypeQuery.md#objecttypequery2)** = ``1`` <br> |
-| **[ObjectTypeQuery20](mw.ObjectTypeQuery.md#objecttypequery20)** = ``19`` <br> |
-| **[ObjectTypeQuery21](mw.ObjectTypeQuery.md#objecttypequery21)** = ``20`` <br> |
-| **[ObjectTypeQuery22](mw.ObjectTypeQuery.md#objecttypequery22)** = ``21`` <br> |
-| **[ObjectTypeQuery23](mw.ObjectTypeQuery.md#objecttypequery23)** = ``22`` <br> |
-| **[ObjectTypeQuery24](mw.ObjectTypeQuery.md#objecttypequery24)** = ``23`` <br> |
-| **[ObjectTypeQuery25](mw.ObjectTypeQuery.md#objecttypequery25)** = ``24`` <br> |
-| **[ObjectTypeQuery26](mw.ObjectTypeQuery.md#objecttypequery26)** = ``25`` <br> |
-| **[ObjectTypeQuery27](mw.ObjectTypeQuery.md#objecttypequery27)** = ``26`` <br> |
-| **[ObjectTypeQuery28](mw.ObjectTypeQuery.md#objecttypequery28)** = ``27`` <br> |
-| **[ObjectTypeQuery29](mw.ObjectTypeQuery.md#objecttypequery29)** = ``28`` <br> |
-| **[ObjectTypeQuery3](mw.ObjectTypeQuery.md#objecttypequery3)** = ``2`` <br> |
-| **[ObjectTypeQuery30](mw.ObjectTypeQuery.md#objecttypequery30)** = ``29`` <br> |
-| **[ObjectTypeQuery31](mw.ObjectTypeQuery.md#objecttypequery31)** = ``30`` <br> |
-| **[ObjectTypeQuery32](mw.ObjectTypeQuery.md#objecttypequery32)** = ``31`` <br> |
-| **[ObjectTypeQuery4](mw.ObjectTypeQuery.md#objecttypequery4)** = ``3`` <br> |
-| **[ObjectTypeQuery5](mw.ObjectTypeQuery.md#objecttypequery5)** = ``4`` <br> |
-| **[ObjectTypeQuery6](mw.ObjectTypeQuery.md#objecttypequery6)** = ``5`` <br> |
-| **[ObjectTypeQuery7](mw.ObjectTypeQuery.md#objecttypequery7)** = ``6`` <br> |
-| **[ObjectTypeQuery8](mw.ObjectTypeQuery.md#objecttypequery8)** = ``7`` <br> |
-| **[ObjectTypeQuery9](mw.ObjectTypeQuery.md#objecttypequery9)** = ``8`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ObjectTypeQuery1](mw.ObjectTypeQuery.md#objecttypequery1)** = ``0``  |
+| :----- |
+| **[ObjectTypeQuery10](mw.ObjectTypeQuery.md#objecttypequery10)** = ``9`` |
+| **[ObjectTypeQuery11](mw.ObjectTypeQuery.md#objecttypequery11)** = ``10`` |
+| **[ObjectTypeQuery12](mw.ObjectTypeQuery.md#objecttypequery12)** = ``11`` |
+| **[ObjectTypeQuery13](mw.ObjectTypeQuery.md#objecttypequery13)** = ``12`` |
+| **[ObjectTypeQuery14](mw.ObjectTypeQuery.md#objecttypequery14)** = ``13`` |
+| **[ObjectTypeQuery15](mw.ObjectTypeQuery.md#objecttypequery15)** = ``14`` |
+| **[ObjectTypeQuery16](mw.ObjectTypeQuery.md#objecttypequery16)** = ``15`` |
+| **[ObjectTypeQuery17](mw.ObjectTypeQuery.md#objecttypequery17)** = ``16`` |
+| **[ObjectTypeQuery18](mw.ObjectTypeQuery.md#objecttypequery18)** = ``17`` |
+| **[ObjectTypeQuery19](mw.ObjectTypeQuery.md#objecttypequery19)** = ``18`` |
+| **[ObjectTypeQuery2](mw.ObjectTypeQuery.md#objecttypequery2)** = ``1`` |
+| **[ObjectTypeQuery20](mw.ObjectTypeQuery.md#objecttypequery20)** = ``19`` |
+| **[ObjectTypeQuery21](mw.ObjectTypeQuery.md#objecttypequery21)** = ``20`` |
+| **[ObjectTypeQuery22](mw.ObjectTypeQuery.md#objecttypequery22)** = ``21`` |
+| **[ObjectTypeQuery23](mw.ObjectTypeQuery.md#objecttypequery23)** = ``22`` |
+| **[ObjectTypeQuery24](mw.ObjectTypeQuery.md#objecttypequery24)** = ``23`` |
+| **[ObjectTypeQuery25](mw.ObjectTypeQuery.md#objecttypequery25)** = ``24`` |
+| **[ObjectTypeQuery26](mw.ObjectTypeQuery.md#objecttypequery26)** = ``25`` |
+| **[ObjectTypeQuery27](mw.ObjectTypeQuery.md#objecttypequery27)** = ``26`` |
+| **[ObjectTypeQuery28](mw.ObjectTypeQuery.md#objecttypequery28)** = ``27`` |
+| **[ObjectTypeQuery29](mw.ObjectTypeQuery.md#objecttypequery29)** = ``28`` |
+| **[ObjectTypeQuery3](mw.ObjectTypeQuery.md#objecttypequery3)** = ``2`` |
+| **[ObjectTypeQuery30](mw.ObjectTypeQuery.md#objecttypequery30)** = ``29`` |
+| **[ObjectTypeQuery31](mw.ObjectTypeQuery.md#objecttypequery31)** = ``30`` |
+| **[ObjectTypeQuery32](mw.ObjectTypeQuery.md#objecttypequery32)** = ``31`` |
+| **[ObjectTypeQuery4](mw.ObjectTypeQuery.md#objecttypequery4)** = ``3`` |
+| **[ObjectTypeQuery5](mw.ObjectTypeQuery.md#objecttypequery5)** = ``4`` |
+| **[ObjectTypeQuery6](mw.ObjectTypeQuery.md#objecttypequery6)** = ``5`` |
+| **[ObjectTypeQuery7](mw.ObjectTypeQuery.md#objecttypequery7)** = ``6`` |
+| **[ObjectTypeQuery8](mw.ObjectTypeQuery.md#objecttypequery8)** = ``7`` |
+| **[ObjectTypeQuery9](mw.ObjectTypeQuery.md#objecttypequery9)** = ``8`` |
 
 ## Enumeration Members
 

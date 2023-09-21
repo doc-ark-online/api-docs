@@ -2,26 +2,41 @@
 
 # TimeUtil <Badge type="tip" text="Class" /> <Score text="TimeUtil" />
 
-时间工具
+<p class="content-big"> 时间工具 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onEnterFrame](mw.TimeUtil.md#onenterframe)**: [`Action1`](mw.Action1.md)<`number`\> <br> 帧刷新事件(参数deltaTime)|
-| **[traceFrameTime](mw.TimeUtil.md#traceframetime)**: `boolean` <br> 是否输出每帧的执行时间|
+### Constructors <Score text="Constructors" /> 
+| **new TimeUtil**()  |
+| :----- |
 
-| Methods |
+### Properties <Score text="Properties" /> 
+| **[onEnterFrame](mw.TimeUtil.md#onenterframe)**: [`Action1`](mw.Action1.md)<`number`\>  |
 | :-----|
-| **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void` <br> 清除delayExecute|
-| **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void` <br> 清除setInterval|
-| **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number` <br> 延迟一定帧数执行方法|
-| **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\> <br> 延迟一定秒数,用于异步方法中间的等待|
-| **[deltatime](mw.TimeUtil.md#deltatime)**(): `number` <br> 每一帧经过的时间 (单位：秒)|
-| **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number` <br> 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
-| **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string` <br> 格式化时间戳|
-| **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number` <br> 按一定时间间隔执行方法|
-| **[time](mw.TimeUtil.md#time)**(): `number` <br> 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
+| 帧刷新事件(参数deltaTime)|
+| **[traceFrameTime](mw.TimeUtil.md#traceframetime)**: `boolean`  |
+| 是否输出每帧的执行时间|
+
+### Methods <Score text="Methods" /> 
+| **[clearDelayExecute](mw.TimeUtil.md#cleardelayexecute)**(`id`: `number`): `void`  |
+| :-----|
+| 清除delayExecute|
+| **[clearInterval](mw.TimeUtil.md#clearinterval)**(`id`: `number`): `void`  |
+| 清除setInterval|
+| **[delayExecute](mw.TimeUtil.md#delayexecute)**(`handler`: () => `void`, `frameNum?`: `number`): `number`  |
+| 延迟一定帧数执行方法|
+| **[delaySecond](mw.TimeUtil.md#delaysecond)**(`second`: `number`): `Promise`<`void`\>  |
+| 延迟一定秒数,用于异步方法中间的等待|
+| **[deltatime](mw.TimeUtil.md#deltatime)**(): `number`  |
+| 每一帧经过的时间 (单位：秒)|
+| **[elapsedTime](mw.TimeUtil.md#elapsedtime)**(): `number`  |
+| 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。|
+| **[parseTime](mw.TimeUtil.md#parsetime)**(`timeData`: `Date`, `format?`: `string`): `string`  |
+| 格式化时间戳|
+| **[setInterval](mw.TimeUtil.md#setinterval)**(`handler`: () => `void`, `timeout`: `number`, `exitJudge?`: () => `boolean`): `number`  |
+| 按一定时间间隔执行方法|
+| **[time](mw.TimeUtil.md#time)**(): `number`  |
+| 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。|
 
 ## Properties
 
@@ -37,7 +52,8 @@
 
 :::
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每帧输出dt
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每帧输出dt </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -74,8 +90,15 @@ ___
 
 清除delayExecute
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
+| `id` `number` |  delayExecute方法返回的ID |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -97,13 +120,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  delayExecute方法返回的ID |
-
-
 ___
 
 ### clearInterval <Score text="clearInterval" /> 
@@ -112,8 +128,15 @@ ___
 
 清除setInterval
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
+| `id` `number` |  setInterval方法返回的ID |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -143,13 +166,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `id` | `number` |  setInterval方法返回的ID |
-
-
 ___
 
 ### delayExecute <Score text="delayExecute" /> 
@@ -158,8 +174,20 @@ ___
 
 延迟一定帧数执行方法
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
+| `handler` () => `void` |  执行的方法 |
+| :------ | :------ |
+| `frameNum?` `number` |  要延迟的帧数 default: 1 |
+
+#### Returns
+
+| `number` | 用于停止的ID |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -178,19 +206,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  执行的方法 |
-| `frameNum?` | `number` |  要延迟的帧数 default: 1 |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
 ___
 
 ### delaySecond <Score text="delaySecond" /> 
@@ -199,8 +214,19 @@ ___
 
 延迟一定秒数,用于异步方法中间的等待
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
+| `second` `number` |  时间(单位：秒) |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<`void`\> | Promise |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -219,18 +245,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `second` | `number` |  时间(单位：秒) |
-
-#### Returns
-
-`Promise`<`void`\>
-
-Promise
-
 ___
 
 ### deltatime <Score text="deltatime" /> 
@@ -239,18 +253,17 @@ ___
 
 每一帧经过的时间 (单位：秒)
 
+#### Returns
+
+| `number` | number（单位：秒） |
+| :------ | :------ |
+
 ::: warning Precautions
 
 调用这个函数之前两次Update函数调用之间的间隔时间
 
 :::
 
-
-#### Returns
-
-`number`
-
-number（单位：秒）
 
 ___
 
@@ -260,6 +273,11 @@ ___
 
 返回自游戏运行后所经过的总时长，单位秒，精确到毫秒。
 
+#### Returns
+
+| `number` | 自游戏运行后所经过的总时长。 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -267,7 +285,8 @@ ___
 
 :::
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -287,12 +306,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Returns
-
-`number`
-
-自游戏运行后所经过的总时长。
-
 ___
 
 ### parseTime <Score text="parseTime" /> 
@@ -301,8 +314,20 @@ ___
 
 格式化时间戳
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
+| `timeData` `Date` | 标准时间, 时间戳等 |
+| :------ | :------ |
+| `format?` `string` | 日期字符造串 default:outer |
+
+#### Returns
+
+| `string` | 格式化后时间字符串 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -320,19 +345,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeData` | `Date` | 标准时间, 时间戳等 |
-| `format?` | `string` | 日期字符造串 default:outer |
-
-#### Returns
-
-`string`
-
-格式化后时间字符串
-
 ___
 
 ### setInterval <Score text="setInterval" /> 
@@ -341,8 +353,21 @@ ___
 
 按一定时间间隔执行方法
 
+#### Parameters
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
+| `handler` () => `void` |  要执行的方法 |
+| :------ | :------ |
+| `timeout` `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
+| `exitJudge?` () => `boolean` |  退出的判断方法 返回true停止 default: null |
+
+#### Returns
+
+| `number` | 用于停止的ID |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -369,20 +394,6 @@ export default class TimeExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `handler` | () => `void` |  要执行的方法 |
-| `timeout` | `number` |  间隔时间（最小时间为两帧时间差 单位：秒） |
-| `exitJudge?` | () => `boolean` |  退出的判断方法 返回true停止 default: null |
-
-#### Returns
-
-`number`
-
-用于停止的ID
-
 ___
 
 ### time <Score text="time" /> 
@@ -391,6 +402,11 @@ ___
 
 返回当前本地会话所在的电脑自 UNIX Epoch（UNIX 纪元）开始所经过的时间（以秒为单位）。
 
+#### Returns
+
+| `number` | （UNIX 纪元）开始所经过的秒数。 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -398,7 +414,8 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
 
-使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳
+<p style="font-size: 14px;"> 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳 </p>
+
 ```ts
 @Component
 export default class TimeExample extends Script {
@@ -415,9 +432,3 @@ export default class TimeExample extends Script {
 
 }
 ```
-
-#### Returns
-
-`number`
-
-（UNIX 纪元）开始所经过的秒数。

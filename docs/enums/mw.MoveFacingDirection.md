@@ -2,15 +2,15 @@
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 
-运动时面朝方向
+<p class="content-big"> 运动时面朝方向 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ControllerDirection](mw.MoveFacingDirection.md#controllerdirection)** = ``2`` <br> |
-| **[FixedDirection](mw.MoveFacingDirection.md#fixeddirection)** = ``1`` <br> |
-| **[MovementDirection](mw.MoveFacingDirection.md#movementdirection)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ControllerDirection](mw.MoveFacingDirection.md#controllerdirection)** = ``2``  |
+| :----- |
+| **[FixedDirection](mw.MoveFacingDirection.md#fixeddirection)** = ``1`` |
+| **[MovementDirection](mw.MoveFacingDirection.md#movementdirection)** = ``0`` |
 
 ## Enumeration Members
 

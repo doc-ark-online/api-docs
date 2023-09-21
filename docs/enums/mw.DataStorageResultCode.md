@@ -2,20 +2,20 @@
 
 # DataStorageResultCode <Badge type="tip" text="Enumeration" /> <Score text="DataStorageResultCode" />
 
-数据储存返回代码
+<p class="content-big"> 数据储存返回代码 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Failure](mw.DataStorageResultCode.md#failure)** = ``400`` <br> |
-| **[GameIdError](mw.DataStorageResultCode.md#gameiderror)** = ``1011`` <br> |
-| **[KeyValueError](mw.DataStorageResultCode.md#keyvalueerror)** = ``1010`` <br> |
-| **[OnlyServerCall](mw.DataStorageResultCode.md#onlyservercall)** = ``402`` <br> |
-| **[RequestIntervalTooClose](mw.DataStorageResultCode.md#requestintervaltooclose)** = ``423`` <br> |
-| **[RequestTooFrequent](mw.DataStorageResultCode.md#requesttoofrequent)** = ``424`` <br> |
-| **[Success](mw.DataStorageResultCode.md#success)** = ``200`` <br> |
-| **[TimeOut](mw.DataStorageResultCode.md#timeout)** = ``408`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Failure](mw.DataStorageResultCode.md#failure)** = ``400``  |
+| :----- |
+| **[GameIdError](mw.DataStorageResultCode.md#gameiderror)** = ``1011`` |
+| **[KeyValueError](mw.DataStorageResultCode.md#keyvalueerror)** = ``1010`` |
+| **[OnlyServerCall](mw.DataStorageResultCode.md#onlyservercall)** = ``402`` |
+| **[RequestIntervalTooClose](mw.DataStorageResultCode.md#requestintervaltooclose)** = ``423`` |
+| **[RequestTooFrequent](mw.DataStorageResultCode.md#requesttoofrequent)** = ``424`` |
+| **[Success](mw.DataStorageResultCode.md#success)** = ``200`` |
+| **[TimeOut](mw.DataStorageResultCode.md#timeout)** = ``408`` |
 
 ## Enumeration Members
 

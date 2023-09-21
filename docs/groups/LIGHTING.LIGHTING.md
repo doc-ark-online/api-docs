@@ -7,7 +7,6 @@ LIGHTING
 | :-----|
 | [Fog](../classes/mw.Fog.md) <br> 环境雾 |
 | [Lighting](../classes/mw.Lighting.md) <br> 光照 |
-| [PointLight](../classes/mw.PointLight.md) <br> 点光源 |
 | [PostProcess](../classes/mw.PostProcess.md) <br> 后处理 |
 | [PostProcessConfig](../classes/mw.PostProcessConfig.md) <br> 后处理对象属性配置 |
 | [Skybox](../classes/mw.Skybox.md) <br> 天空盒 |

@@ -2,30 +2,46 @@
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-音效管理器
+<p class="content-big"> 音效管理器 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\> <br> 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)|
+### Constructors <Score text="Constructors" /> 
+| **new SoundService**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\>  |
 | :-----|
-| **[BGMVolumeScale](mw.SoundService.md#bgmvolumescale)**(): `number` <br> BGM音量|
-| **[volumeScale](mw.SoundService.md#volumescale)**(): `number` <br> 音效的音量|
+| 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[BGMVolumeScale](mw.SoundService.md#bgmvolumescale)**(): `number`  |
 | :-----|
-| **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\> <br> 根据播放id获取一个3DSound|
-| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number` <br> 在目标播放3D音效|
-| **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void` <br> 播放背景音乐|
-| **[playSound](mw.SoundService.md#playsound)**(`assetId`: `string`, `loopCount?`: `number`, `volume?`: `number`): `string` <br> 根据资源Id播放声音|
-| **[stop3DSound](mw.SoundService.md#stop3dsound)**(`playId`: `number`): `void` <br> 停止3D声音|
-| **[stopAll3DSound](mw.SoundService.md#stopall3dsound)**(): `void` <br> 停止一切3D声音|
-| **[stopAllSound](mw.SoundService.md#stopallsound)**(): `void` <br> 停止除BGM以外的一切2D声音|
-| **[stopBGM](mw.SoundService.md#stopbgm)**(): `void` <br> 停止背景音乐|
-| **[stopSound](mw.SoundService.md#stopsound)**(`assetId`: `string`): `void` <br> 根据资源Id停止声音|
+| BGM音量|
+| **[volumeScale](mw.SoundService.md#volumescale)**(): `number`  |
+| 音效的音量|
+
+### Methods <Score text="Methods" /> 
+| **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\>  |
+| :-----|
+| 根据播放id获取一个3DSound|
+| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number`  |
+| 在目标播放3D音效|
+| **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void`  |
+| 播放背景音乐|
+| **[playSound](mw.SoundService.md#playsound)**(`assetId`: `string`, `loopCount?`: `number`, `volume?`: `number`): `string`  |
+| 根据资源Id播放声音|
+| **[stop3DSound](mw.SoundService.md#stop3dsound)**(`playId`: `number`): `void`  |
+| 停止3D声音|
+| **[stopAll3DSound](mw.SoundService.md#stopall3dsound)**(): `void`  |
+| 停止一切3D声音|
+| **[stopAllSound](mw.SoundService.md#stopallsound)**(): `void`  |
+| 停止除BGM以外的一切2D声音|
+| **[stopBGM](mw.SoundService.md#stopbgm)**(): `void`  |
+| 停止背景音乐|
+| **[stopSound](mw.SoundService.md#stopsound)**(`assetId`: `string`): `void`  |
+| 根据资源Id停止声音|
 
 ## Properties
 
@@ -35,7 +51,8 @@
 
 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends Script {
@@ -65,7 +82,22 @@ export default class SoundExample extends Script {
 
 ### BGMVolumeScale <Score text="BGMVolumeScale" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **BGMVolumeScale**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **BGMVolumeScale**(`value`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 BGM音量
 
@@ -78,9 +110,13 @@ BGM音量
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
 
-• `Static` `set` **BGMVolumeScale**(`value`): `void`
+
+</td>
+<td style="text-align: left">
+
 
 BGM音量
 
@@ -95,16 +131,35 @@ BGM音量
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `value` | `number` |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### volumeScale <Score text="volumeScale" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **volumeScale**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **volumeScale**(`value`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 音效的音量
 
@@ -117,9 +172,13 @@ ___
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
 
-• `Static` `set` **volumeScale**(`value`): `void`
+
+</td>
+<td style="text-align: left">
+
 
 音效的音量
 
@@ -134,9 +193,13 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `value` | `number` |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods
@@ -147,8 +210,19 @@ ___
 
 根据播放id获取一个3DSound
 
+#### Parameters
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
+| `playId` `number` |  播放id |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<[`Sound`](mw.Sound.md)\> | Sound对象的gameObject |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -176,18 +250,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playId` | `number` |  播放id |
-
-#### Returns
-
-`Promise`<[`Sound`](mw.Sound.md)\>
-
-Sound对象的gameObject
-
 ___
 
 ### play3DSound <Score text="play" /> 
@@ -196,9 +258,26 @@ ___
 
 在目标播放3D音效
 
+#### Parameters
+
+| `assetId` `string` |  资源Id |
+| :------ | :------ |
+| `target` `string` \| [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
+| `loopCount?` `number` |  循环次数 default: 1 |
+| `volume?` `number` |  音量 default: 1 |
+| `params?` `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
+| `params.falloffDistance?` `number` | - |
+| `params.radius?` `number` | - |
+
+#### Returns
+
+| `number` | 播放ID，播放声音的唯一标识，可用于停止声音 |
+| :------ | :------ |
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -229,24 +308,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` |  资源Id |
-| `target` | `string` \| [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
-| `loopCount?` | `number` |  循环次数 default: 1 |
-| `volume?` | `number` |  音量 default: 1 |
-| `params?` | `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |
-| `params.falloffDistance?` | `number` | - |
-| `params.radius?` | `number` | - |
-
-#### Returns
-
-`number`
-
-播放ID，播放声音的唯一标识，可用于停止声音
-
 ___
 
 ### playBGM <Score text="playBGM" /> 
@@ -255,9 +316,17 @@ ___
 
 播放背景音乐
 
+#### Parameters
+
+| `assetId` `string` |  资源Id |
+| :------ | :------ |
+| `volume?` `number` |  音量 default: 1 |
+
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -275,14 +344,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` |  资源Id |
-| `volume?` | `number` |  音量 default: 1 |
-
-
 ___
 
 ### playSound <Score text="playSound" /> 
@@ -290,6 +351,18 @@ ___
 • `Static` **playSound**(`assetId`, `loopCount?`, `volume?`): `string` <Badge type="tip" text="other" />
 
 根据资源Id播放声音
+
+#### Parameters
+
+| `assetId` `string` |  资源id |
+| :------ | :------ |
+| `loopCount?` `number` |  循环次数(0无限) default: 1 |
+| `volume?` `number` |  音量 default: 1 |
+
+#### Returns
+
+| `string` | 资源id |
+| :------ | :------ |
 
 调用端生效|服务端调用自动广播
 
@@ -299,7 +372,8 @@ ___
 
 :::
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -320,20 +394,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` |  资源id |
-| `loopCount?` | `number` |  循环次数(0无限) default: 1 |
-| `volume?` | `number` |  音量 default: 1 |
-
-#### Returns
-
-`string`
-
-资源id
-
 ___
 
 ### stop3DSound <Score text="stop" /> 
@@ -342,9 +402,16 @@ ___
 
 停止3D声音
 
+#### Parameters
+
+| `playId` `number` |  播放声音的唯一标识 |
+| :------ | :------ |
+
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -375,13 +442,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playId` | `number` |  播放声音的唯一标识 |
-
-
 ___
 
 ### stopAll3DSound <Score text="stopAll" /> 
@@ -390,9 +450,11 @@ ___
 
 停止一切3D声音
 
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -421,7 +483,6 @@ i++) {
 }
 ```
 
-
 ___
 
 ### stopAllSound <Score text="stopAllSound" /> 
@@ -430,9 +491,11 @@ ___
 
 停止除BGM以外的一切2D声音
 
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -462,7 +525,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-
 ___
 
 ### stopBGM <Score text="stopBGM" /> 
@@ -471,9 +533,11 @@ ___
 
 停止背景音乐
 
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -499,7 +563,6 @@ export default class SoundExample extends mw.Script {
 }
 ```
 
-
 ___
 
 ### stopSound <Score text="stopSound" /> 
@@ -508,9 +571,16 @@ ___
 
 根据资源Id停止声音
 
+#### Parameters
+
+| `assetId` `string` |  资源Id |
+| :------ | :------ |
+
+
 调用端生效|服务端调用自动广播
 
-使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
+<p style="font-size: 14px;"> 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放 </p>
+
 ```ts
 @Component
 export default class SoundExample extends mw.Script {
@@ -537,10 +607,3 @@ export default class SoundExample extends mw.Script {
 
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetId` | `string` |  资源Id |
-

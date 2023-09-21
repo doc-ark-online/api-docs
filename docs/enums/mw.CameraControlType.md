@@ -2,15 +2,15 @@
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
-相机控制模式
+<p class="content-big"> 相机控制模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[CameraType](mw.CameraControlType.md#cameratype)** = ``2`` <br> |
-| **[MoveType](mw.CameraControlType.md#movetype)** = ``1`` <br> |
-| **[None](mw.CameraControlType.md#none)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[CameraType](mw.CameraControlType.md#cameratype)** = ``2``  |
+| :----- |
+| **[MoveType](mw.CameraControlType.md#movetype)** = ``1`` |
+| **[None](mw.CameraControlType.md#none)** = ``0`` |
 
 ## Enumeration Members
 

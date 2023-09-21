@@ -2,14 +2,14 @@
 
 # MessageType <Badge type="tip" text="Enumeration" /> <Score text="MessageType" />
 
-发送消息的类型
+<p class="content-big"> 发送消息的类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Game](mw.MessageType.md#game)** = ``1`` <br> |
-| **[Room](mw.MessageType.md#room)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Game](mw.MessageType.md#game)** = ``1``  |
+| :----- |
+| **[Room](mw.MessageType.md#room)** = ``0`` |
 
 ## Enumeration Members
 

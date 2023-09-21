@@ -2,15 +2,15 @@
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 
-遮罩类型
+<p class="content-big"> 遮罩类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[MTCircle](mw.MaskButtonType.md#mtcircle)** = ``0`` <br> |
-| **[MTFanShaped](mw.MaskButtonType.md#mtfanshaped)** = ``1`` <br> |
-| **[MTRoundRect](mw.MaskButtonType.md#mtroundrect)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[MTCircle](mw.MaskButtonType.md#mtcircle)** = ``0``  |
+| :----- |
+| **[MTFanShaped](mw.MaskButtonType.md#mtfanshaped)** = ``1`` |
+| **[MTRoundRect](mw.MaskButtonType.md#mtroundrect)** = ``2`` |
 
 ## Enumeration Members
 

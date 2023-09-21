@@ -2,20 +2,20 @@
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 
-天空盒预设枚举
+<p class="content-big"> 天空盒预设枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Dusk2D](mw.SkyPreset.md#dusk2d)** = ``2`` <br> |
-| **[DuskLowPoly](mw.SkyPreset.md#dusklowpoly)** = ``6`` <br> |
-| **[Morning2D](mw.SkyPreset.md#morning2d)** = ``0`` <br> |
-| **[MorningLowPoly](mw.SkyPreset.md#morninglowpoly)** = ``4`` <br> |
-| **[Night2D](mw.SkyPreset.md#night2d)** = ``3`` <br> |
-| **[NightLowPoly](mw.SkyPreset.md#nightlowpoly)** = ``7`` <br> |
-| **[Noon2D](mw.SkyPreset.md#noon2d)** = ``1`` <br> |
-| **[NoonLowPoly](mw.SkyPreset.md#noonlowpoly)** = ``5`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Dusk2D](mw.SkyPreset.md#dusk2d)** = ``2``  |
+| :----- |
+| **[DuskLowPoly](mw.SkyPreset.md#dusklowpoly)** = ``6`` |
+| **[Morning2D](mw.SkyPreset.md#morning2d)** = ``0`` |
+| **[MorningLowPoly](mw.SkyPreset.md#morninglowpoly)** = ``4`` |
+| **[Night2D](mw.SkyPreset.md#night2d)** = ``3`` |
+| **[NightLowPoly](mw.SkyPreset.md#nightlowpoly)** = ``7`` |
+| **[Noon2D](mw.SkyPreset.md#noon2d)** = ``1`` |
+| **[NoonLowPoly](mw.SkyPreset.md#noonlowpoly)** = ``5`` |
 
 ## Enumeration Members
 

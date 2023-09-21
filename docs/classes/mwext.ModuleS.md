@@ -2,7 +2,7 @@
 
 # ModuleS<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleS<T, S\>" />
 
-服务端模块的基类
+<p class="content-big"> 服务端模块的基类 </p>
 
 ::: warning Precautions
 
@@ -10,7 +10,8 @@
 
 :::
 
-使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息
+<p style="font-size: 14px;"> 使用示例:创建一个名为ModuleSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，服务端日志会输出player模块每个生命周期执行的日志，按下F键你将在服务端日志中看到玩家等级的信息 </p>
+
 ```ts
 @Component
 export default class ModuleSExample extends Script {
@@ -85,9 +86,8 @@ class PlayerModuleData extends Subdata {
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | `T` |
+| :------ | :------ |
 | `S` | extends [`Subdata`](mwext.Subdata.md) |
 
 ## Hierarchy
@@ -98,38 +98,65 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-| Accessors |
-| :-----|
-| **[currentData](mwext.ModuleS.md#currentdata)**(): `S` <br> 调用服务器方法的玩家的DataOwner|
-| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): [`Player`](mw.Player.md) <br> 调用服务器方法的玩家|
-| **[currentPlayerId](mwext.ModuleS.md#currentplayerid)**(): `number` <br> 获取调用服务器方法的玩家ID|
+### Constructors <Score text="Constructors" /> 
+| **new ModuleS**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
+| :----- |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[currentData](mwext.ModuleS.md#currentdata)**(): `S`  |
 | :-----|
-| **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T` <br> 获取"全部客户端"调用对象|
-| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T` <br> 根据玩家获取"单客户端"调用对象|
-| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S` <br> 获取指定玩家的本模块数据|
-| **[onAwake](mwext.ModuleS.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
-| **[onDestroy](mwext.ModuleS.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
-| **[onExecute](mwext.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
-| **[onPlayerEnterGame](mwext.ModuleS.md#onplayerentergame)**(`player`: [`Player`](mw.Player.md)): `void` <br> 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)|
-| **[onPlayerJoined](mwext.ModuleS.md#onplayerjoined)**(`player`: [`Player`](mw.Player.md)): `void` <br> 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)|
-| **[onPlayerLeft](mwext.ModuleS.md#onplayerleft)**(`player`: [`Player`](mw.Player.md)): `void` <br> 生命周期方法-玩家离开房间|
-| **[onStart](mwext.ModuleS.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
-| **[onUpdate](mwext.ModuleS.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
+| 调用服务器方法的玩家的DataOwner|
+| **[currentPlayer](mwext.ModuleS.md#currentplayer)**(): [`Player`](mw.Player.md)  |
+| 调用服务器方法的玩家|
+| **[currentPlayerId](mwext.ModuleS.md#currentplayerid)**(): `number`  |
+| 获取调用服务器方法的玩家ID|
+
+### Methods <Score text="Methods" /> 
+| **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T`  |
+| :-----|
+| 获取"全部客户端"调用对象|
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T`  |
+| 根据玩家获取"单客户端"调用对象|
+| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S`  |
+| 获取指定玩家的本模块数据|
+| **[onAwake](mwext.ModuleS.md#onawake)**(): `void`  |
+| 生命周期方法-创建模块时调用|
+| **[onDestroy](mwext.ModuleS.md#ondestroy)**(): `void`  |
+| 生命周期方法-销毁模块调用|
+| **[onExecute](mwext.ModuleS.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void`  |
+| 外部调用本模块的某个操作|
+| **[onPlayerEnterGame](mwext.ModuleS.md#onplayerentergame)**(`player`: [`Player`](mw.Player.md)): `void`  |
+| 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)|
+| **[onPlayerJoined](mwext.ModuleS.md#onplayerjoined)**(`player`: [`Player`](mw.Player.md)): `void`  |
+| 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)|
+| **[onPlayerLeft](mwext.ModuleS.md#onplayerleft)**(`player`: [`Player`](mw.Player.md)): `void`  |
+| 生命周期方法-玩家离开房间|
+| **[onStart](mwext.ModuleS.md#onstart)**(): `void`  |
+| 生命周期方法-启动模块时调用|
+| **[onUpdate](mwext.ModuleS.md#onupdate)**(`dt`: `number`): `void`  |
+| 生命周期方法-刷新模块调用|
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | `T` |
+| :------ | :------ |
 | `S` | extends [`Subdata`](mwext.Subdata.md)<`S`\> |
 
 ## Accessors
 
 ### currentData <Score text="currentData" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **currentData**(): `S`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 调用服务器方法的玩家的DataOwner
 
@@ -141,13 +168,28 @@ class PlayerModuleData extends Subdata {
 
 #### Returns
 
-`S`
+| `S` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### currentPlayer <Score text="currentPlayer" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **currentPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="server" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 调用服务器方法的玩家
 
@@ -160,13 +202,28 @@ ___
 
 #### Returns
 
-[`Player`](mw.Player.md)
+| [`Player`](mw.Player.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### currentPlayerId <Score text="currentPlayerId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **currentPlayerId**(): `number` <Badge type="tip" text="server" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取调用服务器方法的玩家ID
 
@@ -179,7 +236,12 @@ ___
 
 #### Returns
 
-`number`
+</td>
+</tr></tbody>
+</table>
+
+| `number` |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -189,12 +251,11 @@ ___
 
 获取"全部客户端"调用对象
 
-
 #### Returns
 
-`T`
+| `T` | "全部客户端"调用对象 |
+| :------ | :------ |
 
-"全部客户端"调用对象
 
 ___
 
@@ -204,18 +265,16 @@ ___
 
 根据玩家获取"单客户端"调用对象
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家id |
+| `player` `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家id |
+| :------ | :------ |
 
 #### Returns
 
-`T`
+| `T` | "单客户端"调用对象 |
+| :------ | :------ |
 
-"单客户端"调用对象
 
 ___
 
@@ -225,18 +284,16 @@ ___
 
 获取指定玩家的本模块数据
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | `string` \| `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家userId\|目标玩家instanceId |
+| `player` `string` \| `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家userId\|目标玩家instanceId |
+| :------ | :------ |
 
 #### Returns
 
-`S`
+| `S` | 数据 |
+| :------ | :------ |
 
-数据
 
 ___
 
@@ -266,13 +323,12 @@ ___
 
 外部调用本模块的某个操作
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | `number` |  操作类型 |
-| `...params` | `any`[] |  操作参数 |
+| `type` `number` |  操作类型 |
+| :------ | :------ |
+| `...params` `any`[] |  操作参数 |
+
 
 
 ___
@@ -283,12 +339,11 @@ ___
 
 生命周期方法-玩家进入游戏(客户端已就绪，数据就绪，前后端可正常通信)
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](mw.Player.md) |  玩家 |
+| `player` [`Player`](mw.Player.md) |  玩家 |
+| :------ | :------ |
+
 
 
 ___
@@ -299,12 +354,11 @@ ___
 
 生命周期方法-玩家进入房间(玩家刚刚连进服务器，数据和前后端通信都还没有就绪)
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](mw.Player.md) |  玩家 |
+| `player` [`Player`](mw.Player.md) |  玩家 |
+| :------ | :------ |
+
 
 
 ___
@@ -315,12 +369,11 @@ ___
 
 生命周期方法-玩家离开房间
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](mw.Player.md) |  玩家 |
+| `player` [`Player`](mw.Player.md) |  玩家 |
+| :------ | :------ |
+
 
 
 ___
@@ -341,10 +394,9 @@ ___
 
 生命周期方法-刷新模块调用
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `dt` | `number` |  两帧之间的时间差(单位：秒) |
+| `dt` `number` |  两帧之间的时间差(单位：秒) |
+| :------ | :------ |
+
 

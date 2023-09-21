@@ -2,24 +2,24 @@
 
 # HttpRequestURL <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestURL" />
 
-开发给用户用的URL枚举，需要与C++层的枚举对应
+<p class="content-big"> 开发给用户用的URL枚举，需要与C++层的枚举对应 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[CobblestoneService](mw.HttpRequestURL.md#cobblestoneservice)** = ``0`` <br> |
-| **[Developers](mw.HttpRequestURL.md#developers)** = ``3`` <br> |
-| **[Games](mw.HttpRequestURL.md#games)** = ``5`` <br> |
-| **[Gateway](mw.HttpRequestURL.md#gateway)** = ``2`` <br> |
-| **[Login](mw.HttpRequestURL.md#login)** = ``8`` <br> |
-| **[MGS](mw.HttpRequestURL.md#mgs)** = ``6`` <br> |
-| **[Packages](mw.HttpRequestURL.md#packages)** = ``9`` <br> |
-| **[Pandora](mw.HttpRequestURL.md#pandora)** = ``10`` <br> |
-| **[Register](mw.HttpRequestURL.md#register)** = ``7`` <br> |
-| **[Resource](mw.HttpRequestURL.md#resource)** = ``1`` <br> |
-| **[Tasks](mw.HttpRequestURL.md#tasks)** = ``4`` <br> |
-| **[Translation](mw.HttpRequestURL.md#translation)** = ``11`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[CobblestoneService](mw.HttpRequestURL.md#cobblestoneservice)** = ``0``  |
+| :----- |
+| **[Developers](mw.HttpRequestURL.md#developers)** = ``3`` |
+| **[Games](mw.HttpRequestURL.md#games)** = ``5`` |
+| **[Gateway](mw.HttpRequestURL.md#gateway)** = ``2`` |
+| **[Login](mw.HttpRequestURL.md#login)** = ``8`` |
+| **[MGS](mw.HttpRequestURL.md#mgs)** = ``6`` |
+| **[Packages](mw.HttpRequestURL.md#packages)** = ``9`` |
+| **[Pandora](mw.HttpRequestURL.md#pandora)** = ``10`` |
+| **[Register](mw.HttpRequestURL.md#register)** = ``7`` |
+| **[Resource](mw.HttpRequestURL.md#resource)** = ``1`` |
+| **[Tasks](mw.HttpRequestURL.md#tasks)** = ``4`` |
+| **[Translation](mw.HttpRequestURL.md#translation)** = ``11`` |
 
 ## Enumeration Members
 

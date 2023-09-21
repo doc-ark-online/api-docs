@@ -2,16 +2,16 @@
 
 # SlateBrushTileType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushTileType" />
 
-图片画刷填充模式
+<p class="content-big"> 图片画刷填充模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Both](mw.SlateBrushTileType.md#both)** = ``3`` <br> |
-| **[Horizontal](mw.SlateBrushTileType.md#horizontal)** = ``1`` <br> |
-| **[NoTile](mw.SlateBrushTileType.md#notile)** = ``0`` <br> |
-| **[Vertical](mw.SlateBrushTileType.md#vertical)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Both](mw.SlateBrushTileType.md#both)** = ``3``  |
+| :----- |
+| **[Horizontal](mw.SlateBrushTileType.md#horizontal)** = ``1`` |
+| **[NoTile](mw.SlateBrushTileType.md#notile)** = ``0`` |
+| **[Vertical](mw.SlateBrushTileType.md#vertical)** = ``2`` |
 
 ## Enumeration Members
 

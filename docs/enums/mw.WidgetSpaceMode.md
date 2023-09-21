@@ -2,15 +2,15 @@
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
-UI空间位置枚举
+<p class="content-big"> UI空间位置枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[OverheadUI](mw.WidgetSpaceMode.md#overheadui)** = ``2`` <br> |
-| **[Screen](mw.WidgetSpaceMode.md#screen)** = ``1`` <br> |
-| **[World](mw.WidgetSpaceMode.md#world)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[OverheadUI](mw.WidgetSpaceMode.md#overheadui)** = ``2``  |
+| :----- |
+| **[Screen](mw.WidgetSpaceMode.md#screen)** = ``1`` |
+| **[World](mw.WidgetSpaceMode.md#world)** = ``0`` |
 
 ## Enumeration Members
 

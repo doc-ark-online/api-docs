@@ -6,11 +6,14 @@ Decorator
 
 ## Table of contents
 
-| Functions |
+### Functions <Score text="Functions" /> 
+| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void`  |
 | :-----|
-| **[autoExecute](mwext.Decorator.md#autoexecute)**(`fnName`): (`target?`: `unknown`) => `void` <br> 类装饰器-自动执行某个方法|
-| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void` <br> 方法注解-被注解的net方法不需要回复客户端|
-| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void` <br> 属性注解-持久化存储属性|
+| 类装饰器-自动执行某个方法|
+| **[noReply](mwext.Decorator.md#noreply)**(): (`target`: [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\>, `fnName`: `string`, `descriptor`: `PropertyDescriptor`) => `void`  |
+| 方法注解-被注解的net方法不需要回复客户端|
+| **[persistence](mwext.Decorator.md#persistence)**(`name?`): (`target`: [`Subdata`](../classes/mwext.Subdata.md), `propertyKey`: `string`) => `void`  |
+| 属性注解-持久化存储属性|
 
 ## Functions
 
@@ -29,27 +32,13 @@ Decorator
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fnName` | `string` |  要自动执行的方法名 |
+| `fnName` `string` |  要自动执行的方法名 |
+| :------ | :------ |
 
 #### Returns
 
-`fn`
-
-装饰器方法体
-
-• (`target?`): `void`
-
-##### Parameters
-
-| Name | Type |
+| `fn` | `void` |
 | :------ | :------ |
-| `target?` | `unknown` |
-
-##### Returns
-
-`void`
 
 ___
 
@@ -62,23 +51,8 @@ ___
 
 #### Returns
 
-`fn`
-
-注解方法
-
-• (`target`, `fnName`, `descriptor`): `void`
-
-##### Parameters
-
-| Name | Type |
+| `fn` | `void` |
 | :------ | :------ |
-| `target` | [`ModuleS`](../classes/mwext.ModuleS.md)<`any`, `any`\> |
-| `fnName` | `string` |
-| `descriptor` | `PropertyDescriptor` |
-
-##### Returns
-
-`void`
 
 ___
 
@@ -97,25 +71,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name?` | `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
+| `name?` `string` |  持久化后的属性名，不写会用变量名存储 default: undefined |
+| :------ | :------ |
 
 #### Returns
 
-`fn`
-
-注解方法
-
-• (`target`, `propertyKey`): `void`
-
-##### Parameters
-
-| Name | Type |
+| `fn` | `void` |
 | :------ | :------ |
-| `target` | [`Subdata`](../classes/mwext.Subdata.md) |
-| `propertyKey` | `string` |
-
-##### Returns
-
-`void`

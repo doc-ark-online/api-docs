@@ -2,9 +2,24 @@
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 
-冲量对象
+<p class="content-big"> 冲量 </p>
 
-使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中冲量对象的子级,将冲量对象相对缩放改为（5.00,5.00,0.50）,放置在合适的位置,可以在与冲量对象重叠区域放置一个Cube,Cube大小缩放与冲量对象相同.打开脚本,输入以下代码保存,运行游戏,你将在场景中看到人物在Cube上蹦床的效果,代码如下:
+<p class="content-big"> ------------------------- </p>
+
+<p class="content-big"> 冲量是一个瞬间爆发力，为对象提供单一且即时的电源，是一种将力集中在一帧上的感觉。 </p>
+
+<p class="content-big"> 冲量对象是如何工作的呢 ？ </p>
+
+<p class="content-big"> · 创建一个冲量对象。可手动将左侧栏中逻辑对象中的冲量拖入场景中，在属性面板中调整参数；也可以在脚本中动态创建冲量对象。 </p>
+
+<p class="content-big"> · 设置冲量对象属性 enable 为 true ，才可触发冲量效果。 </p>
+
+<p class="content-big"> · impulseVector 属性表示力的方向。 </p>
+
+<p class="content-big"> · impulseRadialForce 属性表示力的大小。 </p>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中冲量对象的子级,将冲量对象相对缩放改为（5.00,5.00,0.50）,放置在合适的位置,可以在与冲量对象重叠区域放置一个Cube,Cube大小缩放与冲量对象相同.打开脚本,输入以下代码保存,运行游戏,你将在场景中看到人物在Cube上蹦床的效果,代码如下: </p>
+
 （示例代码中impulseId = "1602E908"中的1602E908替换方式为右键冲量对象，复制对象ID。更换为你的冲量对象ID即可）
 ```ts
 @Component
@@ -36,75 +51,129 @@ export default class ImpulseSample extends Script {
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onImpulseEnter](mw.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md) <br> 发生冲量碰撞后的回调函数|
+### Constructors <Score text="Constructors" /> 
 
 
 ::: details 点击查看继承
-| Properties |
-| :-----|
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体销毁后事件回调|
+### Constructors <Score text="Constructors" /> 
+| **new GameObject**()  |
+| :----- |
 :::
 
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onImpulseEnter](mw.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
 | :-----|
-| **[enable](mw.Impulse.md#enable)**(): `boolean` <br> 获取是否启用冲量|
-| **[impulseForceType](mw.Impulse.md#impulseforcetype)**(): [`ImpulseForceType`](../enums/mw.ImpulseForceType.md) <br> 获取当前冲量力类型|
-| **[impulseRadialForce](mw.Impulse.md#impulseradialforce)**(): `number` <br> 获取径向力的冲量值|
-| **[impulseType](mw.Impulse.md#impulsetype)**(): [`ImpulseType`](../enums/mw.ImpulseType.md) <br> 获取冲量应用方式，绝对或相对|
-| **[impulseVector](mw.Impulse.md#impulsevector)**(): [`Vector`](mw.Vector.md) <br> 获取矢量力的冲量向量|
+| 发生冲量碰撞后的回调函数|
 
 
 ::: details 点击查看继承
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取物体的唯一标识（唯一标识一个对象的字符串）。|
-| **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地变换|
-| **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
-| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
-| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的标签|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界变换|
+| 物体销毁后事件回调|
 :::
 
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[enable](mw.Impulse.md#enable)**(): `boolean`  |
 | :-----|
+| 设置是否启用冲量，禁用状态下，不会应用冲量到物体上|
+| **[impulseForceType](mw.Impulse.md#impulseforcetype)**(): [`ImpulseForceType`](../enums/mw.ImpulseForceType.md)  |
+| 设置冲量力类型。使用示例详见属性 impulseRadialForce 和 impulseVector 中示例代码。|
+| **[impulseRadialForce](mw.Impulse.md#impulseradialforce)**(): `number`  |
+| 设置径向力的冲量值|
+| **[impulseType](mw.Impulse.md#impulsetype)**(): [`ImpulseType`](../enums/mw.ImpulseType.md)  |
+| 设置冲量应用方式|
+| **[impulseVector](mw.Impulse.md#impulsevector)**(): [`Vector`](mw.Vector.md)  |
+| 设置矢量力的冲量向量|
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[assetId](mw.GameObject.md#assetid)**(): `string`  |
 | :-----|
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
-| **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取物体边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据gameObjectId查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
-| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[] <br> 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置物体是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
-| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个物体，资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过gameObjectId查找物体|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
-| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义标签获取物体|
-| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个物体|
+| 获取当前物体使用资源的GUID|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`  |
+| 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`  |
+| 当前物体状态|
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)  |
+| 当前物体本地变换|
+| **[name](mw.GameObject.md#name)**(): `string`  |
+| 设置物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)  |
+| 获取当前物体同步状态|
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)  |
+| 设置父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`  |
+| 设置当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
+| 当前物体世界变换|
 :::
 
+
+### Methods <Score text="Methods" /> 
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| :-----|
+| 物体准备好后返回|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
+| 复制对象|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`  |
+| 删除对象|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`  |
+| 获取物体边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据gameObjectId查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据名称查找子物体|
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据路径查找子物体|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]  |
+| 获取子物体|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过名字查找所有的子物体|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
+| 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
+| 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
+| 获得当前物体下的所有脚本|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
+| 获取物体是否被显示|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| 设置物体是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| 通过路径异步查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
+| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过gameObjectId查找物体|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过名字查找物体|
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过名字查找物体|
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过自定义标签获取物体|
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过路径查找物体|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| 构造一个物体|
+:::
+
+
+## Properties
+___
 
 ### onImpulseEnter <Score text="onImpulseEnter" /> 
 
@@ -112,7 +181,8 @@ export default class ImpulseSample extends Script {
 
 发生冲量碰撞后的回调函数
 
-使用示例:创建一个名为"ImpulseOnEnterSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseOnEnterSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下: </p>
+
 ```ts
 @Component
 export default class ImpulseOnEnterSample extends Script {
@@ -128,27 +198,58 @@ export default class ImpulseOnEnterSample extends Script {
 ```
 
 ## Accessors
+___
 
 ### enable <Score text="enable" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **enable**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **enable**(`impulseEnabled`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取是否启用冲量
 
 
 #### Returns
 
-`boolean`
+| `boolean` | 是否启用冲量 |
+| :------ | :------ |
 
-是否启用冲量
 
-• `set` **enable**(`impulseEnabled`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置是否启用冲量，禁用状态下，不会应用冲量到物体上
 
 调用端自动广播
 
-使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下:
+
+#### Parameters
+
+| `impulseEnabled` `boolean` |  是否启用冲量的应用，设置为 false 后依然会有碰撞事件，但不会应用冲量 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果,代码如下: </p>
+
 ```ts
 @Component
 export default class ImpulseSample extends Script {
@@ -161,30 +262,39 @@ export default class ImpulseSample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `impulseEnabled` | `boolean` |  是否启用冲量的应用，设置为 false 后依然会有碰撞事件，但不会应用冲量 |
-
-
 ___
 
 ### impulseForceType <Score text="impulseForceType" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **impulseForceType**(): [`ImpulseForceType`](../enums/mw.ImpulseForceType.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **impulseForceType**(`impulseCollisionType`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取当前冲量力类型
 
 
 #### Returns
 
-[`ImpulseForceType`](../enums/mw.ImpulseForceType.md)
+| [`ImpulseForceType`](../enums/mw.ImpulseForceType.md) | 冲量力类型 |
+| :------ | :------ |
 
-冲量力类型
 
-• `set` **impulseForceType**(`impulseCollisionType`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置冲量力类型。使用示例详见属性 impulseRadialForce 和 impulseVector 中示例代码。
 
@@ -192,33 +302,67 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `impulseCollisionType` | [`ImpulseForceType`](../enums/mw.ImpulseForceType.md) |  冲量力类型 |
+| `impulseCollisionType` [`ImpulseForceType`](../enums/mw.ImpulseForceType.md) |  冲量力类型 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### impulseRadialForce <Score text="impulseRadialForce" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **impulseRadialForce**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **impulseRadialForce**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取径向力的冲量值
 
 
 #### Returns
 
-`number`
+| `number` | 径向力时的冲量值 |
+| :------ | :------ |
 
-径向力时的冲量值
 
-• `set` **impulseRadialForce**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置径向力的冲量值
 
 调用端自动广播
 
-使用示例:创建一个名为"ImpulseRadialForceSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被飞的距离相比默认情况时有变化，代码如下:
+
+#### Parameters
+
+| `value` | `number` |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseRadialForceSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被飞的距离相比默认情况时有变化，代码如下: </p>
+
 ```ts
 @Component
 export default class ImpulseRadialForceSample extends Script {
@@ -233,30 +377,39 @@ export default class ImpulseRadialForceSample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `value` | `number` |
-
-
 ___
 
 ### impulseType <Score text="impulseType" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **impulseType**(): [`ImpulseType`](../enums/mw.ImpulseType.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **impulseType**(`impulseType`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取冲量应用方式，绝对或相对
 
 
 #### Returns
 
-[`ImpulseType`](../enums/mw.ImpulseType.md)
+| [`ImpulseType`](../enums/mw.ImpulseType.md) | 当前冲量应用方式 |
+| :------ | :------ |
 
-当前冲量应用方式
 
-• `set` **impulseType**(`impulseType`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置冲量应用方式
 
@@ -268,7 +421,20 @@ ___
 
 调用端自动广播
 
-使用示例:创建一个名为"ImpulseTypeSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
+
+#### Parameters
+
+| `impulseType` [`ImpulseType`](../enums/mw.ImpulseType.md) |  冲量应用方式 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseTypeSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下: </p>
+
 ```ts
 @Component
 export default class ImpulseTypeSample extends Script {
@@ -282,36 +448,57 @@ export default class ImpulseTypeSample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `impulseType` | [`ImpulseType`](../enums/mw.ImpulseType.md) |  冲量应用方式 |
-
-
 ___
 
 ### impulseVector <Score text="impulseVector" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **impulseVector**(): [`Vector`](mw.Vector.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **impulseVector**(`vec`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取矢量力的冲量向量
 
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 当前冲量类型 |
+| :------ | :------ |
 
-当前冲量类型
 
-• `set` **impulseVector**(`vec`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置矢量力的冲量向量
 
 调用端自动广播
 
-使用示例:创建一个名为"ImpulseVectorSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下:
+
+#### Parameters
+
+| `vec` [`Vector`](mw.Vector.md) |  冲量力向量 |
+| :------ | :------ |
+
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ImpulseVectorSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个蹦床的效果，玩家走到蹦床上被弹起的高度有变化，代码如下: </p>
+
 ```ts
 @Component
 export default class ImpulseVectorSample extends Script {
@@ -327,13 +514,6 @@ export default class ImpulseVectorSample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vec` | [`Vector`](mw.Vector.md) |  冲量力向量 |
-
 
 
 ## Methods

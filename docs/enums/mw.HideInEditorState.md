@@ -4,11 +4,11 @@
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Display](mw.HideInEditorState.md#display)** = ``0`` <br> |
-| **[HideAll](mw.HideInEditorState.md#hideall)** = ``2`` <br> |
-| **[HideSelf](mw.HideInEditorState.md#hideself)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Display](mw.HideInEditorState.md#display)** = ``0``  |
+| :----- |
+| **[HideAll](mw.HideInEditorState.md#hideall)** = ``2`` |
+| **[HideSelf](mw.HideInEditorState.md#hideself)** = ``1`` |
 
 ## Enumeration Members
 

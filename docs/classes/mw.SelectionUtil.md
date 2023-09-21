@@ -2,15 +2,22 @@
 
 # SelectionUtil <Badge type="tip" text="Class" /> <Score text="SelectionUtil" />
 
-选择物体时，描边绘制相关功能
+<p class="content-big"> 描边绘制工具 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new SelectionUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[drawGameObjectSelectionBox](mw.SelectionUtil.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `Color`: [`LinearColor`](mw.LinearColor.md), `DurationTime?`: `number`): `void`  |
 | :-----|
-| **[drawGameObjectSelectionBox](mw.SelectionUtil.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `Color`: [`LinearColor`](mw.LinearColor.md), `DurationTime?`: `number`): `void` <br> 绘制物体选择框|
-| **[getGameObjectBySelectionBox](mw.SelectionUtil.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <br> 获取框选屏幕位置的物体|
-| **[setGlobalOutlineParams](mw.SelectionUtil.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void` <br> 设置全局描边参数|
+| 绘制物体选择框|
+| **[getGameObjectBySelectionBox](mw.SelectionUtil.md#getgameobjectbyselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `IsIncludeNonCollidingObjects?`: `boolean`, `IsUseObjectsBoundingBox?`: `boolean`): [`HitResult`](mw.HitResult.md)[]  |
+| 获取框选屏幕位置的物体|
+| **[setGlobalOutlineParams](mw.SelectionUtil.md#setglobaloutlineparams)**(`Width?`: `number`, `CoveredAlpha?`: `number`, `CoveredEdgeAlpha?`: `number`, `NotCoveredAlpha?`: `number`, `NotCoveredEdgeAlpha?`: `number`): `void`  |
+| 设置全局描边参数|
 
 ## Methods
 
@@ -20,8 +27,18 @@
 
 绘制物体选择框
 
+#### Parameters
 
-使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框
+| `StartPoint` [`Vector2`](mw.Vector2.md) | 鼠标开始位置 |
+| :------ | :------ |
+| `EndPoint` [`Vector2`](mw.Vector2.md) | 鼠标结束位置 |
+| `Color` [`LinearColor`](mw.LinearColor.md) | 选择框颜色 |
+| `DurationTime?` `number` | 显示时间 default:0.1 |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会绘制出选择框 </p>
+
 ```ts
 @Component
 export default class SelectionExample extends Script {
@@ -60,16 +77,6 @@ export default class SelectionExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `StartPoint` | [`Vector2`](mw.Vector2.md) | 鼠标开始位置 |
-| `EndPoint` | [`Vector2`](mw.Vector2.md) | 鼠标结束位置 |
-| `Color` | [`LinearColor`](mw.LinearColor.md) | 选择框颜色 |
-| `DurationTime?` | `number` | 显示时间 default:0.1 |
-
-
 ___
 
 ### getGameObjectBySelectionBox <Score text="getGameObjectBySelectionBox" /> 
@@ -78,8 +85,22 @@ ___
 
 获取框选屏幕位置的物体
 
+#### Parameters
 
-使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边
+| `StartPoint` [`Vector2`](mw.Vector2.md) | 鼠标开始位置 |
+| :------ | :------ |
+| `EndPoint` [`Vector2`](mw.Vector2.md) | 鼠标结束位置 |
+| `IsIncludeNonCollidingObjects?` `boolean` | 是否包含物体非碰撞组件 default:false |
+| `IsUseObjectsBoundingBox?` `boolean` | 是否使用物体包围盒 default:false |
+
+#### Returns
+
+| [`HitResult`](mw.HitResult.md)[] | 框选的物体 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为SelectionExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，鼠标左键框选物体，会将框选的物体描边 </p>
+
 ```ts
 @Component
 export default class SelectionExample extends Script {
@@ -154,21 +175,6 @@ i++) {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `StartPoint` | [`Vector2`](mw.Vector2.md) | 鼠标开始位置 |
-| `EndPoint` | [`Vector2`](mw.Vector2.md) | 鼠标结束位置 |
-| `IsIncludeNonCollidingObjects?` | `boolean` | 是否包含物体非碰撞组件 default:false |
-| `IsUseObjectsBoundingBox?` | `boolean` | 是否使用物体包围盒 default:false |
-
-#### Returns
-
-[`HitResult`](mw.HitResult.md)[]
-
-框选的物体
-
 ___
 
 ### setGlobalOutlineParams <Score text="setGlobalOutlineParams" /> 
@@ -177,14 +183,13 @@ ___
 
 设置全局描边参数
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Width?` | `number` | 描边宽度（0 ~ 4） default:2 |
-| `CoveredAlpha?` | `number` | 被遮挡部分高亮透明度（0 ~ 1） default:0 |
-| `CoveredEdgeAlpha?` | `number` | 被遮挡部分描边透明度（0 ~ 1） default:1 |
-| `NotCoveredAlpha?` | `number` | 未被遮挡部分高亮透明度（0 ~ 1） default:0 |
-| `NotCoveredEdgeAlpha?` | `number` | 未被遮挡部分描边透明度（0 ~ 1） default:1 |
+| `Width?` `number` | 描边宽度（0 ~ 4） default:2 |
+| :------ | :------ |
+| `CoveredAlpha?` `number` | 被遮挡部分高亮透明度（0 ~ 1） default:0 |
+| `CoveredEdgeAlpha?` `number` | 被遮挡部分描边透明度（0 ~ 1） default:1 |
+| `NotCoveredAlpha?` `number` | 未被遮挡部分高亮透明度（0 ~ 1） default:0 |
+| `NotCoveredEdgeAlpha?` `number` | 未被遮挡部分描边透明度（0 ~ 1） default:1 |
+
 

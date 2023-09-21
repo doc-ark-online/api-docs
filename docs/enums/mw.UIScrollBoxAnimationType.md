@@ -2,15 +2,15 @@
 
 # UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 
-滚动框动画类型
+<p class="content-big"> 滚动框动画类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ElasticAnimation](mw.UIScrollBoxAnimationType.md#elasticanimation)** = ``0`` <br> |
-| **[Limit](mw.UIScrollBoxAnimationType.md#limit)** = ``2`` <br> |
-| **[NoneLimit](mw.UIScrollBoxAnimationType.md#nonelimit)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ElasticAnimation](mw.UIScrollBoxAnimationType.md#elasticanimation)** = ``0``  |
+| :----- |
+| **[Limit](mw.UIScrollBoxAnimationType.md#limit)** = ``2`` |
+| **[NoneLimit](mw.UIScrollBoxAnimationType.md#nonelimit)** = ``1`` |
 
 ## Enumeration Members
 

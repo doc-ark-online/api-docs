@@ -2,14 +2,14 @@
 
 # HttpRequestType <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestType" />
 
-开发给用户用的Http请求类型枚举
+<p class="content-big"> 开发给用户用的Http请求类型枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Get](mw.HttpRequestType.md#get)** = ``0`` <br> |
-| **[Post](mw.HttpRequestType.md#post)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Get](mw.HttpRequestType.md#get)** = ``0``  |
+| :----- |
+| **[Post](mw.HttpRequestType.md#post)** = ``1`` |
 
 ## Enumeration Members
 

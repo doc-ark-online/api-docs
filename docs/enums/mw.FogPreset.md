@@ -2,17 +2,17 @@
 
 # FogPreset <Badge type="tip" text="Enumeration" /> <Score text="FogPreset" />
 
-环境雾预设枚举
+<p class="content-big"> 环境雾预设枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Default](mw.FogPreset.md#default)** = ``0`` <br> |
-| **[DesertFog](mw.FogPreset.md#desertfog)** = ``4`` <br> |
-| **[FarFog](mw.FogPreset.md#farfog)** = ``2`` <br> |
-| **[NearFog](mw.FogPreset.md#nearfog)** = ``1`` <br> |
-| **[UndergroundFog](mw.FogPreset.md#undergroundfog)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Default](mw.FogPreset.md#default)** = ``0``  |
+| :----- |
+| **[DesertFog](mw.FogPreset.md#desertfog)** = ``4`` |
+| **[FarFog](mw.FogPreset.md#farfog)** = ``2`` |
+| **[NearFog](mw.FogPreset.md#nearfog)** = ``1`` |
+| **[UndergroundFog](mw.FogPreset.md#undergroundfog)** = ``3`` |
 
 ## Enumeration Members
 

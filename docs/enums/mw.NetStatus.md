@@ -2,15 +2,15 @@
 
 # NetStatus <Badge type="tip" text="Enumeration" /> <Score text="NetStatus" />
 
-同步状态
+<p class="content-big"> 同步状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Client](mw.NetStatus.md#client)** = ``1`` <br> |
-| **[Server](mw.NetStatus.md#server)** = ``0`` <br> |
-| **[ServerAndClient](mw.NetStatus.md#serverandclient)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Client](mw.NetStatus.md#client)** = ``1``  |
+| :----- |
+| **[Server](mw.NetStatus.md#server)** = ``0`` |
+| **[ServerAndClient](mw.NetStatus.md#serverandclient)** = ``2`` |
 
 ## Enumeration Members
 

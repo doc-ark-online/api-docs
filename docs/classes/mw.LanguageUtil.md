@@ -2,15 +2,22 @@
 
 # LanguageUtil <Badge type="tip" text="Class" /> <Score text="LanguageUtil" />
 
-多语言工具类
+<p class="content-big"> 多语言工具 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new LanguageUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string`  |
 | :-----|
-| **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string` <br> 根据key获取翻译内容|
-| **[locText](mw.LanguageUtil.md#loctext)**(`textkey`: `string`): `string` <br> 多语言标记|
-| **[useLocalizedLanguage](mw.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean` <br> 游戏语言设置|
+| 根据key获取翻译内容|
+| **[locText](mw.LanguageUtil.md#loctext)**(`textkey`: `string`): `string`  |
+| 多语言标记|
+| **[useLocalizedLanguage](mw.LanguageUtil.md#uselocalizedlanguage)**(`type`: [`LanguageType`](../enums/mw.LanguageType.md)): `boolean`  |
+| 游戏语言设置|
 
 ## Methods
 
@@ -20,18 +27,16 @@
 
 根据key获取翻译内容
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `textkey` | `string` | 需要查找的翻译的key |
+| `textkey` `string` | 需要查找的翻译的key |
+| :------ | :------ |
 
 #### Returns
 
-`string`
+| `string` | 返回Key对应的当前语言环境的翻译内容 |
+| :------ | :------ |
 
-返回Key对应的当前语言环境的翻译内容
 
 ___
 
@@ -41,18 +46,16 @@ ___
 
 多语言标记
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `textkey` | `string` | 用户多语言配置表收集的Key |
+| `textkey` `string` | 用户多语言配置表收集的Key |
+| :------ | :------ |
 
 #### Returns
 
-`string`
+| `string` | 返回Key，此函数只用于做翻译文本收集标识。 |
+| :------ | :------ |
 
-返回Key，此函数只用于做翻译文本收集标识。
 
 ___
 
@@ -62,15 +65,13 @@ ___
 
 游戏语言设置
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | [`LanguageType`](../enums/mw.LanguageType.md) | 切换游戏语言种类 |
+| `type` [`LanguageType`](../enums/mw.LanguageType.md) | 切换游戏语言种类 |
+| :------ | :------ |
 
 #### Returns
 
-`boolean`
+| `boolean` | true修改成功 false修改失败 |
+| :------ | :------ |
 
-true修改成功 false修改失败

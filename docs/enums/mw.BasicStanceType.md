@@ -2,14 +2,14 @@
 
 # BasicStanceType <Badge type="tip" text="Enumeration" /> <Score text="BasicStanceType" />
 
-基础姿态风格
+<p class="content-big"> 基础姿态风格 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Cartoon](mw.BasicStanceType.md#cartoon)** = ``"30274"`` <br> |
-| **[SakuraSchool1](mw.BasicStanceType.md#sakuraschool1)** = ``"Default"`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Cartoon](mw.BasicStanceType.md#cartoon)** = ``"30274"``  |
+| :----- |
+| **[SakuraSchool1](mw.BasicStanceType.md#sakuraschool1)** = ``"Default"`` |
 
 ## Enumeration Members
 

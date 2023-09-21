@@ -2,14 +2,16 @@
 
 # GameObjectInfo <Badge type="tip" text="Interface" /> <Score text="GameObjectInfo" />
 
-构建物体的信息
+<p class="content-big"> 构建物体的信息 </p>
 
 ## Table of contents
 
-| Properties |
+### Properties <Score text="Properties" /> 
+| **[replicates](mw.GameObjectInfo.md#replicates)**: `boolean`  |
 | :-----|
-| **[replicates](mw.GameObjectInfo.md#replicates)**: `boolean` <br> 是否同步|
-| **[transform](mw.GameObjectInfo.md#transform)**: [`Transform`](../classes/mw.Transform.md) <br> transform|
+| 是否同步|
+| **[transform](mw.GameObjectInfo.md#transform)**: [`Transform`](../classes/mw.Transform.md)  |
+| transform|
 
 ## Properties
 

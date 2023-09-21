@@ -2,9 +2,12 @@
 
 # Sound <Badge type="tip" text="Class" /> <Score text="Sound" />
 
-音效组件
+<p class="content-big"> 音效 </p>
 
-使用示例:创建一个名为"SoundExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以听到音效的声音.代码如下:
+<p class="content-big"> ---------------------------------- </p>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"SoundExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以听到音效的声音.代码如下: </p>
+
 ```ts
 @Component
 export default class SoundExample extends Script {
@@ -59,87 +62,154 @@ export default class SoundExample extends Script {
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onFinish](mw.Sound.md#onfinish)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音结束事件|
-| **[onPause](mw.Sound.md#onpause)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音暂停事件|
-| **[onPlay](mw.Sound.md#onplay)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 声音开始事件|
+### Constructors <Score text="Constructors" /> 
 
 
 ::: details 点击查看继承
-| Properties |
-| :-----|
-| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\> <br> 物体销毁后事件回调|
+### Constructors <Score text="Constructors" /> 
+| **new GameObject**()  |
+| :----- |
 :::
 
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onFinish](mw.Sound.md#onfinish)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
-| **[attenuationDistanceModel](mw.Sound.md#attenuationdistancemodel)**(): [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md) <br> 获取音效的衰减方式|
-| **[attenuationShape](mw.Sound.md#attenuationshape)**(): [`AttenuationShape`](../enums/mw.AttenuationShape.md) <br> 获取音效的形状|
-| **[attenuationShapeExtents](mw.Sound.md#attenuationshapeextents)**(): [`Vector`](mw.Vector.md) <br> 获取音效形状范围|
-| **[falloffDistance](mw.Sound.md#falloffdistance)**(): `number` <br> 获取衰减距离|
-| **[isLoop](mw.Sound.md#isloop)**(): `boolean` <br> 获取是否循环播放|
-| **[isSpatialization](mw.Sound.md#isspatialization)**(): `boolean` <br> 获取音效空间化|
-| **[isUISound](mw.Sound.md#isuisound)**(): `boolean` <br> 获取是否是UI音效|
-| **[playState](mw.Sound.md#playstate)**(): [`SoundPlayState`](../enums/mw.SoundPlayState.md) <br> 获取音效播放状态|
-| **[timeLength](mw.Sound.md#timelength)**(): `number` <br> 获取音效时长|
-| **[timePosition](mw.Sound.md#timeposition)**(): `number` <br> 获取当前已播放时长|
-| **[volume](mw.Sound.md#volume)**(): `number` <br> 获取音量比例|
+| 声音结束事件|
+| **[onPause](mw.Sound.md#onpause)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| 声音暂停事件|
+| **[onPlay](mw.Sound.md#onplay)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| 声音开始事件|
 
 
 ::: details 点击查看继承
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
-| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string` <br> 获取物体的唯一标识（唯一标识一个对象的字符串）。|
-| **[isReady](mw.GameObject.md#isready)**(): `boolean` <br> 当前物体状态|
-| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体本地变换|
-| **[name](mw.GameObject.md#name)**(): `string` <br> 返回当前物体名称|
-| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md) <br> 获取当前物体同步状态|
-| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md) <br> 获取当前父物体|
-| **[tag](mw.GameObject.md#tag)**(): `string` <br> 获取当前物体的标签|
-| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md) <br> 当前物体世界变换|
+| 物体销毁后事件回调|
 :::
 
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[attenuationDistanceModel](mw.Sound.md#attenuationdistancemodel)**(): [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md)  |
 | :-----|
-| **[pause](mw.Sound.md#pause)**(`bPause?`: `boolean`): `void` <br> 暂停播放音效|
-| **[play](mw.Sound.md#play)**(`startTime?`: `number`, `onSuccess?`: () => `void`): `void` <br> 播放音效|
-| **[setSoundAsset](mw.Sound.md#setsoundasset)**(`assetGUID`: `string`): `void` <br> 通过GUID设置音效|
-| **[stop](mw.Sound.md#stop)**(): `void` <br> 停止播放音效|
+| 设置音效的衰减方式|
+| **[attenuationShape](mw.Sound.md#attenuationshape)**(): [`AttenuationShape`](../enums/mw.AttenuationShape.md)  |
+| 设置音效的形状|
+| **[attenuationShapeExtents](mw.Sound.md#attenuationshapeextents)**(): [`Vector`](mw.Vector.md)  |
+| 设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。|
+| **[falloffDistance](mw.Sound.md#falloffdistance)**(): `number`  |
+| 设置衰减距离|
+| **[isLoop](mw.Sound.md#isloop)**(): `boolean`  |
+| 设置循环播放|
+| **[isSpatialization](mw.Sound.md#isspatialization)**(): `boolean`  |
+| 设置音效空间化，若是，则开启空间传播衰减|
+| **[isUISound](mw.Sound.md#isuisound)**(): `boolean`  |
+| 设置是否是UI音效，注意：UI音效不依赖游戏逻辑|
+| **[playState](mw.Sound.md#playstate)**(): [`SoundPlayState`](../enums/mw.SoundPlayState.md)  |
+| 获取音效播放状态|
+| **[timeLength](mw.Sound.md#timelength)**(): `number`  |
+| 获取音效时长|
+| **[timePosition](mw.Sound.md#timeposition)**(): `number`  |
+| 获取当前已播放时长|
+| **[volume](mw.Sound.md#volume)**(): `number`  |
+| 设置音量 0~1|
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[assetId](mw.GameObject.md#assetid)**(): `string`  |
 | :-----|
-| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 物体准备好后返回|
-| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md) <br> 复制对象|
-| **[destroy](mw.GameObject.md#destroy)**(): `void` <br> 删除对象|
-| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取物体包围盒大小|
-| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void` <br> 获取物体边界|
-| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据gameObjectId查找子物体|
-| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据名称查找子物体|
-| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 根据路径查找子物体|
-| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[] <br> 获取子物体|
-| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
-| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找所有的子物体|
-| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
-| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md) <br> 获得当前物体下的指定脚本|
-| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[] <br> 获得当前物体下的所有脚本|
-| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean` <br> 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void` <br> 设置物体是否被显示|
-| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
-| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\> <br> 通过路径异步查找物体|
-| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步构造一个物体，资源不存在会先去下载资源再去创建|
-| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过gameObjectId查找物体|
-| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过名字查找物体|
-| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过名字查找物体|
-| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[] <br> 通过自定义标签获取物体|
-| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md) <br> 通过路径查找物体|
-| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 构造一个物体|
+| 获取当前物体使用资源的GUID|
+| **[gameObjectId](mw.GameObject.md#gameobjectid)**(): `string`  |
+| 获取物体的唯一标识（唯一标识一个对象的字符串）。|
+| **[isReady](mw.GameObject.md#isready)**(): `boolean`  |
+| 当前物体状态|
+| **[localTransform](mw.GameObject.md#localtransform)**(): [`Transform`](mw.Transform.md)  |
+| 当前物体本地变换|
+| **[name](mw.GameObject.md#name)**(): `string`  |
+| 设置物体名称|
+| **[netStatus](mw.GameObject.md#netstatus)**(): [`NetStatus`](../enums/mw.NetStatus.md)  |
+| 获取当前物体同步状态|
+| **[parent](mw.GameObject.md#parent)**(): [`GameObject`](mw.GameObject.md)  |
+| 设置父物体|
+| **[tag](mw.GameObject.md#tag)**(): `string`  |
+| 设置当前物体的标签|
+| **[worldTransform](mw.GameObject.md#worldtransform)**(): [`Transform`](mw.Transform.md)  |
+| 当前物体世界变换|
 :::
 
+
+### Methods <Score text="Methods" /> 
+| **[pause](mw.Sound.md#pause)**(`bPause?`: `boolean`): `void`  |
+| :-----|
+| 暂停播放音效|
+| **[play](mw.Sound.md#play)**(`startTime?`: `number`, `onSuccess?`: () => `void`): `void`  |
+| 播放音效|
+| **[setSoundAsset](mw.Sound.md#setsoundasset)**(`assetGUID`: `string`): `void`  |
+| 通过GUID设置音效|
+| **[stop](mw.Sound.md#stop)**(): `void`  |
+| 停止播放音效|
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[asyncReady](mw.GameObject.md#asyncready)**(): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| :-----|
+| 物体准备好后返回|
+| **[clone](mw.GameObject.md#clone)**(`gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): [`GameObject`](mw.GameObject.md)  |
+| 复制对象|
+| **[destroy](mw.GameObject.md#destroy)**(): `void`  |
+| 删除对象|
+| **[getBoundingBoxExtent](mw.GameObject.md#getboundingboxextent)**(`nonColliding?`: `boolean`, `includeFromChild?`: `boolean`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获取物体包围盒大小|
+| **[getBounds](mw.GameObject.md#getbounds)**(`onlyCollidingComponents`: `boolean`, `originOuter`: [`Vector`](mw.Vector.md), `boxExtentOuter`: [`Vector`](mw.Vector.md), `includeFromChild?`: `boolean`): `void`  |
+| 获取物体边界|
+| **[getChildByGameObjectId](mw.GameObject.md#getchildbygameobjectid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据gameObjectId查找子物体|
+| **[getChildByName](mw.GameObject.md#getchildbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据名称查找子物体|
+| **[getChildByPath](mw.GameObject.md#getchildbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 根据路径查找子物体|
+| **[getChildren](mw.GameObject.md#getchildren)**(): [`GameObject`](mw.GameObject.md)[]  |
+| 获取子物体|
+| **[getChildrenBoundingBoxCenter](mw.GameObject.md#getchildrenboundingboxcenter)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获取所有子对象包围盒中心点(不包含父对象,父对象不可用返回[0,0,0])|
+| **[getChildrenByName](mw.GameObject.md#getchildrenbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过名字查找所有的子物体|
+| **[getScript](mw.GameObject.md#getscript)**(`id`: `string`): [`Script`](mw.Script.md)  |
+| 获得当前物体下的指定脚本|
+| **[getScriptByName](mw.GameObject.md#getscriptbyname)**(`name`: `string`): [`Script`](mw.Script.md)  |
+| 获得当前物体下的指定脚本|
+| **[getScripts](mw.GameObject.md#getscripts)**(): [`Script`](mw.Script.md)[]  |
+| 获得当前物体下的所有脚本|
+| **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
+| 获取物体是否被显示|
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| 设置物体是否被显示|
+| **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
+| **[asyncGetGameObjectByPath](mw.GameObject.md#asyncgetgameobjectbypath)**(`path`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
+| 通过路径异步查找物体|
+| **[asyncSpawn](mw.GameObject.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
+| 异步构造一个物体，资源不存在会先去下载资源再去创建|
+| **[findGameObjectById](mw.GameObject.md#findgameobjectbyid)**(`gameObjectId`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过gameObjectId查找物体|
+| **[findGameObjectByName](mw.GameObject.md#findgameobjectbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过名字查找物体|
+| **[findGameObjectsByName](mw.GameObject.md#findgameobjectsbyname)**(`name`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过名字查找物体|
+| **[findGameObjectsByTag](mw.GameObject.md#findgameobjectsbytag)**(`tag`: `string`): [`GameObject`](mw.GameObject.md)[]  |
+| 通过自定义标签获取物体|
+| **[getGameObjectByPath](mw.GameObject.md#getgameobjectbypath)**(`path`: `string`): [`GameObject`](mw.GameObject.md)  |
+| 通过路径查找物体|
+| **[spawn](mw.GameObject.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`assetId`: `string`, `gameObjectInfo?`: [`GameObjectInfo`](../interfaces/mw.GameObjectInfo.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| 构造一个物体|
+:::
+
+
+## Properties
+___
 
 ### onFinish <Score text="onFinish" /> 
 
@@ -164,21 +234,39 @@ ___
 声音开始事件
 
 ## Accessors
+___
 
 ### attenuationDistanceModel <Score text="attenuationDistanceModel" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **attenuationDistanceModel**(): [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **attenuationDistanceModel**(`model`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效的衰减方式
 
 
 #### Returns
 
-[`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md)
+| [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md) | 衰减方式 |
+| :------ | :------ |
 
-衰减方式
 
-• `set` **attenuationDistanceModel**(`model`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置音效的衰减方式
 
@@ -186,27 +274,48 @@ param model usage:衰减方式
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `model` | [`AttenuationDistanceModel`](../enums/mw.AttenuationDistanceModel.md) |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### attenuationShape <Score text="attenuationShape" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **attenuationShape**(): [`AttenuationShape`](../enums/mw.AttenuationShape.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **attenuationShape**(`shape`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效的形状
 
 
 #### Returns
 
-[`AttenuationShape`](../enums/mw.AttenuationShape.md)
+| [`AttenuationShape`](../enums/mw.AttenuationShape.md) | 形状 |
+| :------ | :------ |
 
-形状
 
-• `set` **attenuationShape**(`shape`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置音效的形状
 
@@ -214,27 +323,48 @@ param model usage:形状
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `shape` | [`AttenuationShape`](../enums/mw.AttenuationShape.md) |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### attenuationShapeExtents <Score text="attenuationShapeExtents" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **attenuationShapeExtents**(): [`Vector`](mw.Vector.md) <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **attenuationShapeExtents**(`ShapeExtents`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效形状范围
 
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 音效范围 |
+| :------ | :------ |
 
-音效范围
 
-• `set` **attenuationShapeExtents**(`ShapeExtents`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置音效形状范围 用于衰减形状的尺寸，每个形状的值解释不同。
 球体 X是球体半径，Y和Z未使用
@@ -245,189 +375,337 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ShapeExtents` | [`Vector`](mw.Vector.md) | 设置形状范围 |
+| `ShapeExtents` [`Vector`](mw.Vector.md) | 设置形状范围 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### falloffDistance <Score text="falloffDistance" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **falloffDistance**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **falloffDistance**(`fallOffDistance`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取衰减距离
 
 
 #### Returns
 
-`number`
+| `number` | 距离 |
+| :------ | :------ |
 
-距离
 
-• `set` **falloffDistance**(`fallOffDistance`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置衰减距离
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fallOffDistance` | `number` | 距离 |
+| `fallOffDistance` `number` | 距离 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### isLoop <Score text="isLoop" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **isLoop**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **isLoop**(`Loop`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取是否循环播放
 
 
 #### Returns
 
-`boolean`
+| `boolean` | 是否循环 |
+| :------ | :------ |
 
-是否循环
 
-• `set` **isLoop**(`Loop`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置循环播放
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Loop` | `boolean` | 设置是否开启循环 |
+| `Loop` `boolean` | 设置是否开启循环 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### isSpatialization <Score text="isSpatialization" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **isSpatialization**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **isSpatialization**(`spatialization`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效空间化
 
 
 #### Returns
 
-`boolean`
+| `boolean` | 是否开启音效空间化 |
+| :------ | :------ |
 
-是否开启音效空间化
 
-• `set` **isSpatialization**(`spatialization`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置音效空间化，若是，则开启空间传播衰减
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `spatialization` | `boolean` | 设置开启音效空间化 |
+| `spatialization` `boolean` | 设置开启音效空间化 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### isUISound <Score text="isUISound" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **isUISound**(): `boolean` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **isUISound**(`isUISound`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取是否是UI音效
 
 
 #### Returns
 
-`boolean`
+| `boolean` | boolean |
+| :------ | :------ |
 
-boolean
 
-• `set` **isUISound**(`isUISound`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置是否是UI音效，注意：UI音效不依赖游戏逻辑
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isUISound` | `boolean` | 是否用于UI |
+| `isUISound` `boolean` | 是否用于UI |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### playState <Score text="playState" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **playState**(): [`SoundPlayState`](../enums/mw.SoundPlayState.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效播放状态
 
 
 #### Returns
 
-[`SoundPlayState`](../enums/mw.SoundPlayState.md)
+| [`SoundPlayState`](../enums/mw.SoundPlayState.md) | 是否正在播放 |
+| :------ | :------ |
 
-是否正在播放
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### timeLength <Score text="timeLength" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **timeLength**(): `number` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音效时长
 
 
 #### Returns
 
-`number`
+| `number` | 音效时长(ms) |
+| :------ | :------ |
 
-音效时长(ms)
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### timePosition <Score text="timePosition" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **timePosition**(): `number` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取当前已播放时长
 
 
 #### Returns
 
-`number`
+| `number` | 已播放时长 |
+| :------ | :------ |
 
-已播放时长
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### volume <Score text="volume" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **volume**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `set` **volume**(`volume`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取音量比例
 
 
 #### Returns
 
-`number`
+| `number` | 音量比例 |
+| :------ | :------ |
 
-音量比例
 
-• `set` **volume**(`volume`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置音量 0~1
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `volume` | `number` | 音量比例 |
+| `volume` `number` | 音量比例 |
+| :------ | :------ |
+
+
+</td>
+</tr></tbody>
+</table>
 
 
 
@@ -440,12 +718,11 @@ ___
 
 暂停播放音效
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `bPause?` | `boolean` | 设置暂停状态 default:true |
+| `bPause?` `boolean` | 设置暂停状态 default:true |
+| :------ | :------ |
+
 
 
 ___
@@ -456,13 +733,12 @@ ___
 
 播放音效
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `startTime?` | `number` | 设置起始播放时间 default:0 |
-| `onSuccess?` | () => `void` | 播放完成后回调 default: null |
+| `startTime?` `number` | 设置起始播放时间 default:0 |
+| :------ | :------ |
+| `onSuccess?` () => `void` | 播放完成后回调 default: null |
+
 
 
 ___
@@ -473,12 +749,11 @@ ___
 
 通过GUID设置音效
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `assetGUID` | `string` | 音效资源ID |
+| `assetGUID` `string` | 音效资源ID |
+| :------ | :------ |
+
 
 
 ___

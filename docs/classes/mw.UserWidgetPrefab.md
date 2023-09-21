@@ -2,7 +2,7 @@
 
 # UserWidgetPrefab <Badge type="tip" text="Class" /> <Score text="UserWidgetPrefab" />
 
-ui预制体
+<p class="content-big"> ui预制体 </p>
 
 ## Hierarchy
 
@@ -12,30 +12,38 @@ ui预制体
 
 ## Table of contents
 
-| Accessors |
-| :-----|
+### Constructors <Score text="Constructors" /> 
+
+### Accessors <Score text="Accessors" /> 
 
 
 ::: details 点击查看继承
-| Accessors |
+### Accessors <Score text="Accessors" /> 
+| **[focusable](mw.UserWidget.md#focusable)**(): `boolean`  |
 | :-----|
-| **[focusable](mw.UserWidget.md#focusable)**(): `boolean` <br> 获取是否响应键盘焦点事件|
-| **[rootContent](mw.UserWidget.md#rootcontent)**(): [`Canvas`](mw.Canvas.md) <br> 获取根Canvas|
+| 设置是否响应键盘焦点事件|
+| **[rootContent](mw.UserWidget.md#rootcontent)**(): [`Canvas`](mw.Canvas.md)  |
+| 设置UI的根Canvas|
 :::
 
 
-| Methods |
-| :-----|
+### Methods <Score text="Methods" /> 
 
 
 ::: details 点击查看继承
-| Methods |
+### Methods <Score text="Methods" /> 
+| **[addToViewport](mw.UserWidget.md#addtoviewport)**(`zOrder`: `number`): `void`  |
 | :-----|
-| **[addToViewport](mw.UserWidget.md#addtoviewport)**(`zOrder`: `number`): `void` <br> 添加到屏幕上|
-| **[findChildByPath](mw.UserWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](mw.Widget.md) <br> 通过相对路径查找节点|
-| **[removeRootContent](mw.UserWidget.md#removerootcontent)**(): `void` <br> 移除根Canvas,会销毁根Canvas，无法再次使用|
-| **[newObject](mw.UserWidget.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md)): [`UserWidget`](mw.UserWidget.md) <br> 创建 UserWidget 控件|
+| 添加到屏幕上|
+| **[findChildByPath](mw.UserWidget.md#findchildbypath)**(`inPath`: `string`): [`Widget`](mw.Widget.md)  |
+| 通过相对路径查找节点|
+| **[removeRootContent](mw.UserWidget.md#removerootcontent)**(): `void`  |
+| 移除根Canvas,会销毁根Canvas，无法再次使用|
+| **[newObject](mw.UserWidget.md#newobject)**(`parent?`: [`Canvas`](mw.Canvas.md)): [`UserWidget`](mw.UserWidget.md)  |
+| 创建 UserWidget 控件|
 :::
 
+
+## Accessors
 
 ## Methods

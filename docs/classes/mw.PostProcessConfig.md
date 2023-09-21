@@ -2,17 +2,26 @@
 
 # PostProcessConfig <Badge type="tip" text="Class" /> <Score text="PostProcessConfig" />
 
-后处理对象属性配置
+<p class="content-big"> 后处理对象属性配置 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new PostProcessConfig**()  |
+| :----- |
+
+### Properties <Score text="Properties" /> 
+| **[bloomIntensity](mw.PostProcessConfig.md#bloomintensity)**: `number`  |
 | :-----|
-| **[bloomIntensity](mw.PostProcessConfig.md#bloomintensity)**: `number` <br> 全局泛光|
-| **[globalContrast](mw.PostProcessConfig.md#globalcontrast)**: `number` <br> 全局对比度|
-| **[globalSaturation](mw.PostProcessConfig.md#globalsaturation)**: `number` <br> 全局饱和度|
-| **[lutBlend](mw.PostProcessConfig.md#lutblend)**: `number` <br> LUT查找表百分比|
-| **[lutTextureID](mw.PostProcessConfig.md#luttextureid)**: `number` <br> LUT查找表百分比|
+| 全局泛光|
+| **[globalContrast](mw.PostProcessConfig.md#globalcontrast)**: `number`  |
+| 全局对比度|
+| **[globalSaturation](mw.PostProcessConfig.md#globalsaturation)**: `number`  |
+| 全局饱和度|
+| **[lutBlend](mw.PostProcessConfig.md#lutblend)**: `number`  |
+| LUT查找表百分比|
+| **[lutTextureID](mw.PostProcessConfig.md#luttextureid)**: `number`  |
+| LUT查找表百分比|
 
 ## Properties
 

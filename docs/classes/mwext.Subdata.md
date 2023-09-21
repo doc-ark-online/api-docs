@@ -2,26 +2,38 @@
 
 # Subdata <Badge type="tip" text="Class" /> <Score text="Subdata" />
 
-数据控制类的基类
+<p class="content-big"> 数据控制类的基类 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md) <br> 数据变化的委托|
+### Constructors <Score text="Constructors" /> 
+| **new Subdata**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md)  |
 | :-----|
-| **[currentVersion](mwext.Subdata.md#currentversion)**(): `number` <br> 当前数据版本号，和version配合使用，可实现数据升级|
-| **[version](mwext.Subdata.md#version)**(): `number` <br> 数据版本号，数据有变化需要重写，和currentVersion配合使用，可实现数据升级|
+| 数据变化的委托|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[currentVersion](mwext.Subdata.md#currentversion)**(): `number`  |
 | :-----|
-| **[getSavedProperty](mwext.Subdata.md#getsavedproperty)**<`T`\>(`propertyName`: `string`): `T` <br> 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)|
-| **[initDefaultData](mwext.Subdata.md#initdefaultdata)**(): `void` <br> 初始化默认数据，需要请复写|
-| **[onDataInit](mwext.Subdata.md#ondatainit)**(): `void` <br> 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级|
-| **[save](mwext.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](mwext.Subdata.md) <br> 保存数据|
-| **[syncToClient](mwext.Subdata.md#synctoclient)**(): [`Subdata`](mwext.Subdata.md) <br> 向客户端同步数据|
+| 当前数据版本号，和version配合使用，可实现数据升级|
+| **[version](mwext.Subdata.md#version)**(): `number`  |
+| 数据版本号，数据有变化需要重写，和currentVersion配合使用，可实现数据升级|
+
+### Methods <Score text="Methods" /> 
+| **[getSavedProperty](mwext.Subdata.md#getsavedproperty)**<`T`: \>(`propertyName`: `string`): `T`:   |
+| :-----|
+| 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)|
+| **[initDefaultData](mwext.Subdata.md#initdefaultdata)**(): `void`  |
+| 初始化默认数据，需要请复写|
+| **[onDataInit](mwext.Subdata.md#ondatainit)**(): `void`  |
+| 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级|
+| **[save](mwext.Subdata.md#save)**(`syncToClient`: `boolean`): [`Subdata`](mwext.Subdata.md)  |
+| 保存数据|
+| **[syncToClient](mwext.Subdata.md#synctoclient)**(): [`Subdata`](mwext.Subdata.md)  |
+| 向客户端同步数据|
 
 ## Properties
 
@@ -35,36 +47,74 @@
 
 ### currentVersion <Score text="currentVersion" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **currentVersion**(): `number`
+
+</th>
+<th style="text-align: left">
+
+• `Protected` `set` **currentVersion**(`value`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 当前数据版本号，和version配合使用，可实现数据升级
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
 
-• `Protected` `set` **currentVersion**(`value`): `void`
+
+</td>
+<td style="text-align: left">
+
 
 当前数据版本号，和version配合使用，可实现数据升级
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `value` | `number` |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### version <Score text="version" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **version**(): `number`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 数据版本号，数据有变化需要重写，和currentVersion配合使用，可实现数据升级
 
 #### Returns
 
-`number`
+</td>
+</tr></tbody>
+</table>
+
+| `number` |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -74,24 +124,22 @@ ___
 
 通过属性名获取存储的属性值(用作数据升级，读取之前已经存储的数据)
 
+#### Parameters
+
+| `propertyName` `string` |  属性名 |
+| :------ | :------ |
+
+#### Returns
+
+| `T` | 属性值 |
+| :------ | :------ |
+
 
 #### Type parameters
 
 | Name |
 | :------ |
 | `T` |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `propertyName` | `string` |  属性名 |
-
-#### Returns
-
-`T`
-
-属性值
 
 ___
 
@@ -111,12 +159,12 @@ ___
 
 数据初始化完成调用，需要请复写，可在这个方法中实现数据升级
 
+
 ::: warning Precautions
 
 这个方法调用完成后，你需要保证currentVersion和version是相等的
 
 :::
-
 
 
 ___
@@ -127,18 +175,16 @@ ___
 
 保存数据
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `syncToClient` | `boolean` |  是否同步给客户端 |
+| `syncToClient` `boolean` |  是否同步给客户端 |
+| :------ | :------ |
 
 #### Returns
 
-[`Subdata`](mwext.Subdata.md)
+| [`Subdata`](mwext.Subdata.md) | 自身 |
+| :------ | :------ |
 
-自身
 
 ___
 
@@ -148,9 +194,8 @@ ___
 
 向客户端同步数据
 
-
 #### Returns
 
-[`Subdata`](mwext.Subdata.md)
+| [`Subdata`](mwext.Subdata.md) | 自身 |
+| :------ | :------ |
 
-自身

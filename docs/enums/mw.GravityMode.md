@@ -2,17 +2,17 @@
 
 # GravityMode <Badge type="tip" text="Enumeration" /> <Score text="GravityMode" />
 
-重力模式
+<p class="content-big"> 重力模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Action](mw.GravityMode.md#action)** = ``3`` <br> |
-| **[Classic](mw.GravityMode.md#classic)** = ``1`` <br> |
-| **[Custom](mw.GravityMode.md#custom)** = ``4`` <br> |
-| **[Default](mw.GravityMode.md#default)** = ``0`` <br> |
-| **[Realistic](mw.GravityMode.md#realistic)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Action](mw.GravityMode.md#action)** = ``3``  |
+| :----- |
+| **[Classic](mw.GravityMode.md#classic)** = ``1`` |
+| **[Custom](mw.GravityMode.md#custom)** = ``4`` |
+| **[Default](mw.GravityMode.md#default)** = ``0`` |
+| **[Realistic](mw.GravityMode.md#realistic)** = ``2`` |
 
 ## Enumeration Members
 

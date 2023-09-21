@@ -2,16 +2,16 @@
 
 # TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 
-输入提交模式
+<p class="content-big"> 输入提交模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Default](mw.TextCommit.md#default)** = ``0`` <br> |
-| **[OnCleared](mw.TextCommit.md#oncleared)** = ``3`` <br> |
-| **[OnEnter](mw.TextCommit.md#onenter)** = ``1`` <br> |
-| **[OnUserMovedFocus](mw.TextCommit.md#onusermovedfocus)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Default](mw.TextCommit.md#default)** = ``0``  |
+| :----- |
+| **[OnCleared](mw.TextCommit.md#oncleared)** = ``3`` |
+| **[OnEnter](mw.TextCommit.md#onenter)** = ``1`` |
+| **[OnUserMovedFocus](mw.TextCommit.md#onusermovedfocus)** = ``2`` |
 
 ## Enumeration Members
 

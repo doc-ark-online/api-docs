@@ -2,18 +2,19 @@
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
-动画模式
+<p class="content-big"> 动画模式 </p>
 
-使用示例:
+<p style="font-size: 14px;"> 使用示例: </p>
+
 ```ts
 ```
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Auto](mw.AnimationMode.md#auto)** = ``0`` <br> |
-| **[Custom](mw.AnimationMode.md#custom)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Auto](mw.AnimationMode.md#auto)** = ``0``  |
+| :----- |
+| **[Custom](mw.AnimationMode.md#custom)** = ``1`` |
 
 ## Enumeration Members
 

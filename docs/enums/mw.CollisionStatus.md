@@ -2,16 +2,16 @@
 
 # CollisionStatus <Badge type="tip" text="Enumeration" /> <Score text="CollisionStatus" />
 
-碰撞属性状态
+<p class="content-big"> 碰撞属性状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Off](mw.CollisionStatus.md#off)** = ``2`` <br> |
-| **[On](mw.CollisionStatus.md#on)** = ``1`` <br> |
-| **[QueryCollisionOnly](mw.CollisionStatus.md#querycollisiononly)** = ``4`` <br> |
-| **[QueryOnly](mw.CollisionStatus.md#queryonly)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Off](mw.CollisionStatus.md#off)** = ``2``  |
+| :----- |
+| **[On](mw.CollisionStatus.md#on)** = ``1`` |
+| **[QueryCollisionOnly](mw.CollisionStatus.md#querycollisiononly)** = ``4`` |
+| **[QueryOnly](mw.CollisionStatus.md#queryonly)** = ``3`` |
 
 ## Enumeration Members
 

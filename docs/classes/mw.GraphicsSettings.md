@@ -2,9 +2,10 @@
 
 # GraphicsSettings <Badge type="tip" text="Class" /> <Score text="GraphicsSettings" />
 
-图片画质设置
+<p class="content-big"> 图片画质设置 </p>
 
-使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下： </p>
+
 ```ts
 @Component
 export default class ClassExample extends Script {
@@ -34,15 +35,26 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new GraphicsSettings**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
 | :-----|
-| **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <br> 获取当前CPU画质等级|
-| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <br> 获取默认CPU画质等级|
-| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <br> 获取默认GPU画质等级|
-| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) <br> 获取当前GPU画质等级|
-| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <br> 设置当前CPU画质等级|
-| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <br> 设置当前GPU画质等级|
-| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void` <br> 设置CPU和GPU的画质等级|
+| 获取当前CPU画质等级|
+| **[getDefaultCPULevel](mw.GraphicsSettings.md#getdefaultcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| 获取默认CPU画质等级|
+| **[getDefaultGPULevel](mw.GraphicsSettings.md#getdefaultgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| 获取默认GPU画质等级|
+| **[getGPULevel](mw.GraphicsSettings.md#getgpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
+| 获取当前GPU画质等级|
+| **[setGraphicsCPULevel](mw.GraphicsSettings.md#setgraphicscpulevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| 设置当前CPU画质等级|
+| **[setGraphicsGPULevel](mw.GraphicsSettings.md#setgraphicsgpulevel)**(`GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| 设置当前GPU画质等级|
+| **[setGraphicsLevel](mw.GraphicsSettings.md#setgraphicslevel)**(`CPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md), `GPULevel`: [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)): `void`  |
+| 设置CPU和GPU的画质等级|
 
 ## Methods
 
@@ -52,12 +64,11 @@ export default class ClassExample extends Script {
 
 获取当前CPU画质等级
 
-
 #### Returns
 
-[`GraphicsLevel`](../enums/mw.GraphicsLevel.md)
+| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
 
-画质等级。如果返回值为undefined，请检查是否在客户端调用
 
 ___
 
@@ -67,12 +78,11 @@ ___
 
 获取默认CPU画质等级
 
-
 #### Returns
 
-[`GraphicsLevel`](../enums/mw.GraphicsLevel.md)
+| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
 
-默认画质等级。如果返回值为undefined，请检查是否在客户端调用
 
 ___
 
@@ -82,12 +92,11 @@ ___
 
 获取默认GPU画质等级
 
-
 #### Returns
 
-[`GraphicsLevel`](../enums/mw.GraphicsLevel.md)
+| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 默认画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
 
-默认画质等级。如果返回值为undefined，请检查是否在客户端调用
 
 ___
 
@@ -97,12 +106,11 @@ ___
 
 获取当前GPU画质等级
 
-
 #### Returns
 
-[`GraphicsLevel`](../enums/mw.GraphicsLevel.md)
+| [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | 画质等级。如果返回值为undefined，请检查是否在客户端调用 |
+| :------ | :------ |
 
-画质等级。如果返回值为undefined，请检查是否在客户端调用
 
 ___
 
@@ -112,12 +120,11 @@ ___
 
 设置当前CPU画质等级
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `CPULevel` | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
+| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
+| :------ | :------ |
+
 
 
 ___
@@ -128,12 +135,11 @@ ___
 
 设置当前GPU画质等级
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GPULevel` | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
+| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
+| :------ | :------ |
+
 
 
 ___
@@ -144,17 +150,14 @@ ___
 
 设置CPU和GPU的画质等级
 
+#### Parameters
+
+| `CPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
+| :------ | :------ |
+| `GPULevel` [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
+
+
 
 ::: warning Precautions
 
 移动端设置的值不可超过Type.GraphicsLevel.Cinematic2,设置的值超过会被强制转为Type.GraphicsLevel.Cinematic2
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `CPULevel` | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | CPU画质等级 |
-| `GPULevel` | [`GraphicsLevel`](../enums/mw.GraphicsLevel.md) | GPU画质等级 |
-

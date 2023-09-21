@@ -2,29 +2,50 @@
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
-事件监听器
+<p class="content-big"> 事件监听器 </p>
 
 ## Table of contents
 
-| Accessors |
-| :-----|
-| **[isConnected](mw.EventListener.md#isconnected)**(): `boolean` <br> 用来判断事件是否有效|
+### Constructors <Score text="Constructors" /> 
+| **new EventListener**()  |
+| :----- |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[isConnected](mw.EventListener.md#isconnected)**(): `boolean`  |
 | :-----|
-| **[disconnect](mw.EventListener.md#disconnect)**(): `void` <br> 卸载事件|
+| 用来判断事件是否有效|
+
+### Methods <Score text="Methods" /> 
+| **[disconnect](mw.EventListener.md#disconnect)**(): `void`  |
+| :-----|
+| 卸载事件|
 
 ## Accessors
 
 ### isConnected <Score text="isConnected" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **isConnected**(): `boolean`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 用来判断事件是否有效
 
 #### Returns
 
-`boolean`
+</td>
+</tr></tbody>
+</table>
+
+| `boolean` |  |
+| :------ | :------ |
 
 ## Methods
 

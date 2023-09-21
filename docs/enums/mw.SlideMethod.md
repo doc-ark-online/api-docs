@@ -2,14 +2,14 @@
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 
-进度条滑动的方式
+<p class="content-big"> 进度条滑动的方式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[PressOrSlide](mw.SlideMethod.md#pressorslide)** = ``0`` <br> |
-| **[Slide](mw.SlideMethod.md#slide)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[PressOrSlide](mw.SlideMethod.md#pressorslide)** = ``0``  |
+| :----- |
+| **[Slide](mw.SlideMethod.md#slide)** = ``1`` |
 
 ## Enumeration Members
 

@@ -2,16 +2,16 @@
 
 # ButtonClickMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonClickMethod" />
 
-按钮点击响应规则
+<p class="content-big"> 按钮点击响应规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[DownAndUp](mw.ButtonClickMethod.md#downandup)** = ``0`` <br> |
-| **[MouseDown](mw.ButtonClickMethod.md#mousedown)** = ``1`` <br> |
-| **[MouseUp](mw.ButtonClickMethod.md#mouseup)** = ``2`` <br> |
-| **[PreciseClick](mw.ButtonClickMethod.md#preciseclick)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[DownAndUp](mw.ButtonClickMethod.md#downandup)** = ``0``  |
+| :----- |
+| **[MouseDown](mw.ButtonClickMethod.md#mousedown)** = ``1`` |
+| **[MouseUp](mw.ButtonClickMethod.md#mouseup)** = ``2`` |
+| **[PreciseClick](mw.ButtonClickMethod.md#preciseclick)** = ``3`` |
 
 ## Enumeration Members
 

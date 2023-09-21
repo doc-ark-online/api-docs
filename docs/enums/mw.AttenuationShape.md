@@ -2,16 +2,16 @@
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
-音效衰减形状
+<p class="content-big"> 音效衰减形状 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Box](mw.AttenuationShape.md#box)** = ``2`` <br> |
-| **[Capsule](mw.AttenuationShape.md#capsule)** = ``1`` <br> |
-| **[Cone](mw.AttenuationShape.md#cone)** = ``3`` <br> |
-| **[Sphere](mw.AttenuationShape.md#sphere)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Box](mw.AttenuationShape.md#box)** = ``2``  |
+| :----- |
+| **[Capsule](mw.AttenuationShape.md#capsule)** = ``1`` |
+| **[Cone](mw.AttenuationShape.md#cone)** = ``3`` |
+| **[Sphere](mw.AttenuationShape.md#sphere)** = ``0`` |
 
 ## Enumeration Members
 

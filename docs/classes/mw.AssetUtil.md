@@ -2,14 +2,24 @@
 
 # AssetUtil <Badge type="tip" text="Class" /> <Score text="AssetUtil" />
 
-资源工具类
+<p class="content-big"> 资源管理工具 </p>
+
+<p class="content-big"> 在使用左侧工具栏中的资源时，需要预先下载并加载。 </p>
+
+<p class="content-big"> 可使用asyncDownloadAsset接口在代码中动态下载对应资源。也可将资源手动拖入编辑器右边优先加载队列中。 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new AssetUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[assetLoaded](mw.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean`  |
 | :-----|
-| **[assetLoaded](mw.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean` <br> 资源是否加载|
-| **[asyncDownloadAsset](mw.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\> <br> 资源下载并加载|
+| 资源是否加载|
+| **[asyncDownloadAsset](mw.AssetUtil.md#asyncdownloadasset)**(`InAssetId`: `string`): `Promise`<`boolean`\>  |
+| 资源下载并加载|
 
 ## Methods
 
@@ -19,8 +29,19 @@
 
 资源是否加载
 
+#### Parameters
 
-使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
+| `InAssetId` `string` | 资源GUID |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 未加载将返回false |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯 </p>
+
 ```ts
 @Component
 export default class AssetExample extends Script {
@@ -41,18 +62,6 @@ export default class AssetExample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`boolean`
-
-未加载将返回false
 
 ___
 
@@ -62,8 +71,19 @@ ___
 
 资源下载并加载
 
+#### Parameters
 
-使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯
+| `InAssetId` `string` | 资源GUID |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<`boolean`\> | 下载失败将返回false |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为AssetExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出7711资源id是否加载的情况，并且会在资源加载完成后在原点处生成一个楼梯 </p>
+
 ```ts
 @Component
 export default class AssetExample extends Script {
@@ -84,15 +104,3 @@ export default class AssetExample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InAssetId` | `string` | 资源GUID |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-下载失败将返回false

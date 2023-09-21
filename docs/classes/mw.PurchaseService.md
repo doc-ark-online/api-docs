@@ -2,33 +2,59 @@
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
-应用内购服务
+<p class="content-big"> 应用内购服务 </p>
 
 ## Table of contents
 
-| Accessors |
-| :-----|
-| **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> <br> 获取Ark币余额更新的委托|
-| **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> <br> 获取订单发货的委托|
-| **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> <br> 获取订单发货的委托|
-| **[onPremiumMemberStatusUpdate](mw.PurchaseService.md#onpremiummemberstatusupdate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\> <br> 获取大会员状态更新时触发的委托|
+### Constructors <Score text="Constructors" /> 
+| **new PurchaseService**()  |
+| :----- |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[onArkBalanceUpdated](mw.PurchaseService.md#onarkbalanceupdated)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\>  |
 | :-----|
-| **[consumeKey](mw.PurchaseService.md#consumekey)**(`boxId`: `string`, `number`: `number`, `keyType`: `number`, `placeOrderResult`: (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void`): `void` <br> 大会员开宝箱消耗金钥匙|
-| **[findKeyUsageHistory](mw.PurchaseService.md#findkeyusagehistory)**(`currentPage`: `number`, `pageSize`: `number`, `historyResult`: (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void`): `void` <br> 分页查询大会员使用钥匙的历史记录|
-| **[getArkBalance](mw.PurchaseService.md#getarkbalance)**(): `void` <br> 获取Ark币余额|
-| **[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)**(`[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)Result`, `keyType?`: `number`): `void` <br> 获取用户剩余钥匙数量|
-| **[isPremiumMember](mw.PurchaseService.md#ispremiummember)**(`[isPremiumMember](mw.PurchaseService.md#ispremiummember)Result`): `void` <br> 获取用户是否是大会员|
-| **[isPremiumMemberSupported](mw.PurchaseService.md#ispremiummembersupported)**(`isSupportedResult`: (`result`: `boolean`) => `void`): `void` <br> 获取用户使用软件版本是否有大会员功能|
-| **[openPremiumMemberPurchasePage](mw.PurchaseService.md#openpremiummemberpurchasepage)**(): `void` <br> 跳转会员充值页面|
-| **[placeOrder](mw.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](mw.PurchaseService.md#placeorder)Result`): `void` <br> 下单指定数量的指定商品|
+| 获取Ark币余额更新的委托|
+| **[onOrderDelivered](mw.PurchaseService.md#onorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\>  |
+| 获取订单发货的委托|
+| **[onPremiumMemberOrderDelivered](mw.PurchaseService.md#onpremiummemberorderdelivered)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\>  |
+| 获取订单发货的委托|
+| **[onPremiumMemberStatusUpdate](mw.PurchaseService.md#onpremiummemberstatusupdate)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\>  |
+| 获取大会员状态更新时触发的委托|
+
+### Methods <Score text="Methods" /> 
+| **[consumeKey](mw.PurchaseService.md#consumekey)**(`boxId`: `string`, `number`: `number`, `keyType`: `number`, `placeOrderResult`: (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void`): `void`  |
+| :-----|
+| 大会员开宝箱消耗金钥匙|
+| **[findKeyUsageHistory](mw.PurchaseService.md#findkeyusagehistory)**(`currentPage`: `number`, `pageSize`: `number`, `historyResult`: (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void`): `void`  |
+| 分页查询大会员使用钥匙的历史记录|
+| **[getArkBalance](mw.PurchaseService.md#getarkbalance)**(): `void`  |
+| 获取Ark币余额|
+| **[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)**(`[getUserKeyNumber](mw.PurchaseService.md#getuserkeynumber)Result`, `keyType?`: `number`): `void`  |
+| 获取用户剩余钥匙数量|
+| **[isPremiumMember](mw.PurchaseService.md#ispremiummember)**(`[isPremiumMember](mw.PurchaseService.md#ispremiummember)Result`): `void`  |
+| 获取用户是否是大会员|
+| **[isPremiumMemberSupported](mw.PurchaseService.md#ispremiummembersupported)**(`isSupportedResult`: (`result`: `boolean`) => `void`): `void`  |
+| 获取用户使用软件版本是否有大会员功能|
+| **[openPremiumMemberPurchasePage](mw.PurchaseService.md#openpremiummemberpurchasepage)**(): `void`  |
+| 跳转会员充值页面|
+| **[placeOrder](mw.PurchaseService.md#placeorder)**(`commodityId`: `string`, `amount`: `number`, `[placeOrder](mw.PurchaseService.md#placeorder)Result`): `void`  |
+| 下单指定数量的指定商品|
 
 ## Accessors
 
 ### onArkBalanceUpdated <Score text="onArkBalanceUpdated" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onArkBalanceUpdated**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取Ark币余额更新的委托
 
@@ -41,15 +67,28 @@
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\>
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnArkBalanceUpdated`](../modules/Core.mw.md#onarkbalanceupdated)\> | Ark币余额更新的委托 |
+| :------ | :------ |
 
-Ark币余额更新的委托
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### onOrderDelivered <Score text="onOrderDelivered" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onOrderDelivered**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> <Badge type="tip" text="server" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取订单发货的委托
 
@@ -63,15 +102,28 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\>
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnOrderDelivered`](../modules/Core.mw.md#onorderdelivered)\> | 订单发货的委托 |
+| :------ | :------ |
 
-订单发货的委托
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### onPremiumMemberOrderDelivered <Score text="onPremiumMemberOrderDelivered" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onPremiumMemberOrderDelivered**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> <Badge type="tip" text="server" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取订单发货的委托
 
@@ -85,15 +137,28 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\>
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnKeyConsume`](../modules/Core.mw.md#onkeyconsume)\> | 订单发货的委托 |
+| :------ | :------ |
 
-订单发货的委托
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### onPremiumMemberStatusUpdate <Score text="onPremiumMemberStatusUpdate" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **onPremiumMemberStatusUpdate**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取大会员状态更新时触发的委托
 
@@ -106,9 +171,12 @@ ___
 
 #### Returns
 
-[`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\>
+</td>
+</tr></tbody>
+</table>
 
-大会员状态更新时触发的委托
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`result`: `boolean`) => `void`\> | 大会员状态更新时触发的委托 |
+| :------ | :------ |
 
 ## Methods
 
@@ -118,6 +186,15 @@ ___
 
 大会员开宝箱消耗金钥匙
 
+#### Parameters
+
+| `boxId` `string` | 宝箱ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 |
+| :------ | :------ |
+| `number` `number` | 领取的宝箱数量 default: 1 |
+| `keyType` `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
+| `placeOrderResult` (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
+
+
 
 ::: warning Precautions
 
@@ -125,7 +202,8 @@ ___
 
 :::
 
-使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
+<p style="font-size: 14px;"> 使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听 </p>
+
 ```ts
 if (SystemUtil.isServer()) {
      console.log("监听发货");
@@ -160,16 +238,6 @@ mw.PurchaseService.consumeKey("1000", 1, 1, (status : mw.consumeKeyStatus) => {
 });
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `boxId` | `string` | 宝箱ID，代表一种福利，暂时自定义id。后续会在开发者平台配制 |
-| `number` | `number` | 领取的宝箱数量 default: 1 |
-| `keyType` | `number` | 钥匙类型，当前只有一种钥匙类型值为1 default: 1 |
-| `placeOrderResult` | (`status`: [`consumeKeyStatus`](../enums/mw.consumeKeyStatus.md)) => `void` | 订单结果。status大会员扣除钥匙下单状态 |
-
-
 ___
 
 ### findKeyUsageHistory <Score text="findKeyUsageHistory" /> 
@@ -178,8 +246,17 @@ ___
 
 分页查询大会员使用钥匙的历史记录
 
+#### Parameters
 
-使用示例:将代码片段放入脚本中即可
+| `currentPage` `number` | 查找第几页 type:整形 range:1-65535 |
+| :------ | :------ |
+| `pageSize` `number` | 每页大小 type:整形 range:1-100 |
+| `historyResult` (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数，total总页数为-1时表示查找失败，currentPage查找第几页，bill查询结果 |
+
+
+
+<p style="font-size: 14px;"> 使用示例:将代码片段放入脚本中即可 </p>
+
 ```ts
 mw.PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : number, bills : mw.keyUsageInfo[]) => {
     console.log("bill len : " + bills.length);
@@ -193,15 +270,6 @@ mw.PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : nu
 });
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `currentPage` | `number` | 查找第几页 type:整形 range:1-65535 |
-| `pageSize` | `number` | 每页大小 type:整形 range:1-100 |
-| `historyResult` | (`total`: `number`, `currentPage`: `number`, `bill`: [`keyUsageInfo`](../modules/Core.mw.md#keyusageinfo)[]) => `void` | 查询结果回调函数，total总页数为-1时表示查找失败，currentPage查找第几页，bill查询结果 |
-
-
 ___
 
 ### getArkBalance <Score text="getArkBalance" /> 
@@ -211,13 +279,15 @@ ___
 获取Ark币余额
 
 
+
 ::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
 
 :::
 
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额 </p>
+
 ```ts
 @Component
 export default class PurchaseExample extends mw.Script {
@@ -236,7 +306,6 @@ export default class PurchaseExample extends mw.Script {
 }
 `
 
-
 ___
 
 ### getUserKeyNumber <Score text="getUserKeyNumber" /> 
@@ -245,6 +314,13 @@ ___
 
 获取用户剩余钥匙数量
 
+#### Parameters
+
+| `getUserKeyNumberResult` (`keyNumber`: `number`) => `void` | 结果回调，查询到结果后执行回调函数。keyNumber : 剩余钥匙数量 |
+| :------ | :------ |
+| `keyType?` `number` | 搜索的钥匙类型，暂时只有类型1 default: 1 |
+
+
 
 ::: warning Precautions
 
@@ -252,7 +328,8 @@ ___
 
 :::
 
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
+<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量 </p>
+
 ```
 @Component
 export default class PurchaseExample extends mw.Script {
@@ -271,14 +348,6 @@ export default class PurchaseExample extends mw.Script {
 }
 ```ts
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `getUserKeyNumberResult` | (`keyNumber`: `number`) => `void` | 结果回调，查询到结果后执行回调函数。keyNumber : 剩余钥匙数量 |
-| `keyType?` | `number` | 搜索的钥匙类型，暂时只有类型1 default: 1 |
-
-
 ___
 
 ### isPremiumMember <Score text="isPremiumMember" /> 
@@ -286,6 +355,12 @@ ___
 • `Static` **isPremiumMember**(`isPremiumMemberResult`): `void` <Badge type="tip" text="client" />
 
 获取用户是否是大会员
+
+#### Parameters
+
+| `isPremiumMemberResult` (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:是大会员，false:不是大会员 |
+| :------ | :------ |
+
 
 
 ::: warning Precautions
@@ -295,7 +370,8 @@ ___
 
 :::
 
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
+<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员 </p>
+
 ```
 @Component
 export default class PurchaseExample extends mw.Script {
@@ -314,13 +390,6 @@ export default class PurchaseExample extends mw.Script {
 }
 ```ts
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isPremiumMemberResult` | (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:是大会员，false:不是大会员 |
-
-
 ___
 
 ### isPremiumMemberSupported <Score text="isPremiumMemberSupported" /> 
@@ -329,6 +398,12 @@ ___
 
 获取用户使用软件版本是否有大会员功能
 
+#### Parameters
+
+| `isSupportedResult` (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:支持大会员功能，false:不支持大会员功能 |
+| :------ | :------ |
+
+
 
 ::: warning Precautions
 
@@ -336,7 +411,8 @@ ___
 
 :::
 
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
+<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能 </p>
+
 ```
 @Component
 export default class PurchaseExample extends mw.Script {
@@ -355,13 +431,6 @@ export default class PurchaseExample extends mw.Script {
 }
 ```ts
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isSupportedResult` | (`result`: `boolean`) => `void` | 结果回调，查询到结果后执行回调函数。true:支持大会员功能，false:不支持大会员功能 |
-
-
 ___
 
 ### openPremiumMemberPurchasePage <Score text="openPremiumMemberPurchasePage" /> 
@@ -371,7 +440,9 @@ ___
 跳转会员充值页面
 
 
-使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。 </p>
+
 ```
 @Component
 export default class PurchaseExample extends mw.Script {
@@ -388,7 +459,6 @@ export default class PurchaseExample extends mw.Script {
 }
 ```ts
 
-
 ___
 
 ### placeOrder <Score text="placeOrder" /> 
@@ -397,18 +467,15 @@ ___
 
 下单指定数量的指定商品
 
+#### Parameters
+
+| `commodityId` `string` |  商品Id |
+| :------ | :------ |
+| `amount` `number` |  数量 |
+| `placeOrderResult` (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
+
+
 
 ::: warning Precautions
 
 只在支持IAP的233/Playza/口袋方舟内使用时生效
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `commodityId` | `string` |  商品Id |
-| `amount` | `number` |  数量 |
-| `placeOrderResult` | (`status`: `number`, `msg`: `string`) => `void` |  订单状态回调，status = 200时表示订单支付成功。msg描述订单状态或者错误信息 |
-

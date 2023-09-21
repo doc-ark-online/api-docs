@@ -2,9 +2,10 @@
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
-热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）
+<p class="content-big"> 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复） </p>
 
-使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下:
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下: </p>
+
 ```ts
 @Component
 export default class HotWeaponRecoilForceSample1 extends Script {
@@ -30,28 +31,46 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: `MulticastDelegateInterface`<() => `void`\> <br> 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+### Constructors <Score text="Constructors" /> 
+| **new HotWeaponRecoilForceComponent**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|
-| **[maxHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number` <br> 获取相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[maxHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number` <br> 获取水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[maxVerticalJitter](mw.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number` <br> 获取相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[maxVerticalOffset](mw.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number` <br> 获取垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[minHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number` <br> 获取相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[minHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number` <br> 获取水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[minVerticalJitter](mw.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number` <br> 获取相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
-| **[minVerticalOffset](mw.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number` <br> 获取垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| 后坐力开始广播。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[maxHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#maxhorizontaljitter)**(): `number`  |
 | :-----|
-| **[getDeepJitter](mw.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number` <br> 获取深度抖动值。使用示例见方法 getHorizontalOffset 使用示例|
-| **[getHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number` <br> 获取水平抖动值。使用示例见方法 getHorizontalOffset 使用示例|
-| **[getHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number` <br> 获取水平偏移值|
-| **[getVerticalJitter](mw.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number` <br> 获取垂直抖动值。使用示例见方法 getHorizontalOffset 使用示例|
-| **[getVerticalOffset](mw.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number` <br> 获取垂直偏移值。使用示例见方法 getHorizontalOffset 使用示例|
+| 设置相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#maxhorizontaloffset)**(): `number`  |
+| 设置水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxVerticalJitter](mw.HotWeaponRecoilForceComponent.md#maxverticaljitter)**(): `number`  |
+| 设置相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[maxVerticalOffset](mw.HotWeaponRecoilForceComponent.md#maxverticaloffset)**(): `number`  |
+| 设置垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#minhorizontaljitter)**(): `number`  |
+| 设置相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#minhorizontaloffset)**(): `number`  |
+| 设置水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minVerticalJitter](mw.HotWeaponRecoilForceComponent.md#minverticaljitter)**(): `number`  |
+| 设置相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+| **[minVerticalOffset](mw.HotWeaponRecoilForceComponent.md#minverticaloffset)**(): `number`  |
+| 设置垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例|
+
+### Methods <Score text="Methods" /> 
+| **[getDeepJitter](mw.HotWeaponRecoilForceComponent.md#getdeepjitter)**(): `number`  |
+| :-----|
+| 获取深度抖动值。使用示例见方法 getHorizontalOffset 使用示例|
+| **[getHorizontalJitter](mw.HotWeaponRecoilForceComponent.md#gethorizontaljitter)**(): `number`  |
+| 获取水平抖动值。使用示例见方法 getHorizontalOffset 使用示例|
+| **[getHorizontalOffset](mw.HotWeaponRecoilForceComponent.md#gethorizontaloffset)**(): `number`  |
+| 获取水平偏移值|
+| **[getVerticalJitter](mw.HotWeaponRecoilForceComponent.md#getverticaljitter)**(): `number`  |
+| 获取垂直抖动值。使用示例见方法 getHorizontalOffset 使用示例|
+| **[getVerticalOffset](mw.HotWeaponRecoilForceComponent.md#getverticaloffset)**(): `number`  |
+| 获取垂直偏移值。使用示例见方法 getHorizontalOffset 使用示例|
 
 ## Properties
 
@@ -65,18 +84,35 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ### maxHorizontalJitter <Score text="maxHorizontalJitter" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **maxHorizontalJitter**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **maxHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 相机水平抖动最大值 |
+| :------ | :------ |
 
-相机水平抖动最大值
 
-• `set` **maxHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置相机水平抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -90,27 +126,48 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  相机水平抖动最大值 |
+| `value` `number` |  相机水平抖动最大值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### maxHorizontalOffset <Score text="maxHorizontalOffset" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **maxHorizontalOffset**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **maxHorizontalOffset**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 水平偏移最大值 |
+| :------ | :------ |
 
-水平偏移最大值
 
-• `set` **maxHorizontalOffset**(`value`): `void` 
+</td>
+<td style="text-align: left">
+
 
 设置水平偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -123,27 +180,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  水平偏移最大值 |
+| `value` `number` |  水平偏移最大值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### maxVerticalJitter <Score text="maxVerticalJitter" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **maxVerticalJitter**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **maxVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 相机垂直抖动最大值 |
+| :------ | :------ |
 
-相机垂直抖动最大值
 
-• `set` **maxVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置相机垂直抖动最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -157,27 +235,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  新相机垂直抖动最大值 |
+| `value` `number` |  新相机垂直抖动最大值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### maxVerticalOffset <Score text="maxVerticalOffset" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **maxVerticalOffset**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **maxVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 垂直偏移最大值 |
+| :------ | :------ |
 
-垂直偏移最大值
 
-• `set` **maxVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置垂直偏移最大值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -191,27 +290,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  垂直偏移最大值 |
+| `value` `number` |  垂直偏移最大值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### minHorizontalJitter <Score text="minHorizontalJitter" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **minHorizontalJitter**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **minHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 相机水平抖动最小值 |
+| :------ | :------ |
 
-相机水平抖动最小值
 
-• `set` **minHorizontalJitter**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置相机水平抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -225,27 +345,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  新相机水平抖动最小值 |
+| `value` `number` |  新相机水平抖动最小值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### minHorizontalOffset <Score text="minHorizontalOffset" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **minHorizontalOffset**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **minHorizontalOffset**(`value`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 水平偏移最小值 |
+| :------ | :------ |
 
-水平偏移最小值
 
-• `set` **minHorizontalOffset**(`value`): `void` 
+</td>
+<td style="text-align: left">
+
 
 设置水平偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -258,27 +399,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  水平偏移最小值 |
+| `value` `number` |  水平偏移最小值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### minVerticalJitter <Score text="minVerticalJitter" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **minVerticalJitter**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **minVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 相机垂直抖动最小值 |
+| :------ | :------ |
 
-相机垂直抖动最小值
 
-• `set` **minVerticalJitter**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置相机垂直抖动最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -292,27 +454,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  新相机垂直抖动最小值 |
+| `value` `number` |  新相机垂直抖动最小值 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### minVerticalOffset <Score text="minVerticalOffset" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **minVerticalOffset**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **minVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 垂直偏移最小值 |
+| :------ | :------ |
 
-垂直偏移最小值
 
-• `set` **minVerticalOffset**(`value`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置垂直偏移最小值。使用示例见类 HotWeaponRecoilForceComponent 使用示例
 
@@ -326,9 +509,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | `number` |  垂直偏移最小值 |
+| `value` `number` |  垂直偏移最小值 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods
@@ -339,12 +526,11 @@ ___
 
 获取深度抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
-
 #### Returns
 
-`number`
+| `number` | 深度抖动值 |
+| :------ | :------ |
 
-深度抖动值
 
 ___
 
@@ -354,12 +540,11 @@ ___
 
 获取水平抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
-
 #### Returns
 
-`number`
+| `number` | 水平抖动值 |
+| :------ | :------ |
 
-水平抖动值
 
 ___
 
@@ -369,8 +554,14 @@ ___
 
 获取水平偏移值
 
+#### Returns
 
-使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下:
+| `number` | 水平偏移值 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下: </p>
+
 ```ts
 @Component
 export default class HotWeaponRecoilForceSample2 extends mw.Script {
@@ -387,12 +578,6 @@ export default class HotWeaponRecoilForceSample2 extends mw.Script {
 }
 ```
 
-#### Returns
-
-`number`
-
-水平偏移值
-
 ___
 
 ### getVerticalJitter <Score text="getVerticalJitter" /> 
@@ -401,12 +586,11 @@ ___
 
 获取垂直抖动值。使用示例见方法 getHorizontalOffset 使用示例
 
-
 #### Returns
 
-`number`
+| `number` | 垂直抖动值 |
+| :------ | :------ |
 
-垂直抖动值
 
 ___
 
@@ -416,9 +600,8 @@ ___
 
 获取垂直偏移值。使用示例见方法 getHorizontalOffset 使用示例
 
-
 #### Returns
 
-`number`
+| `number` | 垂直偏移值 |
+| :------ | :------ |
 
-垂直偏移值

@@ -2,16 +2,16 @@
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 
-热武器状态
+<p class="content-big"> 热武器状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Firing](mw.HotWeaponState.md#firing)** = ``3`` <br> |
-| **[Idle](mw.HotWeaponState.md#idle)** = ``0`` <br> |
-| **[Loading](mw.HotWeaponState.md#loading)** = ``2`` <br> |
-| **[Reloading](mw.HotWeaponState.md#reloading)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Firing](mw.HotWeaponState.md#firing)** = ``3``  |
+| :----- |
+| **[Idle](mw.HotWeaponState.md#idle)** = ``0`` |
+| **[Loading](mw.HotWeaponState.md#loading)** = ``2`` |
+| **[Reloading](mw.HotWeaponState.md#reloading)** = ``1`` |
 
 ## Enumeration Members
 

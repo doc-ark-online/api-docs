@@ -2,18 +2,29 @@
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
-几何坐标信息
+<p class="content-big"> 几何坐标信息 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new Geometry**()  |
 | :-----|
-| **[getAbsolutePosition](mw.Geometry.md#getabsoluteposition)**(): [`Vector2`](mw.Vector2.md) <br> 获取绝对坐标|
-| **[getAbsolutePositionAtCoordinates](mw.Geometry.md#getabsolutepositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md) <br> 获取基于Coordinate的绝对坐标|
-| **[getAbsoluteSize](mw.Geometry.md#getabsolutesize)**(): [`Vector2`](mw.Vector2.md) <br> 获取绝对大小|
-| **[getLocalPositionAtCoordinates](mw.Geometry.md#getlocalpositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md) <br> 获取基于Coordinate的相对坐标|
-| **[getLocalSize](mw.Geometry.md#getlocalsize)**(): [`Vector2`](mw.Vector2.md) <br> 获取相对大小|
-| **[isUnderLocation](mw.Geometry.md#isunderlocation)**(`AbsoluteCoordinate`: [`Vector2`](mw.Vector2.md)): `boolean` <br> 判断该Geometry 是否在AbsoluteCoordinate坐标下|
+| 默认构造|
+
+### Methods <Score text="Methods" /> 
+| **[getAbsolutePosition](mw.Geometry.md#getabsoluteposition)**(): [`Vector2`](mw.Vector2.md)  |
+| :-----|
+| 获取绝对坐标|
+| **[getAbsolutePositionAtCoordinates](mw.Geometry.md#getabsolutepositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| 获取基于Coordinate的绝对坐标|
+| **[getAbsoluteSize](mw.Geometry.md#getabsolutesize)**(): [`Vector2`](mw.Vector2.md)  |
+| 获取绝对大小|
+| **[getLocalPositionAtCoordinates](mw.Geometry.md#getlocalpositionatcoordinates)**(`Coordinate`: [`Vector2`](mw.Vector2.md)): [`Vector2`](mw.Vector2.md)  |
+| 获取基于Coordinate的相对坐标|
+| **[getLocalSize](mw.Geometry.md#getlocalsize)**(): [`Vector2`](mw.Vector2.md)  |
+| 获取相对大小|
+| **[isUnderLocation](mw.Geometry.md#isunderlocation)**(`AbsoluteCoordinate`: [`Vector2`](mw.Vector2.md)): `boolean`  |
+| 判断该Geometry 是否在AbsoluteCoordinate坐标下|
 
 默认构造
 
@@ -25,12 +36,11 @@
 
 获取绝对坐标
 
-
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 返回绝对坐标 |
+| :------ | :------ |
 
-返回绝对坐标
 
 ___
 
@@ -40,18 +50,16 @@ ___
 
 获取基于Coordinate的绝对坐标
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Coordinate` | [`Vector2`](mw.Vector2.md) | 绝对基础点 |
+| `Coordinate` [`Vector2`](mw.Vector2.md) | 绝对基础点 |
+| :------ | :------ |
 
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 返回Coordinate的绝对坐标 |
+| :------ | :------ |
 
-返回Coordinate的绝对坐标
 
 ___
 
@@ -61,12 +69,11 @@ ___
 
 获取绝对大小
 
-
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 返回绝对大小 |
+| :------ | :------ |
 
-返回绝对大小
 
 ___
 
@@ -76,18 +83,16 @@ ___
 
 获取基于Coordinate的相对坐标
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `Coordinate` | [`Vector2`](mw.Vector2.md) | 相对基础点 |
+| `Coordinate` [`Vector2`](mw.Vector2.md) | 相对基础点 |
+| :------ | :------ |
 
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 返回Coordinate的相对坐标 |
+| :------ | :------ |
 
-返回Coordinate的相对坐标
 
 ___
 
@@ -97,12 +102,11 @@ ___
 
 获取相对大小
 
-
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 返回相对大小 |
+| :------ | :------ |
 
-返回相对大小
 
 ___
 
@@ -112,15 +116,13 @@ ___
 
 判断该Geometry 是否在AbsoluteCoordinate坐标下
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `AbsoluteCoordinate` | [`Vector2`](mw.Vector2.md) | 坐标 |
+| `AbsoluteCoordinate` [`Vector2`](mw.Vector2.md) | 坐标 |
+| :------ | :------ |
 
 #### Returns
 
-`boolean`
+| `boolean` | 返回是否在AbsoluteCoordinate坐标下 |
+| :------ | :------ |
 
-返回是否在AbsoluteCoordinate坐标下

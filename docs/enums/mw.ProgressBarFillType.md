@@ -2,17 +2,17 @@
 
 # ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
 
-进度条填充规则
+<p class="content-big"> 进度条填充规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BottomToTop](mw.ProgressBarFillType.md#bottomtotop)** = ``4`` <br> |
-| **[FillFromCenter](mw.ProgressBarFillType.md#fillfromcenter)** = ``2`` <br> |
-| **[LeftToRight](mw.ProgressBarFillType.md#lefttoright)** = ``0`` <br> |
-| **[RightToLeft](mw.ProgressBarFillType.md#righttoleft)** = ``1`` <br> |
-| **[TopToBottom](mw.ProgressBarFillType.md#toptobottom)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BottomToTop](mw.ProgressBarFillType.md#bottomtotop)** = ``4``  |
+| :----- |
+| **[FillFromCenter](mw.ProgressBarFillType.md#fillfromcenter)** = ``2`` |
+| **[LeftToRight](mw.ProgressBarFillType.md#lefttoright)** = ``0`` |
+| **[RightToLeft](mw.ProgressBarFillType.md#righttoleft)** = ``1`` |
+| **[TopToBottom](mw.ProgressBarFillType.md#toptobottom)** = ``3`` |
 
 ## Enumeration Members
 

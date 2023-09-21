@@ -2,21 +2,21 @@
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 
-自动布局排版规则-排列规则
+<p class="content-big"> 自动布局排版规则-排列规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[CenterBottom](mw.UILayoutPacket.md#centerbottom)** = ``8`` <br> |
-| **[CenterCenter](mw.UILayoutPacket.md#centercenter)** = ``7`` <br> |
-| **[CenterTop](mw.UILayoutPacket.md#centertop)** = ``6`` <br> |
-| **[LeftBottom](mw.UILayoutPacket.md#leftbottom)** = ``2`` <br> |
-| **[LeftCenter](mw.UILayoutPacket.md#leftcenter)** = ``1`` <br> |
-| **[LeftTop](mw.UILayoutPacket.md#lefttop)** = ``0`` <br> |
-| **[RightBottom](mw.UILayoutPacket.md#rightbottom)** = ``5`` <br> |
-| **[RightCenter](mw.UILayoutPacket.md#rightcenter)** = ``4`` <br> |
-| **[RightTop](mw.UILayoutPacket.md#righttop)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[CenterBottom](mw.UILayoutPacket.md#centerbottom)** = ``8``  |
+| :----- |
+| **[CenterCenter](mw.UILayoutPacket.md#centercenter)** = ``7`` |
+| **[CenterTop](mw.UILayoutPacket.md#centertop)** = ``6`` |
+| **[LeftBottom](mw.UILayoutPacket.md#leftbottom)** = ``2`` |
+| **[LeftCenter](mw.UILayoutPacket.md#leftcenter)** = ``1`` |
+| **[LeftTop](mw.UILayoutPacket.md#lefttop)** = ``0`` |
+| **[RightBottom](mw.UILayoutPacket.md#rightbottom)** = ``5`` |
+| **[RightCenter](mw.UILayoutPacket.md#rightcenter)** = ``4`` |
+| **[RightTop](mw.UILayoutPacket.md#righttop)** = ``3`` |
 
 ## Enumeration Members
 

@@ -2,13 +2,18 @@
 
 # TweenSequence <Badge type="tip" text="Class" /> <Score text="TweenSequence" />
 
-序列工具类，主要用于获取连续的ID
+<p class="content-big"> 序列工具类，主要用于获取连续的ID </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new TweenSequence**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[nextID](mw.TweenSequence.md#nextid)**(): `number`  |
 | :-----|
-| **[nextID](mw.TweenSequence.md#nextid)**(): `number` <br> 获取下一个ID|
+| 获取下一个ID|
 
 ## Methods
 
@@ -18,9 +23,8 @@
 
 获取下一个ID
 
-
 #### Returns
 
-`number`
+| `number` | 下一个ID |
+| :------ | :------ |
 
-下一个ID

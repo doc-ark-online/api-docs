@@ -2,22 +2,22 @@
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 
-表情类型
+<p class="content-big"> 表情类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Anger](mw.ExpressionType.md#anger)** = ``4`` <br> |
-| **[Awkward](mw.ExpressionType.md#awkward)** = ``5`` <br> |
-| **[Cute](mw.ExpressionType.md#cute)** = ``8`` <br> |
-| **[Default](mw.ExpressionType.md#default)** = ``0`` <br> |
-| **[Doubt](mw.ExpressionType.md#doubt)** = ``9`` <br> |
-| **[Happy](mw.ExpressionType.md#happy)** = ``2`` <br> |
-| **[Laugh](mw.ExpressionType.md#laugh)** = ``6`` <br> |
-| **[Mischievous](mw.ExpressionType.md#mischievous)** = ``7`` <br> |
-| **[Sad](mw.ExpressionType.md#sad)** = ``3`` <br> |
-| **[Smile](mw.ExpressionType.md#smile)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Anger](mw.ExpressionType.md#anger)** = ``4``  |
+| :----- |
+| **[Awkward](mw.ExpressionType.md#awkward)** = ``5`` |
+| **[Cute](mw.ExpressionType.md#cute)** = ``8`` |
+| **[Default](mw.ExpressionType.md#default)** = ``0`` |
+| **[Doubt](mw.ExpressionType.md#doubt)** = ``9`` |
+| **[Happy](mw.ExpressionType.md#happy)** = ``2`` |
+| **[Laugh](mw.ExpressionType.md#laugh)** = ``6`` |
+| **[Mischievous](mw.ExpressionType.md#mischievous)** = ``7`` |
+| **[Sad](mw.ExpressionType.md#sad)** = ``3`` |
+| **[Smile](mw.ExpressionType.md#smile)** = ``1`` |
 
 ## Enumeration Members
 

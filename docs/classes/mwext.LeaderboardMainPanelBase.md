@@ -2,13 +2,12 @@
 
 # LeaderboardMainPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardMainPanelBase<T\>" />
 
-排行榜主界面
+<p class="content-big"> 排行榜主界面 </p>
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`ILeaderboardPanelView`](../interfaces/mwext.ILeaderboardPanelView.md) |
+| :------ | :------ |
 
 ## Hierarchy
 
@@ -18,42 +17,68 @@
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md) <br> 当关闭的时候调用的事件|
-
-| Accessors |
-| :-----|
+### Constructors <Score text="Constructors" /> 
 
 
 ::: details 点击查看继承
-| Accessors |
+### Constructors <Score text="Constructors" /> 
+| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
 | :-----|
-| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md) <br> 面板尺寸|
-| **[view](mwext.BasePanel.md#view)**(): `T` <br> 面板所控制的界面|
+| 构造方法|
 :::
 
 
-| Methods |
+### Properties <Score text="Properties" /> 
+| **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md)  |
 | :-----|
-| **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 添加一个字段|
-| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> <br> 创建用于显示一条排行信息的item子UI|
-| **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void` <br> 当UI隐藏调用|
-| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置自己的字段内容后调用，需要请复写|
-| **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void` <br> 当UI显示调用|
-| **[setSortFields](mwext.LeaderboardMainPanelBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排序字段ID，可以设置多字段排序，只支持从大到小排序|
-| **[setSortMethod](mwext.LeaderboardMainPanelBase.md#setsortmethod)**(`fn`: (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排序的方法|
-| **[setStyle](mwext.LeaderboardMainPanelBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 设置排行榜样式|
-| **[showRankField](mwext.LeaderboardMainPanelBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <br> 显示"名次"字段，默认不显示，调用这个方法后才会显示|
+| 当关闭的时候调用的事件|
+
+### Accessors <Score text="Accessors" /> 
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
-| **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <br> 生命周期-被添加到父节点时候触发，可能会多次调用|
-| **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <br> 生命周期方法-构建面板自动触发，只会调用一次|
+| 面板尺寸|
+| **[view](mwext.BasePanel.md#view)**(): `T`  |
+| 面板所控制的界面|
 :::
 
+
+### Methods <Score text="Methods" /> 
+| **[addField](mwext.LeaderboardMainPanelBase.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| :-----|
+| 添加一个字段|
+| **[creatItem](mwext.LeaderboardMainPanelBase.md#creatitem)**(): [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\>  |
+| 创建用于显示一条排行信息的item子UI|
+| **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void`  |
+| 当UI隐藏调用|
+| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| 设置自己(界面最下面那一行)的字段内容后调用，需要请复写|
+| **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void`  |
+| 当UI显示调用|
+| **[onSort](mwext.LeaderboardMainPanelBase.md#onsort)**(`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]  |
+| 排序的时候调用，需要请重写|
+| **[setSortFields](mwext.LeaderboardMainPanelBase.md#setsortfields)**(`...fieldIds`: `number`[]): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| 设置排序字段ID，可以设置多字段排序，只支持从大到小排序|
+| **[setStyle](mwext.LeaderboardMainPanelBase.md#setstyle)**(`title`: `string`, `fieldsAutoLayout`: `boolean`, `showPlayerNum`: `number`, `itemSpacing`: `number`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| 设置排行榜样式|
+| **[showRankField](mwext.LeaderboardMainPanelBase.md#showrankfield)**(`fieldName`: `string`, `valueStyle?`: `string`, `notListed?`: `string`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>  |
+| 显示"名次"字段，并进行设置，默认不显示|
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[onAdded](mwext.BasePanel.md#onadded)**(): `void`  |
+| :-----|
+| 生命周期-被添加到父节点时候触发，可能会多次调用|
+| **[onAwake](mwext.BasePanel.md#onawake)**(): `void`  |
+| 生命周期方法-构建面板自动触发，只会调用一次|
+:::
+
+
+## Properties
 
 ### onClose <Score text="onClose" /> 
 
@@ -71,20 +96,18 @@
 
 添加一个字段
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fieldId` | `number` |  字段ID |
-| `fieldName` | `string` |  字段的标题 |
-| `valueStyle?` | `string` |  字段值的展示样式 (例：`{0}`分) default: null |
+| `fieldId` `number` |  字段ID |
+| :------ | :------ |
+| `fieldName` `string` |  字段的标题 |
+| `valueStyle?` `string` |  字段值的展示样式 (例：`{0}`分) default: null |
 
 #### Returns
 
-[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
+| :------ | :------ |
 
-返回自己，可用于链式调用
 
 ___
 
@@ -94,12 +117,11 @@ ___
 
 创建用于显示一条排行信息的item子UI
 
-
 #### Returns
 
-[`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\>
+| [`LeaderboardItemPanelBase`](mwext.LeaderboardItemPanelBase.md)<`{ `mContent`: [`Canvas`](mw.Canvas.md)  }` & [`UIScript`](mw.UIScript.md)\> | 一条排行信息的item子UI |
+| :------ | :------ |
 
-一条排行信息的item子UI
 
 ___
 
@@ -109,12 +131,12 @@ ___
 
 当UI隐藏调用
 
+
 ::: warning Precautions
 
 如果要复写此方法，记得调用super.onHide()
 
 :::
-
 
 
 ___
@@ -123,18 +145,17 @@ ___
 
 • `Protected` **onSelfFieldSet**(`rankIndex`, `fieldId`, `fieldValue`, `textBlockIndex`, `textBlock`): `void` <Badge type="tip" text="client" />
 
-设置自己的字段内容后调用，需要请复写
-
+设置自己(界面最下面那一行)的字段内容后调用，需要请复写
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `rankIndex` | `number` |  名次索引(0开始) |
-| `fieldId` | `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` | `string` \| `number` |  字段显示内容 |
-| `textBlockIndex` | `number` |  文本控件索引 |
-| `textBlock` | [`TextBlock`](mw.TextBlock.md) |  文本控件 |
+| `rankIndex` `number` |  名次索引(0开始) |
+| :------ | :------ |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
+| `fieldValue` `string` \| `number` |  字段显示内容 |
+| `textBlockIndex` `number` |  文本控件索引 |
+| `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
+
 
 
 ___
@@ -145,6 +166,12 @@ ___
 
 当UI显示调用
 
+#### Parameters
+
+| `playerDataList` [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] |  玩家数据列表 |
+| :------ | :------ |
+
+
 ::: warning Precautions
 
 如果要复写此方法，记得调用super.onShow()
@@ -152,11 +179,23 @@ ___
 :::
 
 
+___
+
+### onSort <Score text="onSort" /> 
+
+• `Protected` **onSort**(`dataList`): [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] <Badge type="tip" text="client" />
+
+排序的时候调用，需要请重写
+
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playerDataList` | [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] |  玩家数据列表 |
+| `dataList` [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] |  排行数据数组 |
+| :------ | :------ |
+
+#### Returns
+
+| [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] | 排序后的数据队列 |
+| :------ | :------ |
 
 
 ___
@@ -167,39 +206,16 @@ ___
 
 设置排序字段ID，可以设置多字段排序，只支持从大到小排序
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...fieldIds` | `number`[] |  排序字段 |
+| `...fieldIds` `number`[] |  排序字段 |
+| :------ | :------ |
 
 #### Returns
 
-[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
+| :------ | :------ |
 
-返回自己，可用于链式调用
-
-___
-
-### setSortMethod <Score text="setSortMethod" /> 
-
-• **setSortMethod**(`fn`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
-
-设置排序的方法
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fn` | (`dataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[] |  排序方法 |
-
-#### Returns
-
-[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
-
-返回自己，可用于链式调用
 
 ___
 
@@ -209,21 +225,19 @@ ___
 
 设置排行榜样式
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `title` | `string` |  UI标题 |
-| `fieldsAutoLayout` | `boolean` |  字段是否自动布局(true-均匀分布, false-所摆即所得） |
-| `showPlayerNum` | `number` |  最多显示的玩家数量 |
-| `itemSpacing` | `number` |  每条数据的间距 |
+| `title` `string` |  UI标题 |
+| :------ | :------ |
+| `fieldsAutoLayout` `boolean` |  字段是否自动布局(true-均匀分布, false-所摆即所得） |
+| `showPlayerNum` `number` |  最多显示的玩家数量 |
+| `itemSpacing` `number` |  每条数据的间距 |
 
 #### Returns
 
-[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
+| :------ | :------ |
 
-返回自己，可用于链式调用
 
 ___
 
@@ -231,19 +245,17 @@ ___
 
 • **showRankField**(`fieldName`, `valueStyle?`, `notListed?`): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> <Badge type="tip" text="client" />
 
-显示"名次"字段，默认不显示，调用这个方法后才会显示
-
+显示"名次"字段，并进行设置，默认不显示
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `fieldName` | `string` |  字段标题 |
-| `valueStyle?` | `string` |  字段值样式 default: null |
-| `notListed?` | `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null |
+| `fieldName` `string` |  字段标题 |
+| :------ | :------ |
+| `valueStyle?` `string` |  字段值样式 default: null |
+| `notListed?` `string` |  未上榜(如果未上榜也显示"名次"请填写null) default: null |
 
 #### Returns
 
-[`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\>
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`T`\> | 返回自己，可用于链式调用 |
+| :------ | :------ |
 
-返回自己，可用于链式调用

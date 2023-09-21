@@ -2,21 +2,31 @@
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
-拖拽事件数据传递类
+<p class="content-big"> 拖拽事件数据传递类 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[guidStr](mw.DragDropPayLoad.md#guidstr)**: `any` <br> GUID|
-| **[idStr](mw.DragDropPayLoad.md#idstr)**: `any` <br> id|
-| **[nameStr](mw.DragDropPayLoad.md#namestr)**: `any` <br> name|
+### Constructors <Score text="Constructors" /> 
+| **new DragDropPayLoad**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[guidStr](mw.DragDropPayLoad.md#guidstr)**: `any`  |
 | :-----|
-| **[guid](mw.DragDropPayLoad.md#guid)**(): `string` <br> GUID|
-| **[id](mw.DragDropPayLoad.md#id)**(): `number` <br> 获取id|
-| **[name](mw.DragDropPayLoad.md#name)**(): `string` <br> 获取名字|
+| GUID|
+| **[idStr](mw.DragDropPayLoad.md#idstr)**: `any`  |
+| id|
+| **[nameStr](mw.DragDropPayLoad.md#namestr)**: `any`  |
+| name|
+
+### Accessors <Score text="Accessors" /> 
+| **[guid](mw.DragDropPayLoad.md#guid)**(): `string`  |
+| :-----|
+| GUID|
+| **[id](mw.DragDropPayLoad.md#id)**(): `number`  |
+| 设置id|
+| **[name](mw.DragDropPayLoad.md#name)**(): `string`  |
+| 设置名字|
 
 ## Properties
 
@@ -46,62 +56,117 @@ name
 
 ### guid <Score text="guid" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **guid**(): `string`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 GUID
 
 #### Returns
 
-`string`
+| `string` | GUID |
+| :------ | :------ |
 
-GUID
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### id <Score text="id" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **id**(): `number`
+
+</th>
+<th style="text-align: left">
+
+• `set` **id**(`inId`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取id
 
 #### Returns
 
-`number`
+| `number` | id |
+| :------ | :------ |
 
-id
 
-• `set` **id**(`inId`): `void`
+</td>
+<td style="text-align: left">
+
 
 设置id
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `inId` | `number` |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### name <Score text="name" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **name**(): `string`
+
+</th>
+<th style="text-align: left">
+
+• `set` **name**(`inName`): `void`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取名字
 
 #### Returns
 
-`string`
+| `string` | 名字 |
+| :------ | :------ |
 
-名字
 
-• `set` **name**(`inName`): `void`
+</td>
+<td style="text-align: left">
+
 
 设置名字
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `inName` | `string` |
+| :------ | :------ |
+
+
+</td>
+</tr></tbody>
+</table>
 

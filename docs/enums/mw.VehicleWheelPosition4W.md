@@ -2,14 +2,14 @@
 
 # VehicleWheelPosition4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4W" />
 
-四轮载具车轮位置
+<p class="content-big"> 四轮载具车轮位置 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Front](mw.VehicleWheelPosition4W.md#front)** = ``0`` <br> |
-| **[Rear](mw.VehicleWheelPosition4W.md#rear)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Front](mw.VehicleWheelPosition4W.md#front)** = ``0``  |
+| :----- |
+| **[Rear](mw.VehicleWheelPosition4W.md#rear)** = ``1`` |
 
 ## Enumeration Members
 

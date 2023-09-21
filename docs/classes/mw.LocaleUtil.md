@@ -2,13 +2,18 @@
 
 # LocaleUtil <Badge type="tip" text="Class" /> <Score text="LocaleUtil" />
 
-地区本地化工具类
+<p class="content-big"> 本地化工具 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new LocaleUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[getDefaultLocale](mw.LocaleUtil.md#getdefaultlocale)**(): `string`  |
 | :-----|
-| **[getDefaultLocale](mw.LocaleUtil.md#getdefaultlocale)**(): `string` <br> 获取默认的语言和地区|
+| 获取默认的语言和地区|
 
 ## Methods
 
@@ -18,8 +23,14 @@
 
 获取默认的语言和地区
 
+#### Returns
 
-使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
+| `string` | 可选ISO 3166-1 国家码 (如, "CN") |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区 </p>
+
 ```ts
 @Component
 export default class LocaleExample extends Script {
@@ -36,11 +47,3 @@ export default class LocaleExample extends Script {
     }
 }
 ```
-
-#### Returns
-
-`string`
-
-以IETF语言标签表示的字符串包含:ISO 639-1 两位字母语言码 (如, "zh");
-可选ISO 15924 四位字母脚本码 (如, "Hans");
-可选ISO 3166-1 国家码 (如, "CN")

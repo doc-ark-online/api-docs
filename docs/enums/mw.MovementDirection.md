@@ -2,7 +2,7 @@
 
 # MovementDirection <Badge type="tip" text="Enumeration" /> <Score text="MovementDirection" />
 
-运动时依据的正方向
+<p class="content-big"> 运动时依据的正方向 </p>
 不同的模式会决定运动时依据的实际轴向修改方式
 AxisDirection模式下,可以修改character的movementAxisDirection决定移动轴向
 ViewDirection模式下,移动轴向会随着视口的旋转自动变化
@@ -17,11 +17,11 @@ ControllerDirection模式下,移动轴向会随着控制器的旋转自动变化
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[AxisDirection](mw.MovementDirection.md#axisdirection)** = ``0`` <br> |
-| **[ControllerDirection](mw.MovementDirection.md#controllerdirection)** = ``2`` <br> |
-| **[ViewDirection](mw.MovementDirection.md#viewdirection)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[AxisDirection](mw.MovementDirection.md#axisdirection)** = ``0``  |
+| :----- |
+| **[ControllerDirection](mw.MovementDirection.md#controllerdirection)** = ``2`` |
+| **[ViewDirection](mw.MovementDirection.md#viewdirection)** = ``1`` |
 
 ## Enumeration Members
 

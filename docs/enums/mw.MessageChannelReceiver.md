@@ -2,17 +2,17 @@
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 
-枚举各个通道的使用与接收方
+<p class="content-big"> 枚举各个通道的使用与接收方 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Client](mw.MessageChannelReceiver.md#client)** = ``1`` <br> |
-| **[MGS](mw.MessageChannelReceiver.md#mgs)** = ``3`` <br> |
-| **[MetaWorld](mw.MessageChannelReceiver.md#metaworld)** = ``0`` <br> |
-| **[TS](mw.MessageChannelReceiver.md#ts)** = ``2`` <br> |
-| **[WebSocket](mw.MessageChannelReceiver.md#websocket)** = ``4`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Client](mw.MessageChannelReceiver.md#client)** = ``1``  |
+| :----- |
+| **[MGS](mw.MessageChannelReceiver.md#mgs)** = ``3`` |
+| **[MetaWorld](mw.MessageChannelReceiver.md#metaworld)** = ``0`` |
+| **[TS](mw.MessageChannelReceiver.md#ts)** = ``2`` |
+| **[WebSocket](mw.MessageChannelReceiver.md#websocket)** = ``4`` |
 
 ## Enumeration Members
 

@@ -2,22 +2,22 @@
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 
-画质等级
+<p class="content-big"> 画质等级 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Cinematic1](mw.GraphicsLevel.md#cinematic1)** = ``7`` <br> |
-| **[Cinematic2](mw.GraphicsLevel.md#cinematic2)** = ``8`` <br> |
-| **[Cinematic3](mw.GraphicsLevel.md#cinematic3)** = ``9`` <br> |
-| **[High1](mw.GraphicsLevel.md#high1)** = ``5`` <br> |
-| **[High2](mw.GraphicsLevel.md#high2)** = ``6`` <br> |
-| **[Low1](mw.GraphicsLevel.md#low1)** = ``0`` <br> |
-| **[Low2](mw.GraphicsLevel.md#low2)** = ``1`` <br> |
-| **[Low3](mw.GraphicsLevel.md#low3)** = ``2`` <br> |
-| **[Medium1](mw.GraphicsLevel.md#medium1)** = ``3`` <br> |
-| **[Medium2](mw.GraphicsLevel.md#medium2)** = ``4`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Cinematic1](mw.GraphicsLevel.md#cinematic1)** = ``7``  |
+| :----- |
+| **[Cinematic2](mw.GraphicsLevel.md#cinematic2)** = ``8`` |
+| **[Cinematic3](mw.GraphicsLevel.md#cinematic3)** = ``9`` |
+| **[High1](mw.GraphicsLevel.md#high1)** = ``5`` |
+| **[High2](mw.GraphicsLevel.md#high2)** = ``6`` |
+| **[Low1](mw.GraphicsLevel.md#low1)** = ``0`` |
+| **[Low2](mw.GraphicsLevel.md#low2)** = ``1`` |
+| **[Low3](mw.GraphicsLevel.md#low3)** = ``2`` |
+| **[Medium1](mw.GraphicsLevel.md#medium1)** = ``3`` |
+| **[Medium2](mw.GraphicsLevel.md#medium2)** = ``4`` |
 
 ## Enumeration Members
 

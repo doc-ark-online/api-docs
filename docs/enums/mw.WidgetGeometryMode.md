@@ -2,14 +2,14 @@
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 
-UI形状枚举
+<p class="content-big"> UI形状枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Cylinder](mw.WidgetGeometryMode.md#cylinder)** = ``1`` <br> |
-| **[Plane](mw.WidgetGeometryMode.md#plane)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Cylinder](mw.WidgetGeometryMode.md#cylinder)** = ``1``  |
+| :----- |
+| **[Plane](mw.WidgetGeometryMode.md#plane)** = ``0`` |
 
 ## Enumeration Members
 

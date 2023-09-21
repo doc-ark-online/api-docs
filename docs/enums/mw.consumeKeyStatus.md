@@ -2,17 +2,17 @@
 
 # consumeKeyStatus <Badge type="tip" text="Enumeration" /> <Score text="consumeKeyStatus" />
 
-大会员扣除钥匙订单返回状态信息
+<p class="content-big"> 大会员扣除钥匙订单返回状态信息 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Error](mw.consumeKeyStatus.md#error)** = ``-3`` <br> |
-| **[InsufficientKeys](mw.consumeKeyStatus.md#insufficientkeys)** = ``33002`` <br> |
-| **[NotPremiumMember](mw.consumeKeyStatus.md#notpremiummember)** = ``-2`` <br> |
-| **[PremiumMemberNotSupported](mw.consumeKeyStatus.md#premiummembernotsupported)** = ``-1`` <br> |
-| **[Success](mw.consumeKeyStatus.md#success)** = ``200`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Error](mw.consumeKeyStatus.md#error)** = ``-3``  |
+| :----- |
+| **[InsufficientKeys](mw.consumeKeyStatus.md#insufficientkeys)** = ``33002`` |
+| **[NotPremiumMember](mw.consumeKeyStatus.md#notpremiummember)** = ``-2`` |
+| **[PremiumMemberNotSupported](mw.consumeKeyStatus.md#premiummembernotsupported)** = ``-1`` |
+| **[Success](mw.consumeKeyStatus.md#success)** = ``200`` |
 
 ## Enumeration Members
 

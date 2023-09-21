@@ -2,14 +2,14 @@
 
 # TriggerShapeType <Badge type="tip" text="Enumeration" /> <Score text="TriggerShapeType" />
 
-碰撞形状
+<p class="content-big"> 碰撞形状 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Box](mw.TriggerShapeType.md#box)** = ``0`` <br> |
-| **[Sphere](mw.TriggerShapeType.md#sphere)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Box](mw.TriggerShapeType.md#box)** = ``0``  |
+| :----- |
+| **[Sphere](mw.TriggerShapeType.md#sphere)** = ``1`` |
 
 ## Enumeration Members
 

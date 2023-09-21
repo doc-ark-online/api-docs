@@ -2,17 +2,17 @@
 
 # CameraSwitchBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="CameraSwitchBlendFunction" />
 
-切换摄像机时运用的混合函数
+<p class="content-big"> 切换摄像机时运用的混合函数 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Cubic](mw.CameraSwitchBlendFunction.md#cubic)** = ``1`` <br> |
-| **[EaseIn](mw.CameraSwitchBlendFunction.md#easein)** = ``2`` <br> |
-| **[EaseInOut](mw.CameraSwitchBlendFunction.md#easeinout)** = ``4`` <br> |
-| **[EaseOut](mw.CameraSwitchBlendFunction.md#easeout)** = ``3`` <br> |
-| **[Linear](mw.CameraSwitchBlendFunction.md#linear)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Cubic](mw.CameraSwitchBlendFunction.md#cubic)** = ``1``  |
+| :----- |
+| **[EaseIn](mw.CameraSwitchBlendFunction.md#easein)** = ``2`` |
+| **[EaseInOut](mw.CameraSwitchBlendFunction.md#easeinout)** = ``4`` |
+| **[EaseOut](mw.CameraSwitchBlendFunction.md#easeout)** = ``3`` |
+| **[Linear](mw.CameraSwitchBlendFunction.md#linear)** = ``0`` |
 
 ## Enumeration Members
 

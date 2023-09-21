@@ -2,12 +2,13 @@
 
 # EnvironmentSettings <Badge type="tip" text="Class" /> <Score text="EnvironmentSettings" />
 
-环境设置
+<p class="content-big"> 环境设置 </p>
 
 **`Effect`**
 
 
-使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下： </p>
+
 ```ts
 @Component
 export default class ClassExample extends Script {
@@ -28,11 +29,18 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new EnvironmentSettings**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number`  |
 | :-----|
-| **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number` <br> 获取当前重力大小|
-| **[getGravityMode](mw.EnvironmentSettings.md#getgravitymode)**(): [`GravityMode`](../enums/mw.GravityMode.md) <br> 获取当前重力模式|
-| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void` <br> 设置世界整体膨胀时间速度|
+| 获取当前重力大小|
+| **[getGravityMode](mw.EnvironmentSettings.md#getgravitymode)**(): [`GravityMode`](../enums/mw.GravityMode.md)  |
+| 获取当前重力模式|
+| **[setGlobalTimeDilation](mw.EnvironmentSettings.md#setglobaltimedilation)**(`timeDilation`: `number`): `void`  |
+| 设置世界整体膨胀时间速度|
 
 ## Methods
 
@@ -42,12 +50,11 @@ export default class ClassExample extends Script {
 
 获取当前重力大小
 
-
 #### Returns
 
-`number`
+| `number` | 重力大小。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力大小 |
+| :------ | :------ |
 
-重力大小。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力大小
 
 ___
 
@@ -57,12 +64,11 @@ ___
 
 获取当前重力模式
 
-
 #### Returns
 
-[`GravityMode`](../enums/mw.GravityMode.md)
+| [`GravityMode`](../enums/mw.GravityMode.md) | 重力模式。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力模式 |
+| :------ | :------ |
 
-重力模式。如果返回值为undefined，请检查是否在客户端调用或者是否设置重力模式
 
 ___
 
@@ -72,17 +78,14 @@ ___
 
 设置世界整体膨胀时间速度
 
+#### Parameters
+
+| `timeDilation` `number` | 膨胀时间速度 |
+| :------ | :------ |
+
+
 调用端自动广播
 
 ::: warning Precautions
 
 世界整体膨胀时间速度默认为1，当膨胀时间速度设置小于1时，世界中所有对象的整体运行时间会开始变慢。膨胀时间速度最小值为0.2。
-
-:::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeDilation` | `number` | 膨胀时间速度 |
-

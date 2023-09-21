@@ -2,9 +2,10 @@
 
 # PlayerState <Badge type="tip" text="Class" /> <Score text="PlayerState" />
 
-PlayerState基类
+<p class="content-big"> PlayerState基类 </p>
 
-使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值. </p>
+
 * ``` typescript
   // 服务端每个玩家进入游戏时会自动创建一个实例
   @Core.Class
@@ -54,35 +55,48 @@ PlayerState基类
 
 ## Table of contents
 
-| Accessors |
-| :-----|
+### Constructors <Score text="Constructors" /> 
+| **new PlayerState**(`info`: `ActorInfo`)  |
+| :----- |
 
 
 ::: details 点击查看继承
-| Accessors |
-| :-----|
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md) <br> 脚本对应的GameObject|
-| **[name](mw.Script.md#name)**(): `string` <br> |
+### Constructors <Score text="Constructors" /> 
+| **new Script**(`data`: `ActorInfo`)  |
+| :----- |
 :::
 
 
-| Methods |
-| :-----|
+### Accessors <Score text="Accessors" /> 
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
 | :-----|
-| **[destroy](mw.Script.md#destroy)**(): `void` <br> |
-| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> <br> |
+| 脚本对应的GameObject|
+| **[guid](mw.Script.md#guid)**(): `string` |
+| **[name](mw.Script.md#name)**(): `string` |
+:::
+
+
+### Methods <Score text="Methods" /> 
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[destroy](mw.Script.md#destroy)**(): `void`  |
+| :----- |
+| **[isRunningClient](mw.Script.md#isrunningclient)**(): `boolean`  |
+| 是否为客户端|
+| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
 :::
 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `info` | `ActorInfo` |
+| :------ | :------ |
 
 #### Overrides
 

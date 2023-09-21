@@ -2,9 +2,10 @@
 
 # ScriptingSettings <Badge type="tip" text="Class" /> <Score text="ScriptingSettings" />
 
-全局的脚本配置信息
+<p class="content-big"> 全局的脚本配置信息 </p>
 
-使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在Log中看到对应方法调用信息。代码如下：
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在Log中看到对应方法调用信息。代码如下： </p>
+
 ```ts
 @Component
 export default class ClassExample extends Script {
@@ -22,9 +23,14 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new ScriptingSettings**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void`  |
 | :-----|
-| **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void` <br> 设置异步回调超时时间，单位毫秒，默认10000|
+| 设置异步回调超时时间，单位毫秒，默认10000|
 
 ## Methods
 
@@ -34,16 +40,16 @@ export default class ClassExample extends Script {
 
 设置异步回调超时时间，单位毫秒，默认10000
 
+#### Parameters
 
-使用示例:调用方法
+| `timeout` `number` | 超时时间 |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:调用方法 </p>
+
 ```ts
 ScriptingSettings.setGlobalAsyncTimeout(1000 * 10);
 const obj = await GameObject.asyncFind("场景中的物体Guid");
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `timeout` | `number` | 超时时间 |
-

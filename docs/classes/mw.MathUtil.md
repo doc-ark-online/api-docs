@@ -2,61 +2,111 @@
 
 # MathUtil <Badge type="tip" text="Class" /> <Score text="MathUtil" />
 
-数学库工具类
+<p class="content-big"> 数学库工具 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[D2R](mw.MathUtil.md#d2r)**: `number` <br> 角度转换弧度参数（Math.PI/180）|
-| **[DBL\_DECIMAL\_DIG](mw.MathUtil.md#dbl_decimal_dig)**: `number` <br> 序列化/反序列化浮点值所要求的十进制精度 (double)|
-| **[DBL\_DIG](mw.MathUtil.md#dbl_dig)**: `number` <br> 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (double)|
-| **[DBL\_EPSILON](mw.MathUtil.md#dbl_epsilon)**: `number` <br> 1 和大于 1 的最小浮点数之间的差值。(double)|
-| **[DBL\_HAS\_SUBNORM](mw.MathUtil.md#dbl_has_subnorm)**: `number` <br> 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。 (double)|
-| **[DBL\_MANT\_DIG](mw.MathUtil.md#dbl_mant_dig)**: `number` <br> 有效数字（尾数）的位数(double)|
-| **[DBL\_MAX](mw.MathUtil.md#dbl_max)**: `number` <br> 最大的有效浮点数的值（为正数），也即浮点数的最大值。(double)|
-| **[DBL\_MAX\_10\_EXP](mw.MathUtil.md#dbl_max_10_exp)**: `number` <br> 分别为能够使 10 的该整数减一次幂为可表示的有限的最大正整数 (double)|
-| **[DBL\_MAX\_EXP](mw.MathUtil.md#dbl_max_exp)**: `number` <br> 最大二进制指数 (double)|
-| **[DBL\_MIN](mw.MathUtil.md#dbl_min)**: `number` <br> 最小规格化正数值 (double)|
-| **[DBL\_MIN\_10\_EXP](mw.MathUtil.md#dbl_min_10_exp)**: `number` <br> 能够使 10 的该整数减一次幂为规格化的最小负整数 (double)|
-| **[DBL\_MIN\_EXP](mw.MathUtil.md#dbl_min_exp)**: `number` <br> 能够使FLT_RADIX 的该整数减一次幂为规格化的最小负整数 (double)|
-| **[DBL\_RADIX](mw.MathUtil.md#dbl_radix)**: `number` <br> 基数(进制)(double)|
-| **[DBL\_TRUE\_MIN](mw.MathUtil.md#dbl_true_min)**: `number` <br> 最小正数值(double)|
-| **[EPSILON](mw.MathUtil.md#epsilon)**: `number` <br> 最小误差数|
-| **[FLOAT\_NON\_FRACTIONAL](mw.MathUtil.md#float_non_fractional)**: `number` <br> 所有大于或等于此值的单精度浮点数都没有小数|
-| **[FLT\_DECIMAL\_DIG](mw.MathUtil.md#flt_decimal_dig)**: `number` <br> 序列化/反序列化浮点值所要求的十进制精度 (float)|
-| **[FLT\_DIG](mw.MathUtil.md#flt_dig)**: `number` <br> 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (float)|
-| **[FLT\_EPSILON](mw.MathUtil.md#flt_epsilon)**: `number` <br> 1 和大于 1 的最小浮点数之间的差值。(float)|
-| **[FLT\_GUARD](mw.MathUtil.md#flt_guard)**: `number` <br> 算术结果中是否使用保护位(例如 0)|
-| **[FLT\_HAS\_SUBNORM](mw.MathUtil.md#flt_has_subnorm)**: `number` <br> 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。|
-| **[FLT\_MANT\_DIG](mw.MathUtil.md#flt_mant_dig)**: `number` <br> 有效数字（尾数）的位数 (float)|
-| **[FLT\_MAX](mw.MathUtil.md#flt_max)**: `number` <br> 最大的有效浮点数的值(为正数)，也即浮点数的最大值。(float)|
-| **[FLT\_MAX\_10\_EXP](mw.MathUtil.md#flt_max_10_exp)**: `number` <br> 转换成十进制形式后，规格化浮点数的指数的最大值（为正数）。 (float)|
-| **[FLT\_MAX\_EXP](mw.MathUtil.md#flt_max_exp)**: `number` <br> 最大二进制指数 (float)|
-| **[FLT\_MIN](mw.MathUtil.md#flt_min)**: `number` <br> 最小正规值 (float)|
-| **[FLT\_MIN\_10\_EXP](mw.MathUtil.md#flt_min_10_exp)**: `number` <br> 最小十进制指数 (float)|
-| **[FLT\_MIN\_EXP](mw.MathUtil.md#flt_min_exp)**: `number` <br> 最小二进制指数 (float)|
-| **[FLT\_NORMALIZE](mw.MathUtil.md#flt_normalize)**: `number` <br> 指示应始终规范化浮点数。|
-| **[FLT\_RADIX](mw.MathUtil.md#flt_radix)**: `number` <br> 基数(进制)(float)|
-| **[FLT\_TRUE\_MIN](mw.MathUtil.md#flt_true_min)**: `number` <br> 最小正数值 (float)|
-| **[HALF\_PI](mw.MathUtil.md#half_pi)**: `number` <br> PI/2|
-| **[INV\_PI](mw.MathUtil.md#inv_pi)**: `number` <br> 1/PI|
-| **[R2D](mw.MathUtil.md#r2d)**: `number` <br> 弧度转换角度参数|
-| **[SIGN\_BIT](mw.MathUtil.md#sign_bit)**: `number` <br> 字节偏移|
+### Constructors <Score text="Constructors" /> 
+| **new MathUtil**()  |
+| :----- |
 
-| Methods |
+### Properties <Score text="Properties" /> 
+| **[D2R](mw.MathUtil.md#d2r)**: `number`  |
 | :-----|
-| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean` <br> 判断终点位置是否处于起点位置在某一方向的一定角度内|
-| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number` <br> 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
-| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number` <br> 计算cos值|
-| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number` <br> 根据输入的度数返回弧度值|
-| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number` <br> 返回 数值x 除以 数值y 的余数|
-| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number` <br> 基于 alpha 在 数值a 和 数值b 之间线性插值|
-| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number` <br> 根据输入的弧度值返回度数|
-| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内浮点数[包含min, 不包含max)|
-| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number` <br> 获取随机范围内整数[包含min, 不包含max)|
-| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number` <br> 计算sin值|
-| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number` <br> 计算tan值|
+| 角度转换弧度参数（Math.PI/180）|
+| **[DBL\_DECIMAL\_DIG](mw.MathUtil.md#dbl_decimal_dig)**: `number`  |
+| 序列化/反序列化浮点值所要求的十进制精度 (double)|
+| **[DBL\_DIG](mw.MathUtil.md#dbl_dig)**: `number`  |
+| 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (double)|
+| **[DBL\_EPSILON](mw.MathUtil.md#dbl_epsilon)**: `number`  |
+| 1 和大于 1 的最小浮点数之间的差值。(double)|
+| **[DBL\_HAS\_SUBNORM](mw.MathUtil.md#dbl_has_subnorm)**: `number`  |
+| 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。 (double)|
+| **[DBL\_MANT\_DIG](mw.MathUtil.md#dbl_mant_dig)**: `number`  |
+| 有效数字（尾数）的位数(double)|
+| **[DBL\_MAX](mw.MathUtil.md#dbl_max)**: `number`  |
+| 最大的有效浮点数的值（为正数），也即浮点数的最大值。(double)|
+| **[DBL\_MAX\_10\_EXP](mw.MathUtil.md#dbl_max_10_exp)**: `number`  |
+| 分别为能够使 10 的该整数减一次幂为可表示的有限的最大正整数 (double)|
+| **[DBL\_MAX\_EXP](mw.MathUtil.md#dbl_max_exp)**: `number`  |
+| 最大二进制指数 (double)|
+| **[DBL\_MIN](mw.MathUtil.md#dbl_min)**: `number`  |
+| 最小规格化正数值 (double)|
+| **[DBL\_MIN\_10\_EXP](mw.MathUtil.md#dbl_min_10_exp)**: `number`  |
+| 能够使 10 的该整数减一次幂为规格化的最小负整数 (double)|
+| **[DBL\_MIN\_EXP](mw.MathUtil.md#dbl_min_exp)**: `number`  |
+| 能够使FLT_RADIX 的该整数减一次幂为规格化的最小负整数 (double)|
+| **[DBL\_RADIX](mw.MathUtil.md#dbl_radix)**: `number`  |
+| 基数(进制)(double)|
+| **[DBL\_TRUE\_MIN](mw.MathUtil.md#dbl_true_min)**: `number`  |
+| 最小正数值(double)|
+| **[EPSILON](mw.MathUtil.md#epsilon)**: `number`  |
+| 最小误差数|
+| **[FLOAT\_NON\_FRACTIONAL](mw.MathUtil.md#float_non_fractional)**: `number`  |
+| 所有大于或等于此值的单精度浮点数都没有小数|
+| **[FLT\_DECIMAL\_DIG](mw.MathUtil.md#flt_decimal_dig)**: `number`  |
+| 序列化/反序列化浮点值所要求的十进制精度 (float)|
+| **[FLT\_DIG](mw.MathUtil.md#flt_dig)**: `number`  |
+| 文本的往返转换中保留而不会因舍入或溢出发生改变的的十进制位数 (float)|
+| **[FLT\_EPSILON](mw.MathUtil.md#flt_epsilon)**: `number`  |
+| 1 和大于 1 的最小浮点数之间的差值。(float)|
+| **[FLT\_GUARD](mw.MathUtil.md#flt_guard)**: `number`  |
+| 算术结果中是否使用保护位(例如 0)|
+| **[FLT\_HAS\_SUBNORM](mw.MathUtil.md#flt_has_subnorm)**: `number`  |
+| 指明类型是否支持非正规数值：-1 为不确定，0 为不支持，1 为支持。|
+| **[FLT\_MANT\_DIG](mw.MathUtil.md#flt_mant_dig)**: `number`  |
+| 有效数字（尾数）的位数 (float)|
+| **[FLT\_MAX](mw.MathUtil.md#flt_max)**: `number`  |
+| 最大的有效浮点数的值(为正数)，也即浮点数的最大值。(float)|
+| **[FLT\_MAX\_10\_EXP](mw.MathUtil.md#flt_max_10_exp)**: `number`  |
+| 转换成十进制形式后，规格化浮点数的指数的最大值（为正数）。 (float)|
+| **[FLT\_MAX\_EXP](mw.MathUtil.md#flt_max_exp)**: `number`  |
+| 最大二进制指数 (float)|
+| **[FLT\_MIN](mw.MathUtil.md#flt_min)**: `number`  |
+| 最小正规值 (float)|
+| **[FLT\_MIN\_10\_EXP](mw.MathUtil.md#flt_min_10_exp)**: `number`  |
+| 最小十进制指数 (float)|
+| **[FLT\_MIN\_EXP](mw.MathUtil.md#flt_min_exp)**: `number`  |
+| 最小二进制指数 (float)|
+| **[FLT\_NORMALIZE](mw.MathUtil.md#flt_normalize)**: `number`  |
+| 指示应始终规范化浮点数。|
+| **[FLT\_RADIX](mw.MathUtil.md#flt_radix)**: `number`  |
+| 基数(进制)(float)|
+| **[FLT\_TRUE\_MIN](mw.MathUtil.md#flt_true_min)**: `number`  |
+| 最小正数值 (float)|
+| **[HALF\_PI](mw.MathUtil.md#half_pi)**: `number`  |
+| PI/2|
+| **[INV\_PI](mw.MathUtil.md#inv_pi)**: `number`  |
+| 1/PI|
+| **[R2D](mw.MathUtil.md#r2d)**: `number`  |
+| 弧度转换角度参数|
+| **[SIGN\_BIT](mw.MathUtil.md#sign_bit)**: `number`  |
+| 字节偏移|
+
+### Methods <Score text="Methods" /> 
+| **[angleCheck](mw.MathUtil.md#anglecheck)**(`StartLocation`: [`Vector`](mw.Vector.md), `StartDirection`: [`Vector`](mw.Vector.md), `TargetLocation`: [`Vector`](mw.Vector.md), `Angle`: `number`): `boolean`  |
+| :-----|
+| 判断终点位置是否处于起点位置在某一方向的一定角度内|
+| **[clamp](mw.MathUtil.md#clamp)**(`a`: `number`, `min`: `number`, `max`: `number`): `number`  |
+| 将传入的数值a限制在min与max范围内，超出部分自动舍弃|
+| **[cos](mw.MathUtil.md#cos)**(`a`: `number`): `number`  |
+| 计算cos值|
+| **[degreesToRadians](mw.MathUtil.md#degreestoradians)**(`a`: `number`): `number`  |
+| 根据输入的度数返回弧度值|
+| **[fmod](mw.MathUtil.md#fmod)**(`x`: `number`, `y`: `number`): `number`  |
+| 返回 数值x 除以 数值y 的余数|
+| **[lerp](mw.MathUtil.md#lerp)**(`a`: `number`, `b`: `number`, `alpha`: `number`): `number`  |
+| 基于 alpha 在 数值a 和 数值b 之间线性插值|
+| **[radiansToDegrees](mw.MathUtil.md#radianstodegrees)**(`a`: `number`): `number`  |
+| 根据输入的弧度值返回度数|
+| **[randomFloat](mw.MathUtil.md#randomfloat)**(`min`: `number`, `max`: `number`): `number`  |
+| 获取随机范围内浮点数[包含min, 不包含max)|
+| **[randomInt](mw.MathUtil.md#randomint)**(`min`: `number`, `max`: `number`): `number`  |
+| 获取随机范围内整数[包含min, 不包含max)|
+| **[sin](mw.MathUtil.md#sin)**(`a`: `number`): `number`  |
+| 计算sin值|
+| **[tan](mw.MathUtil.md#tan)**(`a`: `number`): `number`  |
+| 计算tan值|
 
 ## Properties
 
@@ -346,8 +396,22 @@ ___
 
 判断终点位置是否处于起点位置在某一方向的一定角度内
 
+#### Parameters
 
-使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20）
+| `StartLocation` [`Vector`](mw.Vector.md) | 起始位置 |
+| :------ | :------ |
+| `StartDirection` [`Vector`](mw.Vector.md) | 起始方向 |
+| `TargetLocation` [`Vector`](mw.Vector.md) | 目标位置 |
+| `Angle` `number` | 检测角度 |
+
+#### Returns
+
+| `boolean` | true，在角度范围内 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例: 如下示例原点X方向进行60度角的检测基本流程，假设目标位置（100,20,20） </p>
+
 ```ts
 if(angleCheck(new mw.Vector(0,0,0), new mw.Vector(1,0,0), new mw.Vector(100,20,20), 60)) {
 // 在范围内
@@ -357,21 +421,6 @@ else {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `StartLocation` | [`Vector`](mw.Vector.md) | 起始位置 |
-| `StartDirection` | [`Vector`](mw.Vector.md) | 起始方向 |
-| `TargetLocation` | [`Vector`](mw.Vector.md) | 目标位置 |
-| `Angle` | `number` | 检测角度 |
-
-#### Returns
-
-`boolean`
-
-true，在角度范围内
-
 ___
 
 ### clamp <Score text="clamp" /> 
@@ -380,8 +429,21 @@ ___
 
 将传入的数值a限制在min与max范围内，超出部分自动舍弃
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。
+| `a` `number` | 数值a |
+| :------ | :------ |
+| `min` `number` | 最小值 |
+| `max` `number` | 最大值 |
+
+#### Returns
+
+| `number` | 计算结果 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20的最大值为10的值。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -399,20 +461,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
 ___
 
 ### cos <Score text="cos" /> 
@@ -421,8 +469,19 @@ ___
 
 计算cos值
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。
+| `a` `number` | 待计算的数值a |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | cos值 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出cos值-1。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -440,18 +499,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
-
-#### Returns
-
-`number`
-
-cos值
-
 ___
 
 ### degreesToRadians <Score text="degreesToRadians" /> 
@@ -460,8 +507,19 @@ ___
 
 根据输入的度数返回弧度值
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。
+| `a` `number` | 度数 |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | 弧度值 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出180度角的弧度值。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -480,18 +538,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 度数 |
-
-#### Returns
-
-`number`
-
-弧度值
-
 ___
 
 ### fmod <Score text="fmod" /> 
@@ -500,8 +546,20 @@ ___
 
 返回 数值x 除以 数值y 的余数
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。
+| `x` `number` | 数值x |
+| :------ | :------ |
+| `y` `number` | 数值y |
+
+#### Returns
+
+| `number` | 数值x 除以 数值y 的余数 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出20除以3的余数。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -519,19 +577,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 数值x |
-| `y` | `number` | 数值y |
-
-#### Returns
-
-`number`
-
-数值x 除以 数值y 的余数
-
 ___
 
 ### lerp <Score text="lerp" /> 
@@ -540,6 +585,18 @@ ___
 
 基于 alpha 在 数值a 和 数值b 之间线性插值
 
+#### Parameters
+
+| `a` `number` | 数值a |
+| :------ | :------ |
+| `b` `number` | 数值b |
+| `alpha` `number` | 插值 |
+
+#### Returns
+
+| `number` | 计算结果 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -547,7 +604,8 @@ alpha=0 时 数值a 的 100% 和 alpha=1 时 数值b 的 100%
 
 :::
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的中间值。
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的中间值。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -565,20 +623,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 数值a |
-| `b` | `number` | 数值b |
-| `alpha` | `number` | 插值 |
-
-#### Returns
-
-`number`
-
-计算结果
-
 ___
 
 ### radiansToDegrees <Score text="radiansToDegrees" /> 
@@ -587,8 +631,19 @@ ___
 
 根据输入的弧度值返回度数
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。
+| `a` `number` | 弧度值 |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | 度数 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出π的度数。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -607,18 +662,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 弧度值 |
-
-#### Returns
-
-`number`
-
-度数
-
 ___
 
 ### randomFloat <Score text="randomFloat" /> 
@@ -627,8 +670,20 @@ ___
 
 获取随机范围内浮点数[包含min, 不包含max)
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。
+| `min` `number` | 最小值 |
+| :------ | :------ |
+| `max` `number` | 最大值 |
+
+#### Returns
+
+| `number` | 随机范围内的浮点数 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机浮点数。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -646,19 +701,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的浮点数
-
 ___
 
 ### randomInt <Score text="randomInt" /> 
@@ -667,8 +709,20 @@ ___
 
 获取随机范围内整数[包含min, 不包含max)
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。
+| `min` `number` | 最小值 |
+| :------ | :------ |
+| `max` `number` | 最大值 |
+
+#### Returns
+
+| `number` | 随机范围内的整数 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出1和10之间的随机整数。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -686,19 +740,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `min` | `number` | 最小值 |
-| `max` | `number` | 最大值 |
-
-#### Returns
-
-`number`
-
-随机范围内的整数
-
 ___
 
 ### sin <Score text="sin" /> 
@@ -707,8 +748,19 @@ ___
 
 计算sin值
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。
+| `a` `number` | 待计算的数值a |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | sin值 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出sin值1。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -726,18 +778,6 @@ export default class MathExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
-
-#### Returns
-
-`number`
-
-sin值
-
 ___
 
 ### tan <Score text="tan" /> 
@@ -746,8 +786,19 @@ ___
 
 计算tan值
 
+#### Parameters
 
-使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。
+| `a` `number` | 待计算的数值a |
+| :------ | :------ |
+
+#### Returns
+
+| `number` | tan值 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为MathExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出Math.PI / 4的tan值。 </p>
+
 ```ts
 @Component
 export default class MathExample extends Script {
@@ -764,15 +815,3 @@ export default class MathExample extends Script {
     }
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | `number` | 待计算的数值a |
-
-#### Returns
-
-`number`
-
-tan值

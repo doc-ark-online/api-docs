@@ -2,17 +2,17 @@
 
 # SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 
-UI节点显示规则
+<p class="content-big"> UI节点显示规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Collapsed](mw.SlateVisibility.md#collapsed)** = ``1`` <br> |
-| **[Hidden](mw.SlateVisibility.md#hidden)** = ``2`` <br> |
-| **[HitTestInvisible](mw.SlateVisibility.md#hittestinvisible)** = ``3`` <br> |
-| **[SelfHitTestInvisible](mw.SlateVisibility.md#selfhittestinvisible)** = ``4`` <br> |
-| **[Visible](mw.SlateVisibility.md#visible)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Collapsed](mw.SlateVisibility.md#collapsed)** = ``1``  |
+| :----- |
+| **[Hidden](mw.SlateVisibility.md#hidden)** = ``2`` |
+| **[HitTestInvisible](mw.SlateVisibility.md#hittestinvisible)** = ``3`` |
+| **[SelfHitTestInvisible](mw.SlateVisibility.md#selfhittestinvisible)** = ``4`` |
+| **[Visible](mw.SlateVisibility.md#visible)** = ``0`` |
 
 ## Enumeration Members
 

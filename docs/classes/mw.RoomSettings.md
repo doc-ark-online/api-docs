@@ -2,9 +2,10 @@
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
-房间设置
+<p class="content-big"> 房间设置 </p>
 
-使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
+<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下： </p>
+
 ```ts
 @Component
 export default class ClassExample extends Script {
@@ -35,13 +36,22 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new RoomSettings**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[enableJoiningMidgame](mw.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void`  |
 | :-----|
-| **[enableJoiningMidgame](mw.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void` <br> 设置中途加入开关|
-| **[getMaxPlayers](mw.RoomSettings.md#getmaxplayers)**(): `number` <br> 获取玩家数量上限|
-| **[getReservedPlayers](mw.RoomSettings.md#getreservedplayers)**(): `number` <br> 获取服务器预留玩家数量|
-| **[isJoiningMidgameEnabled](mw.RoomSettings.md#isjoiningmidgameenabled)**(): `boolean` <br> 获取是否开启中途加入|
-| **[isPlayerReserveEnabled](mw.RoomSettings.md#isplayerreserveenabled)**(): `boolean` <br> 获取服务器预留玩家是否开启|
+| 设置中途加入开关|
+| **[getMaxPlayers](mw.RoomSettings.md#getmaxplayers)**(): `number`  |
+| 获取玩家数量上限|
+| **[getReservedPlayers](mw.RoomSettings.md#getreservedplayers)**(): `number`  |
+| 获取服务器预留玩家数量|
+| **[isJoiningMidgameEnabled](mw.RoomSettings.md#isjoiningmidgameenabled)**(): `boolean`  |
+| 获取是否开启中途加入|
+| **[isPlayerReserveEnabled](mw.RoomSettings.md#isplayerreserveenabled)**(): `boolean`  |
+| 获取服务器预留玩家是否开启|
 
 ## Methods
 
@@ -51,12 +61,11 @@ export default class ClassExample extends Script {
 
 设置中途加入开关
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `isEnable` | `boolean` | -true:开启中途加入 -false:关闭中途加入 |
+| `isEnable` `boolean` | -true:开启中途加入 -false:关闭中途加入 |
+| :------ | :------ |
+
 
 
 ___
@@ -67,12 +76,11 @@ ___
 
 获取玩家数量上限
 
-
 #### Returns
 
-`number`
+| `number` | DS房间玩家数量上限。如果返回值为undefined，请检查是否在服务端调用或者玩家数量上限是否为空 |
+| :------ | :------ |
 
-DS房间玩家数量上限。如果返回值为undefined，请检查是否在服务端调用或者玩家数量上限是否为空
 
 ___
 
@@ -82,12 +90,11 @@ ___
 
 获取服务器预留玩家数量
 
-
 #### Returns
 
-`number`
+| `number` | 服务器预留玩家数量。如果返回值为undefined，请检查是否在服务端调用或者预留玩家数量是否为空 |
+| :------ | :------ |
 
-服务器预留玩家数量。如果返回值为undefined，请检查是否在服务端调用或者预留玩家数量是否为空
 
 ___
 
@@ -97,12 +104,11 @@ ___
 
 获取是否开启中途加入
 
-
 #### Returns
 
-`boolean`
+| `boolean` | true:开启中途加入 false:关闭中途加入。如果返回值为undefined，请检查是否在服务端调用 |
+| :------ | :------ |
 
-true:开启中途加入 false:关闭中途加入。如果返回值为undefined，请检查是否在服务端调用
 
 ___
 
@@ -112,9 +118,8 @@ ___
 
 获取服务器预留玩家是否开启
 
-
 #### Returns
 
-`boolean`
+| `boolean` | 预留玩家功能是否开启。如果返回值为undefined，请检查是否在服务端调用或者预留玩家是否为空 |
+| :------ | :------ |
 
-预留玩家功能是否开启。如果返回值为undefined，请检查是否在服务端调用或者预留玩家是否为空

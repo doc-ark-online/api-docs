@@ -2,28 +2,32 @@
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
-节点Transform
+<p class="content-big"> 节点Transform </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new UITransform**(`x`: `number`, `y`: `number`, `w`: `number`, `h`: `number`)  |
 | :-----|
-| **[position](mw.UITransform.md#position)**: [`Vector2`](mw.Vector2.md) <br> 位置|
-| **[size](mw.UITransform.md#size)**: [`Vector2`](mw.Vector2.md) <br> 大小|
+| 通过点构造|
+
+### Properties <Score text="Properties" /> 
+| **[position](mw.UITransform.md#position)**: [`Vector2`](mw.Vector2.md)  |
+| :-----|
+| 位置|
+| **[size](mw.UITransform.md#size)**: [`Vector2`](mw.Vector2.md)  |
+| 大小|
 
 构造每一个值
-
-**`Effect`**
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 位置 Position.X |
-| `y` | `number` |  位置 Position.Y |
-| `w` | `number` | 大小 Size.W 宽 |
-| `h` | `number` | 大小 Size.H 高 |
+| `x` `number` | 位置 Position.X |
+| :------ | :------ |
+| `y` `number` |  位置 Position.Y |
+| `w` `number` | 大小 Size.W 宽 |
+| `h` `number` | 大小 Size.H 高 |
 
 • **new UITransform**(`xy`, `wh`)
 
@@ -34,10 +38,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `xy` | [`Vector2`](mw.Vector2.md) | 位置 |
-| `wh` | [`Vector2`](mw.Vector2.md) | 大小 |
+| `xy` [`Vector2`](mw.Vector2.md) | 位置 |
+| :------ | :------ |
+| `wh` [`Vector2`](mw.Vector2.md) | 大小 |
 
 ## Properties
 

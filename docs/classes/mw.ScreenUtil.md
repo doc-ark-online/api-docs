@@ -1,16 +1,23 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / ScreenUtil
+[UTILITY](../groups/Core.UTILITY.md) / ScreenUtil
 
 # ScreenUtil <Badge type="tip" text="Class" /> <Score text="ScreenUtil" />
 
-屏幕视口设置相关的接口
+<p class="content-big"> 屏幕视口工具 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new ScreenUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[]  |
 | :-----|
-| **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[] <br> 获取视口相应位置的物体|
-| **[getSightBeadPosition](mw.ScreenUtil.md#getsightbeadposition)**(): [`Vector`](mw.Vector.md) <br> 获取相机中心点所瞄准的世界位置|
-| **[projectWorldPositionToWidgetPosition](mw.ScreenUtil.md#projectworldpositiontowidgetposition)**(`player`: [`Player`](mw.Player.md), `worldLocation`: [`Vector`](mw.Vector.md), `outScreenPosition`: [`Vector2`](mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean` <br> 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
+| 获取视口相应位置的物体|
+| **[getSightBeadPosition](mw.ScreenUtil.md#getsightbeadposition)**(): [`Vector`](mw.Vector.md)  |
+| 获取相机中心点所瞄准的世界位置|
+| **[projectWorldPositionToWidgetPosition](mw.ScreenUtil.md#projectworldpositiontowidgetposition)**(`player`: [`Player`](mw.Player.md), `worldLocation`: [`Vector`](mw.Vector.md), `outScreenPosition`: [`Vector2`](mw.Vector2.md), `isPlayerViewportRelative`: `boolean`): `boolean`  |
+| 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。|
 
 ## Methods
 
@@ -20,8 +27,23 @@
 
 获取视口相应位置的物体
 
+#### Parameters
 
-使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，获取触摸位置所对应的世界Object
+| `sceneX` `number` | 视口坐标X |
+| :------ | :------ |
+| `sceneY` `number` | 视口坐标Y |
+| `distance?` `number` | 检测距离 default:100000 |
+| `multiTrace?` `boolean` | 是否获取多个GameObject default:false |
+| `onRay?` `boolean` | 是否开启射线显示效果 default:false |
+
+#### Returns
+
+| [`HitResult`](mw.HitResult.md)[] | 点击位置的物体 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，获取触摸位置所对应的世界Object </p>
+
 ```ts
 @Component
 export default class ScreenExample extends Script {
@@ -41,22 +63,6 @@ export default class ScreenExample extends Script {
        return ScreenUtil.getGameObjectByScreenPosition(location.x, location.y)[0].gameObject;
     }
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `sceneX` | `number` | 视口坐标X |
-| `sceneY` | `number` | 视口坐标Y |
-| `distance?` | `number` | 检测距离 default:100000 |
-| `multiTrace?` | `boolean` | 是否获取多个GameObject default:false |
-| `onRay?` | `boolean` | 是否开启射线显示效果 default:false |
-
-#### Returns
-
-[`HitResult`](mw.HitResult.md)[]
-
-点击位置的物体
-
 ___
 
 ### getSightBeadPosition <Score text="getSightBeadPosition" /> 
@@ -65,8 +71,14 @@ ___
 
 获取相机中心点所瞄准的世界位置
 
+#### Returns
 
-使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置
+| [`Vector`](mw.Vector.md) | 目标点世界位置 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置 </p>
+
 ```
 @Component
 export default class ScreenExample extends Script {
@@ -81,12 +93,6 @@ export default class ScreenExample extends Script {
         })
     }
 
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-目标点世界位置
-
 ___
 
 ### projectWorldPositionToWidgetPosition <Score text="projectWorldPositionToWidgetPosition" /> 
@@ -95,18 +101,16 @@ ___
 
 获取投影世界到播放器的屏幕位置，然后将其转换为控件位置，考虑任何质量缩放。
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](mw.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
-| `worldLocation` | [`Vector`](mw.Vector.md) | 要投射的世界位置 |
-| `outScreenPosition` | [`Vector2`](mw.Vector2.md) | 在视口的位置 |
-| `isPlayerViewportRelative` | `boolean` | 是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
+| `player` [`Player`](mw.Player.md) | 玩家在游戏世界中的位置投射到屏幕上的控制器 |
+| :------ | :------ |
+| `worldLocation` [`Vector`](mw.Vector.md) | 要投射的世界位置 |
+| `outScreenPosition` [`Vector2`](mw.Vector2.md) | 在视口的位置 |
+| `isPlayerViewportRelative` `boolean` | 是否与玩家视口子区域相关(当在分屏中使用玩家附加的小部件或当宽度比受限时有用)如果位置投射到屏幕上，返回true |
 
 #### Returns
 
-`boolean`
+| `boolean` | boolean |
+| :------ | :------ |
 
-boolean

@@ -2,15 +2,15 @@
 
 # SoundPlayState <Badge type="tip" text="Enumeration" /> <Score text="SoundPlayState" />
 
-音效播放状态
+<p class="content-big"> 音效播放状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Paused](mw.SoundPlayState.md#paused)** = ``2`` <br> |
-| **[Playing](mw.SoundPlayState.md#playing)** = ``0`` <br> |
-| **[Stopped](mw.SoundPlayState.md#stopped)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Paused](mw.SoundPlayState.md#paused)** = ``2``  |
+| :----- |
+| **[Playing](mw.SoundPlayState.md#playing)** = ``0`` |
+| **[Stopped](mw.SoundPlayState.md#stopped)** = ``1`` |
 
 ## Enumeration Members
 

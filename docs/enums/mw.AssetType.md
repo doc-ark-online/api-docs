@@ -2,21 +2,21 @@
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 
-资源类型
+<p class="content-big"> 资源类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[All](mw.AssetType.md#all)** = ``0`` <br> |
-| **[Character](mw.AssetType.md#character)** = ``7`` <br> |
-| **[Cloth](mw.AssetType.md#cloth)** = ``3`` <br> |
-| **[ParticleSystem](mw.AssetType.md#particlesystem)** = ``8`` <br> |
-| **[Prefab](mw.AssetType.md#prefab)** = ``6`` <br> |
-| **[SkeletalMesh](mw.AssetType.md#skeletalmesh)** = ``2`` <br> |
-| **[SoundWave](mw.AssetType.md#soundwave)** = ``4`` <br> |
-| **[StaticMesh](mw.AssetType.md#staticmesh)** = ``1`` <br> |
-| **[Texture](mw.AssetType.md#texture)** = ``5`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[All](mw.AssetType.md#all)** = ``0``  |
+| :----- |
+| **[Character](mw.AssetType.md#character)** = ``7`` |
+| **[Cloth](mw.AssetType.md#cloth)** = ``3`` |
+| **[ParticleSystem](mw.AssetType.md#particlesystem)** = ``8`` |
+| **[Prefab](mw.AssetType.md#prefab)** = ``6`` |
+| **[SkeletalMesh](mw.AssetType.md#skeletalmesh)** = ``2`` |
+| **[SoundWave](mw.AssetType.md#soundwave)** = ``4`` |
+| **[StaticMesh](mw.AssetType.md#staticmesh)** = ``1`` |
+| **[Texture](mw.AssetType.md#texture)** = ``5`` |
 
 ## Enumeration Members
 

@@ -2,13 +2,18 @@
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
-角色输入事件
+<p class="content-big"> 角色输入事件 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new CharacterEvent**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[toInputEvent](mw.CharacterEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
 | :-----|
-| **[toInputEvent](mw.CharacterEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md) <br> 转化为 InputEvent|
+| 转化为 InputEvent|
 
 默认构造
 
@@ -20,9 +25,8 @@
 
 转化为 InputEvent
 
-
 #### Returns
 
-[`InputEvent`](mw.InputEvent.md)
+| [`InputEvent`](mw.InputEvent.md) | 返回转化后InputEvent |
+| :------ | :------ |
 
-返回转化后InputEvent

@@ -2,16 +2,16 @@
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 
-音效衰减函数模型
+<p class="content-big"> 音效衰减函数模型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Inverse](mw.AttenuationDistanceModel.md#inverse)** = ``2`` <br> |
-| **[Linear](mw.AttenuationDistanceModel.md#linear)** = ``0`` <br> |
-| **[LogReverse](mw.AttenuationDistanceModel.md#logreverse)** = ``3`` <br> |
-| **[Logarithmic](mw.AttenuationDistanceModel.md#logarithmic)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Inverse](mw.AttenuationDistanceModel.md#inverse)** = ``2``  |
+| :----- |
+| **[Linear](mw.AttenuationDistanceModel.md#linear)** = ``0`` |
+| **[LogReverse](mw.AttenuationDistanceModel.md#logreverse)** = ``3`` |
+| **[Logarithmic](mw.AttenuationDistanceModel.md#logarithmic)** = ``1`` |
 
 ## Enumeration Members
 

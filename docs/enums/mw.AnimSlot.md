@@ -2,20 +2,21 @@
 
 # AnimSlot <Badge type="tip" text="Enumeration" /> <Score text="AnimSlot" />
 
-动画插槽
+<p class="content-big"> 动画插槽 </p>
 
-使用示例:
+<p style="font-size: 14px;"> 使用示例: </p>
+
 ```ts
 ```
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Default](mw.AnimSlot.md#default)** = ``0`` <br> |
-| **[FullyBody](mw.AnimSlot.md#fullybody)** = ``3`` <br> |
-| **[Lower](mw.AnimSlot.md#lower)** = ``2`` <br> |
-| **[Upper](mw.AnimSlot.md#upper)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Default](mw.AnimSlot.md#default)** = ``0``  |
+| :----- |
+| **[FullyBody](mw.AnimSlot.md#fullybody)** = ``3`` |
+| **[Lower](mw.AnimSlot.md#lower)** = ``2`` |
+| **[Upper](mw.AnimSlot.md#upper)** = ``1`` |
 
 ## Enumeration Members
 

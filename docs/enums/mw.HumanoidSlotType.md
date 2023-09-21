@@ -2,44 +2,44 @@
 
 # HumanoidSlotType <Badge type="tip" text="Enumeration" /> <Score text="HumanoidSlotType" />
 
-人形角色插槽类型
+<p class="content-big"> 人形角色插槽类型 </p>
 内部名字有下划线是因为资源就有，是一一对应的，暂时不按规范命名
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BackOrnamental](mw.HumanoidSlotType.md#backornamental)** = ``12`` <br> |
-| **[Buttocks](mw.HumanoidSlotType.md#buttocks)** = ``19`` <br> |
-| **[ChatFrame](mw.HumanoidSlotType.md#chatframe)** = ``22`` <br> |
-| **[Eyes](mw.HumanoidSlotType.md#eyes)** = ``5`` <br> |
-| **[FaceOrnamental](mw.HumanoidSlotType.md#faceornamental)** = ``6`` <br> |
-| **[FirstpersonCamera](mw.HumanoidSlotType.md#firstpersoncamera)** = ``30`` <br> |
-| **[Glasses](mw.HumanoidSlotType.md#glasses)** = ``4`` <br> |
-| **[Hair](mw.HumanoidSlotType.md#hair)** = ``0`` <br> |
-| **[Head](mw.HumanoidSlotType.md#head)** = ``1`` <br> |
-| **[LeftBack](mw.HumanoidSlotType.md#leftback)** = ``13`` <br> |
-| **[LeftCalf](mw.HumanoidSlotType.md#leftcalf)** = ``28`` <br> |
-| **[LeftFoot](mw.HumanoidSlotType.md#leftfoot)** = ``17`` <br> |
-| **[LeftGlove](mw.HumanoidSlotType.md#leftglove)** = ``10`` <br> |
-| **[LeftHand](mw.HumanoidSlotType.md#lefthand)** = ``15`` <br> |
-| **[LeftHead](mw.HumanoidSlotType.md#lefthead)** = ``2`` <br> |
-| **[LeftLowerArm](mw.HumanoidSlotType.md#leftlowerarm)** = ``24`` <br> |
-| **[LeftShoulder](mw.HumanoidSlotType.md#leftshoulder)** = ``8`` <br> |
-| **[LeftThigh](mw.HumanoidSlotType.md#leftthigh)** = ``26`` <br> |
-| **[Mouse](mw.HumanoidSlotType.md#mouse)** = ``7`` <br> |
-| **[Nameplate](mw.HumanoidSlotType.md#nameplate)** = ``21`` <br> |
-| **[RightBack](mw.HumanoidSlotType.md#rightback)** = ``14`` <br> |
-| **[RightCalf](mw.HumanoidSlotType.md#rightcalf)** = ``29`` <br> |
-| **[RightFoot](mw.HumanoidSlotType.md#rightfoot)** = ``18`` <br> |
-| **[RightGlove](mw.HumanoidSlotType.md#rightglove)** = ``11`` <br> |
-| **[RightHand](mw.HumanoidSlotType.md#righthand)** = ``16`` <br> |
-| **[RightHead](mw.HumanoidSlotType.md#righthead)** = ``3`` <br> |
-| **[RightLowerArm](mw.HumanoidSlotType.md#rightlowerarm)** = ``25`` <br> |
-| **[RightShoulder](mw.HumanoidSlotType.md#rightshoulder)** = ``9`` <br> |
-| **[RightThigh](mw.HumanoidSlotType.md#rightthigh)** = ``27`` <br> |
-| **[Rings](mw.HumanoidSlotType.md#rings)** = ``20`` <br> |
-| **[Root](mw.HumanoidSlotType.md#root)** = ``23`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BackOrnamental](mw.HumanoidSlotType.md#backornamental)** = ``12``  |
+| :----- |
+| **[Buttocks](mw.HumanoidSlotType.md#buttocks)** = ``19`` |
+| **[ChatFrame](mw.HumanoidSlotType.md#chatframe)** = ``22`` |
+| **[Eyes](mw.HumanoidSlotType.md#eyes)** = ``5`` |
+| **[FaceOrnamental](mw.HumanoidSlotType.md#faceornamental)** = ``6`` |
+| **[FirstpersonCamera](mw.HumanoidSlotType.md#firstpersoncamera)** = ``30`` |
+| **[Glasses](mw.HumanoidSlotType.md#glasses)** = ``4`` |
+| **[Hair](mw.HumanoidSlotType.md#hair)** = ``0`` |
+| **[Head](mw.HumanoidSlotType.md#head)** = ``1`` |
+| **[LeftBack](mw.HumanoidSlotType.md#leftback)** = ``13`` |
+| **[LeftCalf](mw.HumanoidSlotType.md#leftcalf)** = ``28`` |
+| **[LeftFoot](mw.HumanoidSlotType.md#leftfoot)** = ``17`` |
+| **[LeftGlove](mw.HumanoidSlotType.md#leftglove)** = ``10`` |
+| **[LeftHand](mw.HumanoidSlotType.md#lefthand)** = ``15`` |
+| **[LeftHead](mw.HumanoidSlotType.md#lefthead)** = ``2`` |
+| **[LeftLowerArm](mw.HumanoidSlotType.md#leftlowerarm)** = ``24`` |
+| **[LeftShoulder](mw.HumanoidSlotType.md#leftshoulder)** = ``8`` |
+| **[LeftThigh](mw.HumanoidSlotType.md#leftthigh)** = ``26`` |
+| **[Mouse](mw.HumanoidSlotType.md#mouse)** = ``7`` |
+| **[Nameplate](mw.HumanoidSlotType.md#nameplate)** = ``21`` |
+| **[RightBack](mw.HumanoidSlotType.md#rightback)** = ``14`` |
+| **[RightCalf](mw.HumanoidSlotType.md#rightcalf)** = ``29`` |
+| **[RightFoot](mw.HumanoidSlotType.md#rightfoot)** = ``18`` |
+| **[RightGlove](mw.HumanoidSlotType.md#rightglove)** = ``11`` |
+| **[RightHand](mw.HumanoidSlotType.md#righthand)** = ``16`` |
+| **[RightHead](mw.HumanoidSlotType.md#righthead)** = ``3`` |
+| **[RightLowerArm](mw.HumanoidSlotType.md#rightlowerarm)** = ``25`` |
+| **[RightShoulder](mw.HumanoidSlotType.md#rightshoulder)** = ``9`` |
+| **[RightThigh](mw.HumanoidSlotType.md#rightthigh)** = ``27`` |
+| **[Rings](mw.HumanoidSlotType.md#rings)** = ``20`` |
+| **[Root](mw.HumanoidSlotType.md#root)** = ``23`` |
 
 ## Enumeration Members
 

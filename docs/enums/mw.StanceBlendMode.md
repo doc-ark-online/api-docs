@@ -2,19 +2,20 @@
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 
-姿态混合模式
+<p class="content-big"> 姿态混合模式 </p>
 
-使用示例:
+<p style="font-size: 14px;"> 使用示例: </p>
+
 ```ts
 ```
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BlendLower](mw.StanceBlendMode.md#blendlower)** = ``1`` <br> |
-| **[BlendUpper](mw.StanceBlendMode.md#blendupper)** = ``0`` <br> |
-| **[WholeBody](mw.StanceBlendMode.md#wholebody)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BlendLower](mw.StanceBlendMode.md#blendlower)** = ``1``  |
+| :----- |
+| **[BlendUpper](mw.StanceBlendMode.md#blendupper)** = ``0`` |
+| **[WholeBody](mw.StanceBlendMode.md#wholebody)** = ``2`` |
 
 ## Enumeration Members
 

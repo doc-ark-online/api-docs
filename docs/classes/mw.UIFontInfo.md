@@ -2,25 +2,42 @@
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
-字体信息
+<p class="content-big"> 字体信息 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new UIFontInfo**()  |
+| :----- |
+
+### Properties <Score text="Properties" /> 
+| **[contentColor](mw.UIFontInfo.md#contentcolor)**: [`LinearColor`](mw.LinearColor.md)  |
 | :-----|
-| **[contentColor](mw.UIFontInfo.md#contentcolor)**: [`LinearColor`](mw.LinearColor.md) <br> 内容颜色|
-| **[fontSize](mw.UIFontInfo.md#fontsize)**: `number` <br> 大小|
-| **[glyph](mw.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/mw.UIFontGlyph.md) <br> 字形|
-| **[letterSpacing](mw.UIFontInfo.md#letterspacing)**: `number` <br> 间距|
-| **[outLineColor](mw.UIFontInfo.md#outlinecolor)**: [`LinearColor`](mw.LinearColor.md) <br> 描边颜色|
-| **[outLineSize](mw.UIFontInfo.md#outlinesize)**: `number` <br> 描边大小|
-| **[richText](mw.UIFontInfo.md#richtext)**: `boolean` <br> 富文本|
-| **[shadowColor](mw.UIFontInfo.md#shadowcolor)**: [`LinearColor`](mw.LinearColor.md) <br> 阴影颜色|
-| **[shadowOffset](mw.UIFontInfo.md#shadowoffset)**: [`Vector2`](mw.Vector2.md) <br> 阴影偏移|
-| **[strikethrough](mw.UIFontInfo.md#strikethrough)**: `boolean` <br> 删除线|
-| **[textAlign](mw.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/mw.TextJustify.md) <br> 对齐方式|
-| **[textVerticalAlign](mw.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/mw.TextVerticalJustify.md) <br> 垂直对齐方式|
-| **[underline](mw.UIFontInfo.md#underline)**: `boolean` <br> 下划线|
+| 内容颜色|
+| **[fontSize](mw.UIFontInfo.md#fontsize)**: `number`  |
+| 大小|
+| **[glyph](mw.UIFontInfo.md#glyph)**: [`UIFontGlyph`](../enums/mw.UIFontGlyph.md)  |
+| 字形|
+| **[letterSpacing](mw.UIFontInfo.md#letterspacing)**: `number`  |
+| 间距|
+| **[outLineColor](mw.UIFontInfo.md#outlinecolor)**: [`LinearColor`](mw.LinearColor.md)  |
+| 描边颜色|
+| **[outLineSize](mw.UIFontInfo.md#outlinesize)**: `number`  |
+| 描边大小|
+| **[richText](mw.UIFontInfo.md#richtext)**: `boolean`  |
+| 富文本|
+| **[shadowColor](mw.UIFontInfo.md#shadowcolor)**: [`LinearColor`](mw.LinearColor.md)  |
+| 阴影颜色|
+| **[shadowOffset](mw.UIFontInfo.md#shadowoffset)**: [`Vector2`](mw.Vector2.md)  |
+| 阴影偏移|
+| **[strikethrough](mw.UIFontInfo.md#strikethrough)**: `boolean`  |
+| 删除线|
+| **[textAlign](mw.UIFontInfo.md#textalign)**: [`TextJustify`](../enums/mw.TextJustify.md)  |
+| 对齐方式|
+| **[textVerticalAlign](mw.UIFontInfo.md#textverticalalign)**: [`TextVerticalJustify`](../enums/mw.TextVerticalJustify.md)  |
+| 垂直对齐方式|
+| **[underline](mw.UIFontInfo.md#underline)**: `boolean`  |
+| 下划线|
 
 ## Properties
 

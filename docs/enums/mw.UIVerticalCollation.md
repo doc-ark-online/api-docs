@@ -2,14 +2,14 @@
 
 # UIVerticalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIVerticalCollation" />
 
-自动布局子项布局排序 - 垂直排序
+<p class="content-big"> 自动布局子项布局排序 - 垂直排序 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BottomToTop](mw.UIVerticalCollation.md#bottomtotop)** = ``1`` <br> |
-| **[TopToBottom](mw.UIVerticalCollation.md#toptobottom)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BottomToTop](mw.UIVerticalCollation.md#bottomtotop)** = ``1``  |
+| :----- |
+| **[TopToBottom](mw.UIVerticalCollation.md#toptobottom)** = ``0`` |
 
 ## Enumeration Members
 

@@ -2,14 +2,14 @@
 
 # ImpulseType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseType" />
 
-冲量的应用方式
+<p class="content-big"> 冲量的应用方式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Absolute](mw.ImpulseType.md#absolute)** = ``0`` <br> |
-| **[Relative](mw.ImpulseType.md#relative)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Absolute](mw.ImpulseType.md#absolute)** = ``0``  |
+| :----- |
+| **[Relative](mw.ImpulseType.md#relative)** = ``1`` |
 
 ## Enumeration Members
 

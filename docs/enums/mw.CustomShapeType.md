@@ -2,16 +2,16 @@
 
 # CustomShapeType <Badge type="tip" text="Enumeration" /> <Score text="CustomShapeType" />
 
-碰撞体形状类型
+<p class="content-big"> 碰撞体形状类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Box](mw.CustomShapeType.md#box)** = ``2`` <br> |
-| **[HorizontalCapsule](mw.CustomShapeType.md#horizontalcapsule)** = ``1`` <br> |
-| **[Sphere](mw.CustomShapeType.md#sphere)** = ``3`` <br> |
-| **[VerticalCapsule](mw.CustomShapeType.md#verticalcapsule)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Box](mw.CustomShapeType.md#box)** = ``2``  |
+| :----- |
+| **[HorizontalCapsule](mw.CustomShapeType.md#horizontalcapsule)** = ``1`` |
+| **[Sphere](mw.CustomShapeType.md#sphere)** = ``3`` |
+| **[VerticalCapsule](mw.CustomShapeType.md#verticalcapsule)** = ``0`` |
 
 ## Enumeration Members
 

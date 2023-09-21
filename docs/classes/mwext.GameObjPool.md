@@ -2,9 +2,10 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
+<p class="content-big"> 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 </p>
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends mw.Script {
@@ -29,14 +30,24 @@ export default class GameObjPoolExample extends mw.Script {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new GameObjPool**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[destroy](mwext.GameObjPool.md#destroy)**(): `void`  |
 | :-----|
-| **[destroy](mwext.GameObjPool.md#destroy)**(): `void` <br> 销毁对象池全局实例|
-| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\> <br> 异步生成一个对象|
-| **[clear](mwext.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `void` <br> 清除对象池中该GUID对应的所有对象|
-| **[clearAll](mwext.GameObjPool.md#clearall)**(): `void` <br> 清除对象池里的所有对象|
-| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: [`GameObject`](mw.GameObject.md)): `void` <br> 归还一个对象|
-| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\> <br> 生成一个对象|
+| 销毁对象池全局实例|
+| **[asyncSpawn](mwext.GameObjPool.md#asyncspawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `Promise`<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>  |
+| 异步生成一个对象|
+| **[clear](mwext.GameObjPool.md#clear)**(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `void`  |
+| 清除对象池中该GUID对应的所有对象|
+| **[clearAll](mwext.GameObjPool.md#clearall)**(): `void`  |
+| 清除对象池里的所有对象|
+| **[despawn](mwext.GameObjPool.md#despawn)**(`obj`: [`GameObject`](mw.GameObject.md)): `void`  |
+| 归还一个对象|
+| **[spawn](mwext.GameObjPool.md#spawn)**<`T`: extends [`GameObject`](mw.GameObject.md)<`T`\>\>(`guid`: `string`, `type?`: [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md)): `T`: extends [`GameObject`](mw.GameObject.md)<`T`\>  |
+| 生成一个对象|
 
 ## Methods
 
@@ -56,6 +67,17 @@ ___
 
 异步生成一个对象
 
+#### Parameters
+
+| `guid` `string` |  资源GUID |
+| :------ | :------ |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+
+#### Returns
+
+| `Promise`<`T`\> | 生成的对象 |
+| :------ | :------ |
+
 ::: warning Precautions
 
 注意需要把原始资源预加载
@@ -63,7 +85,8 @@ ___
 :::
 
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends Script {
@@ -88,22 +111,8 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` |  资源GUID |
-| `type?` | [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
-
-#### Returns
-
-`Promise`<`T`\>
-
-生成的对象
+| :------ | :------ |
 
 ___
 
@@ -113,8 +122,16 @@ ___
 
 清除对象池中该GUID对应的所有对象
 
+#### Parameters
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁
+| `guid` `string` |  资源GUID |
+| :------ | :------ |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends Script {
@@ -148,14 +165,6 @@ i++) {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` |  资源GUID |
-| `type?` | [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
-
-
 ___
 
 ### clearAll <Score text="clearAll" /> 
@@ -165,7 +174,9 @@ ___
 清除对象池里的所有对象
 
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends Script {
@@ -216,7 +227,6 @@ i++) {
 }
 ```
 
-
 ___
 
 ### despawn <Score text="despawn" /> 
@@ -225,8 +235,15 @@ ___
 
 归还一个对象
 
+#### Parameters
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+| `obj` [`GameObject`](mw.GameObject.md) |  要归还的对象 |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends Script {
@@ -249,13 +266,6 @@ export default class GameObjPoolExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `obj` | [`GameObject`](mw.GameObject.md) |  要归还的对象 |
-
-
 ___
 
 ### spawn <Score text="spawn" /> 
@@ -264,8 +274,20 @@ ___
 
 生成一个对象
 
+#### Parameters
 
-使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块
+| `guid` `string` |  资源GUID |
+| :------ | :------ |
+| `type?` [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
+
+#### Returns
+
+| `T` | 生成的对象 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块 </p>
+
 ```ts
 @Component
 export default class GameObjPoolExample extends Script {
@@ -287,19 +309,5 @@ export default class GameObjPoolExample extends Script {
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`GameObject`](mw.GameObject.md)<`T`\> |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `guid` | `string` |  资源GUID |
-| `type?` | [`GameObjPoolSourceType`](../enums/mwext.GameObjPoolSourceType.md) |  资源类型 default: 资源库中的资源 |
-
-#### Returns
-
-`T`
-
-生成的对象
+| :------ | :------ |

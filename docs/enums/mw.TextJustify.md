@@ -2,15 +2,15 @@
 
 # TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
 
-文本排列对齐规则
+<p class="content-big"> 文本排列对齐规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Center](mw.TextJustify.md#center)** = ``1`` <br> |
-| **[Left](mw.TextJustify.md#left)** = ``0`` <br> |
-| **[Right](mw.TextJustify.md#right)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Center](mw.TextJustify.md#center)** = ``1``  |
+| :----- |
+| **[Left](mw.TextJustify.md#left)** = ``0`` |
+| **[Right](mw.TextJustify.md#right)** = ``2`` |
 
 ## Enumeration Members
 

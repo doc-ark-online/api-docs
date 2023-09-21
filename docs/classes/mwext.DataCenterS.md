@@ -2,9 +2,10 @@
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
-服务端数据中心，管理所有玩家的数据
+<p class="content-big"> 服务端数据中心，管理所有玩家的数据 </p>
 
-使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键）
+<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键） </p>
+
 ```ts
 @Component
 export default class DataCenterSExample extends Script {
@@ -56,15 +57,23 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
-| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\> <br> 玩家离开游戏的委托，可用作玩家最后的数据处理|
+### Constructors <Score text="Constructors" /> 
+| **new DataCenterS**()  |
+| :----- |
 
-| Methods |
+### Properties <Score text="Properties" /> 
+| **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
 | :-----|
-| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string` \, `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <br> 获取玩家的子数据|
-| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[] <br> 获取在线且数据就绪的所有玩家ID|
+| 玩家进入游戏的委托，当委托被调用的时候，可以保证玩家的数据是就绪的|
+| **[onPlayerLeave](mwext.DataCenterS.md#onplayerleave)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
+| 玩家离开游戏的委托，可用作玩家最后的数据处理|
+
+### Methods <Score text="Methods" /> 
+| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string` \, `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
+| :-----|
+| 获取玩家的子数据|
+| **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[]  |
+| 获取在线且数据就绪的所有玩家ID|
 
 ## Properties
 
@@ -90,8 +99,20 @@ ___
 
 获取玩家的子数据
 
+#### Parameters
 
-使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
+| `player` `string` \| `number` \| [`Player`](mw.Player.md) |  玩家\|玩家userId\|玩家instanceId |
+| :------ | :------ |
+| `SubdataType` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类 |
+
+#### Returns
+
+| `T` | 数据对象 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息 </p>
+
 ```ts
 @Component
 export default class DataCenterSExample extends Script {
@@ -118,22 +139,8 @@ class PlayerModuleData extends Subdata {
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Subdata`](mwext.Subdata.md)<`T`\> |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | `string` \| `number` \| [`Player`](mw.Player.md) |  玩家\|玩家userId\|玩家instanceId |
-| `SubdataType` | [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类 |
-
-#### Returns
-
-`T`
-
-数据对象
+| :------ | :------ |
 
 ___
 
@@ -143,8 +150,14 @@ ___
 
 获取在线且数据就绪的所有玩家ID
 
+#### Returns
 
-使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
+| `number`[] | 玩家id数组 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级 </p>
+
 ```ts
 @Component
 export default class DataCenterSExample extends Script {
@@ -179,9 +192,3 @@ class PlayerModuleData extends Subdata {
     }
 }
 ```
-
-#### Returns
-
-`number`[]
-
-玩家id数组

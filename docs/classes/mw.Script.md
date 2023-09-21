@@ -2,7 +2,7 @@
 
 # Script <Badge type="tip" text="Class" /> <Score text="Script" />
 
-脚本管理
+<p class="content-big"> 脚本管理 </p>
 
 ## Hierarchy
 
@@ -14,27 +14,34 @@
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[bIsDestroy](mw.Script.md#bisdestroy)**: `any` <br> |
-| **[getNetStatus](mw.Script.md#getnetstatus)**: `any` <br> |
-| **[mwRepObj](mw.Script.md#mwrepobj)**: `any` <br> |
+### Constructors <Score text="Constructors" /> 
+| **new Script**(`data`: `ActorInfo`)  |
+| :----- |
 
-| Accessors |
-| :-----|
-| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md) <br> 脚本对应的GameObject|
-| **[name](mw.Script.md#name)**(): `string` <br> |
+### Properties <Score text="Properties" /> 
+| **[bIsDestroy](mw.Script.md#bisdestroy)**: `any`  |
+| :----- |
+| **[getNetStatus](mw.Script.md#getnetstatus)**: `any` |
+| **[mwRepObj](mw.Script.md#mwrepobj)**: `any` |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
 | :-----|
-| **[destroy](mw.Script.md#destroy)**(): `void` <br> |
-| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> <br> |
+| 脚本对应的GameObject|
+| **[guid](mw.Script.md#guid)**(): `string` |
+| **[name](mw.Script.md#name)**(): `string` |
+
+### Methods <Score text="Methods" /> 
+| **[destroy](mw.Script.md#destroy)**(): `void`  |
+| :----- |
+| **[isRunningClient](mw.Script.md#isrunningclient)**(): `boolean`  |
+| 是否为客户端|
+| **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `data` | `ActorInfo` |
+| :------ | :------ |
 
 #### Overrides
 
@@ -62,36 +69,99 @@ ___
 
 ### gameObject <Score text="gameObject" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **gameObject**(): [`GameObject`](mw.GameObject.md) 
+
+</th>
+<th style="text-align: left">
+
+• `set` **gameObject**(`target`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 脚本对应的GameObject
 
 
 #### Returns
 
-[`GameObject`](mw.GameObject.md)
+| [`GameObject`](mw.GameObject.md) |  |
+| :------ | :------ |
 
-• `set` **gameObject**(`target`): `void` 
+
+</td>
+<td style="text-align: left">
+
 
 脚本对应的GameObject
 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `target` | [`GameObject`](mw.GameObject.md) |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### guid <Score text="guid" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `get` **guid**(): `string`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+#### Returns
+
+| `string` | mw.Component.guid |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### name <Score text="name" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **name**(): `string`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 #### Returns
 
-`string`
+</td>
+</tr></tbody>
+</table>
+
+| `string` |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -99,6 +169,24 @@ ___
 
 • **destroy**(): `void`
 
+___
+
+### isRunningClient <Score text="isRunningClient" /> 
+
+• **isRunningClient**(): `boolean` 
+
+是否为客户端
+
+#### Returns
+
+| `boolean` | mw.Component.isRunningClient |
+| :------ | :------ |
+
+
+#### Returns
+
+| `boolean` | mw.Component.isRunningClient |
+| :------ | :------ |
 
 ___
 
@@ -110,78 +198,72 @@ ___
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `scriptClass` | (...`args`: `unknown`[]) => `T` | - |
-| `bInReplicates?` | `boolean` | `{boolean}` 是否同步 |
+| `scriptClass` (...`args`: `unknown`[]) => `T` | - |
+| :------ | :------ |
+| `bInReplicates?` `boolean` | `{boolean}` 是否同步 |
 
 #### Returns
 
-`Promise`<`T`\>
-
-脚本对象
+| `Promise`<`T`\> | 脚本对象 |
+| :------ | :------ |
 
 • `Static` **spawnScript**<`T`\>(`scriptAssetId`, `bInReplicates?`): `Promise`<`T`\>
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `scriptAssetId` | `string` |
+| :------ | :------ |
 | `bInReplicates?` | `boolean` |
 
 #### Returns
 
-`Promise`<`T`\>
+| `Promise`<`T`\> |  |
+| :------ | :------ |
 
 • `Static` **spawnScript**<`T`\>(`scriptClass`, `bInReplicates?`, `target?`): `Promise`<`T`\>
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `scriptClass` | (...`args`: `unknown`[]) => `T` |
+| :------ | :------ |
 | `bInReplicates?` | `boolean` |
 | `target?` | [`GameObject`](mw.GameObject.md) |
 
 #### Returns
 
-`Promise`<`T`\>
+| `Promise`<`T`\> |  |
+| :------ | :------ |
 
 • `Static` **spawnScript**<`T`\>(`scriptAssetId`, `bInReplicates?`, `target?`): `Promise`<`T`\>
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Script`](mw.Script.md)<`T`\> |
+| :------ | :------ |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
 | `scriptAssetId` | `string` |
+| :------ | :------ |
 | `bInReplicates?` | `boolean` |
 | `target?` | [`GameObject`](mw.GameObject.md) |
 
 #### Returns
 
-`Promise`<`T`\>
+| `Promise`<`T`\> |  |
+| :------ | :------ |

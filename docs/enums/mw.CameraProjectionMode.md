@@ -2,14 +2,14 @@
 
 # CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
 
-摄像机镜头模式
+<p class="content-big"> 摄像机镜头模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Orthographic](mw.CameraProjectionMode.md#orthographic)** = ``1`` <br> |
-| **[Perspective](mw.CameraProjectionMode.md#perspective)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Orthographic](mw.CameraProjectionMode.md#orthographic)** = ``1``  |
+| :----- |
+| **[Perspective](mw.CameraProjectionMode.md#perspective)** = ``0`` |
 
 ## Enumeration Members
 

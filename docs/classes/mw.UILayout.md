@@ -2,37 +2,47 @@
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 
-容器自动布局规则
+<p class="content-big"> 容器自动布局规则 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new UILayout**(`InLayoutSpace`: `number`, `InPadding`: [`Margin`](mw.Margin.md), `InLayout`: [`UILayoutType`](../enums/mw.UILayoutType.md), `InLayoutPacket`: [`UILayoutPacket`](../enums/mw.UILayoutPacket.md), `InHugContent`: [`UIHugContent`](mw.UIHugContent.md), `InAutoLayout`: `boolean`, `InAutoWrap`: `boolean`)  |
 | :-----|
-| **[autoLayout](mw.UILayout.md#autolayout)**: `boolean` <br> 是否自动布局|
-| **[autoWrap](mw.UILayout.md#autowrap)**: `boolean` <br> 是否网格模式|
-| **[childCollation](mw.UILayout.md#childcollation)**: [`UIChildCollation`](mw.UIChildCollation.md) <br> 子项布局规则|
-| **[hugContent](mw.UILayout.md#hugcontent)**: [`UIHugContent`](mw.UIHugContent.md) <br> 容器布局适应规则|
-| **[layout](mw.UILayout.md#layout)**: [`UILayoutType`](../enums/mw.UILayoutType.md) <br> 自动布局规则|
-| **[layoutPacket](mw.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) <br> 自动布局节点排列规则|
-| **[layoutSpace](mw.UILayout.md#layoutspace)**: `number` <br> 排列间隔|
-| **[padding](mw.UILayout.md#padding)**: [`Margin`](mw.Margin.md) <br> 四边边距|
+| 构造函数，传入每一个值|
+
+### Properties <Score text="Properties" /> 
+| **[autoLayout](mw.UILayout.md#autolayout)**: `boolean`  |
+| :-----|
+| 是否自动布局|
+| **[autoWrap](mw.UILayout.md#autowrap)**: `boolean`  |
+| 是否网格模式|
+| **[childCollation](mw.UILayout.md#childcollation)**: [`UIChildCollation`](mw.UIChildCollation.md)  |
+| 子项布局规则|
+| **[hugContent](mw.UILayout.md#hugcontent)**: [`UIHugContent`](mw.UIHugContent.md)  |
+| 容器布局适应规则|
+| **[layout](mw.UILayout.md#layout)**: [`UILayoutType`](../enums/mw.UILayoutType.md)  |
+| 自动布局规则|
+| **[layoutPacket](mw.UILayout.md#layoutpacket)**: [`UILayoutPacket`](../enums/mw.UILayoutPacket.md)  |
+| 自动布局节点排列规则|
+| **[layoutSpace](mw.UILayout.md#layoutspace)**: `number`  |
+| 排列间隔|
+| **[padding](mw.UILayout.md#padding)**: [`Margin`](mw.Margin.md)  |
+| 四边边距|
 
 构造函数，传入每一个值
-
-**`Effect`**
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLayoutSpace` | `number` | 排列间隔 |
-| `InPadding` | [`Margin`](mw.Margin.md) | 四边边距 |
-| `InLayout` | [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
-| `InLayoutPacket` | [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugContent` | [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
-| `InAutoLayout` | `boolean` | 是否自动布局 |
-| `InAutoWrap` | `boolean` | 是否网格模式 |
+| `InLayoutSpace` `number` | 排列间隔 |
+| :------ | :------ |
+| `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
+| `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
+| `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
+| `InHugContent` [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
+| `InAutoLayout` `boolean` | 是否自动布局 |
+| `InAutoWrap` `boolean` | 是否网格模式 |
 
 • **new UILayout**(`InLayoutSpace`, `InPadding`, `InLayout`, `InLayoutPacket`, `InHugContent`, `InAutoLayout`, `InAutoWrap`, `InChildCollation`)
 
@@ -43,16 +53,15 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InLayoutSpace` | `number` | 排列间隔 |
-| `InPadding` | [`Margin`](mw.Margin.md) | 四边边距 |
-| `InLayout` | [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
-| `InLayoutPacket` | [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
-| `InHugContent` | [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
-| `InAutoLayout` | `boolean` | 是否自动布局 |
-| `InAutoWrap` | `boolean` | 是否网格模式 |
-| `InChildCollation` | [`UIChildCollation`](mw.UIChildCollation.md) | 子项排序规则 |
+| `InLayoutSpace` `number` | 排列间隔 |
+| :------ | :------ |
+| `InPadding` [`Margin`](mw.Margin.md) | 四边边距 |
+| `InLayout` [`UILayoutType`](../enums/mw.UILayoutType.md) | 自动布局规则 |
+| `InLayoutPacket` [`UILayoutPacket`](../enums/mw.UILayoutPacket.md) | 自动布局节点排列规则 |
+| `InHugContent` [`UIHugContent`](mw.UIHugContent.md) | 容器布局适应规则 |
+| `InAutoLayout` `boolean` | 是否自动布局 |
+| `InAutoWrap` `boolean` | 是否网格模式 |
+| `InChildCollation` [`UIChildCollation`](mw.UIChildCollation.md) | 子项排序规则 |
 
 ## Properties
 

@@ -2,15 +2,15 @@
 
 # ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
 
-按钮按压响应规则
+<p class="content-big"> 按钮按压响应规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ButtonPress](mw.ButtonPressMethod.md#buttonpress)** = ``1`` <br> |
-| **[ButtonRelease](mw.ButtonPressMethod.md#buttonrelease)** = ``2`` <br> |
-| **[DownAndUp](mw.ButtonPressMethod.md#downandup)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ButtonPress](mw.ButtonPressMethod.md#buttonpress)** = ``1``  |
+| :----- |
+| **[ButtonRelease](mw.ButtonPressMethod.md#buttonrelease)** = ``2`` |
+| **[DownAndUp](mw.ButtonPressMethod.md#downandup)** = ``0`` |
 
 ## Enumeration Members
 

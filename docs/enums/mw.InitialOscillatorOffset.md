@@ -2,14 +2,14 @@
 
 # InitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="InitialOscillatorOffset" />
 
-定义如何开始(从零开始，或者从随机值开始)
+<p class="content-big"> 定义如何开始(从零开始，或者从随机值开始) </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Random](mw.InitialOscillatorOffset.md#random)** = ``0`` <br> |
-| **[Zero](mw.InitialOscillatorOffset.md#zero)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Random](mw.InitialOscillatorOffset.md#random)** = ``0``  |
+| :----- |
+| **[Zero](mw.InitialOscillatorOffset.md#zero)** = ``1`` |
 
 ## Enumeration Members
 

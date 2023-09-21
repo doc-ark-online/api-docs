@@ -2,15 +2,15 @@
 
 # UITextHorizontalLayout <Badge type="tip" text="Enumeration" /> <Score text="UITextHorizontalLayout" />
 
-文本框规则显示规则限制
+<p class="content-big"> 文本框规则显示规则限制 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[AutoWarpText](mw.UITextHorizontalLayout.md#autowarptext)** = ``0`` <br> |
-| **[Clipping](mw.UITextHorizontalLayout.md#clipping)** = ``1`` <br> |
-| **[NoClipping](mw.UITextHorizontalLayout.md#noclipping)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[AutoWarpText](mw.UITextHorizontalLayout.md#autowarptext)** = ``0``  |
+| :----- |
+| **[Clipping](mw.UITextHorizontalLayout.md#clipping)** = ``1`` |
+| **[NoClipping](mw.UITextHorizontalLayout.md#noclipping)** = ``2`` |
 
 ## Enumeration Members
 

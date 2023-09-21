@@ -2,15 +2,15 @@
 
 # CameraRotationMode <Badge type="tip" text="Enumeration" /> <Score text="CameraRotationMode" />
 
-摄像机旋转模式
+<p class="content-big"> 摄像机旋转模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[RotationControl](mw.CameraRotationMode.md#rotationcontrol)** = ``2`` <br> |
-| **[RotationFixed](mw.CameraRotationMode.md#rotationfixed)** = ``0`` <br> |
-| **[RotationFollow](mw.CameraRotationMode.md#rotationfollow)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[RotationControl](mw.CameraRotationMode.md#rotationcontrol)** = ``2``  |
+| :----- |
+| **[RotationFixed](mw.CameraRotationMode.md#rotationfixed)** = ``0`` |
+| **[RotationFollow](mw.CameraRotationMode.md#rotationfollow)** = ``1`` |
 
 ## Enumeration Members
 

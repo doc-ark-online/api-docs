@@ -2,17 +2,17 @@
 
 # MessageState <Badge type="tip" text="Enumeration" /> <Score text="MessageState" />
 
-发送消息的状态
+<p class="content-big"> 发送消息的状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ContentError](mw.MessageState.md#contenterror)** = ``3307002`` <br> |
-| **[Error](mw.MessageState.md#error)** = ``-1`` <br> |
-| **[LabelError](mw.MessageState.md#labelerror)** = ``3307003`` <br> |
-| **[SizeError](mw.MessageState.md#sizeerror)** = ``3307004`` <br> |
-| **[Success](mw.MessageState.md#success)** = ``200`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ContentError](mw.MessageState.md#contenterror)** = ``3307002``  |
+| :----- |
+| **[Error](mw.MessageState.md#error)** = ``-1`` |
+| **[LabelError](mw.MessageState.md#labelerror)** = ``3307003`` |
+| **[SizeError](mw.MessageState.md#sizeerror)** = ``3307004`` |
+| **[Success](mw.MessageState.md#success)** = ``200`` |
 
 ## Enumeration Members
 

@@ -2,14 +2,14 @@
 
 # MotionAxis <Badge type="tip" text="Enumeration" /> <Score text="MotionAxis" />
 
-运动坐标系
+<p class="content-big"> 运动坐标系 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[LocalAxis](mw.MotionAxis.md#localaxis)** = ``1`` <br> |
-| **[WorldAxis](mw.MotionAxis.md#worldaxis)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[LocalAxis](mw.MotionAxis.md#localaxis)** = ``1``  |
+| :----- |
+| **[WorldAxis](mw.MotionAxis.md#worldaxis)** = ``0`` |
 
 ## Enumeration Members
 

@@ -2,7 +2,7 @@
 
 # ModuleC<T, S\> <Badge type="tip" text="Class" /> <Score text="ModuleC<T, S\>" />
 
-客户端模块的基类
+<p class="content-big"> 客户端模块的基类 </p>
 
 ::: warning Precautions
 
@@ -10,7 +10,8 @@
 
 :::
 
-使用示例:创建一个名为ModuleCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会输出player模块每个生命周期执行的日志，按下F键你将在客户端以及服务端日志中看到玩家等级的信息
+<p style="font-size: 14px;"> 使用示例:创建一个名为ModuleCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端日志会输出player模块每个生命周期执行的日志，按下F键你将在客户端以及服务端日志中看到玩家等级的信息 </p>
+
 ```ts
 @Component
 export default class ModuleCExample extends Script {
@@ -90,9 +91,8 @@ class PlayerModuleData extends Subdata {
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | `T` |
+| :------ | :------ |
 | `S` | extends [`Subdata`](mwext.Subdata.md) |
 
 ## Hierarchy
@@ -103,79 +103,152 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-| Accessors |
-| :-----|
-| **[data](mwext.ModuleC.md#data)**(): `S` <br> 本地玩家的模块数据|
-| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <br> 获取当前玩家|
-| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <br> 获取当前玩家ID|
-| **[server](mwext.ModuleC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
+### Constructors <Score text="Constructors" /> 
+| **new ModuleC**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
+| :----- |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
-| **[onAwake](mwext.ModuleC.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
-| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
-| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void` <br> 生命周期方法-进入场景调用|
-| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
-| **[onStart](mwext.ModuleC.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
-| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
+| 本地玩家的模块数据|
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md)  |
+| 获取当前玩家|
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number`  |
+| 获取当前玩家ID|
+| **[server](mwext.ModuleC.md#server)**(): `T`  |
+| 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
+
+### Methods <Score text="Methods" /> 
+| **[onAwake](mwext.ModuleC.md#onawake)**(): `void`  |
+| :-----|
+| 生命周期方法-创建模块时调用|
+| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void`  |
+| 生命周期方法-销毁模块调用|
+| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void`  |
+| 生命周期方法-进入场景调用|
+| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void`  |
+| 外部调用本模块的某个操作|
+| **[onStart](mwext.ModuleC.md#onstart)**(): `void`  |
+| 生命周期方法-启动模块时调用|
+| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void`  |
+| 生命周期方法-刷新模块调用|
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | `T` |
+| :------ | :------ |
 | `S` | extends [`Subdata`](mwext.Subdata.md)<`S`\> |
 
 ## Accessors
 
 ### data <Score text="data" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **data**(): `S`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 本地玩家的模块数据
 
 #### Returns
 
-`S`
+| `S` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### localPlayer <Score text="localPlayer" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **localPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取当前玩家
 
 
 #### Returns
 
-[`Player`](mw.Player.md)
+| [`Player`](mw.Player.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### localPlayerId <Score text="localPlayerId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **localPlayerId**(): `number` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取当前玩家ID
 
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### server <Score text="server" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **server**(): `T` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法
 
 
 #### Returns
 
-`T`
+</td>
+</tr></tbody>
+</table>
+
+| `T` |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -205,12 +278,11 @@ ___
 
 生命周期方法-进入场景调用
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `sceneType` | `number` |  场景类型(预留) |
+| `sceneType` `number` |  场景类型(预留) |
+| :------ | :------ |
+
 
 
 ___
@@ -221,13 +293,12 @@ ___
 
 外部调用本模块的某个操作
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | `number` |  操作类型 |
-| `...params` | `any`[] |  操作参数 |
+| `type` `number` |  操作类型 |
+| :------ | :------ |
+| `...params` `any`[] |  操作参数 |
+
 
 
 ___
@@ -248,10 +319,9 @@ ___
 
 生命周期方法-刷新模块调用
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `dt` | `number` |  两帧之间的时间差(单位：秒) |
+| `dt` `number` |  两帧之间的时间差(单位：秒) |
+| :------ | :------ |
+
 

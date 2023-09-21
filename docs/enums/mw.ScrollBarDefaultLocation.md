@@ -2,15 +2,15 @@
 
 # ScrollBarDefaultLocation <Badge type="tip" text="Enumeration" /> <Score text="ScrollBarDefaultLocation" />
 
-滚动条默认位置
+<p class="content-big"> 滚动条默认位置 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BottomOrRight](mw.ScrollBarDefaultLocation.md#bottomorright)** = ``2`` <br> |
-| **[Center](mw.ScrollBarDefaultLocation.md#center)** = ``1`` <br> |
-| **[TopOrLeft](mw.ScrollBarDefaultLocation.md#toporleft)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BottomOrRight](mw.ScrollBarDefaultLocation.md#bottomorright)** = ``2``  |
+| :----- |
+| **[Center](mw.ScrollBarDefaultLocation.md#center)** = ``1`` |
+| **[TopOrLeft](mw.ScrollBarDefaultLocation.md#toporleft)** = ``0`` |
 
 ## Enumeration Members
 

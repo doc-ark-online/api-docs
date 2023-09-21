@@ -2,17 +2,17 @@
 
 # UIConstraintVertical <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintVertical" />
 
-对齐策略垂直规则
+<p class="content-big"> 对齐策略垂直规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Bottom](mw.UIConstraintVertical.md#bottom)** = ``1`` <br> |
-| **[Center](mw.UIConstraintVertical.md#center)** = ``3`` <br> |
-| **[Scale](mw.UIConstraintVertical.md#scale)** = ``4`` <br> |
-| **[Top](mw.UIConstraintVertical.md#top)** = ``0`` <br> |
-| **[TopBottom](mw.UIConstraintVertical.md#topbottom)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Bottom](mw.UIConstraintVertical.md#bottom)** = ``1``  |
+| :----- |
+| **[Center](mw.UIConstraintVertical.md#center)** = ``3`` |
+| **[Scale](mw.UIConstraintVertical.md#scale)** = ``4`` |
+| **[Top](mw.UIConstraintVertical.md#top)** = ``0`` |
+| **[TopBottom](mw.UIConstraintVertical.md#topbottom)** = ``2`` |
 
 ## Enumeration Members
 

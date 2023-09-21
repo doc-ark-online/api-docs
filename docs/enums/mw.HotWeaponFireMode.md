@@ -2,15 +2,15 @@
 
 # HotWeaponFireMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponFireMode" />
 
-热武器开火模式
+<p class="content-big"> 热武器开火模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[ContinuousFire](mw.HotWeaponFireMode.md#continuousfire)** = ``1`` <br> |
-| **[FullAutomationFire](mw.HotWeaponFireMode.md#fullautomationfire)** = ``2`` <br> |
-| **[SingleFire](mw.HotWeaponFireMode.md#singlefire)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[ContinuousFire](mw.HotWeaponFireMode.md#continuousfire)** = ``1``  |
+| :----- |
+| **[FullAutomationFire](mw.HotWeaponFireMode.md#fullautomationfire)** = ``2`` |
+| **[SingleFire](mw.HotWeaponFireMode.md#singlefire)** = ``0`` |
 
 ## Enumeration Members
 

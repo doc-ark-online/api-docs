@@ -2,17 +2,17 @@
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 
-字体类型
+<p class="content-big"> 字体类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Bold](mw.UIFontGlyph.md#bold)** = ``1`` <br> |
-| **[BoldItalics](mw.UIFontGlyph.md#bolditalics)** = ``4`` <br> |
-| **[Italics](mw.UIFontGlyph.md#italics)** = ``3`` <br> |
-| **[Light](mw.UIFontGlyph.md#light)** = ``2`` <br> |
-| **[Normal](mw.UIFontGlyph.md#normal)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Bold](mw.UIFontGlyph.md#bold)** = ``1``  |
+| :----- |
+| **[BoldItalics](mw.UIFontGlyph.md#bolditalics)** = ``4`` |
+| **[Italics](mw.UIFontGlyph.md#italics)** = ``3`` |
+| **[Light](mw.UIFontGlyph.md#light)** = ``2`` |
+| **[Normal](mw.UIFontGlyph.md#normal)** = ``0`` |
 
 ## Enumeration Members
 

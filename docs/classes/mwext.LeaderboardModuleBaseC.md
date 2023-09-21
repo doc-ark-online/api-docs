@@ -2,13 +2,12 @@
 
 # LeaderboardModuleBaseC<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardModuleBaseC<T\>" />
 
-排行榜模块-客户端
+<p class="content-big"> 排行榜模块-客户端 </p>
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`LeaderboardModuleTypeS`](../modules/Extension.mwext.md#leaderboardmoduletypes) |
+| :------ | :------ |
 
 ## Hierarchy
 
@@ -18,62 +17,123 @@
 
 ## Table of contents
 
-| Accessors |
-| :-----|
+### Constructors <Score text="Constructors" /> 
 
 
 ::: details 点击查看继承
-| Accessors |
-| :-----|
-| **[data](mwext.ModuleC.md#data)**(): `S` <br> 本地玩家的模块数据|
-| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md) <br> 获取当前玩家|
-| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number` <br> 获取当前玩家ID|
-| **[server](mwext.ModuleC.md#server)**(): `T` <br> 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
+### Constructors <Score text="Constructors" /> 
+| **new ModuleC**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
+| :----- |
 :::
 
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[panel](mwext.LeaderboardModuleBaseC.md#panel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\>  |
 | :-----|
-| **[startRefreshPanel](mwext.LeaderboardModuleBaseC.md#startrefreshpanel)**(`refreshCallback`: (`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => `void`, `timeInterval?`: `number`): `void` <br> 开始刷新界面|
-| **[stopRefreshPanel](mwext.LeaderboardModuleBaseC.md#stoprefreshpanel)**(): `void` <br> 停止刷新界面|
+| 排行榜的UI面板|
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|
-| **[onAwake](mwext.ModuleC.md#onawake)**(): `void` <br> 生命周期方法-创建模块时调用|
-| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void` <br> 生命周期方法-销毁模块调用|
-| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void` <br> 生命周期方法-进入场景调用|
-| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void` <br> 外部调用本模块的某个操作|
-| **[onStart](mwext.ModuleC.md#onstart)**(): `void` <br> 生命周期方法-启动模块时调用|
-| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void` <br> 生命周期方法-刷新模块调用|
+| 本地玩家的模块数据|
+| **[localPlayer](mwext.ModuleC.md#localplayer)**(): [`Player`](mw.Player.md)  |
+| 获取当前玩家|
+| **[localPlayerId](mwext.ModuleC.md#localplayerid)**(): `number`  |
+| 获取当前玩家ID|
+| **[server](mwext.ModuleC.md#server)**(): `T`  |
+| 和自己绑定的服务端模块，可通过此对象直接调用net_开头的服务端方法|
 :::
+
+
+### Methods <Score text="Methods" /> 
+| **[creatPanel](mwext.LeaderboardModuleBaseC.md#creatpanel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\>  |
+| :-----|
+| 创建排行榜UI面板|
+| **[hidePanel](mwext.LeaderboardModuleBaseC.md#hidepanel)**(): `void`  |
+| 隐藏UI面板|
+| **[showPanel](mwext.LeaderboardModuleBaseC.md#showpanel)**(): `void`  |
+| 显示UI面板|
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[onAwake](mwext.ModuleC.md#onawake)**(): `void`  |
+| :-----|
+| 生命周期方法-创建模块时调用|
+| **[onDestroy](mwext.ModuleC.md#ondestroy)**(): `void`  |
+| 生命周期方法-销毁模块调用|
+| **[onEnterScene](mwext.ModuleC.md#onenterscene)**(`sceneType`: `number`): `void`  |
+| 生命周期方法-进入场景调用|
+| **[onExecute](mwext.ModuleC.md#onexecute)**(`type`: `number`, `...params`: `any`[]): `void`  |
+| 外部调用本模块的某个操作|
+| **[onStart](mwext.ModuleC.md#onstart)**(): `void`  |
+| 生命周期方法-启动模块时调用|
+| **[onUpdate](mwext.ModuleC.md#onupdate)**(`dt`: `number`): `void`  |
+| 生命周期方法-刷新模块调用|
+:::
+
+
+## Accessors
+___
+
+### panel <Score text="panel" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Protected` `get` **panel**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+排行榜的UI面板
+
+
+#### Returns
+
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods
-___
 
-### startRefreshPanel <Score text="startRefreshPanel" /> 
+### creatPanel <Score text="creatPanel" /> 
 
-• `Protected` **startRefreshPanel**(`refreshCallback`, `timeInterval?`): `void` <Badge type="tip" text="client" />
+• `Protected` `Abstract` **creatPanel**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> <Badge type="tip" text="client" />
 
-开始刷新界面
+创建排行榜UI面板
 
+#### Returns
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `refreshCallback` | (`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]) => `void` |  刷新的回调方法，可以在这个方法里刷新UI |
-| `timeInterval?` | `number` |  刷新的间隔时间(单位:秒)，这个时间越小，S端有变化时前端刷新越及时，但更消耗性能，建议使用默认值1秒 default: 1 |
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> | 排行榜UI面板 |
+| :------ | :------ |
 
 
 ___
 
-### stopRefreshPanel <Score text="stopRefreshPanel" /> 
+### hidePanel <Score text="hidePanel" /> 
 
-• `Protected` **stopRefreshPanel**(): `void` <Badge type="tip" text="client" />
+• `Protected` **hidePanel**(): `void` <Badge type="tip" text="client" />
 
-停止刷新界面
+隐藏UI面板
+
+
+
+___
+
+### showPanel <Score text="showPanel" /> 
+
+• **showPanel**(): `void` <Badge type="tip" text="client" />
+
+显示UI面板
 
 

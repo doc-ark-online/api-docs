@@ -2,19 +2,30 @@
 
 # DragDropOperation <Badge type="tip" text="Class" /> <Score text="DragDropOperation" />
 
-UI 拖拽事件
+<p class="content-big"> UI 拖拽事件 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new DragDropOperation**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[equal](mw.DragDropOperation.md#equal)**(`other`: [`DragDropOperation`](mw.DragDropOperation.md)): `boolean`  |
 | :-----|
-| **[equal](mw.DragDropOperation.md#equal)**(`other`: [`DragDropOperation`](mw.DragDropOperation.md)): `boolean` <br> 判断是否相同|
-| **[getDragPivot](mw.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/mw.DragPivot.md) <br> 获取拖拽锚点|
-| **[getDragVisualWidget](mw.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](mw.Widget.md) <br> 获取拖拽显示的UI|
-| **[getOffset](mw.DragDropOperation.md#getoffset)**(): [`Vector2`](mw.Vector2.md) <br> 获取拖拽UI的百分比偏移|
-| **[getTag](mw.DragDropOperation.md#gettag)**(): `string` <br> 获取Tag 标签|
-| **[tryGetDragDropPayLoad](mw.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](mw.DragDropPayLoad.md) <br> 获取传递的数据信息|
-| **[tryGetDragDropPayLoadAs](mw.DragDropOperation.md#trygetdragdroppayloadas)**<`T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>\>(): `T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\> <br> 获取传递的数据信息|
+| 判断是否相同|
+| **[getDragPivot](mw.DragDropOperation.md#getdragpivot)**(): [`DragPivot`](../enums/mw.DragPivot.md)  |
+| 获取拖拽锚点|
+| **[getDragVisualWidget](mw.DragDropOperation.md#getdragvisualwidget)**(): [`Widget`](mw.Widget.md)  |
+| 获取拖拽显示的UI|
+| **[getOffset](mw.DragDropOperation.md#getoffset)**(): [`Vector2`](mw.Vector2.md)  |
+| 获取拖拽UI的百分比偏移|
+| **[getTag](mw.DragDropOperation.md#gettag)**(): `string`  |
+| 获取Tag 标签|
+| **[tryGetDragDropPayLoad](mw.DragDropOperation.md#trygetdragdroppayload)**(): [`DragDropPayLoad`](mw.DragDropPayLoad.md)  |
+| 获取传递的数据信息|
+| **[tryGetDragDropPayLoadAs](mw.DragDropOperation.md#trygetdragdroppayloadas)**<`T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>\>(): `T`: extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\>  |
+| 获取传递的数据信息|
 
 • `Private` **new DragDropOperation**()
 
@@ -26,18 +37,16 @@ UI 拖拽事件
 
 判断是否相同
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`DragDropOperation`](mw.DragDropOperation.md) | 另一个UI拖拽事件 |
+| `other` [`DragDropOperation`](mw.DragDropOperation.md) | 另一个UI拖拽事件 |
+| :------ | :------ |
 
 #### Returns
 
-`boolean`
+| `boolean` | boolean |
+| :------ | :------ |
 
-boolean
 
 ___
 
@@ -47,12 +56,11 @@ ___
 
 获取拖拽锚点
 
-
 #### Returns
 
-[`DragPivot`](../enums/mw.DragPivot.md)
+| [`DragPivot`](../enums/mw.DragPivot.md) | 拖拽锚点 |
+| :------ | :------ |
 
-拖拽锚点
 
 ___
 
@@ -62,12 +70,11 @@ ___
 
 获取拖拽显示的UI
 
-
 #### Returns
 
-[`Widget`](mw.Widget.md)
+| [`Widget`](mw.Widget.md) | 拖拽显示的UI |
+| :------ | :------ |
 
-拖拽显示的UI
 
 ___
 
@@ -77,12 +84,11 @@ ___
 
 获取拖拽UI的百分比偏移
 
-
 #### Returns
 
-[`Vector2`](mw.Vector2.md)
+| [`Vector2`](mw.Vector2.md) | 百分比偏移 |
+| :------ | :------ |
 
-百分比偏移
 
 ___
 
@@ -92,12 +98,11 @@ ___
 
 获取Tag 标签
 
-
 #### Returns
 
-`string`
+| `string` | 返回tag |
+| :------ | :------ |
 
-返回tag
 
 ___
 
@@ -107,12 +112,11 @@ ___
 
 获取传递的数据信息
 
-
 #### Returns
 
-[`DragDropPayLoad`](mw.DragDropPayLoad.md)
+| [`DragDropPayLoad`](mw.DragDropPayLoad.md) | 数据信息 |
+| :------ | :------ |
 
-数据信息
 
 ___
 
@@ -122,15 +126,13 @@ ___
 
 获取传递的数据信息
 
+#### Returns
+
+| `T` | 数据信息 |
+| :------ | :------ |
+
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`DragDropPayLoad`](mw.DragDropPayLoad.md)<`T`\> |
-
-#### Returns
-
-`T`
-
-数据信息
+| :------ | :------ |

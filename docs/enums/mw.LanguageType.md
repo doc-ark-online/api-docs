@@ -2,15 +2,15 @@
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 
-游戏语言
+<p class="content-big"> 游戏语言 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Chinese](mw.LanguageType.md#chinese)** = ``1`` <br> |
-| **[English](mw.LanguageType.md#english)** = ``2`` <br> |
-| **[Portuguese](mw.LanguageType.md#portuguese)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Chinese](mw.LanguageType.md#chinese)** = ``1``  |
+| :----- |
+| **[English](mw.LanguageType.md#english)** = ``2`` |
+| **[Portuguese](mw.LanguageType.md#portuguese)** = ``3`` |
 
 ## Enumeration Members
 

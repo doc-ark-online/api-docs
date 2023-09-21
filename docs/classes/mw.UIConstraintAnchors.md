@@ -2,18 +2,23 @@
 
 # UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
 
-节点对齐规则
+<p class="content-big"> 节点对齐规则 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new UIConstraintAnchors**()  |
 | :-----|
-| **[constraintHorizontal](mw.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/mw.UIConstraintHorizontal.md) <br> 水平对齐规则|
-| **[constraintVertical](mw.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/mw.UIConstraintVertical.md) <br> 垂直对齐规则|
+| 通过水平和垂直规则构造对象|
+
+### Properties <Score text="Properties" /> 
+| **[constraintHorizontal](mw.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/mw.UIConstraintHorizontal.md)  |
+| :-----|
+| 水平对齐规则|
+| **[constraintVertical](mw.UIConstraintAnchors.md#constraintvertical)**: [`UIConstraintVertical`](../enums/mw.UIConstraintVertical.md)  |
+| 垂直对齐规则|
 
 构造一个默认的
-
-**`Effect`**
 
 
 • **new UIConstraintAnchors**(`InConstraintHorizontal`, `InConstraintVertical`)
@@ -25,10 +30,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `InConstraintHorizontal` | [`UIConstraintHorizontal`](../enums/mw.UIConstraintHorizontal.md) | 水平对齐规则 |
-| `InConstraintVertical` | [`UIConstraintVertical`](../enums/mw.UIConstraintVertical.md) | 垂直对齐规则 |
+| `InConstraintHorizontal` [`UIConstraintHorizontal`](../enums/mw.UIConstraintHorizontal.md) | 水平对齐规则 |
+| :------ | :------ |
+| `InConstraintVertical` [`UIConstraintVertical`](../enums/mw.UIConstraintVertical.md) | 垂直对齐规则 |
 
 ## Properties
 

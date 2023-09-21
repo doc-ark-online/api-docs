@@ -5,9 +5,9 @@ AVATAR
 ## Table of contents
 | Classes |
 | :-----|
-| [Character](../classes/mw.Character.md) <br> Character是一个特殊的受控制对象，代表场景中玩家角色和非玩家角色。Character具备移动能力，可以在场景中行走、跑动、跳跃、飞行和游泳。此外Character带有骨架，可播放使用骨架的高级动画或者姿态。Character还可以通过CharacterDescription去设置自身外观形象。 |
-| [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 单个插槽对应的挂件物体数组 |
-| [CharacterDescription](../classes/mw.CharacterDescription.md) <br> 人形外观配置类 |
+| [Character](../classes/mw.Character.md) <br> 角色 |
+| [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 角色挂件插槽 |
+| [CharacterDescription](../classes/mw.CharacterDescription.md) <br> 人形外观配置 |
 | [Pawn](../classes/mw.Pawn.md) <br> Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象 |
 
 

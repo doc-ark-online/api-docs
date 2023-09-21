@@ -2,17 +2,17 @@
 
 # UIConstraintHorizontal <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintHorizontal" />
 
-对齐策略水平规则
+<p class="content-big"> 对齐策略水平规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Center](mw.UIConstraintHorizontal.md#center)** = ``3`` <br> |
-| **[Left](mw.UIConstraintHorizontal.md#left)** = ``0`` <br> |
-| **[LeftRight](mw.UIConstraintHorizontal.md#leftright)** = ``2`` <br> |
-| **[Right](mw.UIConstraintHorizontal.md#right)** = ``1`` <br> |
-| **[Scale](mw.UIConstraintHorizontal.md#scale)** = ``4`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Center](mw.UIConstraintHorizontal.md#center)** = ``3``  |
+| :----- |
+| **[Left](mw.UIConstraintHorizontal.md#left)** = ``0`` |
+| **[LeftRight](mw.UIConstraintHorizontal.md#leftright)** = ``2`` |
+| **[Right](mw.UIConstraintHorizontal.md#right)** = ``1`` |
+| **[Scale](mw.UIConstraintHorizontal.md#scale)** = ``4`` |
 
 ## Enumeration Members
 

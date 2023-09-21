@@ -2,14 +2,14 @@
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
-滚动框类型
+<p class="content-big"> 滚动框类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[OrientHorizontal](mw.Orientation.md#orienthorizontal)** = ``0`` <br> |
-| **[OrientVertical](mw.Orientation.md#orientvertical)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[OrientHorizontal](mw.Orientation.md#orienthorizontal)** = ``0``  |
+| :----- |
+| **[OrientVertical](mw.Orientation.md#orientvertical)** = ``1`` |
 
 ## Enumeration Members
 

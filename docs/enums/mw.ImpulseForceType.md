@@ -2,14 +2,14 @@
 
 # ImpulseForceType <Badge type="tip" text="Enumeration" /> <Score text="ImpulseForceType" />
 
-冲量力类型
+<p class="content-big"> 冲量力类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[RadialForce](mw.ImpulseForceType.md#radialforce)** = ``0`` <br> |
-| **[VectorForce](mw.ImpulseForceType.md#vectorforce)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[RadialForce](mw.ImpulseForceType.md#radialforce)** = ``0``  |
+| :----- |
+| **[VectorForce](mw.ImpulseForceType.md#vectorforce)** = ``1`` |
 
 ## Enumeration Members
 

@@ -2,14 +2,14 @@
 
 # UIHugContentHorizontally <Badge type="tip" text="Enumeration" /> <Score text="UIHugContentHorizontally" />
 
-自动布局容器水平适应规则
+<p class="content-big"> 自动布局容器水平适应规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[FixWidth](mw.UIHugContentHorizontally.md#fixwidth)** = ``0`` <br> |
-| **[HugContent](mw.UIHugContentHorizontally.md#hugcontent)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[FixWidth](mw.UIHugContentHorizontally.md#fixwidth)** = ``0``  |
+| :----- |
+| **[HugContent](mw.UIHugContentHorizontally.md#hugcontent)** = ``1`` |
 
 ## Enumeration Members
 

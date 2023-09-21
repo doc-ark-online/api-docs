@@ -2,16 +2,16 @@
 
 # SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 
-UI颜色应用模式
+<p class="content-big"> UI颜色应用模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[UseColorForeground](mw.SlateColorStylingMode.md#usecolorforeground)** = ``2`` <br> |
-| **[UseColorForegroundSubdued](mw.SlateColorStylingMode.md#usecolorforegroundsubdued)** = ``3`` <br> |
-| **[UseColorSpecified](mw.SlateColorStylingMode.md#usecolorspecified)** = ``0`` <br> |
-| **[UseColorSpecifiedLink](mw.SlateColorStylingMode.md#usecolorspecifiedlink)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[UseColorForeground](mw.SlateColorStylingMode.md#usecolorforeground)** = ``2``  |
+| :----- |
+| **[UseColorForegroundSubdued](mw.SlateColorStylingMode.md#usecolorforegroundsubdued)** = ``3`` |
+| **[UseColorSpecified](mw.SlateColorStylingMode.md#usecolorspecified)** = ``0`` |
+| **[UseColorSpecifiedLink](mw.SlateColorStylingMode.md#usecolorspecifiedlink)** = ``1`` |
 
 ## Enumeration Members
 

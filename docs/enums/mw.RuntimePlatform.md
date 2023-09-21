@@ -2,17 +2,17 @@
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 
-运行平台
+<p class="content-big"> 运行平台 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Android](mw.RuntimePlatform.md#android)** = ``3`` <br> |
-| **[Linux](mw.RuntimePlatform.md#linux)** = ``1`` <br> |
-| **[MacOS](mw.RuntimePlatform.md#macos)** = ``2`` <br> |
-| **[Windows](mw.RuntimePlatform.md#windows)** = ``0`` <br> |
-| **[iOS](mw.RuntimePlatform.md#ios)** = ``4`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Android](mw.RuntimePlatform.md#android)** = ``3``  |
+| :----- |
+| **[Linux](mw.RuntimePlatform.md#linux)** = ``1`` |
+| **[MacOS](mw.RuntimePlatform.md#macos)** = ``2`` |
+| **[Windows](mw.RuntimePlatform.md#windows)** = ``0`` |
+| **[iOS](mw.RuntimePlatform.md#ios)** = ``4`` |
 
 ## Enumeration Members
 

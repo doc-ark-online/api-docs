@@ -2,15 +2,15 @@
 
 # TextVerticalJustify <Badge type="tip" text="Enumeration" /> <Score text="TextVerticalJustify" />
 
-文本排列垂直对齐规则
+<p class="content-big"> 文本排列垂直对齐规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Bottom](mw.TextVerticalJustify.md#bottom)** = ``2`` <br> |
-| **[Center](mw.TextVerticalJustify.md#center)** = ``1`` <br> |
-| **[Top](mw.TextVerticalJustify.md#top)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Bottom](mw.TextVerticalJustify.md#bottom)** = ``2``  |
+| :----- |
+| **[Center](mw.TextVerticalJustify.md#center)** = ``1`` |
+| **[Top](mw.TextVerticalJustify.md#top)** = ``0`` |
 
 ## Enumeration Members
 

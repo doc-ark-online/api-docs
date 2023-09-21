@@ -2,14 +2,14 @@
 
 # OscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="OscillatorWaveform" />
 
-振荡器波形
+<p class="content-big"> 振荡器波形 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[PerlinNoise](mw.OscillatorWaveform.md#perlinnoise)** = ``1`` <br> |
-| **[SineWave](mw.OscillatorWaveform.md#sinewave)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[PerlinNoise](mw.OscillatorWaveform.md#perlinnoise)** = ``1``  |
+| :----- |
+| **[SineWave](mw.OscillatorWaveform.md#sinewave)** = ``0`` |
 
 ## Enumeration Members
 

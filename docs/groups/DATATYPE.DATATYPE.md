@@ -3,32 +3,8 @@ DATATYPE
 # DATATYPE <Badge type="tip" text="Groups" /> <Score text="DATATYPE" />
 
 ## Table of contents
-| Modules Type Aliases |
+| Enums |
 | :-----|
-| **[ChatEvent](DATATYPE.DATATYPE.md#chatevent)**: (`jsonData`: `string`) => `void` <br> 收到MGS事件调用|
+| [PrefabStatus](../enums/mw.PrefabStatus.md) <br> 预制体审核状态 |
+| [UploadPrefabResultType](../enums/mw.UploadPrefabResultType.md) <br> 移动编辑器上传预制体返回状态 |
 
-
-## Modules Type Aliases
-
-
-___
-
-### ChatEvent <Score text="ChatEvent" /> 
-
-Ƭ **ChatEvent**: (`jsonData`: `string`) => `void`
-
-#### Type declaration
-
-• (`jsonData`): `void`
-
-收到MGS事件调用
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `jsonData` | `string` |
-
-##### Returns
-
-`void`

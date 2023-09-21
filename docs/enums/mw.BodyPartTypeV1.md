@@ -2,15 +2,15 @@
 
 # BodyPartTypeV1 <Badge type="tip" text="Enumeration" /> <Score text="BodyPartTypeV1" />
 
-V1角色部位
+<p class="content-big"> V1角色部位 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Face](mw.BodyPartTypeV1.md#face)** = ``1`` <br> |
-| **[Hair](mw.BodyPartTypeV1.md#hair)** = ``0`` <br> |
-| **[Trunk](mw.BodyPartTypeV1.md#trunk)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Face](mw.BodyPartTypeV1.md#face)** = ``1``  |
+| :----- |
+| **[Hair](mw.BodyPartTypeV1.md#hair)** = ``0`` |
+| **[Trunk](mw.BodyPartTypeV1.md#trunk)** = ``2`` |
 
 ## Enumeration Members
 

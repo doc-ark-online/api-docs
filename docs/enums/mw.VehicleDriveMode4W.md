@@ -2,15 +2,15 @@
 
 # VehicleDriveMode4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4W" />
 
-四轮载具驱动模式
+<p class="content-big"> 四轮载具驱动模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[FourDrive](mw.VehicleDriveMode4W.md#fourdrive)** = ``0`` <br> |
-| **[FrontDrive](mw.VehicleDriveMode4W.md#frontdrive)** = ``1`` <br> |
-| **[RearDrive](mw.VehicleDriveMode4W.md#reardrive)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[FourDrive](mw.VehicleDriveMode4W.md#fourdrive)** = ``0``  |
+| :----- |
+| **[FrontDrive](mw.VehicleDriveMode4W.md#frontdrive)** = ``1`` |
+| **[RearDrive](mw.VehicleDriveMode4W.md#reardrive)** = ``2`` |
 
 ## Enumeration Members
 

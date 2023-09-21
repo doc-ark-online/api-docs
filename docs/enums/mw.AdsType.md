@@ -2,14 +2,14 @@
 
 # AdsType <Badge type="tip" text="Enumeration" /> <Score text="AdsType" />
 
-广告类型
+<p class="content-big"> 广告类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Interstitial](mw.AdsType.md#interstitial)** = ``"interstitial"`` <br> |
-| **[Reward](mw.AdsType.md#reward)** = ``"reward"`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Interstitial](mw.AdsType.md#interstitial)** = ``"interstitial"``  |
+| :----- |
+| **[Reward](mw.AdsType.md#reward)** = ``"reward"`` |
 
 ## Enumeration Members
 

@@ -2,21 +2,21 @@
 
 # CharacterTemplate <Badge type="tip" text="Enumeration" /> <Score text="CharacterTemplate" />
 
-角色体型
+<p class="content-big"> 角色体型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[AnimeFemale](mw.CharacterTemplate.md#animefemale)** = ``2`` <br> |
-| **[AnimeMale](mw.CharacterTemplate.md#animemale)** = ``1`` <br> |
-| **[CartoonyFemale](mw.CharacterTemplate.md#cartoonyfemale)** = ``8`` <br> |
-| **[CartoonyMale](mw.CharacterTemplate.md#cartoonymale)** = ``7`` <br> |
-| **[LowpolyAdultFemale](mw.CharacterTemplate.md#lowpolyadultfemale)** = ``4`` <br> |
-| **[LowpolyAdultMale](mw.CharacterTemplate.md#lowpolyadultmale)** = ``3`` <br> |
-| **[None](mw.CharacterTemplate.md#none)** = ``0`` <br> |
-| **[RealisticAdultFemale](mw.CharacterTemplate.md#realisticadultfemale)** = ``6`` <br> |
-| **[RealisticAdultMale](mw.CharacterTemplate.md#realisticadultmale)** = ``5`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[AnimeFemale](mw.CharacterTemplate.md#animefemale)** = ``2``  |
+| :----- |
+| **[AnimeMale](mw.CharacterTemplate.md#animemale)** = ``1`` |
+| **[CartoonyFemale](mw.CharacterTemplate.md#cartoonyfemale)** = ``8`` |
+| **[CartoonyMale](mw.CharacterTemplate.md#cartoonymale)** = ``7`` |
+| **[LowpolyAdultFemale](mw.CharacterTemplate.md#lowpolyadultfemale)** = ``4`` |
+| **[LowpolyAdultMale](mw.CharacterTemplate.md#lowpolyadultmale)** = ``3`` |
+| **[None](mw.CharacterTemplate.md#none)** = ``0`` |
+| **[RealisticAdultFemale](mw.CharacterTemplate.md#realisticadultfemale)** = ``6`` |
+| **[RealisticAdultMale](mw.CharacterTemplate.md#realisticadultmale)** = ``5`` |
 
 ## Enumeration Members
 

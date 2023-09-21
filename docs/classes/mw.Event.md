@@ -2,20 +2,50 @@
 
 # Event <Badge type="tip" text="Class" /> <Score text="Event" />
 
-事件
+<p class="content-big"> 事件 </p>
+
+<p class="content-big"> MW编辑器支持多种类型的事件。 </p>
+
+<p class="content-big"> 在实现逻辑时，您可以将函数连接到编辑器触发的内置事件以响应它们。还可以创建触发并响应自定义事件。此外，您可以使用网络事件来允许跨客户端-服务器边界进行事件驱动的通信。 </p>
+
+<p class="content-big"> 许多对象都具有由其 API 提供的内置事件，这些事件会自动响应与这些对象相关的特定操作或更改。例如： HotWeapon 中装备上武器会触发 onEquip 事件。 </p>
+
+<p class="content-big"> Event 类提供了本地、客户端和服务器之间通信的事件。 </p>
+
+<p class="content-big"> 本地、客户端和服务器之间是如何通信的呢 ？ </p>
+
+<p class="content-big"> · 本地 ：指当前主机。 </p>
+
+<p class="content-big"> · 服务器 ：MW编辑器多人游戏基于客户端-服务器模式。也就是说，会有一个服务器担当游戏状态的主控者，而连接的客户端将保持近似复本。服务器可以看作傀儡师，客户端则为傀儡师控制的牵线木偶们。 </p>
+
+<p class="content-big"> · 客户端 ：连接到服务器的一个或多个“木偶”。 </p>
+
+<p class="content-big"> 本地、客户端和服务器之间通信时如同打开开关，屋子里的灯就会亮。当我在某地执行事件（打开开关），添加完的事件就会触发（安装好的灯泡就会亮）。 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new Event**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
 | :-----|
-| **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 服务器监听客户端发来的事件|
-| **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 添加本地事件的监听，添加成功可以使用dispatchEventToxxx方法执行添加的事件。|
-| **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md) <br> 客户端监听服务器事件|
-| **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给所有客户端|
-| **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 服务器发送事件给指定客户端|
-| **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 执行已添加的本地事件，通常与addxxxListener成对出现。|
-| **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) <br> 客户端发送事件给服务器|
-| **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void` <br> 移除事件监听器|
+| 服务器监听客户端发来的事件|
+| **[addLocalListener](mw.Event.md#addlocallistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
+| 添加本地事件。|
+| **[addServerListener](mw.Event.md#addserverlistener)**(`eventName`: `string`, `listener`: (...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
+| 客户端监听服务器事件|
+| **[dispatchToAllClient](mw.Event.md#dispatchtoallclient)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| 服务器发送事件给所有客户端|
+| **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| 服务器发送事件给指定客户端|
+| **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| 执行已添加的本地事件。|
+| **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
+| 客户端发送事件给服务器|
+| **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void`  |
+| 移除事件监听器|
 
 ## Methods
 
@@ -25,6 +55,17 @@
 
 服务器监听客户端发来的事件
 
+#### Parameters
+
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `listener` (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
+
+#### Returns
+
+| [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -32,18 +73,26 @@
 
 :::
 
-#### Parameters
+<p style="font-size: 14px;"> 使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下: </p>
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `listener` | (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void` | 监听回调 Player 发送事件的客户端 target 事件内容 |
-
-#### Returns
-
-[`EventListener`](mw.EventListener.md)
-
-返回一个事件监听器
+```ts
+ @Component
+ export default class InteractorSample extends Script {
+     protected async onStart(): Promise<void> {
+         this.useUpdate = true;
+         // 客户端向服务器发送 eventOne 事件
+         // 客户端发送 eventOne 事件可以看作灯的开关
+         if(SystemUtil.isClient()){
+             Event.dispatchToServer("eventOne");
+         }
+         // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
+         // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if (SystemUtil.isServer()){
+             Event.addClientListener("eventOne" ,()=>{console.log("ok")});
+         }
+     }
+ }
+```
 
 ___
 
@@ -51,21 +100,19 @@ ___
 
 • `Static` **addLocalListener**(`eventName`, `listener`): [`EventListener`](mw.EventListener.md) 
 
-添加本地事件的监听，添加成功可以使用dispatchEventToxxx方法执行添加的事件。
-
+添加本地事件。
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 |
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `listener` (...`params`: `unknown`[]) => `void` | 监听回调 |
 
 #### Returns
 
-[`EventListener`](mw.EventListener.md)
+| [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
+| :------ | :------ |
 
-返回一个事件监听器
 
 ___
 
@@ -75,6 +122,17 @@ ___
 
 客户端监听服务器事件
 
+#### Parameters
+
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `listener` (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
+
+#### Returns
+
+| [`EventListener`](mw.EventListener.md) | 返回一个事件监听器 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -82,18 +140,28 @@ ___
 
 :::
 
-#### Parameters
+<p style="font-size: 14px;"> 使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下: </p>
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `listener` | (...`params`: `unknown`[]) => `void` | 监听回调 params 事件内容 |
-
-#### Returns
-
-[`EventListener`](mw.EventListener.md)
-
-返回一个事件监听器
+```ts
+@Component
+ export default class InteractorSample extends Script {
+     protected async onStart(): Promise<void> {
+         this.useUpdate = true;
+         // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
+         // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if(SystemUtil.isClient()){
+             Event.addServerListener("eventOne",()=>{console.log("ok")});
+         }
+     }
+     protected onUpdate(dt: number): void {
+         // 服务器每帧对所有客户端发送 eventOne 事件
+         // 服务端发送 eventOne 事件可以看作灯的开关，每帧打开一次灯泡的开关
+         if (SystemUtil.isServer()){
+             Event.dispatchToAllClient("eventOne");
+         }
+     }
+ }
+```
 
 ___
 
@@ -103,6 +171,17 @@ ___
 
 服务器发送事件给所有客户端
 
+#### Parameters
+
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -110,18 +189,28 @@ ___
 
 :::
 
-#### Parameters
+<p style="font-size: 14px;"> 使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下: </p>
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `...params` | `unknown`[] | 可变长参数 |
-
-#### Returns
-
-[`DispatchEventResult`](../enums/mw.DispatchEventResult.md)
-
-返回事件发送结果
+```ts
+@Component
+ export default class InteractorSample extends Script {
+     protected async onStart(): Promise<void> {
+         this.useUpdate = true;
+         // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
+         // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if(SystemUtil.isClient()){
+             Event.addServerListener("eventOne",()=>{console.log("ok")});
+         }
+     }
+     protected onUpdate(dt: number): void {
+         // 服务器每帧对所有客户端发送 eventOne 事件
+         // 服务端发送 eventOne 事件可以看作灯的开关，每帧打开一次灯泡的开关
+         if (SystemUtil.isServer()){
+             Event.dispatchToAllClient("eventOne");
+         }
+     }
+ }
+```
 
 ___
 
@@ -131,6 +220,18 @@ ___
 
 服务器发送事件给指定客户端
 
+#### Parameters
+
+| `player` [`Player`](mw.Player.md) | 客户端 |
+| :------ | :------ |
+| `eventName` `string` | 事件名 |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -138,41 +239,25 @@ ___
 
 :::
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `player` | [`Player`](mw.Player.md) | 客户端 |
-| `eventName` | `string` | 事件名 |
-| `...params` | `unknown`[] | 可变长参数 |
-
-#### Returns
-
-[`DispatchEventResult`](../enums/mw.DispatchEventResult.md)
-
-返回事件发送结果
-
 ___
 
 ### dispatchToLocal <Score text="dispatchToLocal" /> 
 
 • `Static` **dispatchToLocal**(`eventName`, `...params`): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) 
 
-执行已添加的本地事件，通常与addxxxListener成对出现。
-
+执行已添加的本地事件。
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `...params` | `unknown`[] | 事件内容 |
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `...params` `unknown`[] | 事件内容 |
 
 #### Returns
 
-[`DispatchEventResult`](../enums/mw.DispatchEventResult.md)
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回发送本地事件的结果 |
+| :------ | :------ |
 
-返回发送本地事件的结果
 
 ___
 
@@ -182,6 +267,17 @@ ___
 
 客户端发送事件给服务器
 
+#### Parameters
+
+| `eventName` `string` | 事件名 |
+| :------ | :------ |
+| `...params` `unknown`[] | 可变长参数 |
+
+#### Returns
+
+| [`DispatchEventResult`](../enums/mw.DispatchEventResult.md) | 返回事件发送结果 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -189,18 +285,26 @@ ___
 
 :::
 
-#### Parameters
+<p style="font-size: 14px;"> 使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下: </p>
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `eventName` | `string` | 事件名 |
-| `...params` | `unknown`[] | 可变长参数 |
-
-#### Returns
-
-[`DispatchEventResult`](../enums/mw.DispatchEventResult.md)
-
-返回事件发送结果
+```ts
+ @Component
+ export default class InteractorSample extends Script {
+     protected async onStart(): Promise<void> {
+         this.useUpdate = true;
+         // 客户端向服务器发送 eventOne 事件
+         // 客户端发送 eventOne 事件可以看作灯的开关
+         if(SystemUtil.isClient()){
+             Event.dispatchToServer("eventOne");
+         }
+         // 在服务器执行客户端发来的 eventOne 事件,并在服务器执行传入的函数逻辑
+         // 服务器执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
+         if (SystemUtil.isServer()){
+             Event.addClientListener("eventOne" ,()=>{console.log("ok")});
+         }
+     }
+ }
+```
 
 ___
 
@@ -210,10 +314,9 @@ ___
 
 移除事件监听器
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `event` | [`EventListener`](mw.EventListener.md) | 监听器 |
+| `event` [`EventListener`](mw.EventListener.md) | 监听器 |
+| :------ | :------ |
+
 

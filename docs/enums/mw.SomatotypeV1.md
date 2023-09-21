@@ -2,15 +2,15 @@
 
 # SomatotypeV1 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV1" />
 
-V1角色体型
+<p class="content-big"> V1角色体型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[HumanoidV1](mw.SomatotypeV1.md#humanoidv1)** = ``0`` <br> |
-| **[HumanoidV1Eggy](mw.SomatotypeV1.md#humanoidv1eggy)** = ``2`` <br> |
-| **[HumanoidV1Girl](mw.SomatotypeV1.md#humanoidv1girl)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[HumanoidV1](mw.SomatotypeV1.md#humanoidv1)** = ``0``  |
+| :----- |
+| **[HumanoidV1Eggy](mw.SomatotypeV1.md#humanoidv1eggy)** = ``2`` |
+| **[HumanoidV1Girl](mw.SomatotypeV1.md#humanoidv1girl)** = ``1`` |
 
 ## Enumeration Members
 

@@ -2,97 +2,168 @@
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 
-由分量 (x,y,z) 组成的三维空间中的向量
+<p class="content-big"> 由分量 (x,y,z) 组成的三维空间中的向量 </p>
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new Vector**(`x?`: `number`, `y?`: `number`, `z?`: `number`)  |
 | :-----|
-| **[x](mw.Vector.md#x)**: `number` <br> X轴坐标|
-| **[y](mw.Vector.md#y)**: `number` <br> Y轴坐标|
-| **[z](mw.Vector.md#z)**: `number` <br> Z轴坐标|
+| 用给定的 Vector 的值的 x, y 和 z 分量设定给x，y 和 z|
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[x](mw.Vector.md#x)**: `number`  |
 | :-----|
-| **[length](mw.Vector.md#length)**(): `number` <br> 计算向量的长度|
-| **[magnitude](mw.Vector.md#magnitude)**(`a`: [`Vector`](mw.Vector.md)): `number` <br> 求向量长度|
-| **[negative](mw.Vector.md#negative)**(): [`Vector`](mw.Vector.md) <br> 返回各个分量取反的新向量|
-| **[normalized](mw.Vector.md#normalized)**(): [`Vector`](mw.Vector.md) <br> 返回一个归一化的新向量, 不影响本向量|
-| **[sqrLength](mw.Vector.md#sqrlength)**(): `number` <br> 计算向量的长度平方|
-| **[sqrMagnitude](mw.Vector.md#sqrmagnitude)**(`a`: [`Vector`](mw.Vector.md)): `number` <br> 求向量长度平方|
-| **[back](mw.Vector.md#back)**(): [`Vector`](mw.Vector.md) <br> Vector(-1, 0, 0)|
-| **[down](mw.Vector.md#down)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 0, -1)|
-| **[forward](mw.Vector.md#forward)**(): [`Vector`](mw.Vector.md) <br> Vector(1, 0, 0)|
-| **[left](mw.Vector.md#left)**(): [`Vector`](mw.Vector.md) <br> Vector(0, -1, 0)|
-| **[negOne](mw.Vector.md#negone)**(): [`Vector`](mw.Vector.md) <br> Vector(-1, -1, -1)|
-| **[one](mw.Vector.md#one)**(): [`Vector`](mw.Vector.md) <br> Vector(1, 1, 1)|
-| **[right](mw.Vector.md#right)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 1, 0)|
-| **[unitX](mw.Vector.md#unitx)**(): [`Vector`](mw.Vector.md) <br> Vector(1, 0, 0)|
-| **[unitY](mw.Vector.md#unity)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 1, 0)|
-| **[unitZ](mw.Vector.md#unitz)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 0, 1)|
-| **[up](mw.Vector.md#up)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 0, 1)|
-| **[zero](mw.Vector.md#zero)**(): [`Vector`](mw.Vector.md) <br> Vector(0, 0, 0)|
+| X轴坐标|
+| **[y](mw.Vector.md#y)**: `number`  |
+| Y轴坐标|
+| **[z](mw.Vector.md#z)**: `number`  |
+| Z轴坐标|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[length](mw.Vector.md#length)**(): `number`  |
 | :-----|
-| **[add](mw.Vector.md#add)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算ab两个向量相加|
-| **[clone](mw.Vector.md#clone)**(`a`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获得指定向量的拷贝|
-| **[divide](mw.Vector.md#divide)**(`a`: [`Vector`](mw.Vector.md), `b`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 遍历向量a的每个分量除以b|
-| **[equals](mw.Vector.md#equals)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
-| **[fromString](mw.Vector.md#fromstring)**(`str`: `string`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 通过一个字符串创建 Vector|
-| **[multiply](mw.Vector.md#multiply)**(`a`: [`Vector`](mw.Vector.md), `b`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 遍历向量a的每个分量乘以b|
-| **[normalize](mw.Vector.md#normalize)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 归一化向量|
-| **[set](mw.Vector.md#set)**(`outer`: [`Vector`](mw.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](mw.Vector.md) <br> 设置向量值|
-| **[strictEquals](mw.Vector.md#strictequals)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `boolean` <br> 向量等价判断|
-| **[subtract](mw.Vector.md#subtract)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算向量a减去向量b|
-| **[toRotation](mw.Vector.md#torotation)**(): [`Rotation`](mw.Rotation.md) <br> 转换为对应的Rotation|
-| **[toString](mw.Vector.md#tostring)**(): `string` <br> 输出为字符串|
-| **[add](mw.Vector.md#add-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算ab两个向量相加|
-| **[angle](mw.Vector.md#angle)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number` <br> 求向量a与向量b在XY平面投影的夹角角度|
-| **[angle3D](mw.Vector.md#angle3d)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number` <br> 求向量a与向量b的夹角角度|
-| **[ceil](mw.Vector.md#ceil)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将向量a逐元素向量向上取整|
-| **[clamp](mw.Vector.md#clamp)**(`value`: [`Vector`](mw.Vector.md), `minInclusive`: [`Vector`](mw.Vector.md), `maxInclusive`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 设置当前向量的值，使其各个分量都处于指定的范围内|
-| **[clone](mw.Vector.md#clone-1)**(`a`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获得指定向量的拷贝|
-| **[copy](mw.Vector.md#copy)**(`a`: [`Vector`](mw.Vector.md), `outer`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 复制目标向量|
-| **[cross](mw.Vector.md#cross)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 向量叉积 (向量积)|
-| **[distance](mw.Vector.md#distance)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number` <br> 求两向量的欧氏距离|
-| **[divide](mw.Vector.md#divide-1)**(`a`: [`Vector`](mw.Vector.md), `b`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 遍历向量a的每个分量除以b|
-| **[dot](mw.Vector.md#dot)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number` <br> 向量点积 (数量积)|
-| **[equals](mw.Vector.md#equals-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): `boolean` <br> 排除浮点数误差的向量近似等价判断|
-| **[floor](mw.Vector.md#floor)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将向量a逐元素向量向下取整|
-| **[fromString](mw.Vector.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 通过一个字符串创建 Vector|
-| **[invert](mw.Vector.md#invert)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 Infinity|
-| **[invertSafe](mw.Vector.md#invertsafe)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): [`Vector`](mw.Vector.md) <br> 将向量a逐元素向量取倒数，接近 0 时返回 0|
-| **[lerp](mw.Vector.md#lerp)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `t`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 逐元素向量线性插值： A + t * (B - A)|
-| **[magnitude](mw.Vector.md#magnitude-1)**(`a`: [`Vector`](mw.Vector.md)): `number` <br> 求向量长度|
-| **[max](mw.Vector.md#max)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 逐元素向量最大值|
-| **[min](mw.Vector.md#min)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 逐元素向量最小值|
-| **[moveTowards](mw.Vector.md#movetowards)**(`current`: [`Vector`](mw.Vector.md), `target`: [`Vector`](mw.Vector.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 向目标向量移动|
-| **[multiply](mw.Vector.md#multiply-1)**(`a`: [`Vector`](mw.Vector.md), `b`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 遍历向量a的每个分量乘以b|
-| **[negate](mw.Vector.md#negate)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 求向量a逐元素向量取负|
-| **[normalize](mw.Vector.md#normalize-1)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 归一化向量|
-| **[project](mw.Vector.md#project)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算向量a在指定向量上的投影|
-| **[projectOnPlane](mw.Vector.md#projectonplane)**(`a`: [`Vector`](mw.Vector.md), `n`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算向量a在指定平面上的投影|
-| **[reflect](mw.Vector.md#reflect)**(`inDirection`: [`Vector`](mw.Vector.md), `inNormal`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 求反射角|
-| **[rotateX](mw.Vector.md#rotatex)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 绕 X 轴旋转向量指定弧度|
-| **[rotateY](mw.Vector.md#rotatey)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 绕 Y 轴旋转向量指定弧度|
-| **[rotateZ](mw.Vector.md#rotatez)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 绕 Z 轴旋转向量指定弧度|
-| **[round](mw.Vector.md#round)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 将向量a逐元素向量四舍五入取整|
-| **[set](mw.Vector.md#set-1)**(`outer`: [`Vector`](mw.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](mw.Vector.md) <br> 设置向量值|
-| **[sqrMagnitude](mw.Vector.md#sqrmagnitude-1)**(`a`: [`Vector`](mw.Vector.md)): `number` <br> 求向量长度平方|
-| **[squaredDistance](mw.Vector.md#squareddistance)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number` <br> 求两向量的欧氏距离平方|
-| **[strictEquals](mw.Vector.md#strictequals-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `boolean` <br> 向量等价判断|
-| **[subtract](mw.Vector.md#subtract-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 计算向量a减去向量b|
+| 计算向量的长度|
+| **[magnitude](mw.Vector.md#magnitude)**(`a`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量长度|
+| [negative](mw.Vector.md#negative) |
+| **[normalized](mw.Vector.md#normalized)**(): [`Vector`](mw.Vector.md)  |
+| 返回一个归一化的新向量, 不影响本向量|
+| **[sqrLength](mw.Vector.md#sqrlength)**(): `number`  |
+| 计算向量的长度平方|
+| **[sqrMagnitude](mw.Vector.md#sqrmagnitude)**(`a`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量长度平方|
+| [back](mw.Vector.md#back) |
+| **[down](mw.Vector.md#down)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 0, -1)|
+| **[forward](mw.Vector.md#forward)**(): [`Vector`](mw.Vector.md)  |
+| Vector(1, 0, 0)|
+| **[left](mw.Vector.md#left)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, -1, 0)|
+| **[negOne](mw.Vector.md#negone)**(): [`Vector`](mw.Vector.md)  |
+| Vector(-1, -1, -1)|
+| **[one](mw.Vector.md#one)**(): [`Vector`](mw.Vector.md)  |
+| Vector(1, 1, 1)|
+| **[right](mw.Vector.md#right)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 1, 0)|
+| **[unitX](mw.Vector.md#unitx)**(): [`Vector`](mw.Vector.md)  |
+| Vector(1, 0, 0)|
+| **[unitY](mw.Vector.md#unity)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 1, 0)|
+| **[unitZ](mw.Vector.md#unitz)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 0, 1)|
+| **[up](mw.Vector.md#up)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 0, 1)|
+| **[zero](mw.Vector.md#zero)**(): [`Vector`](mw.Vector.md)  |
+| Vector(0, 0, 0)|
+
+### Methods <Score text="Methods" /> 
+| **[add](mw.Vector.md#add)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| :-----|
+| 计算ab两个向量相加|
+| **[clone](mw.Vector.md#clone)**(`a`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获得指定向量的拷贝|
+| **[divide](mw.Vector.md#divide)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a除以向量b|
+| **[equals](mw.Vector.md#equals)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): `boolean`  |
+| 排除浮点数误差的向量近似等价判断|
+| **[fromString](mw.Vector.md#fromstring)**(`str`: `string`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 通过一个字符串创建 Vector|
+| **[multiply](mw.Vector.md#multiply)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a乘以向量b|
+| **[normalize](mw.Vector.md#normalize)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 归一化向量|
+| **[set](mw.Vector.md#set)**(`outer`: [`Vector`](mw.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](mw.Vector.md)  |
+| 设置向量值|
+| **[strictEquals](mw.Vector.md#strictequals)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `boolean`  |
+| 向量等价判断|
+| **[subtract](mw.Vector.md#subtract)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a减去向量b|
+| **[toRotation](mw.Vector.md#torotation)**(): [`Rotation`](mw.Rotation.md)  |
+| 转换为对应的Rotation|
+| **[toString](mw.Vector.md#tostring)**(): `string`  |
+| 输出为字符串|
+| **[add](mw.Vector.md#add-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算ab两个向量相加|
+| **[angle](mw.Vector.md#angle)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量a与向量b在XY平面投影的夹角角度|
+| **[angle3D](mw.Vector.md#angle3d)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量a与向量b的夹角角度|
+| **[ceil](mw.Vector.md#ceil)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 将向量a逐元素向量向上取整|
+| **[clamp](mw.Vector.md#clamp)**(`value`: [`Vector`](mw.Vector.md), `minInclusive`: [`Vector`](mw.Vector.md), `maxInclusive`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 设置当前向量的值，使其各个分量都处于指定的范围内|
+| **[clone](mw.Vector.md#clone-1)**(`a`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 获得指定向量的拷贝|
+| **[copy](mw.Vector.md#copy)**(`a`: [`Vector`](mw.Vector.md), `outer`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 复制目标向量|
+| **[cross](mw.Vector.md#cross)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 向量叉积 (向量积)|
+| **[distance](mw.Vector.md#distance)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number`  |
+| 求两向量的欧氏距离|
+| **[divide](mw.Vector.md#divide-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a除以向量b|
+| **[dot](mw.Vector.md#dot)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number`  |
+| 向量点积 (数量积)|
+| **[equals](mw.Vector.md#equals-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): `boolean`  |
+| 排除浮点数误差的向量近似等价判断|
+| **[floor](mw.Vector.md#floor)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 将向量a逐元素向量向下取整|
+| **[fromString](mw.Vector.md#fromstring-1)**(`str`: `string`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 通过一个字符串创建 Vector|
+| **[invert](mw.Vector.md#invert)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 将向量a逐元素向量取倒数，接近 0 时返回 Infinity|
+| **[invertSafe](mw.Vector.md#invertsafe)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md), `epsilon?`: `number`): [`Vector`](mw.Vector.md)  |
+| 将向量a逐元素向量取倒数，接近 0 时返回 0|
+| **[lerp](mw.Vector.md#lerp)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `t`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 逐元素向量线性插值： A + t * (B - A)|
+| **[magnitude](mw.Vector.md#magnitude-1)**(`a`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量长度|
+| **[max](mw.Vector.md#max)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 逐元素向量最大值|
+| **[min](mw.Vector.md#min)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 逐元素向量最小值|
+| **[moveTowards](mw.Vector.md#movetowards)**(`current`: [`Vector`](mw.Vector.md), `target`: [`Vector`](mw.Vector.md), `maxDistanceDelta`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 向目标向量移动|
+| **[multiply](mw.Vector.md#multiply-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a乘以向量b|
+| **[negate](mw.Vector.md#negate)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 求向量a逐元素向量取负|
+| **[normalize](mw.Vector.md#normalize-1)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 归一化向量|
+| **[project](mw.Vector.md#project)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a在指定向量上的投影|
+| **[projectOnPlane](mw.Vector.md#projectonplane)**(`a`: [`Vector`](mw.Vector.md), `n`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a在指定平面上的投影|
+| **[reflect](mw.Vector.md#reflect)**(`inDirection`: [`Vector`](mw.Vector.md), `inNormal`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 求反射角|
+| **[rotateX](mw.Vector.md#rotatex)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 绕 X 轴旋转向量指定弧度|
+| **[rotateY](mw.Vector.md#rotatey)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 绕 Y 轴旋转向量指定弧度|
+| **[rotateZ](mw.Vector.md#rotatez)**(`v`: [`Vector`](mw.Vector.md), `o`: [`Vector`](mw.Vector.md), `a`: `number`, `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 绕 Z 轴旋转向量指定弧度|
+| **[round](mw.Vector.md#round)**(`a`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 将向量a逐元素向量四舍五入取整|
+| **[set](mw.Vector.md#set-1)**(`outer`: [`Vector`](mw.Vector.md), `x`: `number`, `y`: `number`, `z`: `number`): [`Vector`](mw.Vector.md)  |
+| 设置向量值|
+| **[sqrMagnitude](mw.Vector.md#sqrmagnitude-1)**(`a`: [`Vector`](mw.Vector.md)): `number`  |
+| 求向量长度平方|
+| **[squaredDistance](mw.Vector.md#squareddistance)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `number`  |
+| 求两向量的欧氏距离平方|
+| **[strictEquals](mw.Vector.md#strictequals-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md)): `boolean`  |
+| 向量等价判断|
+| **[subtract](mw.Vector.md#subtract-1)**(`a`: [`Vector`](mw.Vector.md), `b`: [`Vector`](mw.Vector.md), `outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
+| 计算向量a减去向量b|
 
 用给定的 x, y 和 z 分量构建一个新的 Vector3
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x?` | `number` | x分量 default:0 |
-| `y?` | `number` | y分量 default:0 |
-| `z?` | `number` | z分量 default:0 |
+| `x?` `number` | x分量 default:0 |
+| :------ | :------ |
+| `y?` `number` | y分量 default:0 |
+| `z?` `number` | z分量 default:0 |
 
 • **new Vector**(`f`)
 
@@ -100,9 +171,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `f` | `number` | 给定的 f 值 |
+| `f` `number` | 给定的 f 值 |
+| :------ | :------ |
 
 • **new Vector**(`v`)
 
@@ -110,9 +180,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 给定的 Vector |
+| `v` [`Vector`](mw.Vector.md) | 给定的 Vector |
+| :------ | :------ |
 
 ## Properties
 
@@ -142,13 +211,28 @@ Z轴坐标
 
 ### length <Score text="length" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **length**(): `number`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 计算向量的长度
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -158,45 +242,82 @@ ___
 
 向量的长度
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+
 #### Returns
 
-`number`
+| `number` | 向量长度 |
+| :------ | :------ |
 
-___
+#### Returns
 
-### negative <Score text="negative" /> 
+| `number` |  |
+| :------ | :------ |
 
-• `get` **negative**(): [`Vector`](mw.Vector.md)
 
 返回各个分量取反的新向量
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
 
 ___
 
 ### normalized <Score text="normalized" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **normalized**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 返回一个归一化的新向量, 不影响本向量
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### sqrLength <Score text="sqrLength" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **sqrLength**(): `number`
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 计算向量的长度平方
 
 #### Returns
 
-`number`
+| `number` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
@@ -206,153 +327,325 @@ ___
 
 计算向量的长度平方
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+
 #### Returns
 
-`number`
+| `number` | 向量长度平方 |
+| :------ | :------ |
 
-___
+#### Returns
 
-### back <Score text="back" /> 
+| `number` |  |
+| :------ | :------ |
 
-• `Static` `get` **back**(): [`Vector`](mw.Vector.md)
 
 Vector(-1, 0, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
 
 ___
 
 ### down <Score text="down" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **down**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 0, -1)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### forward <Score text="forward" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **forward**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(1, 0, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### left <Score text="left" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **left**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, -1, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### negOne <Score text="negOne" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **negOne**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(-1, -1, -1)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### one <Score text="one" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **one**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(1, 1, 1)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### right <Score text="right" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **right**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 1, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### unitX <Score text="unitX" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **unitX**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(1, 0, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### unitY <Score text="unitY" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **unitY**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 1, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### unitZ <Score text="unitZ" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **unitZ**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 0, 1)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### up <Score text="up" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **up**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 0, 1)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### zero <Score text="zero" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **zero**(): [`Vector`](mw.Vector.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 Vector(0, 0, 0)
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+</td>
+</tr></tbody>
+</table>
+
+| [`Vector`](mw.Vector.md) |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -362,79 +655,92 @@ Vector(0, 0, 0)
 
 加一个向量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 相加的向量对象 |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 相加的结果 Vector 对象 |
+| :------ | :------ |
 
-修改后的自身对象
 
-___
+#### Parameters
 
+| `v` [`Vector`](mw.Vector.md) | 相加的向量对象 |
+| :------ | :------ |
 ### clone <Score text="clone" /> 
 
-• **clone**(): [`Vector`](mw.Vector.md) 
+• **clone**(): [`Vector`](mw.Vector.md)
 
 克隆当前向量
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 克隆得到的新 Vector 对象 |
+| :------ | :------ |
 
-克隆的新向量
 
-___
 
 ### divide <Score text="divide" /> 
 
-• **divide**(`v`): [`Vector`](mw.Vector.md) 
+• **divide**(`v`): [`Vector`](mw.Vector.md) <Badge type="tip" text="other" />
 
 每个分量除以参数
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | 每个分量除以的参数 |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` `number` | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 相除的结果 Vector 对象 |
+| :------ | :------ |
 
-修改后的自身对象
+• `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](mw.Vector.md) 
 
-• **divide**(`v`): [`Vector`](mw.Vector.md) 
+计算向量a除以向量b
 
-除以一个向量
+
+::: warning Precautions
+
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+
+:::
+
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 相除的结果 Vector 对象 |
+| :------ | :------ |
+
+**`Effect`**
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 除以的向量对象 |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-修改后的自身对象
-
-___
-
-### equals <Score text="equals" /> 
-
-• **equals**(`other`, `epsilon?`): `boolean` 
-
+| `v` `number` | 每个分量除以的参数 |
+| :------ | :------ |
 判断当前向量是否在误差范围内与指定向量相等
+
+**`Effect`**
 
 
 ::: warning Precautions
@@ -445,16 +751,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Vector`](mw.Vector.md) | 指定的向量 |
-| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
+| `other` [`Vector`](mw.Vector.md) | 指定的向量 |
+| :------ | :------ |
+| `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
 
 #### Returns
 
-`boolean`
-
-当前向量是否在误差范围内与指定向量相等
+| `boolean` | 当前向量是否在误差范围内与指定向量相等 |
+| :------ | :------ |
 
 ___
 
@@ -464,133 +768,146 @@ ___
 
 读取字符串数据
 
+#### Parameters
+
+| `str` `string` | 待转化的 string |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 转化后的 Vector 对象 |
+| :------ | :------ |
+
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | 读取的字符 |
-
-
-___
+| `str` `string` | 读取的字符 |
+| :------ | :------ |
 
 ### multiply <Score text="multiply" /> 
 
-• **multiply**(`v`): [`Vector`](mw.Vector.md) 
+• **multiply**(`v`): [`Vector`](mw.Vector.md)
 
 乘以一个向量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 相乘的向量对象 |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` `number` | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 相乘的结果 Vector 对象 |
+| :------ | :------ |
 
-修改后的自身对象
+• `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](mw.Vector.md) 
 
-• **multiply**(`v`): [`Vector`](mw.Vector.md) 
-
-每个分量乘以参数
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `number` | 每个分量乘以的参数 |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-修改后的自身对象
-
-___
-
-### normalize <Score text="normalize" /> 
-
-• **normalize**(): [`Vector`](mw.Vector.md) 
-
-将当前向量归一化
-
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-归一化后的向量
-
-___
-
-### set <Score text="set" /> 
-
-• **set**(`other`): [`Vector`](mw.Vector.md) 
-
-设置当前向量使其与指定向量相等
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Vector`](mw.Vector.md) | 指定的向量 |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-修改后的自身对象
-
-• **set**(`x?`, `y?`, `z?`): [`Vector`](mw.Vector.md) 
-
-设置当前向量的具体分量值
-
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x?` | `number` | x分量 default:0 |
-| `y?` | `number` | y分量 default:0 |
-| `z?` | `number` | z分量 default:0 |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-修改后的自身对象
-
-___
-
-### strictEquals <Score text="strictEquals" /> 
-
-• **strictEquals**(`other`): `boolean` 
-
-判断当前向量是否与指定向量相等
+计算向量a乘以向量b
 
 
 ::: warning Precautions
 
-当两个向量的分量在指定的误差范围内相等时, 返回 true, 否则返回 false
+如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Vector`](mw.Vector.md) | 指定的向量 |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-`boolean`
+| [`Vector`](mw.Vector.md) | 相乘的结果 Vector 对象 |
+| :------ | :------ |
 
-当前向量是否与指定向量相等
+**`Effect`**
+
+
+#### Parameters
+
+| `v` [`Vector`](mw.Vector.md) | 相乘的向量对象 |
+| :------ | :------ |
+将当前向量归一化
+
+**`Effect`**
+
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 归一化后的向量 |
+| :------ | :------ |
+
+___
+
+### set <Score text="set" /> 
+
+• **set**(`other`): [`Vector`](mw.Vector.md)
+
+设置当前向量使其与指定向量相等
+
+#### Parameters
+
+| `outer` [`Vector`](mw.Vector.md) | 被设置的向量对象 |
+| :------ | :------ |
+| `x` `number` | x分量 |
+| `y` `number` | y分量 |
+| `z` `number` | z分量 |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 被设置的 Vector 对象 |
+| :------ | :------ |
+
+
+
+• **set**(`x?`, `y?`, `z?`): [`Vector`](mw.Vector.md) <Badge type="tip" text="other" />
+
+设置当前向量的具体分量值
+
+**`Effect`**
+
+
+#### Parameters
+
+| `x?` `number` | x分量 default:0 |
+| :------ | :------ |
+| `y?` `number` | y分量 default:0 |
+| `z?` `number` | z分量 default:0 |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 修改后的自身对象 |
+| :------ | :------ |
+
+___
+
+### strictEquals <Score text="strictEquals" /> 
+
+• **strictEquals**(`other`): `boolean` <Badge type="tip" text="other" />
+
+判断当前向量是否与指定向量相等
+
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+
+#### Returns
+
+| `boolean` | 两向量是否相等 |
+| :------ | :------ |
+
+
+
+| `boolean` 当前向量是否与指定向量相等 |
+| :------ | :------ |
 
 ___
 
@@ -600,33 +917,34 @@ ___
 
 减去一个向量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 相减的向量对象 |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 相减的结果 Vector 对象 |
+| :------ | :------ |
 
-修改后的自身对象
 
-___
+#### Parameters
 
+| `v` [`Vector`](mw.Vector.md) | 相减的向量对象 |
+| :------ | :------ |
 ### toRotation <Score text="toRotation" /> 
 
 • **toRotation**(): [`Rotation`](mw.Rotation.md) 
 
 转换为对应的Rotation
 
-
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 新的对应的Rotation对象 |
+| :------ | :------ |
 
-新的对应的Rotation对象
 
 ___
 
@@ -636,12 +954,11 @@ ___
 
 输出为字符串
 
-
 #### Returns
 
-`string`
+| `string` | 向量值字符串 |
+| :------ | :------ |
 
-向量值字符串
 
 ___
 
@@ -660,17 +977,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相加的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相加的结果 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -680,19 +995,17 @@ ___
 
 求向量a与向量b在XY平面投影的夹角角度
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`number`
+| `number` | 夹角角度 |
+| :------ | :------ |
 
-夹角角度
 
 ___
 
@@ -702,19 +1015,17 @@ ___
 
 求向量a与向量b的夹角角度
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`number`
+| `number` | 夹角角度 |
+| :------ | :------ |
 
-夹角角度
 
 ___
 
@@ -724,25 +1035,23 @@ ___
 
 将向量a逐元素向量向上取整
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素向上取整的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素向上取整的 Vector 对象
 
 ___
 
@@ -752,20 +1061,18 @@ ___
 
 设置当前向量的值，使其各个分量都处于指定的范围内
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `value` | [`Vector`](mw.Vector.md) | 当前向量的值 |
-| `minInclusive` | [`Vector`](mw.Vector.md) | 允许的最小值 |
-| `maxInclusive` | [`Vector`](mw.Vector.md) | 允许的最大值 |
+| `value` [`Vector`](mw.Vector.md) | 当前向量的值 |
+| :------ | :------ |
+| `minInclusive` [`Vector`](mw.Vector.md) | 允许的最小值 |
+| `maxInclusive` [`Vector`](mw.Vector.md) | 允许的最大值 |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 各个分量都处于指定的范围内的向量 |
+| :------ | :------ |
 
-各个分量都处于指定的范围内的向量
 
 ___
 
@@ -778,15 +1085,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-克隆得到的新 Vector 对象
+| [`Vector`](mw.Vector.md) | 克隆得到的新 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -796,25 +1101,23 @@ ___
 
 复制目标向量
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 目标向量 |
+| :------ | :------ |
+| `outer` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 克隆得到的新 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 目标向量 |
-| `outer` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-克隆得到的新 Vector 对象
 
 ___
 
@@ -824,26 +1127,24 @@ ___
 
 向量叉积 (向量积)
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 叉积 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-叉积 Vector 对象
 
 ___
 
@@ -853,19 +1154,17 @@ ___
 
 求两向量的欧氏距离
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`number`
+| `number` | 欧氏距离 |
+| :------ | :------ |
 
-欧氏距离
 
 ___
 
@@ -884,17 +1183,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | `number` | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` `number` | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相除的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相除的结果 Vector 对象 |
+| :------ | :------ |
 
 • `Static` **divide**(`a`, `b`, `outer?`): [`Vector`](mw.Vector.md) 
 
@@ -909,17 +1206,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相除的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相除的结果 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -929,19 +1224,17 @@ ___
 
 向量点积 (数量积)
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`number`
+| `number` | 点积 |
+| :------ | :------ |
 
-点积
 
 ___
 
@@ -951,20 +1244,18 @@ ___
 
 排除浮点数误差的向量近似等价判断
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `epsilon?` | `number` | 最小误差数 default:MathDefine.EPSILON |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `epsilon?` `number` | 最小误差数 default:MathDefine.EPSILON |
 
 #### Returns
 
-`boolean`
+| `boolean` | 是否等价 |
+| :------ | :------ |
 
-是否等价
 
 ___
 
@@ -974,25 +1265,23 @@ ___
 
 将向量a逐元素向量向下取整
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素向下取整的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素向下取整的 Vector 对象
 
 ___
 
@@ -1011,16 +1300,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | 待转化的 string |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `str` `string` | 待转化的 string |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-转化后的 Vector 对象
+| [`Vector`](mw.Vector.md) | 转化后的 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -1030,25 +1317,23 @@ ___
 
 将向量a逐元素向量取倒数，接近 0 时返回 Infinity
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素取倒数后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素取倒数后的 Vector 对象
 
 ___
 
@@ -1058,26 +1343,24 @@ ___
 
 将向量a逐元素向量取倒数，接近 0 时返回 0
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+| `epsilon?` `number` | 最小误差数 default:mw.MathUtil.EPSILON |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素取倒数后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-| `epsilon?` | `number` | 最小误差数 default:mw.MathUtil.EPSILON |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素取倒数后的 Vector 对象
 
 ___
 
@@ -1087,27 +1370,25 @@ ___
 
 逐元素向量线性插值： A + t * (B - A)
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `t` `number` | 插值 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 线性插值得到的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `t` | `number` | 插值 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-线性插值得到的 Vector 对象
 
 ___
 
@@ -1120,15 +1401,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
 
 #### Returns
 
-`number`
-
-向量长度
+| `number` | 向量长度 |
+| :------ | :------ |
 
 ___
 
@@ -1138,26 +1417,24 @@ ___
 
 逐元素向量最大值
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素取最大值的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素取最大值的 Vector 对象
 
 ___
 
@@ -1167,26 +1444,24 @@ ___
 
 逐元素向量最小值
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素取最小值后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素取最小值后的 Vector 对象
 
 ___
 
@@ -1196,27 +1471,25 @@ ___
 
 向目标向量移动
 
+#### Parameters
+
+| `current` [`Vector`](mw.Vector.md) | 当前向量 |
+| :------ | :------ |
+| `target` [`Vector`](mw.Vector.md) | 目标向量 |
+| `maxDistanceDelta` `number` | 最大移动分量 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 移动后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `current` | [`Vector`](mw.Vector.md) | 当前向量 |
-| `target` | [`Vector`](mw.Vector.md) | 目标向量 |
-| `maxDistanceDelta` | `number` | 最大移动分量 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的 Vector 对象 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-移动后的 Vector 对象
 
 ___
 
@@ -1235,17 +1508,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | `number` | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` `number` | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相乘的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相乘的结果 Vector 对象 |
+| :------ | :------ |
 
 • `Static` **multiply**(`a`, `b`, `outer?`): [`Vector`](mw.Vector.md) 
 
@@ -1260,17 +1531,15 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相乘的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相乘的结果 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -1280,25 +1549,23 @@ ___
 
 求向量a逐元素向量取负
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素取负后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素取负后的 Vector 对象
 
 ___
 
@@ -1308,25 +1575,23 @@ ___
 
 归一化向量
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 归一化后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-归一化后的 Vector 对象
 
 ___
 
@@ -1336,26 +1601,24 @@ ___
 
 计算向量a在指定向量上的投影
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 指定平面的法线 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收投影的向量对象 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 向量a在指定向量上的投影 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 指定平面的法线 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收投影的向量对象 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-向量a在指定向量上的投影
 
 ___
 
@@ -1365,26 +1628,24 @@ ___
 
 计算向量a在指定平面上的投影
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `n` [`Vector`](mw.Vector.md) | 指定平面的法线 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 向量a在指定平面上的投影 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `n` | [`Vector`](mw.Vector.md) | 指定平面的法线 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-向量a在指定平面上的投影
 
 ___
 
@@ -1394,26 +1655,24 @@ ___
 
 求反射角
 
+#### Parameters
+
+| `inDirection` [`Vector`](mw.Vector.md) | 入射向量角度 |
+| :------ | :------ |
+| `inNormal` [`Vector`](mw.Vector.md) | 法线向量 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 反射角 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inDirection` | [`Vector`](mw.Vector.md) | 入射向量角度 |
-| `inNormal` | [`Vector`](mw.Vector.md) | 法线向量 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-反射角
 
 ___
 
@@ -1423,27 +1682,25 @@ ___
 
 绕 X 轴旋转向量指定弧度
 
+#### Parameters
+
+| `v` [`Vector`](mw.Vector.md) | 旋转矢量 |
+| :------ | :------ |
+| `o` [`Vector`](mw.Vector.md) | 旋转中心 |
+| `a` `number` | 旋转弧度 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 绕 X 轴旋转指定弧度后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 旋转矢量 |
-| `o` | [`Vector`](mw.Vector.md) | 旋转中心 |
-| `a` | `number` | 旋转弧度 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-绕 X 轴旋转指定弧度后的 Vector 对象
 
 ___
 
@@ -1453,27 +1710,25 @@ ___
 
 绕 Y 轴旋转向量指定弧度
 
+#### Parameters
+
+| `v` [`Vector`](mw.Vector.md) | 旋转矢量 |
+| :------ | :------ |
+| `o` [`Vector`](mw.Vector.md) | 旋转中心 |
+| `a` `number` | 旋转弧度 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 绕 Y 轴旋转指定弧度后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 旋转矢量 |
-| `o` | [`Vector`](mw.Vector.md) | 旋转中心 |
-| `a` | `number` | 旋转弧度 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-绕 Y 轴旋转指定弧度后的 Vector 对象
 
 ___
 
@@ -1483,27 +1738,25 @@ ___
 
 绕 Z 轴旋转向量指定弧度
 
+#### Parameters
+
+| `v` [`Vector`](mw.Vector.md) | 旋转矢量 |
+| :------ | :------ |
+| `o` [`Vector`](mw.Vector.md) | 旋转中心 |
+| `a` `number` | 旋转弧度 |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 绕 Z 轴旋转指定弧度后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 旋转矢量 |
-| `o` | [`Vector`](mw.Vector.md) | 旋转中心 |
-| `a` | `number` | 旋转弧度 |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-绕 Z 轴旋转指定弧度后的 Vector 对象
 
 ___
 
@@ -1513,25 +1766,23 @@ ___
 
 将向量a逐元素向量四舍五入取整
 
+#### Parameters
+
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 逐元素四舍五入取整后的 Vector 对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量 default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-逐元素四舍五入取整后的 Vector 对象
 
 ___
 
@@ -1544,18 +1795,16 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outer` | [`Vector`](mw.Vector.md) | 被设置的向量对象 |
-| `x` | `number` | x分量 |
-| `y` | `number` | y分量 |
-| `z` | `number` | z分量 |
+| `outer` [`Vector`](mw.Vector.md) | 被设置的向量对象 |
+| :------ | :------ |
+| `x` `number` | x分量 |
+| `y` `number` | y分量 |
+| `z` `number` | z分量 |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-被设置的 Vector 对象
+| [`Vector`](mw.Vector.md) | 被设置的 Vector 对象 |
+| :------ | :------ |
 
 ___
 
@@ -1568,15 +1817,13 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
 
 #### Returns
 
-`number`
-
-向量长度平方
+| `number` | 向量长度平方 |
+| :------ | :------ |
 
 ___
 
@@ -1586,19 +1833,17 @@ ___
 
 求两向量的欧氏距离平方
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`number`
+| `number` | 欧氏距离平方 |
+| :------ | :------ |
 
-欧氏距离平方
 
 ___
 
@@ -1611,16 +1856,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
 
 #### Returns
 
-`boolean`
-
-两向量是否相等
+| `boolean` | 两向量是否相等 |
+| :------ | :------ |
 
 ___
 
@@ -1639,14 +1882,12 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Vector`](mw.Vector.md) | 向量a |
-| `b` | [`Vector`](mw.Vector.md) | 向量b |
-| `outer?` | [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
+| `a` [`Vector`](mw.Vector.md) | 向量a |
+| :------ | :------ |
+| `b` [`Vector`](mw.Vector.md) | 向量b |
+| `outer?` [`Vector`](mw.Vector.md) | 接收结果的向量对象 default:null |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
-
-相减的结果 Vector 对象
+| [`Vector`](mw.Vector.md) | 相减的结果 Vector 对象 |
+| :------ | :------ |

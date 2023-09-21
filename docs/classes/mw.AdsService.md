@@ -2,7 +2,7 @@
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
-广告服务，支持激励/插屏类型
+<p class="content-big"> 广告服务，支持激励/插屏类型 </p>
 
 ::: warning Precautions
 
@@ -12,41 +12,70 @@
 
 ## Table of contents
 
-| Accessors |
-| :-----|
-| **[showTimeout](mw.AdsService.md#showtimeout)**(): `number` <br> 获取广告超时时间|
+### Constructors <Score text="Constructors" /> 
+| **new AdsService**()  |
+| :----- |
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[showTimeout](mw.AdsService.md#showtimeout)**(): `number`  |
 | :-----|
-| **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean` <br> 广告是否激活,PC上始终返回false|
-| **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void` <br> 广告是否准备好|
-| **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void` <br> 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
+| 设置广告超时时间|
+
+### Methods <Score text="Methods" /> 
+| **[isActive](mw.AdsService.md#isactive)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md)): `boolean`  |
+| :-----|
+| 广告是否激活,PC上始终返回false|
+| **[isReady](mw.AdsService.md#isready)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isReady`: `boolean`) => `void`): `void`  |
+| 广告是否准备好|
+| **[showAd](mw.AdsService.md#showad)**(`adsType`: [`AdsType`](../enums/mw.AdsType.md), `callback`: (`isSuccess`: `boolean`) => `void`): `void`  |
+| 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获|
 
 ## Accessors
 
 ### showTimeout <Score text="showTimeout" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **showTimeout**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **showTimeout**(`time`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取广告超时时间
 
 
 #### Returns
 
-`number`
+| `number` | 广告超时时长，单位为秒 |
+| :------ | :------ |
 
-广告超时时长，单位为秒
 
-• `Static` `set` **showTimeout**(`time`): `void` <Badge type="tip" text="client" />
+</td>
+<td style="text-align: left">
+
 
 设置广告超时时间
 
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `time` | `number` |  超时时长，单位为秒 |
+| `time` `number` |  超时时长，单位为秒 |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods
@@ -57,18 +86,16 @@
 
 广告是否激活,PC上始终返回false
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
+| `adsType` [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
+| :------ | :------ |
 
 #### Returns
 
-`boolean`
+| `boolean` | true:该类型广告已激活，false:该类型广告未激活 |
+| :------ | :------ |
 
-true:该类型广告已激活，false:该类型广告未激活
 
 ___
 
@@ -78,20 +105,19 @@ ___
 
 广告是否准备好
 
+#### Parameters
+
+| `adsType` [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
+| :------ | :------ |
+| `callback` (`isReady`: `boolean`) => `void` |  接收广告事件的回调 |
+
+
 
 ::: warning Precautions
 
 结果不准确，可能在广告准备好的情况返回false
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
-| `callback` | (`isReady`: `boolean`) => `void` |  接收广告事件的回调 |
-
 
 ___
 
@@ -101,8 +127,16 @@ ___
 
 展示广告，手机会进入Pause状态，可以用Events.addOnPauseListener来进行捕获
 
+#### Parameters
 
-使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果
+| `adsType` [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
+| :------ | :------ |
+| `callback` (`isSuccess`: `boolean`) => `void` |  广告播放结果回调 |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果 </p>
+
 ```ts
 @Component
 export default class AdsExample extends mw.Script {
@@ -139,11 +173,3 @@ export default class AdsExample extends mw.Script {
 
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `adsType` | [`AdsType`](../enums/mw.AdsType.md) |  广告类型 |
-| `callback` | (`isSuccess`: `boolean`) => `void` |  广告播放结果回调 |
-

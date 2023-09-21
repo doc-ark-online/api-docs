@@ -2,11 +2,12 @@
 
 # TweenUtil <Badge type="tip" text="Class" /> <Score text="TweenUtil" />
 
-补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。
+<p class="content-big"> 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 </p>
 你只需告诉它哪些属性要更改，当补间结束运行时它们应该具有哪些最终值，以及这需要多长时间，
 补间引擎将负责计算从起始点到结束点的值。
 
-使用示例: 创建一个名为TweenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下G键，会在场景中随机生成一个导弹并按照设定轨迹飞往目的地。
+<p style="font-size: 14px;"> 使用示例: 创建一个名为TweenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下G键，会在场景中随机生成一个导弹并按照设定轨迹飞往目的地。 </p>
+
 ```ts
 @Component
 export default class TweenExample extends Script {
@@ -157,10 +158,16 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new TweenUtil**()  |
+| :----- |
+
+### Properties <Score text="Properties" /> 
+| **[TWEEN](mw.TweenUtil.md#tween)**: [`TweenGroup`](mw.TweenGroup.md)  |
 | :-----|
-| **[TWEEN](mw.TweenUtil.md#tween)**: [`TweenGroup`](mw.TweenGroup.md) <br> 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
-| **[nextId](mw.TweenUtil.md#nextid)**: () => `number` <br> 获取下一个ID的全局方法|
+| 全局补间组单例。在创建补间时，如不特别指定，默认添加到该补间组|
+| **[nextId](mw.TweenUtil.md#nextid)**: () => `number`  |
+| 获取下一个ID的全局方法|
 
 ## Properties
 

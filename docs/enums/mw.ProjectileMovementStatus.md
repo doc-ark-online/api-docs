@@ -2,15 +2,15 @@
 
 # ProjectileMovementStatus <Badge type="tip" text="Enumeration" /> <Score text="ProjectileMovementStatus" />
 
-投掷物移动状态
+<p class="content-big"> 投掷物移动状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Launched](mw.ProjectileMovementStatus.md#launched)** = ``2`` <br> |
-| **[NotReady](mw.ProjectileMovementStatus.md#notready)** = ``0`` <br> |
-| **[Ready](mw.ProjectileMovementStatus.md#ready)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Launched](mw.ProjectileMovementStatus.md#launched)** = ``2``  |
+| :----- |
+| **[NotReady](mw.ProjectileMovementStatus.md#notready)** = ``0`` |
+| **[Ready](mw.ProjectileMovementStatus.md#ready)** = ``1`` |
 
 ## Enumeration Members
 

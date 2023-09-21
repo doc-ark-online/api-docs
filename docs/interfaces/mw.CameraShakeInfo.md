@@ -2,24 +2,36 @@
 
 # CameraShakeInfo <Badge type="tip" text="Interface" /> <Score text="CameraShakeInfo" />
 
-抖动数据
+<p class="content-big"> 抖动数据 </p>
 
 ## Table of contents
 
-| Properties |
+### Properties <Score text="Properties" /> 
+| **[positionXAmplitude](mw.CameraShakeInfo.md#positionxamplitude)**: `number`  |
 | :-----|
-| **[positionXAmplitude](mw.CameraShakeInfo.md#positionxamplitude)**: `number` <br> x轴位移振荡的幅度|
-| **[positionXFrequency](mw.CameraShakeInfo.md#positionxfrequency)**: `number` <br> x轴位移振荡的频率|
-| **[positionYAmplitude](mw.CameraShakeInfo.md#positionyamplitude)**: `number` <br> y轴位移振荡的幅度|
-| **[positionYFrequency](mw.CameraShakeInfo.md#positionyfrequency)**: `number` <br> y轴位移振荡的频率|
-| **[positionZAmplitude](mw.CameraShakeInfo.md#positionzamplitude)**: `number` <br> z轴位移振荡的幅度|
-| **[positionZFrequency](mw.CameraShakeInfo.md#positionzfrequency)**: `number` <br> z轴位移振荡的频率|
-| **[rotationXAmplitude](mw.CameraShakeInfo.md#rotationxamplitude)**: `number` <br> x(roll)轴旋转振荡的幅度|
-| **[rotationXFrequency](mw.CameraShakeInfo.md#rotationxfrequency)**: `number` <br> x(roll)轴旋转振荡的频率|
-| **[rotationYAmplitude](mw.CameraShakeInfo.md#rotationyamplitude)**: `number` <br> y(pitch)轴旋转振荡的幅度|
-| **[rotationYFrequency](mw.CameraShakeInfo.md#rotationyfrequency)**: `number` <br> y(pitch)轴旋转振荡的频率|
-| **[rotationZAmplitude](mw.CameraShakeInfo.md#rotationzamplitude)**: `number` <br> z(yaw)轴旋转振荡的幅度|
-| **[rotationZFrequency](mw.CameraShakeInfo.md#rotationzfrequency)**: `number` <br> z(yaw)轴旋转振荡的频率|
+| x轴位移振荡的幅度|
+| **[positionXFrequency](mw.CameraShakeInfo.md#positionxfrequency)**: `number`  |
+| x轴位移振荡的频率|
+| **[positionYAmplitude](mw.CameraShakeInfo.md#positionyamplitude)**: `number`  |
+| y轴位移振荡的幅度|
+| **[positionYFrequency](mw.CameraShakeInfo.md#positionyfrequency)**: `number`  |
+| y轴位移振荡的频率|
+| **[positionZAmplitude](mw.CameraShakeInfo.md#positionzamplitude)**: `number`  |
+| z轴位移振荡的幅度|
+| **[positionZFrequency](mw.CameraShakeInfo.md#positionzfrequency)**: `number`  |
+| z轴位移振荡的频率|
+| **[rotationXAmplitude](mw.CameraShakeInfo.md#rotationxamplitude)**: `number`  |
+| x(roll)轴旋转振荡的幅度|
+| **[rotationXFrequency](mw.CameraShakeInfo.md#rotationxfrequency)**: `number`  |
+| x(roll)轴旋转振荡的频率|
+| **[rotationYAmplitude](mw.CameraShakeInfo.md#rotationyamplitude)**: `number`  |
+| y(pitch)轴旋转振荡的幅度|
+| **[rotationYFrequency](mw.CameraShakeInfo.md#rotationyfrequency)**: `number`  |
+| y(pitch)轴旋转振荡的频率|
+| **[rotationZAmplitude](mw.CameraShakeInfo.md#rotationzamplitude)**: `number`  |
+| z(yaw)轴旋转振荡的幅度|
+| **[rotationZFrequency](mw.CameraShakeInfo.md#rotationzfrequency)**: `number`  |
+| z(yaw)轴旋转振荡的频率|
 
 ## Properties
 

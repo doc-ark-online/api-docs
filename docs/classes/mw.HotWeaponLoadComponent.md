@@ -2,9 +2,10 @@
 
 # HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
-热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑
+<p class="content-big"> 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑 </p>
 
-使用示例: 创建一个名为"HotWeaponLoadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启上膛组件并设置参数，添加委托的效果,代码如下:
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponLoadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启上膛组件并设置参数，添加委托的效果,代码如下: </p>
+
 ```ts
 @Component
 export default class HotWeaponLoadSample1 extends Script {
@@ -29,16 +30,25 @@ export default class HotWeaponLoadSample1 extends Script {
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: `MulticastDelegateInterface`<() => `void`\> <br> 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+### Constructors <Score text="Constructors" /> 
+| **new HotWeaponLoadComponent**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|
-| **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string` <br> 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean` <br> 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
-| **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number` <br> 获取上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例|
+| 服务器上膛结束时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[onStartLoad](mw.HotWeaponLoadComponent.md#onstartload)**: `MulticastDelegateInterface`<() => `void`\>  |
+| 服务器开始上膛时执行绑定函数。使用示例见类 HotWeaponLoadComponent 使用示例|
+
+### Accessors <Score text="Accessors" /> 
+| **[animationAssetId](mw.HotWeaponLoadComponent.md#animationassetid)**(): `string`  |
+| :-----|
+| 设置动画 GUID。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[loadAfterFireEnabled](mw.HotWeaponLoadComponent.md#loadafterfireenabled)**(): `boolean`  |
+| 设置是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例|
+| **[loadDuration](mw.HotWeaponLoadComponent.md#loadduration)**(): `number`  |
+| 设置上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例|
 
 ## Properties
 
@@ -60,18 +70,35 @@ ___
 
 ### animationAssetId <Score text="animationAssetId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **animationAssetId**(): `string` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **animationAssetId**(`GUID`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取绑定的动画GUID。使用示例见类 HotWeaponLoadComponent 使用示例
 
 
 #### Returns
 
-`string`
+| `string` | 绑定的动画GUID |
+| :------ | :------ |
 
-绑定的动画GUID
 
-• `set` **animationAssetId**(`GUID`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置动画 GUID。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -79,27 +106,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `GUID` | `string` |  需要设置的蒙太奇动画 GUID |
+| `GUID` `string` |  需要设置的蒙太奇动画 GUID |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### loadAfterFireEnabled <Score text="loadAfterFireEnabled" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **loadAfterFireEnabled**(): `boolean` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **loadAfterFireEnabled**(`enable`): `void` <Badge type="tip" text="other" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
 
 
 #### Returns
 
-`boolean`
+| `boolean` | 是否开启开火后自动上膛的功能 |
+| :------ | :------ |
 
-是否开启开火后自动上膛的功能
 
-• `set` **loadAfterFireEnabled**(`enable`): `void` <Badge type="tip" text="other" />
+</td>
+<td style="text-align: left">
+
 
 设置是否开启开火后自动上膛的功能。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -113,27 +161,48 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `enable` | `boolean` |  是否开启开火后自动上膛的功能 |
+| `enable` `boolean` |  是否开启开火后自动上膛的功能 |
+| :------ | :------ |
 
+
+
+</td>
+</tr></tbody>
+</table>
 
 ___
 
 ### loadDuration <Score text="loadDuration" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **loadDuration**(): `number` 
+
+</th>
+<th style="text-align: left">
+
+• `set` **loadDuration**(`time`): `void` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例
 
 
 #### Returns
 
-`number`
+| `number` | 上膛时间 |
+| :------ | :------ |
 
-上膛时间
 
-• `set` **loadDuration**(`time`): `void` 
+</td>
+<td style="text-align: left">
+
 
 设置上膛时间。使用示例见类 HotWeaponLoadComponent 使用示例
 
@@ -146,7 +215,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `time` | `number` |  上膛时间 |
+| `time` `number` |  上膛时间 |
+| :------ | :------ |
+
+
+</td>
+</tr></tbody>
+</table>
 

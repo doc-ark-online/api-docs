@@ -2,21 +2,21 @@
 
 # SomatotypeV2 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV2" />
 
-角色体型
+<p class="content-big"> 角色体型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[AnimeFemale](mw.SomatotypeV2.md#animefemale)** = ``2`` <br> |
-| **[AnimeMale](mw.SomatotypeV2.md#animemale)** = ``1`` <br> |
-| **[CartoonyFemale](mw.SomatotypeV2.md#cartoonyfemale)** = ``8`` <br> |
-| **[CartoonyMale](mw.SomatotypeV2.md#cartoonymale)** = ``7`` <br> |
-| **[LowpolyAdultFemale](mw.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` <br> |
-| **[LowpolyAdultMale](mw.SomatotypeV2.md#lowpolyadultmale)** = ``3`` <br> |
-| **[None](mw.SomatotypeV2.md#none)** = ``0`` <br> |
-| **[RealisticAdultFemale](mw.SomatotypeV2.md#realisticadultfemale)** = ``6`` <br> |
-| **[RealisticAdultMale](mw.SomatotypeV2.md#realisticadultmale)** = ``5`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[AnimeFemale](mw.SomatotypeV2.md#animefemale)** = ``2``  |
+| :----- |
+| **[AnimeMale](mw.SomatotypeV2.md#animemale)** = ``1`` |
+| **[CartoonyFemale](mw.SomatotypeV2.md#cartoonyfemale)** = ``8`` |
+| **[CartoonyMale](mw.SomatotypeV2.md#cartoonymale)** = ``7`` |
+| **[LowpolyAdultFemale](mw.SomatotypeV2.md#lowpolyadultfemale)** = ``4`` |
+| **[LowpolyAdultMale](mw.SomatotypeV2.md#lowpolyadultmale)** = ``3`` |
+| **[None](mw.SomatotypeV2.md#none)** = ``0`` |
+| **[RealisticAdultFemale](mw.SomatotypeV2.md#realisticadultfemale)** = ``6`` |
+| **[RealisticAdultMale](mw.SomatotypeV2.md#realisticadultmale)** = ``5`` |
 
 ## Enumeration Members
 

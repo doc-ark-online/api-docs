@@ -2,14 +2,14 @@
 
 # UILayoutType <Badge type="tip" text="Enumeration" /> <Score text="UILayoutType" />
 
-自动布局排版规则-容器类型
+<p class="content-big"> 自动布局排版规则-容器类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Horizontal](mw.UILayoutType.md#horizontal)** = ``0`` <br> |
-| **[Vertical](mw.UILayoutType.md#vertical)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Horizontal](mw.UILayoutType.md#horizontal)** = ``0``  |
+| :----- |
+| **[Vertical](mw.UILayoutType.md#vertical)** = ``1`` |
 
 ## Enumeration Members
 

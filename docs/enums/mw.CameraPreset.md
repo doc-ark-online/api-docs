@@ -2,18 +2,18 @@
 
 # CameraPreset <Badge type="tip" text="Enumeration" /> <Score text="CameraPreset" />
 
-摄像机模式
+<p class="content-big"> 摄像机模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Default](mw.CameraPreset.md#default)** = ``3`` <br> |
-| **[FPSShootingAngle](mw.CameraPreset.md#fpsshootingangle)** = ``5`` <br> |
-| **[FirstPerson](mw.CameraPreset.md#firstperson)** = ``0`` <br> |
-| **[TPSOverShoulderAngle](mw.CameraPreset.md#tpsovershoulderangle)** = ``4`` <br> |
-| **[ThirdPerson](mw.CameraPreset.md#thirdperson)** = ``1`` <br> |
-| **[TopDownAngle](mw.CameraPreset.md#topdownangle)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Default](mw.CameraPreset.md#default)** = ``3``  |
+| :----- |
+| **[FPSShootingAngle](mw.CameraPreset.md#fpsshootingangle)** = ``5`` |
+| **[FirstPerson](mw.CameraPreset.md#firstperson)** = ``0`` |
+| **[TPSOverShoulderAngle](mw.CameraPreset.md#tpsovershoulderangle)** = ``4`` |
+| **[ThirdPerson](mw.CameraPreset.md#thirdperson)** = ``1`` |
+| **[TopDownAngle](mw.CameraPreset.md#topdownangle)** = ``2`` |
 
 ## Enumeration Members
 

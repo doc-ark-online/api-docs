@@ -2,22 +2,22 @@
 
 # DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
 
-拖拽的锚点
+<p class="content-big"> 拖拽的锚点 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[BottomCenter](mw.DragPivot.md#bottomcenter)** = ``8`` <br> |
-| **[BottomLeft](mw.DragPivot.md#bottomleft)** = ``7`` <br> |
-| **[BottomRight](mw.DragPivot.md#bottomright)** = ``9`` <br> |
-| **[CenterCenter](mw.DragPivot.md#centercenter)** = ``5`` <br> |
-| **[CenterLeft](mw.DragPivot.md#centerleft)** = ``4`` <br> |
-| **[CenterRight](mw.DragPivot.md#centerright)** = ``6`` <br> |
-| **[MouseDown](mw.DragPivot.md#mousedown)** = ``0`` <br> |
-| **[TopCenter](mw.DragPivot.md#topcenter)** = ``2`` <br> |
-| **[TopLeft](mw.DragPivot.md#topleft)** = ``1`` <br> |
-| **[TopRight](mw.DragPivot.md#topright)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[BottomCenter](mw.DragPivot.md#bottomcenter)** = ``8``  |
+| :----- |
+| **[BottomLeft](mw.DragPivot.md#bottomleft)** = ``7`` |
+| **[BottomRight](mw.DragPivot.md#bottomright)** = ``9`` |
+| **[CenterCenter](mw.DragPivot.md#centercenter)** = ``5`` |
+| **[CenterLeft](mw.DragPivot.md#centerleft)** = ``4`` |
+| **[CenterRight](mw.DragPivot.md#centerright)** = ``6`` |
+| **[MouseDown](mw.DragPivot.md#mousedown)** = ``0`` |
+| **[TopCenter](mw.DragPivot.md#topcenter)** = ``2`` |
+| **[TopLeft](mw.DragPivot.md#topleft)** = ``1`` |
+| **[TopRight](mw.DragPivot.md#topright)** = ``3`` |
 
 ## Enumeration Members
 

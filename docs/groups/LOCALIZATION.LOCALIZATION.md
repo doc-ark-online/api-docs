@@ -5,6 +5,6 @@ LOCALIZATION
 ## Table of contents
 | Classes |
 | :-----|
-| [LanguageUtil](../classes/mw.LanguageUtil.md) <br> 多语言工具类 |
-| [LocaleUtil](../classes/mw.LocaleUtil.md) <br> 地区本地化工具类 |
+| [LanguageUtil](../classes/mw.LanguageUtil.md) <br> 多语言工具 |
+| [LocaleUtil](../classes/mw.LocaleUtil.md) <br> 本地化工具 |
 

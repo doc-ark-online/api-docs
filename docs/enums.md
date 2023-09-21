@@ -67,6 +67,9 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [GameObjPoolSourceType](enums/mwext.GameObjPoolSourceType.md) | GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 | [EXTENSION](groups/EXTENSION.EXTENSION.md) |
+| [GizmoCoordinateType](enums/mw.GizmoCoordinateType.md) | gizmo坐标轴类型 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoModeType](enums/mw.GizmoModeType.md) | gizmo模式 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
+| [GizmoSpaceType](enums/mw.GizmoSpaceType.md) | gizmo空间 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [GraphicsLevel](enums/mw.GraphicsLevel.md) | 画质等级 | [TYPE](groups/TYPE.TYPE.md) |
 | [GravityMode](enums/mw.GravityMode.md) | 重力模式 | [SETTINGS](groups/SETTINGS.SETTINGS.md) |
 
@@ -101,6 +104,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [LanguageType](enums/mw.LanguageType.md) | 游戏语言 | [TYPE](groups/TYPE.TYPE.md) |
+| [LogLevel](enums/mw.LogLevel.md) | 日志等级 | [TYPE](groups/TYPE.TYPE.md) |
 
 
 ## M
@@ -137,6 +141,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [PostProcessPreset](enums/mw.PostProcessPreset.md) | 后处理预设枚举 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
+| [PrefabStatus](enums/mw.PrefabStatus.md) | 预制体审核状态 | [DATATYPE](groups/DATATYPE.DATATYPE.md) |
 | [ProgressBarFillType](enums/mw.ProgressBarFillType.md) | 进度条填充规则 | [UI](groups/UI.UI.md) |
 | [ProjectileMovementStatus](enums/mw.ProjectileMovementStatus.md) | 投掷物移动状态 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PropertyStatus](enums/mw.PropertyStatus.md) | 属性状态 | [TYPE](groups/TYPE.TYPE.md) |
@@ -145,6 +150,7 @@ Enums
 ## R
 | Name | Description | Groups |
 | :-----| :-----| :-----|
+| [ReleaseStatus](enums/mw.ReleaseStatus.md) | UGC 发布的状态 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [RuntimePlatform](enums/mw.RuntimePlatform.md) | 运行平台 | [TYPE](groups/TYPE.TYPE.md) |
 
 
@@ -152,6 +158,7 @@ Enums
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [ScrollBarDefaultLocation](enums/mw.ScrollBarDefaultLocation.md) | 滚动条默认位置 | [UI](groups/UI.UI.md) |
+| [SelectTapType](enums/mw.SelectTapType.md) | UGC 选中的单选或者多选 | [SCRIPTING](groups/SCRIPTING.SCRIPTING.md) |
 | [SkyPreset](enums/mw.SkyPreset.md) | 天空盒预设枚举 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [SlateBrushDrawType](enums/mw.SlateBrushDrawType.md) | 图片画刷绘制模式 | [UI](groups/UI.UI.md) |
 | [SlateBrushTileType](enums/mw.SlateBrushTileType.md) | 图片画刷填充模式 | [UI](groups/UI.UI.md) |
@@ -188,6 +195,7 @@ Enums
 | [UIScrollBoxAnimationType](enums/mw.UIScrollBoxAnimationType.md) | 滚动框动画类型 | [UI](groups/UI.UI.md) |
 | [UITextHorizontalLayout](enums/mw.UITextHorizontalLayout.md) | 文本框规则显示规则限制 | [UI](groups/UI.UI.md) |
 | [UIVerticalCollation](enums/mw.UIVerticalCollation.md) | 自动布局子项布局排序 - 垂直排序 | [UI](groups/UI.UI.md) |
+| [UploadPrefabResultType](enums/mw.UploadPrefabResultType.md) | 移动编辑器上传预制体返回状态 | [DATATYPE](groups/DATATYPE.DATATYPE.md) |
 
 
 ## V

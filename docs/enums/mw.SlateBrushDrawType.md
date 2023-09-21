@@ -2,17 +2,17 @@
 
 # SlateBrushDrawType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushDrawType" />
 
-图片画刷绘制模式
+<p class="content-big"> 图片画刷绘制模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Border](mw.SlateBrushDrawType.md#border)** = ``2`` <br> |
-| **[Box](mw.SlateBrushDrawType.md#box)** = ``1`` <br> |
-| **[Image](mw.SlateBrushDrawType.md#image)** = ``3`` <br> |
-| **[NoDrawType](mw.SlateBrushDrawType.md#nodrawtype)** = ``0`` <br> |
-| **[PixcelBox](mw.SlateBrushDrawType.md#pixcelbox)** = ``4`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Border](mw.SlateBrushDrawType.md#border)** = ``2``  |
+| :----- |
+| **[Box](mw.SlateBrushDrawType.md#box)** = ``1`` |
+| **[Image](mw.SlateBrushDrawType.md#image)** = ``3`` |
+| **[NoDrawType](mw.SlateBrushDrawType.md#nodrawtype)** = ``0`` |
+| **[PixcelBox](mw.SlateBrushDrawType.md#pixcelbox)** = ``4`` |
 
 ## Enumeration Members
 

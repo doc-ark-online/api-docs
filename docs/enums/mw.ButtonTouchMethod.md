@@ -2,15 +2,15 @@
 
 # ButtonTouchMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonTouchMethod" />
 
-按钮触摸响应规则
+<p class="content-big"> 按钮触摸响应规则 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Down](mw.ButtonTouchMethod.md#down)** = ``1`` <br> |
-| **[DownAndUp](mw.ButtonTouchMethod.md#downandup)** = ``0`` <br> |
-| **[PreciseTap](mw.ButtonTouchMethod.md#precisetap)** = ``2`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Down](mw.ButtonTouchMethod.md#down)** = ``1``  |
+| :----- |
+| **[DownAndUp](mw.ButtonTouchMethod.md#downandup)** = ``0`` |
+| **[PreciseTap](mw.ButtonTouchMethod.md#precisetap)** = ``2`` |
 
 ## Enumeration Members
 

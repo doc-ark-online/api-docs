@@ -2,15 +2,15 @@
 
 # MovementMode <Badge type="tip" text="Enumeration" /> <Score text="MovementMode" />
 
-角色状态
+<p class="content-big"> 角色状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Fly](mw.MovementMode.md#fly)** = ``2`` <br> |
-| **[Swim](mw.MovementMode.md#swim)** = ``1`` <br> |
-| **[Walk](mw.MovementMode.md#walk)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Fly](mw.MovementMode.md#fly)** = ``2``  |
+| :----- |
+| **[Swim](mw.MovementMode.md#swim)** = ``1`` |
+| **[Walk](mw.MovementMode.md#walk)** = ``0`` |
 
 ## Enumeration Members
 

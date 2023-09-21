@@ -2,19 +2,19 @@
 
 # AdsState <Badge type="tip" text="Enumeration" /> <Score text="AdsState" />
 
-广告状态，调用show方法的时候可能返回的广告状态
+<p class="content-big"> 广告状态，调用show方法的时候可能返回的广告状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Click](mw.AdsState.md#click)** = ``3`` <br> |
-| **[Close](mw.AdsState.md#close)** = ``1`` <br> |
-| **[Fail](mw.AdsState.md#fail)** = ``-1`` <br> |
-| **[Reward](mw.AdsState.md#reward)** = ``4`` <br> |
-| **[Skip](mw.AdsState.md#skip)** = ``2`` <br> |
-| **[Success](mw.AdsState.md#success)** = ``0`` <br> |
-| **[Timeout](mw.AdsState.md#timeout)** = ``5`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Click](mw.AdsState.md#click)** = ``3``  |
+| :----- |
+| **[Close](mw.AdsState.md#close)** = ``1`` |
+| **[Fail](mw.AdsState.md#fail)** = ``-1`` |
+| **[Reward](mw.AdsState.md#reward)** = ``4`` |
+| **[Skip](mw.AdsState.md#skip)** = ``2`` |
+| **[Success](mw.AdsState.md#success)** = ``0`` |
+| **[Timeout](mw.AdsState.md#timeout)** = ``5`` |
 
 ## Enumeration Members
 

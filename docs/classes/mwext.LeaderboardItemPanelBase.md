@@ -2,13 +2,12 @@
 
 # LeaderboardItemPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardItemPanelBase<T\>" />
 
-排行榜主界面中的子UI，用来显示一条记录
+<p class="content-big"> 排行榜主界面中的子UI，用来显示一条记录 </p>
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md) |
+| :------ | :------ |
 
 ## Hierarchy
 
@@ -18,30 +17,51 @@
 
 ## Table of contents
 
-| Accessors |
+### Constructors <Score text="Constructors" /> 
+| **new LeaderboardItemPanelBase**<`T`: extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
 | :-----|
-| **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number` <br> 当前显示对象的playerId|
+| 构造方法|
 
 
 ::: details 点击查看继承
-| Accessors |
+### Constructors <Score text="Constructors" /> 
+| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
 | :-----|
-| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md) <br> 面板尺寸|
-| **[view](mwext.BasePanel.md#view)**(): `T` <br> 面板所控制的界面|
+| 构造方法|
 :::
 
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number`  |
 | :-----|
-| **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void` <br> 显示在画布上调用，需要请复写|
-| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void` <br> 设置字段内容后调用，需要请复写|
+| 当前显示对象的playerId|
 
 
 ::: details 点击查看继承
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
-| **[onAdded](mwext.BasePanel.md#onadded)**(): `void` <br> 生命周期-被添加到父节点时候触发，可能会多次调用|
-| **[onAwake](mwext.BasePanel.md#onawake)**(): `void` <br> 生命周期方法-构建面板自动触发，只会调用一次|
+| 面板尺寸|
+| **[view](mwext.BasePanel.md#view)**(): `T`  |
+| 面板所控制的界面|
+:::
+
+
+### Methods <Score text="Methods" /> 
+| **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void`  |
+| :-----|
+| 显示在画布上调用，需要请复写|
+| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| 设置字段内容后调用，需要请复写|
+
+
+::: details 点击查看继承
+### Methods <Score text="Methods" /> 
+| **[onAdded](mwext.BasePanel.md#onadded)**(): `void`  |
+| :-----|
+| 生命周期-被添加到父节点时候触发，可能会多次调用|
+| **[onAwake](mwext.BasePanel.md#onawake)**(): `void`  |
+| 生命周期方法-构建面板自动触发，只会调用一次|
 :::
 
 
@@ -49,15 +69,13 @@
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)<`T`\> |
+| :------ | :------ |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `viewClass` | [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
+| `viewClass` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  界面类 |
+| :------ | :------ |
 
 #### Overrides
 
@@ -68,14 +86,28 @@ ___
 
 ### playerId <Score text="playerId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Protected` `get` **playerId**(): `number` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 当前显示对象的playerId
 
 
 #### Returns
 
-`number`
+
+</td>
+</tr></tbody>
+</table>
+
 
 
 ## Methods
@@ -87,13 +119,12 @@ ___
 
 显示在画布上调用，需要请复写
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playerId` | `number` |  玩家id |
-| `rankIndex` | `number` |  排名(0开始) |
+| `playerId` `number` |  玩家id |
+| :------ | :------ |
+| `rankIndex` `number` |  排名(0开始) |
+
 
 
 ___
@@ -104,15 +135,14 @@ ___
 
 设置字段内容后调用，需要请复写
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `playerId` | `number` |  玩家id |
-| `rankIndex` | `number` |  名次索引(0开始) |
-| `fieldId` | `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` | `string` \| `number` |  字段显示内容 |
-| `textBlockIndex` | `number` |  文本控件索引 |
-| `textBlock` | [`TextBlock`](mw.TextBlock.md) |  文本控件 |
+| `playerId` `number` |  玩家id |
+| :------ | :------ |
+| `rankIndex` `number` |  名次索引(0开始) |
+| `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
+| `fieldValue` `string` \| `number` |  字段显示内容 |
+| `textBlockIndex` `number` |  文本控件索引 |
+| `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
+
 

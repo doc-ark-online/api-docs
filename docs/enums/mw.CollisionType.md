@@ -2,16 +2,16 @@
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 
-碰撞类型
+<p class="content-big"> 碰撞类型 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[NoCollision](mw.CollisionType.md#nocollision)** = ``0`` <br> |
-| **[PhysicsOnly](mw.CollisionType.md#physicsonly)** = ``2`` <br> |
-| **[QueryAndPhysics](mw.CollisionType.md#queryandphysics)** = ``3`` <br> |
-| **[QueryOnly](mw.CollisionType.md#queryonly)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[NoCollision](mw.CollisionType.md#nocollision)** = ``0``  |
+| :----- |
+| **[PhysicsOnly](mw.CollisionType.md#physicsonly)** = ``2`` |
+| **[QueryAndPhysics](mw.CollisionType.md#queryandphysics)** = ``3`` |
+| **[QueryOnly](mw.CollisionType.md#queryonly)** = ``1`` |
 
 ## Enumeration Members
 

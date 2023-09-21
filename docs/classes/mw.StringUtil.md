@@ -2,17 +2,26 @@
 
 # StringUtil <Badge type="tip" text="Class" /> <Score text="StringUtil" />
 
-字符串工具
+<p class="content-big"> 字符串工具 </p>
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new StringUtil**()  |
+| :----- |
+
+### Methods <Score text="Methods" /> 
+| **[clipboardCopy](mw.StringUtil.md#clipboardcopy)**(`text`: `string`): `void`  |
 | :-----|
-| **[clipboardCopy](mw.StringUtil.md#clipboardcopy)**(`text`: `string`): `void` <br> 文本复制，将字符串复制到剪切板|
-| **[clipboardPaste](mw.StringUtil.md#clipboardpaste)**(): `string` <br> 文本粘贴，获取剪切板的文本|
-| **[format](mw.StringUtil.md#format)**(`str`: `string`, `...param`: `any`[]): `string` <br> 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
-| **[isEmpty](mw.StringUtil.md#isempty)**(`str`: `string`): `boolean` <br> 判断字符串是否为空(null或"")|
-| **[maskWordCheck](mw.StringUtil.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](mw.StringUtil.md#maskwordcheck)Result`](../modules/Core.mw.md#maskwordcheckresult)\> <br> 屏蔽字检测|
+| 文本复制，将字符串复制到剪切板|
+| **[clipboardPaste](mw.StringUtil.md#clipboardpaste)**(): `string`  |
+| 文本粘贴，获取剪切板的文本|
+| **[format](mw.StringUtil.md#format)**(`str`: `string`, `...param`: `any`[]): `string`  |
+| 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。|
+| **[isEmpty](mw.StringUtil.md#isempty)**(`str`: `string`): `boolean`  |
+| 判断字符串是否为空(null或"")|
+| **[maskWordCheck](mw.StringUtil.md#maskwordcheck)**(`text`: `string`): `Promise`<[`[maskWordCheck](mw.StringUtil.md#maskwordcheck)Result`](../modules/Core.mw.md#maskwordcheckresult)\>  |
+| 屏蔽字检测|
 
 ## Methods
 
@@ -22,8 +31,15 @@
 
 文本复制，将字符串复制到剪切板
 
+#### Parameters
 
-使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
+| `text` `string` | 复制到剪切板的文本 |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴 </p>
+
 ```ts
 @Component
 export default class StringExample extends Script {
@@ -40,13 +56,6 @@ export default class StringExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` | 复制到剪切板的文本 |
-
-
 ___
 
 ### clipboardPaste <Score text="clipboardPaste" /> 
@@ -55,8 +64,14 @@ ___
 
 文本粘贴，获取剪切板的文本
 
+#### Returns
 
-使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台
+| `string` | 剪切板的文本 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台 </p>
+
 ```ts
 @Component
 export default class StringExample extends Script {
@@ -74,12 +89,6 @@ export default class StringExample extends Script {
 }
 ```
 
-#### Returns
-
-`string`
-
-剪切板的文本
-
 ___
 
 ### format <Score text="format" /> 
@@ -88,8 +97,20 @@ ___
 
 将`{i}`中的内容依次替换为后续参数。i从0开始，表示第i+2个参数，详细请查看使用示例。
 
+#### Parameters
 
-使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world!
+| `str` `string` |  要处理的字符串 |
+| :------ | :------ |
+| `...param` `any`[] |  替换序列 |
+
+#### Returns
+
+| `string` | 新的字符串 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world! </p>
+
 ```ts
 @Component
 export default class StringExample extends Script {
@@ -107,19 +128,6 @@ export default class StringExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要处理的字符串 |
-| `...param` | `any`[] |  替换序列 |
-
-#### Returns
-
-`string`
-
-新的字符串
-
 ___
 
 ### isEmpty <Score text="isEmpty" /> 
@@ -128,8 +136,19 @@ ___
 
 判断字符串是否为空(null或"")
 
+#### Parameters
 
-使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false
+| `str` `string` |  要判断的字符串 |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 结果 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false </p>
+
 ```ts
 @Component
 export default class StringExample extends Script {
@@ -147,18 +166,6 @@ export default class StringExample extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` |  要判断的字符串 |
-
-#### Returns
-
-`boolean`
-
-结果
-
 ___
 
 ### maskWordCheck <Score text="maskWordCheck" /> 
@@ -167,6 +174,16 @@ ___
 
 屏蔽字检测
 
+#### Parameters
+
+| `text` `string` |  要检测的文本 |
+| :------ | :------ |
+
+#### Returns
+
+| `Promise`<[`maskWordCheckResult`](../modules/Core.mw.md#maskwordcheckresult)\> | 检测结果回调 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -174,7 +191,8 @@ ___
 
 :::
 
-使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过
+<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过 </p>
+
 ```ts
 @Component
 export default class StringExample extends Script {
@@ -198,15 +216,3 @@ export default class StringExample extends Script {
 
 }
 ```
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `text` | `string` |  要检测的文本 |
-
-#### Returns
-
-`Promise`<[`maskWordCheckResult`](../modules/Core.mw.md#maskwordcheckresult)\>
-
-检测结果回调

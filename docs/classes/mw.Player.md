@@ -2,37 +2,60 @@
 
 # Player <Badge type="tip" text="Class" /> <Score text="Player" />
 
-角色控制
+<p class="content-big"> Player服务包含当前连接到MW服务器的Player对象。它可以获取玩家的ID，玩家信息等。 </p>
 
 ## Table of contents
 
-| Properties |
-| :-----|
-| **[onPawnChange](mw.Player.md#onpawnchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\> <br> 控制对象变化委托|
-| **[onPlayerDisconnect](mw.Player.md#onplayerdisconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> <br> 玩家断线委托|
-| **[onPlayerJoin](mw.Player.md#onplayerjoin)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> <br> 玩家加入委托|
-| **[onPlayerLeave](mw.Player.md#onplayerleave)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> <br> 玩家离开委托|
-| **[onPlayerReconnect](mw.Player.md#onplayerreconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\> <br> 玩家重连委托|
+### Constructors <Score text="Constructors" /> 
+| **new Player**()  |
+| :----- |
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[onPawnChange](mw.Player.md#onpawnchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\>  |
 | :-----|
-| **[character](mw.Player.md#character)**(): [`Character`](mw.Character.md) <br> 控制角色|
-| **[ping](mw.Player.md#ping)**(): `number` <br> 网络延迟|
-| **[playerId](mw.Player.md#playerid)**(): `number` <br> 玩家ID|
-| **[teamId](mw.Player.md#teamid)**(): `string` <br> 队伍ID|
-| **[userId](mw.Player.md#userid)**(): `string` <br> 用户平台ID|
-| **[localPlayer](mw.Player.md#localplayer)**(): [`Player`](mw.Player.md) <br> 本地玩家|
+| 控制对象变化委托|
+| **[onPlayerDisconnect](mw.Player.md#onplayerdisconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>  |
+| 玩家断线委托|
+| **[onPlayerJoin](mw.Player.md#onplayerjoin)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>  |
+| 玩家加入委托|
+| **[onPlayerLeave](mw.Player.md#onplayerleave)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>  |
+| 玩家离开委托|
+| **[onPlayerReconnect](mw.Player.md#onplayerreconnect)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`player`: [`Player`](mw.Player.md)) => `void`\>  |
+| 玩家重连委托|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[character](mw.Player.md#character)**(): [`Character`](mw.Character.md)  |
 | :-----|
-| **[control](mw.Player.md#control)**(`pawn`: [`Pawn`](mw.Pawn.md)): `boolean` <br> 控制一个Pawn对象|
-| **[getPlayerState](mw.Player.md#getplayerstate)**<`T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>\>(`type`: (...`args`: `unknown`[]) => `T`): `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\> <br> 获取PlayerState实例|
-| **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\> <br> 异步获取本地玩家|
-| **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[] <br> 获取当前所有玩家|
-| **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 获取控制器的旋转|
-| **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string` \): [`Player`](mw.Player.md) <br> 获取玩家|
-| **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void` <br> 覆写控制器的旋转|
-| **[spawnDefaultCharacter](mw.Player.md#spawndefaultcharacter)**(): [`Character`](mw.Character.md) <br> 创建默认角色|
+| 控制角色|
+| **[ping](mw.Player.md#ping)**(): `number`  |
+| 网络延迟|
+| **[playerId](mw.Player.md#playerid)**(): `number`  |
+| 玩家ID|
+| **[teamId](mw.Player.md#teamid)**(): `string`  |
+| 队伍ID|
+| **[userId](mw.Player.md#userid)**(): `string`  |
+| 用户平台ID|
+| **[localPlayer](mw.Player.md#localplayer)**(): [`Player`](mw.Player.md)  |
+| 因为在客户端上运行。 对于 Script 对象运行其代码的服务器，此属性为null。|
+
+### Methods <Score text="Methods" /> 
+| **[control](mw.Player.md#control)**(`pawn`: [`Pawn`](mw.Pawn.md)): `boolean`  |
+| :-----|
+| 控制一个Pawn对象|
+| **[getPlayerState](mw.Player.md#getplayerstate)**<`T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>\>(`type`: (...`args`: `unknown`[]) => `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>): `T`: extends [`PlayerState`](mw.PlayerState.md)<`T`\>  |
+| 获取PlayerState实例|
+| **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\>  |
+| 当正常获取本地玩家时，使用Player.localPlayer即可。|
+| **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[]  |
+| 获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。|
+| **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 获取控制器的旋转|
+| **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string` \): [`Player`](mw.Player.md)  |
+| 获取玩家|
+| **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void`  |
+| 覆写控制器的旋转|
+| **[spawnDefaultCharacter](mw.Player.md#spawndefaultcharacter)**(): [`Character`](mw.Character.md)  |
+| 创建默认角色|
 
 ## Properties
 
@@ -49,7 +72,8 @@
 
 :::
 
-使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_OnPawnChange"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数:在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下:
+<p style="font-size: 14px;"> 使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_OnPawnChange"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数:在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_OnPawnChange extends Script {
@@ -97,7 +121,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_OnPlayerDisconnect"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家断线】委托添加一个函数:打印玩家断线游戏消息.在控制台中看到断线玩家的用户ID和断线通知.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_OnPlayerDisconnect"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家断线】委托添加一个函数:打印玩家断线游戏消息.在控制台中看到断线玩家的用户ID和断线通知.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_OnPlayerDisconnect extends Script {
@@ -154,7 +179,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_OnPlayerJoin"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家加入】委托添加一个函数:打印玩家加入游戏消息.在控制台中看到加入玩家的用户ID和加入通知.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_OnPlayerJoin"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家加入】委托添加一个函数:打印玩家加入游戏消息.在控制台中看到加入玩家的用户ID和加入通知.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_OnPlayerJoin extends Script {
@@ -211,7 +237,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_OnPlayerLeave"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家离开】委托添加一个函数:打印玩家离开游戏消息.在控制台中看到离开玩家的用户ID和离开通知.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_OnPlayerLeave"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家离开】委托添加一个函数:打印玩家离开游戏消息.在控制台中看到离开玩家的用户ID和离开通知.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_OnPlayerLeave extends Script {
@@ -268,7 +295,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_OnPlayerReconnect"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家重连】委托添加一个函数:打印玩家重连游戏消息.在控制台中看到重连玩家的用户ID和重连通知.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_OnPlayerReconnect"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将给【玩家重连】委托添加一个函数:打印玩家重连游戏消息.在控制台中看到重连玩家的用户ID和重连通知.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_OnPlayerReconnect extends Script {
@@ -314,7 +342,17 @@ export default class Example_Player_OnPlayerReconnect extends Script {
 
 ### character <Score text="character" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **character**(): [`Character`](mw.Character.md) 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 控制角色
 
@@ -325,7 +363,18 @@ export default class Example_Player_OnPlayerReconnect extends Script {
 
 :::
 
-使用示例: 创建一个名为"Example_Player_Character"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,在控制台中看到打印的玩家角色的guid和名字.代码如下:
+
+#### Returns
+
+| [`Character`](mw.Character.md) |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"Example_Player_Character"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,在控制台中看到打印的玩家角色的guid和名字.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_Character extends Script {
@@ -341,16 +390,21 @@ export default class Example_Player_Character extends Script {
     }
 }
 ```
-
-#### Returns
-
-[`Character`](mw.Character.md)
-
 ___
 
 ### ping <Score text="ping" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **ping**(): `number` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 网络延迟
 
@@ -361,7 +415,18 @@ ___
 
 :::
 
-使用示例: 创建一个名为"Example_Player_Ping"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家当前Ping值.代码如下:
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"Example_Player_Ping"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家当前Ping值.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_Ping extends Script {
@@ -387,16 +452,21 @@ export default class Example_Player_Ping extends Script {
     }
 }
 ```
-
-#### Returns
-
-`number`
-
 ___
 
 ### playerId <Score text="playerId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **playerId**(): `number` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 玩家ID
 
@@ -407,7 +477,18 @@ ___
 
 :::
 
-使用示例: 创建一个名为"Example_Player_PlayerId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的玩家ID.代码如下:
+
+#### Returns
+
+| `number` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"Example_Player_PlayerId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的玩家ID.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_PlayerId extends Script {
@@ -433,16 +514,21 @@ export default class Example_Player_PlayerId extends Script {
     }
 }
 ```
-
-#### Returns
-
-`number`
-
 ___
 
 ### teamId <Score text="teamId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **teamId**(): `string` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 队伍ID
 
@@ -453,7 +539,18 @@ ___
 
 :::
 
-使用示例: 创建一个名为"Example_Player_TeamId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的队伍ID.代码如下:
+
+#### Returns
+
+| `string` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"Example_Player_TeamId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的队伍ID.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_TeamId extends Script {
@@ -479,16 +576,21 @@ export default class Example_Player_TeamId extends Script {
     }
 }
 ```
-
-#### Returns
-
-`string`
-
 ___
 
 ### userId <Score text="userId" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `get` **userId**(): `string` 
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 用户平台ID
 
@@ -499,7 +601,18 @@ ___
 
 :::
 
-使用示例: 创建一个名为"Example_Player_UserId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的用户平台ID.代码如下:
+
+#### Returns
+
+| `string` |  |
+| :------ | :------ |
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例: 创建一个名为"Example_Player_UserId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前客户端玩家,并在控制台中看到打印的玩家的用户平台ID.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_UserId extends Script {
@@ -525,18 +638,25 @@ export default class Example_Player_UserId extends Script {
     }
 }
 ```
-
-#### Returns
-
-`string`
-
 ___
 
 ### localPlayer <Score text="localPlayer" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **localPlayer**(): [`Player`](mw.Player.md) <Badge type="tip" text="client" />
 
-本地玩家
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+LocalPlayer 是一个只读属性，指的是其客户端正在运行的玩家。
+
+因为在客户端上运行。 对于 Script 对象运行其代码的服务器，此属性为null。
 
 
 ::: warning Precautions
@@ -545,7 +665,15 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_LocalPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中获取当前客户端的玩家,按下键盘“1”，你将在场景中看到角色隐身2秒的效果.代码如下:
+
+#### Returns
+
+</td>
+</tr></tbody>
+</table>
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_LocalPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中获取当前客户端的玩家,按下键盘“1”，你将在场景中看到角色隐身2秒的效果.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_LocalPlayer extends Script {
@@ -568,10 +696,8 @@ export default class Example_Player_LocalPlayer extends Script {
     }
 }
 ```
-
-#### Returns
-
-[`Player`](mw.Player.md)
+| [`Player`](mw.Player.md) |  |
+| :------ | :------ |
 
 ## Methods
 
@@ -581,6 +707,16 @@ export default class Example_Player_LocalPlayer extends Script {
 
 控制一个Pawn对象
 
+#### Parameters
+
+| `pawn` [`Pawn`](mw.Pawn.md) | 目标控制对象 |
+| :------ | :------ |
+
+#### Returns
+
+| `boolean` | 操纵结果 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -588,7 +724,8 @@ export default class Example_Player_LocalPlayer extends Script {
 
 :::
 
-使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_Control"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数:在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下:
+<p style="font-size: 14px;"> 使用示例: 将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_Control"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数:在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_Control extends Script {
@@ -620,18 +757,6 @@ export default class Example_Player_Control extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `pawn` | [`Pawn`](mw.Pawn.md) | 目标控制对象 |
-
-#### Returns
-
-`boolean`
-
-操纵结果
-
 ___
 
 ### getPlayerState <Score text="getPlayerState" /> 
@@ -640,23 +765,20 @@ ___
 
 获取PlayerState实例
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends [`PlayerState`](mw.PlayerState.md)<`T`\> |
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `type` | (...`args`: `unknown`[]) => `T` | PlayerState派生类 |
+| `type` (...`args`: `unknown`[]) => `T` | PlayerState派生类 |
+| :------ | :------ |
 
 #### Returns
 
-`T`
+| `T` | PlayerState实例 |
+| :------ | :------ |
 
-PlayerState实例
+#### Type parameters
+
+| `T` | extends [`PlayerState`](mw.PlayerState.md)<`T`\> |
+| :------ | :------ |
 
 ___
 
@@ -664,20 +786,21 @@ ___
 
 • `Static` **asyncGetLocalPlayer**(): `Promise`<[`Player`](mw.Player.md)\> <Badge type="tip" text="client" />
 
-异步获取本地玩家
+异步获取本地玩家。通常在UI脚本中使用，当获取还未创建出的本地玩家角色时，会使用此异步加载接口，最长等待10秒，等待本地角色加载出来再获取。
+
+#### Returns
+
+| `Promise`<[`Player`](mw.Player.md)\> | 返回本地玩家 |
+| :------ | :------ |
+
+当正常获取本地玩家时，使用Player.localPlayer即可。
 
 
 ::: warning Precautions
 
-仅在UI脚本中需要使用此异步方法获取localPlayer，普通脚本中可以同步获取到。当前客户端对应的玩家。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
+仅在UI脚本中需要使用此异步方法获取localPlayer。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
 
 :::
-
-#### Returns
-
-`Promise`<[`Player`](mw.Player.md)\>
-
-返回本地玩家
 
 ___
 
@@ -685,10 +808,16 @@ ___
 
 • `Static` **getAllPlayers**(): [`Player`](mw.Player.md)[] 
 
-获取当前所有玩家
+获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。
+
+#### Returns
+
+| [`Player`](mw.Player.md)[] | 服务器中所有玩家的数组 |
+| :------ | :------ |
 
 
-使用示例:将使用到的资源:“27087”拖入优先加载栏。创建一个名为"Example_Player_GetAllPlayers"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在服务端添加一个【打印游戏内全部玩家信息】事件监听器,监听事件后在场景中看到一个皇冠在玩家角色的头顶生成的效果并在控制台打印玩家们的userId,遇到发起事件的客户端玩家时提示This is me.代码如下:
+<p style="font-size: 14px;"> 使用示例:将使用到的资源:“27087”拖入优先加载栏。创建一个名为"Example_Player_GetAllPlayers"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在服务端添加一个【打印游戏内全部玩家信息】事件监听器,监听事件后在场景中看到一个皇冠在玩家角色的头顶生成的效果并在控制台打印玩家们的userId,遇到发起事件的客户端玩家时提示This is me.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_GetAllPlayers extends Script {
@@ -704,7 +833,7 @@ export default class Example_Player_GetAllPlayers extends Script {
                         console.log(" Player " + player.userId + " This is me");
                         let crown = GameObject.spawn({guid: "27087"}) as Model;
                         crown.setCollision(CollisionStatus.Off);
-                        value.character.attachToSlot(crown, HumanoidType.Rings);
+                        value.character.attachToSlot(crown, HumanoidSlotType.Rings);
                     } else {
                         console.log(" Player " + player.userId);
                     }
@@ -722,12 +851,6 @@ export default class Example_Player_GetAllPlayers extends Script {
 }
 ```
 
-#### Returns
-
-[`Player`](mw.Player.md)[]
-
-全体玩家对象数组
-
 ___
 
 ### getControllerRotation <Score text="getControllerRotation" /> 
@@ -736,6 +859,16 @@ ___
 
 获取控制器的旋转
 
+#### Parameters
+
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收旋转的变量 default:undefined |
+| :------ | :------ |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | 当前控制器输入的旋转 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -743,7 +876,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_GetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_GetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_GetControllerRotation extends Script {
@@ -777,18 +911,6 @@ export default class Example_Player_GetControllerRotation extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 接收旋转的变量 default:undefined |
-
-#### Returns
-
-[`Rotation`](mw.Rotation.md)
-
-当前控制器输入的旋转
-
 ___
 
 ### getPlayer <Score text="getPlayer" /> 
@@ -797,6 +919,16 @@ ___
 
 获取玩家
 
+#### Parameters
+
+| `uniqueId` `string` \| `number` | 用户ID或者玩家玩家ID |
+| :------ | :------ |
+
+#### Returns
+
+| [`Player`](mw.Player.md) | 玩家对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -804,7 +936,8 @@ ___
 
 :::
 
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下:
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_GetPlayer extends Script {
@@ -832,18 +965,6 @@ export default class Example_Player_GetPlayer extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `uniqueId` | `string` \| `number` | 用户ID或者玩家玩家ID |
-
-#### Returns
-
-[`Player`](mw.Player.md)
-
-玩家对象
-
 ___
 
 ### setControllerRotation <Score text="setControllerRotation" /> 
@@ -852,8 +973,15 @@ ___
 
 覆写控制器的旋转
 
+#### Parameters
 
-使用示例:创建一个名为"Example_Player_SetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下:
+| `newRotation` [`Rotation`](mw.Rotation.md) | 新旋转值 |
+| :------ | :------ |
+
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为"Example_Player_SetControllerRotation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将获取当前控制器输入的旋转并叠加步长进行覆盖,按下键盘“1”，开始 / 停止覆写控制器的旋转.在场景中看到摄像机环绕角色旋转的效果.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_SetControllerRotation extends Script {
@@ -887,13 +1015,6 @@ export default class Example_Player_SetControllerRotation extends Script {
 }
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `newRotation` | [`Rotation`](mw.Rotation.md) | 新旋转值 |
-
-
 ___
 
 ### spawnDefaultCharacter <Score text="spawnDefaultCharacter" /> 
@@ -902,6 +1023,11 @@ ___
 
 创建默认角色
 
+#### Returns
+
+| [`Character`](mw.Character.md) | 角色对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
@@ -909,7 +1035,8 @@ ___
 
 :::
 
-使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下:
+<p style="font-size: 14px;"> 使用示例:将使用到的资源:“7750”拖入优先加载栏。创建一个名为"Example_Player_SpawnDefaultCharacter"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在在服务端添加一个【创建角色并控制】事件监听器,当监听到事件时在场景中创建默认角色并控制. 按下键盘“1”，向服务端发送事件【创建角色并控制】.给本地玩家的【玩家控制对象变化】委托添加一个函数：在生成并控制的新角色位置播放一个特效.当触发控制对象变化委托时执行绑定函数.代码如下: </p>
+
 ```ts
 @Component
 export default class Example_Player_SpawnDefaultCharacter extends Script {
@@ -940,9 +1067,3 @@ export default class Example_Player_SpawnDefaultCharacter extends Script {
     }
 }
 ```
-
-#### Returns
-
-[`Character`](mw.Character.md)
-
-角色对象

@@ -2,16 +2,16 @@
 
 # NavModifierType <Badge type="tip" text="Enumeration" /> <Score text="NavModifierType" />
 
-寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果
+<p class="content-big"> 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Default](mw.NavModifierType.md#default)** = ``1`` <br> |
-| **[LowHeight](mw.NavModifierType.md#lowheight)** = ``2`` <br> |
-| **[Null](mw.NavModifierType.md#null)** = ``0`` <br> |
-| **[Obstacle](mw.NavModifierType.md#obstacle)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Default](mw.NavModifierType.md#default)** = ``1``  |
+| :----- |
+| **[LowHeight](mw.NavModifierType.md#lowheight)** = ``2`` |
+| **[Null](mw.NavModifierType.md#null)** = ``0`` |
+| **[Obstacle](mw.NavModifierType.md#obstacle)** = ``3`` |
 
 ## Enumeration Members
 

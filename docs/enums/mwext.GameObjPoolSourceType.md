@@ -2,15 +2,15 @@
 
 # GameObjPoolSourceType <Badge type="tip" text="Enumeration" /> <Score text="GameObjPoolSourceType" />
 
-GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择
+<p class="content-big"> GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Asset](mwext.GameObjPoolSourceType.md#asset)** = ``0`` <br> |
-| **[Prefab](mwext.GameObjPoolSourceType.md#prefab)** = ``2`` <br> |
-| **[Scene](mwext.GameObjPoolSourceType.md#scene)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Asset](mwext.GameObjPoolSourceType.md#asset)** = ``0``  |
+| :----- |
+| **[Prefab](mwext.GameObjPoolSourceType.md#prefab)** = ``2`` |
+| **[Scene](mwext.GameObjPoolSourceType.md#scene)** = ``1`` |
 
 ## Enumeration Members
 

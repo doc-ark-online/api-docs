@@ -2,9 +2,10 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
-客户端数据中心，里面存放着当前玩家的数据
+<p class="content-big"> 客户端数据中心，里面存放着当前玩家的数据 </p>
 
-使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
+<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息 </p>
+
 ```ts
 @Component
 export default class DataCenterCExample extends Script {
@@ -37,10 +38,29 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-| Methods |
+### Constructors <Score text="Constructors" /> 
+| **new DataCenterC**()  |
+| :----- |
+
+### Properties <Score text="Properties" /> 
+| **[onInitError](mwext.DataCenterC.md#oniniterror)**: [`Action2`](mw.Action2.md)<`number`, `string`\>  |
 | :-----|
-| **[getData](mwext.DataCenterC.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\> <br> 获取当前玩家的一个数据|
-| **[ready](mwext.DataCenterC.md#ready)**(): `Promise`<`void`\> <br> 判断数据是否就绪|
+| 数据初始化失败的委托，参数为：错误码，错误内容|
+
+### Methods <Score text="Methods" /> 
+| **[getData](mwext.DataCenterC.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
+| :-----|
+| 获取当前玩家的一个数据|
+| **[ready](mwext.DataCenterC.md#ready)**(): `Promise`<`void`\>  |
+| 判断数据是否就绪|
+
+## Properties
+
+### onInitError <Score text="onInitError" /> 
+
+▪ `Static` `Readonly` **onInitError**: [`Action2`](mw.Action2.md)<`number`, `string`\>
+
+数据初始化失败的委托，参数为：错误码，错误内容
 
 ## Methods
 
@@ -50,8 +70,19 @@ class PlayerModuleData extends Subdata {
 
 获取当前玩家的一个数据
 
+#### Parameters
 
-使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息
+| `SubdataType` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类型 |
+| :------ | :------ |
+
+#### Returns
+
+| `T` | 数据对象 |
+| :------ | :------ |
+
+
+<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息 </p>
+
 ```ts
 @Component
 export default class DataCenterCExample extends Script {
@@ -83,21 +114,8 @@ class PlayerModuleData extends Subdata {
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
 | `T` | extends [`Subdata`](mwext.Subdata.md)<`T`\> |
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `SubdataType` | [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类型 |
-
-#### Returns
-
-`T`
-
-数据对象
+| :------ | :------ |
 
 ___
 
@@ -107,9 +125,8 @@ ___
 
 判断数据是否就绪
 
-
 #### Returns
 
-`Promise`<`void`\>
+| `Promise`<`void`\> | true-就绪 false-未就绪 |
+| :------ | :------ |
 
-true-就绪 false-未就绪

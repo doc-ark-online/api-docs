@@ -2,15 +2,15 @@
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 
-属性状态
+<p class="content-big"> 属性状态 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[FromParent](mw.PropertyStatus.md#fromparent)** = ``0`` <br> |
-| **[Off](mw.PropertyStatus.md#off)** = ``2`` <br> |
-| **[On](mw.PropertyStatus.md#on)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[FromParent](mw.PropertyStatus.md#fromparent)** = ``0``  |
+| :----- |
+| **[Off](mw.PropertyStatus.md#off)** = ``2`` |
+| **[On](mw.PropertyStatus.md#on)** = ``1`` |
 
 ## Enumeration Members
 

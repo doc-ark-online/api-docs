@@ -2,19 +2,19 @@
 
 # PostProcessPreset <Badge type="tip" text="Enumeration" /> <Score text="PostProcessPreset" />
 
-后处理预设枚举
+<p class="content-big"> 后处理预设枚举 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Contrast](mw.PostProcessPreset.md#contrast)** = ``2`` <br> |
-| **[Default](mw.PostProcessPreset.md#default)** = ``0`` <br> |
-| **[Dreamy](mw.PostProcessPreset.md#dreamy)** = ``1`` <br> |
-| **[Night](mw.PostProcessPreset.md#night)** = ``5`` <br> |
-| **[OldPhoto](mw.PostProcessPreset.md#oldphoto)** = ``4`` <br> |
-| **[WarmContrast](mw.PostProcessPreset.md#warmcontrast)** = ``6`` <br> |
-| **[WarmSunshine](mw.PostProcessPreset.md#warmsunshine)** = ``3`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Contrast](mw.PostProcessPreset.md#contrast)** = ``2``  |
+| :----- |
+| **[Default](mw.PostProcessPreset.md#default)** = ``0`` |
+| **[Dreamy](mw.PostProcessPreset.md#dreamy)** = ``1`` |
+| **[Night](mw.PostProcessPreset.md#night)** = ``5`` |
+| **[OldPhoto](mw.PostProcessPreset.md#oldphoto)** = ``4`` |
+| **[WarmContrast](mw.PostProcessPreset.md#warmcontrast)** = ``6`` |
+| **[WarmSunshine](mw.PostProcessPreset.md#warmsunshine)** = ``3`` |
 
 ## Enumeration Members
 

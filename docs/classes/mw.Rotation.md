@@ -2,7 +2,7 @@
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
-由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
+<p class="content-big"> 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 </p>
 
 ::: warning Precautions
 
@@ -12,41 +12,73 @@
 
 ## Table of contents
 
-| Properties |
+### Constructors <Score text="Constructors" /> 
+| **new Rotation**()  |
 | :-----|
-| **[x](mw.Rotation.md#x)**: `number` <br> 旋转的 x 分量|
-| **[y](mw.Rotation.md#y)**: `number` <br> 旋转的 y 分量|
-| **[z](mw.Rotation.md#z)**: `number` <br> 旋转的 z 分量|
+| 通过三个分量构造|
 
-| Accessors |
+### Properties <Score text="Properties" /> 
+| **[x](mw.Rotation.md#x)**: `number`  |
 | :-----|
-| **[zero](mw.Rotation.md#zero)**(): [`Rotation`](mw.Rotation.md) <br> 获取一个空旋转的角度 (0, 0, 0)|
+| 旋转的 x 分量|
+| **[y](mw.Rotation.md#y)**: `number`  |
+| 旋转的 y 分量|
+| **[z](mw.Rotation.md#z)**: `number`  |
+| 旋转的 z 分量|
 
-| Methods |
+### Accessors <Score text="Accessors" /> 
+| **[zero](mw.Rotation.md#zero)**(): [`Rotation`](mw.Rotation.md)  |
 | :-----|
-| **[add](mw.Rotation.md#add)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 旋转量a加上旋转量b|
-| **[clone](mw.Rotation.md#clone)**(): [`Rotation`](mw.Rotation.md) <br> 克隆当前旋转量|
-| **[equals](mw.Rotation.md#equals)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean` <br> 判断当前角度是否在误差范围内与指定向量相等。|
-| **[fromQuaternion](mw.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换Quaternion为Rotation|
-| **[fromString](mw.Rotation.md#fromstring)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换字符串数据为Rotation|
-| **[fromVector](mw.Rotation.md#fromvector)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换Vector为Rotation|
-| **[getForce](mw.Rotation.md#getforce)**(`outer?`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 获取此旋转后的方向向量|
-| **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 返回一个新的反向旋转。|
-| **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 当前旋转量减去一个旋转量|
-| **[rotateVector](mw.Rotation.md#rotatevector)**(`v`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md) <br> 当前角度旋转一个向量|
-| **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 当前旋转量设置为新的旋转量|
-| **[strictEquals](mw.Rotation.md#strictequals)**(`other`: [`Rotation`](mw.Rotation.md)): `boolean` <br> 判断当前角度是否与指定向量相等。|
-| **[subtract](mw.Rotation.md#subtract)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 当前旋转量减去一个旋转量|
-| **[toQuaternion](mw.Rotation.md#toquaternion)**(): [`Quaternion`](mw.Quaternion.md) <br> 当前Rotation输出为四元数|
-| **[toString](mw.Rotation.md#tostring)**(): `string` <br> 当前Rotation输出为字符串|
-| **[add](mw.Rotation.md#add-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 旋转量a加上旋转量b|
-| **[copy](mw.Rotation.md#copy)**(`a`: [`Rotation`](mw.Rotation.md), `outer`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 复制目标旋转|
-| **[fromQuaternion](mw.Rotation.md#fromquaternion-1)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换Quaternion为Rotation|
-| **[fromString](mw.Rotation.md#fromstring-1)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换字符串数据为Rotation|
-| **[fromVector](mw.Rotation.md#fromvector-1)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 转换Vector为Rotation|
-| **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md) <br> 对两个旋转量进行插值|
-| **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 当前旋转量减去一个旋转量|
-| **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md) <br> 当前旋转量减去一个旋转量|
+| 获取一个空旋转的角度 (0, 0, 0)|
+
+### Methods <Score text="Methods" /> 
+| **[add](mw.Rotation.md#add)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| :-----|
+| 旋转量a加上旋转量b|
+| **[clone](mw.Rotation.md#clone)**(): [`Rotation`](mw.Rotation.md)  |
+| 克隆当前旋转量|
+| **[equals](mw.Rotation.md#equals)**(`other`: [`Rotation`](mw.Rotation.md), `epsilon?`: `number`): `boolean`  |
+| 判断当前角度是否在误差范围内与指定向量相等。|
+| **[fromQuaternion](mw.Rotation.md#fromquaternion)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换Quaternion为Rotation|
+| **[fromString](mw.Rotation.md#fromstring)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换字符串数据为Rotation|
+| **[fromVector](mw.Rotation.md#fromvector)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换Vector为Rotation|
+| **[getForce](mw.Rotation.md#getforce)**(`outer?`): [`Vector`](mw.Vector.md)  |
+| 获取此旋转后的方向向量|
+| **[getInverse](mw.Rotation.md#getinverse)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 返回一个新的反向旋转。|
+| **[multiply](mw.Rotation.md#multiply)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 当前旋转量减去一个旋转量|
+| **[rotateVector](mw.Rotation.md#rotatevector)**(`v`): [`Vector`](mw.Vector.md)  |
+| 当前角度旋转一个向量|
+| **[set](mw.Rotation.md#set)**(`v`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 为当前旋转量设置每个分量|
+| **[strictEquals](mw.Rotation.md#strictequals)**(`other`: [`Rotation`](mw.Rotation.md)): `boolean`  |
+| 判断当前角度是否与指定向量相等。|
+| **[subtract](mw.Rotation.md#subtract)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 当前旋转量减去一个旋转量|
+| **[toQuaternion](mw.Rotation.md#toquaternion)**(): [`Quaternion`](mw.Quaternion.md)  |
+| 当前Rotation输出为四元数|
+| **[toString](mw.Rotation.md#tostring)**(): `string`  |
+| 当前Rotation输出为字符串|
+| **[add](mw.Rotation.md#add-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 旋转量a加上旋转量b|
+| **[copy](mw.Rotation.md#copy)**(`a`: [`Rotation`](mw.Rotation.md), `outer`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 复制目标旋转|
+| **[fromQuaternion](mw.Rotation.md#fromquaternion-1)**(`v`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换Quaternion为Rotation|
+| **[fromString](mw.Rotation.md#fromstring-1)**(`v`: `string`, `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换字符串数据为Rotation|
+| **[fromVector](mw.Rotation.md#fromvector-1)**(`v`: [`Vector`](mw.Vector.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 转换Vector为Rotation|
+| **[lerp](mw.Rotation.md#lerp)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `alpha`: `number`): [`Rotation`](mw.Rotation.md)  |
+| 对两个旋转量进行插值|
+| **[multiply](mw.Rotation.md#multiply-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 当前旋转量减去一个旋转量|
+| **[subtract](mw.Rotation.md#subtract-1)**(`a`: [`Rotation`](mw.Rotation.md), `b`: [`Rotation`](mw.Rotation.md), `outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
+| 当前旋转量减去一个旋转量|
 
 构建一个新的 Rotation。值为(0, 0, 0)
 
@@ -56,9 +88,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vector` | [`Vector`](mw.Vector.md) | 给定的 vector |
+| `vector` [`Vector`](mw.Vector.md) | 给定的 vector |
+| :------ | :------ |
 
 • **new Rotation**(`forward`, `up`)
 
@@ -72,10 +103,9 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `forward` | [`Vector`](mw.Vector.md) | 前向矢量 |
-| `up` | [`Vector`](mw.Vector.md) | 向上矢量 |
+| `forward` [`Vector`](mw.Vector.md) | 前向矢量 |
+| :------ | :------ |
+| `up` [`Vector`](mw.Vector.md) | 向上矢量 |
 
 • **new Rotation**(`rotation`)
 
@@ -83,9 +113,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `rotation` | [`Rotation`](mw.Rotation.md) | 复制的 Rotation 对象 |
+| `rotation` [`Rotation`](mw.Rotation.md) | 复制的 Rotation 对象 |
+| :------ | :------ |
 
 • **new Rotation**(`v`)
 
@@ -93,9 +122,8 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](mw.Quaternion.md) | 四元数 |
+| `v` [`Quaternion`](mw.Quaternion.md) | 四元数 |
+| :------ | :------ |
 
 • **new Rotation**(`x`, `y`, `z`)
 
@@ -103,11 +131,10 @@
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 旋转的 x 分量 |
-| `y` | `number` | 旋转的 y 分量 |
-| `z` | `number` | 旋转的 z 分量 |
+| `x` `number` | 旋转的 x 分量 |
+| :------ | :------ |
+| `y` `number` | 旋转的 y 分量 |
+| `z` `number` | 旋转的 z 分量 |
 
 ## Properties
 
@@ -137,15 +164,28 @@ ___
 
 ### zero <Score text="zero" /> 
 
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
 • `Static` `get` **zero**(): [`Rotation`](mw.Rotation.md)
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
 
 获取一个空旋转的角度 (0, 0, 0)
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+</td>
+</tr></tbody>
+</table>
 
-Rotation (0, 0, 0)
+| [`Rotation`](mw.Rotation.md) | Rotation (0, 0, 0) |
+| :------ | :------ |
 
 ## Methods
 
@@ -155,33 +195,34 @@ Rotation (0, 0, 0)
 
 当前旋转量加上一个旋转量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量 |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量,即旋转相加的结果 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 相加的结果 |
+| :------ | :------ |
 
-this
 
-___
+#### Parameters
 
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 ### clone <Score text="clone" /> 
 
 • **clone**(): [`Rotation`](mw.Rotation.md) 
 
 克隆当前旋转量
 
-
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 返回一个新的旋转量 |
+| :------ | :------ |
 
-返回一个新的旋转量
 
 ___
 
@@ -191,19 +232,17 @@ ___
 
 判断当前角度是否在误差范围内与指定向量相等。
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
-| `epsilon?` | `number` | 误差值 default:1.e-7 |
+| `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
+| :------ | :------ |
+| `epsilon?` `number` | 误差值 default:1.e-7 |
 
 #### Returns
 
-`boolean`
+| `boolean` | 比对的结果 |
+| :------ | :------ |
 
-比对的结果
 
 ___
 
@@ -213,15 +252,22 @@ ___
 
 当前Rotation读取一个四元数
 
+#### Parameters
+
+| `v` [`Quaternion`](mw.Quaternion.md) | Quaternion |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
+
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](mw.Quaternion.md) | 读取的四元数数据 |
-
-
-___
+| `v` [`Quaternion`](mw.Quaternion.md) | 读取的四元数数据 |
+| :------ | :------ |
 
 ### fromString <Score text="fromString" /> 
 
@@ -229,15 +275,22 @@ ___
 
 当前Rotation读取一个字符串数据
 
+#### Parameters
+
+| `v` `string` | string |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
+
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `str` | `string` | 字符串数据 |
-
-
-___
+| `str` `string` | 字符串数据 |
+| :------ | :------ |
 
 ### fromVector <Score text="fromVector" /> 
 
@@ -245,15 +298,22 @@ ___
 
 当前Rotation读取一个Vector
 
+#### Parameters
+
+| `v` [`Vector`](mw.Vector.md) | Vector |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
+
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 读取的向量数据 |
-
-
-___
+| `v` [`Vector`](mw.Vector.md) | 读取的向量数据 |
+| :------ | :------ |
 
 ### getForce <Score text="getForce" /> 
 
@@ -261,24 +321,22 @@ ___
 
 获取此旋转后的方向向量
 
+#### Parameters
+
+| `outer?` [`Vector`](mw.Vector.md) | 被写入数据的向量, 传入的 outer 不能为null/undefined default:null |
+| :------ | :------ |
+
+#### Returns
+
+| [`Vector`](mw.Vector.md) | 旋转的方向向量 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outer?` | [`Vector`](mw.Vector.md) | 被写入数据的向量, 传入的 outer 不能为null/undefined default:null |
-
-#### Returns
-
-[`Vector`](mw.Vector.md)
-
-旋转的方向向量
 
 ___
 
@@ -288,24 +346,22 @@ ___
 
 返回一个新的反向旋转。
 
+#### Parameters
+
+| `outer?` [`Rotation`](mw.Rotation.md) | 被写入数据的旋转量 default:null |
+| :------ | :------ |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | 反方向的旋转 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 被写入数据的旋转量 default:null |
-
-#### Returns
-
-[`Rotation`](mw.Rotation.md)
-
-反方向的旋转
 
 ___
 
@@ -315,60 +371,57 @@ ___
 
 当前旋转量乘以一个旋转量 (相当于四元数叉乘)
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Rotation`](mw.Rotation.md) | 旋转量 |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 相乘的结果 |
+| :------ | :------ |
 
-this
 
-___
+#### Parameters
 
+| `v` [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 ### rotateVector <Score text="rotateVector" /> 
 
 • **rotateVector**(`v`): [`Vector`](mw.Vector.md) 
 
 当前角度旋转一个向量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | 被旋转的向量 |
+| `v` [`Vector`](mw.Vector.md) | 被旋转的向量 |
+| :------ | :------ |
 
 #### Returns
 
-[`Vector`](mw.Vector.md)
+| [`Vector`](mw.Vector.md) | 旋转后的向量 |
+| :------ | :------ |
 
-旋转后的向量
 
 ___
 
 ### set <Score text="set" /> 
 
-• **set**(`v`): [`Rotation`](mw.Rotation.md) 
+• **set**(`v`): [`Rotation`](mw.Rotation.md)
 
 当前旋转量设置为新的旋转量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Rotation`](mw.Rotation.md) | 旋转量 |
+| `v` [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-旋转量
+| [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 
 • **set**(`x`, `y`, `z`): [`Rotation`](mw.Rotation.md) 
 
@@ -377,17 +430,18 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | 旋转的 x 分量 |
-| `y` | `number` | 旋转的 y 分量 |
-| `z` | `number` | 旋转的 z 分量 |
+| `x` `number` | 旋转的 x 分量 |
+| :------ | :------ |
+| `y` `number` | 旋转的 y 分量 |
+| `z` `number` | 旋转的 z 分量 |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 
-旋转量
+**`Effect`**
+
 
 ___
 
@@ -397,18 +451,16 @@ ___
 
 判断当前角度是否与指定向量相等。
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `other` | [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
+| `other` [`Rotation`](mw.Rotation.md) | 比对的旋转量 |
+| :------ | :------ |
 
 #### Returns
 
-`boolean`
+| `boolean` | 比对的结果 |
+| :------ | :------ |
 
-比对的结果
 
 ___
 
@@ -418,33 +470,34 @@ ___
 
 当前旋转量减去一个旋转量
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量 |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | 相减的结果 |
+| :------ | :------ |
 
-this
 
-___
+#### Parameters
 
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量 |
+| :------ | :------ |
 ### toQuaternion <Score text="toQuaternion" /> 
 
 • **toQuaternion**(): [`Quaternion`](mw.Quaternion.md) 
 
 当前Rotation输出为四元数
 
-
 #### Returns
 
-[`Quaternion`](mw.Quaternion.md)
+| [`Quaternion`](mw.Quaternion.md) | 输出的四元数 |
+| :------ | :------ |
 
-输出的四元数
 
 ___
 
@@ -454,12 +507,11 @@ ___
 
 当前Rotation输出为字符串
 
-
 #### Returns
 
-`string`
+| `string` | 输出的字符串数据 |
+| :------ | :------ |
 
-输出的字符串数据
 
 ___
 
@@ -478,17 +530,15 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量a |
-| `b` | [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 接收结果的旋转量,即旋转相加的结果 default:null |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量,即旋转相加的结果 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-相加的结果
+| [`Rotation`](mw.Rotation.md) | 相加的结果 |
+| :------ | :------ |
 
 ___
 
@@ -498,25 +548,23 @@ ___
 
 复制目标旋转
 
+#### Parameters
+
+| `a` [`Rotation`](mw.Rotation.md) | 目标旋转 |
+| :------ | :------ |
+| `outer` [`Rotation`](mw.Rotation.md) | 接收结果的旋转 |
+
+#### Returns
+
+| [`Rotation`](mw.Rotation.md) | 拷贝得到的新旋转对象 |
+| :------ | :------ |
+
 
 ::: warning Precautions
 
 outer 不能为 null/undefined
 
 :::
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 目标旋转 |
-| `outer` | [`Rotation`](mw.Rotation.md) | 接收结果的旋转 |
-
-#### Returns
-
-[`Rotation`](mw.Rotation.md)
-
-拷贝得到的新旋转对象
 
 ___
 
@@ -535,16 +583,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Quaternion`](mw.Quaternion.md) | Quaternion |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+| `v` [`Quaternion`](mw.Quaternion.md) | Quaternion |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-Rotation
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
 
 ___
 
@@ -563,16 +609,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | `string` | string |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+| `v` `string` | string |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-Rotation
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
 
 ___
 
@@ -591,16 +635,14 @@ ___
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `v` | [`Vector`](mw.Vector.md) | Vector |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
+| `v` [`Vector`](mw.Vector.md) | Vector |
+| :------ | :------ |
+| `outer?` [`Rotation`](mw.Rotation.md) | 传入的Rotation对象 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-Rotation
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
 
 ___
 
@@ -610,20 +652,18 @@ ___
 
 对两个旋转量进行插值
 
-
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量a |
-| `b` | [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `alpha` | `number` | 插值 |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `alpha` `number` | 插值 |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
+| [`Rotation`](mw.Rotation.md) | Rotation |
+| :------ | :------ |
 
-Rotation
 
 ___
 
@@ -642,17 +682,15 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量a |
-| `b` | [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-相乘的结果
+| [`Rotation`](mw.Rotation.md) | 相乘的结果 |
+| :------ | :------ |
 
 ___
 
@@ -671,14 +709,12 @@ outer 不能为 null/undefined
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `a` | [`Rotation`](mw.Rotation.md) | 旋转量a |
-| `b` | [`Rotation`](mw.Rotation.md) | 旋转量b |
-| `outer?` | [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
+| `a` [`Rotation`](mw.Rotation.md) | 旋转量a |
+| :------ | :------ |
+| `b` [`Rotation`](mw.Rotation.md) | 旋转量b |
+| `outer?` [`Rotation`](mw.Rotation.md) | 接收结果的旋转量变量 default:null |
 
 #### Returns
 
-[`Rotation`](mw.Rotation.md)
-
-相减的结果
+| [`Rotation`](mw.Rotation.md) | 相减的结果 |
+| :------ | :------ |

@@ -2,16 +2,16 @@
 
 # MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
 
-鼠标锁定模式
+<p class="content-big"> 鼠标锁定模式 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[DoNotLock](mw.MouseLockMode.md#donotlock)** = ``0`` <br> |
-| **[LockAlways](mw.MouseLockMode.md#lockalways)** = ``2`` <br> |
-| **[LockInFullscreen](mw.MouseLockMode.md#lockinfullscreen)** = ``3`` <br> |
-| **[LockOnCapture](mw.MouseLockMode.md#lockoncapture)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[DoNotLock](mw.MouseLockMode.md#donotlock)** = ``0``  |
+| :----- |
+| **[LockAlways](mw.MouseLockMode.md#lockalways)** = ``2`` |
+| **[LockInFullscreen](mw.MouseLockMode.md#lockinfullscreen)** = ``3`` |
+| **[LockOnCapture](mw.MouseLockMode.md#lockoncapture)** = ``1`` |
 
 ## Enumeration Members
 

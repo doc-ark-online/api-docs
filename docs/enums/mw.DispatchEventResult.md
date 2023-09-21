@@ -2,16 +2,16 @@
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 
-事件发送的结果
+<p class="content-big"> 事件发送的结果 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[Failure](mw.DispatchEventResult.md#failure)** = ``1`` <br> |
-| **[FailureCountLimit](mw.DispatchEventResult.md#failurecountlimit)** = ``2`` <br> |
-| **[FailureRateLimit](mw.DispatchEventResult.md#failureratelimit)** = ``3`` <br> |
-| **[Success](mw.DispatchEventResult.md#success)** = ``0`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[Failure](mw.DispatchEventResult.md#failure)** = ``1``  |
+| :----- |
+| **[FailureCountLimit](mw.DispatchEventResult.md#failurecountlimit)** = ``2`` |
+| **[FailureRateLimit](mw.DispatchEventResult.md#failureratelimit)** = ``3`` |
+| **[Success](mw.DispatchEventResult.md#success)** = ``0`` |
 
 ## Enumeration Members
 

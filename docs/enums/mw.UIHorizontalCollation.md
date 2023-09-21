@@ -2,14 +2,14 @@
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 
-自动布局子项布局排序 - 水平排序
+<p class="content-big"> 自动布局子项布局排序 - 水平排序 </p>
 
 ## Table of contents
 
-| Enumeration Members |
-| :-----|
-| **[LeftToRight](mw.UIHorizontalCollation.md#lefttoright)** = ``0`` <br> |
-| **[RightToLeft](mw.UIHorizontalCollation.md#righttoleft)** = ``1`` <br> |
+### Enumeration Members <Score text="Enumeration" /> 
+| **[LeftToRight](mw.UIHorizontalCollation.md#lefttoright)** = ``0``  |
+| :----- |
+| **[RightToLeft](mw.UIHorizontalCollation.md#righttoleft)** = ``1`` |
 
 ## Enumeration Members
 
