@@ -34,8 +34,7 @@
 ## Table of contents
 
 ### Constructors <Score text="Constructors" /> 
-| **new Animation**()  |
-| :----- |
+
 
 ### Accessors <Score text="Accessors" /> 
 | **[assetId](mw.Animation.md#assetid)**(): `string`  |
