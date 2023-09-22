@@ -269,7 +269,7 @@ ___
 </th>
 <th style="text-align: left">
 
-• `set` **loop**(`loopCount`): `void` 
+• `set` **loop**(`loopCount`:`number`): `void` 
 
 </th>
 </tr></thead>
