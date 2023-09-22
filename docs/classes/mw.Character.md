@@ -6,11 +6,11 @@
 
 Character 是一个特殊的具有网格、碰撞和内置运动逻辑的受控制对象，它赋予模型角色功能。使模型能够实际走动并与各个组件进行交互是为垂直方向的玩家表示而设计的，具备移动能力，可以在场景中行走、跑动、跳跃（jump）、飞行（switchToFlying）和游泳（switchToSwimming）。
 其中比较重要的：
-· addMovement 函数控制角色沿着给定方向移动。
-· loadAnimation 函数将左侧动画资源加载在角色身上，使角色自如的使用多种动作。
-· switchToFlying 函数表示角色切换为飞行状态；switchToSwimming 函数表示角色切换为游泳状态（需配合 SwimmingVolume 逻辑对象使用）。
-· collisionExtent 属性调整角色碰撞大小。
-· description 属性更改角色外观，左侧栏中提供角色大量的衣服、饰品等资源，传入资源ID字符串进行随意更换外观。
+- addMovement 函数控制角色沿着给定方向移动。
+- loadAnimation 函数将左侧动画资源加载在角色身上，使角色自如的使用多种动作。
+- switchToFlying 函数表示角色切换为飞行状态；switchToSwimming 函数表示角色切换为游泳状态（需配合 SwimmingVolume 逻辑对象使用）。
+- collisionExtent 属性调整角色碰撞大小。
+- description 属性更改角色外观，左侧栏中提供角色大量的衣服、饰品等资源，传入资源ID字符串进行随意更换外观。
 此外还有很多可设置人物行走、跑动、跳跃、飞行和游泳的速度等属性。
 
 ## Hierarchy
