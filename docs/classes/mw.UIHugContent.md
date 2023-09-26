@@ -2,7 +2,11 @@
 
 # UIHugContent <Badge type="tip" text="Class" /> <Score text="UIHugContent" />
 
-<p class="content-big"> 容器自动布局大小适应规则 </p>
+<p class="content-big">
+
+容器自动布局大小适应规则
+
+</p>
 
 ## Table of contents
 

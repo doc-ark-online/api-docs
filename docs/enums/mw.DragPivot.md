@@ -2,7 +2,11 @@
 
 # DragPivot <Badge type="tip" text="Enumeration" /> <Score text="DragPivot" />
 
-<p class="content-big"> 拖拽的锚点 </p>
+<p class="content-big">
+
+拖拽的锚点
+
+</p>
 
 ## Table of contents
 

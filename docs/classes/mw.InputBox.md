@@ -2,7 +2,11 @@
 
 # InputBox <Badge type="tip" text="Class" /> <Score text="InputBox" />
 
-<p class="content-big"> UI的输入框 </p>
+<p class="content-big">
+
+UI的输入框
+
+</p>
 
 ## Hierarchy
 

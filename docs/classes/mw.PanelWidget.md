@@ -2,7 +2,11 @@
 
 # PanelWidget <Badge type="tip" text="Class" /> <Score text="PanelWidget" />
 
-<p class="content-big"> UI的PanelWidget可以挂载子节点 </p>
+<p class="content-big">
+
+UI的PanelWidget可以挂载子节点
+
+</p>
 
 ## Hierarchy
 

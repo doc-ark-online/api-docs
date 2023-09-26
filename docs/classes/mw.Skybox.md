@@ -2,11 +2,23 @@
 
 # Skybox <Badge type="tip" text="Class" /> <Score text="Skybox" />
 
-<p class="content-big"> 天空盒 </p>
+<p class="content-big">
 
-<p class="content-big"> ---------------------------------- </p>
+天空盒
 
-<p style="font-size: 14px;"> 使用示例: 可按如下操作控制编辑器天空盒实时效果 </p>
+</p>
+
+<p class="content-big">
+
+----------------------------------
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例: 可按如下操作控制编辑器天空盒实时效果
+
+</p>
 
 创建一个名为"SkyboxExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制天空盒的亮度 *键切换预设
 ```ts
@@ -101,6 +113,8 @@ export default class SkyboxExample extends mw.Script {
 | 设置太阳贴图资源ID|
 | **[sunVisible](mw.Skybox.md#sunvisible)**(): `boolean`  |
 | 设置是否开启太阳|
+| **[yawAngle](mw.Skybox.md#yawangle)**(): `number`  |
+| 设置天空盒贴图旋转（度）|
 
 ### Methods <Score text="Methods" /> 
 | **[refresh](mw.Skybox.md#refresh)**(): `void`  |
@@ -1403,6 +1417,54 @@ ___
 #### Parameters
 
 | `value` `boolean` | 是否开启太阳 |
+| :------ | :------ |
+
+
+
+</td>
+</tr></tbody>
+</table>
+
+___
+
+### yawAngle <Score text="yawAngle" /> 
+
+<table class="get-set-table">
+<thead><tr>
+<th style="text-align: left">
+
+• `Static` `get` **yawAngle**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
+• `Static` `set` **yawAngle**(`value`): `void` <Badge type="tip" text="client" />
+
+</th>
+</tr></thead>
+<tbody><tr>
+<td style="text-align: left">
+
+
+获取天空盒贴图旋转（度）
+
+
+#### Returns
+
+| `number` | 天空盒贴图旋转 |
+| :------ | :------ |
+
+
+</td>
+<td style="text-align: left">
+
+
+设置天空盒贴图旋转（度）
+
+
+#### Parameters
+
+| `value` `number` | 天空盒贴图旋转度(0~360) |
 | :------ | :------ |
 
 </td>

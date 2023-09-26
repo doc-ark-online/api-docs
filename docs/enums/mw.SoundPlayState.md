@@ -2,7 +2,11 @@
 
 # SoundPlayState <Badge type="tip" text="Enumeration" /> <Score text="SoundPlayState" />
 
-<p class="content-big"> 音效播放状态 </p>
+<p class="content-big">
+
+音效播放状态
+
+</p>
 
 ## Table of contents
 

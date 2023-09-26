@@ -2,7 +2,11 @@
 
 # ProjectileMovementStatus <Badge type="tip" text="Enumeration" /> <Score text="ProjectileMovementStatus" />
 
-<p class="content-big"> 投掷物移动状态 </p>
+<p class="content-big">
+
+投掷物移动状态
+
+</p>
 
 ## Table of contents
 

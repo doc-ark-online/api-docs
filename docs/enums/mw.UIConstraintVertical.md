@@ -2,7 +2,11 @@
 
 # UIConstraintVertical <Badge type="tip" text="Enumeration" /> <Score text="UIConstraintVertical" />
 
-<p class="content-big"> 对齐策略垂直规则 </p>
+<p class="content-big">
+
+对齐策略垂直规则
+
+</p>
 
 ## Table of contents
 

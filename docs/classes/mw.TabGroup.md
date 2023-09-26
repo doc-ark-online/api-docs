@@ -2,7 +2,11 @@
 
 # TabGroup<T\> <Badge type="tip" text="Class" /> <Score text="TabGroup<T\>" />
 
-<p class="content-big"> 选项卡组 </p>
+<p class="content-big">
+
+选项卡组
+
+</p>
 
 ## Type parameters
 

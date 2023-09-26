@@ -2,7 +2,11 @@
 
 # StringUtil <Badge type="tip" text="Class" /> <Score text="StringUtil" />
 
-<p class="content-big"> 字符串工具 </p>
+<p class="content-big">
+
+字符串工具
+
+</p>
 
 ## Table of contents
 
@@ -38,7 +42,11 @@
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将hello world!文本复制到剪切板，此时可以在其他地方粘贴
+
+</p>
 
 ```ts
 @Component
@@ -70,7 +78,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将剪切板的文本打印到控制台
+
+</p>
 
 ```ts
 @Component
@@ -109,7 +121,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world! </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出hello world!
+
+</p>
 
 ```ts
 @Component
@@ -147,7 +163,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出isEmpty1: false
+
+</p>
 
 ```ts
 @Component
@@ -191,7 +211,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为StringExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出屏蔽字检测不通过
+
+</p>
 
 ```ts
 @Component

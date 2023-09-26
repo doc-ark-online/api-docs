@@ -2,7 +2,11 @@
 
 # Margin <Badge type="tip" text="Class" /> <Score text="Margin" />
 
-<p class="content-big"> 基础的边距，提供4个方向的数值修改 </p>
+<p class="content-big">
+
+基础的边距，提供4个方向的数值修改
+
+</p>
 
 ## Table of contents
 

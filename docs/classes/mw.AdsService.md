@@ -2,7 +2,11 @@
 
 # AdsService <Badge type="tip" text="Class" /> <Score text="AdsService" />
 
-<p class="content-big"> 广告服务，支持激励/插屏类型 </p>
+<p class="content-big">
+
+广告服务，支持激励/插屏类型
+
+</p>
 
 ::: warning Precautions
 
@@ -135,7 +139,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为AdsExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏并关联广告位，手机上运行游戏，每10秒会自动播放一次广告，并会在玩家头顶显示广告播放状态与结果
+
+</p>
 
 ```ts
 @Component

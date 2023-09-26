@@ -2,13 +2,29 @@
 
 # GameObject <Badge type="tip" text="Class" /> <Score text="GameObject" />
 
-<p class="content-big"> 场景中所有实体的基类 </p>
+<p class="content-big">
 
-<p class="content-big"> Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象、PointLight、NavModifierVolume、Impulse、IntegratedMover、PhysicsThruster、ProjectileInst、ObjectLauncher、UIObject等均继承自GameObject。 </p>
+场景中所有实体的基类
 
-<p class="content-big"> 提供复制删除物体，查找获取物体、子物体、脚本等功能。 </p>
+</p>
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下: </p>
+<p class="content-big">
+
+Model、Pawn、Camera、AdvancedVehicle、BlockingVolume等逻辑对象均继承自GameObject。
+
+</p>
+
+<p class="content-big">
+
+提供复制删除物体，查找获取物体、子物体、脚本等功能。
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"GameObjectExample"的脚本,在场景中放置模型正方体、圆柱、圆台，父子关系树为：正方体/圆柱/圆台,并把GameObjectExample脚本挂载给正方体.代码如下:
+
+</p>
 
 ```ts
 @Component
@@ -874,7 +890,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:调用方法 </p>
+<p style="font-size: 14px;">
+
+使用示例:调用方法
+
+</p>
 
 ```ts
 let obj = await GameObject.asyncSpawn<Model>("197386", {
@@ -1003,7 +1023,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:调用方法 </p>
+<p style="font-size: 14px;">
+
+使用示例:调用方法
+
+</p>
 
 ```ts
 let obj = GameObject.spawn<Model>("197386", {

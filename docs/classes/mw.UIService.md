@@ -4,7 +4,11 @@
 
 **`Instance`**
 
-<p class="content-big"> UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。 </p>
+<p class="content-big">
+
+UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
+
+</p>
 需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
 
 ::: warning Precautions

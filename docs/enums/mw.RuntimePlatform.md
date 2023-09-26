@@ -2,7 +2,11 @@
 
 # RuntimePlatform <Badge type="tip" text="Enumeration" /> <Score text="RuntimePlatform" />
 
-<p class="content-big"> 运行平台 </p>
+<p class="content-big">
+
+运行平台
+
+</p>
 
 ## Table of contents
 

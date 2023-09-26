@@ -2,7 +2,11 @@
 
 # DataStorage <Badge type="tip" text="Class" /> <Score text="DataStorage" />
 
-<p class="content-big"> 数据存储 </p>
+<p class="content-big">
+
+数据存储
+
+</p>
 
 ## Table of contents
 

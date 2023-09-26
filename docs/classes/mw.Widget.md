@@ -2,7 +2,11 @@
 
 # Widget <Badge type="tip" text="Class" /> <Score text="Widget" />
 
-<p class="content-big"> 可挂载叶子节点的根节点，以及提供各种自动布局功能 </p>
+<p class="content-big">
+
+可挂载叶子节点的根节点，以及提供各种自动布局功能
+
+</p>
 
 ## Hierarchy
 

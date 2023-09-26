@@ -2,7 +2,11 @@
 
 # GestureDelegate <Badge type="tip" text="Class" /> <Score text="GestureDelegate" />
 
-<p class="content-big"> 手势代理类 </p>
+<p class="content-big">
+
+手势代理类
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,41 @@
 
 # ProjectileMovement <Badge type="tip" text="Class" /> <Score text="ProjectileMovement" />
 
-<p class="content-big"> 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 </p>
+<p class="content-big">
+
+投掷物移动功能类
+
+</p>
+
+<p class="content-big">
+
+ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体，比如子弹、火箭、投掷物等。
+
+</p>
+
+<p class="content-big">
+
+想象一下，你在游戏中控制着一个角色，你想让他发射一颗子弹。这时，你可以使用 ProjectileMovement 组件来处理子弹的移动。
+
+</p>
+
+<p class="content-big">
+
+这个组件的作用就像是给子弹贴上一个引擎，让它能够自动进行飞行。你只需要设置子弹的速度和方向，组件就会根据这些参数自动计算子弹的轨迹，并将其移动到正确的位置。这样，你就不需要手动编写复杂的移动逻辑，而是交给 ProjectileMovement 来处理。
+
+</p>
+
+<p class="content-big">
+
+除了基本的移动功能，ProjectileMovement 还提供了一些其他的特性。例如，你可以设置子弹的最大飞行距离或生命周期，超过这个距离或时间后，子弹会自动销毁。还可以设置子弹的碰撞检测，当子弹与其他物体碰撞时，可以触发相应的效果或伤害。
+
+</p>
+
+<p class="content-big">
+
+绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步。
+
+</p>
 
 ## Implements
 
@@ -13,48 +47,48 @@
 ### Constructors <Score text="Constructors" /> 
 | **new ProjectileMovement**(`relatedGameObject`: [`GameObject`](mw.GameObject.md), `config?`: [`ProjectileMovementConfig`](../interfaces/mw.ProjectileMovementConfig.md))  |
 | :-----|
-| 设置新的关联的逻辑对象|
+| 通过配置对象构造功能类|
 
 ### Properties <Score text="Properties" /> 
 | **[onProjectileHit](mw.ProjectileMovement.md#onprojectilehit)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`hitGameObject`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `void`\>  |
 | :-----|
 | 投掷物击中物体时触发绑定函数|
-| **[onProjectileHomingFailed](mw.ProjectileMovement.md#onprojectilehomingfailed)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
+| **[onProjectileHomingFail](mw.ProjectileMovement.md#onprojectilehomingfail)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | 投掷物追踪失败触发绑定函数（追踪失败特指追踪目标消失，当且仅当这个情况触发一次）|
 | **[onProjectileLifeEnd](mw.ProjectileMovement.md#onprojectilelifeend)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | 投掷物结束运动周期时触发绑定函数|
 | **[owner](mw.ProjectileMovement.md#owner)**: [`Character`](mw.Character.md)  |
-| 投掷物的owner|
+| 投掷物对象的持有人，便于用户指定发射的角色对象。|
 
 ### Accessors <Score text="Accessors" /> 
 | **[acceleration](mw.ProjectileMovement.md#acceleration)**(): `number`  |
 | :-----|
-| 加速度值，正值加速，负值减速|
+| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。|
 | **[gravityScale](mw.ProjectileMovement.md#gravityscale)**(): `number`  |
-| 重力倍数，正值重力向下，负值重力向上|
+| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。|
 | **[homingAcceleration](mw.ProjectileMovement.md#homingacceleration)**(): `number`  |
-| 追踪加速度值|
+| 朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。|
 | **[homingTarget](mw.ProjectileMovement.md#homingtarget)**(): [`GameObject`](mw.GameObject.md)  |
-| 投掷物追踪的目标|
+| 投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。|
 | **[initialSpeed](mw.ProjectileMovement.md#initialspeed)**(): `number`  |
-| 投掷物发射的初始速度，发射之后设置不会生效|
+| 投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效|
 | **[isRotationFollowsVelocity](mw.ProjectileMovement.md#isrotationfollowsvelocity)**(): `boolean`  |
-| 投掷物操作的对象的朝向是否跟随速度方向|
+| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。|
 | **[lifeSpan](mw.ProjectileMovement.md#lifespan)**(): `number`  |
-| 投掷物的运动时间，超出后投掷物不再运动。值小于等于 0 时清空延时|
+| 投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。|
 | **[maxSpeed](mw.ProjectileMovement.md#maxspeed)**(): `number`  |
-| 投掷物运动的最大速度|
+| 投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。|
 | **[speedRetention](mw.ProjectileMovement.md#speedretention)**(): `number`  |
-| 投掷物每次碰撞后维持速度的比例 [0, 1]|
+| 碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。|
 | **[status](mw.ProjectileMovement.md#status)**(): [`ProjectileMovementStatus`](../enums/mw.ProjectileMovementStatus.md)  |
 | 投掷物当前状态|
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.ProjectileMovement.md#destroy)**(`[destroy](mw.ProjectileMovement.md#destroy)WithObject`): `void`  |
+| **[destroy](mw.ProjectileMovement.md#destroy)**(`[destroy](mw.ProjectileMovement.md#destroy)WithObject?`): `void`  |
 | :-----|
 | 销毁投掷物，即销毁对象下的移动组件和碰撞组件。可以选择是否和关联的对象一起销毁。|
 | **[getRelatedGameObject](mw.ProjectileMovement.md#getrelatedgameobject)**(): [`GameObject`](mw.GameObject.md)  |
-| 过去新的关联的逻辑对象|
+| 获取关联的逻辑对象|
 | **[getTrajectory](mw.ProjectileMovement.md#gettrajectory)**(`startDirection`: [`Vector`](mw.Vector.md), `density`: `number`, `duration`: `number`): [`Vector`](mw.Vector.md)[]  |
 | 获取预测出的运动轨迹|
 | **[getVelocity](mw.ProjectileMovement.md#getvelocity)**(): [`Vector`](mw.Vector.md)  |
@@ -70,7 +104,7 @@
 | **[setVelocity](mw.ProjectileMovement.md#setvelocity)**(`v`: [`Vector`](mw.Vector.md)): `void`  |
 | 设置当前速度|
 
-设置新的关联的逻辑对象
+通过配置对象构造功能类
 
 
 #### Parameters
@@ -89,9 +123,9 @@
 
 ___
 
-### onProjectileHomingFailed <Score text="onProjectileHomingFailed" /> 
+### onProjectileHomingFail <Score text="onProjectileHomingFail" /> 
 
-• **onProjectileHomingFailed**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
+• **onProjectileHomingFail**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>
 
 投掷物追踪失败触发绑定函数（追踪失败特指追踪目标消失，当且仅当这个情况触发一次）
 
@@ -109,7 +143,7 @@ ___
 
 • **owner**: [`Character`](mw.Character.md)
 
-投掷物的owner
+投掷物对象的持有人，便于用户指定发射的角色对象。
 
 ## Accessors
 
@@ -132,7 +166,7 @@ ___
 <td style="text-align: left">
 
 
-加速度值，正值加速，负值减速
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
 
 #### Returns
 
@@ -144,7 +178,7 @@ ___
 <td style="text-align: left">
 
 
-加速度值，正值加速，负值减速
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
 
 #### Parameters
 
@@ -182,7 +216,7 @@ ___
 <td style="text-align: left">
 
 
-重力倍数，正值重力向下，负值重力向上
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
 
 #### Returns
 
@@ -194,7 +228,7 @@ ___
 <td style="text-align: left">
 
 
-重力倍数，正值重力向下，负值重力向上
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
 
 #### Parameters
 
@@ -232,7 +266,7 @@ ___
 <td style="text-align: left">
 
 
-追踪加速度值
+朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。
 
 #### Returns
 
@@ -244,7 +278,7 @@ ___
 <td style="text-align: left">
 
 
-追踪加速度值
+朝向目标对象的加速度（cm/s）。default: 10000。range: [0, 10000]。
 
 #### Parameters
 
@@ -282,7 +316,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物追踪的目标
+投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。
 
 #### Returns
 
@@ -294,7 +328,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物追踪的目标
+投掷物追踪的目标对象，当目标对象不为空时，对象会向目标加速。default: null。
 
 #### Parameters
 
@@ -332,7 +366,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射的初始速度，发射之后设置不会生效
+投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效
 
 #### Returns
 
@@ -344,7 +378,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射的初始速度，发射之后设置不会生效
+投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]，发射之后设置不会生效
 
 #### Parameters
 
@@ -382,7 +416,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物操作的对象的朝向是否跟随速度方向
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
 
 #### Returns
 
@@ -394,7 +428,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物操作的对象的朝向是否跟随速度方向
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
 
 #### Parameters
 
@@ -432,7 +466,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的运动时间，超出后投掷物不再运动。注意，返回的值是上次设置的值或默认值，而不是还剩的运行时长
+投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
 
 #### Returns
 
@@ -444,7 +478,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物的运动时间，超出后投掷物不再运动。值小于等于 0 时清空延时
+投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
 
 #### Parameters
 
@@ -482,7 +516,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的最大速度
+投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
 
 #### Returns
 
@@ -494,7 +528,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动的最大速度
+投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
 
 #### Parameters
 
@@ -532,7 +566,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物每次碰撞后维持速度的比例 [0, 1]
+碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。
 
 #### Returns
 
@@ -544,7 +578,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物每次碰撞后维持速度的比例 [0, 1]
+碰撞后投掷物保持原来速度的比例。0表示碰撞后速度直接清零。default: 0.6。range: [0, 1]。
 
 #### Parameters
 
@@ -592,16 +626,94 @@ ___
 
 ### destroy <Score text="destroy" /> 
 
-• **destroy**(`destroyWithObject`): `void` 
+• **destroy**(`destroyWithObject?`): `void` 
 
 销毁投掷物，即销毁对象下的移动组件和碰撞组件。可以选择是否和关联的对象一起销毁。
 
 #### Parameters
 
-| `destroyWithObject` `boolean` |  是否与对象一起删除 default: true |
+| `destroyWithObject?` `boolean` |  是否与对象一起删除 default: true |
 | :------ | :------ |
 
 
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Destroy"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement_Destroy extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 创建一个模型数组balls和标识curBall。
+           let balls = new Array<Model>();
+           let curBall = 0;
+
+           // 在前方异步生成5个球，放入数组balls中。
+           for (let i = 0;
+i < 5;
+i++) {
+               let ball = await GameObject.asyncSpawn("84121") as Model;
+               ball.worldTransform.position = new Vector(200, i * 100, 25);
+               ball.name = "ball" + i;
+               ball.setCollision(CollisionStatus.QueryCollisionOnly);
+               balls.push(ball);
+           }
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(balls[curBall]);
+
+           // 设置初始发射速度为1000。
+           projectile.initialSpeed = 1000;
+
+           // 给击中委托绑定一个函数，当击中对象是目标时，播放一个击中特效，0.5s后删除目标。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               EffectService.playAtPosition("99599", HitResult.impactPoint, {scale: new Vector(5, 5, 5)});
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球右前方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               projectile.launch(new Vector(1, 1, 1));
+           });
+
+           // 添加客户端发送的”DESTROY“事件监听器，从数组里面删除球对象，并切换投掷物关联的对象。
+           Event.addClientListener("DESTROY", async (player: Player) => {
+               console.error("DESTROY");
+               let deleteBall = projectile.getRelatedGameObject() as Model;
+               let deleteIndex = balls.indexOf(deleteBall);
+               balls.splice(deleteIndex, 1);
+               if(balls.length > 0) {
+                   curBall = (deleteIndex) % balls.length;
+                   projectile.setRelatedGameObject(balls[curBall]);
+                   deleteBall.destroy();
+               } else {
+                   projectile.destroy(true);
+               }
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球。
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”DESTROY“事件，切换至下一个球并删除上一个。
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("DESTROY");
+           });
+       }
+   }
+}
+```
 
 ___
 
@@ -609,13 +721,91 @@ ___
 
 • **getRelatedGameObject**(): [`GameObject`](mw.GameObject.md) 
 
-过去新的关联的逻辑对象
+获取关联的逻辑对象
 
 #### Returns
 
-| [`GameObject`](mw.GameObject.md) | 新的关联的逻辑对象，设置后，移动组件和碰撞都将重新附加到此对象上 |
+| [`GameObject`](mw.GameObject.md) | 关联的逻辑对象 |
 | :------ | :------ |
 
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 创建一个模型数组balls和标识curBall。
+           let balls = new Array<Model>();
+           let curBall = 0;
+
+           // 在前方异步生成5个球，放入数组balls中。
+           for (let i = 0;
+i < 5;
+i++) {
+               let ball = await GameObject.asyncSpawn("84121") as Model;
+               ball.worldTransform.position = new Vector(200, i * 100, 25);
+               ball.name = "ball" + i;
+               ball.setCollision(CollisionStatus.QueryCollisionOnly);
+               balls.push(ball);
+           }
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(balls[curBall]);
+
+           // 设置初始发射速度为1000。
+           projectile.initialSpeed = 1000;
+
+           // 给击中委托绑定一个函数，当击中对象是目标时，播放一个击中特效，0.5s后删除目标。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               EffectService.playAtPosition("99599", HitResult.impactPoint, {scale: new Vector(5, 5, 5)});
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球右前方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               projectile.launch(new Vector(1, 1, 1));
+           });
+
+           // 添加客户端发送的”DESTROY“事件监听器，从数组里面删除球对象，并切换投掷物关联的对象。
+           Event.addClientListener("DESTROY", async (player: Player) => {
+               console.error("DESTROY");
+               let deleteBall = projectile.getRelatedGameObject() as Model;
+               let deleteIndex = balls.indexOf(deleteBall);
+               balls.splice(deleteIndex, 1);
+               if(balls.length > 0) {
+                   curBall = (deleteIndex) % balls.length;
+                   projectile.setRelatedGameObject(balls[curBall]);
+                   deleteBall.destroy();
+               } else {
+                   projectile.destroy(true);
+               }
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球。
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”DESTROY“事件，切换至下一个球并删除上一个。
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("DESTROY");
+           });
+       }
+   }
+}
+```
 
 ___
 
@@ -658,6 +848,93 @@ ___
 | :------ | :------ |
 
 
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 在r(2000, 0, 0)生成一个火箭模型。
+           let rocket = await GameObject.asyncSpawn("162807") as Model;
+           rocket.worldTransform.position = new Vector(2000, 0, 0);
+
+           // 将火箭的碰撞状态修改为无碰撞
+           rocket.setCollision(CollisionStatus.Off);
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(rocket);
+
+           // 设置初始发射速度为1。
+           projectile.initialSpeed = 1;
+           // 设置最大速度为1000。
+           projectile.maxSpeed = 1000;
+           // 设置发射加速度为200
+           projectile.acceleration = 200;
+           // 设置重力缩放为0。
+           projectile.gravityScale = 0;
+           // 设置投掷物旋转不跟随速度方向。
+           projectile.isRotationFollowsVelocity = false;
+           // 设置投掷物运动时间10秒。
+           projectile.lifeSpan = 10;
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将火箭朝上方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               projectile.launch(new Vector(0, 0, 1));
+               // 广播客户端给火箭挂载尾焰特效
+               Event.dispatchToAllClient("TAIL", rocket.gameObjectId);
+               // 每0.1秒都会给客户端广播火箭当前速度
+               let scaleInterval = TimeUtil.setInterval(() => {
+                   if(projectile.getVelocity().length > 999) {
+                       projectile.setVelocity(Vector.zero);
+                       TimeUtil.clearInterval(scaleInterval);
+                       rocket.worldTransform.position = new Vector(2000, 0, 0);
+                   }
+                   Event.dispatchToAllClient("SCALING", rocket.gameObjectId, projectile.getVelocity());
+               }, 0.1);
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射火箭
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加服务端发送的”TAIL“事件监听器，给火箭挂载尾焰。
+           Event.addServerListener("TAIL", async (rocketId: string) => {
+               let rocket = await GameObject.asyncFindGameObjectById(rocketId);
+               if(typeof(rocket.getChildByName("tail")) != "undefined") {
+                   return;
+               }
+               let tail = await GameObject.asyncSpawn("144098") as Effect;
+               tail.name = "tail";
+               tail.parent = rocket;
+               tail.localTransform.position = Vector.zero;
+           });
+
+           // 添加服务端发送的”SCALING“事件监听器，根据速度对尾焰进行缩放
+           Event.addServerListener("SCALING", async (rocketId: string, velocity: Vector) => {
+               let rocket = await GameObject.asyncFindGameObjectById(rocketId);
+               let tail = rocket.getChildByName("tail");
+               if(tail) {
+                   tail.worldTransform.scale = Vector.one.multiply(velocity.length / 250);
+               }
+           });
+       }
+   }
+}
+```
+
 ___
 
 ### launch <Score text="launch" /> 
@@ -679,6 +956,97 @@ ___
 :::
 
 
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement_Launch extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 在世界坐标（200，0，25）异步生成一个球
+           let ball = await GameObject.asyncSpawn("84121") as Model;
+           ball.worldTransform.position = new Vector(200, 0, 25);
+           ball.name = "ball";
+           ball.setCollision(CollisionStatus.QueryCollisionOnly);
+
+           // 在世界坐标（1000，0，0）异步生成一面墙
+           let wall = await GameObject.asyncSpawn("197386") as Model;
+           wall.worldTransform.position = new Vector(1000, 0, 0);
+           wall.worldTransform.scale = new Vector(1, 5, 5);
+           wall.name = "wall";
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(ball);
+
+           // 设置初始发射速度为1500。
+           projectile.initialSpeed = 1500;
+           // 设置重力缩放为1。
+           projectile.gravityScale = 1;
+           // 设置投掷物旋转跟随速度方向。
+           projectile.isRotationFollowsVelocity = true;
+           // 设置投掷物碰撞维持速度比例为0.4。
+           projectile.speedRetention = 0.4;
+
+           // 给击中委托绑定一个函数，打印击中信息：角色X 发射 对象Y 击中 对象Z，并播放一个击中特效。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               console.log( "Projectile " + projectile.getRelatedGameObject().name + " thrown by Character " + projectile.owner.displayName + " hits the " + hitGameObject.name);
+               EffectService.playAtPosition("99599", HitResult.impactPoint);
+           });
+
+           // 给投掷物生命结束委托绑定一个函数，播放一个销毁特效。
+           projectile.onProjectileLifeEnd.add(() => {
+               EffectService.playAtPosition("133276", ball.worldTransform.position);
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球朝上方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               // 设置owner为玩家角色。
+               projectile.owner = player.character;
+               projectile.launch(new Vector(1, 0, 1));
+           });
+
+           // 添加客户端发送的”PAUSE“事件监听器，将暂停投掷物运动并打印状态。
+           Event.addClientListener("PAUSE", async (player: Player) => {
+               projectile.pause();
+               console.log("Projectile status " + projectile.status);
+           });
+
+           // 添加客户端发送的”RESUME“事件监听器，将恢复投掷物运动并打印状态。
+           Event.addClientListener("RESUME", async (player: Player) => {
+               projectile.resume();
+               console.log("Projectile status " + projectile.status);
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”PAUSE“事件，发射球
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("PAUSE");
+           });
+
+           // 添加一个按键方法：按下按键”3“，向服务端派送一个”RESUME“事件，发射球
+           InputUtil.onKeyDown(Keys.Three, () => {
+               Event.dispatchToServer("RESUME");
+           });
+       }
+   }
+}
+```
+
 ___
 
 ### pause <Score text="pause" /> 
@@ -694,6 +1062,97 @@ ___
 
 :::
 
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement_Launch extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 在世界坐标（200，0，25）异步生成一个球
+           let ball = await GameObject.asyncSpawn("84121") as Model;
+           ball.worldTransform.position = new Vector(200, 0, 25);
+           ball.name = "ball";
+           ball.setCollision(CollisionStatus.QueryCollisionOnly);
+
+           // 在世界坐标（1000，0，0）异步生成一面墙
+           let wall = await GameObject.asyncSpawn("197386") as Model;
+           wall.worldTransform.position = new Vector(1000, 0, 0);
+           wall.worldTransform.scale = new Vector(1, 5, 5);
+           wall.name = "wall";
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(ball);
+
+           // 设置初始发射速度为1500。
+           projectile.initialSpeed = 1500;
+           // 设置重力缩放为1。
+           projectile.gravityScale = 1;
+           // 设置投掷物旋转跟随速度方向。
+           projectile.isRotationFollowsVelocity = true;
+           // 设置投掷物碰撞维持速度比例为0.4。
+           projectile.speedRetention = 0.4;
+
+           // 给击中委托绑定一个函数，打印击中信息：角色X 发射 对象Y 击中 对象Z，并播放一个击中特效。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               console.log( "Projectile " + projectile.getRelatedGameObject().name + " thrown by Character " + projectile.owner.displayName + " hits the " + hitGameObject.name);
+               EffectService.playAtPosition("99599", HitResult.impactPoint);
+           });
+
+           // 给投掷物生命结束委托绑定一个函数，播放一个销毁特效。
+           projectile.onProjectileLifeEnd.add(() => {
+               EffectService.playAtPosition("133276", ball.worldTransform.position);
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球朝上方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               // 设置owner为玩家角色。
+               projectile.owner = player.character;
+               projectile.launch(new Vector(1, 0, 1));
+           });
+
+           // 添加客户端发送的”PAUSE“事件监听器，将暂停投掷物运动并打印状态。
+           Event.addClientListener("PAUSE", async (player: Player) => {
+               projectile.pause();
+               console.log("Projectile status " + projectile.status);
+           });
+
+           // 添加客户端发送的”RESUME“事件监听器，将恢复投掷物运动并打印状态。
+           Event.addClientListener("RESUME", async (player: Player) => {
+               projectile.resume();
+               console.log("Projectile status " + projectile.status);
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”PAUSE“事件，发射球
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("PAUSE");
+           });
+
+           // 添加一个按键方法：按下按键”3“，向服务端派送一个”RESUME“事件，发射球
+           InputUtil.onKeyDown(Keys.Three, () => {
+               Event.dispatchToServer("RESUME");
+           });
+       }
+   }
+}
+```
 
 ___
 
@@ -711,6 +1170,97 @@ ___
 :::
 
 
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement_Launch"的代码保存,运行游戏,场景中将会生成一个用于发射的球以及用于碰撞的墙壁。给发射器对应事件的委托绑定函数。按下按键”1“，发射球；按下按键”2“，暂停球的运动；按下按键”3“，恢复球的运动；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement_Launch extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 在世界坐标（200，0，25）异步生成一个球
+           let ball = await GameObject.asyncSpawn("84121") as Model;
+           ball.worldTransform.position = new Vector(200, 0, 25);
+           ball.name = "ball";
+           ball.setCollision(CollisionStatus.QueryCollisionOnly);
+
+           // 在世界坐标（1000，0，0）异步生成一面墙
+           let wall = await GameObject.asyncSpawn("197386") as Model;
+           wall.worldTransform.position = new Vector(1000, 0, 0);
+           wall.worldTransform.scale = new Vector(1, 5, 5);
+           wall.name = "wall";
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(ball);
+
+           // 设置初始发射速度为1500。
+           projectile.initialSpeed = 1500;
+           // 设置重力缩放为1。
+           projectile.gravityScale = 1;
+           // 设置投掷物旋转跟随速度方向。
+           projectile.isRotationFollowsVelocity = true;
+           // 设置投掷物碰撞维持速度比例为0.4。
+           projectile.speedRetention = 0.4;
+
+           // 给击中委托绑定一个函数，打印击中信息：角色X 发射 对象Y 击中 对象Z，并播放一个击中特效。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               console.log( "Projectile " + projectile.getRelatedGameObject().name + " thrown by Character " + projectile.owner.displayName + " hits the " + hitGameObject.name);
+               EffectService.playAtPosition("99599", HitResult.impactPoint);
+           });
+
+           // 给投掷物生命结束委托绑定一个函数，播放一个销毁特效。
+           projectile.onProjectileLifeEnd.add(() => {
+               EffectService.playAtPosition("133276", ball.worldTransform.position);
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球朝上方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               // 设置owner为玩家角色。
+               projectile.owner = player.character;
+               projectile.launch(new Vector(1, 0, 1));
+           });
+
+           // 添加客户端发送的”PAUSE“事件监听器，将暂停投掷物运动并打印状态。
+           Event.addClientListener("PAUSE", async (player: Player) => {
+               projectile.pause();
+               console.log("Projectile status " + projectile.status);
+           });
+
+           // 添加客户端发送的”RESUME“事件监听器，将恢复投掷物运动并打印状态。
+           Event.addClientListener("RESUME", async (player: Player) => {
+               projectile.resume();
+               console.log("Projectile status " + projectile.status);
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”PAUSE“事件，发射球
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("PAUSE");
+           });
+
+           // 添加一个按键方法：按下按键”3“，向服务端派送一个”RESUME“事件，发射球
+           InputUtil.onKeyDown(Keys.Three, () => {
+               Event.dispatchToServer("RESUME");
+           });
+       }
+   }
+}
+```
+
 ___
 
 ### setRelatedGameObject <Score text="setRelatedGameObject" /> 
@@ -721,10 +1271,88 @@ ___
 
 #### Parameters
 
-| `value` [`GameObject`](mw.GameObject.md) |  新的关联的逻辑对象，设置后，移动组件和碰撞都将重新附加到此对象上 |
+| `value` [`GameObject`](mw.GameObject.md) |  新的关联的逻辑对象，设置后，移动组件会重新生成并附加到此对象上 |
 | :------ | :------ |
 
 
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏,场景中将会生成5个用于发射的球。给发射器对应事件的委托绑定函数。按下按键”1“，发射投掷物关联的球对象。按下按键”2“，切换投掷物关联的球对象并删除上一个。注意需等球停止后再切换，否则会提前切换投掷物关联的球对象；设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 创建一个模型数组balls和标识curBall。
+           let balls = new Array<Model>();
+           let curBall = 0;
+
+           // 在前方异步生成5个球，放入数组balls中。
+           for (let i = 0;
+i < 5;
+i++) {
+               let ball = await GameObject.asyncSpawn("84121") as Model;
+               ball.worldTransform.position = new Vector(200, i * 100, 25);
+               ball.name = "ball" + i;
+               ball.setCollision(CollisionStatus.QueryCollisionOnly);
+               balls.push(ball);
+           }
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(balls[curBall]);
+
+           // 设置初始发射速度为1000。
+           projectile.initialSpeed = 1000;
+
+           // 给击中委托绑定一个函数，当击中对象是目标时，播放一个击中特效，0.5s后删除目标。
+           projectile.onProjectileHit.add((hitGameObject, HitResult) => {
+               EffectService.playAtPosition("99599", HitResult.impactPoint, {scale: new Vector(5, 5, 5)});
+           });
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将球右前方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               projectile.launch(new Vector(1, 1, 1));
+           });
+
+           // 添加客户端发送的”DESTROY“事件监听器，从数组里面删除球对象，并切换投掷物关联的对象。
+           Event.addClientListener("DESTROY", async (player: Player) => {
+               console.error("DESTROY");
+               let deleteBall = projectile.getRelatedGameObject() as Model;
+               let deleteIndex = balls.indexOf(deleteBall);
+               balls.splice(deleteIndex, 1);
+               if(balls.length > 0) {
+                   curBall = (deleteIndex) % balls.length;
+                   projectile.setRelatedGameObject(balls[curBall]);
+                   deleteBall.destroy();
+               } else {
+                   projectile.destroy(true);
+               }
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射球。
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加一个按键方法：按下按键”2“，向服务端派送一个”DESTROY“事件，切换至下一个球并删除上一个。
+           InputUtil.onKeyDown(Keys.Two, () => {
+               Event.dispatchToServer("DESTROY");
+           });
+       }
+   }
+}
+```
 
 ___
 
@@ -746,3 +1374,90 @@ ___
 
 :::
 
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ProjectileMovement"的代码保存,运行游戏。按下按键”1“，发射一颗火箭。设置对象代码如下:
+
+</p>
+
+```ts
+@Component
+export default class Example_ProjectileMovement extends Script {
+
+   protected async onStart(): Promise<void> {
+
+       // 下列逻辑在服务端执行
+       if(SystemUtil.isServer()) {
+
+           // 在r(2000, 0, 0)生成一个火箭模型。
+           let rocket = await GameObject.asyncSpawn("162807") as Model;
+           rocket.worldTransform.position = new Vector(2000, 0, 0);
+
+           // 将火箭的碰撞状态修改为无碰撞
+           rocket.setCollision(CollisionStatus.Off);
+
+           // 创建投掷物。
+           let projectile = new ProjectileMovement(rocket);
+
+           // 设置初始发射速度为1。
+           projectile.initialSpeed = 1;
+           // 设置最大速度为1000。
+           projectile.maxSpeed = 1000;
+           // 设置发射加速度为200
+           projectile.acceleration = 200;
+           // 设置重力缩放为0。
+           projectile.gravityScale = 0;
+           // 设置投掷物旋转不跟随速度方向。
+           projectile.isRotationFollowsVelocity = false;
+           // 设置投掷物运动时间10秒。
+           projectile.lifeSpan = 10;
+
+           // 添加客户端发送的”LAUNCH“事件监听器，将火箭朝上方发射。
+           Event.addClientListener("LAUNCH", async (player: Player) => {
+               projectile.launch(new Vector(0, 0, 1));
+               // 广播客户端给火箭挂载尾焰特效
+               Event.dispatchToAllClient("TAIL", rocket.gameObjectId);
+               // 每0.1秒都会给客户端广播火箭当前速度
+               let scaleInterval = TimeUtil.setInterval(() => {
+                   if(projectile.getVelocity().length > 999) {
+                       projectile.setVelocity(Vector.zero);
+                       TimeUtil.clearInterval(scaleInterval);
+                       rocket.worldTransform.position = new Vector(2000, 0, 0);
+                   }
+                   Event.dispatchToAllClient("SCALING", rocket.gameObjectId, projectile.getVelocity());
+               }, 0.1);
+           });
+       }
+
+       // 下列逻辑在客户端执行
+       if(SystemUtil.isClient()) {
+           // 添加一个按键方法：按下按键”1“，向服务端派送一个”LAUNCH“事件，发射火箭
+           InputUtil.onKeyDown(Keys.One, () => {
+               Event.dispatchToServer("LAUNCH");
+           });
+
+           // 添加服务端发送的”TAIL“事件监听器，给火箭挂载尾焰。
+           Event.addServerListener("TAIL", async (rocketId: string) => {
+               let rocket = await GameObject.asyncFindGameObjectById(rocketId);
+               if(typeof(rocket.getChildByName("tail")) != "undefined") {
+                   return;
+               }
+               let tail = await GameObject.asyncSpawn("144098") as Effect;
+               tail.name = "tail";
+               tail.parent = rocket;
+               tail.localTransform.position = Vector.zero;
+           });
+
+           // 添加服务端发送的”SCALING“事件监听器，根据速度对尾焰进行缩放
+           Event.addServerListener("SCALING", async (rocketId: string, velocity: Vector) => {
+               let rocket = await GameObject.asyncFindGameObjectById(rocketId);
+               let tail = rocket.getChildByName("tail");
+               if(tail) {
+                   tail.worldTransform.scale = Vector.one.multiply(velocity.length / 250);
+               }
+           });
+       }
+   }
+}
+```

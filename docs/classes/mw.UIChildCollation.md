@@ -2,7 +2,11 @@
 
 # UIChildCollation <Badge type="tip" text="Class" /> <Score text="UIChildCollation" />
 
-<p class="content-big"> 容器自动布局子项排序规则 </p>
+<p class="content-big">
+
+容器自动布局子项排序规则
+
+</p>
 
 ## Table of contents
 

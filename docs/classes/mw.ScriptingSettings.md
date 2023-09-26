@@ -2,9 +2,17 @@
 
 # ScriptingSettings <Badge type="tip" text="Class" /> <Score text="ScriptingSettings" />
 
-<p class="content-big"> 全局的脚本配置信息 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在Log中看到对应方法调用信息。代码如下： </p>
+全局的脚本配置信息
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在Log中看到对应方法调用信息。代码如下：
+
+</p>
 
 ```ts
 @Component
@@ -47,7 +55,11 @@ export default class ClassExample extends Script {
 
 
 
-<p style="font-size: 14px;"> 使用示例:调用方法 </p>
+<p style="font-size: 14px;">
+
+使用示例:调用方法
+
+</p>
 
 ```ts
 ScriptingSettings.setGlobalAsyncTimeout(1000 * 10);

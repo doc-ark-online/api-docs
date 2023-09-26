@@ -2,7 +2,11 @@
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
-<p class="content-big"> 滑动框 </p>
+<p class="content-big">
+
+滑动框
+
+</p>
 
 ## Hierarchy
 

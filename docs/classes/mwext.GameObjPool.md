@@ -2,9 +2,17 @@
 
 # GameObjPool <Badge type="tip" text="Class" /> <Score text="GameObjPool" />
 
-<p class="content-big"> 用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+用于缓存GameObject的对象池，适用资源库资源、场景对象、预制体的复用缓存
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+
+</p>
 
 ```ts
 @Component
@@ -85,7 +93,11 @@ ___
 :::
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+
+</p>
 
 ```ts
 @Component
@@ -130,7 +142,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块，每个方块的位置不同，5秒后全部被销毁
+
+</p>
 
 ```ts
 @Component
@@ -175,7 +191,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会生成10个方块以及10个球体，每个方块和球体的位置不同，5秒后有一半被销毁
+
+</p>
 
 ```ts
 @Component
@@ -242,7 +262,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块，并在5秒后消失
+
+</p>
 
 ```ts
 @Component
@@ -286,7 +310,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为GameObjPoolExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在原点生成一个方块
+
+</p>
 
 ```ts
 @Component

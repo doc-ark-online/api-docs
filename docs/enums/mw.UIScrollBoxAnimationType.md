@@ -2,7 +2,11 @@
 
 # UIScrollBoxAnimationType <Badge type="tip" text="Enumeration" /> <Score text="UIScrollBoxAnimationType" />
 
-<p class="content-big"> 滚动框动画类型 </p>
+<p class="content-big">
+
+滚动框动画类型
+
+</p>
 
 ## Table of contents
 

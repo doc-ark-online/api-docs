@@ -374,11 +374,11 @@ mw
 | [PanelWidget](../classes/mw.PanelWidget.md)  |
 | UI的PanelWidget可以挂载子节点|
 | [Pawn](../classes/mw.Pawn.md)  |
-| Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象|
+| Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。|
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md)  |
 | 推进器|
 | [Player](../classes/mw.Player.md)  |
-| Player服务包含当前连接到MW服务器的Player对象。它可以获取玩家的ID，玩家信息等。|
+| 角色管理器|
 | [PlayerState](../classes/mw.PlayerState.md)  |
 | PlayerState基类|
 | [PointerEvent](../classes/mw.PointerEvent.md)  |
@@ -392,7 +392,7 @@ mw
 | [ProjectileInst](../classes/mw.ProjectileInst.md)  |
 | 投掷物发射器专用实例对象|
 | [ProjectileMovement](../classes/mw.ProjectileMovement.md)  |
-| 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步|
+| 投掷物移动功能类|
 | [PurchaseService](../classes/mw.PurchaseService.md)  |
 | 应用内购服务|
 | [Quaternion](../classes/mw.Quaternion.md)  |
@@ -450,7 +450,7 @@ mw
 | [TouchPad](../classes/mw.TouchPad.md)  |
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |
-| Transform 由缩放、旋转和平移组成|
+| 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。|
 | [Trigger](../classes/mw.Trigger.md)  |
 | 触发器|
 | [Tween](../classes/mw.Tween.md)  |
@@ -779,15 +779,15 @@ mw
 | 将屏幕位置(以像素为单位)转换为具有给定几何形状的小部件的本地空间。如果bIncludeWindowPosition为真，那么这个方法也将移除游戏窗口的位置(在窗口模式下有用)。|
 | **[sendShareId](Core.mw.md#sendshareid)**(`absPath`: `string`, `shareId`: `string`, `bShowUuid`: `boolean`): `void`  |
 | 将角色数据ID连同角色截图一同发给MGS|
-| **[setButtonDisableImageByURL](Core.mw.md#setbuttondisableimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void`  |
+| **[setButtonDisableImageByURL](Core.mw.md#setbuttondisableimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `Promise`<`boolean`\>  |
 | 通过URL设置按钮控件不可以图片|
-| **[setButtonNormalImageByURL](Core.mw.md#setbuttonnormalimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void`  |
+| **[setButtonNormalImageByURL](Core.mw.md#setbuttonnormalimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `Promise`<`boolean`\>  |
 | 通过URL设置按钮控件普通图片|
-| **[setButtonPressedImageByURL](Core.mw.md#setbuttonpressedimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `void`  |
+| **[setButtonPressedImageByURL](Core.mw.md#setbuttonpressedimagebyurl)**(`button`: [`Button`](../classes/mw.Button.md), `url`: `string`): `Promise`<`boolean`\>  |
 | 通过URL设置按钮控件按下图片|
 | **[setFocusToGameViewport](Core.mw.md#setfocustogameviewport)**(): `void`  |
 | 设置关注游戏窗口|
-| **[setImageImageByURL](Core.mw.md#setimageimagebyurl)**(`image`: [`Image`](../classes/mw.Image.md), `url`: `string`): `void`  |
+| **[setImageImageByURL](Core.mw.md#setimageimagebyurl)**(`image`: [`Image`](../classes/mw.Image.md), `url`: `string`): `Promise`<`boolean`\>  |
 | 通过URL设置图片控件图片|
 | **[setInputModeGameAndUI](Core.mw.md#setinputmodegameandui)**(`InWidgetToFocus?`: [`Widget`](../classes/mw.Widget.md), `InMouseLockMode?`: [`MouseLockMode`](../enums/mw.MouseLockMode.md), `hideCursorDuringCapture?`: `boolean`): `void`  |
 | 设置一个输入模式，只允许UI响应用户输入，如果UI不处理它，玩家输入/玩家控制器就有机会|
@@ -2316,7 +2316,11 @@ ___
 通用Http请求
 
 
-<p style="font-size: 14px;"> 使用示例:发送Http请求 </p>
+<p style="font-size: 14px;">
+
+使用示例:发送Http请求
+
+</p>
 
 ```ts
 generalHttpRequest(Response,Url,Param,JsonContent)
@@ -2554,7 +2558,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:调用方法 新建一个脚本 NewScript </p>
+<p style="font-size: 14px;">
+
+使用示例:调用方法 新建一个脚本 NewScript
+
+</p>
 
 ```ts
 @Core.Class
@@ -3155,7 +3163,7 @@ ___
 
 ### setButtonDisableImageByURL <Score text="setButtonDisableImageByURL" /> 
 
-• **setButtonDisableImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
+• **setButtonDisableImageByURL**(`button`, `url`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 通过URL设置按钮控件不可以图片
 
@@ -3167,12 +3175,16 @@ ___
 | :------ | :------ |
 | `url` `string` | 图片链接 |
 
+#### Returns
+
+| `Promise`<`boolean`\> | 是否设置成功 |
+| :------ | :------ |
 
 ___
 
 ### setButtonNormalImageByURL <Score text="setButtonNormalImageByURL" /> 
 
-• **setButtonNormalImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
+• **setButtonNormalImageByURL**(`button`, `url`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 通过URL设置按钮控件普通图片
 
@@ -3184,12 +3196,16 @@ ___
 | :------ | :------ |
 | `url` `string` | 图片链接 |
 
+#### Returns
+
+| `Promise`<`boolean`\> | 是否设置成功 |
+| :------ | :------ |
 
 ___
 
 ### setButtonPressedImageByURL <Score text="setButtonPressedImageByURL" /> 
 
-• **setButtonPressedImageByURL**(`button`, `url`): `void` <Badge type="tip" text="other" />
+• **setButtonPressedImageByURL**(`button`, `url`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 通过URL设置按钮控件按下图片
 
@@ -3201,6 +3217,10 @@ ___
 | :------ | :------ |
 | `url` `string` | 图片链接 |
 
+#### Returns
+
+| `Promise`<`boolean`\> | 是否设置成功 |
+| :------ | :------ |
 
 ___
 
@@ -3216,7 +3236,7 @@ ___
 
 ### setImageImageByURL <Score text="setImageImageByURL" /> 
 
-• **setImageImageByURL**(`image`, `url`): `void` <Badge type="tip" text="other" />
+• **setImageImageByURL**(`image`, `url`): `Promise`<`boolean`\> <Badge type="tip" text="other" />
 
 通过URL设置图片控件图片
 
@@ -3228,6 +3248,10 @@ ___
 | :------ | :------ |
 | `url` `string` | 图片链接 |
 
+#### Returns
+
+| `Promise`<`boolean`\> | 是否设置成功 |
+| :------ | :------ |
 
 ___
 
@@ -3413,7 +3437,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:调用方法 新建一个脚本 NewScript </p>
+<p style="font-size: 14px;">
+
+使用示例:调用方法 新建一个脚本 NewScript
+
+</p>
 
 ```ts
 @Core.Class

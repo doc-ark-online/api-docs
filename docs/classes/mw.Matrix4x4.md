@@ -2,7 +2,11 @@
 
 # Matrix4x4 <Badge type="tip" text="Class" /> <Score text="Matrix4x4" />
 
-<p class="content-big"> 四维矩阵 </p>
+<p class="content-big">
+
+四维矩阵
+
+</p>
 
 ::: warning Precautions
 

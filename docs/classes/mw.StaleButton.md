@@ -2,7 +2,11 @@
 
 # StaleButton <Badge type="tip" text="Class" /> <Score text="StaleButton" />
 
-<p class="content-big"> 按钮 </p>
+<p class="content-big">
+
+按钮
+
+</p>
 
 ## Hierarchy
 

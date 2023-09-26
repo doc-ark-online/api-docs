@@ -2,7 +2,11 @@
 
 # AssetIconData <Badge type="tip" text="Class" /> <Score text="AssetIconData" />
 
-<p class="content-big"> 资源ICON信息 </p>
+<p class="content-big">
+
+资源ICON信息
+
+</p>
 
 ## Table of contents
 

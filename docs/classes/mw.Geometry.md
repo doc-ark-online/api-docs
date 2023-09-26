@@ -2,7 +2,11 @@
 
 # Geometry <Badge type="tip" text="Class" /> <Score text="Geometry" />
 
-<p class="content-big"> 几何坐标信息 </p>
+<p class="content-big">
+
+几何坐标信息
+
+</p>
 
 ## Table of contents
 

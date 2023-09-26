@@ -2,7 +2,11 @@
 
 # Keys <Badge type="tip" text="Enumeration" /> <Score text="Keys" />
 
-<p class="content-big"> 按键Key值 </p>
+<p class="content-big">
+
+按键Key值
+
+</p>
 
 ## Table of contents
 

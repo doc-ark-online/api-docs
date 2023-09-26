@@ -2,7 +2,11 @@
 
 # TriggerShapeType <Badge type="tip" text="Enumeration" /> <Score text="TriggerShapeType" />
 
-<p class="content-big"> 碰撞形状 </p>
+<p class="content-big">
+
+碰撞形状
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,11 @@
 
 # CameraControlType <Badge type="tip" text="Enumeration" /> <Score text="CameraControlType" />
 
-<p class="content-big"> 相机控制模式 </p>
+<p class="content-big">
+
+相机控制模式
+
+</p>
 
 ## Table of contents
 

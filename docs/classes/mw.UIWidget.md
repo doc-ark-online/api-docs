@@ -2,7 +2,11 @@
 
 # UIWidget <Badge type="tip" text="Class" /> <Score text="UIWidget" />
 
-<p class="content-big"> 世界UI组件 </p>
+<p class="content-big">
+
+世界UI组件
+
+</p>
 
 ## Hierarchy
 

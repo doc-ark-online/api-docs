@@ -2,7 +2,11 @@
 
 # MaskButton <Badge type="tip" text="Class" /> <Score text="MaskButton" />
 
-<p class="content-big"> 遮罩 </p>
+<p class="content-big">
+
+遮罩
+
+</p>
 
 ## Hierarchy
 

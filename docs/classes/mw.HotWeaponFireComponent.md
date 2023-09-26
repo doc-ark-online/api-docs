@@ -2,9 +2,17 @@
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
-<p class="content-big"> 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下: </p>
+热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例: 创建一个名为"HotWeaponFireSample1"的脚本,放置在对象管理器热武器的子节点中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器并设置开火参数，添加委托的效果,代码如下:
+
+</p>
 
 ```ts
  @Component

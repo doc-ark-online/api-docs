@@ -2,7 +2,11 @@
 
 # DispatchEventResult <Badge type="tip" text="Enumeration" /> <Score text="DispatchEventResult" />
 
-<p class="content-big"> 事件发送的结果 </p>
+<p class="content-big">
+
+事件发送的结果
+
+</p>
 
 ## Table of contents
 

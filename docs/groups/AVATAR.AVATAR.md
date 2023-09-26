@@ -8,7 +8,7 @@ AVATAR
 | [Character](../classes/mw.Character.md) <br> 角色 |
 | [CharacterDecoration](../classes/mw.CharacterDecoration.md) <br> 角色挂件插槽 |
 | [CharacterDescription](../classes/mw.CharacterDescription.md) <br> 人形外观配置 |
-| [Pawn](../classes/mw.Pawn.md) <br> Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象 |
+| [Pawn](../classes/mw.Pawn.md) <br> Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 |
 
 
 | Enums |

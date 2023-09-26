@@ -2,9 +2,17 @@
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
-<p class="content-big"> 交互物 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"InteractorSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,在本地资源库中搜索4175动画资源,拖入对象管理器中的优先加载目录。运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下: </p>
+交互物
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"InteractorSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,在本地资源库中搜索4175动画资源,拖入对象管理器中的优先加载目录。运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+
+</p>
 
 ```ts
  @Component
@@ -343,7 +351,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"InteractorStartEndSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下: </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"InteractorStartEndSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+
+</p>
 
 ```ts
 @Component
@@ -385,7 +397,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"InteractorGetInteractCharacterSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下: </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"InteractorGetInteractCharacterSample"的脚本,放置在对象管理器某一交互物的子级中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个交互物的效果,玩家可以和此交互物进行交互,代码如下:
+
+</p>
 
 ```ts
 @Component

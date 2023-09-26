@@ -2,9 +2,17 @@
 
 # AnimSlot <Badge type="tip" text="Enumeration" /> <Score text="AnimSlot" />
 
-<p class="content-big"> 动画插槽 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例: </p>
+动画插槽
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:
+
+</p>
 
 ```ts
 ```

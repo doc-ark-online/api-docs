@@ -2,7 +2,11 @@
 
 # CameraShakeInfo <Badge type="tip" text="Interface" /> <Score text="CameraShakeInfo" />
 
-<p class="content-big"> 抖动数据 </p>
+<p class="content-big">
+
+抖动数据
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,11 @@
 
 # CameraProjectionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraProjectionMode" />
 
-<p class="content-big"> 摄像机镜头模式 </p>
+<p class="content-big">
+
+摄像机镜头模式
+
+</p>
 
 ## Table of contents
 

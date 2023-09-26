@@ -2,7 +2,11 @@
 
 # EventListener <Badge type="tip" text="Class" /> <Score text="EventListener" />
 
-<p class="content-big"> 事件监听器 </p>
+<p class="content-big">
+
+事件监听器
+
+</p>
 
 ## Table of contents
 

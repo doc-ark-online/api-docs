@@ -2,7 +2,11 @@
 
 # Transform <Badge type="tip" text="Class" /> <Score text="Transform" />
 
-<p class="content-big"> Transform 由缩放、旋转和平移组成 </p>
+<p class="content-big">
+
+三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。
+
+</p>
 
 ::: warning Precautions
 
@@ -20,7 +24,7 @@
 ### Accessors <Score text="Accessors" /> 
 | **[position](mw.Transform.md#position)**(): [`Vector`](mw.Vector.md)  |
 | :-----|
-| 坐标信息|
+| transform中的位置属性表示游戏对象在游戏世界中的坐标位置。它可以是三维空间中的一个点，用于确定对象在游戏世界中的位置。|
 | **[rotation](mw.Transform.md#rotation)**(): [`Rotation`](mw.Rotation.md)  |
 | 旋转信息|
 | **[scale](mw.Transform.md#scale)**(): [`Vector`](mw.Vector.md)  |
@@ -112,7 +116,7 @@
 <td style="text-align: left">
 
 
-坐标信息
+transform中的位置属性表示游戏对象在游戏世界中的坐标位置。它可以是三维空间中的一个点，用于确定对象在游戏世界中的位置。
 
 #### Parameters
 
@@ -146,7 +150,7 @@ ___
 <td style="text-align: left">
 
 
-旋转信息
+transform中的旋转属性表示游戏对象的朝向或方向。
 
 #### Returns
 
@@ -192,7 +196,7 @@ ___
 <td style="text-align: left">
 
 
-缩放信息
+transform中的缩放属性表示游戏对象的大小比例。它可以是三个方向上的缩放因子，用于调整对象的大小。
 
 #### Returns
 

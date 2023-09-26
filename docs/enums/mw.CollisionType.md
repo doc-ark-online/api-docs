@@ -2,7 +2,11 @@
 
 # CollisionType <Badge type="tip" text="Enumeration" /> <Score text="CollisionType" />
 
-<p class="content-big"> 碰撞类型 </p>
+<p class="content-big">
+
+碰撞类型
+
+</p>
 
 ## Table of contents
 

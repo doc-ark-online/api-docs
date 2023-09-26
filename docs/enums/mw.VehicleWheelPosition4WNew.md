@@ -2,7 +2,11 @@
 
 # VehicleWheelPosition4WNew <Badge type="tip" text="Enumeration" /> <Score text="VehicleWheelPosition4WNew" />
 
-<p class="content-big"> 四轮载具车轮位置 </p>
+<p class="content-big">
+
+四轮载具车轮位置
+
+</p>
 
 ## Table of contents
 

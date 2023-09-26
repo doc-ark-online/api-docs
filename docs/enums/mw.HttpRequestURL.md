@@ -2,7 +2,11 @@
 
 # HttpRequestURL <Badge type="tip" text="Enumeration" /> <Score text="HttpRequestURL" />
 
-<p class="content-big"> 开发给用户用的URL枚举，需要与C++层的枚举对应 </p>
+<p class="content-big">
+
+开发给用户用的URL枚举，需要与C++层的枚举对应
+
+</p>
 
 ## Table of contents
 

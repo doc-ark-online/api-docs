@@ -2,9 +2,17 @@
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
-<p class="content-big"> 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下: </p>
+热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
+
+</p>
 
 ```ts
 @Component

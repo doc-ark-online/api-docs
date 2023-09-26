@@ -2,9 +2,17 @@
 
 # HitResult <Badge type="tip" text="Class" /> <Score text="HitResult" />
 
-<p class="content-big"> 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"HitResultExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,并在场景中创建一个模型放置在200, 10, 0的位置，运行游戏,你将在日志中看到射线检测到的HitResult信息数组.代码如下: </p>
+命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"HitResultExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,并在场景中创建一个模型放置在200, 10, 0的位置，运行游戏,你将在日志中看到射线检测到的HitResult信息数组.代码如下:
+
+</p>
 
 ```ts
 const result = QueryUtil.lineTrace(new Vector(100), new Vector(1000), true, true);

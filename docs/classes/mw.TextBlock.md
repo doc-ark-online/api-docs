@@ -2,7 +2,11 @@
 
 # TextBlock <Badge type="tip" text="Class" /> <Score text="TextBlock" />
 
-<p class="content-big"> UI文本 </p>
+<p class="content-big">
+
+UI文本
+
+</p>
 
 ## Hierarchy
 

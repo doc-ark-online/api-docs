@@ -20,7 +20,7 @@ TYPE
 | [MulticastGameObjectDelegate](../classes/mw.MulticastGameObjectDelegate.md) <br> 广播代理 |
 | [Quaternion](../classes/mw.Quaternion.md) <br> 四元数 |
 | [Rotation](../classes/mw.Rotation.md) <br> 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。 |
-| [Transform](../classes/mw.Transform.md) <br> Transform 由缩放、旋转和平移组成 |
+| [Transform](../classes/mw.Transform.md) <br> 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。 |
 | [Vector](../classes/mw.Vector.md) <br> 由分量 (x,y,z) 组成的三维空间中的向量 |
 | [Vector2](../classes/mw.Vector2.md) <br> 由分量 (x,y) 组成的二维空间中的向量 |
 | [Vector4](../classes/mw.Vector4.md) <br> 由分量 (x,y,z,w) 组成的4D齐次向量 |

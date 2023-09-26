@@ -2,7 +2,11 @@
 
 # EventReply <Badge type="tip" text="Class" /> <Score text="EventReply" />
 
-<p class="content-big"> 事件回复 </p>
+<p class="content-big">
+
+事件回复
+
+</p>
 
 ## Table of contents
 

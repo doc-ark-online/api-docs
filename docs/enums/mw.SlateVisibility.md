@@ -2,7 +2,11 @@
 
 # SlateVisibility <Badge type="tip" text="Enumeration" /> <Score text="SlateVisibility" />
 
-<p class="content-big"> UI节点显示规则 </p>
+<p class="content-big">
+
+UI节点显示规则
+
+</p>
 
 ## Table of contents
 

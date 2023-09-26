@@ -2,7 +2,11 @@
 
 # GameObjectInfo <Badge type="tip" text="Interface" /> <Score text="GameObjectInfo" />
 
-<p class="content-big"> 构建物体的信息 </p>
+<p class="content-big">
+
+构建物体的信息
+
+</p>
 
 ## Table of contents
 

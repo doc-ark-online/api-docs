@@ -2,7 +2,11 @@
 
 # VehicleDriveMode4W <Badge type="tip" text="Enumeration" /> <Score text="VehicleDriveMode4W" />
 
-<p class="content-big"> 四轮载具驱动模式 </p>
+<p class="content-big">
+
+四轮载具驱动模式
+
+</p>
 
 ## Table of contents
 

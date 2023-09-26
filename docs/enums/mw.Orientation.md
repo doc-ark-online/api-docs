@@ -2,7 +2,11 @@
 
 # Orientation <Badge type="tip" text="Enumeration" /> <Score text="Orientation" />
 
-<p class="content-big"> 滚动框类型 </p>
+<p class="content-big">
+
+滚动框类型
+
+</p>
 
 ## Table of contents
 

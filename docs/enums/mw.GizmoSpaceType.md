@@ -2,7 +2,11 @@
 
 # GizmoSpaceType <Badge type="tip" text="Enumeration" /> <Score text="GizmoSpaceType" />
 
-<p class="content-big"> gizmo空间 </p>
+<p class="content-big">
+
+gizmo空间
+
+</p>
 
 ## Table of contents
 

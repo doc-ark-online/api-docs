@@ -2,7 +2,11 @@
 
 # CharacterEvent <Badge type="tip" text="Class" /> <Score text="CharacterEvent" />
 
-<p class="content-big"> 角色输入事件 </p>
+<p class="content-big">
+
+角色输入事件
+
+</p>
 
 ## Table of contents
 

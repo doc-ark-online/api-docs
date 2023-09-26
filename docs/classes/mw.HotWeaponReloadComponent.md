@@ -2,9 +2,17 @@
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
-<p class="content-big"> 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用了换弹组件，设置参数，添加委托的效果,代码如下: </p>
+热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例: 创建一个名为"HotWeaponReloadSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用了换弹组件，设置参数，添加委托的效果,代码如下:
+
+</p>
 
 ```ts
 @Component

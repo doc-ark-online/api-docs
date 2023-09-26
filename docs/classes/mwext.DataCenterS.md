@@ -2,9 +2,17 @@
 
 # DataCenterS <Badge type="tip" text="Class" /> <Score text="DataCenterS" />
 
-<p class="content-big"> 服务端数据中心，管理所有玩家的数据 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键） </p>
+服务端数据中心，管理所有玩家的数据
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时会输出当前玩家的等级以及当前所有玩家的等级，玩家离开时当前玩家会升级并且输出（pie上玩家离开需要通过点x键）
+
+</p>
 
 ```ts
 @Component
@@ -111,7 +119,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，玩家加入时你将在在服务端日志中看到玩家等级为0的信息
+
+</p>
 
 ```ts
 @Component
@@ -156,7 +168,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为DataCenterSExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F健你将在在服务端日志中看到所有数据就绪的玩家的playerid以及等级
+
+</p>
 
 ```ts
 @Component

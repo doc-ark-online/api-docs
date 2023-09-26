@@ -2,7 +2,11 @@
 
 # MoveFacingDirection <Badge type="tip" text="Enumeration" /> <Score text="MoveFacingDirection" />
 
-<p class="content-big"> 运动时面朝方向 </p>
+<p class="content-big">
+
+运动时面朝方向
+
+</p>
 
 ## Table of contents
 

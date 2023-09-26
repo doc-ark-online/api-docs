@@ -2,7 +2,11 @@
 
 # AttenuationShape <Badge type="tip" text="Enumeration" /> <Score text="AttenuationShape" />
 
-<p class="content-big"> 音效衰减形状 </p>
+<p class="content-big">
+
+音效衰减形状
+
+</p>
 
 ## Table of contents
 

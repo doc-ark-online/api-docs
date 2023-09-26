@@ -2,7 +2,11 @@
 
 # ProgressBarFillType <Badge type="tip" text="Enumeration" /> <Score text="ProgressBarFillType" />
 
-<p class="content-big"> 进度条填充规则 </p>
+<p class="content-big">
+
+进度条填充规则
+
+</p>
 
 ## Table of contents
 

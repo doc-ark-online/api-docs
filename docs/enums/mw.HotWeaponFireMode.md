@@ -2,7 +2,11 @@
 
 # HotWeaponFireMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponFireMode" />
 
-<p class="content-big"> 热武器开火模式 </p>
+<p class="content-big">
+
+热武器开火模式
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,11 @@
 
 # UILayout <Badge type="tip" text="Class" /> <Score text="UILayout" />
 
-<p class="content-big"> 容器自动布局规则 </p>
+<p class="content-big">
+
+容器自动布局规则
+
+</p>
 
 ## Table of contents
 

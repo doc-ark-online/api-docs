@@ -2,7 +2,11 @@
 
 # TweenSequence <Badge type="tip" text="Class" /> <Score text="TweenSequence" />
 
-<p class="content-big"> 序列工具类，主要用于获取连续的ID </p>
+<p class="content-big">
+
+序列工具类，主要用于获取连续的ID
+
+</p>
 
 ## Table of contents
 

@@ -169,15 +169,15 @@ Classes
 | Name | Description | Groups |
 | :-----| :-----| :-----|
 | [PanelWidget](classes/mw.PanelWidget.md) | UI的PanelWidget可以挂载子节点 | [UI](groups/UI.UI.md) |
-| [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象 | [AVATAR](groups/AVATAR.AVATAR.md) |
+| [Pawn](classes/mw.Pawn.md) | Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。 | [AVATAR](groups/AVATAR.AVATAR.md) |
 | [PhysicsThruster](classes/mw.PhysicsThruster.md) | 推进器 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
-| [Player](classes/mw.Player.md) | Player服务包含当前连接到MW服务器的Player对象。它可以获取玩家的ID，玩家信息等。 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Player](classes/mw.Player.md) | 角色管理器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PointerEvent](classes/mw.PointerEvent.md) | 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类 | [UI](groups/UI.UI.md) |
 | [PostProcess](classes/mw.PostProcess.md) | 后处理 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [PostProcessConfig](classes/mw.PostProcessConfig.md) | 后处理对象属性配置 | [LIGHTING](groups/LIGHTING.LIGHTING.md) |
 | [ProgressBar](classes/mw.ProgressBar.md) | UI进度条 | [UI](groups/UI.UI.md) |
 | [ProjectileInst](classes/mw.ProjectileInst.md) | 投掷物发射器专用实例对象 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [ProjectileMovement](classes/mw.ProjectileMovement.md) | 投掷物功能类，绑定的逻辑对象请自行关闭物理模拟，运动过程中会忽略相机、禁行区、功能类不考虑移动同步 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [ProjectileMovement](classes/mw.ProjectileMovement.md) | 投掷物移动功能类 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [PurchaseService](classes/mw.PurchaseService.md) | 应用内购服务 | [MONETIZATION](groups/MONETIZATION.MONETIZATION.md) |
 
 
@@ -227,7 +227,7 @@ Classes
 | [TextBlock](classes/mw.TextBlock.md) | UI文本 | [UI](groups/UI.UI.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [UI](groups/UI.UI.md) |
-| [Transform](classes/mw.Transform.md) | Transform 由缩放、旋转和平移组成 | [TYPE](groups/TYPE.TYPE.md) |
+| [Transform](classes/mw.Transform.md) | 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。 | [TYPE](groups/TYPE.TYPE.md) |
 | [Trigger](classes/mw.Trigger.md) | 触发器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [Tween](classes/mw.Tween.md) | 补间(动画)（来自 in-between）是一个概念，允许你以平滑的方式更改对象的属性。 | [UTILITY](groups/UTILITY.UTILITY.md) |
 | [TweenGroup](classes/mw.TweenGroup.md) | 补间组，用于同时控制多个补间对象 | [UTILITY](groups/UTILITY.UTILITY.md) |

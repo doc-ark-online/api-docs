@@ -2,7 +2,11 @@
 
 # Gizmo <Badge type="tip" text="Class" /> <Score text="Gizmo" />
 
-<p class="content-big"> Gizmo </p>
+<p class="content-big">
+
+Gizmo
+
+</p>
 
 **`Instance`**
 

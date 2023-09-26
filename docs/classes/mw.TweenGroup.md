@@ -2,7 +2,11 @@
 
 # TweenGroup <Badge type="tip" text="Class" /> <Score text="TweenGroup" />
 
-<p class="content-big"> 补间组，用于同时控制多个补间对象 </p>
+<p class="content-big">
+
+补间组，用于同时控制多个补间对象
+
+</p>
 
 ## Table of contents
 
@@ -103,7 +107,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 一般来说，调用时使用默认参数即可使之正常运行。 </p>
+<p style="font-size: 14px;">
+
+使用示例: 一般来说，调用时使用默认参数即可使之正常运行。
+
+</p>
 
 ```ts
 // 更新自定义补间组

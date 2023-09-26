@@ -2,7 +2,11 @@
 
 # ButtonPressMethod <Badge type="tip" text="Enumeration" /> <Score text="ButtonPressMethod" />
 
-<p class="content-big"> 按钮按压响应规则 </p>
+<p class="content-big">
+
+按钮按压响应规则
+
+</p>
 
 ## Table of contents
 

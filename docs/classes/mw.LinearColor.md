@@ -2,7 +2,7 @@
 
 # LinearColor <Badge type="tip" text="Class" /> <Score text="LinearColor" />
 
-<p class="content-big"> 
+<p class="content-big">
 
 线性RGBA颜色，r, g, b颜色值的有效范围是 0.0 <= value <= 1.0
 

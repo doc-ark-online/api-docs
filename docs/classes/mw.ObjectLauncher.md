@@ -2,35 +2,113 @@
 
 # ObjectLauncher <Badge type="tip" text="Class" /> <Score text="ObjectLauncher" />
 
-<p class="content-big"> 投掷物发射器 </p>
+<p class="content-big">
 
-<p class="content-big"> ------------------------- </p>
+投掷物发射器
 
-<p class="content-big"> ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 ProjectileInst 。投掷物实例上挂载着实际发射的物体。 </p>
+</p>
 
-<p class="content-big"> 当 spawnProjectileInstanceLaunch 启动发射时，传入对象ID（注意是场景里的对象 id，不是资源 id），投掷物实例拖着传入的模型进行运动，发射器作为发射终端，维护投掷物发射相关的参数。 </p>
+<p class="content-big">
 
-<p class="content-big"> 发射器接口调用端可以是服务器，也可以是客户端；发射投掷物的方式有3种：1.双端投掷物 2.发射全客户端投掷物 3.发射单客户端投掷物 </p>
+-------------------------
 
-<p class="content-big"> 在客户端还是服务端加载 ObjectLauncher 对象呢？ </p>
+</p>
 
-<p class="content-big"> 1. 服务端 </p>
+<p class="content-big">
 
-<p class="content-big"> ·  在服务端动态生成投掷物发射器，获得一个各端同步的投掷物发射器对象。修改投掷物发射器属性会同步至所有客户端。 </p>
+投掷物发射器是一种游戏中常见的机制，用于模拟投掷物体的发射和飞行。它可以让玩家或游戏角色通过选择合适的方向和力量，将物体发射到目标位置。
 
-<p class="content-big"> ·  在服务器添加投掷物发射器委托后，委托只会在服务器执行，同时执行前提是发射器要存在于服务器。 </p>
+</p>
 
-<p class="content-big"> ·  在服务器调用发射接口时，按服务器当前发射器属性生成双端投掷物发射，发射对象如果在服务端找不到（有可能是单客户端投掷物），直接返回，能找到（发射对象是双端对象），在投掷物上挂载发射物体。双端投掷物的碰撞和轨迹就是服务器计算，即以服务器的计算结果为准。 </p>
+<p class="content-big">
 
-<p class="content-big"> 2. 客户端 </p>
+想象一下，你站在一个阳台上，手里拿着一个小球，并希望将它投向一个目标。投掷物发射器就像是你的手臂和手，它帮助你控制球的发射。你可以调整你的手臂的方向和力量，以便球以特定的方式飞行。
 
-<p class="content-big"> ·  在客户端动态生成投掷物发射器，只能获得一个本地的投掷物发射器对象，仅支持本地发射。 </p>
+</p>
 
-<p class="content-big"> ·  在本地添加回调后，回调只会在本地执行，同时执行前提是发射器要存在于本地。 </p>
+<p class="content-big">
 
-<p class="content-big"> ·  在本地调用广播发射：按本地当前发射器属性生成单端投掷物，同时通知服务器广播其他客户端按本地当前发射器属性生成单端投掷物。发射对象如果在服务端找不到，直接返回，能找到（发射对象是双端对象），挂上投掷物。 </p>
+一旦玩家决定好发射的方向和力量，投掷物发射器就会将投掷物体发射出去。投掷物体会根据发射器设置的速度和发射角度开始飞行。它会在空中经过弧线路径，并受到重力和其他物理效应的影响。
 
-<p class="content-big"> 另外有控制发射器发射初始速度、重力、投掷物半径等参数。 </p>
+</p>
+
+<p class="content-big">
+
+ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 ProjectileInst 。投掷物实例上挂载着实际发射的物体。
+
+</p>
+
+<p class="content-big">
+
+当 spawnProjectileInstanceLaunch 启动发射时，传入对象ID（注意是场景里的对象 id，不是资源 id），投掷物实例拖着传入的模型进行运动，发射器作为发射终端，维护投掷物发射相关的参数。
+
+</p>
+
+<p class="content-big">
+
+发射器接口调用端可以是服务器，也可以是客户端；发射投掷物的方式有3种：1.双端投掷物 2.发射全客户端投掷物 3.发射单客户端投掷物
+
+</p>
+
+<p class="content-big">
+
+在客户端还是服务端加载 ObjectLauncher 对象呢？
+
+</p>
+
+<p class="content-big">
+
+1. 服务端
+
+</p>
+
+<p class="content-big">
+
+-  在服务端动态生成投掷物发射器，获得一个各端同步的投掷物发射器对象。修改投掷物发射器属性会同步至所有客户端。
+
+</p>
+
+<p class="content-big">
+
+-  在服务器添加投掷物发射器委托后，委托只会在服务器执行，同时执行前提是发射器要存在于服务器。
+
+</p>
+
+<p class="content-big">
+
+-  在服务器调用发射接口时，按服务器当前发射器属性生成双端投掷物发射，发射对象如果在服务端找不到（有可能是单客户端投掷物），直接返回，能找到（发射对象是双端对象），在投掷物上挂载发射物体。双端投掷物的碰撞和轨迹就是服务器计算，即以服务器的计算结果为准。
+
+</p>
+
+<p class="content-big">
+
+2. 客户端
+
+</p>
+
+<p class="content-big">
+
+-  在客户端动态生成投掷物发射器，只能获得一个本地的投掷物发射器对象，仅支持本地发射。
+
+</p>
+
+<p class="content-big">
+
+-  在本地添加回调后，回调只会在本地执行，同时执行前提是发射器要存在于本地。
+
+</p>
+
+<p class="content-big">
+
+-  在本地调用广播发射：按本地当前发射器属性生成单端投掷物，同时通知服务器广播其他客户端按本地当前发射器属性生成单端投掷物。发射对象如果在服务端找不到，直接返回，能找到（发射对象是双端对象），挂上投掷物。
+
+</p>
+
+<p class="content-big">
+
+另外有控制发射器发射初始速度、重力、投掷物半径等参数。
+
+</p>
 
 ## Hierarchy
 
@@ -54,7 +132,7 @@
 | **[onProjectileHit](mw.ObjectLauncher.md#onprojectilehit)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md), `hitGameObject`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `void`\>  |
 | :-----|
 | 投掷物击中物体时触发绑定函数|
-| **[onProjectileHomingFailed](mw.ObjectLauncher.md#onprojectilehomingfailed)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md)) => `void`\>  |
+| **[onProjectileHomingFail](mw.ObjectLauncher.md#onprojectilehomingfail)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md)) => `void`\>  |
 | 投掷物追踪目标失败(即为被销毁时)触发绑定函数|
 | **[onProjectileLifeEnd](mw.ObjectLauncher.md#onprojectilelifeend)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md)) => `void`\>  |
 | 投掷物生命周期结束（即速度降为0、LifeSpan 到期）时触发绑定函数|
@@ -73,27 +151,27 @@
 ### Accessors <Score text="Accessors" /> 
 | **[acceleration](mw.ObjectLauncher.md#acceleration)**(): `number`  |
 | :-----|
-| 加速度值，正值加速，负值减速|
+| 投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。|
 | **[capsuleHalfLength](mw.ObjectLauncher.md#capsulehalflength)**(): `number`  |
-| 投掷物检测碰撞的长度|
+| 投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。|
 | **[capsuleRadius](mw.ObjectLauncher.md#capsuleradius)**(): `number`  |
-| 投掷物检测碰撞的半径|
+| 投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。|
 | **[collisionVelocityRetention](mw.ObjectLauncher.md#collisionvelocityretention)**(): `number`  |
-| 投掷物每次执行碰撞后速度衰减的系数，系数为正，每次碰撞后速度减少，系数为负，每次碰撞后速度增加。|
+| 碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。|
 | **[gravityScale](mw.ObjectLauncher.md#gravityscale)**(): `number`  |
-| 重力倍数，正值重力向下，负值重力向上|
+| 投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。|
 | **[initialSpeed](mw.ObjectLauncher.md#initialspeed)**(): `number`  |
-| 投掷物发射的初始速度|
+| 投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。|
 | **[isRotationFollowsVelocity](mw.ObjectLauncher.md#isrotationfollowsvelocity)**(): `boolean`  |
-| 投掷物操作的对象的朝向是否跟随速度方向|
+| 投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。|
 | **[isShouldBounce](mw.ObjectLauncher.md#isshouldbounce)**(): `boolean`  |
-| 投掷物碰撞后是否反弹，false为穿透|
+| 决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。|
 | **[isShouldReplicateDelegates](mw.ObjectLauncher.md#isshouldreplicatedelegates)**(): `boolean`  |
-| 是否应该将事件广播到所有客户端|
+| 投掷物触发对应事件时是否广播（仅双端发射器生效），true：广播。false：仅本地|
 | **[lifeSpan](mw.ObjectLauncher.md#lifespan)**(): `number`  |
-| 投掷物运动持续时间，超出后投掷物不再运动。值小于等于 0 时清空延时|
+| 投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。|
 | **[maxSpeed](mw.ObjectLauncher.md#maxspeed)**(): `number`  |
-| 投掷物发射后的最大速度|
+| 投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。|
 
 
 ::: details 点击查看继承
@@ -121,13 +199,13 @@
 
 
 ### Methods <Score text="Methods" /> 
-| **[predictedTrajectory](mw.ObjectLauncher.md#predictedtrajectory)**(`startLocation`: [`Vector`](mw.Vector.md), `startDirection`: [`Vector`](mw.Vector.md), `density`: `number`, `duration`: `number`): [`Vector`](mw.Vector.md)[]  |
+| **[predictedTrajectory](mw.ObjectLauncher.md#predictedtrajectory)**(`startPosition`: [`Vector`](mw.Vector.md), `startDirection`: [`Vector`](mw.Vector.md), `density`: `number`, `duration`: `number`): [`Vector`](mw.Vector.md)[]  |
 | :-----|
-| 获取路径预测的轨迹|
-| **[spawnProjectileInstanceLaunch](mw.ObjectLauncher.md#spawnprojectileinstancelaunch)**(`childObjectId`: `string`, `startLocation?`: [`Vector`](mw.Vector.md), `direction?`: [`Vector`](mw.Vector.md), `isAllClientLaunch?`: `boolean`): [`ProjectileInst`](mw.ProjectileInst.md)  |
-| 发射子弹实例|
-| **[spawnProjectileInstanceLaunchToTarget](mw.ObjectLauncher.md#spawnprojectileinstancelaunchtotarget)**(`childObjectId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `targetingAcceleration?`: `number`, `startLocation?`: [`Vector`](mw.Vector.md), `direction?`: [`Vector`](mw.Vector.md), `isAllClientLaunch?`: `boolean`): [`ProjectileInst`](mw.ProjectileInst.md)  |
-| 发射子弹实例|
+| 按照预测时间和密度返回的路径点数组。不预测碰撞后的反弹路径。|
+| **[spawnProjectileInstanceLaunch](mw.ObjectLauncher.md#spawnprojectileinstancelaunch)**(`childObjectId`: `string`, `startPosition?`: [`Vector`](mw.Vector.md), `direction?`: [`Vector`](mw.Vector.md), `isAllClientLaunch?`: `boolean`): [`ProjectileInst`](mw.ProjectileInst.md)  |
+| 按照对象发射器当前参数生成的投掷物对象|
+| **[spawnProjectileInstanceLaunchToTarget](mw.ObjectLauncher.md#spawnprojectileinstancelaunchtotarget)**(`childObjectId`: `string`, `target`: [`GameObject`](mw.GameObject.md), `targetingAcceleration?`: `number`, `startPosition?`: [`Vector`](mw.Vector.md), `direction?`: [`Vector`](mw.Vector.md), `isAllClientLaunch?`: `boolean`): [`ProjectileInst`](mw.ProjectileInst.md)  |
+| 按照对象发射器当前参数生成的投掷物对象|
 
 
 ::: details 点击查看继承
@@ -203,9 +281,9 @@ ___
 
 ___
 
-### onProjectileHomingFailed <Score text="onProjectileHomingFailed" /> 
+### onProjectileHomingFail <Score text="onProjectileHomingFail" /> 
 
-• **onProjectileHomingFailed**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md)) => `void`\>
+• **onProjectileHomingFail**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md)) => `void`\>
 
 投掷物追踪目标失败(即为被销毁时)触发绑定函数
 
@@ -215,7 +293,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下: </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下:
+
+</p>
 
 ```ts
  @Component
@@ -248,7 +330,7 @@ ___
              myLauncher.collisionVelocityRetention = 0.5;
 
              // 给发射器追踪失败委托绑定函数，追踪失败时打印信息
-             myLauncher.onProjectileHomingFailed.add((projectile) => {
+             myLauncher.onProjectileHomingFail.add((projectile) => {
                  console.log("Homing Fail");
              });
 
@@ -321,7 +403,7 @@ ___
 <td style="text-align: left">
 
 
-加速度值，正值加速，负值减速
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
 
 #### Returns
 
@@ -333,7 +415,7 @@ ___
 <td style="text-align: left">
 
 
-加速度值，正值加速，负值减速
+投掷物运动的加速度（cm/s），正值会使投掷物加速，负值减速。default: 0，range: [-10000,10000]。
 
 #### Parameters
 
@@ -367,7 +449,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物检测碰撞的长度
+投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。
 
 #### Returns
 
@@ -379,7 +461,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物检测碰撞的长度
+投掷物碰撞胶囊体的半长（cm），半长小于半径时为球体。default: 50。range: [1, 1000]。
 
 #### Parameters
 
@@ -413,7 +495,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物检测碰撞的半径
+投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。
 
 #### Returns
 
@@ -425,7 +507,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物检测碰撞的半径
+投掷物碰撞胶囊体的半径（cm）。default: 25。range: [1, 1000]。
 
 #### Parameters
 
@@ -459,7 +541,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物每次执行碰撞后速度衰减的系数，系数为正，每次碰撞后速度减少，系数为负，每次碰撞后速度增加。
+碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。
 
 #### Returns
 
@@ -471,7 +553,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物每次执行碰撞后速度衰减的系数，系数为正，每次碰撞后速度减少，系数为负，每次碰撞后速度增加。
+碰撞后投掷物保持原来速度的比例。0表示。default: 0.6。range: [0, 1]。
 
 #### Parameters
 
@@ -505,7 +587,7 @@ ___
 <td style="text-align: left">
 
 
-重力倍数，正值重力向下，负值重力向上
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
 
 #### Returns
 
@@ -517,7 +599,7 @@ ___
 <td style="text-align: left">
 
 
-重力倍数，正值重力向下，负值重力向上
+投掷物受世界重力影响的倍率，正值会使投掷物下坠，负值上升，0可以使投掷物以直线运动。default: 1，range: [-10, 10]。
 
 #### Parameters
 
@@ -551,7 +633,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射的初始速度
+投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。
 
 #### Returns
 
@@ -563,7 +645,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射的初始速度
+投掷物的初始运动速度（cm/s），default: 5000，range: [1,100000]。
 
 #### Parameters
 
@@ -597,7 +679,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物操作的对象的朝向是否跟随速度方向
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
 
 #### Returns
 
@@ -609,7 +691,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物操作的对象的朝向是否跟随速度方向
+投掷物的正方向（以及挂载对象）是否始终跟随运动方向。true：跟随。false：不跟随。default: true。
 
 #### Parameters
 
@@ -643,7 +725,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞后是否反弹，false为穿透
+决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。
 
 #### Returns
 
@@ -655,7 +737,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物碰撞后是否反弹，false为穿透
+决定投掷物运动过程中与其他对象发生碰撞时是否能反弹。true：反弹。false：穿透。default: true。
 
 #### Parameters
 
@@ -689,7 +771,7 @@ ___
 <td style="text-align: left">
 
 
-是否应该将事件广播到所有客户端
+投掷物触发对应事件时是否广播（仅双端发射器生效），true：广播。false：仅本地
 
 #### Returns
 
@@ -701,7 +783,7 @@ ___
 <td style="text-align: left">
 
 
-是否应该将事件广播到所有客户端
+投掷物触发对应事件时是否广播（仅双端发射器生效），true：广播。false：仅本地
 
 #### Parameters
 
@@ -735,7 +817,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动持续时间，超出后投掷物不再运动。
+投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
 
 #### Returns
 
@@ -747,7 +829,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物运动持续时间，超出后投掷物不再运动。值小于等于 0 时清空延时
+投掷物存在的最长时间（s），0意味着没有限制。default: 10。range: [0, 1000]。
 
 #### Parameters
 
@@ -781,7 +863,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射后的最大速度
+投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
 
 #### Returns
 
@@ -793,7 +875,7 @@ ___
 <td style="text-align: left">
 
 
-投掷物发射后的最大速度
+投掷物的最大运动速度（cm/s），0意味着没有限制。default: 0，range: [0,100000]。
 
 #### Parameters
 
@@ -812,13 +894,13 @@ ___
 
 ### predictedTrajectory <Score text="predictedTrajectory" /> 
 
-• **predictedTrajectory**(`startLocation`, `startDirection`, `density`, `duration`): [`Vector`](mw.Vector.md)[] 
+• **predictedTrajectory**(`startPosition`, `startDirection`, `density`, `duration`): [`Vector`](mw.Vector.md)[] 
 
-获取路径预测的轨迹
+按照预测时间和密度返回的路径点数组。不预测碰撞后的反弹路径。
 
 #### Parameters
 
-| `startLocation` [`Vector`](mw.Vector.md) |  发射起始位置 |
+| `startPosition` [`Vector`](mw.Vector.md) |  发射起始位置 |
 | :------ | :------ |
 | `startDirection` [`Vector`](mw.Vector.md) |  发射起始方向 |
 | `density` `number` |  预测结果的点密度（个/秒），值越大路径点越细，性能消耗越大 |
@@ -840,15 +922,15 @@ ___
 
 ### spawnProjectileInstanceLaunch <Score text="spawnProjectileInstanceLaunch" /> 
 
-• **spawnProjectileInstanceLaunch**(`childObjectId`, `startLocation?`, `direction?`, `isAllClientLaunch?`): [`ProjectileInst`](mw.ProjectileInst.md) 
+• **spawnProjectileInstanceLaunch**(`childObjectId`, `startPosition?`, `direction?`, `isAllClientLaunch?`): [`ProjectileInst`](mw.ProjectileInst.md) 
 
-发射子弹实例
+按照对象发射器当前参数生成的投掷物对象
 
 #### Parameters
 
 | `childObjectId` `string` |  发射对象的 id |
 | :------ | :------ |
-| `startLocation?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
+| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
 | `direction?` [`Vector`](mw.Vector.md) |  发射起始方向 default: 发射对象的正前方 |
 | `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例 default: false |
 
@@ -859,12 +941,16 @@ ___
 
 ::: warning Precautions
 
-发射后再更新其他属性无法对本次发射的子弹产生影响
+发射后再更新其他属性无法对本次发射的投掷物产生影响
 
 :::
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_Acceleration"的代码保存,运行游戏,场景中将会生成一个对象发射器和用于发射的火箭。按下按键”1“，发射火箭。设置对象代码如下: </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_Acceleration"的代码保存,运行游戏,场景中将会生成一个对象发射器和用于发射的火箭。按下按键”1“，发射火箭。设置对象代码如下:
+
+</p>
 
 ```ts
 @Component
@@ -921,17 +1007,17 @@ ___
 
 ### spawnProjectileInstanceLaunchToTarget <Score text="spawnProjectileInstanceLaunchToTarget" /> 
 
-• **spawnProjectileInstanceLaunchToTarget**(`childObjectId`, `target`, `targetingAcceleration?`, `startLocation?`, `direction?`, `isAllClientLaunch?`): [`ProjectileInst`](mw.ProjectileInst.md) 
+• **spawnProjectileInstanceLaunchToTarget**(`childObjectId`, `target`, `targetingAcceleration?`, `startPosition?`, `direction?`, `isAllClientLaunch?`): [`ProjectileInst`](mw.ProjectileInst.md) 
 
-发射子弹实例
+按照对象发射器当前参数生成的投掷物对象
 
 #### Parameters
 
 | `childObjectId` `string` |  发射对象的 id |
 | :------ | :------ |
 | `target` [`GameObject`](mw.GameObject.md) |  追踪目标 |
-| `targetingAcceleration?` `number` |  追踪加速度 default: 1000 |
-| `startLocation?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
+| `targetingAcceleration?` `number` |  追踪加速度 default: 10000 |
+| `startPosition?` [`Vector`](mw.Vector.md) |  发射起始位置 default: 发射对象的位置 |
 | `direction?` [`Vector`](mw.Vector.md) |  发射起始方向 default: 发射对象的正前方 |
 | `isAllClientLaunch?` `boolean` |  仅在发射单客户端对象是有效, 是否广播到所有客户端发射实例 default: false |
 
@@ -948,7 +1034,11 @@ ___
 :::
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下: </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_OnHomingFail"的代码保存,运行游戏,场景中将会生成一个对象发射器、一个用于发射的球以及一个NPC目标。给发射器对应事件的委托绑定函数。按下按键”1“，发射球并追踪NPC。设置对象代码如下:
+
+</p>
 
 ```
  @Component
@@ -981,7 +1071,7 @@ ___
              myLauncher.collisionVelocityRetention = 0.5;
 
              // 给发射器追踪失败委托绑定函数，追踪失败时打印信息
-             myLauncher.onProjectileHomingFailed.add((projectile) => {
+             myLauncher.onProjectileHomingFail.add((projectile) => {
                  console.log("Homing Fail");
              });
 

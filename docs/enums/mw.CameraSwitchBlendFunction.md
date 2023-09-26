@@ -2,7 +2,11 @@
 
 # CameraSwitchBlendFunction <Badge type="tip" text="Enumeration" /> <Score text="CameraSwitchBlendFunction" />
 
-<p class="content-big"> 切换摄像机时运用的混合函数 </p>
+<p class="content-big">
+
+切换摄像机时运用的混合函数
+
+</p>
 
 ## Table of contents
 

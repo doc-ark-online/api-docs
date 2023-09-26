@@ -2,7 +2,11 @@
 
 # Vector4 <Badge type="tip" text="Class" /> <Score text="Vector4" />
 
-<p class="content-big"> 由分量 (x,y,z,w) 组成的4D齐次向量 </p>
+<p class="content-big">
+
+由分量 (x,y,z,w) 组成的4D齐次向量
+
+</p>
 
 ## Table of contents
 

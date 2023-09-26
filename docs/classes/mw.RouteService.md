@@ -2,7 +2,11 @@
 
 # RouteService <Badge type="tip" text="Class" /> <Score text="RouteService" />
 
-<p class="content-big"> 游戏管理器 </p>
+<p class="content-big">
+
+游戏管理器
+
+</p>
 
 ## Table of contents
 
@@ -201,7 +205,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，当从其他游戏跳转到当前游戏时，会在角色名称处显示跳转游戏的gameId和携带的数据 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，当从其他游戏跳转到当前游戏时，会在角色名称处显示跳转游戏的gameId和携带的数据
+
+</p>
 
 ```ts
 @Component
@@ -257,7 +265,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后会自动跳转到角色编辑游戏。 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后会自动跳转到角色编辑游戏。
+
+</p>
 
 ```ts
 @Component
@@ -314,7 +326,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例: 跳转到新游戏 </p>
+<p style="font-size: 14px;">
+
+使用示例: 跳转到新游戏
+
+</p>
 
 ```ts
 // 更多游戏跳游戏的实例请前往论坛看帖子 https://forum.ark.online/forum.php?mod=viewthread&tid=1145
@@ -368,7 +384,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后进入广场游戏。 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，挂载到场景中，运行后，10秒后进入广场游戏。
+
+</p>
 
 ```ts
 @Component
@@ -426,7 +446,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示GameId，PC环境为空 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示GameId，PC环境为空
+
+</p>
 
 ```ts
 @Component
@@ -464,7 +488,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示游戏版本，PC环境为空 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示游戏版本，PC环境为空
+
+</p>
 
 ```ts
 @Component
@@ -516,7 +544,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示短游戏ID，PC环境为空 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为RouteExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，会在角色名显示短游戏ID，PC环境为空
+
+</p>
 
 ```ts
 @Component

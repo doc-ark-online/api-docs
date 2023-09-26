@@ -2,7 +2,11 @@
 
 # TouchInputType <Badge type="tip" text="Enumeration" /> <Score text="TouchInputType" />
 
-<p class="content-big"> 触摸类型 </p>
+<p class="content-big">
+
+触摸类型
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,11 @@
 
 # AttenuationDistanceModel <Badge type="tip" text="Enumeration" /> <Score text="AttenuationDistanceModel" />
 
-<p class="content-big"> 音效衰减函数模型 </p>
+<p class="content-big">
+
+音效衰减函数模型
+
+</p>
 
 ## Table of contents
 

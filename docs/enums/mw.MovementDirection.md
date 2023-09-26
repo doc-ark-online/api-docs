@@ -2,7 +2,11 @@
 
 # MovementDirection <Badge type="tip" text="Enumeration" /> <Score text="MovementDirection" />
 
-<p class="content-big"> 运动时依据的正方向 </p>
+<p class="content-big">
+
+运动时依据的正方向
+
+</p>
 不同的模式会决定运动时依据的实际轴向修改方式
 AxisDirection模式下,可以修改character的movementAxisDirection决定移动轴向
 ViewDirection模式下,移动轴向会随着视口的旋转自动变化

@@ -2,9 +2,17 @@
 
 # StanceBlendMode <Badge type="tip" text="Enumeration" /> <Score text="StanceBlendMode" />
 
-<p class="content-big"> 姿态混合模式 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例: </p>
+姿态混合模式
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:
+
+</p>
 
 ```ts
 ```

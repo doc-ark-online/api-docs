@@ -2,7 +2,11 @@
 
 # GraphicsLevel <Badge type="tip" text="Enumeration" /> <Score text="GraphicsLevel" />
 
-<p class="content-big"> 画质等级 </p>
+<p class="content-big">
+
+画质等级
+
+</p>
 
 ## Table of contents
 

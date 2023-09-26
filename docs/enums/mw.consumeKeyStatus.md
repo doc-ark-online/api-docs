@@ -2,7 +2,11 @@
 
 # consumeKeyStatus <Badge type="tip" text="Enumeration" /> <Score text="consumeKeyStatus" />
 
-<p class="content-big"> 大会员扣除钥匙订单返回状态信息 </p>
+<p class="content-big">
+
+大会员扣除钥匙订单返回状态信息
+
+</p>
 
 ## Table of contents
 

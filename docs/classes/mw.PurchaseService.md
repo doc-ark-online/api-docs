@@ -2,7 +2,11 @@
 
 # PurchaseService <Badge type="tip" text="Class" /> <Score text="PurchaseService" />
 
-<p class="content-big"> 应用内购服务 </p>
+<p class="content-big">
+
+应用内购服务
+
+</p>
 
 ## Table of contents
 
@@ -202,7 +206,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听 </p>
+<p style="font-size: 14px;">
+
+使用示例: 需要先在服务端监听发货信息，扣除钥匙时会判断服务端是否监听
+
+</p>
 
 ```ts
 if (SystemUtil.isServer()) {
@@ -255,7 +263,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:将代码片段放入脚本中即可 </p>
+<p style="font-size: 14px;">
+
+使用示例:将代码片段放入脚本中即可
+
+</p>
 
 ```ts
 mw.PurchaseService.findKeyUsageHistory(1, 100, (total : number, currentPage : number, bills : mw.keyUsageInfo[]) => {
@@ -286,7 +298,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，5秒后会显示Ark币余额
+
+</p>
 
 ```ts
 @Component
@@ -328,7 +344,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户剩余钥匙数量
+
+</p>
 
 ```
 @Component
@@ -370,7 +390,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前用户是否是大会员
+
+</p>
 
 ```
 @Component
@@ -411,7 +435,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，可以看到当前app是否支持大会员功能
+
+</p>
 
 ```
 @Component
@@ -441,7 +469,11 @@ ___
 
 
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。 </p>
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为PurchaseExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布游戏在移动端测试，10秒后会自动打开会员充值页面。
+
+</p>
 
 ```
 @Component

@@ -2,7 +2,11 @@
 
 # GameObjPoolSourceType <Badge type="tip" text="Enumeration" /> <Score text="GameObjPoolSourceType" />
 
-<p class="content-big"> GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择 </p>
+<p class="content-big">
+
+GameObject对象池资源来源类型，不同类型的资源创建方式不一样，需要正确选择
+
+</p>
 
 ## Table of contents
 

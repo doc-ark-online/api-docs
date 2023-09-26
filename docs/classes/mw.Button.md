@@ -2,7 +2,11 @@
 
 # Button <Badge type="tip" text="Class" /> <Score text="Button" />
 
-<p class="content-big"> 按钮,无默认text </p>
+<p class="content-big">
+
+按钮,无默认text
+
+</p>
 
 ## Hierarchy
 

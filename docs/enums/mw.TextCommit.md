@@ -2,7 +2,11 @@
 
 # TextCommit <Badge type="tip" text="Enumeration" /> <Score text="TextCommit" />
 
-<p class="content-big"> 输入提交模式 </p>
+<p class="content-big">
+
+输入提交模式
+
+</p>
 
 ## Table of contents
 

@@ -2,7 +2,11 @@
 
 # UIScript <Badge type="tip" text="Class" /> <Score text="UIScript" />
 
-<p class="content-big"> UI的驱动脚本基类 </p>
+<p class="content-big">
+
+UI的驱动脚本基类
+
+</p>
 
 ## Hierarchy
 
@@ -190,7 +194,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;"> 使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级 </p>
+<p style="font-size: 14px;">
+
+使用示例: 一般来说，可以使用内置定义好的，也可以是自定义拓展层级
+
+</p>
 
 ```ts
 UIService.show(UIScript,UIScript.layer)
@@ -206,7 +214,11 @@ mw.UILayerSystem  //系统层 zOrder开始于600000
 mw.UILayerError   //错误层 这个层级不可以使用，需要增加层级可以使用UIService.addUILayerMap zOrder开始于700000
 ]
 ```
-<p style="font-size: 14px;"> 使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级 </p>
+<p style="font-size: 14px;">
+
+使用示例: 一般来说，可以使用内置定义好的，也可以自定义拓展层级
+
+</p>
 
 ```ts
 this.layer = mw.UILayerScene;

@@ -2,9 +2,17 @@
 
 # RoomSettings <Badge type="tip" text="Class" /> <Score text="RoomSettings" />
 
-<p class="content-big"> 房间设置 </p>
+<p class="content-big">
 
-<p style="font-size: 14px;"> 使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下： </p>
+房间设置
+
+</p>
+
+<p style="font-size: 14px;">
+
+使用示例:创建一个名为"ClassExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存，运行游戏，你将在服务器Log中看到对应方法调用信息。代码如下：
+
+</p>
 
 ```ts
 @Component

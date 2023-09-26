@@ -2,7 +2,11 @@
 
 # WidgetGeometryMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetGeometryMode" />
 
-<p class="content-big"> UI形状枚举 </p>
+<p class="content-big">
+
+UI形状枚举
+
+</p>
 
 ## Table of contents
 

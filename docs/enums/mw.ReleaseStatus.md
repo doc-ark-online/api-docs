@@ -2,7 +2,11 @@
 
 # ReleaseStatus <Badge type="tip" text="Enumeration" /> <Score text="ReleaseStatus" />
 
-<p class="content-big"> UGC 发布的状态 </p>
+<p class="content-big">
+
+UGC 发布的状态
+
+</p>
 
 ## Table of contents
 

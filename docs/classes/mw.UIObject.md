@@ -2,7 +2,11 @@
 
 # UIObject <Badge type="tip" text="Class" /> <Score text="UIObject" />
 
-<p class="content-big"> UI对象组件 </p>
+<p class="content-big">
+
+UI对象组件
+
+</p>
 
 ## Hierarchy
 

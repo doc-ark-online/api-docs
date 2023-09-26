@@ -2,7 +2,11 @@
 
 # NavModifierVolume <Badge type="tip" text="Class" /> <Score text="NavModifierVolume" />
 
-<p class="content-big"> 寻路动态修饰区 </p>
+<p class="content-big">
+
+寻路动态修饰区
+
+</p>
 
 ## Hierarchy
 

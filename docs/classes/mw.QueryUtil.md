@@ -2,7 +2,11 @@
 
 # QueryUtil <Badge type="tip" text="Class" /> <Score text="QueryUtil" />
 
-<p class="content-big"> 射线检测工具 </p>
+<p class="content-big">
+
+射线检测工具
+
+</p>
 
 ## Table of contents
 
@@ -51,7 +55,11 @@
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用矩形范围检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用矩形范围检测的基本流程
+
+</p>
 
 ```ts
 const goList = boxOverlap(new mw.Vector(0,0,0), new mw.Vector(1000,0,0), 10, 10, true);
@@ -87,7 +95,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用盒体射线检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用盒体射线检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = boxTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), new mw.Vector(10,10,10), new mw.Rotation(0,0,0), true, false, [], false, gameObject);
@@ -121,7 +133,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用圆柱范围检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用圆柱范围检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = capsuleOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
@@ -157,7 +173,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用胶囊体射线检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用胶囊体射线检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = capsuleTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, 10, true, false, [], false, gameObject);
@@ -192,7 +212,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用射线检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用射线检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = lineTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), true, false, [], false, gameObject, false);
@@ -225,7 +249,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用球形范围检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用球形范围检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = sphereOverlap(new mw.Vector(0,0,0), 100, false, [], false, gameObject);
@@ -260,7 +288,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;"> 使用示例: 如下示例展示使用球体射线检测的基本流程 </p>
+<p style="font-size: 14px;">
+
+使用示例: 如下示例展示使用球体射线检测的基本流程
+
+</p>
 
 ```ts
 const ResultList = sphereTrace(new mw.Vector(0,0,0), new mw.Vector(300,0,0), 5, true, false, [], false, gameObject);

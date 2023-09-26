@@ -2,7 +2,11 @@
 
 # VirtualJoystickPanel <Badge type="tip" text="Class" /> <Score text="VirtualJoystickPanel" />
 
-<p class="content-big"> 摇杆 </p>
+<p class="content-big">
+
+摇杆
+
+</p>
 
 ## Hierarchy
 

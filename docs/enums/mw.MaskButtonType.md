@@ -2,7 +2,11 @@
 
 # MaskButtonType <Badge type="tip" text="Enumeration" /> <Score text="MaskButtonType" />
 
-<p class="content-big"> 遮罩类型 </p>
+<p class="content-big">
+
+遮罩类型
+
+</p>
 
 ## Table of contents
 
