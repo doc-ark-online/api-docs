@@ -30,8 +30,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'GameObject',
           link: '/classes/mw.GameObject.md',
-          collapsed: false, // true 是折叠
-          collapsible: false // true 后面有加减号
+          collapsed: true, // true 是折叠
+          collapsible: true, // true 后面有加减号
+          items: [
+            {
+              text: 'GameObjectInfo',
+              link: '/interfaces/mw.GameObjectInfo.md',
+              collapsed: false,
+              collapsible: false
+            }
+          ]
         },
         {
           text: 'Scripts',
@@ -44,7 +52,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //type
     {
       text: 'Type',
-      link: '/classes/mw.Type.md',
+      link: '/groups/type.Type.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -165,8 +173,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
           collapsible: false
         },
         {
-          text: 'Gizom',
-          link: '/classes/mw.Gizom.md',
+          text: 'Gizmo',
+          link: '/classes/mw.Gizmo.md',
           collapsed: false,
           collapsible: false
         }
@@ -175,7 +183,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //avatar
     {
       text: 'Avatar',
-      link: '/classes/mw.Avatar.md',
+      link: '/groups/Avatar.Avatar.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -212,7 +220,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //animation
     {
       text: 'Animation',
-      link: '/classes/mw.Animation.md',
+      link: '/groups/Animations.Animations.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -239,13 +247,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //gameplay
     {
       text: 'Gameplay',
-      link: '/classes/mw.Gameplay.md',
+      link: '/groups/gameplay.Gameplay.md',
       collapsed: true,
       collapsible: true,
       items: [
         {
           text: 'HotWeapon',
           link: '/classes/mw.HotWeapon.md',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'HotWeaponAccuracyOfFireComponent',
@@ -287,33 +297,25 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'AdvancedVehicle',
-          link: '/classes/mw.AdvancedVehicle.md',
-          collapsed: true,
-          collapsible: true
+          link: '/classes/mw.AdvancedVehicle.md'
         },
         {
           text: 'Physics',
-          link: '/classes/mw.Physics.md',
+          link: '/groups/Physics.Physics.md',
           collapsed: true,
           collapsible: true,
           items: [
             {
               text: 'Impulse',
-              link: '/classes/mw.Impulse.md',
-              collapsed: false,
-              collapsible: false
+              link: '/classes/mw.Impulse.md'
             },
             {
               text: 'IntegratedMover',
-              link: '/classes/mw.IntegratedMover.md',
-              collapsed: false,
-              collapsible: false
+              link: '/classes/mw.IntegratedMover.md'
             },
             {
               text: 'PhysicsThruster',
-              link: '/classes/mw.PhysicsThruster.md',
-              collapsed: false,
-              collapsible: false
+              link: '/classes/mw.PhysicsThruster.md'
             }
           ]
         },
@@ -325,7 +327,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
           items: [
             {
               text: 'CameraShakeInfo',
-              link: '/classes/mw.CameraShakeInfo.md',
+              link: '/interfaces/mw.CameraShakeInfo.md',
               collapsed: false,
               collapsible: false
             },
@@ -360,8 +362,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'ObjectLauncher',
           link: '/classes/mw.ObjectLauncher.md',
-          collapsed: false,
-          collapsible: false,
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'ProjectileInst ',
@@ -374,20 +376,20 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'ProjectileMovement',
           link: '/classes/mw.ProjectileMovement.md',
-          collapsed: false,
-          collapsible: false,
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'ProjectileMovementConfig',
-              link: '/classes/mw.ProjectileMovementConfig.md',
+              link: '/interfaces/mw.ProjectileMovementConfig.md',
               collapsed: false,
               collapsible: false
             }
           ]
         },
         {
-          text: 'Interaction',
-          link: '/classes/mw.Interaction.md',
+          text: 'Interactor',
+          link: '/classes/mw.Interactor.md',
           collapsed: false,
           collapsible: false
         },
@@ -414,7 +416,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //sence
     {
       text: 'Scene',
-      link: '/classes/mw.Scene.md',
+      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -481,7 +483,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //service
     {
       text: 'Service',
-      link: '/classes/mw.Service.md',
+      link: '',
       collapsed: true,
       collapsible: true,
       items: [
@@ -491,9 +493,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'Monetization',
-          link: '/classes/mw.Monetization.md',
-          collapsed: false,
-          collapsible: false,
+          link: '',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'AdsService',
@@ -511,7 +513,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'Social',
-          link: '/classes/mw.Social.md',
+          link: '',
           collapsed: true,
           collapsible: true,
           items: [
@@ -546,7 +548,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //settings
     {
       text: 'Settings',
-      link: '/classes/mw.Settings.md',
+      link: '/groups/settings.Settings.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -583,17 +585,19 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //data
     {
       text: 'Data',
-      link: '/classes/mw.Data.md',
+      link: '/groups/data.Data.md',
       collapsed: true,
       collapsible: true,
       items: [
         {
           text: 'DataStorage',
           link: '/classes/mw.DataStorage.md',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'DataStorageResult',
-              link: '/classes/mw.DataStorageResult.md',
+              link: '/interfaces/mw.DataStorageResult.md',
               collapsed: false,
               collapsible: false
             }
@@ -604,7 +608,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //input
     {
       text: 'Input',
-      link: '/classes/mw.Input.md',
+      link: '/groups/input.Input.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -625,7 +629,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //utility
     {
       text: 'Utility',
-      link: '/classes/mw.Utility.md',
+      link: '/groups/utility.Utility.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -640,12 +644,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'QueryUtil ',
           link: '/classes/mw.QueryUtil.md',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'HitResult',
-              link: '/classes/mw.HitResult.md',
-              collapsed: false,
-              collapsible: false
+              link: '/classes/mw.HitResult.md'
             }
           ]
         },
@@ -676,6 +680,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'TweenUtil ',
           link: '/classes/mw.TweenUtil.md',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'Tween',
@@ -699,7 +705,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'Localization ',
-          link: '/classes/mw.Localization.md',
+          link: '',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'LanguageUtil',
@@ -720,13 +728,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //UI
     {
       text: 'UI',
-      link: '/classes/mw.UI.md',
+      link: '/groups/UI.UI.md',
       collapsed: true,
       collapsible: true,
       items: [
         {
           text: 'Widget ',
           link: '/classes/mw.Widget.md',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               text: 'ColorPick',
@@ -748,9 +758,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
             },
             {
               text: 'MaskButton',
-              link: '/classes/mw.MaskButton.md',
-              collapsed: true,
-              collapsible: true
+              link: '/classes/mw.MaskButton.md'
             },
             {
               text: 'PanelWidget',
@@ -780,15 +788,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
             },
             {
               text: 'ProgressBar',
-              link: '/classes/mw.ProgressBar.md',
-              collapsed: true,
-              collapsible: true
+              link: '/classes/mw.ProgressBar.md'
             },
             {
               text: 'StaleButton',
-              link: '/classes/mw.StaleButton.md',
-              collapsed: true,
-              collapsible: true
+              link: '/classes/mw.StaleButton.md'
             },
             {
               text: 'TextBlock',
@@ -818,9 +822,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
             },
             {
               text: 'VirtualJoystickPanel',
-              link: '/classes/mw.VirtualJoystickPanel.md',
-              collapsed: true,
-              collapsible: true
+              link: '/classes/mw.VirtualJoystickPanel.md'
             }
           ]
         },
@@ -882,7 +884,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'TabGroup<T> ',
-          link: '/classes/mw.TabGroup<T>.md'
+          link: '/classes/mw.TabGroup.md'
         },
         {
           text: 'UIChildCollation ',
@@ -927,6 +929,75 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         {
           text: 'VirtualJoystickPanel ',
           link: '/classes/mw.VirtualJoystickPanel.md'
+        }
+      ]
+    },
+    //Extension
+    {
+      text: 'Extextion',
+      link: '/groups/Extension.Extension.md',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          text: 'BaseView',
+          link: '/classes/mwext.BaseView.md'
+        },
+        {
+          text: 'BasePanel',
+          link: '/classes/mwext.BasePanel.md'
+        },
+        {
+          text: 'DataCenterC ',
+          link: '/classes/mwext.DataCenterC.md'
+        },
+        {
+          text: 'DataCenterS ',
+          link: '/classes/mwext.DataCenterS.md'
+        },
+        {
+          text: 'GameObjPool ',
+          link: '/classes/mwext.GameObjPool.md'
+        },
+        {
+          text: 'LeaderboardItemPanelBase ',
+          link: '/classes/mwext.LeaderboardItemPanelBase.md'
+        },
+        {
+          text: 'LeaderboardMainPanelBase ',
+          link: '/classes/mwext.LeaderboardMainPanelBase.md'
+        },
+        {
+          text: 'LeaderboardModule ',
+          link: '/classes/mwext.LeaderboardModule.md'
+        },
+        {
+          text: 'LeaderboardModuleBaseC',
+          link: '/classes/mwext.LeaderboardModuleBaseC.md'
+        },
+        {
+          text: 'LeaderboardModuleBaseS',
+          link: '/classes/mwext.LeaderboardModuleBaseS.md'
+        },
+        {
+          text: 'ModuleC',
+          link: '/classes/mwext.ModuleC.md'
+        },
+        {
+          text: 'ModuleS',
+          link: '/classes/mwext.ModuleS.md'
+        },
+        {
+          text: 'ModuleService',
+          link: '/classes/mwext.ModuleService.md'
+        },
+        {
+          text: 'ObjPool',
+          link: '/classes/mwext.ObjPool.md'
+        },
+        {
+          text: 'Subdata',
+          link: '/classes/mwext.Subdata.md'
         }
       ]
     }
