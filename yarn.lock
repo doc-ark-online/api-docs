@@ -885,21 +885,22 @@ metaapp-lib-release@^2.0.18:
   resolved "https://api-web-registry.metaapp.cn/metaapp-lib-release/-/metaapp-lib-release-2.0.18.tgz#faa06907167856425626a94f4e37c2d1d9cc3277"
   integrity sha512-IPPxkLp9PUNuvVackjlzePr0m7+mYwrWlTQXonCuueXV4lHbmSEhLzLIP7zs4hEmC9UFsvM4UwRFbaQwu6abqQ==
 
-metaapp-pandora-sdk@^5.0.2:
-  version "5.0.6"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-5.0.6.tgz#7e940c652ca56d41bff4addd0a26ac0b51d56fb7"
-  integrity sha512-MrQ5WmKEy/f4yFXh7ilxGzUQ6InBxbKA3pMmaSbNtgUP5CQxvLOMGNSJ/NZSXxTsoSF+JkKyyDsMXfA/L4VzVA==
+metaapp-pandora-sdk@5.2.2:
+  version "5.2.2"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-pandora-sdk/-/metaapp-pandora-sdk-5.2.2.tgz#0f5fff8646cf620889a2818fa1e5938fda9756e1"
+  integrity sha512-pCC+TyQorLLXPTX/1KIJCThElFDUwPKDzMZVl06iHcd3NOCMAcxJLSFSQ5MiO2ta+RjcL3BE9qH4izysbRR3hQ==
   dependencies:
     "@fingerprintjs/fingerprintjs" "^3.0.1"
     axios "^0.24.0"
     core-js "3"
+    pako "^2.1.0"
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-prodigytech-doc-theme@^1.2.4:
-  version "1.2.5"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.2.5.tgz#0d9aa5acae04cda5b2b0349c169fbc7745a46a2f"
-  integrity sha512-vbycd+pWG4JDNXmBuaPu54a1C6VWGI8vH+QqyyDbjpSq9fOr8U17XR9ypuTTT0e3EU+HSHfDB6oaXY3sXcN3vQ==
+metaapp-prodigytech-doc-theme@^1.2.6:
+  version "1.2.6"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-1.2.6.tgz#0a44f77ec561cc14fef0613ed77b92ea0d6fc4b2"
+  integrity sha512-yIAudxNRUbT0VXubrtE0xgxhM2do/jt909IqIAH/pCY70LaLLmU1/WYLEs6cqLGUgyZGnlkYnx4NYR3KWLXOJQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
@@ -909,7 +910,7 @@ metaapp-prodigytech-doc-theme@^1.2.4:
     "@vueuse/core" "^9.8.2"
     body-scroll-lock "4.0.0-beta.0"
     detect-browser "^5.3.0"
-    metaapp-pandora-sdk "^5.0.2"
+    metaapp-pandora-sdk "5.2.2"
     shiki "^0.12.1"
     viewerjs "^1.11.3"
     vite "^4.0.2"
@@ -965,6 +966,11 @@ onetime@^6.0.0:
   integrity sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==
   dependencies:
     mimic-fn "^4.0.0"
+
+pako@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/pako/-/pako-2.1.0.tgz#266cc37f98c7d883545d11335c00fbd4062c9a86"
+  integrity sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==
 
 path-key@^3.1.0:
   version "3.1.1"
