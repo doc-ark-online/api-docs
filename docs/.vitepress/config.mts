@@ -52,7 +52,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //type
     {
       text: 'Type',
-      link: '/groups/type.Type.md',
+      link: '/groups/TYPE.TYPE.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -183,7 +183,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //avatar
     {
       text: 'Avatar',
-      link: '/groups/Avatar.Avatar.md',
+      link: '/groups/AVATAR.AVATAR.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -220,7 +220,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //animation
     {
       text: 'Animation',
-      link: '/groups/Animations.Animations.md',
+      link: '/groups/ANIMATIONS.ANIMATIONS.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -247,7 +247,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //gameplay
     {
       text: 'Gameplay',
-      link: '/groups/gameplay.Gameplay.md',
+      link: '/groups/GAMEPLAY.GAMEPLAY.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -301,7 +301,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'Physics',
-          link: '/groups/Physics.Physics.md',
+          link: '/groups/PHYSICS.PHYSICS.md',
           collapsed: true,
           collapsible: true,
           items: [
@@ -548,7 +548,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //settings
     {
       text: 'Settings',
-      link: '/groups/settings.Settings.md',
+      link: '/groups/SETTINGS.SETTINGS.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -585,7 +585,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //data
     {
       text: 'Data',
-      link: '/groups/data.Data.md',
+      link: '/groups/DATA.DATA.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -608,7 +608,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //input
     {
       text: 'Input',
-      link: '/groups/input.Input.md',
+      link: '/groups/INPUT.INPUT.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -629,7 +629,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //utility
     {
       text: 'Utility',
-      link: '/groups/utility.Utility.md',
+      link: '/groups/UTILITY.UTILITY.md',
       collapsed: true,
       collapsible: true,
       items: [
@@ -935,7 +935,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     //Extension
     {
       text: 'Extextion',
-      link: '/groups/Extension.Extension.md',
+      link: '/groups/EXTENSION.EXTENSION.md',
       collapsed: true,
       collapsible: true,
       items: [
