@@ -11,18 +11,20 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   // },
   {
     text: 'Index',
+    collapsed: true,
+    collapsible: true,
     items: [
       { text: '介绍', link: '/index.md' },
-      { text: '开始使用', link: '/start.md' },
-      { text: 'Enums', link: '/enums.md' },
-      { text: 'Interfaces', link: '/interfaces.md' },
-      { text: 'Classes', link: '/classes.md' }
+      { text: '帮助', link: '/start.md' },
+      { text: '枚举', link: '/enums.md' },
+      { text: '接口', link: '/interfaces.md' },
+      { text: '类', link: '/classes.md' }
     ]
   },
   ...[
     // core
     {
-      text: 'Core',
+      text: '核心基类',
       link: '',
       collapsed: true,
       collapsible: true,
@@ -43,7 +45,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
         },
         {
           text: 'Scripts',
-          link: '/groups/SCRIPTING.SCRIPTING.md',
+          link: '/classes/mw.Script.md',
           collapsed: false,
           collapsible: false
         }
@@ -51,7 +53,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //type
     {
-      text: 'Type',
+      text: '基础类型',
       link: '/groups/TYPE.TYPE.md',
       collapsed: true,
       collapsible: true,
@@ -182,7 +184,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //avatar
     {
-      text: 'Avatar',
+      text: '角色',
       link: '/groups/AVATAR.AVATAR.md',
       collapsed: true,
       collapsible: true,
@@ -219,7 +221,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //animation
     {
-      text: 'Animation',
+      text: '动画',
       link: '/groups/ANIMATIONS.ANIMATIONS.md',
       collapsed: true,
       collapsible: true,
@@ -246,7 +248,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //gameplay
     {
-      text: 'Gameplay',
+      text: '玩法',
       link: '/groups/GAMEPLAY.GAMEPLAY.md',
       collapsed: true,
       collapsible: true,
@@ -415,7 +417,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //sence
     {
-      text: 'Scene',
+      text: '灯光/音效/特效',
       link: '',
       collapsed: true,
       collapsible: true,
@@ -482,7 +484,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //service
     {
-      text: 'Service',
+      text: '服务',
       link: '',
       collapsed: true,
       collapsible: true,
@@ -547,7 +549,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //settings
     {
-      text: 'Settings',
+      text: '设置',
       link: '/groups/SETTINGS.SETTINGS.md',
       collapsed: true,
       collapsible: true,
@@ -584,7 +586,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //data
     {
-      text: 'Data',
+      text: '数据处理',
       link: '/groups/DATA.DATA.md',
       collapsed: true,
       collapsible: true,
@@ -607,7 +609,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //input
     {
-      text: 'Input',
+      text: '输入',
       link: '/groups/INPUT.INPUT.md',
       collapsed: true,
       collapsible: true,
@@ -628,7 +630,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //utility
     {
-      text: 'Utility',
+      text: '工具',
       link: '/groups/UTILITY.UTILITY.md',
       collapsed: true,
       collapsible: true,
@@ -727,7 +729,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //UI
     {
-      text: 'UI',
+      text: '界面',
       link: '/groups/UI.UI.md',
       collapsed: true,
       collapsible: true,
@@ -934,7 +936,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //Extension
     {
-      text: 'Extextion',
+      text: '拓展',
       link: '/groups/EXTENSION.EXTENSION.md',
       collapsed: true,
       collapsible: true,
