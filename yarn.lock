@@ -1239,10 +1239,10 @@ metaapp-pandora-sdk@^5.0.2:
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-prodigytech-doc-theme@^2.1.7:
-  version "2.1.7"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-2.1.7.tgz#787302d138ce3a222cf45e4629ec4134a7835f9d"
-  integrity sha512-5QKOzVg28s8wb0pAvE+0YLu81HwGnG1fjiho5KNa0Zq6rJdp/WX274ka+WJts2wR/ibADw3qNCYDGuDEMff/lg==
+metaapp-prodigytech-doc-theme@^2.1.8:
+  version "2.1.8"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-2.1.8.tgz#bdbccc018dac3fea72ebc8200808167295b3c394"
+  integrity sha512-W8FdtJKd/JubXjhOLGrcVayKSLzssShTOPbbQNoGMMOasp6iDOOkOGICpv3SSVa/vvYdlQZLjRX9k1g0LsSGoQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
