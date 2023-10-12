@@ -81,7 +81,7 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 | **[dispatchToClient](mw.Event.md#dispatchtoclient)**(`player`: [`Player`](mw.Player.md), `eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
 | 服务器发送事件给指定客户端|
 | **[dispatchToLocal](mw.Event.md#dispatchtolocal)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
-| 执行已添加的本地事件。|
+| 本地发送给本地的事件|
 | **[dispatchToServer](mw.Event.md#dispatchtoserver)**(`eventName`: `string`, `...params`: `unknown`[]): [`DispatchEventResult`](../enums/mw.DispatchEventResult.md)  |
 | 客户端发送事件给服务器|
 | **[removeListener](mw.Event.md#removelistener)**(`event`: [`EventListener`](mw.EventListener.md)): `void`  |
@@ -115,15 +115,14 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 <p style="font-size: 14px;">
 
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在服务端中看到打印ok,代码如下:
 
 </p>
 
 ```ts
  @Component
  export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
-         this.useUpdate = true;
+     protected  onStart(): void {
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
          if(SystemUtil.isClient()){
@@ -193,7 +192,7 @@ ___
 ```ts
 @Component
  export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
+     protected  onStart(): void {
          this.useUpdate = true;
          // 在客户端执行服务器发来的 eventOne 事件,并在客户端执行传入的函数逻辑
          // 客户端执行 eventOne 事件，传入的函数开始执行可以看作灯泡亮了
@@ -339,15 +338,14 @@ ___
 
 <p style="font-size: 14px;">
 
-使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在客户端中看到每帧打印ok,代码如下:
+使用示例:创建一个名为"EventSample"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在服务端中看到打印ok,代码如下:
 
 </p>
 
 ```ts
  @Component
  export default class InteractorSample extends Script {
-     protected async onStart(): Promise<void> {
-         this.useUpdate = true;
+     protected  onStart(): void {
          // 客户端向服务器发送 eventOne 事件
          // 客户端发送 eventOne 事件可以看作灯的开关
          if(SystemUtil.isClient()){
