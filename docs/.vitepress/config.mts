@@ -10,21 +10,21 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
   //   items: dealItem('groups')
   // },
   {
-    text: 'Index',
+    text: '口袋方舟指引',
     collapsed: true,
     collapsible: true,
     items: [
       { text: '介绍', link: '/index.md' },
-      { text: '帮助', link: '/start.md' },
-      { text: '枚举', link: '/enums.md' },
-      { text: '接口', link: '/interfaces.md' },
-      { text: '类', link: '/classes.md' }
+      { text: '类索引', link: '/classes.md' },
+      { text: '枚举索引', link: '/enums.md' },
+      { text: '接口索引', link: '/interfaces.md' },
+      { text: '反馈方式', link: '/start.md' }
     ]
   },
   ...[
     // core
     {
-      text: '核心基类',
+      text: '基类',
       link: '',
       collapsed: true,
       collapsible: true,
@@ -417,7 +417,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
     },
     //sence
     {
-      text: '灯光/音效/特效',
+      text: '场景特效',
       link: '',
       collapsed: true,
       collapsible: true,
