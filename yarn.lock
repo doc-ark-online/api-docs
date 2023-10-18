@@ -1239,10 +1239,10 @@ metaapp-pandora-sdk@^5.0.2:
     promise-polyfill "^8.2.0"
     whatwg-fetch "^3.5.0"
 
-metaapp-prodigytech-doc-theme@^2.1.8:
-  version "2.1.8"
-  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-2.1.8.tgz#bdbccc018dac3fea72ebc8200808167295b3c394"
-  integrity sha512-W8FdtJKd/JubXjhOLGrcVayKSLzssShTOPbbQNoGMMOasp6iDOOkOGICpv3SSVa/vvYdlQZLjRX9k1g0LsSGoQ==
+metaapp-prodigytech-doc-theme@^2.1.9:
+  version "2.1.11"
+  resolved "https://api-web-registry.metaapp.cn/metaapp-prodigytech-doc-theme/-/metaapp-prodigytech-doc-theme-2.1.11.tgz#a56c4cf72693b4342e57c8c3f6350d41319baeda"
+  integrity sha512-968xkJ85hiGORyO2TEZysrj1BWvdL2aF4BHvNrAqo09k4VmACSvG2S6vPRqxCZm7PIJLcp3aG6b4JbzgtR6ONw==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
@@ -1257,6 +1257,7 @@ metaapp-prodigytech-doc-theme@^2.1.8:
     shiki "^0.12.1"
     viewerjs "^1.11.3"
     vite "^4.0.2"
+    vitepress-plugin-codeblocks-fold "^1.2.27"
     vue "^3.2.45"
 
 metaapp-simple-pandora-sdk@^1.0.13:
@@ -1478,6 +1479,11 @@ vite@^4.4.9:
     rollup "^3.27.1"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vitepress-plugin-codeblocks-fold@^1.2.27:
+  version "1.2.27"
+  resolved "https://registry.npmmirror.com/vitepress-plugin-codeblocks-fold/-/vitepress-plugin-codeblocks-fold-1.2.27.tgz#5a3aa0eeaaaeeb4a4dbc6397edb1a75694d8f367"
+  integrity sha512-zFZ3Brzbz3DiAG9y/eUp1/Vbkops7HkwRha64JD90xkZ30iNvW+9cDpiu1bLPOnvqBG/xx8RmxePPnJuRYPUdQ==
 
 vitepress@^1.0.0-rc.15:
   version "1.0.0-rc.15"
