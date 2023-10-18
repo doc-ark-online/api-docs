@@ -2,11 +2,11 @@
 
 # Action3<T1, T2, T3\> <Badge type="tip" text="Class" /> <Score text="Action3<T1, T2, T3\>" />
 
-<p class="content-big">
+<span class="content-big">
 
 三个参数的代理
 
-</p>
+</span>
 
 ## Type parameters
 

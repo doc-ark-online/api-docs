@@ -2,11 +2,11 @@
 
 # Image <Badge type="tip" text="Class" /> <Score text="Image" />
 
-<p class="content-big">
+<span class="content-big">
 
 UI 图片
 
-</p>
+</span>
 
 ## Hierarchy
 

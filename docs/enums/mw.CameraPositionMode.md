@@ -2,11 +2,11 @@
 
 # CameraPositionMode <Badge type="tip" text="Enumeration" /> <Score text="CameraPositionMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 摄像机位置模式
 
-</p>
+</span>
 
 ## Table of contents
 

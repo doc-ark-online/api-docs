@@ -2,11 +2,11 @@
 
 # AdsState <Badge type="tip" text="Enumeration" /> <Score text="AdsState" />
 
-<p class="content-big">
+<span class="content-big">
 
 广告状态，调用show方法的时候可能返回的广告状态
 
-</p>
+</span>
 
 ## Table of contents
 

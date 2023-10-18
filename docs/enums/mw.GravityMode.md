@@ -2,11 +2,11 @@
 
 # GravityMode <Badge type="tip" text="Enumeration" /> <Score text="GravityMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 重力模式
 
-</p>
+</span>
 
 ## Table of contents
 

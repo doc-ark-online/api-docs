@@ -2,11 +2,11 @@
 
 # LanguageUtil <Badge type="tip" text="Class" /> <Score text="LanguageUtil" />
 
-<p class="content-big">
+<span class="content-big">
 
 多语言工具
 
-</p>
+</span>
 
 ## Table of contents
 

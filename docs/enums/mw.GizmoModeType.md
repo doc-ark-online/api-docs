@@ -2,11 +2,11 @@
 
 # GizmoModeType <Badge type="tip" text="Enumeration" /> <Score text="GizmoModeType" />
 
-<p class="content-big">
+<span class="content-big">
 
 gizmo模式
 
-</p>
+</span>
 
 ## Table of contents
 

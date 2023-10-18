@@ -2,11 +2,11 @@
 
 # TextJustify <Badge type="tip" text="Enumeration" /> <Score text="TextJustify" />
 
-<p class="content-big">
+<span class="content-big">
 
 文本排列对齐规则
 
-</p>
+</span>
 
 ## Table of contents
 

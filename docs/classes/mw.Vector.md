@@ -2,11 +2,11 @@
 
 # Vector <Badge type="tip" text="Class" /> <Score text="Vector" />
 
-<p class="content-big">
+<span class="content-big">
 
 由分量 (x,y,z) 组成的三维空间中的向量
 
-</p>
+</span>
 
 ## Table of contents
 

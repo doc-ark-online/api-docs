@@ -2,11 +2,11 @@
 
 # Canvas <Badge type="tip" text="Class" /> <Score text="Canvas" />
 
-<p class="content-big">
+<span class="content-big">
 
 可挂载叶子节点的根节点，以及提供各种自动布局功能
 
-</p>
+</span>
 
 ## Hierarchy
 

@@ -4,11 +4,11 @@
 
 **`Instance`**
 
-<p class="content-big">
+<span class="content-big">
 
 UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
-</p>
+</span>
 需要在全局调用，否则会自动在第一个UI生成时自动生成一个默认的管理类.
 
 ::: warning Precautions
@@ -38,16 +38,12 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 | **[canvas](mw.UIService.md#canvas)**(): [`Canvas`](mw.Canvas.md)  |
 | :-----|
 | 全局所有UI的根canvas|
-| **[instance](mw.UIService.md#instance)**(): [`UIService`](mw.UIService.md)  |
-| 获取UIService单例|
 | **[uiLogInfoEnable](mw.UIService.md#uiloginfoenable)**(): `boolean`  |
 | 允许定时输出UIService中管理到的UI的信息|
 
 ### Methods <Score text="Methods" /> 
-| **[destroy](mw.UIService.md#destroy)**(): `void`  |
-| :-----|
-| 销毁该单列，也会销毁所有的UI,需要重新创建才能管理UI|
 | **[dumpUIData](mw.UIService.md#dumpuidata)**(): `void`  |
+| :-----|
 | 打印所有管理到的UI信息|
 | **[init](mw.UIService.md#init)**(): `void`  |
 | 初始化UIManger|
@@ -55,12 +51,12 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 | 添加UI的管理层|
 | **[create](mw.UIService.md#create)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>  |
 | 创建一个界面|
+| **[destroy](mw.UIService.md#destroy)**(): `void`  |
+| 销毁该服务，也会销毁所有的UI,再次使用该服务器会重新初始化|
 | **[destroyUI](mw.UIService.md#destroyui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `void`  |
 | 销毁一个界面,相当于DestroyObject|
 | **[getAllUI](mw.UIService.md#getallui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>[]  |
 | 根据界面类获取界面的所有对象|
-| **[getInstance](mw.UIService.md#getinstance)**<`T`: extends [`UIService`](mw.UIService.md)<`T`\>\>(`ManagerClass`: () => `T`: extends [`UIService`](mw.UIService.md)<`T`\>): `T`: extends [`UIService`](mw.UIService.md)<`T`\>  |
-| 获取UIService子类ManagerClass单例，如果是第一次调用会创建一个ManagerClass的单例供全局使用|
 | **[getUI](mw.UIService.md#getui)**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`PanelClass`: () => `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>, `bNeedNew?`: `boolean`): `T`: extends [`UIScript`](mw.UIScript.md)<`T`\>  |
 | 根据界面类获取界面的对象|
 | **[getUILayer](mw.UIService.md#getuilayer)**(`panel`: [`UIScript`](mw.UIScript.md)): `number`  |
@@ -140,34 +136,6 @@ ___
 
 ___
 
-### instance <Score text="instance" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `Static` `get` **instance**(): [`UIService`](mw.UIService.md) <Badge type="tip" text="client" />
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-获取UIService单例
-
-
-#### Returns
-
-| [`UIService`](mw.UIService.md) | 返回获取UIService单例的对象 |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
 ### uiLogInfoEnable <Score text="uiLogInfoEnable" /> 
 
 <table class="get-set-table">
@@ -215,16 +183,6 @@ ___
 
 
 ## Methods
-
-### destroy <Score text="destroy" /> 
-
-• **destroy**(): `void` <Badge type="tip" text="client" />
-
-销毁该单列，也会销毁所有的UI,需要重新创建才能管理UI
-
-
-
-___
 
 ### dumpUIData <Score text="dumpUIData" /> 
 
@@ -286,6 +244,16 @@ ___
 
 ___
 
+### destroy <Score text="destroy" /> 
+
+• `Static` **destroy**(): `void` <Badge type="tip" text="client" />
+
+销毁该服务，也会销毁所有的UI,再次使用该服务器会重新初始化
+
+
+
+___
+
 ### destroyUI <Score text="destroyUI" /> 
 
 • `Static` **destroyUI**<`T`\>(`PanelClass`): `void` <Badge type="tip" text="client" />
@@ -326,30 +294,6 @@ ___
 #### Type parameters
 
 | `T` | extends [`UIScript`](mw.UIScript.md)<`T`\> |
-| :------ | :------ |
-
-___
-
-### getInstance <Score text="getInstance" /> 
-
-• `Static` **getInstance**<`T`\>(`ManagerClass`): `T` <Badge type="tip" text="client" />
-
-获取UIService子类ManagerClass单例，如果是第一次调用会创建一个ManagerClass的单例供全局使用
-
-#### Parameters
-
-| `ManagerClass` () => `T` | 子类 |
-| :------ | :------ |
-
-#### Returns
-
-| `T` | 返回获取UIService子类ManagerClass单例的对象 |
-| :------ | :------ |
-
-
-#### Type parameters
-
-| `T` | extends [`UIService`](mw.UIService.md)<`T`\> |
 | :------ | :------ |
 
 ___

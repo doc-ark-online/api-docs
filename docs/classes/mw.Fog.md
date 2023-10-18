@@ -2,53 +2,53 @@
 
 # Fog <Badge type="tip" text="Class" /> <Score text="Fog" />
 
-<p class="content-big">
+<span class="content-big">
 
 环境雾
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 ----------------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 环境雾是一种大气效果，可以模拟雾、大气灰尘等渲染真实的大气效果，在场景中制造云雾缭绕的氛围感。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 环境雾中的属性与方法均为 static ， Fog 直接调用即可设置环境雾。其中比较常用的有：
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - enabled 静态属性开启设为 TRUE 才可使用环境雾功能。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - directionalInscatteringColor 静态属性表示雾的颜色。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - density 静态属性表示雾的密度。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - startDistance 静态属性表示雾与摄像机的距离。
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -134,11 +134,11 @@
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
 ```ts
@@ -159,11 +159,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾密度
 ```ts
@@ -234,11 +234,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
 ```ts
@@ -255,11 +255,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制太阳光散射颜色
 ```ts
@@ -326,11 +326,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
 ```ts
@@ -351,11 +351,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射指数
 ```ts
@@ -426,11 +426,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
 ```ts
@@ -451,11 +451,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制太阳光散射初始距离
 ```ts
@@ -526,11 +526,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
 ```ts
@@ -551,11 +551,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾开启关闭
 ```ts
@@ -626,11 +626,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
 ```ts
@@ -651,11 +651,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾高度
 ```ts
@@ -726,11 +726,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
 ```ts
@@ -751,11 +751,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾衰弱高度
 ```ts
@@ -826,11 +826,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
 ```ts
@@ -847,11 +847,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾散射颜色
 ```ts
@@ -918,11 +918,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
 ```ts
@@ -943,11 +943,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾最大透明度
 ```ts
@@ -1016,11 +1016,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
 ```ts
@@ -1041,11 +1041,11 @@ export default class FogExample extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1和2键控制雾起始距离
 ```ts
@@ -1083,11 +1083,11 @@ export default class FogExample extends Script {
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器后处理实时效果
 
-</p>
+</span>
 
 创建一个名为"FogExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过1键控制雾预设
 ```ts

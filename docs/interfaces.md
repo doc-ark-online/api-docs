@@ -35,6 +35,13 @@ Interfaces
 | [ProjectileMovementConfig](interfaces/mw.ProjectileMovementConfig.md) | 投掷物配置类型 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
+## R
+| Name | Description | Groups |
+| :-----| :-----| :-----|
+| [RequestInit](interfaces/mw.RequestInit.md) | HTTP请求信息的对象 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Response](interfaces/mw.Response.md) | HTTP响应信息的对象 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+
+
 ## T
 | Name | Description | Groups |
 | :-----| :-----| :-----|

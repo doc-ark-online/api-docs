@@ -2,11 +2,11 @@
 
 # PropertyStatus <Badge type="tip" text="Enumeration" /> <Score text="PropertyStatus" />
 
-<p class="content-big">
+<span class="content-big">
 
 属性状态
 
-</p>
+</span>
 
 ## Table of contents
 

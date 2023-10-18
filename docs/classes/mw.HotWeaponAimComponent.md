@@ -2,17 +2,17 @@
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
-<p class="content-big">
+<span class="content-big">
 
 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponAimSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器的启用了瞄准组件并设置参数，添加委托的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

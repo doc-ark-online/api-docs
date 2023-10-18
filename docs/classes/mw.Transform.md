@@ -2,11 +2,11 @@
 
 # Transform <Badge type="tip" text="Class" /> <Score text="Transform" />
 
-<p class="content-big">
+<span class="content-big">
 
 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。
 
-</p>
+</span>
 
 ::: warning Precautions
 

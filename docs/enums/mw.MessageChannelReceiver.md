@@ -2,11 +2,11 @@
 
 # MessageChannelReceiver <Badge type="tip" text="Enumeration" /> <Score text="MessageChannelReceiver" />
 
-<p class="content-big">
+<span class="content-big">
 
 枚举各个通道的使用与接收方
 
-</p>
+</span>
 
 ## Table of contents
 

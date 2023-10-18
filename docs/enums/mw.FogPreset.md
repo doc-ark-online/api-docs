@@ -2,11 +2,11 @@
 
 # FogPreset <Badge type="tip" text="Enumeration" /> <Score text="FogPreset" />
 
-<p class="content-big">
+<span class="content-big">
 
 环境雾预设枚举
 
-</p>
+</span>
 
 ## Table of contents
 

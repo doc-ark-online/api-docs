@@ -2,113 +2,113 @@
 
 # Character <Badge type="tip" text="Class" /> <Score text="Character" />
 
-<p class="content-big">
+<span class="content-big">
 
 角色
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 角色是指代表玩家游戏实体。它是游戏中能够在虚拟世界中移动、与环境和其他角色进行交互的主要对象。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 可以将 Character 看作是游戏中的角色角色扮演者，它可以是玩家控制的角色或由游戏系统控制的角色。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 角色具备：
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 移动和交互。Character 具备在游戏世界中移动和与环境进行交互的能力。它可以行走、跑动、跳跃或飞行等，根据游戏规则和角色设计的不同， Character 可以执行各种动作。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 功能和行为。Character 可以具备各种功能和行为。例如，一个角色可以是战士，具有攻击和防御技能；另一个角色可以是商人，负责交易和提供物品。 Character 的功能和行为由游戏开发者根据游戏需求进行定义和实现。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 除角色基础移动行为。它还负责处理角色的高级移动逻辑和物理模拟等，使角色更逼真拟人。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 1. 控制角色移动：你可以使用它来指定角色的移动速度、方向和加速度等参数。它允许你以编程的方式控制角色的运动，例如让角色向前移动、旋转或跳跃等。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 2. 支持多种移动方式：例如，它可以实现直线运动、旋转运动、跳跃和飞行等。根据你的游戏需求，你可以选择合适的移动方式，并使用接口来实现。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 3. 处理物理模拟：它可以使用物理引擎来模拟角色的重力、碰撞和惯性等效果。通过物理模拟，角色可以与游戏世界中的其他对象进行交互，并受到合理的物理影响。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 4. 处理碰撞检测：处理角色与其他对象之间的碰撞检测。它可以检测角色与墙壁、地面或其他角色的碰撞，并采取相应的行动。这有助于实现更真实和可靠的角色移动和交互。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 5. 处理角色外观和动画效果：可以给角色赋予各种各样的外貌。为角色选择合适的服装、装备和特征。无论是超级英雄的紧身服、中世纪骑士的盔甲还是未来战士的高科技装备，感受到角色的独特风格和个性。还能赋予角色生动的动画效果。能够让角色在游戏中跳跃、奔跑、战斗，甚至是展现出各种特殊技能和动作。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 其中比较重要的：
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - addMovement 函数控制角色沿着给定方向移动。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - loadAnimation 函数将左侧动画资源加载在角色身上，使角色自如的使用多种动作。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - switchToFlying 函数表示角色切换为飞行状态；switchToSwimming 函数表示角色切换为游泳状态（需配合 SwimmingVolume 逻辑对象使用）。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - collisionExtent 属性调整角色碰撞大小。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - description 属性更改角色外观，左侧栏中提供角色大量的衣服、饰品等资源，传入资源ID字符串进行随意更换外观。
 
-</p>
+</span>
 
 ## Hierarchy
 
@@ -324,11 +324,11 @@
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_OnDescriptionChange"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -415,11 +415,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_OnDescriptionComplete"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -501,11 +501,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"23060,86749"拖入优先加载栏。创建一个名为"Example_Character_OnMovementModeChange"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建游泳池以便支持切换游泳状态。给角色【移动模式切换】委托添加一个函数:打印当前移动模式，看到角色根据运动模式切换道具的效果。按下键盘“1”，角色切换为行走。按下键盘“2”，角色切换为游泳(需在游泳区域内)。按下键盘“3”，角色生成喷气背包，切换为飞行。.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -622,7 +622,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InBrakingDecelerationFlying` | `number` |
@@ -634,85 +633,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_BrakingDecelerationFlying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速，修改飞行制动速度。你将在场景中看到角色在加速飞行过程中飞行制动速度变化的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_BrakingDecelerationFlying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速，修改飞行制动速度。你将在场景中看到角色在加速飞行过程中飞行制动速度变化的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_BrakingDecelerationFlying extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 加载喷射加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 0;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:键盘“1”，角色切换为飞行
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.switchToFlying();
-            });
-            // 添加一个按键方法:按下键盘“2”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Two, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放飞行动画，修改飞行速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxFlySpeed = 2000;
-                    myCharacter.brakingDecelerationFlying = 5000;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原飞行速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxFlySpeed = 500;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.addMovement(new Vector(0, 0, 5));
-                    }, 1);
-                }
-                // 2秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxFlySpeed = 500;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 2000);
-                    // 2.2秒后还原角色飞行制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationFlying = 300;
-                    }, 2200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_BrakingDecelerationFlying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速，修改飞行制动速度。你将在场景中看到角色在加速飞行过程中飞行制动速度变化的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_BrakingDecelerationFlying extends Script {
+export default class Example_BrakingDecelerationFlying extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -824,7 +753,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InBrakingDecelerationSwimming` | `number` |
@@ -836,107 +764,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_BrakingDecelerationSwimming"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改游泳制动速度后进行喷射加速.你可以看到的角色游泳制动速度变化的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_BrakingDecelerationSwimming"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改游泳制动速度后进行喷射加速.你可以看到的角色游泳制动速度变化的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_BrakingDecelerationSwimming extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("SwimmingVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法:按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法:按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法:按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_BrakingDecelerationSwimming"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改游泳制动速度后进行喷射加速.你可以看到的角色游泳制动速度变化的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_BrakingDecelerationSwimming extends Script {
+export default class Example_BrakingDecelerationSwimming extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在服务端执行
@@ -1070,7 +906,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InBrakingDecelerationWalking` | `number` |
@@ -1082,66 +917,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_BrakingDecelerationWalking"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色行走制动速率为原来的0.1倍,并在场景中看到角色移动加速变快的效果.代码如下:
+使用示例:创建一个名为"Example_BrakingDecelerationWalking"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色行走制动速率为原来的0.1倍,并在场景中看到角色移动加速变快的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_BrakingDecelerationWalking extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度：" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_BrakingDecelerationWalking"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色行走制动速率为原来的0.1倍,并在场景中看到角色移动加速变快的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_BrakingDecelerationWalking extends Script {
+export default class Example_BrakingDecelerationWalking extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -1234,7 +1018,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `boolean` |
@@ -1246,107 +1029,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_CanJumpOutOfWater"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"CanJumpOutOfWater"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CanJumpOutOfWater extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("SwimmingVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法:按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法:按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法:按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_CanJumpOutOfWater"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_CanJumpOutOfWater extends Script {
+export default class CanJumpOutOfWater extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在服务端执行
@@ -1480,7 +1171,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `CanStepUpOn` | `boolean` |
@@ -1492,56 +1182,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CanStandOn"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个NPC。按下键盘“2”，开启/关闭角色是否可被站立.可以看到NPC切换可被站立后与角色不同的交互效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CanStandOn extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成拱门带碰撞的拱门
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色碰撞属性和跳跃属性
-            myCharacter.capsuleCorrectionEnabled = true;
-            myCharacter.maxJumpHeight = 250;
-            let NPC = Player.spawnDefaultCharacter();
-            NPC.worldTransform.position = new Vector(0, 100, 100);
-            // 添加一个按键方法：按下键盘“1”，开启/关闭NPC与其他角色的碰撞
-            InputUtil.onKeyDown(Keys.One, () => {
-                NPC.collisionWithOtherCharacterEnabled = !NPC.collisionWithOtherCharacterEnabled;
-                console.log("NPC与角色的碰撞 " + NPC.collisionWithOtherCharacterEnabled);
-            });
-            // 添加一个按键方法：按下键盘“2”，开启/关闭角色是否可被站立
-            InputUtil.onKeyDown(Keys.Two, () => {
-                NPC.canStandOn = !NPC.canStandOn;
-                console.log("NPC角色可被站立 " + NPC.canStandOn);
-            });
-            // 添加一个按键方法：按下键盘“3”，修改角色碰撞并打印结果
-            InputUtil.onKeyDown(Keys.Three, () => {
-                // 碰撞范围collisionExtent内部值全是半值，半径半高半长
-                myCharacter.setCollisionShapeAndExtent(CustomShapeType.Box, new Vector(50, 50, 200));
-                console.log("当前角色碰撞 " + myCharacter.collisionShape + " " + myCharacter.collisionExtent);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CanStandOn"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个NPC。按下键盘“2”，开启/关闭角色是否可被站立.可以看到NPC切换可被站立后与角色不同的交互效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -1632,7 +1277,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `usedCapsuleCorrection` | `boolean` |
@@ -1644,56 +1288,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CapsuleCorrectionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色碰撞修正为true，代表角色碰撞会和角色外观保持一致.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CapsuleCorrectionEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成拱门带碰撞的拱门
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色碰撞属性和跳跃属性
-            myCharacter.capsuleCorrectionEnabled = true;
-            myCharacter.maxJumpHeight = 250;
-            let NPC = Player.spawnDefaultCharacter();
-            NPC.worldTransform.position = new Vector(0, 100, 100);
-            // 添加一个按键方法：按下键盘“1”，开启/关闭NPC与其他角色的碰撞
-            InputUtil.onKeyDown(Keys.One, () => {
-                NPC.collisionWithOtherCharacterEnabled = !NPC.collisionWithOtherCharacterEnabled;
-                console.log("NPC与角色的碰撞 " + NPC.collisionWithOtherCharacterEnabled);
-            });
-            // 添加一个按键方法：按下键盘“2”，开启/关闭角色是否可被站立
-            InputUtil.onKeyDown(Keys.Two, () => {
-                NPC.canStandOn = !NPC.canStandOn;
-                console.log("NPC角色可被站立 " + NPC.canStandOn);
-            });
-            // 添加一个按键方法：按下键盘“3”，修改角色碰撞并打印结果
-            InputUtil.onKeyDown(Keys.Three, () => {
-                // 碰撞范围collisionExtent内部值全是半值，半径半高半长
-                myCharacter.setCollisionShapeAndExtent(CustomShapeType.Box, new Vector(50, 50, 200));
-                console.log("当前角色碰撞 " + myCharacter.collisionShape + " " + myCharacter.collisionExtent);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CapsuleCorrectionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色碰撞修正为true，代表角色碰撞会和角色外观保持一致.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -1762,11 +1361,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_CharacterType"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -1887,7 +1486,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `extent` | [`Vector`](mw.Vector.md) |
@@ -1899,56 +1497,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionExtent"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“3”，修改角色碰撞并打印结果.你将在控制台中看到打印的当前角色碰撞形状大小.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CollisionExtent extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成拱门带碰撞的拱门
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色碰撞属性和跳跃属性
-            myCharacter.capsuleCorrectionEnabled = true;
-            myCharacter.maxJumpHeight = 250;
-            let NPC = Player.spawnDefaultCharacter();
-            NPC.worldTransform.position = new Vector(0, 100, 100);
-            // 添加一个按键方法：按下键盘“1”，开启/关闭NPC与其他角色的碰撞
-            InputUtil.onKeyDown(Keys.One, () => {
-                NPC.collisionWithOtherCharacterEnabled = !NPC.collisionWithOtherCharacterEnabled;
-                console.log("NPC与角色的碰撞 " + NPC.collisionWithOtherCharacterEnabled);
-            });
-            // 添加一个按键方法：按下键盘“2”，开启/关闭角色是否可被站立
-            InputUtil.onKeyDown(Keys.Two, () => {
-                NPC.canStandOn = !NPC.canStandOn;
-                console.log("NPC角色可被站立 " + NPC.canStandOn);
-            });
-            // 添加一个按键方法：按下键盘“3”，修改角色碰撞并打印结果
-            InputUtil.onKeyDown(Keys.Three, () => {
-                // 碰撞范围collisionExtent内部值全是半值，半径半高半长
-                myCharacter.setCollisionShapeAndExtent(CustomShapeType.Box, new Vector(50, 50, 200));
-                console.log("当前角色碰撞 " + myCharacter.collisionShape + " " + myCharacter.collisionExtent);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionExtent"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“3”，修改角色碰撞并打印结果.你将在控制台中看到打印的当前角色碰撞形状大小.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -2039,7 +1592,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `CustomShapeType` | [`CustomShapeType`](../enums/mw.CustomShapeType.md) |
@@ -2051,56 +1603,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionShape"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“3”，修改角色碰撞并打印结果.你将在控制台中看到打印的当前角色碰撞形状.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CollisionShape extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成拱门带碰撞的拱门
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色碰撞属性和跳跃属性
-            myCharacter.capsuleCorrectionEnabled = true;
-            myCharacter.maxJumpHeight = 250;
-            let NPC = Player.spawnDefaultCharacter();
-            NPC.worldTransform.position = new Vector(0, 100, 100);
-            // 添加一个按键方法：按下键盘“1”，开启/关闭NPC与其他角色的碰撞
-            InputUtil.onKeyDown(Keys.One, () => {
-                NPC.collisionWithOtherCharacterEnabled = !NPC.collisionWithOtherCharacterEnabled;
-                console.log("NPC与角色的碰撞 " + NPC.collisionWithOtherCharacterEnabled);
-            });
-            // 添加一个按键方法：按下键盘“2”，开启/关闭角色是否可被站立
-            InputUtil.onKeyDown(Keys.Two, () => {
-                NPC.canStandOn = !NPC.canStandOn;
-                console.log("NPC角色可被站立 " + NPC.canStandOn);
-            });
-            // 添加一个按键方法：按下键盘“3”，修改角色碰撞并打印结果
-            InputUtil.onKeyDown(Keys.Three, () => {
-                // 碰撞范围collisionExtent内部值全是半值，半径半高半长
-                myCharacter.setCollisionShapeAndExtent(CustomShapeType.Box, new Vector(50, 50, 200));
-                console.log("当前角色碰撞 " + myCharacter.collisionShape + " " + myCharacter.collisionExtent);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionShape"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“3”，修改角色碰撞并打印结果.你将在控制台中看到打印的当前角色碰撞形状.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -2190,7 +1697,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `boolean` |
@@ -2202,56 +1708,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionWithOtherCharacterEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个NPC。按下键盘“1”，开启/关闭NPC与其他角色的碰撞.可以看到NPC关闭碰撞后与角色不同的交互效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CollisionWithOtherCharacterEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成拱门带碰撞的拱门
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色碰撞属性和跳跃属性
-            myCharacter.capsuleCorrectionEnabled = true;
-            myCharacter.maxJumpHeight = 250;
-            let NPC = Player.spawnDefaultCharacter();
-            NPC.worldTransform.position = new Vector(0, 100, 100);
-            // 添加一个按键方法：按下键盘“1”，开启/关闭NPC与其他角色的碰撞
-            InputUtil.onKeyDown(Keys.One, () => {
-                NPC.collisionWithOtherCharacterEnabled = !NPC.collisionWithOtherCharacterEnabled;
-                console.log("NPC与角色的碰撞 " + NPC.collisionWithOtherCharacterEnabled);
-            });
-            // 添加一个按键方法：按下键盘“2”，开启/关闭角色是否可被站立
-            InputUtil.onKeyDown(Keys.Two, () => {
-                NPC.canStandOn = !NPC.canStandOn;
-                console.log("NPC角色可被站立 " + NPC.canStandOn);
-            });
-            // 添加一个按键方法：按下键盘“3”，修改角色碰撞并打印结果
-            InputUtil.onKeyDown(Keys.Three, () => {
-                // 碰撞范围collisionExtent内部值全是半值，半径半高半长
-                myCharacter.setCollisionShapeAndExtent(CustomShapeType.Box, new Vector(50, 50, 200));
-                console.log("当前角色碰撞 " + myCharacter.collisionShape + " " + myCharacter.collisionExtent);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_CollisionWithOtherCharacterEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个NPC。按下键盘“1”，开启/关闭NPC与其他角色的碰撞.可以看到NPC关闭碰撞后与角色不同的交互效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -2388,7 +1849,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `canCrouch` | `boolean` |
@@ -2400,57 +1860,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_CrouchEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器.按下键盘“1”，启用/禁用下蹲能力.你可以看到看到角色禁用下蹲能力后进入草丛无法蹲下的效果。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CrouchEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成草丛和拱门
-            GameObject.spawn("54834",{transform: new Transform(new Vector(300, 0, 0), Rotation.zero, new Vector(2, 2, 2))});
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 生成触发器并添加委托函数：进入触发器的角色蹲下，离开触发器站起
-            let tri = GameObject.spawn("Trigger",{transform: new Transform(new Vector(300, 0, 50), Rotation.zero, new Vector(2, 2, 1))}) as Trigger;
-            tri.onEnter.add((character: Character) => {
-                character.crouch(true);
-                setTimeout(() => {
-                    console.log("当前角色下蹲 " + character.isCrouching);
-                }, 500);
-            });
-            tri.onLeave.add((character: Character) => {
-                character.crouch(false);
-                console.log("当前角色下蹲 " + character.isCrouching);
-            });
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 地面蹲伏行走时的最大移动速度100
-            myCharacter.maxWalkSpeedCrouched = 100;
-            // 下蹲后高度为100
-            myCharacter.crouchedHeight = 100;
-            // 添加一个按键方法：按下键盘“1”，启用/禁用下蹲能力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.crouchEnabled = !myCharacter.crouchEnabled;
-                console.log("当前角色是否能下蹲 " + myCharacter.crouchEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_CrouchEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器.按下键盘“1”，启用/禁用下蹲能力.你可以看到看到角色禁用下蹲能力后进入草丛无法蹲下的效果。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -2542,7 +1956,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InCrouchedHeight` | `number` |
@@ -2554,57 +1967,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_CrouchedHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置下蹲后高度为100。你可以看到角色蹲下后可以穿过之前不能穿过的拱门。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_CrouchedHeight extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成草丛和拱门
-            GameObject.spawn("54834",{transform: new Transform(new Vector(300, 0, 0), Rotation.zero, new Vector(2, 2, 2))});
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 生成触发器并添加委托函数：进入触发器的角色蹲下，离开触发器站起
-            let tri = GameObject.spawn("Trigger",{transform: new Transform(new Vector(300, 0, 50), Rotation.zero, new Vector(2, 2, 1))}) as Trigger;
-            tri.onEnter.add((character: Character) => {
-                character.crouch(true);
-                setTimeout(() => {
-                    console.log("当前角色下蹲 " + character.isCrouching);
-                }, 500);
-            });
-            tri.onLeave.add((character: Character) => {
-                character.crouch(false);
-                console.log("当前角色下蹲 " + character.isCrouching);
-            });
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 地面蹲伏行走时的最大移动速度100
-            myCharacter.maxWalkSpeedCrouched = 100;
-            // 下蹲后高度为100
-            myCharacter.crouchedHeight = 100;
-            // 添加一个按键方法：按下键盘“1”，启用/禁用下蹲能力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.crouchEnabled = !myCharacter.crouchEnabled;
-                console.log("当前角色是否能下蹲 " + myCharacter.crouchEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_CrouchedHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置下蹲后高度为100。你可以看到角色蹲下后可以穿过之前不能穿过的拱门。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -2701,11 +2068,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Character_CurrentStance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -2775,11 +2142,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_Character_CurrentSubStance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -2853,11 +2220,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_Description"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -2976,7 +2343,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `inName` | `string` |
@@ -2988,39 +2354,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_DisplayName"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，你将在场景中看到角色显示名称切换的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_DisplayName extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let names = ["Cali", "Lily", "Emmie"];
-            let index = 0;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 打印本地玩家控制的character对象的guid和名字
-            console.log("My character: " + myPlayer.character.guid + " " + myPlayer.character.displayName);
-            // 添加一个按键方法：按下键盘“1”，切换角色显示名称
-            InputUtil.onKeyDown(Keys.One, () => {
-                myPlayer.character.displayName = names[index % 3];
-                index++;
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_DisplayName"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，你将在场景中看到角色显示名称切换的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -3094,7 +2432,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InAirControl` | `number` |
@@ -3106,49 +2443,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_DriftControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
+使用示例:创建一个名为"Example_DriftControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_DriftControl extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大下落速度为1024
-            myCharacter.maxFallingSpeed = 1024;
-            // 下落制动速率为10
-            myCharacter.horizontalBrakingDecelerationFalling = 10;
-            // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.driftControl = 0.1;
-            // 10倍重力
-            myCharacter.gravityScale = 10;
-            // 添加一个按键方法：按下键盘“1”，角色设置跳跃高度为1000后跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxJumpHeight = 1000;
-                myCharacter.jump();
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_DriftControl"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色空中控制系数为0.1。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到超过下落速度阈值后空中角色难以控制的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_DriftControl extends Script {
+export default class Example_DriftControl extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -3211,11 +2514,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"197386"拖入优先加载栏。创建一个名为"Example_Character_ForceUpdateMovement"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个立方体，并在onUpdate里左右移动,按下键盘“1”,启用/禁用角色【强制更新移动】，看到立方体对角色的推动效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -3313,7 +2616,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `newGravityScale` | `number` |
@@ -3325,45 +2627,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_GravityScale"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色重力倍率为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到十倍重力下角色下落的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_GravityScale extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大下落速度为1024
-            myCharacter.maxFallingSpeed = 1024;
-            // 下落制动速率为10
-            myCharacter.horizontalBrakingDecelerationFalling = 10;
-            // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.driftControl = 0.1;
-            // 10倍重力
-            myCharacter.gravityScale = 10;
-            // 添加一个按键方法：按下键盘“1”，角色设置跳跃高度为1000后跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxJumpHeight = 1000;
-                myCharacter.jump();
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_GravityScale"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色重力倍率为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到十倍重力下角色下落的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -3443,7 +2711,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `inGroundFriction` | `number` |
@@ -3455,66 +2722,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_GroundFriction"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色地面摩擦力为1,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变快的效果.代码如下:
+使用示例:创建一个名为"Example_GroundFriction"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色地面摩擦力为1,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变快的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_GroundFriction extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色行走制动速率为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度:" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_GroundFriction"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色地面摩擦力为1,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变快的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_GroundFriction extends Script {
+export default class Example_GroundFriction extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -3607,7 +2823,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `used` | `boolean` |
@@ -3619,66 +2834,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_GroundFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
+使用示例:创建一个名为"Example_GroundFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_GroundFrictionEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色行走制动速率为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法:按下键盘“1”，启用/禁用地面摩擦力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度:" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_GroundFrictionEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色摩擦力的来源。并在场景中看到角色移动加速变化的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_GroundFrictionEnabled extends Script {
+export default class Example_GroundFrictionEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -3771,7 +2935,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InBrakingDecelerationFalling` | `number` |
@@ -3783,49 +2946,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_HorizontalBrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
+使用示例:创建一个名为"Example_HorizontalBrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_HorizontalBrakingDecelerationFalling extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大下落速度为1024
-            myCharacter.maxFallingSpeed = 1024;
-            // 下落制动速率为10
-            myCharacter.horizontalBrakingDecelerationFalling = 10;
-            // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.driftControl = 0.1;
-            // 10倍重力
-            myCharacter.gravityScale = 10;
-            // 添加一个按键方法：按下键盘“1”，角色设置跳跃高度为1000后跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxJumpHeight = 1000;
-                myCharacter.jump();
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_HorizontalBrakingDecelerationFalling"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色下落制动速度为10。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更慢的下落加速的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_HorizontalBrakingDecelerationFalling extends Script {
+export default class Example_HorizontalBrakingDecelerationFalling extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -3886,11 +3015,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_IsCrouching"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器.看到角色进入草丛蹲下，离开站起的效果,并在控制台看到打印的角色当前的蹲起状态。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -3963,11 +3092,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_IsDescriptionReady"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -4073,11 +3202,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_IsJumping"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -4143,11 +3272,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_IsMoving"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,如果角色正在移动,你将在控制台中看到打印的角色移动速度.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -4244,7 +3373,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `boolean` |
@@ -4256,46 +3384,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_JumpEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_JumpEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大跳跃高度为300
-            myCharacter.maxJumpHeight = 300;
-            // 最高三连跳
-            myCharacter.jumpMaxCount = 3;
-            // 添加一个按键方法:按下键盘“1”，角色跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.jump();
-                console.log("当前角色是否在跳跃 " + myCharacter.isJumping);
-            });
-            // 添加一个按键方法:按下键盘“2”，启用/禁用跳跃能力。
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.jumpEnabled = !myCharacter.jumpEnabled;
-                console.log("当前角色跳跃能力 " + myCharacter.jumpEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_JumpEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -4376,7 +3469,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InJumpMaxCount` | `number` |
@@ -4388,46 +3480,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_jumpMaxCount"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_jumpMaxCount extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大跳跃高度为300
-            myCharacter.maxJumpHeight = 300;
-            // 最高三连跳
-            myCharacter.jumpMaxCount = 3;
-            // 添加一个按键方法:按下键盘“1”，角色跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.jump();
-                console.log("当前角色是否在跳跃 " + myCharacter.isJumping);
-            });
-            // 添加一个按键方法:按下键盘“2”，启用/禁用跳跃能力。
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.jumpEnabled = !myCharacter.jumpEnabled;
-                console.log("当前角色跳跃能力 " + myCharacter.jumpEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_jumpMaxCount"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -4508,7 +3565,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxAcceleration` | `number` |
@@ -4520,62 +3576,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_MaxAcceleration"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大加速度为原来的0.1倍,并在场景中看到角色加速变慢的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxAcceleration extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度：" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MaxAcceleration"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大加速度为原来的0.1倍,并在场景中看到角色加速变慢的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -4672,7 +3677,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `speed` | `number` |
@@ -4684,49 +3688,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_MaxFallingSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大下落速度为1024。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更快的下落速度的效果.代码如下:
+使用示例:创建一个名为"Example_MaxFallingSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大下落速度为1024。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更快的下落速度的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxFallingSpeed extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大下落速度为1024
-            myCharacter.maxFallingSpeed = 1024;
-            // 下落制动速率为10
-            myCharacter.horizontalBrakingDecelerationFalling = 10;
-            // 按地面移动速率的0.1倍控制下落过程
-            myCharacter.driftControl = 0.1;
-            // 10倍重力
-            myCharacter.gravityScale = 10;
-            // 添加一个按键方法：按下键盘“1”，角色设置跳跃高度为1000后跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxJumpHeight = 1000;
-                myCharacter.jump();
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MaxFallingSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大下落速度为1024。按下键盘“1”，角色设置跳跃高度为1000后跳跃，你可以在场景中看到比正常更快的下落速度的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxFallingSpeed extends Script {
+export default class Example_MaxFallingSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -4802,7 +3772,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxFlySpeed` | `number` |
@@ -4814,85 +3783,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_MaxFlySpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速。你将在场景中看到角色在加速过程中最大飞行速度变化的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_MaxFlySpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速。你将在场景中看到角色在加速过程中最大飞行速度变化的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxFlySpeed extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 加载喷射加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 0;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换为飞行
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.switchToFlying();
-            });
-            // 添加一个按键方法:按下键盘“2”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Two, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放飞行动画，修改飞行速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxFlySpeed = 2000;
-                    myCharacter.brakingDecelerationFlying = 5000;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原飞行速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxFlySpeed = 500;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.addMovement(new Vector(0, 0, 5));
-                    }, 1);
-                }
-                // 2秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxFlySpeed = 500;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 2000);
-                    // 2.2秒后还原角色飞行制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationFlying = 300;
-                    }, 2200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_MaxFlySpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速。你将在场景中看到角色在加速过程中最大飞行速度变化的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxFlySpeed extends Script {
+export default class Example_MaxFlySpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -5004,7 +3903,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxJumpHeight` | `number` |
@@ -5016,46 +3914,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_MaxJumpHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxJumpHeight extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 最大跳跃高度为300
-            myCharacter.maxJumpHeight = 300;
-            // 最高三连跳
-            myCharacter.jumpMaxCount = 3;
-            // 添加一个按键方法:按下键盘“1”，角色跳跃。
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.jump();
-                console.log("当前角色是否在跳跃 " + myCharacter.isJumping);
-            });
-            // 添加一个按键方法:按下键盘“2”，启用/禁用跳跃能力。
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.jumpEnabled = !myCharacter.jumpEnabled;
-                console.log("当前角色跳跃能力 " + myCharacter.jumpEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MaxJumpHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -5136,7 +3999,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxStepHeight` | `number` |
@@ -5148,74 +4010,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_Character_MaxStepHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同高度的立方体:10，20，40，80，160.按下键盘“1”，角色最大可跨越高度增加10.按下键盘“2”，角色最大可跨越高度减小10.你将看到角色最大可跨越高度变化带来的效果.代码如下:
+使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_MaxStepHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同高度的立方体:10，20，40，80，160.按下键盘“1”，角色最大可跨越高度增加10.按下键盘“2”，角色最大可跨越高度减小10.你将看到角色最大可跨越高度变化带来的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxStepHeight extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-         // 下列代码仅在服务端执行
-         if(SystemUtil.isServer()) {
-            // 创建5个不同高度的立方体：10，20，40，80，160
-            let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
-                GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
-            }
-            // 创建5个不同坡度的锥体:1，30，45，60，89
-            let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
-                console.log("1111");
-                GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
-            }
-         }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 添加一个按键方法：按下键盘“1”，角色最大可跨越高度增加10
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxStepHeight += 10;
-                console.log("角色最大可跨越高度：" + myCharacter.maxStepHeight);
-            });
-            // 添加一个按键方法：按下键盘“2”，角色最大可跨越高度减小10
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.maxStepHeight -= 10;
-                console.log("角色最大可跨越高度：" + myCharacter.maxStepHeight);
-            });
-            // 添加一个按键方法：按下键盘“3”，角色可行走的最大角度增加5
-            InputUtil.onKeyDown(Keys.Three, () => {
-                myCharacter.walkableFloorAngle += 5;
-                console.log("可行走的最大角度：" + myCharacter.walkableFloorAngle);
-            });
-            // 添加一个按键方法：按下键盘“4”，角色可行走的最大角度减小5
-            InputUtil.onKeyDown(Keys.Four, () => {
-                myCharacter.walkableFloorAngle -= 5;
-                console.log("可行走的最大角度：" + myCharacter.walkableFloorAngle);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_Character_MaxStepHeight"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同高度的立方体:10，20，40，80，160.按下键盘“1”，角色最大可跨越高度增加10.按下键盘“2”，角色最大可跨越高度减小10.你将看到角色最大可跨越高度变化带来的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxStepHeight extends Script {
+export default class Example_MaxStepHeight extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
          // 下列代码仅在服务端执行
@@ -5316,7 +4119,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxSwimSpeed` | `number` |
@@ -5328,107 +4130,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_MaxSwimSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_MaxSwimSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxSwimSpeed extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("SwimmingVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法:按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法:按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法:按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_MaxSwimSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxSwimSpeed extends Script {
+export default class Example_MaxSwimSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在服务端执行
@@ -5562,7 +4272,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMaxWalkSpeed` | `number` |
@@ -5574,66 +4283,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_MaxWalkSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大行走速度为原来的2倍,并在场景中看到角色移动最高速度变快的效果.代码如下:
+使用示例:创建一个名为"Example_MaxWalkSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大行走速度为原来的2倍,并在场景中看到角色移动最高速度变快的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxWalkSpeed extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度：" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MaxWalkSpeed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色最大行走速度为原来的2倍,并在场景中看到角色移动最高速度变快的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxWalkSpeed extends Script {
+export default class Example_MaxWalkSpeed extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -5726,7 +4384,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `maxSpeed` | `number` |
@@ -5738,61 +4395,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_MaxWalkSpeedCrouched"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置地面蹲伏行走时的最大移动速度100。你可以看到角色蹲下后行走速度减慢的效果。代码如下:
+使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_MaxWalkSpeedCrouched"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置地面蹲伏行走时的最大移动速度100。你可以看到角色蹲下后行走速度减慢的效果。代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MaxWalkSpeedCrouched extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 生成草丛和拱门
-            GameObject.spawn("54834",{transform: new Transform(new Vector(300, 0, 0), Rotation.zero, new Vector(2, 2, 2))});
-            let arch = GameObject.spawn("36851",{transform: new Transform(new Vector(300, 210, 0), new Rotation(0, 0, 90), new Vector(2, 1, 2))}) as Model;
-            arch.setCollision(CollisionStatus.On);
-            // 生成触发器并添加委托函数：进入触发器的角色蹲下，离开触发器站起
-            let tri = GameObject.spawn("Trigger",{transform: new Transform(new Vector(300, 0, 50), Rotation.zero, new Vector(2, 2, 1))}) as Trigger;
-            tri.onEnter.add((character: Character) => {
-                character.crouch(true);
-                setTimeout(() => {
-                    console.log("当前角色下蹲 " + character.isCrouching);
-                }, 500);
-            });
-            tri.onLeave.add((character: Character) => {
-                character.crouch(false);
-                console.log("当前角色下蹲 " + character.isCrouching);
-            });
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 地面蹲伏行走时的最大移动速度100
-            myCharacter.maxWalkSpeedCrouched = 100;
-            // 下蹲后高度为100
-            myCharacter.crouchedHeight = 100;
-            // 添加一个按键方法：按下键盘“1”，启用/禁用下蹲能力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.crouchEnabled = !myCharacter.crouchEnabled;
-                console.log("当前角色是否能下蹲 " + myCharacter.crouchEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_MaxWalkSpeedCrouched"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置地面蹲伏行走时的最大移动速度100。你可以看到角色蹲下后行走速度减慢的效果。代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxWalkSpeedCrouched extends Script {
+export default class Example_MaxWalkSpeedCrouched extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -5928,7 +4539,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMoveFacingDirection` | [`MoveFacingDirection`](../enums/mw.MoveFacingDirection.md) |
@@ -5940,50 +4550,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_MoveFacingDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色的运动面朝方向.你将在场景中看到角色不同运动面朝方向的效果并在控制台看到打印的当前角色的运动轴和面朝方向.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MoveFacingDirection extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置定轴方向
-            myCharacter.movementAxisDirection = new Vector(1, 0, 0);
-            // 打印当前角色的运动轴和面朝方向
-            console.log("当前角色的运动面朝方向 " + MoveFacingDirection[myCharacter.moveFacingDirection]);
-            console.log("当前角色的运动时依据的正方向 " + MovementDirection[myCharacter.movementDirection]);
-            // 添加一个按键方法:按下键盘“1”，切换角色的运动面朝方向
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.moveFacingDirection = (myCharacter.moveFacingDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-            });
-            // 添加一个按键方法:按下键盘“2”，切换角色的运动时依据的正方向
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.movementDirection = (myCharacter.movementDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-                if(myCharacter.movementDirection == 0) {
-                    console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection] + " 定轴方向 " + myCharacter.movementAxisDirection);
-                }
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MoveFacingDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，切换角色的运动面朝方向.你将在场景中看到角色不同运动面朝方向的效果并在控制台看到打印的当前角色的运动轴和面朝方向.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -6068,7 +4639,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMovementAxisDirection` | [`Vector`](mw.Vector.md) |
@@ -6080,50 +4650,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_MovementAxisDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置定轴方向(1, 0, 0)并在控制台看到打印的当前角色的运动轴.按下键盘“2”，切换角色的运动时依据的正方向，你将在场景中看到角色依据正方向修改为定轴方向时运动的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MovementAxisDirection extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置定轴方向
-            myCharacter.movementAxisDirection = new Vector(1, 0, 0);
-            // 打印当前角色的运动轴和面朝方向
-            console.log("当前角色的运动面朝方向 " + MoveFacingDirection[myCharacter.moveFacingDirection]);
-            console.log("当前角色的运动时依据的正方向 " + MovementDirection[myCharacter.movementDirection]);
-            // 添加一个按键方法:按下键盘“1”，切换角色的运动面朝方向
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.moveFacingDirection = (myCharacter.moveFacingDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-            });
-            // 添加一个按键方法:按下键盘“2”，切换角色的运动时依据的正方向
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.movementDirection = (myCharacter.movementDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-                if(myCharacter.movementDirection == 0) {
-                    console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection] + " 定轴方向 " + myCharacter.movementAxisDirection);
-                }
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MovementAxisDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置定轴方向(1, 0, 0)并在控制台看到打印的当前角色的运动轴.按下键盘“2”，切换角色的运动时依据的正方向，你将在场景中看到角色依据正方向修改为定轴方向时运动的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -6212,7 +4743,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InMovementDirection` | [`MovementDirection`](../enums/mw.MovementDirection.md) |
@@ -6224,50 +4754,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_MovementDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，切换角色的运动时依据的正方向.你将在场景中看到角色不同运动时依据正方向的效果并在控制台看到打印的当前角色的运动轴和依据的正方向.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MovementDirection extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置定轴方向
-            myCharacter.movementAxisDirection = new Vector(1, 0, 0);
-            // 打印当前角色的运动轴和面朝方向
-            console.log("当前角色的运动面朝方向 " + MoveFacingDirection[myCharacter.moveFacingDirection]);
-            console.log("当前角色的运动时依据的正方向 " + MovementDirection[myCharacter.movementDirection]);
-            // 添加一个按键方法:按下键盘“1”，切换角色的运动面朝方向
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.moveFacingDirection = (myCharacter.moveFacingDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-            });
-            // 添加一个按键方法:按下键盘“2”，切换角色的运动时依据的正方向
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.movementDirection = (myCharacter.movementDirection + 1) % 3;
-                console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection]);
-                if(myCharacter.movementDirection == 0) {
-                    console.log("当前角色的运动 " + MoveFacingDirection[myCharacter.moveFacingDirection] + " + " + MovementDirection[myCharacter.movementDirection] + " 定轴方向 " + myCharacter.movementAxisDirection);
-                }
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MovementDirection"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“2”，切换角色的运动时依据的正方向.你将在场景中看到角色不同运动时依据正方向的效果并在控制台看到打印的当前角色的运动轴和依据的正方向.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -6352,7 +4843,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `boolean` |
@@ -6364,41 +4854,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:创建一个名为"Example_Character_MovementEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，你将在场景中看到禁用角色的移动能力的效果.代码如下:
+使用示例:创建一个名为"Example_MovementEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，你将在场景中看到禁用角色的移动能力的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_MovementEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 添加一个按键方法：按下键盘“1”，启用/禁用 角色的移动能力
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.movementEnabled = !myCharacter.movementEnabled;
-                console.log("当前角色是否可以移动: "+ myCharacter.movementEnabled);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_MovementEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，你将在场景中看到禁用角色的移动能力的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MovementEnabled extends Script {
+export default class Example_MovementEnabled extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在客户端执行
@@ -6451,11 +4915,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"23060,86749"拖入优先加载栏。创建一个名为"Example_Character_movementMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建游泳池以便支持切换游泳状态。给角色【移动模式切换】委托添加一个函数:打印当前移动模式，看到角色根据运动模式切换道具的效果。按下键盘“1”，角色切换为行走。按下键盘“2”，角色切换为游泳(需在游泳区域内)。按下键盘“3”，角色生成喷气背包，切换为飞行。.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -6570,7 +5034,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `number` |
@@ -6582,107 +5045,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_OutOfWaterVerticalSpeed "的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面且出水垂直速度为100。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
+使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_OutOfWaterVerticalSpeed "的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面且出水垂直速度为100。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_OutOfWaterVerticalSpeed  extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在服务端执行
-        if(SystemUtil.isServer()) {
-            // 生成拱形容器并适配游泳区域
-            GameObject.spawn("SwimmingVolume",{transform: new Transform(new Vector(0, 0, 500), new Rotation(0, 0, 90), new Vector(20, 20, 10))});
-        }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            let flag = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置游泳属性
-            myCharacter.canJumpOutOfWater = true;
-            myCharacter.outOfWaterVerticalSpeed = 100;
-            // 加载加速动画
-            let boostAnimation = myCharacter.loadAnimation("53011");
-            boostAnimation.loop = 10;
-            let isBoost = false
-            // 加载上升姿态
-            let boostStance = myCharacter.loadSubStance("20307");
-            // 添加一个按键方法:按下键盘“1”，角色切换游泳 / 行走
-            InputUtil.onKeyDown(Keys.One, () => {
-                if(flag) {
-                    myCharacter.switchToWalking();
-                } else {
-                    myCharacter.switchToSwimming();
-                }
-                flag = !flag;
-            });
-            // 添加一个按键方法:按住键盘“2”，角色上浮
-            InputUtil.onKeyPress(Keys.Two, () => {
-                myCharacter.swimUp(10);
-            });
-            // 添加一个按键方法:按住键盘“3”，角色下潜
-            InputUtil.onKeyPress(Keys.Three, () => {
-                myCharacter.swimDown(10);
-            });
-            // 添加一个按键方法:按下键盘“4”，角色进行喷射加速
-            InputUtil.onKeyDown(Keys.Four, () => {
-                if(isBoost) return;
-                let boost_interval = 0;
-                if(myCharacter.isMoving) {
-                    // 播放游泳动画，修改游泳速度和制动速度
-                    boostAnimation.play();
-                    myCharacter.maxSwimSpeed = 600;
-                    myCharacter.brakingDecelerationSwimming = 4096;
-                    // 设置加速周期，每帧检查角色是否移动，当角色停止移动时,执行停止加速操作:停止动画清除姿态，还原游泳速度，清除加速周期
-                    boost_interval = setInterval(() => {
-                        if(!myCharacter.isMoving) {
-                            isBoost = false;
-                            clearInterval(boost_interval);
-                            myCharacter.maxSwimSpeed = 300;
-                            boostAnimation.stop();
-                            boostStance.stop();
-                        }
-                    }, 1);
-                // 如果当前角色静止，修改角色为上升姿态，设置加速周期，每帧上升5个单位
-                } else {
-                    boostStance.play();
-                    boost_interval = setInterval(() => {
-                        myCharacter.swimUp(1)
-                    }, 1);
-                }
-                // 1秒后执行停止加速操作
-                    setTimeout(() => {
-                        isBoost = false;
-                        clearInterval(boost_interval);
-                        myCharacter.maxSwimSpeed = 300;
-                        boostAnimation.stop();
-                        boostStance.stop();
-                    }, 1000);
-                    // 1.2秒后还原角色游泳制动速度
-                    setTimeout(() => {
-                        myCharacter.brakingDecelerationSwimming = 4096
-                    }, 1200);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_OutOfWaterVerticalSpeed "的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,设置角色可以跳出水面且出水垂直速度为100。在场景中生成拱形容器并适配游泳区域.按住键盘“2”，角色上浮.你可以看到的角色到达水面并跃出的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_OutOfWaterVerticalSpeed  extends Script {
+export default class Example_OutOfWaterVerticalSpeed  extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
         // 下列代码仅在服务端执行
@@ -6801,11 +5172,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_OverheadUI"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”, 隐藏 / 显示头顶UI.你将在场景中看到UI可见性修改的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -6853,7 +5224,6 @@ ___
 
 获取角色物理状态
 
-
 #### Returns
 
 | `boolean` |  |
@@ -6866,7 +5236,6 @@ ___
 
 设置角色物理状态
 
-
 #### Parameters
 
 | `value` `boolean` | 是否开启角色物理,默认关闭以节省性能.该属性对角色射线检测功能有影响,如果需要射线检测打到具体的骨骼部位,可将physicsEnabled设置true |
@@ -6878,34 +5247,6 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
-
-使用示例:xxx
-
-</p>
-
-```ts
-@Component
-export default class CharacterSwimExample extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:xxx
-
-</p>
-
-```ts
-@Component
-export default class CharacterSwimExample extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-    }
-}
-```
 ___
 
 ### ragdollEnabled <Score text="ragdollEnabled" /> 
@@ -6955,7 +5296,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `value` | `boolean` |
@@ -6967,54 +5307,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27693"拖入优先加载栏。创建一个名为"Example_Character_RagdollEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个循环黑洞特效.如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色.如果角色与黑洞中心距离小于50，则开启布娃娃.你可以看到角色开关布娃娃的不同效果代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_RagdollEnabled extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 生成一个黑洞特效循环播放
-            EffectService.playAtPosition("27693", new Vector(500, 0, 50), {loopCount: 0});
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色
-            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 300 && !myCharacter.ragdollEnabled) {
-                let dir = new Vector(500, 0, 50).subtract(myCharacter.worldTransform.position).normalize();
-                myCharacter.addMovement(new Vector(dir.x, dir.y, 0));
-            }
-            // 如果角色与黑洞中心距离小于50，则开启布娃娃
-            if(myCharacter.worldTransform.position.subtract(new Vector(500, 0, 50)).length < 50) {
-                myCharacter.ragdollEnabled = true;
-                setTimeout(() => {
-                    myCharacter.worldTransform.position = new Vector(0, 0, 130);
-                    myCharacter.ragdollEnabled = false;
-                }, 2000);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"27693"拖入优先加载栏。创建一个名为"Example_Character_RagdollEnabled"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个循环黑洞特效.如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色.如果角色与黑洞中心距离小于50，则开启布娃娃.你可以看到角色开关布娃娃的不同效果代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -7103,7 +5400,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InRotateRate` | `number` |
@@ -7115,62 +5411,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_RotateRate"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色转向速度为原来的0.5倍,并在场景中看到角色转向变慢的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_RotateRate extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            this.useUpdate = true;
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.maxAcceleration = 0.1 * myCharacter.maxAcceleration;
-            // 设置角色最大转向速度为原来的0.5倍
-            myCharacter.rotateRate = 0.5 * myCharacter.rotateRate;
-            // 设置角色最大行走速度为原来的2倍
-            myCharacter.maxWalkSpeed = 2 * myCharacter.maxAcceleration;
-            // 设置角色最大加速度为原来的0.1倍
-            myCharacter.brakingDecelerationWalking = 0.1 * myCharacter.brakingDecelerationWalking;
-            // 设置角色摩擦力参数
-            myCharacter.brakingDecelerationWalking = myCharacter.maxWalkSpeed * 0.5;
-            myCharacter.groundFriction = 1;
-            // 添加一个按键方法：按下键盘“1”，切换角色摩擦力的来源
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.groundFrictionEnabled = !myCharacter.groundFrictionEnabled;
-            });
-        }
-    }
-    // 周期函数每帧执行，此函数执行需要将this.useUpdate赋值为true，dt是当前帧与上一帧的延迟（秒）
-    protected onUpdate(dt: number): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 如果角色正在移动，打印角色的移动速度
-            if(myCharacter.isMoving) {
-                console.log("当前角色速度：" + myCharacter.velocity);
-            }
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Character_RotateRate"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将设置角色转向速度为原来的0.5倍,并在场景中看到角色转向变慢的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
@@ -7252,11 +5497,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_Velocity"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,如果角色正在移动,你将在控制台中看到打印的角色移动速度.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -7353,7 +5598,6 @@ ___
 
 :::
 
-
 #### Parameters
 
 | `InWalkableFloorAngle` | `number` |
@@ -7365,74 +5609,15 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
-使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_Character_WalkableFloorAngle"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同坡度的锥体:1，30，45，60，89.按下键盘“3”，角色可行走的最大角度增加5.按下键盘“4”，角色可行走的最大角度减小5.你将看到角色可行走的最大角度变化带来的效果.代码如下:
+使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_WalkableFloorAngle"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同坡度的锥体:1，30，45，60，89.按下键盘“3”，角色可行走的最大角度增加5.按下键盘“4”，角色可行走的最大角度减小5.你将看到角色可行走的最大角度变化带来的效果.代码如下:
 
-</p>
-
-```ts
-@Component
-export default class Example_Character_WalkableFloorAngle extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数
-    protected onStart(): void {
-         // 下列代码仅在服务端执行
-         if(SystemUtil.isServer()) {
-            // 创建5个不同高度的立方体：10，20，40，80，160
-            let cubeHeight = [10, 20, 40, 80, 160];
-            for (let i = 0;
-i < cubeHeight.length;
-i++) {
-                GameObject.spawn("197386",{transform: new Transform(new Vector(250 * i, -500, 0), Rotation.zero, new Vector(2, 2, cubeHeight[i] / 100))});
-            }
-            // 创建5个不同坡度的锥体:1，30，45，60，89
-            let coneAngle = [1, 30, 45, 60, 89];
-            for (let i = 0;
-i < coneAngle.length;
-i++) {
-                console.log("1111");
-                GameObject.spawn("7667",{transform: new Transform(new Vector(250 * i, 500, 0), Rotation.zero, new Vector(2, 2, Math.tan(coneAngle[i] * Math.PI / 180)))});
-            }
-         }
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 获取当前客户端的玩家(自己)
-            let myPlayer = Player.localPlayer;
-            // 获取当前玩家控制的角色
-            let myCharacter = myPlayer.character;
-            // 添加一个按键方法：按下键盘“1”，角色最大可跨越高度增加10
-            InputUtil.onKeyDown(Keys.One, () => {
-                myCharacter.maxStepHeight += 10;
-                console.log("角色最大可跨越高度：" + myCharacter.maxStepHeight);
-            });
-            // 添加一个按键方法：按下键盘“2”，角色最大可跨越高度减小10
-            InputUtil.onKeyDown(Keys.Two, () => {
-                myCharacter.maxStepHeight -= 10;
-                console.log("角色最大可跨越高度：" + myCharacter.maxStepHeight);
-            });
-            // 添加一个按键方法：按下键盘“3”，角色可行走的最大角度增加5
-            InputUtil.onKeyDown(Keys.Three, () => {
-                myCharacter.walkableFloorAngle += 5;
-                console.log("可行走的最大角度：" + myCharacter.walkableFloorAngle);
-            });
-            // 添加一个按键方法：按下键盘“4”，角色可行走的最大角度减小5
-            InputUtil.onKeyDown(Keys.Four, () => {
-                myCharacter.walkableFloorAngle -= 5;
-                console.log("可行走的最大角度：" + myCharacter.walkableFloorAngle);
-            });
-        }
-    }
-}
-```
-<p style="font-size: 14px;">
-
-使用示例:将使用到的资源:"7667,197386"拖入优先加载栏。创建一个名为"Example_Character_WalkableFloorAngle"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建5个不同坡度的锥体:1，30，45，60，89.按下键盘“3”，角色可行走的最大角度增加5.按下键盘“4”，角色可行走的最大角度减小5.你将看到角色可行走的最大角度变化带来的效果.代码如下:
-
-</p>
+</span>
 
 ```ts
 @Component
-export default class Example_Character_MaxStepHeight extends Script {
+export default class Example_WalkableFloorAngle extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数
     protected onStart(): void {
          // 下列代码仅在服务端执行
@@ -7629,11 +5814,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"122180,122182,132631,75354"拖入优先加载栏。创建一个名为"Example_Character_AddImpulse"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个生成大炮模型。在大炮附加生成一个触发器并添加进入委托，当角色进入范围后向服务器发送【发射】事件.如果角色进入触发器则，你可以看到角色添加一个冲量被大炮发射出去的效果。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -7688,11 +5873,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27693"拖入优先加载栏。创建一个名为"Example_Character_AddMovement"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个循环黑洞特效.如果角色与黑洞中心距离小于300且角色没有开启布娃娃，则朝中心移动角色.如果角色与黑洞中心距离小于50，则开启布娃娃.你可以看到角色开关布娃娃的不同效果代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -7754,11 +5939,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_AttachToSlot"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -7850,11 +6035,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_ClearDescription"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -7941,11 +6126,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"54834,36851"拖入优先加载栏。创建一个名为"Example_Character_Crouch"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成草丛和拱门并添加触发器，并添加委托函数实现角色进入草丛蹲下，离开站起的效果。设置地面蹲伏行走时的最大移动速度100。你可以看到角色蹲下后行走速度减慢的效果。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8011,11 +6196,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_DetachAllFromSlot"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8106,11 +6291,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_DetachFromSlot"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8200,11 +6385,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_GetDescription"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8301,11 +6486,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_GetSlotWorldPosition"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8400,11 +6585,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"27704,29052,118149,122953,26168"拖入优先加载栏。创建一个名为"Example_Character_GetVertexPosition"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏.按下键盘“1”，添加 / 移除角色的头顶光环。按下键盘“2”，给角色插槽装备模型。按下键盘“3”，将角色左手，右手，左背的插槽挂载的对象全部移除。按下键盘“4”，在角色头顶顶点0位置和头顶UI位置分别生成一个特效。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8484,11 +6669,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Character_Jump"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏设置角色最大跳跃高度为300，最高三连跳。,按下键盘“1”，角色跳跃。按下键盘“2”，启用/禁用跳跃能力。你将在场景中看到角色禁用跳跃能力的效果。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8545,11 +6730,11 @@ loadAnimation会将给定的动画加载到角色上，返回一个可播放的A
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Character_LoadAnimation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8624,11 +6809,11 @@ loadStance会将给定的基础姿态加载到角色上，返回一个可播放�
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"39317,30274"拖入优先加载栏。创建一个名为"Example_Character_LoadStance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个二次元男性基础姿态和二次元女性基础姿态,按下键盘“1”, 切换播放二次元男性基础姿态和二次元女性基础姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放基础姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8696,11 +6881,11 @@ loadSubStance会将给定的姿态加载到角色上，返回一个可播放的S
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_Character_LoadSubStance"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8755,11 +6940,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"122180,122182,122174,132631,75354"拖入优先加载栏。创建一个名为"Example_Character_LookAt"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成一个生成大炮模型，5s周期从炮口生成炮弹并发射。在客户端添加一个【Look】事件监听器，当炮弹生成时获取炮弹对象，并播放音效特效。当炮弹发射时，角色会看向炮弹，你可以看到角色一直面朝炮弹的效果。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8853,11 +7038,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"36851"拖入优先加载栏。创建一个名为"Example_Character_SetCollisionShapeAndExtent"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏生成拱门带碰撞的拱门和单端NPC展示角色碰撞效果.按下键盘“1”，开启/关闭NPC与其他角色的碰撞。按下键盘“2”，开启/关闭NPC是否可被站立。按下键盘“3”，修改角色碰撞形状和大小并打印结果。
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -8921,11 +7106,11 @@ setStyle设置角色的外观，可以传入CharacterDescription对象 / 角色�
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_SetDescription"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9018,11 +7203,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimDown"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9132,11 +7317,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwimUp"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9235,11 +7420,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwitchToFlying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,按下键盘“1”，角色切换为飞行，按下键盘“2”，角色进行喷射加速。你将在场景中看到角色在加速过程中最大飞行速度变化的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9322,11 +7507,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"53011,20307"拖入优先加载栏。创建一个名为"Example_Character_SwitchToSwimming"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中生成拱形容器并适配游泳区域.按下键盘“1”，角色切换游泳.按下键盘“4”，角色修改最大游泳速度进行喷射加速.你可以看到的角色最大游泳速度变化的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9425,11 +7610,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"23060,86749"拖入优先加载栏。创建一个名为"Example_Character_movementMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建游泳池以便支持切换游泳状态。给角色【移动模式切换】委托添加一个函数:打印当前移动模式，看到角色根据运动模式切换道具的效果。按下键盘“1”，角色切换为行走。按下键盘“2”，角色切换为游泳(需在游泳区域内)。按下键盘“3”，角色生成喷气背包，切换为飞行。.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -9517,11 +7702,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14521,35391,161245,75674,57731,63910,58694,58700,60384,58696,136183"拖入优先加载栏。创建一个名为"Example_Character_SyncDescription"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到玩家控制角色玩家外观准备未完成播放摊手的效果.给【角色外观描述完成】委托添加函数来播放换装完成特效，并保存角色初始默认外观数据。给【角色外观描述变化】委托添加函数在控制台打印当前角色外观描述变化的具体子项和索引。按下键盘“1”，重置为默认角色外观。按下键盘“2”，修改角色外观。按下键盘“3”，同步角色外观。按下键盘“4”，清空角色外观。代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

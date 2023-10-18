@@ -2,11 +2,11 @@
 
 # DragDropPayLoad <Badge type="tip" text="Class" /> <Score text="DragDropPayLoad" />
 
-<p class="content-big">
+<span class="content-big">
 
 拖拽事件数据传递类
 
-</p>
+</span>
 
 ## Table of contents
 

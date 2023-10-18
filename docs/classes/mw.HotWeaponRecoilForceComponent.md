@@ -2,17 +2,17 @@
 
 # HotWeaponRecoilForceComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponRecoilForceComponent" />
 
-<p class="content-big">
+<span class="content-big">
 
 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复）
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器启用后坐力组件，设置组件参数，并添加委托的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -568,11 +568,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponRecoilForceSample2"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器后坐力组件获取当前关键状态的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

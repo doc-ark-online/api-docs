@@ -2,11 +2,11 @@
 
 # GizmoCoordinateType <Badge type="tip" text="Enumeration" /> <Score text="GizmoCoordinateType" />
 
-<p class="content-big">
+<span class="content-big">
 
 gizmo坐标轴类型
 
-</p>
+</span>
 
 ## Table of contents
 

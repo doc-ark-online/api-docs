@@ -2,89 +2,89 @@
 
 # Animation <Badge type="tip" text="Class" /> <Score text="Animation" />
 
-<p class="content-big">
+<span class="content-big">
 
 动画
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 -------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 动画是指通过一系列连续的图像或模型变化来模拟物体或角色的运动和行为。当你在玩一个角色扮演游戏，你控制的角色需要行走、跳跃、攻击等。这些动作都是通过动画来实现的。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 想象一下你在玩一个动作冒险游戏，你的角色需要执行一系列复杂的动作，如攻击连击、翻滚和特殊技能等。这些动作可以通过 Animation 来组合和管理。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 资源库中每个片段代表一个特定的动作。例如，你可以创建一个攻击片段，一个跳跃片段，一个翻滚片段等等。这些片段可以按照特定的顺序组合在一起，形成一个完整的动画序列。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 你可以选择不同的动画片段，并设置它们的播放顺序、持续时间和循环。你还可以定义触发条件，例如按下特定的按键或触发特定的事件，来触发动画的播放。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 如何使用 Animation ？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 想要播放一个动画资源, 需要执行 Character 中 loadAnimation 方法, 下载并加载一个动画资源。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - loop 、length、speed 属性修改动画姿态对象；调用 play 方法, 播放这个动画资源。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 停止一个动画对象, 可以直接对动画对象调用 stop 。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 在播放步骤中, 你可以在调用 play 函数前给动画对象使用 onFinished 委托添加一个回调函数。因为动画的播放仅在客户端进行, 所以播放完成回调只会在客户端触发. 播放完成回调只会在动画自然播放完成后触发, 在动画播放途中调用stop(), 或者播放其他动画打断当前正在播放的动画均不会触发播放完成回调。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 我应该在客户端还是服务器上加载动画 ？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 在调用 play 时, 会自动根据当前角色的网络状态及所处的端判断是否进行网络同步。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 如果角色在服务端, 则在所有客户端执行动画播放（动画首先在服务器上创建并复制到客户端）;
 
-</p>
+</span>
 如果角色在客户端, 则直接在本地播放动画.
 
 ::: warning Precautions
@@ -192,11 +192,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_IsPlaying"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -273,11 +273,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Length"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -375,11 +375,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Loop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -465,11 +465,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_OnFinish"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -625,11 +625,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Speed"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -700,11 +700,11 @@ export default class Example_Animation_Speed extends Script {
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Pause"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -768,11 +768,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -842,11 +842,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Resume"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -916,11 +916,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"14700,20380"拖入优先加载栏。创建一个名为"Example_Animation_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载舞蹈动画,并修改循环次数为10，播放速度为2倍。给【动画完成】委托添加函数，播放一个升级特效。按下键盘“1”, 开始播放动画.按下键盘“2”, 暂停播放动画.按下键盘“3”, 继续播放动画.按下键盘“4”, 停止播放动画.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

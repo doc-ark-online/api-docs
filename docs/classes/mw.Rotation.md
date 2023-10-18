@@ -2,11 +2,11 @@
 
 # Rotation <Badge type="tip" text="Class" /> <Score text="Rotation" />
 
-<p class="content-big">
+<span class="content-big">
 
 由分量 (x,y,z) 组成的三维空间中的旋转量，对应UE的Rotator。
 
-</p>
+</span>
 Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 ::: warning Precautions
@@ -339,7 +339,7 @@ ___
 
 ::: warning Precautions
 
-如果 outer 不为空, 返回 outer,否则返回一个新的 Vector 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
+如果 outer 不为空, 返回 outer,否则返回一个新的 Rotation 对象, 建议传入 outer 来减少 new 对象且 outer 不能为 null/undefined
 
 :::
 

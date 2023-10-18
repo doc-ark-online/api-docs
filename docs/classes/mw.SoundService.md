@@ -2,11 +2,11 @@
 
 # SoundService <Badge type="tip" text="Class" /> <Score text="SoundService" />
 
-<p class="content-big">
+<span class="content-big">
 
 音效管理器
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -55,11 +55,11 @@
 
 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会播放一个爆炸音效，播放完成后玩家头顶会生成一个火焰特效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -229,11 +229,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会在0点坐标处创建一个方块，并在该位置播放一个3D音效，按下F键该音效会移动到玩家坐标处
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -288,11 +288,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -341,11 +341,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会播放一个背景音乐
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -392,11 +392,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -434,11 +434,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会在0点坐标处创建一个方块，并在该位置播放一个3D音效，再次按下F键会停止该音效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -481,11 +481,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,会生成10个方块，每个方块播放一个3D音效，10秒后会自动停止所有3D音效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -526,11 +526,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放两个2D音效，再次按下F键会停止所有音效
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -572,11 +572,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏,按下F键会播放一个背景音乐,再次按下F键会停止背景音乐
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -619,11 +619,11 @@ ___
 
 调用端生效|服务端调用自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SoundExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按下F键会播放一个爆炸音效，再次按下F键会停止播放
 
-</p>
+</span>
 
 ```ts
 @Component

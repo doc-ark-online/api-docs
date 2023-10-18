@@ -2,11 +2,11 @@
 
 # CameraPreset <Badge type="tip" text="Enumeration" /> <Score text="CameraPreset" />
 
-<p class="content-big">
+<span class="content-big">
 
 摄像机模式
 
-</p>
+</span>
 
 ## Table of contents
 

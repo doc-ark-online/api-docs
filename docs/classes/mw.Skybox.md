@@ -2,23 +2,23 @@
 
 # Skybox <Badge type="tip" text="Class" /> <Score text="Skybox" />
 
-<p class="content-big">
+<span class="content-big">
 
 天空盒
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 ----------------------------------
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 可按如下操作控制编辑器天空盒实时效果
 
-</p>
+</span>
 
 创建一个名为"SkyboxExample"的脚本,放置在对象栏中,打开脚本,输入以下代码,运行游戏,你将可以通过+和-键控制天空盒的亮度 *键切换预设
 ```ts

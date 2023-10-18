@@ -2,11 +2,11 @@
 
 # MoveControlMode <Badge type="tip" text="Enumeration" /> <Score text="MoveControlMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 移动控制模式
 
-</p>
+</span>
 
 ## Table of contents
 

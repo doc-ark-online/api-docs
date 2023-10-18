@@ -2,11 +2,11 @@
 
 # UITransform <Badge type="tip" text="Class" /> <Score text="UITransform" />
 
-<p class="content-big">
+<span class="content-big">
 
 节点Transform
 
-</p>
+</span>
 
 ## Table of contents
 

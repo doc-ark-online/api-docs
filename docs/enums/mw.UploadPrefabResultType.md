@@ -2,11 +2,11 @@
 
 # UploadPrefabResultType <Badge type="tip" text="Enumeration" /> <Score text="UploadPrefabResultType" />
 
-<p class="content-big">
+<span class="content-big">
 
 移动编辑器上传预制体返回状态
 
-</p>
+</span>
 
 ## Table of contents
 

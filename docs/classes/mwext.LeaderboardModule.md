@@ -4,11 +4,11 @@
 
 **`Instance`**
 
-<p class="content-big">
+<span class="content-big">
 
 编辑器内置排行榜
 
-</p>
+</span>
 
 ## Table of contents
 

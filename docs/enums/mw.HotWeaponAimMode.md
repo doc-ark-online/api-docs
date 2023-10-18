@@ -2,11 +2,11 @@
 
 # HotWeaponAimMode <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponAimMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 热武器瞄准模式
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,11 +2,11 @@
 
 # PostProcessConfig <Badge type="tip" text="Class" /> <Score text="PostProcessConfig" />
 
-<p class="content-big">
+<span class="content-big">
 
 后处理对象属性配置
 
-</p>
+</span>
 
 ## Table of contents
 

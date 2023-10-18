@@ -2,11 +2,11 @@
 
 # AccountService <Badge type="tip" text="Class" /> <Score text="AccountService" />
 
-<p class="content-big">
+<span class="content-big">
 
 用户账号信息管理服务
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -173,11 +173,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会在屏幕右上方显示用户的头像,PC环境下为白图
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -242,11 +242,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的昵称,PC环境下为空
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -282,11 +282,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -325,11 +325,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，控制窗口会输出用户的UserId
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -403,11 +403,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为AccountExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，发布在真机上运行游戏，会看到一个和玩家形象一致的人形对象
 
-</p>
+</span>
 
 ```ts
 @Component

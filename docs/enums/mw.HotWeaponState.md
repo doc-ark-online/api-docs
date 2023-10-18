@@ -2,11 +2,11 @@
 
 # HotWeaponState <Badge type="tip" text="Enumeration" /> <Score text="HotWeaponState" />
 
-<p class="content-big">
+<span class="content-big">
 
 热武器状态
 
-</p>
+</span>
 
 ## Table of contents
 

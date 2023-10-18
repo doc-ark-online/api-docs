@@ -2,11 +2,11 @@
 
 # LanguageType <Badge type="tip" text="Enumeration" /> <Score text="LanguageType" />
 
-<p class="content-big">
+<span class="content-big">
 
 游戏语言
 
-</p>
+</span>
 
 ## Table of contents
 

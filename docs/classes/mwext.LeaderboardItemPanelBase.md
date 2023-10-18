@@ -2,11 +2,11 @@
 
 # LeaderboardItemPanelBase<T\> <Badge type="tip" text="Class" /> <Score text="LeaderboardItemPanelBase<T\>" />
 
-<p class="content-big">
+<span class="content-big">
 
 排行榜主界面中的子UI，用来显示一条记录
 
-</p>
+</span>
 
 ## Type parameters
 

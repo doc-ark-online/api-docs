@@ -88,7 +88,7 @@ Classes
 | :-----| :-----| :-----|
 | [HitResult](classes/mw.HitResult.md) | 命中结果，包含关于轨迹的一次命中的信息，例如撞击点和该点的表面法线。 | [TYPE](groups/TYPE.TYPE.md) |
 | [HotWeapon](classes/mw.HotWeapon.md) | 热武器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
-| [HotWeaponAccuracyOfFireComponent](classes/mw.HotWeaponAccuracyOfFireComponent.md) | 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [HotWeaponAccuracyOfFireComponent](classes/mw.HotWeaponAccuracyOfFireComponent.md) | 热武器射击精度组件 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [HotWeaponAimComponent](classes/mw.HotWeaponAimComponent.md) | 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [HotWeaponFireComponent](classes/mw.HotWeaponFireComponent.md) | 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 | [HotWeaponLoadComponent](classes/mw.HotWeaponLoadComponent.md) | 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
@@ -105,7 +105,7 @@ Classes
 | [InputEvent](classes/mw.InputEvent.md) | 输入事件 | [UI](groups/UI.UI.md) |
 | [InputUtil](classes/mw.InputUtil.md) | 输入事件工具 | [INPUT](groups/INPUT.INPUT.md) |
 | [IntegratedMover](classes/mw.IntegratedMover.md) | 运动器组件 | [PHYSICS](groups/PHYSICS.PHYSICS.md) |
-| [Interactor](classes/mw.Interactor.md) | 交互物 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
+| [Interactor](classes/mw.Interactor.md) | 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |
 
 
 ## J
@@ -226,6 +226,7 @@ Classes
 | [TabGroup](classes/mw.TabGroup.md) | 选项卡组 | [UI](groups/UI.UI.md) |
 | [TextBlock](classes/mw.TextBlock.md) | UI文本 | [UI](groups/UI.UI.md) |
 | [TimeUtil](classes/mw.TimeUtil.md) | 时间工具 | [UTILITY](groups/UTILITY.UTILITY.md) |
+| [TouchInputUtil](classes/mw.TouchInputUtil.md) | 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开) | [INPUT](groups/INPUT.INPUT.md) |
 | [TouchPad](classes/mw.TouchPad.md) | 摄像机滑动区 | [UI](groups/UI.UI.md) |
 | [Transform](classes/mw.Transform.md) | 三维变换，Transform 由缩放、旋转和平移组成。平移用于确定物体的位置，缩放用于确定物体的大小，旋转用于确定物体的朝向。 | [TYPE](groups/TYPE.TYPE.md) |
 | [Trigger](classes/mw.Trigger.md) | 触发器 | [GAMEPLAY](groups/GAMEPLAY.GAMEPLAY.md) |

@@ -2,11 +2,11 @@
 
 # SlateBrushWithGuid <Badge type="tip" text="Class" /> <Score text="SlateBrushWithGuid" />
 
-<p class="content-big">
+<span class="content-big">
 
 贴图信息
 
-</p>
+</span>
 
 ## Table of contents
 

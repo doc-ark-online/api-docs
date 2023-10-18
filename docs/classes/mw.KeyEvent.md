@@ -2,11 +2,11 @@
 
 # KeyEvent <Badge type="tip" text="Class" /> <Score text="KeyEvent" />
 
-<p class="content-big">
+<span class="content-big">
 
 按键事件
 
-</p>
+</span>
 
 ## Table of contents
 

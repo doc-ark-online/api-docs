@@ -2,11 +2,11 @@
 
 # UserWidget <Badge type="tip" text="Class" /> <Score text="UserWidget" />
 
-<p class="content-big">
+<span class="content-big">
 
 UI控件的集合,预制体UI
 
-</p>
+</span>
 
 ## Hierarchy
 

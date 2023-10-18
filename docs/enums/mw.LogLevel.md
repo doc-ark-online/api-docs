@@ -2,11 +2,11 @@
 
 # LogLevel <Badge type="tip" text="Enumeration" /> <Score text="LogLevel" />
 
-<p class="content-big">
+<span class="content-big">
 
 日志等级
 
-</p>
+</span>
 
 ## Table of contents
 

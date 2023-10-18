@@ -2,11 +2,11 @@
 
 # ColorPick <Badge type="tip" text="Class" /> <Score text="ColorPick" />
 
-<p class="content-big">
+<span class="content-big">
 
 颜色选择器
 
-</p>
+</span>
 
 ## Hierarchy
 

@@ -2,11 +2,11 @@
 
 # Pawn <Badge type="tip" text="Class" /> <Score text="Pawn" />
 
-<p class="content-big">
+<span class="content-big">
 
 Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过玩家控制器或者逻辑脚本控制的游戏对象。
 
-</p>
+</span>
 
 ## Hierarchy
 
@@ -200,11 +200,11 @@ Pawn对象的膨胀时间速度，修改后自身时间流速是该值乘世界�
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Pawn_CustomTimeDilation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中修改玩家的时间膨胀速度为原来的0.5倍后看到跳跃的延迟效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -226,11 +226,11 @@ export default class Example_Pawn_CustomTimeDilation extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Pawn_CustomTimeDilation"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中修改玩家的时间膨胀速度为原来的0.5倍后看到跳跃的延迟效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -285,11 +285,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example_Pawn_Player"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏通过player获取玩家,你将在控制台中看到打印的userId和instanceId.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -338,11 +338,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:“197386”拖入优先加载栏。创建一个名为"Example_Pawn_Outline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“1”可以给本地玩家添加或移除可被立方体遮挡的红色描边效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -411,11 +411,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:“197386”拖入优先加载栏。创建一个名为"Example_Pawn_PostProcessOutline"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中创建一个立方体,按下键盘“2”可以给本地玩家添加或移除不被立方体遮挡的红色描边效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

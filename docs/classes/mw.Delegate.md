@@ -2,116 +2,116 @@
 
 # Delegate<T\> <Badge type="tip" text="Class" /> <Score text="Delegate<T\>" />
 
-<p class="content-big">
+<span class="content-big">
 
 委托
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 ----------------------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 委托代表了一组特定的任务，并且可以调用指定的函数来完成这些任务。委托提供了一种灵活的方式，让你可以将任务分配给不同的函数，并且可以在运行时动态地添加或删除任务。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 编辑器已为您封装好了可以直接使用的委托函数，分为三种委托类型：
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 1. Delegate 为单播委托，指的是只能绑定一个函数的委托，实现一对一的通知。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 2. MulticastDelegate 多播委托，指的是能绑定多个函数的委托，实现一对多的通知。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 3. MulticastGameObjectDelegate 与GameObject联系在一起的多播委拖，可以一对多的通知。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 如何理解委托 ？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 一种直击灵魂的理解是: 它把函数变成一个像"对象"一样的东西, 并且可以用变量保存。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 常见的方式是事件, 比如在输入事件中放一个回调。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 函数跟对象不同, 对象可以通过实例化, 在内存中复制许多不同的实体, 函数在程序启动后, 内存就只有一份, 非静态函数的实现方法是在第一个参数里增加一个this作为参数传进去, 这样就实现了绑定关系。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 Delegate的实现方案, 其实就是制造了一个对象去链接函数的地址, 可以是单个函数地址, 也可以是函数地址集, 当调用时就去调用这些函数, 链接的过程如果涉及到函数的对象, 就把对象的实例存在Delegate中。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 委托与代理有什么区别 ?
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 代理是一种用来解决问题的方法。提供一种“一个类对另外一个类的控制权。”是类与类之间关系。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 委托是一种应用方法的类型。委托提供了“一种方法的执行会同时执行加载在上面的方法”。是方法与方法之间的关系。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 委托可以代替代理，但是代理不能代替委托。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 委托可以动态加载方法，代理不能实现。
 
-</p>
+</span>
 
 **`Effect`**
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"DelExample"的脚本,打开脚本,输入以下代码保存,运行游戏，打印输出 5 。
 
-</p>
+</span>
 
 ```ts
 @Component

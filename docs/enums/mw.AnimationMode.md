@@ -2,17 +2,17 @@
 
 # AnimationMode <Badge type="tip" text="Enumeration" /> <Score text="AnimationMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 动画模式
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:
 
-</p>
+</span>
 
 ```ts
 ```

@@ -2,11 +2,11 @@
 
 # PrefabStatus <Badge type="tip" text="Enumeration" /> <Score text="PrefabStatus" />
 
-<p class="content-big">
+<span class="content-big">
 
 预制体审核状态
 
-</p>
+</span>
 
 ## Table of contents
 

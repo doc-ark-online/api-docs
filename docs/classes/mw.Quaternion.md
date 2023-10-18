@@ -2,35 +2,35 @@
 
 # Quaternion <Badge type="tip" text="Class" /> <Score text="Quaternion" />
 
-<p class="content-big">
+<span class="content-big">
 
 四元数
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 ----------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 用于表示 3D 旋转的单位四元数。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 四元数与 Transform 类似，实现了旋转的矩阵表示。与存储旋转、缩放和剪切的 Transform 不同，四元数仅存储旋转。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 四元数可以使用轴角对或欧拉角进行参数化。由于它们的紧凑性以及它们在内存中的存储方式，某些操作对于浮点错误的处理更加高效。
 
-</p>
+</span>
 
 ## Table of contents
 

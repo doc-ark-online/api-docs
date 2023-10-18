@@ -2,11 +2,11 @@
 
 # BaseView <Badge type="tip" text="Class" /> <Score text="BaseView" />
 
-<p class="content-big">
+<span class="content-big">
 
 界面类的基类
 
-</p>
+</span>
 
 ## Hierarchy
 

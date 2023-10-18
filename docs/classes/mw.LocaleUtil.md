@@ -2,11 +2,11 @@
 
 # LocaleUtil <Badge type="tip" text="Class" /> <Score text="LocaleUtil" />
 
-<p class="content-big">
+<span class="content-big">
 
 本地化工具
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -33,11 +33,11 @@
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为LocaleExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，日志会输出默认的语言和地区
 
-</p>
+</span>
 
 ```ts
 @Component

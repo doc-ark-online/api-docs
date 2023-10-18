@@ -2,17 +2,35 @@
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
-<p class="content-big">
+<span class="content-big">
 
-热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度
+热武器射击精度组件
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span class="content-big">
+
+武器射击精度是指武器在射击时的命中目标的准确性和精度程度。它描述了武器在使用时弹道路径的稳定性和预测性，以及射击的命中率和精度。控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度.
+
+</span>
+
+<span class="content-big">
+
+武器射击精度可以用一个简单的比喻来描述：它就像是你打篮球时的投篮准确度。
+
+</span>
+
+<span class="content-big">
+
+当你投篮时，你希望篮球准确地进入篮筐，而不是偏离目标。这就是投篮的精度。在武器射击中，精度指的是武器发射的子弹能够准确地命中目标，而不是随意地朝着其他方向飞行。
+
+</span>
+
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponAofSample1"的脚本,放置在对象管理器中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开启射击精度组件，并设置参数，添加委托的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -51,31 +69,31 @@ export default class HotWeaponAofSample1 extends Script {
 ### Properties <Score text="Properties" /> 
 | **[onCurrentDispersionChange](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchange)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|
-| 客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 客户端实际射击精度值发生变化时执行绑定函数。|
 
 ### Accessors <Score text="Accessors" /> 
 | **[defaultDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#defaultdispersionhalfangle)**(): `number`  |
 | :-----|
-| Set子弹随机发散范围的默认半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围的默认半径。|
 | **[dispersionHalfAngleDecreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangledecreasespeed)**(): `number`  |
-| Set子弹随机发散范围半径的收缩速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围半径的收缩速度。|
 | **[dispersionHalfAngleIncreasePerShot](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasepershot)**(): `number`  |
-| Set子弹随机发散范围半径在每次射击后的扩张值。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围半径在每次射击后的扩张值。|
 | **[dispersionHalfAngleIncreaseSpeed](mw.HotWeaponAccuracyOfFireComponent.md#dispersionhalfangleincreasespeed)**(): `number`  |
-| Set子弹随机发散范围半径的扩张速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围半径的扩张速度。|
 | **[maxDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#maxdispersionhalfangle)**(): `number`  |
-| Set子弹随机发散范围的最大半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围的最大半径。|
 | **[minDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#mindispersionhalfangle)**(): `number`  |
-| Set子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置子弹随机发散范围的最小半径。|
 
 ### Methods <Score text="Methods" /> 
 | **[getCurrentDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#getcurrentdispersionhalfangle)**(): `number`  |
 | :-----|
-| Get当前子弹随机发散范围半径实际值|
+| 获取当前子弹随机发散范围半径实际值|
 | **[getRandomShootDir](mw.HotWeaponAccuracyOfFireComponent.md#getrandomshootdir)**(`shootDir`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)  |
-| 获取根据射击精度角度范围定义的圆锥空间中的随机射击单位矢量（以屏幕角度）|
+| 以预设位置处生成子弹，需要以 预设位置 + 该矢量 + 最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向|
 | **[getTargetDispersionHalfAngle](mw.HotWeaponAccuracyOfFireComponent.md#gettargetdispersionhalfangle)**(): `number`  |
-| Get目标子弹随机发散范围半径实际值|
+| 设置目标子弹随机发散范围半径实际值|
 
 ## Properties
 
@@ -83,7 +101,7 @@ export default class HotWeaponAofSample1 extends Script {
 
 • **onCurrentDispersionChange**: `MulticastDelegateInterface`<() => `void`\>
 
-客户端实际射击精度值发生变化时执行绑定函数。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+客户端实际射击精度值发生变化时执行绑定函数。
 
 ## Accessors
 
@@ -106,7 +124,7 @@ export default class HotWeaponAofSample1 extends Script {
 <td style="text-align: left">
 
 
-Get子弹随机发散范围的默认半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围的默认半径。
 
 
 #### Returns
@@ -119,7 +137,7 @@ Get子弹随机发散范围的默认半径。使用示例见类 HotWeaponAccurac
 <td style="text-align: left">
 
 
-Set子弹随机发散范围的默认半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围的默认半径。
 
 
 ::: warning Precautions
@@ -160,7 +178,7 @@ ___
 <td style="text-align: left">
 
 
-Get子弹随机发散范围半径的收缩速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围半径的收缩速度。
 
 
 #### Returns
@@ -173,7 +191,7 @@ Get子弹随机发散范围半径的收缩速度。使用示例见类 HotWeaponA
 <td style="text-align: left">
 
 
-Set子弹随机发散范围半径的收缩速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围半径的收缩速度。
 
 调用端自动广播
 
@@ -215,7 +233,7 @@ ___
 <td style="text-align: left">
 
 
-Get子弹随机发散范围半径在每次射击后的扩张值。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围半径在每次射击后的扩张值。
 
 
 #### Returns
@@ -228,7 +246,7 @@ Get子弹随机发散范围半径在每次射击后的扩张值。使用示例�
 <td style="text-align: left">
 
 
-Set子弹随机发散范围半径在每次射击后的扩张值。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围半径在每次射击后的扩张值。
 
 调用端自动广播
 
@@ -270,7 +288,7 @@ ___
 <td style="text-align: left">
 
 
-Get子弹随机发散范围半径的扩张速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围半径的扩张速度。
 
 
 #### Returns
@@ -283,7 +301,7 @@ Get子弹随机发散范围半径的扩张速度。使用示例见类 HotWeaponA
 <td style="text-align: left">
 
 
-Set子弹随机发散范围半径的扩张速度。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围半径的扩张速度。
 
 调用端自动广播
 
@@ -325,7 +343,7 @@ ___
 <td style="text-align: left">
 
 
-Get子弹随机发散范围的最大半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围的最大半径。
 
 
 #### Returns
@@ -338,7 +356,7 @@ Get子弹随机发散范围的最大半径。使用示例见类 HotWeaponAccurac
 <td style="text-align: left">
 
 
-Set子弹随机发散范围的最大半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围的最大半径。
 
 
 ::: warning Precautions
@@ -379,7 +397,7 @@ ___
 <td style="text-align: left">
 
 
-Get子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+获取子弹随机发散范围的最小半径。
 
 
 #### Returns
@@ -392,7 +410,7 @@ Get子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccurac
 <td style="text-align: left">
 
 
-Set子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置子弹随机发散范围的最小半径。
 
 调用端自动广播
 
@@ -419,7 +437,7 @@ Set子弹随机发散范围的最小半径。使用示例见类 HotWeaponAccurac
 
 • **getCurrentDispersionHalfAngle**(): `number` 
 
-Get当前子弹随机发散范围半径实际值
+获取当前子弹随机发散范围半径实际值
 
 #### Returns
 
@@ -445,12 +463,9 @@ ___
 | [`Vector`](mw.Vector.md) | 随机屏幕偏移坐标 |
 | :------ | :------ |
 
-::: warning Precautions
-
 以屏幕中心处生成子弹，可直接套用该矢量
-以预设位置处生成子弹，需要以 预设位置+该矢量+最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向
 
-:::
+以预设位置处生成子弹，需要以 预设位置 + 该矢量 + 最大射击距离 决定着弹点，再计算实际三维空间中子弹的飞行方向
 
 
 ___
@@ -459,7 +474,7 @@ ___
 
 • **getTargetDispersionHalfAngle**(): `number` 
 
-Get目标子弹随机发散范围半径实际值
+设置目标子弹随机发散范围半径实际值
 
 #### Returns
 

@@ -2,11 +2,11 @@
 
 # UIHorizontalCollation <Badge type="tip" text="Enumeration" /> <Score text="UIHorizontalCollation" />
 
-<p class="content-big">
+<span class="content-big">
 
 自动布局子项布局排序 - 水平排序
 
-</p>
+</span>
 
 ## Table of contents
 

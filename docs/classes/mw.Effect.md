@@ -2,35 +2,29 @@
 
 # Effect <Badge type="tip" text="Class" /> <Score text="Effect" />
 
-<p class="content-big">
+<span class="content-big">
 
 特效
 
-</p>
+</span>
 
-<p class="content-big">
-
-----------------------------------
-
-</p>
-
-<p class="content-big">
+<span class="content-big">
 
 通常用于游戏场景中的效果表现，如火焰，水流，武器拖尾等，当编辑器细节面板勾选自动启用时，运行游戏会自动播放特效。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 如需精确控制特效的播放与停止，请使用 play 和 stop 方法。不同特效有不同的生命周期，部分特效可通过细节面板中参数调节。
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"EffectExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将在场景中看到粒子特效炸裂的效果.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

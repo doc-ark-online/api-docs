@@ -2,17 +2,17 @@
 
 # SystemUtil <Badge type="tip" text="Class" /> <Score text="SystemUtil" />
 
-<p class="content-big">
+<span class="content-big">
 
 状态信息获取工具
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 判断当前环境状态是否是客户端、服务端、移动端。获取版本号等信息
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -64,11 +64,11 @@
 判定当前程序的运行平台,返回值参考Type.RuntimePlatform
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -212,11 +212,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前环境打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -247,11 +247,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前编辑器版本号打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -282,11 +282,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前完整编辑器版本号打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -317,11 +317,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏GameId pc端输出为空，移动端输出为游戏GameId
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -354,11 +354,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前游戏版本 pc端输出为空，移动端输出为游戏版本
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -391,11 +391,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -430,11 +430,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前是否是移动端打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -465,11 +465,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为SystemExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会将当前运行环境打印到控制台
 
-</p>
+</span>
 
 ```ts
 @Component

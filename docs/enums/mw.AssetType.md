@@ -2,11 +2,11 @@
 
 # AssetType <Badge type="tip" text="Enumeration" /> <Score text="AssetType" />
 
-<p class="content-big">
+<span class="content-big">
 
 资源类型
 
-</p>
+</span>
 
 ## Table of contents
 

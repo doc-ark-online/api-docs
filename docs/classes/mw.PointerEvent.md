@@ -2,11 +2,11 @@
 
 # PointerEvent <Badge type="tip" text="Class" /> <Score text="PointerEvent" />
 
-<p class="content-big">
+<span class="content-big">
 
 点击或者滑动的时候传递mobile touch,鼠标,键盘信息的类
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,11 +2,11 @@
 
 # UIConstraintAnchors <Badge type="tip" text="Class" /> <Score text="UIConstraintAnchors" />
 
-<p class="content-big">
+<span class="content-big">
 
 节点对齐规则
 
-</p>
+</span>
 
 ## Table of contents
 

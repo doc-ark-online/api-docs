@@ -2,11 +2,11 @@
 
 # ObjectTypeQuery <Badge type="tip" text="Enumeration" /> <Score text="ObjectTypeQuery" />
 
-<p class="content-big">
+<span class="content-big">
 
 碰撞检测通道
 
-</p>
+</span>
 
 ## Table of contents
 

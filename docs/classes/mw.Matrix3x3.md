@@ -2,11 +2,11 @@
 
 # Matrix3x3 <Badge type="tip" text="Class" /> <Score text="Matrix3x3" />
 
-<p class="content-big">
+<span class="content-big">
 
 三维矩阵
 
-</p>
+</span>
 
 ::: warning Precautions
 

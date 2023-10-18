@@ -2,11 +2,11 @@
 
 # MessageType <Badge type="tip" text="Enumeration" /> <Score text="MessageType" />
 
-<p class="content-big">
+<span class="content-big">
 
 发送消息的类型
 
-</p>
+</span>
 
 ## Table of contents
 

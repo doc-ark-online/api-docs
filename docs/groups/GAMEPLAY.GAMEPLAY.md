@@ -10,13 +10,13 @@ GAMEPLAY
 | [Camera](../classes/mw.Camera.md) <br> 摄像机 |
 | [GameObject](../classes/mw.GameObject.md) <br> 场景中所有实体的基类 |
 | [HotWeapon](../classes/mw.HotWeapon.md) <br> 热武器 |
-| [HotWeaponAccuracyOfFireComponent](../classes/mw.HotWeaponAccuracyOfFireComponent.md) <br> 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度 |
+| [HotWeaponAccuracyOfFireComponent](../classes/mw.HotWeaponAccuracyOfFireComponent.md) <br> 热武器射击精度组件 |
 | [HotWeaponAimComponent](../classes/mw.HotWeaponAimComponent.md) <br> 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近 |
 | [HotWeaponFireComponent](../classes/mw.HotWeaponFireComponent.md) <br> 热武器开火组件，负责维护热武器射击的主要参数，及核心逻辑 |
 | [HotWeaponLoadComponent](../classes/mw.HotWeaponLoadComponent.md) <br> 热武器上膛组件，负责维护热武器播放上膛动作的相关参数，和逻辑 |
 | [HotWeaponRecoilForceComponent](../classes/mw.HotWeaponRecoilForceComponent.md) <br> 热武器后坐力组件，用于在发射时控制角色的视角的抖动（会自动恢复）和偏移（不会自动恢复） |
 | [HotWeaponReloadComponent](../classes/mw.HotWeaponReloadComponent.md) <br> 热武器换弹组件，负责维护热武器换弹动作的相关参数和逻辑 |
-| [Interactor](../classes/mw.Interactor.md) <br> 交互物 |
+| [Interactor](../classes/mw.Interactor.md) <br> 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现 |
 | [MaterialInstance](../classes/mw.MaterialInstance.md) <br> 材质实例类 |
 | [Model](../classes/mw.Model.md) <br> 物理模拟与材质设置 |
 | [NavModifierVolume](../classes/mw.NavModifierVolume.md) <br> 寻路动态修饰区 |
@@ -56,4 +56,6 @@ GAMEPLAY
 | :-----|
 | [CameraShakeInfo](../interfaces/mw.CameraShakeInfo.md) <br> 抖动数据 |
 | [ProjectileMovementConfig](../interfaces/mw.ProjectileMovementConfig.md) <br> 投掷物配置类型 |
+| [RequestInit](../interfaces/mw.RequestInit.md) <br> HTTP请求信息的对象 |
+| [Response](../interfaces/mw.Response.md) <br> HTTP响应信息的对象 |
 

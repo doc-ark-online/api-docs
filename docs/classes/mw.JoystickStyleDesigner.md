@@ -2,11 +2,11 @@
 
 # JoystickStyleDesigner <Badge type="tip" text="Class" /> <Score text="JoystickStyleDesigner" />
 
-<p class="content-big">
+<span class="content-big">
 
 摇杆信息
 
-</p>
+</span>
 
 ## Table of contents
 

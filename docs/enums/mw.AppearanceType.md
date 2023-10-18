@@ -2,17 +2,17 @@
 
 # AppearanceType <Badge type="tip" text="Enumeration" /> <Score text="AppearanceType" />
 
-<p class="content-big">
+<span class="content-big">
 
 形象类型
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:
 
-</p>
+</span>
 
 ```ts
 ```

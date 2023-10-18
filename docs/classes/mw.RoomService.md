@@ -2,11 +2,11 @@
 
 # RoomService <Badge type="tip" text="Class" /> <Score text="RoomService" />
 
-<p class="content-big">
+<span class="content-big">
 
 MGS以及玩家信息、数据、头像等相关API。
 
-</p>
+</span>
 MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，如发布游戏后的左上角聊天、好友相关信息服务。
 
 ## Table of contents
@@ -87,11 +87,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出MGS平台的RoomId，PC环境下输出undefined
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -124,11 +124,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出游戏的RoomMgr分配的RoomId，PC环境下输出undefined
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -155,11 +155,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为RoomExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，输出当前环境是否支持MGS功能
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -210,11 +210,11 @@ ___
 
 服务端调用
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:
 
-</p>
+</span>
 
 ```ts
 @Component

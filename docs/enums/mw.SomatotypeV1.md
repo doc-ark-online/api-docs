@@ -2,11 +2,11 @@
 
 # SomatotypeV1 <Badge type="tip" text="Enumeration" /> <Score text="SomatotypeV1" />
 
-<p class="content-big">
+<span class="content-big">
 
 V1角色体型
 
-</p>
+</span>
 
 ## Table of contents
 

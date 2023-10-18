@@ -2,23 +2,23 @@
 
 # BlockingVolume <Badge type="tip" text="Class" /> <Score text="BlockingVolume" />
 
-<p class="content-big">
+<span class="content-big">
 
 禁行区
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 ----------------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 用于控制角色是否可以进出此区域。
 
-</p>
+</span>
 
 ::: warning Precautions
 
@@ -26,11 +26,11 @@
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:请尽量放置在场景中，通过动态查找获取。不推荐动态生成，不支持重叠使用。
 
-</p>
+</span>
 
 创建一个名为"BlockingVolExample"的脚本,放置在对象栏中,打开脚本,输入以下代码，替换GUID保存,运行游戏,你将可以通过该GUID对应的禁行区.代码如下:
 ```ts
@@ -206,11 +206,11 @@ export default class BlockingVolExample extends Script {
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 针对此禁行区为其他GameObject添加通行许可
 
-</p>
+</span>
 
 ```ts
  // 获取当前玩家
@@ -244,11 +244,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 重置该禁行区发布的所有通行许可
 
-</p>
+</span>
 
 ```ts
   // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID
@@ -288,11 +288,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 获取此禁行区对某GameObject的通行许可
 
-</p>
+</span>
 
 ```ts
  // 获取当前玩家
@@ -321,11 +321,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 针对此禁行区为其他GameObject移除通行许可
 
-</p>
+</span>
 
 ```ts
  // 获取当前玩家
@@ -359,11 +359,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 开放该禁行区
 
-</p>
+</span>
 
 ```ts
  // GUID根据实际情况填写，可在编辑器对象管理器内右键复制对象ID

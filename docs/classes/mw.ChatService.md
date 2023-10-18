@@ -2,11 +2,11 @@
 
 # ChatService <Badge type="tip" text="Class" /> <Score text="ChatService" />
 
-<p class="content-big">
+<span class="content-big">
 
 聊天服务
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -42,11 +42,11 @@
 限制每个ds消息发送从第一个消息发送开始计时60秒内最多发送60条消息。定时器清空计数后下一次发送消息再次开始计数。
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示富文本字体的效果。代码如下：
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -88,11 +88,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"messageExample"的脚本，放置在对象管理器中，打开脚本，输入以下代码保存，运行游戏，你将在场景中看到在聊天框中显示"MetaWorld is funny"的效果。代码如下：
 
-</p>
+</span>
 
 ```
 @Component
@@ -100,7 +100,7 @@ ___
 
      protected onStart(): void {
           let content = "MetaWorld is funny";
-          RoomService.getInstance().asyncBroadcastMessage(content);
+          ChatService.asyncBroadcastMessage(content);
      }
  }
 ```ts

@@ -2,11 +2,11 @@
 
 # InitialOscillatorOffset <Badge type="tip" text="Enumeration" /> <Score text="InitialOscillatorOffset" />
 
-<p class="content-big">
+<span class="content-big">
 
 定义如何开始(从零开始，或者从随机值开始)
 
-</p>
+</span>
 
 ## Table of contents
 

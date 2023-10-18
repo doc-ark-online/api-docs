@@ -2,11 +2,11 @@
 
 # UIFontInfo <Badge type="tip" text="Class" /> <Score text="UIFontInfo" />
 
-<p class="content-big">
+<span class="content-big">
 
 字体信息
 
-</p>
+</span>
 
 ## Table of contents
 

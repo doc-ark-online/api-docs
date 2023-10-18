@@ -2,11 +2,11 @@
 
 # SlateBrushTileType <Badge type="tip" text="Enumeration" /> <Score text="SlateBrushTileType" />
 
-<p class="content-big">
+<span class="content-big">
 
 图片画刷填充模式
 
-</p>
+</span>
 
 ## Table of contents
 

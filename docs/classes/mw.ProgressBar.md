@@ -2,11 +2,11 @@
 
 # ProgressBar <Badge type="tip" text="Class" /> <Score text="ProgressBar" />
 
-<p class="content-big">
+<span class="content-big">
 
 UI进度条
 
-</p>
+</span>
 
 ## Hierarchy
 

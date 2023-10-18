@@ -2,11 +2,11 @@
 
 # ExpressionType <Badge type="tip" text="Enumeration" /> <Score text="ExpressionType" />
 
-<p class="content-big">
+<span class="content-big">
 
 表情类型
 
-</p>
+</span>
 
 ## Table of contents
 

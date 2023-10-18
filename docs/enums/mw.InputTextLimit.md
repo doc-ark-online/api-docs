@@ -2,11 +2,11 @@
 
 # InputTextLimit <Badge type="tip" text="Enumeration" /> <Score text="InputTextLimit" />
 
-<p class="content-big">
+<span class="content-big">
 
 输入框限制
 
-</p>
+</span>
 
 ## Table of contents
 

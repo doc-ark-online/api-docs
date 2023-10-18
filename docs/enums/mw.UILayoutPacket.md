@@ -2,11 +2,11 @@
 
 # UILayoutPacket <Badge type="tip" text="Enumeration" /> <Score text="UILayoutPacket" />
 
-<p class="content-big">
+<span class="content-big">
 
 自动布局排版规则-排列规则
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,59 +2,59 @@
 
 # CharacterDescription <Badge type="tip" text="Class" /> <Score text="CharacterDescription" />
 
-<p class="content-big">
+<span class="content-big">
 
 人形外观配置
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 什么是 CharacterDescription 呢？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - CharacterDescription是一个用于存储 advance 和 base 装备的 Character 描述。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 人形外观分为高级人形和基础人形。高级人形可更改人物的服装（衬衫、裤子、裙子...)、头部（脸型、嘴巴、鼻子、头发...）等外观； 基础人形可从左侧角色/NPC中基础人形形象中选择你喜欢的整体形象。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 CharacterDescription 如何使用呢？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - CharacterDescription 本质是一个嵌套的只读对象类型，用于存储一些角色设置的高级信息。这些信息按照层级结构进行组织，其中每个层级都是一个只读对象类型。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 在 Character 类中有一个名为 description 的属性，他的返回值类型为 CharacterDescription ，使用角色类中 description 的属性调用。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - MW编辑器为您提供了大量的美术模型资源，请在左侧 美术对象-角色栏 中翻找，并标有GUID供你使用。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 详情可参考下面列出的参数，开始对你的人性外观自定义修改吧~
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -77,11 +77,11 @@ CharacterDescription 如何使用呢？
 
 高级人形对象外观配置类 与 base 互斥
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -357,8 +357,8 @@ export default class CharacterStyleExample extends Script {
 | `makeup.lipstick.lipstickStyle?` `string` | **`Description`** 口红样式 |
 | `makeup.skinTone?` `{ `skinColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 肤色 |
 | `makeup.skinTone.skinColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
-| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\>  } | 插槽和物品 |
-| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\> | **`Description`** 插槽数据 |
+| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>  } | 插槽和物品 |
+| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\> | **`Description`** 插槽数据 |
 
 ___
 
@@ -368,11 +368,11 @@ ___
 
 基础人形对象外观配置类 与 advance 互斥
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:以不同方式设置角色外观，清空外观，同步外观。外观切换完成时播放换装特效。判断外观是否加载完成播放对应动画。
 
-</p>
+</span>
 
 ```ts
 @Component

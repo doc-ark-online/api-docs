@@ -2,11 +2,11 @@
 
 # NavModifierType <Badge type="tip" text="Enumeration" /> <Score text="NavModifierType" />
 
-<p class="content-big">
+<span class="content-big">
 
 寻路动态修饰区类型，不同类型在寻路计算中成本不同，影响寻路结果
 
-</p>
+</span>
 
 ## Table of contents
 

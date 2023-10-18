@@ -2,11 +2,11 @@
 
 # InputEvent <Badge type="tip" text="Class" /> <Score text="InputEvent" />
 
-<p class="content-big">
+<span class="content-big">
 
 输入事件
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,11 +2,11 @@
 
 # TouchPad <Badge type="tip" text="Class" /> <Score text="TouchPad" />
 
-<p class="content-big">
+<span class="content-big">
 
 摄像机滑动区
 
-</p>
+</span>
 
 ## Hierarchy
 

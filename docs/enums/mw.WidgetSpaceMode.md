@@ -2,11 +2,11 @@
 
 # WidgetSpaceMode <Badge type="tip" text="Enumeration" /> <Score text="WidgetSpaceMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 UI空间位置枚举
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,11 +2,11 @@
 
 # ConvertScreenResult <Badge type="tip" text="Class" /> <Score text="ConvertScreenResult" />
 
-<p class="content-big">
+<span class="content-big">
 
 屏幕坐标转换结果
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,41 +2,41 @@
 
 # SubStance <Badge type="tip" text="Class" /> <Score text="SubStance" />
 
-<p class="content-big">
+<span class="content-big">
 
 二级姿态
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 -------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 二级姿态是动画系统的拓展, 用于实现独立于基础姿态外的复杂动画逻辑(如持枪, 攀爬等)。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 基二级姿态资源同基础姿态（Stance）也是一个外部的资源,打包后生成的文件被上传到资源服务器, 你可以在本地资源库中的基础姿态分类下查找并下载它们。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 同样拥有 loadSubStance 、play、stop等功能
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 还有额外出色的混合模式，详见 StanceBlendMode 。
 
-</p>
+</span>
 
 ## Hierarchy
 
@@ -90,11 +90,11 @@
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_AssetId"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -197,11 +197,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -240,11 +240,11 @@ export default class Example_SubStance_BlendMode extends Script {
     }
 }
 ```
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_BlendMode"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -305,11 +305,11 @@ export default class Example_SubStance_BlendMode extends Script {
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Play"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -369,11 +369,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:将使用到的资源:"94261,14520"拖入优先加载栏。创建一个名为"Example_SubStance_Stop"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,在玩家角色上加载一个仅上半身的瞄准姿态和一个仅下半身的踢腿姿态,按下键盘“1”, 切换播放瞄准姿态和踢腿姿态.你将在场景中看到角色不同姿态的效果.按下键盘“2”, 停止播放姿态.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

@@ -2,11 +2,11 @@
 
 # SkyPreset <Badge type="tip" text="Enumeration" /> <Score text="SkyPreset" />
 
-<p class="content-big">
+<span class="content-big">
 
 天空盒预设枚举
 
-</p>
+</span>
 
 ## Table of contents
 

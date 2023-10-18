@@ -2,11 +2,11 @@
 
 # SlideMethod <Badge type="tip" text="Enumeration" /> <Score text="SlideMethod" />
 
-<p class="content-big">
+<span class="content-big">
 
 进度条滑动的方式
 
-</p>
+</span>
 
 ## Table of contents
 

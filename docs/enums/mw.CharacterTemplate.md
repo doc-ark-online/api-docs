@@ -2,11 +2,11 @@
 
 # CharacterTemplate <Badge type="tip" text="Enumeration" /> <Score text="CharacterTemplate" />
 
-<p class="content-big">
+<span class="content-big">
 
 角色体型
 
-</p>
+</span>
 
 ## Table of contents
 

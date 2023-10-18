@@ -128,9 +128,19 @@
         "name": "CameraShakeInfo"
       },
       {
+        "file_name": "mw.RequestInit.md",
+        "file_path": "interfaces/mw.RequestInit.md",
+        "name": "RequestInit"
+      },
+      {
         "file_name": "mw.ProjectileMovementConfig.md",
         "file_path": "interfaces/mw.ProjectileMovementConfig.md",
         "name": "ProjectileMovementConfig"
+      },
+      {
+        "file_name": "mw.Response.md",
+        "file_path": "interfaces/mw.Response.md",
+        "name": "Response"
       }
     ],
     "Enums": [
@@ -1275,6 +1285,11 @@
         "file_name": "mw.InputUtil.md",
         "file_path": "classes/mw.InputUtil.md",
         "name": "InputUtil"
+      },
+      {
+        "file_name": "mw.TouchInputUtil.md",
+        "file_path": "classes/mw.TouchInputUtil.md",
+        "name": "TouchInputUtil"
       },
       {
         "file_name": "mw.GestureDelegate.md",

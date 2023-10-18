@@ -2,11 +2,11 @@
 
 # DataStorageResult <Badge type="tip" text="Interface" /> <Score text="DataStorageResult" />
 
-<p class="content-big">
+<span class="content-big">
 
 数据储存返回值
 
-</p>
+</span>
 
 ## Table of contents
 

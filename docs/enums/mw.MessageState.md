@@ -2,11 +2,11 @@
 
 # MessageState <Badge type="tip" text="Enumeration" /> <Score text="MessageState" />
 
-<p class="content-big">
+<span class="content-big">
 
 发送消息的状态
 
-</p>
+</span>
 
 ## Table of contents
 

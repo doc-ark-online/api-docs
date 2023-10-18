@@ -2,11 +2,11 @@
 
 # ProjectileMovementConfig <Badge type="tip" text="Interface" /> <Score text="ProjectileMovementConfig" />
 
-<p class="content-big">
+<span class="content-big">
 
 投掷物配置类型
 
-</p>
+</span>
 
 ## Implemented by
 

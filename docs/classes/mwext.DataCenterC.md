@@ -2,17 +2,17 @@
 
 # DataCenterC <Badge type="tip" text="Class" /> <Score text="DataCenterC" />
 
-<p class="content-big">
+<span class="content-big">
 
 客户端数据中心，里面存放着当前玩家的数据
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家数据就绪以及玩家等级为0的信息
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -51,9 +51,9 @@ class PlayerModuleData extends Subdata {
 | :----- |
 
 ### Properties <Score text="Properties" /> 
-| **[onInitError](mwext.DataCenterC.md#oniniterror)**: [`Action2`](mw.Action2.md)<`number`, `string`\>  |
+| **[onInitResult](mwext.DataCenterC.md#oninitresult)**: [`Action2`](mw.Action2.md)<`number`, `string`\>  |
 | :-----|
-| 数据初始化失败的委托，参数为：错误码，错误内容|
+| 数据初始化结果的委托，参数为：结果码(0-成功，1-加载数据表单失败 2-加载子数据失败)，错误内容|
 
 ### Methods <Score text="Methods" /> 
 | **[getData](mwext.DataCenterC.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
@@ -64,11 +64,11 @@ class PlayerModuleData extends Subdata {
 
 ## Properties
 
-### onInitError <Score text="onInitError" /> 
+### onInitResult <Score text="onInitResult" /> 
 
-▪ `Static` `Readonly` **onInitError**: [`Action2`](mw.Action2.md)<`number`, `string`\>
+▪ `Static` `Readonly` **onInitResult**: [`Action2`](mw.Action2.md)<`number`, `string`\>
 
-数据初始化失败的委托，参数为：错误码，错误内容
+数据初始化结果的委托，参数为：结果码(0-成功，1-加载数据表单失败 2-加载子数据失败)，错误内容
 
 ## Methods
 
@@ -89,11 +89,11 @@ class PlayerModuleData extends Subdata {
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为DataCenterCExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，你将在客户端日志中看到玩家等级为0的信息
 
-</p>
+</span>
 
 ```ts
 @Component

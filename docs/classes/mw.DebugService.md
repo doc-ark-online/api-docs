@@ -4,11 +4,11 @@
 
 **`Instance`**
 
-<p class="content-big">
+<span class="content-big">
 
 debug调试服务
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -35,11 +35,11 @@ debug调试服务
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为DebugExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，客户端及服务端日志会每2秒输出ts内存的使用情况
 
-</p>
+</span>
 
 ```ts
 @Component

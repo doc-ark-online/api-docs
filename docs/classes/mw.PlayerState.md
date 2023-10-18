@@ -2,17 +2,17 @@
 
 # PlayerState <Badge type="tip" text="Class" /> <Score text="PlayerState" />
 
-<p class="content-big">
+<span class="content-big">
 
 PlayerState基类
 
-</p>
+</span>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"PlayerStateExample"的脚本，放置在对象栏中，打开脚本，输入以下代码保存。把启动参数的玩家数量改为2，运行游戏按下R键将看到其中一个客户端收到test同步。按下P键将打印客户端的test值.
 
-</p>
+</span>
 
 * ``` typescript
   // 服务端每个玩家进入游戏时会自动创建一个实例

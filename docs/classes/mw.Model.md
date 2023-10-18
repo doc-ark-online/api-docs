@@ -2,89 +2,89 @@
 
 # Model <Badge type="tip" text="Class" /> <Score text="Model" />
 
-<p class="content-big">
+<span class="content-big">
 
 物理模拟与材质设置
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 -------------------------
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 在游戏中添加物理效果有助于提升场景的沉浸感，因为这能促使玩家相信他们的确在与模拟内容进行交互，并且能以某种方式得到反馈。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 物理模拟 如何工作呢？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 Model的属性定义了静态模型具有物理特性，其中较为重要的是：
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - 静态模型实例 physicsEnabled 属性为 True 可开启物理模拟。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - mass 属性表示重力的大小。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - friction 属性表示摩擦力的大小。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - restitution 属性表示弹力。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - lockPosition 属性表示约束，约束哪个轴指在这个轴向不会发生变动。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 材质如何自定义设置呢？
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 材质 是可以应用到网格物体静态模型上的资源，用它可控制场景的可视外观。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - setMaterial 方法更换静态模型材质，传入左侧材质资源ID。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 - setStaticMeshAsset 方法更换静态模型，传入左侧静态模型资源ID。
 
-</p>
+</span>
 
 ::: warning Precautions
 
@@ -92,11 +92,11 @@ Model的属性定义了静态模型具有物理特性，其中较为重要的是
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"ModelExample"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你可以通过F1键，在场景中动态生成模型并模拟物理.代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

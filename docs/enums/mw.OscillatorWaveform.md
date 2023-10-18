@@ -2,11 +2,11 @@
 
 # OscillatorWaveform <Badge type="tip" text="Enumeration" /> <Score text="OscillatorWaveform" />
 
-<p class="content-big">
+<span class="content-big">
 
 振荡器波形
 
-</p>
+</span>
 
 ## Table of contents
 

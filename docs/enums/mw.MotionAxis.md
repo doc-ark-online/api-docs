@@ -2,11 +2,11 @@
 
 # MotionAxis <Badge type="tip" text="Enumeration" /> <Score text="MotionAxis" />
 
-<p class="content-big">
+<span class="content-big">
 
 运动坐标系
 
-</p>
+</span>
 
 ## Table of contents
 

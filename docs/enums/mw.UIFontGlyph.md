@@ -2,11 +2,11 @@
 
 # UIFontGlyph <Badge type="tip" text="Enumeration" /> <Score text="UIFontGlyph" />
 
-<p class="content-big">
+<span class="content-big">
 
 字体类型
 
-</p>
+</span>
 
 ## Table of contents
 

@@ -2,11 +2,11 @@
 
 # PhysicsThruster <Badge type="tip" text="Class" /> <Score text="PhysicsThruster" />
 
-<p class="content-big">
+<span class="content-big">
 
 推进器
 
-</p>
+</span>
 
 ::: warning Precautions
 
@@ -14,11 +14,11 @@
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为"Example"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,保存游戏,并按下键盘'1'键,你将在场景中看到已放置好的物体被推进器推动效果(注意只有开启物理模拟的物体可以被推进器推动)
 
-</p>
+</span>
 
 ```ts
 @Component

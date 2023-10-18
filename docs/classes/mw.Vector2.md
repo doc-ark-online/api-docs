@@ -2,11 +2,11 @@
 
 # Vector2 <Badge type="tip" text="Class" /> <Score text="Vector2" />
 
-<p class="content-big">
+<span class="content-big">
 
 由分量 (x,y) 组成的二维空间中的向量
 
-</p>
+</span>
 
 ## Table of contents
 

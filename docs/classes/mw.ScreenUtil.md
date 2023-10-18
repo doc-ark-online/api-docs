@@ -2,11 +2,11 @@
 
 # ScreenUtil <Badge type="tip" text="Class" /> <Score text="ScreenUtil" />
 
-<p class="content-big">
+<span class="content-big">
 
 屏幕视口工具
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -46,11 +46,11 @@
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，获取触摸位置所对应的世界Object
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -85,11 +85,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为ScreenExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，手指移动时获取视口中心点所对应的世界位置
 
-</p>
+</span>
 
 ```
 @Component

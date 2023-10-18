@@ -2,89 +2,89 @@
 
 # HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 
-<p class="content-big">
+<span class="content-big">
 
 热武器
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 热武器功能是指游戏中武器的使用和管理机制，它使得玩家可以在战斗中使用各种类型的武器。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 我们可以将热武器功能类比为现实生活中的枪械。想象你正在玩一款真实的射击游戏。你手持一把火力强大的热武器，可以进行射击。当你按下射击按钮时，武器会发射子弹，产生火花和声音效果，仿佛你真的在战斗中。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 射击并不是无限制的。你的武器需要装填弹药才能进行射击。所以，你需要按下上膛按钮来将新的弹药装入武器。这样，你就能够继续射击，而不必担心弹药用尽。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 当你的弹药接近用尽时，你需要进行换弹操作。你按下换弹按钮，角色会迅速将弹夹从武器中取出，并插入一新的装满子弹的弹夹。这样，你就能够继续战斗，而不必等待重新装填现有弹夹。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 在射击过程中，你会感受到武器的后坐力效果。后坐力是由于子弹离开枪口时的反冲所产生的力量。你会感觉到武器稍微后退，仿佛你真的在使用真实的武器。这为游戏增添了一定的现实感和沉浸感。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 热武器功能为玩家提供了更多的战术选择和策略性。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 总之
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 1. 射击 - 玩家按下开火键,武器会射出子弹或光线。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 2. 上膛 - 每次射击后,都需要加载下一发弹药进入膛室。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 3. 换弹 - 当弹夹为空时,需要更换新的弹夹。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 4. 后坐力 - 射击时会产生后坐力,让准星会稍稍偏移。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 equip是热武器的核心函数，人物和热武器交互的通道。当热武器实例调用equip接口，并传入角色及角色插槽相关参数，传入的角色才可与热武器交互。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWeapon对象时使用。创建出一个热武器实例后，可调用HotWeapon类中accuracyOfFireComponent、aimComponent、fireComponent等变量，调节功能细节。
 
-</p>
+</span>
 
 ::: warning Precautions
 
@@ -92,11 +92,11 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample1"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,在本地资源库中搜索80484、4172、4171动画资源,拖入对象管理器中的优先加载目录。运行游戏,按键1、2、3、4你将在场景中看到一个热武器设置参数，添加委托，绑定按键，以及人物换弹的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
  @Component
@@ -255,21 +255,21 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 ### Properties <Score text="Properties" /> 
 | **[accuracyOfFireComponent](mw.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](mw.HotWeaponAccuracyOfFireComponent.md)  |
 | :-----|
-| 射击精度功能。使用示例见类 HotWeaponAccuracyOfFireComponent|
+| 射击精度功能。|
 | **[aimComponent](mw.HotWeapon.md#aimcomponent)**: [`HotWeaponAimComponent`](mw.HotWeaponAimComponent.md)  |
-| 瞄准功能。使用示例见类 HotWeaponAimComponent|
+| 瞄准功能。|
 | **[fireComponent](mw.HotWeapon.md#firecomponent)**: [`HotWeaponFireComponent`](mw.HotWeaponFireComponent.md)  |
-| 射击功能。使用示例见类 HotWeaponFireComponent|
+| 射击功能。|
 | **[loadComponent](mw.HotWeapon.md#loadcomponent)**: [`HotWeaponLoadComponent`](mw.HotWeaponLoadComponent.md)  |
-| 上膛功能。使用示例见类 HotWeaponLoadComponent|
+| 上膛功能。|
 | **[onEquip](mw.HotWeapon.md#onequip)**: `MulticastDelegateInterface`<(`EquipOwner`: `$Nullable`<`Actor`\>) => `void`\>  |
 | 服务器装备时执行绑定函数|
 | **[onUnequip](mw.HotWeapon.md#onunequip)**: `MulticastDelegateInterface`<() => `void`\>  |
 | 服务器卸载时执行绑定函数。使用示例见属性 onEquipped|
 | **[recoilForceComponent](mw.HotWeapon.md#recoilforcecomponent)**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md)  |
-| 后坐力功能。使用示例见类 HotWeaponRecoilForceComponent|
+| 后坐力功能。|
 | **[reloadComponent](mw.HotWeapon.md#reloadcomponent)**: [`HotWeaponReloadComponent`](mw.HotWeaponReloadComponent.md)  |
-| 换弹功能。使用示例见类 HotWeaponReloadComponent|
+| 换弹功能。|
 
 
 ::: details 点击查看继承
@@ -283,15 +283,15 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 ### Accessors <Score text="Accessors" /> 
 | **[accuracyOfFireEnabled](mw.HotWeapon.md#accuracyoffireenabled)**(): `boolean`  |
 | :-----|
-| 设置是否开启射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例|
+| 设置是否开启射击精度组件。|
 | **[aimEnabled](mw.HotWeapon.md#aimenabled)**(): `boolean`  |
-| 设置是否开启瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例|
+| 设置是否开启瞄准组件。|
 | **[loadEnabled](mw.HotWeapon.md#loadenabled)**(): `boolean`  |
-| 设置是否开启上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例|
+| 设置是否开启上膛组件。|
 | **[recoilForceEnabled](mw.HotWeapon.md#recoilforceenabled)**(): `boolean`  |
-| 设置是否开启后座力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例|
+| 设置是否开启后座力组件。|
 | **[reloadEnabled](mw.HotWeapon.md#reloadenabled)**(): `boolean`  |
-| 设置是否开启换弹组件。启用/关闭后坐力组件示例代码见类 HotWeaponReloadComponent 使用示例|
+| 设置是否开启换弹组件。|
 
 
 ::: details 点击查看继承
@@ -412,7 +412,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 • **accuracyOfFireComponent**: [`HotWeaponAccuracyOfFireComponent`](mw.HotWeaponAccuracyOfFireComponent.md)
 
-射击精度功能。使用示例见类 HotWeaponAccuracyOfFireComponent
+射击精度功能。
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 • **aimComponent**: [`HotWeaponAimComponent`](mw.HotWeaponAimComponent.md)
 
-瞄准功能。使用示例见类 HotWeaponAimComponent
+瞄准功能。
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 • **fireComponent**: [`HotWeaponFireComponent`](mw.HotWeaponFireComponent.md)
 
-射击功能。使用示例见类 HotWeaponFireComponent
+射击功能。
 
 ___
 
@@ -436,7 +436,7 @@ ___
 
 • **loadComponent**: [`HotWeaponLoadComponent`](mw.HotWeaponLoadComponent.md)
 
-上膛功能。使用示例见类 HotWeaponLoadComponent
+上膛功能。
 
 ___
 
@@ -446,11 +446,11 @@ ___
 
 服务器装备时执行绑定函数
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample2"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器添加装备委托的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -484,7 +484,7 @@ ___
 
 • **recoilForceComponent**: [`HotWeaponRecoilForceComponent`](mw.HotWeaponRecoilForceComponent.md)
 
-后坐力功能。使用示例见类 HotWeaponRecoilForceComponent
+后坐力功能。
 
 ___
 
@@ -492,7 +492,7 @@ ___
 
 • **reloadComponent**: [`HotWeaponReloadComponent`](mw.HotWeaponReloadComponent.md)
 
-换弹功能。使用示例见类 HotWeaponReloadComponent
+换弹功能。
 
 ## Accessors
 
@@ -515,7 +515,7 @@ ___
 <td style="text-align: left">
 
 
-是否开启了射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例
+是否开启了射击精度组件。
 
 
 #### Returns
@@ -528,7 +528,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启射击精度组件。启用/关闭射击精度组件示例代码见类 HotWeaponAccuracyOfFireComponent 使用示例
+设置是否开启射击精度组件。
 
 ::: warning Precautions
 
@@ -569,7 +569,7 @@ ___
 <td style="text-align: left">
 
 
-是否开启了瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例
+是否开启了瞄准组件。
 
 
 #### Returns
@@ -582,7 +582,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启瞄准组件。启用/关闭瞄准组件示例代码见类 HotWeaponAimComponent 使用示例
+设置是否开启瞄准组件。
 
 ::: warning Precautions
 
@@ -623,7 +623,7 @@ ___
 <td style="text-align: left">
 
 
-是否开启了上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例
+是否开启了上膛组件。
 
 
 #### Returns
@@ -636,7 +636,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启上膛组件。启用/关闭上膛组件示例代码见类 HotWeaponLoadComponent 使用示例
+设置是否开启上膛组件。
 
 ::: warning Precautions
 
@@ -677,7 +677,7 @@ ___
 <td style="text-align: left">
 
 
-是否开启了后坐力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例
+是否开启了后坐力组件。
 
 
 #### Returns
@@ -690,7 +690,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启后座力组件。启用/关闭后坐力组件示例代码见类 HotWeaponRecoilForceComponent 使用示例
+设置是否开启后座力组件。
 
 ::: warning Precautions
 
@@ -731,7 +731,7 @@ ___
 <td style="text-align: left">
 
 
-是否开启了换弹组件。启用/关闭换弹组件示例代码见类 HotWeaponReloadComponent 使用示例
+是否开启了换弹组件。
 
 
 #### Returns
@@ -744,7 +744,7 @@ ___
 <td style="text-align: left">
 
 
-设置是否开启换弹组件。启用/关闭后坐力组件示例代码见类 HotWeaponReloadComponent 使用示例
+设置是否开启换弹组件。
 
 ::: warning Precautions
 
@@ -835,11 +835,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample7"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器装备到角色的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -884,11 +884,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample5"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -918,11 +918,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample6"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器调用当前方法的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -949,11 +949,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample11"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个获取热武器状态的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -985,11 +985,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample3"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到热武器调用当前方法的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -1049,11 +1049,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample10"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器上膛、停止上膛的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -1091,11 +1091,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample9"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器换弹，中止换弹的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -1128,11 +1128,11 @@ ___
 
 调用端自动广播
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例: 创建一个名为"HotWeaponSample8"的脚本,放置在对象管理器中热武器对象子级，打开脚本,输入以下代码保存,运行游戏,你将在场景中看到一个热武器开火，停止开火的效果,代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

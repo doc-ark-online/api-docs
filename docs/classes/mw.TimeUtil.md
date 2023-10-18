@@ -2,11 +2,11 @@
 
 # TimeUtil <Badge type="tip" text="Class" /> <Score text="TimeUtil" />
 
-<p class="content-big">
+<span class="content-big">
 
 时间工具
 
-</p>
+</span>
 
 ## Table of contents
 
@@ -56,11 +56,11 @@
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每帧输出dt
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -105,11 +105,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会延迟600帧执行，现在不会执行
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -147,11 +147,11 @@ ___
 
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，原本会每隔2秒执行一次输出id 直到id>5，按下F键后会提前停止
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -202,11 +202,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会延迟600帧执行
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -245,11 +245,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会5秒后输出5 seconds later
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -309,11 +309,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，按F键会输出游戏运行的总时长
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -354,11 +354,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -398,11 +398,11 @@ ___
 | :------ | :------ |
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会每隔2秒执行一次输出id 直到id>5
 
-</p>
+</span>
 
 ```ts
 @Component
@@ -450,11 +450,11 @@ UNIX 纪元的开始日期为 1970 年 1 月 1 日。
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个名为TimeExample的脚本，放置在对象栏中，打开脚本，将原本内容修改为如下内容，保存并运行游戏，会输出当前时间戳
 
-</p>
+</span>
 
 ```ts
 @Component

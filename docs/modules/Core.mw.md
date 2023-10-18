@@ -310,7 +310,7 @@ mw
 | [HotWeapon](../classes/mw.HotWeapon.md)  |
 | 热武器|
 | [HotWeaponAccuracyOfFireComponent](../classes/mw.HotWeaponAccuracyOfFireComponent.md)  |
-| 热武器射击精度组件，控制热武器发射时，子弹的发散程度，默认状态下为最小发散程度|
+| 热武器射击精度组件|
 | [HotWeaponAimComponent](../classes/mw.HotWeaponAimComponent.md)  |
 | 热武器瞄准组件，瞄准状态下持枪角色的视角会拉近|
 | [HotWeaponFireComponent](../classes/mw.HotWeaponFireComponent.md)  |
@@ -334,7 +334,7 @@ mw
 | [IntegratedMover](../classes/mw.IntegratedMover.md)  |
 | 运动器组件|
 | [Interactor](../classes/mw.Interactor.md)  |
-| 交互物|
+| 交互物，请保证交互前动画资源已加载，否则可能导致位置错误或者其他不可预料的表现|
 | [JoystickStyleDesigner](../classes/mw.JoystickStyleDesigner.md)  |
 | 摇杆信息|
 | [KeyEvent](../classes/mw.KeyEvent.md)  |
@@ -447,6 +447,8 @@ mw
 | UI文本|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
+| [TouchInputUtil](../classes/mw.TouchInputUtil.md)  |
+| 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开)|
 | [TouchPad](../classes/mw.TouchPad.md)  |
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |
@@ -508,6 +510,10 @@ mw
 | 构建物体的信息|
 | [ProjectileMovementConfig](../interfaces/mw.ProjectileMovementConfig.md)  |
 | 投掷物配置类型|
+| [RequestInit](../interfaces/mw.RequestInit.md)  |
+| HTTP请求信息的对象|
+| [Response](../interfaces/mw.Response.md)  |
+| HTTP响应信息的对象|
 | [TypeName](../interfaces/mw.TypeName.md)  |
 | 类定义，使用这个可以省去类参数繁琐的类型声明    如:fun`<T>`(c:`{new():T}`) 可以写成 fun`<T>`(c:Class`<T>`)|
 
@@ -681,7 +687,7 @@ mw
 | 结束记录actor的transform|
 | **[endDragDrop](Core.mw.md#enddragdrop)**(`InReply`: [`EventReply`](../classes/mw.EventReply.md)): `void`  |
 | 中断一个拖拽事件, 传入一个操作的事件|
-| **[fetch](Core.mw.md#fetch)**(`url`: `string`, `init?`: `RequestInit`): `Promise`<`Response`\>  |
+| **[fetch](Core.mw.md#fetch)**(`url`: `string`, `init?`: [`RequestInit`](../interfaces/mw.RequestInit.md)): `Promise`<[`Response`](../interfaces/mw.Response.md)\>  |
 | HTTP请求|
 | **[findUIScript](Core.mw.md#finduiscript)**(`UI`: [`Widget`](../classes/mw.Widget.md)): [`UIScript`](../classes/mw.UIScript.md)  |
 | 获取UI脚本|
@@ -2272,7 +2278,7 @@ ___
 
 ### fetch <Score text="fetch" /> 
 
-• **fetch**(`url`, `init?`): `Promise`<`Response`\> 
+• **fetch**(`url`, `init?`): `Promise`<[`Response`](../interfaces/mw.Response.md)\> 
 
 HTTP请求
 
@@ -2281,11 +2287,11 @@ HTTP请求
 
 | `url` `string` | url |
 | :------ | :------ |
-| `init?` `RequestInit` | 请求信息 default:请求信息 |
+| `init?` [`RequestInit`](../interfaces/mw.RequestInit.md) | 请求信息 default:请求信息 |
 
 #### Returns
 
-| `Promise`<`Response`\> | 响应信息 |
+| `Promise`<[`Response`](../interfaces/mw.Response.md)\> | 响应信息 |
 | :------ | :------ |
 
 ___
@@ -2316,11 +2322,11 @@ ___
 通用Http请求
 
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:发送Http请求
 
-</p>
+</span>
 
 ```ts
 generalHttpRequest(Response,Url,Param,JsonContent)
@@ -2558,11 +2564,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:调用方法 新建一个脚本 NewScript
 
-</p>
+</span>
 
 ```ts
 @Core.Class
@@ -3437,11 +3443,11 @@ ___
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:调用方法 新建一个脚本 NewScript
 
-</p>
+</span>
 
 ```ts
 @Core.Class

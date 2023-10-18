@@ -2,11 +2,11 @@
 
 # Script <Badge type="tip" text="Class" /> <Score text="Script" />
 
-<p class="content-big">
+<span class="content-big">
 
 脚本管理
 
-</p>
+</span>
 
 ## Hierarchy
 

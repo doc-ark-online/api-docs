@@ -2,11 +2,11 @@
 
 # MouseLockMode <Badge type="tip" text="Enumeration" /> <Score text="MouseLockMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 鼠标锁定模式
 
-</p>
+</span>
 
 ## Table of contents
 

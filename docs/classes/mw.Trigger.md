@@ -2,29 +2,23 @@
 
 # Trigger <Badge type="tip" text="Class" /> <Score text="Trigger" />
 
-<p class="content-big">
+<span class="content-big">
 
 触发器
 
-</p>
+</span>
 
-<p class="content-big">
-
-----------------------------------
-
-</p>
-
-<p class="content-big">
+<span class="content-big">
 
 当与触发器交互时，可以触发事件。所有触发器都差不多，区别在于形状不同——有盒体和球体——触发器通过这些形状来判断其他对象是否碰撞并激活了它。
 
-</p>
+</span>
 
-<p class="content-big">
+<span class="content-big">
 
 触发器是一个很有用的工具。你可以使用触发器实现很多有趣的玩法，比如创建一个脚本放在放在触发器子级，同时在触发器子级放置一个金币模型，使用 onEnter 事件，完成角色进入触发器范围，金币消失的效果。
 
-</p>
+</span>
 
 ::: warning Precautions
 
@@ -32,11 +26,11 @@
 
 :::
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:常用接口示例
 
-</p>
+</span>
 
 ```ts
 // 将如下脚本挂载至对象管理器触发器下

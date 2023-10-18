@@ -2,11 +2,11 @@
 
 # SlateColorStylingMode <Badge type="tip" text="Enumeration" /> <Score text="SlateColorStylingMode" />
 
-<p class="content-big">
+<span class="content-big">
 
 UI颜色应用模式
 
-</p>
+</span>
 
 ## Table of contents
 

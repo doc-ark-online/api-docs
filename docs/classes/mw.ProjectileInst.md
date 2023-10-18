@@ -2,11 +2,11 @@
 
 # ProjectileInst <Badge type="tip" text="Class" /> <Score text="ProjectileInst" />
 
-<p class="content-big">
+<span class="content-big">
 
 投掷物发射器专用实例对象
 
-</p>
+</span>
 
 ## Hierarchy
 
@@ -204,11 +204,11 @@ ___
 </tr></tbody>
 </table>
 
-<p style="font-size: 14px;">
+<span style="font-size: 14px;">
 
 使用示例:创建一个脚本放置在对象栏中.在脚本中复制下列"Example_ObjectLauncher_Acceleration"的代码保存,运行游戏,场景中将会生成一个对象发射器和用于发射的火箭。按下按键”1“，发射火箭。设置对象代码如下:
 
-</p>
+</span>
 
 ```ts
 @Component

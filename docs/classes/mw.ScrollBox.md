@@ -2,11 +2,11 @@
 
 # ScrollBox <Badge type="tip" text="Class" /> <Score text="ScrollBox" />
 
-<p class="content-big">
+<span class="content-big">
 
 滑动框
 
-</p>
+</span>
 
 ## Hierarchy
 
@@ -65,7 +65,7 @@
 | 设置鼠标滚轮系数|
 | **[scrollbarPadding](mw.ScrollBox.md#scrollbarpadding)**(`inScrollbarPadding`: [`Margin`](mw.Margin.md)): `void`  |
 | 设置滚动条边距|
-| **[scrollbarThickness](mw.ScrollBox.md#scrollbarthickness)**(`inScrollbarThickness`: `number`): `void`  |
+| **[scrollbarThickness](mw.ScrollBox.md#scrollbarthickness)**(): `number`  |
 | 设置滚动条粗细|
 | **[shadowVisibility](mw.ScrollBox.md#shadowvisibility)**(): [`SlateVisibility`](../enums/mw.SlateVisibility.md)  |
 | 设定阴影显示|
@@ -892,11 +892,29 @@ ___
 <thead><tr>
 <th style="text-align: left">
 
+• `get` **scrollbarThickness**(): `number` <Badge type="tip" text="client" />
+
+</th>
+<th style="text-align: left">
+
 • `set` **scrollbarThickness**(`inScrollbarThickness`): `void` <Badge type="tip" text="client" />
 
 </th>
 </tr></thead>
 <tbody><tr>
+<td style="text-align: left">
+
+
+获取滚动条粗细
+
+
+#### Returns
+
+| `number` | 滚动条粗细 |
+| :------ | :------ |
+
+
+</td>
 <td style="text-align: left">
 
 
