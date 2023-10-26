@@ -68,6 +68,7 @@
          ChatService.asyncBroadcastMessage(type,content);
       }
  }
+```
 
 ___
 
@@ -94,7 +95,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
  export default class messageExample extends Script {
 
@@ -103,4 +104,4 @@ ___
           ChatService.asyncBroadcastMessage(content);
      }
  }
-```ts
+```

@@ -320,7 +320,7 @@ export default class PurchaseExample extends mw.Script {
         player.character.name = "ArkCount: " + arkCount;
     }
 }
-`
+```
 
 ___
 
@@ -350,7 +350,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -366,7 +366,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -396,7 +396,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -412,7 +412,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -441,7 +441,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -457,7 +457,7 @@ export default class PurchaseExample extends mw.Script {
         })
     }
 }
-```ts
+```
 
 ___
 
@@ -475,7 +475,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class PurchaseExample extends mw.Script {
 
@@ -489,7 +489,7 @@ export default class PurchaseExample extends mw.Script {
         PurchaseService.openPremiumMemberPurchasePage();
     }
 }
-```ts
+```
 
 ___
 
