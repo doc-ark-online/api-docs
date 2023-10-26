@@ -18,6 +18,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
       { text: '类索引', link: '/classes.md' },
       { text: '枚举索引', link: '/enums.md' },
       { text: '接口索引', link: '/interfaces.md' },
+      { text: '全局函数', link: '/modules/Core.mw.md' },
       { text: '反馈方式', link: '/start.md' }
     ]
   },
@@ -1095,18 +1096,18 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         text: '027 版本',
         items: [
           {
+            text: '026 版本',
+            link: 'https://api-docs-026.ark.online/',
+            path: true
+          },
+          {
+            text: '025 版本',
+            link: 'https://api-docs-025.ark.online/',
+            path: true
+          },
+          {
             text: '024 版本',
-            link: 'https://api-docs-023.ark.online/',
-            path: true
-          },
-          {
-            text: '023 版本',
-            link: 'https://api-docs-023.ark.online/',
-            path: true
-          },
-          {
-            text: '022 版本',
-            link: 'https://api-docs-022.ark.online/',
+            link: 'https://api-docs-024.ark.online/',
             path: true
           }
         ]
