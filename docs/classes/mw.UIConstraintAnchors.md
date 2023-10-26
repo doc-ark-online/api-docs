@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIConstraintAnchors**()  |
-| :-----|
-| 通过水平和垂直规则构造对象|
-
 ### Properties <Score text="Properties" /> 
 | **[constraintHorizontal](mw.UIConstraintAnchors.md#constrainthorizontal)**: [`UIConstraintHorizontal`](../enums/mw.UIConstraintHorizontal.md)  |
 | :-----|

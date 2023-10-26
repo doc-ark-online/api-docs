@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TweenSequence**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[nextID](mw.TweenSequence.md#nextid)**(): `number`  |
 | :-----|

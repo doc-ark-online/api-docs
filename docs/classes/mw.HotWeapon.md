@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeapon
+[玩法](../groups/Core.玩法.md) / HotWeapon
 
 # HotWeapon <Badge type="tip" text="Class" /> <Score text="HotWeapon" />
 
@@ -241,16 +241,6 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
   ↳ **`HotWeapon`**
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
 
 ### Properties <Score text="Properties" /> 
 | **[accuracyOfFireComponent](mw.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](mw.HotWeaponAccuracyOfFireComponent.md)  |

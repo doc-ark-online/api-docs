@@ -21,16 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new ModuleS**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 
 

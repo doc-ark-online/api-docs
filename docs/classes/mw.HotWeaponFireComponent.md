@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponFireComponent
+[玩法](../groups/Core.玩法.md) / HotWeaponFireComponent
 
 # HotWeaponFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponFireComponent" />
 
@@ -39,10 +39,6 @@
 ```
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponFireComponent**()  |
-| :----- |
 
 ### Properties <Score text="Properties" /> 
 | **[onEndContinuousFire](mw.HotWeaponFireComponent.md#onendcontinuousfire)**: `MulticastDelegateInterface`<() => `void`\>  |

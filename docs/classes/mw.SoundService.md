@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SoundService**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\>  |
 | :-----|

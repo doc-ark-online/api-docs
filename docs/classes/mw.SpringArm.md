@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SpringArm**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[collisionEnabled](mw.SpringArm.md#collisionenabled)**(): `boolean`  |
 | :-----|

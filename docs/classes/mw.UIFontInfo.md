@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIFontInfo**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[contentColor](mw.UIFontInfo.md#contentcolor)**: [`LinearColor`](mw.LinearColor.md)  |
 | :-----|

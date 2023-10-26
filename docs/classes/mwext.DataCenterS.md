@@ -65,10 +65,6 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new DataCenterS**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
 | :-----|

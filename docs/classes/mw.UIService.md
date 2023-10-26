@@ -19,10 +19,6 @@ UI管理类，可以继承此类，自带一个全局UI作为UI的总节点。
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIService**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[allPanels](mw.UIService.md#allpanels)**: [`UIScript`](mw.UIScript.md)[]  |
 | :-----|

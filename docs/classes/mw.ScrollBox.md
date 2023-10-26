@@ -16,8 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Properties <Score text="Properties" /> 
 | **[brushMargin](mw.ScrollBox.md#brushmargin)**: `any`  |
 | :-----|

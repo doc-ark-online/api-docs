@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new EventReply**()  |
-| :-----|
-| UE的默认值构造|
-
 ### Accessors <Score text="Accessors" /> 
 | **[handled](mw.EventReply.md#handled)**(): [`EventReply`](mw.EventReply.md)  |
 | :-----|

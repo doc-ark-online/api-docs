@@ -45,10 +45,6 @@ export default class InputExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new InputUtil**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[enableCursorInteractWithUI](mw.InputUtil.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void`  |
 | :-----|

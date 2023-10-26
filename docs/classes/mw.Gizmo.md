@@ -12,10 +12,6 @@ Gizmo
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Gizmo**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[axisXColor](mw.Gizmo.md#axisxcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|

@@ -22,16 +22,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Action**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 
 

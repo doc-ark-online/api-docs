@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new PostProcessConfig**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[bloomIntensity](mw.PostProcessConfig.md#bloomintensity)**: `number`  |
 | :-----|

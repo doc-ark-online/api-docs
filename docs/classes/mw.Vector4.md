@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Vector4**(`x?`: `number`)  |
-| :-----|
-| 用给定的 x，y，z，w 分量构建一个新的 Vector4|
-
 ### Properties <Score text="Properties" /> 
 | **[w](mw.Vector4.md#w)**: `number`  |
 | :-----|
@@ -32,7 +27,8 @@
 | 计算向量长度 (模)|
 | **[magnitude](mw.Vector4.md#magnitude)**(`a`: [`Vector4`](mw.Vector4.md)): `number`  |
 | 求向量长度|
-| [negative](mw.Vector4.md#negative) |
+| [negative](mw.Vector4.md#negative)  |
+| :----- |
 | **[normalized](mw.Vector4.md#normalized)**(): [`Vector4`](mw.Vector4.md)  |
 | 返回一个归一化的新向量,但不影响本向量.|
 | **[sqrLength](mw.Vector4.md#sqrlength)**(): `number`  |

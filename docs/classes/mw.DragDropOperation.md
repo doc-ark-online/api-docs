@@ -10,10 +10,6 @@ UI 拖拽事件
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new DragDropOperation**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[equal](mw.DragDropOperation.md#equal)**(`other`: [`DragDropOperation`](mw.DragDropOperation.md)): `boolean`  |
 | :-----|

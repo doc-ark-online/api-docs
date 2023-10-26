@@ -18,16 +18,6 @@ UI控件的集合,预制体UI
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[focusable](mw.UserWidget.md#focusable)**(): `boolean`  |
 | :-----|

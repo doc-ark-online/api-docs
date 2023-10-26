@@ -37,10 +37,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new MulticastGameObjectDelegate**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[add](mw.MulticastGameObjectDelegate.md#add)**(`func`: `GameObjectDelegateFuncType`): `void`  |
 | :-----|

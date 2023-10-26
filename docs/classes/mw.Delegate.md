@@ -146,10 +146,6 @@ Delegate的实现方案, 其实就是制造了一个对象去链接函数的地�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Delegate**<`T`: extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype)\>()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[bind](mw.Delegate.md#bind)**(`func`: `T`): `void`  |
 | :-----|

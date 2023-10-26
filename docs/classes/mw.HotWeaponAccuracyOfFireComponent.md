@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAccuracyOfFireComponent
+[玩法](../groups/Core.玩法.md) / HotWeaponAccuracyOfFireComponent
 
 # HotWeaponAccuracyOfFireComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAccuracyOfFireComponent" />
 
@@ -61,10 +61,6 @@ export default class HotWeaponAofSample1 extends Script {
 ```
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponAccuracyOfFireComponent**()  |
-| :----- |
 
 ### Properties <Score text="Properties" /> 
 | **[onCurrentDispersionChange](mw.HotWeaponAccuracyOfFireComponent.md#oncurrentdispersionchange)**: `MulticastDelegateInterface`<() => `void`\>  |

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new StringUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[clipboardCopy](mw.StringUtil.md#clipboardcopy)**(`text`: `string`): `void`  |
 | :-----|

@@ -58,10 +58,6 @@ CharacterDescription 如何使用呢？
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new CharacterDescription**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[advance](mw.CharacterDescription.md#advance)**: `Object`  |
 | :-----|
@@ -357,8 +353,8 @@ export default class CharacterStyleExample extends Script {
 | `makeup.lipstick.lipstickStyle?` `string` | **`Description`** 口红样式 |
 | `makeup.skinTone?` `{ `skinColor?`: `string` \| [`LinearColor`](mw.LinearColor.md)  }` | **`Description`** 肤色 |
 | `makeup.skinTone.skinColor?` `string` \| [`LinearColor`](mw.LinearColor.md) | **`Description`** 肌肤颜色 |
-| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>  } | 插槽和物品 |
-| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\> | **`Description`** 插槽数据 |
+| `slotAndDecoration?` `{ `slot`: `ArrayLike`<{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\>  } | 插槽和物品 |
+| `slotAndDecoration.slot` `ArrayLike`<`{ `decoration?`: [`CharacterDecoration`](mw.CharacterDecoration.md) ; `slotOffset?`: [`Transform`](mw.Transform.md)  }`\> | **`Description`** 插槽数据 |
 
 ___
 

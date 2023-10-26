@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new AssetIconData**()  |
-| :-----|
-| 默认构造|
-
 ### Accessors <Score text="Accessors" /> 
 | **[assetID](mw.AssetIconData.md#assetid)**(): `string`  |
 | :-----|

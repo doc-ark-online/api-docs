@@ -15,10 +15,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TabGroup**<`T`: extends [`TabGroupOnClickedProps`](../modules/Core.mw.md#tabgrouponclickedprops)\>(`tabArr`: `T`[])  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[currentIndex](mw.TabGroup.md#currentindex)**(): `number`  |
 | :-----|

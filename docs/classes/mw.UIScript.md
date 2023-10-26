@@ -20,10 +20,6 @@ UI的驱动脚本基类
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIScript**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean`  |
 | :-----|

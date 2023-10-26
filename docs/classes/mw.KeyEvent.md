@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new KeyEvent**()  |
-| :-----|
-| 默认构造|
-
 ### Methods <Score text="Methods" /> 
 | **[getKey](mw.KeyEvent.md#getkey)**(): [`KeyEvent`](mw.KeyEvent.md)  |
 | :-----|

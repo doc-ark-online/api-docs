@@ -1,4 +1,4 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / IntegratedMover
+[玩法](../groups/Core.玩法.md) / IntegratedMover
 
 # IntegratedMover <Badge type="tip" text="Class" /> <Score text="IntegratedMover" />
 
@@ -81,16 +81,6 @@ export default class IMExample1 extends Script {
   ↳ **`IntegratedMover`**
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
 
 ### Properties <Score text="Properties" /> 
 | **[onLinearEnable](mw.IntegratedMover.md#onlinearenable)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |

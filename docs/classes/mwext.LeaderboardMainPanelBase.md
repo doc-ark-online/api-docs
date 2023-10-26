@@ -21,17 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md)  |
 | :-----|

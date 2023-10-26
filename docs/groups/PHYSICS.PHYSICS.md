@@ -5,8 +5,6 @@ PHYSICS
 ## Table of contents
 | Classes |
 | :-----|
-| [Impulse](../classes/mw.Impulse.md) <br> 冲量 |
-| [IntegratedMover](../classes/mw.IntegratedMover.md) <br> 运动器组件 |
 | [PhysicsThruster](../classes/mw.PhysicsThruster.md) <br> 推进器 |
 
 

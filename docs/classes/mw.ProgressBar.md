@@ -16,16 +16,6 @@ UI进度条
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[backgroundImageColor](mw.ProgressBar.md#backgroundimagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|

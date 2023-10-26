@@ -38,10 +38,6 @@ export default class HitResultExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new HitResult**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[blockingHit](mw.HitResult.md#blockinghit)**: `boolean`  |
 | :-----|

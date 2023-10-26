@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIHugContent**(`w`: [`UIHugContentHorizontally`](../enums/mw.UIHugContentHorizontally.md), `h`: [`UIHugContentVertically`](../enums/mw.UIHugContentVertically.md))  |
-| :-----|
-| 构造具体规则方法|
-
 ### Properties <Score text="Properties" /> 
 | **[hugContentH](mw.UIHugContent.md#hugcontenth)**: [`UIHugContentVertically`](../enums/mw.UIHugContentVertically.md)  |
 | :-----|

@@ -34,10 +34,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Quaternion**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[w](mw.Quaternion.md#w)**: `number`  |
 | :-----|
@@ -86,7 +82,8 @@
 | 返回当前四元数转化的欧拉角（x-y-z）。|
 | **[normalize](mw.Quaternion.md#normalize)**(`a`: [`Quaternion`](mw.Quaternion.md), `outer?`: [`Quaternion`](mw.Quaternion.md)): [`Quaternion`](mw.Quaternion.md)  |
 | 归一化四元数|
-| [set](mw.Quaternion.md#set) |
+| [set](mw.Quaternion.md#set)  |
+| :----- |
 | **[setEulerAngles](mw.Quaternion.md#seteulerangles)**(`euler`: [`Vector`](mw.Vector.md)): `void`  |
 | 设置欧拉角|
 | **[strictEquals](mw.Quaternion.md#strictequals)**(`a`: [`Quaternion`](mw.Quaternion.md), `b`: [`Quaternion`](mw.Quaternion.md)): `boolean`  |

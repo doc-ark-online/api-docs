@@ -17,11 +17,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Tween**<`T`: extends [`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>(`obj`: `T`, `group?`: ``false`` \)  |
-| :-----|
-| 补间构造函数|
-
 ### Methods <Score text="Methods" /> 
 | **[chain](mw.Tween.md#chain)**(`...tweens`: [`Tween`](mw.Tween.md)<`any`\>[]): [`Tween`](mw.Tween.md)<`T`\>  |
 | :-----|

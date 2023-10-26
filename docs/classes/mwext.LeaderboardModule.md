@@ -12,10 +12,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LeaderboardModule**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[addField](mwext.LeaderboardModule.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
 | :-----|

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TimeUtil**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onEnterFrame](mw.TimeUtil.md#onenterframe)**: [`Action1`](mw.Action1.md)<`number`\>  |
 | :-----|

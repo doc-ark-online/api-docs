@@ -118,16 +118,6 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onProjectileHit](mw.ObjectLauncher.md#onprojectilehit)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md), `hitGameObject`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `void`\>  |
 | :-----|

@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponReloadComponent
+[玩法](../groups/Core.玩法.md) / HotWeaponReloadComponent
 
 # HotWeaponReloadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponReloadComponent" />
 
@@ -38,10 +38,6 @@ export default class HotWeaponReloadSample1 extends Script {
 ```
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponReloadComponent**()  |
-| :----- |
 
 ### Properties <Score text="Properties" /> 
 | **[onEndReload](mw.HotWeaponReloadComponent.md#onendreload)**: `MulticastDelegateInterface`<() => `void`\>  |

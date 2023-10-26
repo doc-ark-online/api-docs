@@ -81,7 +81,8 @@ mw
 | 画质等级|
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
-| [HideInEditorState](../enums/mw.HideInEditorState.md) |
+| [HideInEditorState](../enums/mw.HideInEditorState.md)  |
+| :----- |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |
@@ -251,6 +252,10 @@ mw
 | 控制一些优化项的开启关闭|
 | [BlockingVolume](../classes/mw.BlockingVolume.md)  |
 | 禁行区|
+| [BubbleUI](../classes/mw.BubbleUI.md)  |
+| 聊天头顶ui|
+| [BubbleUIManager](../classes/mw.BubbleUIManager.md)  |
+| 聊天头顶ui|
 | [Button](../classes/mw.Button.md)  |
 | 按钮,无默认text|
 | [Camera](../classes/mw.Camera.md)  |
@@ -265,6 +270,8 @@ mw
 | 人形外观配置|
 | [CharacterEvent](../classes/mw.CharacterEvent.md)  |
 | 角色输入事件|
+| [ChatBubble](../classes/mw.ChatBubble.md)  |
+| 聊天头顶气泡|
 | [ChatService](../classes/mw.ChatService.md)  |
 | 聊天服务|
 | [ColorPick](../classes/mw.ColorPick.md)  |
@@ -447,8 +454,6 @@ mw
 | UI文本|
 | [TimeUtil](../classes/mw.TimeUtil.md)  |
 | 时间工具|
-| [TouchInputUtil](../classes/mw.TouchInputUtil.md)  |
-| 玩家从可触摸设备获取的数据信息，包含触摸手指数量，触摸位置(屏幕像素)和当前触摸状态(点击/滑动/离开)|
 | [TouchPad](../classes/mw.TouchPad.md)  |
 | 摄像机滑动区|
 | [Transform](../classes/mw.Transform.md)  |

@@ -11,10 +11,6 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new RoomService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getCurrentEnvironment](mw.RoomService.md#getcurrentenvironment)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
 | :-----|

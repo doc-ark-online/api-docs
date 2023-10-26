@@ -46,56 +46,55 @@ CharacterDescription 在 slotAndDecoration 中定义了一个名为 slot 的只�
 
 ## Hierarchy
 
-- `Array`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>
+- `Array`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\>
 
   ↳ **`CharacterDecoration`**
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Properties <Score text="Properties" /> 
 
 ### Methods <Score text="Methods" /> 
-| [[iterator]](mw.CharacterDecoration.md#[iterator]) |
+| [[iterator]](mw.CharacterDecoration.md#[iterator])  |
+| :----- |
 | [[unscopables]](mw.CharacterDecoration.md#[unscopables]) |
 | **[add](mw.CharacterDecoration.md#add)**(`decoration`: `string` \, `attachmentOffset?`: [`Transform`](mw.Transform.md)): `void`  |
 | 向当前外观插槽中添加一个挂件|
-| **[at](mw.CharacterDecoration.md#at)**(`index`): `undefined` \| `{ `[at](mw.CharacterDecoration.md#at)tachmentAssetId`: `string` ; `[at](mw.CharacterDecoration.md#at)tachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `[at](mw.CharacterDecoration.md#at)tachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }` |
+| **[at](mw.CharacterDecoration.md#at)**(`index`): `undefined` \| `{ `[at](mw.CharacterDecoration.md#at)tachmentAssetId`: `string` ; `[at](mw.CharacterDecoration.md#at)tachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `[at](mw.CharacterDecoration.md#at)tachmentOffset?`: [`Transform`](mw.Transform.md)  }` |
 | **[clear](mw.CharacterDecoration.md#clear)**(`isDestroy?`: `boolean`): `void`  |
 | 清空当前外观插槽的所有挂件|
-| **[concat](mw.CharacterDecoration.md#concat)**(`...items`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] |
+| **[concat](mw.CharacterDecoration.md#concat)**(`...items`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] |
 | **[copyWithin](mw.CharacterDecoration.md#copywithin)**(`target`, `start`, `end?`): [`CharacterDecoration`](mw.CharacterDecoration.md) |
 | **[delete](mw.CharacterDecoration.md#delete)**(`attachmentGameObject`: [`GameObject`](mw.GameObject.md), `isDestroy?`: `boolean`): `void`  |
 | 从当前插槽中删除一个挂件|
-| **[entries](mw.CharacterDecoration.md#entries)**(): `IterableIterator`<[`number`, `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`]\> |
-| **[every](mw.CharacterDecoration.md#every)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `unknown`, `thisArg?`: `any`): this is S[] |
+| **[entries](mw.CharacterDecoration.md#entries)**(): `IterableIterator`<[`number`, `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`]\> |
+| **[every](mw.CharacterDecoration.md#every)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `unknown`, `thisArg?`: `any`): this is S[] |
 | **[fill](mw.CharacterDecoration.md#fill)**(`value`: `Object`, `start?`: `number`, `end?`: `number`): [`CharacterDecoration`](mw.CharacterDecoration.md) |
-| **[filter](mw.CharacterDecoration.md#filter)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `unknown`, `thisArg?`: `any`): `S`: extends `Object`[] |
-| **[find](mw.CharacterDecoration.md#find)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `obj`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `S`: extends `Object` |
-| **[findIndex](mw.CharacterDecoration.md#findindex)**(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `obj`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `unknown`, `thisArg?`: `any`): `number` |
+| **[filter](mw.CharacterDecoration.md#filter)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `unknown`, `thisArg?`: `any`): `S`: extends `Object`[] |
+| **[find](mw.CharacterDecoration.md#find)**<`S`: extends `Object`\>(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `obj`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `unknown`, `thisArg?`: `any`): `undefined` \| `S`: extends `Object` |
+| **[findIndex](mw.CharacterDecoration.md#findindex)**(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `obj`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `unknown`, `thisArg?`: `any`): `number` |
 | **[flat](mw.CharacterDecoration.md#flat)**<`A`: `A`, `D`: extends `number` = ``1``\>(`this`: `A`, `depth?`: `D`): `FlatArray`<`A`: `A`, `D`: extends `number` = ``1``\>[] |
-| **[flatMap](mw.CharacterDecoration.md#flatmap)**<`U`: `U`, `This`: `undefined`\>(`callback`: (`this`: `This`, `value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `U` \, `thisArg?`: `This`): `U`: `U`[] |
+| **[flatMap](mw.CharacterDecoration.md#flatmap)**<`U`: `U`, `This`: `undefined`\>(`callback`: (`this`: `This`, `value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `U` \, `thisArg?`: `This`): `U`: `U`[] |
 | **[includes](mw.CharacterDecoration.md#includes)**(`searchElement`: `Object`, `fromIndex?`: `number`): `boolean` |
 | **[indexOf](mw.CharacterDecoration.md#indexof)**(`searchElement`: `Object`, `fromIndex?`: `number`): `number` |
 | **[join](mw.CharacterDecoration.md#join)**(`separator?`: `string`): `string` |
 | **[keys](mw.CharacterDecoration.md#keys)**(): `IterableIterator`<`number`\> |
 | **[lastIndexOf](mw.CharacterDecoration.md#lastindexof)**(`searchElement`: `Object`, `fromIndex?`: `number`): `number` |
-| **[map](mw.CharacterDecoration.md#map)**<`U`: \>(`callbackfn`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `U`, `thisArg?`: `any`): `U`: [] |
-| **[pop](mw.CharacterDecoration.md#pop)**(): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }` |
-| **[push](mw.CharacterDecoration.md#push)**(`...items`: `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[]): `number` |
-| **[reduce](mw.CharacterDecoration.md#reduce)**(`callbackfn`: (`previousValue`: `U`: , `currentValue`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `currentIndex`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `U`: ): `Object` |
-| **[reduceRight](mw.CharacterDecoration.md#reduceright)**(`callbackfn`: (`previousValue`: `U`: , `currentValue`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `currentIndex`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `U`: ): `Object` |
-| **[reverse](mw.CharacterDecoration.md#reverse)**(): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] |
-| **[shift](mw.CharacterDecoration.md#shift)**(): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }` |
-| **[slice](mw.CharacterDecoration.md#slice)**(`start?`: `number`, `end?`: `number`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] |
-| **[some](mw.CharacterDecoration.md#some)**(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``[]) => `unknown`, `thisArg?`: `any`): `boolean` |
-| **[sort](mw.CharacterDecoration.md#sort)**(`compareFn?`: (`a`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``, `b`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }``) => `number`): [`CharacterDecoration`](mw.CharacterDecoration.md) |
-| **[splice](mw.CharacterDecoration.md#splice)**(`start`: `number`, `deleteCount?`: `number`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] |
+| **[map](mw.CharacterDecoration.md#map)**<`U`: \>(`callbackfn`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `U`, `thisArg?`: `any`): `U`: [] |
+| **[pop](mw.CharacterDecoration.md#pop)**(): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }` |
+| **[push](mw.CharacterDecoration.md#push)**(`...items`: `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[]): `number` |
+| **[reduce](mw.CharacterDecoration.md#reduce)**(`callbackfn`: (`previousValue`: `U`: , `currentValue`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `currentIndex`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `U`: ): `Object` |
+| **[reduceRight](mw.CharacterDecoration.md#reduceright)**(`callbackfn`: (`previousValue`: `U`: , `currentValue`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `currentIndex`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `U`: ): `Object` |
+| **[reverse](mw.CharacterDecoration.md#reverse)**(): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] |
+| **[shift](mw.CharacterDecoration.md#shift)**(): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }` |
+| **[slice](mw.CharacterDecoration.md#slice)**(`start?`: `number`, `end?`: `number`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] |
+| **[some](mw.CharacterDecoration.md#some)**(`predicate`: (`value`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `index`: `number`, `array`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``[]) => `unknown`, `thisArg?`: `any`): `boolean` |
+| **[sort](mw.CharacterDecoration.md#sort)**(`compareFn?`: (`a`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``, `b`: ``{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }``) => `number`): [`CharacterDecoration`](mw.CharacterDecoration.md) |
+| **[splice](mw.CharacterDecoration.md#splice)**(`start`: `number`, `deleteCount?`: `number`): `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] |
 | **[toLocaleString](mw.CharacterDecoration.md#tolocalestring)**(): `string` |
 | **[toString](mw.CharacterDecoration.md#tostring)**(): `string` |
-| **[unshift](mw.CharacterDecoration.md#unshift)**(`...items`: `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[]): `number` |
-| **[values](mw.CharacterDecoration.md#values)**(): `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\> |
+| **[unshift](mw.CharacterDecoration.md#unshift)**(`...items`: `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[]): `number` |
+| **[values](mw.CharacterDecoration.md#values)**(): `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\> |
 | **[from](mw.CharacterDecoration.md#from)**<`T`: \>(`arrayLike`: `ArrayLike`<`T`\>): `T`: [] |
 | **[isArray](mw.CharacterDecoration.md#isarray)**(`arg`: `any`): arg is any[] |
 | **[of](mw.CharacterDecoration.md#of)**<`T`: \>(`...items`: `T`[]): `T`: [] |
@@ -106,13 +105,13 @@ CharacterDescription 在 slotAndDecoration 中定义了一个名为 slot 的只�
 
 ### [iterator] <Score text="" /> 
 
-• **[iterator]**(): `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>
+• **[iterator]**(): `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\>
 
 Iterator
 
 #### Returns
 
-| `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\> | Array.\_\_@iterator@114 |
+| `IterableIterator`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\> | Array.\_\_@iterator@114 |
 | :------ | :------ |
 
 ___
@@ -198,7 +197,7 @@ ___
 
 ### at <Score text="at" /> 
 
-• **at**(`index`): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`
+• **at**(`index`): `undefined` \| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`
 
 Returns the item located at the specified index.
 
@@ -232,7 +231,7 @@ ___
 
 #### Returns
 
-| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | Array.at |
+| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | Array.at |
 | :------ | :------ |
 @Component
 export default class Example_CharacterDecoration_Clear extends Script {
@@ -275,7 +274,7 @@ ___
 
 ### concat <Score text="concat" /> 
 
-• **concat**(`...items`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **concat**(`...items`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Combines two or more arrays.
 This method returns a new array without modifying any existing arrays.
@@ -345,17 +344,17 @@ export default class Example_CharacterDecoration_Delete extends Script {
 
 #### Parameters
 
-| `...items` `ConcatArray`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`\>[] | Additional arrays and/or items to add to the end of the array. |
+| `...items` `ConcatArray`<`{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`\>[] | Additional arrays and/or items to add to the end of the array. |
 | :------ | :------ |
 
 #### Returns
 
-| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] | Array.concat |
+| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] | Array.concat |
 | :------ | :------ |
 
 #### Returns
 
-| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }`[] | Array.concat |
+| `{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }`[] | Array.concat |
 | :------ | :------ |
                 if(myCharacter.characterType == CharacterType.HumanoidV2) {
                     let ring = myCharacter.description.advance.slotAndDecoration.slot[HumanoidSlotType.Rings].decoration[0].attachmentGameObject;
@@ -386,13 +385,13 @@ ___
 
 ### entries <Score text="entries" /> 
 
-• **entries**(): `IterableIterator`<[`number`, { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }]\>
+• **entries**(): `IterableIterator`<[`number`, { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }]\>
 
 Returns an iterable of key, value pairs for every entry in the array
 
 #### Returns
 
-| `IterableIterator`<[`number`, { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }]\> | Array.entries |
+| `IterableIterator`<[`number`, { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }]\> | Array.entries |
 | :------ | :------ |
 
 ___
@@ -410,7 +409,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => value is S | A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => value is S | A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -425,7 +424,7 @@ Determines whether all the members of an array satisfy the specified test.
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `unknown` | A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `unknown` | A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -448,7 +447,7 @@ Changes all array elements from `start` to `end` index to a static `value` and r
 | :------ | :------ |
 | `value.attachmentAssetId` `string` | - |
 | `value.attachmentGameObject?` [`GameObject`](mw.GameObject.md) | - |
-| `value.attachmentOffset?` `Readonly`<[`Transform`](mw.Transform.md)\> | - |
+| `value.attachmentOffset?` [`Transform`](mw.Transform.md) | - |
 | `start?` `number` | index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array. |
 | `end?` `number` | index to stop filling the array at. If end is negative, it is treated as length+end. |
 
@@ -472,7 +471,7 @@ Returns the elements of an array that meet the condition specified in a callback
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => value is S | A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => value is S | A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -481,19 +480,19 @@ Returns the elements of an array that meet the condition specified in a callback
 | `S`[] | Array.filter |
 | :------ | :------ |
 
-• **filter**(`predicate`, `thisArg?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **filter**(`predicate`, `thisArg?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Returns the elements of an array that meet the condition specified in a callback function.
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `unknown` | A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `unknown` | A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value. |
 
 #### Returns
 
-| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Array.filter |
+| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Array.filter |
 | :------ | :------ |
 
 ___
@@ -512,7 +511,7 @@ otherwise.
 
 #### Parameters
 
-| `predicate` (`this`: `void`, `value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => value is S | find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined. |
+| `predicate` (`this`: `void`, `value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => value is S | find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined. |
 | :------ | :------ |
 | `thisArg?` `any` | If provided, it will be used as the this value for each invocation of predicate. If it is not provided, undefined is used instead. |
 
@@ -521,17 +520,17 @@ otherwise.
 | `undefined` \| `S` | Array.find |
 | :------ | :------ |
 
-• **find**(`predicate`, `thisArg?`): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }
+• **find**(`predicate`, `thisArg?`): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }
 
 #### Parameters
 
-| `predicate` | (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `unknown` |
+| `predicate` | (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `unknown` |
 | :------ | :------ |
 | `thisArg?` | `any` |
 
 #### Returns
 
-| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | Array.find |
+| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | Array.find |
 | :------ | :------ |
 
 ___
@@ -545,7 +544,7 @@ otherwise.
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `unknown` | find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `obj`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `unknown` | find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1. |
 | :------ | :------ |
 | `thisArg?` `any` | If provided, it will be used as the this value for each invocation of predicate. If it is not provided, undefined is used instead. |
 
@@ -598,7 +597,7 @@ This is identical to a map followed by flat with depth 1.
 
 #### Parameters
 
-| `callback` (`this`: `This`, `value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `U` \| readonly `U`[] | A function that accepts up to three arguments. The flatMap method calls the callback function one time for each element in the array. |
+| `callback` (`this`: `This`, `value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `U` \| readonly `U`[] | A function that accepts up to three arguments. The flatMap method calls the callback function one time for each element in the array. |
 | :------ | :------ |
 | `thisArg?` `This` | An object to which the this keyword can refer in the callback function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -621,7 +620,7 @@ Determines whether an array includes a certain element, returning true or false 
 | :------ | :------ |
 | `searchElement.attachmentAssetId` `string` | - |
 | `searchElement.attachmentGameObject?` [`GameObject`](mw.GameObject.md) | - |
-| `searchElement.attachmentOffset?` `Readonly`<[`Transform`](mw.Transform.md)\> | - |
+| `searchElement.attachmentOffset?` [`Transform`](mw.Transform.md) | - |
 | `fromIndex?` `number` | The position in this array at which to begin searching for searchElement. |
 
 #### Returns
@@ -643,7 +642,7 @@ Returns the index of the first occurrence of a value in an array, or -1 if it is
 | :------ | :------ |
 | `searchElement.attachmentAssetId` `string` | - |
 | `searchElement.attachmentGameObject?` [`GameObject`](mw.GameObject.md) | - |
-| `searchElement.attachmentOffset?` `Readonly`<[`Transform`](mw.Transform.md)\> | - |
+| `searchElement.attachmentOffset?` [`Transform`](mw.Transform.md) | - |
 | `fromIndex?` `number` | The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0. |
 
 #### Returns
@@ -696,7 +695,7 @@ Returns the index of the last occurrence of a specified value in an array, or -1
 | :------ | :------ |
 | `searchElement.attachmentAssetId` `string` | - |
 | `searchElement.attachmentGameObject?` [`GameObject`](mw.GameObject.md) | - |
-| `searchElement.attachmentOffset?` `Readonly`<[`Transform`](mw.Transform.md)\> | - |
+| `searchElement.attachmentOffset?` [`Transform`](mw.Transform.md) | - |
 | `fromIndex?` `number` | The array index at which to begin searching backward. If fromIndex is omitted, the search starts at the last index in the array. |
 
 #### Returns
@@ -720,7 +719,7 @@ Calls a defined callback function on each element of an array, and returns an ar
 
 #### Parameters
 
-| `callbackfn` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `U` | A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array. |
+| `callbackfn` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `U` | A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -733,14 +732,14 @@ ___
 
 ### pop <Score text="pop" /> 
 
-• **pop**(): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }
+• **pop**(): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }
 
 Removes the last element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
 
 #### Returns
 
-| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | Array.pop |
+| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | Array.pop |
 | :------ | :------ |
 
 ___
@@ -753,7 +752,7 @@ Appends new elements to the end of an array, and returns the new length of the a
 
 #### Parameters
 
-| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | New elements to add to the array. |
+| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | New elements to add to the array. |
 | :------ | :------ |
 
 #### Returns
@@ -771,7 +770,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 #### Parameters
 
-| `callbackfn` (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array. |
+| `callbackfn` (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array. |
 | :------ | :------ |
 
 #### Returns
@@ -783,12 +782,12 @@ Calls the specified callback function for all the elements in an array. The retu
 
 #### Parameters
 
-| `callbackfn` | (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } |
+| `callbackfn` | (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } |
 | :------ | :------ |
 | `initialValue` | `Object` |
 | `initialValue.attachmentAssetId` | `string` |
 | `initialValue.attachmentGameObject?` | [`GameObject`](mw.GameObject.md) |
-| `initialValue.attachmentOffset?` | `Readonly`<[`Transform`](mw.Transform.md)\> |
+| `initialValue.attachmentOffset?` | [`Transform`](mw.Transform.md) |
 
 #### Returns
 
@@ -807,7 +806,7 @@ Calls the specified callback function for all the elements in an array. The retu
 
 #### Parameters
 
-| `callbackfn` (`previousValue`: `U`, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `U` | A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array. |
+| `callbackfn` (`previousValue`: `U`, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `U` | A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array. |
 | :------ | :------ |
 | `initialValue` `U` | If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value. |
 
@@ -826,7 +825,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 #### Parameters
 
-| `callbackfn` (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. |
+| `callbackfn` (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. |
 | :------ | :------ |
 
 #### Returns
@@ -838,12 +837,12 @@ Calls the specified callback function for all the elements in an array, in desce
 
 #### Parameters
 
-| `callbackfn` | (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } |
+| `callbackfn` | (`previousValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } |
 | :------ | :------ |
 | `initialValue` | `Object` |
 | `initialValue.attachmentAssetId` | `string` |
 | `initialValue.attachmentGameObject?` | [`GameObject`](mw.GameObject.md) |
-| `initialValue.attachmentOffset?` | `Readonly`<[`Transform`](mw.Transform.md)\> |
+| `initialValue.attachmentOffset?` | [`Transform`](mw.Transform.md) |
 
 #### Returns
 
@@ -862,7 +861,7 @@ Calls the specified callback function for all the elements in an array, in desce
 
 #### Parameters
 
-| `callbackfn` (`previousValue`: `U`, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `U` | A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. |
+| `callbackfn` (`previousValue`: `U`, `currentValue`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `currentIndex`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `U` | A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. |
 | :------ | :------ |
 | `initialValue` `U` | If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value. |
 
@@ -875,35 +874,35 @@ ___
 
 ### reverse <Score text="reverse" /> 
 
-• **reverse**(): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **reverse**(): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Reverses the elements in an array in place.
 This method mutates the array and returns a reference to the same array.
 
 #### Returns
 
-| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Array.reverse |
+| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Array.reverse |
 | :------ | :------ |
 
 ___
 
 ### shift <Score text="shift" /> 
 
-• **shift**(): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }
+• **shift**(): `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }
 
 Removes the first element from an array and returns it.
 If the array is empty, undefined is returned and the array is not modified.
 
 #### Returns
 
-| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  } | Array.shift |
+| `undefined` \| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  } | Array.shift |
 | :------ | :------ |
 
 ___
 
 ### slice <Score text="slice" /> 
 
-• **slice**(`start?`, `end?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **slice**(`start?`, `end?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Returns a copy of a section of an array.
 For both start and end, a negative index can be used to indicate an offset from the end of the array.
@@ -917,7 +916,7 @@ For example, -2 refers to the second to last element of the array.
 
 #### Returns
 
-| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Array.slice |
+| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Array.slice |
 | :------ | :------ |
 
 ___
@@ -930,7 +929,7 @@ Determines whether the specified callback function returns true for any element 
 
 #### Parameters
 
-| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]) => `unknown` | A function that accepts up to three arguments. The some method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value true, or until the end of the array. |
+| `predicate` (`value`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `index`: `number`, `array`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]) => `unknown` | A function that accepts up to three arguments. The some method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value true, or until the end of the array. |
 | :------ | :------ |
 | `thisArg?` `any` | An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value. |
 
@@ -950,7 +949,7 @@ This method mutates the array and returns a reference to the same array.
 
 #### Parameters
 
-| `compareFn?` (`a`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }, `b`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }) => `number` | Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order. ```ts [11,2,22,1].sort((a, b) => a - b) ``` |
+| `compareFn?` (`a`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }, `b`: { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }) => `number` | Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order. ```ts [11,2,22,1].sort((a, b) => a - b) ``` |
 | :------ | :------ |
 
 #### Returns
@@ -962,7 +961,7 @@ ___
 
 ### splice <Score text="splice" /> 
 
-• **splice**(`start`, `deleteCount?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **splice**(`start`, `deleteCount?`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
@@ -974,10 +973,10 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 
 #### Returns
 
-| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Array.splice |
+| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Array.splice |
 | :------ | :------ |
 
-• **splice**(`start`, `deleteCount`, `...items`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[]
+• **splice**(`start`, `deleteCount`, `...items`): { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[]
 
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
@@ -986,11 +985,11 @@ Removes elements from an array and, if necessary, inserts new elements in their 
 | `start` `number` | The zero-based location in the array from which to start removing elements. |
 | :------ | :------ |
 | `deleteCount` `number` | The number of elements to remove. |
-| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Elements to insert into the array in place of the deleted elements. |
+| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Elements to insert into the array in place of the deleted elements. |
 
 #### Returns
 
-| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Array.splice |
+| { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Array.splice |
 | :------ | :------ |
 
 ___
@@ -1029,7 +1028,7 @@ Inserts new elements at the start of an array, and returns the new length of the
 
 #### Parameters
 
-| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }[] | Elements to insert at the start of the array. |
+| `...items` { `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }[] | Elements to insert at the start of the array. |
 | :------ | :------ |
 
 #### Returns
@@ -1041,13 +1040,13 @@ ___
 
 ### values <Score text="values" /> 
 
-• **values**(): `IterableIterator`<{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }\>
+• **values**(): `IterableIterator`<{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }\>
 
 Returns an iterable of values in the array
 
 #### Returns
 
-| `IterableIterator`<{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: `Readonly`<[`Transform`](mw.Transform.md)\>  }\> | Array.values |
+| `IterableIterator`<{ `attachmentAssetId`: `string` ; `attachmentGameObject?`: [`GameObject`](mw.GameObject.md) ; `attachmentOffset?`: [`Transform`](mw.Transform.md)  }\> | Array.values |
 | :------ | :------ |
 
 ___

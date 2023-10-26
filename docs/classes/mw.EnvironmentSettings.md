@@ -37,10 +37,6 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new EnvironmentSettings**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getGravity](mw.EnvironmentSettings.md#getgravity)**(): `number`  |
 | :-----|

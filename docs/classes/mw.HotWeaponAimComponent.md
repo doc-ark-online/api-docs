@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponAimComponent
+[玩法](../groups/Core.玩法.md) / HotWeaponAimComponent
 
 # HotWeaponAimComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponAimComponent" />
 
@@ -38,10 +38,6 @@ export default class HotWeaponAimSample1 extends Script {
 ```
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponAimComponent**()  |
-| :----- |
 
 ### Properties <Score text="Properties" /> 
 | **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: `MulticastDelegateInterface`<() => `void`\>  |

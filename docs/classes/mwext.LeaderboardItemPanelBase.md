@@ -21,20 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LeaderboardItemPanelBase**<`T`: extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number`  |
 | :-----|

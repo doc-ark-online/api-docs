@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UILayout**(`InLayoutSpace`: `number`, `InPadding`: [`Margin`](mw.Margin.md), `InLayout`: [`UILayoutType`](../enums/mw.UILayoutType.md), `InLayoutPacket`: [`UILayoutPacket`](../enums/mw.UILayoutPacket.md), `InHugContent`: [`UIHugContent`](mw.UIHugContent.md), `InAutoLayout`: `boolean`, `InAutoWrap`: `boolean`)  |
-| :-----|
-| 构造函数，传入每一个值|
-
 ### Properties <Score text="Properties" /> 
 | **[autoLayout](mw.UILayout.md#autolayout)**: `boolean`  |
 | :-----|

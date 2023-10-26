@@ -16,16 +16,6 @@ UI文本
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[autoAdjust](mw.TextBlock.md#autoadjust)**(): `boolean`  |
 | :-----|

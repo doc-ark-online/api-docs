@@ -31,11 +31,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-
 ### Accessors <Score text="Accessors" /> 
 | **[size](mwext.BasePanel.md#size)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|

@@ -16,10 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SystemUtil**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[currentPlatform](mw.SystemUtil.md#currentplatform)**: [`RuntimePlatform`](../enums/mw.RuntimePlatform.md)  |
 | :-----|

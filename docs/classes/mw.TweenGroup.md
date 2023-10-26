@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TweenGroup**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[add](mw.TweenGroup.md#add)**(`tween`: [`Tween`](mw.Tween.md)<[`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>): `void`  |
 | :-----|

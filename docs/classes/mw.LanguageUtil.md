@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LanguageUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getLocTextValue](mw.LanguageUtil.md#getloctextvalue)**(`textkey`: `string`): `string`  |
 | :-----|

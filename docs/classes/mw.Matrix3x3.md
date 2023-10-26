@@ -16,11 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Matrix3x3**(`other`: [`Matrix3x3`](mw.Matrix3x3.md))  |
-| :-----|
-| 用给定的元素构建一个新的 Matrix3x3|
-
 ### Properties <Score text="Properties" /> 
 | **[m00](mw.Matrix3x3.md#m00)**: `number`  |
 | :-----|

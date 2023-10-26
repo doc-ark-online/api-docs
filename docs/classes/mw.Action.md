@@ -170,10 +170,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Action**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[count](mw.Action.md#count)**(): `number`  |
 | :-----|

@@ -49,10 +49,6 @@ export default class SkyboxExample extends mw.Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Skybox**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[cloudColor](mw.Skybox.md#cloudcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|

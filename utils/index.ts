@@ -23,6 +23,17 @@ interface GroupsConfig {
   }
 }
 
+interface GroupsConfigV2 {
+  [key: string]: {
+    file: {
+      file_name: string
+      file_path: string
+      name: string
+    }[]
+    children?: GroupsConfigV2
+  }
+}
+
 /** 根据配置文件生成对应的侧边栏 */
 export function dealConfigSidebar() {
   // const json = readJSONSync(`./docs/configs/groups.json`) as GroupsConfig
@@ -141,3 +152,54 @@ function getMdNameInfo(mdName: string) {
     namespace: infos.at(0)!
   }
 }
+
+/** 根据配置文件生成对应的侧边栏 - 多级目录版本 */
+export function dealConfigSidebarV2() {
+  const json = JSON.parse(
+    readFileSync('./docs/configs/groups.json', { encoding: 'utf-8' })
+  ) as GroupsConfigV2
+  return configToSidebarGroup(json)
+}
+
+function configToSidebarGroup(configs: GroupsConfigV2) {
+  const arr: DefaultTheme.SidebarGroup[] = []
+  Object.entries(configs).forEach(([key, value]) => {
+    if (value.children) {
+      arr.push({
+        text: key,
+        collapsed: true,
+        collapsible: true,
+        items: [
+          ...configToSidebarGroup(value.children),
+          ...value.file.map((item) => {
+            return {
+              text: item.name,
+              link: item.file_path,
+              collapsed: false,
+              collapsible: false
+            }
+          })
+        ]
+      })
+    } else {
+      arr.push({
+        text: key,
+        collapsed: true,
+        collapsible: true,
+        items: [
+          ...value.file.map((item) => {
+            return {
+              text: item.name,
+              link: item.file_path,
+              collapsed: false,
+              collapsible: false
+            }
+          })
+        ]
+      })
+    }
+  })
+  return arr
+}
+
+console.log(dealConfigSidebarV2())

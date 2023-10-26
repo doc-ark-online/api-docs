@@ -5,7 +5,8 @@ mwext
 ## Table of contents
 
 ### Namespaces <Score text="Namespaces" /> 
-| [Decorator](mwext.Decorator.md) |
+| [Decorator](mwext.Decorator.md)  |
+| :----- |
 
 ### Enumerations <Score text="Enumerations" /> 
 | [GameObjPoolSourceType](../enums/mwext.GameObjPoolSourceType.md)  |

@@ -34,10 +34,6 @@ EffectService 中很多静态方法可直接调用，其中：
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new EffectService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\>  |
 | :-----|

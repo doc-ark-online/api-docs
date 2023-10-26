@@ -48,10 +48,6 @@ export default class MaterialExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new MaterialInstance**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getAllScalarParameterName](mw.MaterialInstance.md#getallscalarparametername)**(): `string`[]  |
 | :-----|

@@ -31,10 +31,6 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new AvatarSettings**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[optimizationEnabled](mw.AvatarSettings.md#optimizationenabled)**(): `boolean`  |
 | :-----|

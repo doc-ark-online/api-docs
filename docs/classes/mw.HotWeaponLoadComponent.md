@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / HotWeaponLoadComponent
+[玩法](../groups/Core.玩法.md) / HotWeaponLoadComponent
 
 # HotWeaponLoadComponent <Badge type="tip" text="Class" /> <Score text="HotWeaponLoadComponent" />
 
@@ -37,10 +37,6 @@ export default class HotWeaponLoadSample1 extends Script {
 ```
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponLoadComponent**()  |
-| :----- |
 
 ### Properties <Score text="Properties" /> 
 | **[onEndLoad](mw.HotWeaponLoadComponent.md#onendload)**: `MulticastDelegateInterface`<() => `void`\>  |

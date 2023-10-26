@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIChildCollation**(`h`: [`UIHorizontalCollation`](../enums/mw.UIHorizontalCollation.md), `v`: [`UIVerticalCollation`](../enums/mw.UIVerticalCollation.md))  |
-| :-----|
-| 构造具体规则方法|
-
 ### Properties <Score text="Properties" /> 
 | **[horizontalCollation](mw.UIChildCollation.md#horizontalcollation)**: [`UIHorizontalCollation`](../enums/mw.UIHorizontalCollation.md)  |
 | :-----|

@@ -18,10 +18,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Script**(`data`: `ActorInfo`)  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[bIsDestroy](mw.Script.md#bisdestroy)**: `any`  |
 | :----- |

@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UITransform**(`x`: `number`, `y`: `number`, `w`: `number`, `h`: `number`)  |
-| :-----|
-| 通过点构造|
-
 ### Properties <Score text="Properties" /> 
 | **[position](mw.UITransform.md#position)**: [`Vector2`](mw.Vector2.md)  |
 | :-----|

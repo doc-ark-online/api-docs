@@ -58,8 +58,6 @@ Stance 如何工作的呢？
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Accessors <Score text="Accessors" /> 
 | **[aimOffsetEnabled](mw.Stance.md#aimoffsetenabled)**(): `boolean`  |
 | :-----|

@@ -16,11 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Transform**()  |
-| :-----|
-| 复制给定的 Transform|
-
 ### Accessors <Score text="Accessors" /> 
 | **[position](mw.Transform.md#position)**(): [`Vector`](mw.Vector.md)  |
 | :-----|

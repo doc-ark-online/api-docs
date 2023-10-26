@@ -115,10 +115,6 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ModuleService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>, `type?`: `number`, `...params`: `any`[]): `any`  |
 | :-----|

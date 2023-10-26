@@ -1,4 +1,4 @@
-[PHYSICS](../groups/Core.PHYSICS.md) / Impulse
+[玩法](../groups/Core.玩法.md) / Impulse
 
 # Impulse <Badge type="tip" text="Class" /> <Score text="Impulse" />
 
@@ -86,16 +86,6 @@ export default class ImpulseSample extends Script {
   ↳ **`Impulse`**
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
 
 ### Properties <Score text="Properties" /> 
 | **[onImpulseEnter](mw.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |

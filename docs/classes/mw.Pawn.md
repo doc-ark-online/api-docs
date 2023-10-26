@@ -18,16 +18,6 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 
 

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LocaleUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getDefaultLocale](mw.LocaleUtil.md#getdefaultlocale)**(): `string`  |
 | :-----|

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new EventListener**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[isConnected](mw.EventListener.md#isconnected)**(): `boolean`  |
 | :-----|

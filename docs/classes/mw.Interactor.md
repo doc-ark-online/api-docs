@@ -1,4 +1,4 @@
-[GAMEPLAY](../groups/Core.GAMEPLAY.md) / Interactor
+[玩法](../groups/Core.玩法.md) / Interactor
 
 # Interactor <Badge type="tip" text="Class" /> <Score text="Interactor" />
 
@@ -52,16 +52,6 @@ export default class InteractorSample extends Script {
   ↳ **`Interactor`**
 
 ## Table of contents
-
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
 
 ### Properties <Score text="Properties" /> 
 | **[onEnter](mw.Interactor.md#onenter)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |

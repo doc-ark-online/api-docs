@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ConvertScreenResult**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[result](mw.ConvertScreenResult.md#result)**: `boolean`  |
 | :-----|

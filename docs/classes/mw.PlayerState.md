@@ -63,18 +63,6 @@ PlayerState基类
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new PlayerState**(`info`: `ActorInfo`)  |
-| :----- |
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Script**(`data`: `ActorInfo`)  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 
 

@@ -40,10 +40,6 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Player**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onPawnChange](mw.Player.md#onpawnchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\>  |
 | :-----|
@@ -80,8 +76,6 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 总的来说，用于跟踪和存储与每个玩家相关的数据和状态。它帮助游戏管理玩家的个人信息，如得分、生命值等，并在多人游戏中确保玩家状态的同步。通过PlayerState，游戏可以更好地处理多人游戏中的个人和团队数据，以提供更丰富的游戏体验。|
 | **[asyncGetLocalPlayer](mw.Player.md#asyncgetlocalplayer)**(): `Promise`<[`Player`](mw.Player.md)\>  |
 | 当正常获取本地玩家时，使用Player.localPlayer即可。|
-| **[asyncGetPlayer](mw.Player.md#asyncgetplayer)**(`playerId`: `number`): `Promise`<[`Player`](mw.Player.md)\>  |
-| 异步获取玩家|
 | **[getAllPlayers](mw.Player.md#getallplayers)**(): [`Player`](mw.Player.md)[]  |
 | 获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。|
 | **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
@@ -938,58 +932,6 @@ ___
 仅在UI脚本中需要使用此异步方法获取localPlayer。仅客户端调用返回本地玩家，服务端调用无效并在控制台打印警告。
 
 :::
-
-___
-
-### asyncGetPlayer <Score text="asyncGetPlayer" /> 
-
-• `Static` **asyncGetPlayer**(`playerId`): `Promise`<[`Player`](mw.Player.md)\> 
-
-异步获取玩家
-
-#### Parameters
-
-| `playerId` | `number` |
-| :------ | :------ |
-
-#### Returns
-
-| `Promise`<[`Player`](mw.Player.md)\> | 玩家对象 |
-| :------ | :------ |
-
-
-<span style="font-size: 14px;">
-
-使用示例:创建一个名为"Example_Player_GetPlayer"的脚本,放置在对象栏中,打开脚本,输入以下代码保存,运行游戏,你将通过getPlayer接口获取玩家,按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字在控制台中看到getPlayer的效果.代码如下:
-
-</span>
-
-```
-@Component
-export default class Example_Player_GetPlayer extends Script {
-    // 当脚本被实例后，会在第一帧更新前调用此函数/
-    protected onStart(): void {
-        // 下列代码仅在客户端执行
-        if(SystemUtil.isClient()) {
-            // 添加一个按键方法：按下键盘“1”，使用getPlayer函数通过userId或playerId获取玩家对象并打印名字
-            InputUtil.onKeyDown(Keys.One, () => {
-                // 获取当前客户端的玩家(自己)并打印userId和playerId
-                let myself = Player.localPlayer;
-                console.log("My userId: " + myself.userId);
-                console.log("My playerId: " + myself.playerId);
-                // 通过userId获取玩家(自己)并打印userId和playerId
-                let myself_2 = Player.getPlayer(myself.userId);
-                console.log("myself_2 userId: " + myself_2.userId);
-                console.log("myself_2 playerId: " + myself_2.playerId);
-                // 通过playerId获取玩家(自己)并打印userId和playerId
-                let myself_3 = Player.getPlayer(myself.playerId);
-                console.log("myself_3 userId: " + myself_3.userId);
-                console.log("myself_3 playerId: " + myself_3.playerId);
-            });
-        }
-    }
-}
-```ts
 
 ___
 
