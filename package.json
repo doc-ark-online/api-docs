@@ -24,7 +24,7 @@
     "vue": "^3.2.45"
   },
   "dependencies": {
-    "metaapp-prodigytech-doc-theme": "^2.1.14",
+    "metaapp-prodigytech-doc-theme": "^2.1.15",
     "vitepress": "^1.0.0-rc.15"
   }
 }
