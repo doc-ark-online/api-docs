@@ -10,11 +10,6 @@ UI颜色管理
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SlateColor**(`InColor`: [`LinearColor`](mw.LinearColor.md))  |
-| :-----|
-| 指定颜色进行构造|
-
 ### Properties <Score text="Properties" /> 
 | **[colorUseRule](mw.SlateColor.md#coloruserule)**: [`SlateColorStylingMode`](../enums/mw.SlateColorStylingMode.md)  |
 | :-----|

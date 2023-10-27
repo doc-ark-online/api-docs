@@ -22,10 +22,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new AssetUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[assetLoaded](mw.AssetUtil.md#assetloaded)**(`InAssetId`: `string`): `boolean`  |
 | :-----|

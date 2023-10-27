@@ -87,16 +87,6 @@ export default class ImpulseSample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onImpulseEnter](mw.Impulse.md#onimpulseenter)**: [`MulticastGameObjectDelegate`](mw.MulticastGameObjectDelegate.md)  |
 | :-----|
@@ -185,7 +175,7 @@ export default class ImpulseSample extends Script {
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -209,6 +199,7 @@ export default class ImpulseSample extends Script {
 
 
 ## Properties
+
 ___
 
 ### onImpulseEnter <Score text="onImpulseEnter" /> 
@@ -238,6 +229,7 @@ export default class ImpulseOnEnterSample extends Script {
 ```
 
 ## Accessors
+
 ___
 
 ### enable <Score text="enable" /> 
@@ -543,7 +535,6 @@ ___
 
 | `vec` [`Vector`](mw.Vector.md) |  冲量力向量 |
 | :------ | :------ |
-
 
 </td>
 </tr></tbody>

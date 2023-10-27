@@ -40,10 +40,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponFireComponent**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onEndContinuousFire](mw.HotWeaponFireComponent.md#onendcontinuousfire)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|

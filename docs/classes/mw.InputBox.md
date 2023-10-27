@@ -16,16 +16,6 @@ UI的输入框
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[autoWrap](mw.InputBox.md#autowrap)**(): `boolean`  |
 | :-----|
@@ -169,6 +159,7 @@ UI的输入框
 
 
 ## Accessors
+
 ___
 
 ### autoWrap <Score text="autoWrap" /> 
@@ -1283,7 +1274,6 @@ ___
 
 | `inEnableUnderline` `boolean` | 下户线 |
 | :------ | :------ |
-
 
 </td>
 </tr></tbody>

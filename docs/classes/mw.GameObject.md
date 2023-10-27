@@ -102,10 +102,6 @@ export default class GameObjectExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onDestroyDelegate](mw.GameObject.md#ondestroydelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
@@ -164,7 +160,7 @@ export default class GameObjectExample extends Script {
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -243,7 +239,7 @@ ___
 
 #### Returns
 
-| `string` | mw.Base.gameObjectId |
+| `string` |  |
 | :------ | :------ |
 
 </td>
@@ -825,7 +821,7 @@ ___
 
 #### Parameters
 
-| `status` `boolean` \| [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
+| `status` `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md) | 状态 |
 | :------ | :------ |
 | `propagateToChildren?` `boolean` |  是否设置子物体 default:false |
 

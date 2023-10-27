@@ -16,16 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[clickMethod](mw.StaleButton.md#clickmethod)**(`inClickMethod`: [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md)): `void`  |
 | :-----|
@@ -197,6 +187,7 @@
 
 
 ## Accessors
+
 ___
 
 ### clickMethod <Score text="clickMethod" /> 
@@ -1914,7 +1905,6 @@ ___
 | `inEnableUnderline` `boolean` | 设置是否开启下划线 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1922,6 +1912,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

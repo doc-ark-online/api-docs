@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new JoystickStyleDesigner**(`NormalGUID`: `string`, `TouchGUID`: `string`, `DisableGUID`: `string`)  |
-| :-----|
-| 指定内容构造对象|
-
 ### Properties <Score text="Properties" /> 
 | **[disable](mw.JoystickStyleDesigner.md#disable)**: [`SlateBrushWithGuid`](mw.SlateBrushWithGuid.md)  |
 | :-----|

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ScreenUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getGameObjectByScreenPosition](mw.ScreenUtil.md#getgameobjectbyscreenposition)**(`sceneX`: `number`, `sceneY`: `number`, `distance?`: `number`, `multiTrace?`: `boolean`, `onRay?`: `boolean`): [`HitResult`](mw.HitResult.md)[]  |
 | :-----|

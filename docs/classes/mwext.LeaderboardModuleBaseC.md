@@ -21,16 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new ModuleC**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[panel](mwext.LeaderboardModuleBaseC.md#panel)**(): [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\>  |
 | :-----|
@@ -80,6 +70,7 @@
 
 
 ## Accessors
+
 ___
 
 ### panel <Score text="panel" /> 
@@ -101,12 +92,12 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| [`LeaderboardMainPanelBase`](mwext.LeaderboardMainPanelBase.md)<`any`\> | 一条排行信息的item子UI |
+| :------ | :------ |
 
 ## Methods
 

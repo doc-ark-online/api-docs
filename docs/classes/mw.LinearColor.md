@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LinearColor**(`r`: `number`, `g`: `number`, `b`: `number`)  |
-| :-----|
-| 用给定的 LinearColor 构建一个新的 LinearColor|
-
 ### Accessors <Score text="Accessors" /> 
 | **[a](mw.LinearColor.md#a)**(): `number`  |
 | :-----|

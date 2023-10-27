@@ -40,10 +40,6 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Player**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onPawnChange](mw.Player.md#onpawnchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`pawn`: [`Pawn`](mw.Pawn.md)) => `void`\>  |
 | :-----|
@@ -86,7 +82,7 @@ Player 包含当前连接到MW服务器的Player对象。它负责管理角色�
 | 获取当前所有玩家。此方法返回当前连接的所有玩家的数组，当与 for 循环结合使用时，它对于迭代游戏中的所有玩家非常有用。|
 | **[getControllerRotation](mw.Player.md#getcontrollerrotation)**(`outer?`: [`Rotation`](mw.Rotation.md)): [`Rotation`](mw.Rotation.md)  |
 | 获取控制器的旋转|
-| **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string` \): [`Player`](mw.Player.md)  |
+| **[getPlayer](mw.Player.md#getplayer)**(`uniqueId`: `string`  `number`): [`Player`](mw.Player.md)  |
 | 获取玩家，根据userid找到对应的玩家|
 | **[setControllerRotation](mw.Player.md#setcontrollerrotation)**(`newRotation`: [`Rotation`](mw.Rotation.md)): `void`  |
 | 覆写控制器的旋转|
@@ -1118,7 +1114,7 @@ ___
 
 #### Parameters
 
-| `uniqueId` `string` \| `number` | 用户ID或者玩家玩家ID |
+| `uniqueId` `string`  `number` | 用户ID或者玩家玩家ID |
 | :------ | :------ |
 
 #### Returns

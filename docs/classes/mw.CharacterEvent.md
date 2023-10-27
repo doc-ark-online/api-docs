@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new CharacterEvent**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[toInputEvent](mw.CharacterEvent.md#toinputevent)**(): [`InputEvent`](mw.InputEvent.md)  |
 | :-----|

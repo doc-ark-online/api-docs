@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new RouteService**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[onReceiveTeamData](mw.RouteService.md#onreceiveteamdata)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<(`teamId`: `string`, `data`: `Record`<`string`, `unknown`\>) => `void`\>  |
 | :-----|

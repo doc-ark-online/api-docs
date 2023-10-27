@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Subdata**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onDataChange](mwext.Subdata.md#ondatachange)**: [`Action`](mw.Action.md)  |
 | :-----|

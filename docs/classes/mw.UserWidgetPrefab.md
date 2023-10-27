@@ -16,8 +16,6 @@ ui预制体
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Accessors <Score text="Accessors" /> 
 
 

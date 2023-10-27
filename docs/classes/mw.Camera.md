@@ -76,16 +76,6 @@ Camera 对象如何工作？
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onSwitchComplete](mw.Camera.md#onswitchcomplete)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
@@ -165,7 +155,7 @@ Camera 对象如何工作？
 | **[lock](mw.Camera.md#lock)**(`target`: [`GameObject`](mw.GameObject.md), `val?`: `Object`): `void`  |
 | :-----|
 | 相机锁定目标|
-| **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md) \): `void`  |
+| **[lookAt](mw.Camera.md#lookat)**(`target`: [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md)): `void`  |
 | 摄像机朝向目标|
 | **[unlock](mw.Camera.md#unlock)**(): `void`  |
 | 取消锁定目标|
@@ -210,7 +200,7 @@ Camera 对象如何工作？
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -234,6 +224,7 @@ Camera 对象如何工作？
 
 
 ## Properties
+
 ___
 
 ### onSwitchComplete <Score text="onSwitchComplete" /> 
@@ -355,6 +346,7 @@ ___
 • `Private` **updateOccludeEnableStatus**: `any`
 
 ## Accessors
+
 ___
 
 ### downAngleLimit <Score text="downAngleLimit" /> 
@@ -1935,6 +1927,7 @@ i++) {
 | :------ | :------ |
 
 ## Methods
+
 ___
 
 ### lock <Score text="lock" /> 
@@ -2028,7 +2021,7 @@ ___
 
 #### Parameters
 
-| `target` [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) | 目标 |
+| `target` [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) | 目标 |
 | :------ | :------ |
 
 

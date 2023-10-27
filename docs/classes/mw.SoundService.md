@@ -10,12 +10,8 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SoundService**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
-| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string` \| `number`\>  |
+| **[onPlaySoundComplete](mw.SoundService.md#onplaysoundcomplete)**: [`Action1`](mw.Action1.md)<`string`  `number`\>  |
 | :-----|
 | 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)|
 
@@ -30,7 +26,7 @@
 | **[get3DSoundById](mw.SoundService.md#get3dsoundbyid)**(`playId`: `number`): `Promise`<[`Sound`](mw.Sound.md)\>  |
 | :-----|
 | 根据播放id获取一个3DSound|
-| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string` \, `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number`  |
+| **[play3DSound](mw.SoundService.md#play3dsound)**(`assetId`: `string`, `target`: `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md), `loopCount?`: `number`, `volume?`: `number`, `params?`: `Object`): `number`  |
 | 在目标播放3D音效|
 | **[playBGM](mw.SoundService.md#playbgm)**(`assetId`: `string`, `volume?`: `number`): `void`  |
 | 播放背景音乐|
@@ -51,7 +47,7 @@
 
 ### onPlaySoundComplete <Score text="onPlaySoundComplete" /> 
 
-▪ `Static` `Readonly` **onPlaySoundComplete**: [`Action1`](mw.Action1.md)<`string` \| `number`\>
+▪ `Static` `Readonly` **onPlaySoundComplete**: [`Action1`](mw.Action1.md)<`string`  `number`\>
 
 播放声音完成的委托(2D声音是string代表assetId, 3D声音是playId代表播放id)
 
@@ -274,7 +270,7 @@ ___
 
 | `assetId` `string` |  资源Id |
 | :------ | :------ |
-| `target` `string` \| [`GameObject`](mw.GameObject.md) \| [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID \| GameObject \| 世界坐标) |
+| `target` `string`  [`GameObject`](mw.GameObject.md)  [`Vector`](mw.Vector.md) |  播放目标 (GameObject的GUID  GameObject  世界坐标) |
 | `loopCount?` `number` |  循环次数 default: 1 |
 | `volume?` `number` |  音量 default: 1 |
 | `params?` `Object` |  播放参数: `{ radius: 内部半径(default 200), falloffDistance: 衰减距离,不包含内部半径(default 600) }` default: undefined |

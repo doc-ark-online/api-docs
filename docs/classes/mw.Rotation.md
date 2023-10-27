@@ -17,11 +17,6 @@ Rotation 是三个欧拉角Picth、Yaw、Roll的封装类，
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Rotation**()  |
-| :-----|
-| 通过三个分量构造|
-
 ### Properties <Score text="Properties" /> 
 | **[x](mw.Rotation.md#x)**: `number`  |
 | :-----|

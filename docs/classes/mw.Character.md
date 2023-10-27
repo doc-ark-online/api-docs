@@ -118,8 +118,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Properties <Score text="Properties" /> 
 | **[onDescriptionChange](mw.Character.md#ondescriptionchange)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<[`OnDescriptionChange`](../modules/Core.mw.md#ondescriptionchange)\>  |
 | :-----|
@@ -283,7 +281,7 @@
 | 角色面朝目标点|
 | **[setCollisionShapeAndExtent](mw.Character.md#setcollisionshapeandextent)**(`shapeType`: [`CustomShapeType`](../enums/mw.CustomShapeType.md), `collisionExtent`: [`Vector`](mw.Vector.md)): `void`  |
 | 设置不同形状不同大小的碰撞体|
-| **[setDescription](mw.Character.md#setdescription)**(`data`: `string` \): `void`  |
+| **[setDescription](mw.Character.md#setdescription)**(`data`: `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md)): `void`  |
 | 设置外观数据|
 | **[swimDown](mw.Character.md#swimdown)**(`speed`: `number`): `void`  |
 | 水中下潜|
@@ -572,6 +570,7 @@ export default class Example_Character_movementMode extends Script {
 ```
 
 ## Accessors
+
 ___
 
 ### brakingDecelerationFlying <Score text="brakingDecelerationFlying" /> 
@@ -7095,7 +7094,7 @@ ___
 
 #### Parameters
 
-| `data` `string` \| `string`[] \| [`CharacterDescription`](mw.CharacterDescription.md) | 外观数据 |
+| `data` `string`  `string`[]  [`CharacterDescription`](mw.CharacterDescription.md) | 外观数据 |
 | :------ | :------ |
 
 

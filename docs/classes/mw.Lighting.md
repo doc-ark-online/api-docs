@@ -74,10 +74,6 @@ export default class LightingExample extends mw.Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Lighting**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[brightness](mw.Lighting.md#brightness)**(): `number`  |
 | :-----|

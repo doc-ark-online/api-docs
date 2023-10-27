@@ -20,10 +20,6 @@ UI的驱动脚本基类
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new UIScript**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[canUpdate](mw.UIScript.md#canupdate)**(): `boolean`  |
 | :-----|
@@ -53,7 +49,7 @@ UI的驱动脚本基类
 | 创建DragDrop事件|
 | **[remove](mw.UIScript.md#remove)**(): `void`  |
 | 移除UI对象|
-| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean` \, `...params`: `any`[]): `void`  |
+| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void`  |
 | 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void`  |
 | 添加一个全局的行为记录|
@@ -457,7 +453,7 @@ ___
 
 #### Parameters
 
-| `inVisible` `boolean` \| [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
+| `inVisible` `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md) |  设置是否可见,如果是boolean类型设置为SelfHitTestInvisible,不可见设置为Collapsed， 否则的话就是按照枚举拉设置具体的显示类型 |
 | :------ | :------ |
 | `...params` `any`[] |  传递给onShow的参数 |
 

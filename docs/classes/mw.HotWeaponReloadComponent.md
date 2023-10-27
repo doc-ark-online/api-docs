@@ -39,10 +39,6 @@ export default class HotWeaponReloadSample1 extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponReloadComponent**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onEndReload](mw.HotWeaponReloadComponent.md#onendreload)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|

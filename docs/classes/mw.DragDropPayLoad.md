@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new DragDropPayLoad**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[guidStr](mw.DragDropPayLoad.md#guidstr)**: `any`  |
 | :-----|

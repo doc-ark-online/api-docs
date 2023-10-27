@@ -11,10 +11,6 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new RoomService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getCurrentEnvironment](mw.RoomService.md#getcurrentenvironment)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
 | :-----|
@@ -27,7 +23,7 @@ MGS = Meta Game Service, 是编辑器提供给开发者的一些原生服务，�
 | 获取当前环境是否支持MGS功能|
 | **[joinAudio](mw.RoomService.md#joinaudio)**(`resp`: [`MGSResponse`](../modules/Core.mw.md#mgsresponse)): `void`  |
 | 游戏方可调用joinAudio加入语音频道，游戏用户可使用语音服务（可说话、可听到其他游戏用户声音）|
-| **[kick](mw.RoomService.md#kick)**(`player`: `number` \, `message?`: `string`): `void`  |
+| **[kick](mw.RoomService.md#kick)**(`player`: `number`  [`Player`](mw.Player.md), `message?`: `string`): `void`  |
 | 将某一玩家踢下线|
 | **[registerMGSChatMessageEvent](mw.RoomService.md#registermgschatmessageevent)**(`callback`: [`MGSEvent`](../modules/Core.mw.md#mgsevent)): `void`  |
 | 注册聊天回调|
@@ -203,7 +199,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) | 踢下线的Player |
+| `player` `number`  [`Player`](mw.Player.md) | 踢下线的Player |
 | :------ | :------ |
 | `message?` `string` | usage：踢出玩家时触发退出UI弹出的信息 |
 

@@ -170,10 +170,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Action**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[count](mw.Action.md#count)**(): `number`  |
 | :-----|
@@ -189,7 +185,7 @@
 | 清除所有监听|
 | **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`  |
 | 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `number` \, `thisArg?`: `any`): `void`  |
+| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`  |
 | 移除一个监听方法|
 
 ## Accessors
@@ -339,7 +335,7 @@ ___
 
 #### Parameters
 
-| `fn` `number` \| `Function` |  方法\|监听唯一标识 |
+| `fn` `number`  `Function` |  方法监听唯一标识 |
 | :------ | :------ |
 | `thisArg?` `any` |  域，fn为number时不用写 default: undefined |
 

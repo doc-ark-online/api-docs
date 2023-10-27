@@ -118,16 +118,6 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onProjectileHit](mw.ObjectLauncher.md#onprojectilehit)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`projectile`: [`ProjectileInst`](mw.ProjectileInst.md), `hitGameObject`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `void`\>  |
 | :-----|
@@ -241,7 +231,7 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -265,6 +255,7 @@ ObjectLauncher 为发射器。发射器发射出的实例称为投掷物实例 P
 
 
 ## Properties
+
 ___
 
 ### onProjectileHit <Score text="onProjectileHit" /> 
@@ -882,7 +873,6 @@ ___
 | `value` | `number` |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -890,6 +880,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### predictedTrajectory <Score text="predictedTrajectory" /> 

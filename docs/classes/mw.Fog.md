@@ -52,10 +52,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Fog**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[density](mw.Fog.md#density)**(): `number`  |
 | :-----|

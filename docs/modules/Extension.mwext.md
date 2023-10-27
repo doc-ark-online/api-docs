@@ -5,7 +5,8 @@ mwext
 ## Table of contents
 
 ### Namespaces <Score text="Namespaces" /> 
-| [Decorator](mwext.Decorator.md) |
+| [Decorator](mwext.Decorator.md)  |
+| :----- |
 
 ### Enumerations <Score text="Enumerations" /> 
 | [GameObjPoolSourceType](../enums/mwext.GameObjPoolSourceType.md)  |
@@ -87,6 +88,6 @@ ___
 
 #### Type declaration
 
-| `data` `{ `[fieldId: number]`: `number` \| `string`;  }` | 玩家数据，是一个key-value的结构 |
+| `data` `{ `[fieldId: number]`: `number`  `string`;  }` | 玩家数据，是一个key-value的结构 |
 | :------ | :------ |
 | `playerId` `number` | 玩家id |

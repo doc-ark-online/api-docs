@@ -115,15 +115,11 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ModuleService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
-| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>, `type?`: `number`, `...params`: `any`[]): `any`  |
+| **[callExecute](mwext.ModuleService.md#callexecute)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`moduleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>, `type?`: `number`, `...params`: `any`[]): `any`  |
 | :-----|
 | 调用一个模块的onExecute方法|
-| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \  |
+| **[getModule](mwext.ModuleService.md#getmodule)**<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>(`ModuleClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>\>): `T`: extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\>  |
 | 根据类型获取一个模块|
 | **[getUpdateTimeLog](mwext.ModuleService.md#getupdatetimelog)**(): `string`  |
 | 获取各模块update方法的执行时长，以字符串的形式返回，需要自己显示或打印出来|
@@ -157,7 +153,7 @@ class PlayerModuleData extends Subdata {
 
 #### Type parameters
 
-| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \| [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
+| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
 | :------ | :------ |
 
 ___
@@ -181,7 +177,7 @@ ___
 
 #### Type parameters
 
-| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\> \| [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
+| `T` | extends [`ModuleS`](mwext.ModuleS.md)<`any`, `any`\>  [`ModuleC`](mwext.ModuleC.md)<`any`, `any`\> |
 | :------ | :------ |
 
 ___

@@ -39,10 +39,6 @@ export default class HotWeaponRecoilForceSample1 extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponRecoilForceComponent**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onStartRecoil](mw.HotWeaponRecoilForceComponent.md#onstartrecoil)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|

@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Geometry**()  |
-| :-----|
-| 默认构造|
-
 ### Methods <Score text="Methods" /> 
 | **[getAbsolutePosition](mw.Geometry.md#getabsoluteposition)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|

@@ -17,11 +17,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Tween**<`T`: extends [`TweenUnknownProps`](../modules/Core.mw.md#tweenunknownprops)\>(`obj`: `T`, `group?`: ``false`` \)  |
-| :-----|
-| 补间构造函数|
-
 ### Methods <Score text="Methods" /> 
 | **[chain](mw.Tween.md#chain)**(`...tweens`: [`Tween`](mw.Tween.md)<`any`\>[]): [`Tween`](mw.Tween.md)<`T`\>  |
 | :-----|
@@ -87,7 +82,7 @@
 
 | `obj` `T` |  要创建补间的对象类型 |
 | :------ | :------ |
-| `group?` ``false`` \| [`TweenGroup`](mw.TweenGroup.md) |  要创建的补间对象的分组 default: mainGroup |
+| `group?` ``false``  [`TweenGroup`](mw.TweenGroup.md) |  要创建的补间对象的分组 default: mainGroup |
 
 ## Methods
 

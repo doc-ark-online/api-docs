@@ -16,16 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[controlByMouseEnable](mw.TouchPad.md#controlbymouseenable)**(): `boolean`  |
 | :-----|
@@ -105,6 +95,7 @@
 
 
 ## Accessors
+
 ___
 
 ### controlByMouseEnable <Score text="controlByMouseEnable" /> 
@@ -195,7 +186,6 @@ ___
 | `inScale` [`Vector2`](mw.Vector2.md) | 缩放值 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -203,6 +193,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

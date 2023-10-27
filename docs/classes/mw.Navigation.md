@@ -64,10 +64,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Navigation**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[findPath](mw.Navigation.md#findpath)**(`startPos`: [`Vector`](mw.Vector.md), `endPos`: [`Vector`](mw.Vector.md)): [`Vector`](mw.Vector.md)[]  |
 | :-----|

@@ -34,10 +34,6 @@ EffectService 中很多静态方法可直接调用，其中：
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new EffectService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getEffectById](mw.EffectService.md#geteffectbyid)**(`playId`: `number`): `Promise`<[`Effect`](mw.Effect.md)\>  |
 | :-----|
@@ -50,7 +46,7 @@ EffectService 中很多静态方法可直接调用，其中：
 | 停止一个正在播放的特效|
 | **[stopAll](mw.EffectService.md#stopall)**(): `void`  |
 | 停止所有特效|
-| **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md) \): `void`  |
+| **[stopEffectFromHost](mw.EffectService.md#stopeffectfromhost)**(`source`: `string`, `target`: [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md)): `void`  |
 | 停止目标对象上所有资源Id的特效|
 
 ## Methods
@@ -273,7 +269,7 @@ ___
 
 | `source` `string` |  特效源，playEffect的第一个参数 |
 | :------ | :------ |
-| `target` [`Player`](mw.Player.md) \| [`GameObject`](mw.GameObject.md) |  目标对象(Player或NPC或GameObject) |
+| `target` [`Player`](mw.Player.md)  [`GameObject`](mw.GameObject.md) |  目标对象(Player或NPC或GameObject) |
 
 
 调用端生效|服务端调用自动广播

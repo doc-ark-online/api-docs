@@ -12,10 +12,6 @@ Gizmo
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Gizmo**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[axisXColor](mw.Gizmo.md#axisxcolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|
@@ -78,7 +74,7 @@ Gizmo
 | 设置缩放网格大小|
 
 ### Methods <Score text="Methods" /> 
-| **[addIgnoreActor](mw.Gizmo.md#addignoreactor)**(`actor`: [`GameObject`](mw.GameObject.md) \): `void`  |
+| **[addIgnoreActor](mw.Gizmo.md#addignoreactor)**(`actor`: [`GameObject`](mw.GameObject.md)  `Base`): `void`  |
 | :-----|
 | 添加需要被坐标轴忽略的object|
 | **[attachActorToGizmo](mw.Gizmo.md#attachactortogizmo)**(`Actor`: [`GameObject`](mw.GameObject.md), `IsRecordChange?`: `boolean`): `void`  |
@@ -1243,7 +1239,7 @@ ___
 
 #### Parameters
 
-| `actor` [`GameObject`](mw.GameObject.md) \| `Base` | 忽略的object |
+| `actor` [`GameObject`](mw.GameObject.md)  `Base` | 忽略的object |
 | :------ | :------ |
 
 

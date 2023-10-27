@@ -36,10 +36,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[autoSizeEnable](mw.Widget.md#autosizeenable)**(): `boolean`  |
 | :-----|

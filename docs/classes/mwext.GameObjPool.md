@@ -38,10 +38,6 @@ export default class GameObjPoolExample extends mw.Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new GameObjPool**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[destroy](mwext.GameObjPool.md#destroy)**(): `void`  |
 | :-----|

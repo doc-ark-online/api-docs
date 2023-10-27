@@ -16,16 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[circleCenter](mw.MaskButton.md#circlecenter)**(): [`Vector2`](mw.Vector2.md)  |
 | :-----|
@@ -203,6 +193,7 @@
 
 
 ## Accessors
+
 ___
 
 ### circleCenter <Score text="circleCenter" /> 
@@ -2071,7 +2062,6 @@ ___
 | `inUseWeight` `boolean` | 是否裁剪 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -2079,6 +2069,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

@@ -16,16 +16,6 @@ UI对象组件
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 
 
@@ -107,7 +97,7 @@ UI对象组件
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -133,6 +123,7 @@ UI对象组件
 ## Properties
 
 ## Accessors
+
 ___
 
 ### uiPath <Score text="uiPath" /> 
@@ -211,11 +202,11 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| [`UserWidget`](mw.UserWidget.md) | UI控件的集合:UserWidget |
+| :------ | :------ |
 
 ## Methods

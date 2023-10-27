@@ -23,16 +23,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Action**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 
 
@@ -58,7 +48,7 @@
 | 清除所有监听|
 | **[includes](mw.Action.md#includes)**(`fn`: `Function`, `thisArg`: `any`): `boolean`  |
 | 判断是否包含某个监听方法|
-| **[remove](mw.Action.md#remove)**(`fn`: `number` \, `thisArg?`: `any`): `void`  |
+| **[remove](mw.Action.md#remove)**(`fn`: `number`  `Function`, `thisArg?`: `any`): `void`  |
 | 移除一个监听方法|
 :::
 

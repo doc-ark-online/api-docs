@@ -21,17 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onClose](mwext.LeaderboardMainPanelBase.md#onclose)**: [`Action`](mw.Action.md)  |
 | :-----|
@@ -58,7 +47,7 @@
 | 创建用于显示一条排行信息的item子UI|
 | **[onHide](mwext.LeaderboardMainPanelBase.md#onhide)**(): `void`  |
 | 当UI隐藏调用|
-| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| **[onSelfFieldSet](mwext.LeaderboardMainPanelBase.md#onselffieldset)**(`rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
 | 设置自己(界面最下面那一行)的字段内容后调用，需要请复写|
 | **[onShow](mwext.LeaderboardMainPanelBase.md#onshow)**(`playerDataList`: [`LeaderboardPlayerData`](../modules/Extension.mwext.md#leaderboardplayerdata)[]): `void`  |
 | 当UI显示调用|
@@ -156,7 +145,7 @@ ___
 | `rankIndex` `number` |  名次索引(0开始) |
 | :------ | :------ |
 | `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string` \| `number` |  字段显示内容 |
+| `fieldValue` `string`  `number` |  字段显示内容 |
 | `textBlockIndex` `number` |  文本控件索引 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 

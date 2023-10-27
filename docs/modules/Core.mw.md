@@ -81,7 +81,8 @@ mw
 | 画质等级|
 | [GravityMode](../enums/mw.GravityMode.md)  |
 | 重力模式|
-| [HideInEditorState](../enums/mw.HideInEditorState.md) |
+| [HideInEditorState](../enums/mw.HideInEditorState.md)  |
+| :----- |
 | [HotWeaponAimMode](../enums/mw.HotWeaponAimMode.md)  |
 | 热武器瞄准模式|
 | [HotWeaponFireMode](../enums/mw.HotWeaponFireMode.md)  |
@@ -1326,7 +1327,7 @@ ___
 
 | `bDownloaded` `boolean` | 是否已下载到本地 |
 | :------ | :------ |
-| `gameCover` `string` | (bDownloaded=true:本地文件路径\|bDownloaded=false:服务器URL) |
+| `gameCover` `string` | (bDownloaded=true:本地文件路径bDownloaded=false:服务器URL) |
 | `gameName` `string` | 游戏名称 |
 
 ___

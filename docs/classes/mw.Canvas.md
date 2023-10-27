@@ -16,8 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Accessors <Score text="Accessors" /> 
 | **[autoLayoutContainerRule](mw.Canvas.md#autolayoutcontainerrule)**(): [`UILayoutType`](../enums/mw.UILayoutType.md)  |
 | :-----|
@@ -443,7 +441,6 @@ ___
 | `clip` `boolean` | 是否裁剪 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -451,6 +448,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

@@ -31,10 +31,6 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ScriptingSettings**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[setGlobalAsyncTimeout](mw.ScriptingSettings.md#setglobalasynctimeout)**(`timeout`: `number`): `void`  |
 | :-----|

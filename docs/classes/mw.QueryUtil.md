@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new QueryUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[boxOverlap](mw.QueryUtil.md#boxoverlap)**(`boxCenter`: [`Vector`](mw.Vector.md), `boxExtent`: [`Vector`](mw.Vector.md), `drawDebug?`: `boolean`, `objectsToIgnore?`: `string`[], `ignoreByType?`: `boolean`, `source?`: [`GameObject`](mw.GameObject.md)): [`GameObject`](mw.GameObject.md)[]  |
 | :-----|

@@ -16,8 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Properties <Score text="Properties" /> 
 | **[brushMargin](mw.ScrollBox.md#brushmargin)**: `any`  |
 | :-----|
@@ -1055,15 +1053,15 @@ ___
 | :------ | :------ |
 
 
-是否支持惯性
 
 </td>
 </tr></tbody>
 </table>
 
-
+是否支持惯性
 
 ## Methods
+
 ___
 
 ### endInertialScrolling <Score text="endInertialScrolling" /> 

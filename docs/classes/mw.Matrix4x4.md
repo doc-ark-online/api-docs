@@ -16,11 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Matrix4x4**(`other`: [`Matrix4x4`](mw.Matrix4x4.md))  |
-| :-----|
-| 用给定的元素构建一个新的 Matrix4x4|
-
 ### Properties <Score text="Properties" /> 
 | **[m00](mw.Matrix4x4.md#m00)**: `number`  |
 | :-----|
@@ -85,7 +80,8 @@
 | 将当前矩阵设为单位矩阵。|
 | **[invert](mw.Matrix4x4.md#invert)**(`a`: [`Matrix4x4`](mw.Matrix4x4.md), `outer?`: [`Matrix4x4`](mw.Matrix4x4.md)): [`Matrix4x4`](mw.Matrix4x4.md)  |
 | 矩阵求逆，注意，在矩阵不可逆时，会返回一个全为 0 的矩阵。|
-| [multiply](mw.Matrix4x4.md#multiply) |
+| [multiply](mw.Matrix4x4.md#multiply)  |
+| :----- |
 | **[rotate](mw.Matrix4x4.md#rotate)**(`axis`: [`Vector`](mw.Vector.md), `rad`: `number`, `epsilon?`: `number`): [`Matrix4x4`](mw.Matrix4x4.md)  |
 | 将当前矩阵左乘旋转矩阵的结果赋值给当前矩阵，旋转矩阵由旋转轴和旋转角度给出。|
 | **[scale](mw.Matrix4x4.md#scale)**(`vec`: [`Vector`](mw.Vector.md)): [`Matrix4x4`](mw.Matrix4x4.md)  |

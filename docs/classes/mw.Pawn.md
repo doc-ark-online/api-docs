@@ -18,16 +18,6 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 
 
@@ -112,7 +102,7 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -138,6 +128,7 @@ Pawn作为玩家角色和非对象玩家角色的基类，是一个可以通过�
 ## Properties
 
 ## Accessors
+
 ___
 
 ### customTimeDilation <Score text="customTimeDilation" /> 
@@ -280,7 +271,6 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
@@ -312,9 +302,11 @@ export default class Example_Pawn_Player extends Script {
     }
 }
 ```
-
+| [`Player`](mw.Player.md) |  |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### setOutline <Score text="setOutline" /> 

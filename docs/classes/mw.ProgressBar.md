@@ -16,16 +16,6 @@ UI进度条
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[backgroundImageColor](mw.ProgressBar.md#backgroundimagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|
@@ -153,6 +143,7 @@ UI进度条
 
 
 ## Accessors
+
 ___
 
 ### backgroundImageColor <Score text="backgroundImageColor" /> 
@@ -1354,7 +1345,6 @@ ___
 | `inSize` [`Vector2`](mw.Vector2.md) | 滑块图片大小 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1362,6 +1352,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

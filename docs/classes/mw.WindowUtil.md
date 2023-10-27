@@ -39,10 +39,6 @@ export default class WindowExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new WindowUtil**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[onDefocus](mw.WindowUtil.md#ondefocus)**(): [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|

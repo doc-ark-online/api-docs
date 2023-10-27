@@ -34,10 +34,6 @@ export default class TouchInputExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TouchInputUtil**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[listeners](mw.TouchInputUtil.md#listeners)**: [`EventListener`](mw.EventListener.md)[]  |
 | :----- |

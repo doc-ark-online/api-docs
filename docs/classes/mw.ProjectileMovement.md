@@ -44,11 +44,6 @@ ProjectileMovement 是一种功能组件，用于处理游戏中的飞行物体�
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ProjectileMovement**(`relatedGameObject`: [`GameObject`](mw.GameObject.md), `config?`: [`ProjectileMovementConfig`](../interfaces/mw.ProjectileMovementConfig.md))  |
-| :-----|
-| 通过配置对象构造功能类|
-
 ### Properties <Score text="Properties" /> 
 | **[onProjectileHit](mw.ProjectileMovement.md#onprojectilehit)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`hitGameObject`: [`GameObject`](mw.GameObject.md), `hitResult`: [`HitResult`](mw.HitResult.md)) => `void`\>  |
 | :-----|

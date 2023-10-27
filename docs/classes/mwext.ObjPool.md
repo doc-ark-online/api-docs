@@ -97,11 +97,6 @@ class Cube {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ObjPool**<`T`: \>(`onCreateObj`: () => `T`, `onReset?`: (`obj`: `T`) => `void`, `onDestroy?`: (`obj`: `T`) => `void`, `onDespawn?`: (`obj`: `T`) => `void`, `initNum?`: `number`)  |
-| :-----|
-| 构造一个对象池|
-
 ### Accessors <Score text="Accessors" /> 
 | **[size](mwext.ObjPool.md#size)**(): `number`  |
 | :-----|

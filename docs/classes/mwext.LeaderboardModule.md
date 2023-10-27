@@ -12,23 +12,19 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LeaderboardModule**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[addField](mwext.LeaderboardModule.md#addfield)**(`fieldId`: `number`, `fieldName`: `string`, `valueStyle?`: `string`): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
 | :-----|
 | 添加一个字段|
-| **[addPlayer](mwext.LeaderboardModule.md#addplayer)**(`player`: `number` \, `data?`: `any`): `void`  |
+| **[addPlayer](mwext.LeaderboardModule.md#addplayer)**(`player`: `number`  [`Player`](mw.Player.md), `data?`: `any`): `void`  |
 | 向排行榜添加一个玩家|
 | **[clear](mwext.LeaderboardModule.md#clear)**(): `void`  |
 | 清除排行榜|
 | **[hidePanel](mwext.LeaderboardModule.md#hidepanel)**(): `void`  |
 | 隐藏UI|
-| **[removePlayer](mwext.LeaderboardModule.md#removeplayer)**(`player`: `number` \): `void`  |
+| **[removePlayer](mwext.LeaderboardModule.md#removeplayer)**(`player`: `number`  [`Player`](mw.Player.md)): `void`  |
 | 从排行榜移除一个玩家|
-| **[setPlayerValue](mwext.LeaderboardModule.md#setplayervalue)**(`player`: `number` \, `fieldId`: `number`, `value`: `string` \): `void`  |
+| **[setPlayerValue](mwext.LeaderboardModule.md#setplayervalue)**(`player`: `number`  [`Player`](mw.Player.md), `fieldId`: `number`, `value`: `string`  `number`): `void`  |
 | 设置一个玩家的一个字段值|
 | **[setSortFields](mwext.LeaderboardModule.md#setsortfields)**(`...fieldIds`: `number`[]): typeof [`LeaderboardModule`](mwext.LeaderboardModule.md)  |
 | 设置排序字段，可以设置多字段排序，只支持从大到小排序|
@@ -72,7 +68,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 | `data?` `any` |  玩家数据 default: `{}` |
 
@@ -108,7 +104,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 
 
@@ -123,10 +119,10 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  玩家对象\|玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  玩家对象玩家id |
 | :------ | :------ |
 | `fieldId` `number` |  字段的ID |
-| `value` `string` \| `number` |  字段的值 |
+| `value` `string`  `number` |  字段的值 |
 
 
 

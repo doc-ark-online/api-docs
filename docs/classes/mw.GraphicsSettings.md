@@ -43,10 +43,6 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new GraphicsSettings**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getCPULevel](mw.GraphicsSettings.md#getcpulevel)**(): [`GraphicsLevel`](../enums/mw.GraphicsLevel.md)  |
 | :-----|

@@ -44,10 +44,6 @@ export default class ClassExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new RoomSettings**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[enableJoiningMidgame](mw.RoomSettings.md#enablejoiningmidgame)**(`isEnable`: `boolean`): `void`  |
 | :-----|

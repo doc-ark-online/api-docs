@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new PointerEvent**()  |
-| :-----|
-| 默认构造|
-
 ### Accessors <Score text="Accessors" /> 
 | **[effectingButton](mw.PointerEvent.md#effectingbutton)**(): [`KeyEvent`](mw.KeyEvent.md)  |
 | :-----|

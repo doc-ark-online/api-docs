@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SelectionUtil**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[drawGameObjectSelectionBox](mw.SelectionUtil.md#drawgameobjectselectionbox)**(`StartPoint`: [`Vector2`](mw.Vector2.md), `EndPoint`: [`Vector2`](mw.Vector2.md), `Color`: [`LinearColor`](mw.LinearColor.md), `DurationTime?`: `number`): `void`  |
 | :-----|

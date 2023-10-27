@@ -21,20 +21,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new LeaderboardItemPanelBase**<`T`: extends [`ILeaderboardItemView`](../interfaces/mwext.ILeaderboardItemView.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new BasePanel**<`T`: extends [`UIScript`](mw.UIScript.md)<`T`\>\>(`viewClass`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`\>)  |
-| :-----|
-| 构造方法|
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[playerId](mwext.LeaderboardItemPanelBase.md#playerid)**(): `number`  |
 | :-----|
@@ -55,7 +41,7 @@
 | **[onAddToCanvas](mwext.LeaderboardItemPanelBase.md#onaddtocanvas)**(`playerId`: `number`, `rankIndex`: `number`): `void`  |
 | :-----|
 | 显示在画布上调用，需要请复写|
-| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string` \, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
+| **[onFieldSet](mwext.LeaderboardItemPanelBase.md#onfieldset)**(`playerId`: `number`, `rankIndex`: `number`, `fieldId`: `number`, `fieldValue`: `string`  `number`, `textBlockIndex`: `number`, `textBlock`: [`TextBlock`](mw.TextBlock.md)): `void`  |
 | 设置字段内容后调用，需要请复写|
 
 
@@ -86,6 +72,7 @@
 [BasePanel](mwext.BasePanel.md).[constructor](mwext.BasePanel.md#constructor)
 
 ## Accessors
+
 ___
 
 ### playerId <Score text="playerId" /> 
@@ -107,14 +94,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| `number` |  |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### onAddToCanvas <Score text="onAddToCanvas" /> 
@@ -145,7 +133,7 @@ ___
 | :------ | :------ |
 | `rankIndex` `number` |  名次索引(0开始) |
 | `fieldId` `number` |  字段索引 (如果是排行字段，此参数为mull) |
-| `fieldValue` `string` \| `number` |  字段显示内容 |
+| `fieldValue` `string`  `number` |  字段显示内容 |
 | `textBlockIndex` `number` |  文本控件索引 |
 | `textBlock` [`TextBlock`](mw.TextBlock.md) |  文本控件 |
 

@@ -12,10 +12,6 @@ debug调试服务
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new DebugService**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[getHeapStatistics](mw.DebugService.md#getheapstatistics)**(): `HeapStatistics`  |
 | :-----|

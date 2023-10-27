@@ -64,10 +64,6 @@ Event 类提供了本地、客户端和服务器之间通信的事件。
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Event**()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[addClientListener](mw.Event.md#addclientlistener)**(`eventName`: `string`, `listener`: (`player`: [`Player`](mw.Player.md), ...`params`: `unknown`[]) => `void`): [`EventListener`](mw.EventListener.md)  |
 | :-----|

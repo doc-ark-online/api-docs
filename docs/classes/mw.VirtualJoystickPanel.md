@@ -16,16 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[activeOpacity](mw.VirtualJoystickPanel.md#activeopacity)**(): `number`  |
 | :-----|
@@ -1140,7 +1130,6 @@ ___
 | `Value` `number` | 复位时间 以秒为单位 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1148,6 +1137,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### resetJoyStick <Score text="resetJoyStick" /> 

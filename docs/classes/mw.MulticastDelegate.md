@@ -50,10 +50,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new MulticastDelegate**<`T`: extends [`DelegateFuncType`](../modules/Core.mw.md#delegatefunctype)\>()  |
-| :----- |
-
 ### Methods <Score text="Methods" /> 
 | **[add](mw.MulticastDelegate.md#add)**(`func`: `T`): `void`  |
 | :-----|

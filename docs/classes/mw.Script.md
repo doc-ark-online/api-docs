@@ -18,10 +18,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Script**(`data`: `ActorInfo`)  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[bIsDestroy](mw.Script.md#bisdestroy)**: `any`  |
 | :----- |
@@ -32,14 +28,11 @@
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
 | :-----|
 | 脚本对应的GameObject|
-| **[guid](mw.Script.md#guid)**(): `string` |
 | **[name](mw.Script.md#name)**(): `string` |
 
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.Script.md#destroy)**(): `void`  |
 | :----- |
-| **[isRunningClient](mw.Script.md#isrunningclient)**(): `boolean`  |
-| 是否为客户端|
 | **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
 
 #### Parameters
@@ -119,31 +112,6 @@ ___
 
 ___
 
-### guid <Score text="guid" /> 
-
-<table class="get-set-table">
-<thead><tr>
-<th style="text-align: left">
-
-• `get` **guid**(): `string`
-
-</th>
-</tr></thead>
-<tbody><tr>
-<td style="text-align: left">
-
-
-#### Returns
-
-| `string` | mw.Component.guid |
-| :------ | :------ |
-
-</td>
-</tr></tbody>
-</table>
-
-___
-
 ### name <Score text="name" /> 
 
 <table class="get-set-table">
@@ -173,24 +141,6 @@ ___
 
 • **destroy**(): `void`
 
-___
-
-### isRunningClient <Score text="isRunningClient" /> 
-
-• **isRunningClient**(): `boolean` 
-
-是否为客户端
-
-#### Returns
-
-| `boolean` | mw.Component.isRunningClient |
-| :------ | :------ |
-
-
-#### Returns
-
-| `boolean` | mw.Component.isRunningClient |
-| :------ | :------ |
 
 ___
 

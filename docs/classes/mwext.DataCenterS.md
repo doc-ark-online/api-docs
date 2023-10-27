@@ -65,10 +65,6 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new DataCenterS**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onPlayerJoin](mwext.DataCenterS.md#onplayerjoin)**: [`Action1`](mw.Action1.md)<[`Player`](mw.Player.md)\>  |
 | :-----|
@@ -77,7 +73,7 @@ class PlayerModuleData extends Subdata {
 | 玩家离开游戏的委托，可用作玩家最后的数据处理|
 
 ### Methods <Score text="Methods" /> 
-| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string` \, `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
+| **[getData](mwext.DataCenterS.md#getdata)**<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>(`player`: `string`  `number`  [`Player`](mw.Player.md), `SubdataType`: [`TypeName`](../interfaces/mw.TypeName.md)<`T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>\>): `T`: extends [`Subdata`](mwext.Subdata.md)<`T`\>  |
 | :-----|
 | 获取玩家的子数据|
 | **[getReadyPlayerIds](mwext.DataCenterS.md#getreadyplayerids)**(): `number`[]  |
@@ -111,7 +107,7 @@ ___
 
 #### Parameters
 
-| `player` `string` \| `number` \| [`Player`](mw.Player.md) |  玩家\|玩家userId\|玩家instanceId |
+| `player` `string`  `number`  [`Player`](mw.Player.md) |  玩家玩家userId玩家instanceId |
 | :------ | :------ |
 | `SubdataType` [`TypeName`](../interfaces/mw.TypeName.md)<`T`\> |  数据类 |
 

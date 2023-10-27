@@ -111,10 +111,6 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ModuleC**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[data](mwext.ModuleC.md#data)**(): `S`  |
 | :-----|

@@ -60,7 +60,7 @@
 | 创建DragDrop事件|
 | **[remove](mw.UIScript.md#remove)**(): `void`  |
 | 移除UI对象|
-| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean` \, `...params`: `any`[]): `void`  |
+| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void`  |
 | 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void`  |
 | 添加一个全局的行为记录|

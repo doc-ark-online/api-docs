@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Vector2**(`x?`: `number`, `y?`: `number`)  |
-| :-----|
-| 用给定的 f 值设定给 x, y|
-
 ### Properties <Score text="Properties" /> 
 | **[x](mw.Vector2.md#x)**: `number`  |
 | :-----|
@@ -28,7 +23,8 @@
 | 计算向量的长度|
 | **[magnitude](mw.Vector2.md#magnitude)**(`a`: [`Vector2`](mw.Vector2.md)): `number`  |
 | 求向量长度|
-| [negative](mw.Vector2.md#negative) |
+| [negative](mw.Vector2.md#negative)  |
+| :----- |
 | **[normalized](mw.Vector2.md#normalized)**(): [`Vector2`](mw.Vector2.md)  |
 | 其大小为1, 但仍指向相同的方向 如果向量太小而无法归一化, 则返回 (0, 0)|
 | **[sqrLength](mw.Vector2.md#sqrlength)**(): `number`  |

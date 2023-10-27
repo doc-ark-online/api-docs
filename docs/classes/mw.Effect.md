@@ -71,16 +71,6 @@ export default class EffectExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[onFinish](mw.Effect.md#onfinish)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<() => `void`\>  |
 | :-----|
@@ -186,7 +176,7 @@ export default class EffectExample extends Script {
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -210,6 +200,7 @@ export default class EffectExample extends Script {
 
 
 ## Properties
+
 ___
 
 ### onFinish <Score text="onFinish" /> 
@@ -219,6 +210,7 @@ ___
 特效播放完毕事件
 
 ## Accessors
+
 ___
 
 ### loopCount <Score text="loopCount" /> 
@@ -336,14 +328,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| `number` | 特效实际播放时长 |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### forceStop <Score text="forceStop" /> 

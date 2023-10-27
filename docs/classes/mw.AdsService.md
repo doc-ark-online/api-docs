@@ -16,10 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new AdsService**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[showTimeout](mw.AdsService.md#showtimeout)**(): `number`  |
 | :-----|

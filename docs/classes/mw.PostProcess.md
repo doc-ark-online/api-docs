@@ -51,10 +51,6 @@ export default class PostProcessExample extends mw.Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new PostProcess**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[bloom](mw.PostProcess.md#bloom)**(): `number`  |
 | :-----|

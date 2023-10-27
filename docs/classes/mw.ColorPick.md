@@ -16,16 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[color](mw.ColorPick.md#color)**(`inColor`: [`LinearColor`](mw.LinearColor.md)): `void`  |
 | :-----|
@@ -113,6 +103,7 @@
 
 
 ## Accessors
+
 ___
 
 ### color <Score text="color" /> 
@@ -278,14 +269,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| [`MulticastDelegate`](mw.MulticastDelegate.md)<(`Content`: [`LinearColor`](mw.LinearColor.md)) => `void`\> | 返回事件的代理 |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### newObject <Score text="newObject" /> 

@@ -18,16 +18,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new UIScript**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[holdBackTouch](mwext.BaseView.md#holdbacktouch)**(`value`: `boolean`): `void`  |
 | :-----|
@@ -85,7 +75,7 @@
 | 创建DragDrop事件|
 | **[remove](mw.UIScript.md#remove)**(): `void`  |
 | 移除UI对象|
-| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean` \, `...params`: `any`[]): `void`  |
+| **[setVisible](mw.UIScript.md#setvisible)**(`inVisible`: `boolean`  [`SlateVisibility`](../enums/mw.SlateVisibility.md), `...params`: `any`[]): `void`  |
 | 设置UI是否显示,会触发绑定的脚本的OnShow/OnHide事件，可以传递参数|
 | **[addBehavior](mw.UIScript.md#addbehavior)**(`key`: `string`, `value`: `any`): `void`  |
 | 添加一个全局的行为记录|
@@ -99,6 +89,7 @@
 
 
 ## Accessors
+
 ___
 
 ### holdBackTouch <Score text="holdBackTouch" /> 
@@ -148,14 +139,15 @@ ___
 
 #### Returns
 
-
 </td>
 </tr></tbody>
 </table>
 
-
+| `boolean` |  |
+| :------ | :------ |
 
 ## Methods
+
 ___
 
 ### getCanvasChildren <Score text="getCanvasChildren" /> 

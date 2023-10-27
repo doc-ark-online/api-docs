@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new SlateBrushWithGuid**(`InGUID`: `string`)  |
-| :-----|
-| 通过资源id构造对象|
-
 ### Properties <Score text="Properties" /> 
 | **[drawAs](mw.SlateBrushWithGuid.md#drawas)**: [`SlateBrushDrawType`](../enums/mw.SlateBrushDrawType.md)  |
 | :-----|

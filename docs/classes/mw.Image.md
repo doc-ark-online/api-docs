@@ -16,16 +16,6 @@ UI 图片
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Widget**()  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 | **[imageColor](mw.Image.md#imagecolor)**(): [`LinearColor`](mw.LinearColor.md)  |
 | :-----|
@@ -127,6 +117,7 @@ UI 图片
 
 
 ## Accessors
+
 ___
 
 ### imageColor <Score text="imageColor" /> 
@@ -362,7 +353,6 @@ ___
 
 | `inMargin` [`Margin`](mw.Margin.md) | 图片边距 |
 | :------ | :------ |
-
 
 </td>
 </tr></tbody>

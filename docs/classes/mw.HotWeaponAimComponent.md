@@ -39,10 +39,6 @@ export default class HotWeaponAimSample1 extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new HotWeaponAimComponent**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[onEndAim](mw.HotWeaponAimComponent.md#onendaim)**: `MulticastDelegateInterface`<() => `void`\>  |
 | :-----|

@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new MathUtil**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[D2R](mw.MathUtil.md#d2r)**: `number`  |
 | :-----|

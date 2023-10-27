@@ -166,10 +166,6 @@ CatmullRom插值：拐弯平滑，只在拐弯处进行平滑
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new TweenUtil**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[TWEEN](mw.TweenUtil.md#tween)**: [`TweenGroup`](mw.TweenGroup.md)  |
 | :-----|

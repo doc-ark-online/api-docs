@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Vector**(`x?`: `number`, `y?`: `number`, `z?`: `number`)  |
-| :-----|
-| 用给定的 Vector 的值的 x, y 和 z 分量设定给x，y 和 z|
-
 ### Properties <Score text="Properties" /> 
 | **[x](mw.Vector.md#x)**: `number`  |
 | :-----|
@@ -30,7 +25,8 @@
 | 计算向量的长度|
 | **[magnitude](mw.Vector.md#magnitude)**(`a`: [`Vector`](mw.Vector.md)): `number`  |
 | 求向量长度|
-| [negative](mw.Vector.md#negative) |
+| [negative](mw.Vector.md#negative)  |
+| :----- |
 | **[normalized](mw.Vector.md#normalized)**(): [`Vector`](mw.Vector.md)  |
 | 返回一个归一化的新向量, 不影响本向量|
 | **[sqrLength](mw.Vector.md#sqrlength)**(): `number`  |

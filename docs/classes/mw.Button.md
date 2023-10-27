@@ -16,8 +16,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
 ### Accessors <Score text="Accessors" /> 
 | **[clickMethod](mw.Button.md#clickmethod)**(`inClickMethod`: [`ButtonClickMethod`](../enums/mw.ButtonClickMethod.md)): `void`  |
 | :-----|
@@ -120,6 +118,7 @@
 
 
 ## Accessors
+
 ___
 
 ### clickMethod <Score text="clickMethod" /> 
@@ -1160,7 +1159,6 @@ ___
 | `inBoolean` `boolean` | 是否套用不同的按下方案 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -1168,6 +1166,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### isPressed <Score text="isPressed" /> 

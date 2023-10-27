@@ -242,16 +242,6 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new GameObject**()  |
-| :----- |
-:::
-
-
 ### Properties <Score text="Properties" /> 
 | **[accuracyOfFireComponent](mw.HotWeapon.md#accuracyoffirecomponent)**: [`HotWeaponAccuracyOfFireComponent`](mw.HotWeaponAccuracyOfFireComponent.md)  |
 | :-----|
@@ -383,7 +373,7 @@ HotWeapon类内部已封装好，这些功能都可以当你创建出一个HotWe
 | 获得当前物体下的所有脚本|
 | **[getVisibility](mw.GameObject.md#getvisibility)**(): `boolean`  |
 | 获取物体是否被显示|
-| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean` \, `propagateToChildren?`: `boolean`): `void`  |
+| **[setVisibility](mw.GameObject.md#setvisibility)**(`status`: `boolean`  [`PropertyStatus`](../enums/mw.PropertyStatus.md), `propagateToChildren?`: `boolean`): `void`  |
 | 设置物体是否被显示|
 | **[asyncFindGameObjectById](mw.GameObject.md#asyncfindgameobjectbyid)**(`gameObjectId`: `string`): `Promise`<[`GameObject`](mw.GameObject.md)\>  |
 | 通过gameObjectId异步查找GameObject,默认是10秒,可以通过 `ScriptingSettings.setGlobalAsyncOverTime(1000 * 10);|
@@ -758,7 +748,6 @@ ___
 | `isEnabled` `boolean` |  换弹组件启用状态 |
 | :------ | :------ |
 
-
 </td>
 </tr></tbody>
 </table>
@@ -766,6 +755,7 @@ ___
 
 
 ## Methods
+
 ___
 
 ### breakLoad <Score text="breakLoad" /> 

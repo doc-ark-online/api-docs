@@ -10,11 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new Margin**(`In`: `number`)  |
-| :-----|
-| 对每个值赋值的构造方法|
-
 ### Properties <Score text="Properties" /> 
 | **[bottom](mw.Margin.md#bottom)**: `number`  |
 | :-----|

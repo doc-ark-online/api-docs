@@ -106,10 +106,6 @@ class PlayerModuleData extends Subdata {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new ModuleS**<`T`: `T`, `S`: extends [`Subdata`](mwext.Subdata.md)<`S`\>\>()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[currentData](mwext.ModuleS.md#currentdata)**(): `S`  |
 | :-----|
@@ -123,9 +119,9 @@ class PlayerModuleData extends Subdata {
 | **[getAllClient](mwext.ModuleS.md#getallclient)**(): `T`  |
 | :-----|
 | 获取"全部客户端"调用对象|
-| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number` \): `T`  |
+| **[getClient](mwext.ModuleS.md#getclient)**(`player`: `number`  [`Player`](mw.Player.md)): `T`  |
 | 根据玩家获取"单客户端"调用对象|
-| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string` \): `S`  |
+| **[getPlayerData](mwext.ModuleS.md#getplayerdata)**(`player`: `string`  `number`  [`Player`](mw.Player.md)): `S`  |
 | 获取指定玩家的本模块数据|
 | **[onAwake](mwext.ModuleS.md#onawake)**(): `void`  |
 | 生命周期方法-创建模块时调用|
@@ -275,7 +271,7 @@ ___
 
 #### Parameters
 
-| `player` `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家id |
+| `player` `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家id |
 | :------ | :------ |
 
 #### Returns
@@ -294,7 +290,7 @@ ___
 
 #### Parameters
 
-| `player` `string` \| `number` \| [`Player`](mw.Player.md) |  目标玩家\|目标玩家userId\|目标玩家instanceId |
+| `player` `string`  `number`  [`Player`](mw.Player.md) |  目标玩家目标玩家userId目标玩家instanceId |
 | :------ | :------ |
 
 #### Returns

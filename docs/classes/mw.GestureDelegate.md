@@ -10,10 +10,6 @@
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new GestureDelegate**()  |
-| :----- |
-
 ### Properties <Score text="Properties" /> 
 | **[oneFingerMoveGestureDelegate](mw.GestureDelegate.md#onefingermovegesturedelegate)**: [`MulticastDelegate`](mw.MulticastDelegate.md)<(`location`: [`Vector2`](mw.Vector2.md)) => `void`\>  |
 | :-----|

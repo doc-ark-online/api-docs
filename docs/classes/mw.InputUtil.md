@@ -45,10 +45,6 @@ export default class InputExample extends Script {
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new InputUtil**()  |
-| :----- |
-
 ### Accessors <Score text="Accessors" /> 
 | **[enableCursorInteractWithUI](mw.InputUtil.md#enablecursorinteractwithui)**(`canInteract`: `boolean`): `void`  |
 | :-----|
@@ -71,7 +67,7 @@ export default class InputExample extends Script {
 | 设置是否可以锁定鼠标|
 
 ### Methods <Score text="Methods" /> 
-| **[bindButton](mw.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/mw.Keys.md), `Widget`: [`StaleButton`](mw.StaleButton.md) \): `void`  |
+| **[bindButton](mw.InputUtil.md#bindbutton)**(`key`: [`Keys`](../enums/mw.Keys.md), `Widget`: [`StaleButton`](mw.StaleButton.md)  [`Button`](mw.Button.md)): `void`  |
 | :-----|
 | 绑定按键|
 | **[convertScreenLocationToWorldSpace](mw.InputUtil.md#convertscreenlocationtoworldspace)**(`screenX`: `number`, `screenY`: `number`): [`ConvertScreenResult`](mw.ConvertScreenResult.md)  |
@@ -598,7 +594,7 @@ export default class InputExample extends Script {
 
 | `key` [`Keys`](../enums/mw.Keys.md) | 按键 |
 | :------ | :------ |
-| `Widget` [`StaleButton`](mw.StaleButton.md) \| [`Button`](mw.Button.md) | 绑定的button |
+| `Widget` [`StaleButton`](mw.StaleButton.md)  [`Button`](mw.Button.md) | 绑定的button |
 
 
 

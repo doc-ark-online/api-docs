@@ -63,18 +63,6 @@ PlayerState基类
 
 ## Table of contents
 
-### Constructors <Score text="Constructors" /> 
-| **new PlayerState**(`info`: `ActorInfo`)  |
-| :----- |
-
-
-::: details 点击查看继承
-### Constructors <Score text="Constructors" /> 
-| **new Script**(`data`: `ActorInfo`)  |
-| :----- |
-:::
-
-
 ### Accessors <Score text="Accessors" /> 
 
 
@@ -83,7 +71,6 @@ PlayerState基类
 | **[gameObject](mw.Script.md#gameobject)**(): [`GameObject`](mw.GameObject.md)  |
 | :-----|
 | 脚本对应的GameObject|
-| **[guid](mw.Script.md#guid)**(): `string` |
 | **[name](mw.Script.md#name)**(): `string` |
 :::
 
@@ -95,8 +82,6 @@ PlayerState基类
 ### Methods <Score text="Methods" /> 
 | **[destroy](mw.Script.md#destroy)**(): `void`  |
 | :----- |
-| **[isRunningClient](mw.Script.md#isrunningclient)**(): `boolean`  |
-| 是否为客户端|
 | **[spawnScript](mw.Script.md#spawnscript)**<`T`: extends [`Script`](mw.Script.md)<`T`\>\>(`scriptClass`: (...`args`: `unknown`[]) => `T`, `bInReplicates?`: `boolean`): `Promise`<`T`: extends [`Script`](mw.Script.md)<`T`\>\> |
 :::
 
