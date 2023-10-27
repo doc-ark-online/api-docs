@@ -1,15 +1,6 @@
 {
   "index_name": "api-docs_prodigytech",
-  "start_urls": [
-    {
-      "url": "http://docs.ark.online/",
-      "tags": ["product-docs"]
-    },
-    {
-      "url": "https://learning.ark.online/",
-      "tags": ["learning-docs"]
-    }
-  ],
+  "start_urls": ["http://docs.ark.online/", "https://learning.ark.online/"],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {

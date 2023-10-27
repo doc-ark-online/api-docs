@@ -1054,21 +1054,21 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
             key: 'api-docs',
             facetFilters: ['tags:api-docs'],
             name: 'API文档'
-          },
-          {
-            key: 'product-docs',
-            facetFilters: ['tags:product-docs'],
-            name: '产品手册'
-          },
-          {
-            key: 'learning-docs',
-            facetFilters: ['tags:learning-docs'],
-            name: '教程文档'
-          },
-          {
-            name: '论坛',
-            url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
           }
+          // {
+          //   key: 'product-docs',
+          //   facetFilters: ['tags:product-docs'],
+          //   name: '产品手册'
+          // },
+          // {
+          //   key: 'learning-docs',
+          //   facetFilters: ['tags:learning-docs'],
+          //   name: '教程文档'
+          // },
+          // {
+          //   name: '论坛',
+          //   url: 'https://forum.ark.online/search.php?searchsubmit=yes&mod=forum&srchtxt='
+          // }
         ]
       },
       searchPage: 'https://search.ark.online/#/search'
