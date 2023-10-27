@@ -1,6 +1,6 @@
-import { readdirSync, readJSONSync } from 'fs-extra'
+import { readdirSync, readFileSync } from 'fs'
 import * as path from 'path'
-import { DefaultTheme } from '../viteTheme/shared'
+import { DefaultTheme } from 'metaapp-prodigytech-doc-theme'
 import { globSync } from 'glob'
 
 /**根据文件夹生成对应的子类 */
@@ -25,7 +25,11 @@ interface GroupsConfig {
 
 /** 根据配置文件生成对应的侧边栏 */
 export function dealConfigSidebar() {
-  const json = readJSONSync(`./docs/configs/groups.json`) as GroupsConfig
+  // const json = readJSONSync(`./docs/configs/groups.json`) as GroupsConfig
+  const json = JSON.parse(
+    readFileSync('./docs/configs/groups.json', { encoding: 'utf-8' })
+  ) as GroupsConfig
+  // const json = {} as GroupsConfig
   const arr: DefaultTheme.SidebarGroup[] = []
   for (const typeObj in json) {
     const items: DefaultTheme.SidebarItem[] = []

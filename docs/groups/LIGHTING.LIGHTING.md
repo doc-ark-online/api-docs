@@ -5,18 +5,16 @@ LIGHTING
 ## Table of contents
 | Classes |
 | :-----|
-| [DirectionalLight](../classes/Gameplay.DirectionalLight.md) <br> 平行光 |
-| [ExponentialHeightFog](../classes/Gameplay.ExponentialHeightFog.md) <br> 环境雾 |
-| [PointLight](../classes/Gameplay.PointLight.md) <br> 点光源 |
-| [PostProcess](../classes/Gameplay.PostProcess.md) <br> 后处理对象 |
-| [PostProcessConfig](../classes/Gameplay.PostProcessConfig.md) <br> 后处理对象属性配置 |
-| [SkyBox](../classes/Gameplay.SkyBox.md) <br> 天空球 |
-| [SkyLight](../classes/Gameplay.SkyLight.md) <br> 环境光 |
+| [Fog](../classes/mw.Fog.md) <br> 环境雾 |
+| [Lighting](../classes/mw.Lighting.md) <br> 光照 |
+| [PostProcess](../classes/mw.PostProcess.md) <br> 后处理 |
+| [PostProcessConfig](../classes/mw.PostProcessConfig.md) <br> 后处理对象属性配置 |
+| [Skybox](../classes/mw.Skybox.md) <br> 天空盒 |
 
 
 | Enums |
 | :-----|
-| [FogPreset](../enums/Gameplay.FogPreset.md) <br> 环境雾预设枚举 |
-| [PostProcessPreset](../enums/Gameplay.PostProcessPreset.md) <br> 后处理预设枚举 |
-| [SkyPreset](../enums/Gameplay.SkyPreset.md) <br> 天空球预设枚举 |
+| [FogPreset](../enums/mw.FogPreset.md) <br> 环境雾预设枚举 |
+| [PostProcessPreset](../enums/mw.PostProcessPreset.md) <br> 后处理预设枚举 |
+| [SkyPreset](../enums/mw.SkyPreset.md) <br> 天空盒预设枚举 |
 
