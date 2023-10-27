@@ -871,20 +871,20 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
 
 </span>
 
-* ``` typescript
+```ts
   // 服务端每个玩家进入游戏时会自动创建一个实例
-  @Core.Class
+  @Component
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
+      @Core.Property({replicated: true, onChanged: "onRepTest"})
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
-          console.log(`onRepTest path: $`{path}` value: $`{value}` oldVal: $`{oldVal}``);
+          console.log(`onRepTest path: ${path} value: ${value} oldVal: ${oldVal}`);
       }
   }
 
-  @Core.Class
+  @Component
   export default class PlayerStateExample extends mw.Script {
 
       protected onStart(): void {
@@ -895,7 +895,7 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
               const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
-              console.log(`test: $`{playerState.test}``);
+              console.log(`test: ${playerState.test}`);
           });
 
       }
@@ -907,10 +907,10 @@ PlayerState对象的作用是帮助游戏追踪和管理玩家的个人数据。
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
           const playerState = luckPlayer.getPlayerState(GamePlayerState);
-          playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
+          playerState.test = `random: ${ Math.floor(Math.random() * 100)}`;
       }
   }
-```ts
+```
 
 #### Type parameters
 
@@ -964,7 +964,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -989,7 +989,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1011,7 +1011,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetAllPlayers extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1024,7 +1024,7 @@ export default class Example_Player_GetAllPlayers extends Script {
                 Player.getAllPlayers().forEach((value) => {
                     if(value.playerId == player.playerId) {
                         console.log(" Player " + player.userId + " This is me");
-                        let crown = GameObject.spawn(`{guid: "27087"}`) as Model;
+                        let crown = GameObject.spawn({guid: "27087"}) as Model;
                         crown.setCollision(CollisionStatus.Off);
                         value.character.attachToSlot(crown, HumanoidSlotType.Rings);
                     } else {
@@ -1042,7 +1042,7 @@ export default class Example_Player_GetAllPlayers extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1075,7 +1075,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetControllerRotation extends Script {
     // 声明变量
@@ -1106,7 +1106,7 @@ export default class Example_Player_GetControllerRotation extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1139,7 +1139,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_GetPlayer extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1164,7 +1164,7 @@ export default class Example_Player_GetPlayer extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1187,7 +1187,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_SetControllerRotation extends Script {
     // 声明变量
@@ -1218,7 +1218,7 @@ export default class Example_Player_SetControllerRotation extends Script {
         }
     }
 }
-```ts
+```
 
 ___
 
@@ -1246,7 +1246,7 @@ ___
 
 </span>
 
-```
+```ts
 @Component
 export default class Example_Player_SpawnDefaultCharacter extends Script {
     // 当脚本被实例后，会在第一帧更新前调用此函数/
@@ -1275,4 +1275,4 @@ export default class Example_Player_SpawnDefaultCharacter extends Script {
         }
     }
 }
-```ts
+```

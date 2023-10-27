@@ -14,20 +14,20 @@ PlayerState基类
 
 </span>
 
-* ``` typescript
+```ts
   // 服务端每个玩家进入游戏时会自动创建一个实例
-  @Core.Class
+  @Component
   export class GamePlayerState extends mw.PlayerState {
 
-      @Core.Property(`{replicated: true, onChanged: "onRepTest"}`)
+      @Core.Property({replicated: true, onChanged: "onRepTest"})
       test = "";
 
       onRepTest(path: string[], value: string, oldVal: string) {
-          console.log(`onRepTest path: $`{path}` value: $`{value}` oldVal: $`{oldVal}``);
+          console.log(`onRepTest path: ${path} value: ${value} oldVal: ${oldVal}`);
       }
   }
 
-  @Core.Class
+  @Component
   export default class PlayerStateExample extends mw.Script {
 
       protected onStart(): void {
@@ -38,7 +38,7 @@ PlayerState基类
           // 按下P建打印主控端玩家GamePlayState的test属性
           InputUtil.onKeyDown(Keys.P, () => {
               const playerState = mw.getCurrentPlayer().getPlayerState(GamePlayerState);
-              console.log(`test: $`{playerState.test}``);
+              console.log(`test: ${playerState.test}`);
           });
 
       }
@@ -50,10 +50,10 @@ PlayerState基类
           const luckPlayer = players[Math.floor(Math.random() * players.length)];
           // 获取到GamePlayerState实例
           const playerState = luckPlayer.getPlayerState(GamePlayerState);
-          playerState.test = `random: $`{ Math.floor(Math.random() * 100)}``;
+          playerState.test = `random: ${ Math.floor(Math.random() * 100)}`;
       }
   }
-```ts
+```
 
 ## Hierarchy
 
