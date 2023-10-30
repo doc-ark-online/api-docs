@@ -144,6 +144,9 @@ export default class CharacterStyleExample extends Script {
 
 #### Type declaration
 
+`base?` `{ `characterSetting?`: { `characterTemplate?`: [`CharacterTemplate`](../enums/mw.CharacterTemplate.md) ; `somatotype?`: [`SomatotypeV2`](../enums/mw.SomatotypeV2.md)  }`  } |**`Description`** 基础 
+
+
 | `base?` `{ `characterSetting?`: { `characterTemplate?`: [`CharacterTemplate`](../enums/mw.CharacterTemplate.md) ; `somatotype?`: [`SomatotypeV2`](../enums/mw.SomatotypeV2.md)  }`  } | **`Description`** 基础 |
 | :------ | :------ |
 | `base.characterSetting?` `{ `characterTemplate?`: [`CharacterTemplate`](../enums/mw.CharacterTemplate.md) ; `somatotype?`: [`SomatotypeV2`](../enums/mw.SomatotypeV2.md)  }` | **`Description`** 角色设定 |
