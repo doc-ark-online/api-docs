@@ -1139,7 +1139,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
     outline: [2, 3],
     editLink: {
       pattern:
-        'https://github.com/prodigytech-doc/api-docs/tree/release-027/docs/:path',
+        'https://github.com/prodigytech-doc/api-docs/tree/main/docs/:path',
       text: '编辑'
     },
     lastUpdatedText: 'Updated Date',
